@@ -618,6 +618,97 @@
   </div>
 </section>
 
+<section class="cities-section" id="cidades">
+  <h2>Explore as cidades do litoral</h2>
+  <p>Cada cidade tem seu encanto — conheça as opções disponíveis.</p>
+  <div class="cities-grid">
+    <a class="city-card" href="#buscar" onclick="document.getElementById('cidade').value='praia-grande';filterListings();return false;">
+      <div class="city-card-img">🏖️</div>
+      <div class="city-card-body">
+        <h3>Praia Grande</h3>
+        <p>A cidade mais extensa do litoral sul, com praia linear e infraestrutura completa.</p>
+        <div class="city-card-stats"><span>🏠 2 imóveis</span><span>📍 Boqueirão, Caiçara</span></div>
+      </div>
+    </a>
+    <a class="city-card" href="#buscar" onclick="document.getElementById('cidade').value='santos';filterListings();return false;">
+      <div class="city-card-img">🏛️</div>
+      <div class="city-card-body">
+        <h3>Santos</h3>
+        <p>Cidade histórica e urbana, com o maior jardim de praia do mundo.</p>
+        <div class="city-card-stats"><span>🏠 1 imóvel</span><span>📍 Pompéia</span></div>
+      </div>
+    </a>
+    <a class="city-card" href="#buscar" onclick="document.getElementById('cidade').value='guaruja';filterListings();return false;">
+      <div class="city-card-img">⛰️</div>
+      <div class="city-card-body">
+        <h3>Guarujá</h3>
+        <p>Conhecida como a "Bela de Santos", beaches de Pitangueiras a Enseada.</p>
+        <div class="city-card-stats"><span>🏠 1 imóvel</span><span>📍 Pitangueiras</span></div>
+      </div>
+    </a>
+    <a class="city-card" href="#buscar" onclick="document.getElementById('cidade').value='sao-vicente';filterListings();return false;">
+      <div class="city-card-img">🌳</div>
+      <div class="city-card-body">
+        <h3>São Vicente</h3>
+        <p>A cidade mais antiga do Brasil, com charme histórico e proximidade da capital.</p>
+        <div class="city-card-stats"><span>🏠 2 imóveis</span><span>📍 Centro, Pompetegração</span></div>
+      </div>
+    </a>
+    <a class="city-card" href="#buscar" onclick="document.getElementById('cidade').value='itanhaem';filterListings();return false;">
+      <div class="city-card-img">🌺</div>
+      <div class="city-card-body">
+        <h3>Itanhaém</h3>
+        <p>Charmosa e arborizada, perfeita para quem busca sossego e natureza.</p>
+        <div class="city-card-stats"><span>🏠 2 imóveis</span><span>📍 Centro</span></div>
+      </div>
+    </a>
+    <a class="city-card" href="#buscar" onclick="document.getElementById('cidade').value='mongagua';filterListings();return false;">
+      <div class="city-card-img">🌊</div>
+      <div class="city-card-body">
+        <h3>Mongaguá</h3>
+        <p>Praias preservadas e águas cristalinas — oásis tranquilo no litoral sul.</p>
+        <div class="city-card-stats"><span>🏠 2 imóveis</span><span>📍 Flórida, Itaquarena</span></div>
+      </div>
+    </a>
+    <a class="city-card" href="#buscar" onclick="document.getElementById('cidade').value='peruibe';filterListings();return false;">
+      <div class="city-card-img">🦎</div>
+      <div class="city-card-body">
+        <h3>Peruíbe</h3>
+        <p>Na fronteira com o Paraná, com trilhas, restinga e praia preservada.</p>
+        <div class="city-card-stats"><span>🏠 2 imóveis</span><span>📍 Centro, Jardim Maret</span></div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="faq-section" id="faq">
+  <h2>Perguntas frequentes</h2>
+  <div class="faq-item" onclick="toggleFaq(this)">
+    <div class="faq-question">Como funciona a busca de imóveis?</div>
+    <div class="faq-answer">Use os filtros de tipo, cidade, dormitórios e faixa de preço para encontrar imóveis. Cada card mostra informações principais e você pode clicar para ver os detalhes completos no modal.</div>
+  </div>
+  <div class="faq-item" onclick="toggleFaq(this)">
+    <div class="faq-question">Como posso contatar a Praia Digital?</div>
+    <div class="faq-answer">Você pode usar o WhatsApp para resposta rápida, enviar e-mail ou preencher o formulário de contato. Nosso time responde em até 24h úteis.</div>
+  </div>
+  <div class="faq-item" onclick="toggleFaq(this)">
+    <div class="faq-question">Posso anunciar meu imóvel?</div>
+    <div class="faq-answer">Sim! Selecione a opção "Quero anunciar meu imóvel" no formulário de contato ou fale diretamente pelo WhatsApp. Vamos avaliar seu imóvel e entrar em contato com condições especiais.</div>
+  </div>
+  <div class="faq-item" onclick="toggleFaq(this)">
+    <div class="faq-question">Vocês fazem visitas presenciais?</div>
+    <div class="faq-answer">Trabalhamos de forma 100% digital, mas podemos agendar visitas presenciais com nossos parceiros locais. Basta indicar seu interesse no formulário ou pelo WhatsApp.</div>
+  </div>
+  <div class="faq-item" onclick="toggleFaq(this)">
+    <div class="faq-question">Os preços dos imóveis são fixos?</div>
+    <div class="faq-answer">Os preços são indicativos e podem variar conforme negociação. Use o filtro de faixa de preço para buscar dentro do seu orçamento.</div>
+  </div>
+  <div class="faq-item" onclick="toggleFaq(this)">
+    <div class="faq-question">Vocês atendem corretores?</div>
+    <div class="faq-answer">Sim! Temos ferramentas profissionais para corretores parceiros. Selecione "Sou corretor(a)" no formulário de contato para saber mais sobre condições de parceria.</div>
+  </div>
+</section>
+
 <section class="features" id="recursos">
   <h2>Por que escolher a Praia Digital?</h2>
   <div class="features-grid">
@@ -893,6 +984,8 @@ function handleContact(e) {
   document.getElementById('contactForm').reset();
   setTimeout(() => { document.getElementById('formSuccess').style.display = 'none'; }, 5000);
 }
+
+function toggleFaq(el) { el.classList.toggle('open'); }
 
 renderListings(listings);
 </script>
