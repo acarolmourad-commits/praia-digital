@@ -126,22 +126,9 @@
       display: inline-block;
     }
 
-    .btn-primary {
-      background: var(--white);
-      color: var(--ocean);
-    }
-
-    .btn-outline {
-      background: transparent;
-      color: var(--white);
-      border: 2px solid var(--white);
-    }
-
-    .btn-ocean {
-      background: var(--ocean);
-      color: var(--white);
-    }
-
+    .btn-primary { background: var(--white); color: var(--ocean); }
+    .btn-outline { background: transparent; color: var(--white); border: 2px solid var(--white); }
+    .btn-ocean { background: var(--ocean); color: var(--white); }
     .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
 
     /* SEARCH */
@@ -160,12 +147,7 @@
       color: var(--dark);
     }
 
-    .search-subtitle {
-      text-align: center;
-      color: #666;
-      margin-bottom: 2rem;
-      font-size: 0.95rem;
-    }
+    .search-subtitle { text-align: center; color: #666; margin-bottom: 2rem; font-size: 0.95rem; }
 
     .search-grid {
       display: grid;
@@ -196,10 +178,7 @@
     }
 
     .search-field select:focus,
-    .search-field input:focus {
-      outline: none;
-      border-color: var(--ocean-light);
-    }
+    .search-field input:focus { outline: none; border-color: var(--ocean-light); }
 
     .search-btn {
       display: block;
@@ -215,10 +194,7 @@
       transition: background 0.2s, transform 0.2s;
     }
 
-    .search-btn:hover {
-      background: var(--dark);
-      transform: translateY(-2px);
-    }
+    .search-btn:hover { background: var(--dark); transform: translateY(-2px); }
 
     /* RESULTS */
     .results-section {
@@ -237,10 +213,7 @@
       gap: 0.5rem;
     }
 
-    .results-count {
-      color: #666;
-      font-size: 0.95rem;
-    }
+    .results-count { color: #666; font-size: 0.95rem; }
 
     .results-grid {
       display: grid;
@@ -274,13 +247,6 @@
       justify-content: center;
       font-size: 4rem;
       position: relative;
-      overflow: hidden;
-    }
-
-    .listing-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
     }
 
     .listing-badge {
@@ -297,40 +263,11 @@
     }
 
     .listing-body { padding: 1.25rem; }
-
-    .listing-location {
-      font-size: 0.85rem;
-      color: var(--ocean);
-      font-weight: 600;
-      margin-bottom: 0.3rem;
-    }
-
-    .listing-title {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-    }
-
-    .listing-details {
-      display: flex;
-      gap: 1rem;
-      font-size: 0.85rem;
-      color: #666;
-      margin-bottom: 0.75rem;
-    }
-
-    .listing-price {
-      font-size: 1.35rem;
-      font-weight: 800;
-      color: var(--dark);
-    }
-
-    .listing-tags {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-      margin-top: 0.75rem;
-    }
+    .listing-location { font-size: 0.85rem; color: var(--ocean); font-weight: 600; margin-bottom: 0.3rem; }
+    .listing-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .listing-details { display: flex; gap: 1rem; font-size: 0.85rem; color: #666; margin-bottom: 0.75rem; }
+    .listing-price { font-size: 1.35rem; font-weight: 800; color: var(--dark); }
+    .listing-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.75rem; }
 
     .tag {
       background: var(--sand);
@@ -341,12 +278,7 @@
       font-weight: 500;
     }
 
-    .no-results {
-      text-align: center;
-      padding: 3rem;
-      color: #666;
-    }
-
+    .no-results { text-align: center; padding: 3rem; color: #666; }
     .no-results-icon { font-size: 3rem; margin-bottom: 1rem; }
 
     /* FEATURES */
@@ -356,11 +288,7 @@
       margin: 0 auto;
     }
 
-    .features h2 {
-      text-align: center;
-      font-size: 1.75rem;
-      margin-bottom: 2.5rem;
-    }
+    .features h2 { text-align: center; font-size: 1.75rem; margin-bottom: 2.5rem; }
 
     .features-grid {
       display: grid;
@@ -376,82 +304,26 @@
       transition: transform 0.2s, box-shadow 0.2s;
     }
 
-    .feature-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-    }
+    .feature-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.1); }
 
     .feature-icon { font-size: 2.5rem; margin-bottom: 1rem; }
-
-    .feature-card h3 {
-      font-size: 1.15rem;
-      margin-bottom: 0.5rem;
-      color: var(--ocean);
-    }
-
-    .feature-card p {
-      font-size: 0.95rem;
-      color: #555;
-    }
+    .feature-card h3 { font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--ocean); }
+    .feature-card p { font-size: 0.95rem; color: #555; }
 
     /* CTA */
-    .cta-section {
-      background: var(--sand);
-      text-align: center;
-      padding: 4rem 2rem;
-    }
-
-    .cta-section h2 {
-      font-size: 1.75rem;
-      margin-bottom: 1rem;
-    }
-
-    .cta-section p {
-      max-width: 500px;
-      margin: 0 auto 2rem;
-      color: #555;
-    }
+    .cta-section { background: var(--sand); text-align: center; padding: 4rem 2rem; }
+    .cta-section h2 { font-size: 1.75rem; margin-bottom: 1rem; }
+    .cta-section p { max-width: 500px; margin: 0 auto 2rem; color: #555; }
 
     /* CONTACT */
-    .contact-section {
-      background: var(--white);
-      padding: 4rem 2rem;
-    }
+    .contact-section { background: var(--white); padding: 4rem 2rem; }
+    .contact-inner { max-width: 600px; margin: 0 auto; }
+    .contact-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; }
+    .contact-section p { text-align: center; color: #666; margin-bottom: 2rem; }
 
-    .contact-inner {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .contact-section h2 {
-      text-align: center;
-      font-size: 1.75rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .contact-section p {
-      text-align: center;
-      color: #666;
-      margin-bottom: 2rem;
-    }
-
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 0.3rem;
-    }
-
-    .form-group label {
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: var(--ocean);
-    }
+    .contact-form { display: flex; flex-direction: column; gap: 1rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.3rem; }
+    .form-group label { font-size: 0.9rem; font-weight: 600; color: var(--ocean); }
 
     .form-group input,
     .form-group textarea,
@@ -467,11 +339,7 @@
 
     .form-group input:focus,
     .form-group textarea:focus,
-    .form-group select:focus {
-      outline: none;
-      border-color: var(--ocean-light);
-    }
-
+    .form-group select:focus { outline: none; border-color: var(--ocean-light); }
     .form-group textarea { resize: vertical; min-height: 120px; }
 
     .form-success {
@@ -492,11 +360,7 @@
       font-size: 0.9rem;
     }
 
-    footer a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
+    footer a { color: var(--accent); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
 
     .footer-links {
@@ -506,8 +370,6 @@
       margin-bottom: 1rem;
       flex-wrap: wrap;
     }
-
-    .footer-links a { color: var(--accent); }
 
     /* MODAL */
     .modal-overlay {
@@ -561,26 +423,9 @@
     }
 
     .modal-body { padding: 2rem; }
-
-    .modal-location {
-      color: var(--ocean);
-      font-weight: 600;
-      font-size: 0.9rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .modal-title {
-      font-size: 1.5rem;
-      font-weight: 800;
-      margin-bottom: 0.5rem;
-    }
-
-    .modal-price {
-      font-size: 1.75rem;
-      font-weight: 800;
-      color: var(--ocean);
-      margin-bottom: 1.5rem;
-    }
+    .modal-location { color: var(--ocean); font-weight: 600; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .modal-title { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; }
+    .modal-price { font-size: 1.75rem; font-weight: 800; color: var(--ocean); margin-bottom: 1.5rem; }
 
     .modal-details {
       display: grid;
@@ -589,23 +434,13 @@
       margin-bottom: 1.5rem;
     }
 
-    .modal-detail {
-      background: var(--sand);
-      padding: 0.75rem;
-      border-radius: 12px;
-      text-align: center;
-    }
-
+    .modal-detail { background: var(--sand); padding: 0.75rem; border-radius: 12px; text-align: center; }
     .modal-detail-value { font-weight: 700; font-size: 1.1rem; }
     .modal-detail-label { font-size: 0.8rem; color: #666; }
 
     .modal-description { color: #555; margin-bottom: 1.5rem; line-height: 1.7; }
 
-    .modal-cta {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
+    .modal-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
 
     /* RESPONSIVE */
     @media (max-width: 600px) {
@@ -801,145 +636,76 @@
 </div>
 
 <script>
-// Sample listing data
 const listings = [
   {
-    id: 1,
-    tipo: 'apartamento',
-    cidade: 'praia-grande',
-    cidadeLabel: 'Praia Grande — Boqueirão',
-    titulo: 'Apartamento 2 dorms — frente mar',
-    preco: 890000,
-    dormitorios: 2,
-    area: 60,
-    tags: ['2 dorms', '60m²', 'Frente mar'],
-    icon: '🏖️',
-    badge: 'Destaque',
-    descricao: 'Apartamento privilegiando localização frente mar, no coração do Boqueirão. Amplo, arejado, com vista para o mar de todos os cômodos. Condomínio com piscina, academia e portaria 24h.'
+    id: 1, tipo: 'apartamento', cidade: 'praia-grande', cidadeLabel: 'Praia Grande — Boqueirão',
+    titulo: 'Apartamento 2 dorms — frente mar', preco: 890000, dormitorios: 2, area: 60,
+    tags: ['2 dorms', '60m²', 'Frente mar'], icon: '🏖️', badge: 'Destaque',
+    descricao: 'Apartamento em localização privilegiada frente mar, no coração do Boqueirão. Amplo, arejado, com vista para o mar de todos os cômodos. Condomínio com piscina, academia e portaria 24h.'
   },
   {
-    id: 2,
-    tipo: 'casa',
-    cidade: 'guaruja',
-    cidadeLabel: 'Guarujá — Pitangueiras',
-    titulo: 'Casa 3 dorms com piscina',
-    preco: 1450000,
-    dormitorios: 3,
-    area: 120,
-    tags: ['3 dorms', '120m²', 'Piscina'],
-    icon: '🏡',
-    badge: 'Novo',
+    id: 2, tipo: 'casa', cidade: 'guaruja', cidadeLabel: 'Guarujá — Pitangueiras',
+    titulo: 'Casa 3 dorms com piscina', preco: 1450000, dormitorios: 3, area: 120,
+    tags: ['3 dorms', '120m²', 'Piscina'], icon: '🏡', badge: 'Novo',
     descricao: 'Casa moderna em condomínio fechado em Pitangueiras, uma das melhores regiões do Guarujá. Espaço gourmet, piscina privativa, 3 suítes e garagem para 2 carros.'
   },
   {
-    id: 3,
-    tipo: 'pousada',
-    cidade: 'peruibe',
-    cidadeLabel: 'Peruíbe — Centro',
-    titulo: 'Pousada completa — 12 suítes',
-    preco: 3200000,
-    dormitorios: 12,
-    area: 450,
-    tags: ['12 suítes', '450m²', 'Receita'],
-    icon: '🏨',
-    badge: 'Investimento',
+    id: 3, tipo: 'pousada', cidade: 'peruibe', cidadeLabel: 'Peruíbe — Centro',
+    titulo: 'Pousada completa — 12 suítes', preco: 3200000, dormitorios: 12, area: 450,
+    tags: ['12 suítes', '450m²', 'Receita'], icon: '🏨', badge: 'Investimento',
     descricao: 'Pousada bem avaliada no centro de Peruíbe, com 12 suítes climatizadas, piscina, área de lazer e salão de café. Receita estabelecida com alta temporada rentável.'
   },
   {
-    id: 4,
-    tipo: 'apartamento',
-    cidade: 'santos',
-    cidadeLabel: 'Santos — Pompéia',
-    titulo: 'Apto 3 dorms com vista mar',
-    preco: 1100000,
-    dormitorios: 3,
-    area: 85,
-    tags: ['3 dorms', '85m²', 'Vista mar'],
-    icon: '🌅',
-    badge: '',
-    descricao: 'Apartamento de alto padrão na Pompéia, com vista panorâmica para o mar. Emcondomínio de alto padrão com infraestrutura completa de lazer.'
+    id: 4, tipo: 'apartamento', cidade: 'santos', cidadeLabel: 'Santos — Pompéia',
+    titulo: 'Apto 3 dorms com vista mar', preco: 1100000, dormitorios: 3, area: 85,
+    tags: ['3 dorms', '85m²', 'Vista mar'], icon: '🌅', badge: '',
+    descricao: 'Apartamento de alto padrão na Pompéia, com vista panorâmica para o mar. Em condomínio de alto padrão com infraestrutura completa de lazer.'
   },
   {
-    id: 5,
-    tipo: 'terreno',
-    cidade: 'itanhaem',
-    cidadeLabel: 'Itanhaém — Centro',
-    titulo: 'Terreno 450m² — excelente localização',
-    preco: 380000,
-    dormitorios: 0,
-    area: 450,
-    tags: ['450m²', 'Título urbano', 'Próximo praia'],
-    icon: '🏗️',
-    badge: '',
+    id: 5, tipo: 'terreno', cidade: 'itanhaem', cidadeLabel: 'Itanhaém — Centro',
+    titulo: 'Terreno 450m² — excelente localização', preco: 380000, dormitorios: 0, area: 450,
+    tags: ['450m²', 'Título urbano', 'Próximo praia'], icon: '🏗️', badge: '',
     descricao: 'Terreno bem localizado no centro de Itanhaém, a poucos minutos da praia. Ideal para construção de casa de veraneio ou pequeno empreendimento comercial.'
   },
   {
-    id: 6,
-    tipo: 'casa',
-    cidade: 'mongagua',
-    cidadeLabel: 'Mongaguá — Flórida',
-    titulo: 'Casa 2 dorms — condomínio fechado',
-    preco: 620000,
-    dormitorios: 2,
-    area: 80,
-    tags: ['2 dorms', '80m²', 'Condomínio'],
-    icon: '🏠',
-    badge: 'Oportunidade',
+    id: 6, tipo: 'casa', cidade: 'mongagua', cidadeLabel: 'Mongaguá — Flórida',
+    titulo: 'Casa 2 dorms — condomínio fechado', preco: 620000, dormitorios: 2, area: 80,
+    tags: ['2 dorms', '80m²', 'Condomínio'], icon: '🏠', badge: 'Oportunidade',
     descricao: 'Casa aconchegante em condomínio fechado em Mongaguá. Ideal para quem busca sossego e segurança. Próxima a praias ainda preservadas.'
   },
   {
-    id: 7,
-    tipo: 'comercial',
-    cidade: 'sao-vicente',
-    cidadeLabel: 'São Vicente — Centro',
-    titulo: 'Sala comercial 45m² — Centro',
-    preco: 450000,
-    dormitorios: 0,
-    area: 45,
-    tags: ['45m²', 'Sala comercial', 'Centro'],
-    icon: '🏢',
-    badge: '',
+    id: 7, tipo: 'comercial', cidade: 'sao-vicente', cidadeLabel: 'São Vicente — Centro',
+    titulo: 'Sala comercial 45m² — Centro', preco: 450000, dormitorios: 0, area: 45,
+    tags: ['45m²', 'Sala comercial', 'Centro'], icon: '🏢', badge: '',
     descricao: 'Sala comercial bem localizada no centro de São Vicente, com excelente circulação de pessoas. Ideal para escritório, consultório ou pequena loja.'
   }
 ];
 
-function formatPrice(value) {
-  if (value >= 1000000) {
-    const m = value / 1000000;
-    return 'R$ ' + m.toFixed(m % 1 === 0 ? 0 : 2).replace('.', ',') + ' milhões';
-  }
-  return 'R$ ' + value.toLocaleString('pt-BR');
+function formatPrice(v) {
+  if (v >= 1000000) return 'R$ ' + (v/1000000).toFixed(v%1000000===0?0:2).replace('.',',') + ' milhões';
+  return 'R$ ' + v.toLocaleString('pt-BR');
 }
 
 function renderListings(items) {
   const grid = document.getElementById('resultsGrid');
   const count = document.getElementById('resultsCount');
-
-  if (items.length === 0) {
-    grid.innerHTML = '<div class="no-results"><div class="no-results-icon\">😕</div><p>Nenhum imóvel encontrado com esses filtros. Tente outras combinações.</p></div>';
+  if (!items.length) {
+    grid.innerHTML = '<div class="no-results"><div class="no-results-icon">😕</div><p>Nenhum imóvel encontrado com esses filtros. Tente outras combinações.</p></div>';
     count.textContent = '0 imóveis encontrados';
     return;
   }
-
-  count.textContent = items.length + ' imóvel' + (items.length > 1 ? 's' : '') + ' encontrado' + (items.length > 1 ? 's' : '');
+  count.textContent = items.length + ' imóvel' + (items.length>1?'s':'') + ' encontrado' + (items.length>1?'s':'');
   grid.innerHTML = items.map(l => '
-    <div class="listing-card" onclick="openModal(' + l.id + ')">
-      <div class="listing-img">
-        ' + l.icon + '
-        ' + (l.badge ? '<span class="listing-badge">' + l.badge + '</span>' : '') + '
-      </div>
+    <div class="listing-card" onclick="openModal('+l.id+')">
+      <div class="listing-img">' + l.icon + (l.badge?'<span class="listing-badge">'+l.badge+'</span>':'') + '</div>
       <div class="listing-body">
-        <div class="listing-location">📍 ' + l.cidadeLabel + '</div>
-        <div class="listing-title">' + l.titulo + '</div>
-        <div class="listing-details">
-          ' + (l.dormitorios > 0 ? '<span>🛏️ ' + l.dormitorios + (l.dormitorios === 1 ? ' quarto' : ' quartos') + '</span>' : '') + '
-          <span>📐 ' + l.area + 'm²</span>
-        </div>
-        <div class="listing-price">' + formatPrice(l.preco) + '</div>
-        <div class="listing-tags">' + l.tags.map(t => '<span class="tag">' + t + '</span>').join('') + '</div>
+        <div class="listing-location">📍 '+l.cidadeLabel+'</div>
+        <div class="listing-title">'+l.titulo+'</div>
+        <div class="listing-details">' + (l.dormitorios>0?'<span>🛏️ '+l.dormitorios+' quarto'+(l.dormitorios>1?'s':'')+'</span>':'') + '<span>📐 '+l.area+'m²</span></div>
+        <div class="listing-price">'+formatPrice(l.preco)+'</div>
+        <div class="listing-tags">'+l.tags.map(t=>'<span class="tag">'+t+'</span>').join('')+'</div>
       </div>
-    </div>
-  ').join('');
+    </div>').join('');
 }
 
 function filterListings() {
@@ -947,39 +713,33 @@ function filterListings() {
   const cidade = document.getElementById('cidade').value;
   const dorms = document.getElementById('dormitorios').value;
   const preco = document.getElementById('preco').value;
-
-  let filtered = listings.filter(l => {
+  const filtered = listings.filter(l => {
     if (tipo && l.tipo !== tipo) return false;
     if (cidade && l.cidade !== cidade) return false;
     if (dorms) {
       const d = parseInt(dorms);
-      if (d === 4 && l.dormitorios < 4) return false;
-      if (d !== 4 && l.dormitorios !== d) return false;
+      if (d===4 && l.dormitorios<4) return false;
+      if (d!==4 && l.dormitorios!==d) return false;
     }
     if (preco) {
-      if (preco === '500k' && l.preco > 500000) return false;
-      if (preco === '500k-1m' && (l.preco < 500000 || l.preco > 1000000)) return false;
-      if (preco === '1m-2m' && (l.preco < 1000000 || l.preco > 2000000)) return false;
-      if (preco === '2m+' && l.preco <= 2000000) return false;
+      if (preco==='500k'&&l.preco>500000) return false;
+      if (preco==='500k-1m'&&(l.preco<500000||l.preco>1000000)) return false;
+      if (preco==='1m-2m'&&(l.preco<1000000||l.preco>2000000)) return false;
+      if (preco==='2m+'&&l.preco<=2000000) return false;
     }
     return true;
   });
-
   renderListings(filtered);
 }
 
 function openModal(id) {
-  const l = listings.find(x => x.id === id);
+  const l = listings.find(x=>x.id===id);
   if (!l) return;
   document.getElementById('modalImg').textContent = l.icon;
-  document.getElementById('modalLocation').textContent = '📍 ' + l.cidadeLabel;
+  document.getElementById('modalLocation').textContent = '📍 '+l.cidadeLabel;
   document.getElementById('modalTitle').textContent = l.titulo;
   document.getElementById('modalPrice').textContent = formatPrice(l.preco);
-  document.getElementById('modalDetails').innerHTML = '
-    <div class="modal-detail"><div class="modal-detail-value">' + l.area + 'm²</div><div class="modal-detail-label">Área</div></div>
-    ' + (l.dormitorios > 0 ? '<div class="modal-detail"><div class="modal-detail-value">' + l.dormitorios + '</div><div class="modal-detail-label">Dorms</div></div>' : '') + '
-    <div class="modal-detail"><div class="modal-detail-value">' + l.tipo.charAt(0).toUpperCase() + l.tipo.slice(1) + '</div><div class="modal-detail-label">Tipo</div></div>
-  ';
+  document.getElementById('modalDetails').innerHTML = '<div class="modal-detail"><div class="modal-detail-value">'+l.area+'m²</div><div class="modal-detail-label">Área</div></div>' + (l.dormitorios>0?'<div class="modal-detail"><div class="modal-detail-value">'+l.dormitorios+'</div><div class="modal-detail-label">Dorms</div></div>':'') + '<div class="modal-detail"><div class="modal-detail-value">'+l.tipo.charAt(0).toUpperCase()+l.tipo.slice(1)+'</div><div class="modal-detail-label">Tipo</div></div>';
   document.getElementById('modalDescription').textContent = l.descricao;
   document.getElementById('modalOverlay').classList.add('active');
   document.body.style.overflow = 'hidden';
@@ -990,7 +750,7 @@ function closeModal() {
   document.body.style.overflow = '';
 }
 
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+document.addEventListener('keydown', e => { if (e.key==='Escape') closeModal(); });
 
 function handleContact(e) {
   e.preventDefault();
@@ -999,7 +759,6 @@ function handleContact(e) {
   setTimeout(() => { document.getElementById('formSuccess').style.display = 'none'; }, 5000);
 }
 
-// Init
 renderListings(listings);
 </script>
 
