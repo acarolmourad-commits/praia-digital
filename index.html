@@ -642,7 +642,55 @@
           .neighborhood-stats { grid-template-columns: repeat(3, 1fr); }
           .rvb-grid { grid-template-columns: 1fr 1fr; }
         }
-      </style>
+  
+
+    /* BEACH GUIDE */
+    .beach-guide { background: linear-gradient(180deg, #f0f9ff 0%, var(--sand) 100%); padding: 3rem 2rem; }
+    .beach-guide h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
+    .beach-guide > p { text-align: center; color: #666; margin-bottom: 2rem; }
+    .beach-tabs { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; }
+    .beach-tab { padding: 0.5rem 1.25rem; border: 2px solid var(--ocean); color: var(--ocean); border-radius: 50px; font-size: 0.85rem; font-weight: 600; cursor: pointer; background: transparent; transition: all 0.2s; }
+    .beach-tab.active, .beach-tab:hover { background: var(--ocean); color: var(--white); }
+    .beach-content { display: none; max-width: 900px; margin: 0 auto; }
+    .beach-content.active { display: block; }
+    .beach-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; }
+    .beach-card { background: var(--white); border-radius: 16px; padding: 1.5rem; border-left: 4px solid var(--ocean); }
+    .beach-card-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+    .beach-card h4 { font-size: 1rem; font-weight: 700; color: var(--dark); margin-bottom: 0.5rem; }
+    .beach-card p { font-size: 0.85rem; color: #666; line-height: 1.5; }
+    .beach-rating { display: flex; align-items: center; gap: 0.3rem; margin-top: 0.75rem; font-size: 0.85rem; font-weight: 700; color: var(--amber); }
+    .beach-ideal { background: var(--ocean-light); color: var(--white); padding: 0.2rem 0.6rem; border-radius: 50px; font-size: 0.72rem; font-weight: 700; margin-left: auto; }
+
+    /* CITY COMPARISON */
+    .compare-cities { background: var(--white); padding: 3rem 2rem; }
+    .compare-cities h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
+    .compare-cities > p { text-align: center; color: #666; margin-bottom: 2rem; }
+    .city-compare-table { width: 100%; border-collapse: collapse; background: var(--white); border-radius: 16px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+    .city-compare-table th { background: var(--ocean); color: var(--white); padding: 1rem 0.75rem; text-align: center; font-weight: 700; font-size: 0.85rem; }
+    .city-compare-table td { padding: 0.85rem 0.75rem; text-align: center; border-bottom: 1px solid #eee; font-size: 0.88rem; }
+    .city-compare-table tr:last-child td { border-bottom: none; }
+    .city-compare-table tr:hover td { background: #f8f8f8; }
+    .city-compare-table .city-name { font-weight: 700; color: var(--ocean); }
+    .city-compare-table .best-val { color: var(--success); font-weight: 700; }
+
+    /* PRICE TRENDS */
+    .price-trends { background: var(--sand); padding: 3rem 2rem; }
+    .price-trends h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
+    .price-trends > p { text-align: center; color: #666; margin-bottom: 2rem; }
+    .trends-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
+    .trend-card { background: var(--white); border-radius: 16px; padding: 1.5rem; }
+    .trend-card-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+    .trend-icon { font-size: 2rem; }
+    .trend-city { font-weight: 700; font-size: 1.1rem; color: var(--dark); }
+    .trend-badge { background: var(--success); color: var(--white); padding: 0.2rem 0.6rem; border-radius: 50px; font-size: 0.75rem; font-weight: 700; margin-left: auto; }
+    .trend-badge.warning { background: var(--amber); color: var(--dark); }
+    .trend-bar { background: #eee; border-radius: 50px; height: 10px; margin-bottom: 0.5rem; overflow: hidden; }
+    .trend-bar-fill { height: 100%; border-radius: 50px; transition: width 0.8s ease; }
+    .trend-stat { text-align: center; background: var(--sand); border-radius: 10px; padding: 0.5rem; }
+    .trend-stat-value { font-size: 1rem; font-weight: 800; color: var(--ocean); }
+    .trend-stat-label { font-size: 0.68rem; color: #888; }
+
+    </style>
 </head>
 <body>
 
@@ -1458,6 +1506,110 @@
   </div>
 </section>
 
+
+<!-- BEACH GUIDE -->
+<section class="beach-guide" id="praias">
+  <h2>🏖️ Guia das Praias do Litoral</h2>
+  <p>Conheça as melhores praias de cada cidade.</p>
+  <div class="beach-tabs">
+    <button class="beach-tab active" onclick="showBeach('pg')">🌊 Praia Grande</button>
+    <button class="beach-tab" onclick="showBeach('santos')">⚓ Santos</button>
+    <button class="beach-tab" onclick="showBeach('guaruja')">🏝️ Guarujá</button>
+    <button class="beach-tab" onclick="showBeach('sv')">🌅 São Vicente</button>
+    <button class="beach-tab" onclick="showBeach('itanhaem')">🏖️ Itanhaém</button>
+    <button class="beach-tab" onclick="showBeach('mongagua')">🌴 Mongaguá</button>
+    <button class="beach-tab" onclick="showBeach('peruibe')">✨ Peruíbe</button>
+  </div>
+  <div class="beach-content active" id="beach-pg">
+    <div class="beach-grid">
+      <div class="beach-card"><div class="beach-card-icon">🏖️</div><h4>Ocian / Boqueirão</h4><p>Praia urbana mais badalada. Infraestrutura completa, quiosques, areia larga. Ideal para famílias.</p><div class="beach-rating">★★★★★ <span style="font-size:0.8rem;color:#888;">Movimentada no verão</span><span class="beach-ideal">Famílias</span></div></div>
+      <div class="beach-card"><div class="beach-card-icon">🌊</div><h4>Foz do Rio Itu</h4><p>Praia mais tranquila, próxima ao rio. Ideal para quem busca sossego sem sair da cidade.</p><div class="beach-rating">★★★★☆ <span style="font-size:0.8rem;color:#888;">Mais vazia</span><span class="beach-ideal">Sossego</span></div></div>
+      <div class="beach-card"><div class="beach-card-icon">🏄</div><h4>Aviação</h4><p>Praia frequentada por esportistas. Ondas médias, boa para surf e voleibol.</p><div class="beach-rating">★★★★☆ <span style="font-size:0.8rem;color:#888;">Esportistas</span><span class="beach-ideal">Esportes</span></div></div>
+      <div class="beach-card"><div class="beach-card-icon">🌅</div><h4>Samoa / Maracanã</h4><p>Região nova, areia bem conservada. Ideal para corridas e caminhadas à beira-mar.</p><div class="beach-rating">★★★★☆ <span style="font-size:0.8rem;color:#888;">Bonita</span><span class="beach-ideal">Corrida</span></div></div>
+    </div>
+  </div>
+  <div class="beach-content" id="beach-santos">
+    <div class="beach-grid">
+      <div class="beach-card"><div class="beach-card-icon">🏖️</div><h4>Pompéia / Embaré</h4><p>Praia mais tradicional de Santos. Infraestrutura de hotels e restaurantes.</p><div class="beach-rating">★★★★★ <span style="font-size:0.8rem;color:#888;">Clássica</span><span class="beach-ideal">Turismo</span></div></div>
+      <div class="beach-card"><div class="beach-card-icon">⚓</div><h4>Ponta da Praia</h4><p>Extremo sul de Santos, próximo aos museus. Praia extensa com ciclovia.</p><div class="beach-rating">★★★★☆ <span style="font-size:0.8rem;color:#888;">Cultura</span><span class="beach-ideal">Cultura</span></div></div>
+      <div class="beach-card"><div class="beach-card-icon">🌊</div><h4>José Menino / Gonzaga</h4><p>Zona nobre de Santos. Praia larga, bem organizada, próxima aos shops.</p><div class="beach-rating">★★★★☆ <span style="font-size:0.8rem;color:#888;">Nobre</span><span class="beach-ideal">Urbanidade</span></div></div>
+      <div class="beach-card"><div class="beach-card-icon">🌅</div><h4>Canal 4</h4><p>Praia frequentada por locais. Menor movimento, boa para privacidade.</p><div class="beach-rating">★★★☆☆ <span style="font-size:0.8rem;color:#888;">Local</span><span class="beach-ideal">Locais</span></div></div>
+    </div>
+  </div>
+  <div class="beach-content" id="beach-guaruja">
+    <div class="beach-grid">
+      <div class="beach-card"><div class="beach-card-icon">🏖️</div><h4>Pitangueiras / Enseada</h4><p>Praia mais famosa do Guarujá. Extensa, bem estruturada, águas cristalinas.</p><div class="beach-rating">★★★★★ <span style="font-size:0.8rem;color:#888;">Famosa</span><span class="beach-ideal">Turismo</span></div></div>
+      <div class="beach-card"><div class="beach-card-icon">🏝️</div><h4>Praia do Tombo</h4><p>Praia de fácil acesso, muito frequentada. Estrutura de quiosques.</p><div class="beach-rating">★★★★☆ <span style="font-size:0.8rem;color:#888;">Popular</span><span class="beach-ideal">Famílias</span></div></div>
+      <div class="beach-card"><div class="beach-card-icon">🌴</div><h4>Astúrias / Pernambuco</h4><p>Praia charmosa, mais tranquila. Rua com restaurants.</p><div class="beach-rating">★★★★☆ <span style="font-size:0.8rem;color:#888;">Charmosa</span><span class="beach-ideal">Restaurantes</span></div></div>
+      <div class="beach-card"><div class="beach-card-icon">🌊</div><h4>Sapeá / Guaiamum</h4><p>Praias mais preservadas, ao sul. Necessitam carro.</p><div class="beach-rating">★★★★☆ <span style="font-size:0.8rem;color:#888;">Preservada</span><span class="beach-ideal">Natureza</span></div></div>
+    </div>
+  </div>
+  <div class="beach-content" id="beach-sv">
+    <div class="beach-grid">
+      <div class="beach-card"><div class="beach-card-icon">🏖️</div><h4>Praia do González</h4><p>Praia histórica de São Vicente. Primeiro povoamento do Brasil.</p><div class="beach-rating">★★★★☆ <span style="font-size:0.8rem;color:#888;">Histórica</span><span class="beach-ideal">Cultura</span></div></div>
+      <div class="beach-card"><div class="beach-card-icon">🌊</div><h4>Praia NSR de Lourdes</h4><p>Pequena e tranquila, próxima ao centro.</p><div class="beach-rating">★★★☆☆ <span style="font-size:0.8rem;color:#888;">Central</span><span class="beach-ideal">Central</span></div></div>
+      <div class="beach-card"><div class="beach-card-icon">🏄</div><h4>Praia do Marapé</h4><p>Praia urbana, boa estrutura. Surfistas nos finais de semana.</p><div class="beach-rating">★★★☆☆ <span style="font-size:0.8rem;color:#888;">Surf</span><span class="beach-ideal">Esportes</span></div></div>
+    </div>
+  </div>
+  <div class="beach-content" id="beach-itanhaem">
+    <div class="beach-grid">
+      <div class="beach-card"><div class="beach-card-icon">🏖️</div><h4>Centro / Downtown</h4><p>Praia urbana com infraestrutura de hotels.</p><div class="beach-rating">★★★★☆ <span style="font-size:0.8rem;color:#888;">Urbana</span><span class="beach-ideal">Famílias</span></div></div>
+      <div class="beach-card"><div class="beach-card-icon">🌊</div><h4>Baleia / South</h4><p>Praia mais preservada ao sul da cidade.</p><div class="beach-rating">★★★★☆ <span style="font-size:0.8rem;color:#888;">Preservada</span><span class="beach-ideal">Sossego</span></div></div>
+      <div class="beach-card"><div class="beach-card-icon">🏄</div><h4>Suarão</h4><p>Praia ao sul extremo, perto de Mongaguá.</p><div class="beach-rating">★★★★☆ <span style="font-size:0.8rem;color:#888;">Remota</span><span class="beach-ideal">Isolamento</span></div></div>
+    </div>
+  </div>
+  <div class="beach-content" id="beach-mongagua">
+    <div class="beach-grid">
+      <div class="beach-card"><div class="beach-card-icon">🏖️</div><h4>Praia Central (Mongaguá)</h4><p>Praia semi-urbanizada, extensão incrível.</p><div class="beach-rating">★★★★★ <span style="font-size:0.8rem;color:#888;">Preservada</span><span class="beach-ideal">Sossego</span></div></div>
+      <div class="beach-card"><div class="beach-card-icon">🌊</div><h4>Flórida / Sky</h4><p>Bairro tranquilo, praia sem movimento.</p><div class="beach-rating">★★★★☆ <span style="font-size:0.8rem;color:#888;">Pacífica</span><span class="beach-ideal">Relax</span></div></div>
+      <div class="beach-card"><div class="beach-card-icon">🌴</div><h4>Tupi / Náu</h4><p>Praia semi-preservada, boa para caminhadas.</p><div class="beach-rating">★★★☆☆ <span style="font-size:0.8rem;color:#888;">Natural</span><span class="beach-ideal">Natureza</span></div></div>
+    </div>
+  </div>
+  <div class="beach-content" id="beach-peruibe">
+    <div class="beach-grid">
+      <div class="beach-card"><div class="beach-card-icon">🏖️</div><h4>Centro / Downtown</h4><p>Praia urbana bem estruturada. Muita história.</p><div class="beach-rating">★★★★☆ <span style="font-size:0.8rem;color:#888;">Histórica</span><span class="beach-ideal">Cultura</span></div></div>
+      <div class="beach-card"><div class="beach-card-icon">🌊</div><h4>Jardim Maret</h4><p>Praia tranquila na zona sul.</p><div class="beach-rating">★★★★☆ <span style="font-size:0.8rem;color:#888;">Tranquila</span><span class="beach-ideal">Investimento</span></div></div>
+      <div class="beach-card"><div class="beach-card-icon">🌴</div><h4>Praia do Centro Norte</h4><p>Praia mais preservada. Águas cristalinas.</p><div class="beach-rating">★★★★★ <span style="font-size:0.8rem;color:#888;">Preservada</span><span class="beach-ideal">Ecologia</span></div></div>
+      <div class="beach-card"><div class="beach-card-icon">🏄</div><h4>Balneário</h4><p>Praia familiar, boa para crianças.</p><div class="beach-rating">★★★★☆ <span style="font-size:0.8rem;color:#888;">Familiar</span><span class="beach-ideal">Crianças</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CITY COMPARISON TABLE -->
+<section class="compare-cities" id="comparar-cidades">
+  <h2>📊 Comparar Cidades</h2>
+  <p>Veja indicadores-chave de cada cidade para decidir onde investir ou morar.</p>
+  <div style="overflow-x:auto;">
+  <table class="city-compare-table">
+    <thead><tr><th>🏙️ Cidade</th><th>💰 Preço/m²</th><th>📈 Valorização/a</th><th>🏖️ Praia</th><th>🛒 Comércio</th><th>🏥 Saúde</th><th>🚌 Transporte</th><th>💼 Rental Yield</th></tr></thead>
+    <tbody>
+      <tr><td class="city-name">⚓ Santos</td><td>R$ 18.000</td><td class="best-val">+11,2%</td><td class="best-val">★★★★★</td><td class="best-val">★★★★★</td><td class="best-val">★★★★★</td><td class="best-val">★★★★★</td><td class="best-val">5.1%</td></tr>
+      <tr><td class="city-name">🏝️ Guarujá</td><td>R$ 15.000</td><td class="best-val">+11,2%</td><td class="best-val">★★★★★</td><td class="best-val">★★★★</td><td class="best-val">★★★★</td><td>★★★☆☆</td><td>5.4%</td></tr>
+      <tr><td class="city-name">🌊 Praia Grande</td><td>R$ 12.000</td><td>+9,1%</td><td>★★★★☆</td><td class="best-val">★★★★★</td><td>★★★★☆</td><td class="best-val">★★★★★</td><td>5.8%</td></tr>
+      <tr><td class="city-name">🌅 São Vicente</td><td>R$ 9.000</td><td>+7,8%</td><td>★★★☆☆</td><td class="best-val">★★★★★</td><td>★★★★☆</td><td class="best-val">★★★★★</td><td>6.1%</td></tr>
+      <tr><td class="city-name">🏖️ Itanhaém</td><td>R$ 7.500</td><td>+7,2%</td><td>★★★★☆</td><td>★★★☆☆</td><td>★★★☆☆</td><td>★★★☆☆</td><td>6.8%</td></tr>
+      <tr><td class="city-name">✨ Peruíbe</td><td>R$ 7.500</td><td>+7,7%</td><td class="best-val">★★★★★</td><td>★★★☆☆</td><td>★★☆☆☆</td><td>★★☆☆☆</td><td class="best-val">7.2%</td></tr>
+      <tr><td class="city-name">🌴 Mongaguá</td><td>R$ 7.000</td><td>+6,2%</td><td>★★★★☆</td><td>★★☆☆☆</td><td>★★☆☆☆</td><td>★★☆☆☆</td><td>5.0%</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="text-align:center;margin-top:1rem;font-size:0.8rem;color:#888;">📊 Dados baseados em análise de mercado 2024-2026.</p>
+</section>
+
+<!-- PRICE TRENDS -->
+<section class="price-trends" id="tendencias">
+  <h2>📈 Tendências de Preços por Cidade</h2>
+  <p>Evolução do preço por m² nos últimos anos e projeções.</p>
+  <div class="trends-grid">
+    <div class="trend-card"><div class="trend-card-header"><div class="trend-icon">⚓</div><div class="trend-city">Santos</div><div class="trend-badge">+11.2%/ano</div></div><div class="trend-bar"><div class="trend-bar-fill" style="width:95%;"></div></div><div class="trend-stats"><div class="trend-stat"><div class="trend-stat-value">R$ 18k</div><div class="trend-stat-label">média/m²</div></div><div class="trend-stat"><div class="trend-stat-value">+R$ 1.8k</div><div class="trend-stat-label">/m²/ano</div></div><div class="trend-stat"><div class="trend-stat-value">🔺 Alta</div><div class="trend-stat-label">demanda</div></div></div></div>
+    <div class="trend-card"><div class="trend-card-header"><div class="trend-icon">🏝️</div><div class="trend-city">Guarujá</div><div class="trend-badge">+11.2%/ano</div></div><div class="trend-bar"><div class="trend-bar-fill" style="width:88%;"></div></div><div class="trend-stats"><div class="trend-stat"><div class="trend-stat-value">R$ 15k</div><div class="trend-stat-label">média/m²</div></div><div class="trend-stat"><div class="trend-stat-value">+R$ 1.5k</div><div class="trend-stat-label">/m²/ano</div></div><div class="trend-stat"><div class="trend-stat-value">🔺 Alta</div><div class="trend-stat-label">demanda</div></div></div></div>
+    <div class="trend-card"><div class="trend-card-header"><div class="trend-icon">🌊</div><div class="trend-city">Praia Grande</div><div class="trend-badge warning">+9.1%/ano</div></div><div class="trend-bar"><div class="trend-bar-fill" style="width:72%;"></div></div><div class="trend-stats"><div class="trend-stat"><div class="trend-stat-value">R$ 12k</div><div class="trend-stat-label">média/m²</div></div><div class="trend-stat"><div class="trend-stat-value">+R$ 1.0k</div><div class="trend-stat-label">/m²/ano</div></div><div class="trend-stat"><div class="trend-stat-value">📊 Média</div><div class="trend-stat-label">demanda</div></div></div></div>
+    <div class="trend-card"><div class="trend-card-header"><div class="trend-icon">🌅</div><div class="trend-city">São Vicente</div><div class="trend-badge warning">+7.8%/ano</div></div><div class="trend-bar"><div class="trend-bar-fill" style="width:58%;"></div></div><div class="trend-stats"><div class="trend-stat"><div class="trend-stat-value">R$ 9k</div><div class="trend-stat-label">média/m²</div></div><div class="trend-stat"><div class="trend-stat-value">+R$ 0.7k</div><div class="trend-stat-label">/m²/ano</div></div><div class="trend-stat"><div class="trend-stat-value">📊 Média</div><div class="trend-stat-label">demanda</div></div></div></div>
+    <div class="trend-card"><div class="trend-card-header"><div class="trend-icon">✨</div><div class="trend-city">Peruíbe</div><div class="trend-badge">+7.7%/ano</div></div><div class="trend-bar"><div class="trend-bar-fill" style="width:52%;"></div></div><div class="trend-stats"><div class="trend-stat"><div class="trend-stat-value">R$ 7.5k</div><div class="trend-stat-label">média/m²</div></div><div class="trend-stat"><div class="trend-stat-value">+R$ 0.6k</div><div class="trend-stat-label">/m²/ano</div></div><div class="trend-stat"><div class="trend-stat-value">📈 Cresc.</div><div class="trend-stat-label">turismo</div></div></div></div>
+    <div class="trend-card"><div class="trend-card-header"><div class="trend-icon">🏖️</div><div class="trend-city">Itanhaém</div><div class="trend-badge warning">+7.2%/ano</div></div><div class="trend-bar"><div class="trend-bar-fill" style="width:48%;"></div></div><div class="trend-stats"><div class="trend-stat"><div class="trend-stat-value">R$ 7.5k</div><div class="trend-stat-label">média/m²</div></div><div class="trend-stat"><div class="trend-stat-value">+R$ 0.5k</div><div class="trend-stat-label">/m²/ano</div></div><div class="trend-stat"><div class="trend-stat-value">📈 Cresc.</div><div class="trend-stat-label">turismo</div></div></div></div>
+  </div>
+</section>
+
 <footer>
   <div class="footer-links">
     <a href="#buscar">Buscar imóveis</a>
@@ -1916,11 +2068,11 @@ function openModal(id) {
     var cityWalk = {
       'praia-grande': [{icon:'🏖️',label:'Praia',val:98,cls:''},{icon:'🍽️',label:'Restaurantes',val:92,cls:''},{icon:'🛒',label:'Comércio',val:88,cls:''},{icon:'🏥',label:'Saúde',val:85,cls:''},{icon:'🚌',label:'Transporte',val:78,cls:''},{icon:'🏋️',label:'Academia',val:74,cls:'fair'}],
       'santos': [{icon:'🏖️',label:'Praia',val:99,cls:''},{icon:'🍽️',label:'Restaurantes',val:94,cls:''},{icon:'🛒',label:'Comércio',val:96,cls:''},{icon:'🏥',label:'Saúde',val:97,cls:''},{icon:'🚌',label:'Transporte',val:91,cls:''},{icon:'🏋️',label:'Academia',val:88,cls:''}],
-      'guaruja': [{icon:'🏖️',label:'Praia',val:95,cls:''},{icon:'🍽️',label:'Restaurantes',val:88,cls:''},{icon:'🛒',label:'Comérci',val:85,cls:''},{icon:'🏥',label:'Saúde',val:80,cls:'fair'},{icon:'🚌',label:'Transporte',val:75,cls:'fair'},{icon:'🏋️',label:'Academia',val:82,cls:''}],
-      'sao-vicente': [{icon:'🏖️',label:'Praia',val:85,cls:''},{icon:'🍽️',label:'Restaurantes',val:82,cls:''},{icon:'🛒',label:'Comérci',val:90,cls:''},{icon:'🏥',label:'Saúde',val:85,cls:''},{icon:'🚌',label:'Transporte',val:80,cls:''},{icon:'🏋️',label:'Academia',val:72,cls:'fair'}],
-      'itanhaem': [{icon:'🏖️',label:'Praia',val:90,cls:''},{icon:'🍽️',label:'Restaurantes',val:78,cls:'fair'},{icon:'🛒',label:'Comérci',val:74,cls:'fair'},{icon:'🏥',label:'Saúde',val:70,cls:'poor'},{icon:'🚌',label:'Transporte',val:65,cls:'poor'},{icon:'🏋️',label:'Academia',val:60,cls:'poor'}],
-      'mongagua': [{icon:'🏖️',label:'Praia',val:88,cls:''},{icon:'🍽️',label:'Restaurantes',val:70,cls:'poor'},{icon:'🛒',label:'Comérci',val:68,cls:'poor'},{icon:'🏥',label:'Saúde',val:60,cls:'poor'},{icon:'🚌',label:'Transporte',val:62,cls:'poor'},{icon:'🏋️',label:'Academia',val:55,cls:'poor'}],
-      'peruibe': [{icon:'🏖️',label:'Praia',val:92,cls:''},{icon:'🍽️',label:'Restaurantes',val:75,cls:'fair'},{icon:'🛒',label:'Comérci',val:72,cls:'fair'},{icon:'🏥',label:'Saúde',val:68,cls:'poor'},{icon:'🚌',label:'Transporte',val:64,cls:'poor'},{icon:'🏋️',label:'Academia',val:58,cls:'poor'}]
+      'guaruja': [{icon:'🏖️',label:'Praia',val:95,cls:''},{icon:'🍽️',label:'Restaurantes',val:88,cls:''},{icon:'🛒',label:'Comércio',val:85,cls:''},{icon:'🏥',label:'Saúde',val:80,cls:'fair'},{icon:'🚌',label:'Transporte',val:75,cls:'fair'},{icon:'🏋️',label:'Academia',val:82,cls:''}],
+      'sao-vicente': [{icon:'🏖️',label:'Praia',val:85,cls:''},{icon:'🍽️',label:'Restaurantes',val:82,cls:''},{icon:'🛒',label:'Comércio',val:90,cls:''},{icon:'🏥',label:'Saúde',val:85,cls:''},{icon:'🚌',label:'Transporte',val:80,cls:''},{icon:'🏋️',label:'Academia',val:72,cls:'fair'}],
+      'itanhaem': [{icon:'🏖️',label:'Praia',val:90,cls:''},{icon:'🍽️',label:'Restaurantes',val:78,cls:'fair'},{icon:'🛒',label:'Comércio',val:74,cls:'fair'},{icon:'🏥',label:'Saúde',val:70,cls:'poor'},{icon:'🚌',label:'Transporte',val:65,cls:'poor'},{icon:'🏋️',label:'Academia',val:60,cls:'poor'}],
+      'mongagua': [{icon:'🏖️',label:'Praia',val:88,cls:''},{icon:'🍽️',label:'Restaurantes',val:70,cls:'poor'},{icon:'🛒',label:'Comércio',val:68,cls:'poor'},{icon:'🏥',label:'Saúde',val:60,cls:'poor'},{icon:'🚌',label:'Transporte',val:62,cls:'poor'},{icon:'🏋️',label:'Academia',val:55,cls:'poor'}],
+      'peruibe': [{icon:'🏖️',label:'Praia',val:92,cls:''},{icon:'🍽️',label:'Restaurantes',val:75,cls:'fair'},{icon:'🛒',label:'Comércio',val:72,cls:'fair'},{icon:'🏥',label:'Saúde',val:68,cls:'poor'},{icon:'🚌',label:'Transporte',val:64,cls:'poor'},{icon:'🏋️',label:'Academia',val:58,cls:'poor'}]
     };
     var walkData = cityWalk[l.cidade] || cityWalk['praia-grande'];
     var wg = document.getElementById('walkGrid');
@@ -2178,7 +2330,7 @@ function calcRentVsBuy() {
   var financiado = preco - entrada;
   var mRate = taxa / 12;
   var months = anos * 12;
-  var parcela = financed * (Math.pow(1 + mRate, months) * mRate) / (Math.pow(1 + mRate, months) - 1);
+  var parcela = financiado * (Math.pow(1 + mRate, months) * mRate) / (Math.pow(1 + mRate, months) - 1);
   var investRenda = renda - aluguel;
   var investReturn = 0.0085;
   var rentNetWorth = entrada;
@@ -2358,6 +2510,20 @@ function toggleFaq(el) { el.classList.toggle('open'); }
 function handleHash() {
   const match = location.hash.match(/^#imovel-(\d+)$/);
   if (match) { const id = parseInt(match[1]); const l = listings.find(x => x.id === id); if (l && !document.getElementById('modalOverlay').classList.contains('active')) { setTimeout(() => openModal(id), 100); } }
+}
+
+// ====================
+// BEACH GUIDE
+// ====================
+function showBeach(city) {
+  var tabs = document.querySelectorAll('.beach-tab');
+  for (var i = 0; i < tabs.length; i++) { tabs[i].classList.remove('active'); }
+  var contents = document.querySelectorAll('.beach-content');
+  for (var j = 0; j < contents.length; j++) { contents[j].classList.remove('active'); }
+  var selectedTab = document.querySelector('.beach-tab[onclick*="' + city + '"]');
+  if (selectedTab) selectedTab.classList.add('active');
+  var selectedContent = document.getElementById('beach-' + city);
+  if (selectedContent) selectedContent.classList.add('active');
 }
 
 // Init
