@@ -14,7 +14,7 @@
   <meta property="og:description" content="Plataforma especializada em imóveis de praia. Apartamentos, casas, pousadas e terrenos nas melhores praias do Brasil.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://acarolmourad-commits.github.io/praia-digital/">
-  <meta property="og:image" content="https://acarolmourad-commits.github.io/praia-digital/og-image.png">
+  <meta property="og:image" content="https://acarolmourad-commits.github.io/praia-digital/og-image.svg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
@@ -454,7 +454,7 @@
 <body>
 
 <header>
-  <a href="#" class="logo">
+  <a href="https://acarolmourad-commits.github.io/praia-digital/" class="logo">
     <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle cx="18" cy="18" r="18" fill="#FFFFFF" fill-opacity="0.2"/>
       <path d="M8 22 Q18 12 28 22" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none"/>
@@ -476,6 +476,16 @@
   <div class="hero-cta">
     <a href="#buscar" class="btn btn-primary">Buscar imóveis</a>
     <a href="#contato" class="btn btn-outline">Fale conosco</a>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<section style="background:var(--ocean);color:white;padding:1.5rem 2rem;text-align:center;">
+  <div style="display:flex;justify-content:center;gap:3rem;flex-wrap:wrap;">
+    <div><div style="font-size:2rem;font-weight:800;">12</div><div style="opacity:0.8;font-size:0.9rem;">Imóveis cadastrados</div></div>
+    <div><div style="font-size:2rem;font-weight:800;">7</div><div style="opacity:0.8;font-size:0.9rem;">Cidades do litoral</div></div>
+    <div><div style="font-size:2rem;font-weight:800;">100%</div><div style="opacity:0.8;font-size:0.9rem;">Digital — sem burocracia</div></div>
+    <div><div style="font-size:2rem;font-weight:800;">24h</div><div style="opacity:0.8;font-size:0.9rem;">Resposta online</div></div>
   </div>
 </section>
 
@@ -533,13 +543,43 @@
 
 <section class="results-section" id="results">
   <div class="results-header">
-    <span class="results-count" id="resultsCount">7 imóveis encontrados</span>
-  </div>
+        <span class="results-count" id="resultsCount">12 imóveis encontrados</span>
+      <select id="sortBy" onchange="filterListings()" style="padding:0.5rem 1rem;border:2px solid #e0e0e0;border-radius:12px;font-size:0.9rem;cursor:pointer;">
+        <option value="default">Ordenar por</option>
+        <option value="price-asc">Menor preço</option>
+        <option value="price-desc">Maior preço</option>
+        <option value="area-desc">Maior área</option>
+      </select>
+    </div>
   <div class="results-grid" id="resultsGrid"></div>
 </section>
 
 <section class="features" id="recursos">
-  <h2>Por que escolher a Praia Digital?</h2>
+  <h2>Como funciona?</h2>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">🔍</div>
+      <h3>Busque</h3>
+      <p>Use os filtros para encontrar imóveis que combinam com você — tipo, cidade, dormitórios e faixa de preço.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📱</div>
+      <h3>Contate</h3>
+      <p>Entre em contato pelo WhatsApp, e-mail ou formulário. Respondemos em até 24 horas com informações completas.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔑</div>
+      <h3>Visite</h3>
+      <p>Agende uma visita presencial ou virtual. Nossa equipe acompanha você em cada etapa da decisão.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📋</div>
+      <h3>Feche negócio</h3>
+      <p>Apoiamos na documentação, financiamento ou rental income — do primeiro contato até as chaves na mão.</p>
+    </div>
+  </div>
+
+  <h2 style="margin-top:3rem;">Por que escolher a Praia Digital?</h2>
   <div class="features-grid">
     <div class="feature-card">
       <div class="feature-icon">🌊</div>
@@ -578,6 +618,13 @@
   <div class="contact-inner">
     <h2>Fale conosco</h2>
     <p>Quer anunciar seu imóvel ou precisa de ajuda? Entre em contato.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:2rem;">
+      <a href="https://wa.me/5513999999999?text=Olá! Gostaria de saber mais sobre os imóveis da Praia Digital." target="_blank" class="btn" style="background:#25D366;color:white;padding:0.85rem 2rem;border-radius:50px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:0.5rem;font-size:1.05rem;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+      <a href="mailto:contato@praiadigital.com.br" class="btn btn-outline" style="border:2px solid var(--ocean);color:var(--ocean);padding:0.85rem 2rem;border-radius:50px;font-weight:700;text-decoration:none;font-size:1.05rem;">📧 E-mail</a>
+    </div>
     <form class="contact-form" id="contactForm" onsubmit="handleContact(event)">
       <div class="form-group">
         <label for="contato-nome">Nome completo</label>
@@ -674,12 +721,42 @@ const listings = [
     descricao: 'Casa aconchegante em condomínio fechado em Mongaguá. Ideal para quem busca sossego e segurança. Próxima a praias ainda preservadas.'
   },
   {
-    id: 7, tipo: 'comercial', cidade: 'sao-vicente', cidadeLabel: 'São Vicente — Centro',
-    titulo: 'Sala comercial 45m² — Centro', preco: 450000, dormitorios: 0, area: 45,
-    tags: ['45m²', 'Sala comercial', 'Centro'], icon: '🏢', badge: '',
-    descricao: 'Sala comercial bem localizada no centro de São Vicente, com excelente circulação de pessoas. Ideal para escritório, consultório ou pequena loja.'
-  }
-];
+      id: 7, tipo: 'comercial', cidade: 'sao-vicente', cidadeLabel: 'São Vicente — Centro',
+      titulo: 'Sala comercial 45m² — Centro', preco: 450000, dormitorios: 0, area: 45,
+      tags: ['45m²', 'Sala comercial', 'Centro'], icon: '🏢', badge: '',
+      descricao: 'Sala comercial bem localizada no centro de São Vicente, com excelente circulação de pessoas. Ideal para escritório, consultório ou pequena loja.'
+    },
+    {
+      id: 8, tipo: 'apartamento', cidade: 'praia-grande', cidadeLabel: 'Praia Grande — Caiçara',
+      titulo: 'Cobertura duplex 3 dorms — vista mar', preco: 1850000, dormitorios: 3, area: 140,
+      tags: ['3 dorms', '140m²', 'Cobertura', 'Vista mar'], icon: '🌴', badge: 'Premium',
+      descricao: 'Cobertura duplex de alto padrão no Caiçara, com vista panorâmica para o mar. Amplo terraço, churrasqueira privativa e 3 suítes. Condomínio com infraestrutura completa.'
+    },
+    {
+      id: 9, tipo: 'casa', cidade: 'itanhaem', cidadeLabel: 'Itanhaém — Suarão',
+      titulo: 'Casa 2 dorms — 200m da praia', preco: 550000, dormitorios: 2, area: 90,
+      tags: ['2 dorms', '90m²', '200m praia', 'Sobrado'], icon: '🏡', badge: '',
+      descricao: 'Sobrado bem localizado no Suarão, a apenas 200 metros da praia. Ideal para quem busca praticidade e lazer sem precisar de carro. Quintal com churrasqueira.'
+    },
+    {
+      id: 10, tipo: 'terreno', cidade: 'peruibe', cidadeLabel: 'Peruíbe — JD Caravelas',
+      titulo: 'Terreno 600m² — alto padrão', preco: 480000, dormitorios: 0, area: 600,
+      tags: ['600m²', 'Título urbano', 'Bela vista'], icon: '🏗️', badge: '',
+      descricao: 'Terreno de 600m² em bairro de alto padrão no JD Caravelas, com bela vista e toda infraestrutura de rede de água, luz e esgoto. Ideal para casa de veraneio de alto padrão.'
+    },
+    {
+      id: 11, tipo: 'apartamento', cidade: 'guaruja', cidadeLabel: 'Guarujá — Enseada',
+      titulo: 'Flat completo — pé na areia', preco: 720000, dormitorios: 1, area: 45,
+      tags: ['1 dorm', '45m²', 'Pé na areia', 'Hotel'], icon: '🏖️', badge: 'Oportunidade',
+      descricao: 'Flat em excelente localização na Enseada, com acesso direto à praia. mobiliado e equipado, ideal para renda através de locação por temporada ou uso próprio nos fins de semana.'
+    },
+    {
+      id: 12, tipo: 'pousada', cidade: 'mongagua', cidadeLabel: 'Mongaguá — Vila Oriental',
+      titulo: 'Pousada 8 suítes — bem avaliada', preco: 2100000, dormitorios: 8, area: 320,
+      tags: ['8 suítes', '320m²', 'Alta temporada'], icon: '🏨', badge: 'Investimento',
+      descricao: 'Pousada bem avaliada no Booking e Google na Vila Oriental. 8 suítes climatizadas, piscina, cozinha industrial e salão de café completo. Receita comprovada com 85% de ocupação na alta temporada.'
+    }
+  ];
 
 function formatPrice(v) {
   if (v >= 1000000) return 'R$ ' + (v/1000000).toFixed(v%1000000===0?0:2).replace('.',',') + ' milhões';
@@ -729,8 +806,12 @@ function filterListings() {
     }
     return true;
   });
-  renderListings(filtered);
-}
+  const sortBy = document.getElementById('sortBy').value;
+    if (sortBy === 'price-asc') filtered.sort((a,b) => a.preco - b.preco);
+    else if (sortBy === 'price-desc') filtered.sort((a,b) => b.preco - a.preco);
+    else if (sortBy === 'area-desc') filtered.sort((a,b) => b.area - a.area);
+    renderListings(filtered);
+  }
 
 function openModal(id) {
   const l = listings.find(x=>x.id===id);
