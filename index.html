@@ -496,7 +496,118 @@
     .credit-detail-cta { display: inline-block; background: var(--ocean); color: white; padding: 0.75rem 1.5rem; border-radius: 50px; font-weight: 700; font-size: 0.9rem; text-decoration: none; margin-top: 1rem; transition: transform 0.2s; }
     .credit-detail-cta:hover { transform: translateY(-2px); }
 
-    .nb-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; max-width: 1100px; margin: 0 auto; }
+    /* RENTAL MANAGEMENT SECTION */
+    .rental-mgmt-section { background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 60%, #16213e 100%); padding: 4rem 2rem; color: white; }
+    .rental-mgmt-inner { max-width: 1100px; margin: 0 auto; }
+    .rental-mgmt-badge { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: #a8e6cf; padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1.25rem; }
+    .rental-mgmt-title { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 900; line-height: 1.15; margin-bottom: 1rem; background: linear-gradient(135deg, #ffffff 0%, #a8e6cf 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .rental-mgmt-sub { color: rgba(255,255,255,0.7); font-size: 1.05rem; max-width: 650px; margin-bottom: 2.5rem; line-height: 1.6; }
+
+    /* OWNER REGISTRATION FORM */
+    .rental-registration-card { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); border-radius: 24px; padding: 2.5rem; margin-bottom: 3rem; backdrop-filter: blur(10px); }
+    .rental-form-header { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 2rem; }
+    .rental-form-icon { font-size: 2.5rem; flex-shrink: 0; }
+    .rental-form-title { font-size: 1.25rem; font-weight: 800; color: white; margin-bottom: 0.25rem; }
+    .rental-form-sub { font-size: 0.88rem; color: rgba(255,255,255,0.6); }
+    .rental-form-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+    .rental-form-field { display: flex; flex-direction: column; gap: 0.35rem; }
+    .rental-form-field--full { grid-column: 1 / -1; }
+    .rental-form-field label { font-size: 0.78rem; font-weight: 600; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.05em; }
+    .rental-form-field input, .rental-form-field select, .rental-form-field textarea { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 10px; padding: 0.65rem 0.9rem; color: white; font-size: 0.9rem; transition: border-color 0.2s; }
+    .rental-form-field input::placeholder, .rental-form-field textarea::placeholder { color: rgba(255,255,255,0.35); }
+    .rental-form-field input:focus, .rental-form-field select:focus, .rental-form-field textarea:focus { outline: none; border-color: #a8e6cf; }
+    .rental-form-field select option { background: #1a1a2e; color: white; }
+    .rental-checkboxes { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .rental-checkbox { display: flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; color: rgba(255,255,255,0.8); cursor: pointer; background: rgba(255,255,255,0.08); padding: 0.35rem 0.7rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.12); transition: background 0.2s; }
+    .rental-checkbox:hover { background: rgba(255,255,255,0.14); }
+    .rental-checkbox input { accent-color: #a8e6cf; }
+    .rental-submit-btn { width: 100%; background: linear-gradient(135deg, #a8e6cf 0%, #56ab91 100%); color: #0f3460; border: none; border-radius: 14px; padding: 1rem 2rem; font-size: 1rem; font-weight: 800; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; }
+    .rental-submit-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(168,230,207,0.3); }
+    .rental-form-success { display: none; margin-top: 1rem; padding: 1rem; background: rgba(168,230,207,0.15); border: 1px solid rgba(168,230,207,0.4); border-radius: 12px; color: #a8e6cf; font-size: 0.9rem; text-align: center; }
+    .rental-form-success.visible { display: block; }
+
+    /* RENTAL SERVICES GRID */
+    .rental-services-title { font-size: 1.3rem; font-weight: 800; color: white; text-align: center; margin-bottom: 1.5rem; }
+    .rental-services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; margin-bottom: 3rem; }
+    .rental-service-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 18px; padding: 1.5rem; transition: transform 0.25s, border-color 0.25s; }
+    .rental-service-card:hover { transform: translateY(-4px); border-color: rgba(168,230,207,0.4); }
+    .rental-service-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+    .rental-service-card h4 { font-size: 1rem; font-weight: 800; color: white; margin-bottom: 0.5rem; }
+    .rental-service-card p { font-size: 0.83rem; color: rgba(255,255,255,0.6); line-height: 1.5; margin-bottom: 0.75rem; }
+    .rental-service-price { font-size: 0.82rem; font-weight: 700; color: #a8e6cf; background: rgba(168,230,207,0.12); padding: 0.35rem 0.75rem; border-radius: 8px; display: inline-block; }
+
+    /* SEASONAL CALENDAR */
+    .rental-calendar-section { margin-bottom: 3rem; }
+    .rental-calendar-title { font-size: 1.2rem; font-weight: 800; color: white; text-align: center; margin-bottom: 1.25rem; }
+    .rental-calendar-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
+    .rental-calendar-card { border-radius: 16px; padding: 1.25rem; }
+    .rental-calendar-peak { background: linear-gradient(135deg, #ff6b6b 0%, #c0392b 100%); }
+    .rental-calendar-high { background: linear-gradient(135deg, #e17055 0%, #d63031 100%); }
+    .rental-calendar-mid { background: linear-gradient(135deg, #fdcb6e 0%, #e67e22 100%); color: #1a1a2e; }
+    .rental-calendar-low { background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%); }
+    .rental-calendar-month { font-size: 0.88rem; font-weight: 800; margin-bottom: 0.35rem; }
+    .rental-calendar-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.85; margin-bottom: 0.5rem; }
+    .rental-calendar-info { font-size: 0.78rem; opacity: 0.85; line-height: 1.4; margin-bottom: 0.6rem; }
+    .rental-calendar-dicas { display: flex; flex-direction: column; gap: 0.25rem; }
+    .rental-calendar-dica { font-size: 0.75rem; opacity: 0.9; }
+
+    /* PLATFORM COMPARISON */
+    .rental-platform-section { margin-bottom: 3rem; }
+    .rental-platform-title { font-size: 1.2rem; font-weight: 800; color: white; text-align: center; margin-bottom: 1.25rem; }
+    .rental-platform-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; }
+    .rental-platform-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 18px; padding: 1.5rem; position: relative; }
+    .rental-platform-best { border-color: #a8e6cf; background: rgba(168,230,207,0.08); }
+    .rental-platform-badge { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #a8e6cf; margin-bottom: 0.75rem; display: block; }
+    .rental-platform-name { font-size: 1.1rem; font-weight: 800; color: white; margin-bottom: 0.35rem; }
+    .rental-platform-fee { font-size: 0.82rem; color: rgba(255,255,255,0.6); margin-bottom: 0.75rem; }
+    .rental-platform-stats { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 0.75rem; }
+    .rental-platform-stat { font-size: 0.8rem; color: rgba(255,255,255,0.75); }
+    .rental-platform-stat strong { color: white; }
+    .rental-platform-pros { font-size: 0.78rem; color: rgba(255,255,255,0.6); line-height: 1.5; }
+
+    /* REVENUE CALCULATOR */
+    .rental-revenue-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 20px; padding: 2rem; margin-bottom: 2.5rem; }
+    .rental-revenue-title { font-size: 1.2rem; font-weight: 800; color: white; margin-bottom: 0.4rem; text-align: center; }
+    .rental-revenue-sub { font-size: 0.85rem; color: rgba(255,255,255,0.6); text-align: center; margin-bottom: 1.5rem; }
+    .rental-revenue-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 1.25rem; }
+    .rental-rev-field { display: flex; flex-direction: column; gap: 0.3rem; }
+    .rental-rev-field label { font-size: 0.75rem; font-weight: 600; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.05em; }
+    .rental-rev-field input, .rental-rev-field select { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 10px; padding: 0.6rem 0.8rem; color: white; font-size: 0.88rem; }
+    .rental-rev-field input:focus, .rental-rev-field select:focus { outline: none; border-color: #a8e6cf; }
+    .rental-rev-field select option { background: #1a1a2e; }
+    .rental-rev-btn { width: 100%; background: linear-gradient(135deg, #a8e6cf 0%, #56ab91 100%); color: #0f3460; border: none; border-radius: 12px; padding: 0.85rem; font-size: 0.95rem; font-weight: 800; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; }
+    .rental-rev-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(168,230,207,0.25); }
+    .rental-rev-result { display: none; margin-top: 1.25rem; }
+    .rental-rev-result.visible { display: block; }
+    .rental-rev-summary { font-size: 1.1rem; font-weight: 800; color: #a8e6cf; margin-bottom: 0.75rem; text-align: center; }
+    .rental-rev-breakdown { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.75rem; margin-bottom: 1rem; }
+    .rental-rev-item { background: rgba(255,255,255,0.06); border-radius: 10px; padding: 0.75rem; text-align: center; }
+    .rental-rev-item-label { font-size: 0.72rem; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 0.05em; }
+    .rental-rev-item-value { font-size: 0.95rem; font-weight: 800; color: white; margin-top: 0.2rem; }
+    .rental-rev-cta { text-align: center; }
+    .rental-rev-whatsapp { display: inline-block; background: #25d366; color: white; padding: 0.75rem 1.5rem; border-radius: 50px; font-weight: 700; font-size: 0.88rem; text-decoration: none; transition: transform 0.2s; }
+    .rental-rev-whatsapp:hover { transform: translateY(-2px); }
+
+    /* RENTAL CTA */
+    .rental-cta-section { text-align: center; padding: 2rem 0 1rem; }
+    .rental-cta-title { font-size: 1.3rem; font-weight: 800; color: white; margin-bottom: 0.75rem; }
+    .rental-cta-text { font-size: 0.9rem; color: rgba(255,255,255,0.65); max-width: 500px; margin: 0 auto 1.5rem; line-height: 1.5; }
+    .rental-cta-buttons { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+    .rental-cta-whatsapp { background: #25d366; color: white; padding: 0.85rem 1.75rem; border-radius: 50px; font-weight: 700; font-size: 0.9rem; text-decoration: none; transition: transform 0.2s; }
+    .rental-cta-whatsapp:hover { transform: translateY(-2px); }
+    .rental-cta-email { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); color: white; padding: 0.85rem 1.75rem; border-radius: 50px; font-weight: 700; font-size: 0.9rem; text-decoration: none; transition: transform 0.2s, background 0.2s; }
+    .rental-cta-email:hover { background: rgba(255,255,255,0.2); transform: translateY(-2px); }
+
+    @media(max-width:600px) {
+      .rental-mgmt-section { padding: 3rem 1rem; }
+      .rental-registration-card { padding: 1.5rem; }
+      .rental-form-header { flex-direction: column; }
+      .rental-checkboxes { gap: 0.4rem; }
+      .rental-calendar-grid { grid-template-columns: 1fr 1fr; }
+      .rental-cta-buttons { flex-direction: column; align-items: center; }
+    }
+
+    .nb-grid
     .nb-card { background: var(--white); border-radius: 16px; padding: 1.5rem; box-shadow: 0 2px 12px rgba(0,0,0,0.08); position: relative; }
     .nb-card h4 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--dark); }
     .nb-card p { font-size: 0.88rem; color: #555; line-height: 1.5; margin-bottom: 0.75rem; }
@@ -806,6 +917,7 @@
   <nav>
         <a href="#buscar">Buscar</a>
         <a href="#credito">Crédito</a>
+        <a href="#locacoes">Locações</a>
         <a href="#simulador">Simulador</a>
         <a href="#comparativo">Comparativo</a>
         <a href="#taxas">Taxas</a>
@@ -933,6 +1045,307 @@
       <div class="credit-detail-modal" id="creditDetailModal">
         <button class="credit-detail-close" onclick="closeCreditDetail()">✕</button>
         <div id="creditDetailContent"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RENTAL MANAGEMENT & SEASONAL LETTINGS -->
+<section class="rental-mgmt-section" id="locacoes">
+  <div class="rental-mgmt-inner">
+    <div class="rental-mgmt-badge">🏖️ GESTÃO DE LOCAÇÕES DE TEMPORADA</div>
+    <h2 class="rental-mgmt-title">Alugue seu imóvel no<br>litoral com rendimento máximo</h2>
+    <p class="rental-mgmt-sub">Gerenciamento completo de locação de temporada — de Airbnb a Booking — com gestão operacional, limpeza, check-in e rendimiento garantido.</p>
+
+    <!-- OWNER PROPERTY REGISTRATION FORM -->
+    <div class="rental-registration-card" id="ownerForm">
+      <div class="rental-form-header">
+        <div class="rental-form-icon">🏠</div>
+        <div>
+          <h3 class="rental-form-title">Cadastre seu imóvel para locação de temporada</h3>
+          <p class="rental-form-sub">Preencha os dados e receba uma análise de rendimento estimada em até 24h.</p>
+        </div>
+      </div>
+      <div class="rental-form-grid">
+        <div class="rental-form-field">
+          <label for="rentalNome">Nome completo *</label>
+          <input type="text" id="rentalNome" placeholder="Seu nome" required>
+        </div>
+        <div class="rental-form-field">
+          <label for="rentalEmail">E-mail *</label>
+          <input type="email" id="rentalEmail" placeholder="seu@email.com" required>
+        </div>
+        <div class="rental-form-field">
+          <label for="rentalTel">WhatsApp *</label>
+          <input type="tel" id="rentalTel" placeholder="(13) 99999-9999">
+        </div>
+        <div class="rental-form-field">
+          <label for="rentalCidade">Cidade do imóvel *</label>
+          <select id="rentalCidade">
+            <option value="">Selecione...</option>
+            <option value="praia-grande">Praia Grande</option>
+            <option value="santos">Santos</option>
+            <option value="guaruja">Guarujá</option>
+            <option value="sao-vicente">São Vicente</option>
+            <option value="itanhaem">Itanhaém</option>
+            <option value="mongagua">Mongaguá</option>
+            <option value="peruibe">Peruíbe</option>
+          </select>
+        </div>
+        <div class="rental-form-field">
+          <label for="rentalBairro">Bairro / Região</label>
+          <input type="text" id="rentalBairro" placeholder="Ex: Boqueirão, Pitangueiras...">
+        </div>
+        <div class="rental-form-field">
+          <label for="rentalTipo">Tipo de imóvel *</label>
+          <select id="rentalTipo">
+            <option value="">Selecione...</option>
+            <option value="apartamento">Apartamento</option>
+            <option value="casa">Casa</option>
+            <option value="kitnet">Kitnet / Studio</option>
+            <option value="pousada">Pousada / Chalé</option>
+            <option value="casa-piscina">Casa com piscina</option>
+            <option value="cobertura">Cobertura</option>
+          </select>
+        </div>
+        <div class="rental-form-field">
+          <label for="rentalQuartos">Quartos *</label>
+          <select id="rentalQuartos">
+            <option value="">Selecione...</option>
+            <option value="1">1 quarto</option>
+            <option value="2">2 quartos</option>
+            <option value="3">3 quartos</option>
+            <option value="4">4+ quartos</option>
+          </select>
+        </div>
+        <div class="rental-form-field">
+          <label for="rentalCapacidade">Capacidade (pessoas)</label>
+          <select id="rentalCapacidade">
+            <option value="">Selecione...</option>
+            <option value="2">2 pessoas</option>
+            <option value="4">4 pessoas</option>
+            <option value="6">6 pessoas</option>
+            <option value="8">8 pessoas</option>
+            <option value="10+">10+ pessoas</option>
+          </select>
+        </div>
+        <div class="rental-form-field rental-form-field--full">
+          <label for="rentalCaracteristicas">Características do imóvel</label>
+          <div class="rental-checkboxes">
+            <label class="rental-checkbox"><input type="checkbox" id="rchVistaMar" value="1"> 🌊 Vista para o mar</label>
+            <label class="rental-checkbox"><input type="checkbox" id="rchPiscina" value="1"> 🏊 Piscina</label>
+            <label class="rental-checkbox"><input type="checkbox" id="rchWifi" value="1"> 📶 Wi-Fi</label>
+            <label class="rental-checkbox"><input type="checkbox" id="rchChurrasqueira" value="1"> 🍖 Churrasqueira</label>
+            <label class="rental-checkbox"><input type="checkbox" id="rchPet" value="1"> 🐾 Pet-friendly</label>
+            <label class="rental-checkbox"><input type="checkbox" id="rchEstacionamento" value="1"> 🚗 Estacionamento</label>
+            <label class="rental-checkbox"><input type="checkbox" id="rchArCond" value="1"> ❄️ Ar-condicionado</label>
+            <label class="rental-checkbox"><input type="checkbox" id="rchTv" value="1"> 📺 TV Smart</label>
+            <label class="rental-checkbox"><input type="checkbox" id="rchPertoPraia" value="1"> 🏖️ Perto da praia</label>
+          </div>
+        </div>
+        <div class="rental-form-field rental-form-field--full">
+          <label for="rentalValorDiaria">Diária estimada (R$) — se souber</label>
+          <input type="number" id="rentalValorDiaria" placeholder="Ex: 350" min="50">
+        </div>
+        <div class="rental-form-field rental-form-field--full">
+          <label for="rentalObservacoes">Observações ou dúvidas</label>
+          <textarea id="rentalObservacoes" rows="3" placeholder="Conte mais sobre o imóvel, disponibilidade, perguntas..."></textarea>
+        </div>
+      </div>
+      <button class="rental-submit-btn" onclick="submitRentalForm()">🏠 Cadastrar meu imóvel</button>
+      <div class="rental-form-success" id="rentalFormSuccess">
+        ✅ Cadastro enviado com sucesso! Nossa equipe entrará em contato em até 24h com uma análise de rendimento personalizada.
+      </div>
+    </div>
+
+    <!-- RENTAL SERVICES GRID -->
+    <h3 class="rental-services-title">Nossos Serviços de Gestão</h3>
+    <div class="rental-services-grid">
+      <div class="rental-service-card">
+        <div class="rental-service-icon">📱</div>
+        <h4>Anúncio Profissional</h4>
+        <p>Fotos profissionais, descrição otimizada para Airbnb, Booking, VRBO e mais. Texts de conversão para aumentar reservas.</p>
+        <div class="rental-service-price">A partir de R$ 150/anúncio</div>
+      </div>
+      <div class="rental-service-card">
+        <div class="rental-service-icon">🔑</div>
+        <h4>Check-in / Check-out</h4>
+        <p>Gestão completa de chaves digitais, código de portaria, recepção de hóspedes e inventário do imóvel.</p>
+        <div class="rental-service-price">R$ 80 porcheck-in</div>
+      </div>
+      <div class="rental-service-card">
+        <div class="rental-service-icon">🧹</div>
+        <h4>Limpeza e Manutenção</h4>
+        <p>Equipe de limpeza profissional entre hóspedes, manutenção preventiva, lavanderia e restocking de produtos.</p>
+        <div class="rental-service-price">R$ 120 por limpeza</div>
+      </div>
+      <div class="rental-service-card">
+        <div class="rental-service-icon">💰</div>
+        <h4>Rendimento Garantido</h4>
+        <p>Plano de renda fixa mensal garantida mesmo com baixo occupancy. Você não fica sem rendimento na baixa temporada.</p>
+        <div class="rental-service-price">Consulte condições</div>
+      </div>
+      <div class="rental-service-card">
+        <div class="rental-service-icon">📊</div>
+        <h4>Relatórios Mensais</h4>
+        <p>Dashboard com occupancy, diária média, satisfação dos hóspedes, comparativo de plataformas e evolução patrimonial.</p>
+        <div class="rental-service-price">Incluído na gestão</div>
+      </div>
+      <div class="rental-service-card">
+        <div class="rental-service-icon">🛡️</div>
+        <h4>Proteção e Seguro</h4>
+        <p>Seguro contra danos a hóspedes, caução digital, assistência 24h e suporte jurídico para contratos de temporada.</p>
+        <div class="rental-service-price">Incluído na gestão</div>
+      </div>
+    </div>
+
+    <!-- SEASONAL CALENDAR PREVIEW -->
+    <div class="rental-calendar-section">
+      <h3 class="rental-calendar-title">📅 Calendário de Alta Temporada — Litoral Sul 2025/2026</h3>
+      <div class="rental-calendar-grid">
+        <div class="rental-calendar-card rental-calendar-peak">
+          <div class="rental-calendar-month">Dez 2025 — Jan 2026</div>
+          <div class="rental-calendar-label">🔥 Alta temporada</div>
+          <div class="rental-calendar-info">Ocupação 95-100% · Diária até 3x maior · Período mínimo 5 noites</div>
+          <div class="rental-calendar-dicas">
+            <div class="rental-calendar-dica">✨ Feriado: Natal, Réveillon (6-7 diárias)</div>
+            <div class="rental-calendar-dica">💡 Reserve com 6 meses de antecedência</div>
+          </div>
+        </div>
+        <div class="rental-calendar-card rental-calendar-high">
+          <div class="rental-calendar-month">Fevereiro — Carnaval 2026</div>
+          <div class="rental-calendar-label">🔥 Alta temporada</div>
+          <div class="rental-calendar-info">Ocupação 90%+ · Férias escolares · Carnaval 5+ dias</div>
+          <div class="rental-calendar-dicas">
+            <div class="rental-calendar-dica">🎉 Carnaval: até 5x diária normal</div>
+            <div class="rental-calendar-dica">📈 Melhor mês para faturamento do ano</div>
+          </div>
+        </div>
+        <div class="rental-calendar-card rental-calendar-mid">
+          <div class="rental-calendar-month">Julho 2026</div>
+          <div class="rental-calendar-label">📈 Média temporada</div>
+          <div class="rental-calendar-info">Ocupação 70-85% · Férias escolares · Diária 1.5x normal</div>
+          <div class="rental-calendar-dicas">
+            <div class="rental-calendar-dica">🏖️ Férias escolares: famílias</div>
+            <div class="rental-calendar-dica">📅 Reserve com 3 meses de antecedência</div>
+          </div>
+        </div>
+        <div class="rental-calendar-card rental-calendar-mid">
+          <div class="rental-calendar-month">Páscoa 2026</div>
+          <div class="rental-calendar-label">📈 Média temporada</div>
+          <div class="rental-calendar-info">Ocupação 75% · 4-5 dias · Famílias</div>
+          <div class="rental-calendar-dicas">
+            <div class="rental-calendar-dica">🥚 Páscoa: pacote semanal comum</div>
+            <div class="rental-calendar-dica">💰 Receita estável e previsível</div>
+          </div>
+        </div>
+        <div class="rental-calendar-card rental-calendar-low">
+          <div class="rental-calendar-month">Maio — Agosto</div>
+          <div class="rental-calendar-label">📉 Baixa temporada</div>
+          <div class="rental-calendar-info">Ocupação 30-50% · Fins de semana prolongados · Diária normal</div>
+          <div class="rental-calendar-dicas">
+            <div class="rental-calendar-dica">💡 Fins de semana prolongado: Tactics + Carnaval</div>
+            <div class="rental-calendar-dica">📅 Ideais para contratos mensais</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PLATFORM COMPARISON -->
+    <div class="rental-platform-section">
+      <h3 class="rental-platform-title">🏆 Onde Anunciar — Comparativo de Plataformas</h3>
+      <div class="rental-platform-grid">
+        <div class="rental-platform-card rental-platform-best">
+          <div class="rental-platform-badge">🏆 Melhor para o litoral</div>
+          <div class="rental-platform-name">Airbnb Brasil</div>
+          <div class="rental-platform-fee">Taxa: 3% hóspede + 3-5% anfitrião</div>
+          <div class="rental-platform-stats">
+            <div class="rental-platform-stat"><span>📊 Ocupação média:</span> <strong>78% alta / 45% baixa</strong></div>
+            <div class="rental-platform-stat"><span>💰 Diária média PG:</span> <strong>R$ 280-450</strong></div>
+            <div class="rental-platform-stat"><span>⭐ Nota média:</span> <strong>4.85</strong></div>
+            <div class="rental-platform-stat"><span>🌐 Visitantes:</span> <strong>+150M/mês</strong></div>
+          </div>
+          <div class="rental-platform-pros">✅ Maior tráfego, ✅ Proteção hóspede, ✅ Superhost badge, ✅ Pix automático</div>
+        </div>
+        <div class="rental-platform-card">
+          <div class="rental-platform-badge">🥈 Segunda melhor</div>
+          <div class="rental-platform-name">Booking.com</div>
+          <div class="rental-platform-fee">Taxa: 10-15% anfitrião</div>
+          <div class="rental-platform-stats">
+            <div class="rental-platform-stat"><span>📊 Ocupação média:</span> <strong>65% alta / 40% baixa</strong></div>
+            <div class="rental-platform-stat"><span>💰 Diária média:</span> <strong>R$ 250-400</strong></div>
+            <div class="rental-platform-stat"><span>⭐ Nota média:</span> <strong>8.7/10</strong></div>
+            <div class="rental-platform-stat"><span>🌐 Visitantes:</span> <strong>+130M/mês</strong></div>
+          </div>
+          <div class="rental-platform-pros">✅ Hóspedes internacionais, ✅ Sem photos de verificación obrigatória, ✅ Reservas instantâneas</div>
+        </div>
+        <div class="rental-platform-card">
+          <div class="rental-platform-badge">🥉 Nacional</div>
+          <div class="rental-platform-name">FlatinMate</div>
+          <div class="rental-platform-fee">Taxa: 8-12% anfitrião</div>
+          <div class="rental-platform-stats">
+            <div class="rental-platform-stat"><span>📊 Ocupação média:</span> <strong>55% alta / 35% baixa</strong></div>
+            <div class="rental-platform-stat"><span>💰 Diária média:</span> <strong>R$ 220-380</strong></div>
+            <div class="rental-platform-stat"><span>🌐 Visitantes:</span> <strong>+2M/mês</strong></div>
+          </div>
+          <div class="rental-platform-pros">✅ Plataforma brasileira, ✅ Suporte em português, ✅ Taxas flexíveis</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- REVENUE CALCULATOR -->
+    <div class="rental-revenue-card">
+      <h3 class="rental-revenue-title">🧮 Simulador de Rendimento — Locação de Temporada</h3>
+      <p class="rental-revenue-sub">Veja quanto seu imóvel pode gerar por mês na temporada.</p>
+      <div class="rental-revenue-grid">
+        <div class="rental-rev-field">
+          <label for="revDiaria">Diária média na alta (R$)</label>
+          <input type="number" id="revDiaria" placeholder="Ex: 350" min="50" value="350">
+        </div>
+        <div class="rental-rev-field">
+          <label for="revOcupAlta">Ocupação alta (%)</label>
+          <select id="revOcupAlta">
+            <option value="0.95">95%</option>
+            <option value="0.85" selected>85%</option>
+            <option value="0.75">75%</option>
+            <option value="0.65">65%</option>
+          </select>
+        </div>
+        <div class="rental-rev-field">
+          <label for="revOcupBaixa">Ocupação baixa (%)</label>
+          <select id="revOcupBaixa">
+            <option value="0.50" selected>50%</option>
+            <option value="0.40">40%</option>
+            <option value="0.30">30%</option>
+            <option value="0.60">60%</option>
+          </select>
+        </div>
+        <div class="rental-rev-field">
+          <label for="revTaxa">Taxa plataforma (%)</label>
+          <select id="revTaxa">
+            <option value="0.15" selected>15% (Airbnb)</option>
+            <option value="0.12">12% (FlatinMate)</option>
+            <option value="0.10">10% (Booking)</option>
+          </select>
+        </div>
+      </div>
+      <button class="rental-rev-btn" onclick="calcRentalRevenue()">📊 Calcular Rendimento</button>
+      <div class="rental-rev-result" id="rentalRevResult">
+        <div class="rental-rev-summary" id="rentalRevSummary"></div>
+        <div class="rental-rev-breakdown" id="rentalRevBreakdown"></div>
+        <div class="rental-rev-cta">
+          <a href="https://wa.me/5513999999999?text=Olá! Quero saber mais sobre gestão de locação de temporada no meu imóvel." class="rental-rev-whatsapp" target="_blank">💬 Falar sobre gestão completa</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="rental-cta-section">
+      <h3 class="rental-cta-title">🏠 Seu imóvel gerando renda o ano inteiro</h3>
+      <p class="rental-cta-text">Cadastre-se gratuitamente e receba uma análise completa do potencial de rendimento do seu imóvel. Sem compromisso.</p>
+      <div class="rental-cta-buttons">
+        <a href="https://wa.me/5513999999999?text=Olá! Quero cadastrar meu imóvel para locação de temporada na Praia Digital." class="rental-cta-whatsapp" target="_blank">💬 Cadastrar pelo WhatsApp</a>
+        <a href="mailto:locacao@praiadigital.com.br?subject=Cadastro de imóvel para locação" class="rental-cta-email">📧 Enviar por e-mail</a>
       </div>
     </div>
   </div>
@@ -3335,6 +3748,111 @@ function showCreditDetail(type) {
 function closeCreditDetail() {
   document.getElementById('creditDetailOverlay').classList.remove('open');
   document.body.style.overflow = '';
+}
+
+// RENTAL MANAGEMENT FUNCTIONS
+function submitRentalForm() {
+  const nome = document.getElementById('rentalNome').value.trim();
+  const email = document.getElementById('rentalEmail').value.trim();
+  const tel = document.getElementById('rentalTel').value.trim();
+  const cidade = document.getElementById('rentalCidade').value;
+  const tipo = document.getElementById('rentalTipo').value;
+  const quartos = document.getElementById('rentalQuartos').value;
+
+  if (!nome || !email || !cidade || !tipo || !quartos) {
+    alert('Por favor, preencha os campos obrigatórios: Nome, E-mail, Cidade, Tipo do imóvel e Quartos.');
+    return;
+  }
+
+  if (!email.includes('@') || !email.includes('.')) {
+    alert('Por favor, insira um e-mail válido.');
+    return;
+  }
+
+  // Build WhatsApp message
+  const caracteristicas = [];
+  if (document.getElementById('rchVistaMar').checked) caracteristicas.push('Vista para o mar');
+  if (document.getElementById('rchPiscina').checked) caracteristicas.push('Piscina');
+  if (document.getElementById('rchWifi').checked) caracteristicas.push('Wi-Fi');
+  if (document.getElementById('rchChurrasqueira').checked) caracteristicas.push('Churrasqueira');
+  if (document.getElementById('rchPet').checked) caracteristicas.push('Pet-friendly');
+  if (document.getElementById('rchEstacionamento').checked) caracteristicas.push('Estacionamento');
+  if (document.getElementById('rchArCond').checked) caracteristicas.push('Ar-condicionado');
+  if (document.getElementById('rchTv').checked) caracteristicas.push('TV Smart');
+  if (document.getElementById('rchPertoPraia').checked) caracteristicas.push('Perto da praia');
+
+  const valorDiaria = document.getElementById('rentalValorDiaria').value;
+  const obs = document.getElementById('rentalObservacoes').value.trim();
+  const bairro = document.getElementById('rentalBairro').value.trim();
+  const capacidade = document.getElementById('rentalCapacidade').value;
+
+  let msg = `🏠 *Cadastro de Imóvel para Locação de Temporada*\n\n`;
+  msg += `*Nome:* ${nome}\n`;
+  msg += `*E-mail:* ${email}\n`;
+  if (tel) msg += `*WhatsApp:* ${tel}\n`;
+  msg += `*Cidade:* ${cidade}\n`;
+  if (bairro) msg += `*Bairro:* ${bairro}\n`;
+  msg += `*Tipo:* ${tipo}\n`;
+  msg += `*Quartos:* ${quartos}\n`;
+  if (capacidade) msg += `*Capacidade:* ${capacidade} pessoas\n`;
+  if (caracteristicas.length) msg += `*Características:* ${caracteristicas.join(', ')}\n`;
+  if (valorDiaria) msg += `*Diária estimada:* R$ ${valorDiaria}\n`;
+  if (obs) msg += `*Observações:* ${obs}`;
+
+  document.getElementById('rentalFormSuccess').classList.add('visible');
+  window.open(`https://wa.me/5513999999999?text=${encodeURIComponent(msg)}`, '_blank');
+}
+
+function calcRentalRevenue() {
+  const diaria = parseFloat(document.getElementById('revDiaria').value) || 350;
+  const ocupAlta = parseFloat(document.getElementById('revOcupAlta').value);
+  const ocupBaixa = parseFloat(document.getElementById('revOcupBaixa').value);
+  const taxa = parseFloat(document.getElementById('revTaxa').value);
+
+  // Simulate 2 high months, 4 medium, 6 low
+  const months = 12;
+  let totalRevenue = 0;
+  const breakdown = [];
+
+  const altaDiariaLiq = diaria * (1 - taxa);
+  const baixaDiaria = diaria * 0.55;
+  const baixaDiariaLiq = baixaDiaria * (1 - taxa);
+  const mediaDiaria = diaria * 0.75;
+  const mediaDiariaLiq = mediaDiaria * (1 - taxa);
+
+  // High season: Dec, Jan, Feb (carnaval), July
+  const altaNetMes = altaDiariaLiq * 30 * ocupAlta;
+  totalRevenue += altaNetMes * 4;
+  breakdown.push({ label: 'Alta temporada (4 meses)', value: `R$ ${formatBRL(altaNetMes * 4)}` });
+
+  // Mid season: March (after carnival), June, September
+  const mediaNetMes = mediaDiariaLiq * 30 * 0.75;
+  totalRevenue += mediaNetMes * 4;
+  breakdown.push({ label: 'Média temporada (4 meses)', value: `R$ ${formatBRL(mediaNetMes * 4)}` });
+
+  // Low season: rest
+  const baixaNetMes = baixaDiariaLiq * 30 * ocupBaixa;
+  totalRevenue += baixaNetMes * 4;
+  breakdown.push({ label: 'Baixa temporada (4 meses)', value: `R$ ${formatBRL(baixaNetMes * 4)}` });
+
+  const netAnual = totalRevenue;
+  const taxAnual = totalRevenue * taxa;
+  const grossAnual = netAnual + taxAnual;
+
+  document.getElementById('rentalRevSummary').innerHTML =
+    `💰 Rendimento líquido anual estimado: <strong>R$ ${formatBRL(netAnual)}</strong><br>
+     <span style="font-size:0.8rem;opacity:0.7">Faturamento bruto: R$ ${formatBRL(grossAnual)} · Taxas de plataforma: R$ ${formatBRL(taxAnual)}</span>`;
+
+  document.getElementById('rentalRevBreakdown').innerHTML =
+    breakdown.map(b => `<div class="rental-rev-item"><div class="rental-rev-item-label">${b.label}</div><div class="rental-rev-item-value">${b.value}</div></div>`).join('') +
+    `<div class="rental-rev-item"><div class="rental-rev-item-label">Média mensal líquida</div><div class="rental-rev-item-value">R$ ${formatBRL(netAnual / 12)}</div></div>` +
+    `<div class="rental-rev-item"><div class="rental-rev-item-label">Diária líquida (alta)</div><div class="rental-rev-item-value">R$ ${formatBRL(altaDiariaLiq)}</div></div>`;
+
+  document.getElementById('rentalRevResult').classList.add('visible');
+}
+
+function formatBRL(n) {
+  return n.toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
 }
 
 // Init
