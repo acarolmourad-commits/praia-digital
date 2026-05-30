@@ -200,69 +200,96 @@
     }
 
     .search-field select:focus,
-    .search-field input:focus { outline: none; border-color: var(--ocean-light); }
+    .search-field input:focus {
+      outline: none;
+      border-color: var(--ocean-light);
+    }
 
     .search-btn {
       display: block;
+      width: 100%;
+      max-width: 300px;
       margin: 0 auto;
+      padding: 0.85rem;
       background: var(--ocean);
       color: var(--white);
-      padding: 0.85rem 3rem;
       border: none;
       border-radius: 50px;
       font-size: 1.05rem;
       font-weight: 700;
       cursor: pointer;
-      transition: background 0.2s, transform 0.2s;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
 
-    .search-btn:hover { background: var(--dark); transform: translateY(-2px); }
+    .search-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,119,182,0.3);
+    }
 
     /* RESULTS */
     .results-section {
       background: var(--white);
       padding: 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
     }
 
     .results-header {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      margin-bottom: 1.5rem;
+      justify-content: space-between;
       flex-wrap: wrap;
-      gap: 0.5rem;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
     }
 
-    .results-count { color: #666; font-size: 0.95rem; }
+    .results-count { font-size: 1.1rem; font-weight: 700; color: var(--dark); }
+
+    .results-topbar {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .compare-btn {
+      padding: 0.5rem 1rem;
+      background: var(--ocean-light);
+      color: var(--white);
+      border: none;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: none;
+      transition: all 0.2s;
+    }
+
+    .compare-btn.visible { display: inline-block; }
+    .compare-btn:hover { background: var(--ocean); }
 
     .results-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 1.5rem;
     }
 
+    /* LISTING CARD */
     .listing-card {
       background: var(--white);
-      color: var(--dark);
       border-radius: 16px;
       overflow: hidden;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
       cursor: pointer;
       transition: transform 0.2s, box-shadow 0.2s;
-      border: 2px solid transparent;
+      position: relative;
     }
 
     .listing-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(0,0,0,0.15);
-      border-color: var(--ocean-light);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.15);
     }
 
     .listing-img {
-      width: 100%;
-      height: 200px;
+      height: 160px;
       background: linear-gradient(135deg, var(--ocean-light), var(--accent));
       display: flex;
       align-items: center;
@@ -281,110 +308,537 @@
       border-radius: 50px;
       font-size: 0.75rem;
       font-weight: 700;
-      text-transform: uppercase;
     }
 
-    .listing-body { padding: 1.25rem; }
-    .listing-location { font-size: 0.85rem; color: var(--ocean); font-weight: 600; margin-bottom: 0.3rem; }
-    .listing-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; }
-    .listing-details { display: flex; gap: 1rem; font-size: 0.85rem; color: #666; margin-bottom: 0.75rem; }
-    .listing-price { font-size: 1.35rem; font-weight: 800; color: var(--dark); }
-    .listing-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.75rem; }
+    .favorite-btn {
+      position: absolute;
+      top: 0.75rem;
+      right: 0.75rem;
+      background: rgba(255,255,255,0.9);
+      border: none;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s;
+    }
 
+    .favorite-btn:hover { transform: scale(1.15); }
+    .favorite-btn.active { background: #fde8e8; }
+
+    .listing-body { padding: 1.25rem; }
+
+    .listing-location { font-size: 0.85rem; color: var(--ocean); font-weight: 600; margin-bottom: 0.35rem; }
+    .listing-title { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--dark); }
+    .listing-details { display: flex; gap: 1rem; font-size: 0.85rem; color: #666; margin-bottom: 0.75rem; }
+    .listing-price { font-size: 1.3rem; font-weight: 800; color: var(--ocean); margin-bottom: 0.75rem; }
+    .listing-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
     .tag {
       background: var(--sand);
       color: var(--dark);
-      padding: 0.25rem 0.75rem;
+      padding: 0.2rem 0.6rem;
       border-radius: 50px;
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       font-weight: 500;
     }
 
-    .no-results { text-align: center; padding: 3rem; color: #666; }
-    .no-results-icon { font-size: 3rem; margin-bottom: 1rem; }
+    .no-results {
+      text-align: center;
+      padding: 3rem;
+      color: #888;
+    }
 
-    /* FEATURES */
-    .features {
-      padding: 4rem 2rem;
+    .no-results-icon { font-size: 4rem; margin-bottom: 1rem; }
+
+    /* HOW IT WORKS */
+    .how-it-works {
+      background: var(--white);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .how-it-works h2 { font-size: 1.75rem; margin-bottom: 2rem; color: var(--dark); }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .step { text-align: center; }
+
+    .step-number {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--ocean), var(--ocean-light));
+      color: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin: 0 auto 1rem;
+    }
+
+    .step h3 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--dark); }
+    .step p { font-size: 0.9rem; color: #666; line-height: 1.6; }
+
+    /* CITIES */
+    .cities-section {
+      background: var(--sand);
+      padding: 3rem 2rem;
+    }
+
+    .cities-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
+    .cities-section > p { text-align: center; color: #666; margin-bottom: 2rem; }
+
+    .cities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.5rem;
       max-width: 1100px;
       margin: 0 auto;
     }
 
-    .features h2 { text-align: center; font-size: 1.75rem; margin-bottom: 2.5rem; }
+    .city-card {
+      background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+      text-decoration: none;
+      color: var(--dark);
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+    }
+
+    .city-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+
+    .city-card-img {
+      width: 70px;
+      min-width: 70px;
+      background: linear-gradient(135deg, var(--ocean-light), var(--accent));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+    }
+
+    .city-card-body { padding: 1.25rem; flex: 1; }
+    .city-card-body h3 { font-size: 1.1rem; margin-bottom: 0.35rem; }
+    .city-card-body p { font-size: 0.85rem; color: #666; margin-bottom: 0.75rem; line-height: 1.5; }
+
+    .city-card-stats {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: var(--ocean);
+      font-weight: 600;
+    }
+
+    /* FINANCING SIMULATOR */
+    .simulator-section {
+      background: var(--white);
+      padding: 3rem 2rem;
+    }
+
+    .simulator-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
+    .simulator-section > p { text-align: center; color: #666; margin-bottom: 2rem; }
+
+    .simulator-card {
+      background: linear-gradient(135deg, var(--ocean), var(--ocean-light));
+      border-radius: 20px;
+      padding: 2.5rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--white);
+    }
+
+    .simulator-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .sim-field label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem; opacity: 0.9; }
+
+    .sim-field input,
+    .sim-field select {
+      width: 100%;
+      padding: 0.65rem 1rem;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-radius: 12px;
+      font-size: 1rem;
+      background: rgba(255,255,255,0.15);
+      color: var(--white);
+      backdrop-filter: blur(4px);
+    }
+
+    .sim-field input::placeholder { color: rgba(255,255,255,0.6); }
+    .sim-field select option { background: var(--ocean); color: var(--white); }
+
+    .sim-btn {
+      width: 100%;
+      padding: 0.85rem;
+      background: var(--white);
+      color: var(--ocean);
+      border: none;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .sim-btn:hover { transform: scale(1.03); }
+
+    .sim-result {
+      margin-top: 1.5rem;
+      padding: 1.5rem;
+      background: rgba(255,255,255,0.15);
+      border-radius: 16px;
+      display: none;
+    }
+
+    .sim-result.visible { display: block; }
+
+    .sim-result-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 1rem;
+      text-align: center;
+    }
+
+    .sim-result-item {}
+
+    .sim-result-value { font-size: 1.5rem; font-weight: 800; color: var(--white); }
+    .sim-result-label { font-size: 0.8rem; opacity: 0.8; margin-top: 0.25rem; }
+
+    /* COMPARE */
+    .compare-section {
+      background: var(--sand);
+      padding: 3rem 2rem;
+      display: none;
+    }
+
+    .compare-section.visible { display: block; }
+
+    .compare-section h2 { text-align: center; font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--dark); }
+    .compare-section > p { text-align: center; color: #666; margin-bottom: 1.5rem; font-size: 0.9rem; }
+
+    .compare-table-wrap { overflow-x: auto; }
+
+    .compare-table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 500px;
+      background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .compare-table th {
+      background: var(--ocean);
+      color: var(--white);
+      padding: 1rem;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .compare-table td {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid #eee;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .compare-table tr:last-child td { border-bottom: none; }
+
+    .compare-table .compare-prop-title { font-weight: 700; color: var(--dark); }
+
+    .compare-remove {
+      background: var(--error);
+      color: var(--white);
+      border: none;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+      font-size: 0.8rem;
+    }
+
+    .compare-clear {
+      display: block;
+      margin: 1rem auto 0;
+      padding: 0.6rem 1.5rem;
+      background: transparent;
+      color: var(--error);
+      border: 2px solid var(--error);
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+
+    .compare-clear:hover { background: var(--error); color: var(--white); }
+
+    /* FAQ */
+    .faq-section {
+      background: var(--white);
+      padding: 3rem 2rem;
+    }
+
+    .faq-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 2rem; color: var(--dark); }
+
+    .faq-item {
+      max-width: 700px;
+      margin: 0 auto 0.75rem;
+      border: 2px solid #e0e0e0;
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: border-color 0.2s;
+    }
+
+    .faq-item:hover { border-color: var(--ocean-light); }
+
+    .faq-item.open { border-color: var(--ocean); }
+
+    .faq-question {
+      padding: 1rem 1.25rem;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--dark);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+
+    .faq-question::after { content: '+'; font-size: 1.3rem; color: var(--ocean); }
+    .faq-item.open .faq-question::after { content: '−'; }
+
+    .faq-answer {
+      padding: 0 1.25rem;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 200px;
+      padding: 0 1.25rem 1rem;
+    }
+
+    /* FEATURES */
+    .features {
+      background: var(--sand);
+      padding: 3rem 2rem;
+    }
+
+    .features h2 { text-align: center; font-size: 1.75rem; margin-bottom: 2rem; color: var(--dark); }
 
     .features-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
     .feature-card {
       background: var(--white);
       border-radius: 16px;
-      padding: 2rem;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-      transition: transform 0.2s, box-shadow 0.2s;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      transition: transform 0.2s;
     }
 
-    .feature-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.1); }
+    .feature-card:hover { transform: translateY(-4px); }
 
-    .feature-icon { font-size: 2.5rem; margin-bottom: 1rem; }
-    .feature-card h3 { font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--ocean); }
-    .feature-card p { font-size: 0.95rem; color: #555; }
+    .feature-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+    .feature-card h3 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--dark); }
+    .feature-card p { font-size: 0.85rem; color: #666; line-height: 1.6; }
 
-        /* CONTACT */
-            .contact-section { background: var(--white); padding: 4rem 2rem; }
-            .contact-inner { max-width: 600px; margin: 0 auto; }
-            .contact-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; }
-            .contact-section p { text-align: center; color: #666; margin-bottom: 2rem; }
-            .contact-cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2.5rem; }
-            .contact-cta-btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; border-radius: 12px; font-weight: 600; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; }
-            .contact-cta-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
-            .btn-whatsapp { background: #25D366; color: white; }
-            .btn-email { background: var(--ocean); color: white; }
-            .whatsapp-float { position: fixed; bottom: 20px; right: 20px; z-index: 999; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; text-decoration: none; box-shadow: 0 4px 16px rgba(37,211,102,0.4); transition: transform 0.2s; }
-            .whatsapp-float:hover { transform: scale(1.1); }
-            .how-it-works { padding: 4rem 2rem; max-width: 900px; margin: 0 auto; }
-            .how-it-works h2 { text-align: center; font-size: 1.75rem; margin-bottom: 2.5rem; }
-            .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; }
-            .step { text-align: center; }
-            .step-number { background: var(--ocean); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 800; margin: 0 auto 1rem; }
-            .step h3 { color: var(--ocean); margin-bottom: 0.5rem; font-size: 1.1rem; }
-            .step p { color: #555; font-size: 0.9rem; line-height: 1.5; }
+    /* NEWSLETTER */
+    .newsletter-section {
+      background: var(--dark);
+      color: var(--white);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
 
-            /* CTA */
-            .cta-section { background: var(--sand); text-align: center; padding: 4rem 2rem; }
-            .cta-section h2 { font-size: 1.75rem; margin-bottom: 1rem; }
-            .cta-section p { max-width: 500px; margin: 0 auto 2rem; color: #555; }
+    .newsletter-section h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .newsletter-section p { opacity: 0.8; margin-bottom: 1.5rem; font-size: 0.95rem; }
 
-            .contact-form { display: flex; flex-direction: column; gap: 1rem; }
-    .form-group { display: flex; flex-direction: column; gap: 0.3rem; }
-    .form-group label { font-size: 0.9rem; font-weight: 600; color: var(--ocean); }
+    .newsletter-form {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      min-width: 200px;
+      padding: 0.75rem 1.25rem;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-radius: 50px;
+      font-size: 1rem;
+      background: rgba(255,255,255,0.1);
+      color: var(--white);
+    }
+
+    .newsletter-form input::placeholder { color: rgba(255,255,255,0.5); }
+
+    .newsletter-form button {
+      padding: 0.75rem 1.75rem;
+      background: var(--ocean-light);
+      color: var(--white);
+      border: none;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .newsletter-form button:hover { transform: scale(1.05); }
+
+    .newsletter-success {
+      display: none;
+      margin-top: 1rem;
+      padding: 0.75rem;
+      background: var(--success);
+      border-radius: 12px;
+      font-weight: 600;
+    }
+
+    .newsletter-success.visible { display: block; }
+
+    /* TESTIMONIALS */
+    .testimonials-section {
+      background: var(--white);
+      padding: 3rem 2rem;
+    }
+
+    .testimonials-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 2rem; color: var(--dark); }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .testimonial-card {
+      background: var(--sand);
+      border-radius: 16px;
+      padding: 1.75rem;
+    }
+
+    .testimonial-quote {
+      font-size: 2rem;
+      color: var(--ocean-light);
+      margin-bottom: 0.75rem;
+    }
+
+    .testimonial-text {
+      font-style: italic;
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial-author { font-weight: 700; color: var(--dark); }
+    .testimonial-role { font-size: 0.85rem; color: var(--ocean); }
+
+    /* CONTACT */
+    .contact-section {
+      background: var(--sand);
+      padding: 3rem 2rem;
+    }
+
+    .contact-inner { max-width: 600px; margin: 0 auto; text-align: center; }
+    .contact-section h2 { font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
+    .contact-section > .contact-inner > p { color: #666; margin-bottom: 2rem; }
+
+    .contact-cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .contact-cta-btn {
+      padding: 0.85rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.2s;
+      display: inline-block;
+    }
+
+    .btn-whatsapp { background: #25D366; color: var(--white); }
+    .btn-email { background: var(--ocean); color: var(--white); }
+    .contact-cta-btn:hover { transform: scale(1.05); }
+
+    .contact-form { text-align: left; }
+
+    .form-group { margin-bottom: 1.25rem; }
+
+    .form-group label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+      color: var(--dark);
+    }
 
     .form-group input,
-    .form-group textarea,
-    .form-group select {
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
       padding: 0.75rem 1rem;
       border: 2px solid #e0e0e0;
       border-radius: 12px;
       font-size: 1rem;
+      background: var(--white);
+      color: var(--dark);
       font-family: inherit;
       transition: border-color 0.2s;
-      background: var(--white);
     }
 
     .form-group input:focus,
-    .form-group textarea:focus,
-    .form-group select:focus { outline: none; border-color: var(--ocean-light); }
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--ocean-light);
+    }
+
     .form-group textarea { resize: vertical; min-height: 120px; }
 
     .form-success {
-      background: #d4edda;
-      color: #155724;
+      display: none;
       padding: 1rem;
+      background: var(--success);
+      color: var(--white);
       border-radius: 12px;
       text-align: center;
-      display: none;
+      font-weight: 600;
+      margin-top: 1rem;
     }
 
     /* FOOTER */
@@ -393,10 +847,8 @@
       color: var(--white);
       text-align: center;
       padding: 2rem;
-      font-size: 0.9rem;
     }
 
-    footer a { color: var(--accent); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
 
     .footer-links {
@@ -476,7 +928,71 @@
 
     .modal-description { color: #555; margin-bottom: 1.5rem; line-height: 1.7; }
 
-    .modal-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .modal-cta { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; }
+
+    .modal-compare-btn {
+      display: none;
+      width: 100%;
+      padding: 0.75rem;
+      background: var(--accent);
+      color: var(--dark);
+      border: 2px solid var(--ocean);
+      border-radius: 50px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s;
+      margin-bottom: 0.5rem;
+    }
+
+    .modal-compare-btn.visible { display: block; }
+    .modal-compare-btn:hover { background: var(--ocean); color: var(--white); }
+
+    .modal-share {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .share-btn {
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .share-btn:hover { transform: scale(1.05); }
+    .share-whatsapp { background: #25D366; color: var(--white); }
+    .share-twitter { background: #1DA1F2; color: var(--white); }
+    .share-copy { background: #e0e0e0; color: var(--dark); }
+
+    /* WHATSAPP FLOAT */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      background: #25D366;
+      color: var(--white);
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.7rem;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(37,211,102,0.4);
+      z-index: 999;
+      transition: transform 0.2s;
+    }
+
+    .whatsapp-float:hover { transform: scale(1.1); }
 
     /* RESPONSIVE */
     @media (max-width: 600px) {
@@ -484,6 +1000,8 @@
       .hero { padding: 3rem 1.5rem 2.5rem; }
       .search-section { border-radius: 16px 16px 0 0; }
       .results-grid { grid-template-columns: 1fr; }
+      .simulator-grid { grid-template-columns: 1fr; }
+      .newsletter-form { flex-direction: column; }
     }
   </style>
 </head>
@@ -501,6 +1019,7 @@
   </a>
   <nav>
     <a href="#buscar">Buscar</a>
+    <a href="#simulador">Simulador</a>
     <a href="#recursos">Recursos</a>
     <a href="#contato">Contato</a>
   </nav>
@@ -529,7 +1048,7 @@
 <section class="search-section" id="buscar">
   <h2>Buscar imóveis no litoral</h2>
   <p class="search-subtitle">Use os filtros para encontrar o imóvel perfeito</p>
-  <form class="search-grid" id="searchForm">
+  <form class="search-grid" id="searchForm" onsubmit="event.preventDefault();filterListings();">
     <div class="search-field">
       <label for="tipo">Tipo</label>
       <select id="tipo">
@@ -581,15 +1100,33 @@
 <section class="results-section" id="results">
   <div class="results-header">
     <span class="results-count" id="resultsCount">12 imóveis encontrados</span>
-        <select id="sortSelect" onchange="sortListings()" style="padding:0.5rem 1rem;border:2px solid #e0e0e0;border-radius:12px;font-size:0.9rem;cursor:pointer;">
-          <option value="">Ordenar</option>
-          <option value="preco-asc">Menor preço ↑</option>
-          <option value="preco-desc">Maior preço ↓</option>
-          <option value="area-asc">Menor área ↑</option>
-          <option value="area-desc">Maior área ↓</option>
-        </select>
-      </div>
+    <div class="results-topbar">
+      <button class="compare-btn" id="compareBtn" onclick="showCompare()">
+        ⚖️ Comparar (<span id="compareCount">0</span>)
+      </button>
+      <select id="sortSelect" onchange="sortListings()" style="padding:0.5rem 1rem;border:2px solid #e0e0e0;border-radius:12px;font-size:0.9rem;cursor:pointer;">
+        <option value="">Ordenar</option>
+        <option value="preco-asc">Menor preço ↑</option>
+        <option value="preco-desc">Maior preço ↓</option>
+        <option value="area-asc">Menor área ↑</option>
+        <option value="area-desc">Maior área ↓</option>
+      </select>
+    </div>
+  </div>
   <div class="results-grid" id="resultsGrid"></div>
+</section>
+
+<!-- COMPARE SECTION -->
+<section class="compare-section" id="compareSection">
+  <h2>⚖️ Comparar imóveis</h2>
+  <p>Até 3 imóveis lado a lado — analise preço, área e características.</p>
+  <div class="compare-table-wrap">
+    <table class="compare-table" id="compareTable">
+      <thead id="compareHead"></thead>
+      <tbody id="compareBody"></tbody>
+    </table>
+  </div>
+  <button class="compare-clear" onclick="clearCompare()">🗑️ Limpar comparação</button>
 </section>
 
 <section class="how-it-works">
@@ -614,6 +1151,72 @@
       <div class="step-number">4</div>
       <h3>Feche negócio</h3>
       <p>Agende visitas, tire dúvidas e negocie diretamente — nosso time local conhece cada bairro.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FINANCING SIMULATOR -->
+<section class="simulator-section" id="simulador">
+  <h2>🏦 Simulador de Financiamento</h2>
+  <p>Calcule sua parcela mensal e veja o custo total do financiamento.</p>
+  <div class="simulator-card">
+    <div class="simulator-grid">
+      <div class="sim-field">
+        <label for="simValor">Valor do imóvel (R$)</label>
+        <input type="number" id="simValor" placeholder="Ex: 500000" min="50000" max="20000000">
+      </div>
+      <div class="sim-field">
+        <label for="simEntrada">Entrada (R$)</label>
+        <input type="number" id="simEntrada" placeholder="Ex: 100000" min="0">
+      </div>
+      <div class="sim-field">
+        <label for="simTaxa">Taxa de juros (% a.a.)</label>
+        <select id="simTaxa">
+          <option value="9">9% a.a. (FGTS/Caixa)</option>
+          <option value="10">10% a.a. (BB/Santander)</option>
+          <option value="11">11% a.a. (Itaú/Bradesco)</option>
+          <option value="12">12% a.a. (Padrão mercado)</option>
+        </select>
+      </div>
+      <div class="sim-field">
+        <label for="simAnos">Prazo (anos)</label>
+        <select id="simAnos">
+          <option value="10">10 anos</option>
+          <option value="15">15 anos</option>
+          <option value="20" selected>20 anos</option>
+          <option value="25">25 anos</option>
+          <option value="30">30 anos</option>
+        </select>
+      </div>
+    </div>
+    <button class="sim-btn" onclick="calcSimulator()">Calcular parcelas</button>
+    <div class="sim-result" id="simResult">
+      <div class="sim-result-grid" id="simResultGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section" id="depoimentos">
+  <h2>O que dizem nossos clientes</h2>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"</div>
+      <p class="testimonial-text">Encontrei o apartamento dos meus sonhos em Praia Grande em menos de uma semana. O processo foi super transparente e a equipe respondeu rapidíssimo pelo WhatsApp.</p>
+      <div class="testimonial-author">Mariana Costa</div>
+      <div class="testimonial-role">💼 Compradora — Praia Grande</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"</div>
+      <p class="testimonial-text">Anunciei minha pousada em Peruíbe e em 30 dias já recebi três propostas sérias. A visibilidade do site é incrível para o público do litoral.</p>
+      <div class="testimonial-author">Roberto Almeida</div>
+      <div class="testimonial-role">🏨 Proprietário — Peruíbe</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"</div>
+      <p class="testimonial-text">O simulador de financiamento me ajudou a planejar meu orçamento antes de visitar os imóveis. Funcionalidade que fez toda a diferença na decisão.</p>
+      <div class="testimonial-author">Fernanda Souza</div>
+      <div class="testimonial-role">🏡 Investidora — Santos</div>
     </div>
   </div>
 </section>
@@ -674,7 +1277,7 @@
       <div class="city-card-img">🦎</div>
       <div class="city-card-body">
         <h3>Peruíbe</h3>
-        <p>Na fronteira com o Paraná, com trilhas, restinga e praia preservada.</p>
+        <p>Na fronteira com Paraná, com trilhas, restinga e praia preservada.</p>
         <div class="city-card-stats"><span>🏠 2 imóveis</span><span>📍 Centro, Jardim Maret</span></div>
       </div>
     </a>
@@ -696,12 +1299,12 @@
     <div class="faq-answer">Sim! Selecione a opção "Quero anunciar meu imóvel" no formulário de contato ou fale diretamente pelo WhatsApp. Vamos avaliar seu imóvel e entrar em contato com condições especiais.</div>
   </div>
   <div class="faq-item" onclick="toggleFaq(this)">
-    <div class="faq-question">Vocês fazem visitas presenciais?</div>
-    <div class="faq-answer">Trabalhamos de forma 100% digital, mas podemos agendar visitas presenciais com nossos parceiros locais. Basta indicar seu interesse no formulário ou pelo WhatsApp.</div>
+    <div class="faq-question">O simulador de financiamento é confiável?</div>
+    <div class="faq-answer">Os valores são estimativas baseadas em taxas médias de mercado. Para um cálculo exato, use os simuladores oficiais dos bancos. O simulador serve como referência inicial para planejamento.</div>
   </div>
   <div class="faq-item" onclick="toggleFaq(this)">
-    <div class="faq-question">Os preços dos imóveis são fixos?</div>
-    <div class="faq-answer">Os preços são indicativos e podem variar conforme negociação. Use o filtro de faixa de preço para buscar dentro do seu orçamento.</div>
+    <div class="faq-question">Posso comparar imóveis antes de decidir?</div>
+    <div class="faq-answer">Sim! Clique no ícone ⚖️ em até 3 cards para adicioná-los à comparação. Você verá todos lado a lado com preço, área, dormitórios e tipo para facilitar sua decisão.</div>
   </div>
   <div class="faq-item" onclick="toggleFaq(this)">
     <div class="faq-question">Vocês atendem corretores?</div>
@@ -745,17 +1348,24 @@
   </div>
 </section>
 
+<!-- NEWSLETTER -->
+<section class="newsletter-section" id="newsletter">
+  <h2>📬 Receba novidades do litoral</h2>
+  <p>Cadastre seu e-mail e seja o primeiro a saber sobre novos imóveis e tendências do mercado.</p>
+  <form class="newsletter-form" id="newsletterForm" onsubmit="handleNewsletter(event)">
+    <input type="email" placeholder="Seu melhor e-mail" required>
+    <button type="submit">Inscrever</button>
+  </form>
+  <div class="newsletter-success" id="newsletterSuccess">✅ Inscrição realizada! Vamos enviar novidades exclusivas.</div>
+</section>
+
 <section class="contact-section" id="contato">
   <div class="contact-inner">
     <h2>Fale conosco</h2>
     <p>Quer anunciar seu imóvel ou precisa de ajuda? Entre em contato.</p>
     <div class="contact-cta-buttons">
-      <a href="https://wa.me/5513999999999?text=Olá! Gostaria de saber mais sobre os imóveis da Praia Digital." target="_blank" class="contact-cta-btn btn-whatsapp">
-        💬 WhatsApp — Resposta rápida
-      </a>
-      <a href="mailto:contato@praiadigital.com.br" class="contact-cta-btn btn-email">
-        ✉️ Enviar e-mail
-      </a>
+      <a href="https://wa.me/5513999999999?text=Olá! Gostaria de saber mais sobre os imóveis da Praia Digital." target="_blank" class="contact-cta-btn btn-whatsapp">💬 WhatsApp — Resposta rápida</a>
+      <a href="mailto:contato@praiadigital.com.br" class="contact-cta-btn btn-email">✉️ Enviar e-mail</a>
     </div>
     <form class="contact-form" id="contactForm" onsubmit="handleContact(event)">
       <div class="form-group">
@@ -779,7 +1389,7 @@
         <label for="contato-mensagem">Mensagem</label>
         <textarea id="contato-mensagem" name="mensagem" required placeholder="Como podemos ajudar?"></textarea>
       </div>
-      <button type="submit" class="btn btn-ocean" style="width:100%; text-align:center;">Enviar mensagem</button>
+      <button type="submit" class="btn btn-ocean" style="width:100%;text-align:center;">Enviar mensagem</button>
       <div class="form-success" id="formSuccess">✅ Mensagem enviada com sucesso! Entraremos em contato em breve.</div>
     </form>
   </div>
@@ -788,6 +1398,7 @@
 <footer>
   <div class="footer-links">
     <a href="#buscar">Buscar imóveis</a>
+    <a href="#simulador">Simulador</a>
     <a href="#recursos">Recursos</a>
     <a href="#contato">Contato</a>
     <a href="https://github.com/acarolmourad-commits/praia-digital" target="_blank">GitHub</a>
@@ -806,9 +1417,15 @@
       <div class="modal-price" id="modalPrice"></div>
       <div class="modal-details" id="modalDetails"></div>
       <div class="modal-description" id="modalDescription"></div>
+      <button class="modal-compare-btn" id="modalCompareBtn" onclick="toggleModalCompare()">⚖️ Adicionar à comparação</button>
       <div class="modal-cta">
         <a href="#contato" class="btn btn-ocean" onclick="closeModal()">Quero visitar</a>
         <a href="#contato" class="btn btn-outline" style="border:2px solid var(--ocean);color:var(--ocean);" onclick="closeModal()">Mais informações</a>
+      </div>
+      <div class="modal-share">
+        <a class="share-btn share-whatsapp" id="shareWhatsapp" target="_blank">💬 WhatsApp</a>
+        <a class="share-btn share-twitter" id="shareTwitter" target="_blank">🐦 Twitter</a>
+        <button class="share-btn share-copy" onclick="copyLink()">📋 Copiar link</button>
       </div>
     </div>
   </div>
@@ -816,116 +1433,136 @@
 
 <script>
 const listings = [
-  {
-    id: 1, tipo: 'apartamento', cidade: 'praia-grande', cidadeLabel: 'Praia Grande — Boqueirão',
-    titulo: 'Apartamento 2 dorms — frente mar', preco: 890000, dormitorios: 2, area: 60,
-    tags: ['2 dorms', '60m²', 'Frente mar'], icon: '🏖️', badge: 'Destaque',
-    descricao: 'Apartamento em localização privilegiada frente mar, no coração do Boqueirão. Amplo, arejado, com vista para o mar de todos os cômodos. Condomínio com piscina, academia e portaria 24h.'
-  },
-  {
-    id: 2, tipo: 'casa', cidade: 'guaruja', cidadeLabel: 'Guarujá — Pitangueiras',
-    titulo: 'Casa 3 dorms com piscina', preco: 1450000, dormitorios: 3, area: 120,
-    tags: ['3 dorms', '120m²', 'Piscina'], icon: '🏡', badge: 'Novo',
-    descricao: 'Casa moderna em condomínio fechado em Pitangueiras, uma das melhores regiões do Guarujá. Espaço gourmet, piscina privativa, 3 suítes e garagem para 2 carros.'
-  },
-  {
-    id: 3, tipo: 'pousada', cidade: 'peruibe', cidadeLabel: 'Peruíbe — Centro',
-    titulo: 'Pousada completa — 12 suítes', preco: 3200000, dormitorios: 12, area: 450,
-    tags: ['12 suítes', '450m²', 'Receita'], icon: '🏨', badge: 'Investimento',
-    descricao: 'Pousada bem avaliada no centro de Peruíbe, com 12 suítes climatizadas, piscina, área de lazer e salão de café. Receita estabelecida com alta temporada rentável.'
-  },
-  {
-    id: 4, tipo: 'apartamento', cidade: 'santos', cidadeLabel: 'Santos — Pompéia',
-    titulo: 'Apto 3 dorms com vista mar', preco: 1100000, dormitorios: 3, area: 85,
-    tags: ['3 dorms', '85m²', 'Vista mar'], icon: '🌅', badge: '',
-    descricao: 'Apartamento de alto padrão na Pompéia, com vista panorâmica para o mar. Em condomínio de alto padrão com infraestrutura completa de lazer.'
-  },
-  {
-    id: 5, tipo: 'terreno', cidade: 'itanhaem', cidadeLabel: 'Itanhaém — Centro',
-    titulo: 'Terreno 450m² — excelente localização', preco: 380000, dormitorios: 0, area: 450,
-    tags: ['450m²', 'Título urbano', 'Próximo praia'], icon: '🏗️', badge: '',
-    descricao: 'Terreno bem localizado no centro de Itanhaém, a poucos minutos da praia. Ideal para construção de casa de veraneio ou pequeno empreendimento comercial.'
-  },
-  {
-    id: 6, tipo: 'casa', cidade: 'mongagua', cidadeLabel: 'Mongaguá — Flórida',
-    titulo: 'Casa 2 dorms — condomínio fechado', preco: 620000, dormitorios: 2, area: 80,
-    tags: ['2 dorms', '80m²', 'Condomínio'], icon: '🏠', badge: 'Oportunidade',
-    descricao: 'Casa aconchegante em condomínio fechado em Mongaguá. Ideal para quem busca sossego e segurança. Próxima a praias ainda preservadas.'
-  },
-  {
-    id: 7, tipo: 'comercial', cidade: 'sao-vicente', cidadeLabel: 'São Vicente — Centro',
-    titulo: 'Sala comercial 45m² — Centro', preco: 450000, dormitorios: 0, area: 45,
-    tags: ['45m²', 'Sala comercial', 'Centro'], icon: '🏢', badge: '',
-    descricao: 'Sala comercial bem localizada no centro de São Vicente, com excelente circulação de pessoas. Ideal para escritório, consultório ou pequena loja.'
-      },
-      {
-        id: 8, tipo: 'apartamento', cidade: 'sao-vicente', cidadeLabel: 'São Vicente — Pompetegração',
-        titulo: 'Apartamento 2 dorms — Pompetegração',
-        preco: 520000, dormitorios: 2, area: 58,
-        tags: ['2 dorms', '58m²', 'Novo'], icon: '🏠', badge: '',
-        descricao: 'Apartamento novo na Pompetegração, com infraestrutura completa de lazer. Próximo à praia e ao shopping. Excelente oportunidade para jovens casais ou investidores.'
-      },
-      {
-        id: 9, tipo: 'casa', cidade: 'peruibe', cidadeLabel: 'Peruíbe — Jardim Maret',
-        titulo: 'Casa 4 suítes com vista para morro',
-        preco: 1850000, dormitorios: 4, area: 200,
-        tags: ['4 suítes', '200m²', 'Vista para morro'], icon: '🏡', badge: 'Exclusivo',
-        descricao: 'Casa espaçosa em bairro tranquilo no Jardim Maret, com vista privilegiada para a Serra do Mar. Área gourmet, piscina e quintal gramado. Perfeita para famílias.'
-      },
-      {
-        id: 10, tipo: 'apartamento', cidade: 'mongagua', cidadeLabel: 'Mongaguá — Itaquarena',
-        titulo: 'Apto 1 dorm com vista mar — Itaquá',
-        preco: 380000, dormitorios: 1, area: 42,
-        tags: ['1 dorm', '42m²', 'Vista mar'], icon: '🌅', badge: 'Oportunidade',
-        descricao: 'Studio aconchegante com vista parcial para o mar em Itaquarena. Condomínio com piscina, portaria 24h e playground. Ideal para quem busca simplicidade à beira-mar.'
-      },
-      {
-        id: 11, tipo: 'pousada', cidade: 'itanhaem', cidadeLabel: 'Itanhaém — Centro',
-        titulo: 'Pousada 8 suítes — temporada alta',
-        preco: 2100000, dormitorios: 8, area: 380,
-        tags: ['8 suítes', '380m²', 'Piscina'], icon: '🏨', badge: 'Investimento',
-        descricao: 'Pousada bem posicionada no centro de Itanhaém com 8 suítes, piscina aquecida, salão de eventos e cozinha profissional. Historicamente alta taxa de ocupação na temporada.'
-      },
-      {
-        id: 12, tipo: 'terreno', cidade: 'praia-grande', cidadeLabel: 'Praia Grande — Caiçara',
-        titulo: 'Terreno 600m² — Caiçara',
-        preco: 480000, dormitorios: 0, area: 600,
-        tags: ['600m²', 'Título urbano', 'Próximo praia'], icon: '🏗️', badge: '',
-        descricao: 'Terreno grande e bem dimensionado no Caiçara, a poucos quarteirões da orla. Zona de uso misto — permite residência ou pequeno comércio. Oportunidade rara na região.'
-      }
-    ];
+  {id:1, tipo:'apartamento', cidade:'praia-grande', cidadeLabel:'Praia Grande — Boqueirão', titulo:'Apartamento 2 dorms — frente mar', preco:890000, dormitorios:2, area:60, tags:['2 dorms','60m²','Frente mar'], icon:'🏖️', badge:'Destaque', descricao:'Apartamento em localização privilegiada frente mar, no coração do Boqueirão. Amplo, arejado, com vista para o mar de todos os cômodos. Condomínio com piscina, academia e portaria 24h.'},
+  {id:2, tipo:'casa', cidade:'guaruja', cidadeLabel:'Guarujá — Pitangueiras', titulo:'Casa 3 dorms com piscina', preco:1450000, dormitorios:3, area:120, tags:['3 dorms','120m²','Piscina'], icon:'🏡', badge:'Novo', descricao:'Casa moderna em condomínio fechado em Pitangueiras, uma das melhores regiões do Guarujá. Espaço gourmet, piscina privativa, 3 suítes e garagem para 2 carros.'},
+  {id:3, tipo:'pousada', cidade:'peruibe', cidadeLabel:'Peruíbe — Centro', titulo:'Pousada completa — 12 suítes', preco:3200000, dormitorios:12, area:450, tags:['12 suítes','450m²','Receita'], icon:'🏨', badge:'Investimento', descricao:'Pousada bem avaliada no centro de Peruíbe, com 12 suítes climatizadas, piscina, área de lazer e salão de café. Receita estabelecida com alta temporada rentável.'},
+  {id:4, tipo:'apartamento', cidade:'santos', cidadeLabel:'Santos — Pompéia', titulo:'Apto 3 dorms com vista mar', preco:1100000, dormitorios:3, area:85, tags:['3 dorms','85m²','Vista mar'], icon:'🌅', badge:'', descricao:'Apartamento de alto padrão na Pompéia, com vista panorâmica para o mar. Em condomínio de alto padrão com infraestrutura completa de lazer.'},
+  {id:5, tipo:'terreno', cidade:'itanhaem', cidadeLabel:'Itanhaém — Centro', titulo:'Terreno 450m² — excelente localização', preco:380000, dormitorios:0, area:450, tags:['450m²','Título urbano','Próximo praia'], icon:'🏗️', badge:'', descricao:'Terreno bem localizado no centro de Itanhaém, a poucos minutos da praia. Ideal para construção de casa de veraneio ou pequeno empreendimento comercial.'},
+  {id:6, tipo:'casa', cidade:'mongagua', cidadeLabel:'Mongaguá — Flórida', titulo:'Casa 2 dorms — condomínio fechado', preco:620000, dormitorios:2, area:80, tags:['2 dorms','80m²','Condomínio'], icon:'🏠', badge:'Oportunidade', descricao:'Casa aconchegante em condomínio fechado em Mongaguá. Ideal para quem busca sossego e segurança. Próxima a praias ainda preservadas.'},
+  {id:7, tipo:'comercial', cidade:'sao-vicente', cidadeLabel:'São Vicente — Centro', titulo:'Sala comercial 45m² — Centro', preco:450000, dormitorios:0, area:45, tags:['45m²','Sala comercial','Centro'], icon:'🏢', badge:'', descricao:'Sala comercial bem localizada no centro de São Vicente, com excelente circulação de pessoas. Ideal para escritório, consultório ou pequena loja.'},
+  {id:8, tipo:'apartamento', cidade:'sao-vicente', cidadeLabel:'São Vicente — Pompetegração', titulo:'Apartamento 2 dorms — Pompetegração', preco:520000, dormitorios:2, area:58, tags:['2 dorms','58m²','Novo'], icon:'🏠', badge:'', descricao:'Apartamento novo na Pompetegração, com infraestrutura completa de lazer. Próximo à praia e ao shopping. Excelente oportunidade para jovens casais ou investidores.'},
+  {id:9, tipo:'casa', cidade:'peruibe', cidadeLabel:'Peruíbe — Jardim Maret', titulo:'Casa 4 suítes com vista para morro', preco:1850000, dormitorios:4, area:200, tags:['4 suítes','200m²','Vista para morro'], icon:'🏡', badge:'Exclusivo', descricao:'Casa espaçosa em bairro tranquilo no Jardim Maret, com vista privilegiada para a Serra do Mar. Área gourmet, piscina e quintal gramado. Perfeita para famílias.'},
+  {id:10, tipo:'apartamento', cidade:'mongagua', cidadeLabel:'Mongaguá — Itaquarena', titulo:'Apto 1 dorm com vista mar — Itaquá', preco:380000, dormitorios:1, area:42, tags:['1 dorm','42m²','Vista mar'], icon:'🌅', badge:'Oportunidade', descricao:'Studio aconchegante com vista parcial para o mar em Itaquarena. Condomínio com piscina, portaria 24h e playground. Ideal para quem busca simplicidade à beira-mar.'},
+  {id:11, tipo:'pousada', cidade:'itanhaem', cidadeLabel:'Itanhaém — Centro', titulo:'Pousada 8 suítes — temporada alta', preco:2100000, dormitorios:8, area:380, tags:['8 suítes','380m²','Piscina'], icon:'🏨', badge:'Investimento', descricao:'Pousada bem posicionada no centro de Itanhaém com 8 suítes, piscina aquecida, salão de eventos e cozinha profissional. Historicamente alta taxa de ocupação na temporada.'},
+  {id:12, tipo:'terreno', cidade:'praia-grande', cidadeLabel:'Praia Grande — Caiçara', titulo:'Terreno 600m² — Caiçara', preco:480000, dormitorios:0, area:600, tags:['600m²','Título urbano','Próximo praia'], icon:'🏗️', badge:'', descricao:'Terreno grande e bem dimensionado no Caiçara, a poucos quarteirões da orla. Zona de uso misto — permite residência ou pequeno comércio. Oportunidade rara na região.'}
+];
+
+// Compare
+let compareList = JSON.parse(localStorage.getItem('pd_compare') || '[]');
 
 function formatPrice(v) {
-  if (v >= 1000000) return 'R$ ' + (v/1000000).toFixed(v%1000000===0?0:2).replace('.',',') + ' milhões';
+  if (v >= 1000000) return 'R$ ' + (v/1000000).toFixed(v % 1000000 === 0 ? 0 : 2).replace('.',',') + ' milhões';
   return 'R$ ' + v.toLocaleString('pt-BR');
+}
+
+function toggleCompare(id) {
+  const idx = compareList.indexOf(id);
+  if (idx > -1) compareList.splice(idx, 1);
+  else {
+    if (compareList.length >= 3) { alert('Máximo de 3 imóveis para comparar.'); return; }
+    compareList.push(id);
+  }
+  localStorage.setItem('pd_compare', JSON.stringify(compareList));
+  updateCompareBtn();
+  renderListings(getFiltered());
+}
+
+function updateCompareBtn() {
+  const btn = document.getElementById('compareBtn');
+  const count = document.getElementById('compareCount');
+  count.textContent = compareList.length;
+  btn.classList.toggle('visible', compareList.length > 0);
+}
+
+function showCompare() {
+  if (compareList.length < 2) { alert('Adicione pelo menos 2 imóveis para comparar.'); return; }
+  const props = compareList.map(id => listings.find(l => l.id === id));
+  const section = document.getElementById('compareSection');
+  section.classList.add('visible');
+
+  const head = document.getElementById('compareHead');
+  head.innerHTML = '<tr><th>Característica</th>' + props.map(p => '<th>' + p.icon + '<br>' + p.titulo + '<br><button class="compare-remove" onclick="removeCompare(' + p.id + ')">✕</button></th>').join('') + '</tr>';
+
+  const rows = [
+    ['📍 Cidade', p => p.cidadeLabel],
+    ['💰 Preço', p => formatPrice(p.preco)],
+    ['📐 Área', p => p.area + 'm²'],
+    ['🛏️ Dormitórios', p => p.dormitorios || '—'],
+    ['🏷️ Tipo', p => p.tipo.charAt(0).toUpperCase() + p.tipo.slice(1)],
+    ['🏅 Badge', p => p.badge || '—'],
+    ['📝 Descrição', p => p.descricao.substring(0, 80) + '...']
+  ];
+
+  const body = document.getElementById('compareBody');
+  body.innerHTML = rows.map(([label, fn]) => '<tr><td style="font-weight:700;background:#f8f8f8;">' + label + '</td>' + props.map(p => '<td>' + fn(p) + '</td>').join('') + '</tr>').join('');
+
+  section.scrollIntoView({behavior: 'smooth'});
+}
+
+function removeCompare(id) {
+  compareList = compareList.filter(x => x !== id);
+  localStorage.setItem('pd_compare', JSON.stringify(compareList));
+  updateCompareBtn();
+  if (compareList.length < 2) { document.getElementById('compareSection').classList.remove('visible'); }
+  else showCompare();
+  renderListings(getFiltered());
+}
+
+function clearCompare() {
+  compareList = [];
+  localStorage.setItem('pd_compare', '[]');
+  updateCompareBtn();
+  document.getElementById('compareSection').classList.remove('visible');
+  renderListings(getFiltered());
+}
+
+// Favorites
+function toggleFav(id, e) {
+  e.stopPropagation();
+  let favs = JSON.parse(localStorage.getItem('pd_favs') || '[]');
+  const idx = favs.indexOf(id);
+  if (idx > -1) favs.splice(idx, 1);
+  else favs.push(id);
+  localStorage.setItem('pd_favs', JSON.stringify(favs));
+  renderListings(getFiltered());
+}
+
+function isFav(id) {
+  return JSON.parse(localStorage.getItem('pd_favs') || '[]').includes(id);
 }
 
 function renderListings(items) {
   const grid = document.getElementById('resultsGrid');
   const count = document.getElementById('resultsCount');
+  const favs = JSON.parse(localStorage.getItem('pd_favs') || '[]');
+
   if (!items.length) {
     grid.innerHTML = '<div class="no-results"><div class="no-results-icon">😕</div><p>Nenhum imóvel encontrado com esses filtros. Tente outras combinações.</p></div>';
     count.textContent = '0 imóveis encontrados';
     return;
   }
-  count.textContent = items.length + ' imóvel' + (items.length>1?'s':'') + ' encontrado' + (items.length>1?'s':'');
-  grid.innerHTML = items.map(l => '
-    <div class="listing-card" onclick="openModal('+l.id+')">
-      <div class="listing-img">' + l.icon + (l.badge?'<span class="listing-badge">'+l.badge+'</span>':'') + '</div>
-      <div class="listing-body">
-        <div class="listing-location">📍 '+l.cidadeLabel+'</div>
-        <div class="listing-title">'+l.titulo+'</div>
-        <div class="listing-details">' + (l.dormitorios>0?'<span>🛏️ '+l.dormitorios+' quarto'+(l.dormitorios>1?'s':'')+'</span>':'') + '<span>📐 '+l.area+'m²</span></div>
-        <div class="listing-price">'+formatPrice(l.preco)+'</div>
-        <div class="listing-tags">'+l.tags.map(t=>'<span class="tag">'+t+'</span>').join('')+'</div>
-      </div>
-    </div>').join('');
+  count.textContent = items.length + ' imóvel' + (items.length > 1 ? 's' : '') + ' encontrado' + (items.length > 1 ? 's' : '');
+  grid.innerHTML = items.map(l => {
+    const inCompare = compareList.includes(l.id);
+    return '<div class="listing-card" onclick="openModal(' + l.id + ')">' +
+      '<div class="listing-img">' + l.icon + (l.badge ? '<span class="listing-badge">' + l.badge + '</span>' : '') +
+      '</div>' +
+      '<button class="favorite-btn ' + (isFav(l.id) ? 'active' : '') + '" onclick="toggleFav(' + l.id + ', event)" title="' + (isFav(l.id) ? 'Remover dos favoritos' : 'Favoritar') + '">' + (isFav(l.id) ? '❤️' : '🤍') + '</button>' +
+      '<div class="listing-body">' +
+      '<div class="listing-location">📍 ' + l.cidadeLabel + '</div>' +
+      '<div class="listing-title">' + l.titulo + '</div>' +
+      '<div class="listing-details">' + (l.dormitorios > 0 ? '<span>🛏️ ' + l.dormitorios + ' quarto' + (l.dormitorios > 1 ? 's' : '') + '</span>' : '') + '<span>📐 ' + l.area + 'm²</span></div>' +
+      '<div class="listing-price">' + formatPrice(l.preco) + '</div>' +
+      '<div class="listing-tags">' + l.tags.map(t => '<span class="tag">' + t + '</span>').join('') + '</div>' +
+      '</div>' +
+      '</div>';
+  }).join('');
 }
 
 function sortListings() {
   const sort = document.getElementById('sortSelect').value;
   if (!sort) { filterListings(); return; }
-  const sorted = [...listings].sort((a, b) => {
+  const sorted = [...getFiltered()].sort((a, b) => {
     if (sort === 'preco-asc') return a.preco - b.preco;
     if (sort === 'preco-desc') return b.preco - a.preco;
     if (sort === 'area-asc') return a.area - b.area;
@@ -934,39 +1571,62 @@ function sortListings() {
   renderListings(sorted);
 }
 
+let currentFilter = listings;
+
+function getFiltered() {
+  return currentFilter;
+}
+
 function filterListings() {
   const tipo = document.getElementById('tipo').value;
   const cidade = document.getElementById('cidade').value;
   const dorms = document.getElementById('dormitorios').value;
   const preco = document.getElementById('preco').value;
-  const filtered = listings.filter(l => {
+  currentFilter = listings.filter(l => {
     if (tipo && l.tipo !== tipo) return false;
     if (cidade && l.cidade !== cidade) return false;
     if (dorms) {
       const d = parseInt(dorms);
-      if (d===4 && l.dormitorios<4) return false;
-      if (d!==4 && l.dormitorios!==d) return false;
+      if (d === 4 && l.dormitorios < 4) return false;
+      if (d !== 4 && l.dormitorios !== d) return false;
     }
     if (preco) {
-      if (preco==='500k'&&l.preco>500000) return false;
-      if (preco==='500k-1m'&&(l.preco<500000||l.preco>1000000)) return false;
-      if (preco==='1m-2m'&&(l.preco<1000000||l.preco>2000000)) return false;
-      if (preco==='2m+'&&l.preco<=2000000) return false;
+      if (preco === '500k' && l.preco > 500000) return false;
+      if (preco === '500k-1m' && (l.preco < 500000 || l.preco > 1000000)) return false;
+      if (preco === '1m-2m' && (l.preco < 1000000 || l.preco > 2000000)) return false;
+      if (preco === '2m+' && l.preco <= 2000000) return false;
     }
     return true;
   });
-  renderListings(filtered);
+  document.getElementById('sortSelect').value = '';
+  renderListings(currentFilter);
 }
 
+let currentModalId = null;
+
 function openModal(id) {
-  const l = listings.find(x=>x.id===id);
+  currentModalId = id;
+  const l = listings.find(x => x.id === id);
   if (!l) return;
   document.getElementById('modalImg').textContent = l.icon;
-  document.getElementById('modalLocation').textContent = '📍 '+l.cidadeLabel;
+  document.getElementById('modalLocation').textContent = '📍 ' + l.cidadeLabel;
   document.getElementById('modalTitle').textContent = l.titulo;
   document.getElementById('modalPrice').textContent = formatPrice(l.preco);
-  document.getElementById('modalDetails').innerHTML = '<div class="modal-detail"><div class="modal-detail-value">'+l.area+'m²</div><div class="modal-detail-label">Área</div></div>' + (l.dormitorios>0?'<div class="modal-detail"><div class="modal-detail-value">'+l.dormitorios+'</div><div class="modal-detail-label">Dorms</div></div>':'') + '<div class="modal-detail"><div class="modal-detail-value">'+l.tipo.charAt(0).toUpperCase()+l.tipo.slice(1)+'</div><div class="modal-detail-label">Tipo</div></div>';
+  document.getElementById('modalDetails').innerHTML =
+    '<div class="modal-detail"><div class="modal-detail-value">' + l.area + 'm²</div><div class="modal-detail-label">Área</div></div>' +
+    (l.dormitorios > 0 ? '<div class="modal-detail"><div class="modal-detail-value">' + l.dormitorios + '</div><div class="modal-detail-label">Dorms</div></div>' : '') +
+    '<div class="modal-detail"><div class="modal-detail-value">' + l.tipo.charAt(0).toUpperCase() + l.tipo.slice(1) + '</div><div class="modal-detail-label">Tipo</div></div>';
   document.getElementById('modalDescription').textContent = l.descricao;
+
+  const inCompare = compareList.includes(l.id);
+  const btn = document.getElementById('modalCompareBtn');
+  btn.textContent = inCompare ? '⚖️ Remover da comparação' : '⚖️ Adicionar à comparação';
+  btn.classList.toggle('visible', compareList.length < 3 || inCompare);
+
+  const shareText = encodeURIComponent('🏖️ ' + l.titulo + ' — ' + formatPrice(l.preco) + ' em ' + l.cidadeLabel + '\n\nVeja mais em Praia Digital!');
+  document.getElementById('shareWhatsapp').href = 'https://wa.me/?text=' + shareText;
+  document.getElementById('shareTwitter').href = 'https://twitter.com/intent/tweet?text=' + shareText + '&url=' + encodeURIComponent('https://acarolmourad-commits.github.io/praia-digital/');
+
   document.getElementById('modalOverlay').classList.add('active');
   document.body.style.overflow = 'hidden';
 }
@@ -974,10 +1634,58 @@ function openModal(id) {
 function closeModal() {
   document.getElementById('modalOverlay').classList.remove('active');
   document.body.style.overflow = '';
+  currentModalId = null;
 }
 
-document.addEventListener('keydown', e => { if (e.key==='Escape') closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
+function toggleModalCompare() {
+  if (currentModalId !== null) {
+    toggleCompare(currentModalId);
+    const inCompare = compareList.includes(currentModalId);
+    const btn = document.getElementById('modalCompareBtn');
+    btn.textContent = inCompare ? '⚖️ Remover da comparação' : '⚖️ Adicionar à comparação';
+    updateCompareBtn();
+  }
+}
+
+function copyLink() {
+  navigator.clipboard.writeText('https://acarolmourad-commits.github.io/praia-digital/').then(() => {
+    const btns = document.querySelectorAll('.share-copy');
+    btns[btns.length - 1].textContent = '✅ Copiado!';
+    setTimeout(() => { btns[btns.length - 1].textContent = '📋 Copiar link'; }, 2000);
+  });
+}
+
+// Financing simulator
+function calcSimulator() {
+  const valor = parseFloat(document.getElementById('simValor').value);
+  const entrada = parseFloat(document.getElementById('simEntrada').value) || 0;
+  const taxa = parseFloat(document.getElementById('simTaxa').value) / 100;
+  const anos = parseInt(document.getElementById('simAnos').value);
+
+  if (!valor || valor < 50000) {
+    alert('Informe o valor do imóvel (mínimo R$ 50 mil).');
+    return;
+  }
+
+  const financed = valor - entrada;
+  const monthlyRate = taxa / 12;
+  const months = anos * 12;
+
+  const installment = financed * (Math.pow(1 + monthlyRate, months) * monthlyRate) / (Math.pow(1 + monthlyRate, months) - 1);
+  const totalPaid = installment * months;
+  const totalInterest = totalPaid - financed;
+
+  document.getElementById('simResult').classList.add('visible');
+  document.getElementById('simResultGrid').innerHTML =
+    '<div class="sim-result-item"><div class="sim-result-value">R$ ' + installment.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0}) + '</div><div class="sim-result-label">Parcela mensal</div></div>' +
+    '<div class="sim-result-item"><div class="sim-result-value">R$ ' + financed.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0}) + '</div><div class="sim-result-label">Valor financiado</div></div>' +
+    '<div class="sim-result-item"><div class="sim-result-value">R$ ' + totalInterest.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0}) + '</div><div class="sim-result-label">Total juros</div></div>' +
+    '<div class="sim-result-item"><div class="sim-result-value">R$ ' + totalPaid.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0}) + '</div><div class="sim-result-label">Total a pagar</div></div>';
+}
+
+// Contact form
 function handleContact(e) {
   e.preventDefault();
   document.getElementById('formSuccess').style.display = 'block';
@@ -985,8 +1693,19 @@ function handleContact(e) {
   setTimeout(() => { document.getElementById('formSuccess').style.display = 'none'; }, 5000);
 }
 
+// Newsletter
+function handleNewsletter(e) {
+  e.preventDefault();
+  document.getElementById('newsletterSuccess').classList.add('visible');
+  document.getElementById('newsletterForm').reset();
+  setTimeout(() => { document.getElementById('newsletterSuccess').classList.remove('visible'); }, 6000);
+}
+
+// FAQ
 function toggleFaq(el) { el.classList.toggle('open'); }
 
+// Init
+updateCompareBtn();
 renderListings(listings);
 </script>
 
