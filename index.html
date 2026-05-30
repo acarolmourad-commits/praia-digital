@@ -529,20 +529,120 @@
     .whatsapp-float { position: fixed; bottom: 1.5rem; right: 1.5rem; background: #25D366; color: var(--white); width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.7rem; text-decoration: none; box-shadow: 0 4px 16px rgba(37,211,102,0.4); z-index: 997; transition: transform 0.2s; }
     .whatsapp-float:hover { transform: scale(1.1); }
 
-    /* RESPONSIVE */
-    @media (max-width: 600px) {
-      nav a { margin-left: 1rem; font-size: 0.9rem; }
-      .hero { padding: 3rem 1.5rem 2.5rem; }
-      .search-section { border-radius: 16px 16px 0 0; }
-      .results-grid { grid-template-columns: 1fr; }
-      .simulator-grid { grid-template-columns: 1fr; }
-      .valuation-fields { grid-template-columns: 1fr; }
-      .nl-search-box { flex-direction: column; }
-      .ai-assistant { right: 0.5rem; width: calc(100vw - 1rem); }
-      .qr-embed-grid { grid-template-columns: 1fr; }
-      .neighborhood-stats { grid-template-columns: repeat(3, 1fr); }
-    }
-  </style>
+    /* AGENTS SECTION */
+        .agents-section { background: var(--white); padding: 3rem 2rem; }
+        .agents-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
+        .agents-section > p { text-align: center; color: #666; margin-bottom: 2rem; }
+        .agents-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 900px; margin: 0 auto; }
+        .agent-card { background: var(--sand); border-radius: 16px; padding: 2rem; text-align: center; transition: transform 0.2s, box-shadow 0.2s; }
+        .agent-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+        .agent-avatar { width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, var(--ocean), var(--ocean-light)); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 1rem; }
+        .agent-name { font-size: 1.1rem; font-weight: 700; color: var(--dark); margin-bottom: 0.25rem; }
+        .agent-role { font-size: 0.85rem; color: var(--ocean); font-weight: 600; margin-bottom: 0.75rem; }
+        .agent-bio { font-size: 0.85rem; color: #666; line-height: 1.6; margin-bottom: 1rem; }
+        .agent-stats { display: flex; justify-content: center; gap: 1.5rem; font-size: 0.8rem; color: var(--dark); margin-bottom: 1rem; }
+        .agent-stats span { font-weight: 700; color: var(--ocean); }
+        .agent-contact { display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; }
+        .agent-contact a { padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.82rem; font-weight: 600; text-decoration: none; transition: transform 0.2s; }
+        .agent-wa { background: #25D366; color: var(--white); }
+        .agent-email { background: var(--ocean); color: var(--white); }
+
+        /* RENT VS BUY */
+        .rent-vs-buy-section { background: var(--dark); color: var(--white); padding: 3rem 2rem; }
+        .rent-vs-buy-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; }
+        .rent-vs-buy-section > p { text-align: center; opacity: 0.7; margin-bottom: 2rem; }
+        .rvb-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; padding: 2.5rem; max-width: 750px; margin: 0 auto; }
+        .rvb-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; margin-bottom: 1.5rem; }
+        .rvb-field label { display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 0.4rem; opacity: 0.9; }
+        .rvb-field input, .rvb-field select { width: 100%; padding: 0.65rem 1rem; border: 2px solid rgba(255,255,255,0.3); border-radius: 12px; font-size: 1rem; background: rgba(255,255,255,0.15); color: var(--white); }
+        .rvb-field input::placeholder { color: rgba(255,255,255,0.5); }
+        .rvb-field select option { background: var(--dark); }
+        .rvb-btn { width: 100%; padding: 0.85rem; background: var(--ocean-light); color: var(--white); border: none; border-radius: 50px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: transform 0.2s; margin-bottom: 1.5rem; }
+        .rvb-btn:hover { transform: scale(1.03); }
+        .rvb-result { display: none; }
+        .rvb-result.visible { display: block; }
+        .rvb-verdict { background: rgba(255,255,255,0.1); border-radius: 16px; padding: 1.5rem; text-align: center; margin-bottom: 1.5rem; }
+        .rvb-verdict-icon { font-size: 3rem; margin-bottom: 0.5rem; }
+        .rvb-verdict-title { font-size: 1.4rem; font-weight: 800; margin-bottom: 0.5rem; }
+        .rvb-verdict-text { font-size: 0.9rem; opacity: 0.85; line-height: 1.6; }
+        .rvb-timeline { margin-top: 1.5rem; }
+        .rvb-timeline-title { font-size: 0.85rem; opacity: 0.8; margin-bottom: 1rem; text-align: center; }
+        .rvb-bar-row { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; }
+        .rvb-bar-label { font-size: 0.8rem; width: 90px; opacity: 0.9; }
+        .rvb-bar-track { flex: 1; background: rgba(255,255,255,0.1); border-radius: 50px; height: 24px; position: relative; overflow: hidden; }
+        .rvb-bar-fill { height: 100%; border-radius: 50px; display: flex; align-items: center; justify-content: flex-end; padding-right: 0.5rem; font-size: 0.72rem; font-weight: 700; transition: width 0.8s ease; }
+        .rvb-bar-value { font-size: 0.8rem; font-weight: 700; width: 80px; text-align: right; }
+        .rvb-years-marker { display: flex; justify-content: space-between; font-size: 0.72rem; opacity: 0.6; margin-top: 0.5rem; }
+
+        /* SOCIAL PROOF */
+        .social-proof-bar { background: linear-gradient(90deg, var(--success) 0%, var(--ocean) 100%); color: var(--white); padding: 1rem 2rem; display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+        .proof-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; font-weight: 600; }
+        .proof-item-icon { font-size: 1.2rem; }
+        .proof-live { display: inline-flex; align-items: center; gap: 0.3rem; }
+        .proof-live::before { content: ''; width: 8px; height: 8px; background: #ff4444; border-radius: 50%; animation: livePulse 1.5s infinite; }
+        @keyframes livePulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+        /* PRICE HISTORY */
+        .listing-price-history { display: flex; gap: 2px; align-items: flex-end; height: 20px; margin-top: 0.4rem; }
+        .price-bar { flex: 1; background: var(--ocean-light); border-radius: 2px; min-height: 4px; transition: height 0.3s; opacity: 0.7; }
+        .price-bar:last-child { opacity: 1; }
+
+        /* WALKABILITY */
+        .modal-walkability { background: #f0f9ff; border: 2px solid var(--ocean-light); border-radius: 12px; padding: 0.85rem; margin-bottom: 1rem; }
+        .modal-walkability-title { font-size: 0.9rem; font-weight: 700; color: var(--ocean); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem; }
+        .modal-walkability-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
+        .walk-score { background: white; border-radius: 8px; padding: 0.5rem; text-align: center; }
+        .walk-score-value { font-size: 1.1rem; font-weight: 800; color: var(--success); }
+        .walk-score-label { font-size: 0.65rem; color: #888; }
+        .walk-score.poor .walk-score-value { color: var(--error); }
+        .walk-score.fair .walk-score-value { color: var(--amber); }
+
+        /* SIMILAR LISTINGS */
+        .modal-similar { margin-top: 1.5rem; }
+        .modal-similar-title { font-size: 1rem; font-weight: 700; color: var(--dark); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.4rem; }
+        .similar-grid { display: flex; gap: 0.75rem; overflow-x: auto; padding-bottom: 0.5rem; }
+        .similar-card { min-width: 160px; background: var(--sand); border-radius: 12px; padding: 0.85rem; cursor: pointer; transition: transform 0.2s; border: 2px solid transparent; }
+        .similar-card:hover { transform: scale(1.03); border-color: var(--ocean-light); }
+        .similar-card-icon { font-size: 1.5rem; margin-bottom: 0.35rem; }
+        .similar-card-title { font-size: 0.8rem; font-weight: 700; color: var(--dark); }
+        .similar-card-price { font-size: 0.8rem; color: var(--ocean); font-weight: 700; }
+        .similar-card-score { font-size: 0.72rem; color: var(--purple); font-weight: 600; }
+
+        /* INVESTMENT SCENARIOS */
+        .scenarios-section { background: var(--sand); padding: 3rem 2rem; }
+        .scenarios-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
+        .scenarios-section > p { text-align: center; color: #666; margin-bottom: 2rem; }
+        .scenario-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
+        .scenario-card { background: var(--white); border-radius: 16px; padding: 2rem; transition: transform 0.2s; cursor: pointer; border: 2px solid transparent; }
+        .scenario-card:hover { transform: translateY(-3px); border-color: var(--ocean-light); }
+        .scenario-card.conservative { border-color: var(--success); }
+        .scenario-card.moderate { border-color: var(--ocean-light); }
+        .scenario-card.aggressive { border-color: var(--purple-light); }
+        .scenario-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+        .scenario-name { font-size: 1.1rem; font-weight: 700; color: var(--dark); margin-bottom: 0.25rem; }
+        .scenario-desc { font-size: 0.85rem; color: #666; margin-bottom: 1rem; line-height: 1.6; }
+        .scenario-metric { display: flex; justify-content: space-between; font-size: 0.85rem; padding: 0.4rem 0; border-bottom: 1px solid #eee; }
+        .scenario-metric:last-child { border-bottom: none; }
+        .scenario-metric-label { color: #888; }
+        .scenario-metric-value { font-weight: 700; color: var(--dark); }
+        .scenario-select-btn { width: 100%; padding: 0.65rem; margin-top: 1rem; background: var(--ocean); color: var(--white); border: none; border-radius: 50px; font-weight: 700; cursor: pointer; font-size: 0.9rem; transition: transform 0.2s; }
+        .scenario-select-btn:hover { transform: scale(1.03); }
+
+        /* RESPONSIVE */
+        @media (max-width: 600px) {
+          nav a { margin-left: 1rem; font-size: 0.9rem; }
+          .hero { padding: 3rem 1.5rem 2.5rem; }
+          .search-section { border-radius: 16px 16px 0 0; }
+          .results-grid { grid-template-columns: 1fr; }
+          .simulator-grid { grid-template-columns: 1fr; }
+          .valuation-fields { grid-template-columns: 1fr; }
+          .nl-search-box { flex-direction: column; }
+          .ai-assistant { right: 0.5rem; width: calc(100vw - 1rem); }
+          .qr-embed-grid { grid-template-columns: 1fr; }
+          .neighborhood-stats { grid-template-columns: repeat(3, 1fr); }
+          .rvb-grid { grid-template-columns: 1fr 1fr; }
+        }
+      </style>
 </head>
 <body>
 
@@ -592,9 +692,17 @@
 <section class="stats-bar">
   <div class="stat-item"><div class="stat-value">12</div><div class="stat-label">Imóveis disponíveis</div></div>
   <div class="stat-item"><div class="stat-value">7</div><div class="stat-label">Cidades no litoral</div></div>
-  <div class="stat-item"><div class="stat-value">🧠</div><div class="stat-label">IA + 15 ferramentas</div></div>
+  <div class="stat-item"><div class="stat-value">🧠</div><div class="stat-label">IA + 20 ferramentas</div></div>
   <div class="stat-item"><div class="stat-value">24h</div><div class="stat-label">Resposta rápida</div></div>
 </section>
+
+<!-- SOCIAL PROOF BAR -->
+<div class="social-proof-bar" id="socialProof">
+  <div class="proof-item"><span class="proof-item-icon">👁️</span> <span id="liveViews">847</span> visualizações hoje</div>
+  <div class="proof-item"><span class="proof-item-icon">❤️</span> <span id="liveFavs">124</span> favoritos hoje</div>
+  <div class="proof-item proof-live"><span class="proof-item-icon">🟢</span> <span id="liveNow">23</span> online agora</div>
+  <div class="proof-item"><span class="proof-item-icon">📞</span> <span id="liveContacts">38</span> contatos esta semana</div>
+</div>
 
 <section class="hero">
   <h1>Encontre seu imóvel<br>no litoral perfeito</h1>
@@ -1139,6 +1247,139 @@
   </div>
 </section>
 
+<!-- RENT VS BUY -->
+<section class="rent-vs-buy-section" id="comprar-ou-alugar">
+  <h2>🏠 Comprar ou Alugar?</h2>
+  <p>Simulador inteligente para descobrir qual é a melhor decisão para seu perfil financeiro.</p>
+  <div class="rvb-card">
+    <div class="rvb-grid">
+      <div class="rvb-field"><label for="rvbPreco">Preço do imóvel (R$)</label><input type="number" id="rvbPreco" placeholder="Ex: 600000"></div>
+      <div class="rvb-field"><label for="rvbAluguel">Aluguel equivalente (R$/mês)</label><input type="number" id="rvbAluguel" placeholder="Ex: 3500"></div>
+      <div class="rvb-field"><label for="rvbEntrada">Entrada disponível (R$)</label><input type="number" id="rvbEntrada" placeholder="Ex: 100000"></div>
+      <div class="rvb-field"><label for="rvbTaxa">Taxa financiamento (% a.a.)</label>
+        <select id="rvbTaxa"><option value="9">9% (FGTS)</option><option value="10">10% (BB)</option><option value="11">11% (Itaú)</option><option value="12" selected>12% (Mercado)</option></select>
+      </div>
+      <div class="rvb-field"><label for="rvbRenda">Renda mensal (R$)</label><input type="number" id="rvbRenda" placeholder="Ex: 12000"></div>
+      <div class="rvb-field"><label for="rvbPeriodo">Período análise</label>
+        <select id="rvbPeriodo"><option value="5">5 anos</option><option value="7" selected>7 anos</option><option value="10">10 anos</option><option value="15">15 anos</option></select>
+      </div>
+    </div>
+    <button class="rvb-btn" onclick="calcRentVsBuy()">🔍 Analisar comprar vs alugar</button>
+    <div class="rvb-result" id="rvbResult">
+      <div class="rvb-verdict" id="rvbVerdict"></div>
+      <div class="rvb-timeline">
+        <div class="rvb-timeline-title">📊 Evolução patrimonial ao longo do tempo</div>
+        <div class="rvb-bar-row">
+          <div class="rvb-bar-label">Ano 0</div>
+          <div class="rvb-bar-track"><div class="rvb-bar-fill" id="rvbBar0" style="width:0%;background:var(--ocean-light);"></div></div>
+          <div class="rvb-bar-value" id="rvbVal0">—</div>
+        </div>
+        <div class="rvb-bar-row">
+          <div class="rvb-bar-label">Ano 3</div>
+          <div class="rvb-bar-track"><div class="rvb-bar-fill" id="rvbBar3" style="width:0%;background:var(--ocean-light);"></div></div>
+          <div class="rvb-bar-value" id="rvbVal3">—</div>
+        </div>
+        <div class="rvb-bar-row">
+          <div class="rvb-bar-label">Ano 7</div>
+          <div class="rvb-bar-track"><div class="rvb-bar-fill" id="rvbBar7" style="width:0%;background:var(--success);"></div></div>
+          <div class="rvb-bar-value" id="rvbVal7">—</div>
+        </div>
+        <div class="rvb-bar-row">
+          <div class="rvb-bar-label">Alugando</div>
+          <div class="rvb-bar-track"><div class="rvb-bar-fill" id="rvbBarRent" style="width:0%;background:var(--purple);"></div></div>
+          <div class="rvb-bar-value" id="rvbValRent">—</div>
+        </div>
+        <div class="rvb-years-marker"><span>Hoje</span><span>3 anos</span><span>7 anos</span><span>Investimento</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AGENTS SECTION -->
+<section class="agents-section" id="corretores-equipe">
+  <h2>👨‍💼 Nossa Equipe de Corretores</h2>
+  <p>Profissionais especializados no mercado litorâneo com décadas de experiência.</p>
+  <div class="agents-grid">
+    <div class="agent-card">
+      <div class="agent-avatar">👨</div>
+      <div class="agent-name">Ricardo Mendes</div>
+      <div class="agent-role">Especialista em Praia Grande e São Vicente</div>
+      <div class="agent-bio">15 anos de experiência no litoral sul. Especialista em apartamentos familiares e terrenos para investimento.</div>
+      <div class="agent-stats"><span>⭐ 4.9</span><span>📞 342 vendas</span><span>🏆 Top 10%</span></div>
+      <div class="agent-contact">
+        <a href="https://wa.me/5513999999991?text=Olá Ricardo! Vi seu perfil na Praia Digital e gostaria de mais informações." target="_blank" class="agent-wa">💬 WhatsApp</a>
+        <a href="mailto:ricardo@praiadigital.com.br" class="agent-email">✉️ E-mail</a>
+      </div>
+    </div>
+    <div class="agent-card">
+      <div class="agent-avatar">👩</div>
+      <div class="agent-name">Fernanda Lima</div>
+      <div class="agent-role">Especialista em Guarujá e Santos</div>
+      <div class="agent-bio">Expert em imóveis de alto padrão e investimentos no Guarujá. Certificação CRECI com pós-graduação em mercado imobiliário.</div>
+      <div class="agent-stats"><span>⭐ 4.8</span><span>📞 289 vendas</span><span>💼 R$ 180M leiloados</span></div>
+      <div class="agent-contact">
+        <a href="https://wa.me/5513999999992?text=Olá Fernanda! Vi seu perfil na Praia Digital e gostaria de mais informações." target="_blank" class="agent-wa">💬 WhatsApp</a>
+        <a href="mailto:fernanda@praiadigital.com.br" class="agent-email">✉️ E-mail</a>
+      </div>
+    </div>
+    <div class="agent-card">
+      <div class="agent-avatar">👨</div>
+      <div class="agent-name">Carlos Eduardo</div>
+      <div class="agent-role">Especialista em Peruíbe e Itanhaém</div>
+      <div class="agent-bio">Conhecedor profundo do extremo sul. Especializado em pousadas, terrenos e imóveis de lazer no litoral nordeste de SP.</div>
+      <div class="agent-stats"><span>⭐ 4.9</span><span>📞 196 vendas</span><span>🌊 12 anos de praia</span></div>
+      <div class="agent-contact">
+        <a href="https://wa.me/5513999999993?text=Olá Carlos! Vi seu perfil na Praia Digital e gostaria de mais informações." target="_blank" class="agent-wa">💬 WhatsApp</a>
+        <a href="mailto:carlos@praiadigital.com.br" class="agent-email">✉️ E-mail</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INVESTMENT SCENARIOS -->
+<section class="scenarios-section" id="cenarios">
+  <h2>📈 Cenários de Investimento</h2>
+  <p>Escolha seu perfil e veja a estratégia recomendada para o litoral.</p>
+  <div class="scenario-cards">
+    <div class="scenario-card conservative">
+      <div class="scenario-icon">🐢</div>
+      <div class="scenario-name">Conservador — Segurança máxima</div>
+      <div class="scenario-desc">Prioriza preservação de capital com imóveis consolidados em cidades maduras. Rental yield estável, vacância baixa.</div>
+      <div class="scenario-metric"><span class="scenario-metric-label">Perfil</span><span class="scenario-metric-value">Baixo risco</span></div>
+      <div class="scenario-metric"><span class="scenario-metric-label">Cidades</span><span class="scenario-metric-value">Santos, Guarujá</span></div>
+      <div class="scenario-metric"><span class="scenario-metric-label">Tipo</span><span class="scenario-metric-value">Apartamento 2-3q</span></div>
+      <div class="scenario-metric"><span class="scenario-metric-label">ROI esperado</span><span class="scenario-metric-value">4.5–5.5% a.a.</span></div>
+      <div class="scenario-metric"><span class="scenario-metric-label">Valorização</span><span class="scenario-metric-value">+7–9% a.a.</span></div>
+      <div class="scenario-metric"><span class="scenario-metric-label">Liquidez</span><span class="scenario-metric-value">Alta ⭐⭐⭐</span></div>
+      <button class="scenario-select-btn" onclick="applyScenario('conservative')">🏠 Ver imóveis desse cenário</button>
+    </div>
+    <div class="scenario-card moderate">
+      <div class="scenario-icon">🦅</div>
+      <div class="scenario-name">Moderado — Equilíbrio ideal</div>
+      <div class="scenario-desc">Mistura de segurança e crescimento. Cidades em ascenção com infraestrutura em expansão. Melhor custo-benefício.</div>
+      <div class="scenario-metric"><span class="scenario-metric-label">Perfil</span><span class="scenario-metric-value">Risco moderado</span></div>
+      <div class="scenario-metric"><span class="scenario-metric-label">Cidades</span><span class="scenario-metric-value">PG, São Vicente</span></div>
+      <div class="scenario-metric"><span class="scenario-metric-label">Tipo</span><span class="scenario-metric-value">Casa/apto médio padrão</span></div>
+      <div class="scenario-metric"><span class="scenario-metric-label">ROI esperado</span><span class="scenario-metric-value">5.5–6.5% a.a.</span></div>
+      <div class="scenario-metric"><span class="scenario-metric-label">Valorização</span><span class="scenario-metric-value">+8–10% a.a.</span></div>
+      <div class="scenario-metric"><span class="scenario-metric-label">Liquidez</span><span class="scenario-metric-value">Média ⭐⭐</span></div>
+      <button class="scenario-select-btn" onclick="applyScenario('moderate')">🏠 Ver imóveis desse cenário</button>
+    </div>
+    <div class="scenario-card aggressive">
+      <div class="scenario-icon">🚀</div>
+      <div class="scenario-name">Agressivo — Máximo crescimento</div>
+      <div class="scenario-desc">Foco em cities em desenvolvimento com alto potencial de valorização. Pousadas, terrenos e lançamentos no extremo sul.</div>
+      <div class="scenario-metric"><span class="scenario-metric-label">Perfil</span><span class="scenario-metric-value">Alto risco / retorno</span></div>
+      <div class="scenario-metric"><span class="scenario-metric-label">Cidades</span><span class="scenario-metric-value">Peruíbe, Mongaguá</span></div>
+      <div class="scenario-metric"><span class="scenario-metric-label">Tipo</span><span class="scenario-metric-value">Pousada, terreno</span></div>
+      <div class="scenario-metric"><span class="scenario-metric-label">ROI esperado</span><span class="scenario-metric-value">6.5–8% a.a.</span></div>
+      <div class="scenario-metric"><span class="scenario-metric-label">Valorização</span><span class="scenario-metric-value">+10–13% a.a.</span></div>
+      <div class="scenario-metric"><span class="scenario-metric-label">Liquidez</span><span class="scenario-metric-value">Baixa ⭐</span></div>
+      <button class="scenario-select-btn" onclick="applyScenario('aggressive')">🏠 Ver imóveis desse cenário</button>
+    </div>
+  </div>
+</section>
+
 <!-- TESTIMONIALS -->
 <section class="testimonials-section" id="depoimentos">
   <h2>O que dizem nossos clientes</h2>
@@ -1242,20 +1483,28 @@
       <div class="modal-description" id="modalDescription"></div>
       <div class="modal-ai-score" id="modalAIScore"></div>
       <div class="modal-roi-bar" id="modalROIBar">
-        <div class="modal-roi-bar-label">📊 ROI estimado: <span id="modalROILabel"></span></div>
-        <div class="modal-roi-bar-track"><div class="modal-roi-bar-fill" id="modalROIFill" style="width:60%"></div></div>
-      </div>
-      <button class="modal-compare-btn" id="modalCompareBtn" onclick="toggleModalCompare()">⚖️ Adicionar à comparação</button>
-      <div class="modal-actions">
-        <a href="#contato" class="btn btn-ocean" onclick="closeModal()">Quero visitar</a>
-        <a href="#contato" class="btn btn-outline" style="border:2px solid var(--ocean);color:var(--ocean);" onclick="closeModal()">Mais informações</a>
-      </div>
-      <div class="modal-share">
-        <a class="share-btn share-whatsapp" id="shareWhatsapp" target="_blank">💬 WhatsApp</a>
-        <a class="share-btn share-twitter" id="shareTwitter" target="_blank">🐦 Twitter</a>
-        <button class="share-btn share-copy" id="shareCopyBtn" onclick="copyLink()">📋 Copiar link</button>
-        <button class="share-btn share-copy" onclick="printListing()">🖨️ Imprimir</button>
-      </div>
+              <div class="modal-roi-bar-label">📊 ROI estimado: <span id="modalROILabel"></span></div>
+              <div class="modal-roi-bar-track"><div class="modal-roi-bar-fill" id="modalROIFill" style="width:60%"></div></div>
+            </div>
+            <div class="modal-walkability" id="modalWalkability">
+              <div class="modal-walkability-title">🚶 Pontuação Walkability + POIs</div>
+              <div class="modal-walkability-grid" id="walkGrid"></div>
+            </div>
+            <button class="modal-compare-btn" id="modalCompareBtn" onclick="toggleModalCompare()">⚖️ Adicionar à comparação</button>
+            <div class="modal-similar" id="modalSimilar">
+              <div class="modal-similar-title">🎯 Imóveis similares recomendados por IA</div>
+              <div class="similar-grid" id="similarGrid"></div>
+            </div>
+            <div class="modal-actions">
+              <a href="#contato" class="btn btn-ocean" onclick="closeModal()">Quero visitar</a>
+              <a href="#contato" class="btn btn-outline" style="border:2px solid var(--ocean);color:var(--ocean);" onclick="closeModal()">Mais informações</a>
+            </div>
+            <div class="modal-share">
+              <a class="share-btn share-whatsapp" id="shareWhatsapp" target="_blank">💬 WhatsApp</a>
+              <a class="share-btn share-twitter" id="shareTwitter" target="_blank">🐦 Twitter</a>
+              <button class="share-btn share-copy" id="shareCopyBtn" onclick="copyLink()">📋 Copiar link</button>
+              <button class="share-btn share-copy" onclick="printListing()">🖨️ Imprimir</button>
+            </div>
     </div>
   </div>
 </div>
@@ -1661,8 +1910,36 @@ function openModal(id) {
   const scoreLabel = l.aiScore >= 95 ? '⭐ Recomendação IA' : l.aiScore >= 90 ? '💡 Boa escolha' : '📊 Analisado';
   document.getElementById('modalAIScore').innerHTML = '<div class="modal-ai-score-icon">🧠</div><div class="modal-ai-score-text"><strong>' + scoreLabel + ' — ' + l.aiScore + '/100</strong><p>' + l.aiReason + '</p></div>';
   document.getElementById('modalROILabel').textContent = l.roi + '% a.a.';
-  document.getElementById('modalROIFill').style.width = (l.roi / 10 * 100) + '%';
-  const inCompare = compareList.includes(l.id);
+    document.getElementById('modalROIFill').style.width = (l.roi / 10 * 100) + '%';
+
+    // Walkability + POIs
+    var cityWalk = {
+      'praia-grande': [{icon:'🏖️',label:'Praia',val:98,cls:''},{icon:'🍽️',label:'Restaurantes',val:92,cls:''},{icon:'🛒',label:'Comércio',val:88,cls:''},{icon:'🏥',label:'Saúde',val:85,cls:''},{icon:'🚌',label:'Transporte',val:78,cls:''},{icon:'🏋️',label:'Academia',val:74,cls:'fair'}],
+      'santos': [{icon:'🏖️',label:'Praia',val:99,cls:''},{icon:'🍽️',label:'Restaurantes',val:94,cls:''},{icon:'🛒',label:'Comércio',val:96,cls:''},{icon:'🏥',label:'Saúde',val:97,cls:''},{icon:'🚌',label:'Transporte',val:91,cls:''},{icon:'🏋️',label:'Academia',val:88,cls:''}],
+      'guaruja': [{icon:'🏖️',label:'Praia',val:95,cls:''},{icon:'🍽️',label:'Restaurantes',val:88,cls:''},{icon:'🛒',label:'Comérci',val:85,cls:''},{icon:'🏥',label:'Saúde',val:80,cls:'fair'},{icon:'🚌',label:'Transporte',val:75,cls:'fair'},{icon:'🏋️',label:'Academia',val:82,cls:''}],
+      'sao-vicente': [{icon:'🏖️',label:'Praia',val:85,cls:''},{icon:'🍽️',label:'Restaurantes',val:82,cls:''},{icon:'🛒',label:'Comérci',val:90,cls:''},{icon:'🏥',label:'Saúde',val:85,cls:''},{icon:'🚌',label:'Transporte',val:80,cls:''},{icon:'🏋️',label:'Academia',val:72,cls:'fair'}],
+      'itanhaem': [{icon:'🏖️',label:'Praia',val:90,cls:''},{icon:'🍽️',label:'Restaurantes',val:78,cls:'fair'},{icon:'🛒',label:'Comérci',val:74,cls:'fair'},{icon:'🏥',label:'Saúde',val:70,cls:'poor'},{icon:'🚌',label:'Transporte',val:65,cls:'poor'},{icon:'🏋️',label:'Academia',val:60,cls:'poor'}],
+      'mongagua': [{icon:'🏖️',label:'Praia',val:88,cls:''},{icon:'🍽️',label:'Restaurantes',val:70,cls:'poor'},{icon:'🛒',label:'Comérci',val:68,cls:'poor'},{icon:'🏥',label:'Saúde',val:60,cls:'poor'},{icon:'🚌',label:'Transporte',val:62,cls:'poor'},{icon:'🏋️',label:'Academia',val:55,cls:'poor'}],
+      'peruibe': [{icon:'🏖️',label:'Praia',val:92,cls:''},{icon:'🍽️',label:'Restaurantes',val:75,cls:'fair'},{icon:'🛒',label:'Comérci',val:72,cls:'fair'},{icon:'🏥',label:'Saúde',val:68,cls:'poor'},{icon:'🚌',label:'Transporte',val:64,cls:'poor'},{icon:'🏋️',label:'Academia',val:58,cls:'poor'}]
+    };
+    var walkData = cityWalk[l.cidade] || cityWalk['praia-grande'];
+    var wg = document.getElementById('walkGrid');
+    wg.innerHTML = walkData.map(function(w) {
+      return '<div class="walk-score ' + w.cls + '"><div class="walk-score-value">' + w.val + '</div><div class="walk-score-label">' + w.icon + ' ' + w.label + '</div></div>';
+    }).join('');
+
+    // Similar listings by AI
+    var similar = listings.filter(function(x) { return x.id !== l.id && x.tipo === l.tipo; }).slice(0, 4);
+    var sg = document.getElementById('similarGrid');
+    sg.innerHTML = similar.map(function(s) {
+      return '<div class="similar-card" onclick="openModal(' + s.id + ')">' +
+        '<div class="similar-card-icon">' + s.icon + '</div>' +
+        '<div class="similar-card-title">' + s.titulo.substring(0, 30) + '</div>' +
+        '<div class="similar-card-price">' + formatPrice(s.preco) + '</div>' +
+        '<div class="similar-card-score">🧠 ' + s.aiScore + '</div></div>';
+    }).join('');
+
+    const inCompare = compareList.includes(l.id);
   const btn = document.getElementById('modalCompareBtn');
   btn.textContent = inCompare ? '⚖️ Remover da comparação' : '⚖️ Adicionar à comparação';
   btn.classList.toggle('visible', compareList.length < 3 || inCompare);
@@ -1885,6 +2162,84 @@ function calcROI() {
 
 function toggleClosingCosts() {
   document.getElementById('closingCosts').classList.toggle('visible');
+}
+
+// ====================
+// RENT VS BUY
+// ====================
+function calcRentVsBuy() {
+  var preco = parseFloat(document.getElementById('rvbPreco').value);
+  var aluguel = parseFloat(document.getElementById('rvbAluguel').value) || 0;
+  var entrada = parseFloat(document.getElementById('rvbEntrada').value) || 0;
+  var taxa = parseFloat(document.getElementById('rvbTaxa').value) / 100;
+  var renda = parseFloat(document.getElementById('rvbRenda').value) || 0;
+  var anos = parseInt(document.getElementById('rvbPeriodo').value);
+  if (!preco || !aluguel || entrada >= preco) { alert('Informe preco, aluguel e entrada menor que o preco.'); return; }
+  var financiado = preco - entrada;
+  var mRate = taxa / 12;
+  var months = anos * 12;
+  var parcela = financed * (Math.pow(1 + mRate, months) * mRate) / (Math.pow(1 + mRate, months) - 1);
+  var investRenda = renda - aluguel;
+  var investReturn = 0.0085;
+  var rentNetWorth = entrada;
+  var buyTimeline = [], rentTimeline = [];
+  for (var y = 0; y <= anos; y++) {
+    if (y === 0) {
+      buyTimeline.push({y:y, equity:entrada, label:'R$ ' + entrada.toLocaleString('pt-BR')});
+      rentTimeline.push({y:y, equity:rentNetWorth, label:'R$ ' + rentNetWorth.toLocaleString('pt-BR')});
+    } else {
+      var appreciation = preco * Math.pow(1.08, y) - preco;
+      var monthsPaid = y * 12;
+      var principalPaid = 0;
+      var b = financiado;
+      for (var mi = 0; mi < monthsPaid && b > 0; mi++) {
+        principalPaid += Math.min(parcela - b * mRate, b);
+        b -= Math.min(parcela - b * mRate, b);
+      }
+      var equity = entrada + principalPaid + appreciation;
+      buyTimeline.push({y:y, equity:equity, label:'R$ ' + Math.round(equity).toLocaleString('pt-BR')});
+      for (var mo = 0; mo < 12; mo++) { rentNetWorth *= (1 + investReturn); if (investRenda > 0) rentNetWorth += investRenda; }
+      rentTimeline.push({y:y, equity:rentNetWorth, label:'R$ ' + Math.round(rentNetWorth).toLocaleString('pt-BR')});
+    }
+  }
+  var buyFinal = buyTimeline[buyTimeline.length - 1];
+  var rentFinal = rentTimeline[rentTimeline.length - 1];
+  var buyWins = buyFinal.equity > rentFinal.equity;
+  var diff = Math.abs(buyFinal.equity - rentFinal.equity);
+  var v = document.getElementById('rvbVerdict');
+  v.innerHTML = (buyWins ?
+    '<div class="rvb-verdict-icon">🏆</div><div class="rvb-verdict-title">COMPRAR é mais vantajoso</div><div class="rvb-verdict-text">Após ' + anos + ' anos, comprar gera <strong>R$ ' + diff.toLocaleString('pt-BR') + ' a mais</strong> em patrimonio.</div>' :
+    '<div class="rvb-verdict-icon">📊</div><div class="rvb-verdict-title">ALUGAR pode ser mais vantajoso</div><div class="rvb-verdict-text">Investindo a diferenca voce acumularia <strong>R$ ' + diff.toLocaleString('pt-BR') + ' a mais</strong> apos ' + anos + ' anos.</div>') +
+    '<div style="margin-top:0.75rem;font-size:0.82rem;opacity:0.75;">🏠 Comprar: ' + buyFinal.label + ' &nbsp;|&nbsp; 📈 Investir: ' + rentFinal.label + '</div>';
+  var maxV = Math.max(buyFinal.equity, rentFinal.equity, 1);
+  var toBar = function(v2) { return Math.round((v2 / maxV) * 100); };
+  document.getElementById('rvbBar0').style.width = toBar(buyTimeline[0].equity) + '%';
+  document.getElementById('rvbVal0').textContent = buyTimeline[0].label;
+  var mid = Math.floor(buyTimeline.length / 2);
+  document.getElementById('rvbBar3').style.width = toBar(buyTimeline[mid] ? buyTimeline[mid].equity : buyTimeline[0].equity) + '%';
+  document.getElementById('rvbVal3').textContent = buyTimeline[mid] ? buyTimeline[mid].label : buyTimeline[0].label;
+  document.getElementById('rvbBar7').style.width = toBar(buyFinal.equity) + '%';
+  document.getElementById('rvbVal7').textContent = buyFinal.label;
+  document.getElementById('rvbBarRent').style.width = toBar(rentFinal.equity) + '%';
+  document.getElementById('rvbValRent').textContent = rentFinal.label;
+  document.getElementById('rvbResult').classList.add('visible');
+}
+
+// ====================
+// APPLY SCENARIO
+// ====================
+function applyScenario(type) {
+  var configs = {
+    conservative: { cidade: 'santos', tipo: 'apartamento' },
+    moderate: { cidade: 'praia-grande', tipo: 'casa' },
+    aggressive: { cidade: 'peruibe', tipo: 'pousada' }
+  };
+  var cfg = configs[type];
+  if (!cfg) return;
+  document.getElementById('cidade').value = cfg.cidade;
+  document.getElementById('tipo').value = cfg.tipo;
+  filterListings();
+  document.getElementById('buscar').scrollIntoView({behavior:'smooth'});
 }
 
 // ====================
