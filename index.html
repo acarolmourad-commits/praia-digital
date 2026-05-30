@@ -705,12 +705,14 @@
     Praia Digital
   </a>
   <nav>
-    <a href="#buscar">Buscar</a>
-    <a href="#simulador">Simulador</a>
-    <a href="#ia">IA</a>
-    <a href="#corretores">Corretores</a>
-    <a href="#contato">Contato</a>
-  </nav>
+        <a href="#buscar">Buscar</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#comparativo">Comparativo</a>
+        <a href="#taxas-mercado">Taxas</a>
+        <a href="#ia">IA</a>
+        <a href="#corretores">Corretores</a>
+        <a href="#contato">Contato</a>
+      </nav>
 </header>
 
 <!-- AI ASSISTANT -->
@@ -754,7 +756,7 @@
 
 <section class="hero">
   <h1>Encontre seu imóvel<br>no litoral perfeito</h1>
-  <p>A primeira plataforma do litoral com inteligência artificial — apartamentos, casas, pousadas e terrenos com IA帮你决策.</p>
+  <p>A primeira plataforma do litoral com inteligência artificial — apartamentos, casas, pousadas e terrenos para decisões mais inteligentes.</p>
   <div class="hero-cta">
     <a href="#buscar" class="btn btn-primary">🔍 Buscar imóveis</a>
     <a href="#nl-search" class="btn btn-outline">✨ Busca inteligente</a>
@@ -917,11 +919,20 @@
         </select>
       </div>
       <div class="sim-field"><label for="simAnos">Prazo</label>
-        <select id="simAnos">
-          <option value="10">10 anos</option><option value="15">15 anos</option><option value="20" selected>20 anos</option><option value="25">25 anos</option><option value="30">30 anos</option>
-        </select>
-      </div>
-    </div>
+              <select id="simAnos">
+                <option value="10">10 anos</option><option value="15">15 anos</option><option value="20" selected>20 anos</option><option value="25">25 anos</option><option value="30">30 anos</option>
+              </select>
+            </div>
+            <div class="sim-field"><label for="simMip">Seguro MIP (% a.a.)</label>
+              <select id="simMip">
+                <option value="0">Sem seguro</option>
+                <option value="0.3">0.3% (Faixa 1)</option>
+                <option value="0.5" selected>0.5% (Faixa 2)</option>
+                <option value="0.7">0.7% (Faixa 3)</option>
+                <option value="1.0">1.0% (Faixa 4)</option>
+              </select>
+            </div>
+          </div>
     <button class="sim-btn" onclick="calcSimulator()">Calcular parcelas</button>
     <div class="sim-result" id="simResult">
       <div class="sim-result-grid">
@@ -970,12 +981,152 @@
         <div class="val-bar-track"><div class="val-bar-fill" id="valBarFill" style="width:50%"></div><div class="val-bar-marker" id="valBarMarker" style="left:50%"></div></div>
       </div>
       <p class="val-insight" id="valInsight"></p>
-    </div>
-  </div>
-</section>
+            <div id="valIptuInfo" style="margin-top:0.75rem;font-size:0.8rem;opacity:0.85;"></div>
+          </div>
+        </div>
+      </section>
 
-<!-- ROI CALCULATOR -->
-<section class="roi-section" id="roi">
+      <!-- CITY COMPARISON MATRIX -->
+      <section class="market-section" id="comparativo">
+        <h2>📊 Comparativo de Cidades do Litoral</h2>
+        <p style="text-align:center;color:#666;margin-bottom:2rem;">Análise detalhada para decisão inteligente de investimento ou moradia.</p>
+        <div style="overflow-x:auto;">
+          <table style="border-collapse:collapse;width:100%;min-width:600px;background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+            <thead>
+              <tr style="background:var(--ocean);color:white;">
+                <th style="padding:0.85rem 0.75rem;text-align:left;font-size:0.85rem;">🏙️ Cidade</th>
+                <th style="padding:0.85rem 0.5rem;text-align:center;font-size:0.8rem;">📈 Valorização</th>
+                <th style="padding:0.85rem 0.5rem;text-align:center;font-size:0.8rem;">💰 Rental Yield</th>
+                <th style="padding:0.85rem 0.5rem;text-align:center;font-size:0.8rem;">🏷️ Preço/m²</th>
+                <th style="padding:0.85rem 0.5rem;text-align:center;font-size:0.8rem;">🚗 Acesso</th>
+                <th style="padding:0.85rem 0.5rem;text-align:center;font-size:0.8rem;">🏖️ Praia</th>
+                <th style="padding:0.85rem 0.5rem;text-align:center;font-size:0.8rem;">🍽️ Comércio</th>
+                <th style="padding:0.85rem 0.5rem;text-align:center;font-size:0.8rem;">📊 Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid #eee;">
+                <td style="padding:0.75rem;font-weight:700;">🏖️ Praia Grande</td>
+                <td style="padding:0.75rem;text-align:center;color:var(--success);font-weight:700;">+9.1%</td>
+                <td style="padding:0.75rem;text-align:center;">5.8%</td>
+                <td style="padding:0.75rem;text-align:center;">R$ 12k</td>
+                <td style="padding:0.75rem;text-align:center;">B/C</td>
+                <td style="padding:0.75rem;text-align:center;">⭐⭐⭐⭐⭐</td>
+                <td style="padding:0.75rem;text-align:center;">⭐⭐⭐⭐</td>
+                <td style="padding:0.75rem;text-align:center;font-weight:800;color:var(--ocean);">92</td>
+              </tr>
+              <tr style="border-bottom:1px solid #eee;background:#f8f8f8;">
+                <td style="padding:0.75rem;font-weight:700;">⛰️ Guarujá</td>
+                <td style="padding:0.75rem;text-align:center;color:var(--success);font-weight:700;">+11.2%</td>
+                <td style="padding:0.75rem;text-align:center;">5.4%</td>
+                <td style="padding:0.75rem;text-align:center;">R$ 15k</td>
+                <td style="padding:0.75rem;text-align:center;">A/B</td>
+                <td style="padding:0.75rem;text-align:center;">⭐⭐⭐⭐</td>
+                <td style="padding:0.75rem;text-align:center;">⭐⭐⭐⭐</td>
+                <td style="padding:0.75rem;text-align:center;font-weight:800;color:var(--ocean);">95</td>
+              </tr>
+              <tr style="border-bottom:1px solid #eee;">
+                <td style="padding:0.75rem;font-weight:700;">🏛️ Santos</td>
+                <td style="padding:0.75rem;text-align:center;color:var(--success);font-weight:700;">+7.4%</td>
+                <td style="padding:0.75rem;text-align:center;">5.1%</td>
+                <td style="padding:0.75rem;text-align:center;">R$ 18k</td>
+                <td style="padding:0.75rem;text-align:center;">A</td>
+                <td style="padding:0.75rem;text-align:center;">⭐⭐⭐⭐⭐</td>
+                <td style="padding:0.75rem;text-align:center;">⭐⭐⭐⭐⭐</td>
+                <td style="padding:0.75rem;text-align:center;font-weight:800;color:var(--ocean);">89</td>
+              </tr>
+              <tr style="border-bottom:1px solid #eee;background:#f8f8f8;">
+                <td style="padding:0.75rem;font-weight:700;">🌳 São Vicente</td>
+                <td style="padding:0.75rem;text-align:center;color:var(--success);font-weight:700;">+6.8%</td>
+                <td style="padding:0.75rem;text-align:center;">6.1%</td>
+                <td style="padding:0.75rem;text-align:center;">R$ 9k</td>
+                <td style="padding:0.75rem;text-align:center;">A</td>
+                <td style="padding:0.75rem;text-align:center;">⭐⭐⭐</td>
+                <td style="padding:0.75rem;text-align:center;">⭐⭐⭐⭐</td>
+                <td style="padding:0.75rem;text-align:center;font-weight:800;color:var(--ocean);">85</td>
+              </tr>
+              <tr style="border-bottom:1px solid #eee;">
+                <td style="padding:0.75rem;font-weight:700;">🦎 Peruíbe</td>
+                <td style="padding:0.75rem;text-align:center;color:var(--success);font-weight:700;">+7.7%</td>
+                <td style="padding:0.75rem;text-align:center;color:var(--success);font-weight:700;">7.2%</td>
+                <td style="padding:0.75rem;text-align:center;">R$ 7.5k</td>
+                <td style="padding:0.75rem;text-align:center;">B</td>
+                <td style="padding:0.75rem;text-align:center;">⭐⭐⭐⭐</td>
+                <td style="padding:0.75rem;text-align:center;">⭐⭐</td>
+                <td style="padding:0.75rem;text-align:center;font-weight:800;color:var(--ocean);">90</td>
+              </tr>
+              <tr style="border-bottom:1px solid #eee;background:#f8f8f8;">
+                <td style="padding:0.75rem;font-weight:700;">🌺 Itanhaém</td>
+                <td style="padding:0.75rem;text-align:center;color:var(--success);font-weight:700;">+5.9%</td>
+                <td style="padding:0.75rem;text-align:center;">5.5%</td>
+                <td style="padding:0.75rem;text-align:center;">R$ 7.5k</td>
+                <td style="padding:0.75rem;text-align:center;">B</td>
+                <td style="padding:0.75rem;text-align:center;">⭐⭐⭐</td>
+                <td style="padding:0.75rem;text-align:center;">⭐⭐</td>
+                <td style="padding:0.75rem;text-align:center;font-weight:800;color:var(--ocean);">78</td>
+              </tr>
+              <tr>
+                <td style="padding:0.75rem;font-weight:700;">🌊 Mongaguá</td>
+                <td style="padding:0.75rem;text-align:center;color:var(--success);font-weight:700;">+6.2%</td>
+                <td style="padding:0.75rem;text-align:center;">5.0%</td>
+                <td style="padding:0.75rem;text-align:center;">R$ 7k</td>
+                <td style="padding:0.75rem;text-align:center;">B/C</td>
+                <td style="padding:0.75rem;text-align:center;">⭐⭐⭐⭐</td>
+                <td style="padding:0.75rem;text-align:center;">⭐</td>
+                <td style="padding:0.75rem;text-align:center;font-weight:800;color:var(--ocean);">75</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="text-align:center;margin-top:1rem;font-size:0.82rem;color:#888;">📊 Score calculado com base em valorização, rental yield, infraestrutura e qualidade de vida. Atualizado em 2025.</p>
+      </section>
+
+      <!-- MARKET RATES INFO -->
+      <section class="ai-insights-section" id="taxas-mercado">
+        <h2>🏦 Taxas e Custos do Mercado Imobiliário</h2>
+        <p>Informações atualizadas sobre financiamento, impostos e custos de transação no Brasil.</p>
+        <div class="insights-grid">
+          <div class="insight-card"><div class="insight-icon">🏦</div><div class="insight-value">9–12%</div><h3>Taxa de Juros SFH</h3><p>Faixas do SBCE 2025. Melhor taxa com FGTS: 9% a.a. Mercado autônomo: até 12%.</p></div>
+          <div class="insight-card"><div class="insight-icon">📋</div><div class="insight-value">3%</div><h3>ITBI médio</h3><p>Imposto de Transmissão de Bens Imóveis. Varia por município — consultar prefeituras.</p></div>
+          <div class="insight-card"><div class="insight-icon">📝</div><div class="insight-value">0.5–1.5%</div><h3>Custos de Registro</h3><p>Escritura + registro + ITBI somam 4–6% do valor do imóvel. Sempre incluir no cálculo.</p></div>
+          <div class="insight-card"><div class="insight-icon">🛡️</div><div class="insight-value">0.3–1%</div><h3>Seguro MIP/SFI</h3><p>MIP (Morte e Invalidez) e SFI (Seguro de Danos Físicos). Obrigatório no SFH, calculado sobre saldo devedor.</p></div>
+        </div>
+      </section>
+
+      <!-- BEACH GUIDE -->
+      <section class="cities-section" id="praias">
+        <h2>🏖️ Guia de Praias do Litoral Sul</h2>
+        <p>Conheça as principais praias e suas características antes de fechar negócio.</p>
+        <div class="cities-grid">
+          <a class="city-card" href="javascript:void(0)" onclick="sendAIMsg('O que você sabe sobre praias em Praia Grande?')">
+            <div class="city-card-img">🏖️</div>
+            <div class="city-card-body"><h3>Praia Grande — Boqueirão</h3><p>Orla linear de 4km, mar calmo, infraestrutura completa. Melhor para famílias.</p><div class="city-card-stats"><span>🌊 Mar calmo</span><span>⭐⭐⭐⭐</span></div><div class="city-ai-insight">🧠 AI: melhor para crianças</div></div>
+          </a>
+          <a class="city-card" href="javascript:void(0)" onclick="sendAIMsg('O que você sabe sobre praias em Guarujá?')">
+            <div class="city-card-img">⛰️</div>
+            <div class="city-card-body"><h3>Guarujá — Pitangueiras</h3><p>Praia urbana de 2km, agitada no verão, trilha na Serra. Ocasião para esportes.</p><div class="city-card-stats"><span>🏄 Esportes</span><span>⭐⭐⭐⭐⭐</span></div><div class="city-ai-insight">🧠 AI: melhor para jovens</div></div>
+          </a>
+          <a class="city-card" href="javascript:void(0)" onclick="sendAIMsg('O que você sabe sobre praias em Santos?')">
+            <div class="city-card-img">🏛️</div>
+            <div class="city-card-body"><h3>Santos — Pompéia/Jardim</h3><p>11km de praia urbana, mar raso, calçadão. Mais movimentada e urbanizada.</p><div class="city-card-stats"><span>🌊 Raso/Gentil</span><span>⭐⭐⭐⭐</span></div><div class="city-ai-insight">🧠 AI: melhor acesso</div></div>
+          </a>
+          <a class="city-card" href="javascript:void(0)" onclick="sendAIMsg('O que você sabe sobre praias em Peruíbe?')">
+            <div class="city-card-img">🦎</div>
+            <div class="city-card-body"><h3>Peruíbe — Centro/Jardim Maret</h3><p>Praia preservada, 14km de extensão, restinga e trilhas. Turismo ecológico.</p><div class="city-card-stats"><span>🌿 Preservada</span><span>⭐⭐⭐⭐</span></div><div class="city-ai-insight">🧠 AI: melhor para natureza</div></div>
+          </a>
+          <a class="city-card" href="javascript:void(0)" onclick="sendAIMsg('O que você sabe sobre praias em Itanhaém?')">
+            <div class="city-card-img">🌺</div>
+            <div class="city-card-body"><h3>Itanhaém — Centro/Morrinho</h3><p>Praia tranquila, riacho na beira, sombra natural. Ideal para sossego.</p><div class="city-card-stats"><span>🌿 Tranquila</span><span>⭐⭐⭐</span></div><div class="city-ai-insight">🧠 AI: melhor para relaxar</div></div>
+          </a>
+          <a class="city-card" href="javascript:void(0)" onclick="sendAIMsg('O que você sabe sobre praias em Mongaguá?')">
+            <div class="city-card-img">🌊</div>
+            <div class="city-card-body"><h3>Mongaguá — Flórida/Itaquarea</h3><p>Praias preservadas, faixa de areia fina, águas cristalinas. Pouco movimento.</p><div class="city-card-stats"><span>💎 Deserta</span><span>⭐⭐⭐⭐</span></div><div class="city-ai-insight">🧠 AI: melhor para isolamento</div></div>
+          </a>
+        </div>
+      </section>
+
+      <!-- ROI CALCULATOR -->
+      <section class="roi-section" id="roi">
   <h2>📈 Calculadora de ROI e Custos de Fecho</h2>
   <p>Calcule retorno do investimento, custos de transação e lucratividade líquida.</p>
   <div class="roi-card">
@@ -2152,14 +2303,16 @@ function calcSimulator() {
   const entrada = parseFloat(document.getElementById('simEntrada').value) || 0;
   const taxa = parseFloat(document.getElementById('simTaxa').value) / 100;
   const anos = parseInt(document.getElementById('simAnos').value);
+  const mipRate = parseFloat(document.getElementById('simMip').value) / 100;
   if (!valor || valor < 50000) { alert('Informe o valor do imóvel (mínimo R$ 50 mil).'); return; }
   const financed = valor - entrada;
   const monthlyRate = taxa / 12;
   const months = anos * 12;
+  const mipMonthly = (valor * mipRate) / 12;
   const installment = financed * (Math.pow(1 + monthlyRate, months) * monthlyRate) / (Math.pow(1 + monthlyRate, months) - 1);
-  const totalPaid = installment * months;
+  const totalPaid = (installment + mipMonthly) * months;
   const totalInterest = totalPaid - financed;
-  document.getElementById('simParcela').textContent = 'R$ ' + installment.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0});
+  document.getElementById('simParcela').textContent = 'R$ ' + installment.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0}) + (mipMonthly > 0 ? ' + R$ ' + mipMonthly.toLocaleString('pt-BR', {minimumFractionDigits: 0}) + ' MIP' : '');
   document.getElementById('simFinanciado').textContent = 'R$ ' + financed.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0});
   document.getElementById('simJuros').textContent = 'R$ ' + totalInterest.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0});
   document.getElementById('simTotal').textContent = 'R$ ' + totalPaid.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0});
@@ -2252,7 +2405,11 @@ function runValuation() {
     comercial: 'Espaços comerciais em ' + cidade.replace('-',' ') + ' atendem demanda local crescente.'
   };
   document.getElementById('valInsight').textContent = insights[tipo] || '';
-  document.getElementById('valResult').classList.add('visible');
+    const iptuBase = { apartamento: 0.003, casa: 0.004, terreno: 0.002, pousada: 0.005, comercial: 0.004 };
+    const iptuRate = iptuBase[tipo] || 0.003;
+    const estimatedIptu = Math.round(median * iptuRate);
+    document.getElementById('valIptuInfo').textContent = '💰 IPTU estimado: R$ ' + estimatedIptu.toLocaleString('pt-BR') + '/ano (base ' + (iptuRate * 100).toFixed(1) + '% do valor).';
+    document.getElementById('valResult').classList.add('visible');
 }
 
 // ====================
