@@ -407,6 +407,46 @@
     .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 900px; margin: 0 auto; }
     .testimonial-card { background: var(--sand); border-radius: 16px; padding: 1.75rem; }
     .testimonial-quote { font-size: 2rem; color: var(--ocean-light); margin-bottom: 0.75rem; }
+    /* PRICE TABLE */
+    .price-table-section { background: var(--ocean); padding: 3rem 2rem; }
+    .price-table-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--white); }
+    .price-table-section table { font-size: 0.88rem; }
+    .price-table-section td { font-size: 0.88rem; }
+
+    /* TRANSACTION COSTS */
+    .transaction-costs-section { background: var(--white); padding: 3rem 2rem; }
+    .transaction-costs-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
+    .tc-card { background: var(--sand); border-radius: 20px; padding: 2rem; max-width: 750px; margin: 0 auto; }
+    .tc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+    .tc-field label { display: block; font-size: 0.8rem; font-weight: 600; color: var(--dark); margin-bottom: 0.35rem; }
+    .tc-field input, .tc-field select { width: 100%; padding: 0.65rem 0.85rem; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 0.9rem; background: var(--white); }
+    .tc-btn { width: 100%; padding: 0.9rem; background: var(--ocean); color: white; border: none; border-radius: 50px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: transform 0.2s; }
+    .tc-btn:hover { transform: translateY(-2px); }
+    .tc-result { margin-top: 1.5rem; display: none; }
+    .tc-result.visible { display: block; }
+    .tc-summary { background: var(--ocean); color: white; padding: 1.25rem; border-radius: 16px; text-align: center; margin-bottom: 1rem; font-size: 1.1rem; font-weight: 700; }
+    .tc-breakdown { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.75rem; margin-bottom: 1rem; }
+    .tc-item { background: white; padding: 0.85rem; border-radius: 12px; text-align: center; }
+    .tc-item-label { font-size: 0.75rem; color: #666; margin-bottom: 0.3rem; }
+    .tc-item-value { font-size: 1.05rem; font-weight: 700; color: var(--dark); }
+    .tc-liquid { background: var(--success); color: white; padding: 1rem; border-radius: 12px; text-align: center; font-weight: 700; font-size: 1rem; }
+
+    /* NEIGHBORHOOD GUIDE */
+    .neighborhood-section { background: var(--sand); padding: 3rem 2rem; }
+    .neighborhood-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
+    .nb-tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-bottom: 2rem; }
+    .nb-content { display: none; }
+    .nb-content.active { display: block; }
+    .nb-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; max-width: 1100px; margin: 0 auto; }
+    .nb-card { background: var(--white); border-radius: 16px; padding: 1.5rem; box-shadow: 0 2px 12px rgba(0,0,0,0.08); position: relative; }
+    .nb-card h4 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--dark); }
+    .nb-card p { font-size: 0.88rem; color: #555; line-height: 1.5; margin-bottom: 0.75rem; }
+    .nb-badge { position: absolute; top: 1rem; right: 1rem; background: var(--amber); color: var(--dark); font-size: 0.7rem; font-weight: 700; padding: 0.25rem 0.6rem; border-radius: 50px; }
+    .nb-badge.nb-best { background: var(--success); color: white; }
+    .nb-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.75rem; }
+    .nb-tag { background: var(--ocean); color: white; font-size: 0.72rem; padding: 0.2rem 0.55rem; border-radius: 50px; }
+    .nb-meta { font-size: 0.78rem; color: var(--ocean); font-weight: 600; }
+
     .testimonial-text { font-style: italic; color: #555; line-height: 1.7; margin-bottom: 1rem; }
     .testimonial-author { font-weight: 700; color: var(--dark); }
     .testimonial-role { font-size: 0.85rem; color: var(--ocean); }
@@ -708,9 +748,10 @@
         <a href="#buscar">Buscar</a>
         <a href="#simulador">Simulador</a>
         <a href="#comparativo">Comparativo</a>
-        <a href="#taxas-mercado">Taxas</a>
+        <a href="#taxas">Taxas</a>
         <a href="#ia">IA</a>
         <a href="#corretores">Corretores</a>
+        <a href="#bairros">Bairros</a>
         <a href="#contato">Contato</a>
       </nav>
 </header>
@@ -1082,7 +1123,7 @@
       </section>
 
       <!-- MARKET RATES INFO -->
-      <section class="ai-insights-section" id="taxas-mercado">
+      <section class="ai-insights-section" id="taxas">
         <h2>🏦 Taxas e Custos do Mercado Imobiliário</h2>
         <p>Informações atualizadas sobre financiamento, impostos e custos de transação no Brasil.</p>
         <div class="insights-grid">
@@ -1589,6 +1630,120 @@
   </div>
 </section>
 
+<section class="price-table-section" id="precos">
+  <h2>📐 Tabela de Preços por m² — 2025</h2>
+  <p style="text-align:center;color:#666;margin-bottom:2rem;">Valores medianos de mercado por cidade e tipo de imóvel.</p>
+  <div style="overflow-x:auto;">
+  <table style="border-collapse:collapse;width:100%;min-width:550px;background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+    <thead>
+      <tr style="background:var(--ocean);color:white;">
+        <th style="padding:0.85rem 0.75rem;text-align:left;font-size:0.82rem;">Cidade</th>
+        <th style="padding:0.85rem 0.5rem;text-align:center;font-size:0.8rem;">🏠 Apto</th>
+        <th style="padding:0.85rem 0.5rem;text-align:center;font-size:0.8rem;">🏡 Casa</th>
+        <th style="padding:0.85rem 0.5rem;text-align:center;font-size:0.8rem;">🏨 Pousada</th>
+        <th style="padding:0.85rem 0.5rem;text-align:center;font-size:0.8rem;">🏗️ Terreno</th>
+        <th style="padding:0.85rem 0.5rem;text-align:center;font-size:0.8rem;">🏢 Comercial</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #eee;"><td style="padding:0.75rem;font-weight:700;">🏖️ Praia Grande</td><td style="padding:0.75rem;text-align:center;">R$ 12.000</td><td style="padding:0.75rem;text-align:center;">R$ 14.000</td><td style="padding:0.75rem;text-align:center;">R$ 8.000</td><td style="padding:0.75rem;text-align:center;">R$ 1.500</td><td style="padding:0.75rem;text-align:center;">R$ 10.000</td></tr>
+      <tr style="border-bottom:1px solid #eee;background:#f8f8f8;"><td style="padding:0.75rem;font-weight:700;">⛰️ Guarujá</td><td style="padding:0.75rem;text-align:center;color:var(--success);font-weight:700;">R$ 15.000</td><td style="padding:0.75rem;text-align:center;color:var(--success);font-weight:700;">R$ 18.000</td><td style="padding:0.75rem;text-align:center;">R$ 10.000</td><td style="padding:0.75rem;text-align:center;">R$ 2.500</td><td style="padding:0.75rem;text-align:center;">R$ 12.000</td></tr>
+      <tr style="border-bottom:1px solid #eee;"><td style="padding:0.75rem;font-weight:700;">🏛️ Santos</td><td style="padding:0.75rem;text-align:center;">R$ 18.000</td><td style="padding:0.75rem;text-align:center;">R$ 20.000</td><td style="padding:0.75rem;text-align:center;">R$ 12.000</td><td style="padding:0.75rem;text-align:center;">R$ 3.500</td><td style="padding:0.75rem;text-align:center;">R$ 15.000</td></tr>
+      <tr style="border-bottom:1px solid #eee;background:#f8f8f8;"><td style="padding:0.75rem;font-weight:700;">🌳 São Vicente</td><td style="padding:0.75rem;text-align:center;">R$ 9.000</td><td style="padding:0.75rem;text-align:center;">R$ 11.000</td><td style="padding:0.75rem;text-align:center;">R$ 7.000</td><td style="padding:0.75rem;text-align:center;">R$ 1.200</td><td style="padding:0.75rem;text-align:center;">R$ 8.000</td></tr>
+      <tr style="border-bottom:1px solid #eee;"><td style="padding:0.75rem;font-weight:700;">🦎 Peruíbe</td><td style="padding:0.75rem;text-align:center;">R$ 7.500</td><td style="padding:0.75rem;text-align:center;">R$ 8.500</td><td style="padding:0.75rem;text-align:center;color:var(--success);font-weight:700;">R$ 6.500</td><td style="padding:0.75rem;text-align:center;">R$ 900</td><td style="padding:0.75rem;text-align:center;">R$ 6.000</td></tr>
+      <tr style="border-bottom:1px solid #eee;background:#f8f8f8;"><td style="padding:0.75rem;font-weight:700;">🌺 Itanhaém</td><td style="padding:0.75rem;text-align:center;">R$ 7.500</td><td style="padding:0.75rem;text-align:center;">R$ 9.000</td><td style="padding:0.75rem;text-align:center;">R$ 6.000</td><td style="padding:0.75rem;text-align:center;">R$ 800</td><td style="padding:0.75rem;text-align:center;">R$ 6.000</td></tr>
+      <tr><td style="padding:0.75rem;font-weight:700;">🌊 Mongaguá</td><td style="padding:0.75rem;text-align:center;">R$ 7.000</td><td style="padding:0.75rem;text-align:center;">R$ 8.500</td><td style="padding:0.75rem;text-align:center;">R$ 5.500</td><td style="padding:0.75rem;text-align:center;">R$ 700</td><td style="padding:0.75rem;text-align:center;">R$ 5.500</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="text-align:center;margin-top:1rem;font-size:0.8rem;color:#888;">💡 Multiplique o valor por m² pela área do imóvel para estimar o preço de mercado. Use o avaliador IA para faixa detalhada.</p>
+</section>
+
+<!-- SIMULADOR DE CUSTOS DE TRANSAÇÃO -->
+<section class="transaction-costs-section" id="custos">
+  <h2>🧮 Calculadora de Custos de Transação</h2>
+  <p style="text-align:center;color:#666;margin-bottom:2rem;">Saiba exatamente quanto vai pagar de ITBI, registro, escritura e corretagem antes de fechar negócio.</p>
+  <div class="tc-card">
+    <div class="tc-grid">
+      <div class="tc-field"><label for="tcPreco">Valor do imóvel (R$)</label><input type="number" id="tcPreco" placeholder="Ex: 600000" min="50000"></div>
+      <div class="tc-field"><label for="tcITBI">ITBI (%)</label><select id="tcITBI"><option value="2">2%</option><option value="3" selected>3%</option><option value="3.5">3.5%</option></select></div>
+      <div class="tc-field"><label for="tcRegistro">Registro + Escritura (%)</label><select id="tcRegistro"><option value="1" selected>1%</option><option value="1.5">1.5%</option><option value="2">2%</option></select></div>
+      <div class="tc-field"><label for="tcCorret">Corretagem (%)</label><select id="tcCorret"><option value="5" selected>5% (típica)</option><option value="6">6%</option><option value="4">4%</option></select></div>
+      <div class="tc-field"><label for="tcIPTU">IPTU anual (R$)</label><input type="number" id="tcIPTU" placeholder="Ex: 2400" min="0"></div>
+      <div class="tc-field"><label for="tcCond">Condomínio mensal (R$)</label><input type="number" id="tcCond" placeholder="Ex: 500" min="0"></div>
+    </div>
+    <button class="tc-btn" onclick="calcTransCosts()">📊 Calcular custos totais</button>
+    <div class="tc-result" id="tcResult">
+      <div class="tc-summary" id="tcSummary"></div>
+      <div class="tc-breakdown" id="tcBreakdown"></div>
+      <div class="tc-liquid" id="tcLiquid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- GUIA DE BAIRROS -->
+<section class="neighborhood-section" id="bairros">
+  <h2>🗺️ Guia de Bairros por Cidade</h2>
+  <p style="text-align:center;color:#666;margin-bottom:2rem;">Conheça os melhores bairros para cada perfil de comprador.</p>
+  <div class="nb-tabs">
+    <button class="beach-tab active" onclick="showNb('pg')">🏖️ Praia Grande</button>
+    <button class="beach-tab" onclick="showNb('guaruja')">🏝️ Guarujá</button>
+    <button class="beach-tab" onclick="showNb('santos')">⚓ Santos</button>
+    <button class="beach-tab" onclick="showNb('sv')">🌅 São Vicente</button>
+    <button class="beach-tab" onclick="showNb('peruibe')">✨ Peruíbe</button>
+    <button class="beach-tab" onclick="showNb('itanhaem')">🏖️ Itanhaém</button>
+    <button class="beach-tab" onclick="showNb('mongagua')">🌴 Mongaguá</button>
+  </div>
+  <div class="nb-content active" id="nb-pg">
+    <div class="nb-grid">
+      <div class="nb-card"><div class="nb-badge nb-best">🏆 Melhor</div><h4>Boqueirão</h4><p>Orla badalada, infraestrutura completa, proximidade com comércios. Melhor para quem quer movimento e serviços.</p><div class="nb-tags"><span class="nb-tag">Famílias</span><span class="nb-tag">Turistas</span><span class="nb-tag">Lazer</span></div><div class="nb-meta">🏷️ Apto: R$ 12k/m² | 📈 +9.1%/ano</div></div>
+      <div class="nb-card"><h4>Samoa / Maracanã</h4><p>Região nova, condomínios modernos, praia bem conservada. Crescimento acelerado.</p><div class="nb-tags"><span class="nb-tag">Jovens</span><span class="nb-tag">Novo</span></div><div class="nb-meta">🏷️ Apto: R$ 11k/m² | 📈 +10%/ano</div></div>
+      <div class="nb-card"><h4>Caiçara</h4><p>Bairro tradicional, fácil acesso à orla, comércios estabelecidos. Ótimo custo-benefício.</p><div class="nb-tags"><span class="nb-tag">Custo-benefício</span><span class="nb-tag">Local</span></div><div class="nb-meta">🏷️ Apto: R$ 10k/m² | 📈 +8%/ano</div></div>
+      <div class="nb-card"><h4>Ocian</h4><p>Próximo ao rio, praia mais tranquila. Ideal para quem busca sossego próximo ao mar.</p><div class="nb-tags"><span class="nb-tag">Sossego</span><span class="nb-tag">Tranquilo</span></div><div class="nb-meta">🏷️ Apto: R$ 10k/m² | 📈 +8.5%/ano</div></div>
+    </div>
+  </div>
+  <div class="nb-content" id="nb-guaruja">
+    <div class="nb-grid">
+      <div class="nb-card"><div class="nb-badge nb-best">🏆 Melhor</div><h4>Pitangueiras</h4><p>Região nobre, maior concentração de shops e restaurantes. Maior valorização do litoral.</p><div class="nb-tags"><span class="nb-tag">Premium</span><span class="nb-tag">Alto padrão</span></div><div class="nb-meta">🏷️ Casa: R$ 18k/m² | 📈 +11.2%/ano</div></div>
+      <div class="nb-card"><h4>Enseada</h4><p>Praia extensa, badalada no verão, boa infraestrutura. Alternativa mais acessível ao Pitangueiras.</p><div class="nb-tags"><span class="nb-tag">Turismo</span><span class="nb-tag">Esportes</span></div><div class="nb-meta">🏷️ Apto: R$ 13k/m² | 📈 +10%/ano</div></div>
+      <div class="nb-card"><h4>Astúrias</h4><p>Praia de ondas, tradicional. boa para surf. bairro consolidado.</p><div class="nb-tags"><span class="nb-tag">Surfe</span><span class="nb-tag">Tradicional</span></div><div class="nb-meta">🏷️ Apto: R$ 11k/m² | 📈 +9%/ano</div></div>
+    </div>
+  </div>
+  <div class="nb-content" id="nb-santos">
+    <div class="nb-grid">
+      <div class="nb-card"><div class="nb-badge nb-best">🏆 Melhor</div><h4>Pompéia / Embaré</h4><p>Região mais tradicional, hotels, restaurantes, calçadão. Fácil acesso à praia.</p><div class="nb-tags"><span class="nb-tag">Tradição</span><span class="nb-tag">Turismo</span></div><div class="nb-meta">🏷️ Apto: R$ 18k/m² | 📈 +7.4%/ano</div></div>
+      <div class="nb-card"><h4>José Menino / Gonzaga</h4><p>Zona nobre, praia larga, próximo a shops. Padrão elevado.</p><div class="nb-tags"><span class="nb-tag">Nobre</span><span class="nb-tag">Urbanidade</span></div><div class="nb-meta">🏷️ Apto: R$ 20k/m² | 📈 +8%/ano</div></div>
+      <div class="nb-card"><h4>Ponta da Praia</h4><p>Extremo sul, museus, quietude. Preço mais acessível em Santos.</p><div class="nb-tags"><span class="nb-tag">Cultura</span><span class="nb-tag">Acessível</span></div><div class="nb-meta">🏷️ Apto: R$ 14k/m² | 📈 +6%/ano</div></div>
+    </div>
+  </div>
+  <div class="nb-content" id="nb-sv">
+    <div class="nb-grid">
+      <div class="nb-card"><div class="nb-badge nb-best">🏆 Melhor</div><h4>Pompetegração</h4><p>Região em ascenção, novos empreendimentos, preço acessível. Melhor entry-point do litoral.</p><div class="nb-tags"><span class="nb-tag">Entry-point</span><span class="nb-tag">Jovens</span></div><div class="nb-meta">🏷️ Apto: R$ 9k/m² | 📈 +6.8%/ano</div></div>
+      <div class="nb-card"><h4>Centro</h4><p>Comercial, fácil acesso, salas comerciais com bom ROI. Melhor para investidores.</p><div class="nb-tags"><span class="nb-tag">Investimento</span><span class="nb-tag">ROI 6.1%</span></div><div class="nb-meta">🏷️ Comercial: R$ 8k/m² | 📈 +5%/ano</div></div>
+      <div class="nb-card"><h4>Jardim São Portuguese</h4><p>Mais tranquilo, próximo à station. Alternativa econômica.</p><div class="nb-tags"><span class="nb-tag">Econômico</span><span class="nb-tag">Local</span></div><div class="nb-meta">🏷️ Apto: R$ 7k/m² | 📈 +5%/ano</div></div>
+    </div>
+  </div>
+  <div class="nb-content" id="nb-peruibe">
+    <div class="nb-grid">
+      <div class="nb-card"><div class="nb-badge nb-best">🏆 Melhor ROI</div><h4>Jardim Maret / Centro</h4><p>Melhor rental yield do catálogo. Turismo ecológico em crescimento. Pico no verão.</p><div class="nb-tags"><span class="nb-tag">Investimento</span><span class="nb-tag">7.2% yield</span></div><div class="nb-meta">🏷️ Pousada: R$ 6.5k/m² | 📈 +7.7%/ano</div></div>
+      <div class="nb-card"><h4>Indaiá</h4><p>Bairro tradicional, praia familiar. Boa ocupação no verão.</p><div class="nb-tags"><span class="nb-tag">Famílias</span><span class="nb-tag">Veraneio</span></div><div class="nb-meta">🏷️ Casa: R$ 7k/m² | 📈 +7%/ano</div></div>
+      <div class="nb-card"><h4>Balneário</h4><p>Região mais nova, condomínios em expansão. Preço competitivo.</p><div class="nb-tags"><span class="nb-tag">Novo</span><span class="nb-tag">Crescimento</span></div><div class="nb-meta">🏷️ Apto: R$ 6k/m² | 📈 +8%/ano</div></div>
+    </div>
+  </div>
+  <div class="nb-content" id="nb-itanhaem">
+    <div class="nb-grid">
+      <div class="nb-card"><div class="nb-badge nb-best">🏆 Melhor</div><h4>Centro / Morrinho</h4><p>Praia tranquila, sombra natural, riacho. Para quem busca sossego.</p><div class="nb-tags"><span class="nb-tag">Sossego</span><span class="nb-tag">Natureza</span></div><div class="nb-meta">🏷️ Casa: R$ 9k/m² | 📈 +5.9%/ano</div></div>
+      <div class="nb-card"><h4>Suarão</h4><p>Praia mais preservada,波的 Gentle. Alternativa para quem quer tranqülidade.</p><div class="nb-tags"><span class="nb-tag">Preservada</span><span class="nb-tag">Tranquila</span></div><div class="nb-meta">🏷️ Terreno: R$ 1k/m² | 📈 +5%/ano</div></div>
+    </div>
+  </div>
+  <div class="nb-content" id="nb-mongagua">
+    <div class="nb-grid">
+      <div class="nb-card"><div class="nb-badge nb-best">🏆 Melhor</div><h4>Flórida</h4><p>Condomínios fechados, segurança, sossego. Melhor para quem busca qualidade de vida.</p><div class="nb-tags"><span class="nb-tag">Segurança</span><span class="nb-tag">Condomínio</span></div><div class="nb-meta">🏷️ Casa: R$ 8.5k/m² | 📈 +6.2%/ano</div></div>
+      <div class="nb-card"><h4>Itaquarea</h4><p>Praia preservada, águas cristalinas. Para quem busca natureza e isolamento.</p><div class="nb-tags"><span class="nb-tag">Natureza</span><span class="nb-tag">Isolamento</span></div><div class="nb-meta">🏷️ Apto: R$ 7k/m² | 📈 +6%/ano</div></div>
+    </div>
+  </div>
+</section>
+
 <section class="faq-section" id="faq">
   <h2>Perguntas frequentes</h2>
   <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-question">Como funciona a busca com IA?</div><div class="faq-answer">Digite sua pergunta em linguagem natural, como "apartamento 2 quartos até 800mil em São Vicente". A IA interpreta e filtra os melhores imóveis automaticamente.</div></div>
@@ -1886,7 +2041,7 @@ function processAI(msg) {
     const interest = total - financed;
     const fmt = v => 'R$ ' + v.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0});
     return `🏦 Resultado (valor: ${fmt(valor)}, entrada: ${fmt(entrada)}):\n\n` +
-      `• Parcela: ${fmt(installment)}\n• Valor financiado: ${fmt(financiado)}\n• Total de juros: ${fmt(interest)}\n• Total a pagar: ${fmt(total)}\n\n💡 Taxa 12% a.a. em 20 anos. Use o simulador abaixo para outros cenários.`;
+      `• Parcela: ${fmt(installment)}\n• Valor financiado: ${fmt(financed)}\n• Total de juros: ${fmt(interest)}\n• Total a pagar: ${fmt(total)}\n\n💡 Taxa 12% a.a. em 20 anos. Use o simulador abaixo para outros cenários.`;
   }
   if (lower.match(/apartamento|apto|apartamento/i) && lower.match(/2.*quarto|2.*dorm/)) {
     return `🔍 Apartamentos com 2 quartos:\n\n` + listings.filter(l => l.tipo === 'apartamento' && l.dormitorios === 2).slice(0, 3).map(l =>
@@ -2681,6 +2836,60 @@ function showBeach(city) {
   if (selectedTab) selectedTab.classList.add('active');
   var selectedContent = document.getElementById('beach-' + city);
   if (selectedContent) selectedContent.classList.add('active');
+}
+
+// ====================
+// TRANSACTION COSTS CALC
+// ====================
+function calcTransCosts() {
+  const preco = parseFloat(document.getElementById('tcPreco').value);
+  const itbiPct = parseFloat(document.getElementById('tcITBI').value) / 100;
+  const regPct = parseFloat(document.getElementById('tcRegistro').value) / 100;
+  const corretPct = parseFloat(document.getElementById('tcCorret').value) / 100;
+  const iptu = parseFloat(document.getElementById('tcIPTU').value) || 0;
+  const cond = parseFloat(document.getElementById('tcCond').value) || 0;
+
+  if (!preco || preco < 50000) { alert('Informe o valor do imóvel (mínimo R$ 50 mil).'); return; }
+
+  const itbi = preco * itbiPct;
+  const registro = preco * regPct;
+  const escritura = preco * 0.005;
+  const corretagem = preco * corretPct;
+  const totalTax = itbi + registro + escritura + corretagem;
+  const entradaExtra = totalTax + (cond * 12) + iptu;
+  const totalOutlay = preco + totalTax;
+  const netto = preco - totalTax;
+
+  document.getElementById('tcSummary').innerHTML =
+    '💰 Custo total para entrar: <strong>R$ ' + totalOutlay.toLocaleString('pt-BR') + '</strong><br>' +
+    '<span style="opacity:0.8;font-size:0.9rem;">(R$ ' + preco.toLocaleString('pt-BR') + ' imóvel + R$ ' + totalTax.toLocaleString('pt-BR') + ' taxas)</span>';
+
+  document.getElementById('tcBreakdown').innerHTML =
+    '<div class="tc-item"><div class="tc-item-label">ITBI (' + (itbiPct*100).toFixed(1) + '%)</div><div class="tc-item-value">R$ ' + itbi.toLocaleString('pt-BR') + '</div></div>' +
+    '<div class="tc-item"><div class="tc-item-label">Registro (' + (regPct*100).toFixed(1) + '%)</div><div class="tc-item-value">R$ ' + registro.toLocaleString('pt-BR') + '</div></div>' +
+    '<div class="tc-item"><div class="tc-item-label">Escritura (0.5%)</div><div class="tc-item-value">R$ ' + escritura.toLocaleString('pt-BR') + '</div></div>' +
+    '<div class="tc-item"><div class="tc-item-label">Corretagem (' + (corretPct*100).toFixed(0) + '%)</div><div class="tc-item-value">R$ ' + corretagem.toLocaleString('pt-BR') + '</div></div>' +
+    '<div class="tc-item"><div class="tc-item-label">IPTU/ano</div><div class="tc-item-value">R$ ' + iptu.toLocaleString('pt-BR') + '</div></div>' +
+    '<div class="tc-item"><div class="tc-item-label">Condomínio/ano</div><div class="tc-item-value">R$ ' + (cond*12).toLocaleString('pt-BR') + '</div></div>';
+
+  document.getElementById('tcLiquid').innerHTML =
+    '✅ Líquido que o vendedor recebe: <strong>R$ ' + netto.toLocaleString('pt-BR') + '</strong><br>' +
+    '<span style="font-size:0.85rem;opacity:0.9;">Valor líquido após todas as taxas de transação</span>';
+
+  document.getElementById('tcResult').classList.add('visible');
+}
+
+// ====================
+// NEIGHBORHOOD TABS
+// ====================
+function showNb(city) {
+  document.querySelectorAll('.nb-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.nb-tabs .beach-tab').forEach(btn => btn.classList.remove('active'));
+  const target = document.getElementById('nb-' + city);
+  if (target) target.classList.add('active');
+  const tabs = document.querySelectorAll('.nb-tabs .beach-tab');
+  const cityMap = {pg:0,guaruja:1,santos:2,sv:3,peruibe:4,itanhaem:5,mongagua:6};
+  if (tabs[cityMap[city]]) tabs[cityMap[city]].classList.add('active');
 }
 
 // Init
