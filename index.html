@@ -478,14 +478,43 @@
 
     .modal-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
 
-    /* RESPONSIVE */
-    @media (max-width: 600px) {
-      nav a { margin-left: 1rem; font-size: 0.9rem; }
-      .hero { padding: 3rem 1.5rem 2.5rem; }
-      .search-section { border-radius: 16px 16px 0 0; }
-      .results-grid { grid-template-columns: 1fr; }
-    }
-  </style>
+    /* CITIES */
+        .cities-section { background: var(--white); padding: 4rem 2rem; }
+        .cities-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; }
+        .cities-section > p { text-align: center; color: #666; margin-bottom: 2rem; }
+        .cities-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1100px; margin: 0 auto; }
+        .city-card { background: var(--sand); border-radius: 16px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; text-decoration: none; color: var(--dark); display: block; }
+        .city-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.12); }
+        .city-card-img { height: 120px; background: linear-gradient(135deg, var(--ocean), var(--ocean-light)); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; }
+        .city-card-body { padding: 1.25rem; }
+        .city-card h3 { font-size: 1.1rem; color: var(--ocean); margin-bottom: 0.5rem; }
+        .city-card p { font-size: 0.9rem; color: #555; margin-bottom: 0.75rem; }
+        .city-card-stats { display: flex; gap: 1rem; font-size: 0.85rem; color: var(--ocean); font-weight: 600; }
+
+        /* FAQ */
+        .faq-section { padding: 4rem 2rem; max-width: 800px; margin: 0 auto; }
+        .faq-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 2rem; }
+        .faq-item { background: var(--white); border-radius: 12px; margin-bottom: 1rem; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .faq-question { padding: 1.25rem 1.5rem; font-weight: 700; font-size: 1.05rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: var(--dark); }
+        .faq-question:hover { color: var(--ocean); }
+        .faq-question::after { content: '+'; font-size: 1.5rem; color: var(--ocean); transition: transform 0.2s; }
+        .faq-item.open .faq-question::after { transform: rotate(45deg); }
+        .faq-answer { padding: 0 1.5rem 1.25rem; color: #555; font-size: 0.95rem; line-height: 1.7; display: none; }
+        .faq-item.open .faq-answer { display: block; }
+
+        /* RESPONSIVE */
+        @media (max-width: 600px) {
+          nav a { margin-left: 1rem; font-size: 0.9rem; }
+          .hero { padding: 3rem 1.5rem 2.5rem; }
+          .search-section { border-radius: 16px 16px 0 0; }
+          .results-grid { grid-template-columns: 1fr; }
+          .stat-item { min-width: 120px; padding: 1rem 0.5rem; }
+          .stat-value { font-size: 1.5rem; }
+          .how-it-works { padding: 2rem 1rem; }
+          .steps-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+          .cities-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+      </style>
 </head>
 <body>
 
@@ -500,11 +529,13 @@
     Praia Digital
   </a>
   <nav>
-    <a href="#buscar">Buscar</a>
-    <a href="#recursos">Recursos</a>
-    <a href="#contato">Contato</a>
-  </nav>
-</header>
+      <a href="#buscar">Buscar</a>
+      <a href="#cidades">Cidades</a>
+      <a href="#faq">FAQ</a>
+      <a href="#recursos">Recursos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
 <section class="stats-bar">
   <div class="stat-item"><div class="stat-value">12</div><div class="stat-label">Imóveis disponíveis</div></div>
@@ -592,7 +623,7 @@
   <div class="results-grid" id="resultsGrid"></div>
 </section>
 
-<section class="how-it-works">
+<section class="how-it-works" id="como-funciona">
   <h2>Como funciona?</h2>
   <div class="steps-grid">
     <div class="step">
@@ -615,6 +646,97 @@
       <h3>Feche negócio</h3>
       <p>Agende visitas, tire dúvidas e negocie diretamente — nosso time local conhece cada bairro.</p>
     </div>
+  </div>
+</section>
+
+<section class="cities-section" id="cidades">
+  <h2>Explore as cidades do litoral</h2>
+  <p>Cada cidade tem seu encanto — conheça as opções disponíveis.</p>
+  <div class="cities-grid">
+    <a class="city-card" href="#buscar" onclick="document.getElementById('cidade').value='praia-grande';filterListings();return false;">
+      <div class="city-card-img">🏖️</div>
+      <div class="city-card-body">
+        <h3>Praia Grande</h3>
+        <p>A cidade mais extensa do litoral sul, com praia linear e infraestrutura completa.</p>
+        <div class="city-card-stats"><span>🏠 2 imóveis</span><span>📍 Boqueirão, Caiçara</span></div>
+      </div>
+    </a>
+    <a class="city-card" href="#buscar" onclick="document.getElementById('cidade').value='santos';filterListings();return false;">
+      <div class="city-card-img">🏛️</div>
+      <div class="city-card-body">
+        <h3>Santos</h3>
+        <p>Cidade histórica e urbana, com o maior jardim de praia do mundo e vieira vibrante.</p>
+        <div class="city-card-stats"><span>🏠 1 imóvel</span><span>📍 Pompéia</span></div>
+      </div>
+    </a>
+    <a class="city-card" href="#buscar" onclick="document.getElementById('cidade').value='guaruja';filterListings();return false;">
+      <div class="city-card-img">⛰️</div>
+      <div class="city-card-body">
+        <h3>Guarujá</h3>
+        <p>Conhecida como a "Bela de Santos", beaches de Pitangueiras a Enseada.</p>
+        <div class="city-card-stats"><span>🏠 1 imóvel</span><span>📍 Pitangueiras</span></div>
+      </div>
+    </a>
+    <a class="city-card" href="#buscar" onclick="document.getElementById('cidade').value='sao-vicente';filterListings();return false;">
+      <div class="city-card-img">🌳</div>
+      <div class="city-card-body">
+        <h3>São Vicente</h3>
+        <p>A cidade mais antiga do Brasil, com charme histórico e proximidade da capital.</p>
+        <div class="city-card-stats"><span>🏠 2 imóveis</span><span>📍 Centro, Pompetegração</span></div>
+      </div>
+    </a>
+    <a class="city-card" href="#buscar" onclick="document.getElementById('cidade').value='itanhaem';filterListings();return false;">
+      <div class="city-card-img">🌺</div>
+      <div class="city-card-body">
+        <h3>Itanhaém</h3>
+                <p>Charmosa e arborizada, perfeita para quem busca sossego e natureza.</p>
+        <div class="city-card-stats"><span>🏠 2 imóveis</span><span>📍 Centro</span></div>
+      </div>
+    </a>
+    <a class="city-card" href="#buscar" onclick="document.getElementById('cidade').value='mongagua';filterListings();return false;">
+      <div class="city-card-img">🌊</div>
+      <div class="city-card-body">
+        <h3>Mongaguá</h3>
+        <p>Praias preservadas e águas cristalinas — oásis tranquilo no litoral sul.</p>
+        <div class="city-card-stats"><span>🏠 2 imóveis</span><span>📍 Flórida, Itaquarena</span></div>
+      </div>
+    </a>
+    <a class="city-card" href="#buscar" onclick="document.getElementById('cidade').value='peruibe';filterListings();return false;">
+      <div class="city-card-img">🦎</div>
+      <div class="city-card-body">
+        <h3>Peruíbe</h3>
+        <p>Na fronteira com o Paraná, com trilhas, restinga e praia préservada.</p>
+        <div class="city-card-stats"><span>🏠 2 imóveis</span><span>📍 Centro, Jardim Maret</span></div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="faq-section" id="faq">
+  <h2>Perguntas frequentes</h2>
+  <div class="faq-item" onclick="toggleFaq(this)">
+    <div class="faq-question">Como funciona a busca de imóveis?</div>
+    <div class="faq-answer">Use os filtros de tipo, cidade, dormitórios e faixa de preço para encontrar imóveis. Cada card mostra informações principais e você pode clicar para ver os detalhes completos no modal.</div>
+  </div>
+  <div class="faq-item" onclick="toggleFaq(this)">
+    <div class="faq-question">Como posso contatar a Praia Digital?</div>
+    <div class="faq-answer">Você pode usar o WhatsApp para resposta rápida, enviar e-mail ou preencher o formulário de contato. Nosso time responde em até 24h úteis.</div>
+  </div>
+  <div class="faq-item" onclick="toggleFaq(this)">
+    <div class="faq-question">Posso anunciar meu imóvel?</div>
+    <div class="faq-answer">Sim! Selecione a opção "Quero anunciar meu imóvel" no formulário de contato ou fale diretamente pelo WhatsApp. Vamos avaliar seu imóvel e entrar em contato com condições especiais.</div>
+  </div>
+  <div class="faq-item" onclick="toggleFaq(this)">
+    <div class="faq-question">Vocês fazem visitas presenciais?</div>
+    <div class="faq-answer">Trabalhamos de forma 100% digital, mas podemos агendar visitas presenciais com nossos parceiros locais. Basta indicar seu interesse no formulário ou pelo WhatsApp.</div>
+  </div>
+  <div class="faq-item" onclick="toggleFaq(this)">
+    <div class="faq-question">Os preços dos imóveis são fixos?</div>
+    <div class="faq-answer">Os preços são indicativos e podem variar conforme negociação. Todos os valores são convertidos automaticamente para real brasileiro (R$). Use o filtro de faixa de preço para buscar dentro do seu orçamento.</div>
+  </div>
+  <div class="faq-item" onclick="toggleFaq(this)">
+    <div class="faq-question">Vocês atendem corretores?</div>
+    <div class="faq-answer">Sim! Temos ferramentas profissionais para corretores parceiros. Selecione "Sou corretor(a)" no formulário de contato para saber mais sobre condições de parceria e exposição do seu portfólio.</div>
   </div>
 </section>
 
@@ -893,6 +1015,8 @@ function handleContact(e) {
   document.getElementById('contactForm').reset();
   setTimeout(() => { document.getElementById('formSuccess').style.display = 'none'; }, 5000);
 }
+
+function toggleFaq(el) { el.classList.toggle('open'); }
 
 renderListings(listings);
 </script>
