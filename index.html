@@ -162,13 +162,7 @@
       position: relative;
     }
 
-    .search-section h2 {
-      text-align: center;
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-      color: var(--dark);
-    }
-
+    .search-section h2 { text-align: center; font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--dark); }
     .search-subtitle { text-align: center; color: #666; margin-bottom: 2rem; font-size: 0.95rem; }
 
     .search-grid {
@@ -221,16 +215,10 @@
       transition: transform 0.2s, box-shadow 0.2s;
     }
 
-    .search-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(0,119,182,0.3);
-    }
+    .search-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,119,182,0.3); }
 
     /* RESULTS */
-    .results-section {
-      background: var(--white);
-      padding: 2rem;
-    }
+    .results-section { background: var(--white); padding: 2rem; }
 
     .results-header {
       display: flex;
@@ -243,12 +231,7 @@
 
     .results-count { font-size: 1.1rem; font-weight: 700; color: var(--dark); }
 
-    .results-topbar {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-    }
+    .results-topbar { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
 
     .compare-btn {
       padding: 0.5rem 1rem;
@@ -283,10 +266,7 @@
       position: relative;
     }
 
-    .listing-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 32px rgba(0,0,0,0.15);
-    }
+    .listing-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.15); }
 
     .listing-img {
       height: 160px;
@@ -337,30 +317,48 @@
     .listing-details { display: flex; gap: 1rem; font-size: 0.85rem; color: #666; margin-bottom: 0.75rem; }
     .listing-price { font-size: 1.3rem; font-weight: 800; color: var(--ocean); margin-bottom: 0.75rem; }
     .listing-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-    .tag {
-      background: var(--sand);
-      color: var(--dark);
-      padding: 0.2rem 0.6rem;
-      border-radius: 50px;
-      font-size: 0.75rem;
-      font-weight: 500;
-    }
+    .tag { background: var(--sand); color: var(--dark); padding: 0.2rem 0.6rem; border-radius: 50px; font-size: 0.75rem; font-weight: 500; }
 
-    .no-results {
-      text-align: center;
-      padding: 3rem;
-      color: #888;
-    }
-
+    .no-results { text-align: center; padding: 3rem; color: #888; }
     .no-results-icon { font-size: 4rem; margin-bottom: 1rem; }
 
-    /* HOW IT WORKS */
-    .how-it-works {
+    /* RECENTLY VIEWED */
+    .recent-section {
       background: var(--white);
-      padding: 3rem 2rem;
-      text-align: center;
+      padding: 2rem;
+      border-top: 2px solid #eee;
+      display: none;
     }
 
+    .recent-section.visible { display: block; }
+
+    .recent-section h3 { font-size: 1.1rem; margin-bottom: 1rem; color: var(--dark); }
+
+    .recent-grid {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      padding-bottom: 0.5rem;
+    }
+
+    .recent-card {
+      min-width: 200px;
+      background: var(--sand);
+      border-radius: 12px;
+      padding: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s;
+      border: 2px solid transparent;
+    }
+
+    .recent-card:hover { transform: scale(1.03); border-color: var(--ocean-light); }
+
+    .recent-card-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+    .recent-card-title { font-weight: 700; font-size: 0.9rem; color: var(--dark); }
+    .recent-card-price { font-size: 0.9rem; color: var(--ocean); font-weight: 700; }
+
+    /* HOW IT WORKS */
+    .how-it-works { background: var(--white); padding: 3rem 2rem; text-align: center; }
     .how-it-works h2 { font-size: 1.75rem; margin-bottom: 2rem; color: var(--dark); }
 
     .steps-grid {
@@ -390,63 +388,8 @@
     .step h3 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--dark); }
     .step p { font-size: 0.9rem; color: #666; line-height: 1.6; }
 
-    /* CITIES */
-    .cities-section {
-      background: var(--sand);
-      padding: 3rem 2rem;
-    }
-
-    .cities-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
-    .cities-section > p { text-align: center; color: #666; margin-bottom: 2rem; }
-
-    .cities-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 1.5rem;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .city-card {
-      background: var(--white);
-      border-radius: 16px;
-      overflow: hidden;
-      text-decoration: none;
-      color: var(--dark);
-      transition: transform 0.2s, box-shadow 0.2s;
-      display: flex;
-    }
-
-    .city-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
-
-    .city-card-img {
-      width: 70px;
-      min-width: 70px;
-      background: linear-gradient(135deg, var(--ocean-light), var(--accent));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2.5rem;
-    }
-
-    .city-card-body { padding: 1.25rem; flex: 1; }
-    .city-card-body h3 { font-size: 1.1rem; margin-bottom: 0.35rem; }
-    .city-card-body p { font-size: 0.85rem; color: #666; margin-bottom: 0.75rem; line-height: 1.5; }
-
-    .city-card-stats {
-      display: flex;
-      gap: 1rem;
-      font-size: 0.8rem;
-      color: var(--ocean);
-      font-weight: 600;
-    }
-
     /* FINANCING SIMULATOR */
-    .simulator-section {
-      background: var(--white);
-      padding: 3rem 2rem;
-    }
-
+    .simulator-section { background: var(--white); padding: 3rem 2rem; }
     .simulator-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
     .simulator-section > p { text-align: center; color: #666; margin-bottom: 2rem; }
 
@@ -477,7 +420,6 @@
       font-size: 1rem;
       background: rgba(255,255,255,0.15);
       color: var(--white);
-      backdrop-filter: blur(4px);
     }
 
     .sim-field input::placeholder { color: rgba(255,255,255,0.6); }
@@ -515,20 +457,49 @@
       text-align: center;
     }
 
-    .sim-result-item {}
-
     .sim-result-value { font-size: 1.5rem; font-weight: 800; color: var(--white); }
     .sim-result-label { font-size: 0.8rem; opacity: 0.8; margin-top: 0.25rem; }
 
-    /* COMPARE */
-    .compare-section {
-      background: var(--sand);
-      padding: 3rem 2rem;
-      display: none;
+    .sim-table-toggle {
+      display: block;
+      margin: 1rem auto 0;
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.4);
+      color: var(--white);
+      padding: 0.5rem 1.25rem;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: all 0.2s;
     }
 
-    .compare-section.visible { display: block; }
+    .sim-table-toggle:hover { background: rgba(255,255,255,0.15); }
 
+    .amort-table {
+      margin-top: 1rem;
+      display: none;
+      max-height: 300px;
+      overflow-y: auto;
+      border-radius: 12px;
+      background: rgba(0,0,0,0.1);
+    }
+
+    .amort-table.visible { display: block; }
+
+    .amort-table table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8rem;
+    }
+
+    .amort-table th { background: rgba(255,255,255,0.2); padding: 0.6rem 0.5rem; text-align: center; font-weight: 700; }
+    .amort-table td { padding: 0.5rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); }
+    .amort-table tr:nth-child(even) td { background: rgba(255,255,255,0.05); }
+
+    /* COMPARE */
+    .compare-section { background: var(--sand); padding: 3rem 2rem; display: none; }
+    .compare-section.visible { display: block; }
     .compare-section h2 { text-align: center; font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--dark); }
     .compare-section > p { text-align: center; color: #666; margin-bottom: 1.5rem; font-size: 0.9rem; }
 
@@ -543,35 +514,10 @@
       overflow: hidden;
     }
 
-    .compare-table th {
-      background: var(--ocean);
-      color: var(--white);
-      padding: 1rem;
-      text-align: center;
-      font-weight: 700;
-    }
-
-    .compare-table td {
-      padding: 0.85rem 1rem;
-      border-bottom: 1px solid #eee;
-      text-align: center;
-      vertical-align: middle;
-    }
-
+    .compare-table th { background: var(--ocean); color: var(--white); padding: 1rem; text-align: center; font-weight: 700; }
+    .compare-table td { padding: 0.85rem 1rem; border-bottom: 1px solid #eee; text-align: center; vertical-align: middle; }
     .compare-table tr:last-child td { border-bottom: none; }
-
-    .compare-table .compare-prop-title { font-weight: 700; color: var(--dark); }
-
-    .compare-remove {
-      background: var(--error);
-      color: var(--white);
-      border: none;
-      border-radius: 50%;
-      width: 28px;
-      height: 28px;
-      cursor: pointer;
-      font-size: 0.8rem;
-    }
+    .compare-remove { background: var(--error); color: var(--white); border: none; border-radius: 50%; width: 28px; height: 28px; cursor: pointer; font-size: 0.8rem; }
 
     .compare-clear {
       display: block;
@@ -588,12 +534,106 @@
 
     .compare-clear:hover { background: var(--error); color: var(--white); }
 
-    /* FAQ */
-    .faq-section {
+    /* CITIES */
+    .cities-section { background: var(--sand); padding: 3rem 2rem; }
+    .cities-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
+    .cities-section > p { text-align: center; color: #666; margin-bottom: 2rem; }
+
+    .cities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .city-card {
       background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+      text-decoration: none;
+      color: var(--dark);
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+    }
+
+    .city-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+
+    .city-card-img { width: 70px; min-width: 70px; background: linear-gradient(135deg, var(--ocean-light), var(--accent)); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; }
+
+    .city-card-body { padding: 1.25rem; flex: 1; }
+    .city-card-body h3 { font-size: 1.1rem; margin-bottom: 0.35rem; }
+    .city-card-body p { font-size: 0.85rem; color: #666; margin-bottom: 0.75rem; line-height: 1.5; }
+
+    .city-card-stats { display: flex; gap: 1rem; font-size: 0.8rem; color: var(--ocean); font-weight: 600; }
+
+    /* FOR REALTORS */
+    .realtors-section {
+      background: linear-gradient(135deg, var(--dark) 0%, #012a45 100%);
+      color: var(--white);
       padding: 3rem 2rem;
     }
 
+    .realtors-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; }
+    .realtors-section > p { text-align: center; opacity: 0.8; margin-bottom: 2.5rem; }
+
+    .realtors-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .realtor-card {
+      background: rgba(255,255,255,0.08);
+      border: 2px solid rgba(255,255,255,0.15);
+      border-radius: 16px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .realtor-card:hover { border-color: var(--ocean-light); transform: translateY(-3px); }
+
+    .realtor-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+    .realtor-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+    .realtor-card p { font-size: 0.85rem; opacity: 0.75; line-height: 1.6; }
+
+    .realtors-cta {
+      text-align: center;
+      margin-top: 2.5rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-realtor-whatsapp { background: #25D366; color: var(--white); padding: 0.85rem 2rem; border-radius: 50px; font-weight: 700; text-decoration: none; transition: transform 0.2s; display: inline-block; }
+    .btn-realtor-whatsapp:hover { transform: scale(1.05); }
+    .btn-realtor-email { background: transparent; color: var(--white); padding: 0.85rem 2rem; border-radius: 50px; font-weight: 700; text-decoration: none; border: 2px solid rgba(255,255,255,0.4); transition: all 0.2s; display: inline-block; }
+    .btn-realtor-email:hover { background: rgba(255,255,255,0.1); }
+
+    /* TESTIMONIALS */
+    .testimonials-section { background: var(--white); padding: 3rem 2rem; }
+    .testimonials-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 2rem; color: var(--dark); }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .testimonial-card { background: var(--sand); border-radius: 16px; padding: 1.75rem; }
+    .testimonial-quote { font-size: 2rem; color: var(--ocean-light); margin-bottom: 0.75rem; }
+    .testimonial-text { font-style: italic; color: #555; line-height: 1.7; margin-bottom: 1rem; }
+    .testimonial-author { font-weight: 700; color: var(--dark); }
+    .testimonial-role { font-size: 0.85rem; color: var(--ocean); }
+
+    /* FAQ */
+    .faq-section { background: var(--white); padding: 3rem 2rem; }
     .faq-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 2rem; color: var(--dark); }
 
     .faq-item {
@@ -607,7 +647,6 @@
     }
 
     .faq-item:hover { border-color: var(--ocean-light); }
-
     .faq-item.open { border-color: var(--ocean); }
 
     .faq-question {
@@ -633,17 +672,10 @@
       line-height: 1.7;
     }
 
-    .faq-item.open .faq-answer {
-      max-height: 200px;
-      padding: 0 1.25rem 1rem;
-    }
+    .faq-item.open .faq-answer { max-height: 200px; padding: 0 1.25rem 1rem; }
 
     /* FEATURES */
-    .features {
-      background: var(--sand);
-      padding: 3rem 2rem;
-    }
-
+    .features { background: var(--sand); padding: 3rem 2rem; }
     .features h2 { text-align: center; font-size: 1.75rem; margin-bottom: 2rem; color: var(--dark); }
 
     .features-grid {
@@ -654,39 +686,18 @@
       margin: 0 auto;
     }
 
-    .feature-card {
-      background: var(--white);
-      border-radius: 16px;
-      padding: 2rem 1.5rem;
-      text-align: center;
-      transition: transform 0.2s;
-    }
-
+    .feature-card { background: var(--white); border-radius: 16px; padding: 2rem 1.5rem; text-align: center; transition: transform 0.2s; }
     .feature-card:hover { transform: translateY(-4px); }
-
     .feature-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
     .feature-card h3 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--dark); }
     .feature-card p { font-size: 0.85rem; color: #666; line-height: 1.6; }
 
     /* NEWSLETTER */
-    .newsletter-section {
-      background: var(--dark);
-      color: var(--white);
-      padding: 3rem 2rem;
-      text-align: center;
-    }
-
+    .newsletter-section { background: var(--dark); color: var(--white); padding: 3rem 2rem; text-align: center; }
     .newsletter-section h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
     .newsletter-section p { opacity: 0.8; margin-bottom: 1.5rem; font-size: 0.95rem; }
 
-    .newsletter-form {
-      display: flex;
-      gap: 0.75rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      max-width: 500px;
-      margin: 0 auto;
-    }
+    .newsletter-form { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; max-width: 500px; margin: 0 auto; }
 
     .newsletter-form input {
       flex: 1;
@@ -726,61 +737,13 @@
 
     .newsletter-success.visible { display: block; }
 
-    /* TESTIMONIALS */
-    .testimonials-section {
-      background: var(--white);
-      padding: 3rem 2rem;
-    }
-
-    .testimonials-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 2rem; color: var(--dark); }
-
-    .testimonials-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .testimonial-card {
-      background: var(--sand);
-      border-radius: 16px;
-      padding: 1.75rem;
-    }
-
-    .testimonial-quote {
-      font-size: 2rem;
-      color: var(--ocean-light);
-      margin-bottom: 0.75rem;
-    }
-
-    .testimonial-text {
-      font-style: italic;
-      color: #555;
-      line-height: 1.7;
-      margin-bottom: 1rem;
-    }
-
-    .testimonial-author { font-weight: 700; color: var(--dark); }
-    .testimonial-role { font-size: 0.85rem; color: var(--ocean); }
-
     /* CONTACT */
-    .contact-section {
-      background: var(--sand);
-      padding: 3rem 2rem;
-    }
-
+    .contact-section { background: var(--sand); padding: 3rem 2rem; }
     .contact-inner { max-width: 600px; margin: 0 auto; text-align: center; }
     .contact-section h2 { font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
     .contact-section > .contact-inner > p { color: #666; margin-bottom: 2rem; }
 
-    .contact-cta-buttons {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-bottom: 2rem;
-    }
+    .contact-cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem; }
 
     .contact-cta-btn {
       padding: 0.85rem 1.5rem;
@@ -799,13 +762,7 @@
 
     .form-group { margin-bottom: 1.25rem; }
 
-    .form-group label {
-      display: block;
-      font-size: 0.9rem;
-      font-weight: 600;
-      margin-bottom: 0.4rem;
-      color: var(--dark);
-    }
+    .form-group label { display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.4rem; color: var(--dark); }
 
     .form-group input,
     .form-group select,
@@ -823,10 +780,7 @@
 
     .form-group input:focus,
     .form-group select:focus,
-    .form-group textarea:focus {
-      outline: none;
-      border-color: var(--ocean-light);
-    }
+    .form-group textarea:focus { outline: none; border-color: var(--ocean-light); }
 
     .form-group textarea { resize: vertical; min-height: 120px; }
 
@@ -842,22 +796,10 @@
     }
 
     /* FOOTER */
-    footer {
-      background: var(--dark);
-      color: var(--white);
-      text-align: center;
-      padding: 2rem;
-    }
-
+    footer { background: var(--dark); color: var(--white); text-align: center; padding: 2rem; }
     footer a:hover { text-decoration: underline; }
 
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      margin-bottom: 1rem;
-      flex-wrap: wrap;
-    }
+    .footer-links { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
 
     /* MODAL */
     .modal-overlay {
@@ -902,7 +844,7 @@
 
     .modal-img {
       width: 100%;
-      height: 300px;
+      height: 280px;
       background: linear-gradient(135deg, var(--ocean-light), var(--accent));
       display: flex;
       align-items: center;
@@ -928,7 +870,7 @@
 
     .modal-description { color: #555; margin-bottom: 1.5rem; line-height: 1.7; }
 
-    .modal-cta { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; }
+    .modal-cta { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
 
     .modal-compare-btn {
       display: none;
@@ -949,11 +891,9 @@
     .modal-compare-btn.visible { display: block; }
     .modal-compare-btn:hover { background: var(--ocean); color: var(--white); }
 
-    .modal-share {
-      display: flex;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-    }
+    .modal-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1rem; }
+
+    .modal-share { display: flex; gap: 0.75rem; flex-wrap: wrap; }
 
     .share-btn {
       padding: 0.5rem 1rem;
@@ -965,6 +905,8 @@
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
+      border: none;
+      cursor: pointer;
     }
 
     .share-btn:hover { transform: scale(1.05); }
@@ -1002,6 +944,7 @@
       .results-grid { grid-template-columns: 1fr; }
       .simulator-grid { grid-template-columns: 1fr; }
       .newsletter-form { flex-direction: column; }
+      .modal-body { padding: 1.25rem; }
     }
   </style>
 </head>
@@ -1020,7 +963,7 @@
   <nav>
     <a href="#buscar">Buscar</a>
     <a href="#simulador">Simulador</a>
-    <a href="#recursos">Recursos</a>
+    <a href="#corretores">Para Corretores</a>
     <a href="#contato">Contato</a>
   </nav>
 </header>
@@ -1116,12 +1059,18 @@
   <div class="results-grid" id="resultsGrid"></div>
 </section>
 
-<!-- COMPARE SECTION -->
+<!-- RECENTLY VIEWED -->
+<section class="recent-section" id="recentSection">
+  <h3>🕐 Vistos recentemente</h3>
+  <div class="recent-grid" id="recentGrid"></div>
+</section>
+
+<!-- COMPARE -->
 <section class="compare-section" id="compareSection">
   <h2>⚖️ Comparar imóveis</h2>
   <p>Até 3 imóveis lado a lado — analise preço, área e características.</p>
   <div class="compare-table-wrap">
-    <table class="compare-table" id="compareTable">
+    <table class="compare-table">
       <thead id="compareHead"></thead>
       <tbody id="compareBody"></tbody>
     </table>
@@ -1158,7 +1107,7 @@
 <!-- FINANCING SIMULATOR -->
 <section class="simulator-section" id="simulador">
   <h2>🏦 Simulador de Financiamento</h2>
-  <p>Calcule sua parcela mensal e veja o custo total do financiamento.</p>
+  <p>Calcule sua parcela mensal, total de juros e veja a evolução do saldo devedor.</p>
   <div class="simulator-card">
     <div class="simulator-grid">
       <div class="sim-field">
@@ -1175,7 +1124,7 @@
           <option value="9">9% a.a. (FGTS/Caixa)</option>
           <option value="10">10% a.a. (BB/Santander)</option>
           <option value="11">11% a.a. (Itaú/Bradesco)</option>
-          <option value="12">12% a.a. (Padrão mercado)</option>
+          <option value="12" selected>12% a.a. (Padrão mercado)</option>
         </select>
       </div>
       <div class="sim-field">
@@ -1183,7 +1132,7 @@
         <select id="simAnos">
           <option value="10">10 anos</option>
           <option value="15">15 anos</option>
-          <option value="20" selected>20 anos</option>
+          <option value="20">20 anos</option>
           <option value="25">25 anos</option>
           <option value="30">30 anos</option>
         </select>
@@ -1191,8 +1140,82 @@
     </div>
     <button class="sim-btn" onclick="calcSimulator()">Calcular parcelas</button>
     <div class="sim-result" id="simResult">
-      <div class="sim-result-grid" id="simResultGrid"></div>
+      <div class="sim-result-grid">
+        <div class="sim-result-item">
+          <div class="sim-result-value" id="simParcela">—</div>
+          <div class="sim-result-label">Parcela mensal</div>
+        </div>
+        <div class="sim-result-item">
+          <div class="sim-result-value" id="simFinanciado">—</div>
+          <div class="sim-result-label">Valor financiado</div>
+        </div>
+        <div class="sim-result-item">
+          <div class="sim-result-value" id="simJuros">—</div>
+          <div class="sim-result-label">Total de juros</div>
+        </div>
+        <div class="sim-result-item">
+          <div class="sim-result-value" id="simTotal">—</div>
+          <div class="sim-result-label">Total a pagar</div>
+        </div>
+      </div>
+      <button class="sim-table-toggle" id="simTableToggle" onclick="toggleAmort()">📊 Ver tabela de amortização</button>
+      <div class="amort-table" id="amortTable">
+        <table>
+          <thead>
+            <tr>
+              <th>Mês</th>
+              <th>Parcela</th>
+              <th>Juros</th>
+              <th>Amortização</th>
+              <th>Saldo</th>
+            </tr>
+          </thead>
+          <tbody id="amortBody"></tbody>
+        </table>
+      </div>
     </div>
+  </div>
+</section>
+
+<!-- FOR REALTORS -->
+<section class="realtors-section" id="corretores">
+  <h2>🏠 Para Imobiliárias e Corretores</h2>
+  <p>Divulgue seus imóveis no maior portal especializado do litoral sul brasileiro.</p>
+  <div class="realtors-grid">
+    <div class="realtor-card">
+      <div class="realtor-icon">📊</div>
+      <h3>Portfólio Digital</h3>
+      <p>Publique todos os seus imóveis em um catálogo profissional com fotos, vídeos e tours virtuais 360°.</p>
+    </div>
+    <div class="realtor-card">
+      <div class="realtor-icon">🎯</div>
+      <h3>Leads Qualificados</h3>
+      <p>Receba contatos de compradores interessados no seu imóvel — sem concorrência com imóveis urbanos.</p>
+    </div>
+    <div class="realtor-card">
+      <div class="realtor-icon">⚡</div>
+      <h3>Atualização Instantânea</h3>
+      <p>Altere preços, disponibilidade e características em tempo real — sem custo de publicação.</p>
+    </div>
+    <div class="realtor-card">
+      <div class="realtor-icon">🌐</div>
+      <h3>Presença Online</h3>
+      <p>Sua carteira de imóveis aparece no Google com OG images, sitemap e SEO otimizado para o litoral.</p>
+    </div>
+    <div class="realtor-card">
+      <div class="realtor-icon">📱</div>
+      <h3>App Mobile</h3>
+      <p>Seus clientes buscam imóveis pelo celular — o site é 100% responsivo e rápido em qualquer dispositivo.</p>
+    </div>
+    <div class="realtor-card">
+      <div class="realtor-icon">🤝</div>
+      <h3>Parceria Direta</h3>
+      <p>Atendimento humanizado com equipe local. Fale direto com um especialista que conhece o mercado.</p>
+    </div>
+  </div>
+  <div class="realtors-cta">
+    <a href="https://wa.me/5513999999999?text=Olá! Sou corretor(a) e gostaria de anunciar meus imóveis na Praia Digital." target="_blank" class="btn-realtor-whatsapp">💬 Quero anunciar</a>
+    <a href="mailto:contato@praiadigital.com.br?subject=Proposta de parceria - Corretor" class="btn-realtor-email">✉️ Proposta por e-mail</a>
   </div>
 </section>
 
@@ -1225,7 +1248,7 @@
   <h2>Explore as cidades do litoral</h2>
   <p>Cada cidade tem seu encanto — conheça as opções disponíveis.</p>
   <div class="cities-grid">
-    <a class="city-card" href="#buscar" onclick="document.getElementById('cidade').value='praia-grande';filterListings();return false;">
+    <a class="city-card" href="#buscar" onclick="setCity('praia-grande');return false;">
       <div class="city-card-img">🏖️</div>
       <div class="city-card-body">
         <h3>Praia Grande</h3>
@@ -1233,7 +1256,7 @@
         <div class="city-card-stats"><span>🏠 2 imóveis</span><span>📍 Boqueirão, Caiçara</span></div>
       </div>
     </a>
-    <a class="city-card" href="#buscar" onclick="document.getElementById('cidade').value='santos';filterListings();return false;">
+    <a class="city-card" href="#buscar" onclick="setCity('santos');return false;">
       <div class="city-card-img">🏛️</div>
       <div class="city-card-body">
         <h3>Santos</h3>
@@ -1241,7 +1264,7 @@
         <div class="city-card-stats"><span>🏠 1 imóvel</span><span>📍 Pompéia</span></div>
       </div>
     </a>
-    <a class="city-card" href="#buscar" onclick="document.getElementById('cidade').value='guaruja';filterListings();return false;">
+    <a class="city-card" href="#buscar" onclick="setCity('guaruja');return false;">
       <div class="city-card-img">⛰️</div>
       <div class="city-card-body">
         <h3>Guarujá</h3>
@@ -1249,7 +1272,7 @@
         <div class="city-card-stats"><span>🏠 1 imóvel</span><span>📍 Pitangueiras</span></div>
       </div>
     </a>
-    <a class="city-card" href="#buscar" onclick="document.getElementById('cidade').value='sao-vicente';filterListings();return false;">
+    <a class="city-card" href="#buscar" onclick="setCity('sao-vicente');return false;">
       <div class="city-card-img">🌳</div>
       <div class="city-card-body">
         <h3>São Vicente</h3>
@@ -1257,7 +1280,7 @@
         <div class="city-card-stats"><span>🏠 2 imóveis</span><span>📍 Centro, Pompetegração</span></div>
       </div>
     </a>
-    <a class="city-card" href="#buscar" onclick="document.getElementById('cidade').value='itanhaem';filterListings();return false;">
+    <a class="city-card" href="#buscar" onclick="setCity('itanhaem');return false;">
       <div class="city-card-img">🌺</div>
       <div class="city-card-body">
         <h3>Itanhaém</h3>
@@ -1265,7 +1288,7 @@
         <div class="city-card-stats"><span>🏠 2 imóveis</span><span>📍 Centro</span></div>
       </div>
     </a>
-    <a class="city-card" href="#buscar" onclick="document.getElementById('cidade').value='mongagua';filterListings();return false;">
+    <a class="city-card" href="#buscar" onclick="setCity('mongagua');return false;">
       <div class="city-card-img">🌊</div>
       <div class="city-card-body">
         <h3>Mongaguá</h3>
@@ -1273,7 +1296,7 @@
         <div class="city-card-stats"><span>🏠 2 imóveis</span><span>📍 Flórida, Itaquarena</span></div>
       </div>
     </a>
-    <a class="city-card" href="#buscar" onclick="document.getElementById('cidade').value='peruibe';filterListings();return false;">
+    <a class="city-card" href="#buscar" onclick="setCity('peruibe');return false;">
       <div class="city-card-img">🦎</div>
       <div class="city-card-body">
         <h3>Peruíbe</h3>
@@ -1307,8 +1330,8 @@
     <div class="faq-answer">Sim! Clique no ícone ⚖️ em até 3 cards para adicioná-los à comparação. Você verá todos lado a lado com preço, área, dormitórios e tipo para facilitar sua decisão.</div>
   </div>
   <div class="faq-item" onclick="toggleFaq(this)">
-    <div class="faq-question">Vocês atendem corretores?</div>
-    <div class="faq-answer">Sim! Temos ferramentas profissionais para corretores parceiros. Selecione "Sou corretor(a)" no formulário de contato para saber mais sobre condições de parceria.</div>
+    <div class="faq-question">Sou corretor — como funciona a parceria?</div>
+    <div class="faq-answer">Entre em contato pelo WhatsApp ou e-mail com o assunto "Proposta de parceria". Oferecemos ferramentas profissionais para gestão de portfólio e exposição dos seus imóveis no nosso portal especializado.</div>
   </div>
 </section>
 
@@ -1399,6 +1422,7 @@
   <div class="footer-links">
     <a href="#buscar">Buscar imóveis</a>
     <a href="#simulador">Simulador</a>
+    <a href="#corretores">Para Corretores</a>
     <a href="#recursos">Recursos</a>
     <a href="#contato">Contato</a>
     <a href="https://github.com/acarolmourad-commits/praia-digital" target="_blank">GitHub</a>
@@ -1418,14 +1442,15 @@
       <div class="modal-details" id="modalDetails"></div>
       <div class="modal-description" id="modalDescription"></div>
       <button class="modal-compare-btn" id="modalCompareBtn" onclick="toggleModalCompare()">⚖️ Adicionar à comparação</button>
-      <div class="modal-cta">
+      <div class="modal-actions">
         <a href="#contato" class="btn btn-ocean" onclick="closeModal()">Quero visitar</a>
         <a href="#contato" class="btn btn-outline" style="border:2px solid var(--ocean);color:var(--ocean);" onclick="closeModal()">Mais informações</a>
       </div>
       <div class="modal-share">
         <a class="share-btn share-whatsapp" id="shareWhatsapp" target="_blank">💬 WhatsApp</a>
         <a class="share-btn share-twitter" id="shareTwitter" target="_blank">🐦 Twitter</a>
-        <button class="share-btn share-copy" onclick="copyLink()">📋 Copiar link</button>
+        <button class="share-btn share-copy" id="shareCopyBtn" onclick="copyLink()">📋 Copiar link</button>
+        <button class="share-btn share-copy" onclick="printListing()" style="background:#e0e0e0;color:var(--dark);">🖨️ Imprimir</button>
       </div>
     </div>
   </div>
@@ -1464,7 +1489,7 @@ function toggleCompare(id) {
   }
   localStorage.setItem('pd_compare', JSON.stringify(compareList));
   updateCompareBtn();
-  renderListings(getFiltered());
+  renderListings(currentFilter);
 }
 
 function updateCompareBtn() {
@@ -1481,7 +1506,9 @@ function showCompare() {
   section.classList.add('visible');
 
   const head = document.getElementById('compareHead');
-  head.innerHTML = '<tr><th>Característica</th>' + props.map(p => '<th>' + p.icon + '<br>' + p.titulo + '<br><button class="compare-remove" onclick="removeCompare(' + p.id + ')">✕</button></th>').join('') + '</tr>';
+  head.innerHTML = '<tr><th>Característica</th>' + props.map(p =>
+    '<th>' + p.icon + '<br>' + p.titulo + '<br><button class="compare-remove" onclick="event.stopPropagation();removeCompare(' + p.id + ')">✕</button></th>'
+  ).join('') + '</tr>';
 
   const rows = [
     ['📍 Cidade', p => p.cidadeLabel],
@@ -1494,7 +1521,10 @@ function showCompare() {
   ];
 
   const body = document.getElementById('compareBody');
-  body.innerHTML = rows.map(([label, fn]) => '<tr><td style="font-weight:700;background:#f8f8f8;">' + label + '</td>' + props.map(p => '<td>' + fn(p) + '</td>').join('') + '</tr>').join('');
+  body.innerHTML = rows.map(([label, fn]) =>
+    '<tr><td style="font-weight:700;background:#f8f8f8;">' + label + '</td>' +
+    props.map(p => '<td>' + fn(p) + '</td>').join('') + '</tr>'
+  ).join('');
 
   section.scrollIntoView({behavior: 'smooth'});
 }
@@ -1505,7 +1535,7 @@ function removeCompare(id) {
   updateCompareBtn();
   if (compareList.length < 2) { document.getElementById('compareSection').classList.remove('visible'); }
   else showCompare();
-  renderListings(getFiltered());
+  renderListings(currentFilter);
 }
 
 function clearCompare() {
@@ -1513,7 +1543,7 @@ function clearCompare() {
   localStorage.setItem('pd_compare', '[]');
   updateCompareBtn();
   document.getElementById('compareSection').classList.remove('visible');
-  renderListings(getFiltered());
+  renderListings(currentFilter);
 }
 
 // Favorites
@@ -1524,17 +1554,48 @@ function toggleFav(id, e) {
   if (idx > -1) favs.splice(idx, 1);
   else favs.push(id);
   localStorage.setItem('pd_favs', JSON.stringify(favs));
-  renderListings(getFiltered());
+  renderListings(currentFilter);
 }
 
 function isFav(id) {
   return JSON.parse(localStorage.getItem('pd_favs') || '[]').includes(id);
 }
 
+// Recently Viewed
+function addToRecent(id) {
+  let rec = JSON.parse(sessionStorage.getItem('pd_recent') || '[]');
+  rec = rec.filter(x => x !== id);
+  rec.unshift(id);
+  rec = rec.slice(0, 6);
+  sessionStorage.setItem('pd_recent', JSON.stringify(rec));
+  updateRecent();
+}
+
+function updateRecent() {
+  const rec = JSON.parse(sessionStorage.getItem('pd_recent') || '[]');
+  const section = document.getElementById('recentSection');
+  const grid = document.getElementById('recentGrid');
+  if (!rec.length) { section.classList.remove('visible'); return; }
+  section.classList.add('visible');
+  grid.innerHTML = rec.map(id => {
+    const l = listings.find(x => x.id === id);
+    if (!l) return '';
+    return '<div class="recent-card" onclick="openModal(' + l.id + ')">' +
+      '<div class="recent-card-icon">' + l.icon + '</div>' +
+      '<div class="recent-card-title">' + l.titulo + '</div>' +
+      '<div class="recent-card-price">' + formatPrice(l.preco) + '</div></div>';
+  }).join('');
+}
+
+function setCity(cidade) {
+  document.getElementById('cidade').value = cidade;
+  filterListings();
+}
+
+// Render
 function renderListings(items) {
   const grid = document.getElementById('resultsGrid');
   const count = document.getElementById('resultsCount');
-  const favs = JSON.parse(localStorage.getItem('pd_favs') || '[]');
 
   if (!items.length) {
     grid.innerHTML = '<div class="no-results"><div class="no-results-icon">😕</div><p>Nenhum imóvel encontrado com esses filtros. Tente outras combinações.</p></div>';
@@ -1545,8 +1606,7 @@ function renderListings(items) {
   grid.innerHTML = items.map(l => {
     const inCompare = compareList.includes(l.id);
     return '<div class="listing-card" onclick="openModal(' + l.id + ')">' +
-      '<div class="listing-img">' + l.icon + (l.badge ? '<span class="listing-badge">' + l.badge + '</span>' : '') +
-      '</div>' +
+      '<div class="listing-img">' + l.icon + (l.badge ? '<span class="listing-badge">' + l.badge + '</span>' : '') + '</div>' +
       '<button class="favorite-btn ' + (isFav(l.id) ? 'active' : '') + '" onclick="toggleFav(' + l.id + ', event)" title="' + (isFav(l.id) ? 'Remover dos favoritos' : 'Favoritar') + '">' + (isFav(l.id) ? '❤️' : '🤍') + '</button>' +
       '<div class="listing-body">' +
       '<div class="listing-location">📍 ' + l.cidadeLabel + '</div>' +
@@ -1554,15 +1614,15 @@ function renderListings(items) {
       '<div class="listing-details">' + (l.dormitorios > 0 ? '<span>🛏️ ' + l.dormitorios + ' quarto' + (l.dormitorios > 1 ? 's' : '') + '</span>' : '') + '<span>📐 ' + l.area + 'm²</span></div>' +
       '<div class="listing-price">' + formatPrice(l.preco) + '</div>' +
       '<div class="listing-tags">' + l.tags.map(t => '<span class="tag">' + t + '</span>').join('') + '</div>' +
-      '</div>' +
-      '</div>';
+      '</div></div>';
   }).join('');
 }
 
+// Sort
 function sortListings() {
   const sort = document.getElementById('sortSelect').value;
   if (!sort) { filterListings(); return; }
-  const sorted = [...getFiltered()].sort((a, b) => {
+  const sorted = [...currentFilter].sort((a, b) => {
     if (sort === 'preco-asc') return a.preco - b.preco;
     if (sort === 'preco-desc') return b.preco - a.preco;
     if (sort === 'area-asc') return a.area - b.area;
@@ -1571,11 +1631,8 @@ function sortListings() {
   renderListings(sorted);
 }
 
+// Filter
 let currentFilter = listings;
-
-function getFiltered() {
-  return currentFilter;
-}
 
 function filterListings() {
   const tipo = document.getElementById('tipo').value;
@@ -1602,10 +1659,13 @@ function filterListings() {
   renderListings(currentFilter);
 }
 
+// Modal
 let currentModalId = null;
 
 function openModal(id) {
   currentModalId = id;
+  addToRecent(id);
+  location.hash = '#imovel-' + id;
   const l = listings.find(x => x.id === id);
   if (!l) return;
   document.getElementById('modalImg').textContent = l.icon;
@@ -1624,8 +1684,8 @@ function openModal(id) {
   btn.classList.toggle('visible', compareList.length < 3 || inCompare);
 
   const shareText = encodeURIComponent('🏖️ ' + l.titulo + ' — ' + formatPrice(l.preco) + ' em ' + l.cidadeLabel + '\n\nVeja mais em Praia Digital!');
-  document.getElementById('shareWhatsapp').href = 'https://wa.me/?text=' + shareText;
-  document.getElementById('shareTwitter').href = 'https://twitter.com/intent/tweet?text=' + shareText + '&url=' + encodeURIComponent('https://acarolmourad-commits.github.io/praia-digital/');
+  document.getElementById('shareWhatsapp').href = 'https://wa.me/?text=' + shareText + '%0A' + encodeURIComponent(location.href);
+  document.getElementById('shareTwitter').href = 'https://twitter.com/intent/tweet?text=' + shareText + '&url=' + encodeURIComponent(location.href);
 
   document.getElementById('modalOverlay').classList.add('active');
   document.body.style.overflow = 'hidden';
@@ -1635,6 +1695,7 @@ function closeModal() {
   document.getElementById('modalOverlay').classList.remove('active');
   document.body.style.overflow = '';
   currentModalId = null;
+  history.pushState(null, '', location.pathname);
 }
 
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
@@ -1650,14 +1711,41 @@ function toggleModalCompare() {
 }
 
 function copyLink() {
-  navigator.clipboard.writeText('https://acarolmourad-commits.github.io/praia-digital/').then(() => {
-    const btns = document.querySelectorAll('.share-copy');
-    btns[btns.length - 1].textContent = '✅ Copiado!';
-    setTimeout(() => { btns[btns.length - 1].textContent = '📋 Copiar link'; }, 2000);
+  const link = location.href;
+  navigator.clipboard.writeText(link).then(() => {
+    const btn = document.getElementById('shareCopyBtn');
+    btn.textContent = '✅ Copiado!';
+    setTimeout(() => { btn.textContent = '📋 Copiar link'; }, 2000);
+  }).catch(() => {
+    const btn = document.getElementById('shareCopyBtn');
+    btn.textContent = 'Erro!';
+    setTimeout(() => { btn.textContent = '📋 Copiar link'; }, 2000);
   });
 }
 
+function printListing() {
+  if (!currentModalId) return;
+  const l = listings.find(x => x.id === currentModalId);
+  if (!l) return;
+  const printWin = window.open('', '_blank');
+  printWin.document.write('<html><head><title>' + l.titulo + ' - Praia Digital</title>');
+  printWin.document.write('<style>body{font-family:Segoe UI,sans-serif;padding:2rem;max-width:700px;margin:0 auto;}h1{color:#0077B6;}h2{color:#023047;}.price{font-size:1.5rem;color:#0077B6;font-weight:700;}.details{display:flex;gap:1rem;margin:1rem 0;}.tag{background:#F4EBD0;padding:0.25rem 0.75rem;border-radius:50px;font-size:0.85rem;margin-right:0.5rem;}.desc{margin:1.5rem 0;line-height:1.7;color:#555;}.contact{background:#0077B6;color:white;padding:1rem;border-radius:12px;margin-top:2rem;}</style>');
+  printWin.document.write('</head><body>');
+  printWin.document.write('<h1>' + l.icon + ' ' + l.titulo + '</h1>');
+  printWin.document.write('<p>📍 ' + l.cidadeLabel + '</p>');
+  printWin.document.write('<p class="price">' + formatPrice(l.preco) + '</p>');
+  printWin.document.write('<div class="details"><span>📐 ' + l.area + 'm²</span>' + (l.dormitorios > 0 ? '<span>🛏️ ' + l.dormitorios + ' dorms</span>' : '') + '<span>🏷️ ' + l.tipo + '</span></div>');
+  printWin.document.write('<div class="tags">' + l.tags.map(t => '<span class="tag">' + t + '</span>').join('') + '</div>');
+  printWin.document.write('<p class="desc">' + l.descricao + '</p>');
+  printWin.document.write('<div class="contact"><strong>Contato:</strong> (13) 99999-9999 | contato@praiadigital.com.br | www.praiadigital.com.br</div>');
+  printWin.document.write('</body></html>');
+  printWin.document.close();
+  printWin.print();
+}
+
 // Financing simulator
+let lastSimParams = null;
+
 function calcSimulator() {
   const valor = parseFloat(document.getElementById('simValor').value);
   const entrada = parseFloat(document.getElementById('simEntrada').value) || 0;
@@ -1677,15 +1765,41 @@ function calcSimulator() {
   const totalPaid = installment * months;
   const totalInterest = totalPaid - financed;
 
+  document.getElementById('simParcela').textContent = 'R$ ' + installment.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0});
+  document.getElementById('simFinanciado').textContent = 'R$ ' + financed.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0});
+  document.getElementById('simJuros').textContent = 'R$ ' + totalInterest.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0});
+  document.getElementById('simTotal').textContent = 'R$ ' + totalPaid.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0});
+
   document.getElementById('simResult').classList.add('visible');
-  document.getElementById('simResultGrid').innerHTML =
-    '<div class="sim-result-item"><div class="sim-result-value">R$ ' + installment.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0}) + '</div><div class="sim-result-label">Parcela mensal</div></div>' +
-    '<div class="sim-result-item"><div class="sim-result-value">R$ ' + financed.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0}) + '</div><div class="sim-result-label">Valor financiado</div></div>' +
-    '<div class="sim-result-item"><div class="sim-result-value">R$ ' + totalInterest.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0}) + '</div><div class="sim-result-label">Total juros</div></div>' +
-    '<div class="sim-result-item"><div class="sim-result-value">R$ ' + totalPaid.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0}) + '</div><div class="sim-result-label">Total a pagar</div></div>';
+  document.getElementById('amortTable').classList.remove('visible');
+  document.getElementById('simTableToggle').textContent = '📊 Ver tabela de amortização';
+
+  lastSimParams = { financed, monthlyRate, installment, months };
+
+  // Build amortization table (show every month for up to 120, then every 12)
+  const maxRows = months > 120 ? 120 : months;
+  const step = months > 120 ? 12 : 1;
+  let balance = financed;
+  let rows = '';
+  for (let m = 1; m <= maxRows; m++) {
+    const interest = balance * monthlyRate;
+    const amort = installment - interest;
+    balance -= amort;
+    if (m <= 12 || m % 12 === 0 || m === maxRows) {
+      rows += '<tr><td>' + m + '</td><td>R$ ' + installment.toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</td><td>R$ ' + interest.toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</td><td>R$ ' + amort.toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</td><td>R$ ' + Math.max(0, balance).toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</td></tr>';
+    }
+  }
+  document.getElementById('amortBody').innerHTML = rows;
 }
 
-// Contact form
+function toggleAmort() {
+  const t = document.getElementById('amortTable');
+  const btn = document.getElementById('simTableToggle');
+  t.classList.toggle('visible');
+  btn.textContent = t.classList.contains('visible') ? '🙈 Ocultar tabela' : '📊 Ver tabela de amortização';
+}
+
+// Contact
 function handleContact(e) {
   e.preventDefault();
   document.getElementById('formSuccess').style.display = 'block';
@@ -1704,9 +1818,27 @@ function handleNewsletter(e) {
 // FAQ
 function toggleFaq(el) { el.classList.toggle('open'); }
 
+// Hash routing: open modal from URL hash
+function handleHash() {
+  const hash = location.hash;
+  const match = hash.match(/^#imovel-(\d+)$/);
+  if (match) {
+    const id = parseInt(match[1]);
+    const l = listings.find(x => x.id === id);
+    if (l) {
+      if (!document.getElementById('modalOverlay').classList.contains('active')) {
+        setTimeout(() => openModal(id), 100);
+      }
+    }
+  }
+}
+
 // Init
 updateCompareBtn();
+updateRecent();
 renderListings(listings);
+window.addEventListener('hashchange', handleHash);
+handleHash();
 </script>
 
 </body>
