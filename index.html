@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Praia Digital — Tecnologia especializada no mercado imobiliário do litoral brasileiro.">
+  <title>Praia Digital — Imóveis no Litoral</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ocean: #0077B6;
+      --ocean-light: #00B4D8;
+      --sand: #F4EBD0;
+      --white: #FFFFFF;
+      --dark: #023047;
+      --accent: #90E0EF;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--sand);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, var(--ocean) 0%, var(--ocean-light) 100%);
+      color: var(--white);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo-icon {
+      width: 36px;
+      height: 36px;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+      opacity: 0.9;
+      transition: opacity 0.2s;
+    }
+
+    nav a:hover { opacity: 1; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(180deg, var(--ocean) 0%, var(--ocean-light) 60%, var(--accent) 100%);
+      color: var(--white);
+      text-align: center;
+      padding: 5rem 2rem 4rem;
+ }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      margin-bottom: 1rem;
+      line-height: 1.15;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      opacity: 0.9;
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 0.75rem 1.75rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--white);
+      color: var(--ocean);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid var(--white);
+    }
+
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+
+    /* SEARCH */
+    .search-section {
+      background: var(--white);
+      padding: 3rem 2rem;
+      margin-top: -2rem;
+      border-radius: 24px 24px 0 0;
+      position: relative;
+    }
+
+    .search-section h2 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      color: var(--dark);
+    }
+
+    .search-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      max-width: 900px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .search-field label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+      color: var(--ocean);
+    }
+
+    .search-field select,
+    .search-field input {
+      width: 100%;
+      padding: 0.65rem 1rem;
+      border: 2px solid #e0e0e0;
+      border-radius: 12px;
+      font-size: 1rem;
+      background: var(--white);
+      color: var(--dark);
+      transition: border-color 0.2s;
+    }
+
+    .search-field select:focus,
+    .search-field input:focus {
+      outline: none;
+      border-color: var(--ocean-light);
+    }
+
+    .search-btn {
+      display: block;
+      margin: 0 auto;
+      background: var(--ocean);
+      color: var(--white);
+      padding: 0.85rem 3rem;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .search-btn:hover {
+      background: var(--dark);
+      transform: translateY(-2px);
+    }
+
+    /* FEATURES */
+    .features {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .features h2 {
+      text-align: center;
+      font-size: 1.75rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .feature-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    }
+
+    .feature-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+      color: var(--ocean);
+    }
+
+    .feature-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* LISTINGS PREVIEW */
+    .listings {
+      background: var(--ocean);
+      padding: 4rem 2rem;
+      color: var(--white);
+    }
+
+    .listings h2 {
+      text-align: center;
+      font-size: 1.75rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .listings-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .listing-card {
+      background: var(--white);
+      color: var(--dark);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+
+    .listing-img {
+      width: 100%;
+      height: 180px;
+      background: linear-gradient(135deg, var(--ocean-light), var(--accent));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+    }
+
+    .listing-body { padding: 1.25rem; }
+
+    .listing-location {
+      font-size: 0.85rem;
+      color: var(--ocean);
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    .listing-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .listing-price {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--dark);
+    }
+
+    .listing-tags {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-top: 0.75rem;
+    }
+
+    .tag {
+      background: var(--sand);
+      color: var(--dark);
+      padding: 0.25rem 0.75rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    /* CTA */
+    .cta-section {
+      background: var(--sand);
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .cta-section h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta-section p {
+      max-width: 500px;
+      margin: 0 auto 2rem;
+      color: #555;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      color: var(--white);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+ }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      nav a { margin-left: 1rem; font-size: 0.9rem; }
+      .hero { padding: 3rem 1.5rem 2.5rem; }
+      .search-section { border-radius: 16px 16px 0 0; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="18" cy="18" r="18" fill="#FFFFFF" fill-opacity="0.2"/>
+      <path d="M8 22 Q18 12 28 22" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+      <path d="M6 26 Q18 16 30 26" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+      <circle cx="26" cy="10" r="4" fill="#FFD700"/>
+    </svg>
+    Praia Digital
+  </div>
+  <nav>
+    <a href="#buscar">Buscar</a>
+    <a href="#recursos">Recursos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Encontre seu imóvel<br>no litoral perfeito</h1>
+  <p>Plataforma especializada em imóveis de praia — desde pousadas até apartamentos de frente para o mar.</p>
+  <div class="hero-cta">
+    <a href="#buscar" class="btn btn-primary">Buscar imóveis</a>
+    <a href="#recursos" class="btn btn-outline">Saiba mais</a>
+  </div>
+</section>
+
+<section class="search-section" id="buscar">
+  <h2>Buscar imóveis no litoral</h2>
+  <form class="search-grid" onsubmit="return false;">
+    <div class="search-field">
+      <label for="tipo">Tipo</label>
+      <select id="tipo">
+        <option value="">Todos</option>
+        <option value="apartamento">Apartamento</option>
+        <option value="casa">Casa</option>
+        <option value="pousada">Pousada</option>
+        <option value="terreno">Terreno</option>
+        <option value="comercial"> Comercial</option>
+      </select>
+    </div>
+    <div class="search-field">
+      <label for="cidade">Cidade</label>
+      <select id="cidade">
+        <option value="">Todas</option>
+        <option value="praia-grande">Praia Grande</option>
+        <option value="santos">Santos</option>
+        <option value="sao-vicente">São Vicente</option>
+        <option value="guaruja">Guarujá</option>
+        <option value="itanhaem">Itanhaém</option>
+        <option value="mongaguá">Mongaguá</option>
+        <option value="peruibe">Peruíbe</option>
+      </select>
+    </div>
+    <div class="search-field">
+      <label for="dormitorios">Dormitórios</label>
+      <select id="dormitorios">
+        <option value="">Todos</option>
+        <option value="1">1 quarto</option>
+        <option value="2">2 quartos</option>
+        <option value="3">3 quartos</option>
+        <option value="4+">4+ quartos</option>
+      </select>
+    </div>
+    <div class="search-field">
+      <label for="preco">Faixa de preço</label>
+      <select id="preco">
+        <option value="">Qualquer</option>
+        <option value="ate-500k">Até R$ 500 mil</option>
+        <option value="500k-1m">R$ 500 mil — 1 milhão</option>
+        <option value="1m-2m">R$ 1 — 2 milhões</option>
+        <option value="2m-mais">Acima de R$ 2 milhões</option>
+      </select>
+    </div>
+  </form>
+  <button class="search-btn" type="button" onclick="alert('Busca ativa em breve!')">🔍 Buscar</button>
+</section>
+
+<section class="features" id="recursos">
+  <h2>Por que escolher a Praia Digital?</h2>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">🌊</div>
+      <h3>Foco no Litoral</h3>
+      <p>Catálogo especializado只 em imóveis de praia — sem imóveis urbanos diluindo a experiência.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📍</div>
+      <h3>Geolocalização</h3>
+      <p>Filtros por distância da praia, vista para o mar e orientação solar.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📸</div>
+      <h3>Tours Virtuais</h3>
+      <p>Visite imóveis remotamente com fotos em360° e vídeos aéreos de drone.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">💼</div>
+      <h3>Para Corretores</h3>
+      <p>Ferramentas profissionais de gestão de portfólio e prospecção de clientes.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📱</div>
+      <h3>Responsivo</h3>
+      <p>Interface adaptada para celular, tablet e desktop — busque de qualquer lugar.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🤝</div>
+      <h3>Suporte Local</h3>
+      <p>Atendimento humanizado por profissionais que conhecem o litoral brasileiro.</p>
+    </div>
+  </div>
+</section>
+
+<section class="listings">
+  <h2>Imóveis em destaque</h2>
+  <div class="listings-grid">
+    <div class="listing-card">
+      <div class="listing-img">🏖️</div>
+      <div class="listing-body">
+        <div class="listing-location">📍 Praia Grande — Boqueirão</div>
+        <div class="listing-title">Apartamento 2 dorms — frente mar</div>
+        <div class="listing-price">R$ 890.000</div>
+        <div class="listing-tags">
+          <span class="tag">2 dorms</span>
+          <span class="tag">60m²</span>
+          <span class="tag">Frente mar</span>
+        </div>
+      </div>
+    </div>
+    <div class="listing-card">
+      <div class="listing-img">🏡</div>
+      <div class="listing-body">
+        <div class="listing-location">📍 Guarujá — Pitangueiras</div>
+        <div class="listing-title">Casa3 dorms com piscina</div>
+        <div class="listing-price">R$ 1.450.000</div>
+        <div class="listing-tags">
+          <span class="tag">3 dorms</span>
+          <span class="tag">120m²</span>
+          <span class="tag">Piscina</span>
+        </div>
+      </div>
+    </div>
+    <div class="listing-card">
+      <div class="listing-img">🏨</div>
+      <div class="listing-body">
+        <div class="listing-location">📍 Peruíbe — Centro</div>
+        <div class="listing-title">Pousada completa — 12 suítes</div>
+        <div class="listing-price">R$ 3.200.000</div>
+        <div class="listing-tags">
+          <span class="tag">12 suítes</span>
+          <span class="tag">450m²</span>
+          <span class="tag">Receita</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section" id="contato">
+  <h2>Pronto para investir no litoral?</h2>
+  <p>Cadastre-se e receba alertas de novos imóveis antes de todo mundo.</p>
+  <a href="#" class="btn btn-primary" style="background: var(--ocean); color: var(--white);">Cadastrar interesse</a>
+</section>
+
+<footer>
+  <p>© 2026 <a href="https://github.com/acarolmourad-commits/praia-digital">Praia Digital</a> — Tecnologia imobiliária no litoral</p>
+</footer>
+
+</body>
+</html>
