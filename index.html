@@ -437,6 +437,65 @@
     .nb-tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-bottom: 2rem; }
     .nb-content { display: none; }
     .nb-content.active { display: block; }
+    /* CREDIT & FINANCING SECTION */
+    .credit-hero-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: var(--white); padding: 3.5rem 2rem; position: relative; overflow: hidden; }
+    .credit-hero-section::before { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(144,224,239,0.15) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
+    .credit-hero-inner { max-width: 900px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
+    .credit-hero-badge { display: inline-block; background: rgba(144,224,239,0.15); border: 1px solid rgba(144,224,239,0.4); color: var(--ocean-light); padding: 0.4rem 1.2rem; border-radius: 50px; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 1.25rem; text-transform: uppercase; }
+    .credit-hero-title { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; margin-bottom: 1rem; line-height: 1.2; background: linear-gradient(135deg, #fff 0%, var(--ocean-light) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .credit-hero-sub { font-size: 1.05rem; color: rgba(255,255,255,0.75); margin-bottom: 2.5rem; max-width: 650px; margin-left: auto; margin-right: auto; }
+    .credit-checker-card { background: var(--white); border-radius: 24px; padding: 2.5rem; text-align: left; margin-bottom: 2.5rem; box-shadow: 0 8px 40px rgba(0,0,0,0.3); }
+    .credit-checker-title { font-size: 1.3rem; font-weight: 700; color: var(--dark); margin-bottom: 1.5rem; text-align: center; }
+    .credit-checker-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+    .credit-field label { display: block; font-size: 0.8rem; font-weight: 600; color: var(--dark); margin-bottom: 0.35rem; }
+    .credit-field input, .credit-field select { width: 100%; padding: 0.7rem 0.9rem; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 0.9rem; background: #fafafa; }
+    .credit-field input:focus, .credit-field select:focus { outline: none; border-color: var(--ocean); }
+    .credit-btn { width: 100%; padding: 1rem; background: linear-gradient(135deg, var(--ocean) 0%, var(--ocean-light) 100%); color: white; border: none; border-radius: 50px; font-size: 1.05rem; font-weight: 700; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 20px rgba(0,119,182,0.3); }
+    .credit-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,119,182,0.4); }
+    .credit-result { margin-top: 1.5rem; display: none; }
+    .credit-result.visible { display: block; }
+    .credit-result-summary { background: linear-gradient(135deg, var(--ocean) 0%, var(--ocean-light) 100%); color: white; padding: 1.5rem; border-radius: 16px; text-align: center; font-size: 1.1rem; font-weight: 700; margin-bottom: 1.5rem; }
+    .credit-programs { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+    .credit-program-card { background: #f8faff; border: 2px solid #e0e0e0; border-radius: 16px; padding: 1.25rem; }
+    .credit-program-name { font-size: 0.95rem; font-weight: 700; color: var(--dark); margin-bottom: 0.5rem; }
+    .credit-program-desc { font-size: 0.8rem; color: #666; margin-bottom: 0.5rem; }
+    .credit-program-rate { font-size: 1.2rem; font-weight: 800; color: var(--ocean); }
+    .credit-program-badge { display: inline-block; background: var(--success); color: white; font-size: 0.68rem; padding: 0.15rem 0.5rem; border-radius: 50px; font-weight: 700; margin-left: 0.5rem; }
+    .credit-income-needed { background: var(--amber); color: var(--dark); padding: 1rem; border-radius: 12px; text-align: center; font-size: 0.9rem; font-weight: 600; margin-bottom: 1.5rem; }
+    .credit-banks { margin-bottom: 1.5rem; }
+    .credit-banks-title { font-size: 0.9rem; font-weight: 700; color: var(--dark); margin-bottom: 0.75rem; }
+    .credit-bank-list { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    .credit-bank-chip { background: white; border: 1px solid #e0e0e0; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.82rem; font-weight: 600; color: var(--dark); cursor: pointer; transition: all 0.2s; }
+    .credit-bank-chip:hover { background: var(--ocean); color: white; border-color: var(--ocean); }
+    .credit-tips { background: #f3e8ff; border-radius: 12px; padding: 1rem; }
+    .credit-tips-title { font-size: 0.85rem; font-weight: 700; color: var(--purple); margin-bottom: 0.5rem; }
+    .credit-tips ul { margin: 0; padding-left: 1.25rem; font-size: 0.83rem; color: var(--dark); }
+    .credit-tips li { margin-bottom: 0.3rem; }
+    /* QUICK BANK GRID */
+    .credit-quick-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; max-width: 900px; margin: 0 auto; }
+    @media(max-width:600px) { .credit-quick-grid { grid-template-columns: repeat(2, 1fr); } }
+    .credit-quick-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 16px; padding: 1.5rem 1rem; text-align: center; cursor: pointer; transition: all 0.25s; position: relative; }
+    .credit-quick-card:hover { background: rgba(255,255,255,0.15); border-color: var(--ocean-light); transform: translateY(-4px); }
+    .credit-quick-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+    .credit-quick-name { font-size: 1rem; font-weight: 800; margin-bottom: 0.3rem; }
+    .credit-quick-rate { font-size: 0.95rem; font-weight: 700; color: var(--ocean-light); margin-bottom: 0.25rem; }
+    .credit-quick-desc { font-size: 0.75rem; color: rgba(255,255,255,0.6); margin-bottom: 0.75rem; }
+    .credit-quick-badge { font-size: 0.68rem; background: var(--success); color: white; padding: 0.2rem 0.6rem; border-radius: 50px; font-weight: 700; display: inline-block; }
+    .credit-badge-new { background: var(--amber); color: var(--dark); }
+    /* CREDIT DETAIL MODAL */
+    .credit-detail-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 9999; display: none; align-items: center; justify-content: center; padding: 1rem; }
+    .credit-detail-overlay.open { display: flex; }
+    .credit-detail-modal { background: white; border-radius: 24px; padding: 2.5rem; max-width: 600px; width: 100%; max-height: 80vh; overflow-y: auto; position: relative; }
+    .credit-detail-close { position: absolute; top: 1rem; right: 1rem; background: none; border: none; font-size: 1.2rem; cursor: pointer; color: #999; }
+    .credit-detail-close:hover { color: var(--dark); }
+    .credit-detail-title { font-size: 1.4rem; font-weight: 800; color: var(--dark); margin-bottom: 1rem; }
+    .credit-detail-section { margin-bottom: 1.25rem; }
+    .credit-detail-section h4 { font-size: 0.9rem; font-weight: 700; color: var(--ocean); margin-bottom: 0.5rem; }
+    .credit-detail-section p, .credit-detail-section li { font-size: 0.88rem; color: #555; line-height: 1.6; }
+    .credit-detail-section ul { padding-left: 1.25rem; }
+    .credit-detail-cta { display: inline-block; background: var(--ocean); color: white; padding: 0.75rem 1.5rem; border-radius: 50px; font-weight: 700; font-size: 0.9rem; text-decoration: none; margin-top: 1rem; transition: transform 0.2s; }
+    .credit-detail-cta:hover { transform: translateY(-2px); }
+
     .nb-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; max-width: 1100px; margin: 0 auto; }
     .nb-card { background: var(--white); border-radius: 16px; padding: 1.5rem; box-shadow: 0 2px 12px rgba(0,0,0,0.08); position: relative; }
     .nb-card h4 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--dark); }
@@ -746,6 +805,7 @@
   </a>
   <nav>
         <a href="#buscar">Buscar</a>
+        <a href="#credito">Crédito</a>
         <a href="#simulador">Simulador</a>
         <a href="#comparativo">Comparativo</a>
         <a href="#taxas">Taxas</a>
@@ -779,6 +839,104 @@
     <button class="ai-send" onclick="sendAI()">➤</button>
   </div>
 </div>
+
+<!-- CREDIT & FINANCING HERO SECTION -->
+<section class="credit-hero-section" id="credito">
+  <div class="credit-hero-inner">
+    <div class="credit-hero-badge">🏦 ANÁLISE COMPLETA DE CRÉDITO IMOBILIÁRIO</div>
+    <h2 class="credit-hero-title">Simule seu crédito e descubra<br>a melhor forma de financiar</h2>
+    <p class="credit-hero-sub">FGTS, Minha Casa Minha Vida, SBPE — compare taxas, descubra sua elegibilidade e veja quanto pode financiar em segundos.</p>
+
+    <!-- ELIGIBILITY CHECKER -->
+    <div class="credit-checker-card">
+      <h3 class="credit-checker-title">🎯 Descubra sua Elegibilidade de Crédito</h3>
+      <div class="credit-checker-grid">
+        <div class="credit-field">
+          <label for="crRenda">Renda bruta mensal (R$)</label>
+          <input type="number" id="crRenda" placeholder="Ex: 8500" min="500">
+        </div>
+        <div class="credit-field">
+          <label for="crTipo">Tipo de renda</label>
+          <select id="crTipo">
+            <option value="clt">CLT (Assalariado)</option>
+            <option value="autonomo">Autônomo / MEI</option>
+            <option value="pensionista">Pensionista / Aposentado</option>
+            <option value="empresa">Sócio / PJ</option>
+          </select>
+        </div>
+        <div class="credit-field">
+          <label for="crScore">Score de crédito (opcional)</label>
+          <select id="crScore">
+            <option value="">Não sei</option>
+            <option value="900">⭐ Excelente (800+)</option>
+            <option value="700">⭐⭐ Bom (650-799)</option>
+            <option value="550">⭐⭐⭐ Regular (500-649)</option>
+            <option value="0">Sem score</option>
+          </select>
+        </div>
+        <div class="credit-field">
+          <label for="crTempo">Tempo na empresa/atividade</label>
+          <select id="crTempo">
+            <option value="6">6 meses</option>
+            <option value="12">1 ano</option>
+            <option value="24" selected>2+ anos</option>
+            <option value="36">3+ anos</option>
+          </select>
+        </div>
+      </div>
+      <button class="credit-btn" onclick="checkCredit()">🔍 Analisar Crédito</button>
+
+      <!-- CREDIT RESULT -->
+      <div class="credit-result" id="creditResult">
+        <div class="credit-result-summary" id="creditSummary"></div>
+        <div class="credit-programs" id="creditPrograms"></div>
+        <div class="credit-income-needed" id="creditIncome"></div>
+        <div class="credit-banks" id="creditBanks"></div>
+        <div class="credit-tips" id="creditTips"></div>
+      </div>
+    </div>
+
+    <!-- QUICK BANK COMPARISON -->
+    <div class="credit-quick-grid">
+      <div class="credit-quick-card" onclick="showCreditDetail('fgts')">
+        <div class="credit-quick-icon">🔶</div>
+        <div class="credit-quick-name">FGTS</div>
+        <div class="credit-quick-rate">9% a.a.</div>
+        <div class="credit-quick-desc">Até 90% do imóvel</div>
+        <div class="credit-quick-badge">Melhor taxa</div>
+      </div>
+      <div class="credit-quick-card" onclick="showCreditDetail('mcmv')">
+        <div class="credit-quick-icon">🏠</div>
+        <div class="credit-quick-name">MCMV</div>
+        <div class="credit-quick-rate">Subsídio até R$ 47,5k</div>
+        <div class="credit-quick-desc">Faixa 1-4, até R$ 350k</div>
+        <div class="credit-quick-badge credit-badge-new">Subsídio</div>
+      </div>
+      <div class="credit-quick-card" onclick="showCreditDetail('sbpe')">
+        <div class="credit-quick-icon">🏦</div>
+        <div class="credit-quick-name">SBPE</div>
+        <div class="credit-quick-rate">12% a.a.</div>
+        <div class="credit-quick-desc">Até 90% do imóvel</div>
+        <div class="credit-quick-badge">Sem FGTS</div>
+      </div>
+      <div class="credit-quick-card" onclick="showCreditDetail('par')">
+        <div class="credit-quick-icon">🤝</div>
+        <div class="credit-quick-name">Parcerias</div>
+        <div class="credit-quick-rate">10-11% a.a.</div>
+        <div class="credit-quick-desc">Construcard, cesta</div>
+        <div class="credit-quick-badge">Ofertas especiais</div>
+      </div>
+    </div>
+
+    <!-- CREDIT DETAIL MODAL -->
+    <div class="credit-detail-overlay" id="creditDetailOverlay" onclick="if(event.target===this)closeCreditDetail()">
+      <div class="credit-detail-modal" id="creditDetailModal">
+        <button class="credit-detail-close" onclick="closeCreditDetail()">✕</button>
+        <div id="creditDetailContent"></div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="stats-bar">
   <div class="stat-item"><div class="stat-value">12</div><div class="stat-label">Imóveis disponíveis</div></div>
@@ -2890,6 +3048,293 @@ function showNb(city) {
   const tabs = document.querySelectorAll('.nb-tabs .beach-tab');
   const cityMap = {pg:0,guaruja:1,santos:2,sv:3,peruibe:4,itanhaem:5,mongagua:6};
   if (tabs[cityMap[city]]) tabs[cityMap[city]].classList.add('active');
+}
+
+// ====================
+// CREDIT & FINANCING ANALYZER
+// ====================
+function checkCredit() {
+  const renda = parseFloat(document.getElementById('crRenda').value);
+  const tipo = document.getElementById('crTipo').value;
+  const score = parseInt(document.getElementById('crScore').value) || 0;
+  const tempo = parseInt(document.getElementById('crTempo').value);
+
+  if (!renda || renda < 500) { alert('Informe sua renda mensal bruta (mínimo R$ 500).'); return; }
+
+  const maxParc = renda * 0.3;
+  const fm = 0.12 / 12;
+  const meses = 360;
+  const maxFinanciado = maxParc * (Math.pow(1 + fm, meses) - 1) / (Math.pow(1 + fm, meses) * fm);
+  const fgtsSaldo = Math.min(renda * 8, 2292); // approximated FGTS balance (2 months)
+  const entradaFGTS = Math.min(fgtsSaldo, maxFinanciado * 0.1);
+  const maxPriceFGTS = maxFinanciado / 0.85 + entradaFGTS;
+  const maxPriceSBPE = maxFinanciado / 0.85;
+
+  // MCMV Faixas
+  const mcmvFaixas = [
+    { faixa: 1, maxImovel: 170000, rendaMax: 2640, subsídio: 47500 },
+    { faixa: 2, maxImovel: 265000, rendaMax: 4400, subsídio: 38500 },
+    { faixa: 3, maxImovel: 350000, rendaMax: 8800, subsídio: 31000 },
+    { faixa: 4, maxImovel: 350000, rendaMax: 12120, subsídio: 0 },
+  ];
+  const faixasAprovadas = mcmvFaixas.filter(f => renda <= f.rendaMax && f.faixa > 1);
+  const topFaixa = faixasAprovadas.length ? faixasAprovadas[faixasAprovadas.length - 1] : null;
+  const subsídio = topFaixa ? topFaixa.subsídio : 0;
+
+  // Eligible programs
+  const programs = [];
+  const fgtsOk = tipo === 'clt' || tipo === 'pensionista';
+  const tempoOk = tempo >= 12;
+  if (fgtsOk && tempoOk) {
+    programs.push({ name: '🏦 SFH + FGTS', rate: '9,0% a.a.', desc: 'Melhor taxa do mercado. Entrada mínima 10%.', maxFin: maxPriceFGTS, badge: 'Melhor opção' });
+  }
+  if (topFaixa && subsídio > 0) {
+    programs.push({ name: '🏠 Minha Casa Minha Vida', rate: 'Subsídio R$ ' + (subsídio / 1000).toFixed(0) + 'k', desc: 'Faixa ' + topFaixa.faixa + ' — até R$ ' + (topFaixa.maxImovel / 1000).toFixed(0) + 'k', maxFin: topFaixa.maxImovel - subsídio, badge: 'Subsídio direto' });
+  } else if (topFaixa) {
+    programs.push({ name: '🏠 MCMV Faixa ' + topFaixa.faixa, rate: 'Taxa referencial', desc: 'Até R$ ' + (topFaixa.maxImovel / 1000).toFixed(0) + 'k — sem subsídio', maxFin: topFaixa.maxImovel, badge: '' });
+  }
+  if (tempoOk) {
+    programs.push({ name: '🏦 SBPE (Mercado)', rate: '11–12% a.a.', desc: 'Sem exigência de FGTS. Até 90% do imóvel.', maxFin: maxPriceSBPE, badge: '' });
+  }
+  if (tipo === 'autonomo' || tipo === 'empresa') {
+    programs.push({ name: '💼 Crédito Consorciado', rate: 'Sem taxa de juros', desc: 'Entrada + parcelas mensais. Sem juros.', maxFin: 0, badge: 'Alternativa' });
+  }
+
+  // Summary
+  document.getElementById('creditSummary').innerHTML =
+    '✅ Renda de <strong>R$ ' + renda.toLocaleString('pt-BR') + '</strong> — Parcela máxima de <strong>R$ ' + Math.round(maxParc).toLocaleString('pt-BR') + '/mês</strong><br>' +
+    '<span style="opacity:0.85;font-size:0.88rem;">Financiamento máximo estimado: <strong>R$ ' + Math.round(maxFinanciado).toLocaleString('pt-BR') + '</strong> | Imóvel de até <strong>R$ ' + Math.round(maxPriceFGTS).toLocaleString('pt-BR') + '</strong></span>';
+
+  // Programs
+  const progHTML = programs.map(p =>
+    '<div class="credit-program-card">' +
+      '<div class="credit-program-name">' + p.name + (p.badge ? '<span class="credit-program-badge">' + p.badge + '</span>' : '') + '</div>' +
+      '<div class="credit-program-desc">' + p.desc + '</div>' +
+      (p.maxFin > 0 ? '<div class="credit-program-rate">' + p.rate + (p.rate.includes('%') ? ' — até R$ ' + (p.maxFin / 1000000).toFixed(1) + 'M' : '') + '</div>' : '<div class="credit-program-rate">' + p.rate + '</div>') +
+    '</div>'
+  ).join('');
+  document.getElementById('creditPrograms').innerHTML = '<div class="credit-programs">' + progHTML + '</div>';
+
+  // Income needed for target prices
+  const targetPrices = [300000, 500000, 700000, 900000];
+  const neededIncome = targetPrices.map(p => {
+    const parc = p * 0.85 * (fm * Math.pow(1 + fm, meses)) / (Math.pow(1 + fm, meses) - 1);
+    const rendaMin = Math.round(parc / 0.3);
+    return { price: p, income: rendaMin };
+  }).filter(x => x.income <= renda * 2.5);
+  if (neededIncome.length) {
+    document.getElementById('creditIncome').innerHTML =
+      '💡 Com sua renda, financie estes imóveis: ' + neededIncome.map(x => 'R$ ' + (x.price/1000).toFixed(0) + 'k → renda mínima R$ ' + x.income.toLocaleString('pt-BR')).join(' | ');
+  } else {
+    document.getElementById('creditIncome').innerHTML = '';
+  }
+
+  // Banks
+  const banks = fgtsOk && tempoOk
+    ? ['Caixa Econômica Federal', 'Banco do Brasil', 'Bradesco', 'Itaú Unibanco', 'Santander', 'BTG Pactual']
+    : ['Caixa Econômica Federal', 'Banco do Brasil', 'Itaú Unibanco', 'Santander'];
+  document.getElementById('creditBanks').innerHTML =
+    '<div class="credit-banks"><div class="credit-banks-title">🏦 Bancos que financiam nessa faixa:</div>' +
+    '<div class="credit-bank-list">' + banks.map(b => '<span class="credit-bank-chip">' + b + '</span>').join('') + '</div></div>';
+
+  // Tips
+  const tips = [];
+  if (fgtsOk && fgtsSaldo > 30000) tips.push('💰 Seu FGTS disponível (~$' + Math.round(fgtsSaldo / 1000) + 'k) pode ser usado como parte da entrada.');
+  if (tempo < 12) tips.push('⏳ Se possível, aguarde 12 meses na empresa para ter acesso às melhores taxas (FGTS e SBPE).');
+  if (renda > 8000 && !topFaixa) tips.push('📊 Sua renda está acima das faixas do MCMV — opte pelo SFH com FGTS ou SBPE.');
+  if (tipo === 'autonomo') tips.push('📋 autônomos precisam de 1-2 anos de declaração de IR para aprovar financiamento.');
+  if (!tips.length) tips.push('✅ Continue mantendo histórico de crédito positivo para melhores taxas na aprovação.');
+  document.getElementById('creditTips').innerHTML =
+    '<div class="credit-tips"><div class="credit-tips-title">💡 Dicas para melhorar sua aprovação:</div><ul>' + tips.map(t => '<li>' + t + '</li>').join('') + '</ul></div>';
+
+  document.getElementById('creditResult').classList.add('visible');
+}
+
+function showCreditDetail(type) {
+  const details = {
+    fgts: {
+      title: '🏦 SFH + FGTS — Sistema Financeiro de Habitação',
+      content: `
+        <div class="credit-detail-section">
+          <h4>Como funciona</h4>
+          <p>O SFH é o sistema padrão de financiamento imobiliário no Brasil, operado por bancos com recursos da caderneta de poupança. O FGTS (Fundo de Garantia) pode ser usado para abatimento da entrada ou do saldo devedor.</p>
+        </div>
+        <div class="credit-detail-section">
+          <h4>Requisitos</h4>
+          <ul>
+            <li>Renda mensal bruta (não há limite máximo, mas parcela ≤ 30% da renda)</li>
+            <li>Trabalhador CLT ou servidor público com saldo FGTS</li>
+            <li>Tempo mínimo de 3 anos de trabalho sob o regime do FGTS</li>
+            <li>Não ter financiamento SFH ativo</li>
+            <li>Não ser dono de outro imóvel na mesma cidade</li>
+          </ul>
+        </div>
+        <div class="credit-detail-section">
+          <h4>Taxas e Condições 2025</h4>
+          <ul>
+            <li><strong>Taxa de juros:</strong> 9,0% a.a. (Caixa/BB com FGTS) até 12% a.a. (mercado)</li>
+            <li><strong>Prazo:</strong> até 35 anos</li>
+            <li><strong>Financiamento:</strong> até 90% do valor do imóvel</li>
+            <li><strong>FGTS:</strong> até 90% do valor do imóvel (parcial ou total)</li>
+            <li><strong>Seguros:</strong> MIP + SFI (obrigatórios, ~0.5–1% a.a. sobre saldo devedor)</li>
+            <li><strong>ITBI:</strong> incluso no custo total</li>
+          </ul>
+        </div>
+        <div class="credit-detail-section">
+          <h4>Vantagens</h4>
+          <ul>
+            <li>Menor taxa de juros do mercado</li>
+            <li>FGTS pode reduzir entrada significativamente</li>
+            <li>Amortização SAC ou PRICE (escolha o banco)</li>
+            <li>Portabilidade de crédito para outros bancos</li>
+          </ul>
+        </div>
+        <div class="credit-detail-section">
+          <h4>Desvantagens</h4>
+          <ul>
+            <li>Limite de R$ 3,5 milhões por pessoa (em 2025)</li>
+            <li>Exige vínculo CLT ativo</li>
+            <li>Correção pelo IPCA ou TR (pode variar)</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/5513999999999?text=Olá! Quero simular um financiamento com FGTS." class="credit-detail-cta" target="_blank">💬 Simular com FGTS</a>
+      `
+    },
+    mcmv: {
+      title: '🏠 Minha Casa Minha Vida — Programa Federal',
+      content: `
+        <div class="credit-detail-section">
+          <h4>Como funciona</h4>
+          <p>O MCMV é um programa do governo federal que oferece subsídios diretos para famílias de baixa e média renda comprarem imóvel novo. Os recursos são administrados pela Caixa Econômica Federal.</p>
+        </div>
+        <div class="credit-detail-section">
+          <h4>Faixas de Renda 2024/2025</h4>
+          <ul>
+            <li><strong>Faixa 1:</strong> renda até R$ 2.640/mês → Subsídio até R$ 47.500 + juro 0% a.a. + casa gratuita ou até R$ 170k</li>
+            <li><strong>Faixa 2:</strong> renda até R$ 4.400/mês → Subsídio até R$ 38.500 + juro 5% a.a. + até R$ 265k</li>
+            <li><strong>Faixa 3:</strong> renda até R$ 8.800/mês → Subsídio até R$ 31.000 + juro 7.16% a.a. + até R$ 350k</li>
+            <li><strong>Faixa 4:</strong> renda até R$ 12.120/mês → Sem subsídio + juro igual ao SFH (9–12%) + até R$ 350k</li>
+          </ul>
+        </div>
+        <div class="credit-detail-section">
+          <h4>Requisitos</h4>
+          <ul>
+            <li>Nunca ter sido beneficiário do MCMV (exceto Faixa 1)</li>
+            <li>Não ser proprietário de outro imóvel na mesma UF</li>
+            <li>Não ter Financingamento ativa pelo SFH (exceto com quilol)</li>
+            <li>Ter capacidade de pagamento (parcela ≤ 30% da renda)</li>
+            <li>Faixa 1: exclusivo para famílias em situação de vulnerabilidade social</li>
+          </ul>
+        </div>
+        <div class="credit-detail-section">
+          <h4>Cobertura</h4>
+          <p>Imóveis novos de até R$ 350 mil (varia por município). No litoral, muitas cidades da Baixada Santista têm empreendimentos credenciados.</p>
+        </div>
+        <div class="credit-detail-section">
+          <h4>Como se inscrever</h4>
+          <ul>
+            <li>Procure uma agência da Caixa com documentos de identidade, comprovante de renda e endereço</li>
+            <li>Apresentar declaração de IR, holerites (3 meses) e extrato FGTS</li>
+            <li>Também é possível participar pelo portal Caixa Minha Casa</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/5513999999999?text=Olá! Quero saber sobre Minha Casa Minha Vida no litoral." class="credit-detail-cta" target="_blank">💬 Tirar dúvidas sobre MCMV</a>
+      `
+    },
+    sbpe: {
+      title: '🏦 SBPE — Sistema Brasileiro de Poupança e Empréstimo',
+      content: `
+        <div class="credit-detail-section">
+          <h4>Como funciona</h4>
+          <p>O SBPE utiliza recursos da caderneta de poupança para financiar imóveis. Funciona como o SFH tradicional, mas sem a possibilidade de usar FGTS. Indicado para quem não tem vínculo CLT ou quer valores acima do limite FGTS.</p>
+        </div>
+        <div class="credit-detail-section">
+          <h4>Taxas e Condições 2025</h4>
+          <ul>
+            <li><strong>Taxa de juros:</strong> 11–12% a.a. (varia por banco e perfil)</li>
+            <li><strong>Prazo:</strong> até 30 anos</li>
+            <li><strong>Financiamento:</strong> até 90% do valor do imóvel</li>
+            <li><strong>Perfil:</strong> CLT, autônomo, MEI, PJ, pensionistas</li>
+            <li><strong>Seguros:</strong> MIP + SFI obrigatórios</li>
+          </ul>
+        </div>
+        <div class="credit-detail-section">
+          <h4>Bancos que operam SBPE</h4>
+          <ul>
+            <li>Caixa Econômica Federal</li>
+            <li>Banco do Brasil</li>
+            <li>Itaú Unibanco</li>
+            <li>Bradesco</li>
+            <li>Santander</li>
+            <li>Bank of Brazil, BTG, Safra e outros</li>
+          </ul>
+        </div>
+        <div class="credit-detail-section">
+          <h4>Vantagens</h4>
+          <ul>
+            <li>Não exige vínculo com FGTS</li>
+            <li>Aceita autônomos e MEI com 1-2 anos de IR</li>
+            <li>Mais opções de bancos e negociação</li>
+            <li>Pode combinar com crédito konsorcial para a entrada</li>
+          </ul>
+        </div>
+        <div class="credit-detail-section">
+          <h4>Dicas</h4>
+          <ul>
+            <li>Compare taxas entre bancos — a diferença de 1% muda muito o total pago</li>
+            <li>Autônomos: organize-se com 2 anos de declaração de IR para aprovar mais fácil</li>
+            <li>Parcela não pode ultrapassar 30% da renda mensal bruta</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/5513999999999?text=Olá! Quero simular um financiamento SBPE pelo mercado." class="credit-detail-cta" target="_blank">💬 Simular financiamento SBPE</a>
+      `
+    },
+    par: {
+      title: '🤝 Parcerias e Ofertas Bancárias Especiais',
+      content: `
+        <div class="credit-detail-section">
+          <h4>Construcard — Crédito para Reforma e Construção</h4>
+          <p>Linha específica para construção ou reforma de imóvel. Taxas em torno de 12–15% a.a., com prazo de até 20 anos. Pode ser usada em conjunto com financiamento.</p>
+        </div>
+        <div class="credit-detail-section">
+          <h4>Cartão Consignado — Entrada Facilitada</h4>
+          <p>Bancos como Caixa e BB oferecem crédito consignado com taxa reduzida para clientes com conta salário. Pode ser usado como parte da entrada.</p>
+        </div>
+        <div class="credit-detail-section">
+          <h4>Seguro Residencial Obrigatório</h4>
+          <p>Todo financiamento SFH exige seguro contra sinistro (incêndio, alagamento). Custo médio: 0.03–0.05% do valor do imóvel/ano.</p>
+        </div>
+        <div class="credit-detail-section">
+          <h4>Dicas para Negociar</h4>
+          <ul>
+            <li>Bancos têm margem para negociar taxas — use a concorrência entre instituições</li>
+            <li>Clients com buen historial podem conseguir até 0.5% a menos na taxa</li>
+            <li>Portabilidade de crédito: se você já tem financiamento, pode transferir para outro banco com melhor taxa</li>
+            <li>Sempre peça a simulação em pelo menos 3 bancos antes de decidir</li>
+          </ul>
+        </div>
+        <div class="credit-detail-section">
+          <h4>Quando usar</h4>
+          <ul>
+            <li>Precisa de dinheiro extra para entrada ou custos de transação</li>
+            <li>Quer construir ou fazer obra significativa no imóvel</li>
+            <li>Já tem financiamento e quer transferir para taxa menor</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/5513999999999?text=Olá! Quero saber sobre parcerias e ofertas bancárias para financiamento." class="credit-detail-cta" target="_blank">💬 Falar sobre ofertas especiais</a>
+      `
+    }
+  };
+
+  const d = details[type] || details.fgts;
+  document.getElementById('creditDetailContent').innerHTML = '<div class="credit-detail-title">' + d.title + '</div>' + d.content;
+  document.getElementById('creditDetailOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeCreditDetail() {
+  document.getElementById('creditDetailOverlay').classList.remove('open');
+  document.body.style.overflow = '';
 }
 
 // Init
