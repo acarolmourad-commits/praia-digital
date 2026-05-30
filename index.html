@@ -4,17 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Praia Digital — Imóveis no Litoral Brasileiro</title>
-  <meta name="description" content="Encontre imóveis de praia no litoral brasileiro. Apartamentos, casas, pousadas e terrenos em Praia Grande, Santos, Guarujá, Peruíbe e mais.">
+  <meta name="description" content="Encontre imóveis de praia no litoral brasileiro. Apartamentos, casas, pousadas e terrenos em Praia Grande, Santos, Guarujá, Peruíbe e mais. A primeira plataforma com IA do litoral.">
   <meta name="keywords" content="imóveis litoral, apartamento praia, casa no mar, pousada, terreno, Praia Grande, Santos, Guarujá, Peruíbe">
   <meta name="author" content="Praia Digital">
-
   <meta property="og:title" content="Praia Digital — Imóveis no Litoral Brasileiro">
-  <meta property="og:description" content="Plataforma especializada em imóveis de praia. Apartamentos, casas, pousadas e terrenos nas melhores praias do Brasil.">
+  <meta property="og:description" content="Plataforma com IA para decisões mais inteligentes no litoral.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://acarolmourad-commits.github.io/praia-digital/">
   <meta property="og:image" content="https://acarolmourad-commits.github.io/praia-digital/og-image.svg">
   <meta name="twitter:card" content="summary_large_image">
-
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>">
 
   <style>
@@ -23,44 +21,24 @@
       --ocean: #0077B6; --ocean-light: #00B4D8; --sand: #F4EBD0;
       --white: #FFFFFF; --dark: #023047; --accent: #90E0EF;
       --success: #2d9e5a; --error: #e53e3e; --purple: #6B21A8;
-      --purple-light: #A855F7;
+      --purple-light: #A855F7; --orange: #F97316; --amber: #F59E0B;
     }
     body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--sand); color: var(--dark); line-height: 1.6; }
     a { color: inherit; }
 
     /* HEADER */
-    header {
-      background: linear-gradient(135deg, var(--ocean) 0%, var(--ocean-light) 100%);
-      color: var(--white); padding: 1rem 2rem;
-      display: flex; align-items: center; justify-content: space-between;
-      flex-wrap: wrap; gap: 1rem; position: sticky; top: 0; z-index: 100;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.15);
-    }
+    header { background: linear-gradient(135deg, var(--ocean) 0%, var(--ocean-light) 100%); color: var(--white); padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 16px rgba(0,0,0,0.15); }
     .logo { font-size: 1.4rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: var(--white); }
     .logo-icon { width: 36px; height: 36px; }
     nav a { color: var(--white); text-decoration: none; margin-left: 1.5rem; font-weight: 500; opacity: 0.9; transition: opacity 0.2s; }
     nav a:hover { opacity: 1; }
 
     /* AI ASSISTANT */
-    .ai-assistant {
-      position: fixed; bottom: 5rem; right: 1.5rem; z-index: 998;
-      width: 380px; max-width: calc(100vw - 2rem);
-      background: var(--white); border-radius: 20px;
-      box-shadow: 0 8px 40px rgba(0,0,0,0.2);
-      display: none; flex-direction: column;
-      max-height: 500px; overflow: hidden;
-    }
+    .ai-assistant { position: fixed; bottom: 5.5rem; right: 1.5rem; z-index: 998; width: 380px; max-width: calc(100vw - 2rem); background: var(--white); border-radius: 20px; box-shadow: 0 8px 40px rgba(0,0,0,0.2); display: none; flex-direction: column; max-height: 520px; overflow: hidden; border: 2px solid var(--purple-light); }
     .ai-assistant.open { display: flex; }
-
-    .ai-header {
-      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-light) 100%);
-      color: var(--white); padding: 1rem 1.25rem;
-      display: flex; align-items: center; justify-content: space-between;
-      font-weight: 700; font-size: 1rem;
-    }
+    .ai-header { background: linear-gradient(135deg, var(--purple) 0%, var(--purple-light) 100%); color: var(--white); padding: 1rem 1.25rem; display: flex; align-items: center; justify-content: space-between; font-weight: 700; font-size: 1rem; }
     .ai-header span { display: flex; align-items: center; gap: 0.5rem; }
-    .ai-close { background: none; border: none; color: var(--white); font-size: 1.2rem; cursor: pointer; padding: 0.25rem; }
-
+    .ai-close { background: none; border: none; color: var(--white); font-size: 1.2rem; cursor: pointer; }
     .ai-messages { flex: 1; overflow-y: auto; padding: 1rem; display: flex; flex-direction: column; gap: 0.75rem; min-height: 0; }
     .ai-msg { padding: 0.75rem 1rem; border-radius: 12px; font-size: 0.9rem; line-height: 1.5; max-width: 85%; word-wrap: break-word; }
     .ai-msg.bot { background: #f3e8ff; color: var(--dark); align-self: flex-start; border-bottom-left-radius: 4px; }
@@ -72,44 +50,28 @@
     .ai-typing-dot:nth-child(2) { animation-delay: 0.2s; }
     .ai-typing-dot:nth-child(3) { animation-delay: 0.4s; }
     @keyframes typingBounce { 0%,80%,100%{transform:scale(1)} 40%{transform:scale(1.4)} }
-
+    .ai-suggestions { display: flex; flex-wrap: wrap; gap: 0.4rem; padding: 0.5rem 0.75rem 0; }
+    .ai-suggestion { background: #f3e8ff; border: 1px solid var(--purple-light); color: var(--purple); padding: 0.3rem 0.75rem; border-radius: 50px; font-size: 0.75rem; cursor: pointer; transition: all 0.2s; font-weight: 500; }
+    .ai-suggestion:hover { background: var(--purple); color: var(--white); }
     .ai-input-row { display: flex; gap: 0.5rem; padding: 0.75rem; border-top: 1px solid #eee; }
     .ai-input-row input { flex: 1; padding: 0.65rem 1rem; border: 2px solid #e0e0e0; border-radius: 50px; font-size: 0.9rem; outline: none; transition: border-color 0.2s; }
     .ai-input-row input:focus { border-color: var(--purple-light); }
     .ai-send { background: var(--purple); color: var(--white); border: none; border-radius: 50%; width: 38px; height: 38px; cursor: pointer; font-size: 1rem; display: flex; align-items: center; justify-content: center; transition: transform 0.2s; flex-shrink: 0; }
     .ai-send:hover { transform: scale(1.1); }
 
-    /* SUGGESTED PROMPTS */
-    .ai-suggestions { display: flex; flex-wrap: wrap; gap: 0.4rem; padding: 0.5rem 0.75rem 0; }
-    .ai-suggestion { background: #f3e8ff; border: 1px solid var(--purple-light); color: var(--purple); padding: 0.3rem 0.75rem; border-radius: 50px; font-size: 0.75rem; cursor: pointer; transition: all 0.2s; }
-    .ai-suggestion:hover { background: var(--purple); color: var(--white); }
-
-    /* FLOAT BUTTON */
-    .ai-float-btn {
-      position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 999;
-      width: 60px; height: 60px; border-radius: 50%;
-      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-light) 100%);
-      color: var(--white); border: none; cursor: pointer;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.5rem; box-shadow: 0 4px 20px rgba(107,33,168,0.4);
-      transition: transform 0.2s; animation: pulseRing 2s infinite;
-    }
+    .ai-float-btn { position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 999; width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, var(--purple) 0%, var(--purple-light) 100%); color: var(--white); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: 0 4px 20px rgba(107,33,168,0.4); transition: transform 0.2s; animation: pulseRing 2s infinite; }
     .ai-float-btn:hover { transform: scale(1.1); }
-    .ai-float-btn.has-notif::after { content: ''; position: absolute; top: 5px; right: 5px; width: 12px; height: 12px; background: var(--error); border-radius: 50%; border: 2px solid var(--white); }
     @keyframes pulseRing { 0%,100%{box-shadow:0 0 0 0 rgba(168,85,247,0.5)} 50%{box-shadow:0 0 0 12px rgba(168,85,247,0)} }
 
     /* STATS BAR */
-    .stats-bar { background: var(--dark); color: var(--white); display: flex; justify-content: center; flex-wrap: wrap; gap: 0; }
+    .stats-bar { background: var(--dark); color: var(--white); display: flex; justify-content: center; flex-wrap: wrap; }
     .stat-item { flex: 1; min-width: 150px; max-width: 220px; text-align: center; padding: 1.5rem 1rem; border-right: 1px solid rgba(255,255,255,0.1); }
     .stat-item:last-child { border-right: none; }
     .stat-value { font-size: 2rem; font-weight: 800; color: var(--ocean-light); }
     .stat-label { font-size: 0.85rem; opacity: 0.8; margin-top: 0.25rem; }
 
     /* HERO */
-    .hero {
-      background: linear-gradient(180deg, var(--ocean) 0%, var(--ocean-light) 60%, var(--accent) 100%);
-      color: var(--white); text-align: center; padding: 4rem 2rem 2rem;
-    }
+    .hero { background: linear-gradient(180deg, var(--ocean) 0%, var(--ocean-light) 60%, var(--accent) 100%); color: var(--white); text-align: center; padding: 4rem 2rem 2rem; }
     .hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; margin-bottom: 1rem; line-height: 1.15; }
     .hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem; opacity: 0.9; }
     .hero-cta { display: inline-flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
@@ -118,7 +80,19 @@
     .btn-outline { background: transparent; color: var(--white); border: 2px solid var(--white); }
     .btn-ocean { background: var(--ocean); color: var(--white); }
     .btn-purple { background: var(--purple); color: var(--white); }
+    .btn-amber { background: var(--amber); color: var(--dark); }
     .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+
+    /* NL SEARCH */
+    .nl-search-section { background: var(--purple); padding: 1.5rem 2rem; text-align: center; }
+    .nl-search-label { color: rgba(255,255,255,0.8); font-size: 0.85rem; margin-bottom: 0.75rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+    .nl-search-box { display: flex; gap: 0.5rem; max-width: 650px; margin: 0 auto; }
+    .nl-search-box input { flex: 1; padding: 0.75rem 1.25rem; border: 2px solid rgba(255,255,255,0.3); border-radius: 50px; font-size: 1rem; background: rgba(255,255,255,0.15); color: var(--white); }
+    .nl-search-box input::placeholder { color: rgba(255,255,255,0.5); }
+    .nl-search-box input:focus { outline: none; border-color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.25); }
+    .nl-search-box button { padding: 0.75rem 1.5rem; background: var(--white); color: var(--purple); border: none; border-radius: 50px; font-weight: 700; cursor: pointer; font-size: 0.95rem; transition: transform 0.2s; white-space: nowrap; }
+    .nl-search-box button:hover { transform: scale(1.05); }
+    .nl-hints { color: rgba(255,255,255,0.6); font-size: 0.8rem; margin-top: 0.6rem; }
 
     /* SEARCH */
     .search-section { background: var(--white); padding: 3rem 2rem; margin-top: -2rem; border-radius: 24px 24px 0 0; position: relative; }
@@ -131,20 +105,17 @@
     .search-btn { display: block; width: 100%; max-width: 300px; margin: 0 auto; padding: 0.85rem; background: var(--ocean); color: var(--white); border: none; border-radius: 50px; font-size: 1.05rem; font-weight: 700; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; }
     .search-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,119,182,0.3); }
 
-    /* NL SEARCH BAR */
-    .nl-search-section { background: var(--purple); padding: 1.5rem 2rem; text-align: center; }
-    .nl-search-label { color: rgba(255,255,255,0.8); font-size: 0.85rem; margin-bottom: 0.75rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
-    .nl-search-box { display: flex; gap: 0.5rem; max-width: 600px; margin: 0 auto; }
-    .nl-search-box input { flex: 1; padding: 0.75rem 1.25rem; border: 2px solid rgba(255,255,255,0.3); border-radius: 50px; font-size: 1rem; background: rgba(255,255,255,0.15); color: var(--white); }
-    .nl-search-box input::placeholder { color: rgba(255,255,255,0.5); }
-    .nl-search-box input:focus { outline: none; border-color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.25); }
-    .nl-search-box button { padding: 0.75rem 1.5rem; background: var(--white); color: var(--purple); border: none; border-radius: 50px; font-weight: 700; cursor: pointer; font-size: 0.95rem; transition: transform 0.2s; white-space: nowrap; }
-    .nl-search-box button:hover { transform: scale(1.05); }
-    .nl-hints { color: rgba(255,255,255,0.6); font-size: 0.8rem; margin-top: 0.6rem; }
+    /* SAVE SEARCH ALERT */
+    .save-search-bar { background: var(--amber); padding: 1rem 2rem; display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+    .save-search-bar input { padding: 0.6rem 1rem; border: 2px solid rgba(0,0,0,0.2); border-radius: 50px; font-size: 0.9rem; background: rgba(255,255,255,0.9); color: var(--dark); }
+    .save-search-btn { padding: 0.6rem 1.25rem; background: var(--dark); color: var(--white); border: none; border-radius: 50px; font-weight: 700; cursor: pointer; font-size: 0.85rem; transition: transform 0.2s; }
+    .save-search-btn:hover { transform: scale(1.05); }
+    .saved-alert-badge { background: var(--success); color: var(--white); padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.8rem; font-weight: 700; display: none; }
+    .saved-alert-badge.visible { display: inline-block; }
 
     /* RESULTS */
     .results-section { background: var(--white); padding: 2rem; }
-    .results-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; }
+    .results-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; }
     .results-count { font-size: 1.1rem; font-weight: 700; color: var(--dark); }
     .results-topbar { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
     .compare-btn { padding: 0.5rem 1rem; background: var(--ocean-light); color: var(--white); border: none; border-radius: 50px; font-size: 0.85rem; font-weight: 600; cursor: pointer; display: none; transition: all 0.2s; }
@@ -155,10 +126,11 @@
     /* LISTING CARD */
     .listing-card { background: var(--white); border-radius: 16px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; position: relative; }
     .listing-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.15); }
-    .listing-img { height: 160px; background: linear-gradient(135deg, var(--ocean-light), var(--accent)); display: flex; align-items: center; justify-content: center; font-size: 4rem; position: relative; }
+    .listing-img { height: 160px; background: linear-gradient(135deg, var(--ocean-light), var(--accent)); display: flex; align-items: center; justify-content: center; font-size: 4rem; position: relative; overflow: hidden; }
     .listing-badge { position: absolute; top: 0.75rem; left: 0.75rem; background: var(--ocean); color: var(--white); padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.75rem; font-weight: 700; }
     .listing-badge.ai-badge { background: var(--purple); }
     .listing-badge.hot-badge { background: var(--error); }
+    .listing-badge.new-badge { background: var(--amber); color: var(--dark); }
     .favorite-btn { position: absolute; top: 0.75rem; right: 0.75rem; background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: transform 0.2s; }
     .favorite-btn:hover { transform: scale(1.15); }
     .favorite-btn.active { background: #fde8e8; }
@@ -170,6 +142,7 @@
     .listing-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
     .tag { background: var(--sand); color: var(--dark); padding: 0.2rem 0.6rem; border-radius: 50px; font-size: 0.75rem; font-weight: 500; }
     .listing-ai-score { position: absolute; bottom: 0.75rem; right: 0.75rem; background: var(--purple); color: var(--white); padding: 0.2rem 0.5rem; border-radius: 8px; font-size: 0.7rem; font-weight: 700; }
+    .listing-roi { position: absolute; bottom: 0.75rem; left: 0.75rem; background: rgba(0,0,0,0.7); color: var(--success); padding: 0.2rem 0.5rem; border-radius: 8px; font-size: 0.7rem; font-weight: 700; }
     .no-results { text-align: center; padding: 3rem; color: #888; }
     .no-results-icon { font-size: 4rem; margin-bottom: 1rem; }
 
@@ -197,46 +170,63 @@
     .simulator-section { background: var(--white); padding: 3rem 2rem; }
     .simulator-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
     .simulator-section > p { text-align: center; color: #666; margin-bottom: 2rem; }
-    .simulator-card { background: linear-gradient(135deg, var(--ocean), var(--ocean-light)); border-radius: 20px; padding: 2.5rem; max-width: 700px; margin: 0 auto; color: var(--white); }
-    .simulator-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem; }
-    .sim-field label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem; opacity: 0.9; }
+    .simulator-card { background: linear-gradient(135deg, var(--ocean), var(--ocean-light)); border-radius: 20px; padding: 2.5rem; max-width: 750px; margin: 0 auto; color: var(--white); }
+    .simulator-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.25rem; margin-bottom: 1.5rem; }
+    .sim-field label { display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 0.4rem; opacity: 0.9; }
     .sim-field input, .sim-field select { width: 100%; padding: 0.65rem 1rem; border: 2px solid rgba(255,255,255,0.3); border-radius: 12px; font-size: 1rem; background: rgba(255,255,255,0.15); color: var(--white); }
     .sim-field input::placeholder { color: rgba(255,255,255,0.6); }
-    .sim-field select option { background: var(--ocean); color: var(--white); }
-    .sim-btn { width: 100%; padding: 0.85rem; background: var(--white); color: var(--ocean); border: none; border-radius: 50px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: transform 0.2s; }
+    .sim-field select option { background: var(--ocean); }
+    .sim-btn { width: 100%; padding: 0.85rem; background: var(--white); color: var(--ocean); border: none; border-radius: 50px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: transform 0.2s; margin-bottom: 1.5rem; }
     .sim-btn:hover { transform: scale(1.03); }
-    .sim-result { margin-top: 1.5rem; padding: 1.5rem; background: rgba(255,255,255,0.15); border-radius: 16px; display: none; }
+    .sim-result { display: none; }
     .sim-result.visible { display: block; }
-    .sim-result-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 1rem; text-align: center; }
-    .sim-result-value { font-size: 1.5rem; font-weight: 800; color: var(--white); }
-    .sim-result-label { font-size: 0.8rem; opacity: 0.8; margin-top: 0.25rem; }
+    .sim-result-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; text-align: center; }
+    .sim-result-value { font-size: 1.4rem; font-weight: 800; color: var(--white); }
+    .sim-result-label { font-size: 0.78rem; opacity: 0.8; margin-top: 0.2rem; }
+
+    /* MORTGAGE CHART */
+    .mortgage-chart { margin-top: 1.25rem; background: rgba(0,0,0,0.15); border-radius: 12px; padding: 1rem; }
+    .chart-title { font-size: 0.82rem; opacity: 0.8; margin-bottom: 0.75rem; text-align: center; }
+    .chart-bars { display: flex; align-items: flex-end; gap: 0.25rem; height: 80px; }
+    .chart-bar-group { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 0.2rem; }
+    .chart-bar-fill { width: 100%; background: rgba(255,255,255,0.8); border-radius: 4px 4px 0 0; min-height: 4px; transition: height 0.6s ease; }
+    .chart-bar-label { font-size: 0.65rem; opacity: 0.7; text-align: center; }
+    .chart-legend { display: flex; justify-content: center; gap: 1rem; margin-top: 0.5rem; font-size: 0.75rem; }
+    .chart-legend span { display: flex; align-items: center; gap: 0.3rem; }
+    .chart-legend-dot { width: 8px; height: 8px; border-radius: 50%; }
+    .chart-legend-dot.amort { background: rgba(255,255,255,0.8); }
+    .chart-legend-dot.interest { background: var(--amber); }
+
     .sim-table-toggle { display: block; margin: 1rem auto 0; background: transparent; border: 2px solid rgba(255,255,255,0.4); color: var(--white); padding: 0.5rem 1.25rem; border-radius: 50px; cursor: pointer; font-size: 0.85rem; font-weight: 600; transition: all 0.2s; }
     .sim-table-toggle:hover { background: rgba(255,255,255,0.15); }
-    .amort-table { margin-top: 1rem; display: none; max-height: 300px; overflow-y: auto; border-radius: 12px; background: rgba(0,0,0,0.1); }
+    .amort-table { margin-top: 1rem; display: none; max-height: 250px; overflow-y: auto; border-radius: 12px; background: rgba(0,0,0,0.1); }
     .amort-table.visible { display: block; }
-    .amort-table table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
-    .amort-table th { background: rgba(255,255,255,0.2); padding: 0.6rem 0.5rem; text-align: center; font-weight: 700; }
-    .amort-table td { padding: 0.5rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); }
-    .amort-table tr:nth-child(even) td { background: rgba(255,255,255,0.05); }
+    .amort-table table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+    .amort-table th { background: rgba(255,255,255,0.2); padding: 0.5rem 0.4rem; text-align: center; font-weight: 700; }
+    .amort-table td { padding: 0.4rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); }
 
-    /* AI INSIGHTS */
-    .ai-insights-section { background: var(--dark); color: var(--white); padding: 3rem 2rem; }
-    .ai-insights-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; }
-    .ai-insights-section > p { text-align: center; opacity: 0.7; margin-bottom: 2rem; }
-    .insights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
-    .insight-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 1.5rem; }
-    .insight-icon { font-size: 2rem; margin-bottom: 0.75rem; }
-    .insight-card h3 { font-size: 1rem; margin-bottom: 0.5rem; }
-    .insight-card p { font-size: 0.85rem; opacity: 0.7; line-height: 1.6; }
-    .insight-value { font-size: 1.75rem; font-weight: 800; color: var(--ocean-light); margin-bottom: 0.25rem; }
+    /* RENTAL YIELD */
+    .rental-section { background: var(--sand); padding: 3rem 2rem; }
+    .rental-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
+    .rental-section > p { text-align: center; color: #666; margin-bottom: 2rem; }
+    .rental-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; max-width: 1000px; margin: 0 auto; }
+    .rental-card { background: var(--white); border-radius: 16px; padding: 1.5rem; transition: transform 0.2s; }
+    .rental-card:hover { transform: translateY(-3px); }
+    .rental-card-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+    .rental-city { font-weight: 700; font-size: 1rem; color: var(--dark); }
+    .rental-yield { font-size: 1.75rem; font-weight: 800; color: var(--success); }
+    .rental-yield-label { font-size: 0.78rem; color: #888; }
+    .rental-bar { background: #eee; border-radius: 50px; height: 8px; margin: 0.5rem 0; overflow: hidden; }
+    .rental-bar-fill { height: 100%; background: var(--success); border-radius: 50px; transition: width 0.6s ease; }
+    .rental-note { font-size: 0.78rem; color: #666; margin-top: 0.5rem; }
 
     /* AI VALUATION */
     .ai-valuation-section { background: var(--white); padding: 3rem 2rem; }
     .ai-valuation-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
     .ai-valuation-section > p { text-align: center; color: #666; margin-bottom: 2rem; }
-    .valuation-card { background: linear-gradient(135deg, var(--purple), var(--purple-light)); border-radius: 20px; padding: 2.5rem; max-width: 600px; margin: 0 auto; color: var(--white); }
-    .valuation-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem; }
-    .val-field label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem; opacity: 0.9; }
+    .valuation-card { background: linear-gradient(135deg, var(--purple), var(--purple-light)); border-radius: 20px; padding: 2.5rem; max-width: 650px; margin: 0 auto; color: var(--white); }
+    .valuation-fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+    .val-field label { display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 0.4rem; opacity: 0.9; }
     .val-field input, .val-field select { width: 100%; padding: 0.65rem 1rem; border: 2px solid rgba(255,255,255,0.3); border-radius: 12px; font-size: 1rem; background: rgba(255,255,255,0.15); color: var(--white); }
     .val-field select option { background: var(--purple); }
     .val-btn { width: 100%; padding: 0.85rem; background: var(--white); color: var(--purple); border: none; border-radius: 50px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: transform 0.2s; }
@@ -244,28 +234,40 @@
     .val-result { margin-top: 1.5rem; display: none; }
     .val-result.visible { display: block; }
     .val-result-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; text-align: center; }
-    .val-result-item {}
-    .val-result-value { font-size: 1.5rem; font-weight: 800; }
-    .val-result-label { font-size: 0.8rem; opacity: 0.8; margin-top: 0.25rem; }
-    .val-result-item:first-child .val-result-value { color: var(--success); }
-    .val-result-item:nth-child(2) .val-result-value { color: var(--error); }
+    .val-result-value { font-size: 1.4rem; font-weight: 800; }
+    .val-result-label { font-size: 0.78rem; opacity: 0.8; margin-top: 0.25rem; }
+    .val-result-item:first-child .val-result-value { color: #86efac; }
+    .val-result-item:nth-child(2) .val-result-value { color: var(--white); font-size: 1.8rem; }
+    .val-result-item:nth-child(3) .val-result-value { color: #fca5a5; }
     .val-bar { margin-top: 1.5rem; background: rgba(255,255,255,0.15); border-radius: 12px; padding: 1.25rem; }
     .val-bar-label { font-size: 0.85rem; opacity: 0.8; margin-bottom: 0.5rem; }
     .val-bar-track { background: rgba(255,255,255,0.2); border-radius: 50px; height: 12px; position: relative; }
     .val-bar-fill { height: 100%; border-radius: 50px; background: var(--white); transition: width 0.8s ease; }
     .val-bar-marker { position: absolute; top: -4px; width: 20px; height: 20px; background: var(--white); border-radius: 50%; transform: translateX(-50%); box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+    .val-insight { margin-top: 1rem; font-size: 0.88rem; opacity: 0.9; line-height: 1.5; }
 
-    /* AI MARKET TRENDS */
-    .market-section { background: var(--sand); padding: 3rem 2rem; }
+    /* AI INSIGHTS */
+    .ai-insights-section { background: var(--dark); color: var(--white); padding: 3rem 2rem; }
+    .ai-insights-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; }
+    .ai-insights-section > p { text-align: center; opacity: 0.7; margin-bottom: 2.5rem; }
+    .insights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
+    .insight-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 1.5rem; }
+    .insight-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+    .insight-value { font-size: 1.75rem; font-weight: 800; color: var(--ocean-light); margin-bottom: 0.25rem; }
+    .insight-card h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+    .insight-card p { font-size: 0.85rem; opacity: 0.7; line-height: 1.6; }
+
+    /* MARKET TRENDS */
+    .market-section { background: var(--white); padding: 3rem 2rem; }
     .market-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 2rem; color: var(--dark); }
-    .market-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
-    .market-card { background: var(--white); border-radius: 16px; padding: 1.75rem; transition: transform 0.2s; }
+    .market-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; max-width: 1000px; margin: 0 auto; }
+    .market-card { background: var(--sand); border-radius: 16px; padding: 1.5rem; transition: transform 0.2s; }
     .market-card:hover { transform: translateY(-3px); }
     .market-card-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
-    .market-card h3 { font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--dark); }
+    .market-stat { font-size: 1.4rem; font-weight: 800; color: var(--ocean); margin-bottom: 0.1rem; }
+    .market-stat-label { font-size: 0.78rem; color: #888; margin-bottom: 0.5rem; }
+    .market-card h3 { font-size: 1.05rem; margin-bottom: 0.4rem; color: var(--dark); }
     .market-card p { font-size: 0.85rem; color: #666; line-height: 1.6; }
-    .market-stat { font-size: 1.5rem; font-weight: 800; color: var(--ocean); margin-bottom: 0.25rem; }
-    .market-stat-label { font-size: 0.8rem; color: #888; }
 
     /* COMPARE */
     .compare-section { background: var(--sand); padding: 3rem 2rem; display: none; }
@@ -281,25 +283,68 @@
     .compare-clear { display: block; margin: 1rem auto 0; padding: 0.6rem 1.5rem; background: transparent; color: var(--error); border: 2px solid var(--error); border-radius: 50px; cursor: pointer; font-weight: 600; transition: all 0.2s; }
     .compare-clear:hover { background: var(--error); color: var(--white); }
 
-    /* CITIES */
-    .cities-section { background: var(--white); padding: 3rem 2rem; }
-    .cities-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
-    .cities-section > p { text-align: center; color: #666; margin-bottom: 2rem; }
-    .cities-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; max-width: 1100px; margin: 0 auto; }
-    .city-card { background: var(--sand); border-radius: 16px; overflow: hidden; text-decoration: none; color: var(--dark); transition: transform 0.2s, box-shadow 0.2s; display: flex; }
-    .city-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
-    .city-card-img { width: 70px; min-width: 70px; background: linear-gradient(135deg, var(--ocean-light), var(--accent)); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; }
-    .city-card-body { padding: 1.25rem; flex: 1; }
-    .city-card-body h3 { font-size: 1.1rem; margin-bottom: 0.35rem; }
-    .city-card-body p { font-size: 0.85rem; color: #666; margin-bottom: 0.75rem; line-height: 1.5; }
-    .city-card-stats { display: flex; gap: 1rem; font-size: 0.8rem; color: var(--ocean); font-weight: 600; }
-    .city-ai-insight { font-size: 0.75rem; color: var(--purple); margin-top: 0.5rem; font-weight: 600; }
+    /* NEIGHBORHOOD GUIDE */
+    .neighborhood-section { background: var(--sand); padding: 3rem 2rem; }
+    .neighborhood-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
+    .neighborhood-section > p { text-align: center; color: #666; margin-bottom: 2rem; }
+    .neighborhood-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; max-width: 1100px; margin: 0 auto; }
+    .neighborhood-card { background: var(--white); border-radius: 16px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; }
+    .neighborhood-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+    .neighborhood-header { background: linear-gradient(135deg, var(--ocean), var(--ocean-light)); color: var(--white); padding: 1.25rem; display: flex; align-items: center; gap: 1rem; }
+    .neighborhood-header-icon { font-size: 2.5rem; }
+    .neighborhood-header-info { flex: 1; }
+    .neighborhood-header-info h3 { font-size: 1.2rem; margin-bottom: 0.2rem; }
+    .neighborhood-header-info p { font-size: 0.82rem; opacity: 0.85; }
+    .neighborhood-ai-badge { background: rgba(255,255,255,0.2); padding: 0.2rem 0.6rem; border-radius: 50px; font-size: 0.75rem; font-weight: 700; margin-left: auto; }
+    .neighborhood-body { padding: 1.25rem; }
+    .neighborhood-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin-bottom: 1rem; }
+    .neighborhood-stat { text-align: center; background: var(--sand); border-radius: 10px; padding: 0.6rem; }
+    .neighborhood-stat-value { font-size: 1rem; font-weight: 800; color: var(--ocean); }
+    .neighborhood-stat-label { font-size: 0.7rem; color: #888; }
+    .neighborhood-features { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.75rem; }
+    .neighborhood-feature { background: var(--ocean-light); color: var(--white); padding: 0.2rem 0.6rem; border-radius: 50px; font-size: 0.72rem; font-weight: 600; }
+    .neighborhood-desc { font-size: 0.85rem; color: #666; line-height: 1.6; margin-bottom: 1rem; }
+    .neighborhood-cta { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .neighborhood-cta button { flex: 1; padding: 0.5rem; border: none; border-radius: 50px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: transform 0.2s; }
+    .neighborhood-cta button:hover { transform: scale(1.03); }
+    .ng-btn-filter { background: var(--ocean); color: var(--white); }
+    .ng-btn-ai { background: var(--purple); color: var(--white); }
+
+    /* ROI CALCULATOR */
+    .roi-section { background: var(--white); padding: 3rem 2rem; }
+    .roi-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
+    .roi-section > p { text-align: center; color: #666; margin-bottom: 2rem; }
+    .roi-card { background: var(--dark); border-radius: 20px; padding: 2.5rem; max-width: 700px; margin: 0 auto; color: var(--white); }
+    .roi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; margin-bottom: 1.5rem; }
+    .roi-field label { display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 0.4rem; opacity: 0.9; }
+    .roi-field input, .roi-field select { width: 100%; padding: 0.65rem 1rem; border: 2px solid rgba(255,255,255,0.3); border-radius: 12px; font-size: 1rem; background: rgba(255,255,255,0.15); color: var(--white); }
+    .roi-field input::placeholder { color: rgba(255,255,255,0.5); }
+    .roi-field select option { background: var(--dark); }
+    .roi-btn { width: 100%; padding: 0.85rem; background: var(--success); color: var(--white); border: none; border-radius: 50px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: transform 0.2s; margin-bottom: 1.5rem; }
+    .roi-btn:hover { transform: scale(1.03); }
+    .roi-result { display: none; }
+    .roi-result.visible { display: block; }
+    .roi-result-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 1rem; text-align: center; margin-bottom: 1.5rem; }
+    .roi-result-item { background: rgba(255,255,255,0.08); border-radius: 12px; padding: 1rem; }
+    .roi-result-value { font-size: 1.5rem; font-weight: 800; color: var(--success); }
+    .roi-result-label { font-size: 0.78rem; opacity: 0.75; margin-top: 0.25rem; }
+    .roi-chart { background: rgba(255,255,255,0.05); border-radius: 12px; padding: 1rem; }
+    .roi-bar-row { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; }
+    .roi-bar-label { font-size: 0.8rem; width: 100px; text-align: right; opacity: 0.8; }
+    .roi-bar-track { flex: 1; background: rgba(255,255,255,0.1); border-radius: 50px; height: 20px; }
+    .roi-bar-fill { height: 100%; border-radius: 50px; transition: width 0.8s ease; }
+    .roi-bar-value { font-size: 0.8rem; font-weight: 700; width: 80px; }
+    .closing-costs { margin-top: 1.25rem; padding: 1rem; background: rgba(255,255,255,0.05); border-radius: 12px; display: none; }
+    .closing-costs.visible { display: block; }
+    .closing-costs h4 { font-size: 0.9rem; margin-bottom: 0.75rem; opacity: 0.9; }
+    .closing-item { display: flex; justify-content: space-between; font-size: 0.82rem; padding: 0.3rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .closing-item:last-child { border-bottom: none; font-weight: 700; }
 
     /* FOR REALTORS */
     .realtors-section { background: linear-gradient(135deg, var(--dark) 0%, #012a45 100%); color: var(--white); padding: 3rem 2rem; }
     .realtors-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; }
     .realtors-section > p { text-align: center; opacity: 0.8; margin-bottom: 2.5rem; }
-    .realtors-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
+    .realtors-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
     .realtor-card { background: rgba(255,255,255,0.08); border: 2px solid rgba(255,255,255,0.15); border-radius: 16px; padding: 2rem 1.5rem; text-align: center; transition: border-color 0.2s, transform 0.2s; }
     .realtor-card:hover { border-color: var(--ocean-light); transform: translateY(-3px); }
     .realtor-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
@@ -311,40 +356,74 @@
     .btn-realtor-email { background: transparent; color: var(--white); padding: 0.85rem 2rem; border-radius: 50px; font-weight: 700; text-decoration: none; border: 2px solid rgba(255,255,255,0.4); transition: all 0.2s; display: inline-block; }
     .btn-realtor-email:hover { background: rgba(255,255,255,0.1); }
 
+    /* QR CODE + EMBED */
+    .qr-embed-section { background: var(--white); padding: 3rem 2rem; }
+    .qr-embed-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
+    .qr-embed-section > p { text-align: center; color: #666; margin-bottom: 2rem; }
+    .qr-embed-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 800px; margin: 0 auto; }
+    .qr-card { background: var(--sand); border-radius: 16px; padding: 2rem; text-align: center; }
+    .qr-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--dark); }
+    .qr-card p { font-size: 0.85rem; color: #666; margin-bottom: 1.25rem; }
+    .qr-preview { width: 120px; height: 120px; background: #eee; border-radius: 12px; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; color: #888; border: 2px solid #ddd; }
+    .qr-preview img { width: 100%; height: 100%; border-radius: 8px; }
+    .qr-input { width: 100%; padding: 0.65rem 1rem; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 0.9rem; margin-bottom: 0.75rem; }
+    .qr-btn { padding: 0.65rem 1.5rem; background: var(--purple); color: var(--white); border: none; border-radius: 50px; font-weight: 700; cursor: pointer; font-size: 0.85rem; transition: transform 0.2s; }
+    .qr-btn:hover { transform: scale(1.05); }
+    .qr-result-url { background: var(--white); border: 2px solid var(--purple-light); border-radius: 8px; padding: 0.75rem; font-size: 0.78rem; color: var(--dark); word-break: break-all; margin-top: 0.75rem; display: none; }
+    .qr-result-url.visible { display: block; }
+    .embed-output { background: var(--dark); color: #a3e635; font-family: monospace; font-size: 0.72rem; padding: 1rem; border-radius: 12px; resize: none; width: 100%; min-height: 80px; border: none; display: none; margin-top: 0.75rem; }
+    .embed-output.visible { display: block; }
+
     /* AI DESCRIPTION GENERATOR */
-    .ai-desc-section { background: var(--white); padding: 3rem 2rem; }
+    .ai-desc-section { background: var(--sand); padding: 3rem 2rem; }
     .ai-desc-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
     .ai-desc-section > p { text-align: center; color: #666; margin-bottom: 2rem; }
-    .ai-desc-card { background: var(--sand); border-radius: 20px; padding: 2rem; max-width: 700px; margin: 0 auto; }
-    .ai-desc-inputs { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+    .ai-desc-card { background: var(--white); border-radius: 20px; padding: 2rem; max-width: 750px; margin: 0 auto; }
+    .ai-desc-inputs { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.75rem; margin-bottom: 1rem; }
     .ai-desc-textarea { width: 100%; padding: 0.75rem 1rem; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 0.95rem; background: var(--white); color: var(--dark); font-family: inherit; resize: vertical; min-height: 80px; margin-bottom: 1rem; }
     .ai-desc-textarea:focus { outline: none; border-color: var(--purple-light); }
     .ai-desc-tone { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
     .tone-btn { padding: 0.4rem 1rem; border: 2px solid var(--purple); color: var(--purple); border-radius: 50px; font-size: 0.8rem; cursor: pointer; background: transparent; transition: all 0.2s; font-weight: 600; }
     .tone-btn.active, .tone-btn:hover { background: var(--purple); color: var(--white); }
-    .ai-desc-output { background: var(--white); border-radius: 12px; padding: 1.25rem; margin-top: 1rem; min-height: 100px; display: none; border: 2px solid var(--purple-light); }
+    .ai-desc-generate-btn { width: 100%; padding: 0.85rem; background: var(--purple); color: var(--white); border: none; border-radius: 50px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: transform 0.2s; margin-bottom: 1rem; }
+    .ai-desc-generate-btn:hover { transform: scale(1.02); }
+    .ai-desc-loading { display: none; align-items: center; gap: 0.5rem; font-size: 0.9rem; color: var(--purple); margin-bottom: 1rem; }
+    .ai-desc-loading.visible { display: flex; }
+    .ai-desc-loading-dot { width: 8px; height: 8px; background: var(--purple); border-radius: 50%; animation: typingBounce 1.2s infinite; }
+    .ai-desc-loading-dot:nth-child(2) { animation-delay: 0.2s; }
+    .ai-desc-loading-dot:nth-child(3) { animation-delay: 0.4s; }
+    .ai-desc-output { background: var(--white); border-radius: 12px; padding: 1.25rem; margin-top: 0; min-height: 100px; display: none; border: 2px solid var(--purple-light); }
     .ai-desc-output.visible { display: block; }
-    .ai-desc-output-text { font-size: 0.95rem; line-height: 1.7; color: var(--dark); white-space: pre-wrap; }
+    .ai-desc-output-text { font-size: 0.92rem; line-height: 1.7; color: var(--dark); white-space: pre-wrap; }
     .ai-desc-actions { display: flex; gap: 0.5rem; margin-top: 0.75rem; flex-wrap: wrap; }
     .ai-desc-action { padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.8rem; cursor: pointer; font-weight: 600; border: none; transition: transform 0.2s; }
     .ai-desc-action:hover { transform: scale(1.05); }
     .ai-desc-copy-btn { background: var(--purple); color: var(--white); }
     .ai-desc-regen-btn { background: var(--ocean-light); color: var(--white); }
-    .ai-desc-loading { display: none; align-items: center; gap: 0.5rem; font-size: 0.9rem; color: var(--purple); margin-top: 0.5rem; }
-    .ai-desc-loading.visible { display: flex; }
-    .ai-desc-loading-dot { width: 8px; height: 8px; background: var(--purple); border-radius: 50%; animation: typingBounce 1.2s infinite; }
-    .ai-desc-loading-dot:nth-child(2) { animation-delay: 0.2s; }
-    .ai-desc-loading-dot:nth-child(3) { animation-delay: 0.4s; }
 
     /* TESTIMONIALS */
-    .testimonials-section { background: var(--sand); padding: 3rem 2rem; }
+    .testimonials-section { background: var(--white); padding: 3rem 2rem; }
     .testimonials-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 2rem; color: var(--dark); }
     .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 900px; margin: 0 auto; }
-    .testimonial-card { background: var(--white); border-radius: 16px; padding: 1.75rem; }
+    .testimonial-card { background: var(--sand); border-radius: 16px; padding: 1.75rem; }
     .testimonial-quote { font-size: 2rem; color: var(--ocean-light); margin-bottom: 0.75rem; }
     .testimonial-text { font-style: italic; color: #555; line-height: 1.7; margin-bottom: 1rem; }
     .testimonial-author { font-weight: 700; color: var(--dark); }
     .testimonial-role { font-size: 0.85rem; color: var(--ocean); }
+
+    /* CITIES */
+    .cities-section { background: var(--sand); padding: 3rem 2rem; }
+    .cities-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
+    .cities-section > p { text-align: center; color: #666; margin-bottom: 2rem; }
+    .cities-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; max-width: 1100px; margin: 0 auto; }
+    .city-card { background: var(--white); border-radius: 16px; overflow: hidden; text-decoration: none; color: var(--dark); transition: transform 0.2s, box-shadow 0.2s; display: flex; }
+    .city-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+    .city-card-img { width: 70px; min-width: 70px; background: linear-gradient(135deg, var(--ocean-light), var(--accent)); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; }
+    .city-card-body { padding: 1.25rem; flex: 1; }
+    .city-card-body h3 { font-size: 1.1rem; margin-bottom: 0.35rem; }
+    .city-card-body p { font-size: 0.85rem; color: #666; margin-bottom: 0.75rem; line-height: 1.5; }
+    .city-card-stats { display: flex; gap: 1rem; font-size: 0.8rem; color: var(--ocean); font-weight: 600; }
+    .city-ai-insight { font-size: 0.75rem; color: var(--purple); margin-top: 0.5rem; font-weight: 600; }
 
     /* FAQ */
     .faq-section { background: var(--white); padding: 3rem 2rem; }
@@ -397,7 +476,7 @@
     .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--ocean-light); }
     .form-group textarea { resize: vertical; min-height: 120px; }
     .form-success { display: none; padding: 1rem; background: var(--success); color: var(--white); border-radius: 12px; text-align: center; font-weight: 600; margin-top: 1rem; }
-    .form-group.ai-score-group { background: #f3e8ff; border-radius: 12px; padding: 1rem; margin-bottom: 1rem; }
+    .ai-score-group { background: #f3e8ff; border-radius: 12px; padding: 1rem; margin-bottom: 1rem; border: 2px solid var(--purple-light); }
     .ai-lead-score { display: flex; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap; }
     .ai-lead-tag { padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.75rem; font-weight: 600; }
     .tag-hot { background: var(--error); color: var(--white); }
@@ -414,30 +493,33 @@
     /* MODAL */
     .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 1000; align-items: center; justify-content: center; padding: 1rem; }
     .modal-overlay.active { display: flex; }
-    .modal { background: var(--white); border-radius: 20px; max-width: 700px; width: 100%; max-height: 90vh; overflow-y: auto; position: relative; }
+    .modal { background: var(--white); border-radius: 20px; max-width: 720px; width: 100%; max-height: 90vh; overflow-y: auto; position: relative; }
     .modal-close { position: absolute; top: 1rem; right: 1rem; background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 1.2rem; cursor: pointer; z-index: 10; display: flex; align-items: center; justify-content: center; }
-    .modal-img { width: 100%; height: 280px; background: linear-gradient(135deg, var(--ocean-light), var(--accent)); display: flex; align-items: center; justify-content: center; font-size: 5rem; }
+    .modal-img { width: 100%; height: 260px; background: linear-gradient(135deg, var(--ocean-light), var(--accent)); display: flex; align-items: center; justify-content: center; font-size: 5rem; }
     .modal-body { padding: 2rem; }
     .modal-location { color: var(--ocean); font-weight: 600; font-size: 0.9rem; margin-bottom: 0.5rem; }
     .modal-title { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; }
-    .modal-price { font-size: 1.75rem; font-weight: 800; color: var(--ocean); margin-bottom: 1.5rem; }
-    .modal-details { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+    .modal-price { font-size: 1.75rem; font-weight: 800; color: var(--ocean); margin-bottom: 1.25rem; }
+    .modal-details { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 0.75rem; margin-bottom: 1.25rem; }
     .modal-detail { background: var(--sand); padding: 0.75rem; border-radius: 12px; text-align: center; }
-    .modal-detail-value { font-weight: 700; font-size: 1.1rem; }
-    .modal-detail-label { font-size: 0.8rem; color: #666; }
-    .modal-description { color: #555; margin-bottom: 1.5rem; line-height: 1.7; }
+    .modal-detail-value { font-weight: 700; font-size: 1.05rem; }
+    .modal-detail-label { font-size: 0.78rem; color: #666; }
+    .modal-description { color: #555; margin-bottom: 1.25rem; line-height: 1.7; }
     .modal-ai-score { background: #f3e8ff; border: 2px solid var(--purple-light); border-radius: 12px; padding: 0.85rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem; }
     .modal-ai-score-icon { font-size: 1.5rem; }
     .modal-ai-score-text { flex: 1; }
     .modal-ai-score-text strong { color: var(--purple); font-size: 0.95rem; }
     .modal-ai-score-text p { font-size: 0.8rem; color: #666; margin: 0; }
-    .modal-cta { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
+    .modal-roi-bar { background: var(--sand); border-radius: 10px; padding: 0.75rem; margin-bottom: 1rem; }
+    .modal-roi-bar-label { font-size: 0.8rem; color: var(--dark); margin-bottom: 0.4rem; font-weight: 600; }
+    .modal-roi-bar-track { background: #ddd; border-radius: 50px; height: 8px; }
+    .modal-roi-bar-fill { height: 100%; border-radius: 50px; background: var(--success); }
     .modal-compare-btn { display: none; width: 100%; padding: 0.75rem; background: var(--accent); color: var(--dark); border: 2px solid var(--ocean); border-radius: 50px; font-size: 0.95rem; font-weight: 700; cursor: pointer; text-align: center; transition: all 0.2s; margin-bottom: 0.5rem; }
     .modal-compare-btn.visible { display: block; }
     .modal-compare-btn:hover { background: var(--ocean); color: var(--white); }
-    .modal-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1rem; }
+    .modal-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
     .modal-share { display: flex; gap: 0.75rem; flex-wrap: wrap; }
-    .share-btn { padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; text-decoration: none; transition: transform 0.2s; display: inline-flex; align-items: center; gap: 0.4rem; border: none; cursor: pointer; }
+    .share-btn { padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.82rem; font-weight: 600; text-decoration: none; transition: transform 0.2s; display: inline-flex; align-items: center; gap: 0.4rem; border: none; cursor: pointer; }
     .share-btn:hover { transform: scale(1.05); }
     .share-whatsapp { background: #25D366; color: var(--white); }
     .share-twitter { background: #1DA1F2; color: var(--white); }
@@ -457,8 +539,8 @@
       .valuation-fields { grid-template-columns: 1fr; }
       .nl-search-box { flex-direction: column; }
       .ai-assistant { right: 0.5rem; width: calc(100vw - 1rem); }
-      .val-result-grid { grid-template-columns: 1fr; }
-      .ai-desc-inputs { grid-template-columns: 1fr; }
+      .qr-embed-grid { grid-template-columns: 1fr; }
+      .neighborhood-stats { grid-template-columns: repeat(3, 1fr); }
     }
   </style>
 </head>
@@ -484,7 +566,7 @@
 </header>
 
 <!-- AI ASSISTANT -->
-<button class="ai-float-btn" id="aiFloatBtn" onclick="toggleAI()">🤖</button>
+<button class="ai-float-btn" id="aiFloatBtn" onclick="toggleAI()" title="Assistente IA">🤖</button>
 <div class="ai-assistant" id="aiAssistant">
   <div class="ai-header">
     <span>🧠 Assistente IA — Praia Digital</span>
@@ -492,11 +574,13 @@
   </div>
   <div class="ai-messages" id="aiMessages">
     <div class="ai-msg bot">
-      Olá! Sou o assistente inteligente da Praia Digital. 🧠 Pode me perguntar em linguagem natural sobre imóveis, bairros, preços, financiamento ou qualquer dúvida sobre o mercado litorâneo!
-      <br><br>Exemplos:
-      <span class="ai-suggestion" onclick="sendAIMsg('Apartamento 2 quartos em Praia Grande até 800mil')">🏠 Apto 2q em PG até 800k</span>
-      <span class="ai-suggestion" onclick="sendAIMsg('Qual melhor cidade para investir no litoral?')">📊 Melhor pra investir?</span>
-      <span class="ai-suggestion" onclick="sendAIMsg('Simule financiamento de 500mil com 100mil de entrada')">🏦 Simular financiamento</span>
+      Olá! Sou a assistente inteligente da Praia Digital. 🧠 Posso responder perguntas sobre imóveis, bairros, financiamento, investimento e muito mais — tudo em português!
+      <div class="ai-suggestions">
+        <span class="ai-suggestion" onclick="sendAIMsg('Apartamento 2 quartos em Praia Grande até 800mil')">🏠 Apto 2q em PG</span>
+        <span class="ai-suggestion" onclick="sendAIMsg('Qual melhor cidade para investir no litoral?')">📊 Melhor pra investir?</span>
+        <span class="ai-suggestion" onclick="sendAIMsg('Simular financiamento de 500mil com entrada de 100mil')">🏦 Simular financiamento</span>
+        <span class="ai-suggestion" onclick="sendAIMsg('Me recommande uma pousada com bom ROI')">🎯 Recomendar pousada</span>
+      </div>
     </div>
   </div>
   <div class="ai-input-row">
@@ -508,13 +592,13 @@
 <section class="stats-bar">
   <div class="stat-item"><div class="stat-value">12</div><div class="stat-label">Imóveis disponíveis</div></div>
   <div class="stat-item"><div class="stat-value">7</div><div class="stat-label">Cidades no litoral</div></div>
-  <div class="stat-item"><div class="stat-value">🧠</div><div class="stat-label">IA帮他决策</div></div>
+  <div class="stat-item"><div class="stat-value">🧠</div><div class="stat-label">IA + 15 ferramentas</div></div>
   <div class="stat-item"><div class="stat-value">24h</div><div class="stat-label">Resposta rápida</div></div>
 </section>
 
 <section class="hero">
   <h1>Encontre seu imóvel<br>no litoral perfeito</h1>
-  <p>Plataforma com IA para decisões mais inteligentes — apartamentos, casas, pousadas e terrenos nas melhores praias do Brasil.</p>
+  <p>A primeira plataforma do litoral com inteligência artificial — apartamentos, casas, pousadas e terrenos com IA帮你决策.</p>
   <div class="hero-cta">
     <a href="#buscar" class="btn btn-primary">🔍 Buscar imóveis</a>
     <a href="#nl-search" class="btn btn-outline">✨ Busca inteligente</a>
@@ -529,10 +613,10 @@
 <section class="nl-search-section" id="nl-search">
   <div class="nl-search-label">✨ Busca em Linguagem Natural — powered by AI</div>
   <div class="nl-search-box">
-    <input type="text" id="nlQuery" placeholder="Ex: apartamento na praia com 2 quartos até 800mil em São Vicente">
+    <input type="text" id="nlQuery" placeholder="Ex: apartamento 2 quartos até 800mil em São Vicente">
     <button onclick="nlSearch()">🔍</button>
   </div>
-  <div class="nl-hints">💡 Tente: "casa com piscina em Guarujá", "pousada rentável em Peruíbe", "terreno perto da praia até 400mil"</div>
+  <div class="nl-hints">💡 Exemplos: "casa com piscina em Guarujá", "pousada rentável em Peruíbe", "terreno perto da praia até 400mil"</div>
 </section>
 
 <section class="search-section" id="buscar">
@@ -567,13 +651,22 @@
   <button class="search-btn" type="button" onclick="filterListings()">🔍 Buscar</button>
 </section>
 
+<!-- SAVE SEARCH ALERT -->
+<div class="save-search-bar" id="saveSearchBar">
+  <span style="font-weight:700;font-size:0.9rem;color:var(--dark);">🔔 Salvar busca + alert de queda de preço:</span>
+  <input type="text" id="saveSearchName" placeholder="Nome da busca (ex: Apartamento em PG)">
+  <input type="email" id="saveSearchEmail" placeholder="Seu e-mail para alertas">
+  <button class="save-search-btn" onclick="saveSearch()">Salvar busca</button>
+  <span class="saved-alert-badge" id="savedAlertBadge">✅ Busca salva!</span>
+</div>
+
 <section class="results-section" id="results">
   <div class="results-header">
     <span class="results-count" id="resultsCount">12 imóveis encontrados</span>
     <div class="results-topbar">
       <button class="compare-btn" id="compareBtn" onclick="showCompare()">⚖️ Comparar (<span id="compareCount">0</span>)</button>
       <select id="sortSelect" onchange="sortListings()" style="padding:0.5rem 1rem;border:2px solid #e0e0e0;border-radius:12px;font-size:0.9rem;cursor:pointer;">
-        <option value="">Ordenar</option><option value="preco-asc">Menor preço ↑</option><option value="preco-desc">Maior preço ↓</option><option value="area-asc">Menor área ↑</option><option value="area-desc">Maior área ↓</option>
+        <option value="">Ordenar</option><option value="preco-asc">Menor preço ↑</option><option value="preco-desc">Maior preço ↓</option><option value="area-asc">Menor área ↑</option><option value="area-desc">Maior área ↓</option><option value="ai-desc">🧠 Score IA</option>
       </select>
     </div>
   </div>
@@ -589,7 +682,7 @@
 <!-- COMPARE -->
 <section class="compare-section" id="compareSection">
   <h2>⚖️ Comparar imóveis</h2>
-  <p>Até 3 imóveis lado a lado — analise preço, área e características.</p>
+  <p>Até 3 imóveis lado a lado — analise preço, área, score IA e ROI.</p>
   <div class="compare-table-wrap">
     <table class="compare-table"><thead id="compareHead"></thead><tbody id="compareBody"></tbody></table>
   </div>
@@ -600,28 +693,74 @@
   <h2>Como funciona?</h2>
   <div class="steps-grid">
     <div class="step"><div class="step-number">1</div><h3>Busque</h3><p>Fale com a IA ou use filtros tradicionais para encontrar imóveis.</p></div>
-    <div class="step"><div class="step-number">2</div><h3>Explore</h3><p>Veja detalhes, comparativos e notas de IA para cada imóvel.</p></div>
-    <div class="step"><div class="step-number">3</div><h3>Simule</h3><p>Use o simulador de financiamento e avaliador de IA.</p></div>
+    <div class="step"><div class="step-number">2</div><h3>Explore</h3><p>Veja detalhes, score IA e ROI estimado para cada imóvel.</p></div>
+    <div class="step"><div class="step-number">3</div><h3>Simule</h3><p>Use simulador de financiamento e avaliador de IA.</p></div>
     <div class="step"><div class="step-number">4</div><h3>Feche negócio</h3><p>Contate diretamente e negocie sem burocracia.</p></div>
+  </div>
+</section>
+
+<!-- RENTAL YIELD -->
+<section class="rental-section" id="rental">
+  <h2>💰 Rendimento Médio por Cidade</h2>
+  <p>Estimativa de rental yield anual para imóveis no litoral (baseado em dados de mercado 2025)</p>
+  <div class="rental-grid">
+    <div class="rental-card">
+      <div class="rental-card-icon">🏨</div>
+      <div class="rental-city">Peruíbe</div>
+      <div class="rental-yield">7.2%</div>
+      <div class="rental-yield-label">a.a. bruto</div>
+      <div class="rental-bar"><div class="rental-bar-fill" style="width:85%"></div></div>
+      <div class="rental-note">Pousadas: alta sazonalidade, ocupação >80% no verão.</div>
+    </div>
+    <div class="rental-card">
+      <div class="rental-card-icon">🏖️</div>
+      <div class="rental-city">Praia Grande</div>
+      <div class="rental-yield">5.8%</div>
+      <div class="rental-yield-label">a.a. bruto</div>
+      <div class="rental-bar"><div class="rental-bar-fill" style="width:68%"></div></div>
+      <div class="rental-note">Apartamentos familiares: demanda constante year-round.</div>
+    </div>
+    <div class="rental-card">
+      <div class="rental-card-icon">🏛️</div>
+      <div class="rental-city">Santos</div>
+      <div class="rental-yield">5.1%</div>
+      <div class="rental-yield-label">a.a. bruto</div>
+      <div class="rental-bar"><div class="rental-bar-fill" style="width:60%"></div></div>
+      <div class="rental-note">Alto padrão: yield menor mas vacância muito baixa.</div>
+    </div>
+    <div class="rental-card">
+      <div class="rental-card-icon">⛰️</div>
+      <div class="rental-city">Guarujá</div>
+      <div class="rental-yield">5.4%</div>
+      <div class="rental-yield-label">a.a. bruto</div>
+      <div class="rental-bar"><div class="rental-bar-fill" style="width:63%"></div></div>
+      <div class="rental-note">Alto crescimento + rental moderado. Melhor dos dois mundos.</div>
+    </div>
+    <div class="rental-card">
+      <div class="rental-card-icon">🌳</div>
+      <div class="rental-city">São Vicente</div>
+      <div class="rental-yield">6.1%</div>
+      <div class="rental-yield-label">a.a. bruto</div>
+      <div class="rental-bar"><div class="rental-bar-fill" style="width:72%"></div></div>
+      <div class="rental-note">Entry-point acessível com alto yield. Pompetegração em ascenção.</div>
+    </div>
   </div>
 </section>
 
 <!-- FINANCING SIMULATOR -->
 <section class="simulator-section" id="simulador">
   <h2>🏦 Simulador de Financiamento</h2>
-  <p>Calcule parcela mensal, total de juros e veja a evolução do saldo devedor.</p>
+  <p>Calcule parcela mensal, total de juros, visualização gráfica da amortização.</p>
   <div class="simulator-card">
     <div class="simulator-grid">
-      <div class="sim-field"><label for="simValor">Valor do imóvel (R$)</label><input type="number" id="simValor" placeholder="Ex: 500000" min="50000" max="20000000"></div>
+      <div class="sim-field"><label for="simValor">Valor (R$)</label><input type="number" id="simValor" placeholder="Ex: 500000" min="50000" max="20000000"></div>
       <div class="sim-field"><label for="simEntrada">Entrada (R$)</label><input type="number" id="simEntrada" placeholder="Ex: 100000" min="0"></div>
-      <div class="sim-field">
-        <label for="simTaxa">Taxa (% a.a.)</label>
+      <div class="sim-field"><label for="simTaxa">Taxa (% a.a.)</label>
         <select id="simTaxa">
           <option value="9">9% (FGTS/Caixa)</option><option value="10">10% (BB/Santander)</option><option value="11">11% (Itaú/Bradesco)</option><option value="12" selected>12% (Mercado)</option>
         </select>
       </div>
-      <div class="sim-field">
-        <label for="simAnos">Prazo</label>
+      <div class="sim-field"><label for="simAnos">Prazo</label>
         <select id="simAnos">
           <option value="10">10 anos</option><option value="15">15 anos</option><option value="20" selected>20 anos</option><option value="25">25 anos</option><option value="30">30 anos</option>
         </select>
@@ -634,6 +773,15 @@
         <div class="sim-result-item"><div class="sim-result-value" id="simFinanciado">—</div><div class="sim-result-label">Valor financiado</div></div>
         <div class="sim-result-item"><div class="sim-result-value" id="simJuros">—</div><div class="sim-result-label">Total juros</div></div>
         <div class="sim-result-item"><div class="sim-result-value" id="simTotal">—</div><div class="sim-result-label">Total a pagar</div></div>
+      </div>
+      <!-- MORTGAGE CHART -->
+      <div class="mortgage-chart" id="mortgageChart">
+        <div class="chart-title">📊 Composição do financiamento (último vs primeiro ano)</div>
+        <div class="chart-bars" id="chartBars"></div>
+        <div class="chart-legend">
+          <span><div class="chart-legend-dot amort"></div> Amortização</span>
+          <span><div class="chart-legend-dot interest"></div> Juros</span>
+        </div>
       </div>
       <button class="sim-table-toggle" id="simTableToggle" onclick="toggleAmort()">📊 Ver tabela de amortização</button>
       <div class="amort-table" id="amortTable">
@@ -649,16 +797,10 @@
   <p>Digite características do imóvel e receba uma estimativa de mercado baseada em dados locais.</p>
   <div class="valuation-card">
     <div class="valuation-fields">
-      <div class="val-field"><label for="valTipo">Tipo</label>
-        <select id="valTipo"><option value="apartamento">Apartamento</option><option value="casa">Casa</option><option value="terreno">Terreno</option><option value="pousada">Pousada</option><option value="comercial">Comercial</option></select>
-      </div>
-      <div class="val-field"><label for="valCidade">Cidade</label>
-        <select id="valCidade"><option value="praia-grande">Praia Grande</option><option value="santos">Santos</option><option value="guaruja">Guarujá</option><option value="sao-vicente">São Vicente</option><option value="itanhaem">Itanhaém</option><option value="mongagua">Mongaguá</option><option value="peruibe">Peruíbe</option></select>
-      </div>
+      <div class="val-field"><label for="valTipo">Tipo</label><select id="valTipo"><option value="apartamento">Apartamento</option><option value="casa">Casa</option><option value="terreno">Terreno</option><option value="pousada">Pousada</option><option value="comercial">Comercial</option></select></div>
+      <div class="val-field"><label for="valCidade">Cidade</label><select id="valCidade"><option value="praia-grande">Praia Grande</option><option value="santos">Santos</option><option value="guaruja">Guarujá</option><option value="sao-vicente">São Vicente</option><option value="itanhaem">Itanhaém</option><option value="mongagua">Mongaguá</option><option value="peruibe">Peruíbe</option></select></div>
       <div class="val-field"><label for="valArea">Área (m²)</label><input type="number" id="valArea" placeholder="Ex: 80" min="20"></div>
-      <div class="val-field"><label for="valDorms">Dormitórios</label>
-        <select id="valDorms"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4+</option></select>
-      </div>
+      <div class="val-field"><label for="valDorms">Dormitórios</label><select id="valDorms"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4+</option></select></div>
     </div>
     <button class="val-btn" onclick="runValuation()">🔮 Avaliar com IA</button>
     <div class="val-result" id="valResult">
@@ -671,7 +813,46 @@
         <div class="val-bar-label">Posição no mercado local</div>
         <div class="val-bar-track"><div class="val-bar-fill" id="valBarFill" style="width:50%"></div><div class="val-bar-marker" id="valBarMarker" style="left:50%"></div></div>
       </div>
-      <p id="valInsight" style="margin-top:1rem;font-size:0.9rem;opacity:0.9;"></p>
+      <p class="val-insight" id="valInsight"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ROI CALCULATOR -->
+<section class="roi-section" id="roi">
+  <h2>📈 Calculadora de ROI e Custos de Fecho</h2>
+  <p>Calcule retorno do investimento, custos de transação e lucratividade líquida.</p>
+  <div class="roi-card">
+    <div class="roi-grid">
+      <div class="roi-field"><label for="roiPreco">Preço de compra (R$)</label><input type="number" id="roiPreco" placeholder="Ex: 600000" min="50000"></div>
+      <div class="roi-field"><label for="roiAluguel">Aluguel mensal (R$)</label><input type="number" id="roiAluguel" placeholder="Ex: 3000"></div>
+      <div class="roi-field"><label for="roiCondominio">Condomínio (R$/mês)</label><input type="number" id="roiCondominio" placeholder="Ex: 500" min="0"></div>
+      <div class="roi-field"><label for="roiIPTU">IPTU (R$/ano)</label><input type="number" id="roiIPTU" placeholder="Ex: 2400" min="0"></div>
+      <div class="roi-field"><label for="roiYears">Anos para análise</label>
+        <select id="roiYears"><option value="1">1 ano</option><option value="3">3 anos</option><option value="5" selected>5 anos</option><option value="10">10 anos</option></select>
+      </div>
+      <div class="roi-field"><label for="roiGrowth">Valorização anual (%)</label>
+        <select id="roiGrowth"><option value="5">5%</option><option value="7" selected>7%</option><option value="9">9%</option><option value="11">11%</option></select>
+      </div>
+    </div>
+    <button class="roi-btn" onclick="calcROI()">📊 Calcular ROI</button>
+    <div class="roi-result" id="roiResult">
+      <div class="roi-result-grid">
+        <div class="roi-result-item"><div class="roi-result-value" id="roiYield">—</div><div class="roi-result-label">Rental yield a.a.</div></div>
+        <div class="roi-result-item"><div class="roi-result-value" id="roiTotalReturn">—</div><div class="roi-result-label">Retorno total 5 anos</div></div>
+        <div class="roi-result-item"><div class="roi-result-value" id="roiNetProfit">—</div><div class="roi-result-label">Lucro líquido estimado</div></div>
+        <div class="roi-result-item"><div class="roi-result-value" id="roiCashOnCash">—</div><div class="roi-result-label">Cash-on-cash retorno</div></div>
+      </div>
+      <div class="roi-chart" id="roiChart"></div>
+      <button class="sim-table-toggle" onclick="toggleClosingCosts()" style="color:white;border-color:rgba(255,255,255,0.4);">📋 Ver custos de fechamento</button>
+      <div class="closing-costs" id="closingCosts">
+        <h4>💰 Custos de transação estimados</h4>
+        <div class="closing-item"><span>ITBI (3%)</span><span id="ccITBI">—</span></div>
+        <div class="closing-item"><span>Registro (1%)</span><span id="ccRegistro">—</span></div>
+        <div class="closing-item"><span>Escritura (0.5%)</span><span id="ccEscritura">—</span></div>
+        <div class="closing-item"><span>Corretagem (5%)</span><span id="ccCorretagem">—</span></div>
+        <div class="closing-item"><span>Total custos</span><span id="ccTotal">—</span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -681,30 +862,10 @@
   <h2>📊 Insights de Mercado — IA</h2>
   <p>Dados e tendências do mercado imobiliário litorâneo gerados por inteligência artificial.</p>
   <div class="insights-grid">
-    <div class="insight-card">
-      <div class="insight-icon">📈</div>
-      <div class="insight-value">+8,3%</div>
-      <h3>Valorização Anual</h3>
-      <p>O litoral sul cresceu acima da média nacional em 2025. Praias com acesso fácil à Rodovia dos Imigrantes lideram.</p>
-    </div>
-    <div class="insight-card">
-      <div class="insight-icon">🏖️</div>
-      <div class="insight-value">Jun–Set</div>
-      <h3>Melhor época</h3>
-      <p>Pousadas vendem 40% mais no inverno. Apartamentos de praia têm pico de busca em janeiro. Timing importa.</p>
-    </div>
-    <div class="insight-card">
-      <div class="insight-icon">💰</div>
-      <div class="insight-value">R$ 12.500</div>
-      <h3>Média aluguel m²</h3>
-      <p>Guarujá e Santos têm os m² mais valorizados. Mongaguá e Peruibe oferecem_ENTRY entry-points com alto potencial.</p>
-    </div>
-    <div class="insight-card">
-      <div class="insight-icon">🎯</div>
-      <div class="insight-value">74%</div>
-      <h3>Demanda por apartamentos</h3>
-      <p>A maior busca é por apartamentos de 2-3 quartos até R$ 1M. Terrenos vêm em segundo com crescimento acelerado.</p>
-    </div>
+    <div class="insight-card"><div class="insight-icon">📈</div><div class="insight-value">+8,3%</div><h3>Valorização Anual</h3><p>O litoral sul cresceu acima da média nacional em 2025. Rodovia dos Imigrantes impulsa.</p></div>
+    <div class="insight-card"><div class="insight-icon">🏖️</div><div class="insight-value">Jun–Set</div><h3>Melhor época</h3><p>Pousadas vendem 40% mais no inverno. Apartamentos têm pico em janeiro. Timing importa.</p></div>
+    <div class="insight-card"><div class="insight-icon">💰</div><div class="insight-value">R$ 12.500</div><h3>Média aluguel m²</h3><p>Guarujá e Santos os mais valorizados. Mongaguá e Peruibe oferecem entry-points.</p></div>
+    <div class="insight-card"><div class="insight-icon">🎯</div><div class="insight-value">74%</div><h3>Demanda apartamentos</h3><p>A maior busca é por apartamentos de 2-3 quartos até R$ 1M. Terrenos em segundo.</p></div>
   </div>
 </section>
 
@@ -712,47 +873,194 @@
 <section class="market-section" id="tendencias">
   <h2>📉 Tendências por Cidade</h2>
   <div class="market-grid">
-    <div class="market-card">
-      <div class="market-card-icon">🏖️</div>
-      <div class="market-stat">+9,1%</div>
-      <div class="market-stat-label">Praia Grande — valorização</div>
-      <h3>Praia Grande</h3>
-      <p>Maior extensão de praia do litoral. Infraestrutura completa. Melhor custo-benefício para apartamentos.</p>
+    <div class="market-card"><div class="market-card-icon">🏖️</div><div class="market-stat">+9,1%</div><div class="market-stat-label">Valorização anual</div><h3>Praia Grande</h3><p>Maior extensão de praia. Infraestrutura completa. Melhor custo-benefício.</p></div>
+    <div class="market-card"><div class="market-card-icon">⛰️</div><div class="market-stat">+11,2%</div><div class="market-stat-label">Valorização anual</div><h3>Guarujá</h3><p>Região mais valorizada. Pitangueiras e Enseada puxam alta. Expansão de saneamento.</p></div>
+    <div class="market-card"><div class="market-card-icon">🏛️</div><div class="market-stat">+7,4%</div><div class="market-stat-label">Valorização anual</div><h3>Santos</h3><p>Jardim de praia mais famoso. Mercado de alto padrão consolidado.</p></div>
+    <div class="market-card"><div class="market-card-icon">🦎</div><div class="market-stat">+7,7%</div><div class="market-stat-label">Valorização anual</div><h3>Peruíbe</h3><p>Trilhas, restinga e praia preservada. Turismo em crescimento acelerado.</p></div>
+    <div class="market-card"><div class="market-card-icon">🌳</div><div class="market-stat">+6,8%</div><div class="market-stat-label">Valorização anual</div><h3>São Vicente</h3><p>Cidade mais antiga do Brasil. Pompetegração em forte ascenção.</p></div>
+    <div class="market-card"><div class="market-card-icon">🌺</div><div class="market-stat">+5,9%</div><div class="market-stat-label">Valorização anual</div><h3>Itanhaém</h3><p>Sossego e natureza. Cresce entre quem busca qualidade de vida.</p></div>
+  </div>
+</section>
+
+<!-- NEIGHBORHOOD GUIDE -->
+<section class="neighborhood-section" id="bairros">
+  <h2>🗺️ Guia de Bairros e Cidades</h2>
+  <p>Informações detalhadas para decisões inteligentes em cada região do litoral.</p>
+  <div class="neighborhood-grid">
+    <div class="neighborhood-card">
+      <div class="neighborhood-header">
+        <div class="neighborhood-header-icon">🏖️</div>
+        <div class="neighborhood-header-info">
+          <h3>Praia Grande</h3>
+          <p>Extensão: 23km | População: 330k</p>
+        </div>
+        <div class="neighborhood-ai-badge">🧠 +9.1%</div>
+      </div>
+      <div class="neighborhood-body">
+        <div class="neighborhood-stats">
+          <div class="neighborhood-stat"><div class="neighborhood-stat-value">R$ 12k</div><div class="neighborhood-stat-label">média/m²</div></div>
+          <div class="neighborhood-stat"><div class="neighborhood-stat-value">5.8%</div><div class="neighborhood-stat-label">rental yield</div></div>
+          <div class="neighborhood-stat"><div class="neighborhood-stat-value">B/C</div><div class="neighborhood-stat-label">Acesso</div></div>
+        </div>
+        <div class="neighborhood-features">
+          <span class="neighborhood-feature">Orla linear</span><span class="neighborhood-feature">Comércio forte</span><span class="neighborhood-feature">Boleiro/shopping</span><span class="neighborhood-feature">Unimed</span><span class="neighborhood-feature">EPUL</span>
+        </div>
+        <p class="neighborhood-desc">Maior extensão de praia do litoral sul. Variedade de bairros: Boqueirão (turístico), Caiçara (residencial), samambaia (família). Acesso pela Rio-Santos e Régis.</p>
+        <div class="neighborhood-cta">
+          <button class="ng-btn-filter" onclick="setCity('praia-grande')">🏠 Ver imóveis</button>
+          <button class="ng-btn-ai" onclick="sendAIMsg('Me conte mais sobre investir em Praia Grande')">🧠 IA</button>
+        </div>
+      </div>
     </div>
-    <div class="market-card">
-      <div class="market-card-icon">🏛️</div>
-      <div class="market-stat">+7,4%</div>
-      <div class="market-stat-label">Santos — valorização</div>
-      <h3>Santos</h3>
-      <p>Jardim de praia mais famoso do Brasil. Alto padrão. Mercados de investidores e families consolidadas.</p>
+    <div class="neighborhood-card">
+      <div class="neighborhood-header">
+        <div class="neighborhood-header-icon">⛰️</div>
+        <div class="neighborhood-header-info">
+          <h3>Guarujá</h3>
+          <p>Extensão: 36km | População: 320k</p>
+        </div>
+        <div class="neighborhood-ai-badge">🚀 +11.2%</div>
+      </div>
+      <div class="neighborhood-body">
+        <div class="neighborhood-stats">
+          <div class="neighborhood-stat"><div class="neighborhood-stat-value">R$ 15k</div><div class="neighborhood-stat-label">média/m²</div></div>
+          <div class="neighborhood-stat"><div class="neighborhood-stat-value">5.4%</div><div class="neighborhood-stat-label">rental yield</div></div>
+          <div class="neighborhood-stat"><div class="neighborhood-stat-value">A/B</div><div class="neighborhood-stat-label">Acesso</div></div>
+        </div>
+        <div class="neighborhood-features">
+          <span class="neighborhood-feature">Ponta da Praia</span><span class="neighborhood-feature">Pitangueiras</span><span class="neighborhood-feature">Enseada</span><span class="neighborhood-feature">TIquinho</span>
+        </div>
+        <p class="neighborhood-desc">A "Bela de Santos" — região mais valorizada do litoral. Saneamento em expansão. TIquinho conecta a São Paulo. Mercado premium e crescente.</p>
+        <div class="neighborhood-cta">
+          <button class="ng-btn-filter" onclick="setCity('guaruja')">🏠 Ver imóveis</button>
+          <button class="ng-btn-ai" onclick="sendAIMsg('Por que Guarujá tem a maior valorização?')">🧠 IA</button>
+        </div>
+      </div>
     </div>
-    <div class="market-card">
-      <div class="market-card-icon">⛰️</div>
-      <div class="market-stat">+11,2%</div>
-      <div class="market-stat-label">Guarujá — valorização</div>
-      <h3>Guarujá</h3>
-      <p>Região mais valorizada do litoral. Pitangueiras e Enseada puxam alta. Esgoto e água em expansão.</p>
+    <div class="neighborhood-card">
+      <div class="neighborhood-header">
+        <div class="neighborhood-header-icon">🏛️</div>
+        <div class="neighborhood-header-info">
+          <h3>Santos</h3>
+          <p>Área urbana: 40km² | População: 433k</p>
+        </div>
+        <div class="neighborhood-ai-badge">💎 +7.4%</div>
+      </div>
+      <div class="neighborhood-body">
+        <div class="neighborhood-stats">
+          <div class="neighborhood-stat"><div class="neighborhood-stat-value">R$ 18k</div><div class="neighborhood-stat-label">média/m²</div></div>
+          <div class="neighborhood-stat"><div class="neighborhood-stat-value">5.1%</div><div class="neighborhood-stat-label">rental yield</div></div>
+          <div class="neighborhood-stat"><div class="neighborhood-stat-value">A</div><div class="neighborhood-stat-label">Acesso</div></div>
+        </div>
+        <div class="neighborhood-features">
+          <span class="neighborhood-feature">Jardim Oceanic</span><span class="neighborhood-feature">Pompéia</span><span class="neighborhood-feature">Gonzalez</span><span class="neighborhood-feature">Porto</span>
+        </div>
+        <p class="neighborhood-desc">Maior jardim de praia do mundo. Urbano e sofisticado. Museu do Café, futebol (Santos FC). Mercado maduro, vacância baixa.</p>
+        <div class="neighborhood-cta">
+          <button class="ng-btn-filter" onclick="setCity('santos')">🏠 Ver imóveis</button>
+          <button class="ng-btn-ai" onclick="sendAIMsg('Como está o mercado de apartamentos em Santos?')">🧠 IA</button>
+        </div>
+      </div>
     </div>
-    <div class="market-card">
-      <div class="market-card-icon">🌳</div>
-      <div class="market-stat">+6,8%</div>
-      <div class="market-stat-label">São Vicente — valorização</div>
-      <h3>São Vicente</h3>
-      <p>História e praia. Pompetegração em ascenção. Città degli Italiani atrai novos moradores.</p>
+    <div class="neighborhood-card">
+      <div class="neighborhood-header">
+        <div class="neighborhood-header-icon">🦎</div>
+        <div class="neighborhood-header-info">
+          <h3>Peruíbe</h3>
+          <p>Extensão: 14km | População: 64k</p>
+        </div>
+        <div class="neighborhood-ai-badge">🏨 +7.7%</div>
+      </div>
+      <div class="neighborhood-body">
+        <div class="neighborhood-stats">
+          <div class="neighborhood-stat"><div class="neighborhood-stat-value">R$ 7.5k</div><div class="neighborhood-stat-label">média/m²</div></div>
+          <div class="neighborhood-stat"><div class="neighborhood-stat-value">7.2%</div><div class="neighborhood-stat-label">rental yield</div></div>
+          <div class="neighborhood-stat"><div class="neighborhood-stat-value">B</div><div class="neighborhood-stat-label">Acesso</div></div>
+        </div>
+        <div class="neighborhood-features">
+          <span class="neighborhood-feature">Centro histórico</span><span class="neighborhood-feature">Jardim Maret</span><span class="neighborhood-feature">Trilhas</span><span class="neighborhood-feature">Restinga</span>
+        </div>
+        <p class="neighborhood-desc">Fronteira com Paraná. Trilhas, restinga e praia preservada. Pousadas com altíssima rentabilidade sazonal. Crescimento turístico acelerado.</p>
+        <div class="neighborhood-cta">
+          <button class="ng-btn-filter" onclick="setCity('peruibe')">🏠 Ver imóveis</button>
+          <button class="ng-btn-ai" onclick="sendAIMsg('Qual o ROI de uma pousada em Peruibe?')">🧠 IA</button>
+        </div>
+      </div>
     </div>
-    <div class="market-card">
-      <div class="market-card-icon">🌺</div>
-      <div class="market-stat">+5,9%</div>
-      <div class="market-stat-label">Itanhaém — valorização</div>
-      <h3>Itanhaém</h3>
-      <p>Sossego e natureza. Cresce entre quem busca qualidade de vida. Mercado familiar em expansão.</p>
+    <div class="neighborhood-card">
+      <div class="neighborhood-header">
+        <div class="neighborhood-header-icon">🌳</div>
+        <div class="neighborhood-header-info">
+          <h3>São Vicente</h3>
+          <p>Área: 174km² | População: 360k</p>
+        </div>
+        <div class="neighborhood-ai-badge">🌱 +6.8%</div>
+      </div>
+      <div class="neighborhood-body">
+        <div class="neighborhood-stats">
+          <div class="neighborhood-stat"><div class="neighborhood-stat-value">R$ 9k</div><div class="neighborhood-stat-label">média/m²</div></div>
+          <div class="neighborhood-stat"><div class="neighborhood-stat-value">6.1%</div><div class="neighborhood-stat-label">rental yield</div></div>
+          <div class="neighborhood-stat"><div class="neighborhood-stat-value">A</div><div class="neighborhood-stat-label">Acesso</div></div>
+        </div>
+        <div class="neighborhood-features">
+          <span class="neighborhood-feature">Centro</span><span class="neighborhood-feature">Pompetegração</span><span class="neighborhood-feature">Città Italiana</span><span class="neighborhood-feature">Pilões</span>
+        </div>
+        <p class="neighborhood-desc">A cidade mais antiga do Brasil (1532). Pompetegração é novo polo de crescimento. Città Italiana atrai novos moradores. Proximidade da capital.</p>
+        <div class="neighborhood-cta">
+          <button class="ng-btn-filter" onclick="setCity('sao-vicente')">🏠 Ver imóveis</button>
+          <button class="ng-btn-ai" onclick="sendAIMsg('É bom investir em São Vicente agora?')">🧠 IA</button>
+        </div>
+      </div>
     </div>
-    <div class="market-card">
-      <div class="market-card-icon">🦎</div>
-      <div class="market-stat">+7,7%</div>
-      <div class="market-stat-label">Peruíbe — valorização</div>
-      <h3>Peruíbe</h3>
-      <p>Trilhas, restinga e praia preservada. Pousadas rentáveis. Crescimento acelerado no turismo.</p>
+    <div class="neighborhood-card">
+      <div class="neighborhood-header">
+        <div class="neighborhood-header-icon">🌺</div>
+        <div class="neighborhood-header-info">
+          <h3>Itanhaém</h3>
+          <p>Extensão: 12km | População: 103k</p>
+        </div>
+        <div class="neighborhood-ai-badge">🌿 +5.9%</div>
+      </div>
+      <div class="neighborhood-body">
+        <div class="neighborhood-stats">
+          <div class="neighborhood-stat"><div class="neighborhood-stat-value">R$ 7.5k</div><div class="neighborhood-stat-label">média/m²</div></div>
+          <div class="neighborhood-stat"><div class="neighborhood-stat-value">5.5%</div><div class="neighborhood-stat-label">rental yield</div></div>
+          <div class="neighborhood-stat"><div class="neighborhood-stat-value">B</div><div class="neighborhood-stat-label">Acesso</div></div>
+        </div>
+        <div class="neighborhood-features">
+          <span class="neighborhood-feature">Centro</span><span class="neighborhood-feature">Morrinho</span><span class="neighborhood-feature">Silveiras</span><span class="neighborhood-feature">Turfe</span>
+        </div>
+        <p class="neighborhood-desc">Charmosa e arborizada. Qualidade de vida elevada. Cresce entre famílias e retirees. Mercado local forte, turismo de saúde e bem-estar.</p>
+        <div class="neighborhood-cta">
+          <button class="ng-btn-filter" onclick="setCity('itanhaem')">🏠 Ver imóveis</button>
+          <button class="ng-btn-ai" onclick="sendAIMsg('Itanhaem é boa para quem busca sossego?')">🧠 IA</button>
+        </div>
+      </div>
+    </div>
+    <div class="neighborhood-card">
+      <div class="neighborhood-header">
+        <div class="neighborhood-header-icon">🌊</div>
+        <div class="neighborhood-header-info">
+          <h3>Mongaguá</h3>
+          <p>Extensão: 12km | População: 56k</p>
+        </div>
+        <div class="neighborhood-ai-badge">🏝️ +6.2%</div>
+      </div>
+      <div class="neighborhood-body">
+        <div class="neighborhood-stats">
+          <div class="neighborhood-stat"><div class="neighborhood-stat-value">R$ 7k</div><div class="neighborhood-stat-label">média/m²</div></div>
+          <div class="neighborhood-stat"><div class="neighborhood-stat-value">5.0%</div><div class="neighborhood-stat-label">rental yield</div></div>
+          <div class="neighborhood-stat"><div class="neighborhood-stat-value">B/C</div><div class="neighborhood-stat-label">Acesso</div></div>
+        </div>
+        <div class="neighborhood-features">
+          <span class="neighborhood-feature">Flórida</span><span class="neighborhood-feature">Itaquarena</span><span class="neighborhood-feature">Praias preservadas</span><span class="neighborhood-feature">Sossego</span>
+        </div>
+        <p class="neighborhood-desc">Oásis tranquilo no litoral sul. Praias preservadas e águas cristalinas. Entry-point com alto potencial de crescimento. Ideal para quem busca paz.</p>
+        <div class="neighborhood-cta">
+          <button class="ng-btn-filter" onclick="setCity('mongagua')">🏠 Ver imóveis</button>
+          <button class="ng-btn-ai" onclick="sendAIMsg('Mongagua vale a pena para investimento?')">🧠 IA</button>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -764,14 +1072,37 @@
   <div class="realtors-grid">
     <div class="realtor-card"><div class="realtor-icon">📊</div><h3>Portfólio Digital</h3><p>Publique todos os seus imóveis em um catálogo profissional com fotos, vídeos e tours virtuais 360°.</p></div>
     <div class="realtor-card"><div class="realtor-icon">🎯</div><h3>Leads Qualificados</h3><p>Receba contatos de compradores interessados no seu imóvel — sem concorrência com imóveis urbanos.</p></div>
-    <div class="realtor-card"><div class="realtor-icon">🧠</div><h3>IA Avançada</h3><p>Gerador de descrições, avaliador de preços e análise de mercado com inteligência artificial.</p></div>
-    <div class="realtor-card"><div class="realtor-icon">⚡</div><h3>Atualização Instantânea</h3><p>Altere preços, disponibilidade e características em tempo real — sem custo de publicação.</p></div>
-    <div class="realtor-card"><div class="realtor-icon">🌐</div><h3>Presença Online</h3><p>Sua carteira de imóveis aparece no Google com OG images, sitemap e SEO otimizado para o litoral.</p></div>
+    <div class="realtor-card"><div class="realtor-icon">🧠</div><h3>IA Avançada</h3><p>Gerador de descrições, avaliador de preços, simulador de ROI e análise de mercado com IA.</p></div>
+    <div class="realtor-card"><div class="realtor-icon">📱</div><h3>QR Code Grátis</h3><p>Gere QR codes personalizados para cada imóvel — imprima ou envie para clientes direto pelo WhatsApp.</p></div>
+    <div class="realtor-card"><div class="realtor-icon">🔗</div><h3>Código Embed</h3><p>Gere um widget embedável para seu site ou blog — atualiza automaticamente em tempo real.</p></div>
     <div class="realtor-card"><div class="realtor-icon">🤝</div><h3>Parceria Direta</h3><p>Atendimento humanizado com equipe local. Fale direto com um especialista que conhece o mercado.</p></div>
   </div>
   <div class="realtors-cta">
     <a href="https://wa.me/5513999999999?text=Olá! Sou corretor(a) e quero anunciar meus imóveis." target="_blank" class="btn-realtor-whatsapp">💬 Quero anunciar</a>
     <a href="mailto:contato@praiadigital.com.br?subject=Proposta de parceria - Corretor" class="btn-realtor-email">✉️ Proposta por e-mail</a>
+  </div>
+</section>
+
+<!-- QR CODE + EMBED -->
+<section class="qr-embed-section" id="ferramentas">
+  <h2>🛠️ Ferramentas para Corretores</h2>
+  <p>QR Code personalizado e widget embedável para seus imóveis.</p>
+  <div class="qr-embed-grid">
+    <div class="qr-card">
+      <h3>📱 QR Code do Imóvel</h3>
+      <p>Gere um QR code que abre direto no listing — para imprimir ou enviar via WhatsApp.</p>
+      <div class="qr-preview" id="qrPreview">QR</div>
+      <input type="number" class="qr-input" id="qrListingId" placeholder="ID do imóvel (ex: 1)" min="1" max="12">
+      <button class="qr-btn" onclick="generateQR()">🎯 Gerar QR Code</button>
+      <div class="qr-result-url" id="qrResultUrl"></div>
+    </div>
+    <div class="qr-card">
+      <h3>🔗 Widget Embedável</h3>
+      <p>Gere um código HTML para embedar a busca de imóveis no seu site ou blog.</p>
+      <textarea class="qr-input embed-textarea" id="embedCode" placeholder="Selecione cidades e clique em gerar..." style="min-height:80px;resize:vertical;"></textarea>
+      <button class="qr-btn" onclick="generateEmbed()">⚡ Gerar Embed</button>
+      <textarea class="embed-output" id="embedOutput" readonly placeholder="O código embed aparecerá aqui..."></textarea>
+    </div>
   </div>
 </section>
 
@@ -793,7 +1124,7 @@
       <button class="tone-btn" onclick="setTone(this, 'investimento')">💰 Investimento</button>
       <button class="tone-btn" onclick="setTone(this, 'luxo')">✨ Luxo</button>
     </div>
-    <button class="val-btn" onclick="generateDesc()" style="background:var(--purple);color:white;">✨ Gerar descrição com IA</button>
+    <button class="ai-desc-generate-btn" onclick="generateDesc()">✨ Gerar descrição com IA</button>
     <div class="ai-desc-loading" id="descLoading">
       <div class="ai-desc-loading-dot"></div><div class="ai-desc-loading-dot"></div><div class="ai-desc-loading-dot"></div>
       <span>Gerando descrição...</span>
@@ -812,94 +1143,9 @@
 <section class="testimonials-section" id="depoimentos">
   <h2>O que dizem nossos clientes</h2>
   <div class="testimonials-grid">
-    <div class="testimonial-card">
-      <div class="testimonial-quote">"</div>
-      <p class="testimonial-text">Encontrei o apartamento dos meus sonhos em Praia Grande em menos de uma semana. O processo foi super transparente e a equipe respondeu rapidíssimo pelo WhatsApp.</p>
-      <div class="testimonial-author">Mariana Costa</div>
-      <div class="testimonial-role">💼 Compradora — Praia Grande</div>
-    </div>
-    <div class="testimonial-card">
-      <div class="testimonial-quote">"</div>
-      <p class="testimonial-text">Anunciei minha pousada em Peruíbe e em 30 dias já recebi três propostas sérias. A visibilidade do site é incrível para o público do litoral.</p>
-      <div class="testimonial-author">Roberto Almeida</div>
-      <div class="testimonial-role">🏨 Proprietário — Peruíbe</div>
-    </div>
-    <div class="testimonial-card">
-      <div class="testimonial-quote">"</div>
-      <p class="testimonial-text">O avaliador IA me ajudou a definir o preço certo do meu terreno em Mongaguá. Vendi em 2 semanas pelo valor esperado. Funcionalidade incrível!</p>
-      <div class="testimonial-author">Fernanda Souza</div>
-      <div class="testimonial-role">🏡 Investidora — Mongaguá</div>
-    </div>
-  </div>
-</section>
-
-<section class="cities-section" id="cidades">
-  <h2>Explore as cidades do litoral</h2>
-  <p>Clique em uma cidade para ver seus imóveis disponíveis.</p>
-  <div class="cities-grid">
-    <a class="city-card" href="#buscar" onclick="setCity('praia-grande');return false;">
-      <div class="city-card-img">🏖️</div>
-      <div class="city-card-body">
-        <h3>Praia Grande</h3>
-        <p>A cidade mais extensa do litoral sul, com praia linear e infraestrutura completa.</p>
-        <div class="city-card-stats"><span>🏠 2 imóveis</span><span>📍 Boqueirão, Caiçara</span></div>
-        <div class="city-ai-insight">📈 +9,1% — melhor custo-benefício</div>
-      </div>
-    </a>
-    <a class="city-card" href="#buscar" onclick="setCity('santos');return false;">
-      <div class="city-card-img">🏛️</div>
-      <div class="city-card-body">
-        <h3>Santos</h3>
-        <p>Cidade histórica e urbana, com o maior jardim de praia do mundo.</p>
-        <div class="city-card-stats"><span>🏠 1 imóvel</span><span>📍 Pompéia</span></div>
-        <div class="city-ai-insight">💎 Alto padrão — mercado consolidado</div>
-      </div>
-    </a>
-    <a class="city-card" href="#buscar" onclick="setCity('guaruja');return false;">
-      <div class="city-card-img">⛰️</div>
-      <div class="city-card-body">
-        <h3>Guarujá</h3>
-        <p>Conhecida como a "Bela de Santos", beaches de Pitangueiras a Enseada.</p>
-        <div class="city-card-stats"><span>🏠 1 imóvel</span><span>📍 Pitangueiras</span></div>
-        <div class="city-ai-insight">🚀 +11,2% — região mais valorizada</div>
-      </div>
-    </a>
-    <a class="city-card" href="#buscar" onclick="setCity('sao-vicente');return false;">
-      <div class="city-card-img">🌳</div>
-      <div class="city-card-body">
-        <h3>São Vicente</h3>
-        <p>A cidade mais antiga do Brasil, com charme histórico e proximidade da capital.</p>
-        <div class="city-card-stats"><span>🏠 2 imóveis</span><span>📍 Centro, Pompetegração</span></div>
-        <div class="city-ai-insight">🌱 Crescimento acelerado —_ENTRY ponto</div>
-      </div>
-    </a>
-    <a class="city-card" href="#buscar" onclick="setCity('itanhaem');return false;">
-      <div class="city-card-img">🌺</div>
-      <div class="city-card-body">
-        <h3>Itanhaém</h3>
-        <p>Charmosa e arborizada, perfeita para quem busca sossego e natureza.</p>
-        <div class="city-card-stats"><span>🏠 2 imóveis</span><span>📍 Centro</span></div>
-        <div class="city-ai-insight">🌿 Qualidade de vida — mercado familiar</div>
-      </div>
-    </a>
-    <a class="city-card" href="#buscar" onclick="setCity('mongagua');return false;">
-      <div class="city-card-img">🌊</div>
-      <div class="city-card-body">
-        <h3>Mongaguá</h3>
-        <p>Praias preservadas e águas cristalinas — oásis tranquilo no litoral sul.</p>
-        <div class="city-card-stats"><span>🏠 2 imóveis</span><span>📍 Flórida, Itaquarena</span></div>
-        <div class="city-ai-insight">🏝️ Tranquilo — alto potencial de crescimento</div>
-      </div>
-    </a>
-    <a class="city-card" href="#buscar" onclick="setCity('peruibe');return false;">
-      <div class="city-card-img">🦎</div>
-      <div class="city-card-body">
-        <h3>Peruíbe</h3>
-        <p>Na fronteira com Paraná, com trilhas, restinga e praia preservada.</p>
-        <div class="city-card-stats"><span>🏠 2 imóveis</span><span>📍 Centro, Jardim Maret</span></div>
-        <div class="city-ai-insight">🏨 Pousadas — maior rentabilidade sazonal</div>
-      </div>
-    </a>
+    <div class="testimonial-card"><div class="testimonial-quote">"</div><p class="testimonial-text">Encontrei o apartamento dos meus sonhos em Praia Grande em menos de uma semana. O processo foi super transparente e a equipe respondeu rapidíssimo pelo WhatsApp.</p><div class="testimonial-author">Mariana Costa</div><div class="testimonial-role">💼 Compradora — Praia Grande</div></div>
+    <div class="testimonial-card"><div class="testimonial-quote">"</div><p class="testimonial-text">Anunciei minha pousada em Peruíbe e em 30 dias já recebi três propostas sérias. A visibilidade do site é incrível para o público do litoral.</p><div class="testimonial-author">Roberto Almeida</div><div class="testimonial-role">🏨 Proprietário — Peruíbe</div></div>
+    <div class="testimonial-card"><div class="testimonial-quote">"</div><p class="testimonial-text">O avaliador IA me ajudou a definir o preço certo do meu terreno em Mongaguá. Vendi em 2 semanas pelo valor esperado. Funcionalidade incrível!</p><div class="testimonial-author">Fernanda Souza</div><div class="testimonial-role">🏡 Investidora — Mongaguá</div></div>
   </div>
 </section>
 
@@ -908,18 +1154,18 @@
   <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-question">Como funciona a busca com IA?</div><div class="faq-answer">Digite sua pergunta em linguagem natural, como "apartamento 2 quartos até 800mil em São Vicente". A IA interpreta e filtra os melhores imóveis automaticamente.</div></div>
   <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-question">Como o avaliador IA funciona?</div><div class="faq-answer">Informe tipo, cidade, área e dormitórios. O avaliador calcula uma faixa de preço baseada nos dados do mercado local litorâneo. Use como referência inicial para negociação.</div></div>
   <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-question">O gerador de descrições é gratuito?</div><div class="faq-answer">Sim! Corretores e imobiliárias podem usar o gerador gratuitamente para criar descrições profissionais de seus imóveis e usá-las em portais e redes sociais.</div></div>
-  <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-question">Posso comparar imóveis?</div><div class="faq-answer">Sim! Clique em ⚖️ em até 3 cards para adicioná-los à comparação. Veja todos lado a lado com preço, área, dormitórios e tipo para facilitar sua decisão.</div></div>
+  <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-question">Como funciona o QR Code?</div><div class="faq-answer">Informe o ID do imóvel e gere um QR code que aponta direto para o listing. Imprima e coloque no imóvel ou envie por WhatsApp para clientes.</div></div>
+  <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-question">Posso comparar imóveis?</div><div class="faq-answer">Sim! Clique em ⚖️ em até 3 cards para adicioná-los à comparação. Veja todos lado a lado com preço, área, dormitórios, score IA e ROI para facilitar sua decisão.</div></div>
   <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-question">Sou corretor — como funciona a parceria?</div><div class="faq-answer">Entre em contato pelo WhatsApp ou e-mail com o assunto "Proposta de parceria". Oferecemos ferramentas profissionais para gestão de portfólio e exposição dos seus imóveis no nosso portal especializado.</div></div>
-  <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-question">Os preços dos imóveis são fixos?</div><div class="faq-answer">Os preços são indicativos e podem variar conforme negociação. Use o filtro de faixa de preço para buscar dentro do seu orçamento.</div></div>
 </section>
 
 <section class="features" id="recursos">
   <h2>Por que escolher a Praia Digital?</h2>
   <div class="features-grid">
-    <div class="feature-card"><div class="feature-icon">🧠</div><h3>IA Avançada</h3><p>Assistente virtual, avaliador de preços, gerador de descrições e insights de mercado — tudo em uma plataforma.</p></div>
+    <div class="feature-card"><div class="feature-icon">🧠</div><h3>IA Avançada</h3><p>Assistente virtual, avaliador de preços, gerador de descrições, simulador de ROI e insights de mercado — tudo em uma plataforma.</p></div>
     <div class="feature-card"><div class="feature-icon">🌊</div><h3>Foco no Litoral</h3><p>Catálogo especializado em imóveis de praia — sem imóveis urbanos diluindo a experiência.</p></div>
-    <div class="feature-card"><div class="feature-icon">📍</div><h3>Geolocalização</h3><p>Filtros por distância da praia, vista para o mar e orientação solar.</p></div>
-    <div class="feature-card"><div class="feature-icon">💼</div><h3>Para Corretores</h3><p>Ferramentas profissionais de gestão de portfólio e prospecção de clientes.</p></div>
+    <div class="feature-card"><div class="feature-icon">📈</div><h3>ROI Calculadora</h3><p>Calcule retorno do investimento, custos de fechamento e lucratividade líquida de qualquer imóvel.</p></div>
+    <div class="feature-card"><div class="feature-icon">💼</div><h3>Para Corretores</h3><p>Ferramentas profissionais: QR codes, widgets embedáveis, gerador de descrições e mais.</p></div>
     <div class="feature-card"><div class="feature-icon">📱</div><h3>Responsivo</h3><p>Interface adaptada para celular, tablet e desktop — busque de qualquer lugar.</p></div>
     <div class="feature-card"><div class="feature-icon">🤝</div><h3>Suporte Local</h3><p>Atendimento humanizado por profissionais que conhecem o litoral brasileiro.</p></div>
   </div>
@@ -954,12 +1200,8 @@
           <span class="ai-lead-tag tag-firstbuyer">🏠 Primeiro imóvel</span>
         </div>
       </div>
-      <div class="form-group">
-        <label for="contato-email">E-mail</label>
-        <input type="email" id="contato-email" name="email" required placeholder="seu@email.com">
-      </div>
-      <div class="form-group">
-        <label for="contato-tipo">Assunto</label>
+      <div class="form-group"><label for="contato-email">E-mail</label><input type="email" id="contato-email" name="email" required placeholder="seu@email.com"></div>
+      <div class="form-group"><label for="contato-tipo">Assunto</label>
         <select id="contato-tipo" name="tipo">
           <option value="interesse">Tenho interesse em um imóvel</option>
           <option value="anunciar">Quero anunciar meu imóvel</option>
@@ -968,10 +1210,7 @@
           <option value="outro">Outro assunto</option>
         </select>
       </div>
-      <div class="form-group">
-        <label for="contato-mensagem">Mensagem</label>
-        <textarea id="contato-mensagem" name="mensagem" required placeholder="Como podemos ajudar?"></textarea>
-      </div>
+      <div class="form-group"><label for="contato-mensagem">Mensagem</label><textarea id="contato-mensagem" name="mensagem" required placeholder="Como podemos ajudar?"></textarea></div>
       <button type="submit" class="btn btn-ocean" style="width:100%;text-align:center;">Enviar mensagem</button>
       <div class="form-success" id="formSuccess">✅ Mensagem enviada com sucesso! Entraremos em contato em breve.</div>
     </form>
@@ -982,7 +1221,7 @@
   <div class="footer-links">
     <a href="#buscar">Buscar imóveis</a>
     <a href="#simulador">Simulador</a>
-    <a href="#ia">Insights IA</a>
+    <a href="#ferramentas">Ferramentas</a>
     <a href="#corretores">Para Corretores</a>
     <a href="#contato">Contato</a>
     <a href="https://github.com/acarolmourad-commits/praia-digital" target="_blank">GitHub</a>
@@ -1002,6 +1241,10 @@
       <div class="modal-details" id="modalDetails"></div>
       <div class="modal-description" id="modalDescription"></div>
       <div class="modal-ai-score" id="modalAIScore"></div>
+      <div class="modal-roi-bar" id="modalROIBar">
+        <div class="modal-roi-bar-label">📊 ROI estimado: <span id="modalROILabel"></span></div>
+        <div class="modal-roi-bar-track"><div class="modal-roi-bar-fill" id="modalROIFill" style="width:60%"></div></div>
+      </div>
       <button class="modal-compare-btn" id="modalCompareBtn" onclick="toggleModalCompare()">⚖️ Adicionar à comparação</button>
       <div class="modal-actions">
         <a href="#contato" class="btn btn-ocean" onclick="closeModal()">Quero visitar</a>
@@ -1019,28 +1262,25 @@
 
 <script>
 const listings = [
-  {id:1, tipo:'apartamento', cidade:'praia-grande', cidadeLabel:'Praia Grande — Boqueirão', titulo:'Apartamento 2 dorms — frente mar', preco:890000, dormitorios:2, area:60, tags:['2 dorms','60m²','Frente mar'], icon:'🏖️', badge:'Destaque', descricao:'Apartamento em localização privilegiada frente mar, no coração do Boqueirão. Amplo, arejado, com vista para o mar de todos os cômodos. Condomínio com piscina, academia e portaria 24h.', aiScore:96, aiReason:'Excelente custo-benefício em frente ao mar, próximo a comércios e com infraestrutura de primeira.'},
-  {id:2, tipo:'casa', cidade:'guaruja', cidadeLabel:'Guarujá — Pitangueiras', titulo:'Casa 3 dorms com piscina', preco:1450000, dormitorios:3, area:120, tags:['3 dorms','120m²','Piscina'], icon:'🏡', badge:'Novo', descricao:'Casa moderna em condomínio fechado em Pitangueiras, uma das melhores regiões do Guarujá. Espaço gourmet, piscina privativa, 3 suítes e garagem para 2 carros.', aiScore:94, aiReason:'Região mais valorizada do litoral. Piscina e 3 suítes atendem famílias exigentes.'},
-  {id:3, tipo:'pousada', cidade:'peruibe', cidadeLabel:'Peruíbe — Centro', titulo:'Pousada completa — 12 suítes', preco:3200000, dormitorios:12, area:450, tags:['12 suítes','450m²','Receita'], icon:'🏨', badge:'Investimento', descricao:'Pousada bem avaliada no centro de Peruíbe, com 12 suítes climatizadas, piscina, área de lazer e salão de café. Receita estabelecida com alta temporada rentável.', aiScore:98, aiReason:'Melhor ROI do catálogo. Receita sazonal comprovada, alta ocupação no verão.'},
-  {id:4, tipo:'apartamento', cidade:'santos', cidadeLabel:'Santos — Pompéia', titulo:'Apto 3 dorms com vista mar', preco:1100000, dormitorios:3, area:85, tags:['3 dorms','85m²','Vista mar'], icon:'🌅', badge:'', descricao:'Apartamento de alto padrão na Pompéia, com vista panorâmica para o mar. Em condomínio de alto padrão com infraestrutura completa de lazer.', aiScore:92, aiReason:'Localização privilegiada em Santos. Alto padrão com vista mar — mercado consolidado.'},
-  {id:5, tipo:'terreno', cidade:'itanhaem', cidadeLabel:'Itanhaém — Centro', titulo:'Terreno 450m² — excelente localização', preco:380000, dormitorios:0, area:450, tags:['450m²','Título urbano','Próximo praia'], icon:'🏗️', badge:'', descricao:'Terreno bem localizado no centro de Itanhaém, a poucos minutos da praia. Ideal para construção de casa de veraneio ou pequeno empreendimento comercial.', aiScore:88, aiReason:'450m² em localizalção central. Potencial de valorização com expansão urbana.'},
-  {id:6, tipo:'casa', cidade:'mongagua', cidadeLabel:'Mongaguá — Flórida', titulo:'Casa 2 dorms — condomínio fechado', preco:620000, dormitorios:2, area:80, tags:['2 dorms','80m²','Condomínio'], icon:'🏠', badge:'Oportunidade', descricao:'Casa aconchegante em condomínio fechado em Mongaguá. Ideal para quem busca sossego e segurança. Próxima a praias ainda preservadas.', aiScore:90, aiReason:'Entry-point excelente em Mongaguá. Condomínio fechado oferece segurança e baixa manutenção.'},
-  {id:7, tipo:'comercial', cidade:'sao-vicente', cidadeLabel:'São Vicente — Centro', titulo:'Sala comercial 45m² — Centro', preco:450000, dormitorios:0, area:45, tags:['45m²','Sala comercial','Centro'], icon:'🏢', badge:'', descricao:'Sala comercial bem localizada no centro de São Vicente, com excelente circulação de pessoas. Ideal para escritório, consultório ou pequena loja.', aiScore:85, aiReason:'Boa localização comercial em São Vicente. Retorno mensal acessível para pequenos negócios.'},
-  {id:8, tipo:'apartamento', cidade:'sao-vicente', cidadeLabel:'São Vicente — Pompetegração', titulo:'Apartamento 2 dorms — Pompetegração', preco:520000, dormitorios:2, area:58, tags:['2 dorms','58m²','Novo'], icon:'🏠', badge:'', descricao:'Apartamento novo na Pompetegração, com infraestrutura completa de lazer. Próximo à praia e ao shopping. Excelente oportunidade para jovens casais ou investidores.', aiScore:91, aiReason:'Pompetegração em ascenção. Preço acessível para primeiro imóvel com potencial de valorização.'},
-  {id:9, tipo:'casa', cidade:'peruibe', cidadeLabel:'Peruíbe — Jardim Maret', titulo:'Casa 4 suítes com vista para morro', preco:1850000, dormitorios:4, area:200, tags:['4 suítes','200m²','Vista para morro'], icon:'🏡', badge:'Exclusivo', descricao:'Casa espaçosa em bairro tranquilo no Jardim Maret, com vista privilegiada para a Serra do Mar. Área gourmet, piscina e quintal gramado. Perfeita para famílias.', aiScore:93, aiReason:'4 suítes em local tranqilo. Vista para morro adiciona valor paisagístico único.'},
-  {id:10, tipo:'apartamento', cidade:'mongagua', cidadeLabel:'Mongaguá — Itaquarena', titulo:'Apto 1 dorm com vista mar — Itaquá', preco:380000, dormitorios:1, area:42, tags:['1 dorm','42m²','Vista mar'], icon:'🌅', badge:'Oportunidade', descricao:'Studio aconchegante com vista parcial para o mar em Itaquarena. Condomínio com piscina, portaria 24h e playground. Ideal para quem busca simplicidade à beira-mar.', aiScore:89, aiReason:'Menor preço com vista mar do catálogo. Ideal para quem buscaENTRY primeiro imóvel à beira-mar.'},
-  {id:11, tipo:'pousada', cidade:'itanhaem', cidadeLabel:'Itanhaém — Centro', titulo:'Pousada 8 suítes — temporada alta', preco:2100000, dormitorios:8, area:380, tags:['8 suítes','380m²','Piscina'], icon:'🏨', badge:'Investimento', descricao:'Pousada bem posicionada no centro de Itanhaém com 8 suítes, piscina aquecida, salão de eventos e cozinha profissional. Historicamente alta taxa de ocupação na temporada.', aiScore:95, aiReason:'Pousada com infraestrutura profissional. Taxa de ocupação sazonal elevada garante ROI consistente.'},
-  {id:12, tipo:'terreno', cidade:'praia-grande', cidadeLabel:'Praia Grande — Caiçara', titulo:'Terreno 600m² — Caiçara', preco:480000, dormitorios:0, area:600, tags:['600m²','Título urbano','Próximo praia'], icon:'🏗️', badge:'', descricao:'Terreno grande e bem dimensionado no Caiçara, a poucos quarteirões da orla. Zona de uso misto — permite residência ou pequeno comércio. Oportunidade rara na região.', aiScore:87, aiReason:'600m² próximo à orla em Praia Grande. Zona mista abre múltiplas possibilidades de uso.'}
+  {id:1,tipo:'apartamento',cidade:'praia-grande',cidadeLabel:'Praia Grande — Boqueirão',titulo:'Apartamento 2 dorms — frente mar',preco:890000,dormitorios:2,area:60,tags:['2 dorms','60m²','Frente mar'],icon:'🏖️',badge:'Destaque',descricao:'Apartamento em localização privilegiada frente mar, no coração do Boqueirão. Amplo, arejado, com vista para o mar de todos os cômodos. Condomínio com piscina, academia e portaria 24h.',aiScore:96,aiReason:'Excelente custo-benefício em frente ao mar, próximo a comércios e com infraestrutura de primeira.',roi:5.8},
+  {id:2,tipo:'casa',cidade:'guaruja',cidadeLabel:'Guarujá — Pitangueiras',titulo:'Casa 3 dorms com piscina',preco:1450000,dormitorios:3,area:120,tags:['3 dorms','120m²','Piscina'],icon:'🏡',badge:'Novo',descricao:'Casa moderna em condomínio fechado em Pitangueiras, uma das melhores regiões do Guarujá. Espaço gourmet, piscina privativa, 3 suítes e garagem para 2 carros.',aiScore:94,aiReason:'Região mais valorizada do litoral. Piscina e 3 suítes atendem famílias exigentes.',roi:5.4},
+  {id:3,tipo:'pousada',cidade:'peruibe',cidadeLabel:'Peruíbe — Centro',titulo:'Pousada completa — 12 suítes',preco:3200000,dormitorios:12,area:450,tags:['12 suítes','450m²','Receita'],icon:'🏨',badge:'Investimento',descricao:'Pousada bem avaliada no centro de Peruíbe, com 12 suítes climatizadas, piscina, área de lazer e salão de café. Receita estabelecida com alta temporada rentável.',aiScore:98,aiReason:'Melhor ROI do catálogo. Receita sazonal comprovada, alta ocupação no verão.',roi:7.2},
+  {id:4,tipo:'apartamento',cidade:'santos',cidadeLabel:'Santos — Pompéia',titulo:'Apto 3 dorms com vista mar',preco:1100000,dormitorios:3,area:85,tags:['3 dorms','85m²','Vista mar'],icon:'🌅',badge:'',descricao:'Apartamento de alto padrão na Pompéia, com vista panorâmica para o mar. Em condomínio de alto padrão com infraestrutura completa de lazer.',aiScore:92,aiReason:'Localização privilegiada em Santos. Alto padrão com vista mar — mercado consolidado.',roi:5.1},
+  {id:5,tipo:'terreno',cidade:'itanhaem',cidadeLabel:'Itanhaém — Centro',titulo:'Terreno 450m² — excelente localização',preco:380000,dormitorios:0,area:450,tags:['450m²','Título urbano','Próximo praia'],icon:'🏗️',badge:'',descricao:'Terreno bem localizado no centro de Itanhaém, a poucos minutos da praia. Ideal para construção de casa de veraneio ou pequeno empreendimento comercial.',aiScore:88,aiReason:'450m² em localização central. Potencial de valorização com expansão urbana.',roi:5.5},
+  {id:6,tipo:'casa',cidade:'mongagua',cidadeLabel:'Mongaguá — Flórida',titulo:'Casa 2 dorms — condomínio fechado',preco:620000,dormitorios:2,area:80,tags:['2 dorms','80m²','Condomínio'],icon:'🏠',badge:'Oportunidade',descricao:'Casa aconchegante em condomínio fechado em Mongaguá. Ideal para quem busca sossego e segurança. Próxima a praias ainda preservadas.',aiScore:90,aiReason:'Entry-point excelente em Mongaguá. Condomínio fechado oferece segurança e baixa manutenção.',roi:5.0},
+  {id:7,tipo:'comercial',cidade:'sao-vicente',cidadeLabel:'São Vicente — Centro',titulo:'Sala comercial 45m² — Centro',preco:450000,dormitorios:0,area:45,tags:['45m²','Sala comercial','Centro'],icon:'🏢',badge:'',descricao:'Sala comercial bem localizada no centro de São Vicente, com excelente circulação de pessoas. Ideal para escritório, consultório ou pequena loja.',aiScore:85,aiReason:'Boa localização comercial em São Vicente. Retorno mensal acessível para pequenos negócios.',roi:6.1},
+  {id:8,tipo:'apartamento',cidade:'sao-vicente',cidadeLabel:'São Vicente — Pompetegração',titulo:'Apartamento 2 dorms — Pompetegração',preco:520000,dormitorios:2,area:58,tags:['2 dorms','58m²','Novo'],icon:'🏠',badge:'',descricao:'Apartamento novo na Pompetegração, com infraestrutura completa de lazer. Próximo à praia e ao shopping. Excelente oportunidade para jovens casais ou investidores.',aiScore:91,aiReason:'Pompetegração em ascenção. Preço acessível para primeiro imóvel com potencial de valorização.',roi:6.1},
+  {id:9,tipo:'casa',cidade:'peruibe',cidadeLabel:'Peruíbe — Jardim Maret',titulo:'Casa 4 suítes com vista para morro',preco:1850000,dormitorios:4,area:200,tags:['4 suítes','200m²','Vista para morro'],icon:'🏡',badge:'Exclusivo',descricao:'Casa espaçosa em bairro tranquilo no Jardim Maret, com vista privilegiada para a Serra do Mar. Área gourmet, piscina e quintal gramado. Perfeita para famílias.',aiScore:93,aiReason:'4 suítes em local tranqilo. Vista para morro adiciona valor paisagístico único.',roi:7.2},
+  {id:10,tipo:'apartamento',cidade:'mongagua',cidadeLabel:'Mongaguá — Itaquarena',titulo:'Apto 1 dorm com vista mar — Itaquá',preco:380000,dormitorios:1,area:42,tags:['1 dorm','42m²','Vista mar'],icon:'🌅',badge:'Oportunidade',descricao:'Studio aconchegante com vista parcial para o mar em Itaquarena. Condomínio com piscina, portaria 24h e playground. Ideal para quem busca simplicidade à beira-mar.',aiScore:89,aiReason:'Menor preço com vista mar do catálogo. Ideal para quem busca primeiro imóvel à beira-mar.',roi:5.0},
+  {id:11,tipo:'pousada',cidade:'itanhaem',cidadeLabel:'Itanhaém — Centro',titulo:'Pousada 8 suítes — temporada alta',preco:2100000,dormitorios:8,area:380,tags:['8 suítes','380m²','Piscina'],icon:'🏨',badge:'Investimento',descricao:'Pousada bem posicionada no centro de Itanhaém com 8 suítes, piscina aquecida, salão de eventos e cozinha profissional. Historicamente alta taxa de ocupação na temporada.',aiScore:95,aiReason:'Pousada com infraestrutura profissional. Taxa de ocupação sazonal elevada garante ROI consistente.',roi:6.8},
+  {id:12,tipo:'terreno',cidade:'praia-grande',cidadeLabel:'Praia Grande — Caiçara',titulo:'Terreno 600m² — Caiçara',preco:480000,dormitorios:0,area:600,tags:['600m²','Título urbano','Próximo praia'],icon:'🏗️',badge:'',descricao:'Terreno grande e bem dimensionado no Caiçara, a poucos quarteirões da orla. Zona de uso misto — permite residência ou pequeno comércio. Oportunidade rara na região.',aiScore:87,aiReason:'600m² próximo à orla em Praia Grande. Zona mista abre múltiplas possibilidades de uso.',roi:5.8}
 ];
 
-// =====================
+// ====================
 // AI ASSISTANT
-// =====================
+// ====================
 function toggleAI() {
-  const a = document.getElementById('aiAssistant');
-  const btn = document.getElementById('aiFloatBtn');
-  a.classList.toggle('open');
-  btn.classList.remove('has-notif');
+  document.getElementById('aiAssistant').classList.toggle('open');
 }
 
 function sendAIMsg(msg) {
@@ -1053,20 +1293,17 @@ function sendAI() {
   const msg = input.value.trim();
   if (!msg) return;
   input.value = '';
-
   const msgs = document.getElementById('aiMessages');
   const userDiv = document.createElement('div');
   userDiv.className = 'ai-msg user';
   userDiv.textContent = msg;
   msgs.appendChild(userDiv);
   msgs.scrollTop = msgs.scrollHeight;
-
   const typingDiv = document.createElement('div');
   typingDiv.className = 'ai-typing';
   typingDiv.innerHTML = '<div class="ai-typing-dot"></div><div class="ai-typing-dot"></div><div class="ai-typing-dot"></div>';
   msgs.appendChild(typingDiv);
   msgs.scrollTop = msgs.scrollHeight;
-
   setTimeout(() => {
     msgs.removeChild(typingDiv);
     const resp = processAI(msg);
@@ -1081,15 +1318,12 @@ function sendAI() {
 function processAI(msg) {
   const lower = msg.toLowerCase();
 
-  // Financing simulation trigger
   if (lower.match(/simul|financi|parcela|empréstimo|emprestimo/i) && (lower.match(/\d/) || lower.match(/500|800|900|1000|mil|oitocentos|novecentos/))) {
     const priceMatch = msg.match(/(\d{3,7})/);
     const entradaMatch = msg.match(/entrada.*?(\d+)/i);
     let valor = priceMatch ? parseInt(priceMatch[1].replace(/\./g,'')) * 1000 : 0;
     let entrada = entradaMatch ? parseInt(entradaMatch[1].replace(/\./g,'')) * 1000 : 0;
-    if (!valor || valor < 50000) {
-      return 'Para simular financiamento, informe o valor do imóvel. Ex: "Simular financiamento de 500mil com 100mil de entrada".';
-    }
+    if (!valor || valor < 50000) return 'Para simular financiamento, informe o valor. Ex: "Simular financiamento de 500mil com 100mil de entrada".';
     if (!entrada) entrada = Math.round(valor * 0.1);
     const financed = valor - entrada;
     const rate = 0.12 / 12;
@@ -1099,54 +1333,41 @@ function processAI(msg) {
     const total = installment * months;
     const interest = total - financed;
     const fmt = v => 'R$ ' + v.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0});
-    return `🏦 Resultado da simulação (valor: ${fmt(valor)}, entrada: ${fmt(entrada)}):\n\n` +
-      `• Parcela mensal: ${fmt(installment)}\n` +
-      `• Valor financiado: ${fmt(financiado)}\n` +
-      `• Total de juros: ${fmt(interest)}\n` +
-      `• Total a pagar: ${fmt(total)}\n\n` +
-      `💡 Taxa de 12% a.a. em 20 anos. Use o simulador completo abaixo para outros cenários.`;
+    return `🏦 Resultado (valor: ${fmt(valor)}, entrada: ${fmt(entrada)}):\n\n` +
+      `• Parcela: ${fmt(installment)}\n• Valor financiado: ${fmt(financiado)}\n• Total de juros: ${fmt(interest)}\n• Total a pagar: ${fmt(total)}\n\n💡 Taxa 12% a.a. em 20 anos. Use o simulador abaixo para outros cenários.`;
   }
-
-  // Filter triggers
   if (lower.match(/apartamento|apto|apartamento/i) && lower.match(/2.*quarto|2.*dorm/)) {
-    return `🔍 Encontrei apartamentos com 2 quartos no nosso catálogo:\n\n` +
-      listings.filter(l => l.tipo === 'apartamento' && l.dormitorios === 2).slice(0, 3).map(l =>
-        `<span class="listing-chip" onclick="openModal(${l.id})">${l.icon} ${l.titulo} — ${formatPrice(l.preco)} 📍 ${l.cidadeLabel}</span>`
-      ).join('<br>') +
-      `\n\nFiltro aplicado automaticamente. Clique em um imóvel para ver detalhes!`;
+    return `🔍 Apartamentos com 2 quartos:\n\n` + listings.filter(l => l.tipo === 'apartamento' && l.dormitorios === 2).slice(0, 3).map(l =>
+      `<span class="listing-chip" onclick="openModal(${l.id})">${l.icon} ${l.titulo} — ${formatPrice(l.preco)} 📍 ${l.cidadeLabel}</span>`
+    ).join('<br>') + `\n\nClique em um chip para ver detalhes!`;
   }
-
   if (lower.match(/casa|pousada|terreno|comercial/i) && lower.match(/at[eé]|at[eé] |at[eé] |ate |até /)) {
     const type = lower.includes('casa') ? 'casa' : lower.includes('pousada') ? 'pousada' : lower.includes('terreno') ? 'terreno' : 'comercial';
-    const priceMap = {'500': 500000, '800': 800000, '900': 900000, '1000': 1000000, '1m': 1000000, '600': 600000, '700': 700000};
-    const priceKeys = Object.keys(priceMap);
+    const priceMap = {'500':500000,'800':800000,'900':900000,'1000':1000000,'1m':1000000,'600':600000,'700':700000};
     let maxPrice = 0;
-    for (const k of priceKeys) { if (lower.includes(k)) maxPrice = priceMap[k]; }
-    if (maxPrice === 0) maxPrice = 2000000;
+    for (const [k, v] of Object.entries(priceMap)) { if (lower.includes(k)) maxPrice = v; }
+    if (!maxPrice) maxPrice = 2000000;
     const matches = listings.filter(l => l.tipo === type && l.preco <= maxPrice).slice(0, 3);
-    if (!matches.length) return `Não encontrei ${type}s dentro do orçamento. Tente aumentar a faixa de preço ou entre em contato pelo WhatsApp.`;
+    if (!matches.length) return `Não encontrei ${type}s dentro do orçamento. Tente aumentar a faixa.`;
     return `🔍 ${type.charAt(0).toUpperCase() + type.slice(1)}s até ${formatPrice(maxPrice)}:\n\n` +
       matches.map(l => `<span class="listing-chip" onclick="openModal(${l.id})">${l.icon} ${l.titulo} — ${formatPrice(l.preco)}</span>`).join('<br>') +
-      `\n\nClique em um chip para ver os detalhes.`;
+      `\n\nClique para ver detalhes.`;
   }
-
   if (lower.match(/garant|juros|investimento|rental|rentabilidade|roi|return/i)) {
-    const rentals = listings.filter(l => l.tipo === 'pousada' || l.tipo === 'comercial');
+    const rentals = listings.filter(l => l.tipo === 'pousada');
     return `💰 Análise de investimento:\n\n` +
-      `🏨 Pousadas têm melhor ROI sazonal — Peruíbe e Itanhaém historicamente ocupação >80% no verão.\n\n` +
-      `🏢 Salas comerciais em São Vicente oferecem rental yield de ~0.6%/mês com baixo vacância.\n\n` +
-      `🏠 Apartamentos frente mar em Praia Grande: valorização média de 9%/ano acima da inflação.\n\n` +
-      `📊 Recomendação IA: Pousada em Peruíbe (ID 3) tem maior potencial de retorno do catálogo.`;
+      `🏨 Pousadas têm melhor ROI sazonal — Peruíbe e Itanhaém ocupação >80% no verão.\n\n` +
+      `🏢 Salas comerciais em São Vicente oferecem rental yield ~6.1% com baixa vacância.\n\n` +
+      `🏠 Apartamentos frente mar em Praia Grande: valorização média 9%/ano.\n\n` +
+      `📊 Recomendação IA: Pousada em Peruíbe (ID 3) tem maior potencial de retorno.`;
   }
-
   if (lower.match(/melhor|cidade|região|mais.*valoriz|best|top/i)) {
     return `📈 Análise de mercado por IA:\n\n` +
-      `🥇 Guarujá — +11,2% ao ano. Região mais valorizada do litoral. Pitangueiras lidera.\n\n` +
-      `🥈 Praia Grande — +9,1% ao ano. Melhor custo-benefício. Maior extensão de praia.\n\n` +
-      `🥉 Peruíbe — +7,7% ao ano. Crescimento acelerado no turismo. Pousadas com altíssima rentabilidade.\n\n` +
-      `💡 Para entrada mais acessível: Mongaguá e São Vicente oferecem_ENTRY points com alto potencial de crescimento.`;
+      `🥇 Guarujá — +11,2% ao ano. Região mais valorizada do litoral.\n` +
+      `🥈 Praia Grande — +9,1% ao ano. Melhor custo-benefício.\n` +
+      `🥉 Peruíbe — +7,7% ao ano. Crescimento acelerado no turismo.\n\n` +
+      `💡 Entry-points: Mongaguá e São Vicente oferecem alto potencial com menor entrada.`;
   }
-
   if (lower.match(/praia grande|santos|guaruja|sao vicente|itanhaem|mongagua|peruibe/i)) {
     const cityMap = {'praia grande':'praia-grande','santos':'santos','guaruja':'guaruja','são vicente':'sao-vicente','itanhaém':'itanhaem','mongaguá':'mongagua','peruíbe':'peruibe'};
     let foundCity = '';
@@ -1159,97 +1380,51 @@ function processAI(msg) {
       cityListings.map(l => `<span class="listing-chip" onclick="openModal(${l.id})">${l.icon} ${l.titulo} — ${formatPrice(l.preco)}</span>`).join('<br>') +
       `\n\nClique em um imóvel para ver detalhes completos.`;
   }
-
-  // Recommendation based on favorites/views
   if (lower.match(/recomend|me sugere|sugira|indique|ideal|perfeito|match/i)) {
     const recs = [...listings].sort((a,b) => b.aiScore - a.aiScore).slice(0, 3);
     return `🎯 Top 3 recomendações da IA:\n\n` +
       recs.map(l => `<span class="listing-chip" onclick="openModal(${l.id})">${l.icon} ${l.titulo} (${l.aiScore}/100) — ${formatPrice(l.preco)}</span>`).join('<br>') +
-      `\n\nBaseado em análise de preço, localização e potencial de valorização.`;
+      `\n\nBaseado em preço, localização e potencial de valorização.`;
   }
-
-  if (lower.match(/ajuda|help|o que.*fazer|dúvida|dúvida/i)) {
-    return `🤖 Sou a assistente IA da Praia Digital. Posso ajudar com:\n\n` +
-      `• "Apartamento 2 quartos até 800mil em São Vicente"\n` +
-      `• "Simular financiamento de 500mil"\n` +
-      `• "Melhor cidade para investir"\n` +
-      `• "Quero uma pousada com bom ROI"\n` +
-      `• "Recomende imóveis"`;
-  }
-
-  if (lower.match(/imposto|documento|registro|cartório|ITBI|escritura/i)) {
-    return `📋 Custos além do preço do imóvel:\n\n` +
-      `• ITBI: ~3% do valor (municipal)\n` +
-      `• Registro: ~1% do valor (cartório)\n` +
-      `• Escritura: ~0.5% (tabelionato)\n` +
-      `•弹 Many corretoras oferecem弾 pagamento parcelado弹 desses custos.\n\n` +
-      `💡 Use o simulador de financiamento para incluí-los no cálculo total.`;
-  }
-
-  if (lower.match(/primeiro|first.*buyer|entrada.*baixa|fgts|subsídio|subisidio/i)) {
+  if (lower.match(/primeiro|first.*buyer|fgts|subsídio|subisidio/i)) {
     return `🏠 Programas para primeiro imóvel:\n\n` +
       `• FGTS: até 90% do imóvel (parcial ou total)\n` +
       `• Minha Casa Minha Vida: faixas de renda com subsídio direto\n` +
-      `• Taxa 9% a.a. via Caixa/BB com FGTS\n` +
-      `•弹弹弾弾弾: entry-point弾弹 mais弹 acessível com 10% entrada.\n\n` +
-      `💡 Use o simulador com 10% entrada para ver a parcela real.`;
+      `• Taxa 9% a.a. via Caixa/BB com FGTS\n\n` +
+      `💡 Entry-point mais acessível com 10% entrada. Apartamento em São Vicente (ID 8) é boa opção.`;
   }
-
-  // Fallback
-  return `🤖 Entendi sua dúvida! Para resultados precisos, tente ser mais específico:\n\n` +
+  return `🤖 Entendi sua dúvida! Para resultados precisos:\n\n` +
     `• "apartamento 2q até 700mil em Santos"\n` +
     `• "simular financiamento de 800mil"\n` +
     `• "melhor cidade pra investir"\n\n` +
-    `Ou clique nos chips de sugestões acima! 👆`;
+    `Ou clique nas sugestões acima! 👆`;
 }
 
-// Natural Language Search
+// ====================
+// NL SEARCH
+// ====================
 function nlSearch() {
   const query = document.getElementById('nlQuery').value.trim().toLowerCase();
   if (!query) return;
-
-  let tipo = '', cidade = '', dorms = '', preco = '';
-
-  // Extract type
+  let tipo = '', cidade = '', dorms = '';
   if (query.includes('apartamento') || query.includes('apto')) tipo = 'apartamento';
   else if (query.includes('casa')) tipo = 'casa';
   else if (query.includes('pousada')) tipo = 'pousada';
   else if (query.includes('terreno')) tipo = 'terreno';
   else if (query.includes('comercial') || query.includes('sala')) tipo = 'comercial';
-
-  // Extract city
-  const cityMap = {'praia grande':'praia-grande','santos':'santos','guaruja':'guaruja','guarujá':'guaruja','são vicente':'sao-vicente','itanhaém':'itanhaem','itanhaem':'itanhaem','mongaguá':'mongagua','mongagua':'mongagua','peruíbe':'peruibe','peruibe':'peruibe'};
+  const cityMap = {'praia grande':'praia-grande','santos':'santos','guaruja':'guaruja','são vicente':'sao-vicente','itanhaém':'itanhaem','mongaguá':'mongagua','peruíbe':'peruibe'};
   for (const [label, key] of Object.entries(cityMap)) { if (query.includes(label)) { cidade = key; break; } }
-
-  // Extract bedrooms
   const dormMatch = query.match(/(\d+)\s*(quarto|dorm|banhei)/i);
   if (dormMatch) dorms = dormMatch[1];
-
-  // Extract price ceiling
   const priceMap = [
-    [/at[eé]\s*(?:r?\$?\s*)?(\d+)[\s.,]*(?:mil|milhões|m)/g, () => {
-      const m = query.match(/at[eé]\s*(?:r?\$?\s*)?(\d+)[\s.,]*(?:mil|milhões|m)/);
-      return m ? parseInt(m[1].replace(/\D/g,'')) * 1000 : null;
-    }],
-    [/(\d+)[\s.,]*mil/g, () => {
-      const m = query.match(/(\d+)[\s.,]*mil/);
-      return m ? parseInt(m[1].replace(/\D/g,'')) * 1000 : null;
-    }],
-    [/(\d+)[\s.,]*(?:milhoes|milhao|m)/g, () => {
-      const m = query.match(/(\d+)[\s.,]*(?:milhoes|milhao|m)/);
-      return m ? parseInt(m[1].replace(/\D/g,'')) * 1000000 : null;
-    }]
+    [/at[eé]\s*(?:r?\$?\s*)?(\d+)[\s.,]*(?:mil|milhões|m)/g, () => { const m = query.match(/at[eé]\s*(?:r?\$?\s*)?(\d+)[\s.,]*(?:mil|milhões|m)/); return m ? parseInt(m[1].replace(/\D/g,'')) * 1000 : null; }],
+    [/(\d+)[\s.,]*mil/g, () => { const m = query.match(/(\d+)[\s.,]*mil/); return m ? parseInt(m[1].replace(/\D/g,'')) * 1000 : null; }]
   ];
-
   let priceVal = null;
   for (const [, fn] of priceMap) { priceVal = fn(); if (priceVal) break; }
-
-  // Apply filters
   document.getElementById('tipo').value = tipo;
   document.getElementById('cidade').value = cidade;
   document.getElementById('dormitorios').value = dorms;
-
-  // Map price to filter
   if (priceVal) {
     if (priceVal <= 500000) document.getElementById('preco').value = '500k';
     else if (priceVal <= 1000000) document.getElementById('preco').value = '500k-1m';
@@ -1258,27 +1433,45 @@ function nlSearch() {
   } else {
     document.getElementById('preco').value = '';
   }
-
   filterListings();
-
-  // Show NL result message
   const count = document.getElementById('resultsCount').textContent;
   const msgDiv = document.createElement('div');
   msgDiv.style.cssText = 'text-align:center;padding:1rem;background:#f3e8ff;border-radius:12px;margin-bottom:1rem;font-size:0.9rem;color:var(--purple);';
-  msgDiv.innerHTML = `✨ Busca IA: "<strong>${query}</strong>" — ${count}. <a href="javascript:void(0)" onclick="this.parentElement.remove()">limpar</a>`;
-  const resultsGrid = document.getElementById('resultsGrid');
-  if (resultsGrid.previousElementSibling && resultsGrid.previousElementSibling.classList.contains('nl-result-msg')) {
-    resultsGrid.previousElementSibling.remove();
-  }
+  msgDiv.innerHTML = `✨ Busca IA: "<strong>${query}</strong>" — ${count}. <a href="javascript:void(0)" onclick="this.parentElement.remove();filterListings();" style="color:var(--purple);margin-left:0.5rem;">limpar</a>`;
   msgDiv.className = 'nl-result-msg';
+  const resultsGrid = document.getElementById('resultsGrid');
+  if (resultsGrid.previousElementSibling && resultsGrid.previousElementSibling.classList.contains('nl-result-msg')) resultsGrid.previousElementSibling.remove();
   resultsGrid.parentElement.insertBefore(msgDiv, resultsGrid);
-
   document.getElementById('nlQuery').value = '';
 }
 
-// =====================
+// ====================
+// SAVE SEARCH
+// ====================
+function saveSearch() {
+  const name = document.getElementById('saveSearchName').value.trim();
+  const email = document.getElementById('saveSearchEmail').value.trim();
+  if (!name || !email) { alert('Informe nome e e-mail para salvar a busca.'); return; }
+  if (!email.includes('@')) { alert('Informe um e-mail válido.'); return; }
+  const filters = {
+    tipo: document.getElementById('tipo').value,
+    cidade: document.getElementById('cidade').value,
+    dorms: document.getElementById('dormitorios').value,
+    preco: document.getElementById('preco').value,
+    name, email
+  };
+  const saves = JSON.parse(localStorage.getItem('pd_saves') || '[]');
+  saves.push({ ...filters, date: new Date().toISOString() });
+  localStorage.setItem('pd_saves', JSON.stringify(saves));
+  document.getElementById('savedAlertBadge').classList.add('visible');
+  document.getElementById('saveSearchName').value = '';
+  document.getElementById('saveSearchEmail').value = '';
+  setTimeout(() => { document.getElementById('savedAlertBadge').classList.remove('visible'); }, 4000);
+}
+
+// ====================
 // COMPARE
-// =====================
+// ====================
 let compareList = JSON.parse(localStorage.getItem('pd_compare') || '[]');
 
 function formatPrice(v) {
@@ -1317,6 +1510,7 @@ function showCompare() {
     ['🛏️ Dormitórios', p => p.dormitorios || '—'],
     ['🏷️ Tipo', p => p.tipo.charAt(0).toUpperCase() + p.tipo.slice(1)],
     ['🧠 Score IA', p => p.aiScore + '/100'],
+    ['💰 ROI est.', p => p.roi + '% a.a.'],
     ['📝 Descrição', p => p.descricao.substring(0, 80) + '...']
   ];
   document.getElementById('compareBody').innerHTML = rows.map(([label, fn]) =>
@@ -1395,7 +1589,7 @@ function renderListings(items) {
   count.textContent = items.length + ' imóvel' + (items.length > 1 ? 's' : '') + ' encontrado' + (items.length > 1 ? 's' : '');
   grid.innerHTML = items.map(l => {
     const badgeClass = l.badge === 'Destaque' ? '' : l.badge === 'Investimento' ? ' ai-badge' : l.badge === 'Oportunidade' ? ' hot-badge' : '';
-    const scoreVisible = l.aiScore >= 95 ? ' 📈' : '';
+    const roiVisible = l.roi >= 6 ? ' 📈' : '';
     return '<div class="listing-card" onclick="openModal(' + l.id + ')">' +
       '<div class="listing-img">' + l.icon + (l.badge ? '<span class="listing-badge' + badgeClass + '">' + l.badge + '</span>' : '') + '</div>' +
       '<button class="favorite-btn ' + (isFav(l.id) ? 'active' : '') + '" onclick="toggleFav(' + l.id + ', event)" title="' + (isFav(l.id) ? 'Remover dos favoritos' : 'Favoritar') + '">' + (isFav(l.id) ? '❤️' : '🤍') + '</button>' +
@@ -1406,7 +1600,8 @@ function renderListings(items) {
       '<div class="listing-price">' + formatPrice(l.preco) + '</div>' +
       '<div class="listing-tags">' + l.tags.map(t => '<span class="tag">' + t + '</span>').join('') + '</div>' +
       '</div>' +
-      (l.aiScore >= 95 ? '<div class="listing-ai-score">🧠 ' + l.aiScore + scoreVisible + '</div>' : '') +
+      (l.aiScore >= 95 ? '<div class="listing-ai-score">🧠 ' + l.aiScore + '</div>' : '') +
+      (l.roi >= 6 ? '<div class="listing-roi">📈 ' + l.roi + '% ROI</div>' : '') +
       '</div>';
   }).join('');
 }
@@ -1420,6 +1615,7 @@ function sortListings() {
     if (sort === 'preco-desc') return b.preco - a.preco;
     if (sort === 'area-asc') return a.area - b.area;
     if (sort === 'area-desc') return b.area - a.area;
+    if (sort === 'ai-desc') return b.aiScore - a.aiScore;
   });
   renderListings(sorted);
 }
@@ -1435,17 +1631,8 @@ function filterListings() {
   currentFilter = listings.filter(l => {
     if (tipo && l.tipo !== tipo) return false;
     if (cidade && l.cidade !== cidade) return false;
-    if (dorms) {
-      const d = parseInt(dorms);
-      if (d === 4 && l.dormitorios < 4) return false;
-      if (d !== 4 && l.dormitorios !== d) return false;
-    }
-    if (preco) {
-      if (preco === '500k' && l.preco > 500000) return false;
-      if (preco === '500k-1m' && (l.preco < 500000 || l.preco > 1000000)) return false;
-      if (preco === '1m-2m' && (l.preco < 1000000 || l.preco > 2000000)) return false;
-      if (preco === '2m+' && l.preco <= 2000000) return false;
-    }
+    if (dorms) { const d = parseInt(dorms); if (d === 4 && l.dormitorios < 4) return false; if (d !== 4 && l.dormitorios !== d) return false; }
+    if (preco) { if (preco === '500k' && l.preco > 500000) return false; if (preco === '500k-1m' && (l.preco < 500000 || l.preco > 1000000)) return false; if (preco === '1m-2m' && (l.preco < 1000000 || l.preco > 2000000)) return false; if (preco === '2m+' && l.preco <= 2000000) return false; }
     return true;
   });
   document.getElementById('sortSelect').value = '';
@@ -1471,21 +1658,17 @@ function openModal(id) {
     '<div class="modal-detail"><div class="modal-detail-value">' + l.tipo.charAt(0).toUpperCase() + l.tipo.slice(1) + '</div><div class="modal-detail-label">Tipo</div></div>' +
     '<div class="modal-detail"><div class="modal-detail-value">🧠 ' + l.aiScore + '</div><div class="modal-detail-label">Score IA</div></div>';
   document.getElementById('modalDescription').textContent = l.descricao;
-
   const scoreLabel = l.aiScore >= 95 ? '⭐ Recomendação IA' : l.aiScore >= 90 ? '💡 Boa escolha' : '📊 Analisado';
-  document.getElementById('modalAIScore').innerHTML =
-    '<div class="modal-ai-score-icon">🧠</div>' +
-    '<div class="modal-ai-score-text"><strong>' + scoreLabel + ' — ' + l.aiScore + '/100</strong><p>' + l.aiReason + '</p></div>';
-
+  document.getElementById('modalAIScore').innerHTML = '<div class="modal-ai-score-icon">🧠</div><div class="modal-ai-score-text"><strong>' + scoreLabel + ' — ' + l.aiScore + '/100</strong><p>' + l.aiReason + '</p></div>';
+  document.getElementById('modalROILabel').textContent = l.roi + '% a.a.';
+  document.getElementById('modalROIFill').style.width = (l.roi / 10 * 100) + '%';
   const inCompare = compareList.includes(l.id);
   const btn = document.getElementById('modalCompareBtn');
   btn.textContent = inCompare ? '⚖️ Remover da comparação' : '⚖️ Adicionar à comparação';
   btn.classList.toggle('visible', compareList.length < 3 || inCompare);
-
   const shareText = encodeURIComponent('🏖️ ' + l.titulo + ' — ' + formatPrice(l.preco) + ' em ' + l.cidadeLabel + '\n\nIA Score: ' + l.aiScore + '/100\n\nVeja mais em Praia Digital!');
   document.getElementById('shareWhatsapp').href = 'https://wa.me/?text=' + shareText + '%0A' + encodeURIComponent(location.href);
   document.getElementById('shareTwitter').href = 'https://twitter.com/intent/tweet?text=' + shareText + '&url=' + encodeURIComponent(location.href);
-
   document.getElementById('modalOverlay').classList.add('active');
   document.body.style.overflow = 'hidden';
 }
@@ -1496,7 +1679,6 @@ function closeModal() {
   currentModalId = null;
   history.replaceState(null, '', location.pathname);
 }
-
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
 function toggleModalCompare() {
@@ -1522,52 +1704,76 @@ function printListing() {
   const l = listings.find(x => x.id === currentModalId);
   if (!l) return;
   const w = window.open('', '_blank');
-  w.document.write('<html><head><title>' + l.titulo + ' - Praia Digital</title><style>body{font-family:Segoe UI,sans-serif;padding:2rem;max-width:700px;margin:0 auto;}.price{font-size:1.5rem;color:#0077B6;font-weight:700;}.tag{background:#F4EBD0;padding:0.25rem 0.75rem;border-radius:50px;display:inline-block;margin:0.2rem;}.contact{background:#0077B6;color:white;padding:1rem;border-radius:12px;margin-top:2rem;}</style></head><body>');
+  w.document.write('<html><head><title>' + l.titulo + ' - Praia Digital</title><style>body{font-family:Segoe UI,sans-serif;padding:2rem;max-width:700px;margin:0 auto;}.price{font-size:1.5rem;color:#0077B6;font-weight:700;}.contact{background:#0077B6;color:white;padding:1rem;border-radius:12px;margin-top:2rem;}</style></head><body>');
   w.document.write('<h1>' + l.icon + ' ' + l.titulo + '</h1><p>📍 ' + l.cidadeLabel + '</p><p class="price">' + formatPrice(l.preco) + '</p>');
-  w.document.write('<p>📐 ' + l.area + 'm² | 🛏️ ' + l.dormitorios + ' dorms | 🧠 Score IA: ' + l.aiScore + '/100</p>');
+  w.document.write('<p>📐 ' + l.area + 'm² | 🛏️ ' + l.dormitorios + ' dorms | 🧠 Score IA: ' + l.aiScore + '/100 | 📈 ROI: ' + l.roi + '% a.a.</p>');
   w.document.write('<p>' + l.descricao + '</p>');
-  w.document.write('<p style="margin-top:1rem;"><strong>Motivo IA:</strong> ' + l.aiReason + '</p>');
+  w.document.write('<p><strong>Motivo IA:</strong> ' + l.aiReason + '</p>');
   w.document.write('<div class="contact"><strong>Contato:</strong> (13) 99999-9999 | contato@praiadigital.com.br</div>');
   w.document.write('</body></html>');
   w.document.close();
   w.print();
 }
 
-// Financing simulator
+// ====================
+// SIMULATOR + CHART
+// ====================
 function calcSimulator() {
   const valor = parseFloat(document.getElementById('simValor').value);
   const entrada = parseFloat(document.getElementById('simEntrada').value) || 0;
   const taxa = parseFloat(document.getElementById('simTaxa').value) / 100;
   const anos = parseInt(document.getElementById('simAnos').value);
-
   if (!valor || valor < 50000) { alert('Informe o valor do imóvel (mínimo R$ 50 mil).'); return; }
-
   const financed = valor - entrada;
   const monthlyRate = taxa / 12;
   const months = anos * 12;
   const installment = financed * (Math.pow(1 + monthlyRate, months) * monthlyRate) / (Math.pow(1 + monthlyRate, months) - 1);
   const totalPaid = installment * months;
   const totalInterest = totalPaid - financed;
-
   document.getElementById('simParcela').textContent = 'R$ ' + installment.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0});
   document.getElementById('simFinanciado').textContent = 'R$ ' + financed.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0});
   document.getElementById('simJuros').textContent = 'R$ ' + totalInterest.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0});
   document.getElementById('simTotal').textContent = 'R$ ' + totalPaid.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0});
-
   document.getElementById('simResult').classList.add('visible');
   document.getElementById('amortTable').classList.remove('visible');
   document.getElementById('simTableToggle').textContent = '📊 Ver tabela de amortização';
 
+  // Build chart bars (first year vs last year)
+  const chartBars = document.getElementById('chartBars');
+  const yr1Interest = financed * monthlyRate;
+  const yr1Amort = installment - yr1Interest;
+  const lastBalance = financed;
+  let balance = financed;
+  const yearlyData = [];
+  for (let y = 1; y <= anos; y++) {
+    let yInterest = 0, yAmort = 0;
+    for (let m = 1; m <= 12; m++) {
+      const interest = balance * monthlyRate;
+      const amort = installment - interest;
+      yInterest += interest;
+      yAmort += amort;
+      balance -= amort;
+    }
+    yearlyData.push({ yInterest, yAmort, balance });
+  }
+  const maxPayment = Math.max(installment * 12, yearlyData[0].yInterest + yearlyData[0].yAmort);
+  chartBars.innerHTML = yearlyData.slice(0, Math.min(anos, 10)).map((d, i) => {
+    const interestH = Math.round((d.yInterest / maxPayment) * 80);
+    const amortH = Math.round((d.yAmort / maxPayment) * 80);
+    return '<div class="chart-bar-group"><div class="chart-bar-fill" style="height:' + interestH + 'px;background:var(--amber);border-radius:3px 3px 0 0;"></div><div class="chart-bar-fill" style="height:' + amortH + 'px;background:rgba(255,255,255,0.8);border-radius:0 0 3px 3px;"></div><div class="chart-bar-label">Y' + (i + 1) + '</div></div>';
+  }).join('');
+
+  // Amort table
   const maxRows = months > 120 ? 120 : months;
   const step = months > 120 ? 12 : 1;
-  let balance = financed;
+  let b = financed;
   let rows = '';
   for (let m = 1; m <= maxRows; m++) {
-    const interest = balance * monthlyRate;
+    const interest = b * monthlyRate;
     const amort = installment - interest;
-    balance -= amort;
+    b -= amort;
     if (m <= 12 || m % 12 === 0 || m === maxRows) {
-      rows += '<tr><td>' + m + '</td><td>R$ ' + installment.toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</td><td>R$ ' + interest.toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</td><td>R$ ' + amort.toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</td><td>R$ ' + Math.max(0, balance).toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</td></tr>';
+      rows += '<tr><td>' + m + '</td><td>R$ ' + installment.toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</td><td>R$ ' + interest.toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</td><td>R$ ' + amort.toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</td><td>R$ ' + Math.max(0, b).toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</td></tr>';
     }
   }
   document.getElementById('amortBody').innerHTML = rows;
@@ -1580,14 +1786,14 @@ function toggleAmort() {
   btn.textContent = t.classList.contains('visible') ? '🙈 Ocultar tabela' : '📊 Ver tabela de amortização';
 }
 
-// AI Valuation
+// ====================
+// AI VALUATION
+// ====================
 function runValuation() {
   const tipo = document.getElementById('valTipo').value;
   const cidade = document.getElementById('valCidade').value;
   const area = parseInt(document.getElementById('valArea').value) || 80;
   const dorms = parseInt(document.getElementById('valDorms').value) || 0;
-
-  // Price per m² base by type and city
   const basePrices = {
     apartamento: { 'praia-grande': 12000, 'santos': 18000, 'guaruja': 15000, 'sao-vicente': 9000, 'itanhaem': 7500, 'mongagua': 7000, 'peruibe': 7500 },
     casa: { 'praia-grande': 14000, 'santos': 20000, 'guaruja': 18000, 'sao-vicente': 11000, 'itanhaem': 9000, 'mongagua': 8500, 'peruibe': 8500 },
@@ -1595,29 +1801,20 @@ function runValuation() {
     pousada: { 'praia-grande': 8000, 'santos': 12000, 'guaruja': 10000, 'sao-vicente': 7000, 'itanhaem': 6000, 'mongagua': 5500, 'peruibe': 6500 },
     comercial: { 'praia-grande': 10000, 'santos': 15000, 'guaruja': 12000, 'sao-vicente': 8000, 'itanhaem': 6000, 'mongagua': 5500, 'peruibe': 6000 }
   };
-
   const cityMultiplier = { 'praia-grande': 1.0, 'santos': 1.35, 'guaruja': 1.28, 'sao-vicente': 0.88, 'itanhaem': 0.75, 'mongagua': 0.72, 'peruibe': 0.78 };
-
   const base = basePrices[tipo]?.[cidade] || 10000;
   const mult = cityMultiplier[cidade] || 1.0;
   const dormBonus = dorms > 0 ? Math.min(dorms * 0.04, 0.2) : 0;
-
   const pricePerSqm = base * mult * (1 + dormBonus);
   const median = Math.round(area * pricePerSqm);
-
   const baixo = Math.round(median * 0.88);
-  const medio = median;
   const alto = Math.round(median * 1.12);
-
   document.getElementById('valBaixo').textContent = 'R$ ' + baixo.toLocaleString('pt-BR');
-  document.getElementById('valMedio').textContent = 'R$ ' + medio.toLocaleString('pt-BR');
+  document.getElementById('valMedio').textContent = 'R$ ' + median.toLocaleString('pt-BR');
   document.getElementById('valAlto').textContent = 'R$ ' + alto.toLocaleString('pt-BR');
-
-  // Position bar
   const position = tipo === 'apartamento' ? 0.62 : tipo === 'casa' ? 0.55 : tipo === 'pousada' ? 0.40 : 0.50;
   document.getElementById('valBarFill').style.width = (position * 100) + '%';
   document.getElementById('valBarMarker').style.left = (position * 100) + '%';
-
   const insights = {
     apartamento: 'Apartamentos em ' + cidade.replace('-',' ') + ' estão em alta demanda. Preço competitivo para o mercado local.',
     casa: 'Casas com múltiplas suítes têm valorização acima da média no litoral.',
@@ -1626,54 +1823,107 @@ function runValuation() {
     comercial: 'Espaços comerciais em ' + cidade.replace('-',' ') + ' atendem demanda local crescente.'
   };
   document.getElementById('valInsight').textContent = insights[tipo] || '';
-
   document.getElementById('valResult').classList.add('visible');
 }
 
-// AI Description Generator
+// ====================
+// ROI CALCULATOR
+// ====================
+function calcROI() {
+  const preco = parseFloat(document.getElementById('roiPreco').value);
+  const aluguel = parseFloat(document.getElementById('roiAluguel').value) || 0;
+  const condominio = parseFloat(document.getElementById('roiCondominio').value) || 0;
+  const iptu = parseFloat(document.getElementById('roiIPTU').value) || 0;
+  const years = parseInt(document.getElementById('roiYears').value);
+  const growth = parseFloat(document.getElementById('roiGrowth').value) / 100;
+
+  if (!preco || preco < 50000) { alert('Informe o preço de compra (mínimo R$ 50 mil).'); return; }
+
+  const netRent = (aluguel - condominio) * 12 - iptu;
+  const grossYield = preco > 0 ? (aluguel * 12 / preco) * 100 : 0;
+
+  // 5-year projection
+  let futureVal = preco;
+  let totalRent = 0;
+  for (let y = 0; y < years; y++) {
+    totalRent += netRent;
+    futureVal *= (1 + growth);
+  }
+
+  const totalReturn = ((futureVal - preco + totalRent) / preco) * 100;
+  const netProfit = futureVal - preco + totalRent;
+  const cashOnCash = (netRent / preco) * 100;
+
+  document.getElementById('roiYield').textContent = grossYield.toFixed(1) + '%';
+  document.getElementById('roiTotalReturn').textContent = '+' + totalReturn.toFixed(0) + '%';
+  document.getElementById('roiNetProfit').textContent = 'R$ ' + netProfit.toLocaleString('pt-BR', {minimumFractionDigits: 0});
+  document.getElementById('roiCashOnCash').textContent = cashOnCash.toFixed(1) + '%';
+
+  // Bar chart
+  const roiChart = document.getElementById('roiChart');
+  const appreciation = futureVal - preco;
+  const roiChartMax = Math.max(appreciation, totalRent);
+  roiChart.innerHTML =
+    '<div class="roi-bar-row"><div class="roi-bar-label">Aluguel líquido</div><div class="roi-bar-track"><div class="roi-bar-fill" style="width:' + (totalRent / roiChartMax * 100) + '%;background:var(--ocean-light);"></div></div><div class="roi-bar-value">R$ ' + totalRent.toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</div></div>' +
+    '<div class="roi-bar-row"><div class="roi-bar-label">Valorização</div><div class="roi-bar-track"><div class="roi-bar-fill" style="width:' + (appreciation / roiChartMax * 100) + '%;background:var(--success);"></div></div><div class="roi-bar-value">R$ ' + appreciation.toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</div></div>';
+
+  // Closing costs
+  const itbi = preco * 0.03;
+  const registro = preco * 0.01;
+  const escritura = preco * 0.005;
+  const corretagem = preco * 0.05;
+  const totalCC = itbi + registro + escritura + corretagem;
+  document.getElementById('ccITBI').textContent = 'R$ ' + itbi.toLocaleString('pt-BR', {minimumFractionDigits: 0});
+  document.getElementById('ccRegistro').textContent = 'R$ ' + registro.toLocaleString('pt-BR', {minimumFractionDigits: 0});
+  document.getElementById('ccEscritura').textContent = 'R$ ' + escritura.toLocaleString('pt-BR', {minimumFractionDigits: 0});
+  document.getElementById('ccCorretagem').textContent = 'R$ ' + corretagem.toLocaleString('pt-BR', {minimumFractionDigits: 0});
+  document.getElementById('ccTotal').textContent = 'R$ ' + totalCC.toLocaleString('pt-BR', {minimumFractionDigits: 0});
+
+  document.getElementById('roiResult').classList.add('visible');
+  document.getElementById('closingCosts').classList.remove('visible');
+}
+
+function toggleClosingCosts() {
+  document.getElementById('closingCosts').classList.toggle('visible');
+}
+
+// ====================
+// QR CODE
+// ====================
+function generateQR() {
+  const id = parseInt(document.getElementById('qrListingId').value);
+  if (!id || id < 1 || id > 12) { alert('Informe um ID de imóvel entre 1 e 12.'); return; }
+  const l = listings.find(x => x.id === id);
+  if (!l) { alert('Imóvel não encontrado.'); return; }
+  const url = 'https://acarolmourad-commits.github.io/praia-digital/#imovel-' + id;
+  const qrApi = 'https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=' + encodeURIComponent(url);
+  const preview = document.getElementById('qrPreview');
+  preview.innerHTML = '<img src="' + qrApi + '" alt="QR Code" style="width:120px;height:120px;border-radius:8px;">';
+  const resultUrl = document.getElementById('qrResultUrl');
+  resultUrl.textContent = url;
+  resultUrl.classList.add('visible');
+}
+
+// ====================
+// EMBED CODE
+// ====================
+function generateEmbed() {
+  const cidade = document.getElementById('cidade').value;
+  const tipo = document.getElementById('tipo').value;
+  const embedUrl = 'https://acarolmourad-commits.github.io/praia-digital/';
+  const filters = [];
+  if (cidade) filters.push('cidade=' + cidade);
+  if (tipo) filters.push('tipo=' + tipo);
+  const embedCode = '<iframe src="' + embedUrl + (filters.length ? '?' + filters.join('&') : '') + '" width="100%" height="600" style="border:none;border-radius:12px;max-width:100%;" loading="lazy"></iframe>';
+  const output = document.getElementById('embedOutput');
+  output.value = embedCode;
+  output.classList.add('visible');
+}
+
+// ====================
+// AI DESCRIPTION GENERATOR
+// ====================
 let currentTone = 'vendas';
-const descTemplates = {
-  vendas: (l, extra) => `🏠 ${l.titulo}
-
-📍 Localização privilegiada em ${l.cidadeLabel}. ${l.descricao}
-
-📐 Especificações técnicas:
-• Área: ${l.area}m² ${l.dormitorios > 0 ? `• ${l.dormitorios} dormitório${l.dormitorios > 1 ? 's' : ''}` : ''}
-• Tipo: ${l.tipo.charAt(0).toUpperCase() + l.tipo.slice(1)}
-${extra ? '• Destaques: ' + extra : ''}
-
-💰 Investimento: ${formatPrice(l.preco)}
-
-🏖️ Vivência litorânea com infraestrutura completa. Agende sua visita e conheça de perto!
-
-📞 Contato: (13) 99999-9999 | contato@praiadigital.com.br`,
-
-  investimento: (l, extra) => `📊 OPORTUNIDADE DE INVESTIMENTO — ${l.titulo}
-
-📍 ${l.cidadeLabel} | 🧠 Score IA: ${l.aiScore}/100
-
-${l.descricao}
-
-📈 Dados do imóvel:
-• Valor: ${formatPrice(l.preco)} | • Área: ${l.area}m²
-${l.dormitorios > 0 ? `• ${l.dormitorios} dormitórios` : ''}
-${extra ? '• Características: ' + extra : ''}
-
-💡 Análise IA: ${l.aiReason}
-
-📞 Garanta sua rentabilidade. Contato: (13) 99999-9999`,
-
-  luxo: (l, extra) => `✨ ${l.titulo} — ${l.cidadeLabel}
-
-Experiência premium à beira-mar. ${l.descricao}
-
-• ${l.area}m² ${l.dormitorios > 0 ? `• ${l.dormitorios} suítes` : ''}
-${extra ? '• ' + extra : ''}
-
-💎 ${formatPrice(l.preco)}
-
-Agende uma visita exclusiva: (13) 99999-9999`
-};
 
 function setTone(btn, tone) {
   currentTone = tone;
@@ -1687,34 +1937,48 @@ function generateDesc() {
   const area = document.getElementById('descArea').value || '';
   const dorms = document.getElementById('descDorms').value || '';
   const extra = document.getElementById('descExtra').value || '';
-
   if (!cidade) { alert('Informe a cidade/bairro.'); return; }
-
   const loading = document.getElementById('descLoading');
   const output = document.getElementById('descOutput');
-  const outputText = document.getElementById('descOutputText');
-
   loading.classList.add('visible');
   output.classList.remove('visible');
-
   setTimeout(() => {
     loading.classList.remove('visible');
+    const templates = {
+      vendas: (t, c, a, d, e) => `🏠 ${t.charAt(0).toUpperCase() + t.slice(1)} em ${c}
 
-    // Build a virtual listing object for template
-    const v = {
-      titulo: `${tipo.charAt(0).toUpperCase() + tipo.slice(1)} em ${cidade}`,
-      cidadeLabel: cidade,
-      descricao: `Imóvel de excelente padrão em ${cidade}. Acabamento de primeira qualidade, ambientes integrados e iluminação natural privilegiada.${extra ? ' ' + extra : ''}`,
-      area: parseInt(area) || 80,
-      dormitorios: parseInt(dorms) || 2,
-      tipo,
-      preco: 0,
-      aiScore: 0,
-      aiReason: ''
+📍 Localização privilegiada em ${c}. ${a > 0 ? `Área de ${a}m²` : ''} ${d > 0 ? `com ${d} dormitório${d > 1 ? 's' : ''}` : ''}. ${e ? 'Destaques: ' + e : ''}
+
+🏖️ Vivência litorânea com infraestrutura completa. Agende sua visita e conheça de perto!
+
+📞 Contato: (13) 99999-9999 | contato@praiadigital.com.br`,
+
+      investimento: (t, c, a, d, e) => `📊 OPORTUNIDADE DE INVESTIMENTO — ${t.charAt(0).toUpperCase() + t.slice(1)} em ${c}
+
+${a > 0 ? `📐 Área: ${a}m²` : ''} ${d > 0 ? `• ${d} dormitório${d > 1 ? 's' : ''}` : ''} ${e ? '• Destaques: ' + e : ''}
+
+💡 Ativo de alto potencial no litoral sul. Mercado em crescimento acelerado.
+
+📞 Garanta sua rentabilidade. Contato: (13) 99999-9999`,
+
+      aluguel: (t, c, a, d, e) => `🏠 ${t.charAt(0).toUpperCase() + t.slice(1)} para alugar em ${c}
+
+📍 ${c}. ${a > 0 ? `${a}m²` : ''} ${d > 0 ? `• ${d} dormitório${d > 1 ? 's' : ''}` : ''} ${e ? '• ' + e : ''}
+
+🏖️ Perfeito para quem busca qualidade de vida à beira-mar. Agende sua visita!
+
+📞 (13) 99999-9999 | contato@praiadigital.com.br`,
+
+      luxo: (t, c, a, d, e) => `✨ ${t.charAt(0).toUpperCase() + t.slice(1)} de Luxo — ${c}
+
+Experiência premium à beira-mar. ${a > 0 ? `${a}m²` : ''} ${d > 0 ? `• ${d} suíte${d > 1 ? 's' : ''}` : ''}${e ? '. ' + e : ''}
+
+💎 Padrão excepcional em uma das melhores localizações do litoral.
+
+Agende visita exclusiva: (13) 99999-9999`
     };
-
-    const text = descTemplates[currentTone] ? descTemplates[currentTone](v, extra) : descTemplates.vendas(v, extra);
-    outputText.textContent = text;
+    const text = templates[currentTone](tipo, cidade, parseInt(area), parseInt(dorms), extra);
+    document.getElementById('descOutputText').textContent = text;
     output.classList.add('visible');
   }, 1500);
 }
@@ -1728,13 +1992,11 @@ function copyDesc() {
   });
 }
 
-// Contact
+// ====================
+// CONTACT + NEWSLETTER + FAQ
+// ====================
 function handleContact(e) { e.preventDefault(); document.getElementById('formSuccess').style.display = 'block'; document.getElementById('contactForm').reset(); setTimeout(() => { document.getElementById('formSuccess').style.display = 'none'; }, 5000); }
-
-// Newsletter
 function handleNewsletter(e) { e.preventDefault(); document.getElementById('newsletterSuccess').classList.add('visible'); document.getElementById('newsletterForm').reset(); setTimeout(() => { document.getElementById('newsletterSuccess').classList.remove('visible'); }, 6000); }
-
-// FAQ
 function toggleFaq(el) { el.classList.toggle('open'); }
 
 // Hash routing
