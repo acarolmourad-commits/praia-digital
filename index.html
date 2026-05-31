@@ -607,6 +607,131 @@
       .rental-cta-buttons { flex-direction: column; align-items: center; }
     }
 
+    /* MARKET RATES SECTION */
+    .market-rates-section { background: #f8f9fa; padding: 4rem 2rem; }
+    .market-rates-inner { max-width: 1100px; margin: 0 auto; }
+    .market-rates-badge { display: inline-block; background: var(--ocean); color: white; padding: 0.35rem 1rem; border-radius: 50px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem; }
+    .market-rates-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 900; color: var(--dark); margin-bottom: 0.75rem; }
+    .market-rates-sub { color: #666; font-size: 1rem; margin-bottom: 2.5rem; max-width: 600px; }
+    .market-rates-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.25rem; margin-bottom: 2rem; }
+    .market-rate-card { background: var(--white); border-radius: 18px; padding: 1.5rem; box-shadow: 0 2px 12px rgba(0,0,0,0.07); border: 2px solid transparent; transition: transform 0.2s, border-color 0.2s; }
+    .market-rate-card:hover { transform: translateY(-3px); border-color: var(--ocean); }
+    .market-rate-best { border-color: var(--amber); }
+    .market-rate-badge { font-size: 0.7rem; font-weight: 700; color: var(--amber); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; display: block; }
+    .market-rate-city { font-size: 1rem; font-weight: 800; color: var(--dark); margin-bottom: 0.5rem; }
+    .market-rate-price { font-size: 1.8rem; font-weight: 900; color: var(--ocean); margin-bottom: 0.3rem; }
+    .market-rate-unit { font-size: 0.9rem; font-weight: 400; }
+    .market-rate-detail { font-size: 0.82rem; color: #555; margin-bottom: 0.4rem; }
+    .market-rate-trend { font-size: 0.8rem; font-weight: 700; color: var(--success); margin-bottom: 0.5rem; }
+    .market-rate-bar { background: #eee; border-radius: 50px; height: 6px; margin-bottom: 0.4rem; overflow: hidden; }
+    .market-rate-fill { height: 100%; background: var(--ocean); border-radius: 50px; }
+    .market-rate-note { font-size: 0.75rem; color: #888; font-style: italic; }
+    .market-rates-tips { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin-top: 2rem; }
+    .market-tip-card { background: var(--white); border-radius: 14px; padding: 1.25rem; display: flex; gap: 1rem; align-items: flex-start; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    .market-tip-icon { font-size: 1.5rem; flex-shrink: 0; }
+    .market-tip-card h4 { font-size: 0.9rem; font-weight: 800; color: var(--dark); margin-bottom: 0.3rem; }
+    .market-tip-card p { font-size: 0.82rem; color: #555; line-height: 1.5; }
+
+    /* COSTS CALCULATOR SECTION */
+    .costs-calc-section { background: var(--sand); padding: 4rem 2rem; }
+    .costs-calc-inner { max-width: 900px; margin: 0 auto; }
+    .costs-calc-badge { display: inline-block; background: var(--ocean); color: white; padding: 0.35rem 1rem; border-radius: 50px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem; }
+    .costs-calc-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 900; color: var(--dark); margin-bottom: 0.75rem; }
+    .costs-calc-sub { color: #666; font-size: 1rem; margin-bottom: 2rem; }
+    .costs-calc-form { background: var(--white); border-radius: 20px; padding: 2.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+    .costs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+    .costs-field { display: flex; flex-direction: column; gap: 0.35rem; }
+    .costs-field label { font-size: 0.78rem; font-weight: 600; color: #555; text-transform: uppercase; letter-spacing: 0.05em; }
+    .costs-field input, .costs-field select { background: #f8f9fa; border: 1px solid #ddd; border-radius: 10px; padding: 0.65rem 0.9rem; font-size: 0.9rem; color: var(--dark); transition: border-color 0.2s; }
+    .costs-field input:focus, .costs-field select:focus { outline: none; border-color: var(--ocean); }
+    .costs-field select option { background: white; }
+    .costs-checkboxes { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 1.5rem; }
+    .costs-checkbox { display: flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; color: #555; cursor: pointer; }
+    .costs-checkbox input { accent-color: var(--ocean); }
+    .costs-calc-btn { width: 100%; background: var(--ocean); color: white; border: none; border-radius: 14px; padding: 1rem; font-size: 1rem; font-weight: 800; cursor: pointer; transition: background 0.2s, transform 0.2s; }
+    .costs-calc-btn:hover { background: var(--ocean-dark); transform: translateY(-2px); }
+    .costs-result { display: none; margin-top: 1.5rem; }
+    .costs-result.visible { display: block; }
+    .costs-result-summary { font-size: 1.2rem; font-weight: 800; color: var(--dark); text-align: center; margin-bottom: 1rem; padding: 1rem; background: #f0f8ff; border-radius: 12px; }
+    .costs-breakdown { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.75rem; margin-bottom: 1rem; }
+    .costs-item { background: #f8f9fa; border-radius: 10px; padding: 0.75rem; text-align: center; }
+    .costs-item-label { font-size: 0.72rem; color: #888; text-transform: uppercase; letter-spacing: 0.05em; }
+    .costs-item-value { font-size: 0.95rem; font-weight: 800; color: var(--dark); margin-top: 0.2rem; }
+    .costs-total-row { background: var(--ocean); color: white; border-radius: 12px; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; font-weight: 800; font-size: 1.1rem; margin-top: 0.75rem; }
+    .costs-total-row span { opacity: 0.8; font-size: 0.85rem; font-weight: 400; }
+
+    /* ROI SECTION */
+    .roi-section { background: linear-gradient(135deg, #1a2a3a 0%, #0d1f30 100%); padding: 4rem 2rem; color: white; }
+    .roi-inner { max-width: 900px; margin: 0 auto; }
+    .roi-badge { display: inline-block; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); color: #ffd700; padding: 0.35rem 1rem; border-radius: 50px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem; }
+    .roi-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 900; margin-bottom: 0.75rem; }
+    .roi-sub { color: rgba(255,255,255,0.65); font-size: 1rem; margin-bottom: 2rem; }
+    .roi-grid { display: grid; grid-template-columns: 1fr auto; gap: 1.5rem; margin-bottom: 1.5rem; align-items: end; }
+    .roi-inputs { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
+    .roi-field { display: flex; flex-direction: column; gap: 0.35rem; }
+    .roi-field label { font-size: 0.78rem; font-weight: 600; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.05em; }
+    .roi-field input, .roi-field select { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 10px; padding: 0.65rem 0.9rem; font-size: 0.9rem; color: white; }
+    .roi-field input:focus, .roi-field select:focus { outline: none; border-color: #ffd700; }
+    .roi-field select option { background: #0d1f30; }
+    .roi-btn { background: linear-gradient(135deg, #ffd700 0%, #ff8c00 100%); color: #0d1f30; border: none; border-radius: 14px; padding: 0.9rem 2rem; font-size: 1rem; font-weight: 800; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; white-space: nowrap; }
+    .roi-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(255,215,0,0.3); }
+    .roi-result { display: none; }
+    .roi-result.visible { display: block; }
+    .roi-result-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 0.75rem; margin-bottom: 1.5rem; }
+    .roi-result-item { background: rgba(255,255,255,0.08); border-radius: 12px; padding: 1rem; text-align: center; border: 1px solid rgba(255,255,255,0.12); }
+    .roi-result-label { font-size: 0.72rem; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 0.05em; }
+    .roi-result-value { font-size: 1.1rem; font-weight: 900; color: #ffd700; margin-top: 0.3rem; }
+    .roi-result-value.negative { color: #ff6b6b; }
+    .roi-comparison { background: rgba(255,255,255,0.05); border-radius: 12px; padding: 1rem 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; }
+    .roi-comp-row { display: flex; justify-content: space-between; font-size: 0.85rem; }
+    .roi-comp-label { color: rgba(255,255,255,0.6); }
+    .roi-comp-value { font-weight: 700; }
+    .roi-comp-good { color: #a8e6cf; }
+    .roi-comp-bad { color: #ff6b6b; }
+    @media(max-width:700px) { .roi-grid { grid-template-columns: 1fr; } .roi-btn { width: 100%; } }
+
+    /* FAQ SECTION */
+    .faq-section { background: var(--white); padding: 4rem 2rem; }
+    .faq-inner { max-width: 800px; margin: 0 auto; }
+    .faq-badge { display: inline-block; background: var(--amber); color: var(--dark); padding: 0.35rem 1rem; border-radius: 50px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem; }
+    .faq-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 900; color: var(--dark); margin-bottom: 2rem; }
+    .faq-list { display: flex; flex-direction: column; gap: 0.75rem; }
+    .faq-item { border: 1px solid #eee; border-radius: 14px; overflow: hidden; }
+    .faq-question { width: 100%; background: #f8f9fa; border: none; padding: 1rem 1.25rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-size: 0.92rem; font-weight: 700; color: var(--dark); text-align: left; transition: background 0.2s; }
+    .faq-question:hover { background: #eef2f7; }
+    .faq-question span:first-child { flex: 1; padding-right: 1rem; }
+    .faq-icon { font-size: 0.7rem; transition: transform 0.25s; flex-shrink: 0; }
+    .faq-item.open .faq-icon { transform: rotate(180deg); }
+    .faq-answer { display: none; background: white; padding: 1rem 1.25rem; border-top: 1px solid #eee; }
+    .faq-item.open .faq-answer { display: block; }
+    .faq-answer p { font-size: 0.88rem; color: #555; line-height: 1.65; }
+
+    /* REPORT SECTION */
+    .report-section { background: var(--sand); padding: 4rem 2rem; }
+    .report-inner { max-width: 900px; margin: 0 auto; }
+    .report-badge { display: inline-block; background: var(--success); color: white; padding: 0.35rem 1rem; border-radius: 50px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem; }
+    .report-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 900; color: var(--dark); margin-bottom: 0.75rem; }
+    .report-sub { color: #666; font-size: 1rem; margin-bottom: 2rem; }
+    .report-form { background: var(--white); border-radius: 20px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 2rem; }
+    .report-field { margin-bottom: 1.25rem; }
+    .report-field label { font-size: 0.82rem; font-weight: 700; color: var(--dark); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.4rem; }
+    .report-field select { width: 100%; background: #f8f9fa; border: 1px solid #ddd; border-radius: 10px; padding: 0.75rem; font-size: 0.9rem; color: var(--dark); }
+    .report-field select:focus { outline: none; border-color: var(--ocean); }
+    .report-checkboxes { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.5rem; }
+    .report-checkbox { display: flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; color: #555; cursor: pointer; }
+    .report-checkbox input { accent-color: var(--ocean); }
+    .report-btn { width: 100%; background: var(--success); color: white; border: none; border-radius: 14px; padding: 1rem; font-size: 1rem; font-weight: 800; cursor: pointer; transition: background 0.2s, transform 0.2s; }
+    .report-btn:hover { background: #1e8449; transform: translateY(-2px); }
+    .report-preview { display: none; background: white; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); overflow: hidden; }
+    .report-preview.visible { display: block; }
+    .report-preview-header { background: linear-gradient(135deg, var(--ocean) 0%, var(--ocean-dark) 100%); padding: 1.5rem 2rem; color: white; }
+    .report-preview-body { padding: 2rem; max-height: 500px; overflow-y: auto; }
+    .report-preview-actions { padding: 1rem 2rem; background: #f8f9fa; display: flex; gap: 1rem; flex-wrap: wrap; border-top: 1px solid #eee; }
+    .report-print-btn { background: var(--ocean); color: white; border: none; border-radius: 50px; padding: 0.75rem 1.5rem; font-size: 0.88rem; font-weight: 700; cursor: pointer; transition: background 0.2s; }
+    .report-print-btn:hover { background: var(--ocean-dark); }
+    .report-whatsapp-btn { background: #25d366; color: white; border: none; border-radius: 50px; padding: 0.75rem 1.5rem; font-size: 0.88rem; font-weight: 700; cursor: pointer; transition: background 0.2s; }
+    .report-whatsapp-btn:hover { background: #1da851; }
+
     .nb-grid
     .nb-card { background: var(--white); border-radius: 16px; padding: 1.5rem; box-shadow: 0 2px 12px rgba(0,0,0,0.08); position: relative; }
     .nb-card h4 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--dark); }
@@ -1346,6 +1471,321 @@
       <div class="rental-cta-buttons">
         <a href="https://wa.me/5513999999999?text=Olá! Quero cadastrar meu imóvel para locação de temporada na Praia Digital." class="rental-cta-whatsapp" target="_blank">💬 Cadastrar pelo WhatsApp</a>
         <a href="mailto:locacao@praiadigital.com.br?subject=Cadastro de imóvel para locação" class="rental-cta-email">📧 Enviar por e-mail</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALORES DE MERCADO — CORRETORES E INVESTIDORES -->
+<section class="market-rates-section" id="valores">
+  <div class="market-rates-inner">
+    <div class="market-rates-badge">📊 VALORES DE MERCADO — 2025</div>
+    <h2 class="market-rates-title">Preços por m² no Litoral Paulista</h2>
+    <p class="market-rates-sub">Dados atualizados para ajudá-lo a precificar ou avaliar imóveis. Valores médios de apartamentos novos e usados.</p>
+
+    <div class="market-rates-grid">
+      <div class="market-rate-card market-rate-best">
+        <div class="market-rate-badge">🏆 Melhor custo-benefício</div>
+        <div class="market-rate-city">🏖️ Praia Grande</div>
+        <div class="market-rate-price">R$ 5.800<span class="market-rate-unit">/m²</span></div>
+        <div class="market-rate-detail">Apartamento 2 dorms: <strong>R$ 290k–420k</strong></div>
+        <div class="market-rate-trend">📈 +9.1% em 12 meses</div>
+        <div class="market-rate-bar"><div class="market-rate-fill" style="width:58%"></div></div>
+        <div class="market-rate-note">Zona de maior valorização do litoral</div>
+      </div>
+      <div class="market-rate-card">
+        <div class="market-rate-city">⛰️ Guarujá</div>
+        <div class="market-rate-price">R$ 7.200<span class="market-rate-unit">/m²</span></div>
+        <div class="market-rate-detail">Apartamento 2 dorms: <strong>R$ 360k–550k</strong></div>
+        <div class="market-rate-trend">📈 +7.8% em 12 meses</div>
+        <div class="market-rate-bar"><div class="market-rate-fill" style="width:72%"></div></div>
+        <div class="market-rate-note">Alto padrão +75% sobre PG</div>
+      </div>
+      <div class="market-rate-card">
+        <div class="market-rate-city">🏙️ Santos</div>
+        <div class="market-rate-price">R$ 6.400<span class="market-rate-unit">/m²</span></div>
+        <div class="market-rate-detail">Apartamento 2 dorms: <strong>R$ 320k–480k</strong></div>
+        <div class="market-rate-trend">📈 +6.5% em 12 meses</div>
+        <div class="market-rate-bar"><div class="market-rate-fill" style="width:64%"></div></div>
+        <div class="market-rate-note">Centro urbano, alta demanda</div>
+      </div>
+      <div class="market-rate-card">
+        <div class="market-rate-city">🌳 São Vicente</div>
+        <div class="market-rate-price">R$ 5.200<span class="market-rate-unit">/m²</span></div>
+        <div class="market-rate-detail">Apartamento 2 dorms: <strong>R$ 260k–380k</strong></div>
+        <div class="market-rate-trend">📈 +5.3% em 12 meses</div>
+        <div class="market-rate-bar"><div class="market-rate-fill" style="width:52%"></div></div>
+        <div class="market-rate-note">Mais acessível do litoral sul</div>
+      </div>
+      <div class="market-rate-card">
+        <div class="market-rate-city">🌊 Itanhaém</div>
+        <div class="market-rate-price">R$ 4.800<span class="market-rate-unit">/m²</span></div>
+        <div class="market-rate-detail">Casa 2 dorms: <strong>R$ 240k–350k</strong></div>
+        <div class="market-rate-trend">📈 +8.2% em 12 meses</div>
+        <div class="market-rate-bar"><div class="market-rate-fill" style="width:48%"></div></div>
+        <div class="market-rate-note">Crescimento acelerado, ótimo yield</div>
+      </div>
+      <div class="market-rate-card">
+        <div class="market-rate-city">🏝️ Mongaguá</div>
+        <div class="market-rate-price">R$ 4.300<span class="market-rate-unit">/m²</span></div>
+        <div class="market-rate-detail">Casa 2 dorms: <strong>R$ 215k–320k</strong></div>
+        <div class="market-rate-trend">📈 +10.1% em 12 meses</div>
+        <div class="market-rate-bar"><div class="market-rate-fill" style="width:43%"></div></div>
+        <div class="market-rate-note">Maior valorização % do litoral!</div>
+      </div>
+      <div class="market-rate-card">
+        <div class="market-rate-city">🌿 Peruíbe</div>
+        <div class="market-rate-price">R$ 4.500<span class="market-rate-unit">/m²</span></div>
+        <div class="market-rate-detail">Casa 2 dorms: <strong>R$ 225k–340k</strong></div>
+        <div class="market-rate-trend">📈 +7.4% em 12 meses</div>
+        <div class="market-rate-bar"><div class="market-rate-fill" style="width:45%"></div></div>
+        <div class="market-rate-note">Região sustentável, turismo crescente</div>
+      </div>
+    </div>
+
+    <div class="market-rates-tips">
+      <div class="market-tip-card">
+        <div class="market-tip-icon">📐</div>
+        <div>
+          <h4>Como usar</h4>
+          <p>Multiplique o valor do m² pela área do imóvel para estimar o preço justo de mercado. Ex: apt 65m² em PG = R$ 5.800 × 65 = <strong>R$ 377.000</strong></p>
+        </div>
+      </div>
+      <div class="market-tip-card">
+        <div class="market-tip-icon">⚠️</div>
+        <div>
+          <h4>Atenção</h4>
+          <p>Valores de terreno e frente-mar são 2-4x maiores. Imóveis na praia podem variar R$ 8.000–20.000/m² dependendo da localização.</p>
+        </div>
+      </div>
+      <div class="market-tip-card">
+        <div class="market-tip-icon">🔄</div>
+        <div>
+          <h4>Para investidores</h4>
+          <p>Avalie <em>rental yield</em> e não só valorização. PG tem yield 5.8% médio — melhor que a maioria das contas poupança/CDI.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULADORA DE CUSTOS — ITBI, REGISTRO, CARTÓRIO -->
+<section class="costs-calc-section" id="custost">
+  <div class="costs-calc-inner">
+    <div class="costs-calc-badge">🧮 CÁLCULO DE CUSTOS DE TRANSAÇÃO</div>
+    <h2 class="costs-calc-title">Quanto custa comprar um imóvel?</h2>
+    <p class="costs-calc-sub">ITBI, registro, cartório, corretagem — saiba exatamente quanto vai gastar na compra.</p>
+
+    <div class="costs-calc-form">
+      <div class="costs-grid">
+        <div class="costs-field">
+          <label for="ccValor">Valor do imóvel (R$)</label>
+          <input type="number" id="ccValor" placeholder="Ex: 400000" min="50000" value="400000">
+        </div>
+        <div class="costs-field">
+          <label for="ccEntrada">Valor de entrada (R$)</label>
+          <input type="number" id="ccEntrada" placeholder="Ex: 80000" min="0" value="80000">
+        </div>
+        <div class="costs-field">
+          <label for="ccEstado">Estado</label>
+          <select id="ccEstado">
+            <option value="SP" selected>São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="PR">Paraná</option>
+            <option value="MG">Minas Gerais</option>
+          </select>
+        </div>
+        <div class="costs-field">
+          <label for="ccFinalidade">Finalidade</label>
+          <select id="ccFinalidade">
+            <option value="residencial" selected>Residencial</option>
+            <option value="comercial">Comercial</option>
+          </select>
+        </div>
+      </div>
+      <div class="costs-checkboxes">
+        <label class="costs-checkbox"><input type="checkbox" id="cccCorretagem" value="1" checked> 🏠 Corretagem (5-6%)</label>
+        <label class="costs-checkbox"><input type="checkbox" id="cccITBI" value="1" checked> 📋 ITBI (2-3%)</label>
+        <label class="costs-checkbox"><input type="checkbox" id="cccRegistro" value="1" checked> 📝 Registro (0.5-1%)</label>
+        <label class="costs-checkbox"><input type="checkbox" id="cccCartorio" value="1" checked> 🏛️ Emolumentos cartório</label>
+        <label class="costs-checkbox"><input type="checkbox" id="cccEscritura" value="1" checked> ✍️ Escritura pública</label>
+        <label class="costs-checkbox"><input type="checkbox" id="cccLaudo" value="1"> 🔍 Laudo de avaliação (financiamento)</label>
+      </div>
+      <button class="costs-calc-btn" onclick="calcTransactionCosts()">🧮 Calcular Custos</button>
+
+      <div class="costs-result" id="costsResult">
+        <div class="costs-result-summary" id="costsResultSummary"></div>
+        <div class="costs-breakdown" id="costsBreakdown"></div>
+        <div class="costs-total-row" id="costsTotalRow"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROI PROJECTION TOOL -->
+<section class="roi-section" id="roi">
+  <div class="roi-inner">
+    <div class="roi-badge">💹 SIMULADOR DE ROI — INVESTIDORES</div>
+    <h2 class="roi-title">Quanto seu imóvel vai render?</h2>
+    <p class="roi-sub">Projete retorno de investimento com valorização, aluguel e custos operacionais.</p>
+
+    <div class="roi-grid">
+      <div class="roi-inputs">
+        <div class="roi-field">
+          <label for="roiPreco">Preço de compra (R$)</label>
+          <input type="number" id="roiPreco" placeholder="Ex: 350000" min="50000" value="350000">
+        </div>
+        <div class="roi-field">
+          <label for="roiAluguel">Aluguel mensal estimado (R$)</label>
+          <input type="number" id="roiAluguel" placeholder="Ex: 2200" min="0" value="2200">
+        </div>
+        <div class="roi-field">
+          <label for="roiCondominio">Condomínio mensal (R$)</label>
+          <input type="number" id="roiCondominio" placeholder="Ex: 450" min="0" value="450">
+        </div>
+        <div class="roi-field">
+          <label for="roiIPTU">IPTU anual (R$)</label>
+          <input type="number" id="roiIPTU" placeholder="Ex: 2400" min="0" value="2400">
+        </div>
+        <div class="roi-field">
+          <label for="roiValorizacao">Valorização anual (%)</label>
+          <input type="number" id="roiValorizacao" placeholder="Ex: 7" min="0" max="30" value="7">
+        </div>
+        <div class="roi-field">
+          <label for="roiOcupacao">Ocupação média (%)</label>
+          <select id="roiOcupacao">
+            <option value="0.90" selected>90% (9 meses/ano)</option>
+            <option value="0.75">75%</option>
+            <option value="0.80">80%</option>
+            <option value="0.85">85%</option>
+            <option value="0.95">95%</option>
+          </select>
+        </div>
+      </div>
+      <button class="roi-btn" onclick="calcROI()">💹 Calcular ROI</button>
+    </div>
+
+    <div class="roi-result" id="roiResult">
+      <div class="roi-result-grid" id="roiResultGrid"></div>
+      <div class="roi-comparison" id="roiComparison"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="faq-section" id="faq">
+  <div class="faq-inner">
+    <div class="faq-badge">❓ PERGUNTAS FREQUENTES</div>
+    <h2 class="faq-title">Tire suas dúvidas sobre comprar no litoral</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>🏦 Qual a melhor forma de financiar um imóvel no litoral?</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>O SFH (Sistema Financeiro de Habitação) com recursos do FGTS é a melhor opção para quem trabalha com CLT. Taxas de 9% a 12% a.a. com até 30 anos de prazo. Para autônomos, o SBPE (Sistema Brasileiro de Poupança e Empréstimo) oferece taxas similares, mas exige mais comprovação de renda (1-2 anos de IR). O MCMV é excelente para famílias com renda até R$ 8.800/mês, com subsídios de até R$ 47.500.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>📊 Imóvel no litoral valoriza mais que na cidade?</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>Sim! O litoral sul de SP tem apresentado valorização média de 7-10% ao ano, acima de muitos bairros urbanos. Isso ocorre pela escassez de terreno, demanda sazonal crescente e melhoria na infraestrutura (neste caso, as obras de modernização do Porto de Santos). Cidades como Mongaguá e Itanhaém apresentam os maiores ganhos percentuais por serem mercados ainda em expansão.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>💰 Qual o custo real além do preço do imóvel?</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>Além da entrada, conte com: ITBI (2-3% do valor), registro (0,5-1%), emolumentos cartório (≈0,5%), escritura pública (≈0,3%), corretagem (5-6%) e possível avaliação do banco (0,1-0,3%). Para um imóvel de R$ 400k, o custo total adicional fica entre R$ 35.000 e R$ 48.000. Use nossa calculadora acima para calcular exatamente.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>🏖️ Qual cidade tem melhor rental yield no litoral?</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>Praia Grande apresenta o melhor equilíbrio: rental yield de 5,8% médio anual, alta liquidez (vende rápido) e boa valorização. Para yield máximo, prefira apartamentos menores (1-2 dorms) em bairros com infraestrutura de comércio — eles rendem mais e vacam menos na baixa temporada. Apartamentos de alto padrão têm yield menor (3-4%) mas vacância muito baixa.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>🔑 Posso usar FGTS para comprar no litoral?</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>Sim! O FGTS pode ser usado para entrada, amortização do saldo devedor ou quitação do financiamento. Requisitos: conta FGTS ativa por 3 anos, não ter imóvel residencial próprio na mesma cidade, e o imóvel precisa estar dentro do limite do SFH (R$ 3,5 milhões em 2025). Para o litoral, muitos apartamentos de até R$ 500k se enquadram perfeitamente.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>🌊 Imóvel na beira-mar é sempre melhor investimento?</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>Não necessariamente. Imóveis na faixa de 100-300m da praia têm excelente valorização e demanda de aluguel, mas custam 2-4x mais. O melhor ROI часто é em imóveis a 400-800m da praia com boa infraestrutura de comércio ao redor — o "efeito praia" ainda funciona (cliente caminha 5-10 min) e o preço é significativamente menor, aumentando o yield.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>📅 Quando é melhor época para comprar imóvel no litoral?</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>A baixa temporada (maio a agosto) é o melhor momento para negociar. Muitos vendedores estão decepcionados com o rendimento de temporada e estão mais propensos a aceitar ofertas menores. Além disso, os bancos têm mais capacidade de análise e as taxas podem ser mais competitiva no início do ano. Evite dezembro/janeiro quando vendedores têm poder de barganha alto.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>👤 Preciso de corretor para comprar no litoral?</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>Recomendamos fortemente. Um corretor local conhece detalhes que não estão em anúncios: histórico de enchentes na região, qualidade da infraestrutura de água/esgoto, tendência de valorização do bairro, e pode negociar valores que compensam amplamente a comissão (geralmente 5-6%). Além disso, eles entendem a dinâmica sazonal de cada cidade e sabem quais prédios têm melhor administração de locação.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROPERTY REPORT GENERATOR -->
+<section class="report-section" id="relatorio">
+  <div class="report-inner">
+    <div class="report-badge">📋 GERADOR DE RELATÓRIO DO IMÓVEL</div>
+    <h2 class="report-title">Gere um relatório completo para apresentação</h2>
+    <p class="report-sub">Selecione um imóvel e gere um relatório com todos os dados, fotos, análise de mercado e comparativos.</p>
+
+    <div class="report-form">
+      <div class="report-field">
+        <label for="reportImovel">Selecione o imóvel</label>
+        <select id="reportImovel">
+          <option value="">Escolha um imóvel...</option>
+        </select>
+      </div>
+      <div class="report-checkboxes">
+        <label class="report-checkbox"><input type="checkbox" id="rpbDados" checked> 📊 Dados do imóvel</label>
+        <label class="report-checkbox"><input type="checkbox" id="rpbMercado" checked> 📈 Análise de mercado</label>
+        <label class="report-checkbox"><input type="checkbox" id="rpbFinanciamento" checked> 🏦 Opções de financiamento</label>
+        <label class="report-checkbox"><input type="checkbox" id="rpbRental" checked> 💰 Análise de rental yield</label>
+        <label class="report-checkbox"><input type="checkbox" id="rpbCustos" checked> 🧮 Custos de transação</label>
+        <label class="report-checkbox"><input type="checkbox" id="rpbVizinhos" checked> 🏘️ Imóveis similares na região</label>
+      </div>
+      <button class="report-btn" onclick="generateReport()">📄 Gerar Relatório</button>
+    </div>
+
+    <div class="report-preview" id="reportPreview">
+      <div class="report-preview-header" id="reportPreviewHeader"></div>
+      <div class="report-preview-body" id="reportPreviewBody"></div>
+      <div class="report-preview-actions">
+        <button class="report-print-btn" onclick="printReport()">🖨️ Imprimir / Salvar PDF</button>
+        <button class="report-whatsapp-btn" onclick="shareReportWhatsApp()">💬 Enviar via WhatsApp</button>
       </div>
     </div>
   </div>
@@ -3855,14 +4295,279 @@ function formatBRL(n) {
   return n.toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
 }
 
+// TRANSACTION COSTS CALCULATOR
+function calcTransactionCosts() {
+  const valor = parseFloat(document.getElementById('ccValor').value) || 0;
+  if (!valor || valor < 50000) { alert('Informe o valor do imóvel (mínimo R$ 50 mil).'); return; }
+
+  const estado = document.getElementById('ccEstado').value;
+  const finalidade = document.getElementById('ccFinalidade').value;
+
+  // SP ITBI rates
+  const itbiRate = estado === 'SP' ? 0.03 : 0.025;
+  const registroRate = 0.008;
+  const cartorioRate = 0.005;
+  const escrituraRate = 0.003;
+
+  const items = [];
+  let total = 0;
+
+  if (document.getElementById('cccITBI').checked) {
+    const v = valor * itbiRate;
+    items.push({ label: 'ITBI (' + (itbiRate*100).toFixed(1) + '%)', value: v });
+    total += v;
+  }
+  if (document.getElementById('cccRegistro').checked) {
+    const v = valor * registroRate;
+    items.push({ label: 'Registro (' + (registroRate*100) + '%)', value: v });
+    total += v;
+  }
+  if (document.getElementById('cccCartorio').checked) {
+    const v = valor * cartorioRate;
+    items.push({ label: 'Emolumentos cartório (' + (cartorioRate*100) + '%)', value: v });
+    total += v;
+  }
+  if (document.getElementById('cccEscritura').checked) {
+    const v = valor * escrituraRate;
+    items.push({ label: 'Escritura pública (' + (escrituraRate*100) + '%)', value: v });
+    total += v;
+  }
+  if (document.getElementById('cccLaudo').checked) {
+    const v = valor * 0.002;
+    items.push({ label: 'Laudo de avaliação', value: v });
+    total += v;
+  }
+  if (document.getElementById('cccCorretagem').checked) {
+    const v = valor * 0.05;
+    items.push({ label: 'Corretagem (5%)', value: v });
+    total += v;
+  }
+
+  const fmt = n => 'R$ ' + n.toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+  const entrada = parseFloat(document.getElementById('ccEntrada').value) || 0;
+  const valorFinanciado = valor - entrada;
+
+  document.getElementById('costsResultSummary').innerHTML =
+    '💰 Total de custos de transação: <strong>' + fmt(total) + '</strong>';
+  document.getElementById('costsBreakdown').innerHTML =
+    items.map(i => '<div class="costs-item"><div class="costs-item-label">' + i.label + '</div><div class="costs-item-value">' + fmt(i.value) + '</div></div>').join('');
+  document.getElementById('costsTotalRow').innerHTML =
+    '💵 Valor total (preço + custos) <span>Entrada ' + fmt(entrada) + ' + Financiamento ' + fmt(valorFinanciado) + '</span> <strong>' + fmt(valor + total) + '</strong>';
+  document.getElementById('costsResult').classList.add('visible');
+}
+
+// ROI CALCULATOR
+function calcROI() {
+  const preco = parseFloat(document.getElementById('roiPreco').value) || 0;
+  const aluguel = parseFloat(document.getElementById('roiAluguel').value) || 0;
+  const condominio = parseFloat(document.getElementById('roiCondominio').value) || 0;
+  const iptu = parseFloat(document.getElementById('roiIPTU').value) || 0;
+  const valorizacao = parseFloat(document.getElementById('roiValorizacao').value) || 0;
+  const ocupacao = parseFloat(document.getElementById('roiOcupacao').value) || 0.9;
+
+  if (!preco || preco < 50000) { alert('Informe o preço de compra.'); return; }
+  if (aluguel < 0 || condominio < 0) { alert('Valores não podem ser negativos.'); return; }
+
+  const fmt = n => 'R$ ' + n.toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+  const fmtPct = n => n.toFixed(2) + '%';
+
+  // Annual rental income (net of condomínio and IPTU)
+  const mensalLiquido = aluguel - condominio - (iptu / 12);
+  const receitaAnual = mensalLiquido * 12 * ocupacao;
+
+  // ROI from rental
+  const roiRental = (receitaAnual / preco) * 100;
+
+  // Appreciation gain
+  const appreciacaoAnual = preco * (valorizacao / 100);
+
+  // Total return
+  const retornoTotal = receitaAnual + appreciacaoAnual;
+  const roiTotal = (retornoTotal / preco) * 100;
+
+  // Cash yield (rental only / price)
+  const cashYield = (receitaAnual / preco) * 100;
+
+  // Payback period
+  const paybackAnos = preco / (receitaAnual + appreciacaoAnual);
+
+  // 5-year projection
+  let valor5anos = preco;
+  let receita5anos = 0;
+  for (let y = 1; y <= 5; y++) {
+    valor5anos *= (1 + valorizacao / 100);
+    receita5anos += (mensalLiquido * 12 * ocupacao) * Math.pow(0.98, y - 1); // slight vacancy increase
+  }
+
+  document.getElementById('roiResultGrid').innerHTML =
+    '<div class="roi-result-item"><div class="roi-result-label">ROI Total (renda + valoriz.)</div><div class="roi-result-value">' + fmtPct(roiTotal) + '</div></div>' +
+    '<div class="roi-result-item"><div class="roi-result-label">Cash Yield (aluguel líquido)</div><div class="roi-result-value">' + fmtPct(cashYield) + '</div></div>' +
+    '<div class="roi-result-item"><div class="roi-result-label">Receita líquida anual</div><div class="roi-result-value">' + fmt(receitaAnual) + '</div></div>' +
+    '<div class="roi-result-item"><div class="roi-result-label">Valorização anual</div><div class="roi-result-value">' + fmt(appreciacaoAnual) + '</div></div>' +
+    '<div class="roi-result-item"><div class="roi-result-label">Retorno total anual</div><div class="roi-result-value">' + fmt(retornoTotal) + '</div></div>' +
+    '<div class="roi-result-item"><div class="roi-result-label">Payback estimado</div><div class="roi-result-value">' + paybackAnos.toFixed(1) + ' anos</div></div>' +
+    '<div class="roi-result-item"><div class="roi-result-label">Valor em 5 anos</div><div class="roi-result-value">' + fmt(valor5anos) + '</div></div>' +
+    '<div class="roi-result-item"><div class="roi-result-label">Receita acumulada 5 anos</div><div class="roi-result-value">' + fmt(receita5anos) + '</div></div>';
+
+  // Comparison
+  const cdi = preco * 0.1365; // 13.65% CDI approximate annual
+  const vsCDI = retornoTotal > cdi;
+  const vsPoupanca = retornoTotal > (preco * 0.0695);
+
+  document.getElementById('roiComparison').innerHTML =
+    '<div class="roi-comp-row"><span class="roi-comp-label">Retorno vs CDI (13.65%):</span><span class="roi-comp-value ' + (vsCDI ? 'roi-comp-good' : 'roi-comp-bad') + '">' + fmt(retornoTotal) + ' ' + (vsCDI ? '✅ Acima do CDI' : '❌ Abaixo do CDI') + '</span></div>' +
+    '<div class="roi-comp-row"><span class="roi-comp-label">Retorno vs Poupança (6.95%):</span><span class="roi-comp-value ' + (vsPoupanca ? 'roi-comp-good' : 'roi-comp-bad') + '">' + fmt(retornoTotal) + ' ' + (vsPoupanca ? '✅ Acima da Poupança' : '❌ Abaixo da Poupança') + '</span></div>';
+
+  document.getElementById('roiResult').classList.add('visible');
+}
+
+// FAQ ACCORDION
+function toggleFAQ(btn) {
+  const item = btn.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+// REPORT GENERATOR
+function populateReportSelect() {
+  const sel = document.getElementById('reportImovel');
+  if (!sel || sel.options.length > 1) return;
+  listings.forEach(l => {
+    const opt = document.createElement('option');
+    opt.value = l.id;
+    opt.textContent = l.icon + ' ' + l.titulo + ' — ' + formatPrice(l.preco) + ' 📍 ' + l.cidadeLabel;
+    sel.appendChild(opt);
+  });
+}
+
+function generateReport() {
+  const id = parseInt(document.getElementById('reportImovel').value);
+  if (!id) { alert('Selecione um imóvel.'); return; }
+  const listing = listings.find(l => l.id === id);
+  if (!listing) return;
+
+  const fmt = n => 'R$ ' + n.toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+
+  // Market analysis data
+  const marketRates = {
+    'Praia Grande': { pricePerM2: 5800, yield: 5.8, valorizacao: 9.1 },
+    'Guarujá': { pricePerM2: 7200, yield: 4.2, valorizacao: 7.8 },
+    'Santos': { pricePerM2: 6400, yield: 4.5, valorizacao: 6.5 },
+    'São Vicente': { pricePerM2: 5200, yield: 5.2, valorizacao: 5.3 },
+    'Itanhaém': { pricePerM2: 4800, yield: 6.1, valorizacao: 8.2 },
+    'Mongaguá': { pricePerM2: 4300, yield: 6.5, valorizacao: 10.1 },
+    'Peruíbe': { pricePerM2: 4500, yield: 5.9, valorizacao: 7.4 },
+  };
+  const cityData = marketRates[listing.cidadeLabel] || { pricePerM2: 5000, yield: 5.0, valorizacao: 7.0 };
+
+  const fin = listing.preco * 0.8;
+  const taxaAnual = 0.12;
+  const mensal = fin * (Math.pow(1 + taxaAnual/12, 360) * (taxaAnual/12)) / (Math.pow(1 + taxaAnual/12, 360) - 1);
+  const totalFin = mensal * 360;
+  const totalJuros = totalFin - fin;
+  const itbi = listing.preco * 0.03;
+  const registro = listing.preco * 0.008;
+  const corretagem = listing.preco * 0.05;
+  const totalTransacao = itbi + registro + corretagem;
+
+  let body = '';
+
+  if (document.getElementById('rpbDados').checked) {
+    body += '<h3 style="color:#1a5276;border-bottom:2px solid #1a5276;padding-bottom:0.5rem;margin-bottom:1rem;">📋 Dados do Imóvel</h3>';
+    body += '<table style="width:100%;border-collapse:collapse;">';
+    body += '<tr><td style="padding:0.4rem;font-weight:700;width:40%;">Título</td><td style="padding:0.4rem;">' + listing.icon + ' ' + listing.titulo + '</td></tr>';
+    body += '<tr style="background:#f8f9fa;"><td style="padding:0.4rem;font-weight:700;">Preço</td><td style="padding:0.4rem;font-weight:800;color:#1a5276;">' + fmt(listing.preco) + '</td></tr>';
+    body += '<tr><td style="padding:0.4rem;font-weight:700;">Cidade</td><td style="padding:0.4rem;">' + listing.cidadeLabel + '</td></tr>';
+    body += '<tr style="background:#f8f9fa;"><td style="padding:0.4rem;font-weight:700;">Tipo</td><td style="padding:0.4rem;">' + (listing.tipo || 'Apartamento') + '</td></tr>';
+    if (listing.dormitorios) body += '<tr><td style="padding:0.4rem;font-weight:700;">Dormitórios</td><td style="padding:0.4rem;">' + listing.dormitorios + '</td></tr>';
+    if (listing.vagas) body += '<tr style="background:#f8f9fa;"><td style="padding:0.4rem;font-weight:700;">Vagas</td><td style="padding:0.4rem;">' + listing.vagas + '</td></tr>';
+    if (listing.area) body += '<tr><td style="padding:0.4rem;font-weight:700;">Área</td><td style="padding:0.4rem;">' + listing.area + '</td></tr>';
+    body += '</table><br>';
+  }
+
+  if (document.getElementById('rpbMercado').checked) {
+    body += '<h3 style="color:#1a5276;border-bottom:2px solid #1a5276;padding-bottom:0.5rem;margin-bottom:1rem;">📈 Análise de Mercado</h3>';
+    body += '<table style="width:100%;border-collapse:collapse;">';
+    body += '<tr><td style="padding:0.4rem;font-weight:700;width:50%;">Valor por m² na região</td><td style="padding:0.4rem;font-weight:800;">' + fmt(cityData.pricePerM2) + '/m²</td></tr>';
+    body += '<tr style="background:#f8f9fa;"><td style="padding:0.4rem;font-weight:700;">Rental Yield médio</td><td style="padding:0.4rem;font-weight:800;color:#27ae60;">' + cityData.yield + '% ao ano</td></tr>';
+    body += '<tr><td style="padding:0.4rem;font-weight:700;">Valorização (12 meses)</td><td style="padding:0.4rem;font-weight:800;color:#27ae60;">+' + cityData.valorizacao + '%</td></tr>';
+    body += '<tr style="background:#f8f9fa;"><td style="padding:0.4rem;font-weight:700;">Preço/m² vs praia (100m)</td><td style="padding:0.4rem;">~' + fmt(cityData.pricePerM2 * 2.5) + '/m² frente-mar</td></tr>';
+    body += '</table><br>';
+  }
+
+  if (document.getElementById('rpbFinanciamento').checked) {
+    body += '<h3 style="color:#1a5276;border-bottom:2px solid #1a5276;padding-bottom:0.5rem;margin-bottom:1rem;">🏦 Opções de Financiamento</h3>';
+    body += '<table style="width:100%;border-collapse:collapse;">';
+    body += '<tr style="background:#f0f8ff;"><td style="padding:0.4rem;font-weight:700;">Financiado (80%)</td><td style="padding:0.4rem;font-weight:800;">' + fmt(fin) + '</td></tr>';
+    body += '<tr><td style="padding:0.4rem;font-weight:700;">Parcela mensal (SFH 12%)</td><td style="padding:0.4rem;font-weight:800;">' + fmt(mensal) + '/mês</td></tr>';
+    body += '<tr style="background:#f0f8ff;"><td style="padding:0.4rem;font-weight:700;">Total de juros (30 anos)</td><td style="padding:0.4rem;font-weight:800;color:#e74c3c;">' + fmt(totalJuros) + '</td></tr>';
+    body += '<tr><td style="padding:0.4rem;font-weight:700;">Total a pagar</td><td style="padding:0.4rem;font-weight:800;">' + fmt(totalFin) + '</td></tr>';
+    body += '</table><br>';
+  }
+
+  if (document.getElementById('rpbRental').checked) {
+    const aluguelEstimado = listing.preco * (cityData.yield / 100) / 12;
+    body += '<h3 style="color:#1a5276;border-bottom:2px solid #1a5276;padding-bottom:0.5rem;margin-bottom:1rem;">💰 Análise de Rental Yield</h3>';
+    body += '<table style="width:100%;border-collapse:collapse;">';
+    body += '<tr style="background:#f0f8ff;"><td style="padding:0.4rem;font-weight:700;">Aluguel estimado/mês</td><td style="padding:0.4rem;font-weight:800;color:#27ae60;">' + fmt(aluguelEstimado) + '</td></tr>';
+    body += '<tr><td style="padding:0.4rem;font-weight:700;">Receita anual estimada</td><td style="padding:0.4rem;font-weight:800;">' + fmt(aluguelEstimado * 12 * 0.9) + ' (90% ocupação)</td></tr>';
+    body += '<tr style="background:#f0f8ff;"><td style="padding:0.4rem;font-weight:700;">Cash yield líquido</td><td style="padding:0.4rem;font-weight:800;">' + cityData.yield.toFixed(1) + '%</td></tr>';
+    body += '</table><br>';
+  }
+
+  if (document.getElementById('rpbCustos').checked) {
+    body += '<h3 style="color:#1a5276;border-bottom:2px solid #1a5276;padding-bottom:0.5rem;margin-bottom:1rem;">🧮 Custos de Transação</h3>';
+    body += '<table style="width:100%;border-collapse:collapse;">';
+    body += '<tr><td style="padding:0.4rem;font-weight:700;">ITBI (3%)</td><td style="padding:0.4rem;">' + fmt(itbi) + '</td></tr>';
+    body += '<tr style="background:#f8f9fa;"><td style="padding:0.4rem;font-weight:700;">Registro (0.8%)</td><td style="padding:0.4rem;">' + fmt(registro) + '</td></tr>';
+    body += '<tr><td style="padding:0.4rem;font-weight:700;">Corretagem (5%)</td><td style="padding:0.4rem;">' + fmt(corretagem) + '</td></tr>';
+    body += '<tr style="background:#f0f8ff;"><td style="padding:0.4rem;font-weight:700;"><strong>Total de custos</strong></td><td style="padding:0.4rem;font-weight:800;color:#e74c3c;"><strong>' + fmt(totalTransacao) + '</strong></td></tr>';
+    body += '<tr><td style="padding:0.4rem;font-weight:700;">Valor total (preço + custos)</td><td style="padding:0.4rem;font-weight:800;">' + fmt(listing.preco + totalTransacao) + '</td></tr>';
+    body += '</table><br>';
+  }
+
+  body += '<p style="font-size:0.75rem;color:#888;text-align:center;margin-top:1rem;">Gerado pela Praia Digital — Imóveis no Litoral Brasileiro | Dados de mercado de 2025</p>';
+
+  document.getElementById('reportPreviewHeader').innerHTML = '<h2 style="font-size:1.3rem;margin:0;">📄 Relatório: ' + listing.icon + ' ' + listing.titulo + '</h2><p style="margin:0.3rem 0 0;font-size:0.85rem;opacity:0.85;">' + fmt(listing.preco) + ' · ' + listing.cidadeLabel + ' · Gerado em ' + new Date().toLocaleDateString('pt-BR') + '</p>';
+  document.getElementById('reportPreviewBody').innerHTML = body;
+  document.getElementById('reportPreview').classList.add('visible');
+  document.getElementById('reportPreview').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function printReport() {
+  const content = document.getElementById('reportPreviewBody').innerHTML;
+  const header = document.getElementById('reportPreviewHeader').innerHTML;
+  const printWindow = window.open('', '_blank');
+  printWindow.document.write('<html><head><title>Relatório Imóvel - Praia Digital</title>');
+  printWindow.document.write('<style>body{font-family:Arial,sans-serif;padding:2rem;max-width:800px;margin:0 auto;color:#333;}table{width:100%;border-collapse:collapse;margin-bottom:1rem;}td{padding:0.4rem;border-bottom:1px solid #eee;}h3{color:#1a5276;border-bottom:2px solid #1a5276;padding-bottom:0.5rem;}</style>');
+  printWindow.document.write('</head><body>');
+  printWindow.document.write('<div style="background:#0f3460;color:white;padding:1.5rem;border-radius:12px;margin-bottom:1.5rem;">' + header + '</div>');
+  printWindow.document.write(content);
+  printWindow.document.write('</body></html>');
+  printWindow.document.close();
+  printWindow.print();
+}
+
+function shareReportWhatsApp() {
+  const sel = document.getElementById('reportImovel');
+  const id = parseInt(sel.value);
+  const listing = listings.find(l => l.id === id);
+  if (!listing) return;
+  const msg = '🏠 *Relatório do Imóvel — Praia Digital*\n\n' + listing.icon + ' *' + listing.titulo + '*\n📍 ' + listing.cidadeLabel + '\n💰 ' + formatPrice(listing.preco) + '\n\n👉 Veja o relatório completo: ' + window.location.href + '#relatorio';
+  window.open('https://wa.me/?text=' + encodeURIComponent(msg), '_blank');
+}
+
+
 // Init
 updateCompareBtn();
 updateRecent();
 renderListings(listings);
+populateReportSelect();
 window.addEventListener('hashchange', handleHash);
 handleHash();
 </script>
 
-</body>
 <a href="https://wa.me/5513999999999?text=Olá! Gostaria de saber mais sobre os imóveis da Praia Digital." target="_blank" class="whatsapp-float" title="Fale conosco pelo WhatsApp">💬</a>
+</body>
 </html>
