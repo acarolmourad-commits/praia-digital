@@ -3540,16 +3540,53 @@
     <a href="#simulador">Simulador</a>
     <a href="#ferramentas">Ferramentas</a>
         <a href="#conversor">Conversor</a>
-        <a href="#feriados">Feriados</a>
-        <a href="#checklist">Checklist</a>
-        <a href="#corretores">Para Corretores</a>
+                <a href="#feriados">Feriados</a>
+                <a href="#checklist">Checklist</a>
+                <a href="#comissao">Comissão</a>
+                <a href="#glossario">Glossário</a>
+                <a href="#corretores">Para Corretores</a>
     <a href="#contato">Contato</a>
     <a href="https://github.com/acarolmourad-commits/praia-digital" target="_blank">GitHub</a>
-  </div>
-  <p>© 2026 <a href="https://github.com/acarolmourad-commits/praia-digital">Praia Digital</a> — Tecnologia imobiliária no litoral com IA</p>
-</footer>
+      </div>
+      <p>© 2026 <a href="https://github.com/acarolmourad-commits/praia-digital">Praia Digital</a> — Tecnologia imobiliária no litoral com IA</p>
+    </footer>
 
-<!-- MODAL -->
+    <!-- CALCULADORA DE COMISSÃO PARA CORRETORES -->
+    <section class="commission-section" id="comissao" style="background:var(--white);padding:3rem 2rem;">
+      <h2>💼 Calculadora de Comissão — Corretores e Imobiliárias</h2>
+      <p style="text-align:center;color:#666;margin-bottom:2rem;">Simule sua comissão líquida considerando imposto de renda e custos operacionais.</p>
+      <div style="max-width:600px;margin:0 auto;background:var(--sand);border-radius:16px;padding:2rem;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.5rem;">
+          <div><label style="font-weight:600;display:block;margin-bottom:0.4rem;font-size:0.9rem;">Valor de venda (R$)</label><input type="number" id="commValor" placeholder="Ex: 850000" style="width:100%;padding:0.75rem;border:2px solid #ddd;border-radius:12px;font-size:1rem;" oninput="calcCommission()"></div>
+          <div><label style="font-weight:600;display:block;margin-bottom:0.4rem;font-size:0.9rem;">Taxa de comissão (%)</label><select id="commTaxa" style="width:100%;padding:0.75rem;border:2px solid #ddd;border-radius:12px;font-size:1rem;" onchange="calcCommission()"><option value="5">5% (padrão)</option><option value="6">6%</option><option value="4">4%</option><option value="7">7% (premium)</option></select></div>
+          <div><label style="font-weight:600;display:block;margin-bottom:0.4rem;font-size:0.9rem;">Parte do corretor (%)</label><select id="commInquilino" style="width:100%;padding:0.75rem;border:2px solid #ddd;border-radius:12px;font-size:1rem;" onchange="calcCommission()"><option value="50">50% (padrão)</option><option value="60">60%</option><option value="70">70%</option><option value="100">100% (captadora)</option></select></div>
+          <div><label style="font-weight:600;display:block;margin-bottom:0.4rem;font-size:0.9rem;">Tributação</label><select id="commIR" style="width:100%;padding:0.75rem;border:2px solid #ddd;border-radius:12px;font-size:1rem;" onchange="calcCommission()"><option value="0">Isento (MEI/Simples)</option><option value="15">15% (lucro presumido)</option><option value="27.5">27.5% (lucro real)</option></select></div>
+        </div>
+        <button onclick="calcCommission()" style="background:var(--ocean);color:white;border:none;padding:0.75rem 1.5rem;border-radius:12px;font-size:1rem;font-weight:600;cursor:pointer;width:100%;">📊 Calcular Comissão Líquida</button>
+        <div id="commResult" style="margin-top:1.5rem;"></div>
+      </div>
+      <p style="text-align:center;margin-top:1rem;font-size:0.8rem;color:#888;">💡 Use 27.5% para autônomo com renda > R$ 4.665/mês. MEI optante pelo Simples pode usar 0%.</p>
+    </section>
+
+    <!-- GLOSSÁRIO IMOBILIÁRIO -->
+    <section class="glossary-section" id="glossario" style="background:var(--sand);padding:3rem 2rem;">
+      <h2>📖 Glossário Imobiliário — Termos do Litoral</h2>
+      <p style="text-align:center;color:#666;margin-bottom:2rem;">Dicionário prático para compradores, vendedores e investidores.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;max-width:1100px;margin:0 auto;">
+        <div style="background:var(--white);border-radius:12px;padding:1.25rem;"><div style="font-weight:700;color:var(--ocean);margin-bottom:0.3rem;">ITBI</div><p style="font-size:0.88rem;color:#555;margin:0;">Imposto de Transmissão de Bens Imóveis — taxa municipal sobre a compra, geralmente 2-3% do valor do imóvel.</p></div>
+        <div style="background:var(--white);border-radius:12px;padding:1.25rem;"><div style="font-weight:700;color:var(--ocean);margin-bottom:0.3rem;">Habite-se</div><p style="font-size:0.88rem;color:#555;margin:0;">Certidão que atesta que o imóvel está pronto para uso. Necessária para financiamento de usados.</p></div>
+        <div style="background:var(--white);border-radius:12px;padding:1.25rem;"><div style="font-weight:700;color:var(--ocean);margin-bottom:0.3rem;">FGTS</div><p style="font-size:0.88rem;color:#555;margin:0;">Fundo de Garantia do Tempo de Serviço — pode ser usado para entrada ou amortização de financiamento.</p></div>
+        <div style="background:var(--white);border-radius:12px;padding:1.25rem;"><div style="font-weight:700;color:var(--ocean);margin-bottom:0.3rem;">SBPE</div><p style="font-size:0.88rem;color:#555;margin:0;">Sistema Brasileiro de Poupança e Empréstimo — financiamento sem exigência de FGTS.</p></div>
+        <div style="background:var(--white);border-radius:12px;padding:1.25rem;"><div style="font-weight:700;color:var(--ocean);margin-bottom:0.3rem;">Matrícula</div><p style="font-size:0.88rem;color:#555;margin:0;">Registro do imóvel no Cartório de Registro de Imóveis. Comprova propriedade e histórico de transações.</p></div>
+        <div style="background:var(--white);border-radius:12px;padding:1.25rem;"><div style="font-weight:700;color:var(--ocean);margin-bottom:0.3rem;">Rental Yield</div><p style="font-size:0.88rem;color:#555;margin:0;">Rendimento bruto anual do aluguel dividido pelo valor do imóvel. No litoral, yields de 5-8% são comuns.</p></div>
+        <div style="background:var(--white);border-radius:12px;padding:1.25rem;"><div style="font-weight:700;color:var(--ocean);margin-bottom:0.3rem;">MCMV</div><p style="font-size:0.88rem;color:#555;margin:0;">Minha Casa Minha Vida — programa federal com subsídios para famílias de baixa e média renda.</p></div>
+        <div style="background:var(--white);border-radius:12px;padding:1.25rem;"><div style="font-weight:700;color:var(--ocean);margin-bottom:0.3rem;">Vistoria</div><p style="font-size:0.88rem;color:#555;margin:0;">Laudo que documenta o estado do imóvel na entrega das chaves. Fundamental para locação de temporada.</p></div>
+        <div style="background:var(--white);border-radius:12px;padding:1.25rem;"><div style="font-weight:700;color:var(--ocean);margin-bottom:0.3rem;">Escritura</div><p style="font-size:0.88rem;color:#555;margin:0;">Documento legal de transferência de propriedade feito em cartório. Após financiamento, o banco retém até quitação.</p></div>
+        <div style="background:var(--white);border-radius:12px;padding:1.25rem;"><div style="font-weight:700;color:var(--ocean);margin-bottom:0.3rem;">Taxa de Ocupação</div><p style="font-size:0.88rem;color:#555;margin:0;">Percentual de dias ocupados no ano. No litoral, alta temporada (dez-mar) alcança 85-95%.</p></div>
+      </div>
+    </section>
+
+    <!-- MODAL -->
 <div class="modal-overlay" id="modalOverlay" onclick="if(event.target===this)closeModal()">
   <div class="modal">
     <button class="modal-close" onclick="closeModal()">✕</button>
@@ -5341,6 +5378,25 @@ function printReport() {
   printWindow.document.write('</body></html>');
   printWindow.document.close();
   printWindow.print();
+}
+
+function calcCommission() {
+  const valor = parseFloat(document.getElementById('commValor').value) || 0;
+  const taxa = parseFloat(document.getElementById('commTaxa').value) || 5;
+  const parte = parseFloat(document.getElementById('commInquilino').value) || 50;
+  const ir = parseFloat(document.getElementById('commIR').value) || 0;
+  if (!valor) { document.getElementById('commResult').innerHTML = ''; return; }
+  const comissaoBruta = valor * (taxa / 100);
+  const corretorShare = comissaoBruta * (parte / 100);
+  const liquida = corretorShare * (1 - ir / 100);
+  const result = document.getElementById('commResult');
+  result.innerHTML = '<div style="background:var(--white);border-radius:12px;padding:1.5rem;">' +
+    '<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">' +
+    '<div style="text-align:center;background:var(--ocean);color:white;border-radius:12px;padding:1rem;"><div style="font-size:1.5rem;font-weight:800;">R$ ' + comissaoBruta.toLocaleString('pt-BR') + '</div><div style="font-size:0.8rem;opacity:0.8;">Comissão total (' + taxa + '%)</div></div>' +
+    '<div style="text-align:center;background:var(--success);color:white;border-radius:12px;padding:1rem;"><div style="font-size:1.5rem;font-weight:800;">R$ ' + liquida.toLocaleString('pt-BR') + '</div><div style="font-size:0.8rem;opacity:0.8;">Líquida (IR ' + ir + '%)</div></div>' +
+    '</div>' +
+    '<div style="margin-top:1rem;font-size:0.85rem;color:#666;text-align:center;">Parte do corretor: <strong>' + parte + '%</strong> = R$ ' + (corretorShare).toLocaleString('pt-BR') + ' | IR (' + ir + '%): -R$ ' + (corretorShare - liquida).toLocaleString('pt-BR') + '</div>' +
+    '</div>';
 }
 
 function convertArea() {
