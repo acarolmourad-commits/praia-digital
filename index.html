@@ -853,6 +853,50 @@
     .faq-answer { padding: 0 1.25rem; max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; color: #555; line-height: 1.7; }
     .faq-item.open .faq-answer { max-height: 200px; padding: 0 1.25rem 1rem; }
 
+    /* EQUITY / PATRIMONIAL CALCULATOR */
+    .equity-section { background: linear-gradient(135deg, #0d2854 0%, #1a4080 60%, #0d2854 100%); padding: 4rem 2rem; }
+    .equity-inner { max-width: 1100px; margin: 0 auto; }
+    .equity-badge { display: inline-block; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); color: #ffd700; padding: 0.35rem 1rem; border-radius: 50px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem; }
+    .equity-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 900; color: white; margin-bottom: 0.75rem; }
+    .equity-sub { color: rgba(255,255,255,0.7); font-size: 1rem; margin-bottom: 2.5rem; max-width: 600px; }
+    .equity-calc-grid { display: grid; grid-template-columns: 340px 1fr; gap: 1.5rem; align-items: start; }
+    .equity-form-card { background: var(--white); border-radius: 18px; padding: 1.75rem; box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
+    .equity-form-row { margin-bottom: 1rem; }
+    .equity-form-row label { display: block; font-size: 0.8rem; font-weight: 700; color: #444; margin-bottom: 0.3rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .equity-form-row input { width: 100%; border: 1.5px solid #ddd; border-radius: 10px; padding: 0.6rem 0.8rem; font-size: 0.95rem; box-sizing: border-box; font-family: inherit; transition: border-color 0.2s; }
+    .equity-form-row input:focus { border-color: var(--ocean); outline: none; }
+    .equity-btn { background: linear-gradient(135deg, #0d2854, #1a4080); color: white; border: none; border-radius: 50px; padding: 0.9rem 1.5rem; font-size: 0.95rem; font-weight: 800; cursor: pointer; width: 100%; margin-top: 0.5rem; transition: transform 0.2s, box-shadow 0.2s; font-family: inherit; }
+    .equity-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(13,40,84,0.4); }
+    .equity-results-card { background: var(--white); border-radius: 18px; padding: 1.75rem; box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
+    .equity-summary-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.75rem; margin-bottom: 1.5rem; }
+    .equity-summary-item { background: #f8f9fa; border-radius: 12px; padding: 0.85rem; text-align: center; }
+    .equity-summary-highlight { background: linear-gradient(135deg, #0d2854, #1a4080); }
+    .equity-summary-highlight .equity-summary-label { color: rgba(255,255,255,0.8); }
+    .equity-summary-highlight .equity-summary-value { color: #ffd700; font-size: 1.3rem; }
+    .equity-summary-label { font-size: 0.72rem; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.3rem; }
+    .equity-summary-value { font-size: 1.1rem; font-weight: 900; color: var(--ocean); }
+    .equity-table-wrap { overflow-x: auto; margin-top: 1rem; }
+    .equity-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+    .equity-table th { background: var(--ocean); color: white; padding: 0.6rem 0.75rem; text-align: left; font-weight: 700; }
+    .equity-table td { padding: 0.55rem 0.75rem; border-bottom: 1px solid #eee; color: #444; }
+    .equity-table tr:nth-child(even) td { background: #f8f9fa; }
+    .equity-table tr:last-child td { font-weight: 800; background: #e8f4fd; color: var(--ocean); }
+    .equity-insight { background: #fffde7; border-left: 4px solid #ffd700; border-radius: 0 8px 8px 0; padding: 0.85rem 1rem; margin-top: 1rem; font-size: 0.85rem; color: #444; line-height: 1.5; display: none; }
+    .equity-tips { margin-top: 2.5rem; }
+    .equity-tips h4 { color: white; font-size: 1.05rem; font-weight: 800; margin-bottom: 1rem; text-align: center; }
+    .equity-tips-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
+    .equity-tip { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 12px; padding: 1.25rem; }
+    .equity-tip strong { color: #ffd700; font-size: 0.9rem; display: block; margin-bottom: 0.4rem; }
+    .equity-tip p { color: rgba(255,255,255,0.65); font-size: 0.82rem; line-height: 1.5; margin: 0; }
+
+    @media(max-width: 800px) {
+      .equity-calc-grid { grid-template-columns: 1fr; }
+      .equity-summary-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media(max-width: 500px) {
+      .equity-summary-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
     /* FEATURES */
     .features { background: var(--sand); padding: 3rem 2rem; }
     .features h2 { text-align: center; font-size: 1.75rem; margin-bottom: 2rem; color: var(--dark); }
@@ -1128,6 +1172,7 @@
         <a href="#simulador">Simulador</a>
         <a href="#comparativo">Comparativo</a>
         <a href="#taxas">Taxas</a>
+        <a href="#patrimonio">Patrimônio</a>
         <a href="#ia">IA</a>
         <a href="#corretores">Corretores</a>
         <a href="#bairros">Bairros</a>
@@ -1992,6 +2037,118 @@
   </div>
 </section>
 
+<!-- PATRIMONIAL EQUITY GROWTH CALCULATOR -->
+<section class="equity-section" id="patrimonio">
+  <div class="equity-inner">
+    <div class="equity-badge">📈 SIMULADOR DE EVOLUÇÃO PATRIMONIAL</div>
+    <h2 class="equity-title">Quanto seu patrimônio vai crescer em 10 anos?</h2>
+    <p class="equity-sub">Projete a valorização do imóvel + renda de aluguel acumulada e veja o patrimônio total estimado ao longo dos anos.</p>
+
+    <div class="equity-calc-grid">
+      <div class="equity-form-card">
+        <div class="equity-form-row">
+          <label for="eqPreco">Valor de compra (R$)</label>
+          <input type="number" id="eqPreco" placeholder="Ex: 400000" value="400000" oninput="calcEquity()">
+        </div>
+        <div class="equity-form-row">
+          <label for="eqPercEntrada">% pago de entrada</label>
+          <input type="number" id="eqPercEntrada" placeholder="Ex: 20" value="20" min="0" max="100" oninput="calcEquity()">
+        </div>
+        <div class="equity-form-row">
+          <label for="eqTaxaJuros">Taxa financiamento (% a.a.)</label>
+          <input type="number" id="eqTaxaJuros" placeholder="Ex: 11" value="11" step="0.1" oninput="calcEquity()">
+        </div>
+        <div class="equity-form-row">
+          <label for="eqPrazo">Prazo financiamento (anos)</label>
+          <input type="number" id="eqPrazo" placeholder="Ex: 30" value="30" min="1" max="35" oninput="calcEquity()">
+        </div>
+        <div class="equity-form-row">
+          <label for="eqValoriz">Valorização anual estimada (% a.a.)</label>
+          <input type="number" id="eqValoriz" placeholder="Ex: 8" value="8" step="0.1" oninput="calcEquity()">
+        </div>
+        <div class="equity-form-row">
+          <label for="eqYield">Rental yield líquido (% a.a.)</label>
+          <input type="number" id="eqYield" placeholder="Ex: 5" value="5" step="0.1" oninput="calcEquity()">
+        </div>
+        <div class="equity-form-row">
+          <label for="eqAnos">Projetar por (anos)</label>
+          <input type="number" id="eqAnos" placeholder="Ex: 10" value="10" min="1" max="30" oninput="calcEquity()">
+        </div>
+        <button class="equity-btn" onclick="calcEquity()">📊 Calcular Evolução</button>
+      </div>
+
+      <div class="equity-results-card" id="equityResults">
+        <div class="equity-summary-grid">
+          <div class="equity-summary-item equity-summary-highlight">
+            <div class="equity-summary-label">Patrimônio em <span id="eqAnosLabel">10</span> anos</div>
+            <div class="equity-summary-value" id="eqPatrimonioFinal">—</div>
+          </div>
+          <div class="equity-summary-item">
+            <div class="equity-summary-label">Valorização do imóvel</div>
+            <div class="equity-summary-value" id="eqValorizTotal">—</div>
+          </div>
+          <div class="equity-summary-item">
+            <div class="equity-summary-label">Renda aluguel acumulada</div>
+            <div class="equity-summary-value" id="eqRendaAcum">—</div>
+          </div>
+          <div class="equity-summary-item">
+            <div class="equity-summary-label">Saldo devedor final</div>
+            <div class="equity-summary-value" id="eqSaldoDev">—</div>
+          </div>
+          <div class="equity-summary-item">
+            <div class="equity-summary-label">Patrimônio líquido</div>
+            <div class="equity-summary-value" id="eqPatLiq">—</div>
+          </div>
+          <div class="equity-summary-item">
+            <div class="equity-summary-label">% retorno sobre entrada</div>
+            <div class="equity-summary-value" id="eqRetornoEntrada">—</div>
+          </div>
+        </div>
+
+        <!-- YEAR BY YEAR TABLE -->
+        <div class="equity-table-wrap" id="equityTableWrap">
+          <table class="equity-table" id="equityTable">
+            <thead>
+              <tr>
+                <th>Ano</th>
+                <th>Valor imóvel</th>
+                <th>Patrimônio líquido</th>
+                <th>Renda acum.</th>
+                <th>Saldo devedor</th>
+              </tr>
+            </thead>
+            <tbody id="equityTableBody"></tbody>
+          </table>
+        </div>
+
+        <div class="equity-insight" id="equityInsight"></div>
+      </div>
+    </div>
+
+    <div class="equity-tips">
+      <h4>💡 Fatores que mais impactam seu patrimônio:</h4>
+      <div class="equity-tips-grid">
+        <div class="equity-tip">
+          <strong>🎯 Localização</strong>
+          <p>Imóveis a 300-500m da praia têm valorização 20-30% maior que a média do bairro.</p>
+        </div>
+        <div class="equity-tip">
+          <strong>📐 Tamanho</strong>
+          <p>Apartamentos de 1-2 dorms têm melhor yield; 3+ dorms têm melhor valorização.</p>
+        </div>
+        <div class="equity-tip">
+          <strong>🏗️ Estado do imóvel</strong>
+          <p>Imóvel reformado vale 10-15% mais e atrai melhores hóspedes/clientes.</p>
+        </div>
+        <div class="equity-tip">
+          <strong>📅 Timing</strong>
+          <p>Comprar na baixa temporada (maio-agosto) pode render 5-10% de desconto.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ SECTION -->
 <section class="faq-section" id="faq">
   <div class="faq-inner">
@@ -2069,6 +2226,69 @@
         </button>
         <div class="faq-answer">
           <p>Recomendamos fortemente. Um corretor local conhece detalhes que não estão em anúncios: histórico de enchentes na região, qualidade da infraestrutura de água/esgoto, tendência de valorização do bairro, e pode negociar valores que compensam amplamente a comissão (geralmente 5-6%). Além disso, eles entendem a dinâmica sazonal de cada cidade e sabem quais prédios têm melhor administração de locação.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>📊 Posso usar meu apartamento da cidade como entrada?</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>Sim! O Home Equity é uma excelente estratégia: você pega um empréstimo com seu apartamento atual como garantia (taxas de 1-1,5% ao mês) e usa o valor como entrada no imóvel do litoral. Se o apartamento estiver bem localizado e com boa valorização, é uma forma de leverage que acelera a construção de patrimônio no litoral sem precisar vender seu imóvel atual.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>🏡 Qual a diferença entre IPTU e ITR para imóveis de lazer?</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>IPTU (Imposto Predial e Territorial Urbano) é para imóveis em área urbana — a maioria dos apartamentos e casas no litoral. ITR (Imposto Territorial Rural) é para propriedades em zona rural. A maioria dos imóveis de temporada no litoral paga IPTU com alíquotas entre 0,5% e 1,5% do valor venal. Some também a taxa de lixo (COLCIS) em algumas cidades.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>🔍 O que significa "ocupação anual" e como calcular?</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>Ocupação anual é o percentual dos 365 dias em que o imóvel foi alugado. No litoral, a média é 55-70% ao ano (alta temporada + fins de semana). Uma ocupação de 65% em um apartamento com diária de R$ 350 significa: 237 dias x R$ 350 = R$ 82.950 bruto anual, menos taxas de plataforma (15%) = R$ 70.507 líquido, menos IPTU + condomínio ≈ R$ 9.600 = renda líquida de R$ 60.907/ano (≈5,3% yield).</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>⚠️ Quais riscos devo avaliar antes de comprar?</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>Principais riscos: (1) Enchentes — verifique o histórico da rua e a altura do terreno; (2) Maresia — exige manutenção mais frequente; (3) Sazonalidade — na baixa temporada o imóvel pode ficar 60-90 dias consecutivos sem aluguel; (4) Administratadora de condomínio ineficiente; (5) Região com estoque alto de novos lançamentos que podem pressionar preços para baixo. Nossa ferramenta de comparison ajuda a mitigar esses riscos.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>📱 Preciso de visto para estrangeiros comprarem?</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>Estrangeiros podem comprar imóveis no Brasil com CNPJ ou como pessoa física (com RNE ou passaporte). O processo é o mesmo de um brasileiro, mas é necessário ter CPF e Conta Corrente no Brasil. Imóveis em zonas de fronteira (a mais de 150km) têm restrições e precisam de autorização do Conselho de Defesa Nacional. Para o litoral de SP, não há restrições.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>🏗️ Imóvel novo vs. usado — qual rende mais?</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>Usado geralmente tem melhor yield (5-6%) porque o preço de compra é menor em relação ao aluguel. Novo tem menor yield (3-4%) mas menor vacância e custo de manutenção nos primeiros anos. Nosso veredito: para renda passiva, prefira usado com 10-20 anos em bairro consolidado. Para venda futura com lucro, prefira novo em bairro em desenvolvimento — a valorização compensa a diferença de yield.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>💸 Dá para viver de renda com um imóvel de temporada?</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>Depende do valor investido. Um apartamento de R$ 400k com yield líquido de 5% gera ≈ R$ 20.000/ano = R$ 1.667/mês. Considerando condomínio (R$ 500) + IPTU (R$ 300) + manutenção (R$ 200), sobram ≈ R$ 667/mês líquido. Para viver apenas de renda, precisaria de 3-4 apartamentos ou um imóvel de maior yield em região premium. Use nosso simulador ROI para calcular seu cenário.</p>
         </div>
       </div>
     </div>
@@ -4805,6 +5025,124 @@ function calcROI() {
     '<div class="roi-comp-row"><span class="roi-comp-label">Retorno vs Poupança (6.95%):</span><span class="roi-comp-value ' + (vsPoupanca ? 'roi-comp-good' : 'roi-comp-bad') + '">' + fmt(retornoTotal) + ' ' + (vsPoupanca ? '✅ Acima da Poupança' : '❌ Abaixo da Poupança') + '</span></div>';
 
   document.getElementById('roiResult').classList.add('visible');
+}
+
+// PATRIMONIAL EQUITY GROWTH CALCULATOR
+function calcEquity() {
+  const preco = parseFloat(document.getElementById('eqPreco').value) || 400000;
+  const percEntrada = parseFloat(document.getElementById('eqPercEntrada').value) || 20;
+  const taxaJuros = (parseFloat(document.getElementById('eqTaxaJuros').value) || 11) / 100;
+  const prazoAnos = parseInt(document.getElementById('eqPrazo').value) || 30;
+  const valoriz = (parseFloat(document.getElementById('eqValoriz').value) || 8) / 100;
+  const yieldRate = (parseFloat(document.getElementById('eqYield').value) || 5) / 100;
+  const anos = parseInt(document.getElementById('eqAnos').value) || 10;
+
+  const entrada = preco * (percEntrada / 100);
+  const financiado = preco - entrada;
+
+  // Monthly rate and payment
+  const taxaMes = taxaJuros / 12;
+  const nParcelas = prazoAnos * 12;
+  const parcela = financiado * (taxaMes * Math.pow(1 + taxaMes, nParcelas)) / (Math.pow(1 + taxaMes, nParcelas) - 1);
+
+  // Amortization table — compute saldo devedor at year Y
+  let saldoDevedor = financiado;
+  const saldoDevedorAnos = [];
+  let totalJurosPagos = 0;
+  let totalAmortiz = 0;
+
+  for (let y = 1; y <= Math.min(anos, prazoAnos); y++) {
+    let jurosAno = 0;
+    let amortizAno = 0;
+    for (let m = 1; m <= 12; m++) {
+      const jurosMes = saldoDevedor * taxaMes;
+      const amortizMes = parcela - jurosMes;
+      jurosAno += jurosMes;
+      amortizAno += amortizMes;
+      saldoDevedor -= amortizMes;
+      if (saldoDevedor < 0) saldoDevedor = 0;
+    }
+    totalJurosPagos += jurosAno;
+    totalAmortiz += amortizAno;
+    saldoDevedorAnos.push({ ano: y, saldo: saldoDevedor });
+  }
+
+  // Year by year projection
+  let valorImovel = preco;
+  let rendaAcumulada = 0;
+  const anosFinal = Math.min(anos, prazoAnos);
+
+  // If projection beyond financing, assume sold and re-bought scenario (simplified)
+  // For years > prazoAnos, we just keep accumulating rental income
+  // but the property value continues to appreciate and debt is zero after financing period
+
+  const rows = [];
+  for (let y = 1; y <= anosFinal; y++) {
+    valorImovel = preco * Math.pow(1 + valoriz, y);
+    const rendaAnual = (preco * Math.pow(1 + valoriz, y - 1)) * yieldRate;
+    rendaAcumulada += rendaAnual;
+
+    const patLiq = valorImovel - saldoDevedorAnos[y - 1].saldo + rendaAcumulada;
+    rows.push({
+      ano: y,
+      valorImovel,
+      saldo: saldoDevedorAnos[y - 1].saldo,
+      rendaAcum: rendaAcumulada,
+      patLiq
+    });
+  }
+
+  // Final year
+  const valorFinal = preco * Math.pow(1 + valoriz, anosFinal);
+  const rendaExtraAnos = anos > prazoAnos ? anos - prazoAnos : 0;
+  for (let y = prazoAnos + 1; y <= anos; y++) {
+    valorImovel = preco * Math.pow(1 + valoriz, y);
+    const rendaAnual = (preco * Math.pow(1 + valoriz, y - 1)) * yieldRate;
+    rendaAcumulada += rendaAnual;
+    rows.push({
+      ano: y,
+      valorImovel,
+      saldo: 0,
+      rendaAcum: rendaAcumulada,
+      patLiq: valorImovel + rendaAcumulada
+    });
+  }
+
+  const valorizTotal = valorFinal - preco;
+  const patFinal = rows[rows.length - 1].patLiq;
+
+  // Update summary
+  document.getElementById('eqAnosLabel').textContent = anos;
+  document.getElementById('eqPatrimonioFinal').textContent = 'R$ ' + Math.round(patFinal).toLocaleString('pt-BR');
+  document.getElementById('eqValorizTotal').textContent = '+R$ ' + Math.round(valorizTotal).toLocaleString('pt-BR');
+  document.getElementById('eqRendaAcum').textContent = 'R$ ' + Math.round(rendaAcumulada).toLocaleString('pt-BR');
+  document.getElementById('eqSaldoDev').textContent = rows[Math.min(anos - 1, prazoAnos - 1, rows.length - 1)] ? 'R$ ' + Math.round(rows[Math.min(anos - 1, prazoAnos - 1, rows.length - 1)].saldo).toLocaleString('pt-BR') : 'R$ 0';
+  document.getElementById('eqPatLiq').textContent = 'R$ ' + Math.round(patFinal).toLocaleString('pt-BR');
+  const retEntrada = patFinal / entrada * 100;
+  document.getElementById('eqRetornoEntrada').textContent = retEntrada.toFixed(0) + '%';
+
+  // Table
+  const tbody = document.getElementById('equityTableBody');
+  tbody.innerHTML = '';
+  const maxRows = Math.min(anos, 10);
+  const step = anos > 10 ? Math.ceil(anos / 10) : 1;
+  for (let i = 0; i < rows.length; i += step) {
+    const r = rows[i];
+    const tr = document.createElement('tr');
+    tr.innerHTML = '<td>' + r.ano + '</td><td>R$ ' + Math.round(r.valorImovel).toLocaleString('pt-BR') + '</td><td>R$ ' + Math.round(r.patLiq).toLocaleString('pt-BR') + '</td><td>R$ ' + Math.round(r.rendaAcum).toLocaleString('pt-BR') + '</td><td>R$ ' + Math.round(r.saldo).toLocaleString('pt-BR') + '</td>';
+    tbody.appendChild(tr);
+  }
+
+  // Insight
+  const insight = document.getElementById('equityInsight');
+  insight.style.display = 'block';
+  if (retEntrada > 300) {
+    insight.innerHTML = '💰 <strong>Excelente!</strong> Seu patrimônio pode crescer ' + retEntrada.toFixed(0) + "% sobre o valor investido inicialmente. Em " + anos + " anos, seu patrimônio estimado é <strong>R$ " + Math.round(patFinal).toLocaleString('pt-BR') + "</strong> — contra R$ " + Math.round(entrada).toLocaleString('pt-BR') + " investidos inicialmente.";
+  } else if (retEntrada > 150) {
+    insight.innerHTML = '📈 <strong>Boa perspectiva!</strong> O retorno projetado é de ' + retEntrada.toFixed(0) + "x sobre a entrada. Lembre-se: yields e valorização são estimativas e podem variar conforme o mercado.";
+  } else {
+    insight.innerHTML = '⚠️ <strong>Retorno modesto.</strong> Considere aumentar a entrada, buscar yield maior ou prazo mais curto. Compare com a taxa de câmbio e CDB para validar o investimento.';
+  }
 }
 
 // FAQ ACCORDION
