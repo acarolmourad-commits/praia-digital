@@ -32,6 +32,8 @@
     .logo-icon { width: 36px; height: 36px; }
     nav a { color: var(--white); text-decoration: none; margin-left: 1.5rem; font-weight: 500; opacity: 0.9; transition: opacity 0.2s; }
     nav a:hover { opacity: 1; }
+    .nav-highlight-sale { background: var(--amber); color: var(--dark) !important; padding: 0.35rem 0.9rem; border-radius: 50px; font-weight: 700 !important; opacity: 1 !important; }
+    .nav-highlight-sale:hover { background: #e6b000; }
 
     /* AI ASSISTANT */
     .ai-assistant { position: fixed; bottom: 5.5rem; right: 1.5rem; z-index: 998; width: 380px; max-width: calc(100vw - 2rem); background: var(--white); border-radius: 20px; box-shadow: 0 8px 40px rgba(0,0,0,0.2); display: none; flex-direction: column; max-height: 520px; overflow: hidden; border: 2px solid var(--purple-light); }
@@ -607,6 +609,85 @@
       .rental-cta-buttons { flex-direction: column; align-items: center; }
     }
 
+    /* OWNER SELL SECTION */
+    .owner-sell-section { background: linear-gradient(135deg, #0a2463 0%, #1a3a8f 50%, #0a2463 100%); padding: 4rem 2rem; }
+    .owner-sell-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
+    .owner-sell-badge { display: inline-block; background: var(--amber); color: var(--dark); padding: 0.35rem 1.2rem; border-radius: 50px; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1.2rem; }
+    .owner-sell-title { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; color: white; margin-bottom: 1rem; line-height: 1.15; }
+    .owner-sell-sub { color: rgba(255,255,255,0.8); font-size: 1.05rem; max-width: 680px; margin: 0 auto 2.5rem; line-height: 1.6; }
+
+    /* STEPS */
+    .owner-sell-steps { display: flex; align-items: flex-start; justify-content: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 3rem; }
+    .owner-step { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 16px; padding: 1.25rem 1rem; flex: 1; min-width: 180px; max-width: 240px; text-align: left; }
+    .owner-step-num { background: var(--amber); color: var(--dark); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 0.95rem; margin-bottom: 0.75rem; }
+    .owner-step-content h4 { color: white; font-size: 0.95rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .owner-step-content p { color: rgba(255,255,255,0.65); font-size: 0.82rem; line-height: 1.45; margin: 0; }
+    .owner-step-arrow { color: var(--amber); font-size: 1.4rem; font-weight: 900; align-self: center; padding-top: 1rem; }
+
+    /* WHY GRID */
+    .owner-why-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 1.2rem; margin-bottom: 3rem; }
+    .owner-why-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 1.5rem; text-align: left; transition: transform 0.2s, background 0.2s; }
+    .owner-why-card:hover { transform: translateY(-3px); background: rgba(255,255,255,0.1); }
+    .owner-why-highlight { border-color: var(--amber); background: rgba(255,193,7,0.12); }
+    .owner-why-highlight:hover { background: rgba(255,193,7,0.18); }
+    .owner-why-icon { font-size: 1.8rem; margin-bottom: 0.75rem; }
+    .owner-why-card h4 { color: white; font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .owner-why-card p { color: rgba(255,255,255,0.65); font-size: 0.85rem; line-height: 1.5; margin: 0; }
+
+    /* FORM CARD */
+    .owner-sell-form-card { background: var(--white); border-radius: 24px; padding: 2.5rem; max-width: 800px; margin: 0 auto 3rem; box-shadow: 0 8px 40px rgba(0,0,0,0.25); text-align: left; }
+    .owner-form-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 2px solid #f0f0f0; }
+    .owner-form-icon { font-size: 2.5rem; }
+    .owner-form-title { color: var(--dark); font-size: 1.4rem; font-weight: 900; margin-bottom: 0.2rem; }
+    .owner-form-sub { color: #888; font-size: 0.9rem; }
+    .owner-form-section-title { color: var(--ocean); font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; margin: 1.5rem 0 0.75rem; }
+    .owner-form-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
+    .owner-form-field { display: flex; flex-direction: column; gap: 0.3rem; }
+    .owner-form-field--full { grid-column: 1 / -1; }
+    .owner-form-field label { color: #444; font-size: 0.82rem; font-weight: 600; }
+    .owner-form-field input, .owner-form-field select, .owner-form-field textarea { border: 1.5px solid #ddd; border-radius: 10px; padding: 0.65rem 0.85rem; font-size: 0.9rem; transition: border-color 0.2s; font-family: inherit; background: #fafafa; }
+    .owner-form-field input:focus, .owner-form-field select:focus, .owner-form-field textarea:focus { border-color: var(--ocean); outline: none; background: white; }
+    .owner-form-field textarea { resize: vertical; min-height: 80px; }
+    .owner-sell-terms { background: #f8f9fa; border-radius: 10px; padding: 0.85rem 1rem; margin: 1.5rem 0 1.5rem; }
+    .owner-sell-terms p { color: #666; font-size: 0.82rem; margin: 0; text-align: center; }
+    .owner-sell-btn { background: linear-gradient(135deg, #0a2463, #1a3a8f); color: white; border: none; border-radius: 50px; padding: 1rem 2.5rem; font-size: 1rem; font-weight: 800; cursor: pointer; width: 100%; transition: transform 0.2s, box-shadow 0.2s; font-family: inherit; }
+    .owner-sell-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 25px rgba(10,36,99,0.4); }
+    .owner-sell-success { display: none; background: #d4edda; border: 1px solid #c3e6cb; color: #155724; border-radius: 12px; padding: 1.25rem; margin-top: 1rem; font-size: 0.92rem; text-align: center; line-height: 1.5; }
+
+    /* COMPARISON TABLE */
+    .owner-compare-table { max-width: 800px; margin: 0 auto 3rem; }
+    .owner-compare-title { color: white; font-size: 1.3rem; font-weight: 800; margin-bottom: 1.2rem; text-align: center; }
+    .owner-compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+    .owner-compare-col { border-radius: 16px; overflow: hidden; text-align: left; }
+    .owner-compare-direct { background: rgba(255,255,255,0.1); border: 2px solid rgba(255,193,7,0.5); }
+    .owner-compare-broker { background: rgba(255,255,255,0.05); border: 2px solid rgba(255,255,255,0.1); }
+    .owner-compare-header { background: rgba(255,193,7,0.2); color: white; font-weight: 800; font-size: 1rem; padding: 0.75rem 1rem; text-align: center; }
+    .owner-compare-broker .owner-compare-header { background: rgba(255,255,255,0.08); }
+    .owner-compare-row { display: flex; justify-content: space-between; align-items: center; padding: 0.6rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 0.85rem; }
+    .owner-compare-row:last-child { border-bottom: none; }
+    .owner-compare-row span { color: rgba(255,255,255,0.65); }
+    .owner-compare-row strong { color: white; font-size: 0.88rem; }
+    .owner-save { color: #69f0ae !important; }
+    .owner-cost { color: #ff8a80 !important; }
+
+    /* CTA */
+    .owner-sell-final-cta { text-align: center; }
+    .owner-sell-final-cta h3 { color: white; font-size: 1.3rem; font-weight: 800; margin-bottom: 0.5rem; }
+    .owner-sell-final-cta p { color: rgba(255,255,255,0.7); margin-bottom: 1.5rem; font-size: 1rem; }
+    .owner-cta-buttons { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+    .owner-cta-whatsapp { background: #25d366; color: white; padding: 0.85rem 1.75rem; border-radius: 50px; font-weight: 700; font-size: 0.9rem; text-decoration: none; transition: transform 0.2s; }
+    .owner-cta-whatsapp:hover { transform: translateY(-2px); }
+    .owner-cta-email { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.25); color: white; padding: 0.85rem 1.75rem; border-radius: 50px; font-weight: 700; font-size: 0.9rem; text-decoration: none; transition: transform 0.2s, background 0.2s; }
+    .owner-cta-email:hover { background: rgba(255,255,255,0.2); transform: translateY(-2px); }
+
+    @media(max-width: 700px) {
+      .owner-sell-steps { flex-direction: column; align-items: center; }
+      .owner-step { max-width: 100%; }
+      .owner-step-arrow { transform: rotate(90deg); padding: 0.25rem 0; }
+      .owner-compare-grid { grid-template-columns: 1fr; }
+      .owner-sell-form-card { padding: 1.5rem; }
+    }
+
     /* MARKET RATES SECTION */
     .market-rates-section { background: #f8f9fa; padding: 4rem 2rem; }
     .market-rates-inner { max-width: 1100px; margin: 0 auto; }
@@ -1043,6 +1124,7 @@
         <a href="#buscar">Buscar</a>
         <a href="#credito">Crédito</a>
         <a href="#locacoes">Locações</a>
+        <a href="#venda" class="nav-highlight-sale">Venda</a>
         <a href="#simulador">Simulador</a>
         <a href="#comparativo">Comparativo</a>
         <a href="#taxas">Taxas</a>
@@ -1471,6 +1553,250 @@
       <div class="rental-cta-buttons">
         <a href="https://wa.me/5513999999999?text=Olá! Quero cadastrar meu imóvel para locação de temporada na Praia Digital." class="rental-cta-whatsapp" target="_blank">💬 Cadastrar pelo WhatsApp</a>
         <a href="mailto:locacao@praiadigital.com.br?subject=Cadastro de imóvel para locação" class="rental-cta-email">📧 Enviar por e-mail</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VENDA DIRETA — PROPRIETÁRIOS CADASTRAM IMÓVEIS -->
+<section class="owner-sell-section" id="venda">
+  <div class="owner-sell-inner">
+    <div class="owner-sell-badge">🏡 VENDA DIRETA — SEM COMISSÃO DE CORRETAGEM</div>
+    <h2 class="owner-sell-title">Venda seu imóvel<br>sem pagar comissão</h2>
+    <p class="owner-sell-sub">Cadastre seu imóvel diretamente na Praia Digital e lleguen compradores qualificados sem intermediários. Nossa equipe auxilia na documentação, análise de crédito do comprador e fechamento — você só paga quando vender.</p>
+
+    <!-- HOW IT WORKS -->
+    <div class="owner-sell-steps">
+      <div class="owner-step">
+        <div class="owner-step-num">1</div>
+        <div class="owner-step-content">
+          <h4>Cadastre seu imóvel</h4>
+          <p>Preencha o formulário com os dados do imóvel, fotos e valor desejado. Leva menos de 5 minutos.</p>
+        </div>
+      </div>
+      <div class="owner-step-arrow">→</div>
+      <div class="owner-step">
+        <div class="owner-step-num">2</div>
+        <div class="owner-step-content">
+          <h4>Análise de mercado gratuita</h4>
+          <p>Nossa equipe analisa o preço com base nos valores de mercado reais e sugere o melhor preço para vender rápido.</p>
+        </div>
+      </div>
+      <div class="owner-step-arrow">→</div>
+      <div class="owner-step">
+        <div class="owner-step-num">3</div>
+        <div class="owner-step-content">
+          <h4>Divulgamos para milhares</h4>
+          <p>Seu imóvel aparece no site, em redes sociais e é enviado para compradores compatíveis do nosso banco de dados.</p>
+        </div>
+      </div>
+      <div class="owner-step-arrow">→</div>
+      <div class="owner-step">
+        <div class="owner-step-num">4</div>
+        <div class="owner-step-content">
+          <h4>Negociamos e fechamos</h4>
+          <p>Auxiliamos na negociação, verificação de crédito do comprador, documentação e fechamento com segurança.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHY SELL DIRECT -->
+    <div class="owner-why-grid">
+      <div class="owner-why-card owner-why-highlight">
+        <div class="owner-why-icon">💰</div>
+        <h4>Economize 5-6% em comissão</h4>
+        <p>Comissão de corretagem média é 5-6% do valor do imóvel. Em um imóvel de R$ 400 mil, você economiza até <strong>R$ 24 mil</strong>.</p>
+      </div>
+      <div class="owner-why-card">
+        <div class="owner-why-icon">⚡</div>
+        <h4>Venda mais rápido</h4>
+        <p>Nosso tráfego mensal de milhares de visitantes qualificados acelera a venda. Proprietários com preço de mercado vendem em 60-90 dias.</p>
+      </div>
+      <div class="owner-why-card">
+        <div class="owner-why-icon">📋</div>
+        <h4>Assessoria completa</h4>
+        <p>Cessão de direitos, contrato de compra e venda, verificação de ônus, ITBI e registro — cuidamos de tudo para você.</p>
+      </div>
+      <div class="owner-why-card">
+        <div class="owner-why-icon">🔍</div>
+        <h4>Compradores pré-qualificados</h4>
+        <p>Verificamos a capacidade financeira dos compradores antes de apresentar seu imóvel, evitando perdas de tempo.</p>
+      </div>
+    </div>
+
+    <!-- REGISTRATION FORM -->
+    <div class="owner-sell-form-card" id="ownerSellForm">
+      <div class="owner-form-header">
+        <div class="owner-form-icon">🏡</div>
+        <div>
+          <h3 class="owner-form-title">Cadastre seu imóvel para venda</h3>
+          <p class="owner-form-sub">Análise de preço gratuita + divulgação imediata em até 24h.</p>
+        </div>
+      </div>
+
+      <div class="owner-form-section-title">📝 Dados do Proprietário</div>
+      <div class="owner-form-grid">
+        <div class="owner-form-field">
+          <label for="sellNome">Nome completo *</label>
+          <input type="text" id="sellNome" placeholder="Seu nome completo" required>
+        </div>
+        <div class="owner-form-field">
+          <label for="sellEmail">E-mail *</label>
+          <input type="email" id="sellEmail" placeholder="seu@email.com" required>
+        </div>
+        <div class="owner-form-field">
+          <label for="sellTel">WhatsApp *</label>
+          <input type="tel" id="sellTel" placeholder="(13) 99999-9999">
+        </div>
+        <div class="owner-form-field">
+          <label for="sellCPF">CPF / CNPJ</label>
+          <input type="text" id="sellCPF" placeholder="Somente números">
+        </div>
+      </div>
+
+      <div class="owner-form-section-title">🏠 Dados do Imóvel</div>
+      <div class="owner-form-grid">
+        <div class="owner-form-field">
+          <label for="sellCidade">Cidade *</label>
+          <select id="sellCidade">
+            <option value="">Selecione...</option>
+            <option value="praia-grande">Praia Grande</option>
+            <option value="santos">Santos</option>
+            <option value="guaruja">Guarujá</option>
+            <option value="sao-vicente">São Vicente</option>
+            <option value="itanhaem">Itanhaém</option>
+            <option value="mongagua">Mongaguá</option>
+            <option value="peruibe">Peruíbe</option>
+          </select>
+        </div>
+        <div class="owner-form-field">
+          <label for="sellBairro">Bairro / Região</label>
+          <input type="text" id="sellBairro" placeholder="Ex: Boqueirão, Pitangueiras...">
+        </div>
+        <div class="owner-form-field">
+          <label for="sellTipo">Tipo *</label>
+          <select id="sellTipo">
+            <option value="">Selecione...</option>
+            <option value="apartamento">Apartamento</option>
+            <option value="casa">Casa</option>
+            <option value="kitnet">Kitnet / Studio</option>
+            <option value="pousada">Pousada / Chalé</option>
+            <option value="casa-piscina">Casa com piscina</option>
+            <option value="cobertura">Cobertura</option>
+            <option value="terreno">Terreno</option>
+            <option value="comercial">Sala / Comercial</option>
+          </select>
+        </div>
+        <div class="owner-form-field">
+          <label for="sellQuartos">Quartos *</label>
+          <select id="sellQuartos">
+            <option value="">Selecione...</option>
+            <option value="1">1 quarto</option>
+            <option value="2">2 quartos</option>
+            <option value="3">3 quartos</option>
+            <option value="4">4+ quartos</option>
+          </select>
+        </div>
+        <div class="owner-form-field">
+          <label for="sellVagas">Vagas de garagem</label>
+          <select id="sellVagas">
+            <option value="">Selecione...</option>
+            <option value="0">Sem vaga</option>
+            <option value="1">1 vaga</option>
+            <option value="2">2 vagas</option>
+            <option value="3">3+ vagas</option>
+          </select>
+        </div>
+        <div class="owner-form-field">
+          <label for="sellArea">Área (m²) — se souber</label>
+          <input type="number" id="sellArea" placeholder="Ex: 65" min="10">
+        </div>
+      </div>
+
+      <div class="owner-form-section-title">💰 Valor e Condições</div>
+      <div class="owner-form-grid">
+        <div class="owner-form-field">
+          <label for="sellPreco">Valor de venda desejado (R$) *</label>
+          <input type="number" id="sellPreco" placeholder="Ex: 380000" min="50000">
+        </div>
+        <div class="owner-form-field">
+          <label for="sellPrecoMin">Menor preço que aceita (R$)</label>
+          <input type="number" id="sellPrecoMin" placeholder="Opcional">
+        </div>
+        <div class="owner-form-field">
+          <label for="sellFinanciado">Financiamento?</label>
+          <select id="sellFinanciado">
+            <option value="">Selecione...</option>
+            <option value="aceita">Aceita financiamento</option>
+            <option value="parcial">Aceita parcial</option>
+            <option value="nao">Só à vista</option>
+          </select>
+        </div>
+        <div class="owner-form-field">
+          <label for="sellOcupacao">Situação atual</label>
+          <select id="sellOcupacao">
+            <option value="">Selecione...</option>
+            <option value="vago">Imóvel vago</option>
+            <option value="alugando">Alugando</option>
+            <option value="moradia">Minha moradia</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="owner-form-section-title">📸 Fotos e Observações</div>
+      <div class="owner-form-field owner-form-field--full">
+        <label for="sellFotos">Link de fotos (Google Fotos, Dropbox, etc.)</label>
+        <input type="url" id="sellFotos" placeholder="Cole o link das fotos do imóvel aqui">
+      </div>
+      <div class="owner-form-field owner-form-field--full">
+        <label for="sellObs">Observações ou perguntas</label>
+        <textarea id="sellObs" rows="3" placeholder="Descreva o imóvel, reformas, características especiais, motivo da venda..."></textarea>
+      </div>
+
+      <div class="owner-sell-terms">
+        <p>🔒 Seus dados estão protegidos e não são compartilhados com terceiros. O cadastro é gratuito e sem compromisso.</p>
+      </div>
+
+      <button class="owner-sell-btn" onclick="submitOwnerSell()">🏡 Cadastrar meu imóvel para venda</button>
+      <div class="owner-sell-success" id="ownerSellSuccess">
+        ✅ Cadastro enviado com sucesso! Nossa equipe entrará em contato em até 24h com uma análise de preço personalizada para o seu imóvel.
+      </div>
+    </div>
+
+    <!-- COMPARISON TABLE -->
+    <div class="owner-compare-table">
+      <h3 class="owner-compare-title">🏆 Vender direto vale a pena?</h3>
+      <div class="owner-compare-grid">
+        <div class="owner-compare-col owner-compare-direct">
+          <div class="owner-compare-header">Venda Direta</div>
+          <div class="owner-compare-row"><span>Comissão</span><strong>0%</strong></div>
+          <div class="owner-compare-row"><span>Auxílio documentação</span><strong>✅ Incluso</strong></div>
+          <div class="owner-compare-row"><span>Análise de preço</span><strong>✅ Gratuita</strong></div>
+          <div class="owner-compare-row"><span>Divulgação profissional</span><strong>✅ Inclusa</strong></div>
+          <div class="owner-compare-row"><span>Verificação de comprador</span><strong>✅ Inclusa</strong></div>
+          <div class="owner-compare-row"><span>Tempo médio de venda</span><strong>60-90 dias</strong></div>
+          <div class="owner-compare-row"><span>Em imóvel de R$ 400k</span><strong class="owner-save">Economia: R$ 24.000</strong></div>
+        </div>
+        <div class="owner-compare-col owner-compare-broker">
+          <div class="owner-compare-header">Via Corretor Tradicional</div>
+          <div class="owner-compare-row"><span>Comissão</span><strong class="owner-cost">5-6%</strong></div>
+          <div class="owner-compare-row"><span>Auxílio documentação</span><strong>⚠️ Pode cobrar à parte</strong></div>
+          <div class="owner-compare-row"><span>Análise de preço</span><strong>✅ Inclusa</strong></div>
+          <div class="owner-compare-row"><span>Divulgação profissional</span><strong>✅ Inclusa</strong></div>
+          <div class="owner-compare-row"><span>Verificação de comprador</span><strong>⚠️ Variável</strong></div>
+          <div class="owner-compare-row"><span>Tempo médio de venda</span><strong>60-120 dias</strong></div>
+          <div class="owner-compare-row"><span>Em imóvel de R$ 400k</span><strong class="owner-cost">Custo: R$ 20.000-24.000</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="owner-sell-final-cta">
+      <h3>🏡 Vender sem comissão é possível — e mais rápido do que você imagina</h3>
+      <p>Cadastre-se gratuitamente e descubra o valor real do seu imóvel no mercado atual.</p>
+      <div class="owner-cta-buttons">
+        <a href="https://wa.me/5513999999999?text=Olá! Quero cadastrar meu imóvel para venda direta na Praia Digital." class="owner-cta-whatsapp" target="_blank">💬 Falar pelo WhatsApp</a>
+        <a href="mailto:venda@praiadigital.com.br?subject=Cadastro de imóvel para venda direta" class="owner-cta-email">📧 Enviar por e-mail</a>
       </div>
     </div>
   </div>
@@ -4188,6 +4514,72 @@ function showCreditDetail(type) {
 function closeCreditDetail() {
   document.getElementById('creditDetailOverlay').classList.remove('open');
   document.body.style.overflow = '';
+}
+
+// OWNER SELL FUNCTION
+function submitOwnerSell() {
+  const nome = document.getElementById('sellNome').value.trim();
+  const email = document.getElementById('sellEmail').value.trim();
+  const tel = document.getElementById('sellTel').value.trim();
+  const cidade = document.getElementById('sellCidade').value;
+  const tipo = document.getElementById('sellTipo').value;
+  const quartos = document.getElementById('sellQuartos').value;
+  const preco = document.getElementById('sellPreco').value.trim();
+
+  if (!nome || !email || !cidade || !tipo || !quartos || !preco) {
+    alert('Por favor, preencha os campos obrigatórios: Nome, E-mail, Cidade, Tipo do imóvel, Quartos e Valor.');
+    return;
+  }
+
+  if (!email.includes('@') || !email.includes('.')) {
+    alert('Por favor, insira um e-mail válido.');
+    return;
+  }
+
+  const cidadeMap = {
+    'praia-grande': 'Praia Grande', 'santos': 'Santos', 'guaruja': 'Guarujá',
+    'sao-vicente': 'São Vicente', 'itanhaem': 'Itanhaém', 'mongagua': 'Mongaguá', 'peruibe': 'Peruíbe'
+  };
+  const tipoMap = {
+    'apartamento': 'Apartamento', 'casa': 'Casa', 'kitnet': 'Kitnet/Studio',
+    'pousada': 'Pousada/Chalé', 'casa-piscina': 'Casa com piscina', 'cobertura': 'Cobertura',
+    'terreno': 'Terreno', 'comercial': 'Sala/Comercial'
+  };
+  const quartosMap = { '1': '1 quarto', '2': '2 quartos', '3': '3 quartos', '4': '4+ quartos' };
+
+  const bairro = document.getElementById('sellBairro').value.trim();
+  const vagas = document.getElementById('sellVagas').value;
+  const area = document.getElementById('sellArea').value.trim();
+  const precoMin = document.getElementById('sellPrecoMin').value.trim();
+  const financiado = document.getElementById('sellFinanciado').value;
+  const ocupacao = document.getElementById('sellOcupacao').value;
+  const fotos = document.getElementById('sellFotos').value.trim();
+  const obs = document.getElementById('sellObs').value.trim();
+  const cpf = document.getElementById('sellCPF').value.trim();
+
+  let msg = `🏡 *CADASTRO DE VENDA — PRAIA DIGITAL*\n\n`;
+  msg += `👤 *Proprietário:* ${nome}`;
+  if (cpf) msg += ` (CPF: ${cpf})`;
+  msg += `\n📧 *E-mail:* ${email}\n📱 *WhatsApp:* ${tel}\n\n`;
+  msg += `🏠 *IMÓVEL*\n`;
+  msg += `📍 Cidade: ${cidadeMap[cidade] || cidade}`;
+  if (bairro) msg += ` | Bairro: ${bairro}`;
+  msg += `\n🏗️ Tipo: ${tipoMap[tipo] || tipo} | 🛏️ ${quartosMap[quartos] || quartos}`;
+  if (vagas) msg += ` | 🚗 ${vagas === '0' ? 'Sem vaga' : vagas + ' vaga(s)'}`;
+  if (area) msg += ` | 📐 ${area}m²`;
+  msg += `\n💰 *Valor desejado:* R$ ${parseInt(preco).toLocaleString('pt-BR')}`;
+  if (precoMin) msg += ` | Mínimo: R$ ${parseInt(precoMin).toLocaleString('pt-BR')}`;
+  msg += `\n`;
+  if (financiado) msg += `🏦 Financiamento: ${financiado === 'aceita' ? 'Aceita' : financiado === 'parcial' ? 'Parcial' : 'Só à vista'}\n`;
+  if (ocupacao) msg += `🏠 Situação: ${ocupacao === 'vago' ? 'Imóvel vago' : ocupacao === 'alugando' ? 'Alugando' : 'Minha moradia'}\n`;
+  if (fotos) msg += `📸 Fotos: ${fotos}\n`;
+  if (obs) msg += `\n📝 Obs: ${obs}`;
+
+  const waUrl = 'https://wa.me/5513999999999?text=' + encodeURIComponent(msg);
+  window.open(waUrl, '_blank');
+
+  document.getElementById('ownerSellSuccess').style.display = 'block';
+  document.getElementById('ownerSellForm').reset();
 }
 
 // RENTAL MANAGEMENT FUNCTIONS
