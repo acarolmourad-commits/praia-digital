@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bertioga SP — Imóveis na Praia Digital</title>
+  <meta name="description" content="Página oficial de Bertioga na Praia Digital: imóveis para compra, temporada e investimento na cidade.">
+  <link rel="canonical" href="https://acarolmourad-commits.github.io/praia-digital/blog/bertioga/">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    /* Minimal inline fallback so page works even before main.css */
+    :root{--ocean:#0077B6;--ocean-light:#00B4D8;--sand:#F4EBD0;--white:#FFF;--dark:#023047;--accent:#90E0EF;--success:#2d9e5a;--purple:#6B21A8;--purple-light:#A855F7;--amber:#F59E0B}
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--sand);color:var(--dark);line-height:1.7}
+    header{background:linear-gradient(135deg,var(--ocean),var(--ocean-light));color:var(--white);padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:800;text-decoration:none;color:var(--white)}
+    .btn{padding:.7rem 1.4rem;border-radius:50px;font-weight:700;text-decoration:none;border:none;cursor:pointer}
+    .btn-primary{background:var(--white);color:var(--ocean)}
+    .search-bar{display:flex;gap:.5rem;flex-wrap:wrap;margin:1rem 0}
+    .search-bar input{padding:.8rem 1rem;border:2px solid #e0e0e0;border-radius:12px;font-size:1rem;flex:1}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem}
+    .card{background:var(--white);border-radius:16px;padding:1.25rem;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+    .badge{background:var(--sand);color:var(--ocean);padding:.2rem .6rem;border-radius:50px;font-size:.8rem;font-weight:700}
+    .pill-row{display:flex;flex-wrap:wrap;gap:.4rem;margin:.6rem 0}
+    main{max-width:1100px;margin:0 auto;padding:2rem}
+    .pages-row{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}
+    .page-btn{background:var(--white);border:2px solid #e3e3e3;color:var(--dark);padding:.45rem .9rem;border-radius:50px;cursor:pointer}
+    .page-btn.active{background:var(--ocean);color:var(--white);border-color:var(--ocean)}
+    .count{color:#666;font-size:.95rem;margin:.4rem 0 1rem}
+    .sort-row{display:flex;gap:.5rem;flex-wrap:wrap;margin:.6rem 0 1rem}
+    .sort-btn{background:rgba(255,255,255,.7);border:1px solid #ddd;color:var(--dark);padding:.4rem .85rem;border-radius:12px;cursor:pointer;font-size:.9rem}
+    .sort-btn.active{background:var(--dark);color:var(--white);border-color:var(--dark)}
+    .article-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.25rem;margin:1.5rem 0}
+    .article-card{background:var(--white);border-radius:16px;padding:1.25rem;box-shadow:0 2px 10px rgba(0,0,0,.05);text-decoration:none;color:var(--dark)}
+    .article-card:hover{box-shadow:0 8px 24px rgba(0,0,0,.1)}
+    .article-tag{display:inline-block;background:var(--sand);color:var(--ocean);font-weight:700;font-size:.75rem;padding:.2rem .6rem;border-radius:50px;margin-bottom:.4rem}
+    .article-title{font-size:1.05rem;font-weight:800;margin:.2rem 0 .3rem}
+    .article-sub{font-size:.9rem;color:#666}
+    .ctx{font-size:.85rem;color:#888;margin:.5rem 0 1rem}
+    .ctx code{background:#f4f4f4;padding:.1rem .35rem;border-radius:6px}
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="/">🌊 Praia Digital</a>
+    <a class="btn btn-primary" href="https://carolynramos.github.io/imoveis/blog/posts?city=Bertioga" target="_blank">Ver posts publicados</a>
+  </header>
+  <main>
+    <h1>Bertioga — Imóveis selecionados</h1>
+    <p class="ctx">Hub dimensional: página estruturada para busca. Conteúdo duplicado será desindexado pelos motores de busca.</p>
+
+    <div class="pages-row">
+      <button class="page-btn active" type="button" onclick="setCategory(this,'all')">Todos</button>
+      <button class="page-btn" type="button" onclick="setCategory(this,'venda')">Venda</button>
+      <button class="page-btn" type="button" onclick="setCategory(this,'temporada')">Temporada</button>
+      <button class="page-btn" type="button" onclick="setCategory(this,'investimento')">Investimento</button>
+    </div>
+    <div class="sort-row">
+      <button class="sort-btn active" type="button" onclick="setSort(this,'recent')">Recentes</button>
+      <button class="sort-btn" type="button" onclick="setSort(this,'price_asc')">Menor preço</button>
+      <button class="sort-btn" type="button" onclick="setSort(this,'price_desc')">Maior preço</button>
+    </div>
+    <div class="count" id="count"></div>
+    <div id="results" class="grid"></div>
+
+    <h2 style="margin-top:2.5rem">Artigos sobre Bertioga</h2>
+    <div class="article-grid">
+      <a class="article-card" href="imoveis-bertioga-sp.html"><div class="article-tag">Cidade</div><div class="article-title">Imóveis em Bertioga SP</div><div class="article-sub">Guia completo: tipos, bairros e custos.</div></a>
+      <a class="article-card" href="investimento-bertioga.html"><div class="article-tag">Investimento</div><div class="article-title">Investimento em Bertioga 2026</div><div class="article-sub">Valorização, ROI e perfil de comprador.</div></a>
+      <a class="article-card" href="aluguel-temporada-bertioga.html"><div class="article-tag">Temporada</div><div class="article-title">Aluguel por temporada em Bertioga</div><div class="article-sub">Precificação, ocupação e dicas de anúncio.</div></a>
+      <a class="article-card" href="vantagens-morar-bertioga.html"><div class="article-tag">Vida</div><div class="article-title">Vantagens de morar em Bertioga</div><div class="article-sub">Custo de vida, natureza e mobilidade.</div></a>
+      <a class="article-card" href="guia-imoveis-frente-mar-bertioga.html"><div class="article-tag">Orla</div><div class="article-title">Imóveis frente mar em Bertioga</div><div class="article-sub">Oportunidades e avaliação de risco.</div></a>
+    </div>
+
+    <h2 style="margin-top:2.5rem">Postagens recentes</h2>
+    <div id="posts" class="grid"></div>
+  </main>
+
+  <script>
+    const listings = [
+      {id:1,title:'Apto 2q forneiro a 700m da praia',category:'venda',price:420000,bedrooms:2,bathrooms:1,area:68,neighborhood:'Centro',type:'Apartamento',date:'2026-05-30'},
+      {id:2,title:'Casa térrea com piscina e churrasqueira',category:'temporada',price:1800,bedrooms:3,bathrooms:2,area:120,neighborhood:'Indaiá',type:'Casa',date:'2026-05-29'},
+      {id:3,title:'Flat compacto vista lateral do mar',category:'temporada',price:1200,bedrooms:1,bathrooms:1,area:42,neighborhood:'Orla',type:'Apartamento',date:'2026-05-28'},
+      {id:4,title:'Terreno aprovado 250m² para construção',category:'venda',price:190000,bedrooms:0,bathrooms:0,area:250,neighborhood:'Vista Linda',type:'Terreno',date:'2026-05-27'},
+      {id:5,title:'Cobertura duplex com varanda gourmet',category:'venda',price:860000,bedrooms:3,bathrooms:3,area:140,neighborhood:'Orla',type:'Cobertura',date:'2026-05-26'},
+      {id:6,title:'Kitnet econômica para temporada',category:'temporada',price:950,bedrooms:1,bathrooms:1,area:32,neighborhood:'Centro',type:'Kitnet',date:'2026-05-25'},
+      {id:7,title:'Sobrado familiar 3q perto do mangue e ciclovia',category:'venda',price:540000,bedrooms:3,bathrooms:2,area:115,neighborhood:'Jardim',type:'Casa',date:'2026-05-24'},
+      {id:8,title:'Pousada operante com 4 suítes',category:'investimento',price:720000,bedrooms:4,bathrooms:4,area:210,neighborhood:'Centro',type:'Pousada',date:'2026-05-23'},
+      {id:9,title:'Apto 2q reformado com lazer completo',category:'investimento',price:470000,bedrooms:2,bathrooms:1,area:70,neighborhood:'Centro',type:'Apartamento',date:'2026-05-22'},
+      {id:10,title:'Casa 2q com amplo quintal para reforma',category:'venda',price:310000,bedrooms:2,bathrooms:1,area:110,neighborhood:'Jardim',type:'Casa',date:'2026-05-21'}
+    ];
+    const posts = [
+      {id:1,title:'Aluguel por temporada em Bertioga: como aumentar ocupação e renda',excerpt:'Dicas de precificação, anúncio e experiência do hóspede.',url:'aluguel-temporada-bertioga.html',date:'2026-05-18'},
+      {id:2,title:'Investimento em Bertioga 2026: oportunidades e retorno',excerpt:'Faixas de preço, ROI e perfil de comprador.',url:'investimento-bertioga.html',date:'2026-05-15'},
+      {id:3,title:'Vantagens de morar em Bertioga: natureza e qualidade de vida',excerpt:'Custo de vida, mobilidade e lacunas de infraestrutura.',url:'vantagens-morar-bertioga.html',date:'2026-05-10'}
+    ];
+    let current = 'all'; let sort = 'recent';
+    function money(n){return 'R$ ' + n.toLocaleString('pt-BR')}
+    function fmtDate(d){const dt = new Date(d+'T00:00:00'); return dt.toLocaleDateString('pt-BR', {day:'2-digit',month:'short'})}
+    function setCategory(btn, cat){current = cat; document.querySelectorAll('.page-btn').forEach(b => b.classList.remove('active')); btn.classList.add('active'); draw()}
+    function setSort(btn, s){sort = s; document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active')); btn.classList.add('active'); draw()}
+    function getFiltered(){
+      let arr = current === 'all' ? listings.slice() : listings.filter(x => x.category === current);
+      arr = arr.slice().sort((a,b)=>{
+        if(sort==='recent') return new Date(b.date) - new Date(a.date);
+        if(sort==='price_asc') return (a.price||0)-(b.price||0);
+        if(sort==='price_desc') return (b.price||0)-(a.price||0);
+        return 0;
+      });
+      return arr;
+    }
+    function draw(){
+      const data = getFiltered();
+      document.getElementById('count').textContent = data.length + ' imóvel(is) em Bertioga';
+      document.getElementById('results').innerHTML = data.map(it=>`<div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:.5rem;flex-wrap:wrap">
+          <strong>${it.title}</strong>
+          <span class="badge">${it.category}</span>
+        </div>
+        <div class="pill-row">
+          <span class="badge">${it.neighborhood}</span>
+          <span class="badge">${it.type}</span>
+          ${it.bedrooms?`<span class="badge">${it.bedrooms} q</span>`:''}
+          ${it.bathrooms?`<span class="badge">${it.bathrooms} b</span>`:''}
+          ${it.area?`<span class="badge">${it.area} m²</span>`:''}
+        </div>
+        <div style="font-size:1.25rem;font-weight:800;color:var(--ocean);margin:.3rem 0">${money(it.price)}</div>
+        <div style="font-size:.85rem;color:#777">Atualizado ${fmtDate(it.date)}</div>
+      </div>`).join('');
+      document.getElementById('posts').innerHTML = posts.map(p=>`<div class="card">
+        <strong><a href="${p.url}" style="color:var(--ocean);text-decoration:none">${p.title}</a></strong>
+        <div style="font-size:.9rem;color:#555">${p.excerpt}</div>
+        <div style="font-size:.82rem;color:#888">${fmtDate(p.date)}</div>
+      </div>`).join('');
+    }
+    draw();
+  </script>
+</body>
+</html>
