@@ -17,3 +17,5 @@ id,nome_da_imobiliaria,cidade,pessoa_de_contato,cargo,email,whatsapp,perfil,stat
 16,Prime Imóveis Site,Peruíbe,Fernanda Souza,Corretor-chefe,contato16@exemplo.com,(13) 99999-0016,construtora,novo,conteudo,anuncios,Instagram,67,Automação,R$ 1-3k/mês,direto,Peruíbe,
 17,Região Sul Centro,Bertioga,Fernanda Rocha,Gerente,contato17@exemplo.com,(13) 99999-0017,gestor,novo,atendimento,anuncios,Portais,58,Automação,R$ 1-4k/mês,formal,Bertioga,
 18,Mar & Sol Litoral,Santos,Luciana Souza,Sócio,contato18@exemplo.com,(13) 99999-0018,gestor,novo,leads,avaliacao,Google Maps,75,Mais conteúdo,R$ 1-3k/mês,parceiro,Santos,
+19,Litoral Norte Imóveis,Santos,Renato Almeida,Diretor,contato19@exemplo.com,(13) 99999-0019,imobiliaria,novo,conversao,chatbot,Website,88,Relatórios,R$ 1-3k/mês,parceiro,Santos,
+20,Costa Azul Imóveis,Praia Grande,Amanda Costa,Gerente,contato20@exemplo.com,(13) 99999-0020,construtora,novo,anuncios,anuncios,Google Ads,55,Aumentar captação,R$ 0.5-2k/mês,direto,Praia Grande,
