@@ -1,221 +1,221 @@
-id,nome_da_imobiliaria,cidade,pessoa_de_contato,cargo,email,whatsapp,perfil,status,dor_principal,diferencial,fonte,pontuacao_lead,objetivo_90_dias,orcamento_estimado,tom,cidade_ref,created_at
-1,Alpha Imóveis Praia,Santos,Carlos Lima,Gerente,contato1@exemplo.com,(13) 99999-0001,construtora,novo,atendimento,seo,Portais,40,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,
-2,Região Sul Digital,Mongaguá,Ana Lima,Gerente,contato2@exemplo.com,(13) 99999-0002,construtora,novo,anuncios,anuncios,Indicação,63,Aumentar captação,R$ 0.5-2k/mês,direto,Mongaguá,
-3,Ocean Blue Digital,Santos,Maria Barros,Responsável,contato3@exemplo.com,(13) 99999-0003,gestor,novo,conversao,seo,Instagram,42,SEO local,R$ 1-3k/mês,parceiro,Santos,
-4,Norte Sul Praia,Guarujá,Ana Lima,Sócio,contato4@exemplo.com,(13) 99999-0004,gestor,novo,atendimento,seo,Portais,61,Mais conteúdo,R$ 1-3k/mês,formal,Guarujá,
-5,Beta Imóveis Praia,São Vicente,Maria Rocha,Corretor-chefe,contato5@exemplo.com,(13) 99999-0005,imobiliaria,novo,conversao,chatbot,Instagram,45,SEO local,R$ 0.5-2k/mês,formal,São Vicente,
-6,Beta Imóveis Centro,Santos,Fernanda Nunes,Corretor-chefe,contato6@exemplo.com,(13) 99999-0006,construtora,novo,conversao,seo,Indicação,90,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,
-7,Região Sul Digital,Bertioga,Ricardo Mendes,Responsável,contato7@exemplo.com,(13) 99999-0007,imobiliaria,novo,anuncios,avaliacao,LinkedIn,75,Mais conteúdo,R$ 0.5-2k/mês,parceiro,Bertioga,
-8,Ocean Blue Digital,Guarujá,Maria Barros,Gerente,contato8@exemplo.com,(13) 99999-0008,construtora,novo,atendimento,chatbot,LinkedIn,84,Relatórios,R$ 1-3k/mês,direto,Guarujá,
-9,Ocean Blue Centro,Santos,Luciana Nunes,Gerente,contato9@exemplo.com,(13) 99999-0009,imobiliaria,novo,conteudo,chatbot,Portais,83,Automação,R$ 1-3k/mês,parceiro,Santos,
-10,Região Sul Praia,Peruíbe,Carlos Barros,Responsável,contato10@exemplo.com,(13) 99999-0010,construtora,novo,leads,anuncios,Google Maps,90,Automação,R$ 0.5-2k/mês,parceiro,Peruíbe,
-11,Imobiliária Litoral Litoral,Santos,Luciana Mendes,Gerente,contato11@exemplo.com,(13) 99999-0011,corretor,novo,conteudo,anuncios,Google Maps,70,Automação,R$ 1-3k/mês,formal,Santos,
-12,Norte Sul Site,São Vicente,Luciana Costa,Corretor-chefe,contato12@exemplo.com,(13) 99999-0012,gestor,novo,leads,avaliacao,Portais,64,Aumentar captação,R$ 0.5-2k/mês,formal,São Vicente,
-13,Mar & Sol Praia,Santos,Patrícia Barros,Corretor-chefe,contato13@exemplo.com,(13) 99999-0013,imobiliaria,novo,atendimento,chatbot,Instagram,64,Automação,R$ 1-4k/mês,direto,Santos,
-14,Sol & Mar Centro,Bertioga,Fernanda Nunes,Corretor-chefe,contato14@exemplo.com,(13) 99999-0014,construtora,novo,anuncios,relatorios,Instagram,61,Mais conteúdo,R$ 0.5-2k/mês,direto,Bertioga,
-15,Prime Imóveis Digital,Guarujá,Ricardo Lima,Gerente,contato15@exemplo.com,(13) 99999-0015,construtora,novo,atendimento,avaliacao,Instagram,61,Relatórios,R$ 1-3k/mês,direto,Guarujá,
-16,Prime Imóveis Site,Peruíbe,Fernanda Souza,Corretor-chefe,contato16@exemplo.com,(13) 99999-0016,construtora,novo,conteudo,anuncios,Instagram,67,Automação,R$ 1-3k/mês,direto,Peruíbe,
-17,Região Sul Centro,Bertioga,Fernanda Rocha,Gerente,contato17@exemplo.com,(13) 99999-0017,gestor,novo,atendimento,anuncios,Portais,58,Automação,R$ 1-4k/mês,formal,Bertioga,
-18,Mar & Sol Litoral,Santos,Luciana Souza,Sócio,contato18@exemplo.com,(13) 99999-0018,gestor,novo,leads,avaliacao,Google Maps,75,Mais conteúdo,R$ 1-3k/mês,parceiro,Santos,
-19,Litoral Norte Imóveis,Santos,Renato Almeida,Diretor,contato19@exemplo.com,(13) 99999-0019,imobiliaria,novo,conversao,chatbot,Website,88,Relatórios,R$ 1-3k/mês,parceiro,Santos,
-20,Costa Azul Imóveis,Praia Grande,Amanda Costa,Gerente,contato20@exemplo.com,(13) 99999-0020,construtora,novo,anuncios,anuncios,Google Ads,55,Aumentar captação,R$ 0.5-2k/mês,direto,Praia Grande,
-21,Litoral Norte Premium,Santos,Mariana Costa,Gerente,contato21@exemplo.com,(13) 99999-0021,construtora,novo,conversao,chatbot,Google Maps,72,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,
-22,Maresias Imóveis,Bertioga,Paulo Ribeiro,Corretor-chefe,contato22@exemplo.com,(13) 99999-0022,imobiliaria,novo,atendimento,seo,Instagram,68,Relatórios,R$ 0.5-2k/mês,direto,Bertioga,
-23,Enseada Digital,Guarujá,Camila Torres,Responsável,contato23@exemplo.com,(13) 99999-0023,gestor,novo,anuncios,anuncios,LinkedIn,58,SEO local,R$ 0.5-2k/mês,formal,Guarujá,
-24,Praia Grande Imóveis,Praia Grande,Ricardo Barros,Sócio,contato24@exemplo.com,(13) 99999-0024,construtora,novo,leads,chatbot,Portais,81,Aumentar captação,R$ 1-3k/mês,parceiro,Praia Grande,
-25,São Vicente Premium,São Vicente,Patrícia Lima,Corretor-chefe,contato25@exemplo.com,(13) 99999-0025,imobiliaria,novo,conteudo,seo,Google Maps,55,Automação,R$ 0.5-2k/mês,formal,São Vicente,
-26,Peruíbe Sol,Peruíbe,Fernanda Costa,Responsável,contato26@exemplo.com,(13) 99999-0026,gestor,novo,atendimento,avaliacao,Indicação,76,Relatórios,R$ 1-3k/mês,parceiro,Peruíbe,
-27,Mongaguá Atlântica,Mongaguá,Luciana Nunes,Gerente,contato27@exemplo.com,(13) 99999-0027,construtora,novo,conversao,seo,Portais,42,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,
-28,Itanhaém Mar,Itanhaém,Carlos Souza,Corretor-chefe,contato28@exemplo.com,(13) 99999-0028,imobiliaria,novo,anuncios,chatbot,Instagram,89,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,
-29,Riviera Imóveis,Bertioga,Ana Barros,Gerente,contato29@exemplo.com,(13) 99999-0029,construtora,novo,leads,anuncios,LinkedIn,63,SEO local,R$ 1-3k/mês,formal,Bertioga,
-30,Tombo Imóveis,Guarujá,Ricardo Lima,Sócio,contato30@exemplo.com,(13) 99999-0030,gestor,novo,conteudo,seo,Google Maps,50,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,
-31,Gonzaga Premium,Santos,Mariana Rocha,Corretor-chefe,contato31@exemplo.com,(13) 99999-0031,imobiliaria,novo,atendimento,chatbot,Website,77,Aumentar captação,R$ 1-3k/mês,direto,Santos,
-32,Boqueirão Imóveis,Santos,Paulo Mendes,Gerente,contato32@exemplo.com,(13) 99999-0032,construtora,novo,conversao,seo,Instagram,84,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,
-33,Catiapoã Digital,São Vicente,Fernanda Costa,Responsável,contato33@exemplo.com,(13) 99999-0033,gestor,novo,anuncios,avaliacao,Portais,39,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,
-34,Caiçara Imóveis,Praia Grande,Luciana Souza,Corretor-chefe,contato34@exemplo.com,(13) 99999-0034,imobiliaria,novo,leads,chatbot,Google Maps,92,Automação,R$ 1-3k/mês,parceiro,Praia Grande,
-35,Barra de Peruíbe,Peruíbe,Carlos Almeida,Sócio,contato35@exemplo.com,(13) 99999-0035,construtora,novo,conteudo,anuncios,LinkedIn,67,SEO local,R$ 0.5-2k/mês,direto,Peruíbe,
-36,Vila Tupi Imóveis,Praia Grande,Renata Lima,Gerente,contato36@exemplo.com,(13) 99999-0036,gestor,novo,atendimento,chatbot,Website,71,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,
-37,José Menino Premium,Santos,Paula Souza,Corretor-chefe,contato37@exemplo.com,(13) 99999-0037,imobiliaria,novo,conversao,seo,Google Maps,59,Relatórios,R$ 1-3k/mês,direto,Santos,
-38,Jardim Rio Branco,São Vicente,Ricardo Costa,Responsável,contato38@exemplo.com,(13) 99999-0038,construtora,novo,anuncios,avaliacao,Instagram,46,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,
-39,Ponta da Praia,Santos,Marina Rocha,Gerente,contato39@exemplo.com,(13) 99999-0039,gestor,novo,leads,chatbot,Portais,78,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,
-40,Agenor de Campos,Mongaguá,Lucas Mendes,Corretor-chefe,contato40@exemplo.com,(13) 99999-0040,imobiliaria,novo,conteudo,anuncios,LinkedIn,53,Automação,R$ 0.5-2k/mês,direto,Mongaguá,
-41,Cibratel Imóveis,Itanhaém,Teresa Almeida,Sócia,contato41@exemplo.com,(13) 99999-0041,construtora,novo,atendimento,seo,Website,82,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,
-42,Jardim Grandesp,Itanhaém,Fábio Rocha,Gerente,contato42@exemplo.com,(13) 99999-0042,gestor,novo,anuncios,chatbot,Portais,66,SEO local,R$ 0.5-2k/mês,formal,Itanhaém,
-43,Gaivota Imóveis,Itanhaém,Paula Torres,Corretor-chefe,contato43@exemplo.com,(13) 99999-0043,imobiliaria,novo,conversao,seo,Instagram,74,Mais conteúdo,R$ 0.5-2k/mês,direto,Itanhaém,
-44,Baixio Digital,Itanhaém,Ricardo Nunes,Responsável,contato44@exemplo.com,(13) 99999-0044,construtora,novo,leads,avaliacao,Google Maps,48,Aumentar captação,R$ 0.5-2k/mês,formal,Itanhaém,
-45,Itinguçu Imóveis,Peruíbe,Camila Costa,Gerente,contato45@exemplo.com,(13) 99999-0045,gestor,novo,conteudo,anuncios,LinkedIn,61,Automação,R$ 0.5-2k/mês,parceiro,Peruíbe,
-46,Rio Preto Sol,Peruíbe,Luciana Barros,Corretor-chefe,contato46@exemplo.com,(13) 99999-0046,imobiliaria,novo,atendimento,chatbot,Website,77,Relatórios,R$ 1-3k/mês,direto,Peruíbe,
-47,Vila São Paulo,Mongaguá,Paulo Almeida,Sócio,contato47@exemplo.com,(13) 99999-0047,construtora,novo,anuncios,seo,Portais,52,Mais conteúdo,R$ 0.5-2k/mês,formal,Mongaguá,
-48,Balneário Conchas,Mongaguá,Fernanda Lima,Gerente,contato48@exemplo.com,(13) 99999-0048,gestor,novo,conversao,chatbot,Instagram,69,SEO local,R$ 0.5-2k/mês,parceiro,Mongaguá,
-49,Jussara Digital,Mongaguá,Ricardo Souza,Responsável,contato49@exemplo.com,(13) 99999-0049,construtora,novo,leads,avaliacao,Google Ads,43,Aumentar captação,R$ 0.5-2k/mês,direto,Mongaguá,
-50,Litoral Sul Imóveis,Santos,Carolina Mendes,Diretora,contato50@exemplo.com,(13) 99999-0050,imobiliaria,novo,conteudo,seo,LinkedIn,87,Automação,R$ 1-3k/mês,parceiro,Santos,
-51,Litoral Premium Sant,Santos,Roberto Dias,Diretor,contato36@exemplo.com,(13) 99999-0036,construtora,novo,conversao,chatbot,Google Maps,91,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,
-52,Maresias Tech,Bertioga,Juliana Mendes,Gerente,contato37@exemplo.com,(13) 99999-0037,imobiliaria,novo,atendimento,seo,Instagram,59,Relatórios,R$ 0.5-2k/mês,direto,Bertioga,
-53,Guarujá Mar Digital,Guarujá,André Costa,Sócio,contato38@exemplo.com,(13) 99999-0038,gestor,novo,anuncios,anuncios,LinkedIn,67,SEO local,R$ 0.5-2k/mês,formal,Guarujá,
-54,Praia Grande Norte,Praia Grande,Fernanda Lima,Responsável,contato39@exemplo.com,(13) 99999-0039,construtora,novo,leads,chatbot,Portais,78,Automação,R$ 1-3k/mês,parceiro,Praia Grande,
-55,São Vicente Sul,São Vicente,Paulo Rocha,Corretor-chefe,contato40@exemplo.com,(13) 99999-0040,imobiliaria,novo,conteudo,seo,Google Maps,53,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,
-56,Peruíbe Norte,Peruíbe,Camila Souza,Gerente,contato41@exemplo.com,(13) 99999-0041,gestor,novo,atendimento,avaliacao,Indicação,82,Relatórios,R$ 1-3k/mês,parceiro,Peruíbe,
-57,Mongaguá Sul,Mongaguá,Ricardo Nunes,Responsável,contato42@exemplo.com,(13) 99999-0042,construtora,novo,conversao,seo,Portais,44,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,
-58,Itanhaém Centro,Itanhaém,Luciana Barros,Corretor-chefe,contato43@exemplo.com,(13) 99999-0043,imobiliaria,novo,anuncios,chatbot,Instagram,86,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,
-59,Riviera Norte,Bertioga,Mariana Costa,Gerente,contato44@exemplo.com,(13) 99999-0044,construtora,novo,leads,anuncios,LinkedIn,71,SEO local,R$ 1-3k/mês,formal,Bertioga,
-60,Tombo Norte,Guarujá,Carlos Mendes,Sócio,contato45@exemplo.com,(13) 99999-0045,gestor,novo,conteudo,seo,Google Maps,48,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,
-61,Gonzaga Sul,Santos,Patrícia Almeida,Gerente,contato46@exemplo.com,(13) 99999-0046,imobiliaria,novo,atendimento,chatbot,Website,79,Aumentar captação,R$ 1-3k/mês,direto,Santos,
-62,Boqueirão Norte,Santos,Paulo Costa,Corretor-chefe,contato47@exemplo.com,(13) 99999-0047,construtora,novo,conversao,seo,Instagram,89,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,
-63,Catiapoã Norte,São Vicente,Fernanda Rocha,Responsável,contato48@exemplo.com,(13) 99999-0048,gestor,novo,anuncios,avaliacao,Portais,36,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,
-64,Caiçara Norte,Praia Grande,Luciana Dias,Corretor-chefe,contato49@exemplo.com,(13) 99999-0049,imobiliaria,novo,leads,chatbot,Google Maps,95,Automação,R$ 1-3k/mês,parceiro,Praia Grande,
-65,Barra Peruíbe Sul,Peruíbe,Ricardo Almeida,Sócio,contato50@exemplo.com,(13) 99999-0050,construtora,novo,conteudo,anuncios,LinkedIn,74,SEO local,R$ 0.5-2k/mês,direto,Peruíbe,
-66,Santos Ocean View,Santos,Tatiane Moreira,Gerente,contato66@exemplo.com,(13) 99999-0066,construtora,novo,leads,chatbot,Google Maps,93,Automação,R$ 1-3k/mês,parceiro,Santos,
-67,Guarujá Blue,Guarujá,Eduardo Pires,Corretor-chefe,contato67@exemplo.com,(13) 99999-0067,imobiliaria,novo,conversao,seo,Instagram,77,SEO local,R$ 0.5-2k/mês,direto,Guarujá,
-68,Bertioga Riviera,Bertioga,Sofia Almeida,Responsável,contato68@exemplo.com,(13) 99999-0068,gestor,novo,atendimento,avaliacao,LinkedIn,69,Relatórios,R$ 1-3k/mês,formal,Bertioga,
-69,Praia Grande Park,Praia Grande,Marcos Vinícius,Sócio,contato69@exemplo.com,(13) 99999-0069,construtora,novo,anuncios,anuncios,Portais,56,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,
-70,São Vicente Bay,São Vicente,Bianca Ramos,Corretor-chefe,contato70@exemplo.com,(13) 99999-0070,imobiliaria,novo,conteudo,seo,Google Maps,62,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,
-71,Peruíbe Coast,Peruíbe,Felipe Nascimento,Gerente,contato71@exemplo.com,(13) 99999-0071,gestor,novo,leads,chatbot,Indicação,88,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,
-72,Mongaguá Beach,Mongaguá,Aline Torres,Responsável,contato72@exemplo.com,(13) 99999-0072,construtora,novo,conversao,seo,Portais,41,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,
-73,Itanhaém View,Itanhaém,Gustavo Lima,Corretor-chefe,contato73@exemplo.com,(13) 99999-0073,imobiliaria,novo,anuncios,chatbot,Instagram,85,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,
-74,Riviera Digital,Bertioga,Larissa Costa,Gerente,contato74@exemplo.com,(13) 99999-0074,construtora,novo,leads,anuncios,LinkedIn,73,SEO local,R$ 1-3k/mês,formal,Bertioga,
-75,Tombo Beach,Guarujá,Rafael Souza,Sócio,contato75@exemplo.com,(13) 99999-0075,gestor,novo,conteudo,seo,Google Maps,47,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,
-76,Santos Premium Digital,Santos,Viviane Paes,Gerente,contato76@exemplo.com,(13) 99999-0076,construtora,novo,leads,chatbot,Google Maps,94,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,
-77,Guarujá Norte Digital,Guarujá,Fábio Rocha,Corretor-chefe,contato77@exemplo.com,(13) 99999-0077,imobiliaria,novo,conversao,seo,Instagram,58,SEO local,R$ 0.5-2k/mês,direto,Guarujá,
-78,Bertioga Centro,Bertioga,Débora Almeida,Responsável,contato78@exemplo.com,(13) 99999-0078,gestor,novo,atendimento,avaliacao,LinkedIn,82,Relatórios,R$ 1-3k/mês,formal,Bertioga,
-79,Praia Grande Sul,Praia Grande,Bruno Mendes,Sócio,contato79@exemplo.com,(13) 99999-0079,construtora,novo,anuncios,anuncios,Portais,63,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,
-80,São Vicente Norte,São Vicente,Carla Dias,Corretor-chefe,contato80@exemplo.com,(13) 99999-0080,imobiliaria,novo,conteudo,seo,Google Maps,51,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,
-81,Peruíbe Centro Digital,Peruíbe,Gustavo Henrique,Gerente,contato81@exemplo.com,(13) 99999-0081,gestor,novo,leads,chatbot,Indicação,87,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,
-82,Mongaguá Centro,Mongaguá,Lívia Souza,Responsável,contato82@exemplo.com,(13) 99999-0082,construtora,novo,conversao,seo,Portais,46,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,
-83,Itanhaém Norte,Itanhaém,Thiago Lima,Corretor-chefe,contato83@exemplo.com,(13) 99999-0083,imobiliaria,novo,anuncios,chatbot,Instagram,91,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,
-84,Riviera Blue,Bertioga,Isabela Costa,Gerente,contato84@exemplo.com,(13) 99999-0084,construtora,novo,leads,anuncios,LinkedIn,66,SEO local,R$ 1-3k/mês,formal,Bertioga,
-85,Tombo Digital,Guarujá,Alexandre Pires,Sócio,contato85@exemplo.com,(13) 99999-0085,gestor,novo,conteudo,seo,Google Maps,54,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,
-86,Gonzaga Norte,Santos,Camila Ribeiro,Gerente,contato86@exemplo.com,(13) 99999-0086,imobiliaria,novo,atendimento,chatbot,Website,75,Aumentar captação,R$ 1-3k/mês,direto,Santos,
-87,Embaré Digital,Santos,Rafaela Nunes,Corretor-chefe,contato87@exemplo.com,(13) 99999-0087,construtora,novo,conversao,seo,Instagram,86,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,
-88,Catiapoã Sul,São Vicente,Daniel Almeida,Responsável,contato88@exemplo.com,(13) 99999-0088,gestor,novo,anuncios,avaliacao,Portais,41,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,
-89,Caiçara Digital,Praia Grande,Patrícia Lima,Corretor-chefe,contato89@exemplo.com,(13) 99999-0089,imobiliaria,novo,leads,chatbot,Google Maps,93,Automação,R$ 1-3k/mês,parceiro,Praia Grande,
-90,Barra Norte,Peruíbe,Marcelo Barros,Sócio,contato90@exemplo.com,(13) 99999-0090,construtora,novo,conteudo,anuncios,LinkedIn,72,SEO local,R$ 0.5-2k/mês,direto,Peruíbe,
-91,Santos Tower Imóveis,Santos,Helena Vaz,Gerente,contato91@exemplo.com,(13) 99999-0091,construtora,novo,leads,chatbot,Google Maps,96,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,
-92,Guarujá Blue Tech,Guarujá,Igor Barros,Corretor-chefe,contato92@exemplo.com,(13) 99999-0092,imobiliaria,novo,conversao,seo,Instagram,81,SEO local,R$ 0.5-2k/mês,direto,Guarujá,
-93,Bertioga Riviera Tech,Bertioga,Monique Rocha,Responsável,contato93@exemplo.com,(13) 99999-0093,gestor,novo,atendimento,avaliacao,LinkedIn,74,Relatórios,R$ 1-3k/mês,formal,Bertioga,
-94,Praia Grande Center,Praia Grande,Rodrigo Dias,Sócio,contato94@exemplo.com,(13) 99999-0094,construtora,novo,anuncios,anuncios,Portais,59,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,
-95,São Vicente Green,São Vicente,Priscila Nunes,Corretor-chefe,contato95@exemplo.com,(13) 99999-0095,imobiliaria,novo,conteudo,seo,Google Maps,57,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,
-96,Peruíbe Ecologic,Peruíbe,Humberto Costa,Gerente,contato96@exemplo.com,(13) 99999-0096,gestor,novo,leads,chatbot,Indicação,89,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,
-97,Mongaguá Tropical,Mongaguá,Catarina Lima,Responsável,contato97@exemplo.com,(13) 99999-0097,construtora,novo,conversao,seo,Portais,43,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,
-98,Itanhaém Premium,Itanhaém,Fábio Souza,Corretor-chefe,contato98@exemplo.com,(13) 99999-0098,imobiliaria,novo,anuncios,chatbot,Instagram,92,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,
-99,Riviera Exclusive,Bertioga,Natália Almeida,Gerente,contato99@exemplo.com,(13) 99999-0099,construtora,novo,leads,anuncios,LinkedIn,76,SEO local,R$ 1-3k/mês,formal,Bertioga,
-100,Tombo Exclusive,Guarujá,Caio Ribeiro,Sócio,contato100@exemplo.com,(13) 99999-0100,gestor,novo,conteudo,seo,Google Maps,49,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,
-101,Santos Luxo,Santos,Isabela Fernandes,Gerente,contato101@exemplo.com,(13) 99999-0101,construtora,novo,leads,chatbot,Google Maps,95,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,
-102,Guarujá Premium,Guarujá,Leonardo Azevedo,Corretor-chefe,contato102@exemplo.com,(13) 99999-0102,imobiliaria,novo,conversao,seo,Instagram,83,SEO local,R$ 0.5-2k/mês,direto,Guarujá,
-103,Bertioga Green,Bertioga,Fernanda Lopes,Responsável,contato103@exemplo.com,(13) 99999-0103,gestor,novo,atendimento,avaliacao,LinkedIn,77,Relatórios,R$ 1-3k/mês,formal,Bertioga,
-104,Praia Grande Business,Praia Grande,André Luiz,Sócio,contato104@exemplo.com,(13) 99999-0104,construtora,novo,anuncios,anuncios,Portais,62,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,
-105,São Vicente Bay,São Vicente,Juliana Martins,Corretor-chefe,contato105@exemplo.com,(13) 99999-0105,imobiliaria,novo,conteudo,seo,Google Maps,58,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,
-106,Peruíbe Eco,Peruíbe,Thiago Rocha,Gerente,contato106@exemplo.com,(13) 99999-0106,gestor,novo,leads,chatbot,Indicação,91,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,
-107,Mongaguá Blue,Mongaguá,Camila Ferreira,Responsável,contato107@exemplo.com,(13) 99999-0107,construtora,novo,conversao,seo,Portais,45,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,
-108,Itanhaém Premium,Itanhaém,Fábio Carvalho,Corretor-chefe,contato108@exemplo.com,(13) 99999-0108,imobiliaria,novo,anuncios,chatbot,Instagram,93,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,
-109,Riviera Exclusive,Bertioga,Larissa Gomes,Gerente,contato109@exemplo.com,(13) 99999-0109,construtora,novo,leads,anuncios,LinkedIn,79,SEO local,R$ 1-3k/mês,formal,Bertioga,
-110,Tombo Beach,Guarujá,Rafael Almeida,Sócio,contato110@exemplo.com,(13) 99999-0110,gestor,novo,conteudo,seo,Google Maps,52,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,
-111,Gonzaga Digital,Santos,Patrícia Ribeiro,Gerente,contato111@exemplo.com,(13) 99999-0111,imobiliaria,novo,atendimento,chatbot,Website,81,Aumentar captação,R$ 1-3k/mês,direto,Santos,
-112,Embaré Tech,Santos,Paulo Nunes,Corretor-chefe,contato112@exemplo.com,(13) 99999-0112,construtora,novo,conversao,seo,Instagram,88,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,
-113,Catiapoã Digital,São Vicente,Fernanda Costa,Responsável,contato113@exemplo.com,(13) 99999-0113,gestor,novo,anuncios,avaliacao,Portais,39,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,
-114,Caiçara Imóveis,Praia Grande,Luciana Dias,Corretor-chefe,contato114@exemplo.com,(13) 99999-0114,imobiliaria,novo,leads,chatbot,Google Maps,94,Automação,R$ 1-3k/mês,parceiro,Praia Grande,
-115,Barra Norte,Peruíbe,Marcelo Almeida,Sócio,contato115@exemplo.com,(13) 99999-0115,construtora,novo,conteudo,anuncios,LinkedIn,73,SEO local,R$ 0.5-2k/mês,direto,Peruíbe,
-116,Santos Smart,Santos,Renato Lima,Gerente,contato116@exemplo.com,(13) 99999-0116,gestor,novo,leads,avaliacao,Google Maps,87,Automação,R$ 1-3k/mês,parceiro,Santos,
-117,Guarujá Smart,Guarujá,Aline Barros,Responsável,contato117@exemplo.com,(13) 99999-0117,construtora,novo,conversao,chatbot,Website,49,Relatórios,R$ 0.5-2k/mês,direto,Guarujá,
-118,Bertioga Smart,Bertioga,Ricardo Souza,Corretor-chefe,contato118@exemplo.com,(13) 99999-0118,imobiliaria,novo,anuncios,seo,Instagram,82,SEO local,R$ 1-3k/mês,parceiro,Bertioga,
-119,Praia Grande Smart,Praia Grande,Fernanda Rocha,Gerente,contato119@exemplo.com,(13) 99999-0119,construtora,novo,leads,anuncios,LinkedIn,68,Automação,R$ 0.5-2k/mês,formal,Praia Grande,
-120,São Vicente Smart,São Vicente,Carlos Mendes,Sócio,contato120@exemplo.com,(13) 99999-0120,gestor,novo,conteudo,seo,Google Maps,55,Mais conteúdo,R$ 0.5-2k/mês,parceiro,São Vicente,
-121,Santos Smart Home,Santos,Mariana Costa,Gerente,contato121@exemplo.com,(13) 99999-0121,construtora,novo,leads,chatbot,Google Maps,97,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,
-122,Guarujá Conecta,Guarujá,Thiago Almeida,Corretor-chefe,contato122@exemplo.com,(13) 99999-0122,imobiliaria,novo,conversao,seo,Instagram,84,SEO local,R$ 0.5-2k/mês,direto,Guarujá,
-123,Bertioga Inovação,Bertioga,Fernanda Lima,Responsável,contato123@exemplo.com,(13) 99999-0123,gestor,novo,atendimento,avaliacao,LinkedIn,78,Relatórios,R$ 1-3k/mês,formal,Bertioga,
-124,Praia Grande Estrutura,Praia Grande,Ricardo Nunes,Sócio,contato124@exemplo.com,(13) 99999-0124,construtora,novo,anuncios,anuncios,Portais,64,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,
-125,São Vicente Conectada,São Vicente,Patrícia Mendes,Corretor-chefe,contato125@exemplo.com,(13) 99999-0125,imobiliaria,novo,conteudo,seo,Google Maps,59,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,
-126,Peruíbe Natureza,Peruíbe,Carlos Dias,Gerente,contato126@exemplo.com,(13) 99999-0126,gestor,novo,leads,chatbot,Indicação,92,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,
-127,Mongaguá Relax,Mongaguá,Aline Souza,Responsável,contato127@exemplo.com,(13) 99999-0127,construtora,novo,conversao,seo,Portais,47,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,
-128,Itanhaém Surf,Itanhaém,Gustavo Costa,Corretor-chefe,contato128@exemplo.com,(13) 99999-0128,imobiliaria,novo,anuncios,chatbot,Instagram,94,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,
-129,Riviera Business,Bertioga,Larissa Barros,Gerente,contato129@exemplo.com,(13) 99999-0129,construtora,novo,leads,anuncios,LinkedIn,80,SEO local,R$ 1-3k/mês,formal,Bertioga,
-130,Tombo Surf,Guarujá,Fábio Ribeiro,Sócio,contato130@exemplo.com,(13) 99999-0130,gestor,novo,conteudo,seo,Google Maps,53,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,
-131,Gonzaga Smart,Santos,Bianca Martins,Gerente,contato131@exemplo.com,(13) 99999-0131,imobiliaria,novo,atendimento,chatbot,Website,82,Aumentar captação,R$ 1-3k/mês,direto,Santos,
-132,Embaré Conecta,Santos,Paulo Ferreira,Corretor-chefe,contato132@exemplo.com,(13) 99999-0132,construtora,novo,conversao,seo,Instagram,87,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,
-133,Catiapoã Nature,São Vicente,Renata Almeida,Responsável,contato133@exemplo.com,(13) 99999-0133,gestor,novo,anuncios,avaliacao,Portais,40,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,
-134,Caiçara Conectada,Praia Grande,Marcelo Lima,Corretor-chefe,contato134@exemplo.com,(13) 99999-0134,imobiliaria,novo,leads,chatbot,Google Maps,95,Automação,R$ 1-3k/mês,parceiro,Praia Grande,
-135,Barra Digital,Peruíbe,Fernanda Costa,Sócio,contato135@exemplo.com,(13) 99999-0135,construtora,novo,conteudo,anuncios,LinkedIn,75,SEO local,R$ 0.5-2k/mês,direto,Peruíbe,
-136,Santos Connect,Santos,Juliano Mendes,Gerente,contato136@exemplo.com,(13) 99999-0136,gestor,novo,leads,avaliacao,Google Maps,89,Automação,R$ 1-3k/mês,parceiro,Santos,
-137,Guarujá Zen,Guarujá,Amanda Rocha,Responsável,contato137@exemplo.com,(13) 99999-0137,construtora,novo,conversao,chatbot,Website,51,Relatórios,R$ 0.5-2k/mês,direto,Guarujá,
-138,Bertioga Premium,Bertioga,André Luiz,Corretor-chefe,contato138@exemplo.com,(13) 99999-0138,imobiliaria,novo,anuncios,seo,Instagram,83,SEO local,R$ 1-3k/mês,parceiro,Bertioga,
-139,Praia Grande Relax,Praia Grande,Carla Nunes,Gerente,contato139@exemplo.com,(13) 99999-0139,construtora,novo,leads,anuncios,LinkedIn,69,Automação,R$ 0.5-2k/mês,formal,Praia Grande,
-140,São Vicente Premium,São Vicente,Rodrigo Almeida,Sócio,contato140@exemplo.com,(13) 99999-0140,gestor,novo,conteudo,seo,Google Maps,56,Mais conteúdo,R$ 0.5-2k/mês,parceiro,São Vicente,
-141,Santos Executive,Santos,Roberto Dias,Gerente,contato141@exemplo.com,(13) 99999-0141,construtora,novo,leads,chatbot,Google Maps,97,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,
-142,Guarujá Executive,Guarujá,Marina Costa,Corretor-chefe,contato142@exemplo.com,(13) 99999-0142,imobiliaria,novo,conversao,seo,Instagram,84,SEO local,R$ 0.5-2k/mês,direto,Guarujá,
-143,Bertioga Executive,Bertioga,Paulo Mendes,Responsável,contato143@exemplo.com,(13) 99999-0143,gestor,novo,atendimento,avaliacao,LinkedIn,79,Relatórios,R$ 1-3k/mês,formal,Bertioga,
-144,Praia Grande Executive,Praia Grande,Fernanda Lima,Sócio,contato144@exemplo.com,(13) 99999-0144,construtora,novo,anuncios,anuncios,Portais,62,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,
-145,São Vicente Executive,São Vicente,Carlos Almeida,Corretor-chefe,contato145@exemplo.com,(13) 99999-0145,imobiliaria,novo,conteudo,seo,Google Maps,58,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,
-146,Peruíbe Executive,Peruíbe,Amanda Souza,Gerente,contato146@exemplo.com,(13) 99999-0146,gestor,novo,leads,chatbot,Indicação,91,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,
-147,Mongaguá Executive,Mongaguá,Ricardo Rocha,Responsável,contato147@exemplo.com,(13) 99999-0147,construtora,novo,conversao,seo,Portais,44,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,
-148,Itanhaém Executive,Itanhaém,Larissa Barros,Corretor-chefe,contato148@exemplo.com,(13) 99999-0148,imobiliaria,novo,anuncios,chatbot,Instagram,93,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,
-149,Riviera Executive,Bertioga,Gustavo Nunes,Gerente,contato149@exemplo.com,(13) 99999-0149,construtora,novo,leads,anuncios,LinkedIn,76,SEO local,R$ 1-3k/mês,formal,Bertioga,
-150,Tombo Executive,Guarujá,Bianca Martins,Sócio,contato150@exemplo.com,(13) 99999-0150,gestor,novo,conteudo,seo,Google Maps,53,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,
-151,Gonzaga Executive,Santos,Fábio Costa,Gerente,contato151@exemplo.com,(13) 99999-0151,imobiliaria,novo,atendimento,chatbot,Website,82,Aumentar captação,R$ 1-3k/mês,direto,Santos,
-152,Embaré Executive,Santos,Patrícia Ferreira,Corretor-chefe,contato152@exemplo.com,(13) 99999-0152,construtora,novo,conversao,seo,Instagram,88,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,
-153,Catiapoã Executive,São Vicente,Renata Almeida,Responsável,contato153@exemplo.com,(13) 99999-0153,gestor,novo,anuncios,avaliacao,Portais,39,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,
-154,Caiçara Executive,Praia Grande,Marcelo Dias,Corretor-chefe,contato154@exemplo.com,(13) 99999-0154,imobiliaria,novo,leads,chatbot,Google Maps,94,Automação,R$ 1-3k/mês,parceiro,Praia Grande,
-155,Barra Executive,Peruíbe,Fernanda Costa,Sócio,contato155@exemplo.com,(13) 99999-0155,construtora,novo,conteudo,anuncios,LinkedIn,73,SEO local,R$ 0.5-2k/mês,direto,Peruíbe,
-156,Santos Vision,Santos,Juliano Mendes,Gerente,contato156@exemplo.com,(13) 99999-0156,gestor,novo,leads,avaliacao,Google Maps,89,Automação,R$ 1-3k/mês,parceiro,Santos,
-157,Guarujá Vision,Guarujá,Aline Barros,Responsável,contato157@exemplo.com,(13) 99999-0157,construtora,novo,conversao,chatbot,Website,50,Relatórios,R$ 0.5-2k/mês,direto,Guarujá,
-158,Bertioga Vision,Bertioga,Ricardo Souza,Corretor-chefe,contato158@exemplo.com,(13) 99999-0158,imobiliaria,novo,anuncios,seo,Instagram,83,SEO local,R$ 1-3k/mês,parceiro,Bertioga,
-159,Praia Grande Vision,Praia Grande,Carla Nunes,Gerente,contato159@exemplo.com,(13) 99999-0159,construtora,novo,leads,anuncios,LinkedIn,69,Automação,R$ 0.5-2k/mês,formal,Praia Grande,
-160,São Vicente Vision,São Vicente,Rodrigo Almeida,Sócio,contato160@exemplo.com,(13) 99999-0160,gestor,novo,conteudo,seo,Google Maps,56,Mais conteúdo,R$ 0.5-2k/mês,parceiro,São Vicente,
-161,Santos Bay Homes,Santos,Patrícia Gomes,Gerente,contato161@exemplo.com,(13) 99999-0161,construtora,novo,leads,chatbot,Google Maps,96,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,
-162,Guarujá Coast Imóveis,Guarujá,André Luiz,Corretor-chefe,contato162@exemplo.com,(13) 99999-0162,imobiliaria,novo,conversao,seo,Instagram,82,SEO local,R$ 0.5-2k/mês,direto,Guarujá,
-163,Bertioga Premium,Bertioga,Fernanda Costa,Responsável,contato163@exemplo.com,(13) 99999-0163,gestor,novo,atendimento,avaliacao,LinkedIn,77,Relatórios,R$ 1-3k/mês,formal,Bertioga,
-164,Praia Grande Smart,Praia Grande,Ricardo Lima,Sócio,contato164@exemplo.com,(13) 99999-0164,construtora,novo,anuncios,anuncios,Portais,61,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,
-165,São Vicente Connect,São Vicente,Carla Dias,Corretor-chefe,contato165@exemplo.com,(13) 99999-0165,imobiliaria,novo,conteudo,seo,Google Maps,57,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,
-166,Peruíbe Nature,Peruíbe,Gustavo Almeida,Gerente,contato166@exemplo.com,(13) 99999-0166,gestor,novo,leads,chatbot,Indicação,90,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,
-167,Mongaguá Blue,Mongaguá,Camila Rocha,Responsável,contato167@exemplo.com,(13) 99999-0167,construtora,novo,conversao,seo,Portais,45,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,
-168,Itanhaém Premium,Itanhaém,Fábio Souza,Corretor-chefe,contato168@exemplo.com,(13) 99999-0168,imobiliaria,novo,anuncios,chatbot,Instagram,91,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,
-169,Riviera Exclusive,Bertioga,Larissa Ferreira,Gerente,contato169@exemplo.com,(13) 99999-0169,construtora,novo,leads,anuncios,LinkedIn,78,SEO local,R$ 1-3k/mês,formal,Bertioga,
-170,Tombo Beach,Guarujá,Rafael Barros,Sócio,contato170@exemplo.com,(13) 99999-0170,gestor,novo,conteudo,seo,Google Maps,54,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,
-171,Gonzaga Digital,Santos,Bianca Martins,Gerente,contato171@exemplo.com,(13) 99999-0171,imobiliaria,novo,atendimento,chatbot,Website,83,Aumentar captação,R$ 1-3k/mês,direto,Santos,
-172,Embaré Tech,Santos,Paulo Nunes,Corretor-chefe,contato172@exemplo.com,(13) 99999-0172,construtora,novo,conversao,seo,Instagram,88,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,
-173,Catiapoã Nature,São Vicente,Fernanda Costa,Responsável,contato173@exemplo.com,(13) 99999-0173,gestor,novo,anuncios,avaliacao,Portais,41,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,
-174,Caiçara Conectada,Praia Grande,Luciana Dias,Corretor-chefe,contato174@exemplo.com,(13) 99999-0174,imobiliaria,novo,leads,chatbot,Google Maps,95,Automação,R$ 1-3k/mês,parceiro,Praia Grande,
-175,Barra Norte,Peruíbe,Marcelo Almeida,Sócio,contato175@exemplo.com,(13) 99999-0175,construtora,novo,conteudo,anuncios,LinkedIn,73,SEO local,R$ 0.5-2k/mês,direto,Peruíbe,
-176,Santos Launch,Santos,Renata Almeida,Gerente,contato176@exemplo.com,(13) 99999-0176,construtora,novo,leads,chatbot,Google Maps,97,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,
-177,Guarujá Launch,Guarujá,Thiago Barros,Corretor-chefe,contato177@exemplo.com,(13) 99999-0177,imobiliaria,novo,conversao,seo,Instagram,85,SEO local,R$ 0.5-2k/mês,direto,Guarujá,
-178,Bertioga Launch,Bertioga,Fernanda Rocha,Responsável,contato178@exemplo.com,(13) 99999-0178,gestor,novo,atendimento,avaliacao,LinkedIn,79,Relatórios,R$ 1-3k/mês,formal,Bertioga,
-179,Praia Grande Launch,Praia Grande,Ricardo Mendes,Sócio,contato179@exemplo.com,(13) 99999-0179,construtora,novo,anuncios,anuncios,Portais,63,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,
-180,São Vicente Launch,São Vicente,Carla Dias,Corretor-chefe,contato180@exemplo.com,(13) 99999-0180,imobiliaria,novo,conteudo,seo,Google Maps,59,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,
-181,Peruíbe Launch,Peruíbe,Gustavo Costa,Gerente,contato181@exemplo.com,(13) 99999-0181,gestor,novo,leads,chatbot,Indicação,91,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,
-182,Mongaguá Launch,Mongaguá,Camila Lima,Responsável,contato182@exemplo.com,(13) 99999-0182,construtora,novo,conversao,seo,Portais,46,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,
-183,Itanhaém Launch,Itanhaém,Fábio Souza,Corretor-chefe,contato183@exemplo.com,(13) 99999-0183,imobiliaria,novo,anuncios,chatbot,Instagram,94,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,
-184,Riviera Launch,Bertioga,Larissa Nunes,Gerente,contato184@exemplo.com,(13) 99999-0184,construtora,novo,leads,anuncios,LinkedIn,80,SEO local,R$ 1-3k/mês,formal,Bertioga,
-185,Tombo Launch,Guarujá,Rafael Almeida,Sócio,contato185@exemplo.com,(13) 99999-0185,gestor,novo,conteudo,seo,Google Maps,55,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,
-186,Santos Platinum,Santos,Roberto Dias,Gerente,contato186@exemplo.com,(13) 99999-0186,construtora,novo,leads,chatbot,Google Maps,98,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,
-187,Guarujá Platinum,Guarujá,Marina Costa,Corretor-chefe,contato187@exemplo.com,(13) 99999-0187,imobiliaria,novo,conversao,seo,Instagram,86,SEO local,R$ 0.5-2k/mês,direto,Guarujá,
-188,Bertioga Platinum,Bertioga,Paulo Mendes,Responsável,contato188@exemplo.com,(13) 99999-0188,gestor,novo,atendimento,avaliacao,LinkedIn,80,Relatórios,R$ 1-3k/mês,formal,Bertioga,
-189,Praia Grande Platinum,Praia Grande,Fernanda Lima,Sócio,contato189@exemplo.com,(13) 99999-0189,construtora,novo,anuncios,anuncios,Portais,64,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,
-190,São Vicente Platinum,São Vicente,Carlos Almeida,Corretor-chefe,contato190@exemplo.com,(13) 99999-0190,imobiliaria,novo,conteudo,seo,Google Maps,60,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,
-191,Peruíbe Platinum,Peruíbe,Amanda Souza,Gerente,contato191@exemplo.com,(13) 99999-0191,gestor,novo,leads,chatbot,Indicação,92,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,
-192,Mongaguá Platinum,Mongaguá,Ricardo Rocha,Responsável,contato192@exemplo.com,(13) 99999-0192,construtora,novo,conversao,seo,Portais,47,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,
-193,Itanhaém Platinum,Itanhaém,Larissa Barros,Corretor-chefe,contato193@exemplo.com,(13) 99999-0193,imobiliaria,novo,anuncios,chatbot,Instagram,95,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,
-194,Riviera Platinum,Bertioga,Gustavo Nunes,Gerente,contato194@exemplo.com,(13) 99999-0194,construtora,novo,leads,anuncios,LinkedIn,81,SEO local,R$ 1-3k/mês,formal,Bertioga,
-195,Tombo Platinum,Guarujá,Bianca Martins,Sócio,contato195@exemplo.com,(13) 99999-0195,gestor,novo,conteudo,seo,Google Maps,56,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,
-196,Gonzaga Platinum,Santos,Fábio Costa,Gerente,contato196@exemplo.com,(13) 99999-0196,imobiliaria,novo,atendimento,chatbot,Website,84,Aumentar captação,R$ 1-3k/mês,direto,Santos,
-197,Embaré Platinum,Santos,Patrícia Ferreira,Corretor-chefe,contato197@exemplo.com,(13) 99999-0197,construtora,novo,conversao,seo,Instagram,89,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,
-198,Catiapoã Platinum,São Vicente,Renata Almeida,Responsável,contato198@exemplo.com,(13) 99999-0198,gestor,novo,anuncios,avaliacao,Portais,42,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,
-199,Caiçara Platinum,Praia Grande,Marcelo Dias,Corretor-chefe,contato199@exemplo.com,(13) 99999-0199,imobiliaria,novo,leads,chatbot,Google Maps,96,Automação,R$ 1-3k/mês,parceiro,Praia Grande,
-200,Barra Platinum,Peruíbe,Fernanda Costa,Sócio,contato200@exemplo.com,(13) 99999-0200,construtora,novo,conteudo,anuncios,LinkedIn,75,SEO local,R$ 0.5-2k/mês,direto,Peruíbe,
-201,Santos Elite,Santos,Viviane Paes,Gerente,contato201@exemplo.com,(13) 99999-0201,construtora,novo,leads,chatbot,Google Maps,98,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,
-202,Guarujá Elite,Guarujá,Fábio Rocha,Corretor-chefe,contato202@exemplo.com,(13) 99999-0202,imobiliaria,novo,conversao,seo,Instagram,87,SEO local,R$ 0.5-2k/mês,direto,Guarujá,
-203,Bertioga Elite,Bertioga,Débora Almeida,Responsável,contato203@exemplo.com,(13) 99999-0203,gestor,novo,atendimento,avaliacao,LinkedIn,81,Relatórios,R$ 1-3k/mês,formal,Bertioga,
-204,Praia Grande Elite,Praia Grande,Bruno Mendes,Sócio,contato204@exemplo.com,(13) 99999-0204,construtora,novo,anuncios,anuncios,Portais,65,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,
-205,São Vicente Elite,São Vicente,Carla Dias,Corretor-chefe,contato205@exemplo.com,(13) 99999-0205,imobiliaria,novo,conteudo,seo,Google Maps,61,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,
-206,Peruíbe Elite,Peruíbe,Gustavo Henrique,Gerente,contato206@exemplo.com,(13) 99999-0206,gestor,novo,leads,chatbot,Indicação,93,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,
-207,Mongaguá Elite,Mongaguá,Lívia Souza,Responsável,contato207@exemplo.com,(13) 99999-0207,construtora,novo,conversao,seo,Portais,48,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,
-208,Itanhaém Elite,Itanhaém,Thiago Lima,Corretor-chefe,contato208@exemplo.com,(13) 99999-0208,imobiliaria,novo,anuncios,chatbot,Instagram,96,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,
-209,Riviera Elite,Bertioga,Isabela Costa,Gerente,contato209@exemplo.com,(13) 99999-0209,construtora,novo,leads,anuncios,LinkedIn,82,SEO local,R$ 1-3k/mês,formal,Bertioga,
-210,Tombo Elite,Guarujá,Alexandre Pires,Sócio,contato210@exemplo.com,(13) 99999-0210,gestor,novo,conteudo,seo,Google Maps,57,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,
-211,Gonzaga Elite,Santos,Camila Ribeiro,Gerente,contato211@exemplo.com,(13) 99999-0211,imobiliaria,novo,atendimento,chatbot,Website,85,Aumentar captação,R$ 1-3k/mês,direto,Santos,
-212,Embaré Elite,Santos,Rafaela Nunes,Corretor-chefe,contato212@exemplo.com,(13) 99999-0212,construtora,novo,conversao,seo,Instagram,90,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,
-213,Catiapoã Elite,São Vicente,Daniel Almeida,Responsável,contato213@exemplo.com,(13) 99999-0213,gestor,novo,anuncios,avaliacao,Portais,43,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,
-214,Caiçara Elite,Praia Grande,Patrícia Lima,Corretor-chefe,contato214@exemplo.com,(13) 99999-0214,imobiliaria,novo,leads,chatbot,Google Maps,97,Automação,R$ 1-3k/mês,parceiro,Praia Grande,
-215,Barra Elite,Peruíbe,Marcelo Barros,Sócio,contato215@exemplo.com,(13) 99999-0215,construtora,novo,conteudo,anuncios,LinkedIn,76,SEO local,R$ 0.5-2k/mês,direto,Peruíbe,
-216,Santos Prime,Santos,Helena Vaz,Gerente,contato216@exemplo.com,(13) 99999-0216,construtora,novo,leads,chatbot,Google Maps,99,Aumentar captação,R$ 1-4k/mês,parceiro,Santos,
-217,Guarujá Prime,Guarujá,Igor Barros,Corretor-chefe,contato217@exemplo.com,(13) 99999-0217,imobiliaria,novo,conversao,seo,Instagram,88,SEO local,R$ 0.5-2k/mês,direto,Guarujá,
-218,Bertioga Prime,Bertioga,Monique Rocha,Responsável,contato218@exemplo.com,(13) 99999-0218,gestor,novo,atendimento,avaliacao,LinkedIn,82,Relatórios,R$ 1-3k/mês,formal,Bertioga,
-219,Praia Grande Prime,Praia Grande,Rodrigo Dias,Sócio,contato219@exemplo.com,(13) 99999-0219,construtora,novo,anuncios,anuncios,Portais,66,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,
-220,São Vicente Prime,São Vicente,Priscila Nunes,Corretor-chefe,contato220@exemplo.com,(13) 99999-0220,imobiliaria,novo,conteudo,seo,Google Maps,62,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,
+id,nome_da_imobiliaria,cidade,pessoa_de_contato,cargo,email,whatsapp,perfil,status,dor_principal,diferencial,fonte,pontuacao_lead,objetivo_90_dias,orcamento_estimado,tom,cidade_ref,created_at,_score
+51,Litoral Premium Sant,Santos,Roberto Dias,Diretor,contato36@exemplo.com,(13) 99999-0036,construtora,novo,conversao,chatbot,Google Maps,91,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24
+66,Santos Ocean View,Santos,Tatiane Moreira,Gerente,contato66@exemplo.com,(13) 99999-0066,construtora,novo,leads,chatbot,Google Maps,93,Automação,R$ 1-3k/mês,parceiro,Santos,,24
+76,Santos Premium Digital,Santos,Viviane Paes,Gerente,contato76@exemplo.com,(13) 99999-0076,construtora,novo,leads,chatbot,Google Maps,94,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24
+91,Santos Tower Imóveis,Santos,Helena Vaz,Gerente,contato91@exemplo.com,(13) 99999-0091,construtora,novo,leads,chatbot,Google Maps,96,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24
+101,Santos Luxo,Santos,Isabela Fernandes,Gerente,contato101@exemplo.com,(13) 99999-0101,construtora,novo,leads,chatbot,Google Maps,95,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24
+121,Santos Smart Home,Santos,Mariana Costa,Gerente,contato121@exemplo.com,(13) 99999-0121,construtora,novo,leads,chatbot,Google Maps,97,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24
+141,Santos Executive,Santos,Roberto Dias,Gerente,contato141@exemplo.com,(13) 99999-0141,construtora,novo,leads,chatbot,Google Maps,97,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24
+161,Santos Bay Homes,Santos,Patrícia Gomes,Gerente,contato161@exemplo.com,(13) 99999-0161,construtora,novo,leads,chatbot,Google Maps,96,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24
+176,Santos Launch,Santos,Renata Almeida,Gerente,contato176@exemplo.com,(13) 99999-0176,construtora,novo,leads,chatbot,Google Maps,97,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24
+186,Santos Platinum,Santos,Roberto Dias,Gerente,contato186@exemplo.com,(13) 99999-0186,construtora,novo,leads,chatbot,Google Maps,98,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24
+201,Santos Elite,Santos,Viviane Paes,Gerente,contato201@exemplo.com,(13) 99999-0201,construtora,novo,leads,chatbot,Google Maps,98,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24
+216,Santos Prime,Santos,Helena Vaz,Gerente,contato216@exemplo.com,(13) 99999-0216,construtora,novo,leads,chatbot,Google Maps,99,Aumentar captação,R$ 1-4k/mês,parceiro,Santos,,24
+8,Ocean Blue Digital,Guarujá,Maria Barros,Gerente,contato8@exemplo.com,(13) 99999-0008,construtora,novo,atendimento,chatbot,LinkedIn,84,Relatórios,R$ 1-3k/mês,direto,Guarujá,,23
+24,Praia Grande Imóveis,Praia Grande,Ricardo Barros,Sócio,contato24@exemplo.com,(13) 99999-0024,construtora,novo,leads,chatbot,Portais,81,Aumentar captação,R$ 1-3k/mês,parceiro,Praia Grande,,23
+41,Cibratel Imóveis,Itanhaém,Teresa Almeida,Sócia,contato41@exemplo.com,(13) 99999-0041,construtora,novo,atendimento,seo,Website,82,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,,23
+129,Riviera Business,Bertioga,Larissa Barros,Gerente,contato129@exemplo.com,(13) 99999-0129,construtora,novo,leads,anuncios,LinkedIn,80,SEO local,R$ 1-3k/mês,formal,Bertioga,,23
+184,Riviera Launch,Bertioga,Larissa Nunes,Gerente,contato184@exemplo.com,(13) 99999-0184,construtora,novo,leads,anuncios,LinkedIn,80,SEO local,R$ 1-3k/mês,formal,Bertioga,,23
+194,Riviera Platinum,Bertioga,Gustavo Nunes,Gerente,contato194@exemplo.com,(13) 99999-0194,construtora,novo,leads,anuncios,LinkedIn,81,SEO local,R$ 1-3k/mês,formal,Bertioga,,23
+209,Riviera Elite,Bertioga,Isabela Costa,Gerente,contato209@exemplo.com,(13) 99999-0209,construtora,novo,leads,anuncios,LinkedIn,82,SEO local,R$ 1-3k/mês,formal,Bertioga,,23
+6,Beta Imóveis Centro,Santos,Fernanda Nunes,Corretor-chefe,contato6@exemplo.com,(13) 99999-0006,construtora,novo,conversao,seo,Indicação,90,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,22
+10,Região Sul Praia,Peruíbe,Carlos Barros,Responsável,contato10@exemplo.com,(13) 99999-0010,construtora,novo,leads,anuncios,Google Maps,90,Automação,R$ 0.5-2k/mês,parceiro,Peruíbe,,22
+21,Litoral Norte Premium,Santos,Mariana Costa,Gerente,contato21@exemplo.com,(13) 99999-0021,construtora,novo,conversao,chatbot,Google Maps,72,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,22
+34,Caiçara Imóveis,Praia Grande,Luciana Souza,Corretor-chefe,contato34@exemplo.com,(13) 99999-0034,imobiliaria,novo,leads,chatbot,Google Maps,92,Automação,R$ 1-3k/mês,parceiro,Praia Grande,,22
+54,Praia Grande Norte,Praia Grande,Fernanda Lima,Responsável,contato39@exemplo.com,(13) 99999-0039,construtora,novo,leads,chatbot,Portais,78,Automação,R$ 1-3k/mês,parceiro,Praia Grande,,22
+59,Riviera Norte,Bertioga,Mariana Costa,Gerente,contato44@exemplo.com,(13) 99999-0044,construtora,novo,leads,anuncios,LinkedIn,71,SEO local,R$ 1-3k/mês,formal,Bertioga,,22
+64,Caiçara Norte,Praia Grande,Luciana Dias,Corretor-chefe,contato49@exemplo.com,(13) 99999-0049,imobiliaria,novo,leads,chatbot,Google Maps,95,Automação,R$ 1-3k/mês,parceiro,Praia Grande,,22
+74,Riviera Digital,Bertioga,Larissa Costa,Gerente,contato74@exemplo.com,(13) 99999-0074,construtora,novo,leads,anuncios,LinkedIn,73,SEO local,R$ 1-3k/mês,formal,Bertioga,,22
+89,Caiçara Digital,Praia Grande,Patrícia Lima,Corretor-chefe,contato89@exemplo.com,(13) 99999-0089,imobiliaria,novo,leads,chatbot,Google Maps,93,Automação,R$ 1-3k/mês,parceiro,Praia Grande,,22
+99,Riviera Exclusive,Bertioga,Natália Almeida,Gerente,contato99@exemplo.com,(13) 99999-0099,construtora,novo,leads,anuncios,LinkedIn,76,SEO local,R$ 1-3k/mês,formal,Bertioga,,22
+109,Riviera Exclusive,Bertioga,Larissa Gomes,Gerente,contato109@exemplo.com,(13) 99999-0109,construtora,novo,leads,anuncios,LinkedIn,79,SEO local,R$ 1-3k/mês,formal,Bertioga,,22
+114,Caiçara Imóveis,Praia Grande,Luciana Dias,Corretor-chefe,contato114@exemplo.com,(13) 99999-0114,imobiliaria,novo,leads,chatbot,Google Maps,94,Automação,R$ 1-3k/mês,parceiro,Praia Grande,,22
+134,Caiçara Conectada,Praia Grande,Marcelo Lima,Corretor-chefe,contato134@exemplo.com,(13) 99999-0134,imobiliaria,novo,leads,chatbot,Google Maps,95,Automação,R$ 1-3k/mês,parceiro,Praia Grande,,22
+149,Riviera Executive,Bertioga,Gustavo Nunes,Gerente,contato149@exemplo.com,(13) 99999-0149,construtora,novo,leads,anuncios,LinkedIn,76,SEO local,R$ 1-3k/mês,formal,Bertioga,,22
+154,Caiçara Executive,Praia Grande,Marcelo Dias,Corretor-chefe,contato154@exemplo.com,(13) 99999-0154,imobiliaria,novo,leads,chatbot,Google Maps,94,Automação,R$ 1-3k/mês,parceiro,Praia Grande,,22
+169,Riviera Exclusive,Bertioga,Larissa Ferreira,Gerente,contato169@exemplo.com,(13) 99999-0169,construtora,novo,leads,anuncios,LinkedIn,78,SEO local,R$ 1-3k/mês,formal,Bertioga,,22
+174,Caiçara Conectada,Praia Grande,Luciana Dias,Corretor-chefe,contato174@exemplo.com,(13) 99999-0174,imobiliaria,novo,leads,chatbot,Google Maps,95,Automação,R$ 1-3k/mês,parceiro,Praia Grande,,22
+199,Caiçara Platinum,Praia Grande,Marcelo Dias,Corretor-chefe,contato199@exemplo.com,(13) 99999-0199,imobiliaria,novo,leads,chatbot,Google Maps,96,Automação,R$ 1-3k/mês,parceiro,Praia Grande,,22
+212,Embaré Elite,Santos,Rafaela Nunes,Corretor-chefe,contato212@exemplo.com,(13) 99999-0212,construtora,novo,conversao,seo,Instagram,90,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,22
+214,Caiçara Elite,Praia Grande,Patrícia Lima,Corretor-chefe,contato214@exemplo.com,(13) 99999-0214,imobiliaria,novo,leads,chatbot,Google Maps,97,Automação,R$ 1-3k/mês,parceiro,Praia Grande,,22
+15,Prime Imóveis Digital,Guarujá,Ricardo Lima,Gerente,contato15@exemplo.com,(13) 99999-0015,construtora,novo,atendimento,avaliacao,Instagram,61,Relatórios,R$ 1-3k/mês,direto,Guarujá,,21
+19,Litoral Norte Imóveis,Santos,Renato Almeida,Diretor,contato19@exemplo.com,(13) 99999-0019,imobiliaria,novo,conversao,chatbot,Website,88,Relatórios,R$ 1-3k/mês,parceiro,Santos,,21
+29,Riviera Imóveis,Bertioga,Ana Barros,Gerente,contato29@exemplo.com,(13) 99999-0029,construtora,novo,leads,anuncios,LinkedIn,63,SEO local,R$ 1-3k/mês,formal,Bertioga,,21
+32,Boqueirão Imóveis,Santos,Paulo Mendes,Gerente,contato32@exemplo.com,(13) 99999-0032,construtora,novo,conversao,seo,Instagram,84,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,21
+62,Boqueirão Norte,Santos,Paulo Costa,Corretor-chefe,contato47@exemplo.com,(13) 99999-0047,construtora,novo,conversao,seo,Instagram,89,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,21
+84,Riviera Blue,Bertioga,Isabela Costa,Gerente,contato84@exemplo.com,(13) 99999-0084,construtora,novo,leads,anuncios,LinkedIn,66,SEO local,R$ 1-3k/mês,formal,Bertioga,,21
+87,Embaré Digital,Santos,Rafaela Nunes,Corretor-chefe,contato87@exemplo.com,(13) 99999-0087,construtora,novo,conversao,seo,Instagram,86,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,21
+106,Peruíbe Eco,Peruíbe,Thiago Rocha,Gerente,contato106@exemplo.com,(13) 99999-0106,gestor,novo,leads,chatbot,Indicação,91,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,,21
+111,Gonzaga Digital,Santos,Patrícia Ribeiro,Gerente,contato111@exemplo.com,(13) 99999-0111,imobiliaria,novo,atendimento,chatbot,Website,81,Aumentar captação,R$ 1-3k/mês,direto,Santos,,21
+112,Embaré Tech,Santos,Paulo Nunes,Corretor-chefe,contato112@exemplo.com,(13) 99999-0112,construtora,novo,conversao,seo,Instagram,88,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,21
+126,Peruíbe Natureza,Peruíbe,Carlos Dias,Gerente,contato126@exemplo.com,(13) 99999-0126,gestor,novo,leads,chatbot,Indicação,92,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,,21
+131,Gonzaga Smart,Santos,Bianca Martins,Gerente,contato131@exemplo.com,(13) 99999-0131,imobiliaria,novo,atendimento,chatbot,Website,82,Aumentar captação,R$ 1-3k/mês,direto,Santos,,21
+132,Embaré Conecta,Santos,Paulo Ferreira,Corretor-chefe,contato132@exemplo.com,(13) 99999-0132,construtora,novo,conversao,seo,Instagram,87,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,21
+146,Peruíbe Executive,Peruíbe,Amanda Souza,Gerente,contato146@exemplo.com,(13) 99999-0146,gestor,novo,leads,chatbot,Indicação,91,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,,21
+151,Gonzaga Executive,Santos,Fábio Costa,Gerente,contato151@exemplo.com,(13) 99999-0151,imobiliaria,novo,atendimento,chatbot,Website,82,Aumentar captação,R$ 1-3k/mês,direto,Santos,,21
+152,Embaré Executive,Santos,Patrícia Ferreira,Corretor-chefe,contato152@exemplo.com,(13) 99999-0152,construtora,novo,conversao,seo,Instagram,88,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,21
+166,Peruíbe Nature,Peruíbe,Gustavo Almeida,Gerente,contato166@exemplo.com,(13) 99999-0166,gestor,novo,leads,chatbot,Indicação,90,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,,21
+171,Gonzaga Digital,Santos,Bianca Martins,Gerente,contato171@exemplo.com,(13) 99999-0171,imobiliaria,novo,atendimento,chatbot,Website,83,Aumentar captação,R$ 1-3k/mês,direto,Santos,,21
+172,Embaré Tech,Santos,Paulo Nunes,Corretor-chefe,contato172@exemplo.com,(13) 99999-0172,construtora,novo,conversao,seo,Instagram,88,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,21
+181,Peruíbe Launch,Peruíbe,Gustavo Costa,Gerente,contato181@exemplo.com,(13) 99999-0181,gestor,novo,leads,chatbot,Indicação,91,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,,21
+191,Peruíbe Platinum,Peruíbe,Amanda Souza,Gerente,contato191@exemplo.com,(13) 99999-0191,gestor,novo,leads,chatbot,Indicação,92,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,,21
+196,Gonzaga Platinum,Santos,Fábio Costa,Gerente,contato196@exemplo.com,(13) 99999-0196,imobiliaria,novo,atendimento,chatbot,Website,84,Aumentar captação,R$ 1-3k/mês,direto,Santos,,21
+197,Embaré Platinum,Santos,Patrícia Ferreira,Corretor-chefe,contato197@exemplo.com,(13) 99999-0197,construtora,novo,conversao,seo,Instagram,89,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,21
+206,Peruíbe Elite,Peruíbe,Gustavo Henrique,Gerente,contato206@exemplo.com,(13) 99999-0206,gestor,novo,leads,chatbot,Indicação,93,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,,21
+211,Gonzaga Elite,Santos,Camila Ribeiro,Gerente,contato211@exemplo.com,(13) 99999-0211,imobiliaria,novo,atendimento,chatbot,Website,85,Aumentar captação,R$ 1-3k/mês,direto,Santos,,21
+31,Gonzaga Premium,Santos,Mariana Rocha,Corretor-chefe,contato31@exemplo.com,(13) 99999-0031,imobiliaria,novo,atendimento,chatbot,Website,77,Aumentar captação,R$ 1-3k/mês,direto,Santos,,20
+46,Rio Preto Sol,Peruíbe,Luciana Barros,Corretor-chefe,contato46@exemplo.com,(13) 99999-0046,imobiliaria,novo,atendimento,chatbot,Website,77,Relatórios,R$ 1-3k/mês,direto,Peruíbe,,20
+56,Peruíbe Norte,Peruíbe,Camila Souza,Gerente,contato41@exemplo.com,(13) 99999-0041,gestor,novo,atendimento,avaliacao,Indicação,82,Relatórios,R$ 1-3k/mês,parceiro,Peruíbe,,20
+61,Gonzaga Sul,Santos,Patrícia Almeida,Gerente,contato46@exemplo.com,(13) 99999-0046,imobiliaria,novo,atendimento,chatbot,Website,79,Aumentar captação,R$ 1-3k/mês,direto,Santos,,20
+71,Peruíbe Coast,Peruíbe,Felipe Nascimento,Gerente,contato71@exemplo.com,(13) 99999-0071,gestor,novo,leads,chatbot,Indicação,88,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,,20
+78,Bertioga Centro,Bertioga,Débora Almeida,Responsável,contato78@exemplo.com,(13) 99999-0078,gestor,novo,atendimento,avaliacao,LinkedIn,82,Relatórios,R$ 1-3k/mês,formal,Bertioga,,20
+81,Peruíbe Centro Digital,Peruíbe,Gustavo Henrique,Gerente,contato81@exemplo.com,(13) 99999-0081,gestor,novo,leads,chatbot,Indicação,87,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,,20
+86,Gonzaga Norte,Santos,Camila Ribeiro,Gerente,contato86@exemplo.com,(13) 99999-0086,imobiliaria,novo,atendimento,chatbot,Website,75,Aumentar captação,R$ 1-3k/mês,direto,Santos,,20
+96,Peruíbe Ecologic,Peruíbe,Humberto Costa,Gerente,contato96@exemplo.com,(13) 99999-0096,gestor,novo,leads,chatbot,Indicação,89,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,,20
+116,Santos Smart,Santos,Renato Lima,Gerente,contato116@exemplo.com,(13) 99999-0116,gestor,novo,leads,avaliacao,Google Maps,87,Automação,R$ 1-3k/mês,parceiro,Santos,,20
+136,Santos Connect,Santos,Juliano Mendes,Gerente,contato136@exemplo.com,(13) 99999-0136,gestor,novo,leads,avaliacao,Google Maps,89,Automação,R$ 1-3k/mês,parceiro,Santos,,20
+156,Santos Vision,Santos,Juliano Mendes,Gerente,contato156@exemplo.com,(13) 99999-0156,gestor,novo,leads,avaliacao,Google Maps,89,Automação,R$ 1-3k/mês,parceiro,Santos,,20
+188,Bertioga Platinum,Bertioga,Paulo Mendes,Responsável,contato188@exemplo.com,(13) 99999-0188,gestor,novo,atendimento,avaliacao,LinkedIn,80,Relatórios,R$ 1-3k/mês,formal,Bertioga,,20
+203,Bertioga Elite,Bertioga,Débora Almeida,Responsável,contato203@exemplo.com,(13) 99999-0203,gestor,novo,atendimento,avaliacao,LinkedIn,81,Relatórios,R$ 1-3k/mês,formal,Bertioga,,20
+218,Bertioga Prime,Bertioga,Monique Rocha,Responsável,contato218@exemplo.com,(13) 99999-0218,gestor,novo,atendimento,avaliacao,LinkedIn,82,Relatórios,R$ 1-3k/mês,formal,Bertioga,,20
+13,Mar & Sol Praia,Santos,Patrícia Barros,Corretor-chefe,contato13@exemplo.com,(13) 99999-0013,imobiliaria,novo,atendimento,chatbot,Instagram,64,Automação,R$ 1-4k/mês,direto,Santos,,19
+18,Mar & Sol Litoral,Santos,Luciana Souza,Sócio,contato18@exemplo.com,(13) 99999-0018,gestor,novo,leads,avaliacao,Google Maps,75,Mais conteúdo,R$ 1-3k/mês,parceiro,Santos,,19
+26,Peruíbe Sol,Peruíbe,Fernanda Costa,Responsável,contato26@exemplo.com,(13) 99999-0026,gestor,novo,atendimento,avaliacao,Indicação,76,Relatórios,R$ 1-3k/mês,parceiro,Peruíbe,,19
+39,Ponta da Praia,Santos,Marina Rocha,Gerente,contato39@exemplo.com,(13) 99999-0039,gestor,novo,leads,chatbot,Portais,78,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,19
+83,Itanhaém Norte,Itanhaém,Thiago Lima,Corretor-chefe,contato83@exemplo.com,(13) 99999-0083,imobiliaria,novo,anuncios,chatbot,Instagram,91,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,,19
+92,Guarujá Blue Tech,Guarujá,Igor Barros,Corretor-chefe,contato92@exemplo.com,(13) 99999-0092,imobiliaria,novo,conversao,seo,Instagram,81,SEO local,R$ 0.5-2k/mês,direto,Guarujá,,19
+93,Bertioga Riviera Tech,Bertioga,Monique Rocha,Responsável,contato93@exemplo.com,(13) 99999-0093,gestor,novo,atendimento,avaliacao,LinkedIn,74,Relatórios,R$ 1-3k/mês,formal,Bertioga,,19
+98,Itanhaém Premium,Itanhaém,Fábio Souza,Corretor-chefe,contato98@exemplo.com,(13) 99999-0098,imobiliaria,novo,anuncios,chatbot,Instagram,92,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,,19
+102,Guarujá Premium,Guarujá,Leonardo Azevedo,Corretor-chefe,contato102@exemplo.com,(13) 99999-0102,imobiliaria,novo,conversao,seo,Instagram,83,SEO local,R$ 0.5-2k/mês,direto,Guarujá,,19
+103,Bertioga Green,Bertioga,Fernanda Lopes,Responsável,contato103@exemplo.com,(13) 99999-0103,gestor,novo,atendimento,avaliacao,LinkedIn,77,Relatórios,R$ 1-3k/mês,formal,Bertioga,,19
+108,Itanhaém Premium,Itanhaém,Fábio Carvalho,Corretor-chefe,contato108@exemplo.com,(13) 99999-0108,imobiliaria,novo,anuncios,chatbot,Instagram,93,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,,19
+119,Praia Grande Smart,Praia Grande,Fernanda Rocha,Gerente,contato119@exemplo.com,(13) 99999-0119,construtora,novo,leads,anuncios,LinkedIn,68,Automação,R$ 0.5-2k/mês,formal,Praia Grande,,19
+122,Guarujá Conecta,Guarujá,Thiago Almeida,Corretor-chefe,contato122@exemplo.com,(13) 99999-0122,imobiliaria,novo,conversao,seo,Instagram,84,SEO local,R$ 0.5-2k/mês,direto,Guarujá,,19
+123,Bertioga Inovação,Bertioga,Fernanda Lima,Responsável,contato123@exemplo.com,(13) 99999-0123,gestor,novo,atendimento,avaliacao,LinkedIn,78,Relatórios,R$ 1-3k/mês,formal,Bertioga,,19
+128,Itanhaém Surf,Itanhaém,Gustavo Costa,Corretor-chefe,contato128@exemplo.com,(13) 99999-0128,imobiliaria,novo,anuncios,chatbot,Instagram,94,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,,19
+139,Praia Grande Relax,Praia Grande,Carla Nunes,Gerente,contato139@exemplo.com,(13) 99999-0139,construtora,novo,leads,anuncios,LinkedIn,69,Automação,R$ 0.5-2k/mês,formal,Praia Grande,,19
+142,Guarujá Executive,Guarujá,Marina Costa,Corretor-chefe,contato142@exemplo.com,(13) 99999-0142,imobiliaria,novo,conversao,seo,Instagram,84,SEO local,R$ 0.5-2k/mês,direto,Guarujá,,19
+143,Bertioga Executive,Bertioga,Paulo Mendes,Responsável,contato143@exemplo.com,(13) 99999-0143,gestor,novo,atendimento,avaliacao,LinkedIn,79,Relatórios,R$ 1-3k/mês,formal,Bertioga,,19
+148,Itanhaém Executive,Itanhaém,Larissa Barros,Corretor-chefe,contato148@exemplo.com,(13) 99999-0148,imobiliaria,novo,anuncios,chatbot,Instagram,93,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,,19
+159,Praia Grande Vision,Praia Grande,Carla Nunes,Gerente,contato159@exemplo.com,(13) 99999-0159,construtora,novo,leads,anuncios,LinkedIn,69,Automação,R$ 0.5-2k/mês,formal,Praia Grande,,19
+162,Guarujá Coast Imóveis,Guarujá,André Luiz,Corretor-chefe,contato162@exemplo.com,(13) 99999-0162,imobiliaria,novo,conversao,seo,Instagram,82,SEO local,R$ 0.5-2k/mês,direto,Guarujá,,19
+163,Bertioga Premium,Bertioga,Fernanda Costa,Responsável,contato163@exemplo.com,(13) 99999-0163,gestor,novo,atendimento,avaliacao,LinkedIn,77,Relatórios,R$ 1-3k/mês,formal,Bertioga,,19
+168,Itanhaém Premium,Itanhaém,Fábio Souza,Corretor-chefe,contato168@exemplo.com,(13) 99999-0168,imobiliaria,novo,anuncios,chatbot,Instagram,91,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,,19
+177,Guarujá Launch,Guarujá,Thiago Barros,Corretor-chefe,contato177@exemplo.com,(13) 99999-0177,imobiliaria,novo,conversao,seo,Instagram,85,SEO local,R$ 0.5-2k/mês,direto,Guarujá,,19
+178,Bertioga Launch,Bertioga,Fernanda Rocha,Responsável,contato178@exemplo.com,(13) 99999-0178,gestor,novo,atendimento,avaliacao,LinkedIn,79,Relatórios,R$ 1-3k/mês,formal,Bertioga,,19
+183,Itanhaém Launch,Itanhaém,Fábio Souza,Corretor-chefe,contato183@exemplo.com,(13) 99999-0183,imobiliaria,novo,anuncios,chatbot,Instagram,94,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,,19
+187,Guarujá Platinum,Guarujá,Marina Costa,Corretor-chefe,contato187@exemplo.com,(13) 99999-0187,imobiliaria,novo,conversao,seo,Instagram,86,SEO local,R$ 0.5-2k/mês,direto,Guarujá,,19
+193,Itanhaém Platinum,Itanhaém,Larissa Barros,Corretor-chefe,contato193@exemplo.com,(13) 99999-0193,imobiliaria,novo,anuncios,chatbot,Instagram,95,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,,19
+202,Guarujá Elite,Guarujá,Fábio Rocha,Corretor-chefe,contato202@exemplo.com,(13) 99999-0202,imobiliaria,novo,conversao,seo,Instagram,87,SEO local,R$ 0.5-2k/mês,direto,Guarujá,,19
+208,Itanhaém Elite,Itanhaém,Thiago Lima,Corretor-chefe,contato208@exemplo.com,(13) 99999-0208,imobiliaria,novo,anuncios,chatbot,Instagram,96,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,,19
+217,Guarujá Prime,Guarujá,Igor Barros,Corretor-chefe,contato217@exemplo.com,(13) 99999-0217,imobiliaria,novo,conversao,seo,Instagram,88,SEO local,R$ 0.5-2k/mês,direto,Guarujá,,19
+4,Norte Sul Praia,Guarujá,Ana Lima,Sócio,contato4@exemplo.com,(13) 99999-0004,gestor,novo,atendimento,seo,Portais,61,Mais conteúdo,R$ 1-3k/mês,formal,Guarujá,,18
+9,Ocean Blue Centro,Santos,Luciana Nunes,Gerente,contato9@exemplo.com,(13) 99999-0009,imobiliaria,novo,conteudo,chatbot,Portais,83,Automação,R$ 1-3k/mês,parceiro,Santos,,18
+16,Prime Imóveis Site,Peruíbe,Fernanda Souza,Corretor-chefe,contato16@exemplo.com,(13) 99999-0016,construtora,novo,conteudo,anuncios,Instagram,67,Automação,R$ 1-3k/mês,direto,Peruíbe,,18
+28,Itanhaém Mar,Itanhaém,Carlos Souza,Corretor-chefe,contato28@exemplo.com,(13) 99999-0028,imobiliaria,novo,anuncios,chatbot,Instagram,89,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,,18
+37,José Menino Premium,Santos,Paula Souza,Corretor-chefe,contato37@exemplo.com,(13) 99999-0037,imobiliaria,novo,conversao,seo,Google Maps,59,Relatórios,R$ 1-3k/mês,direto,Santos,,18
+43,Gaivota Imóveis,Itanhaém,Paula Torres,Corretor-chefe,contato43@exemplo.com,(13) 99999-0043,imobiliaria,novo,conversao,seo,Instagram,74,Mais conteúdo,R$ 0.5-2k/mês,direto,Itanhaém,,18
+50,Litoral Sul Imóveis,Santos,Carolina Mendes,Diretora,contato50@exemplo.com,(13) 99999-0050,imobiliaria,novo,conteudo,seo,LinkedIn,87,Automação,R$ 1-3k/mês,parceiro,Santos,,18
+58,Itanhaém Centro,Itanhaém,Luciana Barros,Corretor-chefe,contato43@exemplo.com,(13) 99999-0043,imobiliaria,novo,anuncios,chatbot,Instagram,86,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,,18
+67,Guarujá Blue,Guarujá,Eduardo Pires,Corretor-chefe,contato67@exemplo.com,(13) 99999-0067,imobiliaria,novo,conversao,seo,Instagram,77,SEO local,R$ 0.5-2k/mês,direto,Guarujá,,18
+68,Bertioga Riviera,Bertioga,Sofia Almeida,Responsável,contato68@exemplo.com,(13) 99999-0068,gestor,novo,atendimento,avaliacao,LinkedIn,69,Relatórios,R$ 1-3k/mês,formal,Bertioga,,18
+73,Itanhaém View,Itanhaém,Gustavo Lima,Corretor-chefe,contato73@exemplo.com,(13) 99999-0073,imobiliaria,novo,anuncios,chatbot,Instagram,85,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,,18
+118,Bertioga Smart,Bertioga,Ricardo Souza,Corretor-chefe,contato118@exemplo.com,(13) 99999-0118,imobiliaria,novo,anuncios,seo,Instagram,82,SEO local,R$ 1-3k/mês,parceiro,Bertioga,,18
+137,Guarujá Zen,Guarujá,Amanda Rocha,Responsável,contato137@exemplo.com,(13) 99999-0137,construtora,novo,conversao,chatbot,Website,51,Relatórios,R$ 0.5-2k/mês,direto,Guarujá,,18
+138,Bertioga Premium,Bertioga,André Luiz,Corretor-chefe,contato138@exemplo.com,(13) 99999-0138,imobiliaria,novo,anuncios,seo,Instagram,83,SEO local,R$ 1-3k/mês,parceiro,Bertioga,,18
+157,Guarujá Vision,Guarujá,Aline Barros,Responsável,contato157@exemplo.com,(13) 99999-0157,construtora,novo,conversao,chatbot,Website,50,Relatórios,R$ 0.5-2k/mês,direto,Guarujá,,18
+158,Bertioga Vision,Bertioga,Ricardo Souza,Corretor-chefe,contato158@exemplo.com,(13) 99999-0158,imobiliaria,novo,anuncios,seo,Instagram,83,SEO local,R$ 1-3k/mês,parceiro,Bertioga,,18
+1,Alpha Imóveis Praia,Santos,Carlos Lima,Gerente,contato1@exemplo.com,(13) 99999-0001,construtora,novo,atendimento,seo,Portais,40,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,17
+17,Região Sul Centro,Bertioga,Fernanda Rocha,Gerente,contato17@exemplo.com,(13) 99999-0017,gestor,novo,atendimento,anuncios,Portais,58,Automação,R$ 1-4k/mês,formal,Bertioga,,17
+22,Maresias Imóveis,Bertioga,Paulo Ribeiro,Corretor-chefe,contato22@exemplo.com,(13) 99999-0022,imobiliaria,novo,atendimento,seo,Instagram,68,Relatórios,R$ 0.5-2k/mês,direto,Bertioga,,17
+27,Mongaguá Atlântica,Mongaguá,Luciana Nunes,Gerente,contato27@exemplo.com,(13) 99999-0027,construtora,novo,conversao,seo,Portais,42,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,,17
+36,Vila Tupi Imóveis,Praia Grande,Renata Lima,Gerente,contato36@exemplo.com,(13) 99999-0036,gestor,novo,atendimento,chatbot,Website,71,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,,17
+44,Baixio Digital,Itanhaém,Ricardo Nunes,Responsável,contato44@exemplo.com,(13) 99999-0044,construtora,novo,leads,avaliacao,Google Maps,48,Aumentar captação,R$ 0.5-2k/mês,formal,Itanhaém,,17
+49,Jussara Digital,Mongaguá,Ricardo Souza,Responsável,contato49@exemplo.com,(13) 99999-0049,construtora,novo,leads,avaliacao,Google Ads,43,Aumentar captação,R$ 0.5-2k/mês,direto,Mongaguá,,17
+57,Mongaguá Sul,Mongaguá,Ricardo Nunes,Responsável,contato42@exemplo.com,(13) 99999-0042,construtora,novo,conversao,seo,Portais,44,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,,17
+65,Barra Peruíbe Sul,Peruíbe,Ricardo Almeida,Sócio,contato50@exemplo.com,(13) 99999-0050,construtora,novo,conteudo,anuncios,LinkedIn,74,SEO local,R$ 0.5-2k/mês,direto,Peruíbe,,17
+72,Mongaguá Beach,Mongaguá,Aline Torres,Responsável,contato72@exemplo.com,(13) 99999-0072,construtora,novo,conversao,seo,Portais,41,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,,17
+82,Mongaguá Centro,Mongaguá,Lívia Souza,Responsável,contato82@exemplo.com,(13) 99999-0082,construtora,novo,conversao,seo,Portais,46,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,,17
+90,Barra Norte,Peruíbe,Marcelo Barros,Sócio,contato90@exemplo.com,(13) 99999-0090,construtora,novo,conteudo,anuncios,LinkedIn,72,SEO local,R$ 0.5-2k/mês,direto,Peruíbe,,17
+97,Mongaguá Tropical,Mongaguá,Catarina Lima,Responsável,contato97@exemplo.com,(13) 99999-0097,construtora,novo,conversao,seo,Portais,43,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,,17
+107,Mongaguá Blue,Mongaguá,Camila Ferreira,Responsável,contato107@exemplo.com,(13) 99999-0107,construtora,novo,conversao,seo,Portais,45,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,,17
+115,Barra Norte,Peruíbe,Marcelo Almeida,Sócio,contato115@exemplo.com,(13) 99999-0115,construtora,novo,conteudo,anuncios,LinkedIn,73,SEO local,R$ 0.5-2k/mês,direto,Peruíbe,,17
+117,Guarujá Smart,Guarujá,Aline Barros,Responsável,contato117@exemplo.com,(13) 99999-0117,construtora,novo,conversao,chatbot,Website,49,Relatórios,R$ 0.5-2k/mês,direto,Guarujá,,17
+127,Mongaguá Relax,Mongaguá,Aline Souza,Responsável,contato127@exemplo.com,(13) 99999-0127,construtora,novo,conversao,seo,Portais,47,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,,17
+135,Barra Digital,Peruíbe,Fernanda Costa,Sócio,contato135@exemplo.com,(13) 99999-0135,construtora,novo,conteudo,anuncios,LinkedIn,75,SEO local,R$ 0.5-2k/mês,direto,Peruíbe,,17
+147,Mongaguá Executive,Mongaguá,Ricardo Rocha,Responsável,contato147@exemplo.com,(13) 99999-0147,construtora,novo,conversao,seo,Portais,44,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,,17
+155,Barra Executive,Peruíbe,Fernanda Costa,Sócio,contato155@exemplo.com,(13) 99999-0155,construtora,novo,conteudo,anuncios,LinkedIn,73,SEO local,R$ 0.5-2k/mês,direto,Peruíbe,,17
+167,Mongaguá Blue,Mongaguá,Camila Rocha,Responsável,contato167@exemplo.com,(13) 99999-0167,construtora,novo,conversao,seo,Portais,45,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,,17
+175,Barra Norte,Peruíbe,Marcelo Almeida,Sócio,contato175@exemplo.com,(13) 99999-0175,construtora,novo,conteudo,anuncios,LinkedIn,73,SEO local,R$ 0.5-2k/mês,direto,Peruíbe,,17
+182,Mongaguá Launch,Mongaguá,Camila Lima,Responsável,contato182@exemplo.com,(13) 99999-0182,construtora,novo,conversao,seo,Portais,46,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,,17
+192,Mongaguá Platinum,Mongaguá,Ricardo Rocha,Responsável,contato192@exemplo.com,(13) 99999-0192,construtora,novo,conversao,seo,Portais,47,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,,17
+200,Barra Platinum,Peruíbe,Fernanda Costa,Sócio,contato200@exemplo.com,(13) 99999-0200,construtora,novo,conteudo,anuncios,LinkedIn,75,SEO local,R$ 0.5-2k/mês,direto,Peruíbe,,17
+207,Mongaguá Elite,Mongaguá,Lívia Souza,Responsável,contato207@exemplo.com,(13) 99999-0207,construtora,novo,conversao,seo,Portais,48,Mais conteúdo,R$ 0.5-2k/mês,direto,Mongaguá,,17
+215,Barra Elite,Peruíbe,Marcelo Barros,Sócio,contato215@exemplo.com,(13) 99999-0215,construtora,novo,conteudo,anuncios,LinkedIn,76,SEO local,R$ 0.5-2k/mês,direto,Peruíbe,,17
+2,Região Sul Digital,Mongaguá,Ana Lima,Gerente,contato2@exemplo.com,(13) 99999-0002,construtora,novo,anuncios,anuncios,Indicação,63,Aumentar captação,R$ 0.5-2k/mês,direto,Mongaguá,,16
+3,Ocean Blue Digital,Santos,Maria Barros,Responsável,contato3@exemplo.com,(13) 99999-0003,gestor,novo,conversao,seo,Instagram,42,SEO local,R$ 1-3k/mês,parceiro,Santos,,16
+12,Norte Sul Site,São Vicente,Luciana Costa,Corretor-chefe,contato12@exemplo.com,(13) 99999-0012,gestor,novo,leads,avaliacao,Portais,64,Aumentar captação,R$ 0.5-2k/mês,formal,São Vicente,,16
+14,Sol & Mar Centro,Bertioga,Fernanda Nunes,Corretor-chefe,contato14@exemplo.com,(13) 99999-0014,construtora,novo,anuncios,relatorios,Instagram,61,Mais conteúdo,R$ 0.5-2k/mês,direto,Bertioga,,16
+35,Barra de Peruíbe,Peruíbe,Carlos Almeida,Sócio,contato35@exemplo.com,(13) 99999-0035,construtora,novo,conteudo,anuncios,LinkedIn,67,SEO local,R$ 0.5-2k/mês,direto,Peruíbe,,16
+48,Balneário Conchas,Mongaguá,Fernanda Lima,Gerente,contato48@exemplo.com,(13) 99999-0048,gestor,novo,conversao,chatbot,Instagram,69,SEO local,R$ 0.5-2k/mês,parceiro,Mongaguá,,16
+52,Maresias Tech,Bertioga,Juliana Mendes,Gerente,contato37@exemplo.com,(13) 99999-0037,imobiliaria,novo,atendimento,seo,Instagram,59,Relatórios,R$ 0.5-2k/mês,direto,Bertioga,,16
+77,Guarujá Norte Digital,Guarujá,Fábio Rocha,Corretor-chefe,contato77@exemplo.com,(13) 99999-0077,imobiliaria,novo,conversao,seo,Instagram,58,SEO local,R$ 0.5-2k/mês,direto,Guarujá,,16
+79,Praia Grande Sul,Praia Grande,Bruno Mendes,Sócio,contato79@exemplo.com,(13) 99999-0079,construtora,novo,anuncios,anuncios,Portais,63,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,,16
+104,Praia Grande Business,Praia Grande,André Luiz,Sócio,contato104@exemplo.com,(13) 99999-0104,construtora,novo,anuncios,anuncios,Portais,62,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,,16
+124,Praia Grande Estrutura,Praia Grande,Ricardo Nunes,Sócio,contato124@exemplo.com,(13) 99999-0124,construtora,novo,anuncios,anuncios,Portais,64,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,,16
+144,Praia Grande Executive,Praia Grande,Fernanda Lima,Sócio,contato144@exemplo.com,(13) 99999-0144,construtora,novo,anuncios,anuncios,Portais,62,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,,16
+164,Praia Grande Smart,Praia Grande,Ricardo Lima,Sócio,contato164@exemplo.com,(13) 99999-0164,construtora,novo,anuncios,anuncios,Portais,61,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,,16
+179,Praia Grande Launch,Praia Grande,Ricardo Mendes,Sócio,contato179@exemplo.com,(13) 99999-0179,construtora,novo,anuncios,anuncios,Portais,63,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,,16
+189,Praia Grande Platinum,Praia Grande,Fernanda Lima,Sócio,contato189@exemplo.com,(13) 99999-0189,construtora,novo,anuncios,anuncios,Portais,64,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,,16
+204,Praia Grande Elite,Praia Grande,Bruno Mendes,Sócio,contato204@exemplo.com,(13) 99999-0204,construtora,novo,anuncios,anuncios,Portais,65,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,,16
+219,Praia Grande Prime,Praia Grande,Rodrigo Dias,Sócio,contato219@exemplo.com,(13) 99999-0219,construtora,novo,anuncios,anuncios,Portais,66,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,,16
+5,Beta Imóveis Praia,São Vicente,Maria Rocha,Corretor-chefe,contato5@exemplo.com,(13) 99999-0005,imobiliaria,novo,conversao,chatbot,Instagram,45,SEO local,R$ 0.5-2k/mês,formal,São Vicente,,15
+7,Região Sul Digital,Bertioga,Ricardo Mendes,Responsável,contato7@exemplo.com,(13) 99999-0007,imobiliaria,novo,anuncios,avaliacao,LinkedIn,75,Mais conteúdo,R$ 0.5-2k/mês,parceiro,Bertioga,,15
+11,Imobiliária Litoral Litoral,Santos,Luciana Mendes,Gerente,contato11@exemplo.com,(13) 99999-0011,corretor,novo,conteudo,anuncios,Google Maps,70,Automação,R$ 1-3k/mês,formal,Santos,,15
+20,Costa Azul Imóveis,Praia Grande,Amanda Costa,Gerente,contato20@exemplo.com,(13) 99999-0020,construtora,novo,anuncios,anuncios,Google Ads,55,Aumentar captação,R$ 0.5-2k/mês,direto,Praia Grande,,15
+47,Vila São Paulo,Mongaguá,Paulo Almeida,Sócio,contato47@exemplo.com,(13) 99999-0047,construtora,novo,anuncios,seo,Portais,52,Mais conteúdo,R$ 0.5-2k/mês,formal,Mongaguá,,15
+69,Praia Grande Park,Praia Grande,Marcos Vinícius,Sócio,contato69@exemplo.com,(13) 99999-0069,construtora,novo,anuncios,anuncios,Portais,56,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,,15
+94,Praia Grande Center,Praia Grande,Rodrigo Dias,Sócio,contato94@exemplo.com,(13) 99999-0094,construtora,novo,anuncios,anuncios,Portais,59,Automação,R$ 0.5-2k/mês,parceiro,Praia Grande,,15
+38,Jardim Rio Branco,São Vicente,Ricardo Costa,Responsável,contato38@exemplo.com,(13) 99999-0038,construtora,novo,anuncios,avaliacao,Instagram,46,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,,14
+70,São Vicente Bay,São Vicente,Bianca Ramos,Corretor-chefe,contato70@exemplo.com,(13) 99999-0070,imobiliaria,novo,conteudo,seo,Google Maps,62,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,,14
+190,São Vicente Platinum,São Vicente,Carlos Almeida,Corretor-chefe,contato190@exemplo.com,(13) 99999-0190,imobiliaria,novo,conteudo,seo,Google Maps,60,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,,14
+205,São Vicente Elite,São Vicente,Carla Dias,Corretor-chefe,contato205@exemplo.com,(13) 99999-0205,imobiliaria,novo,conteudo,seo,Google Maps,61,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,,14
+220,São Vicente Prime,São Vicente,Priscila Nunes,Corretor-chefe,contato220@exemplo.com,(13) 99999-0220,imobiliaria,novo,conteudo,seo,Google Maps,62,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,,14
+25,São Vicente Premium,São Vicente,Patrícia Lima,Corretor-chefe,contato25@exemplo.com,(13) 99999-0025,imobiliaria,novo,conteudo,seo,Google Maps,55,Automação,R$ 0.5-2k/mês,formal,São Vicente,,13
+40,Agenor de Campos,Mongaguá,Lucas Mendes,Corretor-chefe,contato40@exemplo.com,(13) 99999-0040,imobiliaria,novo,conteudo,anuncios,LinkedIn,53,Automação,R$ 0.5-2k/mês,direto,Mongaguá,,13
+42,Jardim Grandesp,Itanhaém,Fábio Rocha,Gerente,contato42@exemplo.com,(13) 99999-0042,gestor,novo,anuncios,chatbot,Portais,66,SEO local,R$ 0.5-2k/mês,formal,Itanhaém,,13
+45,Itinguçu Imóveis,Peruíbe,Camila Costa,Gerente,contato45@exemplo.com,(13) 99999-0045,gestor,novo,conteudo,anuncios,LinkedIn,61,Automação,R$ 0.5-2k/mês,parceiro,Peruíbe,,13
+53,Guarujá Mar Digital,Guarujá,André Costa,Sócio,contato38@exemplo.com,(13) 99999-0038,gestor,novo,anuncios,anuncios,LinkedIn,67,SEO local,R$ 0.5-2k/mês,formal,Guarujá,,13
+55,São Vicente Sul,São Vicente,Paulo Rocha,Corretor-chefe,contato40@exemplo.com,(13) 99999-0040,imobiliaria,novo,conteudo,seo,Google Maps,53,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,,13
+80,São Vicente Norte,São Vicente,Carla Dias,Corretor-chefe,contato80@exemplo.com,(13) 99999-0080,imobiliaria,novo,conteudo,seo,Google Maps,51,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,,13
+95,São Vicente Green,São Vicente,Priscila Nunes,Corretor-chefe,contato95@exemplo.com,(13) 99999-0095,imobiliaria,novo,conteudo,seo,Google Maps,57,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,,13
+105,São Vicente Bay,São Vicente,Juliana Martins,Corretor-chefe,contato105@exemplo.com,(13) 99999-0105,imobiliaria,novo,conteudo,seo,Google Maps,58,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,,13
+125,São Vicente Conectada,São Vicente,Patrícia Mendes,Corretor-chefe,contato125@exemplo.com,(13) 99999-0125,imobiliaria,novo,conteudo,seo,Google Maps,59,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,,13
+145,São Vicente Executive,São Vicente,Carlos Almeida,Corretor-chefe,contato145@exemplo.com,(13) 99999-0145,imobiliaria,novo,conteudo,seo,Google Maps,58,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,,13
+165,São Vicente Connect,São Vicente,Carla Dias,Corretor-chefe,contato165@exemplo.com,(13) 99999-0165,imobiliaria,novo,conteudo,seo,Google Maps,57,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,,13
+180,São Vicente Launch,São Vicente,Carla Dias,Corretor-chefe,contato180@exemplo.com,(13) 99999-0180,imobiliaria,novo,conteudo,seo,Google Maps,59,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,,13
+23,Enseada Digital,Guarujá,Camila Torres,Responsável,contato23@exemplo.com,(13) 99999-0023,gestor,novo,anuncios,anuncios,LinkedIn,58,SEO local,R$ 0.5-2k/mês,formal,Guarujá,,12
+30,Tombo Imóveis,Guarujá,Ricardo Lima,Sócio,contato30@exemplo.com,(13) 99999-0030,gestor,novo,conteudo,seo,Google Maps,50,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,,12
+85,Tombo Digital,Guarujá,Alexandre Pires,Sócio,contato85@exemplo.com,(13) 99999-0085,gestor,novo,conteudo,seo,Google Maps,54,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,,12
+110,Tombo Beach,Guarujá,Rafael Almeida,Sócio,contato110@exemplo.com,(13) 99999-0110,gestor,novo,conteudo,seo,Google Maps,52,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,,12
+120,São Vicente Smart,São Vicente,Carlos Mendes,Sócio,contato120@exemplo.com,(13) 99999-0120,gestor,novo,conteudo,seo,Google Maps,55,Mais conteúdo,R$ 0.5-2k/mês,parceiro,São Vicente,,12
+130,Tombo Surf,Guarujá,Fábio Ribeiro,Sócio,contato130@exemplo.com,(13) 99999-0130,gestor,novo,conteudo,seo,Google Maps,53,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,,12
+140,São Vicente Premium,São Vicente,Rodrigo Almeida,Sócio,contato140@exemplo.com,(13) 99999-0140,gestor,novo,conteudo,seo,Google Maps,56,Mais conteúdo,R$ 0.5-2k/mês,parceiro,São Vicente,,12
+150,Tombo Executive,Guarujá,Bianca Martins,Sócio,contato150@exemplo.com,(13) 99999-0150,gestor,novo,conteudo,seo,Google Maps,53,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,,12
+160,São Vicente Vision,São Vicente,Rodrigo Almeida,Sócio,contato160@exemplo.com,(13) 99999-0160,gestor,novo,conteudo,seo,Google Maps,56,Mais conteúdo,R$ 0.5-2k/mês,parceiro,São Vicente,,12
+170,Tombo Beach,Guarujá,Rafael Barros,Sócio,contato170@exemplo.com,(13) 99999-0170,gestor,novo,conteudo,seo,Google Maps,54,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,,12
+185,Tombo Launch,Guarujá,Rafael Almeida,Sócio,contato185@exemplo.com,(13) 99999-0185,gestor,novo,conteudo,seo,Google Maps,55,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,,12
+195,Tombo Platinum,Guarujá,Bianca Martins,Sócio,contato195@exemplo.com,(13) 99999-0195,gestor,novo,conteudo,seo,Google Maps,56,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,,12
+210,Tombo Elite,Guarujá,Alexandre Pires,Sócio,contato210@exemplo.com,(13) 99999-0210,gestor,novo,conteudo,seo,Google Maps,57,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,,12
+60,Tombo Norte,Guarujá,Carlos Mendes,Sócio,contato45@exemplo.com,(13) 99999-0045,gestor,novo,conteudo,seo,Google Maps,48,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,,11
+75,Tombo Beach,Guarujá,Rafael Souza,Sócio,contato75@exemplo.com,(13) 99999-0075,gestor,novo,conteudo,seo,Google Maps,47,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,,11
+88,Catiapoã Sul,São Vicente,Daniel Almeida,Responsável,contato88@exemplo.com,(13) 99999-0088,gestor,novo,anuncios,avaliacao,Portais,41,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,,11
+100,Tombo Exclusive,Guarujá,Caio Ribeiro,Sócio,contato100@exemplo.com,(13) 99999-0100,gestor,novo,conteudo,seo,Google Maps,49,Automação,R$ 0.5-2k/mês,parceiro,Guarujá,,11
+133,Catiapoã Nature,São Vicente,Renata Almeida,Responsável,contato133@exemplo.com,(13) 99999-0133,gestor,novo,anuncios,avaliacao,Portais,40,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,,11
+173,Catiapoã Nature,São Vicente,Fernanda Costa,Responsável,contato173@exemplo.com,(13) 99999-0173,gestor,novo,anuncios,avaliacao,Portais,41,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,,11
+198,Catiapoã Platinum,São Vicente,Renata Almeida,Responsável,contato198@exemplo.com,(13) 99999-0198,gestor,novo,anuncios,avaliacao,Portais,42,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,,11
+213,Catiapoã Elite,São Vicente,Daniel Almeida,Responsável,contato213@exemplo.com,(13) 99999-0213,gestor,novo,anuncios,avaliacao,Portais,43,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,,11
+33,Catiapoã Digital,São Vicente,Fernanda Costa,Responsável,contato33@exemplo.com,(13) 99999-0033,gestor,novo,anuncios,avaliacao,Portais,39,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,,10
+63,Catiapoã Norte,São Vicente,Fernanda Rocha,Responsável,contato48@exemplo.com,(13) 99999-0048,gestor,novo,anuncios,avaliacao,Portais,36,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,,10
+113,Catiapoã Digital,São Vicente,Fernanda Costa,Responsável,contato113@exemplo.com,(13) 99999-0113,gestor,novo,anuncios,avaliacao,Portais,39,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,,10
+153,Catiapoã Executive,São Vicente,Renata Almeida,Responsável,contato153@exemplo.com,(13) 99999-0153,gestor,novo,anuncios,avaliacao,Portais,39,Mais conteúdo,R$ 0.5-2k/mês,formal,São Vicente,,10
