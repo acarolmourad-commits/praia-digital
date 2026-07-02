@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
-
+Disallow: /docs/
+Disallow: /scripts/
 Sitemap: https://acarolmourad-commits.github.io/praia-digital/sitemap.xml
