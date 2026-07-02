@@ -2,20 +2,21 @@ import os
 from pathlib import Path
 
 praia_root = Path(r"C:\Users\Carolina\praia-digital")
-blog_dir = praia_root / "blog"
+blog = praia_root / "blog"
 landing_dir = praia_root / "landing"
-blog_dir.mkdir(exist_ok=True)
+blog.mkdir(exist_ok=True)
 landing_dir.mkdir(exist_ok=True)
 
-TPL = """<!DOCTYPE html>
+HEAD = """<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>__T__</title>
 <meta name="description" content="__D__">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
-<style>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">"""
+
+STYLE = """<style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--ocean:#0077B6;--ocean-light:#00B4D8;--sand:#F4EBD0;--white:#FFF;--dark:#023047;--accent:#90E0EF;--purple:#6B21A8;--purple-light:#A855F7;--green:#16a34a;--amber:#d97706}
 body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--sand);color:var(--dark);line-height:1.6}
@@ -65,8 +66,8 @@ __CONTENT__
 </html>
 """
 
-def s(name, body):
-    return "<section class='section'><h2>" + name + "</h2><div style='margin-top:.8rem;'>" + body + "</div></section>\n"
+def s(name,body):
+    return "<section class='section'><h2>"+name+"</h2><div style='margin-top:.8rem;'>"+body+"</div></section>\n"
 
 def cs(items):
     out=["<div class='grid' style='margin-top:1rem;'>"]
@@ -78,6 +79,12 @@ def cs(items):
 def cta(title,body,buttons):
     btns="".join(['<a class="btn '+b[0]+'" href="'+b[1]+'">'+b[2]+'</a>' for b in buttons])
     return s(title, '<div class="cta"><h2>Acelere seus resultados com IA</h2><p>'+body+'</p><div style="display:inline-flex;gap:1rem;flex-wrap:wrap;justify-content:center;">'+btns+'</div><p style="margin-top:1rem;opacity:.9;">Ferramentas e serviços gratuitos em: <a href="https://praia.digital" style="color:#fff;text-decoration:underline;">https://praia.digital</a></p></div>')
+
+def page(*, path,title,desc,h1,hero,pills,subject,cta1,cta2,wa,content):
+    html = TPL.replace("__T__", title).replace("__D__", desc).replace("__H1__", h1).replace("__HERO__", hero).replace("__PILLS__", "".join(['<span class="pill">'+x+'</span>' for x in pills.split(",")])).replace("__SUBJECT__", subject).replace("__CTA1__", cta1).replace("__CTA2__", cta2).replace("__WA__", wa).replace("__CONTENT__", content)
+    out = praia_root / path
+    out.write_text(html, encoding="utf-8")
+    print("OK", path, len(html.splitlines()))
 
 pages = []
 
@@ -131,11 +138,11 @@ pages.append(dict(
             ("💰 Repartição","Percentual por lead qualificado ou contrato, sem obrigação longa.")
           ])),
         s("Riscos e como mitigar",
-          "<blockquote>Risco não é técnico, é operacional: se a imobiliária não enviar dados e fotos, o conteúdo sai genérico. Mitigamos com checklist de entrada e taxa mínima de material por semana. Zero surpresa.</blockquote>"),
+          "<blockquote>Risco não é técnico, é operacional: se a imobiliária não enviar dados e fotos, o conteúdo sai genérico. Mitigamos com checklist de entrada e mínimo de material por semana. Zero surpresa.</blockquote>"),
         cta("Quero propor ganho compartilhado",
             "Sem taxa fixa, sem fidelidade longa: resultados primeiro.",
             [("btn-primary","mailto:comercial@praiadigital.com?subject=Parceria ganho compartilhado imobiliaria","Propor ganho compartilhado"),
-             ("btn-purple","https://wa.me/5511954346288?text=Quero parceria ganho compartilhado","WhatsApp")])
+             ("btn-purple","https://wa.me/5511954346288?text=Quero parceria com ganho compartilhado","WhatsApp")])
     ])
 ))
 
@@ -198,16 +205,10 @@ pages.append(dict(
 ))
 
 for p in pages:
-    html = TPL.replace("__T__", p["title"])\
-              .replace("__D__", p["desc"])\
-              .replace("__H1__", p["h1"])\
-              .replace("__HERO__", p["hero"])\
-              .replace("__PILLS__", "".join(["<span class='pill'>"+x+"</span>" for x in p["pills"].split(",")]))\
-              .replace("__SUBJECT__", p["subject"])\
-              .replace("__CTA1__", p["cta1"])\
-              .replace("__CTA2__", p["cta2"])\
-              .replace("__WA__", p["wa"])\
-              .replace("__CONTENT__", p["content"])
+    html = HEAD+STYLE.replace("__T__", p["title"]).replace("__D__", p["desc"]).replace("__H1__", p["h1"]).replace("__HERO__", p["hero"]).replace("__PILLS__", "".join(['<span class="pill">'+x+'</span>' for x in p["pills"].split(",")])).replace("__SUBJECT__", p["subject"]).replace("__CTA1__", p["cta1"]).replace("__CTA2__", p["cta2"]).replace("__WA__", p["wa"]).replace("__CONTENT__", p["content"])
     out = praia_root / p["path"]
     out.write_text(html, encoding="utf-8")
     print("OK", p["path"], len(html.splitlines()), "lines")
+
+# Fix seed_landings.py syntax by re-generating from current source if needed
+print("done")
