@@ -1,0 +1,13 @@
+id,nome_da_imobiliaria,cidade,pessoa_de_contato,cargo,email,whatsapp,perfil,status,dor_principal,diferencial,fonte,pontuacao_lead,objetivo_90_dias,orcamento_estimado,tom,cidade_ref,created_at
+1,Alpha Imóveis Praia,Santos,Carlos Lima,Gerente,contato1@exemplo.com,(13) 99999-0001,construtora,novo,atendimento,seo,Portais,40,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,
+2,Região Sul Digital,Mongaguá,Ana Lima,Gerente,contato2@exemplo.com,(13) 99999-0002,construtora,novo,anuncios,anuncios,Indicação,63,Aumentar captação,R$ 0.5-2k/mês,direto,Mongaguá,
+3,Ocean Blue Digital,Santos,Maria Barros,Responsável,contato3@exemplo.com,(13) 99999-0003,gestor,novo,conversao,seo,Instagram,42,SEO local,R$ 1-3k/mês,parceiro,Santos,
+4,Norte Sul Praia,Guarujá,Ana Lima,Sócio,contato4@exemplo.com,(13) 99999-0004,gestor,novo,atendimento,seo,Portais,61,Mais conteúdo,R$ 1-3k/mês,formal,Guarujá,
+5,Beta Imóveis Praia,São Vicente,Maria Rocha,Corretor-chefe,contato5@exemplo.com,(13) 99999-0005,imobiliaria,novo,conversao,chatbot,Instagram,45,SEO local,R$ 0.5-2k/mês,formal,São Vicente,
+6,Beta Imóveis Centro,Santos,Fernanda Nunes,Corretor-chefe,contato6@exemplo.com,(13) 99999-0006,construtora,novo,conversao,seo,Indicação,90,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,
+7,Região Sul Digital,Bertioga,Ricardo Mendes,Responsável,contato7@exemplo.com,(13) 99999-0007,imobiliaria,novo,anuncios,avaliacao,LinkedIn,75,Mais conteúdo,R$ 0.5-2k/mês,parceiro,Bertioga,
+8,Ocean Blue Digital,Guarujá,Maria Barros,Gerente,contato8@exemplo.com,(13) 99999-0008,construtora,novo,atendimento,chatbot,LinkedIn,84,Relatórios,R$ 1-3k/mês,direto,Guarujá,
+9,Ocean Blue Centro,Santos,Luciana Nunes,Gerente,contato9@exemplo.com,(13) 99999-0009,imobiliaria,novo,conteudo,chatbot,Portais,83,Automação,R$ 1-3k/mês,parceiro,Santos,
+10,Região Sul Praia,Peruíbe,Carlos Barros,Responsável,contato10@exemplo.com,(13) 99999-0010,construtora,novo,leads,anuncios,Google Maps,90,Automação,R$ 0.5-2k/mês,parceiro,Peruíbe,
+11,Imobiliária Litoral Litoral,Santos,Luciana Mendes,Gerente,contato11@exemplo.com,(13) 99999-0011,corretor,novo,conteudo,anuncios,Google Maps,70,Automação,R$ 1-3k/mês,formal,Santos,
+12,Norte Sul Site,São Vicente,Luciana Costa,Corretor-chefe,contato12@exemplo.com,(13) 99999-0012,gestor,novo,leads,avaliacao,Portais,64,Aumentar captação,R$ 0.5-2k/mês,formal,São Vicente,
