@@ -1,0 +1,91 @@
+=== KIT DE PROSPECÇÃO B2B — PRAIA DIGITAL ===
+
+1) PRIMEIRO CONTATO (copiar e colar no e-mail)
+Assunto: Parceria B2B em IA — solução prática para a sua imobiliária
+
+Olá, [Nome],
+
+Escrevo como CEO da Praia Digital para propor uma colaboração direta para a [Nome da imobiliária] em [Cidade].
+
+Somos a primeira plataforma do litoral paulista com IA aplicada a imóveis de praia. Hoje ajudamos empresas do setor a captar leads qualificados e fechar mais negócios, sem alterar o site atual.
+
+Serviços que ajudam [Cidade] e região:
+• Chatbot 24h no site: atendimento automático com qualificação de leads
+• Avaliação automática: relatórios com preço justo e scoring de oportunidade
+• SEO local: mais visitas qualificadas por cidade/bairro
+• Anúncios com IA: descrições profissionais para portais e temporada
+• Relatórios mensais: valorização por bairro para compartilhar com clientes
+
+Ferramentas gratuitas para validação prévia: https://praia.digital
+
+Convido você a experimentar sem custo. Se fizer sentido, proponho uma demonstração de 20 minutos.
+
+Atenciosamente,
+Carolina Mourad
+CEO — Praia Digital
+(11) 95434-6288 | comercial@praia.digital
+https://praia.digital
+
+2) FOLLOW-UP 1 (D+2)
+Assunto: Dúvida rápida sobre [Nome da imobiliária] — proposta enxuta + risco zero
+
+Olá, [Nome],
+
+Só passando para checar: você já viu minha mensagem anterior?
+
+Para avançar rápido, já adianto 3 condições:
+• Prazo curto: 7-14 dias
+• Integração simples: sem redesign
+• Risco zero: piloto 30 dias sem fidelidade
+
+Ferramentas gratuitas: https://praia.digital
+
+Se fizer sentido, responda "quero" e eu envio proposta customizada em 24h.
+
+Abraço,
+Carolina Mourad
+CEO — Praia Digital
+
+3) FOLLOW-UP 2 (D+5)
+Assunto: [Nome], vamos fazer um piloto de 30 dias?
+
+Olá, [Nome],
+
+Quero facilitar a decisão: proponho um piloto de 30 dias sem fidelidade, com medição de leads qualificados e taxa de conversão.
+
+Se após 30 dias não perceber valor, não continuamos. Sem risco.
+
+Ferramentas gratuitas: https://praia.digital
+
+Se fizer sentido, responda este e-mail ou chame no WhatsApp: (11) 95434-6288.
+
+Abraço,
+Carolina Mourad
+
+4) FOLLOW-UP 3 (D+10) — Gatilho social
+Assunto: [Cidade] — valorização e demanda em alta
+
+Olá, [Nome],
+
+Compartilho um dado do nosso relatório de mercado: [Cidade] tem recebido buscas qualificadas por imóveis de temporada e investimento.
+
+Isso gera uma oportunidade para quem usa conteúdo e IA na captação.
+
+Ferramentas gratuitas: https://praia.digital
+
+Quer que eu envie o relatório completo da sua cidade?
+
+Abraço,
+Carolina Mourad
+
+=== COMO ENVIAR AGORA ===
+1. Abra o arquivo outreach/index.html no navegador
+2. Clique em "Abrir e-mail" para o lead desejado
+3. Cole a copy, ajuste o nome/cidade e envie
+
+=== PROXIMO PASSO AUTOMATICO ===
+Quando quiser enviar automaticamente, basta editar o arquivo scripts/outreach_smtp.py com:
+- SMTP_HOST, SMTP_PORT
+- EMAIL_FROM, EMAIL_LOGIN
+- EMAIL_PASSWORD (app-password)
+E executar: python scripts/outreach_smtp.py
