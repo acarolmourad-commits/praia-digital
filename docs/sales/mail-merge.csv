@@ -259,3 +259,33 @@ id,nome_da_imobiliaria,cidade,pessoa_de_contato,email,perfil,dor_principal,difer
 258,Sol & Mar Digital,Itanhaém,Ricardo Mendes,contato258@exemplo.com,corretor,atendimento,trabalho,66,Automação,R$ 2-5k/mês,parceiro
 259,Alpha Imóveis View,São Vicente,Luciana Lima,contato259@exemplo.com,administradora,anuncios,relatorios,74,Lançamento,R$ 0.5-2k/mês,direto
 260,Santos Tower Digital,São Vicente,Carlos Barros,contato260@exemplo.com,administradora,conteudo,anuncios,86,Temporada,R$ 1-4k/mês,parceiro
+261,Mar & Sol Digital,Peruíbe,Juliana Rocha,contato261@exemplo.com,construtora,lancamento,chatbot,69,Temporada,R$ 0.5-2k/mês,formal
+262,Ocean Blue Prime,Mongaguá,João Alves,contato262@exemplo.com,administradora,temporada,prompt,74,SEO local,R$ 2-5k/mês,formal
+263,Litoral Premium Imóveis,Itanhaém,Luciana Gomes,contato263@exemplo.com,imobiliaria,anuncios,seo,93,Relatórios,R$ 1-3k/mês,formal
+264,Barra Digital Site,Peruíbe,Fernanda Nunes,contato264@exemplo.com,imobiliaria,midia,trabalho,91,Vendas,R$ 0.5-2k/mês,direto
+265,Beta Imóveis Site,Guarujá,Maria Costa,contato265@exemplo.com,imobiliaria,conversao,trabalho,73,Relatórios,R$ 1-4k/mês,parceiro
+266,Caiçara Digital View,Peruíbe,Ana Rocha,contato266@exemplo.com,administradora,anuncios,prompt,70,Aumentar captação,R$ 1-3k/mês,formal
+267,Porto da Lua Site,São Vicente,Maria Rocha,contato267@exemplo.com,corretor,conversao,relatorios,73,Automação,R$ 0.5-2k/mês,parceiro
+268,Alpha Imóveis Centro,Guarujá,Luciana Silva,contato268@exemplo.com,administradora,lancamento,automacao,75,Vendas,R$ 0.5-2k/mês,parceiro
+269,Santos Tower Blue,Bertioga,Carlos Alves,contato269@exemplo.com,corretor,temporada,video,95,Relatórios,R$ 1-3k/mês,formal
+270,Prime Imóveis Digital,Itanhaém,Renata Nunes,contato270@exemplo.com,administradora,lancamento,automacao,66,Lançamento,R$ 0.5-2k/mês,formal
+271,Costa Azul Site,Itanhaém,Fernanda Rocha,contato271@exemplo.com,corretor,lancamento,avaliacao,84,Mais conteúdo,R$ 0.5-2k/mês,direto
+272,Praia Grande Site Imóveis,Peruíbe,Ricardo Gomes,contato272@exemplo.com,imobiliaria,conversao,automacao,96,Mais conteúdo,R$ 0.5-2k/mês,formal
+273,Mar & Sol Site,Peruíbe,Ricardo Souza,contato273@exemplo.com,gestor,leads,relatorios,92,Relatórios,R$ 1-3k/mês,parceiro
+274,Ocean Blue Centro,Peruíbe,João Lima,contato274@exemplo.com,corretor,midia,dados,85,SEO local,R$ 0.5-2k/mês,formal
+275,Ocean Blue Imóveis,Bertioga,Renata Mendes,contato275@exemplo.com,imobiliaria,atendimento,avaliacao,66,Relatórios,R$ 1-3k/mês,direto
+276,Norte Imóveis View,Mongaguá,Bruno Gomes,contato276@exemplo.com,administradora,atendimento,chatbot,83,Vendas,R$ 1-4k/mês,parceiro
+277,Ocean Blue View,Bertioga,Marcelo Mendes,contato277@exemplo.com,corretor,lancamento,avaliacao,76,Relatórios,R$ 0.5-2k/mês,formal
+278,Riviera Blue Site,Praia Grande,Fernanda Barros,contato278@exemplo.com,administradora,lancamento,anuncios,97,Automação,R$ 1-3k/mês,parceiro
+279,Caiçara Digital View,Itanhaém,Ana Pereira,contato279@exemplo.com,gestor,temporada,automacao,69,Vendas,R$ 0.5-2k/mês,direto
+280,Porto da Lua Blue,Itanhaém,Ana Pereira,contato280@exemplo.com,construtora,conversao,prompt,65,Aumentar captação,R$ 1-3k/mês,parceiro
+281,Riviera Blue Blue,São Vicente,Marcelo Souza,contato281@exemplo.com,gestor,atendimento,chatbot,96,Lançamento,R$ 0.5-2k/mês,formal
+282,Prime Imóveis Centro,Santos,Fernanda Pereira,contato282@exemplo.com,gestor,leads,prompt,80,Relatórios,R$ 2-5k/mês,direto
+283,Recife Imóveis Blue,Mongaguá,Renata Souza,contato283@exemplo.com,gestor,leads,trabalho,87,Mais conteúdo,R$ 1-3k/mês,formal
+284,Norte Sul Centro,Praia Grande,João Rocha,contato284@exemplo.com,gestor,midia,anuncios,91,Lançamento,R$ 0.5-2k/mês,formal
+285,Costa Azul Digital,Mongaguá,Maria Barros,contato285@exemplo.com,gestor,anuncios,dados,78,Lançamento,R$ 2-5k/mês,formal
+286,Praia Grande Site Site,São Vicente,Marcelo Pereira,contato286@exemplo.com,administradora,midia,relatorios,82,Automação,R$ 1-4k/mês,direto
+287,Itanhaém Premium Blue,Bertioga,Ana Alves,contato287@exemplo.com,corretor,conteudo,seo,68,SEO local,R$ 0.5-2k/mês,direto
+288,Praia Grande Site Litoral,Guarujá,Fernanda Costa,contato288@exemplo.com,administradora,conteudo,trabalho,90,Temporada,R$ 0.5-2k/mês,parceiro
+289,Edifica Praia Imóveis,Bertioga,Fernanda Alves,contato289@exemplo.com,administradora,leads,automacao,92,Temporada,R$ 1-4k/mês,formal
+290,Prime Imóveis Litoral,Guarujá,Maria Costa,contato290@exemplo.com,imobiliaria,conteudo,prompt,82,Lançamento,R$ 1-3k/mês,formal
