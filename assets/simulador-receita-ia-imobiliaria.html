@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ferramenta gratuita: simulador de receita com IA para imobiliárias</title>
+  <meta name="description" content="Simule receita imobiliária com IA e descubra o impacto potencial de automação, leads qualificados e atendimento 24/7 no litoral." />
+  <meta name="keywords" content="simulador receita imobiliária, receita imobiliária IA, ferramenta gratuita imobiliária, automação imobiliária" />
+  <link rel="canonical" href="https://praia.digital/assets/simulador-receita-ia-imobiliaria.html" />
+  <style>
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4EBD0;color:#023047;margin:0;padding:2rem;}
+    .card{max-width:760px;margin:0 auto;background:#fff;padding:1.5rem;border-radius:20px;box-shadow:0 6px 24px rgba(0,0,0,0.06);}
+    label{display:block;font-weight:700;margin-top:0.8rem;font-size:0.9rem;}
+    input,select{width:100%;padding:.7rem 1rem;border:2px solid #e0e0e0;border-radius:12px;margin-top:.3rem;font-size:1rem;}
+    button{margin-top:1rem;padding:.8rem 1.2rem;background:#0077B6;color:#fff;border:none;border-radius:50px;font-weight:700;cursor:pointer;}
+    .result{margin-top:1rem;background:#f8fafc;border:1px solid #e1e7ed;padding:1rem;border-radius:12px;}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Simulador de receita com IA</h1>
+    <p>Estime receita, ganhos com atendimento 24h e redução de perda de leads.</p>
+    <label>Leads por mês</label>
+    <input id="leads" placeholder="Ex: 120" />
+    <label>Ticket médio (R$)</label>
+    <input id="ticket" placeholder="Ex: 25000" />
+    <label>Taxa de conversão atual (%)</label>
+    <input id="conversion" placeholder="Ex: 2" />
+    <label>Aplicar IA? </label>
+    <select id="ia"><option value="0">Não</option><option value="0.25">Sim: +25% conversão</option><option value="0.4">Sim: +40% conversão</option></select>
+    <button onclick="simulate()">Simular</button>
+    <div id="out" class="result" style="display:none;"></div>
+  </div>
+  <script>
+    function simulate(){
+      const leads=Number(document.getElementById('leads').value||0);
+      const ticket=Number(document.getElementById('ticket').value||0);
+      const conv=Number(document.getElementById('conversion').value||0);
+      const boost=Number(document.getElementById('ia').value||0);
+      const base=(ticket*conv*leads)/100;
+      const boosted=ticket*(conv+conv*boost)*leads/100;
+      const out=document.getElementById('out');
+      out.innerHTML='<div>Receita atual: <b>R$ '+base.toLocaleString('pt-BR')+'</b></div><div>Com IA: <b>R$ '+boosted.toLocaleString('pt-BR')+'</b></div><div>Ganho estimado: <b>R$ '+(boosted-base).toLocaleString('pt-BR')+'</b></div>';
+      out.style.display='block';
+    }
+  </script>
+</body>
+</html>
