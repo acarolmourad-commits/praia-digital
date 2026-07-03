@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Captação de Leads Imobiliária</title>
+  <meta name="description" content="Simule sua captação de leads e ROI com a calculadora gratuita da Praia Digital.">
+  <style>
+    :root{--bg:#f5f7fb;--panel:#ffffff;--accent:#2563eb;--muted:#6b7280;--line:#e5e7eb}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#0f172a;padding:22px}
+    .container{max-width:960px;margin:0 auto}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;margin:16px 0;box-shadow:0 4px 12px rgba(15,23,42,0.08)}
+    h1{font-size:22px;margin-bottom:8px}
+    p{color:var(--muted);margin:6px 0 14px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    label{display:block;font-weight:600;font-size:13px;margin:8px 0 6px}
+    input,select{width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:#fff;color:#0f172a}
+    .actions{display:flex;gap:10px;margin-top:14px}
+    button{background:var(--accent);color:#fff;border:none;padding:12px 14px;border-radius:10px;font-weight:600;cursor:pointer}
+    .result{background:#0b1220;color:#fff;border-radius:12px;padding:18px;margin-top:8px}
+    .stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+    .stat h3{font-size:22px}
+    .stat span{color:#94a3b8;font-size:12px}
+    footer{margin-top:22px;text-align:center;color:var(--muted);font-size:12px}
+    @media(max-width:720px){.grid,.stats{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Calculadora de Captação de Leads Imobiliária</h1>
+      <p>Modelo rápido para planejamento de metas, CPL estimado e impacto em oportunidades.</p>
+
+      <div class="grid">
+        <div>
+          <label for="investimento">Investimento mensal em mídia (R$)</label>
+          <input id="investimento" type="number" value="3000" min="0">
+
+          <label for="cpl" style="margin-top:10px">CPL médio estimado (R$)</label>
+          <input id="cpl" type="number" value="35" min="1">
+
+          <label for="taxa" style="margin-top:10px">Taxa de qualificação (%)</label>
+          <input id="taxa" type="number" value="18" min="0" max="100">
+
+          <label for="fechamento" style="margin-top:10px">Fechamento (%)</label>
+          <input id="fechamento" type="number" value="8" min="0" max="100">
+        </div>
+
+        <div>
+          <label for="ticket">Ticket médio (R$)</label>
+          <input id="ticket" type="number" value="350000" min="0">
+
+          <div class="actions">
+            <button onclick="calcular()">Calcular</button>
+            <button onclick="limpar()" style="background:#475569">Limpar</button>
+          </div>
+
+          <div class="result" id="resultado" style="display:none">
+            <div class="stats">
+              <div class="stat"><h3 id="leads_brutos">0</h3><span>Leads brutos/mês</span></div>
+              <div class="stat"><h3 id="leads_qualificados">0</h3><span>Leads qualificados/mês</span></div>
+              <div class="stat"><h3 id="vendas">0</h3><span>Vendas estimadas/mês</span></div>
+              <div class="stat"><h3 id="receita">R$ 0</h3><span>Receita estimada/mês</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>Praia Digital — Ferramentas gratuitas para imobiliárias no litoral paulista.</footer>
+  </div>
+
+  <script>
+    const fmt = (n) => n.toLocaleString('pt-BR');
+    function calcular(){
+      const inv = Number(document.getElementById('investimento').value)||0;
+      const cpl = Number(document.getElementById('cpl').value)||1;
+      const taxa = Number(document.getElementById('taxa').value)||0;
+      const fech = Number(document.getElementById('fechamento').value)||0;
+      const ticket = Number(document.getElementById('ticket').value)||0;
+
+      const leads_brutos = Math.max(0, Math.floor(inv / Math.max(1,cpl)));
+      const leads_qualificados = Math.max(0, Math.floor(leads_brutos * (taxa/100)));
+      const vendas = leads_qualificados*(fech/100);
+      const receita = vendas*ticket;
+
+      document.getElementById('leads_brutos').textContent = fmt(leads_brutos);
+      document.getElementById('leads_qualificados').textContent = fmt(leads_qualificados);
+      document.getElementById('vendas').textContent = vendas.toFixed(1);
+      document.getElementById('receita').textContent = 'R$ ' + fmt(Math.round(receita));
+      document.getElementById('resultado').style.display = '';
+    }
+    function limpar(){
+      ['investimento','cpl','taxa','fechamento','ticket'].forEach(id=>document.getElementById(id).value='');
+      document.getElementById('resultado').style.display='none';
+    }
+  </script>
+</body>
+</html>

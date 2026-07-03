@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checklist de Conversão de Imóveis com IA</title>
+  <meta name="description" content="Checklist prático para aumentar conversão imobiliária usando inteligência artificial.">
+  <style>
+    :root{--bg:#f6f8fb;--panel:#ffffff;--accent:#2563eb;--muted:#6b7280;--line:#e5e7eb}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#0f172a;padding:22px}
+    .container{max-width:760px;margin:0 auto}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;margin:16px 0;box-shadow:0 4px 12px rgba(15,23,42,0.08)}
+    h1{font-size:22px;margin-bottom:8px}
+    h2{font-size:16px;margin:14px 0 6px}
+    p{color:var(--muted);margin:6px 0 12px}
+    .item{display:flex;gap:10px;align-items:flex-start;background:#f3f4f6;border:1px solid var(--line);padding:12px;border-radius:12px;margin:8px 0}
+    input[type="checkbox"]{margin-top:4px;width:18px;height:18px;accent-color:var(--accent)}
+    .item.done{background:#eef2ff;border-color:#c7d2fe;opacity:.95}
+    footer{margin-top:24px;text-align:center;color:var(--muted);font-size:12px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Checklist de Conversão de Imóveis com IA</h1>
+      <p>Use esta checklist para melhorar atendimento, follow-up e velocidade de fechamento.</p>
+
+      <h2>Atendimento</h2>
+      <label class="item"><input type="checkbox" onchange="toggle(this)"><span>Chatbot/WhatsApp com respostas automáticas em até 3 minutos</span></label>
+      <label class="item"><input type="checkbox" onchange="toggle(this)"><span>Pré-qualificação automática do lead por perfil e bairro</span></label>
+      <label class="item"><input type="checkbox" onchange="toggle(this)"><span>Agendamento automático de visitas com confirmação</span></label>
+
+      <h2>Follow-up</h2>
+      <label class="item"><input type="checkbox" onchange="toggle(this)"><span>Séquência de até 7 toques por lead salva no CRM</span></label>
+      <label class="item"><input type="checkbox" onchange="toggle(this)"><span>Lembretes automáticos para corretores antes das visitas</span></label>
+      <label class="item"><input type="checkbox" onchange="toggle(this)"><span>Resumo automático do imóvel enviado no primeiro contato</span></label>
+
+      <h2>Fechamento</h2>
+      <label class="item"><input type="checkbox" onchange="toggle(this)"><span>Proposta com valores formatados e parcelas sugeridas</span></label>
+      <label class="item"><input type="checkbox" onchange="toggle(this)"><span>Pesquisa de satisfação automatizada pós-visita</span></label>
+      <label class="item"><input type="checkbox" onchange="toggle(this)"><span>Modelo de contrato digital pré-preenchido</span></label>
+    </div>
+
+    <footer>Praia Digital — Ferramentas gratuitas para imobiliárias no litoral paulista.</footer>
+  </div>
+
+  <script>
+    function toggle(cb){const item=cb.closest('.item');if(cb.checked)item.classList.add('done');else item.classList.remove('done')}
+  </script>
+</body>
+</html>
+EOF
