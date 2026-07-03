@@ -339,3 +339,23 @@ id,nome_da_imobiliaria,cidade,pessoa_de_contato,email,perfil,dor_principal,difer
 338,Mar & Sol Site,São Vicente,Ana Rocha,contato338@exemplo.com,gestor,leads,seo,88,Aumentar captação,R$ 2-5k/mês,direto
 339,Santos Tower Digital,Guarujá,Maria Barros,contato339@exemplo.com,imobiliaria,anuncios,avaliacao,80,Vendas,R$ 0.5-2k/mês,parceiro
 340,Santos Tower Site,Bertioga,Ana Barros,contato340@exemplo.com,imobiliaria,conteudo,automacao,84,Relatórios,R$ 0.5-2k/mês,formal
+341,Norte Sul Prime,Santos,Juliana Rocha,contato341@exemplo.com,administradora,conteudo,anuncios,75,SEO local,R$ 0.5-2k/mês,formal
+342,Praia Grande Site View,Itanhaém,Ricardo Nunes,contato342@exemplo.com,gestor,conteudo,automacao,78,Automação,R$ 0.5-2k/mês,formal
+343,Beta Imóveis Centro,Bertioga,João Alves,contato343@exemplo.com,construtora,midia,chatbot,66,Aumentar captação,R$ 1-3k/mês,direto
+344,Norte Sul Imóveis,Guarujá,Ricardo Lima,contato344@exemplo.com,construtora,conversao,automacao,90,Automação,R$ 1-4k/mês,parceiro
+345,Riviera Blue View,Santos,Ricardo Silva,contato345@exemplo.com,corretor,anuncios,avaliacao,87,Vendas,R$ 2-5k/mês,parceiro
+346,Beta Imóveis View,Praia Grande,Fernanda Souza,contato346@exemplo.com,corretor,obra,video,97,Relatórios,R$ 1-3k/mês,parceiro
+347,Riviera Blue Centro,Praia Grande,Larissa Souza,contato347@exemplo.com,construtora,anuncios,automacao,64,Relatórios,R$ 1-3k/mês,direto
+348,Mar & Sol Centro,Peruíbe,Paulo Souza,contato348@exemplo.com,construtora,anuncios,video,67,Aumentar captação,R$ 1-3k/mês,parceiro
+349,Prime Imóveis Blue,Bertioga,João Costa,contato349@exemplo.com,construtora,anuncios,trabalho,66,Lançamento,R$ 0.5-2k/mês,parceiro
+350,Costa Verde Litoral,Itanhaém,Paulo Pereira,contato350@exemplo.com,imobiliaria,obra,automacao,77,Mais conteúdo,R$ 0.5-2k/mês,formal
+351,Riviera Blue Centro,Bertioga,João Souza,contato351@exemplo.com,administradora,anuncios,prompt,80,Automação,R$ 0.5-2k/mês,direto
+352,Norte Sul Digital,Praia Grande,Maria Costa,contato352@exemplo.com,construtora,conversao,trabalho,85,Temporada,R$ 2-5k/mês,formal
+353,Mar & Sol Litoral,Guarujá,Bruno Lopes,contato353@exemplo.com,imobiliaria,obra,trabalho,93,Mais conteúdo,R$ 1-3k/mês,parceiro
+354,Barra Digital Digital,São Vicente,Luciana Costa,contato354@exemplo.com,construtora,anuncios,avaliacao,67,Relatórios,R$ 2-5k/mês,formal
+355,Realize II Site,Peruíbe,Luciana Barros,contato355@exemplo.com,gestor,midia,video,91,Automação,R$ 0.5-2k/mês,parceiro
+356,Sol & Mar Prime,Guarujá,Juliana Gomes,contato356@exemplo.com,imobiliaria,leads,chatbot,97,Temporada,R$ 2-5k/mês,direto
+357,Prime Imóveis Prime,Santos,Ricardo Alves,contato357@exemplo.com,administradora,seo,avaliacao,67,Vendas,R$ 0.5-2k/mês,parceiro
+358,Beta Imóveis Site,Santos,Ana Barros,contato358@exemplo.com,administradora,leads,automacao,64,Vendas,R$ 0.5-2k/mês,parceiro
+359,Praia Grande Site Site,Santos,Patrícia Mendes,contato359@exemplo.com,gestor,obra,seo,81,Aumentar captação,R$ 2-5k/mês,direto
+360,Alpha Imóveis Site,Mongaguá,Larissa Rocha,contato360@exemplo.com,corretor,obra,avaliacao,96,Aumentar captação,R$ 1-4k/mês,formal
