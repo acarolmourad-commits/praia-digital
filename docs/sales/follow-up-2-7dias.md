@@ -1,20 +1,20 @@
-# Follow-up 2 — 7 dias após follow-up 1
+Assunto: Follow-up em 7 dias — próximo passo: Deep Dive + call de 30min
 
-Assunto: [Nome da Imobiliaria] — ganho compartilhado sem taxa fixa
+Tudo bem?
 
-Olá,
+Se fizer sentido, eu sigo com o Deep Dive antes da call e confirmamos 30min em vídeo.
 
-Podemos trabalhar juntos sem taxa fixa obrigatória:
-- Praia Digital entrega conteúdo, SEO, chatbot e follow-up
-- [Nome da Imobiliaria] fornece dados e aprova
-- Repartimos por leads qualificados ou contratos
+Proposta rápida:
+- Piloto: 7 a 14 dias sem custo inicial
+- Modelo: receita compartilhada
+- Métrica: agendamentos e negócios fechados
 
-Sem taxa mínima, sem fidelidade longa. Queremos resultados reais.
+Links:
+• Site: https://acarolmourad-commits.github.io/praia-digital/
+• Ferramentas gratuitas: https://praia.digital
 
-Ferramentas gratuitas: https://praia.digital
-
-Queremos apresentar um plano 30 dias. Posso enviar?
-
-Abraço,
-Carol
-(11) 95434-6288 | comercial@praiadigital.com
+Atenciosamente,
+Carolina Mourad
+CEO — Praia Digital
+(11) 95434-6288
+comercial@praia.digital
