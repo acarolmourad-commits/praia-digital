@@ -1,7 +1,8 @@
-# Follow-up — 72h (modelo colável)
+# Follow-up 72h — modelo colável
 
-Use este roteiro para os mesmos 5 leads do `docs/sales/roteiro-envio-top5-hoje.md`.
-Horário sugerido: 10h ou 15h.
+Enviar em: 08/07/2026
+Horário sugerido: 10h ou 15h
+
 Assunto: Follow-up: proposta de parceria com IA — sem custo inicial
 
 Opa, só passando rapidinho para não sumir.
@@ -19,3 +20,13 @@ Carolina Mourad
 CEO — Praia Digital
 (11) 95434-6288
 comercial@praia.digital
+
+---
+
+## Leads para follow-up em 72h
+
+1. Porto da Lua Prime (Itanhaém) — contato229@exemplo.com — Score: 99
+2. Praia Grande Site View (Bertioga) — contato232@exemplo.com — Score: 99
+3. Porto da Lua Blue (Itanhaém) — contato280@exemplo.com — Score: 99
+4. Prime Imóveis Centro (Santos) — contato282@exemplo.com — Score: 99
+5. Costa Verde Imóveis (Guarujá) — contato306@exemplo.com — Score: 99
