@@ -439,3 +439,23 @@ id,nome_da_imobiliaria,cidade,pessoa_de_contato,email,perfil,dor_principal,difer
 438,Praia Grande Site Blue,Guarujá,Juliana Rocha,contato438@exemplo.com,administradora,lancamento,prompt,60,SEO local,R$ 0.5-2k/mês,formal
 439,Itanhaém Premium Imóveis,Bertioga,Mariana Costa,contato439@exemplo.com,construtora,temporada,video,90,Mais conteúdo,R$ 1-4k/mês,direto
 440,Mar & Sol Digital,Santos,Patrícia Nunes,contato440@exemplo.com,corretor-autonomo,temporada,avaliacao,94,Vendas,R$ 2-5k/mês,formal
+441,Alpha Imóveis Centro,Santos,Felipe Nunes,contato441@exemplo.com,administradora,aluguel,trabalho,96,Temporada,R$ 1-4k/mês,direto
+442,Santos Tower Prime,Itanhaém,Camila Mendes,contato442@exemplo.com,corretor,follow-up,anuncios,83,Relatórios,R$ 0.5-2k/mês,parceiro
+443,Prime Imóveis Prime,Itanhaém,Diego Mendes,contato443@exemplo.com,corretor,anuncios,anuncios,72,Vendas,R$ 1-4k/mês,parceiro
+444,Costa Verde View,Peruíbe,Diego Moura,contato444@exemplo.com,administradora,obra,roi,84,SEO local,R$ 0.5-2k/mês,parceiro
+445,Região Sul Praia,Itanhaém,Diego Silva,contato445@exemplo.com,corretor-autonomo,lancamento,relatorios,86,Relatórios,R$ 0.5-2k/mês,formal
+446,Alpha Imóveis Prime,Guarujá,Patrícia Teixeira,contato446@exemplo.com,corretor-autonomo,lancamento,roi,79,Aumentar captação,R$ 1-3k/mês,direto
+447,Santos Tower Centro,Mongaguá,Maria Rocha,contato447@exemplo.com,corretor-autonomo,conteudo,chatbot,68,Relatórios,R$ 0.5-2k/mês,parceiro
+448,Mongaguá Imóveis Tech,Santos,João Souza,contato448@exemplo.com,administradora,atendimento,avaliacao,68,Mais conteúdo,R$ 1-3k/mês,parceiro
+449,Mar & Sol View,Peruíbe,Fernanda Rocha,contato449@exemplo.com,construtora,obra,seo,97,Temporada,R$ 1-4k/mês,parceiro
+450,Ocean Blue Prime,Guarujá,Fernanda Souza,contato450@exemplo.com,construtora,midia,relatorios,83,Temporada,R$ 1-3k/mês,parceiro
+451,Litoral Premium Praia,Itanhaém,João Teixeira,contato451@exemplo.com,imobiliaria,obra,prompt,76,Relatórios,R$ 1-3k/mês,formal
+452,Norte Sul Centro,Santos,Ana Lima,contato452@exemplo.com,administradora,temporada,chatbot,74,Automação,R$ 2-5k/mês,formal
+453,Santos Tower Prime,Guarujá,Patrícia Lima,contato453@exemplo.com,construtora,temporada,avaliacao,86,Lançamento,R$ 0.5-2k/mês,parceiro
+454,Região Sul Prime,Peruíbe,Paulo Gomes,contato454@exemplo.com,imobiliaria,midia,chatbot,92,Automação,R$ 1-3k/mês,parceiro
+455,Norte Sul Praia,Itanhaém,Luciana Souza,contato455@exemplo.com,construtora,anuncios,dados,64,Lançamento,R$ 1-3k/mês,direto
+456,Costa Verde Tech,Peruíbe,Patrícia Araújo,contato456@exemplo.com,imobiliaria,anuncios,dados,63,Temporada,R$ 1-4k/mês,parceiro
+457,Itanhaém Premium Prime,Guarujá,Patrícia Gomes,contato457@exemplo.com,corretor-autonomo,follow-up,prompt,65,Aumentar captação,R$ 1-3k/mês,formal
+458,Mar & Sol Prime,Guarujá,Ana Rocha,contato458@exemplo.com,corretor,aluguel,avaliacao,67,Automação,R$ 2-5k/mês,parceiro
+459,Caiçara Digital Imóveis,São Vicente,Paulo Mendes,contato459@exemplo.com,corretor,conteudo,seo,90,SEO local,R$ 2-5k/mês,direto
+460,Norte Sul Digital,Guarujá,Mariana Araújo,contato460@exemplo.com,corretor-autonomo,seo,chatbot,80,Vendas,R$ 0.5-2k/mês,parceiro
