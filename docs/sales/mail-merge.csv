@@ -419,3 +419,23 @@ id,nome_da_imobiliaria,cidade,pessoa_de_contato,email,perfil,dor_principal,difer
 418,Caiçara Digital Tech,Mongaguá,Paulo Souza,contato418@exemplo.com,construtora,temporada,trabalho,73,Temporada,R$ 0.5-2k/mês,direto
 419,Edifica Praia View,Itanhaém,Bruno Ferreira,contato419@exemplo.com,imobiliaria,leads,video,68,Automação,R$ 1-4k/mês,parceiro
 420,Sul Imóveis Site,Guarujá,Juliana Moura,contato420@exemplo.com,administradora,temporada,relatorios,78,Relatórios,R$ 1-3k/mês,parceiro
+421,Riviera Blue Prime,Praia Grande,Bruno Souza,contato421@exemplo.com,administradora,temporada,seo,63,Vendas,R$ 2-5k/mês,direto
+422,Beta Imóveis Praia,Santos,Fernanda Mendes,contato422@exemplo.com,gestor,retencao,dados,64,Relatórios,R$ 1-3k/mês,formal
+423,Região Sul Praia,Bertioga,Bruno Alves,contato423@exemplo.com,construtora,retencao,avaliacao,63,Temporada,R$ 2-5k/mês,direto
+424,Mongaguá Imóveis Site,Santos,Maria Rocha,contato424@exemplo.com,corretor,aluguel,automacao,65,Temporada,R$ 1-3k/mês,parceiro
+425,Ocean Blue Blue,Guarujá,Paulo Silva,contato425@exemplo.com,gestor,atendimento,anuncios,86,Automação,R$ 1-3k/mês,formal
+426,Edifica Praia Blue,São Vicente,Mariana Gomes,contato426@exemplo.com,gestor,temporada,roi,94,Temporada,R$ 1-3k/mês,formal
+427,Edifica Praia Imóveis,Santos,Paulo Ferreira,contato427@exemplo.com,corretor,atendimento,personalizacao,64,Mais conteúdo,R$ 1-4k/mês,formal
+428,Edifica Praia Digital,Mongaguá,Patrícia Souza,contato428@exemplo.com,administradora,retencao,nurturing,83,Mais conteúdo,R$ 1-3k/mês,formal
+429,Mongaguá Imóveis Litoral,São Vicente,Ana Souza,contato429@exemplo.com,corretor-autonomo,aluguel,chatbot,67,Relatórios,R$ 0.5-2k/mês,formal
+430,Barra Digital Litoral,Santos,João Costa,contato430@exemplo.com,administradora,leads,prompt,67,Relatórios,R$ 0.5-2k/mês,formal
+431,Prime Imóveis Praia,Santos,Maria Lima,contato431@exemplo.com,corretor-autonomo,seo,chatbot,79,Temporada,R$ 1-4k/mês,direto
+432,Beta Imóveis Centro,São Vicente,João Barros,contato432@exemplo.com,imobiliaria,atendimento,anuncios,87,Vendas,R$ 1-3k/mês,parceiro
+433,Caiçara Digital Litoral,Mongaguá,Juliana Gomes,contato433@exemplo.com,gestor,conteudo,personalizacao,70,Vendas,R$ 2-5k/mês,formal
+434,Costa Verde Prime,São Vicente,Luciana Souza,contato434@exemplo.com,administradora,midia,prompt,78,Temporada,R$ 1-4k/mês,parceiro
+435,Edifica Praia Blue,Bertioga,Patrícia Ferreira,contato435@exemplo.com,construtora,lancamento,roi,75,Temporada,R$ 1-4k/mês,direto
+436,Caiçara Digital Blue,Itanhaém,Larissa Rocha,contato436@exemplo.com,corretor,temporada,avaliacao,81,Temporada,R$ 0.5-2k/mês,direto
+437,Edifica Praia Blue,Mongaguá,Larissa Mendes,contato437@exemplo.com,imobiliaria,midia,seo,72,Aluguel,R$ 0.5-2k/mês,direto
+438,Praia Grande Site Blue,Guarujá,Juliana Rocha,contato438@exemplo.com,administradora,lancamento,prompt,60,SEO local,R$ 0.5-2k/mês,formal
+439,Itanhaém Premium Imóveis,Bertioga,Mariana Costa,contato439@exemplo.com,construtora,temporada,video,90,Mais conteúdo,R$ 1-4k/mês,direto
+440,Mar & Sol Digital,Santos,Patrícia Nunes,contato440@exemplo.com,corretor-autonomo,temporada,avaliacao,94,Vendas,R$ 2-5k/mês,formal
