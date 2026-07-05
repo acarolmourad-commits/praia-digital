@@ -1,19 +1,20 @@
-# Follow-up 3 — fechamento e próximo passo
+Assunto: Fechamento — proposta de parceria com IA
 
-Assunto: [Nome da Imobiliaria] — próximo passo para captação no litoral
+Vamos fechar o passo final.
 
-Olá,
+Posso enviar:
+1) Deep Dive até [data]
+2) Call de 30min na semana que vem
+3) Plano 7-14 dias sem investimento inicial
 
-Para fecharmos, proponho um plano simples:
-- Semana 1: SEO local por cidade/bairro
-- Semana 2: chatbot com FAQ
-- Semana 3: follow-up automático
-- Semana 4: anúncios e parcerias locais
+Sem taxa de setup. Modelo de receita compartilhada.
 
-Medimos leads qualificados por semana e seguimos só se houver resultado.
+Links:
+• Site: https://acarolmourad-commits.github.io/praia-digital/
+• Ferramentas gratuitas: https://praia.digital
 
-Queremos crescer juntos. Posso enviar a proposta?
-
-Abraço,
-Carol
-(11) 95434-6288 | comercial@praiadigital.com
+Atenciosamente,
+Carolina Mourad
+CEO — Praia Digital
+(11) 95434-6288
+comercial@praia.digital

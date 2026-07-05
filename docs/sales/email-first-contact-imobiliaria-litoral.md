@@ -1,15 +1,29 @@
-# E-mail primeiro contato para imobiliária no litoral
+Assunto: Primeiro contato — proposta de parceria sem custo inicial para [nome da imobiliaria]
 
-Assunto: Captação de leads para imobiliária no litoral sem taxa mínima
+Opa, tudo bem?
 
-Olá,
+Eu sou Carolina Mourad, CEO da Praia Digital.
 
-Sou a Carol, CEO da Praia Digital.
+Ajudo imobiliárias e construtoras do litoral paulista a captar mais leads qualificados e converter mais vendas por meio de IA — sem taxa de setup e sem mexer no site atual.
 
-Ajudo imobiliárias e corretores do litoral paulista a captar mais leads com SEO local, conteúdo e automação leve. Quero propor um piloto de 30 dias para você: crescimento por resultado, sem taxa mínima e sem fidelidade longa.
+A proposta:
+- Nós entregamos captação digital automatizada, nutrição automática e conteúdo SEO por cidade e bairro.
+- Vocês fornecem o BDR MLP e o conteúdo humano final.
+- Resultado: mais agendamentos, mais negócios fechados e um case conjunto.
 
-Site: https://praia.digital
+Para eu montar o plano sob medida, preciso de 3 informações:
+1) vídeo curto BTS/raio-BTS do time de vendas;
+2) 30min em vídeo na semana que vem;
+3) site atual + 1 coordenador(a).
 
-Queremos crescer juntos.
+Se fizer sentido, envio o Deep Dive antes da reunião.
 
-Contato: (11) 95434-6288 | comercial@praiadigital.com
+Links:
+• Site: https://acarolmourad-commits.github.io/praia-digital/
+• Ferramentas gratuitas: https://praia.digital
+
+Atenciosamente,
+Carolina Mourad
+CEO — Praia Digital
+(11) 95434-6288
+comercial@praia.digital
