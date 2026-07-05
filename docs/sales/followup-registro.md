@@ -6,3 +6,18 @@ Exemplo:
 2026-07-06 | follow-up | [Nome] | enviado | -
 2026-07-09 | resposta | [Nome] | positivo | enviar deep dive + call
 2026-07-09 | resposta | [Nome] | sem resposta | follow-up 7 dias
+
+2026-07-05 | deep dive | Porto da Lua Prime | enviado para Itanhaém | score 99
+2026-07-05 | follow-up | Porto da Lua Prime | agendado para 72h | cidade Itanhaém
+
+2026-07-05 | deep dive | Praia Grande Site View | enviado para Bertioga | score 99
+2026-07-05 | follow-up | Praia Grande Site View | agendado para 72h | cidade Bertioga
+
+2026-07-05 | deep dive | Porto da Lua Blue | enviado para Itanhaém | score 99
+2026-07-05 | follow-up | Porto da Lua Blue | agendado para 72h | cidade Itanhaém
+
+2026-07-05 | deep dive | Prime Imóveis Centro | enviado para Santos | score 99
+2026-07-05 | follow-up | Prime Imóveis Centro | agendado para 72h | cidade Santos
+
+2026-07-05 | deep dive | Costa Verde Imóveis | enviado para Guarujá | score 99
+2026-07-05 | follow-up | Costa Verde Imóveis | agendado para 72h | cidade Guarujá
