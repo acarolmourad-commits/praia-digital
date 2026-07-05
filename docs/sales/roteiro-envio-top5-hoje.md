@@ -99,3 +99,31 @@ comercial@praia.digital
 - **Horário sugerido:** 10h ou 15h
 - **Follow-up:** 08/07/2026 — usar `docs/sales/followup-top5-72h.md`
 
+
+## Follow-up 72h
+Data de envio sugerida: 08/07/2026
+
+### Lead 1: Porto da Lua Prime
+- E-mail: contato229@exemplo.com
+- Cidade: Itanhaém
+- Follow-up 72h: sim
+
+### Lead 2: Praia Grande Site View
+- E-mail: contato232@exemplo.com
+- Cidade: Bertioga
+- Follow-up 72h: sim
+
+### Lead 3: Porto da Lua Blue
+- E-mail: contato280@exemplo.com
+- Cidade: Itanhaém
+- Follow-up 72h: sim
+
+### Lead 4: Prime Imóveis Centro
+- E-mail: contato282@exemplo.com
+- Cidade: Santos
+- Follow-up 72h: sim
+
+### Lead 5: Costa Verde Imóveis
+- E-mail: contato306@exemplo.com
+- Cidade: Guarujá
+- Follow-up 72h: sim
