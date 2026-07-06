@@ -35,3 +35,7 @@ Exemplo:
 ## Envios novos - 2026-07-06 13:14
 | 216 | Santos Prime | contato216@exemplo.com | enviado |
 | 186 | Santos Platinum | contato186@exemplo.com | enviado |
+
+## Envios automaticos - 2026-07-06 14:35
+| 121 | Santos Smart Home | contato121@exemplo.com | enviado |
+| 141 | Santos Executive | contato141@exemplo.com | enviado |
