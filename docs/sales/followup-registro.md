@@ -31,3 +31,7 @@ Exemplo:
 2026-07-05 | follow-up 72h | Prime Imóveis Centro | agendado para 08/07/2026 | cidade Santos | score 99
 
 2026-07-05 | follow-up 72h | Costa Verde Imóveis | agendado para 08/07/2026 | cidade Guarujá | score 99
+
+## Envios novos - 2026-07-06 13:14
+| 216 | Santos Prime | contato216@exemplo.com | enviado |
+| 186 | Santos Platinum | contato186@exemplo.com | enviado |
