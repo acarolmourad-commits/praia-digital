@@ -39,3 +39,7 @@ Exemplo:
 ## Envios automaticos - 2026-07-06 14:35
 | 121 | Santos Smart Home | contato121@exemplo.com | enviado |
 | 141 | Santos Executive | contato141@exemplo.com | enviado |
+
+## Envios executados - 2026-07-06 17:43
+- envio-fresh-176.html: enviado
+- envio-fresh-214.html: enviado
