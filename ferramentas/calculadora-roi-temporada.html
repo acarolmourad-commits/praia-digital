@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de ROI — Temporada Litoral | Praia Digital</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;padding:0;background:#07112b;color:#fff}.container{max-width:880px;margin:0 auto;padding:24px}.card{background:#0e214d;border-radius:12px;padding:24px;margin-top:16px}.btn{background:#3b82f6;color:white;padding:12px 16px;border-radius:8px;border:0;cursor:pointer;font-size:16px}input,select{width:100%;padding:10px;border-radius:8px;border:1px solid #334155;background:#0b1a3a;color:#fff;margin-top:8px}.result{background:#0b1a3a;border-radius:8px;padding:16px;margin-top:16px;white-space:pre-wrap;color:#e2e8f0}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Calculadora de ROI — Temporada Litoral</h1>
+  <div class="card">
+    <label>Valor do imóvel (R$)</label>
+    <input type="number" id="valor" value="600000">
+    <label>Diária média (R$)</label>
+    <input type="number" id="diaria" value="500">
+    <label>Ocupação estimada (%)</label>
+    <input type="number" id="ocupacao" value="60">
+    <label>Dias por temporada</label>
+    <input type="number" id="dias" value="90">
+    <label>Custo operacional anual (R$)</label>
+    <input type="number" id="custo" value="12000">
+    <button class="btn" onclick="calcular()">Calcular ROI</button>
+    <div class="result" id="res"></div>
+  </div>
+  <p><a href="https://acarolmourad-commits.github.io/praia-digital/" style="color:#9fb3d1">Voltar para a Praia Digital</a></p>
+</div>
+<script>
+function calcular(){
+  const valor=Number(document.getElementById('valor').value)||0;
+  const diaria=Number(document.getElementById('diaria').value)||0;
+  const ocupacao=Number(document.getElementById('ocupacao').value)||0;
+  const dias=Number(document.getElementById('dias').value)||0;
+  const custo=Number(document.getElementById('custo').value)||0;
+  const faturamento=diaria*(dias*(ocupacao/100));
+  const lucro=faturamento-custo;
+  const roi=valor>0?(lucro/valor)*100:0;
+  const texto=`Resultado\\nFaturamento anual estimado: R$ ${faturamento.toLocaleString('pt-BR')}\\nLucro anual estimado: R$ ${lucro.toLocaleString('pt-BR')}\\nROI: ${roi.toFixed(2)}%`;
+  document.getElementById('res').textContent=texto;
+}
+</script>
+</body>
+</html>
