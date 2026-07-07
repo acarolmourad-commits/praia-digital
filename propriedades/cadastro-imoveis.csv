@@ -1,181 +1,61 @@
-id,tipo,cidade,bairro,dormitorios,suite,vagas,area_m2,preco_rs,condominio_rs,diferenciais,contato_nome,contato_whats,status,foto_url,descricao_curta,criado_em
-1000,casa-condo,São Vicente,Gonzaguinha,3,1,1,106,999955,1200,"lareira,aquecimento solar,closet,vista mar",Amanda Alves,(13) 95255-5326,destaque,/propriedades/1000.jpg,"Casa-Condo em Gonzaguinha, São Vicente — salão de festas.",2026-06-17
-1001,lote,Itanhaém,Vila Rica,5,0,1,97,353952,1200,"lavabo,área de serviço",João Rocha,(13) 93286-6174,exclusivo,/propriedades/1001.jpg,"Lote em Vila Rica, Itanhaém — quintal gourmet.",2026-06-09
-1002,apartamento,Bertioga,Riviera,4,1,1,192,1823915,1800,sacada,Rafael Costa,(13) 98180-5949,exclusivo,/propriedades/1002.jpg,"Apartamento em Riviera, Bertioga — aquecimento solar.",2026-06-06
-1003,apartamento,Guarujá,Enseada,2,0,2,103,1103607,1800,quintal gourmet,João Pereira,(13) 91656-6306,ativo,/propriedades/1003.jpg,"Apartamento em Enseada, Guarujá — elevador.",2026-06-28
-1004,casa,Mongaguá,Centro,1,1,1,125,2145230,1200,"vagas de garagem,suite,sacada",Rafael Ribeiro,(13) 95441-8857,exclusivo,/propriedades/1004.jpg,"Casa em Centro, Mongaguá — elevador.",2026-06-08
-1005,studio,Guarujá,Bueno,4,0,4,59,1998430,500,"lareira,vista mar,elevador",Bruno Moura,(13) 96305-8768,destaque,/propriedades/1005.jpg,"Studio em Bueno, Guarujá — academia.",2026-06-23
-1006,comercial,Guarujá,Jardim Las Palmas,4,1,1,129,213349,800,gerador,Rafael Cardoso,(13) 96535-5400,exclusivo,/propriedades/1006.jpg,"Comercial em Jardim Las Palmas, Guarujá — sacada.",2026-06-29
-1007,cobertura,Santos,Aparecida,3,1,1,216,1257500,1800,"playground,condomínio fechado,vagas de garagem",Maria Vieira,(13) 98422-6834,ativo,/propriedades/1007.jpg,"Cobertura em Aparecida, Santos — playground.",2026-07-04
-1008,casa,Itanhaém,Vila Rica,2,1,4,133,1828740,300,playground,Bianca Silva,(13) 98725-2814,exclusivo,/propriedades/1008.jpg,"Casa em Vila Rica, Itanhaém — churrasqueira.",2026-06-10
-1009,comercial,Praia Grande,Mirim,3,1,1,276,1153041,1200,depósito,Rafael Pereira,(13) 96984-7050,novo,/propriedades/1009.jpg,"Comercial em Mirim, Praia Grande — quintal gourmet.",2026-07-01
-1010,studio,Mongaguá,Vila São Paulo,5,1,1,141,282350,1200,painel solar,Camila Ribeiro,(13) 97882-2083,novo,/propriedades/1010.jpg,"Studio em Vila São Paulo, Mongaguá — aquecimento solar.",2026-06-10
-1011,casa-condo,Guarujá,Santo Amaro,3,1,2,191,189051,2500,salão de festas,Juliana Lima,(13) 96002-9868,destaque,/propriedades/1011.jpg,"Casa-Condo em Santo Amaro, Guarujá — lavabo.",2026-06-07
-1012,lote,Praia Grande,Vila Tupi,4,1,2,203,1822663,1200,"lareira,closet,piscina",Luciana Araújo,(13) 94163-3647,novo,/propriedades/1012.jpg,"Lote em Vila Tupi, Praia Grande — sacada.",2026-06-15
-1013,lote,Praia Grande,Balneário,4,1,3,88,1598437,1800,"salão de festas,piscina,vista mar,playground",Larissa Souza,(13) 97268-5405,novo,/propriedades/1013.jpg,"Lote em Balneário, Praia Grande — painel solar.",2026-06-21
-1014,cobertura,Praia Grande,Mirim,1,0,1,143,1542689,800,"lareira,depósito,churrasqueira",Paulo Moura,(13) 94021-8865,ativo,/propriedades/1014.jpg,"Cobertura em Mirim, Praia Grande — área de serviço.",2026-06-28
-1015,lote,Guarujá,Santo Amaro,3,1,2,217,1668871,300,"vista mar,closet,quintal gourmet,lareira",Bianca Rocha,(13) 93410-7868,novo,/propriedades/1015.jpg,"Lote em Santo Amaro, Guarujá — suite.",2026-06-09
-1016,studio,São Vicente,Itararé,3,0,3,64,1181408,300,"academia,piscina,salão de festas",Diego Costa,(13) 93108-7891,ativo,/propriedades/1016.jpg,"Studio em Itararé, São Vicente — gerador.",2026-06-14
-1017,apartamento,Bertioga,São Lourenço,4,0,2,237,1958749,1800,"gerador,lareira",Bruno Lima,(13) 98711-5584,ativo,/propriedades/1017.jpg,"Apartamento em São Lourenço, Bertioga — piscina.",2026-06-09
-1018,cobertura,Peruíbe,Costão,5,0,3,78,804203,300,academia,Mariana Lopes,(13) 99580-3521,destaque,/propriedades/1018.jpg,"Cobertura em Costão, Peruíbe — condomínio fechado.",2026-07-05
-1019,cobertura,Santos,Boqueirão,3,1,2,253,700074,500,"condomínio fechado,quintal gourmet",Paulo Gomes,(13) 92990-6260,destaque,/propriedades/1019.jpg,"Cobertura em Boqueirão, Santos — lareira.",2026-06-11
-1020,lote,Mongaguá,Vila Atlântica,3,0,3,51,1261676,1800,"lavabo,depósito,playground,academia",Ricardo Souza,(13) 94162-4091,destaque,/propriedades/1020.jpg,"Lote em Vila Atlântica, Mongaguá — suite.",2026-06-22
-1021,casa-condo,Santos, Vila Nova,4,0,4,57,906495,800,"salão de festas,elevador,condomínio fechado",João Costa,(13) 94629-2669,novo,/propriedades/1021.jpg,"Casa-Condo em  Vila Nova, Santos — área de serviço.",2026-06-18
-1022,apartamento,Praia Grande,Jardim América,1,1,2,130,2068542,1800,"quintal gourmet,lavabo",Fernanda Ribeiro,(13) 99860-1945,novo,/propriedades/1022.jpg,"Apartamento em Jardim América, Praia Grande — sacada.",2026-06-14
-1023,apartamento,Mongaguá,Centro,2,0,4,197,1606498,1800,"vista mar,aquecimento solar,depósito,vagas de garagem",Ana Mendes,(13) 92175-7277,ativo,/propriedades/1023.jpg,"Apartamento em Centro, Mongaguá — quintal gourmet.",2026-06-18
-1024,comercial,São Vicente,Jardim Rio Branco,2,0,3,58,991224,2500,sacada,Mariana Souza,(13) 92296-5721,novo,/propriedades/1024.jpg,"Comercial em Jardim Rio Branco, São Vicente — condomínio fechado.",2026-07-04
-1025,cobertura,Praia Grande,Boqueirão,5,0,2,261,867731,800,"churrasqueira,vista mar,academia",Fernanda Pereira,(13) 95693-7392,exclusivo,/propriedades/1025.jpg,"Cobertura em Boqueirão, Praia Grande — churrasqueira.",2026-06-17
-1026,apartamento,Santos,Gonzaga,4,0,2,191,2006283,0,"piscina,condomínio fechado",Paulo Lima,(13) 92096-4995,ativo,/propriedades/1026.jpg,"Apartamento em Gonzaga, Santos — painel solar.",2026-06-26
-1027,lote,Guarujá,Jardim Las Palmas,5,0,4,175,894313,300,"sacada,área de serviço,churrasqueira",Rafael Pereira,(13) 96653-8068,destaque,/propriedades/1027.jpg,"Lote em Jardim Las Palmas, Guarujá — academia.",2026-06-23
-1028,studio,Santos,Gonzaga,2,1,3,98,657668,500,"suite,sacada,quintal gourmet",Ricardo Mendes,(13) 95579-7371,novo,/propriedades/1028.jpg,"Studio em Gonzaga, Santos — elevador.",2026-06-09
-1029,casa,Peruíbe,Guaraú,5,1,1,222,1744660,2500,"vista mar,playground,painel solar,área de serviço",Carlos Moura,(13) 98789-1857,novo,/propriedades/1029.jpg,"Casa em Guaraú, Peruíbe — piscina.",2026-06-13
-1030,cobertura,Itanhaém,Guilhermina,1,1,4,117,1697426,800,"aquecimento solar,painel solar",Fernanda Barros,(13) 97067-9958,destaque,/propriedades/1030.jpg,"Cobertura em Guilhermina, Itanhaém — piscina.",2026-06-23
-1031,studio,Mongaguá,Centro,5,0,4,91,1915336,500,"churrasqueira,suite",Carlos Mendes,(13) 97573-9009,novo,/propriedades/1031.jpg,"Studio em Centro, Mongaguá — lareira.",2026-07-06
-1032,casa-condo,Praia Grande,Boqueirão,4,1,2,133,1100996,2500,"suite,gerador,aquecimento solar,condomínio fechado",Diego Alves,(13) 92548-8656,destaque,/propriedades/1032.jpg,"Casa-Condo em Boqueirão, Praia Grande — gerador.",2026-06-23
-1033,comercial,Praia Grande,Jardim América,3,1,1,271,282991,300,"lavabo,churrasqueira,piscina",Maria Pereira,(13) 98071-6864,destaque,/propriedades/1033.jpg,"Comercial em Jardim América, Praia Grande — painel solar.",2026-07-02
-1034,casa-condo,Bertioga,Centro,4,1,1,39,862372,800,playground,Mariana Mendes,(13) 91645-1470,novo,/propriedades/1034.jpg,"Casa-Condo em Centro, Bertioga — lavabo.",2026-06-07
-1035,studio,São Vicente,Ponta de Pedras,1,0,4,71,2014855,2500,"piscina,área de serviço,vagas de garagem,lareira",João Barros,(13) 93892-2939,ativo,/propriedades/1035.jpg,"Studio em Ponta de Pedras, São Vicente — academia.",2026-06-15
-1036,lote,Peruíbe,Guaraú,3,1,1,101,1537342,2500,"lavabo,piscina",Ricardo Lima,(13) 97901-5124,exclusivo,/propriedades/1036.jpg,"Lote em Guaraú, Peruíbe — playground.",2026-06-27
-1037,casa-condo,Mongaguá,Jardim Evangelista,5,0,3,147,387803,300,"elevador,academia,lavabo",Diego Mendes,(13) 91681-4768,destaque,/propriedades/1037.jpg,"Casa-Condo em Jardim Evangelista, Mongaguá — vista mar.",2026-07-04
-1038,cobertura,Guarujá,Enseada,1,0,3,220,756460,500,"playground,lavabo,piscina",Felipe Cardoso,(13) 92373-2965,novo,/propriedades/1038.jpg,"Cobertura em Enseada, Guarujá — salão de festas.",2026-06-18
-1039,studio,Itanhaém,Vila São Paulo,1,1,3,186,724623,0,"closet,suite,depósito",Juliana Lopes,(13) 94562-9888,ativo,/propriedades/1039.jpg,"Studio em Vila São Paulo, Itanhaém — condomínio fechado.",2026-06-09
-1040,casa,Praia Grande,Jardim América,4,1,2,88,1878075,500,suite,Thiago Lopes,(13) 93649-4397,destaque,/propriedades/1040.jpg,"Casa em Jardim América, Praia Grande — elevador.",2026-06-06
-1041,apartamento,Guarujá,Barranco Alto,1,0,4,47,1013939,2500,painel solar,Thiago Lopes,(13) 96548-8138,novo,/propriedades/1041.jpg,"Apartamento em Barranco Alto, Guarujá — vista mar.",2026-06-20
-1042,comercial,Peruíbe,Guaraú,2,0,2,89,563002,1200,"piscina,playground,gerador",Bruno Gomes,(13) 99184-2422,novo,/propriedades/1042.jpg,"Comercial em Guaraú, Peruíbe — sacada.",2026-06-09
-1043,lote,Itanhaém,Canejan,2,1,4,230,393997,500,"painel solar,vagas de garagem",João Ribeiro,(13) 98778-4149,exclusivo,/propriedades/1043.jpg,"Lote em Canejan, Itanhaém — depósito.",2026-07-06
-1044,casa-condo,Santos,Embaré,5,1,2,104,1022865,1200,"playground,depósito,vagas de garagem",Bruno Lima,(13) 92913-1946,destaque,/propriedades/1044.jpg,"Casa-Condo em Embaré, Santos — academia.",2026-06-16
-1045,apartamento,Mongaguá,Balneário,1,0,4,275,1480951,300,"painel solar,elevador",Diego Lima,(13) 94679-1375,ativo,/propriedades/1045.jpg,"Apartamento em Balneário, Mongaguá — lareira.",2026-06-22
-1046,casa-condo,São Vicente,Vila Nova,1,0,3,185,1223744,1200,salão de festas,João Alves,(13) 94666-1805,novo,/propriedades/1046.jpg,"Casa-Condo em Vila Nova, São Vicente — lavabo.",2026-06-25
-1047,apartamento,Bertioga,Centro,1,1,3,187,1864184,1200,"área de serviço,sacada",Fernanda Barros,(13) 97901-5717,destaque,/propriedades/1047.jpg,"Apartamento em Centro, Bertioga — vagas de garagem.",2026-06-14
-1048,casa-condo,Peruíbe,Balneário São João,5,0,2,130,713874,0,suite,Thiago Pereira,(13) 99648-9555,ativo,/propriedades/1048.jpg,"Casa-Condo em Balneário São João, Peruíbe — vagas de garagem.",2026-06-25
-1049,studio,Santos,Embaré,4,1,3,42,1144379,1200,"academia,gerador,churrasqueira",Rafael Costa,(13) 92144-1373,exclusivo,/propriedades/1049.jpg,"Studio em Embaré, Santos — academia.",2026-07-06
-1050,lote,Guarujá,Jardim Las Palmas,2,1,2,146,2162453,1800,"salão de festas,elevador,quintal gourmet,playground",Diego Souza,(13) 93940-6275,exclusivo,/propriedades/1050.jpg,"Lote em Jardim Las Palmas, Guarujá — salão de festas.",2026-06-28
-1051,lote,Praia Grande,Mirim,4,0,1,189,1541912,300,"vista mar,aquecimento solar,lavabo,quintal gourmet",Ana Ferreira,(13) 91101-9249,destaque,/propriedades/1051.jpg,"Lote em Mirim, Praia Grande — elevador.",2026-07-02
-1052,lote,Santos, Santa Teresinha,2,0,3,149,456653,1200,elevador,Diego Costa,(13) 93015-7936,novo,/propriedades/1052.jpg,"Lote em  Santa Teresinha, Santos — painel solar.",2026-07-02
-1053,lote,Mongaguá,Vila São Paulo,2,1,4,80,1666658,1800,"academia,lareira,área de serviço",Juliana Pereira,(13) 94385-5276,destaque,/propriedades/1053.jpg,"Lote em Vila São Paulo, Mongaguá — salão de festas.",2026-07-06
-1054,comercial,Praia Grande,Caierara,5,0,4,257,297102,2500,"lareira,vagas de garagem,condomínio fechado",Fernanda Pereira,(13) 94321-5799,ativo,/propriedades/1054.jpg,"Comercial em Caierara, Praia Grande — vagas de garagem.",2026-06-06
-1055,lote,Itanhaém,Vila Rica,3,0,4,56,983925,1800,"lavabo,churrasqueira,lareira",Patrícia Lima,(13) 97685-3244,ativo,/propriedades/1055.jpg,"Lote em Vila Rica, Itanhaém — quintal gourmet.",2026-06-17
-1056,studio,Praia Grande,Guilhermina,4,0,1,263,1082955,1800,"vagas de garagem,depósito,sacada,salão de festas",Diego Gomes,(13) 93050-9583,destaque,/propriedades/1056.jpg,"Studio em Guilhermina, Praia Grande — área de serviço.",2026-06-29
-1057,comercial,Peruíbe,Jardim Beira Mar,5,1,4,120,1568294,500,vagas de garagem,Ricardo Pereira,(13) 98000-5191,exclusivo,/propriedades/1057.jpg,"Comercial em Jardim Beira Mar, Peruíbe — depósito.",2026-06-11
-1058,casa,Praia Grande,Caierara,1,0,4,180,330046,2500,"gerador,quintal gourmet,elevador,área de serviço",Mariana Barros,(13) 91613-3209,destaque,/propriedades/1058.jpg,"Casa em Caierara, Praia Grande — salão de festas.",2026-06-22
-1059,apartamento,Mongaguá,Vila Atlântica,5,1,2,199,901291,500,"sacada,depósito,lavabo",Bianca Mendes,(13) 94888-4576,ativo,/propriedades/1059.jpg,"Apartamento em Vila Atlântica, Mongaguá — closet.",2026-06-17
-1060,casa,Peruíbe,Costão,4,1,3,209,1267984,800,"suite,elevador,condomínio fechado",Diego Rocha,(13) 94360-9642,ativo,/propriedades/1060.jpg,"Casa em Costão, Peruíbe — lavabo.",2026-06-14
-1061,studio,Santos,Embaré,3,0,2,174,1389715,1800,"aquecimento solar,elevador",Bianca Alves,(13) 95404-3543,ativo,/propriedades/1061.jpg,"Studio em Embaré, Santos — painel solar.",2026-07-06
-1062,casa,Itanhaém,Suarão,2,1,3,149,1400084,500,"lavabo,playground,suite,piscina",Carlos Gomes,(13) 91744-2859,novo,/propriedades/1062.jpg,"Casa em Suarão, Itanhaém — playground.",2026-06-30
-1063,apartamento,Mongaguá,Vila Mirim,2,1,1,44,1028698,800,"vagas de garagem,quintal gourmet,área de serviço",Luciana Teixeira,(13) 93975-7058,ativo,/propriedades/1063.jpg,"Apartamento em Vila Mirim, Mongaguá — depósito.",2026-06-08
-1064,lote,Peruíbe,Vila São José,1,0,2,134,2134804,1200,"vagas de garagem,vista mar,playground",Carlos Barros,(13) 94151-7808,destaque,/propriedades/1064.jpg,"Lote em Vila São José, Peruíbe — piscina.",2026-06-18
-1065,lote,Itanhaém,Vila Rica,5,1,1,198,1268451,500,"closet,vista mar,churrasqueira",Ricardo Cardoso,(13) 96772-1718,ativo,/propriedades/1065.jpg,"Lote em Vila Rica, Itanhaém — área de serviço.",2026-06-10
-1066,casa-condo,Bertioga,Riviera,2,0,1,81,1281297,0,"vagas de garagem,salão de festas,lavabo,depósito",Bruno Barros,(13) 99207-4428,ativo,/propriedades/1066.jpg,"Casa-Condo em Riviera, Bertioga — academia.",2026-07-05
-1067,casa-condo,Itanhaém,Suarão,1,1,3,125,1768448,300,gerador,Rafael Ribeiro,(13) 91594-8696,novo,/propriedades/1067.jpg,"Casa-Condo em Suarão, Itanhaém — gerador.",2026-06-16
-1068,studio,Peruíbe,Costão,5,1,2,182,1505778,500,piscina,Felipe Moura,(13) 91168-5089,exclusivo,/propriedades/1068.jpg,"Studio em Costão, Peruíbe — sacada.",2026-06-19
-1069,lote,Praia Grande,Balneário,1,1,3,234,1139192,2500,"vista mar,salão de festas,lareira,aquecimento solar",Paulo Lima,(13) 97705-7868,exclusivo,/propriedades/1069.jpg,"Lote em Balneário, Praia Grande — lareira.",2026-06-06
-1070,casa,Santos,Aparecida,2,1,1,42,2073598,800,"depósito,vagas de garagem,academia",Luciana Silva,(13) 92804-1485,ativo,/propriedades/1070.jpg,"Casa em Aparecida, Santos — quintal gourmet.",2026-06-30
-1071,comercial,Itanhaém,Canejan,2,1,2,78,246448,300,"academia,churrasqueira,elevador,playground",Patrícia Araújo,(13) 95051-1423,destaque,/propriedades/1071.jpg,"Comercial em Canejan, Itanhaém — suite.",2026-06-11
-1072,apartamento,Itanhaém,Suarão,1,0,3,194,2111843,2500,"academia,condomínio fechado",Thiago Gomes,(13) 99784-3686,ativo,/propriedades/1072.jpg,"Apartamento em Suarão, Itanhaém — quintal gourmet.",2026-06-10
-1073,studio,Praia Grande,Caierara,5,1,3,106,2187951,1800,"elevador,piscina,área de serviço",João Vieira,(13) 97914-7298,novo,/propriedades/1073.jpg,"Studio em Caierara, Praia Grande — suite.",2026-06-12
-1074,studio,Bertioga,Condomínio,5,0,2,75,1228083,1800,"suite,condomínio fechado,salão de festas,aquecimento solar",Luciana Nunes,(13) 98873-3662,ativo,/propriedades/1074.jpg,"Studio em Condomínio, Bertioga — playground.",2026-06-18
-1075,casa,Praia Grande,Boqueirão,1,1,2,252,674121,800,"depósito,aquecimento solar,closet,elevador",Larissa Barros,(13) 92444-1507,exclusivo,/propriedades/1075.jpg,"Casa em Boqueirão, Praia Grande — condomínio fechado.",2026-07-05
-1076,casa-condo,Praia Grande,Balneário,4,0,1,59,1326406,0,"painel solar,condomínio fechado,elevador,playground",Patrícia Pereira,(13) 95601-6510,novo,/propriedades/1076.jpg,"Casa-Condo em Balneário, Praia Grande — aquecimento solar.",2026-06-25
-1077,studio,São Vicente,Parque Bitaru,3,0,3,118,479666,2500,"gerador,condomínio fechado",Camila Lopes,(13) 97068-9231,exclusivo,/propriedades/1077.jpg,"Studio em Parque Bitaru, São Vicente — sacada.",2026-07-01
-1078,studio,Guarujá,Bueno,3,1,2,271,2004684,1200,"quintal gourmet,gerador,churrasqueira",Ricardo Lopes,(13) 99316-1628,exclusivo,/propriedades/1078.jpg,"Studio em Bueno, Guarujá — elevador.",2026-06-17
-1079,cobertura,Mongaguá,Santa Eugênia,3,0,4,153,337635,500,"gerador,playground,closet",Maria Araújo,(13) 99320-2597,ativo,/propriedades/1079.jpg,"Cobertura em Santa Eugênia, Mongaguá — quintal gourmet.",2026-06-07
-1080,comercial,Santos,Ponta da Praia,5,1,2,223,1211884,800,"depósito,suite",Ana Gomes,(13) 96589-3638,novo,/propriedades/1080.jpg,"Comercial em Ponta da Praia, Santos — lareira.",2026-06-14
-1081,studio,Itanhaém,Jardim Sapê,5,0,2,139,2076819,500,"aquecimento solar,sacada",Bianca Ribeiro,(13) 95453-1629,ativo,/propriedades/1081.jpg,"Studio em Jardim Sapê, Itanhaém — painel solar.",2026-06-07
-1082,lote,Mongaguá,Vila Atlântica,5,0,4,253,735136,500,"elevador,suite",Juliana Ribeiro,(13) 94253-9222,ativo,/propriedades/1082.jpg,"Lote em Vila Atlântica, Mongaguá — lareira.",2026-06-08
-1083,cobertura,Bertioga,Jardim Praia Grande,2,0,2,78,890820,1200,"vista mar,gerador",Juliana Cardoso,(13) 99006-6657,exclusivo,/propriedades/1083.jpg,"Cobertura em Jardim Praia Grande, Bertioga — academia.",2026-06-24
-1084,lote,São Vicente,SãoJosé,1,1,3,71,1468810,500,"elevador,sacada,piscina",Rafael Cardoso,(13) 91459-8122,novo,/propriedades/1084.jpg,"Lote em SãoJosé, São Vicente — sacada.",2026-06-28
-1085,apartamento,São Vicente,Ponta de Pedras,4,1,2,47,284480,1200,"salão de festas,painel solar,depósito",Juliana Vieira,(13) 98736-3201,exclusivo,/propriedades/1085.jpg,"Apartamento em Ponta de Pedras, São Vicente — painel solar.",2026-06-30
-1086,apartamento,Guarujá,Vicente de Carvalho,5,1,1,133,858767,300,closet,Larissa Lima,(13) 98127-9720,destaque,/propriedades/1086.jpg,"Apartamento em Vicente de Carvalho, Guarujá — elevador.",2026-06-27
-1087,lote,Itanhaém,Jardim Sapê,3,0,4,244,862612,1800,"aquecimento solar,depósito,área de serviço",Paulo Ferreira,(13) 94796-5695,exclusivo,/propriedades/1087.jpg,"Lote em Jardim Sapê, Itanhaém — gerador.",2026-06-08
-1088,studio,Bertioga,Riviera,1,1,3,191,731235,800,"aquecimento solar,piscina,lavabo",Rafael Moreira,(13) 97833-6097,exclusivo,/propriedades/1088.jpg,"Studio em Riviera, Bertioga — vagas de garagem.",2026-06-28
-1089,cobertura,Santos,Embaré,4,1,1,89,1354811,2500,"closet,aquecimento solar",Paulo Vieira,(13) 95704-1945,ativo,/propriedades/1089.jpg,"Cobertura em Embaré, Santos — lavabo.",2026-06-26
-1090,apartamento,Guarujá,Santo Amaro,3,0,3,65,620572,1200,suite,Patrícia Souza,(13) 95625-9992,exclusivo,/propriedades/1090.jpg,"Apartamento em Santo Amaro, Guarujá — closet.",2026-06-13
-1091,casa,São Vicente,Gonzaguinha,4,0,4,210,2155931,2500,"vagas de garagem,sacada,lareira,playground",Ana Gomes,(13) 93437-1147,novo,/propriedades/1091.jpg,"Casa em Gonzaguinha, São Vicente — playground.",2026-06-06
-1092,casa-condo,Bertioga,Jardim Praia Grande,2,1,1,164,264947,1200,"condomínio fechado,churrasqueira,academia",Juliana Ferreira,(13) 91339-3263,ativo,/propriedades/1092.jpg,"Casa-Condo em Jardim Praia Grande, Bertioga — elevador.",2026-07-01
-1093,casa-condo,Praia Grande,Jardim América,3,1,1,249,1387189,1800,"lavabo,quintal gourmet,playground,churrasqueira",Maria Gomes,(13) 97674-9755,destaque,/propriedades/1093.jpg,"Casa-Condo em Jardim América, Praia Grande — elevador.",2026-06-13
-1094,comercial,Santos, Vila Nova,4,0,1,107,872321,1200,"lareira,quintal gourmet,piscina,sacada",Felipe Mendes,(13) 99250-1133,destaque,/propriedades/1094.jpg,"Comercial em  Vila Nova, Santos — depósito.",2026-07-06
-1095,cobertura,Praia Grande,Balneário,2,0,1,164,1271635,800,"playground,vista mar",Camila Mendes,(13) 94202-5423,novo,/propriedades/1095.jpg,"Cobertura em Balneário, Praia Grande — quintal gourmet.",2026-06-11
-1096,casa-condo,Santos,Ponta da Praia,3,0,3,59,1966436,300,depósito,Juliana Silva,(13) 96525-5662,novo,/propriedades/1096.jpg,"Casa-Condo em Ponta da Praia, Santos — academia.",2026-06-23
-1097,lote,Guarujá,Pernambuco,1,0,4,51,416432,0,"sacada,área de serviço",Fernanda Silva,(13) 98106-2632,ativo,/propriedades/1097.jpg,"Lote em Pernambuco, Guarujá — playground.",2026-07-05
-1098,cobertura,Santos, Vila Nova,2,0,1,58,213610,0,"playground,depósito",Fernanda Lima,(13) 92002-5263,ativo,/propriedades/1098.jpg,"Cobertura em  Vila Nova, Santos — playground.",2026-06-19
-1099,cobertura,Guarujá,Bueno,4,1,4,193,849846,500,"churrasqueira,closet",Juliana Costa,(13) 92959-8601,ativo,/propriedades/1099.jpg,"Cobertura em Bueno, Guarujá — lavabo.",2026-07-04
-1100,cobertura,São Vicente,Centro,1,0,4,266,239922,0,"piscina,salão de festas",Maria Moura,(13) 97540-9458,novo,/propriedades/1100.jpg,"Cobertura em Centro, São Vicente — depósito.",2026-06-25
-1101,studio,Itanhaém,Canejan,5,0,2,266,1460676,0,"lareira,playground,depósito,churrasqueira",Fernanda Nunes,(13) 92619-3295,destaque,/propriedades/1101.jpg,"Studio em Canejan, Itanhaém — área de serviço.",2026-06-23
-1102,apartamento,Santos, Vila Nova,2,1,3,249,2063129,1800,"painel solar,quintal gourmet",Amanda Mendes,(13) 91973-9103,destaque,/propriedades/1102.jpg,"Apartamento em  Vila Nova, Santos — suite.",2026-06-15
-1103,studio,Mongaguá,Santa Eugênia,5,0,1,218,1684413,1200,closet,Ana Lima,(13) 93593-9673,ativo,/propriedades/1103.jpg,"Studio em Santa Eugênia, Mongaguá — lareira.",2026-07-04
-1104,comercial,Peruíbe,Guaraú,4,1,4,180,251586,1800,"gerador,playground,piscina,aquecimento solar",Camila Rocha,(13) 97860-9016,ativo,/propriedades/1104.jpg,"Comercial em Guaraú, Peruíbe — salão de festas.",2026-07-04
-1105,apartamento,Peruíbe,Ilha Comprida,5,0,1,112,914282,1800,"painel solar,closet",Felipe Barros,(13) 94882-7696,novo,/propriedades/1105.jpg,"Apartamento em Ilha Comprida, Peruíbe — closet.",2026-06-13
-1106,cobertura,Santos, Santa Teresinha,1,1,4,42,1554576,800,"vagas de garagem,aquecimento solar",Bianca Ribeiro,(13) 98025-5756,ativo,/propriedades/1106.jpg,"Cobertura em  Santa Teresinha, Santos — aquecimento solar.",2026-06-22
-1107,comercial,Santos,José Menino,2,1,1,275,433284,1800,"vagas de garagem,piscina",Patrícia Lopes,(13) 94988-4109,destaque,/propriedades/1107.jpg,"Comercial em José Menino, Santos — piscina.",2026-06-24
-1108,casa-condo,São Vicente,Ponta de Pedras,2,0,1,35,379910,300,"academia,aquecimento solar",Diego Pereira,(13) 92035-8042,destaque,/propriedades/1108.jpg,"Casa-Condo em Ponta de Pedras, São Vicente — vista mar.",2026-06-29
-1109,casa,Itanhaém,Vila Rica,2,1,3,240,1982676,0,"salão de festas,gerador,academia",Rafael Souza,(13) 91860-5522,destaque,/propriedades/1109.jpg,"Casa em Vila Rica, Itanhaém — closet.",2026-07-05
-1110,casa-condo,Bertioga,Vista Linda,4,1,3,167,1379611,1800,"condomínio fechado,academia,área de serviço",Maria Silva,(13) 93048-9367,novo,/propriedades/1110.jpg,"Casa-Condo em Vista Linda, Bertioga — vagas de garagem.",2026-06-26
-1111,cobertura,Itanhaém,Centro,4,0,1,245,297822,300,"lavabo,sacada",Bruno Costa,(13) 91460-6811,destaque,/propriedades/1111.jpg,"Cobertura em Centro, Itanhaém — churrasqueira.",2026-06-20
-1112,casa-condo,Itanhaém,Suarão,2,1,3,43,1831204,1200,"piscina,gerador,vagas de garagem",Juliana Araújo,(13) 98049-6159,exclusivo,/propriedades/1112.jpg,"Casa-Condo em Suarão, Itanhaém — suite.",2026-07-03
-1113,comercial,Mongaguá,Vila São Paulo,1,0,4,59,1640945,0,"piscina,suite",Patrícia Alves,(13) 98993-1095,destaque,/propriedades/1113.jpg,"Comercial em Vila São Paulo, Mongaguá — gerador.",2026-06-13
-1114,casa-condo,Peruíbe,Balneário São João,5,0,2,149,1227312,2500,"lavabo,lareira,vagas de garagem,vista mar",João Ferreira,(13) 94527-2315,ativo,/propriedades/1114.jpg,"Casa-Condo em Balneário São João, Peruíbe — suite.",2026-06-09
-1115,apartamento,Bertioga,Condomínio,2,0,1,175,203264,1200,"closet,quintal gourmet,lareira,área de serviço",Camila Teixeira,(13) 95059-4836,destaque,/propriedades/1115.jpg,"Apartamento em Condomínio, Bertioga — churrasqueira.",2026-06-26
-1116,apartamento,Bertioga,Riviera,3,0,4,238,1072441,0,lareira,Mariana Barros,(13) 91853-2908,ativo,/propriedades/1116.jpg,"Apartamento em Riviera, Bertioga — aquecimento solar.",2026-06-15
-1117,cobertura,São Vicente,Jardim Rio Branco,2,1,3,138,1219007,1800,"closet,suite",Thiago Silva,(13) 98954-1610,ativo,/propriedades/1117.jpg,"Cobertura em Jardim Rio Branco, São Vicente — piscina.",2026-06-14
-1118,casa-condo,Mongaguá,Balneário,3,0,1,165,1689004,2500,"lavabo,aquecimento solar,sacada",Juliana Barros,(13) 97931-9968,exclusivo,/propriedades/1118.jpg,"Casa-Condo em Balneário, Mongaguá — churrasqueira.",2026-06-30
-1119,studio,Bertioga,Mato Dentro,5,0,3,106,1214815,800,"sacada,painel solar,academia",Amanda Ribeiro,(13) 97658-3743,novo,/propriedades/1119.jpg,"Studio em Mato Dentro, Bertioga — piscina.",2026-07-05
-1120,casa,Praia Grande,Jardim América,1,0,4,229,1993775,1800,gerador,Luciana Rocha,(13) 99113-4855,ativo,/propriedades/1120.jpg,"Casa em Jardim América, Praia Grande — sacada.",2026-06-09
-1121,apartamento,Santos,Boqueirão,5,1,2,66,2020089,800,academia,Paulo Rocha,(13) 95005-2217,exclusivo,/propriedades/1121.jpg,"Apartamento em Boqueirão, Santos — lareira.",2026-06-08
-1122,cobertura,Santos, Santa Teresinha,4,0,1,48,269342,1200,"condomínio fechado,sacada,salão de festas,closet",Patrícia Nunes,(13) 93526-1047,ativo,/propriedades/1122.jpg,"Cobertura em  Santa Teresinha, Santos — elevador.",2026-06-19
-1123,cobertura,Guarujá,Enseada,2,1,3,183,1936956,2500,"salão de festas,condomínio fechado",Patrícia Lopes,(13) 96094-9699,ativo,/propriedades/1123.jpg,"Cobertura em Enseada, Guarujá — piscina.",2026-06-14
-1124,casa-condo,Mongaguá,Vila São Paulo,4,0,2,188,831285,800,"quintal gourmet,condomínio fechado,lavabo",Maria Souza,(13) 96424-3359,ativo,/propriedades/1124.jpg,"Casa-Condo em Vila São Paulo, Mongaguá — quintal gourmet.",2026-07-01
-1125,comercial,Bertioga,Vista Linda,5,0,1,204,566582,1200,gerador,Diego Lima,(13) 96793-5269,destaque,/propriedades/1125.jpg,"Comercial em Vista Linda, Bertioga — gerador.",2026-06-18
-1126,studio,São Vicente,Centro,1,1,3,80,419927,1200,"lavabo,elevador,painel solar,sacada",Juliana Teixeira,(13) 97959-8337,exclusivo,/propriedades/1126.jpg,"Studio em Centro, São Vicente — vagas de garagem.",2026-06-20
-1127,casa-condo,Peruíbe,Ilha Comprida,1,1,3,153,1721014,1800,"vista mar,área de serviço,playground",Maria Cardoso,(13) 91936-7638,novo,/propriedades/1127.jpg,"Casa-Condo em Ilha Comprida, Peruíbe — gerador.",2026-06-15
-1128,lote,Guarujá,Bueno,3,0,1,173,1282321,2500,"área de serviço,academia,piscina",Bruno Cardoso,(13) 97878-6855,exclusivo,/propriedades/1128.jpg,"Lote em Bueno, Guarujá — playground.",2026-06-09
-1129,studio,Praia Grande,Jardim América,4,1,3,254,1869994,300,"área de serviço,painel solar,quintal gourmet,lavabo",Juliana Cardoso,(13) 96425-9356,ativo,/propriedades/1129.jpg,"Studio em Jardim América, Praia Grande — salão de festas.",2026-07-04
-1130,cobertura,Peruíbe,Costão,1,0,3,260,1840530,500,"quintal gourmet,gerador",Camila Rocha,(13) 94778-7205,ativo,/propriedades/1130.jpg,"Cobertura em Costão, Peruíbe — salão de festas.",2026-06-20
-1131,studio,São Vicente,Itararé,2,0,1,175,2087592,800,vagas de garagem,Carlos Silva,(13) 94505-3504,destaque,/propriedades/1131.jpg,"Studio em Itararé, São Vicente — vista mar.",2026-06-28
-1132,studio,Mongaguá,Vila São Paulo,4,0,2,40,1216377,500,"painel solar,lavabo",Carlos Ribeiro,(13) 92421-5978,ativo,/propriedades/1132.jpg,"Studio em Vila São Paulo, Mongaguá — área de serviço.",2026-06-25
-1133,comercial,Itanhaém,Canejan,4,0,2,89,338246,800,condomínio fechado,Camila Nunes,(13) 97924-8344,destaque,/propriedades/1133.jpg,"Comercial em Canejan, Itanhaém — depósito.",2026-06-17
-1134,studio,Bertioga,Condomínio,2,1,1,96,2087491,500,"gerador,sacada,suite",Bianca Gomes,(13) 91909-2456,destaque,/propriedades/1134.jpg,"Studio em Condomínio, Bertioga — área de serviço.",2026-06-14
-1135,lote,Peruíbe,Estância,5,0,1,55,2147615,1800,condomínio fechado,Mariana Lopes,(13) 98347-6304,ativo,/propriedades/1135.jpg,"Lote em Estância, Peruíbe — lavabo.",2026-07-04
-1136,casa,Praia Grande,Real,2,0,4,276,487031,1200,"lavabo,sacada",Mariana Ferreira,(13) 95953-8086,destaque,/propriedades/1136.jpg,"Casa em Real, Praia Grande — condomínio fechado.",2026-06-22
-1137,comercial,Itanhaém,Vila Tupy,1,1,3,248,779671,500,lareira,Ana Mendes,(13) 95747-2212,ativo,/propriedades/1137.jpg,"Comercial em Vila Tupy, Itanhaém — aquecimento solar.",2026-07-03
-1138,apartamento,Guarujá,Santo Amaro,5,1,2,276,2198693,1200,"elevador,gerador,closet,lareira",João Costa,(13) 97878-9110,exclusivo,/propriedades/1138.jpg,"Apartamento em Santo Amaro, Guarujá — closet.",2026-06-10
-1139,casa-condo,Guarujá,Barranco Alto,3,1,3,194,1231799,2500,"lavabo,condomínio fechado,vista mar",Carlos Lima,(13) 99410-8838,novo,/propriedades/1139.jpg,"Casa-Condo em Barranco Alto, Guarujá — aquecimento solar.",2026-06-22
-1140,comercial,Itanhaém,Vila Tupy,1,1,4,192,268241,1200,"sacada,elevador",Felipe Costa,(13) 99102-4832,ativo,/propriedades/1140.jpg,"Comercial em Vila Tupy, Itanhaém — academia.",2026-06-24
-1141,lote,Bertioga,Condomínio,1,0,2,82,2158765,500,piscina,Luciana Lima,(13) 99623-1827,exclusivo,/propriedades/1141.jpg,"Lote em Condomínio, Bertioga — academia.",2026-06-28
-1142,casa,Santos,Embaré,1,0,1,147,246874,300,"lareira,churrasqueira,academia",Felipe Cardoso,(13) 94168-6929,ativo,/propriedades/1142.jpg,"Casa em Embaré, Santos — salão de festas.",2026-07-01
-1143,casa-condo,Praia Grande,Mirim,2,1,2,278,528400,500,"aquecimento solar,academia,área de serviço,lareira",Juliana Souza,(13) 94487-6572,destaque,/propriedades/1143.jpg,"Casa-Condo em Mirim, Praia Grande — sacada.",2026-06-26
-1144,comercial,Bertioga,Costão,2,1,1,143,1395446,500,gerador,Bianca Teixeira,(13) 91707-5003,destaque,/propriedades/1144.jpg,"Comercial em Costão, Bertioga — playground.",2026-06-27
-1145,comercial,Praia Grande,Mirim,5,0,4,132,2069550,2500,quintal gourmet,Maria Rocha,(13) 98117-9187,novo,/propriedades/1145.jpg,"Comercial em Mirim, Praia Grande — playground.",2026-06-26
-1146,casa-condo,Mongaguá,Balneário,5,0,4,150,858151,800,"depósito,lavabo",Larissa Alves,(13) 96147-6208,ativo,/propriedades/1146.jpg,"Casa-Condo em Balneário, Mongaguá — sacada.",2026-06-20
-1147,comercial,Praia Grande,Jardim América,1,1,4,172,567154,0,"quintal gourmet,aquecimento solar,gerador,churrasqueira",Fernanda Ribeiro,(13) 93185-3559,ativo,/propriedades/1147.jpg,"Comercial em Jardim América, Praia Grande — piscina.",2026-06-08
-1148,casa-condo,Guarujá,Santo Amaro,2,1,3,183,1031213,0,"closet,suite,quintal gourmet",Bruno Costa,(13) 96554-1986,exclusivo,/propriedades/1148.jpg,"Casa-Condo em Santo Amaro, Guarujá — lareira.",2026-06-15
-1149,lote,Bertioga,Centro,3,1,3,43,1532431,2500,depósito,Rafael Vieira,(13) 96037-6552,exclusivo,/propriedades/1149.jpg,"Lote em Centro, Bertioga — gerador.",2026-06-19
-1150,casa,Peruíbe,Estância,4,0,4,63,1942412,500,"piscina,área de serviço",Bruno Lopes,(13) 92059-1164,exclusivo,/propriedades/1150.jpg,"Casa em Estância, Peruíbe — piscina.",2026-06-21
-1151,cobertura,São Vicente,Jardim Rio Branco,4,1,2,226,1831881,1200,"elevador,vista mar,churrasqueira",Maria Costa,(13) 92203-6245,destaque,/propriedades/1151.jpg,"Cobertura em Jardim Rio Branco, São Vicente — lareira.",2026-07-01
-1152,studio,São Vicente,Gonzaguinha,2,1,2,258,2064752,300,"área de serviço,aquecimento solar,vista mar,vagas de garagem",Camila Gomes,(13) 93350-6737,destaque,/propriedades/1152.jpg,"Studio em Gonzaguinha, São Vicente — depósito.",2026-06-12
-1153,casa-condo,Praia Grande,Guilhermina,2,0,3,208,266992,500,suite,João Lima,(13) 99095-9044,ativo,/propriedades/1153.jpg,"Casa-Condo em Guilhermina, Praia Grande — painel solar.",2026-06-09
-1154,comercial,Peruíbe,Guaraú,5,0,2,68,1602102,1200,suite,Patrícia Ribeiro,(13) 99779-7073,novo,/propriedades/1154.jpg,"Comercial em Guaraú, Peruíbe — churrasqueira.",2026-07-05
-1155,studio,Peruíbe,Balneário São João,5,1,4,195,682393,2500,"painel solar,academia,quintal gourmet",Luciana Vieira,(13) 91946-1227,exclusivo,/propriedades/1155.jpg,"Studio em Balneário São João, Peruíbe — academia.",2026-07-02
-1156,apartamento,Praia Grande,Guilhermina,2,1,4,268,183693,2500,"área de serviço,salão de festas,suite",Paulo Lima,(13) 96191-3868,ativo,/propriedades/1156.jpg,"Apartamento em Guilhermina, Praia Grande — condomínio fechado.",2026-06-16
-1157,cobertura,Itanhaém,Vila São Paulo,2,1,2,279,499422,1800,"sacada,closet",Camila Teixeira,(13) 94747-9203,destaque,/propriedades/1157.jpg,"Cobertura em Vila São Paulo, Itanhaém — painel solar.",2026-06-26
-1158,comercial,Guarujá,Santa Maria,3,0,2,40,1908203,500,"playground,salão de festas",Ricardo Mendes,(13) 97575-7153,destaque,/propriedades/1158.jpg,"Comercial em Santa Maria, Guarujá — sacada.",2026-06-11
-1159,studio,Mongaguá,Centro,2,0,3,122,858762,0,piscina,João Barros,(13) 92788-3954,ativo,/propriedades/1159.jpg,"Studio em Centro, Mongaguá — aquecimento solar.",2026-06-13
-1160,apartamento,Santos,Gonzaguinha,3,1,2,120,1050000,0,"vista mar,suite",Amanda Alves,(13) 95255-5326,destaque,/propriedades/1160.jpg,Apartamento amplo com vista mar em Santos.,2026-07-06
-1161,apartamento,Guarujá,Santa Maria,2,1,2,95,780000,0,condominio fechado,Ricardo Mendes,(13) 97575-7153,ativo,/propriedades/1161.jpg,Apartamento em condomínio fechado no Guarujá.,2026-07-06
-1162,casa,Itanhaém,Vila Rica,4,2,3,180,1350000,0,"quintal gourmet,piscina",João Rocha,(13) 93286-6174,destaque,/propriedades/1162.jpg,Casa com quintal gourmet e piscina em Itanhaém.,2026-07-06
-1163,cobertura,Praia Grande,Guilhermina,3,1,2,200,2100000,0,"sacada,suite,vista mar",Paulo Lima,(13) 96191-3868,exclusivo,/propriedades/1163.jpg,Cobertura com sacada e vista mar em Praia Grande.,2026-07-06
-1164,casa-condo,Bertioga,Centro,3,1,1,130,890000,1200,"lareira,closet",Camila Teixeira,(13) 94747-9203,ativo,/propriedades/1164.jpg,Casa-condo com lareira em Bertioga.,2026-07-06
-1165,lote,Peruíbe,Balneário São João,0,0,0,250,180000,0,terreno plano,Luciana Vieira,(13) 91946-1227,novo,/propriedades/1165.jpg,Lote plano a 500m da praia.,2026-07-06
-1166,apartamento,Santos,Embaré,2,1,1,75,520000,850,varanda,Roberto Dias,(11) 99999-0036,novo,/propriedades/1166.jpg,Apartamento compacto com varanda em Santos.,2026-07-06
-1167,cobertura,Guarujá,Joys,3,2,3,210,3200000,2500,piscina privativa,Bruno Alves,(11) 97288-4331,destaque,/propriedades/1167.jpg,Cobertura com piscina privativa no Guarujá.,2026-07-06
-1168,casa,Itanhaém,Jardim Anchura,4,2,4,250,1750000,0,"churrasqueira,lavabo",Maria Silva,(13) 91234-5678,novo,/propriedades/1168.jpg,Casa térrea com área gourmet em Itanhaém.,2026-07-06
-1169,apartamento,Santos,Boqueirão,2,1,1,85,620000,950,academia,Paulo Mendes,(11) 99282-8480,novo,/propriedades/1169.jpg,Apartamento em prédio com academia em Santos.,2026-07-06
-1170,studio,Mongaguá,Centro,1,1,1,45,290000,400,investimento,João Barros,(13) 92788-3954,novo,/propriedades/1170.jpg,Studio compacto para investimento em Mongaguá.,2026-07-06
-1171,apartamento,Praia Grande,Tupy,2,1,2,90,710000,1100,varanda gourmet,Ana Costa,(13) 94567-8901,novo,/propriedades/1171.jpg,Apartamento com varanda gourmet em Praia Grande.,2026-07-06
-1172,casa,Peruíbe,Jardim São Paulo,3,1,2,150,980000,0,pomar,Pedro Souza,(13) 93456-7890,novo,/propriedades/1172.jpg,Casa com pomar a 2km da praia.,2026-07-06
-1173,apartamento,Bertioga,Riviera,2,1,1,80,590000,750,segurança 24h,Lucas Pereira,(13) 97890-1234,novo,/propriedades/1173.jpg,Apartamento em condomínio seguro em Bertioga.,2026-07-06
-1174,cobertura,Santos,José Menino,3,2,2,180,2500000,1800,duplex,Fernanda Lima,(13) 95678-9012,destaque,/propriedades/1174.jpg,Cobertura duplex com vista panorâmica em Santos.,2026-07-06
-1175,lote,Itanhaém,Cidade Ocian,0,0,0,300,220000,0,frente mar,Carlos Dias,(13) 92345-6789,novo,/propriedades/1175.jpg,Lote à venda frente mar em Itanhaém.,2026-07-06
-1176,apartamento,Guarujá,Enseada,2,1,1,70,480000,600,piscina,Juliana Rocha,(13) 96789-0123,novo,/propriedades/1176.html,Apartamento aconchegante na Enseada.,2026-07-06
-1177,casa,Santos,Ponta da Praia,3,1,2,140,1150000,0,proximo praia,Marcos Oliveira,(13) 91234-0000,destaque,/propriedades/1177.jpg,Casa a 200m da praia em Santos.,2026-07-06
-1178,apartamento,Praia Grande,Boqueirão,2,1,1,78,540000,900,nova,Patricia Souza,(13) 93456-1111,novo,/propriedades/1178.jpg,Apartamento novo entrega 2027 em Praia Grande.,2026-07-06
-1179,cobertura,Peruíbe,Centro,2,1,2,160,1450000,1200,terraço,Ricardo Barros,(13) 94567-2222,novo,/propriedades/1179.jpg,Cobertura com terraço gourmet em Peruíbe.,2026-07-06
+id,titulo,cidade,tipo,preco,dormitorios,area,descricao
+1001,Casa com 1 dormitórios em Bertioga,Bertioga,Casa,950000,1,55,"Oportunidade de casa no litoral paulista. 1 dormitórios, 55m², localização privilegiada em Bertioga."
+1002,Cobertura com 1 dormitórios em Guarujá,Guarujá,Cobertura,1800000,1,240,"Oportunidade de cobertura no litoral paulista. 1 dormitórios, 240m², localização privilegiada em Guarujá."
+1003,Apartamento com 4 dormitórios em Ilhabela,Ilhabela,Apartamento,250000,4,160,"Oportunidade de apartamento no litoral paulista. 4 dormitórios, 160m², localização privilegiada em Ilhabela."
+1004,Casa com 5 dormitórios em Guarujá,Guarujá,Casa,250000,5,160,"Oportunidade de casa no litoral paulista. 5 dormitórios, 160m², localização privilegiada em Guarujá."
+1005,Studio com 2 dormitórios em Santos,Santos,Studio,250000,2,280,"Oportunidade de studio no litoral paulista. 2 dormitórios, 280m², localização privilegiada em Santos."
+1006,Studio com 4 dormitórios em Santos,Santos,Studio,1800000,4,35,"Oportunidade de studio no litoral paulista. 4 dormitórios, 35m², localização privilegiada em Santos."
+1007,Apartamento com 2 dormitórios em Ilhabela,Ilhabela,Apartamento,1500000,2,110,"Oportunidade de apartamento no litoral paulista. 2 dormitórios, 110m², localização privilegiada em Ilhabela."
+1008,Casa com 1 dormitórios em Peruíbe,Peruíbe,Casa,1500000,1,280,"Oportunidade de casa no litoral paulista. 1 dormitórios, 280m², localização privilegiada em Peruíbe."
+1009,Studio com 1 dormitórios em Praia Grande,Praia Grande,Studio,320000,1,280,"Oportunidade de studio no litoral paulista. 1 dormitórios, 280m², localização privilegiada em Praia Grande."
+1010,Cobertura com 5 dormitórios em Ilhabela,Ilhabela,Cobertura,250000,5,55,"Oportunidade de cobertura no litoral paulista. 5 dormitórios, 55m², localização privilegiada em Ilhabela."
+1011,Studio com 4 dormitórios em Santos,Santos,Studio,450000,4,240,"Oportunidade de studio no litoral paulista. 4 dormitórios, 240m², localização privilegiada em Santos."
+1012,Cobertura com 5 dormitórios em Peruíbe,Peruíbe,Cobertura,1200000,5,200,"Oportunidade de cobertura no litoral paulista. 5 dormitórios, 200m², localização privilegiada em Peruíbe."
+1013,Cobertura com 2 dormitórios em Bertioga,Bertioga,Cobertura,450000,2,90,"Oportunidade de cobertura no litoral paulista. 2 dormitórios, 90m², localização privilegiada em Bertioga."
+1014,Studio com 5 dormitórios em Guarujá,Guarujá,Studio,520000,5,200,"Oportunidade de studio no litoral paulista. 5 dormitórios, 200m², localização privilegiada em Guarujá."
+1015,Loft com 3 dormitórios em Bertioga,Bertioga,Loft,1200000,3,280,"Oportunidade de loft no litoral paulista. 3 dormitórios, 280m², localização privilegiada em Bertioga."
+1016,Apartamento com 4 dormitórios em Guarujá,Guarujá,Apartamento,1500000,4,75,"Oportunidade de apartamento no litoral paulista. 4 dormitórios, 75m², localização privilegiada em Guarujá."
+1017,Casa com 4 dormitórios em Bertioga,Bertioga,Casa,1200000,4,35,"Oportunidade de casa no litoral paulista. 4 dormitórios, 35m², localização privilegiada em Bertioga."
+1018,Studio com 3 dormitórios em Guarujá,Guarujá,Studio,1800000,3,130,"Oportunidade de studio no litoral paulista. 3 dormitórios, 130m², localização privilegiada em Guarujá."
+1019,Studio com 5 dormitórios em Bertioga,Bertioga,Studio,1200000,5,200,"Oportunidade de studio no litoral paulista. 5 dormitórios, 200m², localização privilegiada em Bertioga."
+1020,Apartamento com 4 dormitórios em Guarujá,Guarujá,Apartamento,520000,4,55,"Oportunidade de apartamento no litoral paulista. 4 dormitórios, 55m², localização privilegiada em Guarujá."
+1021,Loft com 5 dormitórios em Santos,Santos,Loft,520000,5,200,"Oportunidade de loft no litoral paulista. 5 dormitórios, 200m², localização privilegiada em Santos."
+1022,Loft com 3 dormitórios em Praia Grande,Praia Grande,Loft,950000,3,35,"Oportunidade de loft no litoral paulista. 3 dormitórios, 35m², localização privilegiada em Praia Grande."
+1023,Cobertura com 5 dormitórios em Itanhaém,Itanhaém,Cobertura,320000,5,55,"Oportunidade de cobertura no litoral paulista. 5 dormitórios, 55m², localização privilegiada em Itanhaém."
+1024,Apartamento com 3 dormitórios em Itanhaém,Itanhaém,Apartamento,450000,3,75,"Oportunidade de apartamento no litoral paulista. 3 dormitórios, 75m², localização privilegiada em Itanhaém."
+1025,Flat com 4 dormitórios em Ilhabela,Ilhabela,Flat,950000,4,55,"Oportunidade de flat no litoral paulista. 4 dormitórios, 55m², localização privilegiada em Ilhabela."
+1026,Flat com 5 dormitórios em Ubatuba,Ubatuba,Flat,950000,5,110,"Oportunidade de flat no litoral paulista. 5 dormitórios, 110m², localização privilegiada em Ubatuba."
+1027,Flat com 3 dormitórios em Ubatuba,Ubatuba,Flat,1500000,3,160,"Oportunidade de flat no litoral paulista. 3 dormitórios, 160m², localização privilegiada em Ubatuba."
+1028,Loft com 2 dormitórios em Bertioga,Bertioga,Loft,950000,2,75,"Oportunidade de loft no litoral paulista. 2 dormitórios, 75m², localização privilegiada em Bertioga."
+1029,Casa com 2 dormitórios em Guarujá,Guarujá,Casa,320000,2,90,"Oportunidade de casa no litoral paulista. 2 dormitórios, 90m², localização privilegiada em Guarujá."
+1030,Flat com 2 dormitórios em Santos,Santos,Flat,1800000,2,110,"Oportunidade de flat no litoral paulista. 2 dormitórios, 110m², localização privilegiada em Santos."
+1031,Apartamento com 4 dormitórios em Praia Grande,Praia Grande,Apartamento,320000,4,240,"Oportunidade de apartamento no litoral paulista. 4 dormitórios, 240m², localização privilegiada em Praia Grande."
+1032,Studio com 3 dormitórios em Bertioga,Bertioga,Studio,1800000,3,75,"Oportunidade de studio no litoral paulista. 3 dormitórios, 75m², localização privilegiada em Bertioga."
+1033,Flat com 4 dormitórios em Santos,Santos,Flat,1500000,4,160,"Oportunidade de flat no litoral paulista. 4 dormitórios, 160m², localização privilegiada em Santos."
+1034,Flat com 4 dormitórios em Peruíbe,Peruíbe,Flat,250000,4,160,"Oportunidade de flat no litoral paulista. 4 dormitórios, 160m², localização privilegiada em Peruíbe."
+1035,Casa com 2 dormitórios em Santos,Santos,Casa,250000,2,200,"Oportunidade de casa no litoral paulista. 2 dormitórios, 200m², localização privilegiada em Santos."
+1036,Apartamento com 5 dormitórios em Ubatuba,Ubatuba,Apartamento,750000,5,35,"Oportunidade de apartamento no litoral paulista. 5 dormitórios, 35m², localização privilegiada em Ubatuba."
+1037,Apartamento com 2 dormitórios em Guarujá,Guarujá,Apartamento,1800000,2,240,"Oportunidade de apartamento no litoral paulista. 2 dormitórios, 240m², localização privilegiada em Guarujá."
+1038,Cobertura com 1 dormitórios em Guarujá,Guarujá,Cobertura,1800000,1,55,"Oportunidade de cobertura no litoral paulista. 1 dormitórios, 55m², localização privilegiada em Guarujá."
+1039,Studio com 2 dormitórios em Ilhabela,Ilhabela,Studio,950000,2,110,"Oportunidade de studio no litoral paulista. 2 dormitórios, 110m², localização privilegiada em Ilhabela."
+1040,Studio com 4 dormitórios em Bertioga,Bertioga,Studio,750000,4,55,"Oportunidade de studio no litoral paulista. 4 dormitórios, 55m², localização privilegiada em Bertioga."
+1041,Flat com 4 dormitórios em Guarujá,Guarujá,Flat,1200000,4,200,"Oportunidade de flat no litoral paulista. 4 dormitórios, 200m², localização privilegiada em Guarujá."
+1042,Apartamento com 1 dormitórios em Praia Grande,Praia Grande,Apartamento,320000,1,130,"Oportunidade de apartamento no litoral paulista. 1 dormitórios, 130m², localização privilegiada em Praia Grande."
+1043,Flat com 5 dormitórios em Praia Grande,Praia Grande,Flat,320000,5,35,"Oportunidade de flat no litoral paulista. 5 dormitórios, 35m², localização privilegiada em Praia Grande."
+1044,Studio com 2 dormitórios em Ilhabela,Ilhabela,Studio,750000,2,240,"Oportunidade de studio no litoral paulista. 2 dormitórios, 240m², localização privilegiada em Ilhabela."
+1045,Studio com 1 dormitórios em Santos,Santos,Studio,520000,1,110,"Oportunidade de studio no litoral paulista. 1 dormitórios, 110m², localização privilegiada em Santos."
+1046,Casa com 2 dormitórios em Bertioga,Bertioga,Casa,750000,2,240,"Oportunidade de casa no litoral paulista. 2 dormitórios, 240m², localização privilegiada em Bertioga."
+1047,Loft com 5 dormitórios em Bertioga,Bertioga,Loft,450000,5,90,"Oportunidade de loft no litoral paulista. 5 dormitórios, 90m², localização privilegiada em Bertioga."
+1048,Flat com 2 dormitórios em Ilhabela,Ilhabela,Flat,450000,2,240,"Oportunidade de flat no litoral paulista. 2 dormitórios, 240m², localização privilegiada em Ilhabela."
+1049,Cobertura com 1 dormitórios em Itanhaém,Itanhaém,Cobertura,180000,1,110,"Oportunidade de cobertura no litoral paulista. 1 dormitórios, 110m², localização privilegiada em Itanhaém."
+1050,Cobertura com 5 dormitórios em Itanhaém,Itanhaém,Cobertura,450000,5,130,"Oportunidade de cobertura no litoral paulista. 5 dormitórios, 130m², localização privilegiada em Itanhaém."
+1051,Loft com 3 dormitórios em Itanhaém,Itanhaém,Loft,750000,3,55,"Oportunidade de loft no litoral paulista. 3 dormitórios, 55m², localização privilegiada em Itanhaém."
+1052,Apartamento com 4 dormitórios em Ilhabela,Ilhabela,Apartamento,450000,4,90,"Oportunidade de apartamento no litoral paulista. 4 dormitórios, 90m², localização privilegiada em Ilhabela."
+1053,Casa com 5 dormitórios em Bertioga,Bertioga,Casa,1200000,5,280,"Oportunidade de casa no litoral paulista. 5 dormitórios, 280m², localização privilegiada em Bertioga."
+1054,Flat com 1 dormitórios em Santos,Santos,Flat,750000,1,55,"Oportunidade de flat no litoral paulista. 1 dormitórios, 55m², localização privilegiada em Santos."
+1055,Loft com 4 dormitórios em Peruíbe,Peruíbe,Loft,450000,4,75,"Oportunidade de loft no litoral paulista. 4 dormitórios, 75m², localização privilegiada em Peruíbe."
+1056,Loft com 1 dormitórios em Peruíbe,Peruíbe,Loft,750000,1,160,"Oportunidade de loft no litoral paulista. 1 dormitórios, 160m², localização privilegiada em Peruíbe."
+1057,Flat com 2 dormitórios em Itanhaém,Itanhaém,Flat,250000,2,75,"Oportunidade de flat no litoral paulista. 2 dormitórios, 75m², localização privilegiada em Itanhaém."
+1058,Apartamento com 5 dormitórios em Ubatuba,Ubatuba,Apartamento,320000,5,200,"Oportunidade de apartamento no litoral paulista. 5 dormitórios, 200m², localização privilegiada em Ubatuba."
+1059,Studio com 4 dormitórios em Ubatuba,Ubatuba,Studio,1800000,4,130,"Oportunidade de studio no litoral paulista. 4 dormitórios, 130m², localização privilegiada em Ubatuba."
+1060,Studio com 2 dormitórios em Ubatuba,Ubatuba,Studio,1500000,2,35,"Oportunidade de studio no litoral paulista. 2 dormitórios, 35m², localização privilegiada em Ubatuba."
