@@ -159,3 +159,23 @@ id,tipo,cidade,bairro,dormitorios,suite,vagas,area_m2,preco_rs,condominio_rs,dif
 1157,cobertura,Itanhaém,Vila São Paulo,2,1,2,279,499422,1800,"sacada,closet",Camila Teixeira,(13) 94747-9203,destaque,/propriedades/1157.jpg,"Cobertura em Vila São Paulo, Itanhaém — painel solar.",2026-06-26
 1158,comercial,Guarujá,Santa Maria,3,0,2,40,1908203,500,"playground,salão de festas",Ricardo Mendes,(13) 97575-7153,destaque,/propriedades/1158.jpg,"Comercial em Santa Maria, Guarujá — sacada.",2026-06-11
 1159,studio,Mongaguá,Centro,2,0,3,122,858762,0,piscina,João Barros,(13) 92788-3954,ativo,/propriedades/1159.jpg,"Studio em Centro, Mongaguá — aquecimento solar.",2026-06-13
+1160,apartamento,Santos,Gonzaguinha,3,1,2,120,1050000,0,"vista mar,suite",Amanda Alves,(13) 95255-5326,destaque,/propriedades/1160.jpg,Apartamento amplo com vista mar em Santos.,2026-07-06
+1161,apartamento,Guarujá,Santa Maria,2,1,2,95,780000,0,condominio fechado,Ricardo Mendes,(13) 97575-7153,ativo,/propriedades/1161.jpg,Apartamento em condomínio fechado no Guarujá.,2026-07-06
+1162,casa,Itanhaém,Vila Rica,4,2,3,180,1350000,0,"quintal gourmet,piscina",João Rocha,(13) 93286-6174,destaque,/propriedades/1162.jpg,Casa com quintal gourmet e piscina em Itanhaém.,2026-07-06
+1163,cobertura,Praia Grande,Guilhermina,3,1,2,200,2100000,0,"sacada,suite,vista mar",Paulo Lima,(13) 96191-3868,exclusivo,/propriedades/1163.jpg,Cobertura com sacada e vista mar em Praia Grande.,2026-07-06
+1164,casa-condo,Bertioga,Centro,3,1,1,130,890000,1200,"lareira,closet",Camila Teixeira,(13) 94747-9203,ativo,/propriedades/1164.jpg,Casa-condo com lareira em Bertioga.,2026-07-06
+1165,lote,Peruíbe,Balneário São João,0,0,0,250,180000,0,terreno plano,Luciana Vieira,(13) 91946-1227,novo,/propriedades/1165.jpg,Lote plano a 500m da praia.,2026-07-06
+1166,apartamento,Santos,Embaré,2,1,1,75,520000,850,varanda,Roberto Dias,(11) 99999-0036,novo,/propriedades/1166.jpg,Apartamento compacto com varanda em Santos.,2026-07-06
+1167,cobertura,Guarujá,Joys,3,2,3,210,3200000,2500,piscina privativa,Bruno Alves,(11) 97288-4331,destaque,/propriedades/1167.jpg,Cobertura com piscina privativa no Guarujá.,2026-07-06
+1168,casa,Itanhaém,Jardim Anchura,4,2,4,250,1750000,0,"churrasqueira,lavabo",Maria Silva,(13) 91234-5678,novo,/propriedades/1168.jpg,Casa térrea com área gourmet em Itanhaém.,2026-07-06
+1169,apartamento,Santos,Boqueirão,2,1,1,85,620000,950,academia,Paulo Mendes,(11) 99282-8480,novo,/propriedades/1169.jpg,Apartamento em prédio com academia em Santos.,2026-07-06
+1170,studio,Mongaguá,Centro,1,1,1,45,290000,400,investimento,João Barros,(13) 92788-3954,novo,/propriedades/1170.jpg,Studio compacto para investimento em Mongaguá.,2026-07-06
+1171,apartamento,Praia Grande,Tupy,2,1,2,90,710000,1100,varanda gourmet,Ana Costa,(13) 94567-8901,novo,/propriedades/1171.jpg,Apartamento com varanda gourmet em Praia Grande.,2026-07-06
+1172,casa,Peruíbe,Jardim São Paulo,3,1,2,150,980000,0,pomar,Pedro Souza,(13) 93456-7890,novo,/propriedades/1172.jpg,Casa com pomar a 2km da praia.,2026-07-06
+1173,apartamento,Bertioga,Riviera,2,1,1,80,590000,750,segurança 24h,Lucas Pereira,(13) 97890-1234,novo,/propriedades/1173.jpg,Apartamento em condomínio seguro em Bertioga.,2026-07-06
+1174,cobertura,Santos,José Menino,3,2,2,180,2500000,1800,duplex,Fernanda Lima,(13) 95678-9012,destaque,/propriedades/1174.jpg,Cobertura duplex com vista panorâmica em Santos.,2026-07-06
+1175,lote,Itanhaém,Cidade Ocian,0,0,0,300,220000,0,frente mar,Carlos Dias,(13) 92345-6789,novo,/propriedades/1175.jpg,Lote à venda frente mar em Itanhaém.,2026-07-06
+1176,apartamento,Guarujá,Enseada,2,1,1,70,480000,600,piscina,Juliana Rocha,(13) 96789-0123,novo,/propriedades/1176.html,Apartamento aconchegante na Enseada.,2026-07-06
+1177,casa,Santos,Ponta da Praia,3,1,2,140,1150000,0,proximo praia,Marcos Oliveira,(13) 91234-0000,destaque,/propriedades/1177.jpg,Casa a 200m da praia em Santos.,2026-07-06
+1178,apartamento,Praia Grande,Boqueirão,2,1,1,78,540000,900,nova,Patricia Souza,(13) 93456-1111,novo,/propriedades/1178.jpg,Apartamento novo entrega 2027 em Praia Grande.,2026-07-06
+1179,cobertura,Peruíbe,Centro,2,1,2,160,1450000,1200,terraço,Ricardo Barros,(13) 94567-2222,novo,/propriedades/1179.jpg,Cobertura com terraço gourmet em Peruíbe.,2026-07-06
