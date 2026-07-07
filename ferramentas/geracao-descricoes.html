@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Geração Automática de Descrições | Praia Digital</title>
+<style>
+body{{font-family:Arial,sans-serif;margin:0;padding:0;background:#07112b;color:#fff}}.container{{max-width:880px;margin:0 auto;padding:24px}}.card{{background:#0e214d;border-radius:12px;padding:24px;margin-top:16px}}.btn{{background:#3b82f6;color:white;padding:12px 16px;border-radius:8px;border:0;cursor:pointer;font-size:16px}}input,textarea{{width:100%;padding:10px;border-radius:8px;border:1px solid #334155;background:#0b1a3a;color:#fff;margin-top:8px}}.result{{background:#0b1a3a;border-radius:8px;padding:16px;margin-top:16px;white-space:pre-wrap;color:#e2e8f0}}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Geração Automática de Descrições de Anúncios</h1>
+  <div class="card">
+    <label>Tipo</label>
+    <input id="tipo" value="Apartamento">
+    <label>Cidade</label>
+    <input id="cidade" value="Santos">
+    <label>Dormitórios</label>
+    <input id="dorm" type="number" value="2">
+    <label>Área (m²)</label>
+    <input id="area" type="number" value="85">
+    <label>Diferenciais</label>
+    <textarea id="diffs" rows="2">Vista mar, lazer completo, fácil acesso</textarea>
+    <button class="btn" onclick="gerar()">Gerar descrição</button>
+    <div class="result" id="res"></div>
+  </div>
+  <p><a href="https://acarolmourad-commits.github.io/praia-digital/" style="color:#9fb3d1">Voltar para a Praia Digital</a></p>
+</div>
+<script>
+function gerar(){
+  const tipo=document.getElementById('tipo').value||'Imóvel';
+  const cidade=document.getElementById('cidade').value||'Litoral';
+  const dorm=document.getElementById('dorm').value||'';
+  const area=document.getElementById('area').value||'';
+  const diffs=document.getElementById('diffs').value||'';
+  const texto=`${tipo} com ${dorm} dormitórios e ${area}m² em ${cidade}. ${diffs}. Agende sua visita e conheça essa oportunidade única no litoral paulista.`;
+  document.getElementById('res').textContent=texto;
+}
+</script>
+</body>
+</html>

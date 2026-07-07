@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recomendação Automática de Imóveis | Praia Digital</title>
+<style>
+body{{font-family:Arial,sans-serif;margin:0;padding:0;background:#07112b;color:#fff}}.container{{max-width:880px;margin:0 auto;padding:24px}}.card{{background:#0e214d;border-radius:12px;padding:24px;margin-top:16px}}.btn{{background:#3b82f6;color:white;padding:12px 16px;border-radius:8px;border:0;cursor:pointer;font-size:16px}}input,select,textarea{{width:100%;padding:10px;border-radius:8px;border:1px solid #334155;background:#0b1a3a;color:#fff;margin-top:8px}}.result{{background:#0b1a3a;border-radius:8px;padding:16px;margin-top:16px;white-space:pre-wrap;color:#e2e8f0}}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Recomendação Automática de Imóveis</h1>
+  <div class="card">
+    <label>Perfil do comprador</label>
+    <select id="perfil">
+      <option value="familia">Família com crianças</option>
+      <option value="casal">Casal jovem</option>
+      <option value="investidor">Investidor</option>
+      <option value="temporada">Temporada/férias</option>
+    </select>
+    <label>Cidade preferida</label>
+    <select id="cidade">
+      <option>Santos</option><option>Guarujá</option><option>Ubatuba</option><option>Ilhabela</option><option>Praia Grande</option><option>Bertioga</option><option>Peruíbe</option><option>Itanhaém</option>
+    </select>
+    <label>Orçamento máximo (R$)</label>
+    <input type="number" id="orcamento" value="800000">
+    <label>Observações</label>
+    <textarea id="obs" rows="3">Proximidade da praia e área de lazer.</textarea>
+    <button class="btn" onclick="gerar()">Gerar recomendação</button>
+    <div class="result" id="res"></div>
+  </div>
+  <p><a href="https://acarolmourad-commits.github.io/praia-digital/" style="color:#9fb3d1">Voltar para a Praia Digital</a></p>
+</div>
+<script>
+function gerar(){
+  const perfil=document.getElementById('perfil').value;
+  const cidade=document.getElementById('cidade').value;
+  const orcamento=document.getElementById('orcamento').value;
+  const obs=document.getElementById('obs').value||'Sem observações.';
+  const texto=`Análise de recomendação\nPerfil: ${perfil}\nCidade: ${cidade}\nOrçamento: R$ ${Number(orcamento).toLocaleString('pt-BR')}\nObservações: ${obs}\n\nSugestão: priorizamos imóveis com boa avaliação, proximidade da praia e potencial de valorização em ${cidade}.`;
+  document.getElementById('res').textContent=texto;
+}
+</script>
+</body>
+</html>
