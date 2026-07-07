@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Sheets para Gestão de Imóveis no Litoral: Guia Prático | Praia Digital</title>
+  <meta name="description" content="Aprenda a usar Google Sheets para gestão de imóveis no litoral paulista: controle de leads, follow-up, anúncios, documentos e finanças. Guia prático para corretores e imobiliárias de Santos, Guarujá, Bertioga, Praia Grande e Itanhaém.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4EBD0;color:#023047;line-height:1.7;padding:2rem}
+    .container{max-width:960px;margin:0 auto;background:#fff;padding:2.5rem;border-radius:16px;box-shadow:0 8px 28px rgba(0,0,0,.06)}
+    h1{font-size:2rem;margin-bottom:.8rem;color:#023047}
+    h2{font-size:1.4rem;margin-top:2rem;margin-bottom:.6rem;color:#0077B6}
+    h3{font-size:1.15rem;margin-top:1.4rem;margin-bottom:.4rem;color:#023047}
+    p{margin-bottom:1rem}
+    ul{margin:1rem 0 1rem 1.5rem}
+    li{margin-bottom:.5rem}
+    .cta{display:inline-block;background:#00B4D8;color:#fff;padding:.75rem 1.5rem;border-radius:999px;text-decoration:none;font-weight:700;margin-top:1rem}
+    .badge{display:inline-block;background:#0077B6;color:#fff;padding:.25rem .6rem;border-radius:50px;font-size:.75rem;font-weight:700;margin-bottom:1rem}
+    footer{background:#023047;color:#fff;text-align:center;padding:1rem;font-size:.85rem;opacity:.7;margin-top:2rem;border-radius:12px}
+    a{color:#0077B6}
+    .related{margin-top:2rem;padding:1.25rem;background:#f7f7f2;border-radius:12px}
+    .related h3{color:#0077B6}
+    .callout{padding:1.1rem;border-radius:12px;background:#eef6fb;border:1px solid #c9e6f7}
+  </style>
+</head>
+<body>
+<div class="container">
+  <span class="badge">Gestão Imobiliária</span>
+  <h1>Google Sheets para Gestão de Imóveis no Litoral: Guia Prático</h1>
+  <p><strong>Por Carolina Mourad</strong> — CEO, Praia Digital — Publicado em 2026</p>
+
+  <p>Muitas imobiliárias e corretores no litoral paulista ainda usam cadernos, WhatsApp fragmentado e planilhas soltas. O <strong>Google Sheets</strong> pode se tornar um CRM simples e gratuito para organizar leads, imóveis, visitas, ofertas, documentos e relatórios — tudo em um único lugar e acessível pelo celular.</p>
+
+  <p>Neste guia, você vai aprender a montar uma planilha prática para a realidade do litoral, sem precisar de ferramentas caras.</p>
+
+  <h2>Por Que Usar Google Sheets no Litoral?</h2>
+
+  <ul>
+    <li><strong>Grátis e intuitivo:</strong> não precisa instalar software nem contratar licença;</li>
+    <li><strong>Acesso em qualquer lugar:</strong> imobiliária, campo, visita ou praia — com internet ou offline;</li>
+    <li><strong>Compartilhamento fácil:</strong> equipe inteira vê e atualiza em tempo real;</li>
+    <li><strong>Integrações:</strong> Forms, Apps Script, Zapier/Make e scripts gratuitos automatizam entrada de dados;</li>
+    <li><strong>Relatórios automáticos:</strong> dashboards com gráficos mostram conversão, tempo de fechamento, ticket médio.</li>
+  </ul>
+
+  <h2>Estrutura Básica da Planilha</h2>
+
+  <p>Minha sugestão: usar <strong>abas separadas</strong> para cada função. Não amontoe tudo em uma única aba.</p>
+
+  <h3>Aba 1: Imóveis</h3>
+
+  <p>Um registro por imóvel. Campos recomendados:</p>
+  <ul>
+    <li>ID do imóvel, cidade, bairro, tipo, área, dormitórios, vagas;</li>
+    <li>Preço de venda, aluguel temporada, condomínio, IPTU;</li>
+    <li>Status (disponível, reservado, vendido, alugado);</li>
+    <li>Diferenciais (vista mar, lazer, pet friendly);</li>
+    <li>Link do anúncio, fotos/data da última atualização.</li>
+  </ul>
+
+  <h3>Aba 2: Leads</h3>
+
+  <p>Um registro por lead. Campos recomendados:</p>
+  <ul>
+    <li>Nome, telefone/WhatsApp, e-mail, origem (site, Instagram, indicação);</li>
+    <li>Interesse (comprar/alugar, cidade, bairro, faixa de preço);</li>
+    <li>Estágio no funil (novo, qualificado, visita agendada, proposta, fechado);</li>
+    <li>Data de contato, última interação, próximo follow-up.</li>
+  </ul>
+
+  <h3>Aba 3: Visitas</h3>
+
+  <p>Registre cada visita com:</p>
+  <ul>
+    <li>Data, horário, corretor responsável;</li>
+    <li>Lead, imóvel visitado, cidade/bairro;</li>
+    <li>Feedback do lead, pontos positivos e objeções;</li>
+    <li>Próximo passo e data.</li>
+  </ul>
+
+  <h3>Aba 4: Ofertas</h3>
+
+  <p>Controle propostas feitas e recebidas:</p>
+  <ul>
+    <li>Data, lead, imóvel, valor ofertado;</li>
+    <li>Tipo (venda ou aluguel temporada), condições de pagamento;</li>
+    <li>Status (em análise, aceita, recusada, contraproposta);</li>
+    <li>Data de fechamento efetivo, comissão.</li>
+  </ul>
+
+  <h3>Aba 5: Documentos</h3>
+
+  <p>Links para contratos, procurações, comprovantes, laudos, memorial:</p>
+  <ul>
+    <li>Nome do documento, tipo, link no Drive, data de atualização;</li>
+    <li>Responsável pelo envio, status (pendente, assinado, arquivado).</li>
+  </ul>
+
+  <h3>Aba 6: Financeiro</h3>
+
+  <p>Visão rápida:</p>
+  <ul>
+    <li>Aluguéis recebidos por imóvel/mês;</li>
+    <li>Comissões por corretor;</li>
+    <li>Descontas e taxas (condomínio, IPTU, manutenção);</li>
+    <li>Fluxo de caixa consolidado.</li>
+  </ul>
+
+  <h2>Automações Básicas com Google Sheets</h2>
+
+  <p>Você não precisa ser programador. Com Apps Script e integrações, a planilha pode trabalhar por você.</p>
+
+  <h3>1. Formulário de captura de leads</h3>
+
+  <p>Crie um Google Form com campos: nome, telefone, interesse, origem. Respostas caem automaticamente na aba Leads. Use o formulário em landing pages, QR Codes em imóveis e link na bio das redes sociais.</p>
+
+  <h3>2. Alertas automáticos</h3>
+
+  <p>Configure regras: se um lead ficar 3 dias sem follow-up, o Google Sheets envia alerta no celular por e-mail ou WhatsApp.</p>
+
+  <h3>3. Integração com WhatsApp</h3>
+
+  <p>Use ferramentas gratuitas ou APIs acessíveis para enviar mensagem automática quando um novo lead chegar: "Olá, recebemos seu contato. Em até 30 minutos um corretor responde."</p>
+
+  <h3>4. Painel de métricas (dashboard)</h3>
+
+  <p>Use gráficos para acompanhar: leads por dia, taxa de visita por lead, ticket médio, conversão por cidade. Esse painel ajuda a tomar decisões rápidas, especialmente na alta temporada.</p>
+
+  <h2>Exemplos Práticos no Litoral Paulista</h2>
+
+  <ul>
+    <li><strong>Santos:</strong> imobiliária com 3 corretores organizou 230 imóveis na planilha e reduziu retrabalho em 40%;</li>
+    <li><strong>Guarujá:</strong> corretor autônomo criou formulário de captura por QR Code nos moldes e aumentou leads em 2 semanas;</li>
+    <li><strong>Bertioga:</strong> gestor de temporada usa Google Sheets para controlar disponibilidade diária de casas e reduziu overbooking;</li>
+    <li><strong>Praia Grande:</strong> construtora controla lançamentos e documentos de clientes com checklist na planilha.</li>
+  </ul>
+
+  <h2>Dicas para o Contexto de Temporada</h2>
+
+  <p>O litoral paulista tem picos altos: verão, feriados prolongados e férias escolares. Prepare sua planilha para:</p>
+
+  <ul>
+    <li><strong>Alta temporada:</strong> destaque imóveis com disponibilidade curta e aumente follow-up automático;</li>
+    <li><strong>Baixa temporada:</strong> foque em captação de clientes de longo prazo (invez de aluguel por dia, trabalhe vendas e locação anual);</li>
+    <li><strong>Documentação rápida:</strong> organize lista de documentos por tipo de imóvel (venda, aluguel curto, aluguel longo) para agilizar fechamento.</li>
+  </ul>
+
+  <h2>Integração com Outras Ferramentas</h2>
+
+  <ul>
+    <li><strong>Zapier/Make:</strong> conecte Google Sheets a WhatsApp, Gmail, CRM e ferramentas de automação;</li>
+    <li><strong>Apps Script:</strong> crie funções customizadas como cálculo automático de comissão, envio de lembretes e atualização de status;</li>
+    <li><strong>API aberta:</strong> apps de gestão imobiliária podem importar/exportar CSV do Sheets sem custo.</li>
+  </ul>
+
+  <h2>Limitações e Quando Migrar</h2>
+
+  <p>Google Sheets funciona muito bem para pequenas e médias operações. Quando começar a ter milhares de registros, leads simultâneos ou múltiplos usuários editando ao mesmo tempo, considerar evoluir para CRM mais robusto. Mas mesmo assim, o Sheets continua útil como painel pessoal e relatórios rápidos.</p>
+
+  <h2>Ferramentas Gratuitas Complementares</h2>
+
+  <p>A Praia Digital disponibiliza modelos e ferramentas gratuitas ligadas à gestão:</p>
+
+  <ul>
+    <li>Checklists de captação e visita;</li>
+    <li>Modelos de proposta e contratos;</li>
+    <li>Assistente virtual para qualificar leads vindos do site ou redes sociais;</li>
+    <li>Gerador de descrições automáticas para planilha de anúncios.</li>
+  </ul>
+
+  <p>Acesse: <a href="https://praia.digital" target="_blank">https://praia.digital</a></p>
+
+  <h2>Conclusão</h2>
+
+  <p>Google Sheets para gestão de imóveis no litoral paulista é uma solução econômica, flexível e poderosa. Organize dados, automatize follow-up e tome decisões por métricas — sem gastar com software caro.</p>
+
+  <p><strong>Quer templates prontos e suporte para montar sua planilha?</strong><br>
+  Acesse <a href="https://acarolmourad-commits.github.io/praia-digital/">https://acarolmourad-commits.github.io/praia-digital/</a> ou fale conosco pelo WhatsApp (11) 95434-6288.</p>
+
+  <div class="related">
+    <h3>Artigos relacionados</h3>
+    <ul>
+      <li><a href="https://acarolmourad-commits.github.io/praia-digital/blog/automacao-agendamento-visitas-corretores.html">Automação de agendamento de visitas</a></li>
+      <li><a href="https://acarolmourad-commits.github.io/praia-digital/blog/crm-gratuito-imobiliaria-litoral.html">CRM gratuito para imobiliárias do litoral</a></li>
+      <li><a href="https://acarolmourad-commits.github.io/praia-digital/blog/roteiro-video-diario-imoveis-litoral.html">Roteiro de vídeo diário para imóveis</a></li>
+    </ul>
+  </div>
+
+  <footer>© Praia Digital - 2026 - IA para imóveis no litoral paulista</footer>
+</div>
+</body>
+</html>
