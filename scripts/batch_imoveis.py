@@ -9,22 +9,35 @@ OUT_DIR = BASE / 'imoveis'
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 def build_page(row):
-    pid=row['id']
-    tipo=row['tipo']
-    cidade=row['cidade']
-    bairro=row['bairro']
-    preco=f"R$ {int(row['preco_rs']):,}".replace(',','.')
-    cond=f"R$ {int(row['condominio_rs']):,}".replace(',','.') if int(row['condominio_rs'])>0 else 'Sem'
-    diff=row['diferenciais']
-    contato=row['contato_nome']
-    whats=row['contato_whats']
-    desc=row['descricao_curta']
-    area=row['area_m2']
-    dorm=row['dormitorios']
-    vagas=row['vagas']
+    pid = row.get('id', '').strip()
+    titulo = row.get('titulo', '').strip()
+    cidade = row.get('cidade', 'Litoral Paulista').strip()
+    tipo = row.get('tipo', 'Imóvel').strip()
+    preco_raw = row.get('preco', '0').strip()
+    try:
+        preco_valor = int(float(preco_raw))
+    except Exception:
+        preco_valor = 0
+    preco = f"R$ {preco_valor:,}".replace(',', '.')
+    dormitorios = row.get('dormitorios', '').strip()
+    area = row.get('area', '').strip()
+    descricao = row.get('descricao', '').strip()
+    bairro = titulo.split(' em ', 1)[1] if ' em ' in titulo else cidade
+    diferenciais = row.get('diferenciais', 'Destaque no litoral paulista').strip()
+    contato_nome = row.get('contato_nome', 'Praia Digital').strip()
+    contato_whats = row.get('contato_whats', '').strip()
+    vagas = row.get('vagas', '').strip()
+    condominio_raw = row.get('condominio_rs', '0').strip()
+    try:
+        cond_valor = int(float(condominio_raw))
+    except Exception:
+        cond_valor = 0
+    cond = f"R$ {cond_valor:,}".replace(',', '.') if cond_valor > 0 else 'Sem'
+
+    whats_digits = ''.join(ch for ch in contato_whats if ch.isdigit())
     return f"""<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{tipo.title()} em {bairro}, {cidade} - {diff.split(',')[0].strip()} | Praia Digital</title>
-<meta name="description" content="{tipo.title()} em {bairro}, {cidade}: {area}m2, {dorm} dorm, {vagas} vaga(s). Destaques: {diff}. Contato: {contato}.">
+<title>{tipo.title()} em {bairro}, {cidade} | Praia Digital</title>
+<meta name="description" content="{tipo.title()} em {bairro}, {cidade}: {area}m², {dormitorios} dorm, {vagas} vaga(s). Destaques: {diferenciais}. Contato: {contato_nome}.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
@@ -40,29 +53,33 @@ a{{color:#0077B6}}
 </style></head>
 <body><div class="container">
 <div class="card">
-<p class="badge">{row['status'].title()}</p>
+<p class="badge">{tipo.title()}</p>
 <h1>{tipo.title()} em {bairro}, {cidade}</h1>
 <div class="price">{preco}</div>
-<div class="details"><span>Area: {area}m2</span><span>Dorm: {dorm}</span><span>Vagas: {vagas}</span><span>Cond.: {cond}</span></div>
-<p>{desc}</p>
-<p><strong>Diferenciais:</strong> {diff}</p>
-<a class="cta" href="https://wa.me/{''.join([c for c in whats if c.isdigit()])}?text=Ola, tenho interesse no {tipo} em {bairro}">WhatsApp</a>
-<a class="cta" href="mailto:comercial@praia.digital?subject=Interesse no {tipo} {bairro}">E-mail</a>
+<div class="details"><span>Área: {area}m²</span><span>Dorm.: {dormitorios}</span><span>Vagas: {vagas}</span><span>Cond.: {cond}</span></div>
+<p>{descricao}</p>
+<p><strong>Diferenciais:</strong> {diferenciais}</p>
+{'<a class="cta" href="https://wa.me/' + whats_digits + '?text=Ol%C3%A1,%20tenho%20interesse%20no%20' + tipo + '%20em%20' + cidade.replace(' ', '%20') + '">WhatsApp</a>' if whats_digits else ''}
+<a class="cta" href="mailto:comercial@praia.digital?subject=Interesse%20no%20{tipo}%20{bairro}">E-mail</a>
 </div>
-<footer>© Praia Digital - 2026 - IA para imoveis no litoral paulista</footer>
+<footer>© Praia Digital - 2026 - IA para imóveis no litoral paulista</footer>
 </div></body></html>"""
 
 def main():
     with open(CSV, 'r', encoding='utf-8') as f:
         rows = list(csv.DictReader(f))
-    rows = sorted(rows, key=lambda r: int(r['id']))
+    rows = sorted(rows, key=lambda r: r.get('id', '0'))
     existing = {p.stem for p in OUT_DIR.glob('imovel-*.html')}
     created = 0
     for row in rows:
-        pid = row['id']
-        if f'imovel-{pid}' in existing:
+        pid = row.get('id', '').strip()
+        if not pid.isdigit():
             continue
-        (OUT_DIR / f'imovel-{pid}.html').write_text(build_page(row), encoding='utf-8')
+        name = f'imovel-{pid}'
+        if name in existing:
+            continue
+        page = build_page(row)
+        (OUT_DIR / f'{name}.html').write_text(page, encoding='utf-8')
         created += 1
     print(f'CREATED {created} property pages')
 
