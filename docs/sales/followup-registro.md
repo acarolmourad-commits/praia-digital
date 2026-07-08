@@ -1264,3 +1264,13 @@
 - 08/07/2026 00:57: follow-up 7 dias para lead 176 — Santos Launch (Santos)
 
 - 08/07/2026 00:57: follow-up 7 dias para lead 186 — Santos Platinum (Santos)
+
+- 08/07/2026 00:57: avanço de negociação para lead 201 — Santos Elite (Santos) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:57: avanço de negociação para lead 216 — Santos Prime (Santos) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:57: avanço de negociação para lead 8 — Ocean Blue Digital (Guarujá) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:57: avanço de negociação para lead 24 — Praia Grande Imóveis (Praia Grande) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:57: avanço de negociação para lead 41 — Cibratel Imóveis (Itanhaém) | contato_inicial_enviado -> interessado
