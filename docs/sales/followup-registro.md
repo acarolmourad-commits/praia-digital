@@ -4090,3 +4090,57 @@
 - 08/07/2026 01:35: PARCERIA FECHADA com Praia Grande Imóveis (Praia Grande) | interessado -> parceria_fechada
 
 - 08/07/2026 01:35: PARCERIA FECHADA com Cibratel Imóveis (Itanhaém) | interessado -> parceria_fechada
+
+- 08/07/2026 01:41: follow-up 7 dias para Litoral Premium Sant (Santos)
+
+- 08/07/2026 01:41: onboarding gerado para Santos Ocean View (Santos)
+
+- 08/07/2026 01:41: onboarding gerado para Santos Premium Digital (Santos)
+
+- 08/07/2026 01:41: onboarding gerado para Santos Tower Imóveis (Santos)
+
+- 08/07/2026 01:41: onboarding gerado para Santos Luxo (Santos)
+
+- 08/07/2026 01:41: onboarding gerado para Santos Smart Home (Santos)
+
+- 08/07/2026 01:41: onboarding gerado para Santos Executive (Santos)
+
+- 08/07/2026 01:41: onboarding gerado para Santos Bay Homes (Santos)
+
+- 08/07/2026 01:41: onboarding gerado para Santos Launch (Santos)
+
+- 08/07/2026 01:41: onboarding gerado para Santos Platinum (Santos)
+
+- 08/07/2026 01:41: onboarding gerado para Santos Elite (Santos)
+
+- 08/07/2026 01:41: onboarding gerado para Santos Prime (Santos)
+
+- 08/07/2026 01:41: onboarding gerado para Ocean Blue Digital (Guarujá)
+
+- 08/07/2026 01:41: onboarding gerado para Praia Grande Imóveis (Praia Grande)
+
+- 08/07/2026 01:41: onboarding gerado para Cibratel Imóveis (Itanhaém)
+
+- 08/07/2026 01:41: follow-up 7 dias para Riviera Launch (Bertioga)
+
+- 08/07/2026 01:41: follow-up 7 dias para Riviera Platinum (Bertioga)
+
+- 08/07/2026 01:41: follow-up 7 dias para Riviera Elite (Bertioga)
+
+- 08/07/2026 01:41: follow-up 7 dias para Beta Imóveis Centro (Santos)
+
+- 08/07/2026 01:41: follow-up 7 dias para Litoral Norte Premium (Santos)
+
+- 08/07/2026 01:41: follow-up 7 dias para Caiçara Imóveis (Praia Grande)
+
+- 08/07/2026 01:41: follow-up 7 dias para Praia Grande Norte (Praia Grande)
+
+- 08/07/2026 01:41: follow-up 7 dias para Riviera Norte (Bertioga)
+
+- 08/07/2026 01:41: follow-up 7 dias para Riviera Digital (Bertioga)
+
+- 08/07/2026 01:41: follow-up 7 dias para Caiçara Digital (Praia Grande)
+
+- 08/07/2026 01:41: follow-up 7 dias para Riviera Exclusive (Bertioga)
+
+- 08/07/2026 01:41: follow-up 7 dias para Prime Imóveis Digital (Guarujá)
