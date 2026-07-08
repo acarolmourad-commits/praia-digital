@@ -70,3 +70,23 @@
 - 08/07/2026 00:47: envio inicial para lead 89 — Caiçara Digital (Praia Grande) → e-mail: contato89@exemplo.com
 
 - 08/07/2026 00:47: envio inicial para lead 99 — Riviera Exclusive (Bertioga) → e-mail: contato99@exemplo.com
+
+- 08/07/2026 00:48: envio inicial para lead 62 — Boqueirão Norte (Santos) → e-mail: contato47@exemplo.com
+
+- 08/07/2026 00:48: envio inicial para lead 84 — Riviera Blue (Bertioga) → e-mail: contato84@exemplo.com
+
+- 08/07/2026 00:48: envio inicial para lead 87 — Embaré Digital (Santos) → e-mail: contato87@exemplo.com
+
+- 08/07/2026 00:48: envio inicial para lead 106 — Peruíbe Eco (Peruíbe) → e-mail: contato106@exemplo.com
+
+- 08/07/2026 00:48: envio inicial para lead 111 — Gonzaga Digital (Santos) → e-mail: contato111@exemplo.com
+
+- 08/07/2026 00:48: envio inicial para lead 112 — Embaré Tech (Santos) → e-mail: contato112@exemplo.com
+
+- 08/07/2026 00:48: envio inicial para lead 126 — Peruíbe Natureza (Peruíbe) → e-mail: contato126@exemplo.com
+
+- 08/07/2026 00:48: envio inicial para lead 131 — Gonzaga Smart (Santos) → e-mail: contato131@exemplo.com
+
+- 08/07/2026 00:48: envio inicial para lead 132 — Embaré Conecta (Santos) → e-mail: contato132@exemplo.com
+
+- 08/07/2026 00:48: envio inicial para lead 146 — Peruíbe Executive (Peruíbe) → e-mail: contato146@exemplo.com

@@ -42,16 +42,16 @@ id,nome_da_imobiliaria,cidade,pessoa_de_contato,cargo,email,whatsapp,perfil,stat
 19,Litoral Norte Imóveis,Santos,Renato Almeida,Diretor,contato19@exemplo.com,(13) 99999-0019,imobiliaria,contato_inicial_enviado,conversao,chatbot,Website,88,Relatórios,R$ 1-3k/mês,parceiro,Santos,,21,08/07/2026,08/07/2026
 29,Riviera Imóveis,Bertioga,Ana Barros,Gerente,contato29@exemplo.com,(13) 99999-0029,construtora,contato_inicial_enviado,leads,anuncios,LinkedIn,63,SEO local,R$ 1-3k/mês,formal,Bertioga,,21,08/07/2026,08/07/2026
 32,Boqueirão Imóveis,Santos,Paulo Mendes,Gerente,contato32@exemplo.com,(13) 99999-0032,construtora,contato_inicial_enviado,conversao,seo,Instagram,84,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,21,08/07/2026,08/07/2026
-62,Boqueirão Norte,Santos,Paulo Costa,Corretor-chefe,contato47@exemplo.com,(13) 99999-0047,construtora,novo,conversao,seo,Instagram,89,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,21,,
-84,Riviera Blue,Bertioga,Isabela Costa,Gerente,contato84@exemplo.com,(13) 99999-0084,construtora,novo,leads,anuncios,LinkedIn,66,SEO local,R$ 1-3k/mês,formal,Bertioga,,21,,
-87,Embaré Digital,Santos,Rafaela Nunes,Corretor-chefe,contato87@exemplo.com,(13) 99999-0087,construtora,novo,conversao,seo,Instagram,86,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,21,,
-106,Peruíbe Eco,Peruíbe,Thiago Rocha,Gerente,contato106@exemplo.com,(13) 99999-0106,gestor,novo,leads,chatbot,Indicação,91,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,,21,,
-111,Gonzaga Digital,Santos,Patrícia Ribeiro,Gerente,contato111@exemplo.com,(13) 99999-0111,imobiliaria,novo,atendimento,chatbot,Website,81,Aumentar captação,R$ 1-3k/mês,direto,Santos,,21,,
-112,Embaré Tech,Santos,Paulo Nunes,Corretor-chefe,contato112@exemplo.com,(13) 99999-0112,construtora,novo,conversao,seo,Instagram,88,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,21,,
-126,Peruíbe Natureza,Peruíbe,Carlos Dias,Gerente,contato126@exemplo.com,(13) 99999-0126,gestor,novo,leads,chatbot,Indicação,92,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,,21,,
-131,Gonzaga Smart,Santos,Bianca Martins,Gerente,contato131@exemplo.com,(13) 99999-0131,imobiliaria,novo,atendimento,chatbot,Website,82,Aumentar captação,R$ 1-3k/mês,direto,Santos,,21,,
-132,Embaré Conecta,Santos,Paulo Ferreira,Corretor-chefe,contato132@exemplo.com,(13) 99999-0132,construtora,novo,conversao,seo,Instagram,87,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,21,,
-146,Peruíbe Executive,Peruíbe,Amanda Souza,Gerente,contato146@exemplo.com,(13) 99999-0146,gestor,novo,leads,chatbot,Indicação,91,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,,21,,
+62,Boqueirão Norte,Santos,Paulo Costa,Corretor-chefe,contato47@exemplo.com,(13) 99999-0047,construtora,contato_inicial_enviado,conversao,seo,Instagram,89,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,21,08/07/2026,08/07/2026
+84,Riviera Blue,Bertioga,Isabela Costa,Gerente,contato84@exemplo.com,(13) 99999-0084,construtora,contato_inicial_enviado,leads,anuncios,LinkedIn,66,SEO local,R$ 1-3k/mês,formal,Bertioga,,21,08/07/2026,08/07/2026
+87,Embaré Digital,Santos,Rafaela Nunes,Corretor-chefe,contato87@exemplo.com,(13) 99999-0087,construtora,contato_inicial_enviado,conversao,seo,Instagram,86,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,21,08/07/2026,08/07/2026
+106,Peruíbe Eco,Peruíbe,Thiago Rocha,Gerente,contato106@exemplo.com,(13) 99999-0106,gestor,contato_inicial_enviado,leads,chatbot,Indicação,91,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,,21,08/07/2026,08/07/2026
+111,Gonzaga Digital,Santos,Patrícia Ribeiro,Gerente,contato111@exemplo.com,(13) 99999-0111,imobiliaria,contato_inicial_enviado,atendimento,chatbot,Website,81,Aumentar captação,R$ 1-3k/mês,direto,Santos,,21,08/07/2026,08/07/2026
+112,Embaré Tech,Santos,Paulo Nunes,Corretor-chefe,contato112@exemplo.com,(13) 99999-0112,construtora,contato_inicial_enviado,conversao,seo,Instagram,88,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,21,08/07/2026,08/07/2026
+126,Peruíbe Natureza,Peruíbe,Carlos Dias,Gerente,contato126@exemplo.com,(13) 99999-0126,gestor,contato_inicial_enviado,leads,chatbot,Indicação,92,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,,21,08/07/2026,08/07/2026
+131,Gonzaga Smart,Santos,Bianca Martins,Gerente,contato131@exemplo.com,(13) 99999-0131,imobiliaria,contato_inicial_enviado,atendimento,chatbot,Website,82,Aumentar captação,R$ 1-3k/mês,direto,Santos,,21,08/07/2026,08/07/2026
+132,Embaré Conecta,Santos,Paulo Ferreira,Corretor-chefe,contato132@exemplo.com,(13) 99999-0132,construtora,contato_inicial_enviado,conversao,seo,Instagram,87,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,21,08/07/2026,08/07/2026
+146,Peruíbe Executive,Peruíbe,Amanda Souza,Gerente,contato146@exemplo.com,(13) 99999-0146,gestor,contato_inicial_enviado,leads,chatbot,Indicação,91,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,,21,08/07/2026,08/07/2026
 151,Gonzaga Executive,Santos,Fábio Costa,Gerente,contato151@exemplo.com,(13) 99999-0151,imobiliaria,novo,atendimento,chatbot,Website,82,Aumentar captação,R$ 1-3k/mês,direto,Santos,,21,,
 152,Embaré Executive,Santos,Patrícia Ferreira,Corretor-chefe,contato152@exemplo.com,(13) 99999-0152,construtora,novo,conversao,seo,Instagram,88,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,21,,
 166,Peruíbe Nature,Peruíbe,Gustavo Almeida,Gerente,contato166@exemplo.com,(13) 99999-0166,gestor,novo,leads,chatbot,Indicação,90,Aumentar captação,R$ 1-3k/mês,parceiro,Peruíbe,,21,,
