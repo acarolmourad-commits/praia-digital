@@ -5454,3 +5454,13 @@
 | 83 | Email | 2026-07-08 | outreach CEO Itanhaém | 2026-07-11 | 2026-07-15 |
 | 92 | Email | 2026-07-08 | outreach CEO Guarujá | 2026-07-11 | 2026-07-15 |
 | 93 | Email | 2026-07-08 | outreach CEO Bertioga | 2026-07-11 | 2026-07-15 |
+| 51 | Email | 2026-07-08 | call-schedule | 2026-07-10 | — |
+| 66 | Email | 2026-07-08 | call-schedule | 2026-07-10 | — |
+| 76 | Email | 2026-07-08 | call-schedule | 2026-07-10 | — |
+| 91 | Email | 2026-07-08 | call-schedule | 2026-07-10 | — |
+| 101 | Email | 2026-07-08 | call-schedule | 2026-07-10 | — |
+| 121 | Email | 2026-07-08 | call-schedule | 2026-07-10 | — |
+| 141 | Email | 2026-07-08 | call-schedule | 2026-07-10 | — |
+| 161 | Email | 2026-07-08 | call-schedule | 2026-07-10 | — |
+| 176 | Email | 2026-07-08 | call-schedule | 2026-07-10 | — |
+| 186 | Email | 2026-07-08 | call-schedule | 2026-07-10 | — |
