@@ -14,7 +14,7 @@ id,nome_da_imobiliaria,cidade,pessoa_de_contato,cargo,email,whatsapp,perfil,stat
 8,Ocean Blue Digital,Guarujá,Maria Barros,Gerente,contato8@exemplo.com,(13) 99999-0008,construtora,contato_inicial_enviado,atendimento,chatbot,LinkedIn,84,Relatórios,R$ 1-3k/mês,direto,Guarujá,,23,08/07/2026,08/07/2026
 24,Praia Grande Imóveis,Praia Grande,Ricardo Barros,Sócio,contato24@exemplo.com,(13) 99999-0024,construtora,contato_inicial_enviado,leads,chatbot,Portais,81,Aumentar captação,R$ 1-3k/mês,parceiro,Praia Grande,,23,08/07/2026,08/07/2026
 41,Cibratel Imóveis,Itanhaém,Teresa Almeida,Sócia,contato41@exemplo.com,(13) 99999-0041,construtora,contato_inicial_enviado,atendimento,seo,Website,82,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,,23,08/07/2026,08/07/2026
-129,Riviera Business,Bertioga,Larissa Barros,Gerente,contato129@exemplo.com,(13) 99999-0129,construtora,novo,leads,anuncios,LinkedIn,80,SEO local,R$ 1-3k/mês,formal,Bertioga,,23,,
+129,Riviera Business,Bertioga,Larissa Barros,Gerente,contato129@exemplo.com,(13) 99999-0129,construtora,contato_inicial_enviado,leads,anuncios,LinkedIn,80,SEO local,R$ 1-3k/mês,formal,Bertioga,,23,08/07/2026,08/07/2026
 184,Riviera Launch,Bertioga,Larissa Nunes,Gerente,contato184@exemplo.com,(13) 99999-0184,construtora,novo,leads,anuncios,LinkedIn,80,SEO local,R$ 1-3k/mês,formal,Bertioga,,23,,
 194,Riviera Platinum,Bertioga,Gustavo Nunes,Gerente,contato194@exemplo.com,(13) 99999-0194,construtora,novo,leads,anuncios,LinkedIn,81,SEO local,R$ 1-3k/mês,formal,Bertioga,,23,,
 209,Riviera Elite,Bertioga,Isabela Costa,Gerente,contato209@exemplo.com,(13) 99999-0209,construtora,novo,leads,anuncios,LinkedIn,82,SEO local,R$ 1-3k/mês,formal,Bertioga,,23,,
