@@ -1204,3 +1204,13 @@
 - 08/07/2026 00:49: envio inicial para Prime Imóveis Prime (Peruíbe) → contato599@exemplo.com
 
 - 08/07/2026 00:49: envio inicial para Costa Verde Blue (Peruíbe) → contato600@exemplo.com
+
+- 08/07/2026 00:49: avanço de negociação para lead 51 — Litoral Premium Sant (Santos) | status anterior: contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:49: avanço de negociação para lead 66 — Santos Ocean View (Santos) | status anterior: contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:49: avanço de negociação para lead 76 — Santos Premium Digital (Santos) | status anterior: contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:49: avanço de negociação para lead 91 — Santos Tower Imóveis (Santos) | status anterior: contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:49: avanço de negociação para lead 101 — Santos Luxo (Santos) | status anterior: contato_inicial_enviado -> interessado
