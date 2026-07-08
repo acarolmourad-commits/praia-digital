@@ -3682,3 +3682,189 @@
 - 08/07/2026 01:29: call agendada para Costa Azul Prop (Santos) | interessado_confirmado -> call_agendada
 
 - 08/07/2026 01:29: call agendada para Caiçara Digital Praia (Praia Grande) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: follow-up pós-call para Santos Luxo (Santos)
+
+- 08/07/2026 01:29: follow-up pós-call para Santos Executive (Santos)
+
+- 08/07/2026 01:29: follow-up pós-call para Santos Bay Homes (Santos)
+
+- 08/07/2026 01:29: follow-up pós-call para Santos Launch (Santos)
+
+- 08/07/2026 01:29: follow-up pós-call para Santos Prime (Santos)
+
+- 08/07/2026 01:29: follow-up pós-call para Ocean Blue Digital (Guarujá)
+
+- 08/07/2026 01:29: follow-up pós-call para Riviera Business (Bertioga)
+
+- 08/07/2026 01:29: follow-up pós-call para Região Sul Praia (Peruíbe)
+
+- 08/07/2026 01:29: follow-up pós-call para Caiçara Norte (Praia Grande)
+
+- 08/07/2026 01:29: follow-up pós-call para Caiçara Executive (Praia Grande)
+
+- 08/07/2026 01:29: follow-up pós-call para Embaré Digital (Santos)
+
+- 08/07/2026 01:29: follow-up pós-call para Embaré Tech (Santos)
+
+- 08/07/2026 01:29: follow-up pós-call para Peruíbe Launch (Peruíbe)
+
+- 08/07/2026 01:29: follow-up pós-call para Gonzaga Elite (Santos)
+
+- 08/07/2026 01:29: follow-up pós-call para Peruíbe Centro Digital (Peruíbe)
+
+- 08/07/2026 01:29: follow-up pós-call para Santos Smart (Santos)
+
+- 08/07/2026 01:29: follow-up pós-call para Santos Connect (Santos)
+
+- 08/07/2026 01:29: follow-up pós-call para Mar & Sol Litoral (Santos)
+
+- 08/07/2026 01:29: follow-up pós-call para Guarujá Conecta (Guarujá)
+
+- 08/07/2026 01:29: follow-up pós-call para Bertioga Inovação (Bertioga)
+
+- 08/07/2026 01:29: follow-up pós-call para Itanhaém Surf (Itanhaém)
+
+- 08/07/2026 01:29: follow-up pós-call para Litoral Sul Imóveis (Santos)
+
+- 08/07/2026 01:29: follow-up pós-call para Bertioga Vision (Bertioga)
+
+- 08/07/2026 01:29: follow-up pós-call para Região Sul Centro (Bertioga)
+
+- 08/07/2026 01:29: follow-up pós-call para Baixio Digital (Itanhaém)
+
+- 08/07/2026 01:29: follow-up pós-call para Barra Norte (Peruíbe)
+
+- 08/07/2026 01:29: follow-up pós-call para Barra Platinum (Peruíbe)
+
+- 08/07/2026 01:29: follow-up pós-call para Ocean Blue Digital (Santos)
+
+- 08/07/2026 01:29: follow-up pós-call para Guarujá Norte Digital (Guarujá)
+
+- 08/07/2026 01:29: follow-up pós-call para Praia Grande Prime (Praia Grande)
+
+- 08/07/2026 01:29: follow-up pós-call para São Vicente Bay (São Vicente)
+
+- 08/07/2026 01:29: follow-up pós-call para Jardim Grandesp (Itanhaém)
+
+- 08/07/2026 01:29: follow-up pós-call para São Vicente Sul (São Vicente)
+
+- 08/07/2026 01:29: follow-up pós-call para Tombo Imóveis (Guarujá)
+
+- 08/07/2026 01:29: follow-up pós-call para São Vicente Vision (São Vicente)
+
+- 08/07/2026 01:29: follow-up pós-call para Catiapoã Digital (São Vicente)
+
+- 08/07/2026 01:29: follow-up pós-call para Realize II Prime (Itanhaém)
+
+- 08/07/2026 01:29: follow-up pós-call para Caiçara Digital Prime (Peruíbe)
+
+- 08/07/2026 01:29: follow-up pós-call para Caiçara Digital View (Bertioga)
+
+- 08/07/2026 01:29: follow-up pós-call para Barra Digital Praia (São Vicente)
+
+- 08/07/2026 01:29: follow-up pós-call para Praia Grande Site Site (Mongaguá)
+
+- 08/07/2026 01:29: follow-up pós-call para Caiçara Digital Site (Praia Grande)
+
+- 08/07/2026 01:29: follow-up pós-call para Edifica Praia Centro (Guarujá)
+
+- 08/07/2026 01:29: follow-up pós-call para Barra Digital Site (Peruíbe)
+
+- 08/07/2026 01:29: follow-up pós-call para Beta Imóveis Site (Guarujá)
+
+- 08/07/2026 01:29: follow-up pós-call para Recife Imóveis Blue (Mongaguá)
+
+- 08/07/2026 01:29: follow-up pós-call para Norte Sul Centro (Praia Grande)
+
+- 08/07/2026 01:29: follow-up pós-call para Prime Imóveis Litoral (Guarujá)
+
+- 08/07/2026 01:29: follow-up pós-call para Mar & Sol View (Guarujá)
+
+- 08/07/2026 01:29: follow-up pós-call para Mar Brasil Digital (Itanhaém)
+
+- 08/07/2026 01:29: follow-up pós-call para Caiçara Digital Litoral (Mongaguá)
+
+- 08/07/2026 01:29: follow-up pós-call para Litoral Brasil Prime (Itanhaém)
+
+- 08/07/2026 01:29: follow-up pós-call para Praia Grande Site Litoral (Santos)
+
+- 08/07/2026 01:29: follow-up pós-call para Norte Sul Praia (Mongaguá)
+
+- 08/07/2026 01:29: follow-up pós-call para Norte Sul Praia (Mongaguá)
+
+- 08/07/2026 01:29: follow-up pós-call para Mar & Sol Imóveis (Santos)
+
+- 08/07/2026 01:29: follow-up pós-call para Beta Imóveis Centro (Bertioga)
+
+- 08/07/2026 01:29: follow-up pós-call para Costa Verde Litoral (Itanhaém)
+
+- 08/07/2026 01:29: follow-up pós-call para Edifica Praia Litoral (Peruíbe)
+
+- 08/07/2026 01:29: follow-up pós-call para Realize II Blue (Mongaguá)
+
+- 08/07/2026 01:29: follow-up pós-call para Itanhaém Premium Prime (São Vicente)
+
+- 08/07/2026 01:29: follow-up pós-call para Ocean Blue Centro (Peruíbe)
+
+- 08/07/2026 01:29: follow-up pós-call para Edifica Praia View (Itanhaém)
+
+- 08/07/2026 01:29: follow-up pós-call para Sul Imóveis Site (Guarujá)
+
+- 08/07/2026 01:29: follow-up pós-call para Edifica Praia Blue (São Vicente)
+
+- 08/07/2026 01:29: follow-up pós-call para Mongaguá Imóveis Litoral (São Vicente)
+
+- 08/07/2026 01:29: follow-up pós-call para Caiçara Digital Blue (Itanhaém)
+
+- 08/07/2026 01:29: follow-up pós-call para Praia Grande Site Blue (Guarujá)
+
+- 08/07/2026 01:29: follow-up pós-call para Mar & Sol Prime (Guarujá)
+
+- 08/07/2026 01:29: follow-up pós-call para Norte Sul Digital (Guarujá)
+
+- 08/07/2026 01:29: follow-up pós-call para Prime Imóveis Praia (São Vicente)
+
+- 08/07/2026 01:29: follow-up pós-call para Sol & Mar Blue (Praia Grande)
+
+- 08/07/2026 01:29: follow-up pós-call para Ocean Blue Praia (Bertioga)
+
+- 08/07/2026 01:29: follow-up pós-call para Realize II Centro (São Vicente)
+
+- 08/07/2026 01:29: follow-up pós-call para Mar Brasil Centro (Peruíbe)
+
+- 08/07/2026 01:29: follow-up pós-call para Mongaguá Imóveis Praia (Praia Grande)
+
+- 08/07/2026 01:29: follow-up pós-call para Norte Sul Prime (Peruíbe)
+
+- 08/07/2026 01:29: follow-up pós-call para Caiçara Digital Site (Itanhaém)
+
+- 08/07/2026 01:29: follow-up pós-call para Riviera Blue Centro (São Vicente)
+
+- 08/07/2026 01:29: follow-up pós-call para Edifica Praia Praia (Mongaguá)
+
+- 08/07/2026 01:29: follow-up pós-call para Realize II Tech (Itanhaém)
+
+- 08/07/2026 01:29: follow-up pós-call para Costa Azul Prime (Guarujá)
+
+- 08/07/2026 01:29: follow-up pós-call para Ocean Blue View (Mongaguá)
+
+- 08/07/2026 01:29: follow-up pós-call para Mar Brasil Blue (Peruíbe)
+
+- 08/07/2026 01:29: follow-up pós-call para Edifica Praia Prime (Praia Grande)
+
+- 08/07/2026 01:29: follow-up pós-call para Costa Azul  Prop (Praia Grande)
+
+- 08/07/2026 01:29: follow-up pós-call para Porto da Lua Prop (Santos)
+
+- 08/07/2026 01:29: follow-up pós-call para Mar View (Peruíbe)
+
+- 08/07/2026 01:29: follow-up pós-call para Barra Digital Centro (Bertioga)
+
+- 08/07/2026 01:29: follow-up pós-call para Costa Azul View (Santos)
+
+- 08/07/2026 01:29: follow-up pós-call para Vista Mar Litoral (Guarujá)
+
+- 08/07/2026 01:29: follow-up pós-call para Costa Azul Prop (Santos)
+
+- 08/07/2026 01:29: follow-up pós-call para Caiçara Digital Praia (Praia Grande)
