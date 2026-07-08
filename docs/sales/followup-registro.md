@@ -1274,3 +1274,23 @@
 - 08/07/2026 00:57: avanço de negociação para lead 24 — Praia Grande Imóveis (Praia Grande) | contato_inicial_enviado -> interessado
 
 - 08/07/2026 00:57: avanço de negociação para lead 41 — Cibratel Imóveis (Itanhaém) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:57: follow-up 3 dias para lead 129 — Riviera Business (Bertioga)
+
+- 08/07/2026 00:57: follow-up 3 dias para lead 184 — Riviera Launch (Bertioga)
+
+- 08/07/2026 00:57: follow-up 3 dias para lead 194 — Riviera Platinum (Bertioga)
+
+- 08/07/2026 00:57: follow-up 3 dias para lead 209 — Riviera Elite (Bertioga)
+
+- 08/07/2026 00:57: follow-up 3 dias para lead 15 — Prime Imóveis Digital (Guarujá)
+
+- 08/07/2026 00:57: follow-up 7 dias para lead 51 — Litoral Premium Sant (Santos)
+
+- 08/07/2026 00:57: follow-up 7 dias para lead 66 — Santos Ocean View (Santos)
+
+- 08/07/2026 00:57: follow-up 7 dias para lead 76 — Santos Premium Digital (Santos)
+
+- 08/07/2026 00:57: follow-up 7 dias para lead 91 — Santos Tower Imóveis (Santos)
+
+- 08/07/2026 00:57: follow-up 7 dias para lead 101 — Santos Luxo (Santos)
