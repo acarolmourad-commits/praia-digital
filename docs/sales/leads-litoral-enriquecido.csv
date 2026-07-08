@@ -17,7 +17,7 @@ id,nome_da_imobiliaria,cidade,pessoa_de_contato,cargo,email,whatsapp,perfil,stat
 129,Riviera Business,Bertioga,Larissa Barros,Gerente,contato129@exemplo.com,(13) 99999-0129,construtora,contato_inicial_enviado,leads,anuncios,LinkedIn,80,SEO local,R$ 1-3k/mês,formal,Bertioga,,23,08/07/2026,08/07/2026
 184,Riviera Launch,Bertioga,Larissa Nunes,Gerente,contato184@exemplo.com,(13) 99999-0184,construtora,contato_inicial_enviado,leads,anuncios,LinkedIn,80,SEO local,R$ 1-3k/mês,formal,Bertioga,,23,08/07/2026,08/07/2026
 194,Riviera Platinum,Bertioga,Gustavo Nunes,Gerente,contato194@exemplo.com,(13) 99999-0194,construtora,contato_inicial_enviado,leads,anuncios,LinkedIn,81,SEO local,R$ 1-3k/mês,formal,Bertioga,,23,08/07/2026,08/07/2026
-209,Riviera Elite,Bertioga,Isabela Costa,Gerente,contato209@exemplo.com,(13) 99999-0209,construtora,novo,leads,anuncios,LinkedIn,82,SEO local,R$ 1-3k/mês,formal,Bertioga,,23,,
+209,Riviera Elite,Bertioga,Isabela Costa,Gerente,contato209@exemplo.com,(13) 99999-0209,construtora,contato_inicial_enviado,leads,anuncios,LinkedIn,82,SEO local,R$ 1-3k/mês,formal,Bertioga,,23,08/07/2026,08/07/2026
 6,Beta Imóveis Centro,Santos,Fernanda Nunes,Corretor-chefe,contato6@exemplo.com,(13) 99999-0006,construtora,novo,conversao,seo,Indicação,90,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,22,,
 10,Região Sul Praia,Peruíbe,Carlos Barros,Responsável,contato10@exemplo.com,(13) 99999-0010,construtora,novo,leads,anuncios,Google Maps,90,Automação,R$ 0.5-2k/mês,parceiro,Peruíbe,,22,,
 21,Litoral Norte Premium,Santos,Mariana Costa,Gerente,contato21@exemplo.com,(13) 99999-0021,construtora,novo,conversao,chatbot,Google Maps,72,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,22,,

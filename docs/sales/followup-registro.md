@@ -40,3 +40,5 @@
 - 08/07/2026 00:46: envio inicial para lead 184 — Riviera Launch (Bertioga) → e-mail: contato184@exemplo.com
 
 - 08/07/2026 00:46: envio inicial para lead 194 — Riviera Platinum (Bertioga) → e-mail: contato194@exemplo.com
+
+- 08/07/2026 00:46: envio inicial para lead 209 — Riviera Elite (Bertioga) → e-mail: contato209@exemplo.com
