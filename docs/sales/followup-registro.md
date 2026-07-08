@@ -3496,3 +3496,189 @@
 - 08/07/2026 01:29: follow-up direcionado enviado para Prime Imóveis Prime (Peruíbe)
 
 - 08/07/2026 01:29: follow-up direcionado enviado para Costa Verde Blue (Peruíbe)
+
+- 08/07/2026 01:29: call agendada para Santos Luxo (Santos) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Santos Executive (Santos) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Santos Bay Homes (Santos) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Santos Launch (Santos) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Santos Prime (Santos) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Ocean Blue Digital (Guarujá) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Riviera Business (Bertioga) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Região Sul Praia (Peruíbe) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Caiçara Norte (Praia Grande) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Caiçara Executive (Praia Grande) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Embaré Digital (Santos) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Embaré Tech (Santos) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Peruíbe Launch (Peruíbe) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Gonzaga Elite (Santos) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Peruíbe Centro Digital (Peruíbe) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Santos Smart (Santos) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Santos Connect (Santos) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Mar & Sol Litoral (Santos) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Guarujá Conecta (Guarujá) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Bertioga Inovação (Bertioga) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Itanhaém Surf (Itanhaém) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Litoral Sul Imóveis (Santos) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Bertioga Vision (Bertioga) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Região Sul Centro (Bertioga) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Baixio Digital (Itanhaém) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Barra Norte (Peruíbe) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Barra Platinum (Peruíbe) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Ocean Blue Digital (Santos) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Guarujá Norte Digital (Guarujá) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Praia Grande Prime (Praia Grande) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para São Vicente Bay (São Vicente) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Jardim Grandesp (Itanhaém) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para São Vicente Sul (São Vicente) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Tombo Imóveis (Guarujá) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para São Vicente Vision (São Vicente) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Catiapoã Digital (São Vicente) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Realize II Prime (Itanhaém) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Caiçara Digital Prime (Peruíbe) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Caiçara Digital View (Bertioga) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Barra Digital Praia (São Vicente) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Praia Grande Site Site (Mongaguá) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Caiçara Digital Site (Praia Grande) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Edifica Praia Centro (Guarujá) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Barra Digital Site (Peruíbe) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Beta Imóveis Site (Guarujá) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Recife Imóveis Blue (Mongaguá) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Norte Sul Centro (Praia Grande) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Prime Imóveis Litoral (Guarujá) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Mar & Sol View (Guarujá) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Mar Brasil Digital (Itanhaém) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Caiçara Digital Litoral (Mongaguá) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Litoral Brasil Prime (Itanhaém) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Praia Grande Site Litoral (Santos) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Norte Sul Praia (Mongaguá) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Norte Sul Praia (Mongaguá) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Mar & Sol Imóveis (Santos) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Beta Imóveis Centro (Bertioga) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Costa Verde Litoral (Itanhaém) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Edifica Praia Litoral (Peruíbe) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Realize II Blue (Mongaguá) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Itanhaém Premium Prime (São Vicente) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Ocean Blue Centro (Peruíbe) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Edifica Praia View (Itanhaém) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Sul Imóveis Site (Guarujá) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Edifica Praia Blue (São Vicente) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Mongaguá Imóveis Litoral (São Vicente) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Caiçara Digital Blue (Itanhaém) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Praia Grande Site Blue (Guarujá) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Mar & Sol Prime (Guarujá) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Norte Sul Digital (Guarujá) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Prime Imóveis Praia (São Vicente) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Sol & Mar Blue (Praia Grande) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Ocean Blue Praia (Bertioga) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Realize II Centro (São Vicente) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Mar Brasil Centro (Peruíbe) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Mongaguá Imóveis Praia (Praia Grande) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Norte Sul Prime (Peruíbe) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Caiçara Digital Site (Itanhaém) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Riviera Blue Centro (São Vicente) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Edifica Praia Praia (Mongaguá) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Realize II Tech (Itanhaém) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Costa Azul Prime (Guarujá) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Ocean Blue View (Mongaguá) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Mar Brasil Blue (Peruíbe) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Edifica Praia Prime (Praia Grande) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Costa Azul  Prop (Praia Grande) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Porto da Lua Prop (Santos) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Mar View (Peruíbe) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Barra Digital Centro (Bertioga) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Costa Azul View (Santos) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Vista Mar Litoral (Guarujá) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Costa Azul Prop (Santos) | interessado_confirmado -> call_agendada
+
+- 08/07/2026 01:29: call agendada para Caiçara Digital Praia (Praia Grande) | interessado_confirmado -> call_agendada
