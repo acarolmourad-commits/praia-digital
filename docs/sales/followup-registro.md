@@ -5464,3 +5464,18 @@
 | 161 | Email | 2026-07-08 | call-schedule | 2026-07-10 | — |
 | 176 | Email | 2026-07-08 | call-schedule | 2026-07-10 | — |
 | 186 | Email | 2026-07-08 | call-schedule | 2026-07-10 | — |
+| 98 | Email | 2026-07-08 | outreach personalizada Itanhaém | 2026-07-11 | 2026-07-15 |
+| 102 | Email | 2026-07-08 | outreach personalizada Guarujá | 2026-07-11 | 2026-07-15 |
+| 103 | Email | 2026-07-08 | outreach personalizada Bertioga | 2026-07-11 | 2026-07-15 |
+| 108 | Email | 2026-07-08 | outreach personalizada Itanhaém | 2026-07-11 | 2026-07-15 |
+| 119 | Email | 2026-07-08 | outreach personalizada Praia Grande | 2026-07-11 | 2026-07-15 |
+| 122 | Email | 2026-07-08 | outreach personalizada Guarujá | 2026-07-11 | 2026-07-15 |
+| 123 | Email | 2026-07-08 | outreach personalizada Bertioga | 2026-07-11 | 2026-07-15 |
+| 128 | Email | 2026-07-08 | outreach personalizada Itanhaém | 2026-07-11 | 2026-07-15 |
+| 139 | Email | 2026-07-08 | outreach personalizada Praia Grande | 2026-07-11 | 2026-07-15 |
+| 142 | Email | 2026-07-08 | outreach personalizada Guarujá | 2026-07-11 | 2026-07-15 |
+| 143 | Email | 2026-07-08 | outreach personalizada Bertioga | 2026-07-11 | 2026-07-15 |
+| 148 | Email | 2026-07-08 | outreach personalizada Itanhaém | 2026-07-11 | 2026-07-15 |
+| 159 | Email | 2026-07-08 | outreach personalizada Praia Grande | 2026-07-11 | 2026-07-15 |
+| 162 | Email | 2026-07-08 | outreach personalizada Guarujá | 2026-07-11 | 2026-07-15 |
+| 163 | Email | 2026-07-08 | outreach personalizada Bertioga | 2026-07-11 | 2026-07-15 |
