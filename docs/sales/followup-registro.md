@@ -1364,3 +1364,5 @@
 - 08/07/2026 01:05: follow-up 7 dias para lead 99 — Riviera Exclusive (Bertioga)
 
 - 08/07/2026 01:12: automação diária — 0 fu3d, 0 fu7d, 0 alertas
+
+- 08/07/2026 01:19: monitoramento de respostas — 600 leads verificados, 93 positivas, 153 neutras, 354 negativas
