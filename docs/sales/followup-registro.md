@@ -5484,3 +5484,11 @@
 | 76 | Email | 2026-07-08 | fechamento-parceria | — | — |
 | 91 | Email | 2026-07-08 | fechamento-parceria | — | — |
 | 101 | Email | 2026-07-08 | fechamento-parceria | — | — |
+| 655 | Email | 2026-07-08 | onboarding-day1 | 2026-07-11 | — |
+| 655 | Email | 2026-07-11 | onboarding-day3 | 2026-07-15 | — |
+| 655 | Email | 2026-07-15 | onboarding-day7 | 2026-07-22 | — |
+| 655 | Email | 2026-07-22 | onboarding-day14 | — | — |
+| 654 | Email | 2026-07-08 | onboarding-day1 | 2026-07-11 | — |
+| 654 | Email | 2026-07-11 | onboarding-day3 | 2026-07-15 | — |
+| 654 | Email | 2026-07-15 | onboarding-day7 | 2026-07-22 | — |
+| 654 | Email | 2026-07-22 | onboarding-day14 | — | — |
