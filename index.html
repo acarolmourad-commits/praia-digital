@@ -4354,45 +4354,41 @@ function toggleAmort() {
 // ====================
 // AI VALUATION
 // ====================
-function runValuation() {
+async function runValuation() {
   const tipo = document.getElementById('valTipo').value;
   const cidade = document.getElementById('valCidade').value;
   const area = parseInt(document.getElementById('valArea').value) || 80;
   const dorms = parseInt(document.getElementById('valDorms').value) || 0;
-  const basePrices = {
-    apartamento: { 'praia-grande': 12000, 'santos': 18000, 'guaruja': 15000, 'sao-vicente': 9000, 'itanhaem': 7500, 'mongagua': 7000, 'peruibe': 7500 },
-    casa: { 'praia-grande': 14000, 'santos': 20000, 'guaruja': 18000, 'sao-vicente': 11000, 'itanhaem': 9000, 'mongagua': 8500, 'peruibe': 8500 },
-    terreno: { 'praia-grande': 1500, 'santos': 3500, 'guaruja': 2500, 'sao-vicente': 1200, 'itanhaem': 800, 'mongagua': 700, 'peruibe': 900 },
-    pousada: { 'praia-grande': 8000, 'santos': 12000, 'guaruja': 10000, 'sao-vicente': 7000, 'itanhaem': 6000, 'mongagua': 5500, 'peruibe': 6500 },
-    comercial: { 'praia-grande': 10000, 'santos': 15000, 'guaruja': 12000, 'sao-vicente': 8000, 'itanhaem': 6000, 'mongagua': 5500, 'peruibe': 6000 }
+  const out = document.getElementById('valResult');
+  if(out) out.classList.add('visible');
+  const setErr = (msg) => {
+    document.getElementById('valInsight').textContent = msg || 'Erro ao consultar API.';
+    document.getElementById('valBaixo').textContent = '—';
+    document.getElementById('valMedio').textContent = '—';
+    document.getElementById('valAlto').textContent = '—';
+    document.getElementById('valIptuInfo').textContent = '';
   };
-  const cityMultiplier = { 'praia-grande': 1.0, 'santos': 1.35, 'guaruja': 1.28, 'sao-vicente': 0.88, 'itanhaem': 0.75, 'mongagua': 0.72, 'peruibe': 0.78 };
-  const base = basePrices[tipo]?.[cidade] || 10000;
-  const mult = cityMultiplier[cidade] || 1.0;
-  const dormBonus = dorms > 0 ? Math.min(dorms * 0.04, 0.2) : 0;
-  const pricePerSqm = base * mult * (1 + dormBonus);
-  const median = Math.round(area * pricePerSqm);
-  const baixo = Math.round(median * 0.88);
-  const alto = Math.round(median * 1.12);
-  document.getElementById('valBaixo').textContent = 'R$ ' + baixo.toLocaleString('pt-BR');
-  document.getElementById('valMedio').textContent = 'R$ ' + median.toLocaleString('pt-BR');
-  document.getElementById('valAlto').textContent = 'R$ ' + alto.toLocaleString('pt-BR');
-  const position = tipo === 'apartamento' ? 0.62 : tipo === 'casa' ? 0.55 : tipo === 'pousada' ? 0.40 : 0.50;
-  document.getElementById('valBarFill').style.width = (position * 100) + '%';
-  document.getElementById('valBarMarker').style.left = (position * 100) + '%';
-  const insights = {
-    apartamento: 'Apartamentos em ' + cidade.replace('-',' ') + ' estão em alta demanda. Preço competitivo para o mercado local.',
-    casa: 'Casas com múltiplas suítes têm valorização acima da média no litoral.',
-    terreno: 'Terrenos em ' + cidade.replace('-',' ') + ' têm potencial de crescimento com expansão urbana.',
-    pousada: 'Pousadas são o ativo de melhor ROI no litoral sul. Occupancy médio >75% no verão.',
-    comercial: 'Espaços comerciais em ' + cidade.replace('-',' ') + ' atendem demanda local crescente.'
-  };
-  document.getElementById('valInsight').textContent = insights[tipo] || '';
-    const iptuBase = { apartamento: 0.003, casa: 0.004, terreno: 0.002, pousada: 0.005, comercial: 0.004 };
-    const iptuRate = iptuBase[tipo] || 0.003;
-    const estimatedIptu = Math.round(median * iptuRate);
+  try {
+    const payload = { cidade: cidade.replace(/-/g,' '), tipo: tipo.charAt(0).toUpperCase()+tipo.slice(1), area, quartos: dorms };
+    const res = await fetch('http://127.0.0.1:8000/avaliar', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify(payload)
+    });
+    const data = await res.json();
+    document.getElementById('valBaixo').textContent = 'R$ ' + Number(data.faixa_min||0).toLocaleString('pt-BR');
+    document.getElementById('valMedio').textContent = 'R$ ' + Number(data.sugestao||0).toLocaleString('pt-BR');
+    document.getElementById('valAlto').textContent = 'R$ ' + Number(data.faixa_max||0).toLocaleString('pt-BR');
+    const position = tipo === 'apartamento' ? 0.62 : tipo === 'casa' ? 0.55 : tipo === 'pousada' ? 0.40 : 0.50;
+    document.getElementById('valBarFill').style.width = (position * 100) + '%';
+    document.getElementById('valBarMarker').style.left = (position * 100) + '%';
+    document.getElementById('valInsight').textContent = 'Estimativa gerada pela IA para ' + payload.cidade + '.';
+    const iptuRate = { apartamento: 0.003, casa: 0.004, terreno: 0.002, pousada: 0.005, comercial: 0.004 }[tipo] || 0.003;
+    const estimatedIptu = Math.round(Number(data.sugestao||0) * iptuRate);
     document.getElementById('valIptuInfo').textContent = '💰 IPTU estimado: R$ ' + estimatedIptu.toLocaleString('pt-BR') + '/ano (base ' + (iptuRate * 100).toFixed(1) + '% do valor).';
-    document.getElementById('valResult').classList.add('visible');
+  } catch (e) {
+    setErr('Erro ao consultar API.');
+  }
 }
 
 // ====================
@@ -4578,56 +4574,33 @@ function setTone(btn, tone) {
   btn.classList.add('active');
 }
 
-function generateDesc() {
-  const tipo = document.getElementById('descTipo').value;
-  const cidade = document.getElementById('descCidade').value || '';
+async function generateDesc() {
+  const tipo = document.getElementById('descTipo').value || 'Apartamento';
+  const cidade = document.getElementById('descCidade').value || 'Santos';
   const area = document.getElementById('descArea').value || '';
   const dorms = document.getElementById('descDorms').value || '';
   const extra = document.getElementById('descExtra').value || '';
-  if (!cidade) { alert('Informe a cidade/bairro.'); return; }
   const loading = document.getElementById('descLoading');
   const output = document.getElementById('descOutput');
+  const outputText = document.getElementById('descOutputText');
+  if (!cidade) { alert('Informe a cidade/bairro.'); return; }
   loading.classList.add('visible');
   output.classList.remove('visible');
-  setTimeout(() => {
+  if (outputText) outputText.textContent = '';
+  try {
+    const res = await fetch('http://127.0.0.1:8000/descrever', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ tipo: tipo.charAt(0).toUpperCase()+tipo.slice(1), cidade, diferenciais: [area, dorms, extra].filter(Boolean).join(', ') })
+    });
+    const data = await res.json();
+    if (outputText) outputText.textContent = data.descricao || '';
+  } catch (e) {
+    if (outputText) outputText.textContent = 'Erro ao consultar API.';
+  } finally {
     loading.classList.remove('visible');
-    const templates = {
-      vendas: (t, c, a, d, e) => `🏠 ${t.charAt(0).toUpperCase() + t.slice(1)} em ${c}
-
-📍 Localização privilegiada em ${c}. ${a > 0 ? `Área de ${a}m²` : ''} ${d > 0 ? `com ${d} dormitório${d > 1 ? 's' : ''}` : ''}. ${e ? 'Destaques: ' + e : ''}
-
-🏖️ Vivência litorânea com infraestrutura completa. Agende sua visita e conheça de perto!
-
-📞 Contato: (11) 95434-6288 | comercial@praiadigital.com`,
-
-      investimento: (t, c, a, d, e) => `📊 OPORTUNIDADE DE INVESTIMENTO — ${t.charAt(0).toUpperCase() + t.slice(1)} em ${c}
-
-${a > 0 ? `📐 Área: ${a}m²` : ''} ${d > 0 ? `• ${d} dormitório${d > 1 ? 's' : ''}` : ''} ${e ? '• Destaques: ' + e : ''}
-
-💡 Ativo de alto potencial no litoral sul. Mercado em crescimento acelerado.
-
-📞 Garanta sua rentabilidade. Contato: (11) 95434-6288`,
-
-      aluguel: (t, c, a, d, e) => `🏠 ${t.charAt(0).toUpperCase() + t.slice(1)} para alugar em ${c}
-
-📍 ${c}. ${a > 0 ? `${a}m²` : ''} ${d > 0 ? `• ${d} dormitório${d > 1 ? 's' : ''}` : ''} ${e ? '• ' + e : ''}
-
-🏖️ Perfeito para quem busca qualidade de vida à beira-mar. Agende sua visita!
-
-📞 (11) 95434-6288 | comercial@praiadigital.com`,
-
-      luxo: (t, c, a, d, e) => `✨ ${t.charAt(0).toUpperCase() + t.slice(1)} de Luxo — ${c}
-
-Experiência premium à beira-mar. ${a > 0 ? `${a}m²` : ''} ${d > 0 ? `• ${d} suíte${d > 1 ? 's' : ''}` : ''}${e ? '. ' + e : ''}
-
-💎 Padrão excepcional em uma das melhores localizações do litoral.
-
-Agende visita exclusiva: (13) 99999-9999`
-    };
-    const text = templates[currentTone](tipo, cidade, parseInt(area), parseInt(dorms), extra);
-    document.getElementById('descOutputText').textContent = text;
     output.classList.add('visible');
-  }, 1500);
+  }
 }
 
 function copyDesc() {
