@@ -34,3 +34,5 @@
 - 08/07/2026 00:44: envio inicial para lead 24 — Praia Grande Imóveis (Praia Grande) → e-mail: contato24@exemplo.com
 
 - 08/07/2026 00:45: envio inicial para lead 41 — Cibratel Imóveis (Itanhaém) → e-mail: contato41@exemplo.com
+
+- 08/07/2026 00:45: envio inicial para lead 129 — Riviera Business (Bertioga) → e-mail: contato129@exemplo.com
