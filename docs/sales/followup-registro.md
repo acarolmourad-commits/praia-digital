@@ -4054,3 +4054,11 @@
 - 08/07/2026 01:31: proposta de parceria fechada gerada para Costa Azul Prop (Santos)
 
 - 08/07/2026 01:31: proposta de parceria fechada gerada para Caiçara Digital Praia (Praia Grande)
+
+- 08/07/2026 01:34: follow-up pós-call direcionado para Santos Luxo (Santos) | call_agendada -> followup_pos_call_enviado
+
+- 08/07/2026 01:34: follow-up pós-call direcionado para Santos Executive (Santos) | call_agendada -> followup_pos_call_enviado
+
+- 08/07/2026 01:34: follow-up pós-call direcionado para Santos Bay Homes (Santos) | call_agendada -> followup_pos_call_enviado
+
+- 08/07/2026 01:34: follow-up pós-call direcionado para Santos Launch (Santos) | call_agendada -> followup_pos_call_enviado
