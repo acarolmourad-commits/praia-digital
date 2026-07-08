@@ -5444,3 +5444,13 @@
 | 112 | Email | 2026-07-08 | outreach CEO | 2026-07-11 | 2026-07-15 |
 | 126 | Email | 2026-07-08 | outreach CEO | 2026-07-11 | 2026-07-15 |
 | 655 | Email | 2026-07-08 | resposta-proposta-comercial template enviada | 2026-07-10 | — |
+| 188 | Email | 2026-07-08 | outreach CEO Bertioga | 2026-07-11 | 2026-07-15 |
+| 203 | Email | 2026-07-08 | outreach CEO Bertioga | 2026-07-11 | 2026-07-15 |
+| 218 | Email | 2026-07-08 | outreach CEO Bertioga | 2026-07-11 | 2026-07-15 |
+| 13 | Email | 2026-07-08 | outreach CEO Santos | 2026-07-11 | 2026-07-15 |
+| 18 | Email | 2026-07-08 | outreach CEO Santos | 2026-07-11 | 2026-07-15 |
+| 26 | Email | 2026-07-08 | outreach CEO Peruíbe | 2026-07-11 | 2026-07-15 |
+| 39 | Email | 2026-07-08 | outreach CEO Santos | 2026-07-11 | 2026-07-15 |
+| 83 | Email | 2026-07-08 | outreach CEO Itanhaém | 2026-07-11 | 2026-07-15 |
+| 92 | Email | 2026-07-08 | outreach CEO Guarujá | 2026-07-11 | 2026-07-15 |
+| 93 | Email | 2026-07-08 | outreach CEO Bertioga | 2026-07-11 | 2026-07-15 |
