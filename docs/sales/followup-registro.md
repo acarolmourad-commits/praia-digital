@@ -5188,3 +5188,39 @@
 - 08/07/2026 02:34: [NOVO CICLO] PARCERIA FECHADA com Praia Grande Tech (Praia Grande) | call_agendada -> parceria_fechada
 
 - 08/07/2026 02:34: [NOVO CICLO] PARCERIA FECHADA com São Vicente Litoral (São Vicente) | call_agendada -> parceria_fechada
+
+- 08/07/2026 02:34: onboarding novo ciclo gerado para Peruíbe Blue (Peruíbe)
+
+- 08/07/2026 02:34: onboarding novo ciclo gerado para Guarujá Platinum (Guarujá)
+
+- 08/07/2026 02:34: onboarding novo ciclo gerado para Itanhaém Premium (Itanhaém)
+
+- 08/07/2026 02:34: onboarding novo ciclo gerado para Ilhabela Center (Ilhabela)
+
+- 08/07/2026 02:34: onboarding novo ciclo gerado para São Vicente Litoral (São Vicente)
+
+- 08/07/2026 02:34: onboarding novo ciclo gerado para Itanhaém Premium (Itanhaém)
+
+- 08/07/2026 02:34: onboarding novo ciclo gerado para São Vicente Elite (São Vicente)
+
+- 08/07/2026 02:34: onboarding novo ciclo gerado para Mongaguá Connect (Mongaguá)
+
+- 08/07/2026 02:34: onboarding novo ciclo gerado para Ubatuba View (Ubatuba)
+
+- 08/07/2026 02:34: onboarding novo ciclo gerado para Santos Premium (Santos)
+
+- 08/07/2026 02:34: onboarding novo ciclo gerado para São Vicente Litoral (São Vicente)
+
+- 08/07/2026 02:34: onboarding novo ciclo gerado para Santos Launch (Santos)
+
+- 08/07/2026 02:34: onboarding novo ciclo gerado para São Vicente View (São Vicente)
+
+- 08/07/2026 02:34: onboarding novo ciclo gerado para Bertioga Center (Bertioga)
+
+- 08/07/2026 02:34: onboarding novo ciclo gerado para Santos Smart (Santos)
+
+- 08/07/2026 02:34: onboarding novo ciclo gerado para Guarujá Digital (Guarujá)
+
+- 08/07/2026 02:34: onboarding novo ciclo gerado para Praia Grande Tech (Praia Grande)
+
+- 08/07/2026 02:34: onboarding novo ciclo gerado para São Vicente Litoral (São Vicente)
