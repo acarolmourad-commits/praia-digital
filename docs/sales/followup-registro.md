@@ -4144,3 +4144,33 @@
 - 08/07/2026 01:41: follow-up 7 dias para Riviera Exclusive (Bertioga)
 
 - 08/07/2026 01:41: follow-up 7 dias para Prime Imóveis Digital (Guarujá)
+
+- 08/07/2026 01:50: follow-up 7 dias para Litoral Premium Sant (Santos)
+
+- 08/07/2026 01:50: acompanhamento pós-onboarding para Santos Ocean View (Santos)
+
+- 08/07/2026 01:50: acompanhamento pós-onboarding para Santos Premium Digital (Santos)
+
+- 08/07/2026 01:50: acompanhamento pós-onboarding para Santos Tower Imóveis (Santos)
+
+- 08/07/2026 01:50: acompanhamento pós-onboarding para Santos Luxo (Santos)
+
+- 08/07/2026 01:50: acompanhamento pós-onboarding para Santos Smart Home (Santos)
+
+- 08/07/2026 01:50: acompanhamento pós-onboarding para Santos Executive (Santos)
+
+- 08/07/2026 01:50: acompanhamento pós-onboarding para Santos Bay Homes (Santos)
+
+- 08/07/2026 01:50: acompanhamento pós-onboarding para Santos Launch (Santos)
+
+- 08/07/2026 01:50: acompanhamento pós-onboarding para Santos Platinum (Santos)
+
+- 08/07/2026 01:50: acompanhamento pós-onboarding para Santos Elite (Santos)
+
+- 08/07/2026 01:50: acompanhamento pós-onboarding para Santos Prime (Santos)
+
+- 08/07/2026 01:50: acompanhamento pós-onboarding para Ocean Blue Digital (Guarujá)
+
+- 08/07/2026 01:50: acompanhamento pós-onboarding para Praia Grande Imóveis (Praia Grande)
+
+- 08/07/2026 01:50: acompanhamento pós-onboarding para Cibratel Imóveis (Itanhaém)
