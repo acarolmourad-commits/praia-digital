@@ -41,7 +41,7 @@ id,nome_da_imobiliaria,cidade,pessoa_de_contato,cargo,email,whatsapp,perfil,stat
 15,Prime Imóveis Digital,Guarujá,Ricardo Lima,Gerente,contato15@exemplo.com,(13) 99999-0015,construtora,contato_inicial_enviado,atendimento,avaliacao,Instagram,61,Relatórios,R$ 1-3k/mês,direto,Guarujá,,21,08/07/2026,08/07/2026
 19,Litoral Norte Imóveis,Santos,Renato Almeida,Diretor,contato19@exemplo.com,(13) 99999-0019,imobiliaria,contato_inicial_enviado,conversao,chatbot,Website,88,Relatórios,R$ 1-3k/mês,parceiro,Santos,,21,08/07/2026,08/07/2026
 29,Riviera Imóveis,Bertioga,Ana Barros,Gerente,contato29@exemplo.com,(13) 99999-0029,construtora,contato_inicial_enviado,leads,anuncios,LinkedIn,63,SEO local,R$ 1-3k/mês,formal,Bertioga,,21,08/07/2026,08/07/2026
-32,Boqueirão Imóveis,Santos,Paulo Mendes,Gerente,contato32@exemplo.com,(13) 99999-0032,construtora,novo,conversao,seo,Instagram,84,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,21,,
+32,Boqueirão Imóveis,Santos,Paulo Mendes,Gerente,contato32@exemplo.com,(13) 99999-0032,construtora,contato_inicial_enviado,conversao,seo,Instagram,84,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,21,08/07/2026,08/07/2026
 62,Boqueirão Norte,Santos,Paulo Costa,Corretor-chefe,contato47@exemplo.com,(13) 99999-0047,construtora,novo,conversao,seo,Instagram,89,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,21,,
 84,Riviera Blue,Bertioga,Isabela Costa,Gerente,contato84@exemplo.com,(13) 99999-0084,construtora,novo,leads,anuncios,LinkedIn,66,SEO local,R$ 1-3k/mês,formal,Bertioga,,21,,
 87,Embaré Digital,Santos,Rafaela Nunes,Corretor-chefe,contato87@exemplo.com,(13) 99999-0087,construtora,novo,conversao,seo,Instagram,86,Relatórios,R$ 0.5-2k/mês,parceiro,Santos,,21,,
