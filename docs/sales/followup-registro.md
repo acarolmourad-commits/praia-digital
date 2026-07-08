@@ -50,3 +50,23 @@
 - 08/07/2026 00:47: envio inicial para lead 29 — Riviera Imóveis (Bertioga) → e-mail: contato29@exemplo.com
 
 - 08/07/2026 00:47: envio inicial para lead 32 — Boqueirão Imóveis (Santos) → e-mail: contato32@exemplo.com
+
+- 08/07/2026 00:47: envio inicial para lead 6 — Beta Imóveis Centro (Santos) → e-mail: contato6@exemplo.com
+
+- 08/07/2026 00:47: envio inicial para lead 10 — Região Sul Praia (Peruíbe) → e-mail: contato10@exemplo.com
+
+- 08/07/2026 00:47: envio inicial para lead 21 — Litoral Norte Premium (Santos) → e-mail: contato21@exemplo.com
+
+- 08/07/2026 00:47: envio inicial para lead 34 — Caiçara Imóveis (Praia Grande) → e-mail: contato34@exemplo.com
+
+- 08/07/2026 00:47: envio inicial para lead 54 — Praia Grande Norte (Praia Grande) → e-mail: contato39@exemplo.com
+
+- 08/07/2026 00:47: envio inicial para lead 59 — Riviera Norte (Bertioga) → e-mail: contato44@exemplo.com
+
+- 08/07/2026 00:47: envio inicial para lead 64 — Caiçara Norte (Praia Grande) → e-mail: contato49@exemplo.com
+
+- 08/07/2026 00:47: envio inicial para lead 74 — Riviera Digital (Bertioga) → e-mail: contato74@exemplo.com
+
+- 08/07/2026 00:47: envio inicial para lead 89 — Caiçara Digital (Praia Grande) → e-mail: contato89@exemplo.com
+
+- 08/07/2026 00:47: envio inicial para lead 99 — Riviera Exclusive (Bertioga) → e-mail: contato99@exemplo.com
