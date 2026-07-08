@@ -1332,3 +1332,33 @@
 - 08/07/2026 01:05: follow-up 7 dias para lead 29 — Riviera Imóveis (Bertioga)
 
 - 08/07/2026 01:05: follow-up 7 dias para lead 32 — Boqueirão Imóveis (Santos)
+
+- 08/07/2026 01:05: call agendada com lead 51 — Litoral Premium Sant (Santos)
+
+- 08/07/2026 01:05: call agendada com lead 66 — Santos Ocean View (Santos)
+
+- 08/07/2026 01:05: call agendada com lead 76 — Santos Premium Digital (Santos)
+
+- 08/07/2026 01:05: call agendada com lead 91 — Santos Tower Imóveis (Santos)
+
+- 08/07/2026 01:05: call agendada com lead 101 — Santos Luxo (Santos)
+
+- 08/07/2026 01:05: follow-up 3 dias para lead 6 — Beta Imóveis Centro (Santos)
+
+- 08/07/2026 01:05: follow-up 3 dias para lead 10 — Região Sul Praia (Peruíbe)
+
+- 08/07/2026 01:05: follow-up 3 dias para lead 21 — Litoral Norte Premium (Santos)
+
+- 08/07/2026 01:05: follow-up 3 dias para lead 34 — Caiçara Imóveis (Praia Grande)
+
+- 08/07/2026 01:05: follow-up 3 dias para lead 54 — Praia Grande Norte (Praia Grande)
+
+- 08/07/2026 01:05: follow-up 7 dias para lead 59 — Riviera Norte (Bertioga)
+
+- 08/07/2026 01:05: follow-up 7 dias para lead 64 — Caiçara Norte (Praia Grande)
+
+- 08/07/2026 01:05: follow-up 7 dias para lead 74 — Riviera Digital (Bertioga)
+
+- 08/07/2026 01:05: follow-up 7 dias para lead 89 — Caiçara Digital (Praia Grande)
+
+- 08/07/2026 01:05: follow-up 7 dias para lead 99 — Riviera Exclusive (Bertioga)
