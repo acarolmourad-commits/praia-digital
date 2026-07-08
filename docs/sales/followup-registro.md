@@ -5388,3 +5388,7 @@
 - 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Ubatuba Elite (Ubatuba)
 
 - 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Ilhabela Executive (Ilhabela)
+| Lead ID | Canal | Data | Motivo | Follow-up 1 | Follow-up 2 |
+|---|---|---|---|---|---|
+| 655 | Whats | 2026-07-08 09:10 | CEO outreach | 2026-07-11 | 2026-07-15 |
+| 654 | Whats | 2026-07-08 09:10 | CEO outreach | 2026-07-11 | 2026-07-15 |
