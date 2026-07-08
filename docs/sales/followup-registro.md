@@ -48,3 +48,5 @@
 - 08/07/2026 00:47: envio inicial para lead 19 — Litoral Norte Imóveis (Santos) → e-mail: contato19@exemplo.com
 
 - 08/07/2026 00:47: envio inicial para lead 29 — Riviera Imóveis (Bertioga) → e-mail: contato29@exemplo.com
+
+- 08/07/2026 00:47: envio inicial para lead 32 — Boqueirão Imóveis (Santos) → e-mail: contato32@exemplo.com
