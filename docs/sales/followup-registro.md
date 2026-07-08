@@ -5479,3 +5479,8 @@
 | 159 | Email | 2026-07-08 | outreach personalizada Praia Grande | 2026-07-11 | 2026-07-15 |
 | 162 | Email | 2026-07-08 | outreach personalizada Guarujá | 2026-07-11 | 2026-07-15 |
 | 163 | Email | 2026-07-08 | outreach personalizada Bertioga | 2026-07-11 | 2026-07-15 |
+| 51 | Email | 2026-07-08 | fechamento-parceria | — | — |
+| 66 | Email | 2026-07-08 | fechamento-parceria | — | — |
+| 76 | Email | 2026-07-08 | fechamento-parceria | — | — |
+| 91 | Email | 2026-07-08 | fechamento-parceria | — | — |
+| 101 | Email | 2026-07-08 | fechamento-parceria | — | — |
