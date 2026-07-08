@@ -2524,3 +2524,975 @@
 - 08/07/2026 01:27: follow-up dirigido para neutro Prime Imóveis Prime (Peruíbe)
 
 - 08/07/2026 01:27: follow-up dirigido para neutro Costa Verde Blue (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Exclusive (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Caiçara Imóveis (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Caiçara Conectada (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Executive (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Exclusive (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Caiçara Conectada (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Caiçara Platinum (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Embaré Elite (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Caiçara Elite (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Litoral Norte Imóveis (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Imóveis (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Boqueirão Imóveis (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Boqueirão Norte (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Blue (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Peruíbe Eco (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Gonzaga Digital (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Embaré Tech (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Peruíbe Natureza (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Gonzaga Smart (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Embaré Conecta (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Peruíbe Executive (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Gonzaga Executive (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Embaré Executive (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Peruíbe Nature (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Gonzaga Digital (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Peruíbe Platinum (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Gonzaga Platinum (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Embaré Platinum (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Peruíbe Elite (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Gonzaga Premium (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Rio Preto Sol (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Peruíbe Norte (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Gonzaga Sul (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Peruíbe Coast (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Bertioga Centro (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Gonzaga Norte (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Peruíbe Ecologic (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Santos Vision (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Bertioga Platinum (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Bertioga Elite (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Bertioga Prime (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mar & Sol Praia (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Peruíbe Sol (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Ponta da Praia (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Itanhaém Norte (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Guarujá Blue Tech (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Bertioga Riviera Tech (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Itanhaém Premium (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Guarujá Premium (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Bertioga Green (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Itanhaém Premium (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Smart (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Relax (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Guarujá Executive (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Bertioga Executive (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Itanhaém Executive (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Vision (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Guarujá Coast Imóveis (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Bertioga Premium (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Itanhaém Premium (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Guarujá Launch (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Bertioga Launch (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Itanhaém Launch (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Guarujá Platinum (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Itanhaém Platinum (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Guarujá Elite (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Itanhaém Elite (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Guarujá Prime (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Sul Praia (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Ocean Blue Centro (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Prime Imóveis Site (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Itanhaém Mar (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para José Menino Premium (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Gaivota Imóveis (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Itanhaém Centro (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Guarujá Blue (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Bertioga Riviera (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Itanhaém View (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Bertioga Smart (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Guarujá Zen (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Bertioga Premium (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Guarujá Vision (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Alpha Imóveis Praia (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Maresias Imóveis (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mongaguá Atlântica (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Vila Tupi Imóveis (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Jussara Digital (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mongaguá Sul (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Barra Peruíbe Sul (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mongaguá Beach (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mongaguá Centro (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Barra Norte (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mongaguá Tropical (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mongaguá Blue (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Barra Norte (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Guarujá Smart (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mongaguá Relax (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Barra Digital (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mongaguá Executive (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Barra Executive (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mongaguá Blue (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mongaguá Launch (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mongaguá Platinum (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mongaguá Elite (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Barra Elite (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Região Sul Digital (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Sul Site (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Sol & Mar Centro (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Barra de Peruíbe (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Balneário Conchas (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Maresias Tech (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Sul (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Business (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Estrutura (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Executive (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Smart (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Launch (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Platinum (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Elite (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Beta Imóveis Praia (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Região Sul Digital (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Imobiliária Litoral Litoral (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Costa Azul Imóveis (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Vila São Paulo (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Park (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Center (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Jardim Rio Branco (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para São Vicente Platinum (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para São Vicente Elite (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para São Vicente Prime (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para São Vicente Premium (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Agenor de Campos (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Itinguçu Imóveis (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Guarujá Mar Digital (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para São Vicente Norte (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para São Vicente Green (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para São Vicente Bay (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para São Vicente Conectada (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para São Vicente Executive (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para São Vicente Connect (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para São Vicente Launch (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Enseada Digital (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Tombo Digital (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Tombo Beach (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para São Vicente Smart (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Tombo Surf (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para São Vicente Premium (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Tombo Executive (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Tombo Beach (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Tombo Launch (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Tombo Platinum (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Tombo Elite (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Tombo Norte (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Tombo Beach (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Catiapoã Sul (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Tombo Exclusive (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Catiapoã Nature (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Catiapoã Nature (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Catiapoã Platinum (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Catiapoã Elite (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Catiapoã Norte (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Catiapoã Digital (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Catiapoã Executive (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Região Sul Digital (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Edifica Praia View (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Beta Imóveis View (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Sol & Mar Blue (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Região Sul Digital (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Caiçara Digital Digital (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Porto da Lua Prime (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Edifica Praia Digital (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Site View (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Blue Digital (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mar & Sol Site (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Santos Tower Centro (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Site Digital (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Santos Tower Prime (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Caiçara Digital Blue (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Site View (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Sul Blue (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Prime Imóveis Digital (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Sul Prime (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Blue Blue (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Região Sul Prime (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Beta Imóveis Blue (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Prime Imóveis Centro (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Costa Verde Litoral (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Sul Prime (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Caiçara Digital Site (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Blue View (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Beta Imóveis Blue (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Região Sul Site (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Sul Blue (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Sol & Mar Digital (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Alpha Imóveis View (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Santos Tower Digital (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mar & Sol Digital (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Ocean Blue Prime (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Litoral Premium Imóveis (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Caiçara Digital View (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Porto da Lua Site (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Alpha Imóveis Centro (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Santos Tower Blue (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Prime Imóveis Digital (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Costa Azul Site (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Site Imóveis (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mar & Sol Site (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Ocean Blue Centro (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Ocean Blue Imóveis (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Imóveis View (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Ocean Blue View (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Blue Site (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Caiçara Digital View (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Porto da Lua Blue (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Blue Blue (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Prime Imóveis Centro (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Costa Azul Digital (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Site Site (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Itanhaém Premium Blue (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Site Litoral (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Edifica Praia Imóveis (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Blue Praia (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Região Sul Litoral (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Recife Imóveis Praia (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Costa do Mar Centro (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Imóveis Prime (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Digital Litoral (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Beta Imóveis Litoral (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Imóveis Site (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Porto da Lua Centro (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Digital View (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Litoral Premium Site (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Costa Verde Digital (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Site View (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Atlântico Imóveis Centro (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Costa Verde Imóveis (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Sul Imóveis Imóveis (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Edifica Praia Prime (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Ocean Blue Centro (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Realize II Imóveis (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Realize II Site (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Litoral Brasil Prime (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Barra Digital Praia (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Blue Blue (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Realize II Litoral (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Beta Imóveis Site (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Barra Digital Centro (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mar & Sol Site (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Região Sul Digital (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Blue Digital (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Ocean Blue Prime (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Ocean Blue View (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Sul Digital (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Blue Centro (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Edifica Praia Prime (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mar & Sol Centro (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Alpha Imóveis Centro (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Blue Digital (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Edifica Praia Prime (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Região Sul Site (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mar & Sol Site (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Santos Tower Digital (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Santos Tower Site (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Sul Prime (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Site View (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Sul Imóveis (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Blue View (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Beta Imóveis View (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Blue Centro (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mar & Sol Centro (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Prime Imóveis Blue (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Blue Centro (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Sul Digital (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mar & Sol Litoral (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Barra Digital Digital (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Realize II Site (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Sol & Mar Prime (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Prime Imóveis Prime (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Beta Imóveis Site (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Site Site (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Alpha Imóveis Site (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Santos Tower Prime (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Blue Tech (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Beta Imóveis Praia (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Site Tech (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Sol & Mar View (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Santos Tower Centro (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Blue Prime (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Sul Digital (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Realize II Blue (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Beta Imóveis View (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mongaguá Imóveis Litoral (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Realize II Tech (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Porto da Lua Praia (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Beta Imóveis Blue (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Caiçara Digital Litoral (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Caiçara Digital Praia (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Prime Imóveis Site (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Ocean Blue Litoral (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Costa Verde Site (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Barra Digital Imóveis (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Barra Digital Imóveis (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Região Sul Centro (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Beta Imóveis Tech (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Vista Mar Litoral (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Vista Mar Litoral (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mar & Sol Tech (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Caiçara Digital Litoral (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Caiçara Digital Praia (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Realize II Blue (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Prime Imóveis Praia (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Sol & Mar Imóveis (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Sol & Mar Blue (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Porto da Lua Litoral (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Sul Praia (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Itanhaém Premium Tech (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Sul Litoral (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Porto da Lua Centro (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Região Sul Prime (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Costa Verde Centro (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Ocean Blue Blue (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Sol & Mar Blue (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Região Sul View (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Região Sul Blue (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mar Brasil Prime (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Barra Digital Imóveis (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Recife Imóveis Prime (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Litoral Brasil Praia (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Santos Tower Litoral (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Blue View (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mar & Sol Imóveis (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mar & Sol Blue (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Litoral Premium Imóveis (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Barra Digital Imóveis (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Caiçara Digital Tech (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Blue Prime (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Beta Imóveis Praia (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Região Sul Praia (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mongaguá Imóveis Site (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Ocean Blue Blue (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Edifica Praia Imóveis (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Edifica Praia Digital (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Barra Digital Litoral (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Prime Imóveis Praia (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Beta Imóveis Centro (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Caiçara Digital Litoral (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Costa Verde Prime (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Edifica Praia Blue (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Edifica Praia Blue (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Itanhaém Premium Imóveis (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mar & Sol Digital (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Alpha Imóveis Centro (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Santos Tower Prime (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Prime Imóveis Prime (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Costa Verde View (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Região Sul Praia (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Alpha Imóveis Prime (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Santos Tower Centro (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mongaguá Imóveis Tech (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mar & Sol View (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Ocean Blue Prime (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Litoral Premium Praia (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Sul Centro (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Santos Tower Prime (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Região Sul Prime (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Sul Praia (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Costa Verde Tech (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Itanhaém Premium Prime (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Caiçara Digital Imóveis (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Prime Imóveis Site (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Costa Verde Centro (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Santos Tower Litoral (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Sul Centro (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Site Imóveis (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Itanhaém Premium Blue (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Sol & Mar Digital (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Litoral Premium Tech (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Alpha Imóveis Tech (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Alpha Imóveis Site (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Sul Prime (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Litoral Premium Praia (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Porto da Lua Digital (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Santos Tower Site (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Região Sul Imóveis (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Site Site (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Realize II Praia (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Ocean Blue Centro (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Imóveis Site (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Sul Site (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Alpha Imóveis Digital (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Digital Digital (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Barra Digital Praia (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Vista Mar Digital (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Sol & Mar Blue (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Edifica Praia Litoral (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Costa Azul Blue (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mar & Sol Site (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Sul Litoral (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Barra Digital Tech (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Digital Praia (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Digital Tech (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Sul Litoral (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Edifica Praia Blue (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Região Sul Blue (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Costa do Mar Prime (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Sol & Mar Prime (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Costa do Mar Blue (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Edifica Praia Tech (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Prime Imóveis Centro (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Litoral Brasil Prime (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Prime Imóveis View (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Santos Tower Centro (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Barra Digital View (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mongaguá Imóveis Digital (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Litoral Premium Site (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Imóveis Blue (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Itanhaém Premium View (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Atlântico Imóveis Centro (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Costa do Mar Digital (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Realize II Site (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Recife Imóveis Blue (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Barra Digital Centro (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Alpha Imóveis Tech (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Alpha Imóveis Blue (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Site View (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mar & Sol Tech (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Site Imóveis (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Vista Mar Centro (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Edifica Praia Imóveis (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Prime Imóveis Digital (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Sul Imóveis Digital (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Região Sul Centro (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Barra Digital Litoral (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mar Brasil Digital (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Barra Digital Tech (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Sul Site (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Edifica Praia Imóveis (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Sul Site (Mongaguá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Realize II View (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Porto da Lua Tech (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Barra Digital Site (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Sul Imóveis Blue (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Ocean Blue Centro (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Itanhaém Premium View (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Costa do Mar Blue (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mar Brasil Digital (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Atlântico Imóveis Blue (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Ocean Blue Centro (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Itanhaém Premium Imóveis (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mongaguá Imóveis Site (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Atlântico Imóveis Site (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Realize II Prime (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Itanhaém Premium Site (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Beta Imóveis Site (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Caiçara Digital Site (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Barra Digital Site (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Litoral Blue (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mar & Sol Centro (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Porto da Lua Blue (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Vista Mar Litoral (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Edifica Praia Tech (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Costa Verde Litoral (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mongaguá Imóveis Imóveis (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Site Centro (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Site Prop (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Blue (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Litoral Blue (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Alpha Imóveis Centro (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Praia Grande Site View (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Sol & Mar View (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Edifica Praia Centro (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Edifica Praia Praia (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Litoral Premium Tech (São Vicente)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Blue View (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Vista Mar Prop (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Edifica Praia Centro (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Mar Blue (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Atlântico Imóveis Centro (Bertioga)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Edifica Praia Prop (Itanhaém)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Atlântico Imóveis Prime (Guarujá)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Norte Sul Praia (Santos)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Costa Azul  Prime (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Riviera Blue Site (Praia Grande)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Litoral Premium Imóveis (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Prime Imóveis Prime (Peruíbe)
+
+- 08/07/2026 01:29: follow-up direcionado enviado para Costa Verde Blue (Peruíbe)
