@@ -6737,3 +6737,8 @@
 | 599 | Email | 2026-07-11 | followup-7d Peruíbe | 2026-07-15 | — |
 | 600 | Email | 2026-07-08 | followup-3d Peruíbe | 2026-07-11 | — |
 | 600 | Email | 2026-07-11 | followup-7d Peruíbe | 2026-07-15 | — |
+| 655 | Email | 2026-07-08 | call-proposta-enviada | — | — |
+| 654 | Email | 2026-07-08 | call-proposta-enviada | — | — |
+| 631 | Email | 2026-07-08 | call-proposta-enviada | — | — |
+| 101 | Email | 2026-07-08 | call-proposta-enviada | — | — |
+| 91 | Email | 2026-07-08 | call-proposta-enviada | — | — |
