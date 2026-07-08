@@ -37,4 +37,5 @@ a{color:#0077B6}
 <div class="card-item"><strong>Prazo</strong><p>Retorno entre 30 e 90 dias.</p></div>
 </div>
 <footer>© Praia Digital — 2026 — IA para imóveis no litoral paulista</footer>
-</body></html>
+</html>
+<div id="result-roi-ia-imobiliaria" class="result">Resultado</div><script>async function run(){const out=document.getElementById("result-roi-ia-imobiliaria");out.textContent="Processando...";const payload={};document.querySelectorAll("#integrated-form [name]").forEach(el=>{const n=el.getAttribute("name");payload[n]=isNaN(Number(el.value))?el.value:Number(el.value);});const e=await fetch("http://127.0.0.1:8000/avaliar",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)});const d=await e.json();out.textContent=JSON.stringify(d,null,2)}document.getElementById("integrated-form").addEventListener("submit",function(e){e.preventDefault();run()});document.getElementById("b-run")?.addEventListener("click",run);</script></body>
