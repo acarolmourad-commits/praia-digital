@@ -1,0 +1,227 @@
+lead_id,email,subject,asset
+1,contato1@exemplo.com,Proposta de Parceria — Santos/Santos | Praia Digital,envio-auto-1.html
+10,contato10@exemplo.com,Envio automatico para Regiao Sul Praia | Praia Digital,envio-auto-10.html
+101,contato101@exemplo.com,Envio automatico para Santos Luxo | Praia Digital,envio-auto-101.html
+102,contato102@exemplo.com,Parceria com IA — Guarujá/Guarujá | Praia Digital,envio-auto-102.html
+103,contato103@exemplo.com,Parceria com IA — Bertioga/Bertioga | Praia Digital,envio-auto-103.html
+106,contato106@exemplo.com,Proposta de parceria — Peruíbe | Praia Digital,envio-auto-106.html
+107,contato107@exemplo.com,Proposta de Parceria — Mongaguá/Mongaguá | Praia Digital,envio-auto-107.html
+108,contato108@exemplo.com,Parceria com IA — Itanhaém/Itanhaém | Praia Digital,envio-auto-108.html
+109,contato109@exemplo.com,Proposta de parceria — Bertioga | Praia Digital,envio-auto-109.html
+111,contato111@exemplo.com,Proposta de parceria — Santos | Praia Digital,envio-auto-111.html
+112,contato112@exemplo.com,Proposta de parceria — Santos | Praia Digital,envio-auto-112.html
+114,contato114@exemplo.com,Proposta de parceria — Praia Grande | Praia Digital,envio-auto-114.html
+115,contato115@exemplo.com,Proposta de Parceria — Peruíbe/Peruíbe | Praia Digital,envio-auto-115.html
+116,contato116@exemplo.com,Proposta de parceria — Santos | Praia Digital,envio-auto-116.html
+117,contato117@exemplo.com,Proposta de Parceria — Guarujá/Guarujá | Praia Digital,envio-auto-117.html
+118,contato118@exemplo.com,Proposta de Parceria — Bertioga/Bertioga | Praia Digital,envio-auto-118.html
+119,contato119@exemplo.com,Parceria com IA — Praia Grande/Praia Grande | Praia Digital,envio-auto-119.html
+121,contato121@exemplo.com,Envio automatico para Santos Smart Home | Praia Digital,envio-auto-121.html
+122,contato122@exemplo.com,Parceria com IA — Guarujá/Guarujá | Praia Digital,envio-auto-122.html
+123,contato123@exemplo.com,Parceria com IA — Bertioga/Bertioga | Praia Digital,envio-auto-123.html
+126,contato126@exemplo.com,Proposta de parceria — Peruíbe | Praia Digital,envio-auto-126.html
+127,contato127@exemplo.com,Proposta de Parceria — Mongaguá/Mongaguá | Praia Digital,envio-auto-127.html
+128,contato128@exemplo.com,Parceria com IA — Itanhaém/Itanhaém | Praia Digital,envio-auto-128.html
+129,contato129@exemplo.com,Envio automatico para Riviera Business | Praia Digital,envio-auto-129.html
+13,contato13@exemplo.com,Proposta de parceria — Santos/Santos | Praia Digital,envio-auto-13.html
+131,contato131@exemplo.com,Proposta de parceria — Santos | Praia Digital,envio-auto-131.html
+132,contato132@exemplo.com,Proposta de parceria — Santos | Praia Digital,envio-auto-132.html
+134,contato134@exemplo.com,Proposta de parceria — Praia Grande | Praia Digital,envio-auto-134.html
+135,contato135@exemplo.com,Proposta de Parceria — Peruíbe/Peruíbe | Praia Digital,envio-auto-135.html
+136,contato136@exemplo.com,Proposta de parceria — Santos | Praia Digital,envio-auto-136.html
+137,contato137@exemplo.com,Proposta de Parceria — Guarujá/Guarujá | Praia Digital,envio-auto-137.html
+138,contato138@exemplo.com,Proposta de Parceria — Bertioga/Bertioga | Praia Digital,envio-auto-138.html
+139,contato139@exemplo.com,Parceria com IA — Praia Grande/Praia Grande | Praia Digital,envio-auto-139.html
+141,contato141@exemplo.com,Envio automatico para Santos Executive | Praia Digital,envio-auto-141.html
+142,contato142@exemplo.com,Parceria com IA — Guarujá/Guarujá | Praia Digital,envio-auto-142.html
+143,contato143@exemplo.com,Parceria com IA — Bertioga/Bertioga | Praia Digital,envio-auto-143.html
+146,contato146@exemplo.com,Proposta de parceria — Peruíbe | Praia Digital,envio-auto-146.html
+147,contato147@exemplo.com,Proposta de Parceria — Mongaguá/Mongaguá | Praia Digital,envio-auto-147.html
+148,contato148@exemplo.com,Parceria com IA — Itanhaém/Itanhaém | Praia Digital,envio-auto-148.html
+149,contato149@exemplo.com,Proposta de parceria — Bertioga | Praia Digital,envio-auto-149.html
+15,contato15@exemplo.com,Proposta de parceria — Guarujá | Praia Digital,envio-auto-15.html
+151,contato151@exemplo.com,Proposta de parceria — Santos | Praia Digital,envio-auto-151.html
+152,contato152@exemplo.com,Proposta de parceria — Santos | Praia Digital,envio-auto-152.html
+154,contato154@exemplo.com,Proposta de parceria — Praia Grande | Praia Digital,envio-auto-154.html
+155,contato155@exemplo.com,Proposta de Parceria — Peruíbe/Peruíbe | Praia Digital,envio-auto-155.html
+156,contato156@exemplo.com,Proposta de parceria — Santos | Praia Digital,envio-auto-156.html
+157,contato157@exemplo.com,Proposta de Parceria — Guarujá/Guarujá | Praia Digital,envio-auto-157.html
+158,contato158@exemplo.com,Proposta de Parceria — Bertioga/Bertioga | Praia Digital,envio-auto-158.html
+159,contato159@exemplo.com,Parceria com IA — Praia Grande/Praia Grande | Praia Digital,envio-auto-159.html
+16,contato16@exemplo.com,Parceria com IA — Peruíbe/Peruíbe | Praia Digital,envio-auto-16.html
+161,contato161@exemplo.com,Envio automatico para Santos Bay Homes | Praia Digital,envio-auto-161.html
+162,contato162@exemplo.com,Parceria com IA — Guarujá/Guarujá | Praia Digital,envio-auto-162.html
+163,contato163@exemplo.com,Parceria com IA — Bertioga/Bertioga | Praia Digital,envio-auto-163.html
+166,contato166@exemplo.com,Proposta de parceria — Peruíbe | Praia Digital,envio-auto-166.html
+168,contato168@exemplo.com,Parceria com IA — Itanhaém/Itanhaém | Praia Digital,envio-auto-168.html
+169,contato169@exemplo.com,Proposta de parceria — Bertioga | Praia Digital,envio-auto-169.html
+17,contato17@exemplo.com,Proposta de Parceria — Bertioga/Bertioga | Praia Digital,envio-auto-17.html
+171,contato171@exemplo.com,Proposta de parceria — Santos | Praia Digital,envio-auto-171.html
+172,contato172@exemplo.com,Proposta de parceria — Santos | Praia Digital,envio-auto-172.html
+174,contato174@exemplo.com,Proposta de parceria — Praia Grande | Praia Digital,envio-auto-174.html
+175,comercial@praia.digital,Convite de parceria - Barra Norte | Praia Digital,envio-auto-175.html
+176,contato176@exemplo.com,Envio automatico para Santos Launch | Praia Digital,envio-auto-176.html
+177,contato177@exemplo.com,Parceria com IA — Guarujá/Guarujá | Praia Digital,envio-auto-177.html
+178,contato178@exemplo.com,Parceria com IA — Bertioga/Bertioga | Praia Digital,envio-auto-178.html
+18,contato18@exemplo.com,Proposta de parceria — Santos/Santos | Praia Digital,envio-auto-18.html
+181,contato181@exemplo.com,Proposta de parceria — Peruíbe | Praia Digital,envio-auto-181.html
+182,comercial@praia.digital,Convite de parceria - Mongaguá Launch | Praia Digital,envio-auto-182.html
+183,contato183@exemplo.com,Parceria com IA — Itanhaém/Itanhaém | Praia Digital,envio-auto-183.html
+184,contato184@exemplo.com,Envio automatico para Riviera Launch | Praia Digital,envio-auto-184.html
+186,contato186@exemplo.com,Envio automatico para Santos Platinum | Praia Digital,envio-auto-186.html
+187,contato187@exemplo.com,Parceria com IA — Guarujá/Guarujá | Praia Digital,envio-auto-187.html
+188,contato188@exemplo.com,Proposta de parceria — Bertioga/Bertioga | Praia Digital,envio-auto-188.html
+19,contato19@exemplo.com,Proposta de parceria — Santos | Praia Digital,envio-auto-19.html
+191,contato191@exemplo.com,Proposta de parceria — Peruíbe | Praia Digital,envio-auto-191.html
+192,comercial@praia.digital,Convite de parceria - Mongaguá Platinum | Praia Digital,envio-auto-192.html
+193,contato193@exemplo.com,Parceria com IA — Itanhaém/Itanhaém | Praia Digital,envio-auto-193.html
+194,contato194@exemplo.com,Envio automatico para Riviera Platinum | Praia Digital,envio-auto-194.html
+196,contato196@exemplo.com,Proposta de parceria — Santos | Praia Digital,envio-auto-196.html
+197,contato197@exemplo.com,Proposta de parceria — Santos | Praia Digital,envio-auto-197.html
+199,contato199@exemplo.com,Proposta de parceria — Praia Grande | Praia Digital,envio-auto-199.html
+200,comercial@praia.digital,Convite de parceria - Barra Platinum | Praia Digital,envio-auto-200.html
+201,contato176@exemplo.com,Envio automatico para Santos Launch | Praia Digital,envio-auto-201.html
+202,contato202@exemplo.com,Parceria com IA — Guarujá/Guarujá | Praia Digital,envio-auto-202.html
+203,contato203@exemplo.com,Proposta de parceria — Bertioga/Bertioga | Praia Digital,envio-auto-203.html
+206,contato206@exemplo.com,Proposta de parceria — Peruíbe | Praia Digital,envio-auto-206.html
+207,comercial@praia.digital,Convite de parceria - Mongaguá Elite | Praia Digital,envio-auto-207.html
+208,contato208@exemplo.com,Parceria com IA — Itanhaém/Itanhaém | Praia Digital,envio-auto-208.html
+209,contato209@exemplo.com,Envio automatico para Riviera Elite | Praia Digital,envio-auto-209.html
+21,contato21@exemplo.com,Envio automatico para Litoral Norte Premium | Praia Digital,envio-auto-21.html
+211,contato211@exemplo.com,Proposta de parceria — Santos | Praia Digital,envio-auto-211.html
+212,contato212@exemplo.com,Proposta de parceria — Santos | Praia Digital,envio-auto-212.html
+214,contato214@exemplo.com,Proposta de parceria — Praia Grande | Praia Digital,envio-auto-214.html
+215,comercial@praia.digital,Convite de parceria - Barra Elite | Praia Digital,envio-auto-215.html
+216,contato216@exemplo.com,Envio automatico para Santos Prime | Praia Digital,envio-auto-216.html
+217,contato217@exemplo.com,Parceria com IA — Guarujá/Guarujá | Praia Digital,envio-auto-217.html
+218,contato218@exemplo.com,Proposta de parceria — Bertioga/Bertioga | Praia Digital,envio-auto-218.html
+22,contato22@exemplo.com,Proposta de Parceria — Bertioga/Bertioga | Praia Digital,envio-auto-22.html
+24,contato24@exemplo.com,Envio automatico para Praia Grande Imoveis | Praia Digital,envio-auto-24.html
+242,contato242@exemplo.com,Proposta — Itanhaém/Itanhaém | Praia Digital,envio-auto-242.html
+243,contato243@exemplo.com,Proposta — Itanhaém/Itanhaém | Praia Digital,envio-auto-243.html
+244,contato244@exemplo.com,Proposta — Praia Grande/Praia Grande | Praia Digital,envio-auto-244.html
+245,contato245@exemplo.com,Proposta — Santos/Santos | Praia Digital,envio-auto-245.html
+246,contato246@exemplo.com,Proposta — Bertioga/Bertioga | Praia Digital,envio-auto-246.html
+247,contato247@exemplo.com,Proposta — Mongaguá/Mongaguá | Praia Digital,envio-auto-247.html
+248,contato248@exemplo.com,Proposta — Bertioga/Bertioga | Praia Digital,envio-auto-248.html
+249,contato249@exemplo.com,Proposta — Praia Grande/Praia Grande | Praia Digital,envio-auto-249.html
+25,contato25@exemplo.com,Proposta — São Vicente/São Vicente | Praia Digital,envio-auto-25.html
+250,contato250@exemplo.com,Proposta — São Vicente/São Vicente | Praia Digital,envio-auto-250.html
+251,contato251@exemplo.com,Proposta — Praia Grande/Praia Grande | Praia Digital,envio-auto-251.html
+252,contato252@exemplo.com,Proposta — Peruíbe/Peruíbe | Praia Digital,envio-auto-252.html
+253,contato253@exemplo.com,Proposta — Guarujá/Guarujá | Praia Digital,envio-auto-253.html
+254,contato254@exemplo.com,Proposta de Parceria — Santos | Praia Digital,envio-auto-254.html
+255,contato255@exemplo.com,Proposta de Parceria — Guarujá | Praia Digital,envio-auto-255.html
+256,contato214@exemplo.com,Envio automatico para Caiçara Elite | Praia Digital,envio-auto-256.html
+257,contato257@exemplo.com,Proposta de Parceria — Praia Grande | Praia Digital,envio-auto-257.html
+258,contato258@exemplo.com,Proposta de Parceria — Itanhaém | Praia Digital,envio-auto-258.html
+259,contato259@exemplo.com,Proposta de Parceria — São Vicente | Praia Digital,envio-auto-259.html
+26,contato26@exemplo.com,Proposta de parceria — Peruíbe/Peruíbe | Praia Digital,envio-auto-26.html
+260,contato260@exemplo.com,Proposta de Parceria — São Vicente | Praia Digital,envio-auto-260.html
+261,contato261@exemplo.com,Proposta de Parceria — Peruíbe | Praia Digital,envio-auto-261.html
+262,contato262@exemplo.com,Proposta de Parceria — Mongaguá | Praia Digital,envio-auto-262.html
+263,contato263@exemplo.com,Proposta de Parceria — Itanhaém | Praia Digital,envio-auto-263.html
+264,contato264@exemplo.com,Proposta de Parceria — Peruíbe | Praia Digital,envio-auto-264.html
+265,contato265@exemplo.com,Proposta de Parceria — Guarujá | Praia Digital,envio-auto-265.html
+266,contato266@exemplo.com,Proposta de Parceria — Peruíbe | Praia Digital,envio-auto-266.html
+267,contato267@exemplo.com,Proposta de Parceria — São Vicente | Praia Digital,envio-auto-267.html
+268,contato268@exemplo.com,Proposta de Parceria — Guarujá | Praia Digital,envio-auto-268.html
+269,contato269@exemplo.com,Proposta de Parceria — Bertioga | Praia Digital,envio-auto-269.html
+27,contato27@exemplo.com,Proposta de Parceria — Mongaguá/Mongaguá | Praia Digital,envio-auto-27.html
+270,contato270@exemplo.com,Proposta de Parceria — Itanhaém | Praia Digital,envio-auto-270.html
+271,contato271@exemplo.com,Proposta de Parceria — Itanhaém | Praia Digital,envio-auto-271.html
+272,contato272@exemplo.com,Proposta de Parceria — Peruíbe | Praia Digital,envio-auto-272.html
+273,contato273@exemplo.com,Proposta de Parceria — Peruíbe | Praia Digital,envio-auto-273.html
+274,contato274@exemplo.com,Proposta de Parceria — Peruíbe | Praia Digital,envio-auto-274.html
+278,contato278@exemplo.com,Envio automatico para Riviera Blue Site | Praia Digital,envio-auto-278.html
+28,contato28@exemplo.com,Parceria com IA — Itanhaém/Itanhaém | Praia Digital,envio-auto-28.html
+29,contato29@exemplo.com,Proposta de parceria — Bertioga | Praia Digital,envio-auto-29.html
+3,contato3@exemplo.com,Proposta — Santos/Santos | Praia Digital,envio-auto-3.html
+30,contato30@exemplo.com,Proposta — Guarujá/Guarujá | Praia Digital,envio-auto-30.html
+300,contato300@exemplo.com,Envio automatico para Praia Digital View | Praia Digital,envio-auto-300.html
+307,contato307@exemplo.com,Envio automatico para Sul Imóveis Imóveis | Praia Digital,envio-auto-307.html
+31,contato31@exemplo.com,Proposta de parceria — Santos | Praia Digital,envio-auto-31.html
+32,contato32@exemplo.com,Proposta de parceria — Santos | Praia Digital,envio-auto-32.html
+33,contato33@exemplo.com,Proposta — São Vicente/São Vicente | Praia Digital,envio-auto-33.html
+34,contato34@exemplo.com,Envio automatico para Caiçara Imoveis | Praia Digital,envio-auto-34.html
+346,contato346@exemplo.com,Envio automatico para Beta Imóveis View | Praia Digital,envio-auto-346.html
+35,contato35@exemplo.com,Proposta — Peruíbe/Peruíbe | Praia Digital,envio-auto-35.html
+356,contato356@exemplo.com,Envio automatico para Sol & Mar Prime | Praia Digital,envio-auto-356.html
+36,contato36@exemplo.com,Proposta de Parceria — Praia Grande/Praia Grande | Praia Digital,envio-auto-36.html
+360,comercial@praia.digital,Convite de parceria - Alpha Imóveis Site | Praia Digital,envio-auto-360.html
+362,comercial@praia.digital,Convite de parceria - Riviera Blue Tech | Praia Digital,envio-auto-362.html
+364,comercial@praia.digital,Convite de parceria - Edifica Praia Litoral | Praia Digital,envio-auto-364.html
+366,comercial@praia.digital,Convite de parceria - Sol & Mar View | Praia Digital,envio-auto-366.html
+367,contato367@exemplo.com,Envio automatico para Santos Tower Centro | Praia Digital,envio-auto-367.html
+369,comercial@praia.digital,Convite de parceria - Norte Sul Digital | Praia Digital,envio-auto-369.html
+37,contato37@exemplo.com,Parceria com IA — Santos/Santos | Praia Digital,envio-auto-37.html
+371,comercial@praia.digital,Convite de parceria - Beta Imóveis View | Praia Digital,envio-auto-371.html
+38,contato38@exemplo.com,Proposta — São Vicente/São Vicente | Praia Digital,envio-auto-38.html
+39,contato39@exemplo.com,Proposta de parceria — Santos/Santos | Praia Digital,envio-auto-39.html
+4,contato4@exemplo.com,Parceria com IA — Guarujá/Guarujá | Praia Digital,envio-auto-4.html
+40,contato40@exemplo.com,Proposta — Mongaguá/Mongaguá | Praia Digital,envio-auto-40.html
+41,contato41@exemplo.com,Envio automatico para Cibratel Imoveis | Praia Digital,envio-auto-41.html
+42,contato42@exemplo.com,Proposta — Itanhaém/Itanhaém | Praia Digital,envio-auto-42.html
+43,contato43@exemplo.com,Parceria com IA — Itanhaém/Itanhaém | Praia Digital,envio-auto-43.html
+44,contato44@exemplo.com,Proposta de Parceria — Itanhaém/Itanhaém | Praia Digital,envio-auto-44.html
+45,contato45@exemplo.com,Proposta — Peruíbe/Peruíbe | Praia Digital,envio-auto-45.html
+46,contato46@exemplo.com,Proposta de parceria — Peruíbe | Praia Digital,envio-auto-46.html
+47,contato47@exemplo.com,Proposta — Mongaguá/Mongaguá | Praia Digital,envio-auto-47.html
+48,contato48@exemplo.com,Proposta — Mongaguá/Mongaguá | Praia Digital,envio-auto-48.html
+49,contato49@exemplo.com,Proposta de Parceria — Mongaguá/Mongaguá | Praia Digital,envio-auto-49.html
+5,contato5@exemplo.com,Proposta — São Vicente/São Vicente | Praia Digital,envio-auto-5.html
+50,contato50@exemplo.com,Proposta de Parceria — Santos/Santos | Praia Digital,envio-auto-50.html
+51,contato51@exemplo.com,Envio automatico para Litoral Premium Sant | Praia Digital,envio-auto-51.html
+52,contato37@exemplo.com,Proposta — Bertioga/Bertioga | Praia Digital,envio-auto-52.html
+53,contato38@exemplo.com,Proposta — Guarujá/Guarujá | Praia Digital,envio-auto-53.html
+54,contato39@exemplo.com,Envio automatico para Praia Grande Norte | Praia Digital,envio-auto-54.html
+55,contato40@exemplo.com,Proposta — São Vicente/São Vicente | Praia Digital,envio-auto-55.html
+56,contato41@exemplo.com,Proposta de parceria — Peruíbe | Praia Digital,envio-auto-56.html
+57,contato42@exemplo.com,Proposta de Parceria — Mongaguá/Mongaguá | Praia Digital,envio-auto-57.html
+58,contato43@exemplo.com,Proposta de Parceria — Itanhaém/Itanhaém | Praia Digital,envio-auto-58.html
+59,contato44@exemplo.com,Envio automatico para Riviera Norte | Praia Digital,envio-auto-59.html
+6,contato6@exemplo.com,Envio automatico para Beta Imoveis Centro | Praia Digital,envio-auto-6.html
+60,contato45@exemplo.com,Proposta — Guarujá/Guarujá | Praia Digital,envio-auto-60.html
+61,contato46@exemplo.com,Proposta de parceria — Santos | Praia Digital,envio-auto-61.html
+62,contato47@exemplo.com,Proposta de parceria — Santos | Praia Digital,envio-auto-62.html
+63,contato48@exemplo.com,Proposta — São Vicente/São Vicente | Praia Digital,envio-auto-63.html
+631,contato631@exemplo.com,Proposta de parceria — Itanhaém Norte | Praia Digital,envio-auto-631.html
+64,contato49@exemplo.com,Envio automatico para Caiçara Norte | Praia Digital,envio-auto-64.html
+65,contato50@exemplo.com,Proposta de Parceria — Peruíbe/Peruíbe | Praia Digital,envio-auto-65.html
+66,contato66@exemplo.com,Envio automatico para Santos Ocean View | Praia Digital,envio-auto-66.html
+67,contato67@exemplo.com,Proposta de Parceria — Guarujá/Guarujá | Praia Digital,envio-auto-67.html
+68,contato68@exemplo.com,Proposta de Parceria — Bertioga/Bertioga | Praia Digital,envio-auto-68.html
+69,contato69@exemplo.com,Proposta — Praia Grande/Praia Grande | Praia Digital,envio-auto-69.html
+7,contato7@exemplo.com,Proposta — Bertioga/Bertioga | Praia Digital,envio-auto-7.html
+70,contato70@exemplo.com,Proposta — São Vicente/São Vicente | Praia Digital,envio-auto-70.html
+71,contato71@exemplo.com,Proposta de parceria — Peruíbe | Praia Digital,envio-auto-71.html
+72,contato72@exemplo.com,Proposta de Parceria — Mongaguá/Mongaguá | Praia Digital,envio-auto-72.html
+73,contato73@exemplo.com,Proposta de Parceria — Itanhaém/Itanhaém | Praia Digital,envio-auto-73.html
+74,contato74@exemplo.com,Proposta de parceria — Bertioga | Praia Digital,envio-auto-74.html
+75,contato75@exemplo.com,Proposta — Guarujá/Guarujá | Praia Digital,envio-auto-75.html
+76,contato76@exemplo.com,Envio automatico para Santos Premium Digital | Praia Digital,envio-auto-76.html
+77,contato77@exemplo.com,Proposta — Guarujá/Guarujá | Praia Digital,envio-auto-77.html
+78,contato78@exemplo.com,Proposta de parceria — Bertioga | Praia Digital,envio-auto-78.html
+79,contato79@exemplo.com,Proposta — Praia Grande/Praia Grande | Praia Digital,envio-auto-79.html
+8,contato8@exemplo.com,Envio automatico para Ocean Blue Digital | Praia Digital,envio-auto-8.html
+80,contato80@exemplo.com,Proposta — São Vicente/São Vicente | Praia Digital,envio-auto-80.html
+81,contato81@exemplo.com,Proposta de parceria — Peruíbe | Praia Digital,envio-auto-81.html
+82,contato82@exemplo.com,Proposta de Parceria — Mongaguá/Mongaguá | Praia Digital,envio-auto-82.html
+83,contato83@exemplo.com,Proposta de parceria — Itanhaém/Itanhaém | Praia Digital,envio-auto-83.html
+84,contato84@exemplo.com,Proposta de parceria — Bertioga | Praia Digital,envio-auto-84.html
+85,contato85@exemplo.com,Proposta — Guarujá/Guarujá | Praia Digital,envio-auto-85.html
+86,contato86@exemplo.com,Proposta de parceria — Santos | Praia Digital,envio-auto-86.html
+87,contato87@exemplo.com,Proposta de parceria — Santos | Praia Digital,envio-auto-87.html
+88,contato88@exemplo.com,Proposta — São Vicente/São Vicente | Praia Digital,envio-auto-88.html
+89,contato89@exemplo.com,Proposta de parceria — Praia Grande | Praia Digital,envio-auto-89.html
+9,contato9@exemplo.com,Parceria com IA — Santos/Santos | Praia Digital,envio-auto-9.html
+90,contato90@exemplo.com,Proposta de Parceria — Peruíbe/Peruíbe | Praia Digital,envio-auto-90.html
+91,contato91@exemplo.com,Envio automatico para Santos Tower Imoveis | Praia Digital,envio-auto-91.html
+92,contato92@exemplo.com,Proposta de parceria — Guarujá/Guarujá | Praia Digital,envio-auto-92.html
+93,contato93@exemplo.com,Proposta de parceria — Bertioga/Bertioga | Praia Digital,envio-auto-93.html
+94,contato94@exemplo.com,Proposta — Praia Grande/Praia Grande | Praia Digital,envio-auto-94.html
+95,contato95@exemplo.com,Proposta — São Vicente/São Vicente | Praia Digital,envio-auto-95.html
+96,contato96@exemplo.com,Proposta de parceria — Peruíbe | Praia Digital,envio-auto-96.html
+97,contato97@exemplo.com,Proposta de Parceria — Mongaguá/Mongaguá | Praia Digital,envio-auto-97.html
+98,contato98@exemplo.com,Parceria com IA — Itanhaém/Itanhaém | Praia Digital,envio-auto-98.html
+99,contato99@exemplo.com,Proposta de parceria — Bertioga | Praia Digital,envio-auto-99.html
