@@ -4174,3 +4174,177 @@
 - 08/07/2026 01:50: acompanhamento pós-onboarding para Praia Grande Imóveis (Praia Grande)
 
 - 08/07/2026 01:50: acompanhamento pós-onboarding para Cibratel Imóveis (Itanhaém)
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Riviera Business (Bertioga) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Região Sul Praia (Peruíbe) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Caiçara Norte (Praia Grande) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Caiçara Executive (Praia Grande) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Embaré Digital (Santos) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Embaré Tech (Santos) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Peruíbe Launch (Peruíbe) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Gonzaga Elite (Santos) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Peruíbe Centro Digital (Peruíbe) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Santos Smart (Santos) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Santos Connect (Santos) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Mar & Sol Litoral (Santos) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Guarujá Conecta (Guarujá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Bertioga Inovação (Bertioga) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Itanhaém Surf (Itanhaém) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Litoral Sul Imóveis (Santos) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Bertioga Vision (Bertioga) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Região Sul Centro (Bertioga) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Baixio Digital (Itanhaém) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Barra Norte (Peruíbe) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Barra Platinum (Peruíbe) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Ocean Blue Digital (Santos) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Guarujá Norte Digital (Guarujá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Praia Grande Prime (Praia Grande) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com São Vicente Bay (São Vicente) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Jardim Grandesp (Itanhaém) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com São Vicente Sul (São Vicente) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Tombo Imóveis (Guarujá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com São Vicente Vision (São Vicente) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Catiapoã Digital (São Vicente) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Realize II Prime (Itanhaém) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Caiçara Digital Prime (Peruíbe) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Caiçara Digital View (Bertioga) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Barra Digital Praia (São Vicente) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Praia Grande Site Site (Mongaguá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Caiçara Digital Site (Praia Grande) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Edifica Praia Centro (Guarujá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Barra Digital Site (Peruíbe) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Beta Imóveis Site (Guarujá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Recife Imóveis Blue (Mongaguá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Norte Sul Centro (Praia Grande) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Prime Imóveis Litoral (Guarujá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Mar & Sol View (Guarujá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Mar Brasil Digital (Itanhaém) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Caiçara Digital Litoral (Mongaguá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Litoral Brasil Prime (Itanhaém) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Praia Grande Site Litoral (Santos) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Norte Sul Praia (Mongaguá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Norte Sul Praia (Mongaguá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Mar & Sol Imóveis (Santos) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Beta Imóveis Centro (Bertioga) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Costa Verde Litoral (Itanhaém) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Edifica Praia Litoral (Peruíbe) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Realize II Blue (Mongaguá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Itanhaém Premium Prime (São Vicente) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Ocean Blue Centro (Peruíbe) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Edifica Praia View (Itanhaém) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Sul Imóveis Site (Guarujá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Edifica Praia Blue (São Vicente) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Mongaguá Imóveis Litoral (São Vicente) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Caiçara Digital Blue (Itanhaém) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Praia Grande Site Blue (Guarujá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Mar & Sol Prime (Guarujá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Norte Sul Digital (Guarujá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Prime Imóveis Praia (São Vicente) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Sol & Mar Blue (Praia Grande) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Ocean Blue Praia (Bertioga) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Realize II Centro (São Vicente) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Mar Brasil Centro (Peruíbe) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Mongaguá Imóveis Praia (Praia Grande) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Norte Sul Prime (Peruíbe) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Caiçara Digital Site (Itanhaém) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Riviera Blue Centro (São Vicente) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Edifica Praia Praia (Mongaguá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Realize II Tech (Itanhaém) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Costa Azul Prime (Guarujá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Ocean Blue View (Mongaguá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Mar Brasil Blue (Peruíbe) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Edifica Praia Prime (Praia Grande) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Costa Azul  Prop (Praia Grande) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Porto da Lua Prop (Santos) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Mar View (Peruíbe) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Barra Digital Centro (Bertioga) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Costa Azul View (Santos) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Vista Mar Litoral (Guarujá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Costa Azul Prop (Santos) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:57: PARCERIA FECHADA com Caiçara Digital Praia (Praia Grande) | call_agendada -> parceria_fechada
