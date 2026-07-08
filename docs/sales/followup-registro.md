@@ -4070,3 +4070,23 @@
 - 08/07/2026 01:34: PARCERIA FECHADA com Santos Tower Imóveis (Santos) | interessado -> parceria_fechada
 
 - 08/07/2026 01:34: PARCERIA FECHADA com Santos Luxo (Santos) | followup_pos_call_enviado -> parceria_fechada
+
+- 08/07/2026 01:35: PARCERIA FECHADA com Santos Smart Home (Santos) | interessado -> parceria_fechada
+
+- 08/07/2026 01:35: PARCERIA FECHADA com Santos Executive (Santos) | followup_pos_call_enviado -> parceria_fechada
+
+- 08/07/2026 01:35: PARCERIA FECHADA com Santos Bay Homes (Santos) | followup_pos_call_enviado -> parceria_fechada
+
+- 08/07/2026 01:35: PARCERIA FECHADA com Santos Launch (Santos) | followup_pos_call_enviado -> parceria_fechada
+
+- 08/07/2026 01:35: PARCERIA FECHADA com Santos Platinum (Santos) | interessado -> parceria_fechada
+
+- 08/07/2026 01:35: PARCERIA FECHADA com Santos Elite (Santos) | interessado -> parceria_fechada
+
+- 08/07/2026 01:35: PARCERIA FECHADA com Santos Prime (Santos) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:35: PARCERIA FECHADA com Ocean Blue Digital (Guarujá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 01:35: PARCERIA FECHADA com Praia Grande Imóveis (Praia Grande) | interessado -> parceria_fechada
+
+- 08/07/2026 01:35: PARCERIA FECHADA com Cibratel Imóveis (Itanhaém) | interessado -> parceria_fechada
