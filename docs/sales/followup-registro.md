@@ -28,3 +28,5 @@
 - 08/07/2026 00:44: envio inicial para lead 201 — Santos Elite (Santos) → e-mail: contato201@exemplo.com
 
 - 08/07/2026 00:44: envio inicial para lead 216 — Santos Prime (Santos) → e-mail: contato216@exemplo.com
+
+- 08/07/2026 00:44: envio inicial para lead 8 — Ocean Blue Digital (Guarujá) → e-mail: contato8@exemplo.com

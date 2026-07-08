@@ -11,7 +11,7 @@ id,nome_da_imobiliaria,cidade,pessoa_de_contato,cargo,email,whatsapp,perfil,stat
 186,Santos Platinum,Santos,Roberto Dias,Gerente,contato186@exemplo.com,(13) 99999-0186,construtora,contato_inicial_enviado,leads,chatbot,Google Maps,98,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24,08/07/2026,08/07/2026
 201,Santos Elite,Santos,Viviane Paes,Gerente,contato201@exemplo.com,(13) 99999-0201,construtora,contato_inicial_enviado,leads,chatbot,Google Maps,98,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24,08/07/2026,08/07/2026
 216,Santos Prime,Santos,Helena Vaz,Gerente,contato216@exemplo.com,(13) 99999-0216,construtora,contato_inicial_enviado,leads,chatbot,Google Maps,99,Aumentar captação,R$ 1-4k/mês,parceiro,Santos,,24,08/07/2026,08/07/2026
-8,Ocean Blue Digital,Guarujá,Maria Barros,Gerente,contato8@exemplo.com,(13) 99999-0008,construtora,novo,atendimento,chatbot,LinkedIn,84,Relatórios,R$ 1-3k/mês,direto,Guarujá,,23,,
+8,Ocean Blue Digital,Guarujá,Maria Barros,Gerente,contato8@exemplo.com,(13) 99999-0008,construtora,contato_inicial_enviado,atendimento,chatbot,LinkedIn,84,Relatórios,R$ 1-3k/mês,direto,Guarujá,,23,08/07/2026,08/07/2026
 24,Praia Grande Imóveis,Praia Grande,Ricardo Barros,Sócio,contato24@exemplo.com,(13) 99999-0024,construtora,novo,leads,chatbot,Portais,81,Aumentar captação,R$ 1-3k/mês,parceiro,Praia Grande,,23,,
 41,Cibratel Imóveis,Itanhaém,Teresa Almeida,Sócia,contato41@exemplo.com,(13) 99999-0041,construtora,novo,atendimento,seo,Website,82,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,,23,,
 129,Riviera Business,Bertioga,Larissa Barros,Gerente,contato129@exemplo.com,(13) 99999-0129,construtora,novo,leads,anuncios,LinkedIn,80,SEO local,R$ 1-3k/mês,formal,Bertioga,,23,,
