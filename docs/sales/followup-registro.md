@@ -3868,3 +3868,189 @@
 - 08/07/2026 01:29: follow-up pós-call para Costa Azul Prop (Santos)
 
 - 08/07/2026 01:29: follow-up pós-call para Caiçara Digital Praia (Praia Grande)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Santos Luxo (Santos)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Santos Executive (Santos)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Santos Bay Homes (Santos)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Santos Launch (Santos)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Santos Prime (Santos)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Ocean Blue Digital (Guarujá)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Riviera Business (Bertioga)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Região Sul Praia (Peruíbe)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Caiçara Norte (Praia Grande)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Caiçara Executive (Praia Grande)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Embaré Digital (Santos)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Embaré Tech (Santos)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Peruíbe Launch (Peruíbe)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Gonzaga Elite (Santos)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Peruíbe Centro Digital (Peruíbe)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Santos Smart (Santos)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Santos Connect (Santos)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Mar & Sol Litoral (Santos)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Guarujá Conecta (Guarujá)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Bertioga Inovação (Bertioga)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Itanhaém Surf (Itanhaém)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Litoral Sul Imóveis (Santos)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Bertioga Vision (Bertioga)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Região Sul Centro (Bertioga)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Baixio Digital (Itanhaém)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Barra Norte (Peruíbe)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Barra Platinum (Peruíbe)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Ocean Blue Digital (Santos)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Guarujá Norte Digital (Guarujá)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Praia Grande Prime (Praia Grande)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para São Vicente Bay (São Vicente)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Jardim Grandesp (Itanhaém)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para São Vicente Sul (São Vicente)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Tombo Imóveis (Guarujá)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para São Vicente Vision (São Vicente)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Catiapoã Digital (São Vicente)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Realize II Prime (Itanhaém)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Caiçara Digital Prime (Peruíbe)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Caiçara Digital View (Bertioga)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Barra Digital Praia (São Vicente)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Praia Grande Site Site (Mongaguá)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Caiçara Digital Site (Praia Grande)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Edifica Praia Centro (Guarujá)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Barra Digital Site (Peruíbe)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Beta Imóveis Site (Guarujá)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Recife Imóveis Blue (Mongaguá)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Norte Sul Centro (Praia Grande)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Prime Imóveis Litoral (Guarujá)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Mar & Sol View (Guarujá)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Mar Brasil Digital (Itanhaém)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Caiçara Digital Litoral (Mongaguá)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Litoral Brasil Prime (Itanhaém)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Praia Grande Site Litoral (Santos)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Norte Sul Praia (Mongaguá)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Norte Sul Praia (Mongaguá)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Mar & Sol Imóveis (Santos)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Beta Imóveis Centro (Bertioga)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Costa Verde Litoral (Itanhaém)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Edifica Praia Litoral (Peruíbe)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Realize II Blue (Mongaguá)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Itanhaém Premium Prime (São Vicente)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Ocean Blue Centro (Peruíbe)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Edifica Praia View (Itanhaém)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Sul Imóveis Site (Guarujá)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Edifica Praia Blue (São Vicente)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Mongaguá Imóveis Litoral (São Vicente)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Caiçara Digital Blue (Itanhaém)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Praia Grande Site Blue (Guarujá)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Mar & Sol Prime (Guarujá)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Norte Sul Digital (Guarujá)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Prime Imóveis Praia (São Vicente)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Sol & Mar Blue (Praia Grande)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Ocean Blue Praia (Bertioga)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Realize II Centro (São Vicente)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Mar Brasil Centro (Peruíbe)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Mongaguá Imóveis Praia (Praia Grande)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Norte Sul Prime (Peruíbe)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Caiçara Digital Site (Itanhaém)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Riviera Blue Centro (São Vicente)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Edifica Praia Praia (Mongaguá)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Realize II Tech (Itanhaém)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Costa Azul Prime (Guarujá)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Ocean Blue View (Mongaguá)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Mar Brasil Blue (Peruíbe)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Edifica Praia Prime (Praia Grande)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Costa Azul  Prop (Praia Grande)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Porto da Lua Prop (Santos)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Mar View (Peruíbe)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Barra Digital Centro (Bertioga)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Costa Azul View (Santos)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Vista Mar Litoral (Guarujá)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Costa Azul Prop (Santos)
+
+- 08/07/2026 01:31: proposta de parceria fechada gerada para Caiçara Digital Praia (Praia Grande)
