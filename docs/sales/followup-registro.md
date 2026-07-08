@@ -6742,3 +6742,78 @@
 | 631 | Email | 2026-07-08 | call-proposta-enviada | — | — |
 | 101 | Email | 2026-07-08 | call-proposta-enviada | — | — |
 | 91 | Email | 2026-07-08 | call-proposta-enviada | — | — |
+| 6 | Email | 2026-07-08 | batch-hoje executado | — | — |
+| 8 | Email | 2026-07-08 | batch-hoje executado | — | — |
+| 10 | Email | 2026-07-08 | batch-hoje executado | — | — |
+| 21 | Email | 2026-07-08 | batch-hoje executado | — | — |
+| 24 | Email | 2026-07-08 | batch-hoje executado | — | — |
+| 34 | Email | 2026-07-08 | batch-hoje executado | — | — |
+| 41 | Email | 2026-07-08 | batch-hoje executado | — | — |
+| 51 | Email | 2026-07-08 | batch-hoje executado | — | — |
+| 54 | Email | 2026-07-08 | batch-hoje executado | — | — |
+| 59 | Email | 2026-07-08 | batch-hoje executado | — | — |
+| 64 | Email | 2026-07-08 | batch-hoje executado | — | — |
+| 66 | Email | 2026-07-08 | batch-hoje executado | — | — |
+| 76 | Email | 2026-07-08 | batch-hoje executado | — | — |
+| 91 | Email | 2026-07-08 | batch-hoje executado | — | — |
+| 101 | Email | 2026-07-08 | batch-hoje executado | — | — |
+| 51 | Email | 2026-07-08 | reativacao-inicial | 2026-07-11 | 2026-07-15 |
+| 51 | Email | 2026-07-11 | reativacao-3dias | 2026-07-15 | — |
+| 51 | Email | 2026-07-15 | reativacao-7dias | — | — |
+| 66 | Email | 2026-07-08 | reativacao-inicial | 2026-07-11 | 2026-07-15 |
+| 66 | Email | 2026-07-11 | reativacao-3dias | 2026-07-15 | — |
+| 66 | Email | 2026-07-15 | reativacao-7dias | — | — |
+| 76 | Email | 2026-07-08 | reativacao-inicial | 2026-07-11 | 2026-07-15 |
+| 76 | Email | 2026-07-11 | reativacao-3dias | 2026-07-15 | — |
+| 76 | Email | 2026-07-15 | reativacao-7dias | — | — |
+| 91 | Email | 2026-07-08 | reativacao-inicial | 2026-07-11 | 2026-07-15 |
+| 91 | Email | 2026-07-11 | reativacao-3dias | 2026-07-15 | — |
+| 91 | Email | 2026-07-15 | reativacao-7dias | — | — |
+| 101 | Email | 2026-07-08 | reativacao-inicial | 2026-07-11 | 2026-07-15 |
+| 101 | Email | 2026-07-11 | reativacao-3dias | 2026-07-15 | — |
+| 101 | Email | 2026-07-15 | reativacao-7dias | — | — |
+| 121 | Email | 2026-07-08 | reativacao-inicial | 2026-07-11 | 2026-07-15 |
+| 121 | Email | 2026-07-11 | reativacao-3dias | 2026-07-15 | — |
+| 121 | Email | 2026-07-15 | reativacao-7dias | — | — |
+| 141 | Email | 2026-07-08 | reativacao-inicial | 2026-07-11 | 2026-07-15 |
+| 141 | Email | 2026-07-11 | reativacao-3dias | 2026-07-15 | — |
+| 141 | Email | 2026-07-15 | reativacao-7dias | — | — |
+| 161 | Email | 2026-07-08 | reativacao-inicial | 2026-07-11 | 2026-07-15 |
+| 161 | Email | 2026-07-11 | reativacao-3dias | 2026-07-15 | — |
+| 161 | Email | 2026-07-15 | reativacao-7dias | — | — |
+| 176 | Email | 2026-07-08 | reativacao-inicial | 2026-07-11 | 2026-07-15 |
+| 176 | Email | 2026-07-11 | reativacao-3dias | 2026-07-15 | — |
+| 176 | Email | 2026-07-15 | reativacao-7dias | — | — |
+| 186 | Email | 2026-07-08 | reativacao-inicial | 2026-07-11 | 2026-07-15 |
+| 186 | Email | 2026-07-11 | reativacao-3dias | 2026-07-15 | — |
+| 186 | Email | 2026-07-15 | reativacao-7dias | — | — |
+| 201 | Email | 2026-07-08 | reativacao-inicial | 2026-07-11 | 2026-07-15 |
+| 201 | Email | 2026-07-11 | reativacao-3dias | 2026-07-15 | — |
+| 201 | Email | 2026-07-15 | reativacao-7dias | — | — |
+| 216 | Email | 2026-07-08 | reativacao-inicial | 2026-07-11 | 2026-07-15 |
+| 216 | Email | 2026-07-11 | reativacao-3dias | 2026-07-15 | — |
+| 216 | Email | 2026-07-15 | reativacao-7dias | — | — |
+| 8 | Email | 2026-07-08 | reativacao-inicial | 2026-07-11 | 2026-07-15 |
+| 8 | Email | 2026-07-11 | reativacao-3dias | 2026-07-15 | — |
+| 8 | Email | 2026-07-15 | reativacao-7dias | — | — |
+| 24 | Email | 2026-07-08 | reativacao-inicial | 2026-07-11 | 2026-07-15 |
+| 24 | Email | 2026-07-11 | reativacao-3dias | 2026-07-15 | — |
+| 24 | Email | 2026-07-15 | reativacao-7dias | — | — |
+| 41 | Email | 2026-07-08 | reativacao-inicial | 2026-07-11 | 2026-07-15 |
+| 41 | Email | 2026-07-11 | reativacao-3dias | 2026-07-15 | — |
+| 41 | Email | 2026-07-15 | reativacao-7dias | — | — |
+| 129 | Email | 2026-07-08 | reativacao-inicial | 2026-07-11 | 2026-07-15 |
+| 129 | Email | 2026-07-11 | reativacao-3dias | 2026-07-15 | — |
+| 129 | Email | 2026-07-15 | reativacao-7dias | — | — |
+| 184 | Email | 2026-07-08 | reativacao-inicial | 2026-07-11 | 2026-07-15 |
+| 184 | Email | 2026-07-11 | reativacao-3dias | 2026-07-15 | — |
+| 184 | Email | 2026-07-15 | reativacao-7dias | — | — |
+| 194 | Email | 2026-07-08 | reativacao-inicial | 2026-07-11 | 2026-07-15 |
+| 194 | Email | 2026-07-11 | reativacao-3dias | 2026-07-15 | — |
+| 194 | Email | 2026-07-15 | reativacao-7dias | — | — |
+| 209 | Email | 2026-07-08 | reativacao-inicial | 2026-07-11 | 2026-07-15 |
+| 209 | Email | 2026-07-11 | reativacao-3dias | 2026-07-15 | — |
+| 209 | Email | 2026-07-15 | reativacao-7dias | — | — |
+| 6 | Email | 2026-07-08 | reativacao-inicial | 2026-07-11 | 2026-07-15 |
+| 6 | Email | 2026-07-11 | reativacao-3dias | 2026-07-15 | — |
+| 6 | Email | 2026-07-15 | reativacao-7dias | — | — |
