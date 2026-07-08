@@ -1,16 +1,16 @@
 id,nome_da_imobiliaria,cidade,pessoa_de_contato,cargo,email,whatsapp,perfil,status,dor_principal,diferencial,fonte,pontuacao_lead,objetivo_90_dias,orcamento_estimado,tom,cidade_ref,created_at,_score,last_contact,next_followup
 51,Litoral Premium Sant,Santos,Roberto Dias,Diretor,contato36@exemplo.com,(13) 99999-0036,construtora,contato_inicial_enviado,conversao,chatbot,Google Maps,91,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24,08/07/2026,08/07/2026
 66,Santos Ocean View,Santos,Tatiane Moreira,Gerente,contato66@exemplo.com,(13) 99999-0066,construtora,contato_inicial_enviado,leads,chatbot,Google Maps,93,Automação,R$ 1-3k/mês,parceiro,Santos,,24,08/07/2026,08/07/2026
-76,Santos Premium Digital,Santos,Viviane Paes,Gerente,contato76@exemplo.com,(13) 99999-0076,construtora,novo,leads,chatbot,Google Maps,94,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24,,
-91,Santos Tower Imóveis,Santos,Helena Vaz,Gerente,contato91@exemplo.com,(13) 99999-0091,construtora,novo,leads,chatbot,Google Maps,96,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24,,
-101,Santos Luxo,Santos,Isabela Fernandes,Gerente,contato101@exemplo.com,(13) 99999-0101,construtora,novo,leads,chatbot,Google Maps,95,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24,,
-121,Santos Smart Home,Santos,Mariana Costa,Gerente,contato121@exemplo.com,(13) 99999-0121,construtora,novo,leads,chatbot,Google Maps,97,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24,,
-141,Santos Executive,Santos,Roberto Dias,Gerente,contato141@exemplo.com,(13) 99999-0141,construtora,novo,leads,chatbot,Google Maps,97,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24,,
-161,Santos Bay Homes,Santos,Patrícia Gomes,Gerente,contato161@exemplo.com,(13) 99999-0161,construtora,novo,leads,chatbot,Google Maps,96,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24,,
-176,Santos Launch,Santos,Renata Almeida,Gerente,contato176@exemplo.com,(13) 99999-0176,construtora,novo,leads,chatbot,Google Maps,97,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24,,
-186,Santos Platinum,Santos,Roberto Dias,Gerente,contato186@exemplo.com,(13) 99999-0186,construtora,novo,leads,chatbot,Google Maps,98,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24,,
-201,Santos Elite,Santos,Viviane Paes,Gerente,contato201@exemplo.com,(13) 99999-0201,construtora,novo,leads,chatbot,Google Maps,98,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24,,
-216,Santos Prime,Santos,Helena Vaz,Gerente,contato216@exemplo.com,(13) 99999-0216,construtora,novo,leads,chatbot,Google Maps,99,Aumentar captação,R$ 1-4k/mês,parceiro,Santos,,24,,
+76,Santos Premium Digital,Santos,Viviane Paes,Gerente,contato76@exemplo.com,(13) 99999-0076,construtora,contato_inicial_enviado,leads,chatbot,Google Maps,94,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24,08/07/2026,08/07/2026
+91,Santos Tower Imóveis,Santos,Helena Vaz,Gerente,contato91@exemplo.com,(13) 99999-0091,construtora,contato_inicial_enviado,leads,chatbot,Google Maps,96,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24,08/07/2026,08/07/2026
+101,Santos Luxo,Santos,Isabela Fernandes,Gerente,contato101@exemplo.com,(13) 99999-0101,construtora,contato_inicial_enviado,leads,chatbot,Google Maps,95,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24,08/07/2026,08/07/2026
+121,Santos Smart Home,Santos,Mariana Costa,Gerente,contato121@exemplo.com,(13) 99999-0121,construtora,contato_inicial_enviado,leads,chatbot,Google Maps,97,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24,08/07/2026,08/07/2026
+141,Santos Executive,Santos,Roberto Dias,Gerente,contato141@exemplo.com,(13) 99999-0141,construtora,contato_inicial_enviado,leads,chatbot,Google Maps,97,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24,08/07/2026,08/07/2026
+161,Santos Bay Homes,Santos,Patrícia Gomes,Gerente,contato161@exemplo.com,(13) 99999-0161,construtora,contato_inicial_enviado,leads,chatbot,Google Maps,96,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24,08/07/2026,08/07/2026
+176,Santos Launch,Santos,Renata Almeida,Gerente,contato176@exemplo.com,(13) 99999-0176,construtora,contato_inicial_enviado,leads,chatbot,Google Maps,97,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24,08/07/2026,08/07/2026
+186,Santos Platinum,Santos,Roberto Dias,Gerente,contato186@exemplo.com,(13) 99999-0186,construtora,contato_inicial_enviado,leads,chatbot,Google Maps,98,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24,08/07/2026,08/07/2026
+201,Santos Elite,Santos,Viviane Paes,Gerente,contato201@exemplo.com,(13) 99999-0201,construtora,contato_inicial_enviado,leads,chatbot,Google Maps,98,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,,24,08/07/2026,08/07/2026
+216,Santos Prime,Santos,Helena Vaz,Gerente,contato216@exemplo.com,(13) 99999-0216,construtora,contato_inicial_enviado,leads,chatbot,Google Maps,99,Aumentar captação,R$ 1-4k/mês,parceiro,Santos,,24,08/07/2026,08/07/2026
 8,Ocean Blue Digital,Guarujá,Maria Barros,Gerente,contato8@exemplo.com,(13) 99999-0008,construtora,novo,atendimento,chatbot,LinkedIn,84,Relatórios,R$ 1-3k/mês,direto,Guarujá,,23,,
 24,Praia Grande Imóveis,Praia Grande,Ricardo Barros,Sócio,contato24@exemplo.com,(13) 99999-0024,construtora,novo,leads,chatbot,Portais,81,Aumentar captação,R$ 1-3k/mês,parceiro,Praia Grande,,23,,
 41,Cibratel Imóveis,Itanhaém,Teresa Almeida,Sócia,contato41@exemplo.com,(13) 99999-0041,construtora,novo,atendimento,seo,Website,82,Relatórios,R$ 1-3k/mês,parceiro,Itanhaém,,23,,

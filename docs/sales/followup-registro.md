@@ -8,3 +8,23 @@
 - 08/07/2026 00:43: envio inicial para lead 51 — Litoral Premium Sant (Santos) → e-mail: contato36@exemplo.com
 
 - 08/07/2026 00:43: envio inicial para lead 66 — Santos Ocean View (Santos) → e-mail: contato66@exemplo.com
+
+- 08/07/2026 00:44: envio inicial para lead 76 — Santos Premium Digital (Santos) → e-mail: contato76@exemplo.com
+
+- 08/07/2026 00:44: envio inicial para lead 91 — Santos Tower Imóveis (Santos) → e-mail: contato91@exemplo.com
+
+- 08/07/2026 00:44: envio inicial para lead 101 — Santos Luxo (Santos) → e-mail: contato101@exemplo.com
+
+- 08/07/2026 00:44: envio inicial para lead 121 — Santos Smart Home (Santos) → e-mail: contato121@exemplo.com
+
+- 08/07/2026 00:44: envio inicial para lead 141 — Santos Executive (Santos) → e-mail: contato141@exemplo.com
+
+- 08/07/2026 00:44: envio inicial para lead 161 — Santos Bay Homes (Santos) → e-mail: contato161@exemplo.com
+
+- 08/07/2026 00:44: envio inicial para lead 176 — Santos Launch (Santos) → e-mail: contato176@exemplo.com
+
+- 08/07/2026 00:44: envio inicial para lead 186 — Santos Platinum (Santos) → e-mail: contato186@exemplo.com
+
+- 08/07/2026 00:44: envio inicial para lead 201 — Santos Elite (Santos) → e-mail: contato201@exemplo.com
+
+- 08/07/2026 00:44: envio inicial para lead 216 — Santos Prime (Santos) → e-mail: contato216@exemplo.com
