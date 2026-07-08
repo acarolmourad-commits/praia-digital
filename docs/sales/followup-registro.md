@@ -4770,3 +4770,23 @@
 - 08/07/2026 02:14: [NOVO CICLO] envio inicial para Ubatuba Elite (Ubatuba) -> lead109@exemplo.com
 
 - 08/07/2026 02:14: [NOVO CICLO] envio inicial para Ilhabela Executive (Ilhabela) -> lead110@exemplo.com
+
+- 08/07/2026 02:14: [NOVO CICLO] envio inicial para Santos Launch (Santos) -> lead111@exemplo.com
+
+- 08/07/2026 02:14: [NOVO CICLO] envio inicial para Guarujá Platinum (Guarujá) -> lead112@exemplo.com
+
+- 08/07/2026 02:14: [NOVO CICLO] envio inicial para Praia Grande Connect (Praia Grande) -> lead113@exemplo.com
+
+- 08/07/2026 02:14: [NOVO CICLO] envio inicial para São Vicente View (São Vicente) -> lead114@exemplo.com
+
+- 08/07/2026 02:14: [NOVO CICLO] envio inicial para Bertioga Center (Bertioga) -> lead115@exemplo.com
+
+- 08/07/2026 02:14: [NOVO CICLO] envio inicial para Itanhaém Premium (Itanhaém) -> lead116@exemplo.com
+
+- 08/07/2026 02:14: [NOVO CICLO] envio inicial para Peruíbe Digital (Peruíbe) -> lead117@exemplo.com
+
+- 08/07/2026 02:14: [NOVO CICLO] envio inicial para Mongaguá Tech (Mongaguá) -> lead118@exemplo.com
+
+- 08/07/2026 02:14: [NOVO CICLO] envio inicial para Ubatuba Litoral (Ubatuba) -> lead119@exemplo.com
+
+- 08/07/2026 02:14: [NOVO CICLO] envio inicial para Ilhabela Praia (Ilhabela) -> lead120@exemplo.com
