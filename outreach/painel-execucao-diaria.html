@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel de Execução Diária | Praia Digital</title>
+<style>
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4EBD0;color:#023047;margin:0}
+  header{background:linear-gradient(135deg,#0077B6,#00B4D8);color:#fff;padding:1.5rem 2rem;text-align:center}
+  .card{max-width:980px;margin:2rem auto;padding:1.75rem;background:#fff;border-radius:16px;box-shadow:0 8px 28px rgba(0,0,0,.06)}
+  .day{margin:1.5rem 0}
+  .day h2{color:#0077B6}
+  .row{display:flex;gap:1rem;flex-wrap:wrap}
+  .item{flex:1 1 240px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:1rem}
+  .item a{font-weight:700;color:#0077B6;text-decoration:none}
+  .footer{background:#023047;color:#fff;padding:1rem;text-align:center;opacity:.8;margin-top:2rem}
+  .btn{background:#0077B6;color:#fff;padding:.6rem 1.2rem;border-radius:999px;text-decoration:none;font-weight:700;display:inline-block;margin-top:1rem}
+</style>
+</head>
+<body>
+<header><h1>Painel de Execução Diária</h1><p>CEO Carolina Moura — Outreach automático</p></header>
+<div class="card">
+  <p>Execute na ordem: Dia 1 → Dia 2 → Dia 3. Abra cada card para enviar pelo seu cliente de e-mail.</p>
+  <div class="day">
+    <h2>Dia 1 — Envios iniciais</h2>
+    <div class="row" id="day1"></div>
+  </div>
+  <div class="day">
+    <h2>Dia 2 — Follow-ups 3 dias</h2>
+    <div class="row" id="day2"></div>
+  </div>
+  <div class="day">
+    <h2>Dia 3 — Calls + Follow-ups 7 dias</h2>
+    <div class="row" id="day3"></div>
+  </div>
+  <a class="btn" href="https://praia.digital" target="_blank">Ferramentas gratuitas</a>
+</div>
+<div class="footer">(11) 95434-6288 | comercial@praia.digital</div>
+<script>
+(function(){
+  const items = {
+    day1: [
+      'outreach/batch-semanal/day1/envio-10.html',
+      'outreach/batch-semanal/day1/envio-101.html',
+      'outreach/batch-semanal/day1/envio-109.html',
+      'outreach/batch-semanal/day1/envio-121.html',
+      'outreach/batch-semanal/day1/envio-129.html',
+      'outreach/batch-semanal/day1/envio-141.html',
+      'outreach/batch-semanal/day1/envio-161.html',
+      'outreach/batch-semanal/day1/envio-176.html',
+      'outreach/batch-semanal/day1/envio-184.html',
+      'outreach/batch-semanal/day1/envio-186.html'
+    ],
+    day2: [
+      'outreach/batch-semanal/day2/followup3-10.html',
+      'outreach/batch-semanal/day2/followup3-101.html',
+      'outreach/batch-semanal/day2/followup3-109.html'
+    ],
+    day3: [
+      'outreach/batch-semanal/day3/call-10.html',
+      'outreach/batch-semanal/day3/call-101.html',
+      'outreach/batch-semanal/day3/call-121.html',
+      'outreach/batch-semanal/day3/followup7-21.html',
+      'outreach/batch-semanal/day3/followup7-24.html'
+    ]
+  };
+  Object.keys(items).forEach(day => {
+    const container = document.getElementById(day);
+    items[day].forEach(path => {
+      const name = path.split('/').pop();
+      const div = document.createElement('div');
+      div.className = 'item';
+      div.innerHTML = '<a href="/' + path + '" target="_blank">' + name + '</a>';
+      container.appendChild(div);
+    });
+  });
+})();
+</script>
+</body>
+</html>
