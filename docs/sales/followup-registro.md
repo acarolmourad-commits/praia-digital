@@ -4952,3 +4952,203 @@
 - 08/07/2026 02:20: [NOVO CICLO] envio inicial para Ilhabela Executive (Ilhabela) -> lead200@exemplo.com
 
 - 08/07/2026 02:26: monitoramento novo ciclo — 18 positivos, 25 neutros, 57 negativos
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Santos Premium (Santos)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Guarujá Digital (Guarujá)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Praia Grande Tech (Praia Grande)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro São Vicente Litoral (São Vicente)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Bertioga Praia (Bertioga)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Itanhaém Smart (Itanhaém)
+
+- 08/07/2026 02:27: [NOVO CICLO] call agendada para Peruíbe Blue (Peruíbe)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Mongaguá Green (Mongaguá)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Ubatuba Elite (Ubatuba)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Ilhabela Executive (Ilhabela)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Santos Launch (Santos)
+
+- 08/07/2026 02:27: [NOVO CICLO] call agendada para Guarujá Platinum (Guarujá)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Praia Grande Connect (Praia Grande)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro São Vicente View (São Vicente)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Bertioga Center (Bertioga)
+
+- 08/07/2026 02:27: [NOVO CICLO] call agendada para Itanhaém Premium (Itanhaém)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Peruíbe Digital (Peruíbe)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Mongaguá Tech (Mongaguá)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Ubatuba Litoral (Ubatuba)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Ilhabela Praia (Ilhabela)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Santos Smart (Santos)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Guarujá Blue (Guarujá)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Praia Grande Green (Praia Grande)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro São Vicente Elite (São Vicente)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Bertioga Executive (Bertioga)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Itanhaém Launch (Itanhaém)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Peruíbe Platinum (Peruíbe)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Mongaguá Connect (Mongaguá)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Ubatuba View (Ubatuba)
+
+- 08/07/2026 02:27: [NOVO CICLO] call agendada para Ilhabela Center (Ilhabela)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Santos Premium (Santos)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Guarujá Digital (Guarujá)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Praia Grande Tech (Praia Grande)
+
+- 08/07/2026 02:27: [NOVO CICLO] call agendada para São Vicente Litoral (São Vicente)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Bertioga Praia (Bertioga)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Itanhaém Smart (Itanhaém)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Peruíbe Blue (Peruíbe)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Mongaguá Green (Mongaguá)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Ubatuba Elite (Ubatuba)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Ilhabela Executive (Ilhabela)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Santos Launch (Santos)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Guarujá Platinum (Guarujá)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Praia Grande Connect (Praia Grande)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro São Vicente View (São Vicente)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Bertioga Center (Bertioga)
+
+- 08/07/2026 02:27: [NOVO CICLO] call agendada para Itanhaém Premium (Itanhaém)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Peruíbe Digital (Peruíbe)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Mongaguá Tech (Mongaguá)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Ubatuba Litoral (Ubatuba)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Ilhabela Praia (Ilhabela)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Santos Smart (Santos)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Guarujá Blue (Guarujá)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Praia Grande Green (Praia Grande)
+
+- 08/07/2026 02:27: [NOVO CICLO] call agendada para São Vicente Elite (São Vicente)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Bertioga Executive (Bertioga)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Itanhaém Launch (Itanhaém)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Peruíbe Platinum (Peruíbe)
+
+- 08/07/2026 02:27: [NOVO CICLO] call agendada para Mongaguá Connect (Mongaguá)
+
+- 08/07/2026 02:27: [NOVO CICLO] call agendada para Ubatuba View (Ubatuba)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Ilhabela Center (Ilhabela)
+
+- 08/07/2026 02:27: [NOVO CICLO] call agendada para Santos Premium (Santos)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Guarujá Digital (Guarujá)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Praia Grande Tech (Praia Grande)
+
+- 08/07/2026 02:27: [NOVO CICLO] call agendada para São Vicente Litoral (São Vicente)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Bertioga Praia (Bertioga)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Itanhaém Smart (Itanhaém)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Peruíbe Blue (Peruíbe)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Mongaguá Green (Mongaguá)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Ubatuba Elite (Ubatuba)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Ilhabela Executive (Ilhabela)
+
+- 08/07/2026 02:27: [NOVO CICLO] call agendada para Santos Launch (Santos)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Guarujá Platinum (Guarujá)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Praia Grande Connect (Praia Grande)
+
+- 08/07/2026 02:27: [NOVO CICLO] call agendada para São Vicente View (São Vicente)
+
+- 08/07/2026 02:27: [NOVO CICLO] call agendada para Bertioga Center (Bertioga)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Itanhaém Premium (Itanhaém)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Peruíbe Digital (Peruíbe)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Mongaguá Tech (Mongaguá)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Ubatuba Litoral (Ubatuba)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Ilhabela Praia (Ilhabela)
+
+- 08/07/2026 02:27: [NOVO CICLO] call agendada para Santos Smart (Santos)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Guarujá Blue (Guarujá)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Praia Grande Green (Praia Grande)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro São Vicente Elite (São Vicente)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Bertioga Executive (Bertioga)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Itanhaém Launch (Itanhaém)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Peruíbe Platinum (Peruíbe)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Mongaguá Connect (Mongaguá)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Ubatuba View (Ubatuba)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Ilhabela Center (Ilhabela)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Santos Premium (Santos)
+
+- 08/07/2026 02:27: [NOVO CICLO] call agendada para Guarujá Digital (Guarujá)
+
+- 08/07/2026 02:27: [NOVO CICLO] call agendada para Praia Grande Tech (Praia Grande)
+
+- 08/07/2026 02:27: [NOVO CICLO] call agendada para São Vicente Litoral (São Vicente)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Bertioga Praia (Bertioga)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Itanhaém Smart (Itanhaém)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Peruíbe Blue (Peruíbe)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Mongaguá Green (Mongaguá)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Ubatuba Elite (Ubatuba)
+
+- 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Ilhabela Executive (Ilhabela)
