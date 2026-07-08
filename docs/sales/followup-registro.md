@@ -6877,3 +6877,23 @@
 | 15 | Email | 2026-07-08 | reativacao-inicial | 2026-07-11 | 2026-07-15 |
 | 15 | Email | 2026-07-11 | reativacao-3dias | 2026-07-15 | — |
 | 15 | Email | 2026-07-15 | reativacao-7dias | — | — |
+| 275 | Email | 2026-07-08 | outreach CEO Bertioga | 2026-07-11 | 2026-07-15 |
+| 276 | Email | 2026-07-08 | outreach CEO Mongaguá | 2026-07-11 | 2026-07-15 |
+| 277 | Email | 2026-07-08 | outreach CEO Bertioga | 2026-07-11 | 2026-07-15 |
+| 279 | Email | 2026-07-08 | outreach CEO Itanhaém | 2026-07-11 | 2026-07-15 |
+| 280 | Email | 2026-07-08 | outreach CEO Itanhaém | 2026-07-11 | 2026-07-15 |
+| 281 | Email | 2026-07-08 | outreach CEO São Vicente | 2026-07-11 | 2026-07-15 |
+| 282 | Email | 2026-07-08 | outreach CEO Santos | 2026-07-11 | 2026-07-15 |
+| 283 | Email | 2026-07-08 | outreach CEO Mongaguá | 2026-07-11 | 2026-07-15 |
+| 284 | Email | 2026-07-08 | outreach CEO Praia Grande | 2026-07-11 | 2026-07-15 |
+| 285 | Email | 2026-07-08 | outreach CEO Mongaguá | 2026-07-11 | 2026-07-15 |
+| 286 | Email | 2026-07-08 | outreach CEO São Vicente | 2026-07-11 | 2026-07-15 |
+| 287 | Email | 2026-07-08 | outreach CEO Bertioga | 2026-07-11 | 2026-07-15 |
+| 288 | Email | 2026-07-08 | outreach CEO Guarujá | 2026-07-11 | 2026-07-15 |
+| 289 | Email | 2026-07-08 | outreach CEO Bertioga | 2026-07-11 | 2026-07-15 |
+| 290 | Email | 2026-07-08 | outreach CEO Guarujá | 2026-07-11 | 2026-07-15 |
+| 291 | Email | 2026-07-08 | outreach CEO Bertioga | 2026-07-11 | 2026-07-15 |
+| 292 | Email | 2026-07-08 | outreach CEO Itanhaém | 2026-07-11 | 2026-07-15 |
+| 293 | Email | 2026-07-08 | outreach CEO Mongaguá | 2026-07-11 | 2026-07-15 |
+| 294 | Email | 2026-07-08 | outreach CEO Peruíbe | 2026-07-11 | 2026-07-15 |
+| 295 | Email | 2026-07-08 | outreach CEO Bertioga | 2026-07-11 | 2026-07-15 |
