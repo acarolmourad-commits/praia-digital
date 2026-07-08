@@ -4348,3 +4348,205 @@
 - 08/07/2026 01:57: PARCERIA FECHADA com Costa Azul Prop (Santos) | call_agendada -> parceria_fechada
 
 - 08/07/2026 01:57: PARCERIA FECHADA com Caiçara Digital Praia (Praia Grande) | call_agendada -> parceria_fechada
+
+- 08/07/2026 02:04: onboarding gerado para Santos Ocean View (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Santos Premium Digital (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Santos Tower Imóveis (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Santos Luxo (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Santos Smart Home (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Santos Executive (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Santos Bay Homes (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Santos Launch (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Santos Platinum (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Santos Elite (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Santos Prime (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Ocean Blue Digital (Guarujá)
+
+- 08/07/2026 02:04: onboarding gerado para Praia Grande Imóveis (Praia Grande)
+
+- 08/07/2026 02:04: onboarding gerado para Cibratel Imóveis (Itanhaém)
+
+- 08/07/2026 02:04: onboarding gerado para Riviera Business (Bertioga)
+
+- 08/07/2026 02:04: onboarding gerado para Região Sul Praia (Peruíbe)
+
+- 08/07/2026 02:04: onboarding gerado para Caiçara Norte (Praia Grande)
+
+- 08/07/2026 02:04: onboarding gerado para Caiçara Executive (Praia Grande)
+
+- 08/07/2026 02:04: onboarding gerado para Embaré Digital (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Embaré Tech (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Peruíbe Launch (Peruíbe)
+
+- 08/07/2026 02:04: onboarding gerado para Gonzaga Elite (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Peruíbe Centro Digital (Peruíbe)
+
+- 08/07/2026 02:04: onboarding gerado para Santos Smart (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Santos Connect (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Mar & Sol Litoral (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Guarujá Conecta (Guarujá)
+
+- 08/07/2026 02:04: onboarding gerado para Bertioga Inovação (Bertioga)
+
+- 08/07/2026 02:04: onboarding gerado para Itanhaém Surf (Itanhaém)
+
+- 08/07/2026 02:04: onboarding gerado para Litoral Sul Imóveis (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Bertioga Vision (Bertioga)
+
+- 08/07/2026 02:04: onboarding gerado para Região Sul Centro (Bertioga)
+
+- 08/07/2026 02:04: onboarding gerado para Baixio Digital (Itanhaém)
+
+- 08/07/2026 02:04: onboarding gerado para Barra Norte (Peruíbe)
+
+- 08/07/2026 02:04: onboarding gerado para Barra Platinum (Peruíbe)
+
+- 08/07/2026 02:04: onboarding gerado para Ocean Blue Digital (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Guarujá Norte Digital (Guarujá)
+
+- 08/07/2026 02:04: onboarding gerado para Praia Grande Prime (Praia Grande)
+
+- 08/07/2026 02:04: onboarding gerado para São Vicente Bay (São Vicente)
+
+- 08/07/2026 02:04: onboarding gerado para Jardim Grandesp (Itanhaém)
+
+- 08/07/2026 02:04: onboarding gerado para São Vicente Sul (São Vicente)
+
+- 08/07/2026 02:04: onboarding gerado para Tombo Imóveis (Guarujá)
+
+- 08/07/2026 02:04: onboarding gerado para São Vicente Vision (São Vicente)
+
+- 08/07/2026 02:04: onboarding gerado para Catiapoã Digital (São Vicente)
+
+- 08/07/2026 02:04: onboarding gerado para Realize II Prime (Itanhaém)
+
+- 08/07/2026 02:04: onboarding gerado para Caiçara Digital Prime (Peruíbe)
+
+- 08/07/2026 02:04: onboarding gerado para Caiçara Digital View (Bertioga)
+
+- 08/07/2026 02:04: onboarding gerado para Barra Digital Praia (São Vicente)
+
+- 08/07/2026 02:04: onboarding gerado para Praia Grande Site Site (Mongaguá)
+
+- 08/07/2026 02:04: onboarding gerado para Caiçara Digital Site (Praia Grande)
+
+- 08/07/2026 02:04: onboarding gerado para Edifica Praia Centro (Guarujá)
+
+- 08/07/2026 02:04: onboarding gerado para Barra Digital Site (Peruíbe)
+
+- 08/07/2026 02:04: onboarding gerado para Beta Imóveis Site (Guarujá)
+
+- 08/07/2026 02:04: onboarding gerado para Recife Imóveis Blue (Mongaguá)
+
+- 08/07/2026 02:04: onboarding gerado para Norte Sul Centro (Praia Grande)
+
+- 08/07/2026 02:04: onboarding gerado para Prime Imóveis Litoral (Guarujá)
+
+- 08/07/2026 02:04: onboarding gerado para Mar & Sol View (Guarujá)
+
+- 08/07/2026 02:04: onboarding gerado para Mar Brasil Digital (Itanhaém)
+
+- 08/07/2026 02:04: onboarding gerado para Caiçara Digital Litoral (Mongaguá)
+
+- 08/07/2026 02:04: onboarding gerado para Litoral Brasil Prime (Itanhaém)
+
+- 08/07/2026 02:04: onboarding gerado para Praia Grande Site Litoral (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Norte Sul Praia (Mongaguá)
+
+- 08/07/2026 02:04: onboarding gerado para Norte Sul Praia (Mongaguá)
+
+- 08/07/2026 02:04: onboarding gerado para Mar & Sol Imóveis (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Beta Imóveis Centro (Bertioga)
+
+- 08/07/2026 02:04: onboarding gerado para Costa Verde Litoral (Itanhaém)
+
+- 08/07/2026 02:04: onboarding gerado para Edifica Praia Litoral (Peruíbe)
+
+- 08/07/2026 02:04: onboarding gerado para Realize II Blue (Mongaguá)
+
+- 08/07/2026 02:04: onboarding gerado para Itanhaém Premium Prime (São Vicente)
+
+- 08/07/2026 02:04: onboarding gerado para Ocean Blue Centro (Peruíbe)
+
+- 08/07/2026 02:04: onboarding gerado para Edifica Praia View (Itanhaém)
+
+- 08/07/2026 02:04: onboarding gerado para Sul Imóveis Site (Guarujá)
+
+- 08/07/2026 02:04: onboarding gerado para Edifica Praia Blue (São Vicente)
+
+- 08/07/2026 02:04: onboarding gerado para Mongaguá Imóveis Litoral (São Vicente)
+
+- 08/07/2026 02:04: onboarding gerado para Caiçara Digital Blue (Itanhaém)
+
+- 08/07/2026 02:04: onboarding gerado para Praia Grande Site Blue (Guarujá)
+
+- 08/07/2026 02:04: onboarding gerado para Mar & Sol Prime (Guarujá)
+
+- 08/07/2026 02:04: onboarding gerado para Norte Sul Digital (Guarujá)
+
+- 08/07/2026 02:04: onboarding gerado para Prime Imóveis Praia (São Vicente)
+
+- 08/07/2026 02:04: onboarding gerado para Sol & Mar Blue (Praia Grande)
+
+- 08/07/2026 02:04: onboarding gerado para Ocean Blue Praia (Bertioga)
+
+- 08/07/2026 02:04: onboarding gerado para Realize II Centro (São Vicente)
+
+- 08/07/2026 02:04: onboarding gerado para Mar Brasil Centro (Peruíbe)
+
+- 08/07/2026 02:04: onboarding gerado para Mongaguá Imóveis Praia (Praia Grande)
+
+- 08/07/2026 02:04: onboarding gerado para Norte Sul Prime (Peruíbe)
+
+- 08/07/2026 02:04: onboarding gerado para Caiçara Digital Site (Itanhaém)
+
+- 08/07/2026 02:04: onboarding gerado para Riviera Blue Centro (São Vicente)
+
+- 08/07/2026 02:04: onboarding gerado para Edifica Praia Praia (Mongaguá)
+
+- 08/07/2026 02:04: onboarding gerado para Realize II Tech (Itanhaém)
+
+- 08/07/2026 02:04: onboarding gerado para Costa Azul Prime (Guarujá)
+
+- 08/07/2026 02:04: onboarding gerado para Ocean Blue View (Mongaguá)
+
+- 08/07/2026 02:04: onboarding gerado para Mar Brasil Blue (Peruíbe)
+
+- 08/07/2026 02:04: onboarding gerado para Edifica Praia Prime (Praia Grande)
+
+- 08/07/2026 02:04: onboarding gerado para Costa Azul  Prop (Praia Grande)
+
+- 08/07/2026 02:04: onboarding gerado para Porto da Lua Prop (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Mar View (Peruíbe)
+
+- 08/07/2026 02:04: onboarding gerado para Barra Digital Centro (Bertioga)
+
+- 08/07/2026 02:04: onboarding gerado para Costa Azul View (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Vista Mar Litoral (Guarujá)
+
+- 08/07/2026 02:04: onboarding gerado para Costa Azul Prop (Santos)
+
+- 08/07/2026 02:04: onboarding gerado para Caiçara Digital Praia (Praia Grande)
