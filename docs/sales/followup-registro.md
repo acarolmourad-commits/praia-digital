@@ -42,3 +42,5 @@
 - 08/07/2026 00:46: envio inicial para lead 194 — Riviera Platinum (Bertioga) → e-mail: contato194@exemplo.com
 
 - 08/07/2026 00:46: envio inicial para lead 209 — Riviera Elite (Bertioga) → e-mail: contato209@exemplo.com
+
+- 08/07/2026 00:46: envio inicial para lead 15 — Prime Imóveis Digital (Guarujá) → e-mail: contato15@exemplo.com
