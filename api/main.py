@@ -20,6 +20,46 @@ class LeadRequest(BaseModel):
     tempo_resposta: int
     interacoes: int
 
+class RoteiroRequest(BaseModel):
+    cidade: str
+    objetivo: str
+    perfil: str
+
+class PredicaoRequest(BaseModel):
+    cidade: str
+    mes: str
+    ticket: float
+
+@app.post("/roteiro")
+def roteiro_comprador(req: RoteiroRequest):
+    bairros = {
+        "Santos": "Gonzaga, Ponta da Praia, Embaré",
+        "Guarujá": "Enseada, Guarujá Centro, Tombo",
+        "Praia Grande": "Boqueirão, Caiçara, Vila Tupi",
+        "São Vicente": "Catiapoã, Jardim Rio Branco",
+        "Bertioga": "Riviera de São Lourenço",
+        "Itanhaém": "Centro, Itanhaém Norte, Suarão",
+        "Peruíbe": "Barra de Peruíbe, Centro",
+        "Mongaguá": "Mongaguá Centro, Balneário Conchas"
+    }
+    roteiro = f"Para {req.perfil.lower()} em {req.cidade}, foco em bairros como {bairros.get(req.cidade, 'região central')}."
+    dicas = " Priorize ocupação média e temporada." if req.objetivo == "Investir" else " Priorize proximidade da praia." if req.objetivo == "Alugar temporada" else " Priorize documentação e acesso."
+    return {"roteiro": roteiro, "dica": dicas}
+
+@app.post("/predizer")
+def predizer_vendas(req: PredicaoRequest):
+    sazonal = {
+        "Santos": [0.65,0.6,0.55,0.5,0.45,0.4,0.35,0.4,0.5,0.6,0.7,0.75],
+        "Guarujá": [0.6,0.55,0.5,0.45,0.4,0.35,0.3,0.35,0.45,0.55,0.65,0.7],
+        "Praia Grande": [0.55,0.5,0.45,0.4,0.35,0.3,0.28,0.32,0.4,0.5,0.6,0.65]
+    }
+    meses = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"]
+    idx = meses.index(req.mes) if req.mes in meses else 0
+    prob = sazonal.get(req.cidade, [0.45]*12)[idx] * 100
+    lead_time = max(15, round(req.ticket / 50000))
+    faixa = "Alta" if prob >= 65 else "Média"
+    return {"probabilidade": round(prob, 0), "lead_time": lead_time, "faixa": faixa}
+
 @app.get("/")
 def root():
     return {"service": "Praia Digital API", "status": "online"}
