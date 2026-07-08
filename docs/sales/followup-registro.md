@@ -1214,3 +1214,33 @@
 - 08/07/2026 00:49: avanço de negociação para lead 91 — Santos Tower Imóveis (Santos) | status anterior: contato_inicial_enviado -> interessado
 
 - 08/07/2026 00:49: avanço de negociação para lead 101 — Santos Luxo (Santos) | status anterior: contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:56: follow-up 3 dias para lead 51 — Litoral Premium Sant (Santos)
+
+- 08/07/2026 00:56: follow-up 3 dias para lead 66 — Santos Ocean View (Santos)
+
+- 08/07/2026 00:56: follow-up 3 dias para lead 76 — Santos Premium Digital (Santos)
+
+- 08/07/2026 00:56: follow-up 3 dias para lead 91 — Santos Tower Imóveis (Santos)
+
+- 08/07/2026 00:56: follow-up 3 dias para lead 101 — Santos Luxo (Santos)
+
+- 08/07/2026 00:56: follow-up 3 dias para lead 121 — Santos Smart Home (Santos)
+
+- 08/07/2026 00:56: follow-up 3 dias para lead 141 — Santos Executive (Santos)
+
+- 08/07/2026 00:56: follow-up 3 dias para lead 161 — Santos Bay Homes (Santos)
+
+- 08/07/2026 00:56: follow-up 3 dias para lead 176 — Santos Launch (Santos)
+
+- 08/07/2026 00:56: follow-up 3 dias para lead 186 — Santos Platinum (Santos)
+
+- 08/07/2026 00:56: avanço de negociação para lead 121 — Santos Smart Home (Santos) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:56: avanço de negociação para lead 141 — Santos Executive (Santos) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:56: avanço de negociação para lead 161 — Santos Bay Homes (Santos) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:56: avanço de negociação para lead 176 — Santos Launch (Santos) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:56: avanço de negociação para lead 186 — Santos Platinum (Santos) | contato_inicial_enviado -> interessado
