@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Guia de Disparo Gratuito — Praia Digital</title>
+<style>
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4EBD0;color:#023047;margin:0}
+  header{background:linear-gradient(135deg,#0077B6,#00B4D8);color:#fff;padding:1.5rem 2rem;text-align:center}
+  .card{max-width:980px;margin:2rem auto;padding:1.75rem;background:#fff;border-radius:16px;box-shadow:0 8px 28px rgba(0,0,0,.06);line-height:1.7}
+  .step{border-left:4px solid #0077B6;padding-left:1rem;margin:1rem 0}
+  code{background:#f1f5f9;padding:.15rem .4rem;border-radius:6px;font-size:.9rem}
+  .footer{background:#023047;color:#fff;padding:1rem;text-align:center;opacity:.8;margin-top:2rem}
+</style>
+</head>
+<body>
+<header><h1>Guia de Disparo Gratuito — Outreach Praia Digital</h1></header>
+<div class="card">
+  <h2>Opção 1 — Mail Merge para Gmail</h2>
+  <p>Use os arquivos CSV prontos em <code>outreach/importacao-email.csv</code> e <code>outreach/importacao-followups.csv</code>.</p>
+  <ol>
+    <li>Instale a extensão <strong>Mail Merge</strong> no Chrome.</li>
+    <li>Abra o Gmail e crie um rascunho com o texto do e-mail.</li>
+    <li>No planilha Google, faça upload do CSV e use colunas <code>{{email}}</code>, <code>{{subject}}</code>.</li>
+    <li>Dis pare até 50 e-mails/dia gratuitamente.</li>
+  </ol>
+
+  <h2>Opção 2 — Outlook Desktop</h2>
+  <p>Importe o CSV no Outlook e use o <strong>Mail Merge</strong> nativo com o template em <code>outreach/kit-comercial-completo.html</code>.</p>
+
+  <h2>Opção 3 — Script Python local</h2>
+  <p>Configure <code>SMTP_USER</code> e <code>SMTP_PASSWORD</code> no arquivo <code>scripts/email_batch_sender.py</code> e execute:</p>
+  <code>python scripts/email_batch_sender.py</code>
+
+  <p><a href="https://praia.digital">Ferramentas gratuitas</a> • <a href="https://acarolmourad-commits.github.io/praia-digital/">Site</a></p>
+</div>
+<div class="footer">CEO Carolina Moura | (11) 95434-6288 | comercial@praia.digital</div>
+</body>
+</html>
