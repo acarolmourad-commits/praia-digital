@@ -1294,3 +1294,13 @@
 - 08/07/2026 00:57: follow-up 7 dias para lead 91 — Santos Tower Imóveis (Santos)
 
 - 08/07/2026 00:57: follow-up 7 dias para lead 101 — Santos Luxo (Santos)
+
+- 08/07/2026 00:58: avanço de negociação para lead 129 — Riviera Business (Bertioga) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:58: avanço de negociação para lead 184 — Riviera Launch (Bertioga) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:58: avanço de negociação para lead 194 — Riviera Platinum (Bertioga) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:58: avanço de negociação para lead 209 — Riviera Elite (Bertioga) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:58: avanço de negociação para lead 15 — Prime Imóveis Digital (Guarujá) | contato_inicial_enviado -> interessado
