@@ -6897,3 +6897,6 @@
 | 293 | Email | 2026-07-08 | outreach CEO Mongaguá | 2026-07-11 | 2026-07-15 |
 | 294 | Email | 2026-07-08 | outreach CEO Peruíbe | 2026-07-11 | 2026-07-15 |
 | 295 | Email | 2026-07-08 | outreach CEO Bertioga | 2026-07-11 | 2026-07-15 |
+| 655 | Email | 2026-07-08 | proposta/comercial enviada | — | — |
+| 654 | Email | 2026-07-08 | proposta/comercial enviada | — | — |
+| 631 | Email | 2026-07-08 | proposta/comercial enviada | — | — |
