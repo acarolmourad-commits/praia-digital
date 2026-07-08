@@ -4062,3 +4062,11 @@
 - 08/07/2026 01:34: follow-up pós-call direcionado para Santos Bay Homes (Santos) | call_agendada -> followup_pos_call_enviado
 
 - 08/07/2026 01:34: follow-up pós-call direcionado para Santos Launch (Santos) | call_agendada -> followup_pos_call_enviado
+
+- 08/07/2026 01:34: PARCERIA FECHADA com Santos Ocean View (Santos) | interessado -> parceria_fechada
+
+- 08/07/2026 01:34: PARCERIA FECHADA com Santos Premium Digital (Santos) | interessado -> parceria_fechada
+
+- 08/07/2026 01:34: PARCERIA FECHADA com Santos Tower Imóveis (Santos) | interessado -> parceria_fechada
+
+- 08/07/2026 01:34: PARCERIA FECHADA com Santos Luxo (Santos) | followup_pos_call_enviado -> parceria_fechada
