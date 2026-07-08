@@ -5507,3 +5507,18 @@
 | 28 | Email | 2026-07-08 | outreach CEO Itanhaém | 2026-07-11 | 2026-07-15 |
 | 37 | Email | 2026-07-08 | outreach CEO Santos | 2026-07-11 | 2026-07-15 |
 | 43 | Email | 2026-07-08 | outreach CEO Itanhaém | 2026-07-11 | 2026-07-15 |
+| 50 | Email | 2026-07-08 | outreach CEO Santos | 2026-07-11 | 2026-07-15 |
+| 58 | Email | 2026-07-08 | outreach CEO Itanhaém | 2026-07-11 | 2026-07-15 |
+| 67 | Email | 2026-07-08 | outreach CEO Guarujá | 2026-07-11 | 2026-07-15 |
+| 68 | Email | 2026-07-08 | outreach CEO Bertioga | 2026-07-11 | 2026-07-15 |
+| 73 | Email | 2026-07-08 | outreach CEO Itanhaém | 2026-07-11 | 2026-07-15 |
+| 118 | Email | 2026-07-08 | outreach CEO Bertioga | 2026-07-11 | 2026-07-15 |
+| 137 | Email | 2026-07-08 | outreach CEO Guarujá | 2026-07-11 | 2026-07-15 |
+| 138 | Email | 2026-07-08 | outreach CEO Bertioga | 2026-07-11 | 2026-07-15 |
+| 157 | Email | 2026-07-08 | outreach CEO Guarujá | 2026-07-11 | 2026-07-15 |
+| 158 | Email | 2026-07-08 | outreach CEO Bertioga | 2026-07-11 | 2026-07-15 |
+| 1 | Email | 2026-07-08 | outreach CEO Santos | 2026-07-11 | 2026-07-15 |
+| 17 | Email | 2026-07-08 | outreach CEO Bertioga | 2026-07-11 | 2026-07-15 |
+| 22 | Email | 2026-07-08 | outreach CEO Bertioga | 2026-07-11 | 2026-07-15 |
+| 27 | Email | 2026-07-08 | outreach CEO Mongaguá | 2026-07-11 | 2026-07-15 |
+| 36 | Email | 2026-07-08 | outreach CEO Praia Grande | 2026-07-11 | 2026-07-15 |
