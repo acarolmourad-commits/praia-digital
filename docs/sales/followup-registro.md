@@ -5224,3 +5224,167 @@
 - 08/07/2026 02:34: onboarding novo ciclo gerado para Praia Grande Tech (Praia Grande)
 
 - 08/07/2026 02:34: onboarding novo ciclo gerado para São Vicente Litoral (São Vicente)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Santos Premium (Santos)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Guarujá Digital (Guarujá)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Praia Grande Tech (Praia Grande)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para São Vicente Litoral (São Vicente)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Bertioga Praia (Bertioga)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Itanhaém Smart (Itanhaém)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Mongaguá Green (Mongaguá)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Ubatuba Elite (Ubatuba)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Ilhabela Executive (Ilhabela)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Santos Launch (Santos)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Praia Grande Connect (Praia Grande)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para São Vicente View (São Vicente)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Bertioga Center (Bertioga)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Peruíbe Digital (Peruíbe)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Mongaguá Tech (Mongaguá)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Ubatuba Litoral (Ubatuba)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Ilhabela Praia (Ilhabela)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Santos Smart (Santos)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Guarujá Blue (Guarujá)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Praia Grande Green (Praia Grande)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para São Vicente Elite (São Vicente)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Bertioga Executive (Bertioga)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Itanhaém Launch (Itanhaém)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Peruíbe Platinum (Peruíbe)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Mongaguá Connect (Mongaguá)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Ubatuba View (Ubatuba)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Santos Premium (Santos)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Guarujá Digital (Guarujá)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Praia Grande Tech (Praia Grande)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Bertioga Praia (Bertioga)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Itanhaém Smart (Itanhaém)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Peruíbe Blue (Peruíbe)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Mongaguá Green (Mongaguá)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Ubatuba Elite (Ubatuba)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Ilhabela Executive (Ilhabela)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Santos Launch (Santos)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Guarujá Platinum (Guarujá)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Praia Grande Connect (Praia Grande)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para São Vicente View (São Vicente)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Bertioga Center (Bertioga)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Peruíbe Digital (Peruíbe)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Mongaguá Tech (Mongaguá)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Ubatuba Litoral (Ubatuba)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Ilhabela Praia (Ilhabela)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Santos Smart (Santos)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Guarujá Blue (Guarujá)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Praia Grande Green (Praia Grande)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Bertioga Executive (Bertioga)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Itanhaém Launch (Itanhaém)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Peruíbe Platinum (Peruíbe)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Ilhabela Center (Ilhabela)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Guarujá Digital (Guarujá)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Praia Grande Tech (Praia Grande)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Bertioga Praia (Bertioga)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Itanhaém Smart (Itanhaém)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Peruíbe Blue (Peruíbe)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Mongaguá Green (Mongaguá)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Ubatuba Elite (Ubatuba)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Ilhabela Executive (Ilhabela)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Guarujá Platinum (Guarujá)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Praia Grande Connect (Praia Grande)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Itanhaém Premium (Itanhaém)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Peruíbe Digital (Peruíbe)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Mongaguá Tech (Mongaguá)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Ubatuba Litoral (Ubatuba)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Ilhabela Praia (Ilhabela)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Guarujá Blue (Guarujá)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Praia Grande Green (Praia Grande)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para São Vicente Elite (São Vicente)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Bertioga Executive (Bertioga)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Itanhaém Launch (Itanhaém)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Peruíbe Platinum (Peruíbe)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Mongaguá Connect (Mongaguá)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Ubatuba View (Ubatuba)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Ilhabela Center (Ilhabela)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Santos Premium (Santos)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Bertioga Praia (Bertioga)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Itanhaém Smart (Itanhaém)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Peruíbe Blue (Peruíbe)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Mongaguá Green (Mongaguá)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Ubatuba Elite (Ubatuba)
+
+- 08/07/2026 02:44: [NOVO CICLO] follow-up 7 dias para Ilhabela Executive (Ilhabela)
