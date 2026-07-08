@@ -1366,3 +1366,1161 @@
 - 08/07/2026 01:12: automação diária — 0 fu3d, 0 fu7d, 0 alertas
 
 - 08/07/2026 01:19: monitoramento de respostas — 600 leads verificados, 93 positivas, 153 neutras, 354 negativas
+
+- 08/07/2026 01:27: agendamento gerado para lead Santos Luxo (Santos) → contato101@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Santos Executive (Santos) → contato141@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Santos Bay Homes (Santos) → contato161@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Santos Launch (Santos) → contato176@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Santos Prime (Santos) → contato216@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Ocean Blue Digital (Guarujá) → contato8@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Riviera Business (Bertioga) → contato129@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Região Sul Praia (Peruíbe) → contato10@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Caiçara Norte (Praia Grande) → contato49@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Exclusive (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Caiçara Imóveis (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Caiçara Conectada (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Executive (Bertioga)
+
+- 08/07/2026 01:27: agendamento gerado para lead Caiçara Executive (Praia Grande) → contato154@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Exclusive (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Caiçara Conectada (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Caiçara Platinum (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Embaré Elite (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Caiçara Elite (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Litoral Norte Imóveis (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Imóveis (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Boqueirão Imóveis (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Boqueirão Norte (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Blue (Bertioga)
+
+- 08/07/2026 01:27: agendamento gerado para lead Embaré Digital (Santos) → contato87@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Peruíbe Eco (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Gonzaga Digital (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Embaré Tech (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Peruíbe Natureza (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Gonzaga Smart (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Embaré Conecta (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Peruíbe Executive (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Gonzaga Executive (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Embaré Executive (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Peruíbe Nature (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Gonzaga Digital (Santos)
+
+- 08/07/2026 01:27: agendamento gerado para lead Embaré Tech (Santos) → contato172@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Peruíbe Launch (Peruíbe) → contato181@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Peruíbe Platinum (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Gonzaga Platinum (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Embaré Platinum (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Peruíbe Elite (Peruíbe)
+
+- 08/07/2026 01:27: agendamento gerado para lead Gonzaga Elite (Santos) → contato211@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Gonzaga Premium (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Rio Preto Sol (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Peruíbe Norte (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Gonzaga Sul (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Peruíbe Coast (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Bertioga Centro (Bertioga)
+
+- 08/07/2026 01:27: agendamento gerado para lead Peruíbe Centro Digital (Peruíbe) → contato81@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Gonzaga Norte (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Peruíbe Ecologic (Peruíbe)
+
+- 08/07/2026 01:27: agendamento gerado para lead Santos Smart (Santos) → contato116@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Santos Connect (Santos) → contato136@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Santos Vision (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Bertioga Platinum (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Bertioga Elite (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Bertioga Prime (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mar & Sol Praia (Santos)
+
+- 08/07/2026 01:27: agendamento gerado para lead Mar & Sol Litoral (Santos) → contato18@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Peruíbe Sol (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Ponta da Praia (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Itanhaém Norte (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Guarujá Blue Tech (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Bertioga Riviera Tech (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Itanhaém Premium (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Guarujá Premium (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Bertioga Green (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Itanhaém Premium (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Smart (Praia Grande)
+
+- 08/07/2026 01:27: agendamento gerado para lead Guarujá Conecta (Guarujá) → contato122@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Bertioga Inovação (Bertioga) → contato123@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Itanhaém Surf (Itanhaém) → contato128@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Relax (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Guarujá Executive (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Bertioga Executive (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Itanhaém Executive (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Vision (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Guarujá Coast Imóveis (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Bertioga Premium (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Itanhaém Premium (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Guarujá Launch (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Bertioga Launch (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Itanhaém Launch (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Guarujá Platinum (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Itanhaém Platinum (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Guarujá Elite (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Itanhaém Elite (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Guarujá Prime (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Sul Praia (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Ocean Blue Centro (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Prime Imóveis Site (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Itanhaém Mar (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro José Menino Premium (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Gaivota Imóveis (Itanhaém)
+
+- 08/07/2026 01:27: agendamento gerado para lead Litoral Sul Imóveis (Santos) → contato50@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Itanhaém Centro (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Guarujá Blue (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Bertioga Riviera (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Itanhaém View (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Bertioga Smart (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Guarujá Zen (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Bertioga Premium (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Guarujá Vision (Guarujá)
+
+- 08/07/2026 01:27: agendamento gerado para lead Bertioga Vision (Bertioga) → contato158@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Alpha Imóveis Praia (Santos)
+
+- 08/07/2026 01:27: agendamento gerado para lead Região Sul Centro (Bertioga) → contato17@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Maresias Imóveis (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mongaguá Atlântica (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Vila Tupi Imóveis (Praia Grande)
+
+- 08/07/2026 01:27: agendamento gerado para lead Baixio Digital (Itanhaém) → contato44@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Jussara Digital (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mongaguá Sul (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Barra Peruíbe Sul (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mongaguá Beach (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mongaguá Centro (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Barra Norte (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mongaguá Tropical (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mongaguá Blue (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Barra Norte (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Guarujá Smart (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mongaguá Relax (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Barra Digital (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mongaguá Executive (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Barra Executive (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mongaguá Blue (Mongaguá)
+
+- 08/07/2026 01:27: agendamento gerado para lead Barra Norte (Peruíbe) → contato175@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mongaguá Launch (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mongaguá Platinum (Mongaguá)
+
+- 08/07/2026 01:27: agendamento gerado para lead Barra Platinum (Peruíbe) → contato200@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mongaguá Elite (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Barra Elite (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Região Sul Digital (Mongaguá)
+
+- 08/07/2026 01:27: agendamento gerado para lead Ocean Blue Digital (Santos) → contato3@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Sul Site (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Sol & Mar Centro (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Barra de Peruíbe (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Balneário Conchas (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Maresias Tech (Bertioga)
+
+- 08/07/2026 01:27: agendamento gerado para lead Guarujá Norte Digital (Guarujá) → contato77@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Sul (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Business (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Estrutura (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Executive (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Smart (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Launch (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Platinum (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Elite (Praia Grande)
+
+- 08/07/2026 01:27: agendamento gerado para lead Praia Grande Prime (Praia Grande) → contato219@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Beta Imóveis Praia (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Região Sul Digital (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Imobiliária Litoral Litoral (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Costa Azul Imóveis (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Vila São Paulo (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Park (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Center (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Jardim Rio Branco (São Vicente)
+
+- 08/07/2026 01:27: agendamento gerado para lead São Vicente Bay (São Vicente) → contato70@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro São Vicente Platinum (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro São Vicente Elite (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro São Vicente Prime (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro São Vicente Premium (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Agenor de Campos (Mongaguá)
+
+- 08/07/2026 01:27: agendamento gerado para lead Jardim Grandesp (Itanhaém) → contato42@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Itinguçu Imóveis (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Guarujá Mar Digital (Guarujá)
+
+- 08/07/2026 01:27: agendamento gerado para lead São Vicente Sul (São Vicente) → contato40@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro São Vicente Norte (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro São Vicente Green (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro São Vicente Bay (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro São Vicente Conectada (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro São Vicente Executive (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro São Vicente Connect (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro São Vicente Launch (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Enseada Digital (Guarujá)
+
+- 08/07/2026 01:27: agendamento gerado para lead Tombo Imóveis (Guarujá) → contato30@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Tombo Digital (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Tombo Beach (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro São Vicente Smart (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Tombo Surf (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro São Vicente Premium (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Tombo Executive (Guarujá)
+
+- 08/07/2026 01:27: agendamento gerado para lead São Vicente Vision (São Vicente) → contato160@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Tombo Beach (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Tombo Launch (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Tombo Platinum (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Tombo Elite (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Tombo Norte (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Tombo Beach (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Catiapoã Sul (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Tombo Exclusive (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Catiapoã Nature (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Catiapoã Nature (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Catiapoã Platinum (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Catiapoã Elite (São Vicente)
+
+- 08/07/2026 01:27: agendamento gerado para lead Catiapoã Digital (São Vicente) → contato33@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Catiapoã Norte (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Catiapoã Digital (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Catiapoã Executive (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Região Sul Digital (Bertioga)
+
+- 08/07/2026 01:27: agendamento gerado para lead Realize II Prime (Itanhaém) → contato222@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Edifica Praia View (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Beta Imóveis View (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Sol & Mar Blue (Santos)
+
+- 08/07/2026 01:27: agendamento gerado para lead Caiçara Digital Prime (Peruíbe) → contato226@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Região Sul Digital (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Caiçara Digital Digital (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Porto da Lua Prime (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Edifica Praia Digital (Bertioga)
+
+- 08/07/2026 01:27: agendamento gerado para lead Caiçara Digital View (Bertioga) → contato231@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Site View (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Blue Digital (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mar & Sol Site (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Santos Tower Centro (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Site Digital (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Santos Tower Prime (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Caiçara Digital Blue (Bertioga)
+
+- 08/07/2026 01:27: agendamento gerado para lead Barra Digital Praia (São Vicente) → contato239@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Site View (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Sul Blue (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Prime Imóveis Digital (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Sul Prime (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Blue Blue (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Região Sul Prime (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Beta Imóveis Blue (Bertioga)
+
+- 08/07/2026 01:27: agendamento gerado para lead Praia Grande Site Site (Mongaguá) → contato247@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Prime Imóveis Centro (Bertioga)
+
+- 08/07/2026 01:27: agendamento gerado para lead Caiçara Digital Site (Praia Grande) → contato249@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Costa Verde Litoral (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Sul Prime (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Caiçara Digital Site (Peruíbe)
+
+- 08/07/2026 01:27: agendamento gerado para lead Edifica Praia Centro (Guarujá) → contato253@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Blue View (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Beta Imóveis Blue (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Região Sul Site (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Sul Blue (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Sol & Mar Digital (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Alpha Imóveis View (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Santos Tower Digital (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mar & Sol Digital (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Ocean Blue Prime (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Litoral Premium Imóveis (Itanhaém)
+
+- 08/07/2026 01:27: agendamento gerado para lead Barra Digital Site (Peruíbe) → contato264@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Beta Imóveis Site (Guarujá) → contato265@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Caiçara Digital View (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Porto da Lua Site (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Alpha Imóveis Centro (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Santos Tower Blue (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Prime Imóveis Digital (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Costa Azul Site (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Site Imóveis (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mar & Sol Site (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Ocean Blue Centro (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Ocean Blue Imóveis (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Imóveis View (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Ocean Blue View (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Blue Site (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Caiçara Digital View (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Porto da Lua Blue (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Blue Blue (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Prime Imóveis Centro (Santos)
+
+- 08/07/2026 01:27: agendamento gerado para lead Recife Imóveis Blue (Mongaguá) → contato283@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Norte Sul Centro (Praia Grande) → contato284@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Costa Azul Digital (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Site Site (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Itanhaém Premium Blue (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Site Litoral (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Edifica Praia Imóveis (Bertioga)
+
+- 08/07/2026 01:27: agendamento gerado para lead Prime Imóveis Litoral (Guarujá) → contato290@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Blue Praia (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Região Sul Litoral (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Recife Imóveis Praia (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Costa do Mar Centro (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Imóveis Prime (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Digital Litoral (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Beta Imóveis Litoral (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Imóveis Site (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Porto da Lua Centro (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Digital View (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Litoral Premium Site (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Costa Verde Digital (Praia Grande)
+
+- 08/07/2026 01:27: agendamento gerado para lead Mar & Sol View (Guarujá) → contato303@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Site View (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Atlântico Imóveis Centro (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Costa Verde Imóveis (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Sul Imóveis Imóveis (Santos)
+
+- 08/07/2026 01:27: agendamento gerado para lead Mar Brasil Digital (Itanhaém) → contato308@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Caiçara Digital Litoral (Mongaguá) → contato309@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Litoral Brasil Prime (Itanhaém) → contato310@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Edifica Praia Prime (Mongaguá)
+
+- 08/07/2026 01:27: agendamento gerado para lead Praia Grande Site Litoral (Santos) → contato312@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Ocean Blue Centro (Peruíbe)
+
+- 08/07/2026 01:27: agendamento gerado para lead Norte Sul Praia (Mongaguá) → contato314@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Realize II Imóveis (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Realize II Site (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Litoral Brasil Prime (Guarujá)
+
+- 08/07/2026 01:27: agendamento gerado para lead Norte Sul Praia (Mongaguá) → contato318@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Mar & Sol Imóveis (Santos) → contato319@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Barra Digital Praia (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Blue Blue (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Realize II Litoral (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Beta Imóveis Site (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Barra Digital Centro (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mar & Sol Site (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Região Sul Digital (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Blue Digital (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Ocean Blue Prime (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Ocean Blue View (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Sul Digital (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Blue Centro (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Edifica Praia Prime (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mar & Sol Centro (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Alpha Imóveis Centro (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Blue Digital (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Edifica Praia Prime (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Região Sul Site (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mar & Sol Site (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Santos Tower Digital (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Santos Tower Site (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Sul Prime (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Site View (Itanhaém)
+
+- 08/07/2026 01:27: agendamento gerado para lead Beta Imóveis Centro (Bertioga) → contato343@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Sul Imóveis (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Blue View (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Beta Imóveis View (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Blue Centro (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mar & Sol Centro (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Prime Imóveis Blue (Bertioga)
+
+- 08/07/2026 01:27: agendamento gerado para lead Costa Verde Litoral (Itanhaém) → contato350@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Blue Centro (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Sul Digital (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mar & Sol Litoral (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Barra Digital Digital (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Realize II Site (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Sol & Mar Prime (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Prime Imóveis Prime (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Beta Imóveis Site (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Site Site (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Alpha Imóveis Site (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Santos Tower Prime (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Blue Tech (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Beta Imóveis Praia (Guarujá)
+
+- 08/07/2026 01:27: agendamento gerado para lead Edifica Praia Litoral (Peruíbe) → contato364@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Site Tech (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Sol & Mar View (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Santos Tower Centro (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Blue Prime (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Sul Digital (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Realize II Blue (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Beta Imóveis View (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mongaguá Imóveis Litoral (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Realize II Tech (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Porto da Lua Praia (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Beta Imóveis Blue (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Caiçara Digital Litoral (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Caiçara Digital Praia (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Prime Imóveis Site (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Ocean Blue Litoral (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Costa Verde Site (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Barra Digital Imóveis (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Barra Digital Imóveis (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Região Sul Centro (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Beta Imóveis Tech (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Vista Mar Litoral (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Vista Mar Litoral (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mar & Sol Tech (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Caiçara Digital Litoral (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Caiçara Digital Praia (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Realize II Blue (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Prime Imóveis Praia (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Sol & Mar Imóveis (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Sol & Mar Blue (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Porto da Lua Litoral (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Sul Praia (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Itanhaém Premium Tech (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Sul Litoral (Itanhaém)
+
+- 08/07/2026 01:27: agendamento gerado para lead Realize II Blue (Mongaguá) → contato398@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Porto da Lua Centro (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Região Sul Prime (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Costa Verde Centro (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Ocean Blue Blue (Bertioga)
+
+- 08/07/2026 01:27: agendamento gerado para lead Itanhaém Premium Prime (São Vicente) → contato403@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Sol & Mar Blue (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Região Sul View (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Região Sul Blue (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mar Brasil Prime (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Barra Digital Imóveis (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Recife Imóveis Prime (Guarujá)
+
+- 08/07/2026 01:27: agendamento gerado para lead Ocean Blue Centro (Peruíbe) → contato410@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Litoral Brasil Praia (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Santos Tower Litoral (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Blue View (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mar & Sol Imóveis (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mar & Sol Blue (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Litoral Premium Imóveis (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Barra Digital Imóveis (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Caiçara Digital Tech (Mongaguá)
+
+- 08/07/2026 01:27: agendamento gerado para lead Edifica Praia View (Itanhaém) → contato419@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Sul Imóveis Site (Guarujá) → contato420@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Blue Prime (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Beta Imóveis Praia (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Região Sul Praia (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mongaguá Imóveis Site (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Ocean Blue Blue (Guarujá)
+
+- 08/07/2026 01:27: agendamento gerado para lead Edifica Praia Blue (São Vicente) → contato426@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Edifica Praia Imóveis (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Edifica Praia Digital (Mongaguá)
+
+- 08/07/2026 01:27: agendamento gerado para lead Mongaguá Imóveis Litoral (São Vicente) → contato429@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Barra Digital Litoral (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Prime Imóveis Praia (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Beta Imóveis Centro (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Caiçara Digital Litoral (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Costa Verde Prime (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Edifica Praia Blue (Bertioga)
+
+- 08/07/2026 01:27: agendamento gerado para lead Caiçara Digital Blue (Itanhaém) → contato436@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Edifica Praia Blue (Mongaguá)
+
+- 08/07/2026 01:27: agendamento gerado para lead Praia Grande Site Blue (Guarujá) → contato438@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Itanhaém Premium Imóveis (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mar & Sol Digital (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Alpha Imóveis Centro (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Santos Tower Prime (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Prime Imóveis Prime (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Costa Verde View (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Região Sul Praia (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Alpha Imóveis Prime (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Santos Tower Centro (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mongaguá Imóveis Tech (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mar & Sol View (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Ocean Blue Prime (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Litoral Premium Praia (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Sul Centro (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Santos Tower Prime (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Região Sul Prime (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Sul Praia (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Costa Verde Tech (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Itanhaém Premium Prime (Guarujá)
+
+- 08/07/2026 01:27: agendamento gerado para lead Mar & Sol Prime (Guarujá) → contato458@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Caiçara Digital Imóveis (São Vicente)
+
+- 08/07/2026 01:27: agendamento gerado para lead Norte Sul Digital (Guarujá) → contato460@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Prime Imóveis Site (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Costa Verde Centro (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Santos Tower Litoral (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Sul Centro (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Site Imóveis (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Itanhaém Premium Blue (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Sol & Mar Digital (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Litoral Premium Tech (Itanhaém)
+
+- 08/07/2026 01:27: agendamento gerado para lead Prime Imóveis Praia (São Vicente) → contato469@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Alpha Imóveis Tech (Bertioga)
+
+- 08/07/2026 01:27: agendamento gerado para lead Sol & Mar Blue (Praia Grande) → contato471@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Alpha Imóveis Site (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Sul Prime (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Litoral Premium Praia (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Porto da Lua Digital (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Santos Tower Site (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Região Sul Imóveis (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Site Site (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Realize II Praia (Bertioga)
+
+- 08/07/2026 01:27: agendamento gerado para lead Ocean Blue Praia (Bertioga) → contato480@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Ocean Blue Centro (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Imóveis Site (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Sul Site (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Alpha Imóveis Digital (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Digital Digital (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Barra Digital Praia (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Vista Mar Digital (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Sol & Mar Blue (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Edifica Praia Litoral (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Costa Azul Blue (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mar & Sol Site (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Sul Litoral (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Barra Digital Tech (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Digital Praia (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Digital Tech (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Sul Litoral (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Edifica Praia Blue (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Região Sul Blue (Peruíbe)
+
+- 08/07/2026 01:27: agendamento gerado para lead Realize II Centro (São Vicente) → contato499@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Costa do Mar Prime (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Sol & Mar Prime (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Costa do Mar Blue (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Edifica Praia Tech (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Prime Imóveis Centro (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Litoral Brasil Prime (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Prime Imóveis View (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Santos Tower Centro (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Barra Digital View (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mongaguá Imóveis Digital (Mongaguá)
+
+- 08/07/2026 01:27: agendamento gerado para lead Mar Brasil Centro (Peruíbe) → contato510@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Litoral Premium Site (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Imóveis Blue (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Itanhaém Premium View (Guarujá)
+
+- 08/07/2026 01:27: agendamento gerado para lead Mongaguá Imóveis Praia (Praia Grande) → contato514@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Norte Sul Prime (Peruíbe) → contato515@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Atlântico Imóveis Centro (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Costa do Mar Digital (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Realize II Site (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Recife Imóveis Blue (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Barra Digital Centro (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Alpha Imóveis Tech (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Alpha Imóveis Blue (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Site View (São Vicente)
+
+- 08/07/2026 01:27: agendamento gerado para lead Caiçara Digital Site (Itanhaém) → contato524@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mar & Sol Tech (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Site Imóveis (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Vista Mar Centro (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Edifica Praia Imóveis (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Prime Imóveis Digital (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Sul Imóveis Digital (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Região Sul Centro (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Barra Digital Litoral (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mar Brasil Digital (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Barra Digital Tech (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Sul Site (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Edifica Praia Imóveis (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Sul Site (Mongaguá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Realize II View (Peruíbe)
+
+- 08/07/2026 01:27: agendamento gerado para lead Riviera Blue Centro (São Vicente) → contato539@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Porto da Lua Tech (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Barra Digital Site (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Sul Imóveis Blue (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Ocean Blue Centro (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Itanhaém Premium View (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Costa do Mar Blue (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mar Brasil Digital (Santos)
+
+- 08/07/2026 01:27: agendamento gerado para lead Edifica Praia Praia (Mongaguá) → contato547@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Realize II Tech (Itanhaém) → contato548@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Costa Azul Prime (Guarujá) → contato549@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Atlântico Imóveis Blue (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Ocean Blue Centro (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Itanhaém Premium Imóveis (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mongaguá Imóveis Site (Guarujá)
+
+- 08/07/2026 01:27: agendamento gerado para lead Ocean Blue View (Mongaguá) → contato554@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Atlântico Imóveis Site (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Realize II Prime (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Itanhaém Premium Site (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Beta Imóveis Site (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Caiçara Digital Site (Itanhaém)
+
+- 08/07/2026 01:27: agendamento gerado para lead Mar Brasil Blue (Peruíbe) → contato560@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Barra Digital Site (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Litoral Blue (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mar & Sol Centro (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Porto da Lua Blue (São Vicente)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Vista Mar Litoral (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Edifica Praia Tech (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Costa Verde Litoral (Praia Grande)
+
+- 08/07/2026 01:27: agendamento gerado para lead Edifica Praia Prime (Praia Grande) → contato568@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mongaguá Imóveis Imóveis (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Site Centro (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Site Prop (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Blue (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Litoral Blue (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Alpha Imóveis Centro (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Praia Grande Site View (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Sol & Mar View (Santos)
+
+- 08/07/2026 01:27: agendamento gerado para lead Costa Azul  Prop (Praia Grande) → contato577@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Edifica Praia Centro (Peruíbe)
+
+- 08/07/2026 01:27: agendamento gerado para lead Porto da Lua Prop (Santos) → contato579@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Mar View (Peruíbe) → contato580@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Edifica Praia Praia (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Litoral Premium Tech (São Vicente)
+
+- 08/07/2026 01:27: agendamento gerado para lead Barra Digital Centro (Bertioga) → contato583@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Blue View (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Vista Mar Prop (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Edifica Praia Centro (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Mar Blue (Guarujá)
+
+- 08/07/2026 01:27: agendamento gerado para lead Costa Azul View (Santos) → contato588@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Vista Mar Litoral (Guarujá) → contato589@exemplo.com
+
+- 08/07/2026 01:27: agendamento gerado para lead Costa Azul Prop (Santos) → contato590@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Atlântico Imóveis Centro (Bertioga)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Edifica Praia Prop (Itanhaém)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Atlântico Imóveis Prime (Guarujá)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Norte Sul Praia (Santos)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Costa Azul  Prime (Peruíbe)
+
+- 08/07/2026 01:27: agendamento gerado para lead Caiçara Digital Praia (Praia Grande) → contato596@exemplo.com
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Riviera Blue Site (Praia Grande)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Litoral Premium Imóveis (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Prime Imóveis Prime (Peruíbe)
+
+- 08/07/2026 01:27: follow-up dirigido para neutro Costa Verde Blue (Peruíbe)
