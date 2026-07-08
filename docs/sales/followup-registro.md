@@ -5492,3 +5492,18 @@
 | 654 | Email | 2026-07-11 | onboarding-day3 | 2026-07-15 | — |
 | 654 | Email | 2026-07-15 | onboarding-day7 | 2026-07-22 | — |
 | 654 | Email | 2026-07-22 | onboarding-day14 | — | — |
+| 168 | Email | 2026-07-08 | outreach CEO Itanhaém | 2026-07-11 | 2026-07-15 |
+| 177 | Email | 2026-07-08 | outreach CEO Guarujá | 2026-07-11 | 2026-07-15 |
+| 178 | Email | 2026-07-08 | outreach CEO Bertioga | 2026-07-11 | 2026-07-15 |
+| 183 | Email | 2026-07-08 | outreach CEO Itanhaém | 2026-07-11 | 2026-07-15 |
+| 187 | Email | 2026-07-08 | outreach CEO Guarujá | 2026-07-11 | 2026-07-15 |
+| 193 | Email | 2026-07-08 | outreach CEO Itanhaém | 2026-07-11 | 2026-07-15 |
+| 202 | Email | 2026-07-08 | outreach CEO Guarujá | 2026-07-11 | 2026-07-15 |
+| 208 | Email | 2026-07-08 | outreach CEO Itanhaém | 2026-07-11 | 2026-07-15 |
+| 217 | Email | 2026-07-08 | outreach CEO Guarujá | 2026-07-11 | 2026-07-15 |
+| 4 | Email | 2026-07-08 | outreach CEO Guarujá | 2026-07-11 | 2026-07-15 |
+| 9 | Email | 2026-07-08 | outreach CEO Santos | 2026-07-11 | 2026-07-15 |
+| 16 | Email | 2026-07-08 | outreach CEO Peruíbe | 2026-07-11 | 2026-07-15 |
+| 28 | Email | 2026-07-08 | outreach CEO Itanhaém | 2026-07-11 | 2026-07-15 |
+| 37 | Email | 2026-07-08 | outreach CEO Santos | 2026-07-11 | 2026-07-15 |
+| 43 | Email | 2026-07-08 | outreach CEO Itanhaém | 2026-07-11 | 2026-07-15 |
