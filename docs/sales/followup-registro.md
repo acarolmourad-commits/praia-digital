@@ -6,3 +6,5 @@
 | 366 | Sol & Mar View | outreach/envio-auto-366.html | outreach/followup-3dias-lead-366.html | outreach/followup-7dias-lead-366.html | enviado |
 
 - 08/07/2026 00:43: envio inicial para lead 51 — Litoral Premium Sant (Santos) → e-mail: contato36@exemplo.com
+
+- 08/07/2026 00:43: envio inicial para lead 66 — Santos Ocean View (Santos) → e-mail: contato66@exemplo.com
