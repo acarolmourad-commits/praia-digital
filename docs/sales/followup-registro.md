@@ -1304,3 +1304,23 @@
 - 08/07/2026 00:58: avanço de negociação para lead 209 — Riviera Elite (Bertioga) | contato_inicial_enviado -> interessado
 
 - 08/07/2026 00:58: avanço de negociação para lead 15 — Prime Imóveis Digital (Guarujá) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:59: avanço de negociação para lead 6 — Beta Imóveis Centro (Santos) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:59: avanço de negociação para lead 10 — Região Sul Praia (Peruíbe) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:59: avanço de negociação para lead 21 — Litoral Norte Premium (Santos) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:59: avanço de negociação para lead 34 — Caiçara Imóveis (Praia Grande) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:59: avanço de negociação para lead 54 — Praia Grande Norte (Praia Grande) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:59: avanço de negociação para lead 59 — Riviera Norte (Bertioga) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:59: avanço de negociação para lead 64 — Caiçara Norte (Praia Grande) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:59: avanço de negociação para lead 74 — Riviera Digital (Bertioga) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:59: avanço de negociação para lead 89 — Caiçara Digital (Praia Grande) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 00:59: avanço de negociação para lead 99 — Riviera Exclusive (Bertioga) | contato_inicial_enviado -> interessado
