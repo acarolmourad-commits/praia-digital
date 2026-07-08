@@ -5152,3 +5152,39 @@
 - 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Ubatuba Elite (Ubatuba)
 
 - 08/07/2026 02:27: [NOVO CICLO] follow-up para neutro Ilhabela Executive (Ilhabela)
+
+- 08/07/2026 02:34: [NOVO CICLO] PARCERIA FECHADA com Peruíbe Blue (Peruíbe) | call_agendada -> parceria_fechada
+
+- 08/07/2026 02:34: [NOVO CICLO] PARCERIA FECHADA com Guarujá Platinum (Guarujá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 02:34: [NOVO CICLO] PARCERIA FECHADA com Itanhaém Premium (Itanhaém) | call_agendada -> parceria_fechada
+
+- 08/07/2026 02:34: [NOVO CICLO] PARCERIA FECHADA com Ilhabela Center (Ilhabela) | call_agendada -> parceria_fechada
+
+- 08/07/2026 02:34: [NOVO CICLO] PARCERIA FECHADA com São Vicente Litoral (São Vicente) | call_agendada -> parceria_fechada
+
+- 08/07/2026 02:34: [NOVO CICLO] PARCERIA FECHADA com Itanhaém Premium (Itanhaém) | call_agendada -> parceria_fechada
+
+- 08/07/2026 02:34: [NOVO CICLO] PARCERIA FECHADA com São Vicente Elite (São Vicente) | call_agendada -> parceria_fechada
+
+- 08/07/2026 02:34: [NOVO CICLO] PARCERIA FECHADA com Mongaguá Connect (Mongaguá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 02:34: [NOVO CICLO] PARCERIA FECHADA com Ubatuba View (Ubatuba) | call_agendada -> parceria_fechada
+
+- 08/07/2026 02:34: [NOVO CICLO] PARCERIA FECHADA com Santos Premium (Santos) | call_agendada -> parceria_fechada
+
+- 08/07/2026 02:34: [NOVO CICLO] PARCERIA FECHADA com São Vicente Litoral (São Vicente) | call_agendada -> parceria_fechada
+
+- 08/07/2026 02:34: [NOVO CICLO] PARCERIA FECHADA com Santos Launch (Santos) | call_agendada -> parceria_fechada
+
+- 08/07/2026 02:34: [NOVO CICLO] PARCERIA FECHADA com São Vicente View (São Vicente) | call_agendada -> parceria_fechada
+
+- 08/07/2026 02:34: [NOVO CICLO] PARCERIA FECHADA com Bertioga Center (Bertioga) | call_agendada -> parceria_fechada
+
+- 08/07/2026 02:34: [NOVO CICLO] PARCERIA FECHADA com Santos Smart (Santos) | call_agendada -> parceria_fechada
+
+- 08/07/2026 02:34: [NOVO CICLO] PARCERIA FECHADA com Guarujá Digital (Guarujá) | call_agendada -> parceria_fechada
+
+- 08/07/2026 02:34: [NOVO CICLO] PARCERIA FECHADA com Praia Grande Tech (Praia Grande) | call_agendada -> parceria_fechada
+
+- 08/07/2026 02:34: [NOVO CICLO] PARCERIA FECHADA com São Vicente Litoral (São Vicente) | call_agendada -> parceria_fechada
