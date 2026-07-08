@@ -1324,3 +1324,11 @@
 - 08/07/2026 00:59: avanço de negociação para lead 89 — Caiçara Digital (Praia Grande) | contato_inicial_enviado -> interessado
 
 - 08/07/2026 00:59: avanço de negociação para lead 99 — Riviera Exclusive (Bertioga) | contato_inicial_enviado -> interessado
+
+- 08/07/2026 01:05: follow-up 7 dias para lead 15 — Prime Imóveis Digital (Guarujá)
+
+- 08/07/2026 01:05: follow-up 7 dias para lead 19 — Litoral Norte Imóveis (Santos)
+
+- 08/07/2026 01:05: follow-up 7 dias para lead 29 — Riviera Imóveis (Bertioga)
+
+- 08/07/2026 01:05: follow-up 7 dias para lead 32 — Boqueirão Imóveis (Santos)
