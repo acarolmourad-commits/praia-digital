@@ -5522,3 +5522,18 @@
 | 22 | Email | 2026-07-08 | outreach CEO Bertioga | 2026-07-11 | 2026-07-15 |
 | 27 | Email | 2026-07-08 | outreach CEO Mongaguá | 2026-07-11 | 2026-07-15 |
 | 36 | Email | 2026-07-08 | outreach CEO Praia Grande | 2026-07-11 | 2026-07-15 |
+| 44 | Email | 2026-07-08 | outreach CEO Itanhaém | 2026-07-11 | 2026-07-15 |
+| 49 | Email | 2026-07-08 | outreach CEO Mongaguá | 2026-07-11 | 2026-07-15 |
+| 57 | Email | 2026-07-08 | outreach CEO Mongaguá | 2026-07-11 | 2026-07-15 |
+| 65 | Email | 2026-07-08 | outreach CEO Peruíbe | 2026-07-11 | 2026-07-15 |
+| 72 | Email | 2026-07-08 | outreach CEO Mongaguá | 2026-07-11 | 2026-07-15 |
+| 82 | Email | 2026-07-08 | outreach CEO Mongaguá | 2026-07-11 | 2026-07-15 |
+| 90 | Email | 2026-07-08 | outreach CEO Peruíbe | 2026-07-11 | 2026-07-15 |
+| 97 | Email | 2026-07-08 | outreach CEO Mongaguá | 2026-07-11 | 2026-07-15 |
+| 107 | Email | 2026-07-08 | outreach CEO Mongaguá | 2026-07-11 | 2026-07-15 |
+| 115 | Email | 2026-07-08 | outreach CEO Peruíbe | 2026-07-11 | 2026-07-15 |
+| 117 | Email | 2026-07-08 | outreach CEO Guarujá | 2026-07-11 | 2026-07-15 |
+| 127 | Email | 2026-07-08 | outreach CEO Mongaguá | 2026-07-11 | 2026-07-15 |
+| 135 | Email | 2026-07-08 | outreach CEO Peruíbe | 2026-07-11 | 2026-07-15 |
+| 147 | Email | 2026-07-08 | outreach CEO Mongaguá | 2026-07-11 | 2026-07-15 |
+| 155 | Email | 2026-07-08 | outreach CEO Peruíbe | 2026-07-11 | 2026-07-15 |
