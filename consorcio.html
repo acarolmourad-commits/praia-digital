@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio Imobiliário e de Automóveis | Praia Digital</title>
+    <meta name="description" content="Descubra como funciona o consórcio imobiliário e de automóveis com a parceria exclusiva Praia Digital + Ademicon. Dicas exclusivas para investidores e corretores.">
+    <meta name="keywords" content="consórcio imobiliário, consórcio de automóveis, Ademicon, como funciona consórcio, investir em consórcio, consórcio para imóveis, consórcio para carros">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0a0f1f 0%, #1a1f3a 50%, #0d1117 100%);
+            color: #e0e6f0;
+            line-height: 1.6;
+        }
+        .navbar {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 1.2rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #00d4ff, #00ff88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+        .nav-links a {
+            color: #a0aec0;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .nav-links a:hover { color: #00d4ff; }
+        .hero {
+            padding: 8rem 2rem 5rem;
+            text-align: center;
+            background: radial-gradient(ellipse at center top, rgba(0, 212, 255, 0.15) 0%, transparent 65%);
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffffff, #00d4ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            color: #a0aec0;
+            max-width: 750px;
+            margin: 0 auto 3rem;
+        }
+        .badge-ademicon {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 193, 7, 0.15);
+            border: 1px solid rgba(255, 193, 7, 0.4);
+            color: #ffc107;
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 2rem;
+        }
+        .section {
+            padding: 5rem 2rem;
+        }
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #00d4ff, #00ff88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-subtitle {
+            text-align: center;
+            color: #a0aec0;
+            max-width: 700px;
+            margin: 0 auto 4rem;
+            font-size: 1.1rem;
+        }
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 2.5rem;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 212, 255, 0.3);
+            box-shadow: 0 20px 50px rgba(0, 212, 255, 0.1);
+        }
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .card h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+        .card p {
+            color: #a0aec0;
+            font-size: 0.95rem;
+        }
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .card ul li {
+            padding: 0.6rem 0;
+            padding-left: 1.8rem;
+            position: relative;
+            color: #a0aec0;
+        }
+        .card ul li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #00d4ff;
+            font-weight: bold;
+        }
+        .feature-box {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.08), rgba(0, 255, 136, 0.08));
+            border: 2px solid rgba(0, 212, 255, 0.2);
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 2rem 0;
+        }
+        .feature-box h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+        }
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .step {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+        }
+        .step-number {
+            background: linear-gradient(135deg, #00d4ff, #00ff88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 3rem;
+            font-weight: 800;
+        }
+        .step h4 {
+            color: #ffffff;
+            margin: 0.8rem 0;
+            font-size: 1.2rem;
+        }
+        .step p {
+            color: #a0aec0;
+            font-size: 0.9rem;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(255, 193, 7, 0.12), rgba(255, 165, 0, 0.08));
+            border-left: 4px solid #ffc107;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2.5rem 0;
+        }
+        .highlight-box h3 {
+            color: #ffc107;
+            margin-bottom: 1rem;
+        }
+        .highlight-box p {
+            color: #e0e6f0;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.15), rgba(0, 255, 136, 0.08));
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            border-radius: 20px;
+            padding: 4rem;
+            text-align: center;
+        }
+        .cta-section h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 1rem;
+        }
+        .cta-section p {
+            color: #a0aec0;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            font-size: 1.1rem;
+        }
+        .btn-primary {
+            display: inline-block;
+            background: linear-gradient(135deg, #00d4ff, #00ff88);
+            color: #0a0f1f;
+            font-weight: 700;
+            padding: 1.2rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+        }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 212, 255, 0.5);
+        }
+        .footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            color: #6a7185;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin: 3rem 0;
+        }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .section-title { font-size: 1.8rem; }
+            .grid-2 { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Praia Digital</div>
+            <div class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="consorcio.html">Consórcio</a>
+                <a href="https://praia.digital">Ferramentas</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="badge-ademicon">★ Parceiro Oficial Ademicon</div>
+        <h1>Consórcio Inteligente<br>para Imóveis e Automóveis</h1>
+        <p>Descubra o método de consórcio que já ajudou milhares de brasileiros a conquistar a casa própria e o carro dos sonhos com planos acessíveis e个人izados.</p>
+        <a href="#contato" class="btn-primary">Simular Meu Consórcio</a>
+    </header>
+
+    <section class="section" id="como-funciona">
+        <div class="container">
+            <h2 class="section-title">Como Funciona o Consórcio</h2>
+            <p class="section-subtitle">Entenda o método passo a passo e descubra por que o consórcio é a opção mais inteligente para planejar grandes aquisições.</p>
+
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Escolha o Plano</h4>
+                    <p>Selecione o valor do crédito e o prazo que melhor se adapta ao seu orçamento mensal.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Forme o Grupo</h4>
+                    <p>Você entra em um grupo fechado de pessoas com o mesmo objetivo, que se ajudam mutuamente.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Contempleções</h4>
+                    <p>A cada mês, membros do grupo são contemplados por sorteio ou lance. Você pode ser um deles!</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h4>Use o Crédito</h4>
+                    <p>Quando contemplado, utilize o valor integral para comprar seu imóvel ou automóvel, sem juros abusivos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Tipos de Consórcio</h2>
+            <p class="section-subtitle">Oferecemos soluções completas para diferentes necessidades, sempre com a segurança da Ademicon.</p>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🏠</div>
+                    <h3>Consórcio Imobiliário</h3>
+                    <p>Ideal para quem quer comprar a casa própria, investir em imóveis para aluguel ou adquirir um terreno para construir. Valor do crédito de R$ 80 mil a R$ 1 milhão+.</p>
+                    <ul>
+                        <li>Prazos de 120 a 200 meses</li>
+                        <li>Taxas administrativas competitivas</li>
+                        <li>Contemplação por sorteio ou lance</li>
+                        <li>Use para imóvel novo, usado ou construção</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🚗</div>
+                    <h3>Consórcio de Automóveis</h3>
+                    <p>Perfeito para adquirir seu carro novo ou seminovo com planejamento. Valor do crédito de R$ 30 mil a R$ 300 mil.</p>
+                    <ul>
+                        <li>Prazos de 60 a 120 meses</li>
+                        <li>Sem entrada obrigatória</li>
+                        <li>Menor custo total do que financiamento</li>
+                        <li>Contemplação com taxa administrativa reduzida</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⭐</div>
+                    <h3>Vantagens Exclusivas</h3>
+                    <p>Por que escolher o consórcio em vez de financiamento tradicional?</p>
+                    <ul>
+                        <li>Sem juros — taxa administrativa fixa</li>
+                        <li>Contemplação garantida no prazo</li>
+                        <li>Poder de compra à vista</li>
+                        <li>Planejamento financeiro previsível</li>
+                        <li>Segurança da Ademicon, referência nacional</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: rgba(255, 255, 255, 0.01);">
+        <div class="container">
+            <div class="feature-box">
+                <h3>💡 Dicas para Investidores Inteligentes</h3>
+                <p>Maximize seus resultados com estratégias validadas por quem já conquistou grandes projetos através do consórcio.</p>
+                <div class="grid-2">
+                    <div>
+                        <h4 style="color: #00d4ff; margin: 1rem 0 0.5rem;">🎯 Estratégia 1: Lance Estratégico</h4>
+                        <p style="color: #a0aec0; font-size: 0.95rem;">Ofereça lances nos primeiros meses quando a concorrência é menor. Com 20-30% do valor do crédito, você pode ser contemplado muito antes do sorteio.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #00d4ff; margin: 1rem 0 0.5rem;">📈 Estratégia 2: Portfólio Diversificado</h4>
+                        <p style="color: #a0aec0; font-size: 0.95rem;">Use o consórcio como ferramenta de construção de patrimônio. Compre imóveis para alugar por temporada no litoral e gere renda passiva imediata.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #00d4ff; margin: 1rem 0 0.5rem;">🔒 Estratégia 3: Blindagem Patrimonial</h4>
+                        <p style="color: #a0aec0; font-size: 0.95rem;">Diferente de financiamento, o consórcio não compromete renda futura com juros compostos. Você sabe exatamente o valor total a pagar desde o início.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #00d4ff; margin: 1rem 0 0.5rem;">💼 Estratégia 4: Uso Empresarial</h4>
+                        <p style="color: #a0aec0; font-size: 0.95rem;">Empresas podem usar consórcio para frota de veículos, investimento em imóveis comerciais ou expansão de negócios com custo previsível.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Simulação Real</h2>
+            <p class="section-subtitle">Veja quanto você pode economizar com o consórcio em comparação com financiamento tradicional.</p>
+
+            <div class="highlight-box">
+                <h3>📊 Exemplo Prático: Consórcio vs. Financiamento</h3>
+                <p><strong>Credito de R$ 200.000</strong> — <strong>Prazo: 120 meses</strong></p>
+                <ul style="color: #e0e6f0; margin-top: 1rem; margin-bottom: 1rem;">
+                    <li>✅ <strong>Consórcio com Ademicon:</strong> Taxa administrativa de ~1,5% ao ano = Custo total aproximado de R$ 15.000</li>
+                    <li>❌ <strong>Financiamento tradicional:</strong> Juros de 0,8% ao mês + amortização = Custo total acima de R$ 80.000</li>
+                </ul>
+                <p style="font-size: 1.2rem; color: #ffc107; font-weight: 700;">Economia estimada: R$ 65.000 ou mais!</p>
+            </div>
+
+            <div class="cards-grid" style="margin-top: 3rem;">
+                <div class="card">
+                    <div class="card-icon">🏆</div>
+                    <h3>Para o Corretor de Imóveis</h3>
+                    <p>Ofereça consórcio como alternativa de financiamento para seus clientes e aumente suas vendas. Comissões atrativas e suporte completo da Ademicon.</p>
+                    <ul>
+                        <li>Comissão por indicação ou venda</li>
+                        <li>Material de apoio profissional</li>
+                        <li>Treinamento gratuito sobre consórcio</li>
+                        <li>Diferencial competitivo frente à concorrência</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💎</div>
+                    <h3>Para o Investidor Pessoal</h3>
+                    <p>Planeje a aquisição do seu imóvel na praia ou do carro novo sem pagar juros abusivos. Comece agora e concretize seu objetivo no menor prazo possível.</p>
+                    <ul>
+                        <li>Sem entrada obrigatória</li>
+                        <li>Taxa administrativa fixa e transparente</li>
+                        <li>Contemplação garantida no prazo</li>
+                        <li>Saque do FGTS permitido</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏢</div>
+                    <h3>Para Construtoras e Imobiliárias</h3>
+                    <p>Use o consórcio como forma de vender seus empreendimentos. Parceria white-label com a Ademicon e tecnologia própria da Praia Digital.</p>
+                    <ul>
+                        <li>Mais uma opção de financiamento</li>
+                        <li>Vendas garantidas com contemplação</li>
+                        <li>Relatórios automáticos</li>
+                        <li>Integração com nosso sistema imobiliário</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="por-que-escolher">
+        <div class="container">
+            <h2 class="section-title">Por Que Escolher a Praia Digital + Ademicon</h2>
+            <p class="section-subtitle">A combinação da melhor tecnologia imobiliária do litoral paulista com a instituição de consórcio mais confiável do Brasil.</p>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🤝</div>
+                    <h3>Parceria Exclusiva</h3>
+                    <p>Somos parceiros oficiais da Ademicon, referência nacional em consórcios há mais de 25 anos. Você tem a segurança de uma marca líder com a agilidade da tecnologia digital.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📱</div>
+                    <h3>Gestão Digital</h3>
+                    <p>Acompanhe seu consórcio pelo nosso portal digital. Acompanhe lances, sorteios, contemplações e documentos em tempo real, sem burocracia.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎓</div>
+                    <h3>Educ Financeira</h3>
+                    <p>Oferecemos conteúdo gratuito sobre investimentos, consórcio e planejamento financeiro para você tomar as melhores decisões.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="faq">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <p class="section-subtitle">Esclareça suas principais dúvidas sobre o consórcio imobiliário e de automóveis.</p>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>É seguro?</h3>
+                    <p>Sim. O consórcio é regulamentado pelo Banco Central do Brasil e a Ademicon é uma das administradoras com melhor reputação do mercado, com mais de 25 anos de história e milhares de grupos ativos.</p>
+                </div>
+                <div class="card">
+                    <h3>Preciso dar entrada?</h3>
+                    <p>Não. No consórcio não existe entrada obrigatória. Você pode usar o FGTS para complementar o lance ou dar entrada no imóvel quando for contemplado.</p>
+                </div>
+                <div class="card">
+                    <h3>Quando posso ser contemplado?</h3>
+                    <p>Você pode ser contemplado por sorteio a qualquer momento ou oferecendo lance (geralmente a partir de 20-30% do valor do crédito). Tem taxas de contemplação superiores a 90% em até 24 meses.</p>
+                </div>
+                <div class="card">
+                    <h3>Posso usar o FGTS?</h3>
+                    <p>Sim! O FGTS pode ser usado para complementar lances, dar entrada no imóvel ou até quitar o consórcio antecipadamente, dependendo do plano.</p>
+                </div>
+                <div class="card">
+                    <h3>O que acontece se eu desistir?</h3>
+                    <p>Você pode desistir a qualquer momento e recebe de volta todo o valor pago, atualizado com as regras do grupo. Sem multas ou perdas significativas.</p>
+                </div>
+                <div class="card">
+                    <h3>Como funciona a taxa?</h3>
+                    <p>A taxa administrativa cobre toda a gestão do grupo, sorteios, emissão de contratos e suporte. É muito menor do que os juros de um financiamento e está claramente especificada no contrato.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contato">
+        <div class="container">
+            <div class="cta-section">
+                <h2>Pronto para Começar?</h2>
+                <p>Simule seu consórcio gratuitamente e descubra quanto você pode economizar. Nossa equipe está pronta para ajudar você a escolher o melhor plano.</p>
+                <a href="mailto:comercial@praia.digital?subject=Simulação%20de%20Consórcio" class="btn-primary">Simular Agora — Grátis</a>
+                <p style="margin-top: 1.5rem; font-size: 0.9rem;">📞 (11) 95434-6288 | comercial@praia.digital</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 Praia Digital — Proptech do Litoral Paulista | Parceiro Oficial Ademicon</p>
+        <p style="margin-top: 0.5rem;">
+            <a href="index.html" style="color: #a0aec0; text-decoration: none;">Início</a> |
+            <a href="https://praia.digital" style="color: #a0aec0; text-decoration: none;">Ferramentas Gratuitas</a> |
+            <a href="mailto:comercial@praia.digital" style="color: #a0aec0; text-decoration: none;">Contato</a>
+        </p>
+    </footer>
+</body>
+</html>
