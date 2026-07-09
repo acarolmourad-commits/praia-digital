@@ -6945,3 +6945,48 @@
 - Lead 555 | Atlântico Imóveis Site | Guarujá | Paulo Araújo | servico: fotografia profissional + edicao profissional | followup_72h: 09/07/2026 | followup_7d: 2026-07-09 14:46:29.460113
 - Lead 260 | Santos Tower Digital | São Vicente | Carlos Barros | servico: fotografia profissional + edicao profissional | followup_72h: 09/07/2026 | followup_7d: 2026-07-09 14:46:29.460113
 - Lead 263 | Litoral Premium Imóveis | Itanhaém | Luciana Gomes | servico: fotografia profissional + edicao profissional | followup_72h: 09/07/2026 | followup_7d: 2026-07-09 14:46:29.460113
+
+## Lote Foto/Edicao Batch 2 e 3 — 2026-07-09
+
+### batch2
+- Lead 347 | Riviera Blue Centro | Praia Grande | Larissa Souza | servico: fotografia profissional + edicao profissional
+- Lead 412 | Santos Tower Litoral | Peruíbe | Juliana Pereira | servico: fotografia profissional + edicao profissional
+- Lead 478 | Praia Grande Site Site | Praia Grande | Ricardo Costa | servico: fotografia profissional + edicao profissional
+- Lead 494 | Praia Digital Praia | Guarujá | Thiago Lima | servico: fotografia profissional + edicao profissional
+- Lead 236 | Praia Grande Site Digital | Guarujá | Patrícia Gomes | servico: fotografia profissional + edicao profissional
+- Lead 384 | Beta Imóveis Tech | Guarujá | Carlos Lima | servico: fotografia profissional + edicao profissional
+- Lead 501 | Sol & Mar Prime | Guarujá | Paulo Cardoso | servico: fotografia profissional + edicao profissional
+- Lead 529 | Prime Imóveis Digital | Guarujá | Felipe Moreira | servico: fotografia profissional + edicao profissional
+- Lead 225 | Sol & Mar Blue | Santos | Maria Barros | servico: fotografia profissional + edicao profissional
+- Lead 257 | Norte Sul Blue | Praia Grande | Carlos Nunes | servico: fotografia profissional + edicao profissional
+- Lead 288 | Praia Grande Site Litoral | Guarujá | Fernanda Costa | servico: fotografia profissional + edicao profissional
+- Lead 563 | Mar & Sol Centro | Guarujá | Patrícia Rocha | servico: fotografia profissional + edicao profissional
+- Lead 582 | Litoral Premium Tech | São Vicente | Vanessa Dias | servico: fotografia profissional + edicao profissional
+- Lead 342 | Praia Grande Site View | Itanhaém | Ricardo Nunes | servico: fotografia profissional + edicao profissional
+- Lead 488 | Sol & Mar Blue | São Vicente | Patrícia Lima | servico: fotografia profissional + edicao profissional
+- Lead 251 | Norte Sul Prime | Praia Grande | Luciana Souza | servico: fotografia profissional + edicao profissional
+- Lead 267 | Porto da Lua Site | São Vicente | Maria Rocha | servico: fotografia profissional + edicao profissional
+- Lead 409 | Recife Imóveis Prime | Guarujá | Fernanda Mendes | servico: fotografia profissional + edicao profissional
+- Lead 487 | Vista Mar Digital | Itanhaém | Mariana Rocha | servico: fotografia profissional + edicao profissional
+- Lead 489 | Edifica Praia Litoral | Peruíbe | Felipe Ferreira | servico: fotografia profissional + edicao profissional
+### batch3
+- Lead 354 | Barra Digital Digital | São Vicente | Luciana Costa | servico: fotografia profissional + edicao profissional
+- Lead 355 | Realize II Site | Peruíbe | Luciana Barros | servico: fotografia profissional + edicao profissional
+- Lead 286 | Praia Grande Site Site | São Vicente | Marcelo Pereira | servico: fotografia profissional + edicao profissional
+- Lead 295 | Norte Imóveis Prime | Bertioga | Ricardo Lima | servico: fotografia profissional + edicao profissional
+- Lead 387 | Mar & Sol Tech | Santos | Carlos Lopes | servico: fotografia profissional + edicao profissional
+- Lead 272 | Praia Grande Site Imóveis | Peruíbe | Ricardo Gomes | servico: fotografia profissional + edicao profissional
+- Lead 315 | Realize II Imóveis | Santos | Patrícia Alves | servico: fotografia profissional + edicao profissional
+- Lead 326 | Região Sul Digital | São Vicente | João Lima | servico: fotografia profissional + edicao profissional
+- Lead 340 | Santos Tower Site | Bertioga | Ana Barros | servico: fotografia profissional + edicao profissional
+- Lead 433 | Caiçara Digital Litoral | Mongaguá | Juliana Gomes | servico: fotografia profissional + edicao profissional
+- Lead 492 | Norte Sul Litoral | Guarujá | Bianca Rocha | servico: fotografia profissional + edicao profissional
+- Lead 538 | Realize II View | Peruíbe | Thiago Souza | servico: fotografia profissional + edicao profissional
+- Lead 256 | Região Sul Site | Peruíbe | João Costa | servico: fotografia profissional + edicao profissional
+- Lead 305 | Atlântico Imóveis Centro | Santos | Luciana Souza | servico: fotografia profissional + edicao profissional
+- Lead 339 | Santos Tower Digital | Guarujá | Maria Barros | servico: fotografia profissional + edicao profissional
+- Lead 345 | Riviera Blue View | Santos | Ricardo Silva | servico: fotografia profissional + edicao profissional
+- Lead 533 | Mar Brasil Digital | Peruíbe | Amanda Nunes | servico: fotografia profissional + edicao profissional
+- Lead 244 | Riviera Blue Blue | Praia Grande | Luciana Gomes | servico: fotografia profissional + edicao profissional
+- Lead 455 | Norte Sul Praia | Itanhaém | Luciana Souza | servico: fotografia profissional + edicao profissional
+- Lead 274 | Ocean Blue Centro | Peruíbe | João Lima | servico: fotografia profissional + edicao profissional
