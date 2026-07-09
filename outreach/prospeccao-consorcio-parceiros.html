@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Prospecção Consórcio Ademicon | Praia Digital</title>
+  <style>
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f0f4f8; padding: 2rem; }
+    .email-box { max-width: 700px; margin: 0 auto; background: #fff; padding: 3rem; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
+    h2 { color: #0a0f1f; margin-bottom: 1.5rem; }
+    .field { margin-bottom: 1.25rem; }
+    .field label { display: block; font-weight: 600; color: #333; margin-bottom: 0.35rem; font-size: 0.9rem; }
+    .field input, .field select, .field textarea { width: 100%; padding: 0.85rem; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 0.95rem; }
+    .btn { background: linear-gradient(135deg,#00d4ff,#00ff88); color: #0a0f1f; font-weight: 700; padding: 1rem 2.5rem; border-radius: 50px; border: none; cursor: pointer; font-size: 1rem; }
+    .copy { background: #f5f5f5; padding: 1rem; border-radius: 8px; font-size: 0.85rem; color: #555; margin-top: 0.5rem; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <div class="email-box">
+    <h2>Prospecção: Consórcio para Parceiros</h2>
+    <div class="field">
+      <label>Nome do Lead</label>
+      <input id="leadName" placeholder="Ex: João da Imobiliária Costa">
+    </div>
+    <div class="field">
+      <label>Imobiliária / Empresa</label>
+      <input id="leadCompany" placeholder="Ex: Costa Imóveis Santos">
+    </div>
+    <div class="field">
+      <label>Cidade</label>
+      <input id="leadCity" placeholder="Ex: Santos">
+    </div>
+    <div class="field">
+      <label>Canal de Envio</label>
+      <select id="channel">
+        <option value="email">E-mail</option>
+        <option value="whatsapp">WhatsApp</option>
+      </select>
+    </div>
+    <button class="btn" onclick="gerar()">Gerar Prospecção Personalizada</button>
+    <div id="out"></div>
+  </div>
+
+  <script>
+    function gerar() {
+      const nome = document.getElementById('leadName').value || '[Nome]';
+      const empresa = document.getElementById('leadCompany').value || '[Imobiliária]';
+      const cidade = document.getElementById('leadCity').value || '[Cidade]';
+      const canal = document.getElementById('channel').value;
+      const assunto = 'Parceria Consórcio Ademicon + Praia Digital';
+      const corpo = `Olá,\n\nMe chamo Carolina Moura, CEO da Praia Digital.\n\nTemos uma oferta de parceria exclusiva para ${empresa} (${cidade}):\n\n✅ Consórcio imobiliário e de automóveis com a Ademicon\n✅ Comissão por indicação sem custo de adesão\n✅ Suporte completo e material profissional\n✅ Acesso a ferramentas de IA e prospecção gratuita\n\nOferecemos mais uma opção de pagamento para seus clientes — sem juros abusivos e com taxa administrativa transparente.\n\nAcesso gratuito às nossas ferramentas: https://praia.digital\n\nConheça nosso site: https://acarolmourad-commits.github.io/praia-digital/\n\nPodemos marcar uma call de 15 minutos para apresentar o modelo?\n\nAtt, Carolina Moura\nCEO Praia Digital\nWhatsApp: (11) 95434-6288\nE-mail: comercial@praia.digital`;
+      document.getElementById('out').innerHTML = '<p style="margin-top:2rem;font-weight:700;color:#333;">Assunto: ' + assunto + '</p>' +
+        '<div class="copy" id="bodyField">' + corpo.replace(/\n/g,'<br>') + '</div>' +
+        '<p style="margin-top:1rem;font-size:0.9rem;color:#555;">Copie e envie pelo canal selecionado. Use dados reais para aumentar a conversão.</p>';
+    }
+  </script>
+</body>
+</html>
