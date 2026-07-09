@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filmes, Séries e Vídeos sobre Imóveis e Corretagem | Praia Digital</title>
+  <meta name="description" content="Lista curada de filmes, séries, noticiários e vídeos sobre corretagem, locação, avaliação de imóveis e investimento imobiliário. Conteúdo para estudos e inspiração.">
+  <meta name="keywords" content="filmes sobre imóveis, séries de corretagem, filmes de imobiliária, vídeos para corretores, educação imobiliária, avaliação de imóveis, locação, filmes sobre investimento, cursos imobiliários youtube">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #0a0f1f; color: #e0e6f0; line-height: 1.7; }
+    .navbar {
+      background: rgba(255,255,255,0.03);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding: 1.2rem 0;
+      position: sticky; top: 0; z-index: 1000;
+    }
+    .nav-container {
+      max-width: 1300px; margin: 0 auto; padding: 0 2rem;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .logo { font-size: 1.6rem; font-weight: 800; background: linear-gradient(135deg,#00d4ff,#00ff88); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .nav-links a { color: #a0aec0; text-decoration: none; margin-left: 2rem; font-weight: 500; transition: all 0.3s; }
+    .nav-links a:hover { color: #00d4ff; }
+
+    .hero {
+      padding: 7rem 2rem 4rem;
+      text-align: center;
+      background: radial-gradient(ellipse at center top, rgba(0,212,255,0.15) 0%, transparent 65%);
+    }
+    .hero h1 { font-size: 3rem; font-weight: 800; background: linear-gradient(135deg,#fff,#00d4ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem; }
+    .hero p { color: #a0aec0; max-width: 700px; margin: 0 auto 2.5rem; font-size: 1.15rem; }
+
+    .section { padding: 4rem 2rem; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    .section-title { font-size: 2.2rem; font-weight: 800; margin-bottom: 1rem; background: linear-gradient(135deg,#00d4ff,#00ff88); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .section-subtitle { color: #a0aec0; max-width: 650px; margin: 0 auto 3rem; }
+
+    .media-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap: 1.75rem; }
+    .media-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      padding: 2rem;
+      transition: all 0.3s;
+    }
+    .media-card:hover { transform: translateY(-6px); border-color: rgba(0,212,255,0.3); box-shadow: 0 20px 50px rgba(0,212,255,0.08); }
+    .media-badge { display: inline-block; padding: 0.35rem 0.9rem; border-radius: 50px; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.4px; margin-bottom: 1rem; }
+    .badge-film { background: rgba(255,193,7,0.15); color: #ffc107; border: 1px solid rgba(255,193,7,0.3); }
+    .badge-series { background: rgba(0,212,255,0.15); color: #00d4ff; border: 1px solid rgba(0,212,255,0.3); }
+    .badge-news { background: rgba(0,255,136,0.15); color: #00ff88; border: 1px solid rgba(0,255,136,0.3); }
+    .badge-video { background: rgba(168,85,247,0.15); color: #a855f7; border: 1px solid rgba(168,85,247,0.3); }
+    .badge-podcast { background: rgba(255,99,71,0.15); color: #ff6347; border: 1px solid rgba(255,99,71,0.3); }
+    .media-card h3 { color: #fff; margin-bottom: 0.75rem; font-size: 1.25rem; }
+    .media-card .meta { color: #8892a4; font-size: 0.85rem; margin-bottom: 0.75rem; }
+    .media-card p { color: #a0aec0; font-size: 0.92rem; }
+    .media-card .tag-list { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1rem; }
+    .tag { background: rgba(255,255,255,0.06); color: #8892a4; padding: 0.25rem 0.65rem; border-radius: 50px; font-size: 0.75rem; }
+    .badge-rated { background: linear-gradient(135deg,#ffc107,#ff8c00); color: #0a0f1f; padding: 0.35rem 0.9rem; border-radius: 50px; font-size: 0.8rem; font-weight: 800; }
+
+    .highlight-box {
+      background: linear-gradient(135deg, rgba(0,212,255,0.08), rgba(0,255,136,0.08));
+      border: 2px solid rgba(0,212,255,0.2);
+      border-radius: 20px;
+      padding: 2.5rem;
+      margin: 2.5rem 0;
+    }
+    .highlight-box h3 { color: #fff; margin-bottom: 1rem; font-size: 1.5rem; }
+    .highlight-box ul { list-style: none; }
+    .highlight-box ul li { padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: #cbd5e0; }
+    .highlight-box ul li::before { content: "▹"; position: absolute; left: 0; color: #00d4ff; font-weight: bold; }
+
+    .study-path { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 2.5rem; margin: 3rem 0; }
+    .study-path h3 { color: #fff; margin-bottom: 1.25rem; }
+    .study-path ul { list-style: none; }
+    .study-path ul li { padding: 0.6rem 0; padding-left: 1.5rem; position: relative; color: #a0aec0; }
+    .study-path ul li::before { content: "→"; position: absolute; left: 0; color: #00ff88; }
+
+    .cta-section {
+      background: linear-gradient(135deg, rgba(0,212,255,0.15), rgba(0,255,136,0.08));
+      border: 1px solid rgba(0,212,255,0.2);
+      border-radius: 20px;
+      padding: 3.5rem;
+      text-align: center;
+      margin: 4rem 0;
+    }
+    .cta-section h2 { font-size: 2.2rem; font-weight: 800; color: #fff; margin-bottom: 1rem; }
+    .cta-section p { color: #a0aec0; max-width: 600px; margin: 0 auto 2rem; }
+    .btn-primary {
+      display: inline-block;
+      background: linear-gradient(135deg,#00d4ff,#00ff88);
+      color: #0a0f1f;
+      font-weight: 700;
+      padding: 1.1rem 2.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s;
+      box-shadow: 0 10px 30px rgba(0,212,255,0.3);
+    }
+    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(0,212,255,0.5); }
+
+    footer { text-align: center; padding: 3rem 2rem; color: #6a7185; font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.05); margin-top: 4rem; }
+    footer a { color: #a0aec0; text-decoration: none; margin: 0 0.8rem; }
+    footer a:hover { color: #00d4ff; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .section-title { font-size: 1.7rem; }
+      .media-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Praia Digital</div>
+      <div class="nav-links">
+        <a href="index.html">Início</a>
+        <a href="consorcio.html">Consórcio</a>
+        <a href="https://praia.digital">Ferramentas</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>📽️ Filmes, Séries e Vídeos sobre Imóveis</h1>
+    <p>Lista curada com produções sobre corretagem, locação, avaliação de imóveis, investimento imobiliário e conteúdo para estudos.</p>
+    <a href="#estoque" class="btn-primary">Ver Lista Completa</a>
+  </header>
+
+  <section class="section" id="filmes">
+    <div class="container">
+      <h2 class="section-title">🎬 Filmes</h2>
+      <p class="section-subtitle">Produções que ajudam a entender avaliações, risco de crédito, negociação e tomada de decisão no mercado imobiliário e financeiro.</p>
+
+      <div class="media-grid">
+        <div class="media-card">
+          <span class="media-badge badge-film">Filme</span>
+          <span class="badge-rated">⭐ 8.3/10</span>
+          <h3>The Big Short (A Grande Aposta)</h3>
+          <div class="meta">2015 | Direção: Adam McKay | Duração: 2h 11min</div>
+          <p>Baseado em fatos reais sobre a crise de 2008. Mostra como avaliações erradas de imóveis, títulos lastreados e risco sistêmico podem destruir mercados. Essencial para entender por que avaliação de imóveis e análise de crédito são fundamentais em corretagem.</p>
+          <div class="tag-list"><span class="tag">avaliação</span><span class="tag">crédito</span><span class="tag">mercado</span><span class="tag">risco</span></div>
+        </div>
+
+        <div class="media-card">
+          <span class="media-badge badge-film">Filme</span>
+          <span class="badge-rated">⭐ 7.6/10</span>
+          <h3>Margin Call (2011)</h3>
+          <div class="meta">2011 | Direção: J.C. Chandor | Duração: 1h 49min</div>
+          <p>Um drama corporativo sobre uma corretora em crise. Mostra a pressão por resultados, a importância da transparência e os dilemas éticos na venda de produtos financeiros. Útil para refletir sobre ética em corretagem de imóveis.</p>
+          <div class="tag-list"><span class="tag">ética</span><span class="tag">vendas</span><span class="tag">negociação</span><span class="tag">finanças</span></div>
+        </div>
+
+        <div class="media-card">
+          <span class="media-badge badge-film">Filme</span>
+          <span class="badge-rated">⭐ 7.1/10</span>
+          <h3>The Founder (O Fundador)</h3>
+          <div class="meta">2016 | Direção: John Lee Hancock | Duração: 1h 55min</div>
+          <p>História da criação do McDonald's. Não é sobre imóveis, mas ilustra como franquear/expandir um modelo de negócio, importância de localização (_location is everything_) e contratos. Excelente para corretores que trabalham com lançamentos e expansão de redes.</p>
+          <div class="tag-list"><span class="tag">expansão</span><span class="tag">localização</span><span class="tag">franquia</span><span class="tag">modelo</span></div>
+        </div>
+
+        <div class="media-card">
+          <span class="media-badge badge-film">Filme</span>
+          <span class="badge-rated">⭐ 8.4/10</span>
+          <h3>Fromeira de Elite (2019)</h3>
+          <div class="meta">2019 | Brasil | Duração: 1h 43min</div>
+          <p>Comédia brasileira sobre um corretor de imóveis de praia que tenta dar um golpe. Mostra as particularidades do mercado imobiliário de veraneio, os tipos de clientes e os riscos de negócios não transparentes. Muito útil para entender o lado humano do corretor no litoral.</p>
+          <div class="tag-list"><span class="tag">litoral</span><span class="tag">humor</span><span class="tag">negociação</span><span class="tag">ética</span></div>
+        </div>
+
+        <div class="media-card">
+          <span class="media-badge badge-film">Filme</span>
+          <span class="badge-rated">⭐ 8.8/10</span>
+          <h3>Wall Street (1987)</h3>
+          <div class="meta">1987 | Direção: Oliver Stone | Duração: 2h 6min</div>
+          <p>Clássico sobre finanças e especulação. Ajuda a entender como funciona o mercado de capitais, valuation e a linha tênue entre legítimo investimento e golpe. Corretores de imóveis de alto padrão se identificam com a pressão por fechar negócios.</p>
+          <div class="tag-list"><span class="tag">finanças</span><span class="tag">valuation</span><span class="tag">ética</span><span class="tag">negociação</span></div>
+        </div>
+
+        <div class="media-card">
+          <span class="media-badge badge-film">Filme</span>
+          <span class="badge-rated">⭐ 7.5/10</span>
+          <h3>BlacKkKlansman (2018)</h3>
+          <div class="meta">2018 | Direção: Spike Lee | Duração: 2h 15min</div>
+          <p>Embora não seja sobre imóveis diretamente, ensina como investigar fraudes, construir casos e negociar sob pressão. Útil para corretores que trabalham com due diligence, averiguação de documentos e investigação de pendências imobiliárias.</p>
+          <div class="tag-list"><span class="tag">investigação</span><span class="tag">documentação</span><span class="tag">due diligence</span><span class="tag">estratégia</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: rgba(255,255,255,0.02);">
+    <div class="container">
+      <h2 class="section-title">📺 Séries e Reality Shows</h2>
+      <p class="section-subtitle">Programas que retratam o dia a dia da corretagem, técnicas de venda e o mercado de imóveis de luxo e popular.</p>
+
+      <div class="media-grid">
+        <div class="media-card">
+          <span class="media-badge badge-series">Série</span>
+          <span class="badge-rated">⭐ 7.2/10</span>
+          <h3>Selling Sunset (Netflix)</h3>
+          <div class="meta">2019– | 7 temporadas | Los Angeles</div>
+          <p>Corretores de luxo da Oppenheim Group vendem mansões milionárias em Hollywood. Ensina técnicas de negociação, apresentação de imóveis de alto padrão, gestão de clientes exigentes e marketing pessoal. Perfeito para corretores que querem atuar no segmento premium.</p>
+          <div class="tag-list"><span class="tag">luxo</span><span class="tag">negociação</span><span class="tag">marketing</span><span class="tag">atendimento</span></div>
+        </div>
+
+        <div class="media-card">
+          <span class="media-badge badge-series">Série</span>
+          <span class="badge-rated">⭐ 8.1/10</span>
+          <h3>Million Dollar Listing (Bravo/Netflix)</h3>
+          <div class="meta">2006– | 14 temporadas | Nova York / Los Angeles</div>
+          <p>Um dos programas de corretagem mais antigos e respeitados. Mostra estratégias de visitação, como lidar com objeções, precificação, staging e fechamento. Ryan Serhant é referência em produtividade e vendas no mercado imobiliário americano.</p>
+          <div class="tag-list"><span class="tag">vendas</span><span class="tag">precificação</span><span class="tag">visitação</span><span class="tag">liderança</span></div>
+        </div>
+
+        <div class="media-card">
+          <span class="media-badge badge-series">Série</span>
+          <span class="badge-rated">⭐ 7.8/10</span>
+          <h3>Property Brothers (HGTV/Netflix)</h3>
+          <div class="meta">2011– | 10+ temporadas | Canadá</div>
+          <p>Irmãos gêmeos: um é corretor, outro é construtor. Mostram valuation, reformas que agregam valor, negociação de compra e venda, e como transformar um imóvel depreciado em um produto vendável. Ideal para corretores que também trabalham com reformas ou lançamentos.</p>
+          <div class="tag-list"><span class="tag">reforma</span><span class="tag">valuation</span><span class="tag">compra</span><span class="tag">venda</span></div>
+        </div>
+
+        <div class="media-card">
+          <span class="media-badge badge-series">Série</span>
+          <span class="badge-rated">⭐ 7.4/10</span>
+          <h3>House Hunters (HGTV)</h3>
+          <div class="meta">1999– | 190+ episódios | EUA</div>
+          <p>Episódios curtos mostram compradores buscando imóveis. Excelente para entender o que realmente importa para o comprador, como fazer discovery, apresentar diferenciais e conduzir uma visita. Episódios de "House Hunters International" tratam de imóveis no litoral e exterior.</p>
+          <div class="tag-list"><span class="tag">compra</span><span class="tag">visitação</span><span class="tag">cliente</span><span class="tag">descoberta</span></div>
+        </div>
+
+        <div class="media-card">
+          <span class="media-badge badge-series">Série</span>
+          <span class="badge-rated">⭐ 7.9/10</span>
+          <h3>Billions (Showtime/Amazon Prime)</h3>
+          <div class="meta">2016–2023 | 7 temporadas | EUA</div>
+          <p>Embora seja sobre fundos de investimento, ensina sobre valuation de ativos, due diligence, negociação complexa, gestão de risco e tomada de decisão sob pressão. Útil para corretores de imóveis de alto padrão e investidores imobiliários.</p>
+          <div class="tag-list"><span class="tag">investimento</span><span class="tag">valuation</span><span class="tag">risco</span><span class="tag">negociação</span></div>
+        </div>
+
+        <div class="media-card">
+          <span class="media-badge badge-series">Série</span>
+          <span class="badge-rated">⭐ 8.0/10</span>
+          <h3>Shark Tank (EUA / Brasil)</h3>
+          <div class="meta">2009– | EUA / 2016– | Brasil</div>
+          <p>Investidores avaliam startups e produtos. Ensina como apresentar um negócio, calcular valuation, responder perguntas duras e fechar parcerias. Para corretores, é um estudo de caso sobre como avaliar oportunidades de investimento e persuasive pitch.</p>
+          <div class="tag-list"><span class="tag">pitch</span><span class="tag">avaliação</span><span class="tag">investimento</span><span class="tag">vendas</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="noticiarios">
+    <div class="container">
+      <h2 class="section-title">📰 Noticiários, Podcasts e Canais</h2>
+      <p class="section-subtitle">Fontes confiáveis para acompanhar o mercado imobiliário, legislação, economia e tendências do setor.</p>
+
+      <div class="media-grid">
+        <div class="media-card">
+          <span class="media-badge badge-news">Noticiário</span>
+          <h3>Valor Econômico</h3>
+          <div class="meta">Site e jornal impresso | Diário</div>
+          <p>Referência brasileira em economia e negócios. Traz dados sobre lançamentos, vendas, FGTS, juros, construtoras e tendências do mercado imobiliário. As matérias sobre crédito e taxa de juros impactam diretamente a demanda por imóveis.</p>
+          <div class="tag-list"><span class="tag">economia</span><span class="tag">lançamentos</span><span class="tag">juros</span><span class="tag">construção</span></div>
+        </div>
+
+        <div class="media-card">
+          <span class="media-badge badge-news">Noticiário</span>
+          <h3>Folha de S.Paulo — Mercado Imobiliário</h3>
+          <div class="meta">Site e jornal | Diário</div>
+          <p>Seção especializada com reportagens sobre compra, venda, locação, mercado popular, médio e alto padrão. Traz dados de ITBI, cartórios, construtoras e comportamento do consumidor. Essencial para quem quer entender o cenário macro.</p>
+          <div class="tag-list"><span class="tag">cenário</span><span class="tag">comportamento</span><span class="tag">compra</span><span class="tag">locação</span></div>
+        </div>
+
+        <div class="media-card">
+          <span class="media-badge badge-news">Noticiário</span>
+          <h3>Exame — Negócios e Futuro</h3>
+          <div class="meta">Revista e site | Mensal</div>
+          <p>Edições especiais sobre inovação, proptech, construção civil e investimentos. Perfeito para corretores que querem se atualizar sobre tendências tecnológicas no setor. As matérias sobre proptech ajudam a diferenciar seu atendimento.</p>
+          <div class="tag-list"><span class="tag">inovação</span><span class="tag">proptech</span><span class="tag">tendências</span><span class="tag">tecnologia</span></div>
+        </div>
+
+        <div class="media-card">
+          <span class="media-badge badge-podcast">Podcast</span>
+          <h3>Imobiliário na Prática</h3>
+          <div class="meta">YouTube / Spotify | Episódios semanais</div>
+          <p>Podcast brasileiro focado em gestão de imobiliárias, prospecção, captação de imóveis, avaliação e fechamento de vendas. Ideal para corretores que querem conteúdo aplicável e direto ao ponto.</p>
+          <div class="tag-list"><span class="tag">gestão</span><span class="tag">prospecção</span><span class="tag">captação</span><span class="tag">vendas</span></div>
+        </div>
+
+        <div class="media-card">
+          <span class="media-badge badge-podcast">Podcast</span>
+          <h3>Construtoras e Imóveis</h3>
+          <div class="meta">YouTube | Entrevistas quinzenais</div>
+          <p>Entrevistas com dirigentes de construtoras, especialistas em direito imobiliário, economistas e investidores. Aborda lançamentos, financiamento, Minha Casa Minha Vida e mercado regional. Útil para entender a visão da oferta.</p>
+          <div class="tag-list"><span class="tag">construtoras</span><span class="tag">lançamentos</span><span class="tag">MCMV</span><span class="tag">financiamento</span></div>
+        </div>
+
+        <div class="media-card">
+          <span class="media-badge badge-podcast">Podcast</span>
+          <h3>Mercado Imobiliário Futuro</h3>
+          <div class="meta">Spotify | Episódios mensais</div>
+          <p>Focado em tendências de longo prazo: proptech, sustentabilidade, cidades inteligentes, novas formas de morar e trabalhar. Perfeito para corretores que querem se antecipar às mudanças do mercado nos próximos 5 anos.</p>
+          <div class="tag-list"><span class="tag">tendências</span><span class="tag">futuro</span><span class="tag">proptech</span><span class="tag">sustentabilidade</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="estudos">
+    <div class="container">
+      <h2 class="section-title">📚 Vídeos e Canais para Estudos</h2>
+      <p class="section-subtitle">Conteúdo gratuito no YouTube e plataformas para estudar avaliação, corretagem, legislação e vendas.</p>
+
+      <div class="study-path">
+        <h3>🎓 Trilha de Estudos Recomendada</h3>
+        <ul>
+          <li><strong>Iniciante:</strong> Canal "Corretor de Imóveis 360" — vídeos básicos sobre profissão, CRECI, atendimento e prospecção.</li>
+          <li><strong>Avaliação:</strong> Canal "Engenharia de Avaliações" — ensina métodos de avaliação, laudos e fatores de mercado.</li>
+          <li><strong>Investimento:</strong> Canal "Clube do Pouco" — conteúdo sobre viver de aluguel, locação, ROI e estratégias de compra.</li>
+          <li><strong>Legislação:</strong> Canal "Direito Imobiliário na Prática" — vídeos sobre contratos, usucapião, direito de superfície, venda de imóvel.</li>
+          <li><strong>Tecnologia:</strong> Canal "Proptech Brasil" — ferramentas digitais, automação, IA, marketing para imobiliárias.</li>
+          <li><strong>Negociação:</strong> Canal "Técnicas de Vendas" — gatilhos mentais, objeções, fechamento, atendimento de alto padrão.</li>
+          <li><strong>Locação:</strong> Canal "Aluguel na Prática" — dicas para inquilinos e proprietários, contratos, reajuste, depósito e direitos.</li>
+        </ul>
+      </div>
+
+      <div class="highlight-box">
+        <h3>💡 Dica de Ouro da Praia Digital</h3>
+        <p>Assista a um episódio por dia do <strong>Imobiliário na Prática</strong> ou <strong>Million Dollar Listing</strong> enquanto toma café. Em 30 dias, você terá absorvido mais de 30 técnicas e cases aplicáveis à sua rotina.</p>
+        <ul>
+          <li>Dedique 30 minutos diários a conteúdo especializado</li>
+          <li>Anote 3 Insights por episódio</li>
+          <li>Aplique 1 técnica por semana na sua imobiliária ou carteira</li>
+          <li>Compartilhe aprendizados em suas redes sociais para atrair clientes</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: rgba(255,255,255,0.02);">
+    <div class="container">
+      <h2 class="section-title">🧭 Por Que Estudar por Mídia?</h2>
+      <p class="section-subtitle">Assistir produções sobre o mercado imobiliário não é apenas entretenimento — é educação aplicada.</p>
+
+      <div class="media-grid">
+        <div class="media-card">
+          <span class="media-badge badge-video">Benefício</span>
+          <h3>Visão de Mercado</h3>
+          <p>Filmes e séries mostram como grandes operadores pensam, negociam e avaliam risco. Você aprende padrões de mercado antes que eles cheguem ao Brasil.</p>
+        </div>
+        <div class="media-card">
+          <span class="media-badge badge-video">Benefício</span>
+          <h3>Técnicas de Vendas</h3>
+          <p>Séries como Million Dollar Listing e Selling Sunset são aulas práticas de apresentação, follow-up, objeção e fechamento.</p>
+        </div>
+        <div class="media-card">
+          <span class="media-badge badge-video">Benefício</span>
+          <h3>Educação Continuada</h3>
+          <p>Podcasts e canais do YouTube permitem estudar no trânsito, na academia ou nos intervalos. São fontes de atualização constante sem custo.</p>
+        </div>
+        <div class="media-card">
+          <span class="media-badge badge-video">Benefício</span>
+          <h3>Inspiração</h3>
+          <p>Ver cases de sucesso motiva a manter a disciplina, aumentar o padrão de atendimento e crescer profissionalmente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="cta">
+    <div class="container">
+      <div class="cta-section">
+        <h2>Quer Aprender na Prática?</h2>
+        <p>Acesse nossas ferramentas gratuitas e estude aplicando na realidade do litoral paulista.</p>
+        <a href="https://praia.digital" class="btn-primary">Acessar Ferramentas Gratuitas</a>
+        <p style="margin-top:1.5rem;font-size:0.9rem;">📞 (11) 95434-6288 | comercial@praia.digital</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Praia Digital — Conteúdo educativo para corretores e investidores do litoral.</p>
+    <p style="margin-top:0.5rem;">
+      <a href="index.html">Início</a> |
+      <a href="consorcio.html">Consórcio</a> |
+      <a href="https://praia.digital">Ferramentas</a> |
+      <a href="mailto:comercial@praia.digital">Contato</a>
+    </p>
+  </footer>
+
+</body>
+</html>
