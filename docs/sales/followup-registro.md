@@ -6904,3 +6904,31 @@
 - 08/07/2026 08:00: automação diária — 0 fu3d, 0 fu7d, 0 alertas
 
 - 09/07/2026 08:00: automação diária — 0 fu3d, 0 fu7d, 0 alertas
+
+## Lote Consórcio 20 leads — 2026-07-09
+
+- Lead 6 | Beta Imóveis Centro | Santos | Fernanda Nunes | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 15 | Prime Imóveis Digital | Guarujá | Ricardo Lima | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 21 | Litoral Norte Imóveis | Santos | Mariana Costa | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 34 | Caiçara Imóveis | Praia Grande | Luciana Souza | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 54 | Praia Grande Norte | Praia Grande | Fernanda Lima | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 59 | Riviera Norte | Bertioga | Mariana Costa | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 83 | Itanhaém Norte | Itanhaém | Thiago Lima | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 92 | Guarujá Blue Tech | Guarujá | Igor Barros | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 98 | Itanhaém Premium | Itanhaém | Fábio Souza | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 102 | Guarujá Premium | Guarujá | Leonardo Azevedo | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 106 | Peruíbe Eco | Peruíbe | Thiago Rocha | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 111 | Gonzaga Digital | Santos | Patrícia Ribeiro | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 119 | Praia Grande Smart | Praia Grande | Fernanda Rocha | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 122 | Guarujá Conecta | Guarujá | Thiago Almeida | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 128 | Itanhaém Surf | Itanhaém | Gustavo Costa | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 139 | Praia Grande Relax | Praia Grande | Carla Nunes | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 142 | Guarujá Executive | Guarujá | Marina Costa | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 148 | Itanhaém Executive | Itanhaém | Larissa Barros | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 156 | Santos Vision | Santos | Juliano Mendes | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 162 | Guarujá Coast Imóveis | Guarujá | André Luiz | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 168 | Itanhaém Premium | Itanhaém | Fábio Souza | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 177 | Guarujá Launch | Guarujá | Thiago Barros | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 187 | Guarujá Platinum | Guarujá | Marina Costa | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 193 | Itanhaém Platinum | Itanhaém | Larissa Barros | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+- Lead 202 | Guarujá Elite | Guarujá | Fábio Rocha | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
