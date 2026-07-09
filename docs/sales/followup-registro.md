@@ -6932,3 +6932,16 @@
 - Lead 187 | Guarujá Platinum | Guarujá | Marina Costa | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
 - Lead 193 | Itanhaém Platinum | Itanhaém | Larissa Barros | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
 - Lead 202 | Guarujá Elite | Guarujá | Fábio Rocha | enviado | followup_72h: 12/07/2026 | followup_7d: 16/07/2026
+
+## Lote Foto/Edicao 10 leads — 2026-07-09
+
+- Lead 229 | Porto da Lua Prime | Itanhaém | Ricardo Gomes | servico: fotografia profissional + edicao profissional | followup_72h: 09/07/2026 | followup_7d: 2026-07-09 14:46:29.460113
+- Lead 280 | Porto da Lua Blue | Itanhaém | Ana Pereira | servico: fotografia profissional + edicao profissional | followup_72h: 09/07/2026 | followup_7d: 2026-07-09 14:46:29.460113
+- Lead 306 | Costa Verde Imóveis | Guarujá | Larissa Lopes | servico: fotografia profissional + edicao profissional | followup_72h: 09/07/2026 | followup_7d: 2026-07-09 14:46:29.460113
+- Lead 352 | Norte Sul Digital | Praia Grande | Maria Costa | servico: fotografia profissional + edicao profissional | followup_72h: 09/07/2026 | followup_7d: 2026-07-09 14:46:29.460113
+- Lead 475 | Porto da Lua Digital | Guarujá | Paulo Ferreira | servico: fotografia profissional + edicao profissional | followup_72h: 09/07/2026 | followup_7d: 2026-07-09 14:46:29.460113
+- Lead 545 | Costa do Mar Blue | Peruíbe | Patrícia Cardoso | servico: fotografia profissional + edicao profissional | followup_72h: 09/07/2026 | followup_7d: 2026-07-09 14:46:29.460113
+- Lead 528 | Edifica Praia Imóveis | Guarujá | Bianca Alves | servico: fotografia profissional + edicao profissional | followup_72h: 09/07/2026 | followup_7d: 2026-07-09 14:46:29.460113
+- Lead 555 | Atlântico Imóveis Site | Guarujá | Paulo Araújo | servico: fotografia profissional + edicao profissional | followup_72h: 09/07/2026 | followup_7d: 2026-07-09 14:46:29.460113
+- Lead 260 | Santos Tower Digital | São Vicente | Carlos Barros | servico: fotografia profissional + edicao profissional | followup_72h: 09/07/2026 | followup_7d: 2026-07-09 14:46:29.460113
+- Lead 263 | Litoral Premium Imóveis | Itanhaém | Luciana Gomes | servico: fotografia profissional + edicao profissional | followup_72h: 09/07/2026 | followup_7d: 2026-07-09 14:46:29.460113
