@@ -5534,6 +5534,26 @@ window.addEventListener('hashchange', handleHash);
 handleHash();
 </script>
 
+<div id="praia-highlights" style="position:fixed;bottom:5.5rem;right:1.5rem;z-index:997;width:260px;background:#fff;border-radius:14px;box-shadow:0 6px 28px rgba(0,0,0,.18);border:2px solid #00B4D8;padding:.9rem;display:none">
+  <div style="font-weight:700;color:#023047;margin-bottom:.4rem">🚀 O que você quer agora?</div>
+  <a href="/praia-digital/cases.html" target="_blank" style="display:block;padding:.4rem .6rem;margin:.25rem 0;background:#f4fbfd;border-radius:10px;color:#0077B6;text-decoration:none;font-weight:600">📊 Ver cases e resultados</a>
+  <a href="/praia-digital/planos-assinatura.html" target="_blank" style="display:block;padding:.4rem .6rem;margin:.25rem 0;background:#fff7ed;border-radius:10px;color:#F97316;text-decoration:none;font-weight:600">💼 Conhecer planos</a>
+  <a href="https://praia.digital" target="_blank" style="display:block;padding:.4rem .6rem;margin:.25rem 0;background:#f3e8ff;border-radius:10px;color:#6B21A8;text-decoration:none;font-weight:600">🧰 Ferramentas gratuitas</a>
+  <button id="close-highlights" style="margin-top:.4rem;width:100%;background:#023047;color:#fff;border:none;padding:.4rem;border-radius:10px;cursor:pointer;font-weight:600">Fechar</button>
+</div>
+
+<script>
+(function(){
+  const box=document.getElementById('praia-highlights');if(!box)return;
+  const openBtn=document.createElement('button');openBtn.innerHTML='➕';
+  Object.assign(openBtn.style,{position:'fixed',bottom:'8.8rem',right:'1.35rem',zIndex:'999',width:'42px',height:'42px',borderRadius:'50%',background:'linear-gradient(135deg,#0077B6,#00B4D8)',color:'#fff',border:'none',cursor:'pointer',fontSize:'1.1rem',boxShadow:'0 4px 18px rgba(0,119,182,.35)'});
+  document.body.appendChild(openBtn);
+  const close=document.getElementById('close-highlights');
+  const toggle=()=>{const v=box.style.display==='block';box.style.display=v?'none':'block';openBtn.style.display=v?'block':'none';};
+  openBtn.addEventListener('click',toggle);close.addEventListener('click',toggle);
+})();
+</script>
+
 <a href="https://wa.me/5511954346288?text=Olá! Gostaria de saber mais sobre os imóveis da Praia Digital." target="_blank" class="whatsapp-float" title="Fale conosco pelo WhatsApp">💬</a>
 <script src="assets/whatsapp-float-cta.html"></script>
 <script src="assets/popup-captura-leads.html"></script>
