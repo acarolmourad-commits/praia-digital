@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel de Prospecção — Praia Digital</title>
+  <style>
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f4f7fb; color: #1a2332; padding: 2rem; }
+    .box { max-width: 1200px; margin: 0 auto; }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .subtitle { color: #666; margin-bottom: 2rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px,1fr)); gap: 1.5rem; }
+    .card { background: #fff; padding: 1.75rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+    .card h3 { margin: 0 0 0.5rem; font-size: 1.15rem; }
+    .meta { color: #666; font-size: 0.85rem; margin-bottom: 0.75rem; }
+    .badge { display: inline-block; background: linear-gradient(135deg,#00d4ff,#00ff88); color:#0a0f1f; padding:0.35rem 0.9rem; border-radius: 50px; font-weight: 700; font-size: 0.78rem; margin-bottom: 0.75rem; }
+    .link { display: inline-block; color: #00a8cc; text-decoration: none; font-weight: 600; }
+    .link:hover { text-decoration: underline; }
+    .highlight { background: linear-gradient(135deg,rgba(0,212,255,0.08),rgba(0,255,136,0.08)); border: 2px solid rgba(0,212,255,0.2); border-radius: 16px; padding: 1.5rem; margin: 2rem 0; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>📊 Painel de Prospecção — Próximos 7 Dias</h1>
+    <p class="subtitle">Acompanhe os lotes prontos para envio e os follow-ups automáticos.</p>
+
+    <div class="highlight">
+      <strong>🎯 Objetivo:</strong> fechar pelo menos 3 vendas/parcerias em 7 dias.<br>
+      <strong>📅 Hoje:</strong> <span id="today"></span><br>
+      <strong>📦 Total de CSVs prontos:</strong> 6 lotes<br>
+      <strong>📝 Roteiro de follow-up telefônico:</strong> <a class="link" href="outreach/roteiro-followup-telefonico.html">abrir</a>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="badge">Dia 1</div>
+        <h3>Captação — 15 leads</h3>
+        <div class="meta">CSV + follow-ups 72h/7d prontos</div>
+        <a class="link" href="csv-lotes-email/lote-captacao-15leads-20260709.csv">Baixar CSV</a>
+      </div>
+
+      <div class="card">
+        <div class="badge">Dia 1</div>
+        <h3>Mini Site — 12 leads</h3>
+        <div class="meta">CSV + follow-ups 72h/7d prontos</div>
+        <a class="link" href="csv-lotes-email/lote-mini-site-12leads-20260709.csv">Baixar CSV</a>
+      </div>
+
+      <div class="card">
+        <div class="badge">Dia 3</div>
+        <h3>Foto/Edição Batch2 — 20 leads</h3>
+        <div class="meta">CSV + follow-ups 72h/7d prontos</div>
+        <a class="link" href="csv-lotes-email/lote-fotoedicao-batch2-20leads-20260709.csv">Baixar CSV</a>
+      </div>
+
+      <div class="card">
+        <div class="badge">Dia 3</div>
+        <h3>Foto/Edição Batch3 — 20 leads</h3>
+        <div class="meta">CSV + follow-ups 72h/7d prontos</div>
+        <a class="link" href="csv-lotes-email/lote-fotoedicao-batch3-20leads-20260709.csv">Baixar CSV</a>
+      </div>
+
+      <div class="card">
+        <div class="badge">Dia 5</div>
+        <h3>Pacote Completo — 10 leads</h3>
+        <div class="meta">CSV prontos para envio</div>
+        <a class="link" href="csv-lotes-email/lote-pacote-completo-10leads-20260709.csv">Baixar CSV</a>
+      </div>
+
+      <div class="card">
+        <div class="badge">Automático</div>
+        <h3>Lote Diário — 20 leads</h3>
+        <div class="meta">Gerado por script em <code>scripts/gerar_lote_diario.py</code></div>
+        <a class="link" href="csv-lotes-email/lote-automatico-20260709.csv">Baixar CSV</a>
+      </div>
+    </div>
+
+    <div class="highlight">
+      <strong>✅ Próxima ação:</strong> enviar hoje o lote de captação e mini site pelo Brevo.<br>
+      <strong>📞 Suporte:</strong> (11) 95434-6288 | comercial@praia.digital
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('today').textContent = new Date().toLocaleDateString('pt-BR');
+  </script>
+</body>
+</html>
