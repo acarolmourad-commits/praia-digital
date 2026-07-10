@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fotografia e Edição Profissional para Imobiliárias | Praia Digital</title>
+  <meta name="description" content="Serviço de fotografia e edição profissional para imobiliárias e corretores. Aumente suas vendas em até 3x com imagens profissionais. Entrega em 48h.">
+  <meta name="keywords" content="fotografia imóveis, edição fotos imóveis, fotografia profissional imobiliária, edição profissional imóveis, fotos para anúncios imobiliários, fotógrafo imobiliário">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', 'Segoe UI', system-ui, sans-serif; background: #0a0f1f; color: #e0e6f0; line-height: 1.7; }
+    .navbar {
+      background: rgba(255,255,255,0.03);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding: 1.2rem 0;
+      position: sticky; top: 0; z-index: 1000;
+    }
+    .nav-container {
+      max-width: 1300px; margin: 0 auto; padding: 0 2rem;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .logo { font-size: 1.6rem; font-weight: 800; background: linear-gradient(135deg,#00d4ff,#00ff88); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .nav-links a { color: #a0aec0; text-decoration: none; margin-left: 2rem; font-weight: 500; transition: all 0.3s; }
+    .nav-links a:hover { color: #00d4ff; }
+
+    .hero {
+      padding: 8rem 2rem 5rem;
+      text-align: center;
+      background: radial-gradient(ellipse at center top, rgba(0,212,255,0.15) 0%, transparent 65%);
+    }
+    .hero h1 { font-size: 3.5rem; font-weight: 800; background: linear-gradient(135deg,#fff,#00d4ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1.5rem; line-height: 1.1; }
+    .hero p { font-size: 1.25rem; color: #a0aec0; max-width: 750px; margin: 0 auto 3rem; }
+    .badge { display: inline-flex; align-items: center; background: rgba(255,193,7,0.15); border: 1px solid rgba(255,193,7,0.4); color: #ffc107; padding: 0.6rem 1.5rem; border-radius: 50px; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 2rem; }
+    .section { padding: 5rem 2rem; }
+    .container { max-width: 1300px; margin: 0 auto; }
+    .section-title { font-size: 2.5rem; font-weight: 800; text-align: center; margin-bottom: 1rem; background: linear-gradient(135deg,#00d4ff,#00ff88); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .section-subtitle { text-align: center; color: #a0aec0; max-width: 700px; margin: 0 auto 4rem; font-size: 1.1rem; }
+
+    .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap: 2rem; }
+    .card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 2.5rem;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s;
+    }
+    .card:hover { transform: translateY(-5px); border-color: rgba(0,212,255,0.3); box-shadow: 0 20px 50px rgba(0,212,255,0.1); }
+    .card-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+    .card h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; color: #ffffff; }
+    .card p, .card ul li { color: #a0aec0; font-size: 0.95rem; }
+    .card ul { list-style: none; padding-left: 0; }
+    .card ul li { padding: 0.6rem 0; padding-left: 1.8rem; position: relative; }
+    .card ul li::before { content: "▹"; position: absolute; left: 0; color: #00d4ff; font-weight: bold; }
+
+    .highlight-box {
+      background: linear-gradient(135deg, rgba(0,212,255,0.08), rgba(0,255,136,0.08));
+      border: 2px solid rgba(0,212,255,0.2);
+      border-radius: 20px;
+      padding: 3rem;
+      margin: 2.5rem 0;
+    }
+    .highlight-box h3 { font-size: 2rem; margin-bottom: 1.5rem; color: #ffffff; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap: 2rem; margin: 2rem 0; }
+
+    .cta-section {
+      background: linear-gradient(135deg, rgba(0,212,255,0.15), rgba(0,255,136,0.08));
+      border: 1px solid rgba(0,212,255,0.2);
+      border-radius: 20px;
+      padding: 4rem;
+      text-align: center;
+    }
+    .cta-section h2 { font-size: 2.5rem; font-weight: 800; color: #ffffff; margin-bottom: 1rem; }
+    .cta-section p { color: #a0aec0; max-width: 600px; margin: 0 auto 2rem; font-size: 1.1rem; }
+    .btn-primary {
+      display: inline-block;
+      background: linear-gradient(135deg,#00d4ff,#00ff88);
+      color: #0a0f1f;
+      font-weight: 700;
+      padding: 1.2rem 2.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s;
+      box-shadow: 0 10px 30px rgba(0,212,255,0.3);
+    }
+    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(0,212,255,0.5); }
+    .footer { text-align: center; padding: 3rem 2rem; color: #6a7185; font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.05); }
+    .footer a { color: #a0aec0; text-decoration: none; margin: 0 0.8rem; }
+    .footer a:hover { color: #00d4ff; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .section-title { font-size: 1.8rem; }
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Praia Digital</div>
+      <div class="nav-links">
+        <a href="index.html">Início</a>
+        <a href="consorcio.html">Consórcio</a>
+        <a href="https://praia.digital">Ferramentas</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="badge">⭐ Serviço Premium para Imobiliárias</div>
+    <h1>Fotografia e Edição Profissional<br>para Imóveis</h1>
+    <p>Imóveis com fotos profissionais recebem até 3x mais contatos e vendem até 2x mais rápido. Entregamos em 48h.</p>
+    <a href="#contato" class="btn-primary">Solicitar Orçamento Grátis</a>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">O que está incluso</h2>
+      <p class="section-subtitle">Serviço completo para deixar seus anúncios imobiliários irresistíveis.</p>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">📸</div>
+          <h3>Ensaio Fotográfico</h3>
+          <p>Até 10 fotos profissionais por imóvel, com iluminação e angles que valorizam cada ambiente.</p>
+          <ul>
+            <li>Fotos de todos os cômodos</li>
+            <li>Ângulos estratégicos</li>
+            <li>Luz natural + equipamento profissional</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎨</div>
+          <h3>Edição Avançada</h3>
+          <p>Correção de luz, cor, remoção de imperfeições e otimização para portais e redes sociais.</p>
+          <ul>
+            <li>Remoção de objetos distrativos</li>
+            <li>Correção de perspectiva</li>
+            <li>Padronização de estilo</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-icon">📱</div>
+          <h3>Formatos Otimizados</h3>
+          <p>Fotos prontas para portais, Instagram, WhatsApp, site e e-mail marketing.</p>
+          <ul>
+            <li>Resolução ideal para cada plataforma</li>
+            <li> compressão sem perda de qualidade</li>
+            <li>Prontas para publicar</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3>Entrega em 48h</h3>
+          <p>Receba tudo pronto para usar em até 2 dias úteis. Sem dor de cabeça, sem atrasos.</p>
+          <ul>
+            <li>Prazo garantido</li>
+            <li>Entrega digital</li>
+            <li>Revisão inclusa</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: rgba(255,255,255,0.02);">
+    <div class="container">
+      <h2 class="section-title">Resultados Comprovados</h2>
+      <p class="section-subtitle">Imóveis com fotos profissionais geram mais interesse e vendem mais rápido.</p>
+
+      <div class="highlight-box">
+        <h3>📊 Dados que comprovam</h3>
+        <div class="grid-2">
+          <div>
+            <h4 style="color:#00d4ff; margin:1rem 0 0.5rem;">+3x mais contatos</h4>
+            <p style="color:#a0aec0; font-size:0.95rem;">Imóveis com fotos profissionais recebem até 3 vezes mais mensagens e ligações.</p>
+          </div>
+          <div>
+            <h4 style="color:#00d4ff; margin:1rem 0 0.5rem;">+2x vendas mais rápido</h4>
+            <p style="color:#a0aec0; font-size:0.95rem;">Anúncios com fotos editadas fecham até 2 vezes mais rápido que anúncios com fotos amadoras.</p>
+          </div>
+          <div>
+            <h4 style="color:#00d4ff; margin:1rem 0 0.5rem;">40% mais tempo no site</h4>
+            <p style="color:#a0aec0; font-size:0.95rem;">Visitantes passam 40% mais tempo na página quando há fotos profissionais.</p>
+          </div>
+          <div>
+            <h4 style="color:#00d4ff; margin:1rem 0 0.5rem;">95% de aprovação</h4>
+            <p style="color:#a0aec0; font-size:0.95rem;">Clientes aprovam as fotos editadas na primeira entrega em 95% dos casos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="modelo">
+    <div class="container">
+      <h2 class="section-title">Modelo de Atendimento</h2>
+      <p class="section-subtitle">Escolha o modelo que melhor se adapta à sua imobiliária.</p>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">🏠</div>
+          <h3>Por Imóvel</h3>
+          <p>Ideal para imobiliárias com volume médio. Pague apenas pelos imóveis que quer destacar.</p>
+          <ul>
+            <li>A partir de R$ 150/imóvel</li>
+            <li>Até 10 fotos editadas</li>
+            <li>Entrega em 48h</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-icon">📦</div>
+          <h3>Pacote Mensal</h3>
+          <p>Para imobiliárias com alto volume de lançamentos e captações. Melhor custo-benefício.</p>
+          <ul>
+            <li>20 fotos editadas/mês</li>
+            <li>Até 5 imóveis/mês</li>
+            <li>Entrega prioritária</li>
+            <li>Desconto de 30%</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏆</div>
+          <h3>Pacote Premium</h3>
+          <p>Para imobiliárias de alto padrão. Inclui vídeo profissional + fotografia.</p>
+          <ul>
+            <li>10 fotos + vídeo/imóvel</li>
+            <li>Edição avançada</li>
+            <li>Entrega em 24h</li>
+            <li>Consultoria de apresentação</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: rgba(255,255,255,0.02);">
+    <div class="container">
+      <h2 class="section-title">Como Funciona</h2>
+      <p class="section-subtitle">Processo simples e rápido, sem complicações.</p>
+
+      <div class="cards-grid">
+        <div class="card">
+          <h3>1. Solicite o orçamento</h3>
+          <p>Preencha o formulário ou envie WhatsApp com a quantidade de imóveis e o modelo desejado.</p>
+        </div>
+        <div class="card">
+          <h3>2. Agende a filmagem/fotografia</h3>
+          <p>Defina data e horário. Nossa equipe vai até o imóvel ou você envia as fotos brutas para edição.</p>
+        </div>
+        <div class="card">
+          <h3>3. Receba em 48h</h3>
+          <p>Entregamos tudo editado e otimizado para publicação. Aprovação em 24h.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contato">
+    <div class="container">
+      <div class="cta-section">
+        <h2>Pronto para Aumentar suas Vendas?</h2>
+        <p>Solicite um orçamento gratuito e sem compromisso. Descubra como fotos profissionais podem transformar seus resultados.</p>
+        <a href="mailto:comercial@praia.digital?subject=Orçamento%20Fotografia%20Imóveis" class="btn-primary">Solicitar Orçamento Grátis</a>
+        <p style="margin-top:1.5rem;font-size:0.9rem;">📞 (11) 95434-6288 | comercial@praia.digital</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Praia Digital — Fotografia e Edição Profissional para Imobiliárias</p>
+    <p style="margin-top:0.5rem;">
+      <a href="index.html">Início</a> |
+      <a href="consorcio.html">Consórcio</a> |
+      <a href="https://praia.digital">Ferramentas</a> |
+      <a href="mailto:comercial@praia.digital">Contato</a>
+    </p>
+  </footer>
+
+  <script>
+    // Scroll suave para links internos
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
