@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação rápida de imóvel grátis | Praia Digital</title>
+    <meta name="description" content="Consulte a faixa de preço de um imóvel no litoral paulista em segundos e receba análise gratuita.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+      .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+      .badge { display: inline-block; padding: .35rem .6rem; border-radius: 999px; background: #e7f5ff; color: #1864ab; font-weight: 600; font-size: .85rem; }
+      .result { margin-top: 1.2rem; padding: 1rem; border-radius: .5rem; background: #f1f3f5; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin-top: 1rem; }
+      label { display: block; margin-bottom: .35rem; font-weight: 600; }
+      input, select { width: 100%; padding: .55rem .6rem; border-radius: .4rem; border: 1px solid #ced4da; }
+      .actions { margin-top: 1rem; display: flex; gap: .6rem; flex-wrap: wrap; }
+      button { padding: .65rem .9rem; border-radius: .4rem; border: 0; background: #1864ab; color: white; font-weight: 600; cursor: pointer; }
+      button.secondary { background: #868e96; }
+      footer { margin-top: 2rem; font-size: .85rem; color: #495057; text-align: center; }
+      .lead { margin-top: 1.2rem; padding: 1rem; border-radius: .5rem; background: #fff4e6; border: 1px solid #ffa94d; }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <span class="badge">Ferramenta gratuita</span>
+      <h1>Avaliação rápida de imóvel no litoral paulista</h1>
+      <p>Informe os dados abaixo para obter uma faixa estimada e receber análise personalizada por e-mail.</p>
+
+      <form id="form">
+        <div class="grid">
+          <div>
+            <label for="tipo">Tipo</label>
+            <select id="tipo" required>
+              <option value="">Selecione</option>
+              <option>Apartamento</option>
+              <option>Casa</option>
+              <option>Cobertura</option>
+              <option>Condomínio</option>
+            </select>
+          </div>
+          <div>
+            <label for="cidade">Cidade/Bairro</label>
+            <select id="cidade" required>
+              <option value="">Selecione</option>
+              <option>Porto da Lua</option>
+              <option>Praia Grande</option>
+              <option>Costa Verde</option>
+              <option>Ilha Bela</option>
+              <option>Ubatuba</option>
+              <option>Caraguatatuba</option>
+            </select>
+          </div>
+          <div>
+            <label for="area">Área útil (m²)</label>
+            <input type="number" id="area" min="20" max="2000" placeholder="Ex: 75" required>
+          </div>
+          <div>
+            <label for="quartos">Quartos</label>
+            <input type="number" id="quartos" min="0" max="10" placeholder="Ex: 2" required>
+          </div>
+          <div>
+            <label for="vagas">Vagas</label>
+            <input type="number" id="vagas" min="0" max="10" placeholder="Ex: 1" required>
+          </div>
+          <div>
+            <label for="estado">Estado do imóvel</label>
+            <select id="estado" required>
+              <option value="">Selecione</option>
+              <option>Novo / Na planta</option>
+              <option>Usado / Conservado</option>
+              <option>Reforma necessária</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="lead">
+          <label for="nome">Seu nome</label>
+          <input type="text" id="nome" placeholder="Como devemos te chamar?" required>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="voce@email.com" required>
+          <label for="telefone">Telefone/WhatsApp</label>
+          <input type="tel" id="telefone" placeholder="(11) 90000-0000" required>
+        </div>
+
+        <div class="actions">
+          <button type="submit">Obter faixa estimada</button>
+          <button type="button" class="secondary" id="reset">Limpar</button>
+        </div>
+      </form>
+
+      <div class="result" id="result" style="display:none">
+        <h3>Faixa estimada</h3>
+        <p id="range"></p>
+        <p id="detail"></p>
+        <p><small>Estimativa indicativa para fins de orientação inicial. Enviaremos análise detalhada por e-mail.</small></p>
+      </div>
+
+      <footer>
+        Praia Digital — Ferramentas gratuitas para o mercado imobiliário do litoral paulista.<br>
+        <a href="https://praia.digital" target="_blank">https://praia.digital</a>
+      </footer>
+    </main>
+
+    <script>
+      const cityBase = { 'Porto da Lua': 8500, 'Praia Grande': 7200, 'Costa Verde': 7800, 'Ilha Bela': 9600, 'Ubatuba': 9000, 'Caraguatatuba': 7500 };
+      const typeAdj = { 'Apartamento': 1, 'Casa': 1.15, 'Cobertura': 1.45, 'Condomínio': 1.05 };
+      const stateAdj = { 'Novo / Na planta': 1.12, 'Usado / Conservado': 1, 'Reforma necessária': 0.82 };
+      const quartoAdj = 0.04;
+      const vagaAdj = 0.03;
+
+      function fmt(v){ return 'R$ ' + Math.round(v).toLocaleString('pt-BR'); }
+
+      document.getElementById('form').addEventListener('submit', function(e){
+        e.preventDefault();
+        const cidade = document.getElementById('cidade').value;
+        const area = Number(document.getElementById('area').value);
+        const quartos = Number(document.getElementById('quartos').value);
+        const vagas = Number(document.getElementById('vagas').value);
+        const tipo = document.getElementById('tipo').value;
+        const estado = document.getElementById('estado').value;
+
+        const base = cityBase[cidade] || 7500;
+        const valorM2 = base * (typeAdj[tipo] || 1) * (stateAdj[estado] || 1) * (1 + quartoAdj * quartos) * (1 + vagaAdj * vagas);
+        const min = valorM2 * area * 0.88;
+        const max = valorM2 * area * 1.12;
+        const detail = cidade + ' · ' + tipo + ' · ' + estado;
+
+        document.getElementById('range').innerHTML = '<strong>' + fmt(min) + ' — ' + fmt(max) + '</strong>';
+        document.getElementById('detail').innerText = detail;
+        document.getElementById('result').style.display = 'block';
+        document.getElementById('result').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+
+      document.getElementById('reset').addEventListener('click', function(){
+        document.getElementById('form').reset();
+        document.getElementById('result').style.display = 'none';
+      });
+    </script>
+  </body>
+  </html>
