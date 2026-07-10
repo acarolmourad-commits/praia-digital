@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia de Envio no Brevo — Passo a Passo | Praia Digital</title>
+  <style>
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f4f7fb; color: #1a2332; padding: 2rem; }
+    .box { max-width: 900px; margin: 0 auto; background: #fff; padding: 3rem; border-radius: 20px; box-shadow: 0 6px 30px rgba(0,0,0,0.08); }
+    h1 { font-size: 2rem; margin-bottom: 1rem; }
+    .step { background: #f8fafc; border-left: 4px solid #00d4ff; padding: 1.25rem; border-radius: 12px; margin: 1.25rem 0; }
+    .step h3 { margin: 0 0 0.75rem; color: #0a0f1f; }
+    .step p { margin: 0.4rem 0; color: #2d3748; }
+    .highlight { background: linear-gradient(135deg,rgba(0,212,255,0.08),rgba(0,255,136,0.08)); border: 2px solid rgba(0,212,255,0.2); border-radius: 16px; padding: 2rem; margin: 2rem 0; }
+    .btn { display: inline-block; background: linear-gradient(135deg,#00d4ff,#00ff88); color:#0a0f1f; padding:0.9rem 2rem; border-radius:50px; text-decoration:none; font-weight:700; margin-top:1rem; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>🚀 Guia de Envio no Brevo — Passo a Passo</h1>
+    <p class="subtitle">Siga esses passos para enviar os e-mails de prospecção em menos de 5 minutos.</p>
+
+    <div class="highlight">
+      <strong>Arquivos necessários:</strong><br>
+      - CSV: `csv-lotes-email/checklist-envio-hoje-limpo.csv`<br>
+      - Textos: `outreach/emails-prontos-para-enviar.html`<br>
+      - Conta gratuita: https://www.brevo.com
+    </div>
+
+    <div class="step">
+      <h3>Passo 1 — Criar conta no Brevo</h3>
+      <p>1. Acesse https://www.brevo.com</p>
+      <p>2. Clique em <strong>"Sign up free"</strong></p>
+      <p>3. Preencha com seu e-mail e senha</p>
+      <p>4. Confirme o e-mail de verificação</p>
+    </div>
+
+    <div class="step">
+      <h3>Passo 2 — Importar contatos</h3>
+      <p>1. No menu lateral, clique em <strong>"Contacts"</strong></p>
+      <p>2. Clique em <strong>"Import"</strong></p>
+      <p>3. Selecione <strong>"File upload"</strong></p>
+      <p>4. Faça upload do arquivo: <code>csv-lotes-email/checklist-envio-hoje-limpo.csv</code></p>
+      <p>5. Clique em <strong>"Continue"</strong></p>
+      <p>6. Mapeie os campos: Nome, Empresa, Cidade, Email, Assunto</p>
+      <p>7. Clique em <strong>"Import"</strong></p>
+    </div>
+
+    <div class="step">
+      <h3>Passo 3 — Criar campanha</h3>
+      <p>1. No menu lateral, clique em <strong>"Campaigns"</strong></p>
+      <p>2. Clique em <strong>"Email"</strong></p>
+      <p>3. Clique em <strong>"Create"</strong></p>
+      <p>4. Selecione a lista de contatos que você acabou de importar</p>
+    </div>
+
+    <div class="step">
+      <h3>Passo 4 — Configurar e-mail</h3>
+      <p>1. <strong>Assunto:</strong> use o assunto do primeiro lead do arquivo de textos</p>
+      <p>2. <strong>Remetente:</strong> configure como `comercial@praia.digital` ou seu e-mail</p>
+      <p>3. <strong>Corpo:</strong> copie o texto do arquivo <code>outreach/emails-prontos-para-enviar.html</code> e cole</p>
+      <p>4. Personalize com tags do Brevo: <code>{{ nome }}</code>, <code>{{ empresa }}</code>, <code>{{ cidade }}</code></p>
+    </div>
+
+    <div class="step">
+      <h3>Passo 5 — Enviar</h3>
+      <p>1. Revise o e-mail</p>
+      <p>2. Clique em <strong>"Send"</strong></p>
+      <p>3. Acompanhe aberturas e cliques no dashboard do Brevo</p>
+    </div>
+
+    <div class="highlight">
+      <strong>✅ Dicas:</strong><br>
+      - Envie em horário comercial (9h-17h)<br>
+      - Limite de 300 e-mails/dia no plano free<br>
+      - Acompanhe respostas em até 1 hora
+    </div>
+
+    <a class="btn" href="https://www.brevo.com" target="_blank">Abrir Brevo e Enviar Agora</a>
+  </div>
+</body>
+</html>
