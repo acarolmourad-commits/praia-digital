@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Central de Prospecção — Praia Digital</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f5f6fa; padding: 20px; color: #333; }
+.container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.card { background: white; border-radius: 12px; padding: 25px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+h1 { color: #764ba2; grid-column: 1 / -1; margin-bottom: 10px; }
+h2 { color: #34495e; margin-bottom: 15px; font-size: 1.2rem; }
+.btn { display: inline-block; padding: 10px 20px; background: #764ba2; color: white; text-decoration: none; border-radius: 6px; margin: 5px 5px 5px 0; cursor: pointer; border: none; font-size: 14px; }
+.btn:hover { background: #667eea; }
+.btn-green { background: #28a745; }
+.btn-blue { background: #007bff; }
+.file-list { background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 10px 0; }
+.file-list code { display: block; padding: 5px 0; color: #764ba2; font-size: 0.9rem; }
+.metric { font-size: 1.5rem; font-weight: bold; color: #764ba2; }
+.alert { background: #fff3cd; border-left: 4px solid #ffc107; padding: 12px; margin: 15px 0; border-radius: 4px; }
+.success { background: #d4edda; border-left: 4px solid #28a745; padding: 12px; margin: 15px 0; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>🎯 Central de Prospecção — Praia Digital</h1>
+  <p class="subtitle" style="grid-column: 1 / -1; color: #666;">Todos os assets de prospecção em 1 página. Escolha uma ação abaixo.</p>
+
+  <div class="card">
+    <h2>📧 Enviar E-mails (Brevo)</h2>
+    <div class="file-list">
+      <code>📥 CSV: csv-lotes-email/batch-30-emails-2026-07-10.csv</code>
+      <code>📧 Template: outreach/template-email-html-padrao.html</code>
+      <code>📋 Ação: outreach/acao-completa.html</code>
+    </div>
+    <a href="https://www.brevo.com" target="_blank" class="btn btn-blue">Abrir Brevo</a>
+    <button class="btn" onclick="alert('Copie o CSV para o Brevo: csv-lotes-email/batch-30-emails-2026-07-10.csv')">📋 Instruções</button>
+  </div>
+
+  <div class="card">
+    <h2>📱 Enviar WhatsApp (Top 5)</h2>
+    <div class="file-list">
+      <code>📱 Ação: outreach/acao-completa.html</code>
+      <code>📋 Mensagens prontas para copiar</code>
+    </div>
+    <button class="btn btn-green" onclick="window.open('outreach/acao-completa.html','_blank')">Abrir Ação Completa</button>
+  </div>
+
+  <div class="card">
+    <h2>🔄 Follow-ups Agendados</h2>
+    <div class="file-list">
+      <code>📅 72h: 2026-07-13</code>
+      <code>📅 7d: 2026-07-17</code>
+      <code>📊 CSV: csv-lotes-email/followup-30-leads-negociacao-2026-07-10.csv</code>
+    </div>
+    <p style="color: #666; font-size: 0.9rem;">Importe no Brevo quando os envios forem feitos.</p>
+  </div>
+
+  <div class="card">
+    <h2>📊 Métricas do Funil</h2>
+    <div class="metric">30</div>
+    <p>E-mails prontos</p>
+    <div class="metric">5</div>
+    <p>WhatsApp prontos</p>
+    <div class="metric">72h/7d</div>
+    <p>Follow-ups automáticos</p>
+    <div class="metric">9</div>
+    <p>Posts Instagram prontos</p>
+  </div>
+
+  <div class="card">
+    <h2>📱 Posts Instagram</h2>
+    <div class="file-list">
+      <code>post-ia-recomendacao-imoveis.txt</code>
+      <code>post-gerador-descricoes.txt</code>
+      <code>post-avaliacao-preco-imoveis.txt</code>
+      <code>post-assistente-virtual-24h.txt</code>
+      <code>post-institucional-praia-digital.txt</code>
+      <code>post-whatsapp-business-corretores.txt</code>
+      <code>post-seo-imoveis-litoral.txt</code>
+      <code>post-fechar-vendas-litoral.txt</code>
+      <code>post-captacao-imoveis-litoral.txt</code>
+    </div>
+    <button class="btn btn-green" onclick="window.open('marketing/instagram/','_blank')">Ver Todos</button>
+  </div>
+
+  <div class="card">
+    <h2>💰 Investidores</h2>
+    <div class="file-list">
+      <code>E-mail: outreach/email-investidor-2026-07-10.txt</code>
+      <code>Pitch: landings/pitch-deck-investidores.html</code>
+    </div>
+    <a href="mailto:comercial@praia.digital?subject=Interesse%20Investimento" class="btn">Enviar E-mail</a>
+  </div>
+
+  <div class="card">
+    <h2>🤝 Parcerias</h2>
+    <div class="file-list">
+      <code>Onboarding: landings/onboarding-parceiros.html</code>
+      <code>Landing: landings/landing-parcerias-imobiliarias.html</code>
+    </div>
+    <a href="mailto:comercial@praia.digital?subject=Proposta%20Parceria" class="btn btn-green">Propor Parceria</a>
+  </div>
+
+  <div class="card">
+    <h2>🛠️ Ferramentas e Serviços</h2>
+    <div class="file-list">
+      <code>Serviços IA: servicos-ia.html</code>
+      <code>Ferramentas grátis: https://praia.digital</code>
+      <code>Site: https://acarolmourad-commits.github.io/praia-digital/</code>
+    </div>
+    <a href="https://praia.digital" target="_blank" class="btn">Acessar Ferramentas</a>
+  </div>
+
+  <div class="card" style="grid-column: 1 / -1;">
+    <h2>🚀 Próximas Ações</h2>
+    <div class="alert">
+      <strong>1. Envie os e-mails no Brevo</strong><br>
+      Importe: <code>csv-lotes-email/batch-30-emails-2026-07-10.csv</code><br>
+      Use o template: <code>outreach/template-email-html-padrao.html</code>
+    </div>
+    <div class="alert">
+      <strong>2. Envie os WhatsApps</strong><br>
+      Abra: <code>outreach/acao-completa.html</code> e envie as 5 mensagens
+    </div>
+    <div class="success">
+      <strong>3. Acompanhe os follow-ups</strong><br>
+      72h: 2026-07-13 | 7d: 2026-07-17 | CSV já gerado
+    </div>
+  </div>
+
+  <div class="card" style="grid-column: 1 / -1; text-align: center;">
+    <p style="color: #666;">
+      <strong>CEO | Carolina Moura | Praia Digital</strong><br>
+      https://praia.digital | comercial@praia.digital | (11) 95434-6288
+    </p>
+  </div>
+</div>
+</body>
+</html>
