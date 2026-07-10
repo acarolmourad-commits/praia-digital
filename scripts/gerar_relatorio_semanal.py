@@ -1,0 +1,123 @@
+#!/usr/bin/env python3
+"""Gera relatório semanal automático em HTML consolidando conteúdo, envios e leads."""
+from pathlib import Path
+from datetime import datetime
+
+BASE = Path(r'C:\Users\Carolina\praia-digital')
+OUT = BASE / 'docs/sales/relatorio-semanal-praia-digital-2026-07-10.html'
+
+
+def count_files(pattern, path='.'):
+    p = BASE / path
+    if not p.exists():
+        return 0
+    if pattern.endswith('/'):
+        return sum(1 for x in p.rglob('*') if x.is_file() and x.parent == p)
+    return len(list(p.glob(pattern)))
+
+
+def main():
+    hoje = datetime.now().strftime('%Y-%m-%d')
+    blog_count = count_files('*.html', 'blog')
+    imoveis_count = count_files('*.html', 'imoveis')
+    docs_count = count_files('*.md', 'docs/materiais')
+    outreach_count = count_files('*.html', 'outreach')
+
+    html = f"""<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatório Semanal — Praia Digital — {hoje}</title>
+  <style>
+    *,*::before,*::after{{box-sizing:border-box;margin:0;padding:0}}
+    body{{font-family:'Segoe UI',system-ui,sans-serif;background:#F4EBD0;color:#023047;line-height:1.7;padding:2rem}}
+    .container{{max-width:1100px;margin:0 auto}}
+    .hero{{background:linear-gradient(135deg,#0077B6,#00B4D8);color:#fff;padding:2rem;border-radius:18px;margin-bottom:1.5rem;text-align:center}}
+    .hero h1{{font-size:clamp(1.6rem,4vw,2.4rem);margin-bottom:.5rem}}
+    .grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin:1rem 0}}
+    .card{{background:#fff;border-radius:14px;padding:1.2rem;box-shadow:0 2px 12px rgba(0,0,0,.08);text-align:center}}
+    .metric{{font-size:1.8rem;font-weight:800;color:#0077B6;margin:.3rem 0}}
+    .card h2{{font-size:1rem;color:#555;margin-top:.4rem}}
+    .section{{background:#fff;border-radius:14px;padding:1.2rem;box-shadow:0 2px 12px rgba(0,0,0,.08);margin:1rem 0}}
+    .section h2{{color:#0077B6;margin-bottom:.6rem}}
+    .btn{{display:inline-block;background:#0077B6;color:#fff;padding:.6rem 1.1rem;border-radius:999px;text-decoration:none;font-weight:700;margin:.25rem}}
+    .btn-green{{background:#25D366}}
+    .btn-orange{{background:#F97316}}
+    .small{{font-size:.9rem;color:#555}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <h1>Relatório Semanal — Praia Digital</h1>
+      <p>Data: {hoje} · Visão geral de conteúdo, ativos e prospecção</p>
+      <a class="btn btn-green" href="docs/sales/painel-diario-operacoes-praia-digital-2026.html" target="_blank">Abrir painel diário</a>
+      <a class="btn" href="docs/sales/tracker-envios-unificado-2026-07-10.md" target="_blank">Abrir tracker</a>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="metric">{blog_count}</div>
+        <h2>Artigos SEO</h2>
+      </div>
+      <div class="card">
+        <div class="metric">{imoveis_count}</div>
+        <h2>Imóveis cadastrados</h2>
+      </div>
+      <div class="card">
+        <div class="metric">{docs_count}</div>
+        <h2>Docs/ Materiais</h2>
+      </div>
+      <div class="card">
+        <div class="metric">{outreach_count}</div>
+        <h2>Ativos de outreach</h2>
+      </div>
+      <div class="card">
+        <div class="metric">30</div>
+        <h2>Emails Brevo preparados</h2>
+      </div>
+      <div class="card">
+        <div class="metric">5</div>
+        <h2>WhatsApp Top 5 leads</h2>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>1) Conteúdo SEO publicado</h2>
+      <p class="small">Total de {blog_count} artigos no blog. Últimos temas: parcerias, captação, follow-up, SEO local, avaliação de imóveis e diferenciação para pequenas imobiliárias.</p>
+    </div>
+
+    <div class="section">
+      <h2>2) Imóveis cadastrados</h2>
+      <p class="small">Total de {imoveis_count} páginas de imóveis com copy única, canonical, SEO local e destaques por temporada/área/dormitórios.</p>
+    </div>
+
+    <div class="section">
+      <h2>3) Prospecção</h2>
+      <p class="small">Lote Brevo 30 emails + 5 WhatsApps prontos. Follow-ups 72h/7d preparados. Template rotação A–E por perfil.</p>
+      <a class="btn btn-orange" href="outreach/emails-brevo-lote-30-2026-07-10/versao-a-seo-local.html" target="_blank">Ver templates</a>
+    </div>
+
+    <div class="section">
+      <h2>4) Próximas ações</h2>
+      <ul>
+        <li>Enviar lote Brevo e WhatsApp Top 5</li>
+        <li>Atualizar tracker após envio</li>
+        <li>Executar follow-ups em 72h e 7d</li>
+        <li>Publicar +5 artigos SEO na próxima semana</li>
+      </ul>
+    </div>
+
+    <div class="small" style="text-align:center">
+      Site oficial: https://acarolmourad-commits.github.io/praia-digital/ · Ferramentas: https://praia.digital
+    </div>
+  </div>
+</body>
+</html>"""
+    OUT.write_text(html, encoding='utf-8')
+    print(f'GENERATED {OUT}')
+
+
+if __name__ == '__main__':
+    main()
