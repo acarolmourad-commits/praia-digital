@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#FBBF24"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+  <text x="540" y="480" font-family="Arial, sans-serif" font-size="120" font-weight="800" fill="#023047" text-anchor="middle">Temporada</text>
+  <text x="540" y="620" font-family="Arial, sans-serif" font-size="120" font-weight="800" fill="#023047" text-anchor="middle">com IA</text>
+  <text x="540" y="760" font-family="Arial, sans-serif" font-size="60" fill="#fff4e6" text-anchor="middle">Praia Digital</text>
+</svg>

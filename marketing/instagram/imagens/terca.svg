@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <rect width="1080" height="1080" fill="#ffffff"/>
+  <rect x="60" y="60" width="960" height="960" rx="40" fill="#f1f3f5"/>
+  <text x="540" y="480" font-family="Arial, sans-serif" font-size="130" font-weight="800" fill="#023047" text-anchor="middle">Descrições</text>
+  <text x="540" y="620" font-family="Arial, sans-serif" font-size="130" font-weight="800" fill="#023047" text-anchor="middle">com IA</text>
+  <text x="540" y="760" font-family="Arial, sans-serif" font-size="60" fill="#1864ab" text-anchor="middle">Praia Digital</text>
+</svg>
