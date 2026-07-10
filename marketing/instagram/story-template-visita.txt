@@ -1,0 +1,5 @@
+# Story template: visita a imóvel
+- Texto: “Hoje visitei [imóvel] em [cidade]”
+- Imagem/fundo: foto do imóvel
+- enquete: “Você compraria?”
+- Link: [site/formulário]

@@ -1,0 +1,4 @@
+# Story template: enquete
+- Texto: “Qual imóvel combina com você?”
+- Opções: vista mar / centro / luxo / temporada
+- Link: [site/formulário]
