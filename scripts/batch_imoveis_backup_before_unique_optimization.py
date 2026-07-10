@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
-"""Gerador em lote de páginas de imóveis a partir do CSV com conteúdo único e SEO local."""
+"""Gerador em lote de páginas de imóveis a partir do CSV."""
 import csv
 from pathlib import Path
 
 BASE = Path(r'C:\Users\Carolina\praia-digital')
-CSV = BASE / 'propriedades' / 'cadastro-imoveis.csv'
+CSV = BASE / 'propriedades/cadastro-imoveis.csv'
 OUT_DIR = BASE / 'imoveis'
 OUT_DIR.mkdir(parents=True, exist_ok=True)
-
 
 def build_page(row):
     pid = row.get('id', '').strip()
@@ -36,60 +35,10 @@ def build_page(row):
     cond = f"R$ {cond_valor:,}".replace(',', '.') if cond_valor > 0 else 'Sem'
 
     whats_digits = ''.join(ch for ch in contato_whats if ch.isdigit())
-
-    slug_cidade = cidade.lower().replace(' ', '-')
-    slug_tipo = tipo.lower().replace(' ', '-')
-
-    season_highlights = []
-    if any(x in (titulo + ' ' + descricao).lower() for x in ['temporada', 'verão', 'praia', 'mar', 'frente mar']):
-        season_highlights.append('Ideal para temporada de verão no litoral paulista.')
-    if any(x in (titulo + ' ' + descricao).lower() for x in ['inverno', 'baixa temporada', 'offseason']):
-        season_highlights.append('Ótima opção também para baixa temporada e aluguel por temporada.')
-    if not season_highlights:
-        season_highlights.append('Localização privilegiada no litoral paulista.')
-
-    unique_features = []
-    if dormitorios and dormitorios.isdigit():
-        d = int(dormitorios)
-        if d == 1:
-            unique_features.append('Layout funcional para casal ou pequena família.')
-        elif d == 2:
-            unique_features.append('Distribuição inteligente com espaço para crescimento.')
-        elif d >= 3:
-            unique_features.append('Espaço amplo para família e hóspedes na temporada.')
-    if area and area.isdigit():
-        a = int(area)
-        if a <= 60:
-            unique_features.append('Área compacta e fácil manutenção.')
-        elif a <= 120:
-            unique_features.append('Tamanho equilibrado entre conforto e custo.')
-        else:
-            unique_features.append('Ampla área com potencial para reforma e valorização.')
-    if vagas and vagas.isdigit() and int(vagas) > 0:
-        unique_features.append(f'{vagas} vaga(s) de garagem, importante para a temporada.')
-    if cond_valor > 0:
-        unique_features.append('Condomínio com estrutura que agrega valor ao imóvel.')
-    unique_features.append(f'Região procurada por quem busca {slug_tipo.replace("-", " ")} no litoral.')
-
-    bullet_features = '\n'.join([f'<li>{f}</li>' for f in unique_features[:4]])
-    bullet_season = '\n'.join([f'<li>{s}</li>' for s in season_highlights[:2]])
-
-    intro_prefixes = [
-        'Oportunidade de',
-        'Destaque de',
-        'Registro exclusivo de',
-        'Imóvel selecionado de',
-        'Capitalização de',
-    ]
-    prefix = intro_prefixes[int(pid) % len(intro_prefixes)]
-
-    local_authority = f'Em {bairro}, {cidade}, com acesso facilitado e diferenciais que fazem diferença na decisão de compra.'
-
     return f"""<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{tipo.title()} em {bairro}, {cidade} | Praia Digital</title>
-<meta name="description" content="{tipo.title()} em {bairro}, {cidade}: {area}m², {dormitorios} dorm, {vagas} vaga(s). {diferenciais}. Contato: {contato_nome}.">
-<meta name="keywords" content="{tipo} {bairro}, {cidade}, imóveis litoral, {slug_tipo} {slug_cidade}, {diferenciais}, Praia Digital">
-<link rel="canonical" href="https://acarolmourad-commits.github.io/praia-digital/imoveis/imovel-{pid}.html">
+<meta name="description" content="{tipo.title()} em {bairro}, {cidade}: {area}m², {dormitorios} dorm, {vagas} vaga(s). Destaques: {diferenciais}. Contato: {contato_nome}.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
 body{{font-family:'Segoe UI',system-ui,sans-serif;background:#F4EBD0;color:#023047;line-height:1.6;padding:2rem}}
@@ -105,15 +54,10 @@ a{{color:#0077B6}}
 <body><div class="container">
 <div class="card">
 <p class="badge">{tipo.title()}</p>
-<h1>{prefix} {tipo.title()} em {bairro}, {cidade}</h1>
+<h1>{tipo.title()} em {bairro}, {cidade}</h1>
 <div class="price">{preco}</div>
 <div class="details"><span>Área: {area}m²</span><span>Dorm.: {dormitorios}</span><span>Vagas: {vagas}</span><span>Cond.: {cond}</span></div>
 <p>{descricao}</p>
-<p>{local_authority}</p>
-<p><strong>Por que este imóvel se destaca:</strong></p>
-<ul>{bullet_features}</ul>
-<p><strong>Vantagens sazonais:</strong></p>
-<ul>{bullet_season}</ul>
 <p><strong>Diferenciais:</strong> {diferenciais}</p>
 {'<a class="cta" href="https://wa.me/' + whats_digits + '?text=Ol%C3%A1,%20tenho%20interesse%20no%20' + tipo + '%20em%20' + cidade.replace(' ', '%20') + '">WhatsApp</a>' if whats_digits else ''}
 <a class="cta" href="mailto:comercial@praia.digital?subject=Interesse%20no%20{tipo}%20{bairro}">E-mail</a>
@@ -121,28 +65,23 @@ a{{color:#0077B6}}
 <footer>© Praia Digital - 2026 - IA para imóveis no litoral paulista</footer>
 </div></body></html>"""
 
-
 def main():
     with open(CSV, 'r', encoding='utf-8') as f:
         rows = list(csv.DictReader(f))
     rows = sorted(rows, key=lambda r: r.get('id', '0'))
     existing = {p.stem for p in OUT_DIR.glob('imovel-*.html')}
     created = 0
-    updated = 0
     for row in rows:
         pid = row.get('id', '').strip()
         if not pid.isdigit():
             continue
         name = f'imovel-{pid}'
+        if name in existing:
+            continue
         page = build_page(row)
-        out_file = OUT_DIR / f'{name}.html'
-        if out_file.exists():
-            updated += 1
-        else:
-            created += 1
-        out_file.write_text(page, encoding='utf-8')
-    print(f'CREATED {created} | UPDATED {updated} | TOTAL {created + updated} property pages')
-
+        (OUT_DIR / f'{name}.html').write_text(page, encoding='utf-8')
+        created += 1
+    print(f'CREATED {created} property pages')
 
 if __name__ == '__main__':
     main()
