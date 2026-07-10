@@ -1,0 +1,6 @@
+lead_id,nome,email,cidade,telefone,data_envio,followup_72h,followup_7d
+001,Porto da Lua Prime,contato@portodaluaprime.com.br,Porto da Lua,(11) 91234-0001,2026-07-10,2026-07-13,2026-07-17
+002,Praia Grande Site View,contato@pragrandesiteview.com.br,Praia Grande,(11) 91234-0002,2026-07-10,2026-07-13,2026-07-17
+003,Porto da Lua Blue,contato@portodaluablue.com.br,Porto da Lua,(11) 91234-0003,2026-07-10,2026-07-13,2026-07-17
+004,Prime Imóveis Centro,contato@primeimoveiscentro.com.br,Centro Hist.,(11) 91234-0004,2026-07-10,2026-07-13,2026-07-17
+005,Costa Verde Imóveis,contato@costaverdeimoveis.com.br,Costa Verde,(11) 91234-0005,2026-07-10,2026-07-13,2026-07-17
