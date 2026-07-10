@@ -1,0 +1,7 @@
+Segunda: avaliacao-rapida-imovel.html
+Terca: assets/servico-geracao-descricoes-anuncios-ia.html
+Quarta: assets/servico-assistente-virtual-compradores-litoral.html
+Quinta: assets/predicao-vendidos-litoral.html
+Sexta: assets/servico-aluguel-temporada-ia-litoral.html
+Sabado: assets/planos-assinatura.html
+Domingo: https://praia.digital
