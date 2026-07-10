@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel de Prospecção — Praia Digital</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f5f6fa; padding: 20px; color: #333; }
+.container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.card { background: white; border-radius: 12px; padding: 25px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+.metric { font-size: 2rem; font-weight: bold; color: #764ba2; }
+.lead-status { padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; display: inline-block; }
+.status-pendente { background: #fff3cd; color: #856404; }
+.status-enviado { background: #d1ecf1; color: #0c5460; }
+.status-respondeu { background: #d4edda; color: #155724; }
+.btn { display: inline-block; padding: 10px 20px; background: #764ba2; color: white; text-decoration: none; border-radius: 6px; margin: 5px 5px 5px 0; border: none; cursor: pointer; font-size: 14px; }
+.btn:hover { background: #667eea; }
+.actions { margin-top: 15px; }
+.footer { grid-column: 1 / -1; text-align: center; margin-top: 20px; color: #666; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="card" style="grid-column: 1 / -1;">
+    <h1>📊 Painel de Prospecção — Praia Digital</h1>
+    <p class="meta">Atualizado em 2026-07-10 | CEO: Carolina Moura</p>
+  </div>
+
+  <div class="card">
+    <h3>📧 E-mails Enviados</h3>
+    <div class="metric" id="emails-enviados">0</div>
+    <div class="actions">
+      <button class="btn" onclick="atualizarMetrica('emails_enviados', 1)">+1 Enviado</button>
+      <button class="btn" onclick="atualizarMetrica('emails_enviados', 5)">+5 Enviados</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>💬 Respostas Recebidas</h3>
+    <div class="metric" id="respostas">0</div>
+    <div class="actions">
+      <button class="btn" onclick="atualizarMetrica('respostas', 1)">+1 Resposta</button>
+      <button class="btn" onclick="atualizarMetrica('respostas', 5)">+5 Respostas</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>📅 Reuniões Agendadas</h3>
+    <div class="metric" id="reunioes">0</div>
+    <div class="actions">
+      <button class="btn" onclick="atualizarMetrica('reunioes', 1)">+1 Reunião</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>🤝 Parcerias Fechadas</h3>
+    <div class="metric" id="parcerias">0</div>
+    <div class="actions">
+      <button class="btn" onclick="atualizarMetrica('parcerias', 1)">+1 Parceria</button>
+    </div>
+  </div>
+
+  <div class="card" style="grid-column: 1 / -1;">
+    <h2>📋 Status dos Leads</h2>
+    <table style="width:100%; border-collapse: collapse; margin-top: 15px;">
+      <thead>
+        <tr style="background: #f8f9fa; text-align: left;">
+          <th style="padding: 10px; border-bottom: 2px solid #ddd;">ID</th>
+          <th style="padding: 10px; border-bottom: 2px solid #ddd;">Nome</th>
+          <th style="padding: 10px; border-bottom: 2px solid #ddd;">Status</th>
+          <th style="padding: 10px; border-bottom: 2px solid #ddd;">Última Ação</th>
+          <th style="padding: 10px; border-bottom: 2px solid #ddd;">Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 10px; border-bottom: 1px solid #eee;">L001</td>
+          <td style="padding: 10px; border-bottom: 1px solid #eee;">Porto da Lua Prime</td>
+          <td style="padding: 10px; border-bottom: 1px solid #eee;"><span class="lead-status status-pendente">pendente</span></td>
+          <td style="padding: 10px; border-bottom: 1px solid #eee; font-size: 0.85rem;">aguardando envio</td>
+          <td style="padding: 10px; border-bottom: 1px solid #eee;">
+            <button class="btn" onclick="marcarEnviado('L001')">✓ Enviar</button>
+            <button class="btn" onclick="marcarResposta('L001')">✓ Respondeu</button>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border-bottom: 1px solid #eee;">L002</td>
+          <td style="padding: 10px; border-bottom: 1px solid #eee;">Praia Grande Site View</td>
+          <td style="padding: 10px; border-bottom: 1px solid #eee;"><span class="lead-status status-pendente">pendente</span></td>
+          <td style="padding: 10px; border-bottom: 1px solid #eee; font-size: 0.85rem;">aguardando envio</td>
+          <td style="padding: 10px; border-bottom: 1px solid #eee;">
+            <button class="btn" onclick="marcarEnviado('L002')">✓ Enviar</button>
+            <button class="btn" onclick="marcarResposta('L002')">✓ Respondeu</button>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border-bottom: 1px solid #eee;">L003</td>
+          <td style="padding: 10px; border-bottom: 1px solid #eee;">Porto da Lua Blue</td>
+          <td style="padding: 10px; border-bottom: 1px solid #eee;"><span class="lead-status status-pendente">pendente</span></td>
+          <td style="padding: 10px; border-bottom: 1px solid #eee; font-size: 0.85rem;">aguardando envio</td>
+          <td style="padding: 10px; border-bottom: 1px solid #eee;">
+            <button class="btn" onclick="marcarEnviado('L003')">✓ Enviar</button>
+            <button class="btn" onclick="marcarResposta('L003')">✓ Respondeu</button>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border-bottom: 1px solid #eee;">L004</td>
+          <td style="padding: 10px; border-bottom: 1px solid #eee;">Prime Imóveis Centro</td>
+          <td style="padding: 10px; border-bottom: 1px solid #eee;"><span class="lead-status status-pendente">pendente</span></td>
+          <td style="padding: 10px; border-bottom: 1px solid #eee; font-size: 0.85rem;">aguardando envio</td>
+          <td style="padding: 10px; border-bottom: 1px solid #eee;">
+            <button class="btn" onclick="marcarEnviado('L004')">✓ Enviar</button>
+            <button class="btn" onclick="marcarResposta('L004')">✓ Respondeu</button>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border-bottom: 1px solid #eee;">L005</td>
+          <td style="padding: 10px; border-bottom: 1px solid #eee;">Costa Verde Imóveis</td>
+          <td style="padding: 10px; border-bottom: 1px solid #eee;"><span class="lead-status status-pendente">pendente</span></td>
+          <td style="padding: 10px; border-bottom: 1px solid #eee; font-size: 0.85rem;">aguardando envio</td>
+          <td style="padding: 10px; border-bottom: 1px solid #eee;">
+            <button class="btn" onclick="marcarEnviado('L005')">✓ Enviar</button>
+            <button class="btn" onclick="marcarResposta('L005')">✓ Respondeu</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card" style="grid-column: 1 / -1;">
+    <h2>🚀 Próximas Ações</h2>
+    <ul style="margin-left: 20px; margin-top: 10px; line-height: 1.8;">
+      <li><strong>Hoje:</strong> Enviar e-mails no Brevo para Top 5 leads</li>
+      <li><strong>72h:</strong> Follow-up personalizado por cidade/dor</li>
+      <li><strong>7d:</strong> Follow-up com case de sucesso</li>
+      <li><strong>12d:</strong> Fechamento ou agendamento de call</li>
+    </ul>
+    <div class="actions" style="margin-top: 20px;">
+      <a href="outreach/acao-imediata.html" class="btn">📱 Ação Imediata (WhatsApp)</a>
+      <a href="outreach/email-investidor-proptech-brasil.txt" class="btn">💰 E-mail Investidores</a>
+      <a href="https://www.brevo.com" target="_blank" class="btn">📧 Abrir Brevo</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>CEO | Praia Digital | https://praia.digital | comercial@praia.digital</p>
+  </div>
+</div>
+
+<script>
+function atualizarMetrica(id, valor) {{
+  const el = document.getElementById(id);
+  const atual = parseInt(el.innerText) || 0;
+  el.innerText = atual + valor;
+  el.style.color = '#28a745';
+  setTimeout(() => el.style.color = '#764ba2', 1000);
+}}
+
+function marcarEnviado(leadId) {{
+  const rows = document.querySelectorAll('tbody tr');
+  for (const row of rows) {{
+    const cells = row.querySelectorAll('td');
+    if (cells[0] && cells[0].innerText === leadId) {{
+      const statusCell = cells[2];
+      statusCell.innerHTML = '<span class="lead-status status-enviado">enviado</span>';
+      const acaoCell = cells[3];
+      acaoCell.innerText = 'E-mail enviado em ' + new Date().toISOString().split('T')[0];
+    }}
+  }}
+}}
+
+function marcarResposta(leadId) {{
+  const rows = document.querySelectorAll('tbody tr');
+  for (const row of rows) {{
+    const cells = row.querySelectorAll('td');
+    if (cells[0] && cells[0].innerText === leadId) {{
+      const statusCell = cells[2];
+      statusCell.innerHTML = '<span class="lead-status status-respondeu">respondeu</span>';
+      const acaoCell = cells[3];
+      acaoCell.innerText = 'Lead respondeu — verificar manualmente';
+    }}
+  }}
+  const respostasEl = document.getElementById('respostas');
+  const atual = parseInt(respostasEl.innerText) || 0;
+  respostasEl.innerText = atual + 1;
+}}
+</script>
+</body>
+</html>
