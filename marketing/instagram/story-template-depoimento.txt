@@ -1,0 +1,4 @@
+# Story template: depoimento
+- Texto: “O que o cliente diz sobre a Experiência”
+- Imagem: print do depoimento
+- Link: [site/formulário]
