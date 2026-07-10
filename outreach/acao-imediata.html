@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ação Imediata — Praia Digital</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; color: #fff; }
+.container { max-width: 900px; margin: 0 auto; background: rgba(255,255,255,0.95); border-radius: 12px; padding: 30px; color: #333; }
+h1 { color: #764ba2; margin-bottom: 10px; }
+.subtitle { color: #666; margin-bottom: 30px; }
+.lead-card { background: #f8f9fa; border-left: 4px solid #764ba2; padding: 15px; margin: 15px 0; border-radius: 6px; }
+.lead-card h3 { color: #764ba2; margin-bottom: 8px; }
+.btn { display: inline-block; padding: 10px 20px; background: #764ba2; color: white; text-decoration: none; border-radius: 6px; margin: 5px 5px 5px 0; cursor: pointer; border: none; font-size: 14px; }
+.btn:hover { background: #667eea; }
+.btn-secondary { background: #28a745; }
+.copy-area { background: #fff; border: 1px dashed #ccc; padding: 10px; margin: 10px 0; border-radius: 4px; font-size: 13px; }
+.alert { background: #fff3cd; border-left: 4px solid #ffc107; padding: 12px; margin: 15px 0; border-radius: 4px; }
+.success { background: #d4edda; border-left: 4px solid #28a745; padding: 12px; margin: 15px 0; border-radius: 4px; }
+.section { margin: 30px 0; padding-top: 20px; border-top: 2px solid #eee; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>⚡ Ação Imediata — Outreach Hoje</h1>
+  <p class="subtitle">Escolha um lead abaixo e envie a mensagem em 1 clique. Não precisa abrir mais arquivos.</p>
+
+  <div class="alert">
+    <strong>📋 Passo 1 (Brevo):</strong> Importe <code>csv-lotes-email/lote-envio-top5-2026-07-10.csv</code> e envie a campanha com <code>outreach/emails-prontos-para-enviar.html</code>.<br>
+    <strong>📱 Passo 2 (WhatsApp):</strong> Copie as mensagens abaixo e envie agora.
+  </div>
+
+  <div class="section">
+    <h2>📱 WhatsApp — Top 5 Leads</h2>
+
+    <div class="lead-card">
+      <h3>1. Porto da Lua Prime</h3>
+      <div class="copy-area" id="msg-1">Olá, a Praia Digital tem uma parceria para imobiliárias do litoral: leads qualificados com IA, ferramentas gratuitas para corretores e aumento de conversão sem custo inicial. Queremos mostrar como funciona em 15min. Quando você tem horário? https://praia.digital</div>
+      <button class="btn" onclick="copyToClipboard('msg-1', this)">📋 Copiar Mensagem</button>
+      <a href="https://wa.me/5511912340001?text=Ol%C3%A1%2C%20a%20Praia%20Digital%20tem%20uma%20parceria%20para%20imobili%C3%A1rias%20do%20litoral%3A%20leads%20qualificados%20com%20IA%2C%20ferramentas%20gratuitas%20para%20corretores%20e%20aumento%20de%20convers%C3%A3o%20sem%20custo%20inicial.%20Queremos%20mostrar%20como%20funciona%20em%2015min.%20Quando%20voc%C3%AA%20tem%20hor%C3%A1rio%3F%20https%3A%2F%2Fpraia.digital" target="_blank" class="btn btn-secondary">💬 Abrir WhatsApp</a>
+    </div>
+
+    <div class="lead-card">
+      <h3>2. Praia Grande Site View</h3>
+      <div class="copy-area" id="msg-2">Olá, identificamos que o litoral paulista está em alta. Nossa solução de IA para imobiliárias aumenta leads qualificados sem custo inicial. Podemos demonstrar hoje? https://praia.digital</div>
+      <button class="btn" onclick="copyToClipboard('msg-2', this)">📋 Copiar Mensagem</button>
+      <a href="https://wa.me/5511912340002?text=Ol%C3%A1%2C%20identificamos%20que%20o%20litoral%20paulista%20est%C3%A1%20em%20alta.%20Nossa%20solu%C3%A7%C3%A3o%20de%20IA%20para%20imobili%C3%A1rias%20aumenta%20leads%20qualificados%20sem%20custo%20inicial.%20Podemos%20demonstrar%20hoje%3F%20https%3A%2F%2Fpraia.digital" target="_blank" class="btn btn-secondary">💬 Abrir WhatsApp</a>
+    </div>
+
+    <div class="lead-card">
+      <h3>3. Porto da Lua Blue</h3>
+      <div class="copy-area" id="msg-3">Olá, corretores do litoral estão usando nossas ferramentas gratuitas para avaliar imóveis e gerar descrições automáticas. Quer testar sem compromisso? https://praia.digital</div>
+      <button class="btn" onclick="copyToClipboard('msg-3', this)">📋 Copiar Mensagem</button>
+      <a href="https://wa.me/5511912340003?text=Ol%C3%A1%2C%20corretores%20do%20litoral%20est%C3%A3o%20usando%20nossas%20ferramentas%20gratuitas%20para%20avaliar%20im%C3%B3veis%20e%20gerar%20descri%C3%A7%C3%B5es%20autom%C3%A1ticas.%20Quer%20testar%20sem%20compromisso%3F%20https%3A%2F%2Fpraia.digital" target="_blank" class="btn btn-secondary">💬 Abrir WhatsApp</a>
+    </div>
+
+    <div class="lead-card">
+      <h3>4. Prime Imóveis Centro</h3>
+      <div class="copy-area" id="msg-4">Olá, a Praia Digital desenvolveu IA específica para imobiliárias na praia: recomendação automática, avaliação de mercado e assistente virtual. Parceria sem custo inicial. Topa uma demo de 15min? https://praia.digital</div>
+      <button class="btn" onclick="copyToClipboard('msg-4', this)">📋 Copiar Mensagem</button>
+      <a href="https://wa.me/5511912340004?text=Ol%C3%A1%2C%20a%20Praia%20Digital%20desenvolveu%20IA%20espec%C3%ADfica%20para%20imobili%C3%A1rias%20na%20praia%3A%20recomenda%C3%A7%C3%A3o%20autom%C3%A1tica%2C%20avalia%C3%A7%C3%A3o%20de%20mercado%20e%20assistente%20virtual.%20Parceria%20sem%20custo%20inicial.%20Topa%20uma%20demo%20de%2015min%3F%20https%3A%2F%2Fpraia.digital" target="_blank" class="btn btn-secondary">💬 Abrir WhatsApp</a>
+    </div>
+
+    <div class="lead-card">
+      <h3>5. Costa Verde Imóveis</h3>
+      <div class="copy-area" id="msg-5">Olá, corretores na Costa Verde estão economizando horas com nosso gerador automático de descrições e assistente 24/7. Quer testar as ferramentas gratuitas hoje? https://praia.digital</div>
+      <button class="btn" onclick="copyToClipboard('msg-5', this)">📋 Copiar Mensagem</button>
+      <a href="https://wa.me/5511912340005?text=Ol%C3%A1%2C%20corretores%20na%20Costa%20Verde%20est%C3%A3o%20economizando%20horas%20com%20nosso%20gerador%20autom%C3%A1tico%20de%20descri%C3%A7%C3%B5es%20e%20assistente%2024%2F7.%20Quer%20testar%20as%20ferramentas%20gratuitas%20hoje%3F%20https%3A%2F%2Fpraia.digital" target="_blank" class="btn btn-secondary">💬 Abrir WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>📧 Brevo</h2>
+    <div class="success">
+      <strong>Pronto para importar:</strong> <code>csv-lotes-email/lote-envio-top5-2026-07-10.csv</code><br>
+      <strong>Corpo do e-mail:</strong> <code>outreach/emails-prontos-para-enviar.html</code><br>
+      <strong>Agendar follow-up:</strong> <code>csv-lotes-email/followup-top5-2026-07-10.csv</code>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🔄 Follow-up em 72h/7d</h2>
+    <p>Depois do envio, use os templates de <code>docs/sales/respostas-automaticas-leads-2026-07-10.md</code> para responder automaticamente.</p>
+  </div>
+</div>
+
+<script>
+function copyToClipboard(elementId, btn) {
+  const text = document.getElementById(elementId).innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const original = btn.innerText;
+    btn.innerText = '✅ Copiado!';
+    setTimeout(() => btn.innerText = original, 2000);
+  });
+}
+</script>
+</body>
+</html>
