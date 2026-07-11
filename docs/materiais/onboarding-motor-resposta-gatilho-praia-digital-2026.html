@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onboarding — Motor de Resposta Gatilho | Praia Digital</title>
+    <style>
+        :root { --bg:#f4f4f4; --card:#fff; --ink:#1f2d3d; --muted:#617d8b; --accent:#0d47a1; --accent2:#f57c00; --radius:12px; }
+        * { box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: var(--bg); color: var(--ink); margin: 0; padding: 24px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        .header { background: var(--accent); color: #fff; padding: 24px; border-radius: var(--radius); margin-bottom: 20px; }
+        .header h1 { margin: 0 0 8px; font-size: 22px; }
+        .header p { margin: 0; opacity: .9; }
+        .section { background: var(--card); padding: 22px; border-radius: var(--radius); margin-bottom: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); }
+        .section h2 { margin: 0 0 12px; font-size: 18px; color: var(--accent); }
+        .section h3 { margin: 16px 0 8px; font-size: 15px; color: var(--ink); }
+        .section p, .section li { color: #374a5e; line-height: 1.6; }
+        .section ul, .section ol { padding-left: 18px; }
+        .badge { display: inline-block; background: #e8f5e9; color: #2e7d32; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: bold; margin-right: 8px; margin-bottom: 8px; }
+        .badge.warn { background: #fff3e0; color: #ef6c00; }
+        .badge.danger { background: #fce4ec; color: #c62828; }
+        code.block { background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px; display: block; white-space: pre-wrap; word-break: break-word; }
+        .steps { display: grid; gap: 12px; }
+        .step { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px; }
+        .step strong { color: var(--accent2); }
+        .cta { display: inline-block; background: var(--accent); color: #fff; padding: 10px 14px; border-radius: 8px; margin-top: 10px; text-decoration: none; }
+        .cta.secondary { background: var(--accent2); }
+        .footer { text-align: center; margin-top: 10px; color: var(--muted); font-size: 12px; }
+        a { color: var(--accent); text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Onboarding — Motor de Resposta por Gatilho</h1>
+            <p>Use este guia para classificar respostas de leads e acionar a próxima ação ideal automaticamente.</p>
+        </div>
+
+        <div class="section">
+            <h2>O que este motor faz</h2>
+            <p>Ele recebe mensagens de leads, classifica a intenção por palavras-chave e sugere automaticamente o melhor próximo passo:</p>
+            <ul>
+                <li>Enviar proposta comercial</li>
+                <li>Agendar demonstração de 15 minutos</li>
+                <li>Enviar follow-up específico (preço, tempo ou ferramentas)</li>
+                <li>Encerrar / mover para nurturing</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Passo a passo</h2>
+            <div class="steps">
+                <div class="step"><strong>1.</strong> Crie o CSV no formato abaixo, na pasta <code>docs/sales/respostas-leads.csv</code>. Colunas: <code>nome;empresa;cidade;mensagem_recebida</code></div>
+                <div class="step"><strong>2.</strong> Execute o script: <code>python scripts/automation/followup_auto_gatilho_resposta.py</code></div>
+                <div class="step"><strong>3.</strong> Abra a pasta <code>outreach/followup-gatilho-resposta/</code> para ver os follow-ups gerados.</div>
+                <div class="step"><strong>4.</strong> Use o template sugerido e envie pelo canal preferido (e-mail ou WhatsApp).</div>
+                <div class="step"><strong>5.</strong> Repita diariamente com novas respostas.</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Formato do CSV</h2>
+            <p>Crie o arquivo em <code>docs/sales/respostas-leads.csv</code>:</p>
+            <code class="block">nome;empresa;cidade;mensagem_recebida
+João Silva;Porto da Lua Prime;Caraguatatuba;Quero contratar, pode enviar proposta?
+Maria Lima;Praia Grande Site View;Praia Grande;Agora não, depois da temporada
+Carlos;Alpha Imóveis;Santos;Já usamos outra ferramenta</code>
+        </div>
+
+        <div class="section">
+            <h2>Classificação e próximas ações</h2>
+            <table style="width:100%; border-collapse: collapse; font-size: 14px;">
+                <thead>
+                    <tr style="background:#f1f5f9; text-align:left;">
+                        <th style="padding:10px; border-bottom:1px solid #e2e8f0;">Intenção</th>
+                        <th style="padding:10px; border-bottom:1px solid #e2e8f0;">Ação sugerida</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td style="padding:10px;"><span class="badge">interesse alto</span></td><td style="padding:10px;">Enviar Proposta Comercial</td></tr>
+                    <tr><td style="padding:10px;"><span class="badge">interesse médio</span></td><td style="padding:10px;">Agendar Demo 15min</td></tr>
+                    <tr><td style="padding:10px;"><span class="badge warn">objeção preço</span></td><td style="padding:10px;">Follow-up de Preço</td></tr>
+                    <tr><td style="padding:10px;"><span class="badge warn">objeção tempo</span></td><td style="padding:10px;">Follow-up de Tempo</td></tr>
+                    <tr><td style="padding:10px;"><span class="badge warn">objeção ferramenta</span></td><td style="padding:10px;">Follow-up de Ferramentas</td></tr>
+                    <tr><td style="padding:10px;"><span class="badge danger">rejeição</span></td><td style="padding:10px;">Encerrar / Nurturing</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Checklist rápido</h2>
+            <ol>
+                <li>Confirmar que o CSV está salvo em UTF-8</li>
+                <li>Rodar o script e verificar pasta de saída</li>
+                <li>Revisar classificação de mensagens ambíguas</li>
+                <li>Enviar pelo template indicado</li>
+                <li>Registrar envio no tracker de follow-ups</li>
+                <li>Agendar retorno conforme ação sugerida</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>Links úteis</h2>
+            <p><a class="cta" href="https://acarolmourad-commits.github.io/praia-digital/" target="_blank">Site Praia Digital</a>
+               <a class="cta secondary" href="https://praia.digital" target="_blank">Ferramentas gratuitas</a></p>
+        </div>
+
+        <div class="footer">
+            Praia Digital • Onboarding automático • Uso interno
+        </div>
+    </div>
+</body>
+</html>
