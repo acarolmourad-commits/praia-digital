@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Central de Operações Diárias — Praia Digital</title>
+<style>
+  :root { --bg:#f4f4f4; --card:#fff; --ink:#1f2d3d; --muted:#617d8b; --accent:#0d47a1; --accent2:#f57c00; --radius:12px; }
+  * { box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; background: var(--bg); color: var(--ink); margin: 0; padding: 24px; }
+  .container { max-width: 1100px; margin: 0 auto; }
+  .header { background: var(--accent); color: #fff; padding: 24px; border-radius: var(--radius); margin-bottom: 20px; }
+  .header h1 { margin: 0 0 6px; font-size: 22px; }
+  .header p { margin: 0; opacity: .9; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+  .card { background: #fff; padding: 18px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,.04); }
+  .card h2 { margin: 0 0 10px; font-size: 16px; color: var(--accent); }
+  .card ul { padding-left: 18px; margin: 0; }
+  .card li { margin-bottom: 8px; }
+  a { color: var(--accent); text-decoration: none; font-weight: bold; }
+  a:hover { text-decoration: underline; }
+  .footer { text-align: center; margin-top: 20px; color: var(--muted); font-size: 12px; }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Central de Operações Diárias</h1>
+      <p>Acesso rápido a todos os recursos de execução, prospecção, follow-up e validação.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Execução do dia</h2>
+        <ul>
+          <li><a href="docs/sales/relatorio-diario-outbound-2026-07-11.html">Relatório diário</a></li>
+          <li><a href="docs/sales/relatorio-semanal-executivo-praia-digital-2026-07-11.html">Relatório semanal</a></li>
+          <li><a href="docs/sales/checklist-diaria-execucao-praia-digital-2026.html">Checklist diária</a></li>
+          <li><a href="docs/sales/painel-diario-unificado-praia-digital-2026.html">Painel do dia</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Prospecção</h2>
+        <ul>
+          <li><a href="docs/sales/validacao-lote-2026-07-11.html">Validação de lote</a></li>
+          <li><a href="docs/materiais/pagina-execucao-validador-lote-praia-digital-2026.html">Executar validador</a></li>
+          <li><a href="outreach/emails-diretos-top5-litoral-2026.html">E-mails diretos Top 5</a></li>
+          <li><a href="outreach/whatsapp-top5-leads-litoral-2026.html">WhatsApp Top 5</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Follow-up e negociação</h2>
+        <ul>
+          <li><a href="docs/sales/followup-top5-personalizado-72h.md">Follow-up 72h Top 5</a></li>
+          <li><a href="docs/sales/followup-top5-por-cidade.md">Follow-up por cidade</a></li>
+          <li><a href="outreach/template-negociacao-avancada-parcerias-litoral-2026.html">Negociação avançada</a></li>
+          <li><a href="outreach/template-convite-demo-15min-parcerias-2026.html">Convite demo 15min</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Onboarding e parceiros</h2>
+        <ul>
+          <li><a href="docs/materiais/kit-onboarding-parceiros-praia-digital-2026.html">Kit onboarding</a></li>
+          <li><a href="docs/materiais/hub-conteudo-parceiros-praia-digital-2026.html">Hub de conteúdo</a></li>
+          <li><a href="docs/materiais/onboarding-motor-resposta-gatilho-praia-digital-2026.html">Onboarding motor</a></li>
+          <li><a href="landing-parcerias-captura-praia-digital-conversao-2026.html">Landing parcerias</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>SEO e indexação</h2>
+        <ul>
+          <li><a href="docs/materiais/painel-indexacao-seo-praia-digital-2026.html">Painel de indexação</a></li>
+          <li><a href="docs/materiais/checklist-seo-local-imobiliarias-litoral-2026.md">Checklist SEO local</a></li>
+          <li><a href="docs/materiais/guia-seo-local-rapido-imobiliarias-litoral-2026.html">Guia SEO rápido</a></li>
+          <li><a href="sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Scripts e automação</h2>
+        <ul>
+          <li><a href="scripts/automation/gerar_convite_demo_15min.py">Gerar demo 15min</a></li>
+          <li><a href="scripts/automation/gerar_roteiro_video_diario.py">Gerar roteiro de vídeo</a></li>
+          <li><a href="scripts/automation/gerar_lote_artigos_seo_diario.py">Gerar lote SEO</a></li>
+          <li><a href="scripts/automation/gerar_sitemap_auto.py">Gerar sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      Praia Digital • Central de Operações Diárias • Execução contínua<br>
+      Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">Praia Digital</a> | Ferramentas: <a href="https://praia.digital">praia.digital</a>
+    </div>
+  </div>
+</body>
+</html>
