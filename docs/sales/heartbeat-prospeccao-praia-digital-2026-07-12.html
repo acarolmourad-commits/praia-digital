@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Heartbeat da Prospecção — Praia Digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family:Arial,sans-serif; background:#f5f7fa; padding:20px; color:#222; }
+    h1 { color:#0b4f6c; text-align:center; }
+    .card { background:#fff; padding:16px; border-radius:10px; margin:14px 0; box-shadow:0 2px 6px rgba(0,0,0,0.06); }
+    .ok { color:#065f46; font-weight:bold; }
+    .warn { color:#92400e; font-weight:bold; }
+    .err { color:#991b1b; font-weight:bold; }
+    table { width:100%; border-collapse:collapse; margin-top:10px; }
+    th,td { padding:10px; border-bottom:1px solid #eee; text-align:left; font-size:14px; }
+    th { background:#0b4f6c; color:#fff; }
+  </style>
+</head>
+<body>
+  <h1>Heartbeat da Prospecção</h1>
+  <p>Verificação rápida do estado operacional.</p>
+
+  <div class="card">
+    <h2 style="color:#154c79;margin-top:0;">Status</h2>
+    <p><span class="ok">OK</span> — Base de leads: 600</p>
+    <p><span class="ok">OK</span> — Top20 CSV: pronto</p>
+    <p><span class="warn">Atenção</span> — Follow-ups agendados: verificar tracker</p>
+    <p><span class="err">Pendente</span> — E-mails enviados hoje: 0</p>
+  </div>
+
+  <div class="card">
+    <h2 style="color:#154c79;margin-top:0;">Ações pendentes</h2>
+    <table>
+      <tr><th>Ação</th><th>Prazo</th><th>Status</th></tr>
+      <tr><td>Envio top20</td><td>2026-07-12</td><td>Pendente</td></tr>
+      <tr><td>Follow-up D3</td><td>2026-07-15</td><td>Agendado</td></tr>
+      <tr><td>Follow-up D7</td><td>2026-07-19</td><td>Agendado</td></tr>
+      <tr><td>Fechamento top5</td><td>2026-07-26</td><td>Pendente</td></tr>
+    </table>
+  </div>
+
+  <p>Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">Praia Digital</a> | Ferramentas: <a href="https://praia.digital">https://praia.digital</a></p>
+</body>
+</html>
