@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checklist de Automação para Corretores do Litoral - Ferramenta Gratuita</title>
+  <meta name="description" content="Checklist gratuita e interativa para corretores de imóveis do litoral paulista automatizarem captiveção, atendimento e fechamento de vendas.">
+  <link rel="canonical" href="https://praia.digital/checklist-automatizacao-corretores-litoral-2026.html">
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; color: #222; }
+    h1 { color: #0b4f6c; }
+    .checklist { list-style: none; padding: 0; }
+    .checklist li { margin: 8px 0; padding: 10px; border-bottom: 1px solid #eee; display:flex; align-items:center; gap:10px; }
+    .checklist input[type="checkbox"] { transform: scale(1.3); }
+    .progress { font-weight: bold; color: #0b4f6c; margin-bottom: 12px; }
+    a { color: #1a73e8; }
+    .btn { display:inline-block; margin-top:14px; padding:10px 16px; background:#0b4f6c; color:#fff; text-decoration:none; border-radius:6px; }
+  </style>
+  <script>
+    function atualizarProgresso() {
+      const checks = document.querySelectorAll('.checklist input[type="checkbox"]');
+      const checked = Array.from(checks).filter(c => c.checked).length;
+      document.getElementById('progress').textContent = checked + ' de ' + checks.length + ' itens concluídos';
+    }
+    window.addEventListener('load', atualizarProgresso);
+  </script>
+</head>
+<body>
+  <h1>Checklist de Automação para Corretores do Litoral Paulista</h1>
+  <p class="progress" id="progress">0 de 0 itens concluídos</p>
+
+  <h2>Captação e Leads</h2>
+  <ul class="checklist">
+    <li><input type="checkbox" onchange="atualizarProgresso()"> Cadastrar imóveis com título, descrição completa, fotos e preço atualizado</li>
+    <li><input type="checkbox" onchange="atualizarProgresso()"> Publicar anúncios automáticos em pelo menos 3 portais</li>
+    <li><input type="checkbox" onchange="atualizarProgresso()"> Ativar notificações de novos leads por e-mail e WhatsApp</li>
+    <li><input type="checkbox" onchange="atualizarProgresso()"> Configurar respostas automáticas para primeiros contatos</li>
+  </ul>
+
+  <h2>Atendimento e Relacionamento</h2>
+  <ul class="checklist">
+    <li><input type="checkbox" onchange="atualizarProgresso()"> Usar modelo de qualificação inicial por mensagem</li>
+    <li><input type="checkbox" onchange="atualizarProgresso()"> Registrar preferências de cada lead em CRM simples</li>
+    <li><input type="checkbox" onchange="atualizarProgresso()"> Enviar conteúdo relevante semanal para leads quentes</li>
+    <li><input type="checkbox" onchange="atualizarProgresso()"> Agendar visitas automaticamente com confirmação</li>
+  </ul>
+
+  <h2>Fechamento e Pós-venda</h2>
+  <ul class="checklist">
+    <li><input type="checkbox" onchange="atualizarProgresso()"> Disparar follow-up 3 e 7 dias após primeira apresentação</li>
+    <li><input type="checkbox" onchange="atualizarProgresso()"> Enviar proposta automática com termos claros e prazo de validade</li>
+    <li><input type="checkbox" onchange="atualizarProgresso()"> Coletar depoimento e avaliação do cliente após fechamento</li>
+    <li><input type="checkbox" onchange="atualizarProgresso()"> Manter base de ex-clientes para indicações e recompra</li>
+  </ul>
+
+  <h2>Métricas e Otimização</h2>
+  <ul class="checklist">
+    <li><input type="checkbox" onchange="atualizarProgresso()"> Medir taxa de resposta por canal e horário</li>
+    <li><input type="checkbox" onchange="atualizarProgresso()"> Medir tempo médio de fechamento por cidade</li>
+    <li><input type="checkbox" onchange="atualizarProgresso()"> A/B de títulos e descrições de anúncios</li>
+    <li><input type="checkbox" onchange="atualizarProgresso()"> Revisar custo por lead e por venda quinzenalmente</li>
+  </ul>
+
+  <h2>Ferramentas Gratuitas para Começar</h2>
+  <p>Além desta checklist, você pode usar gratuitamente:</p>
+  <ul>
+    <li>Geração de descrições automáticas com IA</li>
+    <li>Avaliação de preço de mercado</li>
+    <li>Assistente virtual para compradores</li>
+    <li>Recomendação automática de imóveis</li>
+  </ul>
+  <p>Acesse agora em <a href="https://praia.digital">https://praia.digital</a>.</p>
+  <p>Conheça mais soluções em <a href="https://acarolmourad-commits.github.io/praia-digital/">nosso site</a>.</p>
+  <a class="btn" href="https://praia.digital">Usar ferramentas gratuitas</a>
+</body>
+</html>
