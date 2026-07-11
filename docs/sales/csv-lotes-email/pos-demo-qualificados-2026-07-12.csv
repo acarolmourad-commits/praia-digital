@@ -1,0 +1,13 @@
+lead_id;nome_contato;imobiliaria;cidade;data_call;resultado;observacao;proxima_acao;data_proxima_acao
+1;Joe;Ancore Realty;Hollywood;2026-09-01;interessado;Quer demo customizada;enviar_proposta;2026-09-03
+3;Carlos;Coastal Home Sales;Miami Beach;2026-09-02;fechado_parceria;Case combinado;onboarding;2026-09-05
+4;Ana;Sandy Point Realty;Hallandale;2026-09-03;interessado;Enviar contrato leve;enviar_contrato;2026-09-04
+6;Julia;Palm Breeze Realty;Deerfield Beach;2026-09-04;interessado;Pediu relatório ROI;enviar_relatorio;2026-09-06
+8;Mariana;Seaside Living Realty;Boynton Beach;2026-09-05;interessado;Demo aprovada;onboarding;2026-09-08
+9;Lucas;Reef Real Estate;Jupiter;2026-09-06;fechado_parceria;Aceitou caso conjunto;assinatura;2026-09-10
+11;Felipe;Coral Realty Group;Palm Beach;2026-09-07;interessado;Quer proposta comercial;enviar_proposta;2026-09-09
+13;Rafael;Saltwater Real Estate;Palm Beach Gardens;2026-09-08;interessado;Pediu case por cidade;enviar_case;2026-09-10
+15;Elisa;Driftwood Realty;Ocean Ridge;2026-09-09;interessado;Quer relatório de leads;enviar_relatorio;2026-09-11
+16;Thiago;Harbor Real Estate;Manalapan;2026-09-09;fechado_parceria;Case fechado;onboarding;2026-09-12
+18;Igor;Tide Realty;Juno Beach;2026-09-10;interessado;Demo aprovada;enviar_contrato;2026-09-12
+19;Priscila;Atlantic Dunes Homes;Tequesta;2026-09-11;interessado;Pediu proposta comercial;enviar_proposta;2026-09-13
