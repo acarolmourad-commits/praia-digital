@@ -1,22 +1,33 @@
-# Checklist rápida de envio — Prospecção Praia Digital
+# Checklist Rápida de Envio — Prospecção Praia Digital
 
-## Antes de enviar
-- [ ] Lista de leads deduplicada e sem contatos inválidos.
-- [ ] Modelo de email/mensagem revisado e com link do site.
-- [ ] Anexos e links de landing page testados.
-- [ ] Horário escolhido: 10h–12h ou 15h–17h.
+Gerado em: 11/07/2026
+Objetivo: evitar erros antes do disparo de e-mail/WhatsApp.
 
-## No envio
-- [ ] Registrar data/hora de cada envio no tracker.
-- [ ] Marcar status inicial como "enviado".
-- [ ] Conferir se Follow-up 72h e 7d já estão programados.
+## Antes do envio
+- [ ] Validar lote do dia: `python scripts/automation/validar_lote_prospeccao_diaria.py`
+- [ ] Relatório de validação OK: docs/sales/validacao-lote-YYYY-MM-DD.md
+- [ ] Sem e-mails duplicados ou whatsapp inválido
+- [ ] Template escolhido por perfil: A, B, C, D ou E
+- [ ] CTAs ativos: site + https://praia.digital
 
-## Após envio
-- [ ] Monitorar aberturas e respostas nas primeiras 2h.
-- [ ] Responder em até 24h se houver resposta.
-- [ ] Atualizar tracker com respostas, objeções e próximos passos.
+## No dia do envio
+- [ ] Enviar e-mail primeiro contato para lote do dia
+- [ ] Registrar envio no tracker de follow-up
+- [ ] Follow-up D3 agendado
+- [ ] Follow-up D7 agendado
+- [ ] Top 5 WhatsApp enviado e registrado
 
-## Follow-up
-- [ ] 72h: enviar follow-up segmentado.
-- [ ] 7d: follow-up final ou avanço para proposta comercial.
-- [ ] Leads quentes: mover para agenda de reunião.
+## Pós-envio
+- [ ] Verificar respostas em docs/sales/respostas-leads.csv
+- [ ] Classificar respostas com followup_auto_gatilho_resposta.py
+- [ ] Avançar negociação para demo ou proposta comercial
+- [ ] Atualizar relatório diário
+
+Links úteis:
+- Validador: scripts/automation/validar_lote_prospeccao_diaria.py
+- Tracker: docs/sales/followup-registro.md
+- Relatório: docs/sales/relatorio-diario-outbound-2026-07-11.html
+- Onboarding: docs/materiais/onboarding-parceiro-<id>.html
+
+Site: https://acarolmourad-commits.github.io/praia-digital/
+Ferramentas: https://praia.digital
