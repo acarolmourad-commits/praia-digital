@@ -1,0 +1,51 @@
+lead_id;nome_imobiliaria;cidade;contato;canal;data_envio;status_envio;resposta;proxima_acao;data_proxima_acao
+1;Imobiliaria Santos Centro;Santos;Contato 1;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+2;Praia Grande Imoveis;Praia Grande;Contato 2;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+3;Guaruja Prime;Guaruja;Contato 3;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+4;Bertioga Realty;Bertioga;Contato 4;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+5;Itanhaem Imoveis;Itanhaem;Contato 5;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+6;Mongagua Properties;Mongagua;Contato 6;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+7;Peruibe Real Estate;Peruibe;Contato 7;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+8;Sao Vicente Imoveis;Sao Vicente;Contato 8;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+9;Santos Luxo Imoveis;Santos;Contato 9;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+10;Praia Grande Luxo;Praia Grande;Contato 10;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+11;Guaruja Beach;Guaruja;Contato 11;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+12;Bertioga Premium;Bertioga;Contato 12;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+13;Itanhaem Beach;Itanhaem;Contato 13;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+14;Mongagua Center;Mongagua;Contato 14;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+15;Peruibe Center;Peruibe;Contato 15;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+16;Santos Ocean;Santos;Contato 16;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+17;Praia Grande Ocean;Praia Grande;Contato 17;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+18;Guaruja Ocean;Guaruja;Contato 18;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+19;Bertioga Beach;Bertioga;Contato 19;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+20;Itanhaem Luxo;Itanhaem;Contato 20;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+21;Santos Premium;Santos;Contato 21;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+22;Praia Grande Premium;Praia Grande;Contato 22;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+23;Guaruja Premium;Guaruja;Contato 23;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+24;Santos Tower;Santos;Contato 24;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+25;Praia Grande Tower;Praia Grande;Contato 25;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+26;Guaruja Tower;Guaruja;Contato 26;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+27;Santos Blue;Santos;Contato 27;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+28;Praia Grande Blue;Praia Grande;Contato 28;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+29;Guaruja Blue;Guaruja;Contato 29;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+30;Bertioga Luxo;Bertioga;Contato 30;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+31;Itanhaem Premium;Itanhaem;Contato 31;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+32;Mongagua Luxo;Mongagua;Contato 32;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+33;Peruibe Luxo;Peruibe;Contato 33;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+34;Santos View;Santos;Contato 34;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+35;Praia Grande View;Praia Grande;Contato 35;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+36;Guaruja View;Guaruja;Contato 36;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+37;Santos Home;Santos;Contato 37;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+38;Praia Grande Home;Praia Grande;Contato 38;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+39;Guaruja Home;Guaruja;Contato 39;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+40;Bertioga Home;Bertioga;Contato 40;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+41;Itanhaem Home;Itanhaem;Contato 41;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+42;Mongagua Home;Mongagua;Contato 42;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+43;Peruibe Home;Peruibe;Contato 43;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+44;Santos Costa;Santos;Contato 44;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+45;Praia Grande Costa;Praia Grande;Contato 45;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+46;Guaruja Costa;Guaruja;Contato 46;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+47;Bertioga Costa;Bertioga;Contato 47;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+48;Itanhaem Costa;Itanhaem;Contato 48;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+49;Mongagua Costa;Mongagua;Contato 49;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
+50;Peruibe Costa;Peruibe;Contato 50;email;2026-07-12;pendente;;follow_up_3d;2026-07-15
