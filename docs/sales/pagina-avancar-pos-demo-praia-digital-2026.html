@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avançar pós-demo - Praia Digital</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans"; background: #f7f9fb; color: #1f2937; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+  .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 28px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(17,24,39,0.06); }
+  h1 { font-size: 34px; letter-spacing: -0.5px; margin-bottom: 8px; }
+  h2 { font-size: 22px; margin: 24px 0 12px; color: #111827; }
+  .lead { color: #6b7280; margin-bottom: 20px; }
+  .step { padding: 14px 16px; border-left: 4px solid #2563eb; background: #eff6ff; border-radius: 12px; margin: 12px 0; }
+  .ok { border-left-color: #16a34a; background: #f0fdf6; }
+  .warn { border-left-color: #f59e0b; background: #fffbeb; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 18px; }
+  .mini { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 12px; padding: 14px; text-align: center; }
+  .num { font-size: 22px; font-weight: 700; color: #111827; }
+  .lbl { font-size: 12px; color: #6b7280; text-transform: uppercase; letter-spacing: 0.08em; }
+  .cta { display: inline-block; margin-top: 16px; background: #2563eb; color: white; padding: 14px 20px; border-radius: 12px; font-weight: 700; text-decoration: none; }
+  .cta:hover { background: #1d4ed8; }
+  .list { margin-top: 10px; padding-left: 18px; }
+  .list li { margin: 8px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1>Avançar pós-demo</h1>
+    <p class="lead">Use esta página para converter a demonstração em parceria com menor fricção possível.</p>
+    <div class="grid">
+      <div class="mini"><div class="num">15min</div><div class="lbl">Duração da demo</div></div>
+      <div class="mini"><div class="num">1</div><div class="lbl">Case enviado</div></div>
+      <div class="mini"><div class="num">1</div><div class="lbl">Proposta final</div></div>
+      <div class="mini"><div class="num">0</div><div class="lbl">Investimento inicial</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Checklist pós-demo em 24h</h2>
+    <div class="step ok">1) Enviar case enxuto em até 1h após a demo.</div>
+    <div class="step ok">2) Enviar onboarding simplificado em até 4h.</div>
+    <div class="step ok">3) Enviar proposta editada por perfil no mesmo dia.</div>
+    <div class="step">4) Definir data de retorno em caso de silêncio: D3 e D7.</div>
+  </div>
+
+  <div class="card">
+    <h2>Case enxuto para cópia</h2>
+    <p><strong>Resultado:</strong> aumento médio de 18% em agendamentos na primeira semana.</p>
+    <p><strong>Ação:</strong> automação leve de WhatsApp + descrições de anúncio geradas por IA.</p>
+    <p><strong>Investimento:</strong> piloto de 14 dias sem custo inicial.</p>
+  </div>
+
+  <div class="card">
+    <h2>Modelo de proposta final</h2>
+    <ul class="list">
+      <li>Plano Starter — foco em onboarding rápido e vitrine digital.</li>
+      <li>Plano Growth — automação de atendimento e recomendação por IA.</li>
+      <li>Plano Enterprise — time-to-value menor e integração com CRM.</li>
+    </ul>
+    <a class="cta" href="https://acarolmourad-commits.github.io/praia-digital/">Ver planos e serviços no site</a>
+  </div>
+
+  <div class="card">
+    <h2>Próximos passos</h2>
+    <div class="step">Registre a resposta do lead em: docs/sales/template-registro-resposta-lead-praia-digital-2026.html</div>
+    <div class="step">Atualize o tracker com o resultado: scripts/automation/atualizar_tracker_respostas.py</div>
+    <div class="step">Agende follow-up automático em docs/sales/followup-registro.md</div>
+    <div class="step warn">Dica: se ele aceitar o piloto, inicie o onboarding em até 24h.</div>
+  </div>
+</div>
+</body>
+</html>
