@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Classificador de Respostas - Praia Digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family:Arial,sans-serif;max-width:1000px;margin:auto;padding:20px;color:#222;background:#f5f7fa; }
+    h1 { color:#0b4f6c;text-align:center; }
+    .card { background:#fff;padding:18px;border-radius:12px;margin:14px 0;box-shadow:0 2px 6px rgba(0,0,0,0.06); }
+    .tag { display:inline-block;padding:5px 10px;border-radius:12px;font-size:12px;font-weight:bold; }
+    .tag-interessado { background:#d1fae5;color:#065f46; }
+    .tag-neutro { background:#fef3c7;color:#92400e; }
+    .tag-rejeitado { background:#fee2e2;color:#991b1b; }
+    .tag-fechado { background:#dbeafe;color:#1e40af; }
+    textarea { width:100%;min-height:120px;padding:10px;border:1px solid #ccc;border-radius:8px; }
+    .btn { display:inline-block;padding:10px 16px;background:#0b4f6c;color:#fff;text-decoration:none;border-radius:6px;margin-top:12px;border:0;cursor:pointer; }
+    table { width:100%;border-collapse:collapse;margin-top:10px; }
+    th,td { padding:10px;border-bottom:1px solid #eee;text-align:left;font-size:14px; }
+    th { background:#0b4f6c;color:#fff; }
+  </style>
+</head>
+<body>
+  <h1>Classificador de Respostas de Leads</h1>
+  <p>Cole a resposta do lead abaixo para classificação automática.</p>
+
+  <div class="card">
+    <label><strong>Texto da resposta:</strong></label><br>
+    <textarea id="texto" placeholder="Ex: Tenho interesse, podemos marcar uma call. / Não, obrigado. / Já tenho ferramenta."></textarea>
+    <button class="btn" onclick="classificar()">Classificar</button>
+    <p id="resultado" style="margin-top:12px;"></p>
+  </div>
+
+  <div class="card">
+    <h2 style="color:#154c79;margin-top:0;">Regras principais</h2>
+    <table>
+      <tr><th>Classificação</th><th>Palavras-chave</th></tr>
+      <tr><td><span class="tag tag-interessado">interessado</span></td><td>interesse, quero, sim, vamos, agendar, call, proposta, demo, avançar</td></tr>
+      <tr><td><span class="tag tag-neutro">neutro</span></td><td>talvez, depois, mais tarde, informaçõ, dúvida, preço, valor, como funciona</td></tr>
+      <tr><td><span class="tag tag-rejeitado">rejeitado</span></td><td>não, obrigado, agora não, sem orçamento, não preciso, recusar</td></tr>
+      <tr><td><span class="tag tag-fechado">parceria_fechada</span></td><td>aceito, fechado, combinado, assinar, contrato, voucher, bora</td></tr>
+    </table>
+    <p style="margin-top:10px;">Ferramentas gratuitas: <a href="https://praia.digital">https://praia.digital</a> | Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">Praia Digital</a></p>
+  </div>
+
+  <script>
+    function classificar() {
+      const texto = document.getElementById('texto').value.toLowerCase();
+      const regras = {
+        interessado: ['interesse','quero','sim','vamos','agendar','call','proposta','demo','avançar','pode','mande','envie'],
+        rejeitado: ['não','obrigado','agora não','sem orçamento','não preciso','recusar','noobrigado','naoobrigado'],
+        fechado: ['aceito','fechado','combinado','assinar','contrato','voucher','bora','fechou','ok'],
+        neutro: ['talvez','depois','mais tarde','informaç','dúvida','preço','valor','como funciona','ajudar','esclarecer']
+      };
+      let resultado = 'neutro';
+      for (const [classe, palavras] of Object.entries(regras)) {
+        if (palavras.some(p => texto.includes(p))) {
+          resultado = classe;
+          break;
+        }
+      }
+      const classeCss = resultado === 'interessado' ? 'tag-interessado' : resultado === 'rejeitado' ? 'tag-rejeitado' : resultado === 'parceria_fechada' ? 'tag-fechado' : 'tag-neutro';
+      document.getElementById('resultado').innerHTML = `<span class="tag ${classeCss}">${resultado}</span>`;
+    }
+  </script>
+</body>
+</html>
