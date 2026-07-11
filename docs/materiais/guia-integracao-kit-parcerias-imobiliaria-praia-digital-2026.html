@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guia de Integração do Kit de Parcerias para Imobiliárias — Praia Digital</title>
+<style>
+body{font-family:Arial,sans-serif;background:#f6f8fb;color:#222;margin:0;padding:20px}
+.card{background:#fff;border-radius:10px;padding:20px;max-width:1100px;margin:0 auto 20px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+h1{font-size:22px;margin:0 0 12px}h2{font-size:16px;margin:18px 0 8px}
+pre{background:#f1f3f6;padding:14px;border-radius:8px;overflow:auto;white-space:pre-wrap;font-size:14px}
+ol{padding-left:18px}li{margin:6px 0}
+</style></head><body>
+<div class="card">
+<h1>Guia de Integração do Kit de Parcerias</h1>
+<p>Aprenda a usar os templates e scripts da Praia Digital no dia a dia da sua imobiliária, sem ferramentas caras.</p>
+
+<h2>1) Primeiro contato sem ferramenta paga</h2>
+<p>Use os templates em `outreach/` combinados com o e-mail ou WhatsApp da sua imobiliária. Copie, personalize nome, cidade e link do kit gratuito de valores e envie.</p>
+
+<h2>2) Follow-up manual organizado</h2>
+<pre>
+1. Abra o tracker unificado: docs/sales/followup-registro.md
+2. Adicione o lead no formato: nome | imobiliária | canal | tipo | data
+3. Defina as datas D0, D3 e D7 usando o script scripts/automation/agendar_followup_tracker.py
+4. No dia correspondente, envie o template adequado e marque no tracker.
+</pre>
+
+<h2>3) Automação mínima com CSV + Brevo</h2>
+<ol>
+<li>Abra o CSV do lote: csv-lotes-email/lote-brevo-30-2026-07-10.csv</li>
+<li>Importe no Brevo como contatos.</li>
+<li>Escolha o template HTML: outreach/email-first-contact-brevo-lote-30-2026-07-10.html</li>
+<li>Ajuste campos mescláveis para nome, imobiliaria e cidade.</li>
+<li>Disparar campanha como "teste" primeiro e depois envio completo.</li>
+</ol>
+
+<h2>4) Scripts de automação no Windows</h2>
+<pre>
+1. Abra: scripts/executar_outreach.bat para execução completa.
+2. Ou use: scripts/executar_envio_diario.bat para enviar o lote do dia.
+3. Em caso de erro de python, use os launchers .bat ou rode pelo PowerShell com caminho completo do python.
+</pre>
+
+<h2>5) Roteiro de demonstração</h2>
+<pre>
+1. Use o roteiro em docs/materiais/roteiro-demo-parcerias-praia-digital-2026.md.
+2. Grave a tela durante o piloto para gerar um case curto.
+3. Após a demo, envie o modelo de proposta comercial padrão.
+</pre>
+
+<h2>6) Rastreamento sem complicação</h2>
+<pre>
+- Abra o relatório diário: docs/sales/relatorio-diario-outbound.html
+- Abra o painel de execução: docs/sales/painel-execucao-diaria-praia-digital-2026.html
+- Abra o centro de comando: docs/sales/centro-comando-prospeccao-praia-digital-2026.html
+</pre>
+
+<p>Quer um acompanhamento inicial? Fale com a Praia Digital pelo WhatsApp: (11) 95434-6288</p>
+</div></body></html>
