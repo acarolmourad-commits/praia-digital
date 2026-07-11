@@ -7493,15 +7493,3 @@
 | Marcos Monteiro | Litoral Premium Imóveis | email | parceria | 2026-07-11 | 2026-07-14 | 2026-07-18 |
 | Ana Rocha | Prime Imóveis Prime | email | parceria | 2026-07-11 | 2026-07-14 | 2026-07-18 |
 | Fernanda Monteiro | Costa Verde Blue | email | parceria | 2026-07-11 | 2026-07-14 | 2026-07-18 |
-
-## Respostas registradas
-
-| Lead | Canal | Data | Classificação | Próxima ação | Observação |
-|------|-------|------|---------------|--------------|------------|
-| 001 | E-mail | 2026-07-12 | Interessado — pediu para agendar demo | Agendar demo de 15 minutos | Solicitou horário terça ou quinta. |
-| 004 | WhatsApp | 2026-07-12 | Interessado — enviou objeção ou dúvida | Responder objeção com FAQ dinâmica | Perguntou sobre integração com CRM existente. |
-| 010 | E-mail | 2026-07-13 | Interessado — solicitou mais informações | Enviar follow-up D3 com case e prova social | Pediu comparativo por cidade. |
-| 023 | Site | 2026-07-13 | Interessado — pediu para agendar demo | Agendar demo de 15 minutos | Preencheu formulário de contato. |
-| 035 | E-mail | 2026-07-14 | Não interessado — agora | Back-off: reenviar em 30 dias | Informou que já utiliza outra ferramenta de automação. |
----
-
