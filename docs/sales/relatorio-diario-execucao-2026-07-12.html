@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Relatório Diário de Execução Comercial - Praia Digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 1100px; margin: auto; padding: 20px; color: #222; background: #f5f7fa; }
+    h1 { color: #0b4f6c; text-align: center; }
+    .date { text-align: center; color: #555; margin-bottom: 20px; }
+    .section { background: #fff; border-radius: 10px; padding: 16px; margin: 16px 0; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+    .section h2 { color: #154c79; margin-top: 0; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #eee; font-size: 14px; }
+    th { background: #0b4f6c; color: #fff; }
+    tr:hover { background: #f0f7ff; }
+    .tag { display: inline-block; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: bold; }
+    .tag-first { background: #dbeafe; color: #1e40af; }
+    .tag-follow { background: #fef3c7; color: #92400e; }
+    .tag-call { background: #d1fae5; color: #065f46; }
+    .checklist { list-style: none; padding: 0; }
+    .checklist li { padding: 8px 0; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; gap: 10px; }
+    .checklist input { transform: scale(1.2); }
+    .actions { margin-top: 20px; text-align: center; }
+    .btn { display: inline-block; padding: 10px 18px; background: #0b4f6c; color: #fff; text-decoration: none; border-radius: 6px; margin: 4px; }
+    .btn-secondary { background: #fff; color: #0b4f6c; border: 1px solid #0b4f6c; }
+  </style>
+</head>
+<body>
+  <h1>📅 Relatório Diário de Execução Comercial</h1>
+  <p class="date">Data: 2026-07-12 | Base: top20 leads por score</p>
+
+  <div class="section">
+    <h2>🎯 Resumo do Dia</h2>
+    <table>
+      <tr><th>Ação</th><th>Quantidade</th><th>Status</th></tr>
+      <tr><td>Contatos iniciais (e-mail + WhatsApp)</td><td>20</td><td><span class="tag tag-first">Pendente</span></td></tr>
+      <tr><td>Follow-ups agendados (3 dias)</td><td>20</td><td><span class="tag tag-follow">Agendado</span></td></tr>
+      <tr><td>Calls de demo agendadas</td><td>0</td><td><span class="tag tag-call">A confirmar</span></td></tr>
+      <tr><td>Ferramentas gratuitas disponíveis</td><td>4</td><td>✅ Ativo</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>✅ Checklist de Execução Hoje</h2>
+    <ul class="checklist">
+      <li><input type="checkbox"> Enviar e-mails personalizados para os 20 leads top score</li>
+      <li><input type="checkbox"> Enviar mensagens de WhatsApp personalizadas</li>
+      <li><input type="checkbox"> Registrar envios no tracker (followup-registro.md)</li>
+      <li><input type="checkbox"> Agendar follow-ups de 3 dias no tracker</li>
+      <li><input type="checkbox"> Compartilhar dashboard com a equipe</li>
+      <li><input type="checkbox"> Publicar 1 artigo SEO novo no blog</li>
+      <li><input type="checkbox"> Divulgar ferramenta gratuita nas redes sociais</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>📋 Top 5 Leads Prioritários do Dia</h2>
+    <table>
+      <tr><th>#</th><th>Imobiliária</th><th>Cidade</th><th>Contato</th><th>Dor</th><th>Ação</th></tr>
+      <tr><td>1</td><td>Santos Tower Imóveis</td><td>Santos</td><td>Helena Vaz</td><td>aumentar captação</td><td>E-mail + WhatsApp</td></tr>
+      <tr><td>2</td><td>Santos Luxo</td><td>Santos</td><td>Isabela Fernandes</td><td>aumentar captação</td><td>E-mail + WhatsApp</td></tr>
+      <tr><td>3</td><td>Santos Premium Digital</td><td>Santos</td><td>Viviane Paes</td><td>leads</td><td>E-mail + WhatsApp</td></tr>
+      <tr><td>4</td><td>Santos Ocean View</td><td>Santos</td><td>Tatiane Moreira</td><td>leads</td><td>E-mail + WhatsApp</td></tr>
+      <tr><td>5</td><td>Litoral Premium Sant</td><td>Santos</td><td>Roberto Dias</td><td>conversão</td><td>E-mail + WhatsApp</td></tr>
+    </table>
+  </div>
+
+  <div class="actions">
+    <a class="btn" href="https://wa.me/">Enviar WhatsApp Agora</a>
+    <a class="btn btn-secondary" href="docs/sales/dashboard-prospeccao-top20-2026-07-12.html">Ver Dashboard Completo</a>
+    <a class="btn btn-secondary" href="outreach/whatsapp-top20-mensagens-prontas.html">Mensagens WhatsApp</a>
+    <a class="btn btn-secondary" href="docs/sales/roteiro-videocall-top20-2026-07-12.html">Roteiro de Calls</a>
+    <a class="btn btn-secondary" href="https://praia.digital">Ferramentas Gratuitas</a>
+  </div>
+
+  <script>
+    document.querySelectorAll('.checklist input[type="checkbox"]').forEach(cb => {
+      cb.addEventListener('change', () => {
+        const all = document.querySelectorAll('.checklist input[type="checkbox"]');
+        const checked = Array.from(all).filter(c => c.checked).length;
+        // Progress could be added here
+      });
+    });
+  </script>
+</body>
+</html>
