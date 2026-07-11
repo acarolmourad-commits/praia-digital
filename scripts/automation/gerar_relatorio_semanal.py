@@ -4,7 +4,20 @@ from pathlib import Path
 from datetime import datetime
 
 BASE = Path(r'C:\Users\Carolina\praia-digital')
-OUT = BASE / 'docs/sales/relatorio-semanal-praia-digital-2026-07-10.html'
+hoje = datetime.now().strftime('%Y-%m-%d')
+OUT = BASE / f'docs/sales/relatorio-semanal-executivo-praia-digital-{hoje}.html'
+
+TRACKER = BASE / 'docs/sales/followup-registro.md'
+RESPONDERS = BASE / 'docs/sales/respostas-leads.csv'
+FOLLOWUP_SCRIPT = 'scripts/automation/followup_auto_gatilho_resposta.py'
+PENDING_SCRIPT = 'scripts/automation/gerar_convite_demo_15min.py'
+NEXT_ACTIONS = [
+    'Enviar follow-ups de D3 para leads que contataram hoje',
+    'Executar followup_auto_gatilho_resposta.py para leads com resposta',
+    'Agendar demonstrações de 15min para respostas de interesse alto',
+    'Rodar gerador de propostas por lead automaticamente',
+    'Publicar relas de SEO semanal para acompanhar indexação no Google'
+]
 
 
 def count_files(pattern, path='.'):
@@ -23,12 +36,21 @@ def main():
     docs_count = count_files('*.md', 'docs/materiais')
     outreach_count = count_files('*.html', 'outreach')
 
+    tracker_lines = 0
+    responder_count = 0
+    if TRACKER.exists():
+        tracker_lines = sum(1 for line in TRACKER.read_text(encoding='utf-8').splitlines() if line.strip().startswith('|') and 'Nome' not in line)
+    if RESPONDERS.exists():
+        responder_count = max(0, sum(1 for line in RESPONDERS.read_text(encoding='utf-8').splitlines()[1:] if line.strip() and not line.startswith('#') ) - 0)
+
+    next_list = ''.join([f'<li>{a}</li>' for a in NEXT_ACTIONS])
+
     html = f"""<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Relatório Semanal — Praia Digital — {hoje}</title>
+  <title>Relatório Semanal Executivo — Praia Digital — {hoje}</title>
   <style>
     *,*::before,*::after{{box-sizing:border-box;margin:0;padding:0}}
     body{{font-family:'Segoe UI',system-ui,sans-serif;background:#F4EBD0;color:#023047;line-height:1.7;padding:2rem}}
@@ -50,10 +72,10 @@ def main():
 <body>
   <div class="container">
     <div class="hero">
-      <h1>Relatório Semanal — Praia Digital</h1>
-      <p>Data: {hoje} · Visão geral de conteúdo, ativos e prospecção</p>
-      <a class="btn btn-green" href="docs/sales/painel-diario-operacoes-praia-digital-2026.html" target="_blank">Abrir painel diário</a>
-      <a class="btn" href="docs/sales/tracker-envios-unificado-2026-07-10.md" target="_blank">Abrir tracker</a>
+      <h1>Relatório Semanal Executivo — Praia Digital</h1>
+      <p>Data: {hoje} · Visão executiva de conteúdo, prospecção e indexação</p>
+      <a class="btn btn-green" href="docs/sales/relatorio-diario-outbound-{hoje}.html" target="_blank">Relatório diário</a>
+      <a class="btn" href="docs/sales/painel-diario-unificado-praia-digital-2026.html" target="_blank">Painel do dia</a>
     </div>
 
     <div class="grid">
@@ -67,45 +89,36 @@ def main():
       </div>
       <div class="card">
         <div class="metric">{docs_count}</div>
-        <h2>Docs/ Materiais</h2>
+        <h2>Docs e materiais</h2>
       </div>
       <div class="card">
         <div class="metric">{outreach_count}</div>
         <h2>Ativos de outreach</h2>
       </div>
       <div class="card">
-        <div class="metric">30</div>
-        <h2>Emails Brevo preparados</h2>
+        <div class="metric">{tracker_lines}</div>
+        <h2>Registros no tracker</h2>
       </div>
       <div class="card">
-        <div class="metric">5</div>
-        <h2>WhatsApp Top 5 leads</h2>
+        <div class="metric">{responder_count}</div>
+        <h2>Respostas pendentes</h2>
       </div>
     </div>
 
     <div class="section">
-      <h2>1) Conteúdo SEO publicado</h2>
-      <p class="small">Total de {blog_count} artigos no blog. Últimos temas: parcerias, captação, follow-up, SEO local, avaliação de imóveis e diferenciação para pequenas imobiliárias.</p>
+      <h2>Sumário executivo</h2>
+      <p class="small">Base de conteúdo expandida: {blog_count} artigos SEO, {imoveis_count} imóveis e {docs_count} materiais. Operação comercial com {tracker_lines} registros e {responder_count} respostas pendentes.</p>
     </div>
 
     <div class="section">
-      <h2>2) Imóveis cadastrados</h2>
-      <p class="small">Total de {imoveis_count} páginas de imóveis com copy única, canonical, SEO local e destaques por temporada/área/dormitórios.</p>
+      <h2>Execução e automação</h2>
+      <p class="small">Rotinas prontas: follow-up por gatilho, relatório diário, checklist diária, lançador de sitemap e roteiros de vídeo automáticos.</p>
     </div>
 
     <div class="section">
-      <h2>3) Prospecção</h2>
-      <p class="small">Lote Brevo 30 emails + 5 WhatsApps prontos. Follow-ups 72h/7d preparados. Template rotação A–E por perfil.</p>
-      <a class="btn btn-orange" href="outreach/emails-brevo-lote-30-2026-07-10/versao-a-seo-local.html" target="_blank">Ver templates</a>
-    </div>
-
-    <div class="section">
-      <h2>4) Próximas ações</h2>
+      <h2>Próximas ações</h2>
       <ul>
-        <li>Enviar lote Brevo e WhatsApp Top 5</li>
-        <li>Atualizar tracker após envio</li>
-        <li>Executar follow-ups em 72h e 7d</li>
-        <li>Publicar +5 artigos SEO na próxima semana</li>
+        {next_list}
       </ul>
     </div>
 
@@ -115,8 +128,10 @@ def main():
   </div>
 </body>
 </html>"""
+
     OUT.write_text(html, encoding='utf-8')
-    print(f'GENERATED {OUT}')
+    print(f'GERADO: {OUT}')
+
 
 
 if __name__ == '__main__':
