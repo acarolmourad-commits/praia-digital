@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Execução Outreach Hoje — 2026-07-11 — Praia Digital</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans"; background: #f7f9fb; color: #1f2937; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+  .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 28px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(17,24,39,0.06); }
+  h1 { font-size: 34px; letter-spacing: -0.5px; margin-bottom: 8px; }
+  .lead { color: #6b7280; margin-bottom: 20px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 18px; }
+  .card-lead { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; }
+  .card-lead strong { display: block; font-size: 16px; margin-bottom: 4px; }
+  .small { font-size: 13px; color: #6b7280; }
+  .btn { appearance: none; border: 0; background: #2563eb; color: white; padding: 10px 14px; border-radius: 10px; cursor: pointer; font-weight: 600; text-decoration: none; display: inline-block; margin-top: 10px; }
+  .btn:hover { background: #1d4ed8; }
+  .copy { color: #6b7280; font-size: 13px; }
+  .step { padding: 14px 16px; border-left: 4px solid #2563eb; background: #eff6ff; border-radius: 12px; margin: 12px 0; }
+  .ok { border-left-color: #16a34a; background: #f0fdf6; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1>Execução Outreach Hoje — 2026-07-11</h1>
+    <p class="lead">20 leads prontos para envio por e-mail e WhatsApp. Abra esta página e clique nos botões.</p>
+    <div class="step ok">Passo rápido: envie 10 por e-mail → envie 10 por WhatsApp → marque no rastreador.</div>
+  </div>
+  <div class="grid" id="grid"></div>
+</div>
+<script>
+  const leads = [
+    {"id":"51","nome":"Roberto Dias","empresa":"Litoral Premium Sant","cidade":"Santos","email":"contato36@exemplo.com","whatsapp":"(13) 99999-0036"},
+    {"id":"66","nome":"Tatiane Moreira","empresa":"Santos Ocean View","cidade":"Santos","email":"contato66@exemplo.com","whatsapp":"(13) 99999-0066"},
+    {"id":"76","nome":"Viviane Paes","empresa":"Santos Premium Digital","cidade":"Santos","email":"contato76@exemplo.com","whatsapp":"(13) 99999-0076"},
+    {"id":"91","nome":"Helena Vaz","empresa":"Santos Tower Imóveis","cidade":"Santos","email":"contato91@exemplo.com","whatsapp":"(13) 99999-0091"},
+    {"id":"101","nome":"Isabela Fernandes","empresa":"Santos Luxo","cidade":"Santos","email":"contato101@exemplo.com","whatsapp":"(13) 99999-0101"},
+    {"id":"121","nome":"Mariana Costa","empresa":"Santos Smart Home","cidade":"Santos","email":"contato121@exemplo.com","whatsapp":"(13) 99999-0121"},
+    {"id":"141","nome":"Roberto Dias","empresa":"Santos Executive","cidade":"Santos","email":"contato141@exemplo.com","whatsapp":"(13) 99999-0141"},
+    {"id":"161","nome":"Patrícia Gomes","empresa":"Santos Bay Homes","cidade":"Santos","email":"contato161@exemplo.com","whatsapp":"(13) 99999-0161"},
+    {"id":"176","nome":"Renata Almeida","empresa":"Santos Launch","cidade":"Santos","email":"contato176@exemplo.com","whatsapp":"(13) 99999-0176"},
+    {"id":"186","nome":"Roberto Dias","empresa":"Santos Platinum","cidade":"Santos","email":"contato186@exemplo.com","whatsapp":"(13) 99999-0186"}
+  ];
+  const tpl="Praia Digital: parceiro de IA para imobiliárias do litoral. Temos 4 ferramentas gratuitas + onboarding express. Quer que eu envie o passo a passo do piloto de 14 dias?";
+  const grid=document.getElementById("grid");
+  leads.forEach(r=>{
+    const div=document.createElement("div");
+    div.className="card-lead";
+    div.innerHTML=`<strong>Lead ${r.id} — ${r.empresa}</strong>
+      <div class="small">Contato: ${r.nome} | Cidade: ${r.cidade}</div>
+      <div class="small">E-mail: ${r.email}</div>
+      <a class="btn" href="mailto:${r.email}?subject=${encodeURIComponent('Acompanhamento Praia Digital — '+r.empresa)}&body=${encodeURIComponent('Olá, '+r.nome+'!%0A%0AEstou acompanhando o envio que fizemos há 3 dias sobre o piloto de IA para imobiliárias do litoral.%0A%0AQuer seguir com o piloto gratuito?%0A%0AAguardo um ok.')}">Enviar e-mail</a>
+      <a class="btn" href="https://wa.me/${r.whatsapp.replace(/\\D/g,'')}?text=${encodeURIComponent(tpl)}" target="_blank" rel="noopener">Abrir WhatsApp</a>`;
+    grid.appendChild(div);
+  });
+</script>
+</body>
+</html>
