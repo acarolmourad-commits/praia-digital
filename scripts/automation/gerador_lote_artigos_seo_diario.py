@@ -10,6 +10,9 @@ from datetime import datetime
 
 BASE = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 OUT_DIR = os.path.join(BASE, "blog")
+DUP_DIR = os.path.join(BASE, "scripts", "blog")
+if os.path.exists(DUP_DIR):
+    import shutil; shutil.rmtree(DUP_DIR, ignore_errors=True)
 TEMPLATES = [
     {"tema": "captação", "titulos": ["Como captar imóveis no litoral em baixa temporada", "5 táticas infalíveis para captação imobiliária no litoral paulista", "Captação de imóveis offseason: roteiro prático para corretores"]},
     {"tema": "seo", "titulos": ["SEO local para imobiliárias do litoral: passo a passo", "Como aparecer no Google Maps para imobiliárias", "Checklist SEO local para corretores do litoral em 2026"]},
