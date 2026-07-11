@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Captura Manual de Leads - Praia Digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family:Arial,sans-serif;max-width:900px;margin:auto;padding:20px;color:#222;background:#f5f7fa; }
+    h1 { color:#0b4f6c;text-align:center; }
+    label { display:block; font-weight:bold; margin-top:10px; }
+    input, select { padding:8px; width:100%; max-width:500px; border:1px solid #ccc; border-radius:6px; margin-top:4px; }
+    button { margin-top:16px; padding:12px 18px; background:#0b4f6c; color:#fff; border:0; border-radius:6px; }
+    .result { background:#fff; padding:12px; border-radius:8px; margin-top:12px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+    textarea { min-height:120px; width:100%; max-width:500px; border:1px solid #ccc; border-radius:6px; padding:8px; }
+  </style>
+</head>
+<body>
+  <h1>Captura Manual de Leads</h1>
+  <p>Preencha os dados abaixo para gerar uma linha CSV pronta para importar no Brevo.</p>
+
+  <label for="nome_imobiliaria">Nome da imobiliária</label>
+  <input id="nome_imobiliaria" type="text" placeholder="Ex: Nome Imóveis Santos">
+
+  <label for="cidade">Cidade</label>
+  <select id="cidade">
+    <option>Santos</option>
+    <option>Guarujá</option>
+    <option>Praia Grande</option>
+    <option>Bertioga</option>
+    <option>Itanhaém</option>
+    <option>Mongaguá</option>
+    <option>Peruíbe</option>
+    <option>São Vicente</option>
+  </select>
+
+  <label for="uf">UF</label>
+  <input id="uf" type="text" value="SP">
+
+  <label for="nome_contato">Nome do contato</label>
+  <input id="nome_contato" type="text" placeholder="Ex: João">
+
+  <label for="email">E-mail</label>
+  <input id="email" type="email" placeholder="Ex: joao@imobiliaria.com.br">
+
+  <label for="whatsapp">WhatsApp</label>
+  <input id="whatsapp" type="text" placeholder="Ex: (13) 99999-9999">
+
+  <label for="site">Site</label>
+  <input id="site" type="url" placeholder="https://...">
+
+  <label for="dor">Dor principal</label>
+  <input id="dor" type="text" placeholder="Ex: leads, conversão, temporada">
+
+  <button onclick="exportar()">Exportar linha CSV</button>
+
+  <div class="result" id="resultado" style="display:none;"></div>
+
+  <p style="margin-top:16px;">Ferramentas gratuitas: <a href="https://praia.digital">https://praia.digital</a> | Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">Praia Digital</a></p>
+
+  <script>
+    function exportar() {
+      const row = [
+        document.getElementById('nome_imobiliaria').value,
+        document.getElementById('cidade').value,
+        document.getElementById('uf').value,
+        document.getElementById('nome_contato').value,
+        document.getElementById('email').value,
+        document.getElementById('whatsapp').value,
+        document.getElementById('site').value,
+        document.getElementById('dor').value,
+      ].map(v => `"${String(v).replace(/"/g,'""')}"`).join(';');
+      const box = document.getElementById('resultado');
+      box.innerHTML = `<strong>Linha pronta para importar no Brevo:</strong><br><code>${row}</code>`;
+      box.style.display = 'block';
+      navigator.clipboard.writeText(row).catch(()=>{});
+    }
+  </script>
+</body>
+</html>
