@@ -65,7 +65,6 @@
       const economia = custo * 0.20;
       const receitaNova = receitaAtual + ganhoConversao + economia;
       const roi = custo > 0 ? ((receitaNova - receitaAtual) / custo) * 100 : 0;
-      const periodo = '30 dias';
       const html = `
         <strong>Resumo</strong><br>
         Receita estimada atual: R$ ${receitaAtual.toFixed(2)}<br>
