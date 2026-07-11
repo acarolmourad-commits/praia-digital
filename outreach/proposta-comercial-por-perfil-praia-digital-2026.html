@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proposta Comercial por Perfil — Praia Digital</title>
+<style>
+  :root { --bg:#f4f4f4; --card:#fff; --ink:#1f2d3d; --muted:#617d8b; --accent:#0d47a1; --accent2:#f57c00; --radius:12px; }
+  * { box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; background: var(--bg); color: var(--ink); margin: 0; padding: 24px; }
+  .container { max-width: 900px; margin: 0 auto; }
+  .header { background: var(--accent); color: #fff; padding: 24px; border-radius: var(--radius); margin-bottom: 20px; }
+  .header h1 { margin: 0 0 6px; font-size: 22px; }
+  .header p { margin: 0; opacity: .9; }
+  .section { background: var(--card); padding: 22px; border-radius: var(--radius); margin-bottom: 16px; box-shadow: 0 4px 20px rgba(0,0,0,.04); }
+  .section h2 { margin: 0 0 12px; font-size: 18px; color: var(--accent); }
+  .profile-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 16px; }
+  .profile-card { background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 10px; padding: 14px; cursor: pointer; text-align: center; }
+  .profile-card:hover { border-color: var(--accent); }
+  .profile-card.active { border-color: var(--accent2); background: #fff8e1; }
+  .proposal-box { background: #f1f5f9; border-radius: 10px; padding: 18px; white-space: pre-wrap; font-size: 14px; line-height: 1.6; }
+  .footer { text-align: center; margin-top: 10px; color: var(--muted); font-size: 12px; }
+  a { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Proposta Comercial por Perfil</h1>
+      <p>Selecione o perfil do parceiro para gerar uma proposta personalizada.</p>
+    </div>
+
+    <div class="section">
+      <h2>Selecione o perfil</h2>
+      <div class="profile-grid">
+        <div class="profile-card" onclick="selectProfile('construtora')">
+          <strong>Construtora</strong><br>Foco em lançamentos e vendas no litoral
+        </div>
+        <div class="profile-card" onclick="selectProfile('imobiliaria')">
+          <strong>Imobiliária</strong><br>Foco em temporada, captação e atendimento
+        </div>
+        <div class="profile-card" onclick="selectProfile('corretor')">
+          <strong>Corretor</strong><br>Foco em fluxo de atendimento e conversão
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Proposta gerada</h2>
+      <div class="proposal-box" id="proposal">Escolha um perfil para visualizar a proposta personalizada.</div>
+    </div>
+
+    <div class="footer">
+      Praia Digital • Proposta Comercial por Perfil<br>
+      Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">Praia Digital</a> | Ferramentas: <a href="https://praia.digital">praia.digital</a>
+    </div>
+  </div>
+
+  <script>
+    const proposals = {
+      construtora: `Proposta Comercial — Construtora
+
+1) Diagnóstico
+- Abertura de lançamentos no litoral paulista
+- Necessidade de qualificação automática de leads
+- Avaliação de preço em tempo real
+
+2) Solução Praia Digital
+- Recomendação automática de imóveis por perfil de comprador
+- Avaliação de preço de mercado integrada ao atendimento
+- Automação de follow-up para lançamentos e vendas
+
+3) Investimento
+- Piloto 14 dias sem custo
+- Plano profissional leve após validação de resultados
+
+4) Próximos passos
+- Assinar proposta
+- Agendar onboarding
+- Ativar métricas de desempenho`,
+
+      imobiliaria: `Proposta Comercial — Imobiliária
+
+1) Diagnóstico
+- Alta temporada com muito atendimento e pouco tempo
+- Follow-up manual inconsistente
+- Dificuldade de avaliar preço de mercado rápido
+
+2) Solução Praia Digital
+- Assistente virtual para compradores com first response rápida
+- Follow-up automático no WhatsApp
+- Geração automática de descrições de anúncios
+
+3) Investimento
+- Acesso gratuito a ferramentas para teste
+- Plano por resultado após período de validação
+
+4) Próximos passos
+- Confirmar participação no piloto
+- Configurar onboarding guiado
+- Medir resultados em 14 dias`,
+
+      corretor: `Proposta Comercial — Corretor
+
+1) Diagnóstico
+- Atendimento fragmentado por WhatsApp e Instagram
+- Falta de copy profissional para anúncios
+- Pouca organização de visitas e leads
+
+2) Solução Praia Digital
+- Geração de descrições de imóveis em 60s
+- Assistente virtual WhatsApp para qualificação
+- Organização de visitas e follow-up automático
+
+3) Investimento
+- Ferramentas gratuitas para começar
+- Plano profissional após resultados mensuráveis
+
+4) Próximos passos
+- Acessar ferramentas gratuitas
+- Testar no primeiro atendimento
+- Agendar 15min de alinhamento`
+    };
+
+    function selectProfile(profile) {
+      document.querySelectorAll('.profile-card').forEach(card => card.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+      document.getElementById('proposal').textContent = proposals[profile];
+    }
+  </script>
+</body>
+</html>
