@@ -1,0 +1,632 @@
+# Plano sequencial de outreach WhatsApp — 30 dias
+
+- Data de início: 2026-07-11
+- Total de alvos: 600
+- Lote por dia útil: 100
+- Dias úteis no plano: 30
+
+## Distribuição
+
+### Dia 1 — 11/07/2026 — 100 leads
+- Distribuição: Guarujá: 19, Santos: 15, Bertioga: 14, Itanhaém: 13, Peruíbe: 12, Mongaguá: 10, Praia Grande: 9, São Vicente: 8
+- Leads:
+  - Lead 229 | Porto da Lua Prime | Ricardo Gomes | (13) 91866-2876 | Score 99 | contato_inicial_enviado
+  - Lead 232 | Praia Grande Site View | Ricardo Rocha | (13) 98205-5018 | Score 99 | contato_inicial_enviado
+  - Lead 280 | Porto da Lua Blue | Ana Pereira | (13) 92580-3284 | Score 99 | contato_inicial_enviado
+  - Lead 282 | Prime Imóveis Centro | Fernanda Pereira | (13) 99138-8339 | Score 99 | contato_inicial_enviado
+  - Lead 306 | Costa Verde Imóveis | Larissa Lopes | (13) 98105-2482 | Score 99 | contato_inicial_enviado
+  - Lead 352 | Norte Sul Digital | Maria Costa | (13) 93801-8520 | Score 99 | contato_inicial_enviado
+  - Lead 378 | Prime Imóveis Site | Carlos Alves | (13) 97375-6271 | Score 99 | contato_inicial_enviado
+  - Lead 392 | Sol & Mar Imóveis | Bruno Alves | (11) 97288-4331 | Score 99 | contato_inicial_enviado
+  - Lead 401 | Costa Verde Centro | Diego Mendes | (11) 99812-6486 | Score 99 | contato_inicial_enviado
+  - Lead 405 | Região Sul View | Maria Silva | (13) 95858-5923 | Score 99 | contato_inicial_enviado
+  - Lead 462 | Costa Verde Centro | Larissa Alves | (13) 97849-9112 | Score 99 | contato_inicial_enviado
+  - Lead 469 | Prime Imóveis Praia | Bruno Souza | (11) 99430-7129 | Score 99 | parceria_fechada
+  - Lead 475 | Porto da Lua Digital | Paulo Ferreira | (13) 92896-8397 | Score 99 | contato_inicial_enviado
+  - Lead 476 | Santos Tower Site | Ricardo Pereira | (13) 98016-3355 | Score 99 | contato_inicial_enviado
+  - Lead 513 | Itanhaém Premium View | Luciana Souza | (13) 94598-3995 | Score 99 | contato_inicial_enviado
+  - Lead 545 | Costa do Mar Blue | Patrícia Cardoso | (13) 98910-6320 | Score 99 | contato_inicial_enviado
+  - Lead 592 | Edifica Praia Prop | Marcos Barros | (13) 92207-2065 | Score 99 | contato_inicial_enviado
+  - Lead 221 | Região Sul Digital | Ricardo Pereira | (11) 91884-9240 | Score 98 | contato_inicial_enviado
+  - Lead 231 | Caiçara Digital View | Patrícia Barros | (11) 96666-9087 | Score 98 | parceria_fechada
+  - Lead 262 | Ocean Blue Prime | João Alves | (11) 96450-3597 | Score 98 | contato_inicial_enviado
+  - Lead 359 | Praia Grande Site Site | Patrícia Mendes | (11) 93350-3959 | Score 98 | contato_inicial_enviado
+  - Lead 418 | Caiçara Digital Tech | Paulo Souza | (11) 99771-4954 | Score 98 | contato_inicial_enviado
+  - Lead 445 | Região Sul Praia | Diego Silva | (13) 92412-7781 | Score 98 | contato_inicial_enviado
+  - Lead 464 | Norte Sul Centro | Juliana Barros | (13) 98416-4864 | Score 98 | contato_inicial_enviado
+  - Lead 479 | Realize II Praia | Bruno Lima | (13) 93980-6057 | Score 98 | contato_inicial_enviado
+  - Lead 528 | Edifica Praia Imóveis | Bianca Alves | (11) 95591-8328 | Score 98 | contato_inicial_enviado
+  - Lead 555 | Atlântico Imóveis Site | Paulo Araújo | (13) 98970-6958 | Score 98 | contato_inicial_enviado
+  - Lead 566 | Edifica Praia Tech | Paulo Alves | (11) 97276-2404 | Score 98 | contato_inicial_enviado
+  - Lead 260 | Santos Tower Digital | Carlos Barros | (11) 93028-9962 | Score 97 | contato_inicial_enviado
+  - Lead 263 | Litoral Premium Imóveis | Luciana Gomes | (13) 99792-3938 | Score 97 | contato_inicial_enviado
+  - Lead 289 | Edifica Praia Imóveis | Fernanda Alves | (13) 97311-9125 | Score 97 | contato_inicial_enviado
+  - Lead 290 | Prime Imóveis Litoral | Maria Costa | (11) 93628-9268 | Score 97 | parceria_fechada
+  - Lead 347 | Riviera Blue Centro | Larissa Souza | (13) 93703-1676 | Score 97 | contato_inicial_enviado
+  - Lead 364 | Edifica Praia Litoral | Juliana Silva | (11) 91673-6561 | Score 97 | parceria_fechada
+  - Lead 371 | Beta Imóveis View | Ana Ferreira | (11) 91411-7173 | Score 97 | contato_inicial_enviado
+  - Lead 398 | Realize II Blue | Bruno Silva | (11) 94585-4234 | Score 97 | parceria_fechada
+  - Lead 412 | Santos Tower Litoral | Juliana Pereira | (11) 98631-9307 | Score 97 | contato_inicial_enviado
+  - Lead 427 | Edifica Praia Imóveis | Paulo Ferreira | (11) 97891-8142 | Score 97 | contato_inicial_enviado
+  - Lead 440 | Mar & Sol Digital | Patrícia Nunes | (11) 95372-8551 | Score 97 | contato_inicial_enviado
+  - Lead 478 | Praia Grande Site Site | Ricardo Costa | (13) 95620-5912 | Score 97 | contato_inicial_enviado
+  - Lead 494 | Praia Digital Praia | Thiago Lima | (11) 91980-4222 | Score 97 | contato_inicial_enviado
+  - Lead 506 | Prime Imóveis View | Ana Alves | (11) 91007-7229 | Score 97 | contato_inicial_enviado
+  - Lead 510 | Mar Brasil Centro | Luciana Teixeira | (13) 93396-3891 | Score 97 | parceria_fechada
+  - Lead 512 | Norte Imóveis Blue | Ana Nunes | (11) 93817-1862 | Score 97 | contato_inicial_enviado
+  - Lead 517 | Costa do Mar Digital | Rafael Moura | (11) 91033-2219 | Score 97 | contato_inicial_enviado
+  - Lead 522 | Alpha Imóveis Blue | João Ribeiro | (13) 96890-9558 | Score 97 | contato_inicial_enviado
+  - Lead 548 | Realize II Tech | Bianca Gomes | (13) 93655-8075 | Score 97 | parceria_fechada
+  - Lead 236 | Praia Grande Site Digital | Patrícia Gomes | (11) 98824-2492 | Score 96 | contato_inicial_enviado
+  - Lead 237 | Santos Tower Prime | Bruno Costa | (11) 92102-6441 | Score 96 | contato_inicial_enviado
+  - Lead 275 | Ocean Blue Imóveis | Renata Mendes | (11) 95220-1603 | Score 96 | contato_inicial_enviado
+  - Lead 300 | Praia Digital View | Juliana Souza | (13) 95815-8001 | Score 96 | contato_inicial_enviado
+  - Lead 373 | Realize II Tech | Juliana Teixeira | (11) 95780-5743 | Score 96 | contato_inicial_enviado
+  - Lead 384 | Beta Imóveis Tech | Carlos Lima | (11) 97813-7606 | Score 96 | contato_inicial_enviado
+  - Lead 390 | Realize II Blue | Bruno Teixeira | (11) 94492-3448 | Score 96 | contato_inicial_enviado
+  - Lead 424 | Mongaguá Imóveis Site | Maria Rocha | (11) 95267-7200 | Score 96 | contato_inicial_enviado
+  - Lead 431 | Prime Imóveis Praia | Maria Lima | (11) 92842-1122 | Score 96 | contato_inicial_enviado
+  - Lead 501 | Sol & Mar Prime | Paulo Cardoso | (11) 99853-8537 | Score 96 | contato_inicial_enviado
+  - Lead 507 | Santos Tower Centro | Larissa Souza | (13) 91713-2998 | Score 96 | contato_inicial_enviado
+  - Lead 529 | Prime Imóveis Digital | Felipe Moreira | (13) 97358-7546 | Score 96 | contato_inicial_enviado
+  - Lead 536 | Edifica Praia Imóveis | Thiago Alves | (11) 99518-8568 | Score 96 | contato_inicial_enviado
+  - Lead 565 | Vista Mar Litoral | João Lopes | (11) 92167-7674 | Score 96 | contato_inicial_enviado
+  - Lead 568 | Edifica Praia Prime | Juliana Lopes | (13) 93494-4229 | Score 96 | parceria_fechada
+  - Lead 225 | Sol & Mar Blue | Maria Barros | (13) 93555-1682 | Score 95 | contato_inicial_enviado
+  - Lead 240 | Praia Grande Site View | Ricardo Lima | (11) 94911-3524 | Score 95 | contato_inicial_enviado
+  - Lead 257 | Norte Sul Blue | Carlos Nunes | (13) 92191-6428 | Score 95 | contato_inicial_enviado
+  - Lead 265 | Beta Imóveis Site | Maria Costa | (13) 92655-2606 | Score 95 | parceria_fechada
+  - Lead 288 | Praia Grande Site Litoral | Fernanda Costa | (13) 93802-3460 | Score 95 | contato_inicial_enviado
+  - Lead 358 | Beta Imóveis Site | Ana Barros | (11) 96927-1840 | Score 95 | contato_inicial_enviado
+  - Lead 393 | Sol & Mar Blue | Larissa Barros | (13) 95456-4172 | Score 95 | contato_inicial_enviado
+  - Lead 420 | Sul Imóveis Site | Juliana Moura | (13) 96020-4338 | Score 95 | parceria_fechada
+  - Lead 535 | Norte Sul Site | Bruno Nunes | (11) 99362-2294 | Score 95 | contato_inicial_enviado
+  - Lead 557 | Itanhaém Premium Site | Maria Costa | (13) 96141-7162 | Score 95 | contato_inicial_enviado
+  - Lead 563 | Mar & Sol Centro | Patrícia Rocha | (13) 95842-5370 | Score 95 | contato_inicial_enviado
+  - Lead 582 | Litoral Premium Tech | Vanessa Dias | (11) 94423-6492 | Score 95 | contato_inicial_enviado
+  - Lead 585 | Vista Mar Prop | Larissa Silva | (11) 98871-6300 | Score 95 | contato_inicial_enviado
+  - Lead 600 | Costa Verde Blue | Fernanda Monteiro | (11) 97929-7855 | Score 95 | contato_inicial_enviado
+  - Lead 238 | Caiçara Digital Blue | João Souza | (11) 94670-5284 | Score 94 | contato_inicial_enviado
+  - Lead 332 | Edifica Praia Prime | João Pereira | (11) 99041-3290 | Score 94 | contato_inicial_enviado
+  - Lead 342 | Praia Grande Site View | Ricardo Nunes | (11) 98613-6565 | Score 94 | contato_inicial_enviado
+  - Lead 457 | Itanhaém Premium Prime | Patrícia Gomes | (13) 93254-4908 | Score 94 | contato_inicial_enviado
+  - Lead 488 | Sol & Mar Blue | Patrícia Lima | (13) 95253-4279 | Score 94 | contato_inicial_enviado
+  - Lead 251 | Norte Sul Prime | Luciana Souza | (13) 98966-8816 | Score 93 | contato_inicial_enviado
+  - Lead 267 | Porto da Lua Site | Maria Rocha | (13) 99846-3928 | Score 93 | contato_inicial_enviado
+  - Lead 270 | Prime Imóveis Digital | Renata Nunes | (11) 94699-4722 | Score 93 | contato_inicial_enviado
+  - Lead 367 | Santos Tower Centro | Maria Alves | (13) 95530-2716 | Score 93 | contato_inicial_enviado
+  - Lead 397 | Norte Sul Litoral | Ana Mendes | (11) 97271-8191 | Score 93 | contato_inicial_enviado
+  - Lead 409 | Recife Imóveis Prime | Fernanda Mendes | (13) 91694-9558 | Score 93 | contato_inicial_enviado
+  - Lead 448 | Mongaguá Imóveis Tech | João Souza | (13) 98089-7583 | Score 93 | contato_inicial_enviado
+  - Lead 486 | Barra Digital Praia | Mariana Mendes | (11) 96447-8252 | Score 93 | contato_inicial_enviado
+  - Lead 487 | Vista Mar Digital | Mariana Rocha | (13) 96152-2207 | Score 93 | contato_inicial_enviado
+  - Lead 489 | Edifica Praia Litoral | Felipe Ferreira | (11) 99068-1278 | Score 93 | contato_inicial_enviado
+  - Lead 491 | Mar & Sol Site | Larissa Araújo | (13) 96249-9851 | Score 93 | contato_inicial_enviado
+  - Lead 497 | Edifica Praia Blue | Amanda Barros | (13) 93390-4226 | Score 93 | contato_inicial_enviado
+  - Lead 509 | Mongaguá Imóveis Digital | Camila Cardoso | (13) 95087-8727 | Score 93 | contato_inicial_enviado
+  - Lead 571 | Praia Grande Site Prop | Marcos Freitas | (13) 92985-2381 | Score 93 | contato_inicial_enviado
+  - Lead 588 | Costa Azul View | Maria Souza | (13) 94617-3079 | Score 93 | parceria_fechada
+  - Lead 273 | Mar & Sol Site | Ricardo Souza | (13) 98486-1289 | Score 92 | contato_inicial_enviado
+  - Lead 309 | Caiçara Digital Litoral | Bruno Lima | (11) 97458-7245 | Score 92 | parceria_fechada
+  - Lead 354 | Barra Digital Digital | Luciana Costa | (11) 96151-6269 | Score 92 | contato_inicial_enviado
+  - Lead 355 | Realize II Site | Luciana Barros | (11) 93659-3341 | Score 92 | contato_inicial_enviado
+
+### Dia 2 — 12/07/2026 — 100 leads
+- Distribuição: Peruíbe: 18, Guarujá: 17, Mongaguá: 14, Praia Grande: 13, Santos: 12, Itanhaém: 10, São Vicente: 10, Bertioga: 6
+- Leads:
+  - Lead 366 | Sol & Mar View | Mariana Pereira | (11) 94911-6024 | Score 92 | contato_inicial_enviado
+  - Lead 372 | Mongaguá Imóveis Litoral | Mariana Lima | (11) 94888-9904 | Score 92 | contato_inicial_enviado
+  - Lead 415 | Mar & Sol Blue | Larissa Moura | (13) 92867-8684 | Score 92 | contato_inicial_enviado
+  - Lead 436 | Caiçara Digital Blue | Larissa Rocha | (13) 96308-6694 | Score 92 | parceria_fechada
+  - Lead 463 | Santos Tower Litoral | Camila Alves | (13) 96857-8212 | Score 92 | contato_inicial_enviado
+  - Lead 516 | Atlântico Imóveis Centro | Rafael Ribeiro | (13) 95475-5475 | Score 92 | contato_inicial_enviado
+  - Lead 537 | Norte Sul Site | Juliana Barros | (13) 92064-5599 | Score 92 | contato_inicial_enviado
+  - Lead 239 | Barra Digital Praia | Fernanda Pereira | (11) 93644-1364 | Score 91 | parceria_fechada
+  - Lead 278 | Riviera Blue Site | Fernanda Barros | (13) 92368-9490 | Score 91 | contato_inicial_enviado
+  - Lead 286 | Praia Grande Site Site | Marcelo Pereira | (11) 99494-7198 | Score 91 | contato_inicial_enviado
+  - Lead 295 | Norte Imóveis Prime | Ricardo Lima | (13) 93356-6018 | Score 91 | contato_inicial_enviado
+  - Lead 310 | Litoral Brasil Prime | Juliana Rocha | (11) 95231-3592 | Score 91 | parceria_fechada
+  - Lead 380 | Costa Verde Site | Paulo Gomes | (11) 93921-8356 | Score 91 | contato_inicial_enviado
+  - Lead 387 | Mar & Sol Tech | Carlos Lopes | (11) 96980-1091 | Score 91 | contato_inicial_enviado
+  - Lead 395 | Norte Sul Praia | Ana Barros | (11) 92427-1532 | Score 91 | contato_inicial_enviado
+  - Lead 532 | Barra Digital Litoral | Rafael Vieira | (11) 97520-6346 | Score 91 | contato_inicial_enviado
+  - Lead 542 | Sul Imóveis Blue | Diego Lopes | (11) 99287-5649 | Score 91 | contato_inicial_enviado
+  - Lead 547 | Edifica Praia Praia | Bianca Silva | (11) 97651-1735 | Score 91 | parceria_fechada
+  - Lead 249 | Caiçara Digital Site | Juliana Mendes | (13) 93316-7869 | Score 90 | parceria_fechada
+  - Lead 255 | Beta Imóveis Blue | Carlos Nunes | (11) 94253-7725 | Score 90 | contato_inicial_enviado
+  - Lead 272 | Praia Grande Site Imóveis | Ricardo Gomes | (11) 95344-6822 | Score 90 | contato_inicial_enviado
+  - Lead 314 | Norte Sul Praia | Fernanda Mendes | (11) 91216-8399 | Score 90 | parceria_fechada
+  - Lead 315 | Realize II Imóveis | Patrícia Alves | (13) 97721-4776 | Score 90 | contato_inicial_enviado
+  - Lead 326 | Região Sul Digital | João Lima | (13) 97986-3484 | Score 90 | contato_inicial_enviado
+  - Lead 340 | Santos Tower Site | Ana Barros | (13) 96817-4456 | Score 90 | contato_inicial_enviado
+  - Lead 374 | Porto da Lua Praia | Bruno Barros | (11) 96815-5630 | Score 90 | contato_inicial_enviado
+  - Lead 433 | Caiçara Digital Litoral | Juliana Gomes | (13) 92349-9574 | Score 90 | contato_inicial_enviado
+  - Lead 526 | Praia Grande Site Imóveis | Larissa Mendes | (11) 91311-4480 | Score 90 | contato_inicial_enviado
+  - Lead 540 | Porto da Lua Tech | Patrícia Rocha | (11) 92803-2161 | Score 90 | contato_inicial_enviado
+  - Lead 554 | Ocean Blue View | Fernanda Nunes | (13) 98517-8326 | Score 90 | parceria_fechada
+  - Lead 569 | Mongaguá Imóveis Imóveis | Leonardo Dias | (13) 98604-9475 | Score 90 | contato_inicial_enviado
+  - Lead 222 | Realize II Prime | Maria Gomes | (11) 91375-1490 | Score 89 | parceria_fechada
+  - Lead 248 | Prime Imóveis Centro | Bruno Lima | (11) 98817-7441 | Score 89 | contato_inicial_enviado
+  - Lead 268 | Alpha Imóveis Centro | Luciana Silva | (13) 93611-3263 | Score 89 | contato_inicial_enviado
+  - Lead 283 | Recife Imóveis Blue | Renata Souza | (11) 98882-7775 | Score 89 | parceria_fechada
+  - Lead 327 | Riviera Blue Digital | João Gomes | (11) 94245-5042 | Score 89 | contato_inicial_enviado
+  - Lead 383 | Região Sul Centro | Paulo Nunes | (13) 99901-8320 | Score 89 | contato_inicial_enviado
+  - Lead 423 | Região Sul Praia | Bruno Alves | (11) 94426-3160 | Score 89 | contato_inicial_enviado
+  - Lead 453 | Santos Tower Prime | Patrícia Lima | (13) 99265-9724 | Score 89 | contato_inicial_enviado
+  - Lead 492 | Norte Sul Litoral | Bianca Rocha | (11) 94228-6830 | Score 89 | contato_inicial_enviado
+  - Lead 538 | Realize II View | Thiago Souza | (13) 93771-4946 | Score 89 | contato_inicial_enviado
+  - Lead 572 | Praia Blue | Mariana Freitas | (13) 96404-7596 | Score 89 | contato_inicial_enviado
+  - Lead 575 | Praia Grande Site View | Sandra Moura | (13) 99828-1148 | Score 89 | contato_inicial_enviado
+  - Lead 256 | Região Sul Site | João Costa | (11) 96021-5130 | Score 88 | contato_inicial_enviado
+  - Lead 305 | Atlântico Imóveis Centro | Luciana Souza | (13) 95226-5217 | Score 88 | contato_inicial_enviado
+  - Lead 339 | Santos Tower Digital | Maria Barros | (11) 95235-6320 | Score 88 | contato_inicial_enviado
+  - Lead 345 | Riviera Blue View | Ricardo Silva | (11) 99248-3475 | Score 88 | contato_inicial_enviado
+  - Lead 410 | Ocean Blue Centro | Paulo Teixeira | (11) 99978-5824 | Score 88 | parceria_fechada
+  - Lead 417 | Barra Digital Imóveis | Fernanda Silva | (13) 93773-6966 | Score 88 | contato_inicial_enviado
+  - Lead 429 | Mongaguá Imóveis Litoral | Ana Souza | (13) 92968-5951 | Score 88 | parceria_fechada
+  - Lead 460 | Norte Sul Digital | Mariana Araújo | (11) 92828-5698 | Score 88 | parceria_fechada
+  - Lead 471 | Sol & Mar Blue | Mariana Teixeira | (13) 96570-5834 | Score 88 | parceria_fechada
+  - Lead 484 | Alpha Imóveis Digital | Thiago Mendes | (13) 97844-5849 | Score 88 | contato_inicial_enviado
+  - Lead 499 | Realize II Centro | Larissa Moura | (13) 99709-1187 | Score 88 | parceria_fechada
+  - Lead 533 | Mar Brasil Digital | Amanda Nunes | (13) 98403-7122 | Score 88 | contato_inicial_enviado
+  - Lead 560 | Mar Brasil Blue | Maria Gomes | (13) 97611-1502 | Score 88 | parceria_fechada
+  - Lead 597 | Riviera Blue Site | Vanessa Nunes | (11) 98812-1954 | Score 88 | contato_inicial_enviado
+  - Lead 598 | Litoral Premium Imóveis | Marcos Monteiro | (11) 96676-9558 | Score 88 | contato_inicial_enviado
+  - Lead 234 | Mar & Sol Site | Ricardo Gomes | (11) 97015-1198 | Score 87 | contato_inicial_enviado
+  - Lead 244 | Riviera Blue Blue | Luciana Gomes | (13) 92759-5312 | Score 87 | contato_inicial_enviado
+  - Lead 330 | Norte Sul Digital | Carlos Rocha | (13) 98097-4426 | Score 87 | contato_inicial_enviado
+  - Lead 386 | Vista Mar Litoral | Luciana Ferreira | (13) 97728-7419 | Score 87 | contato_inicial_enviado
+  - Lead 408 | Barra Digital Imóveis | Mariana Lima | (11) 98031-9591 | Score 87 | contato_inicial_enviado
+  - Lead 414 | Mar & Sol Imóveis | Camila Nunes | (13) 95379-6158 | Score 87 | contato_inicial_enviado
+  - Lead 422 | Beta Imóveis Praia | Fernanda Mendes | (11) 96465-6505 | Score 87 | contato_inicial_enviado
+  - Lead 425 | Ocean Blue Blue | Paulo Silva | (11) 96021-8184 | Score 87 | contato_inicial_enviado
+  - Lead 455 | Norte Sul Praia | Luciana Souza | (11) 95441-6072 | Score 87 | contato_inicial_enviado
+  - Lead 474 | Litoral Premium Praia | Ana Alves | (13) 95200-4590 | Score 87 | contato_inicial_enviado
+  - Lead 496 | Norte Sul Litoral | Maria Teixeira | (13) 98585-6573 | Score 87 | contato_inicial_enviado
+  - Lead 498 | Região Sul Blue | Thiago Ferreira | (13) 98012-9146 | Score 87 | contato_inicial_enviado
+  - Lead 504 | Prime Imóveis Centro | Ricardo Moreira | (11) 94794-5541 | Score 87 | contato_inicial_enviado
+  - Lead 580 | Mar View | Lívia Vieira | (11) 95460-2760 | Score 87 | parceria_fechada
+  - Lead 595 | Costa Azul  Prime | Marcos Souza | (11) 93226-2322 | Score 87 | contato_inicial_enviado
+  - Lead 242 | Prime Imóveis Digital | Ana Barros | (11) 91716-1799 | Score 86 | contato_inicial_enviado
+  - Lead 274 | Ocean Blue Centro | João Lima | (11) 97487-4513 | Score 86 | contato_inicial_enviado
+  - Lead 279 | Caiçara Digital View | Ana Pereira | (13) 96350-5186 | Score 86 | contato_inicial_enviado
+  - Lead 299 | Porto da Lua Centro | Patrícia Silva | (11) 96315-8285 | Score 86 | contato_inicial_enviado
+  - Lead 307 | Sul Imóveis Imóveis | Paulo Barros | (13) 95284-6766 | Score 86 | contato_inicial_enviado
+  - Lead 360 | Alpha Imóveis Site | Larissa Rocha | (11) 95188-6001 | Score 86 | contato_inicial_enviado
+  - Lead 368 | Riviera Blue Prime | Larissa Teixeira | (11) 91510-2406 | Score 86 | contato_inicial_enviado
+  - Lead 394 | Porto da Lua Litoral | Fernanda Ramos | (11) 97000-6680 | Score 86 | contato_inicial_enviado
+  - Lead 430 | Barra Digital Litoral | João Costa | (13) 92640-6480 | Score 86 | contato_inicial_enviado
+  - Lead 439 | Itanhaém Premium Imóveis | Mariana Costa | (13) 98012-1938 | Score 86 | contato_inicial_enviado
+  - Lead 468 | Litoral Premium Tech | Camila Gomes | (13) 91856-4858 | Score 86 | contato_inicial_enviado
+  - Lead 472 | Alpha Imóveis Site | Fernanda Lopes | (13) 98340-9612 | Score 86 | contato_inicial_enviado
+  - Lead 482 | Norte Imóveis Site | Rafael Nunes | (13) 94226-1854 | Score 86 | contato_inicial_enviado
+  - Lead 543 | Ocean Blue Centro | Bruno Lopes | (11) 98632-4132 | Score 86 | contato_inicial_enviado
+  - Lead 552 | Itanhaém Premium Imóveis | Maria Teixeira | (13) 94942-6273 | Score 86 | contato_inicial_enviado
+  - Lead 581 | Edifica Praia Praia | Bruno Monteiro | (13) 96261-6702 | Score 86 | contato_inicial_enviado
+  - Lead 593 | Atlântico Imóveis Prime | Leonardo Barros | (11) 91687-3575 | Score 86 | contato_inicial_enviado
+  - Lead 594 | Norte Sul Praia | Luciana Barros | (11) 93496-6173 | Score 86 | contato_inicial_enviado
+  - Lead 247 | Praia Grande Site Site | Ana Souza | (11) 97031-1873 | Score 85 | parceria_fechada
+  - Lead 281 | Riviera Blue Blue | Marcelo Souza | (11) 92119-5470 | Score 85 | contato_inicial_enviado
+  - Lead 370 | Realize II Blue | Mariana Alves | (11) 96554-1519 | Score 85 | contato_inicial_enviado
+  - Lead 403 | Itanhaém Premium Prime | Juliana Souza | (11) 97910-8991 | Score 85 | parceria_fechada
+  - Lead 406 | Região Sul Blue | João Alves | (13) 97009-1885 | Score 85 | contato_inicial_enviado
+  - Lead 495 | Praia Digital Tech | Bruno Rocha | (13) 98673-2382 | Score 85 | contato_inicial_enviado
+  - Lead 521 | Alpha Imóveis Tech | Rafael Rocha | (11) 93662-8757 | Score 85 | contato_inicial_enviado
+  - Lead 530 | Sul Imóveis Digital | Thiago Cardoso | (11) 94037-6710 | Score 85 | contato_inicial_enviado
+  - Lead 556 | Realize II Prime | Larissa Alves | (13) 98508-1435 | Score 85 | contato_inicial_enviado
+
+### Dia 3 — 13/07/2026 — 100 leads
+- Distribuição: Bertioga: 21, Peruíbe: 20, Itanhaém: 16, Guarujá: 13, São Vicente: 9, Santos: 9, Praia Grande: 9, Mongaguá: 3
+- Leads:
+  - Lead 564 | Porto da Lua Blue | João Alves | (13) 96014-1702 | Score 85 | contato_inicial_enviado
+  - Lead 578 | Edifica Praia Centro | Mariana Cardoso | (11) 92373-4161 | Score 85 | contato_inicial_enviado
+  - Lead 584 | Riviera Blue View | Amanda Cavalcanti | (13) 98918-3194 | Score 85 | contato_inicial_enviado
+  - Lead 250 | Costa Verde Litoral | Patrícia Silva | (11) 97246-1822 | Score 84 | contato_inicial_enviado
+  - Lead 266 | Caiçara Digital View | Ana Rocha | (13) 96174-8484 | Score 84 | contato_inicial_enviado
+  - Lead 294 | Costa do Mar Centro | Maria Nunes | (11) 98339-5685 | Score 84 | contato_inicial_enviado
+  - Lead 329 | Ocean Blue View | Maria Rocha | (11) 91053-4012 | Score 84 | contato_inicial_enviado
+  - Lead 344 | Norte Sul Imóveis | Ricardo Lima | (13) 98434-6156 | Score 84 | contato_inicial_enviado
+  - Lead 442 | Santos Tower Prime | Camila Mendes | (11) 92227-8743 | Score 84 | contato_inicial_enviado
+  - Lead 458 | Mar & Sol Prime | Ana Rocha | (13) 99606-8725 | Score 84 | parceria_fechada
+  - Lead 485 | Praia Digital Digital | Patrícia Vieira | (11) 95857-2219 | Score 84 | contato_inicial_enviado
+  - Lead 291 | Riviera Blue Praia | Larissa Gomes | (11) 92092-5618 | Score 83 | contato_inicial_enviado
+  - Lead 302 | Costa Verde Digital | Luciana Pereira | (11) 92828-5860 | Score 83 | contato_inicial_enviado
+  - Lead 325 | Mar & Sol Site | Carlos Silva | (11) 93733-1232 | Score 83 | contato_inicial_enviado
+  - Lead 335 | Riviera Blue Digital | Ricardo Lima | (13) 94027-9957 | Score 83 | contato_inicial_enviado
+  - Lead 356 | Sol & Mar Prime | Juliana Gomes | (11) 94255-2011 | Score 83 | contato_inicial_enviado
+  - Lead 375 | Beta Imóveis Blue | Bruno Lopes | (13) 93306-9160 | Score 83 | contato_inicial_enviado
+  - Lead 477 | Região Sul Imóveis | Ricardo Silva | (13) 93795-1054 | Score 83 | contato_inicial_enviado
+  - Lead 480 | Ocean Blue Praia | Ana Lopes | (13) 95393-8843 | Score 83 | parceria_fechada
+  - Lead 481 | Ocean Blue Centro | Amanda Gomes | (13) 91895-8887 | Score 83 | contato_inicial_enviado
+  - Lead 483 | Norte Sul Site | Rafael Silva | (11) 95101-8572 | Score 83 | contato_inicial_enviado
+  - Lead 502 | Costa do Mar Blue | João Mendes | (13) 91470-3228 | Score 83 | contato_inicial_enviado
+  - Lead 505 | Litoral Brasil Prime | Bianca Vieira | (11) 94220-3068 | Score 83 | contato_inicial_enviado
+  - Lead 567 | Costa Verde Litoral | André Teixeira | (11) 97844-6054 | Score 83 | contato_inicial_enviado
+  - Lead 586 | Edifica Praia Centro | Sandra Ferreira | (13) 92713-3296 | Score 83 | contato_inicial_enviado
+  - Lead 591 | Atlântico Imóveis Centro | Maria Freitas | (11) 99224-2939 | Score 83 | contato_inicial_enviado
+  - Lead 233 | Riviera Blue Digital | Luciana Nunes | (13) 93236-9221 | Score 82 | contato_inicial_enviado
+  - Lead 304 | Praia Grande Site View | Carlos Alves | (13) 93507-7098 | Score 82 | contato_inicial_enviado
+  - Lead 311 | Edifica Praia Prime | João Mendes | (13) 99618-4417 | Score 82 | contato_inicial_enviado
+  - Lead 312 | Praia Grande Site Litoral | Ana Lopes | (11) 98790-8788 | Score 82 | parceria_fechada
+  - Lead 334 | Alpha Imóveis Centro | Patrícia Silva | (13) 91698-7471 | Score 82 | contato_inicial_enviado
+  - Lead 348 | Mar & Sol Centro | Paulo Souza | (11) 95680-3548 | Score 82 | contato_inicial_enviado
+  - Lead 349 | Prime Imóveis Blue | João Costa | (13) 95597-7249 | Score 82 | contato_inicial_enviado
+  - Lead 361 | Santos Tower Prime | Luciana Mendes | (11) 96813-8216 | Score 82 | contato_inicial_enviado
+  - Lead 376 | Caiçara Digital Litoral | Ana Mendes | (13) 97848-7752 | Score 82 | contato_inicial_enviado
+  - Lead 385 | Vista Mar Litoral | Bruno Silva | (11) 94927-4001 | Score 82 | contato_inicial_enviado
+  - Lead 407 | Mar Brasil Prime | Fernanda Teixeira | (13) 93860-6354 | Score 82 | contato_inicial_enviado
+  - Lead 441 | Alpha Imóveis Centro | Felipe Nunes | (13) 98835-6639 | Score 82 | contato_inicial_enviado
+  - Lead 443 | Prime Imóveis Prime | Diego Mendes | (13) 95631-7611 | Score 82 | contato_inicial_enviado
+  - Lead 518 | Realize II Site | Rafael Ferreira | (13) 98292-8857 | Score 82 | contato_inicial_enviado
+  - Lead 527 | Vista Mar Centro | Ana Teixeira | (11) 94586-1088 | Score 82 | contato_inicial_enviado
+  - Lead 570 | Praia Grande Site Centro | Marcos Souza | (13) 95590-8044 | Score 82 | contato_inicial_enviado
+  - Lead 226 | Caiçara Digital Prime | Ana Souza | (13) 91585-9440 | Score 81 | parceria_fechada
+  - Lead 230 | Edifica Praia Digital | Luciana Gomes | (11) 91103-8375 | Score 81 | contato_inicial_enviado
+  - Lead 284 | Norte Sul Centro | João Rocha | (13) 91511-7774 | Score 81 | parceria_fechada
+  - Lead 287 | Itanhaém Premium Blue | Ana Alves | (13) 95812-6854 | Score 81 | contato_inicial_enviado
+  - Lead 319 | Mar & Sol Imóveis | Fernanda Pereira | (11) 98933-2983 | Score 81 | parceria_fechada
+  - Lead 323 | Beta Imóveis Site | Ana Gomes | (11) 96521-7216 | Score 81 | contato_inicial_enviado
+  - Lead 389 | Caiçara Digital Praia | Paulo Barros | (11) 98617-7503 | Score 81 | contato_inicial_enviado
+  - Lead 411 | Litoral Brasil Praia | Paulo Gomes | (11) 96661-3539 | Score 81 | contato_inicial_enviado
+  - Lead 435 | Edifica Praia Blue | Patrícia Ferreira | (11) 97593-1476 | Score 81 | contato_inicial_enviado
+  - Lead 444 | Costa Verde View | Diego Moura | (11) 92233-7905 | Score 81 | contato_inicial_enviado
+  - Lead 456 | Costa Verde Tech | Patrícia Araújo | (11) 95192-5687 | Score 81 | contato_inicial_enviado
+  - Lead 524 | Caiçara Digital Site | Bruno Ferreira | (13) 99289-4262 | Score 81 | parceria_fechada
+  - Lead 531 | Região Sul Centro | Fernanda Moura | (13) 97817-1114 | Score 81 | contato_inicial_enviado
+  - Lead 539 | Riviera Blue Centro | Larissa Vieira | (11) 95180-8319 | Score 81 | parceria_fechada
+  - Lead 550 | Atlântico Imóveis Blue | Bianca Gomes | (11) 96452-5294 | Score 81 | contato_inicial_enviado
+  - Lead 553 | Mongaguá Imóveis Site | Camila Gomes | (13) 98246-3158 | Score 81 | contato_inicial_enviado
+  - Lead 259 | Alpha Imóveis View | Luciana Lima | (13) 99944-3168 | Score 80 | contato_inicial_enviado
+  - Lead 264 | Barra Digital Site | Fernanda Nunes | (13) 92262-8167 | Score 80 | parceria_fechada
+  - Lead 269 | Santos Tower Blue | Carlos Alves | (13) 91330-9492 | Score 80 | contato_inicial_enviado
+  - Lead 316 | Realize II Site | Juliana Silva | (11) 94413-2097 | Score 80 | contato_inicial_enviado
+  - Lead 321 | Riviera Blue Blue | Patrícia Lima | (13) 92413-6870 | Score 80 | contato_inicial_enviado
+  - Lead 377 | Caiçara Digital Praia | Juliana Souza | (11) 99524-4427 | Score 80 | contato_inicial_enviado
+  - Lead 391 | Prime Imóveis Praia | Bruno Lopes | (11) 95182-6284 | Score 80 | contato_inicial_enviado
+  - Lead 438 | Praia Grande Site Blue | Juliana Rocha | (13) 93984-4536 | Score 80 | parceria_fechada
+  - Lead 515 | Norte Sul Prime | Thiago Alves | (13) 99690-3480 | Score 80 | parceria_fechada
+  - Lead 559 | Caiçara Digital Site | Ana Costa | (13) 94820-4175 | Score 80 | contato_inicial_enviado
+  - Lead 227 | Região Sul Digital | Patrícia Mendes | (11) 99676-9124 | Score 79 | contato_inicial_enviado
+  - Lead 252 | Caiçara Digital Site | Ricardo Costa | (11) 98040-5372 | Score 79 | contato_inicial_enviado
+  - Lead 382 | Barra Digital Imóveis | Mariana Alves | (11) 95251-1635 | Score 79 | contato_inicial_enviado
+  - Lead 421 | Riviera Blue Prime | Bruno Souza | (11) 96881-5272 | Score 79 | contato_inicial_enviado
+  - Lead 428 | Edifica Praia Digital | Patrícia Souza | (11) 91468-1069 | Score 79 | contato_inicial_enviado
+  - Lead 434 | Costa Verde Prime | Luciana Souza | (11) 95052-3002 | Score 79 | contato_inicial_enviado
+  - Lead 461 | Prime Imóveis Site | Camila Nunes | (11) 93340-2429 | Score 79 | contato_inicial_enviado
+  - Lead 465 | Praia Grande Site Imóveis | Juliana Teixeira | (13) 92243-9802 | Score 79 | contato_inicial_enviado
+  - Lead 520 | Barra Digital Centro | Amanda Gomes | (11) 98257-4333 | Score 79 | contato_inicial_enviado
+  - Lead 558 | Beta Imóveis Site | Rafael Teixeira | (13) 99187-6702 | Score 79 | contato_inicial_enviado
+  - Lead 573 | Litoral Blue | Sandra Mendes | (11) 91817-7022 | Score 79 | contato_inicial_enviado
+  - Lead 228 | Caiçara Digital Digital | Juliana Barros | (13) 96577-7978 | Score 78 | contato_inicial_enviado
+  - Lead 277 | Ocean Blue View | Marcelo Mendes | (11) 97039-1187 | Score 78 | contato_inicial_enviado
+  - Lead 296 | Praia Digital Litoral | Ricardo Silva | (11) 94659-3308 | Score 78 | contato_inicial_enviado
+  - Lead 301 | Litoral Premium Site | Maria Pereira | (11) 97079-9313 | Score 78 | contato_inicial_enviado
+  - Lead 324 | Barra Digital Centro | Maria Lima | (11) 97866-3607 | Score 78 | contato_inicial_enviado
+  - Lead 341 | Norte Sul Prime | Juliana Rocha | (11) 93881-2261 | Score 78 | contato_inicial_enviado
+  - Lead 351 | Riviera Blue Centro | João Souza | (13) 94063-8697 | Score 78 | contato_inicial_enviado
+  - Lead 357 | Prime Imóveis Prime | Ricardo Alves | (13) 95183-7557 | Score 78 | contato_inicial_enviado
+  - Lead 363 | Beta Imóveis Praia | Larissa Rocha | (13) 98302-7478 | Score 78 | contato_inicial_enviado
+  - Lead 470 | Alpha Imóveis Tech | Larissa Costa | (13) 98464-9502 | Score 78 | contato_inicial_enviado
+  - Lead 525 | Mar & Sol Tech | Amanda Rocha | (13) 91602-9024 | Score 78 | contato_inicial_enviado
+  - Lead 546 | Mar Brasil Digital | Thiago Souza | (13) 97934-7606 | Score 78 | contato_inicial_enviado
+  - Lead 253 | Edifica Praia Centro | Ana Nunes | (11) 98270-5426 | Score 77 | parceria_fechada
+  - Lead 271 | Costa Azul Site | Fernanda Rocha | (11) 97759-5926 | Score 77 | contato_inicial_enviado
+  - Lead 298 | Norte Imóveis Site | Ricardo Gomes | (13) 96720-1611 | Score 77 | contato_inicial_enviado
+  - Lead 313 | Ocean Blue Centro | Luciana Pereira | (11) 99524-2540 | Score 77 | contato_inicial_enviado
+  - Lead 317 | Litoral Brasil Prime | Patrícia Ferreira | (11) 98399-5059 | Score 77 | contato_inicial_enviado
+  - Lead 336 | Edifica Praia Prime | João Barros | (11) 96233-1297 | Score 77 | contato_inicial_enviado
+  - Lead 396 | Itanhaém Premium Tech | Bruno Pereira | (11) 94198-4793 | Score 77 | contato_inicial_enviado
+  - Lead 419 | Edifica Praia View | Bruno Ferreira | (11) 92617-2440 | Score 77 | parceria_fechada
+  - Lead 459 | Caiçara Digital Imóveis | Paulo Mendes | (11) 91799-9314 | Score 77 | contato_inicial_enviado
+
+### Dia 4 — 14/07/2026 — 100 leads
+- Distribuição: Santos: 25, São Vicente: 14, Guarujá: 14, Bertioga: 13, Praia Grande: 12, Itanhaém: 9, Mongaguá: 8, Peruíbe: 5
+- Leads:
+  - Lead 473 | Norte Sul Prime | Larissa Barros | (13) 94774-8791 | Score 77 | contato_inicial_enviado
+  - Lead 500 | Costa do Mar Prime | Thiago Cardoso | (11) 94326-5951 | Score 77 | contato_inicial_enviado
+  - Lead 519 | Recife Imóveis Blue | Rafael Alves | (13) 92236-4121 | Score 77 | contato_inicial_enviado
+  - Lead 534 | Barra Digital Tech | Mariana Alves | (13) 96097-2159 | Score 77 | contato_inicial_enviado
+  - Lead 246 | Beta Imóveis Blue | Luciana Pereira | (13) 93939-9632 | Score 76 | contato_inicial_enviado
+  - Lead 261 | Mar & Sol Digital | Juliana Rocha | (11) 99788-9169 | Score 76 | contato_inicial_enviado
+  - Lead 276 | Norte Imóveis View | Bruno Gomes | (13) 99381-4351 | Score 76 | contato_inicial_enviado
+  - Lead 285 | Costa Azul Digital | Maria Barros | (13) 98854-5112 | Score 76 | contato_inicial_enviado
+  - Lead 293 | Recife Imóveis Praia | Maria Costa | (11) 91070-5897 | Score 76 | contato_inicial_enviado
+  - Lead 308 | Mar Brasil Digital | Larissa Gomes | (13) 93262-8768 | Score 76 | parceria_fechada
+  - Lead 331 | Riviera Blue Centro | Luciana Lima | (11) 98247-2125 | Score 76 | contato_inicial_enviado
+  - Lead 343 | Beta Imóveis Centro | João Alves | (13) 95648-3218 | Score 76 | parceria_fechada
+  - Lead 346 | Beta Imóveis View | Fernanda Souza | (11) 93051-3390 | Score 76 | contato_inicial_enviado
+  - Lead 400 | Região Sul Prime | Paulo Silva | (13) 98253-9337 | Score 76 | contato_inicial_enviado
+  - Lead 416 | Litoral Premium Imóveis | Carlos Ferreira | (13) 94382-1386 | Score 76 | contato_inicial_enviado
+  - Lead 467 | Sol & Mar Digital | João Silva | (11) 97359-1152 | Score 76 | contato_inicial_enviado
+  - Lead 493 | Barra Digital Tech | Camila Teixeira | (13) 91547-5878 | Score 76 | contato_inicial_enviado
+  - Lead 583 | Barra Digital Centro | Luciana Alves | (13) 93236-9165 | Score 76 | parceria_fechada
+  - Lead 245 | Região Sul Prime | João Gomes | (13) 95322-8197 | Score 75 | contato_inicial_enviado
+  - Lead 320 | Barra Digital Praia | Paulo Rocha | (13) 95136-5336 | Score 75 | contato_inicial_enviado
+  - Lead 350 | Costa Verde Litoral | Paulo Pereira | (13) 99100-8283 | Score 75 | parceria_fechada
+  - Lead 437 | Edifica Praia Blue | Larissa Mendes | (11) 93377-1733 | Score 75 | contato_inicial_enviado
+  - Lead 446 | Alpha Imóveis Prime | Patrícia Teixeira | (11) 96083-1012 | Score 75 | contato_inicial_enviado
+  - Lead 447 | Santos Tower Centro | Maria Rocha | (13) 97895-1094 | Score 75 | contato_inicial_enviado
+  - Lead 451 | Litoral Premium Praia | João Teixeira | (13) 99866-9337 | Score 75 | contato_inicial_enviado
+  - Lead 452 | Norte Sul Centro | Ana Lima | (11) 92614-6713 | Score 75 | contato_inicial_enviado
+  - Lead 466 | Itanhaém Premium Blue | Camila Lopes | (11) 92504-4149 | Score 75 | contato_inicial_enviado
+  - Lead 503 | Edifica Praia Tech | João Teixeira | (11) 91715-8447 | Score 75 | contato_inicial_enviado
+  - Lead 541 | Barra Digital Site | Maria Silva | (13) 99830-7674 | Score 75 | contato_inicial_enviado
+  - Lead 549 | Costa Azul Prime | Thiago Pereira | (13) 98441-5882 | Score 75 | parceria_fechada
+  - Lead 576 | Sol & Mar View | Bruno Monteiro | (13) 93345-5116 | Score 75 | contato_inicial_enviado
+  - Lead 599 | Prime Imóveis Prime | Ana Rocha | (11) 98843-7125 | Score 75 | contato_inicial_enviado
+  - Lead 235 | Santos Tower Centro | Bruno Costa | (13) 98059-7278 | Score 74 | contato_inicial_enviado
+  - Lead 318 | Norte Sul Praia | Ana Nunes | (13) 92887-7643 | Score 74 | parceria_fechada
+  - Lead 333 | Mar & Sol Centro | João Rocha | (11) 95758-1024 | Score 74 | contato_inicial_enviado
+  - Lead 353 | Mar & Sol Litoral | Bruno Lopes | (11) 99191-8737 | Score 74 | contato_inicial_enviado
+  - Lead 369 | Norte Sul Digital | Ana Nunes | (11) 98880-5206 | Score 74 | contato_inicial_enviado
+  - Lead 404 | Sol & Mar Blue | Paulo Mendes | (11) 99282-8480 | Score 74 | contato_inicial_enviado
+  - Lead 449 | Mar & Sol View | Fernanda Rocha | (11) 93428-4960 | Score 74 | contato_inicial_enviado
+  - Lead 523 | Praia Grande Site View | Camila Souza | (13) 96571-4825 | Score 74 | contato_inicial_enviado
+  - Lead 551 | Ocean Blue Centro | Rafael Moreira | (13) 99917-1240 | Score 74 | contato_inicial_enviado
+  - Lead 587 | Mar Blue | Carlos Moreira | (11) 93736-8519 | Score 74 | contato_inicial_enviado
+  - Lead 254 | Riviera Blue View | Juliana Mendes | (11) 98811-3908 | Score 73 | contato_inicial_enviado
+  - Lead 292 | Região Sul Litoral | João Nunes | (11) 91144-3808 | Score 73 | contato_inicial_enviado
+  - Lead 303 | Mar & Sol View | Bruno Teixeira | (13) 98452-7334 | Score 73 | parceria_fechada
+  - Lead 490 | Costa Azul Blue | Felipe Ribeiro | (13) 91207-4728 | Score 73 | contato_inicial_enviado
+  - Lead 223 | Edifica Praia View | Bruno Souza | (13) 93280-7875 | Score 72 | contato_inicial_enviado
+  - Lead 297 | Beta Imóveis Litoral | Luciana Gomes | (11) 97048-8262 | Score 72 | contato_inicial_enviado
+  - Lead 379 | Ocean Blue Litoral | Patrícia Alves | (11) 99585-4158 | Score 72 | contato_inicial_enviado
+  - Lead 381 | Barra Digital Imóveis | Juliana Costa | (11) 92839-5285 | Score 72 | contato_inicial_enviado
+  - Lead 388 | Caiçara Digital Litoral | Ricardo Pereira | (13) 92016-1105 | Score 72 | contato_inicial_enviado
+  - Lead 399 | Porto da Lua Centro | Ricardo Alves | (11) 99976-7375 | Score 72 | contato_inicial_enviado
+  - Lead 426 | Edifica Praia Blue | Mariana Gomes | (11) 92797-6470 | Score 72 | parceria_fechada
+  - Lead 454 | Região Sul Prime | Paulo Gomes | (11) 92112-2115 | Score 72 | contato_inicial_enviado
+  - Lead 544 | Itanhaém Premium View | João Moreira | (11) 97799-5265 | Score 72 | contato_inicial_enviado
+  - Lead 561 | Barra Digital Site | Carlos Moura | (11) 93424-2014 | Score 72 | contato_inicial_enviado
+  - Lead 577 | Costa Azul  Prop | Juliana Costa | (13) 93812-9300 | Score 72 | parceria_fechada
+  - Lead 579 | Porto da Lua Prop | Paulo Mendes | (13) 91100-3520 | Score 72 | parceria_fechada
+  - Lead 322 | Realize II Litoral | Juliana Silva | (11) 94872-6057 | Score 71 | contato_inicial_enviado
+  - Lead 362 | Riviera Blue Tech | João Mendes | (13) 99378-6142 | Score 71 | contato_inicial_enviado
+  - Lead 365 | Praia Grande Site Tech | Bruno Mendes | (13) 97990-4503 | Score 71 | contato_inicial_enviado
+  - Lead 402 | Ocean Blue Blue | Larissa Rocha | (11) 97304-5105 | Score 71 | contato_inicial_enviado
+  - Lead 413 | Riviera Blue View | Juliana Rocha | (13) 98415-4788 | Score 71 | contato_inicial_enviado
+  - Lead 432 | Beta Imóveis Centro | João Barros | (13) 98177-2953 | Score 71 | contato_inicial_enviado
+  - Lead 508 | Barra Digital View | Mariana Mendes | (11) 91376-2618 | Score 71 | contato_inicial_enviado
+  - Lead 562 | Litoral Blue | Luciana Rocha | (13) 98025-9395 | Score 71 | contato_inicial_enviado
+  - Lead 574 | Alpha Imóveis Centro | Ana Freitas | (13) 92751-7359 | Score 71 | contato_inicial_enviado
+  - Lead 590 | Costa Azul Prop | Maria Costa | (13) 99429-3889 | Score 71 | parceria_fechada
+  - Lead 224 | Beta Imóveis View | Ricardo Pereira | (11) 96558-5448 | Score 70 | contato_inicial_enviado
+  - Lead 241 | Norte Sul Blue | Ana Costa | (11) 92039-5729 | Score 70 | contato_inicial_enviado
+  - Lead 243 | Norte Sul Prime | Carlos Costa | (13) 92099-4872 | Score 70 | contato_inicial_enviado
+  - Lead 258 | Sol & Mar Digital | Ricardo Mendes | (13) 92751-8996 | Score 70 | contato_inicial_enviado
+  - Lead 338 | Mar & Sol Site | Ana Rocha | (11) 97427-9546 | Score 70 | contato_inicial_enviado
+  - Lead 450 | Ocean Blue Prime | Fernanda Souza | (13) 95531-6674 | Score 70 | contato_inicial_enviado
+  - Lead 511 | Litoral Premium Site | Camila Mendes | (11) 92090-4726 | Score 70 | contato_inicial_enviado
+  - Lead 514 | Mongaguá Imóveis Praia | Ana Alves | (13) 96664-4868 | Score 70 | parceria_fechada
+  - Lead 589 | Vista Mar Litoral | Amanda Moura | (13) 92482-5169 | Score 70 | parceria_fechada
+  - Lead 596 | Caiçara Digital Praia | Fernanda Rocha | (13) 94618-3420 | Score 70 | parceria_fechada
+  - Lead 337 | Região Sul Site | Bruno Mendes | (11) 97343-3150 | Score 69 | contato_inicial_enviado
+  - Lead 328 | Ocean Blue Prime | Juliana Nunes | (13) 98517-2496 | Score 68 | contato_inicial_enviado
+  - Lead 51 | Litoral Premium Sant | Roberto Dias | (13) 99999-0036 | Score 24 | interessado
+  - Lead 66 | Santos Ocean View | Tatiane Moreira | (13) 99999-0066 | Score 24 | parceria_fechada
+  - Lead 76 | Santos Premium Digital | Viviane Paes | (13) 99999-0076 | Score 24 | parceria_fechada
+  - Lead 91 | Santos Tower Imóveis | Helena Vaz | (13) 99999-0091 | Score 24 | parceria_fechada
+  - Lead 101 | Santos Luxo | Isabela Fernandes | (13) 99999-0101 | Score 24 | parceria_fechada
+  - Lead 121 | Santos Smart Home | Mariana Costa | (13) 99999-0121 | Score 24 | parceria_fechada
+  - Lead 141 | Santos Executive | Roberto Dias | (13) 99999-0141 | Score 24 | parceria_fechada
+  - Lead 161 | Santos Bay Homes | Patrícia Gomes | (13) 99999-0161 | Score 24 | parceria_fechada
+  - Lead 176 | Santos Launch | Renata Almeida | (13) 99999-0176 | Score 24 | parceria_fechada
+  - Lead 186 | Santos Platinum | Roberto Dias | (13) 99999-0186 | Score 24 | parceria_fechada
+  - Lead 201 | Santos Elite | Viviane Paes | (13) 99999-0201 | Score 24 | parceria_fechada
+  - Lead 216 | Santos Prime | Helena Vaz | (13) 99999-0216 | Score 24 | parceria_fechada
+  - Lead 8 | Ocean Blue Digital | Maria Barros | (13) 99999-0008 | Score 23 | parceria_fechada
+  - Lead 24 | Praia Grande Imóveis | Ricardo Barros | (13) 99999-0024 | Score 23 | parceria_fechada
+  - Lead 41 | Cibratel Imóveis | Teresa Almeida | (13) 99999-0041 | Score 23 | parceria_fechada
+  - Lead 129 | Riviera Business | Larissa Barros | (13) 99999-0129 | Score 23 | parceria_fechada
+  - Lead 184 | Riviera Launch | Larissa Nunes | (13) 99999-0184 | Score 23 | interessado
+  - Lead 194 | Riviera Platinum | Gustavo Nunes | (13) 99999-0194 | Score 23 | interessado
+  - Lead 209 | Riviera Elite | Isabela Costa | (13) 99999-0209 | Score 23 | interessado
+  - Lead 6 | Beta Imóveis Centro | Fernanda Nunes | (13) 99999-0006 | Score 22 | interessado
+
+### Dia 5 — 15/07/2026 — 100 leads
+- Distribuição: Santos: 29, Bertioga: 19, Peruíbe: 15, Praia Grande: 13, Guarujá: 12, Itanhaém: 12
+- Leads:
+  - Lead 10 | Região Sul Praia | Carlos Barros | (13) 99999-0010 | Score 22 | parceria_fechada
+  - Lead 21 | Litoral Norte Premium | Mariana Costa | (13) 99999-0021 | Score 22 | interessado
+  - Lead 34 | Caiçara Imóveis | Luciana Souza | (13) 99999-0034 | Score 22 | interessado
+  - Lead 54 | Praia Grande Norte | Fernanda Lima | (13) 99999-0039 | Score 22 | interessado
+  - Lead 59 | Riviera Norte | Mariana Costa | (13) 99999-0044 | Score 22 | interessado
+  - Lead 64 | Caiçara Norte | Luciana Dias | (13) 99999-0049 | Score 22 | parceria_fechada
+  - Lead 74 | Riviera Digital | Larissa Costa | (13) 99999-0074 | Score 22 | interessado
+  - Lead 89 | Caiçara Digital | Patrícia Lima | (13) 99999-0089 | Score 22 | interessado
+  - Lead 99 | Riviera Exclusive | Natália Almeida | (13) 99999-0099 | Score 22 | interessado
+  - Lead 109 | Riviera Exclusive | Larissa Gomes | (13) 99999-0109 | Score 22 | contato_inicial_enviado
+  - Lead 114 | Caiçara Imóveis | Luciana Dias | (13) 99999-0114 | Score 22 | contato_inicial_enviado
+  - Lead 134 | Caiçara Conectada | Marcelo Lima | (13) 99999-0134 | Score 22 | contato_inicial_enviado
+  - Lead 149 | Riviera Executive | Gustavo Nunes | (13) 99999-0149 | Score 22 | contato_inicial_enviado
+  - Lead 154 | Caiçara Executive | Marcelo Dias | (13) 99999-0154 | Score 22 | parceria_fechada
+  - Lead 169 | Riviera Exclusive | Larissa Ferreira | (13) 99999-0169 | Score 22 | contato_inicial_enviado
+  - Lead 174 | Caiçara Conectada | Luciana Dias | (13) 99999-0174 | Score 22 | contato_inicial_enviado
+  - Lead 199 | Caiçara Platinum | Marcelo Dias | (13) 99999-0199 | Score 22 | contato_inicial_enviado
+  - Lead 212 | Embaré Elite | Rafaela Nunes | (13) 99999-0212 | Score 22 | contato_inicial_enviado
+  - Lead 214 | Caiçara Elite | Patrícia Lima | (13) 99999-0214 | Score 22 | contato_inicial_enviado
+  - Lead 15 | Prime Imóveis Digital | Ricardo Lima | (13) 99999-0015 | Score 21 | interessado
+  - Lead 19 | Litoral Norte Imóveis | Renato Almeida | (13) 99999-0019 | Score 21 | contato_inicial_enviado
+  - Lead 29 | Riviera Imóveis | Ana Barros | (13) 99999-0029 | Score 21 | contato_inicial_enviado
+  - Lead 32 | Boqueirão Imóveis | Paulo Mendes | (13) 99999-0032 | Score 21 | contato_inicial_enviado
+  - Lead 62 | Boqueirão Norte | Paulo Costa | (13) 99999-0047 | Score 21 | contato_inicial_enviado
+  - Lead 84 | Riviera Blue | Isabela Costa | (13) 99999-0084 | Score 21 | contato_inicial_enviado
+  - Lead 87 | Embaré Digital | Rafaela Nunes | (13) 99999-0087 | Score 21 | parceria_fechada
+  - Lead 106 | Peruíbe Eco | Thiago Rocha | (13) 99999-0106 | Score 21 | contato_inicial_enviado
+  - Lead 111 | Gonzaga Digital | Patrícia Ribeiro | (13) 99999-0111 | Score 21 | contato_inicial_enviado
+  - Lead 112 | Embaré Tech | Paulo Nunes | (13) 99999-0112 | Score 21 | contato_inicial_enviado
+  - Lead 126 | Peruíbe Natureza | Carlos Dias | (13) 99999-0126 | Score 21 | contato_inicial_enviado
+  - Lead 131 | Gonzaga Smart | Bianca Martins | (13) 99999-0131 | Score 21 | contato_inicial_enviado
+  - Lead 132 | Embaré Conecta | Paulo Ferreira | (13) 99999-0132 | Score 21 | contato_inicial_enviado
+  - Lead 146 | Peruíbe Executive | Amanda Souza | (13) 99999-0146 | Score 21 | contato_inicial_enviado
+  - Lead 151 | Gonzaga Executive | Fábio Costa | (13) 99999-0151 | Score 21 | contato_inicial_enviado
+  - Lead 152 | Embaré Executive | Patrícia Ferreira | (13) 99999-0152 | Score 21 | contato_inicial_enviado
+  - Lead 166 | Peruíbe Nature | Gustavo Almeida | (13) 99999-0166 | Score 21 | contato_inicial_enviado
+  - Lead 171 | Gonzaga Digital | Bianca Martins | (13) 99999-0171 | Score 21 | contato_inicial_enviado
+  - Lead 172 | Embaré Tech | Paulo Nunes | (13) 99999-0172 | Score 21 | parceria_fechada
+  - Lead 181 | Peruíbe Launch | Gustavo Costa | (13) 99999-0181 | Score 21 | parceria_fechada
+  - Lead 191 | Peruíbe Platinum | Amanda Souza | (13) 99999-0191 | Score 21 | contato_inicial_enviado
+  - Lead 196 | Gonzaga Platinum | Fábio Costa | (13) 99999-0196 | Score 21 | contato_inicial_enviado
+  - Lead 197 | Embaré Platinum | Patrícia Ferreira | (13) 99999-0197 | Score 21 | contato_inicial_enviado
+  - Lead 206 | Peruíbe Elite | Gustavo Henrique | (13) 99999-0206 | Score 21 | contato_inicial_enviado
+  - Lead 211 | Gonzaga Elite | Camila Ribeiro | (13) 99999-0211 | Score 21 | parceria_fechada
+  - Lead 31 | Gonzaga Premium | Mariana Rocha | (13) 99999-0031 | Score 20 | contato_inicial_enviado
+  - Lead 46 | Rio Preto Sol | Luciana Barros | (13) 99999-0046 | Score 20 | contato_inicial_enviado
+  - Lead 56 | Peruíbe Norte | Camila Souza | (13) 99999-0041 | Score 20 | contato_inicial_enviado
+  - Lead 61 | Gonzaga Sul | Patrícia Almeida | (13) 99999-0046 | Score 20 | contato_inicial_enviado
+  - Lead 71 | Peruíbe Coast | Felipe Nascimento | (13) 99999-0071 | Score 20 | contato_inicial_enviado
+  - Lead 78 | Bertioga Centro | Débora Almeida | (13) 99999-0078 | Score 20 | contato_inicial_enviado
+  - Lead 81 | Peruíbe Centro Digital | Gustavo Henrique | (13) 99999-0081 | Score 20 | parceria_fechada
+  - Lead 86 | Gonzaga Norte | Camila Ribeiro | (13) 99999-0086 | Score 20 | contato_inicial_enviado
+  - Lead 96 | Peruíbe Ecologic | Humberto Costa | (13) 99999-0096 | Score 20 | contato_inicial_enviado
+  - Lead 116 | Santos Smart | Renato Lima | (13) 99999-0116 | Score 20 | parceria_fechada
+  - Lead 136 | Santos Connect | Juliano Mendes | (13) 99999-0136 | Score 20 | parceria_fechada
+  - Lead 156 | Santos Vision | Juliano Mendes | (13) 99999-0156 | Score 20 | contato_inicial_enviado
+  - Lead 188 | Bertioga Platinum | Paulo Mendes | (13) 99999-0188 | Score 20 | contato_inicial_enviado
+  - Lead 203 | Bertioga Elite | Débora Almeida | (13) 99999-0203 | Score 20 | contato_inicial_enviado
+  - Lead 218 | Bertioga Prime | Monique Rocha | (13) 99999-0218 | Score 20 | contato_inicial_enviado
+  - Lead 13 | Mar & Sol Praia | Patrícia Barros | (13) 99999-0013 | Score 19 | contato_inicial_enviado
+  - Lead 18 | Mar & Sol Litoral | Luciana Souza | (13) 99999-0018 | Score 19 | parceria_fechada
+  - Lead 26 | Peruíbe Sol | Fernanda Costa | (13) 99999-0026 | Score 19 | contato_inicial_enviado
+  - Lead 39 | Ponta da Praia | Marina Rocha | (13) 99999-0039 | Score 19 | contato_inicial_enviado
+  - Lead 83 | Itanhaém Norte | Thiago Lima | (13) 99999-0083 | Score 19 | contato_inicial_enviado
+  - Lead 92 | Guarujá Blue Tech | Igor Barros | (13) 99999-0092 | Score 19 | contato_inicial_enviado
+  - Lead 93 | Bertioga Riviera Tech | Monique Rocha | (13) 99999-0093 | Score 19 | contato_inicial_enviado
+  - Lead 98 | Itanhaém Premium | Fábio Souza | (13) 99999-0098 | Score 19 | contato_inicial_enviado
+  - Lead 102 | Guarujá Premium | Leonardo Azevedo | (13) 99999-0102 | Score 19 | contato_inicial_enviado
+  - Lead 103 | Bertioga Green | Fernanda Lopes | (13) 99999-0103 | Score 19 | contato_inicial_enviado
+  - Lead 108 | Itanhaém Premium | Fábio Carvalho | (13) 99999-0108 | Score 19 | contato_inicial_enviado
+  - Lead 119 | Praia Grande Smart | Fernanda Rocha | (13) 99999-0119 | Score 19 | contato_inicial_enviado
+  - Lead 122 | Guarujá Conecta | Thiago Almeida | (13) 99999-0122 | Score 19 | parceria_fechada
+  - Lead 123 | Bertioga Inovação | Fernanda Lima | (13) 99999-0123 | Score 19 | parceria_fechada
+  - Lead 128 | Itanhaém Surf | Gustavo Costa | (13) 99999-0128 | Score 19 | parceria_fechada
+  - Lead 139 | Praia Grande Relax | Carla Nunes | (13) 99999-0139 | Score 19 | contato_inicial_enviado
+  - Lead 142 | Guarujá Executive | Marina Costa | (13) 99999-0142 | Score 19 | contato_inicial_enviado
+  - Lead 143 | Bertioga Executive | Paulo Mendes | (13) 99999-0143 | Score 19 | contato_inicial_enviado
+  - Lead 148 | Itanhaém Executive | Larissa Barros | (13) 99999-0148 | Score 19 | contato_inicial_enviado
+  - Lead 159 | Praia Grande Vision | Carla Nunes | (13) 99999-0159 | Score 19 | contato_inicial_enviado
+  - Lead 162 | Guarujá Coast Imóveis | André Luiz | (13) 99999-0162 | Score 19 | contato_inicial_enviado
+  - Lead 163 | Bertioga Premium | Fernanda Costa | (13) 99999-0163 | Score 19 | contato_inicial_enviado
+  - Lead 168 | Itanhaém Premium | Fábio Souza | (13) 99999-0168 | Score 19 | contato_inicial_enviado
+  - Lead 177 | Guarujá Launch | Thiago Barros | (13) 99999-0177 | Score 19 | contato_inicial_enviado
+  - Lead 178 | Bertioga Launch | Fernanda Rocha | (13) 99999-0178 | Score 19 | contato_inicial_enviado
+  - Lead 183 | Itanhaém Launch | Fábio Souza | (13) 99999-0183 | Score 19 | contato_inicial_enviado
+  - Lead 187 | Guarujá Platinum | Marina Costa | (13) 99999-0187 | Score 19 | contato_inicial_enviado
+  - Lead 193 | Itanhaém Platinum | Larissa Barros | (13) 99999-0193 | Score 19 | contato_inicial_enviado
+  - Lead 202 | Guarujá Elite | Fábio Rocha | (13) 99999-0202 | Score 19 | contato_inicial_enviado
+  - Lead 208 | Itanhaém Elite | Thiago Lima | (13) 99999-0208 | Score 19 | contato_inicial_enviado
+  - Lead 217 | Guarujá Prime | Igor Barros | (13) 99999-0217 | Score 19 | contato_inicial_enviado
+  - Lead 4 | Norte Sul Praia | Ana Lima | (13) 99999-0004 | Score 18 | contato_inicial_enviado
+  - Lead 9 | Ocean Blue Centro | Luciana Nunes | (13) 99999-0009 | Score 18 | contato_inicial_enviado
+  - Lead 16 | Prime Imóveis Site | Fernanda Souza | (13) 99999-0016 | Score 18 | contato_inicial_enviado
+  - Lead 28 | Itanhaém Mar | Carlos Souza | (13) 99999-0028 | Score 18 | contato_inicial_enviado
+  - Lead 37 | José Menino Premium | Paula Souza | (13) 99999-0037 | Score 18 | contato_inicial_enviado
+  - Lead 43 | Gaivota Imóveis | Paula Torres | (13) 99999-0043 | Score 18 | contato_inicial_enviado
+  - Lead 50 | Litoral Sul Imóveis | Carolina Mendes | (13) 99999-0050 | Score 18 | parceria_fechada
+  - Lead 58 | Itanhaém Centro | Luciana Barros | (13) 99999-0043 | Score 18 | contato_inicial_enviado
+  - Lead 67 | Guarujá Blue | Eduardo Pires | (13) 99999-0067 | Score 18 | contato_inicial_enviado
+  - Lead 68 | Bertioga Riviera | Sofia Almeida | (13) 99999-0068 | Score 18 | contato_inicial_enviado
+
+### Dia 6 — 16/07/2026 — 100 leads
+- Distribuição: São Vicente: 28, Guarujá: 18, Mongaguá: 17, Praia Grande: 13, Peruíbe: 10, Bertioga: 8, Itanhaém: 3, Santos: 3
+- Leads:
+  - Lead 73 | Itanhaém View | Gustavo Lima | (13) 99999-0073 | Score 18 | contato_inicial_enviado
+  - Lead 118 | Bertioga Smart | Ricardo Souza | (13) 99999-0118 | Score 18 | contato_inicial_enviado
+  - Lead 137 | Guarujá Zen | Amanda Rocha | (13) 99999-0137 | Score 18 | contato_inicial_enviado
+  - Lead 138 | Bertioga Premium | André Luiz | (13) 99999-0138 | Score 18 | contato_inicial_enviado
+  - Lead 157 | Guarujá Vision | Aline Barros | (13) 99999-0157 | Score 18 | contato_inicial_enviado
+  - Lead 158 | Bertioga Vision | Ricardo Souza | (13) 99999-0158 | Score 18 | parceria_fechada
+  - Lead 1 | Alpha Imóveis Praia | Carlos Lima | (13) 99999-0001 | Score 17 | contato_inicial_enviado
+  - Lead 17 | Região Sul Centro | Fernanda Rocha | (13) 99999-0017 | Score 17 | parceria_fechada
+  - Lead 22 | Maresias Imóveis | Paulo Ribeiro | (13) 99999-0022 | Score 17 | contato_inicial_enviado
+  - Lead 27 | Mongaguá Atlântica | Luciana Nunes | (13) 99999-0027 | Score 17 | contato_inicial_enviado
+  - Lead 36 | Vila Tupi Imóveis | Renata Lima | (13) 99999-0036 | Score 17 | contato_inicial_enviado
+  - Lead 44 | Baixio Digital | Ricardo Nunes | (13) 99999-0044 | Score 17 | parceria_fechada
+  - Lead 49 | Jussara Digital | Ricardo Souza | (13) 99999-0049 | Score 17 | contato_inicial_enviado
+  - Lead 57 | Mongaguá Sul | Ricardo Nunes | (13) 99999-0042 | Score 17 | contato_inicial_enviado
+  - Lead 65 | Barra Peruíbe Sul | Ricardo Almeida | (13) 99999-0050 | Score 17 | contato_inicial_enviado
+  - Lead 72 | Mongaguá Beach | Aline Torres | (13) 99999-0072 | Score 17 | contato_inicial_enviado
+  - Lead 82 | Mongaguá Centro | Lívia Souza | (13) 99999-0082 | Score 17 | contato_inicial_enviado
+  - Lead 90 | Barra Norte | Marcelo Barros | (13) 99999-0090 | Score 17 | contato_inicial_enviado
+  - Lead 97 | Mongaguá Tropical | Catarina Lima | (13) 99999-0097 | Score 17 | contato_inicial_enviado
+  - Lead 107 | Mongaguá Blue | Camila Ferreira | (13) 99999-0107 | Score 17 | contato_inicial_enviado
+  - Lead 115 | Barra Norte | Marcelo Almeida | (13) 99999-0115 | Score 17 | contato_inicial_enviado
+  - Lead 117 | Guarujá Smart | Aline Barros | (13) 99999-0117 | Score 17 | contato_inicial_enviado
+  - Lead 127 | Mongaguá Relax | Aline Souza | (13) 99999-0127 | Score 17 | contato_inicial_enviado
+  - Lead 135 | Barra Digital | Fernanda Costa | (13) 99999-0135 | Score 17 | contato_inicial_enviado
+  - Lead 147 | Mongaguá Executive | Ricardo Rocha | (13) 99999-0147 | Score 17 | contato_inicial_enviado
+  - Lead 155 | Barra Executive | Fernanda Costa | (13) 99999-0155 | Score 17 | contato_inicial_enviado
+  - Lead 167 | Mongaguá Blue | Camila Rocha | (13) 99999-0167 | Score 17 | contato_inicial_enviado
+  - Lead 175 | Barra Norte | Marcelo Almeida | (13) 99999-0175 | Score 17 | parceria_fechada
+  - Lead 182 | Mongaguá Launch | Camila Lima | (13) 99999-0182 | Score 17 | contato_inicial_enviado
+  - Lead 192 | Mongaguá Platinum | Ricardo Rocha | (13) 99999-0192 | Score 17 | contato_inicial_enviado
+  - Lead 200 | Barra Platinum | Fernanda Costa | (13) 99999-0200 | Score 17 | parceria_fechada
+  - Lead 207 | Mongaguá Elite | Lívia Souza | (13) 99999-0207 | Score 17 | contato_inicial_enviado
+  - Lead 215 | Barra Elite | Marcelo Barros | (13) 99999-0215 | Score 17 | contato_inicial_enviado
+  - Lead 2 | Região Sul Digital | Ana Lima | (13) 99999-0002 | Score 16 | contato_inicial_enviado
+  - Lead 3 | Ocean Blue Digital | Maria Barros | (13) 99999-0003 | Score 16 | parceria_fechada
+  - Lead 12 | Norte Sul Site | Luciana Costa | (13) 99999-0012 | Score 16 | contato_inicial_enviado
+  - Lead 14 | Sol & Mar Centro | Fernanda Nunes | (13) 99999-0014 | Score 16 | contato_inicial_enviado
+  - Lead 35 | Barra de Peruíbe | Carlos Almeida | (13) 99999-0035 | Score 16 | contato_inicial_enviado
+  - Lead 48 | Balneário Conchas | Fernanda Lima | (13) 99999-0048 | Score 16 | contato_inicial_enviado
+  - Lead 52 | Maresias Tech | Juliana Mendes | (13) 99999-0037 | Score 16 | contato_inicial_enviado
+  - Lead 77 | Guarujá Norte Digital | Fábio Rocha | (13) 99999-0077 | Score 16 | parceria_fechada
+  - Lead 79 | Praia Grande Sul | Bruno Mendes | (13) 99999-0079 | Score 16 | contato_inicial_enviado
+  - Lead 104 | Praia Grande Business | André Luiz | (13) 99999-0104 | Score 16 | contato_inicial_enviado
+  - Lead 124 | Praia Grande Estrutura | Ricardo Nunes | (13) 99999-0124 | Score 16 | contato_inicial_enviado
+  - Lead 144 | Praia Grande Executive | Fernanda Lima | (13) 99999-0144 | Score 16 | contato_inicial_enviado
+  - Lead 164 | Praia Grande Smart | Ricardo Lima | (13) 99999-0164 | Score 16 | contato_inicial_enviado
+  - Lead 179 | Praia Grande Launch | Ricardo Mendes | (13) 99999-0179 | Score 16 | contato_inicial_enviado
+  - Lead 189 | Praia Grande Platinum | Fernanda Lima | (13) 99999-0189 | Score 16 | contato_inicial_enviado
+  - Lead 204 | Praia Grande Elite | Bruno Mendes | (13) 99999-0204 | Score 16 | contato_inicial_enviado
+  - Lead 219 | Praia Grande Prime | Rodrigo Dias | (13) 99999-0219 | Score 16 | parceria_fechada
+  - Lead 5 | Beta Imóveis Praia | Maria Rocha | (13) 99999-0005 | Score 15 | contato_inicial_enviado
+  - Lead 7 | Região Sul Digital | Ricardo Mendes | (13) 99999-0007 | Score 15 | contato_inicial_enviado
+  - Lead 11 | Imobiliária Litoral Litoral | Luciana Mendes | (13) 99999-0011 | Score 15 | contato_inicial_enviado
+  - Lead 20 | Costa Azul Imóveis | Amanda Costa | (13) 99999-0020 | Score 15 | contato_inicial_enviado
+  - Lead 47 | Vila São Paulo | Paulo Almeida | (13) 99999-0047 | Score 15 | contato_inicial_enviado
+  - Lead 69 | Praia Grande Park | Marcos Vinícius | (13) 99999-0069 | Score 15 | contato_inicial_enviado
+  - Lead 94 | Praia Grande Center | Rodrigo Dias | (13) 99999-0094 | Score 15 | contato_inicial_enviado
+  - Lead 38 | Jardim Rio Branco | Ricardo Costa | (13) 99999-0038 | Score 14 | contato_inicial_enviado
+  - Lead 70 | São Vicente Bay | Bianca Ramos | (13) 99999-0070 | Score 14 | parceria_fechada
+  - Lead 190 | São Vicente Platinum | Carlos Almeida | (13) 99999-0190 | Score 14 | contato_inicial_enviado
+  - Lead 205 | São Vicente Elite | Carla Dias | (13) 99999-0205 | Score 14 | contato_inicial_enviado
+  - Lead 220 | São Vicente Prime | Priscila Nunes | (13) 99999-0220 | Score 14 | contato_inicial_enviado
+  - Lead 25 | São Vicente Premium | Patrícia Lima | (13) 99999-0025 | Score 13 | contato_inicial_enviado
+  - Lead 40 | Agenor de Campos | Lucas Mendes | (13) 99999-0040 | Score 13 | contato_inicial_enviado
+  - Lead 42 | Jardim Grandesp | Fábio Rocha | (13) 99999-0042 | Score 13 | parceria_fechada
+  - Lead 45 | Itinguçu Imóveis | Camila Costa | (13) 99999-0045 | Score 13 | contato_inicial_enviado
+  - Lead 53 | Guarujá Mar Digital | André Costa | (13) 99999-0038 | Score 13 | contato_inicial_enviado
+  - Lead 55 | São Vicente Sul | Paulo Rocha | (13) 99999-0040 | Score 13 | parceria_fechada
+  - Lead 80 | São Vicente Norte | Carla Dias | (13) 99999-0080 | Score 13 | contato_inicial_enviado
+  - Lead 95 | São Vicente Green | Priscila Nunes | (13) 99999-0095 | Score 13 | contato_inicial_enviado
+  - Lead 105 | São Vicente Bay | Juliana Martins | (13) 99999-0105 | Score 13 | contato_inicial_enviado
+  - Lead 125 | São Vicente Conectada | Patrícia Mendes | (13) 99999-0125 | Score 13 | contato_inicial_enviado
+  - Lead 145 | São Vicente Executive | Carlos Almeida | (13) 99999-0145 | Score 13 | contato_inicial_enviado
+  - Lead 165 | São Vicente Connect | Carla Dias | (13) 99999-0165 | Score 13 | contato_inicial_enviado
+  - Lead 180 | São Vicente Launch | Carla Dias | (13) 99999-0180 | Score 13 | contato_inicial_enviado
+  - Lead 23 | Enseada Digital | Camila Torres | (13) 99999-0023 | Score 12 | contato_inicial_enviado
+  - Lead 30 | Tombo Imóveis | Ricardo Lima | (13) 99999-0030 | Score 12 | parceria_fechada
+  - Lead 85 | Tombo Digital | Alexandre Pires | (13) 99999-0085 | Score 12 | contato_inicial_enviado
+  - Lead 110 | Tombo Beach | Rafael Almeida | (13) 99999-0110 | Score 12 | contato_inicial_enviado
+  - Lead 120 | São Vicente Smart | Carlos Mendes | (13) 99999-0120 | Score 12 | contato_inicial_enviado
+  - Lead 130 | Tombo Surf | Fábio Ribeiro | (13) 99999-0130 | Score 12 | contato_inicial_enviado
+  - Lead 140 | São Vicente Premium | Rodrigo Almeida | (13) 99999-0140 | Score 12 | contato_inicial_enviado
+  - Lead 150 | Tombo Executive | Bianca Martins | (13) 99999-0150 | Score 12 | contato_inicial_enviado
+  - Lead 160 | São Vicente Vision | Rodrigo Almeida | (13) 99999-0160 | Score 12 | parceria_fechada
+  - Lead 170 | Tombo Beach | Rafael Barros | (13) 99999-0170 | Score 12 | contato_inicial_enviado
+  - Lead 185 | Tombo Launch | Rafael Almeida | (13) 99999-0185 | Score 12 | contato_inicial_enviado
+  - Lead 195 | Tombo Platinum | Bianca Martins | (13) 99999-0195 | Score 12 | contato_inicial_enviado
+  - Lead 210 | Tombo Elite | Alexandre Pires | (13) 99999-0210 | Score 12 | contato_inicial_enviado
+  - Lead 60 | Tombo Norte | Carlos Mendes | (13) 99999-0045 | Score 11 | contato_inicial_enviado
+  - Lead 75 | Tombo Beach | Rafael Souza | (13) 99999-0075 | Score 11 | contato_inicial_enviado
+  - Lead 88 | Catiapoã Sul | Daniel Almeida | (13) 99999-0088 | Score 11 | contato_inicial_enviado
+  - Lead 100 | Tombo Exclusive | Caio Ribeiro | (13) 99999-0100 | Score 11 | contato_inicial_enviado
+  - Lead 133 | Catiapoã Nature | Renata Almeida | (13) 99999-0133 | Score 11 | contato_inicial_enviado
+  - Lead 173 | Catiapoã Nature | Fernanda Costa | (13) 99999-0173 | Score 11 | contato_inicial_enviado
+  - Lead 198 | Catiapoã Platinum | Renata Almeida | (13) 99999-0198 | Score 11 | contato_inicial_enviado
+  - Lead 213 | Catiapoã Elite | Daniel Almeida | (13) 99999-0213 | Score 11 | contato_inicial_enviado
+  - Lead 33 | Catiapoã Digital | Fernanda Costa | (13) 99999-0033 | Score 10 | parceria_fechada
+  - Lead 63 | Catiapoã Norte | Fernanda Rocha | (13) 99999-0048 | Score 10 | contato_inicial_enviado
+  - Lead 113 | Catiapoã Digital | Fernanda Costa | (13) 99999-0113 | Score 10 | contato_inicial_enviado
+  - Lead 153 | Catiapoã Executive | Renata Almeida | (13) 99999-0153 | Score 10 | contato_inicial_enviado
