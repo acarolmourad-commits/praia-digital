@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard de Prospecção - Praia Digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 1200px; margin: auto; padding: 20px; color: #222; background: #f5f7fa; }
+    h1 { color: #0b4f6c; text-align: center; }
+    .summary { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 20px 0; }
+    .card { background: #fff; border-radius: 10px; padding: 16px 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); min-width: 140px; text-align: center; }
+    .card .number { font-size: 28px; font-weight: bold; color: #0b4f6c; }
+    .card .label { font-size: 13px; color: #555; }
+    table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+    th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #eee; font-size: 14px; }
+    th { background: #0b4f6c; color: #fff; }
+    tr:hover { background: #f0f7ff; }
+    .status { display: inline-block; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: bold; }
+    .status-interessado { background: #d1fae5; color: #065f46; }
+    .status-neutro { background: #fef3c7; color: #92400e; }
+    .status-fechado { background: #dbeafe; color: #1e40af; }
+    .status-rejeitado { background: #fee2e2; color: #991b1b; }
+    .actions { margin-top: 20px; text-align: center; }
+    .btn { display: inline-block; padding: 10px 18px; background: #0b4f6c; color: #fff; text-decoration: none; border-radius: 6px; margin: 4px; }
+    .btn-secondary { background: #fff; color: #0b4f6c; border: 1px solid #0b4f6c; }
+    a { color: #1a73e8; }
+  </style>
+</head>
+<body>
+  <h1>📊 Dashboard de Prospecção - Praia Digital</h1>
+  <p style="text-align:center; color:#555;">Base: top20 leads por score | Atualizado: 2026-07-12</p>
+
+  <div class="summary">
+    <div class="card"><div class="number" id="total">0</div><div class="label">Total Leads</div></div>
+    <div class="card"><div class="number" id="interessados">0</div><div class="label">Interessados</div></div>
+    <div class="card"><div class="number" id="neutros">0</div><div class="label">Neutros</div></div>
+    <div class="card"><div class="number" id="fechados">0</div><div class="label">Fechados</div></div>
+    <div class="card"><div class="number" id="rejeitados">0</div><div class="label">Rejeitados</div></div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Imobiliária</th>
+        <th>Cidade</th>
+        <th>Contato</th>
+        <th>Score</th>
+        <th>Dor Principal</th>
+        <th>Status</th>
+        <th>Próxima Ação</th>
+        <th>Data</th>
+      </tr>
+    </thead>
+    <tbody id="leads-table"></tbody>
+  </table>
+
+  <div class="actions">
+    <a class="btn" href="https://wa.me/">Enviar WhatsApp</a>
+    <a class="btn btn-secondary" href="docs/sales/roteiro-videocall-top20-2026-07-12.html">Roteiro de Call</a>
+    <a class="btn btn-secondary" href="outreach/whatsapp-top20-mensagens-prontas.html">Mensagens WhatsApp</a>
+    <a class="btn btn-secondary" href="https://praia.digital">Ferramentas Gratuitas</a>
+  </div>
+
+  <script>
+    const leads = [
+      {id:1,imob:'Litoral Premium Sant',cidade:'Santos',contato:'Roberto Dias',score:91,dor:'conversao',status:'interessado',acao:'enviar_proposta',data:'2026-09-03'},
+      {id:2,imob:'Santos Ocean View',cidade:'Santos',contato:'Tatiane Moreira',score:93,dor:'leads',status:'parceria_fechada',acao:'onboarding',data:'2026-09-05'},
+      {id:3,imob:'Santos Premium Digital',cidade:'Santos',contato:'Viviane Paes',score:94,dor:'leads',status:'parceria_fechada',acao:'onboarding',data:'2026-09-05'},
+      {id:4,imob:'Santos Tower Imóveis',cidade:'Santos',contato:'Helena Vaz',score:96,dor:'aumentar captação',status:'parceria_fechada',acao:'assinatura',data:'2026-09-10'},
+      {id:5,imob:'Santos Luxo',cidade:'Santos',contato:'Isabela Fernandes',score:95,dor:'aumentar captação',status:'parceria_fechada',acao:'assinatura',data:'2026-09-10'}
+    ];
+    const tbody = document.getElementById('leads-table');
+    const counts = {interessado:0,neutro:0,fechado:0,rejeitado:0};
+    leads.forEach(l => {
+      let st = l.status.toLowerCase();
+      if (st.includes('fechada')) st = 'fechado';
+      else if (st.includes('interessado')) st = 'interessado';
+      else if (st.includes('rejeitado')) st = 'rejeitado';
+      else st = 'neutro';
+      counts[st] = (counts[st]||0) + 1;
+      const row = `<tr>
+        <td>${l.id}</td>
+        <td>${l.imob}</td>
+        <td>${l.cidade}</td>
+        <td>${l.contato}</td>
+        <td>${l.score}</td>
+        <td>${l.dor}</td>
+        <td><span class="status status-${st}">${l.status}</span></td>
+        <td>${l.acao}</td>
+        <td>${l.data}</td>
+      </tr>`;
+      tbody.innerHTML += row;
+    });
+    document.getElementById('total').textContent = leads.length;
+    document.getElementById('interessados').textContent = counts.interessado || 0;
+    document.getElementById('neutros').textContent = counts.neutro || 0;
+    document.getElementById('fechados').textContent = counts.fechado || 0;
+    document.getElementById('rejeitados').textContent = counts.rejeitado || 0;
+  </script>
+</body>
+</html>
