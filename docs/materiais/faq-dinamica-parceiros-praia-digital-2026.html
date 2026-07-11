@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ Dinâmica para Parceiros — Praia Digital</title>
+<style>
+  :root { --bg:#f4f4f4; --card:#fff; --ink:#1f2d3d; --muted:#617d8b; --accent:#0d47a1; --accent2:#f57c00; --radius:12px; }
+  * { box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; background: var(--bg); color: var(--ink); margin: 0; padding: 24px; }
+  .container { max-width: 980px; margin: 0 auto; }
+  .header { background: var(--accent); color: #fff; padding: 24px; border-radius: var(--radius); margin-bottom: 20px; }
+  .header h1 { margin: 0 0 6px; font-size: 22px; }
+  .header p { margin: 0; opacity: .9; }
+  .section { background: var(--card); padding: 22px; border-radius: var(--radius); margin-bottom: 16px; box-shadow: 0 4px 20px rgba(0,0,0,.04); }
+  .section h2 { margin: 0 0 12px; font-size: 18px; color: var(--accent); }
+  .qa { margin-bottom: 14px; }
+  .question { font-weight: bold; color: #0f172a; margin-bottom: 6px; }
+  .answer { background: #f8fafc; border-left: 4px solid var(--accent2); padding: 12px; border-radius: 10px; color: #374a5e; line-height: 1.6; }
+  .copy-btn { display: inline-block; background: var(--accent2); color: #fff; border: none; padding: 8px 12px; border-radius: 8px; cursor: pointer; margin-top: 8px; font-size: 13px; }
+  .footer { text-align: center; margin-top: 10px; color: var(--muted); font-size: 12px; }
+  a { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>FAQ Dinâmica para Parceiros</h1>
+      <p>Respostas prontas para copiar e colar no WhatsApp ou e-mail de imobiliárias do litoral.</p>
+    </div>
+
+    <div class="section">
+      <h2>Objeções comuns</h2>
+      <div class="qa">
+        <div class="question">1) Já tenho ferramentas, por que mudar?</div>
+        <div class="answer" id="q1">Nós não pedimos para você abandonar nada. A Praia Digital funciona como camada extra: automatiza follow-up, gera descrições e qualifica leads sem substituir seu sistema atual.</div>
+        <button class="copy-btn" onclick="copyText('q1')">Copiar</button>
+      </div>
+      <div class="qa">
+        <div class="question">2) Precisa investir muito?</div>
+        <div class="answer" id="q2">O início é sem custo e com suporte prático. Você usa as ferramentas gratuitas, mede resultado e, se fizer sentido, avança para um plano profissional.</div>
+        <button class="copy-btn" onclick="copyText('q2')">Copiar</button>
+      </div>
+      <div class="qa">
+        <div class="question">3) É complexo de implementar?</div>
+        <div class="answer" id="q3">Não. O onboarding guia a primeira configuração em minutos e o suporte acompanha a primeira semana. Sem código, sem dor de cabeça.</div>
+        <button class="copy-btn" onclick="copyText('q3')">Copiar</button>
+      </div>
+      <div class="qa">
+        <div class="question">4) Funciona para baixa temporada?</div>
+        <div class="answer" id="q4">Sim. A automação ajuda a captar fora do pico e a manter leads aquecidos para o verão, sem perder contato.</div>
+        <button class="copy-btn" onclick="copyText('q4')">Copiar</button>
+      </div>
+      <div class="qa">
+        <div class="question">5) Qual o retorno esperado?</div>
+        <div class="answer" id="q5">Com base no modelo atual, parceiros iniciam com mais respostas e agendamentos em até 14 dias. Cada imobiliária tem métricas próprias, usamos dados reais para medir.</div>
+        <button class="copy-btn" onclick="copyText('q5')">Copiar</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Modelos de resposta curta</h2>
+      <div class="qa">
+        <div class="question">WhatsApp: contato inicial</div>
+        <div class="answer" id="w1">Olá! Sou da Praia Digital. Temos ferramentas gratuitas para imobiliárias do litoral. Quer que eu envie o link e um exemplo prático?</div>
+        <button class="copy-btn" onclick="copyText('w1')">Copiar</button>
+      </div>
+      <div class="qa">
+        <div class="question">E-mail: follow-up leve</div>
+        <div class="answer" id="w2">Oi, tudo bem? Só passando para compartilhar um recurso que pode ajudar na temporada: https://praia.digital. Se quiser, responda e eu explico rapidamente.</div>
+        <button class="copy-btn" onclick="copyText('w2')">Copiar</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      Praia Digital • FAQ Dinâmica • Pronta para uso<br>
+      Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">Praia Digital</a> | Ferramentas: <a href="https://praia.digital">praia.digital</a>
+    </div>
+  </div>
+
+  <script>
+    function copyText(id) {
+      var text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text).then(function() {
+        alert('Resposta copiada!');
+      });
+    }
+  </script>
+</body>
+</html>
