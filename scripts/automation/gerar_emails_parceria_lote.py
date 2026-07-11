@@ -1,5 +1,5 @@
 """Gera e-mails personalizados para parceria com imobiliárias do litoral paulista,
-a partir de um CSV de leads no formato docs/sales/leads-litoral-enriquecido.csv.
+a partir de um CSV de leads no formato docs/sales/leads-litoral-enriquecido-realista.csv.
 
 Os e-mails são salvos em outreach/emails-personalizados/ como arquivos .html prontos
 para envio manual ou integração futura com Brevo/SMTP.
@@ -56,7 +56,7 @@ TEMPLATE = """<!DOCTYPE html>
 
 def main():
     root = Path('C:/Users/Carolina/praia-digital')
-    leads_path = root / 'docs/sales/leads-litoral-enriquecido.csv'
+    leads_path = root / 'docs/sales/leads-litoral-enriquecido-realista.csv'
     out_dir = root / 'outreach/emails-personalizados'
     out_dir.mkdir(parents=True, exist_ok=True)
     count = 0
