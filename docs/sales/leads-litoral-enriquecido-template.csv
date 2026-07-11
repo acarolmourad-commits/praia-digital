@@ -1,2 +1,2 @@
-id,nome_da_imobiliaria,cidade,pessoa_de_contato,cargo,email,whatsapp,perfil,status,dor_principal,diferencial,fonte,pontuacao_lead,objetivo_90_dias,orcamento_estimado,tom,cidade_ref,created_at,_score,last_contact,next_followup
-1,Nome da Imobiliária,Santos,Nome do Contato,Diretor,contato@exemplo.com,(13) 99999-0000,construtora,interessado,conversao,chatbot,Google Maps,91,Aumentar captação,R$ 1-3k/mês,parceiro,Santos,2026-07-11,24,,
+lead_id;nome_imobiliaria;cidade;uf;nome_contato;email;whatsapp;site;origem;notas;prioridade
+1;Nova Imobiliaria Exemplo;Santos;SP;João;joao@exemplo.com.br;(13)99999-9999;https://site.com.br;manual;Lead teste;1
