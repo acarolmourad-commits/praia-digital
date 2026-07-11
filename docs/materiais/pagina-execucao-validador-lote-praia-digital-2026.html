@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Execução — Validador de Lote | Praia Digital</title>
+<style>
+  :root { --bg:#f4f4f4; --card:#fff; --ink:#1f2d3d; --muted:#617d8b; --accent:#0d47a1; --accent2:#f57c00; --radius:12px; }
+  * { box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; background: var(--bg); color: var(--ink); margin: 0; padding: 24px; }
+  .container { max-width: 900px; margin: 0 auto; }
+  .header { background: var(--accent); color: #fff; padding: 24px; border-radius: var(--radius); margin-bottom: 20px; }
+  .header h1 { margin: 0 0 6px; font-size: 22px; }
+  .header p { margin: 0; opacity: .9; }
+  .section { background: var(--card); padding: 22px; border-radius: var(--radius); margin-bottom: 16px; box-shadow: 0 4px 20px rgba(0,0,0,.04); }
+  .section h2 { margin: 0 0 12px; font-size: 18px; color: var(--accent); }
+  code { background: #f1f5f9; padding: 2px 6px; border-radius: 6px; }
+  pre { background: #f1f5f9; padding: 14px; border-radius: 8px; overflow: auto; }
+  .footer { text-align: center; margin-top: 10px; color: var(--muted); font-size: 12px; }
+  .cta { display: inline-block; background: var(--accent); color: #fff; padding: 10px 14px; border-radius: 8px; text-decoration: none; margin-top: 10px; }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Execução — Validador de Lote</h1>
+      <p>Use esta página para validar rapidamente o lote de prospecção antes do envio.</p>
+    </div>
+
+    <div class="section">
+      <h2>Último relatório</h2>
+      <p>Última execução registrada no repositório:</p>
+      <pre>docs/sales/validacao-lote-2026-07-11.md</pre>
+      <p><strong>Status:</strong> APROVADO</p>
+      <p><strong>Erros:</strong> 0</p>
+      <p><strong>Avisos:</strong> 30</p>
+      <a class="cta" href="docs/sales/validacao-lote-2026-07-11.md" target="_blank">Abrir relatório completo</a>
+    </div>
+
+    <div class="section">
+      <h2>Como executar novamente</h2>
+      <ol>
+        <li>Abra o terminal no projeto: <code>cd C:\Users\Carolina\praia-digital</code></li>
+        <li>Rode o comando: <code>python scripts/automation/validar_lote_prospeccao_diaria.py</code></li>
+        <li>O relatório será salvo em: <code>docs/sales/validacao-lote-YYYY-MM-DD.md</code></li>
+      </ol>
+    </div>
+
+    <div class="footer">
+      Praia Digital • Execução do validador de lote
+    </div>
+  </div>
+</body>
+</html>
