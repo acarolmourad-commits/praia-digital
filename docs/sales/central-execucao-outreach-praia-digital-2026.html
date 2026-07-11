@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Central de Execução Outreach - Praia Digital</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans"; background: #f7f9fb; color: #1f2937; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+  .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 28px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(17,24,39,0.06); }
+  h1 { font-size: 34px; letter-spacing: -0.5px; margin-bottom: 8px; }
+  h2 { font-size: 22px; margin: 24px 0 12px; color: #111827; }
+  .lead { color: #6b7280; margin-bottom: 20px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 18px; }
+  .btn { appearance: none; border: 0; background: #2563eb; color: white; padding: 12px 14px; border-radius: 12px; cursor: pointer; font-weight: 600; text-decoration: none; display: inline-block; margin-top: 10px; }
+  .btn:hover { background: #1d4ed8; }
+  .step { padding: 14px 16px; border-left: 4px solid #2563eb; background: #eff6ff; border-radius: 12px; margin: 12px 0; }
+  .ok { border-left-color: #16a34a; background: #f0fdf6; }
+  .warn { border-left-color: #f59e0b; background: #fffbeb; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1>Central de Execução Outreach</h1>
+    <p class="lead">Agregador oficial: clique e abra a ferramenta do dia. Para dúvidas de envio, use o checklist ou o guia rápido.</p>
+  </div>
+
+  <div class="card">
+    <h2>Ferramentas</h2>
+    <div class="grid">
+      <a class="btn" href="docs/materiais/whatsapp-outreach-playground-praia-digital-2026.html">Playground WhatsApp</a>
+      <a class="btn" href="outreach/whatsapp-rastrear-envios-2026-07-11.html">Rastrear envios</a>
+      <a class="btn" href="docs/sales/lote-whatsapp-2026-07-11.html">Lote do dia</a>
+      <a class="btn" href="docs/sales/segmentacao-whatsapp-por-cidade-2026-07-11.html">Segmentação por cidade</a>
+      <a class="btn" href="docs/sales/roteiro-disparo-semanal-whatsapp-2026-07-11.html">Roteiro semanal</a>
+      <a class="btn" href="docs/sales/dashboard-whatsapp-outreach-praia-digital-2026.html">Dashboard</a>
+      <a class="btn" href="docs/sales/guia-execucao-primeiro-lote-whatsapp-2026-07-11.html">Guia de execução</a>
+      <a class="btn" href="outreach/lote-whatsapp-20-prontos-2026-07-11.html">Lote 20 prontos</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Execução recomendada hoje</h2>
+    <div class="step ok">1. Abrir playground e gerar lote personalizado.</div>
+    <div class="step ok">2. Abrir rastreador e marcar envios.</div>
+    <div class="step ok">3. Exportar CSV do rastreador.</div>
+    <div class="step">4. Rodar relatório de performance.</div>
+  </div>
+
+  <div class="card">
+    <h2>Ações pós-envio</h2>
+    <a class="btn" href="scripts/automation/gerar_relatorio_performance_whatsapp.py">Gerar relatório</a>
+    <a class="btn" href="scripts/automation/gerar_plano_acao_pos_envio_whatsapp.py">Plano de ação pós-envio</a>
+    <a class="btn" href="scripts/automation/bloquear_reenvio_whatsapp.py">Bloquear reenvio</a>
+    <a class="btn" href="docs/sales/plano-sequencial-30-dias-whatsapp.md">Scheduler 30 dias</a>
+  </div>
+</div>
+</body>
+</html>

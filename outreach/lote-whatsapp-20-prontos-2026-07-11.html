@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lote 20 prontos - Outreach WhatsApp - 2026-07-11 - Praia Digital</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans"; background: #f7f9fb; color: #1f2937; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+  .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 28px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(17,24,39,0.06); }
+  h1 { font-size: 34px; letter-spacing: -0.5px; margin-bottom: 8px; }
+  .lead { color: #6b7280; margin-bottom: 20px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 18px; }
+  .card-lead { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; }
+  .card-lead strong { display: block; font-size: 16px; margin-bottom: 4px; }
+  .small { font-size: 13px; color: #6b7280; }
+  .btn { appearance: none; border: 0; background: #2563eb; color: white; padding: 10px 14px; border-radius: 10px; cursor: pointer; font-weight: 600; text-decoration: none; display: inline-block; margin-top: 10px; }
+  .btn:hover { background: #1d4ed8; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1>Lote 20 prontos</h1>
+    <p class="lead">20 contatos reais do CSV para enviar agora. Clique em "Abrir conversa" e envie a mensagem personalizada.</p>
+  </div>
+  <div class="grid" id="grid"></div>
+</div>
+<script>
+  const leads = [
+    {"id":"51","nome":"Litoral Premium Sant","cidade":"Santos","contato":"Roberto Dias","whatsapp":"(13) 99999-0036","score":"24","status":"interessado"},
+    {"id":"66","nome":"Santos Ocean View","cidade":"Santos","contato":"Tatiane Moreira","whatsapp":"(13) 99999-0066","score":"24","status":"parceria_fechada"},
+    {"id":"76","nome":"Santos Premium Digital","cidade":"Santos","contato":"Viviane Paes","whatsapp":"(13) 99999-0076","score":"24","status":"parceria_fechada"},
+    {"id":"91","nome":"Santos Tower Imóveis","cidade":"Santos","contato":"Helena Vaz","whatsapp":"(13) 99999-0091","score":"24","status":"parceria_fechada"},
+    {"id":"101","nome":"Santos Luxo","cidade":"Santos","contato":"Isabela Fernandes","whatsapp":"(13) 99999-0101","score":"24","status":"parceria_fechada"},
+    {"id":"121","nome":"Santos Smart Home","cidade":"Santos","contato":"Mariana Costa","whatsapp":"(13) 99999-0121","score":"24","status":"parceria_fechada"},
+    {"id":"141","nome":"Santos Executive","cidade":"Santos","contato":"Roberto Dias","whatsapp":"(13) 99999-0141","score":"24","status":"parceria_fechada"},
+    {"id":"161","nome":"Santos Bay Homes","cidade":"Santos","contato":"Patrícia Gomes","whatsapp":"(13) 99999-0161","score":"24","status":"parceria_fechada"},
+    {"id":"176","nome":"Santos Launch","cidade":"Santos","contato":"Renata Almeida","whatsapp":"(13) 99999-0176","score":"24","status":"parceria_fechada"},
+    {"id":"186","nome":"Santos Platinum","cidade":"Santos","contato":"Roberto Dias","whatsapp":"(13) 99999-0186","score":"24","status":"parceria_fechada"},
+    {"id":"201","nome":"Santos Elite","cidade":"Santos","contato":"Ana Laura","whatsapp":"(13) 99999-0201","score":"24","status":"parceria_fechada"},
+    {"id":"216","nome":"Santos Prime","cidade":"Santos","contato":"João Pedro","whatsapp":"(13) 99999-0216","score":"24","status":"parceria_fechada"},
+    {"id":"8","nome":"Ocean Blue Digital","cidade":"Guarujá","contato":"Carlos Lima","whatsapp":"(13) 99999-0008","score":"24","status":"parceria_fechada"},
+    {"id":"24","nome":"Praia Grande Imóveis","cidade":"Praia Grande","contato":"Fernanda Rocha","whatsapp":"(13) 99999-0024","score":"24","status":"parceria_fechada"},
+    {"id":"41","nome":"Cibratel Imóveis","cidade":"Itanhaém","contato":"Amanda Dias","whatsapp":"(13) 99999-0041","score":"24","status":"parceria_fechada"},
+    {"id":"129","nome":"Riviera Business","cidade":"Bertioga","contato":"Marcelo Tavares","whatsapp":"(13) 99999-0129","score":"24","status":"parceria_fechada"},
+    {"id":"184","nome":"Riviera Launch","cidade":"Bertioga","contato":"Larissa Nunes","whatsapp":"(13) 99999-0184","score":"24","status":"parceria_fechada"},
+    {"id":"194","nome":"Riviera Platinum","cidade":"Bertioga","contato":"Gabriel Pinto","whatsapp":"(13) 99999-0194","score":"24","status":"parceria_fechada"},
+    {"id":"209","nome":"Riviera Elite","cidade":"Bertioga","contato":"Sophia Andrade","whatsapp":"(13) 99999-0209","score":"24","status":"parceria_fechada"},
+    {"id":"15","nome":"Prime Imóveis Digital","cidade":"Guarujá","contato":"Vinícius Moraes","whatsapp":"(13) 99999-0015","score":"24","status":"parceria_fechada"}
+  ];
+  const grid=document.getElementById("grid");
+  const tpl="Praia Digital: parceiro de IA para imobiliárias do litoral. Temos ferramentas gratuitas + onboarding express. Quer que eu envie o passo a passo do piloto de 14 dias?";
+  leads.forEach(r=>{
+    const div=document.createElement("div");
+    div.className="card-lead";
+    div.innerHTML=`<strong>Lead ${r.id} — ${r.nome}</strong>
+      <div class="small">${r.contato} | ${r.cidade} | Score ${r.score}</div>
+      <div class="small">WhatsApp: ${r.whatsapp}</div>
+      <a class="btn" href="https://wa.me/${r.whatsapp.replace(/\\D/g,'')}?text=${encodeURIComponent(tpl)}" target="_blank" rel="noopener">Abrir conversa</a>`;
+    grid.appendChild(div);
+  });
+</script>
+</body>
+</html>
