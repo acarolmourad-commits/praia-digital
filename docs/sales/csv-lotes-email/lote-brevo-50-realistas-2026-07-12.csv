@@ -1,0 +1,51 @@
+email;nome;imobiliaria;cidade;uf;whatsapp;origem;status;dor_principal;diferencial;tom;link_email_personalizado
+contato1@example.com;Contato 1;Imobiliaria Santos Centro;Santos;SP;(13) 99999-0001;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-001-imobiliaria-santos-centro.html
+contato2@example.com;Contato 2;Praia Grande Imoveis;Praia Grande;SP;(13) 99999-0002;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-002-praia-grande-imoveis.html
+contato3@example.com;Contato 3;Guaruja Prime;Guaruja;SP;(13) 99999-0003;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-003-guaruja-prime.html
+contato4@example.com;Contato 4;Bertioga Realty;Bertioga;SP;(13) 99999-0004;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-004-bertioga-realty.html
+contato5@example.com;Contato 5;Itanhaem Imoveis;Itanhaem;SP;(13) 99999-0005;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-005-itanhaem-imoveis.html
+contato6@example.com;Contato 6;Mongagua Properties;Mongagua;SP;(13) 99999-0006;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-006-mongagua-properties.html
+contato7@example.com;Contato 7;Peruibe Real Estate;Peruibe;SP;(13) 99999-0007;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-007-peruibe-real-estate.html
+contato8@example.com;Contato 8;Sao Vicente Imoveis;Sao Vicente;SP;(13) 99999-0008;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-008-sao-vicente-imoveis.html
+contato9@example.com;Contato 9;Santos Luxo Imoveis;Santos;SP;(13) 99999-0009;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-009-santos-luxo-imoveis.html
+contato10@example.com;Contato 10;Praia Grande Luxo;Praia Grande;SP;(13) 99999-0010;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-010-praia-grande-luxo.html
+contato11@example.com;Contato 11;Guaruja Beach;Guaruja;SP;(13) 99999-0011;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-011-guaruja-beach.html
+contato12@example.com;Contato 12;Bertioga Premium;Bertioga;SP;(13) 99999-0012;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-012-bertioga-premium.html
+contato13@example.com;Contato 13;Itanhaem Beach;Itanhaem;SP;(13) 99999-0013;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-013-itanhaem-beach.html
+contato14@example.com;Contato 14;Mongagua Center;Mongagua;SP;(13) 99999-0014;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-014-mongagua-center.html
+contato15@example.com;Contato 15;Peruibe Center;Peruibe;SP;(13) 99999-0015;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-015-peruibe-center.html
+contato16@example.com;Contato 16;Santos Ocean;Santos;SP;(13) 99999-0016;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-016-santos-ocean.html
+contato17@example.com;Contato 17;Praia Grande Ocean;Praia Grande;SP;(13) 99999-0017;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-017-praia-grande-ocean.html
+contato18@example.com;Contato 18;Guaruja Ocean;Guaruja;SP;(13) 99999-0018;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-018-guaruja-ocean.html
+contato19@example.com;Contato 19;Bertioga Beach;Bertioga;SP;(13) 99999-0019;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-019-bertioga-beach.html
+contato20@example.com;Contato 20;Itanhaem Luxo;Itanhaem;SP;(13) 99999-0020;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-020-itanhaem-luxo.html
+contato21@example.com;Contato 21;Santos Premium;Santos;SP;(13) 99999-0021;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-021-santos-premium.html
+contato22@example.com;Contato 22;Praia Grande Premium;Praia Grande;SP;(13) 99999-0022;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-022-praia-grande-premium.html
+contato23@example.com;Contato 23;Guaruja Premium;Guaruja;SP;(13) 99999-0023;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-023-guaruja-premium.html
+contato24@example.com;Contato 24;Santos Tower;Santos;SP;(13) 99999-0024;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-024-santos-tower.html
+contato25@example.com;Contato 25;Praia Grande Tower;Praia Grande;SP;(13) 99999-0025;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-025-praia-grande-tower.html
+contato26@example.com;Contato 26;Guaruja Tower;Guaruja;SP;(13) 99999-0026;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-026-guaruja-tower.html
+contato27@example.com;Contato 27;Santos Blue;Santos;SP;(13) 99999-0027;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-027-santos-blue.html
+contato28@example.com;Contato 28;Praia Grande Blue;Praia Grande;SP;(13) 99999-0028;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-028-praia-grande-blue.html
+contato29@example.com;Contato 29;Guaruja Blue;Guaruja;SP;(13) 99999-0029;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-029-guaruja-blue.html
+contato30@example.com;Contato 30;Bertioga Luxo;Bertioga;SP;(13) 99999-0030;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-030-bertioga-luxo.html
+contato31@example.com;Contato 31;Itanhaem Premium;Itanhaem;SP;(13) 99999-0031;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-031-itanhaem-premium.html
+contato32@example.com;Contato 32;Mongagua Luxo;Mongagua;SP;(13) 99999-0032;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-032-mongagua-luxo.html
+contato33@example.com;Contato 33;Peruibe Luxo;Peruibe;SP;(13) 99999-0033;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-033-peruibe-luxo.html
+contato34@example.com;Contato 34;Santos View;Santos;SP;(13) 99999-0034;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-034-santos-view.html
+contato35@example.com;Contato 35;Praia Grande View;Praia Grande;SP;(13) 99999-0035;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-035-praia-grande-view.html
+contato36@example.com;Contato 36;Guaruja View;Guaruja;SP;(13) 99999-0036;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-036-guaruja-view.html
+contato37@example.com;Contato 37;Santos Home;Santos;SP;(13) 99999-0037;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-037-santos-home.html
+contato38@example.com;Contato 38;Praia Grande Home;Praia Grande;SP;(13) 99999-0038;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-038-praia-grande-home.html
+contato39@example.com;Contato 39;Guaruja Home;Guaruja;SP;(13) 99999-0039;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-039-guaruja-home.html
+contato40@example.com;Contato 40;Bertioga Home;Bertioga;SP;(13) 99999-0040;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-040-bertioga-home.html
+contato41@example.com;Contato 41;Itanhaem Home;Itanhaem;SP;(13) 99999-0041;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-041-itanhaem-home.html
+contato42@example.com;Contato 42;Mongagua Home;Mongagua;SP;(13) 99999-0042;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-042-mongagua-home.html
+contato43@example.com;Contato 43;Peruibe Home;Peruibe;SP;(13) 99999-0043;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-043-peruibe-home.html
+contato44@example.com;Contato 44;Santos Costa;Santos;SP;(13) 99999-0044;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-044-santos-costa.html
+contato45@example.com;Contato 45;Praia Grande Costa;Praia Grande;SP;(13) 99999-0045;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-045-praia-grande-costa.html
+contato46@example.com;Contato 46;Guaruja Costa;Guaruja;SP;(13) 99999-0046;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-046-guaruja-costa.html
+contato47@example.com;Contato 47;Bertioga Costa;Bertioga;SP;(13) 99999-0047;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-047-bertioga-costa.html
+contato48@example.com;Contato 48;Itanhaem Costa;Itanhaem;SP;(13) 99999-0048;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-048-itanhaem-costa.html
+contato49@example.com;Contato 49;Mongagua Costa;Mongagua;SP;(13) 99999-0049;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-049-mongagua-costa.html
+contato50@example.com;Contato 50;Peruibe Costa;Peruibe;SP;(13) 99999-0050;manual;ativo;captacao;ferramentas gratuitas;parceiro;outreach/emails-personalizados/lead-050-peruibe-costa.html
