@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard WhatsApp Outreach - Praia Digital</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans"; background: #f7f9fb; color: #1f2937; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+  .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 28px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(17,24,39,0.06); }
+  h1 { font-size: 34px; letter-spacing: -0.5px; margin-bottom: 8px; }
+  h2 { font-size: 22px; margin: 24px 0 12px; color: #111827; }
+  .lead { color: #6b7280; margin-bottom: 20px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-top: 18px; }
+  .mini { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 12px; padding: 14px; text-align: center; }
+  .num { font-size: 28px; font-weight: 700; color: #111827; }
+  .lbl { font-size: 12px; color: #6b7280; text-transform: uppercase; letter-spacing: 0.08em; }
+  table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 14px; }
+  th { background: #f3f4f6; border: 1px solid #e5e7eb; padding: 10px; text-align: left; }
+  td { border: 1px solid #e5e7eb; padding: 10px; }
+  .btn { appearance: none; border: 0; background: #2563eb; color: white; padding: 12px 18px; border-radius: 12px; cursor: pointer; font-weight: 600; text-decoration: none; display: inline-block; margin-right: 10px; margin-top: 10px; }
+  .btn:hover { background: #1d4ed8; }
+  .ok { border-left-color: #16a34a; background: #f0fdf6; }
+  .ok { border-left-color: #16a34a; background: #f0fdf6; }
+  .warn { border-left-color: #f59e0b; background: #fffbeb; }
+  .step { padding: 14px 16px; border-left: 4px solid #2563eb; background: #eff6ff; border-radius: 12px; margin: 12px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1>Dashboard WhatsApp Outreach</h1>
+    <p class="lead">Painel unificado prospecção WhatsApp: playground, lote do dia, rastreamento e métricas.</p>
+    <div class="grid">
+      <div class="mini"><div class="num">600</div><div class="lbl">Leads totais</div></div>
+      <div class="mini"><div class="num">499</div><div class="lbl">Alvos disponíveis</div></div>
+      <div class="mini"><div class="num">100</div><div class="lbl">Lote do dia</div></div>
+      <div class="mini"><div class="num">8</div><div class="lbl">Cidades</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Ações rápidas</h2>
+    <a class="btn" href="docs/materiais/whatsapp-outreach-playground-praia-digital-2026.html">Abrir playground</a>
+    <a class="btn" href="docs/sales/lote-whatsapp-2026-07-11.html">Ver lote do dia</a>
+    <a class="btn" href="outreach/whatsapp-rastrear-envios-2026-07-11.html">Rastrear envios</a>
+    <a class="btn" href="docs/sales/segmentacao-whatsapp-por-cidade-2026-07-11.html">Segmentação por cidade</a>
+    <a class="btn" href="docs/sales/roteiro-disparo-semanal-whatsapp-2026-07-11.html">Roteiro semanal</a>
+  </div>
+
+  <div class="card">
+    <h2>Distribuição por cidade</h2>
+    <table>
+      <tr><th>Cidade</th><th>Alvos</th></tr>
+      <tr><td>Guarujá</td><td>79</td></tr>
+      <tr><td>Bertioga</td><td>73</td></tr>
+      <tr><td>Santos</td><td>69</td></tr>
+      <tr><td>Peruíbe</td><td>67</td></tr>
+      <tr><td>Praia Grande</td><td>58</td></tr>
+      <tr><td>São Vicente</td><td>58</td></tr>
+      <tr><td>Itanhaém</td><td>51</td></tr>
+      <tr><td>Mongaguá</td><td>44</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>Status da prospecção</h2>
+    <div class="step ok">Próximo passo: iniciar o lote do dia (100 leads) pelo playground.</div>
+    <div class="step">Use o rastreador para marcar envios e evitar repetição.</div>
+    <div class="step warn">Se precisar de volume maior, pegue o lote de outra cidade no playground.</div>
+  </div>
+</div>
+</body>
+</html>
