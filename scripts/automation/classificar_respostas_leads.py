@@ -1,13 +1,11 @@
-"""Classifica respostas de leads por palavras-chave, atualiza a base principal
-e gera follow-ups automáticos por classificação.
+"""Classifica respostas de leads por palavras-chave em português,
+atualiza o followup-registro.md com classificação e próxima ação,
+e gera e-mails de follow-up automáticos por classificação.
 
 Uso:
   python scripts/automation/classificar_respostas_leads.py docs/sales/respostas-leads.csv
-Saídas:
-  - docs/sales/leads-litoral-enriquecido-classificado.csv
-  - outreach/emails-followup-classificados/*.html
 """
-import csv, sys
+import csv, sys, re
 from pathlib import Path
 from datetime import datetime, timedelta
 
@@ -19,57 +17,34 @@ REGRAS = {
 }
 
 FOLLOWUP_TEMPLATES = {
-    'interessado': """<!DOCTYPE html>
-<html lang="pt-BR">
-<head><meta charset="UTF-8"><title>Follow-up — {imobiliaria}</title></head>
-<body style="font-family:Arial,sans-serif;max-width:700px;margin:auto;padding:20px;color:#222;">
-  <p>Olá, <strong>{nome_contato}</strong>!</p>
-  <p>Pelo seu retorno, vejo que você está <strong>interessado</strong> em avançar. Vou adiantar a próxima etapa para não perder o momento.</p>
-  <p>Próximos passos sugeridos:</p>
-  <ul>
-    <li>Envio de proposta comercial adaptada em até 24h</li>
-    <li>Agendamento de demo de 15 minutos</li>
-    <li>Apresentação do case conjunto e métricas</li>
-  </ul>
-  <p>Se preferir, responda este e-mail com o horário que funciona melhor.</p>
-  <p>Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">Praia Digital</a></p>
-  <p>Ferramentas gratuitas: <a href="https://praia.digital">https://praia.digital</a></p>
-  <p>CEO — Praia Digital</p>
-</body>
-</html>""",
-    'rejeitado': """<!DOCTYPE html>
-<html lang="pt-BR">
-<head><meta charset="UTF-8"><title>Follow-up — {imobiliaria}</title></head>
-<body style="font-family:Arial,sans-serif;max-width:700px;margin:auto;padding:20px;color:#222;">
-  <p>Olá, <strong>{nome_contato}</strong>!</p>
-  <p>Sem problema. Vou deixar o contato aberto para quando fizer sentido. Voltarei daqui a 90 dias com novidades relevantes para {imobiliaria}.</p>
-  <p>Aproveite nossas ferramentas gratuitas enquanto isso: <a href="https://praia.digital">https://praia.digital</a></p>
-  <p>CEO — Praia Digital</p>
-</body>
-</html>""",
-    'fechado': """<!DOCTYPE html>
-<html lang="pt-BR">
-<head><meta charset="UTF-8"><title>Onboarding — {imobiliaria}</title></head>
-<body style="font-family:Arial,sans-serif;max-width:700px;margin:auto;padding:20px;color:#222;">
-  <p>Olá, <strong>{nome_contato}</strong>!</p>
-  <p>Ótimo! Vamos iniciar o onboarding de <strong>{imobiliaria}</strong> em até 24h. Você receberá cronograma, acessos e métricas do case.</p>
-  <p>Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">Praia Digital</a></p>
-  <p>Ferramentas gratuitas: <a href="https://praia.digital">https://praia.digital</a></p>
-  <p>CEO — Praia Digital</p>
-</body>
-</html>""",
-    'neutro': """<!DOCTYPE html>
-<html lang="pt-BR">
-<head><meta charset="UTF-8"><title>Aprofundamento — {imobiliaria}</title></head>
-<body style="font-family:Arial,sans-serif;max-width:700px;margin:auto;padding:20px;color:#222;">
-  <p>Olá, <strong>{nome_contato}</strong>!</p>
-  <p>Perfeito, vamos manter uma conversa objetiva. Seguem dados adicionais sobre redução de custos e aumento de conversão para {imobiliaria}.</p>
-  <p>Se fizer sentido, reagendamos uma call de 15 minutos.</p>
-  <p>Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">Praia Digital</a></p>
-  <p>Ferramentas gratuitas: <a href="https://praia.digital">https://praia.digital</a></p>
-  <p>CEO — Praia Digital</p>
-</body>
-</html>"""
+    'interessado': """Olá, {nome_contato},
+Pelo seu retorno, vejo que você está interessado em avançar. Vou adiantar a próxima etapa para não perder o momento.
+Próximos passos sugeridos:
+- Envio de proposta comercial adaptada em até 24h
+- Agendamento de demo de 15 minutos
+- Apresentação do case conjunto e métricas
+Se preferir, responda este e-mail com o horário que funciona melhor.
+Site: https://acarolmourad-commits.github.io/praia-digital/
+Ferramentas gratuitas: https://praia.digital
+CEO — Praia Digital""",
+
+    'rejeitado': """Olá, {nome_contato},
+Sem problema. Vou deixar o contato aberto para quando fizer sentido. Voltarei daqui a 90 dias com novidades relevantes.
+Aproveite nossas ferramentas gratuitas enquanto isso: https://praia.digital
+CEO — Praia Digital""",
+
+    'fechado': """Olá, {nome_contato},
+Ótimo! Vamos iniciar o onboarding de {imobiliaria} em até 24h. Você receberá cronograma, acessos e métricas do case.
+Site: https://acarolmourad-commits.github.io/praia-digital/
+Ferramentas gratuitas: https://praia.digital
+CEO — Praia Digital""",
+
+    'neutro': """Olá, {nome_contato},
+Perfeito, vamos manter uma conversa objetiva. Seguem dados adicionais sobre redução de custos e aumento de conversão para {imobiliaria}.
+Se fizer sentido, reagendamos uma call de 15 minutos.
+Site: https://acarolmourad-commits.github.io/praia-digital/
+Ferramentas gratuitas: https://praia.digital
+CEO — Praia Digital"""
 }
 
 def classificar(texto):
@@ -94,17 +69,20 @@ def main():
     resp_path = Path(sys.argv[1])
     root = Path('C:/Users/Carolina/praia-digital')
     out_csv = root / 'docs/sales/leads-litoral-enriquecido-classificado.csv'
+    tracker_path = root / 'docs/sales/followup-registro.md'
     out_dir = root / 'outreach/emails-followup-classificados'
     out_dir.mkdir(parents=True, exist_ok=True)
     with resp_path.open('r', encoding='utf-8') as f:
         rows = list(csv.DictReader(f, delimiter=';'))
     headers = list(rows[0].keys()) if rows else []
-    if 'classificacao' not in headers:
-        headers += ['classificacao','proxima_acao','data_classificacao']
+    extra = ['classificacao','proxima_acao','data_classificacao']
+    for h in extra:
+        if h not in headers:
+            headers.append(h)
     hoje = datetime.now().strftime('%d/%m/%Y')
     processed=[]
     for r in rows:
-        texto = ' '.join([str(r.get('status','')), str(r.get('observacao','')), str(r.get('dor_principal',''))])
+        texto = ' '.join([str(r.get('status','')), str(r.get('observacao','')), str(r.get('dor_principal','')), str(r.get('resposta',''))])
         cls = classificar(texto)
         r['classificacao'] = cls
         r['proxima_acao'] = next_action(cls)
@@ -123,11 +101,25 @@ def main():
             continue
         nome = (r.get('pessoa_de_contato') or r.get('nome_contato') or 'Contato').strip()
         imob = (r.get('nome_da_imobiliaria') or r.get('imobiliaria') or 'Imobiliária').strip()
+        email_to = (r.get('email') or '').strip()
+        if not email_to:
+            continue
+        text = template.format(nome_contato=nome, imobiliaria=imob)
         fname = f"{r.get('id') or r.get('lead_id') or '0'}-{acao}-{imob.lower().replace(' ','-')[:30]}.html"
-        (out_dir / fname).write_text(template.format(nome_contato=nome, imobiliaria=imob), encoding='utf-8')
+        html = f"""<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><title>Follow-up - {imob}</title></head>
+<body style="font-family:Arial,sans-serif;max-width:700px;margin:auto;padding:20px;color:#222;">
+<pre style="white-space:pre-wrap;font-family:Arial,sans-serif;font-size:15px;">{__import__('html').escape(text)}</pre>
+<p>Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">Praia Digital</a></p>
+<p>Ferramentas gratuitas: <a href="https://praia.digital">https://praia.digital</a></p>
+<p>CEO — Praia Digital</p>
+</body></html>"""
+        (out_dir / fname).write_text(html, encoding='utf-8')
         count += 1
+    from collections import Counter
     print('Processados:', len(processed))
-    print('Classificados:', dict(__import__('collections').Counter(r.get('classificacao') for r in processed)))
+    print('Classificados:', dict(Counter(r.get('classificacao') for r in processed)))
     print('Follow-ups gerados:', count)
     print('Saídas:', out_csv)
     print('Pasta:', out_dir)
