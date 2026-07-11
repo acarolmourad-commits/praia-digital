@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador de ROI para Parcerias com Imobiliárias - Praia Digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; color: #222; }
+    h1 { color: #0b4f6c; }
+    .field { margin: 10px 0; }
+    .field label { display: block; font-weight: bold; margin-bottom: 4px; }
+    .field input, .field select { padding: 8px 10px; width: 100%; max-width: 400px; border: 1px solid #ccc; border-radius: 6px; }
+    .btn { display: inline-block; margin-top: 14px; padding: 10px 16px; background: #0b4f6c; color: #fff; text-decoration: none; border-radius: 6px; border: 0; cursor: pointer; }
+    .result { margin-top: 18px; padding: 14px; background: #f7fafc; border-left: 4px solid #0b4f6c; border-radius: 8px; }
+    a { color: #1a73e8; }
+  </style>
+</head>
+<body>
+  <h1>Simulador de ROI para Parcerias com Imobiliárias</h1>
+  <p>Preencha os dados abaixo e veja o impacto estimado das ferramentas de IA da Praia Digital no faturamento da sua imobiliária.</p>
+
+  <div class="field">
+    <label for="cidade">Cidade</label>
+    <select id="cidade">
+      <option value="santos">Santos</option>
+      <option value="guaruja">Guarujá</option>
+      <option value="praia-grande">Praia Grande</option>
+      <option value="bertoioga">Bertioga</option>
+      <option value="itanhaem">Itanhaém</option>
+      <option value="mongagua">Mongaguá</option>
+      <option value="peruibe">Peruíbe</option>
+    </select>
+  </div>
+  <div class="field">
+    <label for="leads">Leads por mês</label>
+    <input id="leads" type="number" value="200">
+  </div>
+  <div class="field">
+    <label for="conversao">Taxa de conversão (%)</label>
+    <input id="conversao" type="number" value="3">
+  </div>
+  <div class="field">
+    <label for="ticket">Ticket médio (R$)</label>
+    <input id="ticket" type="number" value="3000">
+  </div>
+  <div class="field">
+    <label for="custo">Custo operacional atual (R$/mês)</label>
+    <input id="custo" type="number" value="6000">
+  </div>
+  <button class="btn" onclick="calcular()">Calcular ROI</button>
+
+  <div class="result" id="resultado" style="display:none;"></div>
+
+  <p style="margin-top:16px;">Ferramentas gratuitas: <a href="https://praia.digital">https://praia.digital</a> | Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">Praia Digital</a></p>
+
+  <script>
+    function calcular() {
+      const leads = Number(document.getElementById('leads').value) || 0;
+      const conversao = Number(document.getElementById('conversao').value) || 0;
+      const ticket = Number(document.getElementById('ticket').value) || 0;
+      const custo = Number(document.getElementById('custo').value) || 0;
+      const vendasAtuais = leads * (conversao / 100);
+      const receitaAtual = vendasAtuais * ticket;
+      const ganhoConversao = vendasAtuais * 0.35 * ticket;
+      const economia = custo * 0.20;
+      const receitaNova = receitaAtual + ganhoConversao + economia;
+      const roi = custo > 0 ? ((receitaNova - receitaAtual) / custo) * 100 : 0;
+      const periodo = '30 dias';
+      const html = `
+        <strong>Resumo</strong><br>
+        Receita estimada atual: R$ ${receitaAtual.toFixed(2)}<br>
+        Ganho estimado com IA: R$ ${ganhoConversao.toFixed(2)}<br>
+        Economia estimada: R$ ${economia.toFixed(2)}<br>
+        Receita estimada com parceria: R$ ${receitaNova.toFixed(2)}<br>
+        ROI estimado: ${roi.toFixed(1)}%<br><br>
+        Quer aplicar esse ganho com risco zero? Fale com a Praia Digital.
+      `;
+      const box = document.getElementById('resultado');
+      box.innerHTML = html.replace(/\n/g, '<br>');
+      box.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
