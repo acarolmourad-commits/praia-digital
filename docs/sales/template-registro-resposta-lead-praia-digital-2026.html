@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Resposta de Lead - Praia Digital</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans"; background: #f7f9fb; color: #1f2937; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+  .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 28px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(17,24,39,0.06); }
+  h1 { font-size: 32px; letter-spacing: -0.5px; margin-bottom: 8px; }
+  .lead { color: #6b7280; margin-bottom: 20px; }
+  .step { padding: 14px 16px; border-left: 4px solid #2563eb; background: #eff6ff; border-radius: 12px; margin: 12px 0; }
+  .ok { border-left-color: #16a34a; background: #f0fdf6; }
+  .warn { border-left-color: #f59e0b; background: #fffbeb; }
+  .err { border-left-color: #dc2626; background: #fef2f2; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 18px; }
+  fieldset { border: 1px solid #e5e7eb; border-radius: 12px; padding: 18px; margin: 12px 0; }
+  legend { font-weight: 600; color: #374151; padding: 0 6px; }
+  input, select, textarea { width: 100%; padding: 10px 12px; border: 1px solid #d1d5db; border-radius: 10px; font-size: 14px; margin-top: 8px; }
+  textarea { min-height: 120px; resize: vertical; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .btn { appearance: none; border: 0; background: #2563eb; color: white; padding: 12px 18px; border-radius: 12px; cursor: pointer; font-weight: 600; }
+  .btn:hover { background: #1d4ed8; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1>Registro de resposta de lead</h1>
+    <p class="lead">Use este template para registrar a resposta do lead e escolher a próxima ação mais apropriada.</p>
+    <div class="grid">
+      <div><strong>Data:</strong><br><input type="date" id="data"></div>
+      <div><strong>Canal:</strong><br><select><option>E-mail</option><option>WhatsApp</option><option>Instagram</option><option>Site</option><option>Telefone</option></select></div>
+      <div><strong>Lead ID:</strong><br><input placeholder="Ex: 175"></div>
+      <div><strong>Nome da imobiliária:</strong><br><input placeholder="Ex: Barra Norte"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Resumo da resposta</h2>
+    <fieldset>
+      <legend>Classificação inicial</legend>
+      <select>
+        <option>Interessado — solicitou mais informações</option>
+        <option>Interessado — pediu para agendar demo</option>
+        <option>Interessado — enviou objeção ou dúvida</option>
+        <option>Não interessado — agora</option>
+        <option>Contato errado — encaminhar</option>
+        <option>Solicitação de material/case</option>
+        <option>Outro</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Transcrição ou resumo</legend>
+      <textarea placeholder="Cole ou resuma a resposta do lead aqui..."></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Objeções ou dúvidas explícitas</legend>
+      <textarea placeholder="Ex: já tem ferramenta, custo, prazo de onboarding, suporte técnico, integração com CRM..."></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Próxima ação</legend>
+      <select>
+        <option>Enviar follow-up D3 com case e prova social</option>
+        <option>Enviar follow-up D7 com cronograma de onboarding</option>
+        <option>Agendar demo de 15 minutos</option>
+        <option>Enviar proposta comercial editada por perfil</option>
+        <option>Responder objeção com FAQ dinâmica</option>
+        <option>Back-off: reenviar em 30 dias</option>
+        <option>Transferir para fechamento/contrato</option>
+        <option>Atualizar lead para não interessado</option>
+      </select>
+    </fieldset>
+  </div>
+
+  <div class="card">
+    <h2>Atalhos recomendados</h2>
+    <div class="step ok">Dica: para leads quentes, envie o convite para demo em até 2h.</div>
+    <div class="step ok">Dica: mantenha a resposta curta e com um CTA único por mensagem.</div>
+    <div class="step warn">Lembrete: todo envio deve ser registrado aqui antes de ser disparado.</div>
+    <div class="step">Referências: docs/materiais/faq-dinamica-parceiros-praia-digital-2026.html</div>
+  </div>
+</div>
+</body>
+</html>
