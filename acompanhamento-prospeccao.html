@@ -1,118 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Acompanhamento de Prospecção — Praia Digital</title>
+  <title>Acompanhamento de Prospecção - Praia Digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f4f7fb; color: #1a2332; padding: 2rem; }
-    .box { max-width: 1200px; margin: 0 auto; }
-    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-    .subtitle { color: #666; margin-bottom: 2rem; }
-    .meta { background: linear-gradient(135deg,#00d4ff,#00ff88); padding:1.5rem; border-radius:12px; margin-bottom:2rem; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:1rem; }
-    .card { background:#fff; padding:1.25rem; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.06); }
-    .badge { display:inline-block; padding:0.3rem 0.8rem; border-radius:50px; font-size:0.75rem; font-weight:700; margin-bottom:0.5rem; }
-    .badge-pendente { background:#fee; color:#c00; }
-    .badge-enviado { background:#e6f7ff; color:#0077b6; }
-    .badge-resposta { background:#e6ffe6; color:#00aa00; }
-    .card h3 { margin:0 0 0.5rem; font-size:1.05rem; }
-    .card p { margin:0.25rem 0; color:#555; font-size:0.9rem; }
+    body { font-family:Arial,sans-serif; background:#f5f7fa; padding:20px; color:#222; }
+    h1 { color:#0b4f6c; text-align:center; }
+    .card { background:#fff; padding:16px; border-radius:10px; margin:14px 0; box-shadow:0 2px 6px rgba(0,0,0,0.06); }
+    .btn { display:inline-block; padding:10px 14px; background:#0b4f6c; color:#fff; text-decoration:none; border-radius:6px; margin-top:14px; }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h1>📊 Acompanhamento de Prospecção</h1>
-    <p class="subtitle">Resumo rápido por lead — última atualização: 09/07/2026 23:38</p>
+  <h1>Acompanhamento de Prospecção</h1>
+  <p>Use este painel para acompanhar envios e follow-ups.</p>
 
-    <div class="meta">
-      <strong>Resumo:</strong><br>
-      - E-mails de prospecção preparados: 143<br>
-      - Follow-ups preparados: 574<br>
-      - Lead alvo inicial: 27 leads (captação + mini site)
-    </div>
-
-    <div class="grid">
-      <div class="card">
-        <div class="badge badge-pendente">Pendente</div>
-        <h3>Lead 229 — Porto da Lua Prime</h3>
-        <p>Cidade: Itanhaém</p>
-        <p>Oferta: Captação + Mini Site</p>
-        <p>Status: Aguardando envio</p>
-      </div>
-
-      <div class="card">
-        <div class="badge badge-pendente">Pendente</div>
-        <h3>Lead 232 — Praia Grande Site View</h3>
-        <p>Cidade: Bertioga</p>
-        <p>Oferta: Captação</p>
-        <p>Status: Aguardando envio</p>
-      </div>
-
-      <div class="card">
-        <div class="badge badge-pendente">Pendente</div>
-        <h3>Lead 260 — Santos Tower Digital</h3>
-        <p>Cidade: São Vicente</p>
-        <p>Oferta: Mini Site</p>
-        <p>Status: Aguardando envio</p>
-      </div>
-
-      <div class="card">
-        <div class="badge badge-pendente">Pendente</div>
-        <h3>Lead 263 — Litoral Premium Imóveis</h3>
-        <p>Cidade: Itanhaém</p>
-        <p>Oferta: Mini Site</p>
-        <p>Status: Aguardando envio</p>
-      </div>
-
-      <div class="card">
-        <div class="badge badge-pendente">Pendente</div>
-        <h3>Lead 280 — Porto da Lua Blue</h3>
-        <p>Cidade: Itanhaém</p>
-        <p>Oferta: Captação + Mini Site</p>
-        <p>Status: Aguardando envio</p>
-      </div>
-
-      <div class="card">
-        <div class="badge badge-pendente">Pendente</div>
-        <h3>Lead 282 — Prime Imóveis Centro</h3>
-        <p>Cidade: Santos</p>
-        <p>Oferta: Captação</p>
-        <p>Status: Aguardando envio</p>
-      </div>
-
-      <div class="card">
-        <div class="badge badge-enviado">Enviado</div>
-        <h3>Lead 306 — Costa Verde Imóveis</h3>
-        <p>Cidade: Guarujá</p>
-        <p>Oferta: Captação + Mini Site</p>
-        <p>Status: Enviado — sem resposta</p>
-      </div>
-
-      <div class="card">
-        <div class="badge badge-enviado">Enviado</div>
-        <h3>Lead 352 — Norte Sul Digital</h3>
-        <p>Cidade: Praia Grande</p>
-        <p>Oferta: Captação + Mini Site</p>
-        <p>Status: Enviado — follow-up agendado</p>
-      </div>
-
-      <div class="card">
-        <div class="badge badge-resposta">Resposta</div>
-        <h3>Lead 378 — Prime Imóveis Site</h3>
-        <p>Cidade: Bertioga</p>
-        <p>Oferta: Captação</p>
-        <p>Status: Interessado — call pendente</p>
-      </div>
-
-      <div class="card">
-        <div class="badge badge-pendente">Pendente</div>
-        <h3>Lead 392 — Sol & Mar Imóveis</h3>
-        <p>Cidade: Itanhaém</p>
-        <p>Oferta: Captação</p>
-        <p>Status: Aguardando envio</p>
-      </div>
-    </div>
+  <div class="card">
+    <h2 style="color:#154c79;margin-top:0">Status do envio</h2>
+    <p><strong>CSV importável no Brevo:</strong> docs/sales/csv-lotes-email/teste-csv-real-importavel-2026-07-12.csv</p>
+    <p><strong>E-mails personalizados:</strong> outreach/teste-csv-real/</p>
+    <p><strong>Classificador online:</strong> docs/sales/classificador-respostas-leads-praia-digital-2026.html</p>
   </div>
+
+  <div class="card">
+    <h2 style="color:#154c79;margin-top:0">Ações recomendadas</h2>
+    <p>1. Abra o classificador.</p>
+    <p>2. Cole a resposta do lead.</p>
+    <p>3. Veja a classificação e a próxima ação sugerida.</p>
+    <p>4. Verifique o follow-up correspondente.</p>
+  </div>
+
+  <p>Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">Praia Digital</a> | Ferramentas gratuitas: <a href="https://praia.digital">https://praia.digital</a></p>
 </body>
 </html>

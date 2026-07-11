@@ -1,0 +1,2 @@
+lead_id;nome_imobiliaria;cidade;uf;nome_contato;email;whatsapp;site;origem;notas;prioridade;classificacao;proxima_acao;data_classificacao
+1;Nova Imobiliaria Exemplo Santos;Santos;SP;João;joao@exemplo.com;(11) 95434-0001;https://exemplo.com;manual;Lead teste;1;neutro;follow_up_7d;11/07/2026
