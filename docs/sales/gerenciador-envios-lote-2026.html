@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Envios - Praia Digital</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
+      color: #fff;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container { max-width: 1200px; margin: 0 auto; }
+    
+    .header {
+      background: linear-gradient(135deg, #7b2ff7, #00d4ff);
+      padding: 2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    .header p { opacity: 0.95; font-size: 1rem; }
+    
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .stat-box {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .stat-value {
+      font-size: 1.8rem;
+      font-weight: bold;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .stat-label {
+      font-size: 0.8rem;
+      color: #aaa;
+      margin-top: 0.4rem;
+      text-transform: uppercase;
+    }
+    
+    .controls {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .control-group {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .control-label {
+      color: #aaa;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    .control-select {
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.05);
+      color: #fff;
+      font-size: 0.95rem;
+      cursor: pointer;
+    }
+    .control-select option { background: #1a3a5c; }
+    
+    .action-btn {
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s;
+    }
+    .action-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(123,47,247,0.4);
+    }
+    .action-btn.secondary {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .action-btn.success {
+      background: linear-gradient(135deg, #00d4ff, #2d9e5a);
+    }
+    
+    .queue-list {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 1.5rem;
+      max-height: 500px;
+      overflow-y: auto;
+    }
+    .queue-item {
+      display: grid;
+      grid-template-columns: 50px 1fr 120px 120px 140px;
+      gap: 1rem;
+      padding: 1rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      align-items: center;
+      transition: all 0.2s;
+    }
+    .queue-item:hover {
+      background: rgba(255,255,255,0.05);
+      padding-left: 1.5rem;
+    }
+    .queue-item:last-child { border-bottom: none; }
+    
+    .batch-number {
+      font-size: 0.85rem;
+      color: #00d4ff;
+      font-weight: 700;
+    }
+    .batch-info {
+      flex: 1;
+    }
+    .batch-title {
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 0.25rem;
+    }
+    .batch-meta {
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+    .batch-status {
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-align: center;
+    }
+    .status-pending {
+      background: rgba(255,255,255,0.1);
+      color: #aaa;
+    }
+    .status-sent {
+      background: rgba(45,158,90,0.2);
+      color: #00ffa3;
+    }
+    .status-replied {
+      background: rgba(0,212,255,0.2);
+      color: #00d4ff;
+    }
+    .batch-actions {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .batch-btn {
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.05);
+      color: #fff;
+      font-size: 0.85rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .batch-btn:hover {
+      background: rgba(255,255,255,0.15);
+      transform: translateY(-1px);
+    }
+    .batch-btn.primary {
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      border-color: transparent;
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    .footer a {
+      color: #00d4ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    .empty-state {
+      text-align: center;
+      padding: 3rem;
+      color: #aaa;
+    }
+    .empty-state-icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📊 Gerenciador de Envios em Lote</h1>
+      <p>Organize, envie e acompanhe os 585 lotes de prospecção personalizada por cidade</p>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-box">
+        <div class="stat-value" id="statTotal">585</div>
+        <div class="stat-label">Total de Lotes</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value" id="statPending">585</div>
+        <div class="stat-label">Pendentes</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value" id="statSent">0</div>
+        <div class="stat-label">Enviados</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value" id="statReplied">0</div>
+        <div class="stat-label">Respondidos</div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <div class="control-group">
+        <span class="control-label">Filtrar por status:</span>
+        <select class="control-select" id="statusFilter" onchange="renderQueue()">
+          <option value="all">Todos</option>
+          <option value="pending">Pendentes</option>
+          <option value="sent">Enviados</option>
+          <option value="replied">Respondidos</option>
+        </select>
+        
+        <span class="control-label">Filtrar por cidade:</span>
+        <select class="control-select" id="cityFilter" onchange="renderQueue()">
+          <option value="all">Todas</option>
+          <option value="santos">Santos</option>
+          <option value="guaruja">Guarujá</option>
+          <option value="praia-grande">Praia Grande</option>
+          <option value="ubatuba">Ubatuba</option>
+          <option value="peruibe">Peruíbe</option>
+          <option value="sao-vicente">São Vicente</option>
+          <option value="bertioga">Bertioga</option>
+          <option value="itanhaem">Itanhaém</option>
+          <option value="mongagua">Mongaguá</option>
+        </select>
+        
+        <span class="control-label">Ordenar:</span>
+        <select class="control-select" id="sortOrder" onchange="renderQueue()">
+          <option value="asc">Lote crescente</option>
+          <option value="desc">Lote decrescente</option>
+          <option value="city">Por cidade</option>
+        </select>
+      </div>
+      
+      <div class="control-group">
+        <button class="action-btn" onclick="markAllSent()">✓ Marcar todos como enviados</button>
+        <button class="action-btn secondary" onclick="resetQueue()">🔄 Resetar</button>
+        <button class="action-btn success" onclick="exportCSV()">📥 Exportar CSV</button>
+      </div>
+    </div>
+
+    <div class="queue-list" id="queueList">
+      <div class="empty-state">
+        <div class="empty-state-icon">📤</div>
+        <p>Carregando lotes...</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>🏖️ Praia Digital · Gerenciador de Envios em Lote</p>
+      <p style="margin-top: 0.5rem;">
+        <a href="outreach/prospeccao-por-estado-2026.html" target="_blank">Hub por Estado</a> • 
+        <a href="docs/sales/execucao-diaria-2026-07-14.html" target="_blank">Execução do Dia</a> • 
+        <a href="central-comando-praia-digital.html" target="_blank">Central de Comando</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Generate queue data for all 585 batches
+    const cities = ['santos','guaruja','praia-grande','ubatuba','peruibe','sao-vicente','bertioga','itanhaem','mongagua'];
+    const cityLabels = {
+      'santos': 'Santos', 'guaruja': 'Guarujá', 'praia-grande': 'Praia Grande',
+      'ubatuba': 'Ubatuba', 'peruibe': 'Peruíbe', 'sao-vicente': 'São Vicente',
+      'bertioga': 'Bertioga', 'itanhaem': 'Itanhaém', 'mongagua': 'Mongaguá'
+    };
+    
+    const queue = [];
+    for (let i = 40; i <= 624; i++) {
+      const city = cities[(i - 40) % cities.length];
+      queue.push({
+        batch: i,
+        city: city,
+        cityLabel: cityLabels[city],
+        status: 'pending',
+        date: ''
+      });
+    }
+    
+    const storageKey = 'praiaDigitalSendQueue';
+    
+    function loadQueue() {
+      try {
+        const saved = JSON.parse(localStorage.getItem(storageKey) || '[]');
+        saved.forEach(item => {
+          const idx = queue.findIndex(q => q.batch === item.batch);
+          if (idx !== -1) {
+            queue[idx].status = item.status || 'pending';
+            queue[idx].date = item.date || '';
+          }
+        });
+      } catch (e) {}
+    }
+    
+    function saveQueue() {
+      localStorage.setItem(storageKey, JSON.stringify(queue));
+    }
+    
+    function updateStats() {
+      const total = queue.length;
+      const sent = queue.filter(q => q.status === 'sent').length;
+      const replied = queue.filter(q => q.status === 'replied').length;
+      const pending = total - sent - replied;
+      
+      document.getElementById('statTotal').textContent = total;
+      document.getElementById('statPending').textContent = pending;
+      document.getElementById('statSent').textContent = sent;
+      document.getElementById('statReplied').textContent = replied;
+    }
+    
+    function renderQueue() {
+      const statusFilter = document.getElementById('statusFilter').value;
+      const cityFilter = document.getElementById('cityFilter').value;
+      const sortOrder = document.getElementById('sortOrder').value;
+      
+      let filtered = queue.filter(item => {
+        if (statusFilter === 'all') return true;
+        return item.status === statusFilter;
+      });
+      
+      if (cityFilter !== 'all') {
+        filtered = filtered.filter(item => item.city === cityFilter);
+      }
+      
+      filtered.sort((a, b) => {
+        if (sortOrder === 'asc') return a.batch - b.batch;
+        if (sortOrder === 'desc') return b.batch - a.batch;
+        if (sortOrder === 'city') return a.cityLabel.localeCompare(b.cityLabel);
+        return 0;
+      });
+      
+      const container = document.getElementById('queueList');
+      
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <div class="empty-state">
+            <div class="empty-state-icon">✅</div>
+            <p>Nenhum lote encontrado com este filtro.</p>
+          </div>
+        `;
+        return;
+      }
+      
+      container.innerHTML = filtered.map(item => {
+        const statusClass = item.status === 'pending' ? 'status-pending' : 
+                           item.status === 'sent' ? 'status-sent' : 'status-replied';
+        const statusText = item.status === 'pending' ? 'Pendente' : 
+                          item.status === 'sent' ? 'Enviado' : 'Respondido';
+        const slug = `lote-prospeccao-${item.batch}-${item.city}-2026-07-14`;
+        
+        return `
+          <div class="queue-item">
+            <div class="batch-number">#${item.batch}</div>
+            <div class="batch-info">
+              <div class="batch-title">${item.cityLabel}</div>
+              <div class="batch-meta">${item.date ? 'Enviado em: ' + item.date : ''}</div>
+            </div>
+            <div class="batch-status ${statusClass}">${statusText}</div>
+            <div class="batch-actions">
+              <a href="outreach/${slug}.html" target="_blank" class="batch-btn">Abrir</a>
+              ${item.status === 'pending' ? 
+                `<button class="batch-btn primary" onclick="markSent(${item.batch})">✓ Enviar</button>` : 
+                `<button class="batch-btn" onclick="markReplied(${item.batch})">💬 Respondido</button>`
+              }
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+    
+    function markSent(batch) {
+      const item = queue.find(q => q.batch === batch);
+      if (item) {
+        item.status = 'sent';
+        item.date = new Date().toLocaleDateString('pt-BR');
+        saveQueue();
+        updateStats();
+        renderQueue();
+      }
+    }
+    
+    function markReplied(batch) {
+      const item = queue.find(q => q.batch === batch);
+      if (item) {
+        item.status = 'replied';
+        saveQueue();
+        updateStats();
+        renderQueue();
+      }
+    }
+    
+    function markAllSent() {
+      if (!confirm('Marcar TODOS os lotes pendentes como enviados?')) return;
+      queue.forEach(item => {
+        if (item.status === 'pending') {
+          item.status = 'sent';
+          item.date = new Date().toLocaleDateString('pt-BR');
+        }
+      });
+      saveQueue();
+      updateStats();
+      renderQueue();
+    }
+    
+    function resetQueue() {
+      if (!confirm('Resetar todos os status? Isso não pode ser desfeito.')) return;
+      queue.forEach(item => {
+        item.status = 'pending';
+        item.date = '';
+      });
+      saveQueue();
+      updateStats();
+      renderQueue();
+    }
+    
+    function exportCSV() {
+      const headers = ['lote','cidade','status','data_envio'];
+      const rows = queue.map(item => [
+        item.batch,
+        item.cityLabel,
+        item.status,
+        item.date || ''
+      ]);
+      
+      const csv = [headers, ...rows].map(r => r.join(',')).join('\\n');
+      const blob = new Blob([csv], { type: 'text/csv' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'envios-lotes-2026-07-14.csv';
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+    
+    // Initialize
+    loadQueue();
+    updateStats();
+    renderQueue();
+  </script>
+</body>
+</html>
