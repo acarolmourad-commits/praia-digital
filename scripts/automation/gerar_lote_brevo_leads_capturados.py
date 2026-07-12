@@ -1,16 +1,13 @@
 import csv
 from pathlib import Path
-from datetime import date
 
 root = Path("C:/Users/Carolina/praia-digital")
 source = root / "docs/sales/parcerias-leads-capturados.csv"
 out = root / "docs/sales/csv-lotes-email/lote-brevo-leads-capturados-2026-07-12.csv"
 
 if not source.exists():
-    print(f"Arquivo de origem não encontrado: {source}")
+    print("Arquivo de leads não encontrado.")
     raise SystemExit(1)
-
-out.parent.mkdir(parents=True, exist_ok=True)
 
 with source.open("r", encoding="utf-8") as f:
     reader = csv.DictReader(f)
@@ -19,8 +16,8 @@ with source.open("r", encoding="utf-8") as f:
 with out.open("w", encoding="utf-8", newline="") as f:
     writer = csv.writer(f)
     writer.writerow([
-        "NOME", "EMAIL", "WHATSAPP", "CIDADE", "EMPRESA", "ASSUNTO",
-        "LINK_EMAIL_PERSONALIZADO", "STATUS"
+        "NOME", "EMAIL", "WHATSAPP", "CIDADE", "EMPRESA",
+        "ASSUNTO", "LINK_EMAIL_PERSONALIZADO", "ORIGEM", "INTERESSE", "STATUS"
     ])
     for row in rows:
         nome = row.get("Seu nome", "").strip()
@@ -29,8 +26,8 @@ with out.open("w", encoding="utf-8", newline="") as f:
         whatsapp = row.get("WhatsApp", "").strip()
         cidade = row.get("Cidade", "").strip()
         mensagem = row.get("Mensagem", "").strip()
-        timestamp = row.get("Timestamp", "").strip()
         origem = row.get("Origem", "").strip()
+        timestamp = row.get("Timestamp", "").strip()
 
         if not email and not whatsapp:
             continue
@@ -47,8 +44,9 @@ with out.open("w", encoding="utf-8", newline="") as f:
             empresa,
             subject,
             link_email,
+            origem,
+            mensagem,
             status,
         ])
 
 print(f"Processados {len(rows)} leads. CSV Brevo gerado em {out}")
-
