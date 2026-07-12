@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Captura Automática de Parceiros — Praia Digital</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;background:#0d1117;color:#e6edf3;margin:0;padding:0}
+.container{max-width:900px;margin:0 auto;padding:22px}
+a{color:#58a6ff;text-decoration:underline}
+.card{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:18px;margin:14px 0}
+input,select,textarea{padding:12px;margin:6px 2px;border-radius:8px;border:1px solid #30363d;background:#21262d;color:#e6edf3;width:100%}
+button{padding:12px 16px;background:#1f6feb;color:#fff;border:none;border-radius:8px;cursor:pointer;font-weight:700}
+.result{margin-top:14px;padding:14px;background:#21262d;border-radius:8px;display:none;white-space:pre-wrap}
+.badge{display:inline-block;background:#1f6feb;color:#fff;padding:4px 8px;border-radius:999px;font-size:12px;margin:4px 6px 0 0}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🤝 Captura Automática de Parceiros</h1>
+<p>Formulário único para imobiliárias interessadas em parceria.</p>
+
+<div class="card">
+  <input type="text" id="nome" placeholder="Seu nome">
+  <input type="text" id="imobiliaria" placeholder="Nome da imobiliária">
+  <input type="email" id="email" placeholder="E-mail">
+  <input type="tel" id="telefone" placeholder="Telefone/WhatsApp">
+  <select id="cidade">
+    <option value="">Cidade</option>
+    <option>Santos</option>
+    <option>Guarujá</option>
+    <option>Ubatuba</option>
+    <option>Ilhabela</option>
+    <option>Peruíbe</option>
+    <option>Praia Grande</option>
+    <option>Bertioga</option>
+    <option>Itanhaém</option>
+  </select>
+  <select id="modelo">
+    <option value="">Modelo de parceria</option>
+    <option>Captação de leads qualificados</option>
+    <option>Conteúdo e tráfego</option>
+    <option>Ferramentas de IA para corretores</option>
+    <option>Piloto 30 dias sem investimento</option>
+  </select>
+  <textarea id="mensagem" rows="3" placeholder="Mensagem ou desafio atual"></textarea>
+  <button onclick="enviar()">Enviar interesse</button>
+</div>
+
+<div id="resultado" class="result"></div>
+
+<div class="card">
+  <h2>Acesso rápido</h2>
+  <a href="docs/sales/central-comando-praia-digital.html">🧭 Central de Comando</a><br>
+  <a href="docs/sales/gerador-proposta-parceria-2026.html">📄 Gerador de proposta</a><br>
+  <a href="https://praia.digital">🛠 Ferramentas gratuitas</a>
+</div>
+</div>
+
+<script>
+function enviar(){
+  const nome=document.getElementById('nome').value.trim();
+  const imobiliaria=document.getElementById('imobiliaria').value.trim();
+  const email=document.getElementById('email').value.trim();
+  const telefone=document.getElementById('telefone').value.trim();
+  const cidade=document.getElementById('cidade').value;
+  const modelo=document.getElementById('modelo').value;
+  const mensagem=document.getElementById('mensagem').value.trim();
+  if(!nome||!imobiliaria||!email||!telefone||!cidade||!modelo){
+    alert('Preencha todos os campos.');
+    return;
+  }
+  const r=document.getElementById('resultado');
+  r.textContent='Interesse registrado.\n\nEm breve entraremos em contato.\n\nResumo:\n- Nome: '+nome+'\n- Imobiliária: '+imobiliaria+'\n- E-mail: '+email+'\n- Telefone: '+telefone+'\n- Cidade: '+cidade+'\n- Modelo: '+modelo+'\n- Mensagem: '+(mensagem||'-')+'\n\nContato: comercial@praia.digital | (11) 95434-6288';
+  r.style.display='block';
+}
+</script>
+</body>
+</html>
