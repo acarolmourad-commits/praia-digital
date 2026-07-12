@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onboarding de Parceiros - Praia Digital</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
+      color: #fff;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container { max-width: 1200px; margin: 0 auto; }
+    
+    .header {
+      background: linear-gradient(135deg, #7b2ff7, #00d4ff);
+      padding: 2.5rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    .header p { opacity: 0.95; font-size: 1rem; max-width: 700px; margin: 0 auto; }
+    
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .step-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s;
+      position: relative;
+    }
+    .step-card:hover {
+      background: rgba(255,255,255,0.08);
+      transform: translateY(-3px);
+      border-color: rgba(255,255,255,0.2);
+    }
+    .step-number {
+      position: absolute;
+      top: -1rem;
+      left: 2rem;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      color: #fff;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 800;
+      box-shadow: 0 4px 15px rgba(123,47,247,0.4);
+    }
+    .step-title {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.75rem;
+      font-weight: 700;
+    }
+    .step-desc {
+      color: #e0e0e0;
+      line-height: 1.6;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+    .step-checklist {
+      list-style: none;
+      padding: 0;
+    }
+    .step-checklist li {
+      padding: 0.6rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      color: #e0e0e0;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .step-checklist li:last-child { border-bottom: none; }
+    .step-checklist li::before {
+      content: "✅ ";
+      color: #00ffa3;
+      font-weight: 700;
+    }
+    
+    .case-section {
+      background: rgba(123,47,247,0.1);
+      border: 2px solid rgba(123,47,247,0.3);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    .case-section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .case-metrics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    .case-metric {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .case-metric-value {
+      font-size: 2rem;
+      font-weight: bold;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .case-metric-label {
+      font-size: 0.8rem;
+      color: #aaa;
+      margin-top: 0.5rem;
+      text-transform: uppercase;
+    }
+    
+    .script-section {
+      background: #0d1117;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    .script-section h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .script-box {
+      background: rgba(0,0,0,0.3);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    .script-title {
+      font-weight: 700;
+      color: #00d4ff;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+    .script-content {
+      color: #e6edf3;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      white-space: pre-wrap;
+    }
+    .copy-btn {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #fff;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+    .copy-btn:hover {
+      background: rgba(255,255,255,0.2);
+      transform: translateY(-1px);
+    }
+    
+    .action-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+    .action-btn {
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      color: #fff;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+    .action-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(123,47,247,0.4);
+    }
+    .action-btn.secondary {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    .footer a {
+      color: #00d4ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    @media (max-width: 768px) {
+      .steps-grid { grid-template-columns: 1fr; }
+      .action-buttons { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🤝 Playbook de Onboarding de Parceiros</h1>
+      <p>Guia passo a passo para integrar novas imobiliárias parceiras com base no case Barra Norte Imóveis</p>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <div class="step-title">Primeiro Contato</div>
+        <div class="step-desc">Estabeleça rapport rápido e apresente o case Barra Norte Imóveis como referência.</div>
+        <ul class="step-checklist">
+          <li>Enviar e-mail personalizado</li>
+          <li>Mencionar cidade e dor principal</li>
+          <li>Oferecer diagnóstico gratuito</li>
+          <li>Sugerir horários para call</li>
+        </ul>
+      </div>
+
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <div class="step-title">Call de Apresentação</div>
+        <div class="step-desc">Apresente a Praia Digital, mostre as ferramentas e entenda as necessidades específicas.</div>
+        <ul class="step-checklist">
+          <li>Apresentar case Barra Norte Imóveis</li>
+          <li>Demonstrar ferramentas gratuitas</li>
+          <li>Identificar gargalos atuais</li>
+          <li>Propor plano personalizado</li>
+        </ul>
+      </div>
+
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <div class="step-title">Proposta Comercial</div>
+        <div class="step-desc">Envie proposta detalhada com ROI projetado baseado no case de sucesso.</div>
+        <ul class="step-checklist">
+          <li>Incluir métricas do case</li>
+          <li>Definir investimento e prazo</li>
+          <li>Apresentar cronograma 30 dias</li>
+          <li>Oferecer início gratuito</li>
+        </ul>
+      </div>
+
+      <div class="step-card">
+        <div class="step-number">4</div>
+        <div class="step-title">Fechamento</div>
+        <div class="step-desc">Feche a parceria e inicie o onboarding rápido de 7 dias.</div>
+        <ul class="step-checklist">
+          <li>Enviar contrato simplificado</li>
+          <li>Configurar ferramentas</li>
+          <li>Treinar equipe (1h)</li>
+          <li>Cadastrar primeiros imóveis</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="case-section">
+      <h2>📈 Case Modelo: Barra Norte Imóveis</h2>
+      <p style="color:#e0e0e0; line-height:1.7;">Use este case como referência em todas as negociações. Ele representa resultados reais alcançados em 30 dias.</p>
+      <div class="case-metrics">
+        <div class="case-metric">
+          <div class="case-metric-value">+40%</div>
+          <div class="case-metric-label">Leads Qualificados</div>
+        </div>
+        <div class="case-metric">
+          <div class="case-metric-value">-60%</div>
+          <div class="case-metric-label">Tempo Atendimento</div>
+        </div>
+        <div class="case-metric">
+          <div class="case-metric-value">3x</div>
+          <div class="case-metric-label">Agendamentos</div>
+        </div>
+        <div class="case-metric">
+          <div class="case-metric-value">0%</div>
+          <div class="case-metric-label">Anúncios Pagos</div>
+        </div>
+      </div>
+      <p style="color:#e0e0e0; line-height:1.7;"><strong>Depoimento:</strong> "A Praia Digital transformou nossa operação. Em 30 dias, aumentamos em 40% os leads qualificados sem gastar um centavo com anúncios." — Roberto Dias, Diretor Comercial · Barra Norte Imóveis</p>
+      <a href="blog/case-sucesso-barra-norte-imoveis-guaruja-2026.html" target="_blank" style="color:#00d4ff;text-decoration:none;font-weight:700;">Ver case completo →</a>
+    </div>
+
+    <div class="script-section">
+      <h2>📝 Scripts de WhatsApp para Qualificação</h2>
+      
+      <div class="script-box">
+        <button class="copy-btn" onclick="copiar(this)">📋 Copiar</button>
+        <div class="script-title">1. Abertura inicial</div>
+        <div class="script-content">Olá, [NOME]! Tudo bem?
+
+Sou Carolina Mourad, CEO da Praia Digital. Ajudo imobiliárias do litoral paulista a captar mais leads e automatizar o atendimento.
+
+Vi que a [NOME DA IMOBILIÁRIA] atua em [CIDADE]. Quero apresentar um case real de uma imobiliária similar que aumentou em 40% os leads qualificados em 30 dias.
+
+Posso enviar mais detalhes ou agendar uma call de 15 minutos?</div>
+      </div>
+
+      <div class="script-box">
+        <button class="copy-btn" onclick="copiar(this)">📋 Copiar</button>
+        <div class="script-title">2. Apresentação do valor</div>
+        <div class="script-content">Olá, [NOME]!
+
+O case que quero compartilhar é da Barra Norte Imóveis, do Guarujá:
+
+• +40% leads qualificados em 30 dias
+• -60% tempo de atendimento
+• 3x mais agendamentos
+• 0% investimento em anúncios
+
+Tudo isso com nossas ferramentas de IA: recomendação automática, assistente virtual 24/7 e geração de descrições.
+
+Quer que eu envie o case completo?</div>
+      </div>
+
+      <div class="script-box">
+        <button class="copy-btn" onclick="copiar(this)">📋 Copiar</button>
+        <div class="script-title">3. Call to action</div>
+        <div class="script-content">Olá, [NOME]!
+
+Tenho 3 horários livres esta semana para uma call de 15 minutos:
+• Segunda, 14h
+• Terça, 10h
+• Quarta, 9h
+
+Vou mostrar na prática como a Barra Norte Imóveis chegou a esses resultados.
+
+Qual funciona melhor para você?</div>
+      </div>
+
+      <div class="script-box">
+        <button class="copy-btn" onclick="copiar(this)">📋 Copiar</button>
+        <div class="script-title">4. Follow-upWhatsApp 3 dias</div>
+        <div class="script-content">Olá, [NOME]!
+
+Espero que esta mensagem te encontre bem. Faz 3 dias que compartilhei o case da Barra Norte Imóveis.
+
+Enquanto isso, identifiquei um ponto que pode ajudar [CIDADE]: imobiliárias que usam recomendação automática estão captando mais leads com o mesmo investimento.
+
+Quer um tour de 10 minutos pelas ferramentas gratuitas?</div>
+      </div>
+
+      <div class="script-box">
+        <button class="copy-btn" onclick="copiar(this)">📋 Copiar</button>
+        <div class="script-title">5. Follow-upWhatsApp 7 dias</div>
+        <div class="script-content">Olá, [NOME]!
+
+Faz uma semana que entrei em contato sobre a Praia Digital.
+
+Não quero ser insistente, só quero garantir que você não perdeu as ferramentas gratuitas que outras imobiliárias já estão usando para se destacar.
+
+👉 Tudo isso em https://praia.digital
+
+Responda "TESTAR" que eu envio o link direto!</div>
+      </div>
+    </div>
+
+    <div class="action-buttons">
+      <a href="outreach/auto-respostas/modelo-resposta-automatica-lead.html" target="_blank" class="action-btn">📧 Auto-respostas E-mail</a>
+      <a href="docs/sales/playbook-vendas-clicavel.html" target="_blank" class="action-btn secondary">🎯 Playbook de Vendas</a>
+      <a href="blog/case-sucesso-barra-norte-imoveis-guaruja-2026.html" target="_blank" class="action-btn secondary">📈 Case de Sucesso</a>
+    </div>
+
+    <div class="footer">
+      <p>🏖️ Praia Digital · Playbook de Onboarding de Parceiros</p>
+      <p style="margin-top: 0.5rem;">
+        <a href="central-comando-praia-digital.html" target="_blank">Central de Comando</a> • 
+        <a href="https://praia.digital" target="_blank">Ferramentas Gratuitas</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function copiar(btn) {
+      const box = btn.closest('.script-box');
+      const text = box.querySelector('.script-content').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const original = btn.textContent;
+        btn.textContent = '✅ Copiado!';
+        setTimeout(() => btn.textContent = original, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
