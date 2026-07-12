@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simulador de temporada para imóveis no litoral paulista | Praia Digital</title>
+  <meta name="description" content="Simulador de temporada para imóveis no litoral paulista com estimativa de ocupação e retorno.">
+  <link rel="canonical" href="https://acarolmourad-commits.github.io/praia-digital/ferramentas-gratuitas/imobiliarias/simulador-temporada-litoral.html">
+  <style>
+    :root{color:#0d1b2a;primary:#4f46e5;secondary:#0ea5e9;accent:#10b981;bg:#f8fafc;text:#0f172a;muted:#475569;border:#e5e7eb}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--bg);color:var(--text);font:14px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding:18px}
+    .wrap{max-width:880px;margin:0 auto}
+    label{display:block;margin:10px 0 4px}
+    input,select{width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:12px;background:#fff;color:#0f172a}
+    button{background:var(--primary);color:white;border:none;padding:12px 14px;border-radius:14px;margin-top:12px;cursor:pointer;font-weight:800}
+    .result{background:#f1f5f9;border:1px solid #e5e7eb;border-radius:12px;padding:14px;margin-top:12px;display:none}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Simulador de temporada</h1>
+    <p>Estimativa simples de retorno.</p>
+    <label>Valor do imóvel</label>
+    <input id="v" type="number" placeholder="Ex: 800000">
+    <label>Diária média</label>
+    <input id="d" type="number" placeholder="Ex: 800">
+    <label>Ocupação estimada (%)</label>
+    <input id="o" type="number" placeholder="30">
+    <button onclick="simular()">Simular</button>
+    <div id="r" class="result"></div>
+    <p><a href="/praia-digital/ferramentas-gratuitas/imobiliarias/orcamento-temporada-litoral.html">Orçamento de temporada</a></p>
+  </div>
+  <script>
+    function simular(){
+      const v = parseFloat(document.getElementById('v').value) || 0;
+      const d = parseFloat(document.getElementById('d').value) || 0;
+      const o = parseFloat(document.getElementById('o').value) || 0;
+      const faturamento = d * 30 * (o/100) * 12;
+      const retorno = v ? (faturamento / v) * 100 : 0;
+      const r = document.getElementById('r');
+      r.style.display='block';
+      r.innerHTML = `<strong>Faturamento anual estimado:</strong> R$ ${faturamento.toFixed(2)}<br><strong>Retorno sobre o valor:</strong> ${retorno.toFixed(2)}%`;
+    }
+  </script>
+</body>
+</html>
