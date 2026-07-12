@@ -1,5 +1,6 @@
-nome,email,cidade,imovel_url,fonte,data_captura,status,ultimo_contato,proxima_acao,observacoes,lote,ferramenta
-Lead 35-1,lead351@example.com,Cananéia,/praia-digital/imoveis/imovel-0288.html,lote,2026-07-12T05:30:21.243980,simulado,2026-07-12T05:45:05.324734,follow-up 3 dias,Lote 35,35,/praia-digital/ferramentas-gratuitas/imobiliarias/guia-aluguel-temporada-litoral.html
-Lead 35-2,lead352@example.com,São Sebastião,/praia-digital/imoveis/imovel-0289.html,lote,2026-07-12T05:30:21.243980,simulado,2026-07-12T05:45:05.324734,follow-up 3 dias,Lote 35,35,/praia-digital/ferramentas-gratuitas/imobiliarias/pre-qualificacao-leads-litoral.html
-Lead 36-1,lead361@example.com,Caraguatatuba,/praia-digital/imoveis/imovel-0290.html,lote,2026-07-12T05:30:21.243980,simulado,2026-07-12T05:45:05.568701,follow-up 3 dias,Lote 36,36,/praia-digital/ferramentas-gratuitas/imobiliarias/onboarding-rapido-parceiros-praia-digital-2026.html
-Lead 36-2,lead362@example.com,Guarujá,/praia-digital/imoveis/imovel-0291.html,lote,2026-07-12T05:30:21.243980,simulado,2026-07-12T05:45:05.568701,follow-up 3 dias,Lote 36,36,/praia-digital/ferramentas-gratuitas/imobiliarias/checklist-captacao-imoveis-litoral.html
+nome,email,cidade,contato,dor_principal,diferencial,status,data_envio,ultimo_contato,proxima_acao,observacoes
+Litoral Premium Sant,contato36@exemplo.com,Santos,Roberto Dias,conversao,chatbot,interessado,2026-07-12,,follow-up 3d,Piloto 1 imóvel
+Santos Ocean View,contato66@exemplo.com,Santos,Tatiane Moreira,leads,chatbot,parceria_fechada,2026-07-12,,follow-up 3d,Follow-up automático
+Santos Premium Digital,contato76@exemplo.com,Santos,Viviane Paes,leads,chatbot,parceria_fechada,2026-07-12,,follow-up 3d,CRM simples
+Santos Tower Imóveis,contato91@exemplo.com,Santos,Helena Vaz,leads,chatbot,parceria_fechada,2026-07-12,,follow-up 3d,Case social
+Santos Luxo,contato101@exemplo.com,Santos,Isabela Fernandes,leads,chatbot,parceria_fechada,2026-07-12,,follow-up 3d,ROI simples
