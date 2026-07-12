@@ -1,0 +1,7 @@
+Empresa: Guaruja Prime
+Nome: Contato 3
+Cidade: Guaruja
+E-mail: contato3@example.com
+WhatsApp: (13) 99999-0003
+Piloto: 14 dias sem custo
+Objetivo: captação + follow-up automático + relatório semanal
