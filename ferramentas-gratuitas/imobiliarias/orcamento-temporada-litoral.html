@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orçamento de temporada no litoral paulista — ferramenta gratuita | Praia Digital</title>
+  <meta name="description" content="Ferramenta gratuita para orçamento de temporada no litoral paulista.">
+  <link rel="canonical" href="https://acarolmourad-commits.github.io/praia-digital/ferramentas-gratuitas/imobiliarias/orcamento-temporada-litoral.html">
+  <style>
+    :root{bg:#f8fafc;text:#0f172a;border:#e5e7eb;primary:#2563eb;secondary:#0ea5e9}
+    body{font:14px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);padding:18px}
+    .wrap{max-width:880px;margin:0 auto}
+    a{color:var(--primary)}
+    label{display:block;margin:10px 0 4px}
+    input,select,textarea{width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:12px;background:#fff;color:#0f172a}
+    button{background:var(--primary);color:white;border:none;padding:12px 14px;border-radius:14px;margin-top:12px;cursor:pointer;font-weight:800}
+    .result{background:#f1f5f9;border:1px solid #e5e7eb;border-radius:12px;padding:14px;margin-top:12px;display:none}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Orçamento de temporada</h1>
+    <p>Monte um orçamento simples para temporada.</p>
+    <form onsubmit="event.preventDefault();const diaria=parseInt(document.getElementById('diaria').value)||0;const dias=parseInt(document.getElementById('dias').value)||0;const tx=parseInt(document.getElementById('tx').value)||0;const r=document.querySelector('.result');r.style.display='block';r.textContent='Orçamento base: R$ '+(diaria*dias).toLocaleString('pt-BR')+'. Com taxa de '+tx+'%, valor estimado: R$ '+(diaria*dias*(1-tx/100)).toLocaleString('pt-BR')+'.';">
+      <label>Diária</label>
+      <input id="diaria" type="number" placeholder="Ex: 800">
+      <label>Dias</label>
+      <input id="dias" type="number" placeholder="Ex: 15">
+      <label>Taxa de serviço/conforto (%)</label>
+      <input id="tx" type="number" placeholder="Ex: 10">
+      <button type="submit">Calcular orçamento</button>
+    </form>
+    <div class="result"></div>
+    <p><a href="/praia-digital/ferramentas-gratuitas/imobiliarias/analise-retorno-temporada-litoral.html">Análise de retorno</a></p>
+  </div>
+</body>
+</html>
