@@ -1,0 +1,601 @@
+NOME,EMAIL,TELEFONE,CIDADE,ORIGEM,STATUS,LISTA
+Contato,contato36@exemplo.com,,Santos,outreach,interessado,Leads Litoral SP
+Contato,contato66@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato76@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato91@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato101@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato121@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato141@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato161@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato176@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato186@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato201@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato216@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato8@exemplo.com,,Guarujá,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato24@exemplo.com,,Praia Grande,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato41@exemplo.com,,Itanhaém,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato129@exemplo.com,,Bertioga,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato184@exemplo.com,,Bertioga,outreach,interessado,Leads Litoral SP
+Contato,contato194@exemplo.com,,Bertioga,outreach,interessado,Leads Litoral SP
+Contato,contato209@exemplo.com,,Bertioga,outreach,interessado,Leads Litoral SP
+Contato,contato6@exemplo.com,,Santos,outreach,interessado,Leads Litoral SP
+Contato,contato10@exemplo.com,,Peruíbe,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato21@exemplo.com,,Santos,outreach,interessado,Leads Litoral SP
+Contato,contato34@exemplo.com,,Praia Grande,outreach,interessado,Leads Litoral SP
+Contato,contato39@exemplo.com,,Praia Grande,outreach,interessado,Leads Litoral SP
+Contato,contato44@exemplo.com,,Bertioga,outreach,interessado,Leads Litoral SP
+Contato,contato49@exemplo.com,,Praia Grande,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato74@exemplo.com,,Bertioga,outreach,interessado,Leads Litoral SP
+Contato,contato89@exemplo.com,,Praia Grande,outreach,interessado,Leads Litoral SP
+Contato,contato99@exemplo.com,,Bertioga,outreach,interessado,Leads Litoral SP
+Contato,contato109@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato114@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato134@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato149@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato154@exemplo.com,,Praia Grande,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato169@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato174@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato199@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato212@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato214@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato15@exemplo.com,,Guarujá,outreach,interessado,Leads Litoral SP
+Contato,contato19@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato29@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato32@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato47@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato84@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato87@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato106@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato111@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato112@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato126@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato131@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato132@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato146@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato151@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato152@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato166@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato171@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato172@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato181@exemplo.com,,Peruíbe,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato191@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato196@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato197@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato206@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato211@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato31@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato46@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato41@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato46@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato71@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato78@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato81@exemplo.com,,Peruíbe,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato86@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato96@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato116@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato136@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato156@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato188@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato203@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato218@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato13@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato18@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato26@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato39@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato83@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato92@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato93@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato98@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato102@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato103@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato108@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato119@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato122@exemplo.com,,Guarujá,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato123@exemplo.com,,Bertioga,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato128@exemplo.com,,Itanhaém,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato139@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato142@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato143@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato148@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato159@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato162@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato163@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato168@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato177@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato178@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato183@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato187@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato193@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato202@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato208@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato217@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato4@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato9@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato16@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato28@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato37@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato43@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato50@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato43@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato67@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato68@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato73@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato118@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato137@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato138@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato157@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato158@exemplo.com,,Bertioga,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato1@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato17@exemplo.com,,Bertioga,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato22@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato27@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato36@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato44@exemplo.com,,Itanhaém,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato49@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato42@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato50@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato72@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato82@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato90@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato97@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato107@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato115@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato117@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato127@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato135@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato147@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato155@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato167@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato175@exemplo.com,,Peruíbe,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato182@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato192@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato200@exemplo.com,,Peruíbe,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato207@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato215@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato2@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato3@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato12@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato14@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato35@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato48@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato37@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato77@exemplo.com,,Guarujá,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato79@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato104@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato124@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato144@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato164@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato179@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato189@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato204@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato219@exemplo.com,,Praia Grande,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato5@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato7@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato11@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato20@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato47@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato69@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato94@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato38@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato70@exemplo.com,,São Vicente,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato190@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato205@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato220@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato25@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato40@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato42@exemplo.com,,Itanhaém,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato45@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato38@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato40@exemplo.com,,São Vicente,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato80@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato95@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato105@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato125@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato145@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato165@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato180@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato23@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato30@exemplo.com,,Guarujá,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato85@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato110@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato120@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato130@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato140@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato150@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato160@exemplo.com,,São Vicente,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato170@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato185@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato195@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato210@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato45@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato75@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato88@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato100@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato133@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato173@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato198@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato213@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato33@exemplo.com,,São Vicente,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato48@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato113@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato153@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato221@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato222@exemplo.com,,Itanhaém,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato223@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato224@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato225@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato226@exemplo.com,,Peruíbe,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato227@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato228@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato229@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato230@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato231@exemplo.com,,Bertioga,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato232@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato233@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato234@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato235@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato236@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato237@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato238@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato239@exemplo.com,,São Vicente,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato240@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato241@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato242@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato243@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato244@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato245@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato246@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato247@exemplo.com,,Mongaguá,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato248@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato249@exemplo.com,,Praia Grande,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato250@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato251@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato252@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato253@exemplo.com,,Guarujá,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato254@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato255@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato256@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato257@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato258@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato259@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato260@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato261@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato262@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato263@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato264@exemplo.com,,Peruíbe,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato265@exemplo.com,,Guarujá,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato266@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato267@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato268@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato269@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato270@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato271@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato272@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato273@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato274@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato275@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato276@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato277@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato278@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato279@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato280@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato281@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato282@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato283@exemplo.com,,Mongaguá,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato284@exemplo.com,,Praia Grande,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato285@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato286@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato287@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato288@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato289@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato290@exemplo.com,,Guarujá,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato291@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato292@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato293@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato294@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato295@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato296@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato297@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato298@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato299@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato300@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato301@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato302@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato303@exemplo.com,,Guarujá,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato304@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato305@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato306@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato307@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato308@exemplo.com,,Itanhaém,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato309@exemplo.com,,Mongaguá,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato310@exemplo.com,,Itanhaém,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato311@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato312@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato313@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato314@exemplo.com,,Mongaguá,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato315@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato316@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato317@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato318@exemplo.com,,Mongaguá,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato319@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato320@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato321@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato322@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato323@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato324@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato325@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato326@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato327@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato328@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato329@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato330@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato331@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato332@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato333@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato334@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato335@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato336@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato337@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato338@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato339@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato340@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato341@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato342@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato343@exemplo.com,,Bertioga,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato344@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato345@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato346@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato347@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato348@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato349@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato350@exemplo.com,,Itanhaém,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato351@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato352@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato353@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato354@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato355@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato356@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato357@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato358@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato359@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato360@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato361@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato362@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato363@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato364@exemplo.com,,Peruíbe,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato365@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato366@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato367@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato368@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato369@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato370@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato371@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato372@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato373@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato374@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato375@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato376@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato377@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato378@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato379@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato380@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato381@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato382@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato383@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato384@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato385@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato386@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato387@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato388@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato389@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato390@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato391@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato392@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato393@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato394@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato395@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato396@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato397@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato398@exemplo.com,,Mongaguá,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato399@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato400@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato401@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato402@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato403@exemplo.com,,São Vicente,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato404@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato405@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato406@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato407@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato408@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato409@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato410@exemplo.com,,Peruíbe,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato411@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato412@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato413@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato414@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato415@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato416@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato417@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato418@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato419@exemplo.com,,Itanhaém,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato420@exemplo.com,,Guarujá,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato421@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato422@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato423@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato424@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato425@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato426@exemplo.com,,São Vicente,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato427@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato428@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato429@exemplo.com,,São Vicente,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato430@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato431@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato432@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato433@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato434@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato435@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato436@exemplo.com,,Itanhaém,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato437@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato438@exemplo.com,,Guarujá,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato439@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato440@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato441@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato442@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato443@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato444@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato445@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato446@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato447@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato448@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato449@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato450@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato451@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato452@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato453@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato454@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato455@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato456@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato457@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato458@exemplo.com,,Guarujá,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato459@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato460@exemplo.com,,Guarujá,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato461@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato462@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato463@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato464@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato465@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato466@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato467@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato468@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato469@exemplo.com,,São Vicente,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato470@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato471@exemplo.com,,Praia Grande,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato472@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato473@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato474@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato475@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato476@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato477@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato478@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato479@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato480@exemplo.com,,Bertioga,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato481@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato482@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato483@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato484@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato485@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato486@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato487@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato488@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato489@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato490@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato491@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato492@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato493@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato494@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato495@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato496@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato497@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato498@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato499@exemplo.com,,São Vicente,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato500@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato501@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato502@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato503@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato504@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato505@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato506@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato507@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato508@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato509@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato510@exemplo.com,,Peruíbe,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato511@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato512@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato513@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato514@exemplo.com,,Praia Grande,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato515@exemplo.com,,Peruíbe,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato516@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato517@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato518@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato519@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato520@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato521@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato522@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato523@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato524@exemplo.com,,Itanhaém,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato525@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato526@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato527@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato528@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato529@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato530@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato531@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato532@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato533@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato534@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato535@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato536@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato537@exemplo.com,,Mongaguá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato538@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato539@exemplo.com,,São Vicente,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato540@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato541@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato542@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato543@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato544@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato545@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato546@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato547@exemplo.com,,Mongaguá,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato548@exemplo.com,,Itanhaém,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato549@exemplo.com,,Guarujá,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato550@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato551@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato552@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato553@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato554@exemplo.com,,Mongaguá,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato555@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato556@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato557@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato558@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato559@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato560@exemplo.com,,Peruíbe,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato561@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato562@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato563@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato564@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato565@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato566@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato567@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato568@exemplo.com,,Praia Grande,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato569@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato570@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato571@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato572@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato573@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato574@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato575@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato576@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato577@exemplo.com,,Praia Grande,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato578@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato579@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato580@exemplo.com,,Peruíbe,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato581@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato582@exemplo.com,,São Vicente,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato583@exemplo.com,,Bertioga,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato584@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato585@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato586@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato587@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato588@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato589@exemplo.com,,Guarujá,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato590@exemplo.com,,Santos,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato591@exemplo.com,,Bertioga,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato592@exemplo.com,,Itanhaém,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato593@exemplo.com,,Guarujá,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato594@exemplo.com,,Santos,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato595@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato596@exemplo.com,,Praia Grande,outreach,parceria_fechada,Leads Litoral SP
+Contato,contato597@exemplo.com,,Praia Grande,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato598@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato599@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
+Contato,contato600@exemplo.com,,Peruíbe,outreach,contato_inicial_enviado,Leads Litoral SP
