@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Onboarding de Parceiros — Praia Digital</title>
+<style>
+  :root{--bg:#f6f8fa;--card:#fff;--ink:#0f172a;--muted:#475569;--ocean:#0077B6;--purple:#6B21A8;--success:#14532d;--radius:14px}
+  *{box-sizing:border-box}
+  body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);margin:0;padding:22px}
+  .wrap{max-width:980px;margin:0 auto}
+  header{background:linear-gradient(135deg,#0b4f6c,#1570a1);color:#fff;padding:22px;border-radius:var(--radius);margin-bottom:18px}
+  header h1{margin:0 0 6px;font-size:20px}
+  header p{margin:0;opacity:.9;font-size:13px}
+  .card{background:#fff;padding:16px;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.04);margin-bottom:14px}
+  .card h2{margin:0 0 10px;color:#154c79;font-size:15px}
+  .badge{display:inline-block;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:700;background:#dcfce7;color:var(--success)}
+  .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+  .btn{display:inline-block;padding:10px 14px;background:var(--ocean);color:#fff;text-decoration:none;border-radius:999px;font-size:13px;font-weight:700}
+  .btn.secondary{background:#e2e8f0;color:#0f172a}
+  .footer{text-align:center;margin-top:18px;color:var(--muted);font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Onboarding de Parceiros</h1>
+    <p>Pacote oficial de boas-vindas para imobiliárias parceiras do litoral paulista.</p>
+    <div class="actions" style="margin-top:10px">
+      <a class="btn" href="scripts/automation/gerar_onboarding_parceiro.py">Rodar script</a>
+      <a class="btn secondary" href="docs/sales/regenerar-onboarding.bat">Regenerar onboarding</a>
+      <a class="btn secondary" href="parcerias-litoral-paulista.html">Voltar para parcerias</a>
+    </div>
+  </header>
+
+  <div class="card">
+    <h2>O que este passo gera</h2>
+    <ul>
+      <li>E-mail de boas-vindas por parceiro</li>
+      <li>Mensagem de WhatsApp por parceiro</li>
+      <li>Resumo do piloto: cidade, contato e objetivo</li>
+    </ul>
+    <div class="actions"><span class="badge">Pronto para usar</span></div>
+  </div>
+
+  <div class="card">
+    <h2>Onde fica o material</h2>
+    <p>Pasta: <code>docs/sales/onboarding-parceiros/</code></p>
+    <p>Estrutura por parceiro: <code>parceiro-001-.../email-boas-vindas.txt</code>, <code>whatsapp-boas-vindas.txt</code>, <code>resumo-parceiro.txt</code></p>
+  </div>
+
+  <div class="footer">
+    Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">Praia Digital</a> | Ferramentas: <a href="https://praia.digital">praia.digital</a>
+  </div>
+</div>
+</body>
+</html>
