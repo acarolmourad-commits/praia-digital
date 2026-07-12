@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagnóstico Gratuito - Praia Digital</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
+      color: #fff;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container { max-width: 800px; margin: 0 auto; }
+    
+    .header {
+      background: linear-gradient(135deg, #7b2ff7, #00d4ff);
+      padding: 3rem 2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .header h1 { font-size: 2rem; margin-bottom: 0.75rem; }
+    .header p { opacity: 0.95; font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
+    
+    .quiz-container {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 2.5rem;
+      backdrop-filter: blur(10px);
+    }
+    
+    .question {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .question:last-child { border-bottom: none; }
+    
+    .question-title {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .question-number {
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      color: #fff;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+    
+    .options { display: flex; flex-direction: column; gap: 0.75rem; }
+    .option-label {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem 1.25rem;
+      background: rgba(255,255,255,0.05);
+      border: 2px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-size: 0.95rem;
+    }
+    .option-label:hover {
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(255,255,255,0.2);
+    }
+    .option-label input[type="radio"] {
+      accent-color: #00d4ff;
+      width: 18px;
+      height: 18px;
+    }
+    
+    .form-section {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.15);
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .form-group { display: flex; flex-direction: column; gap: 0.5rem; }
+    .form-group.full { grid-column: 1 / -1; }
+    .form-group label {
+      font-size: 0.85rem;
+      color: #aaa;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .form-group input,
+    .form-group select {
+      padding: 0.85rem;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.05);
+      color: #fff;
+      font-size: 1rem;
+      transition: all 0.3s;
+    }
+    .form-group input:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: #00d4ff;
+      box-shadow: 0 0 0 3px rgba(0,212,255,0.2);
+    }
+    .form-group input::placeholder { color: rgba(255,255,255,0.4); }
+    
+    .submit-btn {
+      width: 100%;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      color: #fff;
+      border: none;
+      padding: 1.1rem;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-top: 1rem;
+    }
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(123,47,247,0.5);
+    }
+    
+    .result-section {
+      display: none;
+      background: rgba(0,212,150,0.1);
+      border: 2px solid #00d4ff;
+      border-radius: 12px;
+      padding: 2rem;
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .result-section.show { display: block; }
+    .result-title {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .result-text {
+      color: #e0e0e0;
+      line-height: 1.7;
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+    }
+    
+    .benefit-box {
+      background: rgba(123,47,247,0.1);
+      border-left: 4px solid #7b2ff7;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 6px;
+      text-align: left;
+    }
+    .benefit-box h3 {
+      color: #d4a0ff;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+    .benefit-box ul {
+      list-style: none;
+      padding: 0;
+    }
+    .benefit-box li {
+      padding: 0.3rem 0;
+      color: #e0e0e0;
+      font-size: 0.95rem;
+    }
+    .benefit-box li:before { content: "✅ "; margin-right: 0.5rem; }
+    
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    .footer a {
+      color: #00d4ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    @media (max-width: 768px) {
+      .form-grid { grid-template-columns: 1fr; }
+      .header h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🎯 Diagnóstico Gratuito</h1>
+      <p>Responda 5 perguntas rápidas e receba um plano personalizado para sua imobiliária.</p>
+    </div>
+
+    <div class="quiz-container">
+      <form id="quizForm">
+        <div class="question">
+          <div class="question-title">
+            <span class="question-number">1</span>
+            Qual o principal desafio da sua imobiliária hoje?
+          </div>
+          <div class="options">
+            <label class="option-label">
+              <input type="radio" name="q1" value="captacao" required>
+              Captar mais leads qualificados
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q1" value="atendimento">
+              Atendimento lento / fora do horário
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q1" value="fechamento">
+              Fechar mais vendas
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q1" value="organizacao">
+              Organização e gestão da equipe
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="question-title">
+            <span class="question-number">2</span>
+            Quantos imóveis sua imobiliária tem cadastrados?
+          </div>
+          <div class="options">
+            <label class="option-label">
+              <input type="radio" name="q2" value="0-20" required>
+              Até 20 imóveis
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q2" value="21-100">
+              21 a 100 imóveis
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q2" value="101-500">
+              101 a 500 imóveis
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q2" value="500+">
+              Mais de 500 imóveis
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="question-title">
+            <span class="question-number">3</span>
+            Qual sua cidade de operação?
+          </div>
+          <div class="options">
+            <label class="option-label">
+              <input type="radio" name="q3" value="santos" required>
+              Santos
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q3" value="guaruja">
+              Guarujá
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q3" value="praia-grande">
+              Praia Grande
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q3" value="ubatuba">
+              Ubatuba
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q3" value="outro">
+              Outra cidade do litoral
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="question-title">
+            <span class="question-number">4</span>
+            Você já usa alguma ferramenta de automação ou IA?
+          </div>
+          <div class="options">
+            <label class="option-label">
+              <input type="radio" name="q4" value="nao" required>
+              Não, ainda não
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q4" value="basica">
+              Sim, algo básico
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q4" value="avancada">
+              Sim, já uso ferramentas avançadas
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="question-title">
+            <span class="question-number">5</span>
+            Qual seu objetivo para os próximos 90 dias?
+          </div>
+          <div class="options">
+            <label class="option-label">
+              <input type="radio" name="q5" value="leads" required>
+              Aumentar captação de leads
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q5" value="vendas">
+              Aumentar vendas/fechamentos
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q5" value="tempo">
+              Reduzir trabalho repetitivo
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q5" value="todos">
+              Todos os acima
+            </label>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Nome *</label>
+              <input type="text" id="nome" placeholder="Seu nome" required>
+            </div>
+            <div class="form-group">
+              <label>E-mail *</label>
+              <input type="email" id="email" placeholder="seu@email.com" required>
+            </div>
+            <div class="form-group">
+              <label>WhatsApp</label>
+              <input type="tel" id="whatsapp" placeholder="(11) 95434-6288">
+            </div>
+            <div class="form-group">
+              <label>Cidade *</label>
+              <input type="text" id="cidade" placeholder="Ex: Santos" required>
+            </div>
+            <div class="form-group full">
+              <label>Imobiliária</label>
+              <input type="text" id="imobiliaria" placeholder="Nome da imobiliária">
+            </div>
+          </div>
+          <button type="submit" class="submit-btn">🎯 Receber Diagnóstico Gratuito</button>
+        </div>
+      </form>
+
+      <div id="resultado" class="result-section">
+        <div class="result-title">🎉 Diagnóstico Gerado!</div>
+        <p class="result-text">Obrigado! Em até <strong>24 horas</strong> você receberá um plano personalizado no e-mail informado.</p>
+        <div class="benefit-box">
+          <h3>Enquanto isso, explore gratuitamente:</h3>
+          <ul>
+            <li>Avaliação de preço de mercado automática</li>
+            <li>Recomendação inteligente de imóveis</li>
+            <li>Assistente virtual 24/7</li>
+            <li>Geração automática de descrições</li>
+          </ul>
+        </div>
+        <a href="https://praia.digital" target="_blank" class="submit-btn" style="text-decoration:none; display:inline-block; margin-top:1rem;">🛠️ Acessar Ferramentas Gratuitas</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>🏖️ Praia Digital · Transformando imobiliárias do litoral paulista com IA</p>
+      <p style="margin-top: 0.5rem;">
+        <a href="https://acarolmourad-commits.github.io/praia-digital/" target="_blank">Site Principal</a> • 
+        <a href="https://praia.digital" target="_blank">Ferramentas Gratuitas</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('quizForm');
+    const result = document.getElementById('resultado');
+    
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const formData = new FormData(form);
+      const answers = {};
+      for (let [key, value] of formData.entries()) {
+        answers[key] = value;
+      }
+      
+      const lead = {
+        ...answers,
+        nome: document.getElementById('nome').value,
+        email: document.getElementById('email').value,
+        whatsapp: document.getElementById('whatsapp').value,
+        cidade: document.getElementById('cidade').value,
+        imobiliaria: document.getElementById('imobiliaria').value,
+        data: new Date().toISOString(),
+        origem: 'quiz-diagnostico-gratuito'
+      };
+      
+      // Store lead
+      let leads = JSON.parse(localStorage.getItem('praiaDigitalLeads') || '[]');
+      leads.push(lead);
+      localStorage.setItem('praiaDigitalLeads', JSON.stringify(leads));
+      
+      // Also store as CSV-ready JSON for the processor script
+      let quizLeads = JSON.parse(localStorage.getItem('praiaQuizLeads') || '[]');
+      quizLeads.push(lead);
+      localStorage.setItem('praiaQuizLeads', JSON.stringify(quizLeads));
+      
+      // Show result
+      form.style.display = 'none';
+      result.classList.add('show');
+      
+      console.log('Lead capturado:', lead);
+    });
+  </script>
+</body>
+</html>
