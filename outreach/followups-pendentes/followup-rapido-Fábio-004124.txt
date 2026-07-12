@@ -1,0 +1,18 @@
+RESUMO DE CONTATO
+Nome: Fábio
+Empresa: Site View
+E-mail: contato6@exemplo.com
+WhatsApp: (11) 91005-1005
+Cidade: Outra
+Prioridade: Alta
+Score: 45
+Origem: site
+
+ABERTURA SUGERIDA:
+Olá, tudo bem? Vi que a Praia Digital pode ajudar sua imobiliária em Outra... (Fábio)
+
+Próximos passos:
+1. Responder em até 1h.
+2. Enviar site: https://acarolmourad-commits.github.io/praia-digital/
+3. Ferramentas gratuitas: https://praia.digital
+4. Agendar call se houver interesse.

@@ -1,0 +1,18 @@
+RESUMO DE CONTATO
+Nome: João
+Empresa: Porto da Lua
+E-mail: contato10@exemplo.com
+WhatsApp: (11) 91009-1009
+Cidade: Praia Grande
+Prioridade: Alta
+Score: 60
+Origem: site
+
+ABERTURA SUGERIDA:
+Olá, tudo bem? Vi que a Praia Digital pode ajudar sua imobiliária em Praia Grande... (João)
+
+Próximos passos:
+1. Responder em até 1h.
+2. Enviar site: https://acarolmourad-commits.github.io/praia-digital/
+3. Ferramentas gratuitas: https://praia.digital
+4. Agendar call se houver interesse.
