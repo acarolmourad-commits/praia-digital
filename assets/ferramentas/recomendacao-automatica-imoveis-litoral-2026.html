@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recomendação Automática de Imóveis — Praia Digital</title>
+<meta name="description" content="Recomendação automática de imóveis por perfil: família, casal ou investidor. Ferramenta gratuita para imobiliárias e corretores do litoral.">
+<style>
+  :root{--bg:#f6f8fa;--card:#fff;--ink:#0f172a;--muted:#475569;--ocean:#0077B6;--purple:#6B21A8;--success:#14532d;--radius:14px}
+  *{box-sizing:border-box}
+  body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);margin:0;padding:22px}
+  .wrap{max-width:980px;margin:0 auto}
+  header{background:linear-gradient(135deg,#0b4f6c,#1570a1);color:#fff;padding:22px;border-radius:var(--radius);margin-bottom:18px}
+  header h1{margin:0 0 6px;font-size:22px}
+  header p{margin:0;opacity:.9}
+  .card{background:#fff;padding:16px;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.04);margin-bottom:14px}
+  .card h2{margin:0 0 10px;color:#154c79;font-size:15px}
+  .tags{display:flex;gap:8px;flex-wrap:wrap}
+  .tag{padding:8px 12px;border-radius:999px;background:#e2e8f0;color:#0f172a;font-size:13px;font-weight:700;cursor:pointer;border:2px solid transparent}
+  .tag.active{background:#0b4f6c;color:#fff}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
+  .listing{background:#f8fafc;padding:12px;border-radius:10px;border:1px solid #e5e7eb}
+  .listing h3{margin:0 0 6px;font-size:14px;color:#0f172a}
+  .listing p{margin:0;font-size:13px;color:#334155}
+  .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+  .btn{display:inline-block;padding:10px 14px;background:var(--ocean);color:#fff;text-decoration:none;border-radius:999px;font-size:13px;font-weight:700}
+  .btn.secondary{background:#e2e8f0;color:#0f172a}
+  .footer{text-align:center;margin-top:18px;color:var(--muted);font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Recomendação Automática de Imóveis</h1>
+    <p>Escolha um perfil e descubra imóveis recomendados no litoral paulista.</p>
+    <div class="tags" style="margin-top:10px" id="perfis">
+      <button class="tag active" data-perfil="familia" onclick="selectPerfil(this)">👨‍👩‍👧 Família</button>
+      <button class="tag" data-perfil="casal" onclick="selectPerfil(this)">💑 Casal</button>
+      <button class="tag" data-perfil="investidor" onclick="selectPerfil(this)">📈 Investidor</button>
+    </div>
+  </header>
+
+  <div class="card">
+    <h2>Resultados</h2>
+    <div class="grid" id="resultados">
+      <div class="listing"><h3>Carregando...</h3></div>
+    </div>
+    <div class="actions">
+      <a class="btn secondary" href="imoveis">Ver todos os imóveis</a>
+      <a class="btn" href="parcerias-litoral-paulista.html">Quero usar na minha imobiliária</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">Praia Digital</a> | Ferramentas: <a href="https://praia.digital">praia.digital</a>
+  </div>
+</div>
+
+<script>
+const listings = [
+  {titulo:'Apartamento Maré — Praia Grande', quartos:4, valor:'R$ 520.000', cidade:'Praia Grande', perfil:['familia','investidor']},
+  {titulo:'Cobertura Maré — Caraguatatuba', quartos:3, valor:'R$ 890.000', cidade:'Caraguatatuba', perfil:['familia','casal']},
+  {titulo:'Chalé Gonzaga — Ilhabela', quartos:4, valor:'R$ 1.200.000', cidade:'Ilhabela', perfil:['familia','investidor']},
+  {titulo:'Flat Enseada — Mongaguá', quartos:1, valor:'R$ 210.000', cidade:'Mongaguá', perfil:['casal','investidor']},
+  {titulo:'Chalé Barra — Guarujá', quartos:1, valor:'R$ 280.000', cidade:'Guarujá', perfil:['casal','investidor']},
+];
+
+function render(perfil){
+  const container = document.getElementById('resultados');
+  const items = listings.filter(item => item.perfil.includes(perfil));
+  container.innerHTML = items.map(item => `
+    <div class="listing">
+      <h3>${item.titulo}</h3>
+      <p>${item.quartos} quartos · ${item.valor} · ${item.cidade}</p>
+    </div>
+  `).join('');
+}
+
+function selectPerfil(btn){
+  document.querySelectorAll('#perfis .tag').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  render(btn.dataset.perfil);
+}
+
+render('familia');
+</script>
+</body>
+</html>
