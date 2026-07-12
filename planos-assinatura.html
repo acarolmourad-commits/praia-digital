@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planos de Assinatura - Praia Digital | IA para Imobiliárias</title>
+<meta name="description" content="Planos de assinatura para corretores e imobiliárias com ferramentas de IA: recomendação de imóveis, avaliação de preço, assistente virtual e geração de descrições. Comece grátis.">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0a0e17; color: #e5e7eb; line-height: 1.6; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+  header { text-align: center; padding: 60px 20px 40px; background: linear-gradient(135deg, #1a1f2e 0%, #0f1419 100%); border-bottom: 1px solid #1f2937; }
+  h1 { font-size: 2.8em; margin-bottom: 15px; background: linear-gradient(to right, #3b82f6, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .subtitle { font-size: 1.2em; color: #9ca3af; max-width: 700px; margin: 0 auto; }
+  .badge { display: inline-block; background: #059669; color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.9em; font-weight: 600; margin-bottom: 20px; }
+  .plans-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 50px; }
+  .plan-card { background: #111827; border: 1px solid #1f2937; border-radius: 16px; padding: 35px 30px; transition: all 0.3s ease; position: relative; }
+  .plan-card:hover { transform: translateY(-5px); border-color: #3b82f6; box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15); }
+  .plan-card.featured { border-color: #3b82f6; background: linear-gradient(145deg, #111827 0%, #1a2332 100%); }
+  .popular-badge { position: absolute; top: -15px; right: 20px; background: #3b82f6; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85em; font-weight: 600; }
+  .plan-name { font-size: 1.5em; font-weight: 700; margin-bottom: 10px; color: #f9fafb; }
+  .plan-price { font-size: 2.5em; font-weight: 800; color: #3b82f6; margin: 20px 0; }
+  .plan-price span { font-size: 1rem; color: #9ca3af; font-weight: 400; }
+  .plan-desc { color: #9ca3af; margin-bottom: 25px; font-size: 0.95em; }
+  .features { list-style: none; margin: 25px 0; }
+  .features li { padding: 10px 0; border-bottom: 1px solid #1f2937; display: flex; align-items: center; }
+  .features li:last-child { border-bottom: none; }
+  .features li::before { content: "✓"; color: #10b981; font-weight: bold; margin-right: 12px; font-size: 1.1em; }
+  .cta-button { display: block; width: 100%; padding: 14px; background: #3b82f6; color: white; text-align: center; border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 1em; transition: background 0.3s; border: none; cursor: pointer; margin-top: 20px; }
+  .cta-button:hover { background: #2563eb; }
+  .cta-button.secondary { background: transparent; border: 2px solid #3b82f6; color: #3b82f6; }
+  .cta-button.secondary:hover { background: #3b82f6; color: white; }
+  .guarantee { text-align: center; margin-top: 50px; padding: 30px; background: #111827; border-radius: 12px; border: 1px solid #1f2937; }
+  .guarantee-icon { font-size: 3em; margin-bottom: 15px; }
+  .faq { margin-top: 60px; }
+  .faq-item { background: #111827; border: 1px solid #1f2937; border-radius: 12px; padding: 25px; margin-bottom: 15px; }
+  .faq-question { font-size: 1.2em; font-weight: 600; color: #f9fafb; margin-bottom: 10px; }
+  .faq-answer { color: #9ca3af; }
+  .social-proof { text-align: center; margin-top: 50px; padding: 40px; background: linear-gradient(135deg, #1a1f2e 0%, #0f1419 100%); border-radius: 16px; border: 1px solid #1f2937; }
+  .tools-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
+  .tool-item { background: #1a1f2e; padding: 20px; border-radius: 10px; border: 1px solid #1f2937; }
+  .tool-icon { font-size: 2em; margin-bottom: 10px; }
+  @media (max-width: 768px) {
+    .plans-grid { grid-template-columns: 1fr; }
+    h1 { font-size: 2em; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <span class="badge">IA para Imobiliárias</span>
+    <h1>Planos de Assinatura</h1>
+    <p class="subtitle">Ferramentas de inteligência artificial para corretores e imobiliárias do litoral paulista. Escolha o plano ideal e comece a vender mais hoje.</p>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="social-proof">
+    <h2 style="font-size: 1.8em; margin-bottom: 15px;">Ferramentas inclusas nos planos</h2>
+    <div class="tools-list">
+      <div class="tool-item">
+        <div class="tool-icon">Recomendação Automática</div>
+        <p style="color: #9ca3af; font-size: 0.9em;">Sugere imóveis ideais para cada cliente com base no perfil e histórico.</p>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon">Avaliação de Preço</div>
+        <p style="color: #9ca3af; font-size: 0.9em;">Análise de mercado em tempo real para precificar imóveis com precisão.</p>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon">Assistente Virtual</div>
+        <p style="color: #9ca3af; font-size: 0.9em;">Atendimento 24/7 para qualificar leads e agendar visitas.</p>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon">Descrições com IA</div>
+        <p style="color: #9ca3af; font-size: 0.9em;">Gera descrições profissionais e otimizadas para anúncios.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="plans-grid">
+    <div class="plan-card">
+      <div class="plan-name">Starter</div>
+      <div class="plan-price">R$ 97<span>/mês</span></div>
+      <p class="plan-desc">Para corretores autônomos que querem começar com IA.</p>
+      <ul class="features">
+        <li>Até 50 leads/mês</li>
+        <li>Checklist de conversão</li>
+        <li>Roteiros básicos</li>
+        <li>Suporte por e-mail</li>
+        <li>Acesso a artigos exclusivos</li>
+      </ul>
+      <a href="https://praia.digital" class="cta-button secondary">Assinar Starter</a>
+    </div>
+
+    <div class="plan-card featured">
+      <span class="popular-badge">Mais Popular</span>
+      <div class="plan-name">Growth</div>
+      <div class="plan-price">R$ 297<span>/mês</span></div>
+      <p class="plan-desc">Para imobiliárias em crescimento que precisam de automação.</p>
+      <ul class="features">
+        <li>Até 200 leads/mês</li>
+        <li>Relatórios de mercado</li>
+        <li>Follow-up automático</li>
+        <li>Integração com WhatsApp</li>
+        <li>Suporte prioritário</li>
+      </ul>
+      <a href="https://praia.digital" class="cta-button">Assinar Growth</a>
+    </div>
+
+    <div class="plan-card">
+      <div class="plan-name">Scale</div>
+      <div class="plan-price">R$ 997<span>/mês</span></div>
+      <p class="plan-desc">Para imobiliárias estabelecidas que querem dominar o mercado.</p>
+      <ul class="features">
+        <li>Leads ilimitados</li>
+        <li>API de IA</li>
+        <li>White label</li>
+        <li>Gerente de conta dedicado</li>
+        <li>Onboarding personalizado</li>
+      </ul>
+      <a href="https://praia.digital" class="cta-button secondary">Assinar Scale</a>
+    </div>
+  </div>
+
+  <div class="guarantee">
+    <div class="guarantee-icon">🛡️</div>
+    <h2 style="font-size: 1.8em; margin-bottom: 15px;">Garantia de 30 dias</h2>
+    <p style="font-size: 1.1em; color: #9ca3af; max-width: 600px; margin: 0 auto;">Se em até 30 dias você não ver aumento na produtividade, devolvemos 100% do valor. Sem perguntas, sem burocracia.</p>
+  </div>
+
+  <div class="faq">
+    <h2 style="text-align: center; font-size: 2em; margin-bottom: 30px;">Perguntas Frequentes</h2>
+    
+    <div class="faq-item">
+      <div class="faq-question">Como funciona o período de teste grátis?</div>
+      <div class="faq-answer">Você ganha acesso completo às ferramentas do plano escolhido por 7 ou 14 dias, sem compromisso. Não pedimos cartão de crédito para começar.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Posso mudar de plano depois?</div>
+      <div class="faq-answer">Sim, a qualquer momento. Você pode fazer upgrade ou downgrade e os valores são ajustados proporcionalmente.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">As ferramentas funcionam para qualquer tipo de imóvel?</div>
+      <div class="faq-answer">Sim! Nossa IA é treinada com dados do mercado imobiliário do litoral paulista e funciona para apartamentos, casas, studios, penthouses e imóveis comerciais.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Preciso ter conhecimento técnico para usar?</div>
+      <div class="faq-answer">Não. Nossas ferramentas são 100% intuitivas e contamos com suporte especializado. Qualquer corretor consegue usar em menos de 5 minutos.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Como funciona a integração com meu site atual?</div>
+      <div class="faq-answer">No plano Scale, oferecemos API e widget que se integra ao seu site em até 24h. Nos planos Starter e Growth, você usa nossa plataforma diretamente.</div>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 60px; padding: 40px; background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%); border-radius: 16px;">
+    <h2 style="font-size: 2em; margin-bottom: 20px;">Pronto para transformar suas vendas?</h2>
+    <p style="font-size: 1.1em; color: #dbeafe; margin-bottom: 30px;">Junte-se a corretores que já usam IA para vender mais no litoral.</p>
+    <a href="https://praia.digital" class="cta-button" style="max-width: 300px; margin: 0 auto; display: inline-block;">Começar Agora</a>
+  </div>
+
+</div>
+
+</body>
+</html>
