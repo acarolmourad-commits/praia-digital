@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tracker de Leads - Praia Digital</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
+      color: #fff;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container { max-width: 1400px; margin: 0 auto; }
+    .header {
+      background: linear-gradient(135deg, #7b2ff7, #00d4ff);
+      padding: 2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .header h1 { font-size: 1.8rem; }
+    
+    .filters {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: flex-end;
+    }
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .filter-group label {
+      font-size: 0.85rem;
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+    .filter-group input,
+    .filter-group select {
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.05);
+      color: #fff;
+      font-size: 0.95rem;
+    }
+    
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .stat-box {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 1.25rem;
+      text-align: center;
+    }
+    .stat-box .number {
+      font-size: 2.2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg,#00d4ff,#7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .stat-box .label {
+      font-size: 0.8rem;
+      color: #aaa;
+      margin-top: 0.25rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .table-container {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 1.5rem;
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    th {
+      text-align: left;
+      padding: 1rem;
+      border-bottom: 2px solid rgba(255,255,255,0.15);
+      color: #00d4ff;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    td {
+      padding: 1rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      vertical-align: top;
+    }
+    tr:hover td {
+      background: rgba(255,255,255,0.04);
+    }
+    .badge {
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      display: inline-block;
+    }
+    .badge-pending { background: rgba(255,193,7,0.15); color: #ffc107; border: 1px solid rgba(255,193,7,0.6); }
+    .badge-contacted { background: rgba(0,212,255,0.15); color: #00d4ff; border: 1px solid rgba(0,212,255,0.6); }
+    .badge-replied { background: rgba(123,47,247,0.15); color: #d4a0ff; border: 1px solid rgba(123,47,247,0.6); }
+    .badge-closed { background: rgba(0,200,150,0.15); color: #00ffa3; border: 1px solid rgba(0,200,150,0.6); }
+    
+    .actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .btn-sm {
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.05);
+      color: #fff;
+      cursor: pointer;
+      font-size: 0.85rem;
+      text-decoration: none;
+    }
+    .btn-sm:hover { background: rgba(255,255,255,0.12); }
+    
+    .footer {
+      margin-top: 2rem;
+      text-align: center;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    .footer a { color: #00d4ff; text-decoration: none; font-weight: 600; }
+
+    .empty { color: #888; font-style: italic; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📊 Tracker de Leads - Praia Digital</h1>
+      <a class="btn-sm" href="docs/sales/tracker_envios.csv" download>📥 Baixar CSV</a>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-box"><div class="number" id="statTotal">—</div><div class="label">Total</div></div>
+      <div class="stat-box"><div class="number" id="statPending">—</div><div class="label">Pendente</div></div>
+      <div class="stat-box"><div class="number" id="statContacted">—</div><div class="label">Contatado</div></div>
+      <div class="stat-box"><div class="number" id="statReplied">—</div><div class="label">Respondeu</div></div>
+      <div class="stat-box"><div class="number" id="statClosed">—</div><div class="label">Fechado</div></div>
+      <div class="stat-box"><div class="number" id="statReplyRate">—</div><div class="label">Taxa de resposta</div></div>
+    </div>
+
+    <div class="filters">
+      <div class="filter-group">
+        <label>Status</label>
+        <select id="filterStatus"><option value="">Todos</option><option>Pendente</option><option>Contatado</option><option>Respondeu</option><option>Fechado</option></select>
+      </div>
+      <div class="filter-group">
+        <label>Cidade</label>
+        <input id="filterCity" placeholder="Ex: Santos">
+      </div>
+      <div class="filter-group">
+        <label>Nome / Empresa</label>
+        <input id="filterName" placeholder="Buscar...">
+      </div>
+      <div class="filter-group">
+        <button class="btn-sm" style="padding: 0.7rem 1.2rem;" onclick="exportCSV()">📤 Exportar CSV</button>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <table id="leadsTable">
+        <thead>
+          <tr>
+            <th>Lead</th>
+            <th>Cidade</th>
+            <th>Status</th>
+            <th>Follow-up 3d</th>
+            <th>Follow-up 7d</th>
+            <th>Resposta</th>
+            <th>Último contato</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="leadsBody">
+          <tr><td colspan="8" class="empty">Nenhum lead carregado.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="footer">
+      <p>🏖️ Praia Digital · Tracking gerado para prospecção real</p>
+      <p style="margin-top: 0.5rem;">
+        <a href="docs/sales/tracker_envios.csv" download>Tracker CSV</a> • 
+        <a href="docs/sales/agendador-followups-2026.html">Agendador</a> • 
+        <a href="outreach/followups-leads-reais/">Follow-ups</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const SAMPLE_LEADS = [
+      {name:"Litoral Premium Santos", city:"Santos", status:"Pendente", f3:"15/07", f7:"17/07", reply:"", last:""},
+      {name:"Santos Ocean View", city:"Santos", status:"Contatado", f3:"15/07", f7:"17/07", reply:"", last:"12/07"},
+      {name:"Santos Premium Digital", city:"Santos", status:"Respondeu", f3:"15/07", f7:"17/07", reply:"Sim", last:"12/07"},
+      {name:"Santos Tower Imóveis", city:"Santos", status:"Pendente", f3:"21/07", f7:"—", reply:"", last:""},
+      {name:"Santos Luxo", city:"Santos", status:"Contatado", f3:"21/07", f7:"22/07", reply:"", last:"12/07"},
+      {name:"Praia Grande Imóveis", city:"Praia Grande", status:"Pendente", f3:"18/07", f7:"20/07", reply:"", last:""},
+      {name:"Riviera Business", city:"Riviera de São Lourenço", status:"Respondeu", f3:"18/07", f7:"20/07", reply:"Interesse", last:"11/07"},
+      {name:"Caiçara Imóveis", city:"Caiçara", status:"Fechado", f3:"—", f7:"—", reply:"Sim", last:"10/07"},
+      {name:"Ubatuba Premium", city:"Ubatuba", status:"Pendente", f3:"16/07", f7:"—", reply:"", last:""},
+      {name:"Bertioga Turística", city:"Bertioga", status:"Contatado", f3:"19/07", f7:"—", reply:"", last:"12/07"},
+      {name:"Guarujá Center", city:"Guarujá", status:"Pendente", f3:"17/07", f7:"19/07", reply:"", last:""},
+      {name:"São Vicente Praia", city:"São Vicente", status:"Respondeu", f3:"17/07", f7:"19/07", reply:"Dúvida", last:"12/07"}
+    ];
+
+    const statusMap = {Pendente:'pending', Contatado:'contacted', Respondeu:'replied', Fechado:'closed'};
+    const badgeMap = {Pendente:'badge-pending', Contatado:'badge-contacted', Respondeu:'badge-replied', Fechado:'badge-closed'};
+
+    function stats(data){
+      const total = data.length;
+      const counts = {Pendente:0, Contatado:0, Respondeu:0, Fechado:0};
+      data.forEach(l => counts[l.status] = (counts[l.status]||0)+1);
+      const rate = total ? Math.round((counts.Respondeu + counts.Fechado)/total*100) + '%' : '0%';
+      return {total, ...counts, rate};
+    }
+
+    function render(){
+      const statusFilter = document.getElementById('filterStatus').value;
+      const cityFilter = document.getElementById('filterCity').value.trim().toLowerCase();
+      const nameFilter = document.getElementById('filterName').value.trim().toLowerCase();
+
+      let data = SAMPLE_LEADS.slice();
+      if(statusFilter) data = data.filter(l => l.status === statusFilter);
+      if(cityFilter) data = data.filter(l => l.city.toLowerCase().includes(cityFilter));
+      if(nameFilter) data = data.filter(l => l.name.toLowerCase().includes(nameFilter));
+
+      const tbody = document.getElementById('leadsBody');
+      tbody.innerHTML = data.map(lead => `
+        <tr>
+          <td><strong>${escapeHtml(lead.name)}</strong></td>
+          <td>${escapeHtml(lead.city)}</td>
+          <td><span class="badge ${badgeMap[lead.status]||'badge-pending'}">${lead.status}</span></td>
+          <td>${escapeHtml(lead.f3)}</td>
+          <td>${escapeHtml(lead.f7)}</td>
+          <td>${escapeHtml(lead.reply || '—')}</td>
+          <td>${escapeHtml(lead.last || '—')}</td>
+          <td class="actions">
+            <a class="btn-sm" href="outreach/auto-respostas/modelo-resposta-automatica-lead.html?lead=${encodeURIComponent(lead.name)}&city=${encodeURIComponent(lead.city)}" target="_blank">Responder</a>
+            <a class="btn-sm" href="outreach/followups-leads-reais/followup-3d-${slugify(lead.name)}.html" target="_blank">3d</a>
+            <a class="btn-sm" href="outreach/followups-leads-reais/followup-7d-${slugify(lead.name)}.html" target="_blank">7d</a>
+          </td>
+        </tr>
+      `).join('');
+
+      const s = stats(SAMPLE_LEADS);
+      document.getElementById('statTotal').textContent = s.total;
+      document.getElementById('statPending').textContent = s.Pendente;
+      document.getElementById('statContacted').textContent = s.Contatado;
+      document.getElementById('statReplied').textContent = s.Respondeu;
+      document.getElementById('statClosed').textContent = s.Fechado;
+      document.getElementById('statReplyRate').textContent = s.rate;
+    }
+
+    function exportCSV(){
+      const rows = [['Lead','Cidade','Status','Follow-up 3d','Follow-up 7d','Resposta','Último contato']];
+      SAMPLE_LEADS.forEach(l => rows.push([l.name, l.city, l.status, l.f3, l.f7, l.reply, l.last]));
+      const csvContent = rows.map(r => r.map(cell => `"${String(cell).replace(/"/g, '""')}"`).join(',')).join('\n');
+      const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'tracker-leads-praia-digital.csv'; document.body.appendChild(a); a.click();
+      document.body.removeChild(a);
+    }
+
+    function escapeHtml(str){ return String(str||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+    function slugify(str){ return String(str||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'') || 'lead'; }
+
+    document.getElementById('filterStatus').addEventListener('change', render);
+    document.getElementById('filterCity').addEventListener('input', render);
+    document.getElementById('filterName').addEventListener('input', render);
+
+    render();
+  </script>
+</body>
+</html>
