@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send Execution Tracker - Praia Digital</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
+      color: #fff;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container { max-width: 1400px; margin: 0 auto; }
+    
+    .header {
+      background: linear-gradient(135deg, #7b2ff7, #00d4ff);
+      padding: 2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .header h1 { font-size: 1.8rem; }
+    .header-actions { display: flex; gap: 1rem; }
+    
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .stat-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 1.25rem;
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+    .stat-value {
+      font-size: 2rem;
+      font-weight: bold;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .stat-label {
+      color: #aaa;
+      font-size: 0.8rem;
+      margin-top: 0.25rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .main-grid {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 2rem;
+    }
+    
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(10px);
+    }
+    .card h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr auto;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      align-items: end;
+    }
+    .form-group { display: flex; flex-direction: column; gap: 0.5rem; }
+    .form-group label { font-size: 0.85rem; color: #aaa; font-weight: 600; }
+    .form-group input, .form-group select {
+      padding: 0.75rem;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.05);
+      color: #fff;
+      font-size: 0.95rem;
+    }
+    .form-group input:focus, .form-group select:focus {
+      outline: none;
+      border-color: #00d4ff;
+      box-shadow: 0 0 0 2px rgba(0,212,255,0.2);
+    }
+    
+    .btn {
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      color: #fff; border: none; padding: 0.75rem 1.5rem; border-radius: 8px;
+      font-weight: 700; cursor: pointer; transition: all 0.2s;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(123,47,247,0.4); }
+    .btn-sm { padding: 0.5rem 1rem; font-size: 0.85rem; }
+    .btn-secondary { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); }
+    
+    .queue-list { max-height: 500px; overflow-y: auto; }
+    .queue-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      transition: background 0.2s;
+    }
+    .queue-item:hover { background: rgba(255,255,255,0.05); }
+    .queue-info h4 { font-size: 1rem; margin-bottom: 0.25rem; }
+    .queue-info p { font-size: 0.85rem; color: #aaa; }
+    .queue-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    
+    .timeline { position: relative; padding-left: 1.5rem; }
+    .timeline::before {
+      content: ''; position: absolute; left: 0.5rem; top: 0; bottom: 0;
+      width: 2px; background: linear-gradient(180deg, #00d4ff, #7b2ff7);
+    }
+    .timeline-item { position: relative; padding-bottom: 1rem; }
+    .timeline-item::before {
+      content: ''; position: absolute; left: -1.35rem; top: 0.25rem;
+      width: 10px; height: 10px; border-radius: 50%; background: #00d4ff;
+      border: 2px solid #fff;
+    }
+    .timeline-time { font-size: 0.8rem; color: #aaa; margin-bottom: 0.25rem; }
+    .timeline-content { font-size: 0.95rem; }
+    
+    .sidebar-section { margin-bottom: 2rem; }
+    .sidebar-section h3 {
+      font-size: 1rem; margin-bottom: 1rem; color: #00d4ff;
+      text-transform: uppercase; letter-spacing: 1px;
+    }
+    
+    .empty { color: #888; font-style: italic; padding: 1rem; text-align: center; }
+    
+    .toast {
+      position: fixed; bottom: 2rem; right: 2rem;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      color: #fff; padding: 1rem 1.5rem; border-radius: 8px;
+      font-weight: 600; box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      transform: translateY(100px); opacity: 0;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      z-index: 999;
+    }
+    .toast.show { transform: translateY(0); opacity: 1; }
+    
+    @media (max-width: 1024px) {
+      .main-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🚀 Send Execution Tracker</h1>
+      <div class="header-actions">
+        <button class="btn btn-sm" onclick="exportData()">📤 Exportar Dados</button>
+        <button class="btn btn-sm btn-secondary" onclick="clearQueue()">🗑️ Limpar Fila</button>
+        <button class="btn btn-sm" onclick="runDailyRoutine()">▶️ Rotina Diária</button>
+      </div>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-value" id="statSent">0</div>
+        <div class="stat-label">📧 Enviados Hoje</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="statPending">0</div>
+        <div class="stat-label">⏳ Na Fila</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="statFollowups">0</div>
+        <div class="stat-label">📅 Follow-ups Hoje</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="statReplies">0</div>
+        <div class="stat-label">💬 Respostas</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="statRate">0%</div>
+        <div class="stat-label">📊 Taxa Resposta</div>
+      </div>
+    </div>
+
+    <div class="main-grid">
+      <div class="main-column">
+        <div class="card">
+          <h2>📬 Registrar Envio Manual</h2>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Lead / Imobiliária</label>
+              <input type="text" id="leadName" placeholder="Ex: Litoral Premium Santos" required>
+            </div>
+            <div class="form-group">
+              <label>Cidade</label>
+              <input type="text" id="leadCity" placeholder="Ex: Santos" required>
+            </div>
+            <button class="btn" onclick="markSent()">✅ Marcar Enviado</button>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Tipo de Envio</label>
+              <select id="sendType">
+                <option>Primeiro Contato</option>
+                <option>Follow-up 3 dias</option>
+                <option>Follow-up 7 dias</option>
+                <option>Follow-up 15 dias</option>
+                <option>Negociação</option>
+                <option>Fechamento</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Data</label>
+              <input type="date" id="sendDate">
+            </div>
+            <button class="btn btn-secondary" onclick="markReplied()">💬 Registrar Resposta</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>📋 Fila de Envios</h2>
+          <div id="queueList" class="queue-list"></div>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="card sidebar-section">
+          <h3>🎯 Ações Rápidas</h3>
+          <div style="display:flex;flex-direction:column;gap:0.75rem;">
+            <button class="btn" onclick="runDailyRoutine()">🚀 Executar Rotina Diária</button>
+            <button class="btn btn-secondary" onclick="window.open('docs/sales/tracker-visual-2026.html','_blank')">📊 Tracker Visual</button>
+            <button class="btn btn-secondary" onclick="window.open('docs/sales/agendador-followups-2026.html','_blank')">📅 Agendador</button>
+            <button class="btn btn-secondary" onclick="window.open('outreach/auto-respostas/modelo-resposta-automatica-lead.html','_blank')">📧 Auto-respostas</button>
+          </div>
+        </div>
+
+        <div class="card sidebar-section">
+          <h3>⏰ Próximos Follow-ups</h3>
+          <div id="upcomingFollowups" class="timeline"></div>
+        </div>
+
+        <div class="card sidebar-section">
+          <h3>📈 Hoje</h3>
+          <div id="todayActivity" class="timeline"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+  </div>
+
+  <script>
+    let queue = JSON.parse(localStorage.getItem('praiaSendQueue') || '[]');
+    let sent = JSON.parse(localStorage.getItem('praiaSentLog') || '[]');
+    let replies = JSON.parse(localStorage.getItem('praiaReplies') || '[]');
+    let todayLog = JSON.parse(localStorage.getItem('praiaTodayLog') || '[]');
+
+    function saveAll() {
+      localStorage.setItem('praiaSendQueue', JSON.stringify(queue));
+      localStorage.setItem('praiaSentLog', JSON.stringify(sent));
+      localStorage.setItem('praiaReplies', JSON.stringify(replies));
+      localStorage.setItem('praiaTodayLog', JSON.stringify(todayLog));
+    }
+
+    function now() {
+      const d = new Date();
+      return d.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+    }
+    function today() {
+      return new Date().toISOString().split('T')[0];
+    }
+
+    function renderQueue() {
+      const el = document.getElementById('queueList');
+      if (!queue.length) { el.innerHTML = '<div class="empty">Fila vazia</div>'; return; }
+      el.innerHTML = queue.map((item, idx) => `
+        <div class="queue-item">
+          <div class="queue-info">
+            <h4>${escape(item.leadName)} · ${escape(item.city)}</h4>
+            <p>Tipo: ${escape(item.type)} • ${escape(item.date || today())}</p>
+          </div>
+          <div class="queue-actions">
+            <button class="btn btn-sm" onclick="markSentById(${idx})">✅ Enviado</button>
+            <button class="btn btn-sm btn-secondary" onclick="removeQueue(${idx})">Remover</button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderStats() {
+      const sentToday = sent.filter(s => s.date === today()).length;
+      const repliesToday = replies.filter(r => r.date === today()).length;
+      const pending = queue.length;
+      const followupsToday = todayLog.filter(l => l.type && l.type.includes('Follow-up')).length;
+      const rate = sentToday ? Math.round((repliesToday / sentToday) * 100) : 0;
+      document.getElementById('statSent').textContent = sentToday;
+      document.getElementById('statPending').textContent = pending;
+      document.getElementById('statFollowups').textContent = followupsToday;
+      document.getElementById('statReplies').textContent = repliesToday;
+      document.getElementById('statRate').textContent = rate + '%';
+    }
+
+    function renderUpcoming() {
+      const el = document.getElementById('upcomingFollowups');
+      const upcoming = todayLog
+        .filter(l => l.type && l.type.includes('Follow-up'))
+        .sort((a, b) => (a.time || '').localeCompare(b.time || ''));
+      if (!upcoming.length) { el.innerHTML = '<div class="empty">Nenhum follow-up agendado</div>'; return; }
+      el.innerHTML = upcoming.slice(0, 8).map(item => `
+        <div class="timeline-item">
+          <div class="timeline-time">${escape(item.time || '--:--')} • ${escape(item.date || today())}</div>
+          <div class="timeline-content">${escape(item.leadName || '')} · ${escape(item.type || '')}</div>
+        </div>
+      `).join('');
+    }
+
+    function renderToday() {
+      const el = document.getElementById('todayActivity');
+      if (!todayLog.length) { el.innerHTML = '<div class="empty">Sem atividade hoje</div>'; return; }
+      el.innerHTML = todayLog.slice(0, 10).map(item => `
+        <div class="timeline-item">
+          <div class="timeline-time">${escape(item.time || '--:--')}</div>
+          <div class="timeline-content">${escape(item.action || '')} ${escape(item.leadName || '')}</div>
+        </div>
+      `).join('');
+    }
+
+    function markSent() {
+      const name = document.getElementById('leadName').value.trim();
+      const city = document.getElementById('leadCity').value.trim();
+      const type = document.getElementById('sendType').value;
+      const date = document.getElementById('sendDate').value || today();
+      if (!name || !city) { showToast('Preencha nome e cidade'); return; }
+      sent.push({ leadName: name, city, type, date, time: now() });
+      todayLog.push({ action: 'Enviado:', leadName: name, type, date, time: now() });
+      saveAll();
+      renderAll();
+      showToast('✅ Envio registrado: ' + name);
+      document.getElementById('leadName').value = '';
+      document.getElementById('leadCity').value = '';
+    }
+
+    function markSentById(idx) {
+      const item = queue[idx];
+      if (!item) return;
+      sent.push({ leadName: item.leadName, city: item.city, type: item.type, date: item.date || today(), time: now() });
+      todayLog.push({ action: 'Enviado:', leadName: item.leadName, type: item.type, date: item.date || today(), time: now() });
+      queue.splice(idx, 1);
+      saveAll();
+      renderAll();
+      showToast('✅ Enviado: ' + item.leadName);
+    }
+
+    function markReplied() {
+      const name = document.getElementById('leadName').value.trim();
+      const city = document.getElementById('leadCity').value.trim();
+      if (!name) { showToast('Informe o lead que respondeu'); return; }
+      replies.push({ leadName: name, city, date: today(), time: now() });
+      todayLog.push({ action: 'Respondeu:', leadName: name, city, date: today(), time: now() });
+      saveAll();
+      renderAll();
+      showToast('💬 Resposta registrada: ' + name);
+    }
+
+    function removeQueue(idx) {
+      const name = queue[idx]?.leadName || '';
+      queue.splice(idx, 1);
+      saveAll();
+      renderAll();
+      showToast('Removido: ' + name);
+    }
+
+    function clearQueue() {
+      if (!confirm('Limpar toda a fila?')) return;
+      queue = [];
+      saveAll();
+      renderAll();
+      showToast('Fila limpa');
+    }
+
+    function exportData() {
+      const data = { sent, replies, queue, todayLog };
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'send-execution-data.json'; document.body.appendChild(a); a.click();
+      document.body.removeChild(a);
+      showToast('📤 Dados exportados');
+    }
+
+    function runDailyRoutine() {
+      showToast('🚀 Rotina diária executada com sucesso!');
+      todayLog.push({ action: 'Rotina executada', time: now(), date: today() });
+      saveAll();
+      renderAll();
+    }
+
+    function showToast(msg) {
+      const el = document.getElementById('toast');
+      el.textContent = msg;
+      el.classList.add('show');
+      setTimeout(() => el.classList.remove('show'), 3000);
+    }
+
+    function escape(str) {
+      return String(str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    }
+
+    function renderAll() {
+      renderQueue();
+      renderStats();
+      renderUpcoming();
+      renderToday();
+    }
+
+    document.getElementById('sendDate').value = today();
+    renderAll();
+  </script>
+</body>
+</html>
