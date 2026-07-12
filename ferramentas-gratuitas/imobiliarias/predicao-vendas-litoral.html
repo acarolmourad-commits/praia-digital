@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Predição de vendas no litoral paulista — ferramenta gratuita | Praia Digital</title>
+  <meta name="description" content="Ferramenta gratuita para predição de vendas no litoral paulista para corretores e imobiliárias.">
+  <link rel="canonical" href="https://acarolmourad-commits.github.io/praia-digital/ferramentas-gratuitas/imobiliarias/predicao-vendas-litoral.html">
+  <style>
+    :root{bg:#f8fafc;text:#0f172a;border:#e5e7eb;primary:#2563eb;secondary:#0ea5e9}
+    body{font:14px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);padding:18px}
+    .wrap{max-width:880px;margin:0 auto}
+    a{color:var(--primary)}
+    label{display:block;margin:10px 0 4px}
+    input,select,textarea{width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:12px;background:#fff;color:#0f172a}
+    button{background:var(--primary);color:white;border:none;padding:12px 14px;border-radius:14px;margin-top:12px;cursor:pointer;font-weight:800}
+    .result{background:#f1f5f9;border:1px solid #e5e7eb;border-radius:12px;padding:14px;margin-top:12px;display:none}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Predição de vendas no litoral</h1>
+    <p>Informe os dados e receba uma estimativa simples.</p>
+    <form onsubmit="event.preventDefault();const m=parseInt(document.getElementById('m').value)||0;const p=parseInt(document.getElementById('p').value)||0;const s=parseInt(document.getElementById('s').value)||0;const r=document.querySelector('.result');r.style.display='block';r.textContent='Estimativa inicial: '+(m*s*0.04+p*0.02)+' leads qualificados no próximo mês. Use essa base para planejar follow-up e conteúdo.';">
+      <label>Média de visitas por mês</label>
+      <input id="m" type="number" placeholder="Ex: 40">
+      <label>Imóveis publicados</label>
+      <input id="p" type="number" placeholder="Ex: 12">
+      <label>Posts por semana</label>
+      <input id="s" type="number" placeholder="Ex: 3">
+      <button type="submit">Calcular predição</button>
+    </form>
+    <div class="result"></div>
+    <p><a href="/praia-digital/ferramentas-gratuitas/imobiliarias/analise-retorno-temporada-litoral.html">Análise de retorno</a></p>
+  </div>
+</body>
+</html>
