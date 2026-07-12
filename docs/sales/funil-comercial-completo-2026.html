@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funil Comercial Completo - Praia Digital</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
+      color: #fff;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container { max-width: 1200px; margin: 0 auto; }
+    
+    .header {
+      background: linear-gradient(135deg, #7b2ff7, #00d4ff);
+      padding: 2.5rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    .header p { opacity: 0.95; font-size: 1rem; max-width: 700px; margin: 0 auto; }
+    
+    .funnel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    
+    .funnel-step {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 1.75rem;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s;
+    }
+    .funnel-step:hover {
+      background: rgba(255,255,255,0.08);
+      transform: translateY(-3px);
+      border-color: rgba(255,255,255,0.2);
+    }
+    .funnel-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+    .funnel-title {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+    .funnel-desc {
+      color: #e0e0e0;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-bottom: 0.75rem;
+    }
+    .funnel-metric {
+      font-size: 1.5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .action-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .action-btn {
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      color: #fff; border: none; padding: 1rem 2rem; border-radius: 8px;
+      font-size: 1rem; font-weight: 700; cursor: pointer; text-decoration: none;
+      display: inline-block; transition: all 0.2s;
+    }
+    .action-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(123,47,247,0.4);
+    }
+    .action-btn.secondary {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    .footer a {
+      color: #00d4ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🔗 Funil Comercial Completo</h1>
+      <p>Visão única de captura, envio, follow-up e fechamento com links diretos para cada etapa</p>
+    </div>
+
+    <div class="funnel-grid">
+      <div class="funnel-step">
+        <div class="funnel-icon">🎯</div>
+        <div class="funnel-title">Captura 24/7</div>
+        <div class="funnel-desc">Quiz + formulário + widget no site</div>
+        <div class="funnel-metric">753 leads</div>
+        <a href="outreach/lead-magnet/diagnostico-gratuito-imobiliaria.html" target="_blank" class="action-btn secondary" style="margin-top:0.75rem;">Abrir captura</a>
+      </div>
+
+      <div class="funnel-step">
+        <div class="funnel-icon">📤</div>
+        <div class="funnel-title">Envio Real</div>
+        <div class="funnel-desc">Lote piloto + lote 36 personalizados</div>
+        <div class="funnel-metric">11 leads</div>
+        <a href="docs/sales/execucao-diaria-2026-07-14.html" target="_blank" class="action-btn secondary" style="margin-top:0.75rem;">Enviar hoje</a>
+      </div>
+
+      <div class="funnel-step">
+        <div class="funnel-icon">📧</div>
+        <div class="funnel-title">Follow-ups</div>
+        <div class="funnel-desc">150 personalizados 3d/7d/15d</div>
+        <div class="funnel-metric">150 follow-ups</div>
+        <a href="docs/sales/agendador-followups-2026.html" target="_blank" class="action-btn secondary" style="margin-top:0.75rem;">Agendar</a>
+      </div>
+
+      <div class="funnel-step">
+        <div class="funnel-icon">💬</div>
+        <div class="funnel-title">Auto-respostas</div>
+        <div class="funnel-desc">6 cenários + case de referência</div>
+        <div class="funnel-metric">6 cenários</div>
+        <a href="outreach/auto-respostas/modelo-resposta-automatica-lead.html" target="_blank" class="action-btn secondary" style="margin-top:0.75rem;">Abrir</a>
+      </div>
+
+      <div class="funnel-step">
+        <div class="funnel-icon">📱</div>
+        <div class="funnel-title">WhatsApp</div>
+        <div class="funnel-desc">Scripts de qualificação e objeções</div>
+        <div class="funnel-metric">5 scripts</div>
+        <a href="docs/sales/scripts-qualificacao-whatsapp-2026.html" target="_blank" class="action-btn secondary" style="margin-top:0.75rem;">Abrir</a>
+      </div>
+
+      <div class="funnel-step">
+        <div class="funnel-icon">🤝</div>
+        <div class="funnel-title">Onboarding</div>
+        <div class="funnel-desc">Playbook de parceiros + case modelo</div>
+        <div class="funnel-metric">4 passos</div>
+        <a href="docs/partners/playbook-onboarding-parceiros-2026.html" target="_blank" class="action-btn secondary" style="margin-top:0.75rem;">Abrir</a>
+      </div>
+
+      <div class="funnel-step">
+        <div class="funnel-icon">📝</div>
+        <div class="funnel-title">Proposta</div>
+        <div class="funnel-desc">Padrão + rápida WhatsApp + pitch deck</div>
+        <div class="funnel-metric">3 modelos</div>
+        <a href="outreach/proposta-comercial-padrao-2026.html" target="_blank" class="action-btn secondary" style="margin-top:0.75rem;">Abrir</a>
+      </div>
+
+      <div class="funnel-step">
+        <div class="funnel-icon">📊</div>
+        <div class="funnel-title">Gestão</div>
+        <div class="funnel-desc">Tracker visual, CRM, send execution</div>
+        <div class="funnel-metric">3 dashboards</div>
+        <a href="docs/sales/tracker-visual-2026.html" target="_blank" class="action-btn secondary" style="margin-top:0.75rem;">Abrir</a>
+      </div>
+    </div>
+
+    <div class="action-buttons">
+      <a href="docs/sales/execucao-diaria-2026-07-14.html" target="_blank" class="action-btn">⚡ Execução do Dia</a>
+      <a href="outreach/kit-comercial-completo-2026.html" target="_blank" class="action-btn secondary">🧰 Kit Comercial</a>
+      <a href="central-comando-praia-digital.html" target="_blank" class="action-btn secondary">🏠 Central de Comando</a>
+    </div>
+
+    <div class="footer">
+      <p>🏖️ Praia Digital · Funil Comercial Completo</p>
+      <p style="margin-top: 0.5rem;">
+        <a href="https://acarolmourad-commits.github.io/praia-digital/" target="_blank">Site Principal</a> • 
+        <a href="https://praia.digital" target="_blank">Ferramentas Gratuitas</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
