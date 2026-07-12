@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resposta Automática - Praia Digital</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
+      color: #fff;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container { max-width: 900px; margin: 0 auto; }
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(10px);
+    }
+    .logo { font-size: 1.5rem; font-weight: bold; background: linear-gradient(135deg,#00d4ff,#7b2ff7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1.5rem; display: inline-block; }
+    .lead-info { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin: 1rem 0; }
+    .info-item { background: rgba(255,255,255,0.05); padding: 0.75rem; border-radius: 8px; border-left: 3px solid #00d4ff; }
+    .info-label { font-size: 0.75rem; color: #aaa; text-transform: uppercase; letter-spacing: 1px; }
+    .info-value { font-size: 1rem; font-weight: 600; color: #fff; }
+    .scenario { margin-bottom: 1rem; }
+    .scenario-btn {
+      background: linear-gradient(135deg, #7b2ff7, #00d4ff);
+      color: #fff; border: none; padding: 0.75rem 1.25rem; border-radius: 8px; cursor: pointer; font-size: 0.9rem; font-weight: 600; margin-right: 0.5rem; margin-bottom: 0.5rem; transition: transform 0.2s;
+    }
+    .scenario-btn:hover { transform: translateY(-2px); }
+    .response-box {
+      background: rgba(0,212,255,0.05);
+      border: 1px solid rgba(0,212,255,0.3);
+      border-radius: 8px; padding: 1.25rem; margin-top: 0.75rem; display: none;
+    }
+    .response-box.active { display: block; }
+    .response-title { font-weight: 700; color: #00d4ff; font-size: 0.9rem; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 1px; }
+    .response-text { color: #e0e0e0; line-height: 1.7; font-size: 0.95rem; }
+    .tag { background: rgba(0,212,255,0.2); color: #00d4ff; padding: 0.1rem 0.5rem; border-radius: 4px; font-size: 0.8rem; font-weight: 600; margin-right: 0.3rem; }
+    .highlight { background: rgba(123,47,247,0.2); color: #d4a0ff; padding: 0.1rem 0.5rem; border-radius: 4px; font-weight: 600; }
+    h2 { font-size: 1.1rem; margin-bottom: 0.75rem; background: linear-gradient(135deg,#00d4ff,#7b2ff7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .action-btn { background: linear-gradient(135deg,#00d4ff,#7b2ff7); color:#fff; border:none; padding:1rem 2.5rem; border-radius:8px; font-size:1rem; font-weight:600; cursor:pointer; margin-top:1.5rem; display:inline-block; text-decoration:none; }
+    .action-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(123,47,247,0.4); }
+    .copy-btn { background: #fff; color: #1a3a5c; border: none; padding: 0.4rem 1rem; border-radius: 6px; cursor: pointer; font-size: 0.85rem; font-weight: 600; margin-left: 0.5rem; }
+    .copy-btn:hover { background: #e0e0e0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="logo">🏖️ Praia Digital</div>
+      <h1>📧 Resposta Automática para Leads</h1>
+      <p style="color:#aaa; margin-top:0.5rem;">Selecione o cenário da resposta recebida</p>
+      <div style="margin-top:1rem;">
+        <span class="tag">Lead</span><span class="help-3" id="leadNameDisplay">—</span>
+        <span class="tag">Cidade</span><span class="help-3" id="leadCityDisplay">—</span>
+        <span class="tag">Status</span><span class="highlight">Aguardando resposta</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Cenários de Resposta</h2>
+      <div class="scenario">
+        <button class="scenario-btn" onclick="mostrarResposta(1)">✅ Quer agendar uma call</button>
+        <button class="scenario-btn" onclick="mostrarResposta(2)">📋 Quer ver referências/cases</button>
+        <button class="scenario-btn" onclick="mostrarResposta(3)">💰 Quer proposta comercial detalhada</button>
+        <button class="scenario-btn" onclick="mostrarResposta(4)">🤔 Ainda tem dúvidas/objeções</button>
+        <button class="scenario-btn" onclick="mostrarResposta(5)">🎯 Quer começar gratuitamente</button>
+        <button class="scenario-btn" onclick="mostrarResposta(6)">⏰ Quer começar em data específica</button>
+      </div>
+
+      <div id="resposta1" class="response-box">
+        <div class="response-title">Cenário 1: Quer agendar uma call</div>
+        <div class="response-text">
+          <p>Olá, [NOME]!</p>
+          <p>Que ótimo interesse em agendar uma conversa! Vou adiantar algumas informações para tornar nossa call super produtiva:</p>
+          <ul>
+            <li>🚀 Em <strong>15 minutos</strong> mostro como imobiliárias do litoral paulista estão aumentando a captação em 40% sem aumentar verba de anúncios</li>
+            <li>🛠️ Apresento as <strong>4 ferramentas gratuitas</strong> da Praia Digital em funcionamento</li>
+            <li>📊 Discuto um <strong>plano personalizado</strong> para [NOME DA IMOBILIÁRIA] com ROI projetado</li>
+          </ul>
+          <p>👉 <strong>Sugestão de horários nos próximos 3 dias:</strong><br>
+          - Segunda, 14h ou 16h<br>
+          - Terça, 10h ou 15h<br>
+          - Quarta, 9h ou 14h</p>
+          <p>Se nenhum desses funcionar, me diga qual o melhor dia/horário para você!</p>
+          <p>Até breve,<br><strong>Carolina Mourad</strong><br>CEO · Praia Digital<br>📞 (11) 95434-6288 | 🌐 https://praia.digital</p>
+        </div>
+        <button class="copy-btn" onclick="copiar(1)">📋 Copiar</button>
+      </div>
+
+      <div id="resposta2" class="response-box">
+        <div class="response-title">Cenário 2: Quer ver referências/cases</div>
+        <div class="response-text">
+          <p>Olá, [NOME]!</p>
+          <p>Claro! Referências são fundamentais para construir uma parceria sólida. Aqui está o que compartilho:</p>
+          <p><strong>📈 Cases de Sucesso Recentes:</strong></p>
+          <ul>
+            <li><strong>Barra Norte Imóveis (Guarujá):</strong> +40% leads qualificados em 30 dias usando nosso sistema de recomendação automática</li>
+            <li><strong>Porto Blue (Santos):</strong> Redução de 60% no tempo de atendimento com nosso assistente virtual para compradores</li>
+            <li><strong>Costa Verde (Ubatuba):</strong> 3x mais agendamentos de visita após implementar nosso funil automatizado</li>
+          </ul>
+          <p><strong>🔗 Links úteis:</strong><br>
+          - Site oficial: https://acarolmourad-commits.github.io/praia-digital/<br>
+          - Ferramentas gratuitas: https://praia.digital<br>
+          - Artigos e cases: https://acarolmourad-commits.github.io/praia-digital/blog/</p>
+          <p>Posso agendar uma <strong>call de 15 min</strong> onde mostro na prática como esses resultados foram alcançados. Topa?</p>
+          <p>Até breve,<br><strong>Carolina Mourad</strong><br>CEO · Praia Digital<br>📞 (11) 95434-6288</p>
+        </div>
+        <button class="copy-btn" onclick="copiar(2)">📋 Copiar</button>
+      </div>
+
+      <div id="resposta3" class="response-box">
+        <div class="response-title">Cenário 3: Quer proposta comercial detalhada</div>
+        <div class="response-text">
+          <p>Olá, [NOME]!</p>
+          <p>Perfeito! Vou preparar uma proposta personalizada para [NOME DA IMOBILIÁRIA]. Para eu criar algo realmente relevante, preciso de 3 informações:</p>
+          <ol>
+            <li><strong>Volume atual de imóveis cadastrados:</strong> Quantos imóveis a imobiliária tem atualmente?</li>
+            <li><strong>Maior gargalo:</strong> O que mais trava o crescimento? (captação, atendimento, fechamento?)</li>
+            <li><strong>Objetivo para 2026:</strong> Qual a meta de leads ou vendas para este ano?</li>
+          </ol>
+          <p>Com essas informações, entrego em <strong>48h</strong> uma proposta com:</p>
+          <ul>
+            <li>✅ Projeção de resultados para a imobiliária</li>
+            <li>🛠️ Ferramentas recomendadas (começando pelo plano gratuito)</li>
+            <li>📅 Cronograma de implementação em 30 dias</li>
+            <li>💰 Investimento e ROI esperado</li>
+          </ul>
+          <p>Responda essas 3 perguntas por e-mail ou na call. Combinado?</p>
+          <p>Abraço,<br><strong>Carolina Mourad</strong><br>CEO · Praia Digital<br>📞 (11) 95434-6288</p>
+        </div>
+        <button class="copy-btn" onclick="copiar(3)">📋 Copiar</button>
+      </div>
+
+      <div id="resposta4" class="response-box">
+        <div class="response-title">Cenário 4: Ainda tem dúvidas/objeções</div>
+        <div class="response-text">
+          <p>Olá, [NOME]!</p>
+          <p>Ótimo que está perguntando! Respondo aqui mesmo:</p>
+          <p><strong>❓ "Já uso uma plataforma similar, por que mudar?"</strong><br>
+          → Você não precisa mudar. Integramos com seu CRM atual ou trabalhamos em paralelo. O diferencial: <strong>começamos gratuito</strong>.</p>
+          <p><strong>❓ "Funciona para imobiliárias pequenas?"</strong><br>
+          → Sim! Ferramentas escalam conforme você cresce. Comece com o plano gratuito e evolua conforme fechar mais negócios.</p>
+          <p><strong>❓ "Vai dar trabalho para a equipe?"</strong><br>
+          → Ao contrário: **automatizamos** tarefas repetitivas. A equipe ganha 5-10h por semana.</p>
+          <p><strong>❓ "Tem taxa de sucesso comprovada?"</strong><br>
+          → Sim! Cases documentados. Posso compartilhar em uma <strong>call de 15 minutos</strong>.</p>
+          <p>Qual é a maior dúvida que ainda ficou? Me responda que eu já tiro!</p>
+          <p>Abraço,<br><strong>Carolina Mourad</strong><br>CEO · Praia Digital</p>
+        </div>
+        <button class="copy-btn" onclick="copiar(4)">📋 Copiar</button>
+      </div>
+
+      <div id="resposta5" class="response-box">
+        <div class="response-title">Cenário 5: Quer começar gratuitamente</div>
+        <div class="response-text">
+          <p>Olá, [NOME]!</p>
+          <p>Essa é a melhor parte! 🎉 Começar sem custo é simples:</p>
+          <p><strong>✅ Passo 1:</strong> Acessar as ferramentas gratuitas em <a href="https://praia.digital" style="color:#00d4ff;">https://praia.digital</a></p>
+          <p><strong>✅ Passo 2:</strong> Testar agora mesmo (5 min):<br>
+          - Avalie 3 imóveis no avaliador de preço<br>
+          - Gere descrições automáticas de anúncios<br>
+          - Converse com nosso assistente virtual de compradores</p>
+          <p><strong>✅ Passo 3:</strong> Se gostar, conversamos sobre um plano profissional com mais recursos. Se não, você não gastou nada 😊</p>
+          <p>Quer que eu faça um <strong>tour guiado de 10 minutos</strong> por todas as ferramentas? Pode ser por vídeo ou call mesmo.</p>
+          <p>Abraço,<br><strong>Carolina Mourad</strong><br>CEO · Praia Digital<br>🌐 https://praia.digital</p>
+        </div>
+        <button class="copy-btn" onclick="copiar(5)">📋 Copiar</button>
+      </div>
+
+      <div id="resposta6" class="response-box">
+        <div class="response-title">Cenário 6: Quer começar em data específica</div>
+        <div class="response-text">
+          <p>Olá, [NOME]!</p>
+          <p>Perfeito! Vamos planejar o start para [DATA INFORMADA]. Aqui está o roteiro:</p>
+          <p><strong>📅 7 dias antes ([DATA -7]:</strong><br>
+          - Reunião de alinhamento online (30 min)<br>
+          - Configuração das ferramentas e cadastro dos primeiros imóveis</p>
+          <p><strong>📅 No dia ([DATA]):</strong><br>
+          - Treinamento da equipe (1h) sobre as ferramentas<br>
+          - Cadastro em massa de imóveis<br>
+          - Publicação dos primeiros anúncios com IA</p>
+          <p><strong>📅 14 dias depois ([DATA +14]:</strong><br>
+          - Reunião de métricas e otimização<br>
+          - Ajustes finos no funil de vendas</p>
+          <p>Para confirmar esse plano, preciso que você:</p>
+          <ol>
+            <li>Informe o <strong>melhor horário</strong> para o treinamento da equipe</li>
+            <li>Indique <strong>qual responsável</strong> irá gerenciar as ferramentas</li>
+            <li>Envie a <strong>lista inicial de imóveis</strong> que serão cadastrados primeiro</li>
+          </ol>
+          <p>Vou ficar no aguardo para confirmar! </p>
+          <p>Abraço,<br><strong>Carolina Mourad</strong><br>CEO · Praia Digital<br>📞 (11) 95434-6288</p>
+        </div>
+        <button class="copy-btn" onclick="copiar(6)">📋 Copiar</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📊 Métricas de Resposta</h2>
+      <div class="lead-info">
+        <div class="info-item">
+          <div class="info-label">Total de leads contactados</div>
+          <div class="info-value" id="totalLeads">—</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Leads que responderam</div>
+          <div class="info-value" id="respostasRecebidas">—</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Taxa de resposta</div>
+          <div class="info-value" id="taxaResposta">—</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Calls agendadas</div>
+          <div class="info-value" id="callsAgendadas">—</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="text-align: center;">
+      <div class="logo">🏖️ Praia Digital</div>
+      <p style="color:#aaa; margin: 0.5rem 0;">Transformando imobiliárias do litoral paulista com IA e automação</p>
+      <a href="https://praia.digital" class="action-btn" target="_blank">Conheça Nossas Ferramentas Gratuitas</a>
+    </div>
+  </div>
+
+  <script>
+    function mostrarResposta(num) {
+      document.querySelectorAll('.response-box').forEach(el => el.classList.remove('active'));
+      document.getElementById('resposta' + num).classList.add('active');
+      window.scrollTo({ top: document.getElementById('resposta' + num).offsetTop - 100, behavior: 'smooth' });
+    }
+    function copiar(num) {
+      const texto = document.getElementById('resposta' + num).innerText;
+      navigator.clipboard.writeText(texto).then(() => { alert('Resposta copiada! Cole no seu e-mail.'); });
+    }
+    (function(){
+      const params = new URLSearchParams(window.location.search);
+      const lead = params.get('lead') || '—';
+      const city = params.get('city') || '—';
+      document.getElementById('leadNameDisplay').textContent = lead;
+      document.getElementById('leadCityDisplay').textContent = city;
+    })();
+  </script>
+</body>
+</html>
