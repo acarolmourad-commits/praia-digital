@@ -1,18 +1,14 @@
 # Roteiro Diário Recomendado — Praia Digital
-Comercial e Parcerias | Versão única oficial
+Comercial e Parcerias — Versão consolidada por orquestrador
 
-Objetivo: unificar briefing, backup, prospecção, follow-up e fechamento em uma rotina simples.
-
-## Ordem do dia
-1. Abrir `docs/sales/briefing-matinal-comercial-praia-digital.html`
-2. Executar backup: `docs/sales/executar-backup-incremental-comercial.bat`
-3. Verificar status: `docs/sales/status-funil-comercial-2026-07-12.html`
-4. Processar novos leads: `python scripts/automation/processar_novos_leads_site.py`
-5. Regenerar briefing e central: `python scripts/automation/gerar_briefing_dinamico.py` + `python scripts/automation/gerar_central_dinamica.py`
-6. Enviar follow-ups pendentes registrados em `outreach/followups-pendentes/`
-7. Abrir landing de parceria: `parcerias-litoral-paulista.html`
-8. Usar kit: `docs/sales/mensagens-abertura-parceria-praia-digital.html` + `docs/sales/onboarding-parceiros/`
-9. Para fechamento: `docs/sales/kit-fechamento-rapido-parcerias-praia-digital.html`
+## Ordem oficial do dia
+1. Rodar o orquestrador: `scripts/rotina-mestre-praia-digital.bat`
+2. Abrir `central-comando-praia-digital.html`
+3. Validar alertas: backup, leads, follow-ups, onboarding e status do funil
+4. Enviar follow-ups pendentes usando `docs/sales/mensagens-abertura-parceria-praia-digital.html`
+5. Usar onboarding gerado em `docs/sales/onboarding-parceiros/` para prospecção
+6. Verificar `docs/sales/status-funil-comercial-2026-07-12.html`
+7. Acompanhar `parcerias-litoral-paulista.html`
 
 ## Regra
 - Não enviar sem backup.
