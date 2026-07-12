@@ -1,36 +1,54 @@
 
 from pathlib import Path
 from datetime import date
+from urllib.parse import quote
 
 root = Path("C:/Users/Carolina/praia-digital")
 base_url = "https://acarolmourad-commits.github.io/praia-digital/"
 
-# Diretórios a excluir do sitemap
-exclude_dirs = {".git", "node_modules", "backups", "scripts", "docs"}
+include_dirs = {"", "blog", "imoveis", "marketing", "assets", "cases", "newsletter", "parcerias-litoral-paulista.html"}
+allowed_exts = {".html"}
 
 html_files = []
-for path in root.rglob("*.html"):
-    rel_parts = path.relative_to(root).parts
-    if any(part in exclude_dirs for part in rel_parts):
+for path in root.rglob("*"):
+    if not path.is_file():
+        continue
+    if path.suffix.lower() not in allowed_exts:
         continue
     if path.name.startswith("."):
         continue
-    html_files.append(path.relative_to(root))
+    rel = path.relative_to(root)
+    top = rel.parts[0] if rel.parts else ""
+    if top == "docs":
+        continue
+    # inclui raiz + pastas permitidas
+    if top not in include_dirs and rel.name != "index.html":
+        continue
+    html_files.append(rel)
 
 html_files.sort()
 
 today = date.today().isoformat()
 entries = []
 for rel in html_files:
-    loc = f"{base_url}{rel.as_posix()}"
-    entries.append(f"  <url>\n    <loc>{loc}</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>weekly</changefreq>\n  </url>")
+    safe_loc = base_url + quote(str(rel).replace("\\", "/"), safe="/:-_.~")
+    entries.append(
+        "  <url>\n"
+        f"    <loc>{safe_loc}</loc>\n"
+        f"    <lastmod>{today}</lastmod>\n"
+        "    <changefreq>weekly</changefreq>\n"
+        "  </url>"
+    )
 
-sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n'
+sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
 sitemap += "\n".join(entries)
-sitemap += "\n</urlset>"
+sitemap += "\n</urlset>\n"
 
 out_path = root / "sitemap.xml"
 out_path.write_text(sitemap, encoding="utf-8")
-print(f"Sitemap SEO-friendly atualizado com {len(entries)} URLs em {out_path}")
-print("Inclui: index.html, blog/, imoveis/, marketing/, assets/ferramentas/, landing pages públicas")
-print("Exclui: scripts/, docs/, backups/ e arquivos operacionais internos")
+print(f"Sitemap sanitizado atualizado com {len(entries)} URLs")
+print("Verificando XML...")
+import xml.etree.ElementTree as ET
+ET.parse(out_path)
+print("Sitemap XML válido")
