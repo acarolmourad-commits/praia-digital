@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gerador de Proposta de Parceria — Praia Digital</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;background:#0d1117;color:#e6edf3;margin:0;padding:0}
+.container{max-width:900px;margin:0 auto;padding:20px}
+a{color:#58a6ff;text-decoration:underline}
+.card{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:16px;margin:12px 0}
+input,select,textarea{padding:10px;margin:6px 2px;border-radius:6px;border:1px solid #30363d;background:#21262d;color:#e6edf3;font-size:14px;width:100%}
+button{padding:10px 14px;background:#1f6feb;color:#fff;border:none;border-radius:6px;cursor:pointer}
+.result{margin-top:12px;padding:12px;background:#21262d;border-radius:6px;display:none;white-space:pre-wrap}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🤝 Gerador de Proposta de Parceria</h1>
+<p>Preencha os dados abaixo e gere uma proposta personalizada.</p>
+
+<div class="card">
+  <input type="text" id="empresa" placeholder="Nome da imobiliária">
+  <input type="text" id="cidade" placeholder="Cidade">
+  <input type="text" id="representante" placeholder="Nome do representante">
+  <select id="modelo">
+    <option value="">Modelo de parceria</option>
+    <option>Captação de leads qualificados</option>
+    <option>Conteúdo e tráfego</option>
+    <option>Ferramentas de IA para corretores</option>
+    <option>Piloto 30 dias sem investimento</option>
+  </select>
+  <select id="prazo">
+    <option value="">Prazo inicial</option>
+    <option>30 dias</option>
+    <option>60 dias</option>
+    <option>3 meses</option>
+  </select>
+  <button onclick="gerar()">Gerar proposta</button>
+</div>
+
+<div id="resultado" class="result"></div>
+
+<div class="card footer">
+  <a href="docs/sales/central-comando-praia-digital.html">🧭 Central de Comando</a><br>
+  <a href="https://praia.digital">🛠 Ferramentas gratuitas</a>
+</div>
+</div>
+
+<script>
+function gerar(){
+  const empresa=document.getElementById('empresa').value.trim();
+  const cidade=document.getElementById('cidade').value.trim();
+  const representante=document.getElementById('representante').value.trim();
+  const modelo=document.getElementById('modelo').value;
+  const prazo=document.getElementById('prazo').value;
+  if(!empresa||!cidade||!representante||!modelo||!prazo){
+    alert('Preencha todos os campos.');
+    return;
+  }
+  const proposta='Proposta de Parceria — Praia Digital\n\n'+
+    'Para: '+empresa+' / '+representante+'\n'+
+    'Cidade: '+cidade+'\n\n'+
+    '1. Objetivo\n'+
+    'Gerar resultados mensuráveis em '+modelo.toLowerCase()+', com execução rápida e sem investimento inicial.\n\n'+
+    '2. Escopo inicial\n'+
+    '- Ações: '+modelo+'.\n'+
+    '- Prazo: '+prazo+'.\n'+
+    '- Entregas: relatórios semanais, métricas e iteracão rápida.\n\n'+
+    '3. Próximos passos\n'+
+    '- Alinhar 1 métrica principal.\n'+
+    '- Definir 1 ponto de contato por parte.\n'+
+    '- Iniciar em até 3 dias úteis.\n\n'+
+    '4. Referência\n'+
+    'Case real: Barra Norte Imóveis — Santos.\n\n'+
+    'Contato: comercial@praia.digital | '+(11) 95434-6288+'\n'+
+    'Site: https://acarolmourad-commits.github.io/praia-digital/\n'+
+    'Ferramentas gratuitas: https://praia.digital';
+  const r=document.getElementById('resultado');
+  r.textContent=proposta;
+  r.style.display='block';
+}
+</script>
+</body>
+</html>
