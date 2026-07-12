@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case de Sucesso - Barra Norte Imóveis - Praia Digital</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
+      color: #fff;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container { max-width: 900px; margin: 0 auto; }
+    
+    .header {
+      background: linear-gradient(135deg, #7b2ff7, #00d4ff);
+      padding: 3rem 2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .header p { opacity: 0.95; font-size: 1.1rem; }
+    
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(10px);
+    }
+    .card h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .metric-box {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .metric-value {
+      font-size: 2rem;
+      font-weight: bold;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .metric-label { font-size: 0.8rem; color: #aaa; margin-top: 0.5rem; text-transform: uppercase; }
+    
+    .highlight-box {
+      background: rgba(123,47,247,0.1);
+      border-left: 4px solid #7b2ff7;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 6px;
+    }
+    .highlight-box p { color: #e0e0e0; line-height: 1.7; }
+    
+    .quote {
+      background: rgba(0,212,255,0.1);
+      border-left: 4px solid #00d4ff;
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+      font-style: italic;
+      color: #e0e0e0;
+      line-height: 1.7;
+    }
+    .quote-author {
+      margin-top: 0.75rem;
+      font-weight: 700;
+      color: #00d4ff;
+      font-style: normal;
+    }
+    
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0.5rem;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(180deg, #00d4ff, #7b2ff7);
+    }
+    .timeline-item {
+      position: relative;
+      padding-bottom: 1.5rem;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -1.65rem;
+      top: 0.3rem;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #00d4ff;
+      border: 2px solid #fff;
+    }
+    .timeline-date {
+      font-size: 0.85rem;
+      color: #00d4ff;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+    .timeline-content {
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+    
+    .cta-section {
+      background: linear-gradient(135deg, rgba(0,212,255,0.1), rgba(123,47,247,0.1));
+      border: 2px solid rgba(0,212,255,0.3);
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .cta-section h2 { font-size: 1.8rem; margin-bottom: 1rem; }
+    .cta-section p { color: #e0e0e0; margin-bottom: 1.5rem; font-size: 1.05rem; line-height: 1.7; }
+    
+    .action-btn {
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      color: #fff;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+    .action-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(123,47,247,0.4);
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    .footer a { color: #00d4ff; text-decoration: none; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📈 Case de Sucesso Real</h1>
+      <p>Barra Norte Imóveis · Guarujá · Litoral Paulista</p>
+    </div>
+
+    <div class="card">
+      <h2>🏢 O Cliente</h2>
+      <p><strong>Barra Norte Imóveis</strong> é uma imobiliária de médio porte localizada no Guarujá, litoral paulista. Com 8 corretores e um portfólio de 150 imóveis, a empresa buscava aumentar a captação de leads qualificados sem aumentar os gastos com anúncios pagos.</p>
+      
+      <div class="highlight-box">
+        <p><strong>Desafio:</strong> Baixa taxa de resposta no atendimento inicial, follow-up manual demorado e dificuldade em priorizar leads quentes.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📊 Resultados em 30 Dias</h2>
+      <div class="metric-grid">
+        <div class="metric-box">
+          <div class="metric-value">+40%</div>
+          <div class="metric-label">Leads Qualificados</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">-60%</div>
+          <div class="metric-label">Tempo de Atendimento</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">3x</div>
+          <div class="metric-label">Agendamentos de Visita</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">0%</div>
+          <div class="metric-label">Investimento em Anúncios</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🛠️ Soluções Implementadas</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">Semana 1</div>
+          <div class="timeline-content">
+            <strong>Implementação do assistente virtual 24/7</strong>
+            <p>O assistente virtual da Praia Digital passou a responder todas as mensagens iniciais em menos de 30 segundos, qualificando leads automaticamente com base em perfil, orçamento e urgência.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Semana 2</div>
+          <div class="timeline-content">
+            <strong>Recomendação automática de imóveis</strong>
+            <p>O sistema de recomendação passou a sugerir imóveis personalizados para cada lead, aumentando a taxa de engajamento e reduzindo o tempo de busca.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Semana 3</div>
+          <div class="timeline-content">
+            <strong>Geração automática de descrições</strong>
+            <p>Anúncios passaram a ser publicados em 2 minutos, contra 20 minutos anteriores. A equipe ganhou ~15h por semana.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Semana 4</div>
+          <div class="timeline-content">
+            <strong>Avaliação de preço automatizada</strong>
+            <p>Ferramenta passou a gerar avaliações de mercado instantâneas para cada imóvel, aumentando a confiança dos compradores.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>💬 Depoimento do Cliente</h2>
+      <div class="quote">
+        "A Praia Digital transformou nossa operação. Em 30 dias, aumentamos em 40% os leads qualificados sem gastar um centavo com anúncios. O assistente virtual trabalha enquanto dormimos, e os corretores agora focam no que realmente importa: fechar negócios."
+        <div class="quote-author">— Roberto Dias, Diretor Comercial · Barra Norte Imóveis</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🔑 Fatores-Chave do Sucesso</h2>
+      <ul style="margin-left: 1.5rem; line-height: 2; color: #e0e0e0;">
+        <li>✅ <strong>Atendimento 24/7</strong> — sem tempo de resposta longo</li>
+        <li>✅ <strong>Personalização</strong> — recomendação por perfil de comprador</li>
+        <li>✅ <strong>Automação</strong> — follow-ups e descrições sem esforço manual</li>
+        <li>✅ <strong>Integração</strong> — ferramentas conectadas sem trocar de sistema</li>
+        <li>✅ <strong>Sem custo inicial</strong> — modelo freemium permitiu testar sem risco</li>
+      </ul>
+    </div>
+
+    <div class="cta-section">
+      <h2>🚀 Quer um resultado similar?</h2>
+      <p>Agende uma call de 15 minutos e vamos montar um plano personalizado para sua imobiliária.</p>
+      <a href="mailto:comercial@praia.digital?subject=Case%20-%20Barra%20Norte%20-%20Quero%20resultado%20similar" class="action-btn">Agendar Call Gratuita</a>
+    </div>
+
+    <div class="footer">
+      <p>🏖️ Praia Digital · Transformando imobiliárias do litoral paulista com IA</p>
+      <p style="margin-top: 0.5rem;">
+        <a href="https://acarolmourad-commits.github.io/praia-digital/" target="_blank">Site Principal</a> • 
+        <a href="https://praia.digital" target="_blank">Ferramentas Gratuitas</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
