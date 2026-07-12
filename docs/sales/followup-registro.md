@@ -652,3 +652,13 @@ Atualizado em: 2026-07-12
 | 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
 | 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
 | 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
