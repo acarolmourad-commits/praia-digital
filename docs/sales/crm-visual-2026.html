@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CRM Visual — Praia Digital</title>
+  <style>
+    :root{primary:#2563eb;bg:#f8fafc;card:#fff;border:#e5e7eb;text:#0f172a;muted:#475569}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--bg);color:var(--text);font:14px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding:18px}
+    .wrap{max-width:1200px;margin:0 auto}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+    .board{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    .column{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:14px}
+    .column h3{margin-bottom:10px;font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+    .lead{background:#fff;border:1px solid var(--border);border-radius:14px;padding:12px;margin:10px 0;box-shadow:0 1px 0 rgba(0,0,0,.04)}
+    .lead strong{display:block;margin-bottom:4px}
+    .lead small{color:var(--muted)}
+    .btn{background:var(--primary);color:white;border:none;padding:10px 12px;border-radius:12px;display:inline-block;text-decoration:none;font-weight:800}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>CRM Visual</h1>
+      <a class="btn" href="/praia-digital/docs/sales/tracker_envios.csv">Exportar CSV</a>
+    </header>
+    <div class="board">
+      <div class="column">
+        <h3>Novo</h3>
+        <div class="lead"><strong>Barra Norte Imóveis</strong><small>Praia Grande • lote 31</small></div>
+        <div class="lead"><strong>Alpha Imóveis Site</strong><small>Bertioga • lote 34</small></div>
+      </div>
+      <div class="column">
+        <h3>Follow-up 3 dias</h3>
+        <div class="lead"><strong>Lead 31-1</strong><small>Cananéia • imovel-0288</small></div>
+        <div class="lead"><strong>Lead 32-2</strong><small>São Sebastião • imovel-0289</small></div>
+      </div>
+      <div class="column">
+        <h3>Follow-up 7 dias</h3>
+        <div class="lead"><strong>Lead 33-1</strong><small>Cananéia • roteiro visita</small></div>
+        <div class="lead"><strong>Lead 35-2</strong><small>São Sebastião • pré-qualificação</small></div>
+      </div>
+      <div class="column">
+        <h3>Fechado</h3>
+        <div class="lead"><strong>—</strong><small>Aguardando primeiro case</small></div>
+      </div>
+    </div>
+    <p style="margin-top:18px"><a href="/praia-digital/outreach/automacao-email-praia-digital.html">Automação de e-mail</a> • <a href="/praia-digital/docs/sales/followups_gerados.json">Follow-ups JSON</a></p>
+  </div>
+</body>
+</html>
