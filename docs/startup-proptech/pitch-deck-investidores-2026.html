@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pitch Deck - Praia Digital</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
+      color: #fff;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container { max-width: 1000px; margin: 0 auto; }
+    
+    .slide {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 3rem;
+      margin-bottom: 2rem;
+      backdrop-filter: blur(10px);
+      page-break-after: always;
+    }
+    .slide h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .slide h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .slide p {
+      color: #e0e0e0;
+      line-height: 1.8;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .metric-box {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .metric-value {
+      font-size: 3rem;
+      font-weight: bold;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .metric-label {
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-top: 0.5rem;
+      text-transform: uppercase;
+    }
+    
+    .highlight-box {
+      background: rgba(123,47,247,0.1);
+      border-left: 4px solid #7b2ff7;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+    .highlight-box p {
+      color: #e0e0e0;
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+    
+    .cta-box {
+      background: linear-gradient(135deg, rgba(0,212,255,0.1), rgba(123,47,247,0.1));
+      border: 2px solid rgba(0,212,255,0.3);
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .cta-box h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .cta-box p {
+      color: #e0e0e0;
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .action-btn {
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      color: #fff;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+    .action-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(123,47,247,0.4);
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    .footer a {
+      color: #00d4ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    @media print {
+      body { background: #fff; color: #000; }
+      .slide { background: #fff; border: 1px solid #ddd; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Slide 1: Capa -->
+    <div class="slide">
+      <h1>🏖️ Praia Digital</h1>
+      <p>A proptech que está transformando imobiliárias no litoral paulista com IA e automação.</p>
+      <div class="metric-grid">
+        <div class="metric-box">
+          <div class="metric-value">580+</div>
+          <div class="metric-label">Leads Qualificados</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">352</div>
+          <div class="metric-label">Artigos SEO</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">254</div>
+          <div class="metric-label">Imóveis Cadastrados</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">50+</div>
+          <div class="metric-label">Parceiros</div>
+        </div>
+      </div>
+      <div class="cta-box">
+        <h2>Buscando investimento pré-seed</h2>
+        <p>Modelo de receita: R$ 297/mês por profissional + assinatura empresarial</p>
+        <a href="mailto:investidores@praia.digital?subject=Investimento%20-%20Praia%20Digital" class="action-btn">💰 Falar com a CEO</a>
+      </div>
+    </div>
+
+    <!-- Slide 2: Problema -->
+    <div class="slide">
+      <h2> Problema</h2>
+      <p>Imobiliárias do litoral paulista enfrentam desafios críticos:</p>
+      <ul style="margin-left: 1.5rem; line-height: 2.2; color: #e0e0e0; margin-top: 1rem;">
+        <li><strong>Atendimento lento:</strong> 90% dos corretores não respondem leads em menos de 5 minutos</li>
+        <li><strong>Follow-up manual:</strong> Processo repetitivo que consome horas da equipe</li>
+        <li><strong>Falta de dados:</strong> Decisões baseadas em intuição, não em avaliações de mercado</li>
+        <li><strong>Custo alto:</strong> Anúncios pagos caros e com retorno incerto</li>
+        <li><strong>Escala limitada:</strong> Dificuldade de crescer sem contratar mais gente</li>
+      </ul>
+    </div>
+
+    <!-- Slide 3: Solução -->
+    <div class="slide">
+      <h2>Solução</h2>
+      <p>A Praia Digital oferece um ecossistema completo de IA e automação para imobiliárias do litoral paulista:</p>
+      <div class="metric-grid">
+        <div class="metric-box">
+          <div class="metric-value">🤖</div>
+          <div class="metric-label">Assistente Virtual 24/7</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">🎯</div>
+          <div class="metric-label">Recomendação Inteligente</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">💰</div>
+          <div class="metric-label">Avaliação de Preço</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">✍️</div>
+          <div class="metric-label">Descrições Automáticas</div>
+        </div>
+      </div>
+      <div class="highlight-box">
+        <p><strong>Diferencial:</strong> Começamos gratuitamente. O modelo freemium permite que imobiliárias testem sem risco, gerando confiança e word-of-mouth orgânico.</p>
+      </div>
+    </div>
+
+    <!-- Slide 4: Case -->
+    <div class="slide">
+      <h2>Case de Sucesso</h2>
+      <p><strong>Barra Norte Imóveis — Guarujá</strong></p>
+      <div class="metric-grid">
+        <div class="metric-box">
+          <div class="metric-value">+40%</div>
+          <div class="metric-label">Leads Qualificados</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">-60%</div>
+          <div class="metric-label">Tempo Atendimento</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">3x</div>
+          <div class="metric-label">Agendamentos</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">0%</div>
+          <div class="metric-label">Anúncios Pagos</div>
+        </div>
+      </div>
+      <div class="highlight-box">
+        <p>"A Praia Digital transformou nossa operação. Em 30 dias, aumentamos em 40% os leads qualificados sem gastar um centavo com anúncios."</p>
+        <p style="margin-top: 1rem; color: #00d4ff; font-weight: 700;">— Roberto Dias, Diretor Comercial · Barra Norte Imóveis</p>
+      </div>
+    </div>
+
+    <!-- Slide 5: Modelo de Receita -->
+    <div class="slide">
+      <h2>Modelo de Receita</h2>
+      <p>Modelo freemium com conversão para planos profissionais:</p>
+      <div class="metric-grid">
+        <div class="metric-box">
+          <div class="metric-value">Grátis</div>
+          <div class="metric-label">Plano Starter</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">R$ 297</div>
+          <div class="metric-label">Plano Professional</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">Custom</div>
+          <div class="metric-label">Plano Empresarial</div>
+        </div>
+      </div>
+      <div class="highlight-box">
+        <p><strong>ROI esperado:</strong> Para cada R$ 1 investido, estimamos R$ 4–6 em receita adicional gerada por leads qualificados e fechamentos acelerados.</p>
+      </div>
+    </div>
+
+    <!-- Slide 6: Mercado -->
+    <div class="slide">
+      <h2>Mercado</h2>
+      <p>O mercado imobiliário brasileiro movimenta mais de <strong>R$ 200 bilhões/ano</strong>. O litoral paulista concentra mais de <strong>15 mil imobiliárias</strong>.</p>
+      <div class="highlight-box">
+        <p><strong>TAM:</strong> R$ 2 bi/ano<br>
+        <strong>SAM:</strong> R$ 50 mi/ano<br>
+        <strong>SOM:</strong> R$ 5 mi/ano</p>
+      </div>
+      <p>Foco inicial: litoral paulista. Expansão: Rio de Janeiro e Santa Catarina.</p>
+    </div>
+
+    <!-- Slide 7: Tração -->
+    <div class="slide">
+      <h2>Tração</h2>
+      <div class="metric-grid">
+        <div class="metric-box">
+          <div class="metric-value">352</div>
+          <div class="metric-label">Artigos SEO</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">254</div>
+          <div class="metric-label">Imóveis Cadastrados</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">580+</div>
+          <div class="metric-label">Leads Qualificados</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">50+</div>
+          <div class="metric-label">Parceiros</div>
+        </div>
+      </div>
+      <p><strong>SEO:</strong> 2049 URLs indexadas</p>
+      <p><strong>Conteúdo:</strong> 10+ artigos novos por semana</p>
+      <p><strong>Automação:</strong> Rotina diária Windows com follow-ups personalizados</p>
+    </div>
+
+    <!-- Slide 8: Equipe -->
+    <div class="slide">
+      <h2>Equipe</h2>
+      <p><strong>Carolina Mourad</strong> — CEO & Fundadora</p>
+      <p>Visão: transformar imobiliárias do litoral paulista com tecnologia acessível.</p>
+      <div class="highlight-box">
+        <p><strong>Contato:</strong> (11) 95434-6288 | comercial@praia.digital</p>
+        <p style="margin-top: 0.75rem;"><strong>Site:</strong> https://acarolmourad-commits.github.io/praia-digital/</p>
+      </div>
+    </div>
+
+    <!-- Slide 9: Pedido -->
+    <div class="slide">
+      <h2>Pedido</h2>
+      <p>Estamos buscando investidores para:</p>
+      <ul style="margin-left: 1.5rem; line-height: 2.2; color: #e0e0e0;">
+        <li>✅ Escalar aquisição de parceiros no litoral paulista</li>
+        <li>✅ Acelerar desenvolvimento de novas ferramentas de IA</li>
+        <li>✅ Expandir para novos mercados (RJ, SC)</li>
+        <li>✅ Fortalecer marca como referência em proptech regional</li>
+      </ul>
+      <div class="cta-box">
+        <h2>Vamos conversar?</h2>
+        <p>Agende uma call de 20 minutos para apresentar o deck completo.</p>
+        <a href="mailto:investidores@praia.digital?subject=Call%20-%20Pitch%20Praia%20Digital" class="action-btn">📞 Agendar Call</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>🏖️ Praia Digital · Pitch Deck Pré-seed</p>
+      <p style="margin-top: 0.5rem;">
+        <a href="https://acarolmourad-commits.github.io/praia-digital/" target="_blank">Site Principal</a> • 
+        <a href="https://praia.digital" target="_blank">Ferramentas Gratuitas</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
