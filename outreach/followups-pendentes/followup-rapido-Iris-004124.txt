@@ -1,0 +1,18 @@
+RESUMO DE CONTATO
+Nome: Iris
+Empresa: Mar Aberto
+E-mail: contato9@exemplo.com
+WhatsApp: (11) 91008-1008
+Cidade: São Vicente
+Prioridade: Alta
+Score: 55
+Origem: site
+
+ABERTURA SUGERIDA:
+Olá, tudo bem? Vi que a Praia Digital pode ajudar sua imobiliária em São Vicente... (Iris)
+
+Próximos passos:
+1. Responder em até 1h.
+2. Enviar site: https://acarolmourad-commits.github.io/praia-digital/
+3. Ferramentas gratuitas: https://praia.digital
+4. Agendar call se houver interesse.
