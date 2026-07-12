@@ -13,6 +13,9 @@ steps = [
     ('Verificar funil comercial', 'scripts/automation/verificador_funil_comercial.py'),
     ('Gerar status do funil', 'scripts/automation/gerar_status_funil.py'),
     ('Atualizar sitemap SEO', 'scripts/automation/gerar_sitemap_seo.py'),
+    ('Gerar artigos SEO por cidade', 'scripts/automation/gerar_artigos_seo_cidades_2026.py'),
+    ('Gerar follow-ups por lead', 'scripts/automation/gerar_followups_leads.py'),
+    ('Gerar conteúdo redes sociais', 'scripts/automation/gerar_roteiro_video_diario.py'),
 ]
 
 print('='*50)
