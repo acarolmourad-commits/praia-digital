@@ -1,17 +1,18 @@
 # Verificação do Funil Comercial — 2026-07-12
 
+## Métricas
 - Leads capturados hoje: 1
-- Follow-ups pendentes hoje: 65
-- Backup executado hoje: SIM
-- Pasta de backup existe: SIM
+- Follow-ups pendentes: 65
+- Backup executado: SIM
+- Leads enriquecidos: SIM
+- Onboarding parceiros: 5
 
+## Ações corretivas sugeridas
 - [ ] 1 lead(s) capturado(s) hoje. Processar com `python scripts/automation/processar_novos_leads_site.py`
-- [ ] 65 follow-up(s) pendente(s) para hoje.
-- [ ] Backup do dia OK.
+- [ ] 65 follow-up(s) pendente(s) para hoje. Usar templates em `docs/sales/mensagens-abertura-parceria-praia-digital.html`.
+- [ ] Backup OK. Pasta: `C:\Users\Carolina\praia-digital\docs\sales\backups\backup-2026-07-12`.
+- [ ] Leads enriquecidos: SIM.
+- [ ] Onboarding gerado: 5 parceiro(s). Pasta: `docs/sales/onboarding-parceiros/`.
+- [ ] Após ações, atualizar `docs/sales/briefing-matinal-comercial-praia-digital.html` e abrir `central-comando-praia-digital.html`.
 
-## Ações corretivas
-- Se leads capturados > 0: gerar follow-ups e atualizar briefing.
-- Se followups pendentes > 0: enviar e-mails/WhatsApp e registrar no tracker.
-- Se backup não OK: executar backup antes de qualquer envio.
-
-Gerado em: 2026-07-12T02:14:45.335032
+Gerado em: 2026-07-12T02:38:07.282086
