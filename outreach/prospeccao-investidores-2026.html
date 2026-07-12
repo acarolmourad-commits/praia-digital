@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prospecção para Investidores - Praia Digital</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
+      color: #fff;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container { max-width: 900px; margin: 0 auto; }
+    
+    .header {
+      background: linear-gradient(135deg, #7b2ff7, #00d4ff);
+      padding: 2.5rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    .header p { opacity: 0.9; font-size: 1rem; }
+    
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(10px);
+    }
+    .card h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .metric-box {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .metric-value {
+      font-size: 1.8rem;
+      font-weight: bold;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .metric-label { font-size: 0.8rem; color: #aaa; margin-top: 0.5rem; text-transform: uppercase; }
+    
+    .highlight-box {
+      background: rgba(123,47,247,0.1);
+      border-left: 4px solid #7b2ff7;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 6px;
+    }
+    .highlight-box p { color: #e0e0e0; line-height: 1.7; font-size: 0.95rem; }
+    
+    .template-box {
+      background: #0d1117;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 8px;
+      padding: 1.5rem;
+      font-family: 'Courier New', monospace;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      white-space: pre-wrap;
+      color: #e6edf3;
+    }
+    
+    .action-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+    .action-btn {
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      color: #fff;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+    .action-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(123,47,247,0.4);
+    }
+    .action-btn.secondary {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    .footer a {
+      color: #00d4ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    @media (max-width: 768px) {
+      .action-buttons { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>💰 Prospecção para Investidores</h1>
+      <p>Template de e-mail para apresentar a Praia Digital a fundos e investidores anjos</p>
+    </div>
+
+    <div class="card">
+      <h2>📊 Métricas para Apresentar</h2>
+      <div class="metric-grid">
+        <div class="metric-box">
+          <div class="metric-value">580+</div>
+          <div class="metric-label">Leads qualificados</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">352</div>
+          <div class="metric-label">Artigos SEO</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">254</div>
+          <div class="metric-label">Imóveis cadastrados</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">R$ 297</div>
+          <div class="metric-label">Plano/mês</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">50+</div>
+          <div class="metric-label">Parceiros</div>
+        </div>
+      </div>
+      
+      <div class="highlight-box">
+        <p><strong>Diferenciais competitivos:</strong></p>
+        <ul style="margin-left: 1.2rem; margin-top: 0.5rem;">
+          <li>Foco no nicho: litoral paulista de São Paulo</li>
+          <li>Micro-SaaS com custo baixo e alta escalabilidade</li>
+          <li>Modelo freemium com conversão para R$ 297/mês</li>
+          <li>Conteúdo SEO pronto para captação orgânica</li>
+          <li>Base de leads qualificados de imobiliárias</li>
+          <li>IA aplicada a 4 dores principais do mercado</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📧 Template de E-mail para Investidores</h2>
+      <div class="template-box">Olá, [NOME DO INVESTIDOR],
+
+Meu nome é Carolina Mourad, CEO da Praia Digital. Estou entrando em contato porque acredito que nosso modelo de negócio tem fit com sua tese de investimento.
+
+A Praia Digital é uma proptech focada no litoral paulista. Hoje temos:
+• 580+ leads qualificados de imobiliárias
+• 352 artigos SEO no ar
+• 254 imóveis cadastrados
+• 4 ferramentas de IA em operação
+• 50+ parceiros usando nossas ferramentas gratuitamente
+• Modelo de receita: R$ 297/mês por profissional + assinatura empresarial
+
+Estamos em estágio pré-seed e buscando investidores que acreditam em mercado imobiliário + IA. Gostaria de apresentar nosso pitch deck e agendar uma call de 20 minutos.
+
+Posso enviar o deck e alguns cases? Fico no aguardo.
+
+Abraço,
+Carolina Mourad
+CEO · Praia Digital
+(11) 95434-6288
+https://acarolmourad-commits.github.io/praia-digital/</div>
+    </div>
+
+    <div class="action-buttons">
+      <a href="mailto:investidores@praia.digital?subject=Prospec%C3%A7%C3%A3o%20-%20Praia%20Digital" class="action-btn">📧 Enviar E-mail</a>
+      <a href="docs/startup-proptech/plano-investidores.md" class="action-btn secondary" target="_blank">📄 Ver Plano de Investidores</a>
+      <a href="https://acarolmourad-commits.github.io/praia-digital/" class="action-btn secondary" target="_blank">🌐 Visitar Site</a>
+    </div>
+
+    <div class="footer">
+      <p>🏖️ Praia Digital · Transformando imobiliárias do litoral paulista com IA</p>
+      <p style="margin-top: 0.5rem;">
+        <a href="https://acarolmourad-commits.github.io/praia-digital/" target="_blank">Site Principal</a> • 
+        <a href="https://praia.digital" target="_blank">Ferramentas Gratuitas</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
