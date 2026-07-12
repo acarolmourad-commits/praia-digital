@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playbook de Vendas - Praia Digital</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
+      color: #fff;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container { max-width: 1200px; margin: 0 auto; }
+    
+    .header {
+      background: linear-gradient(135deg, #7b2ff7, #00d4ff);
+      padding: 2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    .header p { opacity: 0.9; }
+    
+    .nav-tabs {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    .nav-tab {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+    .nav-tab.active {
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      border-color: transparent;
+    }
+    .nav-tab:hover:not(.active) {
+      background: rgba(255,255,255,0.12);
+    }
+    
+    .section { display: none; }
+    .section.active { display: block; }
+    
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(10px);
+    }
+    .card h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .script-box {
+      background: #0d1117;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    .script-title {
+      font-weight: 700;
+      color: #00d4ff;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+    .script-content {
+      color: #e6edf3;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      white-space: pre-wrap;
+    }
+    .copy-btn {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #fff;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+    .copy-btn:hover {
+      background: rgba(255,255,255,0.2);
+      transform: translateY(-1px);
+    }
+    
+    .objecao-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+    .objecao-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 1.5rem;
+      transition: all 0.2s;
+    }
+    .objecao-card:hover {
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(255,255,255,0.2);
+    }
+    .objecao-title {
+      font-weight: 700;
+      color: #ff6b6b;
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+    .objecao-response {
+      color: #e0e0e0;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    
+    .case-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .case-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .case-title { font-size: 1.1rem; font-weight: 700; }
+    .case-metrics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    .case-metric {
+      background: rgba(255,255,255,0.05);
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .case-metric-value {
+      font-size: 1.5rem;
+      font-weight: bold;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .case-metric-label {
+      font-size: 0.75rem;
+      color: #aaa;
+      margin-top: 0.25rem;
+      text-transform: uppercase;
+    }
+    
+    .followup-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .followup-item {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .followup-info h3 { font-size: 1rem; margin-bottom: 0.25rem; }
+    .followup-info p { color: #aaa; font-size: 0.85rem; }
+    
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    .footer a {
+      color: #00d4ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    @media (max-width: 768px) {
+      .objecao-grid { grid-template-columns: 1fr; }
+      .nav-tabs { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🎯 Playbook de Vendas - Praia Digital</h1>
+      <p>Scripts, objeções, cases e follow-ups prontos para copiar e usar</p>
+    </div>
+
+    <div class="nav-tabs">
+      <button class="nav-tab active" onclick="showSection('scripts')">📝 Scripts</button>
+      <button class="nav-tab" onclick="showSection('objecoes')">🤔 Objeções</button>
+      <button class="nav-tab" onclick="showSection('cases')">📈 Cases</button>
+      <button class="nav-tab" onclick="showSection('followups')">📅 Follow-ups</button>
+    </div>
+
+    <div id="scripts" class="section active">
+      <div class="card">
+        <h2>📝 Scripts de Abertura</h2>
+        <div class="script-box">
+          <button class="copy-btn" onclick="copiar(this)">📋 Copiar</button>
+          <div class="script-title">1. Apresentação inicial</div>
+          <div class="script-content">Olá, [NOME]! Tudo bem?
+
+Sou Carolina Mourad, CEO da Praia Digital. Ajudo imobiliárias do litoral paulista a captar mais leads qualificados e automatizar o atendimento sem custo inicial.
+
+Posso apresentar um diagnóstico rápido para [NOME DA IMOBILIÁRIA]? São só 15 minutos e sem compromisso.</div>
+        </div>
+        <div class="script-box">
+          <button class="copy-btn" onclick="copiar(this)">📋 Copiar</button>
+          <div class="script-title">2. Follow-up 3 dias</div>
+          <div class="script-content">Olá, [NOME]!
+
+Espero que esta mensagem te encontre bem. Faz 3 dias que compartilhei um pouco sobre a Praia Digital.
+
+Enquanto isso, identifiquei um ponto que pode ajudar [CIDADE]: imobiliárias que usam recomendação automática estão captando mais leads qualificados com o mesmo investimento.
+
+Quer um tour de 10 minutos pelas ferramentas gratuitas?</div>
+        </div>
+        <div class="script-box">
+          <button class="copy-btn" onclick="copiar(this)">📋 Copiar</button>
+          <div class="script-title">3. Call para ação</div>
+          <div class="script-content">Olá, [NOME]!
+
+Tenho 3 horários livres esta semana:
+- Segunda, 14h
+- Terça, 10h
+- Quarta, 9h
+
+Qual funciona melhor para você? São 15 minutos para montar um plano personalizado para [NOME DA IMOBILIÁRIA].</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="objecoes" class="section">
+      <div class="card">
+        <h2>🤔 Objeções Comuns e Respostas</h2>
+        <div class="objecao-grid">
+          <div class="objecao-card">
+            <div class="objecao-title">"Já tenho uma ferramenta similar"</div>
+            <div class="objecao-response">Perfeito! Você não precisa abandonar o que já funciona. A Praia Digital se integra com ferramentas existentes e começa gratuitamente. O diferencial é o foco no litoral paulista e o suporte especializado.</div>
+          </div>
+          <div class="objecao-card">
+            <div class="objecao-title">"Não tenho tempo para implementar"</div>
+            <div class="objecao-response">Entendo. Por isso temos um onboarding rápido: em 7 dias você já tem as ferramentas rodando. A equipe da Praia Digital cuida da configuração inicial.</div>
+          </div>
+          <div class="objecao-card">
+            <div class="objecao-title">"É muito caro para nosso tamanho"</div>
+            <div class="objecao-response">Comece pelo plano gratuito. Quando fechar mais negócios, evolua para o plano Professional. Sem risco, sem contrato longo.</div>
+          </div>
+          <div class="objecao-card">
+            <div class="objecao-title">"Minha equipe não vai saber usar"</div>
+            <div class="objecao-response">As ferramentas são intuitivas e temos suporte prioritário. Além disso, a automação reduz o trabalho repetitivo, dando mais tempo para a equipe vender.</div>
+          </div>
+          <div class="objecao-card">
+            <div class="objecao-title">"Quero ver resultados primeiro"</div>
+            <div class="objecao-response">Justamente por isso oferecemos o plano gratuito. Teste por 30 dias, veja os resultados e só então decida.</div>
+          </div>
+          <div class="objecao-card">
+            <div class="objecao-title">"Preciso consultar meu sócio"</div>
+            <div class="objecao-response">Perfeito! Posso enviar um resumo executivo para ele também. Que tal agendarmos uma call conjunta de 20 minutos?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="cases" class="section">
+      <div class="card">
+        <h2>📈 Cases de Sucesso</h2>
+        <div class="case-card">
+          <div class="case-header">
+            <div class="case-title">Barra Norte Imóveis — Guarujá</div>
+            <span style="background:rgba(0,212,255,0.2);color:#00d4ff;padding:0.25rem 0.75rem;border-radius:6px;font-size:0.85rem;">Case Principal</span>
+          </div>
+          <div class="case-metrics">
+            <div class="case-metric">
+              <div class="case-metric-value">+40%</div>
+              <div class="case-metric-label">Leads Qualificados</div>
+            </div>
+            <div class="case-metric">
+              <div class="case-metric-value">-60%</div>
+              <div class="case-metric-label">Tempo Atendimento</div>
+            </div>
+            <div class="case-metric">
+              <div class="case-metric-value">3x</div>
+              <div class="case-metric-label">Agendamentos</div>
+            </div>
+          </div>
+          <p style="color:#e0e0e0;line-height:1.7;">"A Praia Digital transformou nossa operação. Em 30 dias, aumentamos em 40% os leads qualificados sem gastar um centavo com anúncios." — Roberto Dias, Diretor Comercial</p>
+          <a href="blog/case-sucesso-barra-norte-imoveis-guaruja-2026.html" target="_blank" style="color:#00d4ff;text-decoration:none;font-weight:600;">Ver case completo →</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="followups" class="section">
+      <div class="card">
+        <h2>📅 Follow-ups Prontos</h2>
+        <div class="followup-list">
+          <div class="followup-item">
+            <div class="followup-info">
+              <h3>Follow-up 3 dias</h3>
+              <p>Para leads que não responderam o primeiro contato</p>
+            </div>
+            <button class="copy-btn" onclick="copiar(this)">📋 Copiar</button>
+          </div>
+          <div class="followup-item">
+            <div class="followup-info">
+              <h3>Follow-up 7 dias</h3>
+              <p>Segunda tentativa com valor agregado</p>
+            </div>
+            <button class="copy-btn" onclick="copiar(this)">📋 Copiar</button>
+          </div>
+          <div class="followup-item">
+            <div class="followup-info">
+              <h3>Follow-up 15 dias</h3>
+              <p>Última tentativa antes de mover para lista de espera</p>
+            </div>
+            <button class="copy-btn" onclick="copiar(this)">📋 Copiar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>🏖️ Praia Digital · Playbook de Vendas</p>
+      <p style="margin-top: 0.5rem;">
+        <a href="central-comando-praia-digital.html" target="_blank">Central de Comando</a> • 
+        <a href="docs/sales/enviar-hoje-2026-07-12.html" target="_blank">Enviar Hoje</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      event.target.classList.add('active');
+    }
+    
+    function copiar(btn) {
+      const box = btn.closest('.script-box, .followup-item');
+      const text = box.querySelector('.script-content, .followup-info').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const original = btn.textContent;
+        btn.textContent = '✅ Copiado!';
+        setTimeout(() => btn.textContent = original, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
