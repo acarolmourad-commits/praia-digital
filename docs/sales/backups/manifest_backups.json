@@ -1,0 +1,57 @@
+{
+  "docs\\sales\\followup-registro.md": {
+    "sha256": "68bb169c047f5a5b682bbaa4d542cba0ea258ddd1599fb612ad94def9aae911c",
+    "ultimo_backup": "2026-07-12",
+    "tamanho_bytes": 1367
+  },
+  "docs\\sales\\parcerias-leads-capturados.csv": {
+    "sha256": "1d86f6f6270be31a50d4cb4e159998ce3833fd5734e7b6b508a72a9d342d108f",
+    "ultimo_backup": "2026-07-12",
+    "tamanho_bytes": 1395
+  },
+  "docs\\sales\\leads-litoral-enriquecido.csv": {
+    "sha256": "a1c432cf8f401ad26ed6fcd85317b99af13e219ee9b0eb54be0da7c4073554cf",
+    "ultimo_backup": "2026-07-12",
+    "tamanho_bytes": 147436
+  },
+  "docs\\sales\\leads-litoral-enriquecido-realista.csv": {
+    "sha256": "025a444b633b6ea5bcb88595aea08a1bcc4870b6a741ec2f673a70bc445c0865",
+    "ultimo_backup": "2026-07-12",
+    "tamanho_bytes": 6888
+  },
+  "docs\\sales\\csv-lotes-email\\lote-brevo-leads-capturados-2026-07-12.csv": {
+    "sha256": "1e2b6ee290857fbcd4bb7d14316f8796fc556e39d85f81c505cacd2de0c4cd12",
+    "ultimo_backup": "2026-07-12",
+    "tamanho_bytes": 2257
+  },
+  "docs\\sales\\csv-lotes-email\\lote-smtp-50-oficial-2026-07-12.csv": {
+    "sha256": "4d5d5eecfcee309261f19be785fd216929e2925b7d6576aa4baf62a7f1f63d6e",
+    "ultimo_backup": "2026-07-12",
+    "tamanho_bytes": 3473
+  },
+  "docs\\sales\\tracking-envios-lote-50-2026-07-12.csv": {
+    "sha256": "5aeb8d40382f6d49cd4e988aa3d5040808720739c07b546321726675d1de0b27",
+    "ultimo_backup": "2026-07-12",
+    "tamanho_bytes": 7635
+  },
+  "docs\\sales\\leads-priorizados-2026-07-12.csv": {
+    "sha256": "1e2b6ee290857fbcd4bb7d14316f8796fc556e39d85f81c505cacd2de0c4cd12",
+    "ultimo_backup": "2026-07-12",
+    "tamanho_bytes": 2257
+  },
+  "docs\\sales\\briefing-matinal-comercial-praia-digital.html": {
+    "sha256": "51f063665e3df5f3909b35b1186144f97097d8a7e47ef5d5f60c0586f821cb4d",
+    "ultimo_backup": "2026-07-12",
+    "tamanho_bytes": 8756
+  },
+  "docs\\sales\\top-leads-prontas-2026-07-12.html": {
+    "sha256": "913fc40206b98bf4ef0272f3119612e2139707af8b53cf11d9ac28f5d9d652ed",
+    "ultimo_backup": "2026-07-12",
+    "tamanho_bytes": 3493
+  },
+  "docs\\sales\\pacote-execucao-final-2026-07-12.html": {
+    "sha256": "5e7841c8733b04500630c1c871a22583b74572664d1009eaba00c1769a198df1",
+    "ultimo_backup": "2026-07-12",
+    "tamanho_bytes": 1958
+  }
+}

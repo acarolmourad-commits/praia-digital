@@ -1,0 +1,11 @@
+NOME,EMAIL,WHATSAPP,CIDADE,EMPRESA,ASSUNTO,LINK_EMAIL_PERSONALIZADO,ORIGEM,INTERESSE,STATUS,PRIORIDADE,SCORE
+Ana,contato1@exemplo.com,(11) 91000-1000,Santos,Porto da Lua,Parceria — Santos,mailto:contato1@exemplo.com?subject=Parceria%20Praia%20Digital,site,Quero uma parceria para captar mais leads com IA,capturado,Alta,65
+Bruno,contato2@exemplo.com,(11) 91001-1001,Guarujá,Praia Grande Imóveis,Parceria — Guarujá,mailto:contato2@exemplo.com?subject=Parceria%20Praia%20Digital,site,Temos interesse em automação de atendimento,capturado,Alta,60
+Diego,contato4@exemplo.com,(11) 91003-1003,Praia Grande,Alpha Imóveis,Parceria — Praia Grande,mailto:contato4@exemplo.com?subject=Parceria%20Praia%20Digital,site,Busco ferramentas gratuitas para começar,capturado,Alta,60
+Hugo,contato8@exemplo.com,(11) 91007-1007,Guarujá,Barra Norte,Parceria — Guarujá,mailto:contato8@exemplo.com?subject=Parceria%20Praia%20Digital,site,Estamos procurando parceria de tecnologia,capturado,Alta,60
+João,contato10@exemplo.com,(11) 91009-1009,Praia Grande,Porto da Lua,Parceria — Praia Grande,mailto:contato10@exemplo.com?subject=Parceria%20Praia%20Digital,site,Busco recomendação automática de imóveis,capturado,Alta,60
+Carla,contato3@exemplo.com,(11) 91002-1002,São Vicente,Costa Verde,Parceria — São Vicente,mailto:contato3@exemplo.com?subject=Parceria%20Praia%20Digital,site,Quero aumentar vendas no verão,capturado,Alta,55
+Iris,contato9@exemplo.com,(11) 91008-1008,São Vicente,Mar Aberto,Parceria — São Vicente,mailto:contato9@exemplo.com?subject=Parceria%20Praia%20Digital,site,Quero atendimento 24h para meus clientes,capturado,Alta,55
+Fábio,contato6@exemplo.com,(11) 91005-1005,Outra,Site View,Parceria — Outra,mailto:contato6@exemplo.com?subject=Parceria%20Praia%20Digital,site,Interesse em SEO local,capturado,Alta,45
+Elena,contato5@exemplo.com,(11) 91004-1004,Bertioga,Blue House,Parceria — Bertioga,mailto:contato5@exemplo.com?subject=Parceria%20Praia%20Digital,site,Quero reduzir custos de aquisição,capturado,Alta,40
+Gabi,contato7@exemplo.com,(11) 91006-1006,Santos,Litoral Negócios,Parceria — Santos,mailto:contato7@exemplo.com?subject=Parceria%20Praia%20Digital,site,Quero um piloto sem custo,capturado,Média,30

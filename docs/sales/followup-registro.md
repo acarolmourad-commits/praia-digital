@@ -11,3 +11,33 @@ Atualizado em: 2026-07-12
 - Templates: primeiros contatos e follow-ups em `docs/sales/`
 - Classificador de respostas: `scripts/classificar_respostas_leads.py`
 - Atualização automática do tracker: `scripts/atualizar_tracker_respostas.py`
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
+| 2026-07-12 |  |  |  |  | pendente_envio | Media | contato_manual_d3 |
