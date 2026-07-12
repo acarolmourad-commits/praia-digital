@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enviar Hoje - Praia Digital</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
+      color: #fff;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container { max-width: 1200px; margin: 0 auto; }
+    .header {
+      background: linear-gradient(135deg, #7b2ff7, #00d4ff);
+      padding: 2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    .header p { opacity: 0.9; font-size: 1rem; }
+    
+    .section {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(10px);
+    }
+    .section h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .checklist {
+      list-style: none;
+      padding: 0;
+    }
+    .checklist li {
+      padding: 0.75rem;
+      margin-bottom: 0.5rem;
+      background: rgba(255,255,255,0.05);
+      border-left: 3px solid #00d4ff;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .checklist li:hover { background: rgba(255,255,255,0.08); }
+    .checklist li.done { border-left-color: #00ffa3; opacity: 0.7; }
+    
+    .action-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .action-btn {
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      color: #fff;
+      border: none;
+      padding: 1rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.2s;
+    }
+    .action-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(123,47,247,0.4);
+    }
+    .action-btn.secondary {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    
+    .email-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .email-row:last-child { border-bottom: none; }
+    .email-info h3 { font-size: 1rem; margin-bottom: 0.25rem; }
+    .email-info p { color: #aaa; font-size: 0.9rem; }
+    
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    .footer a { color: #00d4ff; text-decoration: none; font-weight: 600; }
+    
+    .status-indicator {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #00ffa3;
+      margin-right: 0.5rem;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🚀 Enviar Hoje</h1>
+      <p><span class="status-indicator"></span>Pipeline do dia • Envios + social + follow-ups</p>
+    </div>
+
+    <div class="section">
+      <h2>✅ Checklist do Dia</h2>
+      <ul class="checklist" id="checklist">
+        <li onclick="toggle(this)">Enviar e-mails do lote piloto (5)</li>
+        <li onclick="toggle(this)">Enviar e-mails do lote 36 (6)</li>
+        <li onclick="toggle(this)">Registrar envios no tracker</li>
+        <li onclick="toggle(this)">Verificar respostas e aplicar auto-respostas</li>
+        <li onclick="toggle(this)">Postar 1 conteúdo no Instagram</li>
+        <li onclick="toggle(this)">Postar 1 conteúdo no LinkedIn</li>
+        <li onclick="toggle(this)">Follow-ups de 3 dias pendentes</li>
+        <li onclick="toggle(this)">Backup incremental final do dia</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>📧 Lotes de Envio</h2>
+      <div class="email-row">
+        <div class="email-info">
+          <h3>Lote Piloto — 5 leads</h3>
+          <p>Litoral Premium Santos, Santos Ocean View, Santos Premium Digital, Santos Tower Imóveis, Santos Luxo</p>
+        </div>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+          <a href="outreach/envio-piloto-5-hoje/" class="action-btn" target="_blank">Abrir pasta</a>
+          <button class="action-btn secondary" onclick="markDone(this)">✅ Marcar enviado</button>
+        </div>
+      </div>
+      <div class="email-row">
+        <div class="email-info">
+          <h3>Lote 36 — 6 leads</h3>
+          <p>Santos Smart Home, Santos Executive, Santos Bay Homes, Santos Launch, Santos Platinum, Santos Elite</p>
+        </div>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+          <a href="outreach/lote-prospeccao-36-2026-07-12.html" class="action-btn" target="_blank">Abrir lote</a>
+          <button class="action-btn secondary" onclick="markDone(this)">✅ Marcar enviado</button>
+        </div>
+      </div>
+      <div class="action-grid">
+        <a href="docs/sales/send-execution-tracker-2026.html" class="action-btn secondary" target="_blank">📊 Registrar no tracker</a>
+        <a href="outreach/auto-respostas/modelo-resposta-automatica-lead.html" class="action-btn secondary" target="_blank">💬 Auto-respostas</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>📱 Publicar Hoje</h2>
+      <div class="email-row">
+        <div class="email-info">
+          <h3>Instagram + LinkedIn — Semana 2</h3>
+          <p>Posts prontos com copy, hashtags e CTA</p>
+        </div>
+        <a href="marketing/redes-sociais-semana-2/instagram-linkedin-semana-2-2026-07-12.html" class="action-btn" target="_blank">Abrir conteúdo</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>📅 Follow-ups</h2>
+      <div class="email-row">
+        <div class="email-info">
+          <h3>Follow-ups por lead</h3>
+          <p>3 dias / 7 dias / 15 dias personalizados</p>
+        </div>
+        <a href="outreach/followups-leads-reais/" class="action-btn secondary" target="_blank">Abrir follow-ups</a>
+      </div>
+      <div class="email-row">
+        <div class="email-info">
+          <h3>Agendador visual</h3>
+          <p>Calendário e status dos follow-ups</p>
+        </div>
+        <a href="docs/sales/agendador-followups-2026.html" class="action-btn secondary" target="_blank">Abrir agendador</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🛠️ Ferramentas rápidas</h2>
+      <div class="action-grid">
+        <a href="https://praia.digital" class="action-btn secondary" target="_blank">🛠️ Ferramentas gratuitas</a>
+        <a href="https://acarolmourad-commits.github.io/praia-digital/" class="action-btn secondary" target="_blank">🌐 Site principal</a>
+        <a href="docs/sales/tracker-visual-2026.html" class="action-btn secondary" target="_blank">📊 Tracker visual</a>
+        <a href="docs/sales/crm-visual-2026.html" class="action-btn secondary" target="_blank">🗂️ CRM visual</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>🏖️ Praia Digital · Central de execução diária</p>
+      <p style="margin-top: 0.5rem;">
+        <a href="central-comando-praia-digital.html" target="_blank">Central de Comando</a> • 
+        <a href="docs/sales/backlog-vendas-2026-07-12.md" target="_blank">Backlog do dia</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function toggle(el) {
+      el.classList.toggle('done');
+      localStorage.setItem('envio_hoje_' + el.textContent.trim(), el.classList.contains('done') ? '1' : '0');
+    }
+    document.querySelectorAll('.checklist li').forEach(li => {
+      const key = 'envio_hoje_' + li.textContent.trim();
+      if (localStorage.getItem(key) === '1') li.classList.add('done');
+    });
+    function markDone(btn) {
+      btn.textContent = '✅ Feito';
+      btn.disabled = true;
+      btn.style.opacity = '0.7';
+    }
+  </script>
+</body>
+</html>
