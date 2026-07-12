@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Captura de Leads - Praia Digital</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
+      color: #fff;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container { max-width: 600px; margin: 0 auto; }
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(10px);
+    }
+    .logo { font-size: 1.5rem; font-weight: bold; background: linear-gradient(135deg,#00d4ff,#7b2ff7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1rem; display: inline-block; }
+    h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    .subtitle { color: #aaa; margin-bottom: 1.5rem; }
+    
+    .form-group { margin-bottom: 1rem; }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: #00d4ff;
+      font-size: 0.95rem;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.05);
+      color: #fff;
+      font-size: 1rem;
+      transition: all 0.3s;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #00d4ff;
+      box-shadow: 0 0 0 3px rgba(0,212,255,0.2);
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: rgba(255,255,255,0.4);
+    }
+    
+    .submit-btn {
+      width: 100%;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      color: #fff;
+      border: none;
+      padding: 1rem;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: all 0.3s;
+    }
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(123,47,247,0.5);
+    }
+    
+    .success-message {
+      display: none;
+      background: rgba(0,212,255,0.1);
+      border: 2px solid #00d4ff;
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+    .success-message.show { display: block; }
+    .success-message h2 {
+      color: #00d4ff;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    .success-message p {
+      color: #e0e0e0;
+      line-height: 1.7;
+    }
+    
+    .benefits {
+      background: rgba(123,47,247,0.1);
+      border-left: 4px solid #7b2ff7;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+    }
+    .benefits h3 {
+      color: #d4a0ff;
+      margin-bottom: 0.75rem;
+      font-size: 1rem;
+    }
+    .benefits ul {
+      list-style: none;
+      padding: 0;
+    }
+    .benefits li {
+      padding: 0.3rem 0;
+      color: #e0e0e0;
+      font-size: 0.95rem;
+    }
+    .benefits li:before {
+      content: "✅ ";
+      margin-right: 0.5rem;
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    .footer a {
+      color: #00d4ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="logo">🏖️ Praia Digital</div>
+      <h1>🚀 Quer transformar sua imobiliária?</h1>
+      <p class="subtitle">Deixe seus dados e receba um diagnóstico gratuito personalizado</p>
+      
+      <div class="benefits">
+        <h3>🎁 O que você recebe gratuitamente:</h3>
+        <ul>
+          <li>Avaliação de preço de mercado automática</li>
+          <li>Recomendação inteligente de imóveis</li>
+          <li>Assistente virtual 24/7 para leads</li>
+          <li>Geração automática de anúncios</li>
+          <li>Diagnóstico personalizado do seu funil de vendas</li>
+        </ul>
+      </div>
+      
+      <form id="leadForm" onsubmit="capturarLead(event)">
+        <div class="form-group">
+          <label for="nome">Nome completo *</label>
+          <input type="text" id="nome" placeholder="Ex: Carolina Mourad" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">E-mail profissional *</label>
+          <input type="email" id="email" placeholder="carolina@imobiliaria.com.br" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="whatsapp">WhatsApp / Telefone</label>
+          <input type="tel" id="whatsapp" placeholder="(11) 95434-6288">
+        </div>
+        
+        <div class="form-group">
+          <label for="cidade">Cidade *</label>
+          <input type="text" id="cidade" placeholder="Ex: Santos, Guarujá, Ubatuba..." required>
+        </div>
+        
+        <div class="form-group">
+          <label for="imobiliaria">Nome da Imobiliária</label>
+          <input type="text" id="imobiliaria" placeholder="Ex: Barra Norte Imóveis">
+        </div>
+        
+        <div class="form-group">
+          <label for="interesse">Principal interesse / desafio</label>
+          <textarea id="interesse" rows="3" placeholder="Ex: Quero automatizar atendimento e captar mais leads sem aumentar custos"></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">🎯 Receber Diagnóstico Gratuito</button>
+      </form>
+      
+      <div id="successMessage" class="success-message">
+        <h2>✅ Lead capturado com sucesso!</h2>
+        <p>Obrigado pelo interesse! Em até <strong>24 horas</strong> você receberá um diagnóstico personalizado no e-mail informado.</p>
+        <p style="margin-top: 1rem;">Enquanto isso, explore nossas ferramentas gratuitas em <a href="https://praia.digital" target="_blank" style="color: #00d4ff;">https://praia.digital</a></p>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>🏖️ Praia Digital · Transformando imobiliárias do litoral paulista com IA</p>
+      <p style="margin-top: 0.5rem;">
+        <a href="https://acarolmourad-commits.github.io/praia-digital/" target="_blank">Site Principal</a> • 
+        <a href="https://praia.digital" target="_blank">Ferramentas Gratuitas</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function capturarLead(event) {
+      event.preventDefault();
+      
+      const lead = {
+        nome: document.getElementById('nome').value,
+        email: document.getElementById('email').value,
+        whatsapp: document.getElementById('whatsapp').value,
+        cidade: document.getElementById('cidade').value,
+        imobiliaria: document.getElementById('imobiliaria').value,
+        interesse: document.getElementById('interesse').value,
+        data: new Date().toISOString(),
+        origem: 'formulario-site-praia-digital'
+      };
+      
+      // Store in localStorage
+      let leads = JSON.parse(localStorage.getItem('praiaDigitalLeads') || '[]');
+      leads.push(lead);
+      localStorage.setItem('praiaDigitalLeads', JSON.stringify(leads));
+      
+      // Show success message
+      document.getElementById('leadForm').style.display = 'none';
+      document.getElementById('successMessage').classList.add('show');
+      
+      // Send to tracking (if analytics available)
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'lead_captured', {
+          'event_category': 'form',
+          'event_label': 'diagnostico_gratuito'
+        });
+      }
+      
+      console.log('Lead capturado:', lead);
+    }
+    
+    // Track form views
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('Formulário de captura carregado - Pronto para receber leads');
+    });
+  </script>
+</body>
+</html>
