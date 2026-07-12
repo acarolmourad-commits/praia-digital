@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workflow de Nurturing Pós-Quiz - Praia Digital</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
+      color: #fff;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container { max-width: 1200px; margin: 0 auto; }
+    
+    .header {
+      background: linear-gradient(135deg, #7b2ff7, #00d4ff);
+      padding: 2.5rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    .header p { opacity: 0.95; font-size: 1rem; max-width: 700px; margin: 0 auto; }
+    
+    .steps-timeline {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .step-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      backdrop-filter: blur(10px);
+      position: relative;
+      transition: all 0.3s;
+    }
+    .step-card:hover {
+      background: rgba(255,255,255,0.08);
+      transform: translateY(-3px);
+      border-color: rgba(255,255,255,0.2);
+    }
+    .step-number {
+      position: absolute;
+      top: -1rem;
+      left: 2rem;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      color: #fff;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 800;
+      box-shadow: 0 4px 15px rgba(123,47,247,0.4);
+    }
+    .step-title {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.75rem;
+      font-weight: 700;
+    }
+    .step-desc {
+      color: #e0e0e0;
+      line-height: 1.6;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+    .step-checklist {
+      list-style: none;
+      padding: 0;
+    }
+    .step-checklist li {
+      padding: 0.6rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      color: #e0e0e0;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .step-checklist li:last-child { border-bottom: none; }
+    .step-checklist li::before { content: "✅ "; color: #00ffa3; }
+    
+    .scoring-section {
+      background: #0d1117;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    .scoring-section h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .score-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .score-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 1rem;
+    }
+    .score-label { color: #aaa; font-size: 0.8rem; margin-bottom: 0.25rem; }
+    .score-value {
+      font-size: 1.8rem;
+      font-weight: bold;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .email-templates {
+      background: #0d1117;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    .email-templates h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .email-box {
+      background: #0d1117;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    .email-title {
+      font-weight: 700;
+      color: #00d4ff;
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+    .email-content {
+      color: #e6edf3;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      white-space: pre-wrap;
+    }
+    .copy-btn {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #fff;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .copy-btn:hover { background: rgba(255,255,255,0.2); }
+    
+    .action-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+    .action-btn {
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      color: #fff; border: none; padding: 1rem 2rem; border-radius: 8px;
+      font-size: 1rem; font-weight: 700; cursor: pointer; text-decoration: none;
+      display: inline-block; transition: all 0.2s;
+    }
+    .action-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(123,47,247,0.4);
+    }
+    .action-btn.secondary {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    .footer a {
+      color: #00d4ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🔄 Workflow de Nurturing Pós-Quiz</h1>
+      <p>Converta automaticamente novos leads em parceiros com e-mails segmentados e conteúdo personalizado</p>
+    </div>
+
+    <div class="steps-timeline">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <div class="step-title">Captura do Lead</div>
+        <div class="step-desc">Lead responde o quiz e é automaticamente salvo no sistema com perfil inicial.</div>
+        <ul class="step-checklist">
+          <li>Dados salvos no localStorage</li>
+          <li>Exportado para CSV automaticamente</li>
+          <li>Score inicial baseado em Q1 e Q5</li>
+          <li>Ticket de acompanhamento criado</li>
+        </ul>
+      </div>
+
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <div class="step-title">Segmentação</div>
+        <div class="step-desc">Lead é classificado por perfil, cidade e maturidade digital.</div>
+        <ul class="step-checklist">
+          <li>Perfil: captação, atendimento, fechamento ou organização</li>
+          <li>Cidade: preferência geográfica</li>
+          <li>Maturidade: não usa IA / básico / avançado</li>
+          <li>Porte: até 20 / 21-100 / 101-500 / 500+ imóveis</li>
+        </ul>
+      </div>
+
+      <div class="step-card">
+        <div class="step-title">Nutrição Automática</div>
+        <div class="step-desc">Sequência de e-mails personalizados enviados automaticamente com conteúdo relevante.</div>
+        <ul class="step-checklist">
+          <li>Dia 0: Diagnóstico personalizado</li>
+          <li>Dia 2: Artigo SEO relevante por cidade</li>
+          <li>Dia 4: Case de sucesso similar</li>
+          <li>Dia 7: Ferramenta gratuita recomendada</li>
+          <li>Dia 14: Proposta comercial personalizada</li>
+          <li>Dia 21: Follow-up final / call</li>
+        </ul>
+      </div>
+
+      <div class="step-card">
+        <div class="step-number">4</div>
+        <div class="step-title">Conversão</div>
+        <div class="step-desc">Lead qualificado é direcionado para onboarding ou plano profissional.</div>
+        <ul class="step-checklist">
+          <li>Aberto diagnostic → onboarding gratuito</li>
+          <li>Clicou em ferramenta → trial Professional</li>
+          <li>Pediu proposta → call de 15min agendada</li>
+          <li>Respondeu WhatsApp → qualificação humana</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="scoring-section">
+      <h2>📊 Lead Scoring Automático</h2>
+      <div class="score-grid">
+        <div class="score-card">
+          <div class="score-label">Q1 - Desafio principal</div>
+          <div class="score-value">0-30</div>
+          <div style="color:#e0e0e0;font-size:.9rem;margin-top:.5rem;">captação=30, atendimento=20, fechamento=25, organização=15</div>
+        </div>
+        <div class="score-card">
+          <div class="score-label">Q2 - Porte da imobiliária</div>
+          <div class="score-value">0-20</div>
+          <div style="color:#e0e0e0;font-size:.9rem;margin-top:.5rem;">0-20=5, 21-100=10, 101-500=15, 500+=20</div>
+        </div>
+        <div class="score-card">
+          <div class="score-label">Q4 - Maturidade digital</div>
+          <div class="score-value">0-20</div>
+          <div style="color:#e0e0e0;font-size:.9rem;margin-top:.5rem;">não=5, básico=10, avançado=20</div>
+        </div>
+        <div class="score-card">
+          <div class="score-label">Q5 - Objetivo 90 dias</div>
+          <div class="score-value">0-30</div>
+          <div style="color:#e0e0e0;font-size:.9rem;margin-top:.5rem;">leads=20, vendas=25, tempo=15, todos=30</div>
+        </div>
+      </div>
+      <div style="margin-top: 1rem; background: rgba(255,255,255,0.05); border-radius: 8px; padding: 1rem;">
+        <div style="color: #00d4ff; font-size: 1.1rem; font-weight: 700;">📌 Score Final = Soma dos 4 quesitos (máx 100)</div>
+        <ul style="color: #e0e0e0; font-size: 0.95rem; margin-top: 0.75rem; line-height: 2;">
+          <li><strong>80-100:</strong> Lead quente — prioridade máxima, enviar proposta em 24h</li>
+          <li><strong>50-79:</strong> Lead morno — nutrir com conteúdo por 7 dias</li>
+          <li><strong>0-49:</strong> Lead frio — newsletter semanal e remarketing</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="email-templates">
+      <h2>📧 Modelos de E-mail da Sequência</h2>
+      
+      <div class="email-box">
+        <button class="copy-btn" onclick="copiar(this)">📋 Copiar</button>
+        <div class="email-title">Dia 0 — Diagnóstico Personalizado (envio automático pós-quiz)</div>
+        <div class="email-content">Olá, [NOME]!
+
+Parabéns por completar o Diagnóstico Gratuito da Praia Digital! 🎯
+
+Analisei suas respostas e identifiquei que seu principal desafio em [CIDADE] é: [DESAFIO].
+
+Com base no perfil da sua imobiliária, preparei um plano personalizado:
+
+✅ Ferramenta recomendada primeiro: [FERRAMENTA]
+✅ Artigo estratégico: [ARTIGO]
+✅ Próximo passo: [PRÓXIMO PASSO]
+
+Enquanto isso, explore gratuitamente nosso hub de ferramentas:
+👉 https://praia.digital
+
+Qualquer dúvida, responda este e-mail ou chame no WhatsApp: (11) 95434-6288
+
+Abraço,
+Carolina Mourad
+CEO · Praia Digital</div>
+      </div>
+
+      <div class="email-box">
+        <button class="copy-btn" onclick="copiar(this)">📋 Copiar</button>
+        <div class="email-title">Dia 2 — Conteúdo Relevante por Cidade</div>
+        <div class="email-content">Olá, [NOME]!
+
+Em [CIDADE], imobiliárias que usam IA estão captando mais leads qualificados.
+
+Preparei um artigo exclusivo para você:
+"[ARTIGO SEO PERSONALIZADO POR CIDADE]"
+
+👉 Ler artigo: https://acarolmourad-commits.github.io/praia-digital/blog/[SLUG]
+
+Dica prática: comece pelo assistente virtual 24/7 — ele responde leads em menos de 30 segundos.
+
+Quer testar? É grátis em https://praia.digital
+
+Abraço,
+Carolina
+Praia Digital</div>
+      </div>
+
+      <div class="email-box">
+        <button class="copy-btn" onclick="copiar(this)">📋 Copiar</button>
+        <div class="email-title">Dia 4 — Case de Sucesso Similar</div>
+        <div class="email-content">Olá, [NOME]!
+
+Quero compartilhar um case real de uma imobiliária de [CIDADE/REGIÃO]:
+
+📈 Barra Norte Imóveis — Guarujá
+• +40% leads qualificados em 30 dias
+• -60% tempo de atendimento
+• 3x mais agendamentos
+• 0% investimento em anúncios
+
+Tudo isso com as ferramentas da Praia Digital.
+
+Quer ver o case completo?
+👉 https://acarolmourad-commits.github.io/praia-digital/blog/case-sucesso-barra-norte-imoveis-guaruja-2026.html
+
+Se quiser aplicar o mesmo modelo na sua imobiliária, responda "QUERO" que eu envio a proposta.
+
+Abraço,
+Carolina Mourad
+CEO · Praia Digital</div>
+      </div>
+
+      <div class="email-box">
+        <button class="copy-btn" onclick="copiar(this)">📋 Copiar</button>
+        <div class="email-title">Dia 7 — Ferramenta Gratuita Recomendada</div>
+        <div class="email-content">Olá, [NOME]!
+
+Hoje quero te dar acesso a uma ferramenta gratuita que pode transformar sua operação:
+
+🎯 [NOME DA FERRAMENTA RECOMENDADA POR PERFIL]
+
+Exemplos por perfil:
+• captação → Captura de leads por cidade
+• atendimento → Assistente virtual 24/7
+• fechamento → Avaliação de preço automática
+• organização → Modelo de proposta de parceria
+
+👉 Acesse: https://praia.digital
+
+Dica: comece com o plano gratuito e evolua conforme os resultados aparecerem.
+
+Abraço,
+Carolina
+Praia Digital</div>
+      </div>
+
+      <div class="email-box">
+        <button class="copy-btn" onclick="copiar(this)">📋 Copiar</button>
+        <div class="email-title">Dia 14 — Proposta Comercial Personalizada</div>
+        <div class="email-content">Olá, [NOME]!
+
+Depois de 2 semanas compartilhando conteúdo, preparei uma proposta personalizada para [NOME DA IMOBILIÁRIA]:
+
+🎯 Objetivo: [OBJETIVO BASEADO NO QUIZ]
+📍 Cidade: [CIDADE]
+🏢 Porte: [PORTE]
+💰 Investimento: 30 dias grátis, depois R$ 297/mês
+
+Resultado esperado (baseado no case):
+• +40% leads qualificados
+• -60% tempo de atendimento
+• 3x mais agendamentos
+
+Quer agendar uma call de 15 minutos?
+👉 Responda "AGENDAR" ou chame no WhatsApp: (11) 95434-6288
+
+Abraço,
+Carolina Mourad
+CEO · Praia Digital</div>
+      </div>
+
+      <div class="email-box">
+        <button class="copy-btn" onclick="copiar(this)">📋 Copiar</button>
+        <div class="email-title">Dia 21 — Follow-up Final / Call</div>
+        <div class="email-content">Olá, [NOME]!
+
+Faz 3 semanas que compartilhei conteúdo sobre a Praia Digital.
+
+Não quero ser insistente — só quero garantir que você não deixou passar a oportunidade de testar gratuitamente.
+
+Oferta especial válida até [DATA]:
+✅ 30 dias grátis do plano Professional
+✅ Onboarding personalizado
+✅ Suporte prioritário
+
+👉 Responda "SIM" que eu ativo agora
+
+Se não for agora, sem problemas. As ferramentas continuam gratuitas em https://praia.digital
+
+Sucesso em [CIDADE]! 🏖️
+
+Carolina Mourad
+CEO · Praia Digital
+(11) 95434-6288</div>
+      </div>
+    </div>
+
+    <div class="action-buttons">
+      <a href="outreach/kit-comercial-completo-2026.html" target="_blank" class="action-btn">🧰 Kit Comercial</a>
+      <a href="docs/sales/scripts-qualificacao-whatsapp-2026.html" target="_blank" class="action-btn secondary">📱 Scripts WhatsApp</a>
+      <a href="blog/case-sucesso-barra-norte-imoveis-guaruja-2026.html" target="_blank" class="action-btn secondary">📈 Case de Sucesso</a>
+    </div>
+
+    <div class="footer">
+      <p>🏖️ Praia Digital · Workflow de Nurturing</p>
+      <p style="margin-top: 0.5rem;">
+        <a href="central-comando-praia-digital.html" target="_blank">Central de Comando</a> • 
+        <a href="outreach/lead-magnet/diagnostico-gratuito-imobiliaria.html" target="_blank">Diagnóstico Gratuito</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function copiar(btn) {
+      const box = btn.closest('.email-box');
+      const text = box.querySelector('.email-content').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const original = btn.textContent;
+        btn.textContent = '✅ Copiado!';
+        setTimeout(() => btn.textContent = original, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
