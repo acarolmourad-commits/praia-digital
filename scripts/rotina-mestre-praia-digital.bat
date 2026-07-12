@@ -1,35 +1,38 @@
 @echo off
+REM Launcher oficial da Central de Comando - Praia Digital
+REM Abre todos os sistemas em um clique
+
 echo ==========================================
-echo Praia Digital - Rotina Mestre Unificada
+echo  Praia Digital - Inicializando...
 echo ==========================================
 echo.
 
-echo [1/5] Backup incremental...
 cd /d C:\Users\Carolina\praia-digital
-python scripts/automation/backup_incremental_comercial.py
-echo.
 
-echo [2/5] Gerando briefing dinamico...
-python scripts/automation/gerar_briefing_dinamico.py
-echo.
+echo [1/4] Abrindo Central de Comando...
+start "" "central-comando-praia-digital.html"
+timeout /t 2 >nul
 
-echo [3/5] Atualizando tracker...
-if not exist docs\sales\tracker_envios.csv (
-    echo nome,email,cidade,imovel_url,fonte,data_captura,status,ultimo_contato,proxima_acao,observacoes > docs\sales\tracker_envios.csv
-)
-echo.
+echo [2/4] Abrindo Send Execution Tracker...
+start "" "docs/sales/send-execution-tracker-2026.html"
+timeout /t 2 >nul
 
-echo [4/5] Abrindo arquivos...
-start docs/sales/central-comando-praia-digital.html
-start docs/sales/briefing-comercial-diario.md
-start docs/sales/tracker_envios.csv
-echo.
+echo [3/4] Abrindo CRM Visual...
+start "" "docs/sales/crm-visual-2026.html"
+timeout /t 2 >nul
 
-echo [5/5] Checklist do dia:
-echo - [ ] Enviar 1 proposta do lote atual
-echo - [ ] Registrar envio no tracker
-echo - [ ] Responder follow-ups pendentes
-echo - [ ] Publicar 1 artigo/conteudo SEO
+echo [4/4] Abrindo Tracker de Envios...
+start "" "docs/sales/tracker_envios.csv"
+
 echo.
-echo Rotina concluida.
+echo ==========================================
+echo  Sistemas abertos!
+echo ==========================================
+echo.
+echo Acoes rapidas:
+echo   1. Enviar lote piloto: outreach\envio-piloto-5-hoje\
+echo   2. Lote 36: outreach\lote-prospeccao-36-2026-07-12.html
+echo   3. Follow-ups: outreach\followups-leads-reais\
+echo   4. Gerar novos artigos: python scripts\automation\gerar_artigos_seo_cidades_2026.py
+echo.
 pause
