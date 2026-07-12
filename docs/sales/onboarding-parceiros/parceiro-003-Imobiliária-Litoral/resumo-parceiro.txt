@@ -1,7 +1,0 @@
-Empresa: Imobiliária
-Nome: Parceiro
-Cidade: Litoral
-E-mail: contato@empresa.com
-WhatsApp: 
-Piloto: 14 dias sem custo
-Objetivo: captação + follow-up automático + relatório semanal
