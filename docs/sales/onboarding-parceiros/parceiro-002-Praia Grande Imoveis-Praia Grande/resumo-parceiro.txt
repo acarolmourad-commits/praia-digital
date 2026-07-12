@@ -1,5 +1,5 @@
 Empresa: Praia Grande Imoveis
-Nome: Contato 2
+Contato: Contato 2
 Cidade: Praia Grande
 E-mail: contato2@example.com
 WhatsApp: (13) 99999-0002

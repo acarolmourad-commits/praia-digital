@@ -1,12 +1,21 @@
 
-import csv, datetime, os
+import csv, shutil
 from pathlib import Path
 
 BASE = Path('C:/Users/Carolina/praia-digital')
 OUT = BASE / 'docs' / 'sales' / 'onboarding-parceiros'
+CSV = BASE / 'docs' / 'sales' / 'leads-litoral-enriquecido-realista.csv'
+
+# Limpa pasta antes de regenerar
+if OUT.exists():
+    shutil.rmtree(OUT)
 OUT.mkdir(parents=True, exist_ok=True)
 
-template_email = """Olá, {nome}!
+if not CSV.exists():
+    print('Base realista não encontrada.')
+    raise SystemExit(0)
+
+template_email = """Olá, {nome_contato}!
 
 Obrigado pela parceria. Abaixo está o pacote do piloto sem custo por 14 dias:
 
@@ -20,9 +29,9 @@ Próximo passo: responder este e-mail com melhor horário para uma demonstraçã
 Contato: comercial@praia.digital | WhatsApp: (11) 95434-6288
 """
 
-template_whatsapp = """Olá, {nome}! Tudo bem?
+template_whatsapp = """Olá, {nome_contato}! Tudo bem?
 
-Sou da Praia Digital e preparei o pacote de piloto sem custo para {empresa}:
+Sou da Praia Digital e preparei o pacote de piloto sem custo para {nome_imobiliaria}:
 
 - Diagnóstico gratuito do funil
 - Ferramentas de IA sem taxa de setup
@@ -31,62 +40,45 @@ Sou da Praia Digital e preparei o pacote de piloto sem custo para {empresa}:
 Quer seguir com o diagnóstico esta semana?
 """
 
-
-def slug(s):
-    return "".join(c if c.isalnum() or c == "-" else "" for c in s).strip()
-
-
-def build_package(row, idx):
-    nome = row.get('nome_contato') or row.get('NOME_CONTATO') or 'Parceiro'
-    empresa = row.get('nome_imobiliaria') or row.get('NOME_IMOBILIARIA') or 'Imobiliária'
-    cidade = row.get('cidade') or row.get('CIDADE') or 'Litoral'
-    email = row.get('email') or row.get('EMAIL') or 'contato@empresa.com'
-    whatsapp = row.get('whatsapp') or row.get('WHATSAPP') or ''
-
-    pasta = OUT / f"parceiro-{idx:03d}-{slug(empresa)}-{slug(cidade)}"
-    pasta.mkdir(parents=True, exist_ok=True)
-
-    (pasta / 'email-boas-vindas.txt').write_text(
-        template_email.format(nome=nome, empresa=empresa, cidade=cidade, email=email),
-        encoding='utf-8'
-    )
-    (pasta / 'whatsapp-boas-vindas.txt').write_text(
-        template_whatsapp.format(nome=nome, empresa=empresa, cidade=cidade, whatsapp=whatsapp),
-        encoding='utf-8'
-    )
-    summary = f"""Empresa: {empresa}
-Nome: {nome}
+summary_template = """Empresa: {nome_imobiliaria}
+Contato: {nome_contato}
 Cidade: {cidade}
 E-mail: {email}
 WhatsApp: {whatsapp}
 Piloto: 14 dias sem custo
 Objetivo: captação + follow-up automático + relatório semanal
 """
-    (pasta / 'resumo-parceiro.txt').write_text(summary, encoding='utf-8')
-    return pasta
 
+with CSV.open('r', encoding='utf-8') as f:
+    reader = csv.DictReader(f, delimiter=';')
+    empresas = set()
+    count = 0
+    for idx, row in enumerate(reader, start=1):
+        nome_imobiliaria = row.get('nome_imobiliaria') or ''
+        nome_contato = row.get('nome_contato') or ''
+        cidade = row.get('cidade') or ''
+        email = row.get('email') or ''
+        whatsapp = row.get('whatsapp') or ''
+        key = f"{nome_imobiliaria}-{cidade}".lower()
+        if key in empresas:
+            continue
+        empresas.add(key)
+        count += 1
+        pasta = OUT / f"parceiro-{count:03d}-{nome_imobiliaria}-{cidade}"
+        pasta.mkdir(parents=True, exist_ok=True)
+        (pasta / 'email-boas-vindas.txt').write_text(
+            template_email.format(nome_contato=nome_contato, nome_imobiliaria=nome_imobiliaria, cidade=cidade, email=email),
+            encoding='utf-8'
+        )
+        (pasta / 'whatsapp-boas-vindas.txt').write_text(
+            template_whatsapp.format(nome_contato=nome_contato, nome_imobiliaria=nome_imobiliaria, cidade=cidade, whatsapp=whatsapp),
+            encoding='utf-8'
+        )
+        (pasta / 'resumo-parceiro.txt').write_text(
+            summary_template.format(nome_imobiliaria=nome_imobiliaria, nome_contato=nome_contato, cidade=cidade, email=email, whatsapp=whatsapp),
+            encoding='utf-8'
+        )
+        if count >= 5:
+            break
 
-def main():
-    csv_path = BASE / 'docs' / 'sales' / 'leads-litoral-enriquecido-realista.csv'
-    created = []
-    if not csv_path.exists():
-        print('Base realista não encontrada.')
-        raise SystemExit(0)
-    with csv_path.open('r', encoding='utf-8') as f:
-        reader = csv.DictReader(f, delimiter=';')
-        for idx, row in enumerate(reader, start=1):
-            if idx > 5:
-                break
-            build_package(row, idx)
-            empresa = row.get('nome_imobiliaria') or row.get('NOME_IMOBILIARIA') or ''
-            cidade = row.get('cidade') or row.get('CIDADE') or ''
-            created.append(f"{empresa} ({cidade})")
-
-    print(f"Pacotes criados: {len(created)}")
-    for c in created:
-        print(f"- {c}")
-    print(f"Saída: {OUT}")
-
-
-if __name__ == '__main__':
-    main()
+print(f'Onboarding gerado para {count} parceiros únicos em {OUT}')
