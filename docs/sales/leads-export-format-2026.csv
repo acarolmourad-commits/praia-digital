@@ -1,0 +1,6 @@
+nome,email,empresa,cidade,estado,telefone,origem,status,followup_3d,followup_7d,followup_15d,observacoes
+Lead Convertido 1,lead1@example.com,Imobiliaria Norte,Santos,SP,(11) 99999-0001,quiz,novo,,,,
+Lead Convertido 2,lead2@example.com,Prime Imoveis,Guaruja,SP,(11) 99999-0002,quiz,novo,,,,
+Lead Convertido 3,lead3@example.com,Alpha Imoveis,Ilhabela,SP,(11) 99999-0003,quiz,novo,,,,
+Lead Convertido 4,lead4@example.com,Porto Lua Prime,Ubatuba,SP,(11) 99999-0004,quiz,novo,,,,
+Lead Convertido 5,lead5@example.com,Costa Verde,Peruibe,SP,(11) 99999-0005,quiz,novo,,,,
