@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Follow-up Lote 42 - Praia Digital</title>
+<style>
+body { font-family: Arial, sans-serif; padding: 20px; }
+.lead { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 6px; }
+.status { font-weight: bold; }
+</style>
+</head>
+<body>
+<h1>Follow-up Lote 42</h1>
+<p>Acompanhe respostas por lead.</p>
+<div id="leads"></div>
+<script>
+const leads = [
+  { nome: "Maré Alta Imóveis", cidade: "Guarujá", email: "comercial@marealtaimoveis.com.br", followup1: "Ferramentas gratuitas para aumentar leads no litoral", followup2: "Case de sucesso no Guarujá", followup3: "Última chance: case de sucesso + ferramentas" },
+  { nome: "Costa Azul Negócios Imobiliários", cidade: "Ubatuba", email: "atendimento@costaazulimoveis.com.br", followup1: "SEO local + leads prontos para Ubatuba", followup2: "Modelo de assinatura profissional para corretores", followup3: "Último convite: plano profissional gratuito" },
+  { nome: "Porto Seguro Imóveis", cidade: "Ilhabela", email: "contato@portoseguroimoveis.com.br", followup1: "Automação para imobiliárias no litoral norte", followup2: "IA + follow-up automático = mais vendas", followup3: "Última chance: IA + follow-up para Ilhabela" },
+  { nome: "Recanto das Praias", cidade: "Peruíbe", email: "comercial@recantodaspraias.com.br", followup1: "Cases de sucesso + ferramentas gratuitas", followup2: "Peruíbe: temporada + leads qualificados", followup3: "Último convite: leads qualificados para temporada" },
+  { nome: "Vento Sul Imóveis", cidade: "Santos", email: "contato@ventosulimoveis.com.br", followup1: "Indicação + captação orgânica sem custo", followup2: "Onboarding gratuito para parceiros", followup3: "Última chance: onboarding gratuito para parceiros" }
+];
+const container = document.getElementById('leads');
+leads.forEach((lead, index) => {
+  const div = document.createElement('div');
+  div.className = 'lead';
+  div.innerHTML = `
+    <h3>${lead.nome} - ${lead.cidade}</h3>
+    <p>Lead: ${lead.email}</p>
+    <p>Follow-up 3d (17/07): ${lead.followup1}</p>
+    <p>Follow-up 7d (21/07): ${lead.followup2}</p>
+    <p>Follow-up 15d (29/07): ${lead.followup3}</p>
+    <button onclick="window.open('mailto:${lead.email}?subject=${encodeURIComponent(lead.followup1)}&body=${encodeURIComponent('Olá, seguindo nosso contato. Quer testar nossas ferramentas gratuitas? https://praia.digital')}', '_blank')">Enviar follow-up 3d</button>
+  `;
+  container.appendChild(div);
+});
+</script>
+</body>
+</html>
