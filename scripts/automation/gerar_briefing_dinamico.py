@@ -1,0 +1,107 @@
+
+from pathlib import Path
+from datetime import datetime
+
+BASE = Path('C:/Users/Carolina/praia-digital')
+OUT = BASE / 'docs' / 'sales' / 'briefing-matinal-comercial-praia-digital.html'
+
+def safe_num_from_csv(path):
+    if not path.exists():
+        return 0
+    try:
+        with path.open('r', encoding='utf-8') as f:
+            return max(0, sum(1 for _ in f) - 1)
+    except Exception:
+        return 0
+
+def count_dir(path):
+    if not path.exists():
+        return 0
+    return len([p for p in path.iterdir() if p.is_file()])
+
+tracker = BASE / 'docs' / 'sales' / 'followup-registro.md'
+capturados = BASE / 'docs' / 'sales' / 'parcerias-leads-capturados.csv'
+followup_pendentes = BASE / 'outreach' / 'followups-pendentes'
+priorizados = BASE / 'docs' / 'sales' / 'leads-priorizados-2026-07-12.csv'
+
+hoje = datetime.now().strftime('%Y-%m-%d')
+leads_capturados = safe_num_from_csv(capturados)
+followups_pendentes_count = count_dir(followup_pendentes)
+priorizados_count = safe_num_from_csv(priorizados)
+
+# Simple tracker parsing: count follow-ups scheduled for today or pending
+hoje_pendentes = 0
+if tracker.exists():
+    txt = tracker.read_text(encoding='utf-8')
+    hoje_pendentes = txt.count(hoje) + txt.lower().count('pendente_envio')
+
+html = f"""<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Briefing Matinal Comercial - Praia Digital</title>
+<style>
+  body{{font-family:Arial,Helvetica,sans-serif;background:#f4f6f8;color:#333;margin:0;padding:24px}}
+  .card{{background:#fff;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.08);padding:20px;margin-bottom:18px}}
+  h1{{color:#0f172a;margin-bottom:6px}}
+  h2{{color:#0f172a;margin:0 0 10px}}
+  .meta{{color:#64748b;font-size:13px;margin-bottom:12px}}
+  .kpi{{display:flex;gap:14px;flex-wrap:wrap}}
+  .kpi .box{{background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px;padding:16px;min-width:120px;flex:1}}
+  .kpi .label{{font-size:12px;color:#64748b;text-transform:uppercase;letter-spacing:0.08em}}
+  .kpi .value{{font-size:28px;font-weight:700;color:#0f172a;margin-top:6px}}
+  table{{width:100%;border-collapse:collapse;margin-top:8px}}
+  th,td{{text-align:left;padding:10px 8px;border-bottom:1px solid #e5e7eb;font-size:14px}}
+  th{{color:#475569;font-size:12px;text-transform:uppercase;letter-spacing:0.06em}}
+  .tag{{display:inline-block;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:600}}
+  .tag.alta{{background:#dcfce7;color:#14532d}}
+  .tag.media{{background:#fef9c3;color:#713f12}}
+  .tag.baixa{{background:#f1f5f9;color:#334155}}
+  .actions{{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}}
+  .btn{{text-decoration:none;padding:10px 14px;border-radius:10px;background:#0f172a;color:#fff;font-size:13px}}
+  .btn.secondary{{background:#e2e8f0;color:#0f172a}}
+  .footer{{text-align:center;margin-top:22px;color:#64748b;font-size:12px}}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Briefing Matinal</h1>
+  <div class="meta">Praia Digital · Comercial & Parcerias · {hoje}</div>
+  <div class="kpi">
+    <div class="box"><div class="label">Leads capturados</div><div class="value">{leads_capturados}</div></div>
+    <div class="box"><div class="label">Follow-ups hoje</div><div class="value">{max(0, hoje_pendentes)}</div></div>
+    <div class="box"><div class="label">Priorizados</div><div class="value">{priorizados_count}</div></div>
+    <div class="box"><div class="label">Follow-ups pendentes</div><div class="value">{followups_pendentes_count}</div></div>
+    <div class="box"><div class="label">Ação</div><div class="value">Enviar</div></div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Atalhos do dia</h2>
+  <div class="actions">
+    <a class="btn" href="docs/sales/executar-backup-incremental-comercial.bat">Backup obrigatório</a>
+    <a class="btn secondary" href="docs/sales/csv-lotes-email/lote-brevo-50-realistas-2026-07-12.csv">CSV Brevo</a>
+    <a class="btn secondary" href="outreach/whatsapp-50-mensagens-prontas.html">WhatsApp</a>
+    <a class="btn secondary" href="docs/sales/tracking-envios-lote-50-2026-07-12.csv">Tracking</a>
+    <a class="btn secondary" href="outreach/followups-pendentes">Follow-ups pendentes</a>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Ponto único de comando</h2>
+  <div class="actions">
+    <a class="btn secondary" href="central-comando-praia-digital.html">Abrir central de comando</a>
+  </div>
+</div>
+
+<div class="footer">
+  Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">https://acarolmourad-commits.github.io/praia-digital/</a> | Ferramentas: <a href="https://praia.digital">https://praia.digital</a>
+</div>
+</body>
+</html>
+"""
+
+OUT.write_text(html, encoding='utf-8')
+print(f"Briefing atualizado para {hoje}")
+print(f"leads_capturados={leads_capturados}, followups_pendentes={followups_pendentes_count}, priorizados={priorizados_count}, hoje_pendentes={hoje_pendentes}")
