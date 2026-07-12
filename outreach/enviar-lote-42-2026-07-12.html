@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enviar Lote 42 - Praia Digital</title>
+<style>
+body { font-family: Arial, sans-serif; padding: 20px; }
+.lead { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 6px; }
+button { margin-top: 5px; }
+</style>
+</head>
+<body>
+<h1>Enviar Lote 42 - Praia Digital</h1>
+<p>Clique em "Abrir e-mail" para enviar a mensagem manualmente.</p>
+<div id="leads"></div>
+<script>
+const leads = [
+  { nome: "Maré Alta Imóveis", cidade: "Guarujá", email: "comercial@marealtaimoveis.com.br", assunto: "Parceria sem custo para aumentar leads no litoral" },
+  { nome: "Costa Azul Negócios Imobiliários", cidade: "Ubatuba", email: "atendimento@costaazulimoveis.com.br", assunto: "Parceria sem custo para aumentar leads no litoral" },
+  { nome: "Porto Seguro Imóveis", cidade: "Ilhabela", email: "contato@portoseguroimoveis.com.br", assunto: "Parceria sem custo para aumentar leads no litoral" },
+  { nome: "Recanto das Praias", cidade: "Peruíbe", email: "comercial@recantodaspraias.com.br", assunto: "Parceria sem custo para aumentar leads no litoral" },
+  { nome: "Vento Sul Imóveis", cidade: "Santos", email: "contato@ventosulimoveis.com.br", assunto: "Parceria sem custo para aumentar leads no litoral" }
+];
+const container = document.getElementById('leads');
+leads.forEach((lead, index) => {
+  const div = document.createElement('div');
+  div.className = 'lead';
+  div.innerHTML = `
+    <h3>${lead.nome} - ${lead.cidade}</h3>
+    <p>${lead.email}</p>
+    <button onclick="window.open('mailto:${lead.email}?subject=${encodeURIComponent(lead.assunto)}&body=${encodeURIComponent('Olá, meu nome é Carolina Moura, CEO da Praia Digital. Somos uma proptech especializada no litoral paulista e quero propor uma parceria sem custo inicial. Acesse nossas ferramentas em https://praia.digital e nosso site em https://acarolmourad-commits.github.io/praia-digital/. Agende uma call: (11) 95434-6288.')}', '_blank')">Abrir e-mail</button>
+  `;
+  container.appendChild(div);
+});
+</script>
+</body>
+</html>
