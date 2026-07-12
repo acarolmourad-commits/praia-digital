@@ -1,0 +1,5 @@
+data,lead,email,cidade,subject,status,lote,observacoes
+2026-07-12T05:45:05.324734,Lead 35-1,lead351@example.com,Cananéia,Ferramentas gratuitas e parceria para imobiliária em Cananéia,simulado (dry-run),35,Simulacao automatica
+2026-07-12T05:45:05.324734,Lead 35-2,lead352@example.com,São Sebastião,Ferramentas gratuitas e parceria para imobiliária em São Sebastião,simulado (dry-run),35,Simulacao automatica
+2026-07-12T05:45:05.568701,Lead 36-1,lead361@example.com,Caraguatatuba,Ferramentas gratuitas e parceria para imobiliária em Caraguatatuba,simulado (dry-run),36,Simulacao automatica
+2026-07-12T05:45:05.568701,Lead 36-2,lead362@example.com,Guarujá,Ferramentas gratuitas e parceria para imobiliária em Guarujá,simulado (dry-run),36,Simulacao automatica
