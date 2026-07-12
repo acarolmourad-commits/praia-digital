@@ -1,114 +1,92 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+
+import csv, datetime, os
+from pathlib import Path
+
+BASE = Path('C:/Users/Carolina/praia-digital')
+OUT = BASE / 'docs' / 'sales' / 'onboarding-parceiros'
+OUT.mkdir(parents=True, exist_ok=True)
+
+template_email = """Olá, {nome}!
+
+Obrigado pela parceria. Abaixo está o pacote do piloto sem custo por 14 dias:
+
+1. Diagnóstico do funil: captação, atendimento e fechamento
+2. Ferramentas gratuitas: https://praia.digital
+3. Follow-up automático e tracking de leads
+4. Relatório semanal de resultado
+
+Próximo passo: responder este e-mail com melhor horário para uma demonstração de 15min.
+
+Contato: comercial@praia.digital | WhatsApp: (11) 95434-6288
 """
-Gerador de onboarding personalizado para novos parceiros.
-Entrada: docs/sales/leads-litoral-enriquecido.csv
-Saída: docs/materiais/onboarding-parceiro-<id>.html
+
+template_whatsapp = """Olá, {nome}! Tudo bem?
+
+Sou da Praia Digital e preparei o pacote de piloto sem custo para {empresa}:
+
+- Diagnóstico gratuito do funil
+- Ferramentas de IA sem taxa de setup
+- Follow-up automático e relatório semanal
+
+Quer seguir com o diagnóstico esta semana?
 """
-import os, csv
-from datetime import datetime
-
-BASE = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-LEADS_CSV = os.path.join(BASE, "docs", "sales", "leads-litoral-enriquecido.csv")
-OUT_DIR = os.path.join(BASE, "docs", "materiais")
-os.makedirs(OUT_DIR, exist_ok=True)
-
-FIRST_WEEK = [
-    "Dia 1: Apresentação da equipe e alinhamento de metas.",
-    "Dia 2: Tour pelo painel e ferramentas gratuitas em https://praia.digital.",
-    "Dia 3: Configuração do primeiro anúncio com copy única.",
-    "Dia 4: Revisão do funil de atendimento e follow-up.",
-    "Dia 5: Primeira medição de resultados: respostas e agendamentos.",
-    "Dia 6: Ajustes no script de atendimento e automações.",
-    "Dia 7: Revisão semanal e definição de próximos passos."
-]
 
 
-def build_onboarding(lead):
-    lead_id = (lead.get("id") or "000").strip()
-    nome = lead.get("pessoa_de_contato") or "Novo parceiro"
-    imob = lead.get("nome_da_imobiliaria") or "Imobiliária parceira"
-    cidade = lead.get("cidade") or "Litoral"
-    perfil = lead.get("perfil") or "imobiliaria"
-    dor = lead.get("dor_principal") or "aumentar resultados"
-    objetivo = lead.get("objetivo_90_dias") or "crescer no litoral"
+def slug(s):
+    return "".join(c if c.isalnum() or c == "-" else "" for c in s).strip()
 
-    week_items = "\n".join([f"<li><strong>{d}</strong></li>" for d in FIRST_WEEK])
-    filename = f"onboarding-parceiro-{lead_id}.html"
-    path = os.path.join(OUT_DIR, filename)
-    html = f"""<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Onboarding — {imob} | Praia Digital</title>
-<style>
-  body {{ font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 20px; }}
-  .card {{ max-width: 760px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 4px 24px rgba(0,0,0,.05); }}
-  .header {{ background: #0d47a1; color: #fff; padding: 18px; border-radius: 12px; margin-bottom: 20px; }}
-  .header h1 {{ margin: 0 0 6px; font-size: 20px; }}
-  ul {{ line-height: 1.8; padding-left: 18px; }}
-  .cta {{ display: inline-block; background: #f57c00; color: #fff; padding: 10px 14px; border-radius: 8px; margin-top: 14px; font-weight: bold; text-decoration: none; }}
-  .footer {{ text-align: center; margin-top: 20px; font-size: 12px; color: #617d8b; }}
-  a {{ color: #0d47a1; text-decoration: none; }}
-</style>
-</head>
-<body>
-  <div class="card">
-    <div class="header">
-      <h1>Bem-vindo à Praia Digital, {nome}!</h1>
-      <div style="font-size:13px;opacity:.9;">Onboarding oficial — {imob} ({cidade})</div>
-    </div>
-    <p>A partir de agora vamos trabalhar juntos para resolver <strong>{dor}</strong> e alcançar <strong>{objetivo}</strong>.</p>
-    <p>Este onboarding cobre a primeira semana do parceiro.</p>
-    <p><strong>Perfil:</strong> {perfil}</p>
-    <h2>Primeira semana</h2>
-    <ul>
-      {week_items}
-    </ul>
-    <p>Acesse já:</p>
-    <a class="cta" href="https://acarolmourad-commits.github.io/praia-digital/">Visitar site</a>
-    <a class="cta" href="https://praia.digital">Ferramentas gratuitas</a>
-    <div class="footer">
-      Praia Digital • Proptech Litoral • {datetime.now().strftime('%d/%m/%Y')}
-    </div>
-  </div>
-</body>
-</html>"""
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(html)
-    return path
+
+def build_package(row, idx):
+    nome = row.get('nome_contato') or row.get('NOME_CONTATO') or 'Parceiro'
+    empresa = row.get('nome_imobiliaria') or row.get('NOME_IMOBILIARIA') or 'Imobiliária'
+    cidade = row.get('cidade') or row.get('CIDADE') or 'Litoral'
+    email = row.get('email') or row.get('EMAIL') or 'contato@empresa.com'
+    whatsapp = row.get('whatsapp') or row.get('WHATSAPP') or ''
+
+    pasta = OUT / f"parceiro-{idx:03d}-{slug(empresa)}-{slug(cidade)}"
+    pasta.mkdir(parents=True, exist_ok=True)
+
+    (pasta / 'email-boas-vindas.txt').write_text(
+        template_email.format(nome=nome, empresa=empresa, cidade=cidade, email=email),
+        encoding='utf-8'
+    )
+    (pasta / 'whatsapp-boas-vindas.txt').write_text(
+        template_whatsapp.format(nome=nome, empresa=empresa, cidade=cidade, whatsapp=whatsapp),
+        encoding='utf-8'
+    )
+    summary = f"""Empresa: {empresa}
+Nome: {nome}
+Cidade: {cidade}
+E-mail: {email}
+WhatsApp: {whatsapp}
+Piloto: 14 dias sem custo
+Objetivo: captação + follow-up automático + relatório semanal
+"""
+    (pasta / 'resumo-parceiro.txt').write_text(summary, encoding='utf-8')
+    return pasta
 
 
 def main():
-    if not os.path.exists(LEADS_CSV):
-        print(f"Arquivo não encontrado: {LEADS_CSV}")
-        print("Gerando onboarding de exemplo...")
-        exemplo = {
-            "id": "exemplo-001",
-            "pessoa_de_contato": "Carlos Mendes",
-            "nome_da_imobiliaria": "Imobiliária Litoral Digital",
-            "cidade": "Santos",
-            "perfil": "imobiliaria",
-            "dor_principal": "aumentar captação",
-            "objetivo_90_dias": "crescimento de 30% em vendas"
-        }
-        p = build_onboarding(exemplo)
-        print(f"Onboarding de exemplo gerado: {p}")
-        return
-    rows = []
-    with open(LEADS_CSV, "r", encoding="utf-8") as f:
-        reader = csv.DictReader(f, delimiter=",")
-        for r in reader:
-            rows.append(r)
+    csv_path = BASE / 'docs' / 'sales' / 'leads-litoral-enriquecido-realista.csv'
     created = []
-    for r in rows:
-        p = build_onboarding(r)
-        created.append(p)
-    print(f"Gerados {len(created)} onboardings em {OUT_DIR}")
-    for p in created[:5]:
-        print(f"- {p}")
+    if not csv_path.exists():
+        print('Base realista não encontrada.')
+        raise SystemExit(0)
+    with csv_path.open('r', encoding='utf-8') as f:
+        reader = csv.DictReader(f, delimiter=';')
+        for idx, row in enumerate(reader, start=1):
+            if idx > 5:
+                break
+            build_package(row, idx)
+            empresa = row.get('nome_imobiliaria') or row.get('NOME_IMOBILIARIA') or ''
+            cidade = row.get('cidade') or row.get('CIDADE') or ''
+            created.append(f"{empresa} ({cidade})")
+
+    print(f"Pacotes criados: {len(created)}")
+    for c in created:
+        print(f"- {c}")
+    print(f"Saída: {OUT}")
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

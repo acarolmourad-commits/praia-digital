@@ -1,0 +1,7 @@
+Empresa: Itanhaem Imoveis
+Nome: Contato 5
+Cidade: Itanhaem
+E-mail: contato5@example.com
+WhatsApp: (13) 99999-0005
+Piloto: 14 dias sem custo
+Objetivo: captação + follow-up automático + relatório semanal

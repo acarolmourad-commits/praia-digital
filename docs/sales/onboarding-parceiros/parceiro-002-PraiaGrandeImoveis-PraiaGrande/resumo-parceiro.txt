@@ -1,0 +1,7 @@
+Empresa: Praia Grande Imoveis
+Nome: Contato 2
+Cidade: Praia Grande
+E-mail: contato2@example.com
+WhatsApp: (13) 99999-0002
+Piloto: 14 dias sem custo
+Objetivo: captação + follow-up automático + relatório semanal
