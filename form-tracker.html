@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Tracker — Praia Digital</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#f8fafc;color:#1f2937;line-height:1.6;padding:2rem}
+.container{max-width:1100px;margin:0 auto}
+header{text-align:center;padding:2rem;background:#fff;border:1px solid #e5e7eb;border-radius:20px;box-shadow:0 4px 20px rgba(0,0,0,.05);margin-bottom:2rem}
+h1{font-size:1.8rem;margin-bottom:.5rem}
+.lead{color:#374151;font-size:1.05rem;margin-top:.5rem}
+.card{background:#fff;padding:1.5rem;border-radius:16px;border:1px solid #e5e7eb;margin:1.5rem 0;box-shadow:0 8px 24px rgba(0,0,0,.04)}
+.card h2{font-size:1.2rem;margin-bottom:.75rem}
+.upload{display:inline-block;margin-top:1rem;padding:.75rem 1.25rem;background:#111827;color:#fff;border-radius:12px;font-weight:700;cursor:pointer}
+input[type="file"]{display:none}
+table{width:100%;border-collapse:collapse;margin-top:1rem;font-size:.95rem}
+th,td{text-align:left;padding:.6rem;border-bottom:1px solid #e5e7eb}
+th{background:#f9fafb;font-weight:600}
+.tag{display:inline-block;padding:.2rem .6rem;border-radius:50px;font-size:.75rem;font-weight:700}
+.tag-parceria{background:#dbeafe;color:#1e40af}
+.tag-checklist{background:#d1fae5;color:#065f46}
+.small{font-size:.85rem;color:#6b7280;margin-top:.5rem}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>Form Tracker</h1>
+<p class="lead">Acompanhe submissions de parceria e checklist aqui.</p>
+</header>
+
+<div class="card">
+<h2>📥 Importar CSV do Formspree</h2>
+<p>Exporte o CSV do Formspree e importe aqui para visualizar os leads.</p>
+<label class="upload">
+Escolher CSV
+<input type="file" id="csvFile" accept=".csv">
+</label>
+<p class="small">Arquivo esperado: docs/sales/form-tracker-2026-07-12.csv</p>
+</div>
+
+<div class="card">
+<h2>📊 Submissions recentes</h2>
+<div id="table-wrap">
+<table>
+<thead>
+<tr><th>Origem</th><th>Nome</th><th>E-mail</th><th>WhatsApp</th><th>Cidade</th><th>Status</th></tr>
+</thead>
+<tbody id="submissions">
+<tr><td colspan="6" style="color:#6b7280">Nenhuma submission ainda.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<script>
+const fileInput = document.getElementById('csvFile');
+const tbody = document.getElementById('submissions');
+const tableWrap = document.getElementById('table-wrap');
+
+fileInput.addEventListener('change', (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = (ev) => {
+    const text = ev.target.result;
+    const rows = text.split('\n').filter(r => r.trim());
+    tbody.innerHTML = '';
+    rows.slice(1).forEach(row => {
+      const cols = row.split(',');
+      if (cols.length < 6) return;
+      const origem = cols[0] || '—';
+      const nome = cols[1] || '—';
+      const email = cols[2] || '—';
+      const whatsapp = cols[3] || '—';
+      const cidade = cols[4] || '—';
+      const status = cols[5] || '—';
+      const tr = document.createElement('tr');
+      tr.innerHTML = `<td><span class="tag ${origem === 'parceria' ? 'tag-parceria' : 'tag-checklist'}">${origem}</span></td><td>${nome}</td><td>${email}</td><td>${whatsapp}</td><td>${cidade}</td><td>${status}</td>`;
+      tbody.appendChild(tr);
+    });
+  };
+  reader.readAsText(file);
+});
+</script>
+</body>
+</html>
