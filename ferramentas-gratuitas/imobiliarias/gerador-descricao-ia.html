@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gerador de descrição de imóvel com IA — ferramenta gratuita | Praia Digital</title>
+  <meta name="description" content="Gerador de descrição de imóvel com IA gratuito para corretores e imobiliárias no litoral paulista.">
+  <link rel="canonical" href="https://acarolmourad-commits.github.io/praia-digital/ferramentas-gratuitas/imobiliarias/gerador-descricao-ia.html">
+  <style>
+    :root{bg:#f8fafc;text:#0f172a;border:#e5e7eb;primary:#2563eb;secondary:#0ea5e9}
+    body{font:14px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);padding:18px}
+    .wrap{max-width:880px;margin:0 auto}
+    a{color:var(--primary)}
+    label{display:block;margin:10px 0 4px}
+    input,select,textarea{width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:12px;background:#fff;color:#0f172a}
+    button{background:var(--primary);color:white;border:none;padding:12px 14px;border-radius:14px;margin-top:12px;cursor:pointer;font-weight:800}
+    .result{background:#f1f5f9;border:1px solid #e5e7eb;border-radius:12px;padding:14px;margin-top:12px;display:none}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Gerador de descrição de imóvel com IA</h1>
+    <p>Preencha os dados e gere uma descrição objetiva.</p>
+    <form onsubmit="event.preventDefault();const t=document.getElementById('tipo').value;const c=document.getElementById('cidade').value;const p=parseInt(document.getElementById('preco').value)||0;const a=parseInt(document.getElementById('area').value)||0;const q=parseInt(document.getElementById('quartos').value)||0;const r=document.querySelector('.result');r.style.display='block';r.textContent=t+' em '+c+', '+q+' quartos, '+a+' m². Valor: R$ '+p.toLocaleString('pt-BR')+'. Descrição pronta para WhatsApp, e-mail e anúncio.';">
+      <label>Tipo</label>
+      <select id="tipo">
+        <option>Apartamento</option><option>Casa</option><option>Cobertura</option><option>Studio</option><option>Sobrado</option>
+      </select>
+      <label>Cidade</label>
+      <select id="cidade">
+        <option>Praia Grande</option><option>Caraguatatuba</option><option>Ilhabela</option><option>Ubatuba</option><option>São Sebastião</option><option>Bertioga</option><option>Maresias</option><option>Guarujá</option><option>Iguape</option><option>Cananéia</option>
+      </select>
+      <label>Valor</label>
+      <input id="preco" type="number" placeholder="Ex: 720000">
+      <label>Área útil</label>
+      <input id="area" type="number" placeholder="Ex: 98">
+      <label>Quartos</label>
+      <input id="quartos" type="number" placeholder="Ex: 3">
+      <button type="submit">Gerar descrição</button>
+    </form>
+    <div class="result"></div>
+    <p><a href="/praia-digital/blog/reels-imoveis-litoral-paulista-2026.html">Ideias de reels</a></p>
+  </div>
+</body>
+</html>
