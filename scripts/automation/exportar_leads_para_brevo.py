@@ -9,25 +9,29 @@ rows = []
 with open(SRC, encoding='utf-8') as f:
     reader = csv.DictReader(f)
     for row in reader:
-        nome = (row.get('nome') or '').strip()
+        nome = (row.get('pessoa_de_contato') or '').strip() or (row.get('nome') or '').strip()
         email = (row.get('email') or '').strip()
-        telefone = (row.get('telefone') or '').strip()
-        cidade = (row.get('cidade') or '').strip()
-        origem = (row.get('origem') or row.get('source') or '').strip()
-        status = (row.get('status') or row.get('stage') or '').strip()
+        telefone = (row.get('whatsapp') or row.get('telefone') or '').strip()
+        cidade = (row.get('cidade') or '').strip().title()
+        estado = (row.get('estado') or row.get('state') or '').strip().upper() or 'SP'
+        imobiliaria = (row.get('nome_da_imobiliaria') or '').title()
+        origem = (row.get('fonte') or 'outreach').strip()
+        status = (row.get('status') or 'novo').strip()
         if email:
             rows.append({
                 'NOME': nome or 'Contato',
                 'EMAIL': email,
                 'TELEFONE': telefone,
                 'CIDADE': cidade,
-                'ORIGEM': origem or 'outreach',
-                'STATUS': status or 'novo',
+                'ESTADO': estado,
+                'IMOBILIARIA': imobiliaria,
+                'ORIGEM': origem,
+                'STATUS': status,
                 'LISTA': 'Leads Litoral SP'
             })
 
 with open(OUT, 'w', encoding='utf-8', newline='') as f:
-    writer = csv.DictWriter(f, fieldnames=['NOME','EMAIL','TELEFONE','CIDADE','ORIGEM','STATUS','LISTA'])
+    writer = csv.DictWriter(f, fieldnames=['NOME','EMAIL','TELEFONE','CIDADE','ESTADO','IMOBILIARIA','ORIGEM','STATUS','LISTA'])
     writer.writeheader()
     writer.writerows(rows)
 
