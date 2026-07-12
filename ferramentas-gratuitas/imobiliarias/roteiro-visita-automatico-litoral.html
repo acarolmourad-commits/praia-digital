@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roteiro de visita automático para leads do litoral paulista | Praia Digital</title>
+  <meta name="description" content="Gere um roteiro de visita automático para leads do litoral paulista e reduza no-show.">
+  <link rel="canonical" href="https://acarolmourad-commits.github.io/praia-digital/ferramentas-gratuitas/imobiliarias/roteiro-visita-automatico-litoral.html">
+  <style>
+    :root{bg:#f8fafc;text:#0f172a;border:#e5e7eb;primary:#2563eb;secondary:#0ea5e9}
+    body{font:14px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);padding:18px}
+    .wrap{max-width:880px;margin:0 auto}
+    a{color:var(--primary)}
+    label{display:block;margin:10px 0 4px}
+    input,select,textarea{width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:12px;background:#fff;color:#0f172a}
+    button{background:var(--primary);color:white;border:none;padding:12px 14px;border-radius:14px;margin-top:12px;cursor:pointer;font-weight:800}
+    .result{background:#f1f5f9;border:1px solid #e5e7eb;border-radius:12px;padding:14px;margin-top:12px;display:none}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Roteiro de visita automático</h1>
+    <p>Monte um roteiro simples para reduzir no-show.</p>
+    <form onsubmit="event.preventDefault();const c=document.getElementById('c').value||'';const i=document.getElementById('i').value||'';const d=document.getElementById('d').value||'';const r=document.querySelector('.result');r.style.display='block';r.textContent='Roteiro: 1) Confirmação imediata em '+c+'. 2) Lembrete 24h antes. 3) Roteiro: '+i+'. 4) Reagendamento automático se necessário. Data-alvo: '+d+'.';">
+      <label>Cidade</label>
+      <select id="c"><option>Praia Grande</option><option>Caraguatatuba</option><option>Ilhabela</option><option>Ubatuba</option><option>São Sebastião</option><option>Bertioga</option><option>Maresias</option><option>Guarujá</option><option>Iguape</option><option>Cananéia</option></select>
+      <label>Imóvel ou endereço</label>
+      <input id="i" placeholder="Ex: Apartamento beira-mar, Av. Beira Mar, 100">
+      <label>Data pretendida</label>
+      <input id="d" type="date">
+      <button type="submit">Gerar roteiro</button>
+    </form>
+    <div class="result"></div>
+  </div>
+</body>
+</html>
