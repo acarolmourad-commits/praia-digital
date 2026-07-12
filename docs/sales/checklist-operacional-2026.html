@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checklist Operacional - Praia Digital</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
+      color: #fff;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container { max-width: 1000px; margin: 0 auto; }
+    
+    .header {
+      background: linear-gradient(135deg, #7b2ff7, #00d4ff);
+      padding: 2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    .header p { opacity: 0.95; font-size: 1rem; }
+    
+    .progress-bar {
+      background: rgba(255,255,255,0.1);
+      border-radius: 999px;
+      height: 12px;
+      margin: 1.5rem 0;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      width: 0%;
+      transition: width 0.4s ease;
+      border-radius: 999px;
+    }
+    .progress-text {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-bottom: 2rem;
+    }
+    
+    .section {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(10px);
+    }
+    .section-title {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    
+    .checklist { list-style: none; padding: 0; }
+    .checklist li {
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      color: #e0e0e0;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    .checklist li:last-child { border-bottom: none; }
+    .checklist li:hover { background: rgba(255,255,255,0.03); padding-left: 0.5rem; }
+    
+    .checkbox {
+      width: 28px;
+      height: 28px;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: all 0.2s;
+      font-size: 1.2rem;
+    }
+    .checkbox.checked {
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      border-color: transparent;
+      color: #fff;
+    }
+    
+    .checklist li.done {
+      color: #aaa;
+      text-decoration: line-through;
+    }
+    .checklist li.done .checkbox {
+      border-color: transparent;
+    }
+    
+    .action-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+    .action-btn {
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      color: #fff;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s;
+    }
+    .action-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(123,47,247,0.4);
+    }
+    .action-btn.secondary {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .stat-box {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .stat-value {
+      font-size: 1.8rem;
+      font-weight: bold;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .stat-label {
+      font-size: 0.8rem;
+      color: #aaa;
+      margin-top: 0.4rem;
+      text-transform: uppercase;
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    .footer a {
+      color: #00d4ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    @media (max-width: 768px) {
+      .action-buttons { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>✅ Checklist Operacional - Praia Digital</h1>
+      <p>Marque as tarefas concluídas hoje. O progresso é salvo automaticamente no navegador.</p>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-box">
+        <div class="stat-value" id="statProgress">0%</div>
+        <div class="stat-label">Progresso Hoje</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value" id="statEnvios">0</div>
+        <div class="stat-label">Envios Hoje</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value" id="statFollowups">0</div>
+        <div class="stat-label">Follow-ups Hoje</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value" id="statLeads">0</div>
+        <div class="stat-label">Novos Leads</div>
+      </div>
+    </div>
+
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+    <div class="progress-text" id="progressText">0 de 0 tarefas concluídas</div>
+
+    <div class="section">
+      <h2 class="section-title">🌅 Manhã - Preparação</h2>
+      <ul class="checklist" id="morningChecklist">
+        <li data-key="morning_backup">
+          <span class="checkbox"></span>
+          <span>Executar backup incremental dos dados comerciais</span>
+        </li>
+        <li data-key="morning_emails">
+          <span class="checkbox"></span>
+          <span>Verificar e-mails de leads e respostas de ontem</span>
+        </li>
+        <li data-key="morning_tracker">
+          <span class="checkbox"></span>
+          <span>Atualizar tracker com status dos envios anteriores</span>
+        </li>
+        <li data-key="morning_briefing">
+          <span class="checkbox"></span>
+          <span>Gerar briefing diário com leads quentes/mornos/frios</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">📤 Meio dia - Envios</h2>
+      <ul class="checklist" id="sendChecklist">
+        <li data-key="send_pilot">
+          <span class="checkbox"></span>
+          <span>Enviar lote piloto de prospecção (5 e-mails)</span>
+        </li>
+        <li data-key="send_batch36">
+          <span class="checkbox"></span>
+          <span>Enviar lote 36 personalizado por cidade</span>
+        </li>
+        <li data-key="send_followup3d">
+          <span class="checkbox"></span>
+          <span>Disparar follow-ups de 3 dias para leads de ontem</span>
+        </li>
+        <li data-key="send_followup7d">
+          <span class="checkbox"></span>
+          <span>Disparar follow-ups de 7 dias para leads da semana passada</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">🌆 Tarde - Nurturing e Conteúdo</h2>
+      <ul class="checklist" id="afternoonChecklist">
+        <li data-key="afternoon_quiz">
+          <span class="checkbox"></span>
+          <span>Verificar leads novos capturados pelo quiz no site</span>
+        </li>
+        <li data-key="afternoon_nurturing">
+          <span class="checkbox"></span>
+          <span>Disparar e-mails da sequência de nurturing (Dia 0, 2, 4, 7, 14, 21)</span>
+        </li>
+        <li data-key="afternoon_seo">
+          <span class="checkbox"></span>
+          <span>Publicar 1 artigo SEO novo no blog</span>
+        </li>
+        <li data-key="afternoon_social">
+          <span class="checkbox"></span>
+          <span>Publicar conteúdo no Instagram/LinkedIn</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">🌙 Noite - Fechamento e Planejamento</h2>
+      <ul class="checklist" id="nightChecklist">
+        <li data-key="night_responses">
+          <span class="checkbox"></span>
+          <span>Responder todas as mensagens de leads recebidas</span>
+        </li>
+        <li data-key="night_calls">
+          <span class="checkbox"></span>
+          <span>Agendar calls para amanhã com leads quentes</span>
+        </li>
+        <li data-key="night_tracker_update">
+          <span class="checkbox"></span>
+          <span>Atualizar tracker com métricas do dia</span>
+        </li>
+        <li data-key="night_next_day">
+          <span class="checkbox"></span>
+          <span>Preparar lote de envios para amanhã</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="action-buttons">
+      <button class="action-btn" onclick="resetDay()">🔄 Novo Dia</button>
+      <a href="docs/sales/execucao-diaria-2026-07-14.html" class="action-btn secondary" target="_blank">⚡ Execução do Dia</a>
+      <a href="central-comando-praia-digital.html" class="action-btn secondary" target="_blank">🏠 Central de Comando</a>
+    </div>
+
+    <div class="footer">
+      <p>🏖️ Praia Digital · Checklist Operacional Automatizado</p>
+      <p style="margin-top: 0.5rem;">
+        <a href="https://acarolmourad-commits.github.io/praia-digital/" target="_blank">Site Principal</a> • 
+        <a href="https://praia.digital" target="_blank">Ferramentas Gratuitas</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const today = new Date().toISOString().split('T')[0];
+    const storageKey = 'praiaDigitalChecklist_' + today;
+    
+    const counters = {
+      envios: 0,
+      followups: 0,
+      leads: 0
+    };
+    
+    function updateProgress() {
+      const allItems = document.querySelectorAll('.checklist li');
+      const total = allItems.length;
+      const checked = document.querySelectorAll('.checklist li.done').length;
+      const percent = total > 0 ? Math.round((checked / total) * 100) : 0;
+      
+      document.getElementById('progressFill').style.width = percent + '%';
+      document.getElementById('progressText').textContent = `${checked} de ${total} tarefas concluídas`;
+      document.getElementById('statProgress').textContent = percent + '%';
+      
+      // Update stats based on checked items
+      if (document.querySelector('[data-key="send_pilot"]').classList.contains('done')) counters.envios++;
+      if (document.querySelector('[data-key="send_batch36"]').classList.contains('done')) counters.envios++;
+      if (document.querySelector('[data-key="send_followup3d"]').classList.contains('done')) counters.followups++;
+      if (document.querySelector('[data-key="send_followup7d"]').classList.contains('done')) counters.followups++;
+      if (document.querySelector('[data-key="afternoon_quiz"]').classList.contains('done')) counters.leads++;
+      
+      document.getElementById('statEnvios').textContent = counters.envios;
+      document.getElementById('statFollowups').textContent = counters.followups;
+      document.getElementById('statLeads').textContent = counters.leads;
+    }
+    
+    function toggleCheck(li) {
+      li.classList.toggle('done');
+      const key = li.getAttribute('data-key');
+      const isDone = li.classList.contains('done');
+      localStorage.setItem(storageKey + '_' + key, isDone ? '1' : '0');
+      updateProgress();
+    }
+    
+    function resetDay() {
+      if (confirm('Iniciar novo dia? Isso marcará todas as tarefas como pendentes.')) {
+        document.querySelectorAll('.checklist li').forEach(li => {
+          li.classList.remove('done');
+          const key = li.getAttribute('data-key');
+          localStorage.removeItem(storageKey + '_' + key);
+        });
+        updateProgress();
+      }
+    }
+    
+    // Restore saved state
+    document.querySelectorAll('.checklist li').forEach(li => {
+      const key = li.getAttribute('data-key');
+      if (localStorage.getItem(storageKey + '_' + key) === '1') {
+        li.classList.add('done');
+      }
+    });
+    
+    // Add click handlers
+    document.querySelectorAll('.checklist li').forEach(li => {
+      li.addEventListener('click', () => toggleCheck(li));
+    });
+    
+    updateProgress();
+  </script>
+</body>
+</html>
