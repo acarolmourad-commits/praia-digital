@@ -1,40 +1,75 @@
-<!DOCTYPE html>
+
+from pathlib import Path
+from datetime import datetime
+
+BASE = Path('C:/Users/Carolina/praia-digital')
+OUT = BASE / 'central-comando-praia-digital.html'
+
+def safe_num_from_csv(path):
+    if not path.exists():
+        return 0
+    try:
+        with path.open('r', encoding='utf-8') as f:
+            return max(0, sum(1 for _ in f) - 1)
+    except Exception:
+        return 0
+
+def count_dir(path):
+    if not path.exists():
+        return 0
+    return len([p for p in path.iterdir() if p.is_file()])
+
+tracker = BASE / 'docs' / 'sales' / 'followup-registro.md'
+capturados = BASE / 'docs' / 'sales' / 'parcerias-leads-capturados.csv'
+followup_pendentes = BASE / 'outreach' / 'followups-pendentes'
+priorizados = BASE / 'docs' / 'sales' / 'leads-priorizados-2026-07-12.csv'
+
+hoje = datetime.now().strftime('%Y-%m-%d')
+leads_capturados = safe_num_from_csv(capturados)
+followups_pendentes_count = count_dir(followup_pendentes)
+priorizados_count = safe_num_from_csv(priorizados)
+hoje_pendentes = 0
+if tracker.exists():
+    txt = tracker.read_text(encoding='utf-8')
+    hoje_pendentes = txt.count(hoje) + txt.lower().count('pendente_envio')
+
+html = f"""<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <title>Central de Comando — Praia Digital</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  :root{--bg:#f4f6f8;--card:#fff;--ink:#0f172a;--muted:#64748b;--accent:#0b4f6c;--ok:#14532d;--warn:#713f12;--danger:#7f1d1d;--radius:12px}
-  *{box-sizing:border-box}
-  body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);margin:0;padding:22px}
-  .container{max-width:1100px;margin:0 auto}
-  header{background:linear-gradient(135deg,#0b4f6c,#1570a1);color:#fff;padding:22px 24px;border-radius:var(--radius);margin-bottom:18px}
-  header h1{margin:0 0 6px;font-size:22px}
-  header p{margin:0;opacity:.9;font-size:13px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
-  .card{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:0 4px 20px rgba(0,0,0,.04)}
-  .card h2{margin:0 0 10px;font-size:15px;color:#154c79}
-  .card ul{padding-left:18px;margin:0}
-  .card li{margin-bottom:8px;font-size:14px}
-  a{color:#2563eb;text-decoration:none;font-weight:600}
-  a:hover{text-decoration:underline}
-  .badge{display:inline-block;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:700}
-  .badge.ok{background:#dcfce7;color:var(--ok)}
-  .badge.warn{background:#fef9c3;color:var(--warn)}
-  .badge.danger{background:#fee2e2;color:var(--danger)}
-  .footer{text-align:center;margin-top:22px;color:var(--muted);font-size:12px}
-  .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
-  .btn{display:inline-block;padding:10px 14px;background:var(--accent);color:#fff;text-decoration:none;border-radius:10px;font-size:13px;font-weight:700}
-  .btn.primary{background:#0f172a}
-  .btn.secondary{background:#e2e8f0;color:#0f172a}
+  :root{{--bg:#f4f6f8;--card:#fff;--ink:#0f172a;--muted:#64748b;--accent:#0b4f6c;--ok:#14532d;--warn:#713f12;--danger:#7f1d1d;--radius:12px}}
+  *{{box-sizing:border-box}}
+  body{{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);margin:0;padding:22px}}
+  .container{{max-width:1100px;margin:0 auto}}
+  header{{background:linear-gradient(135deg,#0b4f6c,#1570a1);color:#fff;padding:22px 24px;border-radius:var(--radius);margin-bottom:18px}}
+  header h1{{margin:0 0 6px;font-size:22px}}
+  header p{{margin:0;opacity:.9;font-size:13px}}
+  .grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}}
+  .card{{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:0 4px 20px rgba(0,0,0,.04)}}
+  .card h2{{margin:0 0 10px;font-size:15px;color:#154c79}}
+  .card ul{{padding-left:18px;margin:0}}
+  .card li{{margin-bottom:8px;font-size:14px}}
+  a{{color:#2563eb;text-decoration:none;font-weight:600}}
+  a:hover{{text-decoration:underline}}
+  .badge{{display:inline-block;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:700}}
+  .badge.ok{{background:#dcfce7;color:var(--ok)}}
+  .badge.warn{{background:#fef9c3;color:var(--warn)}}
+  .badge.danger{{background:#fee2e2;color:var(--danger)}}
+  .footer{{text-align:center;margin-top:22px;color:var(--muted);font-size:12px}}
+  .actions{{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}}
+  .btn{{display:inline-block;padding:10px 14px;background:var(--accent);color:#fff;text-decoration:none;border-radius:10px;font-size:13px;font-weight:700}}
+  .btn.primary{{background:#0f172a}}
+  .btn.secondary{{background:#e2e8f0;color:#0f172a}}
 </style>
 </head>
 <body>
 <div class="container">
   <header>
     <h1>Central de Comando — Praia Digital</h1>
-    <p>Ponto único para execução comercial, prospecção, backup, follow-up e fechamento. Atualizado em 2026-07-12.</p>
+    <p>Ponto único para execução comercial, prospecção, backup, follow-up e fechamento. Atualizado em {hoje}.</p>
   </header>
 
   <div class="grid">
@@ -53,10 +88,10 @@
 
     <div class="card">
       <h2>📊 Resumo do dia</h2>
-      <p><strong>10</strong> leads capturados <span class="badge warn">atuar</span></p>
-      <p><strong>10</strong> priorizados <span class="badge ok">pronto</span></p>
-      <p><strong>23</strong> follow-ups pendentes</p>
-      <p><strong>65</strong> ações para hoje</p>
+      <p><strong>{leads_capturados}</strong> leads capturados <span class="badge warn">atuar</span></p>
+      <p><strong>{priorizados_count}</strong> priorizados <span class="badge ok">pronto</span></p>
+      <p><strong>{followups_pendentes_count}</strong> follow-ups pendentes</p>
+      <p><strong>{max(0, hoje_pendentes)}</strong> ações para hoje</p>
       <div class="actions">
         <a class="btn secondary" href="docs/sales/briefing-matinal-comercial-praia-digital.html">Briefing matinal</a>
         <a class="btn secondary" href="docs/sales/pacote-execucao-final-2026-07-12.html">Pacote do dia</a>
@@ -135,3 +170,8 @@
 </div>
 </body>
 </html>
+"""
+
+OUT.write_text(html, encoding='utf-8')
+print(f"Central atualizada para {hoje}")
+print(f"leads_capturados={leads_capturados}, followups_pendentes={followups_pendentes_count}, priorizados={priorizados_count}, hoje_pendentes={hoje_pendentes}")
