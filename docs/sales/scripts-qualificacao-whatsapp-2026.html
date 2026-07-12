@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scripts de Qualificação WhatsApp - Praia Digital</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
+      color: #fff;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container { max-width: 1000px; margin: 0 auto; }
+    
+    .header {
+      background: linear-gradient(135deg, #7b2ff7, #00d4ff);
+      padding: 2.5rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    .header p { opacity: 0.95; font-size: 1rem; max-width: 700px; margin: 0 auto; }
+    
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(10px);
+    }
+    .card h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .script-box {
+      background: #0d1117;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    .script-title {
+      font-weight: 700;
+      color: #00d4ff;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+    .script-content {
+      color: #e6edf3;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      white-space: pre-wrap;
+    }
+    .copy-btn {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #fff;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+    .copy-btn:hover {
+      background: rgba(255,255,255,0.2);
+      transform: translateY(-1px);
+    }
+    
+    .flow-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .flow-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 1.25rem;
+    }
+    .flow-title {
+      font-weight: 700;
+      color: #ff6b6b;
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+    .flow-response {
+      color: #e0e0e0;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    .footer a {
+      color: #00d4ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    @media (max-width: 768px) {
+      .flow-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📱 Scripts de Qualificação por WhatsApp</h1>
+      <p>Scripts prontos para usar na qualificação de leads via WhatsApp, baseados no case Barra Norte Imóveis</p>
+    </div>
+
+    <div class="card">
+      <h2>🎯 Scripts de Abertura</h2>
+      
+      <div class="script-box">
+        <button class="copy-btn" onclick="copiar(this)">📋 Copiar</button>
+        <div class="script-title">1. Apresentação inicial</div>
+        <div class="script-content">Olá, [NOME]! Tudo bem?
+
+Sou Carolina Mourad, CEO da Praia Digital. Ajudo imobiliárias do litoral paulista a captar mais leads e automatizar o atendimento.
+
+Vi que a [NOME DA IMOBILIÁRIA] atua em [CIDADE]. Quero apresentar um case real de uma imobiliária similar que aumentou em 40% os leads qualificados em 30 dias.
+
+Posso enviar mais detalhes ou agendar uma call de 15 minutos?</div>
+      </div>
+
+      <div class="script-box">
+        <button class="copy-btn" onclick="copiar(this)">📋 Copiar</button>
+        <div class="script-title">2. Follow-up 3 dias</div>
+        <div class="script-content">Olá, [NOME]!
+
+Espero que esta mensagem te encontre bem. Faz 3 dias que compartilhei um pouco sobre a Praia Digital.
+
+Enquanto isso, identifiquei um ponto que pode ajudar [CIDADE]: imobiliárias que usam recomendação automática estão captando mais leads qualificados com o mesmo investimento.
+
+Quer um tour de 10 minutos pelas ferramentas gratuitas?</div>
+      </div>
+
+      <div class="script-box">
+        <button class="copy-btn" onclick="copiar(this)">📋 Copiar</button>
+        <div class="script-title">3. Call to action</div>
+        <div class="script-content">Olá, [NOME]!
+
+Tenho 3 horários livres esta semana:
+• Segunda, 14h
+• Terça, 10h
+• Quarta, 9h
+
+Vou mostrar na prática como a Barra Norte Imóveis chegou a esses resultados.
+
+Qual funciona melhor para você?</div>
+      </div>
+
+      <div class="script-box">
+        <button class="copy-btn" onclick="copiar(this)">📋 Copiar</button>
+        <div class="script-title">4. Follow-up 7 dias</div>
+        <div class="script-content">Olá, [NOME]!
+
+Faz uma semana que entrei em contato sobre a Praia Digital.
+
+Não quero ser insistente, só quero garantir que você não perdeu as ferramentas gratuitas que outras imobiliárias já estão usando para se destacar.
+
+👉 Tudo isso em https://praia.digital
+
+Responda "TESTAR" que eu envio o link direto!</div>
+      </div>
+
+      <div class="script-box">
+        <button class="copy-btn" onclick="copiar(this)">📋 Copiar</button>
+        <div class="script-title">5. Última tentativa 15 dias</div>
+        <div class="script-content">Olá, [NOME]!
+
+Esta é minha última tentativa de contato. Não quero ser inconveniente — só quero garantir que você viu o que estamos construindo para imobiliárias do litoral.
+
+Enquanto isso, temos um programa de parceria sem custo inicial onde você:
+• Usa ferramentas gratuitamente por 60 dias
+• Participa do desenvolvimento de novos recursos
+• Vira referência em [CIDADE]
+• Tem prioridade no atendimento
+
+É isso. Se não for agora, sem problemas. As ferramentas continuarão gratuitas em https://praia.digital quando você quiser testar.
+
+Sucesso em [CIDADE]! 🏖️</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🤔 Objeções Comuns no WhatsApp</h2>
+      <div class="flow-grid">
+        <div class="flow-card">
+          <div class="flow-title">"Não tenho tempo"</div>
+          <div class="flow-response">Entendo. Por isso temos onboarding rápido: em 7 dias você já tem tudo funcionando. A equipe da Praia Digital cuida da configuração.</div>
+        </div>
+        <div class="flow-card">
+          <div class="flow-title">"Já tenho ferramenta similar"</div>
+          <div class="flow-response">Perfeito! Você não precisa abandonar o que já funciona. A Praia Digital se integra com ferramentas existentes e começa gratuitamente.</div>
+        </div>
+        <div class="flow-card">
+          <div class="flow-title">"É caro para nosso tamanho"</div>
+          <div class="flow-response">Comece pelo plano gratuito. Quando fechar mais negócios, evolua para o Professional. Sem risco, sem contrato longo.</div>
+        </div>
+        <div class="flow-card">
+          <div class="flow-title">"Minha equipe não vai saber usar"</div>
+          <div class="flow-response">As ferramentas são intuitivas e temos suporte prioritário. A automação reduz o trabalho repetitivo, dando mais tempo para vender.</div>
+        </div>
+        <div class="flow-card">
+          <div class="flow-title">"Quero ver resultados primeiro"</div>
+          <div class="flow-response">Justamente por isso oferecemos o plano gratuito. Teste por 30 dias, veja os resultados e só então decida.</div>
+        </div>
+        <div class="flow-card">
+          <div class="flow-title">"Preciso consultar meu sócio"</div>
+          <div class="flow-response">Perfeito! Posso enviar um resumo executivo para ele também. Que tal agendarmos uma call conjunta de 20 minutos?</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="action-buttons">
+      <a href="docs/partners/playbook-onboarding-parceiros-2026.html" target="_blank" class="action-btn">🤝 Playbook de Onboarding</a>
+      <a href="docs/sales/playbook-vendas-clicavel.html" target="_blank" class="action-btn secondary">🎯 Playbook de Vendas</a>
+      <a href="blog/case-sucesso-barra-norte-imoveis-guaruja-2026.html" target="_blank" class="action-btn secondary">📈 Case de Sucesso</a>
+    </div>
+
+    <div class="footer">
+      <p>🏖️ Praia Digital · Scripts de Qualificação WhatsApp</p>
+      <p style="margin-top: 0.5rem;">
+        <a href="central-comando-praia-digital.html" target="_blank">Central de Comando</a> • 
+        <a href="https://praia.digital" target="_blank">Ferramentas Gratuitas</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function copiar(btn) {
+      const box = btn.closest('.script-box');
+      const text = box.querySelector('.script-content').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const original = btn.textContent;
+        btn.textContent = '✅ Copiado!';
+        setTimeout(() => btn.textContent = original, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
