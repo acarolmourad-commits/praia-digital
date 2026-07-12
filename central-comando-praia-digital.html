@@ -1,401 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Central de Comando - Praia Digital</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
-      color: #fff;
-      min-height: 100vh;
-      padding: 2rem;
-    }
-    .container { max-width: 1400px; margin: 0 auto; }
-    
-    .header {
-      background: linear-gradient(135deg, #7b2ff7, #00d4ff);
-      padding: 2rem;
-      border-radius: 12px;
-      margin-bottom: 2rem;
-      text-align: center;
-    }
-    .header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-    .header p { opacity: 0.9; font-size: 1.1rem; }
-    
-    .quick-stats {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1rem;
-      margin-bottom: 2rem;
-    }
-    .stat-box {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 12px;
-      padding: 1.5rem;
-      text-align: center;
-      backdrop-filter: blur(10px);
-      transition: all 0.3s;
-    }
-    .stat-box:hover {
-      background: rgba(255,255,255,0.08);
-      transform: translateY(-2px);
-    }
-    .stat-value {
-      font-size: 2.5rem;
-      font-weight: bold;
-      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    .stat-label {
-      color: #aaa;
-      font-size: 0.85rem;
-      margin-top: 0.5rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-    
-    .main-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap: 2rem;
-      margin-bottom: 2rem;
-    }
-    
-    .card {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 12px;
-      padding: 2rem;
-      backdrop-filter: blur(10px);
-      transition: all 0.3s;
-    }
-    .card:hover {
-      background: rgba(255,255,255,0.08);
-      border-color: rgba(255,255,255,0.2);
-    }
-    .card-title {
-      font-size: 1.3rem;
-      margin-bottom: 1.5rem;
-      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-    
-    .action-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-    }
-    .action-btn {
-      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
-      color: #fff;
-      border: none;
-      padding: 1rem;
-      border-radius: 8px;
-      font-size: 0.95rem;
-      font-weight: 600;
-      cursor: pointer;
-      text-decoration: none;
-      text-align: center;
-      transition: all 0.2s;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .action-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(123,47,247,0.4);
-    }
-    .action-btn.secondary {
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.2);
-    }
-    .action-btn.secondary:hover {
-      background: rgba(255,255,255,0.12);
-    }
-    
-    .envio-rapido {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 8px;
-      padding: 1rem;
-      margin-bottom: 0.75rem;
-    }
-    .envio-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 0.5rem;
-    }
-    .envio-title { font-weight: 600; font-size: 1rem; }
-    .envio-meta { color: #aaa; font-size: 0.85rem; margin-bottom: 0.5rem; }
-    .envio-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
-    
-    .checklist {
-      list-style: none;
-      padding: 0;
-    }
-    .checklist li {
-      padding: 0.75rem;
-      margin-bottom: 0.5rem;
-      background: rgba(255,255,255,0.05);
-      border-left: 3px solid #00d4ff;
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-    .checklist li:hover {
-      background: rgba(255,255,255,0.08);
-    }
-    .checklist li.done {
-      border-left-color: #00ffa3;
-      opacity: 0.7;
-    }
-    .checklist li.done::before {
-      content: "✅ ";
-      color: #00ffa3;
-    }
-    
-    .footer {
-      text-align: center;
-      margin-top: 2rem;
-      color: #aaa;
-      font-size: 0.9rem;
-    }
-    .footer a {
-      color: #00d4ff;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    
-    .status-indicator {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #00ffa3;
-      margin-right: 0.5rem;
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.5; }
-    }
-    
-    @media (max-width: 768px) {
-      .action-grid { grid-template-columns: 1fr; }
-      .main-grid { grid-template-columns: 1fr; }
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Central de Comando — Praia Digital</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{--bg:#f4f6f8;--card:#fff;--ink:#0f172a;--muted:#64748b;--accent:#0b4f6c;--ok:#14532d;--warn:#713f12;--danger:#7f1d1d;--radius:12px}
+  *{box-sizing:border-box}
+  body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);margin:0;padding:22px}
+  .container{max-width:1100px;margin:0 auto}
+  header{background:linear-gradient(135deg,#0b4f6c,#1570a1);color:#fff;padding:22px 24px;border-radius:var(--radius);margin-bottom:18px}
+  header h1{margin:0 0 6px;font-size:22px}
+  header p{margin:0;opacity:.9;font-size:13px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+  .card{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:0 4px 20px rgba(0,0,0,.04)}
+  .card h2{margin:0 0 10px;font-size:15px;color:#154c79}
+  .card ul{padding-left:18px;margin:0}
+  .card li{margin-bottom:8px;font-size:14px}
+  a{color:#2563eb;text-decoration:none;font-weight:600}
+  a:hover{text-decoration:underline}
+  .badge{display:inline-block;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:700}
+  .badge.ok{background:#dcfce7;color:var(--ok)}
+  .badge.warn{background:#fef9c3;color:var(--warn)}
+  .badge.danger{background:#fee2e2;color:var(--danger)}
+  .footer{text-align:center;margin-top:22px;color:var(--muted);font-size:12px}
+  .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+  .btn{display:inline-block;padding:10px 14px;background:var(--accent);color:#fff;text-decoration:none;border-radius:10px;font-size:13px;font-weight:700}
+  .btn.primary{background:#0f172a}
+  .btn.secondary{background:#e2e8f0;color:#0f172a}
+</style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>🏖️ Central de Comando - Praia Digital</h1>
-      <p><span class="status-indicator"></span>Todos os sistemas operacionais • Última atualização: hoje</p>
-    </div>
+<div class="container">
+  <header>
+    <h1>Central de Comando — Praia Digital</h1>
+    <p>Ponto único para execução comercial, prospecção, backup, follow-up e fechamento. Atualizado em 2026-07-12.</p>
+  </header>
 
-    <div class="quick-stats">
-      <div class="stat-box">
-        <div class="stat-value" id="totalEnvios">5</div>
-        <div class="stat-label">📧 Envios Hoje</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-value" id="totalFollowups">23</div>
-        <div class="stat-label">📅 Follow-ups</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-value" id="totalLeads">580</div>
-        <div class="stat-label">🎯 Leads na Base</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-value" id="totalArtigos">352</div>
-        <div class="stat-label">📝 Artigos SEO</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-value" id="totalImoveis">254</div>
-        <div class="stat-label">🏠 Imóveis</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-value" id="totalFerramentas">6</div>
-        <div class="stat-label">🛠️ Ferramentas</div>
+  <div class="grid">
+    <div class="card">
+      <h2>🥇 Passo 0 — Backup obrigatório</h2>
+      <ul>
+        <li><a href="docs/sales/executar-backup-incremental-comercial.bat">Executar backup</a></li>
+        <li><a href="docs/sales/CHECKLIST-BACKUP-ANTES-ENVIO.md">Checklist backup</a></li>
+        <li><a href="docs/sales/backups/">Pasta de backups</a></li>
+      </ul>
+      <div class="actions">
+        <span class="badge ok">Antes do envio</span>
+        <a class="btn secondary" href="docs/sales/executar-backup-incremental-comercial.bat">Iniciar backup</a>
       </div>
     </div>
 
-    <div class="main-grid">
-      <div class="card">
-        <h2 class="card-title">🚀 Ações Principais</h2>
-        <div class="action-grid">
-          <a href="docs/sales/send-execution-tracker-2026.html" class="action-btn" target="_blank">
-            <span style="font-size: 2rem;">📧</span>
-            <span>Send Execution Tracker</span>
-          </a>
-          <a href="docs/sales/crm-visual-2026.html" class="action-btn secondary" target="_blank">
-            <span style="font-size: 2rem;">📊</span>
-            <span>CRM Visual</span>
-          </a>
-          <a href="docs/sales/agendador-followups-2026.html" class="action-btn secondary" target="_blank">
-            <span style="font-size: 2rem;">📅</span>
-            <span>Agendador Follow-ups</span>
-          </a>
-          <a href="outreach/auto-respostas/modelo-resposta-automatica-lead.html" class="action-btn secondary" target="_blank">
-            <span style="font-size: 2rem;">💬</span>
-            <span>Auto-respostas</span>
-          </a>
-          <a href="outreach/envio-piloto-5-hoje/" class="action-btn" target="_blank">
-            <span style="font-size: 2rem;">⚡</span>
-            <span>Enviar Lote Piloto</span>
-          </a>
-          <a href="outreach/lote-prospeccao-36-2026-07-12.html" class="action-btn secondary" target="_blank">
-            <span style="font-size: 2rem;">📤</span>
-            <span>Lote 36</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="card">
-        <h2 class="card-title">📋 Checklist Diária</h2>
-        <ul class="checklist" id="dailyChecklist">
-          <li onclick="toggleCheck(this)">Rotina diária executada no Windows</li>
-          <li onclick="toggleCheck(this)">Backup incremental realizado</li>
-          <li onclick="toggleCheck(this)">Lote de envios do dia liberado</li>
-          <li onclick="toggleCheck(this)">Follow-ups de 3 dias enviados</li>
-          <li onclick="toggleCheck(this)">Follow-ups de 7 dias enviados</li>
-          <li onclick="toggleCheck(this)">Artigos SEO publicados</li>
-          <li onclick="toggleCheck(this)">Tracker atualizado</li>
-          <li onclick="toggleCheck(this)">Respostas de leads verificadas</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2 class="card-title">⚡ Envios Rápidos Hoje</h2>
-        <div class="envio-rapido">
-          <div class="envio-header">
-            <div class="envio-title">1. Litoral Premium Santos</div>
-            <span style="background:rgba(0,212,255,0.2);color:#00d4ff;padding:0.2rem 0.6rem;border-radius:6px;font-size:0.8rem;">Santos</span>
-          </div>
-          <div class="envio-meta">Contato: Roberto Dias • Status: interessado</div>
-          <div class="envio-actions">
-            <a href="outreach/envio-piloto-5-hoje/envio-piloto-1-litoral-premium-sant.html" class="btn btn-sm" target="_blank">Abrir</a>
-            <button class="btn btn-sm btn-secondary" onclick="copyFollowup('3d')">Follow-up 3d</button>
-          </div>
-        </div>
-
-        <div class="envio-rapido">
-          <div class="envio-header">
-            <div class="envio-title">2. Santos Ocean View</div>
-            <span style="background:rgba(123,47,247,0.2);color:#d4a0ff;padding:0.2rem 0.6rem;border-radius:6px;font-size:0.8rem;">Santos</span>
-          </div>
-          <div class="envio-meta">Contato: Tatiane Moreira • Status: parceria_fechada</div>
-          <div class="envio-actions">
-            <a href="outreach/envio-piloto-5-hoje/envio-piloto-2-santos-ocean-view.html" class="btn btn-sm" target="_blank">Abrir</a>
-            <button class="btn btn-sm btn-secondary" onclick="copyFollowup('7d')">Follow-up 7d</button>
-          </div>
-        </div>
-
-        <div class="envio-rapido">
-          <div class="envio-header">
-            <div class="envio-title">3. Santos Premium Digital</div>
-            <span style="background:rgba(0,200,150,0.2);color:#00ffa3;padding:0.2rem 0.6rem;border-radius:6px;font-size:0.8rem;">Santos</span>
-          </div>
-          <div class="envio-meta">Contato: Viviane Paes • Status: parceria_fechada</div>
-          <div class="envio-actions">
-            <a href="outreach/envio-piloto-5-hoje/envio-piloto-3-santos-premium-digital.html" class="btn btn-sm" target="_blank">Abrir</a>
-            <button class="btn btn-sm btn-secondary" onclick="copyFollowup('7d')">Follow-up 7d</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <h2 class="card-title">🗺️ Prospecção por Estado</h2>
-        <div class="action-grid">
-          <a href="outreach/prospeccao-por-estado-2026.html" class="action-btn secondary" target="_blank">
-            <span style="font-size: 1.5rem;">📤</span>
-            <span>Hub por Estado</span>
-          </a>
-          <a href="docs/sales/leads-importacao-brevo-2026-07-14.csv" class="action-btn secondary" target="_blank">
-            <span style="font-size: 1.5rem;">📥</span>
-            <span>CSV para Brevo/Gmail</span>
-          </a>
-          <a href="docs/sales/execucao-diaria-2026-07-14.html" class="action-btn secondary" target="_blank">
-            <span style="font-size: 1.5rem;">⚡</span>
-            <span>Execução do Dia</span>
-          </a>
-          <a href="outreach/kit-comercial-completo-2026.html" class="action-btn secondary" target="_blank">
-            <span style="font-size: 1.5rem;">🧰</span>
-            <span>Kit Comercial</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="card">
-        <h2 class="card-title">🔗 Links Úteis</h2>
-        <div class="action-grid">
-          <a href="https://praia.digital" class="action-btn secondary" target="_blank">
-            <span style="font-size: 1.5rem;">🛠️</span>
-            <span>Ferramentas Gratuitas</span>
-          </a>
-          <a href="https://acarolmourad-commits.github.io/praia-digital/" class="action-btn secondary" target="_blank">
-            <span style="font-size: 1.5rem;">🌐</span>
-            <span>Site Principal</span>
-          </a>
-          <a href="blog/" class="action-btn secondary" target="_blank">
-            <span style="font-size: 1.5rem;">📝</span>
-            <span>Blog SEO</span>
-          </a>
-          <a href="imoveis/" class="action-btn secondary" target="_blank">
-            <span style="font-size: 1.5rem;">🏠</span>
-            <span>Imóveis</span>
-          </a>
-          <a href="outreach/followups-leads-reais/" class="action-btn secondary" target="_blank">
-            <span style="font-size: 1.5rem;">📅</span>
-            <span>Follow-ups</span>
-          </a>
-          <a href="newsletter/" class="action-btn secondary" target="_blank">
-            <span style="font-size: 1.5rem;">📧</span>
-            <span>Newsletter</span>
-          </a>
-        </div>
+    <div class="card">
+      <h2>📊 Resumo do dia</h2>
+      <p><strong>10</strong> leads capturados <span class="badge warn">atuar</span></p>
+      <p><strong>10</strong> priorizados <span class="badge ok">pronto</span></p>
+      <p><strong>23</strong> follow-ups pendentes</p>
+      <p><strong>125</strong> ações para hoje</p>
+      <div class="actions">
+        <a class="btn secondary" href="docs/sales/briefing-matinal-comercial-praia-digital.html">Briefing matinal</a>
+        <a class="btn secondary" href="docs/sales/pacote-execucao-final-2026-07-12.html">Pacote do dia</a>
       </div>
     </div>
 
-    <div class="footer">
-      <p>🏖️ Praia Digital · Central de Comando Unificada</p>
-      <p style="margin-top: 0.5rem;">
-        Rotina automática ativa • <span class="status-indicator" style="display:inline-block;width:6px;height:6px;border-radius:50%;background:#00ffa3;margin-right:0.3rem;animation:pulse 2s infinite;"></span>Sistemas operacionais
-      </p>
+    <div class="card">
+      <h2>🎯 Prospecção de parcerias</h2>
+      <ul>
+        <li><a href="docs/sales/csv-lotes-email/lote-brevo-50-realistas-2026-07-12.csv">CSV Brevo 50 leads</a></li>
+        <li><a href="outreach/emails-personalizados">E-mails personalizados</a></li>
+        <li><a href="outreach/whatsapp-50-mensagens-prontas.html">WhatsApp 50 mensagens</a></li>
+        <li><a href="docs/sales/leads-priorizados-2026-07-12.csv">Leads priorizados</a></li>
+        <li><a href="docs/sales/tracking-envios-lote-50-2026-07-12.csv">Tracking de envios</a></li>
+      </ul>
+      <div class="actions"><a class="btn" href="parcerias-litoral-paulista.html">Landing de parceria</a></div>
+    </div>
+
+    <div class="card">
+      <h2>🏠 Imóveis e conteúdo</h2>
+      <ul>
+        <li><a href="blog/apartamentos-venda-na-praia-2026.html">SEO apartamentos praia</a></li>
+        <li><a href="imoveis/lote-50-imoveis-2026-07-12.csv">Lote 50 imóveis CSV</a></li>
+        <li><a href="imoveis/imovel-001.html">Anúncio 001</a></li>
+        <li><a href="sitemap.xml">Sitemap 680 URLs</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>📅 Follow-up e negociação</h2>
+      <ul>
+        <li><a href="outreach/followups-pendentes">Follow-ups pendentes</a></li>
+        <li><a href="docs/sales/followup-registro.md">Tracker de follow-up</a></li>
+        <li><a href="docs/sales/kit-fechamento-rapido-parcerias-praia-digital.html">Kit fechamento</a></li>
+        <li><a href="docs/sales/pagina-avancar-pos-demo-praia-digital-2026.html">Pós-demo</a></li>
+      </ul>
+      <div class="actions"><a class="btn secondary" href="docs/sales/roteiro-videocall-top20-2026-07-12.html">Roteiro videocall</a></div>
+    </div>
+
+    <div class="card">
+      <h2>🤖 Automações</h2>
+      <ul>
+        <li><a href="scripts/automation/backup_incremental_dados_comerciais.py">Backup incremental</a></li>
+        <li><a href="scripts/automation/classificar_respostas_leads.py">Classificador de respostas</a></li>
+        <li><a href="scripts/automation/priorizar_leads_capturados.py">Priorização de leads</a></li>
+        <li><a href="scripts/automation/runner_followups_pendentes.py">Runner de follow-ups</a></li>
+        <li><a href="scripts/automation/health_check_site.py">Health check do site</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>📑 Documentos e marca</h2>
+      <ul>
+        <li><a href="docs/startup-proptech/estrategia-proptech.md">Estratégia proptech</a></li>
+        <li><a href="docs/startup-proptech/identidade-marca.md">Identidade da marca</a></li>
+        <li><a href="docs/startup-proptech/modelo-monetizacao.md">Modelo de monetização</a></li>
+        <li><a href="docs/startup-proptech/funil-vendas.md">Funil de vendas</a></li>
+        <li><a href="docs/startup-proptech/plano-investidores.md">Plano de investidores</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🔔 Notificações e regras</h2>
+      <ul>
+        <li><a href="scripts/automation/telegram_notifier.py">Notificador Telegram</a></li>
+        <li><a href="docs/sales/checklist-sanitizacao-csv-brevo-praia-digital-2026-07-12.html">Sanitização CSV</a></li>
+        <li><a href="docs/sales/classificador-respostas-leads-praia-digital-2026.html">Classificador</a></li>
+      </ul>
+      <div class="actions"><a class="btn secondary" href="docs/materiais/calendario-editorial-mensal-praia-digital-2026-08.html">Calendário editorial</a></div>
     </div>
   </div>
 
-  <script>
-    function toggleCheck(el) {
-      el.classList.toggle('done');
-      const isDone = el.classList.contains('done');
-      localStorage.setItem('check_' + el.textContent.trim(), isDone ? '1' : '0');
-    }
-    
-    document.querySelectorAll('.checklist li').forEach(li => {
-      const key = 'check_' + li.textContent.trim();
-      if (localStorage.getItem(key) === '1') li.classList.add('done');
-    });
-    
-    function copyFollowup(type) {
-      alert('Follow-up ' + type + ' copiado para a área de transferência!');
-    }
-  </script>
+  <div class="footer">
+    Praia Digital — Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">https://acarolmourad-commits.github.io/praia-digital/</a> | Ferramentas: <a href="https://praia.digital">https://praia.digital</a>
+  </div>
+</div>
 </body>
 </html>
