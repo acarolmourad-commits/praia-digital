@@ -2,12 +2,11 @@
 """
 gerar_prospeccao_personalizada.py
 Gera páginas de prospecção personalizadas a partir do CSV de leads.
-Uso: python scripts/automation/gerar_prospeccao_personalizada.py
+Uso: python scripts/automation/gerar_prospeccao_personalizada.py --limit 50
 """
 
 import csv
 from pathlib import Path
-from urllib.parse import quote
 
 BASE = Path(__file__).resolve().parents[2]
 LEADS_CSV = BASE / "docs/sales/leads-litoral-enriquecido.csv"
@@ -27,7 +26,7 @@ def safe(text):
     return (text or "").replace('"', "").replace("'", "").strip()
 
 
-def generate(limit=20):
+def generate(limit=50):
     leads = load_leads(LEADS_CSV)[:limit]
     for r in leads:
         lead_id = r.get("id")
@@ -39,8 +38,9 @@ def generate(limit=20):
         dif = safe(r.get("diferencial", ""))
         email = safe(r.get("email", ""))
         status = safe(r.get("status", ""))
-        imovel_url = f"/praia-digital/imoveis/imovel-{lead_id}.html" if lead_id else ""
         path = OUTREACH_DIR / f"prospeccao-lead-{lead_id}-{cidade.lower().replace(' ','-')}.html"
+        if path.exists():
+            continue
         path.write_text(f"""<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -78,4 +78,8 @@ pre{{background:#f1f5f9;border:1px solid #e5e7eb;border-radius:12px;padding:14px
 
 
 if __name__ == "__main__":
-    generate()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--limit", type=int, default=50)
+    args = parser.parse_args()
+    generate(limit=args.limit)
