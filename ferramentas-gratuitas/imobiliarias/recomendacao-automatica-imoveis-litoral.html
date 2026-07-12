@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recomendação automática de imóveis no litoral — ferramenta gratuita | Praia Digital</title>
+  <meta name="description" content="Ferramenta gratuita de recomendação automática de imóveis no litoral paulista para corretores e imobiliárias.">
+  <link rel="canonical" href="https://acarolmourad-commits.github.io/praia-digital/ferramentas-gratuitas/imobiliarias/recomendacao-automatica-imoveis-litoral.html">
+  <style>
+    :root{bg:#f8fafc;text:#0f172a;border:#e5e7eb;primary:#2563eb;secondary:#0ea5e9}
+    body{font:14px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);padding:18px}
+    .wrap{max-width:880px;margin:0 auto}
+    a{color:var(--primary)}
+    label{display:block;margin:10px 0 4px}
+    input,select,textarea{width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:12px;background:#fff;color:#0f172a}
+    button{background:var(--primary);color:white;border:none;padding:12px 14px;border-radius:14px;margin-top:12px;cursor:pointer;font-weight:800}
+    .result{background:#f1f5f9;border:1px solid #e5e7eb;border-radius:12px;padding:14px;margin-top:12px;display:none}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Recomendação automática de imóveis</h1>
+    <p>Informe preferências e receba imóveis direcionados.</p>
+    <form onsubmit="event.preventDefault();const c=document.getElementById('c').value||'';const b=document.getElementById('b').value||'';const p=parseInt(document.getElementById('p').value)||0;const r=document.querySelector('.result');r.style.display='block';r.textContent='Com base em '+c+', '+b+' e orçamento até R$ '+p.toLocaleString('pt-BR')+', recomendamos começar pelos imóveis com SEO local e avaliação de preço atualizada.';">
+      <label>Cidade</label>
+      <select id="c"><option>Praia Grande</option><option>Caraguatatuba</option><option>Ilhabela</option><option>Ubatuba</option><option>São Sebastião</option><option>Bertioga</option><option>Maresias</option><option>Guarujá</option><option>Iguape</option><option>Cananéia</option></select>
+      <label>Bairro ou região</label>
+      <input id="b" placeholder="Ex: beira-mar, centro">
+      <label>Orçamento máximo</label>
+      <input id="p" type="number" placeholder="Ex: 900000">
+      <button type="submit">Recomendar imóveis</button>
+    </form>
+    <div class="result"></div>
+    <p><a href="/praia-digital/ferramentas-gratuitas/imobiliarias/gerador-descricao-ia.html">Gerar descrição com IA</a></p>
+  </div>
+</body>
+</html>
