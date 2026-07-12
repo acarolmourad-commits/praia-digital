@@ -14,8 +14,8 @@ echo.
 echo [3/4] Gerar briefing matinal...
 python scripts/automation/gerar_briefing_dinamico.py
 echo.
-echo [4/4] Gerar central de comando dinamica...
-python scripts/automation/gerar_central_dinamica.py
+echo [4/4] Verificar funil comercial...
+python scripts/automation/verificador_funil_comercial.py
 echo.
 echo ==============================
 echo   ROTINA CONCLUIDA
@@ -23,3 +23,4 @@ echo ==============================
 echo.
 echo Proximo: abrir central-comando-praia-digital.html
 echo.
+pause
