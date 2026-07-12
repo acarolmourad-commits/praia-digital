@@ -1,77 +1,30 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Gerador automático de sitemap.xml para indexação no Google.
-Inclui páginas principais, blog, imóveis, landing pages e docs.
-"""
-import os
-from datetime import datetime
-from xml.sax.saxutils import escape
+import os, re
+from pathlib import Path
+from datetime import date
 
-BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ROOT = os.path.dirname(BASE)
-OUT = os.path.join(ROOT, "sitemap.xml")
+root = Path("C:/Users/Carolina/praia-digital")
+exclude_dirs = {"node_modules", ".git", "outreach", "docs", "scripts", "assets", "imoveis", "blog"}
+base_url = "https://acarolmourad-commits.github.io/praia-digital/"
 
-URLS = [
-    ("/", "1.0", "daily"),
-    ("/index.html", "1.0", "daily"),
-    ("/landing-parcerias-anuncios.html", "0.8", "weekly"),
-    ("/landing-parcerias-captura-praia-digital-2026.html", "0.8", "weekly"),
-    ("/landing-parcerias-conversao-praia-digital-2026.html", "0.8", "weekly"),
-    ("/landing-parcerias-captura-praia-digital-conversao-2026.html", "0.8", "weekly"),
-    ("/newsletter/assinatura.html", "0.6", "weekly"),
-    ("/newsletter/edicao-001.html", "0.6", "weekly"),
-    ("/assets/contadores-publicos-praia-digital.html", "0.5", "weekly"),
-    ("/assets/planos-assinatura.html", "0.8", "weekly"),
-    ("/lgpd-imobiliarias-litoral-2026.html", "0.5", "monthly"),
-    ("/checklist-investidor-imoveis-litoral.html", "0.6", "weekly"),
-]
+html_files = []
+for path in root.rglob("*.html"):
+    rel = path.relative_to(root)
+    if any(part in exclude_dirs for part in rel.parts):
+        continue
+    html_files.append(rel)
 
-FOLDERS = ["blog", "imoveis", "docs/sales", "docs/materiais"]
-EXTENSIONS = {".html", ".htm"}
+html_files.sort()
 
-today = datetime.now().strftime("%Y-%m-%d")
+today = date.today().isoformat()
+entries = []
+for rel in html_files:
+    loc = f"{base_url}{rel.as_posix()}"
+    entries.append(f"  <url>\n    <loc>{loc}</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>weekly</changefreq>\n  </url>")
 
+sitemap = f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+sitemap += "\n".join(entries)
+sitemap += "\n</urlset>"
 
-def iter_files():
-    seen = set()
-    for folder in FOLDERS:
-        fpath = os.path.join(ROOT, folder)
-        if not os.path.isdir(fpath):
-            continue
-        for dirpath, dirnames, filenames in os.walk(fpath):
-            for fn in filenames:
-                if os.path.splitext(fn)[1].lower() not in EXTENSIONS:
-                    continue
-                full = os.path.join(dirpath, fn)
-                rel = os.path.relpath(full, ROOT).replace(os.sep, "/")
-                if rel in seen:
-                    continue
-                seen.add(rel)
-                st = os.stat(full)
-                mtime = datetime.fromtimestamp(st.st_mtime).strftime("%Y-%m-%d")
-                yield rel, mtime
-
-
-def build():
-    default_changefreq = "daily"
-    entries = [(rel, mtime, freq) for rel, freq, mtime in URLS]
-    for rel, mtime in iter_files():
-        entries.append((rel, mtime, default_changefreq))
-    xml = ['<?xml version="1.0" encoding="UTF-8"?>']
-    xml.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
-    for rel, mtime, freq in entries:
-        xml.append("  <url>")
-        xml.append(f"    <loc>{escape('https://acarolmourad-commits.github.io/praia-digital{0}'.format(rel))}</loc>")
-        xml.append(f"    <lastmod>{mtime}</lastmod>")
-        xml.append(f"    <changefreq>{freq}</changefreq>")
-        xml.append("  </url>")
-    xml.append("</urlset>")
-    with open(OUT, "w", encoding="utf-8") as f:
-        f.write("\n".join(xml) + "\n")
-    print(f"Sitemap gerado: {OUT}")
-    print(f"URLs incluídas: {len(entries)}")
-
-
-if __name__ == "__main__":
-    build()
+out_path = root / "sitemap.xml"
+out_path.write_text(sitemap, encoding="utf-8")
+print(f"Sitemap atualizado com {len(entries)} URLs em {out_path}")
