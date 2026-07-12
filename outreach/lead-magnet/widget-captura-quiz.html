@@ -1,0 +1,188 @@
+<style>
+  #praia-quiz-float {
+    position: fixed;
+    bottom: 1.25rem;
+    left: 1.25rem;
+    z-index: 9999;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+  }
+  #praia-quiz-float .float-btn {
+    background: linear-gradient(135deg, #7b2ff7, #00d4ff);
+    color: #fff;
+    border: none;
+    padding: 0.9rem 1.4rem;
+    border-radius: 999px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    transition: transform 0.2s;
+  }
+  #praia-quiz-float .float-btn:hover { transform: translateY(-2px); }
+  #praia-quiz-float .modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  #praia-quiz-float .modal.open { display: flex; }
+  #praia-quiz-float .modal-bg {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+  }
+  #praia-quiz-float .modal-card {
+    position: relative;
+    background: #0b1220;
+    border: 1px solid #2a3345;
+    border-radius: 16px;
+    padding: 1.5rem;
+    max-width: 640px;
+    width: 100%;
+    color: #e6edf3;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  #praia-quiz-float .modal-close {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.8rem;
+    background: #1f2937;
+    border: 1px solid #334155;
+    color: #e6edf3;
+    border-radius: 999px;
+    padding: 0.3rem 0.7rem;
+    cursor: pointer;
+  }
+  #praia-quiz-float .question { margin: 1rem 0; }
+  #praia-quiz-float .question h3 { font-size: 1rem; margin-bottom: 0.6rem; }
+  #praia-quiz-float .option {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 0.9rem;
+    border-radius: 10px;
+    border: 1px solid #2a3345;
+    margin-bottom: 0.4rem;
+    cursor: pointer;
+    background: #0f172a;
+  }
+  #praia-quiz-float .option input { accent-color: #00d4ff; }
+  #praia-quiz-float .submit-btn {
+    width: 100%;
+    background: linear-gradient(135deg,#00d4ff,#7b2ff7);
+    color: #fff;
+    border: none;
+    padding: 0.85rem;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  #praia-quiz-float .result {
+    display: none;
+    margin-top: 1rem;
+    background: #0b2e24;
+    border: 2px solid #00d4ff;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+  }
+  #praia-quiz-float .result.show { display: block; }
+</style>
+<div id="praia-quiz-float" aria-label="Diagnóstico gratuito Praia Digital">
+  <button class="float-btn" onclick="document.getElementById('praiaQuizModal').classList.add('open')">🎯 Diagnóstico Gratuito</button>
+  <div id="praiaQuizModal" class="modal" role="dialog" aria-modal="true">
+    <div class="modal-bg" onclick="document.getElementById('praiaQuizModal').classList.remove('open')"></div>
+    <div class="modal-card">
+      <button class="modal-close" onclick="document.getElementById('praiaQuizModal').classList.remove('open')">Fechar</button>
+      <h2 style="margin-bottom:0.5rem;">🎯 Diagnóstico Gratuito</h2>
+      <p style="color:#aaa; margin-bottom:1rem;">5 perguntas rápidas para um plano personalizado.</p>
+      <form id="praiaQuizForm">
+        <div class="question">
+          <h3>1) Principal desafio</h3>
+          <label class="option"><input type="radio" name="q1" value="captacao" required> Captar leads</label>
+          <label class="option"><input type="radio" name="q1" value="atendimento"> Atendimento</label>
+          <label class="option"><input type="radio" name="q1" value="fechamento"> Fechar vendas</label>
+          <label class="option"><input type="radio" name="q1" value="organizacao"> Organização</label>
+        </div>
+        <div class="question">
+          <h3>2) Quantidade de imóveis</h3>
+          <label class="option"><input type="radio" name="q2" value="0-20" required> Até 20</label>
+          <label class="option"><input type="radio" name="q2" value="21-100"> 21 a 100</label>
+          <label class="option"><input type="radio" name="q2" value="101-500"> 101 a 500</label>
+          <label class="option"><input type="radio" name="q2" value="500+"> Mais de 500</label>
+        </div>
+        <div class="question">
+          <h3>3) Cidade de operação</h3>
+          <label class="option"><input type="radio" name="q3" value="santos" required> Santos</label>
+          <label class="option"><input type="radio" name="q3" value="guaruja"> Guarujá</label>
+          <label class="option"><input type="radio" name="q3" value="praia-grande"> Praia Grande</label>
+          <label class="option"><input type="radio" name="q3" value="ubatuba"> Ubatuba</label>
+          <label class="option"><input type="radio" name="q3" value="outro"> Outra</label>
+        </div>
+        <div class="question">
+          <h3>4) Já usa automação/IA?</h3>
+          <label class="option"><input type="radio" name="q4" value="nao" required> Não</label>
+          <label class="option"><input type="radio" name="q4" value="basica"> Básico</label>
+          <label class="option"><input type="radio" name="q4" value="avancada"> Avançado</label>
+        </div>
+        <div class="question">
+          <h3>5) Objetivo em 90 dias</h3>
+          <label class="option"><input type="radio" name="q5" value="leads" required> Mais leads</label>
+          <label class="option"><input type="radio" name="q5" value="vendas"> Mais vendas</label>
+          <label class="option"><input type="radio" name="q5" value="tempo"> Menos trabalho repetitivo</label>
+          <label class="option"><input type="radio" name="q5" value="todos"> Todos</label>
+        </div>
+        <div class="question">
+          <h3>Seus dados</h3>
+          <input type="text" id="pqNome" placeholder="Nome" required style="width:100%;padding:0.6rem;border-radius:8px;border:1px solid #334155;background:#0f172a;color:#fff;margin-bottom:0.5rem;">
+          <input type="email" id="pqEmail" placeholder="E-mail" required style="width:100%;padding:0.6rem;border-radius:8px;border:1px solid #334155;background:#0f172a;color:#fff;margin-bottom:0.5rem;">
+          <input type="tel" id="pqWhatsapp" placeholder="WhatsApp" style="width:100%;padding:0.6rem;border-radius:8px;border:1px solid #334155;background:#0f172a;color:#fff;margin-bottom:0.5rem;">
+          <input type="text" id="pqImobiliaria" placeholder="Imobiliária" style="width:100%;padding:0.6rem;border-radius:8px;border:1px solid #334155;background:#0f172a;color:#fff;">
+        </div>
+        <button type="submit" class="submit-btn">🎯 Receber Diagnóstico Gratuito</button>
+      </form>
+      <div id="praiaQuizResult" class="result">
+        <h3>🎉 Diagnóstico Gerado!</h3>
+        <p>Em até 24h você recebe um plano personalizado.</p>
+        <a href="https://praia.digital" target="_blank" style="color:#00d4ff;text-decoration:none;font-weight:700;">🛠️ Abrir ferramentas gratuitas</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  const form = document.getElementById('praiaQuizForm');
+  const result = document.getElementById('praiaQuizResult');
+  if (!form) return;
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const data = {
+      nome: document.getElementById('pqNome').value,
+      email: document.getElementById('pqEmail').value,
+      whatsapp: document.getElementById('pqWhatsapp').value,
+      imobiliaria: document.getElementById('pqImobiliaria').value,
+      q1: form.q1.value,
+      q2: form.q2.value,
+      q3: form.q3.value,
+      q4: form.q4.value,
+      q5: form.q5.value,
+      data: new Date().toISOString(),
+      origem: 'quiz-widget'
+    };
+    const key = 'praiaQuizLeads';
+    let arr = [];
+    try { arr = JSON.parse(localStorage.getItem(key) || '[]'); } catch (e) {}
+    arr.push(data);
+    localStorage.setItem(key, JSON.stringify(arr));
+    form.style.display = 'none';
+    result.classList.add('show');
+  });
+})();
+</script>
