@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Central de Comando — Praia Digital</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{--bg:#f4f6f8;--card:#fff;--ink:#0f172a;--muted:#64748b;--accent:#0b4f6c;--ok:#14532d;--warn:#713f12;--danger:#7f1d1d;--radius:12px}
+  *{box-sizing:border-box}
+  body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);margin:0;padding:22px}
+  .container{max-width:1100px;margin:0 auto}
+  header{background:linear-gradient(135deg,#0b4f6c,#1570a1);color:#fff;padding:22px 24px;border-radius:var(--radius);margin-bottom:18px}
+  header h1{margin:0 0 6px;font-size:22px}
+  header p{margin:0;opacity:.9;font-size:13px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+  .card{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:0 4px 20px rgba(0,0,0,.04)}
+  .card h2{margin:0 0 10px;font-size:15px;color:#154c79}
+  .card ul{padding-left:18px;margin:0}
+  .card li{margin-bottom:8px;font-size:14px}
+  a{color:#2563eb;text-decoration:none;font-weight:600}
+  a:hover{text-decoration:underline}
+  .badge{display:inline-block;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:700}
+  .badge.ok{background:#dcfce7;color:var(--ok)}
+  .badge.warn{background:#fef9c3;color:var(--warn)}
+  .badge.danger{background:#fee2e2;color:var(--danger)}
+  .footer{text-align:center;margin-top:22px;color:var(--muted);font-size:12px}
+  .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+  .btn{display:inline-block;padding:10px 14px;background:var(--accent);color:#fff;text-decoration:none;border-radius:10px;font-size:13px;font-weight:700}
+  .btn.primary{background:#0f172a}
+  .btn.secondary{background:#e2e8f0;color:#0f172a}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Central de Comando — Praia Digital</h1>
+    <p>Ponto único para execução comercial, prospecção, backup, follow-up e fechamento.</p>
+  </header>
+
+  <div class="grid">
+    <div class="card">
+      <h2>🥇 Passo 0 — Backup obrigatório</h2>
+      <ul>
+        <li><a href="docs/sales/executar-backup-incremental-comercial.bat">Executar backup</a></li>
+        <li><a href="docs/sales/CHECKLIST-BACKUP-ANTES-ENVIO.md">Checklist backup</a></li>
+        <li><a href="docs/sales/backups/">Pasta de backups</a></li>
+      </ul>
+      <div class="actions">
+        <span class="badge ok">Antes do envio</span>
+        <a class="btn secondary" href="docs/sales/executar-backup-incremental-comercial.bat">Iniciar backup</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📊 Resumo do dia</h2>
+      <p><strong>48</strong> leads no topo <span class="badge warn">priorizar</span></p>
+      <p><strong>50</strong> e-mails personalizados <span class="badge ok">pronto</span></p>
+      <p><strong>10</strong> follow-ups prontos</p>
+      <div class="actions">
+        <a class="btn secondary" href="docs/sales/briefing-matinal-comercial-praia-digital.html">Briefing matinal</a>
+        <a class="btn secondary" href="docs/sales/pacote-execucao-final-2026-07-12.html">Pacote do dia</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🎯 Prospecção de parcerias</h2>
+      <ul>
+        <li><a href="docs/sales/csv-lotes-email/lote-brevo-50-realistas-2026-07-12.csv">CSV Brevo 50 leads</a></li>
+        <li><a href="outreach/emails-personalizados">E-mails personalizados</a></li>
+        <li><a href="outreach/whatsapp-50-mensagens-prontas.html">WhatsApp 50 mensagens</a></li>
+        <li><a href="docs/sales/leads-priorizados-2026-07-12.csv">Leads priorizados</a></li>
+        <li><a href="docs/sales/tracking-envios-lote-50-2026-07-12.csv">Tracking de envios</a></li>
+      </ul>
+      <div class="actions"><a class="btn" href="parcerias-litoral-paulista.html">Landing de parceria</a></div>
+    </div>
+
+    <div class="card">
+      <h2>🏠 Imóveis e conteúdo</h2>
+      <ul>
+        <li><a href="blog/apartamentos-venda-na-praia-2026.html">SEO apartamentos praia</a></li>
+        <li><a href="imoveis/lote-50-imoveis-2026-07-12.csv">Lote 50 imóveis CSV</a></li>
+        <li><a href="imoveis/imovel-001.html">Anúncio 001</a></li>
+        <li><a href="sitemap.xml">Sitemap 680 URLs</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>📅 Follow-up e negociação</h2>
+      <ul>
+        <li><a href="outreach/followups-pendentes">Follow-ups pendentes</a></li>
+        <li><a href="docs/sales/followup-registro.md">Tracker de follow-up</a></li>
+        <li><a href="docs/sales/kit-fechamento-rapido-parcerias-praia-digital.html">Kit fechamento</a></li>
+        <li><a href="docs/sales/pagina-avancar-pos-demo-praia-digital-2026.html">Pós-demo</a></li>
+      </ul>
+      <div class="actions"><a class="btn secondary" href="docs/sales/roteiro-videocall-top20-2026-07-12.html">Roteiro videocall</a></div>
+    </div>
+
+    <div class="card">
+      <h2>🤖 Automações</h2>
+      <ul>
+        <li><a href="scripts/automation/backup_incremental_dados_comerciais.py">Backup incremental</a></li>
+        <li><a href="scripts/automation/classificar_respostas_leads.py">Classificador de respostas</a></li>
+        <li><a href="scripts/automation/priorizar_leads_capturados.py">Priorização de leads</a></li>
+        <li><a href="scripts/automation/runner_followups_pendentes.py">Runner de follow-ups</a></li>
+        <li><a href="scripts/automation/health_check_site.py">Health check do site</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>📑 Documentos e marca</h2>
+      <ul>
+        <li><a href="docs/startup-proptech/estrategia-proptech.md">Estratégia proptech</a></li>
+        <li><a href="docs/startup-proptech/identidade-marca.md">Identidade da marca</a></li>
+        <li><a href="docs/startup-proptech/modelo-monetizacao.md">Modelo de monetização</a></li>
+        <li><a href="docs/startup-proptech/funil-vendas.md">Funil de vendas</a></li>
+        <li><a href="docs/startup-proptech/plano-investidores.md">Plano de investidores</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🔔 Notificações e regras</h2>
+      <ul>
+        <li><a href="scripts/automation/telegram_notifier.py">Notificador Telegram</a></li>
+        <li><a href="docs/sales/checklist-sanitizacao-csv-brevo-praia-digital-2026-07-12.html">Sanitização CSV</a></li>
+        <li><a href="docs/sales/classificador-respostas-leads-praia-digital-2026.html">Classificador</a></li>
+      </ul>
+      <div class="actions"><a class="btn secondary" href="docs/materiais/calendario-editorial-mensal-praia-digital-2026-08.html">Calendário editorial</a></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Praia Digital — Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">https://acarolmourad-commits.github.io/praia-digital/</a> | Ferramentas: <a href="https://praia.digital">https://praia.digital</a>
+  </div>
+</div>
+</body>
+</html>
