@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conteúdo Redes Sociais - Semana 2 - Praia Digital</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
+      color: #fff;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .header {
+      background: linear-gradient(135deg, #7b2ff7, #00d4ff);
+      padding: 2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    .header p { opacity: 0.9; }
+    
+    .platform-filter {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+    .filter-btn.active {
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      border-color: transparent;
+    }
+    .filter-btn:hover:not(.active) {
+      background: rgba(255,255,255,0.12);
+    }
+    
+    .posts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+    .post-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 1.5rem;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s;
+    }
+    .post-card:hover {
+      background: rgba(255,255,255,0.08);
+      transform: translateY(-3px);
+      border-color: rgba(255,255,255,0.2);
+    }
+    .post-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .post-platform {
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      color: #fff;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .post-day {
+      color: #aaa;
+      font-size: 0.85rem;
+    }
+    .post-title {
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .post-content {
+      background: rgba(0,0,0,0.2);
+      border-radius: 8px;
+      padding: 1rem;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #e0e0e0;
+      margin-bottom: 1rem;
+      white-space: pre-wrap;
+    }
+    .post-hashtags {
+      color: #00d4ff;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+    .post-actions {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .post-btn {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #fff;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.2s;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .post-btn:hover {
+      background: rgba(255,255,255,0.15);
+      transform: translateY(-1px);
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    .footer a {
+      color: #00d4ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📱 Conteúdo para Redes Sociais - Semana 2</h1>
+      <p>Posts prontos para Instagram e LinkedIn • Copy + hashtags + CTA</p>
+    </div>
+
+    <div class="platform-filter">
+      <button class="filter-btn active" onclick="filterPosts('all')">Todos</button>
+      <button class="filter-btn" onclick="filterPosts('instagram')">Instagram</button>
+      <button class="filter-btn" onclick="filterPosts('linkedin')">LinkedIn</button>
+      <button class="filter-btn" onclick="filterPosts('reels')">Reels/Shorts</button>
+      <button class="filter-btn" onclick="filterPosts('stories')">Stories</button>
+    </div>
+
+    <div class="posts-grid" id="postsGrid">
+    
+      <div class="post-card" data-platform="instagram">
+        <div class="post-header">
+          <span class="post-platform">📸 Instagram</span>
+          <span class="post-day">Segunda-feira</span>
+        </div>
+        <div class="post-title">🔥 Segredo das imobiliárias Top</div>
+        <div class="post-content">90% dos corretores não respondem leads em menos de 5 minutos.
+Nós fizemos o contrário: criamos um assistente virtual que responde 24/7 e qualificaLead automaticamente.
+
+E o melhor? Comece grátis em https://praia.digital
+
+Qual o maior desafio da sua captação hoje? Comenta aqui 👇</div>
+        <div class="post-hashtags">#ImobiliariaDigital #LitoralPaulista #Proptech #IA #CaptacaoLeads #TecnologiaImobiliaria #PraiaDigital #Automatizacao #CorretoresDeImoveis #Verão2026</div>
+        <div class="post-actions">
+          <button class="post-btn" onclick="copiar(this)">📋 Copiar Texto</button>
+          <button class="post-btn" onclick="copiarHashtags(this)"># Copiar Hashtags</button>
+        </div>
+      </div>
+
+      <div class="post-card" data-platform="linkedin">
+        <div class="post-header">
+          <span class="post-platform">💼 LinkedIn</span>
+          <span class="post-day">Terça-feira</span>
+        </div>
+        <div class="post-title">📈 Case Real: +40% leads qualificados em 30 dias</div>
+        <div class="post-content">Recentemente ajudamos uma imobiliária do litoral paulista a aumentar em 40% a captação de leads qualificados em apenas 30 dias.
+
+O segredo? A combinação de:
+• Recomendação automática de imóveis
+• Assistente virtual 24/7
+• Follow-up personalizado
+
+Sem aumentar verba de anúncios.
+
+Se você quer um diagnóstico gratuito da sua imobiliária, comente "DIAGNÓSTICO" que envio por DM.
+
+#Proptech #Imobiliária #Liderança #Inovação #IA</div>
+        <div class="post-hashtags">#Proptech #Imobiliaria #Lideranca #Inovacao #IA #LitoralPaulista #Tecnologia #TransformacaoDigital</div>
+        <div class="post-actions">
+          <button class="post-btn" onclick="copiar(this)">📋 Copiar Texto</button>
+          <button class="post-btn" onclick="copiarHashtags(this)"># Copiar Hashtags</button>
+        </div>
+      </div>
+
+      <div class="post-card" data-platform="reels">
+        <div class="post-header">
+          <span class="post-platform">🎬 Reels/Shorts</span>
+          <span class="post-day">Quarta-feira</span>
+        </div>
+        <div class="post-title">⏱️ 3 erros que matam vendas no verão</div>
+        <div class="post-content">[Vídeo 60s]
+0:00 - "3 erros que matam vendas no verão"
+0:05 - Erro 1: Demorar mais de 5 min para responder lead
+0:20 - Erro 2: Enviar o mesmo anúncio para todo mundo
+0:35 - Erro 3: Não ter um follow-up automático
+0:45 - "A Praia Digital resolve isso gratuitamente"
+0:50 - Call to action: "Link na bio"
+
+Música: trending summer vibe</div>
+        <div class="post-hashtags">#Reels #Shorts #Verão #Imobiliária #Dicas #PraiaDigital #Viral #TikTok #InstagramReels #Litoral</div>
+        <div class="post-actions">
+          <button class="post-btn" onclick="copiar(this)">📋 Copiar Roteiro</button>
+          <button class="post-btn" onclick="copiarHashtags(this)"># Copiar Hashtags</button>
+        </div>
+      </div>
+
+      <div class="post-card" data-platform="stories">
+        <div class="post-header">
+          <span class="post-platform">📱 Stories</span>
+          <span class="post-day">Quinta-feira</span>
+        </div>
+        <div class="post-title">✨ Dica Rápida: Avaliação de Preço</div>
+        <div class="post-content">[Story 1]: "Você sabia que 70% dos compradadores usam celular para buscar imóveis?"
+[Story 2]: "O problema: poucos corretores usam IA para avaliar preços corretamente"
+[Story 3]: "Solução: Avaliador automático da Praia Digital"
+[Story 4]: "Teste grátis: link na bio"
+[Story 5]: "Compartilha com um corretor que precisa disso 👇"
+
+Enquete: "Você já perdeu venda por preço errado?"
+Sim / Não / Ainda não percebi</div>
+        <div class="post-hashtags">#Stories #DicaRapida #AvaliacaoDePreco #Imoveis #PraiaDigital #Corretores #Verão</div>
+        <div class="post-actions">
+          <button class="post-btn" onclick="copiar(this)">📋 Copiar Texto</button>
+          <button class="post-btn" onclick="copiarHashtags(this)"># Copiar Hashtags</button>
+          <button class="post-btn" onclick="copiarEnquete(this)">📊 Copiar Enquete</button>
+        </div>
+      </div>
+
+      <div class="post-card" data-platform="instagram">
+        <div class="post-header">
+          <span class="post-platform">📸 Instagram</span>
+          <span class="post-day">Sexta-feira</span>
+        </div>
+        <div class="post-title">🏖️ Sextou com oportunidade no litoral</div>
+        <div class="post-content">Sextou e o mercado de aluguel no litoral explode!
+Quem já tem IA e automação do lado, ganha tempo e dinheiro.
+
+Hoje temos:
+✅ Ferramentas gratuitas para avaliação de preço
+✅ Geração de anúncios automática
+✅ Assistente virtual 24/7
+
+Comece agora: https://praia.digital
+
+Bom fim de semana e boas vendas! 🏖️</div>
+        <div class="post-hashtags">#Sextou #LitoralPaulista #Imoveis #PraiaDigital #Aluguel #Ferias #Verão2026 #Oportunidade #Tecnologia #IA</div>
+        <div class="post-actions">
+          <button class="post-btn" onclick="copiar(this)">📋 Copiar Texto</button>
+          <button class="post-btn" onclick="copiarHashtags(this)"># Copiar Hashtags</button>
+        </div>
+      </div>
+
+      <div class="post-card" data-platform="linkedin">
+        <div class="post-header">
+          <span class="post-platform">💼 LinkedIn</span>
+          <span class="post-day">Sábado</span>
+        </div>
+        <div class="post-title">🧠 A IA não vai substituir corretores</div>
+        <div class="post-content">A IA não vai substituir corretores. Quem usar IA vai substituir quem não usa.
+
+Empreendedores do mercado imobiliário precisam entender: a tecnologia é uma aliada, não uma ameaça.
+
+Na Praia Digital, ajudamos imobiliárias e corretores do litoral paulista a serem mais produtivos, não menos humanos.
+
+Agende um tour gratuito das nossas ferramentas: comercial@praia.digital
+
+#IA #Imobiliária #Liderança #Inovação #Futuro #Tecnologia #Empreendedorismo</div>
+        <div class="post-hashtags">#IA #Imobiliaria #Lideranca #Inovacao #Futuro #Tecnologia #Empreendedorismo #PraiaDigital</div>
+        <div class="post-actions">
+          <button class="post-btn" onclick="copiar(this)">📋 Copiar Texto</button>
+          <button class="post-btn" onclick="copiarHashtags(this)"># Copiar Hashtags</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <p>🏖️ Praia Digital · Conteúdo gerado automaticamente</p>
+      <p style="margin-top: 0.5rem;">
+        <a href="https://acarolmourad-commits.github.io/praia-digital/" target="_blank">Site Principal</a> • 
+        <a href="https://praia.digital" target="_blank">Ferramentas Gratuitas</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function filterPosts(platform) {
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+      
+      document.querySelectorAll('.post-card').forEach(card => {
+        if (platform === 'all') {
+          card.style.display = 'block';
+        } else {
+          card.style.display = card.dataset.platform === platform ? 'block' : 'none';
+        }
+      });
+    }
+    
+    function copiar(btn) {
+      const card = btn.closest('.post-card');
+      const text = card.querySelector('.post-content').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        btn.textContent = '✅ Copiado!';
+        setTimeout(() => btn.textContent = '📋 Copiar Texto', 2000);
+      });
+    }
+    
+    function copiarHashtags(btn) {
+      const card = btn.closest('.post-card');
+      const hashtags = card.querySelector('.post-hashtags').innerText;
+      navigator.clipboard.writeText(hashtags).then(() => {
+        btn.textContent = '✅ Copiado!';
+        setTimeout(() => btn.textContent = '# Copiar Hashtags', 2000);
+      });
+    }
+    
+    function copiarEnquete(btn) {
+      const card = btn.closest('.post-card');
+      const text = card.querySelector('.post-content').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        btn.textContent = '✅ Copiado!';
+        setTimeout(() => btn.textContent = '📊 Copiar Enquete', 2000);
+      });
+    }
+  </script>
+</body>
+</html>
