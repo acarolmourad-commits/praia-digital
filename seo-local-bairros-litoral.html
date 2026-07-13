@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SEO Local Imobiliário por Bairro — Praia Digital</title>
+  <meta name="description" content="Ferramentas SEO locais para imobiliárias do litoral paulista. Conectamos compradores qualificados a imóveis por bairro.">
+  <style>
+    body{font-family:Arial,sans-serif;background:#f6fbff;color:#0a2540;margin:0;padding:20px;line-height:1.5}
+    .wrap{max-width:980px;margin:0 auto}
+    h1{color:#0f4c81}
+    .city{margin:18px 0;padding:14px;background:#fff;border:1px solid #ddebf7;border-radius:6px}
+    .city button{background:#0f4c81;color:#fff;border:0;padding:8px 14px;border-radius:4px;cursor:pointer}
+    .city a{color:#0f4c81;text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>SEO Local por Bairro e Cidade — Litoral Paulista</h1>
+    <p>Escolha uma cidade para ver páginas otimizadas, imóveis recomendados e captação de parceiros locais.</p>
+    <div id="cities"></div>
+  </div>
+  <script>
+    const cidades = [
+      "Caraguatatuba","São Sebastião","Ubatuba","Ilhabela","Bertioga","Santos",
+      "Guarujá","Praia Grande","Mongaguá","Peruíbe","Itanhaém"
+    ];
+    const container = document.getElementById("cities");
+    cidades.forEach(c => {
+      const sufixo = c.toLowerCase().normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").replace(/ /g,"-");
+      container.innerHTML += `
+        <div class="city">
+          <strong>${c}</strong><br>
+          <a href="/blog/imoveis-${sufixo}-litoral-paulista-2026.html" target="_blank">Artigos SEO</a> · 
+          <a href="/imoveis?cidade=${encodeURIComponent(c)}" target="_blank">Imóveis</a> · 
+          <a href="/outreach/captura-parceiro-${sufixo}.html" target="_blank">Captura parceiro</a><br>
+          <button onclick="alert('IA ativa: recomendamos imóveis e avaliamos precificação para ${c}.')">Ativar IA local</button>
+        </div>`;
+    });
+  </script>
+</body>
+</html>
