@@ -2044,3 +2044,15 @@ Atualizado em: 2026-07-14
 | Ana Barros | SV Digital Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Bruno Teixeira | Mongaguá Blue Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Helena Barros | Santos Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Diego Costa | Guarujá Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Marina Lima | PG Premium Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Dias | Itanhaém View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Souza | SV Tech Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Mendes | Mongaguá Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
