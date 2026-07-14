@@ -1986,3 +1986,37 @@ Atualizado em: 2026-07-14
 | Camila Vieira | Peruíbe Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Rafael Almeida | Riviera Blue Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Helena Torres | Santos Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Diego Silva | Guarujá Norte | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Rocha | PG Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Almeida | Santos Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Gomes | Guarujá Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Lucas Lima | Itanhaém Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Juliana Mendes | SV Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Souza | Mongaguá View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Aline Costa | Peruíbe Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Marina Dias | Riviera Norte | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Felipe Lima | Santos Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Patrícia Rocha | Guarujá Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Vieira | PG Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| André Costa | Santos Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Mendes | Guarujá Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Torres | Itanhaém Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Almeida | SV Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
