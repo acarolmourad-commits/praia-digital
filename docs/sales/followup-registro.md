@@ -1970,3 +1970,19 @@ Atualizado em: 2026-07-14
 | Larissa Costa | SV Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Bruno Mendes | Mongaguá Blue Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Marina Barros | Santos Wave View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Dias | Guarujá Digital Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Aline Costa | PG Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Rocha | Itanhaém Tech View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Patrícia Lima | SV Blue Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Lucas Mendes | Mongaguá Digital View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Vieira | Peruíbe Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Rafael Almeida | Riviera Blue Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
