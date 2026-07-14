@@ -1944,3 +1944,17 @@ Atualizado em: 2026-07-14
 | Larissa Pinto | Itanhaém Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Rafael Barros | SV Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Tiago Marques | Santos Sky | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Renata Costa | Guarujá Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Almeida | PG View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Marina Lima | Itanhaém Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Lucas Rocha | SV Tech View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Aline Barros | Mongaguá Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| André Dias | Peruíbe View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
