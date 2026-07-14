@@ -2070,3 +2070,15 @@ Atualizado em: 2026-07-14
 | Ricardo Vieira | Mongaguá Tech View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Ana Torres | Peruíbe Premium View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Souza | Santos View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Lima | Guarujá Digital Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Aline Costa | PG Launch Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Dias | Itanhaém Tech Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Vieira | SV Blue Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Mendes | Mongaguá Tech Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
