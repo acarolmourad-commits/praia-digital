@@ -1924,3 +1924,13 @@ Atualizado em: 2026-07-14
 | Gustavo Lima | Itanhaém Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Juliana Mendes | SV Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Helena Torres | Santos Blue View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Diego Amaral | Guarujá Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Marina Rocha | PG Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Gomes | Itanhaém Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Dias | SV Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
