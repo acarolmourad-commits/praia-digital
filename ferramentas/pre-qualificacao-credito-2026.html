@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pré-qualificação de Crédito | Praia Digital</title>
+<meta name="description" content="Verifique sua elegabilidade para financiamento ou consórcio no litoral paulista.">
+<link rel="canonical" href="https://acarolmourad-commits.github.io/praia-digital/ferramentas/pre-qualificacao-credito-2026.html">
+<style>
+body{font-family:Segoe UI,Arial,sans-serif;background:#0f172a;color:#f8fafc;margin:0;padding:0}
+.container{max-width:960px;margin:0 auto;padding:2rem}
+.card{background:#111827;border-radius:14px;padding:1.4rem;margin-bottom:1rem;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+h1{font-size:1.6rem;margin-bottom:.4rem}
+label{display:block;color:#cbd5e1;font-weight:600;margin:.6rem 0 .2rem}
+input,select{width:100%;padding:12px;border-radius:10px;border:1px solid #334155;background:#0b152b;color:#fff}
+.btn{display:inline-block;margin-top:1rem;background:#2563eb;color:#fff;padding:12px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
+.result{background:#0b152b;border:1px solid #1f2b47;border-radius:12px;padding:1rem;margin-top:1rem;color:#e2e8f0}
+a{color:#38bdf8;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="card"><h1>Pré-qualificação de Crédito</h1><p>Responda rapidamente e receba uma estimativa de elegibilidade.</p></div>
+  <div class="card">
+    <label>Nome</label><input id="nome" placeholder="Seu nome">
+    <label>Cidade do imóvel</label><input id="cidade" placeholder="Ex: Santos">
+    <label>Valor do imóvel (R$)</label><input id="preco" type="number" placeholder="Ex: 500000">
+    <label>Entrada (R$)</label><input id="entrada" type="number" placeholder="Ex: 100000">
+    <label>Renda mensal (R$)</label><input id="renda" type="number" placeholder="Ex: 12000">
+    <label>Tipo</label>
+    <select id="tipo"><option>Financiamento</option><option>Consórcio</option><option>FGTS + financiamento</option></select>
+    <button class="btn" onclick="qualificar()">Verificar</button>
+    <div class="result" id="result" style="display:none"></div>
+  </div>
+  <p><a href="https://acarolmourad-commits.github.io/praia-digital/ferramentas/credito-ia-2026.html">← Persona Crédito IA</a></p>
+</body>
+<script>
+function fmt(v){return typeof v==='number'?'R$ '+v.toLocaleString('pt-BR'):String(v)}
+function qualificar(){
+  const preco=parseFloat(document.getElementById('preco').value)||0;
+  const entrada=parseFloat(document.getElementById('entrada').value)||0;
+  const renda=parseFloat(document.getElementById('renda').value)||0;
+  const tipo=(document.getElementById('tipo').value||'Financiamento').trim();
+  const nome=(document.getElementById('nome').value||'Lead').trim();
+  const cidade=(document.getElementById('cidade').value||'Litoral').trim();
+  const comp=preco-entrada;
+  const maxParcela=renda*0.3;
+  const meses=360;
+  const taxa=0.0099;
+  const parcela=(comp*(Math.pow(1+taxa,meses)*taxa))/(Math.pow(1+taxa,meses)-1)||0;
+  const elegivel=parcela<=maxParcela;
+  const score=Math.min(10,Math.max(1,+((renda/(preco||1))*40 + (entrada/(preco||1))*30).toFixed(1)));
+  const box=document.getElementById('result');
+  box.style.display='block';
+  box.innerHTML=`<p><strong>${nome}</strong>, sua pré-qualificação para <strong>${cidade}</strong>:</p>
+    <p><strong>Tipo:</strong> ${tipo}</p>
+    <p><strong>Parcela estimada:</strong> ${fmt(parcela.toFixed(2))}/mês</p>
+    <p><strong>Limite por renda:</strong> ${fmt(maxParcela)}/mês</p>
+    <p><strong>Elegibilidade:</strong> ${elegivel?'✅ Possível aprovação':'⚠️ Ajuste entrada ou renda'}</p>
+    <p><strong>Score interno:</strong> ${score}/10</p>
+    <p><a href="https://wa.me/5511954346288">Falar com especialista →</a></p>`;
+}
+</script>
+</body>
+</html>
