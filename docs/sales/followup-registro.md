@@ -1842,3 +1842,23 @@ Atualizado em: 2026-07-14
 | Aline Costa | Ocean View Imóveis | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Bruno Lima | Praia Grande Site | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ana Luiza | Santos Next | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Vieira | Guarujá Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Pinto | Praia Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernando Dias | Itanhaém View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Rocha | SV Tech Imóveis | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Lopes | Mongaguá Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Juliana Teixeira | Peruíbe Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| André Lima | Riviera Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Patrícia Gomes | Santos Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Lucas Mendes | Ocean Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
