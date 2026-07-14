@@ -1934,3 +1934,13 @@ Atualizado em: 2026-07-14
 | Paulo Gomes | Itanhaém Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Larissa Dias | SV Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Tiago Luna | Santos Peak View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Reis | Guarujá Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Lima | PG Tech View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Pinto | Itanhaém Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Rafael Barros | SV Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
