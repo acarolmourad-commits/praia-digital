@@ -2144,3 +2144,15 @@ Atualizado em: 2026-07-14
 | Larissa Mendes | SV Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Bruno Rocha | Mongaguá Blue Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Helena Costa | Santos Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Diego Barros | Guarujá Launch Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Dias | PG Blue Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Vieira | Itanhaém Tech Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Lima | SV Digital Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Mendes | Mongaguá Digital View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
