@@ -1818,3 +1818,27 @@ Atualizado em: 2026-07-14
 | Marcos Monteiro | Litoral Premium Imóveis | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-21 |
 | Ana Rocha | Prime Imóveis Prime | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-21 |
 | Fernanda Monteiro | Costa Verde Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-21 |
+
+| Marina Costa | Santos Ocean Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Roberto Lima | Santos Executive | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Rocha | Guarujá Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| André Souza | Praia Grande Imóveis | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Patrícia Almeida | Itanhaém Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Lucas Gomes | São Vicente Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Nunes | Mongaguá Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Thiago Mendes | Peruíbe Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Juliana Barros | Riviera Norte | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Vieira | Santos Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Aline Costa | Ocean View Imóveis | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Lima | Praia Grande Site | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
