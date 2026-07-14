@@ -53,5 +53,25 @@
     "sha256": "5e7841c8733b04500630c1c871a22583b74572664d1009eaba00c1769a198df1",
     "ultimo_backup": "2026-07-12",
     "tamanho_bytes": 1958
+  },
+  "docs\\sales\\backups\\backup-2026-07-14\\followup-lote-74-2026-07-14.html": {
+    "sha256": "cf353d0b3214b2fd6116dec8e39c30d8b963b2867cfb457813e206636bc636f6",
+    "ultimo_backup": "2026-07-14",
+    "tamanho_bytes": 3718
+  },
+  "docs\\sales\\backups\\backup-2026-07-14\\leads-importacao-brevo-2026-07-14.csv": {
+    "sha256": "21580915aa19c3967b7dcb40523d28fdb26781d67323f77afa1436f1c230c639",
+    "ultimo_backup": "2026-07-14",
+    "tamanho_bytes": 80791
+  },
+  "docs\\sales\\backups\\backup-2026-07-14\\lote-brevo-bertioga-2026-07-14.csv": {
+    "sha256": "17f0998917d19043cec151d82b59acd4534ff0e78072617afa2c194102658a65",
+    "ultimo_backup": "2026-07-14",
+    "tamanho_bytes": 10868
+  },
+  "docs\\sales\\backups\\backup-2026-07-14\\lote-prospeccao-74-bertioga-2026-07-14.html": {
+    "sha256": "0bb20422f58344ef01b8647c17e2710da4ec13542daef6eea6057d537040904a",
+    "ultimo_backup": "2026-07-14",
+    "tamanho_bytes": 5934
   }
 }

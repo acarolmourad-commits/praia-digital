@@ -1,0 +1,601 @@
+NOME,EMAIL,TELEFONE,CIDADE,ESTADO,IMOBILIARIA,ORIGEM,STATUS,LISTA
+Roberto Dias,contato36@exemplo.com,(13) 99999-0036,Santos,SP,Litoral Premium Sant,Google Maps,interessado,Leads Litoral SP
+Tatiane Moreira,contato66@exemplo.com,(13) 99999-0066,Santos,SP,Santos Ocean View,Google Maps,parceria_fechada,Leads Litoral SP
+Viviane Paes,contato76@exemplo.com,(13) 99999-0076,Santos,SP,Santos Premium Digital,Google Maps,parceria_fechada,Leads Litoral SP
+Helena Vaz,contato91@exemplo.com,(13) 99999-0091,Santos,SP,Santos Tower Imóveis,Google Maps,parceria_fechada,Leads Litoral SP
+Isabela Fernandes,contato101@exemplo.com,(13) 99999-0101,Santos,SP,Santos Luxo,Google Maps,parceria_fechada,Leads Litoral SP
+Mariana Costa,contato121@exemplo.com,(13) 99999-0121,Santos,SP,Santos Smart Home,Google Maps,parceria_fechada,Leads Litoral SP
+Roberto Dias,contato141@exemplo.com,(13) 99999-0141,Santos,SP,Santos Executive,Google Maps,parceria_fechada,Leads Litoral SP
+Patrícia Gomes,contato161@exemplo.com,(13) 99999-0161,Santos,SP,Santos Bay Homes,Google Maps,parceria_fechada,Leads Litoral SP
+Renata Almeida,contato176@exemplo.com,(13) 99999-0176,Santos,SP,Santos Launch,Google Maps,parceria_fechada,Leads Litoral SP
+Roberto Dias,contato186@exemplo.com,(13) 99999-0186,Santos,SP,Santos Platinum,Google Maps,parceria_fechada,Leads Litoral SP
+Viviane Paes,contato201@exemplo.com,(13) 99999-0201,Santos,SP,Santos Elite,Google Maps,parceria_fechada,Leads Litoral SP
+Helena Vaz,contato216@exemplo.com,(13) 99999-0216,Santos,SP,Santos Prime,Google Maps,parceria_fechada,Leads Litoral SP
+Maria Barros,contato8@exemplo.com,(13) 99999-0008,Guarujá,SP,Ocean Blue Digital,LinkedIn,parceria_fechada,Leads Litoral SP
+Ricardo Barros,contato24@exemplo.com,(13) 99999-0024,Praia Grande,SP,Praia Grande Imóveis,Portais,parceria_fechada,Leads Litoral SP
+Teresa Almeida,contato41@exemplo.com,(13) 99999-0041,Itanhaém,SP,Cibratel Imóveis,Website,parceria_fechada,Leads Litoral SP
+Larissa Barros,contato129@exemplo.com,(13) 99999-0129,Bertioga,SP,Riviera Business,LinkedIn,parceria_fechada,Leads Litoral SP
+Larissa Nunes,contato184@exemplo.com,(13) 99999-0184,Bertioga,SP,Riviera Launch,LinkedIn,interessado,Leads Litoral SP
+Gustavo Nunes,contato194@exemplo.com,(13) 99999-0194,Bertioga,SP,Riviera Platinum,LinkedIn,interessado,Leads Litoral SP
+Isabela Costa,contato209@exemplo.com,(13) 99999-0209,Bertioga,SP,Riviera Elite,LinkedIn,interessado,Leads Litoral SP
+Fernanda Nunes,contato6@exemplo.com,(13) 99999-0006,Santos,SP,Beta Imóveis Centro,Indicação,interessado,Leads Litoral SP
+Carlos Barros,contato10@exemplo.com,(13) 99999-0010,Peruíbe,SP,Região Sul Praia,Google Maps,parceria_fechada,Leads Litoral SP
+Mariana Costa,contato21@exemplo.com,(13) 99999-0021,Santos,SP,Litoral Norte Premium,Google Maps,interessado,Leads Litoral SP
+Luciana Souza,contato34@exemplo.com,(13) 99999-0034,Praia Grande,SP,Caiçara Imóveis,Google Maps,interessado,Leads Litoral SP
+Fernanda Lima,contato39@exemplo.com,(13) 99999-0039,Praia Grande,SP,Praia Grande Norte,Portais,interessado,Leads Litoral SP
+Mariana Costa,contato44@exemplo.com,(13) 99999-0044,Bertioga,SP,Riviera Norte,LinkedIn,interessado,Leads Litoral SP
+Luciana Dias,contato49@exemplo.com,(13) 99999-0049,Praia Grande,SP,Caiçara Norte,Google Maps,parceria_fechada,Leads Litoral SP
+Larissa Costa,contato74@exemplo.com,(13) 99999-0074,Bertioga,SP,Riviera Digital,LinkedIn,interessado,Leads Litoral SP
+Patrícia Lima,contato89@exemplo.com,(13) 99999-0089,Praia Grande,SP,Caiçara Digital,Google Maps,interessado,Leads Litoral SP
+Natália Almeida,contato99@exemplo.com,(13) 99999-0099,Bertioga,SP,Riviera Exclusive,LinkedIn,interessado,Leads Litoral SP
+Larissa Gomes,contato109@exemplo.com,(13) 99999-0109,Bertioga,SP,Riviera Exclusive,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Luciana Dias,contato114@exemplo.com,(13) 99999-0114,Praia Grande,SP,Caiçara Imóveis,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Marcelo Lima,contato134@exemplo.com,(13) 99999-0134,Praia Grande,SP,Caiçara Conectada,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Gustavo Nunes,contato149@exemplo.com,(13) 99999-0149,Bertioga,SP,Riviera Executive,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Marcelo Dias,contato154@exemplo.com,(13) 99999-0154,Praia Grande,SP,Caiçara Executive,Google Maps,parceria_fechada,Leads Litoral SP
+Larissa Ferreira,contato169@exemplo.com,(13) 99999-0169,Bertioga,SP,Riviera Exclusive,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Luciana Dias,contato174@exemplo.com,(13) 99999-0174,Praia Grande,SP,Caiçara Conectada,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Marcelo Dias,contato199@exemplo.com,(13) 99999-0199,Praia Grande,SP,Caiçara Platinum,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Rafaela Nunes,contato212@exemplo.com,(13) 99999-0212,Santos,SP,Embaré Elite,Instagram,contato_inicial_enviado,Leads Litoral SP
+Patrícia Lima,contato214@exemplo.com,(13) 99999-0214,Praia Grande,SP,Caiçara Elite,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Ricardo Lima,contato15@exemplo.com,(13) 99999-0015,Guarujá,SP,Prime Imóveis Digital,Instagram,interessado,Leads Litoral SP
+Renato Almeida,contato19@exemplo.com,(13) 99999-0019,Santos,SP,Litoral Norte Imóveis,Website,contato_inicial_enviado,Leads Litoral SP
+Ana Barros,contato29@exemplo.com,(13) 99999-0029,Bertioga,SP,Riviera Imóveis,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Paulo Mendes,contato32@exemplo.com,(13) 99999-0032,Santos,SP,Boqueirão Imóveis,Instagram,contato_inicial_enviado,Leads Litoral SP
+Paulo Costa,contato47@exemplo.com,(13) 99999-0047,Santos,SP,Boqueirão Norte,Instagram,contato_inicial_enviado,Leads Litoral SP
+Isabela Costa,contato84@exemplo.com,(13) 99999-0084,Bertioga,SP,Riviera Blue,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Rafaela Nunes,contato87@exemplo.com,(13) 99999-0087,Santos,SP,Embaré Digital,Instagram,parceria_fechada,Leads Litoral SP
+Thiago Rocha,contato106@exemplo.com,(13) 99999-0106,Peruíbe,SP,Peruíbe Eco,Indicação,contato_inicial_enviado,Leads Litoral SP
+Patrícia Ribeiro,contato111@exemplo.com,(13) 99999-0111,Santos,SP,Gonzaga Digital,Website,contato_inicial_enviado,Leads Litoral SP
+Paulo Nunes,contato112@exemplo.com,(13) 99999-0112,Santos,SP,Embaré Tech,Instagram,contato_inicial_enviado,Leads Litoral SP
+Carlos Dias,contato126@exemplo.com,(13) 99999-0126,Peruíbe,SP,Peruíbe Natureza,Indicação,contato_inicial_enviado,Leads Litoral SP
+Bianca Martins,contato131@exemplo.com,(13) 99999-0131,Santos,SP,Gonzaga Smart,Website,contato_inicial_enviado,Leads Litoral SP
+Paulo Ferreira,contato132@exemplo.com,(13) 99999-0132,Santos,SP,Embaré Conecta,Instagram,contato_inicial_enviado,Leads Litoral SP
+Amanda Souza,contato146@exemplo.com,(13) 99999-0146,Peruíbe,SP,Peruíbe Executive,Indicação,contato_inicial_enviado,Leads Litoral SP
+Fábio Costa,contato151@exemplo.com,(13) 99999-0151,Santos,SP,Gonzaga Executive,Website,contato_inicial_enviado,Leads Litoral SP
+Patrícia Ferreira,contato152@exemplo.com,(13) 99999-0152,Santos,SP,Embaré Executive,Instagram,contato_inicial_enviado,Leads Litoral SP
+Gustavo Almeida,contato166@exemplo.com,(13) 99999-0166,Peruíbe,SP,Peruíbe Nature,Indicação,contato_inicial_enviado,Leads Litoral SP
+Bianca Martins,contato171@exemplo.com,(13) 99999-0171,Santos,SP,Gonzaga Digital,Website,contato_inicial_enviado,Leads Litoral SP
+Paulo Nunes,contato172@exemplo.com,(13) 99999-0172,Santos,SP,Embaré Tech,Instagram,parceria_fechada,Leads Litoral SP
+Gustavo Costa,contato181@exemplo.com,(13) 99999-0181,Peruíbe,SP,Peruíbe Launch,Indicação,parceria_fechada,Leads Litoral SP
+Amanda Souza,contato191@exemplo.com,(13) 99999-0191,Peruíbe,SP,Peruíbe Platinum,Indicação,contato_inicial_enviado,Leads Litoral SP
+Fábio Costa,contato196@exemplo.com,(13) 99999-0196,Santos,SP,Gonzaga Platinum,Website,contato_inicial_enviado,Leads Litoral SP
+Patrícia Ferreira,contato197@exemplo.com,(13) 99999-0197,Santos,SP,Embaré Platinum,Instagram,contato_inicial_enviado,Leads Litoral SP
+Gustavo Henrique,contato206@exemplo.com,(13) 99999-0206,Peruíbe,SP,Peruíbe Elite,Indicação,contato_inicial_enviado,Leads Litoral SP
+Camila Ribeiro,contato211@exemplo.com,(13) 99999-0211,Santos,SP,Gonzaga Elite,Website,parceria_fechada,Leads Litoral SP
+Mariana Rocha,contato31@exemplo.com,(13) 99999-0031,Santos,SP,Gonzaga Premium,Website,contato_inicial_enviado,Leads Litoral SP
+Luciana Barros,contato46@exemplo.com,(13) 99999-0046,Peruíbe,SP,Rio Preto Sol,Website,contato_inicial_enviado,Leads Litoral SP
+Camila Souza,contato41@exemplo.com,(13) 99999-0041,Peruíbe,SP,Peruíbe Norte,Indicação,contato_inicial_enviado,Leads Litoral SP
+Patrícia Almeida,contato46@exemplo.com,(13) 99999-0046,Santos,SP,Gonzaga Sul,Website,contato_inicial_enviado,Leads Litoral SP
+Felipe Nascimento,contato71@exemplo.com,(13) 99999-0071,Peruíbe,SP,Peruíbe Coast,Indicação,contato_inicial_enviado,Leads Litoral SP
+Débora Almeida,contato78@exemplo.com,(13) 99999-0078,Bertioga,SP,Bertioga Centro,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Gustavo Henrique,contato81@exemplo.com,(13) 99999-0081,Peruíbe,SP,Peruíbe Centro Digital,Indicação,parceria_fechada,Leads Litoral SP
+Camila Ribeiro,contato86@exemplo.com,(13) 99999-0086,Santos,SP,Gonzaga Norte,Website,contato_inicial_enviado,Leads Litoral SP
+Humberto Costa,contato96@exemplo.com,(13) 99999-0096,Peruíbe,SP,Peruíbe Ecologic,Indicação,contato_inicial_enviado,Leads Litoral SP
+Renato Lima,contato116@exemplo.com,(13) 99999-0116,Santos,SP,Santos Smart,Google Maps,parceria_fechada,Leads Litoral SP
+Juliano Mendes,contato136@exemplo.com,(13) 99999-0136,Santos,SP,Santos Connect,Google Maps,parceria_fechada,Leads Litoral SP
+Juliano Mendes,contato156@exemplo.com,(13) 99999-0156,Santos,SP,Santos Vision,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Paulo Mendes,contato188@exemplo.com,(13) 99999-0188,Bertioga,SP,Bertioga Platinum,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Débora Almeida,contato203@exemplo.com,(13) 99999-0203,Bertioga,SP,Bertioga Elite,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Monique Rocha,contato218@exemplo.com,(13) 99999-0218,Bertioga,SP,Bertioga Prime,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Patrícia Barros,contato13@exemplo.com,(13) 99999-0013,Santos,SP,Mar & Sol Praia,Instagram,contato_inicial_enviado,Leads Litoral SP
+Luciana Souza,contato18@exemplo.com,(13) 99999-0018,Santos,SP,Mar & Sol Litoral,Google Maps,parceria_fechada,Leads Litoral SP
+Fernanda Costa,contato26@exemplo.com,(13) 99999-0026,Peruíbe,SP,Peruíbe Sol,Indicação,contato_inicial_enviado,Leads Litoral SP
+Marina Rocha,contato39@exemplo.com,(13) 99999-0039,Santos,SP,Ponta Da Praia,Portais,contato_inicial_enviado,Leads Litoral SP
+Thiago Lima,contato83@exemplo.com,(13) 99999-0083,Itanhaém,SP,Itanhaém Norte,Instagram,contato_inicial_enviado,Leads Litoral SP
+Igor Barros,contato92@exemplo.com,(13) 99999-0092,Guarujá,SP,Guarujá Blue Tech,Instagram,contato_inicial_enviado,Leads Litoral SP
+Monique Rocha,contato93@exemplo.com,(13) 99999-0093,Bertioga,SP,Bertioga Riviera Tech,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Fábio Souza,contato98@exemplo.com,(13) 99999-0098,Itanhaém,SP,Itanhaém Premium,Instagram,contato_inicial_enviado,Leads Litoral SP
+Leonardo Azevedo,contato102@exemplo.com,(13) 99999-0102,Guarujá,SP,Guarujá Premium,Instagram,contato_inicial_enviado,Leads Litoral SP
+Fernanda Lopes,contato103@exemplo.com,(13) 99999-0103,Bertioga,SP,Bertioga Green,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Fábio Carvalho,contato108@exemplo.com,(13) 99999-0108,Itanhaém,SP,Itanhaém Premium,Instagram,contato_inicial_enviado,Leads Litoral SP
+Fernanda Rocha,contato119@exemplo.com,(13) 99999-0119,Praia Grande,SP,Praia Grande Smart,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Thiago Almeida,contato122@exemplo.com,(13) 99999-0122,Guarujá,SP,Guarujá Conecta,Instagram,parceria_fechada,Leads Litoral SP
+Fernanda Lima,contato123@exemplo.com,(13) 99999-0123,Bertioga,SP,Bertioga Inovação,LinkedIn,parceria_fechada,Leads Litoral SP
+Gustavo Costa,contato128@exemplo.com,(13) 99999-0128,Itanhaém,SP,Itanhaém Surf,Instagram,parceria_fechada,Leads Litoral SP
+Carla Nunes,contato139@exemplo.com,(13) 99999-0139,Praia Grande,SP,Praia Grande Relax,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Marina Costa,contato142@exemplo.com,(13) 99999-0142,Guarujá,SP,Guarujá Executive,Instagram,contato_inicial_enviado,Leads Litoral SP
+Paulo Mendes,contato143@exemplo.com,(13) 99999-0143,Bertioga,SP,Bertioga Executive,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Larissa Barros,contato148@exemplo.com,(13) 99999-0148,Itanhaém,SP,Itanhaém Executive,Instagram,contato_inicial_enviado,Leads Litoral SP
+Carla Nunes,contato159@exemplo.com,(13) 99999-0159,Praia Grande,SP,Praia Grande Vision,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+André Luiz,contato162@exemplo.com,(13) 99999-0162,Guarujá,SP,Guarujá Coast Imóveis,Instagram,contato_inicial_enviado,Leads Litoral SP
+Fernanda Costa,contato163@exemplo.com,(13) 99999-0163,Bertioga,SP,Bertioga Premium,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Fábio Souza,contato168@exemplo.com,(13) 99999-0168,Itanhaém,SP,Itanhaém Premium,Instagram,contato_inicial_enviado,Leads Litoral SP
+Thiago Barros,contato177@exemplo.com,(13) 99999-0177,Guarujá,SP,Guarujá Launch,Instagram,contato_inicial_enviado,Leads Litoral SP
+Fernanda Rocha,contato178@exemplo.com,(13) 99999-0178,Bertioga,SP,Bertioga Launch,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Fábio Souza,contato183@exemplo.com,(13) 99999-0183,Itanhaém,SP,Itanhaém Launch,Instagram,contato_inicial_enviado,Leads Litoral SP
+Marina Costa,contato187@exemplo.com,(13) 99999-0187,Guarujá,SP,Guarujá Platinum,Instagram,contato_inicial_enviado,Leads Litoral SP
+Larissa Barros,contato193@exemplo.com,(13) 99999-0193,Itanhaém,SP,Itanhaém Platinum,Instagram,contato_inicial_enviado,Leads Litoral SP
+Fábio Rocha,contato202@exemplo.com,(13) 99999-0202,Guarujá,SP,Guarujá Elite,Instagram,contato_inicial_enviado,Leads Litoral SP
+Thiago Lima,contato208@exemplo.com,(13) 99999-0208,Itanhaém,SP,Itanhaém Elite,Instagram,contato_inicial_enviado,Leads Litoral SP
+Igor Barros,contato217@exemplo.com,(13) 99999-0217,Guarujá,SP,Guarujá Prime,Instagram,contato_inicial_enviado,Leads Litoral SP
+Ana Lima,contato4@exemplo.com,(13) 99999-0004,Guarujá,SP,Norte Sul Praia,Portais,contato_inicial_enviado,Leads Litoral SP
+Luciana Nunes,contato9@exemplo.com,(13) 99999-0009,Santos,SP,Ocean Blue Centro,Portais,contato_inicial_enviado,Leads Litoral SP
+Fernanda Souza,contato16@exemplo.com,(13) 99999-0016,Peruíbe,SP,Prime Imóveis Site,Instagram,contato_inicial_enviado,Leads Litoral SP
+Carlos Souza,contato28@exemplo.com,(13) 99999-0028,Itanhaém,SP,Itanhaém Mar,Instagram,contato_inicial_enviado,Leads Litoral SP
+Paula Souza,contato37@exemplo.com,(13) 99999-0037,Santos,SP,José Menino Premium,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Paula Torres,contato43@exemplo.com,(13) 99999-0043,Itanhaém,SP,Gaivota Imóveis,Instagram,contato_inicial_enviado,Leads Litoral SP
+Carolina Mendes,contato50@exemplo.com,(13) 99999-0050,Santos,SP,Litoral Sul Imóveis,LinkedIn,parceria_fechada,Leads Litoral SP
+Luciana Barros,contato43@exemplo.com,(13) 99999-0043,Itanhaém,SP,Itanhaém Centro,Instagram,contato_inicial_enviado,Leads Litoral SP
+Eduardo Pires,contato67@exemplo.com,(13) 99999-0067,Guarujá,SP,Guarujá Blue,Instagram,contato_inicial_enviado,Leads Litoral SP
+Sofia Almeida,contato68@exemplo.com,(13) 99999-0068,Bertioga,SP,Bertioga Riviera,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Gustavo Lima,contato73@exemplo.com,(13) 99999-0073,Itanhaém,SP,Itanhaém View,Instagram,contato_inicial_enviado,Leads Litoral SP
+Ricardo Souza,contato118@exemplo.com,(13) 99999-0118,Bertioga,SP,Bertioga Smart,Instagram,contato_inicial_enviado,Leads Litoral SP
+Amanda Rocha,contato137@exemplo.com,(13) 99999-0137,Guarujá,SP,Guarujá Zen,Website,contato_inicial_enviado,Leads Litoral SP
+André Luiz,contato138@exemplo.com,(13) 99999-0138,Bertioga,SP,Bertioga Premium,Instagram,contato_inicial_enviado,Leads Litoral SP
+Aline Barros,contato157@exemplo.com,(13) 99999-0157,Guarujá,SP,Guarujá Vision,Website,contato_inicial_enviado,Leads Litoral SP
+Ricardo Souza,contato158@exemplo.com,(13) 99999-0158,Bertioga,SP,Bertioga Vision,Instagram,parceria_fechada,Leads Litoral SP
+Carlos Lima,contato1@exemplo.com,(13) 99999-0001,Santos,SP,Alpha Imóveis Praia,Portais,contato_inicial_enviado,Leads Litoral SP
+Fernanda Rocha,contato17@exemplo.com,(13) 99999-0017,Bertioga,SP,Região Sul Centro,Portais,parceria_fechada,Leads Litoral SP
+Paulo Ribeiro,contato22@exemplo.com,(13) 99999-0022,Bertioga,SP,Maresias Imóveis,Instagram,contato_inicial_enviado,Leads Litoral SP
+Luciana Nunes,contato27@exemplo.com,(13) 99999-0027,Mongaguá,SP,Mongaguá Atlântica,Portais,contato_inicial_enviado,Leads Litoral SP
+Renata Lima,contato36@exemplo.com,(13) 99999-0036,Praia Grande,SP,Vila Tupi Imóveis,Website,contato_inicial_enviado,Leads Litoral SP
+Ricardo Nunes,contato44@exemplo.com,(13) 99999-0044,Itanhaém,SP,Baixio Digital,Google Maps,parceria_fechada,Leads Litoral SP
+Ricardo Souza,contato49@exemplo.com,(13) 99999-0049,Mongaguá,SP,Jussara Digital,Google Ads,contato_inicial_enviado,Leads Litoral SP
+Ricardo Nunes,contato42@exemplo.com,(13) 99999-0042,Mongaguá,SP,Mongaguá Sul,Portais,contato_inicial_enviado,Leads Litoral SP
+Ricardo Almeida,contato50@exemplo.com,(13) 99999-0050,Peruíbe,SP,Barra Peruíbe Sul,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Aline Torres,contato72@exemplo.com,(13) 99999-0072,Mongaguá,SP,Mongaguá Beach,Portais,contato_inicial_enviado,Leads Litoral SP
+Lívia Souza,contato82@exemplo.com,(13) 99999-0082,Mongaguá,SP,Mongaguá Centro,Portais,contato_inicial_enviado,Leads Litoral SP
+Marcelo Barros,contato90@exemplo.com,(13) 99999-0090,Peruíbe,SP,Barra Norte,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Catarina Lima,contato97@exemplo.com,(13) 99999-0097,Mongaguá,SP,Mongaguá Tropical,Portais,contato_inicial_enviado,Leads Litoral SP
+Camila Ferreira,contato107@exemplo.com,(13) 99999-0107,Mongaguá,SP,Mongaguá Blue,Portais,contato_inicial_enviado,Leads Litoral SP
+Marcelo Almeida,contato115@exemplo.com,(13) 99999-0115,Peruíbe,SP,Barra Norte,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Aline Barros,contato117@exemplo.com,(13) 99999-0117,Guarujá,SP,Guarujá Smart,Website,contato_inicial_enviado,Leads Litoral SP
+Aline Souza,contato127@exemplo.com,(13) 99999-0127,Mongaguá,SP,Mongaguá Relax,Portais,contato_inicial_enviado,Leads Litoral SP
+Fernanda Costa,contato135@exemplo.com,(13) 99999-0135,Peruíbe,SP,Barra Digital,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Ricardo Rocha,contato147@exemplo.com,(13) 99999-0147,Mongaguá,SP,Mongaguá Executive,Portais,contato_inicial_enviado,Leads Litoral SP
+Fernanda Costa,contato155@exemplo.com,(13) 99999-0155,Peruíbe,SP,Barra Executive,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Camila Rocha,contato167@exemplo.com,(13) 99999-0167,Mongaguá,SP,Mongaguá Blue,Portais,contato_inicial_enviado,Leads Litoral SP
+Marcelo Almeida,contato175@exemplo.com,(13) 99999-0175,Peruíbe,SP,Barra Norte,LinkedIn,parceria_fechada,Leads Litoral SP
+Camila Lima,contato182@exemplo.com,(13) 99999-0182,Mongaguá,SP,Mongaguá Launch,Portais,contato_inicial_enviado,Leads Litoral SP
+Ricardo Rocha,contato192@exemplo.com,(13) 99999-0192,Mongaguá,SP,Mongaguá Platinum,Portais,contato_inicial_enviado,Leads Litoral SP
+Fernanda Costa,contato200@exemplo.com,(13) 99999-0200,Peruíbe,SP,Barra Platinum,LinkedIn,parceria_fechada,Leads Litoral SP
+Lívia Souza,contato207@exemplo.com,(13) 99999-0207,Mongaguá,SP,Mongaguá Elite,Portais,contato_inicial_enviado,Leads Litoral SP
+Marcelo Barros,contato215@exemplo.com,(13) 99999-0215,Peruíbe,SP,Barra Elite,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Ana Lima,contato2@exemplo.com,(13) 99999-0002,Mongaguá,SP,Região Sul Digital,Indicação,contato_inicial_enviado,Leads Litoral SP
+Maria Barros,contato3@exemplo.com,(13) 99999-0003,Santos,SP,Ocean Blue Digital,Instagram,parceria_fechada,Leads Litoral SP
+Luciana Costa,contato12@exemplo.com,(13) 99999-0012,São Vicente,SP,Norte Sul Site,Portais,contato_inicial_enviado,Leads Litoral SP
+Fernanda Nunes,contato14@exemplo.com,(13) 99999-0014,Bertioga,SP,Sol & Mar Centro,Instagram,contato_inicial_enviado,Leads Litoral SP
+Carlos Almeida,contato35@exemplo.com,(13) 99999-0035,Peruíbe,SP,Barra De Peruíbe,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Fernanda Lima,contato48@exemplo.com,(13) 99999-0048,Mongaguá,SP,Balneário Conchas,Instagram,contato_inicial_enviado,Leads Litoral SP
+Juliana Mendes,contato37@exemplo.com,(13) 99999-0037,Bertioga,SP,Maresias Tech,Instagram,contato_inicial_enviado,Leads Litoral SP
+Fábio Rocha,contato77@exemplo.com,(13) 99999-0077,Guarujá,SP,Guarujá Norte Digital,Instagram,parceria_fechada,Leads Litoral SP
+Bruno Mendes,contato79@exemplo.com,(13) 99999-0079,Praia Grande,SP,Praia Grande Sul,Portais,contato_inicial_enviado,Leads Litoral SP
+André Luiz,contato104@exemplo.com,(13) 99999-0104,Praia Grande,SP,Praia Grande Business,Portais,contato_inicial_enviado,Leads Litoral SP
+Ricardo Nunes,contato124@exemplo.com,(13) 99999-0124,Praia Grande,SP,Praia Grande Estrutura,Portais,contato_inicial_enviado,Leads Litoral SP
+Fernanda Lima,contato144@exemplo.com,(13) 99999-0144,Praia Grande,SP,Praia Grande Executive,Portais,contato_inicial_enviado,Leads Litoral SP
+Ricardo Lima,contato164@exemplo.com,(13) 99999-0164,Praia Grande,SP,Praia Grande Smart,Portais,contato_inicial_enviado,Leads Litoral SP
+Ricardo Mendes,contato179@exemplo.com,(13) 99999-0179,Praia Grande,SP,Praia Grande Launch,Portais,contato_inicial_enviado,Leads Litoral SP
+Fernanda Lima,contato189@exemplo.com,(13) 99999-0189,Praia Grande,SP,Praia Grande Platinum,Portais,contato_inicial_enviado,Leads Litoral SP
+Bruno Mendes,contato204@exemplo.com,(13) 99999-0204,Praia Grande,SP,Praia Grande Elite,Portais,contato_inicial_enviado,Leads Litoral SP
+Rodrigo Dias,contato219@exemplo.com,(13) 99999-0219,Praia Grande,SP,Praia Grande Prime,Portais,parceria_fechada,Leads Litoral SP
+Maria Rocha,contato5@exemplo.com,(13) 99999-0005,São Vicente,SP,Beta Imóveis Praia,Instagram,contato_inicial_enviado,Leads Litoral SP
+Ricardo Mendes,contato7@exemplo.com,(13) 99999-0007,Bertioga,SP,Região Sul Digital,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Luciana Mendes,contato11@exemplo.com,(13) 99999-0011,Santos,SP,Imobiliária Litoral Litoral,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Amanda Costa,contato20@exemplo.com,(13) 99999-0020,Praia Grande,SP,Costa Azul Imóveis,Google Ads,contato_inicial_enviado,Leads Litoral SP
+Paulo Almeida,contato47@exemplo.com,(13) 99999-0047,Mongaguá,SP,Vila São Paulo,Portais,contato_inicial_enviado,Leads Litoral SP
+Marcos Vinícius,contato69@exemplo.com,(13) 99999-0069,Praia Grande,SP,Praia Grande Park,Portais,contato_inicial_enviado,Leads Litoral SP
+Rodrigo Dias,contato94@exemplo.com,(13) 99999-0094,Praia Grande,SP,Praia Grande Center,Portais,contato_inicial_enviado,Leads Litoral SP
+Ricardo Costa,contato38@exemplo.com,(13) 99999-0038,São Vicente,SP,Jardim Rio Branco,Instagram,contato_inicial_enviado,Leads Litoral SP
+Bianca Ramos,contato70@exemplo.com,(13) 99999-0070,São Vicente,SP,São Vicente Bay,Google Maps,parceria_fechada,Leads Litoral SP
+Carlos Almeida,contato190@exemplo.com,(13) 99999-0190,São Vicente,SP,São Vicente Platinum,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Carla Dias,contato205@exemplo.com,(13) 99999-0205,São Vicente,SP,São Vicente Elite,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Priscila Nunes,contato220@exemplo.com,(13) 99999-0220,São Vicente,SP,São Vicente Prime,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Patrícia Lima,contato25@exemplo.com,(13) 99999-0025,São Vicente,SP,São Vicente Premium,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Lucas Mendes,contato40@exemplo.com,(13) 99999-0040,Mongaguá,SP,Agenor De Campos,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Fábio Rocha,contato42@exemplo.com,(13) 99999-0042,Itanhaém,SP,Jardim Grandesp,Portais,parceria_fechada,Leads Litoral SP
+Camila Costa,contato45@exemplo.com,(13) 99999-0045,Peruíbe,SP,Itinguçu Imóveis,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+André Costa,contato38@exemplo.com,(13) 99999-0038,Guarujá,SP,Guarujá Mar Digital,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Paulo Rocha,contato40@exemplo.com,(13) 99999-0040,São Vicente,SP,São Vicente Sul,Google Maps,parceria_fechada,Leads Litoral SP
+Carla Dias,contato80@exemplo.com,(13) 99999-0080,São Vicente,SP,São Vicente Norte,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Priscila Nunes,contato95@exemplo.com,(13) 99999-0095,São Vicente,SP,São Vicente Green,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Juliana Martins,contato105@exemplo.com,(13) 99999-0105,São Vicente,SP,São Vicente Bay,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Patrícia Mendes,contato125@exemplo.com,(13) 99999-0125,São Vicente,SP,São Vicente Conectada,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Carlos Almeida,contato145@exemplo.com,(13) 99999-0145,São Vicente,SP,São Vicente Executive,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Carla Dias,contato165@exemplo.com,(13) 99999-0165,São Vicente,SP,São Vicente Connect,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Carla Dias,contato180@exemplo.com,(13) 99999-0180,São Vicente,SP,São Vicente Launch,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Camila Torres,contato23@exemplo.com,(13) 99999-0023,Guarujá,SP,Enseada Digital,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Ricardo Lima,contato30@exemplo.com,(13) 99999-0030,Guarujá,SP,Tombo Imóveis,Google Maps,parceria_fechada,Leads Litoral SP
+Alexandre Pires,contato85@exemplo.com,(13) 99999-0085,Guarujá,SP,Tombo Digital,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Rafael Almeida,contato110@exemplo.com,(13) 99999-0110,Guarujá,SP,Tombo Beach,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Carlos Mendes,contato120@exemplo.com,(13) 99999-0120,São Vicente,SP,São Vicente Smart,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Fábio Ribeiro,contato130@exemplo.com,(13) 99999-0130,Guarujá,SP,Tombo Surf,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Rodrigo Almeida,contato140@exemplo.com,(13) 99999-0140,São Vicente,SP,São Vicente Premium,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Bianca Martins,contato150@exemplo.com,(13) 99999-0150,Guarujá,SP,Tombo Executive,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Rodrigo Almeida,contato160@exemplo.com,(13) 99999-0160,São Vicente,SP,São Vicente Vision,Google Maps,parceria_fechada,Leads Litoral SP
+Rafael Barros,contato170@exemplo.com,(13) 99999-0170,Guarujá,SP,Tombo Beach,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Rafael Almeida,contato185@exemplo.com,(13) 99999-0185,Guarujá,SP,Tombo Launch,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Bianca Martins,contato195@exemplo.com,(13) 99999-0195,Guarujá,SP,Tombo Platinum,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Alexandre Pires,contato210@exemplo.com,(13) 99999-0210,Guarujá,SP,Tombo Elite,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Carlos Mendes,contato45@exemplo.com,(13) 99999-0045,Guarujá,SP,Tombo Norte,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Rafael Souza,contato75@exemplo.com,(13) 99999-0075,Guarujá,SP,Tombo Beach,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Daniel Almeida,contato88@exemplo.com,(13) 99999-0088,São Vicente,SP,Catiapoã Sul,Portais,contato_inicial_enviado,Leads Litoral SP
+Caio Ribeiro,contato100@exemplo.com,(13) 99999-0100,Guarujá,SP,Tombo Exclusive,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Renata Almeida,contato133@exemplo.com,(13) 99999-0133,São Vicente,SP,Catiapoã Nature,Portais,contato_inicial_enviado,Leads Litoral SP
+Fernanda Costa,contato173@exemplo.com,(13) 99999-0173,São Vicente,SP,Catiapoã Nature,Portais,contato_inicial_enviado,Leads Litoral SP
+Renata Almeida,contato198@exemplo.com,(13) 99999-0198,São Vicente,SP,Catiapoã Platinum,Portais,contato_inicial_enviado,Leads Litoral SP
+Daniel Almeida,contato213@exemplo.com,(13) 99999-0213,São Vicente,SP,Catiapoã Elite,Portais,contato_inicial_enviado,Leads Litoral SP
+Fernanda Costa,contato33@exemplo.com,(13) 99999-0033,São Vicente,SP,Catiapoã Digital,Portais,parceria_fechada,Leads Litoral SP
+Fernanda Rocha,contato48@exemplo.com,(13) 99999-0048,São Vicente,SP,Catiapoã Norte,Portais,contato_inicial_enviado,Leads Litoral SP
+Fernanda Costa,contato113@exemplo.com,(13) 99999-0113,São Vicente,SP,Catiapoã Digital,Portais,contato_inicial_enviado,Leads Litoral SP
+Renata Almeida,contato153@exemplo.com,(13) 99999-0153,São Vicente,SP,Catiapoã Executive,Portais,contato_inicial_enviado,Leads Litoral SP
+Ricardo Pereira,contato221@exemplo.com,(11) 91884-9240,Bertioga,SP,Região Sul Digital,Instagram,contato_inicial_enviado,Leads Litoral SP
+Maria Gomes,contato222@exemplo.com,(11) 91375-1490,Itanhaém,SP,Realize Ii Prime,Portais,parceria_fechada,Leads Litoral SP
+Bruno Souza,contato223@exemplo.com,(13) 93280-7875,Itanhaém,SP,Edifica Praia View,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Ricardo Pereira,contato224@exemplo.com,(11) 96558-5448,Mongaguá,SP,Beta Imóveis View,Instagram,contato_inicial_enviado,Leads Litoral SP
+Maria Barros,contato225@exemplo.com,(13) 93555-1682,Santos,SP,Sol & Mar Blue,Indicação,contato_inicial_enviado,Leads Litoral SP
+Ana Souza,contato226@exemplo.com,(13) 91585-9440,Peruíbe,SP,Caiçara Digital Prime,Google Maps,parceria_fechada,Leads Litoral SP
+Patrícia Mendes,contato227@exemplo.com,(11) 99676-9124,Bertioga,SP,Região Sul Digital,Instagram,contato_inicial_enviado,Leads Litoral SP
+Juliana Barros,contato228@exemplo.com,(13) 96577-7978,Peruíbe,SP,Caiçara Digital Digital,Website,contato_inicial_enviado,Leads Litoral SP
+Ricardo Gomes,contato229@exemplo.com,(13) 91866-2876,Itanhaém,SP,Porto Da Lua Prime,Portais,contato_inicial_enviado,Leads Litoral SP
+Luciana Gomes,contato230@exemplo.com,(11) 91103-8375,Bertioga,SP,Edifica Praia Digital,Instagram,contato_inicial_enviado,Leads Litoral SP
+Patrícia Barros,contato231@exemplo.com,(11) 96666-9087,Bertioga,SP,Caiçara Digital View,Google Maps,parceria_fechada,Leads Litoral SP
+Ricardo Rocha,contato232@exemplo.com,(13) 98205-5018,Bertioga,SP,Praia Grande Site View,Portais,contato_inicial_enviado,Leads Litoral SP
+Luciana Nunes,contato233@exemplo.com,(13) 93236-9221,Itanhaém,SP,Riviera Blue Digital,Portais,contato_inicial_enviado,Leads Litoral SP
+Ricardo Gomes,contato234@exemplo.com,(11) 97015-1198,Mongaguá,SP,Mar & Sol Site,Instagram,contato_inicial_enviado,Leads Litoral SP
+Bruno Costa,contato235@exemplo.com,(13) 98059-7278,Praia Grande,SP,Santos Tower Centro,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Patrícia Gomes,contato236@exemplo.com,(11) 98824-2492,Guarujá,SP,Praia Grande Site Digital,Website,contato_inicial_enviado,Leads Litoral SP
+Bruno Costa,contato237@exemplo.com,(11) 92102-6441,Santos,SP,Santos Tower Prime,Instagram,contato_inicial_enviado,Leads Litoral SP
+João Souza,contato238@exemplo.com,(11) 94670-5284,Bertioga,SP,Caiçara Digital Blue,Website,contato_inicial_enviado,Leads Litoral SP
+Fernanda Pereira,contato239@exemplo.com,(11) 93644-1364,São Vicente,SP,Barra Digital Praia,Indicação,parceria_fechada,Leads Litoral SP
+Ricardo Lima,contato240@exemplo.com,(11) 94911-3524,Guarujá,SP,Praia Grande Site View,Instagram,contato_inicial_enviado,Leads Litoral SP
+Ana Costa,contato241@exemplo.com,(11) 92039-5729,Guarujá,SP,Norte Sul Blue,Instagram,contato_inicial_enviado,Leads Litoral SP
+Ana Barros,contato242@exemplo.com,(11) 91716-1799,Itanhaém,SP,Prime Imóveis Digital,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Carlos Costa,contato243@exemplo.com,(13) 92099-4872,Itanhaém,SP,Norte Sul Prime,Indicação,contato_inicial_enviado,Leads Litoral SP
+Luciana Gomes,contato244@exemplo.com,(13) 92759-5312,Praia Grande,SP,Riviera Blue Blue,Indicação,contato_inicial_enviado,Leads Litoral SP
+João Gomes,contato245@exemplo.com,(13) 95322-8197,Santos,SP,Região Sul Prime,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Luciana Pereira,contato246@exemplo.com,(13) 93939-9632,Bertioga,SP,Beta Imóveis Blue,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Ana Souza,contato247@exemplo.com,(11) 97031-1873,Mongaguá,SP,Praia Grande Site Site,Portais,parceria_fechada,Leads Litoral SP
+Bruno Lima,contato248@exemplo.com,(11) 98817-7441,Bertioga,SP,Prime Imóveis Centro,Website,contato_inicial_enviado,Leads Litoral SP
+Juliana Mendes,contato249@exemplo.com,(13) 93316-7869,Praia Grande,SP,Caiçara Digital Site,LinkedIn,parceria_fechada,Leads Litoral SP
+Patrícia Silva,contato250@exemplo.com,(11) 97246-1822,São Vicente,SP,Costa Verde Litoral,Instagram,contato_inicial_enviado,Leads Litoral SP
+Luciana Souza,contato251@exemplo.com,(13) 98966-8816,Praia Grande,SP,Norte Sul Prime,Website,contato_inicial_enviado,Leads Litoral SP
+Ricardo Costa,contato252@exemplo.com,(11) 98040-5372,Peruíbe,SP,Caiçara Digital Site,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Ana Nunes,contato253@exemplo.com,(11) 98270-5426,Guarujá,SP,Edifica Praia Centro,Indicação,parceria_fechada,Leads Litoral SP
+Juliana Mendes,contato254@exemplo.com,(11) 98811-3908,Santos,SP,Riviera Blue View,Indicação,contato_inicial_enviado,Leads Litoral SP
+Carlos Nunes,contato255@exemplo.com,(11) 94253-7725,Guarujá,SP,Beta Imóveis Blue,Indicação,contato_inicial_enviado,Leads Litoral SP
+João Costa,contato256@exemplo.com,(11) 96021-5130,Peruíbe,SP,Região Sul Site,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Carlos Nunes,contato257@exemplo.com,(13) 92191-6428,Praia Grande,SP,Norte Sul Blue,Website,contato_inicial_enviado,Leads Litoral SP
+Ricardo Mendes,contato258@exemplo.com,(13) 92751-8996,Itanhaém,SP,Sol & Mar Digital,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Luciana Lima,contato259@exemplo.com,(13) 99944-3168,São Vicente,SP,Alpha Imóveis View,Instagram,contato_inicial_enviado,Leads Litoral SP
+Carlos Barros,contato260@exemplo.com,(11) 93028-9962,São Vicente,SP,Santos Tower Digital,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Juliana Rocha,contato261@exemplo.com,(11) 99788-9169,Peruíbe,SP,Mar & Sol Digital,Portais,contato_inicial_enviado,Leads Litoral SP
+João Alves,contato262@exemplo.com,(11) 96450-3597,Mongaguá,SP,Ocean Blue Prime,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Luciana Gomes,contato263@exemplo.com,(13) 99792-3938,Itanhaém,SP,Litoral Premium Imóveis,Indicação,contato_inicial_enviado,Leads Litoral SP
+Fernanda Nunes,contato264@exemplo.com,(13) 92262-8167,Peruíbe,SP,Barra Digital Site,Indicação,parceria_fechada,Leads Litoral SP
+Maria Costa,contato265@exemplo.com,(13) 92655-2606,Guarujá,SP,Beta Imóveis Site,Indicação,parceria_fechada,Leads Litoral SP
+Ana Rocha,contato266@exemplo.com,(13) 96174-8484,Peruíbe,SP,Caiçara Digital View,Website,contato_inicial_enviado,Leads Litoral SP
+Maria Rocha,contato267@exemplo.com,(13) 99846-3928,São Vicente,SP,Porto Da Lua Site,Portais,contato_inicial_enviado,Leads Litoral SP
+Luciana Silva,contato268@exemplo.com,(13) 93611-3263,Guarujá,SP,Alpha Imóveis Centro,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Carlos Alves,contato269@exemplo.com,(13) 91330-9492,Bertioga,SP,Santos Tower Blue,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Renata Nunes,contato270@exemplo.com,(11) 94699-4722,Itanhaém,SP,Prime Imóveis Digital,Instagram,contato_inicial_enviado,Leads Litoral SP
+Fernanda Rocha,contato271@exemplo.com,(11) 97759-5926,Itanhaém,SP,Costa Azul Site,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Ricardo Gomes,contato272@exemplo.com,(11) 95344-6822,Peruíbe,SP,Praia Grande Site Imóveis,Website,contato_inicial_enviado,Leads Litoral SP
+Ricardo Souza,contato273@exemplo.com,(13) 98486-1289,Peruíbe,SP,Mar & Sol Site,Portais,contato_inicial_enviado,Leads Litoral SP
+João Lima,contato274@exemplo.com,(11) 97487-4513,Peruíbe,SP,Ocean Blue Centro,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Renata Mendes,contato275@exemplo.com,(11) 95220-1603,Bertioga,SP,Ocean Blue Imóveis,Website,contato_inicial_enviado,Leads Litoral SP
+Bruno Gomes,contato276@exemplo.com,(13) 99381-4351,Mongaguá,SP,Norte Imóveis View,Website,contato_inicial_enviado,Leads Litoral SP
+Marcelo Mendes,contato277@exemplo.com,(11) 97039-1187,Bertioga,SP,Ocean Blue View,Website,contato_inicial_enviado,Leads Litoral SP
+Fernanda Barros,contato278@exemplo.com,(13) 92368-9490,Praia Grande,SP,Riviera Blue Site,Indicação,contato_inicial_enviado,Leads Litoral SP
+Ana Pereira,contato279@exemplo.com,(13) 96350-5186,Itanhaém,SP,Caiçara Digital View,Portais,contato_inicial_enviado,Leads Litoral SP
+Ana Pereira,contato280@exemplo.com,(13) 92580-3284,Itanhaém,SP,Porto Da Lua Blue,Indicação,contato_inicial_enviado,Leads Litoral SP
+Marcelo Souza,contato281@exemplo.com,(11) 92119-5470,São Vicente,SP,Riviera Blue Blue,Instagram,contato_inicial_enviado,Leads Litoral SP
+Fernanda Pereira,contato282@exemplo.com,(13) 99138-8339,Santos,SP,Prime Imóveis Centro,Website,contato_inicial_enviado,Leads Litoral SP
+Renata Souza,contato283@exemplo.com,(11) 98882-7775,Mongaguá,SP,Recife Imóveis Blue,Google Maps,parceria_fechada,Leads Litoral SP
+João Rocha,contato284@exemplo.com,(13) 91511-7774,Praia Grande,SP,Norte Sul Centro,Google Maps,parceria_fechada,Leads Litoral SP
+Maria Barros,contato285@exemplo.com,(13) 98854-5112,Mongaguá,SP,Costa Azul Digital,Indicação,contato_inicial_enviado,Leads Litoral SP
+Marcelo Pereira,contato286@exemplo.com,(11) 99494-7198,São Vicente,SP,Praia Grande Site Site,Portais,contato_inicial_enviado,Leads Litoral SP
+Ana Alves,contato287@exemplo.com,(13) 95812-6854,Bertioga,SP,Itanhaém Premium Blue,Portais,contato_inicial_enviado,Leads Litoral SP
+Fernanda Costa,contato288@exemplo.com,(13) 93802-3460,Guarujá,SP,Praia Grande Site Litoral,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Fernanda Alves,contato289@exemplo.com,(13) 97311-9125,Bertioga,SP,Edifica Praia Imóveis,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Maria Costa,contato290@exemplo.com,(11) 93628-9268,Guarujá,SP,Prime Imóveis Litoral,Website,parceria_fechada,Leads Litoral SP
+Larissa Gomes,contato291@exemplo.com,(11) 92092-5618,Bertioga,SP,Riviera Blue Praia,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+João Nunes,contato292@exemplo.com,(11) 91144-3808,Itanhaém,SP,Região Sul Litoral,Indicação,contato_inicial_enviado,Leads Litoral SP
+Maria Costa,contato293@exemplo.com,(11) 91070-5897,Mongaguá,SP,Recife Imóveis Praia,Instagram,contato_inicial_enviado,Leads Litoral SP
+Maria Nunes,contato294@exemplo.com,(11) 98339-5685,Peruíbe,SP,Costa Do Mar Centro,Instagram,contato_inicial_enviado,Leads Litoral SP
+Ricardo Lima,contato295@exemplo.com,(13) 93356-6018,Bertioga,SP,Norte Imóveis Prime,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Ricardo Silva,contato296@exemplo.com,(11) 94659-3308,Praia Grande,SP,Praia Digital Litoral,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Luciana Gomes,contato297@exemplo.com,(11) 97048-8262,Guarujá,SP,Beta Imóveis Litoral,Indicação,contato_inicial_enviado,Leads Litoral SP
+Ricardo Gomes,contato298@exemplo.com,(13) 96720-1611,Bertioga,SP,Norte Imóveis Site,Indicação,contato_inicial_enviado,Leads Litoral SP
+Patrícia Silva,contato299@exemplo.com,(11) 96315-8285,Mongaguá,SP,Porto Da Lua Centro,Website,contato_inicial_enviado,Leads Litoral SP
+Juliana Souza,contato300@exemplo.com,(13) 95815-8001,Itanhaém,SP,Praia Digital View,Portais,contato_inicial_enviado,Leads Litoral SP
+Maria Pereira,contato301@exemplo.com,(11) 97079-9313,Itanhaém,SP,Litoral Premium Site,Portais,contato_inicial_enviado,Leads Litoral SP
+Luciana Pereira,contato302@exemplo.com,(11) 92828-5860,Praia Grande,SP,Costa Verde Digital,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Bruno Teixeira,contato303@exemplo.com,(13) 98452-7334,Guarujá,SP,Mar & Sol View,Website,parceria_fechada,Leads Litoral SP
+Carlos Alves,contato304@exemplo.com,(13) 93507-7098,Itanhaém,SP,Praia Grande Site View,Website,contato_inicial_enviado,Leads Litoral SP
+Luciana Souza,contato305@exemplo.com,(13) 95226-5217,Santos,SP,Atlântico Imóveis Centro,Instagram,contato_inicial_enviado,Leads Litoral SP
+Larissa Lopes,contato306@exemplo.com,(13) 98105-2482,Guarujá,SP,Costa Verde Imóveis,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Paulo Barros,contato307@exemplo.com,(13) 95284-6766,Santos,SP,Sul Imóveis Imóveis,Website,contato_inicial_enviado,Leads Litoral SP
+Larissa Gomes,contato308@exemplo.com,(13) 93262-8768,Itanhaém,SP,Mar Brasil Digital,Instagram,parceria_fechada,Leads Litoral SP
+Bruno Lima,contato309@exemplo.com,(11) 97458-7245,Mongaguá,SP,Caiçara Digital Litoral,Indicação,parceria_fechada,Leads Litoral SP
+Juliana Rocha,contato310@exemplo.com,(11) 95231-3592,Itanhaém,SP,Litoral Brasil Prime,Portais,parceria_fechada,Leads Litoral SP
+João Mendes,contato311@exemplo.com,(13) 99618-4417,Mongaguá,SP,Edifica Praia Prime,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Ana Lopes,contato312@exemplo.com,(11) 98790-8788,Santos,SP,Praia Grande Site Litoral,Google Maps,parceria_fechada,Leads Litoral SP
+Luciana Pereira,contato313@exemplo.com,(11) 99524-2540,Peruíbe,SP,Ocean Blue Centro,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Fernanda Mendes,contato314@exemplo.com,(11) 91216-8399,Mongaguá,SP,Norte Sul Praia,LinkedIn,parceria_fechada,Leads Litoral SP
+Patrícia Alves,contato315@exemplo.com,(13) 97721-4776,Santos,SP,Realize Ii Imóveis,Instagram,contato_inicial_enviado,Leads Litoral SP
+Juliana Silva,contato316@exemplo.com,(11) 94413-2097,Bertioga,SP,Realize Ii Site,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Patrícia Ferreira,contato317@exemplo.com,(11) 98399-5059,Guarujá,SP,Litoral Brasil Prime,Instagram,contato_inicial_enviado,Leads Litoral SP
+Ana Nunes,contato318@exemplo.com,(13) 92887-7643,Mongaguá,SP,Norte Sul Praia,Portais,parceria_fechada,Leads Litoral SP
+Fernanda Pereira,contato319@exemplo.com,(11) 98933-2983,Santos,SP,Mar & Sol Imóveis,Portais,parceria_fechada,Leads Litoral SP
+Paulo Rocha,contato320@exemplo.com,(13) 95136-5336,Praia Grande,SP,Barra Digital Praia,Portais,contato_inicial_enviado,Leads Litoral SP
+Patrícia Lima,contato321@exemplo.com,(13) 92413-6870,Bertioga,SP,Riviera Blue Blue,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Juliana Silva,contato322@exemplo.com,(11) 94872-6057,Bertioga,SP,Realize Ii Litoral,Portais,contato_inicial_enviado,Leads Litoral SP
+Ana Gomes,contato323@exemplo.com,(11) 96521-7216,Santos,SP,Beta Imóveis Site,Portais,contato_inicial_enviado,Leads Litoral SP
+Maria Lima,contato324@exemplo.com,(11) 97866-3607,Itanhaém,SP,Barra Digital Centro,Website,contato_inicial_enviado,Leads Litoral SP
+Carlos Silva,contato325@exemplo.com,(11) 93733-1232,Praia Grande,SP,Mar & Sol Site,Indicação,contato_inicial_enviado,Leads Litoral SP
+João Lima,contato326@exemplo.com,(13) 97986-3484,São Vicente,SP,Região Sul Digital,Instagram,contato_inicial_enviado,Leads Litoral SP
+João Gomes,contato327@exemplo.com,(11) 94245-5042,Praia Grande,SP,Riviera Blue Digital,Indicação,contato_inicial_enviado,Leads Litoral SP
+Juliana Nunes,contato328@exemplo.com,(13) 98517-2496,Peruíbe,SP,Ocean Blue Prime,Instagram,contato_inicial_enviado,Leads Litoral SP
+Maria Rocha,contato329@exemplo.com,(11) 91053-4012,Santos,SP,Ocean Blue View,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Carlos Rocha,contato330@exemplo.com,(13) 98097-4426,Mongaguá,SP,Norte Sul Digital,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Luciana Lima,contato331@exemplo.com,(11) 98247-2125,Mongaguá,SP,Riviera Blue Centro,Instagram,contato_inicial_enviado,Leads Litoral SP
+João Pereira,contato332@exemplo.com,(11) 99041-3290,Mongaguá,SP,Edifica Praia Prime,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+João Rocha,contato333@exemplo.com,(11) 95758-1024,Guarujá,SP,Mar & Sol Centro,Indicação,contato_inicial_enviado,Leads Litoral SP
+Patrícia Silva,contato334@exemplo.com,(13) 91698-7471,Peruíbe,SP,Alpha Imóveis Centro,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Ricardo Lima,contato335@exemplo.com,(13) 94027-9957,Bertioga,SP,Riviera Blue Digital,Website,contato_inicial_enviado,Leads Litoral SP
+João Barros,contato336@exemplo.com,(11) 96233-1297,Praia Grande,SP,Edifica Praia Prime,Website,contato_inicial_enviado,Leads Litoral SP
+Bruno Mendes,contato337@exemplo.com,(11) 97343-3150,Praia Grande,SP,Região Sul Site,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Ana Rocha,contato338@exemplo.com,(11) 97427-9546,São Vicente,SP,Mar & Sol Site,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Maria Barros,contato339@exemplo.com,(11) 95235-6320,Guarujá,SP,Santos Tower Digital,Website,contato_inicial_enviado,Leads Litoral SP
+Ana Barros,contato340@exemplo.com,(13) 96817-4456,Bertioga,SP,Santos Tower Site,Website,contato_inicial_enviado,Leads Litoral SP
+Juliana Rocha,contato341@exemplo.com,(11) 93881-2261,Santos,SP,Norte Sul Prime,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Ricardo Nunes,contato342@exemplo.com,(11) 98613-6565,Itanhaém,SP,Praia Grande Site View,Portais,contato_inicial_enviado,Leads Litoral SP
+João Alves,contato343@exemplo.com,(13) 95648-3218,Bertioga,SP,Beta Imóveis Centro,Google Maps,parceria_fechada,Leads Litoral SP
+Ricardo Lima,contato344@exemplo.com,(13) 98434-6156,Guarujá,SP,Norte Sul Imóveis,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Ricardo Silva,contato345@exemplo.com,(11) 99248-3475,Santos,SP,Riviera Blue View,Indicação,contato_inicial_enviado,Leads Litoral SP
+Fernanda Souza,contato346@exemplo.com,(11) 93051-3390,Praia Grande,SP,Beta Imóveis View,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Larissa Souza,contato347@exemplo.com,(13) 93703-1676,Praia Grande,SP,Riviera Blue Centro,Portais,contato_inicial_enviado,Leads Litoral SP
+Paulo Souza,contato348@exemplo.com,(11) 95680-3548,Peruíbe,SP,Mar & Sol Centro,Google Maps,contato_inicial_enviado,Leads Litoral SP
+João Costa,contato349@exemplo.com,(13) 95597-7249,Bertioga,SP,Prime Imóveis Blue,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Paulo Pereira,contato350@exemplo.com,(13) 99100-8283,Itanhaém,SP,Costa Verde Litoral,Website,parceria_fechada,Leads Litoral SP
+João Souza,contato351@exemplo.com,(13) 94063-8697,Bertioga,SP,Riviera Blue Centro,Website,contato_inicial_enviado,Leads Litoral SP
+Maria Costa,contato352@exemplo.com,(13) 93801-8520,Praia Grande,SP,Norte Sul Digital,Instagram,contato_inicial_enviado,Leads Litoral SP
+Bruno Lopes,contato353@exemplo.com,(11) 99191-8737,Guarujá,SP,Mar & Sol Litoral,Website,contato_inicial_enviado,Leads Litoral SP
+Luciana Costa,contato354@exemplo.com,(11) 96151-6269,São Vicente,SP,Barra Digital Digital,Portais,contato_inicial_enviado,Leads Litoral SP
+Luciana Barros,contato355@exemplo.com,(11) 93659-3341,Peruíbe,SP,Realize Ii Site,Website,contato_inicial_enviado,Leads Litoral SP
+Juliana Gomes,contato356@exemplo.com,(11) 94255-2011,Guarujá,SP,Sol & Mar Prime,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Ricardo Alves,contato357@exemplo.com,(13) 95183-7557,Santos,SP,Prime Imóveis Prime,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Ana Barros,contato358@exemplo.com,(11) 96927-1840,Santos,SP,Beta Imóveis Site,Instagram,contato_inicial_enviado,Leads Litoral SP
+Patrícia Mendes,contato359@exemplo.com,(11) 93350-3959,Santos,SP,Praia Grande Site Site,Portais,contato_inicial_enviado,Leads Litoral SP
+Larissa Rocha,contato360@exemplo.com,(11) 95188-6001,Mongaguá,SP,Alpha Imóveis Site,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Luciana Mendes,contato361@exemplo.com,(11) 96813-8216,Itanhaém,SP,Santos Tower Prime,Facebook,contato_inicial_enviado,Leads Litoral SP
+João Mendes,contato362@exemplo.com,(13) 99378-6142,Santos,SP,Riviera Blue Tech,Facebook,contato_inicial_enviado,Leads Litoral SP
+Larissa Rocha,contato363@exemplo.com,(13) 98302-7478,Guarujá,SP,Beta Imóveis Praia,Portais,contato_inicial_enviado,Leads Litoral SP
+Juliana Silva,contato364@exemplo.com,(11) 91673-6561,Peruíbe,SP,Edifica Praia Litoral,Facebook,parceria_fechada,Leads Litoral SP
+Bruno Mendes,contato365@exemplo.com,(13) 97990-4503,São Vicente,SP,Praia Grande Site Tech,Website,contato_inicial_enviado,Leads Litoral SP
+Mariana Pereira,contato366@exemplo.com,(11) 94911-6024,Guarujá,SP,Sol & Mar View,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Maria Alves,contato367@exemplo.com,(13) 95530-2716,São Vicente,SP,Santos Tower Centro,Portais,contato_inicial_enviado,Leads Litoral SP
+Larissa Teixeira,contato368@exemplo.com,(11) 91510-2406,Guarujá,SP,Riviera Blue Prime,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Ana Nunes,contato369@exemplo.com,(11) 98880-5206,São Vicente,SP,Norte Sul Digital,Website,contato_inicial_enviado,Leads Litoral SP
+Mariana Alves,contato370@exemplo.com,(11) 96554-1519,Peruíbe,SP,Realize Ii Blue,Instagram,contato_inicial_enviado,Leads Litoral SP
+Ana Ferreira,contato371@exemplo.com,(11) 91411-7173,Santos,SP,Beta Imóveis View,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Mariana Lima,contato372@exemplo.com,(11) 94888-9904,Peruíbe,SP,Mongaguá Imóveis Litoral,Instagram,contato_inicial_enviado,Leads Litoral SP
+Juliana Teixeira,contato373@exemplo.com,(11) 95780-5743,Praia Grande,SP,Realize Ii Tech,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Bruno Barros,contato374@exemplo.com,(11) 96815-5630,Guarujá,SP,Porto Da Lua Praia,Indicação,contato_inicial_enviado,Leads Litoral SP
+Bruno Lopes,contato375@exemplo.com,(13) 93306-9160,Guarujá,SP,Beta Imóveis Blue,Indicação,contato_inicial_enviado,Leads Litoral SP
+Ana Mendes,contato376@exemplo.com,(13) 97848-7752,Itanhaém,SP,Caiçara Digital Litoral,Instagram,contato_inicial_enviado,Leads Litoral SP
+Juliana Souza,contato377@exemplo.com,(11) 99524-4427,Peruíbe,SP,Caiçara Digital Praia,Website,contato_inicial_enviado,Leads Litoral SP
+Carlos Alves,contato378@exemplo.com,(13) 97375-6271,Bertioga,SP,Prime Imóveis Site,Portais,contato_inicial_enviado,Leads Litoral SP
+Patrícia Alves,contato379@exemplo.com,(11) 99585-4158,São Vicente,SP,Ocean Blue Litoral,Facebook,contato_inicial_enviado,Leads Litoral SP
+Paulo Gomes,contato380@exemplo.com,(11) 93921-8356,Mongaguá,SP,Costa Verde Site,Portais,contato_inicial_enviado,Leads Litoral SP
+Juliana Costa,contato381@exemplo.com,(11) 92839-5285,Santos,SP,Barra Digital Imóveis,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Mariana Alves,contato382@exemplo.com,(11) 95251-1635,Peruíbe,SP,Barra Digital Imóveis,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Paulo Nunes,contato383@exemplo.com,(13) 99901-8320,Praia Grande,SP,Região Sul Centro,Portais,contato_inicial_enviado,Leads Litoral SP
+Carlos Lima,contato384@exemplo.com,(11) 97813-7606,Guarujá,SP,Beta Imóveis Tech,Instagram,contato_inicial_enviado,Leads Litoral SP
+Bruno Silva,contato385@exemplo.com,(11) 94927-4001,Mongaguá,SP,Vista Mar Litoral,Website,contato_inicial_enviado,Leads Litoral SP
+Luciana Ferreira,contato386@exemplo.com,(13) 97728-7419,Santos,SP,Vista Mar Litoral,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Carlos Lopes,contato387@exemplo.com,(11) 96980-1091,Santos,SP,Mar & Sol Tech,Portais,contato_inicial_enviado,Leads Litoral SP
+Ricardo Pereira,contato388@exemplo.com,(13) 92016-1105,São Vicente,SP,Caiçara Digital Litoral,Indicação,contato_inicial_enviado,Leads Litoral SP
+Paulo Barros,contato389@exemplo.com,(11) 98617-7503,Bertioga,SP,Caiçara Digital Praia,Website,contato_inicial_enviado,Leads Litoral SP
+Bruno Teixeira,contato390@exemplo.com,(11) 94492-3448,Mongaguá,SP,Realize Ii Blue,Portais,contato_inicial_enviado,Leads Litoral SP
+Bruno Lopes,contato391@exemplo.com,(11) 95182-6284,Bertioga,SP,Prime Imóveis Praia,Website,contato_inicial_enviado,Leads Litoral SP
+Bruno Alves,contato392@exemplo.com,(11) 97288-4331,Itanhaém,SP,Sol & Mar Imóveis,Instagram,contato_inicial_enviado,Leads Litoral SP
+Larissa Barros,contato393@exemplo.com,(13) 95456-4172,Santos,SP,Sol & Mar Blue,WhatsApp,contato_inicial_enviado,Leads Litoral SP
+Fernanda Ramos,contato394@exemplo.com,(11) 97000-6680,Santos,SP,Porto Da Lua Litoral,WhatsApp,contato_inicial_enviado,Leads Litoral SP
+Ana Barros,contato395@exemplo.com,(11) 92427-1532,Praia Grande,SP,Norte Sul Praia,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Bruno Pereira,contato396@exemplo.com,(11) 94198-4793,Itanhaém,SP,Itanhaém Premium Tech,WhatsApp,contato_inicial_enviado,Leads Litoral SP
+Ana Mendes,contato397@exemplo.com,(11) 97271-8191,Itanhaém,SP,Norte Sul Litoral,Facebook,contato_inicial_enviado,Leads Litoral SP
+Bruno Silva,contato398@exemplo.com,(11) 94585-4234,Mongaguá,SP,Realize Ii Blue,Facebook,parceria_fechada,Leads Litoral SP
+Ricardo Alves,contato399@exemplo.com,(11) 99976-7375,São Vicente,SP,Porto Da Lua Centro,WhatsApp,contato_inicial_enviado,Leads Litoral SP
+Paulo Silva,contato400@exemplo.com,(13) 98253-9337,Guarujá,SP,Região Sul Prime,Portais,contato_inicial_enviado,Leads Litoral SP
+Diego Mendes,contato401@exemplo.com,(11) 99812-6486,Bertioga,SP,Costa Verde Centro,Facebook,contato_inicial_enviado,Leads Litoral SP
+Larissa Rocha,contato402@exemplo.com,(11) 97304-5105,Bertioga,SP,Ocean Blue Blue,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Juliana Souza,contato403@exemplo.com,(11) 97910-8991,São Vicente,SP,Itanhaém Premium Prime,Website,parceria_fechada,Leads Litoral SP
+Paulo Mendes,contato404@exemplo.com,(11) 99282-8480,Itanhaém,SP,Sol & Mar Blue,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Maria Silva,contato405@exemplo.com,(13) 95858-5923,Mongaguá,SP,Região Sul View,Google Maps,contato_inicial_enviado,Leads Litoral SP
+João Alves,contato406@exemplo.com,(13) 97009-1885,Guarujá,SP,Região Sul Blue,Website,contato_inicial_enviado,Leads Litoral SP
+Fernanda Teixeira,contato407@exemplo.com,(13) 93860-6354,Peruíbe,SP,Mar Brasil Prime,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Mariana Lima,contato408@exemplo.com,(11) 98031-9591,Peruíbe,SP,Barra Digital Imóveis,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Fernanda Mendes,contato409@exemplo.com,(13) 91694-9558,Guarujá,SP,Recife Imóveis Prime,Indicação,contato_inicial_enviado,Leads Litoral SP
+Paulo Teixeira,contato410@exemplo.com,(11) 99978-5824,Peruíbe,SP,Ocean Blue Centro,Facebook,parceria_fechada,Leads Litoral SP
+Paulo Gomes,contato411@exemplo.com,(11) 96661-3539,Peruíbe,SP,Litoral Brasil Praia,Website,contato_inicial_enviado,Leads Litoral SP
+Juliana Pereira,contato412@exemplo.com,(11) 98631-9307,Peruíbe,SP,Santos Tower Litoral,Instagram,contato_inicial_enviado,Leads Litoral SP
+Juliana Rocha,contato413@exemplo.com,(13) 98415-4788,São Vicente,SP,Riviera Blue View,Portais,contato_inicial_enviado,Leads Litoral SP
+Camila Nunes,contato414@exemplo.com,(13) 95379-6158,São Vicente,SP,Mar & Sol Imóveis,Instagram,contato_inicial_enviado,Leads Litoral SP
+Larissa Moura,contato415@exemplo.com,(13) 92867-8684,Peruíbe,SP,Mar & Sol Blue,Portais,contato_inicial_enviado,Leads Litoral SP
+Carlos Ferreira,contato416@exemplo.com,(13) 94382-1386,Praia Grande,SP,Litoral Premium Imóveis,Website,contato_inicial_enviado,Leads Litoral SP
+Fernanda Silva,contato417@exemplo.com,(13) 93773-6966,Praia Grande,SP,Barra Digital Imóveis,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Paulo Souza,contato418@exemplo.com,(11) 99771-4954,Mongaguá,SP,Caiçara Digital Tech,Portais,contato_inicial_enviado,Leads Litoral SP
+Bruno Ferreira,contato419@exemplo.com,(11) 92617-2440,Itanhaém,SP,Edifica Praia View,LinkedIn,parceria_fechada,Leads Litoral SP
+Juliana Moura,contato420@exemplo.com,(13) 96020-4338,Guarujá,SP,Sul Imóveis Site,Website,parceria_fechada,Leads Litoral SP
+Bruno Souza,contato421@exemplo.com,(11) 96881-5272,Praia Grande,SP,Riviera Blue Prime,Facebook,contato_inicial_enviado,Leads Litoral SP
+Fernanda Mendes,contato422@exemplo.com,(11) 96465-6505,Santos,SP,Beta Imóveis Praia,Portais,contato_inicial_enviado,Leads Litoral SP
+Bruno Alves,contato423@exemplo.com,(11) 94426-3160,Bertioga,SP,Região Sul Praia,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Maria Rocha,contato424@exemplo.com,(11) 95267-7200,Santos,SP,Mongaguá Imóveis Site,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Paulo Silva,contato425@exemplo.com,(11) 96021-8184,Guarujá,SP,Ocean Blue Blue,Indicação,contato_inicial_enviado,Leads Litoral SP
+Mariana Gomes,contato426@exemplo.com,(11) 92797-6470,São Vicente,SP,Edifica Praia Blue,LinkedIn,parceria_fechada,Leads Litoral SP
+Paulo Ferreira,contato427@exemplo.com,(11) 97891-8142,Santos,SP,Edifica Praia Imóveis,Portais,contato_inicial_enviado,Leads Litoral SP
+Patrícia Souza,contato428@exemplo.com,(11) 91468-1069,Mongaguá,SP,Edifica Praia Digital,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Ana Souza,contato429@exemplo.com,(13) 92968-5951,São Vicente,SP,Mongaguá Imóveis Litoral,Facebook,parceria_fechada,Leads Litoral SP
+João Costa,contato430@exemplo.com,(13) 92640-6480,Santos,SP,Barra Digital Litoral,Instagram,contato_inicial_enviado,Leads Litoral SP
+Maria Lima,contato431@exemplo.com,(11) 92842-1122,Santos,SP,Prime Imóveis Praia,TikTok,contato_inicial_enviado,Leads Litoral SP
+João Barros,contato432@exemplo.com,(13) 98177-2953,São Vicente,SP,Beta Imóveis Centro,Website,contato_inicial_enviado,Leads Litoral SP
+Juliana Gomes,contato433@exemplo.com,(13) 92349-9574,Mongaguá,SP,Caiçara Digital Litoral,TikTok,contato_inicial_enviado,Leads Litoral SP
+Luciana Souza,contato434@exemplo.com,(11) 95052-3002,São Vicente,SP,Costa Verde Prime,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Patrícia Ferreira,contato435@exemplo.com,(11) 97593-1476,Bertioga,SP,Edifica Praia Blue,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Larissa Rocha,contato436@exemplo.com,(13) 96308-6694,Itanhaém,SP,Caiçara Digital Blue,Facebook,parceria_fechada,Leads Litoral SP
+Larissa Mendes,contato437@exemplo.com,(11) 93377-1733,Mongaguá,SP,Edifica Praia Blue,Portais,contato_inicial_enviado,Leads Litoral SP
+Juliana Rocha,contato438@exemplo.com,(13) 93984-4536,Guarujá,SP,Praia Grande Site Blue,Google Maps,parceria_fechada,Leads Litoral SP
+Mariana Costa,contato439@exemplo.com,(13) 98012-1938,Bertioga,SP,Itanhaém Premium Imóveis,Website,contato_inicial_enviado,Leads Litoral SP
+Patrícia Nunes,contato440@exemplo.com,(11) 95372-8551,Santos,SP,Mar & Sol Digital,Facebook,contato_inicial_enviado,Leads Litoral SP
+Felipe Nunes,contato441@exemplo.com,(13) 98835-6639,Santos,SP,Alpha Imóveis Centro,Portais,contato_inicial_enviado,Leads Litoral SP
+Camila Mendes,contato442@exemplo.com,(11) 92227-8743,Itanhaém,SP,Santos Tower Prime,Facebook,contato_inicial_enviado,Leads Litoral SP
+Diego Mendes,contato443@exemplo.com,(13) 95631-7611,Itanhaém,SP,Prime Imóveis Prime,Twitter,contato_inicial_enviado,Leads Litoral SP
+Diego Moura,contato444@exemplo.com,(11) 92233-7905,Peruíbe,SP,Costa Verde View,Portais,contato_inicial_enviado,Leads Litoral SP
+Diego Silva,contato445@exemplo.com,(13) 92412-7781,Itanhaém,SP,Região Sul Praia,Portais,contato_inicial_enviado,Leads Litoral SP
+Patrícia Teixeira,contato446@exemplo.com,(11) 96083-1012,Guarujá,SP,Alpha Imóveis Prime,Facebook,contato_inicial_enviado,Leads Litoral SP
+Maria Rocha,contato447@exemplo.com,(13) 97895-1094,Mongaguá,SP,Santos Tower Centro,Twitter,contato_inicial_enviado,Leads Litoral SP
+João Souza,contato448@exemplo.com,(13) 98089-7583,Santos,SP,Mongaguá Imóveis Tech,Twitter,contato_inicial_enviado,Leads Litoral SP
+Fernanda Rocha,contato449@exemplo.com,(11) 93428-4960,Peruíbe,SP,Mar & Sol View,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Fernanda Souza,contato450@exemplo.com,(13) 95531-6674,Guarujá,SP,Ocean Blue Prime,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+João Teixeira,contato451@exemplo.com,(13) 99866-9337,Itanhaém,SP,Litoral Premium Praia,Portais,contato_inicial_enviado,Leads Litoral SP
+Ana Lima,contato452@exemplo.com,(11) 92614-6713,Santos,SP,Norte Sul Centro,Twitter,contato_inicial_enviado,Leads Litoral SP
+Patrícia Lima,contato453@exemplo.com,(13) 99265-9724,Guarujá,SP,Santos Tower Prime,Portais,contato_inicial_enviado,Leads Litoral SP
+Paulo Gomes,contato454@exemplo.com,(11) 92112-2115,Peruíbe,SP,Região Sul Prime,Indicação,contato_inicial_enviado,Leads Litoral SP
+Luciana Souza,contato455@exemplo.com,(11) 95441-6072,Itanhaém,SP,Norte Sul Praia,Portais,contato_inicial_enviado,Leads Litoral SP
+Patrícia Araújo,contato456@exemplo.com,(11) 95192-5687,Peruíbe,SP,Costa Verde Tech,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Patrícia Gomes,contato457@exemplo.com,(13) 93254-4908,Guarujá,SP,Itanhaém Premium Prime,Portais,contato_inicial_enviado,Leads Litoral SP
+Ana Rocha,contato458@exemplo.com,(13) 99606-8725,Guarujá,SP,Mar & Sol Prime,Indicação,parceria_fechada,Leads Litoral SP
+Paulo Mendes,contato459@exemplo.com,(11) 91799-9314,São Vicente,SP,Caiçara Digital Imóveis,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Mariana Araújo,contato460@exemplo.com,(11) 92828-5698,Guarujá,SP,Norte Sul Digital,Indicação,parceria_fechada,Leads Litoral SP
+Camila Nunes,contato461@exemplo.com,(11) 93340-2429,Guarujá,SP,Prime Imóveis Site,Facebook,contato_inicial_enviado,Leads Litoral SP
+Larissa Alves,contato462@exemplo.com,(13) 97849-9112,Mongaguá,SP,Costa Verde Centro,Instagram,contato_inicial_enviado,Leads Litoral SP
+Camila Alves,contato463@exemplo.com,(13) 96857-8212,Mongaguá,SP,Santos Tower Litoral,Indicação,contato_inicial_enviado,Leads Litoral SP
+Juliana Barros,contato464@exemplo.com,(13) 98416-4864,Itanhaém,SP,Norte Sul Centro,Website,contato_inicial_enviado,Leads Litoral SP
+Juliana Teixeira,contato465@exemplo.com,(13) 92243-9802,São Vicente,SP,Praia Grande Site Imóveis,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Camila Lopes,contato466@exemplo.com,(11) 92504-4149,Guarujá,SP,Itanhaém Premium Blue,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+João Silva,contato467@exemplo.com,(11) 97359-1152,São Vicente,SP,Sol & Mar Digital,Twitter,contato_inicial_enviado,Leads Litoral SP
+Camila Gomes,contato468@exemplo.com,(13) 91856-4858,Itanhaém,SP,Litoral Premium Tech,Indicação,contato_inicial_enviado,Leads Litoral SP
+Bruno Souza,contato469@exemplo.com,(11) 99430-7129,São Vicente,SP,Prime Imóveis Praia,Instagram,parceria_fechada,Leads Litoral SP
+Larissa Costa,contato470@exemplo.com,(13) 98464-9502,Bertioga,SP,Alpha Imóveis Tech,Indicação,contato_inicial_enviado,Leads Litoral SP
+Mariana Teixeira,contato471@exemplo.com,(13) 96570-5834,Praia Grande,SP,Sol & Mar Blue,Website,parceria_fechada,Leads Litoral SP
+Fernanda Lopes,contato472@exemplo.com,(13) 98340-9612,Peruíbe,SP,Alpha Imóveis Site,Facebook,contato_inicial_enviado,Leads Litoral SP
+Larissa Barros,contato473@exemplo.com,(13) 94774-8791,São Vicente,SP,Norte Sul Prime,Website,contato_inicial_enviado,Leads Litoral SP
+Ana Alves,contato474@exemplo.com,(13) 95200-4590,Praia Grande,SP,Litoral Premium Praia,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Paulo Ferreira,contato475@exemplo.com,(13) 92896-8397,Guarujá,SP,Porto Da Lua Digital,Portais,contato_inicial_enviado,Leads Litoral SP
+Ricardo Pereira,contato476@exemplo.com,(13) 98016-3355,Bertioga,SP,Santos Tower Site,Facebook,contato_inicial_enviado,Leads Litoral SP
+Ricardo Silva,contato477@exemplo.com,(13) 93795-1054,Peruíbe,SP,Região Sul Imóveis,Instagram,contato_inicial_enviado,Leads Litoral SP
+Ricardo Costa,contato478@exemplo.com,(13) 95620-5912,Praia Grande,SP,Praia Grande Site Site,Twitter,contato_inicial_enviado,Leads Litoral SP
+Bruno Lima,contato479@exemplo.com,(13) 93980-6057,Bertioga,SP,Realize Ii Praia,Instagram,contato_inicial_enviado,Leads Litoral SP
+Ana Lopes,contato480@exemplo.com,(13) 95393-8843,Bertioga,SP,Ocean Blue Praia,Facebook,parceria_fechada,Leads Litoral SP
+Amanda Gomes,contato481@exemplo.com,(13) 91895-8887,Bertioga,SP,Ocean Blue Centro,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Rafael Nunes,contato482@exemplo.com,(13) 94226-1854,São Vicente,SP,Norte Imóveis Site,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Rafael Silva,contato483@exemplo.com,(11) 95101-8572,Guarujá,SP,Norte Sul Site,Indicação,contato_inicial_enviado,Leads Litoral SP
+Thiago Mendes,contato484@exemplo.com,(13) 97844-5849,Itanhaém,SP,Alpha Imóveis Digital,Instagram,contato_inicial_enviado,Leads Litoral SP
+Patrícia Vieira,contato485@exemplo.com,(11) 95857-2219,Guarujá,SP,Praia Digital Digital,Instagram,contato_inicial_enviado,Leads Litoral SP
+Mariana Mendes,contato486@exemplo.com,(11) 96447-8252,São Vicente,SP,Barra Digital Praia,Website,contato_inicial_enviado,Leads Litoral SP
+Mariana Rocha,contato487@exemplo.com,(13) 96152-2207,Itanhaém,SP,Vista Mar Digital,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Patrícia Lima,contato488@exemplo.com,(13) 95253-4279,São Vicente,SP,Sol & Mar Blue,Instagram,contato_inicial_enviado,Leads Litoral SP
+Felipe Ferreira,contato489@exemplo.com,(11) 99068-1278,Peruíbe,SP,Edifica Praia Litoral,Indicação,contato_inicial_enviado,Leads Litoral SP
+Felipe Ribeiro,contato490@exemplo.com,(13) 91207-4728,Santos,SP,Costa Azul Blue,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Larissa Araújo,contato491@exemplo.com,(13) 96249-9851,Peruíbe,SP,Mar & Sol Site,Website,contato_inicial_enviado,Leads Litoral SP
+Bianca Rocha,contato492@exemplo.com,(11) 94228-6830,Guarujá,SP,Norte Sul Litoral,Twitter,contato_inicial_enviado,Leads Litoral SP
+Camila Teixeira,contato493@exemplo.com,(13) 91547-5878,Santos,SP,Barra Digital Tech,Website,contato_inicial_enviado,Leads Litoral SP
+Thiago Lima,contato494@exemplo.com,(11) 91980-4222,Guarujá,SP,Praia Digital Praia,Indicação,contato_inicial_enviado,Leads Litoral SP
+Bruno Rocha,contato495@exemplo.com,(13) 98673-2382,Praia Grande,SP,Praia Digital Tech,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Maria Teixeira,contato496@exemplo.com,(13) 98585-6573,Bertioga,SP,Norte Sul Litoral,Twitter,contato_inicial_enviado,Leads Litoral SP
+Amanda Barros,contato497@exemplo.com,(13) 93390-4226,Peruíbe,SP,Edifica Praia Blue,Website,contato_inicial_enviado,Leads Litoral SP
+Thiago Ferreira,contato498@exemplo.com,(13) 98012-9146,Peruíbe,SP,Região Sul Blue,Indicação,contato_inicial_enviado,Leads Litoral SP
+Larissa Moura,contato499@exemplo.com,(13) 99709-1187,São Vicente,SP,Realize Ii Centro,Google Maps,parceria_fechada,Leads Litoral SP
+Thiago Cardoso,contato500@exemplo.com,(11) 94326-5951,Bertioga,SP,Costa Do Mar Prime,Portais,contato_inicial_enviado,Leads Litoral SP
+Paulo Cardoso,contato501@exemplo.com,(11) 99853-8537,Guarujá,SP,Sol & Mar Prime,Facebook,contato_inicial_enviado,Leads Litoral SP
+João Mendes,contato502@exemplo.com,(13) 91470-3228,Itanhaém,SP,Costa Do Mar Blue,Facebook,contato_inicial_enviado,Leads Litoral SP
+João Teixeira,contato503@exemplo.com,(11) 91715-8447,Bertioga,SP,Edifica Praia Tech,Facebook,contato_inicial_enviado,Leads Litoral SP
+Ricardo Moreira,contato504@exemplo.com,(11) 94794-5541,Praia Grande,SP,Prime Imóveis Centro,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Bianca Vieira,contato505@exemplo.com,(11) 94220-3068,Bertioga,SP,Litoral Brasil Prime,Indicação,contato_inicial_enviado,Leads Litoral SP
+Ana Alves,contato506@exemplo.com,(11) 91007-7229,Peruíbe,SP,Prime Imóveis View,Twitter,contato_inicial_enviado,Leads Litoral SP
+Larissa Souza,contato507@exemplo.com,(13) 91713-2998,Praia Grande,SP,Santos Tower Centro,Website,contato_inicial_enviado,Leads Litoral SP
+Mariana Mendes,contato508@exemplo.com,(11) 91376-2618,Santos,SP,Barra Digital View,Website,contato_inicial_enviado,Leads Litoral SP
+Camila Cardoso,contato509@exemplo.com,(13) 95087-8727,Mongaguá,SP,Mongaguá Imóveis Digital,Instagram,contato_inicial_enviado,Leads Litoral SP
+Luciana Teixeira,contato510@exemplo.com,(13) 93396-3891,Peruíbe,SP,Mar Brasil Centro,LinkedIn,parceria_fechada,Leads Litoral SP
+Camila Mendes,contato511@exemplo.com,(11) 92090-4726,São Vicente,SP,Litoral Premium Site,Facebook,contato_inicial_enviado,Leads Litoral SP
+Ana Nunes,contato512@exemplo.com,(11) 93817-1862,Praia Grande,SP,Norte Imóveis Blue,Indicação,contato_inicial_enviado,Leads Litoral SP
+Luciana Souza,contato513@exemplo.com,(13) 94598-3995,Guarujá,SP,Itanhaém Premium View,Instagram,contato_inicial_enviado,Leads Litoral SP
+Ana Alves,contato514@exemplo.com,(13) 96664-4868,Praia Grande,SP,Mongaguá Imóveis Praia,Google Maps,parceria_fechada,Leads Litoral SP
+Thiago Alves,contato515@exemplo.com,(13) 99690-3480,Peruíbe,SP,Norte Sul Prime,Portais,parceria_fechada,Leads Litoral SP
+Rafael Ribeiro,contato516@exemplo.com,(13) 95475-5475,Itanhaém,SP,Atlântico Imóveis Centro,Portais,contato_inicial_enviado,Leads Litoral SP
+Rafael Moura,contato517@exemplo.com,(11) 91033-2219,Guarujá,SP,Costa Do Mar Digital,Indicação,contato_inicial_enviado,Leads Litoral SP
+Rafael Ferreira,contato518@exemplo.com,(13) 98292-8857,Itanhaém,SP,Realize Ii Site,Facebook,contato_inicial_enviado,Leads Litoral SP
+Rafael Alves,contato519@exemplo.com,(13) 92236-4121,Santos,SP,Recife Imóveis Blue,Twitter,contato_inicial_enviado,Leads Litoral SP
+Amanda Gomes,contato520@exemplo.com,(11) 98257-4333,Santos,SP,Barra Digital Centro,Twitter,contato_inicial_enviado,Leads Litoral SP
+Rafael Rocha,contato521@exemplo.com,(11) 93662-8757,Mongaguá,SP,Alpha Imóveis Tech,Indicação,contato_inicial_enviado,Leads Litoral SP
+João Ribeiro,contato522@exemplo.com,(13) 96890-9558,Peruíbe,SP,Alpha Imóveis Blue,Website,contato_inicial_enviado,Leads Litoral SP
+Camila Souza,contato523@exemplo.com,(13) 96571-4825,São Vicente,SP,Praia Grande Site View,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Bruno Ferreira,contato524@exemplo.com,(13) 99289-4262,Itanhaém,SP,Caiçara Digital Site,LinkedIn,parceria_fechada,Leads Litoral SP
+Amanda Rocha,contato525@exemplo.com,(13) 91602-9024,Peruíbe,SP,Mar & Sol Tech,Twitter,contato_inicial_enviado,Leads Litoral SP
+Larissa Mendes,contato526@exemplo.com,(11) 91311-4480,Santos,SP,Praia Grande Site Imóveis,Website,contato_inicial_enviado,Leads Litoral SP
+Ana Teixeira,contato527@exemplo.com,(11) 94586-1088,Praia Grande,SP,Vista Mar Centro,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Bianca Alves,contato528@exemplo.com,(11) 95591-8328,Guarujá,SP,Edifica Praia Imóveis,Facebook,contato_inicial_enviado,Leads Litoral SP
+Felipe Moreira,contato529@exemplo.com,(13) 97358-7546,Guarujá,SP,Prime Imóveis Digital,Portais,contato_inicial_enviado,Leads Litoral SP
+Thiago Cardoso,contato530@exemplo.com,(11) 94037-6710,Praia Grande,SP,Sul Imóveis Digital,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Fernanda Moura,contato531@exemplo.com,(13) 97817-1114,São Vicente,SP,Região Sul Centro,Website,contato_inicial_enviado,Leads Litoral SP
+Rafael Vieira,contato532@exemplo.com,(11) 97520-6346,São Vicente,SP,Barra Digital Litoral,Instagram,contato_inicial_enviado,Leads Litoral SP
+Amanda Nunes,contato533@exemplo.com,(13) 98403-7122,Peruíbe,SP,Mar Brasil Digital,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Mariana Alves,contato534@exemplo.com,(13) 96097-2159,Bertioga,SP,Barra Digital Tech,Indicação,contato_inicial_enviado,Leads Litoral SP
+Bruno Nunes,contato535@exemplo.com,(11) 99362-2294,Bertioga,SP,Norte Sul Site,Twitter,contato_inicial_enviado,Leads Litoral SP
+Thiago Alves,contato536@exemplo.com,(11) 99518-8568,Mongaguá,SP,Edifica Praia Imóveis,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Juliana Barros,contato537@exemplo.com,(13) 92064-5599,Mongaguá,SP,Norte Sul Site,Instagram,contato_inicial_enviado,Leads Litoral SP
+Thiago Souza,contato538@exemplo.com,(13) 93771-4946,Peruíbe,SP,Realize Ii View,Website,contato_inicial_enviado,Leads Litoral SP
+Larissa Vieira,contato539@exemplo.com,(11) 95180-8319,São Vicente,SP,Riviera Blue Centro,Twitter,parceria_fechada,Leads Litoral SP
+Patrícia Rocha,contato540@exemplo.com,(11) 92803-2161,Peruíbe,SP,Porto Da Lua Tech,Instagram,contato_inicial_enviado,Leads Litoral SP
+Maria Silva,contato541@exemplo.com,(13) 99830-7674,Praia Grande,SP,Barra Digital Site,Indicação,contato_inicial_enviado,Leads Litoral SP
+Diego Lopes,contato542@exemplo.com,(11) 99287-5649,Guarujá,SP,Sul Imóveis Blue,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Bruno Lopes,contato543@exemplo.com,(11) 98632-4132,Guarujá,SP,Ocean Blue Centro,Facebook,contato_inicial_enviado,Leads Litoral SP
+João Moreira,contato544@exemplo.com,(11) 97799-5265,Praia Grande,SP,Itanhaém Premium View,Indicação,contato_inicial_enviado,Leads Litoral SP
+Patrícia Cardoso,contato545@exemplo.com,(13) 98910-6320,Peruíbe,SP,Costa Do Mar Blue,Instagram,contato_inicial_enviado,Leads Litoral SP
+Thiago Souza,contato546@exemplo.com,(13) 97934-7606,Santos,SP,Mar Brasil Digital,Website,contato_inicial_enviado,Leads Litoral SP
+Bianca Silva,contato547@exemplo.com,(11) 97651-1735,Mongaguá,SP,Edifica Praia Praia,Indicação,parceria_fechada,Leads Litoral SP
+Bianca Gomes,contato548@exemplo.com,(13) 93655-8075,Itanhaém,SP,Realize Ii Tech,Facebook,parceria_fechada,Leads Litoral SP
+Thiago Pereira,contato549@exemplo.com,(13) 98441-5882,Guarujá,SP,Costa Azul Prime,LinkedIn,parceria_fechada,Leads Litoral SP
+Bianca Gomes,contato550@exemplo.com,(11) 96452-5294,São Vicente,SP,Atlântico Imóveis Blue,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Rafael Moreira,contato551@exemplo.com,(13) 99917-1240,Praia Grande,SP,Ocean Blue Centro,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Maria Teixeira,contato552@exemplo.com,(13) 94942-6273,Guarujá,SP,Itanhaém Premium Imóveis,Twitter,contato_inicial_enviado,Leads Litoral SP
+Camila Gomes,contato553@exemplo.com,(13) 98246-3158,Guarujá,SP,Mongaguá Imóveis Site,Facebook,contato_inicial_enviado,Leads Litoral SP
+Fernanda Nunes,contato554@exemplo.com,(13) 98517-8326,Mongaguá,SP,Ocean Blue View,LinkedIn,parceria_fechada,Leads Litoral SP
+Paulo Araújo,contato555@exemplo.com,(13) 98970-6958,Guarujá,SP,Atlântico Imóveis Site,Facebook,contato_inicial_enviado,Leads Litoral SP
+Larissa Alves,contato556@exemplo.com,(13) 98508-1435,Guarujá,SP,Realize Ii Prime,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Maria Costa,contato557@exemplo.com,(13) 96141-7162,Bertioga,SP,Itanhaém Premium Site,Instagram,contato_inicial_enviado,Leads Litoral SP
+Rafael Teixeira,contato558@exemplo.com,(13) 99187-6702,Praia Grande,SP,Beta Imóveis Site,Facebook,contato_inicial_enviado,Leads Litoral SP
+Ana Costa,contato559@exemplo.com,(13) 94820-4175,Itanhaém,SP,Caiçara Digital Site,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Maria Gomes,contato560@exemplo.com,(13) 97611-1502,Peruíbe,SP,Mar Brasil Blue,LinkedIn,parceria_fechada,Leads Litoral SP
+Carlos Moura,contato561@exemplo.com,(11) 93424-2014,Bertioga,SP,Barra Digital Site,Website,contato_inicial_enviado,Leads Litoral SP
+Luciana Rocha,contato562@exemplo.com,(13) 98025-9395,São Vicente,SP,Litoral Blue,Facebook,contato_inicial_enviado,Leads Litoral SP
+Patrícia Rocha,contato563@exemplo.com,(13) 95842-5370,Guarujá,SP,Mar & Sol Centro,Facebook,contato_inicial_enviado,Leads Litoral SP
+João Alves,contato564@exemplo.com,(13) 96014-1702,São Vicente,SP,Porto Da Lua Blue,Google Maps,contato_inicial_enviado,Leads Litoral SP
+João Lopes,contato565@exemplo.com,(11) 92167-7674,Santos,SP,Vista Mar Litoral,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Paulo Alves,contato566@exemplo.com,(11) 97276-2404,Bertioga,SP,Edifica Praia Tech,Google Maps,contato_inicial_enviado,Leads Litoral SP
+André Teixeira,contato567@exemplo.com,(11) 97844-6054,Praia Grande,SP,Costa Verde Litoral,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Juliana Lopes,contato568@exemplo.com,(13) 93494-4229,Praia Grande,SP,Edifica Praia Prime,Portais,parceria_fechada,Leads Litoral SP
+Leonardo Dias,contato569@exemplo.com,(13) 98604-9475,Guarujá,SP,Mongaguá Imóveis Imóveis,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Marcos Souza,contato570@exemplo.com,(13) 95590-8044,Bertioga,SP,Praia Grande Site Centro,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Marcos Freitas,contato571@exemplo.com,(13) 92985-2381,Santos,SP,Praia Grande Site Prop,Facebook,contato_inicial_enviado,Leads Litoral SP
+Mariana Freitas,contato572@exemplo.com,(13) 96404-7596,Peruíbe,SP,Praia Blue,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Sandra Mendes,contato573@exemplo.com,(11) 91817-7022,Peruíbe,SP,Litoral Blue,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Ana Freitas,contato574@exemplo.com,(13) 92751-7359,Guarujá,SP,Alpha Imóveis Centro,Indicação,contato_inicial_enviado,Leads Litoral SP
+Sandra Moura,contato575@exemplo.com,(13) 99828-1148,Santos,SP,Praia Grande Site View,Indicação,contato_inicial_enviado,Leads Litoral SP
+Bruno Monteiro,contato576@exemplo.com,(13) 93345-5116,Santos,SP,Sol & Mar View,Indicação,contato_inicial_enviado,Leads Litoral SP
+Juliana Costa,contato577@exemplo.com,(13) 93812-9300,Praia Grande,SP,Costa Azul  Prop,Twitter,parceria_fechada,Leads Litoral SP
+Mariana Cardoso,contato578@exemplo.com,(11) 92373-4161,Peruíbe,SP,Edifica Praia Centro,Website,contato_inicial_enviado,Leads Litoral SP
+Paulo Mendes,contato579@exemplo.com,(13) 91100-3520,Santos,SP,Porto Da Lua Prop,Twitter,parceria_fechada,Leads Litoral SP
+Lívia Vieira,contato580@exemplo.com,(11) 95460-2760,Peruíbe,SP,Mar View,Instagram,parceria_fechada,Leads Litoral SP
+Bruno Monteiro,contato581@exemplo.com,(13) 96261-6702,Itanhaém,SP,Edifica Praia Praia,LinkedIn,contato_inicial_enviado,Leads Litoral SP
+Vanessa Dias,contato582@exemplo.com,(11) 94423-6492,São Vicente,SP,Litoral Premium Tech,Instagram,contato_inicial_enviado,Leads Litoral SP
+Luciana Alves,contato583@exemplo.com,(13) 93236-9165,Bertioga,SP,Barra Digital Centro,LinkedIn,parceria_fechada,Leads Litoral SP
+Amanda Cavalcanti,contato584@exemplo.com,(13) 98918-3194,Guarujá,SP,Riviera Blue View,Website,contato_inicial_enviado,Leads Litoral SP
+Larissa Silva,contato585@exemplo.com,(11) 98871-6300,Bertioga,SP,Vista Mar Prop,Website,contato_inicial_enviado,Leads Litoral SP
+Sandra Ferreira,contato586@exemplo.com,(13) 92713-3296,Itanhaém,SP,Edifica Praia Centro,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Carlos Moreira,contato587@exemplo.com,(11) 93736-8519,Guarujá,SP,Mar Blue,Portais,contato_inicial_enviado,Leads Litoral SP
+Maria Souza,contato588@exemplo.com,(13) 94617-3079,Santos,SP,Costa Azul View,Facebook,parceria_fechada,Leads Litoral SP
+Amanda Moura,contato589@exemplo.com,(13) 92482-5169,Guarujá,SP,Vista Mar Litoral,LinkedIn,parceria_fechada,Leads Litoral SP
+Maria Costa,contato590@exemplo.com,(13) 99429-3889,Santos,SP,Costa Azul Prop,Portais,parceria_fechada,Leads Litoral SP
+Maria Freitas,contato591@exemplo.com,(11) 99224-2939,Bertioga,SP,Atlântico Imóveis Centro,Instagram,contato_inicial_enviado,Leads Litoral SP
+Marcos Barros,contato592@exemplo.com,(13) 92207-2065,Itanhaém,SP,Edifica Praia Prop,Portais,contato_inicial_enviado,Leads Litoral SP
+Leonardo Barros,contato593@exemplo.com,(11) 91687-3575,Guarujá,SP,Atlântico Imóveis Prime,Portais,contato_inicial_enviado,Leads Litoral SP
+Luciana Barros,contato594@exemplo.com,(11) 93496-6173,Santos,SP,Norte Sul Praia,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Marcos Souza,contato595@exemplo.com,(11) 93226-2322,Peruíbe,SP,Costa Azul  Prime,Facebook,contato_inicial_enviado,Leads Litoral SP
+Fernanda Rocha,contato596@exemplo.com,(13) 94618-3420,Praia Grande,SP,Caiçara Digital Praia,Google Maps,parceria_fechada,Leads Litoral SP
+Vanessa Nunes,contato597@exemplo.com,(11) 98812-1954,Praia Grande,SP,Riviera Blue Site,Twitter,contato_inicial_enviado,Leads Litoral SP
+Marcos Monteiro,contato598@exemplo.com,(11) 96676-9558,Peruíbe,SP,Litoral Premium Imóveis,Google Maps,contato_inicial_enviado,Leads Litoral SP
+Ana Rocha,contato599@exemplo.com,(11) 98843-7125,Peruíbe,SP,Prime Imóveis Prime,Portais,contato_inicial_enviado,Leads Litoral SP
+Fernanda Monteiro,contato600@exemplo.com,(11) 97929-7855,Peruíbe,SP,Costa Verde Blue,Facebook,contato_inicial_enviado,Leads Litoral SP
