@@ -2092,3 +2092,13 @@ Atualizado em: 2026-07-14
 | Larissa Ribeiro | SV Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Bruno Lima | Mongaguá Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Helena Torres | Santos Next | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Diego Silva | Guarujá Tech View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Marina Costa | PG Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Rocha | Itanhaém Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Almeida | SV Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
