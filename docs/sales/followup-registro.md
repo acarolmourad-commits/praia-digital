@@ -1898,3 +1898,29 @@ Atualizado em: 2026-07-14
 | Aline Costa | Santos Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Thiago Rocha | Ocean Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Tiago Reis | Santos Peak | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Luz | Guarujá View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Costa | PG Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Dias | Itanhaém Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| André Lima | SV Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Patrícia Rocha | Mongaguá Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Lucas Vieira | Peruíbe Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Rafael Mendes | Riviera Norte | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Beatriz Luz | Santos Rise | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Felipe Costa | Guarujá Lux View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Amanda Rocha | PG Blue View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Gustavo Lima | Itanhaém Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Juliana Mendes | SV Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
