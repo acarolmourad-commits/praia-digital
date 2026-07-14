@@ -1862,3 +1862,19 @@ Atualizado em: 2026-07-14
 | Patrícia Gomes | Santos Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Lucas Mendes | Ocean Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Marina Luz | Santos Vista | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Carlos Dias | Guarujá Norte | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Beatriz Souza | PG Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Eduardo Lima | Itanhaém Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Patrícia Ferreira | São Vicente Site | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Lucas Rocha | Mongaguá Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Aline Mendes | Peruíbe Norte | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Rafael Barros | Riviera Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
