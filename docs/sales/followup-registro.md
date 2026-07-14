@@ -2102,3 +2102,23 @@ Atualizado em: 2026-07-14
 | Ricardo Rocha | Itanhaém Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Larissa Almeida | SV Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Lima | Santos Blue Next | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Cruz | Guarujá Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Vieira | PG Tech Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Mendes | Santos Digital View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Rocha | Guarujá Tech Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Lima | Itanhaém Premium Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Aline Costa | SV Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Marina Dias | Riviera Blue Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Felipe Costa | Santos Tech View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paula Barros | Guarujá Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
