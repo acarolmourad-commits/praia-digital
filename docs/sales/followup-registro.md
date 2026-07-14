@@ -1958,3 +1958,15 @@ Atualizado em: 2026-07-14
 | Aline Barros | Mongaguá Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | André Dias | Peruíbe View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Luz | Santos Nova | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Rocha | Guarujá Tech View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Barros | PG Digital Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Lima | Itanhaém Blue View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Costa | SV Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Mendes | Mongaguá Blue Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
