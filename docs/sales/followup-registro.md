@@ -2166,3 +2166,15 @@ Atualizado em: 2026-07-14
 | Larissa Dias | Itanhaém Premium View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Camila Mendes | SV Tech Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Rocha | Santos Tech View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Marina Lima | Guarujá Premium Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Aline Barros | PG Blue Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Mendes | Itanhaém Digital View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Costa | SV Digital Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Vieira | Mongaguá Tech Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
