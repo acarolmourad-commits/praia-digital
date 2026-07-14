@@ -2178,3 +2178,13 @@ Atualizado em: 2026-07-14
 | Larissa Costa | SV Digital Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Paulo Vieira | Mongaguá Tech Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Rocha | Santos Premium View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Lima | Guarujá Tech Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Mendes | PG Digital View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Dias | Itanhaém Tech Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Vieira | SV Premium Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
