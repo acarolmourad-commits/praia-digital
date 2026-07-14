@@ -2122,3 +2122,13 @@ Atualizado em: 2026-07-14
 | Felipe Costa | Santos Tech View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Paula Barros | Guarujá Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Torres | Santos Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Silva | Guarujá Digital Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ana Lima | PG Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Costa | Itanhaém Launch View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Mendes | SV Blue Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
