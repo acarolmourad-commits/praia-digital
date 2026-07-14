@@ -2056,3 +2056,17 @@ Atualizado em: 2026-07-14
 | Larissa Souza | SV Tech Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Paulo Mendes | Mongaguá Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Renata Lima | Santos Rise | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Cruz | Guarujá Premium View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Rocha | PG Tech Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Felipe Dias | Itanhaém Blue Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Mendes | SV Digital Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Vieira | Mongaguá Tech View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ana Torres | Peruíbe Premium View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
