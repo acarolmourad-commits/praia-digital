@@ -1878,3 +1878,23 @@ Atualizado em: 2026-07-14
 | Aline Mendes | Peruíbe Norte | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Rafael Barros | Riviera Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Renata Gomes | Santos Wave | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Diego Almeida | Guarujá Lux | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Sofia Lima | PG Next | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Novaes | Itanhaém Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Patrícia Reis | SV Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Marcelo Teixeira | Mongaguá View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Pinto | Peruíbe View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Moura | Riviera Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Aline Costa | Santos Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Thiago Rocha | Ocean Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
