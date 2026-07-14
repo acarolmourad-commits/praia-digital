@@ -2132,3 +2132,15 @@ Atualizado em: 2026-07-14
 | Paulo Costa | Itanhaém Launch View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Larissa Mendes | SV Blue Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ana Beatriz | Santos Launch Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Carlos Dias | Guarujá Digital Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Costa | PG Tech Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Lima | Itanhaém Launch Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Mendes | SV Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Rocha | Mongaguá Blue Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
