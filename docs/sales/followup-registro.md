@@ -2218,3 +2218,13 @@ Atualizado em: 2026-07-14
 | Larissa Lima | Itanhaém Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Bruno Mendes | SV Blue Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Rocha | Santos Premium Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Mendes | Guarujá Tech View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Costa | PG Blue Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Vieira | SV Digital Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Barros | Mongaguá Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
