@@ -2020,3 +2020,15 @@ Atualizado em: 2026-07-14
 | Bruno Torres | Itanhaém Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Camila Almeida | SV Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Costa | Santos Blue View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Dias | Guarujá Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Aline Lima | PG Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Mendes | Itanhaém Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Vieira | SV Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Barros | Mongaguá Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
