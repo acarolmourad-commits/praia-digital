@@ -2863,3 +2863,11 @@ Atualizado em: 2026-07-14
 | Bruno Costa | SV Launch Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Ricardo Dias | Mongaguá Premium View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Lima | Santos Digital View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Costa | Guarujá Premium Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Mendes | PG Tech Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Vieira | Itanhaém Blue Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
