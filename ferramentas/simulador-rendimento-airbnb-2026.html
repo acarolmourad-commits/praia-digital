@@ -3,49 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simulador de rendimento Airbnb | Praia Digital</title>
-<meta name="description" content="Estimativa de rendimento por temporada.">
-<link rel="canonical" href="https://acarolmourad-commits.github.io/praia-digital/ferramentas/simulador-rendimento-airbnb-2026.html">
+<title>Simulador de rendimento Airbnb</title>
 <style>
-body{font-family:Segoe UI,Arial,sans-serif;background:#0f172a;color:#f8fafc;margin:0;padding:0}
-.container{max-width:960px;margin:0 auto;padding:2rem}
-.card{background:#111827;border-radius:14px;padding:1.4rem;margin-bottom:1rem;box-shadow:0 4px 14px rgba(0,0,0,.25)}
-label{display:block;color:#cbd5e1;font-weight:600;margin:.6rem 0 .2rem}
-input,select{width:100%;padding:12px;border-radius:10px;border:1px solid #334155;background:#0b152b;color:#fff}
-.btn{display:inline-block;margin-top:1rem;background:#2563eb;color:#fff;padding:12px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
-.result{background:#0b152b;border:1px solid #1f2b47;border-radius:12px;padding:1rem;margin-top:1rem;color:#e2e8f0}
-a{color:#38bdf8;text-decoration:none}
+body{font-family:Segoe UI,Arial,sans-serif;background:#f4f6f9;color:#1f2937;margin:0}
+main{max-width:900px;margin:0 auto;padding:2rem}
+input{padding:.45rem;margin:.25rem}
+button{padding:.5rem .9rem;border:0;background:#0a1628;color:#fff;border-radius:8px}
 </style>
 </head>
 <body>
-<div class="container">
-  <a href="airbnb-admin.html">Área do Administrador Airbnb</a>
-  <div class="card"><h1>Simulador de rendimento Airbnb</h1><p>Estimativa de rendimento por temporada.</p></div>
-  <div class="card">
-<label>Preço do imóvel (R$)</label><input id="preco" type="number" placeholder="Ex: 500000">
-<label>Diária média (R$)</label><input id="diaria" type="number" placeholder="Ex: 450">
-<label>Dias ocupados no mês</label><input id="dias" type="number" placeholder="Ex: 14">
-<label>Custo fixo mensal (R$)</label><input id="fixo" type="number" placeholder="Ex: 1200">
-<button class="btn" onclick="render()">Calcular</button>
-<script>
-function render(){{
-  const preco=parseN('preco'), diaria=parseN('diaria'), dias=parseN('dias'), fixo=parseN('fixo');
-  const receita=diaria*dias, fatAnual=receita*12;
-  const yield=preco?(fatAnual/preco)*100:0;
-  const liquido=fatAnual-(fixo*12);
-  const text=`<p>Faturamento anual estimado: ${fmt(fatAnual)}</p>
-    <p>Custo fixo anual: ${fmt(fixo*12)}</p>
-    <p>Resultado líquido anual: ${fmt(liquido)}</p>
-    <p>Yield: ${yield.toFixed(2)}% a.a.</p>`;
-  showResult(text);
-}}
-</script>
-<div class="result" id="result" style="display:none"></div></div>
-</div>
-<script>
-function fmt(v){return typeof v==='number'?'R$ '+v.toLocaleString('pt-BR',{minimumFractionDigits:2}):String(v)}
-function showResult(html){const r=document.getElementById('result');r.style.display='block';r.innerHTML=html}
-function parseN(id){const v=document.getElementById(id).value;return v===null||v===undefined?0:parseFloat(v)||0}
-</script>
+<main>
+  <h1>Simulador de rendimento Airbnb</h1>
+  <p>Preço médio estimado R$ &lt;input id=&quot;p&quot; type=&quot;number&quot; value=&quot;350&quot;&gt; | Ocupação % &lt;input id=&quot;o&quot; type=&quot;number&quot; value=&quot;65&quot;&gt; | Dias/mês &lt;input id=&quot;d&quot; type=&quot;number&quot; value=&quot;30&quot;&gt;&lt;br/&gt;&lt;button onclick=&quot;const p=+document.getElementById(&#x27;p&#x27;).value,o=+document.getElementById(&#x27;o&#x27;).value/100,d=+document.getElementById(&#x27;d&#x27;).value;document.getElementById(&#x27;r&#x27;).textContent=(p*o*d).toLocaleString(&#x27;pt-BR&#x27;,{style:&#x27;currency&#x27;,currency:&#x27;BRL&#x27;});&quot;&gt;Calcular&lt;/button&gt;&lt;p id=&quot;r&quot;&gt;R$ 0,00&lt;/p&gt;</p>
+  <p><a href="airbnb-admin.html">← Voltar para Área Administrador Airbnb</a></p>
+</main>
 </body>
 </html>

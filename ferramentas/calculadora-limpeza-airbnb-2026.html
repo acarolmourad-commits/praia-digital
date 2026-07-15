@@ -3,50 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calculadora de limpeza | Praia Digital</title>
-<meta name="description" content="Custo operacional de limpeza e turnover.">
-<link rel="canonical" href="https://acarolmourad-commits.github.io/praia-digital/ferramentas/calculadora-limpeza-airbnb-2026.html">
+<title>Calculadora de limpeza</title>
 <style>
-body{font-family:Segoe UI,Arial,sans-serif;background:#0f172a;color:#f8fafc;margin:0;padding:0}
-.container{max-width:960px;margin:0 auto;padding:2rem}
-.card{background:#111827;border-radius:14px;padding:1.4rem;margin-bottom:1rem;box-shadow:0 4px 14px rgba(0,0,0,.25)}
-label{display:block;color:#cbd5e1;font-weight:600;margin:.6rem 0 .2rem}
-input,select{width:100%;padding:12px;border-radius:10px;border:1px solid #334155;background:#0b152b;color:#fff}
-.btn{display:inline-block;margin-top:1rem;background:#2563eb;color:#fff;padding:12px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
-.result{background:#0b152b;border:1px solid #1f2b47;border-radius:12px;padding:1rem;margin-top:1rem;color:#e2e8f0}
-a{color:#38bdf8;text-decoration:none}
+body{font-family:Segoe UI,Arial,sans-serif;background:#f4f6f9;color:#1f2937;margin:0}
+main{max-width:900px;margin:0 auto;padding:2rem}
+input{padding:.45rem;margin:.25rem}
+button{padding:.5rem .9rem;border:0;background:#0a1628;color:#fff;border-radius:8px}
 </style>
 </head>
 <body>
-<div class="container">
-  <a href="airbnb-admin.html">Área do Administrador Airbnb</a>
-  <div class="card"><h1>Calculadora de limpeza</h1><p>Custo operacional de limpeza e turnover.</p></div>
-  <div class="card">
-<label>Valor da diária (R$)</label><input id="diaria" type="number" placeholder="Ex: 500">
-<label>Diárias por mês</label><input id="diarias" type="number" placeholder="Ex: 12">
-<label>Custo por limpeza (R$)</label><input id="cleaning" type="number" placeholder="Ex: 180">
-<label>Frequência de limpeza</label>
-<select id="freq"><option>A cada diária</option><option>A cada 3 diárias</option><option>A cada 5 diárias</option></select>
-<button class="btn" onclick="render()">Calcular</button>
-<script>
-function render(){{
-  const diaria=parseN('diaria'), diarias=parseN('diarias'), cleaning=parseN('cleaning');
-  const freq=document.getElementById('freq').value;
-  const passo=freq.includes('3')?3:freq.includes('5')?5:1;
-  const total=Math.ceil(diarias/passo)*cleaning;
-  const receita=diarias*diaria;
-  const perc=receita?((total)/receita)*100:0;
-  const text=`<p>Custo de limpeza mensal: ${fmt(total)}</p>
-    <p>Impacto na receita: ${perc.toFixed(2)}% da receita bruta</p>`;
-  showResult(text);
-}}
-</script>
-<div class="result" id="result" style="display:none"></div></div>
-</div>
-<script>
-function fmt(v){return typeof v==='number'?'R$ '+v.toLocaleString('pt-BR',{minimumFractionDigits:2}):String(v)}
-function showResult(html){const r=document.getElementById('result');r.style.display='block';r.innerHTML=html}
-function parseN(id){const v=document.getElementById(id).value;return v===null||v===undefined?0:parseFloat(v)||0}
-</script>
+<main>
+  <h1>Calculadora de limpeza</h1>
+  <p>Custo por limpeza R$ &lt;input id=&quot;c&quot; type=&quot;number&quot; value=&quot;180&quot;&gt; | Taxa de ocupação % &lt;input id=&quot;o&quot; type=&quot;number&quot; value=&quot;65&quot;&gt; &lt;br/&gt;&lt;button onclick=&quot;const c=+document.getElementById(&#x27;c&#x27;).value,o=+document.getElementById(&#x27;o&#x27;).value/100;document.getElementById(&#x27;r&#x27;).textContent=&#x27;Custo mensal estimado: R$ &#x27;+((c/0.65*30*o)).toFixed(2);&quot;&gt;Calcular&lt;/button&gt;&lt;p id=&quot;r&quot;&gt;&lt;/p&gt;</p>
+  <p><a href="airbnb-admin.html">← Voltar para Área Administrador Airbnb</a></p>
+</main>
 </body>
 </html>
