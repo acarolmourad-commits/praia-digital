@@ -2893,3 +2893,15 @@ Atualizado em: 2026-07-14
 | Camila Lima | SV Premium Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Paulo Rocha | Mongaguá Digital Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Barros | Santos Launch View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ana Vieira | Guarujá Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Costa | PG Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Lima | Itanhaém Digital Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Mendes | SV Tech Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Dias | Mongaguá Launch View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
