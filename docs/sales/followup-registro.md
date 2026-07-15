@@ -3123,3 +3123,13 @@ Atualizado em: 2026-07-14
 | Paula Nunes | SV Premium Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Lucas Pinto | Peruíbe Tech Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Borges | Santos Premium Ocean | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Rocha | Guarujá Tech View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Teixeira | PG Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Almeida | Itanhaém Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Moura | SV Blue Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
