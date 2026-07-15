@@ -3215,3 +3215,13 @@ Atualizado em: 2026-07-14
 | Fernanda Moura | Itanhaém Digital View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Paulo Borges | SV Launch Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Rocha | Santos Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Moura | Guarujá Tech Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Almeida | Itanhaém Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Borges | SV Digital View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Martins | Bertioga Tech Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
