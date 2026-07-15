@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Central Stays — Praia Digital</title>
+<style>
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f8fafc; color: #1e293b; margin: 0; padding: 0; }
+  header { background: linear-gradient(135deg, #0a1628 0%, #1e3a5f 100%); color: white; padding: 2rem 1rem; text-align: center; }
+  header h1 { margin: 0; font-size: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+  .card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+  .card h2 { margin: 0 0 0.75rem; color: #0a1628; font-size: 1.1rem; }
+  .card a { color: #2563eb; text-decoration: none; }
+  .card a:hover { text-decoration: underline; }
+  footer { text-align: center; padding: 2rem 1rem; color: #64748b; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🏨 Central Stays</h1>
+  <p>Gestão de estadia, automação e experiência do hóspede</p>
+</header>
+<div class="container">
+  <div class="card-grid">
+    <div class="card">
+      <h2>📋 Templates</h2>
+      <p>Templates de mensagens, regras de check-in e check-out.</p>
+      <a href="templates-stays.html">Ver templates →</a>
+    </div>
+    <div class="card">
+      <h2>📚 Tutoriais</h2>
+      <p>Vídeos curtos sobre auto-reserva, limpeza e manutenção preventiva.</p>
+      <a href="tutoriais-stays.html">Acessar tutoriais →</a>
+    </div>
+    <div class="card">
+      <h2>🧪 Diagnóstico</h2>
+      <p>Diagnóstico de reputação, tempo de resposta e taxa de aprovação.</p>
+      <a href="diagnostico-stays.html">Fazer diagnóstico →</a>
+    </div>
+    <div class="card">
+      <h2>📊 Indicadores</h2>
+      <p>Métricas-chave para acompanhar performance e qualidade da estadia.</p>
+      <a href="indicadores-stays.html">Ver indicadores →</a>
+    </div>
+  </div>
+</div>
+<footer>
+  <p>Central Stays | Praia Digital | {datetime.now().strftime('%d/%m/%Y')}</p>
+</footer>
+</body>
+</html>
