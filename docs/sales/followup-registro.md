@@ -3023,3 +3023,11 @@ Atualizado em: 2026-07-14
 | Camila Barros | Itanhaém Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Fernanda Lima | SV Digital View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Lima | Santos Premium Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Costa | Guarujá Digital Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Mendes | Itanhaém Tech Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Barros | SV Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
