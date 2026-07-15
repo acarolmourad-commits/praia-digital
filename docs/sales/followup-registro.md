@@ -2749,3 +2749,11 @@ Atualizado em: 2026-07-14
 | Larissa Costa | Itanhaém Launch Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Camila Vieira | SV Premium Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Rocha | Santos Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Barros | Guarujá Launch View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Lima | PG Tech Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Vieira | Itanhaém Digital Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
