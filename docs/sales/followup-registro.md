@@ -3067,3 +3067,13 @@ Atualizado em: 2026-07-14
 | Ricardo Lima | PG Blue Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Bruno Barros | SV Premium Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Vieira | Santos Launch Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Costa | Guarujá Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ana Lima | PG Blue Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Barros | SV Digital Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Vieira | Peruíbe Launch Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
