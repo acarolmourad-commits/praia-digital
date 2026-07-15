@@ -3205,3 +3205,13 @@ Atualizado em: 2026-07-14
 | Fernanda Borges | Itanhaém Blue Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Bruno Almeida | SV Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Teixeira | Santos Premium Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Almeida | Guarujá Blue Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Rocha | PG Tech Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Moura | Itanhaém Digital View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Borges | SV Launch Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
