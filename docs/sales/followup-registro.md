@@ -2739,3 +2739,13 @@ Atualizado em: 2026-07-14
 | Marcos Monteiro | Litoral Premium Imóveis | email | parceria | 2026-07-15 | 2026-07-18 | 2026-07-22 |
 | Ana Rocha | Prime Imóveis Prime | email | parceria | 2026-07-15 | 2026-07-18 | 2026-07-22 |
 | Fernanda Monteiro | Costa Verde Blue | email | parceria | 2026-07-15 | 2026-07-18 | 2026-07-22 |
+
+| Bruno Rocha | Santos Tech Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Lima | Guarujá Launch View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Mendes | PG Digital Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Costa | Itanhaém Launch Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Vieira | SV Premium Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
