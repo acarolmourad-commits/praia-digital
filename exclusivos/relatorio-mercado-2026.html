@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relatório de Mercado — Litoral SP 2026 | Praia Digital</title>
+<style>
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f8fafc; color: #1e293b; margin: 0; padding: 0; }
+  header { background: linear-gradient(135deg, #0a1628 0%, #1e3a5f 100%); color: white; padding: 2rem 1rem; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+  header h1 { margin: 0; font-size: 2rem; font-weight: 700; }
+  header p { margin: 0.5rem 0 0; opacity: 0.9; }
+  .container { max-width: 1400px; margin: 0 auto; padding: 2rem 1rem; }
+  .report-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+  .report-card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+  .report-card h2 { margin: 0 0 1rem; color: #0a1628; font-size: 1.25rem; }
+  .report-card p { color: #64748b; line-height: 1.6; margin: 0.5rem 0; }
+  .highlight { background: #fef3c7; padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 700; color: #92400e; }
+  footer { text-align: center; padding: 2rem 1rem; color: #64748b; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📊 Relatório de Mercado Exclusivo</h1>
+  <p>Litoral São Paulo — {datetime.now().strftime('%B %Y')} | Dados proprietários Praia Digital</p>
+</header>
+<div class="container">
+  <div class="report-grid">
+    <div class="report-card">
+      <h2>🏖️ Tendência de Valorização</h2>
+      <p>Peruíbe lidera com <span class="highlight">+8.9%</span> em 12 meses.</p>
+      <p>Itanhaém e Praia Grande seguem com crescimento acima de 7%.</p>
+      <p>Santos e Guarujá mantêm estabilidade com valorização moderada.</p>
+    </div>
+    <div class="report-card">
+      <h2>💸 ROI Airbnb por Cidade</h2>
+      <p>Peruíbe: <span class="highlight">7.9%</span></p>
+      <p>Itanhaém: 7.6% | Praia Grande: 7.2%</p>
+      <p>Mongaguá: 7.0% | Bertioga: 6.7%</p>
+    </div>
+    <div class="report-card">
+      <h2>📈 Volume de Vendas</h2>
+      <p>Praia Grande: <span class="highlight">1.560 imóveis</span></p>
+      <p>Santos: 1.240 | São Vicente: 1.120</p>
+      <p>Itanhaém: 980 | Mongaguá: 750</p>
+    </div>
+    <div class="report-card">
+      <h2>🎯 Perfil do Comprador</h2>
+      <p>62% investidores de São Paulo</p>
+      <p>24% corretores parceiros</p>
+      <p>14% proprietários locais</p>
+    </div>
+  </div>
+  <div class="report-card">
+    <h2>🔍 Metodologia</h2>
+    <p>Dados coletados de fontes exclusivas: anúncios próprios, registros de prospecção, integrações com parceiros (PriceLabs, Stays) e análise de mercado proprietária. Atualizados semanalmente pela equipe Praia Digital.</p>
+  </div>
+</div>
+<footer>
+  <p>Relatório Exclusivo Praia Digital | {datetime.now().strftime('%d/%m/%Y')} | Uso permitido para assinantes</p>
+</footer>
+</body>
+</html>
