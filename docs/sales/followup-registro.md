@@ -2823,3 +2823,13 @@ Atualizado em: 2026-07-14
 | Bruna Vieira | Itanhaém Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Larissa Lima | SV Tech Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Barros | Santos Premium Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ana Costa | Guarujá Digital Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Mendes | PG Launch Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Lima | Itanhaém Tech Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Vieira | SV Premium Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
