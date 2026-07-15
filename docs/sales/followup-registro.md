@@ -3195,3 +3195,13 @@ Atualizado em: 2026-07-14
 | Larissa Rocha | Itanhaém Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Paulo Martins | SV Premium Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Moura | Santos Digital Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Rocha | Guarujá Launch Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Teixeira | PG Premium Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Borges | Itanhaém Blue Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Almeida | SV Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
