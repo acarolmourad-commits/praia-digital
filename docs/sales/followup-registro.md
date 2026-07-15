@@ -2813,3 +2813,13 @@ Atualizado em: 2026-07-14
 | Larissa Vieira | Itanhaém Launch Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Camila Barros | SV Premium Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Barros | Santos Launch Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Costa | Guarujá Premium Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Dias | PG Blue Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruna Vieira | Itanhaém Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Lima | SV Tech Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
