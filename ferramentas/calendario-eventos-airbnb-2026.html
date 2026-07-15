@@ -3,51 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calendário de eventos | Praia Digital</title>
-<meta name="description" content="Datas que impactam preço e ocupação.">
-<link rel="canonical" href="https://acarolmourad-commits.github.io/praia-digital/ferramentas/calendario-eventos-airbnb-2026.html">
+<title>Calendário de eventos</title>
 <style>
-body{font-family:Segoe UI,Arial,sans-serif;background:#0f172a;color:#f8fafc;margin:0;padding:0}
-.container{max-width:960px;margin:0 auto;padding:2rem}
-.card{background:#111827;border-radius:14px;padding:1.4rem;margin-bottom:1rem;box-shadow:0 4px 14px rgba(0,0,0,.25)}
-label{display:block;color:#cbd5e1;font-weight:600;margin:.6rem 0 .2rem}
-input,select{width:100%;padding:12px;border-radius:10px;border:1px solid #334155;background:#0b152b;color:#fff}
-.btn{display:inline-block;margin-top:1rem;background:#2563eb;color:#fff;padding:12px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
-.result{background:#0b152b;border:1px solid #1f2b47;border-radius:12px;padding:1rem;margin-top:1rem;color:#e2e8f0}
-a{color:#38bdf8;text-decoration:none}
+body{font-family:Segoe UI,Arial,sans-serif;background:#f4f6f9;color:#1f2937;margin:0}
+main{max-width:900px;margin:0 auto;padding:2rem}
+input{padding:.45rem;margin:.25rem}
+button{padding:.5rem .9rem;border:0;background:#0a1628;color:#fff;border-radius:8px}
 </style>
 </head>
 <body>
-<div class="container">
-  <a href="airbnb-admin.html">Área do Administrador Airbnb</a>
-  <div class="card"><h1>Calendário de eventos</h1><p>Datas que impactam preço e ocupação.</p></div>
-  <div class="card">
-<label>Cidade</label><input id="cidade" placeholder="Ex: Bertioga">
-<label>Mês</label>
-<select id="mes"><option>Janeiro</option><option>Fevereiro</option><option>Março</option><option>Abril</option><option>Maio</option><option>Junho</option><option>Julho</option><option>Agosto</option><option>Setembro</option><option>Outubro</option><option>Novembro</option><option>Dezembro</option></select>
-<button class="btn" onclick="render()">Ver eventos</button>
-<script>
-function render(){{
-  const cidade=(document.getElementById('cidade').value||'Litoral').trim().toLowerCase();
-  const mes=document.getElementById('mes').value.toLowerCase();
-  const eventos={{
-    janeiro:['Réveillon','Alta temporada','Festival de verão'],
-    fevereiro:['Carnaval','Alta temporada','Festival de verão'],
-    julho:['Férias escolares','Alta temporada de inverno'],
-    dezembro:['Réveillon','Festas de fim de ano']
-  }};
-  const lista=eventos[mes]||['Eventos locais','Feiras de fim de semana','Festivais de temporada'];
-  const html=`<p>Eventos em ${mes} — ${cidade}:</p><ul>`+lista.map(x=>`<li>${x}</li>`).join('')+`</ul>
-    <p>Dica: eleve diária em +20% a +80% e aplique estadia mínima de 3–5 noites.</p>`;
-  showResult(html);
-}}
-</script>
-<div class="result" id="result" style="display:none"></div></div>
-</div>
-<script>
-function fmt(v){return typeof v==='number'?'R$ '+v.toLocaleString('pt-BR',{minimumFractionDigits:2}):String(v)}
-function showResult(html){const r=document.getElementById('result');r.style.display='block';r.innerHTML=html}
-function parseN(id){const v=document.getElementById(id).value;return v===null||v===undefined?0:parseFloat(v)||0}
-</script>
+<main>
+  <h1>Calendário de eventos</h1>
+  <p>Meses de alta temporada: Dez-Jan-Fev. (Placeholder) Adicione datas e bloqueios locais para acessar sazonalidade automática.</p>
+  <p><a href="airbnb-admin.html">← Voltar para Área Administrador Airbnb</a></p>
+</main>
 </body>
 </html>

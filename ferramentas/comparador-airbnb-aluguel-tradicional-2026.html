@@ -3,54 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Airbnb x Aluguel anual | Praia Digital</title>
-<meta name="description" content="Compare receita, custo e esforço operacional.">
-<link rel="canonical" href="https://acarolmourad-commits.github.io/praia-digital/ferramentas/comparador-airbnb-aluguel-tradicional-2026.html">
+<title>Comparador Airbnb x Aluguel tradicional</title>
 <style>
-body{font-family:Segoe UI,Arial,sans-serif;background:#0f172a;color:#f8fafc;margin:0;padding:0}
-.container{max-width:960px;margin:0 auto;padding:2rem}
-.card{background:#111827;border-radius:14px;padding:1.4rem;margin-bottom:1rem;box-shadow:0 4px 14px rgba(0,0,0,.25)}
-label{display:block;color:#cbd5e1;font-weight:600;margin:.6rem 0 .2rem}
-input,select{width:100%;padding:12px;border-radius:10px;border:1px solid #334155;background:#0b152b;color:#fff}
-.btn{display:inline-block;margin-top:1rem;background:#2563eb;color:#fff;padding:12px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
-.result{background:#0b152b;border:1px solid #1f2b47;border-radius:12px;padding:1rem;margin-top:1rem;color:#e2e8f0}
-a{color:#38bdf8;text-decoration:none}
+body{font-family:Segoe UI,Arial,sans-serif;background:#f4f6f9;color:#1f2937;margin:0}
+main{max-width:900px;margin:0 auto;padding:2rem}
+input{padding:.45rem;margin:.25rem}
+button{padding:.5rem .9rem;border:0;background:#0a1628;color:#fff;border-radius:8px}
 </style>
 </head>
 <body>
-<div class="container">
-  <a href="airbnb-admin.html">Área do Administrador Airbnb</a>
-  <div class="card"><h1>Airbnb x Aluguel anual</h1><p>Compare receita, custo e esforço operacional.</p></div>
-  <div class="card">
-<label>Preço do imóvel (R$)</label><input id="preco" type="number" placeholder="Ex: 500000">
-<label>Aluguel mensal tradicional (R$)</label><input id="aluguel" type="number" placeholder="Ex: 3000">
-<label>Entrada (R$)</label><input id="entrada" type="number" placeholder="Ex: 100000">
-<label>Diária Airbnb (R$)</label><input id="diaria" type="number" placeholder="Ex: 500">
-<label>Dias ocupados no mês</label><input id="dias" type="number" placeholder="Ex: 14">
-<label>Custo fixo Airbnb (R$)</label><input id="fixo" type="number" placeholder="Ex: 1200">
-<button class="btn" onclick="render()">Comparar</button>
-<script>
-function render(){{
-  const preco=parseN('preco'), aluguel=parseN('aluguel'), entrada=parseN('entrada'), diaria=parseN('diaria'), dias=parseN('dias'), fixo=parseN('fixo');
-  const anualAluguel=aluguel*12;
-  const fatAnual=diaria*dias*12;
-  const custoAnual=fixo*12;
-  const liquidoAirbnb=fatAnual-custoAnual;
-  const diff=liquidoAirbnb-anualAluguel;
-  const perfil=diff>0?'Airbnb pode ser mais vantajoso financeiramente.':'Aluguel anual oferece previsibilidade e menor esforço.';
-  const text=`<p>Anual aluguel tradicional: ${fmt(anualAluguel)}</p>
-    <p>Anual Airbnb líquido: ${fmt(liquidoAirbnb)}</p>
-    <p>Diferença: ${fmt(diff)}</p>
-    <p>Interpretação: ${perfil}</p>`;
-  showResult(text);
-}}
-</script>
-<div class="result" id="result" style="display:none"></div></div>
-</div>
-<script>
-function fmt(v){return typeof v==='number'?'R$ '+v.toLocaleString('pt-BR',{minimumFractionDigits:2}):String(v)}
-function showResult(html){const r=document.getElementById('result');r.style.display='block';r.innerHTML=html}
-function parseN(id){const v=document.getElementById(id).value;return v===null||v===undefined?0:parseFloat(v)||0}
-</script>
+<main>
+  <h1>Comparador Airbnb x Aluguel tradicional</h1>
+  <p>Aluguel tradicional mensal R$ &lt;input id=&quot;a&quot; type=&quot;number&quot; value=&quot;2800&quot;&gt; | Diária média Airbnb R$ &lt;input id=&quot;d&quot; type=&quot;number&quot; value=&quot;320&quot;&gt; | Ocupação % &lt;input id=&quot;o&quot; type=&quot;number&quot; value=&quot;60&quot;&gt; &lt;br/&gt;&lt;button onclick=&quot;const a=+document.getElementById(&#x27;a&#x27;).value,d=+document.getElementById(&#x27;d&#x27;).value,o=+document.getElementById(&#x27;o&#x27;).value/100;const anual_airbnb=d*o*365;const anual_trad=a*12;document.getElementById(&#x27;r&#x27;).textContent=&#x27;Anual Airbnb: R$ &#x27;+anual_airbnb.toLocaleString(&#x27;pt-BR&#x27;)+&#x27; | Tradicional: R$ &#x27;+anual_trad.toLocaleString(&#x27;pt-BR&#x27;)+&#x27; | Diferença: R$ &#x27;+(anual_airbnb-anual_trad).toLocaleString(&#x27;pt-BR&#x27;);&quot;&gt;Comparar&lt;/button&gt;&lt;p id=&quot;r&quot;&gt;&lt;/p&gt;</p>
+  <p><a href="airbnb-admin.html">← Voltar para Área Administrador Airbnb</a></p>
+</main>
 </body>
 </html>

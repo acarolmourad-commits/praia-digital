@@ -3,46 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calculadora de ocupação | Praia Digital</title>
-<meta name="description" content="Calcule ocupação ideal para atingir sua meta de receita.">
-<link rel="canonical" href="https://acarolmourad-commits.github.io/praia-digital/ferramentas/calculadora-ocupacao-airbnb-2026.html">
+<title>Calculadora de ocupação</title>
 <style>
-body{font-family:Segoe UI,Arial,sans-serif;background:#0f172a;color:#f8fafc;margin:0;padding:0}
-.container{max-width:960px;margin:0 auto;padding:2rem}
-.card{background:#111827;border-radius:14px;padding:1.4rem;margin-bottom:1rem;box-shadow:0 4px 14px rgba(0,0,0,.25)}
-label{display:block;color:#cbd5e1;font-weight:600;margin:.6rem 0 .2rem}
-input,select{width:100%;padding:12px;border-radius:10px;border:1px solid #334155;background:#0b152b;color:#fff}
-.btn{display:inline-block;margin-top:1rem;background:#2563eb;color:#fff;padding:12px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
-.result{background:#0b152b;border:1px solid #1f2b47;border-radius:12px;padding:1rem;margin-top:1rem;color:#e2e8f0}
-a{color:#38bdf8;text-decoration:none}
+body{font-family:Segoe UI,Arial,sans-serif;background:#f4f6f9;color:#1f2937;margin:0}
+main{max-width:900px;margin:0 auto;padding:2rem}
+input{padding:.45rem;margin:.25rem}
+button{padding:.5rem .9rem;border:0;background:#0a1628;color:#fff;border-radius:8px}
 </style>
 </head>
 <body>
-<div class="container">
-  <a href="airbnb-admin.html">Área do Administrador Airbnb</a>
-  <div class="card"><h1>Calculadora de ocupação</h1><p>Calcule ocupação ideal para atingir sua meta de receita.</p></div>
-  <div class="card">
-<label>Meta de faturamento anual (R$)</label><input id="meta" type="number" placeholder="Ex: 80000">
-<label>Diária pretendida (R$)</label><input id="diaria" type="number" placeholder="Ex: 500">
-<label>Custo fixo mensal (R$)</label><input id="fixo" type="number" placeholder="Ex: 1200">
-<button class="btn" onclick="render()">Calcular ocupação</button>
-<script>
-function render(){{
-  const meta=parseN('meta'), diaria=parseN('diaria'), fixo=parseN('fixo');
-  const base=diaria*12 + fixo*12;
-  const faturo=(meta)/(base||1);
-  const ocup=(meta/(diaria*30))/12;
-  const text=`<p>Taxa de ocupação média: ${ocup.toFixed(1)}% por dia no ano</p>
-    <p>Diária alvo: ${fmt(diaria)} com meta de ${fmt(meta)}/ano</p>`;
-  showResult(text);
-}}
-</script>
-<div class="result" id="result" style="display:none"></div></div>
-</div>
-<script>
-function fmt(v){return typeof v==='number'?'R$ '+v.toLocaleString('pt-BR',{minimumFractionDigits:2}):String(v)}
-function showResult(html){const r=document.getElementById('result');r.style.display='block';r.innerHTML=html}
-function parseN(id){const v=document.getElementById(id).value;return v===null||v===undefined?0:parseFloat(v)||0}
-</script>
+<main>
+  <h1>Calculadora de ocupação</h1>
+  <p>Receita desejada R$ &lt;input id=&quot;meta&quot; type=&quot;number&quot; value=&quot;10000&quot;&gt; | Preço diária R$ &lt;input id=&quot;p&quot; type=&quot;number&quot; value=&quot;350&quot;&gt; &lt;button onclick=&quot;const meta=+document.getElementById(&#x27;meta&#x27;).value,p=+document.getElementById(&#x27;p&#x27;).value;document.getElementById(&#x27;r&#x27;).textContent=&#x27;Ocupação mínima: &#x27;+Math.min(100,(meta/(30*p))*100).toFixed(1)+&#x27; %&#x27;;&quot;&gt;Calcular&lt;/button&gt;&lt;p id=&quot;r&quot;&gt;&lt;/p&gt;</p>
+  <p><a href="airbnb-admin.html">← Voltar para Área Administrador Airbnb</a></p>
+</main>
 </body>
 </html>
