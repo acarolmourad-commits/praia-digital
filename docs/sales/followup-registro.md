@@ -2921,3 +2921,15 @@ Atualizado em: 2026-07-14
 | Fernanda Vieira | Itanhaém Launch View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Paulo Mendes | SV Premium Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Costa | Santos Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Vieira | Guarujá Premium View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Mendes | PG Tech Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Lima | Itanhaém Launch Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Barros | SV Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Dias | Bertioga Launch View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
