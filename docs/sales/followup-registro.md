@@ -3059,3 +3059,11 @@ Atualizado em: 2026-07-14
 | Paulo Vieira | Itanhaém Digital Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Fernanda Mendes | SV Blue Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Vieira | Santos Digital Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Costa | Guarujá Launch Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Lima | PG Blue Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Barros | SV Premium Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
