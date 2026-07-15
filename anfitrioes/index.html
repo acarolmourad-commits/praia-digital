@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Área do Anfitrião — Praia Digital</title>
+<style>
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f8fafc; color: #1e293b; margin: 0; padding: 0; }
+  header { background: linear-gradient(135deg, #0a1628 0%, #1e3a5f 100%); color: white; padding: 2rem 1rem; text-align: center; }
+  header h1 { margin: 0; font-size: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
+  .hub-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+  .hub-card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+  .hub-card h2 { margin: 0 0 0.75rem; color: #0a1628; font-size: 1.15rem; }
+  .hub-card p { color: #64748b; line-height: 1.6; }
+  .hub-card a { color: #2563eb; text-decoration: none; font-weight: 600; }
+  .hub-card a:hover { text-decoration: underline; }
+  footer { text-align: center; padding: 2rem 1rem; color: #64748b; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🌟 Área Exclusiva do Anfitrião</h1>
+  <p>Tools, conteúdo e suporte para Airbnb, PriceLabs, Stays e Booking</p>
+</header>
+<div class="container">
+  <div class="hub-grid">
+    <div class="hub-card">
+      <h2>🏠 Central Airbnb</h2>
+      <p>Tutoriais, checklists, diagnóstico e dados de mercado.</p>
+      <a href="central-airbnb.html">Acessar Central Airbnb →</a>
+    </div>
+    <div class="hub-card">
+      <h2>💡 Central PriceLabs</h2>
+      <p>Treinamentos, testes A/B, checklist e integração.</p>
+      <a href="central-priceplabs.html">Acessar Central PriceLabs →</a>
+    </div>
+    <div class="hub-card">
+      <h2>🏨 Central Stays</h2>
+      <p>Templates, tutoriais, diagnóstico e indicadores.</p>
+      <a href="central-stays.html">Acessar Central Stays →</a>
+    </div>
+    <div class="hub-card">
+      <h2>🌐 Central Booking</h2>
+      <p>Fotos, descrição AOB, diagnóstico e integrações.</p>
+      <a href="central-booking.html">Acessar Central Booking →</a>
+    </div>
+  </div>
+</div>
+<footer>
+  <p>Área do Anfitrião | Praia Digital | {datetime.now().strftime('%d/%m/%Y')}</p>
+</footer>
+</body>
+</html>
