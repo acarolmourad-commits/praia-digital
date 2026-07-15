@@ -3155,3 +3155,13 @@ Atualizado em: 2026-07-14
 | Paulo Almeida | SV Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Fernanda Rocha | Bertioga Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Rocha | Santos Launch View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Almeida | Guarujá Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Borges | PG Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Teixeira | Itanhaém Digital View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Moura | SV Tech Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
