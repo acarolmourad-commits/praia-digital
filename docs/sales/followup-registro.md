@@ -2961,3 +2961,13 @@ Atualizado em: 2026-07-14
 | Larissa Mendes | Itanhaém Premium Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Paulo Dias | SV Blue Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Barros | Santos Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Costa | Guarujá Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ana Mendes | PG Launch Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Vieira | Itanhaém Digital View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Lima | SV Premium Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
