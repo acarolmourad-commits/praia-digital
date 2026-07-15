@@ -2941,3 +2941,13 @@ Atualizado em: 2026-07-14
 | Camila Mendes | SV Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Paulo Barros | Bertioga Tech View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Barros | Santos Launch Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Vieira | Guarujá Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Lima | PG Tech Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Costa | Itanhaém Launch Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Mendes | SV Digital View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
