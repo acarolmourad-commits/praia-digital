@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard de Investimento — Litoral SP 2026 | Praia Digital</title>
+<style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f8fafc; color: #1e293b; margin: 0; padding: 0; }
+    header { background: linear-gradient(135deg, #0a1628 0%, #1e3a5f 100%); color: white; padding: 2rem 1rem; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    header h1 { margin: 0; font-size: 2rem; font-weight: 700; }
+    header p { margin: 0.5rem 0 0; opacity: 0.9; font-size: 0.95rem; }
+    .container { max-width: 1400px; margin: 0 auto; padding: 2rem 1rem; }
+    .summary-bar { background: white; border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+    .summary-item { text-align: center; }
+    .summary-value { font-size: 1.75rem; font-weight: 700; color: #0a1628; }
+    .summary-label { font-size: 0.85rem; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; }
+    .city-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; }
+    .city-card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; }
+    .city-card:hover { transform: translateY(-4px); box-shadow: 0 8px 16px rgba(0,0,0,0.12); }
+    .city-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0; }
+    .city-header h2 { margin: 0; font-size: 1.25rem; color: #0a1628; }
+    .detail-link { color: #2563eb; text-decoration: none; font-size: 0.85rem; font-weight: 600; }
+    .detail-link:hover { text-decoration: underline; }
+    .metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .metric { display: flex; flex-direction: column; }
+    .metric-label { font-size: 0.75rem; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .metric-value { font-size: 1.1rem; font-weight: 700; color: #0a1628; }
+    .liquidity-alta { color: #10b981; font-weight: 700; }
+    .liquidity-média { color: #f59e0b; font-weight: 700; }
+    .liquidity-baixa { color: #64748b; font-weight: 700; }
+    footer { text-align: center; padding: 2rem 1rem; color: #64748b; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+    <header>
+        <h1>📊 Dashboard de Investimento</h1>
+        <p>Litoral São Paulo — July 2026</p>
+    </header>
+    
+    <div class="container">
+        <div class="summary-bar">
+            <div class="summary-item">
+                <div class="summary-value">8</div>
+                <div class="summary-label">Cidades Analisadas</div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-value">+8.4%</div>
+                <div class="summary-label">Maior Valorização</div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-value">7.9%</div>
+                <div class="summary-label">Maior ROI</div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-value">8,600</div>
+                <div class="summary-label">Total Imóveis Vendidos</div>
+            </div>
+        </div>
+        
+        <div class="city-grid">
+            
+    <div class="city-card">
+        <div class="city-header">
+            <h2>Santos</h2>
+            <a href="/blog/mercado/mercado-santos-2026.html" class="detail-link">Ver detalhes &rarr;</a>
+        </div>
+        <div class="metrics">
+            <div class="metric">
+                <span class="metric-label">Valorização 12m</span>
+                <span class="metric-value" style="color: #64748b">+5.2%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Diária Média Airbnb</span>
+                <span class="metric-value">R$ 380</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Ocupação Média</span>
+                <span class="metric-value">68%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">ROI</span>
+                <span class="metric-value" style="color: #64748b">5.8%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Liquidez</span>
+                <span class="metric-value liquidity-alta">Alta</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Imóveis Vendidos</span>
+                <span class="metric-value">1,240</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="city-card">
+        <div class="city-header">
+            <h2>Guarujá</h2>
+            <a href="/blog/mercado/mercado-guaruja-2026.html" class="detail-link">Ver detalhes &rarr;</a>
+        </div>
+        <div class="metrics">
+            <div class="metric">
+                <span class="metric-label">Valorização 12m</span>
+                <span class="metric-value" style="color: #f59e0b">+6.1%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Diária Média Airbnb</span>
+                <span class="metric-value">R$ 350</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Ocupação Média</span>
+                <span class="metric-value">64%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">ROI</span>
+                <span class="metric-value" style="color: #f59e0b">6.4%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Liquidez</span>
+                <span class="metric-value liquidity-alta">Alta</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Imóveis Vendidos</span>
+                <span class="metric-value">890</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="city-card">
+        <div class="city-header">
+            <h2>Praia Grande</h2>
+            <a href="/blog/mercado/mercado-praia-grande-2026.html" class="detail-link">Ver detalhes &rarr;</a>
+        </div>
+        <div class="metrics">
+            <div class="metric">
+                <span class="metric-label">Valorização 12m</span>
+                <span class="metric-value" style="color: #10b981">+7.8%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Diária Média Airbnb</span>
+                <span class="metric-value">R$ 280</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Ocupação Média</span>
+                <span class="metric-value">72%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">ROI</span>
+                <span class="metric-value" style="color: #10b981">7.2%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Liquidez</span>
+                <span class="metric-value liquidity-média">Média</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Imóveis Vendidos</span>
+                <span class="metric-value">1,560</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="city-card">
+        <div class="city-header">
+            <h2>Itanhaém</h2>
+            <a href="/blog/mercado/mercado-itanhaem-2026.html" class="detail-link">Ver detalhes &rarr;</a>
+        </div>
+        <div class="metrics">
+            <div class="metric">
+                <span class="metric-label">Valorização 12m</span>
+                <span class="metric-value" style="color: #10b981">+8.4%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Diária Média Airbnb</span>
+                <span class="metric-value">R$ 260</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Ocupação Média</span>
+                <span class="metric-value">70%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">ROI</span>
+                <span class="metric-value" style="color: #10b981">7.6%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Liquidez</span>
+                <span class="metric-value liquidity-média">Média</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Imóveis Vendidos</span>
+                <span class="metric-value">980</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="city-card">
+        <div class="city-header">
+            <h2>São Vicente</h2>
+            <a href="/blog/mercado/mercado-sao-vicente-2026.html" class="detail-link">Ver detalhes &rarr;</a>
+        </div>
+        <div class="metrics">
+            <div class="metric">
+                <span class="metric-label">Valorização 12m</span>
+                <span class="metric-value" style="color: #f59e0b">+6.7%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Diária Média Airbnb</span>
+                <span class="metric-value">R$ 300</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Ocupação Média</span>
+                <span class="metric-value">62%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">ROI</span>
+                <span class="metric-value" style="color: #f59e0b">6.1%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Liquidez</span>
+                <span class="metric-value liquidity-alta">Alta</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Imóveis Vendidos</span>
+                <span class="metric-value">1,120</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="city-card">
+        <div class="city-header">
+            <h2>Mongaguá</h2>
+            <a href="/blog/mercado/mercado-mongagua-2026.html" class="detail-link">Ver detalhes &rarr;</a>
+        </div>
+        <div class="metrics">
+            <div class="metric">
+                <span class="metric-label">Valorização 12m</span>
+                <span class="metric-value" style="color: #10b981">+7.5%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Diária Média Airbnb</span>
+                <span class="metric-value">R$ 290</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Ocupação Média</span>
+                <span class="metric-value">69%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">ROI</span>
+                <span class="metric-value" style="color: #10b981">7.0%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Liquidez</span>
+                <span class="metric-value liquidity-média">Média</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Imóveis Vendidos</span>
+                <span class="metric-value">750</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="city-card">
+        <div class="city-header">
+            <h2>Peruíbe</h2>
+            <a href="/blog/mercado/mercado-peruibe-2026.html" class="detail-link">Ver detalhes &rarr;</a>
+        </div>
+        <div class="metrics">
+            <div class="metric">
+                <span class="metric-label">Valorização 12m</span>
+                <span class="metric-value" style="color: #10b981">+8.9%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Diária Média Airbnb</span>
+                <span class="metric-value">R$ 250</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Ocupação Média</span>
+                <span class="metric-value">74%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">ROI</span>
+                <span class="metric-value" style="color: #10b981">7.9%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Liquidez</span>
+                <span class="metric-value liquidity-baixa">Baixa</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Imóveis Vendidos</span>
+                <span class="metric-value">620</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="city-card">
+        <div class="city-header">
+            <h2>Bertioga</h2>
+            <a href="/blog/mercado/mercado-bertioga-2026.html" class="detail-link">Ver detalhes &rarr;</a>
+        </div>
+        <div class="metrics">
+            <div class="metric">
+                <span class="metric-label">Valorização 12m</span>
+                <span class="metric-value" style="color: #f59e0b">+6.5%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Diária Média Airbnb</span>
+                <span class="metric-value">R$ 340</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Ocupação Média</span>
+                <span class="metric-value">65%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">ROI</span>
+                <span class="metric-value" style="color: #f59e0b">6.7%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Liquidez</span>
+                <span class="metric-value liquidity-alta">Alta</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Imóveis Vendidos</span>
+                <span class="metric-value">540</span>
+            </div>
+        </div>
+    </div>
+    
+        </div>
+    </div>
+    
+    <footer>
+        <p>Dados atualizados em 15/07/2026 — Fonte: mercado imobiliário Litoral SP</p>
+    </footer>
+</body>
+</html>
