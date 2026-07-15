@@ -2933,3 +2933,11 @@ Atualizado em: 2026-07-14
 | Larissa Barros | SV Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Bruno Dias | Bertioga Launch View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Vieira | Guarujá Launch Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Costa | Itanhaém Blue Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Mendes | SV Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Barros | Bertioga Tech View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
