@@ -3087,3 +3087,11 @@ Atualizado em: 2026-07-14
 | Bruno Mendes | Itanhaém Launch Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Ricardo Vieira | SV Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Costa | Santos Digital Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Mendes | PG Tech Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Barros | Itanhaém Digital View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Costa | SV Premium Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
