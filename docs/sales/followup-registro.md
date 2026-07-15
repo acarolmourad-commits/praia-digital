@@ -2757,3 +2757,11 @@ Atualizado em: 2026-07-14
 | Bruno Lima | PG Tech Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Larissa Vieira | Itanhaém Digital Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ana Costa | Santos Premium Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Lima | Guarujá Digital View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Dias | Itanhaém Premium View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Barros | SV Digital Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
