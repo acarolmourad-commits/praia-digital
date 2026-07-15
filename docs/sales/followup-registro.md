@@ -2795,3 +2795,11 @@ Atualizado em: 2026-07-14
 | Bruno Vieira | Itanhaém Digital Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Larissa Costa | SV Tech Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Rocha | Santos Launch Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Barros | PG Blue Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Mendes | Itanhaém Premium Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Costa | SV Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
