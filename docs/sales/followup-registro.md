@@ -2915,3 +2915,9 @@ Atualizado em: 2026-07-14
 | Fernanda Lima | SV Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Paulo Dias | Peruíbe Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Costa | Guarujá Digital Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Vieira | Itanhaém Launch View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Mendes | SV Premium Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
