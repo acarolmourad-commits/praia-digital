@@ -2841,3 +2841,13 @@ Atualizado em: 2026-07-14
 | Ricardo Costa | PG Digital Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Bruno Barros | SV Digital Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Vieira | Santos Launch Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Barros | Guarujá Premium Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Lima | PG Blue Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Mendes | Itanhaém Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Costa | SV Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
