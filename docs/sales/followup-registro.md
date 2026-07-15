@@ -3225,3 +3225,13 @@ Atualizado em: 2026-07-14
 | Larissa Borges | SV Digital View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Camila Martins | Bertioga Tech Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Almeida | Santos Launch Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Rocha | Guarujá Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Teixeira | PG Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Borges | Itanhaém Blue Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Moura | SV Digital Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
