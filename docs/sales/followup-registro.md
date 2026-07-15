@@ -3265,3 +3265,7 @@ Atualizado em: 2026-07-14
 | Paulo Moura | SV Premium Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Camila Martins | Peruíbe Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Almeida | Guarujá Tech Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Moura | Itanhaém Digital Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
