@@ -2905,3 +2905,13 @@ Atualizado em: 2026-07-14
 | Larissa Mendes | SV Tech Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Camila Dias | Mongaguá Launch View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Vieira | Santos Premium Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Costa | Guarujá Tech Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Barros | Itanhaém Launch Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Lima | SV Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Dias | Peruíbe Digital Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
