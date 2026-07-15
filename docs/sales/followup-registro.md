@@ -3041,3 +3041,11 @@ Atualizado em: 2026-07-14
 | Larissa Barros | Itanhaém Launch Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Paulo Lima | SV Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Vieira | Guarujá Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Fernanda Lima | PG Launch Blue | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Paulo Mendes | Itanhaém Premium Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Costa | SV Blue Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
