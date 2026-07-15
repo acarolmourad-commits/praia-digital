@@ -2983,3 +2983,13 @@ Atualizado em: 2026-07-14
 | Ricardo Costa | SV Digital Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
 
 | Camila Dias | Peruíbe Tech Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ana Lima | Santos Launch Digital | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Bruno Costa | Guarujá Tech Premium | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Ricardo Vieira | PG Blue Launch | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Larissa Mendes | Itanhaém Premium Tech | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
+
+| Camila Barros | SV Launch View | email | parceria | 2026-07-14 | 2026-07-17 | 2026-07-29 |
