@@ -16,7 +16,12 @@ def main():
     run("executar_outbound.py", "--push")
 
     # aviso de follow-ups WhatsApp do dia
+    # fonte de verdade do STATUS = tracker (nao o CSV de lote, que pode estar defasado)
     hoje = date.today(); saida = []; t2 = t3 = 0
+    tracker = {}
+    if os.path.exists(os.path.join(DIR, "tracker-whatsapp-proprietarios.csv")):
+        for r in csv.DictReader(open(os.path.join(DIR, "tracker-whatsapp-proprietarios.csv"), encoding="utf-8-sig"), delimiter=";"):
+            tracker[(r["Lote"], r["Nome"].strip().lower())] = r["Status"]
     for arq in sorted(glob.glob(os.path.join(DIR, "lote-whatsapp-proprietarios-*.csv"))):
         m = PAD_W.search(os.path.basename(arq))
         if not m: continue
@@ -28,8 +33,10 @@ def main():
         except ValueError: continue
         delta = (hoje - base).days
         if delta < 0: continue
-        m2 = [l for l in leads if l.get("Status") in ("enviado_msg1","enviado_msg2") and 1 <= delta <= 2]
-        m3 = [l for l in leads if l.get("Status") in ("enviado_msg1","enviado_msg2","enviado_msg3") and 3 <= delta <= 4]
+        # status real do tracker; fallback no CSV de lote
+        def st(l): return tracker.get((lote, l["Nome"].strip().lower()), l.get("Status",""))
+        m2 = [l for l in leads if st(l) in ("enviado_msg1","enviado_msg2") and 1 <= delta <= 2]
+        m3 = [l for l in leads if st(l) in ("enviado_msg1","enviado_msg2","enviado_msg3") and 3 <= delta <= 4]
         if not m2 and not m3: continue
         saida.append(f"\n--- Lote {lote} (D+{delta}) ---")
         if m2:
