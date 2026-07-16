@@ -1,0 +1,341 @@
+{
+  "data": "2026-07-16",
+  "canais": {
+    "WhatsApp": {
+      "lotes": {
+        "149": {
+          "total": 5,
+          "enviados_primeiro": 0,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "150": {
+          "total": 5,
+          "enviados_primeiro": 0,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "151": {
+          "total": 6,
+          "enviados_primeiro": 0,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "152": {
+          "total": 5,
+          "enviados_primeiro": 0,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "153": {
+          "total": 5,
+          "enviados_primeiro": 0,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "154": {
+          "total": 6,
+          "enviados_primeiro": 0,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "155": {
+          "total": 5,
+          "enviados_primeiro": 0,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "156": {
+          "total": 5,
+          "enviados_primeiro": 0,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "157": {
+          "total": 5,
+          "enviados_primeiro": 0,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "158": {
+          "total": 5,
+          "enviados_primeiro": 0,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "159": {
+          "total": 5,
+          "enviados_primeiro": 0,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "160": {
+          "total": 5,
+          "enviados_primeiro": 0,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "161": {
+          "total": 6,
+          "enviados_primeiro": 0,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "162": {
+          "total": 5,
+          "enviados_primeiro": 0,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "163": {
+          "total": 5,
+          "enviados_primeiro": 0,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "164": {
+          "total": 5,
+          "enviados_primeiro": 0,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "165": {
+          "total": 6,
+          "enviados_primeiro": 0,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "166": {
+          "total": 5,
+          "enviados_primeiro": 0,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        }
+      },
+      "total_leads": 94,
+      "primeiro_toque": 0
+    },
+    "E-mail": {
+      "lotes": {
+        "149": {
+          "total": 5,
+          "enviados_primeiro": 5,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "150": {
+          "total": 5,
+          "enviados_primeiro": 5,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "151": {
+          "total": 6,
+          "enviados_primeiro": 6,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "152": {
+          "total": 5,
+          "enviados_primeiro": 5,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "153": {
+          "total": 5,
+          "enviados_primeiro": 5,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "154": {
+          "total": 6,
+          "enviados_primeiro": 6,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "155": {
+          "total": 5,
+          "enviados_primeiro": 5,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "156": {
+          "total": 5,
+          "enviados_primeiro": 5,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "157": {
+          "total": 5,
+          "enviados_primeiro": 5,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "158": {
+          "total": 5,
+          "enviados_primeiro": 5,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "159": {
+          "total": 5,
+          "enviados_primeiro": 5,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "160": {
+          "total": 5,
+          "enviados_primeiro": 5,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "161": {
+          "total": 6,
+          "enviados_primeiro": 6,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "162": {
+          "total": 5,
+          "enviados_primeiro": 5,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "163": {
+          "total": 5,
+          "enviados_primeiro": 5,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "164": {
+          "total": 5,
+          "enviados_primeiro": 5,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "165": {
+          "total": 6,
+          "enviados_primeiro": 6,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        },
+        "166": {
+          "total": 5,
+          "enviados_primeiro": 5,
+          "enviados_segundo": 0,
+          "enviados_prova": 0,
+          "enviados_terceiro": 0,
+          "respondeu": 0,
+          "fechou": 0
+        }
+      },
+      "total_leads": 94,
+      "primeiro_toque": 94
+    }
+  }
+}
