@@ -29,6 +29,19 @@ M3 = ("{contato}, sem compromisso: posso te mandar 1 case real de imobiliária p
       "em {cidade} que dobrou a ocupação em 90 dias? Leva 2 min e mostra o retorno no seu bolso. "
       "Se fizer sentido, a gente estrutura a parceria.")
 
+# Template white-label (Expansao C) — so para parceiras ja fechadas
+MW1 = ("{ola} {contato}! Tudo bem? Sou da Praia Digital. Como a {imob} já é nossa parceira em "
+       "{cidade}, trouxe um ativo pronto pra te ajudar a captar mais proprietários SEM anúncio "
+       "pago: uma Calculadora de Yield por CEP que embedamos no SEU site (com a sua marca). O dono "
+       "simula o rendimento e vira seu lead. Setup grátis pra parceiro. Quer ver o protótipo?")
+MW2 = ("{contato}, resumindo: a calculadora roda no site da {imob} e capta o proprietário no seu "
+       "canal. Quando fechamos a gestão do imóvel, dividimos a comissão (70% pra você / 30% Praia "
+       "Digital). É mais inventário de gestão pro seu portfólio, sem custo de aquisição. Já temos "
+       "101 parcerias no litoral — você entra no white-label por ser parceira.")
+MW3 = ("{contato}, sem compromisso: posso te mandar o protótipo da calculadora funcionando com a "
+       "marca da {imob}? Leva 2 min de demo e mostra como vira lead no seu site. Se fizer sentido, "
+       "fechamos o white-label em {cidade}.")
+
 def ola(cargo):
     return "Olá" if not cargo else ("Prezada" if "gerente" in cargo.lower() or "diretora" in cargo.lower() else "Olá")
 
@@ -36,9 +49,12 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--limite", type=int, default=0)
     ap.add_argument("--out", default=OUT_DEFAULT)
+    ap.add_argument("--status", default="contato_inicial_enviado",
+                    help="filtro de status na base (ex: parceria_fechada p/ white-label)")
+    ap.add_argument("--whitelabel", action="store_true", help="usa template Expansao C")
     a = ap.parse_args()
     rows = list(csv.DictReader(open(SRC, encoding="utf-8-sig")))
-    pend = [r for r in rows if r["status"] == "contato_inicial_enviado"]
+    pend = [r for r in rows if r["status"] == a.status]
     pend.sort(key=lambda r: float(r.get("_score") or 0), reverse=True)
     if a.limite: pend = pend[:a.limite]
     os.makedirs(OUTDIR, exist_ok=True)
@@ -49,22 +65,26 @@ def main():
         cidade = r["cidade"].strip()
         cargo = r["cargo"].strip()
         f = lambda t: t.format(ola=ola(cargo), contato=contato, imob=imob, cidade=cidade)
+        if a.whitelabel:
+            m1, m2, m3 = f(MW1), f(MW2), f(MW3)
+            lote = "b2b-wl"; obs_prefix = "Origem: b2b-whitelabel"
+        else:
+            m1, m2, m3 = f(M1), f(M2), f(M3)
+            lote = "b2b-rev"; obs_prefix = "Origem: b2b-reativacao"
         out.append({
-            "Lote": "b2b-rev", "Nome": contato, "Telefone": r["whatsapp"].strip(),
+            "Lote": lote, "Nome": contato, "Telefone": r["whatsapp"].strip(),
             "Cidade": cidade, "Data_Msg1": date.today().isoformat(),
             "Status": "pendente_msg1", "Resposta": "", "Valor_Estimado": "",
-            "Obs": f"Origem: b2b-reativacao | Imob: {imob} | Perfil: {r['perfil']} | Score: {r.get('_score')} | Dor: {r.get('dor_principal')}",
+            "Obs": f"{obs_prefix} | Imob: {imob} | Perfil: {r['perfil']} | Score: {r.get('_score')} | Dor: {r.get('dor_principal')}",
             "Acao_Conversao": "",
-            # colunas extras reaproveitadas no follow-up
-            "Msg1": f(t1 := M1), "Msg2": f(M2), "Msg3": f(M3),
+            "Msg1": m1, "Msg2": m2, "Msg3": m3,
             "Email": r.get("email","").strip(), "Imobiliaria": imob,
         })
-    # escreve CSV (delimiter ; p/ Excel/Brevo)
     cols = TRACKER_COLS + ["Msg1", "Msg2", "Msg3", "Email", "Imobiliaria"]
     with open(a.out, "w", newline="", encoding="utf-8-sig") as f:
         w = csv.DictWriter(f, fieldnames=cols, delimiter=";")
         w.writeheader(); w.writerows(out)
-    print(f"Lote B2B gerado: {a.out}\n{len(out)} leads (top score: {out[0]['Obs'].split('Score: ')[1].split(' |')[0] if out else 'n/a'})")
+    print(f"Lote B2B gerado: {a.out}\n{len(out)} leads (status={a.status}, whitelabel={a.whitelabel}) | top score: {out[0]['Obs'].split('Score: ')[1].split(' |')[0] if out else 'n/a'}")
 
 if __name__ == "__main__":
     main()
