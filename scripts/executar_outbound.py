@@ -44,6 +44,8 @@ def main():
     run("gerar_prova_entrega.py")
     # 2c) relatorio de acoes de conversao (respondeu -> Msg2.5, fechou -> Msg4)
     run("relatorio_acoes_conversao.py")
+    # 2d) relatorio de nurture/win-back (sem_interesse em D+30/60/90)
+    run("relatorio_nurture.py")
 
     # 3) consolidado com metas
     res = {}
