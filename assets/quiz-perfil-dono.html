@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz: Qual seu perfil de dono de temporada? — Praia Digital</title>
+<style>body{font-family:Arial,sans-serif;max-width:560px;margin:auto;padding:20px;color:#112}
+h1{color:#0a3a6b;font-size:1.4rem}.card{background:#f0f7ff;border:1px solid #cfe3f5;border-radius:12px;padding:1.2rem;margin:1rem 0}
+.q{font-weight:700;margin-bottom:.6rem;color:#0a3a6b}
+.opt{display:block;width:100%;text-align:left;background:#fff;border:1px solid #cfe3f5;border-radius:9px;padding:.7rem;margin:.4rem 0;cursor:pointer;font-size:.95rem}
+.opt:hover{background:#e0f2fe}
+.opt.sel{background:#22d3ee;color:#04141f;border-color:#0ea5e9;font-weight:700}
+button{background:linear-gradient(90deg,#22d3ee,#4ade80);color:#04141f;font-weight:800;border:0;padding:.8rem 1.2rem;border-radius:10px;cursor:pointer;margin-top:.6rem}
+.res{background:#fffbeb;border:1px solid #fde68a;border-radius:12px;padding:1.2rem;margin-top:1rem;display:none}
+.res b{color:#0a3a6b}.err{color:#dc2626;font-size:.85rem}
+input[type=text]{width:100%;padding:.6rem;border:1px solid #cfe3f5;border-radius:8px;margin-top:.4rem}
+label{font-size:.85rem;color:#334}.lgpd{margin:.6rem 0;font-size:.8rem}
+.wa{display:inline-block;margin-top:.8rem;background:#25d366;color:#fff;font-weight:700;padding:.7rem 1.1rem;border-radius:9px;text-decoration:none}
+</style></head>
+<body>
+<h1>🧭 Qual seu perfil de dono de temporada?</h1>
+<p style="color:#445">3 perguntas · 30s · descubra seu próximo passo para ganhar mais sem trabalhar.</p>
+<div class="card">
+<div class="q" id="q1">1. Como você anuncia hoje?</div>
+<button class="opt" onclick="sel(1,this,'solo')">Sozinho no Airbnb/Booking</button>
+<button class="opt" onclick="sel(1,this,'imob')">Por uma imobiliária</button>
+<button class="opt" onclick="sel(1,this,'nada')">Está parado / sem alugar</button>
+<div class="q" id="q2" style="margin-top:1rem">2. Quantas horas por semana você gasta com isso?</div>
+<button class="opt" onclick="sel(2,this,'muitas')">Mais de 5h (limpeza, check-in, msg)</button>
+<button class="opt" onclick="sel(2,this,'poucas')">Menos de 2h</button>
+<button class="opt" onclick="sel(2,this,'zero')">0 — queria nem pensar nisso</button>
+<div class="q" id="q3" style="margin-top:1rem">3. O que mais te irrita?</div>
+<button class="opt" onclick="sel(3,this,'preco')">Preço errado / dias vazios</button>
+<button class="opt" onclick="sel(3,this,'op')">Concorrência pegando meus hóspedes</button>
+<button class="opt" onclick="sel(3,this,'naosei')">Não sei se estou deixando dinheiro na mesa</button>
+</div>
+<button onclick="ver()">Ver meu perfil →</button>
+<div class="err" id="err"></div>
+<div class="res" id="res"></div>
+
+<script>
+const a={};
+function sel(n,el,v){const g=el.parentNode.querySelectorAll('.opt');g.forEach(o=>o.classList.remove('sel'));el.classList.add('sel');a[n]=v;}
+function perfil(){
+ if(a[1]==='solo'&&a[2]==='muitas')return'A — Dono sobrecarregado';
+ if(a[1]==='solo'&&a[2]!=='muitas')return'B — Dono autogestor eficiente';
+ if(a[1]==='imob')return'C — Dono insatisfeito com imobiliária';
+ if(a[1]==='nada')return'D — Dono latente (imóvel parado)';
+ return'E — Dono em dúvida';
+}
+function texto(p){
+ return {
+ 'A — Dono sobrecarregado':'Você perde horas com operação e deixa ocupação na mesa. A Gestão Completa assume TUDO (limpeza, check-in, precificação dinâmica) e você ganha mais trabalhando ZERO horas.',
+ 'B — Dono autogestor eficiente':'Você manda bem, mas a Precificação Dinâmica da Praia Digital sobe seu yield sem você mexer num dedo. Quer ver quanto?',
+ 'C — Dono insatisfeito com imobiliária':'Imobiliária cobra comissão e some. A gente cuida de verdade — relatório mensal, ocupação no talo, dono no controle.',
+ 'D — Dono latente (imóvel parado)':'Imóvel parado = dinheiro no chão. A gente ativa sua casa em 15 dias e enche o calendário.',
+ 'E — Dono em dúvida':'Sem problema — simule seu yield e entenda onde está o buraco. Depois a gente conversa.'
+ }[p];
+}
+function ver(){
+ if(!a[1]||!a[2]||!a[3]){document.getElementById('err').textContent='Responda as 3 perguntas :)';return;}
+ document.getElementById('err').textContent='';
+ const p=perfil();const t=texto(p);
+ const r=document.getElementById('res');
+ r.style.display='block';
+ r.innerHTML=`<b>${p}</b><p style="color:#334;line-height:1.6">${t}</p>
+  <p style="color:#334">Deixe seu WhatsApp e um consultor Praia Digital fala hoje:</p>
+  <input id="nome" type="text" placeholder="Seu nome">
+  <input id="wpp" type="text" placeholder="WhatsApp (11 99999-9999)">
+  <div class="lgpd"><label><input type="checkbox" id="lgpd"> Autorizo contato (LGPD)</label></div>
+  <button class="wa" onclick="enviar('${p}')">📲 Falar com a Praia Digital</button>`;
+ r.scrollIntoView({behavior:'smooth'});
+}
+function enviar(p){
+ const nome=document.getElementById('nome').value.trim();
+ const wpp=document.getElementById('wpp').value.trim();
+ const lgpd=document.getElementById('lgpd').checked;
+ if(!nome||!wpp||!lgpd){alert('Preencha nome, WhatsApp e autorize (LGPD).');return;}
+ const msg=encodeURIComponent(`Olá! Fiz o quiz da Praia Digital e meu perfil é "${p}". Quero saber como ganhar mais sem trabalhar.`);
+ window.open(`https://wa.me/5511954346288?text=${msg}`,'_blank');
+}
+</script>
+</body></html>
