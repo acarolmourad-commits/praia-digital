@@ -141,3 +141,31 @@ Use para auditar: "quais lotes já tiveram o primeiro toque?" e "quantas mensage
 - ✅ Nunca recrie ativos de ROI/preço — reutilize `assets/roi-ia-imobiliaria.html` etc.
 - ❌ Não tente disparo por API/SMTP (não configurado)
 - ❌ Não deixe o tracker dessincronizado: os crons já rodam `consolidar_tracker_*` antes dos dashboards
+
+## 11. Disparo B2B — Imobiliárias (Expansão A/C)
+
+O funil B2B é **paralelo** ao de proprietários, com 587 leads armados:
+- `docs/sales/csv-lotes-b2b/lote-b2b-reativacao-2026-07-16.csv` (486 imobiliárias em reativação)
+- `docs/sales/csv-lotes-b2b/lote-b2b-whitelabel-2026-07-16.csv` (101 parceiras — proposta white-label)
+
+**Para preparar o envio (1 comando):**
+```bash
+python scripts/preparar_disparo_b2b.py
+# gera docs/sales/csv-lotes-b2b/disparo-b2b-consolidado-2026-07-16.csv (587 leads, Msg1 pronta)
+```
+
+**Rotina de envio (manual, copia-e-cola ou Brevo/WhatsApp Business):**
+1. Abra o CSV consolidado. Cada linha tem `Nome`, `Telefone`, `Msg1`.
+2. Envie a `Msg1` pelo WhatsApp (ou importe no Brevo/WhatsApp Business com etiquetas).
+3. **Marque como enviado** (one-click):
+   ```bash
+   python scripts/marcar_primeiro_envio_b2b.py
+   ```
+   Isso grava `Data_Msg1=hoje` e `Status=enviado_msg1` no `tracker-b2b.csv`.
+4. O cron `followup-b2b-imobiliarias` (18h) avisa no Telegram os `Msg2` (D+1) e `Msg3` (D+3).
+
+**Trackers B2B (separados do B2C, não misturar):**
+- `docs/sales/csv-lotes-b2b/tracker-b2b.csv` — reativação
+- `docs/sales/csv-lotes-b2b/tracker-whitelabel.csv` — leads do widget white-label
+
+**White-label:** a calculadora standalone (`praia.digital/assets/calculadora-widget-standalone.html?tenant=santos-ancora`) captura donos no site da parceira; o lead cai em `tracker-whitelabel.csv` com `parceiro_id`.
