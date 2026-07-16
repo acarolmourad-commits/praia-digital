@@ -12,6 +12,7 @@ import glob, os, re
 
 REPO = r"C:/Users/Carolina/praia-digital"
 BLOG = os.path.join(REPO, "blog")
+DONO = "https://acarolmourad-commits.github.io/praia-digital/dono-norte/dono-{slug}.html"
 CALC = "https://acarolmourad-commits.github.io/praia-digital/assets/calculadora-widget-standalone.html?tenant=pd-norte"
 NORTE = {"ubatuba": "ubatuba", "ilhabela": "ilhabela",
          "caraguatatuba": "caraguatatuba", "são sebastião": "sao-sebastiao"}
@@ -44,7 +45,7 @@ def main(dry=False):
         if len(B2C.findall(txt)) < 3:
             continue
         cidade = "São Sebastião" if NORTE[cid] == "sao-sebastiao" else NORTE[cid].title()
-        bloco = CTA.format(MARK=MARK, cidade=cidade, url=CALC)
+        bloco = CTA.format(MARK=MARK, cidade=cidade, url=DONO.format(slug=NORTE[cid]))
         if dry:
             print(f"[DRY] {os.path.basename(f)} -> {cidade}")
             feitos += 1
