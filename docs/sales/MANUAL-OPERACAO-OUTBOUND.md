@@ -126,7 +126,15 @@ Edite `docs/sales/METAS_OUTBOUND.json` (campos `respondeu`, `fechou`, `receita_e
 O dashboard consolidado (`dashboard-outbound-proprietarios.html`) mostra barras de progresso vs meta.
 Exemplo de metas de julho/2026: 28 respostas, 15 fechados, R$ 18.000 de receita estimada.
 
-## 9. Regras de ouro
+## 9. Prova de entrega (auditoria)
+
+`python scripts/gerar_prova_entrega.py` (já rodado dentro de `executar_outbound.py --push`) gera:
+- `docs/sales/prova-entrega-outbound.json` — log estruturado por lote/canal
+- `docs/sales/prova-entrega-outbound.html` — relatório visual de quantos Msg1/E1, Msg2/E2, respostas e fechamentos já ocorreram
+
+Use para auditar: "quais lotes já tiveram o primeiro toque?" e "quantas mensagens foram disparadas?".
+
+## 10. Regras de ouro
 
 - ✅ Sempre copie a mensagem do CSV (já está personalizada com nome e cidade)
 - ✅ Marque o status no tracker após cada resposta/fechamento
