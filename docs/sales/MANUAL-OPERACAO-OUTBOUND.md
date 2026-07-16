@@ -169,3 +169,14 @@ python scripts/preparar_disparo_b2b.py
 - `docs/sales/csv-lotes-b2b/tracker-whitelabel.csv` — leads do widget white-label
 
 **White-label:** a calculadora standalone (`praia.digital/assets/calculadora-widget-standalone.html?tenant=santos-ancora`) captura donos no site da parceira; o lead cai em `tracker-whitelabel.csv` com `parceiro_id`.
+
+## 11b. E-mail B2B (Expansão E — multicanal)
+
+O B2B também tem canal de E-MAIL (paralelo ao WhatsApp), espelhando o funil B2C:
+- `scripts/gerar_lote_email_b2b.py --status contato_inicial_enviado` → `lote-email-b2b-reativacao-2026-07-16.csv` (486)
+- `scripts/gerar_lote_email_b2b.py --status parceria_fechada --whitelabel` → `lote-email-b2b-whitelabel-2026-07-16.csv` (101)
+- Consolidar: `python scripts/consolidar_tracker_email_b2b.py` → `tracker-email-b2b.csv` (isolado do B2C)
+- Marcar E1 (após enviar): `python scripts/marcar_primeiro_envio_email_b2b.py`
+- Follow-up (cron 18h, Telegram): `followup-email-b2b-imobiliarias` avisa E2 (D+2) / E3 (D+5)
+
+**Tracker B2B isolado:** WPP (`tracker-b2b.csv`) e E-mail (`tracker-email-b2b.csv`) são separados do B2C — não misturar.
