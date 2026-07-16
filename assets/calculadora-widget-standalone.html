@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Yield — Praia Digital</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{--ciano:#22d3ee;--verde:#4ade80;--bg:#06192e;--card:#0f2942}
+  body{font-family:'Segoe UI',system-ui,Arial,sans-serif;background:var(--bg);color:#e2e8f0;max-width:420px;margin:auto;padding:1rem}
+  .brand{display:flex;align-items:center;gap:.4rem;font-weight:800;color:var(--ciano);margin-bottom:.6rem}
+  h1{font-size:1.1rem;color:#fff;margin-bottom:.3rem}
+  p.sub{color:#94a3b8;font-size:.8rem;margin-bottom:1rem}
+  label{display:block;font-size:.78rem;color:#94a3b8;margin:.7rem 0 .25rem}
+  input,select{width:100%;padding:.6rem;border-radius:8px;border:1px solid #2a4a6b;background:#06192e;color:#fff;font-size:.95rem}
+  .row{display:flex;gap:.5rem}.row>*{flex:1}
+  .btn{display:block;width:100%;margin-top:1.1rem;padding:.85rem;border:0;border-radius:10px;background:linear-gradient(90deg,#22d3ee,#0ea5e9);color:#04141f;font-weight:800;font-size:1rem;cursor:pointer}
+  .btn:disabled{opacity:.5}
+  .result{background:var(--card);border:1px solid #1e3a5f;border-radius:12px;padding:1rem;margin-top:1rem;display:none}
+  .gauge{font-size:2rem;font-weight:800;color:var(--verde);text-align:center}
+  .kpis{display:flex;gap:.4rem;margin-top:.6rem}
+  .kpi{flex:1;background:#06192e;border-radius:8px;padding:.5rem;text-align:center;border:1px solid #1e3a5f}
+  .kpi b{display:block;font-size:1.05rem;color:var(--ciano)}.kpi span{font-size:.65rem;color:#94a3b8}
+  .form{margin-top:1rem;display:none}
+  .ok{color:var(--verde);font-weight:700;font-size:.85rem;margin-top:.5rem}
+  .err{color:#f87171;font-size:.8rem;margin-top:.4rem}
+  .consent{font-size:.65rem;color:#94a3b8;margin-top:.5rem;display:flex;gap:.4rem;align-items:flex-start}
+  footer{text-align:center;color:#64748b;font-size:.65rem;margin-top:1rem}
+  .badge{display:inline-block;background:#0a3a6b;color:var(--ciano);font-size:.6rem;padding:.15rem .5rem;border-radius:14px;margin-left:.3rem}
+</style>
+</head>
+<body>
+<div class="brand" id="brand">📈 <span id="brandName">Praia Digital</span></div>
+<h1>Calculadora de Yield por CEP</h1>
+<p class="sub">Descubra quanto seu imóvel rende em temporada — sem você levantar um dedo.</p>
+
+<div>
+  <label>CEP do imóvel <span class="badge">obrigatório</span></label>
+  <input id="cep" placeholder="11010-000" maxlength="9">
+  <div class="row"><div><label>Tipo</label><select id="tipo"><option value="apartamento">Apto</option><option value="casa">Casa</option><option value="studio">Studio</option><option value="cobertura">Cobertura</option><option value="kitnet">Kitnet</option></select></div>
+  <div><label>Quartos</label><select id="quartos"><option>0</option><option selected>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></div></div>
+  <button class="btn" id="calcBtn" onclick="calcular()">Calcular meu yield →</button>
+  <div id="err1" class="err"></div>
+</div>
+
+<div class="result" id="result">
+  <div class="gauge"><span id="gauge">0%</span></div>
+  <p style="text-align:center;color:#94a3b8;font-size:.75rem">Yield estimado a.a. <span id="modo" class="badge">estimativa</span></p>
+  <div class="kpis">
+    <div class="kpi"><b id="kRec">R$0</b><span>Líquido/ano</span></div>
+    <div class="kpi"><b id="kOcup">0%</b><span>Ocupação</span></div>
+    <div class="kpi"><b id="kAdr">R$0</b><span>Diária</span></div>
+  </div>
+  <button class="btn" id="leadBtn" onclick="mostrarForm()">📩 Receber relatório no WhatsApp</button>
+</div>
+
+<div class="form" id="leadForm">
+  <label>Nome <span class="badge">obrigatório</span></label><input id="lnome" placeholder="Seu nome">
+  <label>WhatsApp <span class="badge">obrigatório</span></label><input id="lwhats" placeholder="(11) 99999-9999">
+  <label class="consent"><input type="checkbox" id="lgpd" style="width:auto;margin-top:.15rem"> <span>Autorizo contato p/ gestão de temporada (LGPD Art. 7º, VIII).</span></label>
+  <button class="btn" onclick="enviar()">Enviar →</button>
+  <div id="err2" class="err"></div>
+  <div id="ok2" class="ok" style="display:none"></div>
+</div>
+
+<footer id="footer">Praia Digital · Gestão de temporada</footer>
+
+<script>
+// --- Config tenant (white-label) via ?tenant= e query params ---
+const TENANTS = {
+  padrao:{nome:"Praia Digital", cor:"#22d3ee", whats:"11954346288"},
+  "santos-ancora":{nome:"Prime Imóveis Santos", cor:"#f59e0b", whats:"11954346288"},
+  demo:{nome:"Imobiliária Parceira", cor:"#4ade80", whats:"11954346288"}
+};
+const params = new URLSearchParams(location.search);
+const tenantKey = params.get("tenant") || "padrao";
+const T = TENANTS[tenantKey] || TENANTS.padrao;
+document.documentElement.style.setProperty("--ciano", T.cor);
+document.getElementById("brandName").textContent = T.nome;
+document.getElementById("footer").textContent = T.nome + " · Gestão de temporada";
+
+const API = "http://127.0.0.1:8000"; // backend opcional; sem ele, usa mailto fallback
+function fmt(n){return "R$ "+Math.round(n).toLocaleString('pt-BR');}
+
+// motor de calculo (mesma logica do backend)
+function calc(cepData, tipo, quartos){
+  const baseADR = 250 + quartos*70 + (tipo==="casa"?60:tipo==="cobertura"?120:0);
+  const baseOcup = 0.55 + quartos*0.02 - (tipo==="kitnet"?0.05:0);
+  const adr = baseADR*1.28; // +28% precificacao dinamica
+  const ocup = Math.min(baseOcup*1.12, 0.92); // +12% ocup
+  const receitaBruta = adr*ocup*365;
+  const receitaLiq = receitaBruta*0.80; // -20% comissao
+  const aluguelLonga = (tipo==="casa"?3500:tipo==="cobertura"?4800:2600) + quartos*600;
+  const yieldA = receitaLiq/ ( (tipo==="casa"?480000:tipo==="cobertura"?650000:420000) );
+  return {adr, ocup, receitaBruta, receitaLiq, aluguelLonga, yieldA, mult: (receitaLiq/12)/aluguelLonga};
+}
+
+async function calcular(){
+  const cep=document.getElementById("cep").value.replace(/\D/g,"");
+  document.getElementById("err1").textContent="";
+  if(cep.length!==8){document.getElementById("err1").textContent="CEP inválido.";return;}
+  const btn=document.getElementById("calcBtn");btn.disabled=true;btn.textContent="Calculando…";
+  try{
+    const r=await fetch("https://viacep.com.br/ws/"+cep+"/json/");
+    const d=await r.json();
+    if(d.erro){throw new Error("CEP não encontrado");}
+    const res=calc(d, document.getElementById("tipo").value, +document.getElementById("quartos").value);
+    document.getElementById("gauge").textContent=(res.yieldA*100).toFixed(1)+"%";
+    document.getElementById("kRec").textContent=fmt(res.receitaLiq);
+    document.getElementById("kOcup").textContent=(res.ocup*100).toFixed(0)+"%";
+    document.getElementById("kAdr").textContent=fmt(res.adr);
+    document.getElementById("modo").textContent="estimativa base";
+    document.getElementById("result").style.display="block";
+    window._last=res; window._cidade=d.localidade;
+  }catch(e){document.getElementById("err1").textContent="Erro: "+e.message;}
+  finally{btn.disabled=false;btn.textContent="Calcular meu yield →";}
+}
+
+function mostrarForm(){document.getElementById("leadForm").style.display="block";document.getElementById("leadForm").scrollIntoView({behavior:"smooth"});}
+
+async function enviar(){
+  const nome=document.getElementById("lnome").value.trim();
+  const whats=document.getElementById("lwhats").value.trim();
+  const lgpd=document.getElementById("lgpd").checked;
+  document.getElementById("err2").textContent="";
+  if(!nome||!whats){document.getElementById("err2").textContent="Nome e WhatsApp obrigatórios.";return;}
+  if(!lgpd){document.getElementById("err2").textContent="É preciso autorizar o contato (LGPD).";return;}
+  const payload={nome,whatsapp:whats,cidade:window._cidade||"",cep:document.getElementById("cep").value,
+    yield_estimado:window._last?window._last.yieldA:null,consentimento_lgpd:true,parceiro_id:tenantKey};
+  try{
+    const r=await fetch(API+"/api/v1/lead/capture",{method:"POST",headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+    if(r.ok){document.getElementById("ok2").style.display="block";document.getElementById("ok2").textContent="✅ Pronto! Enviamos no WhatsApp.";return;}
+  }catch(e){/* backend offline -> mailto fallback */}
+  // fallback: abre WhatsApp do parceiro com resumo
+  const msg=encodeURIComponent(`Olá! Simulei o yield do meu imóvel em ${window._cidade||''} pela calculadora da ${T.nome}: ${window._last?(window._last.yieldA*100).toFixed(1):''}% a.a. Quero saber mais sobre gestão.`);
+  window.open(`https://wa.me/55${T.whats}?text=${msg}`,"_blank");
+  document.getElementById("ok2").style.display="block";document.getElementById("ok2").textContent="✅ Abrimos seu WhatsApp pra falar com a "+T.nome+".";
+}
+
+document.getElementById("cep").addEventListener("input",e=>{let v=e.target.value.replace(/\D/g,"");if(v.length>5)v=v.slice(0,5)+"-"+v.slice(5,8);e.target.value=v;});
+</script>
+</body>
+</html>
