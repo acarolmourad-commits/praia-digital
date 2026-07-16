@@ -15,6 +15,10 @@ def main():
     run("consolidar_tracker_whatsapp.py")
     # 2) regerar dashboard
     run("gerar_dashboard_whatsapp.py")
+    # 2b) consolidado multicanal
+    run("consolidar_tracker_email.py")
+    run("gerar_dashboard_email.py")
+    run("gerar_dashboard_outbound.py")
     # 3) aviso de follow-ups
     hoje = date.today()
     arquivos = glob.glob(os.path.join(WHATS_DIR, "lote-whatsapp-proprietarios-*.csv"))
