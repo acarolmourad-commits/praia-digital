@@ -1,5 +1,5 @@
 ﻿Lote;Nome;Telefone;Cidade;Data_Msg1;Status;Resposta;Valor_Estimado;Obs;Acao_Conversao
-149;Fernanda Lima;(13) 99999-7301;Santos;2026-07-15;fechou;;1200;Retorno positivo via WhatsApp;
+149;Fernanda Lima;(13) 99999-7301;Santos;2026-07-15;fechou;;1200;Retorno positivo via WhatsApp;onboarding_feito
 149;Paulo Vieira;(11) 99999-7302;Guarujá;2026-07-15;enviado_msg1;;;;
 149;Ricardo Mendes;(13) 99999-7303;Praia Grande;2026-07-15;enviado_msg1;;;;
 149;Bruno Costa;(13) 99999-7304;Itanhaém;2026-07-15;enviado_msg1;;;;
