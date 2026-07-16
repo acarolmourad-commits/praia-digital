@@ -11,7 +11,7 @@ REPO = r"C:/Users/Carolina/praia-digital"
 EMAIL_DIR = os.path.join(REPO, "docs/sales/csv-lotes-email")
 PAD = re.compile(r"lote-email-proprietarios-(\d+)-(\d{4}-\d{2}-\d{2})\.csv")
 TRACKER = os.path.join(EMAIL_DIR, "tracker-email-proprietarios.csv")
-CAMPOS = ["Lote","Nome","Email","Cidade","Data_Email1","Status","Resposta","Valor_Estimado","Obs"]
+CAMPOS = ["Lote","Nome","Email","Cidade","Data_Email1","Status","Resposta","Valor_Estimado","Obs","Acao_Conversao"]
 
 def carregar_existente():
     if not os.path.exists(TRACKER):
@@ -40,7 +40,7 @@ def main():
                 else:
                     linhas.append({"Lote":lote,"Nome":nome,"Email":r["Email"],"Cidade":r["Cidade"],
                         "Data_Email1":r["Data_Email1"],"Status":"pendente_email1","Resposta":"",
-                        "Valor_Estimado":"","Obs":""})
+                        "Valor_Estimado":"","Obs":"","Acao_Conversao":""})
     with open(TRACKER, "w", newline="", encoding="utf-8-sig") as f:
         w = csv.DictWriter(f, fieldnames=CAMPOS, delimiter=";")
         w.writeheader(); w.writerows(linhas)

@@ -3,13 +3,13 @@
 Consolida todos os lotes WhatsApp de proprietarios autogestores num unico tracker.
 docs/sales/csv-lotes-email/tracker-whatsapp-proprietarios.csv
 
-Colunas: Lote, Nome, Telefone, Cidade, Data_Msg1, Status, Resposta, Valor_Estimado, Obs
+Colunas: Lote, Nome, Telefone, Cidade, Data_Msg1, Status, Resposta, Valor_Estimado, Obs, Acao_Conversao
 Status possiveis:
   pendente_msg1 | enviado_msg1 | enviado_msg2 | enviado_msg3
   | respondeu | fechou | sem_interesse
 
-Se o tracker ja existir, preserva Status/Resposta/Valor/Obs dos leads ja registrados
-(identificados por Lote+Nome) e apenas adiciona leads novos.
+Se o tracker ja existir, preserva Status/Resposta/Valor/Obs/Acao_Conversao dos leads ja
+registrados (identificados por Lote+Nome) e apenas adiciona leads novos.
 """
 import csv, os, glob, re
 from datetime import date
@@ -19,7 +19,7 @@ WHATS_DIR = os.path.join(REPO, "docs/sales/csv-lotes-email")
 PAD = re.compile(r"lote-whatsapp-proprietarios-(\d+)-(\d{4}-\d{2}-\d{2})\.csv")
 TRACKER = os.path.join(WHATS_DIR, "tracker-whatsapp-proprietarios.csv")
 
-CAMPOS = ["Lote","Nome","Telefone","Cidade","Data_Msg1","Status","Resposta","Valor_Estimado","Obs"]
+CAMPOS = ["Lote","Nome","Telefone","Cidade","Data_Msg1","Status","Resposta","Valor_Estimado","Obs","Acao_Conversao"]
 
 def carregar_existente():
     if not os.path.exists(TRACKER):
@@ -27,8 +27,7 @@ def carregar_existente():
     exist = {}
     with open(TRACKER, encoding="utf-8-sig") as f:
         for r in csv.DictReader(f, delimiter=";"):
-            key = (r["Lote"], r["Nome"])
-            exist[key] = r
+            exist[(r["Lote"], r["Nome"])] = r
     return exist
 
 def main():
@@ -53,7 +52,7 @@ def main():
                         "Lote": lote, "Nome": nome, "Telefone": r["Telefone"],
                         "Cidade": r["Cidade"], "Data_Msg1": r["Data_Msg1"],
                         "Status": "pendente_msg1", "Resposta": "",
-                        "Valor_Estimado": "", "Obs": ""
+                        "Valor_Estimado": "", "Obs": "", "Acao_Conversao": ""
                     })
     with open(TRACKER, "w", newline="", encoding="utf-8-sig") as f:
         w = csv.DictWriter(f, fieldnames=CAMPOS, delimiter=";")
