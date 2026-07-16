@@ -1,38 +1,30 @@
 #!/usr/bin/env python3
-"""Wrapper diario do cron WhatsApp: consolida tracker, regera dashboard e avisa follow-ups."""
-import subprocess, os, glob, re
+"""Cron diario (18h): orquestra outbound completo + avisa follow-ups WPP no stdout.
+Consolida trackers, gera 3 dashboards com metas, faz commit/push e lista follow-ups do dia.
+O envio real (WhatsApp/e-mail) e manual; este script so avisa e atualiza o rastreio.
+"""
+import subprocess, os, glob, re, csv
 from datetime import date
-
 REPO = r"C:/Users/Carolina/praia-digital"
-WHATS_DIR = os.path.join(REPO, "docs/sales/csv-lotes-email")
-PAD = re.compile(r"lote-whatsapp-proprietarios-(\d+)-(\d{4}-\d{2}-\d{2})\.csv")
+DIR = os.path.join(REPO, "docs/sales/csv-lotes-email")
+PAD_W = re.compile(r"lote-whatsapp-proprietarios-(\d+)-(\d{4}-\d{2}-\d{2})\.csv")
 
-def run(py):
-    subprocess.run(["python", os.path.join(REPO, "scripts", py)], check=True)
+def run(py, *a): subprocess.run(["python", os.path.join(REPO, "scripts", py), *a], check=True)
 
 def main():
-    # 1) consolidar tracker (preserva status manuais)
-    run("consolidar_tracker_whatsapp.py")
-    # 2) regerar dashboard
-    run("gerar_dashboard_whatsapp.py")
-    # 2b) consolidado multicanal
-    run("consolidar_tracker_email.py")
-    run("gerar_dashboard_email.py")
-    run("gerar_dashboard_outbound.py")
-    # 3) aviso de follow-ups
-    hoje = date.today()
-    arquivos = glob.glob(os.path.join(WHATS_DIR, "lote-whatsapp-proprietarios-*.csv"))
-    saida = []
-    t2 = t3 = 0
-    for arq in sorted(arquivos):
-        m = PAD.search(os.path.basename(arq))
+    # orquestrador (consolida + dashboards + push)
+    run("executar_outbound.py", "--push")
+
+    # aviso de follow-ups WhatsApp do dia
+    hoje = date.today(); saida = []; t2 = t3 = 0
+    for arq in sorted(glob.glob(os.path.join(DIR, "lote-whatsapp-proprietarios-*.csv"))):
+        m = PAD_W.search(os.path.basename(arq))
         if not m: continue
         lote = m.group(1)
         try: base = date.fromisoformat(m.group(2))
         except ValueError: continue
         delta = (hoje - base).days
         if delta < 0: continue
-        import csv
         leads = list(csv.DictReader(open(arq, encoding="utf-8-sig"), delimiter=";"))
         m2 = [l for l in leads if 1 <= delta <= 2]
         m3 = [l for l in leads if 3 <= delta <= 4]
@@ -45,7 +37,7 @@ def main():
             t3 += len(m3); saida.append(f"Msg3 (Encerramento) — {len(m3)}:")
             for l in m3: saida.append(f"  • {l['Nome']} ({l['Cidade']}) — {l['Telefone']}")
     print(f"=== Praia Digital — WhatsApp Proprietários {hoje:%d/%m/%Y} ===")
-    print(f"Dashboard atualizado. Follow-ups: Msg2={t2} | Msg3={t3}")
+    print(f"Dashboards atualizados e commitados. Follow-ups: Msg2={t2} | Msg3={t3}")
     if saida:
         print("\n".join(saida))
         print("\nFonte: lote-whatsapp-proprietarios-*.csv (Mensagem_2_Solucao / Mensagem_3_Encerramento).")
