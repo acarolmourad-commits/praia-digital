@@ -6,32 +6,56 @@
 <title>Captação de Leads — Corretores do Litoral | Praia Digital</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: Arial, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; color: #fff; }
-.container { max-width: 600px; margin: 0 auto; background: rgba(255,255,255,0.95); border-radius: 12px; padding: 40px; color: #333; }
-h1 { color: #764ba2; margin-bottom: 20px; text-align: center; }
-.subtitle { text-align: center; color: #666; margin-bottom: 30px; }
-.form-group { margin-bottom: 20px; }
-label { display: block; font-weight: 600; margin-bottom: 8px; }
-input, select, textarea { width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 8px; font-size: 1rem; }
-button { width: 100%; padding: 14px; background: #764ba2; color: white; border: none; border-radius: 8px; font-size: 1rem; cursor: pointer; margin-top: 10px; }
-button:hover { background: #667eea; }
-.benefits { background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; }
-.benefits li { margin-bottom: 10px; list-style: none; }
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; color: #fff; }
+.container { max-width: 640px; margin: 0 auto; background: rgba(255,255,255,0.97); border-radius: 14px; padding: 36px; color: #1f2937; }
+h1 { color: #3b1f6e; margin-bottom: 16px; text-align: center; }
+.subtitle { text-align: center; color: #374151; margin-bottom: 22px; }
+.benefits { background: #f8fafc; border: 1px solid #e5e7eb; padding: 18px; border-radius: 12px; margin: 18px 0; }
+.benefits li { margin-bottom: 10px; padding-left: 4px; list-style: none; }
 .benefits li:before { content: "✅ "; }
-.footer { text-align: center; margin-top: 30px; color: #666; font-size: 0.9rem; }
+.proof { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 14px 0; }
+.proof-item { background: #fff; border: 1px solid #e5e7eb; padding: 12px; border-radius: 12px; }
+.proof-item .number { font-size: 1.3rem; font-weight: 800; color: #111827; }
+.proof-item .label { font-size: .8rem; color: #6b7280; }
+.form-group { margin-bottom: 16px; }
+label { display: block; font-weight: 600; margin-bottom: 8px; }
+input, select, textarea { width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 10px; font-size: 1rem; background: #fff; color: #111827; }
+button { width: 100%; padding: 14px; background: #764ba2; color: white; border: none; border-radius: 10px; font-size: 1rem; font-weight: 700; cursor: pointer; margin-top: 6px; }
+button:hover { background: #5b3a94; }
+.footer { text-align: center; margin-top: 22px; color: #374151; font-size: .85rem; }
+.small { font-size: .85rem; color: #4b5563; margin-top: 10px; }
+a { color: #764ba2; text-decoration: none; font-weight: 600; }
+a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
 <div class="container">
-  <h1>🚀 Captação de Leads para Imobiliárias do Litoral</h1>
-  <p class="subtitle">Ferramentas de IA + automação 24/7 + conteúdo profissional — comece grátis agora.</p>
+  <h1>🚀 Captação de Leads para Corretores do Litoral</h1>
+  <p class="subtitle">SEO por cidade/bairro, IA e automação 24/7 — com foco em resultados locais, não genéricos.</p>
+
+  <div class="proof">
+    <div class="proof-item">
+      <div class="number">+42 leads</div>
+      <div class="label">em 30 dias</div>
+    </div>
+    <div class="proof-item">
+      <div class="number">-33% custo</div>
+      <div class="label">por lead</div>
+    </div>
+    <div class="proof-item">
+      <div class="number">26h → 12min</div>
+      <div class="label">tempo de resposta</div>
+    </div>
+  </div>
 
   <div class="benefits">
     <ul>
-      <li>Avaliação automática de preço de mercado</li>
-      <li>Recomendação personalizada por perfil de cliente</li>
-      <li>Assistente virtual 24/7 para WhatsApp e site</li>
-      <li>Geração automática de descrições profissionais</li>
+      <li>Conteúdo específico por cidade e bairro que já existe no site</li>
+      <li>Recomendação de imóveis por perfil de comprador</li>
+      <li>Assistente virtual para WhatsApp e site</li>
+      <li>Relatórios, rankings e estudos de mercado para usar na negociação</li>
+      <li>SEO local focado em busca por bairro, não só por cidade</li>
+      <li>Mapa inteligente com camadas de praias, escolas, hospitais e Airbnb</li>
       <li>Sem cartão de crédito para começar</li>
     </ul>
   </div>
@@ -50,8 +74,8 @@ button:hover { background: #667eea; }
       <input type="tel" id="whatsapp" required placeholder="(11) 91234-5678">
     </div>
     <div class="form-group">
-      <label for="cidade">Cidade/Região *</label>
-      <input type="text" id="cidade" required placeholder="Ex: Porto da Lua, Praia Grande...">
+      <label for="cidade">Cidade/Região de atuação *</label>
+      <input type="text" id="cidade" required placeholder="Ex: Santos — Gonzaga, Praia Grande — Ocian...">
     </div>
     <div class="form-group">
       <label for="imoveis">Quantidade aproximada de imóveis no acervo</label>
@@ -64,15 +88,16 @@ button:hover { background: #667eea; }
       </select>
     </div>
     <div class="form-group">
-      <label for="mensagem">Mensagem (opcional)</label>
-      <textarea id="mensagem" rows="4" placeholder="Conte seu maior desafio hoje..."></textarea>
+      <label for="mensagem">Maior desafio hoje (opcional)</label>
+      <textarea id="mensagem" rows="4" placeholder="Ex: faltam leads qualificados em Bertioga / Riviera..."></textarea>
     </div>
     <button type="submit">Quero testar gratuitamente</button>
   </form>
 
   <div class="footer">
-    <p>CEO | Carolina Moura | Praia Digital</p>
-    <p>https://praia.digital | comercial@praia.digital | (11) 95434-6288</p>
+    <p>CEO Carolina Moura | Praia Digital</p>
+    <p><a href="https://praia.digital" target="_blank">https://praia.digital</a> · comercial@praia.digital · (11) 95434-6288</p>
+    <p class="small">Veja também: <a href="cases.html">cases</a> · <a href="cases-rapidos-parcerias.html">cases rápidos</a> · <a href="ranking-semanal-2026-07-14.html">rankings</a> · <a href="bairros/index.html">bairros</a></p>
   </div>
 </div>
 </body>
