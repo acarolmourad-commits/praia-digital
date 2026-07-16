@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Yield Preditivo — Praia Digital</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{--azul:#0a3a6b;--ciano:#22d3ee;--verde:#4ade80;--bg:#06192e;--card:#0f2942}
+  body{font-family:'Segoe UI',system-ui,Arial,sans-serif;background:var(--bg);color:#e2e8f0;line-height:1.5}
+  .hero{background:linear-gradient(135deg,#06192e,#0a3a6b 60%,#063a5a);padding:2.2rem 1.2rem;text-align:center;position:relative;overflow:hidden}
+  .hero h1{font-size:1.5rem;color:#fff;font-weight:800}
+  .hero p{color:#94a3b8;margin-top:.4rem;font-size:.92rem}
+  #map{height:200px;margin:1rem auto 0;max-width:760px;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,.4)}
+  .wrap{max-width:760px;margin:0 auto;padding:1.2rem}
+  .card{background:var(--card);border:1px solid #1e3a5f;border-radius:14px;padding:1.4rem;margin:1rem 0}
+  label{display:block;font-size:.82rem;color:#94a3b8;margin:1rem 0 .3rem}
+  input,select{width:100%;padding:.7rem;border-radius:9px;border:1px solid #2a4a6b;background:#06192e;color:#fff;font-size:1rem}
+  .row{display:flex;gap:.7rem}.row>*{flex:1}
+  .btn{display:block;width:100%;margin-top:1.3rem;padding:.95rem;border:0;border-radius:11px;background:linear-gradient(90deg,#22d3ee,#0ea5e9);color:#04141f;font-weight:800;font-size:1.05rem;cursor:pointer}
+  .btn:disabled{opacity:.5}
+  .gauge-wrap{display:flex;justify-content:center;margin:1rem 0}
+  svg .arc{stroke-linecap:round;transition:stroke-dashoffset 1.3s ease}
+  .gauge-num{font-size:2.4rem;font-weight:800;fill:var(--verde)}
+  .kpis{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:.6rem}
+  .kpi{flex:1;min-width:120px;background:#06192e;border-radius:10px;padding:.8rem;text-align:center;border:1px solid #1e3a5f}
+  .kpi b{display:block;font-size:1.35rem;color:var(--ciano)}
+  .kpi span{font-size:.72rem;color:#94a3b8}
+  .bar{height:26px;border-radius:8px;background:#06192e;overflow:hidden;margin:.4rem 0;display:flex}
+  .bar i{height:100%;display:flex;align-items:center;justify-content:flex-end;padding-right:.5rem;font-size:.75rem;color:#04141f;font-weight:700}
+  .bar .t{background:#64748b}.bar .p{background:linear-gradient(90deg,#22d3ee,#4ade80)}
+  .slider-box{margin:1rem 0}
+  input[type=range]{width:100%}
+  .lost{font-size:1.6rem;color:#f87171;font-weight:800}
+  .hidden{display:none}
+  .badge{display:inline-block;background:#0a3a6b;color:var(--ciano);font-size:.7rem;padding:.2rem .6rem;border-radius:20px;margin-left:.4rem}
+  .form-modal{background:var(--card);border:1px solid #1e3a5f;border-radius:14px;padding:1.4rem;margin:1rem 0}
+  .ok{color:var(--verde);font-weight:700}
+  .err{color:#f87171;font-size:.85rem}
+  .consent{font-size:.72rem;color:#94a3b8;margin-top:.6rem;display:flex;gap:.5rem;align-items:flex-start}
+  footer{text-align:center;color:#64748b;font-size:.75rem;padding:1.5rem}
+  .pulse{animation:pulse 1.6s infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.55}}
+</style>
+</head>
+<body>
+<div class="hero">
+  <h1>📈 Calculadora de Yield Preditivo por CEP</h1>
+  <p>Descubra quanto seu imóvel pode render em temporada — sem você levantar um dedo.</p>
+  <div id="map"></div>
+</div>
+
+<div class="wrap">
+  <!-- ETAPA 1 -->
+  <div class="card" id="step1">
+    <label>CEP do imóvel <span class="badge">obrigatório</span></label>
+    <input id="cep" placeholder="11010-000" maxlength="9">
+    <div class="row">
+      <div><label>Tipo</label>
+        <select id="tipo"><option value="apartamento">Apartamento</option><option value="casa">Casa</option><option value="studio">Studio</option><option value="cobertura">Cobertura</option><option value="kitnet">Kitnet</option></select></div>
+      <div><label>Quartos</label>
+        <select id="quartos"><option>0</option><option selected>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></div>
+    </div>
+    <details style="margin-top:1rem;color:#94a3b8;font-size:.85rem">
+      <summary>Refinar precisão (opcional)</summary>
+      <div class="row" style="margin-top:.6rem">
+        <div><label>Banheiros</label><input id="banheiros" type="number" min="0" value="1"></div>
+        <div><label>Hóspedes máx.</label><input id="hospedes" type="number" min="1" value="4"></div>
+      </div>
+      <label>Metragem (m²)</label><input id="m2" type="number" min="10" placeholder="65">
+      <label>Comodidades (separadas por vírgula)</label><input id="comod" placeholder="piscina, ar_condicionado, vagas_1, vista_mar">
+      <div class="row" style="margin-top:.4rem">
+        <div><label>Valor de aquisição (R$)</label><input id="valor" type="number" placeholder="480000"></div>
+        <div><label>Custos fixos/mês (R$)</label><input id="custos" type="number" placeholder="1200"></div>
+      </div>
+    </details>
+    <button class="btn" id="calcBtn" onclick="calcular()">Calcular meu yield →</button>
+    <div id="err1" class="err"></div>
+  </div>
+
+  <!-- RESULTADO -->
+  <div class="card hidden" id="result">
+    <div class="gauge-wrap">
+      <svg width="200" height="130" viewBox="0 0 200 130">
+        <path class="arc" d="M20 110 A80 80 0 0 1 180 110" fill="none" stroke="#1e3a5f" stroke-width="16"/>
+        <path id="gaugeArc" class="arc" d="M20 110 A80 80 0 0 1 180 110" fill="none" stroke="#4ade80" stroke-width="16" stroke-dasharray="251" stroke-dashoffset="251" transform="rotate(0 100 110)"/>
+        <text id="gaugeNum" class="gauge-num" x="100" y="100" text-anchor="middle">0%</text>
+      </svg>
+    </div>
+    <p style="text-align:center;color:#94a3b8;font-size:.82rem">Yield estimado sobre o investimento <span id="modoBadge" class="badge"></span></p>
+    <div class="kpis">
+      <div class="kpi"><b id="kReceita">R$0</b><span>Receita líquida/ano</span></div>
+      <div class="kpi"><b id="kOcup">0%</b><span>Ocupação estimada</span></div>
+      <div class="kpi"><b id="kAdr">R$0</b><span>Diária média (dinâmica)</span></div>
+    </div>
+    <p style="margin-top:1rem;color:#94a3b8;font-size:.85rem">Comparativo de retorno mensal:</p>
+    <div class="bar"><i class="t" id="barT" style="width:35%">Aluguel tradicional R$0</i></div>
+    <div class="bar"><i class="p" id="barP" style="width:65%">Gestão Praia Digital R$0</i></div>
+    <p id="multTxt" class="ok" style="font-size:.9rem"></p>
+
+    <div class="slider-box">
+      <label>Quanto você deixa na mesa sem gestão profissional:</label>
+      <input type="range" id="anos" min="1" max="5" value="2" oninput="atualizaPerda()">
+      <p><span id="anosLbl">2 anos</span> · <span class="lost" id="perda">R$0</span> a menos no bolso</p>
+    </div>
+
+    <button class="btn" onclick="mostrarForm()">📩 Receber meu relatório completo no WhatsApp</button>
+  </div>
+
+  <!-- FORM LEAD (GATED) -->
+  <div class="form-modal hidden" id="leadForm">
+    <h2 style="color:var(--ciano);font-size:1.1rem">Seu relatório está pronto 🎯</h2>
+    <p style="color:#94a3b8;font-size:.85rem;margin:.3rem 0 1rem">Deixe seu WhatsApp e enviamos o plano personalizado + simulação detalhada.</p>
+    <label>Nome <span class="badge">obrigatório</span></label><input id="lnome" placeholder="Seu nome">
+    <label>WhatsApp <span class="badge">obrigatório</span></label><input id="lwhats" placeholder="(11) 99999-9999">
+    <label>E-mail (opcional)</label><input id="lemail" placeholder="voce@email.com">
+    <label class="consent"><input type="checkbox" id="lgpd" style="width:auto;margin-top:.2rem"> <span>Autorizo a Praia Digital a me contatar sobre gestão de temporada (LGPD Art. 7º, VIII).</span></label>
+    <button class="btn" onclick="capturarLead()">Enviar e receber no WhatsApp →</button>
+    <div id="err2" class="err"></div>
+    <div id="ok2" class="ok hidden"></div>
+  </div>
+
+  <footer>Praia Digital · Gestão de temporada no litoral de SP · Estimativa base até calibração com histórico interno.</footer>
+</div>
+
+<script>
+const API = "http://127.0.0.1:8000";
+let ultimo = null, ultimoCep = null, ultimaCidade = null, ultimoYield = null;
+
+// mapa heatmap fake (centro SP/Santos)
+const map = L.map('map',{scrollWheelZoom:false,zoomControl:false}).setView([-23.96,-46.33],10);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+const heat = L.circleMarker([-23.96,-46.33],{radius:14,color:'#22d3ee',fillColor:'#22d3ee',fillOpacity:.35}).addTo(map);
+
+function fmt(n){return "R$ "+Math.round(n).toLocaleString('pt-BR');}
+function animNum(el,to,pre='R$ ',dec=0){
+  const dur=1100, t0=performance.now();
+  function step(t){const k=Math.min((t-t0)/dur,1);const v=to*k;
+    el.textContent=pre+v.toLocaleString('pt-BR',{maximumFractionDigits:dec});
+    if(k<1)requestAnimationFrame(step);}
+  requestAnimationFrame(step);
+}
+
+async function calcular(){
+  const cep=document.getElementById('cep').value.trim();
+  document.getElementById('err1').textContent="";
+  if(cep.replace(/\D/g,'').length!==8){document.getElementById('err1').textContent="CEP inválido (8 dígitos).";return;}
+  const btn=document.getElementById('calcBtn');btn.disabled=true;btn.textContent="Calculando…";
+  const body={
+    cep, tipo:document.getElementById('tipo').value,
+    quartos:+document.getElementById('quartos').value,
+    banheiros:+document.getElementById('banheiros').value||undefined,
+    hospedes_max:+document.getElementById('hospedes').value||undefined,
+    metragem_m2:+document.getElementById('m2').value||undefined,
+    comodidades:document.getElementById('comod').value.split(',').map(s=>s.trim()).filter(Boolean),
+    valor_aquisicao:+document.getElementById('valor').value||undefined,
+    custos_fixos_mensais:+document.getElementById('custos').value||undefined
+  };
+  try{
+    const r=await fetch(API+"/api/v1/yield/estimate",{method:"POST",headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+    if(!r.ok){const e=await r.json();throw new Error(e.detail||"erro");}
+    const d=await r.json();
+    ultimo=d; ultimoCep=cep; ultimaCidade=d.cep_resolvido.cidade; ultimoYield=d.yield_a_a;
+    mostrarResultado(d);
+  }catch(e){
+    document.getElementById('err1').textContent="Erro: "+e.message+" (a API está rodando em "+API+"?)";
+  }finally{btn.disabled=false;btn.textContent="Calcular meu yield →";}
+}
+
+function mostrarResultado(d){
+  document.getElementById('step1').classList.add('hidden');
+  document.getElementById('result').classList.remove('hidden');
+  const y=(d.yield_a_a!=null?d.yield_a_a*100:0);
+  const arc=document.getElementById('gaugeArc');const circ=251;
+  arc.style.strokeDashoffset=circ*(1-y/100);
+  animNum(document.getElementById('gaugeNum'),y, '', 1);document.getElementById('gaugeNum').textContent=y.toFixed(1)+"%";
+  animNum(document.getElementById('kReceita'),d.receita_liq_praiadigital);
+  animNum(document.getElementById('kOcup'),d.ocupacao_estimada*100,'',0);document.getElementById('kOcup').textContent=(d.ocupacao_estimada*100).toFixed(0)+"%";
+  animNum(document.getElementById('kAdr'),d.adr_medio);
+  document.getElementById('modoBadge').textContent=d.modo==='precisao_interna'?'precisão interna':'estimativa base';
+  const t=d.comparativo_aluguel_longa, p=d.receita_liq_praiadigital/12;
+  const tot=t+p;document.getElementById('barT').style.width=(t/tot*100)+"%";document.getElementById('barT').textContent="Aluguel tradicional "+fmt(t);
+  document.getElementById('barP').style.width=(p/tot*100)+"%";document.getElementById('barP').textContent="Praia Digital "+fmt(p);
+  if(d.fator_multiplicador)document.getElementById('multTxt').textContent="Você recebe "+d.fator_multiplicador+"× mais que o aluguel tradicional.";
+  atualizaPerda();
+}
+
+function atualizaPerda(){
+  const anos=+document.getElementById('anos').value;
+  document.getElementById('anosLbl').textContent=anos+(anos>1?" anos":" ano");
+  const perd=(ultimo?ultimo.receita_liq_praiadigital - (ultimo?ultimo.comparativo_aluguel_longa*12:0):0)*anos;
+  animNum(document.getElementById('perda'),Math.max(perd,0));
+}
+
+function mostrarForm(){document.getElementById('leadForm').classList.remove('hidden');document.getElementById('leadForm').scrollIntoView({behavior:'smooth'});}
+
+async function capturarLead(){
+  const nome=document.getElementById('lnome').value.trim();
+  const whats=document.getElementById('lwhats').value.trim();
+  const lgpd=document.getElementById('lgpd').checked;
+  document.getElementById('err2').textContent="";
+  if(!nome||!whats){document.getElementById('err2').textContent="Nome e WhatsApp são obrigatórios.";return;}
+  if(!lgpd){document.getElementById('err2').textContent="É preciso autorizar o contato (LGPD).";return;}
+  try{
+    const r=await fetch(API+"/api/v1/lead/capture",{method:"POST",headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({nome,whatsapp:whats,email:document.getElementById('lemail').value.trim()||undefined,
+        cidade:ultimaCidade,cep:ultimoCep,yield_estimado:ultimoYield,consentimento_lgpd:true})});
+    const d=await r.json();
+    if(!r.ok)throw new Error(d.detail||"erro");
+    document.getElementById('ok2').classList.remove('hidden');
+    document.getElementById('ok2').textContent="✅ Pronto! Enviamos sua simulação no WhatsApp em instantes. (status: "+d.status+")";
+    document.getElementById('leadForm').querySelector('button').disabled=true;
+  }catch(e){document.getElementById('err2').textContent="Erro: "+e.message;}
+}
+
+// máscara de CEP
+document.getElementById('cep').addEventListener('input',e=>{let v=e.target.value.replace(/\D/g,'');if(v.length>5)v=v.slice(0,5)+'-'+v.slice(5,8);e.target.value=v;});
+</script>
+</body>
+</html>
