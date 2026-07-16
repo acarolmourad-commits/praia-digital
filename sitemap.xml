@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://acarolmourad-commits.github.io/praia-digital/dono-norte/dono-ubatuba.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://acarolmourad-commits.github.io/praia-digital/dono-norte/dono-ilhabela.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://acarolmourad-commits.github.io/praia-digital/dono-norte/dono-caraguatatuba.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://acarolmourad-commits.github.io/praia-digital/dono-norte/dono-sao-sebastiao.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
     <loc>https://acarolmourad-commits.github.io/praia-digital/assets/calculadora-widget-standalone.html</loc>
     <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
