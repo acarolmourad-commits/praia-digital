@@ -46,6 +46,8 @@ def main():
     run("relatorio_acoes_conversao.py")
     # 2d) relatorio de nurture/win-back (sem_interesse em D+30/60/90)
     run("relatorio_nurture.py")
+    # 2e) relatorio executivo (diretoria)
+    run("gerar_relatorio_executivo.py")
 
     # 3) consolidado com metas
     res = {}
