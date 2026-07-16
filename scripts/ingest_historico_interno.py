@@ -35,9 +35,8 @@ def gerar_template():
     with open(p, "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(COLS)
-        # 3 linhas-exemplo comentadas via # não roda em CSV; deixamos cabeçalho + 1 linha guia
-        w.writerow(["11010-000", "apartamento", 2, 320.50, 0.68, 182, 58331.00, "2025-01-01", "2025-12-31"])
-    print(f"Template criado: {p}\nPreencha com os contratos reais de gestão da Praia Digital (1 linha por imóvel/ano).")
+    print(f"Template criado: {p}\nPreencha com os contratos reais de gestão da Praia Digital (1 linha por imóvel/ano). Ex:\n"
+          f"  11010-000,apartamento,2,320.50,0.68,182,58331.00,2025-01-01,2025-12-31")
 
 def main(demo=False):
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
