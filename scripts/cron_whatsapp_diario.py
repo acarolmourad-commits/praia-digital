@@ -21,13 +21,15 @@ def main():
         m = PAD_W.search(os.path.basename(arq))
         if not m: continue
         lote = m.group(1)
-        try: base = date.fromisoformat(m.group(2))
+        leads = list(csv.DictReader(open(arq, encoding="utf-8-sig"), delimiter=";"))
+        datas = [l.get("Data_Msg1","").strip() for l in leads if l.get("Data_Msg1","").strip()]
+        if not datas: continue
+        try: base = date.fromisoformat(datas[0])
         except ValueError: continue
         delta = (hoje - base).days
         if delta < 0: continue
-        leads = list(csv.DictReader(open(arq, encoding="utf-8-sig"), delimiter=";"))
-        m2 = [l for l in leads if 1 <= delta <= 2]
-        m3 = [l for l in leads if 3 <= delta <= 4]
+        m2 = [l for l in leads if l.get("Status") in ("enviado_msg1","enviado_msg2") and 1 <= delta <= 2]
+        m3 = [l for l in leads if l.get("Status") in ("enviado_msg1","enviado_msg2","enviado_msg3") and 3 <= delta <= 4]
         if not m2 and not m3: continue
         saida.append(f"\n--- Lote {lote} (D+{delta}) ---")
         if m2:
