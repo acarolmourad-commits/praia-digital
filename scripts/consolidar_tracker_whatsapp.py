@@ -26,7 +26,7 @@ def carregar_existente():
         return {}
     exist = {}
     with open(TRACKER, encoding="utf-8-sig") as f:
-        for r in csv.DictReader(f):
+        for r in csv.DictReader(f, delimiter=";"):
             key = (r["Lote"], r["Nome"])
             exist[key] = r
     return exist
