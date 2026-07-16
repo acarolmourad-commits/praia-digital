@@ -17,6 +17,8 @@ Quer eu simular no SEU imóvel? É só me passar quartos e bairro que eu traço 
 ```
 
 ## Landing de apoio (reuso de ativos)
+- `assets/retorno-gestao-completa.html` — caso real +64%
+- `assets/simulador-roi-proprietario.html` — **simulador interativo** (lead calcula o próprio ROI no site)
 - `assets/roi-ia-imobiliaria.html` — calculadora de ROI
 - `assets/servico-avaliacao-preco-imoveis-litoral.html` — avaliação automática de preço
 - `assets/simulador-roi-parcerias-imobiliarias-2026.html` — simulador de parcerias
