@@ -40,7 +40,10 @@ def main():
     run("consolidar_tracker_whatsapp.py"); run("gerar_dashboard_whatsapp.py")
     run("consolidar_tracker_email.py");    run("gerar_dashboard_email.py")
 
-    # 2) consolidado com metas
+    # 2b) prova de entrega (auditoria)
+    run("gerar_prova_entrega.py")
+
+    # 3) consolidado com metas
     res = {}
     for canal, cfg in CANAIS.items():
         rows = ler(cfg["tracker"]); cnt = defaultdict(int)
@@ -85,7 +88,8 @@ def main():
     if args.push:
         subprocess.run(["git", "-C", REPO, "add", "docs/sales/csv-lotes-email/tracker-whatsapp-proprietarios.csv",
                         "docs/sales/csv-lotes-email/tracker-email-proprietarios.csv", "docs/sales/dashboard-whatsapp-proprietarios.html",
-                        "docs/sales/dashboard-email-proprietarios.html", "docs/sales/dashboard-outbound-proprietarios.html"], check=True)
+                        "docs/sales/dashboard-email-proprietarios.html", "docs/sales/dashboard-outbound-proprietarios.html",
+                        "docs/sales/prova-entrega-outbound.json", "docs/sales/prova-entrega-outbound.html"], check=True)
         subprocess.run(["git", "-C", REPO, "commit", "-m", f"chore: refresh dashboards outbound {date.today():%Y-%m-%d}"], check=True)
         subprocess.run(["git", "-C", REPO, "push"], check=True)
         print("Commit+push dos artefatos atualizados.")
