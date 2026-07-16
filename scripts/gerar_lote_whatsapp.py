@@ -48,6 +48,16 @@ def msg25(nome, regiao):
             "Você ganha mais dormindo. 😴💰\n"
             "Quer eu simular no SEU imóvel? É só me passar quartos e bairro que eu traço o ROI real.")
 
+def msg4(nome, regiao):
+    return (f"{nome}, seja muito bem-vindo(a) à Praia Digital! 🎉 Seu imóvel em {regiao} agora roda no "
+            "piloto de Gestão Completa.\n\n"
+            "Resumo do que acontece a partir de agora:\n"
+            "1️⃣ Contrato e acesso — te mando o link pra assinar e liberar o calendário do Airbnb/Booking pra gente.\n"
+            "2️⃣ Ficha do imóvel — me manda fotos, regras e o que não pode faltar pro hóspede.\n"
+            "3️⃣ Precificação Dinâmica ON — a gente calibra o preço ideal por dia. Você não toca em nada.\n"
+            "4️⃣ Primeira reserva — você recebe o relatório semanal de faturamento no WhatsApp.\n\n"
+            "Você ganha mais trabalhando zero horas. Qualquer dúvida, estou aqui. Vamos nessa! 💪")
+
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--lote", required=True, help="numero do lote Brevo (ex: 150)")
@@ -82,10 +92,11 @@ def main():
         w = csv.writer(f, delimiter=";")
         w.writerow(["Nome","Telefone","Cidade","Data_Msg1","Status",
                     "Mensagem_1_Abordagem","Mensagem_2_Solucao","Mensagem_2_5_ProvaROI",
-                    "Mensagem_3_Encerramento"])
+                    "Mensagem_3_Encerramento","Mensagem_4_Onboarding"])
         for nome, tel, cidade in rows:
             w.writerow([nome, tel, cidade, base.isoformat(), "contato_inicial_pendente",
-                        msg1(nome, cidade), msg2(nome, cidade), msg25(nome, cidade), msg3(nome, cidade)])
+                        msg1(nome, cidade), msg2(nome, cidade), msg25(nome, cidade),
+                        msg3(nome, cidade), msg4(nome, cidade)])
 
     # registro
     linhas = [f"# Follow-up Registro — Lote WhatsApp Proprietários Autogestores {lote}\n",
