@@ -89,14 +89,15 @@
 
     /* NL SEARCH */
     .nl-search-section { background: var(--purple); padding: 1.5rem 2rem; text-align: center; }
-    .nl-search-label { color: rgba(255,255,255,0.8); font-size: 0.85rem; margin-bottom: 0.75rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
-    .nl-search-box { display: flex; gap: 0.5rem; max-width: 650px; margin: 0 auto; }
-    .nl-search-box input { flex: 1; padding: 0.75rem 1.25rem; border: 2px solid rgba(255,255,255,0.3); border-radius: 50px; font-size: 1rem; background: rgba(255,255,255,0.15); color: var(--white); }
-    .nl-search-box input::placeholder { color: rgba(255,255,255,0.5); }
-    .nl-search-box input:focus { outline: none; border-color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.25); }
-    .nl-search-box button { padding: 0.75rem 1.5rem; background: var(--white); color: var(--purple); border: none; border-radius: 50px; font-weight: 700; cursor: pointer; font-size: 0.95rem; transition: transform 0.2s; white-space: nowrap; }
+    .nl-search-label { color: rgba(255,255,255,0.8); font-size: .85rem; margin-bottom: .75rem; display: flex; align-items: center; justify-content: center; gap: .5rem; }
+    .nl-search-box { display: flex; gap: .5rem; max-width: 650px; margin: 0 auto; }
+    .nl-search-box input { flex: 1; padding: .75rem 1.25rem; border: 2px solid rgba(255,255,255,.3); border-radius: 50px; font-size: 1rem; background: rgba(255,255,255,.15); color: var(--white); }
+    .nl-search-box input::placeholder { color: rgba(255,255,255,.5); }
+    .nl-search-box input:focus { outline: none; border-color: rgba(255,255,255,.6); background: rgba(255,255,255,.25); }
+    .nl-search-box button { padding: .75rem 1.5rem; background: var(--white); color: var(--purple); border: none; border-radius: 50px; font-weight: 700; cursor: pointer; font-size: .95rem; transition: transform .2s; white-space: nowrap; }
     .nl-search-box button:hover { transform: scale(1.05); }
-    .nl-hints { color: rgba(255,255,255,0.6); font-size: 0.8rem; margin-top: 0.6rem; }
+    .nl-hints { color: rgba(255,255,255,0.6); font-size:.8rem; margin-top:.6rem; }
+    .nl-hints a { color: rgba(255,255,255,0.85); text-decoration: underline; }
 
     /* SEARCH */
     .search-section { background: var(--white); padding: 3rem 2rem; margin-top: -2rem; border-radius: 24px 24px 0 0; position: relative; }
@@ -1151,11 +1152,14 @@
     <a href="exclusivos/relatorio-mercado-2026.html" class="action-btn secondary" target="_blank">📊 Relatórios</a>
     <a href="exclusivos/rankings-exclusivos-2026.html" class="action-btn secondary" target="_blank">🏆 Rankings</a>
     <a href="exclusivos/estudo-santos-2026.html" class="action-btn secondary" target="_blank">📋 Estudo de Cidade</a>
-    <a href="exclusivos/conteudo-rec-2026.html" class="action-btn secondary" target="_blank">📰 Conteúdo Recorrente</a>
-    <a href="exclusivos/comunidade-corretores-investidores.html" class="action-btn secondary" target="_blank">🤝 Comunidade</a>
-    <a href="anfitrioes/index.html" class="action-btn secondary" target="_blank">🌟 Área do Anfitrião</a>
-    <a href="conteudo-periodico/relatorio-semanal-2026-07-14.html" class="action-btn secondary" target="_blank">📊 Relatório Semanal</a>
-    <a href="conteudo-periodico/ranking-semanal-2026-07-14.html" class="action-btn secondary" target="_blank">🏆 Ranking</a>
+    <a href="/praia-digital/mapa-inteligente.html" class="action-btn secondary" target="_blank">🗺️ Mapa Inteligente</a>
+    <a href="/praia-digital/exclusivos/comunidade-corretores-investidores.html" class="action-btn secondary" target="_blank">🤝 Comunidade</a>
+    <a href="/praia-digital/anfitrioes/index.html" class="action-btn secondary" target="_blank">🌟 Área do Anfitrião</a>
+    <a href="/praia-digital/conteudo-periodico/relatorio-semanal-2026-07-14.html" class="action-btn secondary" target="_blank">📊 Relatório Semanal</a>
+    <a href="/praia-digital/conteudo-periodico/ranking-semanal-2026-07-14.html" class="action-btn secondary" target="_blank">🏆 Ranking</a>
+    <a href="/praia-digital/conteudo-periodico/indicadores-2026-07-14.html" class="action-btn secondary" target="_blank">📈 Indicadores</a>
+    <a href="/praia-digital/bairros/santos-gonzaga.html" class="action-btn secondary" target="_blank">📍 Bairros</a>
+    <a href="/praia-digital/dashboard-prospeccao.html" class="action-btn secondary" target="_blank">🧭 Painel de prospecção</a>
     <a href="conteudo-periodico/estudo-itanhaem-2026-07-14.html" class="action-btn secondary" target="_blank">📋 Estudo</a>
     <a href="conteudo-periodico/oportunidades-2026-07-14.html" class="action-btn secondary" target="_blank">🚀 Oportunidades</a>
     <a href="conteudo-periodico/indicadores-2026-07-14.html" class="action-btn secondary" target="_blank">📈 Indicadores</a>
@@ -1289,7 +1293,9 @@
 
     <div style="display:flex;gap:0.75rem;flex-wrap:wrap;justify-content:center;margin-bottom:1.5rem;">
       <a href="cases.html" class="btn btn-outline" style="border:2px solid rgba(255,255,255,0.5);color:#fff;">📊 Cases</a>
-      <a href="blog/assinatura-profissional-corretores-litoral-2026.html" class="btn btn-outline" style="border:2px solid rgba(255,255,255,0.5);color:#fff;">🧾 Planos</a>
+      <a href="dashboard-prospeccao.html" class="btn btn-outline" style="border:2px solid rgba(255,255,255,0.5);color:#fff;">🧭 Painel de prospecção</a>
+      <a href="bairros/santos-gonzaga.html" class="btn btn-outline" style="border:2px solid rgba(255,255,255,0.5);color:#fff;">📍 Bairros</a>
+      <a href="anfitrioes/index.html" class="btn btn-outline" style="border:2px solid rgba(255,255,255,0.5);color:#fff;">🌟 Área do Anfitrião</a>
     </div>
 
     <!-- OWNER PROPERTY REGISTRATION FORM -->
