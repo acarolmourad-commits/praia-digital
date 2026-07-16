@@ -13,6 +13,9 @@ from datetime import date
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 from typing import Optional, List
+import sys
+sys.path.insert(0, os.path.dirname(__file__))
+import lead_capture
 
 REPO = r"C:/Users/Carolina/praia-digital"
 CACHE = os.path.join(REPO, "docs/data/historico_interno_cep.json")
@@ -114,6 +117,31 @@ def estimate(inp: EstimateIn):
 @app.get("/health")
 def health():
     return {"status": "ok", "data": date.today().isoformat()}
+
+# ---------- Captura de lead ----------
+class LeadIn(BaseModel):
+    nome: str
+    whatsapp: str
+    email: Optional[str] = None
+    cidade: Optional[str] = None
+    cep: Optional[str] = None
+    yield_estimado: Optional[float] = None
+    consentimento_lgpd: bool = False
+    payload_estimate: Optional[dict] = None
+
+@app.post("/api/v1/lead/capture")
+def capture(inp: LeadIn):
+    try:
+        res = lead_capture.capturar(
+            nome=inp.nome, telefone=inp.whatsapp, cidade=inp.cidade,
+            cep=inp.cep, yield_estimado=inp.yield_estimado,
+            email=inp.email, consentimento_lgpd=inp.consentimento_lgpd)
+    except ValueError as e:
+        raise HTTPException(400, str(e))
+    if res["status"] == "ja_existente":
+        return {"status": "ok", "detail": "lead ja existia no tracker", "telefone": res["telefone"]}
+    return {"status": "created", "detail": "lead no tracker (origem=calc-cep, Status=pendente_msg1)",
+            "telefone": res["telefone"]}
 
 if __name__ == "__main__":
     import uvicorn
