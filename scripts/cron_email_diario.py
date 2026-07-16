@@ -11,6 +11,12 @@ PAD_E = re.compile(r"lote-email-proprietarios-(\d+)-(\d{4}-\d{2}-\d{2})\.csv")
 
 def main():
     hoje = date.today(); saida = []; t2 = t3 = 0
+    # fonte de verdade do STATUS = tracker de e-mail
+    tracker = {}
+    tk = os.path.join(DIR, "tracker-email-proprietarios.csv")
+    if os.path.exists(tk):
+        for r in csv.DictReader(open(tk, encoding="utf-8-sig"), delimiter=";"):
+            tracker[(r["Lote"], r["Nome"].strip().lower())] = r["Status"]
     for arq in sorted(glob.glob(os.path.join(DIR, "lote-email-proprietarios-*.csv"))):
         m = PAD_E.search(os.path.basename(arq))
         if not m: continue
@@ -22,8 +28,9 @@ def main():
         except ValueError: continue
         delta = (hoje - base).days
         if delta < 0: continue
-        e2 = [l for l in leads if l.get("Status") in ("enviado_email1","enviado_email2") and 2 <= delta <= 3]
-        e3 = [l for l in leads if l.get("Status") in ("enviado_email1","enviado_email2","enviado_email3") and 5 <= delta <= 6]
+        def st(l): return tracker.get((lote, l["Nome"].strip().lower()), l.get("Status",""))
+        e2 = [l for l in leads if st(l) in ("enviado_email1","enviado_email2") and 2 <= delta <= 3]
+        e3 = [l for l in leads if st(l) in ("enviado_email1","enviado_email2","enviado_email3") and 5 <= delta <= 6]
         if not e2 and not e3: continue
         saida.append(f"\n--- Lote {lote} (D+{delta}) ---")
         if e2:
