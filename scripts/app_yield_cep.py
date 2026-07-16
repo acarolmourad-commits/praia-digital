@@ -19,9 +19,17 @@ import lead_capture
 
 REPO = r"C:/Users/Carolina/praia-digital"
 CACHE = os.path.join(REPO, "docs/data/historico_interno_cep.json")
+FRONT = os.path.join(REPO, "assets/calculadora-yield-cep.html")
 COMISSAO = 0.20  # Praia Digital
 
-app = FastAPI(title="Praia Digital — Yield Preditivo por CEP", version="0.1")
+# Tenants white-label (Expansao C). Em produção viria de DB; aqui hardcoded p/ MVP.
+TENANTS = {
+    "padrao": {"nome": "Praia Digital", "cor": "#22d3ee", "logo": "📈 Praia Digital"},
+    "santos-ancora": {"nome": "Prime Imóveis Santos", "cor": "#f59e0b", "logo": "🏢 Prime Imóveis"},
+    "demo": {"nome": "Imobiliária Parceira", "cor": "#4ade80", "logo": "🤝 Parceira PD"},
+}
+
+app = FastAPI(title="Praia Digital — Yield Preditivo por CEP (White-label)", version="0.2")
 
 # ---------- Schemas ----------
 class EstimateIn(BaseModel):
@@ -128,6 +136,7 @@ class LeadIn(BaseModel):
     yield_estimado: Optional[float] = None
     consentimento_lgpd: bool = False
     payload_estimate: Optional[dict] = None
+    parceiro_id: Optional[str] = None
 
 @app.post("/api/v1/lead/capture")
 def capture(inp: LeadIn):
@@ -135,13 +144,35 @@ def capture(inp: LeadIn):
         res = lead_capture.capturar(
             nome=inp.nome, telefone=inp.whatsapp, cidade=inp.cidade,
             cep=inp.cep, yield_estimado=inp.yield_estimado,
-            email=inp.email, consentimento_lgpd=inp.consentimento_lgpd)
+            email=inp.email, consentimento_lgpd=inp.consentimento_lgpd,
+            parceiro_id=inp.parceiro_id)
     except ValueError as e:
         raise HTTPException(400, str(e))
     if res["status"] == "ja_existente":
         return {"status": "ok", "detail": "lead ja existia no tracker", "telefone": res["telefone"]}
     return {"status": "created", "detail": "lead no tracker (origem=calc-cep, Status=pendente_msg1)",
-            "telefone": res["telefone"]}
+            "telefone": res["telefone"], "parceiro_id": res.get("parceiro_id")}
+
+# ---------- Widget white-label (Expansao C) ----------
+from fastapi.responses import HTMLResponse
+@app.get("/widget/{tenant}", response_class=HTMLResponse)
+def widget(tenant: str):
+    t = TENANTS.get(tenant, TENANTS["padrao"])
+    try:
+        html = open(FRONT, encoding="utf-8").read()
+    except FileNotFoundError:
+        raise HTTPException(404, "front nao encontrado")
+    # injeta marca da parceira no titulo e no script (PARCEIRO_ID + cor)
+    html = html.replace("📈 Calculadora de Yield Preditivo", f"{t['logo']} · Calculadora de Yield")
+    html = html.replace("<title>Calculadora de Yield Preditivo — Praia Digital</title>",
+                         f"<title>{t['logo']} · Calculadora de Yield — Praia Digital</title>")
+    html = html.replace("--ciano:#22d3ee;", f"--ciano:{t['cor']};")
+    html = html.replace("const API = \"http://127.0.0.1:8000\";",
+                         f"const API = \"http://127.0.0.1:8000\";\nconst PARCEIRO_ID = \"{tenant}\";")
+    # passa parceiro_id no capture
+    html = html.replace("consentimento_lgpd:true})",
+                         "consentimento_lgpd:true, parceiro_id: PARCEIRO_ID})")
+    return HTMLResponse(html)
 
 if __name__ == "__main__":
     import uvicorn
