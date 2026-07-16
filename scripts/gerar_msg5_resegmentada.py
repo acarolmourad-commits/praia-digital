@@ -43,11 +43,14 @@ def msg5(nome, regiao, s):
             f"em {regiao} e você ganha mais trabalhando zero horas. Se um dia fizer sentido, é só me avisar. "
             f"Bom proveito! 🤝")
 
-def main():
+def main(demo=False):
     rows = list(csv.DictReader(open(TRACKER, encoding="utf-8-sig"), delimiter=";"))
+    if demo:
+        rows = [{"Nome":"Ana","Telefone":"13 99999-0001","Cidade":"Praia Grande","Status":"msg3_enviada","Obs":"quer saber o preço","Resposta":"","Acao_Conversao":""},
+                {"Nome":"Beto","Telefone":"13 99999-0002","Cidade":"Santos","Status":"encerrado","Obs":"","Resposta":"não tenho tempo","Acao_Conversao":""},
+                {"Nome":"Caio","Telefone":"13 99999-0003","Cidade":"Ubatuba","Status":"sem_interesse","Obs":"","Resposta":"obrigado, depois","Acao_Conversao":""}]
     out = []
     for r in rows:
-        # alvo: chegou em msg3/encerrado sem fechar e sem resposta positiva
         if r.get("Status") in ("msg3_enviada", "encerrado", "sem_interesse") and not r.get("Acao_Conversao"):
             s = seg(r)
             out.append({"Nome": r["Nome"], "Telefone": r["Telefone"], "Cidade": r["Cidade"],
@@ -57,7 +60,8 @@ def main():
     with open(OUT, "w", newline="", encoding="utf-8-sig") as f:
         w = csv.DictWriter(f, fieldnames=["Nome", "Telefone", "Cidade", "Segmento", "Status", "Msg5_Resegmentada"], delimiter=";")
         w.writeheader(); w.writerows(out)
-    print(f"Msg5 re-segmentada: {OUT}\n{len(out)} leads B2C WPP para última chance inteligente.")
+    print(f"Msg5 re-segmentada: {OUT}\n{len(out)} leads B2C WPP para última chance inteligente." + (" [DEMO]" if demo else ""))
 
 if __name__ == "__main__":
-    main()
+    import sys
+    main(demo="--demo" in sys.argv)
