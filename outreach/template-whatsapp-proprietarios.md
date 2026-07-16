@@ -43,3 +43,6 @@ Se um dia quiser ganhar mais sem levantar um dedo, a Praia Digital resolve. Fico
 - Envio via WhatsApp manual (SMTP não configurado) — copiar/colar por contato.
 - Não insista após a msg 3; marque o lead como `sem_interesse` no registro.
 - Para lotes grandes, gere CSV com as 3 mensagens pré-preenchidas e importe no WhatsApp Business (etiquetas).
+
+## Arquivos relacionados
+- `outreach/template-whatsapp-proprietarios-sp.md` — variante **São Paulo (capital)**: mesmo funil, gatilhos urbanos (check-in distante, eventos/feriados). Use quando o público for a capital paulista em vez do litoral.
