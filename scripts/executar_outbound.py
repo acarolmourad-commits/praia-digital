@@ -88,15 +88,25 @@ def main():
     open(OUT, "w", encoding="utf-8").write(html)
     print(f"Dashboard consolidado: {OUT}\nLeads {tot_leads} | Resp {tot_resp} | Fech {tot_fech} | R${tot_valor:,.0f}")
 
-    # 3) commit+push opcional
+    # 3) commit+push opcional (so se houver mudanca NOS ARQUIVOS DO OUTBOUND, senao o cron quebra)
     if args.push:
-        subprocess.run(["git", "-C", REPO, "add", "docs/sales/csv-lotes-email/tracker-whatsapp-proprietarios.csv",
-                        "docs/sales/csv-lotes-email/tracker-email-proprietarios.csv", "docs/sales/dashboard-whatsapp-proprietarios.html",
-                        "docs/sales/dashboard-email-proprietarios.html", "docs/sales/dashboard-outbound-proprietarios.html",
-                        "docs/sales/prova-entrega-outbound.json", "docs/sales/prova-entrega-outbound.html"], check=True)
-        subprocess.run(["git", "-C", REPO, "commit", "-m", f"chore: refresh dashboards outbound {date.today():%Y-%m-%d}"], check=True)
-        subprocess.run(["git", "-C", REPO, "push"], check=True)
-        print("Commit+push dos artefatos atualizados.")
+        alvos = ["docs/sales/csv-lotes-email/tracker-whatsapp-proprietarios.csv",
+                 "docs/sales/csv-lotes-email/tracker-email-proprietarios.csv",
+                 "docs/sales/dashboard-whatsapp-proprietarios.html",
+                 "docs/sales/dashboard-email-proprietarios.html",
+                 "docs/sales/dashboard-outbound-proprietarios.html",
+                 "docs/sales/prova-entrega-outbound.json",
+                 "docs/sales/prova-entrega-outbound.html",
+                 "docs/sales/csv-lotes-email/nurture-pendente.csv"]
+        subprocess.run(["git", "-C", REPO, "add"] + alvos, check=True)
+        r = subprocess.run(["git", "-C", REPO, "status", "--porcelain"] + alvos,
+                          capture_output=True, text=True)
+        if r.stdout.strip():
+            subprocess.run(["git", "-C", REPO, "commit", "-m", f"chore: refresh dashboards outbound {date.today():%Y-%m-%d}"], check=True)
+            subprocess.run(["git", "-C", REPO, "push"], check=True)
+            print("Commit+push dos artefatos atualizados.")
+        else:
+            print("Sem mudancas para versionar.")
 
 if __name__ == "__main__":
     main()
