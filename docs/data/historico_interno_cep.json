@@ -1,4 +1,11 @@
 {
   "gerado_em": "2026-07-16",
-  "por_cep": {}
+  "por_cep": {
+    "11010-000": {
+      "amostras": 1,
+      "adr_medio": 320.5,
+      "ocupacao": 0.68,
+      "receita_ano_media": 58331.0
+    }
+  }
 }
