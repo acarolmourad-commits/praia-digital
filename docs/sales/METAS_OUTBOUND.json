@@ -1,0 +1,9 @@
+{
+  "periodo": "2026-07",
+  "descricao": "Metas do funil outbound proprietarios autogestores (WhatsApp + e-mail). Edite os valores livremente.",
+  "metas": {
+    "respondeu": 28,
+    "fechou": 15,
+    "receita_estimada": 18000
+  }
+}

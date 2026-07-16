@@ -105,7 +105,28 @@ assets/
   onboarding-proprietario.html
 ```
 
-## 7. Regras de ouro
+## 7. Comando "one-click" (ativação em massa)
+
+Para marcar o **primeiro envio (Msg1 + Email1)** como feito em todos os lotes de uma vez:
+```bash
+cd C:/Users/Carolina/praia-digital
+python scripts/marcar_primeiro_envio.py
+python scripts/executar_outbound.py --push
+```
+Isso atualiza os trackers e os dashboards, e versiona tudo no repo (GitHub Pages reflete o painel).
+
+Para **refrescar todos os dashboards e versionar** a qualquer momento:
+```bash
+python scripts/executar_outbound.py --push
+```
+
+## 8. Metas do mês
+
+Edite `docs/sales/METAS_OUTBOUND.json` (campos `respondeu`, `fechou`, `receita_estimada`).
+O dashboard consolidado (`dashboard-outbound-proprietarios.html`) mostra barras de progresso vs meta.
+Exemplo de metas de julho/2026: 28 respostas, 15 fechados, R$ 18.000 de receita estimada.
+
+## 9. Regras de ouro
 
 - ✅ Sempre copie a mensagem do CSV (já está personalizada com nome e cidade)
 - ✅ Marque o status no tracker após cada resposta/fechamento
