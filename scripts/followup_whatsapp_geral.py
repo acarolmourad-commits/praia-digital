@@ -29,17 +29,21 @@ def main():
         if not m:
             continue
         lote = m.group(1)
+        with open(arq, encoding="utf-8-sig") as f:
+            leads = list(csv.DictReader(f, delimiter=";"))
+        # data-base real do envio: coluna Data_Msg1 do CSV (nao o nome do arquivo)
+        datas = [l.get("Data_Msg1","").strip() for l in leads if l.get("Data_Msg1","").strip()]
+        if not datas:
+            continue
         try:
-            base = date.fromisoformat(m.group(2))
+            base = date.fromisoformat(datas[0])
         except ValueError:
             continue
         delta = (hoje - base).days
         if delta < 0:
             continue
-        with open(arq, encoding="utf-8-sig") as f:
-            leads = list(csv.DictReader(f, delimiter=";"))
-        m2 = [l for l in leads if 1 <= delta <= 2]
-        m3 = [l for l in leads if 3 <= delta <= 4]
+        m2 = [l for l in leads if l.get("Status") in ("enviado_msg1","enviado_msg2") and 1 <= delta <= 2]
+        m3 = [l for l in leads if l.get("Status") in ("enviado_msg1","enviado_msg2","enviado_msg3") and 3 <= delta <= 4]
         if not m2 and not m3:
             continue
         saida.append(f"\n--- Lote {lote} (D+{delta}) ---")
