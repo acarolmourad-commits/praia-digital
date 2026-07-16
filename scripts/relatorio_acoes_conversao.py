@@ -38,6 +38,7 @@ def main():
     if saida:
         print("\n".join(saida))
         print("\nApós enviar, marque: python scripts/marcar_acao_conversao.py --canal <wpp|email> --lote <N> --nome \"X\" --acao <msg25_feita|onboarding_feito>")
+        print("Réplicas de objeção: outreach/objecoes-proprietarios.md")
     else:
         print("Nenhuma ação de conversão pendente. 🎯")
 
