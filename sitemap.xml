@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://acarolmourad-commits.github.io/praia-digital/perfis/perfil-comprador.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://acarolmourad-commits.github.io/praia-digital/perfis/perfil-investidor.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://acarolmourad-commits.github.io/praia-digital/perfis/perfil-proprietario.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://acarolmourad-commits.github.io/praia-digital/perfis/perfil-corretor.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://acarolmourad-commits.github.io/praia-digital/perfis/perfil-imobiliaria.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://acarolmourad-commits.github.io/praia-digital/perfis/perfil-construtora.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://acarolmourad-commits.github.io/praia-digital/perfis/perfil-adm_temporada.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://acarolmourad-commits.github.io/praia-digital/perfis/perfil-turista.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://acarolmourad-commits.github.io/praia-digital/assets/posicionamento-inteligencia-imobiliaria.html</loc>
     <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
