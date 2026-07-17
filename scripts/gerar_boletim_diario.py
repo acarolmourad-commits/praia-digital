@@ -102,8 +102,25 @@ table{{width:100%;border-collapse:collapse;margin:.6rem 0}}th,td{{border:1px sol
 <p style="font-size:.8rem;color:#667">Praia Digital · 1ª Plataforma Brasileira de Inteligência Imobiliária · Boletim automático</p>
 </body></html>"""
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
+    data_iso = hoje.isoformat()
+    # boletim do dia (histórico)
+    open(os.path.join(os.path.dirname(OUT), f"boletim-{data_iso}.html"), "w", encoding="utf-8").write(HTML)
+    # boletim corrente (ponteiro)
     open(OUT, "w", encoding="utf-8").write(HTML)
-    print(f"Boletim diário: {OUT}\nCidades ranqueadas: {len(top)} | Top1: {top[0][0]} ({top[0][1]} artigos)")
+    # arquivo de boletins (lista acumulada p/ SEO recorrente)
+    arq = os.path.join(os.path.dirname(OUT), "arquivo-boletins.html")
+    arquivos = sorted(glob.glob(os.path.join(os.path.dirname(OUT), "boletim-*.html")), reverse=True)
+    itens = "".join(f'<li><a href="{os.path.basename(a)}">{os.path.basename(a).replace("boletim-","").replace(".html","")}</a></li>' for a in arquivos[:30])
+    arq_html = f"""<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arquivo de Boletins — Praia Digital</title>
+<style>body{{font-family:Arial,sans-serif;max-width:680px;margin:auto;padding:24px;color:#112}}h1{{color:#0a3a6b}}
+a{{color:#0a3a6b}}li{{margin:.4rem 0}}small{{color:#667}}</style></head><body>
+<h1>📚 Arquivo de Boletins de Inteligência</h1>
+<p>Boletins diários automáticos da Praia Digital.</p><ul>{itens}</ul>
+<p style="font-size:.8rem;color:#667">Praia Digital · 1ª Plataforma Brasileira de Inteligência Imobiliária</p></body></html>"""
+    open(arq, "w", encoding="utf-8").write(arq_html)
+    print(f"Boletim diário: {OUT}\nCidades ranqueadas: {len(top)} | Top1: {top[0][0]} ({top[0][1]} artigos) | Arquivo: {len(arquivos)} boletins")
 
 if __name__ == "__main__":
     gerar()
