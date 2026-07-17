@@ -1,0 +1,135 @@
+{
+  "gerado_em": "2026-07-17",
+  "litoral_sp": [
+    "Bertioga",
+    "Guarujá",
+    "Santos",
+    "Praia Grande",
+    "São Vicente",
+    "Mongaguá",
+    "Itanhaém",
+    "Peruíbe",
+    "Ilhabela",
+    "São Sebastião",
+    "Caraguatatuba",
+    "Ubatuba",
+    "Riviera de São Lourenço"
+  ],
+  "campos_trackers": [
+    "perfil",
+    "nome",
+    "contato",
+    "cidade",
+    "orcamento",
+    "intencao",
+    "dor_principal",
+    "urgencia",
+    "ferramenta_sugerida"
+  ],
+  "perfis": {
+    "comprador_1_imóvel": {
+      "titulo": "Comprador do 1º imóvel",
+      "intro": "Que bom te receber! Vou te ajudar a encontrar o imóvel certo sem sustos. Pra personalizar, deixa eu entender seu momento:",
+      "perguntas": [
+        "Em qual cidade/bairro você quer morar? (Se litoral SP, posso detalhar Bertioga, Guarujá, Santos, Praia Grande, São Vicente, Mongaguá, Itanhaém, Peruíbe, Ilhabela, São Sebastião, Caraguatatuba, Ubatuba, Riviera de São Lourenço)",
+        "Qual seu orçamento total e quanto tem de entrada?",
+        "Já buscou financiamento ou tem pré-aprovação do banco?",
+        "Prioridade: morar logo ou comprar como investimento que também pode render?",
+        "Qual seu prazo ideal para fechar e mudar?"
+      ],
+      "ferramenta": "Busca Inteligente + Simulador de Financiamento + Comparador de imóveis",
+      "proximo_passo": "Rodar a Busca Inteligente filtrada por orçamento e enviar 3 opções comparadas."
+    },
+    "investidor": {
+      "titulo": "Investidor",
+      "intro": "Vamos falar de retorno. Antes de indicar qualquer imóvel, preciso entender sua estratégia:",
+      "perguntas": [
+        "Objetivo principal: valorização (flip) ou renda recorrente (aluguel tradicional/temporada)?",
+        "Orçamento e forma de pagamento (à vista, financiado, consorcio)?",
+        "Já investe em imóveis ou é nova frente?",
+        "Região de interesse? (Litoral SP tem perfis distintos: Bertioga, Guarujá, Santos, Praia Grande, São Vicente, Mongaguá, Itanhaém, Peruíbe, Ilhabela, São Sebastião, Caraguatatuba, Ubatuba, Riviera de São Lourenço)",
+        "Horizonte de investimento e tolerância a risco (baixa/média/alta)?"
+      ],
+      "ferramenta": "Calculadora de ROI + Análise de Rental Yield + Relatórios completos",
+      "proximo_passo": "Simular ROI e yield por CEP na região-alvo e entregar Relatório comparativo."
+    },
+    "proprietario_autogestor": {
+      "titulo": "Proprietário anuncia sozinho (Airbnb/Booking)",
+      "intro": "Você já tem o imóvel anunciado — meu foco é te ajudar a lucrar mais trabalhando menos. Me conta:",
+      "perguntas": [
+        "Onde fica o imóvel? (Cidade/bairro — ex.: Bertioga, Guarujá, Santos, Praia Grande, São Vicente, Mongaguá, Itanhaém, Peruíbe, Ilhabela, São Sebastião, Caraguatatuba, Ubatuba, Riviera de São Lourenço)",
+        "Quantas horas por semana você gasta com limpeza, check-in e mensagens?",
+        "Qual sua ocupação média hoje e a diária praticada?",
+        "Já pensou em Gestão Completa ou só quer precificar melhor?",
+        "Qual sua maior dor: preço errado, tempo perdido ou dias vazios?"
+      ],
+      "ferramenta": "Calculadora de ROI + Análise de Rental Yield + Gestão Completa",
+      "proximo_passo": "Simular yield com Precificação Dinâmica e mostrar ganho de +X% sem horas do dono."
+    },
+    "corretor": {
+      "titulo": "Corretor",
+      "intro": "Vamos turbinar sua captação. Pra saber como te ajudar:",
+      "perguntas": [
+        "Em qual cidade você atua?",
+        "Quantos proprietários você capta por mês hoje?",
+        "Usa ferramentas de IA/SEO ou trabalha só manual?",
+        "Quer captar mais proprietários ou vender mais rápido?",
+        "Tem interesse em oferecer gestão de temporada aos seus clientes?"
+      ],
+      "ferramenta": "Gerador de descrições + Qualificador de Leads + Busca Inteligente",
+      "proximo_passo": "Habilitar Gerador de descrições e Qualificador para triar leads quentes."
+    },
+    "imobiliaria": {
+      "titulo": "Imobiliária",
+      "intro": "Imobiliárias são nossas parceiras, não concorrentes. Como podemos crescer juntos:",
+      "perguntas": [
+        "Qual sua carteira de proprietários ativos?",
+        "Hoje você oferece gestão de temporada ou só locação tradicional?",
+        "Teria interesse na Calculadora White-label no SEU site (lead 100% seu)?",
+        "Modelo de comissão atual em gestão?",
+        "Principal gargalo: captação, ocupação ou operação?"
+      ],
+      "ferramenta": "Calculadora White-label + Gestão Completa (parceria 70/30) + Qualificador de Leads",
+      "proximo_passo": "Propor white-label (iframe da calculadora no site da imobiliária) + revenue share 70/30."
+    },
+    "construtora": {
+      "titulo": "Construtora / Incorporadora",
+      "intro": "Podemos qualificar os interessados no seu empreendimento e acelerar vendas. Detalhes:",
+      "perguntas": [
+        "Quais empreendimentos estão em lançamento/previsão?",
+        "Quer qualificar leads de interessados por perfil e orçamento?",
+        "Aceita integração da Busca Inteligente no seu site?",
+        "Principal dor: gerar leads ou converter quem já apareceu?",
+        "Cobertura geográfica (litoral SP ou outros mercados)?"
+      ],
+      "ferramenta": "Busca Inteligente + Qualificador de Leads + Relatórios completos",
+      "proximo_passo": "Integrar Busca Inteligente e Qualificador no funil de vendas do empreendimento."
+    },
+    "adm_temporada": {
+      "titulo": "Administrador de aluguel por temporada / anfitrião Airbnb",
+      "intro": "Você já está no jogo da temporada — vamos subir sua ocupação e inventário. Sobre sua operação:",
+      "perguntas": [
+        "Quantos imóveis você gerencia hoje?",
+        "Usa PriceLabs/Stays ou precifica manual?",
+        "Quer expandir o inventário captando mais proprietários?",
+        "Qual dor maior: ocupação baixa, pricing ou operação (limpeza/check-in)?",
+        "Atua em qual região? (ex.: Bertioga, Guarujá, Santos, Praia Grande, São Vicente, Mongaguá, Itanhaém, Peruíbe, Ilhabela, São Sebastião, Caraguatatuba, Ubatuba, Riviera de São Lourenço)"
+      ],
+      "ferramenta": "Análise de Rental Yield + Gestão Completa + Calculadora White-label",
+      "proximo_passo": "Auderir Precificação Dinâmica (PriceLabs/Stays) e abrir captação via white-label."
+    },
+    "turista_investidor": {
+      "titulo": "Turista interessado em investir no litoral",
+      "intro": "Você visitou e se apaixonou — e se o imóvel se pagasse nas férias? Vamos estruturar:",
+      "perguntas": [
+        "Qual praia/cidade você visitou e gostou? (ex.: Bertioga, Guarujá, Santos, Praia Grande, São Vicente, Mongaguá, Itanhaém, Peruíbe, Ilhabela, São Sebastião, Caraguatatuba, Ubatuba, Riviera de São Lourenço)",
+        "Pensa em usar de férias E alugar o resto do ano?",
+        "Orçamento disponível e forma de pagamento?",
+        "Conhece o mercado de temporada local (ocupação/diárias)?",
+        "Prioridade: valorização ou renda de temporada?"
+      ],
+      "ferramenta": "Busca Inteligente + Calculadora de ROI + Simulador de Financiamento",
+      "proximo_passo": "Cruzar Busca Inteligente + ROI de temporada para indicar o imóvel-ônibus."
+    }
+  }
+}
