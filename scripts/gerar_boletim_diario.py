@@ -99,6 +99,11 @@ table{{width:100%;border-collapse:collapse;margin:.6rem 0}}th,td{{border:1px sol
 <h2>💡 Melhores investimentos da semana</h2><table><tr class="th"><th>Tipo</th><th>Multiplicador</th><th>Yield est.</th></tr>{inv}</table>
 <h2>🏠 Melhores imóveis para renda</h2><div class="card"><ul>{renda_html}</ul></div>
 <h2>🎯 Oportunidades abaixo do mercado</h2><div class="card"><ul>{opp}</ul><p style="font-size:.8rem;color:#667">Proxy: alta atenção de mercado + yield estimado forte sem saturação de preço.</p></div>
+<div class="card" style="background:linear-gradient(135deg,#1e3a8a,#0a3a6b);color:#fff;text-align:center">
+<b style="color:#4ade80">Quer agir com esse dado?</b><br>
+<a href="https://praia.digital/assets/painel-ferramentas.html" style="background:linear-gradient(90deg,#22d3ee,#4ade80);color:#04141f;font-weight:800;padding:.6rem 1.2rem;border-radius:9px;text-decoration:none;display:inline-block;margin-top:.5rem">Abrir Painel de Ferramentas →</a>
+<a href="https://praia.digital/docs/ferramentas/qualificador-leads.json" style="background:#fff;color:#0a3a6b;font-weight:700;padding:.6rem 1.2rem;border-radius:9px;text-decoration:none;display:inline-block;margin-top:.5rem">Falar com o Hermes →</a>
+</div>
 <p style="font-size:.8rem;color:#667">Praia Digital · 1ª Plataforma Brasileira de Inteligência Imobiliária · Boletim automático</p>
 </body></html>"""
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
