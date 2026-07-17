@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comparador Inteligente — Praia Digital</title>
+<style>body{font-family:Arial,sans-serif;max-width:760px;margin:auto;padding:20px;color:#112}
+h1{color:#0a3a6b}table{width:100%;border-collapse:collapse;margin:1rem 0}th,td{border:1px solid #e2e8f0;padding:.6rem;text-align:center;font-size:.85rem}
+input{padding:.4rem;width:90%;border:1px solid #cfe3f5;border-radius:6px;box-sizing:border-box}
+button{background:linear-gradient(90deg,#22d3ee,#4ade80);color:#04141f;font-weight:800;border:0;padding:.7rem 1.2rem;border-radius:9px;cursor:pointer;margin-top:.6rem}
+.card{background:#f0f7ff;border:1px solid #cfe3f5;border-radius:12px;padding:1.1rem;margin:1rem 0;display:none;text-align:center}
+.card b{color:#0a3a6b;font-size:1.2rem}
+.venc{border:2px solid #4ade80;background:#ecfdf5}</style></head>
+<body>
+<h1>⚖️ Comparador Inteligente de Imóveis</h1>
+<p style="color:#445">Compare 3 opções por ROI, yield e payback. O vencedor fica em destaque.</p>
+<table><tr><th>Critério</th><th>Imóvel A</th><th>Imóvel B</th><th>Imóvel C</th></tr>
+<tr><td>Preço (R$)</td><td><input id="pa" value="450000"></td><td><input id="pb" value="520000"></td><td><input id="pc" value="390000"></td></tr>
+<tr><td>Diária (R$)</td><td><input id="da" value="350"></td><td><input id="db" value="420"></td><td><input id="dc" value="300"></td></tr>
+<tr><td>Ocupação (% ano)</td><td><input id="oa" value="45"></td><td><input id="ob" value="50"></td><td><input id="oc" value="40"></td></tr>
+<tr><td>Aluguel trad. (R$)</td><td><input id="ta" value="2200"></td><td><input id="tb" value="2600"></td><td><input id="tc" value="1900"></td></tr></table>
+<button onclick="comparar()">Comparar →</button>
+<div class="card" id="res"></div>
+<script>
+function calc(p,d,o,t){const anoT=Math.max(d*365*o/100, t*12);const roi=(anoT/p*100).toFixed(1);const y=((anoT*0.8)/p*100).toFixed(1);const pb=(p/anoT).toFixed(1);return{anoT,roi,y,pb};}
+function comparar(){
+  const A=calc(+pa.value,+da.value,+oa.value/100,+ta.value),B=calc(+pb.value,+db.value,+ob.value/100,+tb.value),C=calc(+pc.value,+dc.value,+oc.value/100,+tc.value);
+  const arr=[["A",A],["B",B],["C",C]]; const win=arr.sort((a,b)=>b[1].anoT-a[1].anoT)[0][0];
+  const cells={A:'<td class="venc">',B:'<td class="venc">',C:'<td class="venc">'};
+  const r=document.getElementById('res');r.style.display='block';
+  r.innerHTML=`<b>🏆 Melhor opção: Imóvel ${win}</b> (maior receita potencial)<br><br>
+  <table><tr><th></th><th>A</th><th>B</th><th>C</th></tr>
+  <tr><td>ROI a.a.</td><td>${A.roi}%</td><td>${B.roi}%</td><td>${C.roi}%</td></tr>
+  <tr><td>Yield (líq) a.a.</td><td>${A.y}%</td><td>${B.y}%</td><td>${C.y}%</td></tr>
+  <tr><td>Receita/ano</td><td>R$${A.anoT.toLocaleString('pt-BR')}</td><td>R$${B.anoT.toLocaleString('pt-BR')}</td><td>R$${C.anoT.toLocaleString('pt-BR')}</td></tr>
+  <tr><td>Payback (anos)</td><td>${A.pb}</td><td>${B.pb}</td><td>${C.pb}</td></tr></table>`;
+}
+</script></body></html>

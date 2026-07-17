@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análise Completa de Imóvel — Praia Digital</title>
+<style>body{font-family:Arial,sans-serif;max-width:680px;margin:auto;padding:20px;color:#112}
+h1{color:#0a3a6b}label{display:block;margin:.5rem 0 .2rem;font-size:.85rem;color:#334}
+input,select{width:100%;padding:.5rem;border:1px solid #cfe3f5;border-radius:8px;box-sizing:border-box}
+button{background:linear-gradient(90deg,#22d3ee,#4ade80);color:#04141f;font-weight:800;border:0;padding:.8rem;border-radius:9px;margin-top:1rem;cursor:pointer;width:100%}
+.card{background:#f0f7ff;border:1px solid #cfe3f5;border-radius:12px;padding:1.1rem;margin:1rem 0;display:none}
+.card b{color:#0a3a6b}.row{display:flex;gap:8px}.row>div{flex:1}
+.err{color:#dc2626;font-size:.85rem}</style></head>
+<body>
+<h1>🔍 Análise Completa de Imóvel</h1>
+<p style="color:#445">Preencha e receba: valuation, ROI, yield de temporada, payback e Score Hermes — num só relatório.</p>
+<label>Cidade (litoral SP ganha bônus)</label><input id="cidade" value="Santos">
+<div class="row"><div><label>Tipo</label><select id="tipo"><option>apartamento</option><option>casa</option><option>cobertura</option><option>kitnet</option></select></div>
+<div><label>Quartos</label><input id="q" type="number" value="2"></div></div>
+<div class="row"><div><label>Área (m²)</label><input id="area" type="number" value="60"></div>
+<div><label>Preço de compra (R$)</label><input id="preco" type="number" value="450000"></div></div>
+<div class="row"><div><label>Aluguel mensal tradicional (R$)</label><input id="alug" type="number" value="2200"></div>
+<div><label>Diária temporada (R$)</label><input id="diaria" type="number" value="350"></div></div>
+<label>Ocupação temporada (% do ano)</label><input id="ocup" type="number" value="45">
+<button onclick="analisar()">Gerar Análise Completa →</button>
+<div class="err" id="err"></div>
+<div class="card" id="res"></div>
+<script>
+const LITORAL=["Bertioga","Guarujá","Santos","Praia Grande","São Vicente","Mongaguá","Itanhaém","Peruíbe","Ilhabela","São Sebastião","Caraguatatuba","Ubatuba","Riviera de São Lourenço"];
+function scoreHermes(cidade,tipo,q){
+  let s=60;
+  if(LITORAL.some(c=>cidade.toLowerCase().includes(c.toLowerCase()))) s+=20;
+  if(tipo==='cobertura')s+=8; if(tipo==='casa')s+=5; if(q>=3)s+=7;
+  return Math.min(98,s);
+}
+function analisar(){
+  const preco=+preco_v(), alug=+document.getElementById('alug').value, diaria=+document.getElementById('diaria').value,
+        ocup=+document.getElementById('ocup').value/100, q=+document.getElementById('q').value, cidade=document.getElementById('cidade').value;
+  if(!preco||!alug){document.getElementById('err').textContent='Preencha preço e aluguel.';return;}
+  document.getElementById('err').textContent='';
+  const anoTrad=alug*12;
+  const anoTemp=diaria*365*ocup;
+  const rec=Math.max(anoTrad,anoTemp);
+  const roi=(rec/preco*100).toFixed(1);
+  const yieldA=(((anoTemp||anoTrad)*0.8)/preco*100).toFixed(1); // 80% liquida
+  const payback=(preco/rec).toFixed(1);
+  const sh=scoreHermes(cidade,document.getElementById('tipo').value,q);
+  const val=preco*(sh/80); // valor de referencia
+  const r=document.getElementById('res');
+  r.style.display='block';
+  r.innerHTML=`<b>📊 Relatório de Análise Completa</b><br><br>
+   • <b>Valuation de referência:</b> R$ ${val.toLocaleString('pt-BR')} (Score Hermes ${sh}/100)<br>
+   • <b>ROI (retorno s/ compra):</b> ${roi}% a.a.<br>
+   • <b>Rentabilidade temporada (líq):</b> ${yieldA}% a.a.<br>
+   • <b>Receita recomendada/ano:</b> R$ ${rec.toLocaleString('pt-BR')} (${anoTemp>anoTrad?'temporada':'tradicional'})<br>
+   • <b>Payback:</b> ${payback} anos<br>
+   • <b>Score Hermes:</b> ${sh}/100 — ${sh>=85?'excelente':sh>=70?'bom':'reavaliar'} ativo`;
+}
+function preco_v(){return document.getElementById('preco').value;}
+</script>
+</body></html>

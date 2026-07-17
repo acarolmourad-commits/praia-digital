@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulador de Financiamento — Praia Digital</title>
+<style>body{font-family:Arial,sans-serif;max-width:560px;margin:auto;padding:20px;color:#112}
+h1{color:#0a3a6b}label{display:block;margin:.5rem 0 .2rem;font-size:.85rem;color:#334}
+input,select{width:100%;padding:.5rem;border:1px solid #cfe3f5;border-radius:8px;box-sizing:border-box}
+button{background:linear-gradient(90deg,#22d3ee,#4ade80);color:#04141f;font-weight:800;border:0;padding:.8rem;border-radius:9px;margin-top:1rem;cursor:pointer;width:100%}
+.card{background:#f0f7ff;border:1px solid #cfe3f5;border-radius:12px;padding:1.1rem;margin:1rem 0;display:none}
+.card b{color:#0a3a6b}.err{color:#dc2626;font-size:.85rem}</style></head>
+<body>
+<h1>🏦 Simulador de Financiamento</h1>
+<p style="color:#445">Saiba a parcela, o total pago e o custo dos juros do seu imóvel.</p>
+<label>Valor do imóvel (R$)</label><input id="v" type="number" value="450000">
+<label>Entrada (R$)</label><input id="e" type="number" value="90000">
+<label>Taxa de juros anual (%)</label><input id="j" type="number" value="10.5">
+<label>Prazo (anos)</label><input id="a" type="number" value="30">
+<button onclick="sim()">Simular →</button>
+<div class="err" id="err"></div>
+<div class="card" id="res"></div>
+<script>
+function sim(){
+  const V=+document.getElementById('v').value, E=+document.getElementById('e').value,
+        j=+document.getElementById('j').value/100/12, n=+document.getElementById('a').value*12;
+  if(!V||V<=E){document.getElementById('err').textContent='Entrada deve ser menor que o valor.';return;}
+  document.getElementById('err').textContent='';
+  const P=V-E;
+  const pmt = j===0 ? P/n : P*j/(1-Math.pow(1+j,-n));
+  const total=pmt*n, juros=total-P;
+  const r=document.getElementById('res');r.style.display='block';
+  r.innerHTML=`<b>📋 Resultado</b><br><br>
+   • <b>Financiado:</b> R$ ${P.toLocaleString('pt-BR')}<br>
+   • <b>Parcela (${n}x):</b> R$ ${pmt.toLocaleString('pt-BR',{minimumFractionDigits:2})}<br>
+   • <b>Total pago:</b> R$ ${(total+E).toLocaleString('pt-BR',{minimumFractionDigits:2})}<br>
+   • <b>Juros (custo):</b> R$ ${juros.toLocaleString('pt-BR',{minimumFractionDigits:2})}<br>
+   • <b>Entrada + parcelas cobertas por aluguel?</b> compare com o ROI da Análise Completa.`;
+}
+</script></body></html>
