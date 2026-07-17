@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://acarolmourad-commits.github.io/praia-digital/assets/analise-completa-imovel.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://acarolmourad-commits.github.io/praia-digital/assets/comparador-inteligente.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://acarolmourad-commits.github.io/praia-digital/assets/simulador-financiamento.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://acarolmourad-commits.github.io/praia-digital/assets/score-hermes.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://acarolmourad-commits.github.io/praia-digital/perfis/perfil-comprador.html</loc>
     <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>

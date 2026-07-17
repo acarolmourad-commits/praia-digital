@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Score Hermes — Praia Digital</title>
+<style>body{font-family:Arial,sans-serif;max-width:560px;margin:auto;padding:20px;color:#112}
+h1{color:#0a3a6b}label{display:block;margin:.5rem 0 .2rem;font-size:.85rem;color:#334}
+input,select{width:100%;padding:.5rem;border:1px solid #cfe3f5;border-radius:8px;box-sizing:border-box}
+button{background:linear-gradient(90deg,#22d3ee,#4ade80);color:#04141f;font-weight:800;border:0;padding:.8rem;border-radius:9px;margin-top:1rem;cursor:pointer;width:100%}
+.card{background:#f0f7ff;border:1px solid #cfe3f5;border-radius:12px;padding:1.1rem;margin:1rem 0;display:none;text-align:center}
+.big{font-size:2.5rem;font-weight:800;color:#0a3a6b}.err{color:#dc2626;font-size:.85rem}
+.meter{height:10px;background:#e2e8f0;border-radius:5px;overflow:hidden;margin:.6rem 0}
+.meter>div{height:100%;background:linear-gradient(90deg,#22d3ee,#4ade80)}</style></head>
+<body>
+<h1>🧠 Score Hermes</h1>
+<p style="color:#445">O índice de inteligência do ativo: quanto ele se paga e quão seguro é investir.</p>
+<label>Cidade (litoral SP = bônus)</label><input id="cidade" value="Santos">
+<div class="row" style="display:flex;gap:8px"><div style="flex:1"><label>Tipo</label><select id="tipo"><option>apartamento</option><option>casa</option><option>cobertura</option><option>kitnet</option></select></div>
+<div style="flex:1"><label>Quartos</label><input id="q" type="number" value="2"></div></div>
+<div class="row" style="display:flex;gap:8px"><div style="flex:1"><label>ROI a.a. (%)</label><input id="roi" type="number" value="9"></div>
+<div style="flex:1"><label>Yield líq (%)</label><input id="y" type="number" value="7"></div></div>
+<label>Demanda local (1-10)</label><input id="dem" type="number" value="8">
+<button onclick="score()">Calcular Score Hermes →</button>
+<div class="err" id="err"></div>
+<div class="card" id="res"></div>
+<script>
+const LITORAL=["Bertioga","Guarujá","Santos","Praia Grande","São Vicente","Mongaguá","Itanhaém","Peruíbe","Ilhabela","São Sebastião","Caraguatatuba","Ubatuba","Riviera de São Lourenço"];
+function score(){
+  const cidade=document.getElementById('cidade').value, roi=+document.getElementById('roi').value,
+        y=+document.getElementById('y').value, dem=+document.getElementById('dem').value,
+        tipo=document.getElementById('tipo').value, q=+document.getElementById('q').value;
+  if(roi<=0){document.getElementById('err').textContent='ROI deve ser > 0.';return;}
+  document.getElementById('err').textContent='';
+  let s=Math.min(roi,12)*4 + Math.min(y,12)*3 + dem*2; // base 0-98
+  if(LITORAL.some(c=>cidade.toLowerCase().includes(c.toLowerCase()))) s+=8;
+  if(tipo==='cobertura')s+=4; if(q>=3)s+=3;
+  s=Math.min(98,Math.round(s));
+  const lvl=s>=85?'EXCELENTE':s>=70?'BOM':s>=55?'REGULAR':'REAVALIAR';
+  const r=document.getElementById('res');r.style.display='block';
+  r.innerHTML=`<div class="big">${s}<span style="font-size:1rem">/100</span></div>
+   <div class="meter"><div style="width:${s}%"></div></div>
+   <b>Score Hermes: ${lvl}</b><br>
+   <small style="color:#667">Composto por ROI (40%), Yield (30%), Demanda (20%), Bônus litoral/tipo (10%)</small>`;
+}
+</script></body></html>
