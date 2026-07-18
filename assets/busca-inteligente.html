@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Busca Inteligente — Praia Digital</title>
+<style>body{font-family:Arial,sans-serif;max-width:900px;margin:auto;padding:20px;color:#112}
+h1{color:#0a3a6b}label{font-size:.8rem;color:#334;display:block;margin:.4rem 0 .1rem}
+select,input{padding:.45rem;width:100%;border:1px solid #cfe3f5;border-radius:7px;box-sizing:border-box}
+.filters{display:flex;gap:8px;flex-wrap:wrap}.filters>div{flex:1;min-width:140px}
+button{background:linear-gradient(90deg,#22d3ee,#4ade80);color:#04141f;font-weight:800;border:0;padding:.7rem 1.2rem;border-radius:9px;cursor:pointer;margin-top:.8rem;width:100%}
+.card{background:#f0f7ff;border:1px solid #cfe3f5;border-radius:12px;padding:1rem;margin:.7rem 0;display:flex;justify-content:space-between;align-items:center}
+.card b{color:#0a3a6b}.card small{color:#667}.tag{font-size:.7rem;background:#e0f2fe;color:#0369a1;padding:.15rem .5rem;border-radius:999px}
+.demo{background:#fffbeb;border:1px solid #fde68a;border-radius:9px;padding:.6rem;font-size:.82rem;color:#92400e;margin-bottom:1rem}
+.noresult{color:#667;padding:1rem;text-align:center}</style></head>
+<body>
+<h1>🔎 Busca Inteligente</h1>
+<p class="demo">⚠️ Catálogo de <b>demonstração</b>. O mecanismo de busca/filtro funciona; substitua <code>CATALOGO</code> pela base real de imóveis da Praia Digital para ver estoque verdadeiro.</p>
+<div class="filters">
+<div><label>Cidade (litoral SP)</label><select id="cidade"><option value="">Todas</option><option>Santos</option><option>Guarujá</option><option>Praia Grande</option><option>Bertioga</option><option>São Vicente</option><option>Ubatuba</option><option>Ilhabela</option><option>Caraguatatuba</option><option>São Sebastião</option><option>Itanhaém</option><option>Peruíbe</option><option>Mongaguá</option><option>Riviera de São Lourenço</option></select></div>
+<div><label>Tipo</label><select id="tipo"><option value="">Todos</option><option>apartamento</option><option>casa</option><option>cobertura</option><option>kitnet</option></select></div>
+<div><label>Quartos</label><select id="q"><option value="">Todos</option><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
+<div><label>Finalidade</label><select id="fin"><option value="">Todas</option><option>comprar</option><option>investir</option><option>alugar_temporada</option></select></div>
+<div><label>Preço máx (R$)</label><input id="preco" type="number" placeholder="ex: 600000"></div>
+</div>
+<button onclick="buscar()">Buscar →</button>
+<div id="res"></div>
+<script>
+// CATALOGO DE DEMONSTRACAO (substituir por base real)
+const CATALOGO=[
+ {cidade:"Santos",tipo:"apartamento",q:2,preco:450000,fin:"investir",bairro:"Gonzaga",yield:8.9},
+ {cidade:"Guarujá",tipo:"casa",q:3,preco:780000,fin:"comprar",bairro:"Enseada",yield:7.2},
+ {cidade:"Praia Grande",tipo:"apartamento",q:2,preco:320000,fin:"investir",bairro:"Boqueirão",yield:9.4},
+ {cidade:"Ubatuba",tipo:"casa",q:3,preco:540000,fin:"alugar_temporada",bairro:"Centro",yield:10.1},
+ {cidade:"Ilhabela",tipo:"cobertura",q:3,preco:1200000,fin:"comprar",bairro:"Vila",yield:6.5},
+ {cidade:"Bertioga",tipo:"kitnet",q:1,preco:190000,fin:"investir",bairro:"Indaiá",yield:11.2},
+ {cidade:"São Vicente",tipo:"apartamento",q:2,preco:280000,fin:"investir",bairro:"Itararé",yield:9.0},
+ {cidade:"Caraguatatuba",tipo:"casa",q:2,preco:430000,fin:"alugar_temporada",bairro:"Centro",yield:9.8},
+ {cidade:"Santos",tipo:"cobertura",q:4,preco:980000,fin:"comprar",bairro:"Boqueirão",yield:7.0},
+ {cidade:"Riviera de São Lourenço",tipo:"apartamento",q:3,preco:1500000,fin:"comprar",bairro:"Riviera",yield:5.8},
+ {cidade:"Itanhaém",tipo:"apartamento",q:2,preco:240000,fin:"investir",bairro:"Centro",yield:9.6},
+ {cidade:"Peruíbe",tipo:"casa",q:2,preco:360000,fin:"alugar_temporada",bairro:"Centro",yield:9.3},
+];
+function buscar(){
+ const c=document.getElementById('cidade').value, t=document.getElementById('tipo').value,
+       q=document.getElementById('q').value, f=document.getElementById('fin').value,
+       p=document.getElementById('preco').value;
+ let r=CATALOGO.filter(x=>(!c||x.cidade===c)&&(!t||x.tipo===t)&&(!q||String(x.q)===q)&&(!f||x.fin===f)&&(!p||x.preco<=+p));
+ r.sort((a,b)=>a.preco-b.preco);
+ const res=document.getElementById('res');
+ if(!r.length){res.innerHTML='<div class="noresult">Nenhum imóvel encontrado com esses filtros (catálogo demo).</div>';return;}
+ const fmt=v=>'R$ '+v.toLocaleString('pt-BR');
+ res.innerHTML=r.map(x=>`<div class="card"><div><b>${x.tipo.charAt(0).toUpperCase()+x.tipo.slice(1)} ${x.q}q — ${x.cidade}/${x.bairro}</b><br><small>${fmt(x.preco)} · Yield ${x.yield}% a.a. · <span class="tag">${x.fin.replace('_',' ')}</span></small></div><div><a href="analise-completa-imovel.html" style="background:linear-gradient(90deg,#22d3ee,#4ade80);color:#04141f;font-weight:700;padding:.5rem .9rem;border-radius:8px;text-decoration:none">Analisar →</a></div></div>`).join('');
+}
+buscar();
+</script>
+</body></html>
