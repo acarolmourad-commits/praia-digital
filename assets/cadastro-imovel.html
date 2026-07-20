@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro de Imóvel — Praia Digital</title>
+<style>body{font-family:Arial,sans-serif;max-width:560px;margin:auto;padding:22px;color:#112}
+h1{color:#0a3a6b}label{display:block;margin:.5rem 0 .2rem;font-size:.85rem;color:#334}
+input,select,textarea{width:100%;padding:.5rem;border:1px solid #cfe3f5;border-radius:8px;box-sizing:border-box}
+button{background:linear-gradient(90deg,#22d3ee,#4ade80);color:#04141f;font-weight:800;border:0;padding:.8rem;border-radius:9px;margin-top:1rem;cursor:pointer;width:100%}
+.card{background:#f0f7ff;border:1px solid #cfe3f5;border-radius:12px;padding:1rem;margin:1rem 0}
+pre{background:#04141f;color:#4ade80;padding:.8rem;border-radius:8px;overflow:auto;font-size:.8rem}
+.err{color:#dc2626;font-size:.85rem}</style></head>
+<body>
+<h1>🏠 Cadastro de Imóvel</h1>
+<p style="color:#445">Preencha e gere a linha pronta para o <code>cadastro-imoveis.csv</code> (id automático).</p>
+<label>Título</label><input id="titulo" placeholder="Ex: Apartamento 2q praia">
+<label>Cidade (litoral SP)</label><select id="cidade"><option>Santos</option><option>Guarujá</option><option>Praia Grande</option><option>Bertioga</option><option>São Vicente</option><option>Ubatuba</option><option>Ilhabela</option><option>Caraguatatuba</option><option>São Sebastião</option><option>Itanhaém</option><option>Peruíbe</option><option>Mongaguá</option><option>Riviera de São Lourenço</option></select>
+<label>Tipo</label><select id="tipo"><option>apartamento</option><option>casa</option><option>cobertura</option><option>studio</option><option>loft</option><option>flat</option><option>kitnet</option></select>
+<label>Preço (R$)</label><input id="preco" type="number" placeholder="450000">
+<label>Dormitórios</label><input id="dorm" type="number" placeholder="2">
+<label>Área (m²)</label><input id="area" type="number" placeholder="60">
+<label>Descrição</label><textarea id="desc" rows="2" placeholder="Oportunidade de ..."></textarea>
+<button onclick="gerar()">Gerar linha CSV →</button>
+<div class="err" id="err"></div>
+<div class="card" id="out" style="display:none"><b>Linha para colar no CSV:</b><pre id="csv"></pre>
+<button onclick="copiar()" style="width:auto">Copiar</button></div>
+<script>
+let nextId=2000; // evita colisao com os 60 existentes (1001-1060)
+function gerar(){
+ const t=document.getElementById('titulo').value,c=document.getElementById('cidade').value,
+  tp=document.getElementById('tipo').value,p=document.getElementById('preco').value,
+  d=document.getElementById('dorm').value,a=document.getElementById('area').value,
+  de=document.getElementById('desc').value;
+ if(!t||!p||!d||!a){document.getElementById('err').textContent='Preencha título, preço, dormitórios e área.';return;}
+ document.getElementById('err').textContent='';
+ const linha=`${nextId++},"${t}",${c},${tp},${p},${d},${a},"${de}"`;
+ const o=document.getElementById('out');o.style.display='block';
+ document.getElementById('csv').textContent=linha;
+}
+function copiar(){navigator.clipboard.writeText(document.getElementById('csv').textContent);}
+</script></body></html>
