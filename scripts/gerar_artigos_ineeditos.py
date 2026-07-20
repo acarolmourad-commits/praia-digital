@@ -23,7 +23,18 @@ ARTIGOS=[
  ("condominio-alto-padrao-yield", "Condomínio de alto padrão vale a pena para renda?","Compare yield bruto vs taxa de condomínio. Comparador Inteligente decide."),
  ("airbnb-vs-booking-litoral-sp", "Airbnb ou Booking no litoral SP: onde seu imóvel vende mais","Comissões, perfil de hóspede e ocupação. Recomendação automática cruza os dois."),
  ("primeira-renda-temporada-passos", "Primeira renda com temporada em 30 dias: passo a passo","Do cadastro à primeira reserva. Avaliação de preço IA define a diária inicial."),
- ("mercado-inverno-litoral-oportunidade", "Inverno no litoral: a oportunidade de compra escondida","Baixa temporada = preço de imóvel menor. Simulador projeta payback com ocupação anual."),
+ ("mercado-inverno-litoral-oportunidade", "Mercado de inverno no litoral: a oportunidade de compra escondida","Baixa temporada = preço de imóvel menor. Simulador projeta payback com ocupação anual."),
+ ("comparativo-santos-guaruja-investimento", "Santos vs Guarujá: onde investir R$ 500 mil em 2026","Comparativo de yield, valorização e liquidez. Comparador Inteligente decide."),
+ ("iptu-imovel-praia-como-reducir", "IPTU de imóvel de praia: como reduzir legalmente","Isenções, laudos e impacto no ROI líquido. Calculadora de Rentabilidade mostra o efeito."),
+ ("ocupacao-airbnb-como-calcular", "Como calcular a ocupação real do seu Airbnb","Fórmula de noites/ano e por que a Precificação Dinâmica eleva o índice."),
+ ("temporada-para-aposentadoria", "Imóvel de temporada como renda de aposentadoria","Receita passiva x previdência. Análise Completa projeta fluxo."),
+ ("seguro-incendio-temporada-obrigatorio", "Seguro para aluguel por temporada: o que é obrigatório","Coberturas, responsabilidade civil e como o Assistente Virtual tria hóspedes."),
+ ("decoracao-airbnb-barata-alta-conversao", "Decoração de Airbnb barata que triplica a conversão","Menos de R$ 2 mil em itens de alto impacto no booking."),
+ ("pool-imoveis-investidor-pro", "Pool de imóveis: como o investidor profissional diversifica no litoral","3 cidades, 3 perfis, 1 carteira. Recomendação Automática monta o mix."),
+ ("airbnb-corporativo-litoral", "Airbnb corporativo no litoral: nicho de alta ocupação","Diárias semanais, menos limpeza, melhor margem. Avaliação de Preço define a taxa."),
+ ("sazonalidade-diarias-litoral", "Sazonalidade das diárias: o calendário do seu yield","Verão, feriados e revéillon. Precificação Dinâmica captura o pico."),
+ ("fotografar-imovel-venda-conversao", "Como fotografar imóvel de praia que vende em 1 dia","Luz, ângulo e staging. Gerador de Descrições valoriza o visual."),
+ ("gestao-condominio-clube-renda", "Condomínio-clube vale a pena para renda de temporada?","Taxa vs experiência do hóspede. Score Hermes pondera o ativo."),
 ]
 def slugify(s): return s
 def gerar(dry=False):
