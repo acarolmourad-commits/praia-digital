@@ -1,0 +1,6 @@
+id,titulo,cidade,tipo,preco,dormitorios,area,descricao
+2001,"Apartamento 2 dormitórios em Santos",Santos,apartamento,450000,2,60,"Oportunidade de apartamento no litoral paulista. 2 dormitórios, 60m², localização privilegiada em Santos."
+2002,"Casa 3 dormitórios em Guarujá",Guarujá,casa,780000,3,120,"Oportunidade de casa no litoral paulista. 3 dormitórios, 120m², localização privilegiada em Guarujá."
+2003,"Cobertura 3 dormitórios em Ubatuba",Ubatuba,cobertura,950000,3,180,"Oportunidade de cobertura no litoral paulista. 3 dormitórios, 180m², localização privilegiada em Ubatuba."
+2004,"Studio 1 dormitório em Bertioga",Bertioga,studio,190000,1,38,"Oportunidade de studio no litoral paulista. 1 dormitório, 38m², localização privilegiada em Bertioga."
+2005,"Kitnet 1 dormitório em Praia Grande",Praia Grande,kitnet,160000,1,32,"Oportunidade de kitnet no litoral paulista. 1 dormitório, 32m², localização privilegiada em Praia Grande."
