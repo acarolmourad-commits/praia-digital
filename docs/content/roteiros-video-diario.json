@@ -1,0 +1,174 @@
+{
+  "serie": "Diario do Hermes",
+  "total": 14,
+  "roteiros": [
+    {
+      "dia": 1,
+      "titulo": "Por que Santos lidera o yield de temporada em 2026",
+      "hook": "Por que Santos lidera o yield de temporada em 2026...",
+      "roteiro": [
+        "Hook (0-3s): Por que Santos lidera o yield de temporada em 2026",
+        "Conteudo (3-40s): Santos tem 103 artigos de mercado e yield medio forte. Mostro 3 bairros com melhor ROI.",
+        "Prova: abra a Busca Inteligente ao vivo",
+        "CTA (40-60s): 'Link na bio — simule o seu.'"
+      ],
+      "ferramenta": "Busca Inteligente"
+    },
+    {
+      "dia": 2,
+      "titulo": "Airbnb ou aluguel anual? A matematica que decide",
+      "hook": "Airbnb ou aluguel anual? A mat...",
+      "roteiro": [
+        "Hook (0-3s): Airbnb ou aluguel anual? A matematica que decide",
+        "Conteudo (3-40s): Compare receita de temporada vs longo usando a Calculadora de Rentabilidade.",
+        "Prova: abra a Calculadora de Rentabilidade ao vivo",
+        "CTA (40-60s): 'Link na bio — simule o seu.'"
+      ],
+      "ferramenta": "Calculadora de Rentabilidade"
+    },
+    {
+      "dia": 3,
+      "titulo": "O erro de precificacao que custa 30% da sua receita",
+      "hook": "O erro de precificacao que custa 30% da sua receita...",
+      "roteiro": [
+        "Hook (0-3s): O erro de precificacao que custa 30% da sua receita",
+        "Conteudo (3-40s): Donos autogestos erram a diaria. Precificacao dinamica resolve.",
+        "Prova: abra a Score Hermes ao vivo",
+        "CTA (40-60s): 'Link na bio — simule o seu.'"
+      ],
+      "ferramenta": "Score Hermes"
+    },
+    {
+      "dia": 4,
+      "titulo": "Como o Score Hermes avalia seu imovel em 10 segundos",
+      "hook": "Como o Score Hermes avalia seu imovel em 10 segundos...",
+      "roteiro": [
+        "Hook (0-3s): Como o Score Hermes avalia seu imovel em 10 segundos",
+        "Conteudo (3-40s): ROI 40%, Yield 30%, Demanda 20%, bonus 10%.",
+        "Prova: abra a Score Hermes ao vivo",
+        "CTA (40-60s): 'Link na bio — simule o seu.'"
+      ],
+      "ferramenta": "Score Hermes"
+    },
+    {
+      "dia": 5,
+      "titulo": "3 cidades do litoral SP subvalorizadas agora",
+      "hook": "3 cidades do litoral SP subvalorizadas agora...",
+      "roteiro": [
+        "Hook (0-3s): 3 cidades do litoral SP subvalorizadas agora",
+        "Conteudo (3-40s): Riviera, Caraguatuba e Mongagua com atencao alta e preco still baixo.",
+        "Prova: abra a Busca Inteligente ao vivo",
+        "CTA (40-60s): 'Link na bio — simule o seu.'"
+      ],
+      "ferramenta": "Busca Inteligente"
+    },
+    {
+      "dia": 6,
+      "titulo": "Financiar o imovel de praia: a parcela come o aluguel?",
+      "hook": "Financiar o imovel de praia: a...",
+      "roteiro": [
+        "Hook (0-3s): Financiar o imovel de praia: a parcela come o aluguel?",
+        "Conteudo (3-40s): Simulador mostra quando o ROI cobre a prestacao.",
+        "Prova: abra a Simulador de Financiamento ao vivo",
+        "CTA (40-60s): 'Link na bio — simule o seu.'"
+      ],
+      "ferramenta": "Simulador de Financiamento"
+    },
+    {
+      "dia": 7,
+      "titulo": "Kitnet na praia: o menor investimento com maior multiplicador",
+      "hook": "Kitnet na praia: o menor investimento com maior multiplicador...",
+      "roteiro": [
+        "Hook (0-3s): Kitnet na praia: o menor investimento com maior multiplicador",
+        "Conteudo (3-40s): Multiplicador 1.7-2.3x sobre aluguel longo.",
+        "Prova: abra a Calculadora de Rentabilidade ao vivo",
+        "CTA (40-60s): 'Link na bio — simule o seu.'"
+      ],
+      "ferramenta": "Calculadora de Rentabilidade"
+    },
+    {
+      "dia": 8,
+      "titulo": "Comparador Inteligente: qual imovel escolher?",
+      "hook": "Comparador Inteligente: qual i...",
+      "roteiro": [
+        "Hook (0-3s): Comparador Inteligente: qual imovel escolher?",
+        "Conteudo (3-40s): 3 opcoes lado a lado por ROI e payback.",
+        "Prova: abra a Comparador Inteligente ao vivo",
+        "CTA (40-60s): 'Link na bio — simule o seu.'"
+      ],
+      "ferramenta": "Comparador Inteligente"
+    },
+    {
+      "dia": 9,
+      "titulo": "Gestao Completa: voce ganha sem trabalhar 1 hora",
+      "hook": "Gestao Completa: voce ganha sem trabalhar 1 hora...",
+      "roteiro": [
+        "Hook (0-3s): Gestao Completa: voce ganha sem trabalhar 1 hora",
+        "Conteudo (3-40s): Limpeza, check-in e precificacao por IA.",
+        "Prova: abra a Painel de Ferramentas ao vivo",
+        "CTA (40-60s): 'Link na bio — simule o seu.'"
+      ],
+      "ferramenta": "Painel de Ferramentas"
+    },
+    {
+      "dia": 10,
+      "titulo": "Avaliacao de preco por IA vs avaliador humano",
+      "hook": "Avaliacao de preco por IA vs avaliador humano...",
+      "roteiro": [
+        "Hook (0-3s): Avaliacao de preco por IA vs avaliador humano",
+        "Conteudo (3-40s): Diferencas e quando usar cada um.",
+        "Prova: abra a Avaliacao de Preco ao vivo",
+        "CTA (40-60s): 'Link na bio — simule o seu.'"
+      ],
+      "ferramenta": "Avaliacao de Preco"
+    },
+    {
+      "dia": 11,
+      "titulo": "Assistente virtual para compradores: como funciona",
+      "hook": "Assistente virtual para compradores: como funciona...",
+      "roteiro": [
+        "Hook (0-3s): Assistente virtual para compradores: como funciona",
+        "Conteudo (3-40s): Triagem 24/7 qualificando leads.",
+        "Prova: abra a Painel de Ferramentas ao vivo",
+        "CTA (40-60s): 'Link na bio — simule o seu.'"
+      ],
+      "ferramenta": "Painel de Ferramentas"
+    },
+    {
+      "dia": 12,
+      "titulo": "Gerador de descricoes: anuncio que vende em 1 clique",
+      "hook": "Gerador de descricoes: anuncio que vende em 1 clique...",
+      "roteiro": [
+        "Hook (0-3s): Gerador de descricoes: anuncio que vende em 1 clique",
+        "Conteudo (3-40s): Copy convertido por IA, pronto para Airbnb.",
+        "Prova: abra a Gerador de Descricoes ao vivo",
+        "CTA (40-60s): 'Link na bio — simule o seu.'"
+      ],
+      "ferramenta": "Gerador de Descricoes"
+    },
+    {
+      "dia": 13,
+      "titulo": "Recomendacao automatica de imoveis para o cliente",
+      "hook": "Recomendacao automatica de imoveis para o cliente...",
+      "roteiro": [
+        "Hook (0-3s): Recomendacao automatica de imoveis para o cliente",
+        "Conteudo (3-40s): Match por perfil e orcamento.",
+        "Prova: abra a Recomendacao Automatica ao vivo",
+        "CTA (40-60s): 'Link na bio — simule o seu.'"
+      ],
+      "ferramenta": "Recomendacao Automatica"
+    },
+    {
+      "dia": 14,
+      "titulo": "Boletim diario: sua vantagem competitiva",
+      "hook": "Boletim diario: sua vantagem competitiva...",
+      "roteiro": [
+        "Hook (0-3s): Boletim diario: sua vantagem competitiva",
+        "Conteudo (3-40s): Toda manha: ranking de cidades e oportunidades.",
+        "Prova: abra a Boletim Diario ao vivo",
+        "CTA (40-60s): 'Link na bio — simule o seu.'"
+      ],
+      "ferramenta": "Boletim Diario"
+    }
+  ]
+}
