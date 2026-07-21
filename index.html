@@ -5665,24 +5665,23 @@ handleHash();
     planText.textContent = plan + ' — ' + (planDetails[plan] || '');
     planBox.style.display = 'block';
   };
-  form.addEventListener('submit', function(e){
+  form.addEventListener('submit', async function(e){
     e.preventDefault();
     const nome = document.getElementById('b2bNome').value.trim();
     const fone = document.getElementById('b2bFone').value.trim();
     const cidade = document.getElementById('b2bCidade').value.trim();
     const perfil = document.getElementById('b2bPerfil').value;
-    const city = document.getElementById('b2bCidade').value.trim();
-    const planNames = {imobiliaria:'Professional',corretor:'Professional',construtora:'Enterprise',incorporadora:'Enterprise',administradora:'Professional',portal:'Enterprise'};
-    const planDetails = {
-      Starter: '1 agente de IA, 500 interações/mês e suporte WhatsApp.',
-      Professional: '5 agentes, 3.000 interações/mês, suporte prioritário e integração WhatsApp.',
-      Enterprise: '14 agentes, 20.000 interações/mês, suporte dedicado, white label e APIs/integrações.'
-    };
-    const suggestedPlan = planNames[perfil] || 'Starter';
+    const fallbackPlan = planNames && planNames[perfil] ? planNames[perfil] : (map && map[perfil] ? map[perfil] : 'Starter');
     const subject = encodeURIComponent('Interesse em parceria white-label');
-    const body = encodeURIComponent(`Nome: ${nome}\nTelefone: ${fone}\nCidade: ${city}\nPerfil: ${perfil}\nPlano sugerido: ${suggestedPlan}\n`);
+    const body = encodeURIComponent(`Nome: ${nome}\nTelefone: ${fone}\nCidade: ${cidade}\nPerfil: ${perfil}\nPlano sugerido: ${fallbackPlan}\n`);
     window.location.href = `mailto:comercial@praia.digital?subject=${subject}&body=${body}`;
-    if (feedback) { feedback.style.display = 'block'; feedback.textContent = 'Interesse registrado! Abra seu e-mail para enviar.'; }
+    try {
+      const endpoint = '/praia-digital/backend/api/leads/white-label.js';
+      const res = await fetch(endpoint, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({nome,telefone:fone,cidade,perfil,plano:fallbackPlan}) });
+      if (res.ok && feedback) { feedback.style.display='block'; feedback.textContent='Interesse registrado! Abra seu e-mail para enviar.'; }
+    } catch {
+      if (feedback) { feedback.style.display='block'; feedback.textContent='Interesse registrado! Abra seu e-mail para enviar.'; }
+    }
   });
 })();
 </script>
