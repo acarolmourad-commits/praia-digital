@@ -156,6 +156,43 @@
     </div>
   </section>
 
+  <section id="planos-lead" style="max-width:900px;margin:2rem auto;padding:2rem;background:var(--white);border-radius:18px;border:1px solid #e5e7eb;">
+    <h2 style="text-align:center;font-size:1.45rem;font-weight:800;color:var(--dark);margin-bottom:.75rem;">Solicite sua proposta</h2>
+    <form id="b2bLeadFormPlanInvest" style="display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));">
+      <div>
+        <label style="font-size:.8rem;font-weight:700;margin-bottom:.3rem;display:block;color:var(--dark);">Nome</label>
+        <input id="b2bNomePlanInvest" required style="width:100%;padding:.65rem 1rem;border:1.5px solid #ddd;border-radius:12px;font-size:.95rem;background:var(--white);color:var(--dark);">
+      </div>
+      <div>
+        <label style="font-size:.8rem;font-weight:700;margin-bottom:.3rem;display:block;color:var(--dark);">Telefone/WhatsApp</label>
+        <input id="b2bFonePlanInvest" required style="width:100%;padding:.65rem 1rem;border:1.5px solid #ddd;border-radius:12px;font-size:.95rem;background:var(--white);color:var(--dark);">
+      </div>
+      <div>
+        <label style="font-size:.8rem;font-weight:700;margin-bottom:.3rem;display:block;color:var(--dark);">Cidade</label>
+        <input id="b2bCidadePlanInvest" required style="width:100%;padding:.65rem 1rem;border:1.5px solid #ddd;border-radius:12px;font-size:.95rem;background:var(--white);color:var(--dark);">
+      </div>
+      <div>
+        <label style="font-size:.8rem;font-weight:700;margin-bottom:.3rem;display:block;color:var(--dark);">Perfil</label>
+        <select id="b2bPerfilPlanInvest" required style="width:100%;padding:.65rem 1rem;border:1.5px solid #ddd;border-radius:12px;font-size:.95rem;background:var(--white);color:var(--dark);">
+          <option value="imobiliaria">Imobiliária</option>
+          <option value="corretor">Corretor</option>
+          <option value="construtora">Construtora</option>
+          <option value="incorporadora">Incorporadora</option>
+          <option value="administradora">Administradora</option>
+          <option value="portal">Portal</option>
+        </select>
+      </div>
+      <div>
+        <label style="font-size:.8rem;font-weight:700;margin-bottom:.3rem;display:block;color:var(--dark);">Plano</label>
+        <select id="b2bPlanoPlanInvest" style="width:100%;padding:.65rem 1rem;border:1.5px solid #ddd;border-radius:12px;font-size:.95rem;background:var(--white);color:var(--dark);">
+          <option>Starter</option><option>Professional</option><option>Enterprise</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary" style="grid-column:1/-1;justify-self:center;min-width:260px;">Quero proposta</button>
+    </form>
+    <p id="b2bFeedbackPlanInvest" style="text-align:center;margin-top:1rem;font-weight:700;color:var(--success);display:none;"></p>
+  </section>
+
   <footer>
     <p>Praia Digital · 1ª Plataforma Brasileira de Inteligência Imobiliária</p>
     <p><a href="mailto:comercial@praia.digital">comercial@praia.digital</a> · <a href="tel:+5511954346288">(11) 95434-6288</a></p>
@@ -180,5 +217,31 @@
       document.getElementById('simResult').classList.add('visible');
     }
   </script>
+<script>
+(function(){
+  const form = document.getElementById('b2bLeadFormPlanInvest');
+  if (!form) return;
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    const nome = document.getElementById('b2bNomePlanInvest')?.value.trim() || '';
+    const fone = document.getElementById('b2bFonePlanInvest')?.value.trim() || '';
+    const cidade = document.getElementById('b2bCidadePlanInvest')?.value.trim() || '';
+    const perfil = document.getElementById('b2bPerfilPlanInvest')?.value || '';
+    const plano = document.getElementById('b2bPlanoPlanInvest')?.value || '';
+    const subject = encodeURIComponent('Solicita proposta B2B');
+    const body = encodeURIComponent('Nome: ' + nome + '\nTelefone: ' + fone + '\nCidade: ' + cidade + '\nPerfil: ' + perfil + '\nPlano: ' + plano + '\n');
+    window.location.href = 'mailto:comercial@praia.digital?subject=' + subject + '&body=' + body;
+    try {
+      const endpoint = '/praia-digital/backend/api/leads/b2b.js';
+      const res = await fetch(endpoint, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({nome:nome,telefone:fone,cidade:cidade,perfil:perfil,plano:plano}) });
+      const feedback = document.getElementById('b2bFeedbackPlanInvest');
+      if (feedback) { feedback.style.display='block'; feedback.textContent='Interesse registrado! Abra seu e-mail para enviar.'; }
+    } catch {
+      const feedback = document.getElementById('b2bFeedbackPlanInvest');
+      if (feedback) { feedback.style.display='block'; feedback.textContent='Interesse registrado! Abra seu e-mail para enviar.'; }
+    }
+  });
+})();
+</script>
 </body>
 </html>
