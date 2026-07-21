@@ -1,0 +1,1 @@
+{"name":"praia-digital-ia","version":"0.1.0","private":true,"scripts":{"dev":"netlify dev","build":"echo static backend"}}

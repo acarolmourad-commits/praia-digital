@@ -1,0 +1,14 @@
+[
+  {"name":"Praia Grande","price":780000,"yield":5.8,"occ":68,"valor":"moderada"},
+  {"name":"Santos","price":1250000,"yield":5.0,"occ":74,"valor":"alta"},
+  {"name":"Guarujá","price":950000,"yield":4.6,"occ":71,"valor":"alta"},
+  {"name":"São Vicente","price":720000,"yield":6.1,"occ":65,"valor":"moderada"},
+  {"name":"Itanhaém","price":880000,"yield":6.4,"occ":70,"valor":"alta"},
+  {"name":"Mongaguá","price":750000,"yield":6.9,"occ":66,"valor":"moderada"},
+  {"name":"Peruíbe","price":920000,"yield":7.2,"occ":72,"valor":"alta"},
+  {"name":"Bertioga","price":860000,"yield":5.1,"occ":69,"valor":"moderada"},
+  {"name":"Ubatuba","price":1100000,"yield":5.4,"occ":73,"valor":"alta"},
+  {"name":"Caraguatatuba","price":980000,"yield":5.9,"occ":72,"valor":"alta"},
+  {"name":"São Sebastião","price":1350000,"yield":4.9,"occ":75,"valor":"alta"},
+  {"name":"Ilhabela","price":1150000,"yield":4.4,"occ":77,"valor":"alta"}
+]
