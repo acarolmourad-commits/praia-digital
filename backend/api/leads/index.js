@@ -1,2 +1,1 @@
-const handler = require('./white-label');
-module.exports = async (req, res) => handler(req, res);
+module.exports = async (req, res) => require('./b2b')(req, res);
