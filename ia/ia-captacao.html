@@ -4,25 +4,239 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>IA para Captação — Praia Digital</title>
-  <style>body{font-family:'Segoe UI',system-ui,sans-serif;background:#f4f6fb;color:#0f172a;margin:0;padding:0}a{color:#0d47a1;text-decoration:underline}.wrap{max-width:1100px;margin:0 auto;padding:40px 22px}.hero{background:linear-gradient(135deg,#6b21a8,#a855f7);color:#fff;padding:48px 22px;border-radius:18px;margin-bottom:24px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}.card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:18px;box-shadow:0 4px 18px rgba(0,0,0,.06)}.cta{display:inline-block;margin-top:12px;padding:12px 16px;background:#6b21a8;color:#fff;border-radius:999px;font-weight:700}</style>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ocean: #0077B6; --ocean-light: #00B4D8; --sand: #F4EBD0;
+      --white: #FFFFFF; --dark: #023047; --accent: #90E0EF;
+      --success: #2d9e5a; --error: #e53e3e; --purple: #6B21A8;
+      --purple-light: #A855F7; --orange: #F97316; --amber: #F59E0B;
+    }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--sand); color: var(--dark); line-height: 1.6; }
+    a { color: inherit; text-decoration: underline; }
+    header { background: linear-gradient(135deg, var(--ocean) 0%, var(--ocean-light) 100%); color: var(--white); padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 16px rgba(0,0,0,0.15); }
+    .logo { font-size: 1.4rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: var(--white); }
+    .logo-icon { width: 36px; height: 36px; }
+    nav a { color: var(--white); text-decoration: none; margin-left: 1.5rem; font-weight: 500; opacity: 0.9; transition: opacity 0.2s; }
+    nav a:hover { opacity: 1; }
+    .hero { background: linear-gradient(135deg, #fff 0%, #f3e8ff 100%); padding: 3.5rem 2rem 2.5rem; text-align: center; border-bottom: 1px solid #e5e7eb; }
+    .hero-inner { max-width: 1100px; margin: 0 auto; }
+    .hero h1 { font-size: clamp(1.8rem, 4.2vw, 2.9rem); font-weight: 800; color: var(--dark); margin-bottom: 0.75rem; }
+    .hero p { color: #555; max-width: 760px; margin: 0 auto 1.5rem; font-size: 1.05rem; }
+    .hero-cta { display: inline-flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    .btn { padding: 0.75rem 1.75rem; border-radius: 50px; font-size: 1rem; font-weight: 600; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; border: none; display: inline-block; }
+    .btn-primary { background: var(--white); color: var(--ocean); }
+    .btn-purple { background: var(--purple); color: var(--white); }
+    .btn-amber { background: var(--amber); color: var(--dark); }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 2.5rem 2rem; }
+    .section-title { text-align: center; font-size: 1.6rem; font-weight: 800; color: var(--dark); margin-bottom: 1.75rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+    .card { background: var(--white); border: 1px solid #e5e7eb; border-radius: 18px; padding: 22px; box-shadow: 0 4px 18px rgba(0,0,0,.05); transition: transform .2s; }
+    .card:hover { transform: translateY(-3px); }
+    .card h3 { color: var(--purple); margin: 6px 0 8px; }
+    .muted { color: #64748b; font-size: .92rem; }
+    .cta { display: inline-block; margin-top: 14px; padding: 12px 18px; background: var(--purple); color: var(--white); border-radius: 999px; font-weight: 700; text-decoration: none; }
+    footer { background: var(--dark); color: var(--white); text-align: center; padding: 2rem; }
+    footer a { color: var(--ocean-light); }
+
+    .capture-panel { background: var(--white); border: 1px solid #e5e7eb; border-radius: 18px; padding: 22px; box-shadow: 0 4px 18px rgba(0,0,0,.05); }
+    .capture-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap: 1rem; margin-bottom: 1.25rem; }
+    .field label { display: block; font-size: .78rem; font-weight: 700; color: #555; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: .35rem; }
+    .field input, .field select, .field textarea { width: 100%; padding: 0.65rem 0.9rem; border: 1.5px solid #ddd; border-radius: 10px; font-size: .95rem; background: #fafafa; color: var(--dark); font-family: inherit; }
+    .field textarea { min-height: 80px; resize: vertical; }
+    .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--ocean); }
+    .action-btn { width: 100%; padding: 0.9rem; background: linear-gradient(135deg, var(--ocean), var(--ocean-light)); color: white; border: none; border-radius: 50px; font-weight: 800; cursor: pointer; transition: transform .2s, box-shadow .2s; }
+    .action-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,119,182,.25); }
+    .result { margin-top: 1.5rem; display: none; }
+    .result.visible { display: block; }
+    .insight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px,1fr)); gap: .75rem; margin-bottom: 1rem; }
+    .insight { background: #f8f9fa; border-radius: 12px; padding: .9rem; text-align: center; }
+    .insight-value { font-size: 1.1rem; font-weight: 900; color: var(--dark); }
+    .insight-label { font-size: .7rem; color: #888; text-transform: uppercase; letter-spacing: 0.06em; margin-top: .2rem; }
+    .plan { background: #f3e8ff; border: 2px solid var(--purple-light); border-radius: 14px; padding: 1rem; }
+    .plan h4 { color: var(--purple); margin-bottom: .5rem; }
+    .plan ul { padding-left: 1.25rem; font-size: .9rem; color: #444; }
+    .plan li { margin-bottom: .35rem; }
+    .notice { background:#fff7ed; border-left:4px solid var(--orange); padding:14px; border-radius:8px; margin-top:18px; color:#7c2d12; }
+  </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="hero">
+  <header>
+    <a class="logo" href="/praia-digital/">
+      <svg class="logo-icon" viewBox="0 0 36 36" fill="none">
+        <circle cx="18" cy="18" r="18" fill="#FFFFFF" fill-opacity="0.2"/>
+        <path d="M8 22 Q18 12 28 22" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        <path d="M6 26 Q18 16 30 26" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+        <circle cx="26" cy="10" r="4" fill="#FFD700"/>
+      </svg>
+      Praia Digital
+    </a>
+    <nav>
+      <a href="/praia-digital/">Home</a>
+      <a href="/praia-digital/ia/">Central de IA</a>
+      <a href="/praia-digital/ia/ia-captacao.html">Captação</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-inner">
       <h1>🎯 IA para Captação</h1>
-      <p>Analisa imóveis, potencial e argumentos, gerando planos de captação direcionados.</p>
-      <a class="cta" href="ia/ia-comercial.html">Usar agente</a>
+      <p>Análise rápida de potencial, preço, argumentos e plano de captação.</p>
+      <div class="hero-cta">
+        <a class="btn btn-purple" href="#analisador">Analisar imóvel</a>
+        <a class="btn btn-amber" href="/praia-digital/ia/">Voltar para central</a>
+      </div>
     </div>
-    <div class="grid">
-      <div class="card"><h3>Potencial de venda</h3><p>Estimativa baseada em local e perfil do imóvel.</p></div>
-      <div class="card"><h3>Potencial de aluguel</h3><p>Yield temporada vs. longo prazo.</p></div>
-      <div class="card"><h3>Rentabilidade</h3><p>Fluxo e retorno com cenários conservador e otimista.</p></div>
-      <div class="card"><h3>Pontos fortes e fracos</h3><p>Análise objetiva do imóvel.</p></div>
-      <div class="card"><h3>Sugestão de preço</h3><p>Faixa sugerida de anúncio e negociação.</p></div>
-      <div class="card"><h3>Argumentos comerciais</h3><p>Discurso para contato com proprietário.</p></div>
-      <div class="card"><h3>Plano de captação</h3><p>Sequência de canais, mensagens e follow-up.</p></div>
-    </div>
-    <p style="margin-top:18px"><a href="/praia-digital/ia/">Voltar para hubs de IA</a> · <a href="https://acarolmourad-commits.github.io/praia-digital/" target="_blank">Abrir assistente IA</a></p>
   </div>
+
+  <div class="wrap" id="analisador">
+    <div class="capture-panel">
+      <h3 class="section-title">Analisador de captação</h3>
+      <div class="capture-form">
+        <div class="field">
+          <label for="capTipo">Tipo</label>
+          <select id="capTipo"><option value="apartamento">Apartamento</option><option value="casa">Casa</option><option value="terreno">Terreno</option><option value="comercial">Comercial</option><option value="pousada">Pousada</option></select>
+        </div>
+        <div class="field">
+          <label for="capCidade">Cidade</label>
+          <select id="capCidade">
+            <option value="praia-grande">Praia Grande</option>
+            <option value="santos">Santos</option>
+            <option value="guaruja">Guarujá</option>
+            <option value="sao-vicente">São Vicente</option>
+            <option value="itanhaem">Itanhaém</option>
+            <option value="mongagua">Mongaguá</option>
+            <option value="peruibe">Peruíbe</option>
+            <option value="ubatuba">Ubatuba</option>
+            <option value="caraguatatuba">Caraguatatuba</option>
+            <option value="sao-sebastiao">São Sebastião</option>
+            <option value="ilhabela">Ilhabela</option>
+            <option value="bertioga">Bertioga</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="capArea">Área (m²)</label>
+          <input id="capArea" type="number" placeholder="Ex: 120" min="0">
+        </div>
+        <div class="field">
+          <label for="capQuartos">Quartos</label>
+          <input id="capQuartos" type="number" placeholder="Ex: 2" min="0">
+        </div>
+        <div class="field">
+          <label for="capDiferencial">Diferencial</label>
+          <input id="capDiferencial" type="text" placeholder="Ex: vista mar, piscina, Wi-Fi">
+        </div>
+        <div class="field">
+          <label for="capPreco">Preço pedido (R$)</label>
+          <input id="capPreco" type="number" placeholder="Ex: 850000" min="0" step="1000">
+        </div>
+      </div>
+      <button class="action-btn" onclick="runCapture()">Gerar análise de captação</button>
+
+      <div class="result" id="captureResult"></div>
+      <div class="notice">Aviso: esta análise é um ponto de partida. A validação final depende de visita e documentação.</div>
+    </div>
+
+    <div style="margin-top: 1.5rem; display:flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+      <a class="btn btn-primary" href="/praia-digital/ia/">Voltar para central</a>
+      <a class="btn btn-primary" href="/praia-digital/">Home</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>Praia Digital · 1ª Plataforma Brasileira de Inteligência Imobiliária</p>
+    <p><a href="mailto:comercial@praia.digital">comercial@praia.digital</a> · <a href="tel:+5511954346288">(11) 95434-6288</a></p>
+  </footer>
+
+  <script>
+    const priceByCity = {
+      'praia-grande':{base:780000,factor:1.0,label:'Praia Grande'},
+      'santos':{base:1250000,factor:1.25,label:'Santos'},
+      'guaruja':{base:950000,factor:1.1,label:'Guarujá'},
+      'sao-vicente':{base:720000,factor:1.0,label:'São Vicente'},
+      'itanhaem':{base:880000,factor:1.05,label:'Itanhaém'},
+      'mongagua':{base:750000,factor:1.0,label:'Mongaguá'},
+      'peruibe':{base:920000,factor:1.05,label:'Peruíbe'},
+      'ubatuba':{base:1100000,factor:1.15,label:'Ubatuba'},
+      'caraguatatuba':{base:980000,factor:1.1,label:'Caraguatatuba'},
+      'sao-sebastiao':{base:1350000,factor:1.25,label:'São Sebastião'},
+      'ilhabela':{base:1150000,factor:1.2,label:'Ilhabela'},
+      'bertioga':{base:860000,factor:1.05,label:'Bertioga'}
+    };
+    const cityYield = {'praia-grande':5.8,'santos':5.0,'guaruja':4.6,'sao-vicente':6.1,'itanhaem':6.4,'mongagua':6.9,'peruibe':7.2,'ubatuba':5.4,'caraguatatuba':5.9,'sao-sebastiao':4.9,'ilhabela':4.4,'bertioga':5.1};
+
+    function fmt(v){ return 'R$ ' + Number(v||0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0}); }
+
+    function runCapture(){
+      const tipo = document.getElementById('capTipo').value;
+      const cidade = document.getElementById('capCidade').value;
+      const area = Number(document.getElementById('capArea').value||0);
+      const quartos = Number(document.getElementById('capQuartos').value||0);
+      const diferencial = document.getElementById('capDiferencial').value.trim();
+      const precoPedido = Number(document.getElementById('capPreco').value||0);
+      const base = priceByCity[cidade] || priceByCity['praia-grande'];
+
+      let suggested = base.base;
+      if(tipo==='apartamento') suggested += area * 1800 + quartos * 25000;
+      else if(tipo==='casa') suggested += area * 1200 + quartos * 30000;
+      else if(tipo==='terreno') suggested += area * 900;
+      else if(tipo==='comercial') suggested += area * 2200;
+      else if(tipo==='pousada') suggested += area * 1600 + quartos * 18000;
+
+      if(diferencial.includes('mar') || diferencial.includes('frente')) suggested += 180000;
+      else if(diferencial.includes('piscina')) suggested += 120000;
+      else if(diferencial.includes('wi-fi') || diferencial.includes('wifi')) suggested += 15000;
+
+      suggested = Math.round(suggested * base.factor);
+      const faixaMin = Math.round(suggested * 0.92);
+      const faixaMax = Math.round(suggested * 1.08);
+      const yieldEst = cityYield[cidade] || 5.5;
+      const rentabilidade = ((suggested * yieldEst / 100) / suggested) * 100;
+
+      const pontosFortes = ['Localização', 'Área', 'Acabamento', 'Diferencial'];
+      const pontosFracos = [' Conservação', ' Documentação', ' Oferta comparável', 'Acessibilidade'];
+      if(area > 150) pontosFortes.push('Espaço amplo');
+      if(diferencial.includes('mar')) pontosFortes.push('Vista privilegiada');
+      if(precoPedido && precoPedido > suggested * 1.1) pontosFracos.push('Preço acima da faixa');
+
+      const argumentos = [
+        `Imóvel em ${base.label}, cidade com valorização consistente no litoral.`,
+        `${tipo} com ${area}m² e ${quartos||'?'} quartos, atendendo demanda por espaço e localização.`,
+        diferencial ? `Diferencial: ${diferencial}.` : 'Negociável dentro da faixa de mercado.'
+      ];
+
+      const plan = [
+        '1) Fotos profissionais e descrição otimizada para SEO.',
+        '2) Anúncio em portais e Instagram/local targeting.',
+        '3) Follow-up em 24h com propostas de visita.',
+        '4) Disparo WhatsApp para base qualificada da cidade.'
+      ];
+
+      const html = `
+        <div class="insight-grid">
+          <div class="insight"><div class="insight-value">${fmt(suggested)}</div><div class="insight-label">Preço sugerido</div></div>
+          <div class="insight"><div class="insight-value">${fmt(faixaMin)}</div><div class="insight-label">Faixa mínima</div></div>
+          <div class="insight"><div class="insight-value">${fmt(faixaMax)}</div><div class="insight-label">Faixa máxima</div></div>
+          <div class="insight"><div class="insight-value">${yieldEst.toFixed(1)}%</div><div class="insight-label">Yield médio cidade</div></div>
+          <div class="insight"><div class="insight-value">${rentabilidade.toFixed(1)}%</div><div class="insight-label">Rentabilidade estimada</div></div>
+        </div>
+        <div class="plan">
+          <h4>Pontos fortes</h4>
+          <ul>${pontosFortes.map(x=>`<li>${x}</li>`).join('')}</ul>
+          <h4 style="margin-top:0.75rem">Pontos fracos</h4>
+          <ul>${pontosFracos.map(x=>`<li>${x}</li>`).join('')}</ul>
+          <h4 style="margin-top:0.75rem">Argumentos comerciais</h4>
+          <ul>${argumentos.map(x=>`<li>${x}</li>`).join('')}</ul>
+          <h4 style="margin-top:0.75rem">Plano de captação</h4>
+          <ul>${plan.map(x=>`<li>${x}</li>`).join('')}</ul>
+        </div>
+      `;
+
+      document.getElementById('captureResult').innerHTML = html;
+      document.getElementById('captureResult').classList.add('visible');
+      document.getElementById('captureResult').scrollIntoView({behavior:'smooth'});
+    }
+  </script>
 </body>
 </html>
