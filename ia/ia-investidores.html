@@ -4,25 +4,226 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>IA para Investidores — Praia Digital</title>
-  <style>body{font-family:'Segoe UI',system-ui,sans-serif;background:#f4f6fb;color:#0f172a;margin:0;padding:0}a{color:#0d47a1;text-decoration:underline}.wrap{max-width:1100px;margin:0 auto;padding:40px 22px}.hero{background:linear-gradient(135deg,#6b21a8,#a855f7);color:#fff;padding:48px 22px;border-radius:18px;margin-bottom:24px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}.card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:18px;box-shadow:0 4px 18px rgba(0,0,0,.06)}.cta{display:inline-block;margin-top:12px;padding:12px 16px;background:#6b21a8;color:#fff;border-radius:999px;font-weight:700}</style>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ocean: #0077B6; --ocean-light: #00B4D8; --sand: #F4EBD0;
+      --white: #FFFFFF; --dark: #023047; --accent: #90E0EF;
+      --success: #2d9e5a; --error: #e53e3e; --purple: #6B21A8;
+      --purple-light: #A855F7; --orange: #F97316; --amber: #F59E0B;
+    }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--sand); color: var(--dark); line-height: 1.6; }
+    a { color: inherit; text-decoration: underline; }
+    header { background: linear-gradient(135deg, var(--ocean) 0%, var(--ocean-light) 100%); color: var(--white); padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 16px rgba(0,0,0,0.15); }
+    .logo { font-size: 1.4rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: var(--white); }
+    .logo-icon { width: 36px; height: 36px; }
+    nav a { color: var(--white); text-decoration: none; margin-left: 1.5rem; font-weight: 500; opacity: 0.9; transition: opacity 0.2s; }
+    nav a:hover { opacity: 1; }
+    .hero { background: linear-gradient(135deg, #fff 0%, #f3e8ff 100%); padding: 3.5rem 2rem 2.5rem; text-align: center; border-bottom: 1px solid #e5e7eb; }
+    .hero-inner { max-width: 1100px; margin: 0 auto; }
+    .hero h1 { font-size: clamp(1.8rem, 4.2vw, 2.9rem); font-weight: 800; color: var(--dark); margin-bottom: 0.75rem; }
+    .hero p { color: #555; max-width: 760px; margin: 0 auto 1.5rem; font-size: 1.05rem; }
+    .hero-cta { display: inline-flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    .btn { padding: 0.75rem 1.75rem; border-radius: 50px; font-size: 1rem; font-weight: 600; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; border: none; display: inline-block; }
+    .btn-primary { background: var(--white); color: var(--ocean); }
+    .btn-purple { background: var(--purple); color: var(--white); }
+    .btn-amber { background: var(--amber); color: var(--dark); }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 2.5rem 2rem; }
+    .section-title { text-align: center; font-size: 1.6rem; font-weight: 800; color: var(--dark); margin-bottom: 1.75rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+    .card { background: var(--white); border: 1px solid #e5e7eb; border-radius: 18px; padding: 22px; box-shadow: 0 4px 18px rgba(0,0,0,.05); transition: transform .2s; }
+    .card:hover { transform: translateY(-3px); }
+    .card h3 { color: var(--purple); margin: 6px 0 8px; }
+    .muted { color: #64748b; font-size: .92rem; }
+    .cta { display: inline-block; margin-top: 14px; padding: 12px 18px; background: var(--purple); color: var(--white); border-radius: 999px; font-weight: 700; text-decoration: none; }
+    .badge { display: inline-block; background: #f3e8ff; color: var(--purple); padding: 6px 10px; border-radius: 999px; font-weight: 700; font-size: .8rem; margin-right: 6px; }
+    .notice { background:#fff7ed; border-left:4px solid var(--orange); padding:14px; border-radius:8px; margin-top:18px; color:#7c2d12; }
+    footer { background: var(--dark); color: var(--white); text-align: center; padding: 2rem; }
+    footer a { color: var(--ocean-light); }
+
+    .investor-card { background: var(--white); border: 1px solid #e5e7eb; border-radius: 18px; padding: 22px; box-shadow: 0 4px 18px rgba(0,0,0,.05); }
+    .investor-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap: 1rem; margin-bottom: 1.25rem; }
+    .field label { display: block; font-size: .78rem; font-weight: 700; color: #555; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: .35rem; }
+    .field input, .field select { width: 100%; padding: 0.65rem 0.9rem; border: 1.5px solid #ddd; border-radius: 10px; font-size: .95rem; background: #fafafa; color: var(--dark); }
+    .field input:focus, .field select:focus { outline: none; border-color: var(--ocean); }
+    .action-btn { width: 100%; padding: 0.9rem; background: linear-gradient(135deg, var(--ocean), var(--ocean-light)); color: white; border: none; border-radius: 50px; font-weight: 800; cursor: pointer; transition: transform .2s, box-shadow .2s; }
+    .action-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,119,182,.25); }
+    .result { margin-top: 1.5rem; display: none; }
+    .result.visible { display: block; }
+    .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px,1fr)); gap: .75rem; margin-bottom: 1rem; }
+    .kpi { background: #f8f9fa; border-radius: 12px; padding: .9rem; text-align: center; }
+    .kpi-value { font-size: 1.2rem; font-weight: 900; color: var(--dark); }
+    .kpi-label { font-size: .7rem; color: #888; text-transform: uppercase; letter-spacing: 0.06em; margin-top: .2rem; }
+    .verdict { background: #f3e8ff; border: 2px solid var(--purple-light); border-radius: 14px; padding: 1rem; text-align: center; margin-bottom: 1rem; }
+    .verdict strong { color: var(--purple); }
+    .ranking { width: 100%; border-collapse: collapse; margin-top: .5rem; }
+    .ranking th { background: var(--ocean); color: white; padding: .6rem; font-size: .8rem; text-align: left; }
+    .ranking td { padding: .6rem; border-bottom: 1px solid #eee; font-size: .9rem; }
+    .ranking tr:hover td { background: #f8f9fa; }
+    .score { font-weight: 800; }
+  </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="hero">
+  <header>
+    <a class="logo" href="/praia-digital/">
+      <svg class="logo-icon" viewBox="0 0 36 36" fill="none">
+        <circle cx="18" cy="18" r="18" fill="#FFFFFF" fill-opacity="0.2"/>
+        <path d="M8 22 Q18 12 28 22" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        <path d="M6 26 Q18 16 30 26" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+        <circle cx="26" cy="10" r="4" fill="#FFD700"/>
+      </svg>
+      Praia Digital
+    </a>
+    <nav>
+      <a href="/praia-digital/">Home</a>
+      <a href="/praia-digital/ia/">Central de IA</a>
+      <a href="/praia-digital/ia/ia-investidores.html">Investidores</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-inner">
       <h1>📈 IA para Investidores</h1>
-      <p>Decisão baseada em dados com ROI, fluxo de caixa e comparações.</p>
-      <a class="cta" href="ia/ia-comercial.html">Usar agente</a>
+      <p>Análise fundamentada de oportunidade: ROI, Cap Rate, fluxo de caixa e ranking comparativo.</p>
+      <div class="hero-cta">
+        <a class="btn btn-purple" href="#simulador">Simular agora</a>
+        <a class="btn btn-amber" href="/praia-digital/ia/">Voltar para central</a>
+      </div>
     </div>
-    <div class="grid">
-      <div class="card"><h3>Vale a pena comprar?</h3><p>Score por perfil e objetivo.</p></div>
-      <div class="card"><h3>ROI</h3><p>Estimativa de retorno e payback.</p></div>
-      <div class="card"><h3>Cap Rate</h3><p>Cálculo e comparação por ativo.</p></div>
-      <div class="card"><h3>Rentabilidade</h3><p>Cenários temporada e longo prazo.</p></div>
-      <div class="card"><h3>Fluxo de caixa</h3><p>Entradas, custos e liquidez.</p></div>
-      <div class="card"><h3>Valorização esperada</h3><p>Projeção com fontes públicas.</p></div>
-      <div class="card"><h3>Comparação</h3><p>Ranking entre imóveis candidatos.</p></div>
-    </div>
-    <p style="margin-top:18px"><a href="/praia-digital/ia/">Voltar para hubs de IA</a> · <a href="javascript:void(0)" onclick="openAssistant('investidores')">Abrir assistente IA</a></p>
   </div>
+
+  <div class="wrap" id="simulador">
+    <div class="investor-card">
+      <h3 class="section-title">Simulador inteligente</h3>
+      <div class="investor-form">
+        <div class="field">
+          <label for="invType">Perfil</label>
+          <select id="invType">
+            <option value="buyer">Comprador</option>
+            <option value="investor">Investidor</option>
+            <option value="owner">Proprietário</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="invPrice">Preço do imóvel (R$)</label>
+          <input id="invPrice" type="number" placeholder="Ex: 900000" min="0" step="1000">
+        </div>
+        <div class="field">
+          <label for="invDown">Entrada (R$)</label>
+          <input id="invDown" type="number" placeholder="Ex: 180000" min="0" step="1000">
+        </div>
+        <div class="field">
+          <label for="invRent">Aluguel/mês (R$)</label>
+          <input id="invRent" type="number" placeholder="Ex: 3500" min="0" step="100">
+        </div>
+        <div class="field">
+          <label for="invExp">Despesas/mês (R$)</label>
+          <input id="invExp" type="number" placeholder="Ex: 700" min="0" step="100">
+        </div>
+        <div class="field">
+          <label for="invCity">Cidade</label>
+          <select id="invCity">
+            <option value="praia-grande">Praia Grande</option>
+            <option value="santos">Santos</option>
+            <option value="guaruja">Guarujá</option>
+            <option value="sao-vicente">São Vicente</option>
+            <option value="itanhaem">Itanhaém</option>
+            <option value="mongagua">Mongaguá</option>
+            <option value="peruibe">Peruíbe</option>
+            <option value="ubatuba">Ubatuba</option>
+            <option value="caraguatatuba">Caraguatatuba</option>
+            <option value="sao-sebastiao">São Sebastião</option>
+            <option value="ilhabela">Ilhabela</option>
+            <option value="bertioga">Bertioga</option>
+          </select>
+        </div>
+      </div>
+      <button class="action-btn" onclick="calcInvestor()">Calcular análise inteligente</button>
+
+      <div class="result" id="investorResult">
+        <div class="verdict" id="verdict"></div>
+        <div class="kpis" id="kpis"></div>
+        <div class="investor-card">
+          <h4 class="section-title">Ranking comparativo</h4>
+          <div style="overflow-x:auto">
+            <table class="ranking">
+              <thead><tr><th>Cidade</th><th>Cap Rate</th><th>ROI 12m</th><th>Desvio</th><th>Veredito</th></tr></thead>
+              <tbody id="rankingBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 1.5rem; display:flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+      <a class="btn btn-primary" href="/praia-digital/ia/">Voltar para central</a>
+      <a class="btn btn-primary" href="/praia-digital/">Home</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>Praia Digital · 1ª Plataforma Brasileira de Inteligência Imobiliária</p>
+    <p><a href="mailto:comercial@praia.digital">comercial@praia.digital</a> · <a href="tel:+5511954346288">(11) 95434-6288</a></p>
+  </footer>
+
+  <script>
+    const fmt = v => 'R$ ' + Number(v||0).toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0});
+    const cityBase = {
+      'praia-grande':{cap:5.8,roi:9.1,tax:'Conservador'},
+      'santos':{cap:5.0,roi:8.4,tax:'Conservador'},
+      'guaruja':{cap:4.6,roi:11.2,tax:'Moderado'},
+      'sao-vicente':{cap:6.1,roi:8.8,tax:'Conservador'},
+      'itanhaem':{cap:6.4,roi:7.7,tax:'Conservador'},
+      'mongagua':{cap:6.9,roi:8.2,tax:'Conservador'},
+      'peruibe':{cap:7.2,roi:7.7,tax:'Moderado'},
+      'ubatuba':{cap:5.4,roi:9.5,tax:'Moderado'},
+      'caraguatatuba':{cap:5.9,roi:8.7,tax:'Moderado'},
+      'sao-sebastiao':{cap:4.9,roi:12.0,tax:'Moderado'},
+      'ilhabela':{cap:4.4,roi:9.5,tax:'Moderado'},
+      'bertioga':{cap:5.1,roi:8.6,tax:'Conservador'}
+    };
+
+    function calcInvestor(){
+      const price = Number(document.getElementById('invPrice').value||0);
+      const down = Number(document.getElementById('invDown').value||0);
+      const rent = Number(document.getElementById('invRent').value||0);
+      const exp = Number(document.getElementById('invExp').value||0);
+      const city = document.getElementById('invCity').value;
+      if(!price || !down || !rent){ alert('Informe preço, entrada e aluguel.'); return; }
+      const financed = price - down;
+      const grossAnnual = rent * 12;
+      const netAnnual = grossAnnual - (exp * 12);
+      const capRate = (netAnnual / price) * 100;
+      const roi = (netAnnual / down) * 100;
+      const paybackYears = down / netAnnual;
+      const gratuity = netAnnual > 0 ? (price / netAnnual) : null;
+      const base = cityBase[city] || {cap:5.5,roi:8.5,tax:'Conservador'};
+      const verdict = roi >= 10 ? 'Oportunidade forte' : roi >= 7 ? 'Oportunidade moderada' : 'Entrada conservadora';
+      const notice = roi >= 10 ? 'Excelente retorno relativo à entrada.' : roi >= 7 ? 'Retorno saudável com risco moderado.' : 'Avalie se o fluxo cobre custos e inadimplência.';
+
+      const kpis = `
+        <div class="kpi"><div class="kpi-value">${fmt(netAnnual/12)}</div><div class="kpi-label">Fluxo líquido/mês</div></div>
+        <div class="kpi"><div class="kpi-value">${fmt(netAnnual)}</div><div class="kpi-label">Fluxo anual</div></div>
+        <div class="kpi"><div class="kpi-value">${roi.toFixed(2)}%</div><div class="kpi-label">ROI estimado</div></div>
+        <div class="kpi"><div class="kpi-value">${capRate.toFixed(2)}%</div><div class="kpi-label">Cap Rate</div></div>
+        <div class="kpi"><div class="kpi-value">${paybackYears.toFixed(1)} anos</div><div class="kpi-label">Payback</div></div>
+        <div class="kpi"><div class="kpi-value">${gratuity ? gratuity.toFixed(1) : '—'}</div><div class="kpi-label">Anos para igualar imóvel</div></div>
+      `;
+      document.getElementById('kpis').innerHTML = kpis;
+      document.getElementById('verdict').innerHTML = `<strong>${verdict}</strong><br><span style="font-size:.9rem;color:#555">${notice}</span>`;
+
+      const deviations = Object.entries(cityBase).map(([c,v])=>({c,v})).sort((a,b)=>Math.abs(b.v.roi-roi)-Math.abs(a.v.roi-roi)).slice(0,6);
+      document.getElementById('rankingBody').innerHTML = deviations.map((x,idx)=>{
+        const delta = (x.v.roi - roi).toFixed(2);
+        const color = delta > 0 ? 'var(--success)' : delta < 0 ? 'var(--error)' : 'var(--dark)';
+        const label = delta > 0 ? 'Melhor' : delta < 0 ? 'Pior' : 'Igual';
+        return `<tr><td><span class="score">#${idx+1}</span> ${x.c}</td><td>${x.v.cap.toFixed(2)}%</td><td>${x.v.roi.toFixed(2)}%</td><td style="color:${color}">${delta>0?'+':''}${delta}%</td><td>${label}</td></tr>`;
+      }).join('');
+
+      document.getElementById('investorResult').classList.add('visible');
+      document.getElementById('investorResult').scrollIntoView({behavior:'smooth'});
+    }
+  </script>
 </body>
 </html>
