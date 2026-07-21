@@ -27,8 +27,14 @@
     .wrap { max-width: 1200px; margin: 0 auto; padding: 2.5rem 2rem; }
     .section-title { text-align: center; font-size: 1.6rem; font-weight: 800; color: var(--dark); margin-bottom: 1.75rem; }
     .video-panel { background: var(--white); border: 1px solid #e5e7eb; border-radius: 18px; padding: 22px; box-shadow: 0 4px 18px rgba(0,0,0,.05); }
-    .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px,1fr)); gap: .75rem; margin-bottom: 1.25rem; }
-    .video-card { background: #f8f9fa; border: 1px solid #e5e7eb; border-radius: 12px; padding: .9rem; text-align: center; font-weight: 700; color: var(--dark); }
+    .video-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap: 1rem; margin-bottom: 1.25rem; }
+    .field label { display: block; font-size: .78rem; font-weight: 700; color: #555; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: .35rem; }
+    .field input, .field select { width: 100%; padding: 0.65rem 0.9rem; border: 1.5px solid #ddd; border-radius: 10px; font-size: .95rem; background: #fafafa; }
+    .action-btn { width: 100%; padding: 0.9rem; background: linear-gradient(135deg, var(--ocean), var(--ocean-light)); color: white; border: none; border-radius: 50px; font-weight: 800; cursor: pointer; transition: transform .2s, box-shadow .2s; }
+    .action-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,119,182,.25); }
+    .result { margin-top: 1.5rem; display: none; }
+    .result.visible { display: block; }
+    .script-box { background: #f8f9fa; border-radius: 14px; padding: 1rem; white-space: pre-wrap; font-size: .92rem; color: #222; }
     footer { background: var(--dark); color: var(--white); text-align: center; padding: 2rem; }
     footer a { color: var(--ocean-light); }
   </style>
@@ -49,25 +55,23 @@
   <div class="hero">
     <div class="hero-inner">
       <h1>🎬 IA para Vídeos</h1>
-      <p>Conteúdo em vídeo para redes e apresentação de imóveis.</p>
+      <p>Roteiros e guias rápidos para Reels, Shorts, tours e apresentações.</p>
       <div class="hero-cta">
-        <a class="btn btn-purple" href="#ferramentas">Ver formatos</a>
+        <a class="btn btn-purple" href="#gerador">Gerar roteiro</a>
         <a class="btn btn-amber" href="/praia-digital/ia/">Voltar para central</a>
       </div>
     </div>
   </div>
 
-  <div class="wrap" id="ferramentas">
+  <div class="wrap" id="gerador">
     <div class="video-panel">
-      <h3 class="section-title">Formatos disponíveis</h3>
-      <div class="video-grid">
-        <div class="video-card">Reels</div>
-        <div class="video-card">Shorts</div>
-        <div class="video-card">TikTok</div>
-        <div class="video-card">Tour virtual</div>
-        <div class="video-card">Apresentação</div>
-        <div class="video-card">Vídeo narrado</div>
+      <h3 class="section-title">Gerador de roteiro</h3>
+      <div class="video-form">
+        <div class="field"><label for="vFormato">Formato</label><select id="vFormato"><option value="reel">Reel/Short</option><option value="tour">Tour virtual</option><option value="apresentacao">Apresentação</option><option value="narrado">Vídeo narrado</option></select></div>
+        <div class="field"><label for="vCidade">Cidade</label><select id="vCidade"><option value="praia-grande">Praia Grande</option><option value="santos">Santos</option><option value="guaruja">Guarujá</option><option value="sao-vicente">São Vicente</option><option value="itanhaem">Itanhaém</option><option value="mongagua">Mongaguá</option><option value="peruibe">Peruíbe</option><option value="ubatuba">Ubatuba</option><option value="caraguatatuba">Caraguatatuba</option><option value="sao-sebastiao">São Sebastião</option><option value="ilhabela">Ilhabela</option><option value="bertioga">Bertioga</option></select></div>
       </div>
+      <button class="action-btn" onclick="runVideo()">Gerar roteiro</button>
+      <div class="result" id="videoResult"></div>
     </div>
 
     <div style="margin-top: 1.5rem; display:flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
@@ -80,5 +84,24 @@
     <p>Praia Digital · 1ª Plataforma Brasileira de Inteligência Imobiliária</p>
     <p><a href="mailto:comercial@praia.digital">comercial@praia.digital</a> · <a href="tel:+5511954346288">(11) 95434-6288</a></p>
   </footer>
+
+  <script>
+    const cityLabels = {'praia-grande':'Praia Grande','santos':'Santos','guaruja':'Guarujá','sao-vicente':'São Vicente','itanhaem':'Itanhaém','mongagua':'Mongaguá','peruibe':'Peruíbe','ubatuba':'Ubatuba','caraguatatuba':'Caraguatatuba','sao-sebastiao':'São Sebastião','ilhabela':'Ilhabela','bertioga':'Bertioga'};
+    function runVideo(){
+      const formato = document.getElementById('vFormato').value;
+      const cidade = document.getElementById('vCidade').value;
+      const city = cityLabels[cidade]||cidade;
+      const scripts = {
+        reel: `0-3s | Hook visual em ${city}\n3-10s | Problema/dor do público\n10-25s | Solução + diferenciais\n25-40s | Prova social/CTA\n40-50s | Fechamento: link na bio`,
+        tour: `1) Entrada: recepção/sala\n2) Área social e cozinha\n3) Quartos e suíte\n4) Varanda/vista\n5) Final: CTA para visita`,
+        apresentacao: `Abertura: título e cidade\nContexto: dados de mercado\nImóvel: fotos, área, diferenciais\nBenefícios: quem vai ganhar\nCTA: contato`,
+        narrado: `Roteiro narrado para ${city}.\n1) Introdução calma\n2) Descrição do imóvel\n3) Vizinhança e serviços\n4) Dados rápidos\n5) Chamada para ação`
+      };
+      const text = scripts[formato] || 'Escolha um formato.';
+      document.getElementById('videoResult').innerHTML = `<div class="script-box">${text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div><button class="copy-btn" style="margin-top:.5rem" onclick="copyText(this)">Copiar</button>`;
+      document.getElementById('videoResult').classList.add('visible');
+    }
+    function copyText(btn){ const t=btn.previousElementSibling?.innerText||''; navigator.clipboard.writeText(t).then(()=>alert('Copiado!')).catch(()=>alert('Não foi possível copiar automaticamente.')); }
+  </script>
 </body>
 </html>

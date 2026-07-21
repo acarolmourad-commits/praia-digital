@@ -99,7 +99,7 @@
       document.getElementById('contentResult').innerHTML = `<div class="block">${text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div><button class="copy-btn" onclick="copyText(this)">Copiar</button>`;
       document.getElementById('contentResult').classList.add('visible');
     }
-    function copyText(btn){ const t=btn.previousElementSibling?.innerText||btn.parentElement?.querySelector('.block')?.innerText||''; navigator.clipboard.writeText(t).then(()=>alert('Copiado!')).catch(()=>alert('Não foi possível copiar automaticamente.')); }
+    function copyText(btn){ const t=btn.previousElementSibling?.innerText||''; navigator.clipboard.writeText(t).then(()=>alert('Copiado!')).catch(()=>alert('Não foi possível copiar automaticamente.')); }
   </script>
 </body>
 </html>
