@@ -1,1 +1,3 @@
-module.exports = async (input, context) => { return `[IA mercado] placeholder`; };
+module.exports = async (input, context) => {
+  return `[IA Mercado] Recebi: "${input}". Em breve dados macro conectados.`;
+};

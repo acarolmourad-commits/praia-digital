@@ -1,1 +1,3 @@
-module.exports = async (input, context) => { return `[IA avaliacao] placeholder`; };
+module.exports = async (input, context) => {
+  return `[IA Avaliação] Recebi: "${input}". Em breve PTAM conectado.`;
+};

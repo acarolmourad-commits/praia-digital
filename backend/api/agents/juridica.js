@@ -1,1 +1,3 @@
-module.exports = async (input, context) => { return `[IA juridica] placeholder`; };
+module.exports = async (input, context) => {
+  return `[IA Jurídica] Recebi: "${input}". Em breve documentos-base conectados.`;
+};
