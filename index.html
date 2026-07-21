@@ -3759,7 +3759,7 @@
     </div>
     <div>
       <label style="font-size:.8rem;font-weight:700;margin-bottom:.3rem;display:block;opacity:.9;">Perfil</label>
-      <select id="b2bPerfil" required style="width:100%;padding:.65rem 1rem;border:2px solid rgba(255,255,255,.4);border-radius:12px;font-size:.95rem;background:rgba(255,255,255,.15);color:white;">
+      <select id="b2bPerfil" required onchange="suggestPlan()" style="width:100%;padding:.65rem 1rem;border:2px solid rgba(255,255,255,.4);border-radius:12px;font-size:.95rem;background:rgba(255,255,255,.15);color:white;">
         <option value="imobiliaria" style="color:#000">Imobiliária</option>
         <option value="corretor" style="color:#000">Corretor</option>
         <option value="construtora" style="color:#000">Construtora</option>
@@ -3767,6 +3767,10 @@
         <option value="administradora" style="color:#000">Administradora</option>
         <option value="portal" style="color:#000">Portal</option>
       </select>
+    </div>
+    <div id="b2bPlanSuggestion" style="grid-column:1/-1;background:rgba(255,255,255,.15);border-radius:12px;padding:1rem;display:none;">
+      <div style="font-weight:700;margin-bottom:.3rem">💡 Plano recomendado:</div>
+      <div id="b2bPlanText" style="font-size:.9rem;opacity:.95;"></div>
     </div>
     <button type="submit" class="btn btn-primary" style="grid-column:1/-1;justify-self:center;min-width:260px;">Tenho interesse em parceria</button>
   </form>
@@ -5649,15 +5653,34 @@ handleHash();
 (function(){
   const form = document.getElementById('b2bLeadForm');
   const feedback = document.getElementById('b2bFeedback');
+  const planBox = document.getElementById('b2bPlanSuggestion');
+  const planText = document.getElementById('b2bPlanText');
   if (!form) return;
+  const planDetails = { Starter: '1 agente de IA, 500 interações/mês e suporte WhatsApp.', Professional: '5 agentes, 3.000 interações/mês, suporte prioritário e integração WhatsApp.', Enterprise: '14 agentes, 20.000 interações/mês, suporte dedicado, white label e APIs/integrações.' };
+  window.suggestPlan = function(){
+    if (!planBox || !planText) return;
+    const v = document.getElementById('b2bPerfil').value;
+    const map = {imobiliaria:'Professional',corretor:'Professional',construtora:'Enterprise',incorporadora:'Enterprise',administradora:'Professional',portal:'Enterprise'};
+    const plan = map[v] || 'Starter';
+    planText.textContent = plan + ' — ' + (planDetails[plan] || '');
+    planBox.style.display = 'block';
+  };
   form.addEventListener('submit', function(e){
     e.preventDefault();
     const nome = document.getElementById('b2bNome').value.trim();
     const fone = document.getElementById('b2bFone').value.trim();
     const cidade = document.getElementById('b2bCidade').value.trim();
     const perfil = document.getElementById('b2bPerfil').value;
+    const city = document.getElementById('b2bCidade').value.trim();
+    const planNames = {imobiliaria:'Professional',corretor:'Professional',construtora:'Enterprise',incorporadora:'Enterprise',administradora:'Professional',portal:'Enterprise'};
+    const planDetails = {
+      Starter: '1 agente de IA, 500 interações/mês e suporte WhatsApp.',
+      Professional: '5 agentes, 3.000 interações/mês, suporte prioritário e integração WhatsApp.',
+      Enterprise: '14 agentes, 20.000 interações/mês, suporte dedicado, white label e APIs/integrações.'
+    };
+    const suggestedPlan = planNames[perfil] || 'Starter';
     const subject = encodeURIComponent('Interesse em parceria white-label');
-    const body = encodeURIComponent(`Nome: ${nome}\nTelefone: ${fone}\nCidade: ${cidade}\nPerfil: ${perfil}\n`);
+    const body = encodeURIComponent(`Nome: ${nome}\nTelefone: ${fone}\nCidade: ${city}\nPerfil: ${perfil}\nPlano sugerido: ${suggestedPlan}\n`);
     window.location.href = `mailto:comercial@praia.digital?subject=${subject}&body=${body}`;
     if (feedback) { feedback.style.display = 'block'; feedback.textContent = 'Interesse registrado! Abra seu e-mail para enviar.'; }
   });
