@@ -4,23 +4,202 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>IA para Avaliação — Praia Digital</title>
-  <style>body{font-family:'Segoe UI',system-ui,sans-serif;background:#f4f6fb;color:#0f172a;margin:0;padding:0}a{color:#0d47a1;text-decoration:underline}.wrap{max-width:1100px;margin:0 auto;padding:40px 22px}.hero{background:linear-gradient(135deg,#6b21a8,#a855f7);color:#fff;padding:48px 22px;border-radius:18px;margin-bottom:24px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}.card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:18px;box-shadow:0 4px 18px rgba(0,0,0,.06)}.cta{display:inline-block;margin-top:12px;padding:12px 16px;background:#6b21a8;color:#fff;border-radius:999px;font-weight:700}</style>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ocean: #0077B6; --ocean-light: #00B4D8; --sand: #F4EBD0;
+      --white: #FFFFFF; --dark: #023047; --accent: #90E0EF;
+      --success: #2d9e5a; --error: #e53e3e; --purple: #6B21A8;
+      --purple-light: #A855F7; --orange: #F97316; --amber: #F59E0B;
+    }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--sand); color: var(--dark); line-height: 1.6; }
+    a { color: inherit; text-decoration: underline; }
+    header { background: linear-gradient(135deg, var(--ocean) 0%, var(--ocean-light) 100%); color: var(--white); padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 16px rgba(0,0,0,0.15); }
+    .logo { font-size: 1.4rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: var(--white); }
+    .logo-icon { width: 36px; height: 36px; }
+    nav a { color: var(--white); text-decoration: none; margin-left: 1.5rem; font-weight: 500; opacity: 0.9; transition: opacity 0.2s; }
+    nav a:hover { opacity: 1; }
+    .hero { background: linear-gradient(135deg, #fff 0%, #f3e8ff 100%); padding: 3.5rem 2rem 2.5rem; text-align: center; border-bottom: 1px solid #e5e7eb; }
+    .hero-inner { max-width: 1100px; margin: 0 auto; }
+    .hero h1 { font-size: clamp(1.8rem, 4.2vw, 2.9rem); font-weight: 800; color: var(--dark); margin-bottom: 0.75rem; }
+    .hero p { color: #555; max-width: 760px; margin: 0 auto 1.5rem; font-size: 1.05rem; }
+    .hero-cta { display: inline-flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    .btn { padding: 0.75rem 1.75rem; border-radius: 50px; font-size: 1rem; font-weight: 600; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; border: none; display: inline-block; }
+    .btn-primary { background: var(--white); color: var(--ocean); }
+    .btn-purple { background: var(--purple); color: var(--white); }
+    .btn-amber { background: var(--amber); color: var(--dark); }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 2.5rem 2rem; }
+    .section-title { text-align: center; font-size: 1.6rem; font-weight: 800; color: var(--dark); margin-bottom: 1.75rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+    .card { background: var(--white); border: 1px solid #e5e7eb; border-radius: 18px; padding: 22px; box-shadow: 0 4px 18px rgba(0,0,0,.05); transition: transform .2s; }
+    .card:hover { transform: translateY(-3px); }
+    .card h3 { color: var(--purple); margin: 6px 0 8px; }
+    .muted { color: #64748b; font-size: .92rem; }
+    footer { background: var(--dark); color: var(--white); text-align: center; padding: 2rem; }
+    footer a { color: var(--ocean-light); }
+
+    .valuation-panel { background: var(--white); border: 1px solid #e5e7eb; border-radius: 18px; padding: 22px; box-shadow: 0 4px 18px rgba(0,0,0,.05); }
+    .valuation-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap: 1rem; margin-bottom: 1.25rem; }
+    .field label { display: block; font-size: .78rem; font-weight: 700; color: #555; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: .35rem; }
+    .field input, .field select, .field textarea { width: 100%; padding: 0.65rem 0.9rem; border: 1.5px solid #ddd; border-radius: 10px; font-size: .95rem; background: #fafafa; color: var(--dark); font-family: inherit; }
+    .field textarea { min-height: 80px; resize: vertical; }
+    .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--ocean); }
+    .action-btn { width: 100%; padding: 0.9rem; background: linear-gradient(135deg, var(--ocean), var(--ocean-light)); color: white; border: none; border-radius: 50px; font-weight: 800; cursor: pointer; transition: transform .2s, box-shadow .2s; }
+    .action-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,119,182,.25); }
+    .result { margin-top: 1.5rem; display: none; }
+    .result.visible { display: block; }
+    .report { background: #f8f9fa; border-radius: 14px; padding: 1rem; margin-bottom: .75rem; white-space: pre-wrap; font-size: .92rem; color: #222; }
+    .notice { background:#fff7ed; border-left:4px solid var(--orange); padding:14px; border-radius:8px; margin-top:18px; color:#7c2d12; }
+  </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="hero">
+  <header>
+    <a class="logo" href="/praia-digital/">
+      <svg class="logo-icon" viewBox="0 0 36 36" fill="none">
+        <circle cx="18" cy="18" r="18" fill="#FFFFFF" fill-opacity="0.2"/>
+        <path d="M8 22 Q18 12 28 22" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        <path d="M6 26 Q18 16 30 26" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+        <circle cx="26" cy="10" r="4" fill="#FFD700"/>
+      </svg>
+      Praia Digital
+    </a>
+    <nav>
+      <a href="/praia-digital/">Home</a>
+      <a href="/praia-digital/ia/">Central de IA</a>
+      <a href="/praia-digital/ia/ia-avaliacao.html">Avaliação</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-inner">
       <h1>📊 IA para Avaliação</h1>
-      <p>Gera documentos estruturados, comparações e relatórios de valor mercadológico.</p>
-      <a class="cta" href="ia/ia-comercial.html">Usar agente</a>
+      <p>Estruture PTAM, parecer, estudos comparativos e relatórios com base em dados.</p>
+      <div class="hero-cta">
+        <a class="btn btn-purple" href="#gerador">Gerar avaliação</a>
+        <a class="btn btn-amber" href="/praia-digital/ia/">Voltar para central</a>
+      </div>
     </div>
-    <div class="grid">
-      <div class="card"><h3>PTAM</h3><p>Diretrizes e estrutura do parecer.</p></div>
-      <div class="card"><h3>Parecer de Valor Mercadológico</h3><p>Texto final com fundamentação e faixa.</p></div>
-      <div class="card"><h3>Estudos comparativos</h3><p>Análise por similaridade, local e datas.</p></div>
-      <div class="card"><h3>Análise de valorização</h3><p>Histórico, tendências e projeção.</p></div>
-      <div class="card"><h3>Relatório completo</h3><p>Pdf estruturado com gráficos, fontes e nota.</p></div>
-    </div>
-    <p style="margin-top:18px"><a href="/praia-digital/ia/">Voltar para hubs de IA</a> · <a href="https://acarolmourad-commits.github.io/praia-digital/" target="_blank">Abrir assistente IA</a></p>
   </div>
+
+  <div class="wrap" id="gerador">
+    <div class="valuation-panel">
+      <h3 class="section-title">Gerador de avaliação</h3>
+      <div class="valuation-form">
+        <div class="field">
+          <label for="valTipo">Tipo</label>
+          <select id="valTipo">
+            <option value="apartamento">Apartamento</option>
+            <option value="casa">Casa</option>
+            <option value="terreno">Terreno</option>
+            <option value="comercial">Comercial</option>
+            <option value="pousada">Pousada</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="valCidade">Cidade</label>
+          <select id="valCidade">
+            <option value="praia-grande">Praia Grande</option>
+            <option value="santos">Santos</option>
+            <option value="guaruja">Guarujá</option>
+            <option value="sao-vicente">São Vicente</option>
+            <option value="itanhaem">Itanhaém</option>
+            <option value="mongagua">Mongaguá</option>
+            <option value="peruibe">Peruíbe</option>
+            <option value="ubatuba">Ubatuba</option>
+            <option value="caraguatatuba">Caraguatatuba</option>
+            <option value="sao-sebastiao">São Sebastião</option>
+            <option value="ilhabela">Ilhabela</option>
+            <option value="bertioga">Bertioga</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="valArea">Área (m²)</label>
+          <input id="valArea" type="number" placeholder="Ex: 120" min="0">
+        </div>
+        <div class="field">
+          <label for="valPreco">Preço informado (R$)</label>
+          <input id="valPreco" type="number" placeholder="Ex: 900000" min="0" step="1000">
+        </div>
+        <div class="field">
+          <label for="valDiferencial">Diferencial</label>
+          <input id="valDiferencial" type="text" placeholder="Ex: vista mar, piscina">
+        </div>
+      </div>
+      <button class="action-btn" onclick="runValuation()">Gerar avaliação</button>
+      <div class="result" id="valuationResult"></div>
+      <div class="notice">Documento-base para suporte à decisão. Consulte um avaliador credenciado.</div>
+    </div>
+
+    <div style="margin-top: 1.5rem; display:flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+      <a class="btn btn-primary" href="/praia-digital/ia/">Voltar para central</a>
+      <a class="btn btn-primary" href="/praia-digital/">Home</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>Praia Digital · 1ª Plataforma Brasileira de Inteligência Imobiliária</p>
+    <p><a href="mailto:comercial@praia.digital">comercial@praia.digital</a> · <a href="tel:+5511954346288">(11) 95434-6288</a></p>
+  </footer>
+
+  <script>
+    const fmt = v => 'R$ ' + Number(v||0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0});
+    const baseByCity = {'praia-grande':780000,'santos':1250000,'guaruja':950000,'sao-vicente':720000,'itanhaem':880000,'mongagua':750000,'peruibe':920000,'ubatuba':1100000,'caraguatatuba':980000,'sao-sebastiao':1350000,'ilhabela':1150000,'bertioga':860000};
+    const cityLabels = {'praia-grande':'Praia Grande','santos':'Santos','guaruja':'Guarujá','sao-vicente':'São Vicente','itanhaem':'Itanhaém','mongagua':'Mongaguá','peruibe':'Peruíbe','ubatuba':'Ubatuba','caraguatatuba':'Caraguatatuba','sao-sebastiao':'São Sebastião','ilhabela':'Ilhabela','bertioga':'Bertioga'};
+
+    function runValuation(){
+      const tipo = document.getElementById('valTipo').value;
+      const cidade = document.getElementById('valCidade').value;
+      const area = Number(document.getElementById('valArea').value||0);
+      const precoInformado = Number(document.getElementById('valPreco').value||0);
+      const diferencial = document.getElementById('valDiferencial').value.trim();
+      const base = baseByCity[cidade]||780000;
+
+      let suggested = base;
+      if(tipo==='apartamento') suggested += area * 1800;
+      else if(tipo==='casa') suggested += area * 1200;
+      else if(tipo==='terreno') suggested += area * 900;
+      else if(tipo==='comercial') suggested += area * 2200;
+      else if(tipo==='pousada') suggested += area * 1600;
+
+      if(diferencial.includes('mar') || diferencial.includes('frente')) suggested += 180000;
+      else if(diferencial.includes('piscina')) suggested += 120000;
+      else if(diferencial.includes('wi-fi') || diferencial.includes('wifi')) suggested += 15000;
+
+      suggested = Math.round(suggested);
+      const faixaMin = Math.round(suggested * 0.92);
+      const faixaMax = Math.round(suggested * 1.08);
+      const comparativos = [
+        {label:'Média cidade', value: fmt(base)},
+        {label:'Sugerido', value: fmt(suggested)},
+        {label:'Informado', value: precoInformado?fmt(precoInformado):'—'},
+        {label:'Alerta', value: precoInformado > faixaMax ? 'Acima da faixa' : precoInformado && precoInformado < faixaMin ? 'Abaixo da faixa' : 'Dentro da faixa'}
+      ];
+
+      const ptam = `PTAM — PARECER TÉCNICO DE AVALIAÇÃO MERCADOLÓGICA
+Objeto: ${tipo} em ${cityLabels[cidade]||cidade}
+Área: ${area||'—'} m²
+Diferencial: ${diferencial||'—'}
+
+Valor base de referência: ${fmt(base)}
+Faixa sugerida: ${fmt(faixaMin)} a ${fmt(faixaMax)}
+Preço informado: ${precoInformado?fmt(precoInformado):'—'}
+
+Conclusão: ${precoInformado > faixaMax ? 'Preço informado está acima da faixa de mercado.' : precoInformado && precoInformado < faixaMin ? 'Preço informado está abaixo da faixa de mercado.' : 'Preço informado está dentro da faixa de mercado.'}
+
+*Atenção: documento-base. Valide com profissional credenciado.*`;
+
+      const html = `
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.75rem;margin-bottom:1rem">
+          ${comparativos.map(x=>`<div style="background:#f8f9fa;border-radius:12px;padding:.9rem;text-align:center"><div style="font-size:.7rem;color:#888;text-transform:uppercase">${x.label}</div><div style="font-size:1.1rem;font-weight:900;color:var(--dark)">${x.value}</div></div>`).join('')}
+        </div>
+        <div class="report"><strong>PTAM</strong>\n\n${ptam.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div>
+      `;
+
+      document.getElementById('valuationResult').innerHTML = html;
+      document.getElementById('valuationResult').classList.add('visible');
+      document.getElementById('valuationResult').scrollIntoView({behavior:'smooth'});
+    }
+  </script>
 </body>
 </html>
