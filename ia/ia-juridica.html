@@ -4,25 +4,263 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>IA Jurídica — Praia Digital</title>
-  <style>body{font-family:'Segoe UI',system-ui,sans-serif;background:#f4f6fb;color:#0f172a;margin:0;padding:0}a{color:#0d47a1;text-decoration:underline}.wrap{max-width:1100px;margin:0 auto;padding:40px 22px}.hero{background:linear-gradient(135deg,#6b21a8,#a855f7);color:#fff;padding:48px 22px;border-radius:18px;margin-bottom:24px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}.card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:18px;box-shadow:0 4px 18px rgba(0,0,0,.06)}.cta{display:inline-block;margin-top:12px;padding:12px 16px;background:#6b21a8;color:#fff;border-radius:999px;font-weight:700}.notice{background:#fff7ed;border-left:4px solid #f97316;padding:14px;border-radius:8px;margin-top:16px;color:#7c2d12}</style>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ocean: #0077B6; --ocean-light: #00B4D8; --sand: #F4EBD0;
+      --white: #FFFFFF; --dark: #023047; --accent: #90E0EF;
+      --success: #2d9e5a; --error: #e53e3e; --purple: #6B21A8;
+      --purple-light: #A855F7; --orange: #F97316; --amber: #F59E0B;
+    }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--sand); color: var(--dark); line-height: 1.6; }
+    a { color: inherit; text-decoration: underline; }
+    header { background: linear-gradient(135deg, var(--ocean) 0%, var(--ocean-light) 100%); color: var(--white); padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 16px rgba(0,0,0,0.15); }
+    .logo { font-size: 1.4rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: var(--white); }
+    .logo-icon { width: 36px; height: 36px; }
+    nav a { color: var(--white); text-decoration: none; margin-left: 1.5rem; font-weight: 500; opacity: 0.9; transition: opacity 0.2s; }
+    nav a:hover { opacity: 1; }
+    .hero { background: linear-gradient(135deg, #fff 0%, #f3e8ff 100%); padding: 3.5rem 2rem 2.5rem; text-align: center; border-bottom: 1px solid #e5e7eb; }
+    .hero-inner { max-width: 1100px; margin: 0 auto; }
+    .hero h1 { font-size: clamp(1.8rem, 4.2vw, 2.9rem); font-weight: 800; color: var(--dark); margin-bottom: 0.75rem; }
+    .hero p { color: #555; max-width: 760px; margin: 0 auto 1.5rem; font-size: 1.05rem; }
+    .hero-cta { display: inline-flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    .btn { padding: 0.75rem 1.75rem; border-radius: 50px; font-size: 1rem; font-weight: 600; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; border: none; display: inline-block; }
+    .btn-primary { background: var(--white); color: var(--ocean); }
+    .btn-purple { background: var(--purple); color: var(--white); }
+    .btn-amber { background: var(--amber); color: var(--dark); }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 2.5rem 2rem; }
+    .section-title { text-align: center; font-size: 1.6rem; font-weight: 800; color: var(--dark); margin-bottom: 1.75rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+    .card { background: var(--white); border: 1px solid #e5e7eb; border-radius: 18px; padding: 22px; box-shadow: 0 4px 18px rgba(0,0,0,.05); transition: transform .2s; }
+    .card:hover { transform: translateY(-3px); }
+    .card h3 { color: var(--purple); margin: 6px 0 8px; }
+    .muted { color: #64748b; font-size: .92rem; }
+    .cta { display: inline-block; margin-top: 14px; padding: 12px 18px; background: var(--purple); color: var(--white); border-radius: 999px; font-weight: 700; text-decoration: none; }
+    footer { background: var(--dark); color: var(--white); text-align: center; padding: 2rem; }
+    footer a { color: var(--ocean-light); }
+
+    .legal-panel { background: var(--white); border: 1px solid #e5e7eb; border-radius: 18px; padding: 22px; box-shadow: 0 4px 18px rgba(0,0,0,.05); }
+    .legal-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap: 1rem; margin-bottom: 1.25rem; }
+    .field label { display: block; font-size: .78rem; font-weight: 700; color: #555; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: .35rem; }
+    .field input, .field select, .field textarea { width: 100%; padding: 0.65rem 0.9rem; border: 1.5px solid #ddd; border-radius: 10px; font-size: .95rem; background: #fafafa; color: var(--dark); font-family: inherit; }
+    .field textarea { min-height: 100px; resize: vertical; }
+    .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--ocean); }
+    .action-btn { width: 100%; padding: 0.9rem; background: linear-gradient(135deg, var(--ocean), var(--ocean-light)); color: white; border: none; border-radius: 50px; font-weight: 800; cursor: pointer; transition: transform .2s, box-shadow .2s; }
+    .action-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,119,182,.25); }
+    .result { margin-top: 1.5rem; display: none; }
+    .result.visible { display: block; }
+    .doc-block { background: #f8f9fa; border-radius: 14px; padding: 1rem; margin-bottom: .75rem; white-space: pre-wrap; font-size: .92rem; color: #222; }
+    .notice { background:#fff7ed; border-left:4px solid var(--orange); padding:14px; border-radius:8px; margin-top:18px; color:#7c2d12; }
+  </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="hero">
+  <header>
+    <a class="logo" href="/praia-digital/">
+      <svg class="logo-icon" viewBox="0 0 36 36" fill="none">
+        <circle cx="18" cy="18" r="18" fill="#FFFFFF" fill-opacity="0.2"/>
+        <path d="M8 22 Q18 12 28 22" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        <path d="M6 26 Q18 16 30 26" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+        <circle cx="26" cy="10" r="4" fill="#FFD700"/>
+      </svg>
+      Praia Digital
+    </a>
+    <nav>
+      <a href="/praia-digital/">Home</a>
+      <a href="/praia-digital/ia/">Central de IA</a>
+      <a href="/praia-digital/ia/ia-juridica.html">Jurídico</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-inner">
       <h1>⚖️ IA Jurídica</h1>
-      <p>Documentos-base, checklists e propostas, com aviso explícito de revisão obrigatória.</p>
-      <a class="cta" href="ia/ia-comercial.html">Usar agente</a>
+      <p>Documentos-base e checklists para agilizar rotinas jurídicas imobiliárias.</p>
+      <div class="hero-cta">
+        <a class="btn btn-purple" href="#gerador">Gerar documento</a>
+        <a class="btn btn-amber" href="/praia-digital/ia/">Voltar para central</a>
+      </div>
     </div>
-    <div class="grid">
-      <div class="card"><h3>Contratos</h3><p>Modelo com variáveis editáveis e cláusulas.</p></div>
-      <div class="card"><h3>Propostas</h3><p>Estrutura jurídica e comercial alinhada.</p></div>
-      <div class="card"><h3>Distratos</h3><p>Base padronizada e campos obrigatórios.</p></div>
-      <div class="card"><h3>Recibos</h3><p>Modelo simples e robusto para comprovação.</p></div>
-      <div class="card"><h3>Procurações</h3><p>Campos por finalidade, poderes e validade.</p></div>
-      <div class="card"><h3>Checklist documental</h3><p>RG, CPF, comprovantes e registros.</p></div>
-    </div>
-    <div class="notice"><strong>Aviso:</strong> estes documentos são apoios e devem ser revisados por advogado.</div>
-    <p style="margin-top:18px"><a href="/praia-digital/ia/">Voltar para hubs de IA</a> · <a href="https://acarolmourad-commits.github.io/praia-digital/" target="_blank">Abrir assistente IA</a></p>
   </div>
+
+  <div class="wrap" id="gerador">
+    <div class="legal-panel">
+      <h3 class="section-title">Gerador de documento-base</h3>
+      <div class="legal-form">
+        <div class="field">
+          <label for="legalTipo">Tipo de documento</label>
+          <select id="legalTipo" onchange="refreshCampos()">
+            <option value="contrato">Contrato</option>
+            <option value="proposta">Proposta</option>
+            <option value="distrato">Distrato</option>
+            <option value="recibo">Recibo</option>
+            <option value="procuracao">Procuração</option>
+            <option value="checklist">Checklist documental</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="legalParte">Parte contratante</label>
+          <input id="legalParte" type="text" placeholder="Ex: João Silva">
+        </div>
+        <div class="field">
+          <label for="legalObjeto">Objeto / Imóvel</label>
+          <input id="legalObjeto" type="text" placeholder="Ex: Apartamento em Santos">
+        </div>
+        <div class="field">
+          <label for="legalValor">Valor (R$)</label>
+          <input id="legalValor" type="number" placeholder="Ex: 850000" min="0" step="1000">
+        </div>
+        <div class="field">
+          <label for="legalCidade">Cidade</label>
+          <select id="legalCidade">
+            <option value="praia-grande">Praia Grande</option>
+            <option value="santos">Santos</option>
+            <option value="guaruja">Guarujá</option>
+            <option value="sao-vicente">São Vicente</option>
+            <option value="itanhaem">Itanhaém</option>
+            <option value="mongagua">Mongaguá</option>
+            <option value="peruibe">Peruíbe</option>
+            <option value="ubatuba">Ubatuba</option>
+            <option value="caraguatatuba">Caraguatatuba</option>
+            <option value="sao-sebastiao">São Sebastião</option>
+            <option value="ilhabela">Ilhabela</option>
+            <option value="bertioga">Bertioga</option>
+          </select>
+        </div>
+      </div>
+      <button class="action-btn" onclick="runLegal()">Gerar documento-base</button>
+      <div class="result" id="legalResult"></div>
+      <div class="notice"><strong>Aviso:</strong> este documento é apenas base de apoio e deve ser revisado por advogado antes de ser usado.</div>
+    </div>
+
+    <div style="margin-top: 1.5rem; display:flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+      <a class="btn btn-primary" href="/praia-digital/ia/">Voltar para central</a>
+      <a class="btn btn-primary" href="/praia-digital/">Home</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>Praia Digital · 1ª Plataforma Brasileira de Inteligência Imobiliária</p>
+    <p><a href="mailto:comercial@praia.digital">comercial@praia.digital</a> · <a href="tel:+5511954346288">(11) 95434-6288</a></p>
+  </footer>
+
+  <script>
+    const fmt = v => 'R$ ' + Number(v||0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0});
+    const cityLabels = {'praia-grande':'Praia Grande','santos':'Santos','guaruja':'Guarujá','sao-vicente':'São Vicente','itanhaem':'Itanhaém','mongagua':'Mongaguá','peruibe':'Peruíbe','ubatuba':'Ubatuba','caraguatatuba':'Caraguatatuba','sao-sebastiao':'São Sebastião','ilhabela':'Ilhabela','bertioga':'Bertioga'};
+
+    function refreshCampos(){}
+
+    function baseContrato(parte, objeto, valor, cidade){
+      return `CONTRATO DE INTERMEDIAÇÃO/CORRETAGEM
+
+Parte contratante: ${parte||'________________'};
+Objeto: ${objeto||'________________'};
+Valor: ${valor?fmt(valor):'________________'};
+Local: ${cityLabels[cidade]||cidade||'________________'}.
+
+Cláusulas gerais:
+1. Objeto: intermediação para identificação de interessado.
+2. Exclusividade: [definir].
+3. Comissão: percentual sobre valor efetivamente transacionado.
+4. Vigência: [início] a [fim].
+5. Foro: comarca de ${cityLabels[cidade]||cidade||'________________'}.
+
+*Atenção: personalize cláusulas e revise com advogado.*`;
+    }
+
+    function baseProposta(parte, objeto, valor, cidade){
+      return `PROPOSTA
+
+De: Praia Digital
+Para: ${parte||'________________'}
+Imóvel: ${objeto||'________________'}
+Valor: ${valor?fmt(valor):'________________'}
+Local: ${cityLabels[cidade]||cidade||'________________'}.
+
+Condições:
+- Entrada: [definir]
+- Forma de pagamento: [definir]
+- Prazo de validade: [definir]
+- Documentos: RG, CPF, comprovante de residência.
+
+*Atenção: valide dados e revise com advogado.*`;
+    }
+
+    function baseDistrato(parte, objeto, valor, cidade){
+      return `DISTRATO
+
+Partes: ${parte||'________________'} e contraparte.
+Imóvel: ${objeto||'________________'}
+Valor envolvido: ${valor?fmt(valor):'________________'}
+Local: ${cityLabels[cidade]||cidade||'________________'}.
+
+Motivo: [descrever]
+Restituições: [valor e prazo]
+Multas: [definir se houver]
+Foro: ${cityLabels[cidade]||cidade||'________________'}.
+
+*Atenção: revise com advogado.*`;
+    }
+
+    function baseRecibo(parte, objeto, valor, cidade){
+      return `RECIBO
+
+Recebi de ${parte||'________________'} o valor de ${valor?fmt(valor):'________________'} referente a ${objeto||'________________'}.
+Local e data: ${cityLabels[cidade]||cidade||'________________'}, ____/____/____.
+
+Assinatura: ___________________________`;
+    }
+
+    function baseProcuracao(parte, objeto, valor, cidade){
+      return `PROCURAÇÃO
+
+Outorgante: ${parte||'________________'}
+Objeto: ${objeto||'________________'}
+Local: ${cityLabels[cidade]||cidade||'________________'}.
+
+Poderes: venda, compra, permuta, recebimento, assinatura de documentos.
+Validade: [definir]
+Cláusulas de revogação: [definir]
+
+*Atenção: requer revisão jurídica.*`;
+    }
+
+    function baseChecklist(parte, objeto, valor, cidade){
+      return `CHECKLIST DOCUMENTAL
+
+Interessado: ${parte||'________________'}
+Imóvel: ${objeto||'________________'}
+Local: ${cityLabels[cidade]||cidade||'________________'}
+
+Pessoa física:
+[ ] RG
+[ ] CPF
+[ ] Comprovante de residência
+[ ] Estado civil / regime de bens
+[ ] Dados bancários
+
+Imóvel:
+[ ] Matrícula atualizada
+[ ] IPTU
+[ ] Escritura
+[ ] Certidões negativas
+[ ] Declaração de área/construção
+
+Observações: ___________________________`;
+    }
+
+    function runLegal(){
+      const tipo = document.getElementById('legalTipo').value;
+      const parte = document.getElementById('legalParte').value.trim();
+      const objeto = document.getElementById('legalObjeto').value.trim();
+      const valor = Number(document.getElementById('legalValor').value||0);
+      const cidade = document.getElementById('legalCidade').value;
+      const docs = {contrato:baseContrato,proposta:baseProposta,distrato:baseDistrato,recibo:baseRecibo,procuracao:baseProcuracao,checklist:baseChecklist};
+      const text = docs[tipo] ? docs[tipo](parte, objeto, valor, cidade) : 'Selecione um tipo de documento.';
+      document.getElementById('legalResult').innerHTML = `<div class="doc-block"><strong>${tipo.toUpperCase()}</strong>\n\n${text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div>`;
+      document.getElementById('legalResult').classList.add('visible');
+      document.getElementById('legalResult').scrollIntoView({behavior:'smooth'});
+    }
+  </script>
 </body>
 </html>
