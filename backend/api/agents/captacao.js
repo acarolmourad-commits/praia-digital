@@ -1,1 +1,3 @@
-module.exports = async (input, context) => { return `[IA captacao] placeholder`; };
+module.exports = async (input, context) => {
+  return `[IA Captação] Recebi: "${input}". Em breve análise conectada.`;
+};
