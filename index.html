@@ -3741,6 +3741,38 @@
   </div>
 </section>
 
+<section class="realtors-section" id="parcerias-b2b" style="background:linear-gradient(135deg,var(--purple),var(--purple-light));color:var(--white);">
+  <h2>🤝 Parcerias White-Label</h2>
+  <p style="text-align:center;opacity:0.85;margin-bottom:2rem;">Imobiliárias, construtoras, incorporadoras, administradoras e portais.</p>
+  <form id="b2bLeadForm" style="max-width:700px;margin:0 auto;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));">
+    <div>
+      <label style="font-size:.8rem;font-weight:700;margin-bottom:.3rem;display:block;opacity:.9;">Nome</label>
+      <input id="b2bNome" required style="width:100%;padding:.65rem 1rem;border:2px solid rgba(255,255,255,.4);border-radius:12px;font-size:.95rem;background:rgba(255,255,255,.15);color:white;">
+    </div>
+    <div>
+      <label style="font-size:.8rem;font-weight:700;margin-bottom:.3rem;display:block;opacity:.9;">Telefone/WhatsApp</label>
+      <input id="b2bFone" required style="width:100%;padding:.65rem 1rem;border:2px solid rgba(255,255,255,.4);border-radius:12px;font-size:.95rem;background:rgba(255,255,255,.15);color:white;">
+    </div>
+    <div>
+      <label style="font-size:.8rem;font-weight:700;margin-bottom:.3rem;display:block;opacity:.9;">Cidade</label>
+      <input id="b2bCidade" required style="width:100%;padding:.65rem 1rem;border:2px solid rgba(255,255,255,.4);border-radius:12px;font-size:.95rem;background:rgba(255,255,255,.15);color:white;">
+    </div>
+    <div>
+      <label style="font-size:.8rem;font-weight:700;margin-bottom:.3rem;display:block;opacity:.9;">Perfil</label>
+      <select id="b2bPerfil" required style="width:100%;padding:.65rem 1rem;border:2px solid rgba(255,255,255,.4);border-radius:12px;font-size:.95rem;background:rgba(255,255,255,.15);color:white;">
+        <option value="imobiliaria" style="color:#000">Imobiliária</option>
+        <option value="corretor" style="color:#000">Corretor</option>
+        <option value="construtora" style="color:#000">Construtora</option>
+        <option value="incorporadora" style="color:#000">Incorporadora</option>
+        <option value="administradora" style="color:#000">Administradora</option>
+        <option value="portal" style="color:#000">Portal</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary" style="grid-column:1/-1;justify-self:center;min-width:260px;">Tenho interesse em parceria</button>
+  </form>
+  <p id="b2bFeedback" style="text-align:center;margin-top:1rem;font-weight:700;display:none;"></p>
+</section>
+
 <footer>
   <div class="footer-links">
     <a href="#buscar">Buscar imóveis</a>
@@ -5613,5 +5645,23 @@ handleHash();
 <script src="assets/whatsapp-float-cta.html"></script>
 <script src="assets/popup-captura-leads.html"></script>
 <script src="outreach/lead-magnet/widget-captura-quiz.html"></script>
+<script>
+(function(){
+  const form = document.getElementById('b2bLeadForm');
+  const feedback = document.getElementById('b2bFeedback');
+  if (!form) return;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const nome = document.getElementById('b2bNome').value.trim();
+    const fone = document.getElementById('b2bFone').value.trim();
+    const cidade = document.getElementById('b2bCidade').value.trim();
+    const perfil = document.getElementById('b2bPerfil').value;
+    const subject = encodeURIComponent('Interesse em parceria white-label');
+    const body = encodeURIComponent(`Nome: ${nome}\nTelefone: ${fone}\nCidade: ${cidade}\nPerfil: ${perfil}\n`);
+    window.location.href = `mailto:comercial@praia.digital?subject=${subject}&body=${body}`;
+    if (feedback) { feedback.style.display = 'block'; feedback.textContent = 'Interesse registrado! Abra seu e-mail para enviar.'; }
+  });
+})();
+</script>
 </body>
 </html>
