@@ -89,15 +89,15 @@
   <script>
     const chatWindow = document.getElementById('chatWindow');
     const input = document.getElementById('chatInput');
-    let backend = false;
+    const BACKEND_URL = 'https://praia-digital-backend.vercel.app'; // troque quando deployar o backend
 
     async function detectBackend(){
       try {
-        const res = await fetch('/praia-digital/backend/api/');
+        const res = await fetch(BACKEND_URL + '/');
         if (!res.ok) throw new Error('no');
-        backend = true;
+        window.__pdBackend = BACKEND_URL;
       } catch {
-        backend = false;
+        window.__pdBackend = false;
       }
     }
     detectBackend();
@@ -120,11 +120,11 @@
       addMsg(text, 'user');
       input.value = '';
 
-      if (backend) {
+      if (window.__pdBackend) {
         try {
-          const res = await fetch('/praia-digital/backend/api/chat.js', {
+          const res = await fetch(window.__pdBackend + '/api/chat.js', {
             method: 'POST',
-            headers: {'Content-Type': 'application/json'},
+            headers: {'Content-Type':'application/json'},
             body: JSON.stringify({ agent: 'comercial', input: text, context: {} })
           });
           const data = await res.json();
