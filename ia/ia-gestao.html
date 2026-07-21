@@ -4,25 +4,139 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>IA para Gestão — Praia Digital</title>
-  <style>body{font-family:'Segoe UI',system-ui,sans-serif;background:#f4f6fb;color:#0f172a;margin:0;padding:0}a{color:#0d47a1;text-decoration:underline}.wrap{max-width:1100px;margin:0 auto;padding:40px 22px}.hero{background:linear-gradient(135deg,#6b21a8,#a855f7);color:#fff;padding:48px 22px;border-radius:18px;margin-bottom:24px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}.card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:18px;box-shadow:0 4px 18px rgba(0,0,0,.06)}.cta{display:inline-block;margin-top:12px;padding:12px 16px;background:#6b21a8;color:#fff;border-radius:999px;font-weight:700}</style>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --ocean:#0077B6; --ocean-light:#00B4D8; --sand:#F4EBD0; --white:#FFFFFF; --dark:#023047; --purple:#6B21A8; --purple-light:#A855F7; --amber:#F59E0B; --success:#2d9e5a; --error:#e53e3e; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--sand); color: var(--dark); line-height: 1.6; }
+    a { color: inherit; text-decoration: underline; }
+    header { background: linear-gradient(135deg, var(--ocean) 0%, var(--ocean-light) 100%); color: var(--white); padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 16px rgba(0,0,0,0.15); }
+    .logo { font-size: 1.4rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: var(--white); }
+    .logo-icon { width: 36px; height: 36px; }
+    nav a { color: var(--white); text-decoration: none; margin-left: 1.5rem; font-weight: 500; opacity: 0.9; }
+    nav a:hover { opacity: 1; }
+    .hero { background: linear-gradient(135deg, #fff 0%, #f3e8ff 100%); padding: 3.5rem 2rem 2.5rem; text-align: center; border-bottom: 1px solid #e5e7eb; }
+    .hero-inner { max-width: 1100px; margin: 0 auto; }
+    .hero h1 { font-size: clamp(1.8rem, 4.2vw, 2.9rem); font-weight: 800; color: var(--dark); margin-bottom: 0.75rem; }
+    .hero p { color: #555; max-width: 760px; margin: 0 auto 1.5rem; font-size: 1.05rem; }
+    .hero-cta { display: inline-flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    .btn { padding: 0.75rem 1.75rem; border-radius: 50px; font-size: 1rem; font-weight: 600; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; border: none; display: inline-block; }
+    .btn-primary { background: var(--white); color: var(--ocean); }
+    .btn-purple { background: var(--purple); color: var(--white); }
+    .btn-amber { background: var(--amber); color: var(--dark); }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 2.5rem 2rem; }
+    .section-title { text-align: center; font-size: 1.6rem; font-weight: 800; color: var(--dark); margin-bottom: 1.75rem; }
+    .dashboard { background: var(--white); border: 1px solid #e5e7eb; border-radius: 18px; padding: 22px; box-shadow: 0 4px 18px rgba(0,0,0,.05); }
+    .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); gap: .75rem; margin-bottom: 1.25rem; }
+    .kpi { background: #f8f9fa; border-radius: 12px; padding: 1rem; text-align: center; }
+    .kpi-value { font-size: 1.25rem; font-weight: 900; color: var(--dark); }
+    .kpi-label { font-size: .7rem; color: #888; text-transform: uppercase; letter-spacing: 0.06em; margin-top: .2rem; }
+    .team-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap: 1rem; margin: 1rem 0; }
+    .field label { display: block; font-size: .78rem; font-weight: 700; color: #555; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: .35rem; }
+    .field input { width: 100%; padding: 0.65rem 0.9rem; border: 1.5px solid #ddd; border-radius: 10px; font-size: .95rem; background: #fafafa; }
+    .field input:focus { outline: none; border-color: var(--ocean); }
+    .action-btn { width: 100%; padding: 0.9rem; background: linear-gradient(135deg, var(--ocean), var(--ocean-light)); color: white; border: none; border-radius: 50px; font-weight: 800; cursor: pointer; transition: transform .2s, box-shadow .2s; }
+    .action-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,119,182,.25); }
+    .result { margin-top: 1.5rem; display: none; }
+    .result.visible { display: block; }
+    table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+    th { background: var(--ocean); color: white; padding: .6rem; text-align: left; }
+    td { padding: .6rem; border-bottom: 1px solid #eee; }
+    tr:hover td { background: #f8f9fa; }
+    footer { background: var(--dark); color: var(--white); text-align: center; padding: 2rem; }
+    footer a { color: var(--ocean-light); }
+  </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="hero">
+  <header>
+    <a class="logo" href="/praia-digital/">
+      <svg class="logo-icon" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="18" fill="#FFFFFF" fill-opacity="0.2"/><path d="M8 22 Q18 12 28 22" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none"/><path d="M6 26 Q18 16 30 26" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/><circle cx="26" cy="10" r="4" fill="#FFD700"/></svg>
+      Praia Digital
+    </a>
+    <nav>
+      <a href="/praia-digital/">Home</a>
+      <a href="/praia-digital/ia/">Central de IA</a>
+      <a href="/praia-digital/ia/ia-gestao.html">Gestão</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-inner">
       <h1>📋 IA para Gestão</h1>
-      <p>Dashboards inteligentes de vendas, captação, conversão e desempenho.</p>
-      <a class="cta" href="ia/ia-comercial.html">Usar agente</a>
+      <p>Dashboards inteligentes de vendas, captação, desempenho e resultados.</p>
+      <div class="hero-cta">
+        <a class="btn btn-purple" href="#dashboard">Abrir dashboard</a>
+        <a class="btn btn-amber" href="/praia-digital/ia/">Voltar para central</a>
+      </div>
     </div>
-    <div class="grid">
-      <div class="card"><h3>Vendas</h3><p>Evolução diária e por cidade.</p></div>
-      <div class="card"><h3>Captações</h3><p>Pipeline e origem por canal.</p></div>
-      <div class="card"><h3>Conversão</h3><p>Leads, visitas, propostas e fechamento.</p></div>
-      <div class="card"><h3>Tempo médio de venda</h3><p>Ciclo e estágios decisórios.</p></div>
-      <div class="card"><h3>Imóveis mais visualizados</h3><p>Ranking e atributos que engajam.</p></div>
-      <div class="card"><h3>Corretores top</h3><p>Produtividade e taxa de sucesso.</p></div>
-      <div class="card"><h3>Receita e comissão</h3><p>Receita e distribuição por equipe.</p></div>
-    </div>
-    <p style="margin-top:18px"><a href="/praia-digital/ia/">Voltar para hubs de IA</a> · <a href="https://acarolmourad-commits.github.io/praia-digital/" target="_blank">Abrir assistente IA</a></p>
   </div>
+
+  <div class="wrap" id="dashboard">
+    <div class="dashboard">
+      <h3 class="section-title">Dashboard resumo</h3>
+      <div class="kpis">
+        <div class="kpi"><div class="kpi-value">32</div><div class="kpi-label">Vendas no mês</div></div>
+        <div class="kpi"><div class="kpi-value">18</div><div class="kpi-label">Captações</div></div>
+        <div class="kpi"><div class="kpi-value">24%</div><div class="kpi-label">Conversão</div></div>
+        <div class="kpi"><div class="kpi-value">14d</div><div class="kpi-label">Tempo médio de venda</div></div>
+        <div class="kpi"><div class="kpi-value">R$ 1,23M</div><div class="kpi-label">Receita</div></div>
+      </div>
+
+      <h4 style="margin-bottom:.5rem">Desempenho por corretor</h4>
+      <div style="overflow-x:auto">
+        <table>
+          <thead><tr><th>Corretor</th><th>Vendas</th><th>Captações</th><th>Conversão</th><th>Receita</th><th>Comissão</th></tr></thead>
+          <tbody>
+            <tr><td>Ana</td><td>10</td><td>6</td><td>28%</td><td>R$ 420k</td><td>R$ 21k</td></tr>
+            <tr><td>Bruno</td><td>8</td><td>5</td><td>22%</td><td>R$ 360k</td><td>R$ 18k</td></tr>
+            <tr><td>Carlos</td><td>7</td><td>4</td><td>19%</td><td>R$ 300k</td><td>R$ 15k</td></tr>
+            <tr><td>Equipe</td><td>25</td><td>15</td><td>24%</td><td>R$ 1,08M</td><td>R$ 54k</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4 style="margin:1rem 0 .5rem">Atualizar dados</h4>
+      <div class="team-form">
+        <div class="field"><label>Vendas</label><input id="gVendas" type="number" placeholder="Ex: 30"></div>
+        <div class="field"><label>Captações</label><input id="gCaptacao" type="number" placeholder="Ex: 20"></div>
+        <div class="field"><label>Leads</label><input id="gLeads" type="number" placeholder="Ex: 120"></div>
+        <div class="field"><label>Receita (R$)</label><input id="gReceita" type="number" placeholder="Ex: 1000000"></div>
+      </div>
+      <button class="action-btn" onclick="updateDashboard()">Recalcular</button>
+      <div class="result" id="dashResult"></div>
+    </div>
+
+    <div style="margin-top: 1.5rem; display:flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+      <a class="btn btn-primary" href="/praia-digital/ia/">Voltar para central</a>
+      <a class="btn btn-primary" href="/praia-digital/">Home</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>Praia Digital · 1ª Plataforma Brasileira de Inteligência Imobiliária</p>
+    <p><a href="mailto:comercial@praia.digital">comercial@praia.digital</a> · <a href="tel:+5511954346288">(11) 95434-6288</a></p>
+  </footer>
+
+  <script>
+    const fmt = v => 'R$ ' + Number(v||0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0});
+    function updateDashboard(){
+      const vendas = Number(document.getElementById('gVendas').value||32);
+      const captacao = Number(document.getElementById('gCaptacao').value||18);
+      const leads = Number(document.getElementById('gLeads').value||120);
+      const receita = Number(document.getElementById('gReceita').value||1230000);
+      const conversao = leads ? (vendas/leads*100) : 0;
+      const ticket = vendas ? receita/vendas : 0;
+      const html = `
+        <div class="kpis">
+          <div class="kpi"><div class="kpi-value">${vendas}</div><div class="kpi-label">Vendas</div></div>
+          <div class="kpi"><div class="kpi-value">${captacao}</div><div class="kpi-label">Captações</div></div>
+          <div class="kpi"><div class="kpi-value">${conversao.toFixed(1)}%</div><div class="kpi-label">Conversão</div></div>
+          <div class="kpi"><div class="kpi-value">${fmt(ticket)}</div><div class="kpi-label">Ticket médio</div></div>
+          <div class="kpi"><div class="kpi-value">${fmt(receita)}</div><div class="kpi-label">Receita</div></div>
+        </div>`;
+      document.getElementById('dashResult').innerHTML = html;
+      document.getElementById('dashResult').classList.add('visible');
+    }
+  </script>
 </body>
 </html>
