@@ -79,6 +79,8 @@ def main():
     print(f'Operacao Vendas B2B — {TODAY}')
     for path in SCRIPTS:
         run(path)
+    print('\n>>> notificar_vendas_b2b.py')
+    run(NOTIFY_SCRIPT)
     print('\nConcluido.')
 
 
