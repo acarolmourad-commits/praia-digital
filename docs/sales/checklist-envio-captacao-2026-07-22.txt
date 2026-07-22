@@ -1,0 +1,16 @@
+Checklist de envio — Captação Digital — 2026-07-22
+============================================================
+Leads prontos: 8
+WhatsApp: 8
+E-mail: 8
+
+Arquivos gerados:
+- C:\Users\Carolina\praia-digital\docs\sales\csv-lotes-b2b\para-brevo-captacao-2026-07-22.csv
+- C:\Users\Carolina\praia-digital\docs\sales\csv-lotes-b2b\para-whatsapp-captacao-2026-07-22.csv
+- C:\Users\Carolina\praia-digital\docs\sales\checklist-envio-captacao-2026-07-22.txt
+
+CTAs padrão:
+- E-mail: comercial@praia.digital
+- WhatsApp: (11) 95434-6288
+
+Status do lote original: enviado_msg1
