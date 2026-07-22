@@ -16,6 +16,11 @@ OUT = BASE / 'docs' / 'sales' / f'relatorio-performance-b2b-{date.today().isofor
 lotes = {
     'Automacao': FOLDER / 'lote-b2b-automacao-2026-07-22.csv',
     'Captacao': FOLDER / 'lote-b2b-captacao-2026-07-22.csv',
+    'Solucao Proptech': FOLDER / 'lote-b2b-proptech-unificada-2026-07-22.csv',
+    'Descricao Imoveis': FOLDER / 'lote-b2b-descricao-2026-07-22.csv',
+    'SEO Local': FOLDER / 'lote-b2b-seo-local-2026-07-22.csv',
+    'Consultoria': FOLDER / 'lote-b2b-consultoria-2026-07-22.csv',
+    'Avaliacao Preco': FOLDER / 'lote-b2b-avaliacao-2026-07-22.csv',
 }
 
 resumo = []
