@@ -3,73 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Planos Proptech — Automação + Captação Digital | Praia Digital</title>
+  <title>Planos Proptech — Praia Digital</title>
   <style>
     :root{primary:#0a58ca;bg:#f8fafc;card:#fff;border:#e5e7eb;text:#0f172a;muted:#475569;success:#10b981;warn:#f59e0b;dark:#0b1220}
     *{box-sizing:border-box;margin:0;padding:0}
     body{font:14px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:linear-gradient(180deg,#eef2ff 0%,#fff 40%,#ffe4ec 100%);color:var(--text);padding:18px}
     .wrap{max-width:1200px;margin:0 auto}
-    .card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:18px;margin:14px 0;box-shadow:0 20px 35px rgba(0,0,0,.08)}
-    .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:10px}
-    .plan{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:18px;transition:transform .2s,box-shadow .2s}
-    .plan:hover{transform:translateY(-4px);box-shadow:0 8px 16px rgba(0,0,0,.12)}
-    .plan h3{margin:0 0 6px;font-size:16px;color:#0a58ca}
-    .plan .price{font-size:20px;font-weight:900;color:#0b1220}
-    .plan ul{padding-left:18px;margin:10px 0;font-size:13px;color:#334155}
-    .cta{display:inline-block;background:#0a58ca;color:#fff;padding:10px 14px;border-radius:12px;font-weight:700;text-decoration:none;margin-top:8px}
-    .note{color:#334155;font-size:12px;margin-top:8px}
+    .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:10px}
+    .item{background:#fff;border:1px solid var(--border);border-radius:14px;padding:14px}
+    .price{font:bold 18px system-ui;color:var(--dark);margin:6px 0}
+    .cta{background:#0a58ca;color:#fff;padding:10px 14px;border-radius:12px;display:inline-block;font-weight:700;text-decoration:none;margin-top:8px}
+    .disclaimer{color:#334155; font-size:12px; margin-top:10px;}
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="card">
-      <h1 style="font-size:20px;font-weight:900;margin:6px 0">Planos Proptech — Automação + Captação Digital</h1>
-      <p style="color:var(--muted);margin-top:6px">Pacotes alinhados ao momento de cada imobiliária.</p>
+      <h1 style="font-size:20px;font-weight:900;margin:6px 0">Planos Proptech</h1>
+      <p style="color:var(--muted);margin-top:6px">Pacotes modulares para imobiliárias do litoral de SP. Personalize conforme a sua operação.</p>
     </div>
 
-      <div class="plans">
-      <div class="plan">
-        <h3>Solução Proptech Unificada — Starter</h3>
-        <div class="price">R$ 890/mês</div>
+    <div class="plans">
+      <div class="item">
+        <h3>Transformação Digital — Starter</h3>
+        <div class="price">R$ 1.490/mês</div>
         <ul>
-          <li>Atendimento + Captação básica</li>
-          <li>1 cidade</li>
-          <li>Relatório mensal</li>
+          <li>Consultoria inicial</li>
+          <li>1 módulo à sua escolha</li>
+          <li>Setup básico</li>
         </ul>
-        <a class="cta" href="mailto:comercial@praia.digital?subject=Solu%C3%A7%C3%A3o%20Proptech%20Unificada%20%E2%80%93%20Starter">Assinar Starter</a>
-        <p class="note">Ideal para imobiliárias que querem começar.</p>
+        <a class="cta" href="mailto:comercial@praia.digital?subject=Consultoria%20Starter">Quero Starter</a>
       </div>
-
-      <div class="plan">
-        <h3>Solução Proptech Unificada — Professional</h3>
+      <div class="item" style="background:#fff;border:2px solid #0a58ca;border-radius:14px">
+        <h3>Proptech Unificada — Professional</h3>
         <div class="price">R$ 2.490/mês</div>
         <ul>
-          <li>Todos os módulos integrados</li>
-          <li>Até 5 cidades</li>
-          <li>CRM + Anúncios + E-mail</li>
-          <li>Relatório semanal</li>
+          <li>Atendimento + Captação + IA</li>
+          <li>Automação de e-mails e WhatsApp</li>
+          <li>Relatórios semanais</li>
         </ul>
-        <a class="cta" href="mailto:comercial@praia.digital?subject=Solu%C3%A7%C3%A3o%20Proptech%20Unificada%20%E2%80%93%20Professional">Assinar Professional</a>
-        <p class="note">Para imobiliárias em crescimento.</p>
+        <a class="cta" href="mailto:comercial@praia.digital?subject=Solu%C3%A7%C3%A3o%20Proptech%20Professional">Quero Professional</a>
       </div>
-
-      <div class="plan">
-        <h3>Solução Proptech Unificada — Enterprise</h3>
+      <div class="item">
+        <h3>Enterprise</h3>
         <div class="price">Sob consulta</div>
         <ul>
-          <li>White-label completo</li>
-          <li>Multiunidades</li>
-          <li>API + integrações</li>
+          <li>Plataforma completa</li>
+          <li>Integrações e API</li>
           <li>SLA e suporte dedicado</li>
         </ul>
-        <a class="cta" href="mailto:comercial@praia.digital?subject=Solu%C3%A7%C3%A3o%20Proptech%20Unificada%20%E2%80%93%20Enterprise">Falar com consultor</a>
-        <p class="note">Para redes e construtoras.</p>
+        <a class="cta" href="mailto:comercial@praia.digital?subject=Enterprise%20Proptech">Falar com consultor</a>
       </div>
     </div>
 
     <div class="card">
-      <h2 style="font-size:16px;font-weight:800;margin-bottom:8px">Próximo passo</h2>
-      <a class="cta" href="/praia-digital/servicos-ia-imobiliarias.html">Voltar para serviços</a>
+      <p class="disclaimer">Aceitamos agendas rápidas de 15 minutos para entender seu cenário atual.</p>
     </div>
   </div>
 </body>
