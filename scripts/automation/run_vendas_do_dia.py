@@ -53,7 +53,14 @@ CONSULTORIA = [
     BASE / 'scripts/automation/disparar_lote_consultoria.py',
 ]
 
-SCRIPTS = AUTOMACAO + CAPTACAO + PROPTECH + DESCRICAO + SEO_LOCAL + CONSULTORIA
+# Avaliacao de Preco de Imovel
+AVALIACAO = [
+    BASE / 'scripts/automation/sanitize_lote_avaliacao.py',
+    BASE / 'scripts/automation/agendar_followup_avaliacao.py',
+    BASE / 'scripts/automation/disparar_lote_avaliacao.py',
+]
+
+SCRIPTS = AUTOMACAO + CAPTACAO + PROPTECH + DESCRICAO + SEO_LOCAL + CONSULTORIA + AVALIACAO
 
 
 def run(path: Path):
