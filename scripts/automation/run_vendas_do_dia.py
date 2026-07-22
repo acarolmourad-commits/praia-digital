@@ -46,7 +46,14 @@ SEO_LOCAL = [
     BASE / 'scripts/automation/disparar_lote_seo_local.py',
 ]
 
-SCRIPTS = AUTOMACAO + CAPTACAO + PROPTECH + DESCRICAO + SEO_LOCAL
+# Consultoria de Transformação Digital
+CONSULTORIA = [
+    BASE / 'scripts/automation/sanitize_lote_consultoria.py',
+    BASE / 'scripts/automation/agendar_followup_consultoria.py',
+    BASE / 'scripts/automation/disparar_lote_consultoria.py',
+]
+
+SCRIPTS = AUTOMACAO + CAPTACAO + PROPTECH + DESCRICAO + SEO_LOCAL + CONSULTORIA
 
 
 def run(path: Path):
