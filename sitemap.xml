@@ -11079,4 +11079,14 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://acarolmourad-commits.github.io/praia-digital/docs/sales/csv-lotes-b2b/followup-pairs-automacao-2026-07-22.csv</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://acarolmourad-commits.github.io/praia-digital/docs/sales/csv-lotes-b2b/tracker-automacao-2026-07-22.csv</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
 </urlset>
