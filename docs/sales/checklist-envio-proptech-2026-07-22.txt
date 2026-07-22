@@ -1,0 +1,10 @@
+Checklist de envio — Solução Proptech — 2026-07-22
+============================================================
+Leads prontos: 8
+WhatsApp: 8
+E-mail: 8
+
+Arquivos:
+- docs\sales\csv-lotes-b2b\para-brevo-proptech-2026-07-22.csv
+- docs\sales\csv-lotes-b2b\para-whatsapp-proptech-2026-07-22.csv
+- docs\sales\checklist-envio-proptech-2026-07-22.txt
