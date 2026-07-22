@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lote — Automação para Imobiliárias | Praia Digital</title>
+  <style>
+    :root{primary:#0a58ca;bg:#f8fafc;card:#fff;border:#e5e7eb;text:#0f172a;muted:#475569}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font:14px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);padding:18px}
+    .wrap{max-width:1200px;margin:0 auto}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:18px;margin:14px 0}
+    table{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px}
+    th{background:#eef2ff;color:#0a58ca;text-align:left;padding:10px;border-bottom:1px solid #e5e7eb;font-weight:800}
+    td{padding:10px;border-bottom:1px solid #f1f5f9}
+    tr:hover td{background:#f8fafc}
+    .copy{background:#f8fafc;border:1px dashed #cbd5e1;border-radius:12px;padding:12px;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;white-space:pre-wrap;font-size:13px}
+    .tag{display:inline-block;padding:4px 8px;background:#ecfdf5;color:#047857;border-radius:999px;font-weight:700;font-size:11px;margin:2px}
+    .warn{background:#fffbeb;color:#b45309;border:1px solid #fde68a;padding:10px 12px;border-radius:12px;font-size:12px;margin-top:8px}
+    a{color:var(--primary)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Lote — Automação para Imobiliárias</h1>
+      <p style="color:var(--muted);">Base pronta para envio manual ou importação em ferramenta externa. SMTP ainda não configurado; use este inspetor para revisar antes de disparar.</p>
+      <div style="margin-top:8px">
+        <span class="tag">8 leads</span>
+        <span class="tag">Litoral SP</span>
+        <span class="tag">Manual/CSV</span>
+      </div>
+      <p class="warn">SMTP não configurado. Envio por CSV externo recomendado até ativação do backend.</p>
+    </div>
+
+    <div class="card">
+      <h2>Resumo por cidade</h2>
+      <table>
+        <tr><th>Cidade</th><th>Leads</th><th>Perfis</th><th>Responsável</th><th>Valor estimado</th></tr>
+        <tr><td>Santos</td><td>1</td><td>imobiliária</td><td>Bruno Silva</td><td>R$ 1.490</td></tr>
+        <tr><td>Guarujá</td><td>1</td><td>imobiliária</td><td>Ana Costa</td><td>R$ 1.490</td></tr>
+        <tr><td>Praia Grande</td><td>1</td><td>corretor</td><td>Carlos Pereira</td><td>R$ 499</td></tr>
+        <tr><td>Itanhaém</td><td>1</td><td>imobiliária</td><td>Mariana Dias</td><td>R$ 3.990</td></tr>
+        <tr><td>São Vicente</td><td>1</td><td>imobiliária</td><td>Rafael Souza</td><td>R$ 1.490</td></tr>
+        <tr><td>Mongaguá</td><td>1</td><td>corretor</td><td>Fernanda Lima</td><td>R$ 499</td></tr>
+        <tr><td>Peruíbe</td><td>1</td><td>imobiliária</td><td>Patrícia Rocha</td><td>R$ 1.490</td></tr>
+        <tr><td>Bertioga</td><td>1</td><td>corretor</td><td>Lucas Andrade</td><td>R$ 499</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Copy rápida — primeiro contato</h2>
+      <div class="copy">Olá {{nome}}, tudo bem?
+
+Automatizamos e-mails, atendimento e prospecção para imobiliárias em {{cidade}} — menos trabalho repetitivo, mais leads qualificados.
+
+Quer ver como funciona na prática?
+
+[Seu nome]
+Praia Digital
+comercial@praia.digital | (11) 95434-6288</div>
+    </div>
+
+    <div class="card">
+      <h2>Ações</h2>
+      <p><a style="color:#0a58ca;font-weight:700;" href="docs/sales/csv-lotes-b2b/lote-b2b-automacao-2026-07-22.csv">Baixar CSV do lote</a></p>
+      <p><a style="color:#0a58ca;font-weight:700;" href="/praia-digital/automacao-imobiliarias.html">Abrir landing</a></p>
+      <p><a style="color:#0a58ca;font-weight:700;" href="/praia-digital/outreach/template-automacao-imobiliarias-2026.html">Abrir template completo</a></p>
+    </div>
+  </div>
+</body>
+</html>
