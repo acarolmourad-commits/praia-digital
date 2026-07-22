@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automação para Imobiliárias com IA | Praia Digital</title>
+  <meta name="description" content="Automação de e-mails, atendimento e prospecção para imobiliárias do litoral de São Paulo com IA. Mais leads qualificados, menos trabalho repetitivo." />
+  <style>
+    :root {
+      --primary: #0a58ca;
+      --accent: #10b981;
+      --dark: #0b1220;
+      --surface: #ffffff;
+      --muted: #64748b;
+      --warn: #f59e0b;
+      --danger: #ef4444;
+      --radius: 16px;
+      --shadow: 0 20px 35px rgba(0,0,0,0.08);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, sans-serif;
+      background: linear-gradient(160deg, #f8fafc 0%, #eef2ff 50%, #ffe4ec 100%);
+      color: #0f172a;
+    }
+    .container { max-width: 1100px; margin: 0 auto; padding: 28px 24px; }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 12px;
+      background: #eef2ff; color: #0a58ca;
+      border: 1px solid #c7d2fe;
+      border-radius: 999px; font-weight: 600;
+    }
+    .badge.success { background: #ecfdf5; color: #047857; border-color: #a7f3d0; }
+    .badge.warn { background: #fffbeb; color: #b45309; border-color: #fde68a; }
+    h1 { font-size: clamp(28px, 3.4vw, 48px); line-height: 1.1; letter-spacing: -0.04em; }
+    h2 { font-size: clamp(22px, 2.2vw, 30px); letter-spacing: -0.03em; }
+    .hero { display: grid; grid-template-columns: 1fr; gap: 24px; padding: 24px 0; }
+    @media (min-width: 780px) { .hero { grid-template-columns: 1.1fr 0.9fr; } }
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px;
+    }
+    .pill { display: inline-block; padding: 4px 10px; background:#eef2ff; color:#0a58ca; border-radius:999px; font-size: 13px; font-weight: 700;}
+    .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    @media (min-width: 560px) { .stats { grid-template-columns: repeat(4, 1fr); } }
+    .stat { text-align: center; }
+    .stat strong { display: block; font-size: 22px; color: #0b1220; }
+    .stat span { color: var(--muted); font-size: 13px; }
+    .list { margin: 0; padding: 0; }
+    .list li {
+      display: grid; grid-template-columns: 20px 1fr; gap: 10px;
+      align-items: start; margin: 14px 0;
+      list-style: none;
+    }
+    .icon { width: 20px; height: 20px; margin-top: 1px; }
+    .modules { display: grid; grid-template-columns: 1fr; gap: 16px; }
+    @media (min-width: 720px) { .modules { grid-template-columns: repeat(3, 1fr); } }
+    .module { transition: transform .08s ease; }
+    .module:hover { transform: translateY(-3px); }
+    .module strong { display: block; margin-top: 8px; font-size: 16px; }
+    .module p { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
+    .cta {
+      display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: center;
+      margin-top: 18px;
+    }
+    .btn {
+      appearance: none; border: none; cursor: pointer;
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 14px 18px; border-radius: 999px;
+      font-weight: 800; font-size: 15px;
+      color: #fff; background: var(--primary);
+      box-shadow: 0 10px 20px rgba(10,88,202,0.25);
+      text-decoration: none;
+    }
+    .btn.secondary { background: #fff; color: #0b1220; border: 1px solid #e5e7eb; box-shadow: none; }
+    .btn.outline { background: transparent; color: #0b1220; border: 1.5px solid #0b1220; }
+    .faq { display: grid; gap: 12px; }
+    details {
+      background: var(--surface); border-radius: 12px; padding: 14px 16px;
+      border: 1px solid #e5e7eb;
+    }
+    summary { cursor: pointer; font-weight: 700; }
+    .disclaimer { color: var(--muted); font-size: 12px; }
+    footer { text-align: center; padding: 28px 20px; color: var(--muted); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="badge">Praia Digital</div>
+      <h1>Automação para imobiliárias <span style="color:#0a58ca">com IA</span></h1>
+      <p style="font-size:18px; color:#334155; max-width: 720px;">
+        Menos trabalho repetitivo. Mais leads qualificados.
+        Automatizamos e-mails, atendimento e prospecção para imobiliárias do litoral de SP — sem complicação, sem fricção.
+      </p>
+      <div class="stats">
+        <div class="stat"><strong>+35%</strong><span>Leads qualificados</span></div>
+        <div class="stat"><strong>-28%</strong><span>Tempo de atendimento</span></div>
+        <div class="stat"><strong>+19%</strong><span>Agendamentos</span></div>
+        <div class="stat"><strong>7 cidades</strong><span>Foco litoral SP</span></div>
+      </div>
+      <div class="cta">
+        <a class="btn" href="mailto:comercial@praia.digital?subject=Interesse%20em%20automa%C3%A7%C3%A3o%20para%20imobili%C3%A1rias%20%E2%80%93%20Praia%20Digital&body=Ol%C3%A1%2C%20tenho%20interesse%20em%20automa%C3%A7%C3%A3o%20para%20minha%20imobili%C3%A1ria.%0A%0ANome%3A%20%0AImobili%C3%A1ria%3A%20%0ACidade%3A%20%0ATelefone%2FWhatsApp%3A%20%0A%0AQuero%20receber%20a%20proposta.%20">Quero contratar</a>
+        <a class="btn outline" href="tel:+5511954346288">(11) 95434-6288</a>
+      </div>
+    </div>
+
+    <div style="margin-top:24px; display:grid; gap:18px;">
+      <div class="card">
+        <h2>O que resolve?</h2>
+        <ul class="list">
+          <li>
+            <svg class="icon" viewBox="0 0 20 20" fill="#10b981"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L7 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+            <div><strong>E-mails repetitivos fora do ritmo ideal</strong><br/>Follow-up frio, confirmação de visita e pós-visita não podem parar de acontecer — mesmo com pouco tempo. Automatizamos envios e respostas.</div>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 20 20" fill="#10b981"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L7 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+            <div><strong>Atendimento que não dorme</strong><br/>WhatsApp, e-mail e site: respondemos leads em minutos, 24h, com tom padronizado e no perfil da sua imobiliária.</div>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 20 20" fill="#10b981"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L7 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+            <div><strong>Prospecção sem depender de indicacao</strong><br/>Captação automática de leads qualificados no Google Maps, portais, redes e SEO local para imobiliárias do litoral paulista.</div>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 20 20" fill="#ef4444"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.5 5.5L9 12l-2.5-2.5 1-1L9 10l4.5-4.5 1 1z"/></svg>
+            <div><strong>Dados espalhados e sem acao</strong><br/>Sem CRM unificado, follow-up morre no WhatsApp. Nós conectamos captação → atendimento → agenda → resultado.</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div style="display:flex; flex-wrap:wrap; gap:8px;">
+          <span class="pill">Automação de e-mails</span>
+          <span class="pill">Atendimento 24h</span>
+          <span class="pill">Prospecção digital</span>
+          <span class="pill">Integração WhatsApp</span>
+          <span class="pill">CRM + agenda</span>
+          <span class="pill white">White-label</span>
+        </div>
+
+        <div class="modules" style="margin-top:18px;">
+          <div class="card module">
+            <div aria-hidden="true" style="width:34px;height:34px;border-radius:10px;background:#eef2ff;display:inline-flex;align-items:center;justify-content:center;font-weight:800;color:#0a58ca;">01</div>
+            <strong>Automação de e-mails</strong>
+            <p>Fluxos de follow-up, proposta, confirmação de visita, pós-venda e reativação com copy personalizada.</p>
+          </div>
+          <div class="card module">
+            <div aria-hidden="true" style="width:34px;height:34px;border-radius:10px;background:#ecfdf5;display:inline-flex;align-items:center;justify-content:center;font-weight:800;color:#047857;">02</div>
+            <strong>Atendimento automatizado</strong>
+            <p>Qualificação inicial, encaminhamento humano e respostas padronizadas no WhatsApp, chat e e-mail.</p>
+          </div>
+          <div class="card module">
+            <div aria-hidden="true" style="width:34px;height:34px;border-radius:10px;background:#fff7ed;display:inline-flex;align-items:center;justify-content:center;font-weight:800;color:#b45309;">03</div>
+            <strong>Prospecção + captação</strong>
+            <p>Geração e qualificação de leads locais para imobiliárias de Santos, Guarujá, PG, Itanhaém, São Vicente, Mongaguá, Peruíbe e Bertioga.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Resultados que importam</h2>
+        <ul class="list">
+          <li>
+            <svg class="icon" viewBox="0 0 20 20" fill="#10b981"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L7 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+            <div><strong>+35% leads qualificados</strong> em até 60 dias com prospecção digital contínua.</div>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 20 20" fill="#10b981"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L7 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+            <div><strong>-28% tempo gasto em atendimento sem valor agregado.</strong></div>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 20 20" fill="#10b981"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L7 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+            <div><strong>Follow-up profissional sem dependência de corretor individual.</strong></div>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 20 20" fill="#10b981"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L7 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+            <div><strong>Integração white-label</strong> com a marca da imobiliária.</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Perguntas frequentes</h2>
+        <div class="faq">
+          <details>
+            <summary>Funciona para pequenas imobiliárias?</summary>
+            <p style="color:#334155;">Sim. A automação reduz trabalho repetitivo e escala o atendimento sem aumentar equipe.</p>
+          </details>
+          <details>
+            <summary>Quais canais são automatizados?</summary>
+            <p style="color:#334155;">E-mail, WhatsApp Business, Instagram e site. O fluxo pode ser combinado e adaptado por cidade.</p>
+          </details>
+          <details>
+            <summary>Em quanto tempo entra no ar?</summary>
+            <p style="color:#334155;">Após briefing e conexão das bases, a maioria dos clientes roda piloto em até 7 dias.</p>
+          </details>
+          <details>
+            <summary>Essa solução é white-label?</summary>
+            <p style="color:#334155;">Sim, a identidade visual e comunicação podem ficar com a marca da imobiliária.</p>
+          </details>
+          <details>
+            <summary>Onde vocês atendem?</summary>
+            <p style="color:#334155;">Foco no litoral de São Paulo: Santos, Guarujá, Praia Grande, Itanhaém, São Vicente, Mongaguá, Peruíbe e Bertioga.</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Próximo passo</h2>
+        <p style="color:#334155; margin:6px 0 12px;">Fale com a equipe comercial e receba uma proposta personalizada para sua imobiliária.</p>
+        <div class="cta">
+          <a class="btn" href="mailto:comercial@praia.digital?subject=Interesse%20em%20automa%C3%A7%C3%A3o%20para%20imobili%C3%A1rias%20%E2%80%93%20Praia%20Digital&body=Ol%C3%A1%2C%20tenho%20interesse%20em%20automa%C3%A7%C3%A3o%20para%20minha%20imobili%C3%A1ria.%0A%0ANome%3A%20%0AImobili%C3%A1ria%3A%20%0ACidade%3A%20%0ATelefone%2FWhatsApp%3A%20%0A%0AQuero%20receber%20a%20proposta.%20">Falar com comercial</a>
+          <a class="btn outline" href="tel:+5511954346288">(11) 95434-6288</a>
+        </div>
+        <p class="disclaimer">Aceitamos agendas rápidas de 15 minutos para entender seu cenário atual.</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container" style="padding:0;">Praia Digital — Inteligência Imobiliária &copy;<span id="y"></span></div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
