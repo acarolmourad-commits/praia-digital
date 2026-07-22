@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proposta Personalizada — Automação para Imobiliárias | Praia Digital</title>
+  <style>
+    :root{primary:#0a58ca;bg:#f8fafc;card:#fff;border:#e5e7eb;text:#0f172a;muted:#475569;success:#10b981;warn:#f59e0b;dark:#0b1220}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font:14px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:linear-gradient(180deg,#eef2ff 0%,#fff 40%,#ffe4ec 100%);color:var(--text);padding:18px}
+    .wrap{max-width:1100px;margin:0 auto}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:18px;margin:14px 0;box-shadow:0 20px 35px rgba(0,0,0,.08)}
+    .grid-2{display:grid;grid-template-columns:1fr;gap:14px}
+    @media(min-width:860px){.grid-2{grid-template-columns:1fr 1.2fr}}
+    label{display:block;font-size:12px;font-weight:800;color:var(--text);margin-bottom:6px;letter-spacing:.04em;text-transform:uppercase}
+    input,select{width:100%;padding:12px 14px;border:2px solid #e5e7eb;border-radius:12px;font-size:14px;background:#fff;color:var(--text);outline:none;transition:border-color .2s}
+    input:focus,select:focus{border-color:#0a58ca}
+    .row{display:grid;gap:12px;margin-bottom:12px}
+    .col-2{grid-template-columns:1fr 1fr}
+    .col-3{grid-template-columns:repeat(3,1fr)}
+    .btn{appearance:none;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:999px;font-weight:800;font-size:15px;color:#fff;background:#0a58ca;box-shadow:0 10px 20px rgba(10,88,202,.25);text-decoration:none;width:100%}
+    .btn.secondary{background:#fff;color:#0b1220;border:1px solid #e5e7eb;box-shadow:none}
+    .preview{background:#0b1220;color:#e2e8f0;border-radius:14px;padding:16px;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;white-space:pre-wrap;font-size:13px;min-height:160px;max-height:500px;overflow:auto}
+    .badge{display:inline-block;padding:6px 10px;background:#eef2ff;color:#0a58ca;border-radius:999px;font-weight:800;font-size:12px;margin-right:6px}
+    .success{color:#047857;background:#ecfdf5;border:1px solid #a7f3d0;padding:10px 12px;border-radius:12px;font-size:13px;display:none}
+    .success.show{display:block}
+    .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
+    .plan{padding:12px;border:2px solid #e5e7eb;border-radius:14px;background:#fff;cursor:pointer;text-align:center;transition:all .15s}
+    .plan.active{border-color:#0a58ca;background:#eef2ff}
+    .plan strong{display:block;font-size:16px;color:#0b1220}
+    .plan span{font-size:12px;color:var(--muted)}
+    .headline{font-size:22px;font-weight:900;margin:6px 0}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <span class="badge">B2B</span>
+      <h1 class="headline">Proposta Personalizada — Automação para Imobiliárias</h1>
+      <p style="color:var(--muted);margin-top:6px">Preencha os dados do lead e gere uma proposta objetiva pronta para enviar.</p>
+      <div id="proposalSuccess" class="success">Proposta copiada!</div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h2 style="font-size:16px;font-weight:800;margin-bottom:12px">Dados do lead</h2>
+        <div class="row col-2">
+          <div>
+            <label>Nome</label>
+            <input id="leadNome" placeholder="Nome do responsável">
+          </div>
+          <div>
+            <label>Imobiliária</label>
+            <input id="leadImob" placeholder="Nome da imobiliária">
+          </div>
+        </div>
+        <div class="row col-2">
+          <div>
+            <label>Cidade</label>
+            <select id="leadCidade">
+              <option value="">Cidade</option>
+              <option>Santos</option><option>Guarujá</option><option>Praia Grande</option>
+              <option>Itanhaém</option><option>São Vicente</option><option>Mongaguá</option>
+              <option>Peruíbe</option><option>Bertioga</option>
+            </select>
+          </div>
+          <div>
+            <label>Perfil</label>
+            <select id="leadPerfil">
+              <option value="imobiliária">Imobiliária</option>
+              <option value="corretor">Corretor</option>
+              <option value="construtora">Construtora</option>
+              <option value="incorporadora">Incorporadora</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <label>Plano sugerido</label>
+          <select id="leadPlano">
+            <option>Starter</option><option selected>Professional</option><option>Enterprise</option>
+          </select>
+        </div>
+        <div class="plans" id="planChips">
+          <div class="plan" data-plan="Starter" onclick="selectPlan('Starter')"><strong>Starter</strong><span>R$ 499/mês</span></div>
+          <div class="plan active" data-plan="Professional" onclick="selectPlan('Professional')"><strong>Professional</strong><span>R$ 1.490/mês</span></div>
+          <div class="plan" data-plan="Enterprise" onclick="selectPlan('Enterprise')"><strong>Enterprise</strong><span>R$ 3.990/mês</span></div>
+        </div>
+
+        <div style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap">
+          <button class="btn" onclick="gerar()">Gerar proposta</button>
+          <button class="btn secondary" onclick="copiar()">Copiar texto</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 style="font-size:16px;font-weight:800;margin-bottom:12px">Pré-visualização</h2>
+        <div id="preview" class="preview">Preencha os dados para gerar a proposta.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 style="font-size:16px;font-weight:800;margin-bottom:10px">CTAs rápidos</h2>
+      <div style="display:flex;flex-wrap:wrap;gap:10px">
+        <a class="btn" style="width:auto" href="mailto:comercial@praia.digital?subject=Proposta%20personalizada%20-%20automa%C3%A7%C3%A3o%20para%20imobili%C3%A1rias">Enviar por e-mail</a>
+        <a class="btn secondary" style="width:auto;color:#0b1220;border:1px solid #e5e7eb;background:#fff" href="https://wa.me/5511954346288">WhatsApp</a>
+        <a class="btn secondary" style="width:auto;color:#0b1220;border:1px solid #e5e7eb;background:#fff" href="/praia-digital/automacao-imobiliarias.html">Landing</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function selectPlan(plano){
+      document.getElementById('leadPlano').value = plano;
+      document.querySelectorAll('.plan').forEach(p=> p.classList.toggle('active', p.dataset.plan === plano));
+    }
+    function fmt(){
+      const nome = document.getElementById('leadNome').value.trim().split(' ')[0] || '[Nome]';
+      const imob = document.getElementById('leadImob').value.trim() || '[Imobiliária]';
+      const cidade = document.getElementById('leadCidade').value || '[cidade]';
+      const perfil = document.getElementById('leadPerfil').value || 'imobiliária';
+      const plano = document.getElementById('leadPlano').value || 'Professional';
+      const beneficios = {
+        Starter: '1 agente, 500 interações/mês e suporte WhatsApp',
+        Professional: '5 agentes, 3.000 interações/mês, suporte prioritário e integração WhatsApp',
+        Enterprise: '14 agentes, 20.000 interações/mês, suporte dedicado, white label e APIs/integrações'
+      };
+      return `Olá ${nome}, tudo bem?
+
+Para a ${imob}, em ${cidade}, a solução de automação para imobiliárias da Praia Digital inclui:
+• automação de e-mails (follow-up, visita e pós-venda)
+• atendimento automatizado no WhatsApp e site
+• prospecção e captação de leads qualificados no litoral de SP
+
+Benefício específico no plano ${plano}: ${beneficios[plano]}.
+
+Quer que eu envie uma proposta objetiva para a operação da ${imob}?
+
+Abraço,
+Equipe Praia Digital
+comercial@praia.digital | (11) 95434-6288`;
+    }
+    function gerar(){
+      const el = document.getElementById('preview');
+      el.textContent = fmt();
+    }
+    function copiar(){
+      const txt = fmt();
+      navigator.clipboard.writeText(txt).then(()=>{
+        const ok = document.getElementById('proposalSuccess');
+        ok.classList.add('show');
+        setTimeout(()=> ok.classList.remove('show'), 2000);
+      });
+    }
+    document.getElementById('leadPlano').addEventListener('change', gerar);
+  </script>
+</body>
+</html>
