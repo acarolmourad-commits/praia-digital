@@ -40,7 +40,13 @@ DESCRICAO = [
     BASE / 'scripts/automation/disparar_lote_descricao.py',
 ]
 
-SCRIPTS = AUTOMACAO + CAPTACAO + PROPTECH + DESCRICAO
+# SEO Local
+SEO_LOCAL = [
+    BASE / 'scripts/automation/agendar_followup_seo_local.py',
+    BASE / 'scripts/automation/disparar_lote_seo_local.py',
+]
+
+SCRIPTS = AUTOMACAO + CAPTACAO + PROPTECH + DESCRICAO + SEO_LOCAL
 
 
 def run(path: Path):
