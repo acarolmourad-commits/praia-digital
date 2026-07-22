@@ -3,248 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Captação de Imóveis no Litoral — Sem Taxa | Praia Digital</title>
-  <meta name="description" content="Captação de imóveis no litoral paulista sem taxa para proprietários. Modelo sem taxa, contrato inteligente e divulgação completa em até 7 dias.">
-  <meta name="keywords" content="captação de imóveis litoral, captar imóveis sem taxa, captação imobiliária 2026, modelo captação imóveis, prospecção imóveis litoral, captar imóveis praia">
+  <title>Captação Digital para Imobiliárias — Litoral SP | Praia Digital</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', 'Segoe UI', system-ui, sans-serif; background: #0a0f1f; color: #e0e6f0; line-height: 1.7; }
-    .navbar {
-      background: rgba(255,255,255,0.03);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      padding: 1.2rem 0;
-      position: sticky; top: 0; z-index: 1000;
-    }
-    .nav-container {
-      max-width: 1300px; margin: 0 auto; padding: 0 2rem;
-      display: flex; justify-content: space-between; align-items: center;
-    }
-    .logo { font-size: 1.6rem; font-weight: 800; background: linear-gradient(135deg,#00d4ff,#00ff88); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    .nav-links a { color: #a0aec0; text-decoration: none; margin-left: 2rem; font-weight: 500; transition: all 0.3s; }
-    .nav-links a:hover { color: #00d4ff; }
-
-    .hero {
-      padding: 8rem 2rem 5rem;
-      text-align: center;
-      background: radial-gradient(ellipse at center top, rgba(0,212,255,0.15) 0%, transparent 65%);
-    }
-    .hero h1 { font-size: 3rem; font-weight: 800; background: linear-gradient(135deg,#fff,#00d4ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1.5rem; line-height: 1.15; }
-    .hero p { font-size: 1.25rem; color: #a0aec0; max-width: 750px; margin: 0 auto 3rem; }
-    .badge { display: inline-flex; align-items: center; background: rgba(255,193,7,0.15); border: 1px solid rgba(255,193,7,0.4); color: #ffc107; padding: 0.6rem 1.5rem; border-radius: 50px; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 2rem; }
-    .section { padding: 5rem 2rem; }
-    .container { max-width: 1300px; margin: 0 auto; }
-    .section-title { font-size: 2.5rem; font-weight: 800; text-align: center; margin-bottom: 1rem; background: linear-gradient(135deg,#00d4ff,#00ff88); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    .section-subtitle { text-align: center; color: #a0aec0; max-width: 700px; margin: 0 auto 4rem; font-size: 1.1rem; }
-
-    .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap: 2rem; }
-    .card {
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 20px;
-      padding: 2.5rem;
-      backdrop-filter: blur(10px);
-      transition: all 0.3s;
-    }
-    .card:hover { transform: translateY(-5px); border-color: rgba(0,212,255,0.3); box-shadow: 0 20px 50px rgba(0,212,255,0.1); }
-    .card-icon { font-size: 2.5rem; margin-bottom: 1rem; }
-    .card h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; color: #ffffff; }
-    .card ul { list-style: none; padding-left: 0; }
-    .card ul li { padding: 0.6rem 0; padding-left: 1.8rem; position: relative; color: #a0aec0; font-size: 0.95rem; }
-    .card ul li::before { content: "▹"; position: absolute; left: 0; color: #00d4ff; font-weight: bold; }
-
-    .highlight-box {
-      background: linear-gradient(135deg, rgba(0,212,255,0.08), rgba(0,255,136,0.08));
-      border: 2px solid rgba(0,212,255,0.2);
-      border-radius: 20px;
-      padding: 3rem;
-      margin: 2.5rem 0;
-    }
-
-    .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 2rem; margin: 3rem 0; }
-    .step { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 2rem; text-align: center; }
-    .step-number { background: linear-gradient(135deg,#00d4ff,#00ff88); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 3rem; font-weight: 800; }
-    .step h4 { color: #ffffff; margin: 0.8rem 0; font-size: 1.2rem; }
-    .step p { color: #a0aec0; font-size: 0.9rem; }
-
-    .cta-section {
-      background: linear-gradient(135deg, rgba(0,212,255,0.15), rgba(0,255,136,0.08));
-      border: 1px solid rgba(0,212,255,0.2);
-      border-radius: 20px;
-      padding: 4rem;
-      text-align: center;
-    }
-    .cta-section h2 { font-size: 2.5rem; font-weight: 800; color: #ffffff; margin-bottom: 1rem; }
-    .cta-section p { color: #a0aec0; max-width: 600px; margin: 0 auto 2rem; font-size: 1.1rem; }
-    .btn-primary {
-      display: inline-block;
-      background: linear-gradient(135deg,#00d4ff,#00ff88);
-      color: #0a0f1f;
-      font-weight: 700;
-      padding: 1.2rem 2.5rem;
-      border-radius: 50px;
-      text-decoration: none;
-      transition: all 0.3s;
-      box-shadow: 0 10px 30px rgba(0,212,255,0.3);
-    }
-    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(0,212,255,0.5); }
-
-    .footer { text-align: center; padding: 3rem 2rem; color: #6a7185; font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.05); }
-    .footer a { color: #a0aec0; text-decoration: none; margin: 0 0.8rem; }
-    .footer a:hover { color: #00d4ff; }
-
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 2rem; }
-      .section-title { font-size: 1.8rem; }
-    }
+    :root{primary:#0a58ca;bg:#f8fafc;card:#fff;border:#e5e7eb;text:#0f172a;muted:#475569;success:#10b981;warn:#f59e0b;dark:#0b1220}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font:14px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:linear-gradient(180deg,#eef2ff 0%,#fff 40%,#ffe4ec 100%);color:var(--text);padding:18px}
+    .wrap{max-width:1200px;margin:0 auto}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:18px;margin:14px 0;box-shadow:0 20px 35px rgba(0,0,0,.08)}
+    .cta{background:#0a58ca;color:#fff;padding:10px 14px;border-radius:12px;display:inline-block;font-weight:700;text-decoration:none;margin-top:8px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:10px}
+    .mini{background:#fff;border:1px solid var(--border);border-radius:14px;padding:12px}
+    .disclaimer{color:#334155; font-size:12px; margin-top:10px;}
   </style>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="logo">Praia Digital</div>
-      <div class="nav-links">
-        <a href="index.html">Início</a>
-        <a href="consorcio.html">Consórcio</a>
-        <a href="https://praia.digital">Ferramentas</a>
+  <div class="wrap">
+    <div class="card">
+      <h1 style="font-size:20px;font-weight:900;margin:6px 0">Captação Digital para Imobiliárias — Litoral SP</h1>
+      <p style="color:var(--muted);margin-top:6px">Propriedades qualificadas, anúncios com desempenho e captação previsível sem spam.</p>
+    </div>
+
+    <div class="card">
+      <h2 style="font-size:16px;font-weight:800;margin-bottom:8px">Pilares</h2>
+      <div class="grid">
+        <div class="mini"><strong>1.</strong> Anúncios direcionados por cidade e perfil</div>
+        <div class="mini"><strong>2.</strong> Formulários em landing própria com CRM</div>
+        <div class="mini"><strong>3.</strong> Resposta rápida por WhatsApp, e-mail e chat</div>
+        <div class="mini"><strong>4.</strong> Medição por imóvel, origem e follow-up</div>
       </div>
     </div>
-  </nav>
 
-  <header class="hero">
-    <div class="badge">🏆 Modelo Sem Taxa — Resultado Garantido</div>
-    <h1>Captação de Imóveis no Litoral<br>sem Taxa para Proprietários</h1>
-    <p>Captamos imóveis no litoral paulista com modelo sem taxa: você só paga quando o imóvel for vendido ou alugado. Divulgação completa em até 7 dias.</p>
-    <a href="#contato" class="btn-primary">Quero Captar Meu Imóvel</a>
-  </header>
-
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Por Que Nosso Modelo é Diferente</h2>
-      <p class="section-subtitle">Sem taxa de cadastro, sem custo upfront para o proprietário. Você ganha junto conosco.</p>
-
-      <div class="cards-grid">
-        <div class="card">
-          <div class="card-icon">🤝</div>
-          <h3>Sem Taxa de Cadastro</h3>
-          <p>Diferente de outras imobiliárias, não cobramos taxa do proprietário. Você só paga quando o imóvel for vendido ou alugado.</p>
-          <ul>
-            <li>Sem custo inicial</li>
-            <li>Sem risco para o proprietário</li>
-            <li>Alinhamento de interesses</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="card-icon">📢</div>
-          <h3>Divulgação Completa</h3>
-          <p>Cuide de toda a divulgação: fotos, vídeo, anúncios em portais, redes sociais e SEO local.</p>
-          <ul>
-            <li>Fotos profissionais</li>
-            <li>Vídeo profissional</li>
-            <li>Anúncios em portais</li>
-            <li>Redes sociais</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="card-icon">⚡</div>
-          <h3>Entrega em 7 Dias</h3>
-          <p>Do cadastro à publicação, tudo em até 7 dias. Sem burocracia, sem demora.</p>
-          <ul>
-            <li>Cadastro rápido</li>
-            <li>Publicação imediata</li>
-            <li>Relatório semanal</li>
-          </ul>
-        </div>
-      </div>
+    <div class="card">
+      <h2 style="font-size:16px;font-weight:800;margin-bottom:8px">CTAs</h2>
+      <a class="cta" href="mailto:comercial@praia.digital?subject=Capta%C3%A7%C3%A3o%20digital%20para%20imobili%C3%A1ria%20%E2%80%93%20Praia%20Digital">Falar com comercial</a>
+      <a class="cta" href="https://wa.me/5511954346288">WhatsApp</a>
     </div>
-  </section>
 
-  <section class="section" style="background: rgba(255,255,255,0.02);">
-    <div class="container">
-      <h2 class="section-title">Como Funciona</h2>
-      <p class="section-subtitle">Processo simples em 4 passos para proprietários e corretores.</p>
-
-      <div class="steps-grid">
-        <div class="step">
-          <div class="step-number">1</div>
-          <h4>Contato</h4>
-          <p>Proprietário entra em contato pelo site ou WhatsApp</p>
-        </div>
-        <div class="step">
-          <div class="step-number">2</div>
-          <h4>Cadastro</h4>
-          <p>Enviamos fotos/vídeo ou agendamos visita para ensaio</p>
-        </div>
-        <div class="step">
-          <div class="step-number">3</div>
-          <h4>Divulgação</h4>
-          <p>Publicamos em portais, redes sociais e SEO local</p>
-        </div>
-        <div class="step">
-          <div class="step-number">4</div>
-          <h4>Fechamento</h4>
-          <p>Tratamos com interessados e fechamos venda/locação</p>
-        </div>
-      </div>
+    <div class="card">
+      <h2 style="font-size:16px;font-weight:800;margin-bottom:8px">Próximo passo</h2>
+      <p style="color:#334155; margin:6px 0 12px;">Receba uma proposta personalizada para sua imobiliária.</p>
+      <p class="disclaimer">Aceitamos agendas rápidas de 15 minutos para entender seu cenário atual.</p>
     </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Vantagens para Corretores</h2>
-      <p class="section-subtitle">Se você é corretor, use nosso modelo para captar mais imóveis sem investir nada.</p>
-
-      <div class="cards-grid">
-        <div class="card">
-          <div class="card-icon">🏠</div>
-          <h3>Mais Imóveis na Carteira</h3>
-          <p>Com modelo sem taxa, proprietários aceitam mais facilmente. Aumente seu portfólio sem custo.</p>
-          <p class="small">Exemplos: Riviera de São Lourenço, Gonzaga, Boqueirão, Enseada, Ocian e Guaratuba.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">📈</div>
-          <h3>Vendas Mais Rápidas</h3>
-          <p>Com divulgação profissional, imóveis vendem até 2x mais rápido.</p>
-          <p class="small">Médias por bairro: diária Airbnb, ocupação e valorização atualizada.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">💰</div>
-          <h3>Receita Compartilhada</h3>
-          <p>Ganhe comissão sobre cada venda ou locação sem investir em captação.</p>
-          <p class="small">Cases parceiros: Santos, Guarujá, São Vicente, Praia Grande e Bertioga.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="contato">
-    <div class="container">
-      <div class="cta-section">
-        <h2>Pronto para Captar seu Imóvel?</h2>
-        <p>Solicite um orçamento gratuito e sem compromisso. Divulgamos seu imóvel no litoral paulista em até 7 dias.</p>
-        <a href="mailto:comercial@praia.digital?subject=Captação%20de%20Imóvel" class="btn-primary">Solicitar Captação Grátis</a>
-        <p style="margin-top:1.5rem;font-size:0.9rem;">📞 (11) 95434-6288 | comercial@praia.digital</p>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <p>© 2026 Praia Digital — Captação de Imóveis no Litoral Paulista</p>
-    <p style="margin-top:0.5rem;">
-      <a href="index.html">Início</a> |
-      <a href="consorcio.html">Consórcio</a> |
-      <a href="https://praia.digital">Ferramentas</a> |
-      <a href="mailto:comercial@praia.digital">Contato</a>
-    </p>
-  </footer>
-
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
-      });
-    });
-  </script>
+  </div>
 </body>
 </html>
