@@ -89,9 +89,15 @@
   <script>
     const chatWindow = document.getElementById('chatWindow');
     const input = document.getElementById('chatInput');
-    const BACKEND_URL = 'https://praia-digital-backend.vercel.app'; // troque quando deployar o backend
+    const DEFAULT_BACKEND_URLS = [
+      'https://api.praia.digital',
+      'https://praia-digital-backend.vercel.app',
+      'https://praia-digital.netlify.app',
+      ''
+    ];
+    const BACKEND_URL = (window.location.hostname === 'acarolmourad-commits.github.io' ? 'https://api.praia.digital' : '') || DEFAULT_BACKEND_URLS[0];
 
-    async function detectBackend(){
+    function detectBackend() {
       try {
         const res = await fetch(BACKEND_URL + '/');
         if (!res.ok) throw new Error('no');
@@ -101,6 +107,25 @@
       }
     }
     detectBackend();
+
+    function guessLocalAgent(text) {
+      const lower = text.toLowerCase();
+      if (/marketing|anúncio|facebook|instagram|tiktok|linkedin|google ads|meta ads|campanha|carrossel|legenda|hashtag/.test(lower)) return 'ia-marketing.html';
+      if (/avali|imóvel|preço|valor|apartamento|casa|cobertura/.test(lower)) return 'ia-avaliacao.html';
+      if (/capta|captar|lead|cadastro/.test(lower)) return 'ia-captacao.html';
+      if (/jurídico|contrato|distrato|procura|documento|prop/.test(lower)) return 'ia-juridica.html';
+      if (/temporada|diária|airbnb|booking|vrbo|stays|anfitri/.test(lower)) return 'ia-temporada.html';
+      if (/invest|roi|cap rate|receita|fluxo/.test(lower)) return 'ia-investidores.html';
+      if (/portal|seo|anúncio|descri/.test(lower)) return 'ia-portais.html';
+      if (/gest|métrica|convers|vendas/.test(lower)) return 'ia-gestao.html';
+      if (/atend|suporte|cliente|resposta/.test(lower)) return 'ia-atendimento.html';
+      if (/conteúdo|post|roteiro|publica/.test(lower)) return 'ia-conteudo.html';
+      if (/mercado|tend|previs|demanda/.test(lower)) return 'ia-mercado.html';
+      if (/imagens|foto|imagem|retoc|midjourney|dall-e/.test(lower)) return 'ia-imagens.html';
+      if (/vídeo|shorts|reels|youtube|edita/.test(lower)) return 'ia-videos.html';
+      if (/comercial|imobili|venda|compra|corretor|vistoria|documento/.test(lower)) return 'ia-comercial.html';
+      return '';
+    }
 
     function addMsg(text, sender) {
       const div = document.createElement('div');
@@ -117,6 +142,20 @@
     async function sendChat() {
       const text = input.value.trim();
       if (!text) return;
+
+      const localAgent = guessLocalAgent(text);
+
+      if (window.location.hostname.includes('github.io')) {
+        if (localAgent) {
+          const target = '/praia-digital/' + localAgent;
+          window.open(target, '_blank');
+          addMsg(`Abrindo agente direto para você: ${target}`, 'bot');
+        } else {
+          addMsg('Posso ajudar com assuntos de marketing, jurídico, avaliação, captação, temporada e mais. Escreva uma dessas palavras-chave para eu abrir o agente certo.', 'bot');
+        }
+        return;
+      }
+
       addMsg(text, 'user');
       input.value = '';
 
