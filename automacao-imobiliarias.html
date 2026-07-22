@@ -243,16 +243,14 @@
         const imob = document.getElementById('automacaoImob').value.trim();
         const cidade = document.getElementById('automacaoCidade').value.trim();
         const fone = document.getElementById('automacaoFone').value.trim();
+        if (!nome || !imob || !cidade || !fone) {
+          if (feedback) { feedback.style.display='block'; feedback.style.color='#b91c1c'; feedback.textContent='Preencha todos os campos.'; }
+          return;
+        }
         const subject = encodeURIComponent('Automação para imobiliárias - Praia Digital');
         const body = encodeURIComponent(`Nome: ${nome}\nImobiliária: ${imob}\nCidade: ${cidade}\nTelefone: ${fone}\n`);
         window.location.href = `mailto:comercial@praia.digital?subject=${subject}&body=${body}`;
-        try {
-          const endpoint = '/praia-digital/backend/api/leads/automacao.js';
-          const res = await fetch(endpoint, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({nome,telefone:fone,cidade,perfil:'imobiliaria',plano:'Professional',servico:'automacao',email:'comercial@praia.digital'}) });
-          if (res.ok && feedback) { feedback.style.display='block'; feedback.textContent='Interesse registrado! Abra seu e-mail para enviar.'; }
-        } catch {
-          if (feedback) { feedback.style.display='block'; feedback.textContent='Interesse registrado! Abra seu e-mail para enviar.'; }
-        }
+        if (feedback) { feedback.style.display='block'; feedback.style.color='#047857'; feedback.textContent='Interesse registrado! Abra seu e-mail para enviar.'; }
       });
     })();
   </script>
