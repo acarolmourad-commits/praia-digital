@@ -1,9 +1,9 @@
 Lote;Nome;Telefone;Cidade;Data_Msg1;Status;Resposta;Valor_Estimado;Obs;Acao_Conversao;Msg1;Msg2;Msg3;Email;Imobiliaria
-captacao;Bruno Silva;(11) 99430-7129;Santos;2026-07-22;pendente_msg1;;R$ 1.490;Perfil: captacao | Servico alvo: captacao imoveis + CRM + anuncios;;;;;Bruno Silva Santos
-captacao;Ana Costa;(13) 91866-2876;Guarujá;2026-07-22;pendente_msg1;;R$ 1.490;Perfil: captacao | Servico alvo: captacao imoveis + CRM + anuncios;;;;;Ana Costa Guarujá
-captacao;Carlos Pereira;(13) 99100-1234;Praia Grande;2026-07-22;pendente_msg1;;R$ 1.490;Perfil: captacao | Servico alvo: captacao imoveis + CRM + anuncios;;;;;Carlos Pereira Praia Grande
-captacao;Mariana Dias;(12) 99200-5678;Itanhaém;2026-07-22;pendente_msg1;;R$ 1.490;Perfil: captacao | Servico alvo: captacao imoveis + CRM + anuncios;;;;;Mariana Dias Itanhaém
-captacao;Rafael Souza;(13) 98205-5018;São Vicente;2026-07-22;pendente_msg1;;R$ 1.490;Perfil: captacao | Servico alvo: captacao imoveis + CRM + anuncios;;;;;Rafael Souza São Vicente
-captacao;Fernanda Lima;(13) 91022-3344;Mongaguá;2026-07-22;pendente_msg1;;R$ 1.490;Perfil: captacao | Servico alvo: captacao imoveis + CRM + anuncios;;;;;Fernanda Lima Mongaguá
-captacao;Patrícia Rocha;(13) 97788-1122;Peruíbe;2026-07-22;pendente_msg1;;R$ 1.490;Perfil: captacao | Servico alvo: captacao imoveis + CRM + anuncios;;;;;Patrícia Rocha Peruíbe
-captacao;Lucas Andrade;(11) 91234-5678;Bertioga;2026-07-22;pendente_msg1;;R$ 1.490;Perfil: captacao | Servico alvo: captacao imoveis + CRM + anuncios;;;;;Lucas Andrade Bertioga
+captacao;Bruno Silva;(11) 99430-7129;Santos;2026-07-22;enviado_msg1;;R$ 1.490;Perfil: captacao | Servico alvo: captacao imoveis + CRM + anuncios;;;;;Bruno Silva Santos;
+captacao;Ana Costa;(13) 91866-2876;Guarujá;2026-07-22;enviado_msg1;;R$ 1.490;Perfil: captacao | Servico alvo: captacao imoveis + CRM + anuncios;;;;;Ana Costa Guarujá;
+captacao;Carlos Pereira;(13) 99100-1234;Praia Grande;2026-07-22;enviado_msg1;;R$ 1.490;Perfil: captacao | Servico alvo: captacao imoveis + CRM + anuncios;;;;;Carlos Pereira Praia Grande;
+captacao;Mariana Dias;(12) 99200-5678;Itanhaém;2026-07-22;enviado_msg1;;R$ 1.490;Perfil: captacao | Servico alvo: captacao imoveis + CRM + anuncios;;;;;Mariana Dias Itanhaém;
+captacao;Rafael Souza;(13) 98205-5018;São Vicente;2026-07-22;enviado_msg1;;R$ 1.490;Perfil: captacao | Servico alvo: captacao imoveis + CRM + anuncios;;;;;Rafael Souza São Vicente;
+captacao;Fernanda Lima;(13) 91022-3344;Mongaguá;2026-07-22;enviado_msg1;;R$ 1.490;Perfil: captacao | Servico alvo: captacao imoveis + CRM + anuncios;;;;;Fernanda Lima Mongaguá;
+captacao;Patrícia Rocha;(13) 97788-1122;Peruíbe;2026-07-22;enviado_msg1;;R$ 1.490;Perfil: captacao | Servico alvo: captacao imoveis + CRM + anuncios;;;;;Patrícia Rocha Peruíbe;
+captacao;Lucas Andrade;(11) 91234-5678;Bertioga;2026-07-22;enviado_msg1;;R$ 1.490;Perfil: captacao | Servico alvo: captacao imoveis + CRM + anuncios;;;;;Lucas Andrade Bertioga;
