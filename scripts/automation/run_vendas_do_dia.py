@@ -29,9 +29,18 @@ CAPTACAO = [
 ]
 
 # Solucao Proptech Unificada
-PROPTECH = []
+PROPTECH = [
+    BASE / 'scripts/automation/sanitize_lote_proptech.py',
+    BASE / 'scripts/automation/agendar_followup_proptech.py',
+]
 
-SCRIPTS = AUTOMACAO + CAPTACAO + PROPTECH
+# Geracao de Descricao de Imoveis com IA
+DESCRICAO = [
+    BASE / 'scripts/automation/agendar_followup_descricao.py',
+    BASE / 'scripts/automation/disparar_lote_descricao.py',
+]
+
+SCRIPTS = AUTOMACAO + CAPTACAO + PROPTECH + DESCRICAO
 
 
 def run(path: Path):
