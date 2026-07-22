@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exportação Pronta — Automação B2B — 2026-07-22</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#f8fafc;color:#0f172a;padding:24px}
+    .wrap{max-width:900px;margin:0 auto}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:18px;margin:14px 0;box-shadow:0 20px 35px rgba(0,0,0,.08)}
+    .muted{color:#475569;font-size:13px}
+    .ok{color:#047857;font-weight:700}
+    .warn{color:#b45309;font-weight:700}
+    .section{margin-top:14px}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1 style="font-size:20px;font-weight:900;margin:6px 0">Exportação Pronta — Automação B2B</h1>
+    <p class="muted">Use este guia para enviar os lotes prontos nas ferramentas externas.</p>
+  </div>
+
+  <div class="card section">
+    <h2 style="font-size:16px;font-weight:800;margin-bottom:8px">1. E-mail — Brevo</h2>
+    <p>Arquivo: <code>docs/sales/csv-lotes-b2b/para-brevo-automacao-2026-07-22.csv</code></p>
+    <p>Colunas: <span class="ok">nome, email, telefone, cidade, imobiliaria</span></p>
+    <p>Quantidade: <span class="ok">8 leads</span></p>
+    <p class="muted">Importar no Brevo, selecionar lista/segmento e agendar envio para 09:00–11:00.</p>
+  </div>
+
+  <div class="card section">
+    <h2 style="font-size:16px;font-weight:800;margin-bottom:8px">2. WhatsApp</h2>
+    <p>Arquivo: <code>docs/sales/csv-lotes-b2b/para-whatsapp-automacao-2026-07-22.csv</code></p>
+    <p>Colunas: <span class="ok">nome, telefone, cidade, imobiliaria, msg1</span></p>
+    <p>Quantidade: <span class="ok">8 leads</span></p>
+    <p class="muted">Importar na ferramenta de WhatsApp, validar números e agendar envio sequencial.</p>
+  </div>
+
+  <div class="card section">
+    <h2 style="font-size:16px;font-weight:800;margin-bottom:8px">3. Acompanhar tracker</h2>
+    <p>Arquivo: <code>docs/sales/csv-lotes-b2b/tracker-automacao-2026-07-22.csv</code></p>
+    <p class="muted">Após envio, atualize <strong>Status</strong> e <strong>Resposta</strong> conforme leads respondem.</p>
+  </div>
+
+  <div class="card section">
+    <h2 style="font-size:16px;font-weight:800;margin-bottom:8px">4. Medir resultado</h2>
+    <p class="muted">Rodar <code>python scripts/automation/relatorio_performance_b2b.py</code> e revisar taxa de resposta.</p>
+  </div>
+
+  <div class="card section">
+    <h2 style="font-size:16px;font-weight:800;margin-bottom:8px">Contato comercial</h2>
+    <p class="muted">E-mail: <a href="mailto:comercial@praia.digital">comercial@praia.digital</a> · WhatsApp: <a href="tel:+5511954346288">(11) 95434-6288</a></p>
+  </div>
+</div>
+</body>
+</html>

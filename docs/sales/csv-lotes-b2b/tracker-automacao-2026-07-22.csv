@@ -1,9 +1,9 @@
-id;nome;imobiliaria;telefone;cidade;q1_em;q2_em;q3_em;status;servico
-automacao-(11)99430-7129;Bruno Silva;Bruno Silva Santos;(11) 99430-7129;Santos;2026-07-22T09:00:00;2026-07-24T09:00:00;2026-07-27T09:00:00;pendente_q1;automacao
-automacao-(13)91866-2876;Ana Costa;Ana Costa Guarujá;(13) 91866-2876;Guarujá;2026-07-22T09:00:00;2026-07-24T09:00:00;2026-07-27T09:00:00;pendente_q1;automacao
-automacao-(13)99100-1234;Carlos Pereira;Carlos Pereira Praia Grande;(13) 99100-1234;Praia Grande;2026-07-22T09:00:00;2026-07-24T09:00:00;2026-07-27T09:00:00;pendente_q1;automacao
-automacao-(12)99200-5678;Mariana Dias;Mariana Dias Itanhaém;(12) 99200-5678;Itanhaém;2026-07-22T09:00:00;2026-07-24T09:00:00;2026-07-27T09:00:00;pendente_q1;automacao
-automacao-(13)98205-5018;Rafael Souza;Rafael Souza São Vicente;(13) 98205-5018;São Vicente;2026-07-22T09:00:00;2026-07-24T09:00:00;2026-07-27T09:00:00;pendente_q1;automacao
-automacao-(13)91022-3344;Fernanda Lima;Fernanda Lima Mongaguá;(13) 91022-3344;Mongaguá;2026-07-22T09:00:00;2026-07-24T09:00:00;2026-07-27T09:00:00;pendente_q1;automacao
-automacao-(13)97788-1122;Patrícia Rocha;Patrícia Rocha Peruíbe;(13) 97788-1122;Peruíbe;2026-07-22T09:00:00;2026-07-24T09:00:00;2026-07-27T09:00:00;pendente_q1;automacao
-automacao-(11)91234-5678;Lucas Andrade;Lucas Andrade Bertioga;(11) 91234-5678;Bertioga;2026-07-22T09:00:00;2026-07-24T09:00:00;2026-07-27T09:00:00;pendente_q1;automacao
+Lote;Nome;Telefone;Cidade;Data_Msg1;Status;Resposta;Valor_Estimado;Obs;Acao_Conversao;Msg1;Msg2;Msg3;Email;Imobiliaria
+;;;;;pendente_msg1;;;;;;;;;
+;;;;;pendente_msg1;;;;;;;;;
+;;;;;pendente_msg1;;;;;;;;;
+;;;;;pendente_msg1;;;;;;;;;
+;;;;;pendente_msg1;;;;;;;;;
+;;;;;pendente_msg1;;;;;;;;;
+;;;;;pendente_msg1;;;;;;;;;
+;;;;;pendente_msg1;;;;;;;;;
