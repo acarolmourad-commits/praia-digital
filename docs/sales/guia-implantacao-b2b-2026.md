@@ -10,6 +10,19 @@
 - `consultoria-transformacao-digital-imobiliarias.html` — Consultoria de Transformação Digital
 - `avaliacao-preco-imoveis.html` — Avaliação de Preço com IA
 
+## 📦 Artefatos B2B Criados
+- `outreach/template-<servico>-2026.html` — cold outreach por serviço (7 templates)
+- `outreach/roteiro-reels-shorts-<servico>-2026.html` — roteiros curtos (7 arquivos)
+- `outreach/notificacao-b2b-pronta-2026-07-22.html` — modelo de notificação consolidada
+- `faq-<servico>-2026.html` — FAQs por serviço (7 arquivos)
+- `docs/sales/verificacao-integridade-b2b-2026-07-22.html`
+- `docs/sales/checklist-seo-tecnico-b2b-2026-07-22.html`
+- `docs/sales/checklist-lancamento-piloto-automacao-2026-07-22.html`
+- `proposta-comercial-padrao-2026.html`
+- `scripts/automation/add_canonical_and_description.py`
+- `scripts/automation/integrate_faqs.py`
+- `scripts/automation/notificar_vendas_b2b.py`
+
 ## 📊 Estrutura de Arquivos por Serviço
 Cada serviço B2B inclui:
 - `lote-b2b-<servico>-2026-07-22.csv` — Leads validados
