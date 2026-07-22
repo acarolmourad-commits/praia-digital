@@ -17,6 +17,7 @@ SCRIPTS = [
     BASE / 'scripts/automation/agendar_followup_automacao.py',
     BASE / 'scripts/automation/relatorio_diario_automacao.py',
     BASE / 'scripts/automation/notificar_automacao.py',
+    BASE / 'scripts/automation/disparar_lote_automacao.py',
 ]
 
 
