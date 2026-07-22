@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checklist Lançamento Piloto — Captação Digital — Praia Digital</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#f8fafc;color:#0f172a;padding:24px}
+    .wrap{max-width:900px;margin:0 auto}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:20px;margin:14px 0;box-shadow:0 20px 35px rgba(0,0,0,.08)}
+    .muted{color:#475569;font-size:13px}
+    .check{width:18px;height:18px;margin-right:8px;accent-color:#0a58ca}
+    .done{color:#047857;font-weight:700}
+    .section{margin-top:16px}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1 style="font-size:20px;font-weight:900;margin:6px 0">Checklist Lançamento Piloto — Captação Digital</h1>
+    <p class="muted">Objetivo: colocar o serviço de Captação em produção em até 3 dias, com envio, acompanhamento e primeira métrica de conversão.</p>
+  </div>
+
+  <div class="card section">
+    <h2 style="font-size:16px;font-weight:800;margin-bottom:8px">Dia 1 — Preparar e enviar</h2>
+    <label><input type="checkbox" class="check"> <strong>Importar `para-brevo-captacao-2026-07-22.csv</strong> no Brevo e validar colunas (nome, e-mail, telefone, cidade).</label><br/>
+    <label><input type="checkbox" class="check"> <strong>Importar `para-whatsapp-captacao-2026-07-22.csv</strong> na ferramenta de WhatsApp e validar números.</label><br/>
+    <label><input type="checkbox" class="check"> <strong>Agendar disparo</strong> para 09:00–11:00, com template HTML do outreach.</label><br/>
+    <label><input type="checkbox" class="check"> <strong>Confirmar entrega</strong> no Brevo/WhatsApp e salvar prints.</label><br/>
+  </div>
+
+  <div class="card section">
+    <h2 style="font-size:16px;font-weight:800;margin-bottom:8px">Dia 2 — Acompanhar respostas</h2>
+    <label><input type="checkbox" class="check"> <strong>Abrir tracker</strong> `docs/sales/csv-lotes-b2b/tracker-captacao-2026-07-22.csv` e marcar respostas.</label><br/>
+    <label><input type="checkbox" class="check"> <strong>Registrar status</strong> dos leads: `respondido`, `interessado`, `agendado`, `fechado`.</label><br/>
+    <label><input type="checkbox" class="check"> <strong>Responder em até 2h</strong> qualquer mensagem; usar o template de follow-up.</label><br/>
+  </div>
+
+  <div class="card section">
+    <h2 style="font-size:16px;font-weight:800;margin-bottom:8px">Dia 3 — Medir e planejar</h2>
+    <label><input type="checkbox" class="check"> <strong>Rodar `python scripts/automation/relatorio_performance_b2b.py`</strong> para ver métricas do Captação.</label><br/>
+    <label><input type="checkbox" class="check"> <strong>Calcular taxa de resposta</strong>: respostas / leads enviados.</label><br/>
+    <label><input type="checkbox" class="check"> <strong>Definir próximos passos</strong>: ampliar lote ou ajustar copy/timing.</label><br/>
+  </div>
+
+  <div class="card section">
+    <h2 style="font-size:16px;font-weight:800;margin-bottom:8px">Arquivos importantes</h2>
+    <p class="muted">Landing: <code>captacao-imoveis-litoral.html</code><br/>Trackers: <code>docs/sales/csv-lotes-b2b/tracker-captacao-2026-07-22.csv</code><br/>Templates: <code>outreach/template-captacao-imoveis-litoral-2026.html</code><br/>Scripts: <code>scripts/automation/run_vendas_do_dia.py</code></p>
+  </div>
+
+  <div class="card section">
+    <h2 style="font-size:16px;font-weight:800;margin-bottom:8px">Contato comercial</h2>
+    <p class="muted">E-mail: <a href="mailto:comercial@praia.digital">comercial@praia.digital</a> · WhatsApp: <a href="tel:+5511954346288">(11) 95434-6288</a></p>
+  </div>
+</div>
+</body>
+</html>
