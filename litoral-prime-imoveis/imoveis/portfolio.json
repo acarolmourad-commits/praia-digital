@@ -1,0 +1,10 @@
+[
+  {"id":1,"titulo":"Apto 2qtos Santos","cidade":"Santos","bairro":"Gonzaga","preco":450000,"tipo":"venda","imagem":"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600"},
+  {"id":2,"titulo":"Casa Guarujá","cidade":"Guarujá","bairro":"Enseada","preco":520000,"tipo":"venda","imagem":"https://images.unsplash.com/photo-1502005229766-5283522679e6?w=600"},
+  {"id":3,"titulo":"Flat Praia Grande","cidade":"Praia Grande","bairro":"Boqueirão","preco":280000,"tipo":"venda","imagem":"https://images.unsplash.com/photo-1493809842364-78817add7e5b?w=600"},
+  {"id":4,"titulo":"Apto 1quarto Bertioga","cidade":"Bertioga","bairro":"Centro","preco":210000,"tipo":"venda","imagem":"https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600"},
+  {"id":5,"titulo":"Casa Itanhaém","cidade":"Itanhaém","bairro":"Jardim Suarão","preco":390000,"tipo":"venda","imagem":"https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600"},
+  {"id":6,"titulo":"Apto São Vicente","cidade":"São Vicente","bairro":"Centro","preco":310000,"tipo":"venda","imagem":"https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600"},
+  {"id":7,"titulo":"Flat Mongaguá","cidade":"Mongaguá","bairro":"Agenor de Campos","preco":195000,"tipo":"venda","imagem":"https://images.unsplash.com/photo-1502005229766-5283522679e6?w=600"},
+  {"id":8,"titulo":"Casa Peruíbe","cidade":"Peruíbe","bairro":"Centro","preco":460000,"tipo":"venda","imagem":"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600"}
+]
