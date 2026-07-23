@@ -54,16 +54,34 @@ CONSULTORIA = [
 ]
 
 # Avaliacao de Preco de Imovel
+
+# Prospecção 360º
+PROSPECCAO = [
+    BASE / 'scripts/automation/sanitize_lote_prospeccao.py',
+    BASE / 'scripts/automation/agendar_followup_prospeccao.py',
+    BASE / 'scripts/automation/disparar_lote_prospeccao.py',
+]
+
+# Consultoria Proptech
+CONSULTORIA_PROPTECH = [
+    BASE / 'scripts/automation/sanitize_lote_consultoria_proptech.py',
+    BASE / 'scripts/automation/agendar_followup_consultoria_proptech.py',
+    BASE / 'scripts/automation/disparar_lote_consultoria_proptech.py',
+]
+
 AVALIACAO = [
     BASE / 'scripts/automation/sanitize_lote_avaliacao.py',
     BASE / 'scripts/automation/agendar_followup_avaliacao.py',
     BASE / 'scripts/automation/disparar_lote_avaliacao.py',
 ]
 
-SCRIPTS = AUTOMACAO + CAPTACAO + PROPTECH + DESCRICAO + SEO_LOCAL + CONSULTORIA + AVALIACAO
+SCRIPTS = AUTOMACAO + CAPTACAO + PROPTECH + DESCRICAO + SEO_LOCAL + CONSULTORIA + AVALIACAO + PROSPECCAO + CONSULTORIA_PROPTECH
 
 
 def run(path: Path):
+    if not path.exists():
+        print(f'[SKIP] {path.name} não encontrado')
+        return
     print(f'>>> {path.name}')
     result = subprocess.run(
         [sys.executable, str(path)],
