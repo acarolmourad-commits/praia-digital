@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Litoral Prime Imóveis — Imobiliária Digital do Litoral de SP</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>🏖️ Litoral Prime Imóveis</h1>
+        <p class="tagline">Sua imobiliária digital no litoral de SP</p>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#imoveis">Imóveis</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="https://wa.me/5511954346288" class="btn-whatsapp">WhatsApp</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h1>Encontre o imóvel perfeito no litoral de SP</h1>
+      <p class="subtitle">Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe</p>
+      <div class="search-bar">
+        <input type="text" id="search" placeholder="Buscar por cidade, bairro ou tipo...">
+        <button onclick="buscarImoveis()">Buscar</button>
+      </div>
+    </section>
+
+    <section id="imoveis" class="imoveis-section">
+      <h2>Imóveis Disponíveis</h2>
+      <div id="lista-imoveis" class="imoveis-grid">
+        <!-- Carregado via JS -->
+      </div>
+    </section>
+
+    <section id="sobre" class="sobre-section">
+      <h2>Sobre a Litoral Prime</h2>
+      <p>Somos uma imobiliária 100% digital, especializada no litoral de São Paulo. Oferecemos uma experiência moderna, rápida e transparente para comprar, vender ou alugar imóveis.</p>
+      <div class="stats">
+        <div class="stat">
+          <h3>500+</h3>
+          <p>Imóveis cadastrados</p>
+        </div>
+        <div class="stat">
+          <h3>1.200+</h3>
+          <p>Clientes atendidos</p>
+        </div>
+        <div class="stat">
+          <h3>98%</h3>
+          <p>Satisfação</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contato-section">
+      <h2>Fale Conosco</h2>
+      <form id="contato-form" class="contact-form">
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <input type="email" id="email" placeholder="Seu e-mail" required>
+        <input type="tel" id="telefone" placeholder="Seu telefone">
+        <select id="interesse">
+          <option value="">Interesse</option>
+          <option value="comprar">Comprar</option>
+          <option value="alugar">Alugar</option>
+          <option value="vender">Vender</option>
+        </select>
+        <textarea id="mensagem" placeholder="Sua mensagem" rows="4"></textarea>
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Litoral Prime Imóveis. Todos os direitos reservados. | Criado pela Praia Digital</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

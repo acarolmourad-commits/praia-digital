@@ -1,0 +1,38 @@
+[
+  {
+    "data": "2026-07-23T11:15:56.342522",
+    "remetente": "cliente",
+    "mensagem": "oi",
+    "resposta": "Olá! Bem-vindo à Litoral Prime. Qual seu interesse: comprar, alugar ou vender?"
+  },
+  {
+    "data": "2026-07-23T11:15:56.344182",
+    "remetente": "cliente",
+    "mensagem": "comprar",
+    "resposta": "Temos ótimas opções de compra no litoral de SP. Qual cidade/bairro você prefere?"
+  },
+  {
+    "data": "2026-07-23T11:15:56.367015",
+    "remetente": "cliente",
+    "mensagem": "alugar",
+    "resposta": "Qual tipo de imóvel você busca: apto, casa, flat? E em qual cidade?"
+  },
+  {
+    "data": "2026-07-23T11:15:56.388589",
+    "remetente": "cliente",
+    "mensagem": "vender",
+    "resposta": "Faça uma avaliação gratuita! Envie o endereço do imóvel."
+  },
+  {
+    "data": "2026-07-23T11:15:56.413803",
+    "remetente": "cliente",
+    "mensagem": "preço",
+    "resposta": "Qual seu orçamento? Assim filtramos as melhores opções."
+  },
+  {
+    "data": "2026-07-23T11:15:56.437274",
+    "remetente": "cliente",
+    "mensagem": "visita",
+    "resposta": "Perfeito! Envie seu nome e telefone que agendamos em 15 min."
+  }
+]
