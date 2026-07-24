@@ -1,4 +1,249 @@
-<!DOCTYPE html><html lang='pt-BR'><head><meta charset='UTF-8'><title>Relatório Diário — Litoral Prime</title>
-<style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#f8fafc;color:#0f172a;padding:24px}
-.card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:18px;margin:14px 0}
-</style></head><body><div class='card'><h1>Relatório Diário — Litoral Prime</h1><p>Data: 2026-07-23</p><p>Status: operação autônoma OK</p></div></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatório Diário — Litoral Prime Imóveis</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .wrap{max-width:1100px;margin:0 auto;padding:18px}
+    .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:14px 0}
+    .kpi{background:#f8fafc;border:1px solid #e5e7eb;border-radius:16px;padding:14px;text-align:center}
+    .kpi h3{margin:0;font-size:12px;color:#64748b;text-transform:uppercase;letter-spacing:.08em}
+    .kpi .v{font-size:26px;font-weight:800;color:#0a58ca;margin-top:6px}
+    section{margin:18px 0}
+    table{width:100%;border-collapse:collapse;margin-top:10px}
+    th,td{padding:10px;border-bottom:1px solid #e5e7eb;text-align:left;vertical-align:top}
+    th{background:#f8fafc}
+    .btn-whatsapp{padding:8px 10px;background:#25d366;color:#fff;border-radius:8px;text-decoration:none;font-weight:700}
+    .badge{display:inline-block;padding:4px 8px;border-radius:999px;font-size:12px;background:#e5e7eb}
+    .severity-ok{color:#15803d} .severity-warn{color:#b45309} .severity-bad{color:#b91c1c}
+    .note{font-size:12px;color:#64748b;margin-top:10px}
+    .status-edit{padding:4px 8px;border-radius:8px;border:1px solid #e5e7eb;background:#fff;min-width:120px}
+    .save-row{margin-top:10px;display:flex;gap:10px;align-items:center}
+    .btn-save{padding:8px 12px;background:#0a58ca;color:#fff;border-radius:8px;border:none;font-weight:600}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>🏖️ Litoral Prime Imóveis</h1>
+        <p class="tagline">Relatório Diário</p>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="despacho.html">Despacho</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>Painel do Dia</h1>
+      <p class="subtitle">Ação priorizada por estágio com link direto no WhatsApp. Edite o status diretamente e salve no CSV.</p>
+      <button class="btn-save" id="copy-whatsapp-summary" style="margin-top:10px">Copiar resumo do dia para WhatsApp</button>
+      <span id="copy-msg" style="font-size:12px;color:#64748b;margin-left:10px"></span>
+    </section>
+
+    <section>
+      <div class="kpis">
+        <div class="kpi"><h3>Enviados</h3><div class="v" id="m-sent">0</div></div>
+        <div class="kpi"><h3>Aguardando</h3><div class="v" id="m-pending">0</div></div>
+        <div class="kpi"><h3>Respondidos</h3><div class="v" id="m-replied">0</div></div>
+        <div class="kpi"><h3>Follow-up</h3><div class="v" id="m-fu">0</div></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Ações Recomendadas</h2>
+      <table>
+        <thead>
+          <tr><th>Nome</th><th>Cidade</th><th>Tipo</th><th>Estágio</th><th>Status</th><th>Prazo</th><th>Ação</th></tr>
+        </thead>
+        <tbody id="actions"></tbody>
+      </table>
+      <p class="note">Topo = maior urgência baseado em status + estágio.</p>
+    </section>
+
+    <section>
+      <h2>Leads Priorizados por Score</h2>
+      <table>
+      <thead>
+        <tr><th>Ordem</th><th>Nome</th><th>Cidade</th><th>Tipo</th><th>Estágio</th><th>Score</th><th>Classificação</th><th>Janela</th><th>Ação Sugerida</th><th>Ação</th></tr>
+      </thead>
+      <tbody id="priorizados"></tbody>
+      </table>
+      <p class="note">Ordem: maior score primeiro. Comece pelo topo e avance na sequência.</p>
+    </section>
+
+    <section>
+      <h2>Métricas Brutas</h2>
+      <table>
+        <thead>
+          <tr><th>Data</th><th>Nome</th><th>Telefone</th><th>Cidade</th><th>Tipo</th><th>Canal</th><th>Estágio</th><th>Ação</th><th>Status</th><th>Observações</th></tr>
+        </thead>
+        <tbody id="metrics"></tbody>
+      </table>
+      <div class="save-row">
+        <button class="btn-save" id="save-metrics">Salvar alterações no CSV</button>
+        <span id="save-msg" style="font-size:12px;color:#64748b"></span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Litoral Prime Imóveis. Todos os direitos reservados. | Criado pela Praia Digital</p>
+      <p><a href="../sitemap.html">Mapa do site</a> · <a href="../docs/guia-rapido.html">Guia rápido</a></p>
+  </footer>
+
+  <script>
+    const METRICS_PATH = '../outreach/metricas.csv';
+    let metricsRows = [];
+
+    async function loadCsv(name){
+      try{
+        const res = await fetch('../outreach/' + name);
+        if(!res.ok) return [];
+        const text = await res.text();
+        const lines = text.trim().split('\n');
+        const header = lines[0].split(',');
+        return lines.slice(1).map(line => {
+          const cols=[]; let cur=''; let inQ=false;
+          for(const ch of line){
+            if(ch==='"' ){ inQ=!inQ; continue; }
+            if(ch===',' && !inQ){ cols.push(cur.trim()); cur=''; continue; }
+            cur += ch;
+          }
+          cols.push(cur.trim());
+          const obj={}; header.forEach((h,i)=> obj[h]=cols[i]||'');
+          return obj;
+        });
+      }catch(e){ return []; }
+    }
+
+    function waLink(phone, text){
+      const d = '55' + String(phone).replace(/\D/g,'');
+      const msg = encodeURIComponent(text || '');
+      return 'https://wa.me/' + d + '?text=' + msg;
+    }
+
+    function priority(r){
+      const s = (r.status || '').toLowerCase();
+      if (s==='aguardando' || s==='pendente') return 1;
+      if (s==='respondido' || s==='interessado') return 2;
+      return 3;
+    }
+
+    function render(){
+      Promise.all([loadCsv('metricas.csv')]).then(rowsets => {
+        metricsRows = rowsets[0] || [];
+        const rows = metricsRows;
+        const sent = rows.length;
+        const pending = rows.filter(r => (r.status||'').toLowerCase().includes('aguardando')).length;
+        const replied = rows.filter(r => (r.status||'').toLowerCase().includes('respondido')).length;
+        const fu = rows.filter(r => (r.estagio||'').toLowerCase().includes('reengajamento')).length;
+
+        document.getElementById('m-sent').textContent = sent;
+        document.getElementById('m-pending').textContent = pending;
+        document.getElementById('m-replied').textContent = replied;
+        document.getElementById('m-fu').textContent = fu;
+
+        const sorted = rows.slice().sort((a,b)=> (priority(a) - priority(b)) || (a.data||'').localeCompare(b.data||''));
+
+        const act = document.getElementById('actions');
+        act.innerHTML = '';
+        for(const r of sorted){
+          const status = r.status || 'aguardando';
+          const label = status === 'aguardando' ? 'Enviar WhatsApp' : status === 'respondido' ? 'Responder' : 'Follow-up';
+          const msg = `Olá, ${r.nome}! Tudo bem? Você demonstrou interesse em ${r.tipo} em ${r.cidade}. Quer que eu envie 3 opções compatíveis?`;
+          const link = waLink(r.telefone, msg);
+          const tr = document.createElement('tr');
+          tr.innerHTML = `<td>${r.nome||''}</td><td>${r.cidade||''}</td><td>${r.tipo||''}</td><td><span class="badge">${r.estagio||''}</span></td><td><span class="severity-${status==='aguardando'?'warn':'ok'}">${status}</span></td><td>${r.data||''}</td><td><a class="btn-whatsapp" href="${link}" target="_blank" rel="noopener">${label}</a></td>`;
+          act.appendChild(tr);
+        }
+
+        const met = document.getElementById('metrics');
+        met.innerHTML = '';
+        for(const r of rows){
+          const statuses = ['aguardando','respondido','interessado','follow-up'];
+          const opts = statuses.map(s => `<option value="${s}" ${((r.status||'').toLowerCase()===s)?'selected':''}>${s}</option>`).join('');
+          const tr = document.createElement('tr');
+          tr.innerHTML = `<td>${r.data||''}</td><td>${r.nome||''}</td><td>${r.telefone||''}</td><td>${r.cidade||''}</td><td>${r.tipo||''}</td><td>${r.canal||''}</td><td><span class="badge">${r.estagio||''}</span></td><td>${r.acao||''}</td><td><select class="status-edit" data-idx="${rows.indexOf(r)}">${opts}</select></td><td><input data-idx="${rows.indexOf(r)}" data-field="observacoes" value="${(r.observacoes||'').replace(/"/g,'&quot;')}" style="width:160px;padding:6px;border:1px solid #e5e7eb;border-radius:8px;"></td><td><button class="btn-save quick-followup" data-idx="${rows.indexOf(r)}">Follow-up enviado</button></td>`;
+          met.appendChild(tr);
+        }
+
+        document.getElementById('save-metrics').onclick = async () => {
+          document.querySelectorAll('#metrics select, #metrics input').forEach(el => {
+            const idx = parseInt(el.getAttribute('data-idx'), 10);
+            const field = el.getAttribute('data-field');
+            if (!isNaN(idx) && metricsRows[idx]) {
+              if (field) metricsRows[idx][field] = el.value;
+              else metricsRows[idx].status = el.value;
+            }
+          });
+          const header = Object.keys(metricsRows[0] || {}).join(',') + '\n';
+          const body = metricsRows.map(r => Object.values(r).map(v => `"${String(v).replace(/"/g,'""')}"`).join(',')).join('\n');
+          const blob = new Blob([header + body], {type: 'text/csv'});
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url; a.download = 'metricas.csv'; a.click();
+          document.getElementById('save-msg').textContent = 'CSV atualizado.';
+          setTimeout(() => document.getElementById('save-msg').textContent = '', 2000);
+        };
+
+        document.getElementById('metrics').addEventListener('click', e => {
+          if (!e.target.classList.contains('quick-followup')) return;
+          const idx = parseInt(e.target.getAttribute('data-idx'), 10);
+          if (!isNaN(idx) && metricsRows[idx]) {
+            metricsRows[idx].status = 'follow-up';
+            metricsRows[idx].observacoes = (metricsRows[idx].observacoes || '') + ' | Follow-up enviado em ' + new Date().toLocaleString('pt-BR');
+            const sel = document.querySelector(`#metrics select[data-idx="${idx}"]`);
+            if (sel) sel.value = 'follow-up';
+            const inp = document.querySelector(`#metrics input[data-idx="${idx}"][data-field="observacoes"]`);
+            if (inp) inp.value = metricsRows[idx].observacoes;
+            document.getElementById('save-metrics').click();
+          }
+        });
+      });
+    }
+
+    async function loadPrioritized(){
+      const rows = await loadCsv('do-dia/' + new Date().toISOString().slice(0,10) + '/sequencia.csv');
+      const tbody = document.getElementById('priorizados');
+      tbody.innerHTML='';
+      const sorted = rows.slice().sort((a,b)=> (parseInt(b.score||0)-parseInt(a.score||0)) || (a.acao_sugerida||'').localeCompare(b.acao_sugerida||'') || (a.nome||'').localeCompare(b.nome||''));
+      for(const r of sorted){
+        const score = parseInt(r.score||0,10);
+        const cls = (r.classificacao||'').toLowerCase();
+        const badgeColor = cls==='alto'?'color:#15803d;background:#dcfce7':cls==='medio'?'color:#b45309;background:#fef3c7':'color:#6b7280;background:#f3f4f6';
+        const tr=document.createElement('tr');
+        const msg = `Olá, ${r.nome}! Tudo bem? Você demonstrou interesse em ${r.tipo_interesse} em ${r.cidade_interesse}. Quer que eu envie 3 opções compatíveis?`;
+        const link = waLink(r.telefone, msg);
+        tr.innerHTML=`<td>${r.ordem||''}</td><td>${r.nome||''}</td><td>${r.cidade_interesse||''}</td><td>${r.tipo_interesse||''}</td><td><span class="badge">${r.estagio||''}</span></td><td>${score}</td><td><span style="display:inline-block;padding:4px 8px;border-radius:999px;font-size:12px;${badgeColor}">${cls||'-'}</span></td><td>${r.janela_contato||''}</td><td>${r.acao_sugerida||''}</td><td><a class="btn-whatsapp" href="${link}" target="_blank" rel="noopener">WhatsApp</a></td>`;
+        tbody.appendChild(tr);
+      }
+    }
+
+    render();
+    loadPrioritized();
+
+    document.getElementById('copy-whatsapp-summary').onclick = async () => {
+      const sent = parseInt(document.getElementById('m-sent').textContent || '0', 10);
+      const pending = parseInt(document.getElementById('m-pending').textContent || '0', 10);
+      const replied = parseInt(document.getElementById('m-replied').textContent || '0', 10);
+      const fu = parseInt(document.getElementById('m-fu').textContent || '0', 10);
+      const text = `📊 Litoral Prime — Resumo do dia\n\n✅ Enviados: ${sent}\n⏳ Aguardando: ${pending}\n💬 Respondidos: ${replied}\n🔄 Follow-up: ${fu}\n\nAcesse o briefing: https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/docs/briefing-diario.html`;
+      try {
+        await navigator.clipboard.writeText(text);
+        document.getElementById('copy-msg').textContent = 'Resumo copiado!';
+        setTimeout(() => document.getElementById('copy-msg').textContent = '', 2000);
+      } catch (e) {
+        document.getElementById('copy-msg').textContent = 'Erro ao copiar';
+      }
+    };
+  </script>
+  <a class="whatsapp-fab" href="https://wa.me/5511954346288?text=Olá!%20Quero%20informações%20sobre%20o%20relatório%20diário." target="_blank" rel="noopener" aria-label="WhatsApp">W</a>
+</body>
+</html>

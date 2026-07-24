@@ -1,0 +1,81 @@
+nome,email,telefone,cidade_interesse,tipo_interesse,origem,status,data_contato,observacoes,score
+Ana Santos,ana.santos@email.com,551438908386,Santos,Venda,site,novo,2026-07-23,Aguardando primeiro contato,75
+Wanessa Martins,wanessa.martins@email.com,551461939909,Praia Grande,Venda,site,novo,2026-07-23,Aguardando primeiro contato,75
+Mariana Dias,mariana.dias@email.com,5513944445555,Bertioga,Venda,site,novo,2026-07-23,Aguardando primeiro contato,75
+Eduardo Mendes,eduardo.mendes@email.com,551613542784,Bertioga,Venda,site,novo,2026-07-23,Aguardando primeiro contato,75
+Ursula Souza,ursula.souza@email.com,551634874016,Bertioga,Venda,site,novo,2026-07-23,Aguardando primeiro contato,75
+Bruno Silva,bruno.silva@email.com,551624278680,Bertioga,Venda,site,novo,2026-07-23,Aguardando primeiro contato,75
+Eduardo Ribeiro,eduardo.ribeiro@email.com,551159826204,Bertioga,Venda,site,novo,2026-07-23,Aguardando primeiro contato,75
+Bruno Mendes,bruno.mendes@email.com,551633158692,Bertioga,Venda,site,novo,2026-07-23,Aguardando primeiro contato,75
+Helena Martins,helena.martins@email.com,551326025634,Bertioga,Venda,site,novo,2026-07-23,Aguardando primeiro contato,75
+Mariana Souza,mariana.souza@email.com,551200330923,Mongaguá,Venda,site,novo,2026-07-23,Aguardando primeiro contato,55
+Bruno Cardoso,bruno.cardoso@email.com,5511977778888,São Vicente,Venda,site,novo,2026-07-23,Aguardando primeiro contato,55
+Daniela Almeida,daniela.almeida@email.com,551474529912,São Vicente,Venda,site,novo,2026-07-23,Aguardando primeiro contato,55
+Wanessa Almeida,wanessa.almeida@email.com,551290586518,São Vicente,Venda,site,novo,2026-07-23,Aguardando primeiro contato,55
+Ana Martins,ana.martins@email.com,551771657262,São Vicente,Venda,site,novo,2026-07-23,Aguardando primeiro contato,55
+Vinicius Lima,vinicius.lima@email.com,551977694531,São Vicente,Venda,site,novo,2026-07-23,Aguardando primeiro contato,55
+Pedro Souza,pedro.souza@email.com,551899650752,São Vicente,Venda,site,novo,2026-07-23,Aguardando primeiro contato,55
+Mariana Rocha,mariana.rocha@email.com,551554948083,São Vicente,Venda,site,novo,2026-07-23,Aguardando primeiro contato,55
+Olivia Ferreira,olivia.ferreira@email.com,551937770143,São Vicente,Venda,site,novo,2026-07-23,Aguardando primeiro contato,55
+Helena Lima,helena.lima@email.com,551678856855,São Vicente,Venda,site,novo,2026-07-23,Aguardando primeiro contato,55
+Roberto Lima,roberto.lima@email.com,5511911112222,Santos,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,45
+Vinicius Santos,vinicius.santos@email.com,551143321819,Santos,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,45
+Igor Rocha,igor.rocha@email.com,551126542351,Santos,Compra,site,novo,2026-07-23,Aguardando primeiro contato,45
+Mariana Martins,mariana.martins@email.com,551694078161,Santos,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,45
+Vinicius Almeida,vinicius.almeida@email.com,551693103413,Santos,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,45
+Nicholas Lima,nicholas.lima@email.com,551852553419,Santos,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,45
+Sofia Araujo,sofia.araujo@email.com,551427648350,Santos,Compra,site,novo,2026-07-23,Aguardando primeiro contato,45
+Lucas Costa,lucas.costa@email.com,551513953767,Santos,Compra,site,novo,2026-07-23,Aguardando primeiro contato,45
+Helena Araujo,helena.araujo@email.com,551984969653,Santos,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,45
+Aline Costa,aline.costa@email.com,5513922223333,Guarujá,Compra,site,novo,2026-07-23,Aguardando primeiro contato,45
+Eduardo Ribeiro,eduardo.ribeiro@email.com,551810122691,Guarujá,Compra,site,novo,2026-07-23,Aguardando primeiro contato,45
+Ursula Ferreira,ursula.ferreira@email.com,551948018451,Guarujá,Compra,site,novo,2026-07-23,Aguardando primeiro contato,45
+Fernanda Ferreira,fernanda.ferreira@email.com,551148281489,Guarujá,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,45
+Zeca Oliveira,zeca.oliveira@email.com,551980957015,Guarujá,Compra,site,novo,2026-07-23,Aguardando primeiro contato,45
+Juliana Souza,juliana.souza@email.com,551139117182,Guarujá,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,45
+Sofia Oliveira,sofia.oliveira@email.com,551589638346,Guarujá,Compra,site,novo,2026-07-23,Aguardando primeiro contato,45
+Vinicius Pereira,vinicius.pereira@email.com,551887133150,Guarujá,Compra,site,novo,2026-07-23,Aguardando primeiro contato,45
+Helena Almeida,helena.almeida@email.com,551401031051,Guarujá,Compra,site,novo,2026-07-23,Aguardando primeiro contato,45
+Igor Nunes,igor.nunes@email.com,551838299737,Guarujá,Compra,site,novo,2026-07-23,Aguardando primeiro contato,45
+Thiago Rocha,thiago.rocha@email.com,5511933334444,Praia Grande,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,45
+Gustavo Santos,gustavo.santos@email.com,551265667010,Praia Grande,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,45
+Lucas Rocha,lucas.rocha@email.com,551233387262,Praia Grande,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,45
+Helena Martins,helena.martins@email.com,551278108013,Praia Grande,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,45
+Quésia Souza,quesia.souza@email.com,551702606474,Praia Grande,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,45
+Yasmin Rocha,yasmin.rocha@email.com,551972343098,Praia Grande,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,45
+Bruno Silva,bruno.silva@email.com,551888208121,Praia Grande,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,45
+Tiago Almeida,tiago.almeida@email.com,551954353462,Praia Grande,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,45
+Juliana Ferreira,juliana.ferreira@email.com,551610799118,Praia Grande,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,45
+Vinicius Ribeiro,vinicius.ribeiro@email.com,551184124118,Bertioga,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,45
+Daniela Costa,daniela.costa@email.com,551173375433,Bertioga,Compra,site,novo,2026-07-23,Aguardando primeiro contato,45
+Nicholas Pereira,nicholas.pereira@email.com,551514586850,Bertioga,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,45
+Felipe Araujo,felipe.araujo@email.com,5511955556666,Itanhaém,Compra,site,novo,2026-07-23,Aguardando primeiro contato,25
+Fernanda Almeida,fernanda.almeida@email.com,551501965569,Itanhaém,Compra,site,novo,2026-07-23,Aguardando primeiro contato,25
+Daniela Costa,daniela.costa@email.com,551440608835,Itanhaém,Compra,site,novo,2026-07-23,Aguardando primeiro contato,25
+Wanessa Mendes,wanessa.mendes@email.com,551695148465,Itanhaém,Compra,site,novo,2026-07-23,Aguardando primeiro contato,25
+Juliana Ribeiro,juliana.ribeiro@email.com,551336629946,Itanhaém,Compra,site,novo,2026-07-23,Aguardando primeiro contato,25
+Ana Lima,ana.lima@email.com,551536995777,Itanhaém,Compra,site,novo,2026-07-23,Aguardando primeiro contato,25
+Rafael Ferreira,rafael.ferreira@email.com,551314895134,Itanhaém,Compra,site,novo,2026-07-23,Aguardando primeiro contato,25
+Eduardo Silva,eduardo.silva@email.com,551137917693,Itanhaém,Compra,site,novo,2026-07-23,Aguardando primeiro contato,25
+Nicholas Ferreira,nicholas.ferreira@email.com,551732016328,Itanhaém,Compra,site,novo,2026-07-23,Aguardando primeiro contato,25
+Sofia Souza,sofia.souza@email.com,551272788957,Itanhaém,Compra,site,novo,2026-07-23,Aguardando primeiro contato,25
+Camila Ribeiro,camila.ribeiro@email.com,5513966667777,Mongaguá,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,25
+Yasmin Mendes,yasmin.mendes@email.com,551968727743,Mongaguá,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,25
+Igor Rocha,igor.rocha@email.com,551973471434,Mongaguá,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,25
+Sofia Santos,sofia.santos@email.com,551323623166,Mongaguá,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,25
+Pedro Costa,pedro.costa@email.com,551136690967,Mongaguá,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,25
+Juliana Rocha,juliana.rocha@email.com,551768893734,Mongaguá,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,25
+Ana Costa,ana.costa@email.com,551662729806,Mongaguá,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,25
+Wanessa Silva,wanessa.silva@email.com,551262720465,Mongaguá,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,25
+Lucas Rocha,lucas.rocha@email.com,551746417080,Mongaguá,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,25
+Daniela Almeida,daniela.almeida@email.com,551149663193,São Vicente,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,25
+Juliana Martins,juliana.martins@email.com,5513988889999,Peruíbe,Compra,site,novo,2026-07-23,Aguardando primeiro contato,25
+Igor Lima,igor.lima@email.com,551531351823,Peruíbe,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,25
+Igor Araujo,igor.araujo@email.com,551994134352,Peruíbe,Compra,site,novo,2026-07-23,Aguardando primeiro contato,25
+Xavier Ribeiro,xavier.ribeiro@email.com,551340084271,Peruíbe,Compra,site,novo,2026-07-23,Aguardando primeiro contato,25
+Tiago Lima,tiago.lima@email.com,551877520471,Peruíbe,Compra,site,novo,2026-07-23,Aguardando primeiro contato,25
+Nicholas Ferreira,nicholas.ferreira@email.com,551290229413,Peruíbe,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,25
+Ursula Almeida,ursula.almeida@email.com,551486774964,Peruíbe,Compra,site,novo,2026-07-23,Aguardando primeiro contato,25
+Bruno Almeida,bruno.almeida@email.com,551233412328,Peruíbe,Compra,site,novo,2026-07-23,Aguardando primeiro contato,25
+Olivia Ferreira,olivia.ferreira@email.com,551840344713,Peruíbe,Compra,site,novo,2026-07-23,Aguardando primeiro contato,25
+Vinicius Almeida,vinicius.almeida@email.com,551461832421,Peruíbe,Aluguel,site,novo,2026-07-23,Aguardando primeiro contato,25

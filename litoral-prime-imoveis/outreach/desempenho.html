@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desempenho — Litoral Prime Imóveis</title>
+  <link rel="stylesheet" href="../css/style.css">
+  </head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>🏖️ Litoral Prime Imóveis</h1>
+        <p class="tagline">Desempenho</p>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../outreach/tracker.html">Tracker</a></li>
+        <li><a href="../outreach/posts-redes-sociais.html">Posts</a></li>
+        <li><a href="../outreach/materiais.html">Materiais</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Desempenho do dia</h1>
+      <p class="subtitle">Visão rápida para decisão manual.</p>
+    </section>
+
+    <section class="cards">
+      <div class="card"><h3>Leads no dia</h3><div class="value" id="v-total">320</div></div>
+      <div class="card"><h3>Enviados</h3><div class="value" id="v-sent">0</div></div>
+      <div class="card"><h3>Respostas</h3><div class="value" id="v-replies">0</div></div>
+      <div class="card"><h3>Taxa</h3><div class="value" id="v-rate">0%</div></div>
+      <div class="card"><h3>Follow-ups</h3><div class="value" id="v-followup">0</div></div>
+      <div class="card"><h3>Posts copiados</h3><div class="value" id="v-copied">0</div></div>
+    </section>
+
+    <section style="margin-top:18px">
+      <h2>Segmentação</h2>
+      <div id="segment-chart" class="servicos-grid"></div>
+    </section>
+
+    <section style="margin-top:18px">
+      <h2>Ações</h2>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <a class="btn" href="tracker.html">Abrir tracker</a>
+        <a class="btn" href="posts-redes-sociais.html">Copiar posts</a>
+        <a class="btn" href="../servicos/captura-rapida.html">Captura de leads</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Litoral Prime Imóveis. Todos os direitos reservados. | Criado pela Praia Digital</p>
+  </footer>
+
+  <script>
+    const STORAGE_SENT = 'litoralprime.sent.v1';
+    const STORAGE_MANUAL = 'litoralprime.manual.v1';
+    const STORAGE_REPLY = 'litoralprime.reply.v1';
+    const STORAGE_FOLLOW = 'litoralprime.followup.v1';
+    const COPY_STORAGE = 'litoralprime.copycounts.v1';
+    const load = (k, d)=>{ try { const r=localStorage.getItem(k); return r?JSON.parse(r):d; } catch(e){ return d; } };
+    const norm = (x)=> Array.isArray(x)?x:(x && x.phones)?x.phones:[];
+    const now = ()=> new Date().toISOString().slice(0,10);
+
+    function render(){
+      const sent = new Set(norm(load(STORAGE_SENT, {date:''})).map(String));
+      const replies = new Set(norm(load(STORAGE_REPLY, {date:''})).map(String));
+      const manual = load(STORAGE_MANUAL, []);
+      const follow = load(STORAGE_FOLLOW, {});
+      let copiedTotal = 0;
+      try { const c = load(COPY_STORAGE, {}); copiedTotal = Object.values(c).reduce((a,b)=>a+b,0); } catch(e){}
+
+      // Metrics
+      const total = 320;
+      const sentCount = sent.size;
+      const repliesCount = replies.size;
+      const rate = total? Math.round((repliesCount/total)*100)+'%':'0%';
+      document.getElementById('v-sent').textContent = sentCount;
+      document.getElementById('v-replies').textContent = repliesCount;
+      document.getElementById('v-rate').textContent = rate;
+      document.getElementById('v-followup').textContent = Object.keys(follow||{}).length;
+      document.getElementById('v-copied').textContent = copiedTotal;
+
+      // Segmentation by tipo_interesse from tracker-dia
+      const segs = {};
+      const order = ['Compra','Aluguel','Venda','Temporada','Investidor'];
+      fetch('../outreach/do-dia/2026-07-24/tracker-dia.json')
+        .then(r => r.json())
+        .then(data => {
+          (data.rows||[]).forEach(r => {
+            const seg = (r.tipo_interesse||'').trim() || 'Outros';
+            segs[seg] = (segs[seg]||0)+1;
+          });
+          const sorted = Object.keys(segs).sort((a,b)=> (order.indexOf(a)-order.indexOf(b)) || a.localeCompare(b));
+          const container = document.getElementById('segment-chart');
+          container.innerHTML = sorted.map(seg => {
+            const count = segs[seg];
+            const pct = total? Math.round((count/total)*100)+'%':'0%';
+            return `<article class="servico-card"><h3>${seg}</h3><div class="value">${count}</div><p class="note">${pct} do total</p></article>`;
+          }).join('');
+        })
+        .catch(()=>{});
+    }
+
+    render();
+  </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+data,nome,telefone,cidade,tipo,canal,estagio,acao,status,observacoes
+2026-07-23,Roberto Lima,5511911112222,Santos,Aluguel,whatsapp,primeiro_contato,enviado,aguardando,Resposta pendente
+2026-07-23,Aline Costa,5513922223333,Guarujá,Compra,whatsapp,primeiro_contato,enviado,aguardando,Sem resposta ainda
+2026-07-23,Juliana Souza,551139117182,Guarujá,Aluguel,whatsapp,oferta,enviado,respondido,Interessada em visita
+2026-07-23,Pedro Lima,551154353462,Santos,Venda,whatsapp,cross-sell,enviado,aguardando,Aguardando proposta de avaliação
+2026-07-23,Teste,11999999999,,Compra,site,primeiro_contato,enviar,novo,Lead do site. Teste automático

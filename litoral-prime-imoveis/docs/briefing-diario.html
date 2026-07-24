@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Briefing do Dia — Litoral Prime Imóveis</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .wrap{max-width:900px;margin:0 auto;padding:18px}
+    .hero{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+    .kpis{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+    .kpi{background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:10px 14px;text-align:center;min-width:90px}
+    .kpi h3{margin:0;font-size:11px;color:#64748b;text-transform:uppercase;letter-spacing:.08em}
+    .kpi .v{font-size:22px;font-weight:800;color:#0a58ca;margin-top:4px}
+    .queue{display:flex;flex-direction:column;gap:12px;margin-top:14px}
+    .lead-card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:14px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+    .lead-card .info{display:flex;flex-direction:column;gap:4px}
+    .lead-card .name{font-weight:700;font-size:16px}
+    .lead-card .meta{font-size:13px;color:#64748b}
+    .badge{display:inline-block;padding:4px 8px;border-radius:999px;font-size:12px;background:#e5e7eb}
+    .badge-alto{background:#dcfce7;color:#15803d}
+    .badge-medio{background:#fef3c7;color:#b45309}
+    .badge-baixo{background:#f3f4f6;color:#6b7280}
+    .btn-whatsapp{padding:10px 14px;background:#25d366;color:#fff;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn-secondary{padding:10px 14px;background:#f1f5f9;color:#0f172a;border-radius:10px;text-decoration:none;font-weight:600;border:1px solid #e5e7eb}
+    .done{opacity:.6}
+    .note{font-size:12px;color:#64748b;margin-top:10px}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>🏖️ Litoral Prime Imóveis</h1>
+        <p class="tagline">Briefing do Dia</p>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="despacho.html">Despacho</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="relatorio-diario-litoral-prime.html">Relatório</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <h1>Fila de disparo prioritária</h1>
+        <p class="subtitle">Ação rápida: top leads por score, sem precisar abrir outro painel.</p>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><h3>Pronto</h3><div class="v" id="q-ready">0</div></div>
+        <div class="kpi"><h3>Prioritários</h3><div class="v" id="q-hot">0</div></div>
+        <div class="kpi"><h3>Respondidos</h3><div class="v" id="q-replied">0</div></div>
+      </div>
+    </section>
+
+    <section class="queue" id="queue"></section>
+
+    <p class="note">Clique no botão principal para abrir o WhatsApp com a mensagem preenchida. Use Voltar para retomar a fila.</p>
+  </main>
+
+  <footer>
+    <p>© 2026 Litoral Prime Imóveis. Todos os direitos reservados. | Criado pela Praia Digital</p>
+      <p><a href="../sitemap.html">Mapa do site</a> · <a href="../docs/guia-rapido.html">Guia rápido</a></p>
+  </footer>
+
+  <script>
+    async function loadCsv(name){
+      try{
+        const res = await fetch('../outreach/' + name);
+        if(!res.ok) return [];
+        const text = await res.text();
+        const lines = text.trim().split('\n');
+        const header = lines[0].split(',');
+        return lines.slice(1).map(line => {
+          const cols=[]; let cur=''; let inQ=false;
+          for(const ch of line){
+            if(ch==='"' ){ inQ=!inQ; continue; }
+            if(ch===',' && !inQ){ cols.push(cur.trim()); cur=''; continue; }
+            cur += ch;
+          }
+          cols.push(cur.trim());
+          const obj={}; header.forEach((h,i)=> obj[h]=cols[i]||'');
+          return obj;
+        });
+      }catch(e){ return []; }
+    }
+
+    function waLink(phone, text){
+      const d = '55' + String(phone).replace(/\D/g,'');
+      const msg = encodeURIComponent(text || '');
+      return 'https://wa.me/' + d + '?text=' + msg;
+    }
+
+    async function render(){
+      const seq = await loadCsv('do-dia/' + new Date().toISOString().slice(0,10) + '/sequencia.csv');
+      const metrics = await loadCsv('metricas.csv');
+      const repliedPhones = new Set(metrics.filter(r => (r.status||'').toLowerCase().includes('respondido')).map(r => String(r.telefone||'').replace(/\D/g,'')));
+
+      const sorted = seq.slice().sort((a,b)=> (parseInt(a.ordem||0,10)-parseInt(b.ordem||0,10)) || (parseInt(b.score||0)-parseInt(a.score||0)));
+      const queue = document.getElementById('queue');
+      queue.innerHTML='';
+
+      let ready=0, hot=0, replied=0;
+      for(const r of sorted){
+        const score = parseInt(r.score||0,10);
+        const cls = (r.classificacao||'').toLowerCase() || (score>=60?'alto':score>=40?'medio':'baixo');
+        const phoneDigits = String(r.telefone||'').replace(/\D/g,'');
+        if (repliedPhones.has(phoneDigits)) {
+          replied++;
+          continue;
+        }
+        ready++;
+        if (cls==='alto') hot++;
+        const msg = `Olá, ${r.nome}! Tudo bem? Você demonstrou interesse em ${r.tipo_interesse} em ${r.cidade_interesse}. Quer que eu envie 3 opções compatíveis?`;
+        const link = waLink(r.telefone, msg);
+        const card = document.createElement('div');
+        card.className = 'lead-card';
+        card.innerHTML = `
+          <div class="info">
+            <div class="name">#${r.ordem||''} ${r.nome||''}</div>
+            <div class="meta">${r.cidade_interesse||''} • ${r.tipo_interesse||''} • Score ${score}</div>
+            <div class="meta">${r.estagio||''} • Janela ${r.janela_contato||''} • <span class="badge badge-${cls}">${cls}</span></div>
+            <div class="meta">${r.acao_sugerida||''}</div>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <a class="btn-whatsapp" href="${link}" target="_blank" rel="noopener">Enviar WhatsApp</a>
+            <button class="btn-secondary quick-followup" data-nome="${(r.nome||'').replace(/"/g,'&quot;')}" data-telefone="${r.telefone||''}" data-estagio="${r.estagio||''}">Follow-up enviado</button>
+            <a class="btn-secondary" href="../docs/relatorio-diario-litoral-prime.html" rel="noopener">Relatório</a>
+          </div>
+        `;
+        queue.appendChild(card);
+      }
+
+      document.getElementById('q-ready').textContent = ready;
+      document.getElementById('q-hot').textContent = hot;
+      document.getElementById('q-replied').textContent = replied;
+    }
+    render();
+
+    document.getElementById('queue').addEventListener('click', async (e) => {
+      if (!e.target.classList.contains('quick-followup')) return;
+      const nome = e.target.getAttribute('data-nome') || '';
+      const telefone = (e.target.getAttribute('data-telefone') || '').replace(/\D/g,'');
+      const estagio = e.target.getAttribute('data-estagio') || '';
+      const now = new Date().toLocaleString('pt-BR');
+      const row = {data: new Date().toISOString().slice(0,10), nome, telefone, cidade:'', tipo:'', canal:'briefing', estagio, acao:'follow-up', status:'follow-up', observacoes:'Follow-up enviado em ' + now};
+      const res = await fetch('../outreach/metricas.csv');
+      let existing = [];
+      if (res.ok) {
+        const text = await res.text();
+        const lines = text.trim().split('\n');
+        const header = lines[0].split(',');
+        existing = lines.slice(1).filter(Boolean).map(line => {
+          const cols=[]; let cur=''; let inQ=false;
+          for(const ch of line){ if(ch==='"' ){ inQ=!inQ; continue; } if(ch===',' && !inQ){ cols.push(cur.trim()); cur=''; continue; } cur += ch; }
+          cols.push(cur.trim());
+          const obj={}; header.forEach((h,i)=> obj[h]=cols[i]||''); return obj;
+        });
+      }
+      const phoneDigits = String(telefone).replace(/\D/g,'');
+      const match = existing.find(r => String(r.telefone||'').replace(/\D/g,'') === phoneDigits);
+      if (match) {
+        match.status = 'follow-up';
+        match.observacoes = row.observacoes;
+        const stageMap = {'primeiro_contato':'reengajamento','reengajamento':'oferta','oferta':'cross-sell','cross-sell':'cross-sell'};
+        match.estagio = stageMap[estagio.toLowerCase()] || 'reengajamento';
+        match.acao = 'follow-up';
+      } else {
+        existing.push(row);
+      }
+      const header = Object.keys(existing[0] || row).join(',') + '\n';
+      const body = existing.map(r => Object.values(r).map(v => `"${String(v).replace(/"/g,'""')}"`).join(',')).join('\n');
+      const blob = new Blob([header + body], {type: 'text/csv'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'metricas.csv'; a.click();
+      e.target.closest('.lead-card')?.classList.add('done');
+      render();
+    });
+  </script>
+  <a class="whatsapp-fab" href="https://wa.me/5511954346288?text=Olá!%20Quero%20falar%20sobre%20o%20briefing%20do%20dia." target="_blank" rel="noopener" aria-label="WhatsApp">W</a>
+</body>
+</html>

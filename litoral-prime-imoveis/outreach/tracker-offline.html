@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tracker Offline — 2026-07-24 — Litoral Prime Imóveis</title>
+  <style>
+    .tracker{max-width:1180px;margin:0 auto;padding:18px;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px;margin:18px 0}
+    .card{background:#f8fafc;border:1px solid #e5e7eb;border-radius:16px;padding:18px;text-align:center}
+    .card h3{margin:0 0 6px;font-size:13px;color:#64748b;text-transform:uppercase;letter-spacing:.08em}
+    .card .value{font-size:28px;font-weight:800;color:#0a58ca}
+    .filters{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0;align-items:center}
+    .filters select,.filters button{padding:8px 10px;border-radius:8px;border:1px solid #e5e7eb;background:#fff}
+    .sent-row td{opacity:.55}
+    table{width:100%;border-collapse:collapse;margin-top:10px}
+    th,td{padding:10px;border-bottom:1px solid #e5e7eb;text-align:left;vertical-align:top}
+    th{background:#f8fafc}
+    .btn{display:inline-block;margin-right:8px;padding:8px 10px;background:#25d366;color:#fff;border-radius:8px;text-decoration:none;font-weight:700}
+    .btn-sent{padding:8px 10px;background:#64748b;color:#fff;border-radius:8px;border:1px solid transparent;font-weight:700;cursor:pointer}
+    .btn-undo{padding:6px 8px;background:#fff;color:#0f172a;border-radius:8px;border:1px solid #e5e7eb;font-weight:700;cursor:pointer}
+    .badge{display:inline-block;padding:4px 8px;border-radius:999px;font-size:12px;background:#e5e7eb}
+    .note{font-size:12px;color:#64748b;margin-top:10px}
+    a{color:#0a58ca}
+  </style>
+</head>
+<body>
+  <main class="tracker">
+    <section class="hero">
+      <h1>Tracker Offline — 2026-07-24</h1>
+      <p class="subtitle">Use sem servidor. Abra o arquivo direto no navegador.</p>
+      <div class="filters">
+        <select id="city-filter"><option value="">Todas as cidades</option></select>
+        <select id="status-filter"><option value="">Todos os status</option><option value="sent">Enviados</option><option value="pending">Pendentes</option></select>
+        <button id="export-btn">Exportar CSV</button>
+      </div>
+    </section>
+
+    <section class="cards">
+      <div class="card"><h3>Total</h3><div class="value" id="v-total">0</div></div>
+      <div class="card"><h3>Santos</h3><div class="value" id="v-santos">0</div></div>
+      <div class="card"><h3>Guarujá</h3><div class="value" id="v-guaruja">0</div></div>
+      <div class="card"><h3>Praia Grande</h3><div class="value" id="v-pg">0</div></div>
+      <div class="card"><h3>São Vicente</h3><div class="value" id="v-sv">0</div></div>
+      <div class="card"><h3>Bertioga</h3><div class="value" id="v-berta">0</div></div>
+      <div class="card"><h3>Itanhaém</h3><div class="value" id="v-it">0</div></div>
+      <div class="card"><h3>Mongaguá</h3><div class="value" id="v-mon">0</div></div>
+      <div class="card"><h3>Peruíbe</h3><div class="value" id="v-per">0</div></div>
+      <div class="card"><h3>Enviados</h3><div class="value" id="v-sent">0</div></div>
+      <div class="card"><h3>Pendentes</h3><div class="value" id="v-pending">0</div></div>
+    </section>
+
+    <section>
+      <table>
+        <thead>
+          <tr><th>Nome</th><th>Telefone</th><th>Cidade</th><th>Tipo</th><th>Mensagem</th><th>Status</th><th>Ação</th></tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+      <p class="note">Clique em Enviar e depois em Marcado.</p>
+    </section>
+  </main>
+
+  <script id="data-rows" type="application/json">
+  [{"nome":"Roberto Lima","telefone":"5511911112222","cidade_interesse":"Santos","tipo_interesse":"Aluguel","mensagem":"Olá, Roberto Lima! Tudo bem? Vi que você tem interesse em Aluguel na região de Santos. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/5511911112222?text=Ol%C3%A1%2C%20Roberto%20Lima%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Aluguel%20na%20regi%C3%A3o%20de%20Santos.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Vinicius Santos","telefone":"551143321819","cidade_interesse":"Santos","tipo_interesse":"Aluguel","mensagem":"Olá, Vinicius Santos! Tudo bem? Vi que você tem interesse em Aluguel na região de Santos. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551143321819?text=Ol%C3%A1%2C%20Vinicius%20Santos%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Aluguel%20na%20regi%C3%A3o%20de%20Santos.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Ana Santos","telefone":"551438908386","cidade_interesse":"Santos","tipo_interesse":"Venda","mensagem":"Olá, Ana Santos! Tudo bem? Vi que você tem interesse em Venda na região de Santos. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551438908386?text=Ol%C3%A1%2C%20Ana%20Santos%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Venda%20na%20regi%C3%A3o%20de%20Santos.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Igor Rocha","telefone":"551126542351","cidade_interesse":"Santos","tipo_interesse":"Compra","mensagem":"Olá, Igor Rocha! Tudo bem? Vi que você tem interesse em Compra na região de Santos. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551126542351?text=Ol%C3%A1%2C%20Igor%20Rocha%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Compra%20na%20regi%C3%A3o%20de%20Santos.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Mariana Martins","telefone":"551694078161","cidade_interesse":"Santos","tipo_interesse":"Aluguel","mensagem":"Olá, Mariana Martins! Tudo bem? Vi que você tem interesse em Aluguel na região de Santos. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551694078161?text=Ol%C3%A1%2C%20Mariana%20Martins%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Aluguel%20na%20regi%C3%A3o%20de%20Santos.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Vinicius Almeida","telefone":"551693103413","cidade_interesse":"Santos","tipo_interesse":"Aluguel","mensagem":"Olá, Vinicius Almeida! Tudo bem? Vi que você tem interesse em Aluguel na região de Santos. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551693103413?text=Ol%C3%A1%2C%20Vinicius%20Almeida%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Aluguel%20na%20regi%C3%A3o%20de%20Santos.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Nicholas Lima","telefone":"551852553419","cidade_interesse":"Santos","tipo_interesse":"Aluguel","mensagem":"Olá, Nicholas Lima! Tudo bem? Vi que você tem interesse em Aluguel na região de Santos. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551852553419?text=Ol%C3%A1%2C%20Nicholas%20Lima%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Aluguel%20na%20regi%C3%A3o%20de%20Santos.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Sofia Araujo","telefone":"551427648350","cidade_interesse":"Santos","tipo_interesse":"Compra","mensagem":"Olá, Sofia Araujo! Tudo bem? Vi que você tem interesse em Compra na região de Santos. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551427648350?text=Ol%C3%A1%2C%20Sofia%20Araujo%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Compra%20na%20regi%C3%A3o%20de%20Santos.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Lucas Costa","telefone":"551513953767","cidade_interesse":"Santos","tipo_interesse":"Compra","mensagem":"Olá, Lucas Costa! Tudo bem? Vi que você tem interesse em Compra na região de Santos. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551513953767?text=Ol%C3%A1%2C%20Lucas%20Costa%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Compra%20na%20regi%C3%A3o%20de%20Santos.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Helena Araujo","telefone":"551984969653","cidade_interesse":"Santos","tipo_interesse":"Aluguel","mensagem":"Olá, Helena Araujo! Tudo bem? Vi que você tem interesse em Aluguel na região de Santos. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551984969653?text=Ol%C3%A1%2C%20Helena%20Araujo%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Aluguel%20na%20regi%C3%A3o%20de%20Santos.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Aline Costa","telefone":"5513922223333","cidade_interesse":"Guarujá","tipo_interesse":"Compra","mensagem":"Olá, Aline Costa! Tudo bem? Vi que você tem interesse em Compra na região de Guarujá. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/5513922223333?text=Ol%C3%A1%2C%20Aline%20Costa%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Compra%20na%20regi%C3%A3o%20de%20Guaruj%C3%A1.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Eduardo Ribeiro","telefone":"551810122691","cidade_interesse":"Guarujá","tipo_interesse":"Compra","mensagem":"Olá, Eduardo Ribeiro! Tudo bem? Vi que você tem interesse em Compra na região de Guarujá. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551810122691?text=Ol%C3%A1%2C%20Eduardo%20Ribeiro%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Compra%20na%20regi%C3%A3o%20de%20Guaruj%C3%A1.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Ursula Ferreira","telefone":"551948018451","cidade_interesse":"Guarujá","tipo_interesse":"Compra","mensagem":"Olá, Ursula Ferreira! Tudo bem? Vi que você tem interesse em Compra na região de Guarujá. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551948018451?text=Ol%C3%A1%2C%20Ursula%20Ferreira%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Compra%20na%20regi%C3%A3o%20de%20Guaruj%C3%A1.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Fernanda Ferreira","telefone":"551148281489","cidade_interesse":"Guarujá","tipo_interesse":"Aluguel","mensagem":"Olá, Fernanda Ferreira! Tudo bem? Vi que você tem interesse em Aluguel na região de Guarujá. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551148281489?text=Ol%C3%A1%2C%20Fernanda%20Ferreira%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Aluguel%20na%20regi%C3%A3o%20de%20Guaruj%C3%A1.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Zeca Oliveira","telefone":"551980957015","cidade_interesse":"Guarujá","tipo_interesse":"Compra","mensagem":"Olá, Zeca Oliveira! Tudo bem? Vi que você tem interesse em Compra na região de Guarujá. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551980957015?text=Ol%C3%A1%2C%20Zeca%20Oliveira%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Compra%20na%20regi%C3%A3o%20de%20Guaruj%C3%A1.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Juliana Souza","telefone":"551139117182","cidade_interesse":"Guarujá","tipo_interesse":"Aluguel","mensagem":"Olá, Juliana Souza! Tudo bem? Vi que você tem interesse em Aluguel na região de Guarujá. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551139117182?text=Ol%C3%A1%2C%20Juliana%20Souza%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Aluguel%20na%20regi%C3%A3o%20de%20Guaruj%C3%A1.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Sofia Oliveira","telefone":"551589638346","cidade_interesse":"Guarujá","tipo_interesse":"Compra","mensagem":"Olá, Sofia Oliveira! Tudo bem? Vi que você tem interesse em Compra na região de Guarujá. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551589638346?text=Ol%C3%A1%2C%20Sofia%20Oliveira%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Compra%20na%20regi%C3%A3o%20de%20Guaruj%C3%A1.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Vinicius Pereira","telefone":"551887133150","cidade_interesse":"Guarujá","tipo_interesse":"Compra","mensagem":"Olá, Vinicius Pereira! Tudo bem? Vi que você tem interesse em Compra na região de Guarujá. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551887133150?text=Ol%C3%A1%2C%20Vinicius%20Pereira%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Compra%20na%20regi%C3%A3o%20de%20Guaruj%C3%A1.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Helena Almeida","telefone":"551401031051","cidade_interesse":"Guarujá","tipo_interesse":"Compra","mensagem":"Olá, Helena Almeida! Tudo bem? Vi que você tem interesse em Compra na região de Guarujá. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551401031051?text=Ol%C3%A1%2C%20Helena%20Almeida%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Compra%20na%20regi%C3%A3o%20de%20Guaruj%C3%A1.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Igor Nunes","telefone":"551838299737","cidade_interesse":"Guarujá","tipo_interesse":"Compra","mensagem":"Olá, Igor Nunes! Tudo bem? Vi que você tem interesse em Compra na região de Guarujá. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551838299737?text=Ol%C3%A1%2C%20Igor%20Nunes%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Compra%20na%20regi%C3%A3o%20de%20Guaruj%C3%A1.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Thiago Rocha","telefone":"5511933334444","cidade_interesse":"Praia Grande","tipo_interesse":"Aluguel","mensagem":"Olá, Thiago Rocha! Tudo bem? Vi que você tem interesse em Aluguel na região de Praia Grande. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/5511933334444?text=Ol%C3%A1%2C%20Thiago%20Rocha%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Aluguel%20na%20regi%C3%A3o%20de%20Praia%20Grande.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Gustavo Santos","telefone":"551265667010","cidade_interesse":"Praia Grande","tipo_interesse":"Aluguel","mensagem":"Olá, Gustavo Santos! Tudo bem? Vi que você tem interesse em Aluguel na região de Praia Grande. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551265667010?text=Ol%C3%A1%2C%20Gustavo%20Santos%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Aluguel%20na%20regi%C3%A3o%20de%20Praia%20Grande.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Lucas Rocha","telefone":"551233387262","cidade_interesse":"Praia Grande","tipo_interesse":"Aluguel","mensagem":"Olá, Lucas Rocha! Tudo bem? Vi que você tem interesse em Aluguel na região de Praia Grande. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551233387262?text=Ol%C3%A1%2C%20Lucas%20Rocha%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Aluguel%20na%20regi%C3%A3o%20de%20Praia%20Grande.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Helena Martins","telefone":"551278108013","cidade_interesse":"Praia Grande","tipo_interesse":"Aluguel","mensagem":"Olá, Helena Martins! Tudo bem? Vi que você tem interesse em Aluguel na região de Praia Grande. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551278108013?text=Ol%C3%A1%2C%20Helena%20Martins%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Aluguel%20na%20regi%C3%A3o%20de%20Praia%20Grande.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Quésia Souza","telefone":"551702606474","cidade_interesse":"Praia Grande","tipo_interesse":"Aluguel","mensagem":"Olá, Quésia Souza! Tudo bem? Vi que você tem interesse em Aluguel na região de Praia Grande. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551702606474?text=Ol%C3%A1%2C%20Qu%C3%A9sia%20Souza%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Aluguel%20na%20regi%C3%A3o%20de%20Praia%20Grande.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Yasmin Rocha","telefone":"551972343098","cidade_interesse":"Praia Grande","tipo_interesse":"Aluguel","mensagem":"Olá, Yasmin Rocha! Tudo bem? Vi que você tem interesse em Aluguel na região de Praia Grande. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551972343098?text=Ol%C3%A1%2C%20Yasmin%20Rocha%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Aluguel%20na%20regi%C3%A3o%20de%20Praia%20Grande.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Bruno Silva","telefone":"551888208121","cidade_interesse":"Praia Grande","tipo_interesse":"Aluguel","mensagem":"Olá, Bruno Silva! Tudo bem? Vi que você tem interesse em Aluguel na região de Praia Grande. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551888208121?text=Ol%C3%A1%2C%20Bruno%20Silva%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Aluguel%20na%20regi%C3%A3o%20de%20Praia%20Grande.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Wanessa Martins","telefone":"551461939909","cidade_interesse":"Praia Grande","tipo_interesse":"Venda","mensagem":"Olá, Wanessa Martins! Tudo bem? Vi que você tem interesse em Venda na região de Praia Grande. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551461939909?text=Ol%C3%A1%2C%20Wanessa%20Martins%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Venda%20na%20regi%C3%A3o%20de%20Praia%20Grande.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Tiago Almeida","telefone":"551954353462","cidade_interesse":"Praia Grande","tipo_interesse":"Aluguel","mensagem":"Olá, Tiago Almeida! Tudo bem? Vi que você tem interesse em Aluguel na região de Praia Grande. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551954353462?text=Ol%C3%A1%2C%20Tiago%20Almeida%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Aluguel%20na%20regi%C3%A3o%20de%20Praia%20Grande.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Juliana Ferreira","telefone":"551610799118","cidade_interesse":"Praia Grande","tipo_interesse":"Aluguel","mensagem":"Olá, Juliana Ferreira! Tudo bem? Vi que você tem interesse em Aluguel na região de Praia Grande. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551610799118?text=Ol%C3%A1%2C%20Juliana%20Ferreira%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Aluguel%20na%20regi%C3%A3o%20de%20Praia%20Grande.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Mariana Dias","telefone":"5513944445555","cidade_interesse":"Bertioga","tipo_interesse":"Venda","mensagem":"Olá, Mariana Dias! Tudo bem? Vi que você tem interesse em Venda na região de Bertioga. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/5513944445555?text=Ol%C3%A1%2C%20Mariana%20Dias%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Venda%20na%20regi%C3%A3o%20de%20Bertioga.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Eduardo Mendes","telefone":"551613542784","cidade_interesse":"Bertioga","tipo_interesse":"Venda","mensagem":"Olá, Eduardo Mendes! Tudo bem? Vi que você tem interesse em Venda na região de Bertioga. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551613542784?text=Ol%C3%A1%2C%20Eduardo%20Mendes%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Venda%20na%20regi%C3%A3o%20de%20Bertioga.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"},{"nome":"Vinicius Ribeiro","telefone":"551184124118","cidade_interesse":"Itanhaém","tipo_interesse":"Compra","mensagem":"Olá, Vinicius Ribeiro! Tudo bem? Vi que você tem interesse em Compra na região de Itanhaém. Quer que eu envie 3 opções compatíveis com o seu perfil?","whatsapp_link":"https://wa.me/551184124118?text=Ol%C3%A1%2C%20Vinicius%20Ribeiro%21%20Tudo%20bem%3F%20Vi%20que%20voc%C3%AA%20tem%20interesse%20em%20Compra%20na%20regi%C3%A3o%20de%20Itanha%C3%A9m.%20Quer%20que%20eu%20envie%203%20op%C3%A7%C3%B5es%20compat%C3%ADveis%20com%20o%20seu%20perfil%3F"}]
+  </script>
+
+  <script>
+    const STORAGE_KEY = "litoralprime.sent.v1";
+    function loadSentSet(){ try { const raw = localStorage.getItem(STORAGE_KEY); const obj = raw ? JSON.parse(raw) : {}; if(obj.date==="2026-07-24") return new Set(obj.phones||[]); return new Set(); } catch(e){ return new Set(); } }
+    function saveSentSet(set){ const obj = { date: "2026-07-24", phones: Array.from(set) }; localStorage.setItem(STORAGE_KEY, JSON.stringify(obj)); }
+    let sentSet = loadSentSet();
+
+    function render(){
+      const rows = JSON.parse(document.getElementById('data-rows').textContent || '[]');
+      const cityFilter = document.getElementById('city-filter').value;
+      const statusFilter = document.getElementById('status-filter').value;
+      const filtered = rows.filter(r => {
+        const phone = (r.telefone||'').trim();
+        const isSent = sentSet.has(phone);
+        const city = (r.cidade_interesse||'').trim();
+        if(cityFilter && city !== cityFilter) return false;
+        if(statusFilter==='sent' && !isSent) return false;
+        if(statusFilter==='pending' && isSent) return false;
+        return true;
+      });
+
+      const tbody = document.getElementById('rows');
+      tbody.innerHTML="";
+      const counts={Santos:0,Guarujá:0,'Praia Grande':0,'São Vicente':0,Bertioga:0,Itanhaém:0,Mongaguá:0,'Peruíbe':0,sent:0,pending:0,total:filtered.length};
+      for(const r of filtered){
+        const cityKey = (r.cidade_interesse||'').trim();
+        if(cityKey) counts[cityKey]=(counts[cityKey]||0)+1;
+        const phoneKey = (r.telefone||'').trim();
+        const isSent = sentSet.has(phoneKey);
+        if(isSent) counts.sent=(counts.sent||0)+1; else counts.pending=(counts.pending||0)+1;
+
+        const rawLink = (r.whatsapp_link || '').trim();
+        const builtLink = r.telefone ? `https://wa.me/${r.telefone}?text=${encodeURIComponent(r.mensagem || '')}` : '';
+        const href = rawLink || builtLink;
+        const sendBtn = href ? `<a class="btn" href="${href}" target="_blank" rel="noopener">Enviar</a>` : "-";
+        const markBtn = isSent ? `<button class="btn-undo" data-phone="${phoneKey}">Desfazer</button>` : `<button class="btn-sent" data-phone="${phoneKey}">Marcado</button>`;
+
+        const tr=document.createElement('tr');
+        if(isSent) tr.classList.add('sent-row');
+        tr.innerHTML=`<td>${r.nome||""}</td><td>${r.telefone||""}</td><td>${r.cidade_interesse||""}</td><td>${r.tipo_interesse||""}</td><td>${(r.mensagem||"").slice(0,110)}</td><td>${isSent ? "Enviado" : "Pendente"}</td><td>${sendBtn} ${markBtn}</td>`;
+        tbody.appendChild(tr);
+      }
+      document.getElementById('v-total').textContent=counts.total;
+      document.getElementById('v-santos').textContent=counts['Santos']||0;
+      document.getElementById('v-guaruja').textContent=counts['Guarujá']||0;
+      document.getElementById('v-pg').textContent=counts['Praia Grande']||0;
+      document.getElementById('v-sv').textContent=counts['São Vicente']||0;
+      document.getElementById('v-berta').textContent=counts['Bertioga']||0;
+      document.getElementById('v-it').textContent=counts['Itanhaém']||0;
+      document.getElementById('v-mon').textContent=counts['Mongaguá']||0;
+      document.getElementById('v-per').textContent=counts['Peruíbe']||0;
+      document.getElementById('v-sent').textContent=counts.sent||0;
+      document.getElementById('v-pending').textContent=counts.pending||0;
+      document.getElementById('export-btn').onclick=()=>{
+        const blob=new Blob([document.getElementById('rows').innerText],{type:'text/csv'});
+        const url=URL.createObjectURL(blob);
+        const a=document.createElement('a');
+        a.href=url; a.download='tracker-export.csv'; a.click();
+      };
+      document.querySelectorAll('button[data-phone]').forEach(btn=>{
+        btn.addEventListener('click', ()=>{
+          const phone = btn.getAttribute('data-phone');
+          if(!phone) return;
+          if(sentSet.has(phone)) sentSet.delete(phone); else sentSet.add(phone);
+          saveSentSet(sentSet);
+          render();
+        });
+      });
+    }
+
+    function populateCityFilter(){
+      const sel=document.getElementById('city-filter');
+      ['','Santos','Guarujá','Praia Grande','São Vicente','Bertioga','Itanhaém','Mongaguá','Peruíbe'].forEach(city=>{
+        const o=document.createElement('option'); o.value=city; o.textContent=city||'Todas as cidades'; sel.appendChild(o);
+      });
+      sel.onchange=()=>render();
+    }
+    document.getElementById('status-filter').onchange=()=>render();
+    populateCityFilter();
+    render();
+  </script>
+</body>
+</html>

@@ -5,7 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Litoral Prime Imóveis — Imobiliária Digital do Litoral de SP</title>
   <link rel="stylesheet" href="css/style.css">
-</head>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebSite", "name": "Litoral Prime Imóveis", "url": "https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/"}
+{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Litoral Prime Imóveis", "description": "Imobiliária digital no litoral de São Paulo: Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente e Peruíbe.", "telephone": "+551****6288", "areaServed": ["Santos", "Guarujá", "Praia Grande", "Bertioga", "Itanhaém", "Mongaguá", "São Vicente", "Peruíbe"], "address": {"@type": "PostalAddress", "addressLocality": "Santos", "addressRegion": "SP", "addressCountry": "BR"}}
+{"@context": "https://schema.org", "@type": "Service", "serviceType": "Consultoria e intermediação imobiliária", "provider": {"@type": "LocalBusiness", "name": "Litoral Prime Imóveis"}, "areaServed": ["Santos", "Guarujá", "Praia Grande", "Bertioga", "Itanhaém", "Mongaguá", "São Vicente", "Peruíbe"]}
+{"@context": "https://schema.org", "@type": "ItemList", "name": "Destaques — Litoral Prime Imóveis", "itemListElement": [{"@type": "ListItem", "position": 1, "url": "https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/imoveis/apartamento-vista-mar-santos.html", "name": "Apartamento vista mar - Santos"}, {"@type": "ListItem", "position": 2, "url": "https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/imoveis/apartamento-compacto-mongagua.html", "name": "Apartamento compacto - Mongaguá"}, {"@type": "ListItem", "position": 3, "url": "https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/imoveis/studio-moderno-praia-grande.html", "name": "Studio moderno - Praia Grande"}]}
+</script>
 <body>
   <header>
     <nav>
@@ -18,27 +23,161 @@
         <li><a href="#imoveis">Imóveis</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#contato">Contato</a></li>
+        <li><a href="docs/briefing-diario.html">Briefing</a></li>
+        <li><a href="docs/guia-rapido.html">Guia rápido</a></li>
+        <li><a href="guia-como-comprar-imovel-litoral.html">Guia compra</a></li>
+        <li><a href="guia-como-comprar-imovel-temporada-litoral.html">Temporada</a></li>
+        <li><a href="guia-investidor-imovel-litoral.html">Investidor</a></li>
+        <li><a href="servicos/consulta-rapida.html">Atendimento</a></li>
+        <li><a href="servicos/captura-rapida.html">Checklist</a></li>
+        <li><a href="servicos/captura-rapida.html">Captura</a></li>
+        <li><a href="outreach/checklist-compartilhamento.html">Divulgação</a></li>
+        <li><a href="outreach/posts-redes-sociais.html">Posts redes</a></li>
+        <li><a href="outreach/materiais.html">Materiais</a></li>
         <li><a href="https://wa.me/5511954346288" class="btn-whatsapp">WhatsApp</a></li>
       </ul>
     </nav>
-  </header>
+  
+            <section class="servicos-section">
+      <h2>Momentum do dia</h2>
+      <p class="subtitle">Atividade de contatos qualificados por cidade no dia.</p>
+      <p class="subtitle" style="margin-top:6px;color:#64748b">Atualizado em 2026-07-24</p>
+      <div class="servicos-grid">
+        <article class="servico-card"><h3>Santos</h3><p>Santos: 40 contatos qualificados</p></article>
+        <article class="servico-card"><h3>Guarujá</h3><p>Guarujá: 40 contatos qualificados</p></article>
+        <article class="servico-card"><h3>Praia Grande</h3><p>Praia Grande: 40 contatos qualificados</p></article>
+        <article class="servico-card"><h3>São Vicente</h3><p>São Vicente: 40 contatos qualificados</p></article>
+        <article class="servico-card"><h3>Bertioga</h3><p>Bertioga: 40 contatos qualificados</p></article>
+        <article class="servico-card"><h3>Itanhaém</h3><p>Itanhaém: 40 contatos qualificados</p></article>
+        <article class="servico-card"><h3>Mongaguá</h3><p>Mongaguá: 40 contatos qualificados</p></article>
+        <article class="servico-card"><h3>Peruíbe</h3><p>Peruíbe: 40 contatos qualificados</p></article>
+      </div>
+    </section>
+</header>
 
   <main>
     <section id="home" class="hero">
       <h1>Encontre o imóvel perfeito no litoral de SP</h1>
       <p class="subtitle">Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe</p>
       <div class="search-bar">
-        <input type="text" id="search" placeholder="Buscar por cidade, bairro ou tipo...">
+        <input type="text" id="busca" placeholder="Buscar por cidade, bairro ou tipo...">
         <button onclick="buscarImoveis()">Buscar</button>
+        <select id="tipo-filtro"><option value="">Todos os tipos</option></select>
+        <select id="cidade-filtro"><option value="">Todas as cidades</option></select>
       </div>
+      <p style="margin-top:12px"><a class="btn-whatsapp" href="docs/briefing-diario.html" style="background:#0a58ca;display:inline-flex;align-items:center;gap:8px">📋 Briefing do dia</a></p>
     </section>
+
+    <section class="servicos-section">
+      <h2>O que dizem nossos clientes</h2>
+      <div class="servicos-grid">
+        <article class="servico-card">
+          <p>“Encontrei meu apartamento em Santos em menos de 1 semana.”</p>
+          <p><strong>— Mariana, Santos</strong></p>
+        </article>
+        <article class="servico-card">
+          <p>“Atendimento rápido e direto pelo WhatsApp. Achei o imóvel ideal no Guarujá.”</p>
+          <p><strong>— Rafael, Guarujá</strong></p>
+        </article>
+        <article class="servico-card">
+          <p>“Profissionais sérios e transparentes. Meu aluguel em Praia Grande foi aprovado rapidamente.”</p>
+          <p><strong>— Juliana, Praia Grande</strong></p>
+        </article>
+      </div>
+        </section>
+
+    <section class="imoveis-section">
+      <h2>Destaques</h2>
+      <p class="subtitle">Opções com maior potencial de conversão no momento.</p>
+      <div class="servicos-grid">
+        <article class="servico-card">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=60" alt="Apartamento vista mar - Santos" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px">
+          <h3>Apartamento vista mar - Santos</h3>
+          <p>Santos • Venda</p>
+          <p>R$ 720.000</p>
+          <a class="btn-whatsapp" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20no%20im%C3%B3vel%3A%20Apartamento%20vista%20mar%20-%20Santos%20%E2%80%94%20Santos.%20Pode%20me%20enviar%20mais%20detalhes%3F" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn-secondary" href="imoveis/apartamento-vista-mar-santos.html" target="_blank" rel="noopener">Ver detalhes</a>
+        </article>
+        <article class="servico-card">
+          <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=60" alt="Apartamento compacto - Mongaguá" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px">
+          <h3>Apartamento compacto - Mongaguá</h3>
+          <p>Mongaguá • Venda</p>
+          <p>R$ 210.000</p>
+          <a class="btn-whatsapp" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20no%20im%C3%B3vel%3A%20Apartamento%20compacto%20-%20Mongagu%C3%A1%20%E2%80%94%20Mongagu%C3%A1.%20Pode%20me%20enviar%20mais%20detalhes%3F" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn-secondary" href="imoveis/apartamento-compacto-mongagua.html" target="_blank" rel="noopener">Ver detalhes</a>
+        </article>
+        <article class="servico-card">
+          <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=60" alt="Studio moderno - Praia Grande" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px">
+          <h3>Studio moderno - Praia Grande</h3>
+          <p>Praia Grande • Venda</p>
+          <p>R$ 280.000</p>
+          <a class="btn-whatsapp" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20no%20im%C3%B3vel%3A%20Studio%20moderno%20-%20Praia%20Grande%20%E2%80%94%20Praia%20Grande.%20Pode%20me%20enviar%20mais%20detalhes%3F" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn-secondary" href="imoveis/studio-moderno-praia-grande.html" target="_blank" rel="noopener">Ver detalhes</a>
+        </article>
+      </div>
+        </section>
 
     <section id="imoveis" class="imoveis-section">
       <h2>Imóveis Disponíveis</h2>
       <div id="lista-imoveis" class="imoveis-grid">
         <!-- Carregado via JS -->
       </div>
-    </section>
+
+      <!-- Fallback indexável -->
+      <div class="imoveis-grid" style="margin-top:18px">
+        <article class="property-card">
+          <div class="property-media"><img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=60" alt="Casa duplex - Guarujá" loading="lazy" style="width:100%;height:180px;object-fit:cover;display:block"></div>
+          <div class="property-info">
+            <div class="property-title">Casa duplex - Guarujá</div>
+            <div class="property-meta">Guarujá • Aluguel</div>
+            <div class="property-price">R$ 4.500/mês</div>
+            <a class="btn-whatsapp" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20no%20im%C3%B3vel%3A%20Casa%20duplex%20-%20Guaruj%C3%A1.%20Pode%20me%20enviar%20mais%20detalhes%3F" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn-secondary" href="imoveis/casa-duplex-guaruja.html" target="_blank" rel="noopener">Ver detalhes</a>
+          </div>
+        </article>
+        <article class="property-card">
+          <div class="property-media"><img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=60" alt="Cobertura duplex - São Vicente" loading="lazy" style="width:100%;height:180px;object-fit:cover;display:block"></div>
+          <div class="property-info">
+            <div class="property-title">Cobertura duplex - São Vicente</div>
+            <div class="property-meta">São Vicente • Venda</div>
+            <div class="property-price">R$ 1.250.000</div>
+            <a class="btn-whatsapp" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20no%20im%C3%B3vel%3A%20Cobertura%20duplex%20-%20S%C3%A3o%20Vicente.%20Pode%20me%20enviar%20mais%20detalhes%3F" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn-secondary" href="imoveis/cobertura-duplex-sao-vicente.html" target="_blank" rel="noopener">Ver detalhes</a>
+          </div>
+        </article>
+        <article class="property-card">
+          <div class="property-media"><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=60" alt="Casa térrea - Itanhaém" loading="lazy" style="width:100%;height:180px;object-fit:cover;display:block"></div>
+          <div class="property-info">
+            <div class="property-title">Casa térrea - Itanhaém</div>
+            <div class="property-meta">Itanhaém • Aluguel</div>
+            <div class="property-price">R$ 3.200/mês</div>
+            <a class="btn-whatsapp" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20no%20im%C3%B3vel%3A%20Casa%20t%C3%A9rrea%20-%20Itanha%C3%A9m.%20Pode%20me%20enviar%20mais%20detalhes%3F" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn-secondary" href="imoveis/casa-terrea-itanhaem.html" target="_blank" rel="noopener">Ver detalhes</a>
+          </div>
+        </article>
+        <article class="property-card">
+          <div class="property-media"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=60" alt="Sobrado geminado - Peruíbe" loading="lazy" style="width:100%;height:180px;object-fit:cover;display:block"></div>
+          <div class="property-info">
+            <div class="property-title">Sobrado geminado - Peruíbe</div>
+            <div class="property-meta">Peruíbe • Venda</div>
+            <div class="property-price">R$ 450.000</div>
+            <a class="btn-whatsapp" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20no%20im%C3%B3vel%3A%20Sobrado%20geminado%20-%20Peru%C3%ADbe.%20Pode%20me%20enviar%20mais%20detalhes%3F" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn-secondary" href="imoveis/sobrado-geminado-peruibe.html" target="_blank" rel="noopener">Ver detalhes</a>
+          </div>
+        </article>
+        <article class="property-card">
+          <div class="property-media"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=60" alt="Apartamento alto padrão - Bertioga" loading="lazy" style="width:100%;height:180px;object-fit:cover;display:block"></div>
+          <div class="property-info">
+            <div class="property-title">Apartamento alto padrão - Bertioga</div>
+            <div class="property-meta">Bertioga • Aluguel</div>
+            <div class="property-price">R$ 8.900/mês</div>
+            <a class="btn-whatsapp" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20no%20im%C3%B3vel%3A%20Apartamento%20alto%20padr%C3%A3o%20-%20Bertioga.%20Pode%20me%20enviar%20mais%20detalhes%3F" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn-secondary" href="imoveis/apartamento-alto-padrao-bertioga.html" target="_blank" rel="noopener">Ver detalhes</a>
+          </div>
+        </article>
+      </div>
+      <p style="margin-top:12px;text-align:center"><a class="btn-whatsapp" href="imoveis.html" style="background:#0a58ca;display:inline-flex;align-items:center;gap:8px">📦 Ver todos os imóveis</a></p>
+        </section>
 
     <section id="sobre" class="sobre-section">
       <h2>Sobre a Litoral Prime</h2>
@@ -57,10 +196,35 @@
           <p>Satisfação</p>
         </div>
       </div>
-    </section>
+      <p><a href="servicos.html">Ver todos os serviços →</a></p>
+
+      <h2 style="margin-top:24px">Acesso operacional</h2>
+      <p class="subtitle">Entregue mais rápido: briefing, despacho e relatórios em um só lugar.</p>
+      <div class="servicos-grid">
+        <a class="servico-card" href="docs/briefing-diario.html">📋 Briefing do dia</a>
+        <a class="servico-card" href="outreach/despacho.html">🚚 Despacho</a>
+        <a class="servico-card" href="outreach/tracker.html">📈 Tracker</a>
+        <a class="servico-card" href="docs/relatorio-diario-litoral-prime.html">📊 Relatório</a>
+      </div>
+
+      <h2 style="margin-top:24px">Cidades atendidas</h2>
+      <p class="subtitle">Atuação em oito cidades do litoral paulista, com imóveis selecionados e atendimento por WhatsApp.</p>
+      <div class="servicos-grid">
+        <a class="servico-card" href="cidades/santos.html">Santos</a>
+        <a class="servico-card" href="cidades/guaruja.html">Guarujá</a>
+        <a class="servico-card" href="cidades/praia-grande.html">Praia Grande</a>
+        <a class="servico-card" href="cidades/sao-vicente.html">São Vicente</a>
+        <a class="servico-card" href="cidades/itanhaem.html">Itanhaém</a>
+        <a class="servico-card" href="cidades/mongagua.html">Mongaguá</a>
+        <a class="servico-card" href="cidades/peruibe.html">Peruíbe</a>
+        <a class="servico-card" href="cidades/bertioga.html">Bertioga</a>
+      </div>
+        </section>
 
     <section id="contato" class="contato-section">
       <h2>Fale Conosco</h2>
+      <p>Tem um imóvel para vender ou alugar? Fale com a Litoral Prime e publique com alcance qualificado.</p>
+      <a class="btn-whatsapp" href="servicos/captura-rapida.html" target="_blank" rel="noopener" style="background:#0a58ca;display:inline-flex;align-items:center;gap:8px">📢 Quero vender meu imóvel</a>
       <form id="contato-form" class="contact-form">
         <input type="text" id="nome" placeholder="Seu nome" required>
         <input type="email" id="email" placeholder="Seu e-mail" required>
@@ -74,13 +238,15 @@
         <textarea id="mensagem" placeholder="Sua mensagem" rows="4"></textarea>
         <button type="submit">Enviar Mensagem</button>
       </form>
-    </section>
+        </section>
   </main>
 
   <footer>
     <p>&copy; 2026 Litoral Prime Imóveis. Todos os direitos reservados. | Criado pela Praia Digital</p>
+      <p><a href="../sitemap.html">Mapa do site</a> · <a href="../docs/guia-rapido.html">Guia rápido</a></p>
   </footer>
 
   <script src="js/main.js"></script>
+  <a class="whatsapp-fab" href="https://wa.me/5511954346288" target="_blank" rel="noopener" aria-label="WhatsApp">W</a>
 </body>
 </html>

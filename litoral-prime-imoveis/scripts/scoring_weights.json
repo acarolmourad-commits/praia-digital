@@ -1,0 +1,28 @@
+{
+  "tipo_interesse": {
+    "venda": 21,
+    "avaliação": 30,
+    "consultoria proptech": 40,
+    "captação": 20,
+    "aluguel": 14,
+    "compra": 7,
+    "default": 5
+  },
+  "cidade_interesse": {
+    "santos": 14,
+    "guarujá": 20,
+    "praia grande": 20,
+    "bertioga": 25,
+    "itanhaém": 10,
+    "mongaguá": 10,
+    "são vicente": 10,
+    "peruíbe": 10
+  },
+  "origem": {
+    "site": 15,
+    "indicacao": 20,
+    "default": 0
+  },
+  "telefone": 10,
+  "email": 5
+}
