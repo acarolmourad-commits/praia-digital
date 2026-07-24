@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "slug": "apartamento-vista-mar-santos",
+    "title": "Apartamento vista mar - Santos",
+    "city": "Santos",
+    "type": "Venda",
+    "price": "R$ 720.000",
+    "bedrooms": "3",
+    "area": "120m²",
+    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=60",
+    "tags": ["Vista mar", "Varanda", "Condomínio fechado"],
+    "description": "Apartamento com vista mar parcial, varanda gourmet e lazer completo no bairro mais valorizado de Santos."
+  },
+  {
+    "id": 2,
+    "slug": "casa-duplex-guaruja",
+    "city": "Guarujá",
+    "type": "Aluguel",
+    "price": "R$ 4.500/mês",
+    "bedrooms": "4",
+    "area": "220m²",
+    "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=900&q=60",
+    "tags": ["Piscina", "Churrasqueira", "Quintal"],
+    "description": "Casa duplex com piscina, churrasqueira e quintal amplo. Ideal para temporada ou moradia."
+  },
+  {
+    "id": 3,
+    "slug": "studio-moderno-praia-grande",
+    "city": "Praia Grande",
+    "type": "Venda",
+    "price": "R$ 280.000",
+    "bedrooms": "1",
+    "area": "45m²",
+    "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=60",
+    "tags": ["Investimento", "Baixa manutenção", "Mobiliado"],
+    "description": "Studio moderno em lançamento com entrada facilitada. Ótimo para investimento ou início de vida."
+  },
+  {
+    "id": 4,
+    "slug": "cobertura-duplex-sao-vicente",
+    "city": "São Vicente",
+    "type": "Venda",
+    "price": "R$ 1.250.000",
+    "bedrooms": "3",
+    "area": "180m²",
+    "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=60",
+    "tags": ["Varanda gourmet", "Piscina privativa", "Garagem"],
+    "description": "Cobertura duplex com vista deslumbrante, piscina privativa e acabamento alto padrão."
+  },
+  {
+    "id": 5,
+    "slug": "casa-terrea-itanhaem",
+    "city": "Itanhaém",
+    "type": "Aluguel",
+    "price": "R$ 3.200/mês",
+    "bedrooms": "3",
+    "area": "150m²",
+    "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=900&q=60",
+    "tags": ["Quieto", "Quintal", "Perto da praia"],
+    "description": "Casa térrea em rua calma, com quintal e acesso rápido à praia. Perfeita para famílias."
+  },
+  {
+    "id": 6,
+    "slug": "apartamento-compacto-mongagua",
+    "city": "Mongaguá",
+    "type": "Venda",
+    "price": "R$ 210.000",
+    "bedrooms": "2",
+    "area": "58m²",
+    "image": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=900&q=60",
+    "tags": ["Acesso fácil", "Aceita FGTS", "Novo"],
+    "description": "Apartamento compacto com financiamento facilitado, próximo à orla e com opção de FGTS."
+  },
+  {
+    "id": 7,
+    "slug": "sobrado-geminado-peruibe",
+    "city": "Peruíbe",
+    "type": "Venda",
+    "price": "R$ 450.000",
+    "bedrooms": "3",
+    "area": "130m²",
+    "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=60",
+    "tags": ["Lazer", "Segurança", "Quintal"],
+    "description": "Sobrado geminado em condomínio fechado, com área de lazer e segurança 24h."
+  },
+  {
+    "id": 8,
+    "slug": "apartamento-alto-padrao-bertioga",
+    "city": "Bertioga",
+    "type": "Aluguel",
+    "price": "R$ 8.900/mês",
+    "bedrooms": "4",
+    "area": "240m²",
+    "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=60",
+    "tags": ["Alto padrão", "Vista mar", "Lazer completo"],
+    "description": "Apartamento alto padrão com vista mar, lazer completo e acabamento premium em Bertioga."
+  }
+]

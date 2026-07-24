@@ -1,0 +1,149 @@
+"""
+Regenera as landing pages de imóveis a partir do template unificado.
+"""
+from pathlib import Path
+
+BASE = Path(r"C:\Users\Carolina\praia-digital\litoral-prime-imoveis")
+TEMPLATE = BASE / "imoveis" / "template.html"
+LANDINGS_DIR = BASE / "imoveis"
+
+items = [
+    {
+        "slug": "apartamento-vista-mar-santos",
+        "title": "Apartamento vista mar - Santos",
+        "description": "Apartamento com vista mar parcial, varanda gourmet e lazer completo no bairro mais valorizado de Santos.",
+        "city": "Santos",
+        "type": "Venda",
+        "price": "R$ 720.000",
+        "price_raw": "720000",
+        "bedrooms": "3",
+        "area": "120m²",
+        "image": "img/santos-apartamento-vista-mar.png",
+        "tags": "<article class=\"servico-card\"><h3>✓</h3><p>Vista mar</p></article><article class=\"servico-card\"><h3>✓</h3><p>Varanda</p></article><article class=\"servico-card\"><h3>✓</h3><p>Condomínio fechado</p></article>",
+        "related": '<a class="servico-card" href="casa-duplex-guaruja.html"><h3>Casa duplex - Guarujá</h3><p>Guarujá • Aluguel</p><p>R$ 4.500/mês</p></a><a class="servico-card" href="cobertura-duplex-sao-vicente.html"><h3>Cobertura duplex - São Vicente</h3><p>São Vicente • Venda</p><p>R$ 1.250.000</p></a><a class="servico-card" href="apartamento-compacto-mongagua.html"><h3>Apartamento compacto - Mongaguá</h3><p>Mongaguá • Venda</p><p>R$ 210.000</p></a>',
+        "whatsapp_link": "https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Apartamento%20vista%20mar%20-%20Santos.%20Pode%20me%20enviar%20mais%20detalhes%3F",
+    },
+    {
+        "slug": "casa-duplex-guaruja",
+        "title": "Casa duplex - Guarujá",
+        "description": "Casa duplex com piscina, churrasqueira e quintal amplo. Ideal para temporada ou moradia.",
+        "city": "Guarujá",
+        "type": "Aluguel",
+        "price": "R$ 4.500/mês",
+        "price_raw": "4500",
+        "bedrooms": "4",
+        "area": "220m²",
+        "image": "img/gua-casa-duplex.png",
+        "tags": "<article class=\"servico-card\"><h3>✓</h3><p>Piscina</p></article><article class=\"servico-card\"><h3>✓</h3><p>Churrasqueira</p></article><article class=\"servico-card\"><h3>✓</h3><p>Quintal</p></article>",
+        "related": '<a class="servico-card" href="studio-moderno-praia-grande.html"><h3>Studio moderno - Praia Grande</h3><p>Praia Grande • Venda</p><p>R$ 280.000</p></a><a class="servico-card" href="casa-terrea-itanhaem.html"><h3>Casa térrea - Itanhaém</h3><p>Itanhaém • Aluguel</p><p>R$ 3.200/mês</p></a><a class="servico-card" href="apartamento-vista-mar-santos.html"><h3>Apartamento vista mar - Santos</h3><p>Santos • Venda</p><p>R$ 720.000</p></a>',
+        "whatsapp_link": "https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Casa%20duplex%20-%20Guaruj%C3%A1.%20Pode%20me%20enviar%20mais%20detalhes%3F",
+    },
+    {
+        "slug": "studio-moderno-praia-grande",
+        "title": "Studio moderno - Praia Grande",
+        "description": "Studio moderno em lançamento com entrada facilitada. Ótimo para investimento ou início de vida.",
+        "city": "Praia Grande",
+        "type": "Venda",
+        "price": "R$ 280.000",
+        "price_raw": "280000",
+        "bedrooms": "1",
+        "area": "45m²",
+        "image": "img/pg-studio-moderno.png",
+        "tags": "<article class=\"servico-card\"><h3>✓</h3><p>Investimento</p></article><article class=\"servico-card\"><h3>✓</h3><p>Baixa manutenção</p></article><article class=\"servico-card\"><h3>✓</h3><p>Mobiliado</p></article>",
+        "related": '<a class="servico-card" href="apartamento-vista-mar-santos.html"><h3>Apartamento vista mar - Santos</h3><p>Santos • Venda</p><p>R$ 720.000</p></a><a class="servico-card" href="cobertura-duplex-sao-vicente.html"><h3>Cobertura duplex - São Vicente</h3><p>São Vicente • Venda</p><p>R$ 1.250.000</p></a><a class="servico-card" href="apartamento-compacto-mongagua.html"><h3>Apartamento compacto - Mongaguá</h3><p>Mongaguá • Venda</p><p>R$ 210.000</p></a>',
+        "whatsapp_link": "https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Studio%20moderno%20-%20Praia%20Grande.%20Pode%20me%20enviar%20mais%20detalhes%3F",
+    },
+    {
+        "slug": "cobertura-duplex-sao-vicente",
+        "title": "Cobertura duplex - São Vicente",
+        "description": "Cobertura duplex com vista deslumbrante, piscina privativa e acabamento alto padrão.",
+        "city": "São Vicente",
+        "type": "Venda",
+        "price": "R$ 1.250.000",
+        "price_raw": "1250000",
+        "bedrooms": "3",
+        "area": "180m²",
+        "image": "img/sv-cobertura-duplex.png",
+        "tags": "<article class=\"servico-card\"><h3>✓</h3><p>Piscina privativa</p></article><article class=\"servico-card\"><h3>✓</h3><p>Vista mar</p></article><article class=\"servico-card\"><h3>✓</h3><p>Alto padrão</p></article>",
+        "related": '<a class="servico-card" href="apartamento-vista-mar-santos.html"><h3>Apartamento vista mar - Santos</h3><p>Santos • Venda</p><p>R$ 720.000</p></a><a class="servico-card" href="casa-duplex-guaruja.html"><h3>Casa duplex - Guarujá</h3><p>Guarujá • Aluguel</p><p>R$ 4.500/mês</p></a><a class="servico-card" href="apartamento-alto-padrao-bertioga.html"><h3>Apartamento alto padrão - Bertioga</h3><p>Bertioga • Aluguel</p><p>R$ 8.900/mês</p></a>',
+        "whatsapp_link": "https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Cobertura%20duplex%20-%20S%C3%A3o%20Vicente.%20Pode%20me%20enviar%20mais%20detalhes%3F",
+    },
+    {
+        "slug": "casa-terrea-itanhaem",
+        "title": "Casa térrea - Itanhaém",
+        "description": "Casa térrea em rua calma, com quintal e acesso rápido à praia. Perfeita para famílias.",
+        "city": "Itanhaém",
+        "type": "Aluguel",
+        "price": "R$ 3.200/mês",
+        "price_raw": "3200",
+        "bedrooms": "2",
+        "area": "90m²",
+        "image": "img/it-casa-terrea.png",
+        "tags": "<article class=\"servico-card\"><h3>✓</h3><p>Quintal</p></article><article class=\"servico-card\"><h3>✓</h3><p>Perto da praia</p></article><article class=\"servico-card\"><h3>✓</h3><p>Rua calma</p></article>",
+        "related": '<a class="servico-card" href="studio-moderno-praia-grande.html"><h3>Studio moderno - Praia Grande</h3><p>Praia Grande • Venda</p><p>R$ 280.000</p></a><a class="servico-card" href="sobrado-geminado-peruibe.html"><h3>Sobrado geminado - Peruíbe</h3><p>Peruíbe • Venda</p><p>R$ 450.000</p></a><a class="servico-card" href="apartamento-vista-mar-santos.html"><h3>Apartamento vista mar - Santos</h3><p>Santos • Venda</p><p>R$ 720.000</p></a>',
+        "whatsapp_link": "https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Casa%20t%C3%A9rrea%20-%20Itanha%C3%A9m.%20Pode%20me%20enviar%20mais%20detalhes%3F",
+    },
+    {
+        "slug": "apartamento-compacto-mongagua",
+        "title": "Apartamento compacto - Mongaguá",
+        "description": "Apartamento compacto com financiamento facilitado, próximo à orla e com opção de FGTS.",
+        "city": "Mongaguá",
+        "type": "Venda",
+        "price": "R$ 210.000",
+        "price_raw": "210000",
+        "bedrooms": "2",
+        "area": "55m²",
+        "image": "img/mon-ap-compacto.png",
+        "tags": "<article class=\"servico-card\"><h3>✓</h3><p>Financiamento</p></article><article class=\"servico-card\"><h3>✓</h3><p>Próximo à orla</p></article><article class=\"servico-card\"><h3>✓</h3><p>FGTS</p></article>",
+        "related": '<a class="servico-card" href="apartamento-vista-mar-santos.html"><h3>Apartamento vista mar - Santos</h3><p>Santos • Venda</p><p>R$ 720.000</p></a><a class="servico-card" href="studio-moderno-praia-grande.html"><h3>Studio moderno - Praia Grande</h3><p>Praia Grande • Venda</p><p>R$ 280.000</p></a><a class="servico-card" href="casa-terrea-itanhaem.html"><h3>Casa térrea - Itanhaém</h3><p>Itanhaém • Aluguel</p><p>R$ 3.200/mês</p></a>',
+        "whatsapp_link": "https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Apartamento%20compacto%20-%20Mongagu%C3%A1.%20Pode%20me%20enviar%20mais%20detalhes%3F",
+    },
+    {
+        "slug": "sobrado-geminado-peruibe",
+        "title": "Sobrado geminado - Peruíbe",
+        "description": "Sobrado geminado em condomínio fechado, com área de lazer e segurança 24h.",
+        "city": "Peruíbe",
+        "type": "Venda",
+        "price": "R$ 450.000",
+        "price_raw": "450000",
+        "bedrooms": "3",
+        "area": "110m²",
+        "image": "img/per-sobrado.png",
+        "tags": "<article class=\"servico-card\"><h3>✓</h3><p>Condomínio fechado</p></article><article class=\"servico-card\"><h3>✓</h3><p>Segurança 24h</p></article><article class=\"servico-card\"><h3>✓</h3><p>Lazer</p></article>",
+        "related": '<a class="servico-card" href="casa-terrea-itanhaem.html"><h3>Casa térrea - Itanhaém</h3><p>Itanhaém • Aluguel</p><p>R$ 3.200/mês</p></a><a class="servico-card" href="apartamento-alto-padrao-bertioga.html"><h3>Apartamento alto padrão - Bertioga</h3><p>Bertioga • Aluguel</p><p>R$ 8.900/mês</p></a><a class="servico-card" href="casa-duplex-guaruja.html"><h3>Casa duplex - Guarujá</h3><p>Guarujá • Aluguel</p><p>R$ 4.500/mês</p></a>',
+        "whatsapp_link": "https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Sobrado%20geminado%20-%20Peru%C3%ADbe.%20Pode%20me%20enviar%20mais%20detalhes%3F",
+    },
+    {
+        "slug": "apartamento-alto-padrao-bertioga",
+        "title": "Apartamento alto padrão - Bertioga",
+        "description": "Apartamento alto padrão com vista mar, lazer completo e acabamento premium em Bertioga.",
+        "city": "Bertioga",
+        "type": "Aluguel",
+        "price": "R$ 8.900/mês",
+        "price_raw": "8900",
+        "bedrooms": "2",
+        "area": "95m²",
+        "image": "img/berta-alto-padrao.png",
+        "tags": "<article class=\"servico-card\"><h3>✓</h3><p>Vista mar</p></article><article class=\"servico-card\"><h3>✓</h3><p>Lazer completo</p></article><article class=\"servico-card\"><h3>✓</h3><p>Alto padrão</p></article>",
+        "related": '<a class="servico-card" href="cobertura-duplex-sao-vicente.html"><h3>Cobertura duplex - São Vicente</h3><p>São Vicente • Venda</p><p>R$ 1.250.000</p></a><a class="servico-card" href="apartamento-vista-mar-santos.html"><h3>Apartamento vista mar - Santos</h3><p>Santos • Venda</p><p>R$ 720.000</p></a><a class="servico-card" href="studio-moderno-praia-grande.html"><h3>Studio moderno - Praia Grande</h3><p>Praia Grande • Venda</p><p>R$ 280.000</p></a>',
+        "whatsapp_link": "https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Apartamento%20alto%20padr%C3%A3o%20-%20Bertioga.%20Pode%20me%20enviar%20mais%20detalhes%3F",
+    },
+]
+
+template_txt = TEMPLATE.read_text(encoding="utf-8")
+canonical_base = "https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/imoveis"
+
+for item in items:
+    html = template_txt
+    for key, value in item.items():
+        if key == "slug":
+            continue
+        placeholder = "{{" + key + "}}"
+        html = html.replace(placeholder, value)
+    canonical = f"{canonical_base}/{item['slug']}.html"
+    html = html.replace("{{canonical}}", canonical)
+    out = LANDINGS_DIR / f"{item['slug']}.html"
+    out.write_text(html, encoding="utf-8")
+    print(f"REGEN {out.name}")
+
+print('LANDING_REGENERATION_DONE')

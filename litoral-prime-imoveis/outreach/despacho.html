@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Despacho WhatsApp — Litoral Prime Imóveis</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .dispatch-table{width:100%;border-collapse:collapse;margin-top:16px}
+    .dispatch-table th,.dispatch-table td{padding:10px;border-bottom:1px solid #e5e7eb;text-align:left;vertical-align:top}
+    .dispatch-table th{background:#f8fafc}
+    .btn-send{display:inline-block;padding:8px 12px;background:#25d366;color:#fff;border-radius:8px;text-decoration:none;font-weight:600}
+    .status{padding:4px 8px;border-radius:6px;font-size:12px;background:#e5e7eb}
+    .summary{display:flex;gap:12px;margin-top:12px;flex-wrap:wrap}
+    .summary .chip{background:#f1f5f9;padding:8px 12px;border-radius:999px;font-size:14px}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>🏖️ Litoral Prime Imóveis</h1>
+        <p class="tagline">Despacho WhatsApp</p>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../servicos.html">Serviços</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <section class="servicos-section">
+      <h2>O que dizem nossos clientes</h2>
+      <div class="servicos-grid">
+        <article class="servico-card">
+          <p>“Atendimento rápido e transparente pelo WhatsApp.”</p>
+          <p><strong>— Cliente Litoral Prime</strong></p>
+        </article>
+        <article class="servico-card">
+          <p>“Encontrei o imóvel ideal em poucos dias.”</p>
+          <p><strong>— Cliente Litoral Prime</strong></p>
+        </article>
+      </div>
+    </section>
+    <section class="hero">
+      <h1>Despacho do Dia</h1>
+      <p class="subtitle">Clique em enviar para abrir o contato no WhatsApp. Nenhuma mensagem será enviada automaticamente.</p>
+      <div class="summary">
+        <div class="chip" id="chip-total">Total: 0</div>
+        <div class="chip" id="chip-primeiro">Primeiro contato: 0</div>
+        <div class="chip" id="chip-reengajamento">Reengajamento: 0</div>
+        <div class="chip" id="chip-oferta">Oferta: 0</div>
+        <div class="chip" id="chip-cross-sell">Cross-sell: 0</div>
+      </div>
+    </section>
+    <section>
+      <table class="dispatch-table">
+        <thead>
+          <tr><th>Nome</th><th>Telefone</th><th>Cidade</th><th>Tipo</th><th>Estágio</th><th>Mensagem</th><th>Ação</th></tr>
+        </thead>
+        <tbody id="dispatch-body"></tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <p>© 2026 Litoral Prime Imóveis. Todos os direitos reservados. | Criado pela Praia Digital</p>
+      <p><a href="../sitemap.html">Mapa do site</a> · <a href="../docs/guia-rapido.html">Guia rápido</a></p>
+  </footer>
+  <script>
+    async function load(){
+      const res = await fetch('../outreach/do-dia/' + (new Date().toISOString().slice(0,10)) + '/pronto-disparo.csv');
+      const text = await res.text();
+      const lines = text.trim().split('\n');
+      const header = lines[0].split(',');
+      const rows = lines.slice(1).map(line => {
+        const cols = [];
+        let cur = '';
+        let inQ = false;
+        for(const ch of line){
+          if(ch==='"' ){ inQ = !inQ; continue; }
+          if(ch===',' && !inQ){ cols.push(cur.trim()); cur=''; continue; }
+          cur += ch;
+        }
+        cols.push(cur.trim());
+        return cols;
+      });
+      const tbody = document.getElementById('dispatch-body');
+      const counts = {primeiro_contato:0,reengajamento:0,oferta:0,'cross-sell':0};
+      for(const r of rows){
+        const [nome,telefone,cidade,tipo,estagio,mensagem,link,data] = r;
+        counts[estagio] = (counts[estagio]||0) + 1;
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td>${nome}</td><td>${telefone}</td><td>${cidade}</td><td>${tipo}</td><td><span class="status">${estagio}</span></td><td>${mensagem}</td><td><a class="btn-send" href="${link}" target="_blank" rel="noopener">Enviar</a></td>`;
+        tbody.appendChild(tr);
+      }
+      document.getElementById('chip-total').textContent = 'Total: ' + rows.length;
+      document.getElementById('chip-primeiro').textContent = 'Primeiro contato: ' + (counts['primeiro_contato']||0);
+      document.getElementById('chip-reengajamento').textContent = 'Reengajamento: ' + (counts['reengajamento']||0);
+      document.getElementById('chip-oferta').textContent = 'Oferta: ' + (counts['oferta']||0);
+      document.getElementById('chip-cross-sell').textContent = 'Cross-sell: ' + (counts['cross-sell']||0);
+    }
+    load().catch(()=> document.getElementById('dispatch-body').innerHTML = '<tr><td colspan="7">Carregue o CSV ou abra este arquivo via servidor.</td></tr>');
+  </script>
+  <a class="whatsapp-fab" href="https://wa.me/5511954346288?text=Olá!%20Quero%20informações%20sobre%20o%20despacho%20de%20imóveis." target="_blank" rel="noopener" aria-label="WhatsApp">W</a>
+</body>
+</html>

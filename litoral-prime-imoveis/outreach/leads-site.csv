@@ -1,0 +1,3 @@
+data,nome,email,telefone,interesse,mensagem
+2026-07-23,Teste,teste@example.com,11999999999,Compra,Teste automático
+2026-07-23,Teste,,11999999999,,
