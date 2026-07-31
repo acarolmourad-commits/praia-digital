@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Últimos imóveis no litoral | Litoral Prime Imóveis</title>
+<meta name="description" content="Últimos imóveis por cidade no litoral de SP. Atualização automática com oportunidades recentes.">
+<link rel="canonical" href="https://praia.digital/litoral-prime-imoveis/imoveis/ultimos/index.html">
+<meta property="og:title" content="Últimos imóveis no litoral | Litoral Prime">
+<meta property="og:description" content="Últimos imóveis por cidade no litoral de SP.">
+<meta property="og:url" content="https://praia.digital/litoral-prime-imoveis/imoveis/ultimos/index.html">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"Últimos imóveis no litoral | Litoral Prime","url":"https://praia.digital/litoral-prime-imoveis/imoveis/ultimos/index.html","inLanguage":"pt-BR"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","itemListElement":[
+  {"@type":"ListItem","position":1,"url":"https://praia.digital/litoral-prime-imoveis/imoveis/ultimos/santos.html","name":"Últimos imóveis em Santos"},{"@type":"ListItem","position":2,"url":"https://praia.digital/litoral-prime-imoveis/imoveis/ultimos/guaruja.html","name":"Últimos imóveis em Guarujá"},{"@type":"ListItem","position":3,"url":"https://praia.digital/litoral-prime-imoveis/imoveis/ultimos/praia-grande.html","name":"Últimos imóveis em Praia Grande"},{"@type":"ListItem","position":4,"url":"https://praia.digital/litoral-prime-imoveis/imoveis/ultimos/bertioga.html","name":"Últimos imóveis em Bertioga"},{"@type":"ListItem","position":5,"url":"https://praia.digital/litoral-prime-imoveis/imoveis/ultimos/itanhaem.html","name":"Últimos imóveis em Itanhaém"},{"@type":"ListItem","position":6,"url":"https://praia.digital/litoral-prime-imoveis/imoveis/ultimos/mongagua.html","name":"Últimos imóveis em Mongaguá"},{"@type":"ListItem","position":7,"url":"https://praia.digital/litoral-prime-imoveis/imoveis/ultimos/sao-vicente.html","name":"Últimos imóveis em São Vicente"},{"@type":"ListItem","position":8,"url":"https://praia.digital/litoral-prime-imoveis/imoveis/ultimos/peruibe.html","name":"Últimos imóveis em Peruíbe"}
+  ]}
+</script>
+</head>
+<body>
+<main class="container">
+<section class="hero">
+<h1>Últimos imóveis no litoral</h1>
+<p class="lead">Oportunidades recentes por cidade, atualizadas automaticamente.</p>
+<a class="btn btn-primary" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Quero%20ver%20op%C3%A7%C3%B5es%20no%20litoral." target="_blank" rel="noopener">WhatsApp</a>
+</section>
+<section>
+<h2>Oportunidades recentes</h2>
+<div id="ultimos-imoveis" class="imoveis-grid">
+<p>Carregando oportunidades...</p>
+</div>
+<noscript>
+<div class="imoveis-grid">
+<a class="servico-card" href="santos.html"><h3>Santos</h3><p>Ver oportunidades recentes</p></a>
+<a class="servico-card" href="guaruja.html"><h3>Guarujá</h3><p>Ver oportunidades recentes</p></a>
+<a class="servico-card" href="praia-grande.html"><h3>Praia Grande</h3><p>Ver oportunidades recentes</p></a>
+<a class="servico-card" href="bertioga.html"><h3>Bertioga</h3><p>Ver oportunidades recentes</p></a>
+<a class="servico-card" href="itanhaem.html"><h3>Itanhaém</h3><p>Ver oportunidades recentes</p></a>
+<a class="servico-card" href="mongagua.html"><h3>Mongaguá</h3><p>Ver oportunidades recentes</p></a>
+<a class="servico-card" href="sao-vicente.html"><h3>São Vicente</h3><p>Ver oportunidades recentes</p></a>
+<a class="servico-card" href="peruibe.html"><h3>Peruíbe</h3><p>Ver oportunidades recentes</p></a>
+</div>
+</noscript>
+<script>
+(function() {
+  fetch('../imoveis/properties-index.json').then(r => r.ok ? r.json() : Promise.reject()).then(data => {
+    const items = (data || []).slice().sort((a, b) => (b.score || 0) - (a.score || 0)).slice(0, 20);
+    const box = document.getElementById('ultimos-imoveis');
+    if (!items.length) { box.innerHTML = '<p>Sem novidades no momento.</p>'; return; }
+    box.innerHTML = items.map(x => `<a class="property-card" href="../${x.slug || x.title}.html"><img src="../${x.image || 'img/placeholder.png'}" alt="${(x.title || x.slug || 'Imóvel')}" loading="lazy"><div><h3>${x.title || x.slug || 'Imóvel'}</h3><p>${x.city || ''} • ${x.type || ''}</p><small>${x.price || ''}</small></div></a>`).join('');
+  }).catch(() => {
+    document.getElementById('ultimos-imoveis').innerHTML = '<p>Conteúdo indisponível no momento.</p>';
+  });
+})();
+</script>
+</section>
+</main>
+<script src="../js/main.js"></script>
+<p style="font-size:13px;text-align:center;padding:12px 0;"><a href="../../servicos/index.html" style="color:#2563eb;text-decoration:none;font-weight:bold;">Serviços</a> · <a href="../avaliacao-imovel.html" style="color:#2563eb;text-decoration:none;font-weight:bold;">Avaliação gratuita</a></p>
+</body>
+</html>
