@@ -4510,5 +4510,89 @@
     "score": 63,
     "url": "https://praia.digital/litoral-prime-imoveis/imoveis/terreno-em-itarare-sao-vicente-2-quarto-s-60m2-2-vagas.html",
     "clicks": 0
+  },
+  {
+    "slug": "casa-terrea-mongagua",
+    "title": "Casa Térrea - Mongaguá",
+    "city": "Mongaguá",
+    "type": "Casa",
+    "price": "520000",
+    "image": "img/mon-casa-terrea.png",
+    "score": 92,
+    "url": "https://praia.digital/litoral-prime-imoveis/imoveis/casa-terrea-mongagua.html",
+    "clicks": 0,
+    "id": 377
+  },
+  {
+    "slug": "cobertura-duplex-guaruja",
+    "title": "Cobertura Duplex - Guarujá",
+    "city": "Guarujá",
+    "type": "Cobertura",
+    "price": "1480000",
+    "image": "img/gua-cobertura-duplex.png",
+    "score": 96,
+    "url": "https://praia.digital/litoral-prime-imoveis/imoveis/cobertura-duplex-guaruja.html",
+    "clicks": 0,
+    "id": 378
+  },
+  {
+    "slug": "apartamento-3-quartos-bertioga",
+    "title": "Apartamento 3 Quartos - Bertioga",
+    "city": "Bertioga",
+    "type": "Apartamento",
+    "price": "640000",
+    "image": "img/berta-3q.png",
+    "score": 93,
+    "url": "https://praia.digital/litoral-prime-imoveis/imoveis/apartamento-3-quartos-bertioga.html",
+    "clicks": 0,
+    "id": 379
+  },
+  {
+    "slug": "casa-geminada-sao-vicente",
+    "title": "Casa Geminada - São Vicente",
+    "city": "São Vicente",
+    "type": "Casa",
+    "price": "390000",
+    "image": "img/sv-casa-geminada.png",
+    "score": 91,
+    "url": "https://praia.digital/litoral-prime-imoveis/imoveis/casa-geminada-sao-vicente.html",
+    "clicks": 0,
+    "id": 380
+  },
+  {
+    "slug": "terreno-peruibe",
+    "title": "Terreno - Peruíbe",
+    "city": "Peruíbe",
+    "type": "Terreno",
+    "price": "190000",
+    "image": "img/per-terreno.png",
+    "score": 89,
+    "url": "https://praia.digital/litoral-prime-imoveis/imoveis/terreno-peruibe.html",
+    "clicks": 0,
+    "id": 381
+  },
+  {
+    "slug": "casa-condominio-fechado-praia-grande",
+    "title": "Casa em Condomínio Fechado - Praia Grande",
+    "city": "Praia Grande",
+    "type": "Casa",
+    "price": "780000",
+    "image": "img/pg-casa-condominio.png",
+    "score": 94,
+    "url": "https://praia.digital/litoral-prime-imoveis/imoveis/casa-condominio-fechado-praia-grande.html",
+    "clicks": 0,
+    "id": 382
+  },
+  {
+    "slug": "apartamento-vista-mar-guaruja",
+    "title": "Apartamento Vista Mar - Guarujá",
+    "city": "Guarujá",
+    "type": "Apartamento",
+    "price": "6200",
+    "image": "img/gua-vista-mar.png",
+    "score": 95,
+    "url": "https://praia.digital/litoral-prime-imoveis/imoveis/apartamento-vista-mar-guaruja.html",
+    "clicks": 0,
+    "id": 383
   }
 ]
