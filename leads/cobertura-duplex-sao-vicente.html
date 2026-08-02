@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+        {
+      "@type": "Question",
+      "name": "Como solicitar mais informações?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pelo WhatsApp ou formulário na página para atendimento rápido."
+      }
+    },    {
+      "@type": "Question",
+      "name": "Quais cidades são atendidas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Todo o litoral de SP: Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente e Peruíbe."
+      }
+    },    {
+      "@type": "Question",
+      "name": "Quanto tempo para retorno?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Em até 24 horas após o contato, com atendimento humanizado."
+      }
+    }
+  ]
+}
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lead — Cobertura duplex - São Vicente — Litoral Prime Imóveis</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <meta name="description" content="Quero saber mais sobre Cobertura duplex - São Vicente. Fale com especialista e agende visita no litoral de SP.">
+  <link rel="canonical" href="https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/leads/cobertura-duplex-sao-vicente.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cobertura duplex - São Vicente — Litoral Prime Imóveis">
+  <meta property="og:description" content="Quero saber mais sobre Cobertura duplex - São Vicente. Agende visita com a Litoral Prime.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=60">
+  <meta property="og:url" content="https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/leads/cobertura-duplex-sao-vicente.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cobertura duplex - São Vicente — Litoral Prime Imóveis">
+  <meta name="twitter:description" content="Quero saber mais sobre Cobertura duplex - São Vicente.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=60">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Lead — Cobertura duplex - São Vicente — Litoral Prime Imóveis",
+    "description": "Quero saber mais sobre Cobertura duplex - São Vicente. Agende visita no litoral de SP.",
+    "url": "https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/leads/cobertura-duplex-sao-vicente.html"
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>🏖️ Litoral Prime Imóveis</h1>
+        <p class="tagline">São Vicente</p>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../servicos.html">Serviços</a></li>
+        <li><a href="../imoveis.html">Imóveis</a></li>
+        <li><a href="../docs/guia-rapido.html">Guia rápido</a></li>
+        <li><a href="../servicos/consulta-rapida.html">Atendimento</a></li>
+        <li><a href="https://wa.me/5511954346288" class="btn-whatsapp">WhatsApp</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=60" alt="Cobertura duplex - São Vicente" loading="lazy" style="width:100%;max-height:340px;object-fit:cover;border-radius:16px">
+      <h1>Cobertura duplex - São Vicente</h1>
+      <p class="subtitle">Quero mais informações e agendar uma visita no melhor horário.</p>
+      <a class="btn-whatsapp" href="https://wa.me/5511954346288?text=Ol%C3%A1%21+Quero+mais+informa%C3%A7%C3%B5es+sobre+a+Cobertura+duplex+-+S%C3%A3o+Vicente.+Pode+me+enviar+detalhes+e+agendar+uma+visita%3F" target="_blank" rel="noopener">Falar com especialista</a>
+    </section>
+
+    <section class="servicos-section">
+      <h2>Contato rápido</h2>
+      <form id="lead-form" style="display:flex;flex-direction:column;gap:10px;max-width:520px;margin:0 auto">
+        <input type="text" id="lead-nome" placeholder="Seu nome" required>
+        <input type="tel" id="lead-telefone" placeholder="Seu WhatsApp" required>
+        <select id="lead-horario">
+          <option value="">Horário preferido</option>
+          <option>Manhã</option><option>Tarde</option><option>Noite</option>
+        </select>
+        <button type="submit" class="btn-whatsapp">Enviar no WhatsApp</button>
+      </form>
+      <script>(function() {
+        const form = document.getElementById('lead-form');
+        if (!form) return;
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const nome = document.getElementById('lead-nome').value.trim();
+          const telefone = document.getElementById('lead-telefone').value.trim();
+          const horario = document.getElementById('lead-horario').value.trim();
+          if (!nome || !telefone) { alert('Preencha nome e WhatsApp.'); return; }
+          const titulo = document.title.replace('Lead — ', '').replace(' — Litoral Prime Imóveis', '');
+          const texto = 'Olá! Tenho interesse no imóvel: ' + titulo + '. Nome: ' + nome + ', WhatsApp: ' + telefone + ', Horário: ' + (horario || 'Não informado');
+          window.location.href = 'https://wa.me/5511954346288?text=' + encodeURIComponent(texto);
+        });
+      })();</script>
+    </section>
+
+    <section class="servicos-section">
+      <h2>Veja também</h2>
+      <div class="servicos-grid">
+        <a class="servico-card" href="../encontrar-imovel.html">🔎 Encontrar imóvel</a>
+        <a class="servico-card" href="../cidades/sao-vicente.html">São Vicente</a>
+        <a class="servico-card" href="../cidades/sao-vicente-imoveis-venda.html">Imóveis à venda em São Vicente</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Litoral Prime Imóveis. Todos os direitos reservados. | Criado pela Praia Digital</p>
+    <p><a href="../sitemap.xml">Sitemap</a></p>
+  </footer>
+  <a class="whatsapp-fab" href="https://wa.me/5511954346288?text=Ol%C3%A1%21+Quero+mais+informa%C3%A7%C3%B5es+sobre+a+Cobertura+duplex+-+S%C3%A3o+Vicente.+Pode+me+enviar+detalhes+e+agendar+uma+visita%3F" target="_blank" rel="noopener" aria-label="WhatsApp">W</a>
+</body>
+</html>
