@@ -280,7 +280,7 @@
           <div class="followup"><strong>Sugestão:</strong> ${suggested.titulo} — ${fmt(suggested.preco)} · ROI estimado ${suggested.roi}% a.a.</div>
           <div class="followup"><strong>Follow-up sugerido:</strong> ${followups[score]}</div>
           <div class="cta-row">
-            <a class="cta-whatsapp" href="${waHref}" target="_blank">Enviar no WhatsApp</a>
+            <a class="cta-whatsapp" href="${waHref}" target="_blank" rel="noopener">Enviar no WhatsApp</a>
             <a class="cta-email" href="mailto:comercial@praia.digital?subject=Follow-up%20${encodeURIComponent(nome)}&body=${encodeURIComponent(followups[score])}">Enviar por e-mail</a>
           </div>
         </div>
