@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog Praia Digital — Litoral Prime Imóveis</title>
+    <link>https://acarolmourad.github.io/praia-digital/blog/index.html</link>
+    <description>Conteúdos sobre imóveis no litoral, captação, SEO local, IA imobiliária e vendas.</description>
+    <language>pt-BR</language>
+    <lastBuildDate>TODO</lastBuildDate>
+    <atom:link href="https://acarolmourad.github.io/praia-digital/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Automação de visitas para corretores no litoral</title>
+      <link>https://acarolmourad.github.io/praia-digital/blog/automacao-visitas-corretores-2026-2026-08-02.html</link>
+      <guid isPermaLink="true">https://acarolmourad.github.io/praia-digital/blog/automacao-visitas-corretores-2026-2026-08-02.html</guid>
+    </item>
+  </channel>
+</rss>
