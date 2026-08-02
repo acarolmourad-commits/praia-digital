@@ -1,0 +1,25 @@
+titulo,descricao,preco,cidade,tipo,imagem
+Apartamento Vista Mar Santos,Apartamento com varanda e vista mar em Santos.,850000,Santos,Apartamento,img/santos-apartamento-vista-mar.png
+Cobertura Duplex Santos,Cobertura duplex com piscina privativa.,2100000,Santos,Cobertura,img/santos-cobertura-duplex.png
+Terreno Santos,Terreno alto padrão perto da orla.,950000,Santos,Terreno,img/santos-terreno-alto-padrao.png
+Sobrado Guaruja,Sobrado em condomínio fechado no Guarujá.,620000,Guarujá,Casa,img/guaruja-sobrado.png
+Apartamento Pitangueiras,"Apartamento em Pitangueiras, Guarujá. Perfeito para quem busca conforto e localização estratégica no litoral de SP.",620000,Guarujá,Apartamento,img/guaruja-sobrado.png
+Casa Pitangueiras,"Casa em Pitangueiras, Guarujá. Perfeito para quem busca conforto e localização estratégica no litoral de SP.",620000,Guarujá,Casa,img/guaruja-sobrado.png
+Studio Praia Grande,Studio mobiliado a 2 quadras da praia.,280000,Praia Grande,Studio,img/pg-studio.png
+Apartamento Guilhermina,"Apartamento em Guilhermina, Praia Grande. Perfeito para quem busca conforto e localização estratégica no litoral de SP.",280000,Praia Grande,Apartamento,img/pg-studio.png
+Casa Guilhermina,"Casa em Guilhermina, Praia Grande. Perfeito para quem busca conforto e localização estratégica no litoral de SP.",280000,Praia Grande,Casa,img/pg-studio.png
+Terreno Itanhaém,Terreno em loteamento aprovado.,180000,Itanhaém,Terreno,img/itanhaem-terreno.png
+Apartamento Centro,"Apartamento em Centro, Itanhaém. Perfeito para quem busca conforto e localização estratégica no litoral de SP.",180000,Itanhaém,Apartamento,img/itanhaem-terreno.png
+Casa Centro,"Casa em Centro, Itanhaém. Perfeito para quem busca conforto e localização estratégica no litoral de SP.",180000,Itanhaém,Casa,img/itanhaem-terreno.png
+Apartamento Mongaguá,Apartamento compacto com pé direito duplo.,340000,Mongaguá,Apartamento,img/mongagua-apartamento.png
+Apartamento Centro,"Apartamento em Centro, Mongaguá. Perfeito para quem busca conforto e localização estratégica no litoral de SP.",340000,Mongaguá,Apartamento,img/mongagua-apartamento.png
+Casa Centro,"Casa em Centro, Mongaguá. Perfeito para quem busca conforto e localização estratégica no litoral de SP.",340000,Mongaguá,Casa,img/mongagua-apartamento.png
+Casa São Vicente,Casa térrea com quintal grande.,520000,São Vicente,Casa,img/sv-casa-terrea.png
+Apartamento Centro,"Apartamento em Centro, São Vicente. Perfeito para quem busca conforto e localização estratégica no litoral de SP.",520000,São Vicente,Apartamento,img/sv-casa-terrea.png
+Casa Centro,"Casa em Centro, São Vicente. Perfeito para quem busca conforto e localização estratégica no litoral de SP.",520000,São Vicente,Casa,img/sv-casa-terrea.png
+Chácara Peruíbe,Chácara com pomar e piscina.,750000,Peruíbe,Casa,img/peruibe-chacara.png
+Apartamento Centro,"Apartamento em Centro, Peruíbe. Perfeito para quem busca conforto e localização estratégica no litoral de SP.",750000,Peruíbe,Apartamento,img/peruibe-chacara.png
+Casa Centro,"Casa em Centro, Peruíbe. Perfeito para quem busca conforto e localização estratégica no litoral de SP.",750000,Peruíbe,Casa,img/peruibe-chacara.png
+Apartamento Bertioga,Apartamento novo em condomínio com lazer.,410000,Bertioga,Apartamento,img/bertioga-apartamento.png
+Apartamento Riviera,"Apartamento em Riviera, Bertioga. Perfeito para quem busca conforto e localização estratégica no litoral de SP.",410000,Bertioga,Apartamento,img/bertioga-apartamento.png
+Casa Riviera,"Casa em Riviera, Bertioga. Perfeito para quem busca conforto e localização estratégica no litoral de SP.",410000,Bertioga,Casa,img/bertioga-apartamento.png
