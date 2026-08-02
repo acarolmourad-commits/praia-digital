@@ -117,7 +117,7 @@ for path in sorted(files):
             if key in rel.parts:
                 city = key
                 break
-    qas = neighborhood_faqs[city]['faqs'] if city else None
+    qas = neighborhood_faqs[city] if city else None
     if not qas:
         skipped += 1
         continue
