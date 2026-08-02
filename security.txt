@@ -1,0 +1,21 @@
+# Security Policy — Praia Digital / Litoral Prime Imóveis
+
+## Contact
+- E-mail: comercial@praia.digital
+- WhatsApp: (11) 95434-6288
+
+## Reporting Security Issues
+If you find a security issue, please contact us via e-mail or WhatsApp before public disclosure.
+We will acknowledge within 48 hours and provide a fix timeline.
+
+## Scope
+This policy covers:
+- https://acarolmourad.github.io/praia-digital/
+- https://acarolmourad-commits.github.io/praia-digital/
+
+Out-of-scope:
+- Third-party integrations
+- Social media profiles
+
+## Safe Harbor
+We will not pursue legal action against researchers who follow this policy.
