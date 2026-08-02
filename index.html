@@ -4446,7 +4446,7 @@ function printListing() {
   const l = listings.find(x => x.id === currentModalId);
   if (!l) return;
   const w = window.open('', '_blank');
-  w.document.write('<html><head><title>' + l.titulo + ' - Praia Digital</title><style>body{font-family:Segoe UI,sans-serif;padding:2rem;max-width:700px;margin:0 auto;}.price{font-size:1.5rem;color:#0077B6;font-weight:700;}.contact{background:#0077B6;color:white;padding:1rem;border-radius:12px;margin-top:2rem;}</style></head><body>');
+  w.document.write('<html><head><style>body{font-family:Segoe UI,sans-serif;padding:2rem;max-width:700px;margin:0 auto;}.price{font-size:1.5rem;color:#0077B6;font-weight:700;}.contact{background:#0077B6;color:white;padding:1rem;border-radius:12px;margin-top:2rem;}</style></head><body>');
   w.document.write('<h1>' + l.icon + ' ' + l.titulo + '</h1><p>📍 ' + l.cidadeLabel + '</p><p class="price">' + formatPrice(l.preco) + '</p>');
   w.document.write('<p>📐 ' + l.area + 'm² | 🛏️ ' + l.dormitorios + ' dorms | 🧠 Score IA: ' + l.aiScore + '/100 | 📈 ROI: ' + l.roi + '% a.a.</p>');
   w.document.write('<p>' + l.descricao + '</p>');
@@ -5625,7 +5625,7 @@ function printReport() {
   const content = document.getElementById('reportPreviewBody').innerHTML;
   const header = document.getElementById('reportPreviewHeader').innerHTML;
   const printWindow = window.open('', '_blank');
-  printWindow.document.write('<html><head><title>Relatório Imóvel - Praia Digital</title>');
+  printWindow.document.write('<html><head>');
   printWindow.document.write('<style>body{font-family:Arial,sans-serif;padding:2rem;max-width:800px;margin:0 auto;color:#333;}table{width:100%;border-collapse:collapse;margin-bottom:1rem;}td{padding:0.4rem;border-bottom:1px solid #eee;}h3{color:#1a5276;border-bottom:2px solid #1a5276;padding-bottom:0.5rem;}</style>');
   printWindow.document.write('</head><body>');
   printWindow.document.write('<div style="background:#0f3460;color:white;padding:1.5rem;border-radius:12px;margin-bottom:1.5rem;">' + header + '</div>');
