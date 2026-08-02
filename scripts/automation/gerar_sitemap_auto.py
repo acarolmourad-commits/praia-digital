@@ -3,7 +3,7 @@ from pathlib import Path
 from datetime import date
 
 root = Path("C:/Users/Carolina/praia-digital")
-exclude_dirs = {"node_modules", ".git", "outreach", "docs", "scripts", "assets", "imoveis", "blog"}
+exclude_dirs = {"node_modules", ".git", "outreach", "docs", "scripts", "assets", "backups"}
 base_url = "https://acarolmourad-commits.github.io/praia-digital/"
 
 html_files = []
