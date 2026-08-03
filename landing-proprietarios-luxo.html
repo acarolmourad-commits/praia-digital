@@ -73,7 +73,7 @@
   "@type": "Organization",
   "name": "Litoral Prime Imóveis",
   "url": "https://praia.digital/",
-  "logo": "https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/img/logo.png",
+  "logo": "https://praia.digital/img/logo.png",
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+55-11-95434-6288",
@@ -109,13 +109,16 @@
     <header>
         <h1>Captação de imóveis de luxo no litoral paulista</h1>
         <p>Preencha o formulário para uma abordagem reservada e consultiva</p>
-        <nav aria-label="Navegação principal"><a href="../index.html">Home</a> | <a href="../ferramentas.html">Ferramentas Gratuitas</a></nav>
+        <nav aria-label="Navegação principal"><a href="../index.html">Home</a> | <a href="https://praia.digital/assets/painel-ferramentas.html">Ferramentas Gratuitas</a></nav>
     </header>
     <main id="main">
-        <form aria-label="Contact form">
-            <label>Nome: <input type="text" name="nome"></label><br>
-            <label>Telefone: <input type="text" name="telefone"></label><br>
-            <label>E-mail: <input type="email" name="email"></label><br>
+        <form action="https://formsubmit.co/comercial@praia.digital" method="POST" aria-label="Contact form">
+            <input type="hidden" name="_subject" value="Novo lead: Captação proprietários de luxo">
+            <input type="hidden" name="_next" value="https://praia.digital/obrigado-contato.html">
+            <input type="text" name="_honey" style="display:none">
+            <label>Nome: <input type="text" name="nome" required></label><br>
+            <label>Telefone: <input type="text" name="telefone" required></label><br>
+            <label>E-mail: <input type="email" name="email" required></label><br>
             <label>Imóvel: <input type="text" name="imovel"></label><br>
             <label>Cidade: <input type="text" name="cidade"></label><br>
             <button type="submit">Solicitar contato reservado</button>

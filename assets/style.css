@@ -1,0 +1,6 @@
+body{font-family:Arial,sans-serif;max-width:900px;margin:auto;padding:20px;color:#222;background:#f5f7fa}
+a{color:#0b4f6c}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:1rem;margin:1rem 0}
+.btn{display:inline-block;background:#0b4f6c;color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none}
+.skip-link{position:absolute;left:-9999px}
+nav a{margin-right:12px}
