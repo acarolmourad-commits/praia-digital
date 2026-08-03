@@ -78,13 +78,18 @@ def main():
     elif mode == 'cities':
         run('python scripts/automation/generate_city_service_pages.py', 'Gerar páginas cidade-servico')
         run('python scripts/automation/add_landings_to_sitemap.py', 'Atualizar sitemap')
+        run('python scripts/automation/seo_audit.py', 'Auditar SEO pós-geração')
         run('git add -A', 'Git add')
         run('git diff --cached --quiet || git commit -m "feat: regenerate city-service pages + sitemap update"', 'Git commit')
         run('git push origin main', 'Git push')
         print('\n✅ Loop de cidades concluído.')
 
+    elif mode == 'audit':
+        run('python scripts/automation/seo_audit.py', 'Auditar SEO')
+        print('\n✅ Auditoria concluída.')
+
     else:
-        print('Uso: python scripts/automation/content_engine.py [landings|blog|social|full|regenerate_sitemap|cities]')
+        print('Uso: python scripts/automation/content_engine.py [landings|blog|social|full|regenerate_sitemap|cities|audit]')
         sys.exit(1)
 
 if __name__ == '__main__':
