@@ -108,7 +108,7 @@
   <div class="wrap">
     <h1>Avaliação de preço de mercado</h1>
     <p>Preencha os dados abaixo para receber uma faixa de referência.</p>
-    <form onsubmit="event.preventDefault();this.querySelector('.result').style.display='block';this.querySelector('.result').textContent='Faixa estimada: '+((parseInt(this.area.value||0)*8500)+(parseInt(this.quartos.value||0)*12000))+'. Use esta base com um profissional local. ';">
+    <form onsubmit="event.preventDefault();this.querySelector('.result').style.display='block';this.querySelector('.result').textContent='Faixa estimada: '+((parseInt(this.area.value||0)*8500)+(parseInt(this.quartos.value||0)*12000))+'. Use esta base com um profissional local. ';" aria-label="Contact form">
       <label>Tipo</label>
       <select name="tipo">
         <option>Apartamento</option><option>Casa</option><option>Cobertura</option><option>Studio</option><option>Sobrado</option>

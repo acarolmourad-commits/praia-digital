@@ -108,7 +108,7 @@
   <div class="wrap">
     <h1>Roteiro de visita automático</h1>
     <p>Monte um roteiro simples para reduzir no-show.</p>
-    <form onsubmit="event.preventDefault();const c=document.getElementById('c').value||'';const i=document.getElementById('i').value||'';const d=document.getElementById('d').value||'';const r=document.querySelector('.result');r.style.display='block';r.textContent='Roteiro: 1) Confirmação imediata em '+c+'. 2) Lembrete 24h antes. 3) Roteiro: '+i+'. 4) Reagendamento automático se necessário. Data-alvo: '+d+'.';">
+    <form onsubmit="event.preventDefault();const c=document.getElementById('c').value||'';const i=document.getElementById('i').value||'';const d=document.getElementById('d').value||'';const r=document.querySelector('.result');r.style.display='block';r.textContent='Roteiro: 1) Confirmação imediata em '+c+'. 2) Lembrete 24h antes. 3) Roteiro: '+i+'. 4) Reagendamento automático se necessário. Data-alvo: '+d+'.';" aria-label="Contact form">
       <label>Cidade</label>
       <select id="c"><option>Praia Grande</option><option>Caraguatatuba</option><option>Ilhabela</option><option>Ubatuba</option><option>São Sebastião</option><option>Bertioga</option><option>Maresias</option><option>Guarujá</option><option>Iguape</option><option>Cananéia</option></select>
       <label>Imóvel ou endereço</label>

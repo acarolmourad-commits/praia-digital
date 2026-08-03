@@ -108,7 +108,7 @@
   <div class="wrap">
     <h1>Pré-qualificação de leads</h1>
     <p>Responda 3 perguntas rápidas e receba uma classificação inicial.</p>
-    <form onsubmit="event.preventDefault();const or=document.getElementById('or').value||'';const dt=document.getElementById('dt').value||'';const w=document.getElementById('w').value||'';const r=document.querySelector('.result');r.style.display='block';r.textContent='Classificação: orçamento='+or+', data='+dt+', whatsapp='+w+'. Se dois ou mais forem preenchidos, classifique como lead quente para follow-up em 24h.';">
+    <form onsubmit="event.preventDefault();const or=document.getElementById('or').value||'';const dt=document.getElementById('dt').value||'';const w=document.getElementById('w').value||'';const r=document.querySelector('.result');r.style.display='block';r.textContent='Classificação: orçamento='+or+', data='+dt+', whatsapp='+w+'. Se dois ou mais forem preenchidos, classifique como lead quente para follow-up em 24h.';" aria-label="Contact form">
       <label>Orçamento estimado</label>
       <select id="or"><option>Até R$ 300 mil</option><option>R$ 300 mil a R$ 700 mil</option><option>R$ 700 mil a R$ 1,2 milhões</option><option>Acima de R$ 1,2 milhões</option></select>
       <label>Data pretendida</label>

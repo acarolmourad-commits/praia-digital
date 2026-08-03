@@ -108,7 +108,7 @@
   <div class="wrap">
     <h1>Comparar imóveis no litoral</h1>
     <p>Preencha os dados para ver um comparativo simples.</p>
-    <form onsubmit="event.preventDefault();const a=parseInt(document.getElementById('a').value)||0;const b=parseInt(document.getElementById('b').value)||0;const r=document.querySelector('.result');r.style.display='block';r.textContent='Comparativo: imóvel A com '+a+' m² e imóvel B com '+b+' m². Considere também localização, temporada e disponibilidade. ';">
+    <form onsubmit="event.preventDefault();const a=parseInt(document.getElementById('a').value)||0;const b=parseInt(document.getElementById('b').value)||0;const r=document.querySelector('.result');r.style.display='block';r.textContent='Comparativo: imóvel A com '+a+' m² e imóvel B com '+b+' m². Considere também localização, temporada e disponibilidade. ';" aria-label="Contact form">
       <label>Imóvel A — área útil</label>
       <input id="a" type="number" placeholder="Ex: 98">
       <label>Imóvel A — quartos</label>

@@ -2350,7 +2350,7 @@
 <section class="search-section" id="buscar">
   <h2></h2>
   <p class="search-subtitle">Filtros tradicionais ou use a busca inteligente acima</p>
-  <form class="search-grid" id="searchForm" onsubmit="event.preventDefault();filterListings();">
+  <form class="search-grid" id="searchForm" onsubmit="event.preventDefault();filterListings();" aria-label="Contact form">
     <div class="search-field">
       <label for="tipo">Tipo</label>
       <select id="tipo">
@@ -3455,7 +3455,7 @@
       <a href="https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral" target="_blank" rel="noopener" class="contact-cta-btn btn-whatsapp">💬 WhatsApp — Resposta rápida</a>
       <a href="mailto:comercial@praiadigital.com" class="contact-cta-btn btn-email">✉️ Enviar e-mail</a>
     </div>
-    <form class="contact-form" id="contactForm" onsubmit="handleContact(event)">
+    <form class="contact-form" id="contactForm" onsubmit="handleContact(event)" aria-label="Contact form">
       <div class="form-group ai-score-group">
         <label for="contato-nome">Nome completo</label>
         <input type="text" id="contato-nome" name="nome" required placeholder="Seu nome">
@@ -3869,7 +3869,7 @@
 <section class="realtors-section" id="parcerias-b2b" style="background:linear-gradient(135deg,var(--purple),var(--purple-light));color:var(--white);">
   <h2></h2>
   <p style="text-align:center;opacity:0.85;margin-bottom:2rem;">Imobiliárias, construtoras, incorporadoras, administradoras e portais.</p>
-  <form id="b2bLeadForm" style="max-width:700px;margin:0 auto;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));">
+  <form id="b2bLeadForm" style="max-width:700px;margin:0 auto;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));" aria-label="Contact form">
     <div>
       <label style="font-size:.8rem;font-weight:700;margin-bottom:.3rem;display:block;opacity:.9;">Nome</label>
       <input id="b2bNome" required style="width:100%;padding:.65rem 1rem;border:2px solid rgba(255,255,255,.4);border-radius:12px;font-size:.95rem;background:rgba(255,255,255,.15);color:white;">

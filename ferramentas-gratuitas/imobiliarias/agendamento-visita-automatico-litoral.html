@@ -108,7 +108,7 @@
   <div class="wrap">
     <h1>Agendamento de visita automático</h1>
     <p>Preencha e gere um confirmatório simples.</p>
-    <form onsubmit="event.preventDefault();const n=document.getElementById('n').value||'';const i=document.getElementById('i').value||'';const d=document.getElementById('d').value||'';const h=document.getElementById('h').value||'';const r=document.querySelector('.result');r.style.display='block';r.textContent='Confirmado para '+n+': visita em '+i+' no dia '+d+' às '+h+'. Lembrete automático 24h antes incluso.';">
+    <form onsubmit="event.preventDefault();const n=document.getElementById('n').value||'';const i=document.getElementById('i').value||'';const d=document.getElementById('d').value||'';const h=document.getElementById('h').value||'';const r=document.querySelector('.result');r.style.display='block';r.textContent='Confirmado para '+n+': visita em '+i+' no dia '+d+' às '+h+'. Lembrete automático 24h antes incluso.';" aria-label="Contact form">
       <label>Nome</label>
       <input id="n" placeholder="Nome do lead">
       <label>Imóvel/endereço</label>
