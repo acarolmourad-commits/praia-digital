@@ -108,7 +108,7 @@
   <div class="wrap">
     <h1>Predição de vendas no litoral</h1>
     <p>Informe os dados e receba uma estimativa simples.</p>
-    <form onsubmit="event.preventDefault();const m=parseInt(document.getElementById('m').value)||0;const p=parseInt(document.getElementById('p').value)||0;const s=parseInt(document.getElementById('s').value)||0;const r=document.querySelector('.result');r.style.display='block';r.textContent='Estimativa inicial: '+(m*s*0.04+p*0.02)+' leads qualificados no próximo mês. Use essa base para planejar follow-up e conteúdo.';">
+    <form onsubmit="event.preventDefault();const m=parseInt(document.getElementById('m').value)||0;const p=parseInt(document.getElementById('p').value)||0;const s=parseInt(document.getElementById('s').value)||0;const r=document.querySelector('.result');r.style.display='block';r.textContent='Estimativa inicial: '+(m*s*0.04+p*0.02)+' leads qualificados no próximo mês. Use essa base para planejar follow-up e conteúdo.';" aria-label="Contact form">
       <label>Média de visitas por mês</label>
       <input id="m" type="number" placeholder="Ex: 40">
       <label>Imóveis publicados</label>

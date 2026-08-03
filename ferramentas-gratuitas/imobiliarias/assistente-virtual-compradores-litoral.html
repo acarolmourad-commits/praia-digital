@@ -108,7 +108,7 @@
   <div class="wrap">
     <h1>Assistente virtual para compradores</h1>
     <p>Faça uma pergunta típica e receba uma orientação inicial.</p>
-    <form onsubmit="event.preventDefault();const d=document.getElementById('d').value||'';const c=document.getElementById('c').value||'';const r=document.querySelector('.result');r.style.display='block';r.textContent='Para compradores em '+c+', eu recomendaria começar por: orçamento, temporada pretendida e preferência entre vista, preço e espaço. Responda com esses 3 pontos para eu indicar um imóvel mais direcionado.';">
+    <form onsubmit="event.preventDefault();const d=document.getElementById('d').value||'';const c=document.getElementById('c').value||'';const r=document.querySelector('.result');r.style.display='block';r.textContent='Para compradores em '+c+', eu recomendaria começar por: orçamento, temporada pretendida e preferência entre vista, preço e espaço. Responda com esses 3 pontos para eu indicar um imóvel mais direcionado.';" aria-label="Contact form">
       <label>Cidade preferida</label>
       <select id="c">
         <option>Praia Grande</option><option>Caraguatatuba</option><option>Ilhabela</option><option>Ubatuba</option><option>São Sebastião</option><option>Bertioga</option><option>Maresias</option><option>Guarujá</option><option>Iguape</option><option>Cananéia</option>

@@ -108,7 +108,7 @@
   <div class="wrap">
     <h1>Gerador de descrição de imóvel com IA</h1>
     <p>Preencha os dados e gere uma descrição objetiva.</p>
-    <form onsubmit="event.preventDefault();const t=document.getElementById('tipo').value;const c=document.getElementById('cidade').value;const p=parseInt(document.getElementById('preco').value)||0;const a=parseInt(document.getElementById('area').value)||0;const q=parseInt(document.getElementById('quartos').value)||0;const r=document.querySelector('.result');r.style.display='block';r.textContent=t+' em '+c+', '+q+' quartos, '+a+' m². Valor: R$ '+p.toLocaleString('pt-BR')+'. Descrição pronta para WhatsApp, e-mail e anúncio.';">
+    <form onsubmit="event.preventDefault();const t=document.getElementById('tipo').value;const c=document.getElementById('cidade').value;const p=parseInt(document.getElementById('preco').value)||0;const a=parseInt(document.getElementById('area').value)||0;const q=parseInt(document.getElementById('quartos').value)||0;const r=document.querySelector('.result');r.style.display='block';r.textContent=t+' em '+c+', '+q+' quartos, '+a+' m². Valor: R$ '+p.toLocaleString('pt-BR')+'. Descrição pronta para WhatsApp, e-mail e anúncio.';" aria-label="Contact form">
       <label>Tipo</label>
       <select id="tipo">
         <option>Apartamento</option><option>Casa</option><option>Cobertura</option><option>Studio</option><option>Sobrado</option>

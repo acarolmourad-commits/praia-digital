@@ -108,7 +108,7 @@
   <div class="wrap">
     <h1>Recomendação automática de imóveis</h1>
     <p>Informe preferências e receba imóveis direcionados.</p>
-    <form onsubmit="event.preventDefault();const c=document.getElementById('c').value||'';const b=document.getElementById('b').value||'';const p=parseInt(document.getElementById('p').value)||0;const r=document.querySelector('.result');r.style.display='block';r.textContent='Com base em '+c+', '+b+' e orçamento até R$ '+p.toLocaleString('pt-BR')+', recomendamos começar pelos imóveis com SEO local e avaliação de preço atualizada.';">
+    <form onsubmit="event.preventDefault();const c=document.getElementById('c').value||'';const b=document.getElementById('b').value||'';const p=parseInt(document.getElementById('p').value)||0;const r=document.querySelector('.result');r.style.display='block';r.textContent='Com base em '+c+', '+b+' e orçamento até R$ '+p.toLocaleString('pt-BR')+', recomendamos começar pelos imóveis com SEO local e avaliação de preço atualizada.';" aria-label="Contact form">
       <label>Cidade</label>
       <select id="c"><option>Praia Grande</option><option>Caraguatatuba</option><option>Ilhabela</option><option>Ubatuba</option><option>São Sebastião</option><option>Bertioga</option><option>Maresias</option><option>Guarujá</option><option>Iguape</option><option>Cananéia</option></select>
       <label>Bairro ou região</label>
