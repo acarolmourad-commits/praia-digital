@@ -112,17 +112,8 @@
 
     <section class="lead-form">
       <h3>Solicite este serviço</h3>
-      <p class="subtitle">Envie seus dados e um especialista entra em contato pelo WhatsApp.</p>
-      <form onsubmit="return handlePageLead(event)" aria-label="Contact form">
-        <input type="text" placeholder="Seu nome" required>
-        <input type="tel" placeholder="Telefone/WhatsApp" required>
-        <select required>
-          <option value="">Interesse</option>
-          <option value="consulta">Consulta</option>
-          <option value="agendamento">Agendamento</option>
-        </select>
-        <button type="submit" class="btn btn-primary">Solicitar Automação Imobiliária</button>
-      </form>
+      <p class="subtitle">Fale diretamente com um especialista pelo WhatsApp.</p>
+      <a class="btn-whatsapp" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20em%20Captação de Imóveis%20em%20Mongaguá.%20Pode%20me%20enviar%20mais%20detalhes%3F" target="_blank" rel="noopener">Tenho interesse em Captação de Imóveis em Mongaguá</a>
     </section>
 
     <section>
@@ -167,23 +158,5 @@
   <footer aria-label="Rodapé">
     <p>© Litoral Prime Imóveis • comercial@praia.digital • (11) 95434-6288</p>
   </footer>
-<script>
-function handlePageLead(e){
-  try {
-    e.preventDefault();
-    const nome = (e.target.querySelector('input[type="text"]')?.value || '').trim();
-    const telefone = (e.target.querySelector('input[type="tel"]')?.value || '').trim();
-    const tipo = (e.target.querySelector('select')?.value || '').trim();
-    if(!nome || !telefone || !tipo){
-      alert('Preencha nome, telefone e tipo de interesse.');
-      return false;
-    }
-    const title = document.title.replace('Lead: ', '').split('|')[0].trim();
-    const msg = encodeURIComponent('Olá! Tenho interesse em ' + tipo + ' no serviço: ' + title + '. Nome: ' + nome + ', Telefone: ' + telefone);
-    window.open('https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral' + msg, '_blank');
-    return false;
-  } catch(err) { return false; }
-}
-</script>
 </body>
 </html>
