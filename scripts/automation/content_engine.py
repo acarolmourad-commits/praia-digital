@@ -4,6 +4,7 @@
 Motor de conteúdo Praia Digital.
 Modos:
   landings        -> gera landings de imóveis (generate_landings_safe + sitemap + commit/push)
+  imoveis         -> gera landings + patch de imagens + sitemap + commit/push
   blog            -> gera artigos SEO (gerador_lote_artigos_seo_diario + sitemap + commit/push)
   social          -> gera posts sociais a partir de temas (docs/materiais/calendario_conteudo_30dias + commit)
   full            -> landings + blog + social + sitemap + commit/push
@@ -40,6 +41,15 @@ def main():
         run('git diff --cached --quiet || git commit -m "feat: new landings + sitemap update"', 'Git commit')
         run('git push origin main', 'Git push')
         print('\n✅ Loop de landings concluído.')
+
+    elif mode == 'imoveis':
+        run('python scripts/automation/generate_landings_safe.py', 'Gerar landings')
+        run('python scripts/automation/patch_imoveis_images.py', 'Corrigir imagens das landings')
+        run('python scripts/automation/add_landings_to_sitemap.py', 'Atualizar sitemap')
+        run('git add -A', 'Git add')
+        run('git diff --cached --quiet || git commit -m "feat: landings + image patch + sitemap update"', 'Git commit')
+        run('git push origin main', 'Git push')
+        print('\n✅ Loop de imóveis concluído.')
 
     elif mode == 'blog':
         run('python scripts/automation/gerador_lote_artigos_seo_diario.py', 'Gerar artigos SEO')
