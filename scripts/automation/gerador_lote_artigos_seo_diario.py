@@ -35,7 +35,9 @@ def build_article(item, idx):
         ["Visão geral do litoral", "Plano de execução simples", "Ferramentas recomendadas", "Checklist final", "Próximo passo"]
     ][idx % 5]
     meta = title + " — guia prático para imobiliárias e corretores do litoral paulista."
+    slug_safe = slug.replace("?", "").replace("&", "").replace("=", "").replace("%", "")
     body = "\n".join([f'<h2>{h}</h2><p>Conteúdo prático sobre {tema} no litoral paulista. {random.choice(["Aplicável para temporada alta e baixa.","Sem ferramentas pagas.","Foco em conversão e automação."])}</p>' for h in h2])
+    keywords = f"{title}, {tema} imobiliária, litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, imóveis litoral, temporada, aluguel temporada"
     html = f"""<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -43,15 +45,56 @@ def build_article(item, idx):
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
 <meta name="description" content="{meta}">
-<link rel="canonical" href="https://praia.digital/blog/{slug}.html">
+<meta name="keywords" content="{keywords}">
+<link rel="canonical" href="https://praia.digital/blog/{slug_safe}.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="{meta}">
+<meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+<meta property="og:url" content="https://praia.digital/blog/{slug_safe}.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{title}">
+<meta name="twitter:description" content="{meta}">
+<meta name="twitter:image" content="https://praia.digital/img/default-home.jpg">
+<meta name="robots" content="index, follow">
+<script type="application/ld+json">
+{{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{title}",
+  "description": "{meta}",
+  "url": "https://praia.digital/blog/{slug_safe}.html",
+  "author": {{"@type": "Organization", "name": "Litoral Prime Imóveis"}},
+  "publisher": {{"@type": "Organization", "name": "Litoral Prime Imóveis", "url": "https://praia.digital/"}}
+}}
+</script>
+<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<article>
-<h1>{title}</h1>
-<p>{meta}</p>
-{body}
-<p>Ferramentas gratuitas em <a href="https://praia.digital">praia.digital</a></p>
-</article>
+<header>
+  <nav aria-label="Navegação principal">
+    <div class="logo">
+      <h1>🏖️ Litoral Prime Imóveis</h1>
+      <p class="tagline">Conteúdo para o litoral paulista</p>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="../servicos.html">Serviços</a></li>
+      <li><a href="index.html">Blog</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+  <article>
+    <h1>{title}</h1>
+    <p>{meta}</p>
+    {body}
+    <p><a class="btn-whatsapp" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20em%20{slug_safe.replace('-', '%20')}." target="_blank" rel="noopener">Fale com um especialista</a></p>
+  </article>
+</main>
+<footer aria-label="Rodapé">
+  <p>© Litoral Prime Imóveis • comercial@praia.digital • (11) 95434-6288</p>
+</footer>
 </body>
 </html>"""
     path = os.path.join(OUT_DIR, f"{slug}.html")

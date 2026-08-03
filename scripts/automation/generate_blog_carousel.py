@@ -1,0 +1,149 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Gera blog/carrossel.html com os últimos posts em formato carrossel estático.
+"""
+import re
+from pathlib import Path
+
+REPO = Path('.').resolve()
+BLOG_DIR = REPO / 'blog'
+OUT = BLOG_DIR / 'carrossel.html'
+
+def slug_date(path: Path):
+    name = path.stem
+    m = re.search(r'(\d{4}-\d{2}-\d{2})', name)
+    return m.group(1) if m else '1900-01-01'
+
+def extract_info(path: Path):
+    txt = path.read_text(encoding='utf-8', errors='ignore')
+    title_m = re.search(r'<title>\s*(.+?)\s*</title>', txt, re.I|re.S)
+    title = title_m.group(1) if title_m else path.stem.replace('-', ' ').title()
+    desc_m = re.search(r'<meta\s+name="description"\s+content="([^"]+)"', txt, re.I)
+    desc = desc_m.group(1) if desc_m else ''
+    img_m = re.search(r'<meta\s+property="og:image"\s+content="([^"]+)"', txt, re.I)
+    img = img_m.group(1) if img_m else 'https://praia.digital/img/default-home.jpg'
+    return title, desc, img
+
+def main():
+    articles = sorted(BLOG_DIR.glob('*.html'), key=lambda p: slug_date(p), reverse=True)[:12]
+    if not articles:
+        print('CARROSSEL_NO_ARTICLES')
+        return
+
+    slides = []
+    for art in articles:
+        title, desc, img = extract_info(art)
+        slides.append(f'''<div class="slide">
+      <img src="{img}" alt="{title}" loading="lazy">
+      <div class="slide-content">
+        <h3>{title}</h3>
+        <p>{desc}</p>
+        <a class="btn-whatsapp" href="{art.name}">Ler artigo →</a>
+      </div>
+    </div>''')
+
+    html = f'''<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrossel de Artigos | Litoral Prime Imóveis</title>
+  <meta name="description" content="Artigos recentes sobre imóveis, mercado imobiliário e dicas para o litoral de SP.">
+  <link rel="canonical" href="https://praia.digital/blog/carrossel.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Carrossel de Artigos | Litoral Prime Imóveis">
+  <meta property="og:description" content="Artigos recentes sobre imóveis, mercado imobiliário e dicas para o litoral de SP.">
+  <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+  <meta property="og:url" content="https://praia.digital/blog/carrossel.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Carrossel de Artigos | Litoral Prime Imóveis">
+  <meta name="twitter:description" content="Artigos recentes sobre imóveis, mercado imobiliário e dicas para o litoral de SP.">
+  <meta name="twitter:image" content="https://praia.digital/img/default-home.jpg">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .carousel {{ position: relative; max-width: 1200px; margin: 0 auto; overflow: hidden; border-radius: 12px; background: #0f172a; }}
+    .slides {{ display: flex; transition: transform 0.5s ease; }}
+    .slide {{ min-width: 100%; position: relative; }}
+    .slide img {{ width: 100%; height: 420px; object-fit: cover; display: block; }}
+    .slide-content {{ position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(15,23,42,0.85)); padding: 24px; color: #fff; }}
+    .slide-content h3 {{ margin: 0 0 8px; font-size: 1.6rem; }}
+    .slide-content p {{ margin: 0 0 12px; opacity: 0.9; }}
+    .carousel-btn {{ position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); color: #fff; padding: 10px 12px; border-radius: 8px; cursor: pointer; backdrop-filter: blur(4px); }}
+    .carousel-btn:hover {{ background: rgba(255,255,255,0.25); }}
+    .prev {{ left: 12px; }}
+    .next {{ right: 12px; }}
+    .carousel-dots {{ text-align: center; padding: 12px; }}
+    .carousel-dots button {{ border: none; width: 10px; height: 10px; margin: 0 6px; border-radius: 50%; background: #94a3b8; cursor: pointer; }}
+    .carousel-dots button.active {{ background: #38bdf8; }}
+    @media (max-width: 768px) {{
+      .slide img {{ height: 260px; }}
+      .slide-content h3 {{ font-size: 1.2rem; }}
+    }}
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Navegação principal">
+      <div class="logo">
+        <h1>🏖️ Litoral Prime Imóveis</h1>
+        <p class="tagline">Conteúdo para o litoral paulista</p>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../servicos.html">Serviços</a></li>
+        <li><a href="index.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <h1>Carrossel de Artigos</h1>
+      <p class="subtitle">Conteúdos recentes sobre imóveis, mercado e investimentos no litoral.</p>
+    </section>
+    <section class="carousel" aria-label="Carrossel de artigos">
+      <div class="slides" id="slides">
+        {''.join(slides)}
+      </div>
+      <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">‹</button>
+      <button class="carousel-btn next" id="nextBtn" aria-label="Próximo">›</button>
+      <div class="carousel-dots" id="dots"></div>
+    </section>
+  </main>
+  <footer aria-label="Rodapé">
+    <p>© Litoral Prime Imóveis • comercial@praia.digital • (11) 95434-6288</p>
+  </footer>
+  <script>
+    const slides = document.getElementById('slides');
+    const dots = document.getElementById('dots');
+    const total = ' + str(len(slides)) + ';
+    let current = 0;
+    for (let i = 0; i < total; i++) {{
+      const b = document.createElement('button');
+      b.setAttribute('aria-label', 'Slide ' + (i+1));
+      b.addEventListener('click', () => goTo(i));
+      dots.appendChild(b);
+    }}
+    function update() {{
+      slides.style.transform = 'translateX(-' + (current * 100) + '%)';
+      Array.from(dots.children).forEach((d, i) => d.classList.toggle('active', i === current));
+    }}
+    function goTo(i) {{
+      current = (i + total) % total;
+      update();
+    }}
+    document.getElementById('prevBtn').addEventListener('click', () => goTo(current - 1));
+    document.getElementById('nextBtn').addEventListener('click', () => goTo(current + 1));
+    setInterval(() => goTo(current + 1), 6000);
+    update();
+  </script>
+</body>
+</html>'''
+
+    OUT.write_text(html, encoding='utf-8')
+    print('CARROSSEL_CREATED', OUT)
+    print('SLIDES', len(slides))
+
+if __name__ == '__main__':
+    main()
