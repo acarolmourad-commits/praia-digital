@@ -83,7 +83,7 @@ def build_invite(lead):
     <p style="margin-top:14px; font-size:13px; color:#374a5e;">Duração: 15 minutos · Sem compromisso · Foco no seu resultado no litoral paulista.</p>
     <div class="footer">
       Praia Digital · Proptech Litoral · {agora}<br>
-      Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">Praia Digital</a> | Ferramentas: <a href="https://praia.digital">praia.digital</a>
+      Site: <a href="https://praia.digital/">Praia Digital</a> | Ferramentas: <a href="https://praia.digital">praia.digital</a>
     </div>
   </div>
 </body>

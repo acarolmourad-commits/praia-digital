@@ -25,7 +25,7 @@ pages = [
 entries = []
 for page in pages:
     entries.append(f'''  <url>
-    <loc>https://acarolmourad-commits.github.io/praia-digital/{page}</loc>
+    <loc>https://praia.digital/{page}</loc>
     <lastmod>{TODAY}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>

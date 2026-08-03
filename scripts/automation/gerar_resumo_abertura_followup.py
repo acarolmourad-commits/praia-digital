@@ -45,7 +45,7 @@ ABERTURA SUGERIDA (WhatsApp/e-mail):
 
 Próximos passos:
 1. Responder em até 1h.
-2. Enviar link do site: https://acarolmourad-commits.github.io/praia-digital/
+2. Enviar link do site: https://praia.digital/
 3. Enviar ferramentas gratuitas: https://praia.digital
 4. Agendar call de 15min se houver interesse.
 """

@@ -16,10 +16,10 @@ REGRAS = {
 }
 
 TEMPLATES = {
-    'enviar_proposta': 'Olá, {nome_contato},\nObrigado pela conversa. Segue proposta comercial da Praia Digital para {imobiliaria}, com início sem custo.\nPróximos passos:\n- Revisão da proposta em até 48h\n- Call de alinhamento\n- Case conjunto e métricas\nSite: https://acarolmourad-commits.github.io/praia-digital/\nFerramentas gratuitas: https://praia.digital\nCEO - Praia Digital',
-    'follow_up_7d': 'Olá, {nome_contato},\nPerfeito, vamos manter uma conversa objetiva. Seguem dados adicionais sobre redução de custos e aumento de conversão para {imobiliaria}.\nSe fizer sentido, reagendamos uma call de 15 minutos.\nSite: https://acarolmourad-commits.github.io/praia-digital/\nFerramentas gratuitas: https://praia.digital\nCEO - Praia Digital',
+    'enviar_proposta': 'Olá, {nome_contato},\nObrigado pela conversa. Segue proposta comercial da Praia Digital para {imobiliaria}, com início sem custo.\nPróximos passos:\n- Revisão da proposta em até 48h\n- Call de alinhamento\n- Case conjunto e métricas\nSite: https://praia.digital/\nFerramentas gratuitas: https://praia.digital\nCEO - Praia Digital',
+    'follow_up_7d': 'Olá, {nome_contato},\nPerfeito, vamos manter uma conversa objetiva. Seguem dados adicionais sobre redução de custos e aumento de conversão para {imobiliaria}.\nSe fizer sentido, reagendamos uma call de 15 minutos.\nSite: https://praia.digital/\nFerramentas gratuitas: https://praia.digital\nCEO - Praia Digital',
     'follow_up_90d': 'Olá, {nome_contato},\nSem problema. Vou deixar o contato aberto para quando fizer sentido. Voltarei daqui a 90 dias com novidades relevantes para {imobiliaria}.\nAproveite nossas ferramentas gratuitas enquanto isso: https://praia.digital\nCEO - Praia Digital',
-    'onboarding': 'Olá, {nome_contato},\nÓtimo! Vamos iniciar o onboarding de {imobiliaria} em até 24h. Você receberá cronograma, acessos e métricas do case.\nSite: https://acarolmourad-commits.github.io/praia-digital/\nFerramentas gratuitas: https://praia.digital\nCEO - Praia Digital',
+    'onboarding': 'Olá, {nome_contato},\nÓtimo! Vamos iniciar o onboarding de {imobiliaria} em até 24h. Você receberá cronograma, acessos e métricas do case.\nSite: https://praia.digital/\nFerramentas gratuitas: https://praia.digital\nCEO - Praia Digital',
 }
 
 def classificar(texto):
@@ -88,7 +88,7 @@ def main():
 <head><meta charset="UTF-8"><title>Follow-up - {imob}</title></head>
 <body style="font-family:Arial,sans-serif;max-width:700px;margin:auto;padding:20px;color:#222;">
 <pre style="white-space:pre-wrap;font-family:Arial,sans-serif;font-size:15px;">{ihtml.escape(body)}</pre>
-<p>Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">Praia Digital</a></p>
+<p>Site: <a href="https://praia.digital/">Praia Digital</a></p>
 <p>Ferramentas gratuitas: <a href="https://praia.digital">https://praia.digital</a></p>
 <p>CEO — Praia Digital</p>
 </body></html>"""

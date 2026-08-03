@@ -128,7 +128,7 @@ html = f"""<!DOCTYPE html>
   </div>
 
   <div class="footer">
-    Praia Digital — Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">Praia Digital</a> | Ferramentas: <a href="https://praia.digital">praia.digital</a>
+    Praia Digital — Site: <a href="https://praia.digital/">Praia Digital</a> | Ferramentas: <a href="https://praia.digital">praia.digital</a>
   </div>
 </div>
 </body>

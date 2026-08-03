@@ -17,7 +17,7 @@ pages = [
     ('planos-proptech-2026.html', 'Planos Proptech — Praia Digital', 'Planos modulares de IA e automação para imobiliárias do litoral de SP.'),
 ]
 
-canonical_tpl = '<link rel="canonical" href="https://acarolmourad-commits.github.io/praia-digital/{page}">'
+canonical_tpl = '<link rel="canonical" href="https://praia.digital/{page}">'
 desc_tpl = '<meta name="description" content="{desc}">'
 
 for page, title, desc in pages:

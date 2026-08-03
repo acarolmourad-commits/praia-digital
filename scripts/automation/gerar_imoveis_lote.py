@@ -77,7 +77,7 @@ def generate(start=370, count=20):
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{title} em {city} | Praia Digital</title>
   <meta name="description" content="{title} em {city} com ótimo custo-benefício.">
-  <link rel="canonical" href="https://acarolmourad-commits.github.io/praia-digital/imoveis/imovel-{i}.html">
+  <link rel="canonical" href="https://praia.digital/imoveis/imovel-{i}.html">
   <style>
     :root{{color:#0d1b2a;primary:#4f46e5;secondary:#0ea5e9;accent:#10b981;bg:#f8fafc;text:#0f172a;muted:#475569;border:#e5e7eb}}
     *{{box-sizing:border-box;margin:0;padding:0}}

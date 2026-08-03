@@ -7,7 +7,7 @@ OUT_DIR = "outreach"
 FOLLOWUP_DIR = "outreach/followups"
 ROTEIRO = "docs/sales/roteiro-execucao-atual.md"
 
-SITE = "https://acarolmourad-commits.github.io/praia-digital/"
+SITE = "https://praia.digital/"
 FERRAMENTAS = "https://praia.digital"
 
 EMAIL_TEMPLATE = """<!DOCTYPE html>

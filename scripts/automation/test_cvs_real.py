@@ -17,7 +17,7 @@ for r in rows:
   <p>Sou <strong>CEO da Praia Digital</strong>, startup focada no litoral paulista. Acompanho a <strong>{r['nome_imobiliaria']}</strong> em <strong>{r['cidade']}/{r['uf']}</strong>.</p>
   <p>Oferecemos <strong>ferramentas gratuitas de IA</strong> em <a href="https://praia.digital">https://praia.digital</a> e conteúdo SEO local.</p>
   <p>Queremos primeiro entregar valor com um caso conjunto real, sem custo inicial.</p>
-  <p>Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">https://acarolmourad-commits.github.io/praia-digital/</a></p>
+  <p>Site: <a href="https://praia.digital/">https://praia.digital/</a></p>
   <p>CEO — Praia Digital | (11) 95434-6288</p>
 </body>
 </html>"""

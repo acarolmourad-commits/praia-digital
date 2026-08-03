@@ -10,7 +10,7 @@ from datetime import datetime
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 OUT_SITEMAP = os.path.join(ROOT, 'sitemap.xml')
-BASE_URL = 'https://acarolmourad-commits.github.io/praia-digital/'
+BASE_URL = 'https://praia.digital/'
 HTML_EXT = '.html'
 
 

@@ -4,7 +4,7 @@ from datetime import date
 from urllib.parse import quote
 
 root = Path("C:/Users/Carolina/praia-digital")
-base_url = "https://acarolmourad-commits.github.io/praia-digital/"
+base_url = "https://praia.digital/"
 
 include_dirs = {"", "blog", "imoveis", "marketing", "assets", "cases", "newsletter", "parcerias-litoral-paulista.html"}
 allowed_exts = {".html"}

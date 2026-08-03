@@ -106,7 +106,7 @@ def build_report(rows):
         lines.append(f'<p>Mostrando 200 de {len(rows)} registros no detalhamento.</p>')
     lines.extend(['<p>Próxima atualização sugerida: amanhã às 08h.</p>', '<h2>Respostas recebidas</h2>'])
     lines.extend(responder_lines)
-    lines.append('<p>Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">Praia Digital</a> | Ferramentas: <a href="https://praia.digital">praia.digital</a></p>')
+    lines.append('<p>Site: <a href="https://praia.digital/">Praia Digital</a> | Ferramentas: <a href="https://praia.digital">praia.digital</a></p>')
     lines.append('</div></body></html>')
     return '\n'.join(lines)
 

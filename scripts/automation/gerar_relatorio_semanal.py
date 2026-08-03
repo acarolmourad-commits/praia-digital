@@ -123,7 +123,7 @@ def main():
     </div>
 
     <div class="small" style="text-align:center">
-      Site oficial: https://acarolmourad-commits.github.io/praia-digital/ · Ferramentas: https://praia.digital
+      Site oficial: https://praia.digital/ · Ferramentas: https://praia.digital
     </div>
   </div>
 </body>

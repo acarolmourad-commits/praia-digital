@@ -96,7 +96,7 @@ html = f"""<!DOCTYPE html>
 </div>
 
 <div class="footer">
-  Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">https://acarolmourad-commits.github.io/praia-digital/</a> | Ferramentas: <a href="https://praia.digital">https://praia.digital</a>
+  Site: <a href="https://praia.digital/">https://praia.digital/</a> | Ferramentas: <a href="https://praia.digital">https://praia.digital</a>
 </div>
 </body>
 </html>
