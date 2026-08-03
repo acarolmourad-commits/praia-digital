@@ -4781,7 +4781,7 @@ function generateQR() {
   const url = 'https://acarolmourad-commits.github.io/praia-digital/#imovel-' + id;
   const qrApi = 'https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=' + encodeURIComponent(url);
   const preview = document.getElementById('qrPreview');
-  preview.innerHTML = '<img src="' + qrApi + '" alt="QR Code" style="width:120px;height:120px;border-radius:8px;" loading="lazy" width="800" height="600">';
+  preview.innerHTML = '<img src="' + qrApi + '" alt="QR Code" style="width:120px;height:120px;border-radius:8px;" loading="lazy" width="800" height="600" decoding="async">';
   const resultUrl = document.getElementById('qrResultUrl');
   resultUrl.textContent = url;
   resultUrl.classList.add('visible');
