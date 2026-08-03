@@ -1,9 +1,100 @@
 from pathlib import Path
 
-# Read template
-template = Path('imoveis/template.html').read_text(encoding='utf-8', errors='ignore')
+REPO = Path('.').resolve()
+OUT_DIR = REPO / 'imoveis'
+OUT_DIR.mkdir(exist_ok=True)
 
-# New landing items
+TEMPLATE = """<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}} | Litoral Prime Imóveis</title>
+  <meta name="description" content="{{description}}">
+  <meta name="keywords" content="{{title}}, imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe">
+  <link rel="canonical" href="https://praia.digital/imoveis/{{slug}}.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{title}} | Litoral Prime Imóveis">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+  <meta property="og:url" content="https://praia.digital/imoveis/{{slug}}.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{title}} | Litoral Prime Imóveis">
+  <meta name="twitter:description" content="{{description}}">
+  <meta name="twitter:image" content="https://praia.digital/img/default-home.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateListing",
+    "name": "{{title}}",
+    "description": "{{description}}",
+    "url": "https://praia.digital/imoveis/{{slug}}.html",
+    "provider": {"@type": "Organization", "name": "Litoral Prime Imóveis", "url": "https://praia.digital/"}
+  }
+  </script>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <nav aria-label="Navegação principal">
+      <div class="logo">
+        <h1>🏖️ Litoral Prime Imóveis</h1>
+        <p class="tagline">{{city}}</p>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../servicos.html">Serviços</a></li>
+        <li><a href="index.html">Imóveis</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <picture>
+        <source srcset="{{image}}.webp" type="image/webp">
+        <img src="{{image}}" alt="{{title}}" loading="lazy" width="800" height="600" decoding="async">
+      </picture>
+      <h1>{{title}}</h1>
+      <p class="subtitle">{{description}}</p>
+      <a class="btn-whatsapp" href="{{whatsapp_link}}" target="_blank" rel="noopener">Tenho interesse neste imóvel</a>
+    </section>
+    <section class="servicos-section">
+      <h2>Informações</h2>
+      <div class="servicos-grid">
+        <article class="servico-card">
+          <h3>🏷️ Tipo</h3>
+          <p>{{type}}</p>
+        </article>
+        <article class="servico-card">
+          <h3>💰 Preço</h3>
+          <p>{{price}}</p>
+        </article>
+        <article class="servico-card">
+          <h3>🛏️ Quartos</h3>
+          <p>{{bedrooms}}</p>
+        </article>
+        <article class="servico-card">
+          <h3>📐 Área</h3>
+          <p>{{area}}</p>
+        </article>
+      </div>
+    </section>
+    <section class="servicos-section">
+      <h2>Destaques</h2>
+      <div class="servicos-grid">
+        {{tags}}
+      </div>
+    </section>
+    <section class="servicos-section">
+      <h2>Imóveis relacionados</h2>
+      <div class="servicos-grid">
+        {{related}}
+      </div>
+    </section>
+  </main>
+</body>
+</html>"""
+
 new_items = [
     {
         "slug": "apartamento-garden-santos",
@@ -142,18 +233,20 @@ new_items = [
     },
 ]
 
-# Generate landing pages directly from template
+created = []
 for item in new_items:
-    html = template
+    html = TEMPLATE
     for key, value in item.items():
         if key == 'slug':
             continue
         placeholder = '{{' + key + '}}'
         html = html.replace(placeholder, value)
-    canonical = f"https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/imoveis/{item['slug']}.html"
-    html = html.replace('{{canonical}}', canonical)
-    out = Path('imoveis') / f"{item['slug']}.html"
+    out = OUT_DIR / f"{item['slug']}.html"
+    if out.exists():
+        continue
     out.write_text(html, encoding='utf-8')
-    print(f'CREATED {out.name}')
+    created.append(str(out))
 
-print('LANDINGS_CREATED', len(new_items))
+print('LANDINGS_CREATED', len(created))
+for p in created:
+    print('-', Path(p).name)
