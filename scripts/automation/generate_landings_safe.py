@@ -1,4 +1,5 @@
 from pathlib import Path
+import csv
 
 REPO = Path('.').resolve()
 OUT_DIR = REPO / 'imoveis'
@@ -95,68 +96,54 @@ TEMPLATE = """<!DOCTYPE html>
 </body>
 </html>"""
 
-new_items = [
-  {
-    "slug": "apartamento-duplex-santos",
-    "title": "Apartamento duplex - Santos",
-    "description": "Apartamento duplex com sacada gourmet e vista parcial em Santos.",
-    "city": "Santos",
-    "type": "Venda",
-    "price": "R$ 890.000",
-    "price_raw": "890000",
-    "bedrooms": "3",
-    "area": "135m²",
-    "image": "img/santos-duplex.png",
-    "tags": '<article class="servico-card"><h3>✓</h3><p>Duplex</p></article><article class="servico-card"><h3>✓</h3><p>Sacada gourmet</p></article><article class="servico-card"><h3>✓</h3><p>Vista parcial</p></article>',
-    "related": '<a class="servico-card" href="apartamento-vista-mar-santos.html"><h3>Apartamento vista mar - Santos</h3><p>Santos • Venda</p><p>R$ 720.000</p></a><a class="servico-card" href="apartamento-garden-santos.html"><h3>Apartamento garden - Santos</h3><p>Santos • Venda</p><p>R$ 580.000</p></a><a class="servico-card" href="cobertura-duplex-sao-vicente.html"><h3>Cobertura duplex - São Vicente</h3><p>São Vicente • Venda</p><p>R$ 1.250.000</p></a>',
-    "whatsapp_link": "https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Apartamento%20duplex%20-%20Santos.%20Pode%20me%20enviar%20mais%20detalhes%3F",
-  },
-  {
-    "slug": "apartamento-1-quartos-mongagua",
-    "title": "Apartamento 1 quartos - Mongaguá",
-    "description": "Apartamento compacto 1 quarto com piscina e lazer em Mongaguá.",
-    "city": "Mongaguá",
-    "type": "Venda",
-    "price": "R$ 185.000",
-    "price_raw": "185000",
-    "bedrooms": "1",
-    "area": "42m²",
-    "image": "img/mon-1q.png",
-    "tags": '<article class="servico-card"><h3>✓</h3><p>1 quarto</p></article><article class="servico-card"><h3>✓</h3><p>Piscina</p></article><article class="servico-card"><h3>✓</h3><p>Compacto</p></article>',
-    "related": '<a class="servico-card" href="apartamento-compacto-mongagua.html"><h3>Apartamento compacto - Mongaguá</h3><p>Mongaguá • Venda</p><p>R$ 210.000</p></a><a class="servico-card" href="studio-moderno-praia-grande.html"><h3>Studio moderno - Praia Grande</h3><p>Praia Grande • Venda</p><p>R$ 280.000</p></a><a class="servico-card" href="apartamento-mobiliado-mongagua.html"><h3>Apartamento mobiliado - Mongaguá</h3><p>Mongaguá • Aluguel</p><p>R$ 2.900/mês</p></a>',
-    "whatsapp_link": "https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Apartamento%201%20quartos%20-%20Mongagu%C3%A1.%20Pode%20me%20enviar%20mais%20detalhes%3F",
-  },
-  {
-    "slug": "apartamento-2-quartos-santos",
-    "title": "Apartamento 2 quartos - Santos",
-    "description": "Apartamento 2 quartos com lazer completo e vaga de garagem em Santos.",
-    "city": "Santos",
-    "type": "Venda",
-    "price": "R$ 450.000",
-    "price_raw": "450000",
-    "bedrooms": "2",
-    "area": "78m²",
-    "image": "img/santos-2q.png",
-    "tags": '<article class="servico-card"><h3>✓</h3><p>2 quartos</p></article><article class="servico-card"><h3>✓</h3><p>Lazer completo</p></article><article class="servico-card"><h3>✓</h3><p>Garagem</p></article>',
-    "related": '<a class="servico-card" href="apartamento-vista-mar-santos.html"><h3>Apartamento vista mar - Santos</h3><p>Santos • Venda</p><p>R$ 720.000</p></a><a class="servico-card" href="apartamento-garden-santos.html"><h3>Apartamento garden - Santos</h3><p>Santos • Venda</p><p>R$ 580.000</p></a><a class="servico-card" href="apartamento-duplex-santos.html"><h3>Apartamento duplex - Santos</h3><p>Santos • Venda</p><p>R$ 890.000</p></a>',
-    "whatsapp_link": "https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Apartamento%202%20quartos%20-%20Santos.%20Pode%20me%20enviar%20mais%20detalhes%3F",
-  },
-]
+csv_path = REPO / 'imoveis' / 'landings.csv'
+if not csv_path.exists():
+    raise SystemExit('landings.csv not found at imoveis/landings.csv')
 
 created = []
-for item in new_items:
-    html = TEMPLATE
-    for key, value in item.items():
-        if key == 'slug':
+skipped = []
+with csv_path.open('r', encoding='utf-8', newline='') as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        slug = row.get('slug', '').strip()
+        title = row.get('title', '').strip()
+        description = row.get('description', '').strip()
+        city = row.get('city', '').strip()
+        type_ = row.get('type', '').strip()
+        price = row.get('price', '').strip()
+        bedrooms = row.get('bedrooms', '').strip()
+        area = row.get('area', '').strip()
+        image = row.get('image', '').strip()
+        tags = row.get('tags', '').strip()
+        related = row.get('related', '').strip()
+        whatsapp_link = row.get('whatsapp_link', '').strip()
+        if not slug or not title:
+            skipped.append(slug or '<empty>')
             continue
-        placeholder = '{{' + key + '}}'
-        html = html.replace(placeholder, value)
-    out = OUT_DIR / f"{item['slug']}.html"
-    if out.exists():
-        continue
-    out.write_text(html, encoding='utf-8')
-    created.append(str(out))
+        html = TEMPLATE
+        html = html.replace('{{slug}}', slug)
+        html = html.replace('{{title}}', title)
+        html = html.replace('{{description}}', description)
+        html = html.replace('{{city}}', city)
+        html = html.replace('{{type}}', type_)
+        html = html.replace('{{price}}', price)
+        html = html.replace('{{bedrooms}}', bedrooms)
+        html = html.replace('{{area}}', area)
+        html = html.replace('{{image}}', image)
+        html = html.replace('{{tags}}', tags)
+        html = html.replace('{{related}}', related)
+        html = html.replace('{{whatsapp_link}}', whatsapp_link)
+        out = OUT_DIR / f"{slug}.html"
+        if out.exists():
+            skipped.append(slug)
+            continue
+        out.write_text(html, encoding='utf-8')
+        created.append(str(out))
 
 print('LANDINGS_CREATED', len(created))
 for p in created:
     print('-', Path(p).name)
+print('LANDINGS_SKIPPED', len(skipped))
+if skipped:
+    for s in skipped[:20]:
+        print('  ', s)
