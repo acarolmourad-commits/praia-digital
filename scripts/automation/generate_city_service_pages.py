@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Gera páginas cidade-servico faltantes para litoral-prime-imoveis/servicos/cidade-servico/.
+Gera páginas cidade-servico faltantes para servicos/cidade-servico/.
 Usa template canônico e deduplica blocos duplicados no <head>.
 """
 import re
 from pathlib import Path
 
-REPO = Path('.').resolve()
-OUT_DIR = REPO / 'litoral-prime-imoveis' / 'servicos' / 'cidade-servico'
+REPO = Path('C:/Users/Carolina/praia-digital')
+OUT_DIR = REPO / 'servicos' / 'cidade-servico'
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-TEMPLATE_PATH = REPO / 'litoral-prime-imoveis' / 'servicos' / 'cidade-servico' / 'guaruja-automacao.html'
+TEMPLATE_PATH = REPO / 'servicos' / 'cidade-servico' / 'guaruja-automacao.html'
 if not TEMPLATE_PATH.exists():
-    raise SystemExit('Template litoral-prime-imoveis/servicos/cidade-servico/guaruja-automacao.html not found')
+    raise SystemExit('Template servicos/cidade-servico/guaruja-automacao.html not found')
 
 TEMPLATE = TEMPLATE_PATH.read_text(encoding='utf-8', errors='ignore')
 
@@ -63,7 +63,7 @@ def dedup_head(text):
 def replace_placeholders(html, city_slug, service_slug, service_title, description_tpl):
     city_label = CITIES[city_slug]
     description = description_tpl.format(city=city_label)
-    url = f'https://praia.digital/litoral-prime-imoveis/servicos/cidade-servico/{city_slug}-{service_slug}.html'
+    url = f'https://praia.digital/servicos/cidade-servico/{city_slug}-{service_slug}.html'
     replacements = {
         '{{city}}': city_label,
         '{{service_title}}': service_title,
@@ -91,7 +91,7 @@ def replace_placeholders(html, city_slug, service_slug, service_title, descripti
         '{{related_title}}': 'Páginas relacionadas',
         '{{related_hub}}': f'../../cidades/{city_slug}.html',
         '{{related_hub_label}}': f'Hub {city_label}',
-        '{{related_services}}': '../../servicos.html',
+        '{{related_services}}': '../servicos.html',
         '{{related_services_label}}': 'Todos os serviços',
         '{{related_listings}}': '../../imoveis.html',
         '{{related_listings_label}}': 'Ver todos os imóveis',
@@ -103,21 +103,24 @@ def replace_placeholders(html, city_slug, service_slug, service_title, descripti
     return html
 
 created = []
+updated = []
 skipped = []
 for city_slug, city_label in CITIES.items():
     for service_slug, service_title, description_tpl in SERVICES:
         slug = f'{city_slug}-{service_slug}'
         out = OUT_DIR / f'{slug}.html'
-        if out.exists():
-            skipped.append(slug)
-            continue
         html = TEMPLATE
         html = replace_placeholders(html, city_slug, service_slug, service_title, description_tpl)
         html = dedup_head(html)
+        if out.exists():
+            updated.append(slug)
+        else:
+            created.append(slug)
         out.write_text(html, encoding='utf-8')
-        created.append(slug)
 
 print('CITY_SERVICE_CREATED', len(created))
 for s in created:
     print('-', s)
-print('CITY_SERVICE_SKIPPED', len(skipped))
+print('CITY_SERVICE_UPDATED', len(updated))
+for s in updated:
+    print('~', s)
