@@ -162,7 +162,7 @@
 
   <div class="hero">
     <div class="hero-inner">
-      <h1>📣 IA para Marketing</h1>
+      <h1></h1>
       <p>Gera conteúdo e anúncios para redes, e-mail, Meta Ads e Google Ads com copy otimizada.</p>
       <div class="hero-cta">
         <a class="btn btn-purple" href="#gerador">Gerar conteúdo</a>
@@ -173,7 +173,7 @@
 
   <div class="wrap" id="gerador">
     <div class="marketing-panel">
-      <h3 class="section-title">Gerador multivíduo</h3>
+      <h2 class="section-title"></h2>
       <div class="mk-form">
         <div class="field">
           <label for="mkCanal">Canal</label>
@@ -334,7 +334,7 @@
 
       const html = blocks.map((b)=>`
         <div class="block">
-          <h4>${b.title}</h4>
+          <h3></h3>
           <pre>${b.value.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</pre>
           <button class="copy-btn" onclick="copyText('${b.title.replace(/'/g,"\\'")}', window.__mkCopyText.split(/${b.title}:\n/)[1]?.[0]||'')">Copiar ${b.title}</button>
         </div>
