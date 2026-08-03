@@ -28,7 +28,7 @@ def main():
         run('python scripts/automation/generate_landings_safe.py', 'Gerar landings')
         run('python scripts/automation/add_landings_to_sitemap.py', 'Atualizar sitemap')
         run('git add -A', 'Git add')
-        run('git commit -m "feat: new landings + sitemap update"', 'Git commit')
+        run('git diff --cached --quiet || git commit -m "feat: new landings + sitemap update"', 'Git commit')
         run('git push origin main', 'Git push')
         print('\n✅ Loop de landings concluído.')
 
@@ -36,7 +36,7 @@ def main():
         run('python scripts/automation/gerador_lote_artigos_seo_diario.py', 'Gerar artigos SEO')
         run('python scripts/automation/add_landings_to_sitemap.py', 'Atualizar sitemap')
         run('git add -A', 'Git add')
-        run('git commit -m "feat: new blog articles + sitemap update"', 'Git commit')
+        run('git diff --cached --quiet || git commit -m "feat: new blog articles + sitemap update"', 'Git commit')
         run('git push origin main', 'Git push')
         print('\n✅ Loop de blog concluído.')
 
@@ -45,7 +45,7 @@ def main():
         run('python scripts/automation/gerador_lote_artigos_seo_diario.py', 'Gerar artigos SEO')
         run('python scripts/automation/add_landings_to_sitemap.py', 'Atualizar sitemap')
         run('git add -A', 'Git add')
-        run('git commit -m "feat: content batch (landings+blog) + sitemap update"', 'Git commit')
+        run('git diff --cached --quiet || git commit -m "feat: content batch (landings+blog) + sitemap update"', 'Git commit')
         run('git push origin main', 'Git push')
         print('\n✅ Loop full concluído.')
 
