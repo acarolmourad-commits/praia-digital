@@ -1,8 +1,8 @@
 # Litoral Prime Imóveis — LLM-friendly site summary
 
-Site oficial: https://acarolmourad.github.io/praia-digital/
-Sitemap: https://acarolmourad.github.io/praia-digital/sitemap.xml
-RSS: https://acarolmourad.github.io/praia-digital/blog/feed.xml
+Site oficial: https://praia.digital/
+Sitemap: https://praia.digital/sitemap.xml
+RSS: https://praia.digital/blog/feed.xml
 
 ## Sobre
 Imobiliária digital do litoral paulista, com foco em captação, venda e aluguel por temporada em Santos, Guarujá, Praia Grande, Itanhaém, Mongaguá, São Vicente, Peruíbe e Bertioga.

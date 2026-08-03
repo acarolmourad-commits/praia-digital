@@ -1,8 +1,8 @@
 # Litoral Prime Imóveis — LLM full site context
 
-URL base: https://acarolmourad.github.io/praia-digital/
-Sitemap: https://acarolmourad.github.io/praia-digital/sitemap.xml
-RSS: https://acarolmourad.github.io/praia-digital/blog/feed.xml
+URL base: https://praia.digital/
+Sitemap: https://praia.digital/sitemap.xml
+RSS: https://praia.digital/blog/feed.xml
 
 ## Missão
 Conectar proprietários, compradores e investidores do litoral paulista com conteúdo, automação e serviços imobiliários digitais.
@@ -30,13 +30,14 @@ Santos, Guarujá, Praia Grande, Itanhaém, Mongaguá, São Vicente, Peruíbe, Be
 - Metodologias de captação orgânica
 - Ferramentas de IA aplicadas ao mercado imobiliário
 
+
 ## Dados de contato
 - WhatsApp: (11) 95434-6288
 - E-mail: comercial@praia.digital
-- Site: https://acarolmourad.github.io/praia-digital/
+- Site: https://praia.digital/
 
 ## Como nos encontrar
-- Hub principal: https://acarolmourad.github.io/praia-digital/
-- Serviços: https://acarolmourad.github.io/praia-digital/servicos.html
-- Imóveis: https://acarolmourad.github.io/praia-digital/imoveis.html
-- Blog: https://acarolmourad.github.io/praia-digital/blog/index.html
+- Hub principal: https://praia.digital/
+- Serviços: https://praia.digital/servicos.html
+- Imóveis: https://praia.digital/imoveis.html
+- Blog: https://praia.digital/blog/index.html
