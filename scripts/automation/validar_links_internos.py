@@ -3,7 +3,7 @@ from pathlib import Path
 
 root = Path("C:/Users/Carolina/praia-digital")
 html_files = list(root.rglob("*.html"))
-base = "https://acarolmourad-commits.github.io/praia-digital/"
+base = "https://praia.digital/"
 
 broken = []
 checked = 0

@@ -75,7 +75,7 @@ SOCIAL_TEMPLATES = [
 ]
 
 CTA_BLOG = "Ferramentas gratuitas em https://praia.digital | Quer parceria? Fale com a Praia Digital"
-CTA_SOCIAL = "Veja mais em https://praia.digital | Parcerias: https://acarolmourad-commits.github.io/praia-digital/"
+CTA_SOCIAL = "Veja mais em https://praia.digital | Parcerias: https://praia.digital/"
 
 
 def build_calendar():

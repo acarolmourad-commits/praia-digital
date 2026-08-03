@@ -65,7 +65,7 @@ def main():
         "- Agendar demonstrações de 15min",
         "- Publicar conteúdo SEO do dia",
         "",
-        "Site: https://acarolmourad-commits.github.io/praia-digital/",
+        "Site: https://praia.digital/",
         "Ferramentas: https://praia.digital",
         ""
     ])

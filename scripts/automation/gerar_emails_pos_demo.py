@@ -16,7 +16,7 @@ TEMPLATES = {
 <body style="font-family:Arial,sans-serif;max-width:700px;margin:auto;padding:20px;color:#222;">
   <p>Olá, <strong>{nome_contato}</strong>!</p>
   <p>Obrigado pela demo. Segue proposta comercial da Praia Digital para <strong>{imobiliaria}</strong>, com início sem custo e case conjunto.</p>
-  <p>Acesse detalhes: <a href="https://acarolmourad-commits.github.io/praia-digital/">site</a>.</p>
+  <p>Acesse detalhes: <a href="https://praia.digital/">site</a>.</p>
   <p>Ferramentas gratuitas: <a href="https://praia.digital">https://praia.digital</a></p>
   <p>CEO — Praia Digital</p>
 </body>
@@ -27,7 +27,7 @@ TEMPLATES = {
 <body style="font-family:Arial,sans-serif;max-width:700px;margin:auto;padding:20px;color:#222;">
   <p>Olá, <strong>{nome_contato}</strong>!</p>
   <p>Vamos começar o onboarding de <strong>{imobiliaria}</strong> em até 24h. Você receberá cronograma, acesso e métricas.</p>
-  <p>Links úteis: <a href="https://acarolmourad-commits.github.io/praia-digital/">site</a> | <a href="https://praia.digital">ferramentas gratuitas</a></p>
+  <p>Links úteis: <a href="https://praia.digital/">site</a> | <a href="https://praia.digital">ferramentas gratuitas</a></p>
   <p>CEO — Praia Digital</p>
 </body>
 </html>""",
@@ -37,7 +37,7 @@ TEMPLATES = {
 <body style="font-family:Arial,sans-serif;max-width:700px;margin:auto;padding:20px;color:#222;">
   <p>Olá, <strong>{nome_contato}</strong>!</p>
   <p>Parabéns pelo fechamento com <strong>{imobiliaria}</strong>. O documento de assinatura está pronto e inclui participação no case oficial.</p>
-  <p>Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">Praia Digital</a></p>
+  <p>Site: <a href="https://praia.digital/">Praia Digital</a></p>
   <p>Ferramentas gratuitas: <a href="https://praia.digital">https://praia.digital</a></p>
   <p>CEO — Praia Digital</p>
 </body>

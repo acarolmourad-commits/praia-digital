@@ -43,7 +43,7 @@ def build_article(item, idx):
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
 <meta name="description" content="{meta}">
-<link rel="canonical" href="https://acarolmourad-commits.github.io/praia-digital/blog/{slug}.html">
+<link rel="canonical" href="https://praia.digital/blog/{slug}.html">
 </head>
 <body>
 <article>

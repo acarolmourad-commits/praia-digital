@@ -38,7 +38,7 @@ Opa, só passando rapidinho para não sumir.
 A ideia continua a mesma: um piloto sem investimento inicial focado em resultado seu. Se fizer sentido, eu sigo com o Deep Dive e confirmamos 30min em vídeo.
 
 Links:
-• Site: https://acarolmourad-commits.github.io/praia-digital/
+• Site: https://praia.digital/
 • Ferramentas gratuitas: https://praia.digital
 
 Se quiser, eu posso enviar um caso curto agora.

@@ -160,7 +160,7 @@ def generate_followup_html(lead_name: str, lead_company: str, action: str, origi
         </div>
         <div class="footer">
             Este follow-up foi sugerido automaticamente pelo motor de gatilho de resposta.<br>
-            Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">Praia Digital</a> | Ferramentas grátis: <a href="https://praia.digital">praia.digital</a>
+            Site: <a href="https://praia.digital/">Praia Digital</a> | Ferramentas grátis: <a href="https://praia.digital">praia.digital</a>
         </div>
     </div>
 </body>

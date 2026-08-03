@@ -4,7 +4,7 @@ from datetime import date
 
 root = Path("C:/Users/Carolina/praia-digital")
 exclude_dirs = {"node_modules", ".git", "outreach", "docs", "scripts", "assets", "backups"}
-base_url = "https://acarolmourad-commits.github.io/praia-digital/"
+base_url = "https://praia.digital/"
 
 html_files = []
 for path in root.rglob("*.html"):

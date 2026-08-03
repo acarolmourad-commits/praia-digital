@@ -3,7 +3,7 @@ from pathlib import Path
 from datetime import date
 
 root = Path("C:/Users/Carolina/praia-digital")
-base_url = "https://acarolmourad-commits.github.io/praia-digital/"
+base_url = "https://praia.digital/"
 
 # Pastas irrelevantes para sitemap
 exclude_dirs = {".git", "node_modules", "backups"}

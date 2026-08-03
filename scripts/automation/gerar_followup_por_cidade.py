@@ -55,7 +55,7 @@ def main():
 <body style="font-family:Arial,sans-serif;max-width:700px;margin:auto;padding:20px;color:#222;">
   <p>Olá, <strong>{nome}</strong>!</p>
   {body}
-  <p>Site: <a href="https://acarolmourad-commits.github.io/praia-digital/">Praia Digital</a></p>
+  <p>Site: <a href="https://praia.digital/">Praia Digital</a></p>
   <p>Ferramentas gratuitas: <a href="https://praia.digital">https://praia.digital</a></p>
   <p>CEO — Praia Digital</p>
 </body>

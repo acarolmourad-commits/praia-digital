@@ -3,7 +3,7 @@ from pathlib import Path
 from datetime import datetime
 
 root = Path("C:/Users/Carolina/praia-digital")
-base_url = "https://acarolmourad-commits.github.io/praia-digital/"
+base_url = "https://praia.digital/"
 pages = [
     "index.html",
     "parcerias-imobiliarias-litoral.html",

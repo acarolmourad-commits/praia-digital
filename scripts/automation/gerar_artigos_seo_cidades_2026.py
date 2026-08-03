@@ -80,7 +80,7 @@ ul,ol {{ margin:0.75rem 0; padding-left:1.25rem; }}
   </article>
   <div class="footer">
     <p>🏖️ Praia Digital · Conteúdo inédito com foco em {city}</p>
-    <p>Site oficial: <a href="https://acarolmourad-commits.github.io/praia-digital/" target="_blank" style="color:#00d4ff;">https://acarolmourad-commits.github.io/praia-digital/</a></p>
+    <p>Site oficial: <a href="https://praia.digital/" target="_blank" style="color:#00d4ff;">https://praia.digital/</a></p>
   </div>
 </div>
 </body>

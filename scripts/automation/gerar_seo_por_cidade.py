@@ -71,7 +71,7 @@ def article_html(title, city, body):
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{title} — {city} | Praia Digital</title>
   <meta name="description" content="{body[:120]}...">
-  <link rel="canonical" href="https://acarolmourad-commits.github.io/praia-digital/blog/{slug}.html">
+  <link rel="canonical" href="https://praia.digital/blog/{slug}.html">
   <style>
     :root{{bg:#f8fafc;text:#0f172a;border:#e5e7eb;primary:#2563eb;secondary:#0ea5e9}}
     body{{font:14px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);padding:18px}}

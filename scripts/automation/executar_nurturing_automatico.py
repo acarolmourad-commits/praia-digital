@@ -55,7 +55,7 @@ templates = {
     },
     4: {
         'subject': 'Case real: +40% leads em 30 dias',
-        'body': lambda l: f"Olá, {l.get('nome','')}!\n\nQuero compartilhar um case real: Barra Norte Imóveis (Guarujá)\n• +40% leads qualificados\n• -60% tempo de atendimento\n• 3x mais agendamentos\n\n👉 Ver case: https://acarolmourad-commits.github.io/praia-digital/blog/case-sucesso-barra-norte-imoveis-guaruja-2026.html\n\nResponda QUERO para aplicar o mesmo modelo.\n\nCarolina Mourad\nCEO · Praia Digital"
+        'body': lambda l: f"Olá, {l.get('nome','')}!\n\nQuero compartilhar um case real: Barra Norte Imóveis (Guarujá)\n• +40% leads qualificados\n• -60% tempo de atendimento\n• 3x mais agendamentos\n\n👉 Ver case: https://praia.digital/blog/case-sucesso-barra-norte-imoveis-guaruja-2026.html\n\nResponda QUERO para aplicar o mesmo modelo.\n\nCarolina Mourad\nCEO · Praia Digital"
     },
     7: {
         'subject': 'Ferramenta gratuita recomendada para você',
