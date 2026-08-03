@@ -34,7 +34,7 @@
 </script>
 
   <meta charset="UTF-8">
-  <link rel="preload" as="image" href="https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/img/default-home.jpg" type="image/jpeg" fetchpriority="high">
+  <link rel="preload" as="image" href="https://praia.digital/img/default-home.jpg" type="image/jpeg" fetchpriority="high">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Relatório Diário — Litoral Prime Imóveis</title>
   <link rel="stylesheet" href="../css/style.css">
@@ -61,7 +61,7 @@
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Litoral Prime Imóveis",
-  "url": "https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/"
+  "url": "https://praia.digital/"
 }
 </script>
 <script type="application/ld+json">
@@ -109,7 +109,7 @@
     "Peruíbe"
   ]
 }
-</script><link rel="alternate" hreflang="x-default" href="https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/docs/relatorio-diario-litoral-prime.html" />
+</script><link rel="alternate" hreflang="x-default" href="https://praia.digital/docs/relatorio-diario-litoral-prime.html" />
   
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://www.googletagmanager.com">
@@ -330,7 +330,7 @@
       const pending = parseInt(document.getElementById('m-pending').textContent || '0', 10);
       const replied = parseInt(document.getElementById('m-replied').textContent || '0', 10);
       const fu = parseInt(document.getElementById('m-fu').textContent || '0', 10);
-      const text = `📊 Litoral Prime — Resumo do dia\n\n✅ Enviados: ${sent}\n⏳ Aguardando: ${pending}\n💬 Respondidos: ${replied}\n🔄 Follow-up: ${fu}\n\nAcesse o briefing: https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/docs/briefing-diario.html`;
+      const text = `📊 Litoral Prime — Resumo do dia\n\n✅ Enviados: ${sent}\n⏳ Aguardando: ${pending}\n💬 Respondidos: ${replied}\n🔄 Follow-up: ${fu}\n\nAcesse o briefing: https://praia.digital/docs/briefing-diario.html`;
       try {
         await navigator.clipboard.writeText(text);
         document.getElementById('copy-msg').textContent = 'Resumo copiado!';

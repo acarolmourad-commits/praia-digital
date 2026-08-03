@@ -1,0 +1,52 @@
+{
+  "sample_size": 20,
+  "stats": {
+    "a_schema_completo_pct": 100.0,
+    "b_offer_price_pct": 100.0,
+    "b_price_currency_pct": 100.0,
+    "c_img_quebrada_pct": 85.0,
+    "d_termos_liquidez_pct": 0.0
+  },
+  "top5": [
+    {
+      "file": "bertioga.html",
+      "title": "Imóveis em Bertioga | Litoral Prime Imóveis",
+      "description": "Lançamento, médio e alto padrão em Bertioga. Oferta completa com apartamento, casa, cobertura, terreno, chácara e studio.",
+      "appeal_score": 71,
+      "liquidity_terms": [],
+      "snippet": "Imóveis em Bertioga | Litoral Prime Imóveis {\"@context\": \"https://schema.org\", \"@type\": \"Organization\", \"name\": \"Litoral Prime Imóveis\", \"url\": \"https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/\", \"description\": \"Imobiliária digital especializada no litoral de São Paulo: Santos, Gu"
+    },
+    {
+      "file": "apartamento-vista-mar-santos.html",
+      "title": "Apartamento vista mar - Santos",
+      "description": "Apartamento com vista mar parcial, varanda gourmet e lazer completo no bairro mais valorizado de Santos.",
+      "appeal_score": 56,
+      "liquidity_terms": [],
+      "snippet": "Apartamento vista mar - Santos {\"@context\": \"https://schema.org\", \"@type\": \"Organization\", \"name\": \"Litoral Prime Imóveis\", \"url\": \"https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/\", \"description\": \"Imobiliária digital especializada no litoral de São Paulo: Santos, Guarujá, Praia "
+    },
+    {
+      "file": "imovel-007-santos-gonzaga-2026.html",
+      "title": "Cobertura Gonzaga Santos - Praia Digital",
+      "description": "Cobertura em Gonzaga, Santos. Venda. 60m². 2 quartos.",
+      "appeal_score": 29,
+      "liquidity_terms": [],
+      "snippet": "Cobertura Gonzaga Santos - Praia Digital Cobertura Gonzaga Santos Santos - Gonzaga | Cobertura | Venda Pular para o conteúdo Preço: R$ 360000 Área: 60m² Quartos: 2 quartos Aceita pet: Sim Localização: Gonzaga, Santos - SP Entre em contato para agendar visita ou receber mais detalhes. Contato WhatsAp"
+    },
+    {
+      "file": "imovel-001-santos-gonzaga-2026.html",
+      "title": "Apartamento Gonzaga Santos - Praia Digital",
+      "description": "Apartamento em Gonzaga, Santos. Venda. 60m². 2 quartos.",
+      "appeal_score": 26,
+      "liquidity_terms": [],
+      "snippet": "Apartamento Gonzaga Santos - Praia Digital Apartamento Gonzaga Santos Santos - Gonzaga | Apartamento | Venda Pular para o conteúdo Preço: R$ 290000 Área: 60m² Quartos: 2 quartos Aceita pet: Sim Localização: Gonzaga, Santos - SP Entre em contato para agendar visita ou receber mais detalhes. Contato W"
+    },
+    {
+      "file": "imovel-004-santos-gonzaga-2026.html",
+      "title": "Casa Gonzaga Santos - Praia Digital",
+      "description": "Casa em Gonzaga, Santos. Venda. 120m². 2 quartos.",
+      "appeal_score": 26,
+      "liquidity_terms": [],
+      "snippet": "Casa Gonzaga Santos - Praia Digital Casa Gonzaga Santos Santos - Gonzaga | Casa | Venda Pular para o conteúdo Preço: R$ 800000 Área: 120m² Quartos: 2 quartos Aceita pet: Sim Localização: Gonzaga, Santos - SP Entre em contato para agendar visita ou receber mais detalhes. Contato WhatsApp Imóveis reco"
+    }
+  ]
+}
