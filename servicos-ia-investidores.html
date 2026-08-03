@@ -116,25 +116,25 @@
       nav a { margin-left: .75rem; font-size: .85rem; }
     }
   </style>
-  <link rel="canonical" href="https://acarolmourad.github.io/praia-digital/servicos-ia-investidores.html">
+  <link rel="canonical" href="https://praia.digital/servicos-ia-investidores.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="IA para Investidores Imobiliários — Praia Digital">
   <meta property="og:description" content="Praia Digital Home Central de IA Planos 📈 IA para Investidores Imobiliários Simulador de ROI, Cap Rate, fluxo de caixa e classificação de oportunidades...">
   <meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
-  <meta property="og:url" content="https://acarolmourad.github.io/praia-digital/servicos-ia-investidores.html">
+  <meta property="og:url" content="https://praia.digital/servicos-ia-investidores.html">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="IA para Investidores Imobiliários — Praia Digital">
   <meta name="twitter:description" content="Praia Digital Home Central de IA Planos 📈 IA para Investidores Imobiliários Simulador de ROI, Cap Rate, fluxo de caixa e classificação de oportunidades...">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
-  <link rel="alternate" hreflang="x-default" href="https://acarolmourad.github.io/praia-digital/servicos-ia-investidores.html" />
-  <link rel="alternate" hreflang="pt-BR" href="https://acarolmourad.github.io/praia-digital/servicos-ia-investidores.html">
+  <link rel="alternate" hreflang="x-default" href="https://praia.digital/servicos-ia-investidores.html" />
+  <link rel="alternate" hreflang="pt-BR" href="https://praia.digital/servicos-ia-investidores.html">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="referrer" content="no-referrer-when-downgrade">
 <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
-<link rel="preconnect" href="https://acarolmourad.github.io" crossorigin>
-<link rel="icon" type="image/x-icon" href="https://acarolmourad.github.io/praia-digital/favicon.ico">
-<link rel="apple-touch-icon" href="https://acarolmourad.github.io/praia-digital/favicon.ico">
-<link rel="manifest" href="https://acarolmourad.github.io/praia-digital/manifest.json">
+<link rel="preconnect" href="https://praia.digital/" crossorigin>
+<link rel="icon" type="image/x-icon" href="https://praia.digital/favicon.ico">
+<link rel="apple-touch-icon" href="https://praia.digital/favicon.ico">
+<link rel="manifest" href="https://praia.digital/manifest.json">
 <meta name="robots" content="index, follow">
 <meta property="og:locale" content="pt_BR">
 <meta name="theme-color" content="#0ea5e9">
@@ -178,14 +178,14 @@
   <body>
 <a class="skip-link" href="#main" style="position:absolute;left:-9999px;">Pular para o conteúdo</a>
   <header>
-    <a class="logo" href="/praia-digital/">
+    <a class="logo" href="/">
       <svg class="logo-icon" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="18" fill="#FFFFFF" fill-opacity="0.2"/><path d="M8 22 Q18 12 28 22" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none"/><path d="M6 26 Q18 16 30 26" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/><circle cx="26" cy="10" r="4" fill="#FFD700"/></svg>
       Praia Digital
     </a>
     <nav aria-label="Navegação principal">
-      <a href="/praia-digital/">Home</a>
-      <a href="/praia-digital/ia/">Central de IA</a>
-      <a href="/praia-digital/servicos-ia-imobiliarias.html">Planos</a>
+      <a href="/">Home</a>
+      <a href="/ia/">Central de IA</a>
+      <a href="/servicos-ia-imobiliarias.html">Planos</a>
     </nav>
   </header>
 
@@ -331,7 +331,7 @@
     const body = encodeURIComponent('Nome: ' + nome + '\nTelefone: ' + fone + '\nCidade: ' + cidade + '\nPerfil: ' + perfil + '\nPlano: ' + plano + '\n');
     window.location.href = 'mailto:comercial@praia.digital?subject=' + subject + '&body=' + body;
     try {
-      const endpoint = '/praia-digital/backend/api/leads/b2b.js';
+      const endpoint = '/backend/api/leads/b2b.js';
       const res = await fetch(endpoint, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({nome:nome,telefone:fone,cidade:cidade,perfil:perfil,plano:plano}) });
       const feedback = document.getElementById('b2bFeedbackPlanInvest');
       if (feedback) { feedback.style.display='block'; feedback.textContent='Interesse registrado! Abra seu e-mail para enviar.'; }

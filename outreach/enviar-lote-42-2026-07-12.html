@@ -61,7 +61,7 @@ leads.forEach((lead, index) => {
   div.innerHTML = `
     <h3>${lead.nome} - ${lead.cidade}</h3>
     <p>${lead.email}</p>
-    <button onclick="window.open('mailto:${lead.email}?subject=${encodeURIComponent(lead.assunto)}&body=${encodeURIComponent('Olá, meu nome é Carolina Moura, CEO da Praia Digital. Somos uma proptech especializada no litoral paulista e quero propor uma parceria sem custo inicial. Acesse nossas ferramentas em https://praia.digital e nosso site em https://acarolmourad-commits.github.io/praia-digital/. Agende uma call: (11) 95434-6288.')}', '_blank')">Abrir e-mail</button>
+    <button onclick="window.open('mailto:${lead.email}?subject=${encodeURIComponent(lead.assunto)}&body=${encodeURIComponent('Olá, meu nome é Carolina Moura, CEO da Praia Digital. Somos uma proptech especializada no litoral paulista e quero propor uma parceria sem custo inicial. Acesse nossas ferramentas em https://praia.digital e nosso site em https://praia.digital/. Agende uma call: (11) 95434-6288.')}', '_blank')">Abrir e-mail</button>
   `;
   container.appendChild(div);
 });
