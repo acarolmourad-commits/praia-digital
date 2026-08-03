@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro de Imóvel — Litoral Prime Imóveis</title>
+<style>
+body{font-family:Arial,sans-serif;max-width:600px;margin:auto;padding:22px;color:#112}
+h1{color:#0a3a6b}
+label{display:block;margin:.5rem 0 .2rem;font-size:.85rem;color:#334}
+input,select,textarea{width:100%;padding:.5rem;border:1px solid #cfe3f5;border-radius:8px;box-sizing:border-box}
+button{background:linear-gradient(90deg,#22d3ee,#4ade80);color:#04141f;font-weight:800;border:0;padding:.8rem;border-radius:9px;margin-top:1rem;cursor:pointer;width:100%}
+.card{background:#f0f7ff;border:1px solid #cfe3f5;border-radius:12px;padding:1rem;margin:1rem 0}
+.err{color:#dc2626;font-size:.85rem}
+small{color:#667}
+</style>
+</head>
+<body>
+<h1>🏠 Cadastro de Imóvel</h1>
+<p>Preencha os dados abaixo. Seu imóvel será revisado e incluído no site em até 24h.</p>
+
+<form id="cadastroForm">
+<label>Título do anúncio</label>
+<input id="titulo" placeholder="Ex: Apartamento 2 quartos frente mar" required>
+
+<label>Cidade</label>
+<select id="cidade" required>
+  <option value="">Selecione</option>
+  <option>Santos</option>
+  <option>Guarujá</option>
+  <option>Praia Grande</option>
+  <option>Bertioga</option>
+  <option>São Vicente</option>
+  <option>Itanhaém</option>
+  <option>Peruíbe</option>
+  <option>Mongaguá</option>
+</select>
+
+<label>Tipo</label>
+<select id="tipo" required>
+  <option value="">Selecione</option>
+  <option>apartamento</option>
+  <option>casa</option>
+  <option>cobertura</option>
+  <option>studio</option>
+  <option>loft</option>
+  <option>flat</option>
+  <option>kitnet</option>
+</select>
+
+<label>Preço (R$)</label>
+<input id="preco" type="number" placeholder="450000" required>
+
+<label>Dormitórios</label>
+<input id="dorm" type="number" placeholder="2" required>
+
+<label>Área (m²)</label>
+<input id="area" type="number" placeholder="60" required>
+
+<label>Descrição</label>
+<textarea id="desc" rows="3" placeholder="Diferenciais, localização, condomínio..."></textarea>
+
+<label>Seu nome</label>
+<input id="nome" placeholder="Nome completo" required>
+
+<label>WhatsApp para contato</label>
+<input id="whatsapp" placeholder="(11) 95434-6288" required>
+
+<button type="submit">Enviar cadastro →</button>
+<div class="err" id="err"></div>
+</form>
+
+<div class="card" id="out" style="display:none">
+  <b>✅ Recebemos seu cadastro</b>
+  <p>Vamos analisar as informações e entraremos em contato em até 24h pelo WhatsApp.</p>
+  <p><a href="https://wa.me/5511954346288">Contato direto pelo WhatsApp</a></p>
+</div>
+
+<script>
+const OWNER = 'acarolmourad-commits';
+const REPO = 'praia-digital';
+const TOKEN = ''; // optional public submit without token is often blocked
+
+document.getElementById('cadastroForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  const err = document.getElementById('err');
+  err.textContent = '';
+  const titulo = document.getElementById('titulo').value.trim();
+  const cidade = document.getElementById('cidade').value;
+  const tipo = document.getElementById('tipo').value;
+  const preco = document.getElementById('preco').value;
+  const dorm = document.getElementById('dorm').value;
+  const area = document.getElementById('area').value;
+  const desc = document.getElementById('desc').value.trim();
+  const nome = document.getElementById('nome').value.trim();
+  const whatsapp = document.getElementById('whatsapp').value.trim();
+  if (!titulo || !cidade || !tipo || !preco || !dorm || !area || !nome || !whatsapp) {
+    err.textContent = 'Preencha todos os campos obrigatórios.';
+    return;
+  }
+  const body = `### 🏠 Novo cadastro de imóvel\n\n` +
+    `- **Título:** ${titulo}\n` +
+    `- **Cidade:** ${cidade}\n` +
+    `- **Tipo:** ${tipo}\n` +
+    `- **Preço:** R$ ${Number(preco).toLocaleString('pt-BR')}\n` +
+    `- **Dormitórios:** ${dorm}\n` +
+    `- **Área:** ${area} m²\n` +
+    `- **Descrição:** ${desc || '-'}\n\n` +
+    `### 👤 Contato\n\n` +
+    `- **Nome:** ${nome}\n` +
+    `- **WhatsApp:** ${whatsapp}\n\n` +
+    `_Enviado pelo site em ${new Date().toISOString()}_\n`;
+  try {
+    const res = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/issues`, {
+      method: 'POST',
+      headers: { 'Accept': 'application/vnd.github+json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ title: `Cadastro imóvel: ${titulo} — ${cidade}`, body, labels: ['cadastro-imovel'] })
+    });
+    if (!res.ok) {
+      const data = await res.json().catch(() => ({}));
+      throw new Error(data.message || `HTTP ${res.status}`);
+    }
+    document.getElementById('cadastroForm').style.display = 'none';
+    document.getElementById('out').style.display = 'block';
+  } catch (err2) {
+    err.textContent = 'Falha ao enviar. Tente novamente ou use o WhatsApp: ' + err2.message;
+  }
+});
+</script>
+</body>
+</html>
