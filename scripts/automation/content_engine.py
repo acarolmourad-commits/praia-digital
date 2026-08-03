@@ -75,8 +75,16 @@ def main():
         run('git push origin main', 'Git push')
         print('\n✅ Sitemap atualizado.')
 
+    elif mode == 'cities':
+        run('python scripts/automation/generate_city_service_pages.py', 'Gerar páginas cidade-servico')
+        run('python scripts/automation/add_landings_to_sitemap.py', 'Atualizar sitemap')
+        run('git add -A', 'Git add')
+        run('git diff --cached --quiet || git commit -m "feat: regenerate city-service pages + sitemap update"', 'Git commit')
+        run('git push origin main', 'Git push')
+        print('\n✅ Loop de cidades concluído.')
+
     else:
-        print('Uso: python scripts/automation/content_engine.py [landings|blog|social|full|regenerate_sitemap]')
+        print('Uso: python scripts/automation/content_engine.py [landings|blog|social|full|regenerate_sitemap|cities]')
         sys.exit(1)
 
 if __name__ == '__main__':
