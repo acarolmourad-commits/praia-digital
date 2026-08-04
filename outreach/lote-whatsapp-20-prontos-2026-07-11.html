@@ -159,7 +159,7 @@
     div.innerHTML=`<strong>Lead ${r.id} — ${r.nome}</strong>
       <div class="small">${r.contato} | ${r.cidade} | Score ${r.score}</div>
       <div class="small">WhatsApp: ${r.whatsapp}</div>
-      <a class="btn" href="https://wa.me/${r.whatsapp.replace(/\\D/g,'')}?text=${encodeURIComponent(tpl)}" target="_blank" rel="noopener">Abrir conversa</a>`;
+      <a class="btn" href="https://wa.me/${r.whatsapp.replace(/\D/g,'')}?text=${encodeURIComponent(tpl)}" target="_blank" rel="noopener">Abrir conversa</a>`;
     grid.appendChild(div);
   });
 </script>

@@ -147,7 +147,7 @@
       <div class="small">Contato: ${r.nome} | Cidade: ${r.cidade}</div>
       <div class="small">E-mail: ${r.email}</div>
       <a class="btn" href="mailto:${r.email}?subject=${encodeURIComponent('Acompanhamento Praia Digital — '+r.empresa)}&body=${encodeURIComponent('Olá, '+r.nome+'!%0A%0AEstou acompanhando o envio que fizemos há 3 dias sobre o piloto de IA para imobiliárias do litoral.%0A%0AQuer seguir com o piloto gratuito?%0A%0AAguardo um ok.')}">Enviar e-mail</a>
-      <a class="btn" href="https://wa.me/${r.whatsapp.replace(/\\D/g,'')}?text=${encodeURIComponent(tpl)}" target="_blank" rel="noopener">Abrir WhatsApp</a>`;
+      <a class="btn" href="https://wa.me/${r.whatsapp.replace(/\D/g,'')}?text=${encodeURIComponent(tpl)}" target="_blank" rel="noopener">Abrir WhatsApp</a>`;
     grid.appendChild(div);
   });
 </script>
