@@ -49,14 +49,14 @@ with open(CSV_PATH, encoding='utf-8') as f:
         slug = row.get('slug') or row.get('file', '').replace('.html', '')
         if not slug:
             continue
-        title = row.get('title', slug.replace('-', ' ').title())
-        desc = row.get('description', f'{title}: oportunidade no litoral de São Paulo.')
-        city = row.get('city', '')
-        type_ = row.get('type', 'Venda')
-        price = row.get('price', 'R$ 450.000–1.200.000')
-        bedrooms = row.get('bedrooms', '2–3')
-        area = row.get('area', '70–180 m²')
-        image = row.get('image', 'https://praia.digital/img/default-home.jpg')
+        title = str(row.get('title', slug.replace('-', ' ').title()) or '')
+        desc = str(row.get('description', f'{title}: oportunidade no litoral de São Paulo.') or '')
+        city = str(row.get('city', '') or '')
+        type_ = str(row.get('type', 'Venda') or 'Venda')
+        price = str(row.get('price', 'R$ 450.000–1.200.000') or 'R$ 450.000–1.200.000')
+        bedrooms = str(row.get('bedrooms', '2–3') or '2–3')
+        area = str(row.get('area', '70–180 m²') or '70–180 m²')
+        image = str(row.get('image', 'https://praia.digital/img/default-home.jpg') or 'https://praia.digital/img/default-home.jpg')
         tags = row.get('tags', '<article class="servico-card"><h3>✓</h3><p>Lazer completo</p></article><article class="servico-card"><h3>✓</h3><p>Segurança 24h</p></article><article class="servico-card"><h3>✓</h3><p>Fácil acesso</p></article>')
         related = row.get('related', '')
         whatsapp_link = row.get('whatsapp_link')
@@ -67,7 +67,8 @@ with open(CSV_PATH, encoding='utf-8') as f:
         if price in ['R$ 450.000–1.200.000', 'R$ 450.000 – 1.200.000', 'R$ 300.000–R$ 900.000']:
             low, high = city_prices.get(city.lower(), ('R$ 300.000', 'R$ 900.000'))
             price = f'{low}–{high}'
-        if 'Lazer completo' in tags or 'Segurança 24h' in tags:
+        tags = row.get('tags') or ''
+        if not tags or 'Lazer completo' in tags or 'Segurança 24h' in tags:
             tags = ''.join([f'<article class="servico-card"><h3>✓</h3><p>{tag}</p></article>' for tag in type_tags.get(type_.lower(), ['Lazer completo', 'Segurança 24h', 'Fácil acesso'])])
         if not related:
             related = ''.join([
