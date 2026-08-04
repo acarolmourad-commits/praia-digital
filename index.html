@@ -1308,7 +1308,7 @@
 <section class="credit-hero-section" id="credito">
   <div class="credit-hero-inner">
     <div class="credit-hero-badge">🏦 ANÁLISE COMPLETA DE CRÉDITO IMOBILIÁRIO</div>
-    <h1></h1>
+    
     <p class="credit-hero-sub">FGTS, Minha Casa Minha Vida, SBPE — compare taxas, descubra sua elegibilidade e veja quanto pode financiar em segundos.</p>
 
     <!-- ELIGIBILITY CHECKER -->
@@ -2322,7 +2322,7 @@
 </div>
 
 <section class="hero">
-  <h1></h1>  <h2></h2>
+    <h2></h2>
   
   <p>A primeira plataforma do litoral com inteligência artificial — apartamentos, casas, pousadas e terrenos para decisões mais inteligentes.</p>
   <div class="hero-cta">
@@ -4472,7 +4472,7 @@ function printListing() {
   if (!l) return;
   const w = window.open('', '_blank');
   w.document.write('<html><head><style>body{font-family:Segoe UI,sans-serif;padding:2rem;max-width:700px;margin:0 auto;}.price{font-size:1.5rem;color:#0077B6;font-weight:700;}.contact{background:#0077B6;color:white;padding:1rem;border-radius:12px;margin-top:2rem;}</style></head><body>');
-  w.document.write('<h1></h1><p>📍 ' + l.cidadeLabel + '</p><p class="price">' + formatPrice(l.preco) + '</p>');
+  w.document.write('<p>📍 ' + l.cidadeLabel + '</p><p class="price">' + formatPrice(l.preco) + '</p>');
   w.document.write('<p>📐 ' + l.area + 'm² | 🛏️ ' + l.dormitorios + ' dorms | 🧠 Score IA: ' + l.aiScore + '/100 | 📈 ROI: ' + l.roi + '% a.a.</p>');
   w.document.write('<p>' + l.descricao + '</p>');
   w.document.write('<p><strong>Motivo IA:</strong> ' + l.aiReason + '</p>');
