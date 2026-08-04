@@ -10,8 +10,7 @@ We will acknowledge within 48 hours and provide a fix timeline.
 
 ## Scope
 This policy covers:
-- https://acarolmourad.github.io/praia-digital/
-- https://acarolmourad-commits.github.io/praia-digital/
+- https://praia.digital/
 
 Out-of-scope:
 - Third-party integrations

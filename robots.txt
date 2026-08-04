@@ -1,5 +1,12 @@
 User-agent: *
 Allow: /
-Disallow: /docs/
 Disallow: /scripts/
-Sitemap: https://acarolmourad-commits.github.io/praia-digital/sitemap.xml
+Disallow: /scripts/automation/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /backups/
+Disallow: /dashboards/
+Disallow: /leads/
+
+Sitemap: https://praia.digital/sitemap.xml
+Host: https://praia.digital
