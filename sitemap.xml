@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+<url><loc>https://praia.digital/cidades/index.html</loc><lastmod>2026-08-04T17:12:48Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://praia.digital/cidades/santos.html</loc><lastmod>2026-08-04T17:12:48Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://praia.digital/bertioga.html</loc><lastmod>2026-08-04T17:12:48Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://praia.digital/politica-privacidade.html</loc><lastmod>2026-08-04T17:12:48Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+
     <loc>https://praia.digital/404.html</loc>
     <lastmod>2026-08-04</lastmod>
     <changefreq>weekly</changefreq>
