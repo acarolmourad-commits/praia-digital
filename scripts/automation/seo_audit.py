@@ -18,6 +18,7 @@ PUBLIC_GLOBS = [
     'cidades-expansao/*.html',
     'servicos/*.html',
     'servicos/cidade-servico/*.html',
+    'eventos-litoral-paulista-2026-2027/*.html',
     'cases/*.html',
     'curso/*.html',
     'landings/*.html',
