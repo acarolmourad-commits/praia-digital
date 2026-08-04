@@ -98,8 +98,17 @@ def main():
         run('python scripts/automation/seo_audit.py', 'Auditar SEO')
         print('\n✅ Auditoria concluída.')
 
+    elif mode == 'neighborhoods':
+        run('python scripts/automation/expand_neighborhoods.py', 'Expandir bairros')
+        run('python scripts/automation/add_landings_to_sitemap.py', 'Atualizar sitemap')
+        run('python scripts/automation/seo_audit.py', 'Auditar SEO pós-expansão')
+        run('git add -A', 'Git add')
+        run('git diff --cached --quiet || git commit -m "feat: expand neighborhoods + sitemap update"', 'Git commit')
+        run('git push origin main', 'Git push')
+        print('\n✅ Loop de bairros concluído.')
+
     else:
-        print('Uso: python scripts/automation/content_engine.py [landings|blog|social|full|regenerate_sitemap|cities|audit]')
+        print('Uso: python scripts/automation/content_engine.py [landings|imoveis|blog|social|full|regenerate_sitemap|cities|audit|neighborhoods]')
         sys.exit(1)
 
 if __name__ == '__main__':
