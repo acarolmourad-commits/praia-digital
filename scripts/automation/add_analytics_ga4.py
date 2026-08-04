@@ -1,42 +1,52 @@
 from pathlib import Path
-import re
+import argparse
 
-root = Path('.')
-pages = [
-    'index.html',
-    'servicos.html',
-    'imoveis.html',
-    'cases.html',
-    'blog/index.html',
-    'litoral-prime-imoveis/index.html',
-    'litoral-prime-imoveis/imoveis.html',
+REPO = Path('.').resolve()
+PUBLIC_DIRS = [
+    REPO,
+    REPO / 'imoveis',
+    REPO / 'bairros',
+    REPO / 'hub',
+    REPO / 'blog',
+    REPO / 'cidades',
+    REPO / 'anfitrioes',
+    REPO / 'personas',
+    REPO / 'cases',
+    REPO / 'exclusivos',
+    REPO / 'investidores',
 ]
 
-ga_block = '''  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+parser = argparse.ArgumentParser()
+parser.add_argument('--ga4-id', default='')
+parser.add_argument('--dry-run', action='store_true')
+args = parser.parse_args()
+
+ga4_id = args.ga4_id.strip()
+if not ga4_id:
+    print('GA4_SKIPPED no id provided')
+    exit(0)
+
+ga_block = f'''  <script async src="https://www.googletagmanager.com/gtag/js?id={ga4_id}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){{dataLayer.push(arguments);}}
     gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true });
+    gtag('config', '{ga4_id}', {{ anonymize_ip: true }});
   </script>
 '''
 
-updated = 0
-for rel in pages:
-    path = root / rel
-    text = path.read_text(encoding='utf-8', errors='ignore')
-    if 'googletagmanager.com/gtag/js' in text:
-        print('skip', rel)
+patched = 0
+for base in PUBLIC_DIRS:
+    if not base.exists():
         continue
-    if '<meta name="viewport"' in text:
-        new_text = text.replace('<meta name="viewport"', ga_block + '<meta name="viewport"', 1)
-    else:
-        new_text = text.replace('</head>', ga_block + '</head>', 1)
-    if new_text != text:
-        path.write_text(new_text, encoding='utf-8')
-        print('updated', rel)
-        updated += 1
-    else:
-        print('no-insert', rel)
+    for path in base.rglob('*.html'):
+        text = path.read_text(encoding='utf-8', errors='ignore')
+        if 'googletagmanager.com/gtag/js' in text or 'dataLayer.push(arguments);' in text:
+            continue
+        if args.dry_run:
+            continue
+        text = text.replace('</head>', ga_block + '</head>', 1)
+        path.write_text(text, encoding='utf-8')
+        patched += 1
 
-print('updated', updated, 'pages')
+print('GA4_ADDED', patched)

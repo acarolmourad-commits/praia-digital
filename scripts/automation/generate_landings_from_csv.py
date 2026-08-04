@@ -2,6 +2,7 @@ from pathlib import Path
 import csv
 import argparse
 import urllib.parse
+import re
 
 REPO = Path('.').resolve()
 OUT_DIR = REPO / 'imoveis'
@@ -11,8 +12,10 @@ CSV_PATH = REPO / 'imoveis' / 'landings.csv'
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--overwrite', action='store_true')
+parser.add_argument('--ga4-id', default='')
 args = parser.parse_args()
 overwrite = args.overwrite
+ga4_id = args.ga4_id.strip()
 
 city_prices = {
     'santos': ('R$ 520.000', 'R$ 1.200.000'),
@@ -85,7 +88,13 @@ with open(CSV_PATH, encoding='utf-8') as f:
         html = html.replace('{{tags}}', tags)
         html = html.replace('{{related}}', related)
         html = html.replace('{{whatsapp_link}}', whatsapp_link)
+        html = html.replace('{{slug}}', slug)
         html = html.replace('https://praia.digital/imoveis/template-landing.html', f'https://praia.digital/imoveis/{slug}.html')
+
+        if ga4_id:
+            html = html.replace('{{GA4_ID}}', ga4_id)
+        else:
+            html = re.sub(r'<script async src="https://www\.googletagmanager\.com/gtag/js\?id=\{\{GA4_ID\}\}"></script>\s*<script>\s*window\.dataLayer = window\.dataLayer || \[\];\s*function gtag\(\)\{dataLayer\.push\(arguments\);\}\s*gtag\(\'js\', new Date\(\)\);\s*gtag\(\'config\', \'\{\{GA4_ID\}\}\', \{ anonymize_ip: true \}\);\s*</script>', '', html, flags=re.I|re.S)
 
         out = OUT_DIR / f'{slug}.html'
         if out.exists():
