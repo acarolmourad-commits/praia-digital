@@ -92,9 +92,17 @@ with open(CSV_PATH, encoding='utf-8') as f:
         html = html.replace('https://praia.digital/imoveis/template-landing.html', f'https://praia.digital/imoveis/{slug}.html')
 
         if ga4_id:
-            html = html.replace('{{GA4_ID}}', ga4_id)
+            ga_block = f'''  <script async src="https://www.googletagmanager.com/gtag/js?id={ga4_id}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){{dataLayer.push(arguments);}}
+    gtag('js', new Date());
+    gtag('config', '{ga4_id}', {{ anonymize_ip: true }});
+  </script>
+'''
+            html = html.replace('<!-- GA4_PLACEHOLDER -->', ga_block)
         else:
-            html = re.sub(r'<script async src="https://www\.googletagmanager\.com/gtag/js\?id=\{\{GA4_ID\}\}"></script>\s*<script>\s*window\.dataLayer = window\.dataLayer || \[\];\s*function gtag\(\)\{dataLayer\.push\(arguments\);\}\s*gtag\(\'js\', new Date\(\)\);\s*gtag\(\'config\', \'\{\{GA4_ID\}\}\', \{ anonymize_ip: true \}\);\s*</script>', '', html, flags=re.I|re.S)
+            html = html.replace('<!-- GA4_PLACEHOLDER -->', '')
 
         out = OUT_DIR / f'{slug}.html'
         if out.exists():
