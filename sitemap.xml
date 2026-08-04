@@ -12249,4 +12249,29 @@
     <lastmod>2026-08-03T22:15:04+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
+  <url>
+    <loc>https://praia.digital/llms.txt</loc>
+    <lastmod>2026-08-03T22:15:04+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://praia.digital/llms-full.txt</loc>
+    <lastmod>2026-08-03T22:15:04+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://praia.digital/humans.txt</loc>
+    <lastmod>2026-08-03T22:15:04+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://praia.digital/robots.txt</loc>
+    <lastmod>2026-08-03T22:15:04+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://praia.digital/security.txt</loc>
+    <lastmod>2026-08-03T22:15:04+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
 </urlset>

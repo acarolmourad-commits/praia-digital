@@ -1,0 +1,16 @@
+/* humans.txt — Litoral Prime Imóveis / Praia Digital */
+/* Equipe e agradecimentos */
+
+Team
+  Carolina Mourade — CEO
+  contato: comercial@praia.digital
+  site: https://praia.digital
+
+Tech
+  Stack: HTML/CSS/JS estático, GitHub Pages
+  Automação: Python scripts (content_engine)
+  IA: geração de conteúdo SEO, imagens e vídeo
+
+Acknowledgments
+  Open source community
+  Família e parceiros do litoral
