@@ -2,7 +2,9 @@
 
 Site oficial: https://praia.digital/
 Sitemap: https://praia.digital/sitemap.xml
+Sitemap visual: https://praia.digital/sitemap.html
 RSS: https://praia.digital/blog/feed.xml
+Humans: https://praia.digital/humans.txt
 
 ## Sobre
 Imobiliária digital do litoral paulista, com foco em captação, venda e aluguel por temporada em Santos, Guarujá, Praia Grande, Itanhaém, Mongaguá, São Vicente, Peruíbe e Bertioga.
@@ -15,16 +17,40 @@ Imobiliária digital do litoral paulista, com foco em captação, venda e alugue
 - Gestão de aluguel por temporada
 - Automação para corretores
 
+## Personas
+- Investidores: imóveis com retorno e rentabilidade
+- Famílias: segurança, lazer e escolas
+- Temporada: aluguel por período com dados reais
+- Primeiro imóvel: entrada, financiamento e passos iniciais
+
+## Eventos
+- Páginas por cidade e tipo: réveillon, carnaval, festivais de verão, temporada alta, feriados prolongados, eventos culturais, festas tradicionais e agenda de eventos.
+- Diretório: /eventos-litoral-paulista-2026-2027/
+
+## SEO e conteúdo
+- Blog com artigos 800+ palavras e CTA WhatsApp
+- Carrossel de posts: /blog/carrossel.html
+- Páginas de bairros, cidades, serviços e landings
+- FAQ estruturado em imóveis e personas
+
 ## Contato
 - WhatsApp: (11) 95434-6288
 - E-mail: comercial@praia.digital
 
 ## Estrutura principal
 - /index.html — hub principal
+- /contato.html — contato
 - /servicos.html — serviços
 - /imoveis.html — imóveis em destaque
 - /cases.html — cases de sucesso
 - /blog/index.html — blog
+- /blog/carrossel.html — carrossel
 - /cidades/*.html — páginas de cidade
 - /bairros/*.html — páginas de bairro
 - /imoveis/*.html — fichas de imóveis
+- /personas/*.html — hubs por persona
+- /eventos-litoral-paulista-2026-2027/*.html — eventos por cidade
+- /litoral-norte.html — hub regional
+- /litoral-sul.html — hub regional
+- /sitemap.html — mapa do site visual
+- /sitemap.xml — sitemap técnico

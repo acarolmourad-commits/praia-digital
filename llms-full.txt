@@ -1,8 +1,11 @@
 # Litoral Prime Imóveis — LLM full site context
 
 URL base: https://praia.digital/
-Sitemap: https://praia.digital/sitemap.xml
+Sitemap XML: https://praia.digital/sitemap.xml
+Sitemap visual: https://praia.digital/sitemap.html
 RSS: https://praia.digital/blog/feed.xml
+Humans: https://praia.digital/humans.txt
+LLM summary: https://praia.digital/llms.txt
 
 ## Missão
 Conectar proprietários, compradores e investidores do litoral paulista com conteúdo, automação e serviços imobiliários digitais.
@@ -17,6 +20,7 @@ Santos, Guarujá, Praia Grande, Itanhaém, Mongaguá, São Vicente, Peruíbe, Be
 - Automação de visitas e follow-up
 - Gestão de aluguel por temporada
 - SEO local para imobiliárias e corretores
+- Eventos e temporada: dados para decisão de compra e aluguel
 
 ## Público-alvo
 - Proprietários de imóveis no litoral
@@ -24,12 +28,32 @@ Santos, Guarujá, Praia Grande, Itanhaém, Mongaguá, São Vicente, Peruíbe, Be
 - Corretores e imobiliárias parceiras
 - Compradores de primeira viagem
 - Estrangeiros interessados no litoral paulista
+- Pessoas em busca de temporada e eventos
+
+## Personas
+- Investidor: valorização, rentabilidade e temporada
+- Família: segurança, lazer e escolas
+- Temporada: dicas, contratos e administração
+- Primeiro imóvel: entrada, financiamento e passos iniciais
+
+## Eventos
+- Diretório com 72 páginas: /eventos-litoral-paulista-2026-2027/
+- Tipos: réveillon, carnaval, festivais de verão, temporada alta, feriados prolongados, eventos culturais, festas tradicionais e agenda de eventos
+- Cobertura: 8 cidades do litoral de SP
+- SEO e FAQ estruturado aplicados
 
 ## Prova social
 - Cases de sucesso em Santos, Guarujá, Bertioga, Praia Grande
 - Metodologias de captação orgânica
 - Ferramentas de IA aplicadas ao mercado imobiliário
+- Blog com artigos 800+ palavras e carrossel de posts
 
+## SEO e conteúdo
+- Mais de 8.200 páginas com SEO estrutural/social validado
+- Páginas de bairros, cidades, serviços e landings
+- FAQ estruturado em imóveis e personas
+- Imagens com alt text descritivo
+- Lazy loading em massa
 
 ## Dados de contato
 - WhatsApp: (11) 95434-6288
@@ -38,6 +62,17 @@ Santos, Guarujá, Praia Grande, Itanhaém, Mongaguá, São Vicente, Peruíbe, Be
 
 ## Como nos encontrar
 - Hub principal: https://praia.digital/
+- Contato: https://praia.digital/contato.html
 - Serviços: https://praia.digital/servicos.html
 - Imóveis: https://praia.digital/imoveis.html
 - Blog: https://praia.digital/blog/index.html
+- Carrossel: https://praia.digital/blog/carrossel.html
+- Cidades: https://praia.digital/cidades/
+- Bairros: https://praia.digital/bairros/
+- Personas: https://praia.digital/personas/
+- Eventos: https://praia.digital/eventos-litoral-paulista-2026-2027/
+- Litoral Norte: https://praia.digital/litoral-norte.html
+- Litoral Sul: https://praia.digital/litoral-sul.html
+- Mapa do site: https://praia.digital/sitemap.html
+- Política de segurança: https://praia.digital/security.txt
+- Humanos: https://praia.digital/humans.txt
