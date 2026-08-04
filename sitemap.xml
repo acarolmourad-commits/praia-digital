@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+<url><loc>https://praia.digital/bairros/praia-grande-ocian.html</loc><lastmod>2026-08-04T20:48:14Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://praia.digital/bairros/guaruja-centro.html</loc><lastmod>2026-08-04T20:48:14Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://praia.digital/bairros/praia-grande-vila-tupi.html</loc><lastmod>2026-08-04T20:48:14Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+
 <url><loc>https://praia.digital/faq.html</loc><lastmod>2026-08-04T20:33:12Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
 
 <url><loc>https://praia.digital/sobre.html</loc><lastmod>2026-08-04T20:25:51Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
