@@ -31,6 +31,7 @@ PUBLIC_GLOBS = [
     'perfis/*.html',
     'proptech/*.html',
     'subscription/*.html',
+    'personas/*.html',
     'outreach/**/*.html',
     'litoral-prime-imoveis/**/*.html',
     'docs/**/*.html',
