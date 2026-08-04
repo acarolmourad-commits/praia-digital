@@ -75,11 +75,24 @@ landings = [
     'frente-mar-peruibe',
 ]
 
+# Regional hubs
+hubs = [
+    'litoral-norte.html',
+    'litoral-sul.html',
+]
+
 text = SITEMAP.read_text(encoding='utf-8', errors='ignore')
 existing = set(re.findall(r'<loc>([^<]+)</loc>', text))
 added = 0
 for slug in landings:
     url = f'https://praia.digital/imoveis/{slug}.html'
+    if url not in existing:
+        block = f'  <url>\n    <loc>{url}</loc>\n    <lastmod>2026-08-03T22:15:04+00:00</lastmod>\n    <changefreq>weekly</changefreq>\n  </url>\n'
+        text = text.replace('</urlset>', block + '</urlset>', 1)
+        added += 1
+
+for hub in hubs:
+    url = f'https://praia.digital/{hub}'
     if url not in existing:
         block = f'  <url>\n    <loc>{url}</loc>\n    <lastmod>2026-08-03T22:15:04+00:00</lastmod>\n    <changefreq>weekly</changefreq>\n  </url>\n'
         text = text.replace('</urlset>', block + '</urlset>', 1)
