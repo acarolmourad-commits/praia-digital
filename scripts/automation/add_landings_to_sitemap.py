@@ -89,6 +89,11 @@ personas = [
     'personas/primeiro-imovel.html',
 ]
 
+# Core pages
+core = [
+    'contato.html',
+]
+
 text = SITEMAP.read_text(encoding='utf-8', errors='ignore')
 existing = set(re.findall(r'<loc>([^<]+)</loc>', text))
 added = 0
@@ -108,6 +113,13 @@ for hub in hubs:
 
 for persona in personas:
     url = f'https://praia.digital/{persona}'
+    if url not in existing:
+        block = f'  <url>\n    <loc>{url}</loc>\n    <lastmod>2026-08-03T22:15:04+00:00</lastmod>\n    <changefreq>weekly</changefreq>\n  </url>\n'
+        text = text.replace('</urlset>', block + '</urlset>', 1)
+        added += 1
+
+for c in core:
+    url = f'https://praia.digital/{c}'
     if url not in existing:
         block = f'  <url>\n    <loc>{url}</loc>\n    <lastmod>2026-08-03T22:15:04+00:00</lastmod>\n    <changefreq>weekly</changefreq>\n  </url>\n'
         text = text.replace('</urlset>', block + '</urlset>', 1)
