@@ -80,13 +80,9 @@ for city_slug, city_label in cidades:
 <link rel="canonical" href="https://praia.digital/cidades/{city_slug}-{slug}.html">
 <link rel="alternate" hreflang="x-default" href="https://praia.digital/cidades/{city_slug}-{slug}.html" />
 <link rel="alternate" hreflang="pt-BR" href="https://praia.digital/cidades/{city_slug}-{slug}.html">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){{dataLayer.push(arguments);}}
-gtag('js', new Date());
-gtag('config', 'G-XXXXXXXXXX', {{ anonymize_ip: true }});
-</script>
+
+<link rel="preload" as="image" href="https://praia.digital/img/default-home.jpg" type="image/jpeg" fetchpriority="high">
+
 <link rel="preload" as="image" href="https://praia.digital/img/default-home.jpg" type="image/jpeg" fetchpriority="high">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
@@ -171,13 +167,9 @@ gtag('config', 'G-XXXXXXXXXX', {{ anonymize_ip: true }});
 <link rel="canonical" href="https://praia.digital/cidades/{city_slug}-{slug}.html">
 <link rel="alternate" hreflang="x-default" href="https://praia.digital/cidades/{city_slug}-{slug}.html" />
 <link rel="alternate" hreflang="pt-BR" href="https://praia.digital/cidades/{city_slug}-{slug}.html">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){{dataLayer.push(arguments);}}
-gtag('js', new Date());
-gtag('config', 'G-XXXXXXXXXX', {{ anonymize_ip: true }});
-</script>
+
+<link rel="preload" as="image" href="https://praia.digital/img/default-home.jpg" type="image/jpeg" fetchpriority="high">
+
 <link rel="preload" as="image" href="https://praia.digital/img/default-home.jpg" type="image/jpeg" fetchpriority="high">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
