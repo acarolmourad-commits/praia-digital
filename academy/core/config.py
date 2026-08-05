@@ -14,3 +14,8 @@ SMTP_PORT = int(os.getenv("SMTP_PORT", "587"))
 SMTP_USER = os.getenv("SMTP_USER", "")
 SMTP_PASSWORD = os.getenv("SMTP_PASSWORD", "")
 EMAIL_FROM = os.getenv("EMAIL_FROM", "no-reply@praia.digital")
+
+# Mercado Pago
+MERCADOPAGO_TOKEN = os.getenv("MERCADOPAGO_TOKEN", "")
+MERCADOPAGO_PUBLIC_KEY = os.getenv("MERCADOPAGO_PUBLIC_KEY", "")
+BASE_URL = os.getenv("BASE_URL", "http://localhost:8000")
