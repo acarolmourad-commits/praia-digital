@@ -1,49 +1,66 @@
-# Módulo 3 — Estratégia
+# Módulo 3 — Localização e Estilo de Vida
 
 ## Introdução
-Planeje, decida e priorize ações para crescer com consistência.
+Analise localização, estilo de vida e valorização para escolher casa ou apartamento no litoral.
 
-## Aula 3.1 — Planejamento
-- Objetivos
-- Ações
-- Prazos
-- Recursos
+## Aula 3.1 — Localização no litoral
+**Cidades:**
+- Santos: centro, orla.
+- Guarujá: ilha, veraneio.
+- Praia Grande: expansão.
 
-**Exemplo real:** Planejamento simples permitiu crescer sem surpresas.
+**Critérios:**
+- Acesso.
+- Infraestrutura.
+- Segurança.
 
-## Aula 3.2 — Decisão e priorização
-- Critérios de decisão
-- Priorização
-- Risco
+**Exemplo real:**
+Comprador escolheu apartamento em Santos por acesso.
 
-**Estudo de caso:** Decisão baseada em dados evitou prejuízo e aumentou retorno.
+## Aula 3.2 — Estilo de vida
+**Casa:**
+- Privacidade.
+- Espaço.
+- Autonomia.
 
-## Aula 3.3 — Execução
-- Rotina
-- Acompanhamento
-- Ajuste rápido
+**Apartamento:**
+- Praticidade.
+- Áreas comuns.
+- Segurança.
 
-## Exercício
-Monte um plano estratégico para os próximos 30 dias.
+**Exemplo real:**
+Comprador escolheu apartamento por estilo de vida.
+
+## Aula 3.3 — Valorização e liquidez
+**Casa:**
+- Valorização variável.
+- Liquidez menor.
+
+**Apartamento:**
+- Valorização estável.
+- Liquidez maior.
+
+**Exercício:**
+Monte uma análise de localização.
 
 ## Resumo
-- Planejamento evita desperdício
-- Decisão orientada reduz risco
-- Execução gera resultado
+- Localização define valor.
+- Estilo de vida orienta escolha.
+- Valorização influencia decisão.
 
 ## Checklist
-- [ ] Plano definido
-- [ ] Ações listadas
-- [ ] Prazo estabelecido
+- [ ] Localização analisada
+- [ ] Estilo de vida definido
+- [ ] Valorização comparada
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de plano
+- Planilha de localização
 
 ## Ferramentas recomendadas
-- Planner
 - Planilha
-- App de metas
+- Portais de imóveis
+- Consultorias
 
 ## Prompt de IA
-"Atue como estrategista. Monte um plano prático para este objetivo: [dados]."
+"Atue como especialista em imóveis no litoral. Analise esta localização: [dados]."

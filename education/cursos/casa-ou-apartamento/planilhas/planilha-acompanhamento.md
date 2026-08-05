@@ -1,6 +1,10 @@
-# Planilha — Casa ou Apartamento no Litoral
+# Planilha — Casa ou Apartamento
 - [ ] Data
-- [ ] Ação
-- [ ] Resultado
-- [ ] Ajuste
-- [ ] Status
+- [ ] Tipo
+- [ ] Cidade
+- [ ] Preço
+- [ ] Condomínio
+- [ ] IPTU
+- [ ] Manutenção
+- [ ] Valorização
+- [ ] Decisão

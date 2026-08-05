@@ -1,5 +1,5 @@
-# Mini Curso — Casa ou Apartamento no Litoral
-## Aula 1 — Fundamentos (8 min)
-## Aula 2 — Aplicação prática (12 min)
-## Aula 3 — Estratégia (10 min)
-## Bônus — Planilha de acompanhamento
+# Mini Curso — Casa ou Apartamento
+## Aula 1 — Fundamentos da escolha (8 min)
+## Aula 2 — Custos e manutenção (12 min)
+## Aula 3 — Localização e estilo de vida (10 min)
+## Bônus — Planilha comparativa

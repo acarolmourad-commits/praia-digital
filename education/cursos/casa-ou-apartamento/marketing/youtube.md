@@ -1,4 +1,4 @@
-# Roteiro YouTube — Casa ou Apartamento no Litoral
+# Roteiro YouTube — Casa ou Apartamento
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado
