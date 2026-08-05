@@ -1,12 +1,12 @@
-# Módulo 3 — Execução
-## Aula 3.1 — Introdução
-Conteúdo: conceitos e aplicação.
+# Módulo 3 — Proposta
+## Aula 3.1 — Proposta de exclusividade
+Conteúdo: estrutura, benefícios, cláusulas.
 
-## Aula 3.2 — Conceitos essenciais
-Conteúdo: fundamentos e exemplos.
+## Aula 3.2 — Marketing e visibilidade
+Conteúdo: anúncios, portais, redes.
 
-## Aula 3.3 — Aplicação no litoral
-Conteúdo: caso prático no litoral.
+## Aula 3.3 — Relacionamento
+Conteúdo: comunicação, confiança, acompanhamento.
 
 ## Exercício
-Aplique o conteúdo no seu contexto.
+Monte sua proposta.

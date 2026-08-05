@@ -1,5 +1,5 @@
-# Meta Ads — Captacao Exclusividade
-Público: 25 a 55 anos, interesse em Captacao Exclusividade, litoral
+# Meta Ads — Captação e Exclusividade para Corretores
+Público: 25 a 55 anos, interesse em imóveis, vendas, litoral
 Objetivo: leads
 Formato: vídeo + carrossel
 Orçamento sugerido: R$ 40 a R$ 120/dia

@@ -1,7 +1,7 @@
-# Roteiro de Webinar — Especialista Venda Imoveis Litoral
+# Roteiro de Webinar — Especialista em Venda de Imóveis no Litoral
 1. Abertura: dor do público
-2. Case: primeiro resultado
-3. Método: 3 passos
+2. Case: venda no litoral
+3. Método: 4 passos
 4. Prova social
 5. Oferta e bônus
 6. Perguntas frequentes

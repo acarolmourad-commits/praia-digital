@@ -1,12 +1,12 @@
 # Módulo 1 — Fundamentos
-## Aula 1.1 — Introdução
-Conteúdo: conceitos e aplicação.
+## Aula 1.1 — Captação no litoral
+Conteúdo: fontes, relacionamento, valor.
 
-## Aula 1.2 — Conceitos essenciais
-Conteúdo: fundamentos e exemplos.
+## Aula 1.2 — Perfil do proprietário
+Conteúdo: expectativas, dores, decisão.
 
-## Aula 1.3 — Aplicação no litoral
-Conteúdo: caso prático no litoral.
+## Aula 1.3 — Exclusividade como diferencial
+Conteúdo: benefícios, proposta, fechamento.
 
 ## Exercício
-Aplique o conteúdo no seu contexto.
+Defina sua oferta de captação.

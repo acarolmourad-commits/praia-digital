@@ -1,205 +1,203 @@
 # Curso: Especialista em Venda de Imóveis no Litoral
 ## Nome Comercial
-**Especialista em Venda de Imóveis no Litoral: O Método para Vender Mais e Melhor no Litoral Paulista**
+**Especialista em Venda de Imóveis no Litoral: Como Vender Mais e Melhor na Região**
 
 ## Subtítulo
-Técnicas de vendas, atendimento, negociação e closing para corretores que querem se destacar no litoral.
+Técnicas de captação, negociação, argumentação e fechamento aplicadas ao mercado do litoral.
 
 ## Promessa Principal
-Em até 60 dias, você será capaz de atender, qualificar, negociar e fechar vendas com mais consistência no litoral.
+Em até 45 dias, você será capaz de vender imóveis no litoral com mais segurança, argumentos e conversão.
 
 ## Público-alvo
-- Corretores de imóveis de 22 a 50 anos
-- Renda R$ 3k a R$ 15k/mês
-- Interesse: vendas, comissão, autoridade
-- Perfil: iniciante ou intermediário
+- Corretores e imobiliárias
+- Investidores com imóveis próprios
+- Interesse: vendas, captação, conversão
 
 ## Nível
-Iniciante → Avançado
+Intermediário → Avançado
 
 ## Tempo Estimado
-14 horas de aulas (50 aulas de 12 a 20 min)
-Total: 14 horas
+8 horas de aulas (36 aulas de 12 a 18 min)
+Total: 8 horas
 
 ## Valor Sugerido
-Curso completo: R$ 497
-À vista: R$ 397
-Parcelado: 12x de R$ 41,17
+Curso completo: R$ 397
+À vista: R$ 327
+Parcelado: 12x de R$ 27,25
 Mini curso: R$ 147
-E-book: R$ 24,90
-Mentoria em grupo: R$ 3.500
+E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Scripts de atendimento
-- Planilhas de gestão
+- Scripts de vendas
+- Templates de propostas
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Venda mais imóveis no litoral com um método de atendimento, qualificação e closing"**
+**"Venda mais imóveis no litoral com método, argumentos e fechamento"**
 
 ## Big Idea
-Vender imóveis no litoral não é só mostrar imóvel: é processo, qualificação, objeções e fechamento. Quem aplica método vende mais.
+Vender no litoral exige domínio de captação, atendimento e argumentos específicos da região.
 
 ## Oferta
-- **Curso completo:** R$ 497
+- **Curso completo:** R$ 397
 - **Mini curso:** R$ 147
-- **E-book:** R$ 24,90
-- **Mentoria em grupo:** R$ 3.500
+- **E-book:** R$ 19,90
 
 ## Avatar
-**Nome:** João / Ana
-**Idade:** 22 a 45 anos
-**Renda:** R$ 3k a R$ 12k/mês
+**Nome:** Carlos / Fernanda
+**Idade:** 25 a 50 anos
+**Renda:** R$ 3k a R$ 15k/mês
 **Objetivo:** vender mais e melhor
-**Dificuldades:** qualificação, objeções, fechamento
-**Desejos:** comissão maior, autoridade, carreira
+**Dificuldades:** captação, objeções, fechamento
+**Desejos:** leads qualificados, propostas que convertem, previsibilidade
 
 ## Dores
-- Dificuldade de qualificar leads
+- Falta de leads
 - Objeções constantes
-- Falta de script
-- Falta de método
-- Falta de acompanhamento
+- Proposta fraca
+- Falta de diferenciais
+- Dificuldade de fechar
 
 ## Desejos
-- Mais vendas
-- Processo claro
-- Scripts prontos
-- Fechamento consistente
-- Autoridade
+- Captação previsível
+- Argumentos claros
+- Proposta forte
+- Fechamento mais simples
+- Autoridade local
 
 ## Objeções
-- "É caro"
-- "Já sei vender"
-- "Não tenho tempo"
-- "Vai dar muito trabalho"
-- "E se não funcionar?"
+- "Mercado difícil"
+- "Preço alto"
+- "Cliente indeciso"
+- "Concorrência"
+- "Não funciona"
 
 ## Transformação
-- Processo de vendas
-- Scripts prontos
-- Qualificação eficiente
-- Fechamento consistente
-- Carreira acelerada
+- Captação consistente
+- Atendimento consultivo
+- Proposta irresistível
+- Fechamento frequente
+- Autoridade no litoral
 
 ## Programa Completo
-### Módulo 1 — Mentalidade e Mercado
-Aula 1.1 — Perfil do comprador no litoral
-Aula 1.2 — Temporada vs moradia
-Aula 1.3 — Ética e reputação
-Exercício: perfil do vendedor
+### Módulo 1 — Fundamentos
+Aula 1.1 — Mercado do litoral
+Aula 1.2 — Perfil do comprador
+Aula 1.3 — Diferenciais locais
+Exercício: posicione-se
 
-### Módulo 2 — Atendimento e Qualificação
-Aula 2.1 — Primeiro contato
-Aula 2.2 — Perguntas de qualificação
-Aula 2.3 — Diagnóstico do cliente
-Exercício: script de atendimento
+### Módulo 2 — Captação e Atendimento
+Aula 2.1 — Fontes de leads
+Aula 2.2 — Abordagem e qualificação
+Aula 2.3 — Apresentação do imóvel
+Exercício: script de abordagem
 
-### Módulo 3 — Apresentação e Negociação
-Aula 3.1 — Como apresentar imóveis
-Aula 3.2 — Tratamento de objeções
-Aula 3.3 — Negociação e valor
-Exercício: simulação de atendimento
+### Módulo 3 — Proposta e Negociação
+Aula 3.1 — Proposta de valor
+Aula 3.2 — Negociação e objeções
+Aula 3.3 — Documentação e prazos
+Exercício: monte sua proposta
 
-### Módulo 4 — Closing e Pós-venda
+### Módulo 4 — Fechamento e Pós-venda
 Aula 4.1 — Técnicas de fechamento
-Aula 4.2 — Documentação e segurança
-Aula 4.3 — Pós-venda e indicações
-Exercício: plano de fechamento
+Aula 4.2 — Indicações e referências
+Aula 4.3 — Pós-venda e recompra
+Exercício: plano de vendas
 
 ## Carga Horária
-14 horas
+8 horas
 
 ## Material Complementar
-- Scripts de atendimento
+- Scripts de vendas
+- Templates de proposta
 - PDFs por módulo
 - Comunidade fechada
 
 ## Checklists
-- Checklist de atendimento
-- Checklist de qualificação
-- Checklist de negociação
+- Checklist de captação
+- Checklist de visita
+- Checklist de proposta
 - Checklist de fechamento
 
 ## Planilhas
 - Planilha de leads
-- Planilha de funil
-- Planilha de comissão
+- Planilha de propostas
+- Planilha de conversão
 
 ## Modelos Prontos
 - Modelo de proposta
-- Modelo de follow-up
+- Modelo de contrato
 
 ## Scripts
-- Script de atendimento
+- Script de captação
+- Script de visita
 - Script de objeções
-- Script de fechamento
 
 ## Prompt de IA
-Prompt para gerar roteiros de atendimento.
+Prompt para criar propostas e argumentos.
 
 ## Exercícios
-- Exercício 1: perfil do cliente
-- Exercício 2: qualificação
-- Exercício 3: apresentação
-- Exercício 4: objeções
-- Exercício 5: fechamento
+- Exercício 1: posicionamento
+- Exercício 2: script de abordagem
+- Exercício 3: proposta
+- Exercício 4: negociação
+- Exercício 5: plano de vendas
 
 ## Avaliações
-Quiz 25 perguntas
-Prova prática: simulação de vendas
+Quiz 20 perguntas
+Prova prática: plano de vendas aplicado
 
 ## FAQ
-1. Preciso de experiência? Não.
-2. Como lidar com objeções? Use scripts e prática.
-3. Como aumentar comissão? Mais vendas e upsell.
-4. Vale a pena network? Sim.
-5. Como fechar mais? Processo + follow-up.
+1. Como captar leads no litoral? Marketing e relacionamento.
+2. Como lidar com objeções? Método e argumentos.
+3. Preciso de experiência? Não.
+4. Quanto tempo para fechar? De 7 a 30 dias.
+5. Vale a pena para iniciantes? Sim.
 
 ## Página de Vendas
-[Em construção no próximo passo]
+[vendas.html]
 
 ## Landing Page
-[Em construção no próximo passo]
+[index.html]
 
 ## Sequência de E-mails
-[Em construção no próximo passo]
+[email-sequence/sequencia.md]
 
 ## Posts Instagram
-[Em construção no próximo passo]
+[instagram/posts.md]
 
 ## Reels
-[Em construção no próximo passo]
+[marketing/reels.md]
 
 ## Carrosséis
-[Em construção no próximo passo]
+[marketing/carrosseis.md]
 
 ## Artigos SEO
-[Em construção no próximo passo]
+[seo-articles/sumario.md]
 
 ## Roteiros YouTube
-[Em construção no próximo passo]
+[marketing/youtube.md]
 
 ## Anúncios Meta
-[Em construção no próximo passo]
+[marketing/meta-ads.md]
 
 ## Anúncios Google
-[Em construção no próximo passo]
+[marketing/google-ads.md]
 
 ## CTA
-"Venda mais imóveis no litoral com método."
+"Venda mais no litoral com método."
 
 ## Upsell
-- Mentoria individual: R$ 2.500
-- Acompanhamento comercial: R$ 3.500
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
 - Mini curso: R$ 147
-- E-book: R$ 24,90
+- E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Captação de Exclusividade
-- Curso de Marketing para Corretores
+- Curso de Captação e Exclusividade
+- Curso de Marketing Imobiliário
 - Curso de WhatsApp que Vende

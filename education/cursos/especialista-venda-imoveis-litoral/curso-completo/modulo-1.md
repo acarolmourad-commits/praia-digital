@@ -1,12 +1,12 @@
 # Módulo 1 — Fundamentos
-## Aula 1.1 — Introdução
-Conteúdo: conceitos e aplicação.
+## Aula 1.1 — Mercado do litoral
+Conteúdo: comportamento, sazonalidade, oportunidades.
 
-## Aula 1.2 — Conceitos essenciais
-Conteúdo: fundamentos e exemplos.
+## Aula 1.2 — Perfil do comprador no litoral
+Conteúdo: expectativas, decisão, prioridades.
 
-## Aula 1.3 — Aplicação no litoral
-Conteúdo: caso prático no litoral.
+## Aula 1.3 — Diferenciais locais
+Conteúdo: cidade, bairro, acessos, serviços.
 
 ## Exercício
-Aplique o conteúdo no seu contexto.
+Monte seu posicionamento.

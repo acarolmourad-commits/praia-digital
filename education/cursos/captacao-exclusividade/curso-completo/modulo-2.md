@@ -1,12 +1,12 @@
-# Módulo 2 — Método
-## Aula 2.1 — Introdução
-Conteúdo: conceitos e aplicação.
+# Módulo 2 — Abordagem
+## Aula 2.1 — Contato inicial
+Conteúdo: canais, primeiro contato, tom.
 
-## Aula 2.2 — Conceitos essenciais
-Conteúdo: fundamentos e exemplos.
+## Aula 2.2 — Apresentação de valor
+Conteúdo: argumentos, diferencial, confiança.
 
-## Aula 2.3 — Aplicação no litoral
-Conteúdo: caso prático no litoral.
+## Aula 2.3 — Agendamento
+Conteúdo: visita, preparação, follow-up.
 
 ## Exercício
-Aplique o conteúdo no seu contexto.
+Monte script de captação.

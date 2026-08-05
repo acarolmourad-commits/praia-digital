@@ -1,6 +1,6 @@
-# Shorts — Captacao Exclusividade
-1. Roteiro: dica em 1 minuto
-2. Roteiro: erro comum
-3. Roteiro: passo a passo
-4. Roteiro: resultado real
-5. Roteiro: comece hoje
+# Shorts — Captação e Exclusividade para Corretores
+1. Roteiro: dica de captação
+2. Roteiro: objeção rápida
+3. Roteiro: proposta em 1 minuto
+4. Roteiro: visita eficaz
+5. Roteiro: indicação rápida

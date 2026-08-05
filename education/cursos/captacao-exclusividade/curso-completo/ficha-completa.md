@@ -1,24 +1,23 @@
-# Curso: Captação de Exclusividade
+# Curso: Captação e Exclusividade para Corretores
 ## Nome Comercial
-**Captação de Exclusividade: Como Prospectar e Converter Proprietários sem Depender de Portais**
+**Captação e Exclusividade para Corretores: Como Conseguir Imóveis Exclusivos e Vender Mais no Litoral**
 
 ## Subtítulo
-Técnicas de prospecção, posicionamento e negociação para captar imóveis com exclusividade e aumentar comissão recorrente.
+Método de captação, relacionamento, proposta de exclusividade e conversão de imóveis no litoral.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de prospectar proprietários, apresentar valor e fechar exclusividades de forma previsível.
+Em até 45 dias, você será capaz de captar imóveis exclusivos e estruturar um funil previsível de vendas.
 
 ## Público-alvo
-- Corretores de imóveis de 22 a 50 anos
-- Imobiliárias e gestores
-- Interesse: captação, exclusividade, receita recorrente
+- Corretores e imobiliárias
+- Interesse: captação, exclusividade, vendas
 
 ## Nível
 Intermediário → Avançado
 
 ## Tempo Estimado
-8 horas de aulas (35 aulas de 12 a 20 min)
-Total: 8 horas
+7 horas de aulas (34 aulas de 12 a 16 min)
+Total: 7 horas
 
 ## Valor Sugerido
 Curso completo: R$ 397
@@ -26,179 +25,178 @@ Curso completo: R$ 397
 Parcelado: 12x de R$ 27,25
 Mini curso: R$ 147
 E-book: R$ 19,90
-Mentoria em grupo: R$ 3.500
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Scripts de prospecção
-- Planilhas de funil
+- Scripts de captação
+- Modelos de exclusividade
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Pare de competir por imóvel e passe a captar exclusividade com método"**
+**"Capture imóveis exclusivos no litoral e venda mais com método"**
 
 ## Big Idea
-Quem depende de portais disputa preço. Quem capta exclusividade constrói patrimônio, reputação e receita previsível.
+Quem tem exclusividade vende com menos esforço, mais margem e mais previsibilidade.
 
 ## Oferta
 - **Curso completo:** R$ 397
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
-- **Mentoria em grupo:** R$ 3.500
 
 ## Avatar
-**Nome:** João / Ana
+**Nome:** Carlos / Fernanda
 **Idade:** 25 a 50 anos
 **Renda:** R$ 3k a R$ 15k/mês
-**Objetivo:** captar mais exclusividades
-**Dificuldades:** abordagem, objeções, diferenciação
-**Desejos:** receita recorrente, autoridade, carteira própria
+**Objetivo:** captar mais e vender mais
+**Dificuldades:** captação, objeção, exclusividade
+**Desejos:** leads qualificados, carteira exclusiva, vendas recorrentes
 
 ## Dores
-- Dependência de portais
-- Concorrência por imóvel
-- Dificuldade de abordagem
-- Falta de diferenciação
-- Falta de método
+- Falta de imóveis exclusivos
+- Concorrência alta
+- Proposta genérica
+- Falta de argumento
+- Resultado irregular
 
 ## Desejos
-- Exclusividades
-- Carteira própria
-- Receita recorrente
+- Carteira exclusiva
+- Captação previsível
+- Vendas recorrentes
 - Autoridade local
 - Processo simples
 
 ## Objeções
-- "É caro"
-- "Já tento de tudo"
-- "Proprietário não aceita"
-- "Demora para dar resultado"
-- "E se não funcionar?"
+- "Proprietário não quer exclusividade"
+- "Concorrência já abordou"
+- "Não compensa"
+- "Demanda muito trabalho"
+- "Não funciona"
 
 ## Transformação
-- Processo de captação
-- Scripts de abordagem
-- Funil de exclusividade
-- Receita recorrente
+- Captação consistente
+- Exclusividade justificada
+- Funil previsível
+- Vendas recorrentes
 - Autoridade local
 
 ## Programa Completo
-### Módulo 1 — Mentalidade e Posicionamento
-Aula 1.1 — Por que exclusividade importa
-Aula 1.2 — Posicionamento local
-Aula 1.3 — Proposta de valor
-Exercício: posicionamento pessoal
+### Módulo 1 — Fundamentos
+Aula 1.1 — Captação no litoral
+Aula 1.2 — Perfil do proprietário
+Aula 1.3 — Exclusividade como diferencial
+Exercício: defina sua oferta
 
-### Módulo 2 — Prospecção
-Aula 2.1 — Lista de prospects
-Aula 2.2 — Abordagem e primeiro contato
-Aula 2.3 — Follow-up estratégico
-Exercício: lista e sequência
+### Módulo 2 — Abordagem
+Aula 2.1 — Contato inicial
+Aula 2.2 — Apresentação de valor
+Aula 2.3 — Agendamento
+Exercício: script de captação
 
-### Módulo 3 — Apresentação e Negociação
-Aula 3.1 — Como apresentar resultados
-Aula 3.2 — Tratamento de objeções
-Aula 3.3 — Contrato de exclusividade
-Exercício: apresentação simulada
+### Módulo 3 — Proposta
+Aula 3.1 — Proposta de exclusividade
+Aula 3.2 — Marketing e visibilidade
+Aula 3.3 — Relacionamento
+Exercício: monte sua proposta
 
-### Módulo 4 — Execução e Escala
-Aula 4.1 — Gestão da carteira
-Aula 4.2 — Marketing local
-Aula 4.3 — Parcerias e referências
-Exercício: plano de captação
+### Módulo 4 — Conversão
+Aula 4.1 — Atendimento e objeções
+Aula 4.2 — Visita e apresentação
+Aula 4.3 — Fechamento e indicação
+Exercício: funil de vendas
 
 ## Carga Horária
-8 horas
+7 horas
 
 ## Material Complementar
-- Scripts de prospecção
+- Scripts de captação
+- Templates de exclusividade
 - PDFs por módulo
 - Comunidade fechada
 
 ## Checklists
-- Checklist de prospecção
-- Checklist de abordagem
-- Checklist de contrato
-- Checklist de follow-up
+- Checklist de captação
+- Checklist de visita
+- Checklist de exclusividade
+- Checklist de fechamento
 
 ## Planilhas
-- Planilha de funil
-- Planilha de contatos
-- Planilha de resultados
+- Planilha de leads
+- Planilha de captação
+- Planilha de vendas
 
 ## Modelos Prontos
-- Modelo de proposta de exclusividade
-- Modelo de follow-up
+- Modelo de proposta
+- Modelo de exclusividade
 
 ## Scripts
 - Script de abordagem
-- Script de follow-up
-- Script de negociação
+- Script de visita
+- Script de objeções
 
 ## Prompt de IA
-Prompt para criar roteiros de abordagem.
+Prompt para criar proposta e script.
 
 ## Exercícios
-- Exercício 1: posicionamento
-- Exercício 2: lista de prospects
-- Exercício 3: follow-up
-- Exercício 4: apresentação
-- Exercício 5: plano de captação
+- Exercício 1: oferta
+- Exercício 2: script de captação
+- Exercício 3: proposta
+- Exercício 4: atendimento
+- Exercício 5: funil de vendas
 
 ## Avaliações
 Quiz 20 perguntas
 Prova prática: plano de captação
 
 ## FAQ
-1. Preciso de experiência? Não.
-2. Como diferenciar? Posicionamento + resultado.
-3. Quanto tempo para fechar? De 15 a 45 dias.
-4. Vale a pena para iniciantes? Sim, com método.
-5. Como evitar rejeição? Follow-up e valor.
+1. Como captar no litoral? Relacionamento e valor.
+2. Como pedir exclusividade? Proposta clara e benefícios.
+3. Demora muito? De 15 a 45 dias.
+4. E se o proprietário negar? Ofereça valor primeiro.
+5. Vale a pena para iniciantes? Sim.
 
 ## Página de Vendas
-[Em construção no próximo passo]
+[vendas.html]
 
 ## Landing Page
-[Em construção no próximo passo]
+[index.html]
 
 ## Sequência de E-mails
-[Em construção no próximo passo]
+[email-sequence/sequencia.md]
 
 ## Posts Instagram
-[Em construção no próximo passo]
+[instagram/posts.md]
 
 ## Reels
-[Em construção no próximo passo]
+[marketing/reels.md]
 
 ## Carrosséis
-[Em construção no próximo passo]
+[marketing/carrosseis.md]
 
 ## Artigos SEO
-[Em construção no próximo passo]
+[seo-articles/sumario.md]
 
 ## Roteiros YouTube
-[Em construção no próximo passo]
+[marketing/youtube.md]
 
 ## Anúncios Meta
-[Em construção no próximo passo]
+[marketing/meta-ads.md]
 
 ## Anúncios Google
-[Em construção no próximo passo]
+[marketing/google-ads.md]
 
 ## CTA
-"Capture exclusividade no litoral e pare de competir por imóvel."
+"Capture imóveis exclusivos no litoral."
 
 ## Upsell
-- Mentoria individual: R$ 3.000
-- Acompanhamento de captação: R$ 4.000
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
 - Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Venda de Imóveis no Litoral
-- Curso de Marketing para Corretores
-- Curso de Funil de Vendas
+- Curso de Especialista em Venda de Imóveis no Litoral
+- Curso de Marketing Imobiliário
+- Curso de WhatsApp que Vende

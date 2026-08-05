@@ -1,12 +1,12 @@
-# Módulo 4 — Resultado
-## Aula 4.1 — Introdução
-Conteúdo: conceitos e aplicação.
+# Módulo 4 — Fechamento e Pós-venda
+## Aula 4.1 — Técnicas de fechamento
+Conteúdo: sinais de compra, gatilhos, fechamento.
 
-## Aula 4.2 — Conceitos essenciais
-Conteúdo: fundamentos e exemplos.
+## Aula 4.2 — Indicações e referências
+Conteúdo: pós-venda, relacionamento, recompra.
 
-## Aula 4.3 — Aplicação no litoral
-Conteúdo: caso prático no litoral.
+## Aula 4.3 — Pós-venda e recompra
+Conteúdo: acompanhamento, ofertas futuras.
 
 ## Exercício
-Aplique o conteúdo no seu contexto.
+Monte plano de vendas.
