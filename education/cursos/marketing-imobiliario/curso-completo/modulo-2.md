@@ -1,48 +1,74 @@
-# Módulo 2 — Aplicação Prática
+# Módulo 2 — Conteúdo e Presença Digital
 
 ## Introdução
-Aplique o método na prática com exemplos reais e evite erros comuns.
+Aprenda a criar conteúdo que vende imóveis, construir presença digital e usar SEO e redes sociais para captar leads no litoral.
 
-## Aula 2.1 — Passo a passo prático
-- Etapas claras
-- Ação imediata
-- Verificação de resultado
+## Aula 2.1 — Conteúdo que vende imóveis
+**Tipos de conteúdo:**
+- Educativo: como comprar, como vender, documentação.
+- Local: bairros, cidades, eventos.
+- Imóveis: fotos, vídeos, tours virtuais.
+- Social: cases, depoimentos, bastidores.
 
-**Exemplo real:** Profissional aplicou o passo a passo e obteve ganhos rápidos em 15 dias.
+**Estrutura de post:**
+- Título chamativo.
+- Corpo educativo.
+- CTA claro.
+- Hashtags geolocalizadas.
 
-## Aula 2.2 — Exemplos reais
-- Caso 1
-- Caso 2
-- Lições aplicáveis
+**Exemplo real:**
+Corretor postou conteúdo sobre bairros de Santos e gerou 15 leads em 1 semana.
 
-**Estudo de caso:** Aplicação prática gerou aumento mensurável em 30 dias.
+## Aula 2.2 — Instagram e YouTube para corretores
+**Instagram:**
+- Feed organizado.
+- Stories com bastidores.
+- Reels com dicas rápidas.
+- Lives com perguntas e respostas.
 
-## Aula 2.3 — Erros comuns
-- Erro 1
-- Erro 2
-- Erro 3
-- Como evitar
+**YouTube:**
+- Conteúdo educativo longo.
+- Vídeos de imóveis.
+- Roteiros com SEO local.
 
-## Exercício
-Aplique o método em um cenário real.
+**Estudo de caso:**
+Corretora usou Reels com dicas de compra e aumentou seguidores de 2k para 15k em 3 meses.
+
+## Aula 2.3 — SEO e tráfego pago
+**SEO local:**
+- Palavras: imóvel no litoral, comprar imóvel na praia.
+- Páginas por cidade e bairro.
+- Blog com artigos otimizados.
+
+**Tráfego pago:**
+- Meta Ads: vídeo + carrossel.
+- Google Ads: busca + display.
+- Remarketing para leads frios.
+
+**Exercício:**
+Monte um plano de conteúdo para os próximos 30 dias.
 
 ## Resumo
-- Passo a passo reduz risco
-- Exemplos aceleram aprendizado
-- Erros evitados poupam tempo
+- Conteúdo educativo gera confiança.
+- Redes sociais captam leads.
+- SEO e tráfego pago aceleram crescimento.
 
 ## Checklist
-- [ ] Passos executados
-- [ ] Resultados verificados
-- [ ] Ajustes aplicados
+- [ ] Conteúdo planejado
+- [ ] Redes ativas
+- [ ] SEO revisado
+- [ ] Anúncios criados
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de aplicação
+- Checklist de conteúdo
+- Modelos de post
 
 ## Ferramentas recomendadas
-- Planilha de acompanhamento
-- App de gestão
+- Meta Ads
+- Google Ads
+- Canva
+- CRM de vendas
 
 ## Prompt de IA
-"Atue como especialista prático. Monte um plano de aplicação para este cenário: [dados]."
+"Atue como especialista em marketing imobiliário. Monte um plano de conteúdo para este corretor: [dados]."
