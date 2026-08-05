@@ -1,6 +1,6 @@
 # Reels — Automação Comercial para Corretores
-1. Roteiro: dica rápida
-2. Roteiro: passo a passo
-3. Roteiro: erro comum
-4. Roteiro: case rápido
-5. Roteiro: resultado
+1. Roteiro: automação em 30s
+2. Roteiro: dica de fluxo
+3. Roteiro: erro de CRM
+4. Roteiro: case de conversão
+5. Roteiro: follow-up simples

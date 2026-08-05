@@ -1,48 +1,74 @@
-# Módulo 2 — Aplicação Prática
+# Módulo 2 — Ferramentas e Fluxos
 
 ## Introdução
-Aplique o método na prática com exemplos reais e evite erros comuns.
+Escolha ferramentas, monte fluxos e automatize captação, atendimento e follow-up para vender mais com menos esforço.
 
-## Aula 2.1 — Passo a passo prático
-- Etapas claras
-- Ação imediata
-- Verificação de resultado
+## Aula 2.1 — CRM e funil
+**CRM:**
+- RD Station, HubSpot, Pipedrive.
+- Funil: lead frio → lead quente → visita → proposta → fechamento.
 
-**Exemplo real:** Profissional aplicou o passo a passo e obteve ganhos rápidos em 15 dias.
+**Funil ideal:**
+- 100 leads.
+- 30 contatos.
+- 10 visitas.
+- 3 propostas.
+- 1 venda.
 
-## Aula 2.2 — Exemplos reais
-- Caso 1
-- Caso 2
-- Lições aplicáveis
+**Exemplo real:**
+Corretor usou CRM com funil e aumentou taxa de fechamento de 8% para 18%.
 
-**Estudo de caso:** Aplicação prática gerou aumento mensurável em 30 dias.
+## Aula 2.2 — Automação de follow-up
+**Follow-up automatizado:**
+- E-mail de boas-vindas.
+- Lembrete de visita.
+- Proposta automática.
+- Reativação de lead frio.
 
-## Aula 2.3 — Erros comuns
-- Erro 1
-- Erro 2
-- Erro 3
-- Como evitar
+**Sequência:**
+- 1h: e-mail de agradecimento.
+- 24h: ligação + conteúdo.
+- 3 dias: nova oferta.
+- 7 dias: reativação.
 
-## Exercício
-Aplique o método em um cenário real.
+**Estudo de caso:**
+Corretor implementou follow-up automático e aumentou taxa de resposta de 15% para 32%.
+
+## Aula 2.3 — Integração de canais
+**Canais integrados:**
+- WhatsApp.
+- E-mail.
+- Instagram.
+- Site.
+
+**Integração:**
+- CRM com WhatsApp.
+- E-mail com site.
+- Instagram com CRM.
+
+**Exercício:**
+Monte um mapa de fluxo para o seu funil.
 
 ## Resumo
-- Passo a passo reduz risco
-- Exemplos aceleram aprendizado
-- Erros evitados poupam tempo
+- CRM organiza leads.
+- Follow-up aumenta conversão.
+- Integração reduz perda.
 
 ## Checklist
-- [ ] Passos executados
-- [ ] Resultados verificados
-- [ ] Ajustes aplicados
+- [ ] CRM escolhido
+- [ ] Funil desenhado
+- [ ] Follow-up criado
+- [ ] Integração testada
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de aplicação
+- Modelo de fluxo
+- Planilha de CRM
 
 ## Ferramentas recomendadas
-- Planilha de acompanhamento
-- App de gestão
+- CRM
+- Automação
+- WhatsApp Business
 
 ## Prompt de IA
-"Atue como especialista prático. Monte um plano de aplicação para este cenário: [dados]."
+"Atue como especialista em automação comercial. Monte um mapa de fluxo para este cenário: [dados]."

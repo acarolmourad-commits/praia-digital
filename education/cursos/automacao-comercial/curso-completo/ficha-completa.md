@@ -1,52 +1,52 @@
 # Curso: Automação Comercial para Corretores
 ## Nome Comercial
-**Automação Comercial para Corretores: Método Prático para Automação comercial, crm, follow-up e escala para corretores**
+**Automação Comercial para Corretores: Método Prático para Automatizar Vendas, Follow-up e Gestão de Leads no Mercado Imobiliário**
 
 ## Subtítulo
-Do diagnóstico ao resultado: aprenda a aplicar método, evitar erros e crescer no mercado imobiliário do litoral.
+Do atendimento ao fechamento: aprenda a automatizar o comercial do corretor e vender mais com menos esforço.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de aplicar um método prático para automação comercial, CRM, follow-up e escala para corretores.
+Em até 20 dias, você será capaz de automatizar captação, follow-up e vendas, aumentando conversão sem perder o toque humano.
 
 ## Público-alvo
-- Proprietários de imóveis no litoral
-- Investidores que querem aumentar retorno
-- Corretores que querem se especializar
-- Interesse: imóveis, litoral, investimento, temporada, rentabilidade
+- Corretores de imóveis iniciantes e intermediários
+- Corretores que querem escalar vendas
+- Corretores que querem reduzir trabalho repetitivo
+- Interesse: automação, CRM, leads, vendas, imóveis
 
 ## Pré-requisitos
-Nenhum. Curso completo do zero ao resultado.
+Nenhum. Curso completo do zero à automação aplicada.
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
-6 horas de aulas
-Total: 6 horas
+4 horas de aulas (20 aulas de 10 a 16 min)
+Total: 4 horas
 
 ## Valor Sugerido
-Curso completo: R$ 297
-À vista: R$ 297
-Parcelado: 12x de R$ 24,75
+Curso completo: R$ 197
+À vista: R$ 167
+Parcelado: 12x de R$ 13,92
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist do curso
-- Planilha de acompanhamento
-- Modelos prontos
+- Checklist de automação
+- Planilha de leads
+- Modelos de fluxo
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Automatize o funil de vendas, atendimento e follow-up para vender mais com menos esforço"**
+**"Automatize o comercial do corretor e venda mais com menos esforço"**
 
 ## Big Idea
-Resultados no litoral dependem de método, dados e execução consistente.
+Automação comercial no imobiliário combina ferramentas, fluxos e relacionamento para reduzir trabalho repetitivo e aumentar conversão.
 
 ## Oferta
-- **Curso completo:** R$ 297
+- **Curso completo:** R$ 197
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
@@ -54,113 +54,112 @@ Resultados no litoral dependem de método, dados e execução consistente.
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** automação comercial, CRM, follow-up e escala para corretores
-**Dificuldades:** falta de método, insegurança, resultado baixo
-**Desejos:** crescimento, tranquilidade, autoridade
+**Objetivo:** automatizar vendas e follow-up
+**Dificuldades:** trabalho repetitivo, leads frios, atendimento lento
+**Desejos:** mais vendas, menos esforço, crescimento
 
 ## Dores
+- Trabalho repetitivo
+- Leads frios
+- Atendimento lento
+- Perda de follow-up
 - Falta de método
-- Insegurança
-- Resultado baixo
-- Falta de clareza
-- Tempo limitado
 
 ## Desejos
+- Mais vendas
+- Menos esforço
 - Crescimento
+- Controle
 - Tranquilidade
-- Autoridade
-- Previsibilidade
-- Resultado
 
 ## Objeções
-- "Não compensa"
-- "É complicado"
-- "Não tenho tempo"
-- "Vou errar"
+- "Automação é cara"
 - "Não funciona"
+- "Vou perder o toque humano"
+- "Não tenho tempo"
+- "É complicado"
 
 ## Transformação
-- Método aplicado
-- Resultado crescente
-- Decisão orientada por dados
-- Operação profissional
-- Tranquilidade
+- Automação aplicada
+- Follow-up consistente
+- Vendas recorrentes
+- Menos esforço
+- Mais controle
 
 ## Programa Completo
-### Módulo 1 — Fundamentos
-Aula 1.1 — Contexto e oportunidades
-Aula 1.2 — Perfil e objetivos
-Aula 1.3 — Métricas e metas
-Exercício: diagnóstico
+### Módulo 1 — Fundamentos da Automação
+Aula 1.1 — O que é automação comercial
+Aula 1.2 — ROI da automação
+Aula 1.3 — Perfil do corretor
+Exercício: diagnóstico de automação
 
-### Módulo 2 — Aplicação Prática
-Aula 2.1 — Passo a passo prático
-Aula 2.2 — Exemplos reais
-Aula 2.3 — Erros comuns
-Exercício: aplicação
+### Módulo 2 — Ferramentas e Fluxos
+Aula 2.1 — CRM e funil
+Aula 2.2 — Automação de follow-up
+Aula 2.3 — Integração de canais
+Exercício: mapa de fluxo
 
-### Módulo 3 — Estratégia
-Aula 3.1 — Planejamento
-Aula 3.2 — Decisão e priorização
-Aula 3.3 — Execução
-Exercício: plano
+### Módulo 3 — Conteúdo e Nutrição
+Aula 3.1 — Conteúdo automatizado
+Aula 3.2 — E-mail e WhatsApp
+Aula 3.3 — Remarketing
+Exercício: sequência de nutrição
 
-### Módulo 4 — Crescimento
-Aula 4.1 — Acompanhamento
-Aula 4.2 — Ajustes
-Aula 4.3 — Escala
-Exercício: escala
+### Módulo 4 — Gestão e Crescimento
+Aula 4.1 — Métricas de automação
+Aula 4.2 — Ajustes e testes
+Aula 4.3 — Escala sem perder qualidade
+Exercício: plano de automação
 
 ## Carga Horária
-6 horas
+4 horas
 
 ## Material Complementar
-- Checklist
-- Planilha
-- Modelos
+- Checklist de automação
+- Planilha de leads
+- Modelos de fluxo
 - PDFs por módulo
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de diagnóstico
-- Checklist de aplicação
-- Checklist de estratégia
-- Checklist de escala
+- Checklist de ferramentas
+- Checklist de fluxo
+- Checklist de métricas
 
 ## Planilhas
-- Planilha de acompanhamento
+- Planilha de leads
+- Planilha de automação
 - Planilha de métricas
-- Planilha de ROI
 
 ## Modelos Prontos
-- Modelo de relatório
-- Modelo de proposta
-- Modelo de revisão
+- Modelo de fluxo
+- Modelo de follow-up
+- Modelo de CRM
 
 ## Scripts
 - Script de atendimento
-- Script de negociação
+- Script de follow-up
 
 ## Prompt de IA
-Prompt para gerar análises e planos.
+Prompt para gerar fluxos e modelos.
 
 ## Exercícios
-- Exercício 1: diagnóstico
-- Exercício 2: aplicação
-- Exercício 3: plano
-- Exercício 4: escala
+- Exercício 1: diagnóstico de automação
+- Exercício 2: mapa de fluxo
+- Exercício 3: sequência de nutrição
+- Exercício 4: plano de automação
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: aplicação do método
+Prova prática: fluxo de automação aplicado
 
 ## FAQ
 1. Preciso de experiência? Não.
 2. Em quanto tempo vejo resultado? De 15 a 30 dias.
 3. Vale a pena? Sim.
-4. E se errar? Ajuste com método.
-5. Tem suporte? Sim.
+4. Qual ferramenta usar? Depende do estágio.
+5. Vou perder o toque humano? Não.
 
 ## Página de Vendas
 [vendas.html]
@@ -193,7 +192,7 @@ Prova prática: aplicação do método
 [marketing/google-ads.md]
 
 ## CTA
-"Aplique o método agora."
+"Automatize o comercial do corretor agora."
 
 ## Upsell
 - Mentoria individual: R$ 1.500
@@ -204,4 +203,6 @@ Prova prática: aplicação do método
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Cursos complementares Praia Digital
+- Curso de Marketing Imobiliário para Corretores
+- Curso de Captação e Exclusividade
+- Curso de CRM para Corretores

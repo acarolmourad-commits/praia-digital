@@ -1,21 +1,21 @@
 # Posts Instagram — Automação Comercial para Corretores
-1. Post: dica prática
-2. Reels: passo a passo rápido
-3. Carrossel: checklist
-4. Post: erro comum
-5. Reels: dica de aplicação
-6. Carrossel: exemplo real
-7. Post: resultado rápido
-8. Reels: case prático
-9. Carrossel: métrica importante
-10. Reels: ajuste simples
-11. Post: estratégia básica
-12. Carrossel: 5 passos
-13. Post: crescimento sem segredo
-14. Reels: dúvida comum
-15. Carrossel: ferramenta útil
+1. Post: 3 erros no comercial
+2. Reels: automação em 30s
+3. Carrossel: checklist de CRM
+4. Post: follow-up que converte
+5. Reels: dica de fluxo
+6. Carrossel: tipos de ferramenta
+7. Post: automação sem medo
+8. Reels: case de conversão
+9. Carrossel: ROI da automação
+10. Reels: follow-up simples
+11. Post: tempo para vender
+12. Carrossel: 5 dicas de CRM
+13. Post: objeção comum
+14. Reels: dica de integração
+15. Carrossel: fluxo básico
 16. Post: comece hoje
-17. Reels: case de resultado
-18. Carrossel: revisão semanal
-19. Post: mito vs verdade
-20. Reels: método resumido
+17. Reels: case de automação
+18. Carrossel: escala gradual
+19. Post: método completo
+20. Reels: automação em 30s
