@@ -1,11 +1,11 @@
 # Progresso do Diretor de Educação — Praia Digital Academy
-## Curso Concluído
+## Cursos Concluídos
 - Investindo em Imóveis no Litoral
-- Status: completo
-- Arquivos: ficha, módulos, materiais, landing, marketing
+- Airbnb do Zero no Litoral
+- Booking do Zero no Litoral
 
 ## Próximo Curso
-- Airbnb do Zero no Litoral
+- PriceLabs Completo para Temporada no Litoral
 
 ## Regra
 Um curso por vez, do maior potencial para o menor.

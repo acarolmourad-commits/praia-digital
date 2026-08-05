@@ -1,6 +1,6 @@
-# Curso: PriceLabs Completo
+# Curso: PriceLabs Completo para Temporada no Litoral
 ## Nome Comercial
-**PriceLabs Completo para Temporada no Litoral: Precificação Dinâmica para Aumentar Receita**
+**PriceLabs Completo para Temporada no Litoral: Como Aumentar Receita com Precificação Dinâmica**
 
 ## Subtítulo
 Aprenda a usar o PriceLabs do zero ao avançado: configuração, sazonalidade, eventos e integrações.
@@ -25,8 +25,8 @@ Total: 6 horas
 Curso completo: R$ 347
 À vista: R$ 287
 Parcelado: 12x de R$ 23,92
-Mini curso: R$ 127
-E-book: R$ 17,90
+Mini curso: R$ 147
+E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
@@ -43,8 +43,8 @@ Preço fixo deixa dinheiro na mesa. Quem usa precificação dinâmica captura va
 
 ## Oferta
 - **Curso completo:** R$ 347
-- **Mini curso:** R$ 127
-- **E-book:** R$ 17,90
+- **Mini curso:** R$ 147
+- **E-book:** R$ 19,90
 
 ## Avatar
 **Nome:** Carlos / Fernanda
@@ -156,34 +156,34 @@ Prova prática: configuração do PriceLabs
 5. Vale a pena para temporada baixa? Sim, se ajustar regras.
 
 ## Página de Vendas
-[Em construção no próximo passo]
+[vendas.html]
 
 ## Landing Page
-[Em construção no próximo passo]
+[index.html]
 
 ## Sequência de E-mails
-[Em construção no próximo passo]
+[email-sequence/sequencia.md]
 
 ## Posts Instagram
-[Em construção no próximo passo]
+[instagram/posts.md]
 
 ## Reels
-[Em construção no próximo passo]
+[marketing/reels.md]
 
 ## Carrosséis
-[Em construção no próximo passo]
+[marketing/carrosseis.md]
 
 ## Artigos SEO
-[Em construção no próximo passo]
+[seo-articles/sumario.md]
 
 ## Roteiros YouTube
-[Em construção no próximo passo]
+[marketing/youtube.md]
 
 ## Anúncios Meta
-[Em construção no próximo passo]
+[marketing/meta-ads.md]
 
 ## Anúncios Google
-[Em construção no próximo passo]
+[marketing/google-ads.md]
 
 ## CTA
 "Aumente a receita do seu imóvel no litoral com PriceLabs."
@@ -193,8 +193,8 @@ Prova prática: configuração do PriceLabs
 - Acompanhamento de gestão: R$ 2.000
 
 ## Downsell
-- Mini curso: R$ 127
-- E-book: R$ 17,90
+- Mini curso: R$ 147
+- E-book: R$ 19,90
 
 ## Cross-sell
 - Curso de Airbnb do Zero
