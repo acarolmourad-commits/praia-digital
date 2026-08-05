@@ -40,12 +40,13 @@
 - Venda Rápida de Imóveis no Litoral — PRONTO PARA VENDA
 - Negociação Imobiliária no Litoral — PRONTO PARA VENDA
 - Marketing Imobiliário para Corretores — PRONTO PARA VENDA
+- Gestão de Vendas para Corretores — PRONTO PARA VENDA
 
 ## Em Produção
 - Nenhum no momento
 
 ## Próximo Curso
-- Gestão de Vendas para Corretores
+- Atendimento ao Cliente para Corretores
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.
