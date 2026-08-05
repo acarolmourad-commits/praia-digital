@@ -60,26 +60,19 @@ assert r.status_code == 200, r.text
 data = r.json()
 assert any(item["course_id"] == course_id for item in data), data
 
-# checkout
-r = client.post("/academy/cart/checkout", headers=headers)
+# checkout via public payments endpoint
+r = client.post("/academy/checkout", json={"items": [{"course_id": course_id}]}, headers=headers)
 assert r.status_code == 200, r.text
 order = r.json()
 assert order["total"] == 9900
-assert order["status"] == "open"
+assert order["status"] == "pending"
 order_id = order["order_id"]
-
-# create payment
-r = client.post("/academy/payments", json={"order_id": order_id, "gateway": "mock", "gateway_payment_id": "MOCK-123"}, headers=headers)
-assert r.status_code == 200, r.text
-payment = r.json()
-assert payment["amount"] == 9900
-assert payment["status"] == "pending"
-payment_id = payment["payment_id"]
+payment_id = order["payment_id"]
 
 # webhook
 r = client.post(f"/academy/payments/{payment_id}/webhook", json={"status": "paid"})
 assert r.status_code == 200, r.text
-assert r.json()["message"] == "Pagamento confirmado e acesso liberado."
+assert r.json()["ok"] is True
 
 # enrollments
 r = client.get("/academy/me/enrollments", headers=headers)

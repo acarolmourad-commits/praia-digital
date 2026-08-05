@@ -1,20 +1,25 @@
-from fastapi import FastAPI, Request
-from fastapi.responses import JSONResponse
 import time
 import logging
+from fastapi import Request
+from fastapi.responses import JSONResponse
 
 logger = logging.getLogger("academy")
 logger.setLevel(logging.INFO)
 
 
 class RequestLoggingMiddleware:
-    def __init__(self, app: FastAPI):
+    def __init__(self, app):
         self.app = app
 
-    async def __call__(self, request: Request, call_next):
+    async def __call__(self, scope, receive, send):
+        if scope["type"] != "http":
+            await self.app(scope, receive, send)
+            return
+
+        request = Request(scope, receive)
         start = time.time()
         try:
-            response = await call_next(request)
+            response = await self.app(scope, receive, send)
         except Exception as exc:
             logger.exception("Unhandled exception", exc_info=exc)
             raise
@@ -32,12 +37,18 @@ class RequestLoggingMiddleware:
 
 
 class ErrorHandlerMiddleware:
-    def __init__(self, app: FastAPI):
+    def __init__(self, app):
         self.app = app
 
-    async def __call__(self, request: Request, call_next):
+    async def __call__(self, scope, receive, send):
+        if scope["type"] != "http":
+            await self.app(scope, receive, send)
+            return
+
+        request = Request(scope, receive)
         try:
-            return await call_next(request)
+            return await self.app(scope, receive, send)
         except Exception as exc:
             logger.exception("Unhandled exception", exc_info=exc)
-            return JSONResponse(status_code=500, content={"detail": "Internal server error"})
+            response = JSONResponse(status_code=500, content={"detail": "Internal server error"})
+            await response(scope, receive, send)

@@ -4,10 +4,11 @@ from pydantic import BaseModel
 from typing import Optional, List
 from academy.core.database import get_db
 from academy.core.models import Course, Enrollment, EnrollmentStatus, Payment, PaymentStatus
+from academy.core.security import get_current_user
 import os
 import requests
 
-router = APIRouter()
+router = APIRouter(prefix="/academy", tags=["payments"])
 
 class CheckoutItem(BaseModel):
     course_id: int
@@ -55,18 +56,25 @@ def _build_payment_payload(enrollment_id: int, total: int, payer: dict):
 
 
 @router.post("/checkout")
-def public_checkout(payload: CheckoutPayload, db: Session = Depends(get_db)):
+def public_checkout(payload: CheckoutPayload, db: Session = Depends(get_db), user=Depends(get_current_user)):
     courses = db.query(Course).filter(Course.id.in_([i.course_id for i in payload.items])).all()
     if not courses:
         raise HTTPException(status_code=404, detail="Cursos não encontrados")
 
     total = sum(c.price for c in courses)
-    enrollment = Enrollment(student_id=None, status=EnrollmentStatus.pending.value)
-    db.add(enrollment)
-    db.commit()
-    db.refresh(enrollment)
+    course_ids = [c.id for c in courses]
+    user_id = user.get("id") if user else None
 
-    payment = Payment(enrollment_id=enrollment.id, amount=total, status=PaymentStatus.pending.value, method="public_checkout")
+    # cria matrículas por curso
+    enrollments = []
+    for course_id in course_ids:
+        enrollment = Enrollment(user_id=user_id, course_id=course_id, status=EnrollmentStatus.pending.value)
+        db.add(enrollment)
+        db.flush()
+        enrollments.append(enrollment)
+
+    # cria pagamento associado ao primeiro item
+    payment = Payment(user_id=user_id, course_id=course_ids[0], amount=total, status=PaymentStatus.pending.value, gateway="public_checkout")
     db.add(payment)
     db.commit()
     db.refresh(payment)
@@ -74,7 +82,7 @@ def public_checkout(payload: CheckoutPayload, db: Session = Depends(get_db)):
     if MERCADOPAGO_TOKEN:
         try:
             headers = {"Authorization": f"Bearer {MERCADOPAGO_TOKEN}", "Content-Type": "application/json"}
-            mp_payload = _build_payment_payload(enrollment.id, total, {
+            mp_payload = _build_payment_payload(enrollments[0].id, total, {
                 "name": payload.buyer_name or "",
                 "email": payload.buyer_email or "",
                 "document": payload.buyer_document or "",
@@ -84,7 +92,7 @@ def public_checkout(payload: CheckoutPayload, db: Session = Depends(get_db)):
             data = resp.json()
             return {
                 "checkout_url": data.get("init_point"),
-                "order_id": enrollment.id,
+                "order_id": enrollments[0].id,
                 "payment_id": payment.id,
                 "total": total,
                 "currency": "BRL",
@@ -95,8 +103,8 @@ def public_checkout(payload: CheckoutPayload, db: Session = Depends(get_db)):
             raise HTTPException(status_code=502, detail=f"Erro ao criar preferência no Mercado Pago: {str(e)}")
 
     return {
-        "checkout_url": f"{BASE_URL}/education/checkout.html?order_id={enrollment.id}",
-        "order_id": enrollment.id,
+        "checkout_url": f"{BASE_URL}/education/checkout.html?order_id={enrollments[0].id}",
+        "order_id": enrollments[0].id,
         "payment_id": payment.id,
         "total": total,
         "currency": "BRL",
@@ -118,44 +126,22 @@ def checkout_status(order_id: int, db: Session = Depends(get_db)):
     }
 
 
-@router.post("/mercadopago/webhook")
-def mercadopago_webhook(payload: dict, db: Session = Depends(get_db)):
-    if payload.get("type") != "payment":
-        return {"ok": True}
-
-    data = payload.get("data", {})
-    status = data.get("status")
-    external_ref = str(data.get("external_reference", ""))
-    if not external_ref:
-        return {"ok": True}
-
-    try:
-        enrollment_id = int(external_ref)
-    except ValueError:
-        return {"ok": True}
-
-    enrollment = db.query(Enrollment).filter(Enrollment.id == enrollment_id).first()
-    if not enrollment:
-        return {"ok": True}
-    payment = db.query(Payment).filter(Payment.enrollment_id == enrollment.id).first()
+@router.post("/payments/{payment_id}/webhook")
+def payment_webhook(payment_id: str, payload: dict, db: Session = Depends(get_db)):
+    payment = db.query(Payment).filter(Payment.id == int(payment_id)).first()
     if not payment:
-        return {"ok": True}
-
-    if status == "approved":
-        enrollment.status = EnrollmentStatus.active.value
-        payment.status = PaymentStatus.approved.value
+        raise HTTPException(status_code=404, detail="Pagamento não encontrado")
+    status = payload.get("status")
+    if status == "paid":
+        payment.status = PaymentStatus.paid.value
     elif status == "rejected":
-        enrollment.status = EnrollmentStatus.cancelled.value
-        payment.status = PaymentStatus.rejected.value
+        payment.status = PaymentStatus.failed.value
     elif status == "pending":
-        enrollment.status = EnrollmentStatus.pending.value
         payment.status = PaymentStatus.pending.value
     elif status == "refunded":
-        enrollment.status = EnrollmentStatus.cancelled.value
         payment.status = PaymentStatus.refunded.value
     elif status == "cancelled":
-        enrollment.status = EnrollmentStatus.cancelled.value
-        payment.status = PaymentStatus.cancelled.value
+        payment.status = PaymentStatus.failed.value
     db.commit()
     return {"ok": True}
 
