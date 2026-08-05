@@ -1,49 +1,58 @@
-# Módulo 4 — Crescimento
+# Módulo 4 — Negociação e Fechamento
 
 ## Introdução
-Acompanhe resultados, ajuste estratégias e escale sem perder controle.
+Aprenda a negociar, fazer proposta e fechar a compra de imóvel na praia com segurança.
 
-## Aula 4.1 — Acompanhamento
-- Métricas
-- Frequência
-- Formato
-- Aprendizado
+## Aula 4.1 — Como negociar
+**Dicas:**
+- Baseado em dados.
+- Respeitoso.
+- Claro.
 
-**Exemplo real:** Acompanhamento semanal permitiu ajustes rápidos e crescimento contínuo.
+**Exemplo real:**
+Comprador negociou e fechou abaixo do preço anunciado.
 
-## Aula 4.2 — Ajustes
-- Quando ajustar
-- Como ajustar
-- Validação
+## Aula 4.2 — Proposta e contrato
+**Proposta:**
+- Preço.
+- Prazo.
+- Condições.
 
-**Estudo de caso:** Ajustes pontuais aumentaram resultado sem aumentar esforço.
+**Contrato:**
+- Revisão.
+- Assinatura.
+- Registro.
 
-## Aula 4.3 — Escala
-- Processos
-- Fornecedores/parcerias
-- Crescimento gradual
+**Exercício:**
+Monte uma proposta para um imóvel real.
 
-## Exercício
-Monte um plano de escala sustentada.
+## Aula 4.3 — Fechamento seguro
+**Passos:**
+- Documentos revisados.
+- Contrato assinado.
+- Registro realizado.
+
+**Estudo de caso:**
+Comprador fechou com segurança em 20 dias.
 
 ## Resumo
-- Acompanhamento mantém direção
-- Ajustes preservam resultado
-- Escala depende de processo
+- Negociação exige método.
+- Proposta clara acelera fechamento.
+- Fechamento seguro confirma compra.
 
 ## Checklist
-- [ ] Métricas revisadas
-- [ ] Ajustes aplicados
-- [ ] Escala planejada
+- [ ] Proposta feita
+- [ ] Contrato revisado
+- [ ] Fechamento confirmado
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de acompanhamento
+- Modelo de proposta
 
 ## Ferramentas recomendadas
-- Dashboard
 - Planilha
-- Sistema de gestão
+- Consultorias
+- Cartório
 
 ## Prompt de IA
-"Atue como especialista em crescimento. Monte um plano de escala para este cenário: [dados]."
+"Atue como especialista em compra de imóveis. Monte uma proposta para este cenário: [dados]."

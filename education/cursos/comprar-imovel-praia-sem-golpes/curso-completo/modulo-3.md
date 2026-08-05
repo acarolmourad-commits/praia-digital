@@ -1,49 +1,64 @@
-# Módulo 3 — Estratégia
+# Módulo 3 — Documentação e Segurança
 
 ## Introdução
-Planeje, decida e priorize ações para crescer com consistência.
+Aprenda a verificar documentação, evitar fraudes e garantir uma compra segura na praia.
 
-## Aula 3.1 — Planejamento
-- Objetivos
-- Ações
-- Prazos
-- Recursos
+## Aula 3.1 — Documentos essenciais
+**Documentos do imóvel:**
+- Escritura.
+- Matrícula.
+- IPTU.
+- Certidão de ônus.
 
-**Exemplo real:** Planejamento simples permitiu crescer sem surpresas.
+**Documentos do proprietário:**
+- RG e CPF.
+- Comprovante de residência.
+- Procuração.
 
-## Aula 3.2 — Decisão e priorização
-- Critérios de decisão
-- Priorização
-- Risco
+**Exemplo real:**
+Comprador verificou matrícula e evitou fraude.
 
-**Estudo de caso:** Decisão baseada em dados evitou prejuízo e aumentou retorno.
+## Aula 3.2 — Como verificar imóvel
+**Verificação:**
+- Cartório.
+- Registro.
+- Certidões.
 
-## Aula 3.3 — Execução
-- Rotina
-- Acompanhamento
-- Ajuste rápido
+**Passos:**
+- Visita presencial.
+- Vistoria.
+- Documentação.
 
-## Exercício
-Monte um plano estratégico para os próximos 30 dias.
+**Exercício:**
+Monte um checklist anti-golpes.
+
+## Aula 3.3 — Fraudes e como evitar
+**Fraudes:**
+- Documento falso.
+- Ocultação de ônus.
+- Venda de imóvel alheio.
+
+**Estudo de caso:**
+Comprador identificou fraude e evitou prejuízo.
 
 ## Resumo
-- Planejamento evita desperdício
-- Decisão orientada reduz risco
-- Execução gera resultado
+- Documentação protege compra.
+- Verificação evita fraudes.
+- Segurança reduz risco.
 
 ## Checklist
-- [ ] Plano definido
-- [ ] Ações listadas
-- [ ] Prazo estabelecido
+- [ ] Documentos verificados
+- [ ] Registros consultados
+- [ ] Fraudes evitadas
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de plano
+- Checklist anti-golpes
 
 ## Ferramentas recomendadas
-- Planner
+- Portal de cartórios
 - Planilha
-- App de metas
+- Consultorias
 
 ## Prompt de IA
-"Atue como estrategista. Monte um plano prático para este objetivo: [dados]."
+"Atue como especialista em compra de imóveis. Monte um checklist anti-golpes para este imóvel: [dados]."
