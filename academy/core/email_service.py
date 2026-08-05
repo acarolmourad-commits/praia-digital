@@ -10,12 +10,12 @@ SMTP_PASSWORD = os.getenv("SMTP_PASSWORD", "")
 EMAIL_FROM = os.getenv("EMAIL_FROM", "no-reply@praia.digital")
 
 
-def send_email(to_email: Optional[str], subject: str, body: str, html: bool = False):
+def send_email(to_email: Optional[str], subject: str, body: str, html: bool = False) -> bool:
     if not SMTP_HOST or not SMTP_USER or not SMTP_PASSWORD:
-        return {"status": "skipped", "reason": "smtp not configured"}
+        return False
     to = to_email or EMAIL_FROM
     if not to:
-        return {"status": "skipped", "reason": "missing destination"}
+        return False
     msg = MIMEText(body, "html" if html else "plain", "utf-8")
     msg["Subject"] = subject
     msg["From"] = EMAIL_FROM
@@ -25,9 +25,9 @@ def send_email(to_email: Optional[str], subject: str, body: str, html: bool = Fa
             server.starttls()
             server.login(SMTP_USER, SMTP_PASSWORD)
             server.send_message(msg)
-        return {"status": "sent", "to": to, "subject": subject}
-    except Exception as e:
-        return {"status": "error", "exception": str(e)}
+        return True
+    except Exception:
+        return False
 
 
 def send_enrollment_confirmation(user_email: Optional[str], course_name: str, course_url: str):
