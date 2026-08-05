@@ -1,6 +1,6 @@
-# Reels — Multiplique Patrimônio no Litoral
-1. Roteiro: dica rápida
-2. Roteiro: passo a passo
-3. Roteiro: erro comum
-4. Roteiro: case rápido
-5. Roteiro: resultado
+# Reels — Multiplique Patrimônio
+1. Roteiro: patrimônio em 30s
+2. Roteiro: dica de estratégia
+3. Roteiro: erro de crescimento
+4. Roteiro: case de multiplicação
+5. Roteiro: método simples

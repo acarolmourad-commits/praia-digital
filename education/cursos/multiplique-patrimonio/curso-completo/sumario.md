@@ -1,5 +1,5 @@
-# Sumário do Curso: Multiplique Patrimônio no Litoral
-- Módulo 1: Fundamentos
-- Módulo 2: Aplicação Prática
-- Módulo 3: Estratégia
-- Módulo 4: Crescimento
+# Sumário do Curso: Multiplique Patrimônio
+- Módulo 1: Fundamentos da Multiplicação
+- Módulo 2: Estratégias de Crescimento
+- Módulo 3: Documentação e Segurança
+- Módulo 4: Gestão e Escala

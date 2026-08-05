@@ -1,9 +1,9 @@
-# Avaliação Final — Multiplique Patrimônio no Litoral
+# Avaliação Final — Multiplique Patrimônio
 ## Quiz
-- 20 perguntas sobre fundamentos, aplicação, estratégia e crescimento.
+- 20 perguntas sobre patrimônio, estratégia, documentação e gestão.
 
 ## Prova Prática
-- Aplicação do método em cenário real.
+- Estratégia de crescimento aplicada a um cenário real.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

@@ -1,6 +1,7 @@
-# Checklist — Multiplique Patrimônio no Litoral
-- [ ] Diagnóstico realizado
-- [ ] Objetivos definidos
-- [ ] Aplicação executada
-- [ ] Estratégia traçada
-- [ ] Escala planejada
+# Checklist — Multiplique Patrimônio
+- [ ] Diagnóstico de patrimônio
+- [ ] Estratégia definida
+- [ ] Documentação verificada
+- [ ] Compra fechada
+- [ ] Imóvel gerindo renda
+- [ ] Crescimento planejado

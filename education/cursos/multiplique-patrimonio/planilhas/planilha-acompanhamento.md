@@ -1,6 +1,10 @@
-# Planilha — Multiplique Patrimônio no Litoral
+# Planilha — Multiplique Patrimônio
 - [ ] Data
-- [ ] Ação
-- [ ] Resultado
-- [ ] Ajuste
+- [ ] Imóvel
+- [ ] Cidade
+- [ ] Compra
+- [ ] Reforma
+- [ ] Renda
+- [ ] Custos
+- [ ] ROI
 - [ ] Status

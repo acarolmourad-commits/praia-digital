@@ -1,11 +1,11 @@
-# Artigos SEO — Multiplique Patrimônio no Litoral
-1. Multiplique Patrimônio no Litoral em 2026: guia completo
-2. Como aplicar Multiplique Patrimônio no Litoral no litoral
-3. Guia prático para iniciantes
-4. Erros comuns e como evitar
-5. Métricas essenciais
-6. Resultados reais e casos
-7. Ferramentas úteis
-8. Checklist essencial
-9. Perguntas frequentes
-10. Próximos passos
+# Artigos SEO — Multiplique Patrimônio
+1. Como multiplicar patrimônio no litoral em 2026
+2. Estratégias para crescer patrimônio no litoral
+3. Renda com imóveis no litoral
+4. Valorização no litoral
+5. Riscos no litoral
+6. Alavancagem no litoral
+7. Carteira de imóveis no litoral
+8. ROI no litoral
+9. Liberdade financeira no litoral
+10. Erros ao multiplicar patrimônio
