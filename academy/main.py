@@ -1,14 +1,19 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pathlib import Path
 from academy.core.database import engine, Base
+from academy.core.middleware import RequestLoggingMiddleware, ErrorHandlerMiddleware
 from academy.routers import auth, courses, academy, admin, payments, recommendations, automation, automation_whatsapp, certificates, monitoring
 import os
 
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Praia Digital Academy API", version="0.2.0")
+
+# Middlewares
+app.add_middleware(ErrorHandlerMiddleware)
+app.add_middleware(RequestLoggingMiddleware)
 
 # CORS baseado em variável de ambiente
 allowed_origins = os.getenv("ALLOWED_ORIGINS", "*")
