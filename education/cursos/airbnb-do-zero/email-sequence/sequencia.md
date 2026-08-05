@@ -1,21 +1,21 @@
-# Sequência de E-mails — Airbnb Do Zero
+# Sequência de E-mails — Airbnb do Zero no Litoral
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido sobre Airbnb Do Zero (PDF)
+Assunto: Guia Rápido de Temporada no Litoral (PDF + planilha)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case prático de Airbnb Do Zero
+Assunto: Case: aluguel por temporada no litoral
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Airbnb Do Zero é para mim?"
+Assunto: "Airbnb dá muito trabalho?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno obteve resultado com Airbnb Do Zero
+Assunto: Aluno fez a primeira reserva em 7 dias
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

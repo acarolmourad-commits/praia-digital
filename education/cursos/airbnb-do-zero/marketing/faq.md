@@ -1,11 +1,11 @@
-# FAQ — Airbnb Do Zero
-1. Como funciona? Método passo a passo.
-2. Em quanto tempo vejo resultado? De 30 a 60 dias.
-3. Preciso de experiência? Não.
-4. Vale a pena? Sim.
-5. E se não gostar? 7 dias de garantia.
-6. Qual o investimento? R$ 297.
-7. Tem suporte? Sim.
-8. Como acessar? Plataforma online.
-9. Tem certificado? Sim.
-10. Posso parcelar? Sim.
+# FAQ — Airbnb do Zero no Litoral
+1. Preciso de experiência? Não.
+2. Em quanto tempo vejo resultado? De 7 a 30 dias.
+3. Vale a pena? Sim.
+4. E se o cliente danificar? Seguro e regras.
+5. Preciso de imóvel na orla? Não.
+6. Qual canal priorizar? Airbnb e Booking.
+7. Como definir preço? Método e comparativos.
+8. Preciso de limpeza profissional? Ajuda.
+9. Como medir sucesso? Ocupação e receita.
+10. Preciso de seguro? Sim.
