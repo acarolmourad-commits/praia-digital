@@ -1,48 +1,59 @@
-# Módulo 2 — Aplicação Prática
+# Módulo 2 — Preparação do Imóvel
 
 ## Introdução
-Aplique o método na prática com exemplos reais e evite erros comuns.
+Aprenda a preparar imóveis, criar anúncios e definir precificação inicial no Airbnb no litoral.
 
-## Aula 2.1 — Passo a passo prático
-- Etapas claras
-- Ação imediata
-- Verificação de resultado
+## Aula 2.1 — Preparação básica
+**Preparação:**
+- Limpeza.
+- Decoração.
+- Comodidades.
 
-**Exemplo real:** Profissional aplicou o passo a passo e obteve ganhos rápidos em 15 dias.
+**Exemplo real:**
+Dono preparou imóvel e dobrou avaliação.
 
-## Aula 2.2 — Exemplos reais
-- Caso 1
-- Caso 2
-- Lições aplicáveis
+## Aula 2.2 — Fotos e descrição
+**Fotos:**
+- Luz natural.
+- Ângulos amplos.
+- Detalhes.
 
-**Estudo de caso:** Aplicação prática gerou aumento mensurável em 30 dias.
+**Descrição:**
+- Título.
+- Destaques.
+- Regras.
 
-## Aula 2.3 — Erros comuns
-- Erro 1
-- Erro 2
-- Erro 3
-- Como evitar
+**Exercício:**
+Monte um roteiro de fotos.
 
-## Exercício
-Aplique o método em um cenário real.
+## Aula 2.3 — Precificação inicial
+**Precificação:**
+- Comparação.
+- Temporada.
+- Ocupação.
+
+**Estudo de caso:**
+Dono ajustou preço e aumentou reservas.
 
 ## Resumo
-- Passo a passo reduz risco
-- Exemplos aceleram aprendizado
-- Erros evitados poupam tempo
+- Preparação atrai hóspedes.
+- Fotos vendem imóvel.
+- Precificação equilibra oferta.
 
 ## Checklist
-- [ ] Passos executados
-- [ ] Resultados verificados
-- [ ] Ajustes aplicados
+- [ ] Imóvel preparado
+- [ ] Fotos tiradas
+- [ ] Descrição criada
+- [ ] Preço definido
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de aplicação
+- Checklist de preparação
 
 ## Ferramentas recomendadas
-- Planilha de acompanhamento
-- App de gestão
+- Airbnb
+- Planilha
+- Câmera
 
 ## Prompt de IA
-"Atue como especialista prático. Monte um plano de aplicação para este cenário: [dados]."
+"Atue como especialista em Airbnb no litoral. Monte um checklist de preparação para este imóvel: [dados]."

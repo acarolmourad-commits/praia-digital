@@ -1,47 +1,64 @@
-# Módulo 1 — Fundamentos
+# Módulo 1 — Fundamentos do Airbnb no Litoral
 
 ## Introdução
-Entenda o contexto, o seu perfil e as métricas essenciais para escolha de imóvel para Airbnb, preparo e posicionamento.
+Entenda o papel do Airbnb no litoral, o método e o perfil do dono de imóvel que quer gerar renda.
 
-## Aula 1.1 — Contexto e oportunidades
-- Mercado atual
-- Oportunidades no litoral
-- Particularidades regionais
+## Aula 1.1 — O que é Airbnb no litoral
+Airbnb no litoral significa usar imóveis para temporada com plataforma, método e gestão para gerar renda.
 
-**Exemplo real:** Profissional identificou oportunidade em região em crescimento e aumentou resultado em 25%.
+**Características:**
+- Renda por temporada.
+- Ocupação variável.
+- Gestão ativa.
 
-## Aula 1.2 — Perfil e objetivos
-- Perfil do aluno
-- Objetivos claros
-- Metas realistas
+**Exemplo real:**
+Dono aumentou renda em 40% com Airbnb.
 
-## Aula 1.3 — Métricas e metas
-- Métricas essenciais
-- Metas de curto, médio e longo prazo
-- Revisão
+## Aula 1.2 — Perfil do dono de imóvel
+**Iniciante:**
+- Foco: preparação básica, anúncio simples.
+- Erro comum: fotos ruins.
 
-## Exercício
-Faça o diagnóstico do seu cenário atual.
+**Intermediário:**
+- Foco: precificação, avaliações.
+- Erro comum: preço errado.
+
+**Avançado:**
+- Foco: escala, automação.
+- Erro comum: volume sem qualidade.
+
+**Exercício:**
+Faça o diagnóstico do seu imóvel.
+
+## Aula 1.3 — Método e metas
+**Método:**
+- Preparação.
+- Anúncio.
+- Gestão.
+
+**Metas:**
+- Ocupação mensal.
+- Renda por temporada.
+- Avaliação mínima.
 
 ## Resumo
-- Contexto orienta decisão
-- Perfil evita erros
-- Métricas medem resultado
+- Airbnb gera renda.
+- Perfil claro orienta ação.
+- Método reduz risco.
 
 ## Checklist
-- [ ] Cenário mapeado
-- [ ] Objetivos definidos
-- [ ] Métricas escolhidas
+- [ ] Diagnóstico feito
 - [ ] Metas traçadas
+- [ ] Método escolhido
 
 ## Materiais para download
 - PDF do módulo
 - Planilha de diagnóstico
 
 ## Ferramentas recomendadas
+- Airbnb
 - Planilha
-- Indicadores
-- Consultas locais
+- Automação
 
 ## Prompt de IA
-"Atue como especialista em escolha de imóvel para Airbnb, preparo e posicionamento. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
+"Atue como especialista em Airbnb no litoral. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."

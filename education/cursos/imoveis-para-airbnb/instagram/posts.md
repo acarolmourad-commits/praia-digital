@@ -1,21 +1,21 @@
-# Posts Instagram — Imóveis para Airbnb no Litoral
-1. Post: dica prática
-2. Reels: passo a passo rápido
-3. Carrossel: checklist
-4. Post: erro comum
-5. Reels: dica de aplicação
-6. Carrossel: exemplo real
-7. Post: resultado rápido
-8. Reels: case prático
-9. Carrossel: métrica importante
+# Posts Instagram — Imóveis para Airbnb
+1. Post: 3 erros no Airbnb
+2. Reels: Airbnb em 30s
+3. Carrossel: checklist de preparação
+4. Post: anúncio que converte
+5. Reels: dica de precificação
+6. Carrossel: tipos de temporada
+7. Post: renda sem medo
+8. Reels: case de sucesso
+9. Carrossel: rentabilidade no litoral
 10. Reels: ajuste simples
-11. Post: estratégia básica
-12. Carrossel: 5 passos
-13. Post: crescimento sem segredo
-14. Reels: dúvida comum
-15. Carrossel: ferramenta útil
+11. Post: ocupação alta
+12. Carrossel: 5 passos para Airbnb
+13. Post: mito vs verdade
+14. Reels: dica de anúncio
+15. Carrossel: dados que importam
 16. Post: comece hoje
-17. Reels: case de resultado
-18. Carrossel: revisão semanal
-19. Post: mito vs verdade
-20. Reels: método resumido
+17. Reels: case de Airbnb
+18. Carrossel: revisão mensal
+19. Post: método completo
+20. Reels: Airbnb em 30s

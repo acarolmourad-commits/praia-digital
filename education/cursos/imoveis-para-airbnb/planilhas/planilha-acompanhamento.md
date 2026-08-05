@@ -1,6 +1,11 @@
-# Planilha — Imóveis para Airbnb no Litoral
+# Planilha — Imóveis para Airbnb
 - [ ] Data
-- [ ] Ação
-- [ ] Resultado
-- [ ] Ajuste
+- [ ] Imóvel
+- [ ] Cidade
+- [ ] Temporada
+- [ ] Preço
+- [ ] Ocupação
+- [ ] Receita
+- [ ] Custos
+- [ ] Lucro
 - [ ] Status

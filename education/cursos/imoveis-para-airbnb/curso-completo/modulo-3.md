@@ -1,49 +1,53 @@
-# Módulo 3 — Estratégia
+# Módulo 3 — Anúncio e Gestão
 
 ## Introdução
-Planeje, decida e priorize ações para crescer com consistência.
+Aprenda a criar anúncios persuasivos, gerenciar reservas e lidar com avaliações no Airbnb no litoral.
 
-## Aula 3.1 — Planejamento
-- Objetivos
-- Ações
-- Prazos
-- Recursos
+## Aula 3.1 — Anúncio persuasivo
+**Anúncio:**
+- Título forte.
+- Descrição clara.
+- Regras objetivas.
 
-**Exemplo real:** Planejamento simples permitiu crescer sem surpresas.
+**Exemplo real:**
+Dono melhorou anúncio e aumentou reservas.
 
-## Aula 3.2 — Decisão e priorização
-- Critérios de decisão
-- Priorização
-- Risco
+## Aula 3.2 — Gestão de reservas
+**Gestão:**
+- Check-in.
+- Check-out.
+- Suporte.
 
-**Estudo de caso:** Decisão baseada em dados evitou prejuízo e aumentou retorno.
+**Exercício:**
+Monte um fluxo de gestão.
 
-## Aula 3.3 — Execução
-- Rotina
-- Acompanhamento
-- Ajuste rápido
+## Aula 3.3 — Avaliações e ajustes
+**Avaliações:**
+- Leitura.
+- Resposta.
+- Ajuste.
 
-## Exercício
-Monte um plano estratégico para os próximos 30 dias.
+**Estudo de caso:**
+Dono respondeu avaliações e melhorou ranking.
 
 ## Resumo
-- Planejamento evita desperdício
-- Decisão orientada reduz risco
-- Execução gera resultado
+- Anúncio atrai hóspedes.
+- Gestão mantém avaliação.
+- Ajustes melhoram resultado.
 
 ## Checklist
-- [ ] Plano definido
-- [ ] Ações listadas
-- [ ] Prazo estabelecido
+- [ ] Anúncio criado
+- [ ] Gestão estruturada
+- [ ] Avaliações acompanhadas
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de plano
+- Modelo de anúncio
 
 ## Ferramentas recomendadas
-- Planner
+- Airbnb
 - Planilha
-- App de metas
+- Automação
 
 ## Prompt de IA
-"Atue como estrategista. Monte um plano prático para este objetivo: [dados]."
+"Atue como especialista em Airbnb no litoral. Crie um anúncio para este imóvel: [dados]."

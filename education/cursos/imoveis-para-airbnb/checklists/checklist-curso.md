@@ -1,6 +1,8 @@
-# Checklist — Imóveis para Airbnb no Litoral
-- [ ] Diagnóstico realizado
-- [ ] Objetivos definidos
-- [ ] Aplicação executada
-- [ ] Estratégia traçada
-- [ ] Escala planejada
+# Checklist — Imóveis para Airbnb
+- [ ] Diagnóstico de imóvel
+- [ ] Preparação concluída
+- [ ] Anúncio criado
+- [ ] Precificação definida
+- [ ] Gestão estruturada
+- [ ] Métricas acompanhadas
+- [ ] Crescimento planejado

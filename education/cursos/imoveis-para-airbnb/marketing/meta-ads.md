@@ -1,5 +1,5 @@
-# Meta Ads — Imóveis para Airbnb no Litoral
-Público: 25 a 55 anos, interesse em imóveis, litoral, investimento
+# Meta Ads — Imóveis para Airbnb
+Público: 25 a 55 anos, interesse em Airbnb, temporada, litoral, renda extra
 Objetivo: leads
 Formato: vídeo + carrossel
 Orçamento sugerido: R$ 40 a R$ 120/dia

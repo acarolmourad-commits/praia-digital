@@ -1,6 +1,6 @@
-# Reels — Imóveis para Airbnb no Litoral
-1. Roteiro: dica rápida
-2. Roteiro: passo a passo
-3. Roteiro: erro comum
-4. Roteiro: case rápido
-5. Roteiro: resultado
+# Reels — Imóveis para Airbnb
+1. Roteiro: Airbnb em 30s
+2. Roteiro: dica de anúncio
+3. Roteiro: erro de precificação
+4. Roteiro: case de renda
+5. Roteiro: método simples
