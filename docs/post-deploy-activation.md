@@ -23,6 +23,11 @@ Use este checklist após criar o Web Service no Render.
   - `POST /automation/whatsapp-payment-confirmed/{enrollment_id}`
   - `POST /automation/whatsapp-certificate/{enrollment_id}`
 
+## 3.1. Leads e automação
+- `POST /leads`
+- `POST /leads/{lead_id}/events`
+- `POST /automation/email-confirmation/{enrollment_id}`
+
 ## 4. Validação final
 - `python scripts/check_academy_deploy.py --url https://academy.praia.digital --wait 30`
 - `python scripts/frontend_health_check.py --base https://praia.digital --wait 30`

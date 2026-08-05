@@ -95,7 +95,7 @@
         city: document.getElementById('city').value,
         lead_magnet: 'guia-investidor-litoral'
       };
-      const res = await fetch('/academy/leads', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(data)});
+      const res = await fetch('/leads', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(data)});
       const msg = document.getElementById('formMessage');
       if (res.ok) { msg.textContent = '✅ Guia enviado! Verifique seu e-mail e WhatsApp.'; }
       else { msg.textContent = '❌ Erro ao enviar. Tente novamente.'; }

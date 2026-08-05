@@ -290,3 +290,30 @@ class AutomationRule(Base):
     active = Column(Boolean, nullable=False, default=True)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
+
+
+class Lead(Base):
+    __tablename__ = "leads"
+
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String(120), nullable=False)
+    email = Column(String(200), nullable=True)
+    phone = Column(String(40), nullable=True)
+    city = Column(String(120), nullable=True)
+    source = Column(String(120), nullable=True)
+    magnet = Column(String(120), nullable=True)
+    status = Column(String(20), nullable=False, default="new")
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+    updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
+
+
+class LeadEvent(Base):
+    __tablename__ = "lead_events"
+
+    id = Column(Integer, primary_key=True, index=True)
+    lead_id = Column(Integer, ForeignKey("leads.id", ondelete="CASCADE"), nullable=False)
+    event = Column(String(80), nullable=False)
+    payload = Column(Text, nullable=True)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+
+    lead = relationship("Lead", backref="events")

@@ -147,3 +147,36 @@ class RecommendationOut(BaseModel):
     price: Optional[int]
     discount_percent: int
     reason: str
+
+# Leads
+class LeadIn(BaseModel):
+    name: str
+    email: Optional[str]
+    phone: Optional[str]
+    city: Optional[str]
+    source: Optional[str]
+    magnet: Optional[str]
+
+class LeadOut(BaseModel):
+    id: int
+    name: str
+    email: Optional[str]
+    phone: Optional[str]
+    city: Optional[str]
+    source: Optional[str]
+    magnet: Optional[str]
+    status: str
+    created_at: datetime
+
+    class Config:
+        from_attributes = True
+
+class LeadEventOut(BaseModel):
+    id: int
+    lead_id: int
+    event: str
+    payload: Optional[str]
+    created_at: datetime
+
+    class Config:
+        from_attributes = True
