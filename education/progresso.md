@@ -11,12 +11,13 @@
 - Marketing Imobiliário para Corretores — PRONTO PARA VENDA
 - Análise de Rentabilidade — PRONTO PARA VENDA
 - Automação Comercial para Corretores — PRONTO PARA VENDA
+- Avaliação de Imóveis — PRONTO PARA VENDA
 
 ## Em Produção
 - Nenhum no momento
 
 ## Próximo Curso
-- Avaliação de Imóveis
+- Documentação Imobiliária
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.
