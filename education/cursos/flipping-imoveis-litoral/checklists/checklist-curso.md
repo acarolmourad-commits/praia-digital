@@ -1,0 +1,11 @@
+# Checklist — Flipping de Imóveis no Litoral
+- [ ] Diagnóstico de flipping
+- [ ] Oportunidades prospectadas
+- [ ] Viabilidade calculada
+- [ ] Documentação verificada
+- [ ] Reforma planejada
+- [ ] Cronograma criado
+- [ ] Apresentação preparada
+- [ ] Venda fechada
+- [ ] Follow-up ativo
+- [ ] Crescimento planejado
