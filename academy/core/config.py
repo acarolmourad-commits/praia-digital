@@ -20,6 +20,9 @@ MERCADOPAGO_TOKEN = os.getenv("MERCADOPAGO_TOKEN", "")
 MERCADOPAGO_PUBLIC_KEY = os.getenv("MERCADOPAGO_PUBLIC_KEY", "")
 BASE_URL = os.getenv("BASE_URL", "http://localhost:8000")
 
+# CORS
+ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "")
+
 # WhatsApp
 WHATSAPP_API_URL = os.getenv("WHATSAPP_API_URL", "")
 WHATSAPP_TOKEN = os.getenv("WHATSAPP_TOKEN", "")
