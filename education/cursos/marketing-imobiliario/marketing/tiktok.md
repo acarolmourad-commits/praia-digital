@@ -1,6 +1,6 @@
-# TikTok — Marketing Imobiliario
-1. Roteiro: dica rápida
-2. Roteiro: erro comum
-3. Roteiro: passo a passo
-4. Roteiro: resultado real
-5. Roteiro: comece hoje
+# TikTok — Marketing Imobiliário para Corretores
+1. Roteiro: marketing sem erro
+2. Roteiro: 1 post, 2 clientes
+3. Roteiro: como anunciar
+4. Roteiro: SEO local
+5. Roteiro: case de lead

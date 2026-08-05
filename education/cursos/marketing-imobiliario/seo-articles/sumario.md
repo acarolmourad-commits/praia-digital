@@ -1,11 +1,11 @@
-# Artigos SEO — Marketing Imobiliario
-1. Guia completo de Marketing Imobiliario no litoral
-2. Como aplicar Marketing Imobiliario no litoral
-3. Erros comuns em Marketing Imobiliario no litoral
-4. Dicas práticas de Marketing Imobiliario
-5. Resultados reais de Marketing Imobiliario
-6. Ferramentas para Marketing Imobiliario
-7. Checklist de Marketing Imobiliario
-8. ROI de Marketing Imobiliario
-9. Como começar em Marketing Imobiliario
-10. Perguntas frequentes sobre Marketing Imobiliario
+# Artigos SEO — Marketing Imobiliário para Corretores
+1. Marketing imobiliário no litoral em 2026
+2. Como atrair clientes no litoral
+3. Instagram para corretores no litoral
+4. Google Ads para corretores no litoral
+5. SEO local para corretores no litoral
+6. Conteúdo para corretores no litoral
+7. Anúncios para imóveis no litoral
+8. Landing page para corretores no litoral
+9. CRM para corretores no litoral
+10. Follow-up de leads no litoral

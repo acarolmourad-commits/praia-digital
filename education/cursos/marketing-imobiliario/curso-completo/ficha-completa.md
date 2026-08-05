@@ -1,203 +1,202 @@
-# Curso: Marketing Imobiliário
+# Curso: Marketing Imobiliário para Corretores
 ## Nome Comercial
-**Marketing Imobiliário: Como Atrair Leads, Vender Mais e Posicionar sua Marca no Litoral**
+**Marketing Imobiliário para Corretores: Como Atrair Clientes e Vender Mais no Litoral**
 
 ## Subtítulo
-Estratégias de marketing digital e offline para corretores e imobiliárias do litoral.
+Método de marketing digital e local para corretores no litoral: redes, anúncios, conteúdo e conversão.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de estruturar um plano de marketing que gera leads qualificados e aumenta vendas.
+Em até 45 dias, você será capaz de atrair leads qualificados e vender mais no litoral com marketing aplicado.
 
 ## Público-alvo
-- Corretores e imobiliárias de 22 a 55 anos
-- Interesse: leads, marca, vendas
-- Perfil: iniciante ou intermediário
+- Corretores e imobiliárias
+- Interesse: marketing digital, vendas, captação
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
-10 horas de aulas (40 aulas de 12 a 20 min)
-Total: 10 horas
+6 horas de aulas (32 aulas de 10 a 16 min)
+Total: 6 horas
 
 ## Valor Sugerido
-Curso completo: R$ 397
-À vista: R$ 327
-Parcelado: 12x de R$ 27,25
+Curso completo: R$ 347
+À vista: R$ 287
+Parcelado: 12x de R$ 23,92
 Mini curso: R$ 147
 E-book: R$ 19,90
-Mentoria em grupo: R$ 3.500
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Planos de marketing
 - Templates de posts
+- Planos de anúncio
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Atraia leads qualificados e venda mais imóveis no litoral com marketing estruturado"**
+**"Atraia clientes no litoral e venda mais com marketing imobiliário"**
 
 ## Big Idea
-Marketing imobiliário não é post aleatório: é estratégia, posicionamento, conteúdo e conversão.
+Marketing imobiliário não é só anúncio: é posicionamento, conteúdo, relacionamento e conversão.
 
 ## Oferta
-- **Curso completo:** R$ 397
+- **Curso completo:** R$ 347
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
-- **Mentoria em grupo:** R$ 3.500
 
 ## Avatar
-**Nome:** João / Ana
+**Nome:** Carlos / Fernanda
 **Idade:** 25 a 50 anos
 **Renda:** R$ 3k a R$ 15k/mês
-**Objetivo:** leads e vendas com marketing
-**Dificuldades:** conteúdo, concorrência, métricas
-**Desejos:** marca forte, leads, receita
+**Objetivo:** atrair clientes e vender mais
+**Dificuldades:** marketing digital, conteúdo, anúncios
+**Desejos:** leads qualificados, autoridade, vendas recorrentes
 
 ## Dores
-- Sem leads
-- Marca fraca
-- Conteúdo sem direção
-- Falta de método
-- Falta de resultado
+- Falta de leads
+- Anúncio sem retorno
+- Conteúdo fraco
+- Falta de autoridade
+- Concorrência alta
 
 ## Desejos
 - Leads qualificados
-- Marca local forte
-- Conteúdo que vende
-- Resultados previsíveis
-- Autoridade
+- Anúncios que convertem
+- Conteúdo relevante
+- Autoridade local
+- Vendas recorrentes
 
 ## Objeções
-- "É caro"
-- "Já tento de tudo"
-- "Demora"
-- "E se não funcionar?"
+- "Marketing é caro"
+- "Já tento e não dá resultado"
+- "É complicado"
 - "Não compensa"
+- "Não tenho tempo"
 
 ## Transformação
-- Plano de marketing
-- Conteúdo estratégico
+- Marketing aplicado
 - Leads qualificados
-- Marca forte
-- Resultados mensuráveis
+- Conteúdo relevante
+- Autoridade local
+- Vendas recorrentes
 
 ## Programa Completo
 ### Módulo 1 — Fundamentos
 Aula 1.1 — Marketing imobiliário no litoral
-Aula 1.2 — Posicionamento e diferenciação
-Aula 1.3 — Funil de vendas
-Exercício: posicionamento
+Aula 1.2 — Perfil do cliente
+Aula 1.3 — Posicionamento
+Exercício: defina sua marca
 
 ### Módulo 2 — Conteúdo
 Aula 2.1 — Conteúdo que converte
-Aula 2.2 — SEO local
-Aula 2.3 — Redes sociais
-Exercício: calendário
+Aula 2.2 — Redes sociais
+Aula 2.3 — SEO local
+Exercício: plano de conteúdo
 
-### Módulo 3 — Anúncios e Tráfego
+### Módulo 3 — Anúncios
 Aula 3.1 — Meta Ads
 Aula 3.2 — Google Ads
-Aula 3.3 — Mensuração
-Exercício: campanha básica
+Aula 3.3 — Remarketing
+Exercício: campanha de anúncios
 
-### Módulo 4 — Autoridade e Crescimento
-Aula 4.1 — Branding local
-Aula 4.2 — Parcerias
-Aula 4.3 — Referências
-Exercício: plano de crescimento
+### Módulo 4 — Conversão
+Aula 4.1 — Landing page
+Aula 4.2 — CRM e funil
+Aula 4.3 — Follow-up
+Exercício: funil de vendas
 
 ## Carga Horária
-10 horas
+6 horas
 
 ## Material Complementar
-- Planos de marketing
 - Templates de posts
+- Planos de anúncio
+- PDFs por módulo
 - Comunidade fechada
 
 ## Checklists
-- Checklist de perfil
+- Checklist de posicionamento
 - Checklist de conteúdo
 - Checklist de anúncios
-- Checklist de métricas
+- Checklist de conversão
 
 ## Planilhas
-- Planilha de conteúdo
 - Planilha de leads
-- Planilha de ROI
+- Planilha de anúncios
+- Planilha de conversão
 
 ## Modelos Prontos
 - Modelo de post
 - Modelo de anúncio
+- Modelo de landing page
 
 ## Scripts
-- Script de atendimento
 - Script de follow-up
+- Script de atendimento
 
 ## Prompt de IA
 Prompt para criar conteúdo e anúncios.
 
 ## Exercícios
-- Exercício 1: posicionamento
-- Exercício 2: calendário
-- Exercício 3: campanha
-- Exercício 4: métricas
-- Exercício 5: plano de crescimento
+- Exercício 1: marca
+- Exercício 2: conteúdo
+- Exercício 3: anúncios
+- Exercício 4: landing page
+- Exercício 5: funil
 
 ## Avaliações
 Quiz 20 perguntas
 Prova prática: plano de marketing
 
 ## FAQ
-1. Preciso de verba? Pode começar orgânico.
-2. Qual plataforma priorizar? Instagram e Google.
-3. Como medir resultado? Leads e vendas.
-4. Vale a pena Meta Ads? Sim, com método.
-5. Como criar conteúdo? Use IA e templates.
+1. Quanto investir em anúncios? De R$ 200 a R$ 1.000/mês.
+2. Qual canal priorizar? Instagram e Google.
+3. Preciso de site? Ajuda.
+4. Em quanto tempo vejo resultado? De 30 a 60 dias.
+5. Vale a pena para iniciantes? Sim.
 
 ## Página de Vendas
-[Em construção no próximo passo]
+[vendas.html]
 
 ## Landing Page
-[Em construção no próximo passo]
+[index.html]
 
 ## Sequência de E-mails
-[Em construção no próximo passo]
+[email-sequence/sequencia.md]
 
 ## Posts Instagram
-[Em construção no próximo passo]
+[instagram/posts.md]
 
 ## Reels
-[Em construção no próximo passo]
+[marketing/reels.md]
 
 ## Carrosséis
-[Em construção no próximo passo]
+[marketing/carrosseis.md]
 
 ## Artigos SEO
-[Em construção no próximo passo]
+[seo-articles/sumario.md]
 
 ## Roteiros YouTube
-[Em construção no próximo passo]
+[marketing/youtube.md]
 
 ## Anúncios Meta
-[Em construção no próximo passo]
+[marketing/meta-ads.md]
 
 ## Anúncios Google
-[Em construção no próximo passo]
+[marketing/google-ads.md]
 
 ## CTA
-"Atraia leads e venda mais com marketing estruturado."
+"Atraia clientes no litoral com marketing."
 
 ## Upsell
-- Mentoria individual: R$ 2.500
-- Acompanhamento de marketing: R$ 3.500
+- Mentoria individual: R$ 1.500
+- Acompanhamento: R$ 2.000
 
 ## Downsell
 - Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Instagram para Corretores
-- Curso de Funil de Vendas
+- Curso de Especialista em Venda de Imóveis no Litoral
+- Curso de Captação e Exclusividade
 - Curso de WhatsApp que Vende

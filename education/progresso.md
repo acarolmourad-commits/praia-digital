@@ -7,9 +7,11 @@
 - Gestão Profissional da Locação
 - Como Aumentar em 30% a Rentabilidade
 - Especialista em Venda de Imóveis no Litoral
+- Captação e Exclusividade para Corretores
+- Marketing Imobiliário para Corretores
 
 ## Próximo Curso
-- Captação e Exclusividade para Corretores
+- Instagram para Corretores
 
 ## Regra
 Um curso por vez, do maior potencial para o menor.
