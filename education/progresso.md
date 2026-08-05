@@ -49,12 +49,14 @@
 - Gestão de Propostas para Corretores — PRONTO PARA VENDA
 - Rotinas de Vendas para Corretores — PRONTO PARA VENDA
 - Recuperação de Vendas para Corretores — PRONTO PARA VENDA
+- Gestão de Conflitos para Corretores — PRONTO PARA VENDA
+- Treinamento de Equipes para Corretores — PRONTO PARA VENDA
 
 ## Em Produção
 - Nenhum no momento
 
 ## Próximo Curso
-- Gestão de Conflitos para Corretores
+- Liderança para Corretores
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.
