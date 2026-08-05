@@ -1,33 +1,54 @@
-# Módulo 4 — Conteúdo Premium
-## Aula 4.1 — Introdução ao módulo
-Conteúdo: visão geral, objetivo, aplicação prática no litoral.
+# Módulo 4 — Gestão e Crescimento
 
-## Aula 4.2 — Conceitos aplicados
-Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
+## Introdução
+Organize a operação, automatize atendimento, cuide da avaliação e escale sem perder qualidade.
 
-## Aula 4.3 — Estudo de caso
-Conteúdo: caso real, análise, lições.
+## Aula 4.1 — Check-in, check-out e limpeza
+- Recepção
+- Autônomo ou presencial
+- Limpeza e reposição
+- Checklist operacional
+
+**Exemplo real:** Imóvel com check-in autônomo e checklist digital reduziu reclamações em 58%.
+
+## Aula 4.2 — Atendimento e avaliações
+- Resposta rápida
+- Tom humanizado
+- Resposta a avaliações ruins
+- Indicação
+
+**Estudo de caso:** Resposta pública educada a avaliação negativa revertida em novo elogio público.
+
+## Aula 4.3 — Automação e crescimento
+- Mensagens automáticas
+- Sincronização de calendário
+- Crescimento gradual
+- Alertas
 
 ## Exercício
-Aplicação prática no seu contexto.
+Monte um plano operacional semanal.
 
 ## Resumo
-Pontos-chave para revisão.
+- Operação organizada reduz dor de cabeça
+- Atendimento rápido aumenta nota
+- Automação escala sem dor
 
 ## Checklist
-- [ ] Conceitos entendidos
-- [ ] Caso analisado
-- [ ] Exercício aplicado
+- [ ] Check-in/checkout definidos
+- [ ] Limpeza padronizada
+- [ ] Mensagens automáticas
+- [ ] Avaliações monitoradas
+- [ ] Canal manager configurado
 
 ## Materiais para download
 - PDF do módulo
-- Templates
-- Planilha
+- Checklist operacional
+- Planilha de custos
 
 ## Ferramentas recomendadas
-- Ferramenta 1
-- Ferramenta 2
-- Ferramenta 3
+- Canal manager
+- Planilha de controle
+- WhatsApp Business
 
 ## Prompt de IA
-Prompt para acelerar tarefas deste módulo.
+"Atue como gestor de temporada. Monte um plano operacional para este imóvel: [dados do imóvel]."

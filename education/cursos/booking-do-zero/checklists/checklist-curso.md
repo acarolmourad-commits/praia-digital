@@ -1,7 +1,13 @@
-# Checklist — Booking Do Zero
-- [ ] Objetivos definidos
-- [ ] Método aplicado
-- [ ] Ferramentas configuradas
-- [ ] Exercícios realizados
-- [ ] Revisão feita
-- [ ] Próximo passo definido
+# Checklist — Booking do Zero no Litoral
+- [ ] Diagnóstico do imóvel
+- [ ] Cadastro completo
+- [ ] Fotos escolhidas
+- [ ] Título e descrição definidos
+- [ ] Regras publicadas
+- [ ] Preços definidos
+- [ ] Disponibilidade atualizada
+- [ ] Check-in/checkout definidos
+- [ ] Limpeza padronizada
+- [ ] Mensagens automáticas
+- [ ] Avaliações monitoradas
+- [ ] Operação testada

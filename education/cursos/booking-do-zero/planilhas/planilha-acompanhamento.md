@@ -1,5 +1,9 @@
-# Planilha — Booking Do Zero
+# Planilha — Booking do Zero no Litoral
 - [ ] Data
-- [ ] Ação
-- [ ] Resultado
-- [ ] Observação
+- [ ] Diária
+- [ ] Ocupação
+- [ ] Receita
+- [ ] Limpeza
+- [ ] Manutenção
+- [ ] Outros custos
+- [ ] Lucro

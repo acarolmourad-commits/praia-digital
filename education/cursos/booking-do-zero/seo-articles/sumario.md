@@ -1,11 +1,11 @@
-# Artigos SEO — Booking Do Zero
-1. Booking Do Zero em 2026
-2. Como aplicar booking do zero no litoral
-3. Resultados reais de booking do zero
-4. Método passo a passo de booking do zero
-5. Erros comuns em booking do zero
-6. Ferramentas para booking do zero
-7. Cases de booking do zero no litoral
-8. Como medir resultado em booking do zero
-9. Como começar em booking do zero
-10. FAQ sobre booking do zero
+# Artigos SEO — Booking do Zero no Litoral
+1. Booking no litoral em 2026: guia completo
+2. Como colocar imóvel na Booking no litoral
+3. Precificação na Booking para temporada no litoral
+4. Fotos de imóvel na Booking que vendem mais
+5. Check-in e limpeza na Booking no litoral
+6. Como aumentar avaliação na Booking no litoral
+7. Long stay na Booking: vale a pena?
+8. Temporada na Booking no litoral: picos e eventos
+9. Erros comuns na Booking para iniciantes
+10. ROI de imóvel na Booking no litoral

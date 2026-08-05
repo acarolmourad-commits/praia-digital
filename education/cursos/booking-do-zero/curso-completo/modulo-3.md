@@ -1,33 +1,51 @@
-# Módulo 3 — Conteúdo Premium
-## Aula 3.1 — Introdução ao módulo
-Conteúdo: visão geral, objetivo, aplicação prática no litoral.
+# Módulo 3 — Precificação e Disponibilidade
 
-## Aula 3.2 — Conceitos aplicados
-Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
+## Introdução
+Defina preços competitivos, controle a disponibilidade e capture valor em alta temporada e eventos.
 
-## Aula 3.3 — Estudo de caso
-Conteúdo: caso real, análise, lições.
+## Aula 3.1 — Precificação no Booking
+- Preço base
+- Ajuste por temporada
+- Última hora e antecipação
+
+**Exemplo real:** Imóvel em Santos ajustou preço automaticamente por temporada e aumentou receita em 20%.
+
+## Aula 3.2 — Temporada, eventos e picos
+- Alta temporada
+- Feriados prolongados
+- Festivais e shows
+- Surf e eventos locais
+
+**Estudo de caso:** Durante festival de verão em São Vicente, imóvel com preço 38% acima ficou com ocupação de 93%.
+
+## Aula 3.3 — Long stay e descontos
+- Estadia longa
+- Descontos semanais/mensais
+- Reservas antecipadas
 
 ## Exercício
-Aplicação prática no seu contexto.
+Monte uma tabela de preços por temporada, evento e tipo de estadia.
 
 ## Resumo
-Pontos-chave para revisão.
+- Preço define ocupação e receita
+- Eventos criam picos
+- Long stay reduz vazio
 
 ## Checklist
-- [ ] Conceitos entendidos
-- [ ] Caso analisado
-- [ ] Exercício aplicado
+- [ ] Preço base definido
+- [ ] Temporada mapeada
+- [ ] Eventos listados
+- [ ] Long stay configurado
+- [ ] Disponibilidade atualizada
 
 ## Materiais para download
 - PDF do módulo
-- Templates
-- Planilha
+- Planilha de precificação
 
 ## Ferramentas recomendadas
-- Ferramenta 1
-- Ferramenta 2
-- Ferramenta 3
+- Planilha de preços
+- Apps de temporada
+- PriceLabs
 
 ## Prompt de IA
-Prompt para acelerar tarefas deste módulo.
+"Atue como gestor de temporada no litoral. Monte uma estratégia de preços para este imóvel: [dados do imóvel]."

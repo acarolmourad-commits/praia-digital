@@ -14,7 +14,7 @@
 - Nenhum no momento
 
 ## Próximo Curso
-- Airbnb do Zero no Litoral
+- Booking do Zero no Litoral
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.
