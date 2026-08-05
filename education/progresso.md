@@ -34,12 +34,13 @@
 - Guia do Investidor Imobiliário Avançado — PRONTO PARA VENDA
 - Documentação Completa para Imóveis no Litoral — PRONTO PARA VENDA
 - Captação de Imóveis para Corretores — PRONTO PARA VENDA
+- Análise de Mercado Imobiliário no Litoral — PRONTO PARA VENDA
 
 ## Em Produção
 - Nenhum no momento
 
 ## Próximo Curso
-- Análise de Mercado Imobiliário no Litoral
+- Gestão de Locação no Litoral
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.
