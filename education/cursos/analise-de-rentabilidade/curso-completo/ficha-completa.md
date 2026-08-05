@@ -1,49 +1,49 @@
 # Curso: Análise de Rentabilidade
 ## Nome Comercial
-**Análise de Rentabilidade: Método Prático para Análise de rentabilidade, roi e decisão de investimento**
+**Análise de Rentabilidade: Método Prático para Avaliar Investimentos Imobiliários com Dados e Decisão Segura**
 
 ## Subtítulo
-Do diagnóstico ao resultado: aprenda a aplicar método, evitar erros e crescer no mercado imobiliário do litoral.
+Do número à decisão: aprenda a analisar rentabilidade, comparar oportunidades e investir no litoral com segurança.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de aplicar um método prático para análise de rentabilidade, ROI e decisão de investimento.
+Em até 20 dias, você será capaz de analisar investimentos imobiliários no litoral com método, comparar oportunidades e tomar decisões seguras.
 
 ## Público-alvo
-- Proprietários de imóveis no litoral
-- Investidores que querem aumentar retorno
-- Corretores que querem se especializar
-- Interesse: imóveis, litoral, investimento, temporada, rentabilidade
+- Proprietários que querem comprar para investimento
+- Investidores iniciantes e intermediários
+- Corretores que querem oferecer consultoria de rentabilidade
+- Interesse: investimento, ROI, análise, imóveis, litoral
 
 ## Pré-requisitos
-Nenhum. Curso completo do zero ao resultado.
+Nenhum. Curso completo do diagnóstico à decisão de investimento.
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
-4 horas de aulas
+4 horas de aulas (20 aulas de 10 a 16 min)
 Total: 4 horas
 
 ## Valor Sugerido
 Curso completo: R$ 197
-À vista: R$ 197
-Parcelado: 12x de R$ 16,42
+À vista: R$ 167
+Parcelado: 12x de R$ 13,92
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist do curso
-- Planilha de acompanhamento
-- Modelos prontos
+- Checklist de análise
+- Planilha de rentabilidade
+- Modelos de relatório
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Analise investimentos imobiliários com método e decisão baseada em dados"**
+**"Analise investimentos imobiliários no litoral com método e decida com segurança"**
 
 ## Big Idea
-Resultados no litoral dependem de método, dados e execução consistente.
+Investir no litoral exige análise de dados, comparação de oportunidades e decisão baseada em métricas claras, não em achismo.
 
 ## Oferta
 - **Curso completo:** R$ 197
@@ -53,84 +53,84 @@ Resultados no litoral dependem de método, dados e execução consistente.
 ## Avatar
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
-**Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** análise de rentabilidade, ROI e decisão de investimento
-**Dificuldades:** falta de método, insegurança, resultado baixo
-**Desejos:** crescimento, tranquilidade, autoridade
+**Renda:** R$ 5k a R$ 25k/mês
+**Objetivo:** investir com segurança no litoral
+**Dificuldades:** falta de método, insegurança, dados confusos
+**Desejos:** decisão segura, rentabilidade, crescimento
 
 ## Dores
 - Falta de método
-- Insegurança
-- Resultado baixo
+- Insegurança para decidir
+- Dados confusos
+- Medo de errar
 - Falta de clareza
-- Tempo limitado
 
 ## Desejos
+- Decisão segura
+- Rentabilidade
 - Crescimento
 - Tranquilidade
 - Autoridade
-- Previsibilidade
-- Resultado
 
 ## Objeções
-- "Não compensa"
-- "É complicado"
-- "Não tenho tempo"
+- "Mercado perigoso"
+- "Preço alto"
+- "Não tenho dados"
 - "Vou errar"
-- "Não funciona"
+- "Não compensa"
 
 ## Transformação
-- Método aplicado
-- Resultado crescente
+- Análise estruturada
 - Decisão orientada por dados
-- Operação profissional
+- Rentabilidade planejada
+- Segurança na escolha
 - Tranquilidade
 
 ## Programa Completo
-### Módulo 1 — Fundamentos
-Aula 1.1 — Contexto e oportunidades
-Aula 1.2 — Perfil e objetivos
-Aula 1.3 — Métricas e metas
-Exercício: diagnóstico
+### Módulo 1 — Fundamentos da Análise
+Aula 1.1 — O que é análise de rentabilidade
+Aula 1.2 — Métricas essenciais
+Aula 1.3 — Perfil do investidor
+Exercício: diagnóstico de investimento
 
-### Módulo 2 — Aplicação Prática
-Aula 2.1 — Passo a passo prático
-Aula 2.2 — Exemplos reais
-Aula 2.3 — Erros comuns
-Exercício: aplicação
+### Módulo 2 — Dados e Comparáveis
+Aula 2.1 — Como obter dados do imóvel
+Aula 2.2 — Comparáveis no litoral
+Aula 2.3 — Análise de mercado
+Exercício: análise comparativa
 
-### Módulo 3 — Estratégia
-Aula 3.1 — Planejamento
-Aula 3.2 — Decisão e priorização
-Aula 3.3 — Execução
-Exercício: plano
+### Módulo 3 — Cálculo e Decisão
+Aula 3.1 — ROI e payback
+Aula 3.2 — Cenários e riscos
+Aula 3.3 — Decisão de investimento
+Exercício: cálculo de ROI
 
-### Módulo 4 — Crescimento
-Aula 4.1 — Acompanhamento
-Aula 4.2 — Ajustes
-Aula 4.3 — Escala
-Exercício: escala
+### Módulo 4 — Acompanhamento e Ajuste
+Aula 4.1 — Acompanhamento de resultados
+Aula 4.2 — Ajustes de estratégia
+Aula 4.3 — Crescimento sustentado
+Exercício: plano de acompanhamento
 
 ## Carga Horária
 4 horas
 
 ## Material Complementar
-- Checklist
-- Planilha
-- Modelos
+- Checklist de análise
+- Planilha de rentabilidade
+- Modelos de relatório
 - PDFs por módulo
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de diagnóstico
-- Checklist de aplicação
-- Checklist de estratégia
-- Checklist de escala
+- Checklist de análise
+- Checklist de comparáveis
+- Checklist de decisão
+- Checklist de acompanhamento
 
 ## Planilhas
-- Planilha de acompanhamento
-- Planilha de métricas
+- Planilha de rentabilidade
+- Planilha de comparáveis
 - Planilha de ROI
 
 ## Modelos Prontos
@@ -139,21 +139,21 @@ Exercício: escala
 - Modelo de revisão
 
 ## Scripts
-- Script de atendimento
-- Script de negociação
+- Script de análise
+- Script de decisão
 
 ## Prompt de IA
-Prompt para gerar análises e planos.
+Prompt para gerar análises e relatórios.
 
 ## Exercícios
-- Exercício 1: diagnóstico
-- Exercício 2: aplicação
-- Exercício 3: plano
-- Exercício 4: escala
+- Exercício 1: diagnóstico de investimento
+- Exercício 2: análise comparativa
+- Exercício 3: cálculo de ROI
+- Exercício 4: plano de acompanhamento
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: aplicação do método
+Prova prática: análise de investimento aplicada
 
 ## FAQ
 1. Preciso de experiência? Não.
@@ -193,7 +193,7 @@ Prova prática: aplicação do método
 [marketing/google-ads.md]
 
 ## CTA
-"Aplique o método agora."
+"Analise investimentos no litoral com método agora."
 
 ## Upsell
 - Mentoria individual: R$ 1.500
@@ -204,4 +204,6 @@ Prova prática: aplicação do método
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Cursos complementares Praia Digital
+- Curso de Investindo em Imóveis no Litoral
+- Curso de Como Aumentar em 30% a Rentabilidade
+- Curso de Gestão Profissional da Locação

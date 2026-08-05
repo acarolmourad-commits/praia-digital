@@ -1,48 +1,80 @@
-# Módulo 2 — Aplicação Prática
+# Módulo 2 — Dados e Comparáveis
 
 ## Introdução
-Aplique o método na prática com exemplos reais e evite erros comuns.
+Aprenda a obter dados do imóvel, comparar oportunidades no litoral e analisar mercado para tomar decisões baseadas em dados reais.
 
-## Aula 2.1 — Passo a passo prático
-- Etapas claras
-- Ação imediata
-- Verificação de resultado
+## Aula 2.1 — Como obter dados do imóvel
+**Dados essenciais:**
+- Valor de compra.
+- Custos de reforma.
+- IPTU e condomínio.
+- Receita estimada.
+- Custos operacionais.
 
-**Exemplo real:** Profissional aplicou o passo a passo e obteve ganhos rápidos em 15 dias.
+**Fontes:**
+- Portais de imóveis.
+- Registro de imóveis.
+- Prefeitura municipal.
+- Anúncios locais.
 
-## Aula 2.2 — Exemplos reais
-- Caso 1
-- Caso 2
-- Lições aplicáveis
+**Exemplo real:**
+Investidor consultou 5 portais e 3 comparáveis e definiu preço justo para um apartamento em Praia Grande.
 
-**Estudo de caso:** Aplicação prática gerou aumento mensurável em 30 dias.
+## Aula 2.2 — Comparáveis no litoral
+**Critérios:**
+- Localização: mesma cidade e bairro.
+- Tipo: casa, apartamento, terreno.
+- Área e quartos.
+- Estado de conservação.
+- Potencial de temporada.
 
-## Aula 2.3 — Erros comuns
-- Erro 1
-- Erro 2
-- Erro 3
-- Como evitar
+**Tabela de comparáveis:**
+| Imóvel | Preço | Área | Quartos | Localização | Potencial |
+| A | R$ 280 mil | 70m² | 2 | Praia Grande | Alto |
+| B | R$ 260 mil | 65m² | 2 | Praia Grande | Médio |
+| C | R$ 310 mil | 80m² | 3 | Praia Grande | Alto |
+
+**Exemplo real:**
+Investidor escolheu o imóvel A por custo-benefício e potencial de temporada.
+
+## Aula 2.3 — Análise de mercado
+**Fatores de mercado:**
+- Acesso rodoviário.
+- Infraestrutura local.
+- Eventos e temporada.
+- Valorização histórica.
+
+**Análise SWOT:**
+- Forças: localização, acesso, documentação.
+- Fraquezas: reforma, custos, sazonalidade.
+- Oportunidades: temporada, eventos, digital nomads.
+- Ameaças: concorrência, alagamentos, IPTU alto.
+
+**Estudo de caso:**
+Investidor analisou mercado de São Vicente e identificou oportunidade em imóvel próximo ao acesso, com valorização de 15% em 2 anos.
 
 ## Exercício
-Aplique o método em um cenário real.
+Faça uma análise comparativa de 3 imóveis no litoral.
 
 ## Resumo
-- Passo a passo reduz risco
-- Exemplos aceleram aprendizado
-- Erros evitados poupam tempo
+- Dados reduzem risco.
+- Comparáveis evitam overpricing.
+- Mercado orienta decisão.
 
 ## Checklist
-- [ ] Passos executados
-- [ ] Resultados verificados
-- [ ] Ajustes aplicados
+- [ ] Dados coletados
+- [ ] Comparáveis analisados
+- [ ] Mercado mapeado
+- [ ] Decisão preparada
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de aplicação
+- Planilha de comparáveis
 
 ## Ferramentas recomendadas
-- Planilha de acompanhamento
-- App de gestão
+- Portais de imóveis
+- Google Maps
+- Planilha de análise
 
 ## Prompt de IA
-"Atue como especialista prático. Monte um plano de aplicação para este cenário: [dados]."
+"Atue como analista de investimentos imobiliários. Compare estes 3 imóveis e sugira o melhor para investimento: [dados]."

@@ -1,6 +1,9 @@
 # Checklist — Análise de Rentabilidade
-- [ ] Diagnóstico realizado
-- [ ] Objetivos definidos
-- [ ] Aplicação executada
-- [ ] Estratégia traçada
-- [ ] Escala planejada
+- [ ] Dados reunidos
+- [ ] Comparáveis analisados
+- [ ] ROI calculado
+- [ ] Cenários simulados
+- [ ] Riscos avaliados
+- [ ] Decisão tomada
+- [ ] Acompanhamento definido
+- [ ] Ajustes planejados

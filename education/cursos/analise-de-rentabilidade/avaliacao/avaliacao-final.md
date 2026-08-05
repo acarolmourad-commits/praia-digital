@@ -1,9 +1,9 @@
 # Avaliação Final — Análise de Rentabilidade
 ## Quiz
-- 20 perguntas sobre fundamentos, aplicação, estratégia e crescimento.
+- 20 perguntas sobre análise, comparáveis, ROI, payback e decisão de investimento.
 
 ## Prova Prática
-- Aplicação do método em cenário real.
+- Análise de um imóvel real com proposta de investimento.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.
