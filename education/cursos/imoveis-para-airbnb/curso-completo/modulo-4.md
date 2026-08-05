@@ -1,49 +1,54 @@
-# Módulo 4 — Crescimento
+# Módulo 4 — Renda e Escala
 
 ## Introdução
-Acompanhe resultados, ajuste estratégias e escale sem perder controle.
+Acompanhe renda, ajuste precificação e escale imóveis no Airbnb no litoral.
 
-## Aula 4.1 — Acompanhamento
-- Métricas
-- Frequência
-- Formato
-- Aprendizado
+## Aula 4.1 — Precificação avançada
+**Precificação:**
+- Temporada.
+- Ocupação.
+- Comparação.
 
-**Exemplo real:** Acompanhamento semanal permitiu ajustes rápidos e crescimento contínuo.
+**Exemplo real:**
+Dono ajustou preço e aumentou lucro.
 
-## Aula 4.2 — Ajustes
-- Quando ajustar
-- Como ajustar
-- Validação
+## Aula 4.2 — Métricas e ajustes
+**Métricas:**
+- Ocupação.
+- Renda.
+- Avaliação.
 
-**Estudo de caso:** Ajustes pontuais aumentaram resultado sem aumentar esforço.
+**Ajustes:**
+- Revise semanalmente.
+- Teste novas abordagens.
 
 ## Aula 4.3 — Escala
-- Processos
-- Fornecedores/parcerias
-- Crescimento gradual
+**Escala:**
+- Adicione imóveis gradualmente.
+- Mantenha qualidade.
+- Padronize processos.
 
-## Exercício
-Monte um plano de escala sustentada.
+**Exercício:**
+Monte um plano de crescimento para os próximos 90 dias.
 
 ## Resumo
-- Acompanhamento mantém direção
-- Ajustes preservam resultado
-- Escala depende de processo
+- Precificação equilibra renda.
+- Métricas orientam ajustes.
+- Escala depende de método.
 
 ## Checklist
-- [ ] Métricas revisadas
-- [ ] Ajustes aplicados
-- [ ] Escala planejada
+- [ ] Precificação revisada
+- [ ] Métricas acompanhadas
+- [ ] Crescimento planejado
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de acompanhamento
+- Planilha de precificação
 
 ## Ferramentas recomendadas
-- Dashboard
+- Airbnb
 - Planilha
-- Sistema de gestão
+- Automação
 
 ## Prompt de IA
-"Atue como especialista em crescimento. Monte um plano de escala para este cenário: [dados]."
+"Atue como especialista em Airbnb no litoral. Monte um plano de crescimento para este cenário: [dados]."
