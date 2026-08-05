@@ -29,12 +29,13 @@
 - Comprar Imóvel na Praia sem Golpes — PRONTO PARA VENDA
 - Imóveis para Airbnb — PRONTO PARA VENDA
 - Instagram para Corretores — PRONTO PARA VENDA
+- Financiamento Imobiliário — PRONTO PARA VENDA
 
 ## Em Produção
 - Nenhum no momento
 
 ## Próximo Curso
-- Financiamento do Primeiro Imóvel
+- Flipping Completo
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.
