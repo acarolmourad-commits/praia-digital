@@ -1,4 +1,4 @@
-# Roteiro YouTube — Comprar Imóvel na Praia Sem Golpes
+# Roteiro YouTube — Comprar Imóvel na Praia sem Golpes
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado
