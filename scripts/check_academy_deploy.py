@@ -75,6 +75,21 @@ def main():
     checks.append(("/auth/register", code == 200))
     print(f"/auth/register: {code} -> {checks[-1][1]}")
 
+    # monitoring
+    code, body = fetch(base + "/monitoring/status")
+    checks.append(("/monitoring/status", code == 200 and '"checks"' in body))
+    print(f"/monitoring/status: {code} -> {checks[-1][1]}")
+
+    # public checkout stub
+    code, body = fetch(base + "/payments/checkout", method="POST", payload={
+        "items": [{"course_id": 1, "quantity": 1}],
+        "buyer_name": "Deploy Check",
+        "buyer_email": "deploy-check@example.com",
+        "buyer_document": "12345678900",
+    })
+    checks.append(("/payments/checkout", code == 200 and '"status":"pending"' in body.replace(' ', '')))
+    print(f"/payments/checkout: {code} -> {checks[-1][1]}")
+
     print("\nRESULTADO:")
     for name, ok in checks:
         print(f"  {'OK' if ok else 'FAIL'} {name}")

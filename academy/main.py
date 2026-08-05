@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pathlib import Path
 from academy.core.database import engine, Base
-from academy.routers import auth, courses, academy, admin, payments, recommendations, automation, automation_whatsapp, certificates
+from academy.routers import auth, courses, academy, admin, payments, recommendations, automation, automation_whatsapp, certificates, monitoring
 import os
 
 Base.metadata.create_all(bind=engine)
@@ -34,6 +34,7 @@ app.include_router(recommendations.router)
 app.include_router(automation.router)
 app.include_router(automation_whatsapp.router)
 app.include_router(certificates.router)
+app.include_router(monitoring.router)
 
 # Servir área do aluno como frontend
 frontend_dir = Path(__file__).resolve().parent.parent / "education" / "aluno"
