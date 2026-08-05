@@ -1,33 +1,56 @@
-# Módulo 3 — Conteúdo Premium
-## Aula 3.1 — Introdução ao módulo
-Conteúdo: visão geral, objetivo, aplicação prática no litoral.
+# Módulo 3 — Documentação e Negociação
 
-## Aula 3.2 — Conceitos aplicados
-Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
+## Introdução
+Domine a documentação, financiamento e negociação para fechar o melhor negócio com segurança.
 
-## Aula 3.3 — Estudo de caso
-Conteúdo: caso real, análise, lições.
+## Aula 3.1 — Documentação essencial
+- Matrícula atualizada
+- IPTU em dia
+- Certidão de ônus
+- Declaração de área
+- Habite-se
+
+**Exemplo real:** Investidor descobriu IPTU atrasado de R$ 12 mil e negociou desconto no valor do imóvel.
+
+## Aula 3.2 — Financiamento e entrada
+- Financiamento tradicional
+- FGTS
+- Entrada mínima
+- Parcelamento direto
+
+**Estudo de caso:** Casal usou FGTS + entrada de 30% e financiou o restante. Em 2 anos, o imóvel já valorizou acima do custo do financiamento.
+
+## Aula 3.3 — Negociação e fechamento
+- Pesquise o valor de mercado
+- Use defeitos como argumento
+- Negocie prazos e condições
+- Documente tudo
 
 ## Exercício
-Aplicação prática no seu contexto.
+Revise a documentação de um imóvel de exemplo e simule uma negociação.
 
 ## Resumo
-Pontos-chave para revisão.
+- Documentação evita surpresas
+- Financiamento exige planejamento
+- Negociação bem feita aumenta rentabilidade
 
 ## Checklist
-- [ ] Conceitos entendidos
-- [ ] Caso analisado
-- [ ] Exercício aplicado
+- [ ] Matrícula verificada
+- [ ] IPTU em dia
+- [ ] Financiamento aprovado
+- [ ] Proposta elaborada
+- [ ] Contrato revisado
 
 ## Materiais para download
 - PDF do módulo
-- Templates
-- Planilha
+- Modelo de proposta
+- Modelo de contrato
+- Checklist de documentação
 
 ## Ferramentas recomendadas
-- Ferramenta 1
-- Ferramenta 2
-- Ferramenta 3
+- Registro de imóveis
+- Prefeitura municipal
+- Bancos
 
 ## Prompt de IA
-Prompt para acelerar tarefas deste módulo.
+"Atue como advogado imobiliário especializado no litoral paulista. Verifique se esta documentação está completa e aponte riscos: [dados do imóvel]."

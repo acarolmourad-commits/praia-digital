@@ -1,5 +1,5 @@
-# Meta Ads — investindo-imoveis-litoral
-Público: 25 a 55 anos, interesse no tema, litoral
+# Meta Ads — Investindo em Imóveis no Litoral
+Público: 25 a 55 anos, interesse em imóveis, litoral, investimento
 Objetivo: leads
 Formato: vídeo + carrossel
 Orçamento sugerido: R$ 40 a R$ 120/dia

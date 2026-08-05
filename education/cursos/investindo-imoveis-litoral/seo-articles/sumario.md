@@ -1,11 +1,11 @@
-# Artigos SEO — Investindo Imoveis Litoral
-1. Investindo Imoveis Litoral em 2026
-2. Como aplicar investindo imoveis litoral no litoral
-3. Resultados reais de investindo imoveis litoral
-4. Método passo a passo de investindo imoveis litoral
-5. Erros comuns em investindo imoveis litoral
-6. Ferramentas para investindo imoveis litoral
-7. Cases de investindo imoveis litoral no litoral
-8. Como medir resultado em investindo imoveis litoral
-9. Como começar em investindo imoveis litoral
-10. FAQ sobre investindo imoveis litoral
+# Artigos SEO — Investindo em Imóveis no Litoral
+1. Como investir em imóveis no litoral paulista em 2026
+2. Guia para comprar primeiro imóvel no litoral
+3. Documentação para compra de imóvel no litoral
+4. Como avaliar valor de imóvel no litoral
+5. Melhores cidades para investir no litoral paulista
+6. Locação por temporada no litoral: guia completo
+7. ROI de imóveis no litoral: como calcular
+8. Erros comuns na compra de imóvel no litoral
+9. Reforma de imóvel no litoral: onde investir
+10. Financiamento de imóvel no litoral: passo a passo

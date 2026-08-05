@@ -1,5 +1,12 @@
-# Planilha — Investindo Imoveis Litoral
+# Planilha — Investindo em Imóveis no Litoral
 - [ ] Data
-- [ ] Ação
-- [ ] Resultado
-- [ ] Observação
+- [ ] Imóvel
+- [ ] Cidade
+- [ ] Preço
+- [ ] Área
+- [ ] Quartos
+- [ ] IPTU
+- [ ] Condomínio
+- [ ] Potencial de temporada
+- [ ] ROI estimado
+- [ ] Status

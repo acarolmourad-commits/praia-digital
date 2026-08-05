@@ -1,33 +1,50 @@
-# Módulo 2 — Conteúdo Premium
-## Aula 2.1 — Introdução ao módulo
-Conteúdo: visão geral, objetivo, aplicação prática no litoral.
+# Módulo 2 — Escolha e Avaliação do Imóvel
 
-## Aula 2.2 — Conceitos aplicados
-Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
+## Introdução
+Aprenda a escolher o imóvel certo com base em localização, tipo, valor e potencial de rentabilidade.
 
-## Aula 2.3 — Estudo de caso
-Conteúdo: caso real, análise, lições.
+## Aula 2.1 — Tipos de imóvel: casa, apartamento, terreno
+- Casa: maior privacidade, custo de manutenção maior.
+- Apartamento: menor manutenção, condomínio.
+- Terreno: potencial de valorização, construção.
+
+**Exemplo real:** Casa em Bertioga com piscina rende mais no verão; apartamento em Santos tem demanda constante.
+
+## Aula 2.2 — Localização: cidade, bairro, acesso
+- Orla: valorização alta, preço elevado.
+- Bairros próximos: valorização média, acesso rápido.
+- Regiões afastadas: preço menor, demanda sazonal.
+
+**Estudo de caso:** Imóvel em São Vicente, perto do acesso, valorizou 15% em 2 anos com abertura de novo empreendimento.
+
+## Aula 2.3 — Avaliação de valor e comparáveis
+- Consulte 3 imóveis similares na região.
+- Considere IPTU, condomínio, estado de conservação.
+- Avalie potencial de reforma.
 
 ## Exercício
-Aplicação prática no seu contexto.
+Selecione 3 imóveis na sua região preferida e compare: preço, localização, estado, potencial.
 
 ## Resumo
-Pontos-chave para revisão.
+- Tipo de imóvel define perfil de uso
+- Localização é o maior diferencial
+- Comparáveis evitam overpricing
 
 ## Checklist
-- [ ] Conceitos entendidos
-- [ ] Caso analisado
-- [ ] Exercício aplicado
+- [ ] Tipo definido
+- [ ] Região escolhida
+- [ ] 3 comparáveis analisados
+- [ ] Potencial avaliado
+- [ ] Orçamento confirmado
 
 ## Materiais para download
 - PDF do módulo
-- Templates
-- Planilha
+- Planilha de comparáveis
 
 ## Ferramentas recomendadas
-- Ferramenta 1
-- Ferramenta 2
-- Ferramenta 3
+- Portais de imóveis
+- Google Maps
+- Consulta de IPTU
 
 ## Prompt de IA
-Prompt para acelerar tarefas deste módulo.
+"Atue como avaliador de imóveis no litoral paulista. Compare estes 3 imóveis e diga qual tem melhor custo-benefício para investimento em temporada: [dados dos imóveis]."
