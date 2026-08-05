@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — Área do Aluno — Praia Digital Academy</title>
+  <meta name="description" content="Faça login na área do aluno da Praia Digital Academy para acessar seus cursos.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://praia.digital/education/aluno/login.html">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://unpkg.com/axios@1.7.7/dist/axios.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { bg: '#0b1220', accent: '#00b4d8', surface: '#111827', text: '#e5e7eb' }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-bg text-brand-text min-h-screen flex items-center justify-center">
+  <div class="bg-brand-surface p-8 rounded border border-gray-800 w-full max-w-md">
+    <h1 class="text-2xl font-bold text-white mb-2">Área do Aluno</h1>
+    <p class="text-gray-400 mb-6">Entre com seu e-mail e senha.</p>
+    <form id="loginForm" class="space-y-4">
+      <div>
+        <label class="block text-sm text-gray-300 mb-1">E-mail</label>
+        <input id="email" type="email" required class="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-white" />
+      </div>
+      <div>
+        <label class="block text-sm text-gray-300 mb-1">Senha</label>
+        <input id="password" type="password" required minlength="6" class="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-white" />
+      </div>
+      <button type="submit" class="w-full bg-brand-accent text-black font-bold py-2 rounded">Entrar</button>
+      <p id="error" class="text-red-400 text-sm hidden"></p>
+    </form>
+    <p class="text-gray-400 text-sm mt-4">Ainda não tem conta? <a href="/education/index.html" class="text-brand-accent">Ver cursos</a>.</p>
+  </div>
+
+  <script>
+    const apiBase = '/academy';
+    document.getElementById('loginForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const errorEl = document.getElementById('error');
+      try {
+        const res = await axios.post(apiBase + '/auth/login', { email, password });
+        const token = res.data.access_token;
+        localStorage.setItem('academy_token', token);
+        window.location.href = '/education/aluno/index.html';
+      } catch (err) {
+        errorEl.textContent = err.response?.data?.detail || 'Erro ao entrar.';
+        errorEl.classList.remove('hidden');
+      }
+    });
+  </script>
+</body>
+</html>

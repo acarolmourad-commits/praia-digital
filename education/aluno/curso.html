@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player — Praia Digital Academy</title>
+  <meta name="description" content="Player de aulas e materiais da Praia Digital Academy.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://praia.digital/education/aluno/curso.html">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://unpkg.com/axios@1.7.7/dist/axios.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { bg: '#0b1220', accent: '#00b4d8', surface: '#111827', text: '#e5e7eb' }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-bg text-brand-text min-h-screen">
+  <nav class="bg-brand-surface border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="/education/aluno/index.html" class="text-white font-bold text-xl">Praia Digital Academy</a>
+      <button onclick="logout()" class="bg-brand-accent text-black px-3 py-1.5 rounded text-sm font-semibold">Sair</button>
+    </div>
+  </nav>
+
+  <main class="max-w-7xl mx-auto px-4 py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div class="lg:col-span-2 bg-brand-surface p-6 rounded border border-gray-800">
+        <h1 id="courseTitle" class="text-2xl font-bold text-white mb-4">Carregando...</h1>
+        <div id="lessonArea" class="space-y-4">
+          <p class="text-gray-400">Selecione uma aula na lista ao lado.</p>
+        </div>
+      </div>
+      <aside class="bg-brand-surface p-4 rounded border border-gray-800">
+        <h2 class="text-white font-semibold mb-3">Módulos e aulas</h2>
+        <div id="modulesList" class="space-y-3"></div>
+      </aside>
+    </div>
+  </main>
+
+  <script>
+    const token = localStorage.getItem('academy_token');
+    const apiBase = '/academy';
+    const params = new URLSearchParams(window.location.search);
+    const courseId = params.get('id');
+    const enrollmentId = params.get('enrollment_id');
+
+    async function api(path, opts = {}) {
+      const headers = { ...(opts.headers || {}) };
+      if (token) headers['Authorization'] = `Bearer ${token}`;
+      const res = await axios.get(apiBase + path, { headers });
+      return res.data;
+    }
+
+    async function loadCourse() {
+      const data = await api(`/courses/${courseId}`);
+      document.getElementById('courseTitle').textContent = data.title || 'Curso';
+      const modules = data.modules || [];
+      const container = document.getElementById('modulesList');
+      container.innerHTML = '';
+      for (const module of modules) {
+        const moduleEl = document.createElement('div');
+        moduleEl.innerHTML = `<h3 class="text-white font-semibold">${module.title}</h3>`;
+        const lessonsEl = document.createElement('div');
+        lessonsEl.className = 'ml-3 mt-2 space-y-2';
+        for (const lesson of (module.lessons || [])) {
+          const lessonEl = document.createElement('button');
+          lessonEl.className = 'block w-full text-left text-gray-300 hover:text-white text-sm';
+          lessonEl.textContent = lesson.title;
+          lessonEl.onclick = () => loadLesson(lesson, moduleEl);
+          lessonsEl.appendChild(lessonEl);
+        }
+        moduleEl.appendChild(lessonsEl);
+        container.appendChild(moduleEl);
+      }
+    }
+
+    async function loadLesson(lesson, moduleEl) {
+      const area = document.getElementById('lessonArea');
+      area.innerHTML = `
+        <div class="bg-gray-900 p-4 rounded border border-gray-800">
+          <h3 class="text-white text-xl font-semibold mb-2">${lesson.title}</h3>
+          <p class="text-gray-300 mb-4">Conteúdo do tipo: ${lesson.content_type}. Duração: ${lesson.duration_minutes || '—'} min.</p>
+          <button id="completeBtn" class="bg-brand-accent text-black px-4 py-2 rounded font-semibold text-sm">Marcar como concluída</button>
+          <p id="completeStatus" class="text-green-400 text-sm mt-2 hidden">Aula concluída!</p>
+        </div>
+      `;
+      document.getElementById('completeBtn').onclick = async () => {
+        await axios.post(apiBase + `/academy/me/progress/${lesson.id}/complete`, null, { headers: { Authorization: `Bearer ${token}` } });
+        document.getElementById('completeStatus').classList.remove('hidden');
+      };
+    }
+
+    function logout() {
+      localStorage.removeItem('academy_token');
+      window.location.href = '/education/aluno/login.html';
+    }
+
+    document.addEventListener('DOMContentLoaded', loadCourse);
+  </script>
+</body>
+</html>
