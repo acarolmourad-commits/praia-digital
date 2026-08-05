@@ -1,21 +1,21 @@
-# Sequência de E-mails — Booking Do Zero
+# Sequência de E-mails — Booking do Zero no Litoral
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido sobre Booking Do Zero (PDF)
+Assunto: Guia Rápido de Booking no Litoral (PDF + planilha)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case prático de Booking Do Zero
+Assunto: Case: Booking no litoral
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Booking Do Zero é para mim?"
+Assunto: "Booking dá muito trabalho?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno obteve resultado com Booking Do Zero
+Assunto: Aluno fez a primeira reserva em 10 dias
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 
