@@ -1,52 +1,52 @@
-# Curso: WhatsApp que Vende no Litoral
+# Curso: WhatsApp que Vende
 ## Nome Comercial
-**WhatsApp que Vende no Litoral: Método Prático para Whatsapp, atendimento, follow-up e vendas**
+**WhatsApp que Vende: Método Prático para Usar WhatsApp no Mercado Imobiliário e Aumentar Vendas no Litoral**
 
 ## Subtítulo
-Do diagnóstico ao resultado: aprenda a aplicar método, evitar erros e crescer no mercado imobiliário do litoral.
+Do contato ao fechamento: aprenda a usar WhatsApp no mercado imobiliário do litoral com método.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de aplicar um método prático para WhatsApp, atendimento, follow-up e vendas.
+Em até 15 dias, você será capaz de usar WhatsApp para atender leads, fazer follow-up e fechar mais vendas no litoral.
 
 ## Público-alvo
-- Proprietários de imóveis no litoral
-- Investidores que querem aumentar retorno
-- Corretores que querem se especializar
-- Interesse: imóveis, litoral, investimento, temporada, rentabilidade
+- Corretores de imóveis iniciantes e intermediários
+- Donos de imobiliárias
+- Investidores que querem vender mais
+- Interesse: WhatsApp, imóveis, litoral, vendas, atendimento
 
 ## Pré-requisitos
-Nenhum. Curso completo do zero ao resultado.
+Nenhum. Curso completo do zero à aplicação prática.
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
-5 horas de aulas
-Total: 5 horas
+4 horas de aulas (20 aulas de 10 a 16 min)
+Total: 4 horas
 
 ## Valor Sugerido
-Curso completo: R$ 247
-À vista: R$ 247
-Parcelado: 12x de R$ 20,58
+Curso completo: R$ 197
+À vista: R$ 167
+Parcelado: 12x de R$ 13,92
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist do curso
-- Planilha de acompanhamento
-- Modelos prontos
+- Checklist de WhatsApp
+- Planilha de atendimento
+- Modelos de mensagem
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Use WhatsApp para captar leads, atender e vender imóveis no litoral com método"**
+**"Use WhatsApp no mercado imobiliário do litoral e venda mais"**
 
 ## Big Idea
-Resultados no litoral dependem de método, dados e execução consistente.
+WhatsApp aplicado ao mercado imobiliário combina atendimento rápido, follow-up estruturado e mensagens persuasivas para aumentar vendas.
 
 ## Oferta
-- **Curso completo:** R$ 247
+- **Curso completo:** R$ 197
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
@@ -54,106 +54,105 @@ Resultados no litoral dependem de método, dados e execução consistente.
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** WhatsApp, atendimento, follow-up e vendas
-**Dificuldades:** falta de método, insegurança, resultado baixo
-**Desejos:** crescimento, tranquilidade, autoridade
+**Objetivo:** vender mais com WhatsApp
+**Dificuldades:** atendimento lento, follow-up fraco, mensagens genéricas
+**Desejos:** crescimento, produtividade, autoridade
 
 ## Dores
+- Atendimento lento
+- Follow-up fraco
+- Mensagens genéricas
+- Concorrência alta
 - Falta de método
-- Insegurança
-- Resultado baixo
-- Falta de clareza
-- Tempo limitado
 
 ## Desejos
 - Crescimento
-- Tranquilidade
+- Produtividade
 - Autoridade
 - Previsibilidade
-- Resultado
+- Escala
 
 ## Objeções
+- "WhatsApp é informal"
+- "Demora muito"
 - "Não compensa"
-- "É complicado"
-- "Não tenho tempo"
 - "Vou errar"
-- "Não funciona"
+- "É complicado"
 
 ## Transformação
-- Método aplicado
-- Resultado crescente
-- Decisão orientada por dados
-- Operação profissional
-- Tranquilidade
+- Atendimento rápido
+- Follow-up eficiente
+- Vendas recorrentes
+- Crescimento previsível
+- Autoridade local
 
 ## Programa Completo
-### Módulo 1 — Fundamentos
-Aula 1.1 — Contexto e oportunidades
-Aula 1.2 — Perfil e objetivos
-Aula 1.3 — Métricas e metas
-Exercício: diagnóstico
+### Módulo 1 — Fundamentos do WhatsApp no Imobiliário
+Aula 1.1 — O que é WhatsApp no imobiliário
+Aula 1.2 — Perfil do corretor
+Aula 1.3 — Método e metas
+Exercício: diagnóstico de WhatsApp
 
-### Módulo 2 — Aplicação Prática
-Aula 2.1 — Passo a passo prático
-Aula 2.2 — Exemplos reais
-Aula 2.3 — Erros comuns
-Exercício: aplicação
+### Módulo 2 — Atendimento e Follow-up
+Aula 2.1 — Atendimento estruturado
+Aula 2.2 — Follow-up eficiente
+Aula 2.3 — Mensagens persuasivas
+Exercício: plano de atendimento
 
-### Módulo 3 — Estratégia
-Aula 3.1 — Planejamento
-Aula 3.2 — Decisão e priorização
-Aula 3.3 — Execução
-Exercício: plano
+### Módulo 3 — Automação e Templates
+Aula 3.1 — Automação básica
+Aula 3.2 — Templates de mensagem
+Aula 3.3 — Integrações
+Exercício: templates aplicados
 
-### Módulo 4 — Crescimento
-Aula 4.1 — Acompanhamento
-Aula 4.2 — Ajustes
+### Módulo 4 — Vendas e Crescimento
+Aula 4.1 — Vendas com WhatsApp
+Aula 4.2 — Métricas e ajustes
 Aula 4.3 — Escala
-Exercício: escala
+Exercício: plano de crescimento
 
 ## Carga Horária
-5 horas
+4 horas
 
 ## Material Complementar
-- Checklist
-- Planilha
-- Modelos
+- Checklist de WhatsApp
+- Planilha de atendimento
+- Modelos de mensagem
 - PDFs por módulo
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de diagnóstico
-- Checklist de aplicação
-- Checklist de estratégia
-- Checklist de escala
+- Checklist de WhatsApp
+- Checklist de atendimento
+- Checklist de follow-up
 
 ## Planilhas
-- Planilha de acompanhamento
+- Planilha de atendimento
+- Planilha de follow-up
 - Planilha de métricas
-- Planilha de ROI
 
 ## Modelos Prontos
-- Modelo de relatório
-- Modelo de proposta
-- Modelo de revisão
+- Modelo de mensagem
+- Modelo de follow-up
+- Modelo de atendimento
 
 ## Scripts
 - Script de atendimento
-- Script de negociação
+- Script de venda
 
 ## Prompt de IA
-Prompt para gerar análises e planos.
+Prompt para gerar mensagens e fluxos.
 
 ## Exercícios
-- Exercício 1: diagnóstico
-- Exercício 2: aplicação
-- Exercício 3: plano
-- Exercício 4: escala
+- Exercício 1: diagnóstico de WhatsApp
+- Exercício 2: plano de atendimento
+- Exercício 3: templates aplicados
+- Exercício 4: plano de crescimento
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: aplicação do método
+Prova prática: atendimento aplicado
 
 ## FAQ
 1. Preciso de experiência? Não.
@@ -193,7 +192,7 @@ Prova prática: aplicação do método
 [marketing/google-ads.md]
 
 ## CTA
-"Aplique o método agora."
+"Use WhatsApp para vender mais no litoral agora."
 
 ## Upsell
 - Mentoria individual: R$ 1.500
@@ -204,4 +203,6 @@ Prova prática: aplicação do método
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Cursos complementares Praia Digital
+- Curso de Funil de Vendas para Corretores
+- Curso de Automação Comercial para Corretores
+- Curso de Marketing Imobiliário para Corretores

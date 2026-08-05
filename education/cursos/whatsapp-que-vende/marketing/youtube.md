@@ -1,4 +1,4 @@
-# Roteiro YouTube — WhatsApp que Vende no Litoral
+# Roteiro YouTube — WhatsApp que Vende
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado

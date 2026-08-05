@@ -1,6 +1,6 @@
-# Shorts — WhatsApp que Vende no Litoral
-1. Roteiro: dica rápida
-2. Roteiro: regra simples
-3. Roteiro: resultado em 1 minuto
-4. Roteiro: ajuste simples
-5. Roteiro: case curto
+# Shorts — WhatsApp que Vende
+1. Roteiro: dica de WhatsApp
+2. Roteiro: regra rápida
+3. Roteiro: follow-up em 1 minuto
+4. Roteiro: atendimento simples
+5. Roteiro: case rápido

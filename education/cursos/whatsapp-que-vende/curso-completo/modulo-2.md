@@ -1,48 +1,53 @@
-# Módulo 2 — Aplicação Prática
+# Módulo 2 — Atendimento e Follow-up
 
 ## Introdução
-Aplique o método na prática com exemplos reais e evite erros comuns.
+Aprenda a estruturar atendimento, follow-up e mensagens persuasivas no WhatsApp para corretores no litoral.
 
-## Aula 2.1 — Passo a passo prático
-- Etapas claras
-- Ação imediata
-- Verificação de resultado
+## Aula 2.1 — Atendimento estruturado
+**Atendimento:**
+- Saudação.
+- Qualificação.
+- Apresentação.
 
-**Exemplo real:** Profissional aplicou o passo a passo e obteve ganhos rápidos em 15 dias.
+**Exemplo real:**
+Corretor reduziu tempo de resposta de 4h para 5min.
 
-## Aula 2.2 — Exemplos reais
-- Caso 1
-- Caso 2
-- Lições aplicáveis
+## Aula 2.2 — Follow-up eficiente
+**Follow-up:**
+- Lembretes.
+- Conteúdo.
+- Proposta.
 
-**Estudo de caso:** Aplicação prática gerou aumento mensurável em 30 dias.
+**Exemplo real:**
+Corretor aumentou conversão de 12% para 22%.
 
-## Aula 2.3 — Erros comuns
-- Erro 1
-- Erro 2
-- Erro 3
-- Como evitar
+## Aula 2.3 — Mensagens persuasivas
+**Mensagens:**
+- Curta.
+- Clara.
+- Direta.
 
-## Exercício
-Aplique o método em um cenário real.
+**Exercício:**
+Monte um fluxo de atendimento.
 
 ## Resumo
-- Passo a passo reduz risco
-- Exemplos aceleram aprendizado
-- Erros evitados poupam tempo
+- Atendimento rápido converte.
+- Follow-up fecha negócios.
+- Mensagens persuasivas geram ação.
 
 ## Checklist
-- [ ] Passos executados
-- [ ] Resultados verificados
-- [ ] Ajustes aplicados
+- [ ] Atendimento estruturado
+- [ ] Follow-up criado
+- [ ] Mensagens testadas
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de aplicação
+- Planilha de atendimento
 
 ## Ferramentas recomendadas
-- Planilha de acompanhamento
-- App de gestão
+- WhatsApp Business
+- CRM
+- Automação
 
 ## Prompt de IA
-"Atue como especialista prático. Monte um plano de aplicação para este cenário: [dados]."
+"Atue como especialista em vendas por WhatsApp. Monte um fluxo de atendimento para este cenário: [dados]."

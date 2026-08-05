@@ -1,7 +1,7 @@
-# Certificado — WhatsApp que Vende no Litoral
+# Certificado — WhatsApp que Vende
 Modelo: Praia Digital Academy
-Curso: WhatsApp que Vende no Litoral
-Carga horária: 5 horas
+Curso: WhatsApp que Vende
+Carga horária: 4 horas
 Aprovado: [nome]
 Data: [data]
 Código: [código único]
