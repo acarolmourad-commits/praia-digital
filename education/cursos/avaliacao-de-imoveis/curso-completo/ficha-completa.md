@@ -1,52 +1,52 @@
 # Curso: Avaliação de Imóveis
 ## Nome Comercial
-**Avaliação de Imóveis: Método Prático para Avaliação de imóveis, comparáveis e precificação no litoral**
+**Avaliação de Imóveis no Litoral: Método Prático para Determinar Valores Reais e Aumentar Confiança em Vendas e Investimentos**
 
 ## Subtítulo
-Do diagnóstico ao resultado: aprenda a aplicar método, evitar erros e crescer no mercado imobiliário do litoral.
+Do dado ao laudo: aprenda a avaliar imóveis no litoral com método, comparáveis e segurança.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de aplicar um método prático para avaliação de imóveis, comparáveis e precificação no litoral.
+Em até 20 dias, você será capaz de realizar avaliações imobiliárias no litoral com método, gerar laudos confiáveis e aumentar confiança em vendas e investimentos.
 
 ## Público-alvo
-- Proprietários de imóveis no litoral
-- Investidores que querem aumentar retorno
-- Corretores que querem se especializar
-- Interesse: imóveis, litoral, investimento, temporada, rentabilidade
+- Corretores de imóveis iniciantes e intermediários
+- Proprietários que querem vender com preço justo
+- Investidores que querem analisar oportunidades
+- Interesse: avaliação, imóveis, litoral, vendas, investimento
 
 ## Pré-requisitos
-Nenhum. Curso completo do zero ao resultado.
+Nenhum. Curso completo do zero aos primeiros laudos.
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
-5 horas de aulas
-Total: 5 horas
+4 horas de aulas (20 aulas de 10 a 16 min)
+Total: 4 horas
 
 ## Valor Sugerido
-Curso completo: R$ 247
-À vista: R$ 247
-Parcelado: 12x de R$ 20,58
+Curso completo: R$ 197
+À vista: R$ 167
+Parcelado: 12x de R$ 13,92
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist do curso
-- Planilha de acompanhamento
-- Modelos prontos
+- Checklist de avaliação
+- Planilha de comparáveis
+- Modelos de laudo
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Avalie imóveis no litoral com método, comparáveis e precificação correta"**
+**"Avalie imóveis no litoral com método e aumente confiança em vendas e investimentos"**
 
 ## Big Idea
-Resultados no litoral dependem de método, dados e execução consistente.
+Avaliação imobiliária no litoral combina dados locais, comparáveis e método para determinar valores reais e reduzir riscos.
 
 ## Oferta
-- **Curso completo:** R$ 247
+- **Curso completo:** R$ 197
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
@@ -54,106 +54,105 @@ Resultados no litoral dependem de método, dados e execução consistente.
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** avaliação de imóveis, comparáveis e precificação no litoral
-**Dificuldades:** falta de método, insegurança, resultado baixo
-**Desejos:** crescimento, tranquilidade, autoridade
+**Objetivo:** avaliar imóveis com segurança
+**Dificuldades:** falta de método, dados confusos, insegurança
+**Desejos:** autoridade, vendas recorrentes, crescimento
 
 ## Dores
 - Falta de método
+- Dados confusos
 - Insegurança
-- Resultado baixo
-- Falta de clareza
-- Tempo limitado
+- Preço errado
+- Concorrência
 
 ## Desejos
+- Autoridade local
+- Vendas recorrentes
 - Crescimento
 - Tranquilidade
-- Autoridade
-- Previsibilidade
-- Resultado
+- Reconhecimento
 
 ## Objeções
-- "Não compensa"
-- "É complicado"
-- "Não tenho tempo"
-- "Vou errar"
+- "Avaliação é complicada"
+- "Não tenho dados"
+- "Preço é subjetivo"
 - "Não funciona"
+- "Vou errar"
 
 ## Transformação
-- Método aplicado
-- Resultado crescente
-- Decisão orientada por dados
-- Operação profissional
+- Avaliações estruturadas
+- Laudos confiáveis
+- Preço justo
+- Autoridade local
 - Tranquilidade
 
 ## Programa Completo
-### Módulo 1 — Fundamentos
-Aula 1.1 — Contexto e oportunidades
-Aula 1.2 — Perfil e objetivos
-Aula 1.3 — Métricas e metas
-Exercício: diagnóstico
+### Módulo 1 — Fundamentos da Avaliação
+Aula 1.1 — O que é avaliação imobiliária
+Aula 1.2 — Métodos de avaliação
+Aula 1.3 — Perfil do avaliador
+Exercício: diagnóstico de avaliação
 
-### Módulo 2 — Aplicação Prática
-Aula 2.1 — Passo a passo prático
-Aula 2.2 — Exemplos reais
-Aula 2.3 — Erros comuns
-Exercício: aplicação
+### Módulo 2 — Dados e Comparáveis
+Aula 2.1 — Como obter dados do imóvel
+Aula 2.2 — Comparáveis no litoral
+Aula 2.3 — Análise de mercado
+Exercício: análise comparativa
 
-### Módulo 3 — Estratégia
-Aula 3.1 — Planejamento
-Aula 3.2 — Decisão e priorização
-Aula 3.3 — Execução
-Exercício: plano
+### Módulo 3 — Laudo e Apresentação
+Aula 3.1 — Como fazer um laudo
+Aula 3.2 — Apresentação para proprietário
+Aula 3.3 — Negociação e fechamento
+Exercício: laudo aplicado
 
-### Módulo 4 — Crescimento
-Aula 4.1 — Acompanhamento
-Aula 4.2 — Ajustes
-Aula 4.3 — Escala
-Exercício: escala
+### Módulo 4 — Gestão e Crescimento
+Aula 4.1 — Gestão de avaliações
+Aula 4.2 — Ajustes e melhorias
+Aula 4.3 — Escala e autoridade
+Exercício: plano de crescimento
 
 ## Carga Horária
-5 horas
+4 horas
 
 ## Material Complementar
-- Checklist
-- Planilha
-- Modelos
+- Checklist de avaliação
+- Planilha de comparáveis
+- Modelos de laudo
 - PDFs por módulo
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de diagnóstico
-- Checklist de aplicação
-- Checklist de estratégia
-- Checklist de escala
+- Checklist de avaliação
+- Checklist de comparáveis
+- Checklist de laudo
 
 ## Planilhas
-- Planilha de acompanhamento
-- Planilha de métricas
-- Planilha de ROI
+- Planilha de comparáveis
+- Planilha de avaliação
+- Planilha de laudo
 
 ## Modelos Prontos
-- Modelo de relatório
+- Modelo de laudo
 - Modelo de proposta
-- Modelo de revisão
+- Modelo de follow-up
 
 ## Scripts
-- Script de atendimento
-- Script de negociação
+- Script de avaliação
+- Script de apresentação
 
 ## Prompt de IA
-Prompt para gerar análises e planos.
+Prompt para gerar laudos e análises.
 
 ## Exercícios
-- Exercício 1: diagnóstico
-- Exercício 2: aplicação
-- Exercício 3: plano
-- Exercício 4: escala
+- Exercício 1: diagnóstico de avaliação
+- Exercício 2: análise comparativa
+- Exercício 3: laudo aplicado
+- Exercício 4: plano de crescimento
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: aplicação do método
+Prova prática: laudo de avaliação aplicado
 
 ## FAQ
 1. Preciso de experiência? Não.
@@ -193,7 +192,7 @@ Prova prática: aplicação do método
 [marketing/google-ads.md]
 
 ## CTA
-"Aplique o método agora."
+"Avalie imóveis no litoral com método agora."
 
 ## Upsell
 - Mentoria individual: R$ 1.500
@@ -204,4 +203,6 @@ Prova prática: aplicação do método
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Cursos complementares Praia Digital
+- Curso de Análise de Rentabilidade
+- Curso de Especialista em Venda de Imóveis no Litoral
+- Curso de Captação e Exclusividade

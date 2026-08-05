@@ -1,49 +1,74 @@
-# Módulo 3 — Estratégia
+# Módulo 3 — Laudo e Apresentação
 
 ## Introdução
-Planeje, decida e priorize ações para crescer com consistência.
+Aprenda a fazer um laudo de avaliação, apresentar o valor ao proprietário e fechar a avaliação com profissionalismo.
 
-## Aula 3.1 — Planejamento
-- Objetivos
-- Ações
-- Prazos
-- Recursos
+## Aula 3.1 — Como fazer um laudo
+**Estrutura:**
+- Identificação do imóvel.
+- Objetivo da avaliação.
+- Metodologia.
+- Comparáveis.
+- Análise de mercado.
+- Valor de mercado.
+- Conclusão.
 
-**Exemplo real:** Planejamento simples permitiu crescer sem surpresas.
+**Qualidade:**
+- Dados verificados.
+- Comparáveis justificados.
+- Metodologia clara.
 
-## Aula 3.2 — Decisão e priorização
-- Critérios de decisão
-- Priorização
-- Risco
+**Exemplo real:**
+Corretor usou laudo estruturado e proprietário aceitou preço em 15 minutos.
 
-**Estudo de caso:** Decisão baseada em dados evitou prejuízo e aumentou retorno.
+## Aula 3.2 — Apresentação para proprietário
+**Preparação:**
+- Dados organizados.
+- Comparáveis impressos.
+- Linguagem simples.
 
-## Aula 3.3 — Execução
-- Rotina
-- Acompanhamento
-- Ajuste rápido
+**Apresentação:**
+- Mostre dados, não opiniões.
+- Justifique preço com comparáveis.
+- Destaque diferenciais.
 
-## Exercício
-Monte um plano estratégico para os próximos 30 dias.
+**Estudo de caso:**
+Corretor apresentou 3 comparáveis e proprietário aceitou preço justo.
+
+## Aula 3.3 — Negociação e fechamento
+**Negociação:**
+- Apresente valor de mercado.
+- Justifique com dados.
+- Seja transparente.
+
+**Fechamento:**
+- Proposta por escrito.
+- Prazo de venda.
+- Acompanhamento.
+
+**Exercício:**
+Faça um laudo de avaliação para um imóvel real.
 
 ## Resumo
-- Planejamento evita desperdício
-- Decisão orientada reduz risco
-- Execução gera resultado
+- Laudo confiável aumenta autoridade.
+- Apresentação clara reduz objeções.
+- Negociação transparente fecha vendas.
 
 ## Checklist
-- [ ] Plano definido
-- [ ] Ações listadas
-- [ ] Prazo estabelecido
+- [ ] Laudo estruturado
+- [ ] Dados verificados
+- [ ] Apresentação preparada
+- [ ] Proposta fechada
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de plano
+- Modelo de laudo
+- Modelo de proposta
 
 ## Ferramentas recomendadas
-- Planner
-- Planilha
-- App de metas
+- Planilha de comparáveis
+- Sistema de laudo
+- CRM de vendas
 
 ## Prompt de IA
-"Atue como estrategista. Monte um plano prático para este objetivo: [dados]."
+"Atue como avaliador de imóveis. Monte um laudo para este imóvel: [dados]."

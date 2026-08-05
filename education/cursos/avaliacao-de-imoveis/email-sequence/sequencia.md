@@ -5,17 +5,17 @@ Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: resultado prático
+Assunto: Case: avaliação que gerou venda rápida
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Avaliação de Imóveis dá trabalho?"
+Assunto: "Avaliação é complicada?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno obteve resultado em 30 dias
+Assunto: Aluno fechou avaliação em 30 dias
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

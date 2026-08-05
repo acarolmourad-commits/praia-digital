@@ -1,6 +1,6 @@
 # Reels — Avaliação de Imóveis
-1. Roteiro: dica rápida
-2. Roteiro: passo a passo
-3. Roteiro: erro comum
-4. Roteiro: case rápido
-5. Roteiro: resultado
+1. Roteiro: laudo em 30s
+2. Roteiro: dica de preço
+3. Roteiro: erro de avaliação
+4. Roteiro: case de venda
+5. Roteiro: método simples

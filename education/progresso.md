@@ -9,12 +9,14 @@
 - Especialista em Venda de Imóveis no Litoral — PRONTO PARA VENDA
 - Captação e Exclusividade para Corretores — PRONTO PARA VENDA
 - Marketing Imobiliário para Corretores — PRONTO PARA VENDA
+- Análise de Rentabilidade — PRONTO PARA VENDA
+- Automação Comercial para Corretores — PRONTO PARA VENDA
 
 ## Em Produção
 - Nenhum no momento
 
 ## Próximo Curso
-- Análise de Rentabilidade
+- Avaliação de Imóveis
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.
