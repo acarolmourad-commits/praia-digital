@@ -1,17 +1,20 @@
 # Progresso do Diretor de Educação — Praia Digital Academy
 ## Cursos Concluídos
-- Investindo em Imóveis no Litoral
-- Airbnb do Zero no Litoral
-- Booking do Zero no Litoral
-- PriceLabs Completo para Temporada no Litoral
-- Gestão Profissional da Locação
-- Como Aumentar em 30% a Rentabilidade
-- Especialista em Venda de Imóveis no Litoral
-- Captação e Exclusividade para Corretores
-- Marketing Imobiliário para Corretores
+- Investindo em Imóveis no Litoral — PRONTO PARA VENDA
+- Airbnb do Zero no Litoral — PRONTO PARA VENDA
+- Booking do Zero no Litoral — PRONTO PARA VENDA
+- PriceLabs Completo para Temporada no Litoral — PRONTO PARA VENDA
+- Gestão Profissional da Locação — PRONTO PARA VENDA
+- Como Aumentar em 30% a Rentabilidade — PRONTO PARA VENDA
+- Especialista em Venda de Imóveis no Litoral — PRONTO PARA VENDA
+- Captação e Exclusividade para Corretores — PRONTO PARA VENDA
+- Marketing Imobiliário para Corretores — PRONTO PARA VENDA
+
+## Em Produção
+- Nenhum no momento
 
 ## Próximo Curso
-- Instagram para Corretores
+- Airbnb do Zero no Litoral
 
 ## Regra
-Um curso por vez, do maior potencial para o menor.
+Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.
