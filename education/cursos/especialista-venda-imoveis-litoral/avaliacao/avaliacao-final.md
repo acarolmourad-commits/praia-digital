@@ -1,9 +1,9 @@
-# Avaliação Final — Especialista em Venda de Imóveis no Litoral
+# Avaliação Final — Especialista Venda Imoveis Litoral
 ## Quiz
-- 20 perguntas sobre captação, proposta, negociação e fechamento.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Plano de vendas aplicado.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
-- 70% no quiz + plano aprovado pelo mentor.
+- 70% no quiz + prova prática aprovada pelo mentor.

@@ -1,21 +1,21 @@
-# Sequência de E-mails — Marketing Imobiliário para Corretores
+# Sequência de E-mails — Marketing Imobiliario
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido de Marketing Imobiliário (PDF)
+Assunto: Guia Rápido sobre Marketing Imobiliario (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case de marketing imobiliário
+Assunto: Case prático de Marketing Imobiliario
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: “Marketing dá muito trabalho?”
+Assunto: "Marketing Imobiliario é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno aumentou leads em 40%
+Assunto: Aluno obteve resultado com Marketing Imobiliario
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

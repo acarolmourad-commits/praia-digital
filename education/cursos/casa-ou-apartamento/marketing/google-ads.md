@@ -1,4 +1,4 @@
-# Google Ads — Casa Ou Apartamento
-Palavras: Casa Ou Apartamento no litoral, como fazer Casa Ou Apartamento, litoral
+# Google Ads — casa-ou-apartamento
+Palavras: casa ou apartamento, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

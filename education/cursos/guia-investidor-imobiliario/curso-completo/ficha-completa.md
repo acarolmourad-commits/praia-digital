@@ -1,19 +1,18 @@
-# Curso: Guia Completo do Investidor Imobiliário
+# Curso: Guia Investidor Imobiliario
 ## Nome Comercial
-**Guia Completo do Investidor Imobiliário: Estratégias, Análises e Execução para o Mercado do Litoral**
+**Guia Investidor Imobiliario: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Da mentalidade à execução: construa patrimônio com imóveis no litoral usando um método passo a passo.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 120 dias, você terá uma estratégia personalizada de investimento imobiliário no litoral, com capacidade de avaliar oportunidades e aplicar com consistência.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
-- Pessoas de 25 a 60 anos
-- Renda R$ 8k a R$ 50k/mês
-- Interesse: patrimônio, renda passiva, aposentadoria antecipada
-- Perfil: iniciante ou intermediário
-- Região: SP, RJ, PR, Sul e Sudeste
+Proprietários, investidores e corretores do litoral.
+
+## Pré-requisitos
+Nenhum.
 
 ## Nível
 Iniciante → Avançado
@@ -22,191 +21,177 @@ Iniciante → Avançado
 20 horas de aulas
 + exercícios práticos: 12 horas
 + mentorias em grupo: 6 horas
-Total médio: 38 horas
+Total médio: 38 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Formação profissional: R$ 1.497
-À vista: R$ 1.197
-Parcelado: 12x de R$ 99,75
-Mentoria em grupo: R$ 4.500
-Consultoria premium: R$ 8.000
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
+Mini curso: R$ 147
+E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- 6 mentorias em grupo
-- Certificado
-- Planilhas avançadas
+- Material complementar
 - Comunidade fechada
-- Canal de dúvidas
+- Certificado
 
 ## Headline
-**"O Método Passo a Passo para se Tornar um Investidor Imobiliário de Litoral"**
+**"Guia Investidor Imobiliario"**
 
 ## Big Idea
-Investir em imóveis no litoral não é sorte: é estratégia, método e execução. Quem aprende o modelo certo constrói patrimônio com previsibilidade.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
-- **Formação:** R$ 1.497
-- **Mentoria em grupo:** R$ 4.500
-- **Consultoria premium:** R$ 8.000
+- **Curso completo:** R$ 297
+- **Mini curso:** R$ 147
+- **E-book:** R$ 19,90
 
 ## Avatar
-**Nome:** Ricardo / Fernanda
-**Idade:** 30 a 55 anos
-**Renda:** R$ 12k a R$ 40k/mês
-**Objetivo:** construir patrimônio e/ou renda passiva
-**Dificuldades:** não sabe escolher oportunidades, medo de documentação, falta de método
-**Desejos:** liberdade financeira, segurança, LTV alto
+**Nome:** Carlos / Fernanda
+**Idade:** 25 a 55 anos
+**Renda:** R$ 3k a R$ 20k/mês
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Não tem método estruturado
-- Dificuldade de avaliar oportunidades
-- Medo de documentação e riscos
-- Falta de suporte especializado
-- Pressão por resultado rápido
+- Falta de método
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Estratégia personalizada
-- Segurança jurídica
-- ROI previsível
-- Suporte especializado
-- Crescimento sustentável
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
+- Segurança
+- Autoridade local
 
 ## Objeções
-- "É muito investimento"
-- "Vai demorar para dar resultado"
+- "Muito caro"
+- "Não funciona"
+- "É complicado"
 - "Não tenho tempo"
-- "E se der errado?"
-- "Já tentei antes"
+- "Já tentei"
 
 ## Transformação
-- Estratégia personalizada
-- Modelo de avaliação de oportunidades
-- Due diligence avançada
-- Execução com suporte
-- Patrimônio em construção
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
-### Módulo 1 — Mentalidade e Estratégia
-Aula 1.1 — Mentalidade do investidor imobiliário
-Aula 1.2 — Objetivos e perfis de investimento
-Aula 1.3 — Modelos de negócio no litoral
-Exercício: definição de perfil e objetivo
+### Módulo 1 — Fundamentos
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Mercado e Oportunidades
-Aula 2.1 — Análise macro do litoral
-Aula 2.2 — Indicadores por cidade/bairro
-Aula 2.3 — Oferta e demanda
-Exercício: mapa de oportunidades
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Rentabilidade e Gestão
-Aula 3.1 — Yield, ROI e payback
-Aula 3.2 — Custos e sazonalidade
-Aula 3.3 — Gestão de temporada e moradia
-Exercício: planilha de rentabilidade
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Execução
-Aula 4.1 — Due diligence avançada
-Aula 4.2 — Negociação e contratos
-Aula 4.3 — Pós-compra e expansão
-Exercício: proposta de investimento
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
+Exercício: plano de crescimento
 
 ## Carga Horária
-38 horas
+20 horas de aulas
++ exercícios práticos: 12 horas
++ mentorias em grupo: 6 horas
+Total médio: 38 horas
 
 ## Material Complementar
-- E-book complementar
-- PDFs avançados
+- PDFs por módulo
+- Templates
 - Comunidade fechada
-- Canal de dúvidas
+- Atualizações
 
 ## Checklists
-- Checklist de oportunidades
-- Checklist de documentação
-- Checklist de rentabilidade
-- Checklist de due diligence
-- Checklist de execução
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de valuation
-- Planilha de yield
-- Planilha de fluxo de caixa
-- Planilha de sazonalidade
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de proposta de investimento
-- Modelo de checklist de documentos
-- Modelo de contrato simples
+- Modelo aplicável
 
 ## Scripts
-- Script para proprietário
-- Script para negociação
-- Script para advogado
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para análise de ROI e riscos.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: mapa de oportunidades
-- Exercício 2: cálculo de yield
-- Exercício 3: análise de documentação
-- Exercício 4: proposta de investimento
-- Exercício 5: plano de expansão
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
-Quiz final 25 perguntas
-Prova prática: plano de investimento completo
+Quiz 20 perguntas
+Prova prática: aplicação do método
 
 ## FAQ
-1. Preciso de muito capital? Não necessariamente.
-2. Vale mais a pena temporada ou moradia? Depende do objetivo.
-3. Qual o risco principal? Documentação e liquidez.
-4. Em quanto tempo vejo retorno? De 6 meses a 2 anos.
-5. Preciso de mentoria? Recomendado para acelerar.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
-[Em construção no próximo passo]
+[vendas.html]
 
 ## Landing Page
-[Em construção no próximo passo]
+[index.html]
 
 ## Sequência de E-mails
-[Em construção no próximo passo]
+[email-sequence/sequencia.md]
 
 ## Posts Instagram
-[Em construção no próximo passo]
+[instagram/posts.md]
 
 ## Reels
-[Em construção no próximo passo]
+[marketing/reels.md]
 
 ## Carrosséis
-[Em construção no próximo passo]
+[marketing/carrosseis.md]
 
 ## Artigos SEO
-[Em construção no próximo passo]
+[seo-articles/sumario.md]
 
 ## Roteiros YouTube
-[Em construção no próximo passo]
+[marketing/youtube.md]
 
 ## Anúncios Meta
-[Em construção no próximo passo]
+[marketing/meta-ads.md]
 
 ## Anúncios Google
-[Em construção no próximo passo]
+[marketing/google-ads.md]
 
 ## CTA
-"Construa patrimônio com imóveis no litoral usando um método passo a passo."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Mentoria individual: R$ 3.000
-- Acompanhamento de carteira: R$ 5.000
-- Clube de oportunidades: R$ 1.497/ano
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
-- Curso completo de investidor: R$ 497
 - Mini curso: R$ 147
+- E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Airbnb do Zero
-- Curso de Captação de Exclusividade
-- Curso de Avaliação de Imóveis
+- Outros cursos da Praia Digital Academy

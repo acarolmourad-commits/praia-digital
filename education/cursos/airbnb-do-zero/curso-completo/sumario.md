@@ -1,5 +1,5 @@
-# Sumário do Curso: Airbnb do Zero no Litoral
+# Sumário do Curso: Airbnb Do Zero
 - Módulo 1: Fundamentos
-- Módulo 2: Preparação do Imóvel
-- Módulo 3: Anúncio e Otimização
-- Módulo 4: Gestão e Crescimento
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

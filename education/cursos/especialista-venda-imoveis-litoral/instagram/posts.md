@@ -1,11 +1,20 @@
-# Posts Instagram — Especialista em Venda de Imóveis no Litoral
-1. Post: 3 erros que matam a venda
-2. Reels: como captar leads em 30s
-3. Carrossel: checklist de proposta
-4. Post: objeção comum
-5. Reels: dica de fechamento
-6. Carrossel: diferenciais locais
-7. Post: temporada de vendas
-8. Reels: case de venda
-9. Carrossel: scripts rápidos
-10. Post: comece hoje
+1. Post: dica premium sobre especialista-venda-imoveis-litoral
+2. Reels: resultado em 30s
+3. Carrossel: checklist rápido
+4. Post: caso real
+5. Reels: ferramenta prática
+6. Post: dica premium sobre especialista-venda-imoveis-litoral
+7. Reels: resultado em 30s
+8. Carrossel: checklist rápido
+9. Post: caso real
+10. Reels: ferramenta prática
+11. Post: dica premium sobre especialista-venda-imoveis-litoral
+12. Reels: resultado em 30s
+13. Carrossel: checklist rápido
+14. Post: caso real
+15. Reels: ferramenta prática
+16. Post: dica premium sobre especialista-venda-imoveis-litoral
+17. Reels: resultado em 30s
+18. Carrossel: checklist rápido
+19. Post: caso real
+20. Reels: ferramenta prática

@@ -1,180 +1,191 @@
-# Curso: IA para Imobiliárias
+# Curso: Ia Para Imobiliarias
 ## Nome Comercial
-**IA para Imobiliárias: Como Usar Inteligência Artificial para Vender Mais no Litoral**
+**Ia Para Imobiliarias: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Ferramentas, fluxos e automação com IA aplicada à captação, atendimento, marketing e gestão imobiliária.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 20 dias, você será capaz de implementar fluxos de IA sem perder controle nem humanização.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
-- Donos e gestores de imobiliárias
-- Interesse: eficiência, leads, atendimento
-- Perfil: intermediário
+Proprietários, investidores e corretores do litoral.
+
+## Pré-requisitos
+Nenhum.
 
 ## Nível
 Intermediário → Avançado
 
 ## Tempo Estimado
-8 horas
+8 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 497
-Mini curso: R$ 197
-E-book: R$ 24,90
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
+Mini curso: R$ 147
+E-book: R$ 19,90
+
+## Oferta Principal
+- Acesso vitalício + atualizações
+- Material complementar
+- Comunidade fechada
+- Certificado
+
+## Headline
+**"Ia Para Imobiliarias"**
+
+## Big Idea
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
-Curso completo R$ 497; Mini curso R$ 197; E-book R$ 24,90
+- **Curso completo:** R$ 297
+- **Mini curso:** R$ 147
+- **E-book:** R$ 19,90
 
 ## Avatar
-Nome: Carlos / Fernanda
-Idade: 30 a 55 anos
-Renda: R$ 8k a R$ 30k/mês
-Objetivo: eficiência e escala com IA
-Dificuldades: ferramentas, fluxos, ética
-Desejos: produtividade, resultados, controle
+**Nome:** Carlos / Fernanda
+**Idade:** 25 a 55 anos
+**Renda:** R$ 3k a R$ 20k/mês
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Atendimento lento
-- Follow-up perdido
 - Falta de método
-- Ferramentas dispersas
-- Falta de treinamento
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- IA aplicada
-- Automação segura
-- Produtividade
-- Controle
+- Método claro
+- Exemplos reais
 - Resultados previsíveis
+- Segurança
+- Autoridade local
 
 ## Objeções
-- "É caro"
+- "Muito caro"
+- "Não funciona"
 - "É complicado"
-- "E se errar?"
-- "Vai perder a humanização"
-- "Não compensa"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- Fluxos com IA
-- Automação segura
-- Atendimento rápido
-- Treinamento da equipe
-- Resultados mensuráveis
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
 ### Módulo 1 — Fundamentos
-Aula 1.1 — IA no mercado imobiliário
-Aula 1.2 — Ferramentas
-Aula 1.3 — Limites e ética
-Exercício: seleção de ferramentas
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Captação e Atendimento
-Aula 2.1 — Automação de captação
-Aula 2.2 — Chatbots e atendimento
-Aula 2.3 — Follow-up inteligente
-Exercício: fluxo de atendimento
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Marketing
-Aula 3.1 — Conteúdo com IA
-Aula 3.2 — Anúncios
-Aula 3.3 — SEO
-Exercício: plano de conteúdo
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Gestão
-Aula 4.1 — CRM e métricas
-Aula 4.2 — Treinamento
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
 Aula 4.3 — Escala
-Exercício: plano de implementação
+Exercício: plano de crescimento
 
 ## Carga Horária
 8 horas
 
 ## Material Complementar
-- Biblioteca de prompts
+- PDFs por módulo
 - Templates
 - Comunidade fechada
+- Atualizações
 
 ## Checklists
-- Checklist de ferramentas
-- Checklist de fluxos
-- Checklist de métricas
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de leads
-- Planilha de ROI
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de fluxo
-- Modelo de prompt
+- Modelo aplicável
 
 ## Scripts
-- Script de atendimento
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para criar fluxos de atendimento.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: ferramentas
-- Exercício 2: captação
-- Exercício 3: marketing
-- Exercício 4: gestão
-- Exercício 5: plano
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: fluxo implementado
+Prova prática: aplicação do método
 
 ## FAQ
-1. Quais ferramentas usar? Depende do tamanho.
-2. É seguro? Sim, com limites.
-3. Quanto tempo? De 15 a 30 dias.
-4. E se errar? Ajuste com métricas.
-5. Vale a pena? Sim, com método.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
-[Em construção no próximo passo]
+[vendas.html]
 
 ## Landing Page
-[Em construção no próximo passo]
+[index.html]
 
 ## Sequência de E-mails
-[Em construção no próximo passo]
+[email-sequence/sequencia.md]
 
 ## Posts Instagram
-[Em construção no próximo passo]
+[instagram/posts.md]
 
 ## Reels
-[Em construção no próximo passo]
+[marketing/reels.md]
 
 ## Carrosséis
-[Em construção no próximo passo]
+[marketing/carrosseis.md]
 
 ## Artigos SEO
-[Em construção no próximo passo]
+[seo-articles/sumario.md]
 
 ## Roteiros YouTube
-[Em construção no próximo passo]
+[marketing/youtube.md]
 
 ## Anúncios Meta
-[Em construção no próximo passo]
+[marketing/meta-ads.md]
 
 ## Anúncios Google
-[Em construção no próximo passo]
+[marketing/google-ads.md]
 
 ## CTA
-"Implemente IA na sua imobiliária e venda mais."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Consultoria: R$ 6.000
-- Acompanhamento: R$ 4.000
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
-- Mini curso: R$ 197
-- E-book: R$ 24,90
+- Mini curso: R$ 147
+- E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Marketing Imobiliário
-- Curso de Automação Comercial
-- Curso de IA para Corretores
+- Outros cursos da Praia Digital Academy

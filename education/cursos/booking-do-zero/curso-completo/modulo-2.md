@@ -1,12 +1,33 @@
-# Módulo 2 — Preparação do Imóvel
-## Aula 2.1 — Fotos e vídeos profissionais
-Conteúdo: equipamento, ângulos, luz, roteiro.
+# Módulo 2 — Conteúdo Premium
+## Aula 2.1 — Introdução ao módulo
+Conteúdo: visão geral, objetivo, aplicação prática no litoral.
 
-## Aula 2.2 — Descrição e diferenciais
-Conteúdo: título, texto, SEO, diferenciais locais.
+## Aula 2.2 — Conceitos aplicados
+Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
 
-## Aula 2.3 — Regras da casa
-Conteúdo: check-in, quiet hours, pets, fumo, cancelamento.
+## Aula 2.3 — Estudo de caso
+Conteúdo: caso real, análise, lições.
 
 ## Exercício
-Monte roteiro de fotos e descrição base.
+Aplicação prática no seu contexto.
+
+## Resumo
+Pontos-chave para revisão.
+
+## Checklist
+- [ ] Conceitos entendidos
+- [ ] Caso analisado
+- [ ] Exercício aplicado
+
+## Materiais para download
+- PDF do módulo
+- Templates
+- Planilha
+
+## Ferramentas recomendadas
+- Ferramenta 1
+- Ferramenta 2
+- Ferramenta 3
+
+## Prompt de IA
+Prompt para acelerar tarefas deste módulo.

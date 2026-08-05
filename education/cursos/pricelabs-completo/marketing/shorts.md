@@ -1,6 +1,10 @@
-# Shorts — PriceLabs Completo
-1. Roteiro: dica de preço
-2. Roteiro: regra rápida
-3. Roteiro: temporada em 1 minuto
-4. Roteiro: evento lucrativo
-5. Roteiro: ROI resumido
+1. Roteiro: dica em 1 minuto 1
+2. Roteiro: dica em 1 minuto 2
+3. Roteiro: dica em 1 minuto 3
+4. Roteiro: dica em 1 minuto 4
+5. Roteiro: dica em 1 minuto 5
+6. Roteiro: dica em 1 minuto 6
+7. Roteiro: dica em 1 minuto 7
+8. Roteiro: dica em 1 minuto 8
+9. Roteiro: dica em 1 minuto 9
+10. Roteiro: dica em 1 minuto 10

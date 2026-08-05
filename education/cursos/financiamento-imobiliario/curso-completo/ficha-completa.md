@@ -1,195 +1,193 @@
-# Curso: Financiamento Imobiliário sem Complicação
+# Curso: Financiamento Imobiliario
 ## Nome Comercial
-**Financiamento Imobiliário sem Complicação: Guia Prático para Aprovar e Simular no Litoral**
+**Financiamento Imobiliario: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Aprenda a simular, comparar e aumentar suas chances de aprovação, mesmo que nunca tenha feito financiamento antes.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 15 dias, você será capaz de simular condições, escolher o melhor banco e organizar documentos para aprovação.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
-- Pessoas de 25 a 55 anos
-- Renda R$ 4k a R$ 20k/mês
-- Interesse: primeira compra ou segunda residência
-- Perfil: iniciante
+Proprietários, investidores e corretores do litoral.
+
+## Pré-requisitos
+Nenhum.
 
 ## Nível
 Iniciante
 
 ## Tempo Estimado
 4 horas de aulas (28 aulas de 8 a 16 min)
-Total: 4 horas
+Total: 4 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 197
-À vista: R$ 157
-Parcelado: 12x de R$ 16,41
-Mini curso: R$ 97
-E-book: R$ 14,90
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
+Mini curso: R$ 147
+E-book: R$ 19,90
 
 ## Oferta Principal
-- Acesso vitalício
-- Checklist de documentos
-- Planilhas de simulação
+- Acesso vitalício + atualizações
+- Material complementar
 - Comunidade fechada
+- Certificado
 
 ## Headline
-**"Financie seu imóvel no litoral com as melhores condições"**
+**"Financiamento Imobiliario"**
 
 ## Big Idea
-Financiamento não é sorte: é organização, comparação e documento certo.
+Conteúdo premium aplicado ao mercado do litoral.
+
+## Oferta
+- **Curso completo:** R$ 297
+- **Mini curso:** R$ 147
+- **E-book:** R$ 19,90
 
 ## Avatar
-**Nome:** Ana / Carlos
-**Idade:** 25 a 50 anos
-**Renda:** R$ 4k a R$ 18k/mês
-**Objetivo:** financiar sem complicação
-**Dificuldades:** documentos, juros, aprovação
-**Desejos:** aprovação mais fácil, condições melhores
+**Nome:** Carlos / Fernanda
+**Idade:** 25 a 55 anos
+**Renda:** R$ 3k a R$ 20k/mês
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Juros altos
-- Documentação confusa
-- Medo de negativa
-- Falta de clareza no processo
-- Pressão por prazo
+- Falta de método
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Aprovação com mais facilidade
-- Condições melhores
-- Clareza documental
-- Processo rápido
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
 - Segurança
+- Autoridade local
 
 ## Objeções
-- "É caro"
-- "Nunca vou aprovar"
-- "Demora muito"
+- "Muito caro"
+- "Não funciona"
 - "É complicado"
-- "E se eu errar?"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- Capacidade de simular condições
-- Checklist de documentos
-- Comparação de bancos
-- Aprovação mais fácil
-- Processo simples
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
-### Módulo 1 — Conceitos e Tipos
-Aula 1.1 — Tipos de financiamento
-Aula 1.2 — Juros, CET e prazos
-Aula 1.3 — Entrada e subsídios
-Exercício: simulação inicial
+### Módulo 1 — Fundamentos
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Documentação e Aprovação
-Aula 2.1 — Documentos necessários
-Aula 2.2 — Como aumentar chances de aprovação
-Aula 2.3 — Erros comuns
-Exercício: checklist de documentos
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Comparação e Negociação
-Aula 3.1 — Comparação de bancos
-Aula 3.2 — Como reduzir juros
-Aula 3.3 — Negociação com banco
-Exercício: comparação prática
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Pós-aprovação
-Aula 4.1 — O que esperar após aprovação
-Aula 4.2 — Escritura e registro
-Aula 4.3 — Seguros e garantias
-Exercício: plano de pós-aprovação
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
+Exercício: plano de crescimento
 
 ## Carga Horária
-4 horas
+4 horas de aulas (28 aulas de 8 a 16 min)
+Total: 4 horas
 
 ## Material Complementar
-- Planilhas de simulação
-- Checklist de documentos
+- PDFs por módulo
+- Templates
 - Comunidade fechada
+- Atualizações
 
 ## Checklists
-- Checklist de documentos
-- Checklist de aprovação
-- Checklist de pós-aprovação
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de simulação
-- Planilha de comparação de bancos
-- Planilha de custos
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de checklist de documentos
-- Modelo de simulação
+- Modelo aplicável
 
 ## Scripts
-- Script para banco
-- Script para corretor
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para simular financiamento.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: simulação
-- Exercício 2: checklist de documentos
-- Exercício 3: comparação de bancos
-- Exercício 4: negociação simulada
-- Exercício 5: plano pós-aprovação
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
-Quiz 15 perguntas
-Prova prática: simulação completa
+Quiz 20 perguntas
+Prova prática: aplicação do método
 
 ## FAQ
-1. Preciso de entrada alta? Depende do banco.
-2. Posso usar FGTS? Sim, em algumas condições.
-3. Como aumentar chances de aprovação? Organização e score.
-4. Vale a pena consórcio? Pode valer.
-5. E se eu for negado? Corrija documentos e tente novamente.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
-[Em construção no próximo passo]
+[vendas.html]
 
 ## Landing Page
-[Em construção no próximo passo]
+[index.html]
 
 ## Sequência de E-mails
-[Em construção no próximo passo]
+[email-sequence/sequencia.md]
 
 ## Posts Instagram
-[Em construção no próximo passo]
+[instagram/posts.md]
 
 ## Reels
-[Em construção no próximo passo]
+[marketing/reels.md]
 
 ## Carrosséis
-[Em construção no próximo passo]
+[marketing/carrosseis.md]
 
 ## Artigos SEO
-[Em construção no próximo passo]
+[seo-articles/sumario.md]
 
 ## Roteiros YouTube
-[Em construção no próximo passo]
+[marketing/youtube.md]
 
 ## Anúncios Meta
-[Em construção no próximo passo]
+[marketing/meta-ads.md]
 
 ## Anúncios Google
-[Em construção no próximo passo]
+[marketing/google-ads.md]
 
 ## CTA
-"Simule, compare e financie sem complicação."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Curso de Avaliação de Imóveis: R$ 297
-- Consultoria: R$ 1.500
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
-- Mini curso: R$ 97
-- E-book: R$ 14,90
+- Mini curso: R$ 147
+- E-book: R$ 19,90
 
 ## Cross-sell
-- Curso Primeiro Imóvel no Litoral
-- Curso de Avaliação de Imóveis
-- Curso de Como Comprar sem Golpes
+- Outros cursos da Praia Digital Academy

@@ -1,11 +1,20 @@
-# Posts Instagram — Airbnb do Zero
-1. Post: 3 erros que matam o Airbnb no litoral
-2. Reels: como aumentar ocupação em 30s
-3. Carrossel: checklist pré-cadastro
-4. Post: fotos que vendem
-5. Reels: dica de preço
-6. Carrossel: regras da casa
-7. Post: temporada ou long stay?
-8. Reels: case de reserva
-9. Carrossel: avaliações boas
-10. Post: automação simples
+1. Post: dica premium sobre airbnb-do-zero
+2. Reels: resultado em 30s
+3. Carrossel: checklist rápido
+4. Post: caso real
+5. Reels: ferramenta prática
+6. Post: dica premium sobre airbnb-do-zero
+7. Reels: resultado em 30s
+8. Carrossel: checklist rápido
+9. Post: caso real
+10. Reels: ferramenta prática
+11. Post: dica premium sobre airbnb-do-zero
+12. Reels: resultado em 30s
+13. Carrossel: checklist rápido
+14. Post: caso real
+15. Reels: ferramenta prática
+16. Post: dica premium sobre airbnb-do-zero
+17. Reels: resultado em 30s
+18. Carrossel: checklist rápido
+19. Post: caso real
+20. Reels: ferramenta prática

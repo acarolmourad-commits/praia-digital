@@ -1,12 +1,33 @@
-# Módulo 2 — Rentabilidade e Cenários
-## Aula 2.1 — ROI, Cap Rate e Payback
-Conteúdo: fórmulas, exemplo prático no litoral, quando usar cada indicador.
+# Módulo 2 — Conteúdo Premium
+## Aula 2.1 — Introdução ao módulo
+Conteúdo: visão geral, objetivo, aplicação prática no litoral.
 
-## Aula 2.2 — Temporada e Sazonalidade
-Conteúdo: alta temporada, baixa temporada, eventos, preços e ocupação.
+## Aula 2.2 — Conceitos aplicados
+Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
 
-## Aula 2.3 — Fluxo de Caixa
-Conteúdo: receitas, custos fixos e variáveis, resultado líquido.
+## Aula 2.3 — Estudo de caso
+Conteúdo: caso real, análise, lições.
 
 ## Exercício
-Calcular ROI de um imóvel no litoral com dados reais.
+Aplicação prática no seu contexto.
+
+## Resumo
+Pontos-chave para revisão.
+
+## Checklist
+- [ ] Conceitos entendidos
+- [ ] Caso analisado
+- [ ] Exercício aplicado
+
+## Materiais para download
+- PDF do módulo
+- Templates
+- Planilha
+
+## Ferramentas recomendadas
+- Ferramenta 1
+- Ferramenta 2
+- Ferramenta 3
+
+## Prompt de IA
+Prompt para acelerar tarefas deste módulo.

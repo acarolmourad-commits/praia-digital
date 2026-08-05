@@ -1,200 +1,193 @@
-# Curso: Avaliação de Imóveis
+# Curso: Avaliacao De Imoveis
 ## Nome Comercial
-**Avaliação de Imóveis no Litoral: Como Precificar com Dados e Fechar Negócios Justos**
+**Avaliacao De Imoveis: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Métodos de avaliação, análise de comparáveis, método comparativo de mercado e aplicação prática no litoral.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 20 dias, você será capaz de avaliar imóveis no litoral com precisão e argumentar o preço com dados.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
-- Corretores de 22 a 50 anos
-- Avaliadores e peritos
-- Interesse: precificação, análise, negociação
-- Perfil: iniciante ou intermediário
+Proprietários, investidores e corretores do litoral.
+
+## Pré-requisitos
+Nenhum.
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
 8 horas de aulas (35 aulas de 12 a 20 min)
-Total: 8 horas
+Total: 8 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 347
-À vista: R$ 287
-Parcelado: 12x de R$ 23,92
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Modelos de avaliação
-- Planilhas de comparáveis
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Avalie imóveis no litoral com precisão e feche negócios justos"**
+**"Avaliacao De Imoveis"**
 
 ## Big Idea
-Preço errado afasta comprador e dono. Quem avalia com dados ganha confiança, negocia melhor e fecha mais.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
-- **Curso completo:** R$ 347
+- **Curso completo:** R$ 297
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
 ## Avatar
-**Nome:** João / Ana
-**Idade:** 25 a 50 anos
-**Renda:** R$ 3k a R$ 12k/mês
-**Objetivo:** avaliar e precificar melhor
-**Dificuldades:** dados, comparáveis, método
-**Desejos:** precisão, confiança, negociação
+**Nome:** Carlos / Fernanda
+**Idade:** 25 a 55 anos
+**Renda:** R$ 3k a R$ 20k/mês
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Preço arbitrário
-- Falta de comparáveis
 - Falta de método
-- Dificuldade de convencer
-- Erros de avaliação
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Avaliação precisa
-- Confiança no preço
-- Negociação melhor
-- Processo claro
-- Resultado consistente
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
+- Segurança
+- Autoridade local
 
 ## Objeções
-- "É caro"
-- "Já sei avaliar"
-- "Demora"
-- "E se errar?"
-- "Não compensa"
+- "Muito caro"
+- "Não funciona"
+- "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- Método de avaliação
-- Planilha de comparáveis
-- Precisão no preço
-- Negociação forte
-- Confiança
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
 ### Módulo 1 — Fundamentos
-Aula 1.1 — O que é avaliação
-Aula 1.2 — Métodos de avaliação
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
 Aula 1.3 — Mercado local
-Exercício: coleta de dados
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Dados e Comparáveis
-Aula 2.1 — Como buscar comparáveis
-Aula 2.2 — Análise de oferta e demanda
-Aula 2.3 — Ajustes de características
-Exercício: planilha de comparáveis
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Aplicação Prática
-Aula 3.1 — Precificação de apartamentos
-Aula 3.2 — Precificação de casas
-Aula 3.3 — Temporada e sazonalidade
-Exercício: avaliação prática
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Apresentação e Negociação
-Aula 4.1 — Como apresentar avaliação
-Aula 4.2 — Tratamento de objeções
-Aula 4.3 — Negociação e fechamento
-Exercício: simulação de avaliação
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
+Exercício: plano de crescimento
 
 ## Carga Horária
-8 horas
+8 horas de aulas (35 aulas de 12 a 20 min)
+Total: 8 horas
 
 ## Material Complementar
-- Modelos de avaliação
-- Planilhas
+- PDFs por módulo
+- Templates
 - Comunidade fechada
+- Atualizações
 
 ## Checklists
-- Checklist de avaliação
-- Checklist de comparáveis
-- Checklist de dados
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de comparáveis
-- Planilha de avaliação
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de laudo
-- Modelo de apresentação
+- Modelo aplicável
 
 ## Scripts
-- Script de apresentação
-- Script de negociação
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para gerar relatórios de avaliação.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: dados
-- Exercício 2: comparáveis
-- Exercício 3: avaliação
-- Exercício 4: apresentação
-- Exercício 5: negociação
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: laudo de avaliação
+Prova prática: aplicação do método
 
 ## FAQ
-1. Preciso ser perito? Não obrigatoriamente.
-2. Qual método usar? Comparativo de mercado.
-3. Como encontrar dados? Portais, prefeituras e registros.
-4. E se errar? Ajuste com dados e transparência.
-5. Vale a pena? Sim, para negociação.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
-[Em construção no próximo passo]
+[vendas.html]
 
 ## Landing Page
-[Em construção no próximo passo]
+[index.html]
 
 ## Sequência de E-mails
-[Em construção no próximo passo]
+[email-sequence/sequencia.md]
 
 ## Posts Instagram
-[Em construção no próximo passo]
+[instagram/posts.md]
 
 ## Reels
-[Em construção no próximo passo]
+[marketing/reels.md]
 
 ## Carrosséis
-[Em construção no próximo passo]
+[marketing/carrosseis.md]
 
 ## Artigos SEO
-[Em construção no próximo passo]
+[seo-articles/sumario.md]
 
 ## Roteiros YouTube
-[Em construção no próximo passo]
+[marketing/youtube.md]
 
 ## Anúncios Meta
-[Em construção no próximo passo]
+[marketing/meta-ads.md]
 
 ## Anúncios Google
-[Em construção no próximo passo]
+[marketing/google-ads.md]
 
 ## CTA
-"Avalie imóveis no litoral com precisão e feche negócios justos."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Mentoria: R$ 2.000
-- Acompanhamento: R$ 3.000
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
 - Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Venda de Imóveis no Litoral
-- Curso de Negociação
-- Curso de Marketing Imobiliário
+- Outros cursos da Praia Digital Academy

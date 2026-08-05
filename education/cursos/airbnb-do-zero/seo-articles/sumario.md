@@ -1,11 +1,11 @@
-# Artigos SEO — Airbnb do Zero
-1. Como montar um Airbnb no litoral em 2026
-2. O que o hóspede valoriza no litoral
-3. Como tirar fotos de imóvel para temporada
-4. Preço de temporada no litoral: como definir
-5. Como aumentar avaliações no Airbnb
-6. Regras da casa para temporada
-7. Automação para Airbnb no litoral
-8. Temporada vs long stay: qual escolher
-9. SEO local para anúncios de temporada
-10. Gestão de limpeza e manutenção
+# Artigos SEO — Airbnb Do Zero
+1. Airbnb Do Zero em 2026
+2. Como aplicar airbnb do zero no litoral
+3. Resultados reais de airbnb do zero
+4. Método passo a passo de airbnb do zero
+5. Erros comuns em airbnb do zero
+6. Ferramentas para airbnb do zero
+7. Cases de airbnb do zero no litoral
+8. Como medir resultado em airbnb do zero
+9. Como começar em airbnb do zero
+10. FAQ sobre airbnb do zero

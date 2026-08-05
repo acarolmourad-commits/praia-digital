@@ -1,11 +1,20 @@
-# Posts Instagram — Captação e Exclusividade para Corretores
-1. Post: 3 erros que matam a captação
-2. Reels: como captar em 30s
-3. Carrossel: checklist de proposta
-4. Post: exclusividade na prática
-5. Reels: dica de abordagem
-6. Carrossel: diferenciais locais
-7. Post: temporada de captação
-8. Reels: case de venda
-9. Carrossel: scripts rápidos
-10. Post: comece hoje
+1. Post: dica premium sobre captacao-exclusividade
+2. Reels: resultado em 30s
+3. Carrossel: checklist rápido
+4. Post: caso real
+5. Reels: ferramenta prática
+6. Post: dica premium sobre captacao-exclusividade
+7. Reels: resultado em 30s
+8. Carrossel: checklist rápido
+9. Post: caso real
+10. Reels: ferramenta prática
+11. Post: dica premium sobre captacao-exclusividade
+12. Reels: resultado em 30s
+13. Carrossel: checklist rápido
+14. Post: caso real
+15. Reels: ferramenta prática
+16. Post: dica premium sobre captacao-exclusividade
+17. Reels: resultado em 30s
+18. Carrossel: checklist rápido
+19. Post: caso real
+20. Reels: ferramenta prática

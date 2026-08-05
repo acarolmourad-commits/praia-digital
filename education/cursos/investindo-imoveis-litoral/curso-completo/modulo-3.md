@@ -1,12 +1,33 @@
-# Módulo 3 — Análise de Oportunidades
-## Aula 3.1 — Documentação Essencial
-Conteúdo: matrícula, IPTU, cer tidões, dívidas, usucapião.
+# Módulo 3 — Conteúdo Premium
+## Aula 3.1 — Introdução ao módulo
+Conteúdo: visão geral, objetivo, aplicação prática no litoral.
 
-## Aula 3.2 — Due Diligence
-Conteúdo: visita, vistoria, engenheiro, análise estrutural.
+## Aula 3.2 — Conceitos aplicados
+Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
 
-## Aula 3.3 — Negociação e Fechamento
-Conteúdo: proposta, contraproposta, contrato de compromisso, sinal.
+## Aula 3.3 — Estudo de caso
+Conteúdo: caso real, análise, lições.
 
 ## Exercício
-Fazer due diligence de um imóvel exemplo.
+Aplicação prática no seu contexto.
+
+## Resumo
+Pontos-chave para revisão.
+
+## Checklist
+- [ ] Conceitos entendidos
+- [ ] Caso analisado
+- [ ] Exercício aplicado
+
+## Materiais para download
+- PDF do módulo
+- Templates
+- Planilha
+
+## Ferramentas recomendadas
+- Ferramenta 1
+- Ferramenta 2
+- Ferramenta 3
+
+## Prompt de IA
+Prompt para acelerar tarefas deste módulo.

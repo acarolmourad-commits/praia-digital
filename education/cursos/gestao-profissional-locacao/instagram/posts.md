@@ -1,11 +1,20 @@
-# Posts Instagram — Gestão Profissional da Locação
-1. Post: 3 erros que matam a locação no litoral
-2. Reels: como aumentar avaliação em 30s
-3. Carrossel: checklist operacional
-4. Post: limpeza que impressiona
-5. Reels: dica de atendimento
-6. Carrossel: indicadores essenciais
-7. Post: automação simples
-8. Reels: case de avaliação
-9. Carrossel: terceirização
-10. Post: escala sem dor
+1. Post: dica premium sobre gestao-profissional-locacao
+2. Reels: resultado em 30s
+3. Carrossel: checklist rápido
+4. Post: caso real
+5. Reels: ferramenta prática
+6. Post: dica premium sobre gestao-profissional-locacao
+7. Reels: resultado em 30s
+8. Carrossel: checklist rápido
+9. Post: caso real
+10. Reels: ferramenta prática
+11. Post: dica premium sobre gestao-profissional-locacao
+12. Reels: resultado em 30s
+13. Carrossel: checklist rápido
+14. Post: caso real
+15. Reels: ferramenta prática
+16. Post: dica premium sobre gestao-profissional-locacao
+17. Reels: resultado em 30s
+18. Carrossel: checklist rápido
+19. Post: caso real
+20. Reels: ferramenta prática

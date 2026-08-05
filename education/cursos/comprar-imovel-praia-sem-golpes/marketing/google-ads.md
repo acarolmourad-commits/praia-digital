@@ -1,4 +1,4 @@
-# Google Ads — Comprar Imovel Praia Sem Golpes
-Palavras: Comprar Imovel Praia Sem Golpes no litoral, como fazer Comprar Imovel Praia Sem Golpes, litoral
+# Google Ads — comprar-imovel-praia-sem-golpes
+Palavras: comprar imovel praia sem golpes, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

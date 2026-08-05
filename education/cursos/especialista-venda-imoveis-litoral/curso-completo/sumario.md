@@ -1,5 +1,5 @@
-# Sumário do Curso: Especialista em Venda de Imóveis no Litoral
+# Sumário do Curso: Especialista Venda Imoveis Litoral
 - Módulo 1: Fundamentos
-- Módulo 2: Captação e Atendimento
-- Módulo 3: Proposta e Negociação
-- Módulo 4: Fechamento e Pós-venda
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

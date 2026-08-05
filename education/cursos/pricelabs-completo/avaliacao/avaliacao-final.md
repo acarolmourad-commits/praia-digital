@@ -1,9 +1,9 @@
-# Avaliação Final — PriceLabs Completo
+# Avaliação Final — Pricelabs Completo
 ## Quiz
-- 20 perguntas sobre configuração, sazonalidade, eventos, integração e ROI.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Configuração do PriceLabs + relatório de resultados.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
-- 70% no quiz + configuração aprovada pelo mentor.
+- 70% no quiz + prova prática aprovada pelo mentor.

@@ -1,11 +1,10 @@
-# Posts Instagram — Ptam Na Pratica
-1. Post: dica rápida
-2. Reels: passo a passo
-3. Carrossel: erros comuns
-4. Post: case real
-5. Reels: resultado
-6. Carrossel: checklist
-7. Post: mito ou verdade
-8. Reels: antes/depois
-9. Carrossel: comece agora
-10. Post: pergunte nos comentários
+1. Post: dica sobre ptam na pratica
+2. Post: dica sobre ptam na pratica
+3. Post: dica sobre ptam na pratica
+4. Post: dica sobre ptam na pratica
+5. Post: dica sobre ptam na pratica
+6. Post: dica sobre ptam na pratica
+7. Post: dica sobre ptam na pratica
+8. Post: dica sobre ptam na pratica
+9. Post: dica sobre ptam na pratica
+10. Post: dica sobre ptam na pratica

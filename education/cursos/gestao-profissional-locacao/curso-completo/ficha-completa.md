@@ -1,161 +1,152 @@
-# Curso: Gestão Profissional da Locação
+# Curso: Gestao Profissional Locacao
 ## Nome Comercial
-**Gestão Profissional da Locação: Como Transformar Imóveis em Operações de Temporada Rentáveis**
+**Gestao Profissional Locacao: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Aprenda a estruturar check-in, limpeza, manutenção, atendimento e indicadores para operar como uma mini-hotelaria.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 45 dias, você será capaz de profissionalizar a gestão de um imóvel de temporada, reduzindo falhas e aumentando avaliações.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
-- Proprietários e investidores
-- Gestores de temporada
-- Corretores com carteira de temporada
-- Interesse: operação, rentabilidade, escala
+Proprietários, investidores e corretores do litoral.
+
+## Pré-requisitos
+Nenhum.
 
 ## Nível
 Intermediário → Avançado
 
 ## Tempo Estimado
 10 horas de aulas (40 aulas de 12 a 20 min)
-Total: 10 horas
+Total: 10 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 497
-À vista: R$ 397
-Parcelado: 12x de R$ 41,17
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
 Mini curso: R$ 147
-E-book: R$ 24,90
+E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Templates operacionais
-- Planilhas de gestão
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Profissionalize a gestão do seu imóvel de temporada e aumente receita e avaliação"**
+**"Gestao Profissional Locacao"**
 
 ## Big Idea
-Locação profissional não é só “receber hóspede”: é processo, indicadores, limpeza, manutenção e experiência.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
-- **Curso completo:** R$ 497
+- **Curso completo:** R$ 297
 - **Mini curso:** R$ 147
-- **E-book:** R$ 24,90
+- **E-book:** R$ 19,90
 
 ## Avatar
 **Nome:** Carlos / Fernanda
-**Idade:** 28 a 50 anos
-**Renda:** R$ 5k a R$ 25k/mês
-**Objetivo:** profissionalizar gestão de temporada
-**Dificuldades:** operação, limpeza, avaliação, tempo
-**Desejos:** escala, receita previsível, avaliação alta
+**Idade:** 25 a 55 anos
+**Renda:** R$ 3k a R$ 20k/mês
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Falta de processo
-- Limpeza e manutenção ruins
-- Avaliações baixas
-- Falta de tempo
-- Falta de indicadores
+- Falta de método
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Operação fluida
-- Indicadores claros
-- Avaliação alta
-- Receita previsível
-- Escala
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
+- Segurança
+- Autoridade local
 
 ## Objeções
-- "É muito caro"
-- "Já tenho experiência"
+- "Muito caro"
+- "Não funciona"
+- "É complicado"
 - "Não tenho tempo"
-- "Vou ter que contratar gente"
-- "Não compensa"
+- "Já tentei"
 
 ## Transformação
-- Processo operacional
-- Templates prontos
-- Indicadores de gestão
-- Avaliação alta
-- Receita previsível
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
-### Módulo 1 — Fundamentos da Gestão
-Aula 1.1 — O que é gestão profissional
-Aula 1.2 — Perfil do hóspede no litoral
-Aula 1.3 — Indicadores essenciais
-Exercício: mapa de processos
+### Módulo 1 — Fundamentos
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Operação
-Aula 2.1 — Check-in e check-out
-Aula 2.2 — Limpeza e manutenção
-Aula 2.3 — Regras e emergências
-Exercício: checklist operacional
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Atendimento e Avaliação
-Aula 3.1 — Atendimento humanizado
-Aula 3.2 — Como lidar com avaliações ruins
-Aula 3.3 — Comunicação com plataformas
-Exercício: simulação de atendimento
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
 ### Módulo 4 — Crescimento
-Aula 4.1 — Preço e disponibilidade
-Aula 4.2 — Automação e ferramentas
-Aula 4.3 — Escala e terceirização
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
 Exercício: plano de crescimento
 
 ## Carga Horária
-10 horas
+10 horas de aulas (40 aulas de 12 a 20 min)
+Total: 10 horas
 
 ## Material Complementar
-- Templates operacionais
 - PDFs por módulo
+- Templates
 - Comunidade fechada
+- Atualizações
 
 ## Checklists
-- Checklist operacional
-- Checklist de limpeza
-- Checklist de manutenção
-- Checklist de atendimento
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de indicadores
-- Planilha de custos operacionais
-- Planilha de avaliações
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de check-in
-- Modelo de regras
-- Modelo de mensagens
+- Modelo aplicável
 
 ## Scripts
-- Script de atendimento
-- Script de avaliação
-- Script de emergência
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para criar fluxos de atendimento.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: mapa de processos
-- Exercício 2: checklist operacional
-- Exercício 3: simulação de atendimento
-- Exercício 4: plano de crescimento
-- Exercício 5: análise de indicadores
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: plano operacional completo
+Prova prática: aplicação do método
 
 ## FAQ
-1. Preciso ter equipe? Não necessariamente.
-2. Como lidar com avaliações ruins? Responda rápido e ajuste.
-3. Vale a pena terceirizar? Pode valer.
-4. Quais indicadores acompanhar? Ocupação, avaliação e receita.
-5. Como escalar? Processos + automação.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
 [vendas.html]
@@ -188,17 +179,15 @@ Prova prática: plano operacional completo
 [marketing/google-ads.md]
 
 ## CTA
-"Profissionalize sua locação e aumente receita."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
 - Mentoria individual: R$ 2.000
-- Acompanhamento operacional: R$ 3.500
+- Acompanhamento: R$ 3.500
 
 ## Downsell
 - Mini curso: R$ 147
-- E-book: R$ 24,90
+- E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Airbnb do Zero
-- Curso de Booking do Zero
-- Curso de PriceLabs Completo
+- Outros cursos da Praia Digital Academy

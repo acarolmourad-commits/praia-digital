@@ -1,7 +1,7 @@
-# Roteiro de Webinar — PriceLabs Completo
+# Roteiro de Webinar — Pricelabs Completo
 1. Abertura: dor do público
-2. Case: aumento de receita com PriceLabs
-3. Método: 4 passos
+2. Case: aplicação prática
+3. Método: passo a passo
 4. Prova social
 5. Oferta e bônus
 6. Perguntas frequentes

@@ -1,12 +1,33 @@
-# Módulo 3 — Proposta e Negociação
-## Aula 3.1 — Proposta de valor
-Conteúdo: estrutura, benefícios, urgência.
+# Módulo 3 — Conteúdo Premium
+## Aula 3.1 — Introdução ao módulo
+Conteúdo: visão geral, objetivo, aplicação prática no litoral.
 
-## Aula 3.2 — Negociação e objeções
-Conteúdo: objeções comuns, contorno, fechamento.
+## Aula 3.2 — Conceitos aplicados
+Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
 
-## Aula 3.3 — Documentação e prazos
-Conteúdo: contratos, registros, próximos passos.
+## Aula 3.3 — Estudo de caso
+Conteúdo: caso real, análise, lições.
 
 ## Exercício
-Monte uma proposta.
+Aplicação prática no seu contexto.
+
+## Resumo
+Pontos-chave para revisão.
+
+## Checklist
+- [ ] Conceitos entendidos
+- [ ] Caso analisado
+- [ ] Exercício aplicado
+
+## Materiais para download
+- PDF do módulo
+- Templates
+- Planilha
+
+## Ferramentas recomendadas
+- Ferramenta 1
+- Ferramenta 2
+- Ferramenta 3
+
+## Prompt de IA
+Prompt para acelerar tarefas deste módulo.

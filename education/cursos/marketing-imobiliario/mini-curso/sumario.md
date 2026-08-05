@@ -1,5 +1,5 @@
-# Mini Curso — Marketing Imobiliário para Corretores
-## Aula 1 — Marketing no litoral (8 min)
-## Aula 2 — Conteúdo que vende (12 min)
-## Aula 3 — Anúncios básicos (10 min)
-## Bônus — Templates de posts
+# Mini Curso — Marketing Imobiliario
+## Aula 1 — Visão geral (8 min)
+## Aula 2 — Conceitos essenciais (12 min)
+## Aula 3 — Aplicação prática (10 min)
+## Bônus — Material complementar

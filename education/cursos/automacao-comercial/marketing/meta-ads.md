@@ -1,5 +1,5 @@
-# Meta Ads — Automacao Comercial
-Público: 25 a 55 anos, interesse em Automacao Comercial, litoral
+# Meta Ads — automacao-comercial
+Público: 25 a 55 anos, interesse no tema, litoral
 Objetivo: leads
 Formato: vídeo + carrossel
 Orçamento sugerido: R$ 40 a R$ 120/dia

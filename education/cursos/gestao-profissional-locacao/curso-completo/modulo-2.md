@@ -1,12 +1,33 @@
-# Módulo 2 — Operação
-## Aula 2.1 — Check-in e check-out
-Conteúdo: recepção, orientação, autônomo, presencial.
+# Módulo 2 — Conteúdo Premium
+## Aula 2.1 — Introdução ao módulo
+Conteúdo: visão geral, objetivo, aplicação prática no litoral.
 
-## Aula 2.2 — Limpeza e manutenção
-Conteúdo: checklist, equipe, custos, padrão.
+## Aula 2.2 — Conceitos aplicados
+Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
 
-## Aula 2.3 — Regras e emergências
-Conteúdo: regras da casa, emergências, contatos.
+## Aula 2.3 — Estudo de caso
+Conteúdo: caso real, análise, lições.
 
 ## Exercício
-Monte checklist operacional.
+Aplicação prática no seu contexto.
+
+## Resumo
+Pontos-chave para revisão.
+
+## Checklist
+- [ ] Conceitos entendidos
+- [ ] Caso analisado
+- [ ] Exercício aplicado
+
+## Materiais para download
+- PDF do módulo
+- Templates
+- Planilha
+
+## Ferramentas recomendadas
+- Ferramenta 1
+- Ferramenta 2
+- Ferramenta 3
+
+## Prompt de IA
+Prompt para acelerar tarefas deste módulo.

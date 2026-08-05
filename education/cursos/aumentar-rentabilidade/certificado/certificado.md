@@ -1,7 +1,6 @@
-# Certificado — Como Aumentar em 30% a Rentabilidade
+# Certificado — Aumentar Rentabilidade
 Modelo: Praia Digital Academy
-Curso: Como Aumentar em 30% a Rentabilidade
-Carga horária: 4 horas
+Curso: Aumentar Rentabilidade
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

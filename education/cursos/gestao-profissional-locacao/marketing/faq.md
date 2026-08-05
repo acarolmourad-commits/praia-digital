@@ -1,11 +1,11 @@
-# FAQ — Gestão Profissional da Locação
-1. Preciso de equipe? Não necessariamente.
-2. Como lidar com avaliações ruins? Responda rápido.
-3. Vale a pena terceirizar? Pode valer.
-4. Quais indicadores acompanhar? Ocupação, avaliação e receita.
-5. Como escalar? Processos + automação.
-6. Quanto tempo para ver resultado? De 30 a 60 dias.
-7. Preciso de software? Pode ser manual.
-8. Como reduzir cancelamentos? Políticas claras.
-9. Qual canal priorizar? Airbnb e Booking.
-10. Como medir sucesso? Indicadores.
+# FAQ — Gestao Profissional Locacao
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
+6. Qual o investimento? R$ 297.
+7. Tem suporte? Sim.
+8. Como acessar? Plataforma online.
+9. Tem certificado? Sim.
+10. Posso parcelar? Sim.

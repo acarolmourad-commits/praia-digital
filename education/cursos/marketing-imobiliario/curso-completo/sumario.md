@@ -1,5 +1,5 @@
-# Sumário do Curso: Marketing Imobiliário para Corretores
+# Sumário do Curso: Marketing Imobiliario
 - Módulo 1: Fundamentos
-- Módulo 2: Conteúdo
-- Módulo 3: Anúncios
-- Módulo 4: Conversão
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

@@ -1,19 +1,18 @@
-# Curso: Primeiro Imóvel no Litoral
+# Curso: Primeiro Imovel Litoral
 ## Nome Comercial
-**Primeiro Imóvel no Litoral: Como Comprar seu Primeiro Imóvel na Praia sem Medo e sem Erros**
+**Primeiro Imovel Litoral: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Um guia prático para quem está comprando pela primeira vez no litoral: do planejamento à entrega das chaves, sem surpresas.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 60 dias, você terá um plano personalizado para comprar seu primeiro imóvel no litoral, com checklist, orçamento e roteiro de negociação.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
-- Pessoas de 25 a 50 anos
-- Renda familiar R$ 5k a R$ 20k/mês
-- Interesse: primeira casa, segunda residência ou presente para família
-- Perfil: iniciante, sem experiência
-- Região: Sudeste e Sul
+Proprietários, investidores e corretores do litoral.
+
+## Pré-requisitos
+Nenhum.
 
 ## Nível
 Iniciante
@@ -21,187 +20,176 @@ Iniciante
 ## Tempo Estimado
 8 horas de aulas (35 aulas de 10 a 20 min)
 + exercícios: 4 horas
-Total: 12 horas
+Total: 12 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
 Curso completo: R$ 297
-À vista: R$ 247
-Parcelado: 12x de R$ 24,75
-Mini curso: R$ 97
+À vista: 267
+Parcelado: 12x de R$ 24.75
+Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
-- Acesso vitalício
-- Checklist do primeiro imóvel
-- Planilha de orçamento
+- Acesso vitalício + atualizações
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Compre seu primeiro imóvel no litoral em até 12 meses, mesmo que nunca tenha feito isso antes"**
+**"Primeiro Imovel Litoral"**
 
 ## Big Idea
-Comprar o primeiro imóvel no litoral não é sorte: é planejamento financeiro, escolha certa de região e um roteiro seguro.
+Conteúdo premium aplicado ao mercado do litoral.
+
+## Oferta
+- **Curso completo:** R$ 297
+- **Mini curso:** R$ 147
+- **E-book:** R$ 19,90
 
 ## Avatar
-**Nome:** Ana / Carlos
-**Idade:** 28 a 45 anos
-**Renda:** R$ 6k a R$ 18k/mês
-**Objetivo:** comprar primeiro imóvel no litoral
-**Dificuldades:** orçamento, documentação, medo de erro
-**Desejos:** tranquilidade, valorização, segurança
+**Nome:** Carlos / Fernanda
+**Idade:** 25 a 55 anos
+**Renda:** R$ 3k a R$ 20k/mês
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Não sabe por onde começar
-- Medo de golpes
-- Dificuldade com orçamento
-- Não entende financiamento
-- Falta de tempo
+- Falta de método
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Planejamento passo a passo
-- Clareza no orçamento
-- Segurança na escolha
-- Processo simples
-- Resultado rápido
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
+- Segurança
+- Autoridade local
 
 ## Objeções
-- "É muito caro"
-- "Não sei se consigo financiar"
-- "E se eu me arrepender?"
-- "Não tenho tempo para estudar"
-- "Vou errar de qualquer forma"
+- "Muito caro"
+- "Não funciona"
+- "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- Plano personalizado de compra
-- Orçamento estruturado
-- Rede de profissionais
-- Segurança emocional
-- Primeiro imóvel comprado
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
-### Módulo 1 — Planejamento Financeiro
-Aula 1.1 — Definindo o objetivo
-Aula 1.2 — Orçamento e entrada
-Aula 1.3 — Financiamento e consórcio
-Exercício: planilha orçamentária
+### Módulo 1 — Fundamentos
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Escolha da Região
-Aula 2.1 — Cidades e bairros
-Aula 2.2 — Temporada vs moradia
-Aula 2.3 — Infraestrutura e acessos
-Exercício: escolha 3 bairros e justifique
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Documentação e Riscos
-Aula 3.1 — Documentação essencial
-Aula 3.2 — Riscos e como evitar
-Aula 3.3 — Checklist de compra segura
-Exercício: checklist preenchido
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Negociação e Fechamento
-Aula 4.1 — Oferta justa
-Aula 4.2 — Tipos de contrato
-Aula 4.3 — Escritura e registro
-Exercício: proposta de compra
-
-### Módulo 5 — Pós-compra
-Aula 5.1 — Pós-venda
-Aula 5.2 — Reforma e adaptação
-Aula 5.3 — Locação temporada
-Exercício: plano de locação
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
+Exercício: plano de crescimento
 
 ## Carga Horária
-12 horas
+8 horas de aulas (35 aulas de 10 a 20 min)
++ exercícios: 4 horas
+Total: 12 horas
 
 ## Material Complementar
-- E-book complementar
-- PDFs resumidos
+- PDFs por módulo
+- Templates
 - Comunidade fechada
+- Atualizações
 
 ## Checklists
-- Checklist financeiro
-- Checklist de documentação
-- Checklist de vistoria
-- Checklist de negociação
-- Checklist de pós-compra
+- Checklist por módulo
 
 ## Planilhas
-- Planilha orçamentária
-- Planilha de financiamento
-- Planilha de custos ocultos
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de proposta de compra
-- Modelo de checklist de documentos
+- Modelo aplicável
 
 ## Scripts
-- Script para negociação
-- Script para corretor
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para calcular orçamento e financing.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: orçamento
-- Exercício 2: escolha de região
-- Exercício 3: análise documental
-- Exercício 4: proposta
-- Exercício 5: plano de locação
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
-Quiz final 20 perguntas
-Prova prática: plano de compra completo
+Quiz 20 perguntas
+Prova prática: aplicação do método
 
 ## FAQ
-1. Preciso de entrada alta? Não necessariamente.
-2. Consigo financiar? Depende do perfil.
-3. Vale a pena comprar na planta? Pode valer a pena.
-4. Como escolher o bairro? Priorize liquidez e infraestrutura.
-5. E se eu me arrepender? Resgate com cláusulas claras.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
-[Em construção no próximo passo]
+[vendas.html]
 
 ## Landing Page
-[Em construção no próximo passo]
+[index.html]
 
 ## Sequência de E-mails
-[Em construção no próximo passo]
+[email-sequence/sequencia.md]
 
 ## Posts Instagram
-[Em construção no próximo passo]
+[instagram/posts.md]
 
 ## Reels
-[Em construção no próximo passo]
+[marketing/reels.md]
 
 ## Carrosséis
-[Em construção no próximo passo]
+[marketing/carrosseis.md]
 
 ## Artigos SEO
-[Em construção no próximo passo]
+[seo-articles/sumario.md]
 
 ## Roteiros YouTube
-[Em construção no próximo passo]
+[marketing/youtube.md]
 
 ## Anúncios Meta
-[Em construção no próximo passo]
+[marketing/meta-ads.md]
 
 ## Anúncios Google
-[Em construção no próximo passo]
+[marketing/google-ads.md]
 
 ## CTA
-"Comece seu primeiro imóvel no litoral com método."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Consultoria individual: R$ 1.500
-- Acompanhamento de compra: R$ 2.000
-- Clube de descontos: R$ 500/ano
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
-- Mini curso: R$ 97
+- Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Financiamento sem Complicação
-- Curso de Como Comprar sem Golpes
-- Curso de Avaliação de Imóveis
+- Outros cursos da Praia Digital Academy

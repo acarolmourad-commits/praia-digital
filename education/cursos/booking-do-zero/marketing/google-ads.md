@@ -1,4 +1,4 @@
-# Google Ads — Booking do Zero
-Palavras: booking no litoral, temporada no litoral, imóvel para temporada, aluguel na praia
+# Google Ads — booking-do-zero
+Palavras: booking do zero, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

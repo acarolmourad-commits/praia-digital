@@ -1,12 +1,33 @@
-# Módulo 2 — Receita
-## Aula 2.1 — Preço certo
-Conteúdo: comparativos, temporada, eventos.
+# Módulo 2 — Conteúdo Premium
+## Aula 2.1 — Introdução ao módulo
+Conteúdo: visão geral, objetivo, aplicação prática no litoral.
 
-## Aula 2.2 — Temporada e eventos
-Conteúdo: alta temporada, feriados, festivais.
+## Aula 2.2 — Conceitos aplicados
+Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
 
-## Aula 2.3 — Upsell e pacotes
-Conteúdo: experiências, serviços, pacotes.
+## Aula 2.3 — Estudo de caso
+Conteúdo: caso real, análise, lições.
 
 ## Exercício
-Monte plano de receita.
+Aplicação prática no seu contexto.
+
+## Resumo
+Pontos-chave para revisão.
+
+## Checklist
+- [ ] Conceitos entendidos
+- [ ] Caso analisado
+- [ ] Exercício aplicado
+
+## Materiais para download
+- PDF do módulo
+- Templates
+- Planilha
+
+## Ferramentas recomendadas
+- Ferramenta 1
+- Ferramenta 2
+- Ferramenta 3
+
+## Prompt de IA
+Prompt para acelerar tarefas deste módulo.

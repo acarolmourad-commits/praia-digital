@@ -1,4 +1,4 @@
-# Google Ads — Crm Para Corretores
-Palavras: Crm Para Corretores no litoral, como fazer Crm Para Corretores, litoral
+# Google Ads — crm-para-corretores
+Palavras: crm para corretores, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

@@ -1,198 +1,193 @@
-# Curso: Documentação Imobiliária
+# Curso: Documentacao Imobiliaria
 ## Nome Comercial
-**Documentação Imobiliária: Como Evitar Erros, Riscos e Atrasos no Litoral**
+**Documentacao Imobiliaria: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Do contrato ao registro: documentos, prazos, cuidados e compliance para compra e venda no litoral.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 20 dias, você será capaz de revisar, preparar e orientar documentação imobiliária com segurança.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
-- Corretores de 22 a 50 anos
-- Interesse: compliance, documentação, processo
-- Perfil: iniciante ou intermediário
+Proprietários, investidores e corretores do litoral.
+
+## Pré-requisitos
+Nenhum.
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
 6 horas de aulas (28 aulas de 10 a 16 min)
-Total: 6 horas
+Total: 6 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
 Curso completo: R$ 297
-À vista: R$ 247
-Parcelado: 12x de R$ 20,58
-Mini curso: R$ 97
-E-book: R$ 14,90
+À vista: 267
+Parcelado: 12x de R$ 24.75
+Mini curso: R$ 147
+E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklists documentais
-- Modelos
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Evite erros, riscos e atrasos na documentação imobiliária do litoral"**
+**"Documentacao Imobiliaria"**
 
 ## Big Idea
-Documentação mal feita causa prejuízo e tempo. Quem domina o processo protege cliente e negócio.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
 - **Curso completo:** R$ 297
-- **Mini curso:** R$ 97
-- **E-book:** R$ 14,90
+- **Mini curso:** R$ 147
+- **E-book:** R$ 19,90
 
 ## Avatar
-**Nome:** João / Ana
-**Idade:** 22 a 50 anos
-**Renda:** R$ 2k a R$ 10k/mês
-**Objetivo:** evitar erros documentais
-**Dificuldades:** documentos, prazos, compliance
-**Desejos:** segurança, velocidade, reputação
+**Nome:** Carlos / Fernanda
+**Idade:** 25 a 55 anos
+**Renda:** R$ 3k a R$ 20k/mês
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Documentação incompleta
-- Erros cartorários
-- Atrasos
-- Falta de checklist
-- Medo de problema judicial
+- Falta de método
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Processo seguro
-- Checklist claro
-- Documentos corretos
-- Prazos cumpridos
-- Cliente protegido
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
+- Segurança
+- Autoridade local
 
 ## Objeções
-- "É caro"
-- "Já sei documentação"
-- "Demora"
-- "E se errar?"
-- "Não compensa"
+- "Muito caro"
+- "Não funciona"
+- "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- Checklist documental
-- Documentos corretos
-- Processo rápido
-- Segurança jurídica
-- Reputação
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
 ### Módulo 1 — Fundamentos
-Aula 1.1 — Documentação essencial
-Aula 1.2 — Prazos e responsabilidades
-Aula 1.3 — Compliance básico
-Exercício: checklist inicial
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Contratos
-Aula 2.1 — Tipos de contrato
-Aula 2.2 — Cláusulas essenciais
-Aula 2.3 — Assinatura e validade
-Exercício: revisão de contrato
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Registro e Cartório
-Aula 3.1 — Escritura e registro
-Aula 3.2 — Certidões
-Aula 3.3 — Transferência
-Exercício: lista de certidões
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Riscos e Proteção
-Aula 4.1 — Erros comuns
-Aula 4.2 — Como evitar
-Aula 4.3 — Seguros e garantias
-Exercício: plano de proteção
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
+Exercício: plano de crescimento
 
 ## Carga Horária
-6 horas
+6 horas de aulas (28 aulas de 10 a 16 min)
+Total: 6 horas
 
 ## Material Complementar
-- Checklists
-- Modelos
+- PDFs por módulo
+- Templates
 - Comunidade fechada
+- Atualizações
 
 ## Checklists
-- Checklist de compra
-- Checklist de venda
-- Checklist de cartório
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de prazos
-- Planilha de documentos
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de contrato
-- Modelo de checklist
+- Modelo aplicável
 
 ## Scripts
-- Script de orientação ao cliente
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para gerar checklists e modelos.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: checklist
-- Exercício 2: contrato
-- Exercício 3: certidões
-- Exercício 4: prazos
-- Exercício 5: plano de proteção
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
-Quiz 15 perguntas
-Prova prática: checklist completo
+Quiz 20 perguntas
+Prova prática: aplicação do método
 
 ## FAQ
-1. Quais documentos são essenciais? Lista padrão + específicos.
-2. Quanto tempo leva? De 15 a 60 dias.
-3. Como evitar erros? Checklist e revisão.
-4. E se faltar documento? Atraso e risco.
-5. Vale a pena ter assessoria? Depende.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
-[Em construção no próximo passo]
+[vendas.html]
 
 ## Landing Page
-[Em construção no próximo passo]
+[index.html]
 
 ## Sequência de E-mails
-[Em construção no próximo passo]
+[email-sequence/sequencia.md]
 
 ## Posts Instagram
-[Em construção no próximo passo]
+[instagram/posts.md]
 
 ## Reels
-[Em construção no próximo passo]
+[marketing/reels.md]
 
 ## Carrosséis
-[Em construção no próximo passo]
+[marketing/carrosseis.md]
 
 ## Artigos SEO
-[Em construção no próximo passo]
+[seo-articles/sumario.md]
 
 ## Roteiros YouTube
-[Em construção no próximo passo]
+[marketing/youtube.md]
 
 ## Anúncios Meta
-[Em construção no próximo passo]
+[marketing/meta-ads.md]
 
 ## Anúncios Google
-[Em construção no próximo passo]
+[marketing/google-ads.md]
 
 ## CTA
-"Evite erros e atrasos na documentação imobiliária."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Mentoria: R$ 2.000
-- Acompanhamento: R$ 3.000
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
-- Mini curso: R$ 97
-- E-book: R$ 14,90
+- Mini curso: R$ 147
+- E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Avaliação de Imóveis
-- Curso de Venda de Imóveis no Litoral
-- Curso de PTAM na Prática
+- Outros cursos da Praia Digital Academy

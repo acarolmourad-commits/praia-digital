@@ -1,5 +1,5 @@
-# E-book Derivado — PriceLabs Completo
-Título: Guia Rápido de PriceLabs para Temporada no Litoral
+# E-book Derivado — Pricelabs Completo
+Título: Guia Rápido sobre Pricelabs Completo
 Formato: PDF 20 a 30 páginas
-Preço: gratuito ou R$ 17,90
-Conteúdo: checklist, templates, dicas rápidas.
+Preço: gratuito ou R$ 19,90
+Conteúdo: resumo, templates, dicas rápidas.

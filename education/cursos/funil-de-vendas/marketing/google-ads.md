@@ -1,4 +1,4 @@
-# Google Ads — Funil De Vendas
-Palavras: Funil De Vendas no litoral, como fazer Funil De Vendas, litoral
+# Google Ads — funil-de-vendas
+Palavras: funil de vendas, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

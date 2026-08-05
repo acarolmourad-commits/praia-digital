@@ -1,200 +1,193 @@
-# Curso: CRM para Corretores
+# Curso: Crm Para Corretores
 ## Nome Comercial
-**CRM para Corretores: Como Organizar Leads, Vender Mais e Não Perder Nenhuma Oportunidade**
+**Crm Para Corretores: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Do primeiro contato ao fechamento: organização, follow-up, automação e métricas com CRM aplicado ao litoral.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 20 dias, você será capaz de organizar leads, automatizar follow-up e medir resultados com CRM.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
-- Corretores de 22 a 50 anos
-- Interesse: organização, produtividade, vendas
-- Perfil: iniciante ou intermediário
+Proprietários, investidores e corretores do litoral.
+
+## Pré-requisitos
+Nenhum.
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
 6 horas de aulas (30 aulas de 10 a 16 min)
-Total: 6 horas
+Total: 6 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
 Curso completo: R$ 297
-À vista: R$ 247
-Parcelado: 12x de R$ 20,58
-Mini curso: R$ 97
-E-book: R$ 14,90
+À vista: 267
+Parcelado: 12x de R$ 24.75
+Mini curso: R$ 147
+E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Templates de CRM
-- Scripts de follow-up
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Organize leads, aumente vendas e não perca nenhuma oportunidade com CRM"**
+**"Crm Para Corretores"**
 
 ## Big Idea
-CRM não é só ferramenta: é método. Quem organiza leads e follow-up vende mais e perde menos.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
 - **Curso completo:** R$ 297
-- **Mini curso:** R$ 97
-- **E-book:** R$ 14,90
+- **Mini curso:** R$ 147
+- **E-book:** R$ 19,90
 
 ## Avatar
-**Nome:** João / Ana
-**Idade:** 22 a 45 anos
-**Renda:** R$ 2k a R$ 10k/mês
-**Objetivo:** organização e vendas
-**Dificuldades:** leads perdidos, follow-up, ferramentas
-**Desejos:** produtividade, conversão, organização
+**Nome:** Carlos / Fernanda
+**Idade:** 25 a 55 anos
+**Renda:** R$ 3k a R$ 20k/mês
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Leads perdidos
-- Follow-up desorganizado
 - Falta de método
-- Falta de métricas
-- Falta de tempo
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Organização
-- Follow-up automático
-- Vendas previsíveis
-- Métricas claras
-- Mais tempo
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
+- Segurança
+- Autoridade local
 
 ## Objeções
-- "É caro"
-- "Não entendo de tecnologia"
-- "Demora para configurar"
-- "Não compensa"
-- "E se eu errar?"
+- "Muito caro"
+- "Não funciona"
+- "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- CRM configurado
-- Follow-up automático
-- Leads organizados
-- Métricas claras
-- Vendas previsíveis
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
 ### Módulo 1 — Fundamentos
-Aula 1.1 — CRM para corretores
-Aula 1.2 — Funil e etapas
-Aula 1.3 — Métricas essenciais
-Exercício: desenho do funil
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Configuração
-Aula 2.1 — Tipos de CRM
-Aula 2.2 — Configuração básica
-Aula 2.3 — Integração com WhatsApp e e-mail
-Exercício: configuração inicial
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Operação
-Aula 3.1 — Follow-up automático
-Aula 3.2 — Scripts e templates
-Aula 3.3 — Atendimento humanizado
-Exercício: sequência de follow-up
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
 ### Módulo 4 — Crescimento
-Aula 4.1 — Métricas e relatórios
+Aula 4.1 — Métricas
 Aula 4.2 — Otimização
-Aula 4.3 — Escala e automação
-Exercício: relatório mensal
+Aula 4.3 — Escala
+Exercício: plano de crescimento
 
 ## Carga Horária
-6 horas
+6 horas de aulas (30 aulas de 10 a 16 min)
+Total: 6 horas
 
 ## Material Complementar
-- Templates de CRM
-- Scripts
+- PDFs por módulo
+- Templates
 - Comunidade fechada
+- Atualizações
 
 ## Checklists
-- Checklist de CRM
-- Checklist de follow-up
-- Checklist de métricas
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de leads
-- Planilha de funil
-- Planilha de ROI
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de follow-up
-- Modelo de proposta
+- Modelo aplicável
 
 ## Scripts
-- Script de follow-up
-- Script de atendimento
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para criar sequências de follow-up.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: funil
-- Exercício 2: configuração
-- Exercício 3: follow-up
-- Exercício 4: métricas
-- Exercício 5: relatório
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
-Quiz 15 perguntas
-Prova prática: CRM operando
+Quiz 20 perguntas
+Prova prática: aplicação do método
 
 ## FAQ
-1. Qual CRM usar? Depende do tamanho.
-2. Preciso pagar? Existem opções gratuitas.
-3. Como automatizar? Sequências e templates.
-4. E se eu errar? Ajuste com métricas.
-5. Vale a pena? Sim, para organização.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
-[Em construção no próximo passo]
+[vendas.html]
 
 ## Landing Page
-[Em construção no próximo passo]
+[index.html]
 
 ## Sequência de E-mails
-[Em construção no próximo passo]
+[email-sequence/sequencia.md]
 
 ## Posts Instagram
-[Em construção no próximo passo]
+[instagram/posts.md]
 
 ## Reels
-[Em construção no próximo passo]
+[marketing/reels.md]
 
 ## Carrosséis
-[Em construção no próximo passo]
+[marketing/carrosseis.md]
 
 ## Artigos SEO
-[Em construção no próximo passo]
+[seo-articles/sumario.md]
 
 ## Roteiros YouTube
-[Em construção no próximo passo]
+[marketing/youtube.md]
 
 ## Anúncios Meta
-[Em construção no próximo passo]
+[marketing/meta-ads.md]
 
 ## Anúncios Google
-[Em construção no próximo passo]
+[marketing/google-ads.md]
 
 ## CTA
-"Organize leads e venda mais com CRM."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Mentoria: R$ 2.000
-- Acompanhamento: R$ 3.000
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
-- Mini curso: R$ 97
-- E-book: R$ 14,90
+- Mini curso: R$ 147
+- E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Funil de Vendas
-- Curso de WhatsApp que Vende
-- Curso de Marketing Imobiliário
+- Outros cursos da Praia Digital Academy

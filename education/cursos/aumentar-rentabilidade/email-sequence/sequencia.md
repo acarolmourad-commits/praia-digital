@@ -1,21 +1,21 @@
-# Sequência de E-mails — Como Aumentar em 30% a Rentabilidade
+# Sequência de E-mails — Aumentar Rentabilidade
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido de Rentabilidade no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Aumentar Rentabilidade (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Como aumentei a rentabilidade em 35% em 45 dias
+Assunto: Case prático de Aumentar Rentabilidade
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: “Já faço de tudo”
+Assunto: "Aumentar Rentabilidade é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno aumentou a receita em 30%
+Assunto: Aluno obteve resultado com Aumentar Rentabilidade
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

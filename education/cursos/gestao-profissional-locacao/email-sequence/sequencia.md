@@ -1,21 +1,21 @@
-# Sequência de E-mails — Gestão Profissional da Locação
+# Sequência de E-mails — Gestao Profissional Locacao
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido de Gestão de Temporada (PDF + planilha)
+Assunto: Guia Rápido sobre Gestao Profissional Locacao (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Como profissionalizei a gestão e aumentei a avaliação para 4.9
+Assunto: Case prático de Gestao Profissional Locacao
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: “Gestão profissional dá muito trabalho?”
+Assunto: "Gestao Profissional Locacao é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno profissionalizou a operação em 30 dias
+Assunto: Aluno obteve resultado com Gestao Profissional Locacao
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

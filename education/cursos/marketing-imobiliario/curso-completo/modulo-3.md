@@ -1,12 +1,33 @@
-# Módulo 3 — Anúncios
-## Aula 3.1 — Meta Ads
-Conteúdo: público, formato, orçamento.
+# Módulo 3 — Conteúdo Premium
+## Aula 3.1 — Introdução ao módulo
+Conteúdo: visão geral, objetivo, aplicação prática no litoral.
 
-## Aula 3.2 — Google Ads
-Conteúdo: busca, display, palavras-chave.
+## Aula 3.2 — Conceitos aplicados
+Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
 
-## Aula 3.3 — Remarketing
-Conteúdo: públicos, mensagens, conversão.
+## Aula 3.3 — Estudo de caso
+Conteúdo: caso real, análise, lições.
 
 ## Exercício
-Monte campanha de anúncios.
+Aplicação prática no seu contexto.
+
+## Resumo
+Pontos-chave para revisão.
+
+## Checklist
+- [ ] Conceitos entendidos
+- [ ] Caso analisado
+- [ ] Exercício aplicado
+
+## Materiais para download
+- PDF do módulo
+- Templates
+- Planilha
+
+## Ferramentas recomendadas
+- Ferramenta 1
+- Ferramenta 2
+- Ferramenta 3
+
+## Prompt de IA
+Prompt para acelerar tarefas deste módulo.

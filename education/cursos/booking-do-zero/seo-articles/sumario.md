@@ -1,11 +1,11 @@
-# Artigos SEO — Booking do Zero
-1. Como montar um Booking no litoral em 2026
-2. O que o hóspede valoriza no litoral
-3. Como tirar fotos de imóvel para temporada
-4. Preço de temporada no litoral: como definir
-5. Como aumentar avaliações no Booking
-6. Regras da casa para temporada
-7. Automação para Booking no litoral
-8. Temporada vs long stay: qual escolher
-9. SEO local para anúncios de temporada
-10. Gestão de limpeza e manutenção
+# Artigos SEO — Booking Do Zero
+1. Booking Do Zero em 2026
+2. Como aplicar booking do zero no litoral
+3. Resultados reais de booking do zero
+4. Método passo a passo de booking do zero
+5. Erros comuns em booking do zero
+6. Ferramentas para booking do zero
+7. Cases de booking do zero no litoral
+8. Como medir resultado em booking do zero
+9. Como começar em booking do zero
+10. FAQ sobre booking do zero
