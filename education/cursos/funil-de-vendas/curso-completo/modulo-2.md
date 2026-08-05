@@ -1,48 +1,63 @@
-# Módulo 2 — Aplicação Prática
+# Módulo 2 — Geração de Leads
 
 ## Introdução
-Aplique o método na prática com exemplos reais e evite erros comuns.
+Aprenda a gerar leads qualificados, captar contatos e montar fontes de leads no litoral.
 
-## Aula 2.1 — Passo a passo prático
-- Etapas claras
-- Ação imediata
-- Verificação de resultado
+## Aula 2.1 — Fontes de leads
+**Canais:**
+- Portais de imóveis.
+- Redes sociais.
+- Indicações.
+- Anúncios.
 
-**Exemplo real:** Profissional aplicou o passo a passo e obteve ganhos rápidos em 15 dias.
+**Exemplo real:**
+Corretor usou portais e indicações e gerou 30 leads/mês.
 
-## Aula 2.2 — Exemplos reais
-- Caso 1
-- Caso 2
-- Lições aplicáveis
+## Aula 2.2 — Captura e qualificação
+**Captura:**
+- Landing page.
+- WhatsApp.
+- Formulário.
 
-**Estudo de caso:** Aplicação prática gerou aumento mensurável em 30 dias.
+**Qualificação:**
+- Perfil.
+- Orçamento.
+- Prazo.
 
-## Aula 2.3 — Erros comuns
-- Erro 1
-- Erro 2
-- Erro 3
-- Como evitar
+**Exemplo real:**
+Corretor qualificou leads e dobrou conversão.
 
-## Exercício
-Aplique o método em um cenário real.
+## Aula 2.3 — Ferramentas e custos
+**Ferramentas:**
+- CRM.
+- Automação.
+- Planilha.
+
+**Custos:**
+- Anúncios: R$ 200 a R$ 500/mês.
+- Ferramentas: R$ 50 a R$ 300/mês.
+
+**Exercício:**
+Monte um plano de geração de leads.
 
 ## Resumo
-- Passo a passo reduz risco
-- Exemplos aceleram aprendizado
-- Erros evitados poupam tempo
+- Fontes geram leads.
+- Qualificação aumenta conversão.
+- Ferramentas reduzem esforço.
 
 ## Checklist
-- [ ] Passos executados
-- [ ] Resultados verificados
-- [ ] Ajustes aplicados
+- [ ] Fontes definidas
+- [ ] Captura criada
+- [ ] Qualificação estruturada
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de aplicação
+- Planilha de leads
 
 ## Ferramentas recomendadas
-- Planilha de acompanhamento
-- App de gestão
+- CRM
+- WhatsApp Business
+- Planilha
 
 ## Prompt de IA
-"Atue como especialista prático. Monte um plano de aplicação para este cenário: [dados]."
+"Atue como especialista em funil de vendas. Monte um plano de geração de leads para este cenário: [dados]."

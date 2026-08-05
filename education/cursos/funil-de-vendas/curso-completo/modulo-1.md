@@ -1,37 +1,60 @@
-# Módulo 1 — Fundamentos
+# Módulo 1 — Fundamentos do Funil
 
 ## Introdução
-Entenda o contexto, o seu perfil e as métricas essenciais para funil de vendas, leads, qualificação e conversão.
+Entenda o que é funil de vendas, o método e o perfil do corretor no litoral. O objetivo é estruturar um funil simples e eficiente.
 
-## Aula 1.1 — Contexto e oportunidades
-- Mercado atual
-- Oportunidades no litoral
-- Particularidades regionais
+## Aula 1.1 — O que é funil de vendas
+Funil de vendas é um processo estruturado que acompanha o lead desde o primeiro contato até o fechamento.
 
-**Exemplo real:** Profissional identificou oportunidade em região em crescimento e aumentou resultado em 25%.
+**Características:**
+- Etapas claras.
+- Acompanhamento ativo.
+- Conversão medida.
 
-## Aula 1.2 — Perfil e objetivos
-- Perfil do aluno
-- Objetivos claros
-- Metas realistas
+**Exemplo real:**
+Corretor montou funil e aumentou conversão de 8% para 22%.
 
-## Aula 1.3 — Métricas e metas
-- Métricas essenciais
-- Metas de curto, médio e longo prazo
-- Revisão
+**Estudo de caso:**
+Corretor sem follow-up; funil corrigiu o processo.
 
-## Exercício
-Faça o diagnóstico do seu cenário atual.
+## Aula 1.2 — Perfil do corretor
+**Iniciante:**
+- Foco: captação, follow-up simples.
+- Erro comum: leads sem acompanhamento.
+
+**Intermediário:**
+- Foco: automação, métricas.
+- Erro comum: ferramenta sem método.
+
+**Avançado:**
+- Foco: escala, múltiplos funis.
+- Erro comum: automação sem personalização.
+
+**Exercício:**
+Faça o diagnóstico do seu funil atual.
+
+## Aula 1.3 — Método e metas
+**Método:**
+- Defina etapas.
+- Estabeleça métricas.
+- Acompanhe resultados.
+
+**Metas:**
+- Leads por semana.
+- Visitas por semana.
+- Vendas por mês.
+
+**Exemplo real:**
+Corretor definiu metas e dobrou vendas em 2 meses.
 
 ## Resumo
-- Contexto orienta decisão
-- Perfil evita erros
-- Métricas medem resultado
+- Funil organiza vendas.
+- Perfil claro orienta ação.
+- Método gera resultado.
 
 ## Checklist
-- [ ] Cenário mapeado
-- [ ] Objetivos definidos
-- [ ] Métricas escolhidas
+- [ ] Funil desenhado
+- [ ] Métricas definidas
 - [ ] Metas traçadas
 
 ## Materiais para download
@@ -39,9 +62,9 @@ Faça o diagnóstico do seu cenário atual.
 - Planilha de diagnóstico
 
 ## Ferramentas recomendadas
+- CRM
 - Planilha
-- Indicadores
-- Consultas locais
+- WhatsApp Business
 
 ## Prompt de IA
-"Atue como especialista em funil de vendas, leads, qualificação e conversão. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
+"Atue como especialista em funil de vendas. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
