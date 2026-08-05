@@ -1,33 +1,49 @@
-# Módulo 1 — Conteúdo Premium
-## Aula 1.1 — Introdução ao módulo
-Conteúdo: visão geral, objetivo, aplicação prática no litoral.
+# Módulo 1 — Fundamentos da Gestão
 
-## Aula 1.2 — Conceitos aplicados
-Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
+## Introdução
+Entenda o mercado de gestão de imóveis, o papel do proprietário e do gestor, e como montar um modelo rentável.
 
-## Aula 1.3 — Estudo de caso
-Conteúdo: caso real, análise, lições.
+## Aula 1.1 — O mercado de gestão de imóveis
+O mercado de locação exige profissionalismo: documentação, contratos, manutenção e relacionamento.
+
+**Exemplo real:** Gestor profissional reduziu inadimplência de 12% para 3% em 6 meses com contratos claros e rotina.
+
+**Estudo de caso:** Proprietário passou de gestão informal para operação enxuta e aumentou rentabilidade em 25%.
+
+## Aula 1.2 — Perfil do proprietário e do gestor
+- Proprietário: quer tranquilidade, retorno e cuidado com o imóvel.
+- Gestor: quer processo, controle e escala.
+- Inquilino: quer estabilidade, transparência e atendimento.
+
+## Aula 1.3 — Rentabilidade e riscos
+- Aluguel e reajuste
+- Custos operacionais
+- Manutenção
+- Vacância e inadimplência
 
 ## Exercício
-Aplicação prática no seu contexto.
+Faça o diagnóstico operacional do seu imóvel: documentação, contrato, rotina e resultado.
 
 ## Resumo
-Pontos-chave para revisão.
+- Gestão profissional reduz risco
+- Processo evita dor de cabeça
+- Dados orientam decisão
 
 ## Checklist
-- [ ] Conceitos entendidos
-- [ ] Caso analisado
-- [ ] Exercício aplicado
+- [ ] Documentação reunida
+- [ ] Contrato vigente
+- [ ] Rotina definida
+- [ ] Financeiro controlado
+- [ ] Metas definidas
 
 ## Materiais para download
 - PDF do módulo
-- Templates
-- Planilha
+- Planilha de diagnóstico
 
 ## Ferramentas recomendadas
-- Ferramenta 1
-- Ferramenta 2
-- Ferramenta 3
+- Planilha de controle
+- Contrato modelo
+- Sistema de gestão
 
 ## Prompt de IA
-Prompt para acelerar tarefas deste módulo.
+"Atue como gestor de imóveis. Faça um diagnóstico operacional com base nestas respostas: [insira suas respostas]."
