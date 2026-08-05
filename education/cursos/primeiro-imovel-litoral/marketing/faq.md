@@ -4,8 +4,8 @@
 3. Vale a pena? Sim.
 4. E se errar? Ajuste com método.
 5. Tem suporte? Sim.
-6. Como medir sucesso? Métricas claras.
-7. Preciso de ferramentas? Ajuda.
+6. Como medir sucesso? Compra aprovada.
+7. Preciso de advogado? Em alguns casos.
 8. Funciona para qualquer imóvel? Com método, sim.
-9. Como começar? Aplicação prática.
-10. Qual o primeiro passo? Diagnóstico.
+9. Como começar? Checklist básico.
+10. Qual o primeiro passo? Orçamento e metas.

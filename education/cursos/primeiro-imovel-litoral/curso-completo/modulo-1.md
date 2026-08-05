@@ -1,47 +1,67 @@
-# Módulo 1 — Fundamentos
+# Módulo 1 — Fundamentos da Primeira Compra
 
 ## Introdução
-Entenda o contexto, o seu perfil e as métricas essenciais para primeira compra, segurança, documentação e escolha.
+Entenda o que é comprar o primeiro imóvel no litoral, o método e o perfil do comprador.
 
-## Aula 1.1 — Contexto e oportunidades
-- Mercado atual
-- Oportunidades no litoral
-- Particularidades regionais
+## Aula 1.1 — O que é comprar o primeiro imóvel
+Comprar o primeiro imóvel no litoral significa realizar o sonho da casa na praia com método, segurança e orçamento controlado.
 
-**Exemplo real:** Profissional identificou oportunidade em região em crescimento e aumentou resultado em 25%.
+**Características:**
+- Sonho acessível.
+- Método simples.
+- Segurança na compra.
 
-## Aula 1.2 — Perfil e objetivos
-- Perfil do aluno
-- Objetivos claros
-- Metas realistas
+**Exemplo real:**
+Família comprou primeiro imóvel em 30 dias.
 
-## Aula 1.3 — Métricas e metas
-- Métricas essenciais
-- Metas de curto, médio e longo prazo
-- Revisão
+## Aula 1.2 — Perfil do comprador
+**Iniciante:**
+- Foco: orçamento, documentação básica.
+- Erro comum: escolher sem método.
 
-## Exercício
-Faça o diagnóstico do seu cenário atual.
+**Intermediário:**
+- Foco: localização, custos ocultos.
+- Erro comum: orçamento incompleto.
+
+**Avançado:**
+- Foco: negociação, fechamento.
+- Erro comum: documento sem verificação.
+
+**Exercício:**
+Faça o diagnóstico do seu perfil de compra.
+
+## Aula 1.3 — Metas e orçamento
+**Metas:**
+- Cidade.
+- Tipo de imóvel.
+- Prazo.
+
+**Orçamento:**
+- Entrada.
+- Financiamento.
+- Custos adicionais.
+
+**Exemplo real:**
+Família definiu orçamento e fechou em 45 dias.
 
 ## Resumo
-- Contexto orienta decisão
-- Perfil evita erros
-- Métricas medem resultado
+- Primeira compra exige método.
+- Perfil claro orienta decisão.
+- Orçamento evita surpresas.
 
 ## Checklist
-- [ ] Cenário mapeado
-- [ ] Objetivos definidos
-- [ ] Métricas escolhidas
+- [ ] Perfil definido
 - [ ] Metas traçadas
+- [ ] Orçamento fechado
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de diagnóstico
+- Planilha de orçamento
 
 ## Ferramentas recomendadas
 - Planilha
-- Indicadores
-- Consultas locais
+- Simulador de financiamento
+- Consultorias
 
 ## Prompt de IA
-"Atue como especialista em primeira compra, segurança, documentação e escolha. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
+"Atue como especialista em compra de imóveis. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."

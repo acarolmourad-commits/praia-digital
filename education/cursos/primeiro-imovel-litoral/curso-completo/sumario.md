@@ -1,5 +1,5 @@
 # Sumário do Curso: Primeiro Imóvel no Litoral
-- Módulo 1: Fundamentos
-- Módulo 2: Aplicação Prática
-- Módulo 3: Estratégia
-- Módulo 4: Crescimento
+- Módulo 1: Fundamentos da Primeira Compra
+- Módulo 2: Escolha e Localização
+- Módulo 3: Documentação e Verificação
+- Módulo 4: Negociação e Fechamento

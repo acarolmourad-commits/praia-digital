@@ -1,11 +1,11 @@
 # Artigos SEO — Primeiro Imóvel no Litoral
-1. Primeiro Imóvel no Litoral em 2026: guia completo
-2. Como aplicar Primeiro Imóvel no Litoral no litoral
-3. Guia prático para iniciantes
-4. Erros comuns e como evitar
-5. Métricas essenciais
-6. Resultados reais e casos
-7. Ferramentas úteis
-8. Checklist essencial
-9. Perguntas frequentes
-10. Próximos passos
+1. Como comprar o primeiro imóvel no litoral em 2026
+2. Primeiro imóvel no litoral: guia completo
+3. Orçamento para primeiro imóvel no litoral
+4. Documentação para primeira compra no litoral
+5. Localização para primeiro imóvel no litoral
+6. Financiamento para primeiro imóvel no litoral
+7. Custos ocultos no litoral
+8. Erros ao comprar primeiro imóvel no litoral
+9. Segurança na primeira compra no litoral
+10. Como evitar golpes no litoral

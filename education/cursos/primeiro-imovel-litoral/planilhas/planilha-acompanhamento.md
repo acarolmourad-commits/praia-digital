@@ -1,6 +1,12 @@
 # Planilha — Primeiro Imóvel no Litoral
 - [ ] Data
-- [ ] Ação
-- [ ] Resultado
-- [ ] Ajuste
+- [ ] Imóvel
+- [ ] Cidade
+- [ ] Preço
+- [ ] Entrada
+- [ ] Financiamento
+- [ ] IPTU
+- [ ] Condomínio
+- [ ] Manutenção
+- [ ] Total
 - [ ] Status
