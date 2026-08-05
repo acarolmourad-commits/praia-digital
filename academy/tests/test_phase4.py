@@ -8,6 +8,7 @@ from sqlalchemy.pool import StaticPool
 from academy.core.database import Base, get_db
 from academy.core.models import Course, Module, Lesson, User, Order, OrderItem, Payment, PaymentStatus, Enrollment, Certificate
 from academy.core.email_service import send_email
+from academy.core.security import hash_password
 from academy.main import app
 from fastapi.testclient import TestClient
 
@@ -44,7 +45,7 @@ with TestingSessionLocal() as db:
     db.commit()
     db.refresh(lesson)
     lesson_id = lesson.id
-    user = User(name="Admin Teste", email="admin@example.com", password_hash="test")
+    user = User(name="Admin Teste", email="admin@example.com", password_hash=hash_password("test"), role="admin")
     db.add(user)
     db.commit()
     db.refresh(user)
@@ -79,18 +80,20 @@ assert r.status_code == 200, r.text
 student_token = r.json()["access_token"]
 student_headers = {"Authorization": f"Bearer {student_token}"}
 
-# add to cart + checkout + payment + webhook
+# add to cart + checkout via public payments endpoint
 r = client.post("/academy/cart/add", json={"course_id": course_id}, headers=student_headers)
 assert r.status_code == 200, r.text
-r = client.post("/academy/cart/checkout", headers=student_headers)
+r = client.post("/academy/checkout", json={"items": [{"course_id": course_id}]}, headers=student_headers)
 assert r.status_code == 200, r.text
-order_id = r.json()["order_id"]
-r = client.post("/academy/payments", json={"order_id": order_id, "gateway": "mock", "gateway_payment_id": "MOCK-456"}, headers=student_headers)
-assert r.status_code == 200, r.text
-payment_id = r.json()["payment_id"]
+checkout = r.json()
+assert checkout["status"] == "pending"
+order_id = checkout["order_id"]
+payment_id = checkout["payment_id"]
+
+# webhook
 r = client.post(f"/academy/payments/{payment_id}/webhook", json={"status": "paid"})
 assert r.status_code == 200, r.text
-assert r.json()["message"] == "Pagamento confirmado e acesso liberado."
+assert r.json()["ok"] is True
 
 # verify enrollment and progress created
 r = client.get("/academy/me/enrollments", headers=student_headers)
@@ -102,6 +105,11 @@ enrollment_id = enrollments[0]["id"]
 # admin endpoints require admin role; test with student token returns 403
 r = client.get("/admin/users", headers=student_headers)
 assert r.status_code == 403, r.text
+
+# admin endpoints work with admin token
+admin_headers = {"Authorization": f"Bearer {client.post('/auth/login', json={'email':'admin@example.com','password':'test'}).json()['access_token']}"}
+r = client.get("/admin/users", headers=admin_headers)
+assert r.status_code == 200, r.text
 
 # email service smoke test
 result = send_email("test@example.com", "Teste Praia Digital Academy", "Corpo do e-mail de teste.")
