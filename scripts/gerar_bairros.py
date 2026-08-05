@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """
-Gera páginas de bairro para SEO local.
-Uso: python scripts/gerar_bairros.py
+Regera páginas de bairro com slugs consistentes em UTF-8 NFC.
 """
 from pathlib import Path
-import re
+import unicodedata
 
 BASE = Path(r"C:\Users\Carolina\praia-digital")
 TEMPLATE = BASE / "templates" / "bairro-modelo.html"
@@ -52,16 +51,19 @@ cities = {
     ],
 }
 
+def slugify(name: str) -> str:
+    nfkd = unicodedata.normalize('NFKD', name)
+    ascii_name = nfkd.encode('ascii', 'ignore').decode('ascii')
+    return re.sub(r'[^a-z0-9]+', '-', ascii_name.lower()).strip('-')
+
 text = TEMPLATE.read_text(encoding="utf-8")
 created = 0
 for city, bairros in cities.items():
     city_dir = BASE / "bairros" / city
     city_dir.mkdir(parents=True, exist_ok=True)
     for bairro, desc in bairros:
-        slug = re.sub(r"[^a-z0-9-]", "-", bairro.lower())
+        slug = slugify(bairro)
         file = city_dir / f"{slug}.html"
-        if file.exists():
-            continue
         content = (
             text.replace("[Bairro]", bairro)
             .replace("[Cidade]", city.title().replace("-", " "))
