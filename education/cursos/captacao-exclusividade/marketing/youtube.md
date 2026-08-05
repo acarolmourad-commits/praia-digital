@@ -1,4 +1,4 @@
-# Roteiro YouTube — Captação e Exclusividade para Corretores
+# Roteiro YouTube — Captacao Exclusividade
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado

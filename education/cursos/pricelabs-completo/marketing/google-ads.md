@@ -1,4 +1,4 @@
-# Google Ads — PriceLabs Completo
-Palavras: PriceLabs, precificação dinâmica, temporada no litoral, imóvel para temporada
+# Google Ads — pricelabs-completo
+Palavras: pricelabs completo, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

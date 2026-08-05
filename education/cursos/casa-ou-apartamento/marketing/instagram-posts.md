@@ -1,11 +1,10 @@
-# Posts Instagram — Casa Ou Apartamento
-1. Post: dica rápida
-2. Reels: passo a passo
-3. Carrossel: erros comuns
-4. Post: case real
-5. Reels: resultado
-6. Carrossel: checklist
-7. Post: mito ou verdade
-8. Reels: antes/depois
-9. Carrossel: comece agora
-10. Post: pergunte nos comentários
+1. Post: dica sobre casa ou apartamento
+2. Post: dica sobre casa ou apartamento
+3. Post: dica sobre casa ou apartamento
+4. Post: dica sobre casa ou apartamento
+5. Post: dica sobre casa ou apartamento
+6. Post: dica sobre casa ou apartamento
+7. Post: dica sobre casa ou apartamento
+8. Post: dica sobre casa ou apartamento
+9. Post: dica sobre casa ou apartamento
+10. Post: dica sobre casa ou apartamento

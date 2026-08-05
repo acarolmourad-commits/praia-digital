@@ -1,6 +1,10 @@
-# TikTok — Captação e Exclusividade para Corretores
-1. Roteiro: captação sem erro
-2. Roteiro: exclusividade em 1 minuto
-3. Roteiro: como captar imóvel
-4. Roteiro: visita de captação
-5. Roteiro: case de venda
+1. Roteiro: case rápido 1
+2. Roteiro: case rápido 2
+3. Roteiro: case rápido 3
+4. Roteiro: case rápido 4
+5. Roteiro: case rápido 5
+6. Roteiro: case rápido 6
+7. Roteiro: case rápido 7
+8. Roteiro: case rápido 8
+9. Roteiro: case rápido 9
+10. Roteiro: case rápido 10

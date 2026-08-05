@@ -1,4 +1,4 @@
-# Google Ads — Ia Para Imobiliarias
-Palavras: Ia Para Imobiliarias no litoral, como fazer Ia Para Imobiliarias, litoral
+# Google Ads — ia-para-imobiliarias
+Palavras: ia para imobiliarias, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

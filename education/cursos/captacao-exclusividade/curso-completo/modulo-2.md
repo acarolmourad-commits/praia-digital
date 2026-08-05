@@ -1,12 +1,33 @@
-# Módulo 2 — Abordagem
-## Aula 2.1 — Contato inicial
-Conteúdo: canais, primeiro contato, tom.
+# Módulo 2 — Conteúdo Premium
+## Aula 2.1 — Introdução ao módulo
+Conteúdo: visão geral, objetivo, aplicação prática no litoral.
 
-## Aula 2.2 — Apresentação de valor
-Conteúdo: argumentos, diferencial, confiança.
+## Aula 2.2 — Conceitos aplicados
+Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
 
-## Aula 2.3 — Agendamento
-Conteúdo: visita, preparação, follow-up.
+## Aula 2.3 — Estudo de caso
+Conteúdo: caso real, análise, lições.
 
 ## Exercício
-Monte script de captação.
+Aplicação prática no seu contexto.
+
+## Resumo
+Pontos-chave para revisão.
+
+## Checklist
+- [ ] Conceitos entendidos
+- [ ] Caso analisado
+- [ ] Exercício aplicado
+
+## Materiais para download
+- PDF do módulo
+- Templates
+- Planilha
+
+## Ferramentas recomendadas
+- Ferramenta 1
+- Ferramenta 2
+- Ferramenta 3
+
+## Prompt de IA
+Prompt para acelerar tarefas deste módulo.

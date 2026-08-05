@@ -1,5 +1,5 @@
-# Meta Ads — Comprar Imovel Praia Sem Golpes
-Público: 25 a 55 anos, interesse em Comprar Imovel Praia Sem Golpes, litoral
+# Meta Ads — comprar-imovel-praia-sem-golpes
+Público: 25 a 55 anos, interesse no tema, litoral
 Objetivo: leads
 Formato: vídeo + carrossel
 Orçamento sugerido: R$ 40 a R$ 120/dia

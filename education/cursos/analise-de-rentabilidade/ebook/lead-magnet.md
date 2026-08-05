@@ -1,5 +1,5 @@
 # E-book Derivado — Analise De Rentabilidade
-Título: Guia Rápido de Analise De Rentabilidade no Litoral
+Título: Guia Rápido sobre Analise De Rentabilidade
 Formato: PDF 20 a 30 páginas
-Preço: gratuito ou R$ 17,90
-Conteúdo: checklist, templates, dicas rápidas.
+Preço: gratuito ou R$ 19,90
+Conteúdo: resumo, templates, dicas rápidas.

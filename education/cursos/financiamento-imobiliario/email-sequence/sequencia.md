@@ -1,21 +1,21 @@
 # Sequência de E-mails — Financiamento Imobiliario
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido de Financiamento Imobiliario (PDF)
+Assunto: Guia Rápido sobre Financiamento Imobiliario (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case de Financiamento Imobiliario no litoral
+Assunto: Case prático de Financiamento Imobiliario
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: “Financiamento Imobiliario é complicado?”
+Assunto: "Financiamento Imobiliario é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno aplicou o método
+Assunto: Aluno obteve resultado com Financiamento Imobiliario
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

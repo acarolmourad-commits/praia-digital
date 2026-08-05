@@ -1,12 +1,33 @@
-# Módulo 3 — Custos
-## Aula 3.1 — Custos ocultos
-Conteúdo: energia, água, manutenção, desperdício.
+# Módulo 3 — Conteúdo Premium
+## Aula 3.1 — Introdução ao módulo
+Conteúdo: visão geral, objetivo, aplicação prática no litoral.
 
-## Aula 3.2 — Fornecedores e negociação
-Conteúdo: limpeza, manutenção, serviços.
+## Aula 3.2 — Conceitos aplicados
+Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
 
-## Aula 3.3 — Limpeza e manutenção
-Conteúdo: eficiência, qualidade, custo.
+## Aula 3.3 — Estudo de caso
+Conteúdo: caso real, análise, lições.
 
 ## Exercício
-Monte plano de corte de custos.
+Aplicação prática no seu contexto.
+
+## Resumo
+Pontos-chave para revisão.
+
+## Checklist
+- [ ] Conceitos entendidos
+- [ ] Caso analisado
+- [ ] Exercício aplicado
+
+## Materiais para download
+- PDF do módulo
+- Templates
+- Planilha
+
+## Ferramentas recomendadas
+- Ferramenta 1
+- Ferramenta 2
+- Ferramenta 3
+
+## Prompt de IA
+Prompt para acelerar tarefas deste módulo.

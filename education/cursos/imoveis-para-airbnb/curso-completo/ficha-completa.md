@@ -1,181 +1,191 @@
-# Curso: Imóveis para Airbnb
+# Curso: Imoveis Para Airbnb
 ## Nome Comercial
-**Imóveis para Airbnb no Litoral: Como Escolher, Preparar e Lucrar com Temporada**
+**Imoveis Para Airbnb: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Seleção, preparação, anúncio e gestão de imóveis para temporada no Airbnb.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 20 dias, você será capaz de escolher e estruturar um imóvel para temporada no litoral.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
-- Investidores
-- Proprietários
-- Interesse: temporada, Airbnb, ROI
-- Perfil: iniciante ou intermediário
+Proprietários, investidores e corretores do litoral.
+
+## Pré-requisitos
+Nenhum.
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
-7 horas
+7 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 347
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
 Mini curso: R$ 147
 E-book: R$ 19,90
 
+## Oferta Principal
+- Acesso vitalício + atualizações
+- Material complementar
+- Comunidade fechada
+- Certificado
+
+## Headline
+**"Imoveis Para Airbnb"**
+
+## Big Idea
+Conteúdo premium aplicado ao mercado do litoral.
+
 ## Oferta
-Curso completo R$ 347; Mini curso R$ 147; E-book R$ 19,90
+- **Curso completo:** R$ 297
+- **Mini curso:** R$ 147
+- **E-book:** R$ 19,90
 
 ## Avatar
-Nome: Carlos / Fernanda
-Idade: 28 a 50 anos
-Renda: R$ 5k a R$ 20k/mês
-Objetivo: temporada rentável
-Dificuldades: escolha, preparo, gestão
-Desejos: ocupação alta, receita previsível
+**Nome:** Carlos / Fernanda
+**Idade:** 25 a 55 anos
+**Renda:** R$ 3k a R$ 20k/mês
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Imóvel errado
-- Preparação cara
-- Anúncio fraco
-- Gestão complicada
 - Falta de método
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Escolha segura
-- Preparo rápido
-- Anúncio forte
-- Gestão simples
-- Resultado previsível
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
+- Segurança
+- Autoridade local
 
 ## Objeções
-- "É caro"
+- "Muito caro"
+- "Não funciona"
+- "É complicado"
+- "Não tenho tempo"
 - "Já tentei"
-- "Demora"
-- "E se não der lucro?"
-- "Não compensa"
 
 ## Transformação
-- Escolha de imóvel
-- Preparação profissional
-- Anúncio otimizado
-- Gestão eficiente
-- Temporada rentável
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
-### Módulo 1 — Seleção
-Aula 1.1 — O que faz um imóvel lucrativo
-Aula 1.2 — Localização e público
-Aula 1.3 — Análise de oferta
-Exercício: seleção de imóvel
+### Módulo 1 — Fundamentos
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Preparação
-Aula 2.1 — Preparação do imóvel
-Aula 2.2 — Fotos e descrição
-Aula 2.3 — Regras e diferenciais
-Exercício: plano de preparação
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Anúncio e Precificação
-Aula 3.1 — Criação do anúncio
-Aula 3.2 — SEO local e visibilidade
-Aula 3.3 — Preço e disponibilidade
-Exercício: anúncio publicado
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Gestão
-Aula 4.1 — Atendimento
-Aula 4.2 — Limpeza e manutenção
-Aula 4.3 — Métricas e ajustes
-Exercício: plano de gestão
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
+Exercício: plano de crescimento
 
 ## Carga Horária
 7 horas
 
 ## Material Complementar
-- Checklist de seleção
-- Templates de anúncio
+- PDFs por módulo
+- Templates
 - Comunidade fechada
+- Atualizações
 
 ## Checklists
-- Checklist de seleção
-- Checklist de preparação
-- Checklist de anúncio
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de seleção
-- Planilha de precificação
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de anúncio
-- Modelo de regras
+- Modelo aplicável
 
 ## Scripts
-- Script de atendimento
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para gerar anúncios e roteiros.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: seleção
-- Exercício 2: preparação
-- Exercício 3: anúncio
-- Exercício 4: gestão
-- Exercício 5: relatório
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: anúncio e plano
+Prova prática: aplicação do método
 
 ## FAQ
-1. Qual cidade? Depende do público.
-2. Quanto investir? Depende do deal.
-3. Airbnb ou Booking? Ambos.
-4. Quando começar? Planeje com antecedência.
-5. Vale a pena? Sim, com método.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
-[Em construção no próximo passo]
+[vendas.html]
 
 ## Landing Page
-[Em construção no próximo passo]
+[index.html]
 
 ## Sequência de E-mails
-[Em construção no próximo passo]
+[email-sequence/sequencia.md]
 
 ## Posts Instagram
-[Em construção no próximo passo]
+[instagram/posts.md]
 
 ## Reels
-[Em construção no próximo passo]
+[marketing/reels.md]
 
 ## Carrosséis
-[Em construção no próximo passo]
+[marketing/carrosseis.md]
 
 ## Artigos SEO
-[Em construção no próximo passo]
+[seo-articles/sumario.md]
 
 ## Roteiros YouTube
-[Em construção no próximo passo]
+[marketing/youtube.md]
 
 ## Anúncios Meta
-[Em construção no próximo passo]
+[marketing/meta-ads.md]
 
 ## Anúncios Google
-[Em construção no próximo passo]
+[marketing/google-ads.md]
 
 ## CTA
-"Monte seu Airbnb no litoral com método."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Mentoria: R$ 2.000
-- Acompanhamento: R$ 3.000
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
 - Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Airbnb do Zero
-- Curso de Booking do Zero
-- Curso de Gestão Profissional da Locação
+- Outros cursos da Praia Digital Academy

@@ -1,9 +1,9 @@
 # Avaliação Final — Multiplique Patrimonio
 ## Quiz
-- 20 perguntas sobre o conteúdo do curso.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Aplicação do método em um caso real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
-- 70% no quiz + prática aprovada pelo mentor.
+- 70% no quiz + prova prática aprovada pelo mentor.

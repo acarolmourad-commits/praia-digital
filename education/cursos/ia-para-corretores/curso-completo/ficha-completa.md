@@ -1,202 +1,193 @@
-# Curso: Inteligência Artificial para Corretores
+# Curso: Ia Para Corretores
 ## Nome Comercial
-**Inteligência Artificial para Corretores: Como Usar IA para Vender Mais e Melhor no Litoral**
+**Ia Para Corretores: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Ferramentas, prompts e fluxos de IA aplicados à captação, atendimento, negociação e marketing imobiliário.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 20 dias, você será capaz de usar IA para criar anúncios, responder leads, qualificar clientes e fechar mais vendas.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
-- Corretores de imóveis de 22 a 55 anos
-- Imobiliárias e equipes
-- Interesse: produtividade, leads, conversão
-- Perfil: iniciante ou intermediário em IA
+Proprietários, investidores e corretores do litoral.
+
+## Pré-requisitos
+Nenhum.
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
 6 horas de aulas (30 aulas de 10 a 16 min)
-Total: 6 horas
+Total: 6 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 397
-À vista: R$ 327
-Parcelado: 12x de R$ 27,25
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
 Mini curso: R$ 147
-E-book: R$ 17,90
+E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Biblioteca de prompts
-- Templates de fluxos
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Use IA para vender mais imóveis no litoral sem perder a cara de humano"**
+**"Ia Para Corretores"**
 
 ## Big Idea
-IA não substitui o corretor: multiplica. Quem usa ferramentas certas atende mais, responde mais rápido e converte mais.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
-- **Curso completo:** R$ 397
+- **Curso completo:** R$ 297
 - **Mini curso:** R$ 147
-- **E-book:** R$ 17,90
+- **E-book:** R$ 19,90
 
 ## Avatar
-**Nome:** João / Ana
-**Idade:** 22 a 50 anos
-**Renda:** R$ 2k a R$ 12k/mês
-**Objetivo:** produtividade e resultados com IA
-**Dificuldades:** ferramentas, prompts, ética
-**Desejos:** mais leads, menos trabalho, mais vendas
+**Nome:** Carlos / Fernanda
+**Idade:** 25 a 55 anos
+**Renda:** R$ 3k a R$ 20k/mês
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Falta de tempo
-- Atendimento lento
-- Conteúdo repetitivo
-- Falta de método com IA
-- Medo de errar
+- Falta de método
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Produtividade
-- Respostas rápidas
-- Leads qualificados
-- Conteúdo profissional
+- Método claro
+- Exemplos reais
 - Resultados previsíveis
+- Segurança
+- Autoridade local
 
 ## Objeções
-- "É caro"
-- "Não entendo de tecnologia"
-- "Vai perder a personalização"
-- "E se der erro?"
-- "Não compensa"
+- "Muito caro"
+- "Não funciona"
+- "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- Uso prático de IA
-- Biblioteca de prompts
-- Fluxos de atendimento
-- Conteúdo profissional
-- Resultados mensuráveis
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
 ### Módulo 1 — Fundamentos
-Aula 1.1 — IA para corretores no litoral
-Aula 1.2 — Ferramentas essenciais
-Aula 1.3 — Limites e ética
-Exercício: seleção de ferramentas
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Captação e Conteúdo
-Aula 2.1 — Prompts para anúncios
-Aula 2.2 — Reels e carrosséis com IA
-Aula 2.3 — SEO local com IA
-Exercício: calendário de conteúdo
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Atendimento e Negociação
-Aula 3.1 — Chatbots e atendimento
-Aula 3.2 — Qualificação com IA
-Aula 3.3 — Follow-up inteligente
-Exercício: fluxo de atendimento
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Execução e Métricas
-Aula 4.1 — Automação segura
-Aula 4.2 — Métricas e ajustes
-Aula 4.3 — Escala e ética
-Exercício: plano de automação
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
+Exercício: plano de crescimento
 
 ## Carga Horária
-6 horas
+6 horas de aulas (30 aulas de 10 a 16 min)
+Total: 6 horas
 
 ## Material Complementar
-- Biblioteca de prompts
 - PDFs por módulo
+- Templates
 - Comunidade fechada
+- Atualizações
 
 ## Checklists
-- Checklist de ferramentas
-- Checklist de prompts
-- Checklist de automação
-- Checklist de métricas
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de prompts
-- Planilha de leads
-- Planilha de ROI
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de prompt
-- Modelo de fluxo
+- Modelo aplicável
 
 ## Scripts
-- Script de atendimento
-- Script de follow-up
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt base para criar anúncios, roteiros e fluxos.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: seleção de ferramentas
-- Exercício 2: prompts práticos
-- Exercício 3: fluxo de atendimento
-- Exercício 4: automação
-- Exercício 5: análise de métricas
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: fluxo com IA
+Prova prática: aplicação do método
 
 ## FAQ
-1. Preciso saber programar? Não.
-2. Quais ferramentas usar? ChatGPT, n8n, Make, entre outras.
-3. É seguro? Sim, com limites e ética.
-4. Vai substituir o corretor? Não, vai multiplicar.
-5. Quanto tempo para ver resultado? De 15 a 30 dias.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
-[Em construção no próximo passo]
+[vendas.html]
 
 ## Landing Page
-[Em construção no próximo passo]
+[index.html]
 
 ## Sequência de E-mails
-[Em construção no próximo passo]
+[email-sequence/sequencia.md]
 
 ## Posts Instagram
-[Em construção no próximo passo]
+[instagram/posts.md]
 
 ## Reels
-[Em construção no próximo passo]
+[marketing/reels.md]
 
 ## Carrosséis
-[Em construção no próximo passo]
+[marketing/carrosseis.md]
 
 ## Artigos SEO
-[Em construção no próximo passo]
+[seo-articles/sumario.md]
 
 ## Roteiros YouTube
-[Em construção no próximo passo]
+[marketing/youtube.md]
 
 ## Anúncios Meta
-[Em construção no próximo passo]
+[marketing/meta-ads.md]
 
 ## Anúncios Google
-[Em construção no próximo passo]
+[marketing/google-ads.md]
 
 ## CTA
-"Use IA para vender mais imóveis no litoral."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
 - Mentoria individual: R$ 2.000
-- Acompanhamento de automação: R$ 2.500
+- Acompanhamento: R$ 3.500
 
 ## Downsell
 - Mini curso: R$ 147
-- E-book: R$ 17,90
+- E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Marketing Imobiliário
-- Curso de Funil de Vendas
-- Curso de WhatsApp que Vende
+- Outros cursos da Praia Digital Academy

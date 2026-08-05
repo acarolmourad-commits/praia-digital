@@ -1,9 +1,9 @@
-# Avaliação Final — Gestão Profissional da Locação
+# Avaliação Final — Gestao Profissional Locacao
 ## Quiz
-- 20 perguntas sobre operação, atendimento, limpeza, manutenção e crescimento.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Plano operacional completo.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
-- 70% no quiz + plano aprovado pelo mentor.
+- 70% no quiz + prova prática aprovada pelo mentor.

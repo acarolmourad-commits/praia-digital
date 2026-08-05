@@ -1,11 +1,10 @@
-# Posts Instagram — Primeiro Imovel Litoral
-1. Post: dica rápida
-2. Reels: passo a passo
-3. Carrossel: erros comuns
-4. Post: case real
-5. Reels: resultado
-6. Carrossel: checklist
-7. Post: mito ou verdade
-8. Reels: antes/depois
-9. Carrossel: comece agora
-10. Post: pergunte nos comentários
+1. Post: dica sobre primeiro imovel litoral
+2. Post: dica sobre primeiro imovel litoral
+3. Post: dica sobre primeiro imovel litoral
+4. Post: dica sobre primeiro imovel litoral
+5. Post: dica sobre primeiro imovel litoral
+6. Post: dica sobre primeiro imovel litoral
+7. Post: dica sobre primeiro imovel litoral
+8. Post: dica sobre primeiro imovel litoral
+9. Post: dica sobre primeiro imovel litoral
+10. Post: dica sobre primeiro imovel litoral

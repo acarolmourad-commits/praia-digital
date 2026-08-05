@@ -1,5 +1,5 @@
-# E-book Derivado — Como Aumentar em 30% a Rentabilidade
-Título: Guia Rápido de Rentabilidade no Litoral
+# E-book Derivado — Aumentar Rentabilidade
+Título: Guia Rápido sobre Aumentar Rentabilidade
 Formato: PDF 20 a 30 páginas
-Preço: gratuito ou R$ 17,90
-Conteúdo: checklist, planilha, dicas rápidas.
+Preço: gratuito ou R$ 19,90
+Conteúdo: resumo, templates, dicas rápidas.

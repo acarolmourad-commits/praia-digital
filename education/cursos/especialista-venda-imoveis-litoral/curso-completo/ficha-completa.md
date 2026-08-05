@@ -1,160 +1,152 @@
-# Curso: Especialista em Venda de Imóveis no Litoral
+# Curso: Especialista Venda Imoveis Litoral
 ## Nome Comercial
-**Especialista em Venda de Imóveis no Litoral: Como Vender Mais e Melhor na Região**
+**Especialista Venda Imoveis Litoral: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Técnicas de captação, negociação, argumentação e fechamento aplicadas ao mercado do litoral.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 45 dias, você será capaz de vender imóveis no litoral com mais segurança, argumentos e conversão.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
-- Corretores e imobiliárias
-- Investidores com imóveis próprios
-- Interesse: vendas, captação, conversão
+Proprietários, investidores e corretores do litoral.
+
+## Pré-requisitos
+Nenhum.
 
 ## Nível
 Intermediário → Avançado
 
 ## Tempo Estimado
 8 horas de aulas (36 aulas de 12 a 18 min)
-Total: 8 horas
+Total: 8 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 397
-À vista: R$ 327
-Parcelado: 12x de R$ 27,25
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Scripts de vendas
-- Templates de propostas
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Venda mais imóveis no litoral com método, argumentos e fechamento"**
+**"Especialista Venda Imoveis Litoral"**
 
 ## Big Idea
-Vender no litoral exige domínio de captação, atendimento e argumentos específicos da região.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
-- **Curso completo:** R$ 397
+- **Curso completo:** R$ 297
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
 ## Avatar
 **Nome:** Carlos / Fernanda
-**Idade:** 25 a 50 anos
-**Renda:** R$ 3k a R$ 15k/mês
-**Objetivo:** vender mais e melhor
-**Dificuldades:** captação, objeções, fechamento
-**Desejos:** leads qualificados, propostas que convertem, previsibilidade
+**Idade:** 25 a 55 anos
+**Renda:** R$ 3k a R$ 20k/mês
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Falta de leads
-- Objeções constantes
-- Proposta fraca
-- Falta de diferenciais
-- Dificuldade de fechar
+- Falta de método
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Captação previsível
-- Argumentos claros
-- Proposta forte
-- Fechamento mais simples
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
+- Segurança
 - Autoridade local
 
 ## Objeções
-- "Mercado difícil"
-- "Preço alto"
-- "Cliente indeciso"
-- "Concorrência"
+- "Muito caro"
 - "Não funciona"
+- "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- Captação consistente
-- Atendimento consultivo
-- Proposta irresistível
-- Fechamento frequente
-- Autoridade no litoral
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
 ### Módulo 1 — Fundamentos
-Aula 1.1 — Mercado do litoral
-Aula 1.2 — Perfil do comprador
-Aula 1.3 — Diferenciais locais
-Exercício: posicione-se
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Captação e Atendimento
-Aula 2.1 — Fontes de leads
-Aula 2.2 — Abordagem e qualificação
-Aula 2.3 — Apresentação do imóvel
-Exercício: script de abordagem
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Proposta e Negociação
-Aula 3.1 — Proposta de valor
-Aula 3.2 — Negociação e objeções
-Aula 3.3 — Documentação e prazos
-Exercício: monte sua proposta
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Fechamento e Pós-venda
-Aula 4.1 — Técnicas de fechamento
-Aula 4.2 — Indicações e referências
-Aula 4.3 — Pós-venda e recompra
-Exercício: plano de vendas
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
+Exercício: plano de crescimento
 
 ## Carga Horária
-8 horas
+8 horas de aulas (36 aulas de 12 a 18 min)
+Total: 8 horas
 
 ## Material Complementar
-- Scripts de vendas
-- Templates de proposta
 - PDFs por módulo
+- Templates
 - Comunidade fechada
+- Atualizações
 
 ## Checklists
-- Checklist de captação
-- Checklist de visita
-- Checklist de proposta
-- Checklist de fechamento
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de leads
-- Planilha de propostas
-- Planilha de conversão
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de proposta
-- Modelo de contrato
+- Modelo aplicável
 
 ## Scripts
-- Script de captação
-- Script de visita
-- Script de objeções
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para criar propostas e argumentos.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: posicionamento
-- Exercício 2: script de abordagem
-- Exercício 3: proposta
-- Exercício 4: negociação
-- Exercício 5: plano de vendas
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: plano de vendas aplicado
+Prova prática: aplicação do método
 
 ## FAQ
-1. Como captar leads no litoral? Marketing e relacionamento.
-2. Como lidar com objeções? Método e argumentos.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
 3. Preciso de experiência? Não.
-4. Quanto tempo para fechar? De 7 a 30 dias.
-5. Vale a pena para iniciantes? Sim.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
 [vendas.html]
@@ -187,7 +179,7 @@ Prova prática: plano de vendas aplicado
 [marketing/google-ads.md]
 
 ## CTA
-"Venda mais no litoral com método."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
 - Mentoria individual: R$ 2.000
@@ -198,6 +190,4 @@ Prova prática: plano de vendas aplicado
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Captação e Exclusividade
-- Curso de Marketing Imobiliário
-- Curso de WhatsApp que Vende
+- Outros cursos da Praia Digital Academy

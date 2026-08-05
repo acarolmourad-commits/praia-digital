@@ -1,5 +1,5 @@
-# Sumário do Curso: Como Aumentar em 30% a Rentabilidade
-- Módulo 1: Diagnóstico
-- Módulo 2: Receita
-- Módulo 3: Custos
-- Módulo 4: Execução
+# Sumário do Curso: Aumentar Rentabilidade
+- Módulo 1: Fundamentos
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

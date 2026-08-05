@@ -1,11 +1,20 @@
-# Posts Instagram — Marketing Imobiliário para Corretores
-1. Post: 3 erros de marketing
-2. Reels: como atrair leads em 30s
-3. Carrossel: checklist de conteúdo
-4. Post: anúncio que converte
-5. Reels: dica de post
-6. Carrossel: redes que vendem
-7. Post: SEO local
-8. Reels: case de marketing
-9. Carrossel: funil rápido
-10. Post: comece hoje
+1. Post: dica premium sobre marketing-imobiliario
+2. Reels: resultado em 30s
+3. Carrossel: checklist rápido
+4. Post: caso real
+5. Reels: ferramenta prática
+6. Post: dica premium sobre marketing-imobiliario
+7. Reels: resultado em 30s
+8. Carrossel: checklist rápido
+9. Post: caso real
+10. Reels: ferramenta prática
+11. Post: dica premium sobre marketing-imobiliario
+12. Reels: resultado em 30s
+13. Carrossel: checklist rápido
+14. Post: caso real
+15. Reels: ferramenta prática
+16. Post: dica premium sobre marketing-imobiliario
+17. Reels: resultado em 30s
+18. Carrossel: checklist rápido
+19. Post: caso real
+20. Reels: ferramenta prática

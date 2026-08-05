@@ -1,4 +1,4 @@
-# Google Ads — Analise De Rentabilidade
-Palavras: Analise De Rentabilidade no litoral, como fazer Analise De Rentabilidade, litoral
+# Google Ads — analise-de-rentabilidade
+Palavras: analise de rentabilidade, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

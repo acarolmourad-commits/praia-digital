@@ -1,5 +1,5 @@
-# Sumário do Curso: Gestão Profissional da Locação
-- Módulo 1: Fundamentos da Gestão
-- Módulo 2: Operação
-- Módulo 3: Atendimento e Avaliação
+# Sumário do Curso: Gestao Profissional Locacao
+- Módulo 1: Fundamentos
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
 - Módulo 4: Crescimento

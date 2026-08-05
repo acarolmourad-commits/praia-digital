@@ -1,9 +1,9 @@
-# Avaliação Final — Investindo em Imóveis no Litoral
+# Avaliação Final — Investindo Imoveis Litoral
 ## Quiz
-- 20 perguntas sobre documentação, rentabilidade, temporada, financiamento e fechamento.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Relatório de avaliação de imóvel + plano de investimento.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
-- 70% no quiz + plano aprovado pelo mentor.
+- 70% no quiz + prova prática aprovada pelo mentor.

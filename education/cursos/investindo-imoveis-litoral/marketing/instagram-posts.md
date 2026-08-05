@@ -1,11 +1,10 @@
-# Posts Instagram — Investindo em Imóveis no Litoral
-1. Post: 3 erros que matam investimentos no litoral
-2. Reels: como calcular ROI em 30s
-3. Carrossel: checklist pré-compra
-4. Post: temporada ou moradia?
-5. Reels: case de aluguel
-6. Carrossel: documentos essenciais
-7. Post: mitos e verdades
-8. Reels: dica de negociação
-9. Carrossel: indicadores
-10. Post: reforma que agrega valor
+1. Post: dica sobre investindo imoveis litoral
+2. Post: dica sobre investindo imoveis litoral
+3. Post: dica sobre investindo imoveis litoral
+4. Post: dica sobre investindo imoveis litoral
+5. Post: dica sobre investindo imoveis litoral
+6. Post: dica sobre investindo imoveis litoral
+7. Post: dica sobre investindo imoveis litoral
+8. Post: dica sobre investindo imoveis litoral
+9. Post: dica sobre investindo imoveis litoral
+10. Post: dica sobre investindo imoveis litoral

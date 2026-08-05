@@ -1,5 +1,5 @@
 # E-book Derivado — Multiplique Patrimonio
-Título: Guia Rápido de Multiplique Patrimonio no Litoral
+Título: Guia Rápido sobre Multiplique Patrimonio
 Formato: PDF 20 a 30 páginas
-Preço: gratuito ou R$ 17,90
-Conteúdo: checklist, templates, dicas rápidas.
+Preço: gratuito ou R$ 19,90
+Conteúdo: resumo, templates, dicas rápidas.

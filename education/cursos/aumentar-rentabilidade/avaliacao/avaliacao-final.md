@@ -1,9 +1,9 @@
-# Avaliação Final — Como Aumentar em 30% a Rentabilidade
+# Avaliação Final — Aumentar Rentabilidade
 ## Quiz
-- 20 perguntas sobre diagnóstico, receita, custos e execução.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Plano de rentabilidade aplicado.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
-- 70% no quiz + plano aprovado pelo mentor.
+- 70% no quiz + prova prática aprovada pelo mentor.

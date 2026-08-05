@@ -1,6 +1,10 @@
-# Shorts — Especialista em Venda de Imóveis no Litoral
-1. Roteiro: dica de captação
-2. Roteiro: objeção rápida
-3. Roteiro: proposta em 1 minuto
-4. Roteiro: fechamento simples
-5. Roteiro: indicação rápida
+1. Roteiro: dica em 1 minuto 1
+2. Roteiro: dica em 1 minuto 2
+3. Roteiro: dica em 1 minuto 3
+4. Roteiro: dica em 1 minuto 4
+5. Roteiro: dica em 1 minuto 5
+6. Roteiro: dica em 1 minuto 6
+7. Roteiro: dica em 1 minuto 7
+8. Roteiro: dica em 1 minuto 8
+9. Roteiro: dica em 1 minuto 9
+10. Roteiro: dica em 1 minuto 10

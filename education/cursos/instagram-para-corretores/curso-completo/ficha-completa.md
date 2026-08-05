@@ -1,203 +1,193 @@
-# Curso: Instagram para Corretores
+# Curso: Instagram Para Corretores
 ## Nome Comercial
-**Instagram para Corretores: Como Usar o Instagram para Gerar Leads e Vender Imóveis no Litoral**
+**Instagram Para Corretores: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Do perfil ao fechamento: conteúdo, atendimento, stories, reels e conversão para corretores do litoral.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de estruturar um perfil que atrai proprietários e compradores, gera leads e converte em visitas e vendas.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
-- Corretores de imóveis de 22 a 50 anos
-- Imobiliárias e equipes
-- Interesse: leads, vendas, marca pessoal
-- Perfil: iniciante ou intermediário
+Proprietários, investidores e corretores do litoral.
+
+## Pré-requisitos
+Nenhum.
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
 8 horas de aulas (35 aulas de 12 a 20 min)
-Total: 8 horas
+Total: 8 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 347
-À vista: R$ 287
-Parcelado: 12x de R$ 23,92
-Mini curso: R$ 127
-E-book: R$ 17,90
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
+Mini curso: R$ 147
+E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Templates de posts
-- Scripts de atendimento
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Use o Instagram para gerar leads e vender mais imóveis no litoral"**
+**"Instagram Para Corretores"**
 
 ## Big Idea
-Instagram não é só foto bonita: é funil, autoridade, conteúdo direcionado e conversão. Quem aplica método gera leads qualificados.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
-- **Curso completo:** R$ 347
-- **Mini curso:** R$ 127
-- **E-book:** R$ 17,90
+- **Curso completo:** R$ 297
+- **Mini curso:** R$ 147
+- **E-book:** R$ 19,90
 
 ## Avatar
-**Nome:** João / Ana
-**Idade:** 22 a 45 anos
-**Renda:** R$ 2k a R$ 10k/mês
-**Objetivo:** leads e vendas pelo Instagram
-**Dificuldades:** conteúdo, engajamento, conversão
-**Desejos:** leads qualificados, autoridade, resultados
+**Nome:** Carlos / Fernanda
+**Idade:** 25 a 55 anos
+**Renda:** R$ 3k a R$ 20k/mês
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Perfil sem leads
-- Conteúdo sem conversão
 - Falta de método
-- Falta de tempo
-- Falta de engajamento
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Leads qualificados
-- Perfil profissional
-- Conteúdo que vende
+- Método claro
+- Exemplos reais
 - Resultados previsíveis
-- Marca forte
+- Segurança
+- Autoridade local
 
 ## Objeções
-- "É caro"
-- "Já tento de tudo"
-- "Não sei editar"
-- "Demora para dar resultado"
-- "E se não funcionar?"
+- "Muito caro"
+- "Não funciona"
+- "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- Perfil otimizado
-- Conteúdo estratégico
-- Leads qualificados
-- Conversão em vendas
-- Marca local forte
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
 ### Módulo 1 — Fundamentos
-Aula 1.1 — Instagram para corretores no litoral
-Aula 1.2 — Perfil que converte
-Aula 1.3 — Conteúdo estratégico
-Exercício: otimização do perfil
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Conteúdo
-Aula 2.1 — Tipos de conteúdo para imóveis
-Aula 2.2 — Reels, carrosséis e stories
-Aula 2.3 — SEO local e hashtags
-Exercício: calendário de conteúdo
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Atendimento e Conversão
-Aula 3.1 — Como atender leads
-Aula 3.2 — Follow-up no Direct
-Aula 3.3 — Como fechar pelo Instagram
-Exercício: script de atendimento
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Crescimento e Anúncios
-Aula 4.1 — Crescimento orgânico
-Aula 4.2 — Meta Ads básico
-Aula 4.3 — Métricas e ajustes
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
 Exercício: plano de crescimento
 
 ## Carga Horária
-8 horas
+8 horas de aulas (35 aulas de 12 a 20 min)
+Total: 8 horas
 
 ## Material Complementar
-- Templates de posts
-- Scripts de atendimento
+- PDFs por módulo
+- Templates
 - Comunidade fechada
+- Atualizações
 
 ## Checklists
-- Checklist de perfil
-- Checklist de conteúdo
-- Checklist de anúncios
-- Checklist de métricas
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de conteúdo
-- Planilha de leads
-- Planilha de ROI
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de post
-- Modelo de story
-- Modelo de direct
+- Modelo aplicável
 
 ## Scripts
-- Script de atendimento
-- Script de follow-up
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para criar legendas e roteiros de reels.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: otimização do perfil
-- Exercício 2: calendário de conteúdo
-- Exercício 3: script de atendimento
-- Exercício 4: anúncio básico
-- Exercício 5: análise de métricas
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: perfil e plano de conteúdo
+Prova prática: aplicação do método
 
 ## FAQ
-1. Preciso aparecer? Não obrigatoriamente.
-2. Quantos posts por semana? De 3 a 5.
-3. Vale a pena anúncio? Sim, com método.
-4. Como medir resultado? Leads, visits e vendas.
-5. E se eu não tiver tempo? Use automação e agendamento.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
-[Em construção no próximo passo]
+[vendas.html]
 
 ## Landing Page
-[Em construção no próximo passo]
+[index.html]
 
 ## Sequência de E-mails
-[Em construção no próximo passo]
+[email-sequence/sequencia.md]
 
 ## Posts Instagram
-[Em construção no próximo passo]
+[instagram/posts.md]
 
 ## Reels
-[Em construção no próximo passo]
+[marketing/reels.md]
 
 ## Carrosséis
-[Em construção no próximo passo]
+[marketing/carrosseis.md]
 
 ## Artigos SEO
-[Em construção no próximo passo]
+[seo-articles/sumario.md]
 
 ## Roteiros YouTube
-[Em construção no próximo passo]
+[marketing/youtube.md]
 
 ## Anúncios Meta
-[Em construção no próximo passo]
+[marketing/meta-ads.md]
 
 ## Anúncios Google
-[Em construção no próximo passo]
+[marketing/google-ads.md]
 
 ## CTA
-"Use o Instagram para gerar leads e vender mais imóveis no litoral."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
 - Mentoria individual: R$ 2.000
-- Acompanhamento de perfil: R$ 2.500
+- Acompanhamento: R$ 3.500
 
 ## Downsell
-- Mini curso: R$ 127
-- E-book: R$ 17,90
+- Mini curso: R$ 147
+- E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Marketing Imobiliário
-- Curso de Funil de Vendas
-- Curso de WhatsApp que Vende
+- Outros cursos da Praia Digital Academy

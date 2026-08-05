@@ -1,12 +1,33 @@
-# Módulo 3 — Atendimento e Avaliação
-## Aula 3.1 — Atendimento humanizado
-Conteúdo: comunicação, tom, rapidez, resolução.
+# Módulo 3 — Conteúdo Premium
+## Aula 3.1 — Introdução ao módulo
+Conteúdo: visão geral, objetivo, aplicação prática no litoral.
 
-## Aula 3.2 — Como lidar com avaliações ruins
-Conteúdo: resposta pública, ajuste interno, recuperação.
+## Aula 3.2 — Conceitos aplicados
+Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
 
-## Aula 3.3 — Comunicação com plataformas
-Conteúdo: mensagens, políticas, suporte.
+## Aula 3.3 — Estudo de caso
+Conteúdo: caso real, análise, lições.
 
 ## Exercício
-Simulação de atendimento e avaliação.
+Aplicação prática no seu contexto.
+
+## Resumo
+Pontos-chave para revisão.
+
+## Checklist
+- [ ] Conceitos entendidos
+- [ ] Caso analisado
+- [ ] Exercício aplicado
+
+## Materiais para download
+- PDF do módulo
+- Templates
+- Planilha
+
+## Ferramentas recomendadas
+- Ferramenta 1
+- Ferramenta 2
+- Ferramenta 3
+
+## Prompt de IA
+Prompt para acelerar tarefas deste módulo.

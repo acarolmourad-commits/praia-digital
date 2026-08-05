@@ -1,195 +1,193 @@
-# Curso: Casa ou Apartamento?
+# Curso: Casa Ou Apartamento
 ## Nome Comercial
-**Casa ou Apartamento no Litoral? O Curso Definitivo para Escolher o Melhor Perfil para Você**
+**Casa Ou Apartamento: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Entenda custos, manutenção, liquidez e estilo de vida para tomar a decisão certa na primeira compra no litoral.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 7 dias, você terá clareza para escolher entre casa ou apartamento no litoral, com critérios objetivos e sem achismo.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
-- Pessoas de 25 a 55 anos
-- Renda R$ 6k a R$ 20k/mês
-- Interesse: primeira compra ou segunda residência
-- Perfil: iniciante ou indeciso
+Proprietários, investidores e corretores do litoral.
+
+## Pré-requisitos
+Nenhum.
 
 ## Nível
 Iniciante
 
 ## Tempo Estimado
 4 horas de aulas (24 aulas de 8 a 18 min)
-Total: 4 horas
+Total: 4 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 197
-À vista: R$ 157
-Parcelado: 12x de R$ 16,41
-Mini curso: R$ 97
-E-book: R$ 14,90
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
+Mini curso: R$ 147
+E-book: R$ 19,90
 
 ## Oferta Principal
-- Acesso vitalício
-- Checklist decisório
-- Planilha comparativa
+- Acesso vitalício + atualizações
+- Material complementar
 - Comunidade fechada
+- Certificado
 
 ## Headline
-**"Aprenda a escolher entre casa ou apartamento no litoral com método e sem arrependimento"**
+**"Casa Ou Apartamento"**
 
 ## Big Idea
-A decisão entre casa ou apartamento não é gosto: é método. Custos ocultos, manutenção, liquidez e estilo de vida definem o melhor perfil.
+Conteúdo premium aplicado ao mercado do litoral.
+
+## Oferta
+- **Curso completo:** R$ 297
+- **Mini curso:** R$ 147
+- **E-book:** R$ 19,90
 
 ## Avatar
-**Nome:** Ana / Carlos
-**Idade:** 25 a 50 anos
-**Renda:** R$ 6k a R$ 18k/mês
-**Objetivo:** escolher o melhor perfil para comprar no litoral
-**Dificuldades:** dúvida entre casa e apartamento, custos ocultos, insegurança
-**Desejos:** clareza, economia, escolha acertada
+**Nome:** Carlos / Fernanda
+**Idade:** 25 a 55 anos
+**Renda:** R$ 3k a R$ 20k/mês
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Dúvida entre casa e apartamento
-- Medo de custos ocultos
-- Não sabe calcular manutenção
-- Medo de arrependimento
-- Pressão de familiares
+- Falta de método
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Clareza decisória
-- Comparativo claro
-- Segurança financeira
-- Estilo de vida compatível
-- Valorização
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
+- Segurança
+- Autoridade local
 
 ## Objeções
-- "Casa é sempre melhor"
-- "Apartamento tem mais gastos"
-- "Não sei o que combina comigo"
-- "E se eu errar?"
-- "É muito caro mudar depois"
+- "Muito caro"
+- "Não funciona"
+- "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- Critérios claros de decisão
-- Planilha comparativa
-- Visão realista de custos
-- Decisão em até 7 dias
-- Segurança emocional
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
-### Módulo 1 — Perfil e Estilo de Vida
-Aula 1.1 — Como definir seu perfil de uso
-Aula 1.2 — Casa: vantagens e desvantagens
-Aula 1.3 — Apartamento: vantagens e desvantagens
-Exercício: perfil do usuário
+### Módulo 1 — Fundamentos
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Custos e Rentabilidade
-Aula 2.1 — Custo total: compra, manutenção e impostos
-Aula 2.2 — Liquidez e valorização
-Aula 2.3 — Temporada e locação
-Exercício: planilha comparativa
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Documentação e Riscos
-Aula 3.1 — Documentação específica
-Aula 3.2 — Riscos por tipo de imóvel
-Aula 3.3 — Checklist de escolha
-Exercício: checklist preenchido
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Decisão e Execução
-Aula 4.1 — Critérios objetivos de escolha
-Aula 4.2 — Como negociar por tipo de imóvel
-Aula 4.3 — Pós-escolha: manutenção e gestão
-Exercício: decisão final escrita
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
+Exercício: plano de crescimento
 
 ## Carga Horária
-4 horas
+4 horas de aulas (24 aulas de 8 a 18 min)
+Total: 4 horas
 
 ## Material Complementar
-- E-book complementar
-- Planilha comparativa
+- PDFs por módulo
+- Templates
 - Comunidade fechada
+- Atualizações
 
 ## Checklists
-- Checklist de perfil
-- Checklist de custos
-- Checklist de documentação
-- Checklist de decisão
+- Checklist por módulo
 
 ## Planilhas
-- Planilha comparativa casa vs apartamento
-- Planilha de custos ocultos
-- Planilha de valorização
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de checklist de vistoria
-- Modelo de avaliação de custos
+- Modelo aplicável
 
 ## Scripts
-- Script para corretor
-- Script para negociação
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para comparar imóveis por perfil.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: perfil do usuário
-- Exercício 2: planilha comparativa
-- Exercício 3: análise de custos
-- Exercício 4: checklist de decisão
-- Exercício 5: plano de execução
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
-Quiz 15 perguntas
-Prova prática: decisão fundamentada
+Quiz 20 perguntas
+Prova prática: aplicação do método
 
 ## FAQ
-1. Casa sempre valoriza mais? Não é regra.
-2. Apartamento tem mais custos? Pode ter.
-3. Vale a pena comprar na planta? Depende.
-4. Como saber o que combina comigo? Use o checklist.
-5. E se eu mudar de ideia? Planeje liquidez.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
-[Em construção no próximo passo]
+[vendas.html]
 
 ## Landing Page
-[Em construção no próximo passo]
+[index.html]
 
 ## Sequência de E-mails
-[Em construção no próximo passo]
+[email-sequence/sequencia.md]
 
 ## Posts Instagram
-[Em construção no próximo passo]
+[instagram/posts.md]
 
 ## Reels
-[Em construção no próximo passo]
+[marketing/reels.md]
 
 ## Carrosséis
-[Em construção no próximo passo]
+[marketing/carrosseis.md]
 
 ## Artigos SEO
-[Em construção no próximo passo]
+[seo-articles/sumario.md]
 
 ## Roteiros YouTube
-[Em construção no próximo passo]
+[marketing/youtube.md]
 
 ## Anúncios Meta
-[Em construção no próximo passo]
+[marketing/meta-ads.md]
 
 ## Anúncios Google
-[Em construção no próximo passo]
+[marketing/google-ads.md]
 
 ## CTA
-"Descubra qual imóvel combina com você e evite arrependimentos."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Curso de Investindo no Litoral: R$ 497
-- Consultoria: R$ 1.500
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
-- Mini curso: R$ 97
-- E-book: R$ 14,90
+- Mini curso: R$ 147
+- E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Primeiro Imóvel no Litoral
-- Curso de Financiamento sem Complicação
+- Outros cursos da Praia Digital Academy

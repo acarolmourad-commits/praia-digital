@@ -1,5 +1,5 @@
-# Sumário do Curso: PriceLabs Completo para Temporada no Litoral
+# Sumário do Curso: Pricelabs Completo
 - Módulo 1: Fundamentos
-- Módulo 2: Configuração
-- Módulo 3: Estratégia
-- Módulo 4: Integração e Gestão
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

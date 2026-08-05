@@ -1,15 +1,33 @@
-# Módulo 1 — Fundamentos do Mercado Imobiliário de Litoral
-## Aula 1.1 — Panorama Geral do Litoral Paulista
-Conteúdo: o que é a Praia Digital, cidades atendidas, volume de oferta e perfil de comprador.
-Exercício: escolha 1 cidade e justifique por que seria interessante começar por ela.
+# Módulo 1 — Conteúdo Premium
+## Aula 1.1 — Introdução ao módulo
+Conteúdo: visão geral, objetivo, aplicação prática no litoral.
 
-## Aula 1.2 — Conceitos Essenciais
-Conteúdo: m², valorização, liquidez, temporada vs moradia.
-Exercício: classifique 5 bairros entre alta, média e baixa liquidez.
+## Aula 1.2 — Conceitos aplicados
+Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
 
-## Aula 1.3 — Regras e Leis Relevantes
-Conteúdo: PTAM, Zoneamento, Lei de Zoneamento de SP, Código de Obras.
-Exercício: leia o PTAM de uma cidade e destaque 3 restrições.
+## Aula 1.3 — Estudo de caso
+Conteúdo: caso real, análise, lições.
 
-## Avaliação
-Quiz 10 perguntas + case: escolher 1 bairro e elaborar análise inicial.
+## Exercício
+Aplicação prática no seu contexto.
+
+## Resumo
+Pontos-chave para revisão.
+
+## Checklist
+- [ ] Conceitos entendidos
+- [ ] Caso analisado
+- [ ] Exercício aplicado
+
+## Materiais para download
+- PDF do módulo
+- Templates
+- Planilha
+
+## Ferramentas recomendadas
+- Ferramenta 1
+- Ferramenta 2
+- Ferramenta 3
+
+## Prompt de IA
+Prompt para acelerar tarefas deste módulo.

@@ -1,7 +1,6 @@
-# Certificado — Airbnb do Zero no Litoral
+# Certificado — Airbnb Do Zero
 Modelo: Praia Digital Academy
-Curso: Airbnb do Zero no Litoral
-Carga horária: 8 horas
+Curso: Airbnb Do Zero
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

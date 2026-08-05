@@ -1,91 +1,108 @@
-# Curso: Automação Comercial para Imobiliárias
+# Curso: Automacao Comercial
 ## Nome Comercial
-**Automação Comercial para Imobiliárias: Como Reduzir Trabalho e Aumentar Vendas no Litoral**
+**Automacao Comercial: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Do lead ao fechamento: automação, CRM, follow-up, scripts e processos para imobiliárias do litoral.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de automatizar a operação comercial sem perder atendimento humanizado.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
-- Donos de imobiliárias
-- Gestores comerciais
-- Interesse: escala, vendas, eficiência
-- Perfil: intermediário ou avançado
+Proprietários, investidores e corretores do litoral.
+
+## Pré-requisitos
+Nenhum.
 
 ## Nível
 Intermediário → Avançado
 
 ## Tempo Estimado
-9 horas
+9 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 497
-Mini curso: R$ 197
-E-book: R$ 24,90
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
+Mini curso: R$ 147
+E-book: R$ 19,90
+
+## Oferta Principal
+- Acesso vitalício + atualizações
+- Material complementar
+- Comunidade fechada
+- Certificado
+
+## Headline
+**"Automacao Comercial"**
+
+## Big Idea
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
-Curso completo R$ 497; Mini curso R$ 197; E-book R$ 24,90
+- **Curso completo:** R$ 297
+- **Mini curso:** R$ 147
+- **E-book:** R$ 19,90
 
 ## Avatar
-Nome: Carlos / Fernanda
-Idade: 30 a 55 anos
-Renda: R$ 8k a R$ 30k/mês
-Objetivo: eficiência e escala
-Dificuldades: processos, ferramentas, equipe
-Desejos: menos trabalho, mais vendas, previsibilidade
+**Nome:** Carlos / Fernanda
+**Idade:** 25 a 55 anos
+**Renda:** R$ 3k a R$ 20k/mês
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Processo manual
-- Follow-up perdido
-- Equipe sobrecarregada
 - Falta de método
-- Falta de dados
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Automação
-- Vendas previsíveis
-- Equipe produtiva
-- Processo simples
-- Resultado mensurável
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
+- Segurança
+- Autoridade local
 
 ## Objeções
-- "É caro"
-- "Já tenho ferramenta"
-- "Demora"
-- "E se quebrar?"
-- "Não compensa"
+- "Muito caro"
+- "Não funciona"
+- "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- Automação comercial
-- CRM operando
-- Follow-up automático
-- Equipe produtiva
-- Vendas previsíveis
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
-### Módulo 1 — Diagnóstico
-Aula 1.1 — Operação atual
-Aula 1.2 — Gargalos
-Aula 1.3 — Prioridades
-Exercício: diagnóstico comercial
+### Módulo 1 — Fundamentos
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Processos
-Aula 2.1 — Funil comercial
-Aula 2.2 — Scripts e templates
-Aula 2.3 — Follow-up
-Exercício: mapa de processos
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Automação
-Aula 3.1 — CRM e integrações
-Aula 3.2 — Automação de mensagens
-Aula 3.3 — Métricas
-Exercício: automação básica
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
 ### Módulo 4 — Crescimento
-Aula 4.1 — Treinamento
-Aula 4.2 — Ajustes
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
 Aula 4.3 — Escala
 Exercício: plano de crescimento
 
@@ -93,91 +110,82 @@ Exercício: plano de crescimento
 9 horas
 
 ## Material Complementar
-- Templates de CRM
-- Scripts
+- PDFs por módulo
+- Templates
 - Comunidade fechada
+- Atualizações
 
 ## Checklists
-- Checklist de processo
-- Checklist de automação
-- Checklist de métricas
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de funil
-- Planilha de CRM
-- Planilha de ROI
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de proposta
-- Modelo de follow-up
+- Modelo aplicável
 
 ## Scripts
-- Script de atendimento
-- Script de follow-up
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para criar fluxos de automação.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: diagnóstico
-- Exercício 2: processos
-- Exercício 3: automação
-- Exercício 4: métricas
-- Exercício 5: crescimento
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: automação operando
+Prova prática: aplicação do método
 
 ## FAQ
-1. Qual ferramenta usar? Depende do tamanho.
-2. Preciso de equipe? Não necessariamente.
-3. Quanto tempo? De 15 a 30 dias.
-4. E se errar? Ajuste com dados.
-5. Vale a pena? Sim, com método.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
-[Em construção no próximo passo]
+[vendas.html]
 
 ## Landing Page
-[Em construção no próximo passo]
+[index.html]
 
 ## Sequência de E-mails
-[Em construção no próximo passo]
+[email-sequence/sequencia.md]
 
 ## Posts Instagram
-[Em construção no próximo passo]
+[instagram/posts.md]
 
 ## Reels
-[Em construção no próximo passo]
+[marketing/reels.md]
 
 ## Carrosséis
-[Em construção no próximo passo]
+[marketing/carrosseis.md]
 
 ## Artigos SEO
-[Em construção no próximo passo]
+[seo-articles/sumario.md]
 
 ## Roteiros YouTube
-[Em construção no próximo passo]
+[marketing/youtube.md]
 
 ## Anúncios Meta
-[Em construção no próximo passo]
+[marketing/meta-ads.md]
 
 ## Anúncios Google
-[Em construção no próximo passo]
+[marketing/google-ads.md]
 
 ## CTA
-"Automatize sua imobiliária e venda mais."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Consultoria: R$ 5.000
+- Mentoria individual: R$ 2.000
 - Acompanhamento: R$ 3.500
 
 ## Downsell
-- Mini curso: R$ 197
-- E-book: R$ 24,90
+- Mini curso: R$ 147
+- E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Marketing Imobiliário
-- Curso de Captação
-- Curso de Gestão Comercial
+- Outros cursos da Praia Digital Academy

@@ -1,11 +1,10 @@
-# Posts Instagram — Especialista em Venda de Imóveis no Litoral
-1. Post: dica de captação
-2. Reels: objeção em 30s
-3. Carrossel: checklist de proposta
-4. Post: fechamento
-5. Reels: case de venda
-6. Carrossel: scripts rápidos
-7. Post: temporada de vendas
-8. Reels: diferenciais locais
-9. Carrossel: pós-venda
-10. Post: comece hoje
+1. Post: dica sobre especialista venda imoveis litoral
+2. Post: dica sobre especialista venda imoveis litoral
+3. Post: dica sobre especialista venda imoveis litoral
+4. Post: dica sobre especialista venda imoveis litoral
+5. Post: dica sobre especialista venda imoveis litoral
+6. Post: dica sobre especialista venda imoveis litoral
+7. Post: dica sobre especialista venda imoveis litoral
+8. Post: dica sobre especialista venda imoveis litoral
+9. Post: dica sobre especialista venda imoveis litoral
+10. Post: dica sobre especialista venda imoveis litoral

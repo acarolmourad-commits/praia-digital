@@ -1,12 +1,33 @@
-# Módulo 1 — Fundamentos
-## Aula 1.1 — Captação no litoral
-Conteúdo: fontes, relacionamento, valor.
+# Módulo 1 — Conteúdo Premium
+## Aula 1.1 — Introdução ao módulo
+Conteúdo: visão geral, objetivo, aplicação prática no litoral.
 
-## Aula 1.2 — Perfil do proprietário
-Conteúdo: expectativas, dores, decisão.
+## Aula 1.2 — Conceitos aplicados
+Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
 
-## Aula 1.3 — Exclusividade como diferencial
-Conteúdo: benefícios, proposta, fechamento.
+## Aula 1.3 — Estudo de caso
+Conteúdo: caso real, análise, lições.
 
 ## Exercício
-Defina sua oferta de captação.
+Aplicação prática no seu contexto.
+
+## Resumo
+Pontos-chave para revisão.
+
+## Checklist
+- [ ] Conceitos entendidos
+- [ ] Caso analisado
+- [ ] Exercício aplicado
+
+## Materiais para download
+- PDF do módulo
+- Templates
+- Planilha
+
+## Ferramentas recomendadas
+- Ferramenta 1
+- Ferramenta 2
+- Ferramenta 3
+
+## Prompt de IA
+Prompt para acelerar tarefas deste módulo.

@@ -1,4 +1,4 @@
-# Google Ads — Financiamento Imobiliario
-Palavras: Financiamento Imobiliario no litoral, como fazer Financiamento Imobiliario, litoral
+# Google Ads — financiamento-imobiliario
+Palavras: financiamento imobiliario, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

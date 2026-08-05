@@ -1,21 +1,21 @@
 # Sequência de E-mails — Comprar Com Seguranca
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido de Comprar Com Seguranca (PDF)
+Assunto: Guia Rápido sobre Comprar Com Seguranca (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case de Comprar Com Seguranca no litoral
+Assunto: Case prático de Comprar Com Seguranca
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: “Comprar Com Seguranca é complicado?”
+Assunto: "Comprar Com Seguranca é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno aplicou o método
+Assunto: Aluno obteve resultado com Comprar Com Seguranca
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

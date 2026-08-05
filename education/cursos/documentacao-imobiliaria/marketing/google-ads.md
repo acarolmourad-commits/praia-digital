@@ -1,4 +1,4 @@
-# Google Ads — Documentacao Imobiliaria
-Palavras: Documentacao Imobiliaria no litoral, como fazer Documentacao Imobiliaria, litoral
+# Google Ads — documentacao-imobiliaria
+Palavras: documentacao imobiliaria, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

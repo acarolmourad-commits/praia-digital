@@ -1,11 +1,11 @@
 # Artigos SEO — Documentacao Imobiliaria
-1. Guia completo de Documentacao Imobiliaria no litoral
-2. Como aplicar Documentacao Imobiliaria no litoral
-3. Erros comuns em Documentacao Imobiliaria no litoral
-4. Dicas práticas de Documentacao Imobiliaria
-5. Resultados reais de Documentacao Imobiliaria
-6. Ferramentas para Documentacao Imobiliaria
-7. Checklist de Documentacao Imobiliaria
-8. ROI de Documentacao Imobiliaria
-9. Como começar em Documentacao Imobiliaria
-10. Perguntas frequentes sobre Documentacao Imobiliaria
+1. Documentacao Imobiliaria em 2026
+2. Como aplicar documentacao imobiliaria no litoral
+3. Resultados reais de documentacao imobiliaria
+4. Método passo a passo de documentacao imobiliaria
+5. Erros comuns em documentacao imobiliaria
+6. Ferramentas para documentacao imobiliaria
+7. Cases de documentacao imobiliaria no litoral
+8. Como medir resultado em documentacao imobiliaria
+9. Como começar em documentacao imobiliaria
+10. FAQ sobre documentacao imobiliaria

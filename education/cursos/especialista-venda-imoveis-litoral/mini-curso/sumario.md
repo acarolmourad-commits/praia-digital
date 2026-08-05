@@ -1,5 +1,5 @@
-# Mini Curso — Especialista em Venda de Imóveis no Litoral
-## Aula 1 — Mercado do litoral (8 min)
-## Aula 2 — Captação de leads (12 min)
-## Aula 3 — Proposta irresistível (10 min)
-## Bônus — Scripts de vendas
+# Mini Curso — Especialista Venda Imoveis Litoral
+## Aula 1 — Visão geral (8 min)
+## Aula 2 — Conceitos essenciais (12 min)
+## Aula 3 — Aplicação prática (10 min)
+## Bônus — Material complementar

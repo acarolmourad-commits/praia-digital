@@ -1,11 +1,10 @@
-# Posts Instagram — Captação e Exclusividade para Corretores
-1. Post: dica de captação
-2. Reels: exclusividade em 30s
-3. Carrossel: checklist de proposta
-4. Post: visita de captação
-5. Reels: case de captação
-6. Carrossel: scripts rápidos
-7. Post: follow-up
-8. Reels: objeção comum
-9. Carrossel: diferenciais
-10. Post: comece hoje
+1. Post: dica sobre captacao exclusividade
+2. Post: dica sobre captacao exclusividade
+3. Post: dica sobre captacao exclusividade
+4. Post: dica sobre captacao exclusividade
+5. Post: dica sobre captacao exclusividade
+6. Post: dica sobre captacao exclusividade
+7. Post: dica sobre captacao exclusividade
+8. Post: dica sobre captacao exclusividade
+9. Post: dica sobre captacao exclusividade
+10. Post: dica sobre captacao exclusividade

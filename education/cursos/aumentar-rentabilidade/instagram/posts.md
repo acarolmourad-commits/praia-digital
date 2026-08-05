@@ -1,11 +1,20 @@
-# Posts Instagram — Como Aumentar em 30% a Rentabilidade
-1. Post: 3 erros que matam a rentabilidade
-2. Reels: como aumentar receita em 30s
-3. Carrossel: checklist de ganhos rápidos
-4. Post: custos ocultos
-5. Reels: dica de preço
-6. Carrossel: ROI simplificado
-7. Post: temporada lucrativa
-8. Reels: case de rentabilidade
-9. Carrossel: ações rápidas
-10. Post: automação simples
+1. Post: dica premium sobre aumentar-rentabilidade
+2. Reels: resultado em 30s
+3. Carrossel: checklist rápido
+4. Post: caso real
+5. Reels: ferramenta prática
+6. Post: dica premium sobre aumentar-rentabilidade
+7. Reels: resultado em 30s
+8. Carrossel: checklist rápido
+9. Post: caso real
+10. Reels: ferramenta prática
+11. Post: dica premium sobre aumentar-rentabilidade
+12. Reels: resultado em 30s
+13. Carrossel: checklist rápido
+14. Post: caso real
+15. Reels: ferramenta prática
+16. Post: dica premium sobre aumentar-rentabilidade
+17. Reels: resultado em 30s
+18. Carrossel: checklist rápido
+19. Post: caso real
+20. Reels: ferramenta prática

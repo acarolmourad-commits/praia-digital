@@ -1,200 +1,193 @@
-# Curso: Funil de Vendas
+# Curso: Funil De Vendas
 ## Nome Comercial
-**Funil de Vendas para Corretores: Como Transformar Leads em Vendas no Litoral**
+**Funil De Vendas: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Do primeiro contato ao fechamento: etapas, scripts, automação e conversão para corretores do litoral.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de estruturar um funil que transforma leads em visitas e vendas com previsibilidade.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
-- Corretores de 22 a 50 anos
-- Interesse: vendas, leads, funil
-- Perfil: iniciante ou intermediário
+Proprietários, investidores e corretores do litoral.
+
+## Pré-requisitos
+Nenhum.
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
 6 horas de aulas (30 aulas de 10 a 16 min)
-Total: 6 horas
+Total: 6 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
 Curso completo: R$ 297
-À vista: R$ 247
-Parcelado: 12x de R$ 20,58
-Mini curso: R$ 97
-E-book: R$ 14,90
+À vista: 267
+Parcelado: 12x de R$ 24.75
+Mini curso: R$ 147
+E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Scripts de funil
-- Templates de mensagens
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Transforme leads em vendas no litoral com um funil simples e previsível"**
+**"Funil De Vendas"**
 
 ## Big Idea
-Venda não é sorte: é funil. Quem estrutura etapas e follow-up converte mais com menos esforço.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
 - **Curso completo:** R$ 297
-- **Mini curso:** R$ 97
-- **E-book:** R$ 14,90
+- **Mini curso:** R$ 147
+- **E-book:** R$ 19,90
 
 ## Avatar
-**Nome:** João / Ana
-**Idade:** 22 a 45 anos
-**Renda:** R$ 2k a R$ 10k/mês
-**Objetivo:** mais vendas e previsibilidade
-**Dificuldades:** leads frios, objeções, follow-up
-**Desejos:** conversão, organização, resultado
+**Nome:** Carlos / Fernanda
+**Idade:** 25 a 55 anos
+**Renda:** R$ 3k a R$ 20k/mês
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Leads sem follow-up
-- Funil desorganizado
-- Objeções frequentes
 - Falta de método
-- Falta de tempo
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Funil claro
-- Follow-up automático
-- Conversão maior
-- Vendas previsíveis
-- Menos stress
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
+- Segurança
+- Autoridade local
 
 ## Objeções
-- "É caro"
-- "Já tento de tudo"
-- "Demora"
-- "E se não funcionar?"
-- "Não compensa"
+- "Muito caro"
+- "Não funciona"
+- "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- Funil estruturado
-- Scripts prontos
-- Follow-up automático
-- Conversão maior
-- Vendas previsíveis
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
 ### Módulo 1 — Fundamentos
-Aula 1.1 — Funil de vendas para corretores
-Aula 1.2 — Etapas do funil
-Aula 1.3 — Métricas essenciais
-Exercício: desenho do funil
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Topo do Funil
-Aula 2.1 — Atração de leads
-Aula 2.2 — Qualificação
-Aula 2.3 — Primeiro contato
-Exercício: sequência inicial
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Meio e Fundo
-Aula 3.1 — Apresentação e objeções
-Aula 3.2 — Visita e proposta
-Aula 3.3 — Fechamento
-Exercício: simulação de funil
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Automação
-Aula 4.1 — Follow-up automático
-Aula 4.2 — Ferramentas
-Aula 4.3 — Métricas e ajustes
-Exercício: relatório de funil
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
+Exercício: plano de crescimento
 
 ## Carga Horária
-6 horas
+6 horas de aulas (30 aulas de 10 a 16 min)
+Total: 6 horas
 
 ## Material Complementar
-- Scripts de funil
+- PDFs por módulo
 - Templates
 - Comunidade fechada
+- Atualizações
 
 ## Checklists
-- Checklist de funil
-- Checklist de follow-up
-- Checklist de métricas
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de leads
-- Planilha de funil
-- Planilha de ROI
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de follow-up
-- Modelo de proposta
+- Modelo aplicável
 
 ## Scripts
-- Script de atendimento
-- Script de follow-up
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para criar fluxos de funil.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: desenho do funil
-- Exercício 2: sequência inicial
-- Exercício 3: objeções
-- Exercício 4: fechamento
-- Exercício 5: relatório
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: funil operando
+Prova prática: aplicação do método
 
 ## FAQ
-1. Qual ferramenta usar? Depende do tamanho.
-2. Preciso automatizar? Pode ser manual.
-3. Como medir sucesso? Leads, visitas e vendas.
-4. E se eu errar? Ajuste com dados.
-5. Vale a pena? Sim, com método.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
-[Em construção no próximo passo]
+[vendas.html]
 
 ## Landing Page
-[Em construção no próximo passo]
+[index.html]
 
 ## Sequência de E-mails
-[Em construção no próximo passo]
+[email-sequence/sequencia.md]
 
 ## Posts Instagram
-[Em construção no próximo passo]
+[instagram/posts.md]
 
 ## Reels
-[Em construção no próximo passo]
+[marketing/reels.md]
 
 ## Carrosséis
-[Em construção no próximo passo]
+[marketing/carrosseis.md]
 
 ## Artigos SEO
-[Em construção no próximo passo]
+[seo-articles/sumario.md]
 
 ## Roteiros YouTube
-[Em construção no próximo passo]
+[marketing/youtube.md]
 
 ## Anúncios Meta
-[Em construção no próximo passo]
+[marketing/meta-ads.md]
 
 ## Anúncios Google
-[Em construção no próximo passo]
+[marketing/google-ads.md]
 
 ## CTA
-"Transforme leads em vendas com um funil simples."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Mentoria: R$ 2.000
-- Acompanhamento: R$ 3.000
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
-- Mini curso: R$ 97
-- E-book: R$ 14,90
+- Mini curso: R$ 147
+- E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de CRM
-- Curso de WhatsApp que Vende
-- Curso de Instagram para Corretores
+- Outros cursos da Praia Digital Academy

@@ -1,11 +1,10 @@
-# Posts Instagram — Airbnb do Zero
-1. Post: 3 erros no Airbnb
-2. Reels: ocupação em 30s
-3. Carrossel: checklist cadastro
-4. Post: fotos que vendem
-5. Reels: preço certo
-6. Carrossel: regras da casa
-7. Post: temporada ou long stay?
-8. Reels: case de reserva
-9. Carrossel: avaliações boas
-10. Post: automação simples
+1. Post: dica sobre airbnb do zero
+2. Post: dica sobre airbnb do zero
+3. Post: dica sobre airbnb do zero
+4. Post: dica sobre airbnb do zero
+5. Post: dica sobre airbnb do zero
+6. Post: dica sobre airbnb do zero
+7. Post: dica sobre airbnb do zero
+8. Post: dica sobre airbnb do zero
+9. Post: dica sobre airbnb do zero
+10. Post: dica sobre airbnb do zero

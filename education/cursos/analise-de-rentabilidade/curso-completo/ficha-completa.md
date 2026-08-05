@@ -1,179 +1,191 @@
-# Curso: Análise de Rentabilidade
+# Curso: Analise De Rentabilidade
 ## Nome Comercial
-**Análise de Rentabilidade no Litoral: Como Avaliar, Calcular e Decidir com Dados**
+**Analise De Rentabilidade: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Métodos de cálculo de rentabilidade, indicadores, cenários e decisão de investimento no litoral.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 20 dias, você será capaz de analisar rentabilidade de imóveis no litoral e tomar decisões com dados.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
-- Investidores
-- Proprietários
-- Interesse: ROI, decisão, análise
-- Perfil: iniciante ou intermediário
+Proprietários, investidores e corretores do litoral.
+
+## Pré-requisitos
+Nenhum.
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
-7 horas
+7 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 347
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
 Mini curso: R$ 147
 E-book: R$ 19,90
 
+## Oferta Principal
+- Acesso vitalício + atualizações
+- Material complementar
+- Comunidade fechada
+- Certificado
+
+## Headline
+**"Analise De Rentabilidade"**
+
+## Big Idea
+Conteúdo premium aplicado ao mercado do litoral.
+
 ## Oferta
-Curso completo R$ 347; Mini curso R$ 147; E-book R$ 19,90
+- **Curso completo:** R$ 297
+- **Mini curso:** R$ 147
+- **E-book:** R$ 19,90
 
 ## Avatar
-Nome: Carlos / Fernanda
-Idade: 28 a 50 anos
-Renda: R$ 6k a R$ 25k/mês
-Objetivo: avaliar rentabilidade
-Dificuldades: cálculos, dados, cenários
-Desejos: decisão segura, ROI claro
+**Nome:** Carlos / Fernanda
+**Idade:** 25 a 55 anos
+**Renda:** R$ 3k a R$ 20k/mês
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Decisão sem dados
-- Cálculo errado
-- Falta de indicadores
-- Cenário pouco claro
-- Risco alto
+- Falta de método
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Rentabilidade previsível
-- Decisão com dados
-- ROI claro
-- Cenários realistas
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
 - Segurança
+- Autoridade local
 
 ## Objeções
-- "É caro"
-- "Já sei calcular"
-- "Demora"
-- "E se errar?"
-- "Não compensa"
+- "Muito caro"
+- "Não funciona"
+- "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- Análise estruturada
-- Indicadores claros
-- Decisão segura
-- ROI previsível
-- Menos risco
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
 ### Módulo 1 — Fundamentos
-Aula 1.1 — O que é rentabilidade no litoral
-Aula 1.2 — Indicadores essenciais
-Aula 1.3 — Cenários e risco
-Exercício: mapa de indicadores
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Cálculo
-Aula 2.1 — ROI, cap rate e payback
-Aula 2.2 — Temporada e sazonalidade
-Aula 2.3 — Fluxo de caixa
-Exercício: cálculo de cenário
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Decisão
-Aula 3.1 — Comparação de ativos
-Aula 3.2 — Ponto de entrada
-Aula 3.3 — Alavancagem
-Exercício: plano de decisão
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Acompanhamento
-Aula 4.1 — Monitoramento
-Aula 4.2 — Ajustes
-Aula 4.3 — Reavaliação
-Exercício: relatório de rentabilidade
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
+Exercício: plano de crescimento
 
 ## Carga Horária
 7 horas
 
 ## Material Complementar
-- Planilhas de cálculo
-- Templates de cenário
+- PDFs por módulo
+- Templates
 - Comunidade fechada
+- Atualizações
 
 ## Checklists
-- Checklist de análise
-- Checklist de dados
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de ROI
-- Planilha de fluxo de caixa
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de relatório
+- Modelo aplicável
 
 ## Scripts
-- Script de apresentação
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para gerar relatórios de rentabilidade.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: indicadores
-- Exercício 2: cálculo
-- Exercício 3: cenário
-- Exercício 4: decisão
-- Exercício 5: relatório
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: relatório completo
+Prova prática: aplicação do método
 
 ## FAQ
-1. Qual indicador usar? Depende do objetivo.
-2. Como projetar temporada? Histórico e sazonalidade.
-3. E se errar? Ajuste com dados.
-4. Vale a pena alavancagem? Pode valer.
-5. Quando comprar? Quando o cenário for seguro.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
-[Em construção no próximo passo]
+[vendas.html]
 
 ## Landing Page
-[Em construção no próximo passo]
+[index.html]
 
 ## Sequência de E-mails
-[Em construção no próximo passo]
+[email-sequence/sequencia.md]
 
 ## Posts Instagram
-[Em construção no próximo passo]
+[instagram/posts.md]
 
 ## Reels
-[Em construção no próximo passo]
+[marketing/reels.md]
 
 ## Carrosséis
-[Em construção no próximo passo]
+[marketing/carrosseis.md]
 
 ## Artigos SEO
-[Em construção no próximo passo]
+[seo-articles/sumario.md]
 
 ## Roteiros YouTube
-[Em construção no próximo passo]
+[marketing/youtube.md]
 
 ## Anúncios Meta
-[Em construção no próximo passo]
+[marketing/meta-ads.md]
 
 ## Anúncios Google
-[Em construção no próximo passo]
+[marketing/google-ads.md]
 
 ## CTA
-"Analise rentabilidade no litoral e decida com dados."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Mentoria: R$ 2.000
-- Acompanhamento: R$ 3.000
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
 - Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Investindo em Imóveis no Litoral
-- Curso de Airbnb do Zero
-- Curso de PriceLabs Completo
+- Outros cursos da Praia Digital Academy

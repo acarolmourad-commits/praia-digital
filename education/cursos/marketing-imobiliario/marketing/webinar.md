@@ -1,7 +1,7 @@
-# Roteiro de Webinar — Marketing Imobiliário para Corretores
+# Roteiro de Webinar — Marketing Imobiliario
 1. Abertura: dor do público
-2. Case: marketing imobiliário
-3. Método: 4 passos
+2. Case: aplicação prática
+3. Método: passo a passo
 4. Prova social
 5. Oferta e bônus
 6. Perguntas frequentes

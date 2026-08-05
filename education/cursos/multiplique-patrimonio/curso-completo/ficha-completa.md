@@ -1,180 +1,191 @@
-# Curso: Multiplique seu Patrimônio
+# Curso: Multiplique Patrimonio
 ## Nome Comercial
-**Multiplique seu Patrimônio no Litoral: Estratégias de Acúmulo, Reapresentação e Escala**
+**Multiplique Patrimonio: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Da primeira compra à carteira: decisão, financiamento, temporada e reinvestimento no litoral.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 60 dias, você será capaz de montar um plano de multiplicação patrimonial no litoral.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
-- Investidores
-- Proprietários
-- Interesse: patrimônio, escala, longo prazo
-- Perfil: iniciante ou intermediário
+Proprietários, investidores e corretores do litoral.
+
+## Pré-requisitos
+Nenhum.
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
-7 horas
+7 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 347
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
 Mini curso: R$ 147
 E-book: R$ 19,90
 
+## Oferta Principal
+- Acesso vitalício + atualizações
+- Material complementar
+- Comunidade fechada
+- Certificado
+
+## Headline
+**"Multiplique Patrimonio"**
+
+## Big Idea
+Conteúdo premium aplicado ao mercado do litoral.
+
 ## Oferta
-Curso completo R$ 347; Mini curso R$ 147; E-book R$ 19,90
+- **Curso completo:** R$ 297
+- **Mini curso:** R$ 147
+- **E-book:** R$ 19,90
 
 ## Avatar
-Nome: Carlos / Fernanda
-Idade: 28 a 55 anos
-Renda: R$ 5k a R$ 25k/mês
-Objetivo: multiplicar patrimônio
-Dificuldades: decisão, reinvestimento, risco
-Desejos: escala, segurança, liberdade
+**Nome:** Carlos / Fernanda
+**Idade:** 25 a 55 anos
+**Renda:** R$ 3k a R$ 20k/mês
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Decisão sem método
-- Falta de planejamento
-- Risco alto
-- Falta de visão de longo prazo
-- Rentabilidade baixa
+- Falta de método
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Crescimento patrimonial
-- Escala
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
 - Segurança
-- Liberdade
-- Resultado previsível
+- Autoridade local
 
 ## Objeções
-- "É caro"
-- "Já invisto"
-- "Demora"
-- "E se errar?"
-- "Não compensa"
+- "Muito caro"
+- "Não funciona"
+- "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- Plano patrimonial
-- Estratégia de escala
-- Decisão segura
-- Crescimento consistente
-- Liberdade financeira
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
-### Módulo 1 — Mentalidade
-Aula 1.1 — Patrimônio no litoral
-Aula 1.2 — Objetivos e prazos
-Aula 1.3 — Perfil de risco
-Exercício: plano inicial
+### Módulo 1 — Fundamentos
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Estratégia
-Aula 2.1 — Primeiro ativo
-Aula 2.2 — Reapresentação
-Aula 2.3 — Diversificação
-Exercício: estratégia de carteira
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Execução
-Aula 3.1 — Compra e financiamento
-Aula 3.2 — Temporada e receita
-Aula 3.3 — Reinvestimento
-Exercício: plano de execução
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Escala
-Aula 4.1 — Crescimento
-Aula 4.2 — Gestão
-Aula 4.3 — Resultados
-Exercício: plano de escala
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
+Exercício: plano de crescimento
 
 ## Carga Horária
 7 horas
 
 ## Material Complementar
-- Planilhas de patrimônio
-- Templates de plano
+- PDFs por módulo
+- Templates
 - Comunidade fechada
+- Atualizações
 
 ## Checklists
-- Checklist patrimonial
-- Checklist de compra
-- Checklist de gestão
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de patrimônio
-- Planilha de ROI
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de plano
+- Modelo aplicável
 
 ## Scripts
-- Script de revisão
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para criar plano patrimonial.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: perfil
-- Exercício 2: estratégia
-- Exercício 3: execução
-- Exercício 4: escala
-- Exercício 5: relatório
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: plano patrimonial
+Prova prática: aplicação do método
 
 ## FAQ
-1. Por onde começar? Primeiro ativo.
-2. Vale a pena temporada? Sim, em muitos casos.
-3. Como reinvestir? ROI positivo primeiro.
-4. Quanto tempo? De 3 a 10 anos.
-5. E se errar? Ajuste o plano.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
-[Em construção no próximo passo]
+[vendas.html]
 
 ## Landing Page
-[Em construção no próximo passo]
+[index.html]
 
 ## Sequência de E-mails
-[Em construção no próximo passo]
+[email-sequence/sequencia.md]
 
 ## Posts Instagram
-[Em construção no próximo passo]
+[instagram/posts.md]
 
 ## Reels
-[Em construção no próximo passo]
+[marketing/reels.md]
 
 ## Carrosséis
-[Em construção no próximo passo]
+[marketing/carrosseis.md]
 
 ## Artigos SEO
-[Em construção no próximo passo]
+[seo-articles/sumario.md]
 
 ## Roteiros YouTube
-[Em construção no próximo passo]
+[marketing/youtube.md]
 
 ## Anúncios Meta
-[Em construção no próximo passo]
+[marketing/meta-ads.md]
 
 ## Anúncios Google
-[Em construção no próximo passo]
+[marketing/google-ads.md]
 
 ## CTA
-"Multiplique seu patrimônio no litoral com um plano simples."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Mentoria: R$ 3.000
-- Acompanhamento: R$ 4.000
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
 - Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Investindo em Imóveis no Litoral
-- Curso de Análise de Rentabilidade
-- Curso de Flipping
+- Outros cursos da Praia Digital Academy

@@ -1,11 +1,11 @@
-# FAQ — Especialista em Venda de Imóveis no Litoral
-1. Como captar leads? Marketing e relacionamento.
-2. Como lidar com objeções? Método e argumentos.
+# FAQ — Especialista Venda Imoveis Litoral
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
 3. Preciso de experiência? Não.
-4. Quanto tempo para fechar? De 7 a 30 dias.
-5. Vale a pena para iniciantes? Sim.
-6. Como criar proposta? Estruture valor e urgência.
-7. Qual canal priorizar? Depende do público.
-8. Como medir sucesso? Leads e conversão.
-9. Como fazer pós-venda? Acompanhamento.
-10. Preciso de site? Ajuda.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
+6. Qual o investimento? R$ 297.
+7. Tem suporte? Sim.
+8. Como acessar? Plataforma online.
+9. Tem certificado? Sim.
+10. Posso parcelar? Sim.

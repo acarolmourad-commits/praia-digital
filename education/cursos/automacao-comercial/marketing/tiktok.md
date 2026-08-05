@@ -1,6 +1,10 @@
-# TikTok — Automacao Comercial
-1. Roteiro: dica rápida
-2. Roteiro: erro comum
-3. Roteiro: passo a passo
-4. Roteiro: resultado real
-5. Roteiro: comece hoje
+1. Roteiro: case rápido 1
+2. Roteiro: case rápido 2
+3. Roteiro: case rápido 3
+4. Roteiro: case rápido 4
+5. Roteiro: case rápido 5
+6. Roteiro: case rápido 6
+7. Roteiro: case rápido 7
+8. Roteiro: case rápido 8
+9. Roteiro: case rápido 9
+10. Roteiro: case rápido 10

@@ -1,4 +1,4 @@
-# Google Ads — Instagram Para Corretores
-Palavras: Instagram Para Corretores no litoral, como fazer Instagram Para Corretores, litoral
+# Google Ads — instagram-para-corretores
+Palavras: instagram para corretores, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender
