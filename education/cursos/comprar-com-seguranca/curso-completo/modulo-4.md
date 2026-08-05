@@ -1,49 +1,62 @@
-# Módulo 4 — Crescimento
+# Módulo 4 — Gestão e Crescimento
 
 ## Introdução
-Acompanhe resultados, ajuste estratégias e escale sem perder controle.
+Acompanhe pós-compra, ajuste processos e planeje crescimento no litoral.
 
-## Aula 4.1 — Acompanhamento
-- Métricas
-- Frequência
-- Formato
-- Aprendizado
+## Aula 4.1 — Acompanhamento pós-compra
+**Passos:**
+- Registro concluído.
+- Documentos guardados.
+- Acompanhamento de valorização.
 
-**Exemplo real:** Acompanhamento semanal permitiu ajustes rápidos e crescimento contínuo.
+**Dicas:**
+- Mantenha documentos organizados.
+- Acompanhe mercado.
 
-## Aula 4.2 — Ajustes
-- Quando ajustar
-- Como ajustar
-- Validação
+**Exemplo real:**
+Comprador acompanhou valorização e planejou troca.
 
-**Estudo de caso:** Ajustes pontuais aumentaram resultado sem aumentar esforço.
+## Aula 4.2 — Ajustes e melhorias
+**Ajustes:**
+- Revise processo.
+- Atualize checklist.
+- Treine equipe.
 
-## Aula 4.3 — Escala
-- Processos
-- Fornecedores/parcerias
-- Crescimento gradual
+**Melhorias:**
+- Automação de lembretes.
+- Integração com CRM.
+- Padronização de modelo.
 
-## Exercício
-Monte um plano de escala sustentada.
+**Exercício:**
+Monte um plano de acompanhamento.
+
+## Aula 4.3 — Crescimento e novo imóvel
+**Crescimento:**
+- Acompanhe mercado.
+- Avalie novo imóvel.
+
+**Novo imóvel:**
+- Aplique método.
+- Use experiência.
 
 ## Resumo
-- Acompanhamento mantém direção
-- Ajustes preservam resultado
-- Escala depende de processo
+- Acompanhamento protege investimento.
+- Ajustes reduzem erros.
+- Crescimento depende de método.
 
 ## Checklist
-- [ ] Métricas revisadas
-- [ ] Ajustes aplicados
-- [ ] Escala planejada
+- [ ] Pós-compra acompanhada
+- [ ] Documentos organizados
+- [ ] Crescimento planejado
 
 ## Materiais para download
 - PDF do módulo
 - Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Dashboard
+- CRM
 - Planilha
-- Sistema de gestão
+- Sistema de alertas
 
 ## Prompt de IA
-"Atue como especialista em crescimento. Monte um plano de escala para este cenário: [dados]."
+"Atue como especialista em compra de imóveis. Monte um plano de acompanhamento para este cenário: [dados]."

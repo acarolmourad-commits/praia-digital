@@ -16,12 +16,13 @@
 - Financiamento Imobiliário — PRONTO PARA VENDA
 - Flipping de Imóveis no Litoral — PRONTO PARA VENDA
 - Funil de Vendas para Corretores — PRONTO PARA VENDA
+- Casa ou Apartamento — PRONTO PARA VENDA
 
 ## Em Produção
 - Nenhum no momento
 
 ## Próximo Curso
-- Casa ou Apartamento
+- Comprar com Segurança
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.
