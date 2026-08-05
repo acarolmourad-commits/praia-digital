@@ -1,49 +1,73 @@
-# Módulo 3 — Estratégia
+# Módulo 3 — Aprovação e Documentação
 
 ## Introdução
-Planeje, decida e priorize ações para crescer com consistência.
+Aprenda a aprovar crédito, reunir documentos e assinar contrato de financiamento com segurança.
 
-## Aula 3.1 — Planejamento
-- Objetivos
-- Ações
-- Prazos
-- Recursos
+## Aula 3.1 — Como aprovar crédito
+**Requisitos:**
+- Renda comprovada.
+- CPF e RG.
+- Comprovante de residência.
+- Extrato bancário.
 
-**Exemplo real:** Planejamento simples permitiu crescer sem surpresas.
+**Dicas:**
+- Limpe nome antes.
+- Reduja dívidas.
+- Junte renda extra.
 
-## Aula 3.2 — Decisão e priorização
-- Critérios de decisão
-- Priorização
-- Risco
+**Exemplo real:**
+Comprador limpou nome e aprovou crédito em 10 dias.
 
-**Estudo de caso:** Decisão baseada em dados evitou prejuízo e aumentou retorno.
+## Aula 3.2 — Documentos necessários
+**Documentos pessoais:**
+- RG e CPF.
+- Comprovante de residência.
+- Extrato bancário.
 
-## Aula 3.3 — Execução
-- Rotina
-- Acompanhamento
-- Ajuste rápido
+**Documentos do imóvel:**
+- Escritura.
+- Matrícula.
+- IPTU.
 
-## Exercício
-Monte um plano estratégico para os próximos 30 dias.
+**Exemplo real:**
+Comprador reuniu documentos e aprovou em 15 dias.
+
+## Aula 3.3 — Contrato de financiamento
+**Cláusulas importantes:**
+- Juros.
+- Prazo.
+- Multa.
+- Seguro.
+- Vencimento.
+
+**Dicas:**
+- Leia com atenção.
+- Peça esclarecimentos.
+- Evite cláusulas abusivas.
+
+**Exercício:**
+Faça uma simulação de aprovação de financiamento.
 
 ## Resumo
-- Planejamento evita desperdício
-- Decisão orientada reduz risco
-- Execução gera resultado
+- Aprovação depende de perfil.
+- Documentos organizam processo.
+- Contrato protege partes.
 
 ## Checklist
-- [ ] Plano definido
-- [ ] Ações listadas
-- [ ] Prazo estabelecido
+- [ ] Documentos reunidos
+- [ ] Crédito simulado
+- [ ] Contrato revisado
+- [ ] Aprovação confirmada
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de plano
+- Modelo de contrato
+- Checklist de aprovação
 
 ## Ferramentas recomendadas
-- Planner
+- Sites de bancos
 - Planilha
-- App de metas
+- Consultorias
 
 ## Prompt de IA
-"Atue como estrategista. Monte um plano prático para este objetivo: [dados]."
+"Atue como especialista em financiamento. Monte uma simulação de aprovação para este cenário: [dados]."

@@ -1,49 +1,68 @@
-# Módulo 4 — Crescimento
+# Módulo 4 — Gestão e Crescimento
 
 ## Introdução
-Acompanhe resultados, ajuste estratégias e escale sem perder controle.
+Gerencie parcelas, acompanhe juros, ajuste orçamento e escale com novo financiamento no litoral.
 
-## Aula 4.1 — Acompanhamento
-- Métricas
-- Frequência
-- Formato
-- Aprendizado
+## Aula 4.1 — Gestão de parcelas
+**Organização:**
+- Calendário de vencimentos.
+- Reserva para emergências.
+- Acompanhamento de juros.
 
-**Exemplo real:** Acompanhamento semanal permitiu ajustes rápidos e crescimento contínuo.
+**Dicas:**
+- Pague no vencimento.
+- Evite atrasos.
+- Acompanhe amortização.
 
-## Aula 4.2 — Ajustes
-- Quando ajustar
-- Como ajustar
-- Validação
+**Exemplo real:**
+Comprador organizou parcelas e amortizou R$ 15 mil em 2 anos.
 
-**Estudo de caso:** Ajustes pontuais aumentaram resultado sem aumentar esforço.
+## Aula 4.2 — Ajustes e antecipação
+**Ajustes:**
+- Revisão de juros.
+- Renegociação.
+- Antecipação.
 
-## Aula 4.3 — Escala
-- Processos
-- Fornecedores/parcerias
-- Crescimento gradual
+**Antecipação:**
+- Reduz juros.
+- Encurta prazo.
+- Aumenta patrimônio.
 
-## Exercício
-Monte um plano de escala sustentada.
+**Estudo de caso:**
+Comprador antecipou parcelas e reduziu prazo de 25 para 18 anos.
+
+## Aula 4.3 — Escala e novo financiamento
+**Escala:**
+- Use imóvel atual como entrada.
+- Avalie novo financiamento.
+
+**Novo financiamento:**
+- Compare juros.
+- Calcule custos.
+- Decida com método.
+
+**Exercício:**
+Monte um plano de crescimento para os próximos 90 dias.
 
 ## Resumo
-- Acompanhamento mantém direção
-- Ajustes preservam resultado
-- Escala depende de processo
+- Gestão evita atrasos.
+- Antecipação reduz juros.
+- Escala depende de método.
 
 ## Checklist
-- [ ] Métricas revisadas
+- [ ] Parcelas organizadas
 - [ ] Ajustes aplicados
 - [ ] Escala planejada
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de acompanhamento
+- Planilha de parcelas
+- Modelo de relatório
 
 ## Ferramentas recomendadas
-- Dashboard
 - Planilha
-- Sistema de gestão
+- Sistema de alertas
+- Consultorias
 
 ## Prompt de IA
-"Atue como especialista em crescimento. Monte um plano de escala para este cenário: [dados]."
+"Atue como especialista em financiamento. Monte um plano de gestão para este cenário: [dados]."
