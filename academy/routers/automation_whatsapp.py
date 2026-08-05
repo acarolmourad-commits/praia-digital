@@ -24,7 +24,7 @@ def _enrollment_context(enrollment_id: int, db: Session):
 def _is_configured():
     return bool(WHATSAPP_API_URL and WHATSAPP_TOKEN and WHATSAPP_PHONE_ID)
 
-# Mensagens padrão por evento
+# Templates por evento
 MESSAGES = {
     "post_purchase": "🎉 Parabéns pela sua matrícula na Praia Digital Academy! Acesse o conteúdo em: {course_url}. Dúvidas? Responda esta mensagem.",
     "payment_confirmed": "✅ Pagamento confirmado! Seu acesso ao curso foi liberado. Acesse agora: {course_url}",
