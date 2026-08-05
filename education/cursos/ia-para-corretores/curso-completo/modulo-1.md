@@ -1,47 +1,64 @@
-# Módulo 1 — Fundamentos
+# Módulo 1 — Fundamentos de IA
 
 ## Introdução
-Entenda o contexto, o seu perfil e as métricas essenciais para IA aplicada a corretores, conteúdo, leads e atendimento.
+Entenda o que é IA no mercado imobiliário, o método e o perfil do corretor que quer vender mais com tecnologia.
 
-## Aula 1.1 — Contexto e oportunidades
-- Mercado atual
-- Oportunidades no litoral
-- Particularidades regionais
+## Aula 1.1 — O que é IA no imobiliário
+IA aplicada ao imobiliário significa usar inteligência artificial para criar conteúdo, automatizar atendimento, gerar leads e fechar vendas com mais eficiência.
 
-**Exemplo real:** Profissional identificou oportunidade em região em crescimento e aumentou resultado em 25%.
+**Características:**
+- Prompts estruturados.
+- Conteúdo rápido.
+- Atendimento 24h.
 
-## Aula 1.2 — Perfil e objetivos
-- Perfil do aluno
-- Objetivos claros
-- Metas realistas
+**Exemplo real:**
+Corretor usou IA para criar 30 posts em 1 hora.
 
-## Aula 1.3 — Métricas e metas
-- Métricas essenciais
-- Metas de curto, médio e longo prazo
-- Revisão
+## Aula 1.2 — Perfil do corretor
+**Iniciante:**
+- Foco: prompts simples, conteúdo básico.
+- Erro comum: prompts genéricos.
 
-## Exercício
-Faça o diagnóstico do seu cenário atual.
+**Intermediário:**
+- Foco: automação, fluxos.
+- Erro comum: automação sem personalização.
+
+**Avançado:**
+- Foco: escala, múltiplos canais.
+- Erro comum: volume sem qualidade.
+
+**Exercício:**
+Faça o diagnóstico do seu uso de IA.
+
+## Aula 1.3 — Método e metas
+**Método:**
+- Defina objetivos.
+- Crie prompts.
+- Meça resultados.
+
+**Metas:**
+- Posts por semana.
+- Leads por mês.
+- Vendas por mês.
 
 ## Resumo
-- Contexto orienta decisão
-- Perfil evita erros
-- Métricas medem resultado
+- IA reduz esforço.
+- Perfil claro orienta ação.
+- Método gera resultado.
 
 ## Checklist
-- [ ] Cenário mapeado
 - [ ] Objetivos definidos
-- [ ] Métricas escolhidas
+- [ ] Prompts criados
 - [ ] Metas traçadas
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de diagnóstico
+- Planilha de prompts
 
 ## Ferramentas recomendadas
-- Planilha
-- Indicadores
-- Consultas locais
+- IA generativa
+- CRM
+- Automação
 
 ## Prompt de IA
-"Atue como especialista em IA aplicada a corretores, conteúdo, leads e atendimento. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
+"Atue como especialista em IA para imobiliário. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."

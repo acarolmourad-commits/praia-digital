@@ -1,49 +1,50 @@
-# Módulo 3 — Estratégia
+# Módulo 3 — Automação e Atendimento
 
 ## Introdução
-Planeje, decida e priorize ações para crescer com consistência.
+Aprenda a automatizar atendimento, follow-up e processos para vender mais com menos esforço.
 
-## Aula 3.1 — Planejamento
-- Objetivos
-- Ações
-- Prazos
-- Recursos
+## Aula 3.1 — Automação de atendimento
+**Automação:**
+- Chatbot.
+- WhatsApp.
+- E-mail.
 
-**Exemplo real:** Planejamento simples permitiu crescer sem surpresas.
+**Exemplo real:**
+Corretor automatizou atendimento e reduziu tempo de resposta de 4h para 5min.
 
-## Aula 3.2 — Decisão e priorização
-- Critérios de decisão
-- Priorização
-- Risco
+## Aula 3.2 — Follow-up inteligente
+**Follow-up:**
+- Lembretes.
+- Mensagens personalizadas.
+- Sequências.
 
-**Estudo de caso:** Decisão baseada em dados evitou prejuízo e aumentou retorno.
+**Exercício:**
+Monte um follow-up automatizado.
 
-## Aula 3.3 — Execução
-- Rotina
-- Acompanhamento
-- Ajuste rápido
-
-## Exercício
-Monte um plano estratégico para os próximos 30 dias.
+## Aula 3.3 — Ferramentas
+**Ferramentas:**
+- CRM.
+- Automação.
+- IA generativa.
 
 ## Resumo
-- Planejamento evita desperdício
-- Decisão orientada reduz risco
-- Execução gera resultado
+- Automação reduz esforço.
+- Follow-up aumenta conversão.
+- Ferramentas aceleram vendas.
 
 ## Checklist
-- [ ] Plano definido
-- [ ] Ações listadas
-- [ ] Prazo estabelecido
+- [ ] Automação criada
+- [ ] Follow-up estruturado
+- [ ] Ferramentas escolhidas
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de plano
+- Modelo de automação
 
 ## Ferramentas recomendadas
-- Planner
-- Planilha
-- App de metas
+- CRM
+- Automação
+- IA generativa
 
 ## Prompt de IA
-"Atue como estrategista. Monte um plano prático para este objetivo: [dados]."
+"Atue como especialista em IA para imobiliário. Monte um follow-up automatizado para este cenário: [dados]."

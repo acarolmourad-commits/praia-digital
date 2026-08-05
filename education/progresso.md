@@ -18,12 +18,13 @@
 - Funil de Vendas para Corretores — PRONTO PARA VENDA
 - Casa ou Apartamento — PRONTO PARA VENDA
 - Comprar com Segurança no Litoral — PRONTO PARA VENDA
+- Guia do Investidor Imobiliário — PRONTO PARA VENDA
 
 ## Em Produção
 - Nenhum no momento
 
 ## Próximo Curso
-- Guia do Investidor Imobiliário
+- IA para Corretores
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.
