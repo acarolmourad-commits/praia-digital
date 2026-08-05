@@ -43,12 +43,13 @@
 - Gestão de Vendas para Corretores — PRONTO PARA VENDA
 - Atendimento ao Cliente para Corretores — PRONTO PARA VENDA
 - Pós-venda e Relacionamento para Corretores — PRONTO PARA VENDA
+- Apresentação de Imóveis para Corretores — PRONTO PARA VENDA
 
 ## Em Produção
 - Nenhum no momento
 
 ## Próximo Curso
-- Apresentação de Imóveis para Corretores
+- Visita Técnica para Corretores
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.
