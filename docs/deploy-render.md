@@ -20,8 +20,8 @@
 Adicione as variáveis abaixo na seção **Environment**:
 
 | Chave | Valor |
-|------|-------|
-| DATABASE_URL | `postgresql://academy:<senha>@<host>:5432/academy` |
+|------|------|
+| DATABASE_URL | `postgresql://academy:***@<host>:5432/academy` |
 | SECRET_KEY | Valor secreto longo |
 | SMTP_HOST | `smtp.seudominio.com` |
 | SMTP_PORT | `587` |
@@ -29,6 +29,13 @@ Adicione as variáveis abaixo na seção **Environment**:
 | SMTP_PASSWORD | senha do e-mail |
 | EMAIL_FROM | `no-reply@praia.digital` |
 | ALLOWED_ORIGINS | `https://praia.digital,https://www.praia.digital,https://academy.praia.digital` |
+| MERCADOPAGO_TOKEN | Access token do Mercado Pago |
+| MERCADOPAGO_PUBLIC_KEY | Public key do Mercado Pago |
+| BASE_URL | URL pública do serviço (ex: `https://academy.praia.digital`) |
+| WHATSAPP_API_URL | URL base da API WhatsApp Cloud |
+| WHATSAPP_TOKEN | Token da API WhatsApp Cloud |
+| WHATSAPP_PHONE_ID | Phone ID da API WhatsApp Cloud |
+| WHATSAPP_TO_NUMBER | Número destino padrão no formato internacional |
 
 > Nota: o `DATABASE_URL` pode ser preenchido automaticamente se você criar um banco PostgreSQL no Render antes.
 
