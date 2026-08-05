@@ -1,6 +1,9 @@
 # Checklist — Financiamento Imobiliário
-- [ ] Diagnóstico realizado
-- [ ] Objetivos definidos
-- [ ] Aplicação executada
-- [ ] Estratégia traçada
-- [ ] Escala planejada
+- [ ] Perfil definido
+- [ ] Documentos reunidos
+- [ ] Simulação feita
+- [ ] Bancos comparados
+- [ ] Custos calculados
+- [ ] Contrato revisado
+- [ ] Aprovação confirmada
+- [ ] Parcelas organizadas

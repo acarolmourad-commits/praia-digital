@@ -1,11 +1,11 @@
 # Artigos SEO — Financiamento Imobiliário
-1. Financiamento Imobiliário em 2026: guia completo
-2. Como aplicar Financiamento Imobiliário no litoral
-3. Guia prático para iniciantes
-4. Erros comuns e como evitar
-5. Métricas essenciais
-6. Resultados reais e casos
-7. Ferramentas úteis
-8. Checklist essencial
-9. Perguntas frequentes
-10. Próximos passos
+1. Financiamento imobiliário no litoral em 2026: guia completo
+2. Como financiar imóvel no litoral
+3. Simulação de financiamento no litoral
+4. Como aprovar financiamento no litoral
+5. Escolha de banco para financiamento no litoral
+6. Custos de financiamento no litoral
+7. Erros comuns no financiamento no litoral
+8. Juros de financiamento no litoral
+9. ROI de financiamento para investidores no litoral
+10. Financiamento para imóvel na praia

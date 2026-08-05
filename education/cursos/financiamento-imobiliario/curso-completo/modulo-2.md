@@ -1,48 +1,72 @@
-# Módulo 2 — Aplicação Prática
+# Módulo 2 — Simulação e Análise
 
 ## Introdução
-Aplique o método na prática com exemplos reais e evite erros comuns.
+Aprenda a simular parcelas, comparar bancos e identificar custos ocultos para reduzir custos e evitar surpresas.
 
-## Aula 2.1 — Passo a passo prático
-- Etapas claras
-- Ação imediata
-- Verificação de resultado
+## Aula 2.1 — Como simular parcelas
+**Dados necessários:**
+- Valor do imóvel.
+- Entrada.
+- Prazo.
+- Juros.
 
-**Exemplo real:** Profissional aplicou o passo a passo e obteve ganhos rápidos em 15 dias.
+**Simulação:**
+- Parcela inicial.
+- Juros totais.
+- Custo total.
 
-## Aula 2.2 — Exemplos reais
-- Caso 1
-- Caso 2
-- Lições aplicáveis
+**Exemplo real:**
+Comprador simulou 2 bancos e escolheu o menor juro total.
 
-**Estudo de caso:** Aplicação prática gerou aumento mensurável em 30 dias.
+## Aula 2.2 — Comparação de bancos
+**Critérios:**
+- Juros.
+- Prazo.
+- Custos operacionais.
+- Atendimento.
 
-## Aula 2.3 — Erros comuns
-- Erro 1
-- Erro 2
-- Erro 3
-- Como evitar
+**Tabela comparativa:**
+| Banco | Juros | Prazo | Custo total | Entrada |
+| A | 8,5% | 30 anos | R$ 420 mil | R$ 50 mil |
+| B | 9,2% | 30 anos | R$ 460 mil | R$ 46 mil |
+| C | 8,0% | 35 anos | R$ 410 mil | R$ 41 mil |
+
+**Exemplo real:**
+Comprador escolheu banco C por custo menor.
+
+## Aula 2.3 — Custos ocultos
+**Custos:**
+- ITBI.
+- Registro.
+- Seguro.
+- Avaliação.
+- Cartório.
+
+**Exemplo real:**
+Comprador incluiu custos ocultos e evitou surpresa de R$ 8 mil.
 
 ## Exercício
-Aplique o método em um cenário real.
+Monte uma simulação comparativa de 3 bancos.
 
 ## Resumo
-- Passo a passo reduz risco
-- Exemplos aceleram aprendizado
-- Erros evitados poupam tempo
+- Simulação reduz risco.
+- Comparação economiza.
+- Custos ocultos importam.
 
 ## Checklist
-- [ ] Passos executados
-- [ ] Resultados verificados
-- [ ] Ajustes aplicados
+- [ ] Dados reunidos
+- [ ] Simulação feita
+- [ ] Bancos comparados
+- [ ] Custos calculados
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de aplicação
+- Planilha de simulação
 
 ## Ferramentas recomendadas
-- Planilha de acompanhamento
-- App de gestão
+- Sites de bancos
+- Planilha
+- Consultorias
 
 ## Prompt de IA
-"Atue como especialista prático. Monte um plano de aplicação para este cenário: [dados]."
+"Atue como especialista em financiamento. Compare estas simulações e sugira a melhor opção: [dados]."

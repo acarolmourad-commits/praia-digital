@@ -1,6 +1,10 @@
 # Planilha — Financiamento Imobiliário
 - [ ] Data
-- [ ] Ação
-- [ ] Resultado
-- [ ] Ajuste
-- [ ] Status
+- [ ] Banco
+- [ ] Valor
+- [ ] Entrada
+- [ ] Juros
+- [ ] Prazo
+- [ ] Parcela
+- [ ] Custo total
+- [ ] Observação

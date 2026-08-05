@@ -1,6 +1,6 @@
 # TikTok — Financiamento Imobiliário
-1. Roteiro: dica rápida
-2. Roteiro: 1 método, 2 resultados
-3. Roteiro: como aplicar
-4. Roteiro: resultado rápido
-5. Roteiro: case prático
+1. Roteiro: financiamento sem erro
+2. Roteiro: 1 simulação, 2 bancos
+3. Roteiro: como aprovar
+4. Roteiro: juros rentáveis
+5. Roteiro: case de financiamento
