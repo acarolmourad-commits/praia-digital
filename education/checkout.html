@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — Praia Digital Academy</title>
+  <meta name="description" content="Finalize sua compra na Praia Digital Academy. Pagamento seguro, acesso imediato.">
+  <link rel="canonical" href="https://praia.digital/education/checkout.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Checkout — Praia Digital Academy",
+    "url": "https://praia.digital/education/checkout.html"
+  }
+  </script>
+  <style>
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:#0b1220;color:#e8ecf1;margin:0;padding:0}
+    .wrap{max-width:900px;margin:0 auto;padding:28px 22px}
+    .card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:18px 20px;margin-top:1rem}
+    .cta{background:#00B4D8;color:#fff;padding:.7rem 1.2rem;border-radius:999px;font-weight:700;text-decoration:none;display:inline-block;margin-top:.6rem}
+    .price{font-size:1.6rem;font-weight:800;color:#90E0EF}
+    input,select{width:100%;padding:.7rem;margin:.4rem 0 1rem;border-radius:12px;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.03);color:#e8ecf1}
+    .badge{display:inline-block;background:#00B4D8;color:#000;font-weight:700;padding:.2rem .7rem;border-radius:999px;font-size:.8rem;margin-left:.5rem}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <nav aria-label="Navegação principal">
+        <a href="https://praia.digital/index.html">Início</a>
+        <a href="https://praia.digital/education/index.html">Academy</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>Finalizar compra <span class="badge">Checkout</span></h1>
+      <p class="lead">Preencha seus dados para acessar o curso escolhido.</p>
+
+      <div class="card" id="course-info">
+        <p><strong>Curso:</strong> <span id="course-name">—</span></p>
+        <p class="price" id="course-price">R$ 0</p>
+      </div>
+
+      <form id="checkout-form">
+        <label>Nome completo
+          <input type="text" id="name" required placeholder="Seu nome">
+        </label>
+        <label>E-mail
+          <input type="email" id="email" required placeholder="seu@email.com">
+        </label>
+        <label>WhatsApp
+          <input type="tel" id="phone" placeholder="(11) 99999-9999">
+        </label>
+        <label>Forma de pagamento
+          <select id="payment">
+            <option value="pix">PIX</option>
+            <option value="credit">Cartão de crédito</option>
+            <option value="boleto">Boleto</option>
+          </select>
+        </label>
+        <button type="submit" class="cta">Confirmar pagamento</button>
+      </form>
+
+      <div id="result" class="card" style="margin-top:1rem;display:none"></div>
+    </main>
+
+    <footer>Praia Digital Academy — educação aplicada ao mercado imobiliário do litoral.</footer>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(location.search);
+    const slug = params.get('slug');
+    const title = params.get('title');
+    const price = params.get('price');
+    if (title) document.getElementById('course-name').textContent = decodeURIComponent(title);
+    if (price) document.getElementById('course-price').textContent = 'R$ ' + price;
+
+    document.getElementById('checkout-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const payload = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        payment: document.getElementById('payment').value,
+        slug: slug,
+        title: title,
+        price: price,
+      };
+      const r = await fetch('/payments/checkout', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(payload)
+      });
+      const data = await r.json();
+      const box = document.getElementById('result');
+      box.style.display = 'block';
+      box.innerHTML = '<p><strong>' + (r.status === 200 ? 'Pedido criado!' : 'Erro') + '</strong></p><pre>' + JSON.stringify(data, null, 2) + '</pre>';
+    });
+  </script>
+</body>
+</html>
