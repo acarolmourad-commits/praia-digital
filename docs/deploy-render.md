@@ -56,8 +56,21 @@ Adicione as variáveis abaixo na seção **Environment**:
 2. Adicione `academy.praia.digital`.
 3. Atualize o DNS do seu domínio para apontar para o Render.
 
+## Rotas principais esperadas
+- `GET /health`
+- `GET /monitoring/status`
+- `POST /auth/register`
+- `POST /payments/checkout`
+- `GET /payments/checkout/status?order_id=...`
+- `POST /payments/mercadopago/webhook`
+- `POST /leads`
+- `POST /automation/email-confirmation/{enrollment_id}`
+- `POST /automation/email-lead-magnet/{lead_id}`
+- `POST /automation/whatsapp-notify/{enrollment_id}`
+
 ## Validação pós-deploy
 - Healthcheck OK
 - Login do aluno OK
 - Páginas `/education/aluno/*` servidas
 - Banco conectado
+- Leads recebidos via `/leads`

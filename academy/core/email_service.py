@@ -36,3 +36,11 @@ def send_enrollment_confirmation(user_email: Optional[str], course_name: str, co
 <p>Curso: <strong>{course_name}</strong></p>
 <p>Acesse em: <a href="{course_url}">{course_url}</a></p>"""
     return send_email(user_email, subject, body, html=True)
+
+
+def send_lead_magnet(user_email: Optional[str], lead_name: str, magnet_name: str, magnet_url: str):
+    subject = f"Seu guia gratuito: {magnet_name}"
+    body = f"""<p>Olá, {lead_name}.</p>
+<p>Obrigado pelo interesse. Seu material está disponível em: <a href="{magnet_url}">{magnet_url}</a></p>
+<p>Se precisar de algo, é só responder esta mensagem.</p>"""
+    return send_email(user_email, subject, body, html=True)
