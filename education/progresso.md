@@ -57,12 +57,13 @@
 - Oratória para Corretores — PRONTO PARA VENDA
 - Storytelling para Corretores — PRONTO PARA VENDA
 - Prospecção para Corretores — PRONTO PARA VENDA
+- Produtividade para Corretores — PRONTO PARA VENDA
 
 ## Em Produção
 - Nenhum no momento
 
 ## Próximo Curso
-- Produtividade para Corretores
+- Networking para Corretores
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.
