@@ -1,0 +1,11 @@
+# Planilha — Treinamento de Equipes para Corretores
+- [ ] Data
+- [ ] Corretor
+- [ ] Treinamento
+- [ ] Tarefa
+- [ ] Ação
+- [ ] Resultado
+- [ ] Follow-up
+- [ ] Venda
+- [ ] Receita
+- [ ] Status
