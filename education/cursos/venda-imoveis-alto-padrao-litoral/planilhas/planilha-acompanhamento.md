@@ -1,0 +1,11 @@
+# Planilha — Como Vender Imóveis de Alto Padrão no Litoral
+- [ ] Data
+- [ ] Cliente
+- [ ] Imóvel
+- [ ] Cidade
+- [ ] Preço
+- [ ] Proposta
+- [ ] Negociação
+- [ ] Venda
+- [ ] Receita
+- [ ] Observação

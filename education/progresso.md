@@ -35,12 +35,13 @@
 - Documentação Completa para Imóveis no Litoral — PRONTO PARA VENDA
 - Captação de Imóveis para Corretores — PRONTO PARA VENDA
 - Análise de Mercado Imobiliário no Litoral — PRONTO PARA VENDA
+- Gestão de Locação no Litoral — PRONTO PARA VENDA
 
 ## Em Produção
 - Nenhum no momento
 
 ## Próximo Curso
-- Gestão de Locação no Litoral
+- Como Vender Imóveis de Alto Padrão no Litoral
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.
