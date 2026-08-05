@@ -1,0 +1,11 @@
+# Planilha — Prospecção para Corretores
+- [ ] Data
+- [ ] Lead
+- [ ] Canal
+- [ ] Imóvel
+- [ ] Cidade
+- [ ] Ação
+- [ ] Follow-up
+- [ ] Venda
+- [ ] Receita
+- [ ] Status
