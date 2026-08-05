@@ -1,12 +1,12 @@
-# Módulo 3 — Execução
-## Aula 3.1 — Introdução
-Conteúdo: conceitos e aplicação.
+# Módulo 3 — Anúncios
+## Aula 3.1 — Meta Ads
+Conteúdo: público, formato, orçamento.
 
-## Aula 3.2 — Conceitos essenciais
-Conteúdo: fundamentos e exemplos.
+## Aula 3.2 — Google Ads
+Conteúdo: busca, display, palavras-chave.
 
-## Aula 3.3 — Aplicação no litoral
-Conteúdo: caso prático no litoral.
+## Aula 3.3 — Remarketing
+Conteúdo: públicos, mensagens, conversão.
 
 ## Exercício
-Aplique o conteúdo no seu contexto.
+Monte campanha de anúncios.

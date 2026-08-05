@@ -1,6 +1,6 @@
-# Shorts — Marketing Imobiliario
-1. Roteiro: dica em 1 minuto
-2. Roteiro: erro comum
-3. Roteiro: passo a passo
-4. Roteiro: resultado real
-5. Roteiro: comece hoje
+# Shorts — Marketing Imobiliário para Corretores
+1. Roteiro: dica de post
+2. Roteiro: anúncio rápido
+3. Roteiro: SEO em 1 minuto
+4. Roteiro: lead rápido
+5. Roteiro: case rápido

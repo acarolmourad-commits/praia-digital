@@ -1,5 +1,5 @@
-# E-book Derivado — Marketing Imobiliario
-Título: Guia Rápido de Marketing Imobiliario no Litoral
+# E-book Derivado — Marketing Imobiliário para Corretores
+Título: Guia Rápido de Marketing Imobiliário no Litoral
 Formato: PDF 20 a 30 páginas
-Preço: gratuito ou R$ 17,90
-Conteúdo: checklist, templates, dicas rápidas.
+Preço: gratuito ou R$ 19,90
+Conteúdo: posts, anúncios, dicas rápidas.
