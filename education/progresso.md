@@ -39,12 +39,13 @@
 - Como Vender Imóveis de Alto Padrão no Litoral — PRONTO PARA VENDA
 - Venda Rápida de Imóveis no Litoral — PRONTO PARA VENDA
 - Negociação Imobiliária no Litoral — PRONTO PARA VENDA
+- Marketing Imobiliário para Corretores — PRONTO PARA VENDA
 
 ## Em Produção
 - Nenhum no momento
 
 ## Próximo Curso
-- Marketing Imobiliário para Corretores
+- Gestão de Vendas para Corretores
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.
