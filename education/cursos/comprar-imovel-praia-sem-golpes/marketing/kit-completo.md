@@ -1,3 +1,6 @@
+## Pergunta principal do produto
+Como comprar um imóvel na praia sem cair em golpes e com segurança?
+
 # Marketing — Como Comprar um Imóvel na Praia sem Golpes
 
 ## Artigo SEO/GEO
