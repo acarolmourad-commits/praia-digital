@@ -1,0 +1,43 @@
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from pathlib import Path
+from academy.core.database import engine, Base
+from academy.routers import auth, courses, academy, admin, payments, recommendations, automation
+import os
+
+Base.metadata.create_all(bind=engine)
+
+app = FastAPI(title="Praia Digital Academy API", version="0.2.0")
+
+# CORS baseado em variável de ambiente
+allowed_origins = os.getenv("ALLOWED_ORIGINS", "*")
+if allowed_origins != "*":
+    allowed_origins = [o.strip() for o in allowed_origins.split(",") if o.strip()]
+else:
+    allowed_origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=allowed_origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+app.include_router(auth.router)
+app.include_router(courses.router)
+app.include_router(academy.router)
+app.include_router(payments.router)
+app.include_router(admin.router)
+app.include_router(recommendations.router)
+app.include_router(automation.router)
+
+# Servir área do aluno como frontend
+frontend_dir = Path(__file__).resolve().parent.parent / "education" / "aluno"
+if frontend_dir.exists():
+    app.mount("/education/aluno", StaticFiles(directory=str(frontend_dir), html=True), name="aluno-frontend")
+
+@app.get("/health")
+def health():
+    return {"status": "ok", "service": "academy-api"}

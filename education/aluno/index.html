@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área do Aluno — Praia Digital Academy</title>
+  <meta name="description" content="Acesse seus cursos da Praia Digital Academy. Acompanhe seu progresso, estude no player e baixe seu certificado.">
+  <link rel="canonical" href="https://praia.digital/education/aluno/index.html">
+  <meta name="robots" content="noindex, nofollow">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://unpkg.com/axios@1.7.7/dist/axios.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { bg: '#0b1220', accent: '#00b4d8', surface: '#111827', text: '#e5e7eb' }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-bg text-brand-text min-h-screen">
+  <nav class="bg-brand-surface border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="https://praia.digital/education/index.html" class="text-white font-bold text-xl">Praia Digital Academy</a>
+      <div class="flex items-center gap-4">
+        <span id="userName" class="text-sm text-gray-300"></span>
+        <button onclick="logout()" class="bg-brand-accent text-black px-3 py-1.5 rounded text-sm font-semibold">Sair</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-7xl mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold text-white mb-6">Minha Área</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-brand-surface p-5 rounded border border-gray-800">
+        <p class="text-gray-400 text-sm">Cursos matriculados</p>
+        <p id="enrollmentsCount" class="text-3xl font-bold text-white">0</p>
+      </div>
+      <div class="bg-brand-surface p-5 rounded border border-gray-800">
+        <p class="text-gray-400 text-sm">Progresso médio</p>
+        <p id="avgProgress" class="text-3xl font-bold text-white">0%</p>
+      </div>
+      <div class="bg-brand-surface p-5 rounded border border-gray-800">
+        <p class="text-gray-400 text-sm">Certificados</p>
+        <p id="certificatesCount" class="text-3xl font-bold text-white">0</p>
+      </div>
+    </div>
+
+    <section class="mt-10">
+      <h2 class="text-2xl font-bold text-white mb-4">Meus Cursos</h2>
+      <div id="enrollmentsList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </section>
+  </main>
+
+  <script>
+    const token = localStorage.getItem('academy_token');
+    const apiBase = '/academy';
+
+    async function api(path, opts = {}) {
+      const headers = { ...(opts.headers || {}) };
+      if (token) headers['Authorization'] = `Bearer ${token}`;
+      const res = await axios.get(apiBase + path, { headers });
+      return res.data;
+    }
+
+    async function loadProfile() {
+      if (!token) { window.location.href = '/education/aluno/login.html'; return; }
+      const enrollments = await api('/me/enrollments');
+      const count = enrollments.length;
+      document.getElementById('enrollmentsCount').textContent = count;
+    }
+
+    async function loadEnrollments() {
+      if (!token) return;
+      const data = await api('/me/enrollments');
+      const container = document.getElementById('enrollmentsList');
+      container.innerHTML = '';
+      for (const enrollment of data) {
+        const course = await api(`/courses/${enrollment.course_id}`).catch(() => ({}));
+        const card = document.createElement('div');
+        card.className = 'bg-brand-surface p-4 rounded border border-gray-800';
+        card.innerHTML = `
+          <h3 class="text-white font-semibold text-lg mb-2">${course.title || 'Curso #' + enrollment.course_id}</h3>
+          <p class="text-gray-400 text-sm mb-3">Acesso até ${enrollment.access_until ? new Date(enrollment.access_until).toLocaleDateString('pt-BR') : '—'}</p>
+          <a href="/education/aluno/curso.html?id=${enrollment.course_id}&enrollment_id=${enrollment.id}" class="inline-block bg-brand-accent text-black px-4 py-2 rounded font-semibold text-sm">Entrar no curso</a>
+        `;
+        container.appendChild(card);
+      }
+    }
+
+    function logout() {
+      localStorage.removeItem('academy_token');
+      window.location.href = '/education/aluno/login.html';
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadProfile();
+      loadEnrollments();
+    });
+  </script>
+</body>
+</html>
