@@ -1,21 +1,21 @@
 # Sequência de E-mails — CRM para Corretores
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido de CRM para Corretores (PDF + planilha)
+Assunto: Guia Rápido: CRM para Corretores no Litoral (PDF + planilha)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: resultado prático
+Assunto: Case: corretor dobrou vendas com CRM
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "CRM para Corretores dá trabalho?"
+Assunto: "CRM é complicado?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno obteve resultado em 30 dias
+Assunto: Aluno organizou funil em 10 dias
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

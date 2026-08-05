@@ -1,48 +1,55 @@
-# Módulo 2 — Aplicação Prática
+# Módulo 2 — Funil e Follow-up
 
 ## Introdução
-Aplique o método na prática com exemplos reais e evite erros comuns.
+Aprenda a estruturar funil, follow-up e métricas no CRM para corretores no litoral.
 
-## Aula 2.1 — Passo a passo prático
-- Etapas claras
-- Ação imediata
-- Verificação de resultado
+## Aula 2.1 — Funil de vendas
+**Funil:**
+- Lead.
+- Visita.
+- Proposta.
+- Venda.
 
-**Exemplo real:** Profissional aplicou o passo a passo e obteve ganhos rápidos em 15 dias.
+**Exemplo real:**
+Corretor estruturou funil e aumentou conversão.
 
-## Aula 2.2 — Exemplos reais
-- Caso 1
-- Caso 2
-- Lições aplicáveis
+## Aula 2.2 — Follow-up estruturado
+**Follow-up:**
+- Lembretes.
+- Conteúdo.
+- Proposta.
 
-**Estudo de caso:** Aplicação prática gerou aumento mensurável em 30 dias.
+**Exemplo real:**
+Corretor aumentou conversão de 12% para 22%.
 
-## Aula 2.3 — Erros comuns
-- Erro 1
-- Erro 2
-- Erro 3
-- Como evitar
+## Aula 2.3 — Métricas básicas
+**Métricas:**
+- Leads.
+- Visitas.
+- Vendas.
+- Conversão.
 
-## Exercício
-Aplique o método em um cenário real.
+**Exercício:**
+Monte um funil no CRM.
 
 ## Resumo
-- Passo a passo reduz risco
-- Exemplos aceleram aprendizado
-- Erros evitados poupam tempo
+- Funil organiza vendas.
+- Follow-up fecha negócios.
+- Métricas orientam ajustes.
 
 ## Checklist
-- [ ] Passos executados
-- [ ] Resultados verificados
-- [ ] Ajustes aplicados
+- [ ] Funil criado
+- [ ] Follow-up estruturado
+- [ ] Métricas definidas
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de aplicação
+- Planilha de funil
 
 ## Ferramentas recomendadas
-- Planilha de acompanhamento
-- App de gestão
+- CRM
+- Planilha
+- Automação
 
 ## Prompt de IA
-"Atue como especialista prático. Monte um plano de aplicação para este cenário: [dados]."
+"Atue como especialista em CRM para imobiliário. Monte um funil para este cenário: [dados]."

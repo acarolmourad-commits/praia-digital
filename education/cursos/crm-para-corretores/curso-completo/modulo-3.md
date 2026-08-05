@@ -1,49 +1,50 @@
-# Módulo 3 — Estratégia
+# Módulo 3 — Automação e Templates
 
 ## Introdução
-Planeje, decida e priorize ações para crescer com consistência.
+Aprenda a automatizar follow-up, criar templates e integrar CRM na operação imobiliária.
 
-## Aula 3.1 — Planejamento
-- Objetivos
-- Ações
-- Prazos
-- Recursos
+## Aula 3.1 — Automação básica
+**Automação:**
+- Follow-up automático.
+- Lembretes.
+- Sequências.
 
-**Exemplo real:** Planejamento simples permitiu crescer sem surpresas.
+**Exemplo real:**
+Corretor automatizou follow-up e reduziu tempo de resposta.
 
-## Aula 3.2 — Decisão e priorização
-- Critérios de decisão
-- Priorização
-- Risco
+## Aula 3.2 — Templates de mensagem
+**Templates:**
+- Apresentação.
+- Follow-up.
+- Proposta.
 
-**Estudo de caso:** Decisão baseada em dados evitou prejuízo e aumentou retorno.
+**Exercício:**
+Crie 3 templates para seu funil.
 
-## Aula 3.3 — Execução
-- Rotina
-- Acompanhamento
-- Ajuste rápido
-
-## Exercício
-Monte um plano estratégico para os próximos 30 dias.
+## Aula 3.3 — Integrações
+**Integrações:**
+- WhatsApp.
+- E-mail.
+- Automação.
 
 ## Resumo
-- Planejamento evita desperdício
-- Decisão orientada reduz risco
-- Execução gera resultado
+- Automação reduz esforço.
+- Templates aceleram atendimento.
+- Integrações organizam dados.
 
 ## Checklist
-- [ ] Plano definido
-- [ ] Ações listadas
-- [ ] Prazo estabelecido
+- [ ] Automação criada
+- [ ] Templates prontos
+- [ ] Integrações feitas
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de plano
+- Modelo de templates
 
 ## Ferramentas recomendadas
-- Planner
-- Planilha
-- App de metas
+- CRM
+- Automação
+- WhatsApp
 
 ## Prompt de IA
-"Atue como estrategista. Monte um plano prático para este objetivo: [dados]."
+"Atue como especialista em CRM para imobiliário. Crie templates de mensagem para este cenário: [dados]."

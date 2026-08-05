@@ -1,21 +1,21 @@
 # Posts Instagram — CRM para Corretores
-1. Post: dica prática
-2. Reels: passo a passo rápido
-3. Carrossel: checklist
-4. Post: erro comum
-5. Reels: dica de aplicação
-6. Carrossel: exemplo real
-7. Post: resultado rápido
-8. Reels: case prático
-9. Carrossel: métrica importante
+1. Post: 3 erros no funil
+2. Reels: CRM em 30s
+3. Carrossel: checklist de funil
+4. Post: follow-up que converte
+5. Reels: dica de lead
+6. Carrossel: tipos de CRM
+7. Post: vendas sem medo
+8. Reels: case de conversão
+9. Carrossel: rentabilidade no litoral
 10. Reels: ajuste simples
-11. Post: estratégia básica
-12. Carrossel: 5 passos
-13. Post: crescimento sem segredo
-14. Reels: dúvida comum
-15. Carrossel: ferramenta útil
+11. Post: follow-up rápido
+12. Carrossel: 5 passos para CRM
+13. Post: mito vs verdade
+14. Reels: dica de automação
+15. Carrossel: dados que importam
 16. Post: comece hoje
-17. Reels: case de resultado
-18. Carrossel: revisão semanal
-19. Post: mito vs verdade
-20. Reels: método resumido
+17. Reels: case de CRM
+18. Carrossel: revisão mensal
+19. Post: método completo
+20. Reels: CRM em 30s
