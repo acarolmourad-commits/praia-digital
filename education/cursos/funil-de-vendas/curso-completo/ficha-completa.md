@@ -1,52 +1,52 @@
 # Curso: Funil de Vendas para Corretores
 ## Nome Comercial
-**Funil de Vendas para Corretores: Método Prático para Funil de vendas, leads, qualificação e conversão**
+**Funil de Vendas para Corretores: Método Prático para Montar, Automatizar e Escalar Vendas de Imóveis no Litoral**
 
 ## Subtítulo
-Do diagnóstico ao resultado: aprenda a aplicar método, evitar erros e crescer no mercado imobiliário do litoral.
+Do lead à venda: aprenda a montar, automatizar e escalar funis de vendas no litoral com método.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de aplicar um método prático para funil de vendas, leads, qualificação e conversão.
+Em até 20 dias, você será capaz de montar, automatizar e escalar funis de vendas para corretores no litoral com segurança.
 
 ## Público-alvo
-- Proprietários de imóveis no litoral
-- Investidores que querem aumentar retorno
-- Corretores que querem se especializar
-- Interesse: imóveis, litoral, investimento, temporada, rentabilidade
+- Corretores de imóveis iniciantes e intermediários
+- Investidores que querem vender imóveis
+- Proprietários que querem vender com método
+- Interesse: vendas, imóveis, litoral, funil, leads
 
 ## Pré-requisitos
-Nenhum. Curso completo do zero ao resultado.
+Nenhum. Curso completo do zero ao funil de vendas.
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
-6 horas de aulas
-Total: 6 horas
+4 horas de aulas (20 aulas de 10 a 16 min)
+Total: 4 horas
 
 ## Valor Sugerido
-Curso completo: R$ 297
-À vista: R$ 297
-Parcelado: 12x de R$ 24,75
+Curso completo: R$ 197
+À vista: R$ 167
+Parcelado: 12x de R$ 13,92
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist do curso
+- Checklist de funil de vendas
 - Planilha de acompanhamento
-- Modelos prontos
+- Modelos de funil
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Monte um funil de vendas imobiliário que capta, qualifica e converte leads"**
+**"Monte, automatize e escale funis de vendas no litoral com método"**
 
 ## Big Idea
-Resultados no litoral dependem de método, dados e execução consistente.
+Funil de vendas para corretores no litoral combina geração de leads, follow-up estruturado e conversão acelerada.
 
 ## Oferta
-- **Curso completo:** R$ 297
+- **Curso completo:** R$ 197
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
@@ -54,112 +54,111 @@ Resultados no litoral dependem de método, dados e execução consistente.
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** funil de vendas, leads, qualificação e conversão
-**Dificuldades:** falta de método, insegurança, resultado baixo
-**Desejos:** crescimento, tranquilidade, autoridade
+**Objetivo:** vender mais com método
+**Dificuldades:** leads frios, follow-up fraco, fechamento lento
+**Desejos:** vendas recorrentes, crescimento, autoridade
 
 ## Dores
-- Falta de método
+- Leads frios
+- Follow-up fraco
+- Fechamento lento
+- Concorrência alta
 - Insegurança
-- Resultado baixo
-- Falta de clareza
-- Tempo limitado
 
 ## Desejos
+- Vendas recorrentes
 - Crescimento
-- Tranquilidade
 - Autoridade
+- Tranquilidade
 - Previsibilidade
-- Resultado
 
 ## Objeções
+- "Funil é complicado"
+- "Demora muito"
+- "Preciso de ferramentas caras"
 - "Não compensa"
-- "É complicado"
-- "Não tenho tempo"
 - "Vou errar"
-- "Não funciona"
 
 ## Transformação
-- Método aplicado
-- Resultado crescente
-- Decisão orientada por dados
-- Operação profissional
-- Tranquilidade
+- Funil estruturado
+- Leads qualificados
+- Follow-up eficiente
+- Vendas recorrentes
+- Crescimento previsível
 
 ## Programa Completo
-### Módulo 1 — Fundamentos
-Aula 1.1 — Contexto e oportunidades
-Aula 1.2 — Perfil e objetivos
-Aula 1.3 — Métricas e metas
-Exercício: diagnóstico
+### Módulo 1 — Fundamentos do Funil
+Aula 1.1 — O que é funil de vendas
+Aula 1.2 — Perfil do corretor
+Aula 1.3 — Método e metas
+Exercício: diagnóstico de vendas
 
-### Módulo 2 — Aplicação Prática
-Aula 2.1 — Passo a passo prático
-Aula 2.2 — Exemplos reais
-Aula 2.3 — Erros comuns
-Exercício: aplicação
+### Módulo 2 — Geração de Leads
+Aula 2.1 — Fontes de leads
+Aula 2.2 — Captura e qualificação
+Aula 2.3 — Ferramentas e custos
+Exercício: plano de geração
 
-### Módulo 3 — Estratégia
-Aula 3.1 — Planejamento
-Aula 3.2 — Decisão e priorização
-Aula 3.3 — Execução
-Exercício: plano
+### Módulo 3 — Follow-up e Conversão
+Aula 3.1 — Follow-up estruturado
+Aula 3.2 — Apresentação e proposta
+Aula 3.3 — Fechamento
+Exercício: follow-up aplicado
 
-### Módulo 4 — Crescimento
-Aula 4.1 — Acompanhamento
-Aula 4.2 — Ajustes
-Aula 4.3 — Escala
-Exercício: escala
+### Módulo 4 — Gestão e Escala
+Aula 4.1 — Métricas e ajustes
+Aula 4.2 — Automação e escala
+Aula 4.3 — Crescimento sustentado
+Exercício: plano de crescimento
 
 ## Carga Horária
-6 horas
+4 horas
 
 ## Material Complementar
-- Checklist
-- Planilha
-- Modelos
+- Checklist de funil
+- Planilha de acompanhamento
+- Modelos de funil
 - PDFs por módulo
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de diagnóstico
-- Checklist de aplicação
-- Checklist de estratégia
-- Checklist de escala
+- Checklist de funil
+- Checklist de follow-up
+- Checklist de venda
 
 ## Planilhas
-- Planilha de acompanhamento
+- Planilha de leads
+- Planilha de conversão
 - Planilha de métricas
-- Planilha de ROI
 
 ## Modelos Prontos
-- Modelo de relatório
+- Modelo de follow-up
 - Modelo de proposta
-- Modelo de revisão
+- Modelo de checklist
 
 ## Scripts
-- Script de atendimento
-- Script de negociação
+- Script de follow-up
+- Script de venda
 
 ## Prompt de IA
-Prompt para gerar análises e planos.
+Prompt para gerar funis e follow-ups.
 
 ## Exercícios
-- Exercício 1: diagnóstico
-- Exercício 2: aplicação
-- Exercício 3: plano
-- Exercício 4: escala
+- Exercício 1: diagnóstico de vendas
+- Exercício 2: plano de geração
+- Exercício 3: follow-up aplicado
+- Exercício 4: plano de crescimento
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: aplicação do método
+Prova prática: funil aplicado
 
 ## FAQ
 1. Preciso de experiência? Não.
 2. Em quanto tempo vejo resultado? De 15 a 30 dias.
 3. Vale a pena? Sim.
-4. E se errar? Ajuste com método.
+4. E se errar? Ajuste com métricas.
 5. Tem suporte? Sim.
 
 ## Página de Vendas
@@ -193,7 +192,7 @@ Prova prática: aplicação do método
 [marketing/google-ads.md]
 
 ## CTA
-"Aplique o método agora."
+"Monte um funil de vendas no litoral agora."
 
 ## Upsell
 - Mentoria individual: R$ 1.500
@@ -204,4 +203,6 @@ Prova prática: aplicação do método
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Cursos complementares Praia Digital
+- Curso de Marketing Imobiliário para Corretores
+- Curso de Automação Comercial para Corretores
+- Curso de Captação e Exclusividade para Corretores

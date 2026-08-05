@@ -1,49 +1,63 @@
-# Módulo 3 — Estratégia
+# Módulo 3 — Follow-up e Conversão
 
 ## Introdução
-Planeje, decida e priorize ações para crescer com consistência.
+Aprenda a estruturar follow-up, apresentar propostas e fechar vendas no litoral.
 
-## Aula 3.1 — Planejamento
-- Objetivos
-- Ações
-- Prazos
-- Recursos
+## Aula 3.1 — Follow-up estruturado
+**Passos:**
+- Contato inicial.
+- Apresentação do imóvel.
+- Visita.
+- Proposta.
+- Fechamento.
 
-**Exemplo real:** Planejamento simples permitiu crescer sem surpresas.
+**Exemplo real:**
+Corretor montou follow-up e reduziu tempo de fechamento de 45 para 20 dias.
 
-## Aula 3.2 — Decisão e priorização
-- Critérios de decisão
-- Priorização
-- Risco
+## Aula 3.2 — Apresentação e proposta
+**Apresentação:**
+- Dados do imóvel.
+- Comparáveis.
+- Diferenciais.
 
-**Estudo de caso:** Decisão baseada em dados evitou prejuízo e aumentou retorno.
+**Proposta:**
+- Valor justo.
+- Condições.
+- Prazo.
 
-## Aula 3.3 — Execução
-- Rotina
-- Acompanhamento
-- Ajuste rápido
+**Exercício:**
+Monte um follow-up para um lead real.
 
-## Exercício
-Monte um plano estratégico para os próximos 30 dias.
+## Aula 3.3 — Fechamento
+**Fechamento:**
+- Proposta clara.
+- Resolução de objeções.
+- Contrato.
+
+**Dicas:**
+- Responda rápido.
+- Seja transparente.
+- Use dados.
 
 ## Resumo
-- Planejamento evita desperdício
-- Decisão orientada reduz risco
-- Execução gera resultado
+- Follow-up organiza vendas.
+- Proposta clara fecha negócios.
+- Método reduz tempo.
 
 ## Checklist
-- [ ] Plano definido
-- [ ] Ações listadas
-- [ ] Prazo estabelecido
+- [ ] Follow-up criado
+- [ ] Proposta preparada
+- [ ] Fechamento estruturado
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de plano
+- Modelo de follow-up
+- Modelo de proposta
 
 ## Ferramentas recomendadas
-- Planner
+- CRM
+- WhatsApp Business
 - Planilha
-- App de metas
 
 ## Prompt de IA
-"Atue como estrategista. Monte um plano prático para este objetivo: [dados]."
+"Atue como especialista em funil de vendas. Monte um follow-up para este lead: [dados]."

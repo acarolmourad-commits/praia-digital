@@ -1,49 +1,66 @@
-# Módulo 4 — Crescimento
+# Módulo 4 — Gestão e Escala
 
 ## Introdução
-Acompanhe resultados, ajuste estratégias e escale sem perder controle.
+Gerencie métricas, ajuste funis, automatize processos e escale vendas no litoral.
 
-## Aula 4.1 — Acompanhamento
-- Métricas
-- Frequência
-- Formato
-- Aprendizado
+## Aula 4.1 — Métricas e ajustes
+**Métricas:**
+- Leads.
+- Visitas.
+- Propostas.
+- Vendas.
+- Conversão.
 
-**Exemplo real:** Acompanhamento semanal permitiu ajustes rápidos e crescimento contínuo.
+**Ajustes:**
+- Revise semanalmente.
+- Teste novas abordagens.
+- Mantenha o que funciona.
 
-## Aula 4.2 — Ajustes
-- Quando ajustar
-- Como ajustar
-- Validação
+**Exemplo real:**
+Corretor ajustou follow-up e aumentou conversão para 25%.
 
-**Estudo de caso:** Ajustes pontuais aumentaram resultado sem aumentar esforço.
+## Aula 4.2 — Automação e escala
+**Automação:**
+- Follow-up automático.
+- Lembretes.
+- Integração CRM.
 
-## Aula 4.3 — Escala
-- Processos
-- Fornecedores/parcerias
-- Crescimento gradual
+**Escala:**
+- Adicione mais leads.
+- Mantenha qualidade.
+- Padronize processos.
 
-## Exercício
-Monte um plano de escala sustentada.
+**Estudo de caso:**
+Corretor automatizou follow-up e triplicou vendas.
+
+## Aula 4.3 — Crescimento sustentado
+**Crescimento:**
+- Acompanhe métricas.
+- Treine equipe.
+- Adicione fontes de leads.
+
+**Exercício:**
+Monte um plano de crescimento para os próximos 90 dias.
 
 ## Resumo
-- Acompanhamento mantém direção
-- Ajustes preservam resultado
-- Escala depende de processo
+- Métricas orientam ajustes.
+- Automação escala vendas.
+- Crescimento depende de método.
 
 ## Checklist
 - [ ] Métricas revisadas
-- [ ] Ajustes aplicados
-- [ ] Escala planejada
+- [ ] Automação implementada
+- [ ] Crescimento planejado
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de acompanhamento
+- Planilha de métricas
+- Modelo de relatório
 
 ## Ferramentas recomendadas
-- Dashboard
+- CRM
+- Automação
 - Planilha
-- Sistema de gestão
 
 ## Prompt de IA
-"Atue como especialista em crescimento. Monte um plano de escala para este cenário: [dados]."
+"Atue como especialista em funil de vendas. Monte um plano de crescimento para este cenário: [dados]."
