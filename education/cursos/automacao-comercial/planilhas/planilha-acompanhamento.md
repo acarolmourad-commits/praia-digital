@@ -1,5 +1,6 @@
-# Planilha — Automacao Comercial
+# Planilha — Automação Comercial para Corretores
 - [ ] Data
 - [ ] Ação
 - [ ] Resultado
-- [ ] Observação
+- [ ] Ajuste
+- [ ] Status

@@ -1,33 +1,47 @@
-# Módulo 1 — Conteúdo Premium
-## Aula 1.1 — Introdução ao módulo
-Conteúdo: visão geral, objetivo, aplicação prática no litoral.
+# Módulo 1 — Fundamentos
 
-## Aula 1.2 — Conceitos aplicados
-Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
+## Introdução
+Entenda o contexto, o seu perfil e as métricas essenciais para Instagram, conteúdo, leads e autoridade para corretores.
 
-## Aula 1.3 — Estudo de caso
-Conteúdo: caso real, análise, lições.
+## Aula 1.1 — Contexto e oportunidades
+- Mercado atual
+- Oportunidades no litoral
+- Particularidades regionais
+
+**Exemplo real:** Profissional identificou oportunidade em região em crescimento e aumentou resultado em 25%.
+
+## Aula 1.2 — Perfil e objetivos
+- Perfil do aluno
+- Objetivos claros
+- Metas realistas
+
+## Aula 1.3 — Métricas e metas
+- Métricas essenciais
+- Metas de curto, médio e longo prazo
+- Revisão
 
 ## Exercício
-Aplicação prática no seu contexto.
+Faça o diagnóstico do seu cenário atual.
 
 ## Resumo
-Pontos-chave para revisão.
+- Contexto orienta decisão
+- Perfil evita erros
+- Métricas medem resultado
 
 ## Checklist
-- [ ] Conceitos entendidos
-- [ ] Caso analisado
-- [ ] Exercício aplicado
+- [ ] Cenário mapeado
+- [ ] Objetivos definidos
+- [ ] Métricas escolhidas
+- [ ] Metas traçadas
 
 ## Materiais para download
 - PDF do módulo
-- Templates
-- Planilha
+- Planilha de diagnóstico
 
 ## Ferramentas recomendadas
-- Ferramenta 1
-- Ferramenta 2
-- Ferramenta 3
+- Planilha
+- Indicadores
+- Consultas locais
 
 ## Prompt de IA
-Prompt para acelerar tarefas deste módulo.
+"Atue como especialista em Instagram, conteúdo, leads e autoridade para corretores. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."

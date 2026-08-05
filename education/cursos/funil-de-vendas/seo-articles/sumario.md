@@ -1,11 +1,11 @@
-# Artigos SEO — Funil De Vendas
-1. Funil De Vendas em 2026
-2. Como aplicar funil de vendas no litoral
-3. Resultados reais de funil de vendas
-4. Método passo a passo de funil de vendas
-5. Erros comuns em funil de vendas
-6. Ferramentas para funil de vendas
-7. Cases de funil de vendas no litoral
-8. Como medir resultado em funil de vendas
-9. Como começar em funil de vendas
-10. FAQ sobre funil de vendas
+# Artigos SEO — Funil de Vendas para Corretores
+1. Funil de Vendas para Corretores em 2026: guia completo
+2. Como aplicar Funil de Vendas para Corretores no litoral
+3. Guia prático para iniciantes
+4. Erros comuns e como evitar
+5. Métricas essenciais
+6. Resultados reais e casos
+7. Ferramentas úteis
+8. Checklist essencial
+9. Perguntas frequentes
+10. Próximos passos

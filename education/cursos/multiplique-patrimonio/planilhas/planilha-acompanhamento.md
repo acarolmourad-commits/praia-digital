@@ -1,5 +1,6 @@
-# Planilha — Multiplique Patrimonio
+# Planilha — Multiplique Patrimônio no Litoral
 - [ ] Data
 - [ ] Ação
 - [ ] Resultado
-- [ ] Observação
+- [ ] Ajuste
+- [ ] Status

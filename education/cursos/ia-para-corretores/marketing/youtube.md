@@ -1,4 +1,4 @@
-# Roteiro YouTube — Ia Para Corretores
+# Roteiro YouTube — IA para Corretores
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado

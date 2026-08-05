@@ -1,5 +1,5 @@
-# Meta Ads — casa-ou-apartamento
-Público: 25 a 55 anos, interesse no tema, litoral
+# Meta Ads — Casa ou Apartamento no Litoral
+Público: 25 a 55 anos, interesse em imóveis, litoral, investimento
 Objetivo: leads
 Formato: vídeo + carrossel
 Orçamento sugerido: R$ 40 a R$ 120/dia

@@ -1,5 +1,6 @@
-# Planilha — Comprar Com Seguranca
+# Planilha — Comprar com Segurança no Litoral
 - [ ] Data
 - [ ] Ação
 - [ ] Resultado
-- [ ] Observação
+- [ ] Ajuste
+- [ ] Status

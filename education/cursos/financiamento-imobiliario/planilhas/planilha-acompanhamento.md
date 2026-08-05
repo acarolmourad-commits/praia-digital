@@ -1,5 +1,6 @@
-# Planilha — Financiamento Imobiliario
+# Planilha — Financiamento Imobiliário
 - [ ] Data
 - [ ] Ação
 - [ ] Resultado
-- [ ] Observação
+- [ ] Ajuste
+- [ ] Status

@@ -1,5 +1,5 @@
-# Sumário do Curso: Financiamento Imobiliario
+# Sumário do Curso: Financiamento Imobiliário
 - Módulo 1: Fundamentos
 - Módulo 2: Aplicação Prática
-- Módulo 3: Casos Reais
+- Módulo 3: Estratégia
 - Módulo 4: Crescimento

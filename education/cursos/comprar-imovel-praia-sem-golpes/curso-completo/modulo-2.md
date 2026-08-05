@@ -1,33 +1,48 @@
-# Módulo 2 — Conteúdo Premium
-## Aula 2.1 — Introdução ao módulo
-Conteúdo: visão geral, objetivo, aplicação prática no litoral.
+# Módulo 2 — Aplicação Prática
 
-## Aula 2.2 — Conceitos aplicados
-Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
+## Introdução
+Aplique o método na prática com exemplos reais e evite erros comuns.
 
-## Aula 2.3 — Estudo de caso
-Conteúdo: caso real, análise, lições.
+## Aula 2.1 — Passo a passo prático
+- Etapas claras
+- Ação imediata
+- Verificação de resultado
+
+**Exemplo real:** Profissional aplicou o passo a passo e obteve ganhos rápidos em 15 dias.
+
+## Aula 2.2 — Exemplos reais
+- Caso 1
+- Caso 2
+- Lições aplicáveis
+
+**Estudo de caso:** Aplicação prática gerou aumento mensurável em 30 dias.
+
+## Aula 2.3 — Erros comuns
+- Erro 1
+- Erro 2
+- Erro 3
+- Como evitar
 
 ## Exercício
-Aplicação prática no seu contexto.
+Aplique o método em um cenário real.
 
 ## Resumo
-Pontos-chave para revisão.
+- Passo a passo reduz risco
+- Exemplos aceleram aprendizado
+- Erros evitados poupam tempo
 
 ## Checklist
-- [ ] Conceitos entendidos
-- [ ] Caso analisado
-- [ ] Exercício aplicado
+- [ ] Passos executados
+- [ ] Resultados verificados
+- [ ] Ajustes aplicados
 
 ## Materiais para download
 - PDF do módulo
-- Templates
-- Planilha
+- Checklist de aplicação
 
 ## Ferramentas recomendadas
-- Ferramenta 1
-- Ferramenta 2
-- Ferramenta 3
+- Planilha de acompanhamento
+- App de gestão
 
 ## Prompt de IA
-Prompt para acelerar tarefas deste módulo.
+"Atue como especialista prático. Monte um plano de aplicação para este cenário: [dados]."

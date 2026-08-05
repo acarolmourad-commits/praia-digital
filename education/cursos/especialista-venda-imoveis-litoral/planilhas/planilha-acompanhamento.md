@@ -1,5 +1,6 @@
-# Planilha — Especialista Venda Imoveis Litoral
+# Planilha — Especialista em Venda de Imóveis no Litoral
 - [ ] Data
 - [ ] Ação
 - [ ] Resultado
-- [ ] Observação
+- [ ] Ajuste
+- [ ] Status

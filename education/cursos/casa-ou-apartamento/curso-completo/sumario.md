@@ -1,5 +1,5 @@
-# Sumário do Curso: Casa Ou Apartamento
+# Sumário do Curso: Casa ou Apartamento no Litoral
 - Módulo 1: Fundamentos
 - Módulo 2: Aplicação Prática
-- Módulo 3: Casos Reais
+- Módulo 3: Estratégia
 - Módulo 4: Crescimento

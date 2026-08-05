@@ -1,5 +1,6 @@
-# Planilha — Marketing Imobiliario
+# Planilha — Marketing Imobiliário para Corretores
 - [ ] Data
 - [ ] Ação
 - [ ] Resultado
-- [ ] Observação
+- [ ] Ajuste
+- [ ] Status

@@ -1,33 +1,49 @@
-# Módulo 4 — Conteúdo Premium
-## Aula 4.1 — Introdução ao módulo
-Conteúdo: visão geral, objetivo, aplicação prática no litoral.
+# Módulo 4 — Crescimento
 
-## Aula 4.2 — Conceitos aplicados
-Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
+## Introdução
+Acompanhe resultados, ajuste estratégias e escale sem perder controle.
 
-## Aula 4.3 — Estudo de caso
-Conteúdo: caso real, análise, lições.
+## Aula 4.1 — Acompanhamento
+- Métricas
+- Frequência
+- Formato
+- Aprendizado
+
+**Exemplo real:** Acompanhamento semanal permitiu ajustes rápidos e crescimento contínuo.
+
+## Aula 4.2 — Ajustes
+- Quando ajustar
+- Como ajustar
+- Validação
+
+**Estudo de caso:** Ajustes pontuais aumentaram resultado sem aumentar esforço.
+
+## Aula 4.3 — Escala
+- Processos
+- Fornecedores/parcerias
+- Crescimento gradual
 
 ## Exercício
-Aplicação prática no seu contexto.
+Monte um plano de escala sustentada.
 
 ## Resumo
-Pontos-chave para revisão.
+- Acompanhamento mantém direção
+- Ajustes preservam resultado
+- Escala depende de processo
 
 ## Checklist
-- [ ] Conceitos entendidos
-- [ ] Caso analisado
-- [ ] Exercício aplicado
+- [ ] Métricas revisadas
+- [ ] Ajustes aplicados
+- [ ] Escala planejada
 
 ## Materiais para download
 - PDF do módulo
-- Templates
-- Planilha
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Ferramenta 1
-- Ferramenta 2
-- Ferramenta 3
+- Dashboard
+- Planilha
+- Sistema de gestão
 
 ## Prompt de IA
-Prompt para acelerar tarefas deste módulo.
+"Atue como especialista em crescimento. Monte um plano de escala para este cenário: [dados]."

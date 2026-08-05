@@ -1,5 +1,6 @@
-# Planilha — Instagram Para Corretores
+# Planilha — Instagram para Corretores
 - [ ] Data
 - [ ] Ação
 - [ ] Resultado
-- [ ] Observação
+- [ ] Ajuste
+- [ ] Status

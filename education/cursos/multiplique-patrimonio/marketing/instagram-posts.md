@@ -1,10 +1,11 @@
-1. Post: dica sobre multiplique patrimonio
-2. Post: dica sobre multiplique patrimonio
-3. Post: dica sobre multiplique patrimonio
-4. Post: dica sobre multiplique patrimonio
-5. Post: dica sobre multiplique patrimonio
-6. Post: dica sobre multiplique patrimonio
-7. Post: dica sobre multiplique patrimonio
-8. Post: dica sobre multiplique patrimonio
-9. Post: dica sobre multiplique patrimonio
-10. Post: dica sobre multiplique patrimonio
+# Posts Instagram — Multiplique Patrimônio no Litoral
+1. Post: dica prática
+2. Reels: passo a passo
+3. Carrossel: checklist
+4. Post: erro comum
+5. Reels: case rápido
+6. Carrossel: ferramenta
+7. Post: resultado
+8. Reels: ajuste simples
+9. Carrossel: métrica
+10. Post: comece hoje

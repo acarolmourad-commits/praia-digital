@@ -1,5 +1,6 @@
-# Planilha — Avaliacao De Imoveis
+# Planilha — Avaliação de Imóveis
 - [ ] Data
 - [ ] Ação
 - [ ] Resultado
-- [ ] Observação
+- [ ] Ajuste
+- [ ] Status

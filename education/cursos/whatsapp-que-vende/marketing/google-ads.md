@@ -1,4 +1,4 @@
-# Google Ads — whatsapp-que-vende
-Palavras: whatsapp que vende, litoral
+# Google Ads — WhatsApp que Vende no Litoral
+Palavras: whatsapp que vende, litoral, imóveis, investimento
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

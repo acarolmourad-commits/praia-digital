@@ -1,4 +1,4 @@
-# Roteiro YouTube — Automacao Comercial
+# Roteiro YouTube — Automação Comercial para Corretores
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado

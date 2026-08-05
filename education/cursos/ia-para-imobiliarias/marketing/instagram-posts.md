@@ -1,10 +1,11 @@
-1. Post: dica sobre ia para imobiliarias
-2. Post: dica sobre ia para imobiliarias
-3. Post: dica sobre ia para imobiliarias
-4. Post: dica sobre ia para imobiliarias
-5. Post: dica sobre ia para imobiliarias
-6. Post: dica sobre ia para imobiliarias
-7. Post: dica sobre ia para imobiliarias
-8. Post: dica sobre ia para imobiliarias
-9. Post: dica sobre ia para imobiliarias
-10. Post: dica sobre ia para imobiliarias
+# Posts Instagram — IA para Imobiliárias
+1. Post: dica prática
+2. Reels: passo a passo
+3. Carrossel: checklist
+4. Post: erro comum
+5. Reels: case rápido
+6. Carrossel: ferramenta
+7. Post: resultado
+8. Reels: ajuste simples
+9. Carrossel: métrica
+10. Post: comece hoje

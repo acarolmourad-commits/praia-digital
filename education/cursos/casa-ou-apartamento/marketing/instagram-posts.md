@@ -1,10 +1,11 @@
-1. Post: dica sobre casa ou apartamento
-2. Post: dica sobre casa ou apartamento
-3. Post: dica sobre casa ou apartamento
-4. Post: dica sobre casa ou apartamento
-5. Post: dica sobre casa ou apartamento
-6. Post: dica sobre casa ou apartamento
-7. Post: dica sobre casa ou apartamento
-8. Post: dica sobre casa ou apartamento
-9. Post: dica sobre casa ou apartamento
-10. Post: dica sobre casa ou apartamento
+# Posts Instagram — Casa ou Apartamento no Litoral
+1. Post: dica prática
+2. Reels: passo a passo
+3. Carrossel: checklist
+4. Post: erro comum
+5. Reels: case rápido
+6. Carrossel: ferramenta
+7. Post: resultado
+8. Reels: ajuste simples
+9. Carrossel: métrica
+10. Post: comece hoje

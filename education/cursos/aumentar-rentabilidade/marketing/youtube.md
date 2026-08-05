@@ -1,4 +1,4 @@
-# Roteiro YouTube — Aumentar Rentabilidade
+# Roteiro YouTube — Como Aumentar em 30% a Rentabilidade
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado

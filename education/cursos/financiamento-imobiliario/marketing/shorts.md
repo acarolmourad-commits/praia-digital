@@ -1,10 +1,6 @@
-1. Roteiro: dica em 1 minuto 1
-2. Roteiro: dica em 1 minuto 2
-3. Roteiro: dica em 1 minuto 3
-4. Roteiro: dica em 1 minuto 4
-5. Roteiro: dica em 1 minuto 5
-6. Roteiro: dica em 1 minuto 6
-7. Roteiro: dica em 1 minuto 7
-8. Roteiro: dica em 1 minuto 8
-9. Roteiro: dica em 1 minuto 9
-10. Roteiro: dica em 1 minuto 10
+# Shorts — Financiamento Imobiliário
+1. Roteiro: dica rápida
+2. Roteiro: regra simples
+3. Roteiro: resultado em 1 minuto
+4. Roteiro: ajuste simples
+5. Roteiro: case curto

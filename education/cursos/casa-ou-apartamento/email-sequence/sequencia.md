@@ -1,21 +1,21 @@
-# Sequência de E-mails — Casa Ou Apartamento
+# Sequência de E-mails — Casa ou Apartamento no Litoral
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido sobre Casa Ou Apartamento (PDF)
+Assunto: Guia Rápido de Casa ou Apartamento no Litoral (PDF + planilha)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case prático de Casa Ou Apartamento
+Assunto: Case: resultado prático
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Casa Ou Apartamento é para mim?"
+Assunto: "Casa ou Apartamento no Litoral dá trabalho?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno obteve resultado com Casa Ou Apartamento
+Assunto: Aluno obteve resultado em 30 dias
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

@@ -1,4 +1,4 @@
-# Roteiro YouTube — Especialista Venda Imoveis Litoral
+# Roteiro YouTube — Especialista em Venda de Imóveis no Litoral
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado

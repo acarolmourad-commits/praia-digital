@@ -1,5 +1,6 @@
-# Planilha — Guia Investidor Imobiliario
+# Planilha — Guia do Investidor Imobiliário
 - [ ] Data
 - [ ] Ação
 - [ ] Resultado
-- [ ] Observação
+- [ ] Ajuste
+- [ ] Status

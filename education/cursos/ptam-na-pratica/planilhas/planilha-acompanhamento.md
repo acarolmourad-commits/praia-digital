@@ -1,5 +1,6 @@
-# Planilha — Ptam Na Pratica
+# Planilha — PTAM na Prática
 - [ ] Data
 - [ ] Ação
 - [ ] Resultado
-- [ ] Observação
+- [ ] Ajuste
+- [ ] Status

@@ -1,5 +1,6 @@
-# Planilha — Crm Para Corretores
+# Planilha — CRM para Corretores
 - [ ] Data
 - [ ] Ação
 - [ ] Resultado
-- [ ] Observação
+- [ ] Ajuste
+- [ ] Status
