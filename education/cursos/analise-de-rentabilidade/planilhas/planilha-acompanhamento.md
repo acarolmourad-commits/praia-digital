@@ -1,6 +1,11 @@
 # Planilha — Análise de Rentabilidade
 - [ ] Data
-- [ ] Ação
-- [ ] Resultado
-- [ ] Ajuste
+- [ ] Imóvel
+- [ ] Cidade
+- [ ] Preço
+- [ ] Reforma
+- [ ] Receita
+- [ ] Custos
+- [ ] Lucro
+- [ ] ROI
 - [ ] Status

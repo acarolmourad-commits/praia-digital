@@ -1,49 +1,77 @@
-# Módulo 3 — Estratégia
+# Módulo 3 — Cálculo e Decisão
 
 ## Introdução
-Planeje, decida e priorize ações para crescer com consistência.
+Aprenda a calcular ROI, simular cenários e tomar decisões de investimento com clareza e segurança.
 
-## Aula 3.1 — Planejamento
-- Objetivos
-- Ações
-- Prazos
-- Recursos
+## Aula 3.1 — ROI e payback
+**Cálculo de ROI:**
+- ROI = lucro líquido / investimento total
+- Payback = investimento total / lucro anual
 
-**Exemplo real:** Planejamento simples permitiu crescer sem surpresas.
+**Exemplo prático:**
+- Investimento: R$ 350 mil
+- Reforma: R$ 25 mil
+- Receita anual: R$ 96 mil
+- Custos anuais: R$ 24 mil
+- Lucro: R$ 72 mil
+- ROI: 20,6% ao ano
+- Payback: 5,2 anos
 
-## Aula 3.2 — Decisão e priorização
-- Critérios de decisão
-- Priorização
-- Risco
+## Aula 3.2 — Cenários e riscos
+**Cenários:**
+- Otimista: ocupação 20% acima da média.
+- Realista: ocupação conforme mercado.
+- Pessimista: ocupação 20% abaixo da média.
 
-**Estudo de caso:** Decisão baseada em dados evitou prejuízo e aumentou retorno.
+**Riscos:**
+- Documentação irregular.
+- IPTU atrasado.
+- Alagamentos.
+- Concorrência alta.
 
-## Aula 3.3 — Execução
-- Rotina
-- Acompanhamento
-- Ajuste rápido
+**Exemplo real:**
+Investidor simulou cenário pessimista e decidiu não comprar um imóvel com risco de alagamento.
+
+## Aula 3.3 — Decisão de investimento
+**Critérios de decisão:**
+- ROI esperado >= 15% ao ano.
+- Documentação regular.
+- Localização com valorização.
+- Risco controlado.
+
+**Checklist de decisão:**
+- [ ] ROI calculado
+- [ ] Cenários simulados
+- [ ] Riscos identificados
+- [ ] Documentação verificada
+- [ ] Decisão tomada
+
+**Estudo de caso:**
+Investidor usou critérios de ROI e documentação e evitou um imóvel com risco de marinha.
 
 ## Exercício
-Monte um plano estratégico para os próximos 30 dias.
+Calcule ROI e payback para um imóvel no litoral.
 
 ## Resumo
-- Planejamento evita desperdício
-- Decisão orientada reduz risco
-- Execução gera resultado
+- ROI mede retorno.
+- Cenários reduzem risco.
+- Decisão exige dados.
 
 ## Checklist
-- [ ] Plano definido
-- [ ] Ações listadas
-- [ ] Prazo estabelecido
+- [ ] ROI calculado
+- [ ] Cenários simulados
+- [ ] Riscos avaliados
+- [ ] Decisão tomada
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de plano
+- Planilha de ROI
+- Modelo de relatório
 
 ## Ferramentas recomendadas
-- Planner
-- Planilha
-- App de metas
+- Planilha de rentabilidade
+- Sistema de gestão
+- Consulta de dados locais
 
 ## Prompt de IA
-"Atue como estrategista. Monte um plano prático para este objetivo: [dados]."
+"Atue como analista de investimentos. Calcule ROI e payback para este imóvel: [dados]."

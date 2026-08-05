@@ -1,4 +1,4 @@
 # Google Ads — Análise de Rentabilidade
-Palavras: analise de rentabilidade, litoral, imóveis, investimento
+Palavras: análise de rentabilidade, ROI imóvel no litoral, investimento imobiliário litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender
