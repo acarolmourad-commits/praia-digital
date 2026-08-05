@@ -42,12 +42,13 @@
 - Marketing Imobiliário para Corretores — PRONTO PARA VENDA
 - Gestão de Vendas para Corretores — PRONTO PARA VENDA
 - Atendimento ao Cliente para Corretores — PRONTO PARA VENDA
+- Pós-venda e Relacionamento para Corretores — PRONTO PARA VENDA
 
 ## Em Produção
 - Nenhum no momento
 
 ## Próximo Curso
-- Pós-venda e Relacionamento para Corretores
+- Apresentação de Imóveis para Corretores
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.
