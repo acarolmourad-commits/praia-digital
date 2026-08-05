@@ -1,0 +1,102 @@
+name: Academy CI/CD
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'academy/**'
+      - 'education/**'
+      - 'render.yaml'
+      - 'requirements.txt'
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12']
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r academy/requirements.txt
+          pip install pytest httpx
+
+      - name: Run Fase 1 tests
+        run: |
+          cd academy
+          PYTHONPATH=. python tests/test_phase1.py
+
+      - name: Run Fase 2 tests
+        run: |
+          cd academy
+          PYTHONPATH=. python tests/test_phase2.py
+
+      - name: Run Fase 3 tests
+        run: |
+          cd academy
+          PYTHONPATH=. python tests/test_phase3.py
+
+      - name: Run Fase 4 tests
+        run: |
+          cd academy
+          PYTHONPATH=. python tests/test_phase4.py
+
+      - name: Run Fase 5 tests
+        run: |
+          cd academy
+          PYTHONPATH=. python tests/test_phase5.py
+
+      - name: Run linting
+        run: |
+          pip install flake8
+          flake8 academy --max-line-length=120 --extend-ignore=E501,W503
+
+  deploy-preview:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy preview to Render
+        env:
+          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+        run: |
+          echo "Preview deployment triggered for PR #${{ github.event.pull_request.number }}"
+          # Render will auto-deploy preview if connected
+
+  deploy-production:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to Render
+        env:
+          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+        run: |
+          echo "Production deployment triggered"
+          curl -X POST "https://api.render.com/v1/services/${{ secrets.RENDER_SERVICE_ID }}/deploys" \
+            -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}" \
+            -H "Content-Type: application/json" \
+            -d '{"clearCache": "clear"}'
+
+      - name: Notify deployment
+        if: always()
+        run: |
+          echo "Deployment completed. Check https://academy.praia.digital/health"
