@@ -1,38 +1,61 @@
-# Módulo 1 — Fundamentos
+# Módulo 1 — Fundamentos do Investimento
 
 ## Introdução
-Entenda o contexto, o seu perfil e as métricas essenciais para investimento imobiliário, escolha, documentação e rentabilidade.
+Entenda o investimento imobiliário no litoral, o perfil do investidor e o método para construir patrimônio.
 
-## Aula 1.1 — Contexto e oportunidades
-- Mercado atual
-- Oportunidades no litoral
-- Particularidades regionais
+## Aula 1.1 — O que é investir no litoral
+Investir no litoral significa aplicar recursos em imóveis para obter renda, valorização ou ambos.
 
-**Exemplo real:** Profissional identificou oportunidade em região em crescimento e aumentou resultado em 25%.
+**Objetivos:**
+- Renda recorrente.
+- Valorização.
+- Segurança.
 
-## Aula 1.2 — Perfil e objetivos
-- Perfil do aluno
-- Objetivos claros
-- Metas realistas
+**Exemplo real:**
+Investidor comprou apartamento em Santos e obteve renda com temporada.
 
-## Aula 1.3 — Métricas e metas
-- Métricas essenciais
-- Metas de curto, médio e longo prazo
-- Revisão
+**Estudo de caso:**
+Investidor errou na escolha; metodologia corrigiu o foco.
 
-## Exercício
-Faça o diagnóstico do seu cenário atual.
+## Aula 1.2 — Perfil do investidor
+**Iniciante:**
+- Foco: método, documentação, primeiro imóvel.
+- Erro comum: comprar sem análise.
+
+**Intermediário:**
+- Foco: fluxo de caixa, múltiplos imóveis.
+- Erro comum: automação sem controle.
+
+**Avançado:**
+- Foco: carteira, escala.
+- Erro comum: risco concentrado.
+
+**Exercício:**
+Faça o diagnóstico do seu perfil de investidor.
+
+## Aula 1.3 — Metas e método
+**Metas:**
+- Patrimônio.
+- Renda.
+- Prazo.
+
+**Método:**
+- Análise de oportunidades.
+- Verificação de dados.
+- Acompanhamento.
+
+**Exemplo real:**
+Investidor definiu metas e dobrou patrimônio em 3 anos.
 
 ## Resumo
-- Contexto orienta decisão
-- Perfil evita erros
-- Métricas medem resultado
+- Investimento exige método.
+- Perfil claro orienta decisão.
+- Metas medem progresso.
 
 ## Checklist
-- [ ] Cenário mapeado
-- [ ] Objetivos definidos
-- [ ] Métricas escolhidas
+- [ ] Perfil definido
 - [ ] Metas traçadas
+- [ ] Método escolhido
 
 ## Materiais para download
 - PDF do módulo
@@ -40,8 +63,8 @@ Faça o diagnóstico do seu cenário atual.
 
 ## Ferramentas recomendadas
 - Planilha
-- Indicadores
-- Consultas locais
+- CRM
+- Consultorias
 
 ## Prompt de IA
-"Atue como especialista em investimento imobiliário, escolha, documentação e rentabilidade. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
+"Atue como especialista em investimento imobiliário. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."

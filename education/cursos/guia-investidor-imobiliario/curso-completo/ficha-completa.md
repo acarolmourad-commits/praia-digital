@@ -1,52 +1,52 @@
 # Curso: Guia do Investidor Imobiliário
 ## Nome Comercial
-**Guia do Investidor Imobiliário: Método Prático para Investimento imobiliário, escolha, documentação e rentabilidade**
+**Guia do Investidor Imobiliário no Litoral: Método Prático para Construir Patrimônio e Renda com Imóveis na Praia**
 
 ## Subtítulo
-Do diagnóstico ao resultado: aprenda a aplicar método, evitar erros e crescer no mercado imobiliário do litoral.
+Do primeiro imóvel à carteira: aprenda a investir no litoral com método, segurança e crescimento previsível.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de aplicar um método prático para investimento imobiliário, escolha, documentação e rentabilidade.
+Em até 20 dias, você será capaz de montar uma estratégia de investimento imobiliário no litoral e escolher o primeiro imóvel com segurança.
 
 ## Público-alvo
-- Proprietários de imóveis no litoral
-- Investidores que querem aumentar retorno
-- Corretores que querem se especializar
-- Interesse: imóveis, litoral, investimento, temporada, rentabilidade
+- Investidores iniciantes e intermediários
+- Profissionais que querem construir patrimônio
+- Pessoas que querem renda com imóveis
+- Interesse: investimento, imóveis, litoral, renda, patrimônio
 
 ## Pré-requisitos
-Nenhum. Curso completo do zero ao resultado.
+Nenhum. Curso completo do zero à carteira.
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
-6 horas de aulas
-Total: 6 horas
+4 horas de aulas (20 aulas de 10 a 16 min)
+Total: 4 horas
 
 ## Valor Sugerido
-Curso completo: R$ 297
-À vista: R$ 297
-Parcelado: 12x de R$ 24,75
+Curso completo: R$ 197
+À vista: R$ 167
+Parcelado: 12x de R$ 13,92
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist do curso
-- Planilha de acompanhamento
-- Modelos prontos
+- Checklist de investimento
+- Planilha de oportunidades
+- Modelos de análise
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Guia completo para investir em imóveis no litoral com segurança e rentabilidade"**
+**"Construa patrimônio e renda com imóveis no litoral"**
 
 ## Big Idea
-Resultados no litoral dependem de método, dados e execução consistente.
+Investir no litoral combina análise de oportunidades, documentação segura e gestão de carteira para gerar renda e valorização.
 
 ## Oferta
-- **Curso completo:** R$ 297
+- **Curso completo:** R$ 197
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
@@ -54,106 +54,105 @@ Resultados no litoral dependem de método, dados e execução consistente.
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** investimento imobiliário, escolha, documentação e rentabilidade
-**Dificuldades:** falta de método, insegurança, resultado baixo
-**Desejos:** crescimento, tranquilidade, autoridade
+**Objetivo:** construir patrimônio
+**Dificuldades:** escolha de imóvel, documentação, renda
+**Desejos:** segurança, crescimento, liberdade
 
 ## Dores
+- Escolha errada
+- Documentação insegura
 - Falta de método
+- Renda baixa
 - Insegurança
-- Resultado baixo
-- Falta de clareza
-- Tempo limitado
 
 ## Desejos
+- Patrimônio
+- Renda
+- Liberdade
+- Segurança
 - Crescimento
-- Tranquilidade
-- Autoridade
-- Previsibilidade
-- Resultado
 
 ## Objeções
+- "Investir é arriscado"
+- "Não tenho dinheiro"
+- "Demora muito"
 - "Não compensa"
-- "É complicado"
-- "Não tenho tempo"
 - "Vou errar"
-- "Não funciona"
 
 ## Transformação
-- Método aplicado
-- Resultado crescente
-- Decisão orientada por dados
-- Operação profissional
-- Tranquilidade
+- Investimento estruturado
+- Documentação segura
+- Renda previsível
+- Crescimento sustentado
+- Liberdade
 
 ## Programa Completo
-### Módulo 1 — Fundamentos
-Aula 1.1 — Contexto e oportunidades
-Aula 1.2 — Perfil e objetivos
-Aula 1.3 — Métricas e metas
-Exercício: diagnóstico
+### Módulo 1 — Fundamentos do Investimento
+Aula 1.1 — O que é investir no litoral
+Aula 1.2 — Perfil do investidor
+Aula 1.3 — Metas e método
+Exercício: diagnóstico de investimento
 
-### Módulo 2 — Aplicação Prática
-Aula 2.1 — Passo a passo prático
-Aula 2.2 — Exemplos reais
-Aula 2.3 — Erros comuns
-Exercício: aplicação
+### Módulo 2 — Oportunidades e Análise
+Aula 2.1 — Como encontrar oportunidades
+Aula 2.2 — Análise de viabilidade
+Aula 2.3 — Comparáveis e mercado
+Exercício: análise de oportunidade
 
-### Módulo 3 — Estratégia
-Aula 3.1 — Planejamento
-Aula 3.2 — Decisão e priorização
-Aula 3.3 — Execução
-Exercício: plano
+### Módulo 3 — Documentação e Segurança
+Aula 3.1 — Documentos essenciais
+Aula 3.2 — Verificação e fraudes
+Aula 3.3 — Fechamento seguro
+Exercício: checklist de compra
 
-### Módulo 4 — Crescimento
-Aula 4.1 — Acompanhamento
-Aula 4.2 — Ajustes
-Aula 4.3 — Escala
-Exercício: escala
+### Módulo 4 — Gestão e Crescimento
+Aula 4.1 — Gestão de imóveis
+Aula 4.2 — Renda e valorização
+Aula 4.3 — Escala e carteira
+Exercício: plano de crescimento
 
 ## Carga Horária
-6 horas
+4 horas
 
 ## Material Complementar
-- Checklist
-- Planilha
-- Modelos
+- Checklist de investimento
+- Planilha de oportunidades
+- Modelos de análise
 - PDFs por módulo
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de diagnóstico
-- Checklist de aplicação
-- Checklist de estratégia
-- Checklist de escala
+- Checklist de investimento
+- Checklist de oportunidade
+- Checklist de fechamento
 
 ## Planilhas
-- Planilha de acompanhamento
-- Planilha de métricas
-- Planilha de ROI
+- Planilha de oportunidades
+- Planilha de custos
+- Planilha de renda
 
 ## Modelos Prontos
-- Modelo de relatório
+- Modelo de análise
 - Modelo de proposta
-- Modelo de revisão
+- Modelo de checklist
 
 ## Scripts
 - Script de atendimento
 - Script de negociação
 
 ## Prompt de IA
-Prompt para gerar análises e planos.
+Prompt para gerar análises e propostas.
 
 ## Exercícios
-- Exercício 1: diagnóstico
-- Exercício 2: aplicação
-- Exercício 3: plano
-- Exercício 4: escala
+- Exercício 1: diagnóstico de investimento
+- Exercício 2: análise de oportunidade
+- Exercício 3: checklist de compra
+- Exercício 4: plano de crescimento
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: aplicação do método
+Prova prática: investimento aplicado
 
 ## FAQ
 1. Preciso de experiência? Não.
@@ -193,7 +192,7 @@ Prova prática: aplicação do método
 [marketing/google-ads.md]
 
 ## CTA
-"Aplique o método agora."
+"Construa patrimônio no litoral agora."
 
 ## Upsell
 - Mentoria individual: R$ 1.500
@@ -204,4 +203,6 @@ Prova prática: aplicação do método
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Cursos complementares Praia Digital
+- Curso de Análise de Rentabilidade
+- Curso de Avaliação de Imóveis
+- Curso de Como Aumentar em 30% a Rentabilidade

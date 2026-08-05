@@ -1,5 +1,5 @@
 # Meta Ads — Guia do Investidor Imobiliário
-Público: 25 a 55 anos, interesse em imóveis, litoral, investimento
+Público: 25 a 55 anos, interesse em imóveis, investimento, litoral
 Objetivo: leads
 Formato: vídeo + carrossel
 Orçamento sugerido: R$ 40 a R$ 120/dia

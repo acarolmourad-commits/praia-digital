@@ -1,11 +1,11 @@
 # Artigos SEO — Guia do Investidor Imobiliário
-1. Guia do Investidor Imobiliário em 2026: guia completo
-2. Como aplicar Guia do Investidor Imobiliário no litoral
-3. Guia prático para iniciantes
-4. Erros comuns e como evitar
-5. Métricas essenciais
-6. Resultados reais e casos
-7. Ferramentas úteis
-8. Checklist essencial
-9. Perguntas frequentes
-10. Próximos passos
+1. Investimento imobiliário no litoral em 2026: guia completo
+2. Como investir em imóveis no litoral
+3. Renda com imóveis no litoral
+4. Valorização no litoral
+5. Oportunidades no litoral
+6. Riscos no litoral
+7. Carteira de imóveis no litoral
+8. Custos no litoral
+9. ROI no litoral
+10. Erros comuns no litoral

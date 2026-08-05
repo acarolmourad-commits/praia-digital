@@ -1,6 +1,8 @@
 # Checklist — Guia do Investidor Imobiliário
-- [ ] Diagnóstico realizado
-- [ ] Objetivos definidos
-- [ ] Aplicação executada
-- [ ] Estratégia traçada
-- [ ] Escala planejada
+- [ ] Perfil definido
+- [ ] Oportunidades prospectadas
+- [ ] Viabilidade analisada
+- [ ] Documentação verificada
+- [ ] Compra fechada
+- [ ] Imóvel gerindo renda
+- [ ] Crescimento planejado
