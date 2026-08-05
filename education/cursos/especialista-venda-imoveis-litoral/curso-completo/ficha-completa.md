@@ -1,41 +1,41 @@
 # Curso: Especialista em Venda de Imóveis no Litoral
 ## Nome Comercial
-**Especialista em Venda de Imóveis no Litoral: Método Prático para Captar leads, negociar e vender imóveis no litoral com autoridade**
+**Especialista em Venda de Imóveis no Litoral: Método Prático para Captar, Negociar e Fechar Vendas com Autoridade no Mercado Litorâneo**
 
 ## Subtítulo
-Do diagnóstico ao resultado: aprenda a aplicar método, evitar erros e crescer no mercado imobiliário do litoral.
+Da captação ao fechamento: aprenda a se destacar como corretor no litoral e vender mais imóveis com método.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de aplicar um método prático para captar leads, negociar e vender imóveis no litoral com autoridade.
+Em até 30 dias, você será capaz de captar imóveis, qualificar leads, negociar melhor e fechar vendas com maior frequência no litoral.
 
 ## Público-alvo
-- Proprietários de imóveis no litoral
-- Investidores que querem aumentar retorno
-- Corretores que querem se especializar
-- Interesse: imóveis, litoral, investimento, temporada, rentabilidade
+- Corretores de imóveis iniciantes e intermediários
+- Corretores que querem se especializar no litoral
+- Corretores que querem aumentar conversão
+- Interesse: vendas, captação, negociação, leads, imóveis
 
 ## Pré-requisitos
-Nenhum. Curso completo do zero ao resultado.
+Nenhum. Curso completo do zero às vendas recorrentes.
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
-8 horas de aulas
+8 horas de aulas (40 aulas de 10 a 16 min)
 Total: 8 horas
 
 ## Valor Sugerido
 Curso completo: R$ 397
-À vista: R$ 397
-Parcelado: 12x de R$ 33,08
+À vista: R$ 327
+Parcelado: 12x de R$ 27,25
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist do curso
-- Planilha de acompanhamento
-- Modelos prontos
+- Checklist de vendas
+- Planilha de leads
+- Modelos de proposta e contrato
 - Comunidade fechada
 - Certificado
 
@@ -43,7 +43,7 @@ E-book: R$ 19,90
 **"Venda mais imóveis no litoral com método, técnicas de captação e fechamento profissional"**
 
 ## Big Idea
-Resultados no litoral dependem de método, dados e execução consistente.
+Vender no litoral exige conhecimento local, captação consistente e técnicas de negociação adaptadas ao perfil do comprador litorâneo.
 
 ## Oferta
 - **Curso completo:** R$ 397
@@ -54,113 +54,114 @@ Resultados no litoral dependem de método, dados e execução consistente.
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** captar leads, negociar e vender imóveis no litoral com autoridade
-**Dificuldades:** falta de método, insegurança, resultado baixo
-**Desejos:** crescimento, tranquilidade, autoridade
+**Objetivo:** vender mais imóveis no litoral
+**Dificuldades:** falta de leads, concorrência, objeções de clientes
+**Desejos:** autoridade local, vendas recorrentes, renda crescente
 
 ## Dores
+- Falta de leads qualificados
+- Concorrência alta
+- Objeções de clientes
+- Dificuldade de fechar vendas
 - Falta de método
-- Insegurança
-- Resultado baixo
-- Falta de clareza
-- Tempo limitado
 
 ## Desejos
-- Crescimento
+- Autoridade local
+- Vendas recorrentes
+- Renda crescente
 - Tranquilidade
-- Autoridade
-- Previsibilidade
-- Resultado
+- Reconhecimento
 
 ## Objeções
-- "Não compensa"
-- "É complicado"
-- "Não tenho tempo"
-- "Vou errar"
-- "Não funciona"
+- "Não tenho leads"
+- "Concorrência é alta"
+- "Cliente não fecha"
+- "Preço é alto"
+- "Não conheço o litoral"
 
 ## Transformação
-- Método aplicado
-- Resultado crescente
-- Decisão orientada por dados
-- Operação profissional
-- Tranquilidade
+- Leads qualificados
+- Técnicas de captação
+- Negociação profissional
+- Vendas recorrentes
+- Autoridade local
 
 ## Programa Completo
-### Módulo 1 — Fundamentos
-Aula 1.1 — Contexto e oportunidades
-Aula 1.2 — Perfil e objetivos
-Aula 1.3 — Métricas e metas
-Exercício: diagnóstico
+### Módulo 1 — Fundamentos da Venda no Litoral
+Aula 1.1 — Mercado de vendas no litoral
+Aula 1.2 — Perfil do comprador litorâneo
+Aula 1.3 — Métricas de venda
+Exercício: diagnóstico de vendas
 
-### Módulo 2 — Aplicação Prática
-Aula 2.1 — Passo a passo prático
-Aula 2.2 — Exemplos reais
-Aula 2.3 — Erros comuns
-Exercício: aplicação
+### Módulo 2 — Captação de Imóveis e Leads
+Aula 2.1 — Como captar imóveis exclusivos
+Aula 2.2 — Geração de leads qualificados
+Aula 2.3 — Relacionamento e nutrição
+Exercício: plano de captação
 
-### Módulo 3 — Estratégia
-Aula 3.1 — Planejamento
-Aula 3.2 — Decisão e priorização
-Aula 3.3 — Execução
-Exercício: plano
+### Módulo 3 — Técnicas de Venda e Negociação
+Aula 3.1 — Apresentação do imóvel
+Aula 3.2 — Técnicas de negociação
+Aula 3.3 — Fechamento e superação de objeções
+Exercício: simulação de venda
 
-### Módulo 4 — Crescimento
-Aula 4.1 — Acompanhamento
-Aula 4.2 — Ajustes
-Aula 4.3 — Escala
-Exercício: escala
+### Módulo 4 — Pós-Venda e Crescimento
+Aula 4.1 — Follow-up e indicações
+Aula 4.2 — Avaliação e ajustes
+Aula 4.3 — Escala e autoridade
+Exercício: plano de crescimento
 
 ## Carga Horária
 8 horas
 
 ## Material Complementar
-- Checklist
-- Planilha
-- Modelos
+- Checklist de vendas
+- Planilha de leads
+- Modelos de proposta e contrato
 - PDFs por módulo
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de diagnóstico
-- Checklist de aplicação
-- Checklist de estratégia
-- Checklist de escala
+- Checklist de captação
+- Checklist de visita
+- Checklist de negociação
+- Checklist de fechamento
 
 ## Planilhas
-- Planilha de acompanhamento
-- Planilha de métricas
-- Planilha de ROI
+- Planilha de leads
+- Planilha de vendas
+- Planilha de comissões
 
 ## Modelos Prontos
-- Modelo de relatório
 - Modelo de proposta
-- Modelo de revisão
+- Modelo de contrato
+- Modelo de follow-up
 
 ## Scripts
-- Script de atendimento
+- Script de captação
 - Script de negociação
+- Script de fechamento
 
 ## Prompt de IA
-Prompt para gerar análises e planos.
+Prompt para gerar propostas e follow-ups.
 
 ## Exercícios
-- Exercício 1: diagnóstico
-- Exercício 2: aplicação
-- Exercício 3: plano
-- Exercício 4: escala
+- Exercício 1: diagnóstico de vendas
+- Exercício 2: plano de captação
+- Exercício 3: simulação de venda
+- Exercício 4: plano de crescimento
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: aplicação do método
+Prova prática: simulação de venda aplicada
 
 ## FAQ
 1. Preciso de experiência? Não.
 2. Em quanto tempo vejo resultado? De 15 a 30 dias.
 3. Vale a pena? Sim.
-4. E se errar? Ajuste com método.
-5. Tem suporte? Sim.
+4. Como captar imóveis? Método e relacionamento.
+5. Como fechar mais vendas? Técnicas e follow-up.
 
 ## Página de Vendas
 [vendas.html]
@@ -193,15 +194,17 @@ Prova prática: aplicação do método
 [marketing/google-ads.md]
 
 ## CTA
-"Aplique o método agora."
+"Venda mais imóveis no litoral agora."
 
 ## Upsell
-- Mentoria individual: R$ 1.500
-- Acompanhamento: R$ 2.800
+- Mentoria individual: R$ 3.000
+- Acompanhamento: R$ 4.500
 
 ## Downsell
 - Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Cursos complementares Praia Digital
+- Curso de Captação e Exclusividade
+- Curso de Marketing Imobiliário
+- Curso de Como Aumentar em 30% a Rentabilidade

@@ -1,21 +1,21 @@
 # Sequência de E-mails — Captação e Exclusividade para Corretores
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido de Captação e Exclusividade para Corretores (PDF + planilha)
+Assunto: Guia Rápido de Captação no Litoral (PDF + planilha)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: resultado prático
+Assunto: Case: captação de imóveis exclusivos
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Captação e Exclusividade para Corretores dá trabalho?"
+Assunto: "Captação no litoral é difícil?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno obteve resultado em 30 dias
+Assunto: Aluno fechou 5 exclusividades em 30 dias
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

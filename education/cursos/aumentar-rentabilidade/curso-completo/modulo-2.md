@@ -1,48 +1,74 @@
-# Módulo 2 — Aplicação Prática
+# Módulo 2 — Ganhos Rápidos
 
 ## Introdução
-Aplique o método na prática com exemplos reais e evite erros comuns.
+Identifique ajustes que geram resultado imediato sem investimento alto. Ganhos rápidos financiam mudanças maiores e aumentam confiança.
 
-## Aula 2.1 — Passo a passo prático
-- Etapas claras
-- Ação imediata
-- Verificação de resultado
+## Aula 2.1 — Ajustes que geram resultado imediato
+**Ajustes rápidos:**
+- Ajuste de preço por temporada.
+- Atualização de fotos.
+- Alteração de título e descrição.
+- Ajuste de regras de cancelamento.
+- Promoção de long stay.
 
-**Exemplo real:** Profissional aplicou o passo a passo e obteve ganhos rápidos em 15 dias.
+**Impacto esperado:**
+- Ajuste de preço: +15% a +30% de receita.
+- Fotos novas: +20% de visualizações.
+- Descrição melhorada: +15% de conversão.
 
-## Aula 2.2 — Exemplos reais
-- Caso 1
-- Caso 2
-- Lições aplicáveis
+**Exemplo real:**
+Investidor trocou fotos antigas por fotos profissionais e ajustou preço por temporada. Em 20 dias, a ocupação subiu de 45% para 62%.
 
-**Estudo de caso:** Aplicação prática gerou aumento mensurável em 30 dias.
+## Aula 2.2 — Preço e temporada
+**Preço base:**
+- Consulte 5 imóveis similares.
+- Defina preço competitivo.
 
-## Aula 2.3 — Erros comuns
-- Erro 1
-- Erro 2
-- Erro 3
-- Como evitar
+**Ajuste por temporada:**
+- Alta temporada: +30% a +60%.
+- Feriados prolongados: +20% a +40%.
+- Baixa temporada: -20% a -30%.
+
+**Exemplo real:**
+Imóvel em Santos ajustou preço por temporada e aumentou receita em 24% em 3 meses.
+
+## Aula 2.3 — Ocupação e atendimento
+**Ocupação:**
+- Ajuste disponibilidade.
+- Crie promoções de última hora.
+- Ofereça descontos para estadias longas.
+
+**Atendimento:**
+- Responda em até 1 hora.
+- Use mensagens automáticas.
+- Personalize o atendimento.
+
+**Estudo de caso:**
+Imóvel com atendimento rápido e personalizado aumentou nota de 4,4 para 4,8 e ocupação de 55% para 72% em 2 meses.
 
 ## Exercício
-Aplique o método em um cenário real.
+Monte um plano de ganhos rápidos para os próximos 30 dias.
 
 ## Resumo
-- Passo a passo reduz risco
-- Exemplos aceleram aprendizado
-- Erros evitados poupam tempo
+- Ajustes rápidos geram resultado rápido.
+- Preço e temporada são fundamentais.
+- Atendimento influencia ocupação.
 
 ## Checklist
-- [ ] Passos executados
-- [ ] Resultados verificados
-- [ ] Ajustes aplicados
+- [ ] Preço ajustado
+- [ ] Fotos atualizadas
+- [ ] Descrição revisada
+- [ ] Regras ajustadas
+- [ ] Atendimento melhorado
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de aplicação
+- Planilha de ganhos rápidos
 
 ## Ferramentas recomendadas
-- Planilha de acompanhamento
-- App de gestão
+- Planilha de preços
+- Apps de temporada
+- CRM de atendimento
 
 ## Prompt de IA
-"Atue como especialista prático. Monte um plano de aplicação para este cenário: [dados]."
+"Atue como consultor de rentabilidade. Monte um plano de ganhos rápidos para este imóvel: [dados]."

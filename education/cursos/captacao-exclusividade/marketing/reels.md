@@ -1,6 +1,6 @@
 # Reels — Captação e Exclusividade para Corretores
-1. Roteiro: dica rápida
-2. Roteiro: passo a passo
-3. Roteiro: erro comum
-4. Roteiro: case rápido
-5. Roteiro: resultado
+1. Roteiro: captação em 30s
+2. Roteiro: script de ligação
+3. Roteiro: proposta simples
+4. Roteiro: case de exclusividade
+5. Roteiro: follow-up rápido
