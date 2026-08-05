@@ -1,6 +1,6 @@
-# Shorts — Multiplique Patrimônio no Litoral
-1. Roteiro: dica rápida
-2. Roteiro: regra simples
-3. Roteiro: resultado em 1 minuto
-4. Roteiro: ajuste simples
-5. Roteiro: case curto
+# Shorts — Multiplique Patrimônio
+1. Roteiro: dica de patrimônio
+2. Roteiro: regra rápida
+3. Roteiro: crescimento em 1 minuto
+4. Roteiro: estratégia simples
+5. Roteiro: case rápido

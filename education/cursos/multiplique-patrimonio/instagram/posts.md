@@ -1,21 +1,21 @@
-# Posts Instagram — Multiplique Patrimônio no Litoral
-1. Post: dica prática
-2. Reels: passo a passo rápido
-3. Carrossel: checklist
-4. Post: erro comum
-5. Reels: dica de aplicação
-6. Carrossel: exemplo real
-7. Post: resultado rápido
-8. Reels: case prático
-9. Carrossel: métrica importante
+# Posts Instagram — Multiplique Patrimônio
+1. Post: 3 erros na multiplicação
+2. Reels: patrimônio em 30s
+3. Carrossel: checklist de crescimento
+4. Post: estratégia que protege
+5. Reels: dica de escolha
+6. Carrossel: tipos de estratégia
+7. Post: multiplicação sem medo
+8. Reels: case de crescimento
+9. Carrossel: rentabilidade no litoral
 10. Reels: ajuste simples
-11. Post: estratégia básica
-12. Carrossel: 5 passos
-13. Post: crescimento sem segredo
-14. Reels: dúvida comum
-15. Carrossel: ferramenta útil
+11. Post: renda previsível
+12. Carrossel: 5 passos para multiplicar
+13. Post: mito vs verdade
+14. Reels: dica de risco
+15. Carrossel: dados que importam
 16. Post: comece hoje
-17. Reels: case de resultado
-18. Carrossel: revisão semanal
-19. Post: mito vs verdade
-20. Reels: método resumido
+17. Reels: case de patrimônio
+18. Carrossel: revisão mensal
+19. Post: método completo
+20. Reels: patrimônio em 30s

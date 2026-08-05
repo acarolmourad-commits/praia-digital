@@ -1,52 +1,52 @@
-# Curso: Multiplique Patrimônio no Litoral
+# Curso: Multiplique Patrimônio
 ## Nome Comercial
-**Multiplique Patrimônio no Litoral: Método Prático para Multiplicação de patrimônio, estratégia e longo prazo**
+**Multiplique Patrimônio no Litoral: Método Prático para Crescer seu Patrimônio com Imóveis, Renda e Estratégia**
 
 ## Subtítulo
-Do diagnóstico ao resultado: aprenda a aplicar método, evitar erros e crescer no mercado imobiliário do litoral.
+Do primeiro imóvel à multiplicação: aprenda a crescer patrimônio no litoral com método.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de aplicar um método prático para multiplicação de patrimônio, estratégia e longo prazo.
+Em até 20 dias, você será capaz de criar um plano de multiplicação de patrimônio no litoral e escolher a estratégia certa para seu perfil.
 
 ## Público-alvo
-- Proprietários de imóveis no litoral
-- Investidores que querem aumentar retorno
-- Corretores que querem se especializar
-- Interesse: imóveis, litoral, investimento, temporada, rentabilidade
+- Investidores iniciantes e intermediários
+- Profissionais que querem crescer patrimônio
+- Pessoas que querem liberdade financeira
+- Interesse: investimento, imóveis, litoral, patrimônio, renda
 
 ## Pré-requisitos
-Nenhum. Curso completo do zero ao resultado.
+Nenhum. Curso completo do zero à multiplicação.
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
-6 horas de aulas
-Total: 6 horas
+4 horas de aulas (20 aulas de 10 a 16 min)
+Total: 4 horas
 
 ## Valor Sugerido
-Curso completo: R$ 297
-À vista: R$ 297
-Parcelado: 12x de R$ 24,75
+Curso completo: R$ 197
+À vista: R$ 167
+Parcelado: 12x de R$ 13,92
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist do curso
-- Planilha de acompanhamento
-- Modelos prontos
+- Checklist de patrimônio
+- Planilha de crescimento
+- Modelos de estratégia
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Estratégias para multiplicar patrimônio com imóveis no litoral ao longo do tempo"**
+**"Multiplique seu patrimônio no litoral com método"**
 
 ## Big Idea
-Resultados no litoral dependem de método, dados e execução consistente.
+Multiplicar patrimônio combina escolha de imóveis, estratégia de crescimento e gestão de risco para gerar liberdade financeira.
 
 ## Oferta
-- **Curso completo:** R$ 297
+- **Curso completo:** R$ 197
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
@@ -54,106 +54,105 @@ Resultados no litoral dependem de método, dados e execução consistente.
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** multiplicação de patrimônio, estratégia e longo prazo
-**Dificuldades:** falta de método, insegurança, resultado baixo
-**Desejos:** crescimento, tranquilidade, autoridade
+**Objetivo:** multiplicar patrimônio
+**Dificuldades:** escolha de estratégia, risco, documentação
+**Desejos:** liberdade, crescimento, segurança
 
 ## Dores
+- Estratégia confusa
+- Risco alto
+- Documentação insegura
 - Falta de método
-- Insegurança
-- Resultado baixo
-- Falta de clareza
-- Tempo limitado
+- Resultado lento
 
 ## Desejos
+- Liberdade
 - Crescimento
-- Tranquilidade
-- Autoridade
+- Segurança
 - Previsibilidade
-- Resultado
+- Escala
 
 ## Objeções
+- "Investir é arriscado"
+- "Demora muito"
+- "Não tenho dinheiro"
 - "Não compensa"
-- "É complicado"
-- "Não tenho tempo"
 - "Vou errar"
-- "Não funciona"
 
 ## Transformação
-- Método aplicado
-- Resultado crescente
-- Decisão orientada por dados
-- Operação profissional
-- Tranquilidade
+- Estratégia clara
+- Crescimento seguro
+- Renda previsível
+- Liberdade financeira
+- Escala sustentada
 
 ## Programa Completo
-### Módulo 1 — Fundamentos
-Aula 1.1 — Contexto e oportunidades
-Aula 1.2 — Perfil e objetivos
-Aula 1.3 — Métricas e metas
-Exercício: diagnóstico
+### Módulo 1 — Fundamentos da Multiplicação
+Aula 1.1 — O que é multiplicar patrimônio
+Aula 1.2 — Perfil do investidor
+Aula 1.3 — Metas e método
+Exercício: diagnóstico de patrimônio
 
-### Módulo 2 — Aplicação Prática
-Aula 2.1 — Passo a passo prático
-Aula 2.2 — Exemplos reais
-Aula 2.3 — Erros comuns
-Exercício: aplicação
+### Módulo 2 — Estratégias de Crescimento
+Aula 2.1 — Tipos de estratégia
+Aula 2.2 — Escolha do imóvel
+Aula 2.3 — Alavancagem e risco
+Exercício: estratégia personalizada
 
-### Módulo 3 — Estratégia
-Aula 3.1 — Planejamento
-Aula 3.2 — Decisão e priorização
-Aula 3.3 — Execução
-Exercício: plano
+### Módulo 3 — Documentação e Segurança
+Aula 3.1 — Documentos essenciais
+Aula 3.2 — Verificação e fraudes
+Aula 3.3 — Fechamento seguro
+Exercício: checklist de compra
 
-### Módulo 4 — Crescimento
-Aula 4.1 — Acompanhamento
-Aula 4.2 — Ajustes
-Aula 4.3 — Escala
-Exercício: escala
+### Módulo 4 — Gestão e Escala
+Aula 4.1 — Gestão de patrimônio
+Aula 4.2 — Renda e valorização
+Aula 4.3 — Escala sustentada
+Exercício: plano de crescimento
 
 ## Carga Horária
-6 horas
+4 horas
 
 ## Material Complementar
-- Checklist
-- Planilha
-- Modelos
+- Checklist de patrimônio
+- Planilha de crescimento
+- Modelos de estratégia
 - PDFs por módulo
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de diagnóstico
-- Checklist de aplicação
+- Checklist de patrimônio
 - Checklist de estratégia
-- Checklist de escala
+- Checklist de fechamento
 
 ## Planilhas
-- Planilha de acompanhamento
-- Planilha de métricas
-- Planilha de ROI
+- Planilha de crescimento
+- Planilha de custos
+- Planilha de renda
 
 ## Modelos Prontos
-- Modelo de relatório
-- Modelo de proposta
-- Modelo de revisão
+- Modelo de estratégia
+- Modelo de análise
+- Modelo de plano
 
 ## Scripts
 - Script de atendimento
 - Script de negociação
 
 ## Prompt de IA
-Prompt para gerar análises e planos.
+Prompt para gerar estratégias e planos.
 
 ## Exercícios
-- Exercício 1: diagnóstico
-- Exercício 2: aplicação
-- Exercício 3: plano
-- Exercício 4: escala
+- Exercício 1: diagnóstico de patrimônio
+- Exercício 2: estratégia personalizada
+- Exercício 3: checklist de compra
+- Exercício 4: plano de crescimento
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: aplicação do método
+Prova prática: estratégia aplicada
 
 ## FAQ
 1. Preciso de experiência? Não.
@@ -193,7 +192,7 @@ Prova prática: aplicação do método
 [marketing/google-ads.md]
 
 ## CTA
-"Aplique o método agora."
+"Multiplique seu patrimônio no litoral agora."
 
 ## Upsell
 - Mentoria individual: R$ 1.500
@@ -204,4 +203,6 @@ Prova prática: aplicação do método
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Cursos complementares Praia Digital
+- Curso de Guia do Investidor Imobiliário
+- Curso de Como Aumentar em 30% a Rentabilidade
+- Curso de Análise de Rentabilidade

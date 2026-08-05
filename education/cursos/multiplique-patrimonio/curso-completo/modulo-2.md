@@ -1,48 +1,63 @@
-# Módulo 2 — Aplicação Prática
+# Módulo 2 — Estratégias de Crescimento
 
 ## Introdução
-Aplique o método na prática com exemplos reais e evite erros comuns.
+Aprenda estratégias de crescimento, escolha de imóveis e alavancagem segura no litoral.
 
-## Aula 2.1 — Passo a passo prático
-- Etapas claras
-- Ação imediata
-- Verificação de resultado
+## Aula 2.1 — Tipos de estratégia
+**Estratégias:**
+- Compra e venda.
+- Temporada.
+- Valorização.
+- Alavancagem.
 
-**Exemplo real:** Profissional aplicou o passo a passo e obteve ganhos rápidos em 15 dias.
+**Exemplo real:**
+Investidor combinou temporada e valorização.
 
-## Aula 2.2 — Exemplos reais
-- Caso 1
-- Caso 2
-- Lições aplicáveis
+## Aula 2.2 — Escolha do imóvel
+**Critérios:**
+- Localização.
+- Documentação.
+- Fluxo de caixa.
 
-**Estudo de caso:** Aplicação prática gerou aumento mensurável em 30 dias.
+**Exemplo prático:**
+- Compra: R$ 150 mil.
+- Renda: R$ 2.500/mês.
+- Valorização: 8% ao ano.
 
-## Aula 2.3 — Erros comuns
-- Erro 1
-- Erro 2
-- Erro 3
-- Como evitar
+**Estudo de caso:**
+Investidor escolheu imóvel e multiplicou patrimônio.
 
-## Exercício
-Aplique o método em um cenário real.
+## Aula 2.3 — Alavancagem e risco
+**Alavancagem:**
+- Financiamento.
+- Parcerias.
+
+**Risco:**
+- Concentração.
+- Liquidez.
+- Documentação.
+
+**Exercício:**
+Monte uma estratégia personalizada.
 
 ## Resumo
-- Passo a passo reduz risco
-- Exemplos aceleram aprendizado
-- Erros evitados poupam tempo
+- Estratégia define crescimento.
+- Imóvel certo acelera resultado.
+- Risco controlado protege patrimônio.
 
 ## Checklist
-- [ ] Passos executados
-- [ ] Resultados verificados
-- [ ] Ajustes aplicados
+- [ ] Estratégia definida
+- [ ] Imóvel escolhido
+- [ ] Risco avaliado
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de aplicação
+- Planilha de estratégia
 
 ## Ferramentas recomendadas
-- Planilha de acompanhamento
-- App de gestão
+- Planilha
+- CRM
+- Consultorias
 
 ## Prompt de IA
-"Atue como especialista prático. Monte um plano de aplicação para este cenário: [dados]."
+"Atue como especialista em investimento imobiliário. Monte uma estratégia para este cenário: [dados]."

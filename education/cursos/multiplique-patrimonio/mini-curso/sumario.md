@@ -1,5 +1,5 @@
-# Mini Curso — Multiplique Patrimônio no Litoral
-## Aula 1 — Fundamentos (8 min)
-## Aula 2 — Aplicação prática (12 min)
-## Aula 3 — Estratégia (10 min)
-## Bônus — Planilha de acompanhamento
+# Mini Curso — Multiplique Patrimônio
+## Aula 1 — Fundamentos da multiplicação (8 min)
+## Aula 2 — Estratégias de crescimento (12 min)
+## Aula 3 — Documentação segura (10 min)
+## Bônus — Planilha de crescimento

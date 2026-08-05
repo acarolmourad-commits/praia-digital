@@ -1,4 +1,4 @@
-# Roteiro YouTube — Multiplique Patrimônio no Litoral
+# Roteiro YouTube — Multiplique Patrimônio
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado
