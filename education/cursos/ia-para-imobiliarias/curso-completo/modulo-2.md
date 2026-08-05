@@ -1,48 +1,54 @@
-# Módulo 2 — Aplicação Prática
+# Módulo 2 — Automação de Processos
 
 ## Introdução
-Aplique o método na prática com exemplos reais e evite erros comuns.
+Aprenda a automatizar processos críticos, integrar ferramentas e reduzir esforço manual na imobiliária.
 
-## Aula 2.1 — Passo a passo prático
-- Etapas claras
-- Ação imediata
-- Verificação de resultado
+## Aula 2.1 — Processos críticos
+**Processos:**
+- Captação.
+- Atendimento.
+- Follow-up.
+- Fechamento.
 
-**Exemplo real:** Profissional aplicou o passo a passo e obteve ganhos rápidos em 15 dias.
+**Exemplo real:**
+Gestor automatizou follow-up e reduziu tempo de resposta de 4h para 5min.
 
-## Aula 2.2 — Exemplos reais
-- Caso 1
-- Caso 2
-- Lições aplicáveis
+## Aula 2.2 — Ferramentas de automação
+**Ferramentas:**
+- CRM.
+- Automação.
+- IA generativa.
 
-**Estudo de caso:** Aplicação prática gerou aumento mensurável em 30 dias.
+**Exemplo real:**
+Gestor usou CRM e aumentou conversão em 40%.
 
-## Aula 2.3 — Erros comuns
-- Erro 1
-- Erro 2
-- Erro 3
-- Como evitar
+## Aula 2.3 — CRM e integração
+**CRM:**
+- Funil de vendas.
+- Follow-up.
+- Relatórios.
 
-## Exercício
-Aplique o método em um cenário real.
+**Exercício:**
+Monte uma automação para captação.
 
 ## Resumo
-- Passo a passo reduz risco
-- Exemplos aceleram aprendizado
-- Erros evitados poupam tempo
+- Automação reduz esforço.
+- Ferramentas aceleram vendas.
+- CRM organiza dados.
 
 ## Checklist
-- [ ] Passos executados
-- [ ] Resultados verificados
-- [ ] Ajustes aplicados
+- [ ] Processos mapeados
+- [ ] Ferramentas escolhidas
+- [ ] Automação criada
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de aplicação
+- Planilha de automação
 
 ## Ferramentas recomendadas
-- Planilha de acompanhamento
-- App de gestão
+- CRM
+- Automação
+- IA generativa
 
 ## Prompt de IA
-"Atue como especialista prático. Monte um plano de aplicação para este cenário: [dados]."
+"Atue como especialista em IA para imobiliárias. Monte uma automação para este cenário: [dados]."

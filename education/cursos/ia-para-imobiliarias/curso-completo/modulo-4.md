@@ -1,49 +1,58 @@
-# Módulo 4 — Crescimento
+# Módulo 4 — Gestão, Métricas e Crescimento
 
 ## Introdução
-Acompanhe resultados, ajuste estratégias e escale sem perder controle.
+Gerencie métricas, ajuste processos e escale a imobiliária no litoral com IA.
 
-## Aula 4.1 — Acompanhamento
-- Métricas
-- Frequência
-- Formato
-- Aprendizado
+## Aula 4.1 — Métricas da imobiliária
+**Métricas:**
+- Leads.
+- Visitas.
+- Propostas.
+- Vendas.
+- Conversão.
 
-**Exemplo real:** Acompanhamento semanal permitiu ajustes rápidos e crescimento contínuo.
+**Exemplo real:**
+Gestor revisou métricas e aumentou conversão para 25%.
 
-## Aula 4.2 — Ajustes
-- Quando ajustar
-- Como ajustar
-- Validação
+## Aula 4.2 — Ajustes e melhorias
+**Ajustes:**
+- Revise processos.
+- Atualize automações.
+- Treine equipe.
 
-**Estudo de caso:** Ajustes pontuais aumentaram resultado sem aumentar esforço.
+**Melhorias:**
+- Automação de relatórios.
+- Integração com CRM.
+- Padronização.
 
-## Aula 4.3 — Escala
-- Processos
-- Fornecedores/parcerias
-- Crescimento gradual
+## Aula 4.3 — Escala sustentada
+**Escala:**
+- Adicione leads gradualmente.
+- Mantenha qualidade.
+- Padronize processos.
 
-## Exercício
-Monte um plano de escala sustentada.
+**Exercício:**
+Monte um plano de crescimento para os próximos 90 dias.
 
 ## Resumo
-- Acompanhamento mantém direção
-- Ajustes preservam resultado
-- Escala depende de processo
+- Métricas orientam ajustes.
+- Automação escala operação.
+- Crescimento depende de método.
 
 ## Checklist
 - [ ] Métricas revisadas
 - [ ] Ajustes aplicados
-- [ ] Escala planejada
+- [ ] Crescimento planejado
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de acompanhamento
+- Planilha de métricas
+- Modelo de relatório
 
 ## Ferramentas recomendadas
-- Dashboard
+- CRM
+- Automação
 - Planilha
-- Sistema de gestão
 
 ## Prompt de IA
-"Atue como especialista em crescimento. Monte um plano de escala para este cenário: [dados]."
+"Atue como especialista em IA para imobiliárias. Monte um plano de crescimento para este cenário: [dados]."

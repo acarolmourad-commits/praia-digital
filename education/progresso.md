@@ -19,12 +19,13 @@
 - Casa ou Apartamento — PRONTO PARA VENDA
 - Comprar com Segurança no Litoral — PRONTO PARA VENDA
 - Guia do Investidor Imobiliário — PRONTO PARA VENDA
+- IA para Corretores — PRONTO PARA VENDA
 
 ## Em Produção
 - Nenhum no momento
 
 ## Próximo Curso
-- IA para Corretores
+- IA para Imobiliárias
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.

@@ -1,4 +1,4 @@
 # Google Ads — IA para Imobiliárias
-Palavras: ia para imobiliarias, litoral, imóveis, investimento
+Palavras: IA para imobiliárias, automação para imobiliárias, crescimento de imobiliária
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

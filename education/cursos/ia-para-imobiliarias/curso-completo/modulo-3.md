@@ -1,49 +1,54 @@
-# Módulo 3 — Estratégia
+# Módulo 3 — Geração de Leads e Atendimento
 
 ## Introdução
-Planeje, decida e priorize ações para crescer com consistência.
+Aprenda a gerar leads qualificados, automatizar atendimento e usar follow-up inteligente na imobiliária.
 
-## Aula 3.1 — Planejamento
-- Objetivos
-- Ações
-- Prazos
-- Recursos
+## Aula 3.1 — Fontes de leads
+**Canais:**
+- Portais.
+- Redes sociais.
+- Indicações.
+- Anúncios.
 
-**Exemplo real:** Planejamento simples permitiu crescer sem surpresas.
+**Exemplo real:**
+Gestor aumentou leads em 60% com automação.
 
-## Aula 3.2 — Decisão e priorização
-- Critérios de decisão
-- Priorização
-- Risco
+## Aula 3.2 — Follow-up automatizado
+**Follow-up:**
+- Lembretes.
+- Mensagens personalizadas.
+- Sequências.
 
-**Estudo de caso:** Decisão baseada em dados evitou prejuízo e aumentou retorno.
+**Exercício:**
+Monte um follow-up automatizado.
 
-## Aula 3.3 — Execução
-- Rotina
-- Acompanhamento
-- Ajuste rápido
+## Aula 3.3 — Atendimento 24h
+**Atendimento:**
+- Chatbot.
+- WhatsApp.
+- E-mail.
 
-## Exercício
-Monte um plano estratégico para os próximos 30 dias.
+**Exemplo real:**
+Gestor automatizou atendimento e reduziu tempo de resposta.
 
 ## Resumo
-- Planejamento evita desperdício
-- Decisão orientada reduz risco
-- Execução gera resultado
+- Leads qualificados aumentam conversão.
+- Follow-up fecha negócios.
+- Atendimento 24h melhora experiência.
 
 ## Checklist
-- [ ] Plano definido
-- [ ] Ações listadas
-- [ ] Prazo estabelecido
+- [ ] Fontes definidas
+- [ ] Follow-up criado
+- [ ] Atendimento automatizado
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de plano
+- Modelo de follow-up
 
 ## Ferramentas recomendadas
-- Planner
-- Planilha
-- App de metas
+- CRM
+- Automação
+- Chatbot
 
 ## Prompt de IA
-"Atue como estrategista. Monte um plano prático para este objetivo: [dados]."
+"Atue como especialista em IA para imobiliárias. Monte um follow-up para este cenário: [dados]."

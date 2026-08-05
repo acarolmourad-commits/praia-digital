@@ -1,159 +1,158 @@
 # Curso: IA para Imobiliárias
 ## Nome Comercial
-**IA para Imobiliárias: Método Prático para Ia para imobiliárias, automação, marketing e gestão**
+**IA para Imobiliárias: Método Prático para Automatizar Operações, Gerar Leads e Escalar Vendas no Litoral**
 
 ## Subtítulo
-Do diagnóstico ao resultado: aprenda a aplicar método, evitar erros e crescer no mercado imobiliário do litoral.
+Do processo ao crescimento: aprenda a aplicar IA na operação imobiliária do litoral com método.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de aplicar um método prático para IA para imobiliárias, automação, marketing e gestão.
+Em até 20 dias, você será capaz de automatizar processos, gerar leads qualificados e escalar vendas na sua imobiliária no litoral.
 
 ## Público-alvo
-- Proprietários de imóveis no litoral
-- Investidores que querem aumentar retorno
-- Corretores que querem se especializar
-- Interesse: imóveis, litoral, investimento, temporada, rentabilidade
+- Donos de imobiliárias iniciantes e intermediárias
+- Gestores imobiliários
+- Corretores que querem abrir imobiliária
+- Interesse: IA, imobiliária, litoral, automação, crescimento
 
 ## Pré-requisitos
-Nenhum. Curso completo do zero ao resultado.
+Nenhum. Curso completo do zero à operação inteligente.
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
-7 horas de aulas
-Total: 7 horas
+4 horas de aulas (20 aulas de 10 a 16 min)
+Total: 4 horas
 
 ## Valor Sugerido
-Curso completo: R$ 347
-À vista: R$ 347
-Parcelado: 12x de R$ 28,92
+Curso completo: R$ 197
+À vista: R$ 167
+Parcelado: 12x de R$ 13,92
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist do curso
-- Planilha de acompanhamento
-- Modelos prontos
+- Checklist de IA para imobiliárias
+- Planilha de automação
+- Modelos de operação
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Implemente IA na imobiliária para automatizar operações, marketing e atendimento"**
+**"Automatize sua imobiliária no litoral e escale vendas com IA"**
 
 ## Big Idea
-Resultados no litoral dependem de método, dados e execução consistente.
+IA aplicada à imobiliária combina automação de processos, geração de leads e acompanhamento de vendas para reduzir custos e aumentar resultados.
 
 ## Oferta
-- **Curso completo:** R$ 347
+- **Curso completo:** R$ 197
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
 ## Avatar
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
-**Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** IA para imobiliárias, automação, marketing e gestão
-**Dificuldades:** falta de método, insegurança, resultado baixo
-**Desejos:** crescimento, tranquilidade, autoridade
+**Renda:** R$ 5k a R$ 25k/mês
+**Objetivo:** escalar imobiliária com IA
+**Dificuldades:** processos manuais, leads frios, equipe limitada
+**Desejos:** crescimento, eficiência, autoridade
 
 ## Dores
+- Processos manuais
+- Leads frios
+- Equipe limitada
+- Concorrência alta
 - Falta de método
-- Insegurança
-- Resultado baixo
-- Falta de clareza
-- Tempo limitado
 
 ## Desejos
 - Crescimento
-- Tranquilidade
+- Eficiência
 - Autoridade
 - Previsibilidade
-- Resultado
+- Escala
 
 ## Objeções
+- "IA é cara"
+- "Demora muito"
+- "Minha equipe não vai adotar"
 - "Não compensa"
-- "É complicado"
-- "Não tenho tempo"
 - "Vou errar"
-- "Não funciona"
 
 ## Transformação
-- Método aplicado
-- Resultado crescente
-- Decisão orientada por dados
-- Operação profissional
-- Tranquilidade
+- Operação automatizada
+- Leads qualificados
+- Vendas recorrentes
+- Crescimento previsível
+- Autoridade local
 
 ## Programa Completo
-### Módulo 1 — Fundamentos
-Aula 1.1 — Contexto e oportunidades
-Aula 1.2 — Perfil e objetivos
-Aula 1.3 — Métricas e metas
-Exercício: diagnóstico
+### Módulo 1 — Fundamentos de IA para Imobiliárias
+Aula 1.1 — O que é IA na imobiliária
+Aula 1.2 — Perfil do gestor
+Aula 1.3 — Método e metas
+Exercício: diagnóstico da imobiliária
 
-### Módulo 2 — Aplicação Prática
-Aula 2.1 — Passo a passo prático
-Aula 2.2 — Exemplos reais
-Aula 2.3 — Erros comuns
-Exercício: aplicação
+### Módulo 2 — Automação de Processos
+Aula 2.1 — Processos críticos
+Aula 2.2 — Ferramentas de automação
+Aula 2.3 — CRM e integração
+Exercício: automação aplicada
 
-### Módulo 3 — Estratégia
-Aula 3.1 — Planejamento
-Aula 3.2 — Decisão e priorização
-Aula 3.3 — Execução
-Exercício: plano
+### Módulo 3 — Geração de Leads e Atendimento
+Aula 3.1 — Fontes de leads
+Aula 3.2 — Follow-up automatizado
+Aula 3.3 — Atendimento 24h
+Exercício: plano de leads
 
-### Módulo 4 — Crescimento
-Aula 4.1 — Acompanhamento
-Aula 4.2 — Ajustes
-Aula 4.3 — Escala
-Exercício: escala
+### Módulo 4 — Gestão, Métricas e Crescimento
+Aula 4.1 — Métricas da imobiliária
+Aula 4.2 — Ajustes e melhorias
+Aula 4.3 — Escala sustentada
+Exercício: plano de crescimento
 
 ## Carga Horária
-7 horas
+4 horas
 
 ## Material Complementar
-- Checklist
-- Planilha
-- Modelos
+- Checklist de IA para imobiliárias
+- Planilha de automação
+- Modelos de operação
 - PDFs por módulo
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de diagnóstico
-- Checklist de aplicação
-- Checklist de estratégia
-- Checklist de escala
+- Checklist de operação
+- Checklist de automação
+- Checklist de crescimento
 
 ## Planilhas
-- Planilha de acompanhamento
+- Planilha de automação
+- Planilha de leads
 - Planilha de métricas
-- Planilha de ROI
 
 ## Modelos Prontos
+- Modelo de processo
+- Modelo de follow-up
 - Modelo de relatório
-- Modelo de proposta
-- Modelo de revisão
 
 ## Scripts
 - Script de atendimento
-- Script de negociação
+- Script de venda
 
 ## Prompt de IA
-Prompt para gerar análises e planos.
+Prompt para gerar automações e análises.
 
 ## Exercícios
-- Exercício 1: diagnóstico
-- Exercício 2: aplicação
-- Exercício 3: plano
-- Exercício 4: escala
+- Exercício 1: diagnóstico da imobiliária
+- Exercício 2: automação aplicada
+- Exercício 3: plano de leads
+- Exercício 4: plano de crescimento
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: aplicação do método
+Prova prática: operação aplicada
 
 ## FAQ
 1. Preciso de experiência? Não.
@@ -193,15 +192,17 @@ Prova prática: aplicação do método
 [marketing/google-ads.md]
 
 ## CTA
-"Aplique o método agora."
+"Automatize sua imobiliária no litoral agora."
 
 ## Upsell
-- Mentoria individual: R$ 1.500
-- Acompanhamento: R$ 2.800
+- Mentoria individual: R$ 2.500
+- Acompanhamento: R$ 4.500
 
 ## Downsell
 - Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Cursos complementares Praia Digital
+- Curso de Automação Comercial para Corretores
+- Curso de Marketing Imobiliário para Corretores
+- Curso de Funil de Vendas para Corretores
