@@ -51,14 +51,14 @@
 - Recuperação de Vendas para Corretores — PRONTO PARA VENDA
 - Gestão de Conflitos para Corretores — PRONTO PARA VENDA
 - Liderança para Corretores — PRONTO PARA VENDA
-- Inteligência Emocional para Corretores — PRONTO PARA VENDA
 - Negociação Avançada para Corretores — PRONTO PARA VENDA
+- Oratória para Corretores — PRONTO PARA VENDA
 
 ## Em Produção
 - Nenhum no momento
 
 ## Próximo Curso
-- Oratória para Corretores
+- Storytelling para Corretores
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.
