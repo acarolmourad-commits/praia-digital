@@ -1,49 +1,59 @@
-# Módulo 4 — Crescimento
+# Módulo 4 — Gestão e Crescimento
 
 ## Introdução
-Acompanhe resultados, ajuste estratégias e escale sem perder controle.
+Acompanhe métricas, ajuste processos e escale vendas com CRM no litoral.
 
-## Aula 4.1 — Acompanhamento
-- Métricas
-- Frequência
-- Formato
-- Aprendizado
+## Aula 4.1 — Métricas e ajustes
+**Métricas:**
+- Leads.
+- Visitas.
+- Vendas.
+- Conversão.
 
-**Exemplo real:** Acompanhamento semanal permitiu ajustes rápidos e crescimento contínuo.
+**Ajustes:**
+- Revise semanalmente.
+- Teste novas abordagens.
 
-## Aula 4.2 — Ajustes
-- Quando ajustar
-- Como ajustar
-- Validação
+**Exemplo real:**
+Corretor revisou métricas e aumentou conversão.
 
-**Estudo de caso:** Ajustes pontuais aumentaram resultado sem aumentar esforço.
+## Aula 4.2 — Relatórios
+**Relatórios:**
+- Funil.
+- Follow-up.
+- Vendas.
+
+**Dicas:**
+- Automatize relatórios.
+- Acompanhe semanalmente.
 
 ## Aula 4.3 — Escala
-- Processos
-- Fornecedores/parcerias
-- Crescimento gradual
+**Escala:**
+- Adicione leads gradualmente.
+- Mantenha qualidade.
+- Padronize processos.
 
-## Exercício
-Monte um plano de escala sustentada.
+**Exercício:**
+Monte um plano de crescimento para os próximos 90 dias.
 
 ## Resumo
-- Acompanhamento mantém direção
-- Ajustes preservam resultado
-- Escala depende de processo
+- Métricas orientam ajustes.
+- Relatórios acompanham resultados.
+- Escala depende de método.
 
 ## Checklist
 - [ ] Métricas revisadas
-- [ ] Ajustes aplicados
-- [ ] Escala planejada
+- [ ] Relatórios criados
+- [ ] Crescimento planejado
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de acompanhamento
+- Planilha de métricas
 
 ## Ferramentas recomendadas
-- Dashboard
+- CRM
 - Planilha
-- Sistema de gestão
+- Automação
 
 ## Prompt de IA
-"Atue como especialista em crescimento. Monte um plano de escala para este cenário: [dados]."
+"Atue como especialista em CRM para imobiliário. Monte um plano de crescimento para este cenário: [dados]."

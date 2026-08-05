@@ -1,52 +1,52 @@
 # Curso: CRM para Corretores
 ## Nome Comercial
-**CRM para Corretores: Método Prático para Crm, organização de leads, follow-up e conversão**
+**CRM para Corretores: Método Prático para Organizar Leads, Follow-up e Vendas no Mercado Imobiliário do Litoral**
 
 ## Subtítulo
-Do diagnóstico ao resultado: aprenda a aplicar método, evitar erros e crescer no mercado imobiliário do litoral.
+Do caos ao funil: aprenda a usar CRM no mercado imobiliário do litoral com método.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de aplicar um método prático para CRM, organização de leads, follow-up e conversão.
+Em até 15 dias, você será capaz de organizar leads, estruturar follow-up e aumentar vendas usando CRM no litoral.
 
 ## Público-alvo
-- Proprietários de imóveis no litoral
-- Investidores que querem aumentar retorno
-- Corretores que querem se especializar
-- Interesse: imóveis, litoral, investimento, temporada, rentabilidade
+- Corretores de imóveis iniciantes e intermediários
+- Donos de imobiliárias
+- Investidores que querem organizar vendas
+- Interesse: CRM, imóveis, litoral, vendas, organização
 
 ## Pré-requisitos
-Nenhum. Curso completo do zero ao resultado.
+Nenhum. Curso completo do zero à aplicação prática.
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
-5 horas de aulas
-Total: 5 horas
+4 horas de aulas (20 aulas de 10 a 16 min)
+Total: 4 horas
 
 ## Valor Sugerido
-Curso completo: R$ 247
-À vista: R$ 247
-Parcelado: 12x de R$ 20,58
+Curso completo: R$ 197
+À vista: R$ 167
+Parcelado: 12x de R$ 13,92
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist do curso
-- Planilha de acompanhamento
-- Modelos prontos
+- Checklist de CRM
+- Planilha de funil
+- Modelos de processo
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Use CRM para organizar leads, follow-up e vendas no mercado imobiliário"**
+**"Organize vendas no mercado imobiliário do litoral com CRM"**
 
 ## Big Idea
-Resultados no litoral dependem de método, dados e execução consistente.
+CRM aplicado ao mercado imobiliário combina organização de leads, follow-up estruturado e métricas para aumentar conversão.
 
 ## Oferta
-- **Curso completo:** R$ 247
+- **Curso completo:** R$ 197
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
@@ -54,106 +54,105 @@ Resultados no litoral dependem de método, dados e execução consistente.
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** CRM, organização de leads, follow-up e conversão
-**Dificuldades:** falta de método, insegurança, resultado baixo
-**Desejos:** crescimento, tranquilidade, autoridade
+**Objetivo:** organizar vendas com CRM
+**Dificuldades:** leads desorganizados, follow-up fraco, dados perdidos
+**Desejos:** crescimento, produtividade, previsibilidade
 
 ## Dores
+- Leads desorganizados
+- Follow-up fraco
+- Dados perdidos
+- Concorrência alta
 - Falta de método
-- Insegurança
-- Resultado baixo
-- Falta de clareza
-- Tempo limitado
 
 ## Desejos
 - Crescimento
-- Tranquilidade
-- Autoridade
+- Produtividade
 - Previsibilidade
-- Resultado
+- Escala
+- Autoridade
 
 ## Objeções
+- "CRM é complicado"
+- "Demora muito"
 - "Não compensa"
-- "É complicado"
-- "Não tenho tempo"
 - "Vou errar"
-- "Não funciona"
+- "É caro"
 
 ## Transformação
-- Método aplicado
-- Resultado crescente
-- Decisão orientada por dados
-- Operação profissional
-- Tranquilidade
+- Leads organizados
+- Follow-up eficiente
+- Vendas recorrentes
+- Crescimento previsível
+- Autoridade local
 
 ## Programa Completo
-### Módulo 1 — Fundamentos
-Aula 1.1 — Contexto e oportunidades
-Aula 1.2 — Perfil e objetivos
-Aula 1.3 — Métricas e metas
-Exercício: diagnóstico
+### Módulo 1 — Fundamentos de CRM
+Aula 1.1 — O que é CRM no imobiliário
+Aula 1.2 — Perfil do corretor
+Aula 1.3 — Método e metas
+Exercício: diagnóstico de CRM
 
-### Módulo 2 — Aplicação Prática
-Aula 2.1 — Passo a passo prático
-Aula 2.2 — Exemplos reais
-Aula 2.3 — Erros comuns
-Exercício: aplicação
+### Módulo 2 — Funil e Follow-up
+Aula 2.1 — Funil de vendas
+Aula 2.2 — Follow-up estruturado
+Aula 2.3 — Métricas básicas
+Exercício: funil aplicado
 
-### Módulo 3 — Estratégia
-Aula 3.1 — Planejamento
-Aula 3.2 — Decisão e priorização
-Aula 3.3 — Execução
-Exercício: plano
+### Módulo 3 — Automação e Templates
+Aula 3.1 — Automação básica
+Aula 3.2 — Templates de mensagem
+Aula 3.3 — Integrações
+Exercício: automação aplicada
 
-### Módulo 4 — Crescimento
-Aula 4.1 — Acompanhamento
-Aula 4.2 — Ajustes
+### Módulo 4 — Gestão e Crescimento
+Aula 4.1 — Métricas e ajustes
+Aula 4.2 — Relatórios
 Aula 4.3 — Escala
-Exercício: escala
+Exercício: plano de crescimento
 
 ## Carga Horária
-5 horas
+4 horas
 
 ## Material Complementar
-- Checklist
-- Planilha
-- Modelos
+- Checklist de CRM
+- Planilha de funil
+- Modelos de processo
 - PDFs por módulo
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de diagnóstico
-- Checklist de aplicação
-- Checklist de estratégia
-- Checklist de escala
+- Checklist de CRM
+- Checklist de funil
+- Checklist de follow-up
 
 ## Planilhas
-- Planilha de acompanhamento
+- Planilha de funil
 - Planilha de métricas
-- Planilha de ROI
+- Planilha de leads
 
 ## Modelos Prontos
+- Modelo de processo
+- Modelo de follow-up
 - Modelo de relatório
-- Modelo de proposta
-- Modelo de revisão
 
 ## Scripts
 - Script de atendimento
-- Script de negociação
+- Script de venda
 
 ## Prompt de IA
-Prompt para gerar análises e planos.
+Prompt para gerar processos e análises.
 
 ## Exercícios
-- Exercício 1: diagnóstico
-- Exercício 2: aplicação
-- Exercício 3: plano
-- Exercício 4: escala
+- Exercício 1: diagnóstico de CRM
+- Exercício 2: funil aplicado
+- Exercício 3: automação aplicada
+- Exercício 4: plano de crescimento
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: aplicação do método
+Prova prática: CRM aplicado
 
 ## FAQ
 1. Preciso de experiência? Não.
@@ -193,7 +192,7 @@ Prova prática: aplicação do método
 [marketing/google-ads.md]
 
 ## CTA
-"Aplique o método agora."
+"Organize vendas com CRM no litoral agora."
 
 ## Upsell
 - Mentoria individual: R$ 1.500
@@ -204,4 +203,6 @@ Prova prática: aplicação do método
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Cursos complementares Praia Digital
+- Curso de Funil de Vendas para Corretores
+- Curso de Automação Comercial para Corretores
+- Curso de Marketing Imobiliário para Corretores

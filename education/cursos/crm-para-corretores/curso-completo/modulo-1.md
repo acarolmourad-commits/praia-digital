@@ -1,47 +1,64 @@
-# Módulo 1 — Fundamentos
+# Módulo 1 — Fundamentos de CRM
 
 ## Introdução
-Entenda o contexto, o seu perfil e as métricas essenciais para CRM, organização de leads, follow-up e conversão.
+Entenda o que é CRM no mercado imobiliário, o método e o perfil do corretor no litoral.
 
-## Aula 1.1 — Contexto e oportunidades
-- Mercado atual
-- Oportunidades no litoral
-- Particularidades regionais
+## Aula 1.1 — O que é CRM no imobiliário
+CRM no imobiliário significa organizar leads, follow-up e vendas em um sistema para aumentar conversão.
 
-**Exemplo real:** Profissional identificou oportunidade em região em crescimento e aumentou resultado em 25%.
+**Características:**
+- Leads organizados.
+- Follow-up estruturado.
+- Dados centralizados.
 
-## Aula 1.2 — Perfil e objetivos
-- Perfil do aluno
-- Objetivos claros
-- Metas realistas
+**Exemplo real:**
+Corretor organizou leads e dobrou vendas.
 
-## Aula 1.3 — Métricas e metas
-- Métricas essenciais
-- Metas de curto, médio e longo prazo
-- Revisão
+## Aula 1.2 — Perfil do corretor
+**Iniciante:**
+- Foco: leads, follow-up básico.
+- Erro comum: planilha sem método.
 
-## Exercício
-Faça o diagnóstico do seu cenário atual.
+**Intermediário:**
+- Foco: funil, métricas.
+- Erro comum: automação sem personalização.
+
+**Avançado:**
+- Foco: escala, relatórios.
+- Erro comum: volume sem qualidade.
+
+**Exercício:**
+Faça o diagnóstico do seu funil.
+
+## Aula 1.3 — Método e metas
+**Método:**
+- Leads organizados.
+- Follow-up constante.
+- Métricas claras.
+
+**Metas:**
+- Leads por semana.
+- Visitas por semana.
+- Vendas por mês.
 
 ## Resumo
-- Contexto orienta decisão
-- Perfil evita erros
-- Métricas medem resultado
+- CRM organiza vendas.
+- Perfil claro orienta ação.
+- Método gera resultado.
 
 ## Checklist
-- [ ] Cenário mapeado
-- [ ] Objetivos definidos
-- [ ] Métricas escolhidas
+- [ ] Diagnóstico feito
 - [ ] Metas traçadas
+- [ ] Método escolhido
 
 ## Materiais para download
 - PDF do módulo
 - Planilha de diagnóstico
 
 ## Ferramentas recomendadas
+- CRM
 - Planilha
-- Indicadores
-- Consultas locais
+- Automação
 
 ## Prompt de IA
-"Atue como especialista em CRM, organização de leads, follow-up e conversão. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
+"Atue como especialista em CRM para imobiliário. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
