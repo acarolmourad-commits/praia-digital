@@ -3,7 +3,6 @@ setlocal
 set "REPO=https://github.com/acarolmourad-commits/praia-digital.git"
 set "BRANCH=main"
 set "VALIDATE_URL=https://academy.praia.digital"
-
 echo ============================================
 echo   Praia Digital Academy - Deploy no Render
 echo ============================================
@@ -15,7 +14,6 @@ echo PASSO 2: Crie um Web Service
 echo   - Repositorio: acarolmourad-commits/praia-digital
 echo   - Branch: main
 echo   - Regiao: Virginia (EUA) ou SP (Brasil)
-echo   - Runtime: Docker ou Python
 echo.
 echo PASSO 3: Configure variaveis de ambiente
 echo   - DATABASE_URL: postgresql://academy:senha@host:5432/academy
