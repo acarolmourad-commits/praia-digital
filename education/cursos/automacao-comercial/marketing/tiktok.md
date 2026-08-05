@@ -1,6 +1,6 @@
 # TikTok — Automação Comercial para Corretores
-1. Roteiro: dica rápida
-2. Roteiro: 1 método, 2 resultados
-3. Roteiro: como aplicar
-4. Roteiro: resultado rápido
-5. Roteiro: case prático
+1. Roteiro: automação sem erro
+2. Roteiro: 1 fluxo, 2 resultados
+3. Roteiro: como automatizar
+4. Roteiro: CRM simples
+5. Roteiro: case de venda

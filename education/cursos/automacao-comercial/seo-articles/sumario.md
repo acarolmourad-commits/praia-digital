@@ -1,11 +1,11 @@
 # Artigos SEO — Automação Comercial para Corretores
-1. Automação Comercial para Corretores em 2026: guia completo
-2. Como aplicar Automação Comercial para Corretores no litoral
-3. Guia prático para iniciantes
-4. Erros comuns e como evitar
-5. Métricas essenciais
-6. Resultados reais e casos
-7. Ferramentas úteis
-8. Checklist essencial
-9. Perguntas frequentes
-10. Próximos passos
+1. Automação comercial para corretores no litoral em 2026
+2. CRM para corretores no litoral
+3. Follow-up automatizado para corretores no litoral
+4. Como automatizar vendas no litoral
+5. WhatsApp para corretores no litoral
+6. ROI de automação para corretores no litoral
+7. Fluxo de vendas para corretores no litoral
+8. Erros comuns em automação imobiliária no litoral
+9. Ferramentas para corretores no litoral
+10. Escala de vendas no litoral

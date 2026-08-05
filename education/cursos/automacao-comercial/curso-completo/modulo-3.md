@@ -1,49 +1,69 @@
-# Módulo 3 — Estratégia
+# Módulo 3 — Conteúdo e Nutrição
 
 ## Introdução
-Planeje, decida e priorize ações para crescer com consistência.
+Automatize conteúdo, nutrição de leads e remarketing para manter relacionamento e aumentar vendas.
 
-## Aula 3.1 — Planejamento
-- Objetivos
-- Ações
-- Prazos
-- Recursos
+## Aula 3.1 — Conteúdo automatizado
+**Conteúdo automatizado:**
+- Posts de Instagram.
+- E-mails de nutrição.
+- Sequências de WhatsApp.
 
-**Exemplo real:** Planejamento simples permitiu crescer sem surpresas.
+**Frequência:**
+- 3 a 5 posts por semana.
+- 1 e-mail por semana.
+- 1 mensagem de WhatsApp por semana.
 
-## Aula 3.2 — Decisão e priorização
-- Critérios de decisão
-- Priorização
-- Risco
+**Exemplo real:**
+Corretor automatizou conteúdo no Instagram e aumentou engajamento em 45%.
 
-**Estudo de caso:** Decisão baseada em dados evitou prejuízo e aumentou retorno.
+## Aula 3.2 — E-mail e WhatsApp
+**E-mail:**
+- Sequência de boas-vindas.
+- Conteúdo educativo.
+- Ofertas personalizadas.
 
-## Aula 3.3 — Execução
-- Rotina
-- Acompanhamento
-- Ajuste rápido
+**WhatsApp:**
+- Resposta automática.
+- Follow-up.
+- Confirmação de visita.
 
-## Exercício
-Monte um plano estratégico para os próximos 30 dias.
+**Estudo de caso:**
+Corretora usou automação de WhatsApp e reduziu tempo de resposta de 8h para 30min.
+
+## Aula 3.3 — Remarketing
+**Remarketing:**
+- Leads frios.
+- Visitantes do site.
+- Interessados em imóveis.
+
+**Canais:**
+- Meta Ads.
+- Google Ads.
+- E-mail.
+
+**Exercício:**
+Monte uma sequência de nutrição para 30 dias.
 
 ## Resumo
-- Planejamento evita desperdício
-- Decisão orientada reduz risco
-- Execução gera resultado
+- Conteúdo automatizado reduz trabalho.
+- Nutrição aumenta conversão.
+- Remarketing recupera leads.
 
 ## Checklist
-- [ ] Plano definido
-- [ ] Ações listadas
-- [ ] Prazo estabelecido
+- [ ] Conteúdo planejado
+- [ ] Sequência criada
+- [ ] Remarketing ativo
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de plano
+- Modelo de sequência
+- Checklist de conteúdo
 
 ## Ferramentas recomendadas
-- Planner
-- Planilha
-- App de metas
+- Automação
+- CRM
+- Meta Ads
 
 ## Prompt de IA
-"Atue como estrategista. Monte um plano prático para este objetivo: [dados]."
+"Atue como especialista em automação comercial. Monte uma sequência de nutrição para este cenário: [dados]."
