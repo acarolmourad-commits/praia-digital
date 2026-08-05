@@ -27,6 +27,7 @@ Use este checklist após criar o Web Service no Render.
 - `POST /leads`
 - `POST /leads/{lead_id}/events`
 - `POST /automation/email-confirmation/{enrollment_id}`
+- `POST /automation/email-lead-magnet/{lead_id}`
 
 ## 4. Validação final
 - `python scripts/check_academy_deploy.py --url https://academy.praia.digital --wait 30`
