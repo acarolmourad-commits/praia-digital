@@ -1,52 +1,52 @@
 # Curso: Instagram para Corretores
 ## Nome Comercial
-**Instagram para Corretores: Método Prático para Instagram, conteúdo, leads e autoridade para corretores**
+**Instagram para Corretores: Método Prático para Usar Instagram no Mercado Imobiliário do Litoral e Gerar Leads e Vendas**
 
 ## Subtítulo
-Do diagnóstico ao resultado: aprenda a aplicar método, evitar erros e crescer no mercado imobiliário do litoral.
+Do perfil ao fechamento: aprenda a usar Instagram no mercado imobiliário do litoral com método.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de aplicar um método prático para Instagram, conteúdo, leads e autoridade para corretores.
+Em até 15 dias, você será capaz de usar Instagram para gerar leads, fazer follow-up e fechar mais vendas no litoral.
 
 ## Público-alvo
-- Proprietários de imóveis no litoral
-- Investidores que querem aumentar retorno
-- Corretores que querem se especializar
-- Interesse: imóveis, litoral, investimento, temporada, rentabilidade
+- Corretores de imóveis iniciantes e intermediários
+- Donos de imobiliárias
+- Investidores que querem vender mais
+- Interesse: Instagram, imóveis, litoral, vendas, redes sociais
 
 ## Pré-requisitos
-Nenhum. Curso completo do zero ao resultado.
+Nenhum. Curso completo do zero à aplicação prática.
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
-5 horas de aulas
-Total: 5 horas
+4 horas de aulas (20 aulas de 10 a 16 min)
+Total: 4 horas
 
 ## Valor Sugerido
-Curso completo: R$ 247
-À vista: R$ 247
-Parcelado: 12x de R$ 20,58
+Curso completo: R$ 197
+À vista: R$ 167
+Parcelado: 12x de R$ 13,92
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist do curso
-- Planilha de acompanhamento
-- Modelos prontos
+- Checklist de Instagram
+- Planilha de conteúdo
+- Modelos de post
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Use Instagram para captar leads, construir autoridade e vender mais imóveis"**
+**"Use Instagram no mercado imobiliário do litoral e venda mais"**
 
 ## Big Idea
-Resultados no litoral dependem de método, dados e execução consistente.
+Instagram aplicado ao mercado imobiliário combina conteúdo local, relacionamento direto e conversão para aumentar vendas no litoral.
 
 ## Oferta
-- **Curso completo:** R$ 247
+- **Curso completo:** R$ 197
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
@@ -54,106 +54,105 @@ Resultados no litoral dependem de método, dados e execução consistente.
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** Instagram, conteúdo, leads e autoridade para corretores
-**Dificuldades:** falta de método, insegurança, resultado baixo
-**Desejos:** crescimento, tranquilidade, autoridade
+**Objetivo:** vender mais com Instagram
+**Dificuldades:** conteúdo fraco, poucos leads, concorrência alta
+**Desejos:** crescimento, produtividade, autoridade
 
 ## Dores
+- Conteúdo fraco
+- Poucos leads
+- Concorrência alta
 - Falta de método
-- Insegurança
-- Resultado baixo
-- Falta de clareza
-- Tempo limitado
+- Sem tempo
 
 ## Desejos
 - Crescimento
-- Tranquilidade
+- Produtividade
 - Autoridade
 - Previsibilidade
-- Resultado
+- Escala
 
 ## Objeções
+- "Instagram é só foto"
+- "Demora muito"
 - "Não compensa"
-- "É complicado"
-- "Não tenho tempo"
 - "Vou errar"
-- "Não funciona"
+- "É complicado"
 
 ## Transformação
-- Método aplicado
-- Resultado crescente
-- Decisão orientada por dados
-- Operação profissional
-- Tranquilidade
+- Conteúdo profissional
+- Leads qualificados
+- Vendas recorrentes
+- Crescimento previsível
+- Autoridade local
 
 ## Programa Completo
-### Módulo 1 — Fundamentos
-Aula 1.1 — Contexto e oportunidades
-Aula 1.2 — Perfil e objetivos
-Aula 1.3 — Métricas e metas
-Exercício: diagnóstico
+### Módulo 1 — Fundamentos do Instagram no Imobiliário
+Aula 1.1 — O que é Instagram no imobiliário
+Aula 1.2 — Perfil do corretor
+Aula 1.3 — Método e metas
+Exercício: diagnóstico de Instagram
 
-### Módulo 2 — Aplicação Prática
-Aula 2.1 — Passo a passo prático
-Aula 2.2 — Exemplos reais
-Aula 2.3 — Erros comuns
-Exercício: aplicação
+### Módulo 2 — Conteúdo e Perfil
+Aula 2.1 — Perfil profissional
+Aula 2.2 — Conteúdo local
+Aula 2.3 — Stories e Reels
+Exercício: plano de conteúdo
 
-### Módulo 3 — Estratégia
-Aula 3.1 — Planejamento
-Aula 3.2 — Decisão e priorização
-Aula 3.3 — Execução
-Exercício: plano
+### Módulo 3 — Geração de Leads
+Aula 3.1 — Leads no Instagram
+Aula 3.2 — Follow-up
+Aula 3.3 — Conversão
+Exercício: funil de Instagram
 
-### Módulo 4 — Crescimento
-Aula 4.1 — Acompanhamento
-Aula 4.2 — Ajustes
+### Módulo 4 — Crescimento e Métricas
+Aula 4.1 — Métricas
+Aula 4.2 — Anúncios
 Aula 4.3 — Escala
-Exercício: escala
+Exercício: plano de crescimento
 
 ## Carga Horária
-5 horas
+4 horas
 
 ## Material Complementar
-- Checklist
-- Planilha
-- Modelos
+- Checklist de Instagram
+- Planilha de conteúdo
+- Modelos de post
 - PDFs por módulo
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de diagnóstico
-- Checklist de aplicação
-- Checklist de estratégia
-- Checklist de escala
+- Checklist de Instagram
+- Checklist de conteúdo
+- Checklist de leads
 
 ## Planilhas
-- Planilha de acompanhamento
+- Planilha de conteúdo
 - Planilha de métricas
-- Planilha de ROI
+- Planilha de leads
 
 ## Modelos Prontos
-- Modelo de relatório
-- Modelo de proposta
-- Modelo de revisão
+- Modelo de post
+- Modelo de story
+- Modelo de Reels
 
 ## Scripts
 - Script de atendimento
-- Script de negociação
+- Script de venda
 
 ## Prompt de IA
-Prompt para gerar análises e planos.
+Prompt para gerar conteúdo e análises.
 
 ## Exercícios
-- Exercício 1: diagnóstico
-- Exercício 2: aplicação
-- Exercício 3: plano
-- Exercício 4: escala
+- Exercício 1: diagnóstico de Instagram
+- Exercício 2: plano de conteúdo
+- Exercício 3: funil de Instagram
+- Exercício 4: plano de crescimento
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: aplicação do método
+Prova prática: conteúdo aplicado
 
 ## FAQ
 1. Preciso de experiência? Não.
@@ -193,7 +192,7 @@ Prova prática: aplicação do método
 [marketing/google-ads.md]
 
 ## CTA
-"Aplique o método agora."
+"Use Instagram para vender mais no litoral agora."
 
 ## Upsell
 - Mentoria individual: R$ 1.500
@@ -204,4 +203,6 @@ Prova prática: aplicação do método
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Cursos complementares Praia Digital
+- Curso de WhatsApp que Vende
+- Curso de Marketing Imobiliário para Corretores
+- Curso de Funil de Vendas para Corretores

@@ -27,12 +27,13 @@
 - WhatsApp que Vende — PRONTO PARA VENDA
 - CRM para Corretores — PRONTO PARA VENDA
 - Comprar Imóvel na Praia sem Golpes — PRONTO PARA VENDA
+- Imóveis para Airbnb — PRONTO PARA VENDA
 
 ## Em Produção
 - Nenhum no momento
 
 ## Próximo Curso
-- Imóveis para Airbnb
+- Instagram para Corretores
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.

@@ -1,6 +1,9 @@
 # Planilha — Instagram para Corretores
 - [ ] Data
-- [ ] Ação
-- [ ] Resultado
-- [ ] Ajuste
-- [ ] Status
+- [ ] Conteúdo
+- [ ] Canal
+- [ ] Leads
+- [ ] Visitas
+- [ ] Vendas
+- [ ] ROI
+- [ ] Observação

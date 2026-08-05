@@ -1,49 +1,53 @@
-# Módulo 3 — Estratégia
+# Módulo 3 — Geração de Leads
 
 ## Introdução
-Planeje, decida e priorize ações para crescer com consistência.
+Aprenda a gerar leads qualificados, estruturar follow-up e converter no Instagram para corretores.
 
-## Aula 3.1 — Planejamento
-- Objetivos
-- Ações
-- Prazos
-- Recursos
+## Aula 3.1 — Leads no Instagram
+**Leads:**
+- Direto.
+- Stories.
+- Reels.
 
-**Exemplo real:** Planejamento simples permitiu crescer sem surpresas.
+**Exemplo real:**
+Corretor gerou leads qualificados com conteúdo.
 
-## Aula 3.2 — Decisão e priorização
-- Critérios de decisão
-- Priorização
-- Risco
+## Aula 3.2 — Follow-up
+**Follow-up:**
+- Direct.
+- WhatsApp.
+- E-mail.
 
-**Estudo de caso:** Decisão baseada em dados evitou prejuízo e aumentou retorno.
+**Exercício:**
+Monte um fluxo de follow-up.
 
-## Aula 3.3 — Execução
-- Rotina
-- Acompanhamento
-- Ajuste rápido
+## Aula 3.3 — Conversão
+**Conversão:**
+- Oferta.
+- Proposta.
+- Fechamento.
 
-## Exercício
-Monte um plano estratégico para os próximos 30 dias.
+**Estudo de caso:**
+Corretor fechou vendas com Instagram.
 
 ## Resumo
-- Planejamento evita desperdício
-- Decisão orientada reduz risco
-- Execução gera resultado
+- Instagram gera leads.
+- Follow-up fecha negócios.
+- Conversão depende de método.
 
 ## Checklist
-- [ ] Plano definido
-- [ ] Ações listadas
-- [ ] Prazo estabelecido
+- [ ] Leads captados
+- [ ] Follow-up criado
+- [ ] Conversão feita
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de plano
+- Planilha de leads
 
 ## Ferramentas recomendadas
-- Planner
-- Planilha
-- App de metas
+- Instagram
+- CRM
+- Automação
 
 ## Prompt de IA
-"Atue como estrategista. Monte um plano prático para este objetivo: [dados]."
+"Atue como especialista em Instagram para imobiliário. Monte um funil de leads para este cenário: [dados]."

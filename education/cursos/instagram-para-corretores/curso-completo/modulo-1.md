@@ -1,37 +1,54 @@
-# Módulo 1 — Fundamentos
+# Módulo 1 — Fundamentos do Instagram no Imobiliário
 
 ## Introdução
-Entenda o contexto, o seu perfil e as métricas essenciais para Instagram, conteúdo, leads e autoridade para corretores.
+Entenda o papel do Instagram no mercado imobiliário, o método e o perfil do corretor no litoral.
 
-## Aula 1.1 — Contexto e oportunidades
-- Mercado atual
-- Oportunidades no litoral
-- Particularidades regionais
+## Aula 1.1 — O que é Instagram no imobiliário
+Instagram no imobiliário significa usar a plataforma para gerar leads, construir autoridade e fechar vendas com conteúdo local.
 
-**Exemplo real:** Profissional identificou oportunidade em região em crescimento e aumentou resultado em 25%.
+**Características:**
+- Conteúdo visual.
+- Relacionamento direto.
+- Vendas por rede social.
 
-## Aula 1.2 — Perfil e objetivos
-- Perfil do aluno
-- Objetivos claros
-- Metas realistas
+**Exemplo real:**
+Corretor aumentou vendas em 40% com Instagram.
 
-## Aula 1.3 — Métricas e metas
-- Métricas essenciais
-- Metas de curto, médio e longo prazo
-- Revisão
+## Aula 1.2 — Perfil do corretor
+**Iniciante:**
+- Foco: perfil básico, conteúdo simples.
+- Erro comum: perfil incompleto.
 
-## Exercício
-Faça o diagnóstico do seu cenário atual.
+**Intermediário:**
+- Foco: conteúdo, leads.
+- Erro comum: conteúdo genérico.
+
+**Avançado:**
+- Foco: escala, anúncios.
+- Erro comum: volume sem qualidade.
+
+**Exercício:**
+Faça o diagnóstico do seu Instagram.
+
+## Aula 1.3 — Método e metas
+**Método:**
+- Perfil profissional.
+- Conteúdo local.
+- Leads qualificados.
+
+**Metas:**
+- Seguidores qualificados.
+- Leads por semana.
+- Vendas por mês.
 
 ## Resumo
-- Contexto orienta decisão
-- Perfil evita erros
-- Métricas medem resultado
+- Instagram reduz distância.
+- Perfil claro orienta ação.
+- Método gera resultado.
 
 ## Checklist
-- [ ] Cenário mapeado
-- [ ] Objetivos definidos
-- [ ] Métricas escolhidas
+- [ ] Diagnóstico feito
+- [ ] Perfil montado
 - [ ] Metas traçadas
 
 ## Materiais para download
@@ -39,9 +56,9 @@ Faça o diagnóstico do seu cenário atual.
 - Planilha de diagnóstico
 
 ## Ferramentas recomendadas
-- Planilha
-- Indicadores
-- Consultas locais
+- Instagram
+- Canva
+- Automação
 
 ## Prompt de IA
-"Atue como especialista em Instagram, conteúdo, leads e autoridade para corretores. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
+"Atue como especialista em Instagram para imobiliário. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
