@@ -1,49 +1,57 @@
-# Módulo 4 — Crescimento
+# Módulo 4 — Decisão e Crescimento
 
 ## Introdução
-Acompanhe resultados, ajuste estratégias e escale sem perder controle.
+Decida entre casa e apartamento, negocie e planeje crescimento no litoral.
 
-## Aula 4.1 — Acompanhamento
-- Métricas
-- Frequência
-- Formato
-- Aprendizado
+## Aula 4.1 — Análise comparativa
+**Critérios:**
+- Custo.
+- Manutenção.
+- Localização.
+- Valorização.
 
-**Exemplo real:** Acompanhamento semanal permitiu ajustes rápidos e crescimento contínuo.
+**Exemplo real:**
+Comprador comparou e escolheu apartamento.
 
-## Aula 4.2 — Ajustes
-- Quando ajustar
-- Como ajustar
-- Validação
+## Aula 4.2 — Decisão e negociação
+**Decisão:**
+- Baseada em dados.
+- Alinhada com objetivos.
 
-**Estudo de caso:** Ajustes pontuais aumentaram resultado sem aumentar esforço.
+**Negociação:**
+- Valor justo.
+- Condições claras.
 
-## Aula 4.3 — Escala
-- Processos
-- Fornecedores/parcerias
-- Crescimento gradual
+**Exercício:**
+Monte uma análise comparativa.
 
-## Exercício
-Monte um plano de escala sustentada.
+## Aula 4.3 — Crescimento e troca
+**Crescimento:**
+- Acompanhe mercado.
+- Avalie troca futura.
+
+**Troca:**
+- Planeje com antecedência.
+- Use valorização.
 
 ## Resumo
-- Acompanhamento mantém direção
-- Ajustes preservam resultado
-- Escala depende de processo
+- Análise comparativa decide.
+- Negociação reduz custos.
+- Crescimento depende de método.
 
 ## Checklist
-- [ ] Métricas revisadas
-- [ ] Ajustes aplicados
-- [ ] Escala planejada
+- [ ] Análise comparativa feita
+- [ ] Decisão tomada
+- [ ] Crescimento planejado
 
 ## Materiais para download
 - PDF do módulo
 - Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Dashboard
 - Planilha
-- Sistema de gestão
+- CRM
+- Consultorias
 
 ## Prompt de IA
-"Atue como especialista em crescimento. Monte um plano de escala para este cenário: [dados]."
+"Atue como especialista em imóveis no litoral. Monte um plano de crescimento para este cenário: [dados]."

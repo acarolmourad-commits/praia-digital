@@ -1,6 +1,6 @@
-# TikTok — Casa ou Apartamento no Litoral
-1. Roteiro: dica rápida
-2. Roteiro: 1 método, 2 resultados
-3. Roteiro: como aplicar
-4. Roteiro: resultado rápido
-5. Roteiro: case prático
+# TikTok — Casa ou Apartamento
+1. Roteiro: escolha sem erro
+2. Roteiro: 1 imóvel, 2 tipos
+3. Roteiro: como decidir
+4. Roteiro: custo rentável
+5. Roteiro: case de escolha

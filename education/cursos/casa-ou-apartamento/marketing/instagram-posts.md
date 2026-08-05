@@ -1,11 +1,11 @@
-# Posts Instagram — Casa ou Apartamento no Litoral
-1. Post: dica prática
-2. Reels: passo a passo
-3. Carrossel: checklist
-4. Post: erro comum
-5. Reels: case rápido
-6. Carrossel: ferramenta
-7. Post: resultado
-8. Reels: ajuste simples
-9. Carrossel: métrica
+# Posts Instagram — Casa ou Apartamento
+1. Post: dica de escolha
+2. Reels: casa ou apartamento em 30s
+3. Carrossel: checklist comparativo
+4. Post: custos que importam
+5. Reels: case de decisão
+6. Carrossel: método simples
+7. Post: localização segura
+8. Reels: erro comum
+9. Carrossel: métricas básicas
 10. Post: comece hoje

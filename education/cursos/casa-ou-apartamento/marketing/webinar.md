@@ -1,6 +1,6 @@
-# Roteiro de Webinar — Casa ou Apartamento no Litoral
+# Roteiro de Webinar — Casa ou Apartamento
 1. Abertura: dor do público
-2. Case: resultado prático
+2. Case: escolha que evitou dor
 3. Método: 4 passos
 4. Prova social
 5. Oferta e bônus

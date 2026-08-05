@@ -1,6 +1,6 @@
-# Certificado — Casa ou Apartamento no Litoral
+# Certificado — Casa ou Apartamento
 Modelo: Praia Digital Academy
-Curso: Casa ou Apartamento no Litoral
+Curso: Casa ou Apartamento
 Carga horária: 4 horas
 Aprovado: [nome]
 Data: [data]

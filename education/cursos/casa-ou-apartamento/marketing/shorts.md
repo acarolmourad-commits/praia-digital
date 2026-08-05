@@ -1,6 +1,6 @@
-# Shorts — Casa ou Apartamento no Litoral
-1. Roteiro: dica rápida
-2. Roteiro: regra simples
-3. Roteiro: resultado em 1 minuto
-4. Roteiro: ajuste simples
-5. Roteiro: case curto
+# Shorts — Casa ou Apartamento
+1. Roteiro: dica de escolha
+2. Roteiro: regra rápida
+3. Roteiro: decisão em 1 minuto
+4. Roteiro: custo simples
+5. Roteiro: case rápido

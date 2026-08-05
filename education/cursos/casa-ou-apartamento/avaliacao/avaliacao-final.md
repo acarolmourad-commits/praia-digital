@@ -1,9 +1,9 @@
-# Avaliação Final — Casa ou Apartamento no Litoral
+# Avaliação Final — Casa ou Apartamento
 ## Quiz
-- 20 perguntas sobre fundamentos, aplicação, estratégia e crescimento.
+- 20 perguntas sobre casa, apartamento, custos, localização e valorização.
 
 ## Prova Prática
-- Aplicação do método em cenário real.
+- Análise comparativa aplicada a um cenário real.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.
