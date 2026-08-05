@@ -1,0 +1,11 @@
+# Checklist de Avaliação de Imóveis no Litoral
+- [ ] Matrícula atualizada
+- [ ] IPTU em dia
+- [ ] Certidões negativas
+- [ ] Dívidas condominiais
+- [ ] Vistoria presencial
+- [ ] Relatório de engenheiro
+- [ ] Análise de comparáveis
+- [ ] Cálculo de rentabilidade
+- [ ] Simulação de financiamento
+- [ ] Revisão contratual
