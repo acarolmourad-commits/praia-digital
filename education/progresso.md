@@ -60,12 +60,13 @@
 - Produtividade para Corretores — PRONTO PARA VENDA
 - Networking para Corretores — PRONTO PARA VENDA
 - Planejamento Estratégico para Corretores — PRONTO PARA VENDA
+- Gestão do Tempo para Corretores — PRONTO PARA VENDA
 
 ## Em Produção
 - Nenhum no momento
 
 ## Próximo Curso
-- Gestão do Tempo para Corretores
+- Treinamento em Tecnologia para Corretores
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.
