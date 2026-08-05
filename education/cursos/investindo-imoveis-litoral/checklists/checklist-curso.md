@@ -1,7 +1,12 @@
-# Checklist — Investindo Imoveis Litoral
-- [ ] Objetivos definidos
-- [ ] Método aplicado
-- [ ] Ferramentas configuradas
-- [ ] Exercícios realizados
-- [ ] Revisão feita
-- [ ] Próximo passo definido
+# Checklist — Investindo em Imóveis no Litoral
+- [ ] Perfil definido
+- [ ] Região escolhida
+- [ ] Imóvel selecionado
+- [ ] Comparáveis analisados
+- [ ] Documentação verificada
+- [ ] Financiamento aprovado
+- [ ] Proposta elaborada
+- [ ] Negociação fechada
+- [ ] Reforma planejada
+- [ ] Temporada cadastrada
+- [ ] Rentabilidade calculada

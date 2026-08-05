@@ -1,21 +1,21 @@
-# Sequência de E-mails — Investindo Imoveis Litoral
+# Sequência de E-mails — Investindo em Imóveis no Litoral
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido sobre Investindo Imoveis Litoral (PDF)
+Assunto: Guia Rápido para Comprar no Litoral (PDF + planilha)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case prático de Investindo Imoveis Litoral
+Assunto: Case: compra segura no litoral
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Investindo Imoveis Litoral é para mim?"
+Assunto: "Mercado do litoral é perigoso?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno obteve resultado com Investindo Imoveis Litoral
+Assunto: Aluno comprou o primeiro imóvel em 30 dias
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 
