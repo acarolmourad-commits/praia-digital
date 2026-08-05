@@ -1,0 +1,11 @@
+# Planilha — Oratória para Corretores
+- [ ] Data
+- [ ] Cliente
+- [ ] Imóvel
+- [ ] Cidade
+- [ ] Apresentação
+- [ ] Ação
+- [ ] Follow-up
+- [ ] Venda
+- [ ] Receita
+- [ ] Status
