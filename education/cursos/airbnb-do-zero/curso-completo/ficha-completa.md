@@ -1,4 +1,4 @@
-# Curso: Airbnb do Zero
+# Curso: Airbnb do Zero no Litoral
 ## Nome Comercial
 **Airbnb do Zero no Litoral: Como Transformar um Imóvel em uma Máquina de Reservas**
 
@@ -6,19 +6,19 @@
 Do primeiro anúncio à primeira reserva: montagem, regras, precificação e gestão profissional de temporada.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de cadastrar, estruturar e colocar um imóvel para alugar por temporada no Airbnb, com reservas recorrentes.
+Em até 30 dias, você será capaz de publicar, otimizar e gerir um imóvel no Airbnb no litoral, com reservas recorrentes e avaliação alta.
 
 ## Público-alvo
 - Proprietários e investidores de 25 a 55 anos
-- Renda R$ 5k a R$ 30k/mês
-- Interesse: renda extra, temporada, ocupação
+- Renda R$ 5k a R$ 25k/mês
+- Interesse: temporada, renda extra, ROI
 - Perfil: iniciante ou iniciante em plataformas
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
-8 horas de aulas (35 aulas de 10 a 20 min)
+8 horas de aulas (35 aulas de 10 a 18 min)
 Total: 8 horas
 
 ## Valor Sugerido
@@ -27,80 +27,78 @@ Curso completo: R$ 397
 Parcelado: 12x de R$ 27,25
 Mini curso: R$ 147
 E-book: R$ 19,90
-Mentoria em grupo: R$ 2.500
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
 - Checklist de cadastro
-- Planilhas de preço
+- Templates de anúncio
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Monte um Airbnb lucrativo no litoral mesmo que você nunca tenha alugado por temporada"**
+**"Monte seu Airbnb no litoral em até 30 dias, mesmo que você nunca tenha publicado um anúncio"**
 
 ## Big Idea
-Airbnb não é só publicar fotos: é método, regras, precificação e experiência do hóspede. Quem aprende o modelo certo aumenta ocupação e avaliação.
+Airbnb exige estrutura, regras, SEO local e atendimento consistentes. Quem aplica o método certo aumenta ocupação e receita.
 
 ## Oferta
 - **Curso completo:** R$ 397
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
-- **Mentoria em grupo:** R$ 2.500
 
 ## Avatar
 **Nome:** Maria / João
-**Idade:** 28 a 50 anos
-**Renda:** R$ 6k a R$ 25k/mês
-**Objetivo:** alugar por temporada e aumentar renda
-**Dificuldades:** plataforma, regras, fotos, limpeza, avaliação
-**Desejos:** reservas constantes, renda extra, ocupação alta
+**Idade:** 25 a 50 anos
+**Renda:** R$ 5k a R$ 20k/mês
+**Objetivo:** aumentar ocupação e receita
+**Dificuldades:** cadastro, anúncio, precificação
+**Desejos:** reservas constantes, renda previsível, avaliação boa
 
 ## Dores
-- Não sabe começar no Airbnb
+- Cadastro sem conversão
 - Fotos ruins
-- Não entende precificação
+- Preço errado
 - Medo de avaliações ruins
 - Falta de tempo para gerir
 
 ## Desejos
+- Anúncio otimizado
 - Reservas recorrentes
 - Ocupação alta
-- Avaliação boa
 - Renda previsível
 - Processo simples
 
 ## Objeções
-- "Já tentei e não deu certo"
 - "É muito trabalhoso"
 - "Não sei tirar fotos"
 - "E se eu receber um hóspede ruim?"
 - "Não compensa"
+- "Já tentei e não deu certo"
 
 ## Transformação
 - Cadastro profissional
 - Anúncio otimizado
-- Precificação dinâmica
-- Check-in e check-out eficientes
+- Políticas claras
+- Atendimento eficiente
 - Renda extra previsível
 
 ## Programa Completo
 ### Módulo 1 — Fundamentos
-Aula 1.1 — Como funciona o modelo de temporada
-Aula 1.2 — Regras do Airbnb e prefeituras
-Aula 1.3 — Perfil do hóspede no litoral
+Aula 1.1 — Como funciona o Airbnb no litoral
+Aula 1.2 — Perfil do hóspede
+Aula 1.3 — O que o hóspede valoriza
 Exercício: defina objetivo de ocupação
 
 ### Módulo 2 — Preparação do Imóvel
-Aula 2.1 — O que o hóspede valoriza
-Aula 2.2 — Fotos e descrição
-Aula 2.3 — Check-in e regras da casa
+Aula 2.1 — Fotos e vídeos profissionais
+Aula 2.2 — Descrição e diferenciais
+Aula 2.3 — Regras da casa
 Exercício: roteiro de fotos
 
-### Módulo 3 — Cadastro e Otimização
+### Módulo 3 — Anúncio e Otimização
 Aula 3.1 — Criando o anúncio
-Aula 3.2 — Título, descrição e SEO local
-Aula 3.3 — Preço e disponibilidade
+Aula 3.2 — SEO local e visibilidade
+Aula 3.3 — Preço, disponibilidade e políticas
 Exercício: anúncio publicado
 
 ### Módulo 4 — Gestão e Crescimento
@@ -154,39 +152,39 @@ Prova prática: anúncio otimizado
 ## FAQ
 1. Preciso de alvará? Verifique a prefeitura.
 2. Como definir preço? Use sazonalidade e comparativos.
-3. E se eu receber uma avaliação ruim? Responda e ajuste.
+3. E se eu receber uma avaliação ruim? Responda rápido e ajuste.
 4. Vale a pena contratar limpeza? Sim.
 5. Airbnb ou Booking? Depende do público.
 
 ## Página de Vendas
-[Em construção no próximo passo]
+[vendas.html]
 
 ## Landing Page
-[Em construção no próximo passo]
+[index.html]
 
 ## Sequência de E-mails
-[Em construção no próximo passo]
+[email-sequence/sequencia.md]
 
 ## Posts Instagram
-[Em construção no próximo passo]
+[instagram/posts.md]
 
 ## Reels
-[Em construção no próximo passo]
+[marketing/reels.md]
 
 ## Carrosséis
-[Em construção no próximo passo]
+[marketing/carrosseis.md]
 
 ## Artigos SEO
-[Em construção no próximo passo]
+[seo-articles/sumario.md]
 
 ## Roteiros YouTube
-[Em construção no próximo passo]
+[marketing/youtube.md]
 
 ## Anúncios Meta
-[Em construção no próximo passo]
+[marketing/meta-ads.md]
 
 ## Anúncios Google
-[Em construção no próximo passo]
+[marketing/google-ads.md]
 
 ## CTA
 "Monte seu Airbnb no litoral em até 30 dias."
@@ -200,6 +198,6 @@ Prova prática: anúncio otimizado
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de PriceLabs Completo
 - Curso de Booking do Zero
+- Curso de PriceLabs Completo
 - Curso de Gestão Profissional da Locação
