@@ -5,9 +5,10 @@
 - Booking do Zero no Litoral
 - PriceLabs Completo para Temporada no Litoral
 - Gestão Profissional da Locação
+- Como Aumentar em 30% a Rentabilidade
 
 ## Próximo Curso
-- Como Aumentar em 30% a Rentabilidade
+- Especialista em Venda de Imóveis no Litoral
 
 ## Regra
 Um curso por vez, do maior potencial para o menor.
