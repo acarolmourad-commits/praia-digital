@@ -1,48 +1,58 @@
-# Módulo 2 — Aplicação Prática
+# Módulo 2 — Escolha e Verificação
 
 ## Introdução
-Aplique o método na prática com exemplos reais e evite erros comuns.
+Aprenda a escolher imóveis, verificar documentação e evitar golpes comuns na praia.
 
-## Aula 2.1 — Passo a passo prático
-- Etapas claras
-- Ação imediata
-- Verificação de resultado
+## Aula 2.1 — Como escolher imóvel
+**Critérios:**
+- Localização.
+- Documentação.
+- Orçamento.
 
-**Exemplo real:** Profissional aplicou o passo a passo e obteve ganhos rápidos em 15 dias.
+**Exemplo real:**
+Comprador escolheu imóvel e evitou golpe.
 
-## Aula 2.2 — Exemplos reais
-- Caso 1
-- Caso 2
-- Lições aplicáveis
+## Aula 2.2 — Verificação de documentação
+**Verificação:**
+- Cartório.
+- Registro.
+- Certidões.
 
-**Estudo de caso:** Aplicação prática gerou aumento mensurável em 30 dias.
+**Passos:**
+- Visita presencial.
+- Vistoria.
+- Documentação.
 
-## Aula 2.3 — Erros comuns
-- Erro 1
-- Erro 2
-- Erro 3
-- Como evitar
+**Exercício:**
+Monte uma lista de verificação.
 
-## Exercício
-Aplique o método em um cenário real.
+## Aula 2.3 — Golpes comuns na praia
+**Golpes:**
+- Documento falso.
+- Venda de imóvel alheio.
+- Ocultação de ônus.
+
+**Estudo de caso:**
+Comprador identificou golpe e evitou prejuízo.
 
 ## Resumo
-- Passo a passo reduz risco
-- Exemplos aceleram aprendizado
-- Erros evitados poupam tempo
+- Escolha exige dados.
+- Verificação evita golpes.
+- Documentação protege compra.
 
 ## Checklist
-- [ ] Passos executados
-- [ ] Resultados verificados
-- [ ] Ajustes aplicados
+- [ ] Imóvel escolhido
+- [ ] Documentos verificados
+- [ ] Golpes evitados
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de aplicação
+- Planilha de verificação
 
 ## Ferramentas recomendadas
-- Planilha de acompanhamento
-- App de gestão
+- Planilha
+- Portais de imóveis
+- Consultorias
 
 ## Prompt de IA
-"Atue como especialista prático. Monte um plano de aplicação para este cenário: [dados]."
+"Atue como especialista em compra de imóveis. Monte uma verificação para este cenário: [dados]."

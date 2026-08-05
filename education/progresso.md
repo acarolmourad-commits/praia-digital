@@ -25,12 +25,13 @@
 - Primeiro Imóvel no Litoral — PRONTO PARA VENDA
 - PTAM na Prática — PRONTO PARA VENDA
 - WhatsApp que Vende — PRONTO PARA VENDA
+- CRM para Corretores — PRONTO PARA VENDA
 
 ## Em Produção
 - Nenhum no momento
 
 ## Próximo Curso
-- CRM para Corretores
+- Comprar Imóvel na Praia sem Golpes
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.
