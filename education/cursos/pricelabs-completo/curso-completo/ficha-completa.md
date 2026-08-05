@@ -1,45 +1,49 @@
-# Curso: Pricelabs Completo
+# Curso: PriceLabs Completo para Temporada no Litoral
 ## Nome Comercial
-**Pricelabs Completo: Conteúdo completo aplicado ao mercado imobiliário do litoral**
+**PriceLabs Completo para Temporada no Litoral: Método Prático para Precificar, Automatizar e Aumentar Receita com Temporada**
 
 ## Subtítulo
-Conteúdo premium para proprietários, investidores e corretores do litoral.
+Do setup à otimização: aprenda a usar PriceLabs e estratégias de precificação para maximizar receita no litoral.
 
 ## Promessa Principal
-Aprenda na prática, com método e exemplos reais do litoral.
+Em até 20 dias, você será capaz de configurar PriceLabs, montar estratégias de preço e aumentar a receita de temporada com dados.
 
 ## Público-alvo
-Proprietários, investidores e corretores do litoral.
+- Proprietários de imóveis no litoral
+- Investidores que querem rentabilizar imóveis
+- Corretores que querem oferecer gestão de temporada
+- Interesse: temporada, PriceLabs, precificação, receita
 
 ## Pré-requisitos
-Nenhum.
+Nenhum. Curso completo do setup à otimização.
 
 ## Nível
-Intermediário
+Iniciante → Intermediário
 
 ## Tempo Estimado
-6 horas de aulas (30 aulas de 10 a 16 min)
-Total: 6 horas de aulas
-Total: 4 semanas
+6 horas de aulas (32 aulas de 10 a 16 min)
+Total: 6 horas
 
 ## Valor Sugerido
 Curso completo: R$ 297
-À vista: 267
-Parcelado: 12x de R$ 24.75
+À vista: R$ 247
+Parcelado: 12x de R$ 20,58
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Material complementar
+- Checklist de configuração
+- Planilha de preços
+- Modelos de regras
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Pricelabs Completo"**
+**"Aumente a receita da temporada com PriceLabs e precificação inteligente"**
 
 ## Big Idea
-Conteúdo premium aplicado ao mercado do litoral.
+Precificar temporada no litoral exige dados, regras claras e automação para capturar valor nos picos sem perder ocupação.
 
 ## Oferta
 - **Curso completo:** R$ 297
@@ -50,103 +54,113 @@ Conteúdo premium aplicado ao mercado do litoral.
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** aprender e aplicar no litoral
-**Dificuldades:** falta de método, conteúdo genérico
-**Desejos:** resultados rápidos, segurança, previsibilidade
+**Objetivo:** aumentar receita de temporada
+**Dificuldades:** insegurança de preço, receita baixa, falta de método
+**Desejos:** receita previsível, ocupação saudável, automação
 
 ## Dores
+- Insegurança para definir preço
+- Receita menor que potencial
 - Falta de método
-- Conteúdo genérico
-- Falta de exemplos locais
-- Dúvidas práticas
-- Falta de acompanhamento
+- Alteração manual repetitiva
+- Concorrência desleal
 
 ## Desejos
-- Método claro
-- Exemplos reais
-- Resultados previsíveis
-- Segurança
+- Receita previsível
+- Ocupação saudável
+- Automação
+- Tranquilidade
 - Autoridade local
 
 ## Objeções
-- "Muito caro"
-- "Não funciona"
+- "Ferramenta cara"
+- "Não entendo dados"
+- "Não compensa"
 - "É complicado"
-- "Não tenho tempo"
-- "Já tentei"
+- "Vou errar o preço"
 
 ## Transformação
-- Método aplicado
-- Resultados previsíveis
-- Segurança nas decisões
-- Autoridade local
-- Crescimento profissional
+- PriceLabs configurado
+- Estratégia de preço aplicada
+- Receita aumentada
+- Automação funcionando
+- Decisão orientada por dados
 
 ## Programa Completo
-### Módulo 1 — Fundamentos
-Aula 1.1 — Introdução ao tema
-Aula 1.2 — Conceitos essenciais
-Aula 1.3 — Mercado local
-Exercício: diagnóstico inicial
+### Módulo 1 — Fundamentos de Precificação
+Aula 1.1 — O mercado de temporada no litoral
+Aula 1.2 — Perfil do hóspede e preço
+Aula 1.3 — ROI e expectativa de resultado
+Exercício: diagnóstico de preço
 
-### Módulo 2 — Aplicação Prática
-Aula 2.1 — Passo a passo
-Aula 2.2 — Ferramentas
-Aula 2.3 — Automação
-Exercício: plano prático
+### Módulo 2 — Setup do PriceLabs
+Aula 2.1 — Como cadastrar e configurar
+Aula 2.2 — Dados do imóvel e regras
+Aula 2.3 — Integrações
+Exercício: setup simulado
 
-### Módulo 3 — Casos Reais
-Aula 3.1 — Estudo de caso 1
-Aula 3.2 — Estudo de caso 2
-Aula 3.3 — Lições aplicáveis
-Exercício: adaptação ao seu contexto
+### Módulo 3 — Estratégia de Preços
+Aula 3.1 — Preço base e temporada
+Aula 3.2 — Eventos e picos
+Aula 3.3 — Long stay e descontos
+Exercício: estratégia aplicada
 
-### Módulo 4 — Crescimento
-Aula 4.1 — Métricas
-Aula 4.2 — Otimização
-Aula 4.3 — Escala
-Exercício: plano de crescimento
+### Módulo 4 — Otimização e Crescimento
+Aula 4.1 — Ajustes por desempenho
+Aula 4.2 — Ocupação vs receita
+Aula 4.3 — Automação e análise
+Exercício: plano de otimização
 
 ## Carga Horária
-6 horas de aulas (30 aulas de 10 a 16 min)
-Total: 6 horas
+6 horas
 
 ## Material Complementar
+- Checklist de configuração
+- Planilha de preços
+- Modelos de regras
 - PDFs por módulo
-- Templates
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist por módulo
+- Checklist de setup
+- Checklist de regras
+- Checklist de revisão
+- Checklist de otimização
 
 ## Planilhas
-- Planilha de acompanhamento
+- Planilha de preços
+- Planilha de temporada
+- Planilha de ROI
 
 ## Modelos Prontos
-- Modelo aplicável
+- Modelo de regra
+- Modelo de ajuste
+- Modelo de relatório
 
 ## Scripts
-- Script quando aplicável
+- Script de configuração
+- Script de revisão
 
 ## Prompt de IA
-Prompt para gerar conteúdo com IA.
+Prompt para gerar regras e relatórios.
 
 ## Exercícios
-- Exercício 1
-- Exercício 2
-- Exercício 3
+- Exercício 1: diagnóstico de preço
+- Exercício 2: setup simulado
+- Exercício 3: estratégia aplicada
+- Exercício 4: plano de otimização
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: aplicação do método
+Prova prática: setup + estratégia aplicada
 
 ## FAQ
-1. Como funciona? Método passo a passo.
-2. Em quanto tempo vejo resultado? De 30 a 60 dias.
-3. Preciso de experiência? Não.
-4. Vale a pena? Sim.
-5. E se não gostar? 7 dias de garantia.
+1. Preciso de experiência? Não.
+2. Em quanto tempo vejo resultado? De 7 a 30 dias.
+3. Vale a pena? Sim.
+4. PriceLabs é caro? Depende do retorno.
+5. Preciso de imóvel na orla? Não.
 
 ## Página de Vendas
 [vendas.html]
@@ -179,15 +193,17 @@ Prova prática: aplicação do método
 [marketing/google-ads.md]
 
 ## CTA
-"Aprenda com método aplicado ao litoral."
+"Aumente a receita da temporada com método."
 
 ## Upsell
-- Mentoria individual: R$ 2.000
-- Acompanhamento: R$ 3.500
+- Mentoria individual: R$ 1.500
+- Acompanhamento: R$ 2.800
 
 ## Downsell
 - Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Outros cursos da Praia Digital Academy
+- Curso de Airbnb do Zero
+- Curso de Gestão Profissional da Locação
+- Curso de Como Aumentar em 30% a Rentabilidade

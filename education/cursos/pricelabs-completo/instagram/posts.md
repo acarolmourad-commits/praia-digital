@@ -1,20 +1,21 @@
-1. Post: dica premium sobre pricelabs-completo
-2. Reels: resultado em 30s
-3. Carrossel: checklist rápido
-4. Post: caso real
-5. Reels: ferramenta prática
-6. Post: dica premium sobre pricelabs-completo
-7. Reels: resultado em 30s
-8. Carrossel: checklist rápido
-9. Post: caso real
-10. Reels: ferramenta prática
-11. Post: dica premium sobre pricelabs-completo
-12. Reels: resultado em 30s
-13. Carrossel: checklist rápido
-14. Post: caso real
-15. Reels: ferramenta prática
-16. Post: dica premium sobre pricelabs-completo
-17. Reels: resultado em 30s
-18. Carrossel: checklist rápido
-19. Post: caso real
-20. Reels: ferramenta prática
+# Posts Instagram — PriceLabs Completo para Temporada no Litoral
+1. Post: 3 erros de precificação na temporada
+2. Reels: PriceLabs em 30s
+3. Carrossel: checklist de setup
+4. Post: regras que funcionam
+5. Reels: dica de preço
+6. Carrossel: tipos de estadia
+7. Post: temporada lucrativa
+8. Reels: case de receita
+9. Carrossel: ROI no litoral
+10. Reels: reforma simples
+11. Post: evento e pico
+12. Carrossel: 5 dicas de ajuste
+13. Post: ocupação saudável
+14. Reels: dica de longo stay
+15. Carrossel: automação simples
+16. Post: receita previsível
+17. Reels: case de ajuste
+18. Carrossel: eventos e datas
+19. Post: comece hoje
+20. Reels: método completo em 30s

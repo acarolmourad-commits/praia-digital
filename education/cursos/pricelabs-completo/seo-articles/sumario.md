@@ -1,11 +1,11 @@
-# Artigos SEO — Pricelabs Completo
-1. Pricelabs Completo em 2026
-2. Como aplicar pricelabs completo no litoral
-3. Resultados reais de pricelabs completo
-4. Método passo a passo de pricelabs completo
-5. Erros comuns em pricelabs completo
-6. Ferramentas para pricelabs completo
-7. Cases de pricelabs completo no litoral
-8. Como medir resultado em pricelabs completo
-9. Como começar em pricelabs completo
-10. FAQ sobre pricelabs completo
+# Artigos SEO — PriceLabs Completo para Temporada no Litoral
+1. PriceLabs no litoral em 2026: guia completo
+2. Como usar PriceLabs para temporada no litoral
+3. Precificação no litoral: guia prático
+4. Preço base no PriceLabs: como definir
+5. Eventos e picos na precificação no litoral
+6. Long stay no PriceLabs: vale a pena?
+7. Como aumentar receita com PriceLabs no litoral
+8. Ocupação vs receita no litoral: equilíbrio
+9. Erros comuns no PriceLabs para iniciantes
+10. ROI com PriceLabs no litoral
