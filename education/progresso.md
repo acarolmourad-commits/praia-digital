@@ -22,12 +22,13 @@
 - IA para Corretores — PRONTO PARA VENDA
 - IA para Imobiliárias — PRONTO PARA VENDA
 - Multiplique Patrimônio — PRONTO PARA VENDA
+- Primeiro Imóvel no Litoral — PRONTO PARA VENDA
 
 ## Em Produção
 - Nenhum no momento
 
 ## Próximo Curso
-- Primeiro Imóvel no Litoral
+- PTAM na Prática
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.

@@ -1,49 +1,53 @@
-# Módulo 3 — Estratégia
+# Módulo 3 — Processo Prático
 
 ## Introdução
-Planeje, decida e priorize ações para crescer com consistência.
+Aprenda o passo a passo do PTAM, evite atrasos e feche a regularização no litoral.
 
-## Aula 3.1 — Planejamento
-- Objetivos
-- Ações
-- Prazos
-- Recursos
+## Aula 3.1 — Passo a passo
+**Passos:**
+- Reúna documentos.
+- Preencha formulários.
+- Acompanhe processo.
 
-**Exemplo real:** Planejamento simples permitiu crescer sem surpresas.
+**Exemplo real:**
+Aluno seguiu o passo a passo e aprovou em 30 dias.
 
-## Aula 3.2 — Decisão e priorização
-- Critérios de decisão
-- Priorização
-- Risco
+## Aula 3.2 — Como evitar atrasos
+**Dicas:**
+- Documentos completos.
+- Acompanhamento frequente.
+- Contato oficial.
 
-**Estudo de caso:** Decisão baseada em dados evitou prejuízo e aumentou retorno.
+**Exercício:**
+Monte um cronograma de acompanhamento.
 
-## Aula 3.3 — Execução
-- Rotina
-- Acompanhamento
-- Ajuste rápido
+## Aula 3.3 — Negociação e fechamento
+**Negociação:**
+- Parcelamento.
+- Documentação extra.
+- Confirmação.
 
-## Exercício
-Monte um plano estratégico para os próximos 30 dias.
+**Estudo de caso:**
+Aluno negociou e fechou sem multa.
 
 ## Resumo
-- Planejamento evita desperdício
-- Decisão orientada reduz risco
-- Execução gera resultado
+- Passo a passo reduz risco.
+- Acompanhamento evita atrasos.
+- Fechamento seguro confirma regularização.
 
 ## Checklist
-- [ ] Plano definido
-- [ ] Ações listadas
-- [ ] Prazo estabelecido
+- [ ] Passo a passo seguido
+- [ ] Atrasos evitados
+- [ ] Fechamento confirmado
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de plano
+- Modelo de cronograma
 
 ## Ferramentas recomendadas
-- Planner
 - Planilha
-- App de metas
+- Portal de regularização
+- Consultorias
 
 ## Prompt de IA
-"Atue como estrategista. Monte um plano prático para este objetivo: [dados]."
+"Atue como especialista em regularização imobiliária. Monte um cronograma para este cenário: [dados]."

@@ -1,11 +1,11 @@
 # Artigos SEO — PTAM na Prática
-1. PTAM na Prática em 2026: guia completo
-2. Como aplicar PTAM na Prática no litoral
-3. Guia prático para iniciantes
-4. Erros comuns e como evitar
-5. Métricas essenciais
-6. Resultados reais e casos
-7. Ferramentas úteis
-8. Checklist essencial
-9. Perguntas frequentes
-10. Próximos passos
+1. PTAM no litoral em 2026: guia completo
+2. Como regularizar imóveis no litoral
+3. Documentação para PTAM no litoral
+4. Burocracia no litoral
+5. Regularização de imóveis no litoral
+6. Erros no PTAM no litoral
+7. Custos no litoral
+8. Aprovação no litoral
+9. Checklist no litoral
+10. Como evitar multas no litoral
