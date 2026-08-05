@@ -1,0 +1,325 @@
+{
+  "criados": [
+    {
+      "curso": "airbnb-do-zero",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\airbnb-do-zero\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\airbnb-do-zero\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "analise-de-mercado-imobiliario-litoral",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\analise-de-mercado-imobiliario-litoral\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\analise-de-mercado-imobiliario-litoral\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "analise-de-rentabilidade",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\analise-de-rentabilidade\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\analise-de-rentabilidade\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "apresentacao-imoveis-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\apresentacao-imoveis-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\apresentacao-imoveis-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "atendimento-ao-cliente-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\atendimento-ao-cliente-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\atendimento-ao-cliente-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "atendimento-cliente-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\atendimento-cliente-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\atendimento-cliente-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "aumentar-rentabilidade",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\aumentar-rentabilidade\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\aumentar-rentabilidade\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "automacao-comercial",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\automacao-comercial\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\automacao-comercial\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "avaliacao-de-imoveis",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\avaliacao-de-imoveis\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\avaliacao-de-imoveis\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "booking-do-zero",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\booking-do-zero\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\booking-do-zero\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "captacao-exclusividade",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\captacao-exclusividade\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\captacao-exclusividade\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "captacao-imoveis-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\captacao-imoveis-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\captacao-imoveis-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "casa-ou-apartamento",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\casa-ou-apartamento\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\casa-ou-apartamento\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "comprar-com-seguranca",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\comprar-com-seguranca\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\comprar-com-seguranca\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "comprar-imovel-praia-sem-golpes",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\comprar-imovel-praia-sem-golpes\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\comprar-imovel-praia-sem-golpes\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "comunicacao-interpessoal-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\comunicacao-interpessoal-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\comunicacao-interpessoal-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "crm-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\crm-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\crm-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "documentacao-completa-imoveis-litoral",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\documentacao-completa-imoveis-litoral\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\documentacao-completa-imoveis-litoral\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "documentacao-imobiliaria",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\documentacao-imobiliaria\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\documentacao-imobiliaria\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "especialista-venda-imoveis-litoral",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\especialista-venda-imoveis-litoral\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\especialista-venda-imoveis-litoral\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "fechamento-de-vendas-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\fechamento-de-vendas-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\fechamento-de-vendas-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "financiamento-imobiliario",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\financiamento-imobiliario\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\financiamento-imobiliario\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "flipping",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\flipping\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\flipping\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "flipping-completo",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\flipping-completo\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\flipping-completo\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "flipping-imoveis-litoral",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\flipping-imoveis-litoral\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\flipping-imoveis-litoral\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "funil-de-vendas",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\funil-de-vendas\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\funil-de-vendas\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "gestao-de-conflitos-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\gestao-de-conflitos-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\gestao-de-conflitos-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "gestao-de-locacao-no-litoral",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\gestao-de-locacao-no-litoral\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\gestao-de-locacao-no-litoral\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "gestao-de-propostas-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\gestao-de-propostas-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\gestao-de-propostas-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "gestao-de-vendas-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\gestao-de-vendas-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\gestao-de-vendas-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "gestao-do-tempo-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\gestao-do-tempo-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\gestao-do-tempo-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "gestao-profissional-locacao",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\gestao-profissional-locacao\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\gestao-profissional-locacao\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "guia-investidor-imobiliario",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\guia-investidor-imobiliario\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\guia-investidor-imobiliario\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "guia-investidor-imobiliario-avancado",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\guia-investidor-imobiliario-avancado\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\guia-investidor-imobiliario-avancado\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "ia-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\ia-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\ia-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "ia-para-imobiliarias",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\ia-para-imobiliarias\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\ia-para-imobiliarias\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "imoveis-para-airbnb",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\imoveis-para-airbnb\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\imoveis-para-airbnb\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "instagram-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\instagram-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\instagram-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "inteligencia-emocional-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\inteligencia-emocional-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\inteligencia-emocional-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "investindo-imoveis-litoral",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\investindo-imoveis-litoral\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\investindo-imoveis-litoral\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "lideranca-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\lideranca-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\lideranca-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "marketing-imobiliario",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\marketing-imobiliario\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\marketing-imobiliario\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "marketing-imobiliario-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\marketing-imobiliario-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\marketing-imobiliario-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "multiplique-patrimonio",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\multiplique-patrimonio\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\multiplique-patrimonio\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "negociacao-avancada-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\negociacao-avancada-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\negociacao-avancada-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "negociacao-imobiliaria-litoral",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\negociacao-imobiliaria-litoral\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\negociacao-imobiliaria-litoral\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "networking-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\networking-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\networking-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "oratoria-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\oratoria-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\oratoria-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "planejamento-estrategico-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\planejamento-estrategico-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\planejamento-estrategico-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "pos-venda-relacionamento-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\pos-venda-relacionamento-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\pos-venda-relacionamento-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "pricelabs-completo",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\pricelabs-completo\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\pricelabs-completo\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "primeiro-imovel-litoral",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\primeiro-imovel-litoral\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\primeiro-imovel-litoral\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "produtividade-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\produtividade-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\produtividade-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "prospeccao-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\prospeccao-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\prospeccao-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "ptam-na-pratica",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\ptam-na-pratica\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\ptam-na-pratica\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "recuperacao-de-vendas-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\recuperacao-de-vendas-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\recuperacao-de-vendas-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "rotinas-de-vendas-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\rotinas-de-vendas-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\rotinas-de-vendas-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "storytelling-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\storytelling-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\storytelling-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "treinamento-de-equipes-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\treinamento-de-equipes-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\treinamento-de-equipes-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "treinamento-em-tecnologia-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\treinamento-em-tecnologia-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\treinamento-em-tecnologia-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "venda-imoveis-alto-padrao-litoral",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\venda-imoveis-alto-padrao-litoral\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\venda-imoveis-alto-padrao-litoral\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "venda-rapida-imoveis-litoral",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\venda-rapida-imoveis-litoral\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\venda-rapida-imoveis-litoral\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "visita-tecnica-para-corretores",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\visita-tecnica-para-corretores\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\visita-tecnica-para-corretores\\imagens\\capa-curso.png"
+    },
+    {
+      "curso": "whatsapp-que-vende",
+      "pdf": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\whatsapp-que-vende\\materiais\\material-complementar.pdf",
+      "imagem": "C:\\Users\\Carolina\\praia-digital\\education\\cursos\\whatsapp-que-vende\\imagens\\capa-curso.png"
+    }
+  ],
+  "erros": []
+}

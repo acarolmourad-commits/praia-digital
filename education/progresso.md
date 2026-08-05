@@ -63,12 +63,13 @@
 - Gestão do Tempo para Corretores — PRONTO PARA VENDA
 - Treinamento em Tecnologia para Corretores — PRONTO PARA VENDA
 - Comunicação Interpessoal para Corretores — PRONTO PARA VENDA
+- Atendimento ao Cliente para Corretores — PRONTO PARA VENDA
 
 ## Em Produção
 - Nenhum no momento
 
 ## Próximo Curso
-- Atendimento ao Cliente para Corretores
+- Técnicas de Fechamento para Corretores
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.
