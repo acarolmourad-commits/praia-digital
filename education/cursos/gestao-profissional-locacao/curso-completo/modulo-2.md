@@ -1,33 +1,57 @@
-# Módulo 2 — Conteúdo Premium
-## Aula 2.1 — Introdução ao módulo
-Conteúdo: visão geral, objetivo, aplicação prática no litoral.
+# Módulo 2 — Documentação e Contratos
 
-## Aula 2.2 — Conceitos aplicados
-Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
+## Introdução
+Monte uma documentação sólida, contratos seguros e vistorias padronizadas para reduzir riscos e conflitos.
 
-## Aula 2.3 — Estudo de caso
-Conteúdo: caso real, análise, lições.
+## Aula 2.1 — Documentação essencial
+- Matrícula
+- IPTU
+- Certidões
+- Seguro
+- Cadastros
+
+**Exemplo real:** Proprietário evitou conflito ao apresentar toda documentação antes da locação.
+
+## Aula 2.2 — Contrato de locação
+- Tipo de contrato
+- Reajuste
+- Garantias
+- Multas
+- Rescisão
+
+**Estudo de caso:** Contrato bem redigido reduziu conflitos em 70% no primeiro ano.
+
+## Aula 2.3 — Vistoria e reajuste
+- Vistoria de entrada
+- Vistoria de saída
+- Reparos
+- Reajuste anual
 
 ## Exercício
-Aplicação prática no seu contexto.
+Revise a documentação e o contrato de um imóvel de exemplo.
 
 ## Resumo
-Pontos-chave para revisão.
+- Documentação evita surpresas
+- Contrato protege proprietário e inquilino
+- Vistoria reduz disputas
 
 ## Checklist
-- [ ] Conceitos entendidos
-- [ ] Caso analisado
-- [ ] Exercício aplicado
+- [ ] Documentação conferida
+- [ ] Contrato revisado
+- [ ] Garantia definida
+- [ ] Vistoria agendada
+- [ ] Reajuste calculado
 
 ## Materiais para download
 - PDF do módulo
-- Templates
-- Planilha
+- Modelo de contrato
+- Modelo de vistoria
+- Checklist de documentação
 
 ## Ferramentas recomendadas
-- Ferramenta 1
-- Ferramenta 2
-- Ferramenta 3
+- Registro de imóveis
+- Prefeitura municipal
+- Plataformas de assinatura
 
 ## Prompt de IA
-Prompt para acelerar tarefas deste módulo.
+"Atue como advogado imobiliário. Revise este contrato e aponte riscos e melhorias: [dados do contrato]."

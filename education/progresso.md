@@ -14,7 +14,7 @@
 - Nenhum no momento
 
 ## Próximo Curso
-- PriceLabs Completo para Temporada no Litoral
+- Gestão Profissional da Locação
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.

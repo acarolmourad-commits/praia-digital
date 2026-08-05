@@ -1,33 +1,54 @@
-# Módulo 3 — Conteúdo Premium
-## Aula 3.1 — Introdução ao módulo
-Conteúdo: visão geral, objetivo, aplicação prática no litoral.
+# Módulo 3 — Rotina e Fiscalização
 
-## Aula 3.2 — Conceitos aplicados
-Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
+## Introdução
+Organize a rotina, fiscalize o imóvel e mantenha um relacionamento saudável com o inquilino.
 
-## Aula 3.3 — Estudo de caso
-Conteúdo: caso real, análise, lições.
+## Aula 3.1 — Rotina de gestão
+- Verificação periódica
+- Manutenção preventiva
+- Pagamentos
+- Comunicação
+
+**Exemplo real:** Gestor com rotina quinzenal reduziu custos de manutenção em 30%.
+
+## Aula 3.2 — Fiscalização e manutenção
+- Inspeção visual
+- Registro fotográfico
+- Manutenção preventiva
+- Fornecedores
+
+**Estudo de caso:** Imóvel fiscalizado mensalmente evitou problema estrutural de R$ 18 mil.
+
+## Aula 3.3 — Atendimento ao inquilino
+- Canal de atendimento
+- Tempo de resposta
+- Resolução rápida
+- Relacionamento
 
 ## Exercício
-Aplicação prática no seu contexto.
+Monte uma rotina semanal de gestão.
 
 ## Resumo
-Pontos-chave para revisão.
+- Rotina evita surpresas
+- Fiscalização reduz custos
+- Atendimento diminui conflitos
 
 ## Checklist
-- [ ] Conceitos entendidos
-- [ ] Caso analisado
-- [ ] Exercício aplicado
+- [ ] Rotina definida
+- [ ] Fiscalização agendada
+- [ ] Manutenção preventiva
+- [ ] Canal de atendimento
+- [ ] Registro atualizado
 
 ## Materiais para download
 - PDF do módulo
-- Templates
-- Planilha
+- Checklist operacional
+- Modelo de comunicação
 
 ## Ferramentas recomendadas
-- Ferramenta 1
-- Ferramenta 2
-- Ferramenta 3
+- Planilha de rotina
+- WhatsApp Business
+- Sistema de gestão
 
 ## Prompt de IA
-Prompt para acelerar tarefas deste módulo.
+"Atue como gestor de imóveis. Monte uma rotina semanal para este imóvel: [dados do imóvel]."

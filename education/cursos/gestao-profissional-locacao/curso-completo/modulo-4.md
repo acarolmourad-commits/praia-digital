@@ -1,33 +1,54 @@
-# Módulo 4 — Conteúdo Premium
-## Aula 4.1 — Introdução ao módulo
-Conteúdo: visão geral, objetivo, aplicação prática no litoral.
+# Módulo 4 — Financeiro e Crescimento
 
-## Aula 4.2 — Conceitos aplicados
-Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
+## Introdução
+Controle financeiro, reduza inadimplência, escale a gestão e profissionalize a operação.
 
-## Aula 4.3 — Estudo de caso
-Conteúdo: caso real, análise, lições.
+## Aula 4.1 — Controle financeiro
+- Receita
+- Custos fixos e variáveis
+- Fluxo de caixa
+- Relatórios
+
+**Exemplo real:** Proprietário passou a acompanhar fluxo mensal e aumentou lucro em 20% em 4 meses.
+
+## Aula 4.2 — Inadimplência e renegociação
+- Prevenção
+- Comunicação
+- Acordo
+- Rescisão
+
+**Estudo de caso:** Imóvel com inadimplência alta reduziu para 4% com política de reajuste e acordos rápidos.
+
+## Aula 4.3 — Escala e profissionalização
+- Padronização
+- Processos
+- Fornecedores
+- Crescimento gradual
 
 ## Exercício
-Aplicação prática no seu contexto.
+Monte um plano financeiro mensal.
 
 ## Resumo
-Pontos-chave para revisão.
+- Controle aumenta lucro
+- Inadimplência tem solução
+- Escala exige processo
 
 ## Checklist
-- [ ] Conceitos entendidos
-- [ ] Caso analisado
-- [ ] Exercício aplicado
+- [ ] Fluxo de caixa
+- [ ] Custos mapeados
+- [ ] Indicadores definidos
+- [ ] Acordos preparados
+- [ ] Crescimento planejado
 
 ## Materiais para download
 - PDF do módulo
-- Templates
-- Planilha
+- Planilha financeira
+- Checklist de inadimplência
 
 ## Ferramentas recomendadas
-- Ferramenta 1
-- Ferramenta 2
-- Ferramenta 3
+- Planilha financeira
+- Sistema de gestão
+- Banco digital
 
 ## Prompt de IA
-Prompt para acelerar tarefas deste módulo.
+"Atue como gestor financeiro imobiliário. Monte um plano financeiro para este imóvel: [dados do imóvel]."
