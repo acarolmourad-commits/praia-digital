@@ -1,0 +1,11 @@
+# Planilha — Recuperação de Vendas para Corretores
+- [ ] Data
+- [ ] Cliente
+- [ ] Imóvel
+- [ ] Cidade
+- [ ] Perda
+- [ ] Follow-up
+- [ ] Reversão
+- [ ] Fechamento
+- [ ] Receita
+- [ ] Status
