@@ -1,21 +1,21 @@
 # Sequência de E-mails — Primeiro Imóvel no Litoral
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido de Primeiro Imóvel no Litoral (PDF + planilha)
+Assunto: Guia Rápido: Primeiro Imóvel no Litoral (PDF + planilha)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: resultado prático
+Assunto: Case: família comprou primeiro imóvel em 30 dias
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Primeiro Imóvel no Litoral dá trabalho?"
+Assunto: "Comprar no litoral é muito caro?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno obteve resultado em 30 dias
+Assunto: Aluno fechou primeiro imóvel em 45 dias
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

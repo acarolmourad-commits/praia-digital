@@ -1,159 +1,158 @@
 # Curso: Primeiro Imóvel no Litoral
 ## Nome Comercial
-**Primeiro Imóvel no Litoral: Método Prático para Primeira compra, segurança, documentação e escolha**
+**Primeiro Imóvel no Litoral: Método Prático para Comprar seu Primeiro Imóvel na Praia com Segurança e Método**
 
 ## Subtítulo
-Do diagnóstico ao resultado: aprenda a aplicar método, evitar erros e crescer no mercado imobiliário do litoral.
+Do sonho à chave: aprenda a comprar seu primeiro imóvel no litoral sem medo, sem golpes e sem dor de cabeça.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de aplicar um método prático para primeira compra, segurança, documentação e escolha.
+Em até 20 dias, você será capaz de escolher, negociar e fechar a compra do seu primeiro imóvel no litoral com segurança.
 
 ## Público-alvo
-- Proprietários de imóveis no litoral
-- Investidores que querem aumentar retorno
-- Corretores que querem se especializar
-- Interesse: imóveis, litoral, investimento, temporada, rentabilidade
+- Compradores iniciantes
+- Famílias que querem imóvel de praia
+- Investidores iniciantes
+- Interesse: imóvel, litoral, primeira compra, segurança
 
 ## Pré-requisitos
-Nenhum. Curso completo do zero ao resultado.
+Nenhum. Curso completo do zero ao fechamento.
 
 ## Nível
-Iniciante → Intermediário
+Iniciante
 
 ## Tempo Estimado
-5 horas de aulas
-Total: 5 horas
+4 horas de aulas (20 aulas de 10 a 16 min)
+Total: 4 horas
 
 ## Valor Sugerido
-Curso completo: R$ 247
-À vista: R$ 247
-Parcelado: 12x de R$ 20,58
+Curso completo: R$ 197
+À vista: R$ 167
+Parcelado: 12x de R$ 13,92
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist do curso
-- Planilha de acompanhamento
-- Modelos prontos
+- Checklist de primeira compra
+- Planilha de orçamento
+- Modelos de proposta
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Compre seu primeiro imóvel no litoral com segurança, método e sem dor de cabeça"**
+**"Compre seu primeiro imóvel no litoral com segurança"**
 
 ## Big Idea
-Resultados no litoral dependem de método, dados e execução consistente.
+Comprar o primeiro imóvel no litoral combina orçamento, escolha de localização, verificação de documentação e negociação para realizar o sonho sem riscos.
 
 ## Oferta
-- **Curso completo:** R$ 247
+- **Curso completo:** R$ 197
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
 ## Avatar
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
-**Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** primeira compra, segurança, documentação e escolha
-**Dificuldades:** falta de método, insegurança, resultado baixo
-**Desejos:** crescimento, tranquilidade, autoridade
+**Renda:** R$ 3k a R$ 15k/mês
+**Objetivo:** comprar primeiro imóvel no litoral
+**Dificuldades:** orçamento, documentação, medo de golpes
+**Desejos:** segurança, realização, tranquilidade
 
 ## Dores
+- Medo de golpes
+- Orçamento limitado
 - Falta de método
-- Insegurança
-- Resultado baixo
-- Falta de clareza
-- Tempo limitado
+- Documentação confusa
+- Ansiedade
 
 ## Desejos
-- Crescimento
+- Segurança
+- Realização
 - Tranquilidade
-- Autoridade
-- Previsibilidade
-- Resultado
+- Apoio
+- Clareza
 
 ## Objeções
-- "Não compensa"
-- "É complicado"
-- "Não tenho tempo"
+- "É muito caro"
+- "Vou cair em golpe"
+- "Demora muito"
+- "Não sei nada"
 - "Vou errar"
-- "Não funciona"
 
 ## Transformação
-- Método aplicado
-- Resultado crescente
-- Decisão orientada por dados
-- Operação profissional
+- Compra segura
+- Orçamento controlado
+- Documentação clara
+- Sonho realizado
 - Tranquilidade
 
 ## Programa Completo
-### Módulo 1 — Fundamentos
-Aula 1.1 — Contexto e oportunidades
-Aula 1.2 — Perfil e objetivos
-Aula 1.3 — Métricas e metas
-Exercício: diagnóstico
+### Módulo 1 — Fundamentos da Primeira Compra
+Aula 1.1 — O que é comprar o primeiro imóvel
+Aula 1.2 — Perfil do comprador
+Aula 1.3 — Metas e orçamento
+Exercício: diagnóstico de compra
 
-### Módulo 2 — Aplicação Prática
-Aula 2.1 — Passo a passo prático
-Aula 2.2 — Exemplos reais
-Aula 2.3 — Erros comuns
-Exercício: aplicação
+### Módulo 2 — Escolha e Localização
+Aula 2.1 — Como escolher imóvel
+Aula 2.2 — Localização no litoral
+Aula 2.3 — Custos ocultos
+Exercício: lista de desejos
 
-### Módulo 3 — Estratégia
-Aula 3.1 — Planejamento
-Aula 3.2 — Decisão e priorização
-Aula 3.3 — Execução
-Exercício: plano
+### Módulo 3 — Documentação e Verificação
+Aula 3.1 — Documentos essenciais
+Aula 3.2 — Como verificar imóvel
+Aula 3.3 — Fraudes comuns
+Exercício: checklist de verificação
 
-### Módulo 4 — Crescimento
-Aula 4.1 — Acompanhamento
-Aula 4.2 — Ajustes
-Aula 4.3 — Escala
-Exercício: escala
+### Módulo 4 — Negociação e Fechamento
+Aula 4.1 — Como negociar
+Aula 4.2 — Proposta e contrato
+Aula 4.3 — Fechamento seguro
+Exercício: plano de compra
 
 ## Carga Horária
-5 horas
+4 horas
 
 ## Material Complementar
-- Checklist
-- Planilha
-- Modelos
+- Checklist de primeira compra
+- Planilha de orçamento
+- Modelos de proposta
 - PDFs por módulo
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de diagnóstico
-- Checklist de aplicação
-- Checklist de estratégia
-- Checklist de escala
+- Checklist de primeira compra
+- Checklist de verificação
+- Checklist de fechamento
 
 ## Planilhas
-- Planilha de acompanhamento
-- Planilha de métricas
-- Planilha de ROI
+- Planilha de orçamento
+- Planilha de custos
+- Planilha de comparação
 
 ## Modelos Prontos
-- Modelo de relatório
 - Modelo de proposta
-- Modelo de revisão
+- Modelo de checklist
+- Modelo de planejamento
 
 ## Scripts
 - Script de atendimento
 - Script de negociação
 
 ## Prompt de IA
-Prompt para gerar análises e planos.
+Prompt para gerar análises e propostas.
 
 ## Exercícios
-- Exercício 1: diagnóstico
-- Exercício 2: aplicação
-- Exercício 3: plano
-- Exercício 4: escala
+- Exercício 1: diagnóstico de compra
+- Exercício 2: lista de desejos
+- Exercício 3: checklist de verificação
+- Exercício 4: plano de compra
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: aplicação do método
+Prova prática: plano de compra aplicado
 
 ## FAQ
 1. Preciso de experiência? Não.
@@ -193,7 +192,7 @@ Prova prática: aplicação do método
 [marketing/google-ads.md]
 
 ## CTA
-"Aplique o método agora."
+"Compre seu primeiro imóvel no litoral agora."
 
 ## Upsell
 - Mentoria individual: R$ 1.500
@@ -204,4 +203,6 @@ Prova prática: aplicação do método
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Cursos complementares Praia Digital
+- Curso de Casa ou Apartamento
+- Curso de Comprar com Segurança no Litoral
+- Curso de Financiamento Imobiliário
