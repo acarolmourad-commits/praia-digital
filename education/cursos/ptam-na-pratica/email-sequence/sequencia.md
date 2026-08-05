@@ -1,21 +1,21 @@
 # Sequência de E-mails — PTAM na Prática
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido de PTAM na Prática (PDF + planilha)
+Assunto: Guia Rápido: PTAM na Prática no Litoral (PDF + planilha)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: resultado prático
+Assunto: Case: aluno aprovou regularização em 30 dias
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "PTAM na Prática dá trabalho?"
+Assunto: "PTAM é muito burocrático?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno obteve resultado em 30 dias
+Assunto: Aluno regularizou imóvel sem multa
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

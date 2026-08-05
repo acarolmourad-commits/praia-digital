@@ -1,6 +1,8 @@
 # Planilha — PTAM na Prática
 - [ ] Data
-- [ ] Ação
-- [ ] Resultado
-- [ ] Ajuste
+- [ ] Documento
 - [ ] Status
+- [ ] Pendência
+- [ ] Ação
+- [ ] Prazo
+- [ ] Observação

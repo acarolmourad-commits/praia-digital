@@ -1,38 +1,58 @@
-# Módulo 1 — Fundamentos
+# Módulo 1 — Fundamentos do PTAM
 
 ## Introdução
-Entenda o contexto, o seu perfil e as métricas essenciais para PTAM, avaliação, decisão e investimento.
+Entenda o que é PTAM, o método e o perfil do aluno que quer regularizar imóveis no litoral.
 
-## Aula 1.1 — Contexto e oportunidades
-- Mercado atual
-- Oportunidades no litoral
-- Particularidades regionais
+## Aula 1.1 — O que é PTAM
+PTAM é o Programa de Regularização de Imóveis no Litoral, um método estruturado para legalizar imóveis.
 
-**Exemplo real:** Profissional identificou oportunidade em região em crescimento e aumentou resultado em 25%.
+**Características:**
+- Documentação organizada.
+- Processo simplificado.
+- Segurança jurídica.
 
-## Aula 1.2 — Perfil e objetivos
-- Perfil do aluno
-- Objetivos claros
-- Metas realistas
+**Exemplo real:**
+Aluno regularizou imóvel em 30 dias.
 
-## Aula 1.3 — Métricas e metas
-- Métricas essenciais
-- Metas de curto, médio e longo prazo
-- Revisão
+## Aula 1.2 — Perfil do aluno
+**Iniciante:**
+- Foco: documentação básica.
+- Erro comum: começar sem método.
 
-## Exercício
-Faça o diagnóstico do seu cenário atual.
+**Intermediário:**
+- Foco: processo, burocracia.
+- Erro comum: documento incompleto.
+
+**Avançado:**
+- Foco: múltiplos imóveis.
+- Erro comum: escala sem controle.
+
+**Exercício:**
+Faça o diagnóstico do seu imóvel.
+
+## Aula 1.3 — Método e metas
+**Método:**
+- Documentos organizados.
+- Processo seguido.
+- Acompanhamento.
+
+**Metas:**
+- Documentos prontos.
+- Processo concluído.
+- Regularização aprovada.
+
+**Exemplo real:**
+Aluno definiu metas e aprovou em 25 dias.
 
 ## Resumo
-- Contexto orienta decisão
-- Perfil evita erros
-- Métricas medem resultado
+- PTAM exige método.
+- Perfil claro orienta ação.
+- Metas medem progresso.
 
 ## Checklist
-- [ ] Cenário mapeado
-- [ ] Objetivos definidos
-- [ ] Métricas escolhidas
+- [ ] Documentos organizados
 - [ ] Metas traçadas
+- [ ] Método escolhido
 
 ## Materiais para download
 - PDF do módulo
@@ -40,8 +60,8 @@ Faça o diagnóstico do seu cenário atual.
 
 ## Ferramentas recomendadas
 - Planilha
-- Indicadores
-- Consultas locais
+- Portal de regularização
+- Consultorias
 
 ## Prompt de IA
-"Atue como especialista em PTAM, avaliação, decisão e investimento. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
+"Atue como especialista em regularização imobiliária. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."

@@ -1,48 +1,55 @@
-# Módulo 2 — Aplicação Prática
+# Módulo 2 — Documentação e Burocracia
 
 ## Introdução
-Aplique o método na prática com exemplos reais e evite erros comuns.
+Aprenda a organizar documentos, evitar erros comuns e reduzir burocracia no PTAM.
 
-## Aula 2.1 — Passo a passo prático
-- Etapas claras
-- Ação imediata
-- Verificação de resultado
+## Aula 2.1 — Documentos essenciais
+**Documentos:**
+- Escritura.
+- Matrícula.
+- IPTU.
+- RG e CPF.
+- Comprovante de residência.
 
-**Exemplo real:** Profissional aplicou o passo a passo e obteve ganhos rápidos em 15 dias.
+**Exemplo real:**
+Aluno organizou documentos e aprovou rápido.
 
-## Aula 2.2 — Exemplos reais
-- Caso 1
-- Caso 2
-- Lições aplicáveis
+## Aula 2.2 — Como organizar documentos
+**Organização:**
+- Pastas digitais.
+- Checklist.
+- Validação.
 
-**Estudo de caso:** Aplicação prática gerou aumento mensurável em 30 dias.
+**Exemplo prático:**
+Aluno montou checklist e reduziu erros.
 
 ## Aula 2.3 — Erros comuns
-- Erro 1
-- Erro 2
-- Erro 3
-- Como evitar
+**Erros:**
+- Documento faltando.
+- Data errada.
+- Formato inválido.
 
-## Exercício
-Aplique o método em um cenário real.
+**Exercício:**
+Monte um checklist de documentos.
 
 ## Resumo
-- Passo a passo reduz risco
-- Exemplos aceleram aprendizado
-- Erros evitados poupam tempo
+- Documentação acelera aprovação.
+- Organização reduz erros.
+- Checklist evita retrabalho.
 
 ## Checklist
-- [ ] Passos executados
-- [ ] Resultados verificados
-- [ ] Ajustes aplicados
+- [ ] Documentos reunidos
+- [ ] Checklist criado
+- [ ] Erros evitados
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de aplicação
+- Checklist de documentos
 
 ## Ferramentas recomendadas
-- Planilha de acompanhamento
-- App de gestão
+- Planilha
+- Scanner
+- Portal de regularização
 
 ## Prompt de IA
-"Atue como especialista prático. Monte um plano de aplicação para este cenário: [dados]."
+"Atue como especialista em regularização imobiliária. Monte um checklist de documentos para este cenário: [dados]."
