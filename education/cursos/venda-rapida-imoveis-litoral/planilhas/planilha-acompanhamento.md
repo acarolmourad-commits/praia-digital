@@ -1,0 +1,11 @@
+# Planilha — Venda Rápida de Imóveis no Litoral
+- [ ] Data
+- [ ] Imóvel
+- [ ] Cidade
+- [ ] Leads
+- [ ] Visitas
+- [ ] Proposta
+- [ ] Venda
+- [ ] Tempo
+- [ ] Receita
+- [ ] Observação
