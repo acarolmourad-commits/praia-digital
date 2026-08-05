@@ -1,0 +1,11 @@
+# Planilha — Captação de Imóveis para Corretores
+- [ ] Data
+- [ ] Imóvel
+- [ ] Proprietário
+- [ ] Contato
+- [ ] Status
+- [ ] Visitas
+- [ ] Proposta
+- [ ] Venda
+- [ ] Receita
+- [ ] Observação
