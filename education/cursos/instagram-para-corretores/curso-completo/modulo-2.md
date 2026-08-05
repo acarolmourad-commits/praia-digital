@@ -1,48 +1,58 @@
-# Módulo 2 — Aplicação Prática
+# Módulo 2 — Conteúdo e Perfil
 
 ## Introdução
-Aplique o método na prática com exemplos reais e evite erros comuns.
+Aprenda a montar perfil profissional, criar conteúdo local e usar Stories e Reels no Instagram para corretores.
 
-## Aula 2.1 — Passo a passo prático
-- Etapas claras
-- Ação imediata
-- Verificação de resultado
+## Aula 2.1 — Perfil profissional
+**Perfil:**
+- Bio clara.
+- Foto profissional.
+- Contato.
 
-**Exemplo real:** Profissional aplicou o passo a passo e obteve ganhos rápidos em 15 dias.
+**Exemplo real:**
+Corretor ajustou perfil e aumentou cliques.
 
-## Aula 2.2 — Exemplos reais
-- Caso 1
-- Caso 2
-- Lições aplicáveis
+## Aula 2.2 — Conteúdo local
+**Conteúdo:**
+- Imóveis.
+- Localização.
+- Dicas.
 
-**Estudo de caso:** Aplicação prática gerou aumento mensurável em 30 dias.
+**Exercício:**
+Monte um plano de conteúdo.
 
-## Aula 2.3 — Erros comuns
-- Erro 1
-- Erro 2
-- Erro 3
-- Como evitar
+## Aula 2.3 — Stories e Reels
+**Stories:**
+- Bastidores.
+- Dicas rápidas.
+- Perguntas.
 
-## Exercício
-Aplique o método em um cenário real.
+**Reels:**
+- Dicas.
+- Cases.
+- CTA.
+
+**Estudo de caso:**
+Corretor aumentou seguidores com Reels.
 
 ## Resumo
-- Passo a passo reduz risco
-- Exemplos aceleram aprendizado
-- Erros evitados poupam tempo
+- Perfil profissional atrai leads.
+- Conteúdo local gera autoridade.
+- Stories e Reels aceleram crescimento.
 
 ## Checklist
-- [ ] Passos executados
-- [ ] Resultados verificados
-- [ ] Ajustes aplicados
+- [ ] Perfil criado
+- [ ] Conteúdo planejado
+- [ ] Stories/Reels feitos
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de aplicação
+- Planilha de conteúdo
 
 ## Ferramentas recomendadas
-- Planilha de acompanhamento
-- App de gestão
+- Instagram
+- Canva
+- Automação
 
 ## Prompt de IA
-"Atue como especialista prático. Monte um plano de aplicação para este cenário: [dados]."
+"Atue como especialista em Instagram para imobiliário. Crie um plano de conteúdo para este perfil: [dados]."

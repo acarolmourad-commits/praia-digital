@@ -1,6 +1,6 @@
 # Roteiro de Webinar — Instagram para Corretores
 1. Abertura: dor do público
-2. Case: resultado prático
+2. Case: corretor aumentou vendas com Instagram
 3. Método: 4 passos
 4. Prova social
 5. Oferta e bônus

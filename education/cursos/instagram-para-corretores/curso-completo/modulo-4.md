@@ -1,49 +1,57 @@
-# Módulo 4 — Crescimento
+# Módulo 4 — Crescimento e Métricas
 
 ## Introdução
-Acompanhe resultados, ajuste estratégias e escale sem perder controle.
+Acompanhe métricas, use anúncios e escale o Instagram para corretores no litoral.
 
-## Aula 4.1 — Acompanhamento
-- Métricas
-- Frequência
-- Formato
-- Aprendizado
+## Aula 4.1 — Métricas
+**Métricas:**
+- Seguidores.
+- Alcance.
+- Leads.
 
-**Exemplo real:** Acompanhamento semanal permitiu ajustes rápidos e crescimento contínuo.
+**Ajustes:**
+- Revise semanalmente.
+- Teste novos conteúdos.
 
-## Aula 4.2 — Ajustes
-- Quando ajustar
-- Como ajustar
-- Validação
+**Exemplo real:**
+Corretor revisou métricas e dobrou leads.
 
-**Estudo de caso:** Ajustes pontuais aumentaram resultado sem aumentar esforço.
+## Aula 4.2 — Anúncios
+**Anúncios:**
+- Público.
+- Formato.
+- CTA.
+
+**Exercício:**
+Monte um anúncio simples.
 
 ## Aula 4.3 — Escala
-- Processos
-- Fornecedores/parcerias
-- Crescimento gradual
+**Escala:**
+- Adicione conteúdo gradualmente.
+- Mantenha qualidade.
+- Padronize processos.
 
-## Exercício
-Monte um plano de escala sustentada.
+**Exercício:**
+Monte um plano de crescimento para os próximos 90 dias.
 
 ## Resumo
-- Acompanhamento mantém direção
-- Ajustes preservam resultado
-- Escala depende de processo
+- Métricas orientam ajustes.
+- Anúncios aceleram crescimento.
+- Escala depende de método.
 
 ## Checklist
 - [ ] Métricas revisadas
-- [ ] Ajustes aplicados
-- [ ] Escala planejada
+- [ ] Anúncios criados
+- [ ] Crescimento planejado
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de acompanhamento
+- Planilha de métricas
 
 ## Ferramentas recomendadas
-- Dashboard
-- Planilha
-- Sistema de gestão
+- Instagram
+- Meta Ads
+- Automação
 
 ## Prompt de IA
-"Atue como especialista em crescimento. Monte um plano de escala para este cenário: [dados]."
+"Atue como especialista em Instagram para imobiliário. Monte um plano de crescimento para este cenário: [dados]."
