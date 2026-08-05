@@ -19,3 +19,9 @@ EMAIL_FROM = os.getenv("EMAIL_FROM", "no-reply@praia.digital")
 MERCADOPAGO_TOKEN = os.getenv("MERCADOPAGO_TOKEN", "")
 MERCADOPAGO_PUBLIC_KEY = os.getenv("MERCADOPAGO_PUBLIC_KEY", "")
 BASE_URL = os.getenv("BASE_URL", "http://localhost:8000")
+
+# WhatsApp
+WHATSAPP_API_URL = os.getenv("WHATSAPP_API_URL", "")
+WHATSAPP_TOKEN = os.getenv("WHATSAPP_TOKEN", "")
+WHATSAPP_PHONE_ID = os.getenv("WHATSAPP_PHONE_ID", "")
+WHATSAPP_TO_NUMBER = os.getenv("WHATSAPP_TO_NUMBER", "")

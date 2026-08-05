@@ -23,6 +23,20 @@ services:
         value: no-reply@praia.digital
       - key: ALLOWED_ORIGINS
         value: https://praia.digital,https://www.praia.digital,https://academy.praia.digital
+      - key: MERCADOPAGO_TOKEN
+        value: ""
+      - key: MERCADOPAGO_PUBLIC_KEY
+        value: ""
+      - key: BASE_URL
+        value: ""
+      - key: WHATSAPP_API_URL
+        value: ""
+      - key: WHATSAPP_TOKEN
+        value: ""
+      - key: WHATSAPP_PHONE_ID
+        value: ""
+      - key: WHATSAPP_TO_NUMBER
+        value: ""
 
 databases:
   - name: academy-db
