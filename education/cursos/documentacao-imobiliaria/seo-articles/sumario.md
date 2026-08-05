@@ -1,11 +1,11 @@
 # Artigos SEO — Documentação Imobiliária
-1. Documentação Imobiliária em 2026: guia completo
-2. Como aplicar Documentação Imobiliária no litoral
-3. Guia prático para iniciantes
-4. Erros comuns e como evitar
-5. Métricas essenciais
-6. Resultados reais e casos
-7. Ferramentas úteis
-8. Checklist essencial
-9. Perguntas frequentes
-10. Próximos passos
+1. Documentação imobiliária no litoral em 2026: guia completo
+2. Como organizar documentação no litoral
+3. Escritura e registro no litoral
+4. Certidões para venda no litoral
+5. Prazos de documentação no litoral
+6. Erros comuns na documentação no litoral
+7. Como evitar problemas com documentação no litoral
+8. Custos de documentação no litoral
+9. ROI de documentação para corretores no litoral
+10. Autoridade local com documentação no litoral

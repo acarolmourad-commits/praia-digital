@@ -1,6 +1,9 @@
 # Checklist — Documentação Imobiliária
-- [ ] Diagnóstico realizado
-- [ ] Objetivos definidos
-- [ ] Aplicação executada
-- [ ] Estratégia traçada
-- [ ] Escala planejada
+- [ ] Documentos listados
+- [ ] Prazos definidos
+- [ ] Cartório escolhido
+- [ ] Processos mapeados
+- [ ] Custos estimados
+- [ ] Acompanhamento ativo
+- [ ] Problemas resolvidos
+- [ ] Documentos entregues

@@ -1,9 +1,9 @@
 # Avaliação Final — Documentação Imobiliária
 ## Quiz
-- 20 perguntas sobre fundamentos, aplicação, estratégia e crescimento.
+- 20 perguntas sobre documentação, prazos, processos e resolução de problemas.
 
 ## Prova Prática
-- Aplicação do método em cenário real.
+- Documentação aplicada a um imóvel real.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

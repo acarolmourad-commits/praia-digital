@@ -1,52 +1,52 @@
 # Curso: Documentação Imobiliária
 ## Nome Comercial
-**Documentação Imobiliária: Método Prático para Documentação imobiliária, matrícula, certidões e segurança**
+**Documentação Imobiliária no Litoral: Método Prático para Montar, Verificar e Resolver Documentação com Segurança**
 
 ## Subtítulo
-Do diagnóstico ao resultado: aprenda a aplicar método, evitar erros e crescer no mercado imobiliário do litoral.
+Do registro ao registro: aprenda a montar, verificar e resolver documentação imobiliária no litoral com método.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de aplicar um método prático para documentação imobiliária, matrícula, certidões e segurança.
+Em até 20 dias, você será capaz de montar, verificar e resolver documentação imobiliária no litoral com segurança.
 
 ## Público-alvo
-- Proprietários de imóveis no litoral
-- Investidores que querem aumentar retorno
-- Corretores que querem se especializar
-- Interesse: imóveis, litoral, investimento, temporada, rentabilidade
+- Corretores de imóveis iniciantes e intermediários
+- Proprietários que querem vender com segurança
+- Investidores que querem evitar riscos
+- Interesse: documentação, imóveis, litoral, vendas, investimento
 
 ## Pré-requisitos
-Nenhum. Curso completo do zero ao resultado.
+Nenhum. Curso completo do zero à documentação segura.
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
-5 horas de aulas
-Total: 5 horas
+4 horas de aulas (20 aulas de 10 a 16 min)
+Total: 4 horas
 
 ## Valor Sugerido
-Curso completo: R$ 247
-À vista: R$ 247
-Parcelado: 12x de R$ 20,58
+Curso completo: R$ 197
+À vista: R$ 167
+Parcelado: 12x de R$ 13,92
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist do curso
-- Planilha de acompanhamento
-- Modelos prontos
+- Checklist de documentação
+- Planilha de controle
+- Modelos de documento
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Domine a documentação de imóveis no litoral para comprar, vender e alugar com segurança"**
+**"Monte, verifique e resolva documentação imobiliária no litoral com segurança"**
 
 ## Big Idea
-Resultados no litoral dependem de método, dados e execução consistente.
+Documentação imobiliária no litoral exige método, checklist e conhecimento de prazos e requisitos locais.
 
 ## Oferta
-- **Curso completo:** R$ 247
+- **Curso completo:** R$ 197
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
@@ -54,112 +54,111 @@ Resultados no litoral dependem de método, dados e execução consistente.
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** documentação imobiliária, matrícula, certidões e segurança
-**Dificuldades:** falta de método, insegurança, resultado baixo
-**Desejos:** crescimento, tranquilidade, autoridade
+**Objetivo:** resolver documentação com segurança
+**Dificuldades:** burocracia, prazos, falta de clareza
+**Desejos:** tranquilidade, vendas rápidas, autoridade
 
 ## Dores
-- Falta de método
-- Insegurança
-- Resultado baixo
+- Burocracia
+- Prazos longos
 - Falta de clareza
-- Tempo limitado
+- Erros que atrasam
+- Insegurança
 
 ## Desejos
-- Crescimento
 - Tranquilidade
+- Vendas rápidas
 - Autoridade
-- Previsibilidade
-- Resultado
+- Crescimento
+- Reconhecimento
 
 ## Objeções
+- "Documentação é complicada"
+- "Demora muito"
+- "Preciso de advogado"
 - "Não compensa"
-- "É complicado"
-- "Não tenho tempo"
 - "Vou errar"
-- "Não funciona"
 
 ## Transformação
-- Método aplicado
-- Resultado crescente
-- Decisão orientada por dados
-- Operação profissional
+- Documentação organizada
+- Processos claros
+- Vendas mais rápidas
+- Autoridade local
 - Tranquilidade
 
 ## Programa Completo
-### Módulo 1 — Fundamentos
-Aula 1.1 — Contexto e oportunidades
-Aula 1.2 — Perfil e objetivos
-Aula 1.3 — Métricas e metas
-Exercício: diagnóstico
+### Módulo 1 — Fundamentos da Documentação
+Aula 1.1 — O que é documentação imobiliária
+Aula 1.2 — Tipos de documento
+Aula 1.3 — Perfil do profissional
+Exercício: diagnóstico de documentação
 
-### Módulo 2 — Aplicação Prática
-Aula 2.1 — Passo a passo prático
-Aula 2.2 — Exemplos reais
-Aula 2.3 — Erros comuns
-Exercício: aplicação
+### Módulo 2 — Documentos Essenciais
+Aula 2.1 — Escritura e registro
+Aula 2.2 — Documentos fiscais
+Aula 2.3 — Documentos de venda
+Exercício: checklist de documentos
 
-### Módulo 3 — Estratégia
-Aula 3.1 — Planejamento
-Aula 3.2 — Decisão e priorização
-Aula 3.3 — Execução
-Exercício: plano
+### Módulo 3 — Processos e Prazos
+Aula 3.1 — Como protocolar
+Aula 3.2 — Prazos e custos
+Aula 3.3 — Problemas comuns
+Exercício: mapa de processos
 
-### Módulo 4 — Crescimento
-Aula 4.1 — Acompanhamento
-Aula 4.2 — Ajustes
-Aula 4.3 — Escala
-Exercício: escala
+### Módulo 4 — Gestão e Crescimento
+Aula 4.1 — Gestão de documentos
+Aula 4.2 — Ajustes e melhorias
+Aula 4.3 — Escala e autoridade
+Exercício: plano de crescimento
 
 ## Carga Horária
-5 horas
+4 horas
 
 ## Material Complementar
-- Checklist
-- Planilha
-- Modelos
+- Checklist de documentação
+- Planilha de controle
+- Modelos de documento
 - PDFs por módulo
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de diagnóstico
-- Checklist de aplicação
-- Checklist de estratégia
-- Checklist de escala
+- Checklist de documentação
+- Checklist de venda
+- Checklist de registro
 
 ## Planilhas
-- Planilha de acompanhamento
-- Planilha de métricas
-- Planilha de ROI
+- Planilha de controle
+- Planilha de prazos
+- Planilha de custos
 
 ## Modelos Prontos
-- Modelo de relatório
+- Modelo de escritura
 - Modelo de proposta
-- Modelo de revisão
+- Modelo de checklist
 
 ## Scripts
 - Script de atendimento
-- Script de negociação
+- Script de venda
 
 ## Prompt de IA
-Prompt para gerar análises e planos.
+Prompt para gerar checklists e fluxos.
 
 ## Exercícios
-- Exercício 1: diagnóstico
-- Exercício 2: aplicação
-- Exercício 3: plano
-- Exercício 4: escala
+- Exercício 1: diagnóstico de documentação
+- Exercício 2: checklist de documentos
+- Exercício 3: mapa de processos
+- Exercício 4: plano de crescimento
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: aplicação do método
+Prova prática: documentação aplicada
 
 ## FAQ
 1. Preciso de experiência? Não.
 2. Em quanto tempo vejo resultado? De 15 a 30 dias.
 3. Vale a pena? Sim.
-4. E se errar? Ajuste com método.
+4. E se errar? Ajuste com checklist.
 5. Tem suporte? Sim.
 
 ## Página de Vendas
@@ -193,7 +192,7 @@ Prova prática: aplicação do método
 [marketing/google-ads.md]
 
 ## CTA
-"Aplique o método agora."
+"Monte documentação imobiliária no litoral com segurança agora."
 
 ## Upsell
 - Mentoria individual: R$ 1.500
@@ -204,4 +203,6 @@ Prova prática: aplicação do método
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Cursos complementares Praia Digital
+- Curso de Avaliação de Imóveis
+- Curso de Análise de Rentabilidade
+- Curso de Gestão Profissional da Locação
