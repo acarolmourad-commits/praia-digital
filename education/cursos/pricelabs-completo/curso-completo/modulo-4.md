@@ -1,33 +1,54 @@
-# Módulo 4 — Conteúdo Premium
-## Aula 4.1 — Introdução ao módulo
-Conteúdo: visão geral, objetivo, aplicação prática no litoral.
+# Módulo 4 — Otimização e Crescimento
 
-## Aula 4.2 — Conceitos aplicados
-Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
+## Introdução
+Acompanhe desempenho, ajuste regras e escale a operação com base em dados de ocupação e receita.
 
-## Aula 4.3 — Estudo de caso
-Conteúdo: caso real, análise, lições.
+## Aula 4.1 — Ajustes por desempenho
+- Comparativo de período
+- Preço vs ocupação
+- Ajuste por canal
+- Revisão mensal
+
+**Exemplo real:** Imóvel em Santos revisou preços mensalmente e aumentou receita em 15% em 3 meses.
+
+## Aula 4.2 — Ocupação vs receita
+- Ocupação saudável
+- Receita por diária
+- Payback
+- Decisão de ajuste
+
+**Estudo de caso:** Imóvel com ocupação alta, mas receita baixa, ajustou preço médio e melhorou margem.
+
+## Aula 4.3 — Automação e análise
+- Alertas de preço
+- Regras automáticas
+- Relatórios
+- Escala gradual
 
 ## Exercício
-Aplicação prática no seu contexto.
+Monte um plano de otimização mensal.
 
 ## Resumo
-Pontos-chave para revisão.
+- Dados orientam ajuste
+- Ocupação não é tudo
+- Automação reduz trabalho
 
 ## Checklist
-- [ ] Conceitos entendidos
-- [ ] Caso analisado
-- [ ] Exercício aplicado
+- [ ] Métricas definidas
+- [ ] Revisão semanal
+- [ ] Ajustes aplicados
+- [ ] Alertas ativos
+- [ ] Plano de crescimento
 
 ## Materiais para download
 - PDF do módulo
-- Templates
-- Planilha
+- Planilha de ROI
+- Modelo de relatório
 
 ## Ferramentas recomendadas
-- Ferramenta 1
-- Ferramenta 2
-- Ferramenta 3
+- PriceLabs
+- Planilha de controle
+- Canal manager
 
 ## Prompt de IA
-Prompt para acelerar tarefas deste módulo.
+"Atue como analista de temporada. Monte um plano de otimização para este imóvel: [dados do imóvel]."

@@ -14,7 +14,7 @@
 - Nenhum no momento
 
 ## Próximo Curso
-- Booking do Zero no Litoral
+- PriceLabs Completo para Temporada no Litoral
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.

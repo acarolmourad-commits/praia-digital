@@ -1,33 +1,49 @@
-# Módulo 1 — Conteúdo Premium
-## Aula 1.1 — Introdução ao módulo
-Conteúdo: visão geral, objetivo, aplicação prática no litoral.
+# Módulo 1 — Fundamentos de Precificação
 
-## Aula 1.2 — Conceitos aplicados
-Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
+## Introdução
+Entenda o mercado de temporada no litoral, o perfil do hóspede e como a precificação impacta ocupação e receita.
 
-## Aula 1.3 — Estudo de caso
-Conteúdo: caso real, análise, lições.
+## Aula 1.1 — O mercado de temporada no litoral
+O litoral tem demanda sazonal, picos em feriados e verão, e hóspedes que valorizam experiência.
+
+**Exemplo real:** Apartamento em Guarujá aumentou receita em 24% após adotar precificação por temporada.
+
+**Estudo de caso:** Casa em Bertioga ajustou preços por eventos e dobrou a receita na alta temporada.
+
+## Aula 1.2 — Perfil do hóspede e preço
+- Famílias: buscam conforto e valor.
+- Casais: pagam por vista e localização.
+- Grupos: priorizam capacidade e preço por pessoa.
+
+## Aula 1.3 — ROI e expectativa de resultado
+- Receita por diária
+- Taxa de ocupação
+- Custos operacionais
+- ROI e payback
 
 ## Exercício
-Aplicação prática no seu contexto.
+Faça o diagnóstico do seu imóvel: preço atual, meta de ocupação e potencial de receita.
 
 ## Resumo
-Pontos-chave para revisão.
+- Precificação afeta receita e ocupação
+- Temporada exige método
+- Dados reduzem risco
 
 ## Checklist
-- [ ] Conceitos entendidos
-- [ ] Caso analisado
-- [ ] Exercício aplicado
+- [ ] Preço atual mapeado
+- [ ] Meta de ocupação definida
+- [ ] Região escolhida
+- [ ] Diferenciais listados
+- [ ] Prazo definido
 
 ## Materiais para download
 - PDF do módulo
-- Templates
-- Planilha
+- Planilha de diagnóstico
 
 ## Ferramentas recomendadas
-- Ferramenta 1
-- Ferramenta 2
-- Ferramenta 3
+- Planilha de preços
+- PriceLabs
+- Consulta de comparáveis
 
 ## Prompt de IA
-Prompt para acelerar tarefas deste módulo.
+"Atue como especialista em precificação de temporada no litoral. Faça um diagnóstico do meu imóvel com base nestas respostas: [insira suas respostas]."

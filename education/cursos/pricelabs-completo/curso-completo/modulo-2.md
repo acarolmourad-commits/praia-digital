@@ -1,33 +1,53 @@
-# Módulo 2 — Conteúdo Premium
-## Aula 2.1 — Introdução ao módulo
-Conteúdo: visão geral, objetivo, aplicação prática no litoral.
+# Módulo 2 — Setup do PriceLabs
 
-## Aula 2.2 — Conceitos aplicados
-Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
+## Introdução
+Configure o PriceLabs do zero, integre canais e prepare regras que protegem margem e ocupação.
 
-## Aula 2.3 — Estudo de caso
-Conteúdo: caso real, análise, lições.
+## Aula 2.1 — Como cadastrar e configurar
+- Cadastro básico
+- Dados do imóvel
+- Comodidades e restrições
+- Localização e mapa
+
+**Exemplo real:** Imóvel em Santos ganhou 30% mais receita após setup completo com dados corretos.
+
+## Aula 2.2 — Dados do imóvel e regras
+- Preço base
+- Mínimo e máximo
+- Estadia mínima
+- Antecipação
+
+**Estudo de caso:** Casa em São Vicente definiu regras de mínimo 2 noites e aumentou receita por estadia.
+
+## Aula 2.3 — Integrações
+- Airbnb
+- Booking
+- Canal manager
+- Calendário
 
 ## Exercício
-Aplicação prática no seu contexto.
+Monte um setup simulado no PriceLabs para o seu imóvel.
 
 ## Resumo
-Pontos-chave para revisão.
+- Setup correto evita surpresas
+- Regras protegem margem
+- Integrações reduzem trabalho
 
 ## Checklist
-- [ ] Conceitos entendidos
-- [ ] Caso analisado
-- [ ] Exercício aplicado
+- [ ] Conta criada
+- [ ] Imóvel cadastrado
+- [ ] Preço base definido
+- [ ] Regras aplicadas
+- [ ] Integrações ativas
 
 ## Materiais para download
 - PDF do módulo
-- Templates
-- Planilha
+- Checklist de configuração
 
 ## Ferramentas recomendadas
-- Ferramenta 1
-- Ferramenta 2
-- Ferramenta 3
+- PriceLabs
+- Canal manager
+- Planilha de preços
 
 ## Prompt de IA
-Prompt para acelerar tarefas deste módulo.
+"Atue como especialista em PriceLabs. Crie um setup sugerido para este imóvel: [dados do imóvel]."

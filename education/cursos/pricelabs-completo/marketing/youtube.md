@@ -1,4 +1,4 @@
-# Roteiro YouTube — Pricelabs Completo
+# Roteiro YouTube — PriceLabs Completo para Temporada no Litoral
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado
