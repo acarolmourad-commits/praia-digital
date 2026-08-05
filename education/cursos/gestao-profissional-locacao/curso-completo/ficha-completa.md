@@ -158,34 +158,34 @@ Prova prática: plano operacional completo
 5. Como escalar? Processos + automação.
 
 ## Página de Vendas
-[Em construção no próximo passo]
+[vendas.html]
 
 ## Landing Page
-[Em construção no próximo passo]
+[index.html]
 
 ## Sequência de E-mails
-[Em construção no próximo passo]
+[email-sequence/sequencia.md]
 
 ## Posts Instagram
-[Em construção no próximo passo]
+[instagram/posts.md]
 
 ## Reels
-[Em construção no próximo passo]
+[marketing/reels.md]
 
 ## Carrosséis
-[Em construção no próximo passo]
+[marketing/carrosseis.md]
 
 ## Artigos SEO
-[Em construção no próximo passo]
+[seo-articles/sumario.md]
 
 ## Roteiros YouTube
-[Em construção no próximo passo]
+[marketing/youtube.md]
 
 ## Anúncios Meta
-[Em construção no próximo passo]
+[marketing/meta-ads.md]
 
 ## Anúncios Google
-[Em construção no próximo passo]
+[marketing/google-ads.md]
 
 ## CTA
 "Profissionalize sua locação e aumente receita."
