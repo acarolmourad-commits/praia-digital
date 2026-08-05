@@ -1,49 +1,70 @@
-# Módulo 4 — Crescimento
+# Módulo 4 — Gestão e Crescimento
 
 ## Introdução
-Acompanhe resultados, ajuste estratégias e escale sem perder controle.
+Gerencie avaliações, acompanhe resultados, ajuste método e escale a consultoria no litoral.
 
-## Aula 4.1 — Acompanhamento
-- Métricas
-- Frequência
-- Formato
-- Aprendizado
+## Aula 4.1 — Gestão de avaliações
+**Organização:**
+- Armazene laudos.
+- Acompanhe vendas.
+- Registre feedback.
 
-**Exemplo real:** Acompanhamento semanal permitiu ajustes rápidos e crescimento contínuo.
+**Revisão:**
+- Semanal: avaliações feitas.
+- Mensal: taxa de aceitação.
+- Trimestral: ajustes de método.
 
-## Aula 4.2 — Ajustes
-- Quando ajustar
-- Como ajustar
-- Validação
+**Exemplo real:**
+Corretor organizou avaliações e aumentou taxa de aceitação de 60% para 85%.
 
-**Estudo de caso:** Ajustes pontuais aumentaram resultado sem aumentar esforço.
+## Aula 4.2 — Ajustes e melhorias
+**Ajustes:**
+- Revise comparáveis.
+- Atualize dados de mercado.
+- Melhore laudo.
 
-## Aula 4.3 — Escala
-- Processos
-- Fornecedores/parcerias
-- Crescimento gradual
+**Melhorias:**
+- Automação de relatórios.
+- Integração com CRM.
+- Treinamento de equipe.
 
-## Exercício
-Monte um plano de escala sustentada.
+**Estudo de caso:**
+Corretor ajustou método e reduziu tempo de laudo de 3 dias para 4 horas.
+
+## Aula 4.3 — Escala e autoridade
+**Escala:**
+- Adicione novos clientes gradualmente.
+- Mantenha qualidade.
+- Padronize processos.
+
+**Autoridade:**
+- Conteúdo educativo.
+- Cases de sucesso.
+- Parcerias locais.
+
+**Exercício:**
+Monte um plano de crescimento para os próximos 90 dias.
 
 ## Resumo
-- Acompanhamento mantém direção
-- Ajustes preservam resultado
-- Escala depende de processo
+- Gestão mantém qualidade.
+- Ajustes reduzem erros.
+- Escala depende de processo.
 
 ## Checklist
+- [ ] Avaliações organizadas
 - [ ] Métricas revisadas
 - [ ] Ajustes aplicados
-- [ ] Escala planejada
+- [ ] Crescimento planejado
 
 ## Materiais para download
 - PDF do módulo
 - Planilha de acompanhamento
+- Modelo de relatório
 
 ## Ferramentas recomendadas
-- Dashboard
+- CRM
 - Planilha
-- Sistema de gestão
+- Sistema de laudo
 
 ## Prompt de IA
-"Atue como especialista em crescimento. Monte um plano de escala para este cenário: [dados]."
+"Atue como avaliador de imóveis. Monte um plano de crescimento para este cenário: [dados]."

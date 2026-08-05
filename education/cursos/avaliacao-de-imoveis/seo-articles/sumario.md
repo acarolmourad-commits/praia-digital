@@ -1,11 +1,11 @@
 # Artigos SEO — Avaliação de Imóveis
-1. Avaliação de Imóveis em 2026: guia completo
-2. Como aplicar Avaliação de Imóveis no litoral
-3. Guia prático para iniciantes
-4. Erros comuns e como evitar
-5. Métricas essenciais
-6. Resultados reais e casos
-7. Ferramentas úteis
-8. Checklist essencial
-9. Perguntas frequentes
-10. Próximos passos
+1. Avaliação de imóveis no litoral em 2026: guia completo
+2. Como avaliar imóveis no litoral
+3. Laudo de avaliação no litoral
+4. Comparáveis no litoral: como usar
+5. Métodos de avaliação no litoral
+6. Preço de imóvel no litoral: como definir
+7. Erros comuns na avaliação no litoral
+8. Ferramentas para avaliação no litoral
+9. ROI de avaliação para corretores no litoral
+10. Autoridade local com avaliações no litoral

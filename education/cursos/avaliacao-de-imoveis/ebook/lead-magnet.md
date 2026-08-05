@@ -1,5 +1,5 @@
 # E-book Derivado — Avaliação de Imóveis
-Título: Guia Rápido para Avaliação de Imóveis
+Título: Guia Rápido de Avaliação de Imóveis no Litoral
 Formato: PDF 20 a 30 páginas
 Preço: gratuito ou R$ 19,90
-Conteúdo: checklist, planilha, dicas rápidas.
+Conteúdo: checklist, planilha, dicas rápidas, modelo de laudo.

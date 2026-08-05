@@ -1,6 +1,9 @@
 # Checklist — Avaliação de Imóveis
-- [ ] Diagnóstico realizado
-- [ ] Objetivos definidos
-- [ ] Aplicação executada
-- [ ] Estratégia traçada
-- [ ] Escala planejada
+- [ ] Dados do imóvel coletados
+- [ ] Comparáveis analisados
+- [ ] Mercado mapeado
+- [ ] Laudo estruturado
+- [ ] Valor justo definido
+- [ ] Apresentação preparada
+- [ ] Proposta fechada
+- [ ] Acompanhamento definido
