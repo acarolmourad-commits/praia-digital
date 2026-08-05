@@ -1,6 +1,6 @@
-# Reels — Especialista Venda Imoveis Litoral
-1. Roteiro: dica em 30s
-2. Roteiro: erro comum
-3. Roteiro: passo a passo
-4. Roteiro: resultado real
-5. Roteiro: comece hoje
+# Reels — Especialista em Venda de Imóveis no Litoral
+1. Roteiro: captação em 30s
+2. Roteiro: objeção comum
+3. Roteiro: proposta forte
+4. Roteiro: fechamento rápido
+5. Roteiro: pós-venda simples

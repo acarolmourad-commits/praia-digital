@@ -1,12 +1,12 @@
-# Módulo 3 — Execução
-## Aula 3.1 — Introdução
-Conteúdo: conceitos e aplicação.
+# Módulo 3 — Proposta e Negociação
+## Aula 3.1 — Proposta de valor
+Conteúdo: estrutura, benefícios, urgência.
 
-## Aula 3.2 — Conceitos essenciais
-Conteúdo: fundamentos e exemplos.
+## Aula 3.2 — Negociação e objeções
+Conteúdo: objeções comuns, contorno, fechamento.
 
-## Aula 3.3 — Aplicação no litoral
-Conteúdo: caso prático no litoral.
+## Aula 3.3 — Documentação e prazos
+Conteúdo: contratos, registros, próximos passos.
 
 ## Exercício
-Aplique o conteúdo no seu contexto.
+Monte uma proposta.

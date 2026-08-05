@@ -1,5 +1,5 @@
-# Sumário do Curso: Captacao Exclusividade
+# Sumário do Curso: Captação e Exclusividade para Corretores
 - Módulo 1: Fundamentos
-- Módulo 2: Método
-- Módulo 3: Execução
-- Módulo 4: Resultado
+- Módulo 2: Abordagem
+- Módulo 3: Proposta
+- Módulo 4: Conversão

@@ -1,6 +1,6 @@
-# Shorts — Especialista Venda Imoveis Litoral
-1. Roteiro: dica em 1 minuto
-2. Roteiro: erro comum
-3. Roteiro: passo a passo
-4. Roteiro: resultado real
-5. Roteiro: comece hoje
+# Shorts — Especialista em Venda de Imóveis no Litoral
+1. Roteiro: dica de captação
+2. Roteiro: objeção rápida
+3. Roteiro: proposta em 1 minuto
+4. Roteiro: fechamento simples
+5. Roteiro: indicação rápida

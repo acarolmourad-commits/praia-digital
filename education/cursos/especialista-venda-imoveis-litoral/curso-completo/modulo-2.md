@@ -1,12 +1,12 @@
-# Módulo 2 — Método
-## Aula 2.1 — Introdução
-Conteúdo: conceitos e aplicação.
+# Módulo 2 — Captação e Atendimento
+## Aula 2.1 — Fontes de leads no litoral
+Conteúdo: anúncios, relacionamento, indicação.
 
-## Aula 2.2 — Conceitos essenciais
-Conteúdo: fundamentos e exemplos.
+## Aula 2.2 — Abordagem e qualificação
+Conteúdo: primeiro contato, perguntas, perfil.
 
-## Aula 2.3 — Aplicação no litoral
-Conteúdo: caso prático no litoral.
+## Aula 2.3 — Apresentação do imóvel
+Conteúdo: roteiro, storytelling, diferenciais.
 
 ## Exercício
-Aplique o conteúdo no seu contexto.
+Monte script de abordagem.

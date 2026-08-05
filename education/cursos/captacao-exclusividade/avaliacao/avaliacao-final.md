@@ -1,9 +1,9 @@
-# Avaliação Final — Captacao Exclusividade
+# Avaliação Final — Captação e Exclusividade para Corretores
 ## Quiz
-- 20 perguntas sobre o conteúdo do curso.
+- 20 perguntas sobre captação, proposta, exclusividade e fechamento.
 
 ## Prova Prática
-- Aplicação do método em um caso real.
+- Plano de captação aplicado.
 
 ## Critério de Aprovação
-- 70% no quiz + prática aprovada pelo mentor.
+- 70% no quiz + plano aprovado pelo mentor.

@@ -1,5 +1,5 @@
-# Meta Ads — Especialista Venda Imoveis Litoral
-Público: 25 a 55 anos, interesse em Especialista Venda Imoveis Litoral, litoral
+# Meta Ads — Especialista em Venda de Imóveis no Litoral
+Público: 25 a 55 anos, interesse em imóveis, vendas, litoral
 Objetivo: leads
 Formato: vídeo + carrossel
 Orçamento sugerido: R$ 40 a R$ 120/dia

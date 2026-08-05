@@ -1,12 +1,12 @@
-# Módulo 4 — Resultado
-## Aula 4.1 — Introdução
-Conteúdo: conceitos e aplicação.
+# Módulo 4 — Conversão
+## Aula 4.1 — Atendimento e objeções
+Conteúdo: visita, objeções, negociação.
 
-## Aula 4.2 — Conceitos essenciais
-Conteúdo: fundamentos e exemplos.
+## Aula 4.2 — Visita e apresentação
+Conteúdo: roteiro, storytelling, fechamento.
 
-## Aula 4.3 — Aplicação no litoral
-Conteúdo: caso prático no litoral.
+## Aula 4.3 — Fechamento e indicação
+Conteúdo: sinais de compra, indicações.
 
 ## Exercício
-Aplique o conteúdo no seu contexto.
+Monte funil de vendas.

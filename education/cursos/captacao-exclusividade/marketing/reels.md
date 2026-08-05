@@ -1,6 +1,6 @@
-# Reels — Captacao Exclusividade
-1. Roteiro: dica em 30s
-2. Roteiro: erro comum
-3. Roteiro: passo a passo
-4. Roteiro: resultado real
-5. Roteiro: comece hoje
+# Reels — Captação e Exclusividade para Corretores
+1. Roteiro: captação em 30s
+2. Roteiro: exclusividade rápida
+3. Roteiro: proposta forte
+4. Roteiro: visita eficaz
+5. Roteiro: fechamento simples

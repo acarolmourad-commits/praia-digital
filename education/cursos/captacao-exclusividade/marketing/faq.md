@@ -1,11 +1,11 @@
-# FAQ — Captacao Exclusividade
-1. Em quanto tempo vejo resultado? De 30 a 60 dias.
-2. Preciso investir muito? Não.
-3. Funciona para qualquer caso? Na maioria.
-4. E se errar? Ajuste rápido.
-5. Vale a pena? Sim.
-6. Preciso de ferramentas? Não obrigatoriamente.
-7. Como medir sucesso? Indicadores.
-8. Posso aplicar sozinho? Pode.
-9. E se eu não tiver experiência? O curso ensina.
-10. Qual o primeiro passo? Defina objetivo.
+# FAQ — Captação e Exclusividade para Corretores
+1. Como captar no litoral? Relacionamento e valor.
+2. Como pedir exclusividade? Proposta clara.
+3. Demora muito? De 15 a 45 dias.
+4. E se o proprietário negar? Ofereça valor primeiro.
+5. Vale a pena para iniciantes? Sim.
+6. Qual canal priorizar? Depende do público.
+7. Como fazer follow-up? Comunicação frequente.
+8. Como medir sucesso? Captações e vendas.
+9. Como lidar com concorrência? Diferenciação.
+10. Preciso de site? Ajuda.
