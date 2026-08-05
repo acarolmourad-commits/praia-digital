@@ -1,6 +1,6 @@
-# TikTok — Comprar Imóvel na Praia Sem Golpes
-1. Roteiro: dica rápida
-2. Roteiro: 1 método, 2 resultados
-3. Roteiro: como aplicar
-4. Roteiro: resultado rápido
-5. Roteiro: case prático
+# TikTok — Comprar Imóvel na Praia sem Golpes
+1. Roteiro: compra sem erro
+2. Roteiro: 1 documento, 2 verificações
+3. Roteiro: como comprar
+4. Roteiro: compra rentável
+5. Roteiro: case de compra

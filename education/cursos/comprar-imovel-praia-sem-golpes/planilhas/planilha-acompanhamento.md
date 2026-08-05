@@ -1,6 +1,11 @@
-# Planilha — Comprar Imóvel na Praia Sem Golpes
+# Planilha — Comprar Imóvel na Praia sem Golpes
 - [ ] Data
-- [ ] Ação
-- [ ] Resultado
-- [ ] Ajuste
+- [ ] Imóvel
+- [ ] Cidade
+- [ ] Preço
+- [ ] Entrada
+- [ ] Financiamento
+- [ ] IPTU
+- [ ] Condomínio
+- [ ] Total
 - [ ] Status

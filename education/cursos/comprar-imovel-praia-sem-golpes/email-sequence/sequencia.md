@@ -1,21 +1,21 @@
-# Sequência de E-mails — Comprar Imóvel na Praia Sem Golpes
+# Sequência de E-mails — Comprar Imóvel na Praia sem Golpes
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido de Comprar Imóvel na Praia Sem Golpes (PDF + planilha)
+Assunto: Guia Rápido: Comprar Imóvel na Praia sem Golpes (PDF + planilha)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: resultado prático
+Assunto: Case: comprador evitou golpe na praia
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Comprar Imóvel na Praia Sem Golpes dá trabalho?"
+Assunto: "Comprar na praia é muito arriscado?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno obteve resultado em 30 dias
+Assunto: Aluno comprou sem golpes em 30 dias
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 
