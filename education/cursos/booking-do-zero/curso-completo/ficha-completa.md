@@ -1,6 +1,6 @@
-# Curso: Booking do Zero
+# Curso: Booking do Zero no Litoral
 ## Nome Comercial
-**Booking do Zero no Litoral: Como Aumentar Ocupação e Revenue em Plataformas de Reserva**
+**Booking do Zero no Litoral: Como Aumentar Ocupação e Receita em Plataformas de Reserva**
 
 ## Subtítulo
 Monte presença profissional no Booking, evite cancelamentos e aumente receita com temporada e long stay.
@@ -10,7 +10,7 @@ Em até 30 dias, você será capaz de estruturar, publicar e otimizar um imóvel
 
 ## Público-alvo
 - Proprietários e investidores de 25 a 55 anos
-- Renda R$ 5k a R$ 30k/mês
+- Renda R$ 5k a R$ 25k/mês
 - Interesse: temporada, long stay, renda extra
 - Perfil: iniciante ou iniciante em plataformas
 
@@ -25,13 +25,13 @@ Total: 6 horas
 Curso completo: R$ 347
 À vista: R$ 287
 Parcelado: 12x de R$ 23,92
-Mini curso: R$ 127
-E-book: R$ 17,90
+Mini curso: R$ 147
+E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
 - Checklist de cadastro
-- Planilhas de preço
+- Templates de anúncio
 - Comunidade fechada
 - Certificado
 
@@ -41,34 +41,39 @@ E-book: R$ 17,90
 ## Big Idea
 Booking exige posicionamento, políticas e avaliação consistentes. Quem aplica o método certo aumenta receita e reduz cancelamentos.
 
+## Oferta
+- **Curso completo:** R$ 347
+- **Mini curso:** R$ 147
+- **E-book:** R$ 19,90
+
 ## Avatar
 **Nome:** Maria / João
-**Idade:** 28 a 50 anos
-**Renda:** R$ 6k a R$ 25k/mês
+**Idade:** 25 a 50 anos
+**Renda:** R$ 5k a R$ 20k/mês
 **Objetivo:** aumentar ocupação e receita
-**Dificuldades:** concorrência, avaliações, políticas
-**Desejos:** reservas constantes, renda previsível
+**Dificuldades:** cadastro, políticas, avaliações
+**Desejos:** reservas constantes, renda previsível, avaliação boa
 
 ## Dores
-- Cadastro básico sem conversão
+- Cadastro sem conversão
 - Fotos ruins
 - Não entende políticas do Booking
 - Medo de avaliações ruins
 - Falta de tempo para gerir
 
 ## Desejos
+- Anúncio otimizado
 - Reservas recorrentes
 - Ocupação alta
-- Avaliação boa
 - Renda previsível
 - Processo simples
 
 ## Objeções
-- "Já tentei e não deu certo"
 - "É muito trabalhoso"
 - "Não sei tirar fotos"
 - "E se eu receber um hóspede ruim?"
 - "Não compensa"
+- "Já tentei e não deu certo"
 
 ## Transformação
 - Cadastro profissional
@@ -79,21 +84,21 @@ Booking exige posicionamento, políticas e avaliação consistentes. Quem aplica
 
 ## Programa Completo
 ### Módulo 1 — Fundamentos
-Aula 1.1 — Como funciona o modelo do Booking
-Aula 1.2 — Temporada vs long stay
-Aula 1.3 — Perfil do hóspede
+Aula 1.1 — Como funciona o Booking no litoral
+Aula 1.2 — Perfil do hóspede
+Aula 1.3 — O que o hóspede valoriza
 Exercício: defina objetivo de ocupação
 
 ### Módulo 2 — Preparação do Imóvel
-Aula 2.1 — O que o hóspede valoriza
-Aula 2.2 — Fotos e descrição
+Aula 2.1 — Fotos e vídeos profissionais
+Aula 2.2 — Descrição e diferenciais
 Aula 2.3 — Regras da casa
 Exercício: roteiro de fotos
 
-### Módulo 3 — Cadastro e Otimização
+### Módulo 3 — Anúncio e Otimização
 Aula 3.1 — Criando o anúncio
-Aula 3.2 — Preço, disponibilidade e políticas
-Aula 3.3 — SEO local e visibilidade
+Aula 3.2 — SEO local e visibilidade
+Aula 3.3 — Preço, disponibilidade e políticas
 Exercício: anúncio publicado
 
 ### Módulo 4 — Gestão e Crescimento
@@ -147,39 +152,39 @@ Prova prática: anúncio otimizado
 ## FAQ
 1. Preciso de alvará? Verifique a prefeitura.
 2. Como definir preço? Use sazonalidade e comparativos.
-3. E se eu receber uma avaliação ruim? Responda e ajuste.
+3. E se eu receber uma avaliação ruim? Responda rápido e ajuste.
 4. Vale a pena contratar limpeza? Sim.
 5. Airbnb ou Booking? Depende do público.
 
 ## Página de Vendas
-[Em construção no próximo passo]
+[vendas.html]
 
 ## Landing Page
-[Em construção no próximo passo]
+[index.html]
 
 ## Sequência de E-mails
-[Em construção no próximo passo]
+[email-sequence/sequencia.md]
 
 ## Posts Instagram
-[Em construção no próximo passo]
+[instagram/posts.md]
 
 ## Reels
-[Em construção no próximo passo]
+[marketing/reels.md]
 
 ## Carrosséis
-[Em construção no próximo passo]
+[marketing/carrosseis.md]
 
 ## Artigos SEO
-[Em construção no próximo passo]
+[seo-articles/sumario.md]
 
 ## Roteiros YouTube
-[Em construção no próximo passo]
+[marketing/youtube.md]
 
 ## Anúncios Meta
-[Em construção no próximo passo]
+[marketing/meta-ads.md]
 
 ## Anúncios Google
-[Em construção no próximo passo]
+[marketing/google-ads.md]
 
 ## CTA
 "Monte seu Booking no litoral em até 30 dias."
@@ -189,8 +194,8 @@ Prova prática: anúncio otimizado
 - Acompanhamento de gestão: R$ 2.000
 
 ## Downsell
-- Mini curso: R$ 127
-- E-book: R$ 17,90
+- Mini curso: R$ 147
+- E-book: R$ 19,90
 
 ## Cross-sell
 - Curso de Airbnb do Zero
