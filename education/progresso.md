@@ -32,12 +32,13 @@
 - Financiamento Imobiliário — PRONTO PARA VENDA
 - Flipping Completo — PRONTO PARA VENDA
 - Guia do Investidor Imobiliário Avançado — PRONTO PARA VENDA
+- Documentação Completa para Imóveis no Litoral — PRONTO PARA VENDA
 
 ## Em Produção
 - Nenhum no momento
 
 ## Próximo Curso
-- Documentação Completa para Imóveis no Litoral
+- Captação de Imóveis para Corretores
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.
