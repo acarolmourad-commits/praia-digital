@@ -48,12 +48,13 @@
 - Fechamento de Vendas para Corretores — PRONTO PARA VENDA
 - Gestão de Propostas para Corretores — PRONTO PARA VENDA
 - Rotinas de Vendas para Corretores — PRONTO PARA VENDA
+- Recuperação de Vendas para Corretores — PRONTO PARA VENDA
 
 ## Em Produção
 - Nenhum no momento
 
 ## Próximo Curso
-- Recuperação de Vendas para Corretores
+- Gestão de Conflitos para Corretores
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.
