@@ -1,6 +1,6 @@
 # Reels — Marketing Imobiliário para Corretores
-1. Roteiro: dica rápida
-2. Roteiro: passo a passo
-3. Roteiro: erro comum
-4. Roteiro: case rápido
-5. Roteiro: resultado
+1. Roteiro: lead em 30s
+2. Roteiro: dica de conteúdo
+3. Roteiro: erro de marketing
+4. Roteiro: case de venda
+5. Roteiro: SEO local simples

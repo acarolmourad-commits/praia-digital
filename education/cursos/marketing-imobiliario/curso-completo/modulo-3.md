@@ -1,49 +1,73 @@
-# Módulo 3 — Estratégia
+# Módulo 3 — Captação de Leads e Conversão
 
 ## Introdução
-Planeje, decida e priorize ações para crescer com consistência.
+Capture leads qualificados, nutra relacionamento e converta vendas com um funil de marketing e vendas estruturado.
 
-## Aula 3.1 — Planejamento
-- Objetivos
-- Ações
-- Prazos
-- Recursos
+## Aula 3.1 — Como captar leads qualificados
+**Canais de captação:**
+- Anúncios no Google e Meta.
+- Conteúdo educativo: SEO, YouTube, Instagram.
+- Indicações de clientes satisfeitos.
+- Eventos locais.
 
-**Exemplo real:** Planejamento simples permitiu crescer sem surpresas.
+**Qualificação:**
+- Orçamento.
+- Prazo.
+- Perfil: comprador ou investidor.
+- Urgência.
 
-## Aula 3.2 — Decisão e priorização
-- Critérios de decisão
-- Priorização
-- Risco
+**Exemplo real:**
+Corretor usou anúncios segmentados para interesses em litoral e investimento e gerou 30 leads qualificados em 1 mês.
 
-**Estudo de caso:** Decisão baseada em dados evitou prejuízo e aumentou retorno.
+## Aula 3.2 — Follow-up e nutrição
+**Follow-up:**
+- Resposta em até 1 hora.
+- Ligação 24h após o primeiro contato.
+- Envio de conteúdo relevante semanalmente.
 
-## Aula 3.3 — Execução
-- Rotina
-- Acompanhamento
-- Ajuste rápido
+**Nutrição:**
+- Envie cases, dicas e imóveis relevantes.
+- Personalize mensagens.
+- Use CRM para organizar.
 
-## Exercício
-Monte um plano estratégico para os próximos 30 dias.
+**Estudo de caso:**
+Corretor implementou follow-up automático e aumentou taxa de conversão de 12% para 28%.
+
+## Aula 3.3 — Proposta e fechamento
+**Proposta:**
+- Dados do imóvel.
+- Comparáveis.
+- Condições de compra.
+- Prazo de fechamento.
+
+**Fechamento:**
+- Apresente dados, não opiniões.
+- Mostre valor, não apenas preço.
+- Seja transparente.
+
+**Exercício:**
+Monte um funil de vendas para os próximos 30 dias.
 
 ## Resumo
-- Planejamento evita desperdício
-- Decisão orientada reduz risco
-- Execução gera resultado
+- Leads qualificados aumentam conversão.
+- Follow-up rápido fecha vendas.
+- Proposta clara reduz objeções.
 
 ## Checklist
-- [ ] Plano definido
-- [ ] Ações listadas
-- [ ] Prazo estabelecido
+- [ ] Funil definido
+- [ ] Leads captados
+- [ ] Follow-up ativo
+- [ ] Proposta preparada
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de plano
+- Planilha de leads
+- Modelo de proposta
 
 ## Ferramentas recomendadas
-- Planner
-- Planilha
-- App de metas
+- CRM de vendas
+- Planilha de métricas
+- Anúncios pagos
 
 ## Prompt de IA
-"Atue como estrategista. Monte um plano prático para este objetivo: [dados]."
+"Atue como especialista em marketing imobiliário. Monte um funil de vendas para este corretor: [dados]."

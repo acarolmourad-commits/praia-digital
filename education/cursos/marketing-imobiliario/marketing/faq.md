@@ -2,10 +2,10 @@
 1. Preciso de experiência? Não.
 2. Em quanto tempo vejo resultado? De 15 a 30 dias.
 3. Vale a pena? Sim.
-4. E se errar? Ajuste com método.
-5. Tem suporte? Sim.
-6. Como medir sucesso? Métricas claras.
-7. Preciso de ferramentas? Ajuda.
-8. Funciona para qualquer imóvel? Com método, sim.
-9. Como começar? Aplicação prática.
-10. Qual o primeiro passo? Diagnóstico.
+4. Qual canal priorizar? Instagram e Google.
+5. Como medir sucesso? Leads e vendas.
+6. Preciso de orçamento alto? Não.
+7. E se o conteúdo não engajar? Ajuste com dados.
+8. Como medir ROI? Leads e vendas.
+9. Follow-up funciona? Sim.
+10. Como escalar? Processos e automação.
