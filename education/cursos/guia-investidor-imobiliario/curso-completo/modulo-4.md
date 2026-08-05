@@ -1,49 +1,65 @@
-# Módulo 4 — Crescimento
+# Módulo 4 — Gestão e Crescimento
 
 ## Introdução
-Acompanhe resultados, ajuste estratégias e escale sem perder controle.
+Gerencie imóveis, acompanhe resultados, ajuste estratégias e escale investimentos no litoral.
 
-## Aula 4.1 — Acompanhamento
-- Métricas
-- Frequência
-- Formato
-- Aprendizado
+## Aula 4.1 — Gestão de imóveis
+**Organização:**
+- Controle de custos.
+- Acompanhamento de aluguéis.
+- Manutenção.
 
-**Exemplo real:** Acompanhamento semanal permitiu ajustes rápidos e crescimento contínuo.
+**Dicas:**
+- Mantenha documentação atualizada.
+- Acompanhe mercado.
 
-## Aula 4.2 — Ajustes
-- Quando ajustar
-- Como ajustar
-- Validação
+**Exemplo real:**
+Investidor organizou gestão e aumentou renda em 15%.
 
-**Estudo de caso:** Ajustes pontuais aumentaram resultado sem aumentar esforço.
+## Aula 4.2 — Renda e valorização
+**Renda:**
+- Aluguéis.
+- Temporada.
 
-## Aula 4.3 — Escala
-- Processos
-- Fornecedores/parcerias
-- Crescimento gradual
+**Valorização:**
+- Mercado.
+- Obras.
+- Localização.
 
-## Exercício
-Monte um plano de escala sustentada.
+**Estudo de caso:**
+Investidor alugou por temporada e dobrou renda.
+
+## Aula 4.3 — Escala e carteira
+**Escala:**
+- Adicione imóveis gradualmente.
+- Mantenha controle.
+- Padronize processos.
+
+**Carteira:**
+- Diversifique.
+- Acompanhe resultados.
+
+**Exercício:**
+Monte um plano de crescimento para os próximos 90 dias.
 
 ## Resumo
-- Acompanhamento mantém direção
-- Ajustes preservam resultado
-- Escala depende de processo
+- Gestão protege investimento.
+- Renda e valorização geram crescimento.
+- Escala depende de método.
 
 ## Checklist
-- [ ] Métricas revisadas
-- [ ] Ajustes aplicados
-- [ ] Escala planejada
+- [ ] Imóveis organizados
+- [ ] Renda acompanhada
+- [ ] Crescimento planejado
 
 ## Materiais para download
 - PDF do módulo
 - Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Dashboard
+- CRM
 - Planilha
-- Sistema de gestão
+- Sistema de alertas
 
 ## Prompt de IA
-"Atue como especialista em crescimento. Monte um plano de escala para este cenário: [dados]."
+"Atue como especialista em investimento imobiliário. Monte um plano de crescimento para este cenário: [dados]."

@@ -1,6 +1,10 @@
 # Planilha — Guia do Investidor Imobiliário
 - [ ] Data
-- [ ] Ação
-- [ ] Resultado
-- [ ] Ajuste
+- [ ] Imóvel
+- [ ] Cidade
+- [ ] Compra
+- [ ] Reforma
+- [ ] Renda
+- [ ] Custos
+- [ ] ROI
 - [ ] Status

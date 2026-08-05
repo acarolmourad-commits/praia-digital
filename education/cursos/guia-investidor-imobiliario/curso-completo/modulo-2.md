@@ -1,48 +1,71 @@
-# Módulo 2 — Aplicação Prática
+# Módulo 2 — Oportunidades e Análise
 
 ## Introdução
-Aplique o método na prática com exemplos reais e evite erros comuns.
+Aprenda a encontrar oportunidades, analisar viabilidade e comparar mercados no litoral.
 
-## Aula 2.1 — Passo a passo prático
-- Etapas claras
-- Ação imediata
-- Verificação de resultado
+## Aula 2.1 — Como encontrar oportunidades
+**Canais:**
+- Portais de imóveis.
+- Indicações.
+- Anúncios de venda rápida.
 
-**Exemplo real:** Profissional aplicou o passo a passo e obteve ganhos rápidos em 15 dias.
+**Critérios:**
+- Preço abaixo do mercado.
+- Documentação simples.
+- Localização com demanda.
 
-## Aula 2.2 — Exemplos reais
-- Caso 1
-- Caso 2
-- Lições aplicáveis
+**Exemplo real:**
+Investidor encontrou imóvel por R$ 150 mil e obteve renda.
 
-**Estudo de caso:** Aplicação prática gerou aumento mensurável em 30 dias.
+## Aula 2.2 — Análise de viabilidade
+**Dados:**
+- Compra.
+- Reforma.
+- Custos operacionais.
+- Renda estimada.
+- Valorização.
 
-## Aula 2.3 — Erros comuns
-- Erro 1
-- Erro 2
-- Erro 3
-- Como evitar
+**Exemplo prático:**
+- Compra: R$ 150 mil.
+- Reforma: R$ 20 mil.
+- Renda: R$ 2.500/mês.
+- Valorização: 8% ao ano.
 
-## Exercício
-Aplique o método em um cenário real.
+**Estudo de caso:**
+Investidor analisou 5 oportunidades e escolheu a melhor.
+
+## Aula 2.3 — Comparáveis e mercado
+**Comparáveis:**
+- Imóveis similares.
+- Preços praticados.
+- Renda média.
+
+**Mercado:**
+- Demanda.
+- Sazonalidade.
+- Tendências.
+
+**Exercício:**
+Faça uma análise de viabilidade para um imóvel real.
 
 ## Resumo
-- Passo a passo reduz risco
-- Exemplos aceleram aprendizado
-- Erros evitados poupam tempo
+- Oportunidade exige dados.
+- Viabilidade define retorno.
+- Mercado orienta decisão.
 
 ## Checklist
-- [ ] Passos executados
-- [ ] Resultados verificados
-- [ ] Ajustes aplicados
+- [ ] Oportunidades prospectadas
+- [ ] Viabilidade calculada
+- [ ] Comparáveis analisados
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de aplicação
+- Planilha de oportunidades
 
 ## Ferramentas recomendadas
-- Planilha de acompanhamento
-- App de gestão
+- Portais de imóveis
+- Planilha
+- Consultorias
 
 ## Prompt de IA
-"Atue como especialista prático. Monte um plano de aplicação para este cenário: [dados]."
+"Atue como especialista em investimento imobiliário. Analise esta oportunidade: [dados]."

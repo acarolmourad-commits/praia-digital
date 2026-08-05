@@ -1,6 +1,6 @@
 # TikTok — Guia do Investidor Imobiliário
-1. Roteiro: dica rápida
-2. Roteiro: 1 método, 2 resultados
-3. Roteiro: como aplicar
-4. Roteiro: resultado rápido
-5. Roteiro: case prático
+1. Roteiro: investimento sem erro
+2. Roteiro: 1 imóvel, 2 retornos
+3. Roteiro: como investir
+4. Roteiro: renda rentável
+5. Roteiro: case de investimento
