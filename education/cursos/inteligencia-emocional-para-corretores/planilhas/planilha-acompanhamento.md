@@ -1,0 +1,11 @@
+# Planilha — Inteligência Emocional para Corretores
+- [ ] Data
+- [ ] Cliente
+- [ ] Imóvel
+- [ ] Cidade
+- [ ] Emoção
+- [ ] Ação
+- [ ] Follow-up
+- [ ] Venda
+- [ ] Receita
+- [ ] Status
