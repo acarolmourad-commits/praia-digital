@@ -4,7 +4,8 @@ from pydantic import BaseModel
 from typing import Optional, List
 from academy.core.database import get_db
 from academy.core.models import Course, Enrollment, EnrollmentStatus, Payment, PaymentStatus
-import os, requests
+import os
+import requests
 
 router = APIRouter()
 
@@ -23,6 +24,7 @@ MERCADOPAGO_TOKEN = os.getenv("MERCADOPAGO_TOKEN", "")
 MERCADOPAGO_PUBLIC_KEY = os.getenv("MERCADOPAGO_PUBLIC_KEY", "")
 BASE_URL = os.getenv("BASE_URL", "http://localhost:8000")
 
+
 def _build_payment_payload(enrollment_id: int, total: int, payer: dict):
     return {
         "items": [
@@ -36,7 +38,10 @@ def _build_payment_payload(enrollment_id: int, total: int, payer: dict):
         "payer": {
             "email": payer.get("email", "comprador@example.com"),
             "first_name": payer.get("name", "Comprador"),
-            "identification": {"type": "CPF", "number": payer.get("document", "00000000000")},
+            "identification": {
+                "type": "CPF",
+                "number": payer.get("document", "00000000000"),
+            },
         },
         "back_urls": {
             "success": f"{BASE_URL}/education/checkout.html?status=approved&enrollment_id={enrollment_id}",
@@ -47,6 +52,7 @@ def _build_payment_payload(enrollment_id: int, total: int, payer: dict):
         "notification_url": f"{BASE_URL}/payments/mercadopago/webhook",
         "external_reference": str(enrollment_id),
     }
+
 
 @router.post("/checkout")
 def public_checkout(payload: CheckoutPayload, db: Session = Depends(get_db)):
@@ -68,15 +74,36 @@ def public_checkout(payload: CheckoutPayload, db: Session = Depends(get_db)):
     if MERCADOPAGO_TOKEN:
         try:
             headers = {"Authorization": f"Bearer {MERCADOPAGO_TOKEN}", "Content-Type": "application/json"}
-            mp_payload = _build_payment_payload(enrollment.id, total, {"name": payload.buyer_name or "", "email": payload.buyer_email or "", "document": payload.buyer_document or ""})
+            mp_payload = _build_payment_payload(enrollment.id, total, {
+                "name": payload.buyer_name or "",
+                "email": payload.buyer_email or "",
+                "document": payload.buyer_document or "",
+            })
             resp = requests.post(f"{MERCADOPAGO_API}/checkout/preferences", json=mp_payload, headers=headers, timeout=20)
             resp.raise_for_status()
             data = resp.json()
-            return {"checkout_url": data.get("init_point"), "order_id": enrollment.id, "payment_id": payment.id, "total": total, "currency": "BRL", "status": "pending", "message": "Pedido criado."}
-        except requests.RequestException:
-            pass
+            return {
+                "checkout_url": data.get("init_point"),
+                "order_id": enrollment.id,
+                "payment_id": payment.id,
+                "total": total,
+                "currency": "BRL",
+                "status": "pending",
+                "message": "Pedido criado.",
+            }
+        except requests.RequestException as e:
+            raise HTTPException(status_code=502, detail=f"Erro ao criar preferência no Mercado Pago: {str(e)}")
 
-    return {"checkout_url": f"/education/checkout.html?order_id={enrollment.id}", "order_id": enrollment.id, "payment_id": payment.id, "total": total, "currency": "BRL", "status": "pending", "message": "Pedido criado."}
+    return {
+        "checkout_url": f"{BASE_URL}/education/checkout.html?order_id={enrollment.id}",
+        "order_id": enrollment.id,
+        "payment_id": payment.id,
+        "total": total,
+        "currency": "BRL",
+        "status": "pending",
+        "message": "Pedido criado.",
+    }
+
 
 @router.get("/checkout/status")
 def checkout_status(order_id: int, db: Session = Depends(get_db)):
@@ -84,17 +111,24 @@ def checkout_status(order_id: int, db: Session = Depends(get_db)):
     if not payment:
         raise HTTPException(status_code=404, detail="Pedido não encontrado")
     enrollment = db.query(Enrollment).filter(Enrollment.id == order_id).first()
-    return {"order_id": order_id, "status": enrollment.status if enrollment else "unknown", "payment_status": payment.status if payment else "unknown"}
+    return {
+        "order_id": order_id,
+        "status": enrollment.status if enrollment else "unknown",
+        "payment_status": payment.status if payment else "unknown",
+    }
+
 
 @router.post("/mercadopago/webhook")
 def mercadopago_webhook(payload: dict, db: Session = Depends(get_db)):
     if payload.get("type") != "payment":
         return {"ok": True}
+
     data = payload.get("data", {})
     status = data.get("status")
     external_ref = str(data.get("external_reference", ""))
     if not external_ref:
         return {"ok": True}
+
     try:
         enrollment_id = int(external_ref)
     except ValueError:
@@ -116,5 +150,22 @@ def mercadopago_webhook(payload: dict, db: Session = Depends(get_db)):
     elif status == "pending":
         enrollment.status = EnrollmentStatus.pending.value
         payment.status = PaymentStatus.pending.value
+    elif status == "refunded":
+        enrollment.status = EnrollmentStatus.cancelled.value
+        payment.status = PaymentStatus.refunded.value
+    elif status == "cancelled":
+        enrollment.status = EnrollmentStatus.cancelled.value
+        payment.status = PaymentStatus.cancelled.value
     db.commit()
     return {"ok": True}
+
+
+@router.get("/mercadopago/payment/{payment_id}")
+def get_mercadopago_payment(payment_id: str):
+    if not MERCADOPAGO_TOKEN:
+        raise HTTPException(status_code=500, detail="Mercado Pago não configurado")
+    headers = {"Authorization": f"Bearer {MERCADOPAGO_TOKEN}"}
+    resp = requests.get(f"{MERCADOPAGO_API}/payments/{payment_id}", headers=headers, timeout=20)
+    if resp.status_code != 200:
+        raise HTTPException(status_code=resp.status_code, detail="Erro ao consultar pagamento")
+    return resp.json()
