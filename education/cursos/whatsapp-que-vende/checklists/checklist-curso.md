@@ -1,6 +1,8 @@
-# Checklist — WhatsApp que Vende no Litoral
-- [ ] Diagnóstico realizado
-- [ ] Objetivos definidos
-- [ ] Aplicação executada
-- [ ] Estratégia traçada
-- [ ] Escala planejada
+# Checklist — WhatsApp que Vende
+- [ ] Diagnóstico de WhatsApp
+- [ ] Atendimento estruturado
+- [ ] Follow-up criado
+- [ ] Templates prontos
+- [ ] Automação aplicada
+- [ ] Métricas definidas
+- [ ] Crescimento planejado

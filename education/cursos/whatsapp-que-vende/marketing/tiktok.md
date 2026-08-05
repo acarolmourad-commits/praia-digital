@@ -1,6 +1,6 @@
-# TikTok — WhatsApp que Vende no Litoral
-1. Roteiro: dica rápida
-2. Roteiro: 1 método, 2 resultados
-3. Roteiro: como aplicar
-4. Roteiro: resultado rápido
-5. Roteiro: case prático
+# TikTok — WhatsApp que Vende
+1. Roteiro: venda sem erro
+2. Roteiro: 1 mensagem, 2 vendas
+3. Roteiro: como follow-up
+4. Roteiro: atendimento rentável
+5. Roteiro: case de WhatsApp

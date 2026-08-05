@@ -1,9 +1,9 @@
-# Avaliação Final — WhatsApp que Vende no Litoral
+# Avaliação Final — WhatsApp que Vende
 ## Quiz
-- 20 perguntas sobre fundamentos, aplicação, estratégia e crescimento.
+- 20 perguntas sobre WhatsApp, atendimento, follow-up e vendas.
 
 ## Prova Prática
-- Aplicação do método em cenário real.
+- Fluxo de atendimento aplicado a um cenário real.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

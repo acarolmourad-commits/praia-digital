@@ -1,49 +1,54 @@
-# Módulo 4 — Crescimento
+# Módulo 4 — Vendas e Crescimento
 
 ## Introdução
-Acompanhe resultados, ajuste estratégias e escale sem perder controle.
+Use WhatsApp para vender mais, acompanhar métricas e escalar atendimento no litoral.
 
-## Aula 4.1 — Acompanhamento
-- Métricas
-- Frequência
-- Formato
-- Aprendizado
+## Aula 4.1 — Vendas com WhatsApp
+**Vendas:**
+- Proposta por WhatsApp.
+- Follow-up de proposta.
+- Fechamento.
 
-**Exemplo real:** Acompanhamento semanal permitiu ajustes rápidos e crescimento contínuo.
+**Exemplo real:**
+Corretor fechou 3 vendas em 1 mês com WhatsApp.
 
-## Aula 4.2 — Ajustes
-- Quando ajustar
-- Como ajustar
-- Validação
+## Aula 4.2 — Métricas e ajustes
+**Métricas:**
+- Tempo de resposta.
+- Follow-up enviado.
+- Vendas fechadas.
 
-**Estudo de caso:** Ajustes pontuais aumentaram resultado sem aumentar esforço.
+**Ajustes:**
+- Revise semanalmente.
+- Teste novas mensagens.
 
 ## Aula 4.3 — Escala
-- Processos
-- Fornecedores/parcerias
-- Crescimento gradual
+**Escala:**
+- Adicione leads gradualmente.
+- Mantenha qualidade.
+- Padronize processos.
 
-## Exercício
-Monte um plano de escala sustentada.
+**Exercício:**
+Monte um plano de crescimento para os próximos 90 dias.
 
 ## Resumo
-- Acompanhamento mantém direção
-- Ajustes preservam resultado
-- Escala depende de processo
+- WhatsApp acelera vendas.
+- Métricas orientam ajustes.
+- Escala depende de método.
 
 ## Checklist
+- [ ] Vendas acompanhadas
 - [ ] Métricas revisadas
-- [ ] Ajustes aplicados
-- [ ] Escala planejada
+- [ ] Crescimento planejado
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de acompanhamento
+- Planilha de métricas
 
 ## Ferramentas recomendadas
-- Dashboard
-- Planilha
-- Sistema de gestão
+- WhatsApp Business
+- CRM
+- Automação
 
 ## Prompt de IA
-"Atue como especialista em crescimento. Monte um plano de escala para este cenário: [dados]."
+"Atue como especialista em vendas por WhatsApp. Monte um plano de crescimento para este cenário: [dados]."

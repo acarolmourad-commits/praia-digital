@@ -1,6 +1,9 @@
-# Planilha — WhatsApp que Vende no Litoral
+# Planilha — WhatsApp que Vende
 - [ ] Data
-- [ ] Ação
-- [ ] Resultado
-- [ ] Ajuste
+- [ ] Lead
+- [ ] Canal
 - [ ] Status
+- [ ] Follow-up
+- [ ] Venda
+- [ ] Receita
+- [ ] Observação

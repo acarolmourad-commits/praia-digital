@@ -1,37 +1,54 @@
-# Módulo 1 — Fundamentos
+# Módulo 1 — Fundamentos do WhatsApp no Imobiliário
 
 ## Introdução
-Entenda o contexto, o seu perfil e as métricas essenciais para WhatsApp, atendimento, follow-up e vendas.
+Entenda o papel do WhatsApp no mercado imobiliário, o método e o perfil do corretor no litoral.
 
-## Aula 1.1 — Contexto e oportunidades
-- Mercado atual
-- Oportunidades no litoral
-- Particularidades regionais
+## Aula 1.1 — O que é WhatsApp no imobiliário
+WhatsApp no imobiliário significa usar o aplicativo para atender leads, fazer follow-up e fechar vendas com rapidez e personalização.
 
-**Exemplo real:** Profissional identificou oportunidade em região em crescimento e aumentou resultado em 25%.
+**Características:**
+- Atendimento rápido.
+- Follow-up direto.
+- Relacionamento próximo.
 
-## Aula 1.2 — Perfil e objetivos
-- Perfil do aluno
-- Objetivos claros
-- Metas realistas
+**Exemplo real:**
+Corretor aumentou vendas em 35% usando WhatsApp.
 
-## Aula 1.3 — Métricas e metas
-- Métricas essenciais
-- Metas de curto, médio e longo prazo
-- Revisão
+## Aula 1.2 — Perfil do corretor
+**Iniciante:**
+- Foco: atendimento básico, mensagens curtas.
+- Erro comum: mensagens genéricas.
 
-## Exercício
-Faça o diagnóstico do seu cenário atual.
+**Intermediário:**
+- Foco: follow-up, templates.
+- Erro comum: automação sem personalização.
+
+**Avançado:**
+- Foco: escala, integrações.
+- Erro comum: volume sem qualidade.
+
+**Exercício:**
+Faça o diagnóstico do seu uso de WhatsApp.
+
+## Aula 1.3 — Método e metas
+**Método:**
+- Atendimento estruturado.
+- Follow-up constante.
+- Mensagens persuasivas.
+
+**Metas:**
+- Resposta em até 5 min.
+- Follow-up semanal.
+- Fechamento mensal.
 
 ## Resumo
-- Contexto orienta decisão
-- Perfil evita erros
-- Métricas medem resultado
+- WhatsApp reduz distância.
+- Perfil claro orienta ação.
+- Método gera resultado.
 
 ## Checklist
-- [ ] Cenário mapeado
 - [ ] Objetivos definidos
-- [ ] Métricas escolhidas
+- [ ] Método escolhido
 - [ ] Metas traçadas
 
 ## Materiais para download
@@ -39,9 +56,9 @@ Faça o diagnóstico do seu cenário atual.
 - Planilha de diagnóstico
 
 ## Ferramentas recomendadas
-- Planilha
-- Indicadores
-- Consultas locais
+- WhatsApp Business
+- CRM
+- Automação
 
 ## Prompt de IA
-"Atue como especialista em WhatsApp, atendimento, follow-up e vendas. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
+"Atue como especialista em vendas por WhatsApp. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
