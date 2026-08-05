@@ -1,6 +1,6 @@
 # Roteiro de Webinar — Captação e Exclusividade para Corretores
 1. Abertura: dor do público
-2. Case: resultado prático
+2. Case: captação de imóveis exclusivos
 3. Método: 4 passos
 4. Prova social
 5. Oferta e bônus

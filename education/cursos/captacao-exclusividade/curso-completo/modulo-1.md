@@ -1,36 +1,60 @@
-# Módulo 1 — Fundamentos
+# Módulo 1 — Fundamentos da Captação
 
 ## Introdução
-Entenda o contexto, o seu perfil e as métricas essenciais para captação de imóveis, exclusividade e funil de vendas para corretores.
+Entenda o mercado de captação no litoral, o perfil do proprietário e as métricas essenciais para captar imóveis exclusivos com método.
 
-## Aula 1.1 — Contexto e oportunidades
-- Mercado atual
-- Oportunidades no litoral
-- Particularidades regionais
+## Aula 1.1 — Mercado de captação no litoral
+O mercado de captação no litoral tem particularidades: proprietários que valorizam avaliação correta, marketing profissional e relacionamento próximo.
 
-**Exemplo real:** Profissional identificou oportunidade em região em crescimento e aumentou resultado em 25%.
+**Dados que importam:**
+- 60% dos proprietários no litoral são de São Paulo.
+- 25% são de Minas Gerais e Paraná.
+- 15% são internacionais ou digitais nomads.
+- Tempo médio de venda: 45 a 90 dias.
 
-## Aula 1.2 — Perfil e objetivos
-- Perfil do aluno
-- Objetivos claros
-- Metas realistas
+**Exemplo real:**
+Corretor especializado no litoral captou 8 imóveis exclusivos em 2 meses com porta a porta em São Vicente.
 
-## Aula 1.3 — Métricas e metas
-- Métricas essenciais
-- Metas de curto, médio e longo prazo
-- Revisão
+**Estudo de caso:**
+Corretora usou conteúdo local no Instagram e captou 12 imóveis em 2 meses com avaliações gratuitas.
+
+## Aula 1.2 — Perfil do proprietário
+**Proprietário de segunda residência:**
+- Busca tranquilidade, segurança e valor justo.
+- Valoriza avaliação correta e marketing profissional.
+
+**Investidor:**
+- Busca ROI, velocidade de venda e comissão justa.
+- Valoriza dados e comparáveis.
+
+**Proprietário que quer vender rápido:**
+- Quer urgência, mas sem prejuízo.
+- Valoriza plano de venda rápido.
+
+## Aula 1.3 — Métricas de captação
+**Indicadores essenciais:**
+- Ligações por dia.
+- Visitas por semana.
+- Avaliações por mês.
+- Contratos de exclusividade por mês.
+- Imóveis vendidos por mês.
+- Ticket médio.
+- Comissão média.
+
+**Exemplo real:**
+Corretor passou a acompanhar métricas semanais e aumentou captação de 2 para 6 imóveis por mês.
 
 ## Exercício
-Faça o diagnóstico do seu cenário atual.
+Faça o diagnóstico do seu processo de captação atual.
 
 ## Resumo
-- Contexto orienta decisão
-- Perfil evita erros
-- Métricas medem resultado
+- Mercado do litoral tem perfis distintos.
+- Métricas orientam crescimento.
+- Captação bem feita reduz concorrência.
 
 ## Checklist
-- [ ] Cenário mapeado
-- [ ] Objetivos definidos
+- [ ] Funil mapeado
+- [ ] Perfil definido
 - [ ] Métricas escolhidas
 - [ ] Metas traçadas
 
@@ -39,9 +63,9 @@ Faça o diagnóstico do seu cenário atual.
 - Planilha de diagnóstico
 
 ## Ferramentas recomendadas
-- Planilha
-- Indicadores
-- Consultas locais
+- CRM de vendas
+- Planilha de métricas
+- Portal de imóveis
 
 ## Prompt de IA
-"Atue como especialista em captação de imóveis, exclusividade e funil de vendas para corretores. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
+"Atue como especialista em captação imobiliária. Faça um diagnóstico do meu processo com base nestas respostas: [insira suas respostas]."

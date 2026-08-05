@@ -1,49 +1,79 @@
-# Módulo 3 — Estratégia
+# Módulo 3 — Técnicas de Venda e Negociação
 
 ## Introdução
-Planeje, decida e priorize ações para crescer com consistência.
+Domine técnicas de apresentação, negociação e fechamento para vender mais imóveis no litoral. O segredo não é vender; é ajudar o cliente a comprar.
 
-## Aula 3.1 — Planejamento
-- Objetivos
-- Ações
-- Prazos
-- Recursos
+## Aula 3.1 — Apresentação do imóvel
+**Preparação:**
+- Conheça o imóvel profundamente.
+- Prepare história e diferenciais.
+- Antecipe objeções.
 
-**Exemplo real:** Planejamento simples permitiu crescer sem surpresas.
+**Visita:**
+- Conecte o imóvel com o perfil do cliente.
+- Destaque benefícios, não apenas características.
+- Mostre a vizinhança e pontos turísticos.
 
-## Aula 3.2 — Decisão e priorização
-- Critérios de decisão
-- Priorização
-- Risco
+**Follow-up pós-visita:**
+- Agradeça pela visita.
+- Reforce diferenciais.
+- Ofereça nova visita ou avaliação.
 
-**Estudo de caso:** Decisão baseada em dados evitou prejuízo e aumentou retorno.
+**Exemplo real:**
+Corretor adaptou a apresentação ao perfil do cliente e aumentou taxa de fechamento de 15% para 35%.
 
-## Aula 3.3 — Execução
-- Rotina
-- Acompanhamento
-- Ajuste rápido
+## Aula 3.2 — Técnicas de negociação
+**Técnicas essenciais:**
+- Espelhamento: adapte linguagem ao cliente.
+- Ancoragem: apresente valor antes do preço.
+- Silêncio: deixe o cliente falar mais.
+- Prova social: cases e avaliações.
 
-## Exercício
-Monte um plano estratégico para os próximos 30 dias.
+**Negociação de preço:**
+- Nunca dê desconto sem justificativa.
+- Use dados de comparáveis.
+- Negocie condições, não apenas preço.
+
+**Estudo de caso:**
+Corretor usou dados de comparáveis e fechou venda 8% acima do preço inicial do vendedor.
+
+## Aula 3.3 — Fechamento e superação de objeções
+**Objeções comuns:**
+- "Preço alto": mostre valor e comparáveis.
+- "Documentação complicada": explique o processo e ofereça assessoria.
+- "Localização ruim": destaque acessos e valorização.
+- "Não tenho dinheiro": mostre financiamento e condições.
+
+**Técnicas de fechamento:**
+- Fechamento por benefício.
+- Fechamento por urgência.
+- Fechamento por opção limitada.
+
+**Exercício:**
+Faça uma simulação de venda completa.
 
 ## Resumo
-- Planejamento evita desperdício
-- Decisão orientada reduz risco
-- Execução gera resultado
+- Apresentação conecta imóvel e cliente.
+- Negociação exige dados e técnica.
+- Fechamento resolve objeções.
 
 ## Checklist
-- [ ] Plano definido
-- [ ] Ações listadas
-- [ ] Prazo estabelecido
+- [ ] Imóvel conhecido
+- [ ] Perfil do cliente mapeado
+- [ ] Objeções antecipadas
+- [ ] Proposta preparada
+- [ ] Fechamento executado
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de plano
+- Modelo de proposta
+- Modelo de contrato
+- Checklist de visita
 
 ## Ferramentas recomendadas
-- Planner
-- Planilha
-- App de metas
+- CRM de vendas
+- Planilha de leads
+- Sistema de apresentação
 
 ## Prompt de IA
-"Atue como estrategista. Monte um plano prático para este objetivo: [dados]."
+"Atue como especialista em negociação imobiliária. Monte um roteiro de fechamento para este cenário: [dados]."

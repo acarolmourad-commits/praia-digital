@@ -1,41 +1,41 @@
 # Curso: Captação e Exclusividade para Corretores
 ## Nome Comercial
-**Captação e Exclusividade para Corretores: Método Prático para Captação de imóveis, exclusividade e funil de vendas para corretores**
+**Captação e Exclusividade para Corretores: Método Prático para Captar Imóveis Exclusivos e Fechar Mais Contratos de Representação**
 
 ## Subtítulo
-Do diagnóstico ao resultado: aprenda a aplicar método, evitar erros e crescer no mercado imobiliário do litoral.
+Do contato ao contrato: aprenda a captar imóveis exclusivos, construir relacionamento e fechar representações no litoral.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de aplicar um método prático para captação de imóveis, exclusividade e funil de vendas para corretores.
+Em até 30 dias, você será capaz de captar imóveis exclusivos, apresentar proposta de representação e fechar contratos recorrentes.
 
 ## Público-alvo
-- Proprietários de imóveis no litoral
-- Investidores que querem aumentar retorno
-- Corretores que querem se especializar
-- Interesse: imóveis, litoral, investimento, temporada, rentabilidade
+- Corretores de imóveis iniciantes e intermediários
+- Corretores que querem se especializar no litoral
+- Corretores que querem aumentar comissões recorrentes
+- Interesse: captação, exclusividade, representação, vendas, imóveis
 
 ## Pré-requisitos
-Nenhum. Curso completo do zero ao resultado.
+Nenhum. Curso completo do zero aos primeiros contratos de exclusividade.
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
-7 horas de aulas
+7 horas de aulas (36 aulas de 10 a 16 min)
 Total: 7 horas
 
 ## Valor Sugerido
 Curso completo: R$ 347
-À vista: R$ 347
-Parcelado: 12x de R$ 28,92
+À vista: R$ 287
+Parcelado: 12x de R$ 23,92
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist do curso
-- Planilha de acompanhamento
-- Modelos prontos
+- Checklist de captação
+- Planilha de leads
+- Modelos de proposta e contrato
 - Comunidade fechada
 - Certificado
 
@@ -43,7 +43,7 @@ E-book: R$ 19,90
 **"Capture imóveis exclusivos no litoral e feche mais contratos de representação"**
 
 ## Big Idea
-Resultados no litoral dependem de método, dados e execução consistente.
+Captação e exclusividade no litoral exigem método, relacionamento e proposta de valor clara para o proprietário.
 
 ## Oferta
 - **Curso completo:** R$ 347
@@ -54,113 +54,114 @@ Resultados no litoral dependem de método, dados e execução consistente.
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** captação de imóveis, exclusividade e funil de vendas para corretores
-**Dificuldades:** falta de método, insegurança, resultado baixo
-**Desejos:** crescimento, tranquilidade, autoridade
+**Objetivo:** captar imóveis e fechar exclusividades
+**Dificuldades:** falta de imóveis, concorrência, proprietário não confia
+**Desejos:** comissões recorrentes, autoridade local, crescimento
 
 ## Dores
+- Falta de imóveis exclusivos
+- Concorrência alta
+- Proprietário não confia
+- Dificuldade de fechar contratos
 - Falta de método
-- Insegurança
-- Resultado baixo
-- Falta de clareza
-- Tempo limitado
 
 ## Desejos
+- Comissões recorrentes
+- Autoridade local
 - Crescimento
 - Tranquilidade
-- Autoridade
-- Previsibilidade
-- Resultado
+- Reconhecimento
 
 ## Objeções
-- "Não compensa"
-- "É complicado"
-- "Não tenho tempo"
-- "Vou errar"
-- "Não funciona"
+- "Não preciso de corretor"
+- "Já tenho corretor"
+- "Preço é alto"
+- "Não confio"
+- "Vou vender sozinho"
 
 ## Transformação
-- Método aplicado
-- Resultado crescente
-- Decisão orientada por dados
-- Operação profissional
-- Tranquilidade
+- Imóveis exclusivos captados
+- Proposta de valor clara
+- Contratos fechados
+- Comissões recorrentes
+- Autoridade local
 
 ## Programa Completo
-### Módulo 1 — Fundamentos
-Aula 1.1 — Contexto e oportunidades
-Aula 1.2 — Perfil e objetivos
-Aula 1.3 — Métricas e metas
-Exercício: diagnóstico
+### Módulo 1 — Fundamentos da Captação
+Aula 1.1 — Mercado de captação no litoral
+Aula 1.2 — Perfil do proprietário
+Aula 1.3 — Métricas de captação
+Exercício: diagnóstico de captação
 
-### Módulo 2 — Aplicação Prática
-Aula 2.1 — Passo a passo prático
-Aula 2.2 — Exemplos reais
-Aula 2.3 — Erros comuns
-Exercício: aplicação
+### Módulo 2 — Prospecção e Contato
+Aula 2.1 — Como prospectar proprietários
+Aula 2.2 — Ligação e primeiro contato
+Aula 2.3 — Reunião de avaliação
+Exercício: plano de prospecção
 
-### Módulo 3 — Estratégia
-Aula 3.1 — Planejamento
-Aula 3.2 — Decisão e priorização
-Aula 3.3 — Execução
-Exercício: plano
+### Módulo 3 — Proposta de Exclusividade
+Aula 3.1 — Como apresentar proposta
+Aula 3.2 — Valor para o proprietário
+Aula 3.3 — Fechamento do contrato
+Exercício: simulação de proposta
 
-### Módulo 4 — Crescimento
-Aula 4.1 — Acompanhamento
-Aula 4.2 — Ajustes
-Aula 4.3 — Escala
-Exercício: escala
+### Módulo 4 — Gestão e Crescimento
+Aula 4.1 — Marketing do imóvel
+Aula 4.2 — Venda e acompanhamento
+Aula 4.3 — Indicações e escala
+Exercício: plano de crescimento
 
 ## Carga Horária
 7 horas
 
 ## Material Complementar
-- Checklist
-- Planilha
-- Modelos
+- Checklist de captação
+- Planilha de leads
+- Modelos de proposta e contrato
 - PDFs por módulo
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de diagnóstico
-- Checklist de aplicação
-- Checklist de estratégia
-- Checklist de escala
+- Checklist de prospecção
+- Checklist de visita
+- Checklist de proposta
+- Checklist de fechamento
 
 ## Planilhas
-- Planilha de acompanhamento
-- Planilha de métricas
-- Planilha de ROI
+- Planilha de leads
+- Planilha de captação
+- Planilha de comissões
 
 ## Modelos Prontos
-- Modelo de relatório
 - Modelo de proposta
-- Modelo de revisão
+- Modelo de contrato
+- Modelo de avaliação
 
 ## Scripts
-- Script de atendimento
-- Script de negociação
+- Script de captação
+- Script de apresentação
+- Script de fechamento
 
 ## Prompt de IA
-Prompt para gerar análises e planos.
+Prompt para gerar propostas e avaliações.
 
 ## Exercícios
-- Exercício 1: diagnóstico
-- Exercício 2: aplicação
-- Exercício 3: plano
-- Exercício 4: escala
+- Exercício 1: diagnóstico de captação
+- Exercício 2: plano de prospecção
+- Exercício 3: simulação de proposta
+- Exercício 4: plano de crescimento
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: aplicação do método
+Prova prática: proposta de exclusividade aplicada
 
 ## FAQ
 1. Preciso de experiência? Não.
 2. Em quanto tempo vejo resultado? De 15 a 30 dias.
 3. Vale a pena? Sim.
-4. E se errar? Ajuste com método.
-5. Tem suporte? Sim.
+4. Como prospectar? Método e script.
+5. Como fechar exclusividade? Proposta de valor.
 
 ## Página de Vendas
 [vendas.html]
@@ -193,15 +194,17 @@ Prova prática: aplicação do método
 [marketing/google-ads.md]
 
 ## CTA
-"Aplique o método agora."
+"Capture imóveis exclusivos no litoral agora."
 
 ## Upsell
-- Mentoria individual: R$ 1.500
-- Acompanhamento: R$ 2.800
+- Mentoria individual: R$ 3.000
+- Acompanhamento: R$ 4.500
 
 ## Downsell
 - Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Cursos complementares Praia Digital
+- Curso de Especialista em Venda de Imóveis no Litoral
+- Curso de Marketing Imobiliário
+- Curso de Como Aumentar em 30% a Rentabilidade

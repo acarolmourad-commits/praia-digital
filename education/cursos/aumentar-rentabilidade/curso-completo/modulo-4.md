@@ -1,44 +1,79 @@
-# Módulo 4 — Crescimento
+# Módulo 4 — Controle e Escala
 
 ## Introdução
-Acompanhe resultados, ajuste estratégias e escale sem perder controle.
+Acompanhe resultados, ajuste estratégias e escale sem perder controle. O objetivo é transformar rentabilidade ocasional em crescimento previsível.
 
-## Aula 4.1 — Acompanhamento
-- Métricas
-- Frequência
-- Formato
-- Aprendizado
+## Aula 4.1 — Indicadores e revisão
+**Indicadores essenciais:**
+- Ocupação média.
+- Receita por diária.
+- Lucro líquido.
+- ROI mensal e anual.
+- Taxa de cancelamento.
+- Nota de avaliação.
 
-**Exemplo real:** Acompanhamento semanal permitiu ajustes rápidos e crescimento contínuo.
+**Revisão semanal:**
+- Ocupação da semana.
+- Receita da semana.
+- Ajustes necessários.
 
-## Aula 4.2 — Ajustes
-- Quando ajustar
-- Como ajustar
-- Validação
+**Revisão mensal:**
+- Fechamento do mês.
+- Comparativo com meta.
+- Ajustes para o próximo mês.
 
-**Estudo de caso:** Ajustes pontuais aumentaram resultado sem aumentar esforço.
+**Exemplo real:**
+Proprietário passou a revisar indicadores semanalmente e identificou que os finais de semana tinham ocupação 30% menor que a média. Ele criou promoções de última hora e aumentou a receita em R$ 8 mil/mês.
 
-## Aula 4.3 — Escala
-- Processos
-- Fornecedores/parcerias
-- Crescimento gradual
+## Aula 4.2 — Decisão de compra e venda
+**Decisão de compra:**
+- ROI esperado >= 15% ao ano.
+- Documentação regular.
+- Localização com valorização.
 
-## Exercício
+**Decisão de venda:**
+- ROI abaixo de 10% por 12 meses.
+- Imóvel com problemas estruturais.
+- Oportunidade de reinvestimento.
+
+**Exemplo real:**
+Investidor vendeu um imóvel com ROI de 8% e reinvestiu em outro com ROI de 18%. Ele usou dados comparativos para tomar a decisão.
+
+## Aula 4.3 — Crescimento sustentado
+**Processos:**
+- Padronize contratos e checklists.
+- Automatize atendimento.
+- Mantenha controle financeiro.
+
+**Fornecedores:**
+- Manutenção.
+- Limpeza.
+- Administração.
+
+**Crescimento gradual:**
+- Adicione 1 imóvel por vez.
+- Mantenha qualidade.
+- Acompanhe métricas.
+
+**Exercício:**
 Monte um plano de escala sustentada.
 
 ## Resumo
-- Acompanhamento mantém direção
-- Ajustes preservam resultado
-- Escala depende de processo
+- Indicadores mantêm direção.
+- Decisão orientada por dados reduz risco.
+- Escala depende de processo.
 
 ## Checklist
 - [ ] Métricas revisadas
 - [ ] Ajustes aplicados
 - [ ] Escala planejada
+- [ ] Processos definidos
+- [ ] Fornecedores alinhados
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de acompanhamento
+- Planilha de ROI
+- Modelo de relatório
 
 ## Ferramentas recomendadas
 - Dashboard
