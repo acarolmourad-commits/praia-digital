@@ -4,27 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Praia Digital Academy — Educação Imobiliária do Litoral</title>
-  <meta name="description" content="Cursos, formação e conteúdo sobre imóveis no litoral, temporada, investimentos, corretores e IA.">
+  <meta name="description" content="Cursos do mercado imobiliário do litoral: compra, venda, temporada, IA e gestão. Aprenda com quem opera no litoral.">
+  <meta name="keywords" content="curso imobiliário, litoral, investimento, temporada, Airbnb, corretor de imóveis, IA imobiliária">
   <link rel="canonical" href="https://praia.digital/education/index.html">
+  <meta name="robots" content="index, follow">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Praia Digital Academy",
-    "url": "https://praia.digital/education/index.html"
+    "url": "https://praia.digital/education/index.html",
+    "description": "Educação aplicada ao mercado imobiliário do litoral.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Praia Digital",
+      "url": "https://praia.digital"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Catálogo de Cursos",
+    "itemListElement": [
+      {"@type": "Course", "name": "Como Comprar um Imóvel na Praia sem Cair em Golpes", "url": "https://praia.digital/education/cursos/comprar-imovel-praia-sem-golpes/index.html"},
+      {"@type": "Course", "name": "Investindo em Imóveis no Litoral", "url": "https://praia.digital/education/cursos/investindo-imoveis-litoral/index.html"},
+      {"@type": "Course", "name": "Airbnb do Zero no Litoral", "url": "https://praia.digital/education/cursos/airbnb-do-zero/index.html"},
+      {"@type": "Course", "name": "Especialista em Venda de Imóveis no Litoral", "url": "https://praia.digital/education/cursos/especialista-venda-imoveis-litoral/index.html"}
+    ]
   }
   </script>
   <style>
     body{font-family:'Segoe UI',system-ui,sans-serif;background:#0b1220;color:#e8ecf1;margin:0;padding:0}
-    .wrap{max-width:1000px;margin:0 auto;padding:28px 22px}
+    .wrap{max-width:1200px;margin:0 auto;padding:28px 22px}
     header nav a{color:#cfe3ff;text-decoration:none;margin-right:14px;font-weight:500}
-    h1{font-size:1.8rem;margin:0 0 .5rem}
-    .lead{opacity:.85;line-height:1.6;margin-bottom:1rem}
+    h1{font-size:2rem;margin:0 0 .5rem}
+    h2{font-size:1.35rem;margin:1.2rem 0 .6rem}
+    .lead{opacity:.85;line-height:1.6;margin-bottom:1rem;max-width:800px}
     .cta{background:#00B4D8;color:#fff;padding:.7rem 1.2rem;border-radius:999px;font-weight:700;text-decoration:none;display:inline-block;margin-top:.6rem}
     .grid{display:grid;gap:1rem;margin-top:1.2rem}
+    .grid-3{grid-template-column repeat(auto-fit,minmax(260px,1fr))}
     .card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:18px 20px}
     .card a{color:#cfe3ff;font-weight:700;text-decoration:none}
+    .highlight{background:rgba(0,180,216,.1);border:1px solid rgba(0,180,216,.25);border-radius:16px;padding:18px 20px;margin-top:1rem}
     footer{margin-top:22px;opacity:.6;font-size:12px}
+    .pill{display:inline-block;background:#00B4D8;color:#000;font-weight:700;padding:.15rem .6rem;border-radius:999px;font-size:.75rem;margin-left:.4rem}
   </style>
 </head>
 <body>
@@ -39,11 +64,18 @@
 
     <main id="main">
       <h1>Praia Digital Academy</h1>
-      <p class="lead">Educação aplicada ao mercado imobiliário do litoral: compra, investimento, temporada e vendas.</p>
+      <p class="lead">Educação aplicada ao mercado imobiliário do litoral: compra, investimento, temporada, vendas e IA para corretores.</p>
+      <a class="cta" href="/education/cursos/index.html">Ver todos os cursos</a>
 
-      <div class="grid">
+      <div class="highlight">
+        <h2>Por que estudar na Academy</h2>
+        <p>Conteúdo direto ao ponto, exemplos reais do litoral, técnicas de captação, avaliação, documentação e fechamento — sem teoria vazia.</p>
+      </div>
+
+      <h2>Cursos em destaque</h2>
+      <div class="grid grid-3">
         <div class="card">
-          <a href="/education/cursos/comprar-imovel-praia-sem-golpes/index.html">Como Comprar um Imóvel na Praia sem Cair em Golpes</a>
+          <a href="/education/cursos/comprar-imovel-praia-sem-golpes/index.html">Como Comprar um Imóvel na Praia sem Cair em Golpes <span class="pill">Destaque</span></a>
           <p style="opacity:.75; margin-top:6px;">Documentação, riscos e segurança na compra.</p>
         </div>
         <div class="card">
@@ -51,113 +83,48 @@
           <p style="opacity:.75; margin-top:6px;">Análise, rentabilidade e execução de investimentos.</p>
         </div>
         <div class="card">
-          <a href="/education/cursos/primeiro-imovel-litoral/index.html">Primeiro Imóvel no Litoral</a>
-          <p style="opacity:.75; margin-top:6px;">Planejamento, financiamento e fechamento para iniciantes.</p>
-        </div>
-        <div class="card">
-          <a href="/education/cursos/casa-ou-apartamento/index.html">Casa ou Apartamento no Litoral?</a>
-          <p style="opacity:.75; margin-top:6px;">Critérios decisórios, custos e estilo de vida.</p>
-        </div>
-        <div class="card">
-          <a href="/education/cursos/guia-investidor-imobiliario/index.html">Guia Completo do Investidor Imobiliário</a>
-          <p style="opacity:.75; margin-top:6px;">Estratégia, análise e execução para investidores.</p>
-        </div>
-        <div class="card">
-          <a href="/education/cursos/comprar-com-seguranca/index.html">Como Comprar com Segurança</a>
-          <p style="opacity:.75; margin-top:6px;">Processo seguro do primeiro contato à escritura.</p>
-        </div>
-        <div class="card">
-          <a href="/education/cursos/financiamento-imobiliario/index.html">Financiamento Imobiliário sem Complicação</a>
-          <p style="opacity:.75; margin-top:6px;">Simulação, bancos, documentos e aprovação.</p>
+          <a href="/education/cursos/especialista-venda-imoveis-litoral/index.html">Especialista em Venda de Imóveis no Litoral</a>
+          <p style="opacity:.75; margin-top:6px;">Atendimento, objeções, negociação e closing.</p>
         </div>
         <div class="card">
           <a href="/education/cursos/airbnb-do-zero/index.html">Airbnb do Zero no Litoral</a>
           <p style="opacity:.75; margin-top:6px;">Cadastro, anúncio, precificação e gestão profissional.</p>
         </div>
         <div class="card">
-          <a href="/education/cursos/booking-do-zero/index.html">Booking do Zero no Litoral</a>
-          <p style="opacity:.75; margin-top:6px;">Anúncio, políticas, ocupação e receita.</p>
-        </div>
-        <div class="card">
-          <a href="/education/cursos/pricelabs-completo/index.html">PriceLabs Completo para Temporada</a>
-          <p style="opacity:.75; margin-top:6px;">Precificação dinâmica e aumento de receita.</p>
-        </div>
-        <div class="card">
-          <a href="/education/cursos/gestao-profissional-locacao/index.html">Gestão Profissional da Locação</a>
-          <p style="opacity:.75; margin-top:6px;">Operação, atendimento, limpeza e escala.</p>
-        </div>
-        <div class="card">
-          <a href="/education/cursos/aumentar-rentabilidade/index.html">Como Aumentar em 30% a Rentabilidade</a>
-          <p style="opacity:.75; margin-top:6px;">Preço, experiência e operação para mais receita.</p>
-        </div>
-        <div class="card">
-          <a href="/education/cursos/especialista-venda-imoveis-litoral/index.html">Especialista em Venda de Imóveis no Litoral</a>
-          <p style="opacity:.75; margin-top:6px;">Atendimento, objeções, negociação e closing.</p>
-        </div>
-        <div class="card">
-          <a href="/education/cursos/captacao-exclusividade/index.html">Captação de Exclusividade</a>
-          <p style="opacity:.75; margin-top:6px;">Prospecção, follow-up e contrato de exclusividade.</p>
-        </div>
-        <div class="card">
-          <a href="/education/cursos/instagram-para-corretores/index.html">Instagram para Corretores</a>
-          <p style="opacity:.75; margin-top:6px;">Perfil, conteúdo, reels e leads no Instagram.</p>
-        </div>
-        <div class="card">
-          <a href="/education/cursos/marketing-imobiliario/index.html">Marketing Imobiliário</a>
-          <p style="opacity:.75; margin-top:6px;">Marketing digital e offline para corretores do litoral.</p>
-        </div>
-        <div class="card">
           <a href="/education/cursos/ia-para-corretores/index.html">Inteligência Artificial para Corretores</a>
           <p style="opacity:.75; margin-top:6px;">IA aplicada a conteúdo, atendimento, captação e fechamento.</p>
-        </div>
-        <div class="card">
-          <a href="/education/cursos/crm-para-corretores/index.html">CRM para Corretores</a>
-          <p style="opacity:.75; margin-top:6px;">Organização de leads, follow-up e métricas.</p>
         </div>
         <div class="card">
           <a href="/education/cursos/whatsapp-que-vende/index.html">WhatsApp que Vende</a>
           <p style="opacity:.75; margin-top:6px;">Atendimento, follow-up e fechamento pelo WhatsApp.</p>
         </div>
-        <div class="card">
-          <a href="/education/cursos/funil-de-vendas/index.html">Funil de Vendas para Corretores</a>
-          <p style="opacity:.75; margin-top:6px;">Etapas, scripts e automação para converter leads.</p>
-        </div>
-        <div class="card">
-          <a href="/education/cursos/avaliacao-de-imoveis/index.html">Avaliação de Imóveis no Litoral</a>
-          <p style="opacity:.75; margin-top:6px;">Precificação com dados, comparáveis e método.</p>
-        </div>
-        <div class="card">
-          <a href="/education/cursos/ptam-na-pratica/index.html">PTAM na Prática</a>
-          <p style="opacity:.75; margin-top:6px;">Preenchimento, conferência e defesa técnica de laudos.</p>
-        </div>
-        <div class="card">
-          <a href="/education/cursos/documentacao-imobiliaria/index.html">Documentação Imobiliária</a>
-          <p style="opacity:.75; margin-top:6px;">Contratos, registros, riscos e compliance.</p>
-        </div>
-        <div class="card">
-          <a href="/education/cursos/analise-de-rentabilidade/index.html">Análise de Rentabilidade no Litoral</a>
-          <p style="opacity:.75; margin-top:6px;">ROI, fluxo de caixa e decisão com dados.</p>
-        </div>
-        <div class="card">
-          <a href="/education/cursos/flipping/index.html">Flipping no Litoral</a>
-          <p style="opacity:.75; margin-top:6px;">Sourcing, reforma e venda rápida com lucro.</p>
-        </div>
-        <div class="card">
-          <a href="/education/cursos/imoveis-para-airbnb/index.html">Imóveis para Airbnb no Litoral</a>
-          <p style="opacity:.75; margin-top:6px;">Seleção, preparo, anúncio e temporada.</p>
-        </div>
-        <div class="card">
-          <a href="/education/cursos/multiplique-patrimonio/index.html">Multiplique seu Patrimônio no Litoral</a>
-          <p style="opacity:.75; margin-top:6px;">Estratégia, escala e reinvestimento.</p>
-        </div>
-        <div class="card">
-          <a href="/education/cursos/automacao-comercial/index.html">Automação Comercial para Imobiliárias</a>
-          <p style="opacity:.75; margin-top:6px;">Processos, CRM e follow-up automático.</p>
-        </div>
-        <div class="card">
-          <a href="/education/cursos/ia-para-imobiliarias/index.html">IA para Imobiliárias</a>
-          <p style="opacity:.75; margin-top:6px;">Ferramentas, fluxos e métricas com IA.</p>
-        </div>
+      </div>
+
+      <h2>Catálogo completo</h2>
+      <div class="grid grid-3">
+        <div class="card"><a href="/education/cursos/primeiro-imovel-litoral/index.html">Primeiro Imóvel no Litoral</a><p style="opacity:.75; margin-top:6px;">Planejamento, financiamento e fechamento.</p></div>
+        <div class="card"><a href="/education/cursos/casa-ou-apartamento/index.html">Casa ou Apartamento no Litoral?</a><p style="opacity:.75; margin-top:6px;">Critérios decisórios, custos e estilo de vida.</p></div>
+        <div class="card"><a href="/education/cursos/guia-investidor-imobiliario/index.html">Guia Completo do Investidor Imobiliário</a><p style="opacity:.75; margin-top:6px;">Estratégia, análise e execução.</p></div>
+        <div class="card"><a href="/education/cursos/comprar-com-seguranca/index.html">Como Comprar com Segurança</a><p style="opacity:.75; margin-top:6px;">Do primeiro contato à escritura.</p></div>
+        <div class="card"><a href="/education/cursos/financiamento-imobiliario/index.html">Financiamento Imobiliário sem Complicação</a><p style="opacity:.75; margin-top:6px;">Simulação, bancos, documentos e aprovação.</p></div>
+        <div class="card"><a href="/education/cursos/booking-do-zero/index.html">Booking do Zero no Litoral</a><p style="opacity:.75; margin-top:6px;">Anúncio, políticas, ocupação e receita.</p></div>
+        <div class="card"><a href="/education/cursos/pricelabs-completo/index.html">PriceLabs Completo para Temporada</a><p style="opacity:.75; margin-top:6px;">Precificação dinâmica e mais receita.</p></div>
+        <div class="card"><a href="/education/cursos/gestao-profissional-locacao/index.html">Gestão Profissional da Locação</a><p style="opacity:.75; margin-top:6px;">Operação, atendimento, limpeza e escala.</p></div>
+        <div class="card"><a href="/education/cursos/aumentar-rentabilidade/index.html">Como Aumentar em 30% a Rentabilidade</a><p style="opacity:.75; margin-top:6px;">Preço, experiência e operação.</p></div>
+        <div class="card"><a href="/education/cursos/captacao-exclusividade/index.html">Captação de Exclusividade</a><p style="opacity:.75; margin-top:6px;">Prospecção, follow-up e contrato.</p></div>
+        <div class="card"><a href="/education/cursos/instagram-para-corretores/index.html">Instagram para Corretores</a><p style="opacity:.75; margin-top:6px;">Perfil, conteúdo, reels e leads.</p></div>
+        <div class="card"><a href="/education/cursos/marketing-imobiliario/index.html">Marketing Imobiliário</a><p style="opacity:.75; margin-top:6px;">Marketing digital e offline para o litoral.</p></div>
+        <div class="card"><a href="/education/cursos/crm-para-corretores/index.html">CRM para Corretores</a><p style="opacity:.75; margin-top:6px;">Leads, follow-up e métricas.</p></div>
+        <div class="card"><a href="/education/cursos/funil-de-vendas/index.html">Funil de Vendas para Corretores</a><p style="opacity:.75; margin-top:6px;">Etapas, scripts e automação.</p></div>
+        <div class="card"><a href="/education/cursos/avaliacao-de-imoveis/index.html">Avaliação de Imóveis no Litoral</a><p style="opacity:.75; margin-top:6px;">Precificação com comparáveis.</p></div>
+        <div class="card"><a href="/education/cursos/ptam-na-pratica/index.html">PTAM na Prática</a><p style="opacity:.75; margin-top:6px;">Laudo, conferência e defesa.</p></div>
+        <div class="card"><a href="/education/cursos/documentacao-imobiliaria/index.html">Documentação Imobiliária</a><p style="opacity:.75; margin-top:6px;">Contratos, registros e compliance.</p></div>
+        <div class="card"><a href="/education/cursos/analise-de-rentabilidade/index.html">Análise de Rentabilidade no Litoral</a><p style="opacity:.75; margin-top:6px;">ROI, fluxo de caixa e decisão.</p></div>
+        <div class="card"><a href="/education/cursos/flipping/index.html">Flipping no Litoral</a><p style="opacity:.75; margin-top:6px;">Sourcing, reforma e venda rápida.</p></div>
+        <div class="card"><a href="/education/cursos/imoveis-para-airbnb/index.html">Imóveis para Airbnb no Litoral</a><p style="opacity:.75; margin-top:6px;">Seleção, preparo e temporada.</p></div>
+        <div class="card"><a href="/education/cursos/multiplique-patrimonio/index.html">Multiplique seu Patrimônio no Litoral</a><p style="opacity:.75; margin-top:6px;">Escala e reinvestimento.</p></div>
+        <div class="card"><a href="/education/cursos/automacao-comercial/index.html">Automação Comercial para Imobiliárias</a><p style="opacity:.75; margin-top:6px;">Processos, CRM e follow-up.</p></div>
+        <div class="card"><a href="/education/cursos/ia-para-imobiliarias/index.html">IA para Imobiliárias</a><p style="opacity:.75; margin-top:6px;">Ferramentas, fluxos e métricas.</p></div>
       </div>
     </main>
 
