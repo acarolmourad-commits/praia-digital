@@ -1,10 +1,12 @@
 # Planilha — Financiamento Imobiliário
 - [ ] Data
-- [ ] Banco
-- [ ] Valor
+- [ ] Imóvel
+- [ ] Cidade
+- [ ] Preço
 - [ ] Entrada
-- [ ] Juros
-- [ ] Prazo
+- [ ] Financiamento
 - [ ] Parcela
-- [ ] Custo total
-- [ ] Observação
+- [ ] IPTU
+- [ ] Condomínio
+- [ ] Total
+- [ ] Status

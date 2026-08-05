@@ -1,9 +1,8 @@
 # Checklist — Financiamento Imobiliário
-- [ ] Perfil definido
 - [ ] Documentos reunidos
 - [ ] Simulação feita
-- [ ] Bancos comparados
-- [ ] Custos calculados
-- [ ] Contrato revisado
-- [ ] Aprovação confirmada
-- [ ] Parcelas organizadas
+- [ ] Entrada confirmada
+- [ ] Proposta enviada
+- [ ] Análise aprovada
+- [ ] Contrato assinado
+- [ ] Fechamento confirmado
