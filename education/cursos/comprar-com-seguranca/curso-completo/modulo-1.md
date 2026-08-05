@@ -1,38 +1,55 @@
-# Módulo 1 — Fundamentos
+# Módulo 1 — Fundamentos da Compra Segura
 
 ## Introdução
-Entenda o contexto, o seu perfil e as métricas essenciais para compra segura, verificação documental e mitigação de riscos.
+Entenda o que é compra segura, o método e o perfil do comprador no litoral. O objetivo é estruturar uma compra segura do primeiro contato ao contrato.
 
-## Aula 1.1 — Contexto e oportunidades
-- Mercado atual
-- Oportunidades no litoral
-- Particularidades regionais
+## Aula 1.1 — O que é compra segura
+Compra segura é um processo estruturado que reduz riscos, verifica dados e protege o comprador em todas as etapas.
 
-**Exemplo real:** Profissional identificou oportunidade em região em crescimento e aumentou resultado em 25%.
+**Características:**
+- Verificação de dados.
+- Documentação analisada.
+- Negociação transparente.
 
-## Aula 1.2 — Perfil e objetivos
-- Perfil do aluno
-- Objetivos claros
-- Metas realistas
+**Exemplo real:**
+Comprador verificou documento e evitou fraude.
 
-## Aula 1.3 — Métricas e metas
-- Métricas essenciais
-- Metas de curto, médio e longo prazo
-- Revisão
+## Aula 1.2 — Perfil do comprador
+**Iniciante:**
+- Foco: método, verificação básica.
+- Erro comum: confiar em promessas.
 
-## Exercício
-Faça o diagnóstico do seu cenário atual.
+**Intermediário:**
+- Foco: análise de mercado, negociação.
+- Erro comum: não verificar documentação.
+
+**Avançado:**
+- Foco: múltiplos imóveis, escala.
+- Erro comum: automação sem revisão.
+
+**Exercício:**
+Faça o diagnóstico do seu perfil de compra.
+
+## Aula 1.3 — Método e metas
+**Método:**
+- Defina etapas.
+- Estabeleça verificações.
+- Acompanhe resultados.
+
+**Metas:**
+- Imóveis analisados por mês.
+- Visitas por semana.
+- Compras por ano.
 
 ## Resumo
-- Contexto orienta decisão
-- Perfil evita erros
-- Métricas medem resultado
+- Compra segura reduz riscos.
+- Perfil claro orienta ação.
+- Método gera resultado.
 
 ## Checklist
-- [ ] Cenário mapeado
-- [ ] Objetivos definidos
-- [ ] Métricas escolhidas
+- [ ] Método definido
 - [ ] Metas traçadas
+- [ ] Perfil claro
 
 ## Materiais para download
 - PDF do módulo
@@ -40,8 +57,8 @@ Faça o diagnóstico do seu cenário atual.
 
 ## Ferramentas recomendadas
 - Planilha
-- Indicadores
-- Consultas locais
+- CRM
+- Consultorias
 
 ## Prompt de IA
-"Atue como especialista em compra segura, verificação documental e mitigação de riscos. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
+"Atue como especialista em compra de imóveis. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."

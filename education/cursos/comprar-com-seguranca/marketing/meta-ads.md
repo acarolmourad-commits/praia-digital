@@ -1,5 +1,5 @@
 # Meta Ads — Comprar com Segurança no Litoral
-Público: 25 a 55 anos, interesse em imóveis, litoral, investimento
+Público: 25 a 55 anos, interesse em imóveis, compra, litoral
 Objetivo: leads
 Formato: vídeo + carrossel
 Orçamento sugerido: R$ 40 a R$ 120/dia

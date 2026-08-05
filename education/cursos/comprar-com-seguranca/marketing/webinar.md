@@ -1,6 +1,6 @@
 # Roteiro de Webinar — Comprar com Segurança no Litoral
 1. Abertura: dor do público
-2. Case: resultado prático
+2. Case: compra segura que evitou prejuízo
 3. Método: 4 passos
 4. Prova social
 5. Oferta e bônus

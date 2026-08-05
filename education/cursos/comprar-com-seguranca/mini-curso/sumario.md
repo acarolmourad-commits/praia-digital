@@ -1,5 +1,5 @@
 # Mini Curso — Comprar com Segurança no Litoral
-## Aula 1 — Fundamentos (8 min)
-## Aula 2 — Aplicação prática (12 min)
-## Aula 3 — Estratégia (10 min)
-## Bônus — Planilha de acompanhamento
+## Aula 1 — Fundamentos da compra segura (8 min)
+## Aula 2 — Verificação e documentação (12 min)
+## Aula 3 — Negociação e fechamento (10 min)
+## Bônus — Checklist de compra

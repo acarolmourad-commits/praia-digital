@@ -1,6 +1,10 @@
 # Planilha — Comprar com Segurança no Litoral
 - [ ] Data
-- [ ] Ação
-- [ ] Resultado
-- [ ] Ajuste
+- [ ] Imóvel
+- [ ] Cidade
+- [ ] Preço
+- [ ] Documentos
 - [ ] Status
+- [ ] Negociação
+- [ ] Contrato
+- [ ] Observação

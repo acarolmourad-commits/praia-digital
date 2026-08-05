@@ -1,49 +1,67 @@
-# Módulo 3 — Estratégia
+# Módulo 3 — Negociação e Fechamento
 
 ## Introdução
-Planeje, decida e priorize ações para crescer com consistência.
+Aprenda a negociar, fazer propostas e fechar compras com segurança no litoral.
 
-## Aula 3.1 — Planejamento
-- Objetivos
-- Ações
-- Prazos
-- Recursos
+## Aula 3.1 — Como negociar
+**Dicas:**
+- Baseado em dados.
+- Respeite limites.
+- Mantenha transparência.
 
-**Exemplo real:** Planejamento simples permitiu crescer sem surpresas.
+**Táticas:**
+- Valor justo.
+- Prazo de fechamento.
+- Condições claras.
 
-## Aula 3.2 — Decisão e priorização
-- Critérios de decisão
-- Priorização
-- Risco
+**Exemplo real:**
+Comprador negociou e economizou R$ 20 mil.
 
-**Estudo de caso:** Decisão baseada em dados evitou prejuízo e aumentou retorno.
+## Aula 3.2 — Proposta e contrato
+**Proposta:**
+- Valor.
+- Prazo.
+- Condições.
 
-## Aula 3.3 — Execução
-- Rotina
-- Acompanhamento
-- Ajuste rápido
+**Contrato:**
+- Cláusulas claras.
+- Assinatura digital.
+- Registro.
 
-## Exercício
-Monte um plano estratégico para os próximos 30 dias.
+**Exercício:**
+Monte uma proposta de compra.
+
+## Aula 3.3 — Fechamento seguro
+**Passos:**
+- Documentos revisados.
+- Contrato assinado.
+- Registro realizado.
+
+**Dicas:**
+- Peça orientação.
+- Evite pressa.
+- Confirme dados.
 
 ## Resumo
-- Planejamento evita desperdício
-- Decisão orientada reduz risco
-- Execução gera resultado
+- Negociação reduz custos.
+- Proposta clara fecha negócios.
+- Fechamento seguro protege partes.
 
 ## Checklist
-- [ ] Plano definido
-- [ ] Ações listadas
-- [ ] Prazo estabelecido
+- [ ] Proposta preparada
+- [ ] Negociação feita
+- [ ] Contrato revisado
+- [ ] Fechamento confirmado
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de plano
+- Modelo de proposta
+- Modelo de contrato
 
 ## Ferramentas recomendadas
-- Planner
 - Planilha
-- App de metas
+- CRM
+- Consultorias
 
 ## Prompt de IA
-"Atue como estrategista. Monte um plano prático para este objetivo: [dados]."
+"Atue como especialista em compra de imóveis. Monte uma proposta para este cenário: [dados]."
