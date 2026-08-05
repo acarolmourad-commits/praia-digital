@@ -1,10 +1,11 @@
-1. Post: dica sobre captacao exclusividade
-2. Post: dica sobre captacao exclusividade
-3. Post: dica sobre captacao exclusividade
-4. Post: dica sobre captacao exclusividade
-5. Post: dica sobre captacao exclusividade
-6. Post: dica sobre captacao exclusividade
-7. Post: dica sobre captacao exclusividade
-8. Post: dica sobre captacao exclusividade
-9. Post: dica sobre captacao exclusividade
-10. Post: dica sobre captacao exclusividade
+# Posts Instagram — Captação e Exclusividade para Corretores
+1. Post: dica prática
+2. Reels: passo a passo
+3. Carrossel: checklist
+4. Post: erro comum
+5. Reels: case rápido
+6. Carrossel: ferramenta
+7. Post: resultado
+8. Reels: ajuste simples
+9. Carrossel: métrica
+10. Post: comece hoje

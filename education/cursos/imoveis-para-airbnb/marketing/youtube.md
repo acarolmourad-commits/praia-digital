@@ -1,4 +1,4 @@
-# Roteiro YouTube — Imoveis Para Airbnb
+# Roteiro YouTube — Imóveis para Airbnb no Litoral
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado

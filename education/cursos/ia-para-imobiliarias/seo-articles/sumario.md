@@ -1,11 +1,11 @@
-# Artigos SEO — Ia Para Imobiliarias
-1. Ia Para Imobiliarias em 2026
-2. Como aplicar ia para imobiliarias no litoral
-3. Resultados reais de ia para imobiliarias
-4. Método passo a passo de ia para imobiliarias
-5. Erros comuns em ia para imobiliarias
-6. Ferramentas para ia para imobiliarias
-7. Cases de ia para imobiliarias no litoral
-8. Como medir resultado em ia para imobiliarias
-9. Como começar em ia para imobiliarias
-10. FAQ sobre ia para imobiliarias
+# Artigos SEO — IA para Imobiliárias
+1. IA para Imobiliárias em 2026: guia completo
+2. Como aplicar IA para Imobiliárias no litoral
+3. Guia prático para iniciantes
+4. Erros comuns e como evitar
+5. Métricas essenciais
+6. Resultados reais e casos
+7. Ferramentas úteis
+8. Checklist essencial
+9. Perguntas frequentes
+10. Próximos passos

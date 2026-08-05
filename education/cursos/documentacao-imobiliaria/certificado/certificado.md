@@ -1,6 +1,7 @@
-# Certificado — Documentacao Imobiliaria
+# Certificado — Documentação Imobiliária
 Modelo: Praia Digital Academy
-Curso: Documentacao Imobiliaria
+Curso: Documentação Imobiliária
+Carga horária: 5 horas
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

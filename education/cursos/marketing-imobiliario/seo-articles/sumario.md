@@ -1,11 +1,11 @@
-# Artigos SEO — Marketing Imobiliario
-1. Marketing Imobiliario em 2026
-2. Como aplicar marketing imobiliario no litoral
-3. Resultados reais de marketing imobiliario
-4. Método passo a passo de marketing imobiliario
-5. Erros comuns em marketing imobiliario
-6. Ferramentas para marketing imobiliario
-7. Cases de marketing imobiliario no litoral
-8. Como medir resultado em marketing imobiliario
-9. Como começar em marketing imobiliario
-10. FAQ sobre marketing imobiliario
+# Artigos SEO — Marketing Imobiliário para Corretores
+1. Marketing Imobiliário para Corretores em 2026: guia completo
+2. Como aplicar Marketing Imobiliário para Corretores no litoral
+3. Guia prático para iniciantes
+4. Erros comuns e como evitar
+5. Métricas essenciais
+6. Resultados reais e casos
+7. Ferramentas úteis
+8. Checklist essencial
+9. Perguntas frequentes
+10. Próximos passos

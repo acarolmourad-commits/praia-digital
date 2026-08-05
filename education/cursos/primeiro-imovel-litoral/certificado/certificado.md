@@ -1,6 +1,7 @@
-# Certificado — Primeiro Imovel Litoral
+# Certificado — Primeiro Imóvel no Litoral
 Modelo: Praia Digital Academy
-Curso: Primeiro Imovel Litoral
+Curso: Primeiro Imóvel no Litoral
+Carga horária: 5 horas
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

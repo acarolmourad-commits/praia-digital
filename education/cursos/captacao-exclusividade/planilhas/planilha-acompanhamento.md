@@ -1,5 +1,6 @@
-# Planilha — Captacao Exclusividade
+# Planilha — Captação e Exclusividade para Corretores
 - [ ] Data
 - [ ] Ação
 - [ ] Resultado
-- [ ] Observação
+- [ ] Ajuste
+- [ ] Status

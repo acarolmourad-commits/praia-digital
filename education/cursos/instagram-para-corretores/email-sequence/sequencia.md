@@ -1,21 +1,21 @@
-# Sequência de E-mails — Instagram Para Corretores
+# Sequência de E-mails — Instagram para Corretores
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido sobre Instagram Para Corretores (PDF)
+Assunto: Guia Rápido de Instagram para Corretores (PDF + planilha)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case prático de Instagram Para Corretores
+Assunto: Case: resultado prático
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Instagram Para Corretores é para mim?"
+Assunto: "Instagram para Corretores dá trabalho?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno obteve resultado com Instagram Para Corretores
+Assunto: Aluno obteve resultado em 30 dias
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

@@ -1,6 +1,7 @@
-# Certificado — Imoveis Para Airbnb
+# Certificado — Imóveis para Airbnb no Litoral
 Modelo: Praia Digital Academy
-Curso: Imoveis Para Airbnb
+Curso: Imóveis para Airbnb no Litoral
+Carga horária: 5 horas
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

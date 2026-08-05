@@ -1,5 +1,5 @@
-# E-book Derivado — Whatsapp Que Vende
-Título: Guia Rápido sobre Whatsapp Que Vende
+# E-book Derivado — WhatsApp que Vende no Litoral
+Título: Guia Rápido para WhatsApp que Vende no Litoral
 Formato: PDF 20 a 30 páginas
 Preço: gratuito ou R$ 19,90
-Conteúdo: resumo, templates, dicas rápidas.
+Conteúdo: checklist, planilha, dicas rápidas.

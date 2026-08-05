@@ -1,10 +1,11 @@
-1. Post: dica sobre analise de rentabilidade
-2. Post: dica sobre analise de rentabilidade
-3. Post: dica sobre analise de rentabilidade
-4. Post: dica sobre analise de rentabilidade
-5. Post: dica sobre analise de rentabilidade
-6. Post: dica sobre analise de rentabilidade
-7. Post: dica sobre analise de rentabilidade
-8. Post: dica sobre analise de rentabilidade
-9. Post: dica sobre analise de rentabilidade
-10. Post: dica sobre analise de rentabilidade
+# Posts Instagram — Análise de Rentabilidade
+1. Post: dica prática
+2. Reels: passo a passo
+3. Carrossel: checklist
+4. Post: erro comum
+5. Reels: case rápido
+6. Carrossel: ferramenta
+7. Post: resultado
+8. Reels: ajuste simples
+9. Carrossel: métrica
+10. Post: comece hoje

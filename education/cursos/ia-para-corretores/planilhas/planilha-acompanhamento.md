@@ -1,5 +1,6 @@
-# Planilha — Ia Para Corretores
+# Planilha — IA para Corretores
 - [ ] Data
 - [ ] Ação
 - [ ] Resultado
-- [ ] Observação
+- [ ] Ajuste
+- [ ] Status

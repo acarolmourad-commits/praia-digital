@@ -1,5 +1,6 @@
-# Planilha — Whatsapp Que Vende
+# Planilha — WhatsApp que Vende no Litoral
 - [ ] Data
 - [ ] Ação
 - [ ] Resultado
-- [ ] Observação
+- [ ] Ajuste
+- [ ] Status

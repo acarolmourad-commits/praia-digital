@@ -14,7 +14,7 @@
 - Nenhum no momento
 
 ## Próximo Curso
-- Gestão Profissional da Locação
+- Como Aumentar em 30% a Rentabilidade
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.

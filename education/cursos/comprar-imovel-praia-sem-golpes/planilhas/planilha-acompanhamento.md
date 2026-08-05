@@ -1,5 +1,6 @@
-# Planilha — Comprar Imovel Praia Sem Golpes
+# Planilha — Comprar Imóvel na Praia Sem Golpes
 - [ ] Data
 - [ ] Ação
 - [ ] Resultado
-- [ ] Observação
+- [ ] Ajuste
+- [ ] Status

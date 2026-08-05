@@ -1,7 +1,6 @@
-# Checklist — Captacao Exclusividade
+# Checklist — Captação e Exclusividade para Corretores
+- [ ] Diagnóstico realizado
 - [ ] Objetivos definidos
-- [ ] Método aplicado
-- [ ] Ferramentas configuradas
-- [ ] Exercícios realizados
-- [ ] Revisão feita
-- [ ] Próximo passo definido
+- [ ] Aplicação executada
+- [ ] Estratégia traçada
+- [ ] Escala planejada

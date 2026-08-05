@@ -1,5 +1,5 @@
-# E-book Derivado — Comprar Com Seguranca
-Título: Guia Rápido sobre Comprar Com Seguranca
+# E-book Derivado — Comprar com Segurança no Litoral
+Título: Guia Rápido para Comprar com Segurança no Litoral
 Formato: PDF 20 a 30 páginas
 Preço: gratuito ou R$ 19,90
-Conteúdo: resumo, templates, dicas rápidas.
+Conteúdo: checklist, planilha, dicas rápidas.

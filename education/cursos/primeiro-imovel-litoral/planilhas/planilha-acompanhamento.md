@@ -1,5 +1,6 @@
-# Planilha — Primeiro Imovel Litoral
+# Planilha — Primeiro Imóvel no Litoral
 - [ ] Data
 - [ ] Ação
 - [ ] Resultado
-- [ ] Observação
+- [ ] Ajuste
+- [ ] Status

@@ -1,9 +1,9 @@
-# Avaliação Final — Comprar Com Seguranca
+# Avaliação Final — Comprar com Segurança no Litoral
 ## Quiz
-- 20 perguntas sobre o conteúdo completo.
+- 20 perguntas sobre fundamentos, aplicação, estratégia e crescimento.
 
 ## Prova Prática
-- Aplicação do método no seu contexto.
+- Aplicação do método em cenário real.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

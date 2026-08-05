@@ -1,11 +1,11 @@
-# Artigos SEO — Automacao Comercial
-1. Automacao Comercial em 2026
-2. Como aplicar automacao comercial no litoral
-3. Resultados reais de automacao comercial
-4. Método passo a passo de automacao comercial
-5. Erros comuns em automacao comercial
-6. Ferramentas para automacao comercial
-7. Cases de automacao comercial no litoral
-8. Como medir resultado em automacao comercial
-9. Como começar em automacao comercial
-10. FAQ sobre automacao comercial
+# Artigos SEO — Automação Comercial para Corretores
+1. Automação Comercial para Corretores em 2026: guia completo
+2. Como aplicar Automação Comercial para Corretores no litoral
+3. Guia prático para iniciantes
+4. Erros comuns e como evitar
+5. Métricas essenciais
+6. Resultados reais e casos
+7. Ferramentas úteis
+8. Checklist essencial
+9. Perguntas frequentes
+10. Próximos passos

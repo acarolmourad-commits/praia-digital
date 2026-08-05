@@ -1,33 +1,49 @@
-# Módulo 3 — Conteúdo Premium
-## Aula 3.1 — Introdução ao módulo
-Conteúdo: visão geral, objetivo, aplicação prática no litoral.
+# Módulo 3 — Estratégia
 
-## Aula 3.2 — Conceitos aplicados
-Conteúdo: fundamentos, exemplos reais, particularidades do litoral.
+## Introdução
+Planeje, decida e priorize ações para crescer com consistência.
 
-## Aula 3.3 — Estudo de caso
-Conteúdo: caso real, análise, lições.
+## Aula 3.1 — Planejamento
+- Objetivos
+- Ações
+- Prazos
+- Recursos
+
+**Exemplo real:** Planejamento simples permitiu crescer sem surpresas.
+
+## Aula 3.2 — Decisão e priorização
+- Critérios de decisão
+- Priorização
+- Risco
+
+**Estudo de caso:** Decisão baseada em dados evitou prejuízo e aumentou retorno.
+
+## Aula 3.3 — Execução
+- Rotina
+- Acompanhamento
+- Ajuste rápido
 
 ## Exercício
-Aplicação prática no seu contexto.
+Monte um plano estratégico para os próximos 30 dias.
 
 ## Resumo
-Pontos-chave para revisão.
+- Planejamento evita desperdício
+- Decisão orientada reduz risco
+- Execução gera resultado
 
 ## Checklist
-- [ ] Conceitos entendidos
-- [ ] Caso analisado
-- [ ] Exercício aplicado
+- [ ] Plano definido
+- [ ] Ações listadas
+- [ ] Prazo estabelecido
 
 ## Materiais para download
 - PDF do módulo
-- Templates
-- Planilha
+- Modelo de plano
 
 ## Ferramentas recomendadas
-- Ferramenta 1
-- Ferramenta 2
-- Ferramenta 3
+- Planner
+- Planilha
+- App de metas
 
 ## Prompt de IA
-Prompt para acelerar tarefas deste módulo.
+"Atue como estrategista. Monte um plano prático para este objetivo: [dados]."

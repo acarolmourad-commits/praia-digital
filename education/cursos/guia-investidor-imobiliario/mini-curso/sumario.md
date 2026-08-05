@@ -1,5 +1,5 @@
-# Mini Curso — Guia Investidor Imobiliario
-## Aula 1 — Visão geral (8 min)
-## Aula 2 — Conceitos essenciais (12 min)
-## Aula 3 — Aplicação prática (10 min)
-## Bônus — Material complementar
+# Mini Curso — Guia do Investidor Imobiliário
+## Aula 1 — Fundamentos (8 min)
+## Aula 2 — Aplicação prática (12 min)
+## Aula 3 — Estratégia (10 min)
+## Bônus — Planilha de acompanhamento

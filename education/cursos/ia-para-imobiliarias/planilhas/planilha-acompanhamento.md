@@ -1,5 +1,6 @@
-# Planilha — Ia Para Imobiliarias
+# Planilha — IA para Imobiliárias
 - [ ] Data
 - [ ] Ação
 - [ ] Resultado
-- [ ] Observação
+- [ ] Ajuste
+- [ ] Status

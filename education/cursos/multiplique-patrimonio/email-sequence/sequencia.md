@@ -1,21 +1,21 @@
-# Sequência de E-mails — Multiplique Patrimonio
+# Sequência de E-mails — Multiplique Patrimônio no Litoral
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido sobre Multiplique Patrimonio (PDF)
+Assunto: Guia Rápido de Multiplique Patrimônio no Litoral (PDF + planilha)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case prático de Multiplique Patrimonio
+Assunto: Case: resultado prático
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Multiplique Patrimonio é para mim?"
+Assunto: "Multiplique Patrimônio no Litoral dá trabalho?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno obteve resultado com Multiplique Patrimonio
+Assunto: Aluno obteve resultado em 30 dias
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

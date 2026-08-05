@@ -1,6 +1,7 @@
-# Certificado — Automacao Comercial
+# Certificado — Automação Comercial para Corretores
 Modelo: Praia Digital Academy
-Curso: Automacao Comercial
+Curso: Automação Comercial para Corretores
+Carga horária: 6 horas
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

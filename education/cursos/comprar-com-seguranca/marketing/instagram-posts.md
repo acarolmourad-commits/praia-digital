@@ -1,10 +1,11 @@
-1. Post: dica sobre comprar com seguranca
-2. Post: dica sobre comprar com seguranca
-3. Post: dica sobre comprar com seguranca
-4. Post: dica sobre comprar com seguranca
-5. Post: dica sobre comprar com seguranca
-6. Post: dica sobre comprar com seguranca
-7. Post: dica sobre comprar com seguranca
-8. Post: dica sobre comprar com seguranca
-9. Post: dica sobre comprar com seguranca
-10. Post: dica sobre comprar com seguranca
+# Posts Instagram — Comprar com Segurança no Litoral
+1. Post: dica prática
+2. Reels: passo a passo
+3. Carrossel: checklist
+4. Post: erro comum
+5. Reels: case rápido
+6. Carrossel: ferramenta
+7. Post: resultado
+8. Reels: ajuste simples
+9. Carrossel: métrica
+10. Post: comece hoje

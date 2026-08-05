@@ -1,21 +1,21 @@
-# Sequência de E-mails — Avaliacao De Imoveis
+# Sequência de E-mails — Avaliação de Imóveis
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido sobre Avaliacao De Imoveis (PDF)
+Assunto: Guia Rápido de Avaliação de Imóveis (PDF + planilha)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case prático de Avaliacao De Imoveis
+Assunto: Case: resultado prático
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Avaliacao De Imoveis é para mim?"
+Assunto: "Avaliação de Imóveis dá trabalho?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno obteve resultado com Avaliacao De Imoveis
+Assunto: Aluno obteve resultado em 30 dias
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

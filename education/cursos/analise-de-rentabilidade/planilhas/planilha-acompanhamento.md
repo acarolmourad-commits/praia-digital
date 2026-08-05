@@ -1,5 +1,6 @@
-# Planilha — Analise De Rentabilidade
+# Planilha — Análise de Rentabilidade
 - [ ] Data
 - [ ] Ação
 - [ ] Resultado
-- [ ] Observação
+- [ ] Ajuste
+- [ ] Status

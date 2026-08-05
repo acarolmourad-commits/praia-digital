@@ -1,10 +1,11 @@
-1. Post: dica sobre imoveis para airbnb
-2. Post: dica sobre imoveis para airbnb
-3. Post: dica sobre imoveis para airbnb
-4. Post: dica sobre imoveis para airbnb
-5. Post: dica sobre imoveis para airbnb
-6. Post: dica sobre imoveis para airbnb
-7. Post: dica sobre imoveis para airbnb
-8. Post: dica sobre imoveis para airbnb
-9. Post: dica sobre imoveis para airbnb
-10. Post: dica sobre imoveis para airbnb
+# Posts Instagram — Imóveis para Airbnb no Litoral
+1. Post: dica prática
+2. Reels: passo a passo
+3. Carrossel: checklist
+4. Post: erro comum
+5. Reels: case rápido
+6. Carrossel: ferramenta
+7. Post: resultado
+8. Reels: ajuste simples
+9. Carrossel: métrica
+10. Post: comece hoje

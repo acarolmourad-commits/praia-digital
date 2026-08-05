@@ -1,4 +1,4 @@
-# Roteiro YouTube — Ia Para Imobiliarias
+# Roteiro YouTube — IA para Imobiliárias
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado

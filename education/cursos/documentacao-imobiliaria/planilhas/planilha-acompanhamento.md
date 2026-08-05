@@ -1,5 +1,6 @@
-# Planilha — Documentacao Imobiliaria
+# Planilha — Documentação Imobiliária
 - [ ] Data
 - [ ] Ação
 - [ ] Resultado
-- [ ] Observação
+- [ ] Ajuste
+- [ ] Status

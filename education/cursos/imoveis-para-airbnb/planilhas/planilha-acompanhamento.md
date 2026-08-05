@@ -1,5 +1,6 @@
-# Planilha — Imoveis Para Airbnb
+# Planilha — Imóveis para Airbnb no Litoral
 - [ ] Data
 - [ ] Ação
 - [ ] Resultado
-- [ ] Observação
+- [ ] Ajuste
+- [ ] Status

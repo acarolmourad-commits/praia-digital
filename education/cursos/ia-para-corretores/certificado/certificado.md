@@ -1,6 +1,7 @@
-# Certificado — Ia Para Corretores
+# Certificado — IA para Corretores
 Modelo: Praia Digital Academy
-Curso: Ia Para Corretores
+Curso: IA para Corretores
+Carga horária: 6 horas
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

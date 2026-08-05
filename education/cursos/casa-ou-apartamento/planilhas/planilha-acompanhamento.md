@@ -1,5 +1,6 @@
-# Planilha — Casa Ou Apartamento
+# Planilha — Casa ou Apartamento no Litoral
 - [ ] Data
 - [ ] Ação
 - [ ] Resultado
-- [ ] Observação
+- [ ] Ajuste
+- [ ] Status
