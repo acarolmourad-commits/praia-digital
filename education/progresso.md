@@ -37,12 +37,14 @@
 - Análise de Mercado Imobiliário no Litoral — PRONTO PARA VENDA
 - Gestão de Locação no Litoral — PRONTO PARA VENDA
 - Como Vender Imóveis de Alto Padrão no Litoral — PRONTO PARA VENDA
+- Venda Rápida de Imóveis no Litoral — PRONTO PARA VENDA
+- Negociação Imobiliária no Litoral — PRONTO PARA VENDA
 
 ## Em Produção
 - Nenhum no momento
 
 ## Próximo Curso
-- Venda Rápida de Imóveis no Litoral
+- Marketing Imobiliário para Corretores
 
 ## Regra
 Um curso por vez, do maior potencial para o menor. Marcar como PRONTO PARA VENDA apenas após auditoria premium.
