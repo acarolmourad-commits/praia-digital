@@ -4,8 +4,8 @@
 3. Vale a pena? Sim.
 4. E se errar? Ajuste com método.
 5. Tem suporte? Sim.
-6. Como medir sucesso? Métricas claras.
-7. Preciso de ferramentas? Ajuda.
+6. Como medir sucesso? Vendas e produtividade.
+7. Preciso de ferramentas pagas? Não obrigatoriamente.
 8. Funciona para qualquer imóvel? Com método, sim.
-9. Como começar? Aplicação prática.
-10. Qual o primeiro passo? Diagnóstico.
+9. Como começar? Checklist básico.
+10. Qual o primeiro passo? Criar prompts simples.

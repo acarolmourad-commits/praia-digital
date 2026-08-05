@@ -1,48 +1,54 @@
-# Módulo 2 — Aplicação Prática
+# Módulo 2 — Prompts e Conteúdo
 
 ## Introdução
-Aplique o método na prática com exemplos reais e evite erros comuns.
+Aprenda a criar prompts, gerar conteúdo e automatizar redes sociais para corretores no litoral.
 
-## Aula 2.1 — Passo a passo prático
-- Etapas claras
-- Ação imediata
-- Verificação de resultado
+## Aula 2.1 — Como criar prompts
+**Estrutura:**
+- Contexto.
+- Objetivo.
+- Formato.
 
-**Exemplo real:** Profissional aplicou o passo a passo e obteve ganhos rápidos em 15 dias.
+**Exemplo:**
+"Atue como especialista em imóveis no litoral. Crie um post sobre vantagens de apartamento em Santos."
 
-## Aula 2.2 — Exemplos reais
-- Caso 1
-- Caso 2
-- Lições aplicáveis
+## Aula 2.2 — Conteúdo automatizado
+**Conteúdo:**
+- Posts.
+- Reels.
+- E-mails.
+- Propostas.
 
-**Estudo de caso:** Aplicação prática gerou aumento mensurável em 30 dias.
+**Exemplo real:**
+Corretor usou IA e criou 30 posts em 1 hora.
 
-## Aula 2.3 — Erros comuns
-- Erro 1
-- Erro 2
-- Erro 3
-- Como evitar
+## Aula 2.3 — Redes sociais
+**Redes:**
+- Instagram.
+- YouTube.
+- TikTok.
 
-## Exercício
-Aplique o método em um cenário real.
+**Exercício:**
+Monte um plano de conteúdo com IA.
 
 ## Resumo
-- Passo a passo reduz risco
-- Exemplos aceleram aprendizado
-- Erros evitados poupam tempo
+- Prompts geram conteúdo.
+- IA reduz esforço.
+- Redes sociais amplificam alcance.
 
 ## Checklist
-- [ ] Passos executados
-- [ ] Resultados verificados
-- [ ] Ajustes aplicados
+- [ ] Prompts criados
+- [ ] Conteúdo gerado
+- [ ] Calendário montado
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de aplicação
+- Planilha de prompts
 
 ## Ferramentas recomendadas
-- Planilha de acompanhamento
-- App de gestão
+- IA generativa
+- Planilha
+- CRM
 
 ## Prompt de IA
-"Atue como especialista prático. Monte um plano de aplicação para este cenário: [dados]."
+"Atue como especialista em IA para imobiliário. Monte um plano de conteúdo para este cenário: [dados]."

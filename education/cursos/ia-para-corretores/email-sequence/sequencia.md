@@ -5,17 +5,17 @@ Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: resultado prático
+Assunto: Case: corretor aumentou vendas com IA
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "IA para Corretores dá trabalho?"
+Assunto: "IA é complicada?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno obteve resultado em 30 dias
+Assunto: Aluno criou 30 posts em 1 hora
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

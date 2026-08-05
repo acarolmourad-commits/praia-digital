@@ -1,52 +1,52 @@
 # Curso: IA para Corretores
 ## Nome Comercial
-**IA para Corretores: Método Prático para Ia aplicada a corretores, conteúdo, leads e atendimento**
+**IA para Corretores: Método Prático para Usar Inteligência Artificial no Mercado Imobiliário e Vender Mais no Litoral**
 
 ## Subtítulo
-Do diagnóstico ao resultado: aprenda a aplicar método, evitar erros e crescer no mercado imobiliário do litoral.
+Do prompt à venda: aprenda a usar IA no mercado imobiliário do litoral com método.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de aplicar um método prático para IA aplicada a corretores, conteúdo, leads e atendimento.
+Em até 15 dias, você será capaz de usar IA para captar leads, criar conteúdo, atender clientes e fechar mais vendas no litoral.
 
 ## Público-alvo
-- Proprietários de imóveis no litoral
-- Investidores que querem aumentar retorno
-- Corretores que querem se especializar
-- Interesse: imóveis, litoral, investimento, temporada, rentabilidade
+- Corretores de imóveis iniciantes e intermediários
+- Corretores que querem escalar vendas
+- Investidores que querem usar IA
+- Interesse: IA, imóveis, litoral, vendas, tecnologia
 
 ## Pré-requisitos
-Nenhum. Curso completo do zero ao resultado.
+Nenhum. Curso completo do zero à aplicação prática.
 
 ## Nível
 Iniciante → Intermediário
 
 ## Tempo Estimado
-6 horas de aulas
-Total: 6 horas
+4 horas de aulas (20 aulas de 10 a 16 min)
+Total: 4 horas
 
 ## Valor Sugerido
-Curso completo: R$ 297
-À vista: R$ 297
-Parcelado: 12x de R$ 24,75
+Curso completo: R$ 197
+À vista: R$ 167
+Parcelado: 12x de R$ 13,92
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist do curso
-- Planilha de acompanhamento
-- Modelos prontos
+- Checklist de IA
+- Planilha de prompts
+- Modelos de IA
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Use IA para captar leads, criar conteúdo e vender mais imóveis no litoral"**
+**"Use IA no mercado imobiliário do litoral e venda mais"**
 
 ## Big Idea
-Resultados no litoral dependem de método, dados e execução consistente.
+IA aplicada ao mercado imobiliário combina prompts, automação e dados para aumentar vendas e reduzir esforço.
 
 ## Oferta
-- **Curso completo:** R$ 297
+- **Curso completo:** R$ 197
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
@@ -54,106 +54,105 @@ Resultados no litoral dependem de método, dados e execução consistente.
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** IA aplicada a corretores, conteúdo, leads e atendimento
-**Dificuldades:** falta de método, insegurança, resultado baixo
-**Desejos:** crescimento, tranquilidade, autoridade
+**Objetivo:** vender mais com IA
+**Dificuldades:** tecnologia, prompts, automação
+**Desejos:** crescimento, produtividade, autoridade
 
 ## Dores
+- Tecnologia complicada
 - Falta de método
-- Insegurança
-- Resultado baixo
-- Falta de clareza
-- Tempo limitado
+- Concorrência alta
+- Conteúdo fraco
+- Follow-up lento
 
 ## Desejos
 - Crescimento
-- Tranquilidade
+- Produtividade
 - Autoridade
 - Previsibilidade
-- Resultado
+- Escala
 
 ## Objeções
+- "IA é complicada"
 - "Não compensa"
-- "É complicado"
-- "Não tenho tempo"
+- "Demora muito"
+- "Preciso de ferramentas caras"
 - "Vou errar"
-- "Não funciona"
 
 ## Transformação
-- Método aplicado
-- Resultado crescente
-- Decisão orientada por dados
-- Operação profissional
-- Tranquilidade
+- IA aplicada ao mercado
+- Conteúdo rápido
+- Follow-up eficiente
+- Vendas recorrentes
+- Crescimento previsível
 
 ## Programa Completo
-### Módulo 1 — Fundamentos
-Aula 1.1 — Contexto e oportunidades
-Aula 1.2 — Perfil e objetivos
-Aula 1.3 — Métricas e metas
-Exercício: diagnóstico
+### Módulo 1 — Fundamentos de IA
+Aula 1.1 — O que é IA no imobiliário
+Aula 1.2 — Perfil do corretor
+Aula 1.3 — Método e metas
+Exercício: diagnóstico de IA
 
-### Módulo 2 — Aplicação Prática
-Aula 2.1 — Passo a passo prático
-Aula 2.2 — Exemplos reais
-Aula 2.3 — Erros comuns
-Exercício: aplicação
+### Módulo 2 — Prompts e Conteúdo
+Aula 2.1 — Como criar prompts
+Aula 2.2 — Conteúdo automatizado
+Aula 2.3 — Redes sociais
+Exercício: plano de conteúdo
 
-### Módulo 3 — Estratégia
-Aula 3.1 — Planejamento
-Aula 3.2 — Decisão e priorização
-Aula 3.3 — Execução
-Exercício: plano
+### Módulo 3 — Automação e Atendimento
+Aula 3.1 — Automação de atendimento
+Aula 3.2 — Follow-up inteligente
+Aula 3.3 — Ferramentas
+Exercício: automação aplicada
 
-### Módulo 4 — Crescimento
-Aula 4.1 — Acompanhamento
-Aula 4.2 — Ajustes
+### Módulo 4 — Vendas e Crescimento
+Aula 4.1 — Vendas com IA
+Aula 4.2 — Métricas e ajustes
 Aula 4.3 — Escala
-Exercício: escala
+Exercício: plano de crescimento
 
 ## Carga Horária
-6 horas
+4 horas
 
 ## Material Complementar
-- Checklist
-- Planilha
-- Modelos
+- Checklist de IA
+- Planilha de prompts
+- Modelos de IA
 - PDFs por módulo
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de diagnóstico
-- Checklist de aplicação
-- Checklist de estratégia
-- Checklist de escala
+- Checklist de IA
+- Checklist de prompts
+- Checklist de automação
 
 ## Planilhas
-- Planilha de acompanhamento
+- Planilha de prompts
+- Planilha de conteúdo
 - Planilha de métricas
-- Planilha de ROI
 
 ## Modelos Prontos
-- Modelo de relatório
-- Modelo de proposta
-- Modelo de revisão
+- Modelo de prompt
+- Modelo de follow-up
+- Modelo de conteúdo
 
 ## Scripts
 - Script de atendimento
-- Script de negociação
+- Script de venda
 
 ## Prompt de IA
-Prompt para gerar análises e planos.
+Prompt para gerar conteúdo e automações.
 
 ## Exercícios
-- Exercício 1: diagnóstico
-- Exercício 2: aplicação
-- Exercício 3: plano
-- Exercício 4: escala
+- Exercício 1: diagnóstico de IA
+- Exercício 2: plano de conteúdo
+- Exercício 3: automação aplicada
+- Exercício 4: plano de crescimento
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: aplicação do método
+Prova prática: IA aplicada
 
 ## FAQ
 1. Preciso de experiência? Não.
@@ -193,7 +192,7 @@ Prova prática: aplicação do método
 [marketing/google-ads.md]
 
 ## CTA
-"Aplique o método agora."
+"Use IA no mercado imobiliário agora."
 
 ## Upsell
 - Mentoria individual: R$ 1.500
@@ -204,4 +203,6 @@ Prova prática: aplicação do método
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Cursos complementares Praia Digital
+- Curso de Marketing Imobiliário para Corretores
+- Curso de Automação Comercial para Corretores
+- Curso de Funil de Vendas para Corretores
