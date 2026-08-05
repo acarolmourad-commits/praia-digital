@@ -1,48 +1,68 @@
-# Módulo 2 — Aplicação Prática
+# Módulo 2 — Documentos Essenciais
 
 ## Introdução
-Aplique o método na prática com exemplos reais e evite erros comuns.
+Aprenda os documentos essenciais para venda, locação e investimento no litoral.
 
-## Aula 2.1 — Passo a passo prático
-- Etapas claras
-- Ação imediata
-- Verificação de resultado
+## Aula 2.1 — Escritura e registro
+**Escritura:**
+- Lavratura em cartório.
+- Pagamento de ITBI.
+- Registro no RI.
 
-**Exemplo real:** Profissional aplicou o passo a passo e obteve ganhos rápidos em 15 dias.
+**Matrícula:**
+- Número do imóvel.
+- Histórico de proprietários.
+- Ônus e gravames.
 
-## Aula 2.2 — Exemplos reais
-- Caso 1
-- Caso 2
-- Lições aplicáveis
+**Exemplo real:**
+Corretor verificou matrícula e identificou penhora antes de anunciar.
 
-**Estudo de caso:** Aplicação prática gerou aumento mensurável em 30 dias.
+## Aula 2.2 — Documentos fiscais
+**IPTU:**
+- Certidão de quitação.
+- Últimos pagamentos.
 
-## Aula 2.3 — Erros comuns
-- Erro 1
-- Erro 2
-- Erro 3
-- Como evitar
+**Certidões:**
+- Certidão de ônus.
+- Certidão de ações.
+- Certidão de falência.
 
-## Exercício
-Aplique o método em um cenário real.
+**Exemplo real:**
+Proprietário não quitou IPTU; documento evitou problema na venda.
+
+## Aula 2.3 — Documentos de venda
+**Contrato:**
+- Contrato de compra e venda.
+- Contrato de locação.
+- Contrato de exclusividade.
+
+**Procuração:**
+- Procuração com poderes específicos.
+- Prazo de validade.
+
+**Exercício:**
+Monte um checklist de documentos para venda.
 
 ## Resumo
-- Passo a passo reduz risco
-- Exemplos aceleram aprendizado
-- Erros evitados poupam tempo
+- Escritura e matrícula são essenciais.
+- Documentos fiscais evitam surpresas.
+- Contratos protegem partes.
 
 ## Checklist
-- [ ] Passos executados
-- [ ] Resultados verificados
-- [ ] Ajustes aplicados
+- [ ] Escritura verificada
+- [ ] Matrícula consultada
+- [ ] Certidões emitidas
+- [ ] Contrato revisado
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de aplicação
+- Checklist de documentos
+- Modelo de contrato
 
 ## Ferramentas recomendadas
-- Planilha de acompanhamento
-- App de gestão
+- Portal de cartórios
+- Planilha de controle
+- CRM
 
 ## Prompt de IA
-"Atue como especialista prático. Monte um plano de aplicação para este cenário: [dados]."
+"Atue como especialista em documentação imobiliária. Monte um checklist para este imóvel: [dados]."

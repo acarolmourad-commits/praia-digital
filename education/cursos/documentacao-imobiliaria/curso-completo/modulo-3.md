@@ -1,49 +1,76 @@
-# Módulo 3 — Estratégia
+# Módulo 3 — Processos e Prazos
 
 ## Introdução
-Planeje, decida e priorize ações para crescer com consistência.
+Aprenda a protocolar documentos, controlar prazos e resolver problemas comuns.
 
-## Aula 3.1 — Planejamento
-- Objetivos
-- Ações
-- Prazos
-- Recursos
+## Aula 3.1 — Como protocolar
+**Passos:**
+- Reúna documentos.
+- Preencha formulários.
+- Protocole no cartório.
+- Acompanhe processo.
 
-**Exemplo real:** Planejamento simples permitiu crescer sem surpresas.
+**Custos:**
+- ITBI: 2% a 3%.
+- Registro: R$ 500 a R$ 2.000.
+- Certidões: R$ 20 a R$ 100.
 
-## Aula 3.2 — Decisão e priorização
-- Critérios de decisão
-- Priorização
-- Risco
+**Exemplo real:**
+Corretor protocolou escritura e registrou em 15 dias.
 
-**Estudo de caso:** Decisão baseada em dados evitou prejuízo e aumentou retorno.
+## Aula 3.2 — Prazos e custos
+**Prazos comuns:**
+- Escritura: 5 a 15 dias.
+- Registro: 10 a 30 dias.
+- Certidões: 1 a 5 dias.
 
-## Aula 3.3 — Execução
-- Rotina
-- Acompanhamento
-- Ajuste rápido
+**Custos médios:**
+- ITBI: 2% a 3% do valor do imóvel.
+- Registro: R$ 500 a R$ 2.000.
+- Certidões: R$ 20 a R$ 100.
+
+**Exemplo real:**
+Corretor controlou prazos e fechou venda em 20 dias.
+
+## Aula 3.3 — Problemas comuns
+**Problemas:**
+- Penhora.
+- Usucapião.
+- IPTU atrasado.
+- Falta de escritura.
+
+**Soluções:**
+- Certidão de ônus.
+- Ação de usucapião.
+- Parcelamento de IPTU.
+- Escrituração.
+
+**Estudo de caso:**
+Corretor identificou penhora e evitou prejuízo.
 
 ## Exercício
-Monte um plano estratégico para os próximos 30 dias.
+Monte um mapa de processos para venda de imóvel.
 
 ## Resumo
-- Planejamento evita desperdício
-- Decisão orientada reduz risco
-- Execução gera resultado
+- Protocolo organiza processos.
+- Prazos evitam atrasos.
+- Problemas comuns têm solução.
 
 ## Checklist
-- [ ] Plano definido
-- [ ] Ações listadas
-- [ ] Prazo estabelecido
+- [ ] Processos mapeados
+- [ ] Prazos controlados
+- [ ] Problemas resolvidos
+- [ ] Documentos entregues
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de plano
+- Planilha de prazos
+- Modelo de protocolo
 
 ## Ferramentas recomendadas
-- Planner
-- Planilha
-- App de metas
+- Portal de cartórios
+- Planilha de controle
+- CRM
 
 ## Prompt de IA
-"Atue como estrategista. Monte um plano prático para este objetivo: [dados]."
+"Atue como especialista em documentação imobiliária. Monte um mapa de processos para venda: [dados]."

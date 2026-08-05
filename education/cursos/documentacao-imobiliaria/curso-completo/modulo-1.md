@@ -1,47 +1,74 @@
-# Módulo 1 — Fundamentos
+# Módulo 1 — Fundamentos da Documentação
 
 ## Introdução
-Entenda o contexto, o seu perfil e as métricas essenciais para documentação imobiliária, matrícula, certidões e segurança.
+Entenda o que é documentação imobiliária, os tipos de documento e o papel do profissional no litoral.
 
-## Aula 1.1 — Contexto e oportunidades
-- Mercado atual
-- Oportunidades no litoral
-- Particularidades regionais
+## Aula 1.1 — O que é documentação imobiliária
+Documentação imobiliária é o conjunto de papéis, registros e certidões que comprovam a situação de um imóvel e de seus proprietários.
 
-**Exemplo real:** Profissional identificou oportunidade em região em crescimento e aumentou resultado em 25%.
+**Objetivos:**
+- Garantir segurança jurídica.
+- Reduzir riscos de fraude.
+- Acelerar vendas.
+- Evitar cancelamentos.
 
-## Aula 1.2 — Perfil e objetivos
-- Perfil do aluno
-- Objetivos claros
-- Metas realistas
+**Exemplo real:**
+Corretor revisou documentação antes de anunciar e evitou problema de usucapião.
 
-## Aula 1.3 — Métricas e metas
-- Métricas essenciais
-- Metas de curto, médio e longo prazo
-- Revisão
+**Estudo de caso:**
+Proprietário quase perdeu imóvel por falta de certidão; checklist resolveu.
 
-## Exercício
-Faça o diagnóstico do seu cenário atual.
+## Aula 1.2 — Tipos de documento
+**Documentos do imóvel:**
+- Escritura.
+- Matrícula.
+- IPTU.
+- Certidão de ônus.
+- Habite-se.
+
+**Documentos do proprietário:**
+- RG e CPF.
+- Comprovante de residência.
+- Certidão de casamento/união estável.
+- Procuração.
+
+**Exemplo real:**
+Corretor usou checklist e reuniu documentos em 5 dias.
+
+## Aula 1.3 — Perfil do profissional
+**Corretor iniciante:**
+- Foco: checklist, organização.
+- Erro comum: esquecer certidões.
+
+**Corretor intermediário:**
+- Foco: prazos, processos.
+- Erro comum: não atualizar dados.
+
+**Corretor avançado:**
+- Foco: automação, escala.
+- Erro comum: automação sem revisão.
+
+**Exercício:**
+Faça o diagnóstico da sua documentação atual.
 
 ## Resumo
-- Contexto orienta decisão
-- Perfil evita erros
-- Métricas medem resultado
+- Documentação evita riscos.
+- Checklist organiza processos.
+- Perfil claro orienta ação.
 
 ## Checklist
-- [ ] Cenário mapeado
-- [ ] Objetivos definidos
-- [ ] Métricas escolhidas
-- [ ] Metas traçadas
+- [ ] Documentos listados
+- [ ] Prazos definidos
+- [ ] Processos mapeados
 
 ## Materiais para download
 - PDF do módulo
 - Planilha de diagnóstico
 
 ## Ferramentas recomendadas
-- Planilha
-- Indicadores
-- Consultas locais
+- Checklist digital
+- Planilha de controle
+- CRM
 
 ## Prompt de IA
-"Atue como especialista em documentação imobiliária, matrícula, certidões e segurança. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
+"Atue como especialista em documentação imobiliária. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."

@@ -1,6 +1,6 @@
 # Roteiro de Webinar — Documentação Imobiliária
 1. Abertura: dor do público
-2. Case: resultado prático
+2. Case: documentação que evitou prejuízo
 3. Método: 4 passos
 4. Prova social
 5. Oferta e bônus
