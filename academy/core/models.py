@@ -13,6 +13,7 @@ class UserRole(str, enum.Enum):
 
 class EnrollmentStatus(str, enum.Enum):
     active = "active"
+    pending = "pending"
     expired = "expired"
     refunded = "refunded"
     cancelled = "cancelled"
@@ -123,7 +124,7 @@ class Enrollment(Base):
     __tablename__ = "enrollments"
 
     id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=True)
     course_id = Column(Integer, ForeignKey("courses.id", ondelete="CASCADE"), nullable=False)
     status = Column(Enum(EnrollmentStatus), nullable=False, default=EnrollmentStatus.active)
     access_until = Column(DateTime(timezone=True), nullable=True)
@@ -158,7 +159,7 @@ class Payment(Base):
     __tablename__ = "payments"
 
     id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=True)
     course_id = Column(Integer, ForeignKey("courses.id", ondelete="CASCADE"), nullable=False)
     gateway = Column(String(40), nullable=False)
     gateway_payment_id = Column(String(200), nullable=True)
@@ -176,7 +177,7 @@ class Order(Base):
     __tablename__ = "orders"
 
     id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=True)
     status = Column(Enum(OrderStatus), nullable=False, default=OrderStatus.open)
     subtotal = Column(Integer, nullable=False, default=0)
     discount = Column(Integer, nullable=False, default=0)
