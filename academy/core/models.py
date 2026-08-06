@@ -161,6 +161,7 @@ class Payment(Base):
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=True)
     course_id = Column(Integer, ForeignKey("courses.id", ondelete="CASCADE"), nullable=False)
+    enrollment_id = Column(Integer, nullable=True)
     gateway = Column(String(40), nullable=False)
     gateway_payment_id = Column(String(200), nullable=True)
     status = Column(Enum(PaymentStatus), nullable=False, default=PaymentStatus.pending)
