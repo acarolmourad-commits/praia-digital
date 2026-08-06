@@ -1,0 +1,120 @@
+from pathlib import Path
+import json
+
+lead_base = Path('lead')
+output = Path('education/marketing/lead-magnets-outbound.json')
+
+content = {
+  "santos": {
+    "title": "Guia de Imóveis em Santos — Orla, Gonzaga e Embaré",
+    "whatsapp": "Olá! Tenho interesse no Guia de Imóveis em Santos. Pode me enviar mais detalhes?",
+    "email_subject": "Guia exclusivo de imóveis em Santos — Gonzaga, Embaré e Boqueirão",
+    "email_body": "Oi! Separamos um guia completo com as melhores oportunidades de imóveis em Santos, incluindo orla, Gonzaga e Embaré. Quer receber gratuitamente?",
+    "instagram_caption": "🏖️ Quer encontrar o imóvel ideal em Santos? Nosso guia exclusivo mostra as melhores oportunidades na orla, Gonzaga e Embaré. Clique no link da bio para acessar! #ImoveisSantos #LitoralPaulista #PraiaDigital",
+    "linkedin_post": "🚀 Lançamos o Guia de Imóveis em Santos! Um material completo com análise de mercado, valorização m² e as melhores oportunidades em Gonzaga, Embaré e Boqueirão. Perfeito para quem quer investir ou morar no litoral. Acesse agora! #RealEstate #Investimentos #Santos",
+    "hashtags": "#ImoveisSantos #Gonzaga #Embare #Boqueirao #LitoralPaulista #PraiaDigital #ImovelNaPraia #InvestimentoImobiliario #SantosSP #OrlaDeSantos"
+  },
+  "guaruja": {
+    "title": "Guia de Imóveis no Guarujá — Pitangueiras, Astúrias e Enseada",
+    "whatsapp": "Olá! Tenho interesse no Guia de Imóveis no Guarujá. Pode me enviar mais detalhes?",
+    "email_subject": "Guia exclusivo de imóveis no Guarujá — Pitangueiras, Astúrias e Enseada",
+    "email_body": "Oi! Separamos um guia completo com as melhores oportunidades de imóveis no Guarujá, incluindo Pitangueiras, Astúrias e Enseada. Quer receber gratuitamente?",
+    "instagram_caption": "🌊 Quer encontrar o imóvel ideal no Guarujá? Nosso guia exclusivo mostra as melhores oportunidades em Pitangueiras, Astúrias e Enseada. Clique no link da bio! #ImoveisGuaruja #LitoralPaulista #PraiaDigital",
+    "linkedin_post": "🚀 Lançamos o Guia de Imóveis no Guarujá! Um material completo com análise de mercado, valorização m² e as melhores oportunidades em Pitangueiras, Astúrias e Enseada. Perfeito para investidores e famílias. Acesse agora! #RealEstate #Investimentos #Guaruja",
+    "hashtags": "#ImoveisGuaruja #Pitangueiras #Asturias #Enseada #LitoralPaulista #PraiaDigital #ImovelNaPraia #InvestimentoImobiliario #GuarujaSP #LitoralNorte"
+  },
+  "praia-grande": {
+    "title": "Guia de Imóveis em Praia Grande — Guilhermina, Ocian e Tupi",
+    "whatsapp": "Olá! Tenho interesse no Guia de Imóveis em Praia Grande. Pode me enviar mais detalhes?",
+    "email_subject": "Guia exclusivo de imóveis em Praia Grande — Guilhermina, Ocian e Tupi",
+    "email_body": "Oi! Separamos um guia completo com as melhores oportunidades de imóveis em Praia Grande, incluindo Guilhermina, Ocian e Tupi. Quer receber gratuitamente?",
+    "instagram_caption": "🏝️ Quer encontrar o imóvel ideal em Praia Grande? Nosso guia exclusivo mostra as melhores oportunidades em Guilhermina, Ocian e Tupi. Clique no link da bio! #ImoveisPraiaGrande #LitoralPaulista #PraiaDigital",
+    "linkedin_post": "🚀 Lançamos o Guia de Imóveis em Praia Grande! Um material completo com análise de mercado, valorização m² e as melhores oportunidades em Guilhermina, Ocian e Tupi. Perfeito para quem quer morar ou investir no litoral. Acesse agora! #RealEstate #Investimentos #PraiaGrande",
+    "hashtags": "#ImoveisPraiaGrande #Guilhermina #Ocian #Tupi #LitoralPaulista #PraiaDigital #ImovelNaPraia #InvestimentoImobiliario #PraiaGrandeSP #LitoralSul"
+  },
+  "bertioga": {
+    "title": "Guia de Imóveis em Bertioga — Centro, Riviera e Guaratuba",
+    "whatsapp": "Olá! Tenho interesse no Guia de Imóveis em Bertioga. Pode me enviar mais detalhes?",
+    "email_subject": "Guia exclusivo de imóveis em Bertioga — Centro, Riviera e Guaratuba",
+    "email_body": "Oi! Separamos um guia completo com as melhores oportunidades de imóveis em Bertioga, incluindo Centro, Riviera e Guaratuba. Quer receber gratuitamente?",
+    "instagram_caption": "🌿 Quer encontrar o imóvel ideal em Bertioga? Nosso guia exclusivo mostra as melhores oportunidades em Centro, Riviera e Guaratuba. Clique no link da bio! #ImoveisBertioga #LitoralPaulista #PraiaDigital",
+    "linkedin_post": "🚀 Lançamos o Guia de Imóveis em Bertioga! Um material completo com análise de mercado, valorização m² e as melhores oportunidades em Centro, Riviera e Guaratuba. Perfeito para investidores e famílias que buscam tranquilidade. Acesse agora! #RealEstate #Investimentos #Bertioga",
+    "hashtags": "#ImoveisBertioga #Centro #Riviera #Guaratuba #LitoralPaulista #PraiaDigital #ImovelNaPraia #InvestimentoImobiliario #BertiogaSP #LitoralNorte"
+  },
+  "itanhaem": {
+    "title": "Guia de Imóveis em Itanhaém — Centro, Cibratel e Jardim São Fernando",
+    "whatsapp": "Olá! Tenho interesse no Guia de Imóveis em Itanhaém. Pode me enviar mais detalhes?",
+    "email_subject": "Guia exclusivo de imóveis em Itanhaém — Centro, Cibratel e Jardim São Fernando",
+    "email_body": "Oi! Separamos um guia completo com as melhores oportunidades de imóveis em Itanhaém, incluindo Centro, Cibratel e Jardim São Fernando. Quer receber gratuitamente?",
+    "instagram_caption": "🏄 Quer encontrar o imóvel ideal em Itanhaém? Nosso guia exclusivo mostra as melhores oportunidades em Centro, Cibratel e Jardim São Fernando. Clique no link da bio! #ImoveisItanhaem #LitoralPaulista #PraiaDigital",
+    "linkedin_post": "🚀 Lançamos o Guia de Imóveis em Itanhaém! Um material completo com análise de mercado, valorização m² e as melhores oportunidades em Centro, Cibratel e Jardim São Fernando. Perfeito para quem quer qualidade de vida no litoral. Acesse agora! #RealEstate #Investimentos #Itanhaem",
+    "hashtags": "#ImoveisItanhaem #Centro #Cibratel #JardimSaoFernando #LitoralPaulista #PraiaDigital #ImovelNaPraia #InvestimentoImobiliario #ItanhaemSP #LitoralSul"
+  },
+  "mongagua": {
+    "title": "Guia de Imóveis em Mongaguá — Centro, Jardim São Paulo e Balneario",
+    "whatsapp": "Olá! Tenho interesse no Guia de Imóveis em Mongaguá. Pode me enviar mais detalhes?",
+    "email_subject": "Guia exclusivo de imóveis em Mongaguá — Centro, Jardim São Paulo e Balneário",
+    "email_body": "Oi! Separamos um guia completo com as melhores oportunidades de imóveis em Mongaguá, incluindo Centro, Jardim São Paulo e Balneário. Quer receber gratuitamente?",
+    "instagram_caption": "🌴 Quer encontrar o imóvel ideal em Mongaguá? Nosso guia exclusivo mostra as melhores oportunidades em Centro, Jardim São Paulo e Balneário. Clique no link da bio! #ImoveisMongagua #LitoralPaulista #PraiaDigital",
+    "linkedin_post": "🚀 Lançamos o Guia de Imóveis em Mongaguá! Um material completo com análise de mercado, valorização m² e as melhores oportunidades em Centro, Jardim São Paulo e Balneário. Perfeito para famílias e investidores. Acesse agora! #RealEstate #Investimentos #Mongagua",
+    "hashtags": "#ImoveisMongagua #Centro #JardimSaoPaulo #Balneario #LitoralPaulista #PraiaDigital #ImovelNaPraia #InvestimentoImobiliario #MongaguaSP #LitoralSul"
+  },
+  "sao-vicente": {
+    "title": "Guia de Imóveis em São Vicente — Centro, Gonzaguinha e Itararé",
+    "whatsapp": "Olá! Tenho interesse no Guia de Imóveis em São Vicente. Pode me enviar mais detalhes?",
+    "email_subject": "Guia exclusivo de imóveis em São Vicente — Centro, Gonzaguinha e Itararé",
+    "email_body": "Oi! Separamos um guia completo com as melhores oportunidades de imóveis em São Vicente, incluindo Centro, Gonzaguinha e Itararé. Quer receber gratuitamente?",
+    "instagram_caption": "🌅 Quer encontrar o imóvel ideal em São Vicente? Nosso guia exclusivo mostra as melhores oportunidades em Centro, Gonzaguinha e Itararé. Clique no link da bio! #ImoveisSaoVicente #LitoralPaulista #PraiaDigital",
+    "linkedin_post": "🚀 Lançamos o Guia de Imóveis em São Vicente! Um material completo com análise de mercado, valorização m² e as melhores oportunidades em Centro, Gonzaguinha e Itararé. Perfeito para quem quer viver no litoral com infraestrutura. Acesse agora! #RealEstate #Investimentos #SaoVicente",
+    "hashtags": "#ImoveisSaoVicente #Centro #Gonzaguinha #Itarare #LitoralPaulista #PraiaDigital #ImovelNaPraia #InvestimentoImobiliario #SaoVicenteSP #LitoralSul"
+  },
+  "peruibe": {
+    "title": "Guia de Imóveis em Peruíbe — Centro, Jardim São Paulo e Balneário",
+    "whatsapp": "Olá! Tenho interesse no Guia de Imóveis em Peruíbe. Pode me enviar mais detalhes?",
+    "email_subject": "Guia exclusivo de imóveis em Peruíbe — Centro, Jardim São Paulo e Balneário",
+    "email_body": "Oi! Separamos um guia completo com as melhores oportunidades de imóveis em Peruíbe, incluindo Centro, Jardim São Paulo e Balneário. Quer receber gratuitamente?",
+    "instagram_caption": "🏖️ Quer encontrar o imóvel ideal em Peruíbe? Nosso guia exclusivo mostra as melhores oportunidades em Centro, Jardim São Paulo e Balneário. Clique no link da bio! #ImoveisPeruibe #LitoralPaulista #PraiaDigital",
+    "linkedin_post": "🚀 Lançamos o Guia de Imóveis em Peruíbe! Um material completo com análise de mercado, valorização m² e as melhores oportunidades em Centro, Jardim São Paulo e Balneário. Perfeito para quem busca tranquilidade e beleza natural. Acesse agora! #RealEstate #Investimentos #Peruibe",
+    "hashtags": "#ImoveisPeruibe #Centro #JardimSaoPaulo #Balneario #LitoralPaulista #PraiaDigital #ImovelNaPraia #InvestimentoImobiliario #PeruibeSP #LitoralSul"
+  },
+  "caraguatatuba": {
+    "title": "Guia de Imóveis em Caraguatatuba — Centro, Massaguaçu e Porto Novo",
+    "whatsapp": "Olá! Tenho interesse no Guia de Imóveis em Caraguatatuba. Pode me enviar mais detalhes?",
+    "email_subject": "Guia exclusivo de imóveis em Caraguatatuba — Centro, Massaguaçu e Porto Novo",
+    "email_body": "Oi! Separamos um guia completo com as melhores oportunidades de imóveis em Caraguatatuba, incluindo Centro, Massaguaçu e Porto Novo. Quer receber gratuitamente?",
+    "instagram_caption": "🌊 Quer encontrar o imóvel ideal em Caraguatatuba? Nosso guia exclusivo mostra as melhores oportunidades em Centro, Massaguaçu e Porto Novo. Clique no link da bio! #ImoveisCaraguatatuba #LitoralPaulista #PraiaDigital",
+    "linkedin_post": "🚀 Lançamos o Guia de Imóveis em Caraguatatuba! Um material completo com análise de mercado, valorização m² e as melhores oportunidades em Centro, Massaguaçu e Porto Novo. Perfeito para famílias e investidores. Acesse agora! #RealEstate #Investimentos #Caraguatatuba",
+    "hashtags": "#ImoveisCaraguatatuba #Centro #Massaguacu #PortoNovo #LitoralPaulista #PraiaDigital #ImovelNaPraia #InvestimentoImobiliario #CaraguatatubaSP #LitoralNorte"
+  },
+  "ilhabela": {
+    "title": "Guia de Imóveis em Ilhabela — Centro, Vila e Sul da Ilha",
+    "whatsapp": "Olá! Tenho interesse no Guia de Imóveis em Ilhabela. Pode me enviar mais detalhes?",
+    "email_subject": "Guia exclusivo de imóveis em Ilhabela — Centro, Vila e Sul da Ilha",
+    "email_body": "Oi! Separamos um guia completo com as melhores oportunidades de imóveis em Ilhabela, incluindo Centro, Vila e Sul da Ilha. Quer receber gratuitamente?",
+    "instagram_caption": "🏝️ Quer encontrar o imóvel ideal em Ilhabela? Nosso guia exclusivo mostra as melhores oportunidades em Centro, Vila e Sul da Ilha. Clique no link da bio! #ImoveisIlhabela #LitoralPaulista #PraiaDigital",
+    "linkedin_post": "🚀 Lançamos o Guia de Imóveis em Ilhabela! Um material completo com análise de mercado, valorização m² e as melhores oportunidades em Centro, Vila e Sul da Ilha. Perfeito para quem busca exclusividade e natureza. Acesse agora! #RealEstate #Investimentos #Ilhabela",
+    "hashtags": "#ImoveisIlhabela #Centro #Vila #SulDaIlha #LitoralPaulista #PraiaDigital #ImovelNaPraia #InvestimentoImobiliario #IlhabelaSP #Paraiso"
+  },
+  "sao-sebastiao": {
+    "title": "Guia de Imóveis em São Sebastião — Centro, Camburi e Juquehy",
+    "whatsapp": "Olá! Tenho interesse no Guia de Imóveis em São Sebastião. Pode me enviar mais detalhes?",
+    "email_subject": "Guia exclusivo de imóveis em São Sebastião — Centro, Camburi e Juquehy",
+    "email_body": "Oi! Separamos um guia completo com as melhores oportunidades de imóveis em São Sebastião, incluindo Centro, Camburi e Juquehy. Quer receber gratuitamente?",
+    "instagram_caption": "🌿 Quer encontrar o imóvel ideal em São Sebastião? Nosso guia exclusivo mostra as melhores oportunidades em Centro, Camburi e Juquehy. Clique no link da bio! #ImoveisSaoSebastiao #LitoralPaulista #PraiaDigital",
+    "linkedin_post": "🚀 Lançamos o Guia de Imóveis em São Sebastião! Um material completo com análise de mercado, valorização m² e as melhores oportunidades em Centro, Camburi e Juquehy. Perfeito para famílias e investidores. Acesse agora! #RealEstate #Investimentos #SaoSebastiao",
+    "hashtags": "#ImoveisSaoSebastiao #Centro #Camburi #Juquehy #LitoralPaulista #PraiaDigital #ImovelNaPraia #InvestimentoImobiliario #SaoSebastiaoSP #LitoralNorte"
+  },
+  "ubatuba": {
+    "title": "Guia de Imóveis em Ubatuba — Centro, Itaguá e Santa Luzia",
+    "whatsapp": "Olá! Tenho interesse no Guia de Imóveis em Ubatuba. Pode me enviar mais detalhes?",
+    "email_subject": "Guia exclusivo de imóveis em Ubatuba — Centro, Itaguá e Santa Luzia",
+    "email_body": "Oi! Separamos um guia completo com as melhores oportunidades de imóveis em Ubatuba, incluindo Centro, Itaguá e Santa Luzia. Quer receber gratuitamente?",
+    "instagram_caption": "🌊 Quer encontrar o imóvel ideal em Ubatuba? Nosso guia exclusivo mostra as melhores oportunidades em Centro, Itaguá e Santa Luzia. Clique no link da bio! #ImoveisUbatuba #LitoralPaulista #PraiaDigital",
+    "linkedin_post": "🚀 Lançamos o Guia de Imóveis em Ubatuba! Um material completo com análise de mercado, valorização m² e as melhores oportunidades em Centro, Itaguá e Santa Luzia. Perfeito para quem busca natureza e lazer. Acesse agora! #RealEstate #Investimentos #Ubatuba",
+    "hashtags": "#ImoveisUbatuba #Centro #Itagua #SantaLuzia #LitoralPaulista #PraiaDigital #ImovelNaPraia #InvestimentoImobiliario #UbatubaSP #LitoralNorte"
+  }
+}
+
+output.parent.mkdir(parents=True, exist_ok=True)
+output.write_text(json.dumps(content, ensure_ascii=False, indent=2), encoding='utf-8')
+print(f'written {output}')
