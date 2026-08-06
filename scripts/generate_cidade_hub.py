@@ -1,0 +1,128 @@
+import sys
+from pathlib import Path
+
+if len(sys.argv) < 2:
+    print("Usage: python scripts/generate_cidade_hub.py <city-slug>")
+    sys.exit(1)
+
+slug = sys.argv[1]
+name = slug.replace('-', ' ').title()
+out = Path(f'cidades/{slug}.html')
+
+html = f"""<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imóveis em {name} — Guia do Litoral de SP | Praia Digital</title>
+  <meta name="description" content="Guia de imóveis em {name}: bairros, temporada, valorização, acessos e contato direto com especialistas.">
+  <meta name="keywords" content="imóveis {name}, litoral {name}, investimento imobiliário {name}, corretor {name}, temporada {name}">
+  <link rel="canonical" href="https://praia.digital/cidades/{slug}.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Imóveis em {name} — Guia do Litoral de SP | Praia Digital">
+  <meta property="og:description" content="Guia de imóveis em {name}: bairros, temporada, valorização e contato direto.">
+  <meta property="og:url" content="https://praia.digital/cidades/{slug}.html">
+  <meta property="og:site_name" content="Praia Digital">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="preconnect" href="https://praia.digital">
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Praia Digital - {name}",
+    "url": "https://praia.digital/cidades/{slug}.html",
+    "description": "Guia de imóveis em {name}: bairros, temporada e valorização.",
+    "areaServed": "{name}",
+    "telephone": "(11) 95434-6288",
+    "email": "comercial@praia.digital"
+  }}
+  </script>
+  <style>
+    body{{font-family:'Segoe UI',system-ui,sans-serif;background:#0b1220;color:#e8ecf1;margin:0;padding:0}}
+    .wrap{{max-width:1100px;margin:0 auto;padding:28px 22px}}
+    header nav a{{color:#cfe3ff;text-decoration:none;margin-right:14px;font-weight:500}}
+    h1{{font-size:2rem;margin:0 0 .5rem}}
+    h2{{font-size:1.35rem;margin:1.2rem 0 .6rem}}
+    .lead{{opacity:.85;line-height:1.6;margin-bottom:1rem;max-width:800px}}
+    .cta{{background:#00B4D8;color:#fff;padding:.7rem 1.2rem;border-radius:999px;font-weight:700;text-decoration:none;display:inline-block;margin-top:.6rem;margin-right:.4rem}}
+    .grid{{display:grid;gap:1rem;margin-top:1.2rem}}
+    .grid-3{{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}}
+    .card{{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:18px 20px}}
+    .card a{{color:#cfe3ff;text-decoration:none;font-weight:700}}
+    footer{{margin-top:22px;opacity:.6;font-size:12px}}
+    .pill{{display:inline-block;background:#00B4D8;color:#000;font-weight:700;padding:.15rem .6rem;border-radius:999px;font-size:.75rem;margin-left:.4rem}}
+    .highlight{{background:rgba(0,180,216,.1);border:1px solid rgba(0,180,216,.25);border-radius:16px;padding:18px 20px;margin-top:1rem}}
+    ul.ticks{{margin:0;padding-left:18px}}
+    ul.ticks li{{margin:.4rem 0}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <nav aria-label="Navegação principal">
+        <a href="https://praia.digital/index.html">Início</a>
+        <a href="https://praia.digital/servicos.html">Serviços</a>
+        <a href="https://praia.digital/cidades/index.html">Cidades</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>Imóveis em {name} — Guia do Litoral de SP</h1>
+      <p class="lead">{name} combina identidade local, temporada relevante e oportunidades de compra e locação no litoral de SP. Nossa atuação cobre a cidade com imóveis selecionados, dados de mercado e suporte completo.</p>
+      <a class="cta" href="https://wa.me/5511954346288?text=Ol%C3%A1%2C%20quero%20im%C3%B3veis%20em%20{slug}">Falar com especialista</a>
+      <a class="cta" href="/education/cursos/index.html" style="background:#ff8c00">Ver cursos</a>
+
+      <div class="highlight">
+        <h2>Por que investir em {name}</h2>
+        <p>{name} oferece combinação de custo-benefício, fluxo de temporada e acesso relevante para quem busca investir no litoral paulista. Dados locais e comparáveis ajudam a decidir com método.</p>
+      </div>
+
+      <h2>O que você encontra aqui</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <a href="/servicos.html#avaliacao">Avaliação de imóveis <span class="pill">Destaque</span></a>
+          <p style="opacity:.75; margin-top:6px;">Precificação com comparáveis atualizados.</p>
+        </div>
+        <div class="card">
+          <a href="/servicos.html#captacao">Captação de imóveis</a>
+          <p style="opacity:.75; margin-top:6px;">Exclusividade e divulgação qualificada.</p>
+        </div>
+        <div class="card">
+          <a href="/servicos.html#temporada">Gestão de temporada</a>
+          <p style="opacity:.75; margin-top:6px;">Anúncio, reservas, limpeza e check-in.</p>
+        </div>
+      </div>
+
+      <h2>Bairros e regiões em destaque</h2>
+      <div class="grid grid-3">
+        <div class="card"><a href="/bairros/{slug}/index.html">{name}</a><p style="opacity:.75; margin-top:6px;">Hub local com bairros e praias.</p></div>
+        <div class="card"><a href="/servicos.html">Serviços</a><p style="opacity:.75; margin-top:6px;">Avaliação, captação e temporada.</p></div>
+        <div class="card"><a href="/education/cursos/index.html">Cursos</a><p style="opacity:.75; margin-top:6px;">Estratégia para investidores e corretores.</p></div>
+      </div>
+
+      <h2>Dados locais que importam</h2>
+      <div class="card">
+        <ul class="ticks">
+          <li>Perfil de temporada consistente com picos em feriados.</li>
+          <li>Valorização alinhada ao fluxo de acesso e oferta local.</li>
+          <li>Oferta variada de apartamentos e casas.</li>
+          <li>Comprador que valoriza liquidez, serviços e proximidade da capital.</li>
+        </ul>
+      </div>
+
+      <h2>Conteúdo local</h2>
+      <div class="grid grid-3">
+        <div class="card"><a href="https://praia.digital/education/cursos/index.html">Cursos para investidores</a><p style="opacity:.75; margin-top:6px;">Do primeiro imóvel à gestão profissional.</p></div>
+        <div class="card"><a href="/education/cursos/index.html">Estratégia para corretores</a><p style="opacity:.75; margin-top:6px;">Captação, follow-up, closing e mídia.</p></div>
+        <div class="card"><a href="/education/cursos/index.html">Análise de rentabilidade</a><p style="opacity:.75; margin-top:6px;">ROI, fluxo de caixa e decisão de compra.</p></div>
+      </div>
+    </main>
+
+    <footer>Praia Digital — educação e serviços imobiliários no litoral.</footer>
+  </div>
+</body>
+</html>
+"""
+
+out.write_text(html, encoding='utf-8')
+print(f'generated {out}')
