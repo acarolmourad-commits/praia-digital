@@ -6,12 +6,18 @@ Status atual
 - Produção: **aguardando criação/configuração manual no Render**
 
 Commits recentes enviados em `main`
-- `2130bba` fix(academy): permitir checkout público e alinhar BASE_URL ao padrão de produção
+- `2130bba` fix(academy): permitir checkout público e alinhar BASE_URL
 - `25e7b27` fix(education): melhorar UX do checkout e integração com API Academy
 - `0ae560f` docs(deploy): atualizar status do deploy da Academy no Render
 - `3331362` fix(academy): evitar fallback localhost no BASE_URL
-- `2cb5beb` fix(academy): tratar token JWT inválido em get_current_user
-- `9508b95` chore(deploy): ajustar BASE_URL para `https://academy.praia.digital`
+- `1e6df83` docs(deploy): atualizar checklist de deploy
+- `307c613` feat(content): melhorar hubs GEO das cidades
+- `eb36907` chore(scripts): adicionar amostragem de validação de páginas de cidade
+- `1e0c20a` fix(content): normalizar markup em Guarujá academia e corrigir artefato em Bertioga
+- `d021031` fix(content): normalizar SEO, schema e acentos em páginas de cidades
+- `831cb31` fix(content): normalizar SEO, schema e acentos em todas as páginas de cidades
+- `8549148` fix(content): remover título genérico "Guia do Litoral de SP" em cidades
+- `3207342` chore(scripts): tornar validação de docs de deploy case-insensitive
 
 O que já está no repo
 - `academy/core/security.py` com `get_current_user_optional`
@@ -20,10 +26,13 @@ O que já está no repo
 - `academy/.env.production.example`
 - `render.yaml`
 - `docs/render-academy-manual-steps.md`
+- `docs/render-academy-deploy.md`
+- `docs/deploy-readiness.md`
 - `scripts/deploy_render.bat`
 - `scripts/check_academy_deploy.py`
 - `scripts/frontend_health_check.py`
 - `scripts/check_deploy_docs.py`
+- `scripts/wait_for_academy.py`
 
 Passo manual restante
 1. Abra https://dashboard.render.com
