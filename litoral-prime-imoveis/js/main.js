@@ -27,7 +27,8 @@
     </article>
   `;
   
-  const properties = [
+
+      const properties = [
     {
         "id": 1,
         "title": "Venda em Vila Nova - Santos",
