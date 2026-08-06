@@ -14,7 +14,10 @@ def verify_password(plain_password: str, hashed_password: str) -> bool:
 
 def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(security)):
     token = credentials.credentials
-    payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+    except Exception:
+        raise HTTPException(status_code=401, detail="Invalid token.")
     user_id = payload.get("sub")
     role = payload.get("role")
     if not user_id:
