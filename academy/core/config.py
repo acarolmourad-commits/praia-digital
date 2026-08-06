@@ -19,7 +19,7 @@ EMAIL_FROM = os.getenv("EMAIL_FROM", "no-reply@praia.digital")
 MERCADOPAGO_TOKEN = os.getenv("MERCADOPAGO_TOKEN", "")
 MERCADOPAGO_PUBLIC_KEY = os.getenv("MERCADOPAGO_PUBLIC_KEY", "")
 MERCADOPAGO_API = os.getenv("MERCADOPAGO_API_URL", "https://api.mercadopago.com/v1")
-BASE_URL = os.getenv("BASE_URL", "http://localhost:8000")
+BASE_URL = os.getenv("BASE_URL", "https://academy.praia.digital")
 
 # CORS
 ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "")
