@@ -40,4 +40,4 @@ Use este checklist para concluir o deploy no dashboard do Render.
 - `python scripts/frontend_health_check.py --base https://praia.digital --wait 30`
 
 ## 6. Rollback rápido
-- Se algo falhar, voltar para o último deploy bom pelo dashboard do Render.
+- Se algo falhar, volte para o último deploy bom pelo dashboard do Render.
