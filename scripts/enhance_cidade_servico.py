@@ -85,6 +85,21 @@ city_data = {
     }
 }
 
+img_map = {
+    'santos': 'img/santos-apartamento-vista-mar.webp',
+    'guaruja': 'img/gua-casa-duplex.webp',
+    'praia-grande': 'img/pg-studio-moderno.webp',
+    'bertioga': 'img/berta-alto-padrao.webp',
+    'itanhaem': 'img/it-casa-terrea.webp',
+    'mongagua': 'img/mon-ap-compacto.webp',
+    'sao-vicente': 'img/sv-cobertura-duplex.webp',
+    'peruibe': 'img/per-sobrado.webp',
+    'caraguatatuba': 'img/default-home.jpg',
+    'ilhabela': 'img/default-home.jpg',
+    'sao-sebastiao': 'img/default-home.jpg',
+    'ubatuba': 'img/default-home.jpg',
+}
+
 base = Path('servicos/cidade-servico')
 for p in sorted(base.glob('*.html')):
     txt = p.read_text(encoding='utf-8', errors='ignore')
@@ -103,14 +118,25 @@ for p in sorted(base.glob('*.html')):
     city = city_data[city_slug]['name']
     service = service_names.get(service_slug, service_slug.replace('-', ' ').title())
     highlights = city_data[city_slug]['highlights']
+    img = img_map.get(city_slug)
 
-    # Insert local highlights after first </section>
-    marker = '</section>\n\n    <section class="lead-form">'
-    highlights_html = '</section>\n\n    <section>\n      <h2>Dados locais que importam</h2>\n      <ul>\n'
-    for h in highlights:
-        highlights_html += f'        <li>{h}</li>\n'
-    highlights_html += '      </ul>\n    </section>\n\n    <section class="lead-form">'
-    txt = txt.replace(marker, highlights_html, 1)
+    # Insert local highlights after service description if not present
+    if 'Dados locais que importam' not in txt:
+        marker = '</section>\n\n    <section class="lead-form">'
+        highlights_html = '</section>\n\n    <section>\n      <h2>Dados locais que importam</h2>\n      <ul>\n'
+        for h in highlights:
+            highlights_html += f'        <li>{h}</li>\n'
+        highlights_html += '      </ul>\n    </section>\n\n    <section class="lead-form">'
+        txt = txt.replace(marker, highlights_html, 1)
+
+    # Add image after Dados locais section if not present
+    if img and img not in txt:
+        marker = '</section>\n\n    <section class="lead-form">'
+        img_html = f'<img src="https://praia.digital/{img}" alt="{city}" style="max-width:100%;border-radius:12px;margin-top:18px;">\n\n    <section class="lead-form">'
+        txt = txt.replace(marker, img_html, 1)
+
+    # Update OG image
+    txt = txt.replace('content="https://praia.digital/img/default-home.jpg"', f'content="https://praia.digital/{img}"')
 
     p.write_text(txt, encoding='utf-8')
     print(f'enhanced {p}')
