@@ -1,7 +1,7 @@
-# Checklist — Gestão de Vendas para Corretores
-- [ ] Diagnóstico de vendas
-- [ ] Funil criado
-- [ ] Leads organizados
-- [ ] Follow-up feito
-- [ ] Métricas revisadas
-- [ ] Crescimento planejado
+# Checklist — Gestao De Vendas Para Corretores
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

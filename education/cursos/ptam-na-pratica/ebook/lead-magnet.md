@@ -1,5 +1,5 @@
-# E-book Derivado — PTAM na Prática
-Título: Guia Rápido: PTAM na Prática no Litoral
+# E-book Derivado — Ptam Na Pratica
+Título: Guia Rápido sobre Ptam Na Pratica
 Formato: PDF 20 a 30 páginas
 Preço: gratuito ou R$ 19,90
-Conteúdo: checklist, planilha, dicas rápidas, modelo de processo.
+Conteúdo: resumo, templates, dicas rápidas.

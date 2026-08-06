@@ -1,5 +1,5 @@
-# Sumário do Curso: Negociação Avançada para Corretores
-- Módulo 1: Fundamentos da Negociação Avançada no Litoral
-- Módulo 2: Método e Estratégia
-- Módulo 3: Objeções e Fechamento
-- Módulo 4: Métricas e Crescimento
+# Sumário do Curso: Negociacao Avancada Para Corretores
+- Módulo 1: Fundamentos
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

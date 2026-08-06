@@ -1,11 +1,10 @@
-# Posts Instagram — Atendimento ao Cliente para Corretores
-1. Post: dica de atendimento
-2. Reels: comunicação em 30s
-3. Carrossel: checklist de atendimento
-4. Post: follow-up que fideliza
-5. Reels: case de atendimento
-6. Carrossel: método simples
-7. Post: reclamação sem erro
-8. Reels: erro comum
-9. Carrossel: métricas básicas
-10. Post: comece hoje
+1. Post: dica sobre atendimento cliente para corretores
+2. Post: dica sobre atendimento cliente para corretores
+3. Post: dica sobre atendimento cliente para corretores
+4. Post: dica sobre atendimento cliente para corretores
+5. Post: dica sobre atendimento cliente para corretores
+6. Post: dica sobre atendimento cliente para corretores
+7. Post: dica sobre atendimento cliente para corretores
+8. Post: dica sobre atendimento cliente para corretores
+9. Post: dica sobre atendimento cliente para corretores
+10. Post: dica sobre atendimento cliente para corretores

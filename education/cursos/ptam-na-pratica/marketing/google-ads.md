@@ -1,4 +1,4 @@
-# Google Ads — PTAM na Prática
-Palavras: PTAM, regularização de imóveis no litoral, documentação no litoral
+# Google Ads — ptam-na-pratica
+Palavras: ptam na pratica, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

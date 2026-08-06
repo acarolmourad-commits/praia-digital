@@ -1,9 +1,5 @@
-# Planilha — IA para Corretores
+# Planilha — Ia Para Corretores
 - [ ] Data
 - [ ] Ação
-- [ ] Canal
-- [ ] Leads
-- [ ] Conteúdo
-- [ ] Vendas
-- [ ] ROI
+- [ ] Resultado
 - [ ] Observação

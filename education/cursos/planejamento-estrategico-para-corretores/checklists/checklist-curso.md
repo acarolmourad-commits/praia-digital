@@ -1,8 +1,7 @@
-# Checklist — Planejamento Estratégico para Corretores
-- [ ] Diagnóstico de planejamento
-- [ ] Método estruturado
-- [ ] Visão criada
-- [ ] Execução feita
-- [ ] Fechamento confirmado
-- [ ] Follow-up planejado
-- [ ] Crescimento planejado
+# Checklist — Planejamento Estrategico Para Corretores
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

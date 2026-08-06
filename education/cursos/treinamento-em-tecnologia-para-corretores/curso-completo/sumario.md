@@ -1,5 +1,5 @@
-# Sumário do Curso: Treinamento em Tecnologia para Corretores
-- Módulo 1: Fundamentos da Tecnologia no Litoral
-- Módulo 2: Método e Ferramentas
-- Módulo 3: Automação e Fechamento
-- Módulo 4: Métricas e Crescimento
+# Sumário do Curso: Treinamento Em Tecnologia Para Corretores
+- Módulo 1: Fundamentos
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

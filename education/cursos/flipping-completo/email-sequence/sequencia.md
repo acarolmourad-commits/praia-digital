@@ -1,21 +1,21 @@
 # Sequência de E-mails — Flipping Completo
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: Flipping no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Flipping Completo (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: investidor lucrou com flipping
+Assunto: Case prático de Flipping Completo
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Flipping compensa no litoral?"
+Assunto: "Flipping Completo é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno lucrou em 30 dias
+Assunto: Aluno obteve resultado com Flipping Completo
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

@@ -1,9 +1,9 @@
-# Avaliação Final — Fechamento de Vendas para Corretores
+# Avaliação Final — Fechamento De Vendas Para Corretores
 ## Quiz
-- 20 perguntas sobre fechamento, proposta, objeções e follow-up.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Fechamento aplicado a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

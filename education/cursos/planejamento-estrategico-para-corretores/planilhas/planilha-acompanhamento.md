@@ -1,10 +1,5 @@
-# Planilha — Planejamento Estratégico para Corretores
+# Planilha — Planejamento Estrategico Para Corretores
 - [ ] Data
-- [ ] Meta
 - [ ] Ação
-- [ ] Imóvel
-- [ ] Cidade
-- [ ] Follow-up
-- [ ] Venda
-- [ ] Receita
-- [ ] Status
+- [ ] Resultado
+- [ ] Observação

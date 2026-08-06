@@ -1,4 +1,4 @@
-# Roteiro YouTube — Networking para Corretores
+# Roteiro YouTube — Networking Para Corretores
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado

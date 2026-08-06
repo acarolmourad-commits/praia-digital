@@ -1,73 +1,60 @@
-# Módulo 3 — Captação de Leads e Conversão
-
+# Módulo 3 — Conteúdo Premium
 ## Introdução
-Capture leads qualificados, nutra relacionamento e converta vendas com um funil de marketing e vendas estruturado.
+Neste módulo você vai dominar marketing imobiliario com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 3.1 — Como captar leads qualificados
-**Canais de captação:**
-- Anúncios no Google e Meta.
-- Conteúdo educativo: SEO, YouTube, Instagram.
-- Indicações de clientes satisfeitos.
-- Eventos locais.
+## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Qualificação:**
-- Orçamento.
-- Prazo.
-- Perfil: comprador ou investidor.
-- Urgência.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Corretor usou anúncios segmentados para interesses em litoral e investimento e gerou 30 leads qualificados em 1 mês.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 3.2 — Follow-up e nutrição
-**Follow-up:**
-- Resposta em até 1 hora.
-- Ligação 24h após o primeiro contato.
-- Envio de conteúdo relevante semanalmente.
+## Aula 3.2 — Caso real 2: como evitar erros custosos
+Fundamentos, ferramentas e fluxos recomendados para marketing imobiliario no litoral.
 
-**Nutrição:**
-- Envie cases, dicas e imóveis relevantes.
-- Personalize mensagens.
-- Use CRM para organizar.
+**Ferramentas recomendadas:**
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
-**Estudo de caso:**
-Corretor implementou follow-up automático e aumentou taxa de conversão de 12% para 28%.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-## Aula 3.3 — Proposta e fechamento
-**Proposta:**
-- Dados do imóvel.
-- Comparáveis.
-- Condições de compra.
-- Prazo de fechamento.
+## Aula 3.3 — Lições aplicáveis ao seu contexto
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Fechamento:**
-- Apresente dados, não opiniões.
-- Mostre valor, não apenas preço.
-- Seja transparente.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Exercício:**
-Monte um funil de vendas para os próximos 30 dias.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Analise um caso real do mercado e adapte as lições para a sua realidade.
 
 ## Resumo
-- Leads qualificados aumentam conversão.
-- Follow-up rápido fecha vendas.
-- Proposta clara reduz objeções.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Funil definido
-- [ ] Leads captados
-- [ ] Follow-up ativo
-- [ ] Proposta preparada
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de leads
-- Modelo de proposta
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- CRM de vendas
-- Planilha de métricas
-- Anúncios pagos
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
 ## Prompt de IA
-"Atue como especialista em marketing imobiliário. Monte um funil de vendas para este corretor: [dados]."
+Atue como mentor experiente. Analise este caso real de marketing imobiliario no litoral e aponte 5 lições práticas: [descreva o caso].

@@ -1,9 +1,9 @@
-# Avaliação Final — Como Vender Imóveis de Alto Padrão no Litoral
+# Avaliação Final — Venda Imoveis Alto Padrao Litoral
 ## Quiz
-- 20 perguntas sobre vendas de alto padrão, atendimento, proposta e negociação.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Venda aplicada a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

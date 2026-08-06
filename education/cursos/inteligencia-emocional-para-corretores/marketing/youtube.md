@@ -1,4 +1,4 @@
-# Roteiro YouTube — Inteligência Emocional para Corretores
+# Roteiro YouTube — Inteligencia Emocional Para Corretores
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado

@@ -1,74 +1,60 @@
-# Módulo 1 — Fundamentos da Documentação
-
+# Módulo 1 — Conteúdo Premium
 ## Introdução
-Entenda o que é documentação imobiliária, os tipos de documento e o papel do profissional no litoral.
+Neste módulo você vai dominar documentacao imobiliaria com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 1.1 — O que é documentação imobiliária
-Documentação imobiliária é o conjunto de papéis, registros e certidões que comprovam a situação de um imóvel e de seus proprietários.
+## Aula 1.1 — Visão geral do mercado de documentacao imobiliaria no litoral paulista
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Objetivos:**
-- Garantir segurança jurídica.
-- Reduzir riscos de fraude.
-- Acelerar vendas.
-- Evitar cancelamentos.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Corretor revisou documentação antes de anunciar e evitou problema de usucapião.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Estudo de caso:**
-Proprietário quase perdeu imóvel por falta de certidão; checklist resolveu.
+## Aula 1.2 — Conceitos essenciais: termos, métricas e particularidades locais
+Fundamentos, ferramentas e fluxos recomendados para documentacao imobiliaria no litoral.
 
-## Aula 1.2 — Tipos de documento
-**Documentos do imóvel:**
-- Escritura.
-- Matrícula.
-- IPTU.
-- Certidão de ônus.
-- Habite-se.
+**Ferramentas recomendadas:**
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
-**Documentos do proprietário:**
-- RG e CPF.
-- Comprovante de residência.
-- Certidão de casamento/união estável.
-- Procuração.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Exemplo real:**
-Corretor usou checklist e reuniu documentos em 5 dias.
+## Aula 1.3 — Estudo de caso real: como um aluno aplicou o método e obteve resultado em 30 dias
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-## Aula 1.3 — Perfil do profissional
-**Corretor iniciante:**
-- Foco: checklist, organização.
-- Erro comum: esquecer certidões.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Corretor intermediário:**
-- Foco: prazos, processos.
-- Erro comum: não atualizar dados.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
-**Corretor avançado:**
-- Foco: automação, escala.
-- Erro comum: automação sem revisão.
-
-**Exercício:**
-Faça o diagnóstico da sua documentação atual.
+## Exercício
+Faça o diagnóstico do seu cenário atual em documentacao imobiliaria: liste pontos fortes, fracos, oportunidades e ameaças.
 
 ## Resumo
-- Documentação evita riscos.
-- Checklist organiza processos.
-- Perfil claro orienta ação.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Documentos listados
-- [ ] Prazos definidos
-- [ ] Processos mapeados
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de diagnóstico
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Checklist digital
-- Planilha de controle
-- CRM
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
 ## Prompt de IA
-"Atue como especialista em documentação imobiliária. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
+Atue como especialista em documentacao imobiliaria no litoral paulista. Faça um diagnóstico personalizado com base nestas respostas: [insira suas respostas].

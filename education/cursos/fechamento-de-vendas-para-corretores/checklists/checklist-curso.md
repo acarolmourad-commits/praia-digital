@@ -1,8 +1,7 @@
-# Checklist — Fechamento de Vendas para Corretores
-- [ ] Diagnóstico de fechamento
-- [ ] Método estruturado
-- [ ] Proposta criada
-- [ ] Objeções mapeadas
-- [ ] Fechamento confirmado
-- [ ] Follow-up feito
-- [ ] Crescimento planejado
+# Checklist — Fechamento De Vendas Para Corretores
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

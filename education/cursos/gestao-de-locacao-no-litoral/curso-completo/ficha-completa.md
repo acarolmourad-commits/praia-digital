@@ -1,12 +1,12 @@
-# Curso: Gestão de Locação no Litoral
+# Curso: Gestao De Locacao No Litoral
 ## Nome Comercial
-**Gestão de Locação no Litoral: Método Prático para Administrar Imóveis Temporários e Anuais com Segurança e Rentabilidade**
+**Gestao De Locacao No Litoral: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Da vaga à rentabilidade: aprenda a gerir locação no litoral com método, operação e previsibilidade.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 15 dias, você será capaz de montar gestão de locação, reduzir ociosidade e aumentar rentabilidade no litoral.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
 - Donos de imóveis no litoral
@@ -22,31 +22,30 @@ Iniciante → Intermediário
 
 ## Tempo Estimado
 4 horas de aulas (20 aulas de 10 a 16 min)
-Total: 4 horas
+Total: 4 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 197
-À vista: R$ 167
-Parcelado: 12x de R$ 13,92
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist de gestão de locação
-- Planilha de controle
-- Modelos de operação
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Gerencie locação no litoral e aumente rentabilidade"**
+**"Gestao De Locacao No Litoral"**
 
 ## Big Idea
-Gestão de locação combina operação, relacionamento e dados para reduzir ociosidade e aumentar resultado no litoral.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
-- **Curso completo:** R$ 197
+- **Curso completo:** R$ 297
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
@@ -54,112 +53,103 @@ Gestão de locação combina operação, relacionamento e dados para reduzir oci
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** gerir locação e aumentar rentabilidade
-**Dificuldades:** ociosidade, manutenção, hóspedes
-**Desejos:** previsibilidade, autonomia, escala
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Ociosidade alta
-- Manutenção cara
-- Hóspedes ruins
 - Falta de método
-- Renda instável
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Previsibilidade
-- Autonomia
-- Escala
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
 - Segurança
-- Crescimento
+- Autoridade local
 
 ## Objeções
-- "Gestão é complicada"
-- "Demora muito"
-- "Não compensa"
-- "Vou errar"
-- "É operacional"
+- "Muito caro"
+- "Não funciona"
+- "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- Operação enxuta
-- Ociosidade reduzida
-- Renda recorrente
-- Resultado previsível
-- Liberdade
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
-### Módulo 1 — Fundamentos da Gestão no Litoral
-Aula 1.1 — O que é gestão de locação
-Aula 1.2 — Perfil do gestor
-Aula 1.3 — Método e metas
-Exercício: diagnóstico de gestão
+### Módulo 1 — Fundamentos
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Operação e Preparação
-Aula 2.1 — Preparação do imóvel
-Aula 2.2 — Check-in e check-out
-Aula 2.3 — Manutenção preventiva
-Exercício: plano de operação
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Hóspedes e Relacionamento
-Aula 3.1 — Hóspedes
-Aula 3.2 — Comunicação
-Aula 3.3 — Problemas comuns
-Exercício: fluxo de atendimento
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Rentabilidade e Escala
-Aula 4.1 — Precificação
-Aula 4.2 — Métricas
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
 Aula 4.3 — Escala
 Exercício: plano de crescimento
 
 ## Carga Horária
-4 horas
+4 horas de aulas (20 aulas de 10 a 16 min)
+Total: 4 horas
 
 ## Material Complementar
-- Checklist de gestão de locação
-- Planilha de controle
-- Modelos de operação
 - PDFs por módulo
+- Templates
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de gestão
-- Checklist de operação
-- Checklist de hóspedes
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de controle
-- Planilha de precificação
-- Planilha de manutenção
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de operação
-- Modelo de atendimento
-- Modelo de fluxo
+- Modelo aplicável
 
 ## Scripts
-- Script de atendimento
-- Script de venda
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para gerar análises e operações.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: diagnóstico de gestão
-- Exercício 2: plano de operação
-- Exercício 3: fluxo de atendimento
-- Exercício 4: plano de crescimento
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: gestão aplicada
+Prova prática: aplicação do método
 
 ## FAQ
-1. Preciso de experiência? Não.
-2. Em quanto tempo vejo resultado? De 15 a 30 dias.
-3. Vale a pena? Sim.
-4. E se errar? Ajuste com método.
-5. Tem suporte? Sim.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
 [vendas.html]
@@ -192,17 +182,15 @@ Prova prática: gestão aplicada
 [marketing/google-ads.md]
 
 ## CTA
-"Gerencie locação no litoral e aumente rentabilidade agora."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Mentoria individual: R$ 1.500
-- Acompanhamento: R$ 2.800
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
 - Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Imóveis para Airbnb
-- Curso de Gestão Profissional da Locação
-- Curso de Como Aumentar em 30% a Rentabilidade
+- Outros cursos da Praia Digital Academy

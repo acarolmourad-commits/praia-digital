@@ -1,7 +1,6 @@
-# Certificado — Booking do Zero no Litoral
+# Certificado — Booking Do Zero
 Modelo: Praia Digital Academy
-Curso: Booking do Zero no Litoral
-Carga horária: 7 horas
+Curso: Booking Do Zero
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

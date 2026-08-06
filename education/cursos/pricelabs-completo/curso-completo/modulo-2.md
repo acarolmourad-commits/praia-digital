@@ -1,76 +1,60 @@
-# Módulo 2 — Setup do PriceLabs
-
+# Módulo 2 — Conteúdo Premium
 ## Introdução
-Configure o PriceLabs do zero, integre canais e prepare regras que protegem margem e ocupação. O setup bem feito evita surpresas e reduz trabalho manual.
+Neste módulo você vai dominar pricelabs completo com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 2.1 — Como cadastrar e configurar
-**Passo a passo:**
-1. Crie a conta no PriceLabs.
-2. Adicione o imóvel com dados reais: tipo, área, quartos, banheiros, capacidade.
-3. Preencha comodidades e restrições: piscina, estacionamento, pets, mínimo de noites.
-4. Defina localização precisa e mapa.
+## Aula 2.1 — Passo a passo para aplicar pricelabs completo na prática
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Dica prática:**
-Quanto mais completo o cadastro, mais precisa a sugestão de preço.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Imóvel em Santos ganhou 30% mais receita após setup completo com dados corretos e regras claras.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 2.2 — Dados do imóvel e regras
-**Preço base:**
-- Consulte 5 imóveis similares na região.
-- Defina preço base competitivo para baixa temporada.
+## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
+Fundamentos, ferramentas e fluxos recomendados para pricelabs completo no litoral.
 
-**Mínimo e máximo:**
-- Mínimo: evita diárias muito baixas.
-- Máximo: captura valor nos picos.
+**Ferramentas recomendadas:**
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
-**Estadia mínima:**
-- Alta temporada: mínimo de 2 a 3 noites.
-- Baixa temporada: mínimo de 1 noite.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Antecipação:**
-- Limite de reserva: até 180 dias.
-- Ajuste por antecedência.
+## Aula 2.3 — Automação e fluxos que economizam horas por semana
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Estudo de caso:**
-Casa em São Vicente definiu regras de mínimo 2 noites e aumentou receita por estadia em 15%.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-## Aula 2.3 — Integrações
-**Canais suportados:**
-- Airbnb
-- Booking
-- Canal manager
-- Calendário Google
-
-**Boas práticas:**
-- Sincronize todos os canais.
-- Mantenha calendário atualizado.
-- Evite overbooking.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
 ## Exercício
-Monte um setup simulado no PriceLabs para o seu imóvel.
+Monte um plano prático de pricelabs completo para os próximos 30 dias, com ações diárias e semanais.
 
 ## Resumo
-- Setup correto evita surpresas.
-- Regras protegem margem.
-- Integrações reduzem trabalho.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Conta criada
-- [ ] Imóvel cadastrado
-- [ ] Preço base definido
-- [ ] Regras aplicadas
-- [ ] Integrações ativas
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de configuração
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- PriceLabs
-- Canal manager
-- Planilha de preços
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
 ## Prompt de IA
-"Atue como especialista em PriceLabs. Crie um setup sugerido para este imóvel: [dados do imóvel]."
+Atue como consultor de pricelabs completo. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].

@@ -1,5 +1,5 @@
-# Sumário do Curso: Multiplique Patrimônio
-- Módulo 1: Fundamentos da Multiplicação
-- Módulo 2: Estratégias de Crescimento
-- Módulo 3: Documentação e Segurança
-- Módulo 4: Gestão e Escala
+# Sumário do Curso: Multiplique Patrimonio
+- Módulo 1: Fundamentos
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

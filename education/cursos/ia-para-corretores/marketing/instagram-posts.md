@@ -1,11 +1,10 @@
-# Posts Instagram — IA para Corretores
-1. Post: dica de IA
-2. Reels: prompt em 30s
-3. Carrossel: checklist de IA
-4. Post: conteúdo rápido
-5. Reels: case de vendas
-6. Carrossel: método simples
-7. Post: automação sem erro
-8. Reels: erro comum
-9. Carrossel: métricas básicas
-10. Post: comece hoje
+1. Post: dica sobre ia para corretores
+2. Post: dica sobre ia para corretores
+3. Post: dica sobre ia para corretores
+4. Post: dica sobre ia para corretores
+5. Post: dica sobre ia para corretores
+6. Post: dica sobre ia para corretores
+7. Post: dica sobre ia para corretores
+8. Post: dica sobre ia para corretores
+9. Post: dica sobre ia para corretores
+10. Post: dica sobre ia para corretores

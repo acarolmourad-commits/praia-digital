@@ -1,6 +1,10 @@
-# TikTok — Gestão Profissional da Locação
-1. Roteiro: locação sem erro
-2. Roteiro: 1 imóvel, 2 regras
-3. Roteiro: como fiscalizar
-4. Roteiro: preço rentável
-5. Roteiro: case de locação
+1. Roteiro: case rápido 1
+2. Roteiro: case rápido 2
+3. Roteiro: case rápido 3
+4. Roteiro: case rápido 4
+5. Roteiro: case rápido 5
+6. Roteiro: case rápido 6
+7. Roteiro: case rápido 7
+8. Roteiro: case rápido 8
+9. Roteiro: case rápido 9
+10. Roteiro: case rápido 10

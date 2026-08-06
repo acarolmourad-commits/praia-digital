@@ -1,10 +1,5 @@
-# Planilha — Gestão de Vendas para Corretores
+# Planilha — Gestao De Vendas Para Corretores
 - [ ] Data
-- [ ] Lead
-- [ ] Cidade
-- [ ] Imóvel
-- [ ] Visitas
-- [ ] Proposta
-- [ ] Venda
-- [ ] Receita
-- [ ] Status
+- [ ] Ação
+- [ ] Resultado
+- [ ] Observação

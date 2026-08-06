@@ -1,12 +1,12 @@
-# Curso: Avaliação de Imóveis
+# Curso: Avaliacao De Imoveis
 ## Nome Comercial
-**Avaliação de Imóveis no Litoral: Método Prático para Determinar Valores Reais e Aumentar Confiança em Vendas e Investimentos**
+**Avaliacao De Imoveis: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Do dado ao laudo: aprenda a avaliar imóveis no litoral com método, comparáveis e segurança.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 20 dias, você será capaz de realizar avaliações imobiliárias no litoral com método, gerar laudos confiáveis e aumentar confiança em vendas e investimentos.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
 - Corretores de imóveis iniciantes e intermediários
@@ -22,31 +22,30 @@ Iniciante → Intermediário
 
 ## Tempo Estimado
 4 horas de aulas (20 aulas de 10 a 16 min)
-Total: 4 horas
+Total: 4 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 197
-À vista: R$ 167
-Parcelado: 12x de R$ 13,92
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist de avaliação
-- Planilha de comparáveis
-- Modelos de laudo
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Avalie imóveis no litoral com método e aumente confiança em vendas e investimentos"**
+**"Avaliacao De Imoveis"**
 
 ## Big Idea
-Avaliação imobiliária no litoral combina dados locais, comparáveis e método para determinar valores reais e reduzir riscos.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
-- **Curso completo:** R$ 197
+- **Curso completo:** R$ 297
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
@@ -54,112 +53,103 @@ Avaliação imobiliária no litoral combina dados locais, comparáveis e método
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** avaliar imóveis com segurança
-**Dificuldades:** falta de método, dados confusos, insegurança
-**Desejos:** autoridade, vendas recorrentes, crescimento
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
 - Falta de método
-- Dados confusos
-- Insegurança
-- Preço errado
-- Concorrência
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
+- Segurança
 - Autoridade local
-- Vendas recorrentes
-- Crescimento
-- Tranquilidade
-- Reconhecimento
 
 ## Objeções
-- "Avaliação é complicada"
-- "Não tenho dados"
-- "Preço é subjetivo"
+- "Muito caro"
 - "Não funciona"
-- "Vou errar"
+- "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- Avaliações estruturadas
-- Laudos confiáveis
-- Preço justo
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
 - Autoridade local
-- Tranquilidade
+- Crescimento profissional
 
 ## Programa Completo
-### Módulo 1 — Fundamentos da Avaliação
-Aula 1.1 — O que é avaliação imobiliária
-Aula 1.2 — Métodos de avaliação
-Aula 1.3 — Perfil do avaliador
-Exercício: diagnóstico de avaliação
+### Módulo 1 — Fundamentos
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Dados e Comparáveis
-Aula 2.1 — Como obter dados do imóvel
-Aula 2.2 — Comparáveis no litoral
-Aula 2.3 — Análise de mercado
-Exercício: análise comparativa
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Laudo e Apresentação
-Aula 3.1 — Como fazer um laudo
-Aula 3.2 — Apresentação para proprietário
-Aula 3.3 — Negociação e fechamento
-Exercício: laudo aplicado
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Gestão e Crescimento
-Aula 4.1 — Gestão de avaliações
-Aula 4.2 — Ajustes e melhorias
-Aula 4.3 — Escala e autoridade
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
 Exercício: plano de crescimento
 
 ## Carga Horária
-4 horas
+4 horas de aulas (20 aulas de 10 a 16 min)
+Total: 4 horas
 
 ## Material Complementar
-- Checklist de avaliação
-- Planilha de comparáveis
-- Modelos de laudo
 - PDFs por módulo
+- Templates
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de avaliação
-- Checklist de comparáveis
-- Checklist de laudo
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de comparáveis
-- Planilha de avaliação
-- Planilha de laudo
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de laudo
-- Modelo de proposta
-- Modelo de follow-up
+- Modelo aplicável
 
 ## Scripts
-- Script de avaliação
-- Script de apresentação
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para gerar laudos e análises.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: diagnóstico de avaliação
-- Exercício 2: análise comparativa
-- Exercício 3: laudo aplicado
-- Exercício 4: plano de crescimento
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: laudo de avaliação aplicado
+Prova prática: aplicação do método
 
 ## FAQ
-1. Preciso de experiência? Não.
-2. Em quanto tempo vejo resultado? De 15 a 30 dias.
-3. Vale a pena? Sim.
-4. E se errar? Ajuste com método.
-5. Tem suporte? Sim.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
 [vendas.html]
@@ -192,17 +182,15 @@ Prova prática: laudo de avaliação aplicado
 [marketing/google-ads.md]
 
 ## CTA
-"Avalie imóveis no litoral com método agora."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Mentoria individual: R$ 1.500
-- Acompanhamento: R$ 2.800
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
 - Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Análise de Rentabilidade
-- Curso de Especialista em Venda de Imóveis no Litoral
-- Curso de Captação e Exclusividade
+- Outros cursos da Praia Digital Academy

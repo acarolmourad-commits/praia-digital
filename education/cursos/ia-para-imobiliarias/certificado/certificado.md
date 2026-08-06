@@ -1,7 +1,6 @@
-# Certificado — IA para Imobiliárias
+# Certificado — Ia Para Imobiliarias
 Modelo: Praia Digital Academy
-Curso: IA para Imobiliárias
-Carga horária: 4 horas
+Curso: Ia Para Imobiliarias
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

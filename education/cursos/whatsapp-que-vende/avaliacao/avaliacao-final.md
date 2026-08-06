@@ -1,9 +1,9 @@
-# Avaliação Final — WhatsApp que Vende
+# Avaliação Final — Whatsapp Que Vende
 ## Quiz
-- 20 perguntas sobre WhatsApp, atendimento, follow-up e vendas.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Fluxo de atendimento aplicado a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

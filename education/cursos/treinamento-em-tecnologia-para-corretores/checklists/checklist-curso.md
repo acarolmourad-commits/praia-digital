@@ -1,8 +1,7 @@
-# Checklist — Treinamento em Tecnologia para Corretores
-- [ ] Diagnóstico de tecnologia
-- [ ] Método estruturado
-- [ ] Ferramentas escolhidas
-- [ ] Automação criada
-- [ ] Fechamento confirmado
-- [ ] Follow-up planejado
-- [ ] Crescimento planejado
+# Checklist — Treinamento Em Tecnologia Para Corretores
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

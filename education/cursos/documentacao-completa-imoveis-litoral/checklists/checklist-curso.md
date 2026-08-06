@@ -1,8 +1,7 @@
-# Checklist — Documentação Completa para Imóveis no Litoral
-- [ ] Diagnóstico de documentação
-- [ ] Documentos listados
-- [ ] Verificação feita
-- [ ] Regularização planejada
-- [ ] Venda estruturada
-- [ ] Pós-venda planejada
-- [ ] Backup criado
+# Checklist — Documentacao Completa Imoveis Litoral
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

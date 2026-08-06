@@ -1,12 +1,12 @@
-# Curso: IA para Corretores
+# Curso: Ia Para Corretores
 ## Nome Comercial
-**IA para Corretores: Método Prático para Usar Inteligência Artificial no Mercado Imobiliário e Vender Mais no Litoral**
+**Ia Para Corretores: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Do prompt à venda: aprenda a usar IA no mercado imobiliário do litoral com método.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 15 dias, você será capaz de usar IA para captar leads, criar conteúdo, atender clientes e fechar mais vendas no litoral.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
 - Corretores de imóveis iniciantes e intermediários
@@ -22,31 +22,30 @@ Iniciante → Intermediário
 
 ## Tempo Estimado
 4 horas de aulas (20 aulas de 10 a 16 min)
-Total: 4 horas
+Total: 4 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 197
-À vista: R$ 167
-Parcelado: 12x de R$ 13,92
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist de IA
-- Planilha de prompts
-- Modelos de IA
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Use IA no mercado imobiliário do litoral e venda mais"**
+**"Ia Para Corretores"**
 
 ## Big Idea
-IA aplicada ao mercado imobiliário combina prompts, automação e dados para aumentar vendas e reduzir esforço.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
-- **Curso completo:** R$ 197
+- **Curso completo:** R$ 297
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
@@ -54,112 +53,103 @@ IA aplicada ao mercado imobiliário combina prompts, automação e dados para au
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** vender mais com IA
-**Dificuldades:** tecnologia, prompts, automação
-**Desejos:** crescimento, produtividade, autoridade
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Tecnologia complicada
 - Falta de método
-- Concorrência alta
-- Conteúdo fraco
-- Follow-up lento
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Crescimento
-- Produtividade
-- Autoridade
-- Previsibilidade
-- Escala
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
+- Segurança
+- Autoridade local
 
 ## Objeções
-- "IA é complicada"
-- "Não compensa"
-- "Demora muito"
-- "Preciso de ferramentas caras"
-- "Vou errar"
+- "Muito caro"
+- "Não funciona"
+- "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- IA aplicada ao mercado
-- Conteúdo rápido
-- Follow-up eficiente
-- Vendas recorrentes
-- Crescimento previsível
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
-### Módulo 1 — Fundamentos de IA
-Aula 1.1 — O que é IA no imobiliário
-Aula 1.2 — Perfil do corretor
-Aula 1.3 — Método e metas
-Exercício: diagnóstico de IA
+### Módulo 1 — Fundamentos
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Prompts e Conteúdo
-Aula 2.1 — Como criar prompts
-Aula 2.2 — Conteúdo automatizado
-Aula 2.3 — Redes sociais
-Exercício: plano de conteúdo
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Automação e Atendimento
-Aula 3.1 — Automação de atendimento
-Aula 3.2 — Follow-up inteligente
-Aula 3.3 — Ferramentas
-Exercício: automação aplicada
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Vendas e Crescimento
-Aula 4.1 — Vendas com IA
-Aula 4.2 — Métricas e ajustes
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
 Aula 4.3 — Escala
 Exercício: plano de crescimento
 
 ## Carga Horária
-4 horas
+4 horas de aulas (20 aulas de 10 a 16 min)
+Total: 4 horas
 
 ## Material Complementar
-- Checklist de IA
-- Planilha de prompts
-- Modelos de IA
 - PDFs por módulo
+- Templates
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de IA
-- Checklist de prompts
-- Checklist de automação
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de prompts
-- Planilha de conteúdo
-- Planilha de métricas
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de prompt
-- Modelo de follow-up
-- Modelo de conteúdo
+- Modelo aplicável
 
 ## Scripts
-- Script de atendimento
-- Script de venda
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para gerar conteúdo e automações.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: diagnóstico de IA
-- Exercício 2: plano de conteúdo
-- Exercício 3: automação aplicada
-- Exercício 4: plano de crescimento
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: IA aplicada
+Prova prática: aplicação do método
 
 ## FAQ
-1. Preciso de experiência? Não.
-2. Em quanto tempo vejo resultado? De 15 a 30 dias.
-3. Vale a pena? Sim.
-4. E se errar? Ajuste com método.
-5. Tem suporte? Sim.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
 [vendas.html]
@@ -192,17 +182,15 @@ Prova prática: IA aplicada
 [marketing/google-ads.md]
 
 ## CTA
-"Use IA no mercado imobiliário agora."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Mentoria individual: R$ 1.500
-- Acompanhamento: R$ 2.800
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
 - Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Marketing Imobiliário para Corretores
-- Curso de Automação Comercial para Corretores
-- Curso de Funil de Vendas para Corretores
+- Outros cursos da Praia Digital Academy

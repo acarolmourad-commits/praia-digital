@@ -1,12 +1,12 @@
-# Curso: Marketing Imobiliário para Corretores
+# Curso: Marketing Imobiliario
 ## Nome Comercial
-**Marketing Imobiliário para Corretores: Método Prático para Captar Leads, Vender Mais e se Destacar no Mercado Imobiliário**
+**Marketing Imobiliario: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Do conteúdo ao fechamento: aprenda a usar marketing digital para captar leads, construir autoridade e vender mais imóveis no litoral.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de montar uma estratégia de marketing digital, captar leads qualificados e vender mais imóveis no litoral.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
 - Corretores de imóveis iniciantes e intermediários
@@ -22,31 +22,30 @@ Iniciante → Intermediário
 
 ## Tempo Estimado
 7 horas de aulas (36 aulas de 10 a 16 min)
-Total: 7 horas
+Total: 7 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 347
-À vista: R$ 287
-Parcelado: 12x de R$ 23,92
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist de marketing
-- Planilha de leads
-- Modelos de conteúdo e proposta
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Use marketing digital para captar leads, vender mais e se destacar no mercado imobiliário"**
+**"Marketing Imobiliario"**
 
 ## Big Idea
-Marketing imobiliário no litoral combina conteúdo local, presença digital e relacionamento para captar leads qualificados e fechar vendas.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
-- **Curso completo:** R$ 347
+- **Curso completo:** R$ 297
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
@@ -54,113 +53,103 @@ Marketing imobiliário no litoral combina conteúdo local, presença digital e r
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** captar leads e vender mais imóveis
-**Dificuldades:** falta de leads, concorrência, conteúdo fraco
-**Desejos:** autoridade local, vendas recorrentes, crescimento
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Falta de leads qualificados
-- Concorrência alta
-- Conteúdo que não converte
-- Dificuldade de medir resultados
 - Falta de método
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
+- Segurança
 - Autoridade local
-- Vendas recorrentes
-- Crescimento
-- Tranquilidade
-- Reconhecimento
 
 ## Objeções
-- "Marketing é caro"
-- "Não tenho tempo"
+- "Muito caro"
 - "Não funciona"
-- "Não entendo de digital"
-- "Vou ter dor de cabeça"
+- "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- Leads qualificados
-- Conteúdo que converte
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
 - Autoridade local
-- Vendas recorrentes
-- Crescimento previsível
+- Crescimento profissional
 
 ## Programa Completo
-### Módulo 1 — Fundamentos do Marketing Imobiliário
-Aula 1.1 — Marketing digital para imóveis no litoral
-Aula 1.2 — Perfil do comprador litorâneo
-Aula 1.3 — Métricas essenciais
-Exercício: diagnóstico de marketing
+### Módulo 1 — Fundamentos
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Conteúdo e Presença Digital
-Aula 2.1 — Conteúdo que vende imóveis
-Aula 2.2 — Instagram e YouTube para corretores
-Aula 2.3 — SEO e tráfego pago
-Exercício: plano de conteúdo
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Captação de Leads e Conversão
-Aula 3.1 — Como captar leads qualificados
-Aula 3.2 — Follow-up e nutrição
-Aula 3.3 — Proposta e fechamento
-Exercício: funil de vendas
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Gestão e Crescimento
-Aula 4.1 — Gestão de redes e anúncios
-Aula 4.2 — Análise de desempenho
-Aula 4.3 — Escala e autoridade
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
 Exercício: plano de crescimento
 
 ## Carga Horária
-7 horas
+7 horas de aulas (36 aulas de 10 a 16 min)
+Total: 7 horas
 
 ## Material Complementar
-- Checklist de marketing
-- Planilha de leads
-- Modelos de conteúdo e proposta
 - PDFs por módulo
+- Templates
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de conteúdo
-- Checklist de captação
-- Checklist de conversão
-- Checklist de crescimento
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de leads
-- Planilha de conteúdo
-- Planilha de métricas
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de post
-- Modelo de proposta
-- Modelo de follow-up
+- Modelo aplicável
 
 ## Scripts
-- Script de atendimento
-- Script de proposta
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para gerar conteúdo e planos.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: diagnóstico de marketing
-- Exercício 2: plano de conteúdo
-- Exercício 3: funil de vendas
-- Exercício 4: plano de crescimento
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: plano de marketing aplicado
+Prova prática: aplicação do método
 
 ## FAQ
-1. Preciso de experiência? Não.
-2. Em quanto tempo vejo resultado? De 15 a 30 dias.
-3. Vale a pena? Sim.
-4. Qual canal priorizar? Instagram e Google.
-5. Como medir sucesso? Leads e vendas.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
 [vendas.html]
@@ -193,17 +182,15 @@ Prova prática: plano de marketing aplicado
 [marketing/google-ads.md]
 
 ## CTA
-"Use marketing digital para vender mais imóveis no litoral agora."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Mentoria individual: R$ 3.000
-- Acompanhamento: R$ 4.500
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
 - Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Captação e Exclusividade
-- Curso de Especialista em Venda de Imóveis no Litoral
-- Curso de Instagram para Corretores
+- Outros cursos da Praia Digital Academy

@@ -1,9 +1,9 @@
-# Avaliação Final — Captação de Imóveis para Corretores
+# Avaliação Final — Captacao Imoveis Corretores
 ## Quiz
-- 20 perguntas sobre captação, proposta, exclusividade e follow-up.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Captação aplicada a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

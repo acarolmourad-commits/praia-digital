@@ -1,12 +1,12 @@
-# Curso: Funil de Vendas para Corretores
+# Curso: Funil De Vendas
 ## Nome Comercial
-**Funil de Vendas para Corretores: Método Prático para Montar, Automatizar e Escalar Vendas de Imóveis no Litoral**
+**Funil De Vendas: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Do lead à venda: aprenda a montar, automatizar e escalar funis de vendas no litoral com método.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 20 dias, você será capaz de montar, automatizar e escalar funis de vendas para corretores no litoral com segurança.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
 - Corretores de imóveis iniciantes e intermediários
@@ -22,31 +22,30 @@ Iniciante → Intermediário
 
 ## Tempo Estimado
 4 horas de aulas (20 aulas de 10 a 16 min)
-Total: 4 horas
+Total: 4 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 197
-À vista: R$ 167
-Parcelado: 12x de R$ 13,92
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist de funil de vendas
-- Planilha de acompanhamento
-- Modelos de funil
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Monte, automatize e escale funis de vendas no litoral com método"**
+**"Funil De Vendas"**
 
 ## Big Idea
-Funil de vendas para corretores no litoral combina geração de leads, follow-up estruturado e conversão acelerada.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
-- **Curso completo:** R$ 197
+- **Curso completo:** R$ 297
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
@@ -54,112 +53,103 @@ Funil de vendas para corretores no litoral combina geração de leads, follow-up
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** vender mais com método
-**Dificuldades:** leads frios, follow-up fraco, fechamento lento
-**Desejos:** vendas recorrentes, crescimento, autoridade
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Leads frios
-- Follow-up fraco
-- Fechamento lento
-- Concorrência alta
-- Insegurança
+- Falta de método
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Vendas recorrentes
-- Crescimento
-- Autoridade
-- Tranquilidade
-- Previsibilidade
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
+- Segurança
+- Autoridade local
 
 ## Objeções
-- "Funil é complicado"
-- "Demora muito"
-- "Preciso de ferramentas caras"
-- "Não compensa"
-- "Vou errar"
+- "Muito caro"
+- "Não funciona"
+- "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- Funil estruturado
-- Leads qualificados
-- Follow-up eficiente
-- Vendas recorrentes
-- Crescimento previsível
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
-### Módulo 1 — Fundamentos do Funil
-Aula 1.1 — O que é funil de vendas
-Aula 1.2 — Perfil do corretor
-Aula 1.3 — Método e metas
-Exercício: diagnóstico de vendas
+### Módulo 1 — Fundamentos
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Geração de Leads
-Aula 2.1 — Fontes de leads
-Aula 2.2 — Captura e qualificação
-Aula 2.3 — Ferramentas e custos
-Exercício: plano de geração
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Follow-up e Conversão
-Aula 3.1 — Follow-up estruturado
-Aula 3.2 — Apresentação e proposta
-Aula 3.3 — Fechamento
-Exercício: follow-up aplicado
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Gestão e Escala
-Aula 4.1 — Métricas e ajustes
-Aula 4.2 — Automação e escala
-Aula 4.3 — Crescimento sustentado
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
 Exercício: plano de crescimento
 
 ## Carga Horária
-4 horas
+4 horas de aulas (20 aulas de 10 a 16 min)
+Total: 4 horas
 
 ## Material Complementar
-- Checklist de funil
-- Planilha de acompanhamento
-- Modelos de funil
 - PDFs por módulo
+- Templates
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de funil
-- Checklist de follow-up
-- Checklist de venda
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de leads
-- Planilha de conversão
-- Planilha de métricas
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de follow-up
-- Modelo de proposta
-- Modelo de checklist
+- Modelo aplicável
 
 ## Scripts
-- Script de follow-up
-- Script de venda
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para gerar funis e follow-ups.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: diagnóstico de vendas
-- Exercício 2: plano de geração
-- Exercício 3: follow-up aplicado
-- Exercício 4: plano de crescimento
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: funil aplicado
+Prova prática: aplicação do método
 
 ## FAQ
-1. Preciso de experiência? Não.
-2. Em quanto tempo vejo resultado? De 15 a 30 dias.
-3. Vale a pena? Sim.
-4. E se errar? Ajuste com métricas.
-5. Tem suporte? Sim.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
 [vendas.html]
@@ -192,17 +182,15 @@ Prova prática: funil aplicado
 [marketing/google-ads.md]
 
 ## CTA
-"Monte um funil de vendas no litoral agora."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Mentoria individual: R$ 1.500
-- Acompanhamento: R$ 2.800
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
 - Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Marketing Imobiliário para Corretores
-- Curso de Automação Comercial para Corretores
-- Curso de Captação e Exclusividade para Corretores
+- Outros cursos da Praia Digital Academy

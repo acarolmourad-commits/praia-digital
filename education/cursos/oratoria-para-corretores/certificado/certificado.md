@@ -1,7 +1,6 @@
-# Certificado — Oratória para Corretores
+# Certificado — Oratoria Para Corretores
 Modelo: Praia Digital Academy
-Curso: Oratória para Corretores
-Carga horária: 4 horas
+Curso: Oratoria Para Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

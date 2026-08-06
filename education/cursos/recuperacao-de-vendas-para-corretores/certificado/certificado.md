@@ -1,7 +1,6 @@
-# Certificado — Recuperação de Vendas para Corretores
+# Certificado — Recuperacao De Vendas Para Corretores
 Modelo: Praia Digital Academy
-Curso: Recuperação de Vendas para Corretores
-Carga horária: 4 horas
+Curso: Recuperacao De Vendas Para Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

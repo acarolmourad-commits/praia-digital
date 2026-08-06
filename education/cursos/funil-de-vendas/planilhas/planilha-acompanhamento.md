@@ -1,10 +1,5 @@
-# Planilha — Funil de Vendas para Corretores
+# Planilha — Funil De Vendas
 - [ ] Data
-- [ ] Lead
-- [ ] Fonte
-- [ ] Status
-- [ ] Visitas
-- [ ] Proposta
-- [ ] Venda
-- [ ] Receita
+- [ ] Ação
+- [ ] Resultado
 - [ ] Observação

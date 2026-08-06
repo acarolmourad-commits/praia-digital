@@ -1,8 +1,7 @@
-# Checklist — Comprar Imóvel na Praia sem Golpes
-- [ ] Diagnóstico de compra
-- [ ] Orçamento definido
-- [ ] Lista de verificação criada
-- [ ] Documentos verificados
-- [ ] Proposta feita
-- [ ] Contrato revisado
-- [ ] Fechamento confirmado
+# Checklist — Comprar Imovel Praia Sem Golpes
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

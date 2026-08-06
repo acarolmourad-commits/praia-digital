@@ -1,4 +1,4 @@
-# Google Ads — Visita Técnica para Corretores
-Palavras: visita técnica para corretores no litoral, como fazer visita técnica no litoral
+# Google Ads — visita-tecnica-para-corretores
+Palavras: visita tecnica para corretores, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

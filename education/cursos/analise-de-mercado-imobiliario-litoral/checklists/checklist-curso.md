@@ -1,8 +1,7 @@
-# Checklist — Análise de Mercado Imobiliário no Litoral
-- [ ] Diagnóstico de análise
-- [ ] Fontes definidas
-- [ ] Indicadores listados
-- [ ] Painel criado
-- [ ] Tendências mapeadas
-- [ ] Decisão documentada
-- [ ] Acompanhamento criado
+# Checklist — Analise De Mercado Imobiliario Litoral
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

@@ -1,8 +1,7 @@
-# Checklist — Comunicação Interpessoal para Corretores
-- [ ] Diagnóstico de comunicação
-- [ ] Método estruturado
-- [ ] Relacionamento criado
-- [ ] Conversa criada
-- [ ] Fechamento confirmado
-- [ ] Follow-up planejado
-- [ ] Crescimento planejado
+# Checklist — Comunicacao Interpessoal Para Corretores
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

@@ -1,11 +1,11 @@
-# FAQ — Documentação Imobiliária
-1. Preciso de experiência? Não.
-2. Em quanto tempo vejo resultado? De 15 a 30 dias.
-3. Vale a pena? Sim.
-4. E se errar? Ajuste com checklist.
-5. Tem suporte? Sim.
-6. Como medir sucesso? Documentos aprovados.
-7. Preciso de advogado? Em alguns casos.
-8. Funciona para qualquer imóvel? Com método, sim.
-9. Como começar? Checklist básico.
-10. Qual o primeiro passo? Reunir documentos.
+# FAQ — Documentacao Imobiliaria
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
+6. Qual o investimento? R$ 297.
+7. Tem suporte? Sim.
+8. Como acessar? Plataforma online.
+9. Tem certificado? Sim.
+10. Posso parcelar? Sim.

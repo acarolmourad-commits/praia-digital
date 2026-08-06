@@ -1,5 +1,5 @@
-# E-book Derivado — Guia do Investidor Imobiliário Avançado
-Título: Guia Rápido: Investidor Imobiliário Avançado no Litoral
+# E-book Derivado — Guia Investidor Imobiliario Avancado
+Título: Guia Rápido sobre Guia Investidor Imobiliario Avancado
 Formato: PDF 20 a 30 páginas
-Preço: gratuito ou R$ 29,90
-Conteúdo: checklist, planilha, dicas rápidas, modelo de estratégia.
+Preço: gratuito ou R$ 19,90
+Conteúdo: resumo, templates, dicas rápidas.

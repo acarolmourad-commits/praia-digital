@@ -1,7 +1,6 @@
-# Certificado — Marketing Imobiliário para Corretores
+# Certificado — Marketing Imobiliario Corretores
 Modelo: Praia Digital Academy
-Curso: Marketing Imobiliário para Corretores
-Carga horária: 4 horas
+Curso: Marketing Imobiliario Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

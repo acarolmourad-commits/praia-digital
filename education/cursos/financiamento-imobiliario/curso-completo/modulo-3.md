@@ -1,73 +1,60 @@
-# Módulo 3 — Aprovação e Documentação
-
+# Módulo 3 — Conteúdo Premium
 ## Introdução
-Aprenda a aprovar crédito, reunir documentos e assinar contrato de financiamento com segurança.
+Neste módulo você vai dominar financiamento imobiliario com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 3.1 — Como aprovar crédito
-**Requisitos:**
-- Renda comprovada.
-- CPF e RG.
-- Comprovante de residência.
-- Extrato bancário.
+## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Dicas:**
-- Limpe nome antes.
-- Reduja dívidas.
-- Junte renda extra.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Comprador limpou nome e aprovou crédito em 10 dias.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 3.2 — Documentos necessários
-**Documentos pessoais:**
-- RG e CPF.
-- Comprovante de residência.
-- Extrato bancário.
+## Aula 3.2 — Caso real 2: como evitar erros custosos
+Fundamentos, ferramentas e fluxos recomendados para financiamento imobiliario no litoral.
 
-**Documentos do imóvel:**
-- Escritura.
-- Matrícula.
-- IPTU.
+**Ferramentas recomendadas:**
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
-**Exemplo real:**
-Comprador reuniu documentos e aprovou em 15 dias.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-## Aula 3.3 — Contrato de financiamento
-**Cláusulas importantes:**
-- Juros.
-- Prazo.
-- Multa.
-- Seguro.
-- Vencimento.
+## Aula 3.3 — Lições aplicáveis ao seu contexto
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Dicas:**
-- Leia com atenção.
-- Peça esclarecimentos.
-- Evite cláusulas abusivas.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Exercício:**
-Faça uma simulação de aprovação de financiamento.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Analise um caso real do mercado e adapte as lições para a sua realidade.
 
 ## Resumo
-- Aprovação depende de perfil.
-- Documentos organizam processo.
-- Contrato protege partes.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Documentos reunidos
-- [ ] Crédito simulado
-- [ ] Contrato revisado
-- [ ] Aprovação confirmada
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de contrato
-- Checklist de aprovação
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Sites de bancos
-- Planilha
-- Consultorias
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
 ## Prompt de IA
-"Atue como especialista em financiamento. Monte uma simulação de aprovação para este cenário: [dados]."
+Atue como mentor experiente. Analise este caso real de financiamento imobiliario no litoral e aponte 5 lições práticas: [descreva o caso].

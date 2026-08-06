@@ -1,10 +1,5 @@
-# Planilha — Rotinas de Vendas para Corretores
+# Planilha — Rotinas De Vendas Para Corretores
 - [ ] Data
-- [ ] Tarefa
-- [ ] Lead
 - [ ] Ação
 - [ ] Resultado
-- [ ] Follow-up
-- [ ] Venda
-- [ ] Receita
-- [ ] Status
+- [ ] Observação

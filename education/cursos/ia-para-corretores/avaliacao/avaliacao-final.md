@@ -1,9 +1,9 @@
-# Avaliação Final — IA para Corretores
+# Avaliação Final — Ia Para Corretores
 ## Quiz
-- 20 perguntas sobre IA, prompts, automação e vendas.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Plano de IA aplicado a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

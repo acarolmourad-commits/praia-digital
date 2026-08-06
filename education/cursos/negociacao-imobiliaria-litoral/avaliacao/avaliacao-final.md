@@ -1,9 +1,9 @@
-# Avaliação Final — Negociação Imobiliária no Litoral
+# Avaliação Final — Negociacao Imobiliaria Litoral
 ## Quiz
-- 20 perguntas sobre negociação, proposta, follow-up e fechamento.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Negociação aplicada a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

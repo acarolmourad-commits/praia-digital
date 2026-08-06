@@ -1,21 +1,21 @@
-# Sequência de E-mails — Análise de Mercado Imobiliário no Litoral
+# Sequência de E-mails — Analise De Mercado Imobiliario Litoral
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: Análise de Mercado Imobiliário no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Analise De Mercado Imobiliario Litoral (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: analista evitou prejuízo no litoral
+Assunto: Case prático de Analise De Mercado Imobiliario Litoral
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Análise de mercado é complicada?"
+Assunto: "Analise De Mercado Imobiliario Litoral é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno aumentou acerto em 30 dias
+Assunto: Aluno obteve resultado com Analise De Mercado Imobiliario Litoral
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

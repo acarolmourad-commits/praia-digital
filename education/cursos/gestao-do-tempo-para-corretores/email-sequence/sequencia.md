@@ -1,21 +1,21 @@
-# Sequência de E-mails — Gestão do Tempo para Corretores
+# Sequência de E-mails — Gestao Do Tempo Para Corretores
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: Gestão do Tempo para Corretores no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Gestao Do Tempo Para Corretores (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: corretor gerenciou o tempo e fechou venda
+Assunto: Case prático de Gestao Do Tempo Para Corretores
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Gestão do tempo compensa?"
+Assunto: "Gestao Do Tempo Para Corretores é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno aumentou a produtividade em 36%
+Assunto: Aluno obteve resultado com Gestao Do Tempo Para Corretores
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

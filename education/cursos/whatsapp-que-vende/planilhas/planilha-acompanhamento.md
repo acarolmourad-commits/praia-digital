@@ -1,9 +1,5 @@
-# Planilha — WhatsApp que Vende
+# Planilha — Whatsapp Que Vende
 - [ ] Data
-- [ ] Lead
-- [ ] Canal
-- [ ] Status
-- [ ] Follow-up
-- [ ] Venda
-- [ ] Receita
+- [ ] Ação
+- [ ] Resultado
 - [ ] Observação

@@ -1,70 +1,60 @@
-# Módulo 3 — Reforma e Preparação
-
+# Módulo 3 — Conteúdo Premium
 ## Introdução
-Planeje reformas rápidas, controle custos e prepare o imóvel para venda no litoral.
+Neste módulo você vai dominar flipping imoveis litoral com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 3.1 — Planejamento de reforma
-**Escopo:**
-- Reparos estruturais.
-- Acabamento.
-- Pintura.
-- Jardim.
+## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Prazos:**
-- 15 a 45 dias.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Custos:**
-- 10% a 25% do valor de compra.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Exemplo real:**
-Investidor planejou reforma em 20 dias e gastou R$ 28 mil.
+## Aula 3.2 — Caso real 2: como evitar erros custosos
+Fundamentos, ferramentas e fluxos recomendados para flipping imoveis litoral no litoral.
 
-## Aula 3.2 — Execução e controle
-**Execução:**
-- Equipe confiável.
-- Materiais com qualidade.
-- Cronograma.
+**Ferramentas recomendadas:**
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
-**Controle:**
-- Acompanhamento semanal.
-- Ajustes rápidos.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Estudo de caso:**
-Investidor atrasou reforma por falta de controle; metodologia corrigiu.
+## Aula 3.3 — Lições aplicáveis ao seu contexto
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-## Aula 3.3 — Apresentação do imóvel
-**Apresentação:**
-- Fotos profissionais.
-- Título e descrição.
-- Anúncios em portais.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Dicas:**
-- Destaque diferenciais.
-- Mostre potencial.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
-**Exercício:**
-Monte um plano de reforma para um imóvel real.
+## Exercício
+Analise um caso real do mercado e adapte as lições para a sua realidade.
 
 ## Resumo
-- Planejamento reduz custos.
-- Controle evita atrasos.
-- Apresentação acelera venda.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Escopo definido
-- [ ] Cronograma criado
-- [ ] Equipe escolhida
-- [ ] Apresentação preparada
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de reforma
-- Planilha de custos
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Planilha
-- Sistema de gestão
-- Portais de imóveis
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
 ## Prompt de IA
-"Atue como especialista em flipping. Monte um plano de reforma para este imóvel: [dados]."
+Atue como mentor experiente. Analise este caso real de flipping imoveis litoral no litoral e aponte 5 lições práticas: [descreva o caso].

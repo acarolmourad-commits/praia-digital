@@ -1,5 +1,5 @@
-# Sumário do Curso: Storytelling para Corretores
-- Módulo 1: Fundamentos do Storytelling no Litoral
-- Módulo 2: Método e Narrativa
-- Módulo 3: Comunicação e Fechamento
-- Módulo 4: Métricas e Crescimento
+# Sumário do Curso: Storytelling Para Corretores
+- Módulo 1: Fundamentos
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

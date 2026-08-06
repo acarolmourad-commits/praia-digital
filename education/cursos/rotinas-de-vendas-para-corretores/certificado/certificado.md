@@ -1,7 +1,6 @@
-# Certificado — Rotinas de Vendas para Corretores
+# Certificado — Rotinas De Vendas Para Corretores
 Modelo: Praia Digital Academy
-Curso: Rotinas de Vendas para Corretores
-Carga horária: 4 horas
+Curso: Rotinas De Vendas Para Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

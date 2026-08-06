@@ -1,10 +1,5 @@
 # Planilha — Flipping Completo
 - [ ] Data
-- [ ] Imóvel
-- [ ] Cidade
-- [ ] Compra
-- [ ] Reforma
-- [ ] Venda
-- [ ] Lucro
-- [ ] ROI
-- [ ] Status
+- [ ] Ação
+- [ ] Resultado
+- [ ] Observação

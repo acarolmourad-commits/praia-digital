@@ -1,5 +1,5 @@
-# E-book Derivado — Gestão de Vendas para Corretores
-Título: Guia Rápido: Gestão de Vendas para Corretores no Litoral
+# E-book Derivado — Gestao De Vendas Para Corretores
+Título: Guia Rápido sobre Gestao De Vendas Para Corretores
 Formato: PDF 20 a 30 páginas
 Preço: gratuito ou R$ 19,90
-Conteúdo: checklist, planilha, dicas rápidas, modelo de funil.
+Conteúdo: resumo, templates, dicas rápidas.

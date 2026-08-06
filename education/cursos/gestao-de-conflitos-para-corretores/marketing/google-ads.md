@@ -1,4 +1,4 @@
-# Google Ads — Gestão de Conflitos para Corretores
-Palavras: gestão de conflitos para corretores no litoral, como resolver conflitos no litoral
+# Google Ads — gestao-de-conflitos-para-corretores
+Palavras: gestao de conflitos para corretores, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

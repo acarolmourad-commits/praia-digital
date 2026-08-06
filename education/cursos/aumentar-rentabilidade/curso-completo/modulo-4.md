@@ -1,84 +1,60 @@
-# Módulo 4 — Controle e Escala
-
+# Módulo 4 — Conteúdo Premium
 ## Introdução
-Acompanhe resultados, ajuste estratégias e escale sem perder controle. O objetivo é transformar rentabilidade ocasional em crescimento previsível.
+Neste módulo você vai dominar aumentar rentabilidade com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 4.1 — Indicadores e revisão
-**Indicadores essenciais:**
-- Ocupação média.
-- Receita por diária.
-- Lucro líquido.
-- ROI mensal e anual.
-- Taxa de cancelamento.
-- Nota de avaliação.
+## Aula 4.1 — Métricas para acompanhar evolução e resultado
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Revisão semanal:**
-- Ocupação da semana.
-- Receita da semana.
-- Ajustes necessários.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Revisão mensal:**
-- Fechamento do mês.
-- Comparativo com meta.
-- Ajustes para o próximo mês.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Exemplo real:**
-Proprietário passou a revisar indicadores semanalmente e identificou que os finais de semana tinham ocupação 30% menor que a média. Ele criou promoções de última hora e aumentou a receita em R$ 8 mil/mês.
+## Aula 4.2 — Otimizações para aumentar rentabilidade ou desempenho
+Fundamentos, ferramentas e fluxos recomendados para aumentar rentabilidade no litoral.
 
-## Aula 4.2 — Decisão de compra e venda
-**Decisão de compra:**
-- ROI esperado >= 15% ao ano.
-- Documentação regular.
-- Localização com valorização.
+**Ferramentas recomendadas:**
+- Dashboard de métricas
+- Planilha de rentabilidade
+- Sistema de gestão de tarefas
 
-**Decisão de venda:**
-- ROI abaixo de 10% por 12 meses.
-- Imóvel com problemas estruturais.
-- Oportunidade de reinvestimento.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Exemplo real:**
-Investidor vendeu um imóvel com ROI de 8% e reinvestiu em outro com ROI de 18%. Ele usou dados comparativos para tomar a decisão.
+## Aula 4.3 — Escala: como crescer sem perder a qualidade
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-## Aula 4.3 — Crescimento sustentado
-**Processos:**
-- Padronize contratos e checklists.
-- Automatize atendimento.
-- Mantenha controle financeiro.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Fornecedores:**
-- Manutenção.
-- Limpeza.
-- Administração.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
-**Crescimento gradual:**
-- Adicione 1 imóvel por vez.
-- Mantenha qualidade.
-- Acompanhe métricas.
-
-**Exercício:**
-Monte um plano de escala sustentada.
+## Exercício
+Desenvolva um plano de crescimento para aumentar rentabilidade com metas mensuráveis.
 
 ## Resumo
-- Indicadores mantêm direção.
-- Decisão orientada por dados reduz risco.
-- Escala depende de processo.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Métricas revisadas
-- [ ] Ajustes aplicados
-- [ ] Escala planejada
-- [ ] Processos definidos
-- [ ] Fornecedores alinhados
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de ROI
-- Modelo de relatório
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Dashboard
-- Planilha
-- Sistema de gestão
+- Dashboard de métricas
+- Planilha de rentabilidade
+- Sistema de gestão de tarefas
 
 ## Prompt de IA
-"Atue como especialista em crescimento. Monte um plano de escala para este cenário: [dados]."
+Atue como estrategista de crescimento. Monte um plano de escala para aumentar rentabilidade com métricas e prazos: [dados do negócio].

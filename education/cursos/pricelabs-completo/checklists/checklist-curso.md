@@ -1,13 +1,7 @@
-# Checklist — PriceLabs Completo para Temporada no Litoral
-- [ ] Diagnóstico de preço
-- [ ] Conta criada
-- [ ] Imóvel cadastrado
-- [ ] Preço base definido
-- [ ] Regras aplicadas
-- [ ] Integrações ativas
-- [ ] Tabela de preços
-- [ ] Eventos mapeados
-- [ ] Long stay configurado
-- [ ] Revisão definida
-- [ ] Métricas acompanhadas
-- [ ] Crescimento planejado
+# Checklist — Pricelabs Completo
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

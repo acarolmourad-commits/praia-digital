@@ -1,5 +1,5 @@
-# E-book Derivado — Venda Rápida de Imóveis no Litoral
-Título: Guia Rápido: Venda Rápida de Imóveis no Litoral
+# E-book Derivado — Venda Rapida Imoveis Litoral
+Título: Guia Rápido sobre Venda Rapida Imoveis Litoral
 Formato: PDF 20 a 30 páginas
 Preço: gratuito ou R$ 19,90
-Conteúdo: checklist, planilha, dicas rápidas, modelo de anúncio.
+Conteúdo: resumo, templates, dicas rápidas.

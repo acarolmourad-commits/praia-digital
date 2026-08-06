@@ -1,9 +1,9 @@
-# Avaliação Final — Financiamento Imobiliário
+# Avaliação Final — Financiamento Imobiliario
 ## Quiz
-- 20 perguntas sobre financiamento, parcelas, documentação e contrato.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Simulação de financiamento aplicada a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

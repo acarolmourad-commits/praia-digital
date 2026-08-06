@@ -1,11 +1,10 @@
-# Posts Instagram — Avaliação de Imóveis
-1. Post: dica de avaliação
-2. Reels: laudo em 30s
-3. Carrossel: checklist de avaliação
-4. Post: comparável que convence
-5. Reels: case de venda
-6. Carrossel: método simples
-7. Post: preço justo
-8. Reels: erro comum
-9. Carrossel: métricas básicas
-10. Post: comece hoje
+1. Post: dica sobre avaliacao de imoveis
+2. Post: dica sobre avaliacao de imoveis
+3. Post: dica sobre avaliacao de imoveis
+4. Post: dica sobre avaliacao de imoveis
+5. Post: dica sobre avaliacao de imoveis
+6. Post: dica sobre avaliacao de imoveis
+7. Post: dica sobre avaliacao de imoveis
+8. Post: dica sobre avaliacao de imoveis
+9. Post: dica sobre avaliacao de imoveis
+10. Post: dica sobre avaliacao de imoveis

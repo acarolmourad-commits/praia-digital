@@ -1,9 +1,9 @@
-# Avaliação Final — Funil de Vendas para Corretores
+# Avaliação Final — Funil De Vendas
 ## Quiz
-- 20 perguntas sobre funil, leads, follow-up, conversão e métricas.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Funil de vendas aplicado a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

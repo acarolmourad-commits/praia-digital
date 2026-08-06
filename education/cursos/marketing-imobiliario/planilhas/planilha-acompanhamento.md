@@ -1,9 +1,5 @@
-# Planilha — Marketing Imobiliário para Corretores
+# Planilha — Marketing Imobiliario
 - [ ] Data
 - [ ] Ação
-- [ ] Canal
-- [ ] Leads
-- [ ] Custo
-- [ ] Vendas
-- [ ] ROI
+- [ ] Resultado
 - [ ] Observação

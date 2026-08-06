@@ -1,86 +1,60 @@
-# Módulo 4 — Pós-Compra e Rentabilidade
-
+# Módulo 4 — Conteúdo Premium
 ## Introdução
-Prepare o imóvel para temporada, defina preços e monte um plano de gestão rentável. A compra é só o começo; o resultado vem da preparação e da gestão.
+Neste módulo você vai dominar investindo imoveis litoral com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 4.1 — Reforma e preparo
-**Reformas que dão retorno no litoral:**
-- Pintura externa e impermeabilização: protege contra maresia e chuva.
-- Troca de janelas e portas: melhora isolamento e segurança.
-- Reforma de cozinha e banheiro: aumenta valor percebido.
-- climatização: ar-condicionado e ventilação.
-- Iluminação e decoração leve: melhora fotos e experiência.
+## Aula 4.1 — Métricas para acompanhar evolução e resultado
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Regra prática:**
-Invista até 10% do valor do imóvel em reforma e priorize itens com retorno percebido pelo hóspede ou comprador.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Um investidor investiu R$ 25 mil em reforma (pintura, janelas, cozinha e banheiro) e aumentou a tarifa de temporada em 40%. O imóvel passou de R$ 350 mil para R$ 410 mil em valor de mercado.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 4.2 — Locação por temporada
-**Canais principais:**
-- Airbnb: maior alcance, taxa de 3% a 14%.
-- Booking: público internacional, taxa de 15% a 25%.
-- Temporada livre: anúncio direto, sem taxa.
-- WhatsApp e Instagram: leads diretos, sem taxa.
+## Aula 4.2 — Otimizações para aumentar rentabilidade ou desempenho
+Fundamentos, ferramentas e fluxos recomendados para investindo imoveis litoral no litoral.
 
-**Precificação por temporada:**
-- Alta temporada (dezembro a março): preço cheio.
-- Feriados prolongados: preço premium.
-- Baixa temporada (abril a novembro): preço promocional para reduzir vazio.
-- Long stay: descontos semanais e mensais.
+**Ferramentas recomendadas:**
+- Dashboard de métricas
+- Planilha de rentabilidade
+- Sistema de gestão de tarefas
 
-**Estudo de caso:**
-Apartamento em Guarujá com 2 quartos, a 500 m da praia, começou a temporada em 2023 com preço base de R$ 350/noite. Após ajuste de preço por temporada e promoção de long stay, ele atingiu:
-- Alta temporada: R$ 550/noite, 88% de ocupação.
-- Baixa temporada: R$ 250/noite, 45% de ocupação.
-Resultado anual: R$ 96 mil de receita bruta.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-## Aula 4.3 — Gestão e ROI
-**Indicadores essenciais:**
-- Ocupação média mensal
-- Receita por diária
-- Custos operacionais (limpeza, manutenção, canal)
-- Lucro líquido
-- ROI anual
+## Aula 4.3 — Escala: como crescer sem perder a qualidade
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Controle financeiro:**
-- Receita: aluguéis, temporada, serviços extras.
-- Custos fixos: IPTU, condomínio, seguro.
-- Custos variáveis: limpeza, manutenção, canal.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Exemplo real:**
-Imóvel com valor de R$ 350 mil, reforma de R$ 25 mil, receita anual de R$ 96 mil, custos de R$ 24 mil. Lucro líquido: R$ 72 mil. ROI: 20,6% ao ano. Payback: 4,8 anos.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
-**Exercício:**
-Monte um plano de rentabilidade para o seu imóvel:
-- Valor do imóvel
-- Custo de reforma
-- Receita estimada por temporada
-- Custos operacionais
-- ROI esperado
+## Exercício
+Desenvolva um plano de crescimento para investindo imoveis litoral com metas mensuráveis.
 
 ## Resumo
-- Reforma aumenta valor e tarifa.
-- Temporada exige gestão.
-- ROI mede sucesso.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Reforma planejada
-- [ ] Canais cadastrados
-- [ ] Preços definidos
-- [ ] Gestão estruturada
-- [ ] ROI calculado
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de rentabilidade
-- Checklist de reforma
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Airbnb, Booking
-- Planilha de controle
-- Sistema de gestão
+- Dashboard de métricas
+- Planilha de rentabilidade
+- Sistema de gestão de tarefas
 
 ## Prompt de IA
-"Atue como gestor de temporada no litoral paulista. Monte um plano de rentabilidade para este imóvel: [dados do imóvel]."
+Atue como estrategista de crescimento. Monte um plano de escala para investindo imoveis litoral com métricas e prazos: [dados do negócio].

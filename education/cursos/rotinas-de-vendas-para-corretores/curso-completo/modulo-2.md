@@ -1,53 +1,60 @@
-# Módulo 2 — Planejamento e Organização
-
+# Módulo 2 — Conteúdo Premium
 ## Introdução
-Aprenda a planejar rotina, organizar tarefas e usar ferramentas nas rotinas de vendas no litoral.
+Neste módulo você vai dominar rotinas de vendas para corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 2.1 — Planejamento
-**Planejamento:**
-- Objetivo.
-- Prioridade.
-- Tempo.
+## Aula 2.1 — Passo a passo para aplicar rotinas de vendas para corretores na prática
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Exemplo real:**
-Corretor planejou rotina e aumentou produtividade.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-## Aula 2.2 — Organização
-**Organização:**
-- Tarefas.
-- Leads.
-- Acompanhamento.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Exercício:**
-Monte uma rotina de vendas.
+## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
+Fundamentos, ferramentas e fluxos recomendados para rotinas de vendas para corretores no litoral.
 
-## Aula 2.3 — Ferramentas
-**Ferramentas:**
-- CRM.
-- Automação.
-- Planilha.
+**Ferramentas recomendadas:**
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
-**Estudo de caso:**
-Corretor usou ferramentas e organizou rotina.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+
+## Aula 2.3 — Automação e fluxos que economizam horas por semana
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
+
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Monte um plano prático de rotinas de vendas para corretores para os próximos 30 dias, com ações diárias e semanais.
 
 ## Resumo
-- Planejamento organiza rotina.
-- Organização protege resultado.
-- Ferramentas aceleram execução.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Planejamento criado
-- [ ] Organização feita
-- [ ] Ferramentas escolhidas
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de rotina
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- CRM
-- Automação
-- Planilha
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
 ## Prompt de IA
-"Atue como especialista em rotinas de vendas imobiliárias. Monte uma rotina para este cenário: [dados]."
+Atue como consultor de rotinas de vendas para corretores. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].

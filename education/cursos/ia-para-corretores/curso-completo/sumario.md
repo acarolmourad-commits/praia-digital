@@ -1,5 +1,5 @@
-# Sumário do Curso: IA para Corretores
-- Módulo 1: Fundamentos de IA
-- Módulo 2: Prompts e Conteúdo
-- Módulo 3: Automação e Atendimento
-- Módulo 4: Vendas e Crescimento
+# Sumário do Curso: Ia Para Corretores
+- Módulo 1: Fundamentos
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

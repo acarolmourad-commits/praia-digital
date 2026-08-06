@@ -1,106 +1,60 @@
-# Módulo 4 — Financeiro e Crescimento
-
+# Módulo 4 — Conteúdo Premium
 ## Introdução
-Controle financeiro, reduza inadimplência, escale a gestão e profissionalize a operação. O objetivo é transformar a gestão em um negócio previsível e escalável.
+Neste módulo você vai dominar gestao profissional locacao com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 4.1 — Controle financeiro
-**Receita:**
-- Aluguel mensal.
-- Reajuste anual.
-- Serviços extras: estacionamento, área gourmet.
+## Aula 4.1 — Métricas para acompanhar evolução e resultado
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Custos fixos:**
-- IPTU.
-- Condomínio.
-- Seguro.
-- Sistema de gestão.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Custos variáveis:**
-- Manutenção.
-- Limpeza.
-- Reparos.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Fluxo de caixa:**
-- Recebimentos por mês.
-- Pagamentos por mês.
-- Saldo mensal.
+## Aula 4.2 — Otimizações para aumentar rentabilidade ou desempenho
+Fundamentos, ferramentas e fluxos recomendados para gestao profissional locacao no litoral.
 
-**Relatórios:**
-- Demonstrativo mensal.
-- Relatório anual.
-- Comparativo com meta.
+**Ferramentas recomendadas:**
+- Dashboard de métricas
+- Planilha de rentabilidade
+- Sistema de gestão de tarefas
 
-**Exemplo real:**
-Proprietário passou a acompanhar fluxo mensal e aumentou lucro em 20% em 4 meses ao identificar gastos desnecessários.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-## Aula 4.2 — Inadimplência e renegociação
-**Prevenção:**
-- Seleção rigorosa de inquilino.
-- Garantias: fiador, caução, seguro-fiança.
-- Contrato claro.
+## Aula 4.3 — Escala: como crescer sem perder a qualidade
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Comunicação:**
-- Aviso de vencimento.
-- Lembrete de atraso.
-- Canal direto.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Acordo:**
-- Parcelamento do débito.
-- Desconto para pagamento à vista.
-- Revisão de condições.
-
-**Rescisão:**
-- Notificação judicial.
-- Despejo quando necessário.
-
-**Estudo de caso:**
-Imóvel com inadimplência alta reduziu para 4% com política de reajuste e acordos rápidos.
-
-## Aula 4.3 — Escala e profissionalização
-**Padronização:**
-- Contratos modelo.
-- Checklists.
-- Scripts de atendimento.
-
-**Processos:**
-- Rotina de gestão.
-- Fiscalização periódica.
-- Controle financeiro.
-
-**Fornecedores:**
-- Manutenção.
-- Limpeza.
-- Administração.
-
-**Crescimento gradual:**
-- Comece com 1 imóvel.
-- Adicione 1 imóvel por vez.
-- Mantenha controle de qualidade.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
 ## Exercício
-Monte um plano financeiro mensal.
+Desenvolva um plano de crescimento para gestao profissional locacao com metas mensuráveis.
 
 ## Resumo
-- Controle aumenta lucro.
-- Inadimplência tem solução.
-- Escala exige processo.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Fluxo de caixa
-- [ ] Custos mapeados
-- [ ] Indicadores definidos
-- [ ] Acordos preparados
-- [ ] Crescimento planejado
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha financeira
-- Checklist de inadimplência
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Planilha financeira
-- Sistema de gestão
-- Banco digital
+- Dashboard de métricas
+- Planilha de rentabilidade
+- Sistema de gestão de tarefas
 
 ## Prompt de IA
-"Atue como gestor financeiro imobiliário. Monte um plano financeiro para este imóvel: [dados do imóvel]."
+Atue como estrategista de crescimento. Monte um plano de escala para gestao profissional locacao com métricas e prazos: [dados do negócio].

@@ -1,11 +1,10 @@
-# Posts Instagram — Flipping de Imóveis no Litoral
-1. Post: dica prática
-2. Reels: passo a passo
-3. Carrossel: checklist
-4. Post: erro comum
-5. Reels: case rápido
-6. Carrossel: ferramenta
-7. Post: resultado
-8. Reels: ajuste simples
-9. Carrossel: métrica
-10. Post: comece hoje
+1. Post: dica sobre flipping
+2. Post: dica sobre flipping
+3. Post: dica sobre flipping
+4. Post: dica sobre flipping
+5. Post: dica sobre flipping
+6. Post: dica sobre flipping
+7. Post: dica sobre flipping
+8. Post: dica sobre flipping
+9. Post: dica sobre flipping
+10. Post: dica sobre flipping

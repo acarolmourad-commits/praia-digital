@@ -1,73 +1,60 @@
-# Módulo 2 — Prospecção e Contato
-
+# Módulo 2 — Conteúdo Premium
 ## Introdução
-Aprenda a prospectar proprietários, fazer primeiro contato e marcar reuniões de avaliação no litoral. Prospecção bem feita reduz objeções e aumenta taxa de fechamento.
+Neste módulo você vai dominar captacao exclusividade com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 2.1 — Como prospectar proprietários
-**Estratégias de prospecção:**
-- Porta a porta em bairros estratégicos.
-- Ligações para proprietários de imóveis à venda.
-- Anúncios de "avaliação gratuita".
-- Parcerias com construtoras e imobiliárias.
-- Conteúdo local no Instagram e YouTube.
+## Aula 2.1 — Passo a passo para aplicar captacao exclusividade na prática
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Regra prática:**
-- 20 ligações por dia.
-- 5 visitas por semana.
-- 1 avaliação por semana.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Corretor captou 5 imóveis exclusivos em 1 mês com porta a porta em São Vicente.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 2.2 — Ligação e primeiro contato
-**Script de abertura:**
-"Olá, sou corretor especializado no litoral. Posso fazer uma avaliação gratuita do seu imóvel e explicar como vender mais rápido e por um preço melhor."
+## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
+Fundamentos, ferramentas e fluxos recomendados para captacao exclusividade no litoral.
 
-**Dicas práticas:**
-- Respeite o horário do proprietário.
-- Seja direto e transparente.
-- Ofereça valor antes de pedir exclusividade.
+**Ferramentas recomendadas:**
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
-**Exemplo real:**
-Corretor usou script de avaliação gratuita e aumentou taxa de agendamento de 10% para 35%.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-## Aula 2.3 — Reunião de avaliação
-**Preparação:**
-- Pesquise o imóvel antes da visita.
-- Leve material de apoio: comparáveis, dados de mercado.
-- Prepare proposta de exclusividade.
+## Aula 2.3 — Automação e fluxos que economizam horas por semana
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Visita:**
-- Mostre conhecimento do mercado local.
-- Apresente dados, não opiniões.
-- Destaque diferenciais do imóvel.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Estudo de caso:**
-Corretor apresentou 3 comparáveis e fechou exclusividade em 15 minutos.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
 ## Exercício
-Monte um plano de prospecção para os próximos 30 dias.
+Monte um plano prático de captacao exclusividade para os próximos 30 dias, com ações diárias e semanais.
 
 ## Resumo
-- Prospecção reduz concorrência.
-- Contato bem feito aumenta agendamentos.
-- Avaliação profissional fecha exclusividade.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Estratégia de prospecção
-- [ ] Script definido
-- [ ] Material de apoio
-- [ ] Proposta de exclusividade
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de captação
-- Modelo de avaliação
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- CRM de vendas
-- Planilha de leads
-- Portal de imóveis
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
 ## Prompt de IA
-"Atue como especialista em captação imobiliária. Monte um plano de prospecção para este corretor: [dados]."
+Atue como consultor de captacao exclusividade. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].

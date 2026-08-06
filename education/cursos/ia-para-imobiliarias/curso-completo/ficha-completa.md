@@ -1,12 +1,12 @@
-# Curso: IA para Imobiliárias
+# Curso: Ia Para Imobiliarias
 ## Nome Comercial
-**IA para Imobiliárias: Método Prático para Automatizar Operações, Gerar Leads e Escalar Vendas no Litoral**
+**Ia Para Imobiliarias: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Do processo ao crescimento: aprenda a aplicar IA na operação imobiliária do litoral com método.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 20 dias, você será capaz de automatizar processos, gerar leads qualificados e escalar vendas na sua imobiliária no litoral.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
 - Donos de imobiliárias iniciantes e intermediárias
@@ -22,144 +22,134 @@ Iniciante → Intermediário
 
 ## Tempo Estimado
 4 horas de aulas (20 aulas de 10 a 16 min)
-Total: 4 horas
+Total: 4 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 197
-À vista: R$ 167
-Parcelado: 12x de R$ 13,92
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist de IA para imobiliárias
-- Planilha de automação
-- Modelos de operação
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Automatize sua imobiliária no litoral e escale vendas com IA"**
+**"Ia Para Imobiliarias"**
 
 ## Big Idea
-IA aplicada à imobiliária combina automação de processos, geração de leads e acompanhamento de vendas para reduzir custos e aumentar resultados.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
-- **Curso completo:** R$ 197
+- **Curso completo:** R$ 297
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
 ## Avatar
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
-**Renda:** R$ 5k a R$ 25k/mês
-**Objetivo:** escalar imobiliária com IA
-**Dificuldades:** processos manuais, leads frios, equipe limitada
-**Desejos:** crescimento, eficiência, autoridade
+**Renda:** R$ 3k a R$ 20k/mês
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Processos manuais
-- Leads frios
-- Equipe limitada
-- Concorrência alta
 - Falta de método
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Crescimento
-- Eficiência
-- Autoridade
-- Previsibilidade
-- Escala
-
-## Objeções
-- "IA é cara"
-- "Demora muito"
-- "Minha equipe não vai adotar"
-- "Não compensa"
-- "Vou errar"
-
-## Transformação
-- Operação automatizada
-- Leads qualificados
-- Vendas recorrentes
-- Crescimento previsível
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
+- Segurança
 - Autoridade local
 
+## Objeções
+- "Muito caro"
+- "Não funciona"
+- "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
+
+## Transformação
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
+
 ## Programa Completo
-### Módulo 1 — Fundamentos de IA para Imobiliárias
-Aula 1.1 — O que é IA na imobiliária
-Aula 1.2 — Perfil do gestor
-Aula 1.3 — Método e metas
-Exercício: diagnóstico da imobiliária
+### Módulo 1 — Fundamentos
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Automação de Processos
-Aula 2.1 — Processos críticos
-Aula 2.2 — Ferramentas de automação
-Aula 2.3 — CRM e integração
-Exercício: automação aplicada
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Geração de Leads e Atendimento
-Aula 3.1 — Fontes de leads
-Aula 3.2 — Follow-up automatizado
-Aula 3.3 — Atendimento 24h
-Exercício: plano de leads
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Gestão, Métricas e Crescimento
-Aula 4.1 — Métricas da imobiliária
-Aula 4.2 — Ajustes e melhorias
-Aula 4.3 — Escala sustentada
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
 Exercício: plano de crescimento
 
 ## Carga Horária
-4 horas
+4 horas de aulas (20 aulas de 10 a 16 min)
+Total: 4 horas
 
 ## Material Complementar
-- Checklist de IA para imobiliárias
-- Planilha de automação
-- Modelos de operação
 - PDFs por módulo
+- Templates
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de operação
-- Checklist de automação
-- Checklist de crescimento
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de automação
-- Planilha de leads
-- Planilha de métricas
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de processo
-- Modelo de follow-up
-- Modelo de relatório
+- Modelo aplicável
 
 ## Scripts
-- Script de atendimento
-- Script de venda
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para gerar automações e análises.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: diagnóstico da imobiliária
-- Exercício 2: automação aplicada
-- Exercício 3: plano de leads
-- Exercício 4: plano de crescimento
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: operação aplicada
+Prova prática: aplicação do método
 
 ## FAQ
-1. Preciso de experiência? Não.
-2. Em quanto tempo vejo resultado? De 15 a 30 dias.
-3. Vale a pena? Sim.
-4. E se errar? Ajuste com método.
-5. Tem suporte? Sim.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
 [vendas.html]
@@ -192,17 +182,15 @@ Prova prática: operação aplicada
 [marketing/google-ads.md]
 
 ## CTA
-"Automatize sua imobiliária no litoral agora."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Mentoria individual: R$ 2.500
-- Acompanhamento: R$ 4.500
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
 - Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Automação Comercial para Corretores
-- Curso de Marketing Imobiliário para Corretores
-- Curso de Funil de Vendas para Corretores
+- Outros cursos da Praia Digital Academy

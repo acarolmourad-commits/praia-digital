@@ -1,11 +1,10 @@
-# Posts Instagram — Flipping Completo
-1. Post: dica de flipping
-2. Reels: reforma em 30s
-3. Carrossel: checklist de flipping
-4. Post: oportunidade que protege
-5. Reels: case de lucro
-6. Carrossel: método simples
-7. Post: venda sem erro
-8. Reels: erro comum
-9. Carrossel: métricas básicas
-10. Post: comece hoje
+1. Post: dica sobre flipping completo
+2. Post: dica sobre flipping completo
+3. Post: dica sobre flipping completo
+4. Post: dica sobre flipping completo
+5. Post: dica sobre flipping completo
+6. Post: dica sobre flipping completo
+7. Post: dica sobre flipping completo
+8. Post: dica sobre flipping completo
+9. Post: dica sobre flipping completo
+10. Post: dica sobre flipping completo

@@ -1,9 +1,9 @@
-# Avaliação Final — Gestão Profissional da Locação
+# Avaliação Final — Gestao Profissional Locacao
 ## Quiz
-- 20 perguntas sobre documentação, contratos, rotina, fiscalização e financeiro.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Documentação revisada + plano operacional aplicado.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

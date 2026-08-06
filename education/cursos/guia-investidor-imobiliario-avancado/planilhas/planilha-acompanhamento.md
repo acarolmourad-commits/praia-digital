@@ -1,10 +1,5 @@
-# Planilha — Guia do Investidor Imobiliário Avançado
+# Planilha — Guia Investidor Imobiliario Avancado
 - [ ] Data
-- [ ] Imóvel
-- [ ] Cidade
-- [ ] Compra
-- [ ] Reforma
-- [ ] Renda
-- [ ] Custos
-- [ ] ROI
-- [ ] Status
+- [ ] Ação
+- [ ] Resultado
+- [ ] Observação

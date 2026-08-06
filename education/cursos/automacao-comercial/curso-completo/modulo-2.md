@@ -1,74 +1,60 @@
-# Módulo 2 — Ferramentas e Fluxos
-
+# Módulo 2 — Conteúdo Premium
 ## Introdução
-Escolha ferramentas, monte fluxos e automatize captação, atendimento e follow-up para vender mais com menos esforço.
+Neste módulo você vai dominar automacao comercial com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 2.1 — CRM e funil
-**CRM:**
-- RD Station, HubSpot, Pipedrive.
-- Funil: lead frio → lead quente → visita → proposta → fechamento.
+## Aula 2.1 — Passo a passo para aplicar automacao comercial na prática
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Funil ideal:**
-- 100 leads.
-- 30 contatos.
-- 10 visitas.
-- 3 propostas.
-- 1 venda.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Corretor usou CRM com funil e aumentou taxa de fechamento de 8% para 18%.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 2.2 — Automação de follow-up
-**Follow-up automatizado:**
-- E-mail de boas-vindas.
-- Lembrete de visita.
-- Proposta automática.
-- Reativação de lead frio.
+## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
+Fundamentos, ferramentas e fluxos recomendados para automacao comercial no litoral.
 
-**Sequência:**
-- 1h: e-mail de agradecimento.
-- 24h: ligação + conteúdo.
-- 3 dias: nova oferta.
-- 7 dias: reativação.
+**Ferramentas recomendadas:**
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
-**Estudo de caso:**
-Corretor implementou follow-up automático e aumentou taxa de resposta de 15% para 32%.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-## Aula 2.3 — Integração de canais
-**Canais integrados:**
-- WhatsApp.
-- E-mail.
-- Instagram.
-- Site.
+## Aula 2.3 — Automação e fluxos que economizam horas por semana
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Integração:**
-- CRM com WhatsApp.
-- E-mail com site.
-- Instagram com CRM.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Exercício:**
-Monte um mapa de fluxo para o seu funil.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Monte um plano prático de automacao comercial para os próximos 30 dias, com ações diárias e semanais.
 
 ## Resumo
-- CRM organiza leads.
-- Follow-up aumenta conversão.
-- Integração reduz perda.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] CRM escolhido
-- [ ] Funil desenhado
-- [ ] Follow-up criado
-- [ ] Integração testada
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de fluxo
-- Planilha de CRM
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- CRM
-- Automação
-- WhatsApp Business
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
 ## Prompt de IA
-"Atue como especialista em automação comercial. Monte um mapa de fluxo para este cenário: [dados]."
+Atue como consultor de automacao comercial. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].

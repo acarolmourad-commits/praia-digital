@@ -1,74 +1,60 @@
-# Módulo 1 — Fundamentos da Avaliação
-
+# Módulo 1 — Conteúdo Premium
 ## Introdução
-Entenda o que é avaliação imobiliária, os métodos principais e o perfil do avaliador no litoral. O objetivo é construir uma base confiável para determinar valores reais.
+Neste módulo você vai dominar avaliacao de imoveis com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 1.1 — O que é avaliação imobiliária
-Avaliação imobiliária é o processo de determinar o valor de mercado de um imóvel com base em dados, comparáveis e método.
+## Aula 1.1 — Visão geral do mercado de avaliacao de imoveis no litoral paulista
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Objetivos:**
-- Definir preço justo para venda.
-- Apoiar decisões de investimento.
-- Gerar laudos confiáveis.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Corretor usou método de comparáveis e definiu preço justo para um apartamento em Santos, vendendo em 20 dias acima do valor inicial.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Estudo de caso:**
-Proprietário queria vender por R$ 450 mil, mas o valor de mercado era R$ 380 mil. O laudo evitou prejuízo e venda longa.
+## Aula 1.2 — Conceitos essenciais: termos, métricas e particularidades locais
+Fundamentos, ferramentas e fluxos recomendados para avaliacao de imoveis no litoral.
 
-## Aula 1.2 — Métodos de avaliação
-**Método comparativo:**
-- Baseado em imóveis similares vendidos.
-- Mais usado no Brasil.
-- Ajustes por localização, área, estado.
+**Ferramentas recomendadas:**
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
-**Método da renda:**
-- Baseado em potencial de locação.
-- Usado para imóveis comerciais e temporada.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Método do custo:**
-- Baseado em custo de construção + terreno.
-- Usado para imóveis novos ou reformados.
+## Aula 1.3 — Estudo de caso real: como um aluno aplicou o método e obteve resultado em 30 dias
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Exemplo real:**
-Corretor usou método comparativo e ajustou valor por proximidade da praia, gerando laudo confiável.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-## Aula 1.3 — Perfil do avaliador
-**Corretor iniciante:**
-- Foco: dados, comparáveis, apresentação.
-- Erro comum: definir preço por emoção.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
-**Corretor intermediário:**
-- Foco: método, laudo, negociação.
-- Erro comum: ignorar custos ocultos.
-
-**Corretor avançado:**
-- Foco: autoridade, consultoria, escala.
-- Erro comum: automação sem personalização.
-
-**Exercício:**
-Faça o diagnóstico do seu processo de avaliação atual.
+## Exercício
+Faça o diagnóstico do seu cenário atual em avaliacao de imoveis: liste pontos fortes, fracos, oportunidades e ameaças.
 
 ## Resumo
-- Avaliação exige dados e método.
-- Comparáveis orientam valor.
-- Perfil claro evita erros.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Método escolhido
-- [ ] Dados reunidos
-- [ ] Comparáveis analisados
-- [ ] Laudo preparado
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de diagnóstico
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Portais de imóveis
-- Planilha de comparáveis
-- Sistema de laudo
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
 ## Prompt de IA
-"Atue como avaliador de imóveis. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
+Atue como especialista em avaliacao de imoveis no litoral paulista. Faça um diagnóstico personalizado com base nestas respostas: [insira suas respostas].

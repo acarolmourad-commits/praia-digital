@@ -1,5 +1,5 @@
-# Meta Ads — Análise de Mercado Imobiliário no Litoral
-Público: 25 a 55 anos, interesse em imóveis, análise, litoral
+# Meta Ads — analise-de-mercado-imobiliario-litoral
+Público: 25 a 55 anos, interesse no tema, litoral
 Objetivo: leads
 Formato: vídeo + carrossel
 Orçamento sugerido: R$ 40 a R$ 120/dia

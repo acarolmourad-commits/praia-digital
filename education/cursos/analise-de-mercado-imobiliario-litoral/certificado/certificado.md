@@ -1,7 +1,6 @@
-# Certificado — Análise de Mercado Imobiliário no Litoral
+# Certificado — Analise De Mercado Imobiliario Litoral
 Modelo: Praia Digital Academy
-Curso: Análise de Mercado Imobiliário no Litoral
-Carga horária: 4 horas
+Curso: Analise De Mercado Imobiliario Litoral
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

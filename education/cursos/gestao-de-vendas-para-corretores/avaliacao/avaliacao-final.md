@@ -1,9 +1,9 @@
-# Avaliação Final — Gestão de Vendas para Corretores
+# Avaliação Final — Gestao De Vendas Para Corretores
 ## Quiz
-- 20 perguntas sobre funil, follow-up, métricas e otimização.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Gestão aplicada a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

@@ -1,8 +1,7 @@
-# Checklist — Negociação Avançada para Corretores
-- [ ] Diagnóstico de negociação
-- [ ] Método estruturado
-- [ ] Estratégia criada
-- [ ] Objeções mapeadas
-- [ ] Fechamento confirmado
-- [ ] Follow-up planejado
-- [ ] Crescimento planejado
+# Checklist — Negociacao Avancada Para Corretores
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

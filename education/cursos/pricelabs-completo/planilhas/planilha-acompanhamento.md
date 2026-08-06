@@ -1,11 +1,5 @@
-# Planilha — PriceLabs Completo para Temporada no Litoral
+# Planilha — Pricelabs Completo
 - [ ] Data
-- [ ] Diária
-- [ ] Ocupação
-- [ ] Receita
-- [ ] Limpeza
-- [ ] Manutenção
-- [ ] Outros custos
-- [ ] Lucro
-- [ ] Ajuste aplicado
+- [ ] Ação
+- [ ] Resultado
 - [ ] Observação

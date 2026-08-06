@@ -1,11 +1,11 @@
-# Artigos SEO — Flipping de Imóveis no Litoral
-1. Flipping de Imóveis no Litoral em 2026: guia completo
-2. Como aplicar Flipping de Imóveis no Litoral no litoral
-3. Guia prático para iniciantes
-4. Erros comuns e como evitar
-5. Métricas essenciais
-6. Resultados reais e casos
-7. Ferramentas úteis
-8. Checklist essencial
-9. Perguntas frequentes
-10. Próximos passos
+# Artigos SEO — Flipping
+1. Flipping em 2026
+2. Como aplicar flipping no litoral
+3. Resultados reais de flipping
+4. Método passo a passo de flipping
+5. Erros comuns em flipping
+6. Ferramentas para flipping
+7. Cases de flipping no litoral
+8. Como medir resultado em flipping
+9. Como começar em flipping
+10. FAQ sobre flipping

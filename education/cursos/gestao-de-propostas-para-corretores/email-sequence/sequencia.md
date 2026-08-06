@@ -1,21 +1,21 @@
-# Sequência de E-mails — Gestão de Propostas para Corretores
+# Sequência de E-mails — Gestao De Propostas Para Corretores
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: Gestão de Propostas para Corretores no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Gestao De Propostas Para Corretores (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: corretor fechou vendas com propostas estruturadas
+Assunto: Case prático de Gestao De Propostas Para Corretores
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Gestão de propostas é complicada?"
+Assunto: "Gestao De Propostas Para Corretores é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno aumentou fechamento em 25%
+Assunto: Aluno obteve resultado com Gestao De Propostas Para Corretores
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

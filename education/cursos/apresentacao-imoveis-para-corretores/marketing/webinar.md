@@ -1,7 +1,7 @@
-# Roteiro de Webinar — Apresentação de Imóveis para Corretores
+# Roteiro de Webinar — Apresentacao Imoveis Para Corretores
 1. Abertura: dor do público
-2. Case: corretor encantou cliente com apresentação
-3. Método: 4 passos
+2. Case: aplicação prática
+3. Método: passo a passo
 4. Prova social
 5. Oferta e bônus
 6. Perguntas frequentes

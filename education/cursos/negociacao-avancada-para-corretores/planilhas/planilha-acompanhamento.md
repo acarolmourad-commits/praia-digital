@@ -1,10 +1,5 @@
-# Planilha — Negociação Avançada para Corretores
+# Planilha — Negociacao Avancada Para Corretores
 - [ ] Data
-- [ ] Cliente
-- [ ] Imóvel
-- [ ] Cidade
-- [ ] Proposta
-- [ ] Objeção
-- [ ] Fechamento
-- [ ] Receita
-- [ ] Status
+- [ ] Ação
+- [ ] Resultado
+- [ ] Observação

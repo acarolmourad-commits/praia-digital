@@ -1,7 +1,7 @@
-# Roteiro de Webinar — Imóveis para Airbnb
+# Roteiro de Webinar — Imoveis Para Airbnb
 1. Abertura: dor do público
-2. Case: dono dobrou renda com Airbnb
-3. Método: 4 passos
+2. Case: aplicação prática
+3. Método: passo a passo
 4. Prova social
 5. Oferta e bônus
 6. Perguntas frequentes

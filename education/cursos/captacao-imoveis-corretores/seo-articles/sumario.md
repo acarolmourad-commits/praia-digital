@@ -1,11 +1,11 @@
-# Artigos SEO — Captação de Imóveis para Corretores
-1. Captação de imóveis no litoral em 2026: guia completo
-2. Como captar imóveis no litoral
-3. Exclusividade no litoral
-4. Proposta para proprietários no litoral
-5. Follow-up no litoral
-6. Captação para corretores no litoral
-7. Erros na captação no litoral
-8. Parcerias no litoral
-9. Venda no litoral
-10. Como crescer no litoral
+# Artigos SEO — Captacao Imoveis Corretores
+1. Captacao Imoveis Corretores em 2026
+2. Como aplicar captacao imoveis corretores no litoral
+3. Resultados reais de captacao imoveis corretores
+4. Método passo a passo de captacao imoveis corretores
+5. Erros comuns em captacao imoveis corretores
+6. Ferramentas para captacao imoveis corretores
+7. Cases de captacao imoveis corretores no litoral
+8. Como medir resultado em captacao imoveis corretores
+9. Como começar em captacao imoveis corretores
+10. FAQ sobre captacao imoveis corretores

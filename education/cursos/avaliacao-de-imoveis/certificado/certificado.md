@@ -1,7 +1,6 @@
-# Certificado — Avaliação de Imóveis
+# Certificado — Avaliacao De Imoveis
 Modelo: Praia Digital Academy
-Curso: Avaliação de Imóveis
-Carga horária: 4 horas
+Curso: Avaliacao De Imoveis
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

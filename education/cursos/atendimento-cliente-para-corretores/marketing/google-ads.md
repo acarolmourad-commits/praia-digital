@@ -1,4 +1,4 @@
-# Google Ads — Atendimento ao Cliente para Corretores
-Palavras: atendimento ao cliente para corretores no litoral, como atender clientes no litoral
+# Google Ads — atendimento-cliente-para-corretores
+Palavras: atendimento cliente para corretores, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

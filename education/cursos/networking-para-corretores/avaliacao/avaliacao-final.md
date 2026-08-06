@@ -1,9 +1,9 @@
-# Avaliação Final — Networking para Corretores
+# Avaliação Final — Networking Para Corretores
 ## Quiz
-- 20 perguntas sobre networking, relacionamento, comunicação e fechamento.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Networking aplicado a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

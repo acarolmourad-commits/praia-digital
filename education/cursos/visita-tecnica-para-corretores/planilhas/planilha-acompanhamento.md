@@ -1,9 +1,5 @@
-# Planilha — Visita Técnica para Corretores
+# Planilha — Visita Tecnica Para Corretores
 - [ ] Data
-- [ ] Imóvel
-- [ ] Cidade
-- [ ] Visita
-- [ ] Avaliação
-- [ ] Fechamento
-- [ ] Receita
-- [ ] Status
+- [ ] Ação
+- [ ] Resultado
+- [ ] Observação

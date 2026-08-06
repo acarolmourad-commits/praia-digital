@@ -1,7 +1,6 @@
-# Certificado — Funil de Vendas para Corretores
+# Certificado — Funil De Vendas
 Modelo: Praia Digital Academy
-Curso: Funil de Vendas para Corretores
-Carga horária: 4 horas
+Curso: Funil De Vendas
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

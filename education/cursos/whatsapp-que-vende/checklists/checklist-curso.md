@@ -1,8 +1,7 @@
-# Checklist — WhatsApp que Vende
-- [ ] Diagnóstico de WhatsApp
-- [ ] Atendimento estruturado
-- [ ] Follow-up criado
-- [ ] Templates prontos
-- [ ] Automação aplicada
-- [ ] Métricas definidas
-- [ ] Crescimento planejado
+# Checklist — Whatsapp Que Vende
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

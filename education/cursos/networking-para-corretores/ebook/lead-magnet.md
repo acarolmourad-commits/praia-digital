@@ -1,5 +1,5 @@
-# E-book Derivado — Networking para Corretores
-Título: Guia Rápido: Networking para Corretores no Litoral
+# E-book Derivado — Networking Para Corretores
+Título: Guia Rápido sobre Networking Para Corretores
 Formato: PDF 20 a 30 páginas
 Preço: gratuito ou R$ 19,90
-Conteúdo: checklist, planilha, dicas rápidas, modelo de networking.
+Conteúdo: resumo, templates, dicas rápidas.

@@ -1,5 +1,5 @@
-# E-book Derivado — Documentação Imobiliária
-Título: Guia Rápido de Documentação Imobiliária no Litoral
+# E-book Derivado — Documentacao Imobiliaria
+Título: Guia Rápido sobre Documentacao Imobiliaria
 Formato: PDF 20 a 30 páginas
 Preço: gratuito ou R$ 19,90
-Conteúdo: checklist, planilha, dicas rápidas, modelo de contrato.
+Conteúdo: resumo, templates, dicas rápidas.

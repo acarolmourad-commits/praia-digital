@@ -1,7 +1,6 @@
-# Certificado — Treinamento em Tecnologia para Corretores
+# Certificado — Treinamento Em Tecnologia Para Corretores
 Modelo: Praia Digital Academy
-Curso: Treinamento em Tecnologia para Corretores
-Carga horária: 4 horas
+Curso: Treinamento Em Tecnologia Para Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

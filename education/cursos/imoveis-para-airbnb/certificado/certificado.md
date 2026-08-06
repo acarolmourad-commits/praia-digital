@@ -1,7 +1,6 @@
-# Certificado — Imóveis para Airbnb
+# Certificado — Imoveis Para Airbnb
 Modelo: Praia Digital Academy
-Curso: Imóveis para Airbnb
-Carga horária: 4 horas
+Curso: Imoveis Para Airbnb
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

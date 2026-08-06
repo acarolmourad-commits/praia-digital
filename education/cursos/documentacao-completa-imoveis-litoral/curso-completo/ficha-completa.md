@@ -1,12 +1,12 @@
-# Curso: Documentação Completa para Imóveis no Litoral
+# Curso: Documentacao Completa Imoveis Litoral
 ## Nome Comercial
-**Documentação Completa para Imóveis no Litoral: Método Prático para Regularizar, Proteger e Vender Imóveis sem Burocracia**
+**Documentacao Completa Imoveis Litoral: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Da papelada à segurança: aprenda a organizar documentação no litoral com método e proteção.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 15 dias, você será capaz de organizar, verificar e regularizar documentação de imóveis no litoral.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
 - Compradores de imóveis no litoral
@@ -22,31 +22,30 @@ Iniciante → Intermediário
 
 ## Tempo Estimado
 4 horas de aulas (20 aulas de 10 a 16 min)
-Total: 4 horas
+Total: 4 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 197
-À vista: R$ 167
-Parcelado: 12x de R$ 13,92
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist de documentação
-- Planilha de acompanhamento
-- Modelos de documento
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Organize a documentação de imóveis no litoral e venda com segurança"**
+**"Documentacao Completa Imoveis Litoral"**
 
 ## Big Idea
-Documentação organizada reduz risco, acelera vendas e protege o patrimônio no litoral.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
-- **Curso completo:** R$ 197
+- **Curso completo:** R$ 297
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
@@ -54,112 +53,103 @@ Documentação organizada reduz risco, acelera vendas e protege o patrimônio no
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** organizar documentação
-**Dificuldades:** papelada, burocracia, risco
-**Desejos:** segurança, agilidade, crescimento
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Papelada confusa
-- Burocracia demorada
-- Risco de golpe
 - Falta de método
-- Venda atrasada
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
 - Segurança
-- Agilidade
-- Crescimento
-- Previsibilidade
-- Escala
+- Autoridade local
 
 ## Objeções
-- "Documentação é complicada"
-- "Demora muito"
-- "Não compensa"
-- "Vou errar"
-- "É burocrático"
+- "Muito caro"
+- "Não funciona"
+- "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- Documentação organizada
-- Venda ágil
-- Risco reduzido
-- Crescimento previsível
-- Liberdade
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
-### Módulo 1 — Fundamentos da Documentação no Litoral
-Aula 1.1 — O que é documentação de imóvel
-Aula 1.2 — Perfil do comprador
-Aula 1.3 — Método e metas
-Exercício: diagnóstico de documentação
+### Módulo 1 — Fundamentos
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Organização e Verificação
-Aula 2.1 — Documentos essenciais
-Aula 2.2 — Verificação e autenticidade
-Aula 2.3 — Armazenamento seguro
-Exercício: checklist de documentos
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Regularização e Burocracia
-Aula 3.1 — Regularização
-Aula 3.2 — Cartório e registros
-Aula 3.3 — Custos e prazos
-Exercício: plano de regularização
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Venda e Proteção
-Aula 4.1 — Documentação na venda
-Aula 4.2 — Contrato e fechamento
-Aula 4.3 — Pós-venda
-Exercício: plano de venda
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
+Exercício: plano de crescimento
 
 ## Carga Horária
-4 horas
+4 horas de aulas (20 aulas de 10 a 16 min)
+Total: 4 horas
 
 ## Material Complementar
-- Checklist de documentação
-- Planilha de acompanhamento
-- Modelos de documento
 - PDFs por módulo
+- Templates
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de documentação
-- Checklist de verificação
-- Checklist de venda
+- Checklist por módulo
 
 ## Planilhas
 - Planilha de acompanhamento
-- Planilha de prazos
-- Planilha de custos
 
 ## Modelos Prontos
-- Modelo de documento
-- Modelo de checklist
-- Modelo de contrato
+- Modelo aplicável
 
 ## Scripts
-- Script de atendimento
-- Script de venda
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para gerar análises e documentos.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: diagnóstico de documentação
-- Exercício 2: checklist de documentos
-- Exercício 3: plano de regularização
-- Exercício 4: plano de venda
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: documentação aplicada
+Prova prática: aplicação do método
 
 ## FAQ
-1. Preciso de experiência? Não.
-2. Em quanto tempo vejo resultado? De 15 a 30 dias.
-3. Vale a pena? Sim.
-4. E se errar? Ajuste com método.
-5. Tem suporte? Sim.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
 [vendas.html]
@@ -192,17 +182,15 @@ Prova prática: documentação aplicada
 [marketing/google-ads.md]
 
 ## CTA
-"Organize a documentação de imóveis no litoral agora."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Mentoria individual: R$ 1.500
-- Acompanhamento: R$ 2.800
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
 - Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Comprar com Segurança no Litoral
-- Curso de Financiamento Imobiliário
-- Curso de Documentação Imobiliária
+- Outros cursos da Praia Digital Academy

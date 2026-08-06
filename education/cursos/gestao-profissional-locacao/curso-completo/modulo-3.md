@@ -1,91 +1,60 @@
-# Módulo 3 — Rotina e Fiscalização
-
+# Módulo 3 — Conteúdo Premium
 ## Introdução
-Organize a rotina, fiscalize o imóvel e mantenha um relacionamento saudável com o inquilino. Rotina bem definida reduz custos e evita surpresas.
+Neste módulo você vai dominar gestao profissional locacao com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 3.1 — Rotina de gestão
-**Rotina semanal:**
-- Verificação de pagamentos.
-- Comunicação com inquilino.
-- Revisão de ocorrências.
+## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Rotina mensal:**
-- Fiscalização do imóvel.
-- Revisão de contratos e vencimentos.
-- Atualização de documentação.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Rotina trimestral:**
-- Manutenção preventiva.
-- Revisão de preços de mercado.
-- Ajuste de regras.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Exemplo real:**
-Gestor com rotina quinzenal reduziu custos de manutenção em 30% ao identificar problemas pequenos antes que virassem grandes consertos.
+## Aula 3.2 — Caso real 2: como evitar erros custosos
+Fundamentos, ferramentas e fluxos recomendados para gestao profissional locacao no litoral.
 
-## Aula 3.2 — Fiscalização e manutenção
-**Inspeção visual:**
-- Entrada e saída.
-- Áreas comuns.
-- Instalações elétricas e hidráulicas.
+**Ferramentas recomendadas:**
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
-**Registro fotográfico:**
-- Antes e depois.
-- Danos existentes.
-- Reparos realizados.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Manutenção preventiva:**
-- Pintura: a cada 3 anos.
-- Telhado: inspeção anual.
-- Pintura: a cada 3 anos.
-- Impermeabilização: a cada 5 anos.
+## Aula 3.3 — Lições aplicáveis ao seu contexto
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Fornecedores:**
-- Lista de profissionais confiáveis.
-- Contratos de manutenção.
-- Orçamentos periódicos.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Estudo de caso:**
-Imóvel fiscalizado mensalmente evitou problema estrutural de R$ 18 mil ao identificar infiltração no banheiro no estágio inicial.
-
-## Aula 3.3 — Atendimento ao inquilino
-**Canal de atendimento:**
-- WhatsApp ou telefone.
-- Horário de atendimento.
-- Tempo de resposta: até 24h.
-
-**Resolução rápida:**
-- Problemas pequenos: resolver em até 48h.
-- Problemas grandes: comunicar em 24h e resolver em até 7 dias.
-
-**Relacionamento:**
-- Cumprimente no início do mês.
-- Envie comunicados de manutenção com antecedência.
-- Seja transparente sobre reajustes.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
 ## Exercício
-Monte uma rotina semanal de gestão.
+Analise um caso real do mercado e adapte as lições para a sua realidade.
 
 ## Resumo
-- Rotina evita surpresas.
-- Fiscalização reduz custos.
-- Atendimento diminui conflitos.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Rotina definida
-- [ ] Fiscalização agendada
-- [ ] Manutenção preventiva
-- [ ] Canal de atendimento
-- [ ] Registro atualizado
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Checklist operacional
-- Modelo de comunicação
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Planilha de rotina
-- WhatsApp Business
-- Sistema de gestão
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
 ## Prompt de IA
-"Atue como gestor de imóveis. Monte uma rotina semanal para este imóvel: [dados do imóvel]."
+Atue como mentor experiente. Analise este caso real de gestao profissional locacao no litoral e aponte 5 lições práticas: [descreva o caso].

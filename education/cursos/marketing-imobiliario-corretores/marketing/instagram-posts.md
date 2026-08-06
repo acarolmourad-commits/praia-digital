@@ -1,11 +1,10 @@
-# Posts Instagram — Marketing Imobiliário para Corretores
-1. Post: dica de marketing
-2. Reels: conteúdo em 30s
-3. Carrossel: checklist de marketing
-4. Post: canal que vende
-5. Reels: case de leads
-6. Carrossel: método simples
-7. Post: anúncio sem erro
-8. Reels: erro comum
-9. Carrossel: métricas básicas
-10. Post: comece hoje
+1. Post: dica sobre marketing imobiliario corretores
+2. Post: dica sobre marketing imobiliario corretores
+3. Post: dica sobre marketing imobiliario corretores
+4. Post: dica sobre marketing imobiliario corretores
+5. Post: dica sobre marketing imobiliario corretores
+6. Post: dica sobre marketing imobiliario corretores
+7. Post: dica sobre marketing imobiliario corretores
+8. Post: dica sobre marketing imobiliario corretores
+9. Post: dica sobre marketing imobiliario corretores
+10. Post: dica sobre marketing imobiliario corretores

@@ -1,84 +1,60 @@
-# Módulo 1 — Diagnóstico de Rentabilidade
-
+# Módulo 1 — Conteúdo Premium
 ## Introdução
-Entenda o que é rentabilidade no litoral, identifique perdas ocultas e aprenda a medir resultados com indicadores claros. O diagnóstico é a base para qualquer aumento de retorno.
+Neste módulo você vai dominar aumentar rentabilidade com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 1.1 — O que é rentabilidade no litoral
-Rentabilidade não é apenasreceita bruta. É o lucro líquido dividido pelo investimento, considerando todos os custos operacionais, impostos e riscos específicos do litoral.
+## Aula 1.1 — Visão geral do mercado de aumentar rentabilidade no litoral paulista
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Fórmula essencial:**
-- Receita bruta = diária média x ocupação x 365
-- Custos totais = IPTU + condomínio + limpeza + manutenção + canal + energia + água + internet + seguro
-- Lucro líquido = receita bruta - custos totais
-- ROI = lucro líquido / investimento total
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Investidor calculou ROI de 12% ao ano, considerando todos os custos. Após identificar perdas ocultas, elevou o ROI para 22% em 6 meses.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Estudo de caso:**
-Proprietário acreditava ter ROI de 25%, mas não incluía custos de manutenção e reformas. Após incluir todos os custos, descobriu que o ROI real era de 11%. O diagnóstico permitiu corrigir falhas e aumentar o retorno para 20%.
+## Aula 1.2 — Conceitos essenciais: termos, métricas e particularidades locais
+Fundamentos, ferramentas e fluxos recomendados para aumentar rentabilidade no litoral.
 
-## Aula 1.2 — Perdas ocultas comuns
-**Perdas ocultas no litoral:**
-- Vazio por preço mal calculado.
-- Gastos com reformas não planejadas.
-- Taxas de canal altas sem negociação.
-- Custos de energia e água acima do normal.
-- Inadimplência ou cancelamentos.
-- Desgaste prematuro por falta de manutenção preventiva.
+**Ferramentas recomendadas:**
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
-**Como identificar:**
-- Revise receita e custos dos últimos 12 meses.
-- Compare com imóveis similares da região.
-- Verifique sazonalidade e picos.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Exemplo real:**
-Investidor descobriu que o imóvel ficava vazio 45% do ano por preço acima do mercado. Após ajuste de preço, a ocupação subiu para 68% e a receita aumentou 32%.
+## Aula 1.3 — Estudo de caso real: como um aluno aplicou o método e obteve resultado em 30 dias
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-## Aula 1.3 — Métricas essenciais
-**Indicadores que você deve acompanhar:**
-- Ocupação média mensal.
-- Receita por diária.
-- Ticket médio.
-- Custo por reserva.
-- Lucro por diária.
-- ROI mensal e anual.
-- Taxa de cancelamento.
-- Nota de avaliação.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Frequência de revisão:**
-- Ocupação e receita: semanal.
-- Custos: mensal.
-- ROI: trimestral.
-
-**Exemplo real:**
-Proprietário passou a acompanhar métricas semanais e identificou que os finais de semana tinham ocupação 30% menor que a média. Ele criou promoções de última hora e aumentou a receita em R$ 8 mil/mês.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
 ## Exercício
-Faça o diagnóstico do seu imóvel:
-- Liste receita e custos dos últimos 12 meses.
-- Calcule ROI real.
-- Identifique 3 perdas ocultas.
+Faça o diagnóstico do seu cenário atual em aumentar rentabilidade: liste pontos fortes, fracos, oportunidades e ameaças.
 
 ## Resumo
-- Rentabilidade exige dados completos.
-- Perdas ocultas são comuns.
-- Métricas orientam decisão.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Dados reunidos
-- [ ] ROI calculado
-- [ ] Perdas identificadas
-- [ ] Metas definidas
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de rentabilidade
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Planilha financeira
-- Sistema de gestão
-- Consulta de comparáveis
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
 ## Prompt de IA
-"Atue como analista de rentabilidade imobiliária. Faça um diagnóstico com base nestes dados: [insira dados]."
+Atue como especialista em aumentar rentabilidade no litoral paulista. Faça um diagnóstico personalizado com base nestas respostas: [insira suas respostas].

@@ -1,4 +1,4 @@
-# Google Ads — CRM para Corretores
-Palavras: CRM para corretores, CRM no mercado imobiliário, funil de vendas para corretores
+# Google Ads — crm-para-corretores
+Palavras: crm para corretores, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

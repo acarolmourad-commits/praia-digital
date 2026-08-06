@@ -1,9 +1,5 @@
-# Planilha — Airbnb do Zero no Litoral
+# Planilha — Airbnb Do Zero
 - [ ] Data
-- [ ] Diária
-- [ ] Ocupação
-- [ ] Receita
-- [ ] Limpeza
-- [ ] Manutenção
-- [ ] Outros custos
-- [ ] Lucro
+- [ ] Ação
+- [ ] Resultado
+- [ ] Observação

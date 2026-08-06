@@ -1,7 +1,6 @@
-# Certificado — CRM para Corretores
+# Certificado — Crm Para Corretores
 Modelo: Praia Digital Academy
-Curso: CRM para Corretores
-Carga horária: 4 horas
+Curso: Crm Para Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

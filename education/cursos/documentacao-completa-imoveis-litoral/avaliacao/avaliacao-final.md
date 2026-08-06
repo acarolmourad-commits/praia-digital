@@ -1,9 +1,9 @@
-# Avaliação Final — Documentação Completa para Imóveis no Litoral
+# Avaliação Final — Documentacao Completa Imoveis Litoral
 ## Quiz
-- 20 perguntas sobre documentação, verificação, regularização e venda.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Documentação aplicada a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

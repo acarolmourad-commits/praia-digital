@@ -1,4 +1,4 @@
-# Google Ads — Como Aumentar em 30% a Rentabilidade
-Palavras: aumentar rentabilidade, litoral, imóveis, investimento
+# Google Ads — aumentar-rentabilidade
+Palavras: aumentar rentabilidade, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

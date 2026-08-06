@@ -1,9 +1,9 @@
-# Avaliação Final — Flipping de Imóveis no Litoral
+# Avaliação Final — Flipping Imoveis Litoral
 ## Quiz
-- 20 perguntas sobre flipping, oportunidades, reforma e venda.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Análise de oportunidade aplicada a um imóvel real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

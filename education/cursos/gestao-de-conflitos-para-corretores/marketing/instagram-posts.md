@@ -1,11 +1,10 @@
-# Posts Instagram — Gestão de Conflitos para Corretores
-1. Post: dica de conflito
-2. Reels: comunicação em 30s
-3. Carrossel: checklist de conflitos
-4. Post: follow-up que resolve
-5. Reels: case de venda
-6. Carrossel: método simples
-7. Post: cliente seguro
-8. Reels: erro comum
-9. Carrossel: métricas básicas
-10. Post: comece hoje
+1. Post: dica sobre gestao de conflitos para corretores
+2. Post: dica sobre gestao de conflitos para corretores
+3. Post: dica sobre gestao de conflitos para corretores
+4. Post: dica sobre gestao de conflitos para corretores
+5. Post: dica sobre gestao de conflitos para corretores
+6. Post: dica sobre gestao de conflitos para corretores
+7. Post: dica sobre gestao de conflitos para corretores
+8. Post: dica sobre gestao de conflitos para corretores
+9. Post: dica sobre gestao de conflitos para corretores
+10. Post: dica sobre gestao de conflitos para corretores

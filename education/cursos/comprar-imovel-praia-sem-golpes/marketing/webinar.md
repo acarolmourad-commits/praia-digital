@@ -1,7 +1,7 @@
-# Roteiro de Webinar — Comprar Imóvel na Praia sem Golpes
+# Roteiro de Webinar — Comprar Imovel Praia Sem Golpes
 1. Abertura: dor do público
-2. Case: comprador evitou golpe na praia
-3. Método: 4 passos
+2. Case: aplicação prática
+3. Método: passo a passo
 4. Prova social
 5. Oferta e bônus
 6. Perguntas frequentes

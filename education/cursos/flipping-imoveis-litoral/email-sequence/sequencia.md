@@ -1,21 +1,21 @@
-# Sequência de E-mails — Flipping de Imóveis no Litoral
+# Sequência de E-mails — Flipping Imoveis Litoral
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido de Flipping no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Flipping Imoveis Litoral (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: flipping com R$ 75 mil de lucro
+Assunto: Case prático de Flipping Imoveis Litoral
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Flipping é arriscado?"
+Assunto: "Flipping Imoveis Litoral é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno fechou primeiro flipping em 45 dias
+Assunto: Aluno obteve resultado com Flipping Imoveis Litoral
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

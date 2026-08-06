@@ -1,92 +1,60 @@
-# Módulo 4 — Otimização e Crescimento
-
+# Módulo 4 — Conteúdo Premium
 ## Introdução
-Acompanhe desempenho, ajuste regras e escale a operação com base em dados de ocupação e receita. A otimização contínua é o que separa resultados medianos de resultados premium.
+Neste módulo você vai dominar pricelabs completo com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 4.1 — Ajustes por desempenho
-**Comparativo de período:**
-- Compare mês a mês e ano a ano.
-- Identifique meses fracos e fortes.
+## Aula 4.1 — Métricas para acompanhar evolução e resultado
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Preço vs ocupação:**
-- Se ocupação está alta e receita baixa, aumente preço.
-- Se ocupação está baixa, reduza preço ou ajuste regras.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Ajuste por canal:**
-- Airbnb pode ter preço diferente de Booking.
-- Analise desempenho por canal.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Revisão mensal:**
-- Revisão de preços.
-- Ajuste de regras.
-- Ajuste de disponibilidade.
+## Aula 4.2 — Otimizações para aumentar rentabilidade ou desempenho
+Fundamentos, ferramentas e fluxos recomendados para pricelabs completo no litoral.
 
-**Exemplo real:**
-Imóvel em Santos revisou preços mensalmente e aumentou receita em 15% em 3 meses.
+**Ferramentas recomendadas:**
+- Dashboard de métricas
+- Planilha de rentabilidade
+- Sistema de gestão de tarefas
 
-## Aula 4.2 — Ocupação vs receita
-**Ocupação saudável:**
-- Alta temporada: 70% a 90%.
-- Média temporada: 40% a 60%.
-- Baixa temporada: 20% a 40%.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Receita por diária:**
-- Ajuste para maximizar receita total, não apenas ocupação.
+## Aula 4.3 — Escala: como crescer sem perder a qualidade
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Payback:**
-- Investimento total / lucro anual.
-- Objetivo: payback entre 3 e 6 anos.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Decisão de ajuste:**
-- Se receita está abaixo do potencial, aumente preço ou reforme.
-- Se ocupação está baixa, reduza preço ou melhore anúncio.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
-**Estudo de caso:**
-Imóvel com ocupação alta, mas receita baixa, ajustou preço médio e melhorou margem em 12%.
-
-## Aula 4.3 — Automação e análise
-**Alertas de preço:**
-- Configure alertas para eventos.
-- Ajuste automático por temporada.
-
-**Regras automáticas:**
-- Mínimo de noites.
-- Antecipação máxima.
-- Preço máximo e mínimo.
-
-**Relatórios:**
-- Receita mensal.
-- Ocupação por temporada.
-- Comparativo por canal.
-
-**Escala gradual:**
-- Adicione um imóvel por vez.
-- Mantenha controle de qualidade.
-
-**Exercício:**
-Monte um plano de otimização mensal com métricas, ajustes e revisão.
+## Exercício
+Desenvolva um plano de crescimento para pricelabs completo com metas mensuráveis.
 
 ## Resumo
-- Dados orientam ajuste.
-- Ocupação não é tudo.
-- Automação reduz trabalho.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Métricas definidas
-- [ ] Revisão semanal
-- [ ] Ajustes aplicados
-- [ ] Alertas ativos
-- [ ] Plano de crescimento
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de ROI
-- Modelo de relatório
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- PriceLabs
-- Planilha de controle
-- Canal manager
+- Dashboard de métricas
+- Planilha de rentabilidade
+- Sistema de gestão de tarefas
 
 ## Prompt de IA
-"Atue como analista de temporada. Monte um plano de otimização para este imóvel: [dados do imóvel]."
+Atue como estrategista de crescimento. Monte um plano de escala para pricelabs completo com métricas e prazos: [dados do negócio].

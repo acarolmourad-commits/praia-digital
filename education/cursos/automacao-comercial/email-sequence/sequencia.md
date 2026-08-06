@@ -1,21 +1,21 @@
-# Sequência de E-mails — Automação Comercial para Corretores
+# Sequência de E-mails — Automacao Comercial
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido de Automação Comercial (PDF + planilha)
+Assunto: Guia Rápido sobre Automacao Comercial (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: automação que vende mais
+Assunto: Case prático de Automacao Comercial
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Automação comercial é cara?"
+Assunto: "Automacao Comercial é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno dobrou conversão em 30 dias
+Assunto: Aluno obteve resultado com Automacao Comercial
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

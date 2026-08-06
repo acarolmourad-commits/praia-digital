@@ -1,9 +1,9 @@
-# Avaliação Final — Guia do Investidor Imobiliário
+# Avaliação Final — Guia Investidor Imobiliario
 ## Quiz
-- 20 perguntas sobre investimento, oportunidades, documentação e gestão.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Análise de investimento aplicada a um imóvel real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

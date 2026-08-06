@@ -1,5 +1,5 @@
-# Sumário do Curso: Apresentação de Imóveis para Corretores
-- Módulo 1: Fundamentos da Apresentação no Litoral
-- Módulo 2: Roteiro e História
-- Módulo 3: Experiência e Valor
-- Módulo 4: Métricas e Crescimento
+# Sumário do Curso: Apresentacao Imoveis Para Corretores
+- Módulo 1: Fundamentos
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

@@ -1,7 +1,6 @@
-# Certificado — Storytelling para Corretores
+# Certificado — Storytelling Para Corretores
 Modelo: Praia Digital Academy
-Curso: Storytelling para Corretores
-Carga horária: 4 horas
+Curso: Storytelling Para Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

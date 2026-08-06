@@ -1,11 +1,11 @@
-# Artigos SEO — Imóveis para Airbnb
-1. Airbnb no litoral em 2026: guia completo
-2. Como começar no Airbnb no litoral
-3. Precificação no Airbnb no litoral
-4. Anúncio no Airbnb no litoral
-5. Gestão no Airbnb no litoral
-6. Ocupação no Airbnb no litoral
-7. Renda no Airbnb no litoral
-8. Temporada no litoral
-9. Erros no Airbnb no litoral
-10. Como escalar no Airbnb no litoral
+# Artigos SEO — Imoveis Para Airbnb
+1. Imoveis Para Airbnb em 2026
+2. Como aplicar imoveis para airbnb no litoral
+3. Resultados reais de imoveis para airbnb
+4. Método passo a passo de imoveis para airbnb
+5. Erros comuns em imoveis para airbnb
+6. Ferramentas para imoveis para airbnb
+7. Cases de imoveis para airbnb no litoral
+8. Como medir resultado em imoveis para airbnb
+9. Como começar em imoveis para airbnb
+10. FAQ sobre imoveis para airbnb

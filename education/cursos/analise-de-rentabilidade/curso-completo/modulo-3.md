@@ -1,77 +1,60 @@
-# Módulo 3 — Cálculo e Decisão
-
+# Módulo 3 — Conteúdo Premium
 ## Introdução
-Aprenda a calcular ROI, simular cenários e tomar decisões de investimento com clareza e segurança.
+Neste módulo você vai dominar analise de rentabilidade com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 3.1 — ROI e payback
-**Cálculo de ROI:**
-- ROI = lucro líquido / investimento total
-- Payback = investimento total / lucro anual
+## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Exemplo prático:**
-- Investimento: R$ 350 mil
-- Reforma: R$ 25 mil
-- Receita anual: R$ 96 mil
-- Custos anuais: R$ 24 mil
-- Lucro: R$ 72 mil
-- ROI: 20,6% ao ano
-- Payback: 5,2 anos
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-## Aula 3.2 — Cenários e riscos
-**Cenários:**
-- Otimista: ocupação 20% acima da média.
-- Realista: ocupação conforme mercado.
-- Pessimista: ocupação 20% abaixo da média.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Riscos:**
-- Documentação irregular.
-- IPTU atrasado.
-- Alagamentos.
-- Concorrência alta.
+## Aula 3.2 — Caso real 2: como evitar erros custosos
+Fundamentos, ferramentas e fluxos recomendados para analise de rentabilidade no litoral.
 
-**Exemplo real:**
-Investidor simulou cenário pessimista e decidiu não comprar um imóvel com risco de alagamento.
+**Ferramentas recomendadas:**
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
-## Aula 3.3 — Decisão de investimento
-**Critérios de decisão:**
-- ROI esperado >= 15% ao ano.
-- Documentação regular.
-- Localização com valorização.
-- Risco controlado.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Checklist de decisão:**
-- [ ] ROI calculado
-- [ ] Cenários simulados
-- [ ] Riscos identificados
-- [ ] Documentação verificada
-- [ ] Decisão tomada
+## Aula 3.3 — Lições aplicáveis ao seu contexto
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Estudo de caso:**
-Investidor usou critérios de ROI e documentação e evitou um imóvel com risco de marinha.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
+
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
 ## Exercício
-Calcule ROI e payback para um imóvel no litoral.
+Analise um caso real do mercado e adapte as lições para a sua realidade.
 
 ## Resumo
-- ROI mede retorno.
-- Cenários reduzem risco.
-- Decisão exige dados.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] ROI calculado
-- [ ] Cenários simulados
-- [ ] Riscos avaliados
-- [ ] Decisão tomada
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de ROI
-- Modelo de relatório
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Planilha de rentabilidade
-- Sistema de gestão
-- Consulta de dados locais
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
 ## Prompt de IA
-"Atue como analista de investimentos. Calcule ROI e payback para este imóvel: [dados]."
+Atue como mentor experiente. Analise este caso real de analise de rentabilidade no litoral e aponte 5 lições práticas: [descreva o caso].

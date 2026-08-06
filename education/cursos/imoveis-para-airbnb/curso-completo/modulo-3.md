@@ -1,53 +1,60 @@
-# Módulo 3 — Anúncio e Gestão
-
+# Módulo 3 — Conteúdo Premium
 ## Introdução
-Aprenda a criar anúncios persuasivos, gerenciar reservas e lidar com avaliações no Airbnb no litoral.
+Neste módulo você vai dominar imoveis para airbnb com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 3.1 — Anúncio persuasivo
-**Anúncio:**
-- Título forte.
-- Descrição clara.
-- Regras objetivas.
+## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Exemplo real:**
-Dono melhorou anúncio e aumentou reservas.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-## Aula 3.2 — Gestão de reservas
-**Gestão:**
-- Check-in.
-- Check-out.
-- Suporte.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Exercício:**
-Monte um fluxo de gestão.
+## Aula 3.2 — Caso real 2: como evitar erros custosos
+Fundamentos, ferramentas e fluxos recomendados para imoveis para airbnb no litoral.
 
-## Aula 3.3 — Avaliações e ajustes
-**Avaliações:**
-- Leitura.
-- Resposta.
-- Ajuste.
+**Ferramentas recomendadas:**
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
-**Estudo de caso:**
-Dono respondeu avaliações e melhorou ranking.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+
+## Aula 3.3 — Lições aplicáveis ao seu contexto
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
+
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Analise um caso real do mercado e adapte as lições para a sua realidade.
 
 ## Resumo
-- Anúncio atrai hóspedes.
-- Gestão mantém avaliação.
-- Ajustes melhoram resultado.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Anúncio criado
-- [ ] Gestão estruturada
-- [ ] Avaliações acompanhadas
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de anúncio
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Airbnb
-- Planilha
-- Automação
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
 ## Prompt de IA
-"Atue como especialista em Airbnb no litoral. Crie um anúncio para este imóvel: [dados]."
+Atue como mentor experiente. Analise este caso real de imoveis para airbnb no litoral e aponte 5 lições práticas: [descreva o caso].

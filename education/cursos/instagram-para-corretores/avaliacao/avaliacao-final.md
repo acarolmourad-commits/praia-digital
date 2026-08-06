@@ -1,9 +1,9 @@
-# Avaliação Final — Instagram para Corretores
+# Avaliação Final — Instagram Para Corretores
 ## Quiz
-- 20 perguntas sobre Instagram, conteúdo, leads, anúncios e métricas.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Conteúdo aplicado a um perfil real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

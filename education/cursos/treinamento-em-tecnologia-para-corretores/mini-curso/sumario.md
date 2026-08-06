@@ -1,5 +1,5 @@
-# Mini Curso — Treinamento em Tecnologia para Corretores
-## Aula 1 — Fundamentos da tecnologia (8 min)
-## Aula 2 — Método e ferramentas (12 min)
-## Aula 3 — Automação e fechamento (10 min)
-## Bônus — Planilha de tecnologia
+# Mini Curso — Treinamento Em Tecnologia Para Corretores
+## Aula 1 — Visão geral (8 min)
+## Aula 2 — Conceitos essenciais (12 min)
+## Aula 3 — Aplicação prática (10 min)
+## Bônus — Material complementar

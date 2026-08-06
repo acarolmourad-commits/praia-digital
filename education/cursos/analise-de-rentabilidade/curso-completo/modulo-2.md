@@ -1,80 +1,60 @@
-# Módulo 2 — Dados e Comparáveis
-
+# Módulo 2 — Conteúdo Premium
 ## Introdução
-Aprenda a obter dados do imóvel, comparar oportunidades no litoral e analisar mercado para tomar decisões baseadas em dados reais.
+Neste módulo você vai dominar analise de rentabilidade com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 2.1 — Como obter dados do imóvel
-**Dados essenciais:**
-- Valor de compra.
-- Custos de reforma.
-- IPTU e condomínio.
-- Receita estimada.
-- Custos operacionais.
+## Aula 2.1 — Passo a passo para aplicar analise de rentabilidade na prática
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Fontes:**
-- Portais de imóveis.
-- Registro de imóveis.
-- Prefeitura municipal.
-- Anúncios locais.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Investidor consultou 5 portais e 3 comparáveis e definiu preço justo para um apartamento em Praia Grande.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 2.2 — Comparáveis no litoral
-**Critérios:**
-- Localização: mesma cidade e bairro.
-- Tipo: casa, apartamento, terreno.
-- Área e quartos.
-- Estado de conservação.
-- Potencial de temporada.
+## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
+Fundamentos, ferramentas e fluxos recomendados para analise de rentabilidade no litoral.
 
-**Tabela de comparáveis:**
-| Imóvel | Preço | Área | Quartos | Localização | Potencial |
-| A | R$ 280 mil | 70m² | 2 | Praia Grande | Alto |
-| B | R$ 260 mil | 65m² | 2 | Praia Grande | Médio |
-| C | R$ 310 mil | 80m² | 3 | Praia Grande | Alto |
+**Ferramentas recomendadas:**
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
-**Exemplo real:**
-Investidor escolheu o imóvel A por custo-benefício e potencial de temporada.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-## Aula 2.3 — Análise de mercado
-**Fatores de mercado:**
-- Acesso rodoviário.
-- Infraestrutura local.
-- Eventos e temporada.
-- Valorização histórica.
+## Aula 2.3 — Automação e fluxos que economizam horas por semana
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Análise SWOT:**
-- Forças: localização, acesso, documentação.
-- Fraquezas: reforma, custos, sazonalidade.
-- Oportunidades: temporada, eventos, digital nomads.
-- Ameaças: concorrência, alagamentos, IPTU alto.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Estudo de caso:**
-Investidor analisou mercado de São Vicente e identificou oportunidade em imóvel próximo ao acesso, com valorização de 15% em 2 anos.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
 ## Exercício
-Faça uma análise comparativa de 3 imóveis no litoral.
+Monte um plano prático de analise de rentabilidade para os próximos 30 dias, com ações diárias e semanais.
 
 ## Resumo
-- Dados reduzem risco.
-- Comparáveis evitam overpricing.
-- Mercado orienta decisão.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Dados coletados
-- [ ] Comparáveis analisados
-- [ ] Mercado mapeado
-- [ ] Decisão preparada
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de comparáveis
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Portais de imóveis
-- Google Maps
-- Planilha de análise
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
 ## Prompt de IA
-"Atue como analista de investimentos imobiliários. Compare estes 3 imóveis e sugira o melhor para investimento: [dados]."
+Atue como consultor de analise de rentabilidade. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].

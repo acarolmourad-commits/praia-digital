@@ -1,5 +1,5 @@
-# Sumário do Curso: Flipping de Imóveis no Litoral
+# Sumário do Curso: Flipping
 - Módulo 1: Fundamentos
 - Módulo 2: Aplicação Prática
-- Módulo 3: Estratégia
+- Módulo 3: Casos Reais
 - Módulo 4: Crescimento

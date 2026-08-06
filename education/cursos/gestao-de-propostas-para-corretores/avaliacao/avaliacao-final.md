@@ -1,9 +1,9 @@
-# Avaliação Final — Gestão de Propostas para Corretores
+# Avaliação Final — Gestao De Propostas Para Corretores
 ## Quiz
-- 20 perguntas sobre proposta, negociação, objeções e fechamento.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Proposta aplicada a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

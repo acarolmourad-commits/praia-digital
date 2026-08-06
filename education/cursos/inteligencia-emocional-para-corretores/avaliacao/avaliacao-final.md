@@ -1,9 +1,9 @@
-# Avaliação Final — Inteligência Emocional para Corretores
+# Avaliação Final — Inteligencia Emocional Para Corretores
 ## Quiz
-- 20 perguntas sobre inteligência emocional, autoconhecimento, comunicação e fechamento.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Comunicação aplicada a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

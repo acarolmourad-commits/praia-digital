@@ -1,11 +1,11 @@
-# Artigos SEO — IA para Corretores
-1. IA para corretores no litoral em 2026: guia completo
-2. Como usar IA no mercado imobiliário
-3. Prompts para corretores no litoral
-4. Automação para corretores no litoral
-5. IA e vendas no litoral
-6. Ferramentas de IA para imobiliário
-7. Conteúdo com IA no litoral
-8. Follow-up com IA no litoral
-9. ROI de IA no litoral
-10. Erros comuns com IA no litoral
+# Artigos SEO — Ia Para Corretores
+1. Ia Para Corretores em 2026
+2. Como aplicar ia para corretores no litoral
+3. Resultados reais de ia para corretores
+4. Método passo a passo de ia para corretores
+5. Erros comuns em ia para corretores
+6. Ferramentas para ia para corretores
+7. Cases de ia para corretores no litoral
+8. Como medir resultado em ia para corretores
+9. Como começar em ia para corretores
+10. FAQ sobre ia para corretores

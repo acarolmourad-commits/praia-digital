@@ -1,4 +1,4 @@
-# Google Ads — Automação Comercial para Corretores
-Palavras: automação comercial para corretores, CRM para corretores, follow-up automatizado
+# Google Ads — automacao-comercial
+Palavras: automacao comercial, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

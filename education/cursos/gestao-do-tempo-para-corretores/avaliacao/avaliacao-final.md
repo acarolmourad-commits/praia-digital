@@ -1,9 +1,9 @@
-# Avaliação Final — Gestão do Tempo para Corretores
+# Avaliação Final — Gestao Do Tempo Para Corretores
 ## Quiz
-- 20 perguntas sobre gestão do tempo, rotina, disciplina e fechamento.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Gestão do tempo aplicada a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

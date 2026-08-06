@@ -1,21 +1,21 @@
-# Sequência de E-mails — Venda Rápida de Imóveis no Litoral
+# Sequência de E-mails — Venda Rapida Imoveis Litoral
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: Venda Rápida de Imóveis no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Venda Rapida Imoveis Litoral (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: corretor vendeu imóvel em 7 dias
+Assunto: Case prático de Venda Rapida Imoveis Litoral
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Venda rápida é possível?"
+Assunto: "Venda Rapida Imoveis Litoral é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno reduziu tempo de venda em 50%
+Assunto: Aluno obteve resultado com Venda Rapida Imoveis Litoral
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

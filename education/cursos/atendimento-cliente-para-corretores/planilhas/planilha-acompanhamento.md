@@ -1,10 +1,5 @@
-# Planilha — Atendimento ao Cliente para Corretores
+# Planilha — Atendimento Cliente Para Corretores
 - [ ] Data
-- [ ] Cliente
-- [ ] Cidade
-- [ ] Imóvel
-- [ ] Atendimento
-- [ ] Problema
-- [ ] Solução
-- [ ] Satisfação
-- [ ] Status
+- [ ] Ação
+- [ ] Resultado
+- [ ] Observação

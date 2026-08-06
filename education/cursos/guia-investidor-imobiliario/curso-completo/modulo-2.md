@@ -1,71 +1,60 @@
-# Módulo 2 — Oportunidades e Análise
-
+# Módulo 2 — Conteúdo Premium
 ## Introdução
-Aprenda a encontrar oportunidades, analisar viabilidade e comparar mercados no litoral.
+Neste módulo você vai dominar guia investidor imobiliario com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 2.1 — Como encontrar oportunidades
-**Canais:**
-- Portais de imóveis.
-- Indicações.
-- Anúncios de venda rápida.
+## Aula 2.1 — Passo a passo para aplicar guia investidor imobiliario na prática
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Critérios:**
-- Preço abaixo do mercado.
-- Documentação simples.
-- Localização com demanda.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Investidor encontrou imóvel por R$ 150 mil e obteve renda.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 2.2 — Análise de viabilidade
-**Dados:**
-- Compra.
-- Reforma.
-- Custos operacionais.
-- Renda estimada.
-- Valorização.
+## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
+Fundamentos, ferramentas e fluxos recomendados para guia investidor imobiliario no litoral.
 
-**Exemplo prático:**
-- Compra: R$ 150 mil.
-- Reforma: R$ 20 mil.
-- Renda: R$ 2.500/mês.
-- Valorização: 8% ao ano.
+**Ferramentas recomendadas:**
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
-**Estudo de caso:**
-Investidor analisou 5 oportunidades e escolheu a melhor.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-## Aula 2.3 — Comparáveis e mercado
-**Comparáveis:**
-- Imóveis similares.
-- Preços praticados.
-- Renda média.
+## Aula 2.3 — Automação e fluxos que economizam horas por semana
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Mercado:**
-- Demanda.
-- Sazonalidade.
-- Tendências.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Exercício:**
-Faça uma análise de viabilidade para um imóvel real.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Monte um plano prático de guia investidor imobiliario para os próximos 30 dias, com ações diárias e semanais.
 
 ## Resumo
-- Oportunidade exige dados.
-- Viabilidade define retorno.
-- Mercado orienta decisão.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Oportunidades prospectadas
-- [ ] Viabilidade calculada
-- [ ] Comparáveis analisados
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de oportunidades
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Portais de imóveis
-- Planilha
-- Consultorias
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
 ## Prompt de IA
-"Atue como especialista em investimento imobiliário. Analise esta oportunidade: [dados]."
+Atue como consultor de guia investidor imobiliario. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].

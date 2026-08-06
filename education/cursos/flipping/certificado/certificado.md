@@ -1,7 +1,6 @@
-# Certificado — Flipping de Imóveis no Litoral
+# Certificado — Flipping
 Modelo: Praia Digital Academy
-Curso: Flipping de Imóveis no Litoral
-Carga horária: 7 horas
+Curso: Flipping
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

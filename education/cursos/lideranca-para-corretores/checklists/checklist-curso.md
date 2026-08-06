@@ -1,8 +1,7 @@
-# Checklist — Liderança para Corretores
-- [ ] Diagnóstico de liderança
-- [ ] Comunicação criada
-- [ ] Método estruturado
-- [ ] Motivação feita
-- [ ] Resultado confirmado
-- [ ] Follow-up planejado
-- [ ] Crescimento planejado
+# Checklist — Lideranca Para Corretores
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

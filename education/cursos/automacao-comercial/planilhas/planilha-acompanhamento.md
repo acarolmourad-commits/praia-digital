@@ -1,9 +1,5 @@
-# Planilha — Automação Comercial para Corretores
+# Planilha — Automacao Comercial
 - [ ] Data
 - [ ] Ação
-- [ ] Canal
-- [ ] Leads
-- [ ] Resposta
-- [ ] Vendas
-- [ ] ROI
+- [ ] Resultado
 - [ ] Observação

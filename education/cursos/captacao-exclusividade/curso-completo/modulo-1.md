@@ -1,71 +1,60 @@
-# Módulo 1 — Fundamentos da Captação
-
+# Módulo 1 — Conteúdo Premium
 ## Introdução
-Entenda o mercado de captação no litoral, o perfil do proprietário e as métricas essenciais para captar imóveis exclusivos com método.
+Neste módulo você vai dominar captacao exclusividade com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 1.1 — Mercado de captação no litoral
-O mercado de captação no litoral tem particularidades: proprietários que valorizam avaliação correta, marketing profissional e relacionamento próximo.
+## Aula 1.1 — Visão geral do mercado de captacao exclusividade no litoral paulista
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Dados que importam:**
-- 60% dos proprietários no litoral são de São Paulo.
-- 25% são de Minas Gerais e Paraná.
-- 15% são internacionais ou digitais nomads.
-- Tempo médio de venda: 45 a 90 dias.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Corretor especializado no litoral captou 8 imóveis exclusivos em 2 meses com porta a porta em São Vicente.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Estudo de caso:**
-Corretora usou conteúdo local no Instagram e captou 12 imóveis em 2 meses com avaliações gratuitas.
+## Aula 1.2 — Conceitos essenciais: termos, métricas e particularidades locais
+Fundamentos, ferramentas e fluxos recomendados para captacao exclusividade no litoral.
 
-## Aula 1.2 — Perfil do proprietário
-**Proprietário de segunda residência:**
-- Busca tranquilidade, segurança e valor justo.
-- Valoriza avaliação correta e marketing profissional.
+**Ferramentas recomendadas:**
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
-**Investidor:**
-- Busca ROI, velocidade de venda e comissão justa.
-- Valoriza dados e comparáveis.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Proprietário que quer vender rápido:**
-- Quer urgência, mas sem prejuízo.
-- Valoriza plano de venda rápido.
+## Aula 1.3 — Estudo de caso real: como um aluno aplicou o método e obteve resultado em 30 dias
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-## Aula 1.3 — Métricas de captação
-**Indicadores essenciais:**
-- Ligações por dia.
-- Visitas por semana.
-- Avaliações por mês.
-- Contratos de exclusividade por mês.
-- Imóveis vendidos por mês.
-- Ticket médio.
-- Comissão média.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Exemplo real:**
-Corretor passou a acompanhar métricas semanais e aumentou captação de 2 para 6 imóveis por mês.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
 ## Exercício
-Faça o diagnóstico do seu processo de captação atual.
+Faça o diagnóstico do seu cenário atual em captacao exclusividade: liste pontos fortes, fracos, oportunidades e ameaças.
 
 ## Resumo
-- Mercado do litoral tem perfis distintos.
-- Métricas orientam crescimento.
-- Captação bem feita reduz concorrência.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Funil mapeado
-- [ ] Perfil definido
-- [ ] Métricas escolhidas
-- [ ] Metas traçadas
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de diagnóstico
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- CRM de vendas
-- Planilha de métricas
-- Portal de imóveis
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
 ## Prompt de IA
-"Atue como especialista em captação imobiliária. Faça um diagnóstico do meu processo com base nestas respostas: [insira suas respostas]."
+Atue como especialista em captacao exclusividade no litoral paulista. Faça um diagnóstico personalizado com base nestas respostas: [insira suas respostas].

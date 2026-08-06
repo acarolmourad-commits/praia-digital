@@ -1,4 +1,4 @@
-# Google Ads — Guia do Investidor Imobiliário
-Palavras: investimento imobiliário, investir no litoral, renda com imóveis
+# Google Ads — guia-investidor-imobiliario
+Palavras: guia investidor imobiliario, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

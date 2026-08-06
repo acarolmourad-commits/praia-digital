@@ -1,8 +1,7 @@
-# Checklist — Gestão de Conflitos para Corretores
-- [ ] Diagnóstico de conflito
-- [ ] Comunicação criada
-- [ ] Método estruturado
-- [ ] Resolução feita
-- [ ] Fechamento confirmado
-- [ ] Follow-up planejado
-- [ ] Crescimento planejado
+# Checklist — Gestao De Conflitos Para Corretores
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

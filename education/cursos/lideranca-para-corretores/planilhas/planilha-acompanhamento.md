@@ -1,10 +1,5 @@
-# Planilha — Liderança para Corretores
+# Planilha — Lideranca Para Corretores
 - [ ] Data
-- [ ] Líder
-- [ ] Corretor
 - [ ] Ação
 - [ ] Resultado
-- [ ] Follow-up
-- [ ] Venda
-- [ ] Receita
-- [ ] Status
+- [ ] Observação

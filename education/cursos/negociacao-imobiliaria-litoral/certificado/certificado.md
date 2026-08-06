@@ -1,7 +1,6 @@
-# Certificado — Negociação Imobiliária no Litoral
+# Certificado — Negociacao Imobiliaria Litoral
 Modelo: Praia Digital Academy
-Curso: Negociação Imobiliária no Litoral
-Carga horária: 4 horas
+Curso: Negociacao Imobiliaria Litoral
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

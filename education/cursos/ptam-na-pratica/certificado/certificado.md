@@ -1,7 +1,6 @@
-# Certificado — PTAM na Prática
+# Certificado — Ptam Na Pratica
 Modelo: Praia Digital Academy
-Curso: PTAM na Prática
-Carga horária: 4 horas
+Curso: Ptam Na Pratica
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

@@ -1,9 +1,9 @@
-# Avaliação Final — Atendimento ao Cliente para Corretores
+# Avaliação Final — Atendimento Ao Cliente Para Corretores
 ## Quiz
-- 20 perguntas sobre atendimento, relacionamento, contato e fechamento.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Atendimento aplicado a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

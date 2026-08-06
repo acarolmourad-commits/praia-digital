@@ -1,21 +1,21 @@
-# Sequência de E-mails — Documentação Completa para Imóveis no Litoral
+# Sequência de E-mails — Documentacao Completa Imoveis Litoral
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: Documentação Completa para Imóveis no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Documentacao Completa Imoveis Litoral (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: comprador evitou golpe com documentação
+Assunto: Case prático de Documentacao Completa Imoveis Litoral
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Documentação é muito complicada?"
+Assunto: "Documentacao Completa Imoveis Litoral é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno organizou documentação em 7 dias
+Assunto: Aluno obteve resultado com Documentacao Completa Imoveis Litoral
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

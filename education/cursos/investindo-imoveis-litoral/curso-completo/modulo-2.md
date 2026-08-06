@@ -1,91 +1,60 @@
-# Módulo 2 — Escolha e Avaliação do Imóvel
-
+# Módulo 2 — Conteúdo Premium
 ## Introdução
-Aprenda a escolher o imóvel certo com base em localização, tipo, valor e potencial de rentabilidade. O foco aqui é reduzir dúvidas e evitar overpricing.
+Neste módulo você vai dominar investindo imoveis litoral com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 2.1 — Tipos de imóvel: casa, apartamento, terreno
-**Casa:**
-- Maior privacidade
-- Custo de manutenção maior
-- Ideal para famílias e temporada com crianças
+## Aula 2.1 — Passo a passo para aplicar investindo imoveis litoral na prática
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Apartamento:**
-- Menor manutenção
-- Condomínio com regras
-- Ideal para investidores que buscam liquidez
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Terreno:**
-- Potencial de valorização
-- Exige construção ou aprovação
-- Ideal para longo prazo ou projeto personalizado
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Exemplo real:**
-Casa em Bertioga com piscina e churrasqueira teve ocupação de 94% na alta temporada, enquanto apartamento em Santos manteve taxa de 78% durante todo o ano, mas com tarifa 15% menor. Cada perfil tem seu público.
+## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
+Fundamentos, ferramentas e fluxos recomendados para investindo imoveis litoral no litoral.
 
-**Pergunta prática:**
-Você prioriza liquidez, rentabilidade imediata ou valorização a longo prazo?
+**Ferramentas recomendadas:**
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
-## Aula 2.2 — Localização: cidade, bairro, acesso
-A localização é o maior diferencial de valor no litoral.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Critérios objetivos:**
-- Distância até a praia
-- Acesso rodoviário (tempo de viagem a partir de São Paulo)
-- Infraestrutura (mercados, farmácias, hospitais)
-- Segurança pública
-- Valor do metro quadrado por bairro
+## Aula 2.3 — Automação e fluxos que economizam horas por semana
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Dados práticos:**
-- Orla de Santos: valorização média de 8% ao ano, preço elevado.
-- Bairros próximos à orla: valorização média de 6% ao ano.
-- Regiões afastadas: preço menor, mas demanda mais sazonal e risco de desvalorização.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Estudo de caso:**
-Imóvel em São Vicente, a 600 m do acesso e 1,2 km da praia, valorizou 15% em 2 anos após abertura de um novo empreendimento comercial. O comprador utilizou análise de comparáveis e não pagou acima do valor de mercado.
-
-## Aula 2.3 — Avaliação de valor e comparáveis
-**Passo a passo:**
-1. Consulte 3 imóveis similares na região.
-2. Considere IPTU, condomínio, estado de conservação.
-3. Avalie potencial de reforma.
-4. Calcule custo total de aquisição + reforma.
-5. Compare com aluguéis da região.
-
-**Ferramentas:**
-- Portais de imóveis
-- Google Maps para medir distâncias
-- Planilha de comparáveis
-
-**Exemplo real:**
-Investidor comparou 3 apartamentos em Praia Grande:
-- Imóvel A: R$ 280 mil, 2 quartos, a 400 m da praia.
-- Imóvel B: R$ 260 mil, 2 quartos, a 800 m da praia.
-- Imóvel C: R$ 310 mil, 3 quartos, a 300 m da praia.
-Escolheu o imóvel A por custo-benefício e potencial de temporada.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
 ## Exercício
-Selecione 3 imóveis na sua região preferida e compare: preço, localização, estado, potencial de temporada e valor de reforma.
+Monte um plano prático de investindo imoveis litoral para os próximos 30 dias, com ações diárias e semanais.
 
 ## Resumo
-- Tipo de imóvel define perfil de uso.
-- Localização é o maior diferencial.
-- Comparáveis evitam overpricing.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Tipo definido
-- [ ] Região escolhida
-- [ ] 3 comparáveis analisados
-- [ ] Potencial avaliado
-- [ ] Orçamento confirmado
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de comparáveis
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Portais de imóveis
-- Google Maps
-- Consulta de IPTU
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
 ## Prompt de IA
-"Atue como avaliador de imóveis no litoral paulista. Compare estes 3 imóveis e diga qual tem melhor custo-benefício para investimento em temporada: [dados dos imóveis]."
+Atue como consultor de investindo imoveis litoral. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].

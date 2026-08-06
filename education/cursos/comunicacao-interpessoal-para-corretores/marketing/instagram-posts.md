@@ -1,11 +1,10 @@
-# Posts Instagram — Comunicação Interpessoal para Corretores
-1. Post: dica de comunicação interpessoal
-2. Reels: relacionamento em 30s
-3. Carrossel: checklist de comunicação
-4. Post: follow-up que vende
-5. Reels: case de vendas
-6. Carrossel: método simples
-7. Post: objeção sem erro
-8. Reels: erro comum
-9. Carrossel: métricas básicas
-10. Post: comece hoje
+1. Post: dica sobre comunicacao interpessoal para corretores
+2. Post: dica sobre comunicacao interpessoal para corretores
+3. Post: dica sobre comunicacao interpessoal para corretores
+4. Post: dica sobre comunicacao interpessoal para corretores
+5. Post: dica sobre comunicacao interpessoal para corretores
+6. Post: dica sobre comunicacao interpessoal para corretores
+7. Post: dica sobre comunicacao interpessoal para corretores
+8. Post: dica sobre comunicacao interpessoal para corretores
+9. Post: dica sobre comunicacao interpessoal para corretores
+10. Post: dica sobre comunicacao interpessoal para corretores

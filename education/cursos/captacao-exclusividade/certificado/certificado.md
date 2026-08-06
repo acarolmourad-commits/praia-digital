@@ -1,7 +1,6 @@
-# Certificado — Captação e Exclusividade para Corretores
+# Certificado — Captacao Exclusividade
 Modelo: Praia Digital Academy
-Curso: Captação e Exclusividade para Corretores
-Carga horária: 7 horas
+Curso: Captacao Exclusividade
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

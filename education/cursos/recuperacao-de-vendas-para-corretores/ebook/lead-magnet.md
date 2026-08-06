@@ -1,5 +1,5 @@
-# E-book Derivado — Recuperação de Vendas para Corretores
-Título: Guia Rápido: Recuperação de Vendas para Corretores no Litoral
+# E-book Derivado — Recuperacao De Vendas Para Corretores
+Título: Guia Rápido sobre Recuperacao De Vendas Para Corretores
 Formato: PDF 20 a 30 páginas
 Preço: gratuito ou R$ 19,90
-Conteúdo: checklist, planilha, dicas rápidas, modelo de recuperação.
+Conteúdo: resumo, templates, dicas rápidas.

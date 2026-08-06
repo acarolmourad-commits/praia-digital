@@ -1,7 +1,6 @@
-# Certificado — Gestão de Propostas para Corretores
+# Certificado — Gestao De Propostas Para Corretores
 Modelo: Praia Digital Academy
-Curso: Gestão de Propostas para Corretores
-Carga horária: 4 horas
+Curso: Gestao De Propostas Para Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

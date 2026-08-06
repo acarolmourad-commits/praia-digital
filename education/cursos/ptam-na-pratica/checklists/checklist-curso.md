@@ -1,7 +1,7 @@
-# Checklist — PTAM na Prática
-- [ ] Documentos reunidos
-- [ ] Checklist criado
-- [ ] Processo iniciado
-- [ ] Acompanhamento ativo
-- [ ] Ajustes aplicados
-- [ ] Regularização aprovada
+# Checklist — Ptam Na Pratica
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

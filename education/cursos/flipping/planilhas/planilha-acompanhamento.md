@@ -1,6 +1,5 @@
-# Planilha — Flipping de Imóveis no Litoral
+# Planilha — Flipping
 - [ ] Data
 - [ ] Ação
 - [ ] Resultado
-- [ ] Ajuste
-- [ ] Status
+- [ ] Observação

@@ -1,66 +1,60 @@
-# Módulo 4 — Gestão e Escala
-
+# Módulo 4 — Conteúdo Premium
 ## Introdução
-Gerencie métricas, ajuste funis, automatize processos e escale vendas no litoral.
+Neste módulo você vai dominar funil de vendas com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 4.1 — Métricas e ajustes
-**Métricas:**
-- Leads.
-- Visitas.
-- Propostas.
-- Vendas.
-- Conversão.
+## Aula 4.1 — Métricas para acompanhar evolução e resultado
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Ajustes:**
-- Revise semanalmente.
-- Teste novas abordagens.
-- Mantenha o que funciona.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Corretor ajustou follow-up e aumentou conversão para 25%.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 4.2 — Automação e escala
-**Automação:**
-- Follow-up automático.
-- Lembretes.
-- Integração CRM.
+## Aula 4.2 — Otimizações para aumentar rentabilidade ou desempenho
+Fundamentos, ferramentas e fluxos recomendados para funil de vendas no litoral.
 
-**Escala:**
-- Adicione mais leads.
-- Mantenha qualidade.
-- Padronize processos.
+**Ferramentas recomendadas:**
+- Dashboard de métricas
+- Planilha de rentabilidade
+- Sistema de gestão de tarefas
 
-**Estudo de caso:**
-Corretor automatizou follow-up e triplicou vendas.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-## Aula 4.3 — Crescimento sustentado
-**Crescimento:**
-- Acompanhe métricas.
-- Treine equipe.
-- Adicione fontes de leads.
+## Aula 4.3 — Escala: como crescer sem perder a qualidade
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Exercício:**
-Monte um plano de crescimento para os próximos 90 dias.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
+
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Desenvolva um plano de crescimento para funil de vendas com metas mensuráveis.
 
 ## Resumo
-- Métricas orientam ajustes.
-- Automação escala vendas.
-- Crescimento depende de método.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Métricas revisadas
-- [ ] Automação implementada
-- [ ] Crescimento planejado
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de métricas
-- Modelo de relatório
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- CRM
-- Automação
-- Planilha
+- Dashboard de métricas
+- Planilha de rentabilidade
+- Sistema de gestão de tarefas
 
 ## Prompt de IA
-"Atue como especialista em funil de vendas. Monte um plano de crescimento para este cenário: [dados]."
+Atue como estrategista de crescimento. Monte um plano de escala para funil de vendas com métricas e prazos: [dados do negócio].

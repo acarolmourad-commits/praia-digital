@@ -1,21 +1,21 @@
-# Sequência de E-mails — Networking para Corretores
+# Sequência de E-mails — Networking Para Corretores
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: Networking para Corretores no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Networking Para Corretores (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: corretor fez networking e fechou venda
+Assunto: Case prático de Networking Para Corretores
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Networking compensa?"
+Assunto: "Networking Para Corretores é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno gerou mais parcerias em 30%
+Assunto: Aluno obteve resultado com Networking Para Corretores
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

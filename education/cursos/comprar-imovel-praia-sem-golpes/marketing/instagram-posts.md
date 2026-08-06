@@ -1,11 +1,10 @@
-# Posts Instagram — Comprar Imóvel na Praia sem Golpes
-1. Post: dica de compra segura
-2. Reels: verificação em 30s
-3. Carrossel: checklist anti-golpes
-4. Post: documento que protege
-5. Reels: case de segurança
-6. Carrossel: método simples
-7. Post: compra sem erro
-8. Reels: erro comum
-9. Carrossel: métricas básicas
-10. Post: comece hoje
+1. Post: dica sobre comprar imovel praia sem golpes
+2. Post: dica sobre comprar imovel praia sem golpes
+3. Post: dica sobre comprar imovel praia sem golpes
+4. Post: dica sobre comprar imovel praia sem golpes
+5. Post: dica sobre comprar imovel praia sem golpes
+6. Post: dica sobre comprar imovel praia sem golpes
+7. Post: dica sobre comprar imovel praia sem golpes
+8. Post: dica sobre comprar imovel praia sem golpes
+9. Post: dica sobre comprar imovel praia sem golpes
+10. Post: dica sobre comprar imovel praia sem golpes

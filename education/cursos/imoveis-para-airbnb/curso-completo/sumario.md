@@ -1,5 +1,5 @@
-# Sumário do Curso: Imóveis para Airbnb
-- Módulo 1: Fundamentos do Airbnb no Litoral
-- Módulo 2: Preparação do Imóvel
-- Módulo 3: Anúncio e Gestão
-- Módulo 4: Renda e Escala
+# Sumário do Curso: Imoveis Para Airbnb
+- Módulo 1: Fundamentos
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

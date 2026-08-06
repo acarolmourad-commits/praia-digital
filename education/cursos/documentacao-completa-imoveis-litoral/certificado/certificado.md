@@ -1,7 +1,6 @@
-# Certificado — Documentação Completa para Imóveis no Litoral
+# Certificado — Documentacao Completa Imoveis Litoral
 Modelo: Praia Digital Academy
-Curso: Documentação Completa para Imóveis no Litoral
-Carga horária: 4 horas
+Curso: Documentacao Completa Imoveis Litoral
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

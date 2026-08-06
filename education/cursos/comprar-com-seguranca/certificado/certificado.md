@@ -1,7 +1,6 @@
-# Certificado — Comprar com Segurança no Litoral
+# Certificado — Comprar Com Seguranca
 Modelo: Praia Digital Academy
-Curso: Comprar com Segurança no Litoral
-Carga horária: 4 horas
+Curso: Comprar Com Seguranca
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

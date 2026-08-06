@@ -1,21 +1,21 @@
-# Sequência de E-mails — Planejamento Estratégico para Corretores
+# Sequência de E-mails — Planejamento Estrategico Para Corretores
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: Planejamento Estratégico para Corretores no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Planejamento Estrategico Para Corretores (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: corretor planejou e fechou venda
+Assunto: Case prático de Planejamento Estrategico Para Corretores
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Planejamento estratégico compensa?"
+Assunto: "Planejamento Estrategico Para Corretores é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno direcionou mais vendas em 32%
+Assunto: Aluno obteve resultado com Planejamento Estrategico Para Corretores
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

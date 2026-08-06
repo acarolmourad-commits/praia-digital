@@ -1,8 +1,7 @@
-# Checklist — Gestão de Locação no Litoral
-- [ ] Diagnóstico de gestão
-- [ ] Preparação feita
-- [ ] Check-in criado
-- [ ] Manutenção planejada
-- [ ] Hóspedes atendidos
-- [ ] Métricas revisadas
-- [ ] Crescimento planejado
+# Checklist — Gestao De Locacao No Litoral
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

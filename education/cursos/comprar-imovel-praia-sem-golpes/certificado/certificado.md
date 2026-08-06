@@ -1,7 +1,6 @@
-# Certificado — Comprar Imóvel na Praia sem Golpes
+# Certificado — Comprar Imovel Praia Sem Golpes
 Modelo: Praia Digital Academy
-Curso: Comprar Imóvel na Praia sem Golpes
-Carga horária: 4 horas
+Curso: Comprar Imovel Praia Sem Golpes
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

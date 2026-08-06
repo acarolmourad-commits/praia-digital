@@ -1,12 +1,12 @@
-# Curso: Comprar com Segurança no Litoral
+# Curso: Comprar Com Seguranca
 ## Nome Comercial
-**Comprar com Segurança no Litoral: Método Prático para Adquirir Imóveis sem Golpes, Riscos e Dores de Cabeça**
+**Comprar Com Seguranca: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Do primeiro contato ao contrato: aprenda a comprar imóveis no litoral com segurança e método.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 15 dias, você será capaz de comprar imóveis no litoral com segurança, evitando golpes, riscos e dores de cabeça.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
 - Compradores iniciantes e intermediários
@@ -22,144 +22,134 @@ Iniciante → Intermediário
 
 ## Tempo Estimado
 4 horas de aulas (20 aulas de 10 a 16 min)
-Total: 4 horas
+Total: 4 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 197
-À vista: R$ 167
-Parcelado: 12x de R$ 13,92
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist de compra segura
-- Planilha de controle
-- Modelos de contrato
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Compre imóveis no litoral com segurança e método"**
+**"Comprar Com Seguranca"**
 
 ## Big Idea
-Comprar com segurança no litoral exige método, verificação de documentação, análise de mercado e follow-up estruturado.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
-- **Curso completo:** R$ 197
+- **Curso completo:** R$ 297
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
 ## Avatar
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
-**Renda:** R$ 3k a R$ 15k/mês
-**Objetivo:** comprar com segurança
-**Dificuldades:** golpes, documentação, negociação
-**Desejos:** tranquilidade, economia, segurança
+**Renda:** R$ 3k a R$ 20k/mês
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Golpes
-- Documentação fraudulenta
-- Negociação confusa
-- Custos ocultos
-- Insegurança
+- Falta de método
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Tranquilidade
-- Economia
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
 - Segurança
-- Crescimento
-- Autoridade
-
-## Objeções
-- "É muito arriscado"
-- "Não entendo de documentação"
-- "Vão me enganar"
-- "Não compensa"
-- "Vou errar"
-
-## Transformação
-- Compra segura
-- Processo claro
-- Economia
-- Tranquilidade
 - Autoridade local
 
+## Objeções
+- "Muito caro"
+- "Não funciona"
+- "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
+
+## Transformação
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
+
 ## Programa Completo
-### Módulo 1 — Fundamentos da Compra Segura
-Aula 1.1 — O que é compra segura
-Aula 1.2 — Perfil do comprador
-Aula 1.3 — Método e metas
-Exercício: diagnóstico de compra
+### Módulo 1 — Fundamentos
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Verificação e Documentação
-Aula 2.1 — Como verificar imóvel
-Aula 2.2 — Documentos essenciais
-Aula 2.3 — Fraudes comuns
-Exercício: verificação aplicada
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Negociação e Fechamento
-Aula 3.1 — Como negociar
-Aula 3.2 — Proposta e contrato
-Aula 3.3 — Fechamento seguro
-Exercício: negociação aplicada
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Gestão e Crescimento
-Aula 4.1 — Acompanhamento pós-compra
-Aula 4.2 — Ajustes e melhorias
-Aula 4.3 — Crescimento e novo imóvel
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
 Exercício: plano de crescimento
 
 ## Carga Horária
-4 horas
+4 horas de aulas (20 aulas de 10 a 16 min)
+Total: 4 horas
 
 ## Material Complementar
-- Checklist de compra segura
-- Planilha de controle
-- Modelos de contrato
 - PDFs por módulo
+- Templates
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de compra
-- Checklist de verificação
-- Checklist de fechamento
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de controle
-- Planilha de custos
-- Planilha de negociação
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de proposta
-- Modelo de contrato
-- Modelo de checklist
+- Modelo aplicável
 
 ## Scripts
-- Script de atendimento
-- Script de negociação
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para gerar análises e contratos.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: diagnóstico de compra
-- Exercício 2: verificação aplicada
-- Exercício 3: negociação aplicada
-- Exercício 4: plano de crescimento
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: compra segura aplicada
+Prova prática: aplicação do método
 
 ## FAQ
-1. Preciso de experiência? Não.
-2. Em quanto tempo vejo resultado? De 15 a 30 dias.
-3. Vale a pena? Sim.
-4. E se errar? Ajuste com método.
-5. Tem suporte? Sim.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
 [vendas.html]
@@ -192,17 +182,15 @@ Prova prática: compra segura aplicada
 [marketing/google-ads.md]
 
 ## CTA
-"Compre imóveis no litoral com segurança agora."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Mentoria individual: R$ 1.500
-- Acompanhamento: R$ 2.800
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
 - Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Análise de Rentabilidade
-- Curso de Avaliação de Imóveis
-- Curso de Documentação Imobiliária
+- Outros cursos da Praia Digital Academy

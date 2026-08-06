@@ -1,8 +1,7 @@
-# Checklist — Visita Técnica para Corretores
-- [ ] Diagnóstico de visita técnica
-- [ ] Planejamento criado
-- [ ] Avaliação feita
-- [ ] Apresentação criada
-- [ ] Fechamento confirmado
-- [ ] Follow-up feito
-- [ ] Crescimento planejado
+# Checklist — Visita Tecnica Para Corretores
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

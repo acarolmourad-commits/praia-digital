@@ -1,5 +1,5 @@
-# Sumário do Curso: Análise de Mercado Imobiliário no Litoral
-- Módulo 1: Fundamentos da Análise no Litoral
-- Módulo 2: Dados e Fontes
-- Módulo 3: Tendências e Comparativos
-- Módulo 4: Decisão e Aplicação
+# Sumário do Curso: Analise De Mercado Imobiliario Litoral
+- Módulo 1: Fundamentos
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

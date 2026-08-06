@@ -1,7 +1,6 @@
-# Certificado — Investindo em Imóveis no Litoral
+# Certificado — Investindo Imoveis Litoral
 Modelo: Praia Digital Academy
-Curso: Investindo em Imóveis no Litoral
-Carga horária: 10 horas
+Curso: Investindo Imoveis Litoral
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

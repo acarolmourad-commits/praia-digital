@@ -1,11 +1,10 @@
-# Posts Instagram — Como Aumentar em 30% a Rentabilidade
-1. Post: dica prática
-2. Reels: passo a passo
-3. Carrossel: checklist
-4. Post: erro comum
-5. Reels: case rápido
-6. Carrossel: ferramenta
-7. Post: resultado
-8. Reels: ajuste simples
-9. Carrossel: métrica
-10. Post: comece hoje
+1. Post: dica sobre aumentar rentabilidade
+2. Post: dica sobre aumentar rentabilidade
+3. Post: dica sobre aumentar rentabilidade
+4. Post: dica sobre aumentar rentabilidade
+5. Post: dica sobre aumentar rentabilidade
+6. Post: dica sobre aumentar rentabilidade
+7. Post: dica sobre aumentar rentabilidade
+8. Post: dica sobre aumentar rentabilidade
+9. Post: dica sobre aumentar rentabilidade
+10. Post: dica sobre aumentar rentabilidade

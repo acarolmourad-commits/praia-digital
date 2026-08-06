@@ -1,9 +1,5 @@
-# Planilha — Captação e Exclusividade para Corretores
+# Planilha — Captacao Exclusividade
 - [ ] Data
-- [ ] Proprietário
-- [ ] Imóvel
-- [ ] Cidade
-- [ ] Preço
-- [ ] Status
 - [ ] Ação
 - [ ] Resultado
+- [ ] Observação

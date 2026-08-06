@@ -1,8 +1,7 @@
-# Checklist — IA para Corretores
-- [ ] Diagnóstico de IA
-- [ ] Prompts criados
-- [ ] Conteúdo planejado
-- [ ] Automação criada
-- [ ] Follow-up estruturado
-- [ ] Métricas definidas
-- [ ] Crescimento planejado
+# Checklist — Ia Para Corretores
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

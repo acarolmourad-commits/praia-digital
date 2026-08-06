@@ -1,11 +1,10 @@
-# Posts Instagram — Comprar com Segurança no Litoral
-1. Post: dica de compra segura
-2. Reels: verificação em 30s
-3. Carrossel: checklist de compra
-4. Post: documento que protege
-5. Reels: case de segurança
-6. Carrossel: método simples
-7. Post: compra sem erro
-8. Reels: erro comum
-9. Carrossel: métricas básicas
-10. Post: comece hoje
+1. Post: dica sobre comprar com seguranca
+2. Post: dica sobre comprar com seguranca
+3. Post: dica sobre comprar com seguranca
+4. Post: dica sobre comprar com seguranca
+5. Post: dica sobre comprar com seguranca
+6. Post: dica sobre comprar com seguranca
+7. Post: dica sobre comprar com seguranca
+8. Post: dica sobre comprar com seguranca
+9. Post: dica sobre comprar com seguranca
+10. Post: dica sobre comprar com seguranca

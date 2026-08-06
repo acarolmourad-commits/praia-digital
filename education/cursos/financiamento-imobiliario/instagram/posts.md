@@ -1,21 +1,20 @@
-# Posts Instagram — Financiamento Imobiliário
-1. Post: 3 erros no financiamento
-2. Reels: financiamento em 30s
-3. Carrossel: checklist de documentos
-4. Post: entrada que protege
-5. Reels: dica de simulação
-6. Carrossel: tipos de financiamento
-7. Post: aprovação sem medo
-8. Reels: case de aprovação
-9. Carrossel: rentabilidade no litoral
-10. Reels: ajuste simples
-11. Post: parcela saudável
-12. Carrossel: 5 passos para financiar
-13. Post: mito vs verdade
-14. Reels: dica de contrato
-15. Carrossel: dados que importam
-16. Post: comece hoje
-17. Reels: case de financiamento
-18. Carrossel: revisão mensal
-19. Post: método completo
-20. Reels: financiamento em 30s
+1. Post: dica premium sobre financiamento-imobiliario
+2. Reels: resultado em 30s
+3. Carrossel: checklist rápido
+4. Post: caso real
+5. Reels: ferramenta prática
+6. Post: dica premium sobre financiamento-imobiliario
+7. Reels: resultado em 30s
+8. Carrossel: checklist rápido
+9. Post: caso real
+10. Reels: ferramenta prática
+11. Post: dica premium sobre financiamento-imobiliario
+12. Reels: resultado em 30s
+13. Carrossel: checklist rápido
+14. Post: caso real
+15. Reels: ferramenta prática
+16. Post: dica premium sobre financiamento-imobiliario
+17. Reels: resultado em 30s
+18. Carrossel: checklist rápido
+19. Post: caso real
+20. Reels: ferramenta prática

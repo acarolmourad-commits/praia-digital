@@ -1,10 +1,5 @@
-# Planilha — Apresentação de Imóveis para Corretores
+# Planilha — Apresentacao Imoveis Para Corretores
 - [ ] Data
-- [ ] Imóvel
-- [ ] Cidade
-- [ ] Visitas
-- [ ] Apresentação
-- [ ] Satisfação
-- [ ] Venda
-- [ ] Receita
-- [ ] Status
+- [ ] Ação
+- [ ] Resultado
+- [ ] Observação

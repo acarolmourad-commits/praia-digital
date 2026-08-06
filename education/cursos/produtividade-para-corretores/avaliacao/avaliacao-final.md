@@ -1,9 +1,9 @@
-# Avaliação Final — Produtividade para Corretores
+# Avaliação Final — Produtividade Para Corretores
 ## Quiz
-- 20 perguntas sobre produtividade, rotina, foco e fechamento.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Produtividade aplicada a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

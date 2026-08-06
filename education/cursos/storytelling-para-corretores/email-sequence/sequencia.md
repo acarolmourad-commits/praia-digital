@@ -1,21 +1,21 @@
-# Sequência de E-mails — Storytelling para Corretores
+# Sequência de E-mails — Storytelling Para Corretores
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: Storytelling para Corretores no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Storytelling Para Corretores (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: corretor contou história e fechou venda
+Assunto: Case prático de Storytelling Para Corretores
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Storytelling compensa?"
+Assunto: "Storytelling Para Corretores é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno engajou mais clientes em 20%
+Assunto: Aluno obteve resultado com Storytelling Para Corretores
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

@@ -1,11 +1,11 @@
-# FAQ — Marketing Imobiliário para Corretores
-1. Preciso de experiência? Não.
-2. Em quanto tempo vejo resultado? De 15 a 30 dias.
-3. Vale a pena? Sim.
-4. Qual canal priorizar? Instagram e Google.
-5. Como medir sucesso? Leads e vendas.
-6. Preciso de orçamento alto? Não.
-7. E se o conteúdo não engajar? Ajuste com dados.
-8. Como medir ROI? Leads e vendas.
-9. Follow-up funciona? Sim.
-10. Como escalar? Processos e automação.
+# FAQ — Marketing Imobiliario
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
+6. Qual o investimento? R$ 297.
+7. Tem suporte? Sim.
+8. Como acessar? Plataforma online.
+9. Tem certificado? Sim.
+10. Posso parcelar? Sim.

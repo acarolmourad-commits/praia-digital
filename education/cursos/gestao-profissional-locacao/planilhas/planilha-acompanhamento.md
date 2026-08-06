@@ -1,10 +1,5 @@
-# Planilha — Gestão Profissional da Locação
+# Planilha — Gestao Profissional Locacao
 - [ ] Data
-- [ ] Receita
-- [ ] Aluguel
-- [ ] Condomínio
-- [ ] IPTU
-- [ ] Manutenção
-- [ ] Outros custos
-- [ ] Lucro
-- [ ] Status
+- [ ] Ação
+- [ ] Resultado
+- [ ] Observação

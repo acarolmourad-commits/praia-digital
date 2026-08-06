@@ -1,7 +1,6 @@
-# Certificado — Gestão do Tempo para Corretores
+# Certificado — Gestao Do Tempo Para Corretores
 Modelo: Praia Digital Academy
-Curso: Gestão do Tempo para Corretores
-Carga horária: 4 horas
+Curso: Gestao Do Tempo Para Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

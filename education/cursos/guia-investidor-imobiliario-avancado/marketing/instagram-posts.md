@@ -1,11 +1,10 @@
-# Posts Instagram — Guia do Investidor Imobiliário Avançado
-1. Post: dica de investidor avançado
-2. Reels: carteira em 30s
-3. Carrossel: checklist de investidor
-4. Post: alavancagem que protege
-5. Reels: case de ROI
-6. Carrossel: método simples
-7. Post: risco controlado
-8. Reels: erro comum
-9. Carrossel: métricas básicas
-10. Post: comece hoje
+1. Post: dica sobre guia investidor imobiliario avancado
+2. Post: dica sobre guia investidor imobiliario avancado
+3. Post: dica sobre guia investidor imobiliario avancado
+4. Post: dica sobre guia investidor imobiliario avancado
+5. Post: dica sobre guia investidor imobiliario avancado
+6. Post: dica sobre guia investidor imobiliario avancado
+7. Post: dica sobre guia investidor imobiliario avancado
+8. Post: dica sobre guia investidor imobiliario avancado
+9. Post: dica sobre guia investidor imobiliario avancado
+10. Post: dica sobre guia investidor imobiliario avancado

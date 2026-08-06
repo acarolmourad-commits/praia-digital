@@ -1,9 +1,9 @@
-# Avaliação Final — Rotinas de Vendas para Corretores
+# Avaliação Final — Rotinas De Vendas Para Corretores
 ## Quiz
-- 20 perguntas sobre rotina, organização, leads e conversão.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Rotina aplicada a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

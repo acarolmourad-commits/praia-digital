@@ -1,11 +1,10 @@
-# Posts Instagram — Apresentação de Imóveis para Corretores
-1. Post: dica de apresentação
-2. Reels: roteiro em 30s
-3. Carrossel: checklist de apresentação
-4. Post: história que encanta
-5. Reels: case de venda
-6. Carrossel: método simples
-7. Post: destaque sem erro
-8. Reels: erro comum
-9. Carrossel: métricas básicas
-10. Post: comece hoje
+1. Post: dica sobre apresentacao imoveis para corretores
+2. Post: dica sobre apresentacao imoveis para corretores
+3. Post: dica sobre apresentacao imoveis para corretores
+4. Post: dica sobre apresentacao imoveis para corretores
+5. Post: dica sobre apresentacao imoveis para corretores
+6. Post: dica sobre apresentacao imoveis para corretores
+7. Post: dica sobre apresentacao imoveis para corretores
+8. Post: dica sobre apresentacao imoveis para corretores
+9. Post: dica sobre apresentacao imoveis para corretores
+10. Post: dica sobre apresentacao imoveis para corretores

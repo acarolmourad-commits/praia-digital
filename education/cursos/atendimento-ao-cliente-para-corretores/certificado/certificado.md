@@ -1,7 +1,6 @@
-# Certificado — Atendimento ao Cliente para Corretores
+# Certificado — Atendimento Ao Cliente Para Corretores
 Modelo: Praia Digital Academy
-Curso: Atendimento ao Cliente para Corretores
-Carga horária: 4 horas
+Curso: Atendimento Ao Cliente Para Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

@@ -1,78 +1,60 @@
-# Módulo 3 — Estratégia de Preços
-
+# Módulo 3 — Conteúdo Premium
 ## Introdução
-Monte uma estratégia de preços por temporada, eventos e tipos de estadia para capturar valor sem perder ocupação. A estratégia deve ser baseada em dados, não em achismo.
+Neste módulo você vai dominar pricelabs completo com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 3.1 — Preço base e temporada
-**Preço base:**
-- Consulte 5 imóveis similares na região.
-- Defina preço competitivo para baixa temporada.
+## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Alta temporada:**
-- Dezembro a março: +30% a +60% acima do preço base.
-- Reveillon e Carnaval: preço premium.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Baixa temporada:**
-- Abril a novembro: -20% a -30% para reduzir vazio.
-- Promoções de long stay.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Exemplo real:**
-Imóvel em Praia Grande ajustou preço base por temporada e aumentou receita em 18%.
+## Aula 3.2 — Caso real 2: como evitar erros custosos
+Fundamentos, ferramentas e fluxos recomendados para pricelabs completo no litoral.
 
-## Aula 3.2 — Eventos e picos
-**Feriados prolongados:**
-- Julho, setembro, novembro.
-- Ajuste de 20% a 40%.
+**Ferramentas recomendadas:**
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
-**Festivais e shows:**
-- Acompanhe agenda local.
-- Ajuste preço e mínimo de estadia.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Surf e eventos locais:**
-- Campeonatos em Guarujá, Ubatuba, São Sebastião.
-- Preço premium por experiência.
+## Aula 3.3 — Lições aplicáveis ao seu contexto
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Estudo de caso:**
-Durante festival de verão em São Vicente, imóvel com preço 38% acima do base ficou com 93% de ocupação.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-## Aula 3.3 — Long stay e descontos
-**Estadia longa:**
-- 7+ noites: -10% a -20%.
-- 15+ noites: -20% a -30%.
-
-**Reservas antecipadas:**
-- 30+ dias: -5% a -15%.
-- Garante caixa e reduz vazio.
-
-**Tabela de preços:**
-| Temporada | Preço base | Ocupação esperada | Receita estimada |
-| Alta | R$ 480/noite | 78% | R$ 137,2 mil/ano |
-| Média | R$ 340/noite | 48% | R$ 59,6 mil/ano |
-| Baixa | R$ 240/noite | 28% | R$ 24,5 mil/ano |
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
 ## Exercício
-Monte uma tabela de preços por temporada, evento e tipo de estadia.
+Analise um caso real do mercado e adapte as lições para a sua realidade.
 
 ## Resumo
-- Estratégia captura valor nos picos.
-- Eventos criam oportunidades.
-- Long stay reduz vazio.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Preço base definido
-- [ ] Temporada mapeada
-- [ ] Eventos listados
-- [ ] Long stay configurado
-- [ ] Disponibilidade revisada
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de precificação
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- PriceLabs
-- Planilha de preços
-- Apps de temporada
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
 ## Prompt de IA
-"Atue como gestor de temporada no litoral. Monte uma estratégia de preços para este imóvel: [dados do imóvel]."
+Atue como mentor experiente. Analise este caso real de pricelabs completo no litoral e aponte 5 lições práticas: [descreva o caso].

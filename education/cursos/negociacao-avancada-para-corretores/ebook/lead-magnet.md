@@ -1,5 +1,5 @@
-# E-book Derivado — Negociação Avançada para Corretores
-Título: Guia Rápido: Negociação Avançada para Corretores no Litoral
+# E-book Derivado — Negociacao Avancada Para Corretores
+Título: Guia Rápido sobre Negociacao Avancada Para Corretores
 Formato: PDF 20 a 30 páginas
 Preço: gratuito ou R$ 19,90
-Conteúdo: checklist, planilha, dicas rápidas, modelo de negociação.
+Conteúdo: resumo, templates, dicas rápidas.

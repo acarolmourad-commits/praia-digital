@@ -1,21 +1,21 @@
-# Sequência de E-mails — Comunicação Interpessoal para Corretores
+# Sequência de E-mails — Comunicacao Interpessoal Para Corretores
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: Comunicação Interpessoal para Corretores no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Comunicacao Interpessoal Para Corretores (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: corretor se comunicou melhor e fechou venda
+Assunto: Case prático de Comunicacao Interpessoal Para Corretores
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Comunicação interpessoal compensa?"
+Assunto: "Comunicacao Interpessoal Para Corretores é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno aumentou as conversas em 33%
+Assunto: Aluno obteve resultado com Comunicacao Interpessoal Para Corretores
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

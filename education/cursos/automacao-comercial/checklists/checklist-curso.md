@@ -1,9 +1,7 @@
-# Checklist — Automação Comercial para Corretores
-- [ ] Diagnóstico de automação
-- [ ] Ferramentas escolhidas
-- [ ] Funil desenhado
-- [ ] Follow-up criado
-- [ ] Integração testada
-- [ ] Conteúdo planejado
-- [ ] Métricas revisadas
-- [ ] Escala planejada
+# Checklist — Automacao Comercial
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

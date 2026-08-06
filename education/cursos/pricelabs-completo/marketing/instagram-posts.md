@@ -1,11 +1,10 @@
-# Posts Instagram — PriceLabs Completo para Temporada no Litoral
-1. Post: dica de preço
-2. Reels: PriceLabs em 30s
-3. Carrossel: checklist de setup
-4. Post: regra que protege margem
-5. Reels: case de receita
-6. Carrossel: atendimento rápido
-7. Post: avaliação alta
-8. Reels: limpeza simples
-9. Carrossel: automação básica
-10. Post: comece hoje
+1. Post: dica sobre pricelabs completo
+2. Post: dica sobre pricelabs completo
+3. Post: dica sobre pricelabs completo
+4. Post: dica sobre pricelabs completo
+5. Post: dica sobre pricelabs completo
+6. Post: dica sobre pricelabs completo
+7. Post: dica sobre pricelabs completo
+8. Post: dica sobre pricelabs completo
+9. Post: dica sobre pricelabs completo
+10. Post: dica sobre pricelabs completo

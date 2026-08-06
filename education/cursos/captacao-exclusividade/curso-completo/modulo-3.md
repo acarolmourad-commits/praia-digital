@@ -1,77 +1,60 @@
-# Módulo 3 — Proposta de Exclusividade
-
+# Módulo 3 — Conteúdo Premium
 ## Introdução
-Aprenda a apresentar proposta de exclusividade, demonstrar valor para o proprietário e fechar contratos recorrentes. A exclusividade é a base para comissões previsíveis e vendas mais rápidas.
+Neste módulo você vai dominar captacao exclusividade com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 3.1 — Como apresentar proposta
-**Estrutura da proposta:**
-- Apresentação do corretor e resultados.
-- Análise do imóvel e mercado local.
-- Plano de marketing.
-- Investimento em divulgação.
-- Prazo de venda.
-- Comissão e condições.
+## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Dicas práticas:**
-- Use dados, não promessas.
-- Mostre cases de sucesso locais.
-- Seja transparente sobre custos e prazos.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Corretor apresentou proposta com dados de 5 imóveis similares e fechou exclusividade em 20 minutos.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 3.2 — Valor para o proprietário
-**Benefícios da exclusividade:**
-- Preço justo baseado em dados.
-- Marketing profissional.
-- Atendimento personalizado.
-- Relatório semanal de desempenho.
-- Venda mais rápida.
+## Aula 3.2 — Caso real 2: como evitar erros custosos
+Fundamentos, ferramentas e fluxos recomendados para captacao exclusividade no litoral.
 
-**Prova social:**
-- Cases de sucesso locais.
-- Avaliações de clientes.
-- Números de vendas.
+**Ferramentas recomendadas:**
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
-**Estudo de caso:**
-Corretor apresentou case de venda similar em 45 dias e fechou exclusividade com desconto de 5% na comissão.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-## Aula 3.3 — Fechamento do contrato
-**Técnicas de fechamento:**
-- Fechamento por benefício: mostre o resultado final.
-- Fechamento por urgência: limite de vagas de divulgação.
-- Fechamento por opção limitada: exclusividade por prazo definido.
+## Aula 3.3 — Lições aplicáveis ao seu contexto
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Contrato de exclusividade:**
-- Prazo: 90 a 120 dias.
-- Comissão: 5% a 6%.
-- Condições de rescisão.
-- Direitos e deveres.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Exercício:**
-Faça uma simulação de proposta de exclusividade.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Analise um caso real do mercado e adapte as lições para a sua realidade.
 
 ## Resumo
-- Proposta clara aumenta confiança.
-- Valor percebido fecha contratos.
-- Exclusividade gera comissões recorrentes.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Proposta preparada
-- [ ] Dados apresentados
-- [ ] Case local incluído
-- [ ] Contrato revisado
-- [ ] Fechamento executado
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de proposta
-- Modelo de contrato
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- CRM de vendas
-- Planilha de leads
-- Portal de imóveis
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
 ## Prompt de IA
-"Atue como especialista em propostas imobiliárias. Monte uma proposta de exclusividade para este imóvel: [dados]."
+Atue como mentor experiente. Analise este caso real de captacao exclusividade no litoral e aponte 5 lições práticas: [descreva o caso].

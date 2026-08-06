@@ -1,11 +1,10 @@
-# Posts Instagram — Imóveis para Airbnb
-1. Post: dica de Airbnb
-2. Reels: anúncio em 30s
-3. Carrossel: checklist de Airbnb
-4. Post: precificação que converte
-5. Reels: case de renda
-6. Carrossel: método simples
-7. Post: ocupação sem erro
-8. Reels: erro comum
-9. Carrossel: métricas básicas
-10. Post: comece hoje
+1. Post: dica sobre imoveis para airbnb
+2. Post: dica sobre imoveis para airbnb
+3. Post: dica sobre imoveis para airbnb
+4. Post: dica sobre imoveis para airbnb
+5. Post: dica sobre imoveis para airbnb
+6. Post: dica sobre imoveis para airbnb
+7. Post: dica sobre imoveis para airbnb
+8. Post: dica sobre imoveis para airbnb
+9. Post: dica sobre imoveis para airbnb
+10. Post: dica sobre imoveis para airbnb

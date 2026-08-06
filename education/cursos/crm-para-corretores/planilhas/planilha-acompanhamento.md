@@ -1,10 +1,5 @@
-# Planilha — CRM para Corretores
+# Planilha — Crm Para Corretores
 - [ ] Data
-- [ ] Lead
-- [ ] Fonte
-- [ ] Status
-- [ ] Visitas
-- [ ] Proposta
-- [ ] Venda
-- [ ] Receita
+- [ ] Ação
+- [ ] Resultado
 - [ ] Observação

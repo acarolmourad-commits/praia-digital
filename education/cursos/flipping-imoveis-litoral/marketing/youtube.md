@@ -1,4 +1,4 @@
-# Roteiro YouTube — Flipping de Imóveis no Litoral
+# Roteiro YouTube — Flipping Imoveis Litoral
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado

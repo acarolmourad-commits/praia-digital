@@ -1,7 +1,7 @@
-# Roteiro de Webinar — Treinamento de Equipes para Corretores
+# Roteiro de Webinar — Treinamento De Equipes Para Corretores
 1. Abertura: dor do público
-2. Case: imobiliária treinou equipe e aumentou vendas
-3. Método: 4 passos
+2. Case: aplicação prática
+3. Método: passo a passo
 4. Prova social
 5. Oferta e bônus
 6. Perguntas frequentes

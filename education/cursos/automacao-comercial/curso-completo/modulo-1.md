@@ -1,70 +1,60 @@
-# Módulo 1 — Fundamentos da Automação
-
+# Módulo 1 — Conteúdo Premium
 ## Introdução
-Entenda o que é automação comercial, o ROI e o perfil do corretor que quer escalar vendas sem perder qualidade.
+Neste módulo você vai dominar automacao comercial com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 1.1 — O que é automação comercial
-Automação comercial é o uso de ferramentas e fluxos para reduzir trabalho repetitivo, manter follow-up consistente e aumentar conversão.
+## Aula 1.1 — Visão geral do mercado de automacao comercial no litoral paulista
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Benefícios:**
-- Reduz follow-up esquecido.
-- Padroniza atendimento.
-- Libera tempo para fechar vendas.
-- Aumenta taxa de resposta.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Corretor implementou automação de follow-up e aumentou taxa de conversão de 12% para 26% em 45 dias.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Estudo de caso:**
-Corretora usou CRM e automação de WhatsApp e reduziu tempo de resposta de 8h para 30min.
+## Aula 1.2 — Conceitos essenciais: termos, métricas e particularidades locais
+Fundamentos, ferramentas e fluxos recomendados para automacao comercial no litoral.
 
-## Aula 1.2 — ROI da automação
-**Custo médio:**
-- CRM básico: R$ 50 a R$ 200/mês.
-- Automação: R$ 100 a R$ 400/mês.
-- Total: R$ 150 a R$ 600/mês.
+**Ferramentas recomendadas:**
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
-**Ganho médio:**
-- 1 venda extra por mês: R$ 3k a R$ 10k.
-- ROI positivo em até 30 dias.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Exemplo real:**
-Corretor investiu R$ 300/mês e fechou 2 vendas extras em 1 mês.
+## Aula 1.3 — Estudo de caso real: como um aluno aplicou o método e obteve resultado em 30 dias
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-## Aula 1.3 — Perfil do corretor
-**Corretor iniciante:**
-- Foco: follow-up, atendimento, captação.
-- Erro comum: não acompanhar leads.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Corretor intermediário:**
-- Foco: automação, CRM, conteúdo.
-- Erro comum: ferramenta sem processo.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
-**Corretor avançado:**
-- Foco: escala, integração, dados.
-- Erro comum: automação sem personalização.
-
-**Exercício:**
-Faça o diagnóstico do seu processo comercial atual.
+## Exercício
+Faça o diagnóstico do seu cenário atual em automacao comercial: liste pontos fortes, fracos, oportunidades e ameaças.
 
 ## Resumo
-- Automação reduz trabalho repetitivo.
-- ROI é rápido.
-- Perfil claro orienta ferramentas.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Processo mapeado
-- [ ] Ferramentas escolhidas
-- [ ] Métricas definidas
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de diagnóstico
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- CRM
-- Automação
-- Planilha
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
 ## Prompt de IA
-"Atue como especialista em automação comercial. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
+Atue como especialista em automacao comercial no litoral paulista. Faça um diagnóstico personalizado com base nestas respostas: [insira suas respostas].

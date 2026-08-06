@@ -1,4 +1,4 @@
-# Google Ads — Marketing Imobiliário para Corretores
-Palavras: marketing imobiliário, corretores no litoral, imóveis no litoral, leads imobiliários
+# Google Ads — marketing-imobiliario
+Palavras: marketing imobiliario, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

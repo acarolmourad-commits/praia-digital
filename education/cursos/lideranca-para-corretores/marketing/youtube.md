@@ -1,4 +1,4 @@
-# Roteiro YouTube — Liderança para Corretores
+# Roteiro YouTube — Lideranca Para Corretores
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado

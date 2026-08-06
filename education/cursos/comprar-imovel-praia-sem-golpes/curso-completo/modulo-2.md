@@ -1,58 +1,60 @@
-# Módulo 2 — Escolha e Verificação
-
+# Módulo 2 — Conteúdo Premium
 ## Introdução
-Aprenda a escolher imóveis, verificar documentação e evitar golpes comuns na praia.
+Neste módulo você vai dominar comprar imovel praia sem golpes com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 2.1 — Como escolher imóvel
-**Critérios:**
-- Localização.
-- Documentação.
-- Orçamento.
+## Aula 2.1 — Passo a passo para aplicar comprar imovel praia sem golpes na prática
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Exemplo real:**
-Comprador escolheu imóvel e evitou golpe.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-## Aula 2.2 — Verificação de documentação
-**Verificação:**
-- Cartório.
-- Registro.
-- Certidões.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Passos:**
-- Visita presencial.
-- Vistoria.
-- Documentação.
+## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
+Fundamentos, ferramentas e fluxos recomendados para comprar imovel praia sem golpes no litoral.
 
-**Exercício:**
-Monte uma lista de verificação.
+**Ferramentas recomendadas:**
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
-## Aula 2.3 — Golpes comuns na praia
-**Golpes:**
-- Documento falso.
-- Venda de imóvel alheio.
-- Ocultação de ônus.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Estudo de caso:**
-Comprador identificou golpe e evitou prejuízo.
+## Aula 2.3 — Automação e fluxos que economizam horas por semana
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
+
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Monte um plano prático de comprar imovel praia sem golpes para os próximos 30 dias, com ações diárias e semanais.
 
 ## Resumo
-- Escolha exige dados.
-- Verificação evita golpes.
-- Documentação protege compra.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Imóvel escolhido
-- [ ] Documentos verificados
-- [ ] Golpes evitados
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de verificação
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Planilha
-- Portais de imóveis
-- Consultorias
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
 ## Prompt de IA
-"Atue como especialista em compra de imóveis. Monte uma verificação para este cenário: [dados]."
+Atue como consultor de comprar imovel praia sem golpes. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].

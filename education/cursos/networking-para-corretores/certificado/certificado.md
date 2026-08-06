@@ -1,7 +1,6 @@
-# Certificado — Networking para Corretores
+# Certificado — Networking Para Corretores
 Modelo: Praia Digital Academy
-Curso: Networking para Corretores
-Carga horária: 4 horas
+Curso: Networking Para Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

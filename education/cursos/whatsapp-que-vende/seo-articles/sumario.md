@@ -1,11 +1,11 @@
-# Artigos SEO — WhatsApp que Vende
-1. WhatsApp para corretores no litoral em 2026: guia completo
-2. Como usar WhatsApp no mercado imobiliário
-3. Follow-up no WhatsApp para corretores
-4. Templates de WhatsApp para imóveis
-5. Automação no WhatsApp para imobiliárias
-6. Vendas por WhatsApp no litoral
-7. Atendimento por WhatsApp no litoral
-8. ROI de WhatsApp no litoral
-9. Erros no WhatsApp no litoral
-10. Como fechar vendas no WhatsApp
+# Artigos SEO — Whatsapp Que Vende
+1. Whatsapp Que Vende em 2026
+2. Como aplicar whatsapp que vende no litoral
+3. Resultados reais de whatsapp que vende
+4. Método passo a passo de whatsapp que vende
+5. Erros comuns em whatsapp que vende
+6. Ferramentas para whatsapp que vende
+7. Cases de whatsapp que vende no litoral
+8. Como medir resultado em whatsapp que vende
+9. Como começar em whatsapp que vende
+10. FAQ sobre whatsapp que vende

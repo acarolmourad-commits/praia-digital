@@ -1,83 +1,60 @@
-# Módulo 3 — Precificação e Disponibilidade
-
+# Módulo 3 — Conteúdo Premium
 ## Introdução
-Defina preços competitivos, controle a disponibilidade e capture valor em alta temporada e eventos. A precificação errada pode significar vazio ou receita perdida.
+Neste módulo você vai dominar airbnb do zero com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 3.1 — Precificação dinâmica
-**Preço base:**
-- Consulte 5 imóveis similares na região.
-- Defina preço base competitivo para baixa temporada.
+## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Ajuste por temporada:**
-- Alta temporada: +30% a +60% acima do preço base.
-- Feriados prolongados: +20% a +40%.
-- Baixa temporada: -20% a -30%.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Última hora e antecipação:**
-- Última hora: descontos de 10% a 20% para reduzir vazio.
-- Antecipação: descontos de 5% a 15% para reservas com 30+ dias de antecedência.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Exemplo real:**
-Imóvel em Santos ajustou preço automaticamente por temporada e aumentou receita em 22%. Ele usou preço base de R$ 300/noite, alta temporada a R$ 480/noite e baixa temporada a R$ 220/noite.
+## Aula 3.2 — Caso real 2: como evitar erros custosos
+Fundamentos, ferramentas e fluxos recomendados para airbnb do zero no litoral.
 
-## Aula 3.2 — Temporada, eventos e picos
-**Alta temporada:**
-- Dezembro a março: preço cheio, ocupação alta.
-- Reveillon e Carnaval: preço premium, mínimo de 3 a 5 noites.
+**Ferramentas recomendadas:**
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
-**Feriados prolongados:**
-- Julho: férias escolares, preço intermediário.
-- Setembro e novembro: feriados regionais, picos pontuais.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Festivais e shows:**
-- Acompanhe agenda de eventos locais.
-- Ajuste preço e mínimo de estadia.
+## Aula 3.3 — Lições aplicáveis ao seu contexto
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Surf e eventos locais:**
-- Campeonatos de surf em Guarujá, Ubatuba e São Sebastião.
-- Eventos esportivos e culturais.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Estudo de caso:**
-Durante festival de verão em São Vicente, imóvel com preço 40% acima do base ficou com 95% de ocupação. O hóspede pagou mais pela proximidade e experiência do evento.
-
-## Aula 3.3 — Long stay e descontos
-**Estadia longa:**
-- Descontos de 10% a 20% para estadias de 7+ noites.
-- Descontos de 20% a 30% para estadias de 15+ noites.
-
-**Reservas antecipadas:**
-- Descontos de 5% a 15% para reservas com 30+ dias de antecedência.
-- Ajuda a garantir caixa e reduz vazio.
-
-**Tabela de preços:**
-| Temporada | Preço base | Ocupação esperada | Receita estimada |
-| Alta | R$ 500/noite | 80% | R$ 146 mil/ano |
-| Média | R$ 350/noite | 50% | R$ 63,8 mil/ano |
-| Baixa | R$ 250/noite | 30% | R$ 27,4 mil/ano |
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
 ## Exercício
-Monte uma tabela de preços por temporada, evento e tipo de estadia para o seu imóvel.
+Analise um caso real do mercado e adapte as lições para a sua realidade.
 
 ## Resumo
-- Preço define ocupação e receita.
-- Eventos criam picos.
-- Long stay reduz vazio.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Preço base definido
-- [ ] Temporada mapeada
-- [ ] Eventos listados
-- [ ] Long stay configurado
-- [ ] Disponibilidade atualizada
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de precificação
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Planilha de preços
-- Apps de temporada
-- PriceLabs
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
 ## Prompt de IA
-"Atue como gestor de temporada no litoral. Monte uma estratégia de preços para este imóvel: [dados do imóvel]."
+Atue como mentor experiente. Analise este caso real de airbnb do zero no litoral e aponte 5 lições práticas: [descreva o caso].

@@ -1,7 +1,6 @@
-# Certificado — Liderança para Corretores
+# Certificado — Lideranca Para Corretores
 Modelo: Praia Digital Academy
-Curso: Liderança para Corretores
-Carga horária: 4 horas
+Curso: Lideranca Para Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

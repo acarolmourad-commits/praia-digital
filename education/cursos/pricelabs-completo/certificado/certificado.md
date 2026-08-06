@@ -1,7 +1,6 @@
-# Certificado — PriceLabs Completo para Temporada no Litoral
+# Certificado — Pricelabs Completo
 Modelo: Praia Digital Academy
-Curso: PriceLabs Completo para Temporada no Litoral
-Carga horária: 6 horas
+Curso: Pricelabs Completo
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

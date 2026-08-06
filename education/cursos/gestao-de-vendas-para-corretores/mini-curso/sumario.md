@@ -1,5 +1,5 @@
-# Mini Curso — Gestão de Vendas para Corretores
-## Aula 1 — Fundamentos da gestão de vendas (8 min)
-## Aula 2 — Funil e organização (12 min)
-## Aula 3 — Follow-up e conversão (10 min)
-## Bônus — Planilha de funil
+# Mini Curso — Gestao De Vendas Para Corretores
+## Aula 1 — Visão geral (8 min)
+## Aula 2 — Conceitos essenciais (12 min)
+## Aula 3 — Aplicação prática (10 min)
+## Bônus — Material complementar

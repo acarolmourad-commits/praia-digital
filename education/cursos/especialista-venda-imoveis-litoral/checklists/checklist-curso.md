@@ -1,6 +1,7 @@
-# Checklist — Especialista em Venda de Imóveis no Litoral
-- [ ] Diagnóstico realizado
+# Checklist — Especialista Venda Imoveis Litoral
 - [ ] Objetivos definidos
-- [ ] Aplicação executada
-- [ ] Estratégia traçada
-- [ ] Escala planejada
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

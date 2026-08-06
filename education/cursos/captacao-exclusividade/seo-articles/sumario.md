@@ -1,11 +1,11 @@
-# Artigos SEO — Captação e Exclusividade para Corretores
-1. Captação de imóveis no litoral em 2026: guia completo
-2. Como captar imóveis exclusivos no litoral
-3. Proposta de exclusividade para corretores no litoral
-4. Como prospectar proprietários no litoral
-5. Follow-up que converte no litoral
-6. Indicações para corretores no litoral
-7. Como fechar mais contratos no litoral
-8. Erros comuns na captação no litoral
-9. Marketing para corretores no litoral
-10. ROI para corretores no litoral
+# Artigos SEO — Captacao Exclusividade
+1. Captacao Exclusividade em 2026
+2. Como aplicar captacao exclusividade no litoral
+3. Resultados reais de captacao exclusividade
+4. Método passo a passo de captacao exclusividade
+5. Erros comuns em captacao exclusividade
+6. Ferramentas para captacao exclusividade
+7. Cases de captacao exclusividade no litoral
+8. Como medir resultado em captacao exclusividade
+9. Como começar em captacao exclusividade
+10. FAQ sobre captacao exclusividade

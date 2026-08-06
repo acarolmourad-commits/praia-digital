@@ -1,5 +1,5 @@
-# Mini Curso — Captação de Imóveis para Corretores
-## Aula 1 — Fundamentos da captação (8 min)
-## Aula 2 — Contato e proposta (12 min)
-## Aula 3 — Exclusividade e follow-up (10 min)
-## Bônus — Planilha de captação
+# Mini Curso — Captacao Imoveis Corretores
+## Aula 1 — Visão geral (8 min)
+## Aula 2 — Conceitos essenciais (12 min)
+## Aula 3 — Aplicação prática (10 min)
+## Bônus — Material complementar

@@ -1,9 +1,5 @@
-# Planilha — IA para Imobiliárias
+# Planilha — Ia Para Imobiliarias
 - [ ] Data
 - [ ] Ação
-- [ ] Canal
-- [ ] Leads
-- [ ] Visitas
-- [ ] Vendas
-- [ ] ROI
+- [ ] Resultado
 - [ ] Observação

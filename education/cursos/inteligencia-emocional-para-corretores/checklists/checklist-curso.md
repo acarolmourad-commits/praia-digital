@@ -1,8 +1,7 @@
-# Checklist — Inteligência Emocional para Corretores
-- [ ] Diagnóstico emocional
-- [ ] Autoconhecimento feito
-- [ ] Método estruturado
-- [ ] Comunicação criada
-- [ ] Fechamento confirmado
-- [ ] Follow-up planejado
-- [ ] Crescimento planejado
+# Checklist — Inteligencia Emocional Para Corretores
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

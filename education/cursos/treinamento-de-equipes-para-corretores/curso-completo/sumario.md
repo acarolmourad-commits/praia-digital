@@ -1,5 +1,5 @@
-# Sumário do Curso: Treinamento de Equipes para Corretores
-- Módulo 1: Fundamentos do Treinamento de Equipes no Litoral
-- Módulo 2: Planejamento e Organização
-- Módulo 3: Acompanhamento e Conversão
-- Módulo 4: Métricas e Crescimento
+# Sumário do Curso: Treinamento De Equipes Para Corretores
+- Módulo 1: Fundamentos
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

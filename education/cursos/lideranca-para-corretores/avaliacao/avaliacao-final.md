@@ -1,9 +1,9 @@
-# Avaliação Final — Liderança para Corretores
+# Avaliação Final — Lideranca Para Corretores
 ## Quiz
-- 20 perguntas sobre liderança, comunicação, motivação e resultado.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Liderança aplicada a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

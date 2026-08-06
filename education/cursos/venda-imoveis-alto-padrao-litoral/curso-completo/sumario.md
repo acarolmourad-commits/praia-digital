@@ -1,5 +1,5 @@
-# Sumário do Curso: Como Vender Imóveis de Alto Padrão no Litoral
-- Módulo 1: Fundamentos das Vendas de Alto Padrão no Litoral
-- Módulo 2: Atendimento Exclusivo
-- Módulo 3: Proposta e Negociação
-- Módulo 4: Pós-venda e Crescimento
+# Sumário do Curso: Venda Imoveis Alto Padrao Litoral
+- Módulo 1: Fundamentos
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

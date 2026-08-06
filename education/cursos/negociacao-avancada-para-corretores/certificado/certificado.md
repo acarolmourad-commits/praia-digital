@@ -1,7 +1,6 @@
-# Certificado — Negociação Avançada para Corretores
+# Certificado — Negociacao Avancada Para Corretores
 Modelo: Praia Digital Academy
-Curso: Negociação Avançada para Corretores
-Carga horária: 4 horas
+Curso: Negociacao Avancada Para Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

@@ -1,64 +1,60 @@
-# Módulo 1 — Fundamentos do WhatsApp no Imobiliário
-
+# Módulo 1 — Conteúdo Premium
 ## Introdução
-Entenda o papel do WhatsApp no mercado imobiliário, o método e o perfil do corretor no litoral.
+Neste módulo você vai dominar whatsapp que vende com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 1.1 — O que é WhatsApp no imobiliário
-WhatsApp no imobiliário significa usar o aplicativo para atender leads, fazer follow-up e fechar vendas com rapidez e personalização.
+## Aula 1.1 — Visão geral do mercado de whatsapp que vende no litoral paulista
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Características:**
-- Atendimento rápido.
-- Follow-up direto.
-- Relacionamento próximo.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Corretor aumentou vendas em 35% usando WhatsApp.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 1.2 — Perfil do corretor
-**Iniciante:**
-- Foco: atendimento básico, mensagens curtas.
-- Erro comum: mensagens genéricas.
+## Aula 1.2 — Conceitos essenciais: termos, métricas e particularidades locais
+Fundamentos, ferramentas e fluxos recomendados para whatsapp que vende no litoral.
 
-**Intermediário:**
-- Foco: follow-up, templates.
-- Erro comum: automação sem personalização.
+**Ferramentas recomendadas:**
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
-**Avançado:**
-- Foco: escala, integrações.
-- Erro comum: volume sem qualidade.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Exercício:**
-Faça o diagnóstico do seu uso de WhatsApp.
+## Aula 1.3 — Estudo de caso real: como um aluno aplicou o método e obteve resultado em 30 dias
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-## Aula 1.3 — Método e metas
-**Método:**
-- Atendimento estruturado.
-- Follow-up constante.
-- Mensagens persuasivas.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Metas:**
-- Resposta em até 5 min.
-- Follow-up semanal.
-- Fechamento mensal.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Faça o diagnóstico do seu cenário atual em whatsapp que vende: liste pontos fortes, fracos, oportunidades e ameaças.
 
 ## Resumo
-- WhatsApp reduz distância.
-- Perfil claro orienta ação.
-- Método gera resultado.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Objetivos definidos
-- [ ] Método escolhido
-- [ ] Metas traçadas
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de diagnóstico
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- WhatsApp Business
-- CRM
-- Automação
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
 ## Prompt de IA
-"Atue como especialista em vendas por WhatsApp. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
+Atue como especialista em whatsapp que vende no litoral paulista. Faça um diagnóstico personalizado com base nestas respostas: [insira suas respostas].

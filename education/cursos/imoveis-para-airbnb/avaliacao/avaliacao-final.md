@@ -1,9 +1,9 @@
-# Avaliação Final — Imóveis para Airbnb
+# Avaliação Final — Imoveis Para Airbnb
 ## Quiz
-- 20 perguntas sobre Airbnb, preparação, anúncio, precificação e gestão.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Anúncio aplicado a um imóvel real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

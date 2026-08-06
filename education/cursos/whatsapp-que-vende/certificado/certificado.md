@@ -1,7 +1,6 @@
-# Certificado — WhatsApp que Vende
+# Certificado — Whatsapp Que Vende
 Modelo: Praia Digital Academy
-Curso: WhatsApp que Vende
-Carga horária: 4 horas
+Curso: Whatsapp Que Vende
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

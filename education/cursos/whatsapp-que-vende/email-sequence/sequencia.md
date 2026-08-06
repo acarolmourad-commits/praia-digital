@@ -1,21 +1,21 @@
-# Sequência de E-mails — WhatsApp que Vende
+# Sequência de E-mails — Whatsapp Que Vende
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: WhatsApp que Vende no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Whatsapp Que Vende (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: corretor aumentou vendas com WhatsApp
+Assunto: Case prático de Whatsapp Que Vende
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "WhatsApp funciona para imóveis?"
+Assunto: "Whatsapp Que Vende é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno fechou 3 vendas em 1 mês
+Assunto: Aluno obteve resultado com Whatsapp Que Vende
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

@@ -1,9 +1,7 @@
-# Checklist — Funil de Vendas para Corretores
-- [ ] Funil desenhado
-- [ ] Fontes de leads definidas
-- [ ] Follow-up criado
-- [ ] Proposta estruturada
-- [ ] Métricas definidas
-- [ ] Automação implementada
-- [ ] Ajustes aplicados
-- [ ] Crescimento planejado
+# Checklist — Funil De Vendas
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

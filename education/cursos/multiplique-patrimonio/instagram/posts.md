@@ -1,21 +1,20 @@
-# Posts Instagram — Multiplique Patrimônio
-1. Post: 3 erros na multiplicação
-2. Reels: patrimônio em 30s
-3. Carrossel: checklist de crescimento
-4. Post: estratégia que protege
-5. Reels: dica de escolha
-6. Carrossel: tipos de estratégia
-7. Post: multiplicação sem medo
-8. Reels: case de crescimento
-9. Carrossel: rentabilidade no litoral
-10. Reels: ajuste simples
-11. Post: renda previsível
-12. Carrossel: 5 passos para multiplicar
-13. Post: mito vs verdade
-14. Reels: dica de risco
-15. Carrossel: dados que importam
-16. Post: comece hoje
-17. Reels: case de patrimônio
-18. Carrossel: revisão mensal
-19. Post: método completo
-20. Reels: patrimônio em 30s
+1. Post: dica premium sobre multiplique-patrimonio
+2. Reels: resultado em 30s
+3. Carrossel: checklist rápido
+4. Post: caso real
+5. Reels: ferramenta prática
+6. Post: dica premium sobre multiplique-patrimonio
+7. Reels: resultado em 30s
+8. Carrossel: checklist rápido
+9. Post: caso real
+10. Reels: ferramenta prática
+11. Post: dica premium sobre multiplique-patrimonio
+12. Reels: resultado em 30s
+13. Carrossel: checklist rápido
+14. Post: caso real
+15. Reels: ferramenta prática
+16. Post: dica premium sobre multiplique-patrimonio
+17. Reels: resultado em 30s
+18. Carrossel: checklist rápido
+19. Post: caso real
+20. Reels: ferramenta prática

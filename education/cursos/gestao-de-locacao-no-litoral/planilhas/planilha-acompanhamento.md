@@ -1,11 +1,5 @@
-# Planilha — Gestão de Locação no Litoral
+# Planilha — Gestao De Locacao No Litoral
 - [ ] Data
-- [ ] Imóvel
-- [ ] Cidade
-- [ ] Temporada
-- [ ] Preço
-- [ ] Ocupação
-- [ ] Receita
-- [ ] Custos
-- [ ] Lucro
-- [ ] Status
+- [ ] Ação
+- [ ] Resultado
+- [ ] Observação

@@ -1,7 +1,6 @@
-# Certificado — Fechamento de Vendas para Corretores
+# Certificado — Fechamento De Vendas Para Corretores
 Modelo: Praia Digital Academy
-Curso: Fechamento de Vendas para Corretores
-Carga horária: 4 horas
+Curso: Fechamento De Vendas Para Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

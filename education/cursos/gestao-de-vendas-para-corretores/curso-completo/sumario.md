@@ -1,5 +1,5 @@
-# Sumário do Curso: Gestão de Vendas para Corretores
-- Módulo 1: Fundamentos da Gestão de Vendas no Litoral
-- Módulo 2: Funil e Organização
-- Módulo 3: Follow-up e Conversão
-- Módulo 4: Métricas e Crescimento
+# Sumário do Curso: Gestao De Vendas Para Corretores
+- Módulo 1: Fundamentos
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

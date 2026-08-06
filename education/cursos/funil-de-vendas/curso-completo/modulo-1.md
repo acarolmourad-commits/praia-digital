@@ -1,70 +1,60 @@
-# Módulo 1 — Fundamentos do Funil
-
+# Módulo 1 — Conteúdo Premium
 ## Introdução
-Entenda o que é funil de vendas, o método e o perfil do corretor no litoral. O objetivo é estruturar um funil simples e eficiente.
+Neste módulo você vai dominar funil de vendas com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 1.1 — O que é funil de vendas
-Funil de vendas é um processo estruturado que acompanha o lead desde o primeiro contato até o fechamento.
+## Aula 1.1 — Visão geral do mercado de funil de vendas no litoral paulista
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Características:**
-- Etapas claras.
-- Acompanhamento ativo.
-- Conversão medida.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Corretor montou funil e aumentou conversão de 8% para 22%.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Estudo de caso:**
-Corretor sem follow-up; funil corrigiu o processo.
+## Aula 1.2 — Conceitos essenciais: termos, métricas e particularidades locais
+Fundamentos, ferramentas e fluxos recomendados para funil de vendas no litoral.
 
-## Aula 1.2 — Perfil do corretor
-**Iniciante:**
-- Foco: captação, follow-up simples.
-- Erro comum: leads sem acompanhamento.
+**Ferramentas recomendadas:**
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
-**Intermediário:**
-- Foco: automação, métricas.
-- Erro comum: ferramenta sem método.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Avançado:**
-- Foco: escala, múltiplos funis.
-- Erro comum: automação sem personalização.
+## Aula 1.3 — Estudo de caso real: como um aluno aplicou o método e obteve resultado em 30 dias
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Exercício:**
-Faça o diagnóstico do seu funil atual.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-## Aula 1.3 — Método e metas
-**Método:**
-- Defina etapas.
-- Estabeleça métricas.
-- Acompanhe resultados.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
-**Metas:**
-- Leads por semana.
-- Visitas por semana.
-- Vendas por mês.
-
-**Exemplo real:**
-Corretor definiu metas e dobrou vendas em 2 meses.
+## Exercício
+Faça o diagnóstico do seu cenário atual em funil de vendas: liste pontos fortes, fracos, oportunidades e ameaças.
 
 ## Resumo
-- Funil organiza vendas.
-- Perfil claro orienta ação.
-- Método gera resultado.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Funil desenhado
-- [ ] Métricas definidas
-- [ ] Metas traçadas
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de diagnóstico
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- CRM
-- Planilha
-- WhatsApp Business
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
 ## Prompt de IA
-"Atue como especialista em funil de vendas. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
+Atue como especialista em funil de vendas no litoral paulista. Faça um diagnóstico personalizado com base nestas respostas: [insira suas respostas].

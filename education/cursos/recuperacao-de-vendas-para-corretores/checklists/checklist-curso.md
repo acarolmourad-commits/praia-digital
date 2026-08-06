@@ -1,8 +1,7 @@
-# Checklist — Recuperação de Vendas para Corretores
-- [ ] Diagnóstico de recuperação
-- [ ] Análise feita
-- [ ] Comunicação criada
-- [ ] Follow-up planejado
-- [ ] Reversão criada
-- [ ] Fechamento confirmado
-- [ ] Crescimento planejado
+# Checklist — Recuperacao De Vendas Para Corretores
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

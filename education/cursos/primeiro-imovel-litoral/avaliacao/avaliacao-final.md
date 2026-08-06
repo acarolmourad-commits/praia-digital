@@ -1,9 +1,9 @@
-# Avaliação Final — Primeiro Imóvel no Litoral
+# Avaliação Final — Primeiro Imovel Litoral
 ## Quiz
-- 20 perguntas sobre primeira compra, orçamento, localização, documentação e negociação.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Plano de compra aplicado a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

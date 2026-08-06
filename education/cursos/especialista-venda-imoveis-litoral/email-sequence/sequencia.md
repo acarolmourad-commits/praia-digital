@@ -1,21 +1,21 @@
-# Sequência de E-mails — Especialista em Venda de Imóveis no Litoral
+# Sequência de E-mails — Especialista Venda Imoveis Litoral
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido de Especialista em Venda de Imóveis no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Especialista Venda Imoveis Litoral (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: resultado prático
+Assunto: Case prático de Especialista Venda Imoveis Litoral
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Especialista em Venda de Imóveis no Litoral dá trabalho?"
+Assunto: "Especialista Venda Imoveis Litoral é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno obteve resultado em 30 dias
+Assunto: Aluno obteve resultado com Especialista Venda Imoveis Litoral
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

@@ -1,12 +1,12 @@
-# Curso: Booking do Zero no Litoral
+# Curso: Booking Do Zero
 ## Nome Comercial
-**Booking do Zero no Litoral: Método Prático para Colocar Seu Imóvel na Booking e Lucrar com Temporada**
+**Booking Do Zero: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Do cadastro à gestão profissional: aprenda a estruturar, precificar e administrar aluguéis por temporada no Booking no litoral.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de cadastrar seu imóvel na Booking, definir preços competitivos e receber reservas recorrentes.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
 - Proprietários de imóveis no litoral
@@ -22,31 +22,30 @@ Iniciante → Intermediário
 
 ## Tempo Estimado
 7 horas de aulas (36 aulas de 10 a 16 min)
-Total: 7 horas
+Total: 7 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 347
-À vista: R$ 287
-Parcelado: 12x de R$ 23,92
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist de cadastro
-- Planilha de precificação
-- Modelos de mensagens
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Coloque seu imóvel na Booking do zero à primeira reserva no litoral"**
+**"Booking Do Zero"**
 
 ## Big Idea
-Alugar por temporada na Booking exige cadastro otimizado, precificação inteligente e gestão simples para reduzir cancelamentos e aumentar receita.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
-- **Curso completo:** R$ 347
+- **Curso completo:** R$ 297
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
@@ -54,113 +53,103 @@ Alugar por temporada na Booking exige cadastro otimizado, precificação intelig
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** rentabilizar imóvel no litoral
-**Dificuldades:** medo de danos, dúvidas de preço, falta de experiência
-**Desejos:** renda extra, ocupação alta, tranquilidade
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Medo de danos ao imóvel
-- Dúvidas de preço
-- Falta de experiência
-- Concorrência alta
-- Falta de organização
+- Falta de método
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Renda extra previsível
-- Ocupação alta
-- Processo simples
-- Tranquilidade
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
+- Segurança
 - Autoridade local
 
 ## Objeções
-- "Vou ter dor de cabeça"
-- "Não compensa"
+- "Muito caro"
+- "Não funciona"
 - "É complicado"
-- "Cliente vai bagunçar"
 - "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- Imóvel cadastrado profissionalmente
-- Preços definidos com método
-- Ocupação previsível
-- Renda extra crescente
-- Gestão simples
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
-### Módulo 1 — Fundamentos da Temporada
-Aula 1.1 — O mercado de temporada no litoral
-Aula 1.2 — Perfil do hóspede no Booking
-Aula 1.3 — ROI e expectativa de resultado
-Exercício: diagnóstico do imóvel
+### Módulo 1 — Fundamentos
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Cadastro e Apresentação
-Aula 2.1 — Como cadastrar na Booking
-Aula 2.2 — Fotos, título e descrição
-Aula 2.3 — Regras e políticas
-Exercício: cadastro simulado
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Precificação e Disponibilidade
-Aula 3.1 — Precificação no Booking
-Aula 3.2 — Temporada, eventos e picos
-Aula 3.3 — Long stay e descontos
-Exercício: tabela de preços
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Gestão e Crescimento
-Aula 4.1 — Check-in, check-out e limpeza
-Aula 4.2 — Atendimento e avaliações
-Aula 4.3 — Automação e crescimento
-Exercício: plano operacional
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
+Exercício: plano de crescimento
 
 ## Carga Horária
-7 horas
+7 horas de aulas (36 aulas de 10 a 16 min)
+Total: 7 horas
 
 ## Material Complementar
-- Checklist de cadastro
-- Planilha de precificação
-- Modelos de mensagens
 - PDFs por módulo
+- Templates
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de cadastro
-- Checklist de limpeza
-- Checklist de operação
-- Checklist de avaliação
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de precificação
-- Planilha de ocupação
-- Planilha de custos
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de mensagem
-- Modelo de regras
-- Modelo de check-in
+- Modelo aplicável
 
 ## Scripts
-- Script de atendimento
-- Script de resposta a avaliação
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para criar descrição e mensagens.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: diagnóstico do imóvel
-- Exercício 2: cadastro simulado
-- Exercício 3: tabela de preços
-- Exercício 4: plano operacional
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: cadastro + plano operacional
+Prova prática: aplicação do método
 
 ## FAQ
-1. Preciso de experiência? Não.
-2. Em quanto tempo vejo resultado? De 7 a 30 dias.
-3. Vale a pena? Sim.
-4. E se o cliente danificar? Seguro e regras.
-5. Preciso de imóvel na orla? Não.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
 [vendas.html]
@@ -193,7 +182,7 @@ Prova prática: cadastro + plano operacional
 [marketing/google-ads.md]
 
 ## CTA
-"Coloque seu imóvel na Booking com método."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
 - Mentoria individual: R$ 2.000
@@ -204,6 +193,4 @@ Prova prática: cadastro + plano operacional
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Airbnb do Zero
-- Curso de PriceLabs Completo
-- Curso de Gestão Profissional da Locação
+- Outros cursos da Praia Digital Academy

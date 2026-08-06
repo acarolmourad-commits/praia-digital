@@ -1,9 +1,9 @@
-# Avaliação Final — PTAM na Prática
+# Avaliação Final — Ptam Na Pratica
 ## Quiz
-- 20 perguntas sobre PTAM, documentação, processo e regularização.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Processo de regularização aplicado a um imóvel real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.
