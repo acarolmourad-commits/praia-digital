@@ -1,43 +1,47 @@
-# Deploy Manual — Praia Digital Academy no Render
+# Deploy — Praia Digital Academy no Render
 
-Use este checklist para concluir o deploy no dashboard do Render.
+Status atual: **pronto para configurar manualmente no Render**
+Pré-condições validadas: `python scripts/pre_deploy_check.py` → PASSED
 
-## 1. Criar Web Service
-- Repo: `acarolmourad-commits/praia-digital`
-- Branch: `main`
-- Nome sugerido: `academy-api`
-- Runtime: `Python 3`
-- Build command: `pip install -r academy/requirements.txt`
-- Start command: `cd academy && uvicorn main:app --host 0.0.0.0 --port $PORT`
+## Passo a passo rápido
 
-## 2. Banco de dados
-- Criar PostgreSQL nomeado `academy-db`
-- Vincular ao Web Service como `DATABASE_URL`
+1. Abra: https://dashboard.render.com/web/new
+2. Tipo: **Web Service**
+3. Repo: `acarolmourad-commits/praia-digital`
+4. Branch: `main`
+5. Nome: `academy-api`
+6. Runtime: `Python 3`
+7. Build command:
+   ```
+   pip install -r academy/requirements.txt
+   ```
+8. Start command:
+   ```
+   cd academy && uvicorn main:app --host 0.0.0.0 --port $PORT
+   ```
+9. Banco de dados: **Add PostgreSQL**
+   - Nome: `academy-db`
+   - Vincule como `DATABASE_URL`
+10. Variáveis de ambiente: copie de `academy/.env.production.example`
+    - `SECRET_KEY`, `SMTP_*`, `EMAIL_FROM`, `ALLOWED_ORIGINS`
+    - `MERCADOPAGO_*`, `WHATSAPP_*`, `BASE_URL=https://academy.praia.digital`
+    - `DATABASE_URL` preenchida pelo Render ao criar o Postgres
+11. Custom domain: `academy.praia.digital`
+    - Siga a instrução do Render para DNS/verificação
 
-## 3. Variáveis de ambiente
-- `SECRET_KEY` = chave forte
-- `SMTP_HOST` = host SMTP
-- `SMTP_PORT` = porta SMTP
-- `SMTP_USER` = usuário SMTP
-- `SMTP_PASSWORD` = senha SMTP
-- `EMAIL_FROM` = `no-reply@praia.digital`
-- `ALLOWED_ORIGINS` = `https://praia.digital,https://www.praia.digital,https://academy.praia.digital`
-- `MERCADOPAGO_API_URL` = `https://api.mercadopago.com/v1`
-- `MERCADOPAGO_TOKEN` = token do Mercado Pago
-- `MERCADOPAGO_PUBLIC_KEY` = chave pública do Mercado Pago
-- `WHATSAPP_API_URL` = URL da API WhatsApp
-- `WHATSAPP_TOKEN` = token WhatsApp
-- `WHATSAPP_PHONE_ID` = phone id
-- `WHATSAPP_TO_NUMBER` = número destino
-- `BASE_URL` = `https://academy.praia.digital`
+## Validação pós-deploy
 
-## 4. Domínio
-- Custom domain: `academy.praia.digital`
-- Ajustar DNS conforme instrução do Render
+```bash
+python scripts/check_academy_deploy.py --url https://academy.praia.digital --wait 30
+python scripts/frontend_health_check.py --base https://praia.digital --wait 30
+```
 
-## 5. Validação pós-deploy
-- `python scripts/check_academy_deploy.py --url https://academy.praia.digital --wait 30`
-- `python scripts/frontend_health_check.py --base https://praia.digital --wait 30`
+## Rollback
 
-## 6. Rollback rápido
-- Se algo falhar, volte para o último deploy bom pelo dashboard do Render.
+- Se algo falhar, reverta para o último deploy bom pelo dashboard do Render.
+
+## Notas
+
+- Não comitar segredos; usar variáveis de ambiente.
+- Branch `main` é o deploy efetivo.
+- Após o deploy, confirme se `/health`, `/auth/login`, `/auth/register` e `/checkout/status` retornam `200`.
