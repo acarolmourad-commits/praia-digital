@@ -1,762 +1,1238 @@
 [
-  {
-    "id": 1,
-    "title": "Venda em Vila Nova - Santos",
-    "slug": "santos-vila-nova-venda",
-    "city": "Santos",
-    "bairro": "Vila Nova",
-    "type": "Venda",
-    "price": "R$ 685.000",
-    "bedrooms": "1",
-    "area": "35m²",
-    "score": 50,
-    "image": "https://images.unsplash.com/photo-1500100000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Vista mar",
-      "Varanda gourmet",
-      "Condomínio fechado"
-    ],
-    "description": "Imóvel venda em Vila Nova, Santos. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 2,
-    "title": "Aluguel em Gonzaga - Santos",
-    "slug": "santos-gonzaga-aluguel",
-    "city": "Santos",
-    "bairro": "Gonzaga",
-    "type": "Aluguel",
-    "price": "R$ 1.155.000",
-    "bedrooms": "2",
-    "area": "45m²",
-    "score": 57,
-    "image": "https://images.unsplash.com/photo-1500200000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Varanda gourmet",
-      "Condomínio fechado",
-      "Piscina"
-    ],
-    "description": "Imóvel aluguel em Gonzaga, Santos. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 3,
-    "title": "Lançamento em Ponta da Praia - Santos",
-    "slug": "santos-ponta-da-praia-lançamento",
-    "city": "Santos",
-    "bairro": "Ponta da Praia",
-    "type": "Lançamento",
-    "price": "R$ 1.625.000",
-    "bedrooms": "3",
-    "area": "60m²",
-    "score": 64,
-    "image": "https://images.unsplash.com/photo-1500300000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Condomínio fechado",
-      "Piscina",
-      "Churrasqueira"
-    ],
-    "description": "Imóvel lançamento em Ponta da Praia, Santos. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 4,
-    "title": "Venda em Embaré - Santos",
-    "slug": "santos-embare-venda",
-    "city": "Santos",
-    "bairro": "Embaré",
-    "type": "Venda",
-    "price": "R$ 2.095.000",
-    "bedrooms": "4",
-    "area": "80m²",
-    "score": 71,
-    "image": "https://images.unsplash.com/photo-1500400000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Piscina",
-      "Churrasqueira",
-      "Quintal"
-    ],
-    "description": "Imóvel venda em Embaré, Santos. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 5,
-    "title": "Aluguel em Aparecida - Santos",
-    "slug": "santos-aparecida-aluguel",
-    "city": "Santos",
-    "bairro": "Aparecida",
-    "type": "Aluguel",
-    "price": "R$ 2.565.000",
-    "bedrooms": "5",
-    "area": "100m²",
-    "score": 78,
-    "image": "https://images.unsplash.com/photo-1500500000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Churrasqueira",
-      "Quintal",
-      "Garagem"
-    ],
-    "description": "Imóvel aluguel em Aparecida, Santos. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 6,
-    "title": "Venda em Jardim Acapulco - Guaruja",
-    "slug": "guaruja-jardim-acapulco-venda",
-    "city": "Guaruja",
-    "bairro": "Jardim Acapulco",
-    "type": "Venda",
-    "price": "R$ 478.000",
-    "bedrooms": "1",
-    "area": "35m²",
-    "score": 50,
-    "image": "https://images.unsplash.com/photo-1500600000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Vista mar",
-      "Varanda gourmet",
-      "Condomínio fechado"
-    ],
-    "description": "Imóvel venda em Jardim Acapulco, Guaruja. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 7,
-    "title": "Aluguel em Vila Julia - Guaruja",
-    "slug": "guaruja-vila-julia-aluguel",
-    "city": "Guaruja",
-    "bairro": "Vila Julia",
-    "type": "Aluguel",
-    "price": "R$ 794.000",
-    "bedrooms": "2",
-    "area": "45m²",
-    "score": 57,
-    "image": "https://images.unsplash.com/photo-1500700000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Varanda gourmet",
-      "Condomínio fechado",
-      "Piscina"
-    ],
-    "description": "Imóvel aluguel em Vila Julia, Guaruja. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 8,
-    "title": "Lançamento em Enseada - Guaruja",
-    "slug": "guaruja-enseada-lançamento",
-    "city": "Guaruja",
-    "bairro": "Enseada",
-    "type": "Lançamento",
-    "price": "R$ 1.110.000",
-    "bedrooms": "3",
-    "area": "60m²",
-    "score": 64,
-    "image": "https://images.unsplash.com/photo-1500800000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Condomínio fechado",
-      "Piscina",
-      "Churrasqueira"
-    ],
-    "description": "Imóvel lançamento em Enseada, Guaruja. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 9,
-    "title": "Venda em Pernambuco - Guaruja",
-    "slug": "guaruja-pernambuco-venda",
-    "city": "Guaruja",
-    "bairro": "Pernambuco",
-    "type": "Venda",
-    "price": "R$ 1.426.000",
-    "bedrooms": "4",
-    "area": "80m²",
-    "score": 71,
-    "image": "https://images.unsplash.com/photo-1500900000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Piscina",
-      "Churrasqueira",
-      "Quintal"
-    ],
-    "description": "Imóvel venda em Pernambuco, Guaruja. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 10,
-    "title": "Aluguel em Guaruja - Guaruja",
-    "slug": "guaruja-guaruja-aluguel",
-    "city": "Guaruja",
-    "bairro": "Guaruja",
-    "type": "Aluguel",
-    "price": "R$ 1.742.000",
-    "bedrooms": "5",
-    "area": "100m²",
-    "score": 78,
-    "image": "https://images.unsplash.com/photo-1501000000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Churrasqueira",
-      "Quintal",
-      "Garagem"
-    ],
-    "description": "Imóvel aluguel em Guaruja, Guaruja. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 11,
-    "title": "Venda em Boqueirão - Praia Grande",
-    "slug": "praia grande-boqueirao-venda",
-    "city": "Praia Grande",
-    "bairro": "Boqueirão",
-    "type": "Venda",
-    "price": "R$ 257.000",
-    "bedrooms": "1",
-    "area": "35m²",
-    "score": 50,
-    "image": "https://images.unsplash.com/photo-1501100000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Vista mar",
-      "Varanda gourmet",
-      "Condomínio fechado"
-    ],
-    "description": "Imóvel venda em Boqueirão, Praia Grande. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 12,
-    "title": "Aluguel em Vila Tupi - Praia Grande",
-    "slug": "praia grande-vila-tupi-aluguel",
-    "city": "Praia Grande",
-    "bairro": "Vila Tupi",
-    "type": "Aluguel",
-    "price": "R$ 411.000",
-    "bedrooms": "2",
-    "area": "45m²",
-    "score": 57,
-    "image": "https://images.unsplash.com/photo-1501200000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Varanda gourmet",
-      "Condomínio fechado",
-      "Piscina"
-    ],
-    "description": "Imóvel aluguel em Vila Tupi, Praia Grande. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 13,
-    "title": "Lançamento em Caiçara - Praia Grande",
-    "slug": "praia grande-caiçara-lançamento",
-    "city": "Praia Grande",
-    "bairro": "Caiçara",
-    "type": "Lançamento",
-    "price": "R$ 565.000",
-    "bedrooms": "3",
-    "area": "60m²",
-    "score": 64,
-    "image": "https://images.unsplash.com/photo-1501300000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Condomínio fechado",
-      "Piscina",
-      "Churrasqueira"
-    ],
-    "description": "Imóvel lançamento em Caiçara, Praia Grande. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 14,
-    "title": "Venda em Ocian - Praia Grande",
-    "slug": "praia grande-ocian-venda",
-    "city": "Praia Grande",
-    "bairro": "Ocian",
-    "type": "Venda",
-    "price": "R$ 719.000",
-    "bedrooms": "4",
-    "area": "80m²",
-    "score": 71,
-    "image": "https://images.unsplash.com/photo-1501400000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Piscina",
-      "Churrasqueira",
-      "Quintal"
-    ],
-    "description": "Imóvel venda em Ocian, Praia Grande. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 15,
-    "title": "Aluguel em Real - Praia Grande",
-    "slug": "praia grande-real-aluguel",
-    "city": "Praia Grande",
-    "bairro": "Real",
-    "type": "Aluguel",
-    "price": "R$ 873.000",
-    "bedrooms": "5",
-    "area": "100m²",
-    "score": 78,
-    "image": "https://images.unsplash.com/photo-1501500000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Churrasqueira",
-      "Quintal",
-      "Garagem"
-    ],
-    "description": "Imóvel aluguel em Real, Praia Grande. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 16,
-    "title": "Venda em Riviera - Bertioga",
-    "slug": "bertioga-riviera-venda",
-    "city": "Bertioga",
-    "bairro": "Riviera",
-    "type": "Venda",
-    "price": "R$ 662.000",
-    "bedrooms": "1",
-    "area": "35m²",
-    "score": 50,
-    "image": "https://images.unsplash.com/photo-1501600000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Vista mar",
-      "Varanda gourmet",
-      "Condomínio fechado"
-    ],
-    "description": "Imóvel venda em Riviera, Bertioga. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 17,
-    "title": "Aluguel em São Lourenço - Bertioga",
-    "slug": "bertioga-sao-lourenço-aluguel",
-    "city": "Bertioga",
-    "bairro": "São Lourenço",
-    "type": "Aluguel",
-    "price": "R$ 1.226.000",
-    "bedrooms": "2",
-    "area": "45m²",
-    "score": 57,
-    "image": "https://images.unsplash.com/photo-1501700000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Varanda gourmet",
-      "Condomínio fechado",
-      "Piscina"
-    ],
-    "description": "Imóvel aluguel em São Lourenço, Bertioga. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 18,
-    "title": "Lançamento em Centro - Bertioga",
-    "slug": "bertioga-centro-lançamento",
-    "city": "Bertioga",
-    "bairro": "Centro",
-    "type": "Lançamento",
-    "price": "R$ 1.790.000",
-    "bedrooms": "3",
-    "area": "60m²",
-    "score": 64,
-    "image": "https://images.unsplash.com/photo-1501800000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Condomínio fechado",
-      "Piscina",
-      "Churrasqueira"
-    ],
-    "description": "Imóvel lançamento em Centro, Bertioga. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 19,
-    "title": "Venda em Mata Atlântica - Bertioga",
-    "slug": "bertioga-mata-atlântica-venda",
-    "city": "Bertioga",
-    "bairro": "Mata Atlântica",
-    "type": "Venda",
-    "price": "R$ 2.354.000",
-    "bedrooms": "4",
-    "area": "80m²",
-    "score": 71,
-    "image": "https://images.unsplash.com/photo-1501900000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Piscina",
-      "Churrasqueira",
-      "Quintal"
-    ],
-    "description": "Imóvel venda em Mata Atlântica, Bertioga. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 20,
-    "title": "Aluguel em Bertioga - Bertioga",
-    "slug": "bertioga-bertioga-aluguel",
-    "city": "Bertioga",
-    "bairro": "Bertioga",
-    "type": "Aluguel",
-    "price": "R$ 2.918.000",
-    "bedrooms": "5",
-    "area": "100m²",
-    "score": 78,
-    "image": "https://images.unsplash.com/photo-1502000000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Churrasqueira",
-      "Quintal",
-      "Garagem"
-    ],
-    "description": "Imóvel aluguel em Bertioga, Bertioga. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 21,
-    "title": "Venda em Centro - Itanhaém",
-    "slug": "itanhaem-centro-venda",
-    "city": "Itanhaém",
-    "bairro": "Centro",
-    "type": "Venda",
-    "price": "R$ 290.000",
-    "bedrooms": "1",
-    "area": "35m²",
-    "score": 50,
-    "image": "https://images.unsplash.com/photo-1502100000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Vista mar",
-      "Varanda gourmet",
-      "Condomínio fechado"
-    ],
-    "description": "Imóvel venda em Centro, Itanhaém. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 22,
-    "title": "Aluguel em Cibratel - Itanhaém",
-    "slug": "itanhaem-cibratel-aluguel",
-    "city": "Itanhaém",
-    "bairro": "Cibratel",
-    "type": "Aluguel",
-    "price": "R$ 470.000",
-    "bedrooms": "2",
-    "area": "45m²",
-    "score": 57,
-    "image": "https://images.unsplash.com/photo-1502200000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Varanda gourmet",
-      "Condomínio fechado",
-      "Piscina"
-    ],
-    "description": "Imóvel aluguel em Cibratel, Itanhaém. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 23,
-    "title": "Lançamento em Jardim Grandesp - Itanhaém",
-    "slug": "itanhaem-jardim-grandesp-lançamento",
-    "city": "Itanhaém",
-    "bairro": "Jardim Grandesp",
-    "type": "Lançamento",
-    "price": "R$ 650.000",
-    "bedrooms": "3",
-    "area": "60m²",
-    "score": 64,
-    "image": "https://images.unsplash.com/photo-1502300000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Condomínio fechado",
-      "Piscina",
-      "Churrasqueira"
-    ],
-    "description": "Imóvel lançamento em Jardim Grandesp, Itanhaém. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 24,
-    "title": "Venda em Gaivota - Itanhaém",
-    "slug": "itanhaem-gaivota-venda",
-    "city": "Itanhaém",
-    "bairro": "Gaivota",
-    "type": "Venda",
-    "price": "R$ 830.000",
-    "bedrooms": "4",
-    "area": "80m²",
-    "score": 71,
-    "image": "https://images.unsplash.com/photo-1502400000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Piscina",
-      "Churrasqueira",
-      "Quintal"
-    ],
-    "description": "Imóvel venda em Gaivota, Itanhaém. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 25,
-    "title": "Aluguel em Itanhaém - Itanhaém",
-    "slug": "itanhaem-itanhaem-aluguel",
-    "city": "Itanhaém",
-    "bairro": "Itanhaém",
-    "type": "Aluguel",
-    "price": "R$ 1.010.000",
-    "bedrooms": "5",
-    "area": "100m²",
-    "score": 78,
-    "image": "https://images.unsplash.com/photo-1502500000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Churrasqueira",
-      "Quintal",
-      "Garagem"
-    ],
-    "description": "Imóvel aluguel em Itanhaém, Itanhaém. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 26,
-    "title": "Venda em Vila Virginia - Mongagua",
-    "slug": "mongagua-vila-virginia-venda",
-    "city": "Mongagua",
-    "bairro": "Vila Virginia",
-    "type": "Venda",
-    "price": "R$ 210.000",
-    "bedrooms": "1",
-    "area": "35m²",
-    "score": 50,
-    "image": "https://images.unsplash.com/photo-1502600000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Vista mar",
-      "Varanda gourmet",
-      "Condomínio fechado"
-    ],
-    "description": "Imóvel venda em Vila Virginia, Mongagua. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 27,
-    "title": "Aluguel em Centro - Mongagua",
-    "slug": "mongagua-centro-aluguel",
-    "city": "Mongagua",
-    "bairro": "Centro",
-    "type": "Aluguel",
-    "price": "R$ 330.000",
-    "bedrooms": "2",
-    "area": "45m²",
-    "score": 57,
-    "image": "https://images.unsplash.com/photo-1502700000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Varanda gourmet",
-      "Condomínio fechado",
-      "Piscina"
-    ],
-    "description": "Imóvel aluguel em Centro, Mongagua. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 28,
-    "title": "Lançamento em Balneário - Mongagua",
-    "slug": "mongagua-balneario-lançamento",
-    "city": "Mongagua",
-    "bairro": "Balneário",
-    "type": "Lançamento",
-    "price": "R$ 450.000",
-    "bedrooms": "3",
-    "area": "60m²",
-    "score": 64,
-    "image": "https://images.unsplash.com/photo-1502800000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Condomínio fechado",
-      "Piscina",
-      "Churrasqueira"
-    ],
-    "description": "Imóvel lançamento em Balneário, Mongagua. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 29,
-    "title": "Venda em Mongaguá - Mongagua",
-    "slug": "mongagua-mongagua-venda",
-    "city": "Mongagua",
-    "bairro": "Mongaguá",
-    "type": "Venda",
-    "price": "R$ 570.000",
-    "bedrooms": "4",
-    "area": "80m²",
-    "score": 71,
-    "image": "https://images.unsplash.com/photo-1502900000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Piscina",
-      "Churrasqueira",
-      "Quintal"
-    ],
-    "description": "Imóvel venda em Mongaguá, Mongagua. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 30,
-    "title": "Aluguel em Parque Turístico - Mongagua",
-    "slug": "mongagua-parque-turistico-aluguel",
-    "city": "Mongagua",
-    "bairro": "Parque Turístico",
-    "type": "Aluguel",
-    "price": "R$ 690.000",
-    "bedrooms": "5",
-    "area": "100m²",
-    "score": 78,
-    "image": "https://images.unsplash.com/photo-1503000000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Churrasqueira",
-      "Quintal",
-      "Garagem"
-    ],
-    "description": "Imóvel aluguel em Parque Turístico, Mongagua. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 31,
-    "title": "Venda em Itararé - Sao Vicente",
-    "slug": "sao vicente-itarare-venda",
-    "city": "Sao Vicente",
-    "bairro": "Itararé",
-    "type": "Venda",
-    "price": "R$ 328.000",
-    "bedrooms": "1",
-    "area": "35m²",
-    "score": 50,
-    "image": "https://images.unsplash.com/photo-1503100000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Vista mar",
-      "Varanda gourmet",
-      "Condomínio fechado"
-    ],
-    "description": "Imóvel venda em Itararé, Sao Vicente. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 32,
-    "title": "Aluguel em Vila Margarida - Sao Vicente",
-    "slug": "sao vicente-vila-margarida-aluguel",
-    "city": "Sao Vicente",
-    "bairro": "Vila Margarida",
-    "type": "Aluguel",
-    "price": "R$ 544.000",
-    "bedrooms": "2",
-    "area": "45m²",
-    "score": 57,
-    "image": "https://images.unsplash.com/photo-1503200000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Varanda gourmet",
-      "Condomínio fechado",
-      "Piscina"
-    ],
-    "description": "Imóvel aluguel em Vila Margarida, Sao Vicente. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 33,
-    "title": "Lançamento em Centro - Sao Vicente",
-    "slug": "sao vicente-centro-lançamento",
-    "city": "Sao Vicente",
-    "bairro": "Centro",
-    "type": "Lançamento",
-    "price": "R$ 760.000",
-    "bedrooms": "3",
-    "area": "60m²",
-    "score": 64,
-    "image": "https://images.unsplash.com/photo-1503300000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Condomínio fechado",
-      "Piscina",
-      "Churrasqueira"
-    ],
-    "description": "Imóvel lançamento em Centro, Sao Vicente. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 34,
-    "title": "Venda em Gonzaguinha - Sao Vicente",
-    "slug": "sao vicente-gonzaguinha-venda",
-    "city": "Sao Vicente",
-    "bairro": "Gonzaguinha",
-    "type": "Venda",
-    "price": "R$ 976.000",
-    "bedrooms": "4",
-    "area": "80m²",
-    "score": 71,
-    "image": "https://images.unsplash.com/photo-1503400000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Piscina",
-      "Churrasqueira",
-      "Quintal"
-    ],
-    "description": "Imóvel venda em Gonzaguinha, Sao Vicente. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 35,
-    "title": "Aluguel em São Vicente - Sao Vicente",
-    "slug": "sao vicente-sao-vicente-aluguel",
-    "city": "Sao Vicente",
-    "bairro": "São Vicente",
-    "type": "Aluguel",
-    "price": "R$ 1.192.000",
-    "bedrooms": "5",
-    "area": "100m²",
-    "score": 78,
-    "image": "https://images.unsplash.com/photo-1503500000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Churrasqueira",
-      "Quintal",
-      "Garagem"
-    ],
-    "description": "Imóvel aluguel em São Vicente, Sao Vicente. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 36,
-    "title": "Venda em Centro - Peruibe",
-    "slug": "peruibe-centro-venda",
-    "city": "Peruibe",
-    "bairro": "Centro",
-    "type": "Venda",
-    "price": "R$ 242.000",
-    "bedrooms": "1",
-    "area": "35m²",
-    "score": 50,
-    "image": "https://images.unsplash.com/photo-1503600000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Vista mar",
-      "Varanda gourmet",
-      "Condomínio fechado"
-    ],
-    "description": "Imóvel venda em Centro, Peruibe. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 37,
-    "title": "Aluguel em Vila São Paulo - Peruibe",
-    "slug": "peruibe-vila-sao-paulo-aluguel",
-    "city": "Peruibe",
-    "bairro": "Vila São Paulo",
-    "type": "Aluguel",
-    "price": "R$ 386.000",
-    "bedrooms": "2",
-    "area": "45m²",
-    "score": 57,
-    "image": "https://images.unsplash.com/photo-1503700000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Varanda gourmet",
-      "Condomínio fechado",
-      "Piscina"
-    ],
-    "description": "Imóvel aluguel em Vila São Paulo, Peruibe. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 38,
-    "title": "Lançamento em Peruíbe - Peruibe",
-    "slug": "peruibe-peruibe-lançamento",
-    "city": "Peruibe",
-    "bairro": "Peruíbe",
-    "type": "Lançamento",
-    "price": "R$ 530.000",
-    "bedrooms": "3",
-    "area": "60m²",
-    "score": 64,
-    "image": "https://images.unsplash.com/photo-1503800000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Condomínio fechado",
-      "Piscina",
-      "Churrasqueira"
-    ],
-    "description": "Imóvel lançamento em Peruíbe, Peruibe. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 39,
-    "title": "Venda em Rio Preto - Peruibe",
-    "slug": "peruibe-rio-preto-venda",
-    "city": "Peruibe",
-    "bairro": "Rio Preto",
-    "type": "Venda",
-    "price": "R$ 674.000",
-    "bedrooms": "4",
-    "area": "80m²",
-    "score": 71,
-    "image": "https://images.unsplash.com/photo-1503900000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Piscina",
-      "Churrasqueira",
-      "Quintal"
-    ],
-    "description": "Imóvel venda em Rio Preto, Peruibe. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista."
-  },
-  {
-    "id": 40,
-    "title": "Aluguel em Costão - Peruibe",
-    "slug": "peruibe-costao-aluguel",
-    "city": "Peruibe",
-    "bairro": "Costão",
-    "type": "Aluguel",
-    "price": "R$ 818.000",
-    "bedrooms": "5",
-    "area": "100m²",
-    "score": 78,
-    "image": "https://images.unsplash.com/photo-1504000000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Churrasqueira",
-      "Quintal",
-      "Garagem"
-    ],
-    "description": "Imóvel aluguel em Costão, Peruibe. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista."
-  }
+    {
+        "id": 1,
+        "title": "Venda em Vila Nova - Santos",
+        "slug": "santos-vila-nova-venda",
+        "city": "Santos",
+        "bairro": "Vila Nova",
+        "type": "Venda",
+        "price": "R$ 685.000",
+        "bedrooms": "1",
+        "area": "35m²",
+        "score": 50,
+        "image": "https://images.unsplash.com/photo-1500100000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Vista mar",
+            "Varanda gourmet",
+            "Condomínio fechado"
+        ],
+        "description": "Imóvel venda em Vila Nova, Santos. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 2,
+        "title": "Aluguel em Gonzaga - Santos",
+        "slug": "santos-gonzaga-aluguel",
+        "city": "Santos",
+        "bairro": "Gonzaga",
+        "type": "Aluguel",
+        "price": "R$ 1.155.000",
+        "bedrooms": "2",
+        "area": "45m²",
+        "score": 57,
+        "image": "https://images.unsplash.com/photo-1500200000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Varanda gourmet",
+            "Condomínio fechado",
+            "Piscina"
+        ],
+        "description": "Imóvel aluguel em Gonzaga, Santos. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 3,
+        "title": "Lançamento em Ponta da Praia - Santos",
+        "slug": "santos-ponta-da-praia-lançamento",
+        "city": "Santos",
+        "bairro": "Ponta da Praia",
+        "type": "Lançamento",
+        "price": "R$ 1.625.000",
+        "bedrooms": "3",
+        "area": "60m²",
+        "score": 64,
+        "image": "https://images.unsplash.com/photo-1500300000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Condomínio fechado",
+            "Piscina",
+            "Churrasqueira"
+        ],
+        "description": "Imóvel lançamento em Ponta da Praia, Santos. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 4,
+        "title": "Venda em Embaré - Santos",
+        "slug": "santos-embare-venda",
+        "city": "Santos",
+        "bairro": "Embaré",
+        "type": "Venda",
+        "price": "R$ 2.095.000",
+        "bedrooms": "4",
+        "area": "80m²",
+        "score": 71,
+        "image": "https://images.unsplash.com/photo-1500400000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Piscina",
+            "Churrasqueira",
+            "Quintal"
+        ],
+        "description": "Imóvel venda em Embaré, Santos. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 5,
+        "title": "Aluguel em Aparecida - Santos",
+        "slug": "santos-aparecida-aluguel",
+        "city": "Santos",
+        "bairro": "Aparecida",
+        "type": "Aluguel",
+        "price": "R$ 2.565.000",
+        "bedrooms": "5",
+        "area": "100m²",
+        "score": 78,
+        "image": "https://images.unsplash.com/photo-1500500000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Churrasqueira",
+            "Quintal",
+            "Garagem"
+        ],
+        "description": "Imóvel aluguel em Aparecida, Santos. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 6,
+        "title": "Venda em Jardim Acapulco - Guaruja",
+        "slug": "guaruja-jardim-acapulco-venda",
+        "city": "Guaruja",
+        "bairro": "Jardim Acapulco",
+        "type": "Venda",
+        "price": "R$ 478.000",
+        "bedrooms": "1",
+        "area": "35m²",
+        "score": 50,
+        "image": "https://images.unsplash.com/photo-1500600000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Vista mar",
+            "Varanda gourmet",
+            "Condomínio fechado"
+        ],
+        "description": "Imóvel venda em Jardim Acapulco, Guaruja. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 7,
+        "title": "Aluguel em Vila Julia - Guaruja",
+        "slug": "guaruja-vila-julia-aluguel",
+        "city": "Guaruja",
+        "bairro": "Vila Julia",
+        "type": "Aluguel",
+        "price": "R$ 794.000",
+        "bedrooms": "2",
+        "area": "45m²",
+        "score": 57,
+        "image": "https://images.unsplash.com/photo-1500700000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Varanda gourmet",
+            "Condomínio fechado",
+            "Piscina"
+        ],
+        "description": "Imóvel aluguel em Vila Julia, Guaruja. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 8,
+        "title": "Lançamento em Enseada - Guaruja",
+        "slug": "guaruja-enseada-lançamento",
+        "city": "Guaruja",
+        "bairro": "Enseada",
+        "type": "Lançamento",
+        "price": "R$ 1.110.000",
+        "bedrooms": "3",
+        "area": "60m²",
+        "score": 64,
+        "image": "https://images.unsplash.com/photo-1500800000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Condomínio fechado",
+            "Piscina",
+            "Churrasqueira"
+        ],
+        "description": "Imóvel lançamento em Enseada, Guaruja. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 9,
+        "title": "Venda em Pernambuco - Guaruja",
+        "slug": "guaruja-pernambuco-venda",
+        "city": "Guaruja",
+        "bairro": "Pernambuco",
+        "type": "Venda",
+        "price": "R$ 1.426.000",
+        "bedrooms": "4",
+        "area": "80m²",
+        "score": 71,
+        "image": "https://images.unsplash.com/photo-1500900000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Piscina",
+            "Churrasqueira",
+            "Quintal"
+        ],
+        "description": "Imóvel venda em Pernambuco, Guaruja. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 10,
+        "title": "Aluguel em Guaruja - Guaruja",
+        "slug": "guaruja-guaruja-aluguel",
+        "city": "Guaruja",
+        "bairro": "Guaruja",
+        "type": "Aluguel",
+        "price": "R$ 1.742.000",
+        "bedrooms": "5",
+        "area": "100m²",
+        "score": 78,
+        "image": "https://images.unsplash.com/photo-1501000000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Churrasqueira",
+            "Quintal",
+            "Garagem"
+        ],
+        "description": "Imóvel aluguel em Guaruja, Guaruja. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 11,
+        "title": "Venda em Boqueirão - Praia Grande",
+        "slug": "praia grande-boqueirao-venda",
+        "city": "Praia Grande",
+        "bairro": "Boqueirão",
+        "type": "Venda",
+        "price": "R$ 257.000",
+        "bedrooms": "1",
+        "area": "35m²",
+        "score": 50,
+        "image": "https://images.unsplash.com/photo-1501100000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Vista mar",
+            "Varanda gourmet",
+            "Condomínio fechado"
+        ],
+        "description": "Imóvel venda em Boqueirão, Praia Grande. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 12,
+        "title": "Aluguel em Vila Tupi - Praia Grande",
+        "slug": "praia grande-vila-tupi-aluguel",
+        "city": "Praia Grande",
+        "bairro": "Vila Tupi",
+        "type": "Aluguel",
+        "price": "R$ 411.000",
+        "bedrooms": "2",
+        "area": "45m²",
+        "score": 57,
+        "image": "https://images.unsplash.com/photo-1501200000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Varanda gourmet",
+            "Condomínio fechado",
+            "Piscina"
+        ],
+        "description": "Imóvel aluguel em Vila Tupi, Praia Grande. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 13,
+        "title": "Lançamento em Caiçara - Praia Grande",
+        "slug": "praia grande-caiçara-lançamento",
+        "city": "Praia Grande",
+        "bairro": "Caiçara",
+        "type": "Lançamento",
+        "price": "R$ 565.000",
+        "bedrooms": "3",
+        "area": "60m²",
+        "score": 64,
+        "image": "https://images.unsplash.com/photo-1501300000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Condomínio fechado",
+            "Piscina",
+            "Churrasqueira"
+        ],
+        "description": "Imóvel lançamento em Caiçara, Praia Grande. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 14,
+        "title": "Venda em Ocian - Praia Grande",
+        "slug": "praia grande-ocian-venda",
+        "city": "Praia Grande",
+        "bairro": "Ocian",
+        "type": "Venda",
+        "price": "R$ 719.000",
+        "bedrooms": "4",
+        "area": "80m²",
+        "score": 71,
+        "image": "https://images.unsplash.com/photo-1501400000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Piscina",
+            "Churrasqueira",
+            "Quintal"
+        ],
+        "description": "Imóvel venda em Ocian, Praia Grande. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 15,
+        "title": "Aluguel em Real - Praia Grande",
+        "slug": "praia grande-real-aluguel",
+        "city": "Praia Grande",
+        "bairro": "Real",
+        "type": "Aluguel",
+        "price": "R$ 873.000",
+        "bedrooms": "5",
+        "area": "100m²",
+        "score": 78,
+        "image": "https://images.unsplash.com/photo-1501500000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Churrasqueira",
+            "Quintal",
+            "Garagem"
+        ],
+        "description": "Imóvel aluguel em Real, Praia Grande. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 16,
+        "title": "Venda em Riviera - Bertioga",
+        "slug": "bertioga-riviera-venda",
+        "city": "Bertioga",
+        "bairro": "Riviera",
+        "type": "Venda",
+        "price": "R$ 662.000",
+        "bedrooms": "1",
+        "area": "35m²",
+        "score": 50,
+        "image": "https://images.unsplash.com/photo-1501600000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Vista mar",
+            "Varanda gourmet",
+            "Condomínio fechado"
+        ],
+        "description": "Imóvel venda em Riviera, Bertioga. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 17,
+        "title": "Aluguel em São Lourenço - Bertioga",
+        "slug": "bertioga-sao-lourenço-aluguel",
+        "city": "Bertioga",
+        "bairro": "São Lourenço",
+        "type": "Aluguel",
+        "price": "R$ 1.226.000",
+        "bedrooms": "2",
+        "area": "45m²",
+        "score": 57,
+        "image": "https://images.unsplash.com/photo-1501700000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Varanda gourmet",
+            "Condomínio fechado",
+            "Piscina"
+        ],
+        "description": "Imóvel aluguel em São Lourenço, Bertioga. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 18,
+        "title": "Lançamento em Centro - Bertioga",
+        "slug": "bertioga-centro-lançamento",
+        "city": "Bertioga",
+        "bairro": "Centro",
+        "type": "Lançamento",
+        "price": "R$ 1.790.000",
+        "bedrooms": "3",
+        "area": "60m²",
+        "score": 64,
+        "image": "https://images.unsplash.com/photo-1501800000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Condomínio fechado",
+            "Piscina",
+            "Churrasqueira"
+        ],
+        "description": "Imóvel lançamento em Centro, Bertioga. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 19,
+        "title": "Venda em Mata Atlântica - Bertioga",
+        "slug": "bertioga-mata-atlântica-venda",
+        "city": "Bertioga",
+        "bairro": "Mata Atlântica",
+        "type": "Venda",
+        "price": "R$ 2.354.000",
+        "bedrooms": "4",
+        "area": "80m²",
+        "score": 71,
+        "image": "https://images.unsplash.com/photo-1501900000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Piscina",
+            "Churrasqueira",
+            "Quintal"
+        ],
+        "description": "Imóvel venda em Mata Atlântica, Bertioga. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 20,
+        "title": "Aluguel em Bertioga - Bertioga",
+        "slug": "bertioga-bertioga-aluguel",
+        "city": "Bertioga",
+        "bairro": "Bertioga",
+        "type": "Aluguel",
+        "price": "R$ 2.918.000",
+        "bedrooms": "5",
+        "area": "100m²",
+        "score": 78,
+        "image": "https://images.unsplash.com/photo-1502000000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Churrasqueira",
+            "Quintal",
+            "Garagem"
+        ],
+        "description": "Imóvel aluguel em Bertioga, Bertioga. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 21,
+        "title": "Venda em Centro - Itanhaém",
+        "slug": "itanhaem-centro-venda",
+        "city": "Itanhaém",
+        "bairro": "Centro",
+        "type": "Venda",
+        "price": "R$ 290.000",
+        "bedrooms": "1",
+        "area": "35m²",
+        "score": 50,
+        "image": "https://images.unsplash.com/photo-1502100000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Vista mar",
+            "Varanda gourmet",
+            "Condomínio fechado"
+        ],
+        "description": "Imóvel venda em Centro, Itanhaém. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 22,
+        "title": "Aluguel em Cibratel - Itanhaém",
+        "slug": "itanhaem-cibratel-aluguel",
+        "city": "Itanhaém",
+        "bairro": "Cibratel",
+        "type": "Aluguel",
+        "price": "R$ 470.000",
+        "bedrooms": "2",
+        "area": "45m²",
+        "score": 57,
+        "image": "https://images.unsplash.com/photo-1502200000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Varanda gourmet",
+            "Condomínio fechado",
+            "Piscina"
+        ],
+        "description": "Imóvel aluguel em Cibratel, Itanhaém. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 23,
+        "title": "Lançamento em Jardim Grandesp - Itanhaém",
+        "slug": "itanhaem-jardim-grandesp-lançamento",
+        "city": "Itanhaém",
+        "bairro": "Jardim Grandesp",
+        "type": "Lançamento",
+        "price": "R$ 650.000",
+        "bedrooms": "3",
+        "area": "60m²",
+        "score": 64,
+        "image": "https://images.unsplash.com/photo-1502300000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Condomínio fechado",
+            "Piscina",
+            "Churrasqueira"
+        ],
+        "description": "Imóvel lançamento em Jardim Grandesp, Itanhaém. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 24,
+        "title": "Venda em Gaivota - Itanhaém",
+        "slug": "itanhaem-gaivota-venda",
+        "city": "Itanhaém",
+        "bairro": "Gaivota",
+        "type": "Venda",
+        "price": "R$ 830.000",
+        "bedrooms": "4",
+        "area": "80m²",
+        "score": 71,
+        "image": "https://images.unsplash.com/photo-1502400000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Piscina",
+            "Churrasqueira",
+            "Quintal"
+        ],
+        "description": "Imóvel venda em Gaivota, Itanhaém. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 25,
+        "title": "Aluguel em Itanhaém - Itanhaém",
+        "slug": "itanhaem-itanhaem-aluguel",
+        "city": "Itanhaém",
+        "bairro": "Itanhaém",
+        "type": "Aluguel",
+        "price": "R$ 1.010.000",
+        "bedrooms": "5",
+        "area": "100m²",
+        "score": 78,
+        "image": "https://images.unsplash.com/photo-1502500000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Churrasqueira",
+            "Quintal",
+            "Garagem"
+        ],
+        "description": "Imóvel aluguel em Itanhaém, Itanhaém. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 26,
+        "title": "Venda em Vila Virginia - Mongagua",
+        "slug": "mongagua-vila-virginia-venda",
+        "city": "Mongagua",
+        "bairro": "Vila Virginia",
+        "type": "Venda",
+        "price": "R$ 210.000",
+        "bedrooms": "1",
+        "area": "35m²",
+        "score": 50,
+        "image": "https://images.unsplash.com/photo-1502600000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Vista mar",
+            "Varanda gourmet",
+            "Condomínio fechado"
+        ],
+        "description": "Imóvel venda em Vila Virginia, Mongagua. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 27,
+        "title": "Aluguel em Centro - Mongagua",
+        "slug": "mongagua-centro-aluguel",
+        "city": "Mongagua",
+        "bairro": "Centro",
+        "type": "Aluguel",
+        "price": "R$ 330.000",
+        "bedrooms": "2",
+        "area": "45m²",
+        "score": 57,
+        "image": "https://images.unsplash.com/photo-1502700000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Varanda gourmet",
+            "Condomínio fechado",
+            "Piscina"
+        ],
+        "description": "Imóvel aluguel em Centro, Mongagua. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 28,
+        "title": "Lançamento em Balneário - Mongagua",
+        "slug": "mongagua-balneario-lançamento",
+        "city": "Mongagua",
+        "bairro": "Balneário",
+        "type": "Lançamento",
+        "price": "R$ 450.000",
+        "bedrooms": "3",
+        "area": "60m²",
+        "score": 64,
+        "image": "https://images.unsplash.com/photo-1502800000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Condomínio fechado",
+            "Piscina",
+            "Churrasqueira"
+        ],
+        "description": "Imóvel lançamento em Balneário, Mongagua. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 29,
+        "title": "Venda em Mongaguá - Mongagua",
+        "slug": "mongagua-mongagua-venda",
+        "city": "Mongagua",
+        "bairro": "Mongaguá",
+        "type": "Venda",
+        "price": "R$ 570.000",
+        "bedrooms": "4",
+        "area": "80m²",
+        "score": 71,
+        "image": "https://images.unsplash.com/photo-1502900000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Piscina",
+            "Churrasqueira",
+            "Quintal"
+        ],
+        "description": "Imóvel venda em Mongaguá, Mongagua. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 30,
+        "title": "Aluguel em Parque Turístico - Mongagua",
+        "slug": "mongagua-parque-turistico-aluguel",
+        "city": "Mongagua",
+        "bairro": "Parque Turístico",
+        "type": "Aluguel",
+        "price": "R$ 690.000",
+        "bedrooms": "5",
+        "area": "100m²",
+        "score": 78,
+        "image": "https://images.unsplash.com/photo-1503000000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Churrasqueira",
+            "Quintal",
+            "Garagem"
+        ],
+        "description": "Imóvel aluguel em Parque Turístico, Mongagua. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 31,
+        "title": "Venda em Itararé - Sao Vicente",
+        "slug": "sao vicente-itarare-venda",
+        "city": "Sao Vicente",
+        "bairro": "Itararé",
+        "type": "Venda",
+        "price": "R$ 328.000",
+        "bedrooms": "1",
+        "area": "35m²",
+        "score": 50,
+        "image": "https://images.unsplash.com/photo-1503100000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Vista mar",
+            "Varanda gourmet",
+            "Condomínio fechado"
+        ],
+        "description": "Imóvel venda em Itararé, Sao Vicente. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 32,
+        "title": "Aluguel em Vila Margarida - Sao Vicente",
+        "slug": "sao vicente-vila-margarida-aluguel",
+        "city": "Sao Vicente",
+        "bairro": "Vila Margarida",
+        "type": "Aluguel",
+        "price": "R$ 544.000",
+        "bedrooms": "2",
+        "area": "45m²",
+        "score": 57,
+        "image": "https://images.unsplash.com/photo-1503200000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Varanda gourmet",
+            "Condomínio fechado",
+            "Piscina"
+        ],
+        "description": "Imóvel aluguel em Vila Margarida, Sao Vicente. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 33,
+        "title": "Lançamento em Centro - Sao Vicente",
+        "slug": "sao vicente-centro-lançamento",
+        "city": "Sao Vicente",
+        "bairro": "Centro",
+        "type": "Lançamento",
+        "price": "R$ 760.000",
+        "bedrooms": "3",
+        "area": "60m²",
+        "score": 64,
+        "image": "https://images.unsplash.com/photo-1503300000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Condomínio fechado",
+            "Piscina",
+            "Churrasqueira"
+        ],
+        "description": "Imóvel lançamento em Centro, Sao Vicente. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 34,
+        "title": "Venda em Gonzaguinha - Sao Vicente",
+        "slug": "sao vicente-gonzaguinha-venda",
+        "city": "Sao Vicente",
+        "bairro": "Gonzaguinha",
+        "type": "Venda",
+        "price": "R$ 976.000",
+        "bedrooms": "4",
+        "area": "80m²",
+        "score": 71,
+        "image": "https://images.unsplash.com/photo-1503400000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Piscina",
+            "Churrasqueira",
+            "Quintal"
+        ],
+        "description": "Imóvel venda em Gonzaguinha, Sao Vicente. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 35,
+        "title": "Aluguel em São Vicente - Sao Vicente",
+        "slug": "sao vicente-sao-vicente-aluguel",
+        "city": "Sao Vicente",
+        "bairro": "São Vicente",
+        "type": "Aluguel",
+        "price": "R$ 1.192.000",
+        "bedrooms": "5",
+        "area": "100m²",
+        "score": 78,
+        "image": "https://images.unsplash.com/photo-1503500000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Churrasqueira",
+            "Quintal",
+            "Garagem"
+        ],
+        "description": "Imóvel aluguel em São Vicente, Sao Vicente. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 36,
+        "title": "Venda em Centro - Peruibe",
+        "slug": "peruibe-centro-venda",
+        "city": "Peruibe",
+        "bairro": "Centro",
+        "type": "Venda",
+        "price": "R$ 242.000",
+        "bedrooms": "1",
+        "area": "35m²",
+        "score": 50,
+        "image": "https://images.unsplash.com/photo-1503600000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Vista mar",
+            "Varanda gourmet",
+            "Condomínio fechado"
+        ],
+        "description": "Imóvel venda em Centro, Peruibe. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 37,
+        "title": "Aluguel em Vila São Paulo - Peruibe",
+        "slug": "peruibe-vila-sao-paulo-aluguel",
+        "city": "Peruibe",
+        "bairro": "Vila São Paulo",
+        "type": "Aluguel",
+        "price": "R$ 386.000",
+        "bedrooms": "2",
+        "area": "45m²",
+        "score": 57,
+        "image": "https://images.unsplash.com/photo-1503700000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Varanda gourmet",
+            "Condomínio fechado",
+            "Piscina"
+        ],
+        "description": "Imóvel aluguel em Vila São Paulo, Peruibe. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 38,
+        "title": "Lançamento em Peruíbe - Peruibe",
+        "slug": "peruibe-peruibe-lançamento",
+        "city": "Peruibe",
+        "bairro": "Peruíbe",
+        "type": "Lançamento",
+        "price": "R$ 530.000",
+        "bedrooms": "3",
+        "area": "60m²",
+        "score": 64,
+        "image": "https://images.unsplash.com/photo-1503800000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Condomínio fechado",
+            "Piscina",
+            "Churrasqueira"
+        ],
+        "description": "Imóvel lançamento em Peruíbe, Peruibe. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 39,
+        "title": "Venda em Rio Preto - Peruibe",
+        "slug": "peruibe-rio-preto-venda",
+        "city": "Peruibe",
+        "bairro": "Rio Preto",
+        "type": "Venda",
+        "price": "R$ 674.000",
+        "bedrooms": "4",
+        "area": "80m²",
+        "score": 71,
+        "image": "https://images.unsplash.com/photo-1503900000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Piscina",
+            "Churrasqueira",
+            "Quintal"
+        ],
+        "description": "Imóvel venda em Rio Preto, Peruibe. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 40,
+        "title": "Aluguel em Costão - Peruibe",
+        "slug": "peruibe-costao-aluguel",
+        "city": "Peruibe",
+        "bairro": "Costão",
+        "type": "Aluguel",
+        "price": "R$ 818.000",
+        "bedrooms": "5",
+        "area": "100m²",
+        "score": 78,
+        "image": "https://images.unsplash.com/photo-1504000000000?auto=format&fit=crop&w=900&q=60",
+        "tags": [
+            "Churrasqueira",
+            "Quintal",
+            "Garagem"
+        ],
+        "description": "Imóvel aluguel em Costão, Peruibe. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista."
+    },
+    {
+        "id": 41,
+        "slug": "garden-centro-itanhaém-aluguel",
+        "title": "Garden em Centro - Itanhaém",
+        "type": "Garden",
+        "status": "aluguel",
+        "city": "Itanhaém",
+        "bairro": "Centro",
+        "price": "R$ 7.343",
+        "area": "59m²",
+        "bedrooms": "1",
+        "bathrooms": "1",
+        "tags": [
+            "Horta",
+            "Varanda gourmet",
+            "Vista mar"
+        ],
+        "image": "https://images.unsplash.com/photo-1500100000000?auto=format&fit=crop&w=900&q=60",
+        "description": "Garden aluguel em Centro, Itanhaém. 59m², 1 quartos, 1 banheiros. Horta, Varanda gourmet, Vista mar. Oportunidade no litoral de SP.",
+        "phone": "+5511954346288",
+        "created_at": "2026-08-06"
+    },
+    {
+        "id": 42,
+        "slug": "duplex-embare-santos-lançamento",
+        "title": "Duplex em Embaré - Santos",
+        "type": "Duplex",
+        "status": "lançamento",
+        "city": "Santos",
+        "bairro": "Embaré",
+        "price": "R$ 912.297",
+        "area": "31m²",
+        "bedrooms": "2",
+        "bathrooms": "4",
+        "tags": [
+            "Pet friendly",
+            "Vista mar",
+            "Quintal",
+            "Vaga para embarcação",
+            "Piscina",
+            "Home office"
+        ],
+        "image": "https://images.unsplash.com/photo-1500100000000?auto=format&fit=crop&w=900&q=60",
+        "description": "Duplex lançamento em Embaré, Santos. 31m², 2 quartos, 4 banheiros. Pet friendly, Vista mar, Quintal. Oportunidade no litoral de SP.",
+        "phone": "+5511954346288",
+        "created_at": "2026-08-06"
+    },
+    {
+        "id": 43,
+        "slug": "casa-real-praia-grande-venda",
+        "title": "Casa em Real - Praia Grande",
+        "type": "Casa",
+        "status": "venda",
+        "city": "Praia Grande",
+        "bairro": "Real",
+        "price": "R$ 1.116.765",
+        "area": "125m²",
+        "bedrooms": "2",
+        "bathrooms": "1",
+        "tags": [
+            "Home office",
+            "Mobiliado",
+            "Ar-condicionado"
+        ],
+        "image": "https://images.unsplash.com/photo-1500100000000?auto=format&fit=crop&w=900&q=60",
+        "description": "Casa venda em Real, Praia Grande. 125m², 2 quartos, 1 banheiros. Home office, Mobiliado, Ar-condicionado. Oportunidade no litoral de SP.",
+        "phone": "+5511954346288",
+        "created_at": "2026-08-06"
+    },
+    {
+        "id": 44,
+        "slug": "garden-jardim-acapulco-guarujá-aluguel",
+        "title": "Garden em Jardim Acapulco - Guarujá",
+        "type": "Garden",
+        "status": "aluguel",
+        "city": "Guarujá",
+        "bairro": "Jardim Acapulco",
+        "price": "R$ 2.445",
+        "area": "96m²",
+        "bedrooms": "1",
+        "bathrooms": "4",
+        "tags": [
+            "Home office",
+            "Segurança 24h",
+            "Mobiliado",
+            "Varanda gourmet",
+            "Vista mar"
+        ],
+        "image": "https://images.unsplash.com/photo-1500100000000?auto=format&fit=crop&w=900&q=60",
+        "description": "Garden aluguel em Jardim Acapulco, Guarujá. 96m², 1 quartos, 4 banheiros. Home office, Segurança 24h, Mobiliado. Oportunidade no litoral de SP.",
+        "phone": "+5511954346288",
+        "created_at": "2026-08-06"
+    },
+    {
+        "id": 45,
+        "slug": "apartamento-itanhaem-itanhaém-venda",
+        "title": "Apartamento em Itanhaém - Itanhaém",
+        "type": "Apartamento",
+        "status": "venda",
+        "city": "Itanhaém",
+        "bairro": "Itanhaém",
+        "price": "R$ 1.270.870",
+        "area": "138m²",
+        "bedrooms": "1",
+        "bathrooms": "3",
+        "tags": [
+            "Elevador",
+            "Home office",
+            "Mobiliado",
+            "Churrasqueira",
+            "Lareira"
+        ],
+        "image": "https://images.unsplash.com/photo-1500100000000?auto=format&fit=crop&w=900&q=60",
+        "description": "Apartamento venda em Itanhaém, Itanhaém. 138m², 1 quartos, 3 banheiros. Elevador, Home office, Mobiliado. Oportunidade no litoral de SP.",
+        "phone": "+5511954346288",
+        "created_at": "2026-08-06"
+    },
+    {
+        "id": 46,
+        "slug": "duplex-vila-julia-guarujá-lançamento",
+        "title": "Duplex em Vila Julia - Guarujá",
+        "type": "Duplex",
+        "status": "lançamento",
+        "city": "Guarujá",
+        "bairro": "Vila Julia",
+        "price": "R$ 792.679",
+        "area": "49m²",
+        "bedrooms": "2",
+        "bathrooms": "2",
+        "tags": [
+            "Quintal",
+            "Pet friendly",
+            "Vaga para embarcação",
+            "Lareira",
+            "Home office",
+            "Acesso à praia"
+        ],
+        "image": "https://images.unsplash.com/photo-1500100000000?auto=format&fit=crop&w=900&q=60",
+        "description": "Duplex lançamento em Vila Julia, Guarujá. 49m², 2 quartos, 2 banheiros. Quintal, Pet friendly, Vaga para embarcação. Oportunidade no litoral de SP.",
+        "phone": "+5511954346288",
+        "created_at": "2026-08-06"
+    },
+    {
+        "id": 47,
+        "slug": "loft-santo-amaro-guarujá-venda",
+        "title": "Loft em Santo Amaro - Guarujá",
+        "type": "Loft",
+        "status": "venda",
+        "city": "Guarujá",
+        "bairro": "Santo Amaro",
+        "price": "R$ 1.161.303",
+        "area": "57m²",
+        "bedrooms": "3",
+        "bathrooms": "3",
+        "tags": [
+            "Piscina",
+            "Segurança 24h",
+            "Vaga para embarcação",
+            "Ar-condicionado",
+            "Home office"
+        ],
+        "image": "https://images.unsplash.com/photo-1500100000000?auto=format&fit=crop&w=900&q=60",
+        "description": "Loft venda em Santo Amaro, Guarujá. 57m², 3 quartos, 3 banheiros. Piscina, Segurança 24h, Vaga para embarcação. Oportunidade no litoral de SP.",
+        "phone": "+5511954346288",
+        "created_at": "2026-08-06"
+    },
+    {
+        "id": 48,
+        "slug": "studio-tortuga-guarujá-lançamento",
+        "title": "Studio em Tortuga - Guarujá",
+        "type": "Studio",
+        "status": "lançamento",
+        "city": "Guarujá",
+        "bairro": "Tortuga",
+        "price": "R$ 967.215",
+        "area": "86m²",
+        "bedrooms": "1",
+        "bathrooms": "2",
+        "tags": [
+            "Horta",
+            "Quintal",
+            "Elevador",
+            "Churrasqueira",
+            "Piscina"
+        ],
+        "image": "https://images.unsplash.com/photo-1500100000000?auto=format&fit=crop&w=900&q=60",
+        "description": "Studio lançamento em Tortuga, Guarujá. 86m², 1 quartos, 2 banheiros. Horta, Quintal, Elevador. Oportunidade no litoral de SP.",
+        "phone": "+5511954346288",
+        "created_at": "2026-08-06"
+    },
+    {
+        "id": 49,
+        "slug": "loft-sao-lourenco-bertioga-venda",
+        "title": "Loft em São Lourenço - Bertioga",
+        "type": "Loft",
+        "status": "venda",
+        "city": "Bertioga",
+        "bairro": "São Lourenço",
+        "price": "R$ 1.747.072",
+        "area": "138m²",
+        "bedrooms": "1",
+        "bathrooms": "2",
+        "tags": [
+            "Piscina",
+            "Quintal",
+            "Segurança 24h",
+            "Ar-condicionado",
+            "Condomínio fechado",
+            "Pet friendly"
+        ],
+        "image": "https://images.unsplash.com/photo-1500100000000?auto=format&fit=crop&w=900&q=60",
+        "description": "Loft venda em São Lourenço, Bertioga. 138m², 1 quartos, 2 banheiros. Piscina, Quintal, Segurança 24h. Oportunidade no litoral de SP.",
+        "phone": "+5511954346288",
+        "created_at": "2026-08-06"
+    },
+    {
+        "id": 50,
+        "slug": "loft-barra-seca-guarujá-venda",
+        "title": "Loft em Barra Seca - Guarujá",
+        "type": "Loft",
+        "status": "venda",
+        "city": "Guarujá",
+        "bairro": "Barra Seca",
+        "price": "R$ 1.664.194",
+        "area": "115m²",
+        "bedrooms": "3",
+        "bathrooms": "3",
+        "tags": [
+            "Churrasqueira",
+            "Ar-condicionado",
+            "Segurança 24h",
+            "Piscina",
+            "Condomínio fechado"
+        ],
+        "image": "https://images.unsplash.com/photo-1500100000000?auto=format&fit=crop&w=900&q=60",
+        "description": "Loft venda em Barra Seca, Guarujá. 115m², 3 quartos, 3 banheiros. Churrasqueira, Ar-condicionado, Segurança 24h. Oportunidade no litoral de SP.",
+        "phone": "+5511954346288",
+        "created_at": "2026-08-06"
+    },
+    {
+        "id": 51,
+        "slug": "duplex-aparecida-santos-venda",
+        "title": "Duplex em Aparecida - Santos",
+        "type": "Duplex",
+        "status": "venda",
+        "city": "Santos",
+        "bairro": "Aparecida",
+        "price": "R$ 1.659.974",
+        "area": "92m²",
+        "bedrooms": "4",
+        "bathrooms": "3",
+        "tags": [
+            "Academia",
+            "Home office",
+            "Quintal",
+            "Piscina"
+        ],
+        "image": "https://images.unsplash.com/photo-1500100000000?auto=format&fit=crop&w=900&q=60",
+        "description": "Duplex venda em Aparecida, Santos. 92m², 4 quartos, 3 banheiros. Academia, Home office, Quintal. Oportunidade no litoral de SP.",
+        "phone": "+5511954346288",
+        "created_at": "2026-08-06"
+    },
+    {
+        "id": 52,
+        "slug": "apartamento-indaia-bertioga-lançamento",
+        "title": "Apartamento em Indaiá - Bertioga",
+        "type": "Apartamento",
+        "status": "lançamento",
+        "city": "Bertioga",
+        "bairro": "Indaiá",
+        "price": "R$ 1.211.225",
+        "area": "69m²",
+        "bedrooms": "2",
+        "bathrooms": "1",
+        "tags": [
+            "Condomínio fechado",
+            "Varanda gourmet",
+            "Churrasqueira",
+            "Ar-condicionado",
+            "Acesso à praia"
+        ],
+        "image": "https://images.unsplash.com/photo-1500100000000?auto=format&fit=crop&w=900&q=60",
+        "description": "Apartamento lançamento em Indaiá, Bertioga. 69m², 2 quartos, 1 banheiros. Condomínio fechado, Varanda gourmet, Churrasqueira. Oportunidade no litoral de SP.",
+        "phone": "+5511954346288",
+        "created_at": "2026-08-06"
+    },
+    {
+        "id": 53,
+        "slug": "loft-macuco-santos-venda",
+        "title": "Loft em Macuco - Santos",
+        "type": "Loft",
+        "status": "venda",
+        "city": "Santos",
+        "bairro": "Macuco",
+        "price": "R$ 589.256",
+        "area": "125m²",
+        "bedrooms": "2",
+        "bathrooms": "2",
+        "tags": [
+            "Elevador",
+            "Pet friendly",
+            "Acesso à praia",
+            "Horta",
+            "Ar-condicionado",
+            "Segurança 24h"
+        ],
+        "image": "https://images.unsplash.com/photo-1500100000000?auto=format&fit=crop&w=900&q=60",
+        "description": "Loft venda em Macuco, Santos. 125m², 2 quartos, 2 banheiros. Elevador, Pet friendly, Acesso à praia. Oportunidade no litoral de SP.",
+        "phone": "+5511954346288",
+        "created_at": "2026-08-06"
+    },
+    {
+        "id": 54,
+        "slug": "loft-sao-luis-peruíbe-lançamento",
+        "title": "Loft em São Luís - Peruíbe",
+        "type": "Loft",
+        "status": "lançamento",
+        "city": "Peruíbe",
+        "bairro": "São Luís",
+        "price": "R$ 1.286.747",
+        "area": "116m²",
+        "bedrooms": "1",
+        "bathrooms": "3",
+        "tags": [
+            "Vaga para embarcação",
+            "Mobiliado",
+            "Varanda gourmet",
+            "Churrasqueira",
+            "Horta"
+        ],
+        "image": "https://images.unsplash.com/photo-1500100000000?auto=format&fit=crop&w=900&q=60",
+        "description": "Loft lançamento em São Luís, Peruíbe. 116m², 1 quartos, 3 banheiros. Vaga para embarcação, Mobiliado, Varanda gourmet. Oportunidade no litoral de SP.",
+        "phone": "+5511954346288",
+        "created_at": "2026-08-06"
+    },
+    {
+        "id": 55,
+        "slug": "duplex-vila-nova-santos-lançamento",
+        "title": "Duplex em Vila Nova - Santos",
+        "type": "Duplex",
+        "status": "lançamento",
+        "city": "Santos",
+        "bairro": "Vila Nova",
+        "price": "R$ 598.883",
+        "area": "57m²",
+        "bedrooms": "2",
+        "bathrooms": "1",
+        "tags": [
+            "Condomínio fechado",
+            "Piscina",
+            "Vaga para embarcação"
+        ],
+        "image": "https://images.unsplash.com/photo-1500100000000?auto=format&fit=crop&w=900&q=60",
+        "description": "Duplex lançamento em Vila Nova, Santos. 57m², 2 quartos, 1 banheiros. Condomínio fechado, Piscina, Vaga para embarcação. Oportunidade no litoral de SP.",
+        "phone": "+5511954346288",
+        "created_at": "2026-08-06"
+    },
+    {
+        "id": 56,
+        "slug": "apartamento-jose-menino-santos-lançamento",
+        "title": "Apartamento em Jose Menino - Santos",
+        "type": "Apartamento",
+        "status": "lançamento",
+        "city": "Santos",
+        "bairro": "Jose Menino",
+        "price": "R$ 899.287",
+        "area": "58m²",
+        "bedrooms": "2",
+        "bathrooms": "4",
+        "tags": [
+            "Acesso à praia",
+            "Condomínio fechado",
+            "Quintal",
+            "Mobiliado"
+        ],
+        "image": "https://images.unsplash.com/photo-1500100000000?auto=format&fit=crop&w=900&q=60",
+        "description": "Apartamento lançamento em Jose Menino, Santos. 58m², 2 quartos, 4 banheiros. Acesso à praia, Condomínio fechado, Quintal. Oportunidade no litoral de SP.",
+        "phone": "+5511954346288",
+        "created_at": "2026-08-06"
+    },
+    {
+        "id": 57,
+        "slug": "apartamento-sao-vicente-são-vicente-venda",
+        "title": "Apartamento em São Vicente - São Vicente",
+        "type": "Apartamento",
+        "status": "venda",
+        "city": "São Vicente",
+        "bairro": "São Vicente",
+        "price": "R$ 1.182.143",
+        "area": "112m²",
+        "bedrooms": "2",
+        "bathrooms": "4",
+        "tags": [
+            "Varanda gourmet",
+            "Churrasqueira",
+            "Vista mar",
+            "Segurança 24h",
+            "Home office",
+            "Elevador"
+        ],
+        "image": "https://images.unsplash.com/photo-1500100000000?auto=format&fit=crop&w=900&q=60",
+        "description": "Apartamento venda em São Vicente, São Vicente. 112m², 2 quartos, 4 banheiros. Varanda gourmet, Churrasqueira, Vista mar. Oportunidade no litoral de SP.",
+        "phone": "+5511954346288",
+        "created_at": "2026-08-06"
+    },
+    {
+        "id": 58,
+        "slug": "casa-gonzaguinha-são-vicente-venda",
+        "title": "Casa em Gonzaguinha - São Vicente",
+        "type": "Casa",
+        "status": "venda",
+        "city": "São Vicente",
+        "bairro": "Gonzaguinha",
+        "price": "R$ 1.204.749",
+        "area": "52m²",
+        "bedrooms": "2",
+        "bathrooms": "2",
+        "tags": [
+            "Pet friendly",
+            "Vaga para embarcação",
+            "Churrasqueira",
+            "Horta"
+        ],
+        "image": "https://images.unsplash.com/photo-1500100000000?auto=format&fit=crop&w=900&q=60",
+        "description": "Casa venda em Gonzaguinha, São Vicente. 52m², 2 quartos, 2 banheiros. Pet friendly, Vaga para embarcação, Churrasqueira. Oportunidade no litoral de SP.",
+        "phone": "+5511954346288",
+        "created_at": "2026-08-06"
+    },
+    {
+        "id": 59,
+        "slug": "loft-nova-peruibe-peruíbe-lançamento",
+        "title": "Loft em Nova Peruíbe - Peruíbe",
+        "type": "Loft",
+        "status": "lançamento",
+        "city": "Peruíbe",
+        "bairro": "Nova Peruíbe",
+        "price": "R$ 645.586",
+        "area": "40m²",
+        "bedrooms": "1",
+        "bathrooms": "1",
+        "tags": [
+            "Elevador",
+            "Horta",
+            "Condomínio fechado",
+            "Vaga para embarcação"
+        ],
+        "image": "https://images.unsplash.com/photo-1500100000000?auto=format&fit=crop&w=900&q=60",
+        "description": "Loft lançamento em Nova Peruíbe, Peruíbe. 40m², 1 quartos, 1 banheiros. Elevador, Horta, Condomínio fechado. Oportunidade no litoral de SP.",
+        "phone": "+5511954346288",
+        "created_at": "2026-08-06"
+    },
+    {
+        "id": 60,
+        "slug": "apartamento-cachoeira-guarujá-venda",
+        "title": "Apartamento em Cachoeira - Guarujá",
+        "type": "Apartamento",
+        "status": "venda",
+        "city": "Guarujá",
+        "bairro": "Cachoeira",
+        "price": "R$ 876.171",
+        "area": "76m²",
+        "bedrooms": "1",
+        "bathrooms": "4",
+        "tags": [
+            "Ar-condicionado",
+            "Horta",
+            "Home office",
+            "Vaga para embarcação",
+            "Quintal",
+            "Pet friendly"
+        ],
+        "image": "https://images.unsplash.com/photo-1500100000000?auto=format&fit=crop&w=900&q=60",
+        "description": "Apartamento venda em Cachoeira, Guarujá. 76m², 1 quartos, 4 banheiros. Ar-condicionado, Horta, Home office. Oportunidade no litoral de SP.",
+        "phone": "+5511954346288",
+        "created_at": "2026-08-06"
+    }
 ]
