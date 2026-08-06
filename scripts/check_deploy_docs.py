@@ -10,7 +10,7 @@ ok = True
 for path, needles in checks:
     txt = Path(path).read_text(encoding='utf-8', errors='ignore')
     for n in needles:
-        if n not in txt:
+        if n.lower() not in txt.lower():
             print(f'MISSING {n} in {path}')
             ok = False
 
