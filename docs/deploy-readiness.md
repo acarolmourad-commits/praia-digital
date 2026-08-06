@@ -1,43 +1,45 @@
-# Praia Digital Academy — Deploy Readiness
+# Deploy Readiness — Praia Digital Academy
 
-## Status
-- Fases 1 a 5 validadas localmente.
-- Servidor de teste rodou em `http://127.0.0.1:8000`.
-- Endpoint `/health` retornou `{"status":"ok","service":"academy-api"}`.
-- Fluxo público testado: registro, login, criação de lead.
+Status atual
+- Repo: `acarolmourad-commits/praia-digital`, branch `main`
+- Backend: testado localmente; Fases 1-5 + leads OK
+- Produção: **aguardando criação do Web Service no Render**
 
-## Endpoints essenciais
-- `GET /health`
-- `POST /auth/register`
-- `POST /auth/login`
-- `POST /leads`
-- `POST /leads/{lead_id}/events`
-- `GET /admin/leads`
-- `GET /admin/leads/{lead_id}/events`
-- `PATCH /admin/leads/{lead_id}/status`
-- `POST /academy/checkout`
-- `POST /academy/payments/{payment_id}/webhook`
-- `POST /automation/email-lead-magnet/{lead_id}`
+Comites pendentes / enviados
+- `2cb5beb` fix(academy): tratar token JWT inválido em get_current_user
+- `9508b95` chore(deploy): ajustar BASE_URL para `https://academy.praia.digital`
+- `b4d2e0c` feat(education): melhorar página de vendas do curso 65
 
-## Variáveis obrigatórias no Render
-- `DATABASE_URL`
-- `SECRET_KEY`
-- `SMTP_HOST`
-- `SMTP_PORT`
-- `SMTP_USER`
-- `SMTP_PASSWORD`
-- `EMAIL_FROM`
-- `APP_ENV=production`
-- `ALLOWED_ORIGINS`
-- `MERCADOPAGO_TOKEN`
-- `MERCADOPAGO_PUBLIC_KEY`
-- `BASE_URL=https://academy.praia.digital`
-- `WHATSAPP_API_URL`
-- `WHATSAPP_TOKEN`
-- `WHATSAPP_PHONE_ID`
-- `WHATSAPP_TO_NUMBER`
+O que já está no repo
+- `render.yaml` com build/start/database/env vars
+- `academy/.env.example`
+- `academy/.env.production.example`
+- `scripts/deploy_render.bat`
+- `scripts/check_academy_deploy.py`
+- `scripts/frontend_health_check.py`
 
-## Próxima ação
-- Criar Web Service no Render com build/start do `render.yaml`.
-- Ajustar DNS para `academy.praia.digital`.
-- Validar `/health` em produção.
+Passo manual restante
+1. Abra https://dashboard.render.com
+2. New + Web Service
+   - Repo: `acarolmourad-commits/praia-digital`
+   - Branch: `main`
+   - Build command: `pip install -r academy/requirements.txt`
+   - Start command: `cd academy && uvicorn main:app --host 0.0.0.0 --port $PORT`
+3. Banco: crie/ative `academy-db` e vincule como `DATABASE_URL`
+4. Variáveis de ambiente mínimas:
+   - `SECRET_KEY`: chave forte
+   - `ALLOWED_ORIGINS`: `https://praia.digital,https://www.praia.digital,https://academy.praia.digital`
+   - `BASE_URL`: `https://academy.praia.digital`
+   - `EMAIL_FROM`: `no-reply@praia.digital`
+   - Demais: `SMTP_*`, `MERCADOPAGO_*`, `WHATSAPP_*`
+5. DNS: `academy.praia.digital` → URL do Web Service
+6. Pós-deploy:
+   - `python scripts/check_academy_deploy.py --url https://academy.praia.digital --wait 30`
+   - `python scripts/frontend_health_check.py --base https://praia.digital --wait 30`
+
+Critérios de sucesso
+- `/health` retorna `{"status":"ok","service":"academy-api"}`
+- `/docs` acessível
+- `/auth/register` retorna token
+- `/monitoring/status` retorna checks
+- Frontend em `praia.digital` com 200 em rotas principais
