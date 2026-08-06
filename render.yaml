@@ -28,7 +28,7 @@ services:
       - key: MERCADOPAGO_PUBLIC_KEY
         value: ""
       - key: BASE_URL
-        value: ""
+        value: "https://academy.praia.digital"
       - key: WHATSAPP_API_URL
         value: ""
       - key: WHATSAPP_TOKEN
