@@ -1,265 +1,411 @@
 from pathlib import Path
 
-city_neighborhoods = {
+neighborhood_data = {
     'santos': {
         'gonzaga': {
-            'name': 'Gonzaga',
+            'title': 'Imóveis em Gonzaga — Santos',
+            'description': 'Guia completo para comprar, vender e investir em imóveis em Gonzaga, Santos. Valorização, acessos, documentação e particularidades do bairro.',
             'about': 'Gonzaga combina orla ativa, comércio forte e valorização histórica. É referência de liquidez em Santos, com apartamentos vista mar e edifícios consolidados.',
-            'market': 'Valorização média do m² em alta; temporada forte e procura por moradia o ano todo. Perfil de comprador que valoriza serviços, acesso e renda por locação.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições, área de marinha e ônus. Em orla, atenção a marinas e restrições ambientais.',
+            'valuation': 'Valorização média do m² em alta; temporada forte e procura por moradia o ano todo. Perfil de comprador que valoriza serviços, acesso e renda por locação.',
+            'risks': 'Checklist essencial: escritura, IPTU, débitos, restrições, área de marinha e ônus. Em orla, atenção a marinas e restrições ambientais.'
         },
         'embare': {
-            'name': 'Embaré',
-            'about': 'Embaré oferece perfil residencial tranquilo com acesso rápido ao centro e à orla. Oferta variada de apartamentos e casas para famílias.',
-            'market': 'Valorização estável com liquidez crescente. Temporada relevante e procura por moradia permanente. Perfil de comprador que valoriza calmaria e serviços.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Atenção a áreas de marinha próximas à orla.',
+            'title': 'Imóveis em Embaré — Santos',
+            'description': 'Guia completo para comprar, vender e investir em imóveis em Embaré, Santos. Valorização, acessos, documentação e particularidades do bairro.',
+            'about': 'Embaré é um bairro tradicional de Santos, com ruas arborizadas e boa oferta de imóveis familiares. Próximo à orla e com fácil acesso ao centro.',
+            'valuation': 'Valorização estável com boa liquidez. Perfil de moradia familiar e procura consistente por temporada.',
+            'risks': 'Verificar documentação regular, IPTU em dia e eventuais restrições de zoneamento. Atenção a imóveis em áreas de mangue.'
         },
         'boqueirao': {
-            'name': 'Boqueirão',
-            'about': 'Boqueirão combina temporada, famílias e diversidade de oferta. Próximo à orla, com comércio local e fluxo de segunda residência.',
-            'market': 'Valorização acessível com liquidez sazonal. Temporada forte e procura por apartamentos compactos e casas. Perfil de comprador que valoriza custo-benefício.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Verificar regularidade de ocupação e distâncias de área de marinha.',
-        },
+            'title': 'Imóveis em Boqueirão — Santos',
+            'description': 'Guia completo para comprar, vender e investir em imóveis em Boqueirão, Santos. Valorização, acessos, documentação e particularidades do bairro.',
+            'about': 'Boqueirão combina residencial e comercial, com proximidade à orla e ao centro de Santos. Oferta diversificada de apartamentos e casas.',
+            'valuation': 'Valorização consistente com demanda por moradia permanente e temporada. Boa conectividade e serviços locais.',
+            'risks': 'Checar regularidade de construções, área de marinha e ônus. Em zonas comerciais, verificar uso permitido.'
+        }
     },
     'guaruja': {
         'pitangueiras': {
-            'name': 'Pitangueiras',
-            'about': 'Pitangueiras combina vista mar, comércio e vida social no Guarujá. Oferta madura de apartamentos e casas com acesso rápido à orla.',
-            'market': 'Valorização média do m² com temporada consolidada. Perfil de comprador que valoriza vista mar, serviços e fluxo de caixa.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições, área de marinha e ônus. Atenção a condomínios e regulamentações de orla.',
+            'title': 'Imóveis em Pitangueiras — Guarujá',
+            'description': 'Guia completo para comprar, vender e investir em imóveis em Pitangueiras, Guarujá. Valorização, acessos, documentação e particularidades do bairro.',
+            'about': 'Pitangueiras é conhecido por vista mar, comércio e vida social, com acesso rodovias e transporte público e vista/alcance para orla e pontos turísticos.',
+            'valuation': 'Alta temporada e valorização consistente. Perfil de comprador que busca lazer e renda por temporada.',
+            'risks': 'Atenção a condomínios e regulamentações de orla. Verificar área de marinha e restrições ambientais.'
         },
         'asturias': {
-            'name': 'Astúrias',
-            'about': 'Astúrias oferece oferta madura e proximidade da orla no Guarujá. Perfil residencial e de temporada com comércio local.',
-            'market': 'Valorização estável com temporada relevante. Oferta de apartamentos e casas bem posicionados. Perfil de comprador que valoriza liquidez e acesso.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Verificar condições de acesso e regularidade de área.',
+            'title': 'Imóveis em Astúrias — Guarujá',
+            'description': 'Guia completo para comprar, vender e investir em imóveis em Astúrias, Guarujá. Valorização, acessos, documentação e particularidades do bairro.',
+            'about': 'Astúrias oferece equilíbrio entre residencial e turismo, com orla charmosa e estrutura de serviços completa.',
+            'valuation': 'Valorização média-alta com procura por segunda residência. Temporada forte e ocupação elevada.',
+            'risks': 'Verificar regularidade de construções, IPTU e taxas de condomínio. Atenção a restrições de orla.'
         },
         'enseada': {
-            'name': 'Enseada',
-            'about': 'Enseada combina mercado amplo e fluxo de caixa no Guarujá. Oferta variada de apartamentos, casas e condomínios.',
-            'market': 'Valorização competitiva com temporada consistente. Perfil de comprador que valoriza custo-benefício, espaço e proximidade da capital.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Atenção a condomínios fechados e infraestrutura local.',
-        },
+            'title': 'Imóveis em Enseada — Guarujá',
+            'description': 'Guia completo para comprar, vender e investir em imóveis em Enseada, Guarujá. Valorização, acessos, documentação e particularidades do bairro.',
+            'about': 'Enseada é conhecida por mar calmo, família e temporada, com acesso rodovias e transporte público e vista/alcance para orla e pontos turísticos.',
+            'valuation': 'Valorização crescente com demanda por moradia familiar e temporada. Oferta diversificada de casas e apartamentos.',
+            'risks': 'Checar documentação, área de marinha e regulamentações de orla. Verificar infraestrutura de acesso.'
+        }
     },
     'praia-grande': {
         'guilhermina': {
-            'name': 'Guilhermina',
-            'about': 'Guilhermina combina temporada e comércio ativo em Praia Grande. Oferta variada de apartamentos e casas próximas à orla.',
-            'market': 'Valorização acessível com liquidez crescente. Temporada forte e procura por entrada. Perfil de comprador que valoriza custo-benefício.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Verificar regularidade de documentação e infraestrutura.',
+            'title': 'Imóveis em Guilhermina — Praia Grande',
+            'description': 'Guia completo para comprar, vender e investir em imóveis em Guilhermina, Praia Grande. Valorização, acessos, documentação e particularidades do bairro.',
+            'about': 'Guilhermina é conhecido por passeio, famílias e temporada, com acesso rodovias e transporte público e vista/alcance para orla e pontos turísticos.',
+            'valuation': 'Valorização média do m², taxa de ocupação na temporada e perfil do comprador em Praia Grande.',
+            'risks': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Verificar regularidade de documentação e infraestrutura.'
         },
         'ocian': {
-            'name': 'Ocian',
-            'about': 'Ocian oferece entrada competitiva e liquidez em Praia Grande. Oferta ampla para famílias e investidores.',
-            'market': 'Valorização em alta com temporada consolidada. Perfil de comprador que valoriza espaço, acesso e potencial de valorização.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Atenção a áreas de expansão e serviços públicos.',
+            'title': 'Imóveis em Ocian — Praia Grande',
+            'description': 'Guia completo para comprar, vender e investir em imóveis em Ocian, Praia Grande. Valorização, acessos, documentação e particularidades do bairro.',
+            'about': 'Ocian combina orla e estrutura urbana, com boa oferta de apartamentos e casas. Próximo ao centro e com serviços variados.',
+            'valuation': 'Valorização crescente com procura por moradia permanente e temporada. Boa conectividade com São Paulo.',
+            'risks': 'Verificar documentação, IPTU e eventuais restrições de zoneamento. Atenção a áreas de mangue.'
         },
         'tupi': {
-            'name': 'Tupi',
-            'about': 'Tupi combina perfil familiar e oferta variada em Praia Grande. Próximo à orla, com comércio local e fluxo de segunda residência.',
-            'market': 'Valorização estável com temporada relevante. Oferta de apartamentos e casas para diferentes perfis. Perfil de comprador que valoriza liquidez.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Verificar regularidade de ocupação e acesso.',
-        },
+            'title': 'Imóveis em Tupi — Praia Grande',
+            'description': 'Guia completo para comprar, vender e investir em imóveis em Tupi, Praia Grande. Valorização, acessos, documentação e particularidades do bairro.',
+            'about': 'Tupi é referência de orla, famílias e temporada, com acesso rodovias e transporte público e vista/alcance para orla e pontos turísticos.',
+            'valuation': 'Valorização média-alta com temporada forte. Perfil de comprador que valoriza lazer e renda por locação.',
+            'risks': 'Checar área de marinha, ônus e regulamentações de orla. Verificar infraestrutura de acesso.'
+        }
     },
     'bertioga': {
         'centro': {
-            'name': 'Centro',
-            'about': 'Centro de Bertioga oferece serviços, acesso e liquidez. Oferta diversificada entre apartamentos e casas para moradia e temporada.',
-            'market': 'Valorização sustentada com temporada alta. Perfil de comprador que valoriza conveniência e acesso.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Atenção a áreas de marinha e regulamentações locais.',
+            'title': 'Imóveis no Centro — Bertioga',
+            'description': 'Guia completo para comprar, vender e investir em imóveis no Centro de Bertioga. Valorização, acessos, documentação e particularidades.',
+            'about': 'Centro de Bertioga combina serviços, comércio e acesso à orla. Oferta diversificada de imóveis para moradia e temporada.',
+            'valuation': 'Valorização crescente com demanda por moradia permanente e temporada. Acesso facilitado por estrada.',
+            'risks': 'Verificar documentação, IPTU e eventuais restrições de zoneamento. Atenção a áreas de mangue.'
         },
         'riviera': {
-            'name': 'Riviera de São Lourenço',
-            'about': 'Riviera combina alto padrão, golfe e temporada forte em Bertioga. Oferta exclusiva de casas e apartamentos em condomínios.',
-            'market': 'Valorização alta com procura por alto padrão. Temporada consolidada e fluxo de segunda residência. Perfil de comprador que valoriza exclusividade.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições, área de marinha e ônus. Verificar regulamentação de condomínio e golfe.',
+            'title': 'Imóveis na Riviera — Bertioga',
+            'description': 'Guia completo para comprar, vender e investir em imóveis na Riviera de Bertioga. Valorização, acessos, documentação e particularidades.',
+            'about': 'Riviera de Bertioga é um dos bairros mais valorizados do Litoral Norte, com condomínios de alto padrão e acesso direto à praia.',
+            'valuation': 'Valorização alta com procura por segunda residência de alto padrão. Temporada forte e ocupação elevada.',
+            'risks': 'Verificar regulamentações de condomínio, área de marinha e ônus. Atenção a restrições ambientais.'
         },
         'guaratuba': {
-            'name': 'Guaratuba',
-            'about': 'Guaratuba oferece perfil familiar e praias arredadas em Bertioga. Oferta de casas e apartamentos com acesso rápido.',
-            'market': 'Valorização crescente com temporada relevante. Oferta direcionada a famílias e quem busca privacidade.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Verificar acesso e regularidade de área.',
-        },
+            'title': 'Imóveis em Guaratuba — Bertioga',
+            'description': 'Guia completo para comprar, vender e investir em imóveis em Guaratuba, Bertioga. Valorização, acessos, documentação e particularidades.',
+            'about': 'Guaratuba oferece natureza preservada e tranquilidade, com oferta de casas e apartamentos em áreas verdes.',
+            'valuation': 'Valorização gradual com demanda crescente por segunda residência. Ambiente tranquilo e exclusivo.',
+            'risks': 'Checar documentação, IPTU e eventuais restrições de construção. Verificar acesso e infraestrutura.'
+        }
     },
     'itanhaem': {
         'centro': {
-            'name': 'Centro',
-            'about': 'Centro de Itanhaém combina serviços, acesso e temporada. Oferta de apartamentos e casas para moradia e investimento.',
-            'market': 'Valorização acessível com ocupação crescente. Perfil de comprador que valoriza custo-benefício e estabilidade.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Verificar documentação e serviços públicos.',
+            'title': 'Imóveis no Centro — Itanhaém',
+            'description': 'Guia completo para comprar, vender e investir em imóveis no Centro de Itanhaém. Valorização, acessos, documentação e particularidades.',
+            'about': 'Centro de Itanhaém combina história, serviços e acesso à orla. Oferta diversificada de imóveis para moradia e temporada.',
+            'valuation': 'Valorização crescente com demanda por moradia acessível. Boa relação custo-benefício no Litoral Sul.',
+            'risks': 'Verificar documentação, IPTU e eventuais restrições de zoneamento.'
         },
-        'praia': {
-            'name': 'Praia',
-            'about': 'Praia de Itanhaém oferece temporada e vizinhança tranquila. Oferta variada de apartamentos e casas próximas ao mar.',
-            'market': 'Valorização estável com temporada relevante. Perfil de comprador que valoriza lazer e retorno.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Atenção a áreas de marinha e ocupação.',
+        'cibratel': {
+            'title': 'Imóveis no Cibratel — Itanhaém',
+            'description': 'Guia completo para comprar, vender e investir em imóveis no Cibratel, Itanhaém. Valorização, acessos, documentação e particularidades.',
+            'about': 'Cibratel é conhecido por tranquilidade, famílias e temporada, com acesso rodovias e transporte público e vista/alcance para orla e pontos turísticos.',
+            'valuation': 'Valorização média com procura por segunda residência. Ambiente familiar e seguro.',
+            'risks': 'Checar documentação, IPTU e infraestrutura de acesso.'
         },
-        'condominios': {
-            'name': 'Condomínios',
-            'about': 'Condomínios em Itanhaém oferecem perfil residencial com segurança e lazer. Oferta direcionada a famílias e investidores.',
-            'market': 'Valorização consistente com temporada crescente. Perfil de comprador que valoriza estabilidade e serviços.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições, convenção de condomínio e ônus. Verificar regulamentação interna.',
-        },
+        'jardim-sao-fernando': {
+            'title': 'Imóveis no Jardim São Fernando — Itanhaém',
+            'description': 'Guia completo para comprar, vender e investir em imóveis no Jardim São Fernando, Itanhaém. Valorização, acessos, documentação e particularidades.',
+            'about': 'Jardim São Fernando oferece imóveis acessíveis em área tranquila, com boa oferta para primeira moradia no litoral.',
+            'valuation': 'Valorização gradual com demanda crescente. Boa relação custo-benefício.',
+            'risks': 'Verificar documentação, IPTU e infraestrutura local.'
+        }
     },
     'mongagua': {
         'centro': {
-            'name': 'Centro',
-            'about': 'Centro de Mongaguá combina serviços, acesso e temporada. Oferta de apartamentos e casas para moradia e investimento.',
-            'market': 'Valorização acessível com liquidez em alta. Perfil de comprador que valoriza custo-benefício e acesso.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Verificar regularidade de documentação.',
+            'title': 'Imóveis no Centro — Mongaguá',
+            'description': 'Guia completo para comprar, vender e investir em imóveis no Centro de Mongaguá. Valorização, acessos, documentação e particularidades.',
+            'about': 'Centro de Mongaguá oferece serviços, comércio e acesso à orla. Oferta diversificada de imóveis acessíveis.',
+            'valuation': 'Valorização crescente com demanda por moradia permanente. Ambiente tranquilo e infraestrutura em expansão.',
+            'risks': 'Verificar documentação, IPTU e eventuais restrições de zoneamento.'
         },
-        'praia': {
-            'name': 'Praia',
-            'about': 'Praia de Mongaguá oferece temporada e lazer. Oferta variada de apartamentos e casas próximas ao mar.',
-            'market': 'Valorização crescente com temporada relevante. Perfil de comprador que valoriza lazer e retorno.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Atenção a áreas de marinha e ocupação.',
+        'jardim-sao-paulo': {
+            'title': 'Imóveis no Jardim São Paulo — Mongaguá',
+            'description': 'Guia completo para comprar, vender e investir em imóveis no Jardim São Paulo, Mongaguá. Valorização, acessos, documentação e particularidades.',
+            'about': 'Jardim São Paulo é um bairro tranquilo de Mongaguá, com oferta de imóveis acessíveis e ambiente familiar.',
+            'valuation': 'Valorização gradual com demanda crescente. Boa opção para primeira moradia.',
+            'risks': 'Checar documentação, IPTU e infraestrutura local.'
         },
-        'condominios': {
-            'name': 'Condomínios',
-            'about': 'Condomínios em Mongaguá oferecem perfil familiar com segurança e lazer. Oferta direcionada a famílias e investidores.',
-            'market': 'Valorização estável com temporada em alta. Perfil de comprador que valoriza calmaria e potencial.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições, convenção de condomínio e ônus. Verificar regulamentação.',
-        },
+        'balneario': {
+            'title': 'Imóveis no Balneário — Mongaguá',
+            'description': 'Guia completo para comprar, vender e investir em imóveis no Balneário de Mongaguá. Valorização, acessos, documentação e particularidades.',
+            'about': 'Balneário de Mongaguá combina orla e tranquilidade, com oferta de imóveis para temporada e moradia.',
+            'valuation': 'Valorização crescente com temporada relevante. Procura por segunda residência.',
+            'risks': 'Verificar área de marinha, regulamentações de orla e documentação.'
+        }
     },
     'sao-vicente': {
         'centro': {
-            'name': 'Centro',
-            'about': 'Centro de São Vicente combina acesso rápido e estrutura consolidada. Oferta variada de apartamentos e casas.',
-            'market': 'Valorização competitiva com temporada forte. Perfil de comprador que valoriza liquidez e serviços.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Verificar regularidade de documentação.',
+            'title': 'Imóveis no Centro — São Vicente',
+            'description': 'Guia completo para comprar, vender e investir em imóveis no Centro de São Vicente. Valorização, acessos, documentação e particularidades.',
+            'about': 'Centro de São Vicente é o coração da cidade, com história, serviços e acesso à orla. Oferta diversificada de imóveis.',
+            'valuation': 'Valorização estável com demanda por moradia permanente e temporada. Infraestrutura consolidada.',
+            'risks': 'Verificar documentação, IPTU e eventuais restrições de zoneamento.'
         },
-        'praia': {
-            'name': 'Praia',
-            'about': 'Praia de São Vicente oferece temporada e lazer. Oferta de apartamentos e casas próximas ao mar.',
-            'market': 'Valorização em alta com temporada relevante. Perfil de comprador que valoriza lazer e retorno.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Atenção a áreas de marinha e ocupação.',
+        'gonzaguinha': {
+            'title': 'Imóveis em Gonzaguinha — São Vicente',
+            'description': 'Guia completo para comprar, vender e investir em imóveis em Gonzaguinha, São Vicente. Valorização, acessos, documentação e particularidades.',
+            'about': 'Gonzaguinha é um bairro tradicional de São Vicente, com acesso à orla e serviços variados.',
+            'valuation': 'Valorização consistente com procura por moradia familiar. Boa oferta de imóveis.',
+            'risks': 'Checar documentação, IPTU e infraestrutura de acesso.'
         },
-        'jardim': {
-            'name': 'Jardim',
-            'about': 'Jardim em São Vicente oferece perfil residencial e valorização. Oferta de casas e apartamentos em bairros internos.',
-            'market': 'Valorização crescente com temporada consolidada. Perfil de comprador que valoriza estabilidade e serviços.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Verificar acesso e infraestrutura.',
-        },
+        'itarare': {
+            'title': 'Imóveis em Itararé — São Vicente',
+            'description': 'Guia completo para comprar, vender e investir em imóveis em Itararé, São Vicente. Valorização, acessos, documentação e particularidades.',
+            'about': 'Itararé combina orla e área residencial, com oferta diversificada de imóveis para moradia e temporada.',
+            'valuation': 'Valorização média com temporada relevante. Perfil de comprador que valoriza lazer e serviços.',
+            'risks': 'Verificar área de marinha, regulamentações de orla e documentação.'
+        }
     },
     'peruibe': {
         'centro': {
-            'name': 'Centro',
-            'about': 'Centro de Peruíbe combina serviços e acesso. Oferta de apartamentos e casas para moradia e temporada.',
-            'market': 'Valorização acessível com potencial de valorização. Perfil de comprador que valoriza custo-benefício e natureza.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Verificar regularidade de documentação.',
+            'title': 'Imóveis no Centro — Peruíbe',
+            'description': 'Guia completo para comprar, vender e investir em imóveis no Centro de Peruíbe. Valorização, acessos, documentação e particularidades.',
+            'about': 'Centro de Peruíbe oferece serviços, comércio e acesso à orla. Oferta diversificada de imóveis acessíveis.',
+            'valuation': 'Valorização gradual com demanda crescente. Ambiente tranquilo e natureza preservada.',
+            'risks': 'Verificar documentação, IPTU e eventuais restrições de zoneamento.'
         },
-        'praia': {
-            'name': 'Praia',
-            'about': 'Praia de Peruíbe oferece temporada e lazer. Oferta variada de apartamentos e casas próximas ao mar.',
-            'market': 'Valorização crescente com temporada relevante. Perfil de comprador que valoriza lazer e retorno.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Atenção a áreas de marinha e ocupação.',
+        'jardim-sao-paulo': {
+            'title': 'Imóveis no Jardim São Paulo — Peruíbe',
+            'description': 'Guia completo para comprar, vender e investir em imóveis no Jardim São Paulo, Peruíbe. Valorização, acessos, documentação e particularidades.',
+            'about': 'Jardim São Paulo é um bairro tranquilo de Peruíbe, com oferta de imóveis acessíveis e ambiente familiar.',
+            'valuation': 'Valorização gradual com demanda crescente. Boa opção para primeira moradia.',
+            'risks': 'Checar documentação, IPTU e infraestrutura local.'
         },
-        'condominios': {
-            'name': 'Condomínios',
-            'about': 'Condomínios em Peruíbe oferecem perfil residencial com segurança e lazer. Oferta direcionada a famílias e investidores.',
-            'market': 'Valorização estável com temporada em alta. Perfil de comprador que valoriza experiência e retorno.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições, convenção de condomínio e ônus. Verificar regulamentação.',
-        },
+        'balneario': {
+            'title': 'Imóveis no Balneário — Peruíbe',
+            'description': 'Guia completo para comprar, vender e investir em imóveis no Balneário de Peruíbe. Valorização, acessos, documentação e particularidades.',
+            'about': 'Balneário de Peruíbe combina orla e tranquilidade, com oferta de imóveis para temporada e moradia.',
+            'valuation': 'Valorização gradual com temporada relevante. Procura por segunda residência.',
+            'risks': 'Verificar área de marinha, regulamentações de orla e documentação.'
+        }
     },
     'caraguatatuba': {
         'centro': {
-            'name': 'Centro',
-            'about': 'Centro de Caraguatatuba combina serviços, acesso e temporada. Oferta de apartamentos e casas para moradia e investimento.',
-            'market': 'Valorização acessível com temporada forte. Perfil de comprador que valoriza liquidez e lazer.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Verificar regularidade de documentação.',
+            'title': 'Imóveis no Centro — Caraguatatuba',
+            'description': 'Guia completo para comprar, vender e investir em imóveis no Centro de Caraguatatuba. Valorização, acessos, documentação e particularidades.',
+            'about': 'Centro de Caraguatatuba oferece serviços, comércio e acesso à orla. Oferta diversificada de imóveis para moradia e temporada.',
+            'valuation': 'Valorização consistente com temporada forte. Perfil de comprador que valoriza acesso e serviços.',
+            'risks': 'Verificar documentação, IPTU e eventuais restrições de zoneamento.'
         },
         'jaguaribe': {
-            'name': 'Jaguaribe',
-            'about': 'Jaguaribe oferece temporada e lazer em Caraguatatuba. Oferta variada de apartamentos e casas próximas à orla.',
-            'market': 'Valorização crescente com temporada consolidada. Perfil de comprador que valoriza lazer e retorno.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Atenção a áreas de marinha e ocupação.',
+            'title': 'Imóveis em Jaguaribe — Caraguatatuba',
+            'description': 'Guia completo para comprar, vender e investir em imóveis em Jaguaribe, Caraguatatuba. Valorização, acessos, documentação e particularidades.',
+            'about': 'Jaguaribe é conhecido por temporada e lazer, com oferta diversificada de imóveis e acesso à praia.',
+            'valuation': 'Valorização média-alta com temporada forte. Procura por segunda residência.',
+            'risks': 'Checar área de marinha, regulamentações de orla e documentação.'
         },
         'prainha': {
-            'name': 'Prainha',
-            'about': 'Prainha combina perfil familiar e oferta variada em Caraguatatuba. Próximo à orla, com comércio local.',
-            'market': 'Valorização estável com temporada relevante. Oferta de apartamentos e casas para diferentes perfis.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Verificar regularidade de ocupação e acesso.',
-        },
+            'title': 'Imóveis na Prainha — Caraguatatuba',
+            'description': 'Guia completo para comprar, vender e investir em imóveis na Prainha, Caraguatatuba. Valorização, acessos, documentação e particularidades.',
+            'about': 'Prainha é um bairro familiar de Caraguatatuba, com oferta de imóveis acessíveis e ambiente tranquilo.',
+            'valuation': 'Valorização gradual com demanda crescente. Boa opção para primeira moradia.',
+            'risks': 'Verificar documentação, IPTU e infraestrutura local.'
+        }
     },
     'ilhabela': {
+        'centro': {
+            'title': 'Imóveis no Centro — Ilhabela',
+            'description': 'Guia completo para comprar, vender e investir em imóveis no Centro de Ilhabela. Valorização, acessos, documentação e particularidades.',
+            'about': 'Centro de Ilhabela é o coração da ilha, com serviços, comércio e acesso às praias. Oferta diversificada de imóveis.',
+            'valuation': 'Valorização alta com procura por segunda residência. Temporada forte e ocupação elevada.',
+            'risks': 'Verificar regulamentações de orla, área de marinha e documentação. Atenção a restrições ambientais.'
+        },
         'vila': {
-            'name': 'Vila',
-            'about': 'Vila de Ilhabela oferece serviços e acesso. Oferta de apartamentos e casas para moradia e temporada.',
-            'market': 'Valorização alta com temporada forte. Perfil de comprador que valoriza conveniência e acesso.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Verificar regulamentação local.',
+            'title': 'Imóveis na Vila — Ilhabela',
+            'description': 'Guia completo para comprar, vender e investir em imóveis na Vila de Ilhabela. Valorização, acessos, documentação e particularidades.',
+            'about': 'Vila de Ilhabela oferece serviços, comércio e acesso às praias. Oferta diversificada de imóveis para moradia e temporada.',
+            'valuation': 'Valorização alta com demanda por segunda residência. Perfil exclusivo e natureza preservada.',
+            'risks': 'Checar regulamentações de orla, área de marinha e documentação.'
         },
         'pernambuco': {
-            'name': 'Pernambuco',
-            'about': 'Pernambuco combina temporada e natureza em Ilhabela. Oferta de casas e apartamentos com acesso à praia.',
-            'market': 'Valorização crescente com temporada relevante. Perfil de comprador que valoriza lazer e retorno.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Atenção a áreas de preservação.',
+            'title': 'Imóveis em Pernambuco — Ilhabela',
+            'description': 'Guia completo para comprar, vender e investir em imóveis em Pernambuco, Ilhabela. Valorização, acessos, documentação e particularidades.',
+            'about': 'Pernambuco é uma das praias mais famosas de Ilhabela, com oferta de imóveis de alto padrão e temporada forte.',
+            'valuation': 'Valorização alta com temporada consolidada. Procura por segunda residência de luxo.',
+            'risks': 'Verificar área de marinha, regulamentações de orla e documentação. Atenção a restrições ambientais.'
         },
         'bonete': {
-            'name': 'Bonete',
-            'about': 'Bonete oferece exclusividade e mar preservado em Ilhabela. Oferta direcionada a perfis de alto padrão.',
-            'market': 'Valorização alta com procura por exclusividade. Temporada consolidada e fluxo de segunda residência.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Verificar regulamentação de área preservada.',
-        },
+            'title': 'Imóveis em Bonete — Ilhabela',
+            'description': 'Guia completo para comprar, vender e investir em imóveis em Bonete, Ilhabela. Valorização, acessos, documentação e particularidades.',
+            'about': 'Bonete é uma das praias mais exclusivas de Ilhabela, com oferta limitada de imóveis e natureza preservada.',
+            'valuation': 'Valorização muito alta com oferta limitada. Perfil exclusivo e temporada forte.',
+            'risks': 'Checar regulamentações de orla, área de marinha e documentação. Verificar acesso e infraestrutura.'
+        }
     },
     'sao-sebastiao': {
         'centro-historico': {
-            'name': 'Centro Histórico',
-            'about': 'Centro Histórico de São Sebastião combina história, acesso e serviços. Oferta de apartamentos e casas no coração da cidade.',
-            'market': 'Valorização estável com temporada relevante. Perfil de comprador que valoriza cultura e conveniência.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Verificar regularidade de área histórica.',
+            'title': 'Imóveis no Centro Histórico — São Sebastião',
+            'description': 'Guia completo para comprar, vender e investir em imóveis no Centro Histórico de São Sebastião. Valorização, acessos, documentação e particularidades.',
+            'about': 'Centro Histórico de São Sebastião combina história, cultura e serviços. Oferta diversificada de imóveis para moradia e temporada.',
+            'valuation': 'Valorização média-alta com demanda por moradia permanente e temporada. Infraestrutura consolidada.',
+            'risks': 'Verificar documentação, IPTU e eventuais restrições de zoneamento.'
         },
         'juquehy': {
-            'name': 'Juquehy',
-            'about': 'Juquehy oferece temporada e lazer de alto padrão em São Sebastião. Oferta de casas e apartamentos próximos à orla.',
-            'market': 'Valorização alta com temporada forte. Perfil de comprador que valoriza exclusividade e retorno.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Atenção a áreas de marinha e condomínios.',
+            'title': 'Imóveis em Juquehy — São Sebastião',
+            'description': 'Guia completo para comprar, vender e investir em imóveis em Juquehy, São Sebastião. Valorização, acessos, documentação e particularidades.',
+            'about': 'Juquehy é uma das praias mais procuradas do Litoral Norte, com oferta de imóveis de alto padrão e temporada forte.',
+            'valuation': 'Valorização alta com temporada consolidada. Procura por segunda residência de luxo.',
+            'risks': 'Verificar área de marinha, regulamentações de orla e documentação. Atenção a restrições ambientais.'
         },
         'maresias': {
-            'name': 'Maresias',
-            'about': 'Maresias combina temporada forte e perfil internacional em São Sebastião. Oferta de apartamentos e casas bem posicionados.',
-            'market': 'Valorização crescente com temporada consolidada. Perfil de comprador que valoriza lazer e rentabilidade.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Verificar regulamentação de orla e acesso.',
-        },
+            'title': 'Imóveis em Maresias — São Sebastião',
+            'description': 'Guia completo para comprar, vender e investir em imóveis em Maresias, São Sebastião. Valorização, acessos, documentação e particularidades.',
+            'about': 'Maresias é referência de surf, juventude e temporada, com oferta de imóveis para moradia e lazer.',
+            'valuation': 'Valorização média-alta com temporada forte. Perfil de comprador jovem e internacional.',
+            'risks': 'Checar regulamentações de orla, área de marinha e documentação. Verificar infraestrutura de acesso.'
+        }
     },
     'ubatuba': {
         'centro': {
-            'name': 'Centro',
-            'about': 'Centro de Ubatuba combina acesso e temporada. Oferta de apartamentos e casas para moradia e investimento.',
-            'market': 'Valorização acessível com temporada relevante. Perfil de comprador que valoriza natureza e retorno.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Verificar regularidade de documentação.',
+            'title': 'Imóveis no Centro — Ubatuba',
+            'description': 'Guia completo para comprar, vender e investir em imóveis no Centro de Ubatuba. Valorização, acessos, documentação e particularidades.',
+            'about': 'Centro de Ubatuba oferece serviços, comércio e acesso às praias. Oferta diversificada de imóveis para moradia e temporada.',
+            'valuation': 'Valorização média com temporada relevante. Perfil de comprador que valoriza natureza e lazer.',
+            'risks': 'Verificar documentação, IPTU e eventuais restrições de zoneamento.'
         },
         'itagua': {
-            'name': 'Itaguá',
-            'about': 'Itaguá oferece acesso e temporada em Ubatuba. Oferta variada de apartamentos e casas próximas à orla.',
-            'market': 'Valorização crescente com temporada consolidada. Perfil de comprador que valoriza lazer e potencial.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Atenção a áreas de marinha e ocupação.',
+            'title': 'Imóveis em Itagua — Ubatuba',
+            'description': 'Guia completo para comprar, vender e investir em imóveis em Itagua, Ubatuba. Valorização, acessos, documentação e particularidades.',
+            'about': 'Itagua é um bairro de Ubatuba com oferta diversificada de imóveis, próximo às praias e com estrutura de serviços.',
+            'valuation': 'Valorização gradual com demanda crescente. Boa opção para moradia e temporada.',
+            'risks': 'Checar documentação, IPTU e infraestrutura local.'
         },
         'sao-lourenco': {
-            'name': 'São Lourenço',
-            'about': 'São Lourenço combina perfil residencial e lazer em Ubatuba. Oferta de casas e apartamentos em bairros tranquilos.',
-            'market': 'Valorização estável com temporada relevante. Perfil de comprador que valoriza calmaria e retorno.',
-            'docs': 'Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Verificar acesso e regularidade.',
-        },
-    },
+            'title': 'Imóveis em São Lourenço — Ubatuba',
+            'description': 'Guia completo para comprar, vender e investir em imóveis em São Lourenço, Ubatuba. Valorização, acessos, documentação e particularidades.',
+            'about': 'São Lourenço é um bairro tranquilo de Ubatuba, com oferta de imóveis acessíveis e proximidade com a natureza.',
+            'valuation': 'Valorização gradual com demanda crescente. Ambiente residencial e tranquilo.',
+            'risks': 'Verificar documentação, IPTU e infraestrutura local.'
+        }
+    }
 }
 
-for city, neighborhoods in city_neighborhoods.items():
-    for slug, data in neighborhoods.items():
-        p = Path(f'bairros/{city}/{slug}.html')
-        if not p.exists():
+img_map = {
+    'santos': 'img/santos-apartamento-vista-mar.webp',
+    'guaruja': 'img/gua-casa-duplex.webp',
+    'praia-grande': 'img/pg-studio-moderno.webp',
+    'bertioga': 'img/berta-alto-padrao.webp',
+    'itanhaem': 'img/it-casa-terrea.webp',
+    'mongagua': 'img/mon-ap-compacto.webp',
+    'sao-vicente': 'img/sv-cobertura-duplex.webp',
+    'peruibe': 'img/per-sobrado.webp',
+    'caraguatatuba': 'img/default-home.jpg',
+    'ilhabela': 'img/default-home.jpg',
+    'sao-sebastiao': 'img/default-home.jpg',
+    'ubatuba': 'img/default-home.jpg',
+}
+
+base = Path('bairros')
+for city_dir in sorted(base.iterdir()):
+    if not city_dir.is_dir() or city_dir.name in ('index.html',):
+        continue
+    city = city_dir.name
+    img = img_map.get(city, 'img/default-home.jpg')
+    
+    for p in sorted(city_dir.glob('*.html')):
+        if p.name == 'index.html':
             continue
+        neighborhood = p.stem
+        data = neighborhood_data.get(city, {}).get(neighborhood)
+        if not data:
+            print(f'skip {p}: no data')
+            continue
+        
         txt = p.read_text(encoding='utf-8', errors='ignore')
-        # replace generic cards with specific content
-        old_about = '          <p>Gonzaga é conhecido por orla famosa, comércio e valorização, com acesso rodovias e transporte público e vista/alcance para orla e pontos turísticos.</p>'
-        if old_about in txt:
-            txt = txt.replace(old_about, f'          <p>{data["about"]}</p>')
-        old_market = '          <p>Valorização média do m², taxa de ocupação na temporada e perfil do comprador em Santos.</p>'
-        if old_market in txt:
-            txt = txt.replace(old_market, f'          <p>{data["market"]}</p>')
-        old_docs = '          <p>Checklist essencial: escritura, IPTU, débitos, restrições, área de marinha e ônus.</p>'
-        if old_docs in txt:
-            txt = txt.replace(old_docs, f'          <p>{data["docs"]}</p>')
+        
+        # Update title and meta
+        txt = txt.replace(f'<title>Imóveis em {neighborhood.replace("-", " ").title()} — {city.replace("-", " ").title()} | Praia Digital</title>',
+                         f'<title>{data["title"]} | Praia Digital</title>')
+        txt = txt.replace(f'<meta name="description" content="Guia completo para comprar, vender e investir em imóveis em {neighborhood.replace("-", " ").title()}, {city.replace("-", " ").title()}. Valorização, acessos, documentação e particularidades do bairro.">',
+                         f'<meta name="description" content="{data["description"]}">')
+        txt = txt.replace(f'<meta property="og:title" content="Imóveis em {neighborhood.replace("-", " ").title()} — {city.replace("-", " ").title()}">',
+                         f'<meta property="og:title" content="{data["title"]}">')
+        txt = txt.replace(f'<meta property="og:description" content="Guia completo para comprar, vender e investir em imóveis em {neighborhood.replace("-", " ").title()}, {city.replace("-", " ").title()}.">',
+                         f'<meta property="og:description" content="{data["description"]}">')
+        
+        # Update cards content
+        txt = txt.replace('<h3>Sobre o bairro</h3>', '<h3>Sobre o bairro</h3>')
+        txt = txt.replace('<h3>Valorização e mercado</h3>', '<h3>Valorização e mercado</h3>')
+        txt = txt.replace('<h3>Documentação e riscos</h3>', '<h3>Documentação e riscos</h3>')
+        
+        # Find and replace card contents
+        import re
+        txt = re.sub(r'<p>Gonzaga combina.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Pitangueiras é conhecido.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Guilhermina é conhecido.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Centro de Bertioga combina.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Riviera de Bertioga é um dos bairros.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Guaratuba oferece natureza.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Centro de Itanhaém combina.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Cibratel é conhecido.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Jardim São Fernando oferece.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Centro de Mongaguá oferece.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Jardim São Paulo é um bairro tranquilo.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Balneário de Mongaguá combina.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Centro de São Vicente é o coração.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Gonzaguinha é um bairro tradicional.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Itararé combina orla.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Centro de Peruíbe oferece.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Jardim São Paulo é um bairro tranquilo.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Balneário de Peruíbe combina.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Centro de Caraguatatuba oferece.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Jaguaribe é conhecido.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Prainha é um bairro familiar.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Centro de Ilhabela é o coração.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Vila de Ilhabela oferece.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Pernambuco é uma das praias.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Bonete é uma das praias.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Centro Histórico de São Sebastião combina.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Juquehy é uma das praias.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Maresias é referência de surf.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Centro de Ubatuba oferece.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>Itagua é um bairro de Ubatuba.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        txt = re.sub(r'<p>São Lourenço é um bairro tranquilo.*?</p>', f'<p>{data["about"]}</p>', txt, count=1, flags=re.DOTALL)
+        
+        # Update valuation and risks cards
+        txt = txt.replace('<p>Valorização média do m² em alta; temporada forte e procura por moradia o ano todo. Perfil de comprador que valoriza serviços, acesso e renda por locação.</p>',
+                         f'<p>{data["valuation"]}</p>')
+        txt = txt.replace('<p>Valorização média do m², taxa de ocupação na temporada e perfil do comprador em Guaruja.</p>',
+                         f'<p>{data["valuation"]}</p>')
+        txt = txt.replace('<p>Valorização média do m², taxa de ocupação na temporada e perfil do comprador em Praia Grande.</p>',
+                         f'<p>{data["valuation"]}</p>')
+        txt = txt.replace('<p>Valorização média do m², taxa de ocupação na temporada e perfil do comprador em Praia Grande.</p>',
+                         f'<p>{data["valuation"]}</p>')
+        
+        txt = txt.replace('<p>Checklist essencial: escritura, IPTU, débitos, restrições, área de marinha e ônus. Em orla, atenção a marinas e restrições ambientais.</p>',
+                         f'<p>{data["risks"]}</p>')
+        txt = txt.replace('<p>Checklist essencial: escritura, IPTU, débitos, restrições, área de marinha e ônus. Atenção a condomínios e regulamentações de orla.</p>',
+                         f'<p>{data["risks"]}</p>')
+        txt = txt.replace('<p>Checklist essencial: escritura, IPTU, débitos, restrições e ônus. Verificar regularidade de documentação e infraestrutura.</p>',
+                         f'<p>{data["risks"]}</p>')
+        
+        # Add image if not present
+        if img not in txt:
+            img_html = f'<img src="https://praia.digital/{img}" alt="{neighborhood}" style="max-width:100%;border-radius:12px;margin-top:18px;">'
+            txt = txt.replace('</div>\n\n      <a class="cta"', f'{img_html}\n\n      <a class="cta"')
+        
+        # Update OG image
+        txt = txt.replace('content="https://praia.digital/img/default-home.jpg"', f'content="https://praia.digital/{img}"')
+        
         p.write_text(txt, encoding='utf-8')
         print(f'updated {p}')
+    
+    # Update city index
+    idx = city_dir / 'index.html'
+    if idx.exists():
+        txt = idx.read_text(encoding='utf-8', errors='ignore')
+        if img not in txt:
+            marker = '<div class="highlight">'
+            img_html = f'<img src="https://praia.digital/{img}" alt="{city}" style="max-width:100%;border-radius:12px;margin-top:18px;">\n\n      <div class="highlight">'
+            txt = txt.replace(marker, img_html, 1)
+            txt = txt.replace('content="https://praia.digital/img/default-home.jpg"', f'content="https://praia.digital/{img}"')
+            idx.write_text(txt, encoding='utf-8')
+            print(f'updated {idx}')
 
 print('done')
