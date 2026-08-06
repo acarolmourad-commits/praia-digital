@@ -24,6 +24,17 @@ def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(securit
         raise HTTPException(status_code=401, detail="Invalid token.")
     return {"id": int(user_id), "role": role}
 
+def get_current_user_optional(credentials: HTTPAuthorizationCredentials = Depends(security)):
+    token = credentials.credentials
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+    except Exception:
+        return None
+    user_id = payload.get("sub")
+    if not user_id:
+        return None
+    return {"id": int(user_id), "role": payload.get("role")}
+
 def admin_required(user=Depends(get_current_user)):
     if user["role"] != "admin":
         raise HTTPException(status_code=403, detail="Admin access required.")

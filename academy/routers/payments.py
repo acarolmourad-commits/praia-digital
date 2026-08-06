@@ -1,14 +1,17 @@
 from fastapi import APIRouter, Depends, HTTPException
+from fastapi.security import HTTPBearer
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
 from typing import Optional, List
 from academy.core.database import get_db
 from academy.core.models import Course, Enrollment, EnrollmentStatus, Payment, PaymentStatus
-from academy.core.security import get_current_user
+from academy.core.security import get_current_user_optional
 import os
 import requests
 
 router = APIRouter(prefix="/academy", tags=["payments"])
+
+optional_bearer = HTTPBearer(auto_error=False)
 
 class CheckoutItem(BaseModel):
     course_id: int
@@ -23,7 +26,7 @@ class CheckoutPayload(BaseModel):
 MERCADOPAGO_API = os.getenv("MERCADOPAGO_API_URL", "https://api.mercadopago.com/v1")
 MERCADOPAGO_TOKEN = os.getenv("MERCADOPAGO_TOKEN", "")
 MERCADOPAGO_PUBLIC_KEY = os.getenv("MERCADOPAGO_PUBLIC_KEY", "")
-BASE_URL = os.getenv("BASE_URL", "http://localhost:8000")
+BASE_URL = os.getenv("BASE_URL", "https://academy.praia.digital")
 
 
 def _build_payment_payload(enrollment_id: int, total: int, payer: dict):
@@ -56,7 +59,12 @@ def _build_payment_payload(enrollment_id: int, total: int, payer: dict):
 
 
 @router.post("/checkout")
-def public_checkout(payload: CheckoutPayload, db: Session = Depends(get_db), user=Depends(get_current_user)):
+def public_checkout(
+    payload: CheckoutPayload,
+    db: Session = Depends(get_db),
+    user=Depends(get_current_user_optional),
+    credentials=Depends(optional_bearer),
+):
     courses = db.query(Course).filter(Course.id.in_([i.course_id for i in payload.items])).all()
     if not courses:
         raise HTTPException(status_code=404, detail="Cursos não encontrados")
