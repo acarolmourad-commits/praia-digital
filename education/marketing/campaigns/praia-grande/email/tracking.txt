@@ -1,0 +1,6 @@
+Campaign: Guia de Imóveis em Praia Grande — Guilhermina, Ocian e Tupi
+Date: 2026-08-06
+City: praia-grande
+UTM: utm_source=outbound&utm_medium=email&utm_campaign=lead-magnet-praia-grande-2026-08-06
+Subject: Guia exclusivo de imóveis em Praia Grande — Guilhermina, Ocian e Tupi
+Status: ready

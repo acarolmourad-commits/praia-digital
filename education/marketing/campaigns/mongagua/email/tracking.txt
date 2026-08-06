@@ -1,0 +1,6 @@
+Campaign: Guia de Imóveis em Mongaguá — Centro, Jardim São Paulo e Balneario
+Date: 2026-08-06
+City: mongagua
+UTM: utm_source=outbound&utm_medium=email&utm_campaign=lead-magnet-mongagua-2026-08-06
+Subject: Guia exclusivo de imóveis em Mongaguá — Centro, Jardim São Paulo e Balneário
+Status: ready

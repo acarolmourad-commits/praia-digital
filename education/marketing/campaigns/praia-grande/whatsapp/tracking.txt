@@ -1,0 +1,5 @@
+Campaign: Guia de Imóveis em Praia Grande — Guilhermina, Ocian e Tupi
+Date: 2026-08-06
+City: praia-grande
+Phone: (11) 95434-6288
+Status: ready

@@ -1,0 +1,5 @@
+Campaign: Guia de Imóveis em Peruíbe — Centro, Jardim São Paulo e Balneário
+Date: 2026-08-06
+City: peruibe
+Phone: (11) 95434-6288
+Status: ready

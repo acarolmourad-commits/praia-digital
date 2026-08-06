@@ -1,0 +1,5 @@
+Campaign: Guia de Imóveis em Bertioga — Centro, Riviera e Guaratuba
+Date: 2026-08-06
+City: bertioga
+Phone: (11) 95434-6288
+Status: ready

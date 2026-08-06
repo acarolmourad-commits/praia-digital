@@ -1,0 +1,6 @@
+Campaign: Guia de Imóveis em Peruíbe — Centro, Jardim São Paulo e Balneário
+Date: 2026-08-06
+City: peruibe
+UTM: utm_source=outbound&utm_medium=email&utm_campaign=lead-magnet-peruibe-2026-08-06
+Subject: Guia exclusivo de imóveis em Peruíbe — Centro, Jardim São Paulo e Balneário
+Status: ready

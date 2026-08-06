@@ -1,0 +1,5 @@
+Campaign: Guia de Imóveis em Caraguatatuba — Centro, Massaguaçu e Porto Novo
+Date: 2026-08-06
+City: caraguatatuba
+Phone: (11) 95434-6288
+Status: ready
