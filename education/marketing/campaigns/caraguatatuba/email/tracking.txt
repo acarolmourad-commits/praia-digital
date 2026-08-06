@@ -1,0 +1,6 @@
+Campaign: Guia de Imóveis em Caraguatatuba — Centro, Massaguaçu e Porto Novo
+Date: 2026-08-06
+City: caraguatatuba
+UTM: utm_source=outbound&utm_medium=email&utm_campaign=lead-magnet-caraguatatuba-2026-08-06
+Subject: Guia exclusivo de imóveis em Caraguatatuba — Centro, Massaguaçu e Porto Novo
+Status: ready

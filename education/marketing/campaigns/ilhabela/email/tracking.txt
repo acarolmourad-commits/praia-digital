@@ -1,0 +1,6 @@
+Campaign: Guia de Imóveis em Ilhabela — Centro, Vila e Sul da Ilha
+Date: 2026-08-06
+City: ilhabela
+UTM: utm_source=outbound&utm_medium=email&utm_campaign=lead-magnet-ilhabela-2026-08-06
+Subject: Guia exclusivo de imóveis em Ilhabela — Centro, Vila e Sul da Ilha
+Status: ready

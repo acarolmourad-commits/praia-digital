@@ -1,0 +1,5 @@
+Campaign: Guia de Imóveis em Santos — Orla, Gonzaga e Embaré
+Date: 2026-08-06
+City: santos
+Phone: (11) 95434-6288
+Status: ready

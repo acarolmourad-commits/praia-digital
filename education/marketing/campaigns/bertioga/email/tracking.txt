@@ -1,0 +1,6 @@
+Campaign: Guia de Imóveis em Bertioga — Centro, Riviera e Guaratuba
+Date: 2026-08-06
+City: bertioga
+UTM: utm_source=outbound&utm_medium=email&utm_campaign=lead-magnet-bertioga-2026-08-06
+Subject: Guia exclusivo de imóveis em Bertioga — Centro, Riviera e Guaratuba
+Status: ready

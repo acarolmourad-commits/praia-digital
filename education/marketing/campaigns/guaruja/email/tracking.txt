@@ -1,0 +1,6 @@
+Campaign: Guia de Imóveis no Guarujá — Pitangueiras, Astúrias e Enseada
+Date: 2026-08-06
+City: guaruja
+UTM: utm_source=outbound&utm_medium=email&utm_campaign=lead-magnet-guaruja-2026-08-06
+Subject: Guia exclusivo de imóveis no Guarujá — Pitangueiras, Astúrias e Enseada
+Status: ready

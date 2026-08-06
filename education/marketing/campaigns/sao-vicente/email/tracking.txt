@@ -1,0 +1,6 @@
+Campaign: Guia de Imóveis em São Vicente — Centro, Gonzaguinha e Itararé
+Date: 2026-08-06
+City: sao-vicente
+UTM: utm_source=outbound&utm_medium=email&utm_campaign=lead-magnet-sao-vicente-2026-08-06
+Subject: Guia exclusivo de imóveis em São Vicente — Centro, Gonzaguinha e Itararé
+Status: ready

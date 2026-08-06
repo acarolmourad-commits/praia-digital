@@ -1,0 +1,6 @@
+Campaign: Guia de Imóveis em Itanhaém — Centro, Cibratel e Jardim São Fernando
+Date: 2026-08-06
+City: itanhaem
+UTM: utm_source=outbound&utm_medium=email&utm_campaign=lead-magnet-itanhaem-2026-08-06
+Subject: Guia exclusivo de imóveis em Itanhaém — Centro, Cibratel e Jardim São Fernando
+Status: ready
