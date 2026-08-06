@@ -1,5 +1,5 @@
-# Meta Ads — Como Vender Imóveis de Alto Padrão no Litoral
-Público: 28 a 55 anos, interesse em imóveis, luxo, litoral
+# Meta Ads — venda-imoveis-alto-padrao-litoral
+Público: 25 a 55 anos, interesse no tema, litoral
 Objetivo: leads
 Formato: vídeo + carrossel
 Orçamento sugerido: R$ 40 a R$ 120/dia

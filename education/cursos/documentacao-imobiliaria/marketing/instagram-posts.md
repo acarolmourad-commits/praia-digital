@@ -1,11 +1,10 @@
-# Posts Instagram — Documentação Imobiliária
-1. Post: dica de documentação
-2. Reels: checklist em 30s
-3. Carrossel: documentos essenciais
-4. Post: prazo que evita dor
-5. Reels: case de venda rápida
-6. Carrossel: método simples
-7. Post: escritura sem erro
-8. Reels: erro comum
-9. Carrossel: métricas básicas
-10. Post: comece hoje
+1. Post: dica sobre documentacao imobiliaria
+2. Post: dica sobre documentacao imobiliaria
+3. Post: dica sobre documentacao imobiliaria
+4. Post: dica sobre documentacao imobiliaria
+5. Post: dica sobre documentacao imobiliaria
+6. Post: dica sobre documentacao imobiliaria
+7. Post: dica sobre documentacao imobiliaria
+8. Post: dica sobre documentacao imobiliaria
+9. Post: dica sobre documentacao imobiliaria
+10. Post: dica sobre documentacao imobiliaria

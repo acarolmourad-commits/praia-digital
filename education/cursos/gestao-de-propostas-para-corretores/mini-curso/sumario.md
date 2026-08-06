@@ -1,5 +1,5 @@
-# Mini Curso — Gestão de Propostas para Corretores
-## Aula 1 — Fundamentos da gestão de propostas (8 min)
-## Aula 2 — Criação e estrutura (12 min)
-## Aula 3 — Negociação e fechamento (10 min)
-## Bônus — Planilha de propostas
+# Mini Curso — Gestao De Propostas Para Corretores
+## Aula 1 — Visão geral (8 min)
+## Aula 2 — Conceitos essenciais (12 min)
+## Aula 3 — Aplicação prática (10 min)
+## Bônus — Material complementar

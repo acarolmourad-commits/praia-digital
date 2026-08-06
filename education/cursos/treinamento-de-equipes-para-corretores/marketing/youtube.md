@@ -1,4 +1,4 @@
-# Roteiro YouTube — Treinamento de Equipes para Corretores
+# Roteiro YouTube — Treinamento De Equipes Para Corretores
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado

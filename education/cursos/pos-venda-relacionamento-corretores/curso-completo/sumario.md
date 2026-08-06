@@ -1,5 +1,5 @@
-# Sumário do Curso: Pós-venda e Relacionamento para Corretores
-- Módulo 1: Fundamentos do Pós-venda no Litoral
-- Módulo 2: Acompanhamento e Relacionamento
-- Módulo 3: Indicação e Fidelização
-- Módulo 4: Métricas e Crescimento
+# Sumário do Curso: Pos Venda Relacionamento Corretores
+- Módulo 1: Fundamentos
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

@@ -1,21 +1,21 @@
-# Sequência de E-mails — Treinamento de Equipes para Corretores
+# Sequência de E-mails — Treinamento De Equipes Para Corretores
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: Treinamento de Equipes para Corretores no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Treinamento De Equipes Para Corretores (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: imobiliária treinou equipe e aumentou vendas
+Assunto: Case prático de Treinamento De Equipes Para Corretores
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Treinar equipe é complicado?"
+Assunto: "Treinamento De Equipes Para Corretores é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno aumentou vendas em 30%
+Assunto: Aluno obteve resultado com Treinamento De Equipes Para Corretores
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

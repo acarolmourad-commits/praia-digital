@@ -1,5 +1,5 @@
-# Mini Curso — Apresentação de Imóveis para Corretores
-## Aula 1 — Fundamentos da apresentação (8 min)
-## Aula 2 — Roteiro e história (12 min)
-## Aula 3 — Experiência e valor (10 min)
-## Bônus — Planilha de imóveis
+# Mini Curso — Apresentacao Imoveis Para Corretores
+## Aula 1 — Visão geral (8 min)
+## Aula 2 — Conceitos essenciais (12 min)
+## Aula 3 — Aplicação prática (10 min)
+## Bônus — Material complementar

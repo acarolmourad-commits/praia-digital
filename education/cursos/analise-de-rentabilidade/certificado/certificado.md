@@ -1,7 +1,6 @@
-# Certificado — Análise de Rentabilidade
+# Certificado — Analise De Rentabilidade
 Modelo: Praia Digital Academy
-Curso: Análise de Rentabilidade
-Carga horária: 4 horas
+Curso: Analise De Rentabilidade
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

@@ -1,81 +1,60 @@
-# Módulo 1 — Fundamentos da Temporada
-
+# Módulo 1 — Conteúdo Premium
 ## Introdução
-Entenda o mercado de temporada no litoral, o perfil do hóspede na Booking e as expectativas de retorno do seu imóvel. A Booking tem um público distinto do Airbnb, com preferência por experiência, avaliações e serviços.
+Neste módulo você vai dominar booking do zero com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 1.1 — O mercado de temporada no litoral
-A temporada no litoral paulista depende de sazonalidade, eventos e perfil do hóspede. A Booking concentra um público que valoriza avaliações, qualidade do anúncio e experiência completa.
+## Aula 1.1 — Visão geral do mercado de booking do zero no litoral paulista
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Dados que importam:**
-- Alta temporada: dezembro a março, com picos em feriados prolongados.
-- Baixa temporada: abril a novembro, com ocupação menor e preços menores.
-- Hóspede Booking: valoriza avaliações anteriores, qualidade das fotos e clareza das regras.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Apartamento em Guarujá com 2 quartos começou na Booking em 2022 com preço de R$ 280/noite. Após otimização do anúncio e acúmulo de avaliações, atingiu R$ 420/noite na alta temporada e ocupação de 85%.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Estudo de caso:**
-Casa em Bertioga cadastrada em 2023 com piscina e churrasqueira atingiu 90% de ocupação no verão. Hoje tem reservas antecipadas até março do ano seguinte.
+## Aula 1.2 — Conceitos essenciais: termos, métricas e particularidades locais
+Fundamentos, ferramentas e fluxos recomendados para booking do zero no litoral.
 
-## Aula 1.2 — Perfil do hóspede no Booking
-**Famílias:**
-- Buscam conforto, cozinha completa, área kids e proximidade da praia.
-- Valorizam avaliações positivas e segurança.
+**Ferramentas recomendadas:**
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
-**Casais:**
-- Valorizam vista, privacidade, acesso rápido e atmosfera romântica.
-- Preferem estadias curtas e experiência premium.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Grupos:**
-- Priorizam capacidade, estacionamento, áreas comuns e preço por pessoa.
-- Valorizam flexibilidade de horários e regras simples.
+## Aula 1.3 — Estudo de caso real: como um aluno aplicou o método e obteve resultado em 30 dias
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Diferença para Airbnb:**
-- Hóspede Booking tende a ser mais exigente com limpeza e organização.
-- Avaliações tem peso maior na decisão de reserva.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-## Aula 1.3 — ROI e expectativa de resultado
-**Cálculo simplificado:**
-- Receita bruta = diária média x ocupação x 365
-- Custos = limpeza + manutenção + canal + energia + água + internet
-- Lucro líquido = receita bruta - custos
-- ROI = lucro líquido / investimento total
-
-**Expectativa realista:**
-- Ocupação média saudável: 35% a 55% no ano.
-- Receita por diária: depende de cidade, bairro e temporada.
-- ROI esperado: de 10% a 22% ao ano.
-
-**Exemplo real:**
-Apartamento em Guarujá com R$ 280 mil de investimento:
-- Receita anual: R$ 64 mil
-- Custos anuais: R$ 16 mil
-- Lucro: R$ 48 mil
-- ROI: 17% ao ano
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
 ## Exercício
-Faça o diagnóstico do seu imóvel: tipo, localização, diferenciais e potencial de temporada.
+Faça o diagnóstico do seu cenário atual em booking do zero: liste pontos fortes, fracos, oportunidades e ameaças.
 
 ## Resumo
-- Temporada exige preparo e método.
-- Hóspede Booking valoriza avaliações.
-- ROI depende de preço e ocupação.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Tipo de imóvel definido
-- [ ] Região escolhida
-- [ ] Diferenciais mapeados
-- [ ] Meta de receita definida
-- [ ] Prazo de retorno definido
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de diagnóstico
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Booking
-- Calculadora de temporada
-- Planilha de ROI
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
 ## Prompt de IA
-"Atue como especialista em temporada no litoral. Faça um diagnóstico do meu imóvel com base nestas respostas: [insira suas respostas]."
+Atue como especialista em booking do zero no litoral paulista. Faça um diagnóstico personalizado com base nestas respostas: [insira suas respostas].

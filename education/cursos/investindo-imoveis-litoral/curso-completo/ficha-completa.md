@@ -1,12 +1,12 @@
-# Curso: Investindo em Imóveis no Litoral
+# Curso: Investindo Imoveis Litoral
 ## Nome Comercial
-**Investindo em Imóveis no Litoral: Método Prático para Comprar com Segurança e Rentabilidade no Litoral Paulista**
+**Investindo Imoveis Litoral: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Do diagnóstico ao fechamento: aprenda a escolher, negociar e transformar imóveis no litoral em ativos rentáveis.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 45 dias, você será capaz de analisar, escolher e negociar imóveis no litoral com segurança, evitando golpes e maximizando rentabilidade.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
 - Investidores iniciantes e intermediários
@@ -22,145 +22,134 @@ Iniciante → Intermediário
 
 ## Tempo Estimado
 10 horas de aulas (48 aulas de 10 a 18 min)
-Total: 10 horas
+Total: 10 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 497
-À vista: R$ 397
-Parcelado: 12x de R$ 34,74
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
 Mini curso: R$ 147
-E-book: R$ 24,90
+E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist de avaliação de imóvel
-- Planilha de rentabilidade
-- Modelos de proposta e contrato
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Compre seu primeiro imóvel no litoral com segurança e rentabilidade"**
+**"Investindo Imoveis Litoral"**
 
 ## Big Idea
-Comprar no litoral exige método, análise de riscos e domínio de particularidades locais que não são ensinadas em cursos genéricos.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
-- **Curso completo:** R$ 497
+- **Curso completo:** R$ 297
 - **Mini curso:** R$ 147
-- **E-book:** R$ 24,90
+- **E-book:** R$ 19,90
 
 ## Avatar
 **Nome:** Carlos / Fernanda
-**Idade:** 28 a 55 anos
-**Renda:** R$ 5k a R$ 25k/mês
-**Objetivo:** comprar imóvel no litoral com segurança
-**Dificuldades:** medo de golpe, falta de conhecimento, dificuldade de escolha
-**Desejos:** imóvel próprio, rentabilidade, tranquilidade, aposentadoria
+**Idade:** 25 a 55 anos
+**Renda:** R$ 3k a R$ 20k/mês
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Medo de golpes
-- Falta de conhecimento sobre o mercado
-- Dificuldade de escolher o imóvel certo
-- Dúvidas sobre documentação
-- Falta de clareza sobre rentabilidade
+- Falta de método
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Segurança na compra
-- Imóvel que valoriza
-- Rentabilidade com temporada
-- Tranquilidade
-- Aposentadoria
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
+- Segurança
+- Autoridade local
 
 ## Objeções
-- "Mercado perigoso"
-- "Preço alto"
-- "Documentação complicada"
-- "Não tenho dinheiro"
-- "Não conheço o litoral"
+- "Muito caro"
+- "Não funciona"
+- "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- Compra segura
-- Imóvel escolhido com método
-- Documentação resolvida
-- Rentabilidade planejada
-- Tranquilidade
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
-### Módulo 1 — Fundamentos do Mercado no Litoral
-Aula 1.1 — Mercado imobiliário do litoral paulista
-Aula 1.2 — Perfil do comprador e investidor
-Aula 1.3 — Riscos e oportunidades
-Exercício: diagnóstico do seu perfil
+### Módulo 1 — Fundamentos
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Escolha e Avaliação do Imóvel
-Aula 2.1 — Tipos de imóvel: casa, apartamento, terreno
-Aula 2.2 — Localização: cidade, bairro, acesso
-Aula 2.3 — Avaliação de valor e comparáveis
-Exercício: seleção de 3 imóveis
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Documentação e Negociação
-Aula 3.1 — Documentação essencial
-Aula 3.2 — Financiamento e entrada
-Aula 3.3 — Negociação e fechamento
-Exercício: revisão de documentação
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Pós-Compra e Rentabilidade
-Aula 4.1 — Reforma e preparo
-Aula 4.2 — Locação por temporada
-Aula 4.3 — Gestão e ROI
-Exercício: plano de rentabilidade
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
+Exercício: plano de crescimento
 
 ## Carga Horária
-10 horas
+10 horas de aulas (48 aulas de 10 a 18 min)
+Total: 10 horas
 
 ## Material Complementar
-- Checklist de avaliação de imóvel
-- Planilha de rentabilidade
-- Modelos de proposta e contrato
 - PDFs por módulo
+- Templates
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de avaliação de imóvel
-- Checklist de documentação
-- Checklist de negociação
-- Checklist de pós-compra
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de rentabilidade
-- Planilha de comparáveis
-- Planilha de financiamento
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de proposta
-- Modelo de contrato
-- Modelo de vistoria
+- Modelo aplicável
 
 ## Scripts
-- Script de negociação
-- Script de visita
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para gerar análise de imóvel e proposta.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: diagnóstico do perfil
-- Exercício 2: seleção de imóveis
-- Exercício 3: revisão documentação
-- Exercício 4: plano de rentabilidade
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: análise de imóvel aplicada
+Prova prática: aplicação do método
 
 ## FAQ
-1. Preciso de experiência? Não.
-2. Quanto preciso para começar? De R$ 50k a R$ 200k.
-3. É seguro? Com método, sim.
-4. Qual a melhor cidade? Depende do objetivo.
-5. Vale a pena para temporada? Sim.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
 [vendas.html]
@@ -193,17 +182,15 @@ Prova prática: análise de imóvel aplicada
 [marketing/google-ads.md]
 
 ## CTA
-"Compre seu primeiro imóvel no litoral com método."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Mentoria individual: R$ 3.000
-- Acompanhamento: R$ 4.500
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
 - Mini curso: R$ 147
-- E-book: R$ 24,90
+- E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Airbnb do Zero
-- Curso de PriceLabs Completo
-- Curso de Gestão Profissional da Locação
+- Outros cursos da Praia Digital Academy

@@ -1,21 +1,21 @@
-# Sequência de E-mails — Gestão de Locação no Litoral
+# Sequência de E-mails — Gestao De Locacao No Litoral
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: Gestão de Locação no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Gestao De Locacao No Litoral (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: gestor aumentou rentabilidade no litoral
+Assunto: Case prático de Gestao De Locacao No Litoral
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Gestão de locação é complicada?"
+Assunto: "Gestao De Locacao No Litoral é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno reduziu ociosidade em 20%
+Assunto: Aluno obteve resultado com Gestao De Locacao No Litoral
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

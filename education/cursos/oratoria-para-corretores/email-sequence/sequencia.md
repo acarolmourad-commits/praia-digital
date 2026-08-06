@@ -1,21 +1,21 @@
-# Sequência de E-mails — Oratória para Corretores
+# Sequência de E-mails — Oratoria Para Corretores
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: Oratória para Corretores no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Oratoria Para Corretores (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: corretor falou bem e fechou venda
+Assunto: Case prático de Oratoria Para Corretores
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Oratória é complicada?"
+Assunto: "Oratoria Para Corretores é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno aumentou vendas em 24%
+Assunto: Aluno obteve resultado com Oratoria Para Corretores
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

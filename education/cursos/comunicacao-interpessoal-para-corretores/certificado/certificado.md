@@ -1,7 +1,6 @@
-# Certificado — Comunicação Interpessoal para Corretores
+# Certificado — Comunicacao Interpessoal Para Corretores
 Modelo: Praia Digital Academy
-Curso: Comunicação Interpessoal para Corretores
-Carga horária: 4 horas
+Curso: Comunicacao Interpessoal Para Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

@@ -1,8 +1,7 @@
-# Checklist — Produtividade para Corretores
-- [ ] Diagnóstico de produtividade
-- [ ] Método estruturado
-- [ ] Rotina criada
-- [ ] Foco criado
-- [ ] Fechamento confirmado
-- [ ] Follow-up planejado
-- [ ] Crescimento planejado
+# Checklist — Produtividade Para Corretores
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

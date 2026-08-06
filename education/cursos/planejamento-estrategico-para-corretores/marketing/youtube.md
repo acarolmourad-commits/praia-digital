@@ -1,4 +1,4 @@
-# Roteiro YouTube — Planejamento Estratégico para Corretores
+# Roteiro YouTube — Planejamento Estrategico Para Corretores
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado

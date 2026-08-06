@@ -1,7 +1,7 @@
-# Roteiro de Webinar — Financiamento Imobiliário
+# Roteiro de Webinar — Financiamento Imobiliario
 1. Abertura: dor do público
-2. Case: aluno aprovou financiamento em 30 dias
-3. Método: 4 passos
+2. Case: aplicação prática
+3. Método: passo a passo
 4. Prova social
 5. Oferta e bônus
 6. Perguntas frequentes

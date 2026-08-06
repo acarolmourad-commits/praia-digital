@@ -1,10 +1,5 @@
-# Planilha — Produtividade para Corretores
+# Planilha — Produtividade Para Corretores
 - [ ] Data
-- [ ] Cliente
-- [ ] Imóvel
-- [ ] Cidade
 - [ ] Ação
-- [ ] Follow-up
-- [ ] Venda
-- [ ] Receita
-- [ ] Status
+- [ ] Resultado
+- [ ] Observação

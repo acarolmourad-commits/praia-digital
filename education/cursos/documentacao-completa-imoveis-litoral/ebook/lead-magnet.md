@@ -1,5 +1,5 @@
-# E-book Derivado — Documentação Completa para Imóveis no Litoral
-Título: Guia Rápido: Documentação Completa para Imóveis no Litoral
+# E-book Derivado — Documentacao Completa Imoveis Litoral
+Título: Guia Rápido sobre Documentacao Completa Imoveis Litoral
 Formato: PDF 20 a 30 páginas
 Preço: gratuito ou R$ 19,90
-Conteúdo: checklist, planilha, dicas rápidas, modelo de documento.
+Conteúdo: resumo, templates, dicas rápidas.

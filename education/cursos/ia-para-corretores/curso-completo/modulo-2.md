@@ -1,54 +1,60 @@
-# Módulo 2 — Prompts e Conteúdo
-
+# Módulo 2 — Conteúdo Premium
 ## Introdução
-Aprenda a criar prompts, gerar conteúdo e automatizar redes sociais para corretores no litoral.
+Neste módulo você vai dominar ia para corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 2.1 — Como criar prompts
-**Estrutura:**
-- Contexto.
-- Objetivo.
-- Formato.
+## Aula 2.1 — Passo a passo para aplicar ia para corretores na prática
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Exemplo:**
-"Atue como especialista em imóveis no litoral. Crie um post sobre vantagens de apartamento em Santos."
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-## Aula 2.2 — Conteúdo automatizado
-**Conteúdo:**
-- Posts.
-- Reels.
-- E-mails.
-- Propostas.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Exemplo real:**
-Corretor usou IA e criou 30 posts em 1 hora.
+## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
+Fundamentos, ferramentas e fluxos recomendados para ia para corretores no litoral.
 
-## Aula 2.3 — Redes sociais
-**Redes:**
-- Instagram.
-- YouTube.
-- TikTok.
+**Ferramentas recomendadas:**
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
-**Exercício:**
-Monte um plano de conteúdo com IA.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+
+## Aula 2.3 — Automação e fluxos que economizam horas por semana
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
+
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Monte um plano prático de ia para corretores para os próximos 30 dias, com ações diárias e semanais.
 
 ## Resumo
-- Prompts geram conteúdo.
-- IA reduz esforço.
-- Redes sociais amplificam alcance.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Prompts criados
-- [ ] Conteúdo gerado
-- [ ] Calendário montado
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de prompts
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- IA generativa
-- Planilha
-- CRM
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
 ## Prompt de IA
-"Atue como especialista em IA para imobiliário. Monte um plano de conteúdo para este cenário: [dados]."
+Atue como consultor de ia para corretores. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].

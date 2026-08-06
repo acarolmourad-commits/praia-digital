@@ -1,10 +1,5 @@
-# Planilha — Gestão do Tempo para Corretores
+# Planilha — Gestao Do Tempo Para Corretores
 - [ ] Data
-- [ ] Cliente
-- [ ] Imóvel
-- [ ] Cidade
 - [ ] Ação
-- [ ] Follow-up
-- [ ] Venda
-- [ ] Receita
-- [ ] Status
+- [ ] Resultado
+- [ ] Observação

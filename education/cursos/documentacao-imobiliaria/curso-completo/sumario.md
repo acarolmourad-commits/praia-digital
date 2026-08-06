@@ -1,5 +1,5 @@
-# Sumário do Curso: Documentação Imobiliária
-- Módulo 1: Fundamentos da Documentação
-- Módulo 2: Documentos Essenciais
-- Módulo 3: Processos e Prazos
-- Módulo 4: Gestão e Crescimento
+# Sumário do Curso: Documentacao Imobiliaria
+- Módulo 1: Fundamentos
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

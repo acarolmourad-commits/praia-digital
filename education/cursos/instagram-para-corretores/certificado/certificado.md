@@ -1,7 +1,6 @@
-# Certificado — Instagram para Corretores
+# Certificado — Instagram Para Corretores
 Modelo: Praia Digital Academy
-Curso: Instagram para Corretores
-Carga horária: 4 horas
+Curso: Instagram Para Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

@@ -1,11 +1,5 @@
-# Planilha — Networking para Corretores
+# Planilha — Networking Para Corretores
 - [ ] Data
-- [ ] Contato
-- [ ] Canal
-- [ ] Imóvel
-- [ ] Cidade
 - [ ] Ação
-- [ ] Follow-up
-- [ ] Venda
-- [ ] Receita
-- [ ] Status
+- [ ] Resultado
+- [ ] Observação

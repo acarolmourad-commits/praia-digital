@@ -1,10 +1,5 @@
-# Planilha — Negociação Imobiliária no Litoral
+# Planilha — Negociacao Imobiliaria Litoral
 - [ ] Data
-- [ ] Cliente
-- [ ] Imóvel
-- [ ] Cidade
-- [ ] Proposta
-- [ ] Negociação
-- [ ] Fechamento
-- [ ] Receita
-- [ ] Status
+- [ ] Ação
+- [ ] Resultado
+- [ ] Observação

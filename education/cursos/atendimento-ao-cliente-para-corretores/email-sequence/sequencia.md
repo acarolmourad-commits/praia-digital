@@ -1,21 +1,21 @@
-# Sequência de E-mails — Atendimento ao Cliente para Corretores
+# Sequência de E-mails — Atendimento Ao Cliente Para Corretores
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: Atendimento ao Cliente para Corretores no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Atendimento Ao Cliente Para Corretores (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: corretor atendeu melhor e fechou venda
+Assunto: Case prático de Atendimento Ao Cliente Para Corretores
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Atendimento compensa?"
+Assunto: "Atendimento Ao Cliente Para Corretores é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno melhorou o atendimento e aumentou vendas em 34%
+Assunto: Aluno obteve resultado com Atendimento Ao Cliente Para Corretores
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

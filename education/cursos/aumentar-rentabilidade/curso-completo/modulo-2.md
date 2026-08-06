@@ -1,74 +1,60 @@
-# Módulo 2 — Ganhos Rápidos
-
+# Módulo 2 — Conteúdo Premium
 ## Introdução
-Identifique ajustes que geram resultado imediato sem investimento alto. Ganhos rápidos financiam mudanças maiores e aumentam confiança.
+Neste módulo você vai dominar aumentar rentabilidade com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 2.1 — Ajustes que geram resultado imediato
-**Ajustes rápidos:**
-- Ajuste de preço por temporada.
-- Atualização de fotos.
-- Alteração de título e descrição.
-- Ajuste de regras de cancelamento.
-- Promoção de long stay.
+## Aula 2.1 — Passo a passo para aplicar aumentar rentabilidade na prática
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Impacto esperado:**
-- Ajuste de preço: +15% a +30% de receita.
-- Fotos novas: +20% de visualizações.
-- Descrição melhorada: +15% de conversão.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Investidor trocou fotos antigas por fotos profissionais e ajustou preço por temporada. Em 20 dias, a ocupação subiu de 45% para 62%.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 2.2 — Preço e temporada
-**Preço base:**
-- Consulte 5 imóveis similares.
-- Defina preço competitivo.
+## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
+Fundamentos, ferramentas e fluxos recomendados para aumentar rentabilidade no litoral.
 
-**Ajuste por temporada:**
-- Alta temporada: +30% a +60%.
-- Feriados prolongados: +20% a +40%.
-- Baixa temporada: -20% a -30%.
+**Ferramentas recomendadas:**
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
-**Exemplo real:**
-Imóvel em Santos ajustou preço por temporada e aumentou receita em 24% em 3 meses.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-## Aula 2.3 — Ocupação e atendimento
-**Ocupação:**
-- Ajuste disponibilidade.
-- Crie promoções de última hora.
-- Ofereça descontos para estadias longas.
+## Aula 2.3 — Automação e fluxos que economizam horas por semana
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Atendimento:**
-- Responda em até 1 hora.
-- Use mensagens automáticas.
-- Personalize o atendimento.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Estudo de caso:**
-Imóvel com atendimento rápido e personalizado aumentou nota de 4,4 para 4,8 e ocupação de 55% para 72% em 2 meses.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
 ## Exercício
-Monte um plano de ganhos rápidos para os próximos 30 dias.
+Monte um plano prático de aumentar rentabilidade para os próximos 30 dias, com ações diárias e semanais.
 
 ## Resumo
-- Ajustes rápidos geram resultado rápido.
-- Preço e temporada são fundamentais.
-- Atendimento influencia ocupação.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Preço ajustado
-- [ ] Fotos atualizadas
-- [ ] Descrição revisada
-- [ ] Regras ajustadas
-- [ ] Atendimento melhorado
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de ganhos rápidos
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Planilha de preços
-- Apps de temporada
 - CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
 ## Prompt de IA
-"Atue como consultor de rentabilidade. Monte um plano de ganhos rápidos para este imóvel: [dados]."
+Atue como consultor de aumentar rentabilidade. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].

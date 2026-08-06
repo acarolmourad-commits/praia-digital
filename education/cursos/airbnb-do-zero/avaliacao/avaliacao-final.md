@@ -1,9 +1,9 @@
-# Avaliação Final — Airbnb do Zero no Litoral
+# Avaliação Final — Airbnb Do Zero
 ## Quiz
-- 20 perguntas sobre cadastro, precificação, temporada, gestão e avaliações.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Cadastro simulado + plano operacional aplicado.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

@@ -1,9 +1,9 @@
-# Avaliação Final — Apresentação de Imóveis para Corretores
+# Avaliação Final — Apresentacao Imoveis Para Corretores
 ## Quiz
-- 20 perguntas sobre apresentação, roteiro, história e fechamento.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Apresentação aplicada a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

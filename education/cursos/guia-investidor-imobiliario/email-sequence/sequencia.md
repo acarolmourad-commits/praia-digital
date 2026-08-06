@@ -1,21 +1,21 @@
-# Sequência de E-mails — Guia do Investidor Imobiliário
+# Sequência de E-mails — Guia Investidor Imobiliario
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido do Investidor Imobiliário no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Guia Investidor Imobiliario (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: investidor dobrou patrimônio em 3 anos
+Assunto: Case prático de Guia Investidor Imobiliario
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Investir no litoral é arriscado?"
+Assunto: "Guia Investidor Imobiliario é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno fechou primeiro investimento em 30 dias
+Assunto: Aluno obteve resultado com Guia Investidor Imobiliario
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

@@ -1,92 +1,60 @@
-# Módulo 3 — Documentação e Negociação
-
+# Módulo 3 — Conteúdo Premium
 ## Introdução
-Domine a documentação, financiamento e negociação para fechar o melhor negócio com segurança. Um contrato mal feito pode custar caro; um contrato bem estruturado protege o investimento.
+Neste módulo você vai dominar investindo imoveis litoral com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 3.1 — Documentação essencial
-**Documentos mínimos:**
-- Matrícula atualizada do imóvel
-- IPTU em dia
-- Certidão de ônus e ações reais
-- Declaração de área
-- Habite-se
-- Inscrição municipal
+## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Perguntas obrigatórias:**
-- O imóvel tem restrição judicial?
-- O IPTU está em dia?
-- Há conflito de divisas ou área contaminada?
-- O imóvel está em área de marinha ou APA?
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Um investidor descobriu IPTU atrasado de R$ 12 mil durante a análise documental. Ele usou esse dado para negociar um desconto de R$ 18 mil no valor do imóvel. O imóvel tinha documentação regular, mas a dívida não estava informada no anúncio.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Estudo de caso:**
-Casal de São Paulo encontrou uma certidão de ônus com penhora antiga. O vendedor alegou que o débito já havia sido quitado, mas não apresentou quitação. O casal desistiu da compra e evitou um problema judicial de anos.
+## Aula 3.2 — Caso real 2: como evitar erros custosos
+Fundamentos, ferramentas e fluxos recomendados para investindo imoveis litoral no litoral.
 
-## Aula 3.2 — Financiamento e entrada
-**Opções principais:**
-- Financiamento tradicional: entrada mínima de 20% a 30%.
-- FGTS: pode ser usado como entrada ou amortização.
-- Entrada mínima: negociação direta com o vendedor.
-- Parcelamento direto: comum em imóveis na planta ou de particular.
+**Ferramentas recomendadas:**
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
-**Dicas práticas:**
-- Peça pré-aprovação antes de procurar imóveis.
-- Compare taxas de diferentes bancos.
-- Negocie taxas e prazos.
-- Considere custos adicionais: ITBI, registro, avaliação.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Exemplo real:**
-Casal usou FGTS + entrada de 30% e financiou o restante. Em 2 anos, o imóvel já valorizou acima do custo do financiamento, gerando equity positivo.
+## Aula 3.3 — Lições aplicáveis ao seu contexto
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Exercício prático:**
-Simule um financiamento para um imóvel de R$ 300 mil:
-- Entrada de 30%
-- Financiamento em 360 meses
-- Taxa de juros de 9% ao ano
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-## Aula 3.3 — Negociação e fechamento
-**Passos para negociar bem:**
-1. Pesquise o valor de mercado.
-2. Use defeitos como argumento: documentação pendente, IPTU atrasado, necessidade de reforma.
-3. Negocie prazos e condições: entrada parcelada, reforma antes do fechamento.
-4. Documente tudo: e-mails, prints, contratos preliminares.
-
-**Regras de ouro:**
-- Nunca negocie de boca cheia.
-- Sempre peça tempo para revisar contrato.
-- Não assine nada sem ler cada cláusula.
-- Peça assessoria jurídica especializada.
-
-**Estudo de caso:**
-Investidor encontrou um apartamento em Santos com preço anunciado de R$ 420 mil. Após análise de comparáveis, ele percebeu que o valor de mercado era de R$ 380 mil. Ele apresentou os dados ao vendedor e negociou um desconto de R$ 35 mil, fechando em R$ 385 mil. O vendedor aceitou porque o comprador demonstrou conhecimento e seriedade.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
 ## Exercício
-Revise a documentação de um imóvel de exemplo e simule uma negociação com base em 3 argumentos objetivos.
+Analise um caso real do mercado e adapte as lições para a sua realidade.
 
 ## Resumo
-- Documentação evita surpresas.
-- Financiamento exige planejamento.
-- Negociação bem feita aumenta rentabilidade.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Matrícula verificada
-- [ ] IPTU em dia
-- [ ] Financiamento aprovado
-- [ ] Proposta elaborada
-- [ ] Contrato revisado
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de proposta
-- Modelo de contrato
-- Checklist de documentação
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Registro de imóveis
-- Prefeitura municipal
-- Bancos
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
 ## Prompt de IA
-"Atue como advogado imobiliário especializado no litoral paulista. Verifique se esta documentação está completa e aponte riscos: [dados do imóvel]."
+Atue como mentor experiente. Analise este caso real de investindo imoveis litoral no litoral e aponte 5 lições práticas: [descreva o caso].

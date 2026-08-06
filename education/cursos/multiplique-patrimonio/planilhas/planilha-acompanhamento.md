@@ -1,10 +1,5 @@
-# Planilha — Multiplique Patrimônio
+# Planilha — Multiplique Patrimonio
 - [ ] Data
-- [ ] Imóvel
-- [ ] Cidade
-- [ ] Compra
-- [ ] Reforma
-- [ ] Renda
-- [ ] Custos
-- [ ] ROI
-- [ ] Status
+- [ ] Ação
+- [ ] Resultado
+- [ ] Observação

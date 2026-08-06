@@ -1,5 +1,5 @@
-# Sumário do Curso: Rotinas de Vendas para Corretores
-- Módulo 1: Fundamentos das Rotinas de Vendas no Litoral
-- Módulo 2: Planejamento e Organização
-- Módulo 3: Acompanhamento e Conversão
-- Módulo 4: Métricas e Crescimento
+# Sumário do Curso: Rotinas De Vendas Para Corretores
+- Módulo 1: Fundamentos
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

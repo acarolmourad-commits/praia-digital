@@ -1,8 +1,7 @@
-# Checklist — Apresentação de Imóveis para Corretores
-- [ ] Diagnóstico de apresentação
-- [ ] Roteiro criado
-- [ ] História estruturada
-- [ ] Experiência planejada
-- [ ] Fechamento confirmado
-- [ ] Métricas revisadas
-- [ ] Crescimento planejado
+# Checklist — Apresentacao Imoveis Para Corretores
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

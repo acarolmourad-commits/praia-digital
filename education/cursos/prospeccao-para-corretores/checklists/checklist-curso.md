@@ -1,8 +1,7 @@
-# Checklist — Prospecção para Corretores
-- [ ] Diagnóstico de prospecção
-- [ ] Método estruturado
-- [ ] Consistência criada
-- [ ] Comunicação criada
-- [ ] Fechamento confirmado
-- [ ] Follow-up planejado
-- [ ] Crescimento planejado
+# Checklist — Prospeccao Para Corretores
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

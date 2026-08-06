@@ -1,9 +1,9 @@
-# Avaliação Final — Captação e Exclusividade para Corretores
+# Avaliação Final — Captacao Exclusividade
 ## Quiz
-- 20 perguntas sobre captação, prospecção, proposta de exclusividade e crescimento.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Proposta de exclusividade aplicada a um imóvel real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

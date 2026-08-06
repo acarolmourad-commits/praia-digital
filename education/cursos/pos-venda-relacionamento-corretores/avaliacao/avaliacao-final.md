@@ -1,9 +1,9 @@
-# Avaliação Final — Pós-venda e Relacionamento para Corretores
+# Avaliação Final — Pos Venda Relacionamento Corretores
 ## Quiz
-- 20 perguntas sobre pós-venda, acompanhamento, indicação e fidelização.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Pós-venda aplicada a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

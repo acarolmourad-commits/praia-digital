@@ -1,11 +1,11 @@
-# Artigos SEO — Gestão de Propostas para Corretores
-1. Gestão de propostas para corretores no litoral em 2026: guia completo
-2. Como fazer proposta no litoral
-3. Negociação no litoral
-4. Objeção no litoral
-5. Fechamento no litoral
-6. Valor no litoral
-7. Proposta no litoral
-8. Vendas no litoral
-9. Método no litoral
-10. Como crescer no litoral
+# Artigos SEO — Gestao De Propostas Para Corretores
+1. Gestao De Propostas Para Corretores em 2026
+2. Como aplicar gestao de propostas para corretores no litoral
+3. Resultados reais de gestao de propostas para corretores
+4. Método passo a passo de gestao de propostas para corretores
+5. Erros comuns em gestao de propostas para corretores
+6. Ferramentas para gestao de propostas para corretores
+7. Cases de gestao de propostas para corretores no litoral
+8. Como medir resultado em gestao de propostas para corretores
+9. Como começar em gestao de propostas para corretores
+10. FAQ sobre gestao de propostas para corretores

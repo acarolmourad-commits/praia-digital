@@ -1,21 +1,21 @@
-# Sequência de E-mails — Pós-venda e Relacionamento para Corretores
+# Sequência de E-mails — Pos Venda Relacionamento Corretores
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: Pós-venda e Relacionamento para Corretores no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Pos Venda Relacionamento Corretores (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: corretor fidelizou clientes com pós-venda
+Assunto: Case prático de Pos Venda Relacionamento Corretores
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Pós-venda compensa?"
+Assunto: "Pos Venda Relacionamento Corretores é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno aumentou indicações em 40%
+Assunto: Aluno obteve resultado com Pos Venda Relacionamento Corretores
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

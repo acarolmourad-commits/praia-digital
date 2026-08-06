@@ -1,6 +1,10 @@
-# Shorts — Investindo em Imóveis no Litoral
-1. Roteiro: dica de documentação
-2. Roteiro: regra rápida
-3. Roteiro: ROI em 1 minuto
-4. Roteiro: reforma simples
-5. Roteiro: temporada rentável
+1. Roteiro: dica em 1 minuto 1
+2. Roteiro: dica em 1 minuto 2
+3. Roteiro: dica em 1 minuto 3
+4. Roteiro: dica em 1 minuto 4
+5. Roteiro: dica em 1 minuto 5
+6. Roteiro: dica em 1 minuto 6
+7. Roteiro: dica em 1 minuto 7
+8. Roteiro: dica em 1 minuto 8
+9. Roteiro: dica em 1 minuto 9
+10. Roteiro: dica em 1 minuto 10

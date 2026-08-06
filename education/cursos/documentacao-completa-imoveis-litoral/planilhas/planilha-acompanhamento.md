@@ -1,9 +1,5 @@
-# Planilha — Documentação Completa para Imóveis no Litoral
+# Planilha — Documentacao Completa Imoveis Litoral
 - [ ] Data
-- [ ] Documento
-- [ ] Status
-- [ ] Verificação
-- [ ] Responsável
-- [ ] Prazo
-- [ ] Custo
+- [ ] Ação
+- [ ] Resultado
 - [ ] Observação

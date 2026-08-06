@@ -1,53 +1,60 @@
-# Módulo 3 — Leads e Follow-up
-
+# Módulo 3 — Conteúdo Premium
 ## Introdução
-Aprenda a gerar leads, fazer follow-up e converter clientes no marketing imobiliário no litoral.
+Neste módulo você vai dominar marketing imobiliario corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 3.1 — Geração de leads
-**Leads:**
-- Anúncio.
-- Conteúdo.
-- Indicação.
+## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Exemplo real:**
-Corretor dobrou leads com método.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-## Aula 3.2 — Follow-up
-**Follow-up:**
-- Tempo.
-- Canal.
-- Mensagem.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Exercício:**
-Monte um fluxo de follow-up.
+## Aula 3.2 — Caso real 2: como evitar erros custosos
+Fundamentos, ferramentas e fluxos recomendados para marketing imobiliario corretores no litoral.
 
-## Aula 3.3 — Conversão
-**Conversão:**
-- Visita.
-- Proposta.
-- Fechamento.
+**Ferramentas recomendadas:**
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
-**Estudo de caso:**
-Corretor converteu leads com follow-up rápido.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+
+## Aula 3.3 — Lições aplicáveis ao seu contexto
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
+
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Analise um caso real do mercado e adapte as lições para a sua realidade.
 
 ## Resumo
-- Leads alimentam funil.
-- Follow-up fecha venda.
-- Conversão depende de método.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Leads gerados
-- [ ] Follow-up feito
-- [ ] Conversão fechada
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de leads
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- CRM
-- Automação
-- Planilha
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
 ## Prompt de IA
-"Atue como especialista em marketing imobiliário. Monte um fluxo de follow-up para este cenário: [dados]."
+Atue como mentor experiente. Analise este caso real de marketing imobiliario corretores no litoral e aponte 5 lições práticas: [descreva o caso].

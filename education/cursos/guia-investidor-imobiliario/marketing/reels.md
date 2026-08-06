@@ -1,6 +1,20 @@
-# Reels — Guia do Investidor Imobiliário
-1. Roteiro: investimento em 30s
-2. Roteiro: dica de oportunidade
-3. Roteiro: erro de investimento
-4. Roteiro: case de patrimônio
-5. Roteiro: método simples
+1. Roteiro: dica premium 1
+2. Roteiro: dica premium 2
+3. Roteiro: dica premium 3
+4. Roteiro: dica premium 4
+5. Roteiro: dica premium 5
+6. Roteiro: dica premium 6
+7. Roteiro: dica premium 7
+8. Roteiro: dica premium 8
+9. Roteiro: dica premium 9
+10. Roteiro: dica premium 10
+11. Roteiro: dica premium 11
+12. Roteiro: dica premium 12
+13. Roteiro: dica premium 13
+14. Roteiro: dica premium 14
+15. Roteiro: dica premium 15
+16. Roteiro: dica premium 16
+17. Roteiro: dica premium 17
+18. Roteiro: dica premium 18
+19. Roteiro: dica premium 19
+20. Roteiro: dica premium 20

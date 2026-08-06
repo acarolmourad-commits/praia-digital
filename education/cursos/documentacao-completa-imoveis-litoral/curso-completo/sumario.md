@@ -1,5 +1,5 @@
-# Sumário do Curso: Documentação Completa para Imóveis no Litoral
-- Módulo 1: Fundamentos da Documentação no Litoral
-- Módulo 2: Organização e Verificação
-- Módulo 3: Regularização e Burocracia
-- Módulo 4: Venda e Proteção
+# Sumário do Curso: Documentacao Completa Imoveis Litoral
+- Módulo 1: Fundamentos
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

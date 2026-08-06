@@ -1,4 +1,4 @@
-# Roteiro YouTube — Guia do Investidor Imobiliário Avançado
+# Roteiro YouTube — Guia Investidor Imobiliario Avancado
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado

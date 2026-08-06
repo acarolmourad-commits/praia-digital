@@ -1,11 +1,10 @@
-# Posts Instagram — Gestão de Propostas para Corretores
-1. Post: dica de proposta
-2. Reels: valor em 30s
-3. Carrossel: checklist de proposta
-4. Post: negociação que convence
-5. Reels: case de venda
-6. Carrossel: método simples
-7. Post: objeção sem erro
-8. Reels: erro comum
-9. Carrossel: métricas básicas
-10. Post: comece hoje
+1. Post: dica sobre gestao de propostas para corretores
+2. Post: dica sobre gestao de propostas para corretores
+3. Post: dica sobre gestao de propostas para corretores
+4. Post: dica sobre gestao de propostas para corretores
+5. Post: dica sobre gestao de propostas para corretores
+6. Post: dica sobre gestao de propostas para corretores
+7. Post: dica sobre gestao de propostas para corretores
+8. Post: dica sobre gestao de propostas para corretores
+9. Post: dica sobre gestao de propostas para corretores
+10. Post: dica sobre gestao de propostas para corretores

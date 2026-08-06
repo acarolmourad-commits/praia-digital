@@ -1,10 +1,5 @@
-# Planilha — Flipping de Imóveis no Litoral
+# Planilha — Flipping Imoveis Litoral
 - [ ] Data
-- [ ] Imóvel
-- [ ] Cidade
-- [ ] Compra
-- [ ] Reforma
-- [ ] Custos
-- [ ] Venda
-- [ ] Lucro
-- [ ] Status
+- [ ] Ação
+- [ ] Resultado
+- [ ] Observação

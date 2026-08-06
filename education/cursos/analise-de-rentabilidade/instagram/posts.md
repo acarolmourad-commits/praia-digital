@@ -1,21 +1,20 @@
-# Posts Instagram — Análise de Rentabilidade
-1. Post: 3 erros na análise de investimento
-2. Reels: ROI em 30s
-3. Carrossel: checklist de análise
-4. Post: comparáveis que convencem
-5. Reels: dica de decisão
-6. Carrossel: tipos de investidor
-7. Post: investimento seguro
-8. Reels: case de ROI
-9. Carrossel: rentabilidade no litoral
-10. Reels: ajuste simples
-11. Post: risco controlado
-12. Carrossel: 5 passos para decidir
-13. Post: dados que importam
-14. Reels: dica de payback
-15. Carrossel: cenários reais
-16. Post: comece hoje
-17. Reels: case de investimento
-18. Carrossel: revisão mensal
-19. Post: mito vs verdade
-20. Reels: método resumido
+1. Post: dica premium sobre analise-de-rentabilidade
+2. Reels: resultado em 30s
+3. Carrossel: checklist rápido
+4. Post: caso real
+5. Reels: ferramenta prática
+6. Post: dica premium sobre analise-de-rentabilidade
+7. Reels: resultado em 30s
+8. Carrossel: checklist rápido
+9. Post: caso real
+10. Reels: ferramenta prática
+11. Post: dica premium sobre analise-de-rentabilidade
+12. Reels: resultado em 30s
+13. Carrossel: checklist rápido
+14. Post: caso real
+15. Reels: ferramenta prática
+16. Post: dica premium sobre analise-de-rentabilidade
+17. Reels: resultado em 30s
+18. Carrossel: checklist rápido
+19. Post: caso real
+20. Reels: ferramenta prática

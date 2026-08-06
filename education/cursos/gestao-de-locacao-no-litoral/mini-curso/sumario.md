@@ -1,5 +1,5 @@
-# Mini Curso — Gestão de Locação no Litoral
-## Aula 1 — Fundamentos da gestão (8 min)
-## Aula 2 — Operação e preparação (12 min)
-## Aula 3 — Hóspedes e relacionamento (10 min)
-## Bônus — Planilha de controle
+# Mini Curso — Gestao De Locacao No Litoral
+## Aula 1 — Visão geral (8 min)
+## Aula 2 — Conceitos essenciais (12 min)
+## Aula 3 — Aplicação prática (10 min)
+## Bônus — Material complementar

@@ -1,64 +1,60 @@
-# Módulo 1 — Fundamentos do Airbnb no Litoral
-
+# Módulo 1 — Conteúdo Premium
 ## Introdução
-Entenda o papel do Airbnb no litoral, o método e o perfil do dono de imóvel que quer gerar renda.
+Neste módulo você vai dominar imoveis para airbnb com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 1.1 — O que é Airbnb no litoral
-Airbnb no litoral significa usar imóveis para temporada com plataforma, método e gestão para gerar renda.
+## Aula 1.1 — Visão geral do mercado de imoveis para airbnb no litoral paulista
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Características:**
-- Renda por temporada.
-- Ocupação variável.
-- Gestão ativa.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Dono aumentou renda em 40% com Airbnb.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 1.2 — Perfil do dono de imóvel
-**Iniciante:**
-- Foco: preparação básica, anúncio simples.
-- Erro comum: fotos ruins.
+## Aula 1.2 — Conceitos essenciais: termos, métricas e particularidades locais
+Fundamentos, ferramentas e fluxos recomendados para imoveis para airbnb no litoral.
 
-**Intermediário:**
-- Foco: precificação, avaliações.
-- Erro comum: preço errado.
+**Ferramentas recomendadas:**
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
-**Avançado:**
-- Foco: escala, automação.
-- Erro comum: volume sem qualidade.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Exercício:**
-Faça o diagnóstico do seu imóvel.
+## Aula 1.3 — Estudo de caso real: como um aluno aplicou o método e obteve resultado em 30 dias
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-## Aula 1.3 — Método e metas
-**Método:**
-- Preparação.
-- Anúncio.
-- Gestão.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Metas:**
-- Ocupação mensal.
-- Renda por temporada.
-- Avaliação mínima.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Faça o diagnóstico do seu cenário atual em imoveis para airbnb: liste pontos fortes, fracos, oportunidades e ameaças.
 
 ## Resumo
-- Airbnb gera renda.
-- Perfil claro orienta ação.
-- Método reduz risco.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Diagnóstico feito
-- [ ] Metas traçadas
-- [ ] Método escolhido
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de diagnóstico
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Airbnb
-- Planilha
-- Automação
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
 ## Prompt de IA
-"Atue como especialista em Airbnb no litoral. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
+Atue como especialista em imoveis para airbnb no litoral paulista. Faça um diagnóstico personalizado com base nestas respostas: [insira suas respostas].

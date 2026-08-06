@@ -1,12 +1,12 @@
-# Curso: Como Aumentar em 30% a Rentabilidade
+# Curso: Aumentar Rentabilidade
 ## Nome Comercial
-**Como Aumentar em 30% a Rentabilidade: Método Prático para Identificar perdas ocultas, aplicar ganhos rápidos e escalar rentabilidade no litoral**
+**Aumentar Rentabilidade: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Do diagnóstico ao resultado: aprenda a aplicar método, evitar erros e crescer no mercado imobiliário do litoral.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de aplicar um método prático para identificar perdas ocultas, aplicar ganhos rápidos e escalar rentabilidade no litoral.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
 - Proprietários de imóveis no litoral
@@ -22,28 +22,27 @@ Iniciante → Intermediário
 
 ## Tempo Estimado
 6 horas de aulas
-Total: 6 horas
+Total: 6 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
 Curso completo: R$ 297
-À vista: R$ 297
-Parcelado: 12x de R$ 24,75
+À vista: 267
+Parcelado: 12x de R$ 24.75
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist do curso
-- Planilha de acompanhamento
-- Modelos prontos
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Aumente a rentabilidade dos seus imóveis no litoral em até 30% com método"**
+**"Aumentar Rentabilidade"**
 
 ## Big Idea
-Resultados no litoral dependem de método, dados e execução consistente.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
 - **Curso completo:** R$ 297
@@ -54,113 +53,103 @@ Resultados no litoral dependem de método, dados e execução consistente.
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** identificar perdas ocultas, aplicar ganhos rápidos e escalar rentabilidade no litoral
-**Dificuldades:** falta de método, insegurança, resultado baixo
-**Desejos:** crescimento, tranquilidade, autoridade
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
 - Falta de método
-- Insegurança
-- Resultado baixo
-- Falta de clareza
-- Tempo limitado
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Crescimento
-- Tranquilidade
-- Autoridade
-- Previsibilidade
-- Resultado
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
+- Segurança
+- Autoridade local
 
 ## Objeções
-- "Não compensa"
+- "Muito caro"
+- "Não funciona"
 - "É complicado"
 - "Não tenho tempo"
-- "Vou errar"
-- "Não funciona"
+- "Já tentei"
 
 ## Transformação
 - Método aplicado
-- Resultado crescente
-- Decisão orientada por dados
-- Operação profissional
-- Tranquilidade
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
 ### Módulo 1 — Fundamentos
-Aula 1.1 — Contexto e oportunidades
-Aula 1.2 — Perfil e objetivos
-Aula 1.3 — Métricas e metas
-Exercício: diagnóstico
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
 ### Módulo 2 — Aplicação Prática
-Aula 2.1 — Passo a passo prático
-Aula 2.2 — Exemplos reais
-Aula 2.3 — Erros comuns
-Exercício: aplicação
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Estratégia
-Aula 3.1 — Planejamento
-Aula 3.2 — Decisão e priorização
-Aula 3.3 — Execução
-Exercício: plano
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
 ### Módulo 4 — Crescimento
-Aula 4.1 — Acompanhamento
-Aula 4.2 — Ajustes
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
 Aula 4.3 — Escala
-Exercício: escala
+Exercício: plano de crescimento
 
 ## Carga Horária
-6 horas
+6 horas de aulas
+Total: 6 horas
 
 ## Material Complementar
-- Checklist
-- Planilha
-- Modelos
 - PDFs por módulo
+- Templates
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de diagnóstico
-- Checklist de aplicação
-- Checklist de estratégia
-- Checklist de escala
+- Checklist por módulo
 
 ## Planilhas
 - Planilha de acompanhamento
-- Planilha de métricas
-- Planilha de ROI
 
 ## Modelos Prontos
-- Modelo de relatório
-- Modelo de proposta
-- Modelo de revisão
+- Modelo aplicável
 
 ## Scripts
-- Script de atendimento
-- Script de negociação
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para gerar análises e planos.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: diagnóstico
-- Exercício 2: aplicação
-- Exercício 3: plano
-- Exercício 4: escala
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
 Prova prática: aplicação do método
 
 ## FAQ
-1. Preciso de experiência? Não.
-2. Em quanto tempo vejo resultado? De 15 a 30 dias.
-3. Vale a pena? Sim.
-4. E se errar? Ajuste com método.
-5. Tem suporte? Sim.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
 [vendas.html]
@@ -193,15 +182,15 @@ Prova prática: aplicação do método
 [marketing/google-ads.md]
 
 ## CTA
-"Aplique o método agora."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Mentoria individual: R$ 1.500
-- Acompanhamento: R$ 2.800
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
 - Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Cursos complementares Praia Digital
+- Outros cursos da Praia Digital Academy

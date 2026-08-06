@@ -1,71 +1,60 @@
-# Módulo 2 — Verificação e Documentação
-
+# Módulo 2 — Conteúdo Premium
 ## Introdução
-Aprenda a verificar imóveis, analisar documentos e identificar fraudes comuns no litoral.
+Neste módulo você vai dominar comprar com seguranca com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 2.1 — Como verificar imóvel
-**Passos:**
-- Visita presencial.
-- Análise de documentação.
-- Consulta a registros.
+## Aula 2.1 — Passo a passo para aplicar comprar com seguranca na prática
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Dados:**
-- Escritura.
-- Matrícula.
-- IPTU.
-- Certidões.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Comprador verificou matrícula e evitou fraude.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 2.2 — Documentos essenciais
-**Documentos do imóvel:**
-- Escritura.
-- Matrícula.
-- IPTU.
-- Certidão de ônus.
+## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
+Fundamentos, ferramentas e fluxos recomendados para comprar com seguranca no litoral.
 
-**Documentos do proprietário:**
-- RG e CPF.
-- Comprovante de residência.
-- Procuração.
+**Ferramentas recomendadas:**
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
-**Exercício:**
-Monte um checklist de verificação.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-## Aula 2.3 — Fraudes comuns
-**Fraudes:**
-- Documento falso.
-- Ocultação de ônus.
-- Venda de imóvel alheio.
+## Aula 2.3 — Automação e fluxos que economizam horas por semana
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Sinais:**
-- Preço muito baixo.
-- Pressão para fechar rápido.
-- Documentação incompleta.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Estudo de caso:**
-Comprador identificou fraude e evitou prejuízo.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Monte um plano prático de comprar com seguranca para os próximos 30 dias, com ações diárias e semanais.
 
 ## Resumo
-- Verificação evita riscos.
-- Documentos protegem compra.
-- Fraudes têm sinais claros.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Visita feita
-- [ ] Documentos verificados
-- [ ] Registros consultados
-- [ ] Fraudes identificadas
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de verificação
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Portal de cartórios
-- Planilha
-- Consultorias
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
 ## Prompt de IA
-"Atue como especialista em compra de imóveis. Monte um checklist de verificação para este imóvel: [dados]."
+Atue como consultor de comprar com seguranca. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].

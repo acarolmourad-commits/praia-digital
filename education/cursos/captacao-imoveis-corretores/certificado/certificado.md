@@ -1,7 +1,6 @@
-# Certificado — Captação de Imóveis para Corretores
+# Certificado — Captacao Imoveis Corretores
 Modelo: Praia Digital Academy
-Curso: Captação de Imóveis para Corretores
-Carga horária: 4 horas
+Curso: Captacao Imoveis Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

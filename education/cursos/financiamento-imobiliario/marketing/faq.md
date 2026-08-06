@@ -1,11 +1,11 @@
-# FAQ — Financiamento Imobiliário
-1. Preciso de experiência? Não.
-2. Em quanto tempo vejo resultado? De 15 a 30 dias.
-3. Vale a pena? Sim.
-4. E se errar? Ajuste com método.
-5. Tem suporte? Sim.
-6. Como medir sucesso? Aprovação do financiamento.
-7. Preciso de entrada alta? Depende do banco.
-8. Funciona para qualquer imóvel? Com método, sim.
-9. Como começar? Simulação básica.
-10. Qual o primeiro passo? Documentos organizados.
+# FAQ — Financiamento Imobiliario
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
+6. Qual o investimento? R$ 297.
+7. Tem suporte? Sim.
+8. Como acessar? Plataforma online.
+9. Tem certificado? Sim.
+10. Posso parcelar? Sim.

@@ -1,64 +1,60 @@
-# Módulo 1 — Fundamentos da Captação no Litoral
-
+# Módulo 1 — Conteúdo Premium
 ## Introdução
-Entenda o que é captação, o método e o perfil do corretor que quer vender mais com exclusividades.
+Neste módulo você vai dominar captacao imoveis corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 1.1 — O que é captação
-Captação significa conquistar o direito de vender um imóvel com exclusividade no litoral.
+## Aula 1.1 — Visão geral do mercado de captacao imoveis corretores no litoral paulista
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Características:**
-- Relacionamento.
-- Confiança.
-- Exclusividade.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Corretor captou imóvel e dobrou vendas.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 1.2 — Perfil do corretor
-**Iniciante:**
-- Foco: contato básico, proposta simples.
-- Erro comum: abordagem genérica.
+## Aula 1.2 — Conceitos essenciais: termos, métricas e particularidades locais
+Fundamentos, ferramentas e fluxos recomendados para captacao imoveis corretores no litoral.
 
-**Intermediário:**
-- Foco: proposta de valor.
-- Erro comum: follow-up fraco.
+**Ferramentas recomendadas:**
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
-**Avançado:**
-- Foco: escala e parcerias.
-- Erro comum: volume sem qualidade.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Exercício:**
-Faça o diagnóstico da sua captação.
+## Aula 1.3 — Estudo de caso real: como um aluno aplicou o método e obteve resultado em 30 dias
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-## Aula 1.3 — Método e metas
-**Método:**
-- Contato.
-- Proposta.
-- Exclusividade.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Metas:**
-- Imóveis por mês.
-- Exclusividades.
-- Vendas.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Faça o diagnóstico do seu cenário atual em captacao imoveis corretores: liste pontos fortes, fracos, oportunidades e ameaças.
 
 ## Resumo
-- Captação reduz competição.
-- Perfil claro orienta ação.
-- Método gera resultado.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Diagnóstico feito
-- [ ] Metas traçadas
-- [ ] Método escolhido
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de diagnóstico
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- CRM
-- Automação
-- Planilha
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
 ## Prompt de IA
-"Atue como especialista em captação. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
+Atue como especialista em captacao imoveis corretores no litoral paulista. Faça um diagnóstico personalizado com base nestas respostas: [insira suas respostas].

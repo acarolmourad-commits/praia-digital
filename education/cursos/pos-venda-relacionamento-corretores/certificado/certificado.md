@@ -1,7 +1,6 @@
-# Certificado — Pós-venda e Relacionamento para Corretores
+# Certificado — Pos Venda Relacionamento Corretores
 Modelo: Praia Digital Academy
-Curso: Pós-venda e Relacionamento para Corretores
-Carga horária: 4 horas
+Curso: Pos Venda Relacionamento Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

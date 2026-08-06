@@ -1,4 +1,4 @@
-# Google Ads — Documentação Imobiliária
-Palavras: documentação imobiliária, escritura no litoral, registro de imóvel no litoral
+# Google Ads — documentacao-imobiliaria
+Palavras: documentacao imobiliaria, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

@@ -1,7 +1,6 @@
-# Certificado — Visita Técnica para Corretores
+# Certificado — Visita Tecnica Para Corretores
 Modelo: Praia Digital Academy
-Curso: Visita Técnica para Corretores
-Carga horária: 4 horas
+Curso: Visita Tecnica Para Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

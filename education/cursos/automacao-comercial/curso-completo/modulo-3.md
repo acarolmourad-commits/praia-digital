@@ -1,69 +1,60 @@
-# Módulo 3 — Conteúdo e Nutrição
-
+# Módulo 3 — Conteúdo Premium
 ## Introdução
-Automatize conteúdo, nutrição de leads e remarketing para manter relacionamento e aumentar vendas.
+Neste módulo você vai dominar automacao comercial com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 3.1 — Conteúdo automatizado
-**Conteúdo automatizado:**
-- Posts de Instagram.
-- E-mails de nutrição.
-- Sequências de WhatsApp.
+## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Frequência:**
-- 3 a 5 posts por semana.
-- 1 e-mail por semana.
-- 1 mensagem de WhatsApp por semana.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Corretor automatizou conteúdo no Instagram e aumentou engajamento em 45%.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 3.2 — E-mail e WhatsApp
-**E-mail:**
-- Sequência de boas-vindas.
-- Conteúdo educativo.
-- Ofertas personalizadas.
+## Aula 3.2 — Caso real 2: como evitar erros custosos
+Fundamentos, ferramentas e fluxos recomendados para automacao comercial no litoral.
 
-**WhatsApp:**
-- Resposta automática.
-- Follow-up.
-- Confirmação de visita.
+**Ferramentas recomendadas:**
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
-**Estudo de caso:**
-Corretora usou automação de WhatsApp e reduziu tempo de resposta de 8h para 30min.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-## Aula 3.3 — Remarketing
-**Remarketing:**
-- Leads frios.
-- Visitantes do site.
-- Interessados em imóveis.
+## Aula 3.3 — Lições aplicáveis ao seu contexto
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Canais:**
-- Meta Ads.
-- Google Ads.
-- E-mail.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Exercício:**
-Monte uma sequência de nutrição para 30 dias.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Analise um caso real do mercado e adapte as lições para a sua realidade.
 
 ## Resumo
-- Conteúdo automatizado reduz trabalho.
-- Nutrição aumenta conversão.
-- Remarketing recupera leads.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Conteúdo planejado
-- [ ] Sequência criada
-- [ ] Remarketing ativo
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de sequência
-- Checklist de conteúdo
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Automação
-- CRM
-- Meta Ads
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
 ## Prompt de IA
-"Atue como especialista em automação comercial. Monte uma sequência de nutrição para este cenário: [dados]."
+Atue como mentor experiente. Analise este caso real de automacao comercial no litoral e aponte 5 lições práticas: [descreva o caso].

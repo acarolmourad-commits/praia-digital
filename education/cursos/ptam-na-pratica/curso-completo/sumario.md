@@ -1,5 +1,5 @@
-# Sumário do Curso: PTAM na Prática
-- Módulo 1: Fundamentos do PTAM
-- Módulo 2: Documentação e Burocracia
-- Módulo 3: Processo Prático
-- Módulo 4: Gestão e Crescimento
+# Sumário do Curso: Ptam Na Pratica
+- Módulo 1: Fundamentos
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

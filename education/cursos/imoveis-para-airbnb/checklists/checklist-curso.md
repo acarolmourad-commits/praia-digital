@@ -1,8 +1,7 @@
-# Checklist — Imóveis para Airbnb
-- [ ] Diagnóstico de imóvel
-- [ ] Preparação concluída
-- [ ] Anúncio criado
-- [ ] Precificação definida
-- [ ] Gestão estruturada
-- [ ] Métricas acompanhadas
-- [ ] Crescimento planejado
+# Checklist — Imoveis Para Airbnb
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

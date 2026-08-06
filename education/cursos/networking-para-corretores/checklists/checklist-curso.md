@@ -1,8 +1,7 @@
-# Checklist — Networking para Corretores
-- [ ] Diagnóstico de networking
-- [ ] Método estruturado
-- [ ] Relacionamento criado
-- [ ] Comunicação criada
-- [ ] Fechamento confirmado
-- [ ] Follow-up planejado
-- [ ] Crescimento planejado
+# Checklist — Networking Para Corretores
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

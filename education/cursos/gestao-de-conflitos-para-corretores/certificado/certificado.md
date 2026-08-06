@@ -1,7 +1,6 @@
-# Certificado — Gestão de Conflitos para Corretores
+# Certificado — Gestao De Conflitos Para Corretores
 Modelo: Praia Digital Academy
-Curso: Gestão de Conflitos para Corretores
-Carga horária: 4 horas
+Curso: Gestao De Conflitos Para Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

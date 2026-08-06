@@ -1,10 +1,5 @@
-# Planilha — Pós-venda e Relacionamento para Corretores
+# Planilha — Pos Venda Relacionamento Corretores
 - [ ] Data
-- [ ] Cliente
-- [ ] Cidade
-- [ ] Imóvel
-- [ ] Acompanhamento
-- [ ] Indicação
-- [ ] Recompra
-- [ ] Receita
-- [ ] Status
+- [ ] Ação
+- [ ] Resultado
+- [ ] Observação

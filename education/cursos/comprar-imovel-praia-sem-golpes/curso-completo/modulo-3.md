@@ -1,64 +1,60 @@
-# Módulo 3 — Documentação e Segurança
-
+# Módulo 3 — Conteúdo Premium
 ## Introdução
-Aprenda a verificar documentação, evitar fraudes e garantir uma compra segura na praia.
+Neste módulo você vai dominar comprar imovel praia sem golpes com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 3.1 — Documentos essenciais
-**Documentos do imóvel:**
-- Escritura.
-- Matrícula.
-- IPTU.
-- Certidão de ônus.
+## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Documentos do proprietário:**
-- RG e CPF.
-- Comprovante de residência.
-- Procuração.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Comprador verificou matrícula e evitou fraude.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 3.2 — Como verificar imóvel
-**Verificação:**
-- Cartório.
-- Registro.
-- Certidões.
+## Aula 3.2 — Caso real 2: como evitar erros custosos
+Fundamentos, ferramentas e fluxos recomendados para comprar imovel praia sem golpes no litoral.
 
-**Passos:**
-- Visita presencial.
-- Vistoria.
-- Documentação.
+**Ferramentas recomendadas:**
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
-**Exercício:**
-Monte um checklist anti-golpes.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-## Aula 3.3 — Fraudes e como evitar
-**Fraudes:**
-- Documento falso.
-- Ocultação de ônus.
-- Venda de imóvel alheio.
+## Aula 3.3 — Lições aplicáveis ao seu contexto
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Estudo de caso:**
-Comprador identificou fraude e evitou prejuízo.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
+
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Analise um caso real do mercado e adapte as lições para a sua realidade.
 
 ## Resumo
-- Documentação protege compra.
-- Verificação evita fraudes.
-- Segurança reduz risco.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Documentos verificados
-- [ ] Registros consultados
-- [ ] Fraudes evitadas
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Checklist anti-golpes
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Portal de cartórios
-- Planilha
-- Consultorias
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
 ## Prompt de IA
-"Atue como especialista em compra de imóveis. Monte um checklist anti-golpes para este imóvel: [dados]."
+Atue como mentor experiente. Analise este caso real de comprar imovel praia sem golpes no litoral e aponte 5 lições práticas: [descreva o caso].

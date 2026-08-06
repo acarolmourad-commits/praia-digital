@@ -1,9 +1,9 @@
-# Avaliação Final — Recuperação de Vendas para Corretores
+# Avaliação Final — Recuperacao De Vendas Para Corretores
 ## Quiz
-- 20 perguntas sobre recuperação, follow-up, reversão e fechamento.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Recuperação aplicada a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

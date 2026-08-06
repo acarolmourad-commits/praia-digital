@@ -1,10 +1,5 @@
-# Planilha — Gestão de Conflitos para Corretores
+# Planilha — Gestao De Conflitos Para Corretores
 - [ ] Data
-- [ ] Cliente
-- [ ] Imóvel
-- [ ] Cidade
-- [ ] Conflito
-- [ ] Solução
-- [ ] Fechamento
-- [ ] Receita
-- [ ] Status
+- [ ] Ação
+- [ ] Resultado
+- [ ] Observação

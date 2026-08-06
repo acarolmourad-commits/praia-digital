@@ -1,7 +1,6 @@
-# Certificado — Gestão de Locação no Litoral
+# Certificado — Gestao De Locacao No Litoral
 Modelo: Praia Digital Academy
-Curso: Gestão de Locação no Litoral
-Carga horária: 4 horas
+Curso: Gestao De Locacao No Litoral
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

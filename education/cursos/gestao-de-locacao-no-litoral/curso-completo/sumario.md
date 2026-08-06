@@ -1,5 +1,5 @@
-# Sumário do Curso: Gestão de Locação no Litoral
-- Módulo 1: Fundamentos da Gestão no Litoral
-- Módulo 2: Operação e Preparação
-- Módulo 3: Hóspedes e Relacionamento
-- Módulo 4: Rentabilidade e Escala
+# Sumário do Curso: Gestao De Locacao No Litoral
+- Módulo 1: Fundamentos
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

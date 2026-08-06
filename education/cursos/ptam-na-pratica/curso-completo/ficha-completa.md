@@ -1,12 +1,12 @@
-# Curso: PTAM na Prática
+# Curso: Ptam Na Pratica
 ## Nome Comercial
-**PTAM na Prática: Método Prático para Aprender, Aplicar e Dominar o Programa de Regularização de Imóveis no Litoral**
+**Ptam Na Pratica: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Do papel à aprovação: aprenda a regularizar imóveis no litoral com método e segurança.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 20 dias, você será capaz de conduzir um processo de regularização imobiliária no litoral com segurança e método.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
 - Corretores de imóveis
@@ -22,31 +22,30 @@ Iniciante → Intermediário
 
 ## Tempo Estimado
 4 horas de aulas (20 aulas de 10 a 16 min)
-Total: 4 horas
+Total: 4 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 197
-À vista: R$ 167
-Parcelado: 12x de R$ 13,92
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist de regularização
-- Planilha de acompanhamento
-- Modelos de documento
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Regularize imóveis no litoral com método e segurança"**
+**"Ptam Na Pratica"**
 
 ## Big Idea
-Regularizar imóveis no litoral combina documentação, conhecimento do PTAM e negociação para legalizar imóveis com risco controlado.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
-- **Curso completo:** R$ 197
+- **Curso completo:** R$ 297
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
@@ -54,112 +53,103 @@ Regularizar imóveis no litoral combina documentação, conhecimento do PTAM e n
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** regularizar imóveis no litoral
-**Dificuldades:** documentação, burocracia, risco
-**Desejos:** segurança, legalização, crescimento
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Burocracia alta
-- Documentação incompleta
 - Falta de método
-- Risco de multa
-- Insegurança
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
 - Segurança
-- Legalização
-- Crescimento
-- Tranquilidade
-- Previsibilidade
+- Autoridade local
 
 ## Objeções
-- "É muito burocrático"
-- "Demora muito"
-- "É caro"
-- "Vou errar"
-- "Não compensa"
+- "Muito caro"
+- "Não funciona"
+- "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- Processo seguro
-- Documentação clara
-- Regularização rápida
-- Crescimento previsível
-- Liberdade
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
-### Módulo 1 — Fundamentos do PTAM
-Aula 1.1 — O que é PTAM
-Aula 1.2 — Perfil do aluno
-Aula 1.3 — Método e metas
-Exercício: diagnóstico de regularização
+### Módulo 1 — Fundamentos
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Documentação e Burocracia
-Aula 2.1 — Documentos essenciais
-Aula 2.2 — Como organizar documentos
-Aula 2.3 — Erros comuns
-Exercício: checklist de documentos
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Processo Prático
-Aula 3.1 — Passo a passo
-Aula 3.2 — Como evitar atrasos
-Aula 3.3 — Negociação e fechamento
-Exercício: processo simulado
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Gestão e Crescimento
-Aula 4.1 — Acompanhamento
-Aula 4.2 — Ajustes e melhorias
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
 Aula 4.3 — Escala
 Exercício: plano de crescimento
 
 ## Carga Horária
-4 horas
+4 horas de aulas (20 aulas de 10 a 16 min)
+Total: 4 horas
 
 ## Material Complementar
-- Checklist de regularização
-- Planilha de acompanhamento
-- Modelos de documento
 - PDFs por módulo
+- Templates
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de regularização
-- Checklist de documentos
-- Checklist de processo
+- Checklist por módulo
 
 ## Planilhas
 - Planilha de acompanhamento
-- Planilha de documentos
-- Planilha de custos
 
 ## Modelos Prontos
-- Modelo de documento
-- Modelo de checklist
-- Modelo de processo
+- Modelo aplicável
 
 ## Scripts
-- Script de atendimento
-- Script de negociação
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para gerar documentos e análises.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: diagnóstico de regularização
-- Exercício 2: checklist de documentos
-- Exercício 3: processo simulado
-- Exercício 4: plano de crescimento
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: regularização aplicada
+Prova prática: aplicação do método
 
 ## FAQ
-1. Preciso de experiência? Não.
-2. Em quanto tempo vejo resultado? De 15 a 30 dias.
-3. Vale a pena? Sim.
-4. E se errar? Ajuste com método.
-5. Tem suporte? Sim.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
 [vendas.html]
@@ -192,17 +182,15 @@ Prova prática: regularização aplicada
 [marketing/google-ads.md]
 
 ## CTA
-"Regularize imóveis no litoral agora."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Mentoria individual: R$ 1.500
-- Acompanhamento: R$ 2.800
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
 - Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Documentação Imobiliária
-- Curso de Comprar com Segurança no Litoral
-- Curso de Financiamento Imobiliário
+- Outros cursos da Praia Digital Academy

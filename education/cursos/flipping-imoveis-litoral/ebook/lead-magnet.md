@@ -1,5 +1,5 @@
-# E-book Derivado — Flipping de Imóveis no Litoral
-Título: Guia Rápido de Flipping de Imóveis no Litoral
+# E-book Derivado — Flipping Imoveis Litoral
+Título: Guia Rápido sobre Flipping Imoveis Litoral
 Formato: PDF 20 a 30 páginas
 Preço: gratuito ou R$ 19,90
-Conteúdo: checklist, planilha, dicas rápidas, modelo de proposta.
+Conteúdo: resumo, templates, dicas rápidas.

@@ -1,6 +1,7 @@
-# Checklist — Como Aumentar em 30% a Rentabilidade
-- [ ] Diagnóstico realizado
+# Checklist — Aumentar Rentabilidade
 - [ ] Objetivos definidos
-- [ ] Aplicação executada
-- [ ] Estratégia traçada
-- [ ] Escala planejada
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

@@ -4,119 +4,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Área do Aluno — Praia Digital Academy</title>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Área do Aluno — Praia Digital Academy",
-    "url": "https://praia.digital/education/aluno/index.html"
-  }
-  </script>
-
-  <meta property="og:type" content="website">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Área do aluno da Praia Digital Academy: acesse seus cursos, materiais e certificado.">
+  <link rel="canonical" href="https://praia.digital/education/aluno/index.html">
   <meta property="og:title" content="Área do Aluno — Praia Digital Academy">
-  <meta property="og:description" content="Área do Aluno — Praia Digital Academy">
+  <meta property="og:description" content="Acesse seus cursos e materiais exclusivos.">
   <meta property="og:url" content="https://praia.digital/education/aluno/index.html">
   <meta property="og:site_name" content="Praia Digital Academy">
   <meta name="theme-color" content="#0b1220">
-
-  <meta name="description" content="Acesse seus cursos da Praia Digital Academy. Acompanhe seu progresso, estude no player e baixe seu certificado.">
-  <link rel="canonical" href="https://praia.digital/education/aluno/index.html">
-  <meta name="robots" content="noindex, nofollow">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script defer src="https://unpkg.com/axios@1.7.7/dist/axios.min.js"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: { bg: '#0b1220', accent: '#00b4d8', surface: '#111827', text: '#e5e7eb' }
-          }
-        }
-      }
-    }
-  </script>
+  <link rel="preconnect" href="https://praia.digital">
+  <style>
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:#0b1220;color:#e8ecf1;margin:0;padding:0}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px 22px}
+    header nav a{color:#cfe3ff;text-decoration:none;margin-right:14px;font-weight:500}
+    h1{font-size:2rem;margin:0 0 .5rem}
+    .lead{opacity:.85;line-height:1.6;margin-bottom:1rem}
+    .grid{display:grid;gap:1rem;margin-top:1.2rem}
+    .grid-3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:18px 20px}
+    .card a{color:#cfe3ff;font-weight:700;text-decoration:none}
+    .cta{background:#00B4D8;color:#fff;padding:.7rem 1.2rem;border-radius:999px;font-weight:700;text-decoration:none;display:inline-block;margin-top:.6rem;margin-right:10px}
+    .badge{background:rgba(0,180,216,.15);border:1px solid rgba(0,180,216,.35);color:#90E0EF;padding:.2rem .6rem;border-radius:999px;font-size:.75rem;font-weight:700}
+    footer{margin-top:22px;opacity:.6;font-size:12px}
+  </style>
 </head>
-<body class="bg-brand-bg text-brand-text min-h-screen">
-  <nav class="bg-brand-surface border-b border-gray-800">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="https://praia.digital/education/index.html" class="text-white font-bold text-xl">Praia Digital Academy</a>
-      <div class="flex items-center gap-4">
-        <span id="userName" class="text-sm text-gray-300"></span>
-        <button onclick="logout()" class="bg-brand-accent text-black px-3 py-1.5 rounded text-sm font-semibold">Sair</button>
+<body>
+  <div class="wrap">
+    <header>
+      <nav aria-label="Navegação principal">
+        <a href="https://praia.digital/index.html">Início</a>
+        <a href="https://praia.digital/education/index.html">Academy</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>Área do Aluno</h1>
+      <p class="lead">Bem-vindo à sua área exclusiva. Aqui você acessa os cursos, materiais e certificados.</p>
+
+      <div class="card" style="margin-bottom:16px">
+        <p><strong>Status:</strong> <span class="badge">Matrícula ativa</span></p>
+        <p><strong>Próxima aula:</strong> continue de onde parou.</p>
+        <a class="cta" href="/education/aluno/curso.html">Acessar meu curso</a>
+        <a class="cta" style="background:#fff;color:#0b1220" href="/education/aluno/certificado.html">Meu certificado</a>
       </div>
-    </div>
-  </nav>
 
-  <main class="max-w-7xl mx-auto px-4 py-8">
-    <h1 class="text-3xl font-bold text-white mb-6">Minha Área</h1>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-brand-surface p-5 rounded border border-gray-800">
-        <p class="text-gray-400 text-sm">Cursos matriculados</p>
-        <p id="enrollmentsCount" class="text-3xl font-bold text-white">0</p>
+      <h2>Meus cursos</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <a href="/education/cursos/airbnb-do-zero/index.html">Airbnb do Zero no Litoral</a>
+          <p style="opacity:.75; margin-top:6px;">Cadastro, anúncio, precificação e gestão.</p>
+          <span class="badge" style="margin-top:8px;display:inline-block">Em andamento</span>
+        </div>
+        <div class="card">
+          <a href="/education/cursos/investindo-imoveis-litoral/index.html">Investindo em Imóveis no Litoral</a>
+          <p style="opacity:.75; margin-top:6px;">Análise, rentabilidade e execução.</p>
+          <span class="badge" style="margin-top:8px;display:inline-block">Disponível</span>
+        </div>
+        <div class="card">
+          <a href="/education/cursos/comprar-imovel-praia-sem-golpes/index.html">Como Comprar um Imóvel na Praia sem Cair em Golpes</a>
+          <p style="opacity:.75; margin-top:6px;">Documentação, riscos e segurança na compra.</p>
+          <span class="badge" style="margin-top:8px;display:inline-block">Disponível</span>
+        </div>
       </div>
-      <div class="bg-brand-surface p-5 rounded border border-gray-800">
-        <p class="text-gray-400 text-sm">Progresso médio</p>
-        <p id="avgProgress" class="text-3xl font-bold text-white">0%</p>
+
+      <h2 style="margin-top:22px">Materiais rápidos</h2>
+      <div class="grid grid-3">
+        <div class="card"><a href="/education/cursos/airbnb-do-zero/curso-completo/modulo-1.md">Módulo 1 — Fundamentos</a><p style="opacity:.75; margin-top:6px;">Acesso imediato ao conteúdo.</p></div>
+        <div class="card"><a href="/education/cursos/airbnb-do-zero/checklists/checklist-curso.md">Checklist do curso</a><p style="opacity:.75; margin-top:6px;">Acompanhe sua evolução.</p></div>
+        <div class="card"><a href="/education/cursos/airbnb-do-zero/planilhas/planilha-acompanhamento.md">Planilha de acompanhamento</a><p style="opacity:.75; margin-top:6px;">Monte seu plano prático.</p></div>
       </div>
-      <div class="bg-brand-surface p-5 rounded border border-gray-800">
-        <p class="text-gray-400 text-sm">Certificados</p>
-        <p id="certificatesCount" class="text-3xl font-bold text-white">0</p>
-      </div>
-    </div>
+    </main>
 
-    <section class="mt-10">
-      <h2 class="text-2xl font-bold text-white mb-4">Meus Cursos</h2>
-      <div id="enrollmentsList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
-    </section>
-  </main>
-
-  <script>
-    const token = localStorage.getItem('academy_token');
-    const apiBase = '/academy';
-
-    async function api(path, opts = {}) {
-      const headers = { ...(opts.headers || {}) };
-      if (token) headers['Authorization'] = `Bearer ${token}`;
-      const res = await axios.get(apiBase + path, { headers });
-      return res.data;
-    }
-
-    async function loadProfile() {
-      if (!token) { window.location.href = '/education/aluno/login.html'; return; }
-      const enrollments = await api('/me/enrollments');
-      const count = enrollments.length;
-      document.getElementById('enrollmentsCount').textContent = count;
-    }
-
-    async function loadEnrollments() {
-      if (!token) return;
-      const data = await api('/me/enrollments');
-      const container = document.getElementById('enrollmentsList');
-      container.innerHTML = '';
-      for (const enrollment of data) {
-        const course = await api(`/courses/${enrollment.course_id}`).catch(() => ({}));
-        const card = document.createElement('div');
-        card.className = 'bg-brand-surface p-4 rounded border border-gray-800';
-        card.innerHTML = `
-          <h3 class="text-white font-semibold text-lg mb-2">${course.title || 'Curso #' + enrollment.course_id}</h3>
-          <p class="text-gray-400 text-sm mb-3">Acesso até ${enrollment.access_until ? new Date(enrollment.access_until).toLocaleDateString('pt-BR') : '—'}</p>
-          <a href="/education/aluno/curso.html?id=${enrollment.course_id}&enrollment_id=${enrollment.id}" class="inline-block bg-brand-accent text-black px-4 py-2 rounded font-semibold text-sm">Entrar no curso</a>
-        `;
-        container.appendChild(card);
-      }
-    }
-
-    function logout() {
-      localStorage.removeItem('academy_token');
-      window.location.href = '/education/aluno/login.html';
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      loadProfile();
-      loadEnrollments();
-    });
-  </script>
+    <footer>Praia Digital Academy — área do aluno.</footer>
+  </div>
 </body>
 </html>

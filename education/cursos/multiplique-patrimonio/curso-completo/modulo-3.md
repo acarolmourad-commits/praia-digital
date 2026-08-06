@@ -1,64 +1,60 @@
-# Módulo 3 — Documentação e Segurança
-
+# Módulo 3 — Conteúdo Premium
 ## Introdução
-Aprenda a verificar documentação, evitar fraudes e fechar compras com segurança no litoral.
+Neste módulo você vai dominar multiplique patrimonio com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 3.1 — Documentos essenciais
-**Documentos do imóvel:**
-- Escritura.
-- Matrícula.
-- IPTU.
-- Certidão de ônus.
+## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Documentos do proprietário:**
-- RG e CPF.
-- Comprovante de residência.
-- Procuração.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Investidor verificou matrícula e evitou fraude.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 3.2 — Verificação e fraudes
-**Verificação:**
-- Cartório.
-- Registro.
-- Certidões.
+## Aula 3.2 — Caso real 2: como evitar erros custosos
+Fundamentos, ferramentas e fluxos recomendados para multiplique patrimonio no litoral.
 
-**Fraudes:**
-- Documento falso.
-- Ocultação de ônus.
-- Venda de imóvel alheio.
+**Ferramentas recomendadas:**
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
-**Estudo de caso:**
-Investidor identificou fraude e evitou prejuízo.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-## Aula 3.3 — Fechamento seguro
-**Passos:**
-- Documentos revisados.
-- Contrato assinado.
-- Registro realizado.
+## Aula 3.3 — Lições aplicáveis ao seu contexto
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Exercício:**
-Monte um checklist de compra segura.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
+
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Analise um caso real do mercado e adapte as lições para a sua realidade.
 
 ## Resumo
-- Documentação protege investimento.
-- Verificação evita fraudes.
-- Fechamento seguro confirma compra.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Documentos verificados
-- [ ] Registros consultados
-- [ ] Fechamento confirmado
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de compra
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Portal de cartórios
-- Planilha
-- Consultorias
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
 ## Prompt de IA
-"Atue como especialista em investimento imobiliário. Monte um checklist de compra para este imóvel: [dados]."
+Atue como mentor experiente. Analise este caso real de multiplique patrimonio no litoral e aponte 5 lições práticas: [descreva o caso].

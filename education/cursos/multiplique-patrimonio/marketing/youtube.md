@@ -1,4 +1,4 @@
-# Roteiro YouTube — Multiplique Patrimônio
+# Roteiro YouTube — Multiplique Patrimonio
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado

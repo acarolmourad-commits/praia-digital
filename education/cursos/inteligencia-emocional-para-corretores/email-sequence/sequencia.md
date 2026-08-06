@@ -1,21 +1,21 @@
-# Sequência de E-mails — Inteligência Emocional para Corretores
+# Sequência de E-mails — Inteligencia Emocional Para Corretores
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: Inteligência Emocional para Corretores no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Inteligencia Emocional Para Corretores (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: corretor controlou emoções e fechou venda
+Assunto: Case prático de Inteligencia Emocional Para Corretores
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Inteligência emocional compensa?"
+Assunto: "Inteligencia Emocional Para Corretores é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno reduziu ansiedade em 35%
+Assunto: Aluno obteve resultado com Inteligencia Emocional Para Corretores
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

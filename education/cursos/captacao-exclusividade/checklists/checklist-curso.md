@@ -1,11 +1,7 @@
-# Checklist — Captação e Exclusividade para Corretores
-- [ ] Diagnóstico de captação
-- [ ] Prospecção definida
-- [ ] Scripts preparados
-- [ ] Visitas agendadas
-- [ ] Proposta pronta
-- [ ] Contrato revisado
-- [ ] Marketing ativo
-- [ ] Follow-up estruturado
-- [ ] Indicações solicitadas
-- [ ] Crescimento planejado
+# Checklist — Captacao Exclusividade
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

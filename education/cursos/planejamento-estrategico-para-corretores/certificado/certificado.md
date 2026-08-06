@@ -1,7 +1,6 @@
-# Certificado — Planejamento Estratégico para Corretores
+# Certificado — Planejamento Estrategico Para Corretores
 Modelo: Praia Digital Academy
-Curso: Planejamento Estratégico para Corretores
-Carga horária: 4 horas
+Curso: Planejamento Estrategico Para Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

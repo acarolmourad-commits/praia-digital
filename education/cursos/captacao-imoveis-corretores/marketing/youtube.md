@@ -1,4 +1,4 @@
-# Roteiro YouTube — Captação de Imóveis para Corretores
+# Roteiro YouTube — Captacao Imoveis Corretores
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado

@@ -1,11 +1,7 @@
-# Checklist — Gestão Profissional da Locação
-- [ ] Documentação reunida
-- [ ] Contrato revisado
-- [ ] Vistoria realizada
-- [ ] Rotina definida
-- [ ] Fiscalização agendada
-- [ ] Manutenção preventiva
-- [ ] Financeiro controlado
-- [ ] Inadimplência monitorada
-- [ ] Atendimento organizado
-- [ ] Crescimento planejado
+# Checklist — Gestao Profissional Locacao
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

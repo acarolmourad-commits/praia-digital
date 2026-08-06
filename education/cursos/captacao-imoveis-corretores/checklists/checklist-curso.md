@@ -1,8 +1,7 @@
-# Checklist — Captação de Imóveis para Corretores
-- [ ] Diagnóstico de captação
-- [ ] Contato inicial
-- [ ] Proposta criada
-- [ ] Exclusividade fechada
-- [ ] Follow-up estruturado
-- [ ] Vendas acompanhadas
-- [ ] Crescimento planejado
+# Checklist — Captacao Imoveis Corretores
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

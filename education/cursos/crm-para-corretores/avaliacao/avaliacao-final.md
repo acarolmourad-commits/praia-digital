@@ -1,9 +1,9 @@
-# Avaliação Final — CRM para Corretores
+# Avaliação Final — Crm Para Corretores
 ## Quiz
-- 20 perguntas sobre CRM, funil, follow-up e métricas.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- CRM aplicado a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

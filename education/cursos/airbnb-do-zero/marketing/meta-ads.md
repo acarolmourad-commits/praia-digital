@@ -1,5 +1,5 @@
-# Meta Ads — Airbnb do Zero no Litoral
-Público: 25 a 55 anos, interesse em temporada, Airbnb, Booking, litoral
+# Meta Ads — airbnb-do-zero
+Público: 25 a 55 anos, interesse no tema, litoral
 Objetivo: leads
 Formato: vídeo + carrossel
 Orçamento sugerido: R$ 40 a R$ 120/dia

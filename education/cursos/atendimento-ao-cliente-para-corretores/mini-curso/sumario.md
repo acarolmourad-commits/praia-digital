@@ -1,5 +1,5 @@
-# Mini Curso — Atendimento ao Cliente para Corretores
-## Aula 1 — Fundamentos do atendimento (8 min)
-## Aula 2 — Método e relacionamento (12 min)
-## Aula 3 — Contato e fechamento (10 min)
-## Bônus — Planilha de atendimento
+# Mini Curso — Atendimento Ao Cliente Para Corretores
+## Aula 1 — Visão geral (8 min)
+## Aula 2 — Conceitos essenciais (12 min)
+## Aula 3 — Aplicação prática (10 min)
+## Bônus — Material complementar

@@ -1,4 +1,4 @@
-# Google Ads — Avaliação de Imóveis
-Palavras: avaliação de imóveis, laudo de avaliação, imóveis no litoral
+# Google Ads — avaliacao-de-imoveis
+Palavras: avaliacao de imoveis, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

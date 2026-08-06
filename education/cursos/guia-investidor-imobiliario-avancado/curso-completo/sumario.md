@@ -1,5 +1,5 @@
-# Sumário do Curso: Guia do Investidor Imobiliário Avançado
-- Módulo 1: Fundamentos do Investidor Avançado
-- Módulo 2: Carteira e Análise
-- Módulo 3: Alavancagem e Crescimento
-- Módulo 4: Escala e Sustentação
+# Sumário do Curso: Guia Investidor Imobiliario Avancado
+- Módulo 1: Fundamentos
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

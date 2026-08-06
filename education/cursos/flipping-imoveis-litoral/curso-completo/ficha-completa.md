@@ -1,12 +1,12 @@
-# Curso: Flipping de Imóveis no Litoral
+# Curso: Flipping Imoveis Litoral
 ## Nome Comercial
-**Flipping de Imóveis no Litoral: Método Prático para Comprar, Reformar e Vender Imóveis com Lucro no Mercado Litorâneo**
+**Flipping Imoveis Litoral: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Do negócio à venda: aprenda a comprar, reformar e vender imóveis no litoral com método e lucro previsível.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 20 dias, você será capaz de montar um negócio de flipping no litoral, identificar boas oportunidades e fechar vendas com lucro.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
 - Investidores iniciantes e intermediários
@@ -22,144 +22,134 @@ Iniciante → Intermediário
 
 ## Tempo Estimado
 4 horas de aulas (20 aulas de 10 a 16 min)
-Total: 4 horas
+Total: 4 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 197
-À vista: R$ 167
-Parcelado: 12x de R$ 13,92
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist de flipping
-- Planilha de oportunidades
-- Modelos de proposta
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Compre, reforme e venda imóveis no litoral com método e lucro previsível"**
+**"Flipping Imoveis Litoral"**
 
 ## Big Idea
-Flipping no litoral combina análise de oportunidades, reforma rápida e venda rápida para gerar lucro previsível.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
-- **Curso completo:** R$ 197
+- **Curso completo:** R$ 297
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
 ## Avatar
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
-**Renda:** R$ 5k a R$ 25k/mês
-**Objetivo:** fazer flipping com lucro
-**Dificuldades:** falta de método, reforma cara, venda lenta
-**Desejos:** lucro previsível, crescimento, segurança
+**Renda:** R$ 3k a R$ 20k/mês
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
 - Falta de método
-- Reforma cara
-- Venda lenta
-- Oportunidades ruins
-- Insegurança
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Lucro previsível
-- Crescimento
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
 - Segurança
-- Tranquilidade
-- Autoridade
+- Autoridade local
 
 ## Objeções
-- "Flipping é arriscado"
-- "Reforma é cara"
-- "Não vende rápido"
-- "Preciso de muito dinheiro"
-- "Vou errar"
+- "Muito caro"
+- "Não funciona"
+- "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- Oportunidades estruturadas
-- Reforma controlada
-- Venda rápida
-- Lucro previsível
-- Crescimento sustentado
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
-### Módulo 1 — Fundamentos do Flipping
-Aula 1.1 — O que é flipping
-Aula 1.2 — Mercado do litoral
-Aula 1.3 — Perfil do investidor
-Exercício: diagnóstico de flipping
+### Módulo 1 — Fundamentos
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Identificação de Oportunidades
-Aula 2.1 — Como encontrar imóveis
-Aula 2.2 — Análise de viabilidade
-Aula 2.3 — Negociação e compra
-Exercício: análise de oportunidade
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Reforma e Preparação
-Aula 3.1 — Planejamento de reforma
-Aula 3.2 — Execução e controle
-Aula 3.3 — Apresentação do imóvel
-Exercício: plano de reforma
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Venda e Crescimento
-Aula 4.1 — Precificação e venda
-Aula 4.2 — Follow-up e negociação
-Aula 4.3 — Escala e próximo flipping
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
 Exercício: plano de crescimento
 
 ## Carga Horária
-4 horas
+4 horas de aulas (20 aulas de 10 a 16 min)
+Total: 4 horas
 
 ## Material Complementar
-- Checklist de flipping
-- Planilha de oportunidades
-- Modelos de proposta
 - PDFs por módulo
+- Templates
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de oportunidade
-- Checklist de reforma
-- Checklist de venda
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de oportunidades
-- Planilha de custos
-- Planilha de lucro
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de proposta
-- Modelo de contrato
-- Modelo de follow-up
+- Modelo aplicável
 
 ## Scripts
-- Script de negociação
-- Script de venda
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para gerar análises e propostas.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: diagnóstico de flipping
-- Exercício 2: análise de oportunidade
-- Exercício 3: plano de reforma
-- Exercício 4: plano de crescimento
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: flipping aplicado
+Prova prática: aplicação do método
 
 ## FAQ
-1. Preciso de experiência? Não.
+1. Como funciona? Método passo a passo.
 2. Em quanto tempo vejo resultado? De 30 a 60 dias.
-3. Vale a pena? Sim.
-4. E se errar? Ajuste com método.
-5. Tem suporte? Sim.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
 [vendas.html]
@@ -192,17 +182,15 @@ Prova prática: flipping aplicado
 [marketing/google-ads.md]
 
 ## CTA
-"Faça flipping no litoral com método agora."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Mentoria individual: R$ 3.000
-- Acompanhamento: R$ 4.500
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
 - Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Análise de Rentabilidade
-- Curso de Avaliação de Imóveis
-- Curso de Como Aumentar em 30% a Rentabilidade
+- Outros cursos da Praia Digital Academy

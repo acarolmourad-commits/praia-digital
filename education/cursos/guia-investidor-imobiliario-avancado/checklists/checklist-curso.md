@@ -1,8 +1,7 @@
-# Checklist — Guia do Investidor Imobiliário Avançado
-- [ ] Diagnóstico de investidor
-- [ ] Carteira definida
-- [ ] Análise feita
-- [ ] Alavancagem planejada
-- [ ] Parcerias estruturadas
-- [ ] Métricas revisadas
-- [ ] Crescimento planejado
+# Checklist — Guia Investidor Imobiliario Avancado
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

@@ -1,5 +1,5 @@
-# E-book Derivado — Gestão do Tempo para Corretores
-Título: Guia Rápido: Gestão do Tempo para Corretores no Litoral
+# E-book Derivado — Gestao Do Tempo Para Corretores
+Título: Guia Rápido sobre Gestao Do Tempo Para Corretores
 Formato: PDF 20 a 30 páginas
 Preço: gratuito ou R$ 19,90
-Conteúdo: checklist, planilha, dicas rápidas, modelo de rotina.
+Conteúdo: resumo, templates, dicas rápidas.

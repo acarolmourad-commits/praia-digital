@@ -1,21 +1,21 @@
-# Sequência de E-mails — Rotinas de Vendas para Corretores
+# Sequência de E-mails — Rotinas De Vendas Para Corretores
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: Rotinas de Vendas para Corretores no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Rotinas De Vendas Para Corretores (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: corretor organizou rotina e aumentou vendas
+Assunto: Case prático de Rotinas De Vendas Para Corretores
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Rotina de vendas é complicada?"
+Assunto: "Rotinas De Vendas Para Corretores é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno aumentou vendas em 25%
+Assunto: Aluno obteve resultado com Rotinas De Vendas Para Corretores
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

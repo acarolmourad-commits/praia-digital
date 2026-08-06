@@ -1,5 +1,5 @@
-# Mini Curso — Inteligência Emocional para Corretores
-## Aula 1 — Fundamentos da inteligência emocional (8 min)
-## Aula 2 — Autoconhecimento e método (12 min)
-## Aula 3 — Comunicação e fechamento (10 min)
-## Bônus — Planilha emocional
+# Mini Curso — Inteligencia Emocional Para Corretores
+## Aula 1 — Visão geral (8 min)
+## Aula 2 — Conceitos essenciais (12 min)
+## Aula 3 — Aplicação prática (10 min)
+## Bônus — Material complementar

@@ -1,5 +1,5 @@
-# Sumário do Curso: Booking do Zero no Litoral
-- Módulo 1: Fundamentos da Temporada
-- Módulo 2: Cadastro e Apresentação
-- Módulo 3: Precificação e Disponibilidade
-- Módulo 4: Gestão e Crescimento
+# Sumário do Curso: Booking Do Zero
+- Módulo 1: Fundamentos
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

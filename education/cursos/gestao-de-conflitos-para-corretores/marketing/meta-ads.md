@@ -1,5 +1,5 @@
-# Meta Ads — Gestão de Conflitos para Corretores
-Público: 25 a 55 anos, interesse em imóveis, vendas, conflitos, litoral
+# Meta Ads — gestao-de-conflitos-para-corretores
+Público: 25 a 55 anos, interesse no tema, litoral
 Objetivo: leads
 Formato: vídeo + carrossel
 Orçamento sugerido: R$ 40 a R$ 120/dia

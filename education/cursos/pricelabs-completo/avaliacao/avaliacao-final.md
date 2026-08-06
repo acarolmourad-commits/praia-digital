@@ -1,9 +1,9 @@
-# Avaliação Final — PriceLabs Completo para Temporada no Litoral
+# Avaliação Final — Pricelabs Completo
 ## Quiz
-- 20 perguntas sobre precificação, PriceLabs, temporada, eventos e automação.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Setup simulado + estratégia aplicada.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

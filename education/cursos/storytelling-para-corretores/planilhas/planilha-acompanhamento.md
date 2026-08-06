@@ -1,11 +1,5 @@
-# Planilha — Storytelling para Corretores
+# Planilha — Storytelling Para Corretores
 - [ ] Data
-- [ ] Cliente
-- [ ] Imóvel
-- [ ] Cidade
-- [ ] História
 - [ ] Ação
-- [ ] Follow-up
-- [ ] Venda
-- [ ] Receita
-- [ ] Status
+- [ ] Resultado
+- [ ] Observação

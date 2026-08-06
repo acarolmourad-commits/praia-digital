@@ -1,7 +1,6 @@
-# Certificado — Guia do Investidor Imobiliário
+# Certificado — Guia Investidor Imobiliario
 Modelo: Praia Digital Academy
-Curso: Guia do Investidor Imobiliário
-Carga horária: 4 horas
+Curso: Guia Investidor Imobiliario
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

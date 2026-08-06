@@ -1,21 +1,21 @@
-# Sequência de E-mails — Gestão de Conflitos para Corretores
+# Sequência de E-mails — Gestao De Conflitos Para Corretores
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: Gestão de Conflitos para Corretores no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Gestao De Conflitos Para Corretores (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: corretor resolveu conflito e fechou venda
+Assunto: Case prático de Gestao De Conflitos Para Corretores
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Gestão de conflitos é complicada?"
+Assunto: "Gestao De Conflitos Para Corretores é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno reduziu conflitos em 30%
+Assunto: Aluno obteve resultado com Gestao De Conflitos Para Corretores
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

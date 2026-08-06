@@ -1,12 +1,12 @@
-# Curso: Venda Rápida de Imóveis no Litoral
+# Curso: Venda Rapida Imoveis Litoral
 ## Nome Comercial
-**Venda Rápida de Imóveis no Litoral: Método Prático para Vender Imóveis em Tempo Recorde com Método e Estratégia**
+**Venda Rapida Imoveis Litoral: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Do anúncio ao fechamento: aprenda a vender imóveis rápido no litoral com método, marketing e follow-up.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 15 dias, você será capaz de estruturar anúncio, captar leads e fechar vendas rápidas no litoral.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
 - Corretores de imóveis iniciantes e intermediários
@@ -21,31 +21,30 @@ Iniciante → Intermediário
 
 ## Tempo Estimado
 4 horas de aulas (20 aulas de 10 a 16 min)
-Total: 4 horas
+Total: 4 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 197
-À vista: R$ 167
-Parcelado: 12x de R$ 13,92
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist de venda rápida
-- Planilha de leads
-- Modelos de anúncio
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Venda imóveis rápido no litoral com método"**
+**"Venda Rapida Imoveis Litoral"**
 
 ## Big Idea
-Venda rápida combina anúncio persuasivo, captação de leads e follow-up estruturado para fechar em tempo recorde no litoral.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
-- **Curso completo:** R$ 197
+- **Curso completo:** R$ 297
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
@@ -53,112 +52,103 @@ Venda rápida combina anúncio persuasivo, captação de leads e follow-up estru
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** vender rápido
-**Dificuldades:** anúncio fraco, leads poucos, follow-up lento
-**Desejos:** crescimento, produtividade, autoridade
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Anúncio fraco
-- Leads poucos
-- Follow-up lento
-- Venda demorada
-- Renda baixa
+- Falta de método
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Crescimento
-- Produtividade
-- Autoridade
-- Previsibilidade
-- Escala
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
+- Segurança
+- Autoridade local
 
 ## Objeções
-- "Venda rápida é difícil"
-- "Demora muito"
-- "Não compensa"
-- "Vou errar"
+- "Muito caro"
+- "Não funciona"
 - "É complicado"
+- "Não tenho tempo"
+- "Já tentei"
 
 ## Transformação
-- Anúncio persuasivo
-- Leads qualificados
-- Venda rápida
-- Crescimento previsível
-- Liberdade
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
-### Módulo 1 — Fundamentos da Venda Rápida no Litoral
-Aula 1.1 — O que é venda rápida
-Aula 1.2 — Perfil do corretor
-Aula 1.3 — Método e metas
-Exercício: diagnóstico de venda
+### Módulo 1 — Fundamentos
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Anúncio e Captação
-Aula 2.1 — Anúncio persuasivo
-Aula 2.2 — Captação de leads
-Aula 2.3 — Follow-up rápido
-Exercício: plano de anúncio
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Apresentação e Negociação
-Aula 3.1 — Apresentação
-Aula 3.2 — Proposta
-Aula 3.3 — Negociação
-Exercício: proposta aplicada
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Fechamento e Crescimento
-Aula 4.1 — Fechamento rápido
-Aula 4.2 — Métricas
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
 Aula 4.3 — Escala
 Exercício: plano de crescimento
 
 ## Carga Horária
-4 horas
+4 horas de aulas (20 aulas de 10 a 16 min)
+Total: 4 horas
 
 ## Material Complementar
-- Checklist de venda rápida
-- Planilha de leads
-- Modelos de anúncio
 - PDFs por módulo
+- Templates
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist de venda
-- Checklist de anúncio
-- Checklist de follow-up
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de leads
-- Planilha de métricas
-- Planilha de vendas
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de anúncio
-- Modelo de proposta
-- Modelo de follow-up
+- Modelo aplicável
 
 ## Scripts
-- Script de atendimento
-- Script de venda
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para gerar análises e propostas.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: diagnóstico de venda
-- Exercício 2: plano de anúncio
-- Exercício 3: proposta aplicada
-- Exercício 4: plano de crescimento
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: venda aplicada
+Prova prática: aplicação do método
 
 ## FAQ
-1. Preciso de experiência? Não.
-2. Em quanto tempo vejo resultado? De 15 a 30 dias.
-3. Vale a pena? Sim.
-4. E se errar? Ajuste com método.
-5. Tem suporte? Sim.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
 [vendas.html]
@@ -191,17 +181,15 @@ Prova prática: venda aplicada
 [marketing/google-ads.md]
 
 ## CTA
-"Venda imóveis rápido no litoral agora."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Mentoria individual: R$ 1.500
-- Acompanhamento: R$ 2.800
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
 - Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Marketing Imobiliário para Corretores
-- Curso de Funil de Vendas para Corretores
-- Curso de WhatsApp que Vende
+- Outros cursos da Praia Digital Academy

@@ -1,9 +1,9 @@
-# Avaliação Final — Comprar com Segurança no Litoral
+# Avaliação Final — Comprar Com Seguranca
 ## Quiz
-- 20 perguntas sobre compra segura, verificação, documentação e negociação.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Processo de compra aplicado a um imóvel real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

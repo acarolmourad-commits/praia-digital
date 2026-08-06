@@ -1,5 +1,5 @@
-# Sumário do Curso: CRM para Corretores
-- Módulo 1: Fundamentos de CRM
-- Módulo 2: Funil e Follow-up
-- Módulo 3: Automação e Templates
-- Módulo 4: Gestão e Crescimento
+# Sumário do Curso: Crm Para Corretores
+- Módulo 1: Fundamentos
+- Módulo 2: Aplicação Prática
+- Módulo 3: Casos Reais
+- Módulo 4: Crescimento

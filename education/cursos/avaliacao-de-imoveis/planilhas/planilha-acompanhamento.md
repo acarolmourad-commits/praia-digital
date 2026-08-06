@@ -1,10 +1,5 @@
-# Planilha — Avaliação de Imóveis
+# Planilha — Avaliacao De Imoveis
 - [ ] Data
-- [ ] Imóvel
-- [ ] Cidade
-- [ ] Área
-- [ ] Preço
-- [ ] Comparáveis
-- [ ] Ajustes
-- [ ] Valor final
-- [ ] Status
+- [ ] Ação
+- [ ] Resultado
+- [ ] Observação

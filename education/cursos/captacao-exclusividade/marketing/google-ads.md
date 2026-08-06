@@ -1,4 +1,4 @@
-# Google Ads — Captação e Exclusividade para Corretores
-Palavras: captação de imóveis, exclusividade para corretores, venda de imóveis no litoral
+# Google Ads — captacao-exclusividade
+Palavras: captacao exclusividade, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

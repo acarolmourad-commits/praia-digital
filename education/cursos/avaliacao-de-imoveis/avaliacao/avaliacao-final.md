@@ -1,9 +1,9 @@
-# Avaliação Final — Avaliação de Imóveis
+# Avaliação Final — Avaliacao De Imoveis
 ## Quiz
-- 20 perguntas sobre avaliação, comparáveis, laudo e negociação.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Laudo de avaliação aplicado a um imóvel real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

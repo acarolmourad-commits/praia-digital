@@ -1,4 +1,4 @@
-# Roteiro YouTube — Investindo em Imóveis no Litoral
+# Roteiro YouTube — Investindo Imoveis Litoral
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado

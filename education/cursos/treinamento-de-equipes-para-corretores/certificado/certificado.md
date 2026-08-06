@@ -1,7 +1,6 @@
-# Certificado — Treinamento de Equipes para Corretores
+# Certificado — Treinamento De Equipes Para Corretores
 Modelo: Praia Digital Academy
-Curso: Treinamento de Equipes para Corretores
-Carga horária: 4 horas
+Curso: Treinamento De Equipes Para Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

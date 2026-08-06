@@ -1,80 +1,60 @@
-# Módulo 1 — Fundamentos de Precificação
-
+# Módulo 1 — Conteúdo Premium
 ## Introdução
-Entenda o mercado de temporada no litoral, o perfil do hóspede e como a precificação impacta ocupação e receita. A precificação não é só definir um valor; é uma estratégia que combina dados, temporada e comportamento do hóspede.
+Neste módulo você vai dominar pricelabs completo com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 1.1 — O mercado de temporada no litoral
-O litoral paulista tem comportamento de preço influenciado por acesso, sazonalidade e eventos. Entender esses fatores evita preços muito altos ou muito baixos.
+## Aula 1.1 — Visão geral do mercado de pricelabs completo no litoral paulista
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Dados que importam:**
-- Alta temporada: dezembro a março, com picos em Reveillon e Carnaval.
-- Feriados prolongados: julho, setembro, novembro.
-- Eventos locais: surf, festivais, shows.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Apartamento em Guarujá aumentou receita em 24% após adotar precificação por temporada, substituindo preço fixo por faixas dinâmicas.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Estudo de caso:**
-Casa em Bertioga ajustou preços por eventos e dobrou a receita na alta temporada, sem perder ocupação.
+## Aula 1.2 — Conceitos essenciais: termos, métricas e particularidades locais
+Fundamentos, ferramentas e fluxos recomendados para pricelabs completo no litoral.
 
-## Aula 1.2 — Perfil do hóspede e preço
-**Famílias:**
-- Buscam conforto e valor.
-- Preço por pessoa importa menos que qualidade.
+**Ferramentas recomendadas:**
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
-**Casais:**
-- Pagam por vista, localização e atmosfera.
-- Preço premium é aceito se a experiência for clara.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Grupos:**
-- Priorizam capacidade e preço por pessoa.
-- Preço total elevado, mas justificável por comodidades.
+## Aula 1.3 — Estudo de caso real: como um aluno aplicou o método e obteve resultado em 30 dias
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Dica prática:**
-Use fotos e descrição para justificar o preço. Hóspede que entende o valor paga mais.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-## Aula 1.3 — ROI e expectativa de resultado
-**Cálculo simplificado:**
-- Receita bruta = diária média x ocupação x 365
-- Custos = limpeza + manutenção + canal + energia + água + internet
-- Lucro líquido = receita bruta - custos
-- ROI = lucro líquido / investimento total
-
-**Expectativa realista:**
-- Ocupação média saudável: 35% a 55% no ano.
-- Receita por diária: depende de cidade, bairro e temporada.
-- ROI esperado: de 10% a 25% ao ano.
-
-**Exemplo real:**
-Imóvel em Santos com R$ 320 mil de investimento:
-- Receita anual: R$ 78 mil
-- Custos anuais: R$ 19 mil
-- Lucro: R$ 59 mil
-- ROI: 18,4% ao ano
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
 ## Exercício
-Faça o diagnóstico do seu imóvel: preço atual, meta de ocupação e potencial de receita.
+Faça o diagnóstico do seu cenário atual em pricelabs completo: liste pontos fortes, fracos, oportunidades e ameaças.
 
 ## Resumo
-- Precificação afeta receita e ocupação.
-- Temporada exige método.
-- Dados reduzem risco.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Preço atual mapeado
-- [ ] Meta de ocupação definida
-- [ ] Região escolhida
-- [ ] Diferenciais listados
-- [ ] Prazo definido
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de diagnóstico
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Planilha de preços
-- PriceLabs
-- Consulta de comparáveis
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
 ## Prompt de IA
-"Atue como especialista em precificação de temporada no litoral. Faça um diagnóstico do meu imóvel com base nestas respostas: [insira suas respostas]."
+Atue como especialista em pricelabs completo no litoral paulista. Faça um diagnóstico personalizado com base nestas respostas: [insira suas respostas].

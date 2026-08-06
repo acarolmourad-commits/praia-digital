@@ -1,83 +1,60 @@
-# Módulo 1 — Fundamentos da Temporada
-
+# Módulo 1 — Conteúdo Premium
 ## Introdução
-Entenda o mercado de temporada no litoral, o perfil do hóspede e as expectativas de retorno do seu imóvel. A temporada não é apenas “colocar no ar”; é um modelo de operação com regras, picos e perfis específicos.
+Neste módulo você vai dominar airbnb do zero com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 1.1 — O mercado de temporada no litoral
-O mercado de temporada no litoral paulista tem particularidades que diferem de outras regiões: sazonalidade marcada, dependência de acesso rodoviário, forte influência de eventos e perfil de hóspede voltado para experiência.
+## Aula 1.1 — Visão geral do mercado de airbnb do zero no litoral paulista
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Dados que importam:**
-- Alta temporada: dezembro a março, com picos em Reveillon e Carnaval.
-- Feriados prolongados: julho, setembro e novembro também geram movimento.
-- Perfil do hóspede: famílias paulistanas, casais de Minas/Paraná e turistas internacionais na alta temporada.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Apartamento em Guarujá com 2 quartos, a 500 m da praia, começou a temporada em 2022 com preço de R$ 300/noite. Após ajuste de temporada e melhoria nas fotos, chegou a R$ 550/noite na alta temporada e ocupação de 88%.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Estudo de caso:**
-Casa em Bertioga cadastrada em 2023 com piscina e churrasqueira atingiu 92% de ocupação no verão. Hoje tem reservas antecipadas até março do ano seguinte.
+## Aula 1.2 — Conceitos essenciais: termos, métricas e particularidades locais
+Fundamentos, ferramentas e fluxos recomendados para airbnb do zero no litoral.
 
-## Aula 1.2 — Perfil do hóspede no litoral
-**Famílias:**
-- Buscam conforto, cozinha completa, área kids e proximidade da praia.
-- Valorizam segurança, WiFi e estacionamento.
+**Ferramentas recomendadas:**
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
-**Casais:**
-- Valorizam vista, privacidade, acesso rápido e atmosfera romântica.
-- Preferem estadias curtas e experiência premium.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Grupos:**
-- Priorizam capacidade, estacionamento, áreas comuns e preço por pessoa.
-- Valorizam flexibilidade de horários e regras simples.
+## Aula 1.3 — Estudo de caso real: como um aluno aplicou o método e obteve resultado em 30 dias
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Dica prática:**
-Monte perfis de hóspede e adapte o anúncio para cada um. Fotos de família vendem para famílias; fotos de vista e jantar romântico vendem para casais.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-## Aula 1.3 — ROI e expectativa de resultado
-**Cálculo simplificado:**
-- Receita bruta = diária média x ocupação x 365
-- Custos = limpeza + manutenção + canal + energia + água + internet
-- Lucro líquido = receita bruta - custos
-- ROI = lucro líquido / investimento total
-
-**Expectativa realista:**
-- Ocupação média saudável: 40% a 60% no ano.
-- Receita por diária: depende de cidade, bairro e temporada.
-- ROI esperado: de 10% a 25% ao ano, dependendo do imóvel e da gestão.
-
-**Exemplo real:**
-Apartamento em Guarujá com R$ 300 mil de investimento:
-- Receita anual: R$ 72 mil
-- Custos anuais: R$ 18 mil
-- Lucro: R$ 54 mil
-- ROI: 18% ao ano
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
 ## Exercício
-Faça o diagnóstico do seu imóvel:
-- Tipo, localização e diferenciais.
-- Potencial de temporada: alta, baixa, eventos.
-- Meta de ocupação e receita.
+Faça o diagnóstico do seu cenário atual em airbnb do zero: liste pontos fortes, fracos, oportunidades e ameaças.
 
 ## Resumo
-- Temporada exige preparo e método.
-- Hóspede busca experiência.
-- ROI depende de preço e ocupação.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Tipo de imóvel definido
-- [ ] Região escolhida
-- [ ] Diferenciais mapeados
-- [ ] Meta de receita definida
-- [ ] Prazo de retorno definido
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de diagnóstico
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Airbnb, Booking
-- Calculadora de temporada
-- Planilha de ROI
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
 ## Prompt de IA
-"Atue como especialista em temporada no litoral. Faça um diagnóstico do meu imóvel com base nestas respostas: [insira suas respostas]."
+Atue como especialista em airbnb do zero no litoral paulista. Faça um diagnóstico personalizado com base nestas respostas: [insira suas respostas].

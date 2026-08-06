@@ -1,9 +1,7 @@
-# Checklist — Documentação Imobiliária
-- [ ] Documentos listados
-- [ ] Prazos definidos
-- [ ] Cartório escolhido
-- [ ] Processos mapeados
-- [ ] Custos estimados
-- [ ] Acompanhamento ativo
-- [ ] Problemas resolvidos
-- [ ] Documentos entregues
+# Checklist — Documentacao Imobiliaria
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

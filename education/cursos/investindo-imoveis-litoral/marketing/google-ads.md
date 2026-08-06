@@ -1,4 +1,4 @@
-# Google Ads — Investindo em Imóveis no Litoral
-Palavras: imóvel no litoral, investimento imobiliário litoral, comprar imóvel na praia, temporada no litoral
+# Google Ads — investindo-imoveis-litoral
+Palavras: investindo imoveis litoral, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

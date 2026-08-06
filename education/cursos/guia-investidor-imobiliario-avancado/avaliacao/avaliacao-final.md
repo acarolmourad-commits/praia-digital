@@ -1,9 +1,9 @@
-# Avaliação Final — Guia do Investidor Imobiliário Avançado
+# Avaliação Final — Guia Investidor Imobiliario Avancado
 ## Quiz
-- 20 perguntas sobre carteira, análise, alavancagem e escala.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Estratégia de investimento aplicada a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

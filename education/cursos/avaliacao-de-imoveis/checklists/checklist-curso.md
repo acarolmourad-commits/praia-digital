@@ -1,9 +1,7 @@
-# Checklist — Avaliação de Imóveis
-- [ ] Dados do imóvel coletados
-- [ ] Comparáveis analisados
-- [ ] Mercado mapeado
-- [ ] Laudo estruturado
-- [ ] Valor justo definido
-- [ ] Apresentação preparada
-- [ ] Proposta fechada
-- [ ] Acompanhamento definido
+# Checklist — Avaliacao De Imoveis
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

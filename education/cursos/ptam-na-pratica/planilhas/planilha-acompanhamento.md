@@ -1,8 +1,5 @@
-# Planilha — PTAM na Prática
+# Planilha — Ptam Na Pratica
 - [ ] Data
-- [ ] Documento
-- [ ] Status
-- [ ] Pendência
 - [ ] Ação
-- [ ] Prazo
+- [ ] Resultado
 - [ ] Observação

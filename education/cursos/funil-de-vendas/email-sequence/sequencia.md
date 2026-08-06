@@ -1,21 +1,21 @@
-# Sequência de E-mails — Funil de Vendas para Corretores
+# Sequência de E-mails — Funil De Vendas
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido de Funil de Vendas (PDF + planilha)
+Assunto: Guia Rápido sobre Funil De Vendas (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: corretor dobrou vendas com funil
+Assunto: Case prático de Funil De Vendas
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Funil é complicado?"
+Assunto: "Funil De Vendas é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno fechou venda em 20 dias
+Assunto: Aluno obteve resultado com Funil De Vendas
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

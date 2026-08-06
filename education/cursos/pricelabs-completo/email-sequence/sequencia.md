@@ -1,21 +1,21 @@
-# Sequência de E-mails — PriceLabs Completo para Temporada no Litoral
+# Sequência de E-mails — Pricelabs Completo
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido de Precificação no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Pricelabs Completo (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: receita maior com precificação
+Assunto: Case prático de Pricelabs Completo
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "PriceLabs é complicado?"
+Assunto: "Pricelabs Completo é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno aumentou a receita em 30 dias
+Assunto: Aluno obteve resultado com Pricelabs Completo
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

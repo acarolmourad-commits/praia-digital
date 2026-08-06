@@ -1,9 +1,7 @@
-# Checklist — Casa ou Apartamento
-- [ ] Perfil definido
-- [ ] Objetivos claros
-- [ ] Custos comparados
-- [ ] Localização analisada
-- [ ] Estilo de vida avaliado
-- [ ] Decisão tomada
-- [ ] Negociação feita
-- [ ] Crescimento planejado
+# Checklist — Casa Ou Apartamento
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

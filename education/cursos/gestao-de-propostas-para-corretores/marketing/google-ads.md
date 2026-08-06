@@ -1,4 +1,4 @@
-# Google Ads — Gestão de Propostas para Corretores
-Palavras: gestão de propostas para corretores no litoral, como fazer proposta no litoral
+# Google Ads — gestao-de-propostas-para-corretores
+Palavras: gestao de propostas para corretores, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

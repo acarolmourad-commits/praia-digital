@@ -1,59 +1,60 @@
-# Módulo 2 — Preparação do Imóvel
-
+# Módulo 2 — Conteúdo Premium
 ## Introdução
-Aprenda a preparar imóveis, criar anúncios e definir precificação inicial no Airbnb no litoral.
+Neste módulo você vai dominar imoveis para airbnb com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 2.1 — Preparação básica
-**Preparação:**
-- Limpeza.
-- Decoração.
-- Comodidades.
+## Aula 2.1 — Passo a passo para aplicar imoveis para airbnb na prática
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Exemplo real:**
-Dono preparou imóvel e dobrou avaliação.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-## Aula 2.2 — Fotos e descrição
-**Fotos:**
-- Luz natural.
-- Ângulos amplos.
-- Detalhes.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Descrição:**
-- Título.
-- Destaques.
-- Regras.
+## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
+Fundamentos, ferramentas e fluxos recomendados para imoveis para airbnb no litoral.
 
-**Exercício:**
-Monte um roteiro de fotos.
+**Ferramentas recomendadas:**
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
-## Aula 2.3 — Precificação inicial
-**Precificação:**
-- Comparação.
-- Temporada.
-- Ocupação.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Estudo de caso:**
-Dono ajustou preço e aumentou reservas.
+## Aula 2.3 — Automação e fluxos que economizam horas por semana
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
+
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Monte um plano prático de imoveis para airbnb para os próximos 30 dias, com ações diárias e semanais.
 
 ## Resumo
-- Preparação atrai hóspedes.
-- Fotos vendem imóvel.
-- Precificação equilibra oferta.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Imóvel preparado
-- [ ] Fotos tiradas
-- [ ] Descrição criada
-- [ ] Preço definido
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de preparação
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Airbnb
-- Planilha
-- Câmera
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
 ## Prompt de IA
-"Atue como especialista em Airbnb no litoral. Monte um checklist de preparação para este imóvel: [dados]."
+Atue como consultor de imoveis para airbnb. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].

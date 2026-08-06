@@ -1,11 +1,11 @@
-# Artigos SEO — Casa ou Apartamento
-1. Casa ou apartamento no litoral em 2026: guia completo
-2. Como escolher casa ou apartamento no litoral
-3. Custos de casa no litoral
-4. Custos de apartamento no litoral
-5. Valorização de casa no litoral
-6. Valorização de apartamento no litoral
-7. Localização no litoral
-8. Estilo de vida no litoral
-9. ROI de casa no litoral
-10. ROI de apartamento no litoral
+# Artigos SEO — Casa Ou Apartamento
+1. Casa Ou Apartamento em 2026
+2. Como aplicar casa ou apartamento no litoral
+3. Resultados reais de casa ou apartamento
+4. Método passo a passo de casa ou apartamento
+5. Erros comuns em casa ou apartamento
+6. Ferramentas para casa ou apartamento
+7. Cases de casa ou apartamento no litoral
+8. Como medir resultado em casa ou apartamento
+9. Como começar em casa ou apartamento
+10. FAQ sobre casa ou apartamento

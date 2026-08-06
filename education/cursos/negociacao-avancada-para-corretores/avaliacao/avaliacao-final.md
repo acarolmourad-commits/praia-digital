@@ -1,9 +1,9 @@
-# Avaliação Final — Negociação Avançada para Corretores
+# Avaliação Final — Negociacao Avancada Para Corretores
 ## Quiz
-- 20 perguntas sobre negociação, estratégia, objeções e fechamento.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Negociação aplicada a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

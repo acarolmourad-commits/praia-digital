@@ -1,57 +1,60 @@
-# Módulo 4 — Decisão e Crescimento
-
+# Módulo 4 — Conteúdo Premium
 ## Introdução
-Decida entre casa e apartamento, negocie e planeje crescimento no litoral.
+Neste módulo você vai dominar casa ou apartamento com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 4.1 — Análise comparativa
-**Critérios:**
-- Custo.
-- Manutenção.
-- Localização.
-- Valorização.
+## Aula 4.1 — Métricas para acompanhar evolução e resultado
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Exemplo real:**
-Comprador comparou e escolheu apartamento.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-## Aula 4.2 — Decisão e negociação
-**Decisão:**
-- Baseada em dados.
-- Alinhada com objetivos.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Negociação:**
-- Valor justo.
-- Condições claras.
+## Aula 4.2 — Otimizações para aumentar rentabilidade ou desempenho
+Fundamentos, ferramentas e fluxos recomendados para casa ou apartamento no litoral.
 
-**Exercício:**
-Monte uma análise comparativa.
+**Ferramentas recomendadas:**
+- Dashboard de métricas
+- Planilha de rentabilidade
+- Sistema de gestão de tarefas
 
-## Aula 4.3 — Crescimento e troca
-**Crescimento:**
-- Acompanhe mercado.
-- Avalie troca futura.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Troca:**
-- Planeje com antecedência.
-- Use valorização.
+## Aula 4.3 — Escala: como crescer sem perder a qualidade
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
+
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Desenvolva um plano de crescimento para casa ou apartamento com metas mensuráveis.
 
 ## Resumo
-- Análise comparativa decide.
-- Negociação reduz custos.
-- Crescimento depende de método.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Análise comparativa feita
-- [ ] Decisão tomada
-- [ ] Crescimento planejado
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
+- Template editável
 - Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Planilha
-- CRM
-- Consultorias
+- Dashboard de métricas
+- Planilha de rentabilidade
+- Sistema de gestão de tarefas
 
 ## Prompt de IA
-"Atue como especialista em imóveis no litoral. Monte um plano de crescimento para este cenário: [dados]."
+Atue como estrategista de crescimento. Monte um plano de escala para casa ou apartamento com métricas e prazos: [dados do negócio].

@@ -1,11 +1,10 @@
-# Posts Instagram — Venda Rápida de Imóveis no Litoral
-1. Post: dica de venda rápida
-2. Reels: anúncio em 30s
-3. Carrossel: checklist de venda
-4. Post: follow-up que vende
-5. Reels: case de venda
-6. Carrossel: método simples
-7. Post: lead sem erro
-8. Reels: erro comum
-9. Carrossel: métricas básicas
-10. Post: comece hoje
+1. Post: dica sobre venda rapida imoveis litoral
+2. Post: dica sobre venda rapida imoveis litoral
+3. Post: dica sobre venda rapida imoveis litoral
+4. Post: dica sobre venda rapida imoveis litoral
+5. Post: dica sobre venda rapida imoveis litoral
+6. Post: dica sobre venda rapida imoveis litoral
+7. Post: dica sobre venda rapida imoveis litoral
+8. Post: dica sobre venda rapida imoveis litoral
+9. Post: dica sobre venda rapida imoveis litoral
+10. Post: dica sobre venda rapida imoveis litoral

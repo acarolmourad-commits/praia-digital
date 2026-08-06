@@ -1,88 +1,60 @@
-# Módulo 2 — Cadastro e Apresentação
-
+# Módulo 2 — Conteúdo Premium
 ## Introdução
-Aprenda a cadastrar o imóvel na Booking com descrição, fotos e regras que atraem o hóspede certo e reduzem cancelamentos.
+Neste módulo você vai dominar booking do zero com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 2.1 — Como cadastrar na Booking
-**Cadastro básico:**
-- Dados do imóvel: tipo, área, quartos, banheiros, capacidade.
-- Comodidades: ar-condicionado, WiFi, cozinha, piscina, estacionamento.
-- Regras da casa: horário de check-in/check-out, silêncio, fumo, pets.
-- Localização e mapa: endereço exato, pontos turísticos próximos.
+## Aula 2.1 — Passo a passo para aplicar booking do zero na prática
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Dica prática:**
-Preencha 100% do cadastro. Anúncios completos recebem mais visualizações e melhores posicionamentos na Booking.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Imóvel em Praia Grande ganhou 32% mais visualizações após preencher 100% do cadastro e adicionar comodidades específicas.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Checklist de cadastro:**
-- [ ] Dados básicos preenchidos
-- [ ] Comodidades detalhadas
-- [ ] Regras claras
-- [ ] Localização precisa
-- [ ] Preço base definido
+## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
+Fundamentos, ferramentas e fluxos recomendados para booking do zero no litoral.
 
-## Aula 2.2 — Fotos, título e descrição
-**Fotos profissionais:**
-- Use luz natural, ângulos amplos e fotos de cada cômodo.
-- Inclua fotos de diferenciais: vista, piscina, área gourmet.
-- Evite filtros exagerados.
+**Ferramentas recomendadas:**
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
-**Título objetivo e emocional:**
-- Exemplo: “Apartamento com piscina e vista mar, a 300 m da praia”
-- Título bom: informa localização, diferencial e proximidade.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Descrição por experiência:**
-- Conte a experiência do hóspede.
-- Destaque proximidade, tranquilidade e praticidade.
-- Inclua regras de forma amigável.
+## Aula 2.3 — Automação e fluxos que economizam horas por semana
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Estudo de caso:**
-Título curto e direto + fotos de luz natural aumentaram a taxa de conversão em 25% em um apartamento em Santos.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-## Aula 2.3 — Regras e políticas
-**Check-in e check-out:**
-- Defina horários claros.
-- Ofereça flexibilidade quando possível.
-
-**Limpeza:**
-- Taxa de limpeza justa.
-- Padronização: checklist de limpeza.
-
-**Cancelamento:**
-- Moderado: 50% de reembolso até 7 dias antes.
-- Flexível: reembolso total até 24h antes.
-- Rigoroso: sem reembolso após reserva.
-
-**Seguro:**
-- Contrate seguro para temporada.
-- Protege contra danos e acidentes.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
 ## Exercício
-Monte um cadastro simulado do seu imóvel com título, descrição, fotos e regras.
+Monte um plano prático de booking do zero para os próximos 30 dias, com ações diárias e semanais.
 
 ## Resumo
-- Cadastro completo reduz dúvidas.
-- Fotos influenciam a escolha.
-- Regras evitam problemas.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Cadastro preenchido
-- [ ] Fotos escolhidas
-- [ ] Título definido
-- [ ] Descrição escrita
-- [ ] Regras publicadas
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de cadastro
-- Modelos de mensagens
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Câmera ou smartphone
-- Apps de edição de foto
-- Booking
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
 ## Prompt de IA
-"Atue como fotógrafo e copywriter de imóveis de temporada. Crie título e descrição para este imóvel: [dados do imóvel]."
+Atue como consultor de booking do zero. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].

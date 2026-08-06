@@ -1,9 +1,9 @@
-# Avaliação Final — Oratória para Corretores
+# Avaliação Final — Oratoria Para Corretores
 ## Quiz
-- 20 perguntas sobre oratória, método, prática e fechamento.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Oratória aplicada a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

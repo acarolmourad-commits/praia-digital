@@ -1,21 +1,21 @@
-# Sequência de E-mails — IA para Imobiliárias
+# Sequência de E-mails — Ia Para Imobiliarias
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido de IA para Imobiliárias (PDF + planilha)
+Assunto: Guia Rápido sobre Ia Para Imobiliarias (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: imobiliária dobrou vendas com IA
+Assunto: Case prático de Ia Para Imobiliarias
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "IA é complicada?"
+Assunto: "Ia Para Imobiliarias é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno automatizou atendimento em 10 dias
+Assunto: Aluno obteve resultado com Ia Para Imobiliarias
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

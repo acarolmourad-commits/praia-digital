@@ -1,8 +1,7 @@
-# Checklist — Instagram para Corretores
-- [ ] Diagnóstico de Instagram
-- [ ] Perfil criado
-- [ ] Conteúdo planejado
-- [ ] Leads captados
-- [ ] Follow-up estruturado
-- [ ] Métricas revisadas
-- [ ] Crescimento planejado
+# Checklist — Instagram Para Corretores
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

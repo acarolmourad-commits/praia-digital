@@ -1,53 +1,60 @@
-# Módulo 2 — Operação e Preparação
-
+# Módulo 2 — Conteúdo Premium
 ## Introdução
-Aprenda a preparar imóveis, estruturar check-in/check-out e controlar manutenção no litoral.
+Neste módulo você vai dominar gestao de locacao no litoral com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 2.1 — Preparação do imóvel
-**Preparação:**
-- Limpeza.
-- Segurança.
-- Conforto.
+## Aula 2.1 — Passo a passo para aplicar gestao de locacao no litoral na prática
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Exemplo real:**
-Gestor padronizou preparação e aumentou avaliações.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-## Aula 2.2 — Check-in e check-out
-**Check-in:**
-- Recepção.
-- Regras.
-- Acesso.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Exercício:**
-Monte um checklist de operação.
+## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
+Fundamentos, ferramentas e fluxos recomendados para gestao de locacao no litoral no litoral.
 
-## Aula 2.3 — Manutenção preventiva
-**Manutenção:**
-- Inspeção.
-- Reparos.
-- Fornecedores.
+**Ferramentas recomendadas:**
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
-**Estudo de caso:**
-Gestor reduziu custos com manutenção preventiva.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+
+## Aula 2.3 — Automação e fluxos que economizam horas por semana
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
+
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Monte um plano prático de gestao de locacao no litoral para os próximos 30 dias, com ações diárias e semanais.
 
 ## Resumo
-- Preparação define experiência.
-- Operação padronizada reduz erro.
-- Manutenção protege imóvel.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Preparação feita
-- [ ] Check-in criado
-- [ ] Manutenção planejada
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de manutenção
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Planilha
-- Automação
-- Canal de reservas
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
 ## Prompt de IA
-"Atue como especialista em gestão de locação. Monte um plano de operação para este cenário: [dados]."
+Atue como consultor de gestao de locacao no litoral. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].

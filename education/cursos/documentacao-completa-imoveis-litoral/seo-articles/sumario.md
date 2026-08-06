@@ -1,11 +1,11 @@
-# Artigos SEO — Documentação Completa para Imóveis no Litoral
-1. Documentação de imóveis no litoral em 2026: guia completo
-2. Como organizar documentação no litoral
-3. Verificação de imóveis no litoral
-4. Regularização no litoral
-5. Cartório no litoral
-6. Documentação para venda no litoral
-7. Erros na documentação no litoral
-8. Custos de documentação no litoral
-9. Prazos no litoral
-10. Como evitar golpes no litoral
+# Artigos SEO — Documentacao Completa Imoveis Litoral
+1. Documentacao Completa Imoveis Litoral em 2026
+2. Como aplicar documentacao completa imoveis litoral no litoral
+3. Resultados reais de documentacao completa imoveis litoral
+4. Método passo a passo de documentacao completa imoveis litoral
+5. Erros comuns em documentacao completa imoveis litoral
+6. Ferramentas para documentacao completa imoveis litoral
+7. Cases de documentacao completa imoveis litoral no litoral
+8. Como medir resultado em documentacao completa imoveis litoral
+9. Como começar em documentacao completa imoveis litoral
+10. FAQ sobre documentacao completa imoveis litoral

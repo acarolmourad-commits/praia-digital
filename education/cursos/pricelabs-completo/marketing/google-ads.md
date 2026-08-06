@@ -1,4 +1,4 @@
-# Google Ads — PriceLabs Completo para Temporada no Litoral
-Palavras: PriceLabs, precificação temporada litoral, temporada litoral, receita temporada
+# Google Ads — pricelabs-completo
+Palavras: pricelabs completo, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

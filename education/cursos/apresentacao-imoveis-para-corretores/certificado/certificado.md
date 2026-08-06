@@ -1,7 +1,6 @@
-# Certificado — Apresentação de Imóveis para Corretores
+# Certificado — Apresentacao Imoveis Para Corretores
 Modelo: Praia Digital Academy
-Curso: Apresentação de Imóveis para Corretores
-Carga horária: 4 horas
+Curso: Apresentacao Imoveis Para Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

@@ -1,7 +1,7 @@
-# Roteiro de Webinar — Primeiro Imóvel no Litoral
+# Roteiro de Webinar — Primeiro Imovel Litoral
 1. Abertura: dor do público
-2. Case: família comprou primeiro imóvel em 30 dias
-3. Método: 4 passos
+2. Case: aplicação prática
+3. Método: passo a passo
 4. Prova social
 5. Oferta e bônus
 6. Perguntas frequentes

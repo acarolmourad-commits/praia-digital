@@ -1,9 +1,9 @@
-# Avaliação Final — Análise de Mercado Imobiliário no Litoral
+# Avaliação Final — Analise De Mercado Imobiliario Litoral
 ## Quiz
-- 20 perguntas sobre análise, dados, tendências e decisão.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Análise aplicada a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

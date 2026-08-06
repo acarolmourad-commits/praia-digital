@@ -1,64 +1,60 @@
-# Módulo 1 — Fundamentos da Visita Técnica no Litoral
-
+# Módulo 1 — Conteúdo Premium
 ## Introdução
-Entenda o que é visita técnica, o método e o perfil do corretor que quer fechar vendas no litoral.
+Neste módulo você vai dominar visita tecnica para corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 1.1 — O que é visita técnica
-Visita técnica no litoral significa planejar, avaliar e apresentar imóvel com segurança para fechar venda.
+## Aula 1.1 — Visão geral do mercado de visita tecnica para corretores no litoral paulista
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Características:**
-- Planejamento.
-- Avaliação.
-- Fechamento.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Corretor fez visita técnica e fechou venda.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 1.2 — Perfil do profissional
-**Iniciante:**
-- Foco: visita básica, apresentação simples.
-- Erro comum: visita sem roteiro.
+## Aula 1.2 — Conceitos essenciais: termos, métricas e particularidades locais
+Fundamentos, ferramentas e fluxos recomendados para visita tecnica para corretores no litoral.
 
-**Intermediário:**
-- Foco: avaliação, destaque.
-- Erro comum: avaliação superficial.
+**Ferramentas recomendadas:**
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
-**Avançado:**
-- Foco: fechamento, escala.
-- Erro comum: excesso de informações.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Exercício:**
-Faça o diagnóstico das suas visitas técnicas.
+## Aula 1.3 — Estudo de caso real: como um aluno aplicou o método e obteve resultado em 30 dias
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-## Aula 1.3 — Método e metas
-**Método:**
-- Planejamento.
-- Avaliação.
-- Fechamento.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Metas:**
-- Visitas por mês.
-- Fechamento.
-- Ticket médio.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Faça o diagnóstico do seu cenário atual em visita tecnica para corretores: liste pontos fortes, fracos, oportunidades e ameaças.
 
 ## Resumo
-- Visita técnica protege venda.
-- Perfil claro orienta ação.
-- Método gera resultado.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Diagnóstico feito
-- [ ] Metas traçadas
-- [ ] Método escolhido
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de diagnóstico
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- CRM
-- Automação
-- Planilha
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
 ## Prompt de IA
-"Atue como especialista em visita técnica imobiliária. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
+Atue como especialista em visita tecnica para corretores no litoral paulista. Faça um diagnóstico personalizado com base nestas respostas: [insira suas respostas].

@@ -1,5 +1,5 @@
-# Mini Curso — Marketing Imobiliário para Corretores
-## Aula 1 — Fundamentos do marketing (8 min)
-## Aula 2 — Conteúdo e canal (12 min)
-## Aula 3 — Leads e follow-up (10 min)
-## Bônus — Planilha de conteúdo
+# Mini Curso — Marketing Imobiliario Corretores
+## Aula 1 — Visão geral (8 min)
+## Aula 2 — Conceitos essenciais (12 min)
+## Aula 3 — Aplicação prática (10 min)
+## Bônus — Material complementar

@@ -1,21 +1,21 @@
-# Sequência de E-mails — Treinamento em Tecnologia para Corretores
+# Sequência de E-mails — Treinamento Em Tecnologia Para Corretores
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: Treinamento em Tecnologia para Corretores no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Treinamento Em Tecnologia Para Corretores (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: corretor usou tecnologia e fechou venda
+Assunto: Case prático de Treinamento Em Tecnologia Para Corretores
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Tecnologia compensa?"
+Assunto: "Treinamento Em Tecnologia Para Corretores é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno automatizou processos e aumentou vendas em 29%
+Assunto: Aluno obteve resultado com Treinamento Em Tecnologia Para Corretores
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

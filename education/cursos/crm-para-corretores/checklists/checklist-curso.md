@@ -1,8 +1,7 @@
-# Checklist — CRM para Corretores
-- [ ] Diagnóstico de CRM
-- [ ] Funil criado
-- [ ] Follow-up estruturado
-- [ ] Templates prontos
-- [ ] Automação aplicada
-- [ ] Métricas definidas
-- [ ] Crescimento planejado
+# Checklist — Crm Para Corretores
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

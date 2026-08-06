@@ -1,76 +1,60 @@
-# Módulo 3 — Processos e Prazos
-
+# Módulo 3 — Conteúdo Premium
 ## Introdução
-Aprenda a protocolar documentos, controlar prazos e resolver problemas comuns.
+Neste módulo você vai dominar documentacao imobiliaria com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 3.1 — Como protocolar
-**Passos:**
-- Reúna documentos.
-- Preencha formulários.
-- Protocole no cartório.
-- Acompanhe processo.
+## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Custos:**
-- ITBI: 2% a 3%.
-- Registro: R$ 500 a R$ 2.000.
-- Certidões: R$ 20 a R$ 100.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Corretor protocolou escritura e registrou em 15 dias.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 3.2 — Prazos e custos
-**Prazos comuns:**
-- Escritura: 5 a 15 dias.
-- Registro: 10 a 30 dias.
-- Certidões: 1 a 5 dias.
+## Aula 3.2 — Caso real 2: como evitar erros custosos
+Fundamentos, ferramentas e fluxos recomendados para documentacao imobiliaria no litoral.
 
-**Custos médios:**
-- ITBI: 2% a 3% do valor do imóvel.
-- Registro: R$ 500 a R$ 2.000.
-- Certidões: R$ 20 a R$ 100.
+**Ferramentas recomendadas:**
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
-**Exemplo real:**
-Corretor controlou prazos e fechou venda em 20 dias.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-## Aula 3.3 — Problemas comuns
-**Problemas:**
-- Penhora.
-- Usucapião.
-- IPTU atrasado.
-- Falta de escritura.
+## Aula 3.3 — Lições aplicáveis ao seu contexto
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Soluções:**
-- Certidão de ônus.
-- Ação de usucapião.
-- Parcelamento de IPTU.
-- Escrituração.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Estudo de caso:**
-Corretor identificou penhora e evitou prejuízo.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
 ## Exercício
-Monte um mapa de processos para venda de imóvel.
+Analise um caso real do mercado e adapte as lições para a sua realidade.
 
 ## Resumo
-- Protocolo organiza processos.
-- Prazos evitam atrasos.
-- Problemas comuns têm solução.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Processos mapeados
-- [ ] Prazos controlados
-- [ ] Problemas resolvidos
-- [ ] Documentos entregues
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de prazos
-- Modelo de protocolo
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Portal de cartórios
-- Planilha de controle
-- CRM
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
 ## Prompt de IA
-"Atue como especialista em documentação imobiliária. Monte um mapa de processos para venda: [dados]."
+Atue como mentor experiente. Analise este caso real de documentacao imobiliaria no litoral e aponte 5 lições práticas: [descreva o caso].

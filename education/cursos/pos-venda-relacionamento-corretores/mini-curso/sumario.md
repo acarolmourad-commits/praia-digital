@@ -1,5 +1,5 @@
-# Mini Curso — Pós-venda e Relacionamento para Corretores
-## Aula 1 — Fundamentos do pós-venda (8 min)
-## Aula 2 — Acompanhamento e relacionamento (12 min)
-## Aula 3 — Indicação e fidelização (10 min)
-## Bônus — Planilha de relacionamento
+# Mini Curso — Pos Venda Relacionamento Corretores
+## Aula 1 — Visão geral (8 min)
+## Aula 2 — Conceitos essenciais (12 min)
+## Aula 3 — Aplicação prática (10 min)
+## Bônus — Material complementar

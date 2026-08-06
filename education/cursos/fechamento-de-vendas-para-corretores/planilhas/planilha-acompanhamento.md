@@ -1,10 +1,5 @@
-# Planilha — Fechamento de Vendas para Corretores
+# Planilha — Fechamento De Vendas Para Corretores
 - [ ] Data
-- [ ] Cliente
-- [ ] Imóvel
-- [ ] Cidade
-- [ ] Proposta
-- [ ] Objeção
-- [ ] Fechamento
-- [ ] Receita
-- [ ] Status
+- [ ] Ação
+- [ ] Resultado
+- [ ] Observação

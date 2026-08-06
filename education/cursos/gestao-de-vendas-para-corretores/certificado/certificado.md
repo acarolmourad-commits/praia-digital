@@ -1,7 +1,6 @@
-# Certificado — Gestão de Vendas para Corretores
+# Certificado — Gestao De Vendas Para Corretores
 Modelo: Praia Digital Academy
-Curso: Gestão de Vendas para Corretores
-Carga horária: 4 horas
+Curso: Gestao De Vendas Para Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

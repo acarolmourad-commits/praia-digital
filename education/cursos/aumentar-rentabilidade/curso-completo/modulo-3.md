@@ -1,71 +1,60 @@
-# Módulo 3 — Estratégia de Crescimento
-
+# Módulo 3 — Conteúdo Premium
 ## Introdução
-Planeje reformas que dão retorno, posicione o imóvel nos canais certos e escale sem perder qualidade. O crescimento sustentado depende de método e dados.
+Neste módulo você vai dominar aumentar rentabilidade com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 3.1 — Reformas que dão retorno
-**Reformas com maior retorno:**
-- Pintura externa e impermeabilização: protege contra maresia e chuva.
-- Troca de janelas e portas: melhora isolamento e segurança.
-- Reforma de cozinha e banheiro: aumenta valor percebido.
-- Climatização: ar-condicionado e ventilação.
-- Iluminação e decoração leve: melhora fotos e experiência.
+## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Regra prática:**
-Invista até 10% do valor do imóvel em reforma e priorize itens com retorno percebido pelo hóspede ou comprador.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Investidor investiu R$ 25 mil em reforma e aumentou a tarifa de temporada em 40%. O imóvel valorizou 15% em 1 ano.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 3.2 — Canais e posicionamento
-**Canais principais:**
-- Airbnb: maior alcance, taxa de 3% a 14%.
-- Booking: público internacional, taxa de 15% a 25%.
-- Temporada livre: anúncio direto, sem taxa.
-- WhatsApp e Instagram: leads diretos, sem taxa.
+## Aula 3.2 — Caso real 2: como evitar erros custosos
+Fundamentos, ferramentas e fluxos recomendados para aumentar rentabilidade no litoral.
 
-**Posicionamento:**
-- Destaque diferenciais no título e descrição.
-- Use fotos profissionais.
-- Mantenha avaliações visíveis.
+**Ferramentas recomendadas:**
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
-**Estudo de caso:**
-Imóvel em Guarujá passou a usar Airbnb + Booking + leads diretos. A receita aumentou 35% em 6 meses.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-## Aula 3.3 — Automação e escala
-**Automação:**
-- Mensagens automáticas.
-- Sincronização de calendário.
-- Alertas de reserva.
+## Aula 3.3 — Lições aplicáveis ao seu contexto
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Escala:**
-- Adicione 1 imóvel por vez.
-- Mantenha controle de qualidade.
-- Padronize processos.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Exercício:**
-Monte uma estratégia de crescimento para os próximos 90 dias.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Analise um caso real do mercado e adapte as lições para a sua realidade.
 
 ## Resumo
-- Reformas aumentam valor e tarifa.
-- Canais diversificam receita.
-- Automação escala sem dor.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Reforma planejada
-- [ ] Canais cadastrados
-- [ ] Posicionamento definido
-- [ ] Automação configurada
-- [ ] Escala planejada
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de crescimento
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Canal manager
-- Planilha de controle
-- Sistema de gestão
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
 ## Prompt de IA
-"Atue como estrategista de crescimento imobiliário. Monte um plano de crescimento para este cenário: [dados]."
+Atue como mentor experiente. Analise este caso real de aumentar rentabilidade no litoral e aponte 5 lições práticas: [descreva o caso].

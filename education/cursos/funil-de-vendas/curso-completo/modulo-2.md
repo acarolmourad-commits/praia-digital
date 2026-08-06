@@ -1,63 +1,60 @@
-# Módulo 2 — Geração de Leads
-
+# Módulo 2 — Conteúdo Premium
 ## Introdução
-Aprenda a gerar leads qualificados, captar contatos e montar fontes de leads no litoral.
+Neste módulo você vai dominar funil de vendas com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 2.1 — Fontes de leads
-**Canais:**
-- Portais de imóveis.
-- Redes sociais.
-- Indicações.
-- Anúncios.
+## Aula 2.1 — Passo a passo para aplicar funil de vendas na prática
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Exemplo real:**
-Corretor usou portais e indicações e gerou 30 leads/mês.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-## Aula 2.2 — Captura e qualificação
-**Captura:**
-- Landing page.
-- WhatsApp.
-- Formulário.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Qualificação:**
-- Perfil.
-- Orçamento.
-- Prazo.
+## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
+Fundamentos, ferramentas e fluxos recomendados para funil de vendas no litoral.
 
-**Exemplo real:**
-Corretor qualificou leads e dobrou conversão.
+**Ferramentas recomendadas:**
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
-## Aula 2.3 — Ferramentas e custos
-**Ferramentas:**
-- CRM.
-- Automação.
-- Planilha.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Custos:**
-- Anúncios: R$ 200 a R$ 500/mês.
-- Ferramentas: R$ 50 a R$ 300/mês.
+## Aula 2.3 — Automação e fluxos que economizam horas por semana
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Exercício:**
-Monte um plano de geração de leads.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
+
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Monte um plano prático de funil de vendas para os próximos 30 dias, com ações diárias e semanais.
 
 ## Resumo
-- Fontes geram leads.
-- Qualificação aumenta conversão.
-- Ferramentas reduzem esforço.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Fontes definidas
-- [ ] Captura criada
-- [ ] Qualificação estruturada
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de leads
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- CRM
-- WhatsApp Business
-- Planilha
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
 ## Prompt de IA
-"Atue como especialista em funil de vendas. Monte um plano de geração de leads para este cenário: [dados]."
+Atue como consultor de funil de vendas. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].

@@ -1,8 +1,7 @@
-# Checklist — Atendimento ao Cliente para Corretores
-- [ ] Diagnóstico de atendimento
-- [ ] Método estruturado
-- [ ] Relacionamento criado
-- [ ] Contato criado
-- [ ] Fechamento confirmado
-- [ ] Follow-up planejado
-- [ ] Crescimento planejado
+# Checklist — Atendimento Ao Cliente Para Corretores
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

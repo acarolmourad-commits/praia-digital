@@ -1,7 +1,7 @@
-# Checklist — IA para Imobiliárias
-- [ ] Diagnóstico da imobiliária
-- [ ] Processos mapeados
-- [ ] Automação criada
-- [ ] Follow-up estruturado
-- [ ] Métricas definidas
-- [ ] Crescimento planejado
+# Checklist — Ia Para Imobiliarias
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

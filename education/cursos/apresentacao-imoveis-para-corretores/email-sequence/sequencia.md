@@ -1,21 +1,21 @@
-# Sequência de E-mails — Apresentação de Imóveis para Corretores
+# Sequência de E-mails — Apresentacao Imoveis Para Corretores
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: Apresentação de Imóveis para Corretores no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Apresentacao Imoveis Para Corretores (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: corretor encantou cliente com apresentação
+Assunto: Case prático de Apresentacao Imoveis Para Corretores
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Apresentação de imóveis é difícil?"
+Assunto: "Apresentacao Imoveis Para Corretores é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno aumentou fechamento em 20%
+Assunto: Aluno obteve resultado com Apresentacao Imoveis Para Corretores
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

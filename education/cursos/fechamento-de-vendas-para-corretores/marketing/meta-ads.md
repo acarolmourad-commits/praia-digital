@@ -1,5 +1,5 @@
-# Meta Ads — Fechamento de Vendas para Corretores
-Público: 25 a 55 anos, interesse em imóveis, vendas, fechamento, litoral
+# Meta Ads — fechamento-de-vendas-para-corretores
+Público: 25 a 55 anos, interesse no tema, litoral
 Objetivo: leads
 Formato: vídeo + carrossel
 Orçamento sugerido: R$ 40 a R$ 120/dia

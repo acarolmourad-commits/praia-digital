@@ -1,7 +1,7 @@
-# Roteiro de Webinar — Análise de Mercado Imobiliário no Litoral
+# Roteiro de Webinar — Analise De Mercado Imobiliario Litoral
 1. Abertura: dor do público
-2. Case: analista evitou prejuízo no litoral
-3. Método: 4 passos
+2. Case: aplicação prática
+3. Método: passo a passo
 4. Prova social
 5. Oferta e bônus
 6. Perguntas frequentes

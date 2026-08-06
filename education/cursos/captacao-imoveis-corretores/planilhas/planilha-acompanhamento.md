@@ -1,11 +1,5 @@
-# Planilha — Captação de Imóveis para Corretores
+# Planilha — Captacao Imoveis Corretores
 - [ ] Data
-- [ ] Imóvel
-- [ ] Proprietário
-- [ ] Contato
-- [ ] Status
-- [ ] Visitas
-- [ ] Proposta
-- [ ] Venda
-- [ ] Receita
+- [ ] Ação
+- [ ] Resultado
 - [ ] Observação

@@ -1,9 +1,9 @@
-# Avaliação Final — Treinamento em Tecnologia para Corretores
+# Avaliação Final — Treinamento Em Tecnologia Para Corretores
 ## Quiz
-- 20 perguntas sobre tecnologia, ferramentas, automação e fechamento.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Treinamento em tecnologia aplicado a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

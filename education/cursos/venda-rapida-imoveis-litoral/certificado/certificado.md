@@ -1,7 +1,6 @@
-# Certificado — Venda Rápida de Imóveis no Litoral
+# Certificado — Venda Rapida Imoveis Litoral
 Modelo: Praia Digital Academy
-Curso: Venda Rápida de Imóveis no Litoral
-Carga horária: 4 horas
+Curso: Venda Rapida Imoveis Litoral
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

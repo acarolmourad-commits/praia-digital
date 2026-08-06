@@ -1,10 +1,5 @@
-# Planilha — Casa ou Apartamento
+# Planilha — Casa Ou Apartamento
 - [ ] Data
-- [ ] Tipo
-- [ ] Cidade
-- [ ] Preço
-- [ ] Condomínio
-- [ ] IPTU
-- [ ] Manutenção
-- [ ] Valorização
-- [ ] Decisão
+- [ ] Ação
+- [ ] Resultado
+- [ ] Observação

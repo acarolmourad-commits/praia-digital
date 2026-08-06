@@ -1,7 +1,6 @@
-# Certificado — Prospecção para Corretores
+# Certificado — Prospeccao Para Corretores
 Modelo: Praia Digital Academy
-Curso: Prospecção para Corretores
-Carga horária: 4 horas
+Curso: Prospeccao Para Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

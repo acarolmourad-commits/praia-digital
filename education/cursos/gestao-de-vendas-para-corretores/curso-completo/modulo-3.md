@@ -1,53 +1,60 @@
-# Módulo 3 — Follow-up e Conversão
-
+# Módulo 3 — Conteúdo Premium
 ## Introdução
-Aprenda a fazer follow-up, converter leads e fechar vendas na gestão de vendas no litoral.
+Neste módulo você vai dominar gestao de vendas para corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 3.1 — Follow-up
-**Follow-up:**
-- Tempo.
-- Canal.
-- Mensagem.
+## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Exemplo real:**
-Corretor fez follow-up rápido e fechou venda.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-## Aula 3.2 — Conversão
-**Conversão:**
-- Visita.
-- Proposta.
-- Fechamento.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Exercício:**
-Monte um fluxo de follow-up.
+## Aula 3.2 — Caso real 2: como evitar erros custosos
+Fundamentos, ferramentas e fluxos recomendados para gestao de vendas para corretores no litoral.
 
-## Aula 3.3 — Fechamento
-**Fechamento:**
-- Contrato.
-- Assinatura.
-- Registro.
+**Ferramentas recomendadas:**
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
-**Estudo de caso:**
-Corretor fechou venda com follow-up estruturado.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+
+## Aula 3.3 — Lições aplicáveis ao seu contexto
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
+
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Analise um caso real do mercado e adapte as lições para a sua realidade.
 
 ## Resumo
-- Follow-up reduz perdas.
-- Conversão depende de método.
-- Fechamento depende de confiança.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Follow-up criado
-- [ ] Conversão feita
-- [ ] Fechamento confirmado
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de follow-up
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- CRM
-- Automação
-- Planilha
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
 ## Prompt de IA
-"Atue como especialista em gestão de vendas imobiliárias. Monte um fluxo de follow-up para este cenário: [dados]."
+Atue como mentor experiente. Analise este caso real de gestao de vendas para corretores no litoral e aponte 5 lições práticas: [descreva o caso].

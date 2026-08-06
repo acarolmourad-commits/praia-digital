@@ -1,4 +1,4 @@
-# Roteiro YouTube — Funil de Vendas para Corretores
+# Roteiro YouTube — Funil De Vendas
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado

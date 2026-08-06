@@ -1,9 +1,9 @@
-# Avaliação Final — Comprar Imóvel na Praia sem Golpes
+# Avaliação Final — Comprar Imovel Praia Sem Golpes
 ## Quiz
-- 20 perguntas sobre compra segura, verificação, documentação e negociação.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Plano de compra aplicado a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

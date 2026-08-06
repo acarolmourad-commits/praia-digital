@@ -1,9 +1,9 @@
-# Avaliação Final — Gestão de Conflitos para Corretores
+# Avaliação Final — Gestao De Conflitos Para Corretores
 ## Quiz
-- 20 perguntas sobre conflitos, comunicação, resolução e fechamento.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Conflito aplicado a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

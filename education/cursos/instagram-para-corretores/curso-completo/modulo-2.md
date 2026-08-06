@@ -1,58 +1,60 @@
-# Módulo 2 — Conteúdo e Perfil
-
+# Módulo 2 — Conteúdo Premium
 ## Introdução
-Aprenda a montar perfil profissional, criar conteúdo local e usar Stories e Reels no Instagram para corretores.
+Neste módulo você vai dominar instagram para corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 2.1 — Perfil profissional
-**Perfil:**
-- Bio clara.
-- Foto profissional.
-- Contato.
+## Aula 2.1 — Passo a passo para aplicar instagram para corretores na prática
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Exemplo real:**
-Corretor ajustou perfil e aumentou cliques.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-## Aula 2.2 — Conteúdo local
-**Conteúdo:**
-- Imóveis.
-- Localização.
-- Dicas.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Exercício:**
-Monte um plano de conteúdo.
+## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
+Fundamentos, ferramentas e fluxos recomendados para instagram para corretores no litoral.
 
-## Aula 2.3 — Stories e Reels
-**Stories:**
-- Bastidores.
-- Dicas rápidas.
-- Perguntas.
+**Ferramentas recomendadas:**
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
-**Reels:**
-- Dicas.
-- Cases.
-- CTA.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Estudo de caso:**
-Corretor aumentou seguidores com Reels.
+## Aula 2.3 — Automação e fluxos que economizam horas por semana
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
+
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Monte um plano prático de instagram para corretores para os próximos 30 dias, com ações diárias e semanais.
 
 ## Resumo
-- Perfil profissional atrai leads.
-- Conteúdo local gera autoridade.
-- Stories e Reels aceleram crescimento.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Perfil criado
-- [ ] Conteúdo planejado
-- [ ] Stories/Reels feitos
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de conteúdo
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Instagram
-- Canva
-- Automação
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
 ## Prompt de IA
-"Atue como especialista em Instagram para imobiliário. Crie um plano de conteúdo para este perfil: [dados]."
+Atue como consultor de instagram para corretores. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].

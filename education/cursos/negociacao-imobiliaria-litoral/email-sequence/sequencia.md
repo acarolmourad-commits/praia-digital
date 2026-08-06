@@ -1,21 +1,21 @@
-# Sequência de E-mails — Negociação Imobiliária no Litoral
+# Sequência de E-mails — Negociacao Imobiliaria Litoral
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: Negociação Imobiliária no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Negociacao Imobiliaria Litoral (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: corretor reduziu conflito e fechou venda
+Assunto: Case prático de Negociacao Imobiliaria Litoral
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Negociação imobiliária é difícil?"
+Assunto: "Negociacao Imobiliaria Litoral é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno reduziu conflito em 15 dias
+Assunto: Aluno obteve resultado com Negociacao Imobiliaria Litoral
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

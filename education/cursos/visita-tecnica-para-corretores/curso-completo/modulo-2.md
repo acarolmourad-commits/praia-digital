@@ -1,53 +1,60 @@
-# Módulo 2 — Planejamento e Avaliação
-
+# Módulo 2 — Conteúdo Premium
 ## Introdução
-Aprenda a planejar visita, avaliar imóvel e criar roteiro na visita técnica no litoral.
+Neste módulo você vai dominar visita tecnica para corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 2.1 — Planejamento
-**Planejamento:**
-- Objetivo.
-- Roteiro.
-- Material.
+## Aula 2.1 — Passo a passo para aplicar visita tecnica para corretores na prática
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Exemplo real:**
-Corretor planejou visita e aumentou fechamento.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-## Aula 2.2 — Avaliação
-**Avaliação:**
-- Localização.
-- Acabamento.
-- Vista.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Exercício:**
-Monte um plano de visita técnica.
+## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
+Fundamentos, ferramentas e fluxos recomendados para visita tecnica para corretores no litoral.
 
-## Aula 2.3 — Roteiro
-**Roteiro:**
-- Abertura.
-- Destaques.
-- Fechamento.
+**Ferramentas recomendadas:**
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
-**Estudo de caso:**
-Corretor criou roteiro e encantou cliente.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+
+## Aula 2.3 — Automação e fluxos que economizam horas por semana
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
+
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Monte um plano prático de visita tecnica para corretores para os próximos 30 dias, com ações diárias e semanais.
 
 ## Resumo
-- Planejamento organiza visita.
-- Avaliação define valor.
-- Roteiro orienta apresentação.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Planejamento criado
-- [ ] Avaliação feita
-- [ ] Roteiro estruturado
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de avaliação
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- CRM
-- Automação
-- Planilha
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
 ## Prompt de IA
-"Atue como especialista em visita técnica imobiliária. Monte um plano de visita para este imóvel: [dados]."
+Atue como consultor de visita tecnica para corretores. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].

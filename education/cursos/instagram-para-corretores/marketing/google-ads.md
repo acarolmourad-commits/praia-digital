@@ -1,4 +1,4 @@
-# Google Ads — Instagram para Corretores
-Palavras: Instagram para corretores, Instagram no mercado imobiliário, redes sociais para corretores
+# Google Ads — instagram-para-corretores
+Palavras: instagram para corretores, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

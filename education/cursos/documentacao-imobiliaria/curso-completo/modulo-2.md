@@ -1,68 +1,60 @@
-# Módulo 2 — Documentos Essenciais
-
+# Módulo 2 — Conteúdo Premium
 ## Introdução
-Aprenda os documentos essenciais para venda, locação e investimento no litoral.
+Neste módulo você vai dominar documentacao imobiliaria com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 2.1 — Escritura e registro
-**Escritura:**
-- Lavratura em cartório.
-- Pagamento de ITBI.
-- Registro no RI.
+## Aula 2.1 — Passo a passo para aplicar documentacao imobiliaria na prática
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Matrícula:**
-- Número do imóvel.
-- Histórico de proprietários.
-- Ônus e gravames.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Corretor verificou matrícula e identificou penhora antes de anunciar.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 2.2 — Documentos fiscais
-**IPTU:**
-- Certidão de quitação.
-- Últimos pagamentos.
+## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
+Fundamentos, ferramentas e fluxos recomendados para documentacao imobiliaria no litoral.
 
-**Certidões:**
-- Certidão de ônus.
-- Certidão de ações.
-- Certidão de falência.
+**Ferramentas recomendadas:**
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
-**Exemplo real:**
-Proprietário não quitou IPTU; documento evitou problema na venda.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-## Aula 2.3 — Documentos de venda
-**Contrato:**
-- Contrato de compra e venda.
-- Contrato de locação.
-- Contrato de exclusividade.
+## Aula 2.3 — Automação e fluxos que economizam horas por semana
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Procuração:**
-- Procuração com poderes específicos.
-- Prazo de validade.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Exercício:**
-Monte um checklist de documentos para venda.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Monte um plano prático de documentacao imobiliaria para os próximos 30 dias, com ações diárias e semanais.
 
 ## Resumo
-- Escritura e matrícula são essenciais.
-- Documentos fiscais evitam surpresas.
-- Contratos protegem partes.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Escritura verificada
-- [ ] Matrícula consultada
-- [ ] Certidões emitidas
-- [ ] Contrato revisado
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Checklist de documentos
-- Modelo de contrato
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Portal de cartórios
-- Planilha de controle
-- CRM
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
 ## Prompt de IA
-"Atue como especialista em documentação imobiliária. Monte um checklist para este imóvel: [dados]."
+Atue como consultor de documentacao imobiliaria. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].

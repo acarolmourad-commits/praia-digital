@@ -1,7 +1,6 @@
-# Certificado — Gestão Profissional da Locação
+# Certificado — Gestao Profissional Locacao
 Modelo: Praia Digital Academy
-Curso: Gestão Profissional da Locação
-Carga horária: 8 horas
+Curso: Gestao Profissional Locacao
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

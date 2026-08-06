@@ -1,4 +1,4 @@
-# Google Ads — Networking para Corretores
-Palavras: networking para corretores no litoral, como fazer networking no litoral
+# Google Ads — networking-para-corretores
+Palavras: networking para corretores, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

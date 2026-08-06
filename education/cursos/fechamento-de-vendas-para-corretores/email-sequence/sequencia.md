@@ -1,21 +1,21 @@
-# Sequência de E-mails — Fechamento de Vendas para Corretores
+# Sequência de E-mails — Fechamento De Vendas Para Corretores
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: Fechamento de Vendas para Corretores no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Fechamento De Vendas Para Corretores (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: corretor aumentou fechamento com método
+Assunto: Case prático de Fechamento De Vendas Para Corretores
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Fechamento de vendas é difícil?"
+Assunto: "Fechamento De Vendas Para Corretores é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno aumentou vendas em 25%
+Assunto: Aluno obteve resultado com Fechamento De Vendas Para Corretores
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

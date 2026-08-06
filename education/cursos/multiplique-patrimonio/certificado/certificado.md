@@ -1,7 +1,6 @@
-# Certificado — Multiplique Patrimônio
+# Certificado — Multiplique Patrimonio
 Modelo: Praia Digital Academy
-Curso: Multiplique Patrimônio
-Carga horária: 4 horas
+Curso: Multiplique Patrimonio
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

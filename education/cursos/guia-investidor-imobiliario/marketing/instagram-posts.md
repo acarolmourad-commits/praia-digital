@@ -1,11 +1,10 @@
-# Posts Instagram — Guia do Investidor Imobiliário
-1. Post: dica de investimento
-2. Reels: oportunidade em 30s
-3. Carrossel: checklist de investimento
-4. Post: renda que protege
-5. Reels: case de patrimônio
-6. Carrossel: método simples
-7. Post: documentação segura
-8. Reels: erro comum
-9. Carrossel: métricas básicas
-10. Post: comece hoje
+1. Post: dica sobre guia investidor imobiliario
+2. Post: dica sobre guia investidor imobiliario
+3. Post: dica sobre guia investidor imobiliario
+4. Post: dica sobre guia investidor imobiliario
+5. Post: dica sobre guia investidor imobiliario
+6. Post: dica sobre guia investidor imobiliario
+7. Post: dica sobre guia investidor imobiliario
+8. Post: dica sobre guia investidor imobiliario
+9. Post: dica sobre guia investidor imobiliario
+10. Post: dica sobre guia investidor imobiliario

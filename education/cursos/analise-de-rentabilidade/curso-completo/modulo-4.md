@@ -1,71 +1,60 @@
-# Módulo 4 — Acompanhamento e Ajuste
-
+# Módulo 4 — Conteúdo Premium
 ## Introdução
-Acompanhe resultados, ajuste estratégias e escale investimentos no litoral com método e disciplina.
+Neste módulo você vai dominar analise de rentabilidade com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 4.1 — Acompanhamento de resultados
-**Indicadores:**
-- Receita mensal.
-- Custos mensais.
-- Ocupação.
-- ROI mensal.
+## Aula 4.1 — Métricas para acompanhar evolução e resultado
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Revisão:**
-- Semanal: receita e ocupação.
-- Mensal: custos e lucro.
-- Trimestral: ROI e ajustes.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Investidor passou a acompanhar métricas semanais e identificou que os finais de semana tinham ocupação 30% menor que a média. Ele criou promoções de última hora e aumentou a receita em R$ 8 mil/mês.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 4.2 — Ajustes de estratégia
-**Quando ajustar:**
-- ROI abaixo de 10% por 3 meses.
-- Ocupação abaixo de 30%.
-- Custos acima do previsto.
+## Aula 4.2 — Otimizações para aumentar rentabilidade ou desempenho
+Fundamentos, ferramentas e fluxos recomendados para analise de rentabilidade no litoral.
 
-**Como ajustar:**
-- Preço.
-- Temporada.
-- Canais.
-- Reforma.
+**Ferramentas recomendadas:**
+- Dashboard de métricas
+- Planilha de rentabilidade
+- Sistema de gestão de tarefas
 
-**Estudo de caso:**
-Investidor ajustou preço após 30 dias sem vendas e fechou contrato em 15 dias.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-## Aula 4.3 — Crescimento sustentado
-**Processos:**
-- Padronize análise.
-- Automatize relatórios.
-- Mantenha controle financeiro.
+## Aula 4.3 — Escala: como crescer sem perder a qualidade
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Crescimento:**
-- Adicione 1 imóvel por vez.
-- Mantenha qualidade.
-- Acompanhe métricas.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Exercício:**
-Monte um plano de acompanhamento para os próximos 90 dias.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Desenvolva um plano de crescimento para analise de rentabilidade com metas mensuráveis.
 
 ## Resumo
-- Acompanhamento mantém direção.
-- Ajustes preservam resultado.
-- Crescimento depende de processo.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Métricas revisadas
-- [ ] Ajustes aplicados
-- [ ] Escala planejada
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
+- Template editável
 - Planilha de acompanhamento
-- Modelo de relatório
 
 ## Ferramentas recomendadas
-- Dashboard
-- Planilha
-- Sistema de gestão
+- Dashboard de métricas
+- Planilha de rentabilidade
+- Sistema de gestão de tarefas
 
 ## Prompt de IA
-"Atue como especialista em análise de rentabilidade. Monte um plano de acompanhamento para este cenário: [dados]."
+Atue como estrategista de crescimento. Monte um plano de escala para analise de rentabilidade com métricas e prazos: [dados do negócio].

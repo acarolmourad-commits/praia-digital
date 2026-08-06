@@ -1,4 +1,4 @@
-# Roteiro YouTube — Como Vender Imóveis de Alto Padrão no Litoral
+# Roteiro YouTube — Venda Imoveis Alto Padrao Litoral
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado

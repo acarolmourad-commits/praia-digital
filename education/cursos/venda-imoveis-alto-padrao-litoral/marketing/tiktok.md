@@ -1,6 +1,10 @@
-# TikTok — Como Vender Imóveis de Alto Padrão no Litoral
-1. Roteiro: alto padrão sem erro
-2. Roteiro: 1 cliente, 2 propostas
-3. Roteiro: como atender
-4. Roteiro: venda rentável
-5. Roteiro: case de alto padrão
+1. Roteiro: case rápido 1
+2. Roteiro: case rápido 2
+3. Roteiro: case rápido 3
+4. Roteiro: case rápido 4
+5. Roteiro: case rápido 5
+6. Roteiro: case rápido 6
+7. Roteiro: case rápido 7
+8. Roteiro: case rápido 8
+9. Roteiro: case rápido 9
+10. Roteiro: case rápido 10

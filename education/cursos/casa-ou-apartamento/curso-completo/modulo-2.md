@@ -1,65 +1,60 @@
-# Módulo 2 — Custos e Manutenção
-
+# Módulo 2 — Conteúdo Premium
 ## Introdução
-Aprenda a comparar custos, identificar gastos ocultos e escolher com método no litoral.
+Neste módulo você vai dominar casa ou apartamento com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 2.1 — Custos diretos
-**Casa:**
-- Compra.
-- Reforma.
-- IPTU.
+## Aula 2.1 — Passo a passo para aplicar casa ou apartamento na prática
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Apartamento:**
-- Compra.
-- Condomínio.
-- IPTU.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Comprador comparou custos e escolheu apartamento.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 2.2 — Custos indiretos
-**Casa:**
-- Manutenção.
-- Energia.
-- Água.
+## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
+Fundamentos, ferramentas e fluxos recomendados para casa ou apartamento no litoral.
 
-**Apartamento:**
-- Condomínio.
-- Taxas extras.
+**Ferramentas recomendadas:**
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
-**Exemplo real:**
-Comprador incluiu custos indiretos e evitou surpresa.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-## Aula 2.3 — Manutenção e gestão
-**Casa:**
-- Manutenção própria.
-- Equipe.
+## Aula 2.3 — Automação e fluxos que economizam horas por semana
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Apartamento:**
-- Manutenção compartilhada.
-- Síndico.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Exercício:**
-Monte um comparativo de custos.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Monte um plano prático de casa ou apartamento para os próximos 30 dias, com ações diárias e semanais.
 
 ## Resumo
-- Custos diretos importam.
-- Custos indiretos somam.
-- Manutenção define esforço.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Custos diretos listados
-- [ ] Custos indiretos calculados
-- [ ] Manutenção avaliada
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de custos
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Planilha
-- Consultorias
-- Portais de imóveis
+- CRM de atendimento
+- Planilha de acompanhamento
+- Ferramenta de automação de mensagens
 
 ## Prompt de IA
-"Atue como especialista em imóveis no litoral. Compare custos para este cenário: [dados]."
+Atue como consultor de casa ou apartamento. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].

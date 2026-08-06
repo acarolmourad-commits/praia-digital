@@ -1,7 +1,6 @@
-# Certificado — Casa ou Apartamento
+# Certificado — Casa Ou Apartamento
 Modelo: Praia Digital Academy
-Curso: Casa ou Apartamento
-Carga horária: 4 horas
+Curso: Casa Ou Apartamento
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

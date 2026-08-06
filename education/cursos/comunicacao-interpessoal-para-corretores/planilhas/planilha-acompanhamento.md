@@ -1,11 +1,5 @@
-# Planilha — Comunicação Interpessoal para Corretores
+# Planilha — Comunicacao Interpessoal Para Corretores
 - [ ] Data
-- [ ] Cliente
-- [ ] Canal
-- [ ] Imóvel
-- [ ] Cidade
 - [ ] Ação
-- [ ] Follow-up
-- [ ] Venda
-- [ ] Receita
-- [ ] Status
+- [ ] Resultado
+- [ ] Observação

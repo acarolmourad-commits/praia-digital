@@ -1,7 +1,6 @@
-# Certificado — Como Vender Imóveis de Alto Padrão no Litoral
+# Certificado — Venda Imoveis Alto Padrao Litoral
 Modelo: Praia Digital Academy
-Curso: Como Vender Imóveis de Alto Padrão no Litoral
-Carga horária: 4 horas
+Curso: Venda Imoveis Alto Padrao Litoral
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

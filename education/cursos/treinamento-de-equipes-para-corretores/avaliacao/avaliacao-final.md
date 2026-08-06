@@ -1,9 +1,9 @@
-# Avaliação Final — Treinamento de Equipes para Corretores
+# Avaliação Final — Treinamento De Equipes Para Corretores
 ## Quiz
-- 20 perguntas sobre treinamento, organização, acompanhamento e conversão.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Treinamento aplicado a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

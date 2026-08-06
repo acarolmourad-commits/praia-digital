@@ -1,4 +1,4 @@
-# Google Ads — Gestão de Locação no Litoral
-Palavras: gestão de locação no litoral, como gerir locação, rentabilidade no litoral
+# Google Ads — gestao-de-locacao-no-litoral
+Palavras: gestao de locacao no litoral, litoral
 Tipo: busca + display
 CTAs: Baixar guia, Ver curso, Quero aprender

@@ -1,5 +1,5 @@
-# E-book Derivado — Gestão de Propostas para Corretores
-Título: Guia Rápido: Gestão de Propostas para Corretores no Litoral
+# E-book Derivado — Gestao De Propostas Para Corretores
+Título: Guia Rápido sobre Gestao De Propostas Para Corretores
 Formato: PDF 20 a 30 páginas
 Preço: gratuito ou R$ 19,90
-Conteúdo: checklist, planilha, dicas rápidas, modelo de proposta.
+Conteúdo: resumo, templates, dicas rápidas.

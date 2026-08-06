@@ -1,9 +1,9 @@
-# Avaliação Final — Marketing Imobiliário para Corretores
+# Avaliação Final — Marketing Imobiliario
 ## Quiz
-- 20 perguntas sobre conteúdo, redes sociais, SEO, tráfego pago, leads e conversão.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Plano de marketing aplicado a um corretor no litoral.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

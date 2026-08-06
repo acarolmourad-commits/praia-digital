@@ -1,8 +1,7 @@
-# Checklist — Storytelling para Corretores
-- [ ] Diagnóstico de storytelling
-- [ ] Método estruturado
-- [ ] Narrativa criada
-- [ ] Comunicação criada
-- [ ] Fechamento confirmado
-- [ ] Follow-up planejado
-- [ ] Crescimento planejado
+# Checklist — Storytelling Para Corretores
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

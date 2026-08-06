@@ -1,9 +1,9 @@
-# Avaliação Final — Visita Técnica para Corretores
+# Avaliação Final — Visita Tecnica Para Corretores
 ## Quiz
-- 20 perguntas sobre visita técnica, avaliação, apresentação e fechamento.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Visita técnica aplicada a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

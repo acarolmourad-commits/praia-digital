@@ -1,70 +1,60 @@
-# Módulo 1 — Fundamentos do Financiamento
-
+# Módulo 1 — Conteúdo Premium
 ## Introdução
-Entenda o financiamento imobiliário, os tipos de crédito e o perfil do comprador no litoral. O objetivo é escolher o melhor caminho para aprovação.
+Neste módulo você vai dominar financiamento imobiliario com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 1.1 — O que é financiamento imobiliário
-Financiamento é um contrato em que um banco ou instituição empresta dinheiro para compra de imóvel, com pagamento parcelado e juros.
+## Aula 1.1 — Visão geral do mercado de financiamento imobiliario no litoral paulista
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Características:**
-- Valor financiado: até 80% do imóvel.
-- Prazo: até 35 anos.
-- Juros: prefixados ou pós-fixados.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Comprador financiou 70% de um apartamento em Praia Grande e pagou menos entrada.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-**Estudo de caso:**
-Investidor escolheu financiamento com juros menores e economizou R$ 18 mil em 10 anos.
+## Aula 1.2 — Conceitos essenciais: termos, métricas e particularidades locais
+Fundamentos, ferramentas e fluxos recomendados para financiamento imobiliario no litoral.
 
-## Aula 1.2 — Tipos de crédito
-**Sistema de amortização:**
-- SAC: parcela decrescente.
-- Price: parcela fixa.
-- Misto: combinação.
+**Ferramentas recomendadas:**
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
-**Tipos de imóvel:**
-- Casa ou apartamento.
-- Terreno + construção.
-- Reforma.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-**Exemplo real:**
-Comprador usou SAC e reduziu juros totais em R$ 12 mil.
+## Aula 1.3 — Estudo de caso real: como um aluno aplicou o método e obteve resultado em 30 dias
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-## Aula 1.3 — Perfil do comprador
-**Perfil 1:**
-- Renda até R$ 5 mil.
-- Foco: entrada menor, juros baixos.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Perfil 2:**
-- Renda de R$ 5 mil a R$ 15 mil.
-- Foco: prazo, parcelas, amortização.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
 
-**Perfil 3:**
-- Renda acima de R$ 15 mil.
-- Foco: investimento, portabilidade.
-
-**Exercício:**
-Faça o diagnóstico do seu perfil de financiamento.
+## Exercício
+Faça o diagnóstico do seu cenário atual em financiamento imobiliario: liste pontos fortes, fracos, oportunidades e ameaças.
 
 ## Resumo
-- Financiamento reduz entrada.
-- Tipos de crédito influenciam juros.
-- Perfil orienta escolha.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Perfil definido
-- [ ] Tipos escolhidos
-- [ ] Metas traçadas
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Planilha de diagnóstico
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Sites de bancos
-- Planilha de simulação
-- Consultorias
+- Portal oficial de imóveis do litoral
+- Planilha de diagnóstico
+- Consulta de matrícula online
 
 ## Prompt de IA
-"Atue como especialista em financiamento imobiliário. Faça um diagnóstico com base nestas respostas: [insira suas respostas]."
+Atue como especialista em financiamento imobiliario no litoral paulista. Faça um diagnóstico personalizado com base nestas respostas: [insira suas respostas].

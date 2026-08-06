@@ -1,4 +1,4 @@
-# Roteiro YouTube — Comprar com Segurança no Litoral
+# Roteiro YouTube — Comprar Com Seguranca
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado

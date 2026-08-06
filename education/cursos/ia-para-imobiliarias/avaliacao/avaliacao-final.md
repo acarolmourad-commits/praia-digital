@@ -1,9 +1,9 @@
-# Avaliação Final — IA para Imobiliárias
+# Avaliação Final — Ia Para Imobiliarias
 ## Quiz
-- 20 perguntas sobre IA, automação, leads e métricas para imobiliárias.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Automação aplicada a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

@@ -1,21 +1,21 @@
-# Sequência de E-mails — IA para Corretores
+# Sequência de E-mails — Ia Para Corretores
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido de IA para Corretores (PDF + planilha)
+Assunto: Guia Rápido sobre Ia Para Corretores (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: corretor aumentou vendas com IA
+Assunto: Case prático de Ia Para Corretores
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "IA é complicada?"
+Assunto: "Ia Para Corretores é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno criou 30 posts em 1 hora
+Assunto: Aluno obteve resultado com Ia Para Corretores
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

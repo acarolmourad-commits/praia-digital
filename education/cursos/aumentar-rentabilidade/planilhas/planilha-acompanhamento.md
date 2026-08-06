@@ -1,6 +1,5 @@
-# Planilha — Como Aumentar em 30% a Rentabilidade
+# Planilha — Aumentar Rentabilidade
 - [ ] Data
 - [ ] Ação
 - [ ] Resultado
-- [ ] Ajuste
-- [ ] Status
+- [ ] Observação

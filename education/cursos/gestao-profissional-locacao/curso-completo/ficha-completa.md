@@ -1,12 +1,12 @@
-# Curso: Gestão Profissional da Locação
+# Curso: Gestao Profissional Locacao
 ## Nome Comercial
-**Gestão Profissional da Locação: Método Prático para Administrar Imóveis com Segurança, Controle e Rentabilidade**
+**Gestao Profissional Locacao: Conteúdo completo aplicado ao mercado imobiliário do litoral**
 
 ## Subtítulo
-Do contrato à rotina: aprenda a estruturar, fiscalizar e escalar a gestão de imóveis com menos dor de cabeça e mais resultado.
+Conteúdo premium para proprietários, investidores e corretores do litoral.
 
 ## Promessa Principal
-Em até 30 dias, você será capaz de montar uma operação enxuta, profissional e rentável para gestão de imóveis.
+Aprenda na prática, com método e exemplos reais do litoral.
 
 ## Público-alvo
 - Proprietários que querem administrar seus próprios imóveis
@@ -22,31 +22,30 @@ Iniciante → Intermediário
 
 ## Tempo Estimado
 8 horas de aulas (40 aulas de 10 a 16 min)
-Total: 8 horas
+Total: 8 horas de aulas
+Total: 4 semanas
 
 ## Valor Sugerido
-Curso completo: R$ 397
-À vista: R$ 327
-Parcelado: 12x de R$ 27,25
+Curso completo: R$ 297
+À vista: 267
+Parcelado: 12x de R$ 24.75
 Mini curso: R$ 147
 E-book: R$ 19,90
 
 ## Oferta Principal
 - Acesso vitalício + atualizações
-- Checklist operacional
-- Planilha de controle
-- Modelos de contrato e vistoria
+- Material complementar
 - Comunidade fechada
 - Certificado
 
 ## Headline
-**"Transforme a gestão dos seus imóveis em uma operação profissional e lucrativa"**
+**"Gestao Profissional Locacao"**
 
 ## Big Idea
-Gestão profissional de imóveis combina documentação clara, rotina enxuta e controle financeiro para reduzir inadimplência e aumentar rentabilidade.
+Conteúdo premium aplicado ao mercado do litoral.
 
 ## Oferta
-- **Curso completo:** R$ 397
+- **Curso completo:** R$ 297
 - **Mini curso:** R$ 147
 - **E-book:** R$ 19,90
 
@@ -54,113 +53,103 @@ Gestão profissional de imóveis combina documentação clara, rotina enxuta e c
 **Nome:** Carlos / Fernanda
 **Idade:** 25 a 55 anos
 **Renda:** R$ 3k a R$ 20k/mês
-**Objetivo:** administrar imóveis com profissionalismo
-**Dificuldades:** inadimplência, falta de organização, dor de cabeça com inquilinos
-**Desejos:** tranquilidade, previsibilidade, rentabilidade
+**Objetivo:** aprender e aplicar no litoral
+**Dificuldades:** falta de método, conteúdo genérico
+**Desejos:** resultados rápidos, segurança, previsibilidade
 
 ## Dores
-- Inadimplência
-- Falta de organização
-- Dor de cabeça com inquilinos
-- Documentação desencontrada
-- Rentabilidade baixa
+- Falta de método
+- Conteúdo genérico
+- Falta de exemplos locais
+- Dúvidas práticas
+- Falta de acompanhamento
 
 ## Desejos
-- Tranquilidade
-- Previsibilidade
-- Processo simples
-- Rentabilidade crescente
+- Método claro
+- Exemplos reais
+- Resultados previsíveis
+- Segurança
 - Autoridade local
 
 ## Objeções
+- "Muito caro"
+- "Não funciona"
 - "É complicado"
-- "Vou ter dor de cabeça"
-- "Não compensa"
 - "Não tenho tempo"
-- "Inquilino vai dar problema"
+- "Já tentei"
 
 ## Transformação
-- Operação organizada
-- Documentação padronizada
-- Rentabilidade controlada
-- Gestão profissional
-- Tranquilidade
+- Método aplicado
+- Resultados previsíveis
+- Segurança nas decisões
+- Autoridade local
+- Crescimento profissional
 
 ## Programa Completo
-### Módulo 1 — Fundamentos da Gestão
-Aula 1.1 — O mercado de gestão de imóveis
-Aula 1.2 — Perfil do proprietário e do gestor
-Aula 1.3 — Rentabilidade e riscos
-Exercício: diagnóstico operacional
+### Módulo 1 — Fundamentos
+Aula 1.1 — Introdução ao tema
+Aula 1.2 — Conceitos essenciais
+Aula 1.3 — Mercado local
+Exercício: diagnóstico inicial
 
-### Módulo 2 — Documentação e Contratos
-Aula 2.1 — Documentação essencial
-Aula 2.2 — Contrato de locação
-Aula 2.3 — Vistoria e reajuste
-Exercício: revisão documental
+### Módulo 2 — Aplicação Prática
+Aula 2.1 — Passo a passo
+Aula 2.2 — Ferramentas
+Aula 2.3 — Automação
+Exercício: plano prático
 
-### Módulo 3 — Rotina e Fiscalização
-Aula 3.1 — Rotina de gestão
-Aula 3.2 — Fiscalização e manutenção
-Aula 3.3 — Atendimento ao inquilino
-Exercício: rotina semanal
+### Módulo 3 — Casos Reais
+Aula 3.1 — Estudo de caso 1
+Aula 3.2 — Estudo de caso 2
+Aula 3.3 — Lições aplicáveis
+Exercício: adaptação ao seu contexto
 
-### Módulo 4 — Financeiro e Crescimento
-Aula 4.1 — Controle financeiro
-Aula 4.2 — Inadimplência e renegociação
-Aula 4.3 — Escala e profissionalização
-Exercício: plano financeiro
+### Módulo 4 — Crescimento
+Aula 4.1 — Métricas
+Aula 4.2 — Otimização
+Aula 4.3 — Escala
+Exercício: plano de crescimento
 
 ## Carga Horária
-8 horas
+8 horas de aulas (40 aulas de 10 a 16 min)
+Total: 8 horas
 
 ## Material Complementar
-- Checklist operacional
-- Planilha de controle
-- Modelos de contrato e vistoria
 - PDFs por módulo
+- Templates
 - Comunidade fechada
 - Atualizações
 
 ## Checklists
-- Checklist documentação
-- Checklist de contrato
-- Checklist de vistoria
-- Checklist financeiro
+- Checklist por módulo
 
 ## Planilhas
-- Planilha de controle
-- Planilha financeira
-- Planilha de manutenção
+- Planilha de acompanhamento
 
 ## Modelos Prontos
-- Modelo de contrato
-- Modelo de vistoria
-- Modelo de comunicação
+- Modelo aplicável
 
 ## Scripts
-- Script de atendimento
-- Script de negociação
+- Script quando aplicável
 
 ## Prompt de IA
-Prompt para gerar checklists e modelos.
+Prompt para gerar conteúdo com IA.
 
 ## Exercícios
-- Exercício 1: diagnóstico operacional
-- Exercício 2: revisão documental
-- Exercício 3: rotina semanal
-- Exercício 4: plano financeiro
+- Exercício 1
+- Exercício 2
+- Exercício 3
 
 ## Avaliações
 Quiz 20 perguntas
-Prova prática: operação aplicada
+Prova prática: aplicação do método
 
 ## FAQ
-1. Preciso de experiência? Não.
-2. Em quanto tempo melhora? De 15 a 30 dias.
-3. Vale a pena? Sim.
-4. E se o inquilino atrasar? Processo e negociação.
-5. Preciso de sistema? Ajuda.
+1. Como funciona? Método passo a passo.
+2. Em quanto tempo vejo resultado? De 30 a 60 dias.
+3. Preciso de experiência? Não.
+4. Vale a pena? Sim.
+5. E se não gostar? 7 dias de garantia.
 
 ## Página de Vendas
 [vendas.html]
@@ -193,17 +182,15 @@ Prova prática: operação aplicada
 [marketing/google-ads.md]
 
 ## CTA
-"Profissionalize a gestão dos seus imóveis agora."
+"Aprenda com método aplicado ao litoral."
 
 ## Upsell
-- Mentoria individual: R$ 2.500
-- Acompanhamento: R$ 4.000
+- Mentoria individual: R$ 2.000
+- Acompanhamento: R$ 3.500
 
 ## Downsell
 - Mini curso: R$ 147
 - E-book: R$ 19,90
 
 ## Cross-sell
-- Curso de Como Aumentar em 30% a Rentabilidade
-- Curso de Especialista em Venda de Imóveis no Litoral
-- Curso de Marketing Imobiliário para Corretores
+- Outros cursos da Praia Digital Academy

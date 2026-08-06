@@ -1,7 +1,6 @@
-# Certificado — Produtividade para Corretores
+# Certificado — Produtividade Para Corretores
 Modelo: Praia Digital Academy
-Curso: Produtividade para Corretores
-Carga horária: 4 horas
+Curso: Produtividade Para Corretores
 Aprovado: [nome]
 Data: [data]
 Código: [código único]

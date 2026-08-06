@@ -1,11 +1,5 @@
-# Planilha — Imóveis para Airbnb
+# Planilha — Imoveis Para Airbnb
 - [ ] Data
-- [ ] Imóvel
-- [ ] Cidade
-- [ ] Temporada
-- [ ] Preço
-- [ ] Ocupação
-- [ ] Receita
-- [ ] Custos
-- [ ] Lucro
-- [ ] Status
+- [ ] Ação
+- [ ] Resultado
+- [ ] Observação

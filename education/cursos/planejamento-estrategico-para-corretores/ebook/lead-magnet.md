@@ -1,5 +1,5 @@
-# E-book Derivado — Planejamento Estratégico para Corretores
-Título: Guia Rápido: Planejamento Estratégico para Corretores no Litoral
+# E-book Derivado — Planejamento Estrategico Para Corretores
+Título: Guia Rápido sobre Planejamento Estrategico Para Corretores
 Formato: PDF 20 a 30 páginas
 Preço: gratuito ou R$ 19,90
-Conteúdo: checklist, planilha, dicas rápidas, modelo de planejamento.
+Conteúdo: resumo, templates, dicas rápidas.

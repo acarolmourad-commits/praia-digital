@@ -1,9 +1,9 @@
-# Avaliação Final — Automação Comercial para Corretores
+# Avaliação Final — Automacao Comercial
 ## Quiz
-- 20 perguntas sobre automação, CRM, follow-up, integração e métricas.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Fluxo de automação aplicado a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

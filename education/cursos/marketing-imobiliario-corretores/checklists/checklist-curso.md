@@ -1,8 +1,7 @@
-# Checklist — Marketing Imobiliário para Corretores
-- [ ] Diagnóstico de marketing
-- [ ] Conteúdo criado
-- [ ] Canal escolhido
-- [ ] Leads gerados
-- [ ] Follow-up feito
-- [ ] Métricas revisadas
-- [ ] Crescimento planejado
+# Checklist — Marketing Imobiliario Corretores
+- [ ] Objetivos definidos
+- [ ] Método aplicado
+- [ ] Ferramentas configuradas
+- [ ] Exercícios realizados
+- [ ] Revisão feita
+- [ ] Próximo passo definido

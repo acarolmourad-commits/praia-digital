@@ -1,21 +1,21 @@
-# Sequência de E-mails — Gestão de Vendas para Corretores
+# Sequência de E-mails — Gestao De Vendas Para Corretores
 ## E-mail 1 — Entrega do lead magnet
-Assunto: Guia Rápido: Gestão de Vendas para Corretores no Litoral (PDF + planilha)
+Assunto: Guia Rápido sobre Gestao De Vendas Para Corretores (PDF)
 Conteúdo: acesso ao material + introdução ao curso completo
 CTA: Quero o curso completo
 
 ## E-mail 2 — Case
-Assunto: Case: corretor organizou funil e aumentou vendas
+Assunto: Case prático de Gestao De Vendas Para Corretores
 Conteúdo: passo a passo real
 CTA: Ver curso completo
 
 ## E-mail 3 — Objeção
-Assunto: "Gestão de vendas é complicada?"
+Assunto: "Gestao De Vendas Para Corretores é para mim?"
 Conteúdo: quebra de objeção com método
 CTA: Começar agora
 
 ## E-mail 4 — Prova social
-Assunto: Aluno dobrou vendas em 20 dias
+Assunto: Aluno obteve resultado com Gestao De Vendas Para Corretores
 Conteúdo: depoimento + resultado
 CTA: Participar do próximo lote
 

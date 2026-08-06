@@ -1,9 +1,9 @@
-# Avaliação Final — Multiplique Patrimônio
+# Avaliação Final — Multiplique Patrimonio
 ## Quiz
-- 20 perguntas sobre patrimônio, estratégia, documentação e gestão.
+- 20 perguntas sobre o conteúdo completo.
 
 ## Prova Prática
-- Estratégia de crescimento aplicada a um cenário real.
+- Aplicação do método no seu contexto.
 
 ## Critério de Aprovação
 - 70% no quiz + prova prática aprovada pelo mentor.

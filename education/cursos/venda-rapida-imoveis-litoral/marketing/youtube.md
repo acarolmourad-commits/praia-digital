@@ -1,4 +1,4 @@
-# Roteiro YouTube — Venda Rápida de Imóveis no Litoral
+# Roteiro YouTube — Venda Rapida Imoveis Litoral
 1. Introdução: promessa
 2. Erro comum
 3. Método simplificado

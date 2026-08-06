@@ -1,74 +1,60 @@
-# Módulo 3 — Laudo e Apresentação
-
+# Módulo 3 — Conteúdo Premium
 ## Introdução
-Aprenda a fazer um laudo de avaliação, apresentar o valor ao proprietário e fechar a avaliação com profissionalismo.
+Neste módulo você vai dominar avaliacao de imoveis com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 3.1 — Como fazer um laudo
-**Estrutura:**
-- Identificação do imóvel.
-- Objetivo da avaliação.
-- Metodologia.
-- Comparáveis.
-- Análise de mercado.
-- Valor de mercado.
-- Conclusão.
+## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
+Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
 
-**Qualidade:**
-- Dados verificados.
-- Comparáveis justificados.
-- Metodologia clara.
+**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
 
-**Exemplo real:**
-Corretor usou laudo estruturado e proprietário aceitou preço em 15 minutos.
+**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
 
-## Aula 3.2 — Apresentação para proprietário
-**Preparação:**
-- Dados organizados.
-- Comparáveis impressos.
-- Linguagem simples.
+## Aula 3.2 — Caso real 2: como evitar erros custosos
+Fundamentos, ferramentas e fluxos recomendados para avaliacao de imoveis no litoral.
 
-**Apresentação:**
-- Mostre dados, não opiniões.
-- Justifique preço com comparáveis.
-- Destaque diferenciais.
+**Ferramentas recomendadas:**
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
-**Estudo de caso:**
-Corretor apresentou 3 comparáveis e proprietário aceitou preço justo.
+**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
 
-## Aula 3.3 — Negociação e fechamento
-**Negociação:**
-- Apresente valor de mercado.
-- Justifique com dados.
-- Seja transparente.
+## Aula 3.3 — Lições aplicáveis ao seu contexto
+Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
 
-**Fechamento:**
-- Proposta por escrito.
-- Prazo de venda.
-- Acompanhamento.
+**Erros comuns a evitar:**
+- Erro 1: falta de planejamento local
+- Erro 2: ignorar particularidades documentais
+- Erro 3: não medir métricas de resultado
 
-**Exercício:**
-Faça um laudo de avaliação para um imóvel real.
+**Lições aplicáveis:**
+- Lição 1: valide o contexto local antes de decidir
+- Lição 2: use dados comparáveis, não apenas intuição
+- Lição 3: documente tudo para ganhar agilidade
+
+## Exercício
+Analise um caso real do mercado e adapte as lições para a sua realidade.
 
 ## Resumo
-- Laudo confiável aumenta autoridade.
-- Apresentação clara reduz objeções.
-- Negociação transparente fecha vendas.
+- Pontos-chave para revisão antes da próxima etapa
+- Checklist rápido de verificação
+- Próximo passo recomendado
 
 ## Checklist
-- [ ] Laudo estruturado
-- [ ] Dados verificados
-- [ ] Apresentação preparada
-- [ ] Proposta fechada
+- [ ] Conteúdo do módulo estudado
+- [ ] Exercício aplicado ao seu contexto
+- [ ] Ferramentas configuradas
+- [ ] Próximo passo definido
 
 ## Materiais para download
 - PDF do módulo
-- Modelo de laudo
-- Modelo de proposta
+- Template editável
+- Planilha de acompanhamento
 
 ## Ferramentas recomendadas
-- Planilha de comparáveis
-- Sistema de laudo
-- CRM de vendas
+- Modelos de proposta
+- Planilha de ROI
+- Checklist de documentação
 
 ## Prompt de IA
-"Atue como avaliador de imóveis. Monte um laudo para este imóvel: [dados]."
+Atue como mentor experiente. Analise este caso real de avaliacao de imoveis no litoral e aponte 5 lições práticas: [descreva o caso].
