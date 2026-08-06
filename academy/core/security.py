@@ -1,4 +1,5 @@
 import bcrypt
+from typing import Optional
 from fastapi import Depends, HTTPException
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from jose import jwt
@@ -24,7 +25,9 @@ def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(securit
         raise HTTPException(status_code=401, detail="Invalid token.")
     return {"id": int(user_id), "role": role}
 
-def get_current_user_optional(credentials: HTTPAuthorizationCredentials = Depends(security)):
+def get_current_user_optional(credentials: Optional[HTTPAuthorizationCredentials] = Depends(HTTPBearer(auto_error=False))):
+    if credentials is None:
+        return None
     token = credentials.credentials
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])

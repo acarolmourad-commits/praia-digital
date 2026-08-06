@@ -82,7 +82,7 @@ def public_checkout(
         enrollments.append(enrollment)
 
     # cria pagamento associado ao primeiro item
-    payment = Payment(user_id=user_id, course_id=course_ids[0], amount=total, status=PaymentStatus.pending.value, gateway="public_checkout")
+    payment = Payment(user_id=user_id, course_id=course_ids[0], enrollment_id=enrollments[0].id, amount=total, status=PaymentStatus.pending.value, gateway="public_checkout")
     db.add(payment)
     db.commit()
     db.refresh(payment)
@@ -123,13 +123,13 @@ def public_checkout(
 
 @router.get("/checkout/status")
 def checkout_status(order_id: int, db: Session = Depends(get_db)):
-    payment = db.query(Payment).join(Enrollment).filter(Enrollment.id == order_id).first()
-    if not payment:
-        raise HTTPException(status_code=404, detail="Pedido não encontrado")
     enrollment = db.query(Enrollment).filter(Enrollment.id == order_id).first()
+    if not enrollment:
+        raise HTTPException(status_code=404, detail="Pedido não encontrado")
+    payment = db.query(Payment).filter(Payment.enrollment_id == enrollment.id).first()
     return {
         "order_id": order_id,
-        "status": enrollment.status if enrollment else "unknown",
+        "status": enrollment.status,
         "payment_status": payment.status if payment else "unknown",
     }
 
