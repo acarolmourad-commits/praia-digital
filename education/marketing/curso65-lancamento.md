@@ -1,16 +1,17 @@
 # Pacote de Lançamento — Curso 65: Fechamento de Vendas para Corretores
 
 ## 1. Artigo SEO/GEO (800+ palavras)
-Título: Fechamento de Vendas para Corretores: método prático para vender mais no litoral
+Título: Fechamento de Vendas para Corretores: método prático para vender mais no litoral norte e sul de SP
 
 ### Introdução
-Vender imóveis no litoral não é só mostrar o imóvel: é criar confiança, reduzir objeções e conduzir o cliente até a assinatura. O curso "Fechamento de Vendas para Corretores" nasce de uma observação simples: corretores e donos de imobiliárias repetem os mesmos erros no momento decisivo — da proposta ao fechamento — e perdem vendas por detalhes tratáveis.
+Vender imóveis no litoral paulista não é só mostrar o imóvel: é criar confiança, reduzir objeções e conduzir o cliente até a assinatura. O curso "Fechamento de Vendas para Corretotores" nasce de uma observação simples: corretores e donos de imobiliárias repetem os mesmos erros no momento decisivo — da proposta ao fechamento — e perdem vendas por detalhes tratáveis. Com dados reais de ocupação, valorização por m² e comportamento de compra por acesso (Imigrantes, Anchieta, Tamoios), o método vira ciência aplicada ao litoral.
 
 ### O problema do fechamento no litoral
-O mercado do litoral paulista tem particularidades:
+O mercado do litoral paulista tem particularidades que poucos cursos abordam:
 - Clientes compram por emoção e por dados ao mesmo tempo.
-- Amaresia, distância da capital e sazonalidade criam pressão de tempo.
-- Muitos leads chegam com WhatsApp, mas poucos são convertidos em visita e contrato.
+- A maresia, a distância da capital e a sazonalidade criam pressão de tempo.
+- Muitos leads chegam por WhatsApp, mas poucos são convertidos em visita e contrato.
+- Orla vs. área interna tem perfis de compra diferentes: vista mar, marinha e ventilação cruzada viram argumentos de venda, não detalhes.
 
 Resultado: corretores bons em captação empacam no fechamento.
 
@@ -23,8 +24,9 @@ Resultado: corretores bons em captação empacam no fechamento.
 ### Aplicação real
 Exemplos usados no curso:
 - Apartamento vista mar em Santos.
-- Casa condomínio fechado em Bertioga.
+- Casa em condomínio fechado em Bertioga.
 - Temporada em Caraguatatuba e Ubatuba.
+- Compra programada em Ilhabela com análise de rentabilidade.
 
 ### Resultados esperados
 - Redução de objeções não tratadas.
