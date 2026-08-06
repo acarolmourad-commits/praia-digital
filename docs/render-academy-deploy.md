@@ -1,10 +1,8 @@
 # Deploy — Praia Digital Academy no Render
 
-## Pré-requisitos
-- Repo: `acarolmourad-commits/praia-digital`
-- Branch: `main`
-- Domínio: `academy.praia.digital`
-- Banco: PostgreSQL `academy-db`
+## Status atual
+- Código e variáveis já commitados em `main`
+- Único bloqueio real: criação/configuração manual no Render
 
 ## Passo a passo
 1. No Render, crie um novo **Web Service** a partir do repo acima, branch `main`.
