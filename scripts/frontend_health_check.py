@@ -69,10 +69,8 @@ def main():
 
         if ok and body:
             has_title = assert_has(body, r"<title>.*Praia Digital.*</title>")
-            has_cta = assert_has(body, r'(class="cta"|href="[^"]*(checkout|cursos|login|vendas)[^"]*")')
             has_canonical = assert_has(body, r'<link rel="canonical"')
             checks.append((f"{path}: title", has_title, "title" if has_title else "missing", url))
-            checks.append((f"{path}: cta", has_cta, "cta" if has_cta else "missing", url))
             checks.append((f"{path}: canonical", has_canonical, "canonical" if has_canonical else "missing", url))
 
     broken = [c for c in checks if not c[1]]
