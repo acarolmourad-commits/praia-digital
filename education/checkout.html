@@ -87,15 +87,27 @@
         title: title,
         price: price,
       };
+      const headers = {'Content-Type': 'application/json'};
+      const token = localStorage.getItem('academy_token') || sessionStorage.getItem('academy_token');
+      if (token) {
+        headers['Authorization'] = 'Bearer ' + token;
+      }
       const r = await fetch('/academy/checkout', {
         method: 'POST',
-        headers: {'Content-Type': 'application/json'},
+        headers,
         body: JSON.stringify(payload)
       });
       const data = await r.json();
       const box = document.getElementById('result');
       box.style.display = 'block';
-      box.innerHTML = '<p><strong>' + (r.status === 200 ? 'Pedido criado!' : 'Erro') + '</strong></p><pre>' + JSON.stringify(data, null, 2) + '</pre>';
+      if (r.status === 200) {
+        box.innerHTML = '<p><strong>Pedido criado!</strong></p><p>Redirecionando para o pagamento...</p>';
+        if (data.checkout_url) {
+          setTimeout(() => { location.href = data.checkout_url; }, 800);
+        }
+      } else {
+        box.innerHTML = '<p><strong>Erro</strong></p><pre>' + JSON.stringify(data, null, 2) + '</pre>';
+      }
     });
   </script>
 </body>
