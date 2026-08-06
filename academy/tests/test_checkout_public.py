@@ -1,38 +1,14 @@
 from fastapi.testclient import TestClient
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy.pool import StaticPool
-from academy.core.database import Base, get_db
+from academy.tests._shared_test_db import Base, get_db, override_get_db, TestingSessionLocal
 from academy.main import app
 from academy.core.models import Course, EnrollmentStatus
-
-SQLALCHEMY_DATABASE_URL = "sqlite:///:memory:"
-
-engine = create_engine(
-    SQLALCHEMY_DATABASE_URL,
-    connect_args={"check_same_thread": False},
-    poolclass=StaticPool,
-)
-TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-
-Base.metadata.create_all(bind=engine)
-
-
-def override_get_db():
-    db = TestingSessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
-
 
 app.dependency_overrides[get_db] = override_get_db
 client = TestClient(app)
 
 
 def seed_course(slug: str, price: int = 9900):
-    db = TestingSessionLocal()
-    try:
+    with TestingSessionLocal() as db:
         course = Course(
             slug=slug,
             title=slug.replace("-", " ").title(),
@@ -42,8 +18,6 @@ def seed_course(slug: str, price: int = 9900):
         )
         db.add(course)
         db.commit()
-    finally:
-        db.close()
 
 
 def test_public_checkout_creates_enrollment_and_payment():
