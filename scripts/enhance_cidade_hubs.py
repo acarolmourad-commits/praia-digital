@@ -2,6 +2,9 @@ import re
 from pathlib import Path
 
 cities = {
+    'santos': 'Santos',
+    'guaruja': 'Guarujá',
+    'praia-grande': 'Praia Grande',
     'bertioga': 'Bertioga',
     'itanhaem': 'Itanhaém',
     'mongagua': 'Mongaguá',
@@ -28,7 +31,6 @@ for slug, name in cities.items():
     txt = p.read_text(encoding='utf-8', errors='ignore')
     if 'Dados locais que importam' in txt:
         continue
-    # insert before last </main> or before footer
     if '</main>' in txt:
         txt = txt.replace('</main>', extra_section + '    </main>', 1)
     else:
