@@ -1,0 +1,185 @@
+from pathlib import Path
+
+base = Path('lead')
+pages = {
+    'itanhaem': {
+        'title': 'Guia de Imóveis em Itanhaém — Centro, Cibratel e Jardim São Fernando',
+        'description': 'Guia local de Itanhaém: imóveis, investimentos, temporada, valorização e serviços.',
+        'topics': [
+            ('Avaliação local', 'Comparáveis e preço justo em Itanhaém.'),
+            ('Temporada', 'Ocupação, preço e operação na orla.'),
+            ('Investimento', 'ROI, custos e documentação.'),
+        ],
+        'highlights': [
+            'Custo-benefício atrativo no Litoral Sul.',
+            'Documentação regular e ocupação crescente.',
+            'Oferta variada para famílias e investidores.',
+            'Perfil de comprador que valoriza estabilidade, serviços e acesso.',
+        ],
+    },
+    'mongagua': {
+        'title': 'Guia de Imóveis em Mongaguá — Jardim São Paulo, Balneário e Centro',
+        'description': 'Guia local de Mongaguá: imóveis, investimentos, temporada, valorização e serviços.',
+        'topics': [
+            ('Avaliação local', 'Comparáveis e preço justo em Mongaguá.'),
+            ('Temporada', 'Ocupação, preço e operação na orla.'),
+            ('Investimento', 'ROI, custos e documentação.'),
+        ],
+        'highlights': [
+            'Custo de entrada competitivo e liquidez em alta.',
+            'Oferta acessível para primeiro imóvel.',
+            'Acesso fácil pela rodovia e proximidade com Santos.',
+            'Perfil de comprador que valoriza custo-benefício, calmaria e potencial.',
+        ],
+    },
+    'caraguatatuba': {
+        'title': 'Guia de Imóveis em Caraguatatuba — Centro, Jaguaribe e Prainha',
+        'description': 'Guia local de Caraguatatuba: imóveis, investimentos, temporada, valorização e serviços.',
+        'topics': [
+            ('Avaliação local', 'Comparáveis e preço justo em Caraguatatuba.'),
+            ('Temporada', 'Ocupação, preço e operação na orla.'),
+            ('Investimento', 'ROI, custos e documentação.'),
+        ],
+        'highlights': [
+            'Equilíbrio entre temporada e moradia permanente.',
+            'Oferta diversificada de apartamentos e casas.',
+            'Acesso rápido por via Imigrantes/Anchieta.',
+            'Perfil de comprador que valoriza lazer, serviços e liquidez.',
+        ],
+    },
+}
+
+for folder, data in pages.items():
+    p = base / folder / 'index.html'
+    p.parent.mkdir(parents=True, exist_ok=True)
+    wa_text = f"Ol%C3%A1%2C%20quero%20o%20guia%20de%20{data['title'].split('—')[0].strip().replace(' ', '%20')}"
+    topics_html = ''.join([
+        f'<div class="card"><strong>{t[0]}</strong><p style="opacity:.75; margin-top:6px;">{t[1]}</p></div>'
+        for t in data['topics']
+    ])
+    highlights_html = ''.join([f'<li>{h}</li>' for h in data['highlights']])
+    content = f'''<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{data['title']} | Praia Digital</title>
+  <meta name="description" content="{data['description']}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://praia.digital/lead/{folder}/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{data['title']} - Praia Digital">
+  <meta property="og:description" content="{data['description']}">
+  <meta property="og:url" content="https://praia.digital/lead/{folder}/index.html">
+  <meta property="og:site_name" content="Praia Digital">
+  <meta name="theme-color" content="#0b1220">
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Praia Digital - {data['title'].split('—')[0].strip()}",
+    "url": "https://praia.digital/lead/{folder}/index.html",
+    "areaServed": "{data['title'].split('—')[0].strip()}",
+    "telephone": "(11) 95434-6288",
+    "email": "comercial@praia.digital"
+  }}
+  </script>
+  <style>
+    body{{font-family:'Segoe UI',system-ui,sans-serif;background:#0b1220;color:#e8ecf1;margin:0;padding:0}}
+    .wrap{{max-width:960px;margin:0 auto;padding:28px 22px}}
+    header nav a{{color:#cfe3ff;text-decoration:none;margin-right:14px;font-weight:500}}
+    h1{{font-size:2rem;margin:0 0 .5rem}}
+    h2{{font-size:1.35rem;margin:1.2rem 0 .6rem}}
+    .lead{{opacity:.85;line-height:1.6;margin-bottom:1rem;max-width:800px}}
+    .cta{{background:#00B4D8;color:#fff;padding:.7rem 1.2rem;border-radius:999px;font-weight:700;text-decoration:none;display:inline-block;margin-top:.6rem;margin-right:.4rem}}
+    .card{{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:18px 20px}}
+    .form{{display:grid;gap:.8rem;margin-top:1rem}}
+    input,select{{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);border-radius:12px;padding:.7rem 1rem;color:#e8ecf1;font-size:1rem;width:100%}}
+    button{{background:#00B4D8;color:#000;border:none;border-radius:999px;padding:.7rem 1.2rem;font-weight:700;cursor:pointer}}
+    footer{{margin-top:22px;opacity:.6;font-size:12px}}
+    .grid{{display:grid;gap:1rem;margin-top:1.2rem}}
+    .grid-3{{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}}
+    ul.ticks{{margin:0;padding-left:18px}}
+    ul.ticks li{{margin:.4rem 0}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <nav aria-label="Navegação principal">
+        <a href="https://praia.digital/index.html">Início</a>
+        <a href="https://praia.digital/servicos.html">Serviços</a>
+        <a href="https://praia.digital/bairros/index.html">Bairros</a>
+        <a href="https://praia.digital/education/cursos/index.html">Cursos</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>{data['title']}</h1>
+      <p class="lead">{data['description']}</p>
+
+      <a class="cta" href="https://wa.me/5511954346288?text={wa_text}">Falar com especialista</a>
+      <a class="cta" href="/education/cursos/index.html" style="background:#ff8c00">Ver cursos</a>
+
+      <div class="card" style="margin-top:1.2rem">
+        <h2>Baixar guia gratuito</h2>
+        <form id="leadForm" class="form">
+          <input type="text" id="name" placeholder="Nome" required>
+          <input type="email" id="email" placeholder="E-mail" required>
+          <input type="tel" id="phone" placeholder="Telefone/WhatsApp" required>
+          <select id="city">
+            <option value="">Cidade de interesse</option>
+            <option value="caraguatatuba">Caraguatatuba</option>
+            <option value="ubatuba">Ubatuba</option>
+            <option value="ilhabela">Ilhabela</option>
+            <option value="santos">Santos</option>
+            <option value="guaruja">Guarujá</option>
+            <option value="bertioga">Bertioga</option>
+            <option value="sao-sebastiao">São Sebastião</option>
+            <option value="praia-grande">Praia Grande</option>
+          </select>
+          <button type="submit">Quero receber o guia</button>
+        </form>
+        <p id="formMessage" style="margin-top:10px;opacity:.85;"></p>
+      </div>
+
+      <h2>Tópicos do guia</h2>
+      <div class="grid grid-3">
+        {topics_html}
+      </div>
+
+      <h2>Dados locais que importam</h2>
+      <div class="card">
+        <ul class="ticks">
+          {highlights_html}
+        </ul>
+      </div>
+    </main>
+
+    <footer>Praia Digital — educação e serviços imobiliários no litoral.</footer>
+  </div>
+
+  <script>
+    document.getElementById('leadForm').addEventListener('submit', async (e) => {{
+      e.preventDefault();
+      const data = {{
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        city: document.getElementById('city').value,
+        source: '/lead/{folder}',
+        magnet: 'guia-{folder}'
+      }};
+      const res = await fetch('/leads', {{method:'POST', headers:{{'Content-Type':'application/json'}}, body:JSON.stringify(data)}});
+      const msg = document.getElementById('formMessage');
+      if (res.ok) {{ msg.textContent = '✅ Guia enviado! Verifique seu e-mail e WhatsApp.'; }}
+      else {{ msg.textContent = '❌ Erro ao enviar. Tente novamente.'; }}
+    }});
+  </script>
+</body>
+</html>
+'''
+    p.write_text(content, encoding='utf-8')
+    print(f'created {p}')
+
+print('done')
