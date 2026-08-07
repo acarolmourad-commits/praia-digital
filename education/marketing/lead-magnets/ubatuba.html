@@ -169,8 +169,8 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       e.preventDefault();
       var data={
         name: document.getElementById('name').value.trim(),
-        email: document.getElementById('email').value.trim()null,
-        phone: document.getElementById('phone').value.trim()null,
+        email: document.getElementById('email').value.trim() || null,
+        phone: document.getElementById('phone').value.trim() || null,
         city: document.getElementById('city').value || null,
         source: document.getElementById('source').value || null,
         magnet: document.getElementById('magnet').value || null
