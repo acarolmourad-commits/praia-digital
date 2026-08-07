@@ -37,7 +37,7 @@ def monitoring_status(db: Session = Depends(get_db)):
         "mercado_pago": bool(MERCADOPAGO_TOKEN and MERCADOPAGO_PUBLIC_KEY),
         "whatsapp": bool(WHATSAPP_API_URL and WHATSAPP_TOKEN and WHATSAPP_PHONE_ID),
         "base_url": BASE_URL,
-        "allowed_origins": ALLOWED_ORIGINS,
+        "allowed_origins_count": len([o.strip() for o in ALLOWED_ORIGINS.split(",") if o.strip()]),
     }
 
     checks = {
