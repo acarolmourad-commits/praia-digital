@@ -45,12 +45,12 @@ checks = [
 failures = 0
 for item in checks:
     name, method, path, payload, expected_status, expected_json = item
-    ok, err, data = check(name, method, path, payload, expected_status, expected_json)
+    ok, err, status_code, data = check(name, method, path, payload, expected_status, expected_json)
     if not ok:
         print(f"FAIL {name}: {err}")
         failures += 1
         continue
-    print(f"OK   {name}: {expected_status}")
+    print(f"OK   {name}: {status_code}")
 
     if name == "security_headers":
         try:
