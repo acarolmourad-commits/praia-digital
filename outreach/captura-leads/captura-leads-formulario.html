@@ -36,6 +36,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Captura de Leads - Praia Digital</title>
+  <link rel="preconnect" href="https://praia.digital">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://praia.digital/index.html" }
+      { "@type": "ListItem", "position": 2, "name": "Outreach", "item": "https://praia.digital/outreach/" }
+      { "@type": "ListItem", "position": 3, "name": "Captura Leads", "item": "https://praia.digital/outreach/captura-leads/" }
+      { "@type": "ListItem", "position": 4, "name": "Captura Leads Formulario", "item": "https://praia.digital/outreach/captura-leads/captura-leads-formulario.html" }
+    ]
+  }
+  </script>
   <meta property="og:title" content="Captura de Leads - Praia Digital">
   <meta property="og:description" content="">
 
@@ -171,7 +184,7 @@
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEST1234"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer  [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-TEST1234', { anonymize_ip: true });
@@ -261,7 +274,7 @@
       };
       
       // Store in localStorage
-      let leads = JSON.parse(localStorage.getItem('praiaDigitalLeads') || '[]');
+      let leads = JSON.parse(localStorage.getItem('praiaDigitalLeads')  '[]');
       leads.push(lead);
       localStorage.setItem('praiaDigitalLeads', JSON.stringify(leads));
       

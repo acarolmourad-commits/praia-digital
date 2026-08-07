@@ -110,7 +110,7 @@
 </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEST1234"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer  [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-TEST1234', { anonymize_ip: true });
@@ -144,9 +144,9 @@
 
   <script>
     function gerar() {
-      const nome = document.getElementById('leadName').value || '[Nome]';
-      const empresa = document.getElementById('leadCompany').value || '[Imobiliária]';
-      const cidade = document.getElementById('leadCity').value || '[Cidade]';
+      const nome = document.getElementById('leadName').value  '[Nome]';
+      const empresa = document.getElementById('leadCompany').value  '[Imobiliária]';
+      const cidade = document.getElementById('leadCity').value  '[Cidade]';
       const canal = document.getElementById('channel').value;
       const assunto = 'Parceria Consórcio Ademicon + Praia Digital';
       const corpo = `Olá,\n\nMe chamo Carolina Moura, CEO da Praia Digital.\n\nTemos uma oferta de parceria exclusiva para ${empresa} (${cidade}):\n\n✅ Consórcio imobiliário e de automóveis com a Ademicon\n✅ Comissão por indicação sem custo de adesão\n✅ Suporte completo e material profissional\n✅ Acesso a ferramentas de IA e prospecção gratuita\n\nOferecemos mais uma opção de pagamento para seus clientes — sem juros abusivos e com taxa administrativa transparente.\n\nAcesso gratuito às nossas ferramentas: https://praia.digital\n\nConheça nosso site: https://praia.digital/\n\nPodemos marcar uma call de 15 minutos para apresentar o modelo?\n\nAtt, Carolina Moura\nCEO Praia Digital\nWhatsApp: (11) 95434-6288\nE-mail: comercial@praia.digital`;
