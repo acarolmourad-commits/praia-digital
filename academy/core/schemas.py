@@ -151,11 +151,11 @@ class RecommendationOut(BaseModel):
 # Leads
 class LeadIn(BaseModel):
     name: str
-    email: Optional[str]
-    phone: Optional[str]
-    city: Optional[str]
-    source: Optional[str]
-    magnet: Optional[str]
+    email: Optional[str] = None
+    phone: Optional[str] = None
+    city: Optional[str] = None
+    source: Optional[str] = None
+    magnet: Optional[str] = None
 
 class LeadOut(BaseModel):
     id: int
