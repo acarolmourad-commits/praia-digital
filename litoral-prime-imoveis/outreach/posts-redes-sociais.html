@@ -445,15 +445,15 @@
   <script>
     (function(){
       const STORAGE_KEY = 'litoralprime.copycounts.v1';
-      const textareaKey = (ta) => (ta.value || '').trim();
-      function loadCounts(){ try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch(e){ console.error(e); return {}; } }
+      const textareaKey = (ta) => (ta.value  '').trim();
+      function loadCounts(){ try { return JSON.parse(localStorage.getItem(STORAGE_KEY)  '{}'); } catch(e){ console.error(e); return {}; } }
       function saveCounts(obj){ localStorage.setItem(STORAGE_KEY, JSON.stringify(obj)); }
       function formatCount(n){ return n > 999 ? (n/1000).toFixed(1).replace('.0','') + 'k' : String(n); }
       try {
         document.querySelectorAll('article.servico-card').forEach(card => {
           const ta = card.querySelector('textarea');
           const btn = card.querySelector('button');
-          if(!ta || !btn) return;
+          if(!ta  !btn) return;
           const key = textareaKey(ta);
           if(!key) return;
           const counts = loadCounts();
@@ -464,12 +464,12 @@
           btn.parentNode.insertBefore(badge, btn.nextSibling);
           btn.addEventListener('click', async () => {
             try {
-              const text = ta.value || '';
+              const text = ta.value  '';
               await navigator.clipboard.writeText(text);
               const original = btn.textContent;
               btn.textContent = 'Copiado';
               const c = loadCounts();
-              c[key] = (c[key] || 0) + 1;
+              c[key] = (c[key]  0) + 1;
               saveCounts(c);
               badge.textContent = formatCount(c[key]);
               setTimeout(() => btn.textContent = original, 1200);

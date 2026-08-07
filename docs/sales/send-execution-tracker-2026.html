@@ -363,10 +363,10 @@
   </div>
 
   <script>
-    let queue = JSON.parse(localStorage.getItem('praiaSendQueue') || '[]');
-    let sent = JSON.parse(localStorage.getItem('praiaSentLog') || '[]');
-    let replies = JSON.parse(localStorage.getItem('praiaReplies') || '[]');
-    let todayLog = JSON.parse(localStorage.getItem('praiaTodayLog') || '[]');
+    let queue = JSON.parse(localStorage.getItem('praiaSendQueue')  '[]');
+    let sent = JSON.parse(localStorage.getItem('praiaSentLog')  '[]');
+    let replies = JSON.parse(localStorage.getItem('praiaReplies')  '[]');
+    let todayLog = JSON.parse(localStorage.getItem('praiaTodayLog')  '[]');
 
     function saveAll() {
       localStorage.setItem('praiaSendQueue', JSON.stringify(queue));
@@ -390,7 +390,7 @@
         <div class="queue-item">
           <div class="queue-info">
             <h4>${escape(item.leadName)} · ${escape(item.city)}</h4>
-            <p>Tipo: ${escape(item.type)} • ${escape(item.date || today())}</p>
+            <p>Tipo: ${escape(item.type)} • ${escape(item.date  today())}</p>
           </div>
           <div class="queue-actions">
             <button class="btn btn-sm" onclick="markSentById(${idx})">✅ Enviado</button>
@@ -417,12 +417,12 @@
       const el = document.getElementById('upcomingFollowups');
       const upcoming = todayLog
         .filter(l => l.type && l.type.includes('Follow-up'))
-        .sort((a, b) => (a.time || '').localeCompare(b.time || ''));
+        .sort((a, b) => (a.time  '').localeCompare(b.time  ''));
       if (!upcoming.length) { el.innerHTML = '<div class="empty">Nenhum follow-up agendado</div>'; return; }
       el.innerHTML = upcoming.slice(0, 8).map(item => `
         <div class="timeline-item">
-          <div class="timeline-time">${escape(item.time || '--:--')} • ${escape(item.date || today())}</div>
-          <div class="timeline-content">${escape(item.leadName || '')} · ${escape(item.type || '')}</div>
+          <div class="timeline-time">${escape(item.time  '--:--')} • ${escape(item.date  today())}</div>
+          <div class="timeline-content">${escape(item.leadName  '')} · ${escape(item.type  '')}</div>
         </div>
       `).join('');
     }
@@ -432,8 +432,8 @@
       if (!todayLog.length) { el.innerHTML = '<div class="empty">Sem atividade hoje</div>'; return; }
       el.innerHTML = todayLog.slice(0, 10).map(item => `
         <div class="timeline-item">
-          <div class="timeline-time">${escape(item.time || '--:--')}</div>
-          <div class="timeline-content">${escape(item.action || '')} ${escape(item.leadName || '')}</div>
+          <div class="timeline-time">${escape(item.time  '--:--')}</div>
+          <div class="timeline-content">${escape(item.action  '')} ${escape(item.leadName  '')}</div>
         </div>
       `).join('');
     }
@@ -442,8 +442,8 @@
       const name = document.getElementById('leadName').value.trim();
       const city = document.getElementById('leadCity').value.trim();
       const type = document.getElementById('sendType').value;
-      const date = document.getElementById('sendDate').value || today();
-      if (!name || !city) { showToast('Preencha nome e cidade'); return; }
+      const date = document.getElementById('sendDate').value  today();
+      if (!name  !city) { showToast('Preencha nome e cidade'); return; }
       sent.push({ leadName: name, city, type, date, time: now() });
       todayLog.push({ action: 'Enviado:', leadName: name, type, date, time: now() });
       saveAll();
@@ -456,8 +456,8 @@
     function markSentById(idx) {
       const item = queue[idx];
       if (!item) return;
-      sent.push({ leadName: item.leadName, city: item.city, type: item.type, date: item.date || today(), time: now() });
-      todayLog.push({ action: 'Enviado:', leadName: item.leadName, type: item.type, date: item.date || today(), time: now() });
+      sent.push({ leadName: item.leadName, city: item.city, type: item.type, date: item.date  today(), time: now() });
+      todayLog.push({ action: 'Enviado:', leadName: item.leadName, type: item.type, date: item.date  today(), time: now() });
       queue.splice(idx, 1);
       saveAll();
       renderAll();
@@ -476,7 +476,7 @@
     }
 
     function removeQueue(idx) {
-      const name = queue[idx]?.leadName || '';
+      const name = queue[idx]?.leadName  '';
       queue.splice(idx, 1);
       saveAll();
       renderAll();
@@ -516,7 +516,7 @@
     }
 
     function escape(str) {
-      return String(str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+      return String(str  '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
     }
 
     function renderAll() {

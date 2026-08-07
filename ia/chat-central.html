@@ -36,7 +36,7 @@
     <meta name="keywords" content="Chat IA — Praia Digital, Praia Digital Home Central de IA 🧠 Chat IA Converse com os agentes da Praia Digital. Em breve resposta real assistida por modelo de IA., imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
   <meta name="description" content="Praia Digital Home Central de IA 🧠 Chat IA Converse com os agentes da Praia Digital. Em breve resposta real assistida por modelo de IA.">
   <meta charset="UTF-8">
-    ||
+    
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Chat IA — Praia Digital</title>
   <style>
@@ -202,7 +202,7 @@
       'https://praia-digital.netlify.app',
       ''
     ];
-    const BACKEND_URL = (window.location.hostname === 'acarolmourad-commits.github.io' ? 'https://api.praia.digital' : '') || DEFAULT_BACKEND_URLS[0];
+    const BACKEND_URL = (window.location.hostname === 'acarolmourad-commits.github.io' ? 'https://api.praia.digital' : '')  DEFAULT_BACKEND_URLS[0];
 
     function detectBackend() {
       try {
@@ -274,7 +274,7 @@
             body: JSON.stringify({ agent: 'comercial', input: text, context: {} })
           });
           const data = await res.json();
-          reply(data.output || 'Sem resposta.');
+          reply(data.output  'Sem resposta.');
         } catch {
           reply('Backend indisponível. Use os agentes diretos em /ia/.');
         }
@@ -282,11 +282,11 @@
       }
 
       const lower = text.toLowerCase();
-      if (lower.includes('roi') || lower.includes('cap rate') || lower.includes('investir')) {
+      if (lower.includes('roi')  lower.includes('cap rate')  lower.includes('investir')) {
         reply('Para análise de investimento, use o IA para Investidores: /ia/ia-investidores.html');
-      } else if (lower.includes('marketing') || lower.includes('anúncio')) {
+      } else if (lower.includes('marketing')  lower.includes('anúncio')) {
         reply('Para marketing, use o IA para Marketing: /ia/ia-marketing.html');
-      } else if (lower.includes('jurídico') || lower.includes('contrato')) {
+      } else if (lower.includes('jurídico')  lower.includes('contrato')) {
         reply('Para documentos, use o IA Jurídica: /ia/ia-juridica.html');
       } else {
         reply('Posso ajudar com ROI, marketing, jurídico e mais. Abra o agente direto para resultados completos.');

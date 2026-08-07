@@ -36,7 +36,7 @@
     <meta name="keywords" content="IA para Avaliação — Praia Digital, Praia Digital Home Central de IA Avaliação 📊 IA para Avaliação Estruture PTAM, parecer, estudos comparativos e relatórios com base em dados., imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
   <meta name="description" content="Praia Digital Home Central de IA Avaliação 📊 IA para Avaliação Estruture PTAM, parecer, estudos comparativos e relatórios com base em dados.">
   <meta charset="UTF-8">
-    ||
+    
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>IA para Avaliação — Praia Digital</title>
   <style>
@@ -250,17 +250,17 @@
 </footer>
 
   <script>
-    const fmt = v => 'R$ ' + Number(v||0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0});
+    const fmt = v => 'R$ ' + Number(v0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0});
     const baseByCity = {'praia-grande':780000,'santos':1250000,'guaruja':950000,'sao-vicente':720000,'itanhaem':880000,'mongagua':750000,'peruibe':920000,'ubatuba':1100000,'caraguatatuba':980000,'sao-sebastiao':1350000,'ilhabela':1150000,'bertioga':860000};
     const cityLabels = {'praia-grande':'Praia Grande','santos':'Santos','guaruja':'Guarujá','sao-vicente':'São Vicente','itanhaem':'Itanhaém','mongagua':'Mongaguá','peruibe':'Peruíbe','ubatuba':'Ubatuba','caraguatatuba':'Caraguatatuba','sao-sebastiao':'São Sebastião','ilhabela':'Ilhabela','bertioga':'Bertioga'};
 
     function runValuation(){
       const tipo = document.getElementById('valTipo').value;
       const cidade = document.getElementById('valCidade').value;
-      const area = Number(document.getElementById('valArea').value||0);
-      const precoInformado = Number(document.getElementById('valPreco').value||0);
+      const area = Number(document.getElementById('valArea').value0);
+      const precoInformado = Number(document.getElementById('valPreco').value0);
       const diferencial = document.getElementById('valDiferencial').value.trim();
-      const base = baseByCity[cidade]||780000;
+      const base = baseByCity[cidade]780000;
 
       let suggested = base;
       if(tipo==='apartamento') suggested += area * 1800;
@@ -269,9 +269,9 @@
       else if(tipo==='comercial') suggested += area * 2200;
       else if(tipo==='pousada') suggested += area * 1600;
 
-      if(diferencial.includes('mar') || diferencial.includes('frente')) suggested += 180000;
+      if(diferencial.includes('mar')  diferencial.includes('frente')) suggested += 180000;
       else if(diferencial.includes('piscina')) suggested += 120000;
-      else if(diferencial.includes('wi-fi') || diferencial.includes('wifi')) suggested += 15000;
+      else if(diferencial.includes('wi-fi')  diferencial.includes('wifi')) suggested += 15000;
 
       suggested = Math.round(suggested);
       const faixaMin = Math.round(suggested * 0.92);
@@ -284,9 +284,9 @@
       ];
 
       const ptam = `PTAM — PARECER TÉCNICO DE AVALIAÇÃO MERCADOLÓGICA
-Objeto: ${tipo} em ${cityLabels[cidade]||cidade}
-Área: ${area||'—'} m²
-Diferencial: ${diferencial||'—'}
+Objeto: ${tipo} em ${cityLabels[cidade]cidade}
+Área: ${area'—'} m²
+Diferencial: ${diferencial'—'}
 
 Valor base de referência: ${fmt(base)}
 Faixa sugerida: ${fmt(faixaMin)} a ${fmt(faixaMax)}

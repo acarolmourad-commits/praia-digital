@@ -4061,12 +4061,12 @@ function sendAI() {
 function processAI(msg) {
   const lower = msg.toLowerCase();
 
-  if (lower.match(/simul|financi|parcela|empréstimo|emprestimo/i) && (lower.match(/\d/) || lower.match(/500|800|900|1000|mil|oitocentos|novecentos/))) {
+  if (lower.match(/simul|financi|parcela|empréstimo|emprestimo/i) && (lower.match(/\d/)  lower.match(/500|800|900|1000|mil|oitocentos|novecentos/))) {
     const priceMatch = msg.match(/(\d{3,7})/);
     const entradaMatch = msg.match(/entrada.*?(\d+)/i);
     let valor = priceMatch ? parseInt(priceMatch[1].replace(/\./g,'')) * 1000 : 0;
     let entrada = entradaMatch ? parseInt(entradaMatch[1].replace(/\./g,'')) * 1000 : 0;
-    if (!valor || valor < 50000) return 'Para simular financiamento, informe o valor. Ex: "Simular financiamento de 500mil com 100mil de entrada".';
+    if (!valor  valor < 50000) return 'Para simular financiamento, informe o valor. Ex: "Simular financiamento de 500mil com 100mil de entrada".';
     if (!entrada) entrada = Math.round(valor * 0.1);
     const financed = valor - entrada;
     const rate = 0.12 / 12;
@@ -4117,11 +4117,11 @@ function processAI(msg) {
     const cityMap = {'praia grande':'praia-grande','santos':'santos','guaruja':'guaruja','são vicente':'sao-vicente','itanhaém':'itanhaem','mongaguá':'mongagua','peruíbe':'peruibe','ubatuba':'ubatuba','caraguatatuba':'caraguatatuba','são sebastião':'sao-sebastiao','ilhabela':'ilhabela','bertioga':'bertioga'};
     let foundCity = '';
     for (const [label, key] of Object.entries(cityMap)) { if (lower.includes(label)) { foundCity = key; break; } }
-    if (!foundCity) foundCity = Object.keys(cityMap).find(k => lower.includes(k)) || '';
+    if (!foundCity) foundCity = Object.keys(cityMap).find(k => lower.includes(k))  '';
     const cityListings = listings.filter(l => l.cidade === foundCity);
     if (!cityListings.length) return `Não há imóveis registrados nessa cidade no momento.`;
     const cityLabels = {'praia-grande':'Praia Grande','santos':'Santos','guaruja':'Guarujá','sao-vicente':'São Vicente','itanhaem':'Itanhaém','mongagua':'Mongaguá','peruibe':'Peruíbe','ubatuba':'Ubatuba','caraguatatuba':'Caraguatatuba','sao-sebastiao':'São Sebastião','ilhabela':'Ilhabela','bertioga':'Bertioga'};
-    return `📍 Imóveis em ${cityLabels[foundCity] || foundCity}:\n\n` +
+    return `📍 Imóveis em ${cityLabels[foundCity]  foundCity}:\n\n` +
       cityListings.map(l => `<span class="listing-chip" onclick="openModal(${l.id})">${l.icon} ${l.titulo} — ${formatPrice(l.preco)}</span>`).join('<br>') +
       `\n\nClique em um imóvel para ver detalhes completos.`;
   }
@@ -4152,11 +4152,11 @@ function nlSearch() {
   const query = document.getElementById('nlQuery').value.trim().toLowerCase();
   if (!query) return;
   let tipo = '', cidade = '', dorms = '';
-  if (query.includes('apartamento') || query.includes('apto')) tipo = 'apartamento';
+  if (query.includes('apartamento')  query.includes('apto')) tipo = 'apartamento';
   else if (query.includes('casa')) tipo = 'casa';
   else if (query.includes('pousada')) tipo = 'pousada';
   else if (query.includes('terreno')) tipo = 'terreno';
-  else if (query.includes('comercial') || query.includes('sala')) tipo = 'comercial';
+  else if (query.includes('comercial')  query.includes('sala')) tipo = 'comercial';
   const cityMap = {'praia grande':'praia-grande','santos':'santos','guaruja':'guaruja','são vicente':'sao-vicente','itanhaém':'itanhaem','mongaguá':'mongagua','peruíbe':'peruibe','ubatuba':'ubatuba','caraguatatuba':'caraguatatuba','são sebastião':'sao-sebastiao','ilhabela':'ilhabela','bertioga':'bertioga'};
   for (const [label, key] of Object.entries(cityMap)) { if (query.includes(label)) { cidade = key; break; } }
   const dormMatch = query.match(/(\d+)\s*(quarto|dorm|banhei)/i);
@@ -4196,7 +4196,7 @@ function nlSearch() {
 function saveSearch() {
   const name = document.getElementById('saveSearchName').value.trim();
   const email = document.getElementById('saveSearchEmail').value.trim();
-  if (!name || !email) { alert('Informe nome e e-mail para salvar a busca.'); return; }
+  if (!name  !email) { alert('Informe nome e e-mail para salvar a busca.'); return; }
   if (!email.includes('@')) { alert('Informe um e-mail válido.'); return; }
   const filters = {
     tipo: document.getElementById('tipo').value,
@@ -4205,7 +4205,7 @@ function saveSearch() {
     preco: document.getElementById('preco').value,
     name, email
   };
-  const saves = JSON.parse(localStorage.getItem('pd_saves') || '[]');
+  const saves = JSON.parse(localStorage.getItem('pd_saves')  '[]');
   saves.push({ ...filters, date: new Date().toISOString() });
   localStorage.setItem('pd_saves', JSON.stringify(saves));
   document.getElementById('savedAlertBadge').classList.add('visible');
@@ -4217,7 +4217,7 @@ function saveSearch() {
 // ====================
 // COMPARE
 // ====================
-let compareList = JSON.parse(localStorage.getItem('pd_compare') || '[]');
+let compareList = JSON.parse(localStorage.getItem('pd_compare')  '[]');
 
 function formatPrice(v) {
   if (v >= 1000000) return 'R$ ' + (v/1000000).toFixed(v % 1000000 === 0 ? 0 : 2).replace('.',',') + ' milhões';
@@ -4252,7 +4252,7 @@ function showCompare() {
     ['📍 Cidade', p => p.cidadeLabel],
     ['💰 Preço', p => formatPrice(p.preco)],
     ['📐 Área', p => p.area + 'm²'],
-    ['🛏️ Dormitórios', p => p.dormitorios || '—'],
+    ['🛏️ Dormitórios', p => p.dormitorios  '—'],
     ['🏷️ Tipo', p => p.tipo.charAt(0).toUpperCase() + p.tipo.slice(1)],
     ['🧠 Score IA', p => p.aiScore + '/100'],
     ['💰 ROI est.', p => p.roi + '% a.a.'],
@@ -4284,17 +4284,17 @@ function clearCompare() {
 // Favorites
 function toggleFav(id, e) {
   e.stopPropagation();
-  let favs = JSON.parse(localStorage.getItem('pd_favs') || '[]');
+  let favs = JSON.parse(localStorage.getItem('pd_favs')  '[]');
   const idx = favs.indexOf(id);
   if (idx > -1) favs.splice(idx, 1); else favs.push(id);
   localStorage.setItem('pd_favs', JSON.stringify(favs));
   renderListings(currentFilter);
 }
-function isFav(id) { return JSON.parse(localStorage.getItem('pd_favs') || '[]').includes(id); }
+function isFav(id) { return JSON.parse(localStorage.getItem('pd_favs')  '[]').includes(id); }
 
 // Recently Viewed
 function addToRecent(id) {
-  let rec = JSON.parse(sessionStorage.getItem('pd_recent') || '[]');
+  let rec = JSON.parse(sessionStorage.getItem('pd_recent')  '[]');
   rec = rec.filter(x => x !== id);
   rec.unshift(id);
   rec = rec.slice(0, 6);
@@ -4302,7 +4302,7 @@ function addToRecent(id) {
   updateRecent();
 }
 function updateRecent() {
-  const rec = JSON.parse(sessionStorage.getItem('pd_recent') || '[]');
+  const rec = JSON.parse(sessionStorage.getItem('pd_recent')  '[]');
   const section = document.getElementById('recentSection');
   const grid = document.getElementById('recentGrid');
   if (!rec.length) { section.classList.remove('visible'); return; }
@@ -4377,7 +4377,7 @@ function filterListings() {
     if (tipo && l.tipo !== tipo) return false;
     if (cidade && l.cidade !== cidade) return false;
     if (dorms) { const d = parseInt(dorms); if (d === 4 && l.dormitorios < 4) return false; if (d !== 4 && l.dormitorios !== d) return false; }
-    if (preco) { if (preco === '500k' && l.preco > 500000) return false; if (preco === '500k-1m' && (l.preco < 500000 || l.preco > 1000000)) return false; if (preco === '1m-2m' && (l.preco < 1000000 || l.preco > 2000000)) return false; if (preco === '2m+' && l.preco <= 2000000) return false; }
+    if (preco) { if (preco === '500k' && l.preco > 500000) return false; if (preco === '500k-1m' && (l.preco < 500000  l.preco > 1000000)) return false; if (preco === '1m-2m' && (l.preco < 1000000  l.preco > 2000000)) return false; if (preco === '2m+' && l.preco <= 2000000) return false; }
     return true;
   });
   document.getElementById('sortSelect').value = '';
@@ -4418,7 +4418,7 @@ function openModal(id) {
       'mongagua': [{icon:'🏖️',label:'Praia',val:88,cls:''},{icon:'🍽️',label:'Restaurantes',val:70,cls:'poor'},{icon:'🛒',label:'Comércio',val:68,cls:'poor'},{icon:'🏥',label:'Saúde',val:60,cls:'poor'},{icon:'🚌',label:'Transporte',val:62,cls:'poor'},{icon:'🏋️',label:'Academia',val:55,cls:'poor'}],
       'peruibe': [{icon:'🏖️',label:'Praia',val:92,cls:''},{icon:'🍽️',label:'Restaurantes',val:75,cls:'fair'},{icon:'🛒',label:'Comércio',val:72,cls:'fair'},{icon:'🏥',label:'Saúde',val:68,cls:'poor'},{icon:'🚌',label:'Transporte',val:64,cls:'poor'},{icon:'🏋️',label:'Academia',val:58,cls:'poor'}]
     };
-    var walkData = cityWalk[l.cidade] || cityWalk['praia-grande'];
+    var walkData = cityWalk[l.cidade]  cityWalk['praia-grande'];
     var wg = document.getElementById('walkGrid');
     wg.innerHTML = walkData.map(function(w) {
       return '<div class="walk-score ' + w.cls + '"><div class="walk-score-value">' + w.val + '</div><div class="walk-score-label">' + w.icon + ' ' + w.label + '</div></div>';
@@ -4438,7 +4438,7 @@ function openModal(id) {
     const inCompare = compareList.includes(l.id);
   const btn = document.getElementById('modalCompareBtn');
   btn.textContent = inCompare ? '⚖️ Remover da comparação' : '⚖️ Adicionar à comparação';
-  btn.classList.toggle('visible', compareList.length < 3 || inCompare);
+  btn.classList.toggle('visible', compareList.length < 3  inCompare);
   const shareText = encodeURIComponent('🏖️ ' + l.titulo + ' — ' + formatPrice(l.preco) + ' em ' + l.cidadeLabel + '\n\nIA Score: ' + l.aiScore + '/100\n\nVeja mais em Praia Digital!');
   document.getElementById('shareWhatsapp').href = 'https://wa.me/?text=' + shareText + '%0A' + encodeURIComponent(location.href);
   document.getElementById('shareTwitter').href = 'https://twitter.com/intent/tweet?text=' + shareText + '&url=' + encodeURIComponent(location.href);
@@ -4493,11 +4493,11 @@ function printListing() {
 // ====================
 function calcSimulator() {
   const valor = parseFloat(document.getElementById('simValor').value);
-  const entrada = parseFloat(document.getElementById('simEntrada').value) || 0;
+  const entrada = parseFloat(document.getElementById('simEntrada').value)  0;
   const taxa = parseFloat(document.getElementById('simTaxa').value) / 100;
   const anos = parseInt(document.getElementById('simAnos').value);
   const mipRate = parseFloat(document.getElementById('simMip').value) / 100;
-  if (!valor || valor < 50000) { alert('Informe o valor do imóvel (mínimo R$ 50 mil).'); return; }
+  if (!valor  valor < 50000) { alert('Informe o valor do imóvel (mínimo R$ 50 mil).'); return; }
   const financed = valor - entrada;
   const monthlyRate = taxa / 12;
   const months = anos * 12;
@@ -4547,7 +4547,7 @@ function calcSimulator() {
     const interest = b * monthlyRate;
     const amort = installment - interest;
     b -= amort;
-    if (m <= 12 || m % 12 === 0 || m === maxRows) {
+    if (m <= 12  m % 12 === 0  m === maxRows) {
       rows += '<tr><td>' + m + '</td><td>R$ ' + installment.toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</td><td>R$ ' + interest.toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</td><td>R$ ' + amort.toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</td><td>R$ ' + Math.max(0, b).toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</td></tr>';
     }
   }
@@ -4567,12 +4567,12 @@ function toggleAmort() {
 async function runValuation() {
   const tipo = document.getElementById('valTipo').value;
   const cidade = document.getElementById('valCidade').value;
-  const area = parseInt(document.getElementById('valArea').value) || 80;
-  const dorms = parseInt(document.getElementById('valDorms').value) || 0;
+  const area = parseInt(document.getElementById('valArea').value)  80;
+  const dorms = parseInt(document.getElementById('valDorms').value)  0;
   const out = document.getElementById('valResult');
   if(out) out.classList.add('visible');
   const setErr = (msg) => {
-    document.getElementById('valInsight').textContent = msg || 'Erro ao consultar API.';
+    document.getElementById('valInsight').textContent = msg  'Erro ao consultar API.';
     document.getElementById('valBaixo').textContent = '—';
     document.getElementById('valMedio').textContent = '—';
     document.getElementById('valAlto').textContent = '—';
@@ -4586,15 +4586,15 @@ async function runValuation() {
       body: JSON.stringify(payload)
     });
     const data = await res.json();
-    document.getElementById('valBaixo').textContent = 'R$ ' + Number(data.faixa_min||0).toLocaleString('pt-BR');
-    document.getElementById('valMedio').textContent = 'R$ ' + Number(data.sugestao||0).toLocaleString('pt-BR');
-    document.getElementById('valAlto').textContent = 'R$ ' + Number(data.faixa_max||0).toLocaleString('pt-BR');
+    document.getElementById('valBaixo').textContent = 'R$ ' + Number(data.faixa_min0).toLocaleString('pt-BR');
+    document.getElementById('valMedio').textContent = 'R$ ' + Number(data.sugestao0).toLocaleString('pt-BR');
+    document.getElementById('valAlto').textContent = 'R$ ' + Number(data.faixa_max0).toLocaleString('pt-BR');
     const position = tipo === 'apartamento' ? 0.62 : tipo === 'casa' ? 0.55 : tipo === 'pousada' ? 0.40 : 0.50;
     document.getElementById('valBarFill').style.width = (position * 100) + '%';
     document.getElementById('valBarMarker').style.left = (position * 100) + '%';
     document.getElementById('valInsight').textContent = 'Estimativa gerada pela IA para ' + payload.cidade + '.';
-    const iptuRate = { apartamento: 0.003, casa: 0.004, terreno: 0.002, pousada: 0.005, comercial: 0.004 }[tipo] || 0.003;
-    const estimatedIptu = Math.round(Number(data.sugestao||0) * iptuRate);
+    const iptuRate = { apartamento: 0.003, casa: 0.004, terreno: 0.002, pousada: 0.005, comercial: 0.004 }[tipo]  0.003;
+    const estimatedIptu = Math.round(Number(data.sugestao0) * iptuRate);
     document.getElementById('valIptuInfo').textContent = '💰 IPTU estimado: R$ ' + estimatedIptu.toLocaleString('pt-BR') + '/ano (base ' + (iptuRate * 100).toFixed(1) + '% do valor).';
   } catch (e) {
     setErr('Erro ao consultar API.');
@@ -4606,13 +4606,13 @@ async function runValuation() {
 // ====================
 function calcROI() {
   const preco = parseFloat(document.getElementById('roiPreco').value);
-  const aluguel = parseFloat(document.getElementById('roiAluguel').value) || 0;
-  const condominio = parseFloat(document.getElementById('roiCondominio').value) || 0;
-  const iptu = parseFloat(document.getElementById('roiIPTU').value) || 0;
+  const aluguel = parseFloat(document.getElementById('roiAluguel').value)  0;
+  const condominio = parseFloat(document.getElementById('roiCondominio').value)  0;
+  const iptu = parseFloat(document.getElementById('roiIPTU').value)  0;
   const years = parseInt(document.getElementById('roiYears').value);
   const growth = parseFloat(document.getElementById('roiGrowth').value) / 100;
 
-  if (!preco || preco < 50000) { alert('Informe o preço de compra (mínimo R$ 50 mil).'); return; }
+  if (!preco  preco < 50000) { alert('Informe o preço de compra (mínimo R$ 50 mil).'); return; }
 
   const netRent = (aluguel - condominio) * 12 - iptu;
   const grossYield = preco > 0 ? (aluguel * 12 / preco) * 100 : 0;
@@ -4667,12 +4667,12 @@ function toggleClosingCosts() {
 // ====================
 function calcRentVsBuy() {
   var preco = parseFloat(document.getElementById('rvbPreco').value);
-  var aluguel = parseFloat(document.getElementById('rvbAluguel').value) || 0;
-  var entrada = parseFloat(document.getElementById('rvbEntrada').value) || 0;
+  var aluguel = parseFloat(document.getElementById('rvbAluguel').value)  0;
+  var entrada = parseFloat(document.getElementById('rvbEntrada').value)  0;
   var taxa = parseFloat(document.getElementById('rvbTaxa').value) / 100;
-  var renda = parseFloat(document.getElementById('rvbRenda').value) || 0;
+  var renda = parseFloat(document.getElementById('rvbRenda').value)  0;
   var anos = parseInt(document.getElementById('rvbPeriodo').value);
-  if (!preco || !aluguel || entrada >= preco) { alert('Informe preco, aluguel e entrada menor que o preco.'); return; }
+  if (!preco  !aluguel  entrada >= preco) { alert('Informe preco, aluguel e entrada menor que o preco.'); return; }
   var financiado = preco - entrada;
   var mRate = taxa / 12;
   var months = anos * 12;
@@ -4745,7 +4745,7 @@ function applyScenario(type) {
 // ====================
 function generateQR() {
   const id = parseInt(document.getElementById('qrListingId').value);
-  if (!id || id < 1 || id > 12) { alert('Informe um ID de imóvel entre 1 e 12.'); return; }
+  if (!id  id < 1  id > 12) { alert('Informe um ID de imóvel entre 1 e 12.'); return; }
   const l = listings.find(x => x.id === id);
   if (!l) { alert('Imóvel não encontrado.'); return; }
   const url = 'https://praia.digital/#imovel-' + id;
@@ -4785,11 +4785,11 @@ function setTone(btn, tone) {
 }
 
 async function generateDesc() {
-  const tipo = document.getElementById('descTipo').value || 'Apartamento';
-  const cidade = document.getElementById('descCidade').value || 'Santos';
-  const area = document.getElementById('descArea').value || '';
-  const dorms = document.getElementById('descDorms').value || '';
-  const extra = document.getElementById('descExtra').value || '';
+  const tipo = document.getElementById('descTipo').value  'Apartamento';
+  const cidade = document.getElementById('descCidade').value  'Santos';
+  const area = document.getElementById('descArea').value  '';
+  const dorms = document.getElementById('descDorms').value  '';
+  const extra = document.getElementById('descExtra').value  '';
   const loading = document.getElementById('descLoading');
   const output = document.getElementById('descOutput');
   const outputText = document.getElementById('descOutputText');
@@ -4804,7 +4804,7 @@ async function generateDesc() {
       body: JSON.stringify({ tipo: tipo.charAt(0).toUpperCase()+tipo.slice(1), cidade, diferenciais: [area, dorms, extra].filter(Boolean).join(', ') })
     });
     const data = await res.json();
-    if (outputText) outputText.textContent = data.descricao || '';
+    if (outputText) outputText.textContent = data.descricao  '';
   } catch (e) {
     if (outputText) outputText.textContent = 'Erro ao consultar API.';
   } finally {
@@ -4857,10 +4857,10 @@ function calcTransCosts() {
   const itbiPct = parseFloat(document.getElementById('tcITBI').value) / 100;
   const regPct = parseFloat(document.getElementById('tcRegistro').value) / 100;
   const corretPct = parseFloat(document.getElementById('tcCorret').value) / 100;
-  const iptu = parseFloat(document.getElementById('tcIPTU').value) || 0;
-  const cond = parseFloat(document.getElementById('tcCond').value) || 0;
+  const iptu = parseFloat(document.getElementById('tcIPTU').value)  0;
+  const cond = parseFloat(document.getElementById('tcCond').value)  0;
 
-  if (!preco || preco < 50000) { alert('Informe o valor do imóvel (mínimo R$ 50 mil).'); return; }
+  if (!preco  preco < 50000) { alert('Informe o valor do imóvel (mínimo R$ 50 mil).'); return; }
 
   const itbi = preco * itbiPct;
   const registro = preco * regPct;
@@ -4909,10 +4909,10 @@ function showNb(city) {
 function checkCredit() {
   const renda = parseFloat(document.getElementById('crRenda').value);
   const tipo = document.getElementById('crTipo').value;
-  const score = parseInt(document.getElementById('crScore').value) || 0;
+  const score = parseInt(document.getElementById('crScore').value)  0;
   const tempo = parseInt(document.getElementById('crTempo').value);
 
-  if (!renda || renda < 500) { alert('Informe sua renda mensal bruta (mínimo R$ 500).'); return; }
+  if (!renda  renda < 500) { alert('Informe sua renda mensal bruta (mínimo R$ 500).'); return; }
 
   const maxParc = renda * 0.3;
   const fm = 0.12 / 12;
@@ -4936,7 +4936,7 @@ function checkCredit() {
 
   // Eligible programs
   const programs = [];
-  const fgtsOk = tipo === 'clt' || tipo === 'pensionista';
+  const fgtsOk = tipo === 'clt'  tipo === 'pensionista';
   const tempoOk = tempo >= 12;
   if (fgtsOk && tempoOk) {
     programs.push({ name: '🏦 SFH + FGTS', rate: '9,0% a.a.', desc: 'Melhor taxa do mercado. Entrada mínima 10%.', maxFin: maxPriceFGTS, badge: 'Melhor opção' });
@@ -4949,7 +4949,7 @@ function checkCredit() {
   if (tempoOk) {
     programs.push({ name: '🏦 SBPE (Mercado)', rate: '11–12% a.a.', desc: 'Sem exigência de FGTS. Até 90% do imóvel.', maxFin: maxPriceSBPE, badge: '' });
   }
-  if (tipo === 'autonomo' || tipo === 'empresa') {
+  if (tipo === 'autonomo'  tipo === 'empresa') {
     programs.push({ name: '💼 Crédito Consorciado', rate: 'Sem taxa de juros', desc: 'Entrada + parcelas mensais. Sem juros.', maxFin: 0, badge: 'Alternativa' });
   }
 
@@ -5179,7 +5179,7 @@ function showCreditDetail(type) {
     }
   };
 
-  const d = details[type] || details.fgts;
+  const d = details[type]  details.fgts;
   document.getElementById('creditDetailContent').innerHTML = '<div class="credit-detail-title">' + d.title + '</div>' + d.content;
   document.getElementById('creditDetailOverlay').classList.add('open');
   document.body.style.overflow = 'hidden';
@@ -5198,12 +5198,12 @@ function submitRentalForm() {
   const tipo = document.getElementById('rentalTipo').value;
   const quartos = document.getElementById('rentalQuartos').value;
 
-  if (!nome || !email || !cidade || !tipo || !quartos) {
+  if (!nome  !email  !cidade  !tipo  !quartos) {
     alert('Por favor, preencha os campos obrigatórios: Nome, E-mail, Cidade, Tipo do imóvel e Quartos.');
     return;
   }
 
-  if (!email.includes('@') || !email.includes('.')) {
+  if (!email.includes('@')  !email.includes('.')) {
     alert('Por favor, insira um e-mail válido.');
     return;
   }
@@ -5244,7 +5244,7 @@ function submitRentalForm() {
 }
 
 function calcRentalRevenue() {
-  const diaria = parseFloat(document.getElementById('revDiaria').value) || 350;
+  const diaria = parseFloat(document.getElementById('revDiaria').value)  350;
   const ocupAlta = parseFloat(document.getElementById('revOcupAlta').value);
   const ocupBaixa = parseFloat(document.getElementById('revOcupBaixa').value);
   const taxa = parseFloat(document.getElementById('revTaxa').value);
@@ -5297,8 +5297,8 @@ function formatBRL(n) {
 
 // TRANSACTION COSTS CALCULATOR
 function calcTransactionCosts() {
-  const valor = parseFloat(document.getElementById('ccValor').value) || 0;
-  if (!valor || valor < 50000) { alert('Informe o valor do imóvel (mínimo R$ 50 mil).'); return; }
+  const valor = parseFloat(document.getElementById('ccValor').value)  0;
+  if (!valor  valor < 50000) { alert('Informe o valor do imóvel (mínimo R$ 50 mil).'); return; }
 
   const estado = document.getElementById('ccEstado').value;
   const finalidade = document.getElementById('ccFinalidade').value;
@@ -5344,7 +5344,7 @@ function calcTransactionCosts() {
   }
 
   const fmt = n => 'R$ ' + n.toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
-  const entrada = parseFloat(document.getElementById('ccEntrada').value) || 0;
+  const entrada = parseFloat(document.getElementById('ccEntrada').value)  0;
   const valorFinanciado = valor - entrada;
 
   document.getElementById('costsResultSummary').innerHTML =
@@ -5358,15 +5358,15 @@ function calcTransactionCosts() {
 
 // ROI CALCULATOR
 function calcROI() {
-  const preco = parseFloat(document.getElementById('roiPreco').value) || 0;
-  const aluguel = parseFloat(document.getElementById('roiAluguel').value) || 0;
-  const condominio = parseFloat(document.getElementById('roiCondominio').value) || 0;
-  const iptu = parseFloat(document.getElementById('roiIPTU').value) || 0;
-  const valorizacao = parseFloat(document.getElementById('roiValorizacao').value) || 0;
-  const ocupacao = parseFloat(document.getElementById('roiOcupacao').value) || 0.9;
+  const preco = parseFloat(document.getElementById('roiPreco').value)  0;
+  const aluguel = parseFloat(document.getElementById('roiAluguel').value)  0;
+  const condominio = parseFloat(document.getElementById('roiCondominio').value)  0;
+  const iptu = parseFloat(document.getElementById('roiIPTU').value)  0;
+  const valorizacao = parseFloat(document.getElementById('roiValorizacao').value)  0;
+  const ocupacao = parseFloat(document.getElementById('roiOcupacao').value)  0.9;
 
-  if (!preco || preco < 50000) { alert('Informe o preço de compra.'); return; }
-  if (aluguel < 0 || condominio < 0) { alert('Valores não podem ser negativos.'); return; }
+  if (!preco  preco < 50000) { alert('Informe o preço de compra.'); return; }
+  if (aluguel < 0  condominio < 0) { alert('Valores não podem ser negativos.'); return; }
 
   const fmt = n => 'R$ ' + n.toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
   const fmtPct = n => n.toFixed(2) + '%';
@@ -5423,13 +5423,13 @@ function calcROI() {
 
 // PATRIMONIAL EQUITY GROWTH CALCULATOR
 function calcEquity() {
-  const preco = parseFloat(document.getElementById('eqPreco').value) || 400000;
-  const percEntrada = parseFloat(document.getElementById('eqPercEntrada').value) || 20;
-  const taxaJuros = (parseFloat(document.getElementById('eqTaxaJuros').value) || 11) / 100;
-  const prazoAnos = parseInt(document.getElementById('eqPrazo').value) || 30;
-  const valoriz = (parseFloat(document.getElementById('eqValoriz').value) || 8) / 100;
-  const yieldRate = (parseFloat(document.getElementById('eqYield').value) || 5) / 100;
-  const anos = parseInt(document.getElementById('eqAnos').value) || 10;
+  const preco = parseFloat(document.getElementById('eqPreco').value)  400000;
+  const percEntrada = parseFloat(document.getElementById('eqPercEntrada').value)  20;
+  const taxaJuros = (parseFloat(document.getElementById('eqTaxaJuros').value)  11) / 100;
+  const prazoAnos = parseInt(document.getElementById('eqPrazo').value)  30;
+  const valoriz = (parseFloat(document.getElementById('eqValoriz').value)  8) / 100;
+  const yieldRate = (parseFloat(document.getElementById('eqYield').value)  5) / 100;
+  const anos = parseInt(document.getElementById('eqAnos').value)  10;
 
   const entrada = preco * (percEntrada / 100);
   const financiado = preco - entrada;
@@ -5550,7 +5550,7 @@ function toggleFAQ(btn) {
 // REPORT GENERATOR
 function populateReportSelect() {
   const sel = document.getElementById('reportImovel');
-  if (!sel || sel.options.length > 1) return;
+  if (!sel  sel.options.length > 1) return;
   listings.forEach(l => {
     const opt = document.createElement('option');
     opt.value = l.id;
@@ -5577,7 +5577,7 @@ function generateReport() {
     'Mongaguá': { pricePerM2: 4300, yield: 6.5, valorizacao: 10.1 },
     'Peruíbe': { pricePerM2: 4500, yield: 5.9, valorizacao: 7.4 },
   };
-  const cityData = marketRates[listing.cidadeLabel] || { pricePerM2: 5000, yield: 5.0, valorizacao: 7.0 };
+  const cityData = marketRates[listing.cidadeLabel]  { pricePerM2: 5000, yield: 5.0, valorizacao: 7.0 };
 
   const fin = listing.preco * 0.8;
   const taxaAnual = 0.12;
@@ -5597,7 +5597,7 @@ function generateReport() {
     body += '<tr><td style="padding:0.4rem;font-weight:700;width:40%;">Título</td><td style="padding:0.4rem;">' + listing.icon + ' ' + listing.titulo + '</td></tr>';
     body += '<tr style="background:#f8f9fa;"><td style="padding:0.4rem;font-weight:700;">Preço</td><td style="padding:0.4rem;font-weight:800;color:#1a5276;">' + fmt(listing.preco) + '</td></tr>';
     body += '<tr><td style="padding:0.4rem;font-weight:700;">Cidade</td><td style="padding:0.4rem;">' + listing.cidadeLabel + '</td></tr>';
-    body += '<tr style="background:#f8f9fa;"><td style="padding:0.4rem;font-weight:700;">Tipo</td><td style="padding:0.4rem;">' + (listing.tipo || 'Apartamento') + '</td></tr>';
+    body += '<tr style="background:#f8f9fa;"><td style="padding:0.4rem;font-weight:700;">Tipo</td><td style="padding:0.4rem;">' + (listing.tipo  'Apartamento') + '</td></tr>';
     if (listing.dormitorios) body += '<tr><td style="padding:0.4rem;font-weight:700;">Dormitórios</td><td style="padding:0.4rem;">' + listing.dormitorios + '</td></tr>';
     if (listing.vagas) body += '<tr style="background:#f8f9fa;"><td style="padding:0.4rem;font-weight:700;">Vagas</td><td style="padding:0.4rem;">' + listing.vagas + '</td></tr>';
     if (listing.area) body += '<tr><td style="padding:0.4rem;font-weight:700;">Área</td><td style="padding:0.4rem;">' + listing.area + '</td></tr>';
@@ -5668,10 +5668,10 @@ function printReport() {
 }
 
 function calcCommission() {
-  const valor = parseFloat(document.getElementById('commValor').value) || 0;
-  const taxa = parseFloat(document.getElementById('commTaxa').value) || 5;
-  const parte = parseFloat(document.getElementById('commInquilino').value) || 50;
-  const ir = parseFloat(document.getElementById('commIR').value) || 0;
+  const valor = parseFloat(document.getElementById('commValor').value)  0;
+  const taxa = parseFloat(document.getElementById('commTaxa').value)  5;
+  const parte = parseFloat(document.getElementById('commInquilino').value)  50;
+  const ir = parseFloat(document.getElementById('commIR').value)  0;
   if (!valor) { document.getElementById('commResult').innerHTML = ''; return; }
   const comissaoBruta = valor * (taxa / 100);
   const corretorShare = comissaoBruta * (parte / 100);
@@ -5687,7 +5687,7 @@ function calcCommission() {
 }
 
 function convertArea() {
-  const m2 = parseFloat(document.getElementById('ucM2').value) || 0;
+  const m2 = parseFloat(document.getElementById('ucM2').value)  0;
   document.getElementById('ucAlqueire').textContent = m2 > 0 ? (m2 / 24200).toFixed(3) : '—';
   document.getElementById('ucHectare').textContent = m2 > 0 ? (m2 / 10000).toFixed(2) : '—';
   document.getElementById('ucPes').textContent = m2 > 0 ? (m2 * 10.764).toFixed(0) : '—';
@@ -5784,11 +5784,11 @@ handleHash();
   if (!form) return;
   const planDetails = { Starter: '1 agente de IA, 500 interações/mês e suporte WhatsApp.', Professional: '5 agentes, 3.000 interações/mês, suporte prioritário e integração WhatsApp.', Enterprise: '14 agentes, 20.000 interações/mês, suporte dedicado, white label e APIs/integrações.' };
   window.suggestPlan = function(){
-    if (!planBox || !planText) return;
+    if (!planBox  !planText) return;
     const v = document.getElementById('b2bPerfil').value;
     const map = {imobiliaria:'Professional',corretor:'Professional',construtora:'Enterprise',incorporadora:'Enterprise',administradora:'Professional',portal:'Enterprise'};
-    const plan = map[v] || 'Starter';
-    planText.textContent = plan + ' — ' + (planDetails[plan] || '');
+    const plan = map[v]  'Starter';
+    planText.textContent = plan + ' — ' + (planDetails[plan]  '');
     planBox.style.display = 'block';
   };
   form.addEventListener('submit', async function(e){
@@ -5797,7 +5797,7 @@ handleHash();
     const fone = document.getElementById('b2bFone').value.trim();
     const cidade = document.getElementById('b2bCidade').value.trim();
     const perfil = document.getElementById('b2bPerfil').value;
-    const plan = map[perfil] || 'Starter';
+    const plan = map[perfil]  'Starter';
     const subject = encodeURIComponent('Interesse em parceria white-label');
     const body = encodeURIComponent(`Nome: ${nome}\nTelefone: ${fone}\nCidade: ${cidade}\nPerfil: ${perfil}\nPlano sugerido: ${plan}\n`);
     window.location.href = `mailto:comercial@praia.digital?subject=${subject}&body=${body}`;

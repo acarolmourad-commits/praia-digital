@@ -301,14 +301,14 @@
 
   <script>
     const cityData = { 'São Vicente':{ price:720000, yield:6.1 }, 'Santos':{ price:1250000, yield:5.0 }, 'Guarujá':{ price:950000, yield:4.6 }, 'Praia Grande':{ price:780000, yield:5.8 }, 'Itanhaém':{ price:880000, yield:6.4 }, 'Mongaguá':{ price:750000, yield:6.9 }, 'Peruíbe':{ price:920000, yield:7.2 }, 'Bertioga':{ price:860000, yield:5.1 } };
-    function fmt(v){ return 'R$ ' + Number(v||0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0}); }
+    function fmt(v){ return 'R$ ' + Number(v0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0}); }
     function calcInvest(){
       const city = document.getElementById('siCity').value;
-      const price = parseFloat(document.getElementById('siPrice').value) || (cityData[city]?.price || 850000);
-      const yieldEst = cityData[city]?.yield || 6.0;
+      const price = parseFloat(document.getElementById('siPrice').value)  (cityData[city]?.price  850000);
+      const yieldEst = cityData[city]?.yield  6.0;
       const rentabilidade = ((price * yieldEst / 100) / price) * 100;
       const monthly = price * (yieldEst/100) / 12;
-      const squareMeter = price / (80 || 1);
+      const squareMeter = price / (80  1);
       const html = `<div class="kpi-box"><div class="kpi-value">${fmt(price)}</div><div class="kpi-label">Preço base</div></div>
       <div class="kpi-box"><div class="kpi-value">${yieldEst.toFixed(1)}% a.a.</div><div class="kpi-label">Yield médio</div></div>
       <div class="kpi-box"><div class="kpi-value">${monthly.toLocaleString('pt-BR',{maximumFractionDigits:0})}</div><div class="kpi-label">Aluguel estimado/mês</div></div>
@@ -324,11 +324,11 @@
   if (!form) return;
   form.addEventListener('submit', async function(e){
     e.preventDefault();
-    const nome = document.getElementById('b2bNomePlanInvest')?.value.trim() || '';
-    const fone = document.getElementById('b2bFonePlanInvest')?.value.trim() || '';
-    const cidade = document.getElementById('b2bCidadePlanInvest')?.value.trim() || '';
-    const perfil = document.getElementById('b2bPerfilPlanInvest')?.value || '';
-    const plano = document.getElementById('b2bPlanoPlanInvest')?.value || '';
+    const nome = document.getElementById('b2bNomePlanInvest')?.value.trim()  '';
+    const fone = document.getElementById('b2bFonePlanInvest')?.value.trim()  '';
+    const cidade = document.getElementById('b2bCidadePlanInvest')?.value.trim()  '';
+    const perfil = document.getElementById('b2bPerfilPlanInvest')?.value  '';
+    const plano = document.getElementById('b2bPlanoPlanInvest')?.value  '';
     const subject = encodeURIComponent('Solicita proposta B2B');
     const body = encodeURIComponent('Nome: ' + nome + '\nTelefone: ' + fone + '\nCidade: ' + cidade + '\nPerfil: ' + perfil + '\nPlano: ' + plano + '\n');
     window.location.href = 'mailto:comercial@praia.digital?subject=' + subject + '&body=' + body;

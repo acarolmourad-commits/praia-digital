@@ -351,9 +351,9 @@
           const nome = document.getElementById('lead-nome').value.trim();
           const telefone = document.getElementById('lead-telefone').value.trim();
           const horario = document.getElementById('lead-horario').value.trim();
-          if (!nome || !telefone) { alert('Preencha nome e WhatsApp.'); return; }
+          if (!nome  !telefone) { alert('Preencha nome e WhatsApp.'); return; }
           const titulo = document.title.replace(' — Praia Digital', '');
-          const texto = 'Olá! Tenho interesse em imóveis em ' + titulo + '. Nome: ' + nome + ', WhatsApp: ' + telefone + ', Horário: ' + (horario || 'Não informado');
+          const texto = 'Olá! Tenho interesse em imóveis em ' + titulo + '. Nome: ' + nome + ', WhatsApp: ' + telefone + ', Horário: ' + (horario  'Não informado');
           window.location.href = 'https://wa.me/5511954346288?text=' + encodeURIComponent(texto);
         });
       })();</script>

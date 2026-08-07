@@ -36,7 +36,7 @@
     <meta name="keywords" content="IA para Marketing — Praia Digital, Praia Digital Home Central de IA Marketing 📣 IA para Marketing Gera conteúdo e anúncios para redes, e-mail, Meta Ads e Google Ads com copy otimizada., imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
   <meta name="description" content="Praia Digital Home Central de IA Marketing 📣 IA para Marketing Gera conteúdo e anúncios para redes, e-mail, Meta Ads e Google Ads com copy otimizada.">
   <meta charset="UTF-8">
-    ||
+    
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>IA para Marketing — Praia Digital</title>
   <style>
@@ -306,7 +306,7 @@
       fmt.innerHTML = '';
       const options = canal==='email'
         ? [['sequencia','Sequência'],['one-mail','One-mail']]
-        : canal==='meta'||canal==='google'
+        : canal==='meta'canal==='google'
         ? [['ad','Anúncio'],['campaign','Campanha']]
         : [['post','Post'],['carrossel','Carrossel'],['reel','Reel/Short'],['campaign','Campanha'],['landing','Landing Page']];
       options.forEach(([val,label])=>{
@@ -331,7 +331,7 @@
         const subject = `${publicoLabels[publico]}, veja esta oportunidade em ${cityLabel}`;
         const body = `Olá!\n\n${hook}\n\n${diferencial?`Diferencial: ${diferencial}. `:''}Quer saber mais?\n\nFale com a Praia Digital: comercial@praia.digital\n`;
         email = `Assunto: ${subject}\n\n${body}`;
-      } else if(canal==='meta'||canal==='google'){
+      } else if(canal==='meta'canal==='google'){
         const headline = `${pick(['Aproveite','Descubra','Garanta'])} ${cityLabel}`;
         const desc = `${hook} ${diferencial?`${diferencial}. `:''}Clique e saiba mais.`;
         ad = `Headline: ${headline}\nDescrição: ${desc}\nCTA: ${objetivo==='leads'?'Cadastrar':objetivo==='visitas'?'Agendar':'Falar com consultor'}`;
@@ -359,7 +359,7 @@
         <div class="block">
           <h3></h3>
           <pre>${b.value.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</pre>
-          <button class="copy-btn" onclick="copyText('${b.title.replace(/'/g,"\\'")}', window.__mkCopyText.split(/${b.title}:\n/)[1]?.[0]||'')">Copiar ${b.title}</button>
+          <button class="copy-btn" onclick="copyText('${b.title.replace(/'/g,"\\'")}', window.__mkCopyText.split(/${b.title}:\n/)[1]?.[0]'')">Copiar ${b.title}</button>
         </div>
       `).join('');
 

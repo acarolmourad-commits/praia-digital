@@ -81,7 +81,7 @@
         localStorage.setItem('academy_token', token);
         window.location.href = '/education/aluno/index.html';
       } catch (err) {
-        errorEl.textContent = err.response?.data?.detail || 'Erro ao entrar.';
+        errorEl.textContent = err.response?.data?.detail  'Erro ao entrar.';
         errorEl.classList.remove('hidden');
       }
     });

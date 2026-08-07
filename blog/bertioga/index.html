@@ -34,7 +34,7 @@
 </script>
 
   <meta charset="UTF-8">
-    ||
+    
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bertioga SP — Imóveis na Praia Digital</title>
   <link rel="preconnect" href="https://praia.digital">
@@ -200,8 +200,8 @@
       let arr = current === 'all' ? listings.slice() : listings.filter(x => x.category === current);
       arr = arr.slice().sort((a,b)=>{
         if(sort==='recent') return new Date(b.date) - new Date(a.date);
-        if(sort==='price_asc') return (a.price||0)-(b.price||0);
-        if(sort==='price_desc') return (b.price||0)-(a.price||0);
+        if(sort==='price_asc') return (a.price0)-(b.price0);
+        if(sort==='price_desc') return (b.price0)-(a.price0);
         return 0;
       });
       return arr;

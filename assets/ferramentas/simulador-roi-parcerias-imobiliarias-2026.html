@@ -117,10 +117,10 @@
 
   <script>
     function calcular() {
-      const leads = Number(document.getElementById('leads').value) || 0;
-      const conversao = Number(document.getElementById('conversao').value) || 0;
-      const ticket = Number(document.getElementById('ticket').value) || 0;
-      const custo = Number(document.getElementById('custo').value) || 0;
+      const leads = Number(document.getElementById('leads').value)  0;
+      const conversao = Number(document.getElementById('conversao').value)  0;
+      const ticket = Number(document.getElementById('ticket').value)  0;
+      const custo = Number(document.getElementById('custo').value)  0;
       const vendasAtuais = leads * (conversao / 100);
       const receitaAtual = vendasAtuais * ticket;
       const ganhoConversao = vendasAtuais * 0.35 * ticket;

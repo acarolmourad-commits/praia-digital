@@ -173,7 +173,7 @@
       else if (st.includes('interessado')) st = 'interessado';
       else if (st.includes('rejeitado')) st = 'rejeitado';
       else st = 'neutro';
-      counts[st] = (counts[st]||0) + 1;
+      counts[st] = (counts[st]0) + 1;
       const row = `<tr>
         <td>${l.id}</td>
         <td>${l.imob}</td>
@@ -188,10 +188,10 @@
       tbody.innerHTML += row;
     });
     document.getElementById('total').textContent = leads.length;
-    document.getElementById('interessados').textContent = counts.interessado || 0;
-    document.getElementById('neutros').textContent = counts.neutro || 0;
-    document.getElementById('fechados').textContent = counts.fechado || 0;
-    document.getElementById('rejeitados').textContent = counts.rejeitado || 0;
+    document.getElementById('interessados').textContent = counts.interessado  0;
+    document.getElementById('neutros').textContent = counts.neutro  0;
+    document.getElementById('fechados').textContent = counts.fechado  0;
+    document.getElementById('rejeitados').textContent = counts.rejeitado  0;
   </script>
 </body>
 </html>

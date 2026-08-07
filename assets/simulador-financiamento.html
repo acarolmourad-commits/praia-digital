@@ -76,7 +76,7 @@ button{background:linear-gradient(90deg,#22d3ee,#4ade80);color:#04141f;font-weig
 function sim(){
   const V=+document.getElementById('v').value, E=+document.getElementById('e').value,
         j=+document.getElementById('j').value/100/12, n=+document.getElementById('a').value*12;
-  if(!V||V<=E){document.getElementById('err').textContent='Entrada deve ser menor que o valor.';return;}
+  if(!VV<=E){document.getElementById('err').textContent='Entrada deve ser menor que o valor.';return;}
   document.getElementById('err').textContent='';
   const P=V-E;
   const pmt = j===0 ? P/n : P*j/(1-Math.pow(1+j,-n));

@@ -288,7 +288,7 @@
             cur += ch;
           }
           cols.push(cur.trim());
-          const obj={}; header.forEach((h,i)=> obj[h]=cols[i]||'');
+          const obj={}; header.forEach((h,i)=> obj[h]=cols[i]'');
           return obj;
         });
       }catch(e){ return []; }
@@ -296,42 +296,42 @@
 
     function waLink(phone, text){
       const d = '55' + String(phone).replace(/\D/g,'');
-      const msg = encodeURIComponent(text || '');
+      const msg = encodeURIComponent(text  '');
       return 'https://wa.me/' + d + '?text=' + msg;
     }
 
     function priority(r){
-      const s = (r.status || '').toLowerCase();
-      if (s==='aguardando' || s==='pendente') return 1;
-      if (s==='respondido' || s==='interessado') return 2;
+      const s = (r.status  '').toLowerCase();
+      if (s==='aguardando'  s==='pendente') return 1;
+      if (s==='respondido'  s==='interessado') return 2;
       return 3;
     }
 
     function render(){
       Promise.all([loadCsv('metricas.csv')]).then(rowsets => {
-        metricsRows = rowsets[0] || [];
+        metricsRows = rowsets[0]  [];
         const rows = metricsRows;
         const sent = rows.length;
-        const pending = rows.filter(r => (r.status||'').toLowerCase().includes('aguardando')).length;
-        const replied = rows.filter(r => (r.status||'').toLowerCase().includes('respondido')).length;
-        const fu = rows.filter(r => (r.estagio||'').toLowerCase().includes('reengajamento')).length;
+        const pending = rows.filter(r => (r.status'').toLowerCase().includes('aguardando')).length;
+        const replied = rows.filter(r => (r.status'').toLowerCase().includes('respondido')).length;
+        const fu = rows.filter(r => (r.estagio'').toLowerCase().includes('reengajamento')).length;
 
         document.getElementById('m-sent').textContent = sent;
         document.getElementById('m-pending').textContent = pending;
         document.getElementById('m-replied').textContent = replied;
         document.getElementById('m-fu').textContent = fu;
 
-        const sorted = rows.slice().sort((a,b)=> (priority(a) - priority(b)) || (a.data||'').localeCompare(b.data||''));
+        const sorted = rows.slice().sort((a,b)=> (priority(a) - priority(b))  (a.data'').localeCompare(b.data''));
 
         const act = document.getElementById('actions');
         act.innerHTML = '';
         for(const r of sorted){
-          const status = r.status || 'aguardando';
+          const status = r.status  'aguardando';
           const label = status === 'aguardando' ? 'Enviar WhatsApp' : status === 'respondido' ? 'Responder' : 'Follow-up';
           const msg = `Olá, ${r.nome}! Tudo bem? Você demonstrou interesse em ${r.tipo} em ${r.cidade}. Quer que eu envie 3 opções compatíveis?`;
           const link = waLink(r.telefone, msg);
           const tr = document.createElement('tr');
-          tr.innerHTML = `<td>${r.nome||''}</td><td>${r.cidade||''}</td><td>${r.tipo||''}</td><td><span class="badge">${r.estagio||''}</span></td><td><span class="severity-${status==='aguardando'?'warn':'ok'}">${status}</span></td><td>${r.data||''}</td><td><a class="btn-whatsapp" href="${link}" target="_blank" rel="noopener">${label}</a></td>`;
+          tr.innerHTML = `<td>${r.nome''}</td><td>${r.cidade''}</td><td>${r.tipo''}</td><td><span class="badge">${r.estagio''}</span></td><td><span class="severity-${status==='aguardando'?'warn':'ok'}">${status}</span></td><td>${r.data''}</td><td><a class="btn-whatsapp" href="${link}" target="_blank" rel="noopener">${label}</a></td>`;
           act.appendChild(tr);
         }
 
@@ -339,9 +339,9 @@
         met.innerHTML = '';
         for(const r of rows){
           const statuses = ['aguardando','respondido','interessado','follow-up'];
-          const opts = statuses.map(s => `<option value="${s}" ${((r.status||'').toLowerCase()===s)?'selected':''}>${s}</option>`).join('');
+          const opts = statuses.map(s => `<option value="${s}" ${((r.status'').toLowerCase()===s)?'selected':''}>${s}</option>`).join('');
           const tr = document.createElement('tr');
-          tr.innerHTML = `<td>${r.data||''}</td><td>${r.nome||''}</td><td>${r.telefone||''}</td><td>${r.cidade||''}</td><td>${r.tipo||''}</td><td>${r.canal||''}</td><td><span class="badge">${r.estagio||''}</span></td><td>${r.acao||''}</td><td><select class="status-edit" data-idx="${rows.indexOf(r)}">${opts}</select></td><td><input data-idx="${rows.indexOf(r)}" data-field="observacoes" value="${(r.observacoes||'').replace(/"/g,'&quot;')}" style="width:160px;padding:6px;border:1px solid #e5e7eb;border-radius:8px;"></td><td><button class="btn-save quick-followup" data-idx="${rows.indexOf(r)}">Follow-up enviado</button></td>`;
+          tr.innerHTML = `<td>${r.data''}</td><td>${r.nome''}</td><td>${r.telefone''}</td><td>${r.cidade''}</td><td>${r.tipo''}</td><td>${r.canal''}</td><td><span class="badge">${r.estagio''}</span></td><td>${r.acao''}</td><td><select class="status-edit" data-idx="${rows.indexOf(r)}">${opts}</select></td><td><input data-idx="${rows.indexOf(r)}" data-field="observacoes" value="${(r.observacoes'').replace(/"/g,'&quot;')}" style="width:160px;padding:6px;border:1px solid #e5e7eb;border-radius:8px;"></td><td><button class="btn-save quick-followup" data-idx="${rows.indexOf(r)}">Follow-up enviado</button></td>`;
           met.appendChild(tr);
         }
 
@@ -354,7 +354,7 @@
               else metricsRows[idx].status = el.value;
             }
           });
-          const header = Object.keys(metricsRows[0] || {}).join(',') + '\n';
+          const header = Object.keys(metricsRows[0]  {}).join(',') + '\n';
           const body = metricsRows.map(r => Object.values(r).map(v => `"${String(v).replace(/"/g,'""')}"`).join(',')).join('\n');
           const blob = new Blob([header + body], {type: 'text/csv'});
           const url = URL.createObjectURL(blob);
@@ -369,7 +369,7 @@
           const idx = parseInt(e.target.getAttribute('data-idx'), 10);
           if (!isNaN(idx) && metricsRows[idx]) {
             metricsRows[idx].status = 'follow-up';
-            metricsRows[idx].observacoes = (metricsRows[idx].observacoes || '') + ' | Follow-up enviado em ' + new Date().toLocaleString('pt-BR');
+            metricsRows[idx].observacoes = (metricsRows[idx].observacoes  '') + ' | Follow-up enviado em ' + new Date().toLocaleString('pt-BR');
             const sel = document.querySelector(`#metrics select[data-idx="${idx}"]`);
             if (sel) sel.value = 'follow-up';
             const inp = document.querySelector(`#metrics input[data-idx="${idx}"][data-field="observacoes"]`);
@@ -384,15 +384,15 @@
       const rows = await loadCsv('do-dia/' + new Date().toISOString().slice(0,10) + '/sequencia.csv');
       const tbody = document.getElementById('priorizados');
       tbody.innerHTML='';
-      const sorted = rows.slice().sort((a,b)=> (parseInt(b.score||0)-parseInt(a.score||0)) || (a.acao_sugerida||'').localeCompare(b.acao_sugerida||'') || (a.nome||'').localeCompare(b.nome||''));
+      const sorted = rows.slice().sort((a,b)=> (parseInt(b.score0)-parseInt(a.score0))  (a.acao_sugerida'').localeCompare(b.acao_sugerida'')  (a.nome'').localeCompare(b.nome''));
       for(const r of sorted){
-        const score = parseInt(r.score||0,10);
-        const cls = (r.classificacao||'').toLowerCase();
+        const score = parseInt(r.score0,10);
+        const cls = (r.classificacao'').toLowerCase();
         const badgeColor = cls==='alto'?'color:#15803d;background:#dcfce7':cls==='medio'?'color:#b45309;background:#fef3c7':'color:#6b7280;background:#f3f4f6';
         const tr=document.createElement('tr');
         const msg = `Olá, ${r.nome}! Tudo bem? Você demonstrou interesse em ${r.tipo_interesse} em ${r.cidade_interesse}. Quer que eu envie 3 opções compatíveis?`;
         const link = waLink(r.telefone, msg);
-        tr.innerHTML=`<td>${r.ordem||''}</td><td>${r.nome||''}</td><td>${r.cidade_interesse||''}</td><td>${r.tipo_interesse||''}</td><td><span class="badge">${r.estagio||''}</span></td><td>${score}</td><td><span style="display:inline-block;padding:4px 8px;border-radius:999px;font-size:12px;${badgeColor}">${cls||'-'}</span></td><td>${r.janela_contato||''}</td><td>${r.acao_sugerida||''}</td><td><a class="btn-whatsapp" href="${link}" target="_blank" rel="noopener">WhatsApp</a></td>`;
+        tr.innerHTML=`<td>${r.ordem''}</td><td>${r.nome''}</td><td>${r.cidade_interesse''}</td><td>${r.tipo_interesse''}</td><td><span class="badge">${r.estagio''}</span></td><td>${score}</td><td><span style="display:inline-block;padding:4px 8px;border-radius:999px;font-size:12px;${badgeColor}">${cls'-'}</span></td><td>${r.janela_contato''}</td><td>${r.acao_sugerida''}</td><td><a class="btn-whatsapp" href="${link}" target="_blank" rel="noopener">WhatsApp</a></td>`;
         tbody.appendChild(tr);
       }
     }
@@ -401,10 +401,10 @@
     loadPrioritized();
 
     document.getElementById('copy-whatsapp-summary').onclick = async () => {
-      const sent = parseInt(document.getElementById('m-sent').textContent || '0', 10);
-      const pending = parseInt(document.getElementById('m-pending').textContent || '0', 10);
-      const replied = parseInt(document.getElementById('m-replied').textContent || '0', 10);
-      const fu = parseInt(document.getElementById('m-fu').textContent || '0', 10);
+      const sent = parseInt(document.getElementById('m-sent').textContent  '0', 10);
+      const pending = parseInt(document.getElementById('m-pending').textContent  '0', 10);
+      const replied = parseInt(document.getElementById('m-replied').textContent  '0', 10);
+      const fu = parseInt(document.getElementById('m-fu').textContent  '0', 10);
       const text = `📊 Litoral Prime — Resumo do dia\n\n✅ Enviados: ${sent}\n⏳ Aguardando: ${pending}\n💬 Respondidos: ${replied}\n🔄 Follow-up: ${fu}\n\nAcesse o briefing: https://praia.digital/docs/briefing-diario.html`;
       try {
         await navigator.clipboard.writeText(text);

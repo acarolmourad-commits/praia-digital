@@ -55,10 +55,10 @@
 const BASE = {"ap":[180,55,16],"casa":[320,50,15],"kit":[120,60,18],"cobe":[450,45,13]};
 function calcular(){
   const tipo=document.getElementById('tipo').value;
-  let diaria=parseFloat(document.getElementById('diaria').value)||BASE[tipo][0];
-  let ocup=parseFloat(document.getElementById('ocup').value)||BASE[tipo][1];
-  let noites=parseFloat(document.getElementById('noites').value)||BASE[tipo][2];
-  const comissao=parseFloat(document.getElementById('comissao').value)||20;
+  let diaria=parseFloat(document.getElementById('diaria').value)BASE[tipo][0];
+  let ocup=parseFloat(document.getElementById('ocup').value)BASE[tipo][1];
+  let noites=parseFloat(document.getElementById('noites').value)BASE[tipo][2];
+  const comissao=parseFloat(document.getElementById('comissao').value)20;
   const brutasAtual = diaria*noites;                       // sem gestao
   const diariaNova = diaria*1.28;                          // +28% precificacao dinamica
   const noitesNovas = Math.round(noites*1.12);             // +12% ocupacao

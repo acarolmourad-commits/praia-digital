@@ -163,11 +163,11 @@
       e.preventDefault();
       var data={
         name: document.getElementById('name').value.trim(),
-        email: document.getElementById('email').value.trim()||null,
-        phone: document.getElementById('phone').value.trim()||null,
-        city: document.getElementById('city').value||null,
-        source: document.getElementById('source').value||null,
-        magnet: document.getElementById('magnet').value||null
+        email: document.getElementById('email').value.trim()null,
+        phone: document.getElementById('phone').value.trim()null,
+        city: document.getElementById('city').valuenull,
+        source: document.getElementById('source').valuenull,
+        magnet: document.getElementById('magnet').valuenull
       };
       fetch('https://academy.praia.digital/leads', {
         method:'POST',

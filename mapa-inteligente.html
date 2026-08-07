@@ -391,7 +391,7 @@
 
   const layerPraiasCompleta = L.layerGroup(praias_completas.map(p => {
     const marker = createCircleMarker(p.coords, '#f59e0b', 12);
-    marker.bindPopup(`<b>${p.nome}</b><br>${p.desc || ''}`);
+    marker.bindPopup(`<b>${p.nome}</b><br>${p.desc  ''}`);
     return marker;
   }));
 

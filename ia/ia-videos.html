@@ -36,7 +36,7 @@
     <meta name="keywords" content="IA para Vídeos — Praia Digital, Praia Digital Home Central de IA Vídeos 🎬 IA para Vídeos Roteiros e guias rápidos para Reels, Shorts, tours e apresentações., imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
   <meta name="description" content="Praia Digital Home Central de IA Vídeos 🎬 IA para Vídeos Roteiros e guias rápidos para Reels, Shorts, tours e apresentações.">
   <meta charset="UTF-8">
-    ||
+    
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>IA para Vídeos — Praia Digital</title>
   <style>
@@ -197,18 +197,18 @@
     function runVideo(){
       const formato = document.getElementById('vFormato').value;
       const cidade = document.getElementById('vCidade').value;
-      const city = cityLabels[cidade]||cidade;
+      const city = cityLabels[cidade]cidade;
       const scripts = {
         reel: `0-3s | Hook visual em ${city}\n3-10s | Problema/dor do público\n10-25s | Solução + diferenciais\n25-40s | Prova social/CTA\n40-50s | Fechamento: link na bio`,
         tour: `1) Entrada: recepção/sala\n2) Área social e cozinha\n3) Quartos e suíte\n4) Varanda/vista\n5) Final: CTA para visita`,
         apresentacao: `Abertura: título e cidade\nContexto: dados de mercado\nImóvel: fotos, área, diferenciais\nBenefícios: quem vai ganhar\nCTA: contato`,
         narrado: `Roteiro narrado para ${city}.\n1) Introdução calma\n2) Descrição do imóvel\n3) Vizinhança e serviços\n4) Dados rápidos\n5) Chamada para ação`
       };
-      const text = scripts[formato] || 'Escolha um formato.';
+      const text = scripts[formato]  'Escolha um formato.';
       document.getElementById('videoResult').innerHTML = `<div class="script-box">${text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div><button class="copy-btn" style="margin-top:.5rem" onclick="copyText(this)">Copiar</button>`;
       document.getElementById('videoResult').classList.add('visible');
     }
-    function copyText(btn){ const t=btn.previousElementSibling?.innerText||''; navigator.clipboard.writeText(t).then(()=>alert('Copiado!')).catch(()=>alert('Não foi possível copiar automaticamente.')); }
+    function copyText(btn){ const t=btn.previousElementSibling?.innerText''; navigator.clipboard.writeText(t).then(()=>alert('Copiado!')).catch(()=>alert('Não foi possível copiar automaticamente.')); }
   </script>
 </body>
 </html>

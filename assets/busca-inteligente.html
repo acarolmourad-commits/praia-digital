@@ -92,7 +92,7 @@ async function init(){
   const [rc,ry]=await Promise.all([fetch(CSV_URL),fetch(YIELD_URL)]);
   const tc=await rc.text();const yj=await ry.json();
   IMOVEIS=parseCSV(tc);
-  (yj.imovel||[]).forEach(x=>YIELD_MAP[x.id]=x);
+  (yj.imovel[]).forEach(x=>YIELD_MAP[x.id]=x);
   const cids=[...new Set(IMOVEIS.map(x=>x.cidade))].sort();
   document.getElementById('cidade').insertAdjacentHTML('beforeend',cids.map(c=>`<option>${c}</option>`).join(''));
   document.getElementById('load').style.display='none';
@@ -102,13 +102,13 @@ async function init(){
 function tipoMatch(csvTipo, filtro){
  if(!filtro)return true;
  const m={"apartamento":["apartamento","studio","loft","flat"],"casa":["casa"],"cobertura":["cobertura"],"kitnet":["kitnet"]};
- return (m[filtro]||[]).some(x=>csvTipo.toLowerCase().includes(x));
+ return (m[filtro][]).some(x=>csvTipo.toLowerCase().includes(x));
 }
 function buscar(){
  const c=document.getElementById('cidade').value,t=document.getElementById('tipo').value,
        q=document.getElementById('q').value,f=document.getElementById('fin').value,
        p=document.getElementById('preco').value,s=document.getElementById('sort').value;
- let r=IMOVEIS.filter(x=>(!c||x.cidade===c)&&tipoMatch(x.tipo,t)&&(!q||x.dormitorios===q)&&(!p||+x.preco<=+p));
+ let r=IMOVEIS.filter(x=>(!cx.cidade===c)&&tipoMatch(x.tipo,t)&&(!qx.dormitorios===q)&&(!p+x.preco<=+p));
  if(s==='preco')r.sort((a,b)=>a.preco-b.preco);
  if(s==='preco_desc')r.sort((a,b)=>b.preco-a.preco);
  if(s==='dorm')r.sort((a,b)=>b.dormitorios-a.dormitorios);

@@ -80,7 +80,7 @@
 </script>
 
   <meta charset="UTF-8">
-    ||
+    
 <link rel="preload" as="image" href="https://praia.digital/img/it-casa-terrea.webp" type="image/jpeg" fetchpriority="high">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Imoveis Venda em Itanhaém — Praia Digital</title>
@@ -276,9 +276,9 @@
           const nome = document.getElementById('lead-nome').value.trim();
           const telefone = document.getElementById('lead-telefone').value.trim();
           const horario = document.getElementById('lead-horario').value.trim();
-          if (!nome || !telefone) { alert('Preencha nome e WhatsApp.'); return; }
+          if (!nome  !telefone) { alert('Preencha nome e WhatsApp.'); return; }
           const titulo = document.title.replace(' — Praia Digital', '');
-          const texto = 'Olá! Tenho interesse em imóveis em ' + titulo + '. Nome: ' + nome + ', WhatsApp: ' + telefone + ', Horário: ' + (horario || 'Não informado');
+          const texto = 'Olá! Tenho interesse em imóveis em ' + titulo + '. Nome: ' + nome + ', WhatsApp: ' + telefone + ', Horário: ' + (horario  'Não informado');
           window.location.href = 'https://wa.me/5511954346288?text=' + encodeURIComponent(texto);
         });
       })();</script>

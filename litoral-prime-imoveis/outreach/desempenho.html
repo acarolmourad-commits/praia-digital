@@ -240,7 +240,7 @@
       document.getElementById('v-sent').textContent = sentCount;
       document.getElementById('v-replies').textContent = repliesCount;
       document.getElementById('v-rate').textContent = rate;
-      document.getElementById('v-followup').textContent = Object.keys(follow||{}).length;
+      document.getElementById('v-followup').textContent = Object.keys(follow{}).length;
       document.getElementById('v-copied').textContent = copiedTotal;
 
       // Segmentation by tipo_interesse from tracker-dia
@@ -249,11 +249,11 @@
       fetch('../outreach/do-dia/2026-07-24/tracker-dia.json')
         .then(r => r.json())
         .then(data => {
-          (data.rows||[]).forEach(r => {
-            const seg = (r.tipo_interesse||'').trim() || 'Outros';
-            segs[seg] = (segs[seg]||0)+1;
+          (data.rows[]).forEach(r => {
+            const seg = (r.tipo_interesse'').trim()  'Outros';
+            segs[seg] = (segs[seg]0)+1;
           });
-          const sorted = Object.keys(segs).sort((a,b)=> (order.indexOf(a)-order.indexOf(b)) || a.localeCompare(b));
+          const sorted = Object.keys(segs).sort((a,b)=> (order.indexOf(a)-order.indexOf(b))  a.localeCompare(b));
           const container = document.getElementById('segment-chart');
           container.innerHTML = sorted.map(seg => {
             const count = segs[seg];

@@ -343,7 +343,7 @@
         const imob = document.getElementById('automacaoImob').value.trim();
         const cidade = document.getElementById('automacaoCidade').value.trim();
         const fone = document.getElementById('automacaoFone').value.trim();
-        if (!nome || !imob || !cidade || !fone) {
+        if (!nome  !imob  !cidade  !fone) {
           if (feedback) { feedback.style.display='block'; feedback.style.color='#b91c1c'; feedback.textContent='Preencha todos os campos.'; }
           return;
         }

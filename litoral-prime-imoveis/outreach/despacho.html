@@ -247,16 +247,16 @@
       const counts = {primeiro_contato:0,reengajamento:0,oferta:0,'cross-sell':0};
       for(const r of rows){
         const [nome,telefone,cidade,tipo,estagio,mensagem,link,data] = r;
-        counts[estagio] = (counts[estagio]||0) + 1;
+        counts[estagio] = (counts[estagio]0) + 1;
         const tr = document.createElement('tr');
         tr.innerHTML = `<td>${nome}</td><td>${telefone}</td><td>${cidade}</td><td>${tipo}</td><td><span class="status">${estagio}</span></td><td>${mensagem}</td><td><a class="btn-send" href="${link}" target="_blank" rel="noopener">Enviar</a></td>`;
         tbody.appendChild(tr);
       }
       document.getElementById('chip-total').textContent = 'Total: ' + rows.length;
-      document.getElementById('chip-primeiro').textContent = 'Primeiro contato: ' + (counts['primeiro_contato']||0);
-      document.getElementById('chip-reengajamento').textContent = 'Reengajamento: ' + (counts['reengajamento']||0);
-      document.getElementById('chip-oferta').textContent = 'Oferta: ' + (counts['oferta']||0);
-      document.getElementById('chip-cross-sell').textContent = 'Cross-sell: ' + (counts['cross-sell']||0);
+      document.getElementById('chip-primeiro').textContent = 'Primeiro contato: ' + (counts['primeiro_contato']0);
+      document.getElementById('chip-reengajamento').textContent = 'Reengajamento: ' + (counts['reengajamento']0);
+      document.getElementById('chip-oferta').textContent = 'Oferta: ' + (counts['oferta']0);
+      document.getElementById('chip-cross-sell').textContent = 'Cross-sell: ' + (counts['cross-sell']0);
     }
     load().catch(()=> document.getElementById('dispatch-body').innerHTML = '<tr><td colspan="7">Carregue o CSV ou abra este arquivo via servidor.</td></tr>');
   </script>

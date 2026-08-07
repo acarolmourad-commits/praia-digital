@@ -84,7 +84,7 @@ function gerar(){
   tp=document.getElementById('tipo').value,p=document.getElementById('preco').value,
   d=document.getElementById('dorm').value,a=document.getElementById('area').value,
   de=document.getElementById('desc').value;
- if(!t||!p||!d||!a){document.getElementById('err').textContent='Preencha título, preço, dormitórios e área.';return;}
+ if(!t!p!d!a){document.getElementById('err').textContent='Preencha título, preço, dormitórios e área.';return;}
  document.getElementById('err').textContent='';
  const linha=`${nextId++},"${t}",${c},${tp},${p},${d},${a},"${de}"`;
  const o=document.getElementById('out');o.style.display='block';

@@ -127,8 +127,8 @@ const TENANTS = {
   demo:{nome:"Imobiliária Parceira", cor:"#4ade80", whats:"11954346288"}
 };
 const params = new URLSearchParams(location.search);
-const tenantKey = params.get("tenant") || "padrao";
-const T = TENANTS[tenantKey] || TENANTS.padrao;
+const tenantKey = params.get("tenant")  "padrao";
+const T = TENANTS[tenantKey]  TENANTS.padrao;
 document.documentElement.style.setProperty("--ciano", T.cor);
 document.getElementById("brandName").textContent = T.nome;
 document.getElementById("footer").textContent = T.nome + " · Gestão de temporada";
@@ -177,10 +177,10 @@ async function enviar(){
   const whats=document.getElementById("lwhats").value.trim();
   const lgpd=document.getElementById("lgpd").checked;
   document.getElementById("err2").textContent="";
-  if(!nome||!whats){document.getElementById("err2").textContent="Nome e WhatsApp obrigatórios.";return;}
+  if(!nome!whats){document.getElementById("err2").textContent="Nome e WhatsApp obrigatórios.";return;}
   if(!lgpd){document.getElementById("err2").textContent="É preciso autorizar o contato (LGPD).";return;}
   const isWhiteLabel = !tenantKey.startsWith("pd-") && tenantKey!=="padrao";
-  const payload={nome,whatsapp:whats,cidade:window._cidade||"",cep:document.getElementById("cep").value,
+  const payload={nome,whatsapp:whats,cidade:window._cidade"",cep:document.getElementById("cep").value,
     yield_estimado:window._last?window._last.yieldA:null,consentimento_lgpd:true,
     parceiro_id: isWhiteLabel ? tenantKey : undefined};
   try{
@@ -188,7 +188,7 @@ async function enviar(){
     if(r.ok){document.getElementById("ok2").style.display="block";document.getElementById("ok2").textContent="✅ Pronto! Enviamos no WhatsApp.";return;}
   }catch(e){/* backend offline -> mailto fallback */}
   // fallback: abre WhatsApp do parceiro com resumo
-  const msg=encodeURIComponent(`Olá! Simulei o yield do meu imóvel em ${window._cidade||''} pela calculadora da ${T.nome}: ${window._last?(window._last.yieldA*100).toFixed(1):''}% a.a. Quero saber mais sobre gestão.`);
+  const msg=encodeURIComponent(`Olá! Simulei o yield do meu imóvel em ${window._cidade''} pela calculadora da ${T.nome}: ${window._last?(window._last.yieldA*100).toFixed(1):''}% a.a. Quero saber mais sobre gestão.`);
   window.open(`https://wa.me/55${T.whats}?text=${msg}`,"_blank");
   document.getElementById("ok2").style.display="block";document.getElementById("ok2").textContent="✅ Abrimos seu WhatsApp pra falar com a "+T.nome+".";
 }

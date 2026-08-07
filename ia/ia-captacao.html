@@ -36,7 +36,7 @@
     <meta name="keywords" content="IA para Captação — Praia Digital, Praia Digital Home Central de IA Captação 🎯 IA para Captação Análise rápida de potencial, preço, argumentos e plano de captação., imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
   <meta name="description" content="Praia Digital Home Central de IA Captação 🎯 IA para Captação Análise rápida de potencial, preço, argumentos e plano de captação.">
   <meta charset="UTF-8">
-    ||
+    
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>IA para Captação — Praia Digital</title>
   <style>
@@ -273,16 +273,16 @@
     };
     const cityYield = {'praia-grande':5.8,'santos':5.0,'guaruja':4.6,'sao-vicente':6.1,'itanhaem':6.4,'mongagua':6.9,'peruibe':7.2,'ubatuba':5.4,'caraguatatuba':5.9,'sao-sebastiao':4.9,'ilhabela':4.4,'bertioga':5.1};
 
-    function fmt(v){ return 'R$ ' + Number(v||0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0}); }
+    function fmt(v){ return 'R$ ' + Number(v0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0}); }
 
     function runCapture(){
       const tipo = document.getElementById('capTipo').value;
       const cidade = document.getElementById('capCidade').value;
-      const area = Number(document.getElementById('capArea').value||0);
-      const quartos = Number(document.getElementById('capQuartos').value||0);
+      const area = Number(document.getElementById('capArea').value0);
+      const quartos = Number(document.getElementById('capQuartos').value0);
       const diferencial = document.getElementById('capDiferencial').value.trim();
-      const precoPedido = Number(document.getElementById('capPreco').value||0);
-      const base = priceByCity[cidade] || priceByCity['praia-grande'];
+      const precoPedido = Number(document.getElementById('capPreco').value0);
+      const base = priceByCity[cidade]  priceByCity['praia-grande'];
 
       let suggested = base.base;
       if(tipo==='apartamento') suggested += area * 1800 + quartos * 25000;
@@ -291,14 +291,14 @@
       else if(tipo==='comercial') suggested += area * 2200;
       else if(tipo==='pousada') suggested += area * 1600 + quartos * 18000;
 
-      if(diferencial.includes('mar') || diferencial.includes('frente')) suggested += 180000;
+      if(diferencial.includes('mar')  diferencial.includes('frente')) suggested += 180000;
       else if(diferencial.includes('piscina')) suggested += 120000;
-      else if(diferencial.includes('wi-fi') || diferencial.includes('wifi')) suggested += 15000;
+      else if(diferencial.includes('wi-fi')  diferencial.includes('wifi')) suggested += 15000;
 
       suggested = Math.round(suggested * base.factor);
       const faixaMin = Math.round(suggested * 0.92);
       const faixaMax = Math.round(suggested * 1.08);
-      const yieldEst = cityYield[cidade] || 5.5;
+      const yieldEst = cityYield[cidade]  5.5;
       const rentabilidade = ((suggested * yieldEst / 100) / suggested) * 100;
 
       const pontosFortes = ['Localização', 'Área', 'Acabamento', 'Diferencial'];
@@ -309,7 +309,7 @@
 
       const argumentos = [
         `Imóvel em ${base.label}, cidade com valorização consistente no litoral.`,
-        `${tipo} com ${area}m² e ${quartos||'?'} quartos, atendendo demanda por espaço e localização.`,
+        `${tipo} com ${area}m² e ${quartos'?'} quartos, atendendo demanda por espaço e localização.`,
         diferencial ? `Diferencial: ${diferencial}.` : 'Negociável dentro da faixa de mercado.'
       ];
 

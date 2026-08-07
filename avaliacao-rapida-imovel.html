@@ -219,8 +219,8 @@
         const tipo = document.getElementById('tipo').value;
         const estado = document.getElementById('estado').value;
 
-        const base = cityBase[cidade] || 7500;
-        const valorM2 = base * (typeAdj[tipo] || 1) * (stateAdj[estado] || 1) * (1 + quartoAdj * quartos) * (1 + vagaAdj * vagas);
+        const base = cityBase[cidade]  7500;
+        const valorM2 = base * (typeAdj[tipo]  1) * (stateAdj[estado]  1) * (1 + quartoAdj * quartos) * (1 + vagaAdj * vagas);
         const min = valorM2 * area * 0.88;
         const max = valorM2 * area * 1.12;
         const detail = cidade + ' · ' + tipo + ' · ' + estado;
