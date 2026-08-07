@@ -127,6 +127,40 @@
       <p class="price">Praia Grande</p>
     </section>
 
+      <h2>Sobre este serviço em Praia Grande</h2>
+      <p>Praia Grande cresce em investimento imobiliário com bairos como Guilhermina, Ocian e Tupi.</p>
+
+      <h2>Vantagens</h2>
+      <ul>
+        <li>Expansão urbana e novos lançamentos.</li>
+        <li>Preços mais acessíveis que vizinhos premium.</li>
+        <li>Alta temporada com procura por temporada.</li>
+        <li>Acesso direto pela Anchieta e balsa.</li>
+      </ul>
+
+      <h2>Processo</h2>
+      <ul>
+        <li>Avaliação e estratégia.</li>
+        <li>Preparação e divulgação.</li>
+        <li>Qualificação de compradores.</li>
+        <li>Negociação e escritura.</li>
+      </ul>
+
+    <div id="lm-form" style="margin-top:18px">
+      <h2>Quero receber mais informações</h2>
+      <form id="leadForm">
+        <input type="text" id="name" placeholder="Seu nome" required />
+        <input type="email" id="email" placeholder="Seu e-mail" />
+        <input type="tel" id="phone" placeholder="Seu WhatsApp" />
+        <input type="hidden" id="city" value="Praia Grande" />
+        <input type="hidden" id="source" value="servico" />
+        <input type="hidden" id="magnet" value="Venda de Imóvel" />
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="formStatus"></p>
+    </div>
+    <script>(function(){var form=document.getElementById("leadForm");if(!form) return;form.addEventListener("submit",function(e){e.preventDefault();var data={name:document.getElementById("name").value.trim(),email:document.getElementById("email").value.trim()||null,phone:document.getElementById("phone").value.trim()||null,city:document.getElementById("city").value||null,source:document.getElementById("source").value||null,magnet:document.getElementById("magnet").value||null};fetch("https://academy.praia.digital/leads",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)}).then(function(r){return r.json().then(function(json){return {status:r.status,json:json};});}).then(function(res){document.getElementById("formStatus").textContent=res.status===200?"Recebido! Entraremos em contato.":"Erro: "+JSON.stringify(res.json);}).catch(function(){document.getElementById("formStatus").textContent="Erro de conexão. Tente novamente.";});});})();</script>
+
     <section class="property-description">
       <h3>Sobre este serviço</h3>
       <p>Grande Venda Imovel profissional para o mercado imobiliário de Praia. Atendimento rápido e especializado pela Praia Digital.</p>
