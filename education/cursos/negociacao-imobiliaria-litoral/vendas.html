@@ -17,9 +17,8 @@
       { "@type": "ListItem", "position": 5, "name": "Vendas", "item": "https://praia.digital/education/cursos/negociacao-imobiliaria-litoral/vendas.html" }
     ]
   }
-  </script></title>
-  <meta name="description" content="Curso premium de negociacao imobiliaria litoral para o litoral.">
-  <link rel="canonical" href="https://praia.digital/education/cursos/negociacao-imobiliaria-litoral/vendas.html">
+  </script><link rel="canonical" href="https://praia.digital/education/cursos/negociacao-imobiliaria-litoral/vendas.html">
+<meta name="description" content="Curso premium de negociacao imobiliaria litoral para o litoral.">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -102,7 +101,7 @@ gtag('config', '', { anonymize_ip: true });
       </form>
       <p id="formStatus"></p>
     </div>
-    <script>(function(){var form=document.getElementById("leadForm");if(!form) return;form.addEventListener("submit",function(e){e.preventDefault();var data={name:document.getElementById("name").value.trim(),email:document.getElementById("email").value.trim()||null,phone:document.getElementById("phone").value.trim()||null,city:document.getElementById("city").valuenull,source:document.getElementById("source").valuenull,magnet:document.getElementById("magnet").valuenull};fetch("https://academy.praia.digital/leads",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)}).then(function(r){return r.json().then(function(json){return {status:r.status,json:json};});}).then(function(res){document.getElementById("formStatus").textContent=res.status===200?"Recebido! Entraremos em contato.":"Erro: "+JSON.stringify(res.json);}).catch(function(){document.getElementById("formStatus").textContent="Erro de conexão. Tente novamente.";});});})();</script>
+    <script>(function(){var form=document.getElementById("leadForm");if(!form) return;form.addEventListener("submit",function(e){e.preventDefault();var data={name:document.getElementById("name").value.trim(),email:document.getElementById("email").value.trim()||null,phone:document.getElementById("phone").value.trim()||null,city:document.getElementById("city").value || null,source:document.getElementById("source").value || null,magnet:document.getElementById("magnet").value || null};fetch("https://academy.praia.digital/leads",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)}).then(function(r){return r.json().then(function(json){return {status:r.status,json:json};});}).then(function(res){document.getElementById("formStatus").textContent=res.status===200?"Recebido! Entraremos em contato.":"Erro: "+JSON.stringify(res.json);}).catch(function(){document.getElementById("formStatus").textContent="Erro de conexão. Tente novamente.";});});})();</script>
 
       <div style="margin-top:18px">
       <a href="/education/cursos/negociacao-imobiliaria-litoral/index.html">Voltar para a página do curso</a>
