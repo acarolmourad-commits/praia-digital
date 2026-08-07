@@ -51,6 +51,11 @@ frontend_dir = Path(__file__).resolve().parent.parent / "education" / "aluno"
 if frontend_dir.exists():
     app.mount("/education/aluno", StaticFiles(directory=str(frontend_dir), html=True), name="aluno-frontend")
 
+# Servir arquivos estáticos da API sob /static
+static_dir = Path(__file__).resolve().parent / "static"
+if static_dir.exists():
+    app.mount("/static", StaticFiles(directory=str(static_dir), html=False), name="api-static")
+
 @app.get("/health")
 def health():
     return {"status": "ok", "service": "academy-api"}
