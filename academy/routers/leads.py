@@ -20,7 +20,7 @@ def create_lead(payload: LeadIn, db: Session = Depends(get_db)):
     db.add(lead)
     db.commit()
     db.refresh(lead)
-    event = LeadEvent(lead_id=lead.id, event="created", payload=str(payload.dict()))
+    event = LeadEvent(lead_id=lead.id, event="created", payload=payload.json())
     db.add(event)
     db.commit()
     return lead
