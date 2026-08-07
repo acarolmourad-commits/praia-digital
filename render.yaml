@@ -3,7 +3,7 @@ services:
     name: praia-digital-academy
     env: python
     buildCommand: pip install -r academy/requirements.txt
-    startCommand: cd academy && uvicorn main:app --host 0.0.0.0 --port $PORT
+    startCommand: cd academy && PYTHONPATH=. uvicorn academy.main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: DATABASE_URL
         fromDatabase:
