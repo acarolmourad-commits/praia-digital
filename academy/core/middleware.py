@@ -51,7 +51,6 @@ class SecurityHeadersMiddleware:
             return
 
         request = Request(scope, receive)
-        # Reject obviously oversized bodies early
         content_length = request.headers.get("content-length")
         if content_length and int(content_length) > _TRUNCATE_LIMIT:
             response = JSONResponse(status_code=413, content={"detail": "Payload too large"})
