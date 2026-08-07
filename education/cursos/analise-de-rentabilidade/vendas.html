@@ -39,7 +39,10 @@
       </nav>
     </header>
 
-      <h2>Sobre este curso</h2>
+      <main id="main">
+      <h1>Analise De Rentabilidade</h1>
+
+<h2>Sobre este curso</h2>
       <p>Calcule o retorno real de investimentos imobiliários no litoral, considerando custos, impostos e sazonalidade.</p>
       <div class="card">
         <p><strong>Nível:</strong> Intermediário</p>
@@ -78,31 +81,7 @@
     </div>
     <script>(function(){var form=document.getElementById("leadForm");if(!form) return;form.addEventListener("submit",function(e){e.preventDefault();var data={name:document.getElementById("name").value.trim(),email:document.getElementById("email").value.trim()||null,phone:document.getElementById("phone").value.trim()||null,city:document.getElementById("city").value||null,source:document.getElementById("source").value||null,magnet:document.getElementById("magnet").value||null};fetch("https://academy.praia.digital/leads",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)}).then(function(r){return r.json().then(function(json){return {status:r.status,json:json};});}).then(function(res){document.getElementById("formStatus").textContent=res.status===200?"Recebido! Entraremos em contato.":"Erro: "+JSON.stringify(res.json);}).catch(function(){document.getElementById("formStatus").textContent="Erro de conexão. Tente novamente.";});});})();</script>
 
-    <main id="main">
-      <h1>Analise De Rentabilidade</h1>
-      <p class="lead">Conteúdo premium aplicado ao mercado imobiliário do litoral.</p>
-      <div class="card">
-        <p><strong>Nível:</strong> Iniciante → Intermediário</p>
-        <p><strong>Carga horária:</strong> 4 horas</p>
-        <p><strong>Acesso:</strong> vitalício + atualizações</p>
-        <p class="price">R$ 297</p>
-        <a class="cta" href="https://wa.me/5511954346288?text=Quero%20o%20curso%20analise-de-rentabilidade">Quero garantir minha vaga</a>
-      </div>
-      <div class="grid">
-        <div class="card">
-          <h3>O que você vai aprender</h3>
-          <p>Conteúdo premium, exemplos reais e aplicação prática no litoral.</p>
-        </div>
-        <div class="card">
-          <h3>Para quem é</h3>
-          <p>Para quem quer resultados previsíveis com método aplicado.</p>
-        </div>
-        <div class="card">
-          <h3>Garantia</h3>
-          <p>7 dias para testar. Se não gostar, devolvemos 100% do valor.</p>
-        </div>
-      </div>
-    </main>
+      </main>
     <footer>Praia Digital Academy — educação aplicada ao mercado imobiliário do litoral.</footer>
   </div>
 </body>
