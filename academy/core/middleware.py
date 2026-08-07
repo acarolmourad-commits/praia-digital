@@ -2,6 +2,8 @@ import time
 import logging
 import re
 import uuid
+import threading
+import os
 from fastapi import Request
 from fastapi.responses import JSONResponse
 
@@ -11,6 +13,45 @@ logger.setLevel(logging.INFO)
 
 _SANITIZE_RE = re.compile(r'<script.*?>.*?</script\s*>', re.IGNORECASE | re.DOTALL)
 _TRUNCATE_LIMIT = 1024 * 1024  # 1MB
+_RATE_LIMIT_WINDOW = 60
+_RATE_LIMIT_MAX = 60
+_rate_local = threading.local()
+
+
+def _get_rate_store() -> dict:
+    if not hasattr(_rate_local, "store"):
+        _rate_local.store = {}
+    return _rate_local.store
+
+
+class RateLimitMiddleware:
+    def __init__(self, app):
+        self.app = app
+
+    async def __call__(self, scope, receive, send):
+        if scope["type"] != "http":
+            await self.app(scope, receive, send)
+            return
+
+        if os.getenv("APP_ENV", "development") != "production":
+            await self.app(scope, receive, send)
+            return
+
+        request = Request(scope, receive)
+        client = request.client.host if request.client else "unknown"
+        path = request.url.path
+        now = time.time()
+        store = _get_rate_store()
+        key = (client, path)
+        window = now - _RATE_LIMIT_WINDOW
+        timestamps = [ts for ts in store.get(key, []) if ts > window]
+        if len(timestamps) >= _RATE_LIMIT_MAX:
+            response = JSONResponse(status_code=429, content={"detail": "Too many requests"})
+            await response(scope, receive, send)
+            return
+        timestamps.append(now)
+        store[key] = timestamps
+        await self.app(scope, receive, send)
 
 
 class RequestLoggingMiddleware:
