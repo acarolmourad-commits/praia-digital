@@ -87,6 +87,7 @@
         <input type="email" id="email" placeholder="Seu e-mail" />
         <input type="tel" id="phone" placeholder="Seu WhatsApp" />
         <input type="hidden" id="city" value="Litoral Paulista" />
+        <input type="hidden" id="course" value="atendimento-cliente-para-corretores" />
         <input type="hidden" id="source" value="curso" />
         <input type="hidden" id="magnet" value="Atendimento ao Cliente para Corretores" />
         <button type="submit">Enviar</button>
@@ -95,7 +96,10 @@
     </div>
     <script>(function(){var form=document.getElementById("leadForm");if(!form) return;form.addEventListener("submit",function(e){e.preventDefault();var data={name:document.getElementById("name").value.trim(),email:document.getElementById("email").value.trim()null,phone:document.getElementById("phone").value.trim()null,city:document.getElementById("city").valuenull,source:document.getElementById("source").valuenull,magnet:document.getElementById("magnet").valuenull};fetch("https://academy.praia.digital/leads",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)}).then(function(r){return r.json().then(function(json){return {status:r.status,json:json};});}).then(function(res){document.getElementById("formStatus").textContent=res.status===200?"Recebido! Entraremos em contato.":"Erro: "+JSON.stringify(res.json);}).catch(function(){document.getElementById("formStatus").textContent="Erro de conexão. Tente novamente.";});});})();</script>
 
-      </main>
+      <div style="margin-top:18px">
+      <a href="/education/cursos/atendimento-cliente-para-corretores/index.html">Voltar para a página do curso</a>
+    </div>
+    </main>
     <footer>Praia Digital Academy — educação aplicada ao mercado imobiliário do litoral.</footer>
   </div>
 </body>
