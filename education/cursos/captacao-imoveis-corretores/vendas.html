@@ -65,17 +65,65 @@
       <div class="grid">
         <div class="card">
           <h3>O que você vai aprender</h3>
-          <p>Conteúdo premium, exemplos reais e aplicação prática no litoral.</p>
+          <p>Conteúdo direto ao ponto com exemplos reais de captação no litoral.</p>
         </div>
         <div class="card">
           <h3>Para quem é</h3>
-          <p>Para quem quer resultados previsíveis com método aplicado.</p>
+          <p>Quem quer aumentar a base de imóveis sem depender do acaso.</p>
         </div>
         <div class="card">
           <h3>Garantia</h3>
           <p>7 dias para testar. Se não gostar, devolvemos 100% do valor.</p>
         </div>
       </div>
+    <div style="margin-top:18px">
+      <a href="/education/cursos/captacao-imoveis-corretores/index.html">Voltar para a página do curso</a>
+    </div>
+    <section style="margin-top:28px">
+      <h2>Comece agora</h2>
+      <form id="courseLeadForm">
+        <input type="text" id="name" placeholder="Seu nome" required />
+        <input type="email" id="email" placeholder="Seu e-mail" />
+        <input type="tel" id="phone" placeholder="Seu WhatsApp" />
+        <input type="hidden" id="course" value="captacao-imoveis-corretores" />
+        <input type="hidden" id="source" value="curso" />
+        <button type="submit">Quero começar</button>
+      </form>
+      <p id="courseFormStatus"></p>
+    </section>
+    <script>
+      (function(){
+        var f=document.getElementById("courseLeadForm");
+        if(!f) return;
+        f.addEventListener("submit", function(e){
+          e.preventDefault();
+          var data={
+            name: document.getElementById("name").value.trim(),
+            email: document.getElementById("email").value.trim(),
+            phone: document.getElementById("phone").value.trim(),
+            course: document.getElementById("course").value,
+            source: document.getElementById("source").value
+          };
+          fetch("https://academy.praia.digital/leads", {
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body: JSON.stringify(data)
+          })
+          .then(function(r){
+            return r.json().then(function(json){
+              return {status:r.status, json:json};
+            });
+          })
+          .then(function(res){
+            var el=document.getElementById("courseFormStatus");
+            el.textContent = res.status===200 ? "Recebido! Entraremos em contato." : "Erro: "+JSON.stringify(res.json);
+          })
+          .catch(function(){
+            document.getElementById("courseFormStatus").textContent = "Erro de conexão. Tente novamente.";
+          });
+        });
+      })();
+    </script>
     </main>
     <footer>Praia Digital Academy — educação aplicada ao mercado imobiliário do litoral.</footer>
   </div>
