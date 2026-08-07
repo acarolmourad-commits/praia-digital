@@ -34,9 +34,22 @@
 </script>
 
   <meta charset="UTF-8">
-    ||
+    
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Predição de vendas no litoral paulista — ferramenta gratuita | Praia Digital</title>
+  <link rel="preconnect" href="https://praia.digital">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://praia.digital/index.html" }
+      { "@type": "ListItem", "position": 2, "name": "Ferramentas Gratuitas", "item": "https://praia.digital/ferramentas-gratuitas/" }
+      { "@type": "ListItem", "position": 3, "name": "Imobiliarias", "item": "https://praia.digital/ferramentas-gratuitas/imobiliarias/" }
+      { "@type": "ListItem", "position": 4, "name": "Predicao Vendas Litoral", "item": "https://praia.digital/ferramentas-gratuitas/imobiliarias/predicao-vendas-litoral.html" }
+    ]
+  }
+  </script>
   <meta name="description" content="Ferramenta gratuita para predição de vendas no litoral paulista para corretores e imobiliárias.">
   <link rel="canonical" href="https://praia.digital/ferramentas-gratuitas/imobiliarias/predicao-vendas-litoral.html">
   <style>
@@ -125,7 +138,7 @@
   <div class="wrap">
     <h1>Predição de vendas no litoral</h1>
     <p>Informe os dados e receba uma estimativa simples.</p>
-    <form onsubmit="event.preventDefault();const m=parseInt(document.getElementById('m').value)||0;const p=parseInt(document.getElementById('p').value)||0;const s=parseInt(document.getElementById('s').value)||0;const r=document.querySelector('.result');r.style.display='block';r.textContent='Estimativa inicial: '+(m*s*0.04+p*0.02)+' leads qualificados no próximo mês. Use essa base para planejar follow-up e conteúdo.';" aria-label="Contact form">
+    <form onsubmit="event.preventDefault();const m=parseInt(document.getElementById('m').value)0;const p=parseInt(document.getElementById('p').value)0;const s=parseInt(document.getElementById('s').value)0;const r=document.querySelector('.result');r.style.display='block';r.textContent='Estimativa inicial: '+(m*s*0.04+p*0.02)+' leads qualificados no próximo mês. Use essa base para planejar follow-up e conteúdo.';" aria-label="Contact form">
       <label>Média de visitas por mês</label>
       <input id="m" type="number" placeholder="Ex: 40">
       <label>Imóveis publicados</label>

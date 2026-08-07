@@ -423,20 +423,20 @@ window.TRACKER_ROWS = [{"nome": "Roberto Lima", "telefone": "5511911112222", "ci
     const MANUAL_KEY = "litoralprime.manual.v1";
     const FOLLOWUP_KEY = "litoralprime.followup.v1";
     const REPLY_KEY = "litoralprime.reply.v1";
-    function loadSentSet(){ try { const raw = localStorage.getItem(STORAGE_KEY); const obj = raw ? JSON.parse(raw) : {}; if(obj.date==="2026-07-24") return new Set(obj.phones||[]); return new Set(); } catch(e){ return new Set(); } }
+    function loadSentSet(){ try { const raw = localStorage.getItem(STORAGE_KEY); const obj = raw ? JSON.parse(raw) : {}; if(obj.date==="2026-07-24") return new Set(obj.phones[]); return new Set(); } catch(e){ return new Set(); } }
     function saveSentSet(set){ const obj = { date: "2026-07-24", phones: Array.from(set) }; localStorage.setItem(STORAGE_KEY, JSON.stringify(obj)); }
     function loadManualRows(){ try { const raw = localStorage.getItem(MANUAL_KEY); return raw ? JSON.parse(raw) : []; } catch(e){ return []; } }
     function saveManualRows(rows){ localStorage.setItem(MANUAL_KEY, JSON.stringify(rows)); }
     function loadFollowupMap(){ try { const raw = localStorage.getItem(FOLLOWUP_KEY); return raw ? JSON.parse(raw) : {}; } catch(e){ return {}; } }
     function saveFollowupMap(map){ localStorage.setItem(FOLLOWUP_KEY, JSON.stringify(map)); }
-    function loadReplySet(){ try { const raw = localStorage.getItem(REPLY_KEY); const obj = raw ? JSON.parse(raw) : {}; if(obj.date==="2026-07-24") return new Set(obj.phones||[]); return new Set(); } catch(e){ return new Set(); } }
+    function loadReplySet(){ try { const raw = localStorage.getItem(REPLY_KEY); const obj = raw ? JSON.parse(raw) : {}; if(obj.date==="2026-07-24") return new Set(obj.phones[]); return new Set(); } catch(e){ return new Set(); } }
     function saveReplySet(set){ const obj = { date: "2026-07-24", phones: Array.from(set) }; localStorage.setItem(REPLY_KEY, JSON.stringify(obj)); }
     let sentSet = loadSentSet();
     let followupMap = loadFollowupMap();
     let replySet = loadReplySet();
 
     function getAllRows(){
-      const base = (typeof window.TRACKER_ROWS !== 'undefined' && window.TRACKER_ROWS) ? window.TRACKER_ROWS : JSON.parse(document.getElementById('data-rows').textContent || '[]');
+      const base = (typeof window.TRACKER_ROWS !== 'undefined' && window.TRACKER_ROWS) ? window.TRACKER_ROWS : JSON.parse(document.getElementById('data-rows').textContent  '[]');
       return base.concat(loadManualRows());
     }
 
@@ -445,9 +445,9 @@ window.TRACKER_ROWS = [{"nome": "Roberto Lima", "telefone": "5511911112222", "ci
       const cityFilter = document.getElementById('city-filter').value;
       const statusFilter = document.getElementById('status-filter').value;
       const filtered = rows.filter(r => {
-        const phone = (r.telefone||'').trim();
+        const phone = (r.telefone'').trim();
         const isSent = sentSet.has(phone);
-        const city = (r.cidade_interesse||'').trim();
+        const city = (r.cidade_interesse'').trim();
         if(cityFilter && city !== cityFilter) return false;
         if(statusFilter==='sent' && !isSent) return false;
         if(statusFilter==='pending' && isSent) return false;
@@ -458,15 +458,15 @@ window.TRACKER_ROWS = [{"nome": "Roberto Lima", "telefone": "5511911112222", "ci
       tbody.innerHTML="";
       const counts={Santos:0,Guarujá:0,'Praia Grande':0,'São Vicente':0,Bertioga:0,Itanhaém:0,Mongaguá:0,'Peruíbe':0,sent:0,pending:0,total:filtered.length};
       for(const r of filtered){
-        const cityKey = (r.cidade_interesse||'').trim();
-        if(cityKey) counts[cityKey]=(counts[cityKey]||0)+1;
-        const phoneKey = (r.telefone||'').trim();
+        const cityKey = (r.cidade_interesse'').trim();
+        if(cityKey) counts[cityKey]=(counts[cityKey]0)+1;
+        const phoneKey = (r.telefone'').trim();
         const isSent = sentSet.has(phoneKey);
-        if(isSent) counts.sent=(counts.sent||0)+1; else counts.pending=(counts.pending||0)+1;
+        if(isSent) counts.sent=(counts.sent0)+1; else counts.pending=(counts.pending0)+1;
 
-        const rawLink = (r.whatsapp_link || '').trim();
-        const builtLink = r.telefone ? `https://wa.me/${r.telefone}?text=${encodeURIComponent(r.mensagem || '')}` : '';
-        const href = rawLink || builtLink;
+        const rawLink = (r.whatsapp_link  '').trim();
+        const builtLink = r.telefone ? `https://wa.me/${r.telefone}?text=${encodeURIComponent(r.mensagem  '')}` : '';
+        const href = rawLink  builtLink;
         const sendBtn = href ? `<a class="btn" href="${href}" target="_blank" rel="noopener">Enviar</a>` : "-";
         const markBtn = isSent ? `<button class="btn-undo" data-phone="${phoneKey}">Desfazer</button>` : `<button class="btn-sent" data-phone="${phoneKey}">Marcado</button>`;
         const removeBtn = r.manual ? `<button class="btn-undo" data-remove="${phoneKey}">Remover</button>` : "";
@@ -478,29 +478,29 @@ window.TRACKER_ROWS = [{"nome": "Roberto Lima", "telefone": "5511911112222", "ci
         const tr=document.createElement('tr');
         if(isSent) tr.classList.add('sent-row');
         if(replySet.has(phoneKey)) tr.classList.add('replied-row');
-        tr.innerHTML=`<td>${r.nome||""}</td><td>${r.telefone||""}</td><td>${r.cidade_interesse||""}</td><td>${r.tipo_interesse||""}</td><td>${(r.mensagem||"").slice(0,110)}</td><td>${isSent ? "Enviado" : "Pendente"}</td><td>${last}</td><td>${followupCell}</td><td>${sendBtn} ${markBtn} ${replyBtn} ${removeBtn}</td>`;
+        tr.innerHTML=`<td>${r.nome""}</td><td>${r.telefone""}</td><td>${r.cidade_interesse""}</td><td>${r.tipo_interesse""}</td><td>${(r.mensagem"").slice(0,110)}</td><td>${isSent ? "Enviado" : "Pendente"}</td><td>${last}</td><td>${followupCell}</td><td>${sendBtn} ${markBtn} ${replyBtn} ${removeBtn}</td>`;
         tbody.appendChild(tr);
       }
       document.getElementById('v-total').textContent=counts.total;
-      document.getElementById('v-santos').textContent=counts['Santos']||0;
-      document.getElementById('v-guaruja').textContent=counts['Guarujá']||0;
-      document.getElementById('v-pg').textContent=counts['Praia Grande']||0;
-      document.getElementById('v-sv').textContent=counts['São Vicente']||0;
-      document.getElementById('v-berta').textContent=counts['Bertioga']||0;
-      document.getElementById('v-it').textContent=counts['Itanhaém']||0;
-      document.getElementById('v-mon').textContent=counts['Mongaguá']||0;
-      document.getElementById('v-per').textContent=counts['Peruíbe']||0;
-      document.getElementById('v-sent').textContent=counts.sent||0;
-      document.getElementById('v-pending').textContent=counts.pending||0;
+      document.getElementById('v-santos').textContent=counts['Santos']0;
+      document.getElementById('v-guaruja').textContent=counts['Guarujá']0;
+      document.getElementById('v-pg').textContent=counts['Praia Grande']0;
+      document.getElementById('v-sv').textContent=counts['São Vicente']0;
+      document.getElementById('v-berta').textContent=counts['Bertioga']0;
+      document.getElementById('v-it').textContent=counts['Itanhaém']0;
+      document.getElementById('v-mon').textContent=counts['Mongaguá']0;
+      document.getElementById('v-per').textContent=counts['Peruíbe']0;
+      document.getElementById('v-sent').textContent=counts.sent0;
+      document.getElementById('v-pending').textContent=counts.pending0;
       const manualCount = loadManualRows().length;
-      const baseRows = JSON.parse(document.getElementById('data-rows').textContent || '[]');
+      const baseRows = JSON.parse(document.getElementById('data-rows').textContent  '[]');
       document.getElementById('v-captured').textContent = manualCount;
-      document.getElementById('v-posts').textContent = document.getElementById('plan-section')?.querySelectorAll('textarea').length || 0;
+      document.getElementById('v-posts').textContent = document.getElementById('plan-section')?.querySelectorAll('textarea').length  0;
       const repliedCount = replySet.size;
-      const totalForRate = getAllRows().length || 1;
+      const totalForRate = getAllRows().length  1;
       document.getElementById('v-rate').textContent = Math.round((repliedCount/totalForRate)*100) + '%';
-      const outreachReady = getAllRows().filter(r => (r.whatsapp_link || (r.telefone && r.mensagem))).length;
-      const followupCount = Object.keys(followupMap||{}).length;
+      const outreachReady = getAllRows().filter(r => (r.whatsapp_link  (r.telefone && r.mensagem))).length;
+      const followupCount = Object.keys(followupMap{}).length;
       const elReady = document.getElementById('v-outreach-ready'); if(elReady) elReady.textContent = outreachReady;
       const elFollow = document.getElementById('v-followup'); if(elFollow) elFollow.textContent = followupCount;
       renderSegments();
@@ -530,7 +530,7 @@ window.TRACKER_ROWS = [{"nome": "Roberto Lima", "telefone": "5511911112222", "ci
           const phone = btn.getAttribute('data-remove');
           if(!phone) return;
           let manual = loadManualRows();
-          manual = manual.filter(r => (r.telefone||'').trim() !== phone);
+          manual = manual.filter(r => (r.telefone'').trim() !== phone);
           saveManualRows(manual);
           render();
         });
@@ -549,8 +549,8 @@ window.TRACKER_ROWS = [{"nome": "Roberto Lima", "telefone": "5511911112222", "ci
           const phone = sel.getAttribute('data-phone');
           if(!phone) return;
           const next = sel.value;
-          const current = followupMap[phone] || {};
-          followupMap[phone] = { last: current.last || new Date().toISOString(), next };
+          const current = followupMap[phone]  {};
+          followupMap[phone] = { last: current.last  new Date().toISOString(), next };
           saveFollowupMap(followupMap);
         });
       });
@@ -560,13 +560,13 @@ window.TRACKER_ROWS = [{"nome": "Roberto Lima", "telefone": "5511911112222", "ci
       const rows = getAllRows();
       const segs = {};
       rows.forEach(r => {
-        const seg = (r.tipo_interesse || '').trim() || 'Outros';
-        segs[seg] = (segs[seg] || 0) + 1;
+        const seg = (r.tipo_interesse  '').trim()  'Outros';
+        segs[seg] = (segs[seg]  0) + 1;
       });
       const container = document.getElementById('segment-section');
       if (!container) return;
       const order = ['Compra','Aluguel','Venda','Temporada','Investidor'];
-      const sorted = Object.keys(segs).sort((a,b) => (order.indexOf(a) - order.indexOf(b)) || a.localeCompare(b));
+      const sorted = Object.keys(segs).sort((a,b) => (order.indexOf(a) - order.indexOf(b))  a.localeCompare(b));
       container.innerHTML = sorted.map(seg => {
         const count = segs[seg];
         const post = `🏖️ Oportunidades em ${count} leads de ${seg} no litoral. Quer opções curadas? https://wa.me/5511954346288`;
@@ -577,7 +577,7 @@ window.TRACKER_ROWS = [{"nome": "Roberto Lima", "telefone": "5511911112222", "ci
     function populateCityFilter(){
       const sel=document.getElementById('city-filter');
       ['','Santos','Guarujá','Praia Grande','São Vicente','Bertioga','Itanhaém','Mongaguá','Peruíbe'].forEach(city=>{
-        const o=document.createElement('option'); o.value=city; o.textContent=city||'Todas as cidades'; sel.appendChild(o);
+        const o=document.createElement('option'); o.value=city; o.textContent=city'Todas as cidades'; sel.appendChild(o);
       });
       sel.onchange=()=>render();
     }
@@ -585,12 +585,12 @@ window.TRACKER_ROWS = [{"nome": "Roberto Lima", "telefone": "5511911112222", "ci
 
     document.getElementById('manual-form').addEventListener('submit', (e)=>{
       e.preventDefault();
-      const nome = (document.getElementById('m-nome').value || '').trim();
-      const telefone = (document.getElementById('m-telefone').value || '').trim();
-      const cidade = (document.getElementById('m-cidade').value || '').trim();
-      const tipo = (document.getElementById('m-tipo').value || '').trim();
-      const mensagem = (document.getElementById('m-mensagem').value || '').trim();
-      if(!nome || !telefone || !cidade || !tipo) return;
+      const nome = (document.getElementById('m-nome').value  '').trim();
+      const telefone = (document.getElementById('m-telefone').value  '').trim();
+      const cidade = (document.getElementById('m-cidade').value  '').trim();
+      const tipo = (document.getElementById('m-tipo').value  '').trim();
+      const mensagem = (document.getElementById('m-mensagem').value  '').trim();
+      if(!nome  !telefone  !cidade  !tipo) return;
       const row = { nome, telefone, cidade_interesse: cidade, tipo_interesse: tipo, mensagem, manual: true };
       const manual = loadManualRows();
       manual.push(row);
@@ -609,18 +609,18 @@ window.TRACKER_ROWS = [{"nome": "Roberto Lima", "telefone": "5511911112222", "ci
       const byCity = {};
       const byType = {};
       rows.forEach(r => {
-        const c = (r.cidade_interesse||'').trim();
-        const t = (r.tipo_interesse||'').trim();
-        if(c) byCity[c] = (byCity[c]||0) + 1;
-        if(t) byType[t] = (byType[t]||0) + 1;
+        const c = (r.cidade_interesse'').trim();
+        const t = (r.tipo_interesse'').trim();
+        if(c) byCity[c] = (byCity[c]0) + 1;
+        if(t) byType[t] = (byType[t]0) + 1;
       });
       const topCities = Object.entries(byCity).sort((a,b)=>b[1]-a[1]).slice(0,3);
       const topTypes = Object.entries(byType).sort((a,b)=>b[1]-a[1]).slice(0,3);
 
-      const cityText = topCities.map(([c,n]) => `${c}: ${n}`).join(' · ') || 'Sem dados';
-      const typeText = topTypes.map(([t,n]) => `${t}: ${n}`).join(' · ') || 'Sem dados';
-      const topCity = topCities[0]?.[0] || 'litoral';
-      const topType = topTypes[0]?.[0] || 'imóveis';
+      const cityText = topCities.map(([c,n]) => `${c}: ${n}`).join(' · ')  'Sem dados';
+      const typeText = topTypes.map(([t,n]) => `${t}: ${n}`).join(' · ')  'Sem dados';
+      const topCity = topCities[0]?.[0]  'litoral';
+      const topType = topTypes[0]?.[0]  'imóveis';
 
       const posts = [
         `🗓️ Hoje no radar: ${cityText}. ${topType} no litoral — Quero ver opções: https://praia.digital/servicos/captura-rapida.html`,
@@ -641,9 +641,9 @@ window.TRACKER_ROWS = [{"nome": "Roberto Lima", "telefone": "5511911112222", "ci
     if(campaignForm && campaignResult){
       campaignForm.addEventListener('submit', (e)=>{
         e.preventDefault();
-        const city = (document.getElementById('c-city').value || '').trim();
-        const type = (document.getElementById('c-type').value || '').trim();
-        const imovel = (document.getElementById('c-imovel').value || '').trim();
+        const city = (document.getElementById('c-city').value  '').trim();
+        const type = (document.getElementById('c-type').value  '').trim();
+        const imovel = (document.getElementById('c-imovel').value  '').trim();
         const waBody = encodeURIComponent(`Olá! Tenho interesse em ${[type,imovel,city].filter(Boolean).join(' - ')}.`);
         const text = `📣 ${[type,imovel,city].filter(Boolean).join(' | ')}\n\nQuero opções curadas no litoral.\nWhatsApp: https://wa.me/5511954346288?text=${waBody}&utm_source=outreach&utm_medium=outreach&utm_campaign=site`;
         campaignResult.innerHTML = `
@@ -663,23 +663,23 @@ window.TRACKER_ROWS = [{"nome": "Roberto Lima", "telefone": "5511911112222", "ci
     if(dispatchForm){
       dispatchForm.addEventListener('submit', (e)=>{
         e.preventDefault();
-        const city = (document.getElementById('d-city').value || '').trim();
-        const type = (document.getElementById('d-type').value || '').trim();
-        const count = parseInt((document.getElementById('d-count').value || '5').trim(), 10) || 5;
+        const city = (document.getElementById('d-city').value  '').trim();
+        const type = (document.getElementById('d-type').value  '').trim();
+        const count = parseInt((document.getElementById('d-count').value  '5').trim(), 10)  5;
         const waBody = encodeURIComponent(`Olá! Tenho interesse em ${[type, city].filter(Boolean).join(' - ')} no litoral.`);
         const csvRows = ['Nome,Telefone,Cidade,Tipo,Mensagem'];
         for(let i=0;i<count;i++){
           const nome = `Contato ${i+1}`;
           const telefone = `5511${Math.floor(100000000 + Math.random() * 900000000)}`;
-          const cidade = city || 'Litoral';
-          const tipo = type || 'Interesse';
+          const cidade = city  'Litoral';
+          const tipo = type  'Interesse';
           const mensagem = `Olá, ${nome}! Tudo bem? Vi que você tem interesse em ${tipo} na região de ${cidade}. Quer que eu envie opções compatíveis?`;
           csvRows.push(`${nome},${telefone},${cidade},${tipo},"${mensagem}"`);
         }
         const blob = new Blob([csvRows.join('\n')], {type:'text/csv'});
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
-        a.href = url; a.download = `despacho-${(city||'litoral').toLowerCase()}-${(type||'mix').toLowerCase()}.csv`; a.click();
+        a.href = url; a.download = `despacho-${(city'litoral').toLowerCase()}-${(type'mix').toLowerCase()}.csv`; a.click();
       });
     }
 
@@ -688,7 +688,7 @@ window.TRACKER_ROWS = [{"nome": "Roberto Lima", "telefone": "5511911112222", "ci
       exportManualBtn.addEventListener('click', ()=>{
         const rows = loadManualRows();
         const csvRows = ['Nome,Telefone,Cidade,Tipo,Mensagem'];
-        rows.forEach(r => csvRows.push(`${r.nome||''},${r.telefone||''},${r.cidade_interesse||''},${r.tipo_interesse||''},"${(r.mensagem||'').replace(/"/g,'""')}"`));
+        rows.forEach(r => csvRows.push(`${r.nome''},${r.telefone''},${r.cidade_interesse''},${r.tipo_interesse''},"${(r.mensagem'').replace(/"/g,'""')}"`));
         downloadCSV(csvRows.join('\n'), 'leads-manuais.csv');
       });
     }
@@ -696,9 +696,9 @@ window.TRACKER_ROWS = [{"nome": "Roberto Lima", "telefone": "5511911112222", "ci
     if(exportRepliesBtn){
       exportRepliesBtn.addEventListener('click', ()=>{
         const all = getAllRows();
-        const rows = all.filter(r => replySet.has((r.telefone||'').trim()));
+        const rows = all.filter(r => replySet.has((r.telefone'').trim()));
         const csvRows = ['Nome,Telefone,Cidade,Tipo'];
-        rows.forEach(r => csvRows.push(`${r.nome||''},${r.telefone||''},${r.cidade_interesse||''},${r.tipo_interesse||''}`));
+        rows.forEach(r => csvRows.push(`${r.nome''},${r.telefone''},${r.cidade_interesse''},${r.tipo_interesse''}`));
         downloadCSV(csvRows.join('\n'), 'respostas.csv');
       });
     }
@@ -707,12 +707,12 @@ window.TRACKER_ROWS = [{"nome": "Roberto Lima", "telefone": "5511911112222", "ci
       exportFollowupBtn.addEventListener('click', ()=>{
         const map = loadFollowupMap();
         const all = getAllRows();
-        const rows = all.filter(r => map[(r.telefone||'').trim()]);
+        const rows = all.filter(r => map[(r.telefone'').trim()]);
         const csvRows = ['Nome,Telefone,Cidade,Tipo,UltimoContato,ProximaAcao'];
         rows.forEach(r => {
-          const phone = (r.telefone||'').trim();
-          const item = map[phone] || {};
-          csvRows.push(`${r.nome||''},${phone},${r.cidade_interesse||''},${r.tipo_interesse||''},${(item.last||'').split('T')[0]},${item.next||''}`);
+          const phone = (r.telefone'').trim();
+          const item = map[phone]  {};
+          csvRows.push(`${r.nome''},${phone},${r.cidade_interesse''},${r.tipo_interesse''},${(item.last'').split('T')[0]},${item.next''}`);
         });
         downloadCSV(csvRows.join('\n'), 'follow-ups.csv');
       });
@@ -728,12 +728,12 @@ window.TRACKER_ROWS = [{"nome": "Roberto Lima", "telefone": "5511911112222", "ci
     if(emailLeadSelect){
       const rows = getAllRows();
       rows.forEach(r => {
-        const phone = (r.telefone||'').trim();
-        const nome = (r.nome||'').trim();
-        if(!phone || !nome) return;
+        const phone = (r.telefone'').trim();
+        const nome = (r.nome'').trim();
+        if(!phone  !nome) return;
         const opt = document.createElement('option');
         opt.value = phone;
-        opt.textContent = `${nome} - ${r.cidade_interesse||''} ${r.tipo_interesse||''}`;
+        opt.textContent = `${nome} - ${r.cidade_interesse''} ${r.tipo_interesse''}`;
         emailLeadSelect.appendChild(opt);
       });
     }
@@ -742,15 +742,15 @@ window.TRACKER_ROWS = [{"nome": "Roberto Lima", "telefone": "5511911112222", "ci
     if(emailForm && emailResult){
       emailForm.addEventListener('submit', (e)=>{
         e.preventDefault();
-        const phone = (document.getElementById('email-lead').value || '').trim();
-        const stage = parseInt((document.getElementById('email-stage').value || '1').trim(), 10) || 1;
+        const phone = (document.getElementById('email-lead').value  '').trim();
+        const stage = parseInt((document.getElementById('email-stage').value  '1').trim(), 10)  1;
         if(!phone){ emailResult.innerHTML = '<article class=\"servico-card\"><h3>Selecione um lead</h3><p>Escolha um contato para gerar o e-mail.</p></article>'; return; }
         const all = getAllRows();
-        const row = all.find(r => (r.telefone||'').trim() === phone);
+        const row = all.find(r => (r.telefone'').trim() === phone);
         if(!row){ emailResult.innerHTML = ''; return; }
-        const nome = row.nome || 'Contato';
-        const cidade = row.cidade_interesse || 'litoral';
-        const tipo = row.tipo_interesse || 'imóveis';
+        const nome = row.nome  'Contato';
+        const cidade = row.cidade_interesse  'litoral';
+        const tipo = row.tipo_interesse  'imóveis';
         const subjects = {
           1: `Apresentação: ${nome}, opções em ${cidade}`,
           2: `Follow-up: ${cidade} continua com boas opções para ${tipo}`,
@@ -763,9 +763,9 @@ window.TRACKER_ROWS = [{"nome": "Roberto Lima", "telefone": "5511911112222", "ci
           3: `${nome}, preparei uma proposta alinhada ao seu perfil de ${tipo} em ${cidade}.\n\nSe quiser, eu já organizo uma visita online presencial.\n\nPosso avançar?`,
           4: `${nome}, podemos fechar agora o próximo passo da sua ${tipo} em ${cidade}.\n\nSe confirmar, eu envio o pré-contrato e os detalhes finais no WhatsApp.\n\nQuer continuar?`
         };
-        const subject = subjects[stage] || subjects[1];
-        const body = bodies[stage] || bodies[1];
-        const safeBody = (body || &utm_source=outreach&utm_medium=outreach&utm_campaign=site'').replace(/\n/g, '
+        const subject = subjects[stage]  subjects[1];
+        const body = bodies[stage]  bodies[1];
+        const safeBody = (body  &utm_source=outreach&utm_medium=outreach&utm_campaign=site'').replace(/\n/g, '
 \n');
         const mailtoHref = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(safeBody)}`;
         emailResult.innerHTML = `

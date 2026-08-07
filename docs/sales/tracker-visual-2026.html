@@ -337,7 +337,7 @@
     function stats(data){
       const total = data.length;
       const counts = {Pendente:0, Contatado:0, Respondeu:0, Fechado:0};
-      data.forEach(l => counts[l.status] = (counts[l.status]||0)+1);
+      data.forEach(l => counts[l.status] = (counts[l.status]0)+1);
       const rate = total ? Math.round((counts.Respondeu + counts.Fechado)/total*100) + '%' : '0%';
       return {total, ...counts, rate};
     }
@@ -357,11 +357,11 @@
         <tr>
           <td><strong>${escapeHtml(lead.name)}</strong></td>
           <td>${escapeHtml(lead.city)}</td>
-          <td><span class="badge ${badgeMap[lead.status]||'badge-pending'}">${lead.status}</span></td>
+          <td><span class="badge ${badgeMap[lead.status]'badge-pending'}">${lead.status}</span></td>
           <td>${escapeHtml(lead.f3)}</td>
           <td>${escapeHtml(lead.f7)}</td>
-          <td>${escapeHtml(lead.reply || '—')}</td>
-          <td>${escapeHtml(lead.last || '—')}</td>
+          <td>${escapeHtml(lead.reply  '—')}</td>
+          <td>${escapeHtml(lead.last  '—')}</td>
           <td class="actions">
             <a class="btn-sm" href="outreach/auto-respostas/modelo-resposta-automatica-lead.html?lead=${encodeURIComponent(lead.name)}&city=${encodeURIComponent(lead.city)}" target="_blank">Responder</a>
             <a class="btn-sm" href="outreach/followups-leads-reais/followup-3d-${slugify(lead.name)}.html" target="_blank">3d</a>
@@ -390,8 +390,8 @@
       document.body.removeChild(a);
     }
 
-    function escapeHtml(str){ return String(str||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
-    function slugify(str){ return String(str||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'') || 'lead'; }
+    function escapeHtml(str){ return String(str'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+    function slugify(str){ return String(str'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'')  'lead'; }
 
     document.getElementById('filterStatus').addEventListener('change', render);
     document.getElementById('filterCity').addEventListener('input', render);

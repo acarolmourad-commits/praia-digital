@@ -36,7 +36,7 @@
     <meta name="keywords" content="IA para Atendimento ao Cliente — Praia Digital, Praia Digital Home Central de IA Atendimento 💬 IA para Atendimento ao Cliente Atendimento humanizado com base em conhecimento da imobiliária, horários..., imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
   <meta name="description" content="Praia Digital Home Central de IA Atendimento 💬 IA para Atendimento ao Cliente Atendimento humanizado com base em conhecimento da imobiliária, horários...">
   <meta charset="UTF-8">
-    ||
+    
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>IA para Atendimento ao Cliente — Praia Digital</title>
   <style>
@@ -222,7 +222,7 @@
     function sendQuick(text){
       addMsg(text,'user');
       const key = text.toLowerCase();
-      const answer = knowledge[key] || 'Posso ajudar com cidades atendidas, horários, consultor ou oportunidades. O que prefere?';
+      const answer = knowledge[key]  'Posso ajudar com cidades atendidas, horários, consultor ou oportunidades. O que prefere?';
       reply(answer);
       if(key.includes('oportunidades')){ setTimeout(()=>reply('Ex: apartamento no Boqueirão, casa em Bertioga, pousada em Peruíbe.'), 900); }
     }
@@ -233,7 +233,7 @@
       addMsg(text,'user');
       input.value = '';
       const key = text.toLowerCase();
-      const answer = knowledge[key] || 'Entendi. Para atendimento personalizado, fale com um consultor pelo WhatsApp: (11) 95434-6288.';
+      const answer = knowledge[key]  'Entendi. Para atendimento personalizado, fale com um consultor pelo WhatsApp: (11) 95434-6288.';
       reply(answer);
     }
   </script>

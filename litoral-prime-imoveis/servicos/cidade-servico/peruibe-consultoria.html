@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-    ||
+    
 <link rel="preload" as="image" href="https://praia.digital/img/default-home.jpg" type="image/jpeg" fetchpriority="high">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Consultoria Proptech em Peruíbe | Litoral Prime Imóveis</title>
@@ -185,10 +185,10 @@
 function handlePageLead(e){
   try {
     e.preventDefault();
-    const nome = (e.target.querySelector('input[type="text"]')?.value || '').trim();
-    const telefone = (e.target.querySelector('input[type="tel"]')?.value || '').trim();
-    const tipo = (e.target.querySelector('select')?.value || '').trim();
-    if(!nome || !telefone || !tipo){
+    const nome = (e.target.querySelector('input[type="text"]')?.value  '').trim();
+    const telefone = (e.target.querySelector('input[type="tel"]')?.value  '').trim();
+    const tipo = (e.target.querySelector('select')?.value  '').trim();
+    if(!nome  !telefone  !tipo){
       alert('Preencha nome, telefone e tipo de interesse.');
       return false;
     }

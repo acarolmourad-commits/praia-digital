@@ -36,7 +36,7 @@
     <meta name="keywords" content="IA para Imagens — Praia Digital, Praia Digital Home Central de IA Imagens 🖼️ IA para Imagens Pré-visualizações conceituais para anúncios, banners e redes sociais., imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
   <meta name="description" content="Praia Digital Home Central de IA Imagens 🖼️ IA para Imagens Pré-visualizações conceituais para anúncios, banners e redes sociais.">
   <meta charset="UTF-8">
-    ||
+    
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>IA para Imagens — Praia Digital</title>
   <style>
@@ -200,13 +200,13 @@
       const tipo = document.getElementById('iTipo').value;
       const cidade = document.getElementById('iCidade').value;
       const canal = document.getElementById('iCanal').value;
-      const city = cityLabels[cidade]||cidade;
+      const city = cityLabels[cidade]cidade;
       const conceitos = {
         anuncio: [`Foto ampla do ${tipo} com iluminação natural, destaque para sala/área social.`,`Fachada ou fachada + área externa, foco em diferencial.`,`Interior com layout limpo e luz quente para anúncio.`],
         banner: [`Banner 16:9 com headline e cidade + CTA.`,`Banner 1:1 para feed social com preço e telefone.`,`Banner 9:16 para stories com título e link.`],
         rede: [`Post 1:1 com legenda e WhatsApp.`,`Reels/Short com cena curta e texto em destaque.`,`Stories com enquete e botão de contato.`]
       };
-      const lista = conceitos[canal] || conceitos.anuncio;
+      const lista = conceitos[canal]  conceitos.anuncio;
       const html = lista.map(x=>`<div class="preview"><strong>${canal==='anuncio'?'Anúncio':canal==='banner'?'Banner':'Rede social'}</strong><p style="margin-top:.5rem;font-size:.92rem;color:#333">${x}</p><p style="margin-top:.4rem;font-size:.8rem;color:#777">${tipo} — ${city}</p></div>`).join('');
       document.getElementById('imgResult').innerHTML = html;
       document.getElementById('imgResult').classList.add('visible');

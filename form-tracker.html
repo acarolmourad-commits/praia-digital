@@ -173,12 +173,12 @@ fileInput.addEventListener('change', (e) => {
     rows.slice(1).forEach(row => {
       const cols = row.split(',');
       if (cols.length < 6) return;
-      const origem = cols[0] || '—';
-      const nome = cols[1] || '—';
-      const email = cols[2] || '—';
-      const whatsapp = cols[3] || '—';
-      const cidade = cols[4] || '—';
-      const status = cols[5] || '—';
+      const origem = cols[0]  '—';
+      const nome = cols[1]  '—';
+      const email = cols[2]  '—';
+      const whatsapp = cols[3]  '—';
+      const cidade = cols[4]  '—';
+      const status = cols[5]  '—';
       const tr = document.createElement('tr');
       tr.innerHTML = `<td><span class="tag ${origem === 'parceria' ? 'tag-parceria' : 'tag-checklist'}">${origem}</span></td><td>${nome}</td><td>${email}</td><td>${whatsapp}</td><td>${cidade}</td><td>${status}</td>`;
       tbody.appendChild(tr);

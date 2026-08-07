@@ -110,7 +110,7 @@ function texto(p){
  }[p];
 }
 function ver(){
- if(!a[1]||!a[2]||!a[3]){document.getElementById('err').textContent='Responda as 3 perguntas :)';return;}
+ if(!a[1]!a[2]!a[3]){document.getElementById('err').textContent='Responda as 3 perguntas :)';return;}
  document.getElementById('err').textContent='';
  const p=perfil();const t=texto(p);
  const r=document.getElementById('res');
@@ -127,7 +127,7 @@ function enviar(p){
  const nome=document.getElementById('nome').value.trim();
  const wpp=document.getElementById('wpp').value.trim();
  const lgpd=document.getElementById('lgpd').checked;
- if(!nome||!wpp||!lgpd){alert('Preencha nome, WhatsApp e autorize (LGPD).');return;}
+ if(!nome!wpp!lgpd){alert('Preencha nome, WhatsApp e autorize (LGPD).');return;}
  const msg=encodeURIComponent(`Olá! Fiz o quiz da Praia Digital e meu perfil é "${p}". Quero saber como ganhar mais sem trabalhar.`);
  window.open(`https://wa.me/5511954346288?text=${msg}`,'_blank');
 }

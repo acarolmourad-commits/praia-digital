@@ -34,7 +34,7 @@
 </script>
 
 <meta charset="UTF-8">
-  ||
+  
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pré-qualificação de Crédito | Praia Digital</title>
 <meta name="keywords" content="Pré-qualificação de Crédito | Praia Digital, Verifique sua elegabilidade para financiamento ou consórcio no litoral paulista., imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
@@ -145,19 +145,19 @@ a{color:#38bdf8;text-decoration:none}
 <script>
 function fmt(v){return typeof v==='number'?'R$ '+v.toLocaleString('pt-BR'):String(v)}
 function qualificar(){
-  const preco=parseFloat(document.getElementById('preco').value)||0;
-  const entrada=parseFloat(document.getElementById('entrada').value)||0;
-  const renda=parseFloat(document.getElementById('renda').value)||0;
-  const tipo=(document.getElementById('tipo').value||'Financiamento').trim();
-  const nome=(document.getElementById('nome').value||'Lead').trim();
-  const cidade=(document.getElementById('cidade').value||'Litoral').trim();
+  const preco=parseFloat(document.getElementById('preco').value)0;
+  const entrada=parseFloat(document.getElementById('entrada').value)0;
+  const renda=parseFloat(document.getElementById('renda').value)0;
+  const tipo=(document.getElementById('tipo').value'Financiamento').trim();
+  const nome=(document.getElementById('nome').value'Lead').trim();
+  const cidade=(document.getElementById('cidade').value'Litoral').trim();
   const comp=preco-entrada;
   const maxParcela=renda*0.3;
   const meses=360;
   const taxa=0.0099;
-  const parcela=(comp*(Math.pow(1+taxa,meses)*taxa))/(Math.pow(1+taxa,meses)-1)||0;
+  const parcela=(comp*(Math.pow(1+taxa,meses)*taxa))/(Math.pow(1+taxa,meses)-1)0;
   const elegivel=parcela<=maxParcela;
-  const score=Math.min(10,Math.max(1,+((renda/(preco||1))*40 + (entrada/(preco||1))*30).toFixed(1)));
+  const score=Math.min(10,Math.max(1,+((renda/(preco1))*40 + (entrada/(preco1))*30).toFixed(1)));
   const box=document.getElementById('result');
   box.style.display='block';
   box.innerHTML=`<p><strong>${nome}</strong>, sua pré-qualificação para <strong>${cidade}</strong>:</p>

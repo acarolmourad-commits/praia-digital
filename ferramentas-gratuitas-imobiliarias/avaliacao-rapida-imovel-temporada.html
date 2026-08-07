@@ -36,9 +36,21 @@
   <meta name="keywords" content="Avaliação Rápida de Imóvel para Temporada — Ferramenta Gratuita, Preencha os dados abaixo para obter uma estimativa inicial de valor e potencial de temporada no litoral paulista., imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
   <meta name="description" content="Preencha os dados abaixo para obter uma estimativa inicial de valor e potencial de temporada no litoral paulista.">
   <meta charset="UTF-8">
-  ||
+  
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Avaliação Rápida de Imóvel para Temporada — Ferramenta Gratuita</title>
+  <link rel="preconnect" href="https://praia.digital">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://praia.digital/index.html" }
+      { "@type": "ListItem", "position": 2, "name": "Ferramentas Gratuitas Imobiliarias", "item": "https://praia.digital/ferramentas-gratuitas-imobiliarias/" }
+      { "@type": "ListItem", "position": 3, "name": "Avaliacao Rapida Imovel Temporada", "item": "https://praia.digital/ferramentas-gratuitas-imobiliarias/avaliacao-rapida-imovel-temporada.html" }
+    ]
+  }
+  </script>
 <style>
 body{font-family:Arial,Helvetica,sans-serif;background:#0d1117;color:#e6edf3;margin:0;padding:0}
 .container{max-width:900px;margin:0 auto;padding:20px}
@@ -135,11 +147,11 @@ button{background:#1f6feb;color:#fff;border:none;cursor:pointer}
 function avaliar(){
   const cidade=document.getElementById('cidade').value.trim();
   const bairro=document.getElementById('bairro').value.trim();
-  const area=Number(document.getElementById('area').value)||0;
-  const quartos=Number(document.getElementById('quartos').value)||0;
+  const area=Number(document.getElementById('area').value)0;
+  const quartos=Number(document.getElementById('quartos').value)0;
   const tipo=document.getElementById('tipo').value;
-  const vagas=Number(document.getElementById('vagas').value)||0;
-  if(!cidade||!area||!quartos){
+  const vagas=Number(document.getElementById('vagas').value)0;
+  if(!cidade!area!quartos){
     alert('Preencha cidade, área e quartos para continuar.');
     return;
   }

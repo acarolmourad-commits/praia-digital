@@ -161,7 +161,7 @@
 
 <script>
   const TEMPLATES = {
-    default: document.getElementById('customTemplate').value || '',
+    default: document.getElementById('customTemplate').value  '',
     'followup-d3': 'Olá, passando para acompanhar a proposta do piloto gratuito. Quer que eu envie o onboarding simplificado?',
     'objeção-ja-tenho-ferramenta': 'Entendo. A maioria dos parceiros também já usava ferramenta. A diferença é recomendação por IA + automação leve no WhatsApp. Quer um comparativo objetivo?',
     'agendamento-demo': 'Que tal uma demo de 15 minutos amanhã ou depois? Opções: 09:00, 14:00 ou 16:00.'
@@ -173,7 +173,7 @@
     const headers = lines[0].split(',').map(s=>s.trim());
     return lines.slice(1).filter(Boolean).map(line=>{
       const cols = line.split(',');
-      const obj={}; headers.forEach((h,i)=>obj[h]=(cols[i]||'').trim());
+      const obj={}; headers.forEach((h,i)=>obj[h]=(cols[i]'').trim());
       return obj;
     });
   }
@@ -184,7 +184,7 @@
   async function init(){
     const leads = await loadLeads();
     const cidades = Array.from(new Set(leads.map(r=>r.cidade))).sort();
-    const statuses = Array.from(new Set(leads.map(r=>r.status||'sem_status'))).sort();
+    const statuses = Array.from(new Set(leads.map(r=>r.status'sem_status'))).sort();
     const cidadeEl = document.getElementById('cidade');
     const statusEl = document.getElementById('status');
     cidades.forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c;cidadeEl.appendChild(o);});
@@ -192,19 +192,19 @@
     window.__leads = leads;
   }
   function gerarLote(){
-    const leads = window.__leads || [];
+    const leads = window.__leads  [];
     const cidade = document.getElementById('cidade').value;
     const status = document.getElementById('status').value;
-    const scoreMin = parseInt(document.getElementById('score').value || '0', 10);
+    const scoreMin = parseInt(document.getElementById('score').value  '0', 10);
     const templateKey = document.getElementById('template').value;
-    const custom = document.getElementById('customTemplate').value || '';
+    const custom = document.getElementById('customTemplate').value  '';
     let filtered = leads.filter(r=>{
-      const phone = (r.whatsapp||'').trim();
-      const s = parseInt(r._score || '0', 10);
-      return phone && s >= scoreMin && (!cidade || r.cidade===cidade) && (!status || r.status===status);
+      const phone = (r.whatsapp'').trim();
+      const s = parseInt(r._score  '0', 10);
+      return phone && s >= scoreMin && (!cidade  r.cidade===cidade) && (!status  r.status===status);
     });
-    filtered.sort((a,b)=>parseInt(b._score||'0')-parseInt(a._score||'0'));
-    const tpl = custom || TEMPLATES[templateKey] || TEMPLATES['default'];
+    filtered.sort((a,b)=>parseInt(b._score'0')-parseInt(a._score'0'));
+    const tpl = custom  TEMPLATES[templateKey]  TEMPLATES['default'];
     const grid = document.getElementById('grid');
     grid.innerHTML = '';
     filtered.forEach(r=>{

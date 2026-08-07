@@ -34,7 +34,7 @@
 </script>
 
   <meta charset="UTF-8">
-    ||
+    
 <link rel="preload" as="image" href="https://praia.digital/img/default-home.jpg" type="image/jpeg" fetchpriority="high">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Consulta rápida — Litoral Prime Imóveis</title>
@@ -246,7 +246,7 @@
         const nome = document.getElementById('consulta-nome').value.trim();
         const telefone = document.getElementById('consulta-telefone').value.trim();
         const cidade = document.getElementById('consulta-cidade').value.trim();
-        if (!servico || !nome || !telefone || !cidade) { alert('Preencha todos os campos.'); return; }
+        if (!servico  !nome  !telefone  !cidade) { alert('Preencha todos os campos.'); return; }
         const msg = encodeURIComponent('Olá! Quero ' + servico + '. Nome: ' + nome + ', Telefone: ' + telefone + ', Cidade: ' + cidade);
         window.location.href = 'https://wa.me/5511954346288?text=' + msg;
       });

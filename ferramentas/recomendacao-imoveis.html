@@ -36,7 +36,7 @@
   <meta name="keywords" content="Recomendação Automática de Imóveis | Praia Digital, Voltar para a Praia Digital, imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
   <meta name="description" content="Voltar para a Praia Digital">
   <meta charset="utf-8">
-  ||
+  
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Recomendação Automática de Imóveis | Praia Digital</title>
 <style>
@@ -144,7 +144,7 @@ function gerar(){
   const perfil=document.getElementById('perfil').value;
   const cidade=document.getElementById('cidade').value;
   const orcamento=document.getElementById('orcamento').value;
-  const obs=document.getElementById('obs').value||'Sem observações.';
+  const obs=document.getElementById('obs').value'Sem observações.';
   const texto=`Análise de recomendação\nPerfil: ${perfil}\nCidade: ${cidade}\nOrçamento: R$ ${Number(orcamento).toLocaleString('pt-BR')}\nObservações: ${obs}\n\nSugestão: priorizamos imóveis com boa avaliação, proximidade da praia e potencial de valorização em ${cidade}.`;
   document.getElementById('res').textContent=texto;
 }

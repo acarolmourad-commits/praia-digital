@@ -36,7 +36,7 @@
     <meta name="keywords" content="IA para Investidores — Praia Digital, Praia Digital Home Central de IA Investidores 📈 IA para Investidores Análise fundamentada de oportunidade: ROI, Cap Rate, fluxo de caixa e ranking..., imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
   <meta name="description" content="Praia Digital Home Central de IA Investidores 📈 IA para Investidores Análise fundamentada de oportunidade: ROI, Cap Rate, fluxo de caixa e ranking...">
   <meta charset="UTF-8">
-    ||
+    
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>IA para Investidores — Praia Digital</title>
   <style>
@@ -275,7 +275,7 @@
 </footer>
 
   <script>
-    const fmt = v => 'R$ ' + Number(v||0).toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0});
+    const fmt = v => 'R$ ' + Number(v0).toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0});
     const cityBase = {
       'praia-grande':{cap:5.8,roi:9.1,tax:'Conservador'},
       'santos':{cap:5.0,roi:8.4,tax:'Conservador'},
@@ -292,12 +292,12 @@
     };
 
     function calcInvestor(){
-      const price = Number(document.getElementById('invPrice').value||0);
-      const down = Number(document.getElementById('invDown').value||0);
-      const rent = Number(document.getElementById('invRent').value||0);
-      const exp = Number(document.getElementById('invExp').value||0);
+      const price = Number(document.getElementById('invPrice').value0);
+      const down = Number(document.getElementById('invDown').value0);
+      const rent = Number(document.getElementById('invRent').value0);
+      const exp = Number(document.getElementById('invExp').value0);
       const city = document.getElementById('invCity').value;
-      if(!price || !down || !rent){ alert('Informe preço, entrada e aluguel.'); return; }
+      if(!price  !down  !rent){ alert('Informe preço, entrada e aluguel.'); return; }
       const financed = price - down;
       const grossAnnual = rent * 12;
       const netAnnual = grossAnnual - (exp * 12);
@@ -305,7 +305,7 @@
       const roi = (netAnnual / down) * 100;
       const paybackYears = down / netAnnual;
       const gratuity = netAnnual > 0 ? (price / netAnnual) : null;
-      const base = cityBase[city] || {cap:5.5,roi:8.5,tax:'Conservador'};
+      const base = cityBase[city]  {cap:5.5,roi:8.5,tax:'Conservador'};
       const verdict = roi >= 10 ? 'Oportunidade forte' : roi >= 7 ? 'Oportunidade moderada' : 'Entrada conservadora';
       const notice = roi >= 10 ? 'Excelente retorno relativo à entrada.' : roi >= 7 ? 'Retorno saudável com risco moderado.' : 'Avalie se o fluxo cobre custos e inadimplência.';
 

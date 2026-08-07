@@ -34,9 +34,22 @@
 </script>
 
   <meta charset="UTF-8">
-    ||
+    
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Agendamento de visita automático para imóveis no litoral | Praia Digital</title>
+  <link rel="preconnect" href="https://praia.digital">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://praia.digital/index.html" }
+      { "@type": "ListItem", "position": 2, "name": "Ferramentas Gratuitas", "item": "https://praia.digital/ferramentas-gratuitas/" }
+      { "@type": "ListItem", "position": 3, "name": "Imobiliarias", "item": "https://praia.digital/ferramentas-gratuitas/imobiliarias/" }
+      { "@type": "ListItem", "position": 4, "name": "Agendamento Visita Automatico Litoral", "item": "https://praia.digital/ferramentas-gratuitas/imobiliarias/agendamento-visita-automatico-litoral.html" }
+    ]
+  }
+  </script>
   <meta name="description" content="Ferramenta gratuita para agendamento de visita automático para imóveis no litoral paulista.">
   <link rel="canonical" href="https://praia.digital/ferramentas-gratuitas/imobiliarias/agendamento-visita-automatico-litoral.html">
   <style>
@@ -125,7 +138,7 @@
   <div class="wrap">
     <h1>Agendamento de visita automático</h1>
     <p>Preencha e gere um confirmatório simples.</p>
-    <form onsubmit="event.preventDefault();const n=document.getElementById('n').value||'';const i=document.getElementById('i').value||'';const d=document.getElementById('d').value||'';const h=document.getElementById('h').value||'';const r=document.querySelector('.result');r.style.display='block';r.textContent='Confirmado para '+n+': visita em '+i+' no dia '+d+' às '+h+'. Lembrete automático 24h antes incluso.';" aria-label="Contact form">
+    <form onsubmit="event.preventDefault();const n=document.getElementById('n').value'';const i=document.getElementById('i').value'';const d=document.getElementById('d').value'';const h=document.getElementById('h').value'';const r=document.querySelector('.result');r.style.display='block';r.textContent='Confirmado para '+n+': visita em '+i+' no dia '+d+' às '+h+'. Lembrete automático 24h antes incluso.';" aria-label="Contact form">
       <label>Nome</label>
       <input id="n" placeholder="Nome do lead">
       <label>Imóvel/endereço</label>

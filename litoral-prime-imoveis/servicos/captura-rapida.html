@@ -79,7 +79,7 @@
 </script>
 
   <meta charset="UTF-8">
-    ||
+    
 <link rel="preload" as="image" href="https://praia.digital/img/default-home.jpg" type="image/jpeg" fetchpriority="high">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Captura rápida — Litoral Prime Imóveis</title>
@@ -286,8 +286,8 @@
           const nome = document.getElementById('lead-nome').value.trim();
           const telefone = document.getElementById('lead-telefone').value.trim();
           const interesse = document.getElementById('lead-interesse').value.trim();
-          if (!nome || !telefone) { alert('Preencha nome e WhatsApp.'); return; }
-          const texto = 'Olá! Tenho interesse: ' + (interesse || 'Não informado') + '. Nome: ' + nome + ', WhatsApp: ' + telefone;
+          if (!nome  !telefone) { alert('Preencha nome e WhatsApp.'); return; }
+          const texto = 'Olá! Tenho interesse: ' + (interesse  'Não informado') + '. Nome: ' + nome + ', WhatsApp: ' + telefone;
           window.location.href = 'https://wa.me/5511954346288?text=' + encodeURIComponent(texto);
         });
       })();</script>

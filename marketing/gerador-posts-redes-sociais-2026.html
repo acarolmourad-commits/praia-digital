@@ -35,9 +35,21 @@
 
   <meta name="description" content="Gere legendas curtas para Instagram, LinkedIn e WhatsApp a partir de temas do litoral.">
   <meta charset="UTF-8">
-  ||
+  
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gerador de Posts para Redes Sociais — Praia Digital</title>
+  <link rel="preconnect" href="https://praia.digital">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://praia.digital/index.html" }
+      { "@type": "ListItem", "position": 2, "name": "Marketing", "item": "https://praia.digital/marketing/" }
+      { "@type": "ListItem", "position": 3, "name": "Gerador Posts Redes Sociais 2026", "item": "https://praia.digital/marketing/gerador-posts-redes-sociais-2026.html" }
+    ]
+  }
+  </script>
 <style>
 body{font-family:Arial,Helvetica,sans-serif;background:#0d1117;color:#e6edf3;margin:0;padding:0}
 .container{max-width:900px;margin:0 auto;padding:20px}
@@ -171,7 +183,7 @@ function gerar(){
   const tema=document.getElementById('tema').value;
   const cidade=document.getElementById('cidade').value;
   const canal=document.getElementById('canal').value;
-  if(!tema||!cidade||!canal){
+  if(!tema!cidade!canal){
     alert('Preencha tema, cidade e canal.');
     return;
   }

@@ -127,11 +127,11 @@
   <script>
     const fmt = (n) => n.toLocaleString('pt-BR');
     function calcular(){
-      const inv = Number(document.getElementById('investimento').value)||0;
-      const cpl = Number(document.getElementById('cpl').value)||1;
-      const taxa = Number(document.getElementById('taxa').value)||0;
-      const fech = Number(document.getElementById('fechamento').value)||0;
-      const ticket = Number(document.getElementById('ticket').value)||0;
+      const inv = Number(document.getElementById('investimento').value)0;
+      const cpl = Number(document.getElementById('cpl').value)1;
+      const taxa = Number(document.getElementById('taxa').value)0;
+      const fech = Number(document.getElementById('fechamento').value)0;
+      const ticket = Number(document.getElementById('ticket').value)0;
 
       const leads_brutos = Math.max(0, Math.floor(inv / Math.max(1,cpl)));
       const leads_qualificados = Math.max(0, Math.floor(leads_brutos * (taxa/100)));

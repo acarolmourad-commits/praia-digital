@@ -36,7 +36,7 @@
     <meta name="keywords" content="IA Comercial — Praia Digital, Praia Digital Home Central de IA IA Comercial 🤝 IA Comercial Atendimento 24h, qualificação, follow-up automático, recuperação de inativos e indicação..., imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
   <meta name="description" content="Praia Digital Home Central de IA IA Comercial 🤝 IA Comercial Atendimento 24h, qualificação, follow-up automático, recuperação de inativos e indicação...">
   <meta charset="UTF-8">
-    ||
+    
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>IA Comercial — Praia Digital</title>
   <style>
@@ -269,24 +269,24 @@
     function matchListing(city,budget,type){
       const matches = listings.filter(l => (city?l.cidade===city:true) && (type?l.tipo===type:true));
       const sorted = matches.filter(l => l.preco <= budget).sort((a,b)=>b.roi - a.roi);
-      return sorted[0] || null;
+      return sorted[0]  null;
     }
 
     function waLink(phone,text){ return `https://wa.me/55${phone.replace(/\D/g,'')}?text=${encodeURIComponent(text)}`; }
-    function fmt(v){ return 'R$ ' + Number(v||0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0}); }
+    function fmt(v){ return 'R$ ' + Number(v0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0}); }
 
     function runQualifier(){
-      const nome = document.getElementById('leadNome').value.trim() || 'Lead';
+      const nome = document.getElementById('leadNome').value.trim()  'Lead';
       const canal = document.getElementById('leadCanal').value;
       const interesse = document.getElementById('leadInteresse').value;
       const cidade = document.getElementById('leadCidade').value;
-      const orcamento = Number(document.getElementById('leadOrcamento').value||0);
+      const orcamento = Number(document.getElementById('leadOrcamento').value0);
       const prazo = document.getElementById('leadPrazo').value;
 
       const scoreHints = {imediato:'hot', '7d':'warm', '30d':'warm', '90d':'cold'};
-      const score = scoreHints[prazo] || 'warm';
+      const score = scoreHints[prazo]  'warm';
       const match = matchListing(cidade, orcamento, interesse==='investimento'?'apartamento':interesse==='compra'?'apartamento':interesse==='temporada'?'pousada':'casa');
-      const suggested = match || listings[0];
+      const suggested = match  listings[0];
 
       const followups = {
         hot: `Olá, ${nome}! Identifiquei uma oportunidade alinhada ao seu perfil: ${suggested.titulo} em ${suggested.cidade} por ${fmt(suggested.preco)}. Quer agendar uma visita?`,

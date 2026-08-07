@@ -422,12 +422,12 @@
     
     function loadQueue() {
       try {
-        const saved = JSON.parse(localStorage.getItem(storageKey) || '[]');
+        const saved = JSON.parse(localStorage.getItem(storageKey)  '[]');
         saved.forEach(item => {
           const idx = queue.findIndex(q => q.batch === item.batch);
           if (idx !== -1) {
-            queue[idx].status = item.status || 'pending';
-            queue[idx].date = item.date || '';
+            queue[idx].status = item.status  'pending';
+            queue[idx].date = item.date  '';
           }
         });
       } catch (e) {}
@@ -560,7 +560,7 @@
         item.batch,
         item.cityLabel,
         item.status,
-        item.date || ''
+        item.date  ''
       ]);
       
       const csv = [headers, ...rows].map(r => r.join(',')).join('\\n');

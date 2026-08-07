@@ -29,7 +29,7 @@
 </script>
 
   <meta charset="UTF-8">
-    ||
+    
 <link rel="preload" as="image" href="https://praia.digital/img/default-home.jpg" type="image/jpeg" fetchpriority="high">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Imóveis à venda em São Vicente — Litoral Prime Imóveis</title>
@@ -201,9 +201,9 @@
           const nome = document.getElementById('lead-nome').value.trim();
           const telefone = document.getElementById('lead-telefone').value.trim();
           const horario = document.getElementById('lead-horario').value.trim();
-          if (!nome || !telefone) { alert('Preencha nome e WhatsApp.'); return; }
+          if (!nome  !telefone) { alert('Preencha nome e WhatsApp.'); return; }
           const titulo = document.title.replace(' — Litoral Prime Imóveis', '');
-          const texto = 'Olá! Tenho interesse em imóveis em ' + titulo + '. Nome: ' + nome + ', WhatsApp: ' + telefone + ', Horário: ' + (horario || 'Não informado');
+          const texto = 'Olá! Tenho interesse em imóveis em ' + titulo + '. Nome: ' + nome + ', WhatsApp: ' + telefone + ', Horário: ' + (horario  'Não informado');
           window.location.href = 'https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral"text=' + encodeURIComponent(texto);
         });
       })();</script>

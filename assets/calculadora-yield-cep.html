@@ -204,16 +204,16 @@ async function calcular(){
   const body={
     cep, tipo:document.getElementById('tipo').value,
     quartos:+document.getElementById('quartos').value,
-    banheiros:+document.getElementById('banheiros').value||undefined,
-    hospedes_max:+document.getElementById('hospedes').value||undefined,
-    metragem_m2:+document.getElementById('m2').value||undefined,
+    banheiros:+document.getElementById('banheiros').valueundefined,
+    hospedes_max:+document.getElementById('hospedes').valueundefined,
+    metragem_m2:+document.getElementById('m2').valueundefined,
     comodidades:document.getElementById('comod').value.split(',').map(s=>s.trim()).filter(Boolean),
-    valor_aquisicao:+document.getElementById('valor').value||undefined,
-    custos_fixos_mensais:+document.getElementById('custos').value||undefined
+    valor_aquisicao:+document.getElementById('valor').valueundefined,
+    custos_fixos_mensais:+document.getElementById('custos').valueundefined
   };
   try{
     const r=await fetch(API+"/api/v1/yield/estimate",{method:"POST",headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
-    if(!r.ok){const e=await r.json();throw new Error(e.detail||"erro");}
+    if(!r.ok){const e=await r.json();throw new Error(e.detail"erro");}
     const d=await r.json();
     ultimo=d; ultimoCep=cep; ultimaCidade=d.cep_resolvido.cidade; ultimoYield=d.yield_a_a;
     mostrarResultado(d);
@@ -254,14 +254,14 @@ async function capturarLead(){
   const whats=document.getElementById('lwhats').value.trim();
   const lgpd=document.getElementById('lgpd').checked;
   document.getElementById('err2').textContent="";
-  if(!nome||!whats){document.getElementById('err2').textContent="Nome e WhatsApp são obrigatórios.";return;}
+  if(!nome!whats){document.getElementById('err2').textContent="Nome e WhatsApp são obrigatórios.";return;}
   if(!lgpd){document.getElementById('err2').textContent="É preciso autorizar o contato (LGPD).";return;}
   try{
     const r=await fetch(API+"/api/v1/lead/capture",{method:"POST",headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({nome,whatsapp:whats,email:document.getElementById('lemail').value.trim()||undefined,
+      body:JSON.stringify({nome,whatsapp:whats,email:document.getElementById('lemail').value.trim()undefined,
         cidade:ultimaCidade,cep:ultimoCep,yield_estimado:ultimoYield,consentimento_lgpd:true})});
     const d=await r.json();
-    if(!r.ok)throw new Error(d.detail||"erro");
+    if(!r.ok)throw new Error(d.detail"erro");
     document.getElementById('ok2').classList.remove('hidden');
     document.getElementById('ok2').textContent="✅ Pronto! Enviamos sua simulação no WhatsApp em instantes. (status: "+d.status+")";
     document.getElementById('leadForm').querySelector('button').disabled=true;

@@ -34,9 +34,22 @@
 </script>
 
   <meta charset="UTF-8">
-    ||
+    
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gerador de descrição de imóvel com IA — ferramenta gratuita | Praia Digital</title>
+  <link rel="preconnect" href="https://praia.digital">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://praia.digital/index.html" }
+      { "@type": "ListItem", "position": 2, "name": "Ferramentas Gratuitas", "item": "https://praia.digital/ferramentas-gratuitas/" }
+      { "@type": "ListItem", "position": 3, "name": "Imobiliarias", "item": "https://praia.digital/ferramentas-gratuitas/imobiliarias/" }
+      { "@type": "ListItem", "position": 4, "name": "Gerador Descricao Ia", "item": "https://praia.digital/ferramentas-gratuitas/imobiliarias/gerador-descricao-ia.html" }
+    ]
+  }
+  </script>
   <meta name="description" content="Gerador de descrição de imóvel com IA gratuito para corretores e imobiliárias no litoral paulista.">
   <link rel="canonical" href="https://praia.digital/ferramentas-gratuitas/imobiliarias/gerador-descricao-ia.html">
   <style>
@@ -125,7 +138,7 @@
   <div class="wrap">
     <h1>Gerador de descrição de imóvel com IA</h1>
     <p>Preencha os dados e gere uma descrição objetiva.</p>
-    <form onsubmit="event.preventDefault();const t=document.getElementById('tipo').value;const c=document.getElementById('cidade').value;const p=parseInt(document.getElementById('preco').value)||0;const a=parseInt(document.getElementById('area').value)||0;const q=parseInt(document.getElementById('quartos').value)||0;const r=document.querySelector('.result');r.style.display='block';r.textContent=t+' em '+c+', '+q+' quartos, '+a+' m². Valor: R$ '+p.toLocaleString('pt-BR')+'. Descrição pronta para WhatsApp, e-mail e anúncio.';" aria-label="Contact form">
+    <form onsubmit="event.preventDefault();const t=document.getElementById('tipo').value;const c=document.getElementById('cidade').value;const p=parseInt(document.getElementById('preco').value)0;const a=parseInt(document.getElementById('area').value)0;const q=parseInt(document.getElementById('quartos').value)0;const r=document.querySelector('.result');r.style.display='block';r.textContent=t+' em '+c+', '+q+' quartos, '+a+' m². Valor: R$ '+p.toLocaleString('pt-BR')+'. Descrição pronta para WhatsApp, e-mail e anúncio.';" aria-label="Contact form">
       <label>Tipo</label>
       <select id="tipo">
         <option>Apartamento</option><option>Casa</option><option>Cobertura</option><option>Studio</option><option>Sobrado</option>

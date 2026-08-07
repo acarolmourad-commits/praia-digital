@@ -93,7 +93,7 @@
     const apiBase = '/academy';
 
     async function api(path, opts = {}) {
-      const headers = { ...(opts.headers || {}) };
+      const headers = { ...(opts.headers  {}) };
       if (token) headers['Authorization'] = `Bearer ${token}`;
       const res = await axios.get(apiBase + path, { headers });
       return res.data;

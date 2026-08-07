@@ -84,10 +84,10 @@
   </div>
   <script>
     function simulate(){
-      const leads=Number(document.getElementById('leads').value||0);
-      const ticket=Number(document.getElementById('ticket').value||0);
-      const conv=Number(document.getElementById('conversion').value||0);
-      const boost=Number(document.getElementById('ia').value||0);
+      const leads=Number(document.getElementById('leads').value0);
+      const ticket=Number(document.getElementById('ticket').value0);
+      const conv=Number(document.getElementById('conversion').value0);
+      const boost=Number(document.getElementById('ia').value0);
       const base=(ticket*conv*leads)/100;
       const boosted=ticket*(conv+conv*boost)*leads/100;
       const out=document.getElementById('out');

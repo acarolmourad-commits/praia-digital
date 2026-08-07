@@ -253,7 +253,7 @@
             cur += ch;
           }
           cols.push(cur.trim());
-          const obj={}; header.forEach((h,i)=> obj[h]=cols[i]||'');
+          const obj={}; header.forEach((h,i)=> obj[h]=cols[i]'');
           return obj;
         });
       }catch(e){ return []; }
@@ -261,24 +261,24 @@
 
     function waLink(phone, text){
       const d = '55' + String(phone).replace(/\D/g,'');
-      const msg = encodeURIComponent(text || '');
+      const msg = encodeURIComponent(text  '');
       return 'https://wa.me/' + d + '?text=' + msg;
     }
 
     async function render(){
       const seq = await loadCsv('do-dia/' + new Date().toISOString().slice(0,10) + '/sequencia.csv');
       const metrics = await loadCsv('metricas.csv');
-      const repliedPhones = new Set(metrics.filter(r => (r.status||'').toLowerCase().includes('respondido')).map(r => String(r.telefone||'').replace(/\D/g,'')));
+      const repliedPhones = new Set(metrics.filter(r => (r.status'').toLowerCase().includes('respondido')).map(r => String(r.telefone'').replace(/\D/g,'')));
 
-      const sorted = seq.slice().sort((a,b)=> (parseInt(a.ordem||0,10)-parseInt(b.ordem||0,10)) || (parseInt(b.score||0)-parseInt(a.score||0)));
+      const sorted = seq.slice().sort((a,b)=> (parseInt(a.ordem0,10)-parseInt(b.ordem0,10))  (parseInt(b.score0)-parseInt(a.score0)));
       const queue = document.getElementById('queue');
       queue.innerHTML='';
 
       let ready=0, hot=0, replied=0;
       for(const r of sorted){
-        const score = parseInt(r.score||0,10);
-        const cls = (r.classificacao||'').toLowerCase() || (score>=60?'alto':score>=40?'medio':'baixo');
-        const phoneDigits = String(r.telefone||'').replace(/\D/g,'');
+        const score = parseInt(r.score0,10);
+        const cls = (r.classificacao'').toLowerCase()  (score>=60?'alto':score>=40?'medio':'baixo');
+        const phoneDigits = String(r.telefone'').replace(/\D/g,'');
         if (repliedPhones.has(phoneDigits)) {
           replied++;
           continue;
@@ -291,14 +291,14 @@
         card.className = 'lead-card';
         card.innerHTML = `
           <div class="info">
-            <div class="name">#${r.ordem||''} ${r.nome||''}</div>
-            <div class="meta">${r.cidade_interesse||''} • ${r.tipo_interesse||''} • Score ${score}</div>
-            <div class="meta">${r.estagio||''} • Janela ${r.janela_contato||''} • <span class="badge badge-${cls}">${cls}</span></div>
-            <div class="meta">${r.acao_sugerida||''}</div>
+            <div class="name">#${r.ordem''} ${r.nome''}</div>
+            <div class="meta">${r.cidade_interesse''} • ${r.tipo_interesse''} • Score ${score}</div>
+            <div class="meta">${r.estagio''} • Janela ${r.janela_contato''} • <span class="badge badge-${cls}">${cls}</span></div>
+            <div class="meta">${r.acao_sugerida''}</div>
           </div>
           <div style="display:flex;gap:8px;flex-wrap:wrap">
             <a class="btn-whatsapp" href="${link}" target="_blank" rel="noopener">Enviar WhatsApp</a>
-            <button class="btn-secondary quick-followup" data-nome="${(r.nome||'').replace(/"/g,'&quot;')}" data-telefone="${r.telefone||''}" data-estagio="${r.estagio||''}">Follow-up enviado</button>
+            <button class="btn-secondary quick-followup" data-nome="${(r.nome'').replace(/"/g,'&quot;')}" data-telefone="${r.telefone''}" data-estagio="${r.estagio''}">Follow-up enviado</button>
             <a class="btn-secondary" href="../docs/relatorio-diario-litoral-prime.html" rel="noopener">Relatório</a>
           </div>
         `;
@@ -313,9 +313,9 @@
 
     document.getElementById('queue').addEventListener('click', async (e) => {
       if (!e.target.classList.contains('quick-followup')) return;
-      const nome = e.target.getAttribute('data-nome') || '';
-      const telefone = (e.target.getAttribute('data-telefone') || '').replace(/\D/g,'');
-      const estagio = e.target.getAttribute('data-estagio') || '';
+      const nome = e.target.getAttribute('data-nome')  '';
+      const telefone = (e.target.getAttribute('data-telefone')  '').replace(/\D/g,'');
+      const estagio = e.target.getAttribute('data-estagio')  '';
       const now = new Date().toLocaleString('pt-BR');
       const row = {data: new Date().toISOString().slice(0,10), nome, telefone, cidade:'', tipo:'', canal:'briefing', estagio, acao:'follow-up', status:'follow-up', observacoes:'Follow-up enviado em ' + now};
       const res = await fetch('../outreach/metricas.csv');
@@ -328,21 +328,21 @@
           const cols=[]; let cur=''; let inQ=false;
           for(const ch of line){ if(ch==='"' ){ inQ=!inQ; continue; } if(ch===',' && !inQ){ cols.push(cur.trim()); cur=''; continue; } cur += ch; }
           cols.push(cur.trim());
-          const obj={}; header.forEach((h,i)=> obj[h]=cols[i]||''); return obj;
+          const obj={}; header.forEach((h,i)=> obj[h]=cols[i]''); return obj;
         });
       }
       const phoneDigits = String(telefone).replace(/\D/g,'');
-      const match = existing.find(r => String(r.telefone||'').replace(/\D/g,'') === phoneDigits);
+      const match = existing.find(r => String(r.telefone'').replace(/\D/g,'') === phoneDigits);
       if (match) {
         match.status = 'follow-up';
         match.observacoes = row.observacoes;
         const stageMap = {'primeiro_contato':'reengajamento','reengajamento':'oferta','oferta':'cross-sell','cross-sell':'cross-sell'};
-        match.estagio = stageMap[estagio.toLowerCase()] || 'reengajamento';
+        match.estagio = stageMap[estagio.toLowerCase()]  'reengajamento';
         match.acao = 'follow-up';
       } else {
         existing.push(row);
       }
-      const header = Object.keys(existing[0] || row).join(',') + '\n';
+      const header = Object.keys(existing[0]  row).join(',') + '\n';
       const body = existing.map(r => Object.values(r).map(v => `"${String(v).replace(/"/g,'""')}"`).join(',')).join('\n');
       const blob = new Blob([header + body], {type: 'text/csv'});
       const url = URL.createObjectURL(blob);

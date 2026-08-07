@@ -225,18 +225,18 @@
 
   <script>
     const STORAGE_KEY = "litoralprime.sent.v1";
-    function loadSentSet(){ try { const raw = localStorage.getItem(STORAGE_KEY); const obj = raw ? JSON.parse(raw) : {}; if(obj.date==="2026-07-24") return new Set(obj.phones||[]); return new Set(); } catch(e){ return new Set(); } }
+    function loadSentSet(){ try { const raw = localStorage.getItem(STORAGE_KEY); const obj = raw ? JSON.parse(raw) : {}; if(obj.date==="2026-07-24") return new Set(obj.phones[]); return new Set(); } catch(e){ return new Set(); } }
     function saveSentSet(set){ const obj = { date: "2026-07-24", phones: Array.from(set) }; localStorage.setItem(STORAGE_KEY, JSON.stringify(obj)); }
     let sentSet = loadSentSet();
 
     function render(){
-      const rows = JSON.parse(document.getElementById('data-rows').textContent || '[]');
+      const rows = JSON.parse(document.getElementById('data-rows').textContent  '[]');
       const cityFilter = document.getElementById('city-filter').value;
       const statusFilter = document.getElementById('status-filter').value;
       const filtered = rows.filter(r => {
-        const phone = (r.telefone||'').trim();
+        const phone = (r.telefone'').trim();
         const isSent = sentSet.has(phone);
-        const city = (r.cidade_interesse||'').trim();
+        const city = (r.cidade_interesse'').trim();
         if(cityFilter && city !== cityFilter) return false;
         if(statusFilter==='sent' && !isSent) return false;
         if(statusFilter==='pending' && isSent) return false;
@@ -247,34 +247,34 @@
       tbody.innerHTML="";
       const counts={Santos:0,Guarujá:0,'Praia Grande':0,'São Vicente':0,Bertioga:0,Itanhaém:0,Mongaguá:0,'Peruíbe':0,sent:0,pending:0,total:filtered.length};
       for(const r of filtered){
-        const cityKey = (r.cidade_interesse||'').trim();
-        if(cityKey) counts[cityKey]=(counts[cityKey]||0)+1;
-        const phoneKey = (r.telefone||'').trim();
+        const cityKey = (r.cidade_interesse'').trim();
+        if(cityKey) counts[cityKey]=(counts[cityKey]0)+1;
+        const phoneKey = (r.telefone'').trim();
         const isSent = sentSet.has(phoneKey);
-        if(isSent) counts.sent=(counts.sent||0)+1; else counts.pending=(counts.pending||0)+1;
+        if(isSent) counts.sent=(counts.sent0)+1; else counts.pending=(counts.pending0)+1;
 
-        const rawLink = (r.whatsapp_link || '').trim();
-        const builtLink = r.telefone ? `https://wa.me/${r.telefone}?text=${encodeURIComponent(r.mensagem || '')}` : '';
-        const href = rawLink || builtLink;
+        const rawLink = (r.whatsapp_link  '').trim();
+        const builtLink = r.telefone ? `https://wa.me/${r.telefone}?text=${encodeURIComponent(r.mensagem  '')}` : '';
+        const href = rawLink  builtLink;
         const sendBtn = href ? `<a class="btn" href="${href}" target="_blank" rel="noopener">Enviar</a>` : "-";
         const markBtn = isSent ? `<button class="btn-undo" data-phone="${phoneKey}">Desfazer</button>` : `<button class="btn-sent" data-phone="${phoneKey}">Marcado</button>`;
 
         const tr=document.createElement('tr');
         if(isSent) tr.classList.add('sent-row');
-        tr.innerHTML=`<td>${r.nome||""}</td><td>${r.telefone||""}</td><td>${r.cidade_interesse||""}</td><td>${r.tipo_interesse||""}</td><td>${(r.mensagem||"").slice(0,110)}</td><td>${isSent ? "Enviado" : "Pendente"}</td><td>${sendBtn} ${markBtn}</td>`;
+        tr.innerHTML=`<td>${r.nome""}</td><td>${r.telefone""}</td><td>${r.cidade_interesse""}</td><td>${r.tipo_interesse""}</td><td>${(r.mensagem"").slice(0,110)}</td><td>${isSent ? "Enviado" : "Pendente"}</td><td>${sendBtn} ${markBtn}</td>`;
         tbody.appendChild(tr);
       }
       document.getElementById('v-total').textContent=counts.total;
-      document.getElementById('v-santos').textContent=counts['Santos']||0;
-      document.getElementById('v-guaruja').textContent=counts['Guarujá']||0;
-      document.getElementById('v-pg').textContent=counts['Praia Grande']||0;
-      document.getElementById('v-sv').textContent=counts['São Vicente']||0;
-      document.getElementById('v-berta').textContent=counts['Bertioga']||0;
-      document.getElementById('v-it').textContent=counts['Itanhaém']||0;
-      document.getElementById('v-mon').textContent=counts['Mongaguá']||0;
-      document.getElementById('v-per').textContent=counts['Peruíbe']||0;
-      document.getElementById('v-sent').textContent=counts.sent||0;
-      document.getElementById('v-pending').textContent=counts.pending||0;
+      document.getElementById('v-santos').textContent=counts['Santos']0;
+      document.getElementById('v-guaruja').textContent=counts['Guarujá']0;
+      document.getElementById('v-pg').textContent=counts['Praia Grande']0;
+      document.getElementById('v-sv').textContent=counts['São Vicente']0;
+      document.getElementById('v-berta').textContent=counts['Bertioga']0;
+      document.getElementById('v-it').textContent=counts['Itanhaém']0;
+      document.getElementById('v-mon').textContent=counts['Mongaguá']0;
+      document.getElementById('v-per').textContent=counts['Peruíbe']0;
+      document.getElementById('v-sent').textContent=counts.sent0;
+      document.getElementById('v-pending').textContent=counts.pending0;
       document.getElementById('export-btn').onclick=()=>{
         const blob=new Blob([document.getElementById('rows').innerText],{type:'text/csv'});
         const url=URL.createObjectURL(blob);
@@ -295,7 +295,7 @@
     function populateCityFilter(){
       const sel=document.getElementById('city-filter');
       ['','Santos','Guarujá','Praia Grande','São Vicente','Bertioga','Itanhaém','Mongaguá','Peruíbe'].forEach(city=>{
-        const o=document.createElement('option'); o.value=city; o.textContent=city||'Todas as cidades'; sel.appendChild(o);
+        const o=document.createElement('option'); o.value=city; o.textContent=city'Todas as cidades'; sel.appendChild(o);
       });
       sel.onchange=()=>render();
     }

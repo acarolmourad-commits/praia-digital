@@ -161,12 +161,12 @@ function enviar(){
   const cidade=document.getElementById('cidade').value;
   const modelo=document.getElementById('modelo').value;
   const mensagem=document.getElementById('mensagem').value.trim();
-  if(!nome||!imobiliaria||!email||!telefone||!cidade||!modelo){
+  if(!nome!imobiliaria!email!telefone!cidade!modelo){
     alert('Preencha todos os campos.');
     return;
   }
   const r=document.getElementById('resultado');
-  r.textContent='Interesse registrado.\n\nEm breve entraremos em contato.\n\nResumo:\n- Nome: '+nome+'\n- Imobiliária: '+imobiliaria+'\n- E-mail: '+email+'\n- Telefone: '+telefone+'\n- Cidade: '+cidade+'\n- Modelo: '+modelo+'\n- Mensagem: '+(mensagem||'-')+'\n\nContato: comercial@praia.digital | (11) 95434-6288';
+  r.textContent='Interesse registrado.\n\nEm breve entraremos em contato.\n\nResumo:\n- Nome: '+nome+'\n- Imobiliária: '+imobiliaria+'\n- E-mail: '+email+'\n- Telefone: '+telefone+'\n- Cidade: '+cidade+'\n- Modelo: '+modelo+'\n- Mensagem: '+(mensagem'-')+'\n\nContato: comercial@praia.digital | (11) 95434-6288';
   r.style.display='block';
 }
 </script>

@@ -34,7 +34,7 @@
 </script>
 
 <meta charset="UTF-8">
-  ||
+  
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vale a pena comprar? | Praia Digital</title>
 <meta name="keywords" content="Vale a pena comprar? | Praia Digital, Simulador de viabilidade imobiliária: preço, entrada, financiamento e objetivo no litoral paulista., imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
@@ -143,15 +143,15 @@ a{color:#38bdf8;text-decoration:none}
 <script>
 function fmt(v){return typeof v==='number'?'R$ '+v.toLocaleString('pt-BR'):String(v)}
 function analisar(){
-  const cidade=(document.getElementById('cidade').value||'Litoral').trim();
-  const preco=parseFloat(document.getElementById('preco').value)||0;
-  const entrada=parseFloat(document.getElementById('entrada').value)||0;
-  const financiamento=parseFloat(document.getElementById('financiamento').value)||0;
-  const objetivo=(document.getElementById('objetivo').value||'Investimento').trim();
+  const cidade=(document.getElementById('cidade').value'Litoral').trim();
+  const preco=parseFloat(document.getElementById('preco').value)0;
+  const entrada=parseFloat(document.getElementById('entrada').value)0;
+  const financiamento=parseFloat(document.getElementById('financiamento').value)0;
+  const objetivo=(document.getElementById('objetivo').value'Investimento').trim();
   const score=Math.min(10, Math.max(1, +(7.5 + Math.random()*2.1).toFixed(1)));
   const valoracao=Math.min(18, Math.max(3, +(preco*0.0045).toFixed(1)));
   const diariaBase=Math.min(1200, Math.max(180, Math.round(preco*0.0018)));
-  const airbnbYield=Math.min(14, Math.max(2.5, +(preco?((diariaBase*180)/(preco||1))*100:0).toFixed(1)));
+  const airbnbYield=Math.min(14, Math.max(2.5, +(preco?((diariaBase*180)/(preco1))*100:0).toFixed(1)));
   const perfil=objetivo.includes('temporada')?'Perfil: temporada / curta estadia':
                objetivo.includes('anual')?'Perfil: aluguel anual / caixa recorrente':
                objetivo.includes('consórcio')?'Perfil: consórcio / médio prazo':

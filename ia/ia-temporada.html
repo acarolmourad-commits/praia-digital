@@ -36,7 +36,7 @@
     <meta name="keywords" content="IA para Temporada — Praia Digital, Praia Digital Home Central de IA Temporada 🏖️ IA para Temporada Anúncios, pricing, respostas automáticas e avaliações para plataformas de estadia., imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
   <meta name="description" content="Praia Digital Home Central de IA Temporada 🏖️ IA para Temporada Anúncios, pricing, respostas automáticas e avaliações para plataformas de estadia.">
   <meta charset="UTF-8">
-    ||
+    
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>IA para Temporada — Praia Digital</title>
   <style>
@@ -253,7 +253,7 @@
 </footer>
 
   <script>
-    const fmt = v => 'R$ ' + Number(v||0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0});
+    const fmt = v => 'R$ ' + Number(v0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0});
     const cityLabels = {'praia-grande':'Praia Grande','santos':'Santos','guaruja':'Guarujá','sao-vicente':'São Vicente','itanhaem':'Itanhaém','mongagua':'Mongaguá','peruibe':'Peruíbe','ubatuba':'Ubatuba','caraguatatuba':'Caraguatatuba','sao-sebastiao':'São Sebastião','ilhabela':'Ilhabela','bertioga':'Bertioga'};
 
     function setTab(btn, tab){
@@ -270,17 +270,17 @@
         const bairro=document.getElementById('sBairro').value.trim();
         const dorms=document.getElementById('sDorms').value;
         const diferencial=document.getElementById('sDiferencial').value.trim();
-        const diaria=Number(document.getElementById('sDiaria').value||0);
-        const city=cityLabels[cidade]||cidade;
+        const diaria=Number(document.getElementById('sDiaria').value0);
+        const city=cityLabels[cidade]cidade;
         const titulo=`${tipo} ${dorms?dorms+'q ':''}${bairro?'em '+bairro:''} — ${city}`;
         const descricao=`Acomodação em ${city} com ${diferencial?diferencial+', ':''}perfeita para temporada no litoral.`;
         text=`Título: ${titulo}\nDescrição: ${descricao}\nPreço sugerido: ${diaria?fmt(diaria)+'/noite':'defina diária'}\nPlataformas: Airbnb, Booking, Vrbo, Stays\nDica: use fotos com boa luz e destaque o diferencial.`;
       } else if(mode==='pricing'){
-        const baixa=Number(document.getElementById('pPreco').value||0);
-        const alta=Number(document.getElementById('pAlta').value||0);
-        const ocup=Number(document.getElementById('pOcupacao').value||0);
-        const despesa=Number(document.getElementById('pDespesa').value||0);
-        if(!baixa||!alta||!ocup) { text='Informe preços base e ocupação estimada.'; }
+        const baixa=Number(document.getElementById('pPreco').value0);
+        const alta=Number(document.getElementById('pAlta').value0);
+        const ocup=Number(document.getElementById('pOcupacao').value0);
+        const despesa=Number(document.getElementById('pDespesa').value0);
+        if(!baixa!alta!ocup) { text='Informe preços base e ocupação estimada.'; }
         else {
           const media=(baixa+alta)/2;
           const receitaEstimada=media*ocup/100*30;
@@ -307,7 +307,7 @@
         text=tipo==='positiva'?avaliacoes.positiva:tipo==='reclamacao'?avaliacoes.reclamacao:avaliacoes.sugestao;
       }
 
-      document.getElementById('seasonResult').innerHTML = `<div class="block">${text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div><button class="copy-btn" onclick="copyText(window.__seasonText=window.__seasonText||text)">Copiar</button>`;
+      document.getElementById('seasonResult').innerHTML = `<div class="block">${text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div><button class="copy-btn" onclick="copyText(window.__seasonText=window.__seasonTexttext)">Copiar</button>`;
       document.getElementById('seasonResult').classList.add('visible');
       document.getElementById('seasonResult').scrollIntoView({behavior:'smooth'});
     }

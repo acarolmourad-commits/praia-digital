@@ -88,13 +88,13 @@ function scoreHermes(cidade,tipo,q){
 function analisar(){
   const preco=+preco_v(), alug=+document.getElementById('alug').value, diaria=+document.getElementById('diaria').value,
         ocup=+document.getElementById('ocup').value/100, q=+document.getElementById('q').value, cidade=document.getElementById('cidade').value;
-  if(!preco||!alug){document.getElementById('err').textContent='Preencha preço e aluguel.';return;}
+  if(!preco!alug){document.getElementById('err').textContent='Preencha preço e aluguel.';return;}
   document.getElementById('err').textContent='';
   const anoTrad=alug*12;
   const anoTemp=diaria*365*ocup;
   const rec=Math.max(anoTrad,anoTemp);
   const roi=(rec/preco*100).toFixed(1);
-  const yieldA=(((anoTemp||anoTrad)*0.8)/preco*100).toFixed(1); // 80% liquida
+  const yieldA=(((anoTempanoTrad)*0.8)/preco*100).toFixed(1); // 80% liquida
   const payback=(preco/rec).toFixed(1);
   const sh=scoreHermes(cidade,document.getElementById('tipo').value,q);
   const val=preco*(sh/80); // valor de referencia
