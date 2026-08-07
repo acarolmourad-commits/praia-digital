@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pathlib import Path
 from academy.core.database import engine, Base
-from academy.core.middleware import RequestLoggingMiddleware, ErrorHandlerMiddleware, SecurityHeadersMiddleware
+from academy.core.middleware import RequestLoggingMiddleware, ErrorHandlerMiddleware, SecurityHeadersMiddleware, RateLimitMiddleware
 from academy.routers import auth, courses, academy, admin, payments, recommendations, automation, automation_whatsapp, certificates, monitoring, automation_email, leads, admin_leads
 import os
 
@@ -12,6 +12,7 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI(title="Praia Digital Academy API", version="0.2.0")
 
 # Middlewares
+app.add_middleware(RateLimitMiddleware)
 app.add_middleware(SecurityHeadersMiddleware)
 app.add_middleware(ErrorHandlerMiddleware)
 app.add_middleware(RequestLoggingMiddleware)
