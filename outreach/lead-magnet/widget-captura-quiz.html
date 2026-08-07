@@ -178,7 +178,7 @@
     };
     const key = 'praiaQuizLeads';
     let arr = [];
-    try { arr = JSON.parse(localStorage.getItem(key) || '[]'); } catch (e) {}
+    try { arr = JSON.parse(localStorage.getItem(key)  '[]'); } catch (e) {}
     arr.push(data);
     localStorage.setItem(key, JSON.stringify(arr));
     form.style.display = 'none';

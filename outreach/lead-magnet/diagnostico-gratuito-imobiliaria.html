@@ -304,7 +304,7 @@
 </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEST1234"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer  [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-TEST1234', { anonymize_ip: true });
@@ -521,12 +521,12 @@
       };
       
       // Store lead
-      let leads = JSON.parse(localStorage.getItem('praiaDigitalLeads') || '[]');
+      let leads = JSON.parse(localStorage.getItem('praiaDigitalLeads')  '[]');
       leads.push(lead);
       localStorage.setItem('praiaDigitalLeads', JSON.stringify(leads));
       
       // Also store as CSV-ready JSON for the processor script
-      let quizLeads = JSON.parse(localStorage.getItem('praiaQuizLeads') || '[]');
+      let quizLeads = JSON.parse(localStorage.getItem('praiaQuizLeads')  '[]');
       quizLeads.push(lead);
       localStorage.setItem('praiaQuizLeads', JSON.stringify(quizLeads));
       

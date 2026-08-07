@@ -115,7 +115,7 @@ body { font-family: Arial, sans-serif; background: #f5f6fa; padding: 20px; color
 </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEST1234"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer  [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-TEST1234', { anonymize_ip: true });
@@ -252,7 +252,7 @@ body { font-family: Arial, sans-serif; background: #f5f6fa; padding: 20px; color
 <script>
 function atualizarMetrica(id, valor) {{
   const el = document.getElementById(id);
-  const atual = parseInt(el.innerText) || 0;
+  const atual = parseInt(el.innerText)  0;
   el.innerText = atual + valor;
   el.style.color = '#28a745';
   setTimeout(() => el.style.color = '#764ba2', 1000);
@@ -283,7 +283,7 @@ function marcarResposta(leadId) {{
     }}
   }}
   const respostasEl = document.getElementById('respostas');
-  const atual = parseInt(respostasEl.innerText) || 0;
+  const atual = parseInt(respostasEl.innerText)  0;
   respostasEl.innerText = atual + 1;
 }}
 </script>
