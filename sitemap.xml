@@ -146,7 +146,7 @@
   </url>
   <url>
     <loc>https://praia.digital/bairros/guaruja/index.html</loc>
-    <lastmod>2026-08-07T03:32:32Z</lastmod>
+    <lastmod>2026-08-07T04:05:42Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -194,7 +194,7 @@
   </url>
   <url>
     <loc>https://praia.digital/bairros/praia-grande/index.html</loc>
-    <lastmod>2026-08-07T03:34:47Z</lastmod>
+    <lastmod>2026-08-07T04:05:42Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -9308,7 +9308,7 @@
   </url>
   <url>
     <loc>https://praia.digital/cidades/guaruja.html</loc>
-    <lastmod>2026-08-07T03:59:37Z</lastmod>
+    <lastmod>2026-08-07T04:05:42Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -9698,7 +9698,7 @@
   </url>
   <url>
     <loc>https://praia.digital/cidades/praia-grande.html</loc>
-    <lastmod>2026-08-07T03:59:37Z</lastmod>
+    <lastmod>2026-08-07T04:05:42Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -57471,6 +57471,30 @@
   <url>
     <loc>https://praia.digital/bairros/sao-sebastiao/vila-veneza.html</loc>
     <lastmod>2026-08-07T03:58:55Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/guaruja/vila-sao-paulo.html</loc>
+    <lastmod>2026-08-07T04:05:42Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/guaruja/jardim-veneza.html</loc>
+    <lastmod>2026-08-07T04:05:42Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/praia-grande/vila-sao-paulo.html</loc>
+    <lastmod>2026-08-07T04:05:42Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/praia-grande/jardim-veneza.html</loc>
+    <lastmod>2026-08-07T04:05:42Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
