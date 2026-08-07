@@ -1,6 +1,7 @@
 import time
 import logging
 import re
+import uuid
 from fastapi import Request
 from fastapi.responses import JSONResponse
 
@@ -22,6 +23,7 @@ class RequestLoggingMiddleware:
             return
 
         request = Request(scope, receive)
+        request_id = request.headers.get("x-request-id", str(uuid.uuid4()))
         start = time.time()
         try:
             response = await self.app(scope, receive, send)
@@ -32,6 +34,7 @@ class RequestLoggingMiddleware:
         logger.info(
             "request",
             extra={
+                "request_id": request_id,
                 "method": request.method,
                 "path": request.url.path,
                 "status": getattr(response, "status_code", "ERR"),

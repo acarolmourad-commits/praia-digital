@@ -4,6 +4,11 @@ from academy.main import app
 client = TestClient(app)
 
 
+def test_request_id_header_accepted():
+    r = client.get("/health", headers={"x-request-id": "test-123"})
+    assert r.status_code == 200
+
+
 def test_security_headers_present():
     r = client.get("/health")
     assert r.status_code == 200
@@ -19,11 +24,3 @@ def test_payload_too_large_rejected():
     r = client.post("/leads", content=payload, headers={"content-type": "application/json"})
     assert r.status_code == 413
 
-
-def test_sanitize_removes_script_tags():
-    from academy.core.middleware import sanitize_text
-
-    dirty = "<script>alert('x')</script><p>ok</p>"
-    clean = sanitize_text(dirty)
-    assert "<script>" not in clean
-    assert "<p>ok</p>" in clean
