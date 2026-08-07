@@ -53,6 +53,38 @@
         <li>Material reutilizável para campanhas mensais</li>
       </ul>
 
+      
+      <h2>Vantagens</h2>
+      <ul>
+        <li>Conteúdo alinhado ao mercado imobiliário do litoral.</li>
+        <li>Fotografia e vídeo que destacam diferenciais.</li>
+        <li>Copy comercial para anúncios e landing pages.</li>
+        <li>Material reutilizável para campanhas mensais.</li>
+      </ul>
+
+      <h2>Processo</h2>
+      <ul>
+        <li>Briefing do imóvel e objetivos de venda/locação.</li>
+        <li>Produção de fotos, vídeos e roteiros.</li>
+        <li>Criação de copy e estrutura de anúncio.</li>
+        <li>Acompanhamento de desempenho e otimização.</li>
+      </ul>
+
+    <div id="lm-form" style="margin-top:18px">
+      <h2>Quero receber mais informações</h2>
+      <form id="leadForm">
+        <input type="text" id="name" placeholder="Seu nome" required />
+        <input type="email" id="email" placeholder="Seu e-mail" />
+        <input type="tel" id="phone" placeholder="Seu WhatsApp" />
+        <input type="hidden" id="city" value="" />
+        <input type="hidden" id="source" value="servico" />
+        <input type="hidden" id="magnet" value="" />
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="formStatus"></p>
+    </div>
+    <script>(function(){var form=document.getElementById("leadForm");if(!form) return;form.addEventListener("submit",function(e){e.preventDefault();var data={name:document.getElementById("name").value.trim(),email:document.getElementById("email").value.trim()||null,phone:document.getElementById("phone").value.trim()||null,city:document.getElementById("city").value||null,source:document.getElementById("source").value||null,magnet:document.getElementById("magnet").value||null};fetch("https://academy.praia.digital/leads",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)}).then(function(r){return r.json().then(function(json){return {status:r.status,json:json};});}).then(function(res){document.getElementById("formStatus").textContent=res.status===200?"Recebido! Entraremos em contato.":"Erro: "+JSON.stringify(res.json);}).catch(function(){document.getElementById("formStatus").textContent="Erro de conexão. Tente novamente.";});});})();</script>
+
       <a class="btn-whatsapp" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20m%C3%ADdia%20profissional&utm_source=site&utm_medium=whatsapp&utm_campaign=midia-profissional" target="_blank" rel="noopener">Quero mídia profissional</a>
     </main>
 
