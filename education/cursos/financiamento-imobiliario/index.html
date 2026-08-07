@@ -3,22 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Financiamento Imobiliário sem Complicação — Praia Digital Academy
-  <link rel="preconnect" href="https://praia.digital">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://praia.digital/index.html" }
-      { "@type": "ListItem", "position": 2, "name": "Academy", "item": "https://praia.digital/education/" }
-      { "@type": "ListItem", "position": 3, "name": "Cursos", "item": "https://praia.digital/education/cursos/" }
-      { "@type": "ListItem", "position": 4, "name": "Financiamento Imobiliario", "item": "https://praia.digital/education/cursos/financiamento-imobiliario/" }
-      { "@type": "ListItem", "position": 5, "name": "Index", "item": "https://praia.digital/education/cursos/financiamento-imobiliario/index.html" }
-    ]
-  }
-  </script></title>
-  <meta property="og:type" content="website">
+  <title>Financiamento Imobiliário sem Complicação — Praia Digital Academy</title>
+<meta property="og:type" content="website">
   <meta property="og:title" content="Financiamento Imobiliário sem Complicação — Praia Digital Academy">
   <meta property="og:description" content="Guia prático para simular, comparar e aprovar financiamento imobiliário no litoral.">
   <meta property="og:url" content="https://praia.digital/education/cursos/financiamento-imobiliario/index.html">
@@ -99,6 +85,64 @@
         <div class="card"><a href="/education/cursos/marketing-imobiliario/index.html">Marketing Imobiliario</a><p style="opacity:.75; margin-top:6px;">Curso complementar da Academy.</p></div>
         <div class="card"><a href="/education/cursos/prospeccao-para-corretores/index.html">Prospeccao Para Corretores</a><p style="opacity:.75; margin-top:6px;">Curso complementar da Academy.</p></div>
       </div>
+<h2>Sobre este curso</h2>
+<p>Curso prático com exemplos e cálculos simplificados para o litoral.</p>
+<h2>Para quem é</h2>
+<p>Quem quer resultados previsíveis com método aplicado.</p>
+<h2>O que você vai aprender</h2>
+<ul>
+<li>Tipos de financiamento.</li>
+<li>Entrada, juros e amortização.</li>
+<li>Documentação e aprovação.</li>
+<li>Troca de imóvel e portabilidade.</li>
+</ul>
+<div style="margin-top:18px"><a href="/education/cursos/financiamento-imobiliario/vendas.html">Ver página de vendas</a></div>
+<section style="margin-top:28px">
+<h2>Comece agora</h2>
+<form id="courseLeadForm">
+<input type="text" id="name" placeholder="Seu nome" required />
+<input type="email" id="email" placeholder="Seu e-mail" />
+<input type="tel" id="phone" placeholder="Seu WhatsApp" />
+<input type="hidden" id="course" value="financiamento-imobiliario" />
+<input type="hidden" id="source" value="curso" />
+<button type="submit">Quero começar</button>
+</form>
+<p id="courseFormStatus"></p>
+</section>
+<script>
+(function(){{
+  var f=document.getElementById('courseLeadForm');
+  if(!f) return;
+  f.addEventListener('submit', function(e){{
+    e.preventDefault();
+    var data={{
+      name: document.getElementById('name').value.trim(),
+      email: document.getElementById('email').value.trim(),
+      phone: document.getElementById('phone').value.trim(),
+      course: document.getElementById('course').value,
+      source: document.getElementById('source').value
+    }};
+    fetch('https://academy.praia.digital/leads', {{
+      method:'POST',
+      headers:{{'Content-Type':'application/json'}},
+      body: JSON.stringify(data)
+    }})
+    .then(function(r){{
+      return r.json().then(function(json){{
+        return {{status:r.status, json:json}};
+      }});
+    }})
+    .then(function(res){{
+      var el=document.getElementById('courseFormStatus');
+      el.textContent = res.status===200 ? 'Recebido! Entraremos em contato.' : 'Erro: '+JSON.stringify(res.json);
+    }})
+    .catch(function(err){{
+      document.getElementById('courseFormStatus').textContent = 'Erro de conexão. Tente novamente.';
+    }});
+  }});
+}})();
+</script>
+
 </main>
 
     <footer>Praia Digital Academy — educação aplicada ao mercado imobiliário do litoral.</footer>
