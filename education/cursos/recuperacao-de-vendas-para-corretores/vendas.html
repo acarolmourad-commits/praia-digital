@@ -38,6 +38,46 @@
         <a href="https://praia.digital/education/index.html">Academy</a>
       </nav>
     </header>
+
+      <h2>Sobre este curso</h2>
+      <p>Recupere oportunidades perdidas com follow-up estruturado no litoral.</p>
+      <div class="card">
+        <p><strong>Nível:</strong> Iniciante → Intermediário</p>
+        <p><strong>Carga horária:</strong> 3 horas</p>
+        <p><strong>Acesso:</strong> vitalício + atualizações</p>
+        <p class="price">R$ 197</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>O que você vai aprender</h3>
+          <ul>
+        <li>Mapeamento de perdas.</li>
+        <li>Scripts de reativação.</li>
+        <li>Ofertas e prazo.</li>
+        <li>Acompanhamento.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Garantia</h3>
+          <p>7 dias para testar. Se não gostar, devolvemos 100% do valor.</p>
+        </div>
+      </div>
+
+    <div id="lm-form" style="margin-top:18px">
+      <h2>Quero garantir minha vaga</h2>
+      <form id="leadForm">
+        <input type="text" id="name" placeholder="Seu nome" required />
+        <input type="email" id="email" placeholder="Seu e-mail" />
+        <input type="tel" id="phone" placeholder="Seu WhatsApp" />
+        <input type="hidden" id="city" value="Litoral Paulista" />
+        <input type="hidden" id="source" value="curso" />
+        <input type="hidden" id="magnet" value="Recuperação de Vendas para Corretores" />
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="formStatus"></p>
+    </div>
+    <script>(function(){var form=document.getElementById("leadForm");if(!form) return;form.addEventListener("submit",function(e){e.preventDefault();var data={name:document.getElementById("name").value.trim(),email:document.getElementById("email").value.trim()||null,phone:document.getElementById("phone").value.trim()||null,city:document.getElementById("city").value||null,source:document.getElementById("source").value||null,magnet:document.getElementById("magnet").value||null};fetch("https://academy.praia.digital/leads",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)}).then(function(r){return r.json().then(function(json){return {status:r.status,json:json};});}).then(function(res){document.getElementById("formStatus").textContent=res.status===200?"Recebido! Entraremos em contato.":"Erro: "+JSON.stringify(res.json);}).catch(function(){document.getElementById("formStatus").textContent="Erro de conexão. Tente novamente.";});});})();</script>
+
     <main id="main">
       <h1>Recuperacao De Vendas Para Corretores</h1>
       <p class="lead">Conteúdo premium aplicado ao mercado imobiliário do litoral.</p>
