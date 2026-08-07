@@ -108,7 +108,15 @@ a{color:#2563eb;text-decoration:none}
   ]
 }
 </script>
-  </head><body>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
+</script>
+</head><body>
 <div class="card">
 <h1>Painel de Execução Diária</h1>
 <p>Ações sugeridas para hoje, em ordem. Marque o que já foi executado.</p>
