@@ -98,7 +98,15 @@
   ]
 }
 </script>
-  </head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
+</script>
+</head>
 <body style="margin:0; padding:0; background-color:#f4f4f4; font-family: Arial, sans-serif;">
   <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f4f4f4;">
     <tr>

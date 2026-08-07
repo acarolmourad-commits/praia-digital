@@ -103,7 +103,15 @@ body { font-family: Arial, sans-serif; padding: 20px; }
   ]
 }
 </script>
-  </head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
+</script>
+</head>
 <body>
 <h1>Follow-up Lote 42</h1>
 <p>Acompanhe respostas por lead.</p>
