@@ -164,7 +164,21 @@ tr:nth-child(even){background:#f8fafc}
 
 <h2>Sobre a cidade</h2>
 <p>Cabo Frio atrai por praias claras e estrutura de veraneio consolidada, com foco em temporada e investimento.</p>
-<a class="cta" href="index.html">Voltar para o site</a>
+
+      <h2>Fale com um especialista em expansão nacional</h2>
+      <div class="card" style="padding:18px 20px">
+        <p>Quer imóveis em destinos fora do eixo tradicional? A gente seleciona oportunidades em cidades com alta liquidez.</p>
+        <form id="leadForm" action="https://academy.praia.digital/leads" method="POST" style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:10px">
+          <input type="text" name="name" placeholder="Seu nome" required style="flex:1 1 220px;padding:.6rem .8rem;border-radius:999px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.07);color:#fff">
+          <input type="tel" name="phone" placeholder="Seu WhatsApp" required style="flex:1 1 220px;padding:.6rem .8rem;border-radius:999px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.07);color:#fff">
+          <input type="hidden" name="source" value="expansao" />
+          <button type="submit" class="cta">Quero atendimento</button>
+        </form>
+        <p id="formStatus" style="margin-top:10px;opacity:.85"></p>
+      </div>
+      <script>(function(){var form=document.getElementById("leadForm");if(!form) return;form.addEventListener("submit",function(e){e.preventDefault();var data={name:document.querySelector("#leadForm [name=name]").value.trim(),phone:document.querySelector("#leadForm [name=phone]").value.trim()||null,source:document.querySelector("#leadForm [name=source]").value||null};fetch("https://academy.praia.digital/leads",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)}).then(function(r){return r.json().then(function(json){return {status:r.status,json:json};});}).then(function(res){document.getElementById("formStatus").textContent=res.status===200?"Recebido! Entraremos em contato.":"Erro: "+JSON.stringify(res.json);}).catch(function(){document.getElementById("formStatus").textContent="Erro de conexão. Tente novamente.";});});})();</script>
+
+    <a class="cta" href="index.html">Voltar para o site</a>
 <div class="footer">CEO Carolina Moura | Praia Digital | 2026</div>
 </div>
 </body>
