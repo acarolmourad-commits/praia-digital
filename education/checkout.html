@@ -107,7 +107,7 @@ gtag('config', '', { anonymize_ip: true });
         price: price,
       };
       const headers = {'Content-Type': 'application/json'};
-      const token = localStorage.getItem('academy_token')  sessionStorage.getItem('academy_token');
+      const token = localStorage.getItem('academy_token') || sessionStorage.getItem('academy_token');
       if (token) {
         headers['Authorization'] = 'Bearer ' + token;
       }
