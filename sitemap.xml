@@ -98,7 +98,7 @@
   </url>
   <url>
     <loc>https://praia.digital/bairros/bertioga/index.html</loc>
-    <lastmod>2026-08-07T03:10:02Z</lastmod>
+    <lastmod>2026-08-07T03:39:34Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -116,7 +116,7 @@
   </url>
   <url>
     <loc>https://praia.digital/bairros/caraguatatuba/index.html</loc>
-    <lastmod>2026-08-07T03:10:02Z</lastmod>
+    <lastmod>2026-08-07T03:39:34Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -164,7 +164,7 @@
   </url>
   <url>
     <loc>https://praia.digital/bairros/ilhabela/index.html</loc>
-    <lastmod>2026-08-07T03:10:02Z</lastmod>
+    <lastmod>2026-08-07T03:39:34Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -242,7 +242,7 @@
   </url>
   <url>
     <loc>https://praia.digital/bairros/sao-sebastiao/index.html</loc>
-    <lastmod>2026-08-07T03:10:02Z</lastmod>
+    <lastmod>2026-08-07T03:39:34Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -266,7 +266,7 @@
   </url>
   <url>
     <loc>https://praia.digital/bairros/ubatuba/index.html</loc>
-    <lastmod>2026-08-07T03:10:02Z</lastmod>
+    <lastmod>2026-08-07T03:39:34Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -57201,6 +57201,168 @@
   <url>
     <loc>https://praia.digital/bairros/praia-grande/jardim-guanabara.html</loc>
     <lastmod>2026-08-07T03:34:47Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/sao-vicente/centro-historico.html</loc>
+    <lastmod>2026-08-07T03:37:13Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/sao-vicente/jardim-rio-branco.html</loc>
+    <lastmod>2026-08-07T03:37:13Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/sao-vicente/parque-sao-vicente.html</loc>
+    <lastmod>2026-08-07T03:37:13Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/peruibe/centro-historico.html</loc>
+    <lastmod>2026-08-07T03:37:13Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/peruibe/jardim-veneza.html</loc>
+    <lastmod>2026-08-07T03:37:13Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/peruibe/sao-joao-batista.html</loc>
+    <lastmod>2026-08-07T03:37:13Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/mongagua/centro-historico.html</loc>
+    <lastmod>2026-08-07T03:37:13Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/mongagua/jardim-veneza.html</loc>
+    <lastmod>2026-08-07T03:37:13Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/mongagua/vila-sao-paulo.html</loc>
+    <lastmod>2026-08-07T03:37:13Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/itanhaem/centro-historico.html</loc>
+    <lastmod>2026-08-07T03:37:13Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/itanhaem/jardim-mariana.html</loc>
+    <lastmod>2026-08-07T03:37:13Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/itanhaem/vila-sao-joao.html</loc>
+    <lastmod>2026-08-07T03:37:13Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/bertioga/centro-historico.html</loc>
+    <lastmod>2026-08-07T03:37:13Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/bertioga/jardim-veneza.html</loc>
+    <lastmod>2026-08-07T03:37:13Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/bertioga/praia-do-ribeira.html</loc>
+    <lastmod>2026-08-07T03:37:13Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/caraguatatuba/massaguaçu.html</loc>
+    <lastmod>2026-08-07T03:39:34Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/caraguatatuba/camburi.html</loc>
+    <lastmod>2026-08-07T03:39:34Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/caraguatatuba/jaraguá.html</loc>
+    <lastmod>2026-08-07T03:39:34Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/ubatuba/domingues.html</loc>
+    <lastmod>2026-08-07T03:39:34Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/ubatuba/silveira.html</loc>
+    <lastmod>2026-08-07T03:39:34Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/ubatuba/matarazzo.html</loc>
+    <lastmod>2026-08-07T03:39:34Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/ilhabela/saco-da-capela.html</loc>
+    <lastmod>2026-08-07T03:39:34Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/ilhabela/praia-da-enseada.html</loc>
+    <lastmod>2026-08-07T03:39:34Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/ilhabela/fumaca.html</loc>
+    <lastmod>2026-08-07T03:39:34Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/sao-sebastiao/boraceia.html</loc>
+    <lastmod>2026-08-07T03:39:34Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/sao-sebastiao/guaeca.html</loc>
+    <lastmod>2026-08-07T03:39:34Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/sao-sebastiao/barra-do-sahy.html</loc>
+    <lastmod>2026-08-07T03:39:34Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
