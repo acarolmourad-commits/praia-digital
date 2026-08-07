@@ -3,7 +3,11 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 DATABASE_URL = os.getenv("DATABASE_URL", f"sqlite:///{BASE_DIR}/academy.db")
-SECRET_KEY = os.getenv("SECRET_KEY", "CHANGE_ME_IN_PRODUCTION")
+SECRET_KEY = os.getenv("SECRET_KEY", "")
+if not SECRET_KEY:
+    if os.getenv("APP_ENV", "development") == "production":
+        raise RuntimeError("SECRET_KEY must be set in production")
+    SECRET_KEY = "dev-only-CHANGE_ME"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24 * 7  # 7 dias
 STATIC_DIR = BASE_DIR / "academy" / "static"

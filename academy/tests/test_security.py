@@ -1,5 +1,6 @@
 from fastapi.testclient import TestClient
 from academy.main import app
+from academy.core.config import SECRET_KEY as _SECRET_KEY
 
 client = TestClient(app)
 
@@ -23,4 +24,8 @@ def test_payload_too_large_rejected():
     payload = "a" * (1024 * 1024 + 1)
     r = client.post("/leads", content=payload, headers={"content-type": "application/json"})
     assert r.status_code == 413
+
+
+def test_dev_secret_key_is_not_hardcoded_production_value():
+    assert _SECRET_KEY != "CHANGE_ME_IN_PRODUCTION"
 
