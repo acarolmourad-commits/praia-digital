@@ -249,7 +249,19 @@
     </div>
     <script>(function(){var form=document.getElementById("leadForm");if(!form) return;form.addEventListener("submit",function(e){e.preventDefault();var data={name:document.getElementById("name").value.trim(),email:document.getElementById("email").value.trim()||null,phone:document.getElementById("phone").value.trim()||null,city:document.getElementById("city").value||null,source:document.getElementById("source").value||null,magnet:document.getElementById("magnet").value||null};fetch("https://academy.praia.digital/leads",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)}).then(function(r){return r.json().then(function(json){return {status:r.status,json:json};});}).then(function(res){document.getElementById("formStatus").textContent=res.status===200?"Recebido! Entraremos em contato.":"Erro: "+JSON.stringify(res.json);}).catch(function(){document.getElementById("formStatus").textContent="Erro de conexão. Tente novamente.";});});})();</script>
 
-      <a class="btn-whatsapp" href="https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral" target="_blank" rel="noopener">Quero captar mais</a>
+      
+      <h2>Atendimento por cidade</h2>
+      <ul>
+        <li><a href="/servicos/cidade-servico/santos-captacao.html">Captacao em Santos</a></li>
+        <li><a href="/servicos/cidade-servico/guaruja-captacao.html">Captacao em Guaruja</a></li>
+        <li><a href="/servicos/cidade-servico/praia-grande-captacao.html">Captacao em Praia Grande</a></li>
+        <li><a href="/servicos/cidade-servico/bertioga-captacao.html">Captacao em Bertioga</a></li>
+        <li><a href="/servicos/cidade-servico/itanhaem-captacao.html">Captacao em Itanhaem</a></li>
+        <li><a href="/servicos/cidade-servico/mongagua-captacao.html">Captacao em Mongagua</a></li>
+        <li><a href="/servicos/cidade-servico/sao-vicente-captacao.html">Captacao em Sao Vicente</a></li>
+        <li><a href="/servicos/cidade-servico/peruibe-captacao.html">Captacao em Peruibe</a></li>
+      </ul>
+<a class="btn-whatsapp" href="https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral" target="_blank" rel="noopener">Quero captar mais</a>
     </section>
 
     <section class="servicos-section">
