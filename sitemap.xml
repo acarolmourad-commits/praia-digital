@@ -134,25 +134,25 @@
   </url>
   <url>
     <loc>https://praia.digital/bairros/guaruja/asturias.html</loc>
-    <lastmod>2026-08-07T03:10:02Z</lastmod>
+    <lastmod>2026-08-07T03:32:32Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://praia.digital/bairros/guaruja/enseada.html</loc>
-    <lastmod>2026-08-07T03:10:02Z</lastmod>
+    <lastmod>2026-08-07T03:32:32Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://praia.digital/bairros/guaruja/index.html</loc>
-    <lastmod>2026-08-07T03:10:02Z</lastmod>
+    <lastmod>2026-08-07T03:32:32Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://praia.digital/bairros/guaruja/pitangueiras.html</loc>
-    <lastmod>2026-08-07T03:10:02Z</lastmod>
+    <lastmod>2026-08-07T03:32:32Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -57141,6 +57141,36 @@
   <url>
     <loc>https://praia.digital/bairros/santos/centro-historico.html</loc>
     <lastmod>2026-08-07T03:18:17Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/guaruja/vicente-de-carvalho.html</loc>
+    <lastmod>2026-08-07T03:32:32Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/guaruja/jardim-sao-paulo.html</loc>
+    <lastmod>2026-08-07T03:32:32Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/guaruja/nova-guarau.html</loc>
+    <lastmod>2026-08-07T03:32:32Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/guaruja/santa-maria.html</loc>
+    <lastmod>2026-08-07T03:32:32Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/bairros/guaruja/jardim-progresso.html</loc>
+    <lastmod>2026-08-07T03:32:32Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
