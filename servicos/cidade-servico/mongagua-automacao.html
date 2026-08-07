@@ -127,6 +127,40 @@
       <p class="price">Mongaguá</p>
     </section>
 
+      <h2>Sobre este serviço em Mongagua</h2>
+      <p>Mongaguá tem apelo familiar e turístico, com Centro, Jardim São Paulo e Balneário.</p>
+
+      <h2>Vantagens</h2>
+      <ul>
+        <li>Orla ativa e comércio local.</li>
+        <li>Procura por temporada e moradia.</li>
+        <li>Valores acessíveis com potencial.</li>
+        <li>Ambiente tranquilo e seguro.</li>
+      </ul>
+
+      <h2>Processo</h2>
+      <ul>
+        <li>Mapeamento do fluxo atual.</li>
+        <li>Configuração de automações e triggers.</li>
+        <li>Testes e ajustes.</li>
+        <li>Monitoramento contínuo.</li>
+      </ul>
+
+    <div id="lm-form" style="margin-top:18px">
+      <h2>Quero receber mais informações</h2>
+      <form id="leadForm">
+        <input type="text" id="name" placeholder="Seu nome" required />
+        <input type="email" id="email" placeholder="Seu e-mail" />
+        <input type="tel" id="phone" placeholder="Seu WhatsApp" />
+        <input type="hidden" id="city" value="Mongagua" />
+        <input type="hidden" id="source" value="servico" />
+        <input type="hidden" id="magnet" value="Automação Imobiliária" />
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="formStatus"></p>
+    </div>
+    <script>(function(){var form=document.getElementById("leadForm");if(!form) return;form.addEventListener("submit",function(e){e.preventDefault();var data={name:document.getElementById("name").value.trim(),email:document.getElementById("email").value.trim()||null,phone:document.getElementById("phone").value.trim()||null,city:document.getElementById("city").value||null,source:document.getElementById("source").value||null,magnet:document.getElementById("magnet").value||null};fetch("https://academy.praia.digital/leads",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)}).then(function(r){return r.json().then(function(json){return {status:r.status,json:json};});}).then(function(res){document.getElementById("formStatus").textContent=res.status===200?"Recebido! Entraremos em contato.":"Erro: "+JSON.stringify(res.json);}).catch(function(){document.getElementById("formStatus").textContent="Erro de conexão. Tente novamente.";});});})();</script>
+
     <section class="property-description">
       <h3>Sobre este serviço</h3>
       <p>Automação Imobiliária profissional para o mercado imobiliário de Mongaguá. Atendimento rápido e especializado pela Praia Digital.</p>
