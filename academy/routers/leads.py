@@ -4,18 +4,19 @@ from typing import Optional
 from academy.core.database import get_db
 from academy.core.models import Lead, LeadEvent
 from academy.core.schemas import LeadIn, LeadOut, LeadEventOut
+from academy.core.middleware import sanitize_text
 
 router = APIRouter(tags=["leads"])
 
 @router.post("/leads", response_model=LeadOut)
 def create_lead(payload: LeadIn, db: Session = Depends(get_db)):
     lead = Lead(
-        name=payload.name,
-        email=payload.email,
-        phone=payload.phone,
-        city=payload.city,
-        source=payload.source,
-        magnet=payload.magnet,
+        name=sanitize_text(payload.name),
+        email=sanitize_text(payload.email),
+        phone=sanitize_text(payload.phone),
+        city=sanitize_text(payload.city),
+        source=sanitize_text(payload.source),
+        magnet=sanitize_text(payload.magnet),
     )
     db.add(lead)
     db.commit()
