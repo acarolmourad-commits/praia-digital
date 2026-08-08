@@ -1,20 +1,20 @@
 {
   "meta": {
-    "total_articles": 1425,
+    "total_articles": 1426,
     "domain": "praia.digital",
     "blog_path": ".\\blog",
     "scope": "controle editorial contínuo"
   },
   "status_counts": {
-    "publicado": 1425
+    "publicado": 1426
   },
   "funnel_counts": {
     "Meio": 945,
     "Fundo": 246,
-    "Topo": 234
+    "Topo": 235
   },
   "intent_counts": {
-    "informacional": 1278,
+    "informacional": 1279,
     "comercial": 114,
     "navegacional_comparativo": 33
   },
@@ -22,7 +22,7 @@
     "litoral_paulista": 922,
     "geral": 314,
     "santos": 22,
-    "bertioga": 26,
+    "bertioga": 27,
     "mongagua": 5,
     "sao_vicente": 9,
     "guaruja": 24,
@@ -42,7 +42,7 @@
     "editorial": 201,
     "locacao_temporada": 184,
     "automacao_ia": 533,
-    "compra_venda": 172,
+    "compra_venda": 173,
     "bairros_cidades": 171,
     "marketing_digital": 69,
     "investimento": 57,
@@ -800,13 +800,6 @@
   "next_queue": [
     {
       "cluster": "compra_venda",
-      "city": "bertioga",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "compra_venda",
       "city": "caraguatatuba",
       "count": 1,
       "priority_score": 3,
@@ -867,6 +860,13 @@
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "santos",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
     }
   ],
   "coverage_by_city_cluster": {
@@ -903,7 +903,7 @@
     "bertioga": {
       "locacao_temporada": 2,
       "bairros_cidades": 20,
-      "compra_venda": 1,
+      "compra_venda": 2,
       "investimento": 3
     },
     "mongagua": {
@@ -11636,6 +11636,41 @@
       "cluster": "compra_venda",
       "canonical_ok": null,
       "internal_links": [],
+      "status": "publicado",
+      "lastmod": null
+    },
+    {
+      "id": "881b234b01",
+      "slug": "comprar-imovel-bertioga-2026",
+      "path": "blog\\comprar-imovel-bertioga-2026.html",
+      "title": "Comprar imóvel em Bertioga em 2026: guia completo com valores, bairros e dicas",
+      "h1": "Comprar imóvel em Bertioga em 2026: guia completo com valores, bairros e dicas",
+      "h2_count": 10,
+      "meta_description": "Guia completo para comprar imóvel em Bertioga em 2026. Compare valores por m², descubra os melhores bairros, veja dicas de documentação e saiba se vale a pena investir na Riviera, Centro ou Orla de Bertioga.",
+      "keywords": [
+        "comprar imovel em bertioga",
+        "imoveis bertioga 2026",
+        "valores imoveis bertioga",
+        "bairros bertioga",
+        "bertioga litoral norte",
+        "investimento imovel bertioga",
+        "riviera de sao lourenco bertioga",
+        "centro bertioga imoveis"
+      ],
+      "primary_keyword": "comprar imovel em bertioga",
+      "city": "bertioga",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "compra_venda",
+      "canonical_ok": true,
+      "internal_links": [
+        "/blog/comparativo-cidades-litoral-por-perfil-2026.html",
+        "/blog/financiamento-imovel-litoral-2026.html",
+        "/blog/rentabilidade-imoveis-praia-2026.html",
+        "/blog/riviera-sao-lourenco-vs-litoral-norte-comparacao-2026.html",
+        "/blog/aluguel-temporada-bertioga.html",
+        "/blog/guia-investidor-imovel-litoral.html"
+      ],
       "status": "publicado",
       "lastmod": null
     },
