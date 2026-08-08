@@ -1,60 +1,92 @@
-# Módulo 2 — Conteúdo Premium
+# Módulo 2 — Preparação e Apresentação do Imóvel
+
 ## Introdução
-Neste módulo você vai dominar venda rapida imoveis litoral com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 2.1 — Passo a passo para aplicar venda rapida imoveis litoral na prática
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+Neste módulo você vai aprender a preparar o imóvel para venda rápida, criar uma apresentação profissional e divulgar nos canais certos.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 2.1 — Preparação do imóvel
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+### O que fazer antes de anunciar
 
-## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
-Fundamentos, ferramentas e fluxos recomendados para venda rapida imoveis litoral no litoral.
+1. **Limpeza geral**: imóvel limpo vende mais
+2. **Pequenos reparos**: torneiras, pintura, iluminação
+3. **Despacho**: retire objetos pessoais
+4. **Home staging**: organize móveis para fotos
 
-**Ferramentas recomendadas:**
-- CRM de atendimento
-- Planilha de acompanhamento
-- Ferramenta de automação de mensagens
+### Home staging para venda
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+- **Sala**: sofá, mesa, iluminação
+- **Quartos**: cama, travesseiros, cortinas
+- **Cozinha**: organize armários, retire eletrodomésticos extras
+- **Banheiro**: toalhas limpas, produtos organizados
 
-## Aula 2.3 — Automação e fluxos que economizam horas por semana
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+### Exemplo prático
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+Um apartamento em Praia Grande com home staging simples (sofá novo, cortinas, iluminação) vendeu 40% mais rápido que imóveis similares sem preparação.
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+## Aula 2.2 — Fotos e apresentação profissional
 
-## Exercício
-Monte um plano prático de venda rapida imoveis litoral para os próximos 30 dias, com ações diárias e semanais.
+### Fotos que vendem
+
+- **Quantidade**: mínimo 20 fotos
+- **Ordem**: sala → quartos → banheiro → cozinha → área externa
+- **Qualidade**: luz natural, lente grande angular
+- **Destaques**: vista mar, varanda, localização
+
+### Tour virtual
+
+- **Matterport**: tour 3D profissional
+- **Google Street View**: tour simples
+- **Vídeo**: walkthrough de 1-2 minutos
+
+### Descrição que converte
+
+Estrutura:
+1. **Hook**: 1 frase que desperta interesse
+2. **Diferenciais**: lista bullet points
+3. **Localização**: proximidade com pontos turísticos
+4. **Documentação**: regularizada
+5. **Call-to-action**: "Agende visita"
+
+## Aula 2.3 — Divulgação nos canais certos
+
+### Canais de venda
+
+1. **Imobiliárias locais**: acesso a base de clientes
+2. **Portais imobiliários**: Zap, Viva Real, OLX
+3. **Redes sociais**: Facebook, Instagram, WhatsApp
+4. **Site próprio**: se você tem tráfego
+
+### Estratégia de divulgação
+
+1. **Primeira semana**: anúncio em 3 plataformas
+2. **Segunda semana**: boost em redes sociais
+3. **Terceira semana**: contato com imobiliárias
+4. **Quarta semana**: reavaliação de preço
+
+### Exercício
+
+Crie um plano de divulgação de 4 semanas para o seu imóvel.
 
 ## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
+
+- Preparação profissional aumenta percepção de valor.
+- Fotos e descrição são 70% da decisão.
+- Divulgação multicanal acelera a venda.
 
 ## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
+
+- [ ] Imóvel preparado e limpo
+- [ ] Fotos profissionais tiradas
+- [ ] Descrição otimizada
+- [ ] Anúncios criados nos canais
 
 ## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
 
-## Ferramentas recomendadas
-- CRM de atendimento
-- Planilha de acompanhamento
-- Ferramenta de automação de mensagens
+- Checklist de preparação de imóvel
+- Template de descrição de venda
+- Guia de divulgação
 
 ## Prompt de IA
-Atue como consultor de venda rapida imoveis litoral. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].
+
+Atue como consultor imobiliário. Crie um plano de preparação e divulgação para vender meu imóvel no litoral em até 30 dias.
