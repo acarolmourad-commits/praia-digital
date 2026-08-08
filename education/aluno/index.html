@@ -111,7 +111,7 @@
       if (!token) return showLogin();
       
       try {
-        const res = await fetch(`${API_BASE}/academy/me/enrollments`, {
+        const res = await fetch(`${API_BASE}/me/courses`, {
           headers: { 'Authorization': `Bearer ${token}` }
         });
         if (res.status === 401) return showLogin();
@@ -126,16 +126,11 @@
         }
         
         for (const enrollment of enrollments) {
-          const courseRes = await fetch(`${API_BASE}/courses/${enrollment.course_id}`, {
-            headers: { 'Authorization': `Bearer ${token}` }
-          });
-          const course = await courseRes.json();
-          
           const card = document.createElement('div');
           card.className = 'card';
           card.innerHTML = `
-            <a href="/education/cursos/${course.slug}/index.html">${course.title}</a>
-            <p style="opacity:.75; margin-top:6px;">${course.description || ''}</p>
+            <a href="/education/cursos/${enrollment.slug}/index.html">${enrollment.title}</a>
+            <p style="opacity:.75; margin-top:6px;">Curso matriculado</p>
             <span class="badge" style="margin-top:8px;display:inline-block">${enrollment.status}</span>
           `;
           container.appendChild(card);

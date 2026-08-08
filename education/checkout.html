@@ -98,9 +98,9 @@ gtag('config', '', { anonymize_ip: true });
     document.getElementById('checkout-form').addEventListener('submit', async (e) => {
       e.preventDefault();
       const payload = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        phone: document.getElementById('phone').value,
+        name: document.getElementById('name').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        phone: document.getElementById('phone').value.trim(),
         payment: document.getElementById('payment').value,
         slug: slug,
         title: title,
