@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from fastapi.security import HTTPBearer
 from sqlalchemy.orm import Session
+from sqlalchemy.sql import func
 from pydantic import BaseModel
 from typing import Optional, List
 from academy.core.database import get_db
@@ -142,6 +143,14 @@ def payment_webhook(payment_id: str, payload: dict, db: Session = Depends(get_db
     status = payload.get("status")
     if status == "paid":
         payment.status = PaymentStatus.paid.value
+        payment.paid_at = func.now()
+        # Ativar matrícula associada
+        if payment.enrollment_id:
+            enrollment = db.query(Enrollment).filter(Enrollment.id == payment.enrollment_id).first()
+            if enrollment:
+                enrollment.status = EnrollmentStatus.active.value
+                from datetime import datetime, timedelta
+                enrollment.access_until = datetime.utcnow() + timedelta(days=365)
     elif status == "rejected":
         payment.status = PaymentStatus.failed.value
     elif status == "pending":
@@ -152,6 +161,29 @@ def payment_webhook(payment_id: str, payload: dict, db: Session = Depends(get_db
         payment.status = PaymentStatus.failed.value
     db.commit()
     return {"ok": True}
+
+
+@router.get("/checkout/confirm")
+def checkout_confirm(order_id: int, db: Session = Depends(get_db)):
+    enrollment = db.query(Enrollment).filter(Enrollment.id == order_id).first()
+    if not enrollment:
+        raise HTTPException(status_code=404, detail="Pedido não encontrado")
+    payment = db.query(Payment).filter(Payment.enrollment_id == enrollment.id).first()
+    if payment and payment.status == PaymentStatus.paid.value:
+        enrollment.status = EnrollmentStatus.active.value
+        db.commit()
+        return {
+            "status": "active",
+            "enrollment_id": enrollment.id,
+            "course_id": enrollment.course_id,
+            "message": "Pagamento confirmado. Acesso liberado.",
+        }
+    return {
+        "status": enrollment.status,
+        "enrollment_id": enrollment.id,
+        "course_id": enrollment.course_id,
+        "message": "Aguardando confirmação do pagamento.",
+    }
 
 
 @router.get("/mercadopago/payment/{payment_id}")
