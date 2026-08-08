@@ -1,20 +1,20 @@
 {
   "meta": {
-    "total_articles": 1426,
+    "total_articles": 1427,
     "domain": "praia.digital",
     "blog_path": ".\\blog",
     "scope": "controle editorial contínuo"
   },
   "status_counts": {
-    "publicado": 1426
+    "publicado": 1427
   },
   "funnel_counts": {
     "Meio": 945,
     "Fundo": 246,
-    "Topo": 235
+    "Topo": 236
   },
   "intent_counts": {
-    "informacional": 1279,
+    "informacional": 1280,
     "comercial": 114,
     "navegacional_comparativo": 33
   },
@@ -25,7 +25,7 @@
     "bertioga": 27,
     "mongagua": 5,
     "sao_vicente": 9,
-    "guaruja": 24,
+    "guaruja": 25,
     "litoral_norte": 16,
     "peruibe": 7,
     "praia_grande": 24,
@@ -42,7 +42,7 @@
     "editorial": 201,
     "locacao_temporada": 184,
     "automacao_ia": 533,
-    "compra_venda": 173,
+    "compra_venda": 174,
     "bairros_cidades": 171,
     "marketing_digital": 69,
     "investimento": 57,
@@ -807,13 +807,6 @@
     },
     {
       "cluster": "compra_venda",
-      "city": "guaruja",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "compra_venda",
       "city": "ilhabela",
       "count": 1,
       "priority_score": 3,
@@ -864,6 +857,13 @@
     {
       "cluster": "locacao_temporada",
       "city": "santos",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "investimento",
+      "city": "sao_sebastiao",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
@@ -918,7 +918,7 @@
     "guaruja": {
       "bairros_cidades": 18,
       "locacao_temporada": 2,
-      "compra_venda": 1,
+      "compra_venda": 2,
       "automacao_ia": 1,
       "investimento": 2
     },
@@ -11670,6 +11670,40 @@
         "/blog/riviera-sao-lourenco-vs-litoral-norte-comparacao-2026.html",
         "/blog/aluguel-temporada-bertioga.html",
         "/blog/guia-investidor-imovel-litoral.html"
+      ],
+      "status": "publicado",
+      "lastmod": null
+    },
+    {
+      "id": "8b5343af38",
+      "slug": "comprar-imovel-guaruja-2026",
+      "path": "blog\\comprar-imovel-guaruja-2026.html",
+      "title": "Comprar imóvel em Guarujá em 2026: guia por perfil de comprador",
+      "h1": "Comprar imóvel em Guarujá em 2026: guia por perfil de comprador",
+      "h2_count": 7,
+      "meta_description": "Guia de compra de imóvel em Guarujá em 2026 organizado por perfil: família, investidor, temporada e aposentado. Compare bairros, valores do m², dicas de documentação e oportunidades na Orla, Jardim Acapulco e Pernambuco.",
+      "keywords": [
+        "comprar imovel guaruja",
+        "imoveis guaruja 2026",
+        "valores m2 guaruja",
+        "guaruja litoral",
+        "imovel guaruja orla",
+        "investimento imovel guaruja",
+        "temporada guaruja",
+        "familia guaruja imovel"
+      ],
+      "primary_keyword": "comprar imovel guaruja",
+      "city": "guaruja",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "compra_venda",
+      "canonical_ok": true,
+      "internal_links": [
+        "/blog/aluguel-temporada-litoral-guia-completo.html",
+        "/blog/financiamento-imovel-litoral-2026.html",
+        "/blog/comparativo-cidades-litoral-por-perfil-2026.html",
+        "/blog/aluguel-temporada-guaruja.html",
+        "/blog/comprar-imovel-bertioga-2026.html"
       ],
       "status": "publicado",
       "lastmod": null
