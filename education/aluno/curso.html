@@ -32,14 +32,15 @@
     h1{font-size:2rem;margin:0 0 .5rem}
     .lead{opacity:.85;line-height:1.6;margin-bottom:1rem}
     .grid{display:grid;gap:1rem;margin-top:1.2rem}
-    .grid-3{grid-template-columnss:repeat(auto-fit,minmax(260px,1fr))}
+    .grid-3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
     .card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:18px 20px}
-    .card a{color:#cfe3ff;font-weight:700;text-decoration:none}
-    .cta{background:#00B4D8;color:#fff;padding:.7rem 1.2rem;border-radius:999px;font-weight:700;text-decoration:none;display:inline-block;margin-top:.6rem;margin-right:10px}
+    .cta{background:#00B4D8;color:#fff;padding:.5rem .9rem;border-radius:999px;font-weight:700;text-decoration:none;display:inline-block;margin-top:.6rem;margin-right:8px;border:none;cursor:pointer}
     .badge{background:rgba(0,180,216,.15);border:1px solid rgba(0,180,216,.35);color:#90E0EF;padding:.2rem .6rem;border-radius:999px;font-size:.75rem;font-weight:700}
     .hidden{display:none}
-    footer{margin-top:22px;opacity:.6;font-size:12px}
     .empty{opacity:.75;margin-top:10px}
+    .bar{height:10px;background:rgba(255,255,255,0.1);border-radius:999px;overflow:hidden;margin-top:6px}
+    .bar-fill{height:100%;background:#00B4D8;border-radius:999px;transition:width .3s}
+    footer{margin-top:22px;opacity:.6;font-size:12px}
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
   <script>
@@ -71,7 +72,7 @@
       <div id="modulesArea" class="hidden">
         <div style="margin-top:18px">
           <a id="backLink" class="cta" href="/education/aluno/index.html">Voltar</a>
-          <a id="progressLink" class="cta" style="background:#fff;color:#0b1220;margin-left:10px" href="/education/aluno/index.html">Meu progresso</a>
+          <a id="progressLink" class="cta" style="background:#fff;color:#0b1220;margin-left:10px" href="/education/aluno/progresso.html">Meu progresso</a>
         </div>
         <div id="modulesContainer" class="grid" style="margin-top:1rem"></div>
       </div>
@@ -99,7 +100,7 @@
         document.getElementById('courseList').innerHTML = '<p class="empty">Faça login na <a href="/education/aluno/login.html">área do aluno</a>.</p>';
         return;
       }
-      
+
       try {
         const res = await fetch(`${API_BASE}/me/courses`, {
           headers: { 'Authorization': `Bearer ${token}` }
@@ -108,16 +109,16 @@
           document.getElementById('courseList').innerHTML = '<p class="empty">Sessão expirada. <a href="/education/aluno/login.html">Entrar novamente</a>.</p>';
           return;
         }
-        
+
         const enrollments = await res.json();
         const container = document.getElementById('courseList');
         container.innerHTML = '';
-        
+
         if (!Array.isArray(enrollments) || enrollments.length === 0) {
           container.innerHTML = '<p class="empty">Você ainda não tem matrículas.</p>';
           return;
         }
-        
+
         for (const enrollment of enrollments) {
           const btn = document.createElement('button');
           btn.className = 'cta';
@@ -143,29 +144,41 @@
         }
         const modules = await modulesRes.json();
         const container = document.getElementById('modulesContainer');
-        container.innerHTML = `<p style="opacity:.75">${title}</p>`;
-        
+        container.innerHTML = '';
+
         if (!Array.isArray(modules) || modules.length === 0) {
-          container.innerHTML += '<p class="empty">Conteúdo em breve.</p>';
+          container.innerHTML = '<p class="empty">Conteúdo em breve.</p>';
           showModules();
           return;
         }
-        
+
         for (const module of modules) {
           const card = document.createElement('div');
           card.className = 'card';
-          card.innerHTML = `<h3>${module.title}</h3><p style="opacity:.75; margin-top:6px;">${module.description || ''}</p>`;
-          
+
+          const lessons = module.lessons || [];
+          const total = lessons.length;
+          const completedCount = lessons.filter(l => l.completed).length;
+          const percent = total ? Math.round((completedCount / total) * 100) : 0;
+
+          card.innerHTML = `
+            <h3>${module.title}</h3>
+            <p style="opacity:.75; margin-top:6px;">${module.description || ''}</p>
+            <p style="font-size:.85rem;opacity:.85;margin-top:6px">${completedCount} de ${total} aulas concluídas</p>
+            <div class="bar"><div class="bar-fill" style="width:${percent}%"></div></div>
+          `;
+
           const lessonList = document.createElement('ul');
           lessonList.style.cssText = 'list-style:none;padding:0;margin-top:8px';
-          
-          for (const lesson of module.lessons || []) {
+
+          for (const lesson of lessons) {
             const li = document.createElement('li');
             li.style.cssText = 'margin:4px 0';
-            li.innerHTML = `<a href="/education/cursos/${slug}/curso-completo/modulo-${module.order}.md">${lesson.title}</a>`;
+            const statusIcon = lesson.completed ? '✅ ' : '⬜ ';
+            li.innerHTML = `${statusIcon}<a href="/education/cursos/${slug}/curso-completo/modulo-${module.order}.md">${lesson.title}</a>`;
             lessonList.appendChild(li);
           }
-          
+
           card.appendChild(lessonList);
           container.appendChild(card);
         }
