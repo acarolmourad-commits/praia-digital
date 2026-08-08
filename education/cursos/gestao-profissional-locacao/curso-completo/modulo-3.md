@@ -1,60 +1,100 @@
-# Módulo 3 — Conteúdo Premium
+# Módulo 3 — Relacionamento e Satisfação do Locatário
+
 ## Introdução
-Neste módulo você vai dominar gestao profissional locacao com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+Neste módulo você vai aprender a construir relacionamento duradouro com locatários, resolver conflitos e transformar inquilinos em promotores do seu imóvel.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 3.1 — Comunicação eficaz
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+### Canais de comunicação
 
-## Aula 3.2 — Caso real 2: como evitar erros custosos
-Fundamentos, ferramentas e fluxos recomendados para gestao profissional locacao no litoral.
+- **WhatsApp Business**: rápido, prático
+- **E-mail**: formal, documentado
+- **Telefone**: urgências, conflitos
+- **Portal do hóspede**: informações centralizadas
 
-**Ferramentas recomendadas:**
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
+### Tom de comunicação
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+1. **Profissional**: cordial, objetivo
+2. **Resolutivo**: propor solução, não apenas explicar problema
+3. **Proativo**: antecipe necessidades
+4. **Empático**: entenda a situação do locatário
 
-## Aula 3.3 — Lições aplicáveis ao seu contexto
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+### Template de mensagens
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+**Confirmação de reserva:**
+> "Olá [nome], sua reserva para [data] está confirmada. Check-in a partir de 15h. Qualquer dúvida, estou à disposição."
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+**Lembrete de check-out:**
+> "Olá [nome], lembrete: check-out até 11h. Esperamos que tenha gostado da estadia!"
 
-## Exercício
-Analise um caso real do mercado e adapte as lições para a sua realidade.
+**Pós estadia:**
+> "Olá [nome], espero que tenha gostado da estadia. Sua opinião é muito importante. Poderia avaliar sua experiência?"
+
+## Aula 3.2 — Resolução de conflitos
+
+### Tipos de conflitos
+
+1. **Problemas no imóvel**: quebra, falta de funcionamento
+2. **Desentendimentos**: regras, horários, áreas comuns
+3. **Reclamações**: limpeza, ruído, disponibilidade
+4. **Cancelamentos**: pedido de reembolso, alteração de datas
+
+### Metodologia de resolução
+
+1. **Escute sem julgar**: entenda o problema
+2. **Peça desculpas**: mesmo que não seja sua culpa
+3. **Proponha solução**: imediata e justa
+4. **Documente**: registro do ocorrido e solução
+
+### Exemplo de resolução
+
+**Problema:** ar-condicionado não funciona no primeiro dia
+**Solução:** troca imediata por equipamento novo + desconto de 10% na estadia
+
+### Exercício
+
+Escreva um script de resolução para um conflito comum (barulho, quebra, falta de funcionamento).
+
+## Aula 3.3 — Fidelização de locatários
+
+### Estratégias de fidelização
+
+1. **Desconto para retorno**: 10-15% para estadias subsequentes
+2. **Benefícios exclusivos**: welcome drink, early check-in
+3. **Comunicação personalizada**: lembretes de datas especiais
+4. **Programa de indicações**: desconto para quem indicar
+
+### Indicadores de satisfação
+
+- **Avaliações**: nota média acima de 4.5/5
+- **Taxa de reocupação**: acima de 60%
+- **Taxa de recompra**: acima de 20%
+- **Tempo de resposta**: menos de 1h
+
+### Exercício
+
+Crie um programa de fidelização para os locatários do seu imóvel.
 
 ## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
+
+- Comunicação eficaz evita conflitos.
+- Resolução rápida transforma problemas em confiança.
+- Fidelização reduz custos de aquisição.
 
 ## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
+
+- [ ] Canais de comunicação definidos
+- [ ] Templates de mensagens criados
+- [ ] Processo de resolução documentado
+- [ ] Programa de fidelização estruturado
 
 ## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
 
-## Ferramentas recomendadas
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
+- Templates de comunicação
+- Script de resolução de conflitos
+- Programa de fidelização modelo
 
 ## Prompt de IA
-Atue como mentor experiente. Analise este caso real de gestao profissional locacao no litoral e aponte 5 lições práticas: [descreva o caso].
+
+Atue como consultor de gestão de locação. Crie um plano de relacionamento e fidelização para os locatários do meu imóvel no litoral.
