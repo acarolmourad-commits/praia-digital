@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin — Praia Digital Academy</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Painel administrativo da Praia Digital Academy: gerencie cursos, matrículas e pedidos.">
+  <link rel="canonical" href="https://praia.digital/education/admin/index.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://praia.digital/index.html" },
+      { "@type": "ListItem", "position": 2, "name": "Academy", "item": "https://praia.digital/education/index.html" },
+      { "@type": "ListItem", "position": 3, "name": "Admin", "item": "https://praia.digital/education/admin/index.html" }
+    ]
+  }
+  </script>
+  <meta property="og:title" content="Admin — Praia Digital Academy">
+  <meta property="og:description" content="Painel administrativo: cursos, matrículas, pedidos e certificados.">
+  <meta property="og:url" content="https://praia.digital/education/admin/index.html">
+  <meta property="og:site_name" content="Praia Digital Academy">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="preconnect" href="https://praia.digital">
+  <style>
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:#0b1220;color:#e8ecf1;margin:0;padding:0}
+    .wrap{max-width:1200px;margin:0 auto;padding:28px 22px}
+    header nav a{color:#cfe3ff;text-decoration:none;margin-right:14px;font-weight:500}
+    h1{font-size:2rem;margin:0 0 .5rem}
+    .lead{opacity:.85;line-height:1.6;margin-bottom:1rem}
+    .grid{display:grid;gap:1rem;margin-top:1.2rem}
+    .grid-3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .grid-2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+    .card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:18px 20px}
+    .card h3{margin-top:0}
+    .cta{background:#00B4D8;color:#fff;padding:.7rem 1.2rem;border-radius:999px;font-weight:700;text-decoration:none;display:inline-block;margin-top:.6rem;margin-right:10px;border:none;cursor:pointer}
+    .cta-secondary{background:rgba(255,255,255,0.1);color:#e8ecf1;padding:.7rem 1.2rem;border-radius:999px;font-weight:700;text-decoration:none;display:inline-block;margin-top:.6rem}
+    .badge{background:rgba(0,180,216,.15);border:1px solid rgba(0,180,216,.35);color:#90E0EF;padding:.2rem .6rem;border-radius:999px;font-size:.75rem;font-weight:700}
+    .hidden{display:none}
+    table{width:100%;border-collapse:collapse;margin-top:8px}
+    th,td{text-align:left;padding:10px;border-bottom:1px solid rgba(255,255,255,0.1)}
+    th{opacity:.7;font-weight:600;font-size:.9rem}
+    td{opacity:.9}
+    input,select,textarea{width:100%;padding:10px;margin:6px 0;border-radius:8px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);color:#e8ecf1}
+    button{cursor:pointer}
+    .error{color:#ff6b6b;margin-top:6px}
+    footer{margin-top:22px;opacity:.6;font-size:12px}
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <nav aria-label="Navegação principal">
+        <a href="https://praia.digital/education/admin/index.html">Admin</a>
+        <a href="https://praia.digital/education/index.html">Academy</a>
+        <a href="https://praia.digital/index.html">Início</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>Painel Administrativo</h1>
+      <p class="lead">Gerencie cursos, matrículas, pedidos e certificados.</p>
+
+      <div id="authSection" class="hidden">
+        <div class="grid grid-3" style="margin-top:1rem">
+          <div class="card">
+            <h3>Estatísticas</h3>
+            <p>Matrículas: <strong id="statEnrollments">-</strong></p>
+            <p>Pedidos: <strong id="statOrders">-</strong></p>
+            <p>Certificados: <strong id="statCertificates">-</strong></p>
+            <button class="cta" onclick="loadStats()" style="margin-top:10px">Atualizar</button>
+          </div>
+
+          <div class="card">
+            <h3>Matrículas recentes</h3>
+            <div id="recentEnrollments" style="max-height:220px;overflow:auto">Carregando...</div>
+          </div>
+
+          <div class="card">
+            <h3>Pedidos recentes</h3>
+            <div id="recentOrders" style="max-height:220px;overflow:auto">Carregando...</div>
+          </div>
+        </div>
+
+        <div class="grid grid-2" style="margin-top:1rem">
+          <div class="card">
+            <h3>Cadastrar curso</h3>
+            <form id="createCourseForm">
+              <input type="text" id="title" placeholder="Título" required>
+              <input type="text" id="slug" placeholder="Slug" required>
+              <input type="text" id="subtitle" placeholder="Subtítulo">
+              <textarea id="description" placeholder="Descrição"></textarea>
+              <select id="status">
+                <option value="draft">Rascunho</option>
+                <option value="published">Publicado</option>
+              </select>
+              <button type="submit" class="cta">Salvar curso</button>
+              <p id="createCourseError" class="error"></p>
+            </form>
+          </div>
+
+          <div class="card">
+            <h3>Gerenciar módulos/aulas</h3>
+            <p id="adminCourseHelp">Selecione um curso para adicionar módulos e aulas.</p>
+            <form id="createModuleForm" class="hidden">
+              <input type="hidden" id="moduleCourseId">
+              <input type="text" id="moduleTitle" placeholder="Título do módulo" required>
+              <input type="number" id="moduleOrder" placeholder="Ordem" required>
+              <button type="submit" class="cta">Adicionar módulo</button>
+              <p id="createModuleError" class="error"></p>
+            </form>
+            <form id="createLessonForm" class="hidden" style="margin-top:10px">
+              <input type="hidden" id="lessonModuleId">
+              <input type="text" id="lessonTitle" placeholder="Título da aula" required>
+              <select id="lessonType">
+                <option value="text">Texto</option>
+                <option value="video">Vídeo</option>
+                <option value="audio">Áudio</option>
+                <option value="pdf">PDF</option>
+              </select>
+              <input type="text" id="lessonUrl" placeholder="URL do conteúdo">
+              <input type="number" id="lessonOrder" placeholder="Ordem" required>
+              <button type="submit" class="cta">Adicionar aula</button>
+              <p id="createLessonError" class="error"></p>
+            </form>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:1rem">
+          <h3>Cursos</h3>
+          <div id="adminCourses">Carregando...</div>
+        </div>
+      </div>
+
+      <div id="loginSection">
+        <div class="card" style="max-width:420px">
+          <h3>Login administrativo</h3>
+          <form id="loginForm">
+            <input type="email" id="email" placeholder="E-mail admin" required>
+            <input type="password" id="password" placeholder="Senha admin" required>
+            <button type="submit" class="cta" style="border:none;cursor:pointer">Entrar</button>
+          </form>
+          <p id="loginError" class="error"></p>
+        </div>
+      </div>
+    </main>
+
+    <footer>Praia Digital Academy — painel administrativo.</footer>
+  </div>
+
+  <script>
+    const API_BASE = '/academy';
+    const token = localStorage.getItem('academy_admin_token') || sessionStorage.getItem('academy_admin_token');
+
+    function showAuth() {
+      document.getElementById('authSection').classList.remove('hidden');
+      document.getElementById('loginSection').classList.add('hidden');
+      loadAdminData();
+    }
+
+    function showLogin() {
+      document.getElementById('authSection').classList.add('hidden');
+      document.getElementById('loginSection').classList.remove('hidden');
+    }
+
+    async function loadStats() {
+      try {
+        const [enrollmentsRes, ordersRes, certsRes] = await Promise.all([
+          fetch(`${API_BASE}/admin/enrollments`, { headers: { 'Authorization': `Bearer ${token}` } }),
+          fetch(`${API_BASE}/admin/orders`, { headers: { 'Authorization': `Bearer ${token}` } }),
+          fetch(`${API_BASE}/admin/certificates`, { headers: { 'Authorization': `Bearer ${token}` } }),
+        ]);
+
+        if (enrollmentsRes.status === 401) return showLogin();
+
+        const enrollments = await enrollmentsRes.json();
+        const orders = await ordersRes.json();
+        const certs = await certsRes.json();
+
+        document.getElementById('statEnrollments').textContent = Array.isArray(enrollments) ? enrollments.length : '-';
+        document.getElementById('statOrders').textContent = Array.isArray(orders) ? orders.length : '-';
+        document.getElementById('statCertificates').textContent = Array.isArray(certs) ? certs.length : '-';
+      } catch (err) {
+        console.error('Erro ao carregar stats:', err);
+      }
+    }
+
+    async function loadAdminData() {
+      await loadStats();
+      await loadCourses();
+      await loadRecentEnrollments();
+      await loadRecentOrders();
+    }
+
+    async function loadCourses() {
+      try {
+        const res = await fetch(`${API_BASE}/admin/courses`, { headers: { 'Authorization': `Bearer ${token}` } });
+        if (res.status === 401) return showLogin();
+        const courses = await res.json();
+        const container = document.getElementById('adminCourses');
+        
+        if (!Array.isArray(courses) || courses.length === 0) {
+          container.innerHTML = '<p>Nenhum curso cadastrado.</p>';
+          return;
+        }
+
+        container.innerHTML = '<table><thead><tr><th>ID</th><th>Título</th><th>Slug</th><th>Status</th><th>Ações</th></tr></thead><tbody>' +
+          courses.map(c => `
+            <tr>
+              <td>${c.id}</td>
+              <td><a href="/education/cursos/${c.slug}/index.html" target="_blank">${c.title}</a></td>
+              <td>${c.slug}</td>
+              <td><span class="badge">${c.status}</span></td>
+              <td>
+                <button class="cta-secondary" onclick="selectCourseForModules(${c.id})">Módulos</button>
+              </td>
+            </tr>
+          `).join('') + '</tbody></table>';
+      } catch (err) {
+        console.error('Erro ao carregar cursos:', err);
+      }
+    }
+
+    async function loadRecentEnrollments() {
+      try {
+        const res = await fetch(`${API_BASE}/admin/enrollments`, { headers: { 'Authorization': `Bearer ${token}` } });
+        if (res.status === 401) return showLogin();
+        const enrollments = await res.json();
+        const container = document.getElementById('recentEnrollments');
+        
+        if (!Array.isArray(enrollments) || enrollments.length === 0) {
+          container.innerHTML = '<p>Nenhuma matrícula.</p>';
+          return;
+        }
+
+        container.innerHTML = '<table><thead><tr><th>ID</th><th>Curso</th><th>Status</th></tr></thead><tbody>' +
+          enrollments.slice(0, 10).map(e => `
+            <tr>
+              <td>${e.id}</td>
+              <td>${e.course_id}</td>
+              <td>${e.status}</td>
+            </tr>
+          `).join('') + '</tbody></table>';
+      } catch (err) {
+        console.error('Erro ao carregar matrículas:', err);
+      }
+    }
+
+    async function loadRecentOrders() {
+      try {
+        const res = await fetch(`${API_BASE}/admin/orders`, { headers: { 'Authorization': `Bearer ${token}` } });
+        if (res.status === 401) return showLogin();
+        const orders = await res.json();
+        const container = document.getElementById('recentOrders');
+        
+        if (!Array.isArray(orders) || orders.length === 0) {
+          container.innerHTML = '<p>Nenhum pedido.</p>';
+          return;
+        }
+
+        container.innerHTML = '<table><thead><tr><th>ID</th><th>Total</th><th>Status</th></tr></thead><tbody>' +
+          orders.slice(0, 10).map(o => `
+            <tr>
+              <td>${o.id}</td>
+              <td>${o.total / 100}</td>
+              <td>${o.status}</td>
+            </tr>
+          `).join('') + '</tbody></table>';
+      } catch (err) {
+        console.error('Erro ao carregar pedidos:', err);
+      }
+    }
+
+    async function selectCourseForModules(courseId) {
+      document.getElementById('moduleCourseId').value = courseId;
+      document.getElementById('createModuleForm').classList.remove('hidden');
+      document.getElementById('createLessonForm').classList.add('hidden');
+      alert('Curso selecionado (ID: ' + courseId + '). Preencha o formulário de módulo abaixo.');
+    }
+
+    document.getElementById('loginForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+      const errorEl = document.getElementById('loginError');
+      
+      try {
+        const res = await fetch(`${API_BASE}/auth/login`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, password })
+        });
+        
+        const data = await res.json();
+        if (res.status === 200) {
+          localStorage.setItem('academy_admin_token', data.access_token);
+          showAuth();
+        } else {
+          errorEl.textContent = data.detail || 'Erro no login.';
+        }
+      } catch (err) {
+        errorEl.textContent = 'Erro de conexão. Tente novamente.';
+      }
+    });
+
+    document.getElementById('createCourseForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const errorEl = document.getElementById('createCourseError');
+      
+      try {
+        const formData = new FormData();
+        formData.append('title', document.getElementById('title').value);
+        formData.append('slug', document.getElementById('slug').value);
+        formData.append('subtitle', document.getElementById('subtitle').value);
+        formData.append('description', document.getElementById('description').value);
+        formData.append('status', document.getElementById('status').value);
+        
+        const res = await fetch(`${API_BASE}/admin/courses`, {
+          method: 'POST',
+          headers: { 'Authorization': `Bearer ${token}` },
+          body: formData
+        });
+        
+        const data = await res.json();
+        if (res.status === 200) {
+          errorEl.textContent = '';
+          document.getElementById('createCourseForm').reset();
+          loadCourses();
+        } else {
+          errorEl.textContent = data.detail || 'Erro ao criar curso.';
+        }
+      } catch (err) {
+        errorEl.textContent = 'Erro de conexão. Tente novamente.';
+      }
+    });
+
+    document.getElementById('createModuleForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const errorEl = document.getElementById('createModuleError');
+      const courseId = document.getElementById('moduleCourseId').value;
+      
+      try {
+        const formData = new FormData();
+        formData.append('title', document.getElementById('moduleTitle').value);
+        formData.append('description', '');
+        formData.append('order', parseInt(document.getElementById('moduleOrder').value, 10));
+        
+        const res = await fetch(`${API_BASE}/admin/courses/${courseId}/modules`, {
+          method: 'POST',
+          headers: { 'Authorization': `Bearer ${token}` },
+          body: formData
+        });
+        
+        const data = await res.json();
+        if (res.status === 200) {
+          errorEl.textContent = '';
+          document.getElementById('createModuleForm').reset();
+          loadCourses();
+        } else {
+          errorEl.textContent = data.detail || 'Erro ao criar módulo.';
+        }
+      } catch (err) {
+        errorEl.textContent = 'Erro de conexão. Tente novamente.';
+      }
+    });
+
+    document.getElementById('createLessonForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const errorEl = document.getElementById('createLessonError');
+      const moduleId = document.getElementById('lessonModuleId').value;
+      
+      try {
+        const formData = new FormData();
+        formData.append('title', document.getElementById('lessonTitle').value);
+        formData.append('content_type', document.getElementById('lessonType').value);
+        formData.append('content_url', document.getElementById('lessonUrl').value);
+        formData.append('order', parseInt(document.getElementById('lessonOrder').value, 10));
+        
+        const res = await fetch(`${API_BASE}/admin/modules/${moduleId}/lessons`, {
+          method: 'POST',
+          headers: { 'Authorization': `Bearer ${token}` },
+          body: formData
+        });
+        
+        const data = await res.json();
+        if (res.status === 200) {
+          errorEl.textContent = '';
+          document.getElementById('createLessonForm').reset();
+        } else {
+          errorEl.textContent = data.detail || 'Erro ao criar aula.';
+        }
+      } catch (err) {
+        errorEl.textContent = 'Erro de conexão. Tente novamente.';
+      }
+    });
+
+    if (token) {
+      showAuth();
+    } else {
+      showLogin();
+    }
+  </script>
+</body>
+</html>
