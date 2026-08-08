@@ -78,18 +78,32 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
   <script>
     const apiBase = '/academy';
+    const token = localStorage.getItem('academy_token') || sessionStorage.getItem('academy_token');
+    if (token) {
+      window.location.href = '/education/aluno/index.html';
+    }
+
     document.getElementById('loginForm').addEventListener('submit', async (e) => {
       e.preventDefault();
-      const email = document.getElementById('email').value;
+      const email = document.getElementById('email').value.trim();
       const password = document.getElementById('password').value;
       const errorEl = document.getElementById('error');
       try {
-        const res = await axios.post(apiBase + '/auth/login', { email, password });
-        const token = res.data.access_token;
-        localStorage.setItem('academy_token', token);
-        window.location.href = '/education/aluno/index.html';
+        const res = await fetch(apiBase + '/auth/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, password })
+        });
+        const data = await res.json();
+        if (res.status === 200) {
+          localStorage.setItem('academy_token', data.access_token);
+          window.location.href = '/education/aluno/index.html';
+        } else {
+          errorEl.textContent = data.detail || 'Erro ao entrar.';
+          errorEl.classList.remove('hidden');
+        }
       } catch (err) {
-        errorEl.textContent = err.response?.data?.detail || 'Erro ao entrar.';
+        errorEl.textContent = 'Erro de conexão. Tente novamente.';
         errorEl.classList.remove('hidden');
       }
     });
