@@ -71,7 +71,16 @@ def test_checkout_public():
 
 
 def test_checkout_confirm():
-    order_id = test_checkout_public()
+    course_id = seed_course("curso-smoke-confirm")
+    payload = {
+        "items": [{"course_id": course_id, "quantity": 1}],
+        "buyer_name": "Comprador Confirm",
+        "buyer_email": "smoke-confirm@example.com",
+        "buyer_document": "12345678900",
+    }
+    checkout = client.post("/academy/checkout", json=payload)
+    assert checkout.status_code == 200, checkout.text
+    order_id = checkout.json()["order_id"]
     r = client.get(f"/academy/checkout/confirm?order_id={order_id}")
     assert r.status_code == 200, r.text
     data = r.json()
