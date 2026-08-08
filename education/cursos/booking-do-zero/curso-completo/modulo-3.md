@@ -1,60 +1,99 @@
-# Módulo 3 — Conteúdo Premium
+# Módulo 3 — Gestão de Reservas e Preços
+
 ## Introdução
-Neste módulo você vai dominar booking do zero com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+Neste módulo você vai aprender a gerenciar reservas, configurar preços dinâmicos e usar ferramentas para maximizar receita no Booking.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 3.1 — Gestão de reservas
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+### Dashboard do parceiro
 
-## Aula 3.2 — Caso real 2: como evitar erros custosos
-Fundamentos, ferramentas e fluxos recomendados para booking do zero no litoral.
+- **Calendário**: visualize disponibilidade e reservas
+- **Mensagens**: centralize comunicação com hóspedes
+- **Reservas**: acompanhe status e pagamentos
 
-**Ferramentas recomendadas:**
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
+### Fluxo de reserva
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+1. **Hóspede pesquisa**: filtros, datas, preço
+2. **Hóspede reserva**: pagamento processado pelo Booking
+3. **Você confirma**: aceite ou recuse
+4. **Hóspede chega**: check-in
+5. **Hóspede sai**: check-out, avaliação
 
-## Aula 3.3 — Lições aplicáveis ao seu contexto
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+### Política de cancelamento
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+- **Flexível**: cancelamento até 24h antes
+- **Moderada**: cancelamento até 5 dias antes
+- **Rigorosa**: cancelamento até 7 dias antes
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+### Exercício
 
-## Exercício
-Analise um caso real do mercado e adapte as lições para a sua realidade.
+Configure a política de cancelamento mais adequada para o seu perfil de hóspedes.
+
+## Aula 3.2 — Precificação dinâmica
+
+### Estratégias Booking
+
+1. **Preço base**: valor médio da região
+2. **Multiplicador de temporada**:
+   - Alta temporada: +100% a +200%
+   - Baixa temporada: -30% a -50%
+3. **Mínimo de noites**: finais de semana, feriados
+4. **Descontos estratégicos**: estadias longas
+
+### Ferramentas
+
+- **PriceLabs**: automação completa
+- **Wheelhouse**: machine learning
+- **Booking Analytics**: dados da plataforma
+
+### Exemplo prático
+
+| Período | Preço base | Multiplicador | Preço final |
+|---------|-----------|---------------|-------------|
+| Janeiro (alta) | R$ 400 | +150% | R$ 1.000 |
+| Fevereiro (média) | R$ 400 | +50% | R$ 600 |
+| Março (baixa) | R$ 400 | -30% | R$ 280 |
+
+## Aula 3.3 — Eventos e picos
+
+### Calendário de picos no litoral
+
+| Mês | Evento | Impacto |
+|-----|--------|---------|
+| Janeiro | Verão, Reveillon | +200% |
+| Fevereiro | Carnaval | +150% |
+| Julho | Férias escolares | +50% |
+| Dezembro | Natal | +100% |
+
+### Como antecipar picos
+
+1. **Monitore eventos locais**: prefeituras, sites de turismo
+2. **Ajuste preços com 30 dias de antecedência**
+3. **Crie pacotes temáticos**: lua de mel, ano novo, carnaval
+
+### Exercício
+
+Configure preços para o Carnaval 2026 no seu imóvel.
 
 ## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
+
+- Gestão eficiente de reservas reduz trabalho manual.
+- Precificação dinâmica maximiza receita.
+- Antecipe picos para capturar demanda.
 
 ## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
+
+- [ ] Política de cancelamento definida
+- [ ] Tabela de preços criada
+- [ ] Ferramenta de automação escolhida
+- [ ] Eventos locais mapeados
 
 ## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
 
-## Ferramentas recomendadas
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
+- Planilha de precificação Booking
+- Template de política de cancelamento
 
 ## Prompt de IA
-Atue como mentor experiente. Analise este caso real de booking do zero no litoral e aponte 5 lições práticas: [descreva o caso].
+
+Atue como consultor Booking. Crie uma estratégia de precificação dinâmica para o meu imóvel no litoral.
