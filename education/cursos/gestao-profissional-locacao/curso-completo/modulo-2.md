@@ -1,60 +1,115 @@
-# Módulo 2 — Conteúdo Premium
+# Módulo 2 — Operação e Administração do Imóvel
+
 ## Introdução
-Neste módulo você vai dominar gestao profissional locacao com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 2.1 — Passo a passo para aplicar gestao profissional locacao na prática
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+Neste módulo você vai aprender a operar o imóvel no dia a dia: limpeza, manutenção, check-in/check-out e gestão de equipes.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 2.1 — Processo operacional
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+### Fluxo operacional padrão
 
-## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
-Fundamentos, ferramentas e fluxos recomendados para gestao profissional locacao no litoral.
+1. **Check-in**
+   - Verificação de documentação
+   - Auto check-in ou recepção
+   - Apresentação do imóvel
+   - Manual de boas-vindas
 
-**Ferramentas recomendadas:**
-- CRM de atendimento
-- Planilha de acompanhamento
-- Ferramenta de automação de mensagens
+2. **Durante estadia**
+   - Suporte por WhatsApp
+   - Manutenção emergencial
+   - Solicitações extras
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+3. **Check-out**
+   - Verificação do imóvel
+   - Checklist de danos
+   - Repasse para limpeza
 
-## Aula 2.3 — Automação e fluxos que economizam horas por semana
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+4. **Pós estadia**
+   - Limpeza e preparação
+   - Reposição de itens
+   - Manutenção preventiva
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+### Padronização
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+- **Checklist de entrada**: documento com estado do imóvel
+- **Checklist de saída**: verificação de danos
+- **Manual do hóspede**: regras, dicas, contatos
 
-## Exercício
-Monte um plano prático de gestao profissional locacao para os próximos 30 dias, com ações diárias e semanais.
+### Ferramentas
+
+- **Trello/Notion**: gestão de tarefas
+- **Google Calendar**: agendamento de limpeza
+- **WhatsApp Business**: comunicação profissional
+
+## Aula 2.2 — Limpeza e manutenção
+
+### Limpeza profissional
+
+- **Equipe terceirizada**: agilidade, qualidade
+- **Equipe própria**: controle total, custo menor
+- **Híbrido**: equipe fixa + freelancers para picos
+
+### Padronização de limpeza
+
+1. **Checklist por ambiente**
+2. **Produtos padrão**
+3. **Tempo por imóvel**
+4. **Inspeção pré-check-in**
+
+### Manutenção preventiva
+
+- **Ar-condicionado**: limpeza trimestral
+- **Elétrica**: inspeção semestral
+- **Hidráulica**: verificação mensal
+- **Eletrodomésticos**: revisão anual
+
+### Exercício
+
+Crie um checklist de limpeza e manutenção para o seu imóvel.
+
+## Aula 2.3 — Gestão de equipes
+
+### Estrutura mínima
+
+- **Limpeza**: 1-2 pessoas por imóvel
+- **Manutenção**: parceiro fixo ou sob demanda
+- **Suporte**: você ou gerente
+
+### Recrutamento
+
+1. **Indicações**: confiança primeiro
+2. **Entrevista**: verifique experiência
+3. **Teste prático**: limpeza de avaliação
+4. **Treinamento**: padrões e expectativas
+
+### Gestão de desempenho
+
+- **Avaliação semanal**: checklist, tempo, qualidade
+- **Feedback contínuo**: positivo + correções
+- **Reconhecimento**: premie bons resultados
+
+### Exercício
+
+Monte uma estrutura de equipe para gerir 3 imóveis no litoral.
 
 ## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
+
+- Processo operacional padronizado reduz erros.
+- Limpeza e manutenção são diferenciais.
+- Equipe bem gerida garanta qualidade.
 
 ## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
+
+- [ ] Fluxo operacional documentado
+- [ ] Equipe de limpeza contratada
+- [ ] Manutenção preventiva programada
+- [ ] Gestão de desempenho implementada
 
 ## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
 
-## Ferramentas recomendadas
-- CRM de atendimento
-- Planilha de acompanhamento
-- Ferramenta de automação de mensagens
+- Checklist operacional padrão
+- Template de manual do hóspede
 
 ## Prompt de IA
-Atue como consultor de gestao profissional locacao. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].
+
+Atue como consultor de gestão de locação. Crie um plano operacional completo para eu gerenciar meu imóvel no litoral com profissionalismo.
