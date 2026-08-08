@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3
 import glob, os, re, json, hashlib
 from collections import defaultdict, Counter
 from urllib.parse import urlparse
@@ -9,21 +9,113 @@ BLOG_DIR = os.path.join(BASE, "blog")
 OUT_PATH = os.path.join(BASE, "docs", "banco-editorial.json")
 
 KEYWORDS_CITY = [
-    "santos","guaruj\u00e1","guaruja","praia grande","bertioga","itanha\u00e9m","itanhaem",
-    "mongagu\u00e1","mongagua","s\u00e3o vicente","sao vicente","peru\u00edbe","peruibe",
-    "caraguatatuba","ilhabela","s\u00e3o sebasti\u00e3o","sao sebastiao","ubatuba",
+    "santos","guaruja","guarujá","praia grande","bertioga","itanhaem","itanhaém",
+    "mongagua","mongaguá","sao vicente","são vicente","peruibe","peruíbe",
+    "caraguatatuba","ilhabela","sao sebastiao","são sebastião","ubatuba",
     "maresias","riviera","litoral norte","litoral sul","litoral paulista","litoral de sp"
 ]
-
 CITY_NORM = {
-    "guaruj\u00e1":"guaruja","guaruja":"guaruja","santos":"santos","praia grande":"praia_grande",
-    "bertioga":"bertioga","itanha\u00e9m":"itanhaem","itanhaem":"itanhaem",
-    "mongagu\u00e1":"mongagua","mongagua":"mongagua","s\u00e3o vicente":"sao_vicente","sao vicente":"sao_vicente",
-    "peru\u00edbe":"peruibe","peruibe":"peruibe","caraguatatuba":"caraguatatuba","ilhabela":"ilhabela",
-    "s\u00e3o sebasti\u00e3o":"sao_sebastiao","sao sebastiao":"sao_sebastiao","maresias":"maresias",
+    "guarujá":"guaruja","guaruja":"guaruja","santos":"santos","praia grande":"praia_grande",
+    "bertioga":"bertioga","itanhaém":"itanhaem","itanhaem":"itanhaem",
+    "mongaguá":"mongagua","mongagua":"mongagua","são vicente":"sao_vicente","sao vicente":"sao_vicente",
+    "peruíbe":"peruibe","peruibe":"peruibe","caraguatatuba":"caraguatatuba","ilhabela":"ilhabela",
+    "são sebastião":"sao_sebastiao","sao sebastiao":"sao_sebastiao","maresias":"maresias",
     "riviera":"riviera","ubatuba":"ubatuba","litoral norte":"litoral_norte","litoral sul":"litoral_sul",
     "litoral paulista":"litoral_paulista","litoral de sp":"litoral_sp"
 }
+ARTICLE_TYPES = {
+    "A": "Artigo SEO gratuito",
+    "B": "Artigo de conversao",
+    "C": "Artigo-ponte",
+    "D": "Artigo de autoridade",
+    "E": "Artigo comercial",
+}
+PRODUCTS = [
+    {
+        "id": "curso-gestao-temporada",
+        "nome": "Curso de Gestão de Imóveis de Temporada",
+        "descricao": "Formação completa para proprietários e gestores que querem profissionalizar aluguéis de temporada no litoral.",
+        "publico": "Proprietários, gestores e corretores que querem atuar com temporada.",
+        "problema": "Falta de método, precificação e operação para aluguéis de temporada.",
+        "transformacao": "Processo estruturado de gestão, precificação, reservas, estadia e pós-estadia.",
+        "categoria": "curso",
+        "nivel": "intermediario",
+        "link_hotmart": "https://www.hotmart.com/pt-br/producto/curso-gestao-temporada",
+        "artigos_relacionados": [],
+        "keywords_relacionadas": ["aluguel temporada", "gestao locacao", "temporada litoral", "rentabilidade", "ocupacao"],
+        "cta_recomendado": "Quer aprender a profissionalizar seu imóvel de temporada? Veja o treinamento completo."
+    },
+    {
+        "id": "curso-comprar-imovel-praia-sem-golpes",
+        "nome": "Curso: Comprar Imóvel na Praia Sem Golpes",
+        "descricao": "Checklist, documentação e estratégias para comprar imóvel no litoral com segurança.",
+        "publico": "Compradores de primeira viagem e investidores iniciantes no litoral.",
+        "problema": "Falta de clareza sobre documentação, riscos e como escolher imóvel com segurança.",
+        "transformacao": "Capacidade de avaliar imóveis, validar documentação e fechar compra com menor risco.",
+        "categoria": "curso",
+        "nivel": "iniciante",
+        "link_hotmart": "https://www.hotmart.com/pt-br/producto/comprar-imovel-praia-sem-golpes",
+        "artigos_relacionados": [],
+        "keywords_relacionadas": ["comprar imovel", "documentacao imovel", "segurança compra", "primeiro imovel", "escritura"],
+        "cta_recomendado": "Quer comprar com segurança? Conheça o curso completo para compradores no litoral."
+    },
+    {
+        "id": "ebook-rentabilidade-temporada",
+        "nome": "E-book: Rentabilidade de Temporada no Litoral",
+        "descricao": "Guia prático para calcular retorno, definir preço e analisar viabilidade de imóveis de temporada.",
+        "publico": "Proprietários e investidores que avaliam temporada como oportunidade.",
+        "problema": "Dificuldade para calcular rentabilidade real e tomar decisão de investimento.",
+        "transformacao": "Planilha e critérios claros para avaliar retorno e comparar oportunidades.",
+        "categoria": "ebook",
+        "nivel": "iniciante",
+        "link_hotmart": "https://www.hotmart.com/pt-br/producto/ebook-rentabilidade-temporada",
+        "artigos_relacionados": [],
+        "keywords_relacionadas": ["rentabilidade", "retorno investimento", "temporada", "aluguel temporada", "investimento imovel"],
+        "cta_recomendado": "Quer calcular a viabilidade do seu imóvel? Baixe o guia completo de rentabilidade."
+    },
+    {
+        "id": "checklist-captacao-imoveis",
+        "nome": "Checklist: Captação de Imóveis para Corretores",
+        "descricao": "Material pronto para estruturar a captação de imóveis no litoral sem depender de anúncios.",
+        "publico": "Corretores e pequenas imobiliárias do litoral.",
+        "problema": "Falta de processo de captação consistente e previsível.",
+        "transformacao": "Rotina de prospecção, scripts e pontos de contato para captar imóveis regularmente.",
+        "categoria": "checklist",
+        "nivel": "iniciante",
+        "link_hotmart": "https://www.hotmart.com/pt-br/producto/checklist-captacao-imoveis",
+        "artigos_relacionados": [],
+        "keywords_relacionadas": ["captacao imoveis", "prospeccao", "corretor litoral", "proprietario", "captar imoveis"],
+        "cta_recomendado": "Quer captar mais imóveis sem anúncios? Use o checklist pronto para corretores."
+    },
+    {
+        "id": "curso-marketing-digital-imobiliaria",
+        "nome": "Curso de Marketing Digital para Imobiliárias",
+        "descricao": "Treinamento de SEO local, Google Business Profile, conteúdo e anúncios para imobiliárias do litoral.",
+        "publico": "Imobiliárias e corretores que querem atrair leads qualificados.",
+        "problema": "Falta de presença digital, conteúdo fraco e leads inconsistentes.",
+        "transformacao": "Estrutura de marketing local, calendário de conteúdo, modelo de anúncios e métricas.",
+        "categoria": "curso",
+        "nivel": "intermediario",
+        "link_hotmart": "https://www.hotmart.com/pt-br/producto/marketing-digital-imobiliaria",
+        "artigos_relacionados": [],
+        "keywords_relacionadas": ["marketing digital", "seo local", "google business", "leads", "anuncios imoveis"],
+        "cta_recomendado": "Quer atrair leads qualificados todos os dias? Veja o curso de marketing digital para imobiliárias."
+    },
+    {
+        "id": "minicurso-automacao-imobiliaria",
+        "nome": "Mini Curso: Automação para Imobiliárias",
+        "descricao": "Introdução prática a automações, CRM leve e atendimento digital para imobiliárias pequenas.",
+        "publico": "Pequenas imobiliárias e corretores sem equipe de tecnologia.",
+        "problema": "Atendimento lento, follow-up fraco e processos repetitivos manuais.",
+        "transformacao": "Automações simples de atendimento, follow-up e organização de leads.",
+        "categoria": "mini-curso",
+        "nivel": "iniciante",
+        "link_hotmart": "https://www.hotmart.com/pt-br/producto/minicurso-automacao-imobiliaria",
+        "artigos_relacionados": [],
+        "keywords_relacionadas": ["automacao imobiliaria", "chatbot", "atendimento digital", "crm", "follow-up"],
+        "cta_recomendado": "Quer reduzir o tempo de resposta e organizar o atendimento? Comece pelo mini curso de automação."
+    }
+]
 
 def detect_city(text):
     lower = text.lower()
@@ -51,9 +143,6 @@ def extract_h2s(content, limit=20):
 def slug_from_path(path):
     return os.path.splitext(os.path.basename(path))[0]
 
-def internal_blog_links(content):
-    return re.findall(r'href=["\'](/blog/[^"\']+)["\']', content)
-
 def canonical_ok(content, path):
     m = re.search(r'<link rel="canonical" href="([^"]+)"', content, re.IGNORECASE)
     expected_slug = slug_from_path(path)
@@ -70,11 +159,11 @@ def canonical_ok(content, path):
 
 def classify_funnel(title):
     t = title.lower()
-    if any(x in t for x in ["guia","primeira compra","primeiro imovel","como escolher","como comprar","quando comprar","quando vender","quanto custa","morar","seguran\u00e7a","documenta\u00e7\u00e3o","financiamento","impostos","checklist"]):
+    if any(x in t for x in ["guia","primeira compra","primeiro imovel","como escolher","como comprar","quando comprar","quando vender","quanto custa","morar","seguranca","documentacao","financiamento","impostos","checklist"]):
         return "Topo"
-    if any(x in t for x in ["avaliacao","avaliar","preco","pre\u00e7o","valor","rentabilidade","investir","comparar","mercado","analise","an\u00e1lise","roi","tendencias","tend\u00eancia"]):
+    if any(x in t for x in ["avaliacao","avaliar","preco","preço","valor","rentabilidade","investir","comparar","mercado","analise","análise","roi","tendencias","tendência"]):
         return "Meio"
-    if any(x in t for x in ["captacao","captar","leads","vendas","fechar","parceria","automacao","automa\u00e7\u00e3o","whatsapp","visita","proposta","fechamento","case","resultado","reducao","redu\u00e7\u00e3o","conversao","convers\u00e3o","funil","nurturing"]):
+    if any(x in t for x in ["captacao","captar","leads","vendas","fechar","parceria","automacao","automação","whatsapp","visita","proposta","fechamento","case","resultado","reducao","redução","conversao","conversão","funil","nurturing"]):
         return "Fundo"
     return "Meio"
 
@@ -84,17 +173,17 @@ def cluster_from_slug(title, slug, city):
         return "locacao_temporada"
     if any(x in t for x in ["venda","vender","vendas","fechamento","fechar","compra","comprar"]):
         return "compra_venda"
-    if any(x in t for x in ["investimento","investir","rentabilidade","roi","retorno","valorizacao","valoriza\u00e7\u00e3o","lucro"]):
+    if any(x in t for x in ["investimento","investir","rentabilidade","roi","retorno","valorizacao","valorização","lucro"]):
         return "investimento"
-    if any(x in t for x in ["bairro","bairros","centro","ponta","gonzaga","embare","jose menino","vila nova","boa viagem","santos","guaruj\u00e1","guaruja","praia grande","bertioga","itanhaem","mongagua","sao vicente","peruibe","caraguatatuba","ilhabela","sao sebastiao","maresias","ubatuba"]):
+    if any(x in t for x in ["bairro","bairros","centro","ponta","gonzaga","embare","jose menino","vila nova","boa viagem","santos","guaruja","guarujá","praia grande","bertioga","itanhaem","mongagua","sao vicente","peruibe","caraguatatuba","ilhabela","sao sebastiao","maresias","ubatuba"]):
         return "bairros_cidades"
     if any(x in t for x in ["seo local","google business","maps","perfil google","backlinks","autoridade local"]):
         return "seo_local"
     if any(x in t for x in ["marketing digital","redes sociais","instagram","facebook","reels","tiktok","video","conteudo"]):
         return "marketing_digital"
-    if any(x in t for x in ["automacao","automa\u00e7\u00e3o","ia","inteligencia artificial","chatbot","assistente virtual","ferramentas"]):
+    if any(x in t for x in ["automacao","automação","ia","inteligencia artificial","chatbot","assistente virtual","ferramentas"]):
         return "automacao_ia"
-    if any(x in t for x in ["parceria","construtoras","indica\u00e7\u00e3o","ganho compartilhado","white label"]):
+    if any(x in t for x in ["parceria","construtoras","indicação","ganho compartilhado","white label"]):
         return "parcerias"
     if any(x in t for x in ["juridico","documentacao","escritura","iptu","usucapiao","lei","inadimplencia","seguro"]):
         return "juridico"
@@ -110,9 +199,43 @@ def intent_from_title(title):
         return "informacional"
     if any(x in t for x in ["comprar","vender","investir","alugar","captar","leads","vendas","fechar","anunciar"]):
         return "comercial"
-    if any(x in t for x in ["case","resultado","depoimento","analise","an\u00e1lise","comparar","melhor"]):
+    if any(x in t for x in ["case","resultado","depoimento","analise","análise","comparar","melhor"]):
         return "navegacional_comparativo"
     return "informacional"
+
+def article_type_from_title(title, slug):
+    t = title.lower()
+    s = slug.lower()
+    if any(x in t for x in ["curso","treinamento","aula","modulo","certificado"]):
+        return "B"
+    if any(x in t for x in ["checklist","planilha","template","modelo","guia completo","passo a passo"]):
+        return "C"
+    if any(x in t for x in ["case","resultado","depoimento","antes e depois"]):
+        return "D"
+    if any(x in t for x in ["comprar","vender","investir","alugar","captar","leads","vendas","fechar","anunciar"]):
+        return "E"
+    return "A"
+
+def recommend_product(title, slug, city):
+    t = (title + " " + slug).lower()
+    candidates = []
+    for p in PRODUCTS:
+        score = 0
+        for kw in p["keywords_relacionadas"]:
+            if kw in t:
+                score += 1
+        candidates.append((score, p))
+    candidates.sort(key=lambda x: (-x[0], x[1]["id"]))
+    best_score, best = candidates[0]
+    if best_score >= 1:
+        return best["id"], best_score
+    return None, 0
+
+def cta_text_for_product(prod_id):
+    for p in PRODUCTS:
+        if p["id"] == prod_id:
+            return p["cta_recomendado"], p["link_hotmart"]
+    return None, None
 
 records = []
 missing_canonical = []
@@ -120,6 +243,7 @@ city_counts = Counter()
 cluster_counts = Counter()
 funnel_counts = Counter()
 intent_counts = Counter()
+type_counts = Counter()
 
 for path in sorted(glob.glob(os.path.join(BLOG_DIR, "*.html"))):
     slug = slug_from_path(path)
@@ -138,7 +262,6 @@ for path in sorted(glob.glob(os.path.join(BLOG_DIR, "*.html"))):
     city = detect_city(title + " " + (desc or "") + " " + slug)
     h1 = extract_h1(content)
     h2s = extract_h2s(content)
-    internal = internal_blog_links(content)
     canon = canonical_ok(content, path)
     if canon is False:
         missing_canonical.append(path)
@@ -149,6 +272,10 @@ for path in sorted(glob.glob(os.path.join(BLOG_DIR, "*.html"))):
     funnel_counts[funnel] += 1
     intent = intent_from_title(title)
     intent_counts[intent] += 1
+    article_type = article_type_from_title(title, slug)
+    type_counts[article_type] += 1
+    prod_id, prod_score = recommend_product(title, slug, city)
+    cta_text, hotmart_link = cta_text_for_product(prod_id) if prod_id else (None, None)
     records.append({
         "id": hashlib.md5(slug.encode('utf-8')).hexdigest()[:10],
         "slug": slug,
@@ -164,9 +291,16 @@ for path in sorted(glob.glob(os.path.join(BLOG_DIR, "*.html"))):
         "intent": intent,
         "cluster": cluster,
         "canonical_ok": canon,
-        "internal_links": internal[:20],
         "status": "publicado",
-        "lastmod": None,
+        "article_type": article_type,
+        "article_type_label": ARTICLE_TYPES[article_type],
+        "product_related_id": prod_id,
+        "product_relation_score": prod_score,
+        "hotmart_link": hotmart_link,
+        "recommended_cta": cta_text,
+        "conversion_potential": "alta" if prod_score >= 2 else "media" if prod_score == 1 else "baixa",
+        "commercial_cluster": cluster,
+        "cta_intensity": "forte" if article_type == "B" else "media" if article_type in ("C","E") else "suave"
     })
 
 dup_signals = []
@@ -187,7 +321,7 @@ for i in range(n):
                 "score": round(ratio, 2),
                 "a": a['path'],
                 "b": b['path'],
-                "reason": "T\u00edtulos muito similares com mesma inten\u00e7\u00e3o, cluster e cidade"
+                "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
             })
 
 city_cluster = defaultdict(Counter)
@@ -224,19 +358,32 @@ for cluster, city, count, score in next_queue:
     unique_queue.append({"cluster": cluster, "city": city, "count": count, "priority_score": score, "priority": "alta" if score >= 3 else "media" if score == 2 else "baixa"})
 unique_queue.sort(key=lambda x: (-x['priority_score'], x['count'], x['city'], x['cluster']))
 unique_queue = unique_queue[:20]
-
 top10 = unique_queue[:10]
 
-update_candidates = [r['path'] for r in records if r['canonical_ok'] is False or r['internal_links'] == []][:40]
+update_candidates = [r['path'] for r in records if r['canonical_ok'] is False or r.get('internal_links') == []][:40]
+
+product_mapping = defaultdict(list)
+for r in records:
+    if r['product_related_id']:
+        product_mapping[r['product_related_id']].append({
+            "path": r['path'],
+            "title": r['title'],
+            "type": r['article_type_label'],
+            "cta": r['recommended_cta'],
+            "conversion_potential": r['conversion_potential']
+        })
 
 report = {
     "meta": {
         "total_articles": len(records),
         "domain": "praia.digital",
         "blog_path": BLOG_DIR,
-        "scope": "controle editorial cont\u00ednuo"
+        "scope": "controle editorial contínuo + integracao hotmart"
     },
+    "products": PRODUCTS,
+    "article_types": ARTICLE_TYPES,
     "status_counts": dict(Counter(r['status'] for r in records)),
+    "article_type_counts": dict(type_counts),
     "funnel_counts": dict(funnel_counts),
     "intent_counts": dict(intent_counts),
     "city_counts": dict(city_counts),
@@ -246,6 +393,7 @@ report = {
     "update_candidates": update_candidates[:40],
     "next_queue": top10,
     "coverage_by_city_cluster": {c: dict(clusters) for c, clusters in city_cluster.items()},
+    "product_mapping": product_mapping,
     "articles": records,
 }
 
@@ -255,10 +403,12 @@ with open(OUT_PATH, 'w', encoding='utf-8') as fh:
 
 print('wrote', OUT_PATH)
 print('total', len(records), 'articles')
+print('article types:', dict(type_counts))
+print('product mapping entries:', len(product_mapping))
+for pid, items in product_mapping.items():
+    print(' -', pid, ':', len(items))
 print('duplicate signals:', len(dup_signals))
 print('canonical issues:', len(missing_canonical))
-print('next queue count:', len(top10))
+print('top10 next queue:')
 for item in top10:
     print(item)
-print('top cities:', city_counts.most_common(10))
-print('top clusters:', cluster_counts.most_common(10))
