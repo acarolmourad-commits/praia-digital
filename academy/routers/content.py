@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from typing import List
+from typing import List, Optional
 from academy.core.database import get_db
 from academy.core.models import Course, Module, Lesson, Enrollment, ContentAttachment
-from academy.core.schemas import CourseOut, ModuleOut, LessonOut, LessonContentOut
+from academy.core.schemas import CourseOut, ModuleOut, LessonOut, ContentAttachmentOut, LessonContentOut
 from academy.core.security import get_current_user
 
 router = APIRouter(prefix="/content", tags=["content"])
@@ -117,3 +117,25 @@ def get_course_attachments(slug: str, db: Session = Depends(get_db), user=Depend
         }
         for a in attachments
     ]
+
+# Public course structure (catalog/landing)
+@router.get("/courses/{slug}/public", response_model=CourseOut)
+def get_course_public(slug: str, db: Session = Depends(get_db)):
+    course = db.query(Course).filter(Course.slug == slug, Course.status == "published").first()
+    if not course:
+        raise HTTPException(status_code=404, detail="Curso não encontrado.")
+    return course
+
+@router.get("/courses/{slug}/modules/public", response_model=List[ModuleOut])
+def get_course_modules_public(slug: str, db: Session = Depends(get_db)):
+    course = db.query(Course).filter(Course.slug == slug, Course.status == "published").first()
+    if not course:
+        raise HTTPException(status_code=404, detail="Curso não encontrado.")
+    return course.modules
+
+@router.get("/modules/{module_id}/lessons/public", response_model=List[LessonOut])
+def get_module_lessons_public(module_id: int, db: Session = Depends(get_db)):
+    module = db.query(Module).filter(Module.id == module_id).first()
+    if not module:
+        raise HTTPException(status_code=404, detail="Módulo não encontrado.")
+    return module.lessons
