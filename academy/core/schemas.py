@@ -180,3 +180,24 @@ class LeadEventOut(BaseModel):
 
     class Config:
         from_attributes = True
+
+class ContentAttachmentOut(BaseModel):
+    id: int
+    lesson_id: int
+    file_name: str
+    file_url: str
+    file_type: Optional[str]
+    file_size: Optional[int]
+
+    class Config:
+        from_attributes = True
+
+class LessonContentOut(BaseModel):
+    lesson_id: int
+    title: str
+    content_type: ContentType
+    content_url: Optional[str]
+    duration_minutes: Optional[int]
+    module_id: int
+    course_id: int
+    attachments: List[ContentAttachmentOut] = []
