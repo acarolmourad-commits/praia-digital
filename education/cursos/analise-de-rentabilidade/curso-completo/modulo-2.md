@@ -1,60 +1,97 @@
-# Módulo 2 — Conteúdo Premium
+# Módulo 2 — Indicadores e Comparativos
+
 ## Introdução
-Neste módulo você vai dominar analise de rentabilidade com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 2.1 — Passo a passo para aplicar analise de rentabilidade na prática
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+Neste módulo você vai aprender os principais indicadores de rentabilidade, comparar oportunidades e identificar os melhores investimentos no litoral.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 2.1 — Indicadores essenciais
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+### Cap rate
 
-## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
-Fundamentos, ferramentas e fluxos recomendados para analise de rentabilidade no litoral.
+```
+Cap rate = Receita anual / Valor do imóvel × 100
+```
 
-**Ferramentas recomendadas:**
-- CRM de atendimento
-- Planilha de acompanhamento
-- Ferramenta de automação de mensagens
+Exemplo: imóvel de R$ 500.000 com receita de R$ 40.000/ano = 8% cap rate.
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+### ROI
 
-## Aula 2.3 — Automação e fluxos que economizam horas por semana
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+```
+ROI = (Receita anual - Custos anuais) / Investimento total × 100
+```
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+### Payback
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+```
+Payback = Investimento total / Receita líquida mensal
+```
 
-## Exercício
-Monte um plano prático de analise de rentabilidade para os próximos 30 dias, com ações diárias e semanais.
+Exemplo: investimento de R$ 100.000, receita líquida de R$ 3.000/mês = 33 meses.
+
+### Taxa de ocupação
+
+```
+Ocupação = Dias alugados / Total de dias × 100
+```
+
+## Aula 2.2 — Comparativo por cidade
+
+### Tabela comparativa
+
+| Cidade | Cap rate médio | ROI médio | Ocupação média | Valorização |
+|--------|---------------|-----------|----------------|-------------|
+| Santos | 6-8% | 7-10% | 65-75% | 5-7% |
+| Guarujá | 7-9% | 8-12% | 60-70% | 6-9% |
+| Praia Grande | 6-8% | 8-12% | 55-65% | 7-10% |
+| Bertioga | 7-10% | 9-14% | 50-60% | 6-8% |
+
+### Quando escolher cada cidade
+
+- **Santos**: estabilidade, alta demanda
+- **Guarujá**: temporada forte, valorização
+- **Praia Grande**: preço baixo, potencial
+- **Bertioga**: exclusividade, rentabilidade alta
+
+## Aula 2.3 — Análise de risco
+
+### Matriz de risco
+
+| Fator | Baixo | Médio | Alto |
+|-------|-------|-------|------|
+| Localização | Orla consolidada | Em expansão | Periferia |
+| Documentação | Regular | Pendências menores | Irregular |
+| Demanda | Alta | Média | Baixa |
+| Concorrência | Baixa | Média | Alta |
+
+### Como mitigar risco
+
+1. **Diversifique**: não concentre em uma cidade
+2. **Reserva de emergência**: 6 meses de custos
+3. **Seguro**: proteja o imóvel
+4. **Análise contínua**: acompanhe mercado
+
+### Exercício
+
+Classifique 3 imóveis do litoral por nível de risco.
 
 ## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
+
+- Indicadores permitem comparar oportunidades.
+- Cada cidade tem perfil de risco e retorno.
+- Análise de risco evita surpresas.
 
 ## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
+
+- [ ] Cap rate calculado
+- [ ] ROI projetado
+- [ ] Comparativo por cidade feito
+- [ ] Risco avaliado
 
 ## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
 
-## Ferramentas recomendadas
-- CRM de atendimento
-- Planilha de acompanhamento
-- Ferramenta de automação de mensagens
+- Planilha de indicadores
+- Matriz de risco
 
 ## Prompt de IA
-Atue como consultor de analise de rentabilidade. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].
+
+Atue como consultor de investimentos. Compare 3 imóveis do litoral por rentabilidade e risco.

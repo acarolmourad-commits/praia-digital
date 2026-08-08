@@ -1,60 +1,97 @@
-# Módulo 3 — Conteúdo Premium
+# Módulo 3 — Estratégias de Maximização de Receita
+
 ## Introdução
-Neste módulo você vai dominar analise de rentabilidade com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+Neste módulo você vai aprender estratégias práticas para aumentar a receita de investimentos imobiliários no litoral, incluindo temporada, upgrades e otimização de preços.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 3.1 — Aumentando receita de locação
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+### Estratégias de aumento
 
-## Aula 3.2 — Caso real 2: como evitar erros custosos
-Fundamentos, ferramentas e fluxos recomendados para analise de rentabilidade no litoral.
+1. **Upgrades do imóvel**: reforma, equipamentos, decoração
+2. **Serviços extras**: café da manhã, traslado, passeios
+3. **Temporada**: aluguel por temporada com diária premium
+4. **Eventos**: pacotes para Reveillon, Carnaval
 
-**Ferramentas recomendadas:**
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
+### Cálculo de upgrade
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+```
+Custo do upgrade: R$ 10.000
+Aumento de aluguel: R$ 500/mês
+Payback: 20 meses
+ROI adicional: 30%
+```
 
-## Aula 3.3 — Lições aplicáveis ao seu contexto
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+### Exemplo real
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+Um apartamento em Santos investiu R$ 15.000 em reforma (cozinha nova, pintura, decoração). A diária aumentou de R$ 350 para R$ 550. Payback: 10 meses de alta temporada.
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+## Aula 3.2 — Precificação otimizada
 
-## Exercício
-Analise um caso real do mercado e adapte as lições para a sua realidade.
+### Preço base
+
+- **Mercado**: consulte 20 imóveis similares
+- **Localização**: até 500m da praia = premium
+- **Estado de conservação**: reformado = +
+- **Serviços**: café da manhã = +
+
+### Temporada
+
+- **Alta temporada**: +100% a +200%
+- **Média temporada**: +50%
+- **Baixa temporada**: -30%
+
+### Descontos estratégicos
+
+- **Long stay**: 20% para 7+ noites
+- **Early bird**: 10% para reservas 60+ dias antes
+- **Last minute**: 15% para ocupar datas próximas
+
+### Exercício
+
+Monte uma tabela de preços otimizada para um apartamento no litoral.
+
+## Aula 3.3 — Diversificação de receita
+
+### Fontes adicionais
+
+1. **Experiências**: passeios, degustações, aventuras
+2. **Aluguel de equipamentos**: prancha, bike, cadeira de praia
+3. **Estacionamento**: vaga privativa
+4. **Coworking**: espaço para trabalho remoto
+5. **Eventos**: festas, reuniões, workshops
+
+### Modelos de negócio
+
+| Modelo | Receita base | Receita extra | Complexidade |
+|--------|--------------|---------------|--------------|
+| Locação simples | 100% | 0% | Baixa |
+| Temporada | 70% | 30% | Média |
+| Experiências | 60% | 40% | Alta |
+| Misto completo | 50% | 50% | Alta |
+
+### Exercício
+
+Crie um modelo de negócio diversificado para um imóvel no litoral.
 
 ## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
+
+- Aumentar receita exige investimento em melhorias.
+- Precificação otimizada maximiza temporada.
+- Diversificação reduz risco e aumenta receita.
 
 ## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
+
+- [ ] Upgrades planejados
+- [ ] Tabela de preços otimizada
+- [ ] Serviços extras definidos
+- [ ] Modelo de negócio escolhido
 
 ## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
 
-## Ferramentas recomendadas
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
+- Planilha de otimização de preços
+- Template de modelo de negócio
 
 ## Prompt de IA
-Atue como mentor experiente. Analise este caso real de analise de rentabilidade no litoral e aponte 5 lições práticas: [descreva o caso].
+
+Atue como consultor de rentabilidade. Crie um plano de maximização de receita para um imóvel no litoral.
