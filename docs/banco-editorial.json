@@ -1,6 +1,6 @@
 {
   "meta": {
-    "total_articles": 1427,
+    "total_articles": 1428,
     "domain": "praia.digital",
     "blog_path": ".\\blog",
     "scope": "controle editorial contínuo + integracao hotmart"
@@ -135,22 +135,22 @@
     "E": "Artigo comercial"
   },
   "status_counts": {
-    "publicado": 1427
+    "publicado": 1428
   },
   "article_type_counts": {
     "A": 1044,
     "E": 203,
-    "C": 145,
+    "C": 146,
     "D": 32,
     "B": 3
   },
   "funnel_counts": {
     "Meio": 951,
     "Fundo": 246,
-    "Topo": 230
+    "Topo": 231
   },
   "intent_counts": {
-    "informacional": 1280,
+    "informacional": 1281,
     "comercial": 114,
     "navegacional_comparativo": 33
   },
@@ -170,7 +170,7 @@
     "maresias": 9,
     "ubatuba": 9,
     "litoral_sul": 3,
-    "caraguatatuba": 9,
+    "caraguatatuba": 10,
     "itanhaem": 5,
     "sao_sebastiao": 6
   },
@@ -178,7 +178,7 @@
     "editorial": 201,
     "locacao_temporada": 184,
     "automacao_ia": 533,
-    "compra_venda": 174,
+    "compra_venda": 175,
     "bairros_cidades": 171,
     "marketing_digital": 69,
     "investimento": 57,
@@ -895,13 +895,6 @@
   "next_queue": [
     {
       "cluster": "compra_venda",
-      "city": "caraguatatuba",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "compra_venda",
       "city": "ilhabela",
       "count": 1,
       "priority_score": 3,
@@ -959,6 +952,13 @@
     {
       "cluster": "investimento",
       "city": "sao_sebastiao",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "compra_venda",
+      "city": "sao_vicente",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
@@ -1058,7 +1058,7 @@
     },
     "caraguatatuba": {
       "bairros_cidades": 8,
-      "compra_venda": 1
+      "compra_venda": 2
     },
     "itanhaem": {
       "bairros_cidades": 5
@@ -16839,6 +16839,41 @@
       ],
       "primary_keyword": "comprar imovel em bertioga",
       "city": "bertioga",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "compra_venda",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "C",
+      "article_type_label": "Artigo-ponte",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "compra_venda",
+      "cta_intensity": "media"
+    },
+    {
+      "id": "b860bb5dd3",
+      "slug": "comprar-imovel-caraguatatuba-2026",
+      "path": "blog\\comprar-imovel-caraguatatuba-2026.html",
+      "title": "Comprar imóvel em Caraguatatuba em 2026: guia completo com valores, bairros e dicas",
+      "h1": "Comprar imóvel em Caraguatatuba em 2026: guia completo com valores, bairros e dicas",
+      "h2_count": 9,
+      "meta_description": "Guia completo para comprar imóvel em Caraguatatuba em 2026. Compare valores por m², descubra os melhores bairros, veja dicas de documentação e saiba se vale a pena investir no Litoral Norte.",
+      "keywords": [
+        "comprar imovel caraguatatuba",
+        "imoveis caraguatatuba 2026",
+        "valores imoveis caraguatatuba",
+        "bairros caraguatatuba",
+        "caraguatatuba litoral norte",
+        "investimento imovel caraguatatuba",
+        "centro caraguatatuba imoveis",
+        "camburi caraguatatuba"
+      ],
+      "primary_keyword": "comprar imovel caraguatatuba",
+      "city": "caraguatatuba",
       "funnel": "Topo",
       "intent": "informacional",
       "cluster": "compra_venda",
