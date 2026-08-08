@@ -4,7 +4,7 @@ from fastapi.staticfiles import StaticFiles
 from pathlib import Path
 from academy.core.database import engine, Base
 from academy.core.middleware import RequestLoggingMiddleware, ErrorHandlerMiddleware, SecurityHeadersMiddleware, RateLimitMiddleware
-from academy.routers import auth, courses, academy, admin, payments, recommendations, automation, automation_whatsapp, certificates, monitoring, automation_email, leads, admin_leads, content, admin_content
+from academy.routers import auth, courses, academy, admin, payments, recommendations, automation, automation_whatsapp, certificates, monitoring, automation_email, leads, admin_leads, content, admin_content, student
 import os
 
 Base.metadata.create_all(bind=engine)
@@ -47,6 +47,7 @@ app.include_router(leads.router)
 app.include_router(admin_leads.router)
 app.include_router(content.router)
 app.include_router(admin_content.router)
+app.include_router(student.router)
 
 # Servir área do aluno como frontend sob /education/aluno
 frontend_dir = Path(__file__).resolve().parent.parent / "education" / "aluno"
