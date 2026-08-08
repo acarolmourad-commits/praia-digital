@@ -9,7 +9,7 @@
   <link rel="canonical" href="https://praia.digital/education/aluno/index.html">
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
+    "@context": "https://schema.org/",
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://praia.digital/index.html" },
@@ -36,16 +36,16 @@
     .card a{color:#cfe3ff;font-weight:700;text-decoration:none}
     .cta{background:#00B4D8;color:#fff;padding:.7rem 1.2rem;border-radius:999px;font-weight:700;text-decoration:none;display:inline-block;margin-top:.6rem;margin-right:10px}
     .badge{background:rgba(0,180,216,.15);border:1px solid rgba(0,180,216,.35);color:#90E0EF;padding:.2rem .6rem;border-radius:999px;font-size:.75rem;font-weight:700}
+    .hidden{display:none}
     footer{margin-top:22px;opacity:.6;font-size:12px}
   </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
+  </script>
 </head>
 <body>
   <div class="wrap">
@@ -60,42 +60,121 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       <h1>Área do Aluno</h1>
       <p class="lead">Bem-vindo à sua área exclusiva. Aqui você acessa os cursos, materiais e certificados.</p>
 
-      <div class="card" style="margin-bottom:16px">
-        <p><strong>Status:</strong> <span class="badge">Matrícula ativa</span></p>
-        <p><strong>Próxima aula:</strong> continue de onde parou.</p>
-        <a class="cta" href="/education/aluno/curso.html">Acessar meu curso</a>
-        <a class="cta" style="background:#fff;color:#0b1220" href="/education/aluno/certificado.html">Meu certificado</a>
-        <a class="cta" href="https://wa.me/5511954346288?text=Quero%20suporte%20na%20Área%20do%20Aluno" target="_blank" rel="noopener" style="background:#0ea5e9;color:#fff">Suporte pelo WhatsApp</a>
+      <div id="authSection" class="hidden">
+        <div class="card" style="margin-bottom:16px">
+          <p><strong>Status:</strong> <span class="badge">Matrícula ativa</span></p>
+          <p><strong>Próxima aula:</strong> continue de onde parou.</p>
+          <a class="cta" href="/education/aluno/curso.html">Acessar meu curso</a>
+          <a class="cta" style="background:#fff;color:#0b1220" href="/education/aluno/certificado.html">Meu certificado</a>
+          <a class="cta" href="https://wa.me/5511954346288?text=Quero%20suporte%20na%20Área%20do%20Aluno" target="_blank" rel="noopener" style="background:#0ea5e9;color:#fff">Suporte pelo WhatsApp</a>
+        </div>
+
+        <h2>Meus cursos</h2>
+        <div id="myCourses" class="grid grid-3"></div>
+
+        <h2 style="margin-top:22px">Materiais rápidos</h2>
+        <div id="quickMaterials" class="grid grid-3"></div>
       </div>
 
-      <h2>Meus cursos</h2>
-      <div class="grid grid-3">
+      <div id="loginSection">
         <div class="card">
-          <a href="/education/cursos/airbnb-do-zero/index.html">Airbnb do Zero no Litoral</a>
-          <p style="opacity:.75; margin-top:6px;">Cadastro, anúncio, precificação e gestão.</p>
-          <span class="badge" style="margin-top:8px;display:inline-block">Em andamento</span>
+          <h3>Faça login para acessar seus cursos</h3>
+          <form id="loginForm">
+            <input type="email" id="email" placeholder="E-mail" required style="width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);color:#e8ecf1">
+            <input type="password" id="password" placeholder="Senha" required style="width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);color:#e8ecf1">
+            <button type="submit" class="cta" style="border:none;cursor:pointer">Entrar</button>
+          </form>
+          <p id="loginError" style="color:#ff6b6b;margin-top:8px"></p>
         </div>
-        <div class="card">
-          <a href="/education/cursos/investindo-imoveis-litoral/index.html">Investindo em Imóveis no Litoral</a>
-          <p style="opacity:.75; margin-top:6px;">Análise, rentabilidade e execução.</p>
-          <span class="badge" style="margin-top:8px;display:inline-block">Disponível</span>
-        </div>
-        <div class="card">
-          <a href="/education/cursos/comprar-imovel-praia-sem-golpes/index.html">Como Comprar um Imóvel na Praia sem Cair em Golpes</a>
-          <p style="opacity:.75; margin-top:6px;">Documentação, riscos e segurança na compra.</p>
-          <span class="badge" style="margin-top:8px;display:inline-block">Disponível</span>
-        </div>
-      </div>
-
-      <h2 style="margin-top:22px">Materiais rápidos</h2>
-      <div class="grid grid-3">
-        <div class="card"><a href="/education/cursos/airbnb-do-zero/curso-completo/modulo-1.md">Módulo 1 — Fundamentos</a><p style="opacity:.75; margin-top:6px;">Acesso imediato ao conteúdo.</p></div>
-        <div class="card"><a href="/education/cursos/airbnb-do-zero/checklists/checklist-curso.md">Checklist do curso</a><p style="opacity:.75; margin-top:6px;">Acompanhe sua evolução.</p></div>
-        <div class="card"><a href="/education/cursos/airbnb-do-zero/planilhas/planilha-acompanhamento.md">Planilha de acompanhamento</a><p style="opacity:.75; margin-top:6px;">Monte seu plano prático.</p></div>
       </div>
     </main>
 
     <footer>Praia Digital Academy — área do aluno.</footer>
   </div>
+
+  <script>
+    const API_BASE = '/academy';
+    const token = localStorage.getItem('academy_token') || sessionStorage.getItem('academy_token');
+
+    function showAuth() {
+      document.getElementById('authSection').classList.remove('hidden');
+      document.getElementById('loginSection').classList.add('hidden');
+      loadEnrollments();
+    }
+
+    function showLogin() {
+      document.getElementById('authSection').classList.add('hidden');
+      document.getElementById('loginSection').classList.remove('hidden');
+    }
+
+    async function loadEnrollments() {
+      if (!token) return showLogin();
+      
+      try {
+        const res = await fetch(`${API_BASE}/academy/me/enrollments`, {
+          headers: { 'Authorization': `Bearer ${token}` }
+        });
+        if (res.status === 401) return showLogin();
+        
+        const enrollments = await res.json();
+        const container = document.getElementById('myCourses');
+        container.innerHTML = '';
+        
+        if (enrollments.length === 0) {
+          container.innerHTML = '<p>Você ainda não tem matrículas.</p>';
+          return;
+        }
+        
+        for (const enrollment of enrollments) {
+          const courseRes = await fetch(`${API_BASE}/courses/${enrollment.course_id}`, {
+            headers: { 'Authorization': `Bearer ${token}` }
+          });
+          const course = await courseRes.json();
+          
+          const card = document.createElement('div');
+          card.className = 'card';
+          card.innerHTML = `
+            <a href="/education/cursos/${course.slug}/index.html">${course.title}</a>
+            <p style="opacity:.75; margin-top:6px;">${course.description || ''}</p>
+            <span class="badge" style="margin-top:8px;display:inline-block">${enrollment.status}</span>
+          `;
+          container.appendChild(card);
+        }
+      } catch (err) {
+        console.error('Erro ao carregar matrículas:', err);
+      }
+    }
+
+    document.getElementById('loginForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+      const errorEl = document.getElementById('loginError');
+      
+      try {
+        const res = await fetch(`${API_BASE}/auth/login`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, password })
+        });
+        
+        const data = await res.json();
+        if (res.status === 200) {
+          localStorage.setItem('academy_token', data.access_token);
+          showAuth();
+        } else {
+          errorEl.textContent = data.detail || 'Erro no login.';
+        }
+      } catch (err) {
+        errorEl.textContent = 'Erro de conexão. Tente novamente.';
+      }
+    });
+
+    if (token) {
+      showAuth();
+    } else {
+      showLogin();
+    }
+  </script>
 </body>
 </html>
