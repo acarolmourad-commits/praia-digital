@@ -1,60 +1,118 @@
-# Módulo 4 — Conteúdo Premium
+# Módulo 4 — Análise de Cenários e Tomada de Decisão
+
 ## Introdução
-Neste módulo você vai dominar analise de mercado imobiliario litoral com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 4.1 — Métricas para acompanhar evolução e resultado
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+Neste módulo você vai aprender a analisar diferentes cenários, tomar decisões de investimento com dados e planejar estratégias de longo prazo.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 4.1 — Cenários de mercado
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+### Cenário otimista
 
-## Aula 4.2 — Otimizações para aumentar rentabilidade ou desempenho
-Fundamentos, ferramentas e fluxos recomendados para analise de mercado imobiliario litoral no litoral.
+- Alta demanda por temporada
+- Valorização acima de 10% ao ano
+- Novos empreendimentos na região
+- Acessos melhorados
 
-**Ferramentas recomendadas:**
-- Dashboard de métricas
-- Planilha de rentabilidade
-- Sistema de gestão de tarefas
+### Cenário base
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+- Demanda estável
+- Valorização de 5-8% ao ano
+- Infraestrutura mantida
+- Ocupação de 50-60%
 
-## Aula 4.3 — Escala: como crescer sem perder a qualidade
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+### Cenário pessimista
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+- Queda de demanda
+- Valorização baixa ou negativa
+- Problemas econômicos
+- Ocupação abaixo de 40%
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+### Como se preparar
 
-## Exercício
-Desenvolva um plano de crescimento para analise de mercado imobiliario litoral com metas mensuráveis.
+1. **Diversifique**: não coloque tudo em uma cidade
+2. **Reserva de emergência**: 6 meses de custos
+3. **Seguro**: proteja o imóvel
+4. **Flexibilidade**: estratégias adaptáveis
+
+## Aula 4.2 — Modelos de investimento
+
+### Modelo 1: Buy and Hold
+
+- **Objetivo**: valorização de longo prazo
+- **Prazo**: 5-10 anos
+- **Risco**: baixo
+- **Retorno**: 8-12% ao ano
+
+### Modelo 2: Temporada
+
+- **Objetivo**: renda mensal alta
+- **Prazo**: 1-5 anos
+- **Risco**: médio
+- **Retorno**: 10-15% ao ano
+
+### Modelo 3: Flipping
+
+- **Objetivo**: lucro rápido na revenda
+- **Prazo**: 6-18 meses
+- **Risco**: alto
+- **Retorno**: 20-40% por projeto
+
+### Modelo 4: Misto
+
+- **Objetivo**: renda + valorização
+- **Prazo**: 3-7 anos
+- **Risco**: médio
+- **Retorno**: 10-14% ao ano
+
+### Exercício
+
+Escolha um modelo e crie um plano de investimento detalhado.
+
+## Aula 4.3 — Monitoramento e ajustes
+
+### Indicadores para acompanhar
+
+1. **Valorização**: compare com mercado trimestralmente
+2. **Ocupação**: dias alugados por mês
+3. **Receita**: entradas mensais
+4. **Custos**: despesas operacionais
+5. **Satisfação**: avaliações de hóspedes
+
+### Quando ajustar
+
+- Ocupação abaixo de 40% por 3 meses
+- Custos aumentando acima da inflação
+- Mercado com valorização negativa
+- Nova concorrência forte
+
+### Ferramentas
+
+- **Planilha de acompanhamento**: dados mensais
+- **Alertas de mercado**: novos empreendimentos
+- **Relatórios automáticos**: receita, custos, ocupação
+
+### Exercício
+
+Crie um dashboard de monitoramento para o seu investimento.
 
 ## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
+
+- Cenários ajudam a se preparar para o futuro.
+- Cada modelo tem risco e retorno diferentes.
+- Monitoramento contínuo permite ajustes rápidos.
 
 ## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
+
+- [ ] Cenários mapeados
+- [ ] Modelo escolhido
+- [ ] Plano de monitoramento criado
+- [ ] Indicadores definidos
 
 ## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
 
-## Ferramentas recomendadas
-- Dashboard de métricas
-- Planilha de rentabilidade
-- Sistema de gestão de tarefas
+- Planilha de cenários
+- Template de dashboard de monitoramento
 
 ## Prompt de IA
-Atue como estrategista de crescimento. Monte um plano de escala para analise de mercado imobiliario litoral com métricas e prazos: [dados do negócio].
+
+Atue como consultor de investimentos imobiliários. Crie um plano de monitoramento e ajustes para meu investimento no litoral.
