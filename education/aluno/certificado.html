@@ -9,7 +9,7 @@
   <link rel="canonical" href="https://praia.digital/education/aluno/certificado.html">
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
+    "@context": "https://schema.org/",
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://praia.digital/index.html" },
@@ -32,17 +32,18 @@
     h1{font-size:2rem;margin:0 0 .5rem}
     .lead{opacity:.85;line-height:1.6;margin-bottom:1rem}
     .cert{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:22px 24px;margin-top:14px}
-    .cta{background:#00B4D8;color:#fff;padding:.7rem 1.2rem;border-radius:999px;font-weight:700;text-decoration:none;display:inline-block;margin-top:.6rem;margin-right:10px}
+    .cta{background:#00B4D8;color:#fff;padding:.7rem 1.2rem;border-radius:999px;font-weight:700;text-decoration:none;display:inline-block;margin-top:.6rem;margin-right:10px;border:none;cursor:pointer}
     footer{margin-top:22px;opacity:.6;font-size:12px}
+    .hidden{display:none}
+    .error{color:#ff6b6b;margin-top:8px}
   </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
+  </script>
 </head>
 <body>
   <div class="wrap">
@@ -55,25 +56,69 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
     <main id="main">
       <h1>Certificado</h1>
-      <p class="lead">Certificado de conclusão do curso.</p>
+      <p class="lead">Acompanhe seus certificados e solicite emissão.</p>
 
-      <div class="cert">
-        <p><strong>Curso:</strong> Airbnb do Zero no Litoral — Praia Digital Academy</p>
-        <p><strong>Aluno:</strong> [nome do aluno]</p>
-        <p><strong>Carga horária:</strong> 4 horas</p>
-        <p><strong>Data:</strong> [data de conclusão]</p>
-        <p><strong>Código:</strong> [código único]</p>
-        <p><strong>Instituição:</strong> Praia Digital</p>
-        <p style="opacity:.75; margin-top:8px;">Este certificado atende aos requisitos mínimos de educação continuada e deve ser validado pelo site da instituição.</p>
-      </div>
+      <div id="certArea"></div>
 
-      <div style="margin-top:18px">
-        <a class="cta" href="/education/aluno/curso.html">Voltar para o curso</a>
-        <a class="cta" style="background:#fff;color:#0b1220;margin-left:10px" href="/education/cursos/airbnb-do-zero/certificado/certificado.md">Baixar modelo</a>
+      <div id="loginPrompt" class="hidden">
+        <div class="cert">
+          <p>Faça login na <a href="/education/aluno/login.html">área do aluno</a>.</p>
+        </div>
       </div>
     </main>
 
     <footer>Praia Digital Academy — área do aluno.</footer>
   </div>
+
+  <script>
+    const API_BASE = '/academy';
+    const token = localStorage.getItem('academy_token') || sessionStorage.getItem('academy_token');
+
+    function showLogin() {
+      document.getElementById('certArea').classList.add('hidden');
+      document.getElementById('loginPrompt').classList.remove('hidden');
+    }
+
+    async function loadCertificates() {
+      if (!token) return showLogin();
+
+      try {
+        const res = await fetch(`${API_BASE}/certificates/me`, {
+          headers: { 'Authorization': `Bearer ${token}` }
+        });
+        if (res.status === 401) return showLogin();
+
+        const certs = await res.json();
+        const container = document.getElementById('certArea');
+        container.innerHTML = '';
+
+        if (!Array.isArray(certs) || certs.length === 0) {
+          container.innerHTML = '<p>Você ainda não tem certificados. Conclua um curso para solicitar.</p>';
+          return;
+        }
+
+        for (const c of certs) {
+          const div = document.createElement('div');
+          div.className = 'cert';
+          div.innerHTML = `
+            <p><strong>Código:</strong> ${c.code}</p>
+            <p><strong>Curso ID:</strong> ${c.course_id}</p>
+            <p><strong>Matrícula ID:</strong> ${c.enrollment_id}</p>
+            <p><strong>Emitido em:</strong> ${c.issued_at || 'pendente'}</p>
+            ${c.pdf_url ? `<a class="cta" href="${c.pdf_url}" target="_blank" rel="noopener">Baixar PDF</a>` : ''}
+          `;
+          container.appendChild(div);
+        }
+      } catch (err) {
+        console.error('Erro ao carregar certificados:', err);
+      }
+    }
+
+    if (token) {
+      loadCertificates();
+    } else {
+      showLogin();
+    }
+  </script>
 </body>
 </html>
