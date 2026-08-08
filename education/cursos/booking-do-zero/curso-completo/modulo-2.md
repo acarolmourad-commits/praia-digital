@@ -1,60 +1,103 @@
-# Módulo 2 — Conteúdo Premium
+# Módulo 2 — Otimização do Cadastro e Aparência
+
 ## Introdução
-Neste módulo você vai dominar booking do zero com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 2.1 — Passo a passo para aplicar booking do zero na prática
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+Neste módulo você vai aprender a criar um cadastro profissional, produzir fotos que vendem e escrever uma descrição que converte no Booking.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 2.1 — Cadastro profissional no Booking
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+### Estrutura do cadastro
 
-## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
-Fundamentos, ferramentas e fluxos recomendados para booking do zero no litoral.
+1. **Título do imóvel**
+   - Formato: `[Tipo] [diferencial] em [localização]`
+   - Exemplo: "Flat moderno a 200m da praia - Guarujá"
 
-**Ferramentas recomendadas:**
-- CRM de atendimento
-- Planilha de acompanhamento
-- Ferramenta de automação de mensagens
+2. **Descrição detalhada**
+   - Hook inicial (1 frase)
+   - Comodidades
+   - Localização
+   - Regras da casa
+   - Política de cancelamento
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+3. **Fotos profissionais**
+   - Mínimo 20 fotos
+   - Ordem: sala → quartos → banheiro → cozinha → área externa
+   - Luz natural, lente grande angular
 
-## Aula 2.3 — Automação e fluxos que economizam horas por semana
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+4. **Preços competitivos**
+   - Pesquise concorrentes na região
+   - Defina preço base
+   - Configure temporadas
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+### Dica prática
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+Use o **Booking Genius** para testar títulos e fotos. O algoritmo identifica o que mais converte.
 
-## Exercício
-Monte um plano prático de booking do zero para os próximos 30 dias, com ações diárias e semanais.
+## Aula 2.2 — Fotos e descrição que convertem
+
+### Fotos que vendem no Booking
+
+- **Quantidade**: mínimo 20 fotos
+- **Qualidade**: luz natural, ângulos amplos
+- **Destaques**: vista mar, varanda, localização
+
+### Descrição ideal
+
+Estrutura:
+1. **Hook**: 1 frase que desperta interesse
+2. **Comodidades**: checklist completo
+3. **Localização**: proximidade com pontos turísticos
+4. **Experiência**: o que o hóspede vai viver
+5. **Regras**: transparência evita problemas
+
+### Exemplo real
+
+Título: "Apartamento 1 quarto a 300m da praia - Santos - Orla"
+
+Descrição:
+> "Apartamento equipado para até 4 pessoas, a 300m da praia de Santos. Ar-condicionado, wi-fi fibra, cozinha completa e garagem. Perfeito para famílias que buscam conforto e localização."
+
+## Aula 2.3 — Regras e políticas
+
+### Regras essenciais
+
+1. **Check-in/check-out**
+   - Horários claros
+   - Auto check-in com senha
+
+2. **Capacidade máxima**
+   - Número de hóspedes
+   - Crianças e bebês
+
+3. **Política de cancelamento**
+   - Flexível, moderada ou rigorosa
+
+4. **Danos e responsabilidades**
+   - Depósito de segurança
+   - Procedimento para avarias
+
+### Exercício
+
+Crie um cadastro completo no Booking e otimize fotos e descrição.
 
 ## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
+
+- Cadastro profissional aumenta visibilidade no Booking.
+- Fotos e descrição são 70% da decisão.
+- Regras claras evitam conflitos.
 
 ## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
+
+- [ ] Cadastro criado no Booking
+- [ ] Fotos profissionais inseridas
+- [ ] Título e descrição otimizados
+- [ ] Regras definidas
 
 ## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
 
-## Ferramentas recomendadas
-- CRM de atendimento
-- Planilha de acompanhamento
-- Ferramenta de automação de mensagens
+- Template de descrição Booking
+- Checklist de fotos profissionais
 
 ## Prompt de IA
-Atue como consultor de booking do zero. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].
+
+Atue como especialista em cadastro Booking. Revise meu título e descrição para aumentar conversão.
