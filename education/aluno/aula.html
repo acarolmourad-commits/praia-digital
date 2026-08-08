@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula — Área do Aluno</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Visualize a aula do seu curso na Praia Digital Academy.">
+  <link rel="canonical" href="https://praia.digital/education/aluno/aula.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://praia.digital/index.html" },
+      { "@type": "ListItem", "position": 2, "name": "Academy", "item": "https://praia.digital/education/index.html" },
+      { "@type": "ListItem", "position": 3, "name": "Área do Aluno", "item": "https://praia.digital/education/aluno/index.html" },
+      { "@type": "ListItem", "position": 4, "name": "Aula", "item": "https://praia.digital/education/aluno/aula.html" }
+    ]
+  }
+  </script>
+  <meta property="og:title" content="Aula — Área do Aluno">
+  <meta property="og:description" content="Conteúdo da aula.">
+  <meta property="og:url" content="https://praia.digital/education/aluno/aula.html">
+  <meta property="og:site_name" content="Praia Digital Academy">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="preconnect" href="https://praia.digital">
+  <style>
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:#0b1220;color:#e8ecf1;margin:0;padding:0}
+    .wrap{max-width:900px;margin:0 auto;padding:28px 22px}
+    header nav a{color:#cfe3ff;text-decoration:none;margin-right:14px;font-weight:500}
+    h1{font-size:2rem;margin:0 0 .5rem}
+    .lead{opacity:.85;line-height:1.6;margin-bottom:1rem}
+    .card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:18px 20px}
+    .cta{background:#00B4D8;color:#fff;padding:.5rem .9rem;border-radius:999px;font-weight:700;text-decoration:none;display:inline-block;margin-top:.6rem;margin-right:8px;border:none;cursor:pointer}
+    .badge{background:rgba(0,180,216,.15);border:1px solid rgba(0,180,216,.35);color:#90E0EF;padding:.2rem .6rem;border-radius:999px;font-size:.75rem;font-weight:700}
+    .hidden{display:none}
+    .materials{margin-top:1rem}
+    .materials a{color:#cfe3ff;text-decoration:none;display:inline-block;margin:4px 8px 4px 0}
+    footer{margin-top:22px;opacity:.6;font-size:12px}
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <nav aria-label="Navegação principal">
+        <a href="https://praia.digital/education/aluno/index.html">Área do Aluno</a>
+        <a href="https://praia.digital/education/index.html">Academy</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1 id="lessonTitle">Aula</h1>
+      <p id="lessonMeta" class="lead"></p>
+
+      <div id="lessonContent" class="card"></div>
+
+      <div id="materialsArea" class="card materials hidden">
+        <h3>Materiais</h3>
+        <div id="materialsList"></div>
+      </div>
+
+      <div style="margin-top:18px">
+        <a id="backBtn" class="cta" href="/education/aluno/curso.html">Voltar para o curso</a>
+        <button id="completeBtn" class="cta" style="background:#fff;color:#0b1220;margin-left:10px">Marcar como concluída</button>
+      </div>
+
+      <div id="loginPrompt" class="hidden">
+        <div class="card">
+          <h3>Acesso restrito</h3>
+          <p>Faça login na <a href="/education/aluno/login.html">área do aluno</a>.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>Praia Digital Academy — área do aluno.</footer>
+  </div>
+
+  <script>
+    const API_BASE = '/academy';
+    const token = localStorage.getItem('academy_token') || sessionStorage.getItem('academy_token');
+    const params = new URLSearchParams(location.search);
+    const lessonId = params.get('lesson_id');
+
+    function showLogin() {
+      document.getElementById('lessonTitle').classList.add('hidden');
+      document.getElementById('lessonMeta').classList.add('hidden');
+      document.getElementById('lessonContent').classList.add('hidden');
+      document.getElementById('materialsArea').classList.add('hidden');
+      document.getElementById('loginPrompt').classList.remove('hidden');
+    }
+
+    async function loadLesson() {
+      if (!token) return showLogin();
+      if (!lessonId) {
+        document.getElementById('lessonTitle').textContent = 'Aula não encontrada';
+        return;
+      }
+
+      try {
+        const res = await fetch(`${API_BASE}/content/lessons/${lessonId}`, {
+          headers: { 'Authorization': `Bearer ${token}` }
+        });
+        if (res.status === 401) return showLogin();
+        if (res.status === 403) {
+          document.getElementById('lessonTitle').textContent = 'Acesso não permitido';
+          return;
+        }
+        if (res.status === 404) {
+          document.getElementById('lessonTitle').textContent = 'Aula não encontrada';
+          return;
+        }
+
+        const data = await res.json();
+        document.getElementById('lessonTitle').textContent = data.title || 'Aula';
+        document.getElementById('lessonMeta').textContent = `Curso #${data.course_id} · Módulo #${data.module_id}`;
+
+        const contentEl = document.getElementById('lessonContent');
+        if (data.content_type === 'video' && data.content_url) {
+          contentEl.innerHTML = `<video controls style="width:100%;border-radius:12px" src="${data.content_url}"></video>`;
+        } else if (data.content_type === 'audio' && data.content_url) {
+          contentEl.innerHTML = `<audio controls style="width:100%" src="${data.content_url}"></audio>`;
+        } else if (data.content_type === 'pdf' && data.content_url) {
+          contentEl.innerHTML = `<iframe src="${data.content_url}" style="width:100%;height:70vh;border:none;border-radius:12px"></iframe>`;
+        } else {
+          contentEl.innerHTML = '<p style="opacity:.85">Conteúdo textual. Consulte o material complementar abaixo.</p>';
+        }
+
+        const attachments = data.attachments || [];
+        const materialsArea = document.getElementById('materialsArea');
+        const materialsList = document.getElementById('materialsList');
+        if (attachments.length > 0) {
+          materialsArea.classList.remove('hidden');
+          materialsList.innerHTML = attachments.map(a => `<a href="${a.file_url}" target="_blank" rel="noopener">📎 ${a.file_name}</a>`).join('');
+        } else {
+          materialsArea.classList.add('hidden');
+        }
+
+        document.getElementById('completeBtn').onclick = async () => {
+          const r = await fetch(`${API_BASE}/me/progress/complete?lesson_id=${lessonId}`, {
+            method: 'POST',
+            headers: { 'Authorization': `Bearer ${token}` }
+          });
+          if (r.status === 200) {
+            alert('Aula marcada como concluída!');
+          } else {
+            alert('Erro ao marcar como concluída.');
+          }
+        };
+      } catch (err) {
+        console.error('Erro ao carregar aula:', err);
+      }
+    }
+
+    if (token && lessonId) {
+      loadLesson();
+    } else {
+      showLogin();
+    }
+  </script>
+</body>
+</html>
