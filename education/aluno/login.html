@@ -35,19 +35,8 @@
     ]
   }
   </script>
-  <script src="https://cdn.tailwindcss.com"></script>
   <script defer src="https://unpkg.com/axios@1.7.7/dist/axios.min.js"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: { bg: '#0b1220', accent: '#00b4d8', surface: '#111827', text: '#e5e7eb' }
-          }
-        }
-      }
-    }
-  </script>
+  
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
 <script>
@@ -57,23 +46,23 @@ gtag('js', new Date());
 gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 </script>
 </head>
-<body class="bg-brand-bg text-brand-text min-h-screen flex items-center justify-center">
-  <div class="bg-brand-surface p-8 rounded border border-gray-800 w-full max-w-md">
-    <h1 class="text-2xl font-bold text-white mb-2">Área do Aluno</h1>
-    <p class="text-gray-400 mb-6">Entre com seu e-mail e senha.</p>
-    <form id="loginForm" class="space-y-4">
+<body style="background:#0b1220;color:#e8ecf1;min-height:100vh;display:flex;align-items:center;justify-content:center">
+  <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:18px 20px;width:100%;max-width:420px">
+    <h1 style="font-size:1.5rem;font-weight:700;color:#fff;margin-bottom:.5rem">Área do Aluno</h1>
+    <p style="color:#9ca3af;margin-bottom:1rem">Entre com seu e-mail e senha.</p>
+    <form id="loginForm" style="display:flex;flex-direction:column;gap:1rem">
       <div>
-        <label class="block text-sm text-gray-300 mb-1">E-mail</label>
-        <input id="email" type="email" required class="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-white" />
+        <label style="display:block;font-size:.875rem;color:#d1d5db;margin-bottom:.25rem">E-mail</label>
+        <input id="email" type="email" required style="width:100%;background:#111827;border:1px solid #374151;border-radius:8px;padding:8px 12px;color:#fff" />
       </div>
       <div>
-        <label class="block text-sm text-gray-300 mb-1">Senha</label>
-        <input id="password" type="password" required minlength="6" class="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-white" />
+        <label style="display:block;font-size:.875rem;color:#d1d5db;margin-bottom:.25rem">Senha</label>
+        <input id="password" type="password" required minlength="6" style="width:100%;background:#111827;border:1px solid #374151;border-radius:8px;padding:8px 12px;color:#fff" />
       </div>
-      <button type="submit" class="w-full bg-brand-accent text-black font-bold py-2 rounded">Entrar</button>
-      <p id="error" class="text-red-400 text-sm hidden"></p>
+      <button type="submit" style="width:100%;background:#00B4D8;color:#000;font-weight:700;padding:.5rem;border-radius:8px;border:none;cursor:pointer">Entrar</button>
+      <p id="error" style="color:#f87171;font-size:.875rem;display:none"></p>
     </form>
-    <p class="text-gray-400 text-sm mt-4">Ainda não tem conta? <a href="/education/index.html" class="text-brand-accent">Ver cursos</a>.</p>
+    <p style="color:#9ca3af;font-size:.875rem;margin-top:1rem">Ainda não tem conta? <a href="/education/index.html" style="color:#00B4D8">Ver cursos</a>.</p>
   </div>
 
   <script>
