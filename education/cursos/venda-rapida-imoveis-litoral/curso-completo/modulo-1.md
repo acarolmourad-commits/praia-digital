@@ -1,60 +1,111 @@
-# Módulo 1 — Conteúdo Premium
+# Módulo 1 — Mercado e Diagnóstico para Venda Rápida
+
 ## Introdução
-Neste módulo você vai dominar venda rapida imoveis litoral com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 1.1 — Visão geral do mercado de venda rapida imoveis litoral no litoral paulista
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+Neste módulo você vai entender o mercado imobiliário do litoral paulista, identificar por que alguns imóveis vendem rápido enquanto outros ficam meses expostos e aprender a fazer um diagnóstico preciso do seu imóvel.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 1.1 — Por que alguns imóveis vendem rápido no litoral
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+### Fatores que aceleram a venda
 
-## Aula 1.2 — Conceitos essenciais: termos, métricas e particularidades locais
-Fundamentos, ferramentas e fluxos recomendados para venda rapida imoveis litoral no litoral.
+1. **Preço justo**: alinhado com o mercado
+2. **Fotos profissionais**: primeiro impacto decisivo
+3. **Descrição convincente**: destaca diferenciais
+4. **Localização**: proximidade da praia, comércio, acesso
+5. **Documentação regular**: sem pendências
 
-**Ferramentas recomendadas:**
-- Portal oficial de imóveis do litoral
-- Planilha de diagnóstico
-- Consulta de matrícula online
+### Erros que atrasam a venda
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+- Preço acima do mercado
+- Fotos amadoras
+- Descrição genérica
+- Falta de divulgação
+- Documentação incompleta
 
-## Aula 1.3 — Estudo de caso real: como um aluno aplicou o método e obteve resultado em 30 dias
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+### Exemplo real
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+Um apartamento em Santos ficou 8 meses à venda por R$ 850.000 sem fotos profissionais. Após reanúncio com fotos profissionais e preço ajustado para R$ 750.000, vendeu em 15 dias.
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+## Aula 1.2 — Diagnóstico do imóvel
 
-## Exercício
-Faça o diagnóstico do seu cenário atual em venda rapida imoveis litoral: liste pontos fortes, fracos, oportunidades e ameaças.
+### Checklist de diagnóstico
+
+1. **Localização**
+   - Distância da praia
+   - Acessos principais
+   - Comércio e serviços próximos
+   - Segurança da região
+
+2. **Imóvel**
+   - Estado de conservação
+   - Área útil e privativa
+   - Vagas de garagem
+   - Áreas comuns
+
+3. **Documentação**
+   - Matrícula regularizada
+   - IPTU em dia
+   - Sem pendências judiciais
+
+4. **Mercado**
+   - Preços de imóveis similares
+   - Tempo médio de venda
+   - Demanda por tipo de imóvel
+
+### Exemplo de diagnóstico
+
+```
+Imóvel: Apartamento 2 quartos, Santos
+Pontos fortes: orla, reformado, garagem
+Pontos fracos: sem varanda, edifício antigo
+Oportunidades: preço abaixo do mercado, documento ok
+Ameaças: concorrência alta na região
+```
+
+## Aula 1.3 — Estudo de caso: venda em 30 dias
+
+### Caso real
+
+Um apartamento em Guarujá, 2 quartos, 70m², a 400m da praia.
+
+**Situação inicial:**
+- Preço pedido: R$ 520.000
+- Fotos: amadoras
+- Descrição: genérica
+
+**Ações realizadas:**
+1. Reanúncio com fotos profissionais (R$ 800)
+2. Descrição focada em diferenciais
+3. Preço ajustado para R$ 480.000
+4. Divulgação em 5 plataformas
+
+**Resultado:**
+- Venda em 22 dias
+- Valor final: R$ 480.000
+- Economia de 2 meses de condomínio + IPTU
+
+### Exercício
+
+Faça o diagnóstico do seu imóvel e liste 3 ações para acelerar a venda.
 
 ## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
+
+- Venda rápida depende de preço, apresentação e divulgação.
+- Diagnóstico preciso evita erros comuns.
+- Pequenos ajustes geram grandes resultados.
 
 ## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
+
+- [ ] Diagnóstico do imóvel concluído
+- [ ] Preço de mercado pesquisado
+- [ ] Documentação verificada
+- [ ] Plano de ação definido
 
 ## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
 
-## Ferramentas recomendadas
-- Portal oficial de imóveis do litoral
-- Planilha de diagnóstico
-- Consulta de matrícula online
+- Checklist de diagnóstico imobiliário
+- Planilha de comparação de mercado
 
 ## Prompt de IA
-Atue como especialista em venda rapida imoveis litoral no litoral paulista. Faça um diagnóstico personalizado com base nestas respostas: [insira suas respostas].
+
+Atue como consultor imobiliário do litoral. Faça um diagnóstico de venda rápida para o meu imóvel considerando localização, documentação, preço e mercado.

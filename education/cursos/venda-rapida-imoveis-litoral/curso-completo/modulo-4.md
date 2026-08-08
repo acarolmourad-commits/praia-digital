@@ -1,60 +1,89 @@
-# Módulo 4 — Conteúdo Premium
+# Módulo 4 — Pós-venda e Relacionamento
+
 ## Introdução
-Neste módulo você vai dominar venda rapida imoveis litoral com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 4.1 — Métricas para acompanhar evolução e resultado
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+Neste módulo você vai aprender a manter o relacionamento com o comprador, garantir um pós-venda eficiente e construir uma rede de indicações.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 4.1 — Pós-venda eficiente
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+### Por que o pós-venda é importante
 
-## Aula 4.2 — Otimizações para aumentar rentabilidade ou desempenho
-Fundamentos, ferramentas e fluxos recomendados para venda rapida imoveis litoral no litoral.
+- **Indicações**: clientes satisfeitos indicam novos compradores
+- **Reputação**: imobiliária/consultor com pós-venda se destaca
+- **Recompra**: cliente que vende pode comprar novamente
 
-**Ferramentas recomendadas:**
-- Dashboard de métricas
-- Planilha de rentabilidade
-- Sistema de gestão de tarefas
+### Fluxo de pós-venda
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+1. **Entrega das chaves**: checklist de itens entregues
+2. **Contato pós-entrega**: 7 dias após entrega
+3. **Acompanhamento**: 30 dias, 90 dias, 6 meses
+4. **Indicação**: solicite indicações no momento certo
 
-## Aula 4.3 — Escala: como crescer sem perder a qualidade
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+### Checklist de entrega
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+- [ ] Chaves entregues
+- [ ] Manuais de equipamentos entregues
+- [ ] Contatos de manutenção fornecidos
+- [ ] Documentos do imóvel entregues
+- [ ] Agradecimento personalizado
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+## Aula 4.2 — Indicações e networking
 
-## Exercício
-Desenvolva um plano de crescimento para venda rapida imoveis litoral com metas mensuráveis.
+### Como gerar indicações
+
+1. **Supere expectativas**: atendimento acima da média
+2. **Peça no momento certo**: após entrega das chaves
+3. **Facilite o processo**: compartilhe link de indicação
+4. **Recompense**: brinde, desconto em próximo serviço
+
+### Networking no litoral
+
+- **Imobiliárias**: parcerias locais
+- **Corretores**: indicações cruzadas
+- **Advogados**: indicações de clientes
+- **Arquitetos**: indicações de reformas
+
+### Exemplo real
+
+Um consultor em Santos mantém contato com 50+ clientes por ano. Taxa de recompra: 30%. Indicações: 40% das vendas.
+
+## Aula 4.3 — Escala e profissionalização
+
+### Quando profissionalizar
+
+- 5+ vendas por ano
+- Receita recorrente de comissões
+- Demanda por serviços adicionais
+
+### Serviços adicionais
+
+1. **Consultoria de preço**: avaliação profissional
+2. **Home staging**: preparação para venda
+3. **Fotografia profissional**: parceria com fotógrafos
+4. **Gestão de vendas**: acompanhamento completo
+
+### Exercício
+
+Defina 3 metas para profissionalizar sua operação de venda de imóveis no litoral.
 
 ## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
+
+- Pós-venda gera indicações e recompra.
+- Networking amplia oportunidades.
+- Profissionalização permite escala.
 
 ## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
+
+- [ ] Processo de pós-venda definido
+- [ ] Acompanhamento de clientes implementado
+- [ ] Sistema de indicações criado
+- [ ] Metas de profissionalização definidas
 
 ## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
 
-## Ferramentas recomendadas
-- Dashboard de métricas
-- Planilha de rentabilidade
-- Sistema de gestão de tarefas
+- Template de follow-up pós-venda
+- Checklist de networking
 
 ## Prompt de IA
-Atue como estrategista de crescimento. Monte um plano de escala para venda rapida imoveis litoral com métricas e prazos: [dados do negócio].
+
+Atue como consultor imobiliário. Crie um plano de pós-venda e indicações para eu escalar minha operação no litoral.
