@@ -1,60 +1,108 @@
-# Módulo 4 — Conteúdo Premium
+# Módulo 4 — Gestão e Crescimento
+
 ## Introdução
-Neste módulo você vai dominar airbnb do zero com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
 
-## Aula 4.1 — Métricas para acompanhar evolução e resultado
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+Neste módulo você vai aprender a operar o Airbnb no dia a dia, usar automação para reduzir trabalho e escalar para mais imóveis.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 4.1 — Check-in, check-out e limpeza
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+### Operação do dia a dia
 
-## Aula 4.2 — Otimizações para aumentar rentabilidade ou desempenho
-Fundamentos, ferramentas e fluxos recomendados para airbnb do zero no litoral.
+1. **Check-in**
+   - Auto check-in com senha ou cofre
+   - Manual de boas-vindas digital
+   - Vídeo de orientação
 
-**Ferramentas recomendadas:**
-- Dashboard de métricas
-- Planilha de rentabilidade
-- Sistema de gestão de tarefas
+2. **Check-out**
+   - Verificação do imóvel
+   - Checklist de danos
+   - Repasse para limpeza
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+3. **Limpeza**
+   - Equipe terceirizada ou própria
+   - Padronização com checklist
+   - Inspeção pré-check-in
 
-## Aula 4.3 — Escala: como crescer sem perder a qualidade
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+### Ferramentas de operação
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+- **Hostaway**: gestão de equipes
+- **Turnoverbnb**: agendamento de limpeza
+- **Tide**: limpeza profissional para curta temporada
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+### Exemplo real
 
-## Exercício
-Desenvolva um plano de crescimento para airbnb do zero com metas mensuráveis.
+Um anfitrião em Guarujá automatizou 80% da operação com check-in automático, equipe fixa de limpeza e mensagens pré-programadas. Resultado: 3h/semana de trabalho manual.
+
+## Aula 4.2 — Atendimento e avaliações
+
+### Atendimento de excelência
+
+1. **Resposta rápida**: até 1h para mensagens
+2. **Comunicação pré-chegada**: 24h antes
+3. **Disponibilidade durante estadia**: WhatsApp profissional
+4. **Pós-estadia**: agradecimento e solicitação de avaliação
+
+### Avaliações
+
+- **Responda todas**: hóspedes valorizam atenção
+- **Avaliações negativas**: responda com solução
+- **Avaliações positivas**: destaque diferenciais
+
+### Exemplo de resposta a avaliação negativa
+
+> "Agradecemos o feedback. A questão do wi-fi foi resolvida no dia seguinte com um roteador adicional. Esperamos recebê-lo novamente para mostrar a melhoria."
+
+## Aula 4.3 — Automação e canal manager
+
+### O que automatizar
+
+1. **Mensagens pré-programadas**:
+   - Confirmação de reserva
+   - Instruções de check-in
+   - Lembrete de check-out
+   - Solicitação de avaliação
+
+2. **Preços**: use PriceLabs ou similar
+3. **Calendário**: sincronize Airbnb + Booking + seu site
+4. **Check-in**: senha automática ou cofre inteligente
+
+### Canal Manager
+
+Ferramentas:
+- **Hostaway**: profissional, multi-canal
+- **Lodgify**: para iniciantes
+- **Orbitala**: focado em aluguel por temporada
+
+### Exercício
+
+Configure pelo menos 3 mensagens automáticas no seu fluxo de atendimento.
 
 ## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
+
+- Operação eficiente reduz trabalho e aumenta satisfação.
+- Atendimento rápido e avaliações constroem reputação.
+- Automação permite escalar para mais imóveis.
 
 ## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
+
+- [ ] Check-in/check-out documentados
+- [ ] Equipe de limpeza contratada
+- [ ] Canal Manager configurado
+- [ ] Mensagens automáticas criadas
+- [ ] Política de avaliações definida
 
 ## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
+
+- Manual de operação do imóvel
+- Checklist de limpeza
+- Template de mensagens automáticas
 
 ## Ferramentas recomendadas
-- Dashboard de métricas
-- Planilha de rentabilidade
-- Sistema de gestão de tarefas
+
+- Hostaway
+- PriceLabs
+- Turnoverbnb
 
 ## Prompt de IA
-Atue como estrategista de crescimento. Monte um plano de escala para airbnb do zero com métricas e prazos: [dados do negócio].
+
+Atue como consultor de operação de aluguel de temporada. Crie um plano de automação para reduzir trabalho manual e melhorar a experiência do hóspede.
