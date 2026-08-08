@@ -1,10 +1,13 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
+from sqlalchemy.sql import func
 from academy.core.database import get_db
-from academy.core.models import Certificate, Enrollment, Course
+from academy.core.models import Certificate, Enrollment, Course, User
+from academy.core.security import get_current_user
 from fpdf import FPDF
 import os
 from datetime import datetime
+import uuid
 
 router = APIRouter(prefix="/certificates", tags=["certificates"])
 
@@ -26,14 +29,41 @@ class CertificatePDF(FPDF):
         self.ln(6)
         self.cell(0, 8, "https://praia.digital/education", align="C")
 
+@router.get("/me")
+def list_my_certificates(db: Session = Depends(get_db), user=Depends(get_current_user)):
+    if not user:
+        raise HTTPException(status_code=401, detail="Não autenticado.")
+    certs = db.query(Certificate).filter(Certificate.user_id == user["id"]).all()
+    return [
+        {
+            "id": c.id,
+            "enrollment_id": c.enrollment_id,
+            "course_id": c.course_id,
+            "code": c.code,
+            "pdf_url": c.pdf_url,
+            "issued_at": c.issued_at,
+        }
+        for c in certs
+    ]
+
 @router.post("/generate/{enrollment_id}")
-def generate_certificate(enrollment_id: int, db: Session = Depends(get_db)):
-    enrollment = db.query(Enrollment).filter(Enrollment.id == enrollment_id).first()
+def generate_certificate(enrollment_id: int, db: Session = Depends(get_db), user=Depends(get_current_user)):
+    if not user:
+        raise HTTPException(status_code=401, detail="Não autenticado.")
+    enrollment = db.query(Enrollment).filter(Enrollment.id == enrollment_id, Enrollment.user_id == user["id"]).first()
     if not enrollment:
         raise HTTPException(status_code=404, detail="Matrícula não encontrada.")
     course = db.query(Course).filter(Course.id == enrollment.course_id).first()
     if not course:
         raise HTTPException(status_code=404, detail="Curso não encontrado.")
+
+    existing = db.query(Certificate).filter(Certificate.enrollment_id == enrollment_id).first()
+    if existing:
+        return {
+            "message": "Certificado já emitido.",
+            "file": existing.pdf_url,
+            "code": existing.code,
+        }
 
     pdf = CertificatePDF()
     pdf.add_page()
@@ -54,16 +84,28 @@ def generate_certificate(enrollment_id: int, db: Session = Depends(get_db)):
     pdf.multi_cell(0, 10, f"concluiu o curso \"{course.title}\" com aproveitamento satisfatório.", align="C")
     pdf.ln(6)
 
+    cert_code = f"{enrollment.id}-{course.id}-{uuid.uuid4().hex[:6]}"
     pdf.set_font("Helvetica", "B", 14)
-    pdf.cell(0, 10, f"Código do certificado: {enrollment.id}-{course.id}", align="C", ln=True)
+    pdf.cell(0, 10, f"Código do certificado: {cert_code}", align="C", ln=True)
 
     filename = f"certificate_{enrollment.id}_{course.id}.pdf"
     output_path = os.path.join("academy", "static", "certificates", filename)
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     pdf.output(output_path)
 
-    return {"message": "Certificado gerado.", "file": f"/academy/static/certificates/{filename}"}
+    certificate = Certificate(
+        user_id=user["id"],
+        course_id=course.id,
+        enrollment_id=enrollment.id,
+        code=cert_code,
+        pdf_url=f"/academy/static/certificates/{filename}",
+    )
+    db.add(certificate)
+    db.commit()
+    db.refresh(certificate)
 
-@router.get("/me")
-def list_my_certificates(db: Session = Depends(get_db)):
-    return []
+    return {
+        "message": "Certificado gerado.",
+        "file": certificate.pdf_url,
+        "code": certificate.code,
+    }
