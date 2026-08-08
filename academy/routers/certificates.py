@@ -1,15 +1,25 @@
 from fastapi import APIRouter, Depends, HTTPException
+from fastapi.security import HTTPBearer
 from sqlalchemy.orm import Session
 from sqlalchemy.sql import func
 from academy.core.database import get_db
 from academy.core.models import Certificate, Enrollment, Course, User
-from academy.core.security import get_current_user
+from academy.core.security import get_current_user_optional
 from fpdf import FPDF
 import os
 from datetime import datetime
 import uuid
+from typing import Optional
+from fastapi.security import HTTPAuthorizationCredentials
 
 router = APIRouter(prefix="/certificates", tags=["certificates"])
+optional_bearer = HTTPBearer(auto_error=False)
+
+def _current_user(credentials: Optional[HTTPAuthorizationCredentials] = Depends(optional_bearer)):
+    user = get_current_user_optional(credentials)
+    if not user:
+        raise HTTPException(status_code=401, detail="Não autenticado.")
+    return user
 
 class CertificatePDF(FPDF):
     def header(self):
@@ -30,9 +40,7 @@ class CertificatePDF(FPDF):
         self.cell(0, 8, "https://praia.digital/education", align="C")
 
 @router.get("/me")
-def list_my_certificates(db: Session = Depends(get_db), user=Depends(get_current_user)):
-    if not user:
-        raise HTTPException(status_code=401, detail="Não autenticado.")
+def list_my_certificates(db: Session = Depends(get_db), user=Depends(_current_user)):
     certs = db.query(Certificate).filter(Certificate.user_id == user["id"]).all()
     return [
         {
@@ -47,12 +55,12 @@ def list_my_certificates(db: Session = Depends(get_db), user=Depends(get_current
     ]
 
 @router.post("/generate/{enrollment_id}")
-def generate_certificate(enrollment_id: int, db: Session = Depends(get_db), user=Depends(get_current_user)):
-    if not user:
-        raise HTTPException(status_code=401, detail="Não autenticado.")
-    enrollment = db.query(Enrollment).filter(Enrollment.id == enrollment_id, Enrollment.user_id == user["id"]).first()
+def generate_certificate(enrollment_id: int, db: Session = Depends(get_db), user=Depends(_current_user)):
+    enrollment = db.query(Enrollment).filter(Enrollment.id == enrollment_id).first()
     if not enrollment:
         raise HTTPException(status_code=404, detail="Matrícula não encontrada.")
+    if enrollment.user_id != user["id"]:
+        raise HTTPException(status_code=403, detail="Acesso negado.")
     course = db.query(Course).filter(Course.id == enrollment.course_id).first()
     if not course:
         raise HTTPException(status_code=404, detail="Curso não encontrado.")
@@ -74,9 +82,10 @@ def generate_certificate(enrollment_id: int, db: Session = Depends(get_db), user
     pdf.cell(0, 10, "Certificamos que", align="C", ln=True)
     pdf.ln(2)
 
+    user_name = enrollment.user.name if enrollment.user else "Aluno"
     pdf.set_font("Helvetica", "B", 22)
     pdf.set_text_color(0, 0, 0)
-    pdf.cell(0, 12, f"{enrollment.user.name}", align="C", ln=True)
+    pdf.cell(0, 12, user_name, align="C", ln=True)
     pdf.ln(2)
 
     pdf.set_font("Helvetica", "", 14)

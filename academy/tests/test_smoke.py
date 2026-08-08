@@ -1,7 +1,7 @@
 from fastapi.testclient import TestClient
 from academy.tests._shared_test_db import Base, get_db, override_get_db, TestingSessionLocal
 from academy.main import app
-from academy.core.models import Course, User, Enrollment, EnrollmentStatus, Payment, PaymentStatus, Lead
+from academy.core.models import Course, User, Enrollment, EnrollmentStatus, Payment, PaymentStatus, Lead, Certificate
 
 app.dependency_overrides[get_db] = override_get_db
 client = TestClient(app)
@@ -17,6 +17,15 @@ def seed_course(slug: str, price: int = 9900):
             db.commit()
             db.refresh(c)
         return c.id
+
+
+def seed_user(email: str = "student@example.com", password: str = "123456"):
+    r = client.post("/auth/register", json={"name": "Student", "email": email, "password": password})
+    if r.status_code == 200:
+        return r.json()["access_token"]
+    r = client.post("/auth/login", json={"email": email, "password": password})
+    assert r.status_code == 200, r.text
+    return r.json()["access_token"]
 
 
 def test_health():
@@ -58,6 +67,15 @@ def test_checkout_public():
     assert data["status"] == "pending"
     assert data["total"] == 9900
     assert "checkout_url" in data
+    return data["order_id"]
+
+
+def test_checkout_confirm():
+    order_id = test_checkout_public()
+    r = client.get(f"/academy/checkout/confirm?order_id={order_id}")
+    assert r.status_code == 200, r.text
+    data = r.json()
+    assert data["status"] in {"pending", "active"}
 
 
 def test_courses_list():
@@ -78,6 +96,27 @@ def test_monitoring_status():
     assert r.status_code == 200, r.text
 
 
+def test_student_me_courses_requires_auth():
+    r = client.get("/academy/me/courses")
+    assert r.status_code == 401, r.text
+
+
+def test_student_me_progress_requires_auth():
+    r = client.get("/academy/me/progress")
+    assert r.status_code == 401, r.text
+
+
+def test_content_public_course():
+    course_id = seed_course("curso-publico")
+    r = client.get("/content/courses/curso-publico/public")
+    assert r.status_code == 200, r.text
+
+
+def test_certificate_list_requires_auth():
+    r = client.get("/certificates/me")
+    assert r.status_code == 401, r.text
+
+
 if __name__ == "__main__":
     import sys
     tests = [
@@ -85,9 +124,14 @@ if __name__ == "__main__":
         test_register_login_flow,
         test_leads_public,
         test_checkout_public,
+        test_checkout_confirm,
         test_courses_list,
         test_admin_leads_unauthorized,
         test_monitoring_status,
+        test_student_me_courses_requires_auth,
+        test_student_me_progress_requires_auth,
+        test_content_public_course,
+        test_certificate_list_requires_auth,
     ]
     failed = 0
     for t in tests:

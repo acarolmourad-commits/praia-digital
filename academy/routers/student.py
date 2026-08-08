@@ -1,16 +1,24 @@
 from fastapi import APIRouter, Depends, HTTPException
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from sqlalchemy.orm import Session
 from typing import List, Optional
 from datetime import datetime
 from academy.core.database import get_db
 from academy.core.models import Course, Module, Lesson, Enrollment, Progress, ContentAttachment
 from academy.core.schemas import CourseOut, ModuleOut, LessonOut, LessonContentOut, ContentAttachmentOut, ProgressOut
-from academy.core.security import get_current_user
+from academy.core.security import get_current_user_optional
 
-router = APIRouter(prefix="/me", tags=["student"])
+router = APIRouter(prefix="/academy/me", tags=["student"])
+optional_bearer = HTTPBearer(auto_error=False)
+
+def _current_user(credentials: Optional[HTTPAuthorizationCredentials] = Depends(optional_bearer)):
+    user = get_current_user_optional(credentials)
+    if not user:
+        raise HTTPException(status_code=401, detail="Não autenticado.")
+    return user
 
 @router.get("/courses", response_model=List[dict])
-def list_my_courses(db: Session = Depends(get_db), user=Depends(get_current_user)):
+def list_my_courses(db: Session = Depends(get_db), user=Depends(_current_user)):
     if not user:
         raise HTTPException(status_code=401, detail="Não autenticado.")
     enrollments = db.query(Enrollment).filter(
@@ -33,7 +41,7 @@ def list_my_courses(db: Session = Depends(get_db), user=Depends(get_current_user
     return result
 
 @router.get("/enrollments", response_model=List[dict])
-def list_my_enrollments(db: Session = Depends(get_db), user=Depends(get_current_user)):
+def list_my_enrollments(db: Session = Depends(get_db), user=Depends(_current_user)):
     if not user:
         raise HTTPException(status_code=401, detail="Não autenticado.")
     enrollments = db.query(Enrollment).filter(Enrollment.user_id == user["id"]).all()
@@ -51,7 +59,7 @@ def list_my_enrollments(db: Session = Depends(get_db), user=Depends(get_current_
     return result
 
 @router.get("/courses/{slug}/modules", response_model=List[ModuleOut])
-def get_my_course_modules(slug: str, db: Session = Depends(get_db), user=Depends(get_current_user)):
+def get_my_course_modules(slug: str, db: Session = Depends(get_db), user=Depends(_current_user)):
     if not user:
         raise HTTPException(status_code=401, detail="Não autenticado.")
     course = db.query(Course).filter(Course.slug == slug).first()
@@ -67,7 +75,7 @@ def get_my_course_modules(slug: str, db: Session = Depends(get_db), user=Depends
     return course.modules
 
 @router.get("/modules/{module_id}/lessons", response_model=List[LessonOut])
-def get_my_module_lessons(module_id: int, db: Session = Depends(get_db), user=Depends(get_current_user)):
+def get_my_module_lessons(module_id: int, db: Session = Depends(get_db), user=Depends(_current_user)):
     if not user:
         raise HTTPException(status_code=401, detail="Não autenticado.")
     module = db.query(Module).filter(Module.id == module_id).first()
@@ -83,7 +91,7 @@ def get_my_module_lessons(module_id: int, db: Session = Depends(get_db), user=De
     return module.lessons
 
 @router.get("/lessons/{lesson_id}", response_model=LessonContentOut)
-def get_my_lesson_content(lesson_id: int, db: Session = Depends(get_db), user=Depends(get_current_user)):
+def get_my_lesson_content(lesson_id: int, db: Session = Depends(get_db), user=Depends(_current_user)):
     if not user:
         raise HTTPException(status_code=401, detail="Não autenticado.")
     lesson = db.query(Lesson).filter(Lesson.id == lesson_id).first()
@@ -112,7 +120,7 @@ def get_my_lesson_content(lesson_id: int, db: Session = Depends(get_db), user=De
     }
 
 @router.get("/progress", response_model=List[dict])
-def get_my_progress(db: Session = Depends(get_db), user=Depends(get_current_user)):
+def get_my_progress(db: Session = Depends(get_db), user=Depends(_current_user)):
     if not user:
         raise HTTPException(status_code=401, detail="Não autenticado.")
     enrollments = db.query(Enrollment).filter(Enrollment.user_id == user["id"]).all()
@@ -133,7 +141,7 @@ def get_my_progress(db: Session = Depends(get_db), user=Depends(get_current_user
     return result
 
 @router.post("/progress/complete", response_model=dict)
-def mark_lesson_complete(lesson_id: int, db: Session = Depends(get_db), user=Depends(get_current_user)):
+def mark_lesson_complete(lesson_id: int, db: Session = Depends(get_db), user=Depends(_current_user)):
     if not user:
         raise HTTPException(status_code=401, detail="Não autenticado.")
     lesson = db.query(Lesson).filter(Lesson.id == lesson_id).first()
