@@ -22,11 +22,12 @@ scripts/automation/__pycache__/
 __pycache__/
 *.pyc
 *.pyo
-*.pyd
-.pytest_cache/
-
-# Academy
 academy.db
-academy/.env
-academy/.env.local
-academy/static/certificates/
+academy/static/
+
+# Sensitive / generated artifacts
+docs/sales/*.csv
+docs/sales/*.html
+docs/sales/*.md
+blog/*2026-08-08*.html
+outreach/
