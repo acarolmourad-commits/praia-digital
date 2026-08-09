@@ -60,12 +60,18 @@
     .price{color:#00B4D8;font-weight:700;font-size:1.1rem}
   </style>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', '', { anonymize_ip: true });
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  var GA4_MEASUREMENT_ID = '';
+  if (GA4_MEASUREMENT_ID) {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_MEASUREMENT_ID;
+    document.head.appendChild(s);
+    gtag('js', new Date());
+    gtag('config', GA4_MEASUREMENT_ID, { anonymize_ip: true });
+  }
 </script>
 </head>
 <body>
