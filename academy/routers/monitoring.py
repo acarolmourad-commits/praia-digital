@@ -22,15 +22,15 @@ router = APIRouter(tags=["monitoring"])
 @router.get("/monitoring/status")
 def monitoring_status(db: Session = Depends(get_db)):
     db_ok = False
+    courses = enrollments = payments = 0
     try:
         db.execute("SELECT 1")
         db_ok = True
+        courses = db.query(Course).count()
+        enrollments = db.query(Enrollment).count()
+        payments = db.query(Payment).count()
     except Exception:
         db_ok = False
-
-    courses = db.query(Course).count()
-    enrollments = db.query(Enrollment).count()
-    payments = db.query(Payment).count()
 
     integrations = {
         "smtp": bool(SMTP_HOST and SMTP_USER),
