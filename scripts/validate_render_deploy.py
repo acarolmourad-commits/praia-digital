@@ -71,6 +71,15 @@ def main():
     check("WHATSAPP_API_URL em .env.example", "WHATSAPP_API_URL" in env_example)
     check("BASE_URL em .env.example", "BASE_URL" in env_example)
 
+    # 5b. .env.production.example existe e contém variáveis críticas
+    prod_example_path = REPO_ROOT / "academy/.env.production.example"
+    check("academy/.env.production.example existe", prod_example_path.exists())
+    if prod_example_path.exists():
+        prod_example = prod_example_path.read_text(encoding="utf-8")
+        check("BASE_URL em .env.production.example", "BASE_URL=" in prod_example)
+        check("ALLOWED_ORIGINS em .env.production.example", "ALLOWED_ORIGINS=" in prod_example)
+        check("APP_ENV=production em .env.production.example", "APP_ENV=production" in prod_example)
+
     # 6. render.yaml tem variáveis de ambiente
     render = (REPO_ROOT / "render.yaml").read_text(encoding="utf-8")
     check("render.yaml: DATABASE_URL", "DATABASE_URL" in render)
