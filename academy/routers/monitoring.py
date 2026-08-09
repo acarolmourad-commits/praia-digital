@@ -1,4 +1,5 @@
 from fastapi import APIRouter, Depends
+from sqlalchemy import text
 from sqlalchemy.orm import Session
 from academy.core.database import get_db
 from academy.core.models import Course, Enrollment, Payment
@@ -24,7 +25,7 @@ def monitoring_status(db: Session = Depends(get_db)):
     db_ok = False
     courses = enrollments = payments = 0
     try:
-        db.execute("SELECT 1")
+        db.execute(text("SELECT 1"))
         db_ok = True
         courses = db.query(Course).count()
         enrollments = db.query(Enrollment).count()
