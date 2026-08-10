@@ -7,9 +7,8 @@ services:
     autoDeploy: true
     envVars:
       - key: DATABASE_URL
-        fromDatabase:
-          name: academy-db
-          property: connectionString
+        # Preencha com a connection string do academy-db ja criado
+        value: ""
       - key: SECRET_KEY
         generateValue: true
       - key: APP_ENV
@@ -31,7 +30,7 @@ services:
       - key: MERCADOPAGO_PUBLIC_KEY
         value: ""
       - key: BASE_URL
-        value: "https://academy.praia.digital"
+        value: https://academy.praia.digital
       - key: WHATSAPP_API_URL
         value: ""
       - key: WHATSAPP_TOKEN
@@ -41,7 +40,6 @@ services:
       - key: WHATSAPP_TO_NUMBER
         value: ""
 
-databases:
-  - name: academy-db
-    databaseName: academy
-    user: academy
+# Banco academy-db ja foi criado manualmente via API:
+# id=dpg-d9sthijm8hqs73c6cnmg-a
+# Nao incluir aqui para evitar duplicacao.
