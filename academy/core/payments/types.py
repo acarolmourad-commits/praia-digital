@@ -21,3 +21,4 @@ class PaymentContext:
     buyer_name: str = ""
     external_reference: str = ""
     user_id: Optional[int] = None
+    course_id: Optional[int] = None
