@@ -14,7 +14,7 @@ def email_confirmation(enrollment_id: int, db: Session = Depends(get_db)):
     course = db.query(Course).filter(Course.id == enrollment.course_id).first()
     user = db.query(User).filter(User.id == enrollment.user_id).first()
     course_url = f"https://academy.praia.digital/education/aluno/curso.html?course_id={course.id}"
-    resp = send_enrollment_confirmation(getattr(user, "email", None), course.name, course_url)
+    resp = send_enrollment_confirmation(getattr(user, "email", None), course.title, course_url)
     return {"status": resp.get("status"), "detail": resp.get("reason") or "ok"}
 
 @router.post("/automation/email-lead-magnet/{lead_id}")
