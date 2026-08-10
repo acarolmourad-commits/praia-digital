@@ -23,6 +23,16 @@ EMAIL_FROM = os.getenv("EMAIL_FROM", "no-reply@praia.digital")
 MERCADOPAGO_TOKEN = os.getenv("MERCADOPAGO_TOKEN", "")
 MERCADOPAGO_PUBLIC_KEY = os.getenv("MERCADOPAGO_PUBLIC_KEY", "")
 MERCADOPAGO_API = os.getenv("MERCADOPAGO_API_URL", "https://api.mercadopago.com/v1")
+
+# Payments
+PAYMENT_GATEWAY = os.getenv("PAYMENT_GATEWAY", "sandbox")
+PAYMENT_SECRET = os.getenv("PAYMENT_SECRET", "")
+PAYMENT_WEBHOOK_PATH = os.getenv("PAYMENT_WEBHOOK_PATH", "/academy/payments/webhook")
+
+# Hotmart
+HOTMART_API = os.getenv("HOTMART_API", "https://api.hotmart.com")
+HOTMART_TOKEN = os.getenv("HOTMART_TOKEN", "")
+HOTMART_SECRET = os.getenv("HOTMART_SECRET", "")
 BASE_URL = os.getenv("BASE_URL", "https://academy.praia.digital")
 
 # CORS
