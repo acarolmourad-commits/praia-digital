@@ -26,12 +26,12 @@ def verify_webhook(request: Request, body: bytes) -> bool:
     No secret is hardcoded. If the env var is absent, verification is skipped
     only if PAYMENT_GATEWAY=sandbox.
     """
-    gateway = request.app.state.payment_gateway if hasattr(request.app, "state") else "sandbox"
+    gateway = getattr(getattr(request.app, "state", None), "payment_gateway", None) or os.getenv("PAYMENT_GATEWAY", "sandbox").lower()
     if gateway == "sandbox":
         return True
 
     if gateway == "hotmart":
-        hotmart_secret = request.app.state.payment_secret if hasattr(request.app, "state") else ""
+        hotmart_secret = getattr(getattr(request.app, "state", None), "payment_secret", None) or os.getenv("HOTMART_TOKEN", "")
         if not hotmart_secret:
             return True
         received = _header(request, "X-Hotmart-Hmac")
@@ -43,7 +43,7 @@ def verify_webhook(request: Request, body: bytes) -> bool:
         return True
 
     if gateway == "mercadopago":
-        mercadopago_secret = request.app.state.payment_secret if hasattr(request.app, "state") else ""
+        mercadopago_secret = getattr(getattr(request.app, "state", None), "payment_secret", None) or os.getenv("MERCADOPAGO_TOKEN", "")
         if not mercadopago_secret:
             return True
         received = _header(request, "X-Signature")
@@ -52,7 +52,7 @@ def verify_webhook(request: Request, body: bytes) -> bool:
         return True
 
     if gateway == "stripe":
-        stripe_secret = request.app.state.payment_secret if hasattr(request.app, "state") else ""
+        stripe_secret = getattr(getattr(request.app, "state", None), "payment_secret", None) or os.getenv("STRIPE_SECRET", "")
         if not stripe_secret:
             return True
         timestamp = _header(request, "Stripe-Timestamp")
