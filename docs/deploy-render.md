@@ -3,6 +3,8 @@
 **Branch:** main  
 **Arquivo de configuração:** render.yaml
 
+Status atual: `academy-db` já existe e está `available`; a criação do web service no Render exige billing ativado.
+
 ## Passo 1 — Acessar Render
 1. Acesse https://render.com e faça login.
 2. Clique em **New +** e escolha **Web Service**.
