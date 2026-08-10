@@ -12,6 +12,8 @@ def list_courses(status: Optional[str] = None, db: Session = Depends(get_db)):
     q = db.query(Course)
     if status:
         q = q.filter(Course.status == status)
+    else:
+        q = q.filter(Course.status == "published")
     return q.order_by(Course.created_at.desc()).all()
 
 @router.get("/{slug}", response_model=CourseOut)
