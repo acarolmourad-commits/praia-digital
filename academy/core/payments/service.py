@@ -35,9 +35,16 @@ def get_payment_provider() -> PaymentGateway:
 
 
 def create_payment(db: Session, context: PaymentContext) -> Payment:
+    course_id = context.course_id
+    if course_id is None and context.enrollment_id:
+        enrollment = db.query(Enrollment).filter(Enrollment.id == context.enrollment_id).first()
+        if enrollment:
+            course_id = enrollment.course_id
+    if course_id is None:
+        course_id = 0
     payment = Payment(
         user_id=context.user_id,
-        course_id=0,
+        course_id=course_id,
         enrollment_id=context.enrollment_id,
         amount=context.amount,
         currency=context.currency,
