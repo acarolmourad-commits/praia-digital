@@ -1,4 +1,5 @@
 import logging
+import os
 import hashlib
 import hmac
 from typing import Optional
