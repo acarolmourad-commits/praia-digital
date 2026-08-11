@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T22:00:00Z",
+  "generated_at": "2026-08-11T17:06:48.130938Z",
   "status": "BATCH4_PREPARADO",
   "slug_groups": [
     {
@@ -294,7 +294,7 @@
       "faq_count": 2,
       "internal_links": [],
       "course_link": "",
-      "status": "PUBLICADO",
+      "status": "RECUPERADO_VALIDADO",
       "h2": [
         "Quando alinear faz sentido",
         "Quando comprar compensa",
@@ -324,7 +324,15 @@
       "has_faq_schema": true,
       "has_article_schema": true,
       "internal_links_count": 0,
-      "external_links_count": 7
+      "external_links_count": 7,
+      "recovery_status": "RECUPERADO_VALIDADO",
+      "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
+      "recovery_http_status": 200,
+      "recovery_canonical": true,
+      "recovery_canonical_url": "https://praia.digital/blog/alugar-ou-comprar-imovel-litoral-paulista-2026.html",
+      "recovery_words": 383,
+      "recovery_commit": "e315933",
+      "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31511957982"
     },
     {
       "title": "5 táticas infalíveis para captação imobiliária no litoral paulista",
@@ -337,7 +345,7 @@
       "faq_count": 0,
       "internal_links": [],
       "course_link": "",
-      "status": "PUBLICADO",
+      "status": "RECUPERADO_VALIDADO",
       "h2": [
         "O que mudou no mercado",
         "Checklist essencial",
@@ -364,7 +372,15 @@
       "has_faq_schema": true,
       "has_article_schema": true,
       "internal_links_count": 2,
-      "external_links_count": 7
+      "external_links_count": 7,
+      "recovery_status": "RECUPERADO_VALIDADO",
+      "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
+      "recovery_http_status": 200,
+      "recovery_canonical": true,
+      "recovery_canonical_url": "https://praia.digital/blog/5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html",
+      "recovery_words": 318,
+      "recovery_commit": "08fd325",
+      "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31509566700"
     },
     {
       "title": "Segmento de aluguel de temporada no litoral paulista 2026",
@@ -377,7 +393,7 @@
       "faq_count": 2,
       "internal_links": [],
       "course_link": "",
-      "status": "PUBLICADO",
+      "status": "RECUPERADO_VALIDADO",
       "h2": [
         "Introdução",
         "Pontos principais"
@@ -404,7 +420,15 @@
       "has_faq_schema": true,
       "has_article_schema": true,
       "internal_links_count": 2,
-      "external_links_count": 9
+      "external_links_count": 9,
+      "recovery_status": "RECUPERADO_VALIDADO",
+      "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
+      "recovery_http_status": 200,
+      "recovery_canonical": true,
+      "recovery_canonical_url": "https://praia.digital/blog/Segmento-aluguel-temporada-litoral-2026.html",
+      "recovery_words": 235,
+      "recovery_commit": "08fd325",
+      "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31509566700"
     },
     {
       "title": "Como anunciar imóveis no Google para o litoral: Guia Prático 2026",
@@ -417,7 +441,7 @@
       "faq_count": 1,
       "internal_links": [],
       "course_link": "",
-      "status": "PUBLICADO",
+      "status": "RECUPERADO_VALIDADO",
       "h2": [
         "Ações",
         "Ferramentas"
@@ -443,7 +467,15 @@
       "has_faq_schema": true,
       "has_article_schema": true,
       "internal_links_count": 2,
-      "external_links_count": 8
+      "external_links_count": 8,
+      "recovery_status": "RECUPERADO_VALIDADO",
+      "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
+      "recovery_http_status": 200,
+      "recovery_canonical": true,
+      "recovery_canonical_url": "https://praia.digital/blog/anunciar-imoveis-google-litoral-paulista-2026.html",
+      "recovery_words": 331,
+      "recovery_commit": "e315933",
+      "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31511957982"
     },
     {
       "title": "Automação de captação de imóveis no litoral em passos",
@@ -456,7 +488,7 @@
       "faq_count": 1,
       "internal_links": [],
       "course_link": "",
-      "status": "PUBLICADO",
+      "status": "RECUPERADO_VALIDADO",
       "h2": [
         "Fluxo",
         "Checklist rapida"
@@ -482,7 +514,15 @@
       "has_faq_schema": true,
       "has_article_schema": true,
       "internal_links_count": 0,
-      "external_links_count": 3
+      "external_links_count": 3,
+      "recovery_status": "RECUPERADO_VALIDADO",
+      "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
+      "recovery_http_status": 200,
+      "recovery_canonical": true,
+      "recovery_canonical_url": "https://praia.digital/blog/automacao-captacao-imoveis-litoral-passos.html",
+      "recovery_words": 323,
+      "recovery_commit": "e315933",
+      "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31511957982"
     },
     {
       "title": "Checklist SEO local para corretores do litoral em 2026",
@@ -495,7 +535,7 @@
       "faq_count": 1,
       "internal_links": [],
       "course_link": "",
-      "status": "PUBLICADO",
+      "status": "RECUPERADO_VALIDADO",
       "h2": [
         "O que mudou no mercado",
         "Checklist essencial",
@@ -524,7 +564,15 @@
       "has_faq_schema": true,
       "has_article_schema": true,
       "internal_links_count": 2,
-      "external_links_count": 8
+      "external_links_count": 8,
+      "recovery_status": "RECUPERADO_VALIDADO",
+      "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
+      "recovery_http_status": 200,
+      "recovery_canonical": true,
+      "recovery_canonical_url": "https://praia.digital/blog/checklist-seo-local-para-corretores-do-litoral-em-2026-lote-2026-07-11-12.html",
+      "recovery_words": 318,
+      "recovery_commit": "e315933",
+      "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31511957982"
     },
     {
       "title": "Assistente virtual para compradores: quando usar e quando evitar",
@@ -537,7 +585,7 @@
       "faq_count": 1,
       "internal_links": [],
       "course_link": "",
-      "status": "PUBLICADO",
+      "status": "RECUPERADO_VALIDADO",
       "h2": [
         "Benefícios"
       ],
@@ -562,7 +610,15 @@
       "has_faq_schema": true,
       "has_article_schema": true,
       "internal_links_count": 0,
-      "external_links_count": 4
+      "external_links_count": 4,
+      "recovery_status": "RECUPERADO_VALIDADO",
+      "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
+      "recovery_http_status": 200,
+      "recovery_canonical": true,
+      "recovery_canonical_url": "https://praia.digital/blog/assistente-virtual-compradores-litoral-2026.html",
+      "recovery_words": 338,
+      "recovery_commit": "e315933",
+      "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31511957982"
     },
     {
       "title": "Abordagem a Proprietários por WhatsApp no Litoral",
@@ -575,7 +631,7 @@
       "faq_count": 1,
       "internal_links": [],
       "course_link": "",
-      "status": "PUBLICADO",
+      "status": "RECUPERADO_VALIDADO",
       "h2": [
         "1. Estrutura da primeira mensagem",
         "2. Tom e personalização",
@@ -604,7 +660,15 @@
       "has_faq_schema": true,
       "has_article_schema": true,
       "internal_links_count": 0,
-      "external_links_count": 8
+      "external_links_count": 8,
+      "recovery_status": "RECUPERADO_VALIDADO",
+      "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
+      "recovery_http_status": 200,
+      "recovery_canonical": true,
+      "recovery_canonical_url": "https://praia.digital/blog/abordagem-proprietarios-whatsapp-litoral-2026.html",
+      "recovery_words": 282,
+      "recovery_commit": "08fd325",
+      "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31509566700"
     },
     {
       "title": "Acelerar Fechamento de Vendas no Litoral: Checklists e Scripts 2026",
@@ -617,7 +681,7 @@
       "faq_count": 1,
       "internal_links": [],
       "course_link": "",
-      "status": "PUBLICADO",
+      "status": "RECUPERADO_VALIDADO",
       "h2": [
         "Checklist rápida",
         "Scripts",
@@ -644,7 +708,15 @@
       "has_faq_schema": true,
       "has_article_schema": true,
       "internal_links_count": 2,
-      "external_links_count": 8
+      "external_links_count": 8,
+      "recovery_status": "RECUPERADO_VALIDADO",
+      "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
+      "recovery_http_status": 200,
+      "recovery_canonical": true,
+      "recovery_canonical_url": "https://praia.digital/blog/acelerar-fechamento-vendas-litoral-paulista-2026.html",
+      "recovery_words": 403,
+      "recovery_commit": "e315933",
+      "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31511957982"
     },
     {
       "title": "Análise de Mercado Imobiliário no Litoral: Guia Prático para Investidor",
@@ -657,7 +729,7 @@
       "faq_count": 1,
       "internal_links": [],
       "course_link": "",
-      "status": "PUBLICADO",
+      "status": "RECUPERADO_VALIDADO",
       "h2": [
         "Indicadores essenciais",
         "Por Que Analisar o Mercado no Litoral Paulista?",
@@ -692,59 +764,97 @@
       "has_faq_schema": true,
       "has_article_schema": true,
       "internal_links_count": 0,
-      "external_links_count": 4
+      "external_links_count": 4,
+      "recovery_status": "RECUPERADO_VALIDADO",
+      "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
+      "recovery_http_status": 200,
+      "recovery_canonical": true,
+      "recovery_canonical_url": "https://praia.digital/blog/analise-mercado-imobiliario-litoral-2026.html",
+      "recovery_words": 408,
+      "recovery_commit": "e315933",
+      "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31511957982"
     }
   ],
   "publication_plan": [
     {
       "order": 1,
       "slug": "alugar-ou-comprar-imovel-litoral-paulista-2026.html",
-      "date": "2026-08-12"
+      "date": "2026-08-12",
+      "status": "RECUPERADO_VALIDADO",
+      "recovery_status": "RECUPERADO_VALIDADO",
+      "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
     },
     {
       "order": 2,
       "slug": "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html",
-      "date": "2026-08-13"
+      "date": "2026-08-13",
+      "status": "RECUPERADO_VALIDADO",
+      "recovery_status": "RECUPERADO_VALIDADO",
+      "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
     },
     {
       "order": 3,
       "slug": "Segmento-aluguel-temporada-litoral-2026.html",
-      "date": "2026-08-14"
+      "date": "2026-08-14",
+      "status": "RECUPERADO_VALIDADO",
+      "recovery_status": "RECUPERADO_VALIDADO",
+      "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
     },
     {
       "order": 4,
       "slug": "anunciar-imoveis-google-litoral-paulista-2026.html",
-      "date": "2026-08-15"
+      "date": "2026-08-15",
+      "status": "RECUPERADO_VALIDADO",
+      "recovery_status": "RECUPERADO_VALIDADO",
+      "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
     },
     {
       "order": 5,
       "slug": "automacao-captacao-imoveis-litoral-passos.html",
-      "date": "2026-08-16"
+      "date": "2026-08-16",
+      "status": "RECUPERADO_VALIDADO",
+      "recovery_status": "RECUPERADO_VALIDADO",
+      "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
     },
     {
       "order": 6,
       "slug": "checklist-seo-local-para-corretores-do-litoral-em-2026-lote-2026-07-11-12.html",
-      "date": "2026-08-17"
+      "date": "2026-08-17",
+      "status": "RECUPERADO_VALIDADO",
+      "recovery_status": "RECUPERADO_VALIDADO",
+      "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
     },
     {
       "order": 7,
       "slug": "assistente-virtual-compradores-litoral-2026.html",
-      "date": "2026-08-18"
+      "date": "2026-08-18",
+      "status": "RECUPERADO_VALIDADO",
+      "recovery_status": "RECUPERADO_VALIDADO",
+      "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
     },
     {
       "order": 8,
       "slug": "abordagem-proprietarios-whatsapp-litoral-2026.html",
-      "date": "2026-08-19"
+      "date": "2026-08-19",
+      "status": "RECUPERADO_VALIDADO",
+      "recovery_status": "RECUPERADO_VALIDADO",
+      "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
     },
     {
       "order": 9,
       "slug": "acelerar-fechamento-vendas-litoral-paulista-2026.html",
-      "date": "2026-08-20"
+      "date": "2026-08-20",
+      "status": "RECUPERADO_VALIDADO",
+      "recovery_status": "RECUPERADO_VALIDADO",
+      "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
     },
     {
       "order": 10,
       "slug": "analise-mercado-imobiliario-litoral-2026.html",
-      "date": "2026-08-21"
+      "date": "2026-08-21",
+      "status": "RECUPERADO_VALIDADO",
+      "recovery_status": "RECUPERADO_VALIDADO",
+      "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
     }
   ],
   "published_articles": [],
@@ -10872,7 +10982,7 @@
           "airbnb-vs-booking-litoral-sp.html",
           "rentabilidade-imoveis-praia-2026.html"
         ],
-        "status": "PUBLICADO",
+        "status": "RECUPERADO_VALIDADO",
         "publication_url": "https://praia.digital/blog/pricelabs-imobiliarias-litoral-aumentar-receita-temporada.html",
         "canonical": "https://praia.digital/blog/pricelabs-imobiliarias-litoral-aumentar-receita-temporada.html",
         "indexation_status": "AGUARDANDO_SUBMISSAO",
@@ -10897,7 +11007,15 @@
         "created_at": "2026-08-11T11:34:14.006604Z",
         "has_h1": true,
         "internal_links_count": 6,
-        "external_links_count": 3
+        "external_links_count": 3,
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
+        "recovery_http_status": 200,
+        "recovery_canonical": true,
+        "recovery_canonical_url": "https://praia.digital/blog/pricelabs-imobiliarias-litoral-aumentar-receita-temporada.html",
+        "recovery_words": 287,
+        "recovery_commit": "08fd325",
+        "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31509566700"
       },
       {
         "title": "Financiamento para imóveis no litoral: como aprovar mais rápido em 2026",
@@ -10917,7 +11035,7 @@
           "analise-mercado-imobiliario-litoral-2026.html",
           "rentabilidade-imoveis-praia-2026.html"
         ],
-        "status": "PUBLICADO",
+        "status": "RECUPERADO_VALIDADO",
         "publication_url": "https://praia.digital/blog/financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html",
         "canonical": "https://praia.digital/blog/financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html",
         "indexation_status": "AGUARDANDO_SUBMISSAO",
@@ -10949,7 +11067,7 @@
         "recovery_local_words": 534,
         "recovery_public_words": 230,
         "recovery_http_status": 200,
-        "recovery_validated_at": "2026-08-11T15:44:11.289888Z",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
         "recovery_canonical": true,
         "recovery_canonical_url": "https://praia.digital/blog/financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html",
         "recovery_words": 534,
@@ -10976,7 +11094,7 @@
           "analise-mercado-imobiliario-litoral-2026.html",
           "financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html"
         ],
-        "status": "PUBLICADO",
+        "status": "RECUPERADO_VALIDADO",
         "publication_url": "https://praia.digital/blog/compra-imovel-litoral-estrangeiro-guia-passo-a-passo.html",
         "canonical": "https://praia.digital/blog/compra-imovel-litoral-estrangeiro-guia-passo-a-passo.html",
         "indexation_status": "AGUARDANDO_SUBMISSAO",
@@ -11003,7 +11121,15 @@
         "internal_links_count": 6,
         "external_links_count": 3,
         "url": "https://praia.digital/blog/compra-imovel-litoral-estrangeiro-guia-passo-a-passo.html",
-        "fixed_slug_at": "2026-08-11T15:46:21.711037Z"
+        "fixed_slug_at": "2026-08-11T15:46:21.711037Z",
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
+        "recovery_http_status": 200,
+        "recovery_canonical": true,
+        "recovery_canonical_url": "https://praia.digital/blog/compra-imovel-litoral-estrangeiro-guia-passo-a-passo.html",
+        "recovery_words": 409,
+        "recovery_commit": "08fd325",
+        "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31509566700"
       },
       {
         "title": "Instagram para imobiliárias do litoral: roteiro de conteúdo que converte",
@@ -11025,7 +11151,7 @@
           "checklist-seo-local-para-corretores-do-litoral-em-2026-lote-2026-07-11-12.html",
           "automacao-captacao-imoveis-litoral-passos.html"
         ],
-        "status": "PUBLICADO",
+        "status": "RECUPERADO_VALIDADO",
         "publication_url": "https://praia.digital/blog/instagram-imobiliarias-litoral-roteiro-conteudo-converte.html",
         "canonical": "https://praia.digital/blog/instagram-imobiliarias-litoral-roteiro-conteudo-converte.html",
         "indexation_status": "AGUARDANDO_SUBMISSAO",
@@ -11050,7 +11176,15 @@
         "created_at": "2026-08-11T11:34:14.006604Z",
         "has_h1": true,
         "internal_links_count": 6,
-        "external_links_count": 3
+        "external_links_count": 3,
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
+        "recovery_http_status": 200,
+        "recovery_canonical": true,
+        "recovery_canonical_url": "https://praia.digital/blog/instagram-imobiliarias-litoral-roteiro-conteudo-converte.html",
+        "recovery_words": 317,
+        "recovery_commit": "e315933",
+        "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31511957982"
       },
       {
         "title": "PriceLabs no Airbnb: como definir preço mínimo e máximo por temporada",
@@ -11072,7 +11206,7 @@
           "airbnb-vs-booking-litoral-sp.html",
           "pricelabs-imobiliarias-litoral-aumentar-receita-temporada.html"
         ],
-        "status": "PUBLICADO",
+        "status": "RECUPERADO_VALIDADO",
         "publication_url": "https://praia.digital/blog/pricelabs-airbnb-preco-minimo-maximo-temporada.html",
         "canonical": "https://praia.digital/blog/pricelabs-airbnb-preco-minimo-maximo-temporada.html",
         "indexation_status": "AGUARDANDO_SUBMISSAO",
@@ -11097,7 +11231,15 @@
         "created_at": "2026-08-11T11:34:14.006604Z",
         "has_h1": true,
         "internal_links_count": 6,
-        "external_links_count": 3
+        "external_links_count": 3,
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
+        "recovery_http_status": 200,
+        "recovery_canonical": true,
+        "recovery_canonical_url": "https://praia.digital/blog/pricelabs-airbnb-preco-minimo-maximo-temporada.html",
+        "recovery_words": 319,
+        "recovery_commit": "08fd325",
+        "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31509566700"
       },
       {
         "title": "Imóvel para estrangeiro no litoral: como captar leads internacionais",
@@ -11119,7 +11261,7 @@
           "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html",
           "abordagem-proprietarios-whatsapp-litoral-2026.html"
         ],
-        "status": "PUBLICADO",
+        "status": "RECUPERADO_VALIDADO",
         "publication_url": "https://praia.digital/blog/imovel-litoral-estrangeiro-captar-leads-internacionais.html",
         "canonical": "https://praia.digital/blog/imovel-litoral-estrangeiro-captar-leads-internacionais.html",
         "indexation_status": "AGUARDANDO_SUBMISSAO",
@@ -11148,7 +11290,7 @@
         "recovery_local_words": 459,
         "recovery_public_words": 212,
         "recovery_http_status": 200,
-        "recovery_validated_at": "2026-08-11T15:44:11.289888Z",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
         "recovery_status": "RECUPERADO_VALIDADO",
         "recovery_canonical": true,
         "recovery_canonical_url": "https://praia.digital/blog/imovel-litoral-estrangeiro-captar-leads-internacionais.html",
@@ -11176,7 +11318,7 @@
           "anunciar-imoveis-google-litoral-paulista-2026.html",
           "checklist-seo-local-para-corretores-do-litoral-em-2026-lote-2026-07-11-12.html"
         ],
-        "status": "PUBLICADO",
+        "status": "RECUPERADO_VALIDADO",
         "publication_url": "https://praia.digital/blog/conteudo-instagram-imobiliaria-15-ideias-geram-consultas.html",
         "canonical": "https://praia.digital/blog/conteudo-instagram-imobiliaria-15-ideias-geram-consultas.html",
         "indexation_status": "AGUARDANDO_SUBMISSAO",
@@ -11201,7 +11343,15 @@
         "created_at": "2026-08-11T11:34:14.006604Z",
         "has_h1": true,
         "internal_links_count": 6,
-        "external_links_count": 3
+        "external_links_count": 3,
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
+        "recovery_http_status": 200,
+        "recovery_canonical": true,
+        "recovery_canonical_url": "https://praia.digital/blog/conteudo-instagram-imobiliaria-15-ideias-geram-consultas.html",
+        "recovery_words": 376,
+        "recovery_commit": "e315933",
+        "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31511957982"
       },
       {
         "title": "PriceLabs para temporada: ajustando regras de estadia mínima no litoral",
@@ -11223,7 +11373,7 @@
           "pricelabs-airbnb-preco-minimo-maximo-temporada.html",
           "Segmento-aluguel-temporada-litoral-2026.html"
         ],
-        "status": "PUBLICADO",
+        "status": "RECUPERADO_VALIDADO",
         "publication_url": "https://praia.digital/blog/pricelabs-temporada-regras-estadia-minima-litoral.html",
         "canonical": "https://praia.digital/blog/pricelabs-temporada-regras-estadia-minima-litoral.html",
         "indexation_status": "AGUARDANDO_SUBMISSAO",
@@ -11248,7 +11398,15 @@
         "created_at": "2026-08-11T11:34:14.006604Z",
         "has_h1": true,
         "internal_links_count": 6,
-        "external_links_count": 3
+        "external_links_count": 3,
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
+        "recovery_http_status": 200,
+        "recovery_canonical": true,
+        "recovery_canonical_url": "https://praia.digital/blog/pricelabs-temporada-regras-estadia-minima-litoral.html",
+        "recovery_words": 247,
+        "recovery_commit": "08fd325",
+        "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31509566700"
       },
       {
         "title": "Financiamento de imóvel na praia: documentação essencial para aprovar",
@@ -11268,7 +11426,7 @@
           "financiamento-imoveis-praia-bancos-aprovam-2026.html",
           "analise-mercado-imobiliario-litoral-2026.html"
         ],
-        "status": "PUBLICADO",
+        "status": "RECUPERADO_VALIDADO",
         "publication_url": "https://praia.digital/blog/financiamento-imovel-praia-documentacao-aprovar.html",
         "canonical": "https://praia.digital/blog/financiamento-imovel-praia-documentacao-aprovar.html",
         "indexation_status": "AGUARDANDO_SUBMISSAO",
@@ -11297,7 +11455,7 @@
         "recovery_local_words": 405,
         "recovery_public_words": 179,
         "recovery_http_status": 200,
-        "recovery_validated_at": "2026-08-11T15:44:11.289888Z",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
         "recovery_status": "RECUPERADO_VALIDADO",
         "recovery_canonical": true,
         "recovery_canonical_url": "https://praia.digital/blog/financiamento-imovel-praia-documentacao-aprovar.html",
@@ -11325,7 +11483,7 @@
           "compra-imovel-litoral-estrangeiro-guia-passo-a-passo.html",
           "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html"
         ],
-        "status": "PUBLICADO",
+        "status": "RECUPERADO_VALIDADO",
         "publication_url": "https://praia.digital/blog/captacao-imoveis-estrangeiros-roteiro-corretores.html",
         "canonical": "https://praia.digital/blog/captacao-imoveis-estrangeiros-roteiro-corretores.html",
         "indexation_status": "AGUARDANDO_SUBMISSAO",
@@ -11352,7 +11510,7 @@
         "internal_links_count": 6,
         "external_links_count": 3,
         "recovery_status": "RECUPERADO_VALIDADO",
-        "recovery_validated_at": "2026-08-11T15:44:11.289888Z",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
         "local_words": 586,
         "public_words": 163,
         "deployment_note": "Local atualizado; público retornando cache antigo (max-age=600). Validar após deploy/refresh.",
@@ -11374,53 +11532,73 @@
     "http_validation": [
       {
         "slug": "pricelabs-imobiliarias-litoral-aumentar-receita-temporada.html",
-        "status": 200,
-        "ok": true
+        "status": "RECUPERADO_VALIDADO",
+        "ok": true,
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
       },
       {
         "slug": "financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html",
-        "status": 200,
-        "ok": true
+        "status": "RECUPERADO_VALIDADO",
+        "ok": true,
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
       },
       {
         "slug": "compra-imovel-litoral-estrangeiro-guia-passo-passo.html",
-        "status": 200,
-        "ok": true
+        "status": "RECUPERADO_VALIDADO",
+        "ok": true,
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
       },
       {
         "slug": "instagram-imobiliarias-litoral-roteiro-conteudo-converte.html",
-        "status": 200,
-        "ok": true
+        "status": "RECUPERADO_VALIDADO",
+        "ok": true,
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
       },
       {
         "slug": "pricelabs-airbnb-preco-minimo-maximo-temporada.html",
-        "status": 200,
-        "ok": true
+        "status": "RECUPERADO_VALIDADO",
+        "ok": true,
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
       },
       {
         "slug": "imovel-litoral-estrangeiro-captar-leads-internacionais.html",
-        "status": 200,
-        "ok": true
+        "status": "RECUPERADO_VALIDADO",
+        "ok": true,
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
       },
       {
         "slug": "conteudo-instagram-imobiliaria-15-ideias-geram-consultas.html",
-        "status": 200,
-        "ok": true
+        "status": "RECUPERADO_VALIDADO",
+        "ok": true,
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
       },
       {
         "slug": "pricelabs-temporada-regras-estadia-minima-litoral.html",
-        "status": 200,
-        "ok": true
+        "status": "RECUPERADO_VALIDADO",
+        "ok": true,
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
       },
       {
         "slug": "financiamento-imovel-praia-documentacao-aprovar.html",
-        "status": 200,
-        "ok": true
+        "status": "RECUPERADO_VALIDADO",
+        "ok": true,
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
       },
       {
         "slug": "captacao-imoveis-estrangeiros-roteiro-corretores.html",
-        "status": 200,
-        "ok": true
+        "status": "RECUPERADO_VALIDADO",
+        "ok": true,
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
       }
     ],
     "content_validation": [
@@ -11429,70 +11607,100 @@
         "canonical_self": true,
         "has_h1": true,
         "has_faq": false,
-        "has_article_schema": true
+        "has_article_schema": true,
+        "status": "RECUPERADO_VALIDADO",
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
       },
       {
         "slug": "financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html",
         "canonical_self": true,
         "has_h1": true,
         "has_faq": false,
-        "has_article_schema": true
+        "has_article_schema": true,
+        "status": "RECUPERADO_VALIDADO",
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
       },
       {
         "slug": "compra-imovel-litoral-estrangeiro-guia-passo-passo.html",
         "canonical_self": true,
         "has_h1": true,
         "has_faq": false,
-        "has_article_schema": true
+        "has_article_schema": true,
+        "status": "RECUPERADO_VALIDADO",
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
       },
       {
         "slug": "instagram-imobiliarias-litoral-roteiro-conteudo-converte.html",
         "canonical_self": true,
         "has_h1": true,
         "has_faq": false,
-        "has_article_schema": true
+        "has_article_schema": true,
+        "status": "RECUPERADO_VALIDADO",
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
       },
       {
         "slug": "pricelabs-airbnb-preco-minimo-maximo-temporada.html",
         "canonical_self": true,
         "has_h1": true,
         "has_faq": false,
-        "has_article_schema": true
+        "has_article_schema": true,
+        "status": "RECUPERADO_VALIDADO",
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
       },
       {
         "slug": "imovel-litoral-estrangeiro-captar-leads-internacionais.html",
         "canonical_self": true,
         "has_h1": true,
         "has_faq": false,
-        "has_article_schema": true
+        "has_article_schema": true,
+        "status": "RECUPERADO_VALIDADO",
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
       },
       {
         "slug": "conteudo-instagram-imobiliaria-15-ideias-geram-consultas.html",
         "canonical_self": true,
         "has_h1": true,
         "has_faq": false,
-        "has_article_schema": true
+        "has_article_schema": true,
+        "status": "RECUPERADO_VALIDADO",
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
       },
       {
         "slug": "pricelabs-temporada-regras-estadia-minima-litoral.html",
         "canonical_self": true,
         "has_h1": true,
         "has_faq": false,
-        "has_article_schema": true
+        "has_article_schema": true,
+        "status": "RECUPERADO_VALIDADO",
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
       },
       {
         "slug": "financiamento-imovel-praia-documentacao-aprovar.html",
         "canonical_self": true,
         "has_h1": true,
         "has_faq": false,
-        "has_article_schema": true
+        "has_article_schema": true,
+        "status": "RECUPERADO_VALIDADO",
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
       },
       {
         "slug": "captacao-imoveis-estrangeiros-roteiro-corretores.html",
         "canonical_self": true,
         "has_h1": true,
         "has_faq": false,
-        "has_article_schema": true
+        "has_article_schema": true,
+        "status": "RECUPERADO_VALIDADO",
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
       }
     ],
     "published_at": "2026-08-11T12:13:18.329996Z"
@@ -11517,7 +11725,7 @@
           "pricelabs-airbnb-preco-minimo-maximo-temporada.html",
           "pricelabs-temporada-regras-estadia-minima-litoral.html"
         ],
-        "status": "PUBLICADO",
+        "status": "RECUPERADO_VALIDADO",
         "publication_url": "https://praia.digital/blog/pricelabs-relatorios-metricas-gestor-temporada.html",
         "canonical": "https://praia.digital/blog/pricelabs-relatorios-metricas-gestor-temporada.html",
         "indexation_status": "AGUARDANDO_SUBMISSAO",
@@ -11543,7 +11751,15 @@
         "has_h2": true,
         "has_meta_description": true,
         "internal_links_count": 6,
-        "external_links_count": 3
+        "external_links_count": 3,
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
+        "recovery_http_status": 200,
+        "recovery_canonical": true,
+        "recovery_canonical_url": "https://praia.digital/blog/pricelabs-relatorios-metricas-gestor-temporada.html",
+        "recovery_words": 236,
+        "recovery_commit": "08fd325",
+        "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31509566700"
       },
       {
         "title": "Financiamento social para imóveis: quando vale a pena para corretores",
@@ -11563,7 +11779,7 @@
           "financiamento-imovel-praia-documentacao-aprovar.html",
           "refinanciamento-imovel-praia-quando-vale-pena-2026.html"
         ],
-        "status": "PUBLICADO",
+        "status": "RECUPERADO_VALIDADO",
         "publication_url": "https://praia.digital/blog/financiamento-social-imoveis-quando-vale-pena-corretores.html",
         "canonical": "https://praia.digital/blog/financiamento-social-imoveis-quando-vale-pena-corretores.html",
         "indexation_status": "AGUARDANDO_SUBMISSAO",
@@ -11593,7 +11809,7 @@
         "recovery_local_words": 424,
         "recovery_public_words": 167,
         "recovery_http_status": 200,
-        "recovery_validated_at": "2026-08-11T15:44:11.289888Z",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
         "recovery_status": "RECUPERADO_VALIDADO",
         "recovery_canonical": true,
         "recovery_canonical_url": "https://praia.digital/blog/financiamento-social-imoveis-quando-vale-pena-corretores.html",
@@ -11621,7 +11837,7 @@
           "conteudo-instagram-imobiliaria-15-ideias-geram-consultas.html",
           "reels-imovel-litoral-7-modelos-viralizam-geram-leads.html"
         ],
-        "status": "PUBLICADO",
+        "status": "RECUPERADO_VALIDADO",
         "publication_url": "https://praia.digital/blog/instagram-ads-imobiliarias-campanhas-geram-leads-litoral.html",
         "canonical": "https://praia.digital/blog/instagram-ads-imobiliarias-campanhas-geram-leads-litoral.html",
         "indexation_status": "AGUARDANDO_SUBMISSAO",
@@ -11647,7 +11863,15 @@
         "has_h2": true,
         "has_meta_description": true,
         "internal_links_count": 6,
-        "external_links_count": 3
+        "external_links_count": 3,
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
+        "recovery_http_status": 200,
+        "recovery_canonical": true,
+        "recovery_canonical_url": "https://praia.digital/blog/instagram-ads-imobiliarias-campanhas-geram-leads-litoral.html",
+        "recovery_words": 326,
+        "recovery_commit": "e315933",
+        "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31511957982"
       },
       {
         "title": "Visto e residência para comprar imóvel no Brasil: guia do corretor",
@@ -11669,7 +11893,7 @@
           "imovel-litoral-estrangeiro-captar-leads-internacionais.html",
           "impostos-estrangeiros-brasil-guia-rapido-corretores.html"
         ],
-        "status": "PUBLICADO",
+        "status": "RECUPERADO_VALIDADO",
         "publication_url": "https://praia.digital/blog/visto-residencia-comprar-imovel-brasil-guia-corretor.html",
         "canonical": "https://praia.digital/blog/visto-residencia-comprar-imovel-brasil-guia-corretor.html",
         "indexation_status": "AGUARDANDO_SUBMISSAO",
@@ -11699,7 +11923,7 @@
         "recovery_local_words": 318,
         "recovery_public_words": 146,
         "recovery_http_status": 200,
-        "recovery_validated_at": "2026-08-11T15:44:11.289888Z",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
         "recovery_status": "RECUPERADO_VALIDADO",
         "recovery_canonical": true,
         "recovery_canonical_url": "https://praia.digital/blog/visto-residencia-comprar-imovel-brasil-guia-corretor.html",
@@ -11725,7 +11949,7 @@
           "checklist-seo-local-para-corretores-do-litoral-em-2026-lote-2026-07-11-12.html",
           "crm-para-corretores-primeiro-contato-fechamento.html"
         ],
-        "status": "PUBLICADO",
+        "status": "RECUPERADO_VALIDADO",
         "publication_url": "https://praia.digital/blog/site-imobiliaria-litoral-estrutura-converte-visitantes-leads.html",
         "canonical": "https://praia.digital/blog/site-imobiliaria-litoral-estrutura-converte-visitantes-leads.html",
         "indexation_status": "AGUARDANDO_SUBMISSAO",
@@ -11751,7 +11975,15 @@
         "has_h2": true,
         "has_meta_description": true,
         "internal_links_count": 6,
-        "external_links_count": 3
+        "external_links_count": 3,
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
+        "recovery_http_status": 200,
+        "recovery_canonical": true,
+        "recovery_canonical_url": "https://praia.digital/blog/site-imobiliaria-litoral-estrutura-converte-visitantes-leads.html",
+        "recovery_words": 248,
+        "recovery_commit": "08fd325",
+        "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31509566700"
       },
       {
         "title": "CRM para corretores: do primeiro contato ao fechamento",
@@ -11771,7 +12003,7 @@
           "followup-automático-do-primeiro-contato-ao-fechamento-lote-2026-08-03-22.html",
           "automacao-captacao-imoveis-litoral-passos.html"
         ],
-        "status": "PUBLICADO",
+        "status": "RECUPERADO_VALIDADO",
         "publication_url": "https://praia.digital/blog/crm-para-corretores-primeiro-contato-fechamento.html",
         "canonical": "https://praia.digital/blog/crm-para-corretores-primeiro-contato-fechamento.html",
         "indexation_status": "AGUARDANDO_SUBMISSAO",
@@ -11801,7 +12033,7 @@
         "recovery_local_words": 334,
         "recovery_public_words": 158,
         "recovery_http_status": 200,
-        "recovery_validated_at": "2026-08-11T15:44:11.289888Z",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
         "recovery_status": "RECUPERADO_VALIDADO",
         "recovery_canonical": true,
         "recovery_canonical_url": "https://praia.digital/blog/crm-para-corretores-primeiro-contato-fechamento.html",
@@ -11827,7 +12059,7 @@
           "abordagem-proprietarios-whatsapp-litoral-2026.html",
           "captacao-imoveis-estrangeiros-roteiro-corretores.html"
         ],
-        "status": "PUBLICADO",
+        "status": "RECUPERADO_VALIDADO",
         "publication_url": "https://praia.digital/blog/leads-mercado-livre-olx-converter-vendas-reais.html",
         "canonical": "https://praia.digital/blog/leads-mercado-livre-olx-converter-vendas-reais.html",
         "indexation_status": "AGUARDANDO_SUBMISSAO",
@@ -11853,7 +12085,15 @@
         "has_h2": true,
         "has_meta_description": true,
         "internal_links_count": 6,
-        "external_links_count": 3
+        "external_links_count": 3,
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
+        "recovery_http_status": 200,
+        "recovery_canonical": true,
+        "recovery_canonical_url": "https://praia.digital/blog/leads-mercado-livre-olx-converter-vendas-reais.html",
+        "recovery_words": 328,
+        "recovery_commit": "08fd325",
+        "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31509566700"
       },
       {
         "title": "Refinanciamento de imóvel na praia: quando vale a pena em 2026",
@@ -11873,7 +12113,7 @@
           "financiamento-imovel-praia-documentacao-aprovar.html",
           "analise-mercado-imobiliario-litoral-2026.html"
         ],
-        "status": "PUBLICADO",
+        "status": "RECUPERADO_VALIDADO",
         "publication_url": "https://praia.digital/blog/refinanciamento-imovel-praia-quando-vale-pena-2026.html",
         "canonical": "https://praia.digital/blog/refinanciamento-imovel-praia-quando-vale-pena-2026.html",
         "indexation_status": "AGUARDANDO_SUBMISSAO",
@@ -11903,7 +12143,7 @@
         "recovery_local_words": 374,
         "recovery_public_words": 157,
         "recovery_http_status": 200,
-        "recovery_validated_at": "2026-08-11T15:44:11.289888Z",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
         "recovery_status": "RECUPERADO_VALIDADO",
         "recovery_canonical": true,
         "recovery_canonical_url": "https://praia.digital/blog/refinanciamento-imovel-praia-quando-vale-pena-2026.html",
@@ -11931,7 +12171,7 @@
           "visto-residencia-comprar-imovel-brasil-guia-corretor.html",
           "imovel-litoral-estrangeiro-captar-leads-internacionais.html"
         ],
-        "status": "PUBLICADO",
+        "status": "RECUPERADO_VALIDADO",
         "publication_url": "https://praia.digital/blog/impostos-estrangeiros-brasil-guia-rapido-corretores.html",
         "canonical": "https://praia.digital/blog/impostos-estrangeiros-brasil-guia-rapido-corretores.html",
         "indexation_status": "AGUARDANDO_SUBMISSAO",
@@ -11961,7 +12201,7 @@
         "recovery_local_words": 327,
         "recovery_public_words": 165,
         "recovery_http_status": 200,
-        "recovery_validated_at": "2026-08-11T15:44:11.289888Z",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z",
         "recovery_status": "RECUPERADO_VALIDADO",
         "recovery_canonical": true,
         "recovery_canonical_url": "https://praia.digital/blog/impostos-estrangeiros-brasil-guia-rapido-corretores.html",
@@ -11989,7 +12229,7 @@
           "conteudo-instagram-imobiliaria-15-ideias-geram-consultas.html",
           "instagram-ads-imobiliarias-campanhas-geram-leads-litoral.html"
         ],
-        "status": "PUBLICADO",
+        "status": "RECUPERADO_VALIDADO",
         "publication_url": "https://praia.digital/blog/reels-imovel-litoral-7-modelos-viralizam-geram-leads.html",
         "canonical": "https://praia.digital/blog/reels-imovel-litoral-7-modelos-viralizam-geram-leads.html",
         "indexation_status": "AGUARDANDO_SUBMISSAO",
@@ -12015,7 +12255,9 @@
         "has_h2": true,
         "has_meta_description": true,
         "internal_links_count": 6,
-        "external_links_count": 3
+        "external_links_count": 3,
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T17:06:48.130938Z"
       }
     ],
     "status": "PUBLICADO",
@@ -12062,7 +12304,9 @@
         "has_article_schema": false,
         "interlinked": false,
         "word_count": 0,
-        "file_size": 0
+        "file_size": 0,
+        "recovery_status": "RASCUNHO",
+        "recovery_validated_at": ""
       },
       {
         "title": "Follow-up de leads por WhatsApp: roteiro para corretores",
@@ -12100,7 +12344,9 @@
         "has_article_schema": false,
         "interlinked": false,
         "word_count": 0,
-        "file_size": 0
+        "file_size": 0,
+        "recovery_status": "RASCUNHO",
+        "recovery_validated_at": ""
       },
       {
         "title": "OLX Imóveis para corretores: como extrair leads qualificados",
@@ -12138,7 +12384,9 @@
         "has_article_schema": false,
         "interlinked": false,
         "word_count": 0,
-        "file_size": 0
+        "file_size": 0,
+        "recovery_status": "RASCUNHO",
+        "recovery_validated_at": ""
       },
       {
         "title": "Página de imóvel que converte: fotos, texto e CTA",
@@ -12176,7 +12424,9 @@
         "has_article_schema": false,
         "interlinked": false,
         "word_count": 0,
-        "file_size": 0
+        "file_size": 0,
+        "recovery_status": "RASCUNHO",
+        "recovery_validated_at": ""
       },
       {
         "title": "Automação de follow-up para corretores: passo a passo",
@@ -12214,7 +12464,9 @@
         "has_article_schema": false,
         "interlinked": false,
         "word_count": 0,
-        "file_size": 0
+        "file_size": 0,
+        "recovery_status": "RASCUNHO",
+        "recovery_validated_at": ""
       },
       {
         "title": "Mercado Livre imóveis: guia do corretor para vender no marketplace",
@@ -12252,7 +12504,9 @@
         "has_article_schema": false,
         "interlinked": false,
         "word_count": 0,
-        "file_size": 0
+        "file_size": 0,
+        "recovery_status": "RASCUNHO",
+        "recovery_validated_at": ""
       },
       {
         "title": "Estrangeiro querendo comprar no Brasil: como atender com segurança",
@@ -12292,7 +12546,9 @@
         "has_article_schema": false,
         "interlinked": false,
         "word_count": 0,
-        "file_size": 0
+        "file_size": 0,
+        "recovery_status": "RASCUNHO",
+        "recovery_validated_at": ""
       },
       {
         "title": "Landing page para imóvel no litoral: do layout à conversão",
@@ -12330,7 +12586,9 @@
         "has_article_schema": false,
         "interlinked": false,
         "word_count": 0,
-        "file_size": 0
+        "file_size": 0,
+        "recovery_status": "RASCUNHO",
+        "recovery_validated_at": ""
       },
       {
         "title": "Captação de imóveis no litoral: roteiro prático para corretores",
@@ -12368,7 +12626,9 @@
         "has_article_schema": false,
         "interlinked": false,
         "word_count": 0,
-        "file_size": 0
+        "file_size": 0,
+        "recovery_status": "RASCUNHO",
+        "recovery_validated_at": ""
       },
       {
         "title": "Tour virtual de imóvel no litoral: equipamentos e dicas",
@@ -12406,7 +12666,9 @@
         "has_article_schema": false,
         "interlinked": false,
         "word_count": 0,
-        "file_size": 0
+        "file_size": 0,
+        "recovery_status": "RASCUNHO",
+        "recovery_validated_at": ""
       },
       {
         "title": "WhatsApp para corretores: fluxo de atendimento que converte",
@@ -12444,7 +12706,9 @@
         "has_article_schema": false,
         "interlinked": false,
         "word_count": 0,
-        "file_size": 0
+        "file_size": 0,
+        "recovery_status": "RASCUNHO",
+        "recovery_validated_at": ""
       },
       {
         "title": "Captação de imóveis para estrangeiros: abordagem e proposta",
@@ -12484,7 +12748,9 @@
         "has_article_schema": false,
         "interlinked": false,
         "word_count": 0,
-        "file_size": 0
+        "file_size": 0,
+        "recovery_status": "RASCUNHO",
+        "recovery_validated_at": ""
       }
     ],
     "status": "RASCUNHO",
