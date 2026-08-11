@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{TITLE_SEO}} | Praia Digital</title>
+<meta name="description" content="{{META_DESCRIPTION}}">
+<meta name="keywords" content="{{KEYWORDS}}">
+<link rel="canonical" href="{{CANONICAL_URL}}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{TITLE_SEO}}">
+<meta property="og:description" content="{{META_DESCRIPTION}}">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta property="og:url" content="{{CANONICAL_URL}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{TITLE_SEO}}">
+<meta name="twitter:description" content="{{META_DESCRIPTION}}">
+<meta name="twitter:image" content="{{OG_IMAGE}}">
+<meta name="robots" content="index, follow">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{TITLE_SEO}}",
+  "description": "{{META_DESCRIPTION}}",
+  "url": "{{CANONICAL_URL}}",
+  "author": {"@type": "Organization", "name": "Litoral Prime Imóveis"},
+  "publisher": {"@type": "Organization", "name": "Praia Digital"},
+  "datePublished": "{{PUBLISH_DATE}}",
+  "dateModified": "{{MODIFIED_DATE}}"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://praia.digital/index.html"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://praia.digital/blog/index.html"},
+    {"@type": "ListItem", "position": 3, "name": "{{TITLE_SEO}}", "item": "{{CANONICAL_URL}}"}
+  ]
+}
+</script>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;background:#0d1117;color:#e6edf3;margin:0;padding:0}
+.container{max-width:900px;margin:0 auto;padding:20px}
+a{color:#58a6ff;text-decoration:underline}
+.nav{margin-bottom:20px}
+.nav a{margin-right:10px}
+.card{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:16px;margin:12px 0}
+.badge{display:inline-block;background:#1f6feb;color:#fff;padding:4px 8px;border-radius:999px;font-size:12px;margin:4px 6px 0 0}
+.cta{background:#1f6feb;color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;display:inline-block;margin:16px 0}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="nav">
+    <a href="https://praia.digital/index.html">Início</a>
+    <a href="https://praia.digital/blog/index.html">Blog</a>
+  </div>
+
+  <article>
+    <h1>{{H1}}</h1>
+
+    <p><strong>{{INTRO_PARAGRAPH}}</strong></p>
+
+    <h2>{{H2_1}}</h2>
+    <p>{{CONTENT_H2_1}}</p>
+
+    <h2>{{H2_2}}</h2>
+    <p>{{CONTENT_H2_2}}</p>
+
+    <h2>{{H2_3}}</h2>
+    <p>{{CONTENT_H2_3}}</p>
+
+    <h2>CTA — Curso relacionado</h2>
+    <div class="card">
+      <p>{{CTA_TEXT}}</p>
+      <a href="{{COURSE_URL}}" class="cta">Acessar curso</a>
+    </div>
+
+    <h2>Artigos relacionados</h2>
+    <ul>
+      <li><a href="{{INTERNAL_LINK_1_URL}}">{{INTERNAL_LINK_1_TEXT}}</a></li>
+      <li><a href="{{INTERNAL_LINK_2_URL}}">{{INTERNAL_LINK_2_TEXT}}</a></li>
+      <li><a href="{{INTERNAL_LINK_3_URL}}">{{INTERNAL_LINK_3_TEXT}}</a></li>
+    </ul>
+
+    <h2>FAQ</h2>
+    <h3>{{FAQ_1_QUESTION}}</h3>
+    <p>{{FAQ_1_ANSWER}}</p>
+
+    <h3>{{FAQ_2_QUESTION}}</h3>
+    <p>{{FAQ_2_ANSWER}}</p>
+  </article>
+</div>
+</body>
+</html>
