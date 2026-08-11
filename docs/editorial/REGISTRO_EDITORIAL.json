@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-08-10T22:00:00Z",
-  "status": "PRE_PUBLICAO",
+  "status": "PUBLICACAO_CONCLUIDA",
   "slug_groups": [
     {
       "grupo": "3-erros-que-matam-vendas-de-temporada-no-litoral",
@@ -294,7 +294,7 @@
       "faq_count": 2,
       "internal_links": [],
       "course_link": "",
-      "status": "REVISADO",
+      "status": "PUBLICADO",
       "h2": [
         "Quando alinear faz sentido",
         "Quando comprar compensa",
@@ -310,10 +310,13 @@
       "file_size": 12402,
       "reviewed_at": "2026-08-11T10:45:17.000687Z",
       "published": false,
-      "published_date": null,
+      "published_date": "2026-08-12",
       "publication_url": "https://praia.digital/blog/alugar-ou-comprar-imovel-litoral-paulista-2026.html",
       "publication_order": 1,
-      "planned_date": "2026-08-12"
+      "planned_date": "2026-08-12",
+      "published_at": "2026-08-11T10:50:54.740937Z",
+      "http_status": 200,
+      "indexation_status": "AGUARDANDO_SUBMISSAO"
     },
     {
       "title": "5 táticas infalíveis para captação imobiliária no litoral paulista",
@@ -326,7 +329,7 @@
       "faq_count": 0,
       "internal_links": [],
       "course_link": "",
-      "status": "REVISADO",
+      "status": "PUBLICADO",
       "h2": [
         "O que mudou no mercado",
         "Checklist essencial",
@@ -339,10 +342,13 @@
       "file_size": 8243,
       "reviewed_at": "2026-08-11T10:45:17.001690Z",
       "published": false,
-      "published_date": null,
+      "published_date": "2026-08-13",
       "publication_url": "https://praia.digital/blog/5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html",
       "publication_order": 2,
-      "planned_date": "2026-08-13"
+      "planned_date": "2026-08-13",
+      "published_at": "2026-08-11T10:50:54.740937Z",
+      "http_status": 200,
+      "indexation_status": "AGUARDANDO_SUBMISSAO"
     },
     {
       "title": "Segmento de aluguel de temporada no litoral paulista 2026",
@@ -355,7 +361,7 @@
       "faq_count": 2,
       "internal_links": [],
       "course_link": "",
-      "status": "REVISADO",
+      "status": "PUBLICADO",
       "h2": [
         "Introdução",
         "Pontos principais"
@@ -368,10 +374,13 @@
       "file_size": 11762,
       "reviewed_at": "2026-08-11T10:45:17.003693Z",
       "published": false,
-      "published_date": null,
+      "published_date": "2026-08-14",
       "publication_url": "https://praia.digital/blog/Segmento-aluguel-temporada-litoral-2026.html",
       "publication_order": 3,
-      "planned_date": "2026-08-14"
+      "planned_date": "2026-08-14",
+      "published_at": "2026-08-11T10:50:54.740937Z",
+      "http_status": 200,
+      "indexation_status": "AGUARDANDO_SUBMISSAO"
     },
     {
       "title": "Como anunciar imóveis no Google para o litoral: Guia Prático 2026",
@@ -384,7 +393,7 @@
       "faq_count": 1,
       "internal_links": [],
       "course_link": "",
-      "status": "REVISADO",
+      "status": "PUBLICADO",
       "h2": [
         "Ações",
         "Ferramentas"
@@ -396,10 +405,13 @@
       "file_size": 11058,
       "reviewed_at": "2026-08-11T10:45:17.004693Z",
       "published": false,
-      "published_date": null,
+      "published_date": "2026-08-15",
       "publication_url": "https://praia.digital/blog/anunciar-imoveis-google-litoral-paulista-2026.html",
       "publication_order": 4,
-      "planned_date": "2026-08-15"
+      "planned_date": "2026-08-15",
+      "published_at": "2026-08-11T10:50:54.740937Z",
+      "http_status": 200,
+      "indexation_status": "AGUARDANDO_SUBMISSAO"
     },
     {
       "title": "Automação de captação de imóveis no litoral em passos",
@@ -412,7 +424,7 @@
       "faq_count": 1,
       "internal_links": [],
       "course_link": "",
-      "status": "REVISADO",
+      "status": "PUBLICADO",
       "h2": [
         "Fluxo",
         "Checklist rapida"
@@ -424,10 +436,13 @@
       "file_size": 11035,
       "reviewed_at": "2026-08-11T10:45:17.004693Z",
       "published": false,
-      "published_date": null,
+      "published_date": "2026-08-16",
       "publication_url": "https://praia.digital/blog/automacao-captacao-imoveis-litoral-passos.html",
       "publication_order": 5,
-      "planned_date": "2026-08-16"
+      "planned_date": "2026-08-16",
+      "published_at": "2026-08-11T10:50:54.740937Z",
+      "http_status": 200,
+      "indexation_status": "AGUARDANDO_SUBMISSAO"
     },
     {
       "title": "Checklist SEO local para corretores do litoral em 2026",
@@ -440,7 +455,7 @@
       "faq_count": 1,
       "internal_links": [],
       "course_link": "",
-      "status": "REVISADO",
+      "status": "PUBLICADO",
       "h2": [
         "O que mudou no mercado",
         "Checklist essencial",
@@ -455,10 +470,13 @@
       "file_size": 11779,
       "reviewed_at": "2026-08-11T10:45:17.006692Z",
       "published": false,
-      "published_date": null,
+      "published_date": "2026-08-17",
       "publication_url": "https://praia.digital/blog/checklist-seo-local-para-corretores-do-litoral-em-2026-lote-2026-07-11-12.html",
       "publication_order": 6,
-      "planned_date": "2026-08-17"
+      "planned_date": "2026-08-17",
+      "published_at": "2026-08-11T10:50:54.740937Z",
+      "http_status": 200,
+      "indexation_status": "AGUARDANDO_SUBMISSAO"
     },
     {
       "title": "Assistente virtual para compradores: quando usar e quando evitar",
@@ -471,7 +489,7 @@
       "faq_count": 1,
       "internal_links": [],
       "course_link": "",
-      "status": "REVISADO",
+      "status": "PUBLICADO",
       "h2": [
         "Benefícios"
       ],
@@ -482,10 +500,13 @@
       "file_size": 11026,
       "reviewed_at": "2026-08-11T10:45:17.007692Z",
       "published": false,
-      "published_date": null,
+      "published_date": "2026-08-18",
       "publication_url": "https://praia.digital/blog/assistente-virtual-compradores-litoral-2026.html",
       "publication_order": 7,
-      "planned_date": "2026-08-18"
+      "planned_date": "2026-08-18",
+      "published_at": "2026-08-11T10:50:54.740937Z",
+      "http_status": 200,
+      "indexation_status": "AGUARDANDO_SUBMISSAO"
     },
     {
       "title": "Abordagem a Proprietários por WhatsApp no Litoral",
@@ -498,7 +519,7 @@
       "faq_count": 1,
       "internal_links": [],
       "course_link": "",
-      "status": "REVISADO",
+      "status": "PUBLICADO",
       "h2": [
         "1. Estrutura da primeira mensagem",
         "2. Tom e personalização",
@@ -513,10 +534,13 @@
       "file_size": 13242,
       "reviewed_at": "2026-08-11T10:45:17.008691Z",
       "published": false,
-      "published_date": null,
+      "published_date": "2026-08-19",
       "publication_url": "https://praia.digital/blog/abordagem-proprietarios-whatsapp-litoral-2026.html",
       "publication_order": 8,
-      "planned_date": "2026-08-19"
+      "planned_date": "2026-08-19",
+      "published_at": "2026-08-11T10:50:54.740937Z",
+      "http_status": 200,
+      "indexation_status": "AGUARDANDO_SUBMISSAO"
     },
     {
       "title": "Acelerar Fechamento de Vendas no Litoral: Checklists e Scripts 2026",
@@ -529,7 +553,7 @@
       "faq_count": 1,
       "internal_links": [],
       "course_link": "",
-      "status": "REVISADO",
+      "status": "PUBLICADO",
       "h2": [
         "Checklist rápida",
         "Scripts",
@@ -542,10 +566,13 @@
       "file_size": 11292,
       "reviewed_at": "2026-08-11T10:45:17.009695Z",
       "published": false,
-      "published_date": null,
+      "published_date": "2026-08-20",
       "publication_url": "https://praia.digital/blog/acelerar-fechamento-vendas-litoral-paulista-2026.html",
       "publication_order": 9,
-      "planned_date": "2026-08-20"
+      "planned_date": "2026-08-20",
+      "published_at": "2026-08-11T10:50:54.740937Z",
+      "http_status": 200,
+      "indexation_status": "AGUARDANDO_SUBMISSAO"
     },
     {
       "title": "Análise de Mercado Imobiliário no Litoral: Guia Prático para Investidor",
@@ -558,7 +585,7 @@
       "faq_count": 1,
       "internal_links": [],
       "course_link": "",
-      "status": "REVISADO",
+      "status": "PUBLICADO",
       "h2": [
         "Indicadores essenciais",
         "Por Que Analisar o Mercado no Litoral Paulista?",
@@ -579,10 +606,13 @@
       "file_size": 10813,
       "reviewed_at": "2026-08-11T10:45:17.010692Z",
       "published": false,
-      "published_date": null,
+      "published_date": "2026-08-21",
       "publication_url": "https://praia.digital/blog/analise-mercado-imobiliario-litoral-2026.html",
       "publication_order": 10,
-      "planned_date": "2026-08-21"
+      "planned_date": "2026-08-21",
+      "published_at": "2026-08-11T10:50:54.740937Z",
+      "http_status": 200,
+      "indexation_status": "AGUARDANDO_SUBMISSAO"
     }
   ],
   "publication_plan": [
@@ -785,5 +815,24 @@
     "indexed": [],
     "errors": [],
     "last_check": null
+  },
+  "published_at": "2026-08-11T10:50:54.740937Z",
+  "indexation": {
+    "google_search_console": "AGUARDANDO_AUTORIZACAO",
+    "bing_webmaster": "AGUARDANDO_AUTORIZACAO",
+    "submitted_urls": [
+      "https://praia.digital/blog/alugar-ou-comprar-imovel-litoral-paulista-2026.html",
+      "https://praia.digital/blog/5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html",
+      "https://praia.digital/blog/Segmento-aluguel-temporada-litoral-2026.html",
+      "https://praia.digital/blog/anunciar-imoveis-google-litoral-paulista-2026.html",
+      "https://praia.digital/blog/automacao-captacao-imoveis-litoral-passos.html",
+      "https://praia.digital/blog/checklist-seo-local-para-corretores-do-litoral-em-2026-lote-2026-07-11-12.html",
+      "https://praia.digital/blog/assistente-virtual-compradores-litoral-2026.html",
+      "https://praia.digital/blog/abordagem-proprietarios-whatsapp-litoral-2026.html",
+      "https://praia.digital/blog/acelerar-fechamento-vendas-litoral-paulista-2026.html",
+      "https://praia.digital/blog/analise-mercado-imobiliario-litoral-2026.html"
+    ],
+    "indexed_urls": [],
+    "errors": []
   }
 }
