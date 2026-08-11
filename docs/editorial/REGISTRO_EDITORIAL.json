@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-08-10T22:00:00Z",
-  "status": "BATCH2_PREPARADO",
+  "status": "BATCH2_CRIADO",
   "slug_groups": [
     {
       "grupo": "3-erros-que-matam-vendas-de-temporada-no-litoral",
@@ -1064,7 +1064,10 @@
         "internal_links_added": 0,
         "interlinked": false,
         "word_count": 0,
-        "file_size": 0
+        "file_size": 0,
+        "html_created": true,
+        "html_path": "blog/pricelabs-imobiliarias-litoral-aumentar-receita-temporada.html",
+        "created_at": "2026-08-11T11:34:14.006604Z"
       },
       {
         "title": "Financiamento para imóveis no litoral: como aprovar mais rápido em 2026",
@@ -1103,7 +1106,10 @@
         "internal_links_added": 0,
         "interlinked": false,
         "word_count": 0,
-        "file_size": 0
+        "file_size": 0,
+        "html_created": true,
+        "html_path": "blog/financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html",
+        "created_at": "2026-08-11T11:34:14.006604Z"
       },
       {
         "title": "Compra de imóvel no litoral para estrangeiro: guia passo a passo",
@@ -1144,7 +1150,10 @@
         "internal_links_added": 0,
         "interlinked": false,
         "word_count": 0,
-        "file_size": 0
+        "file_size": 0,
+        "html_created": true,
+        "html_path": "blog/compra-imovel-litoral-estrangeiro-guia-passo-passo.html",
+        "created_at": "2026-08-11T11:34:14.006604Z"
       },
       {
         "title": "Instagram para imobiliárias do litoral: roteiro de conteúdo que converte",
@@ -1185,7 +1194,10 @@
         "internal_links_added": 0,
         "interlinked": false,
         "word_count": 0,
-        "file_size": 0
+        "file_size": 0,
+        "html_created": true,
+        "html_path": "blog/instagram-imobiliarias-litoral-roteiro-conteudo-converte.html",
+        "created_at": "2026-08-11T11:34:14.006604Z"
       },
       {
         "title": "PriceLabs no Airbnb: como definir preço mínimo e máximo por temporada",
@@ -1226,7 +1238,10 @@
         "internal_links_added": 0,
         "interlinked": false,
         "word_count": 0,
-        "file_size": 0
+        "file_size": 0,
+        "html_created": true,
+        "html_path": "blog/pricelabs-airbnb-preco-minimo-maximo-temporada.html",
+        "created_at": "2026-08-11T11:34:14.006604Z"
       },
       {
         "title": "Imóvel para estrangeiro no litoral: como captar leads internacionais",
@@ -1267,7 +1282,10 @@
         "internal_links_added": 0,
         "interlinked": false,
         "word_count": 0,
-        "file_size": 0
+        "file_size": 0,
+        "html_created": true,
+        "html_path": "blog/imovel-litoral-estrangeiro-captar-leads-internacionais.html",
+        "created_at": "2026-08-11T11:34:14.006604Z"
       },
       {
         "title": "Conteúdo para Instagram de imobiliária: 15 ideias que geram consultas",
@@ -1308,7 +1326,10 @@
         "internal_links_added": 0,
         "interlinked": false,
         "word_count": 0,
-        "file_size": 0
+        "file_size": 0,
+        "html_created": true,
+        "html_path": "blog/conteudo-instagram-imobiliaria-15-ideias-geram-consultas.html",
+        "created_at": "2026-08-11T11:34:14.006604Z"
       },
       {
         "title": "PriceLabs para temporada: ajustando regras de estadia mínima no litoral",
@@ -1349,7 +1370,10 @@
         "internal_links_added": 0,
         "interlinked": false,
         "word_count": 0,
-        "file_size": 0
+        "file_size": 0,
+        "html_created": true,
+        "html_path": "blog/pricelabs-temporada-regras-estadia-minima-litoral.html",
+        "created_at": "2026-08-11T11:34:14.006604Z"
       },
       {
         "title": "Financiamento de imóvel na praia: documentação essencial para aprovar",
@@ -1388,7 +1412,10 @@
         "internal_links_added": 0,
         "interlinked": false,
         "word_count": 0,
-        "file_size": 0
+        "file_size": 0,
+        "html_created": true,
+        "html_path": "blog/financiamento-imovel-praia-documentacao-aprovar.html",
+        "created_at": "2026-08-11T11:34:14.006604Z"
       },
       {
         "title": "Captação de imóveis para estrangeiros: roteiro para corretores",
@@ -1429,10 +1456,15 @@
         "internal_links_added": 0,
         "interlinked": false,
         "word_count": 0,
-        "file_size": 0
+        "file_size": 0,
+        "html_created": true,
+        "html_path": "blog/captacao-imoveis-estrangeiros-roteiro-corretores.html",
+        "created_at": "2026-08-11T11:34:14.006604Z"
       }
     ],
-    "status": "RASCUNHO",
-    "created_at": "2026-08-11T10:55:00.000000Z"
+    "status": "CRIADO",
+    "created_at": "2026-08-11T11:34:14.006604Z",
+    "html_created": true,
+    "html_path": "blog/"
   }
 }
