@@ -10943,18 +10943,23 @@
         "has_h1": true,
         "internal_links_count": 6,
         "external_links_count": 3,
-        "recovery_status": "PENDENTE_VALIDACAO_PUBLICA",
+        "recovery_status": "RECUPERADO_VALIDADO",
         "local_words": 534,
         "public_words": 230,
         "recovery_local_words": 534,
         "recovery_public_words": 230,
-        "recovery_http_status": "200",
-        "recovery_validated_at": "2026-08-11T15:31:52.788190Z"
+        "recovery_http_status": 200,
+        "recovery_validated_at": "2026-08-11T15:44:11.289888Z",
+        "recovery_canonical": true,
+        "recovery_canonical_url": "https://praia.digital/blog/financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html",
+        "recovery_words": 534,
+        "recovery_commit": "168aa41",
+        "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31508465444"
       },
       {
         "title": "Compra de imóvel no litoral para estrangeiro: guia passo a passo",
         "h1": "Compra de imóvel no litoral para estrangeiro: guia passo a passo",
-        "slug": "compra-imovel-litoral-estrangeiro-guia-passo-passo.html",
+        "slug": "compra-imovel-litoral-estrangeiro-guia-passo-a-passo.html",
         "cluster": "Internacional",
         "intent": "informacional-transacional",
         "keyword": "compra de imóvel no litoral para estrangeiro",
@@ -10972,8 +10977,8 @@
           "financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html"
         ],
         "status": "PUBLICADO",
-        "publication_url": "https://praia.digital/blog/compra-imovel-litoral-estrangeiro-guia-passo-passo.html",
-        "canonical": "https://praia.digital/blog/compra-imovel-litoral-estrangeiro-guia-passo-passo.html",
+        "publication_url": "https://praia.digital/blog/compra-imovel-litoral-estrangeiro-guia-passo-a-passo.html",
+        "canonical": "https://praia.digital/blog/compra-imovel-litoral-estrangeiro-guia-passo-a-passo.html",
         "indexation_status": "AGUARDANDO_SUBMISSAO",
         "batch": "batch2",
         "publication_order": 3,
@@ -10992,11 +10997,13 @@
         "word_count": 210,
         "file_size": 5405,
         "html_created": true,
-        "html_path": "blog/compra-imovel-litoral-estrangeiro-guia-passo-passo.html",
+        "html_path": "blog/compra-imovel-litoral-estrangeiro-guia-passo-a-passo.html",
         "created_at": "2026-08-11T11:34:14.006604Z",
         "has_h1": true,
         "internal_links_count": 6,
-        "external_links_count": 3
+        "external_links_count": 3,
+        "url": "https://praia.digital/blog/compra-imovel-litoral-estrangeiro-guia-passo-a-passo.html",
+        "fixed_slug_at": "2026-08-11T15:46:21.711037Z"
       },
       {
         "title": "Instagram para imobiliárias do litoral: roteiro de conteúdo que converte",
@@ -11108,7 +11115,7 @@
         "cta": "Quer captar leads internacionais? Veja o curso de captação de imóveis.",
         "course_url": "https://academy.praia.digital/courses/captacao-imoveis-corretores",
         "internal_links": [
-          "compra-imovel-litoral-estrangeiro-guia-passo-passo.html",
+          "compra-imovel-litoral-estrangeiro-guia-passo-a-passo.html",
           "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html",
           "abordagem-proprietarios-whatsapp-litoral-2026.html"
         ],
@@ -11140,9 +11147,14 @@
         "external_links_count": 3,
         "recovery_local_words": 459,
         "recovery_public_words": 212,
-        "recovery_http_status": "200",
-        "recovery_validated_at": "2026-08-11T15:31:52.788190Z",
-        "recovery_status": "PENDENTE_VALIDACAO_PUBLICA"
+        "recovery_http_status": 200,
+        "recovery_validated_at": "2026-08-11T15:44:11.289888Z",
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_canonical": true,
+        "recovery_canonical_url": "https://praia.digital/blog/imovel-litoral-estrangeiro-captar-leads-internacionais.html",
+        "recovery_words": 459,
+        "recovery_commit": "168aa41",
+        "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31508465444"
       },
       {
         "title": "Conteúdo para Instagram de imobiliária: 15 ideias que geram consultas",
@@ -11284,9 +11296,14 @@
         "external_links_count": 3,
         "recovery_local_words": 405,
         "recovery_public_words": 179,
-        "recovery_http_status": "200",
-        "recovery_validated_at": "2026-08-11T15:31:52.788190Z",
-        "recovery_status": "PENDENTE_VALIDACAO_PUBLICA"
+        "recovery_http_status": 200,
+        "recovery_validated_at": "2026-08-11T15:44:11.289888Z",
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_canonical": true,
+        "recovery_canonical_url": "https://praia.digital/blog/financiamento-imovel-praia-documentacao-aprovar.html",
+        "recovery_words": 405,
+        "recovery_commit": "168aa41",
+        "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31508465444"
       },
       {
         "title": "Captação de imóveis para estrangeiros: roteiro para corretores",
@@ -11305,7 +11322,7 @@
         "course_url": "https://academy.praia.digital/courses/captacao-imoveis-corretores",
         "internal_links": [
           "imovel-litoral-estrangeiro-captar-leads-internacionais.html",
-          "compra-imovel-litoral-estrangeiro-guia-passo-passo.html",
+          "compra-imovel-litoral-estrangeiro-guia-passo-a-passo.html",
           "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html"
         ],
         "status": "PUBLICADO",
@@ -11334,14 +11351,19 @@
         "has_h1": true,
         "internal_links_count": 6,
         "external_links_count": 3,
-        "recovery_status": "PENDENTE_VALIDACAO_PUBLICA",
-        "recovery_validated_at": "2026-08-11T15:31:52.788190Z",
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_validated_at": "2026-08-11T15:44:11.289888Z",
         "local_words": 586,
         "public_words": 163,
         "deployment_note": "Local atualizado; público retornando cache antigo (max-age=600). Validar após deploy/refresh.",
         "recovery_local_words": 586,
         "recovery_public_words": 163,
-        "recovery_http_status": "200"
+        "recovery_http_status": 200,
+        "recovery_canonical": true,
+        "recovery_canonical_url": "https://praia.digital/blog/captacao-imoveis-estrangeiros-roteiro-corretores.html",
+        "recovery_words": 586,
+        "recovery_commit": "168aa41",
+        "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31508465444"
       }
     ],
     "status": "PUBLICADO",
@@ -11570,9 +11592,14 @@
         "external_links_count": 3,
         "recovery_local_words": 424,
         "recovery_public_words": 167,
-        "recovery_http_status": "200",
-        "recovery_validated_at": "2026-08-11T15:31:52.788190Z",
-        "recovery_status": "PENDENTE_VALIDACAO_PUBLICA"
+        "recovery_http_status": 200,
+        "recovery_validated_at": "2026-08-11T15:44:11.289888Z",
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_canonical": true,
+        "recovery_canonical_url": "https://praia.digital/blog/financiamento-social-imoveis-quando-vale-pena-corretores.html",
+        "recovery_words": 424,
+        "recovery_commit": "168aa41",
+        "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31508465444"
       },
       {
         "title": "Instagram Ads para imobiliárias: campanhas que geram leads no litoral",
@@ -11638,7 +11665,7 @@
         "cta": "Quer atender estrangeiros com segurança? Veja o curso de atendimento internacional.",
         "course_url": "https://academy.praia.digital/courses/atendimento-ao-cliente-para-corretores",
         "internal_links": [
-          "compra-imovel-litoral-estrangeiro-guia-passo-passo.html",
+          "compra-imovel-litoral-estrangeiro-guia-passo-a-passo.html",
           "imovel-litoral-estrangeiro-captar-leads-internacionais.html",
           "impostos-estrangeiros-brasil-guia-rapido-corretores.html"
         ],
@@ -11671,9 +11698,14 @@
         "external_links_count": 3,
         "recovery_local_words": 318,
         "recovery_public_words": 146,
-        "recovery_http_status": "200",
-        "recovery_validated_at": "2026-08-11T15:31:52.788190Z",
-        "recovery_status": "PENDENTE_VALIDACAO_PUBLICA"
+        "recovery_http_status": 200,
+        "recovery_validated_at": "2026-08-11T15:44:11.289888Z",
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_canonical": true,
+        "recovery_canonical_url": "https://praia.digital/blog/visto-residencia-comprar-imovel-brasil-guia-corretor.html",
+        "recovery_words": 318,
+        "recovery_commit": "168aa41",
+        "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31508465444"
       },
       {
         "title": "Site de imobiliária no litoral: estrutura que converte visitantes em leads",
@@ -11768,9 +11800,14 @@
         "external_links_count": 3,
         "recovery_local_words": 334,
         "recovery_public_words": 158,
-        "recovery_http_status": "200",
-        "recovery_validated_at": "2026-08-11T15:31:52.788190Z",
-        "recovery_status": "PENDENTE_VALIDACAO_PUBLICA"
+        "recovery_http_status": 200,
+        "recovery_validated_at": "2026-08-11T15:44:11.289888Z",
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_canonical": true,
+        "recovery_canonical_url": "https://praia.digital/blog/crm-para-corretores-primeiro-contato-fechamento.html",
+        "recovery_words": 334,
+        "recovery_commit": "168aa41",
+        "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31508465444"
       },
       {
         "title": "Leads do Mercado Livre e OLX: como converter em vendas reais",
@@ -11865,9 +11902,14 @@
         "external_links_count": 3,
         "recovery_local_words": 374,
         "recovery_public_words": 157,
-        "recovery_http_status": "200",
-        "recovery_validated_at": "2026-08-11T15:31:52.788190Z",
-        "recovery_status": "PENDENTE_VALIDACAO_PUBLICA"
+        "recovery_http_status": 200,
+        "recovery_validated_at": "2026-08-11T15:44:11.289888Z",
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_canonical": true,
+        "recovery_canonical_url": "https://praia.digital/blog/refinanciamento-imovel-praia-quando-vale-pena-2026.html",
+        "recovery_words": 374,
+        "recovery_commit": "168aa41",
+        "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31508465444"
       },
       {
         "title": "Impostos para estrangeiros no Brasil: guia rápido para corretores",
@@ -11885,7 +11927,7 @@
         "cta": "Quer atender estrangeiros com segurança? Veja o curso de atendimento internacional.",
         "course_url": "https://academy.praia.digital/courses/atendimento-ao-cliente-para-corretores",
         "internal_links": [
-          "compra-imovel-litoral-estrangeiro-guia-passo-passo.html",
+          "compra-imovel-litoral-estrangeiro-guia-passo-a-passo.html",
           "visto-residencia-comprar-imovel-brasil-guia-corretor.html",
           "imovel-litoral-estrangeiro-captar-leads-internacionais.html"
         ],
@@ -11918,9 +11960,14 @@
         "external_links_count": 3,
         "recovery_local_words": 327,
         "recovery_public_words": 165,
-        "recovery_http_status": "200",
-        "recovery_validated_at": "2026-08-11T15:31:52.788190Z",
-        "recovery_status": "PENDENTE_VALIDACAO_PUBLICA"
+        "recovery_http_status": 200,
+        "recovery_validated_at": "2026-08-11T15:44:11.289888Z",
+        "recovery_status": "RECUPERADO_VALIDADO",
+        "recovery_canonical": true,
+        "recovery_canonical_url": "https://praia.digital/blog/impostos-estrangeiros-brasil-guia-rapido-corretores.html",
+        "recovery_words": 327,
+        "recovery_commit": "168aa41",
+        "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31508465444"
       },
       {
         "title": "Reels de imóvel no litoral: 7 modelos que viralizam e geram leads",
