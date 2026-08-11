@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T17:06:48.130938Z",
+  "generated_at": "2026-08-11T17:08:24.831045Z",
   "status": "BATCH4_PREPARADO",
   "slug_groups": [
     {
@@ -12524,7 +12524,7 @@
         "cta": "Quer atender estrangeiros com segurança? Veja o curso de atendimento internacional.",
         "course_url": "https://academy.praia.digital/courses/atendimento-ao-cliente-para-corretores",
         "internal_links": [
-          "compra-imovel-litoral-estrangeiro-guia-passo-passo.html",
+          "compra-imovel-litoral-estrangeiro-guia-passo-a-passo.html",
           "visto-residencia-comprar-imovel-brasil-guia-corretor.html",
           "imovel-litoral-estrangeiro-captar-leads-internacionais.html"
         ],
@@ -12728,7 +12728,7 @@
         "internal_links": [
           "captacao-imoveis-estrangeiros-roteiro-corretores.html",
           "imovel-litoral-estrangeiro-captar-leads-internacionais.html",
-          "compra-imovel-litoral-estrangeiro-guia-passo-passo.html"
+          "compra-imovel-litoral-estrangeiro-guia-passo-a-passo.html"
         ],
         "status": "RASCUNHO",
         "publication_url": "https://praia.digital/blog/captacao-imoveis-estrangeiros-abordagem-proposta.html",
@@ -12753,8 +12753,9 @@
         "recovery_validated_at": ""
       }
     ],
-    "status": "RASCUNHO",
-    "created_at": "2026-08-11T12:00:00.000000Z"
+    "status": "PREPARADO",
+    "created_at": "2026-08-11T12:00:00.000000Z",
+    "prepared_at": "2026-08-11T17:08:24.831045Z"
   },
   "technical_audit": {
     "total_published": 30,
