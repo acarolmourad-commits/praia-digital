@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-08-10T22:00:00Z",
-  "status": "PUBLICACAO_CONCLUIDA",
+  "status": "BATCH2_PREPARADO",
   "slug_groups": [
     {
       "grupo": "3-erros-que-matam-vendas-de-temporada-no-litoral",
@@ -318,7 +318,11 @@
       "http_status": 200,
       "indexation_status": "AGUARDANDO_SUBMISSAO",
       "internal_links_added": 3,
-      "interlinked": true
+      "interlinked": true,
+      "http_ok": true,
+      "canonical_self": true,
+      "has_faq_schema": true,
+      "has_article_schema": true
     },
     {
       "title": "5 táticas infalíveis para captação imobiliária no litoral paulista",
@@ -352,7 +356,11 @@
       "http_status": 200,
       "indexation_status": "AGUARDANDO_SUBMISSAO",
       "internal_links_added": 2,
-      "interlinked": true
+      "interlinked": true,
+      "http_ok": true,
+      "canonical_self": true,
+      "has_faq_schema": true,
+      "has_article_schema": true
     },
     {
       "title": "Segmento de aluguel de temporada no litoral paulista 2026",
@@ -386,7 +394,11 @@
       "http_status": 200,
       "indexation_status": "AGUARDANDO_SUBMISSAO",
       "internal_links_added": 2,
-      "interlinked": true
+      "interlinked": true,
+      "http_ok": true,
+      "canonical_self": true,
+      "has_faq_schema": true,
+      "has_article_schema": true
     },
     {
       "title": "Como anunciar imóveis no Google para o litoral: Guia Prático 2026",
@@ -419,7 +431,11 @@
       "http_status": 200,
       "indexation_status": "AGUARDANDO_SUBMISSAO",
       "internal_links_added": 2,
-      "interlinked": true
+      "interlinked": true,
+      "http_ok": true,
+      "canonical_self": true,
+      "has_faq_schema": true,
+      "has_article_schema": true
     },
     {
       "title": "Automação de captação de imóveis no litoral em passos",
@@ -452,7 +468,11 @@
       "http_status": 200,
       "indexation_status": "AGUARDANDO_SUBMISSAO",
       "internal_links_added": 2,
-      "interlinked": true
+      "interlinked": true,
+      "http_ok": true,
+      "canonical_self": true,
+      "has_faq_schema": true,
+      "has_article_schema": true
     },
     {
       "title": "Checklist SEO local para corretores do litoral em 2026",
@@ -488,7 +508,11 @@
       "http_status": 200,
       "indexation_status": "AGUARDANDO_SUBMISSAO",
       "internal_links_added": 2,
-      "interlinked": true
+      "interlinked": true,
+      "http_ok": true,
+      "canonical_self": true,
+      "has_faq_schema": true,
+      "has_article_schema": true
     },
     {
       "title": "Assistente virtual para compradores: quando usar e quando evitar",
@@ -520,7 +544,11 @@
       "http_status": 200,
       "indexation_status": "AGUARDANDO_SUBMISSAO",
       "internal_links_added": 2,
-      "interlinked": true
+      "interlinked": true,
+      "http_ok": true,
+      "canonical_self": true,
+      "has_faq_schema": true,
+      "has_article_schema": true
     },
     {
       "title": "Abordagem a Proprietários por WhatsApp no Litoral",
@@ -556,7 +584,11 @@
       "http_status": 200,
       "indexation_status": "AGUARDANDO_SUBMISSAO",
       "internal_links_added": 2,
-      "interlinked": true
+      "interlinked": true,
+      "http_ok": true,
+      "canonical_self": true,
+      "has_faq_schema": true,
+      "has_article_schema": true
     },
     {
       "title": "Acelerar Fechamento de Vendas no Litoral: Checklists e Scripts 2026",
@@ -590,7 +622,11 @@
       "http_status": 200,
       "indexation_status": "AGUARDANDO_SUBMISSAO",
       "internal_links_added": 2,
-      "interlinked": true
+      "interlinked": true,
+      "http_ok": true,
+      "canonical_self": true,
+      "has_faq_schema": true,
+      "has_article_schema": true
     },
     {
       "title": "Análise de Mercado Imobiliário no Litoral: Guia Prático para Investidor",
@@ -632,7 +668,11 @@
       "http_status": 200,
       "indexation_status": "AGUARDANDO_SUBMISSAO",
       "internal_links_added": 2,
-      "interlinked": true
+      "interlinked": true,
+      "http_ok": true,
+      "canonical_self": true,
+      "has_faq_schema": true,
+      "has_article_schema": true
     }
   ],
   "publication_plan": [
@@ -840,6 +880,130 @@
   "indexation": {
     "google_search_console": "AGUARDANDO_AUTORIZACAO",
     "bing_webmaster": "AGUARDANDO_AUTORIZACAO",
+    "http_validation": [
+      {
+        "slug": "alugar-ou-comprar-imovel-litoral-paulista-2026.html",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "slug": "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "slug": "Segmento-aluguel-temporada-litoral-2026.html",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "slug": "anunciar-imoveis-google-litoral-paulista-2026.html",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "slug": "automacao-captacao-imoveis-litoral-passos.html",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "slug": "checklist-seo-local-para-corretores-do-litoral-em-2026-lote-2026-07-11-12.html",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "slug": "assistente-virtual-compradores-litoral-2026.html",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "slug": "abordagem-proprietarios-whatsapp-litoral-2026.html",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "slug": "acelerar-fechamento-vendas-litoral-paulista-2026.html",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "slug": "analise-mercado-imobiliario-litoral-2026.html",
+        "status": 200,
+        "ok": true
+      }
+    ],
+    "content_validation": [
+      {
+        "slug": "alugar-ou-comprar-imovel-litoral-paulista-2026.html",
+        "canonical_self": true,
+        "has_h1": true,
+        "has_faq": true,
+        "has_article_schema": true
+      },
+      {
+        "slug": "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html",
+        "canonical_self": true,
+        "has_h1": true,
+        "has_faq": true,
+        "has_article_schema": true
+      },
+      {
+        "slug": "Segmento-aluguel-temporada-litoral-2026.html",
+        "canonical_self": true,
+        "has_h1": true,
+        "has_faq": true,
+        "has_article_schema": true
+      },
+      {
+        "slug": "anunciar-imoveis-google-litoral-paulista-2026.html",
+        "canonical_self": true,
+        "has_h1": true,
+        "has_faq": true,
+        "has_article_schema": true
+      },
+      {
+        "slug": "automacao-captacao-imoveis-litoral-passos.html",
+        "canonical_self": true,
+        "has_h1": true,
+        "has_faq": true,
+        "has_article_schema": true
+      },
+      {
+        "slug": "checklist-seo-local-para-corretores-do-litoral-em-2026-lote-2026-07-11-12.html",
+        "canonical_self": true,
+        "has_h1": true,
+        "has_faq": true,
+        "has_article_schema": true
+      },
+      {
+        "slug": "assistente-virtual-compradores-litoral-2026.html",
+        "canonical_self": true,
+        "has_h1": true,
+        "has_faq": true,
+        "has_article_schema": true
+      },
+      {
+        "slug": "abordagem-proprietarios-whatsapp-litoral-2026.html",
+        "canonical_self": true,
+        "has_h1": true,
+        "has_faq": true,
+        "has_article_schema": true
+      },
+      {
+        "slug": "acelerar-fechamento-vendas-litoral-paulista-2026.html",
+        "canonical_self": true,
+        "has_h1": true,
+        "has_faq": true,
+        "has_article_schema": true
+      },
+      {
+        "slug": "analise-mercado-imobiliario-litoral-2026.html",
+        "canonical_self": true,
+        "has_h1": true,
+        "has_faq": true,
+        "has_article_schema": true
+      }
+    ],
     "submitted_urls": [
       "https://praia.digital/blog/alugar-ou-comprar-imovel-litoral-paulista-2026.html",
       "https://praia.digital/blog/5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html",
@@ -860,5 +1024,415 @@
     "articles_interlinked": 10,
     "total_links_added": 10,
     "method": "manual"
+  },
+  "batch2": {
+    "articles": [
+      {
+        "title": "PriceLabs para imobiliárias do litoral: como aumentar a receita de temporada",
+        "h1": "PriceLabs para imobiliárias do litoral: como aumentar a receita de temporada",
+        "slug": "pricelabs-imobiliarias-litoral-aumentar-receita-temporada.html",
+        "cluster": "PriceLabs",
+        "intent": "informacional-comercial",
+        "keyword": "PriceLabs para imobiliárias do litoral",
+        "meta_title": "PriceLabs para imobiliárias do litoral: guia de precificação e receita",
+        "meta_description": "Veja como o PriceLabs ajuda imobiliárias do litoral paulista a definir preços dinâmicos e aumentar a receita na temporada.",
+        "course_main": "priceplabs",
+        "course_secondary": [],
+        "cta": "Quer aplicar precificação dinâmica no litoral? Veja o curso de PriceLabs.",
+        "course_url": "https://academy.praia.digital/courses/priceplabs",
+        "internal_links": [
+          "Segmento-aluguel-temporada-litoral-2026.html",
+          "airbnb-vs-booking-litoral-sp.html",
+          "rentabilidade-imoveis-praia-2026.html"
+        ],
+        "status": "RASCUNHO",
+        "publication_url": "https://praia.digital/blog/pricelabs-imobiliarias-litoral-aumentar-receita-temporada.html",
+        "canonical": "https://praia.digital/blog/pricelabs-imobiliarias-litoral-aumentar-receita-temporada.html",
+        "indexation_status": "AGUARDANDO_SUBMISSAO",
+        "batch": "batch2",
+        "publication_order": null,
+        "planned_date": null,
+        "reviewed_at": null,
+        "published": false,
+        "published_date": null,
+        "published_at": null,
+        "http_status": null,
+        "http_ok": false,
+        "canonical_self": false,
+        "has_faq_schema": false,
+        "has_article_schema": false,
+        "internal_links_added": 0,
+        "interlinked": false,
+        "word_count": 0,
+        "file_size": 0
+      },
+      {
+        "title": "Financiamento para imóveis no litoral: como aprovar mais rápido em 2026",
+        "h1": "Financiamento para imóveis no litoral: como aprovar mais rápido em 2026",
+        "slug": "financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html",
+        "cluster": "Financeiro",
+        "intent": "transacional-informacional",
+        "keyword": "financiamento para imóveis no litoral",
+        "meta_title": "Financiamento para imóveis no litoral: dicas para aprovar mais rápido em 2026",
+        "meta_description": "Entenda documentos, prazos e bancos que financiam imóveis no litoral paulista e aumente a aprovação dos clientes.",
+        "course_main": "financiamento-imobiliario",
+        "course_secondary": [],
+        "cta": "Aprenda a acelerar aprovações de financiamento no curso oficial.",
+        "course_url": "https://academy.praia.digital/courses/financiamento-imobiliario",
+        "internal_links": [
+          "alugar-ou-comprar-imovel-litoral-paulista-2026.html",
+          "analise-mercado-imobiliario-litoral-2026.html",
+          "rentabilidade-imoveis-praia-2026.html"
+        ],
+        "status": "RASCUNHO",
+        "publication_url": "https://praia.digital/blog/financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html",
+        "canonical": "https://praia.digital/blog/financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html",
+        "indexation_status": "AGUARDANDO_SUBMISSAO",
+        "batch": "batch2",
+        "publication_order": null,
+        "planned_date": null,
+        "reviewed_at": null,
+        "published": false,
+        "published_date": null,
+        "published_at": null,
+        "http_status": null,
+        "http_ok": false,
+        "canonical_self": false,
+        "has_faq_schema": false,
+        "has_article_schema": false,
+        "internal_links_added": 0,
+        "interlinked": false,
+        "word_count": 0,
+        "file_size": 0
+      },
+      {
+        "title": "Compra de imóvel no litoral para estrangeiro: guia passo a passo",
+        "h1": "Compra de imóvel no litoral para estrangeiro: guia passo a passo",
+        "slug": "compra-imovel-litoral-estrangeiro-guia-passo-passo.html",
+        "cluster": "Internacional",
+        "intent": "informacional-transacional",
+        "keyword": "compra de imóvel no litoral para estrangeiro",
+        "meta_title": "Compra de imóvel no litoral para estrangeiro: requisitos, passos e custos",
+        "meta_description": "Guia para corretores e imobiliárias atenderem estrangeiros que querem comprar imóvel no litoral paulista.",
+        "course_main": "atendimento-ao-cliente-para-corretores",
+        "course_secondary": [
+          "investindo-imoveis-litoral"
+        ],
+        "cta": "Quer atender estrangeiros com segurança? Veja o curso de atendimento internacional.",
+        "course_url": "https://academy.praia.digital/courses/atendimento-ao-cliente-para-corretores",
+        "internal_links": [
+          "alugar-ou-comprar-imovel-litoral-paulista-2026.html",
+          "analise-mercado-imobiliario-litoral-2026.html",
+          "financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html"
+        ],
+        "status": "RASCUNHO",
+        "publication_url": "https://praia.digital/blog/compra-imovel-litoral-estrangeiro-guia-passo-passo.html",
+        "canonical": "https://praia.digital/blog/compra-imovel-litoral-estrangeiro-guia-passo-passo.html",
+        "indexation_status": "AGUARDANDO_SUBMISSAO",
+        "batch": "batch2",
+        "publication_order": null,
+        "planned_date": null,
+        "reviewed_at": null,
+        "published": false,
+        "published_date": null,
+        "published_at": null,
+        "http_status": null,
+        "http_ok": false,
+        "canonical_self": false,
+        "has_faq_schema": false,
+        "has_article_schema": false,
+        "internal_links_added": 0,
+        "interlinked": false,
+        "word_count": 0,
+        "file_size": 0
+      },
+      {
+        "title": "Instagram para imobiliárias do litoral: roteiro de conteúdo que converte",
+        "h1": "Instagram para imobiliárias do litoral: roteiro de conteúdo que converte",
+        "slug": "instagram-imobiliarias-litoral-roteiro-conteudo-converte.html",
+        "cluster": "Instagram",
+        "intent": "informacional-comercial",
+        "keyword": "Instagram para imobiliárias do litoral",
+        "meta_title": "Instagram para imobiliárias do litoral: roteiro de conteúdo que converte em leads",
+        "meta_description": "Roteiro prático de posts, Reels e stories para imobiliárias do litoral paulista gerarem leads pelo Instagram.",
+        "course_main": "instagram-para-corretores",
+        "course_secondary": [
+          "marketing-imobiliario"
+        ],
+        "cta": "Quer transformar seguidores em clientes? Comece pelo curso de Instagram para corretores.",
+        "course_url": "https://academy.praia.digital/courses/instagram-para-corretores",
+        "internal_links": [
+          "anunciar-imoveis-google-litoral-paulista-2026.html",
+          "checklist-seo-local-para-corretores-do-litoral-em-2026-lote-2026-07-11-12.html",
+          "automacao-captacao-imoveis-litoral-passos.html"
+        ],
+        "status": "RASCUNHO",
+        "publication_url": "https://praia.digital/blog/instagram-imobiliarias-litoral-roteiro-conteudo-converte.html",
+        "canonical": "https://praia.digital/blog/instagram-imobiliarias-litoral-roteiro-conteudo-converte.html",
+        "indexation_status": "AGUARDANDO_SUBMISSAO",
+        "batch": "batch2",
+        "publication_order": null,
+        "planned_date": null,
+        "reviewed_at": null,
+        "published": false,
+        "published_date": null,
+        "published_at": null,
+        "http_status": null,
+        "http_ok": false,
+        "canonical_self": false,
+        "has_faq_schema": false,
+        "has_article_schema": false,
+        "internal_links_added": 0,
+        "interlinked": false,
+        "word_count": 0,
+        "file_size": 0
+      },
+      {
+        "title": "PriceLabs no Airbnb: como definir preço mínimo e máximo por temporada",
+        "h1": "PriceLabs no Airbnb: como definir preço mínimo e máximo por temporada",
+        "slug": "pricelabs-airbnb-preco-minimo-maximo-temporada.html",
+        "cluster": "PriceLabs",
+        "intent": "informacional",
+        "keyword": "PriceLabs no Airbnb",
+        "meta_title": "PriceLabs no Airbnb: como definir preço mínimo e máximo por temporada",
+        "meta_description": "Aprenda a configurar preço mínimo e máximo no PriceLabs para imóveis de temporada no litoral paulista.",
+        "course_main": "priceplabs",
+        "course_secondary": [
+          "imoveis-para-airbnb"
+        ],
+        "cta": "Domine o PriceLabs na prática com o curso oficial.",
+        "course_url": "https://academy.praia.digital/courses/priceplabs",
+        "internal_links": [
+          "Segmento-aluguel-temporada-litoral-2026.html",
+          "airbnb-vs-booking-litoral-sp.html",
+          "pricelabs-imobiliarias-litoral-aumentar-receita-temporada.html"
+        ],
+        "status": "RASCUNHO",
+        "publication_url": "https://praia.digital/blog/pricelabs-airbnb-preco-minimo-maximo-temporada.html",
+        "canonical": "https://praia.digital/blog/pricelabs-airbnb-preco-minimo-maximo-temporada.html",
+        "indexation_status": "AGUARDANDO_SUBMISSAO",
+        "batch": "batch2",
+        "publication_order": null,
+        "planned_date": null,
+        "reviewed_at": null,
+        "published": false,
+        "published_date": null,
+        "published_at": null,
+        "http_status": null,
+        "http_ok": false,
+        "canonical_self": false,
+        "has_faq_schema": false,
+        "has_article_schema": false,
+        "internal_links_added": 0,
+        "interlinked": false,
+        "word_count": 0,
+        "file_size": 0
+      },
+      {
+        "title": "Imóvel para estrangeiro no litoral: como captar leads internacionais",
+        "h1": "Imóvel para estrangeiro no litoral: como captar leads internacionais",
+        "slug": "imovel-litoral-estrangeiro-captar-leads-internacionais.html",
+        "cluster": "Internacional",
+        "intent": "informacional-comercial",
+        "keyword": "imóvel para estrangeiro no litoral",
+        "meta_title": "Imóvel para estrangeiro no litoral: como captar leads internacionais",
+        "meta_description": "Estratégias para corretores e imobiliárias captarem leads internacionais interessados em imóveis no litoral paulista.",
+        "course_main": "captacao-imoveis-corretores",
+        "course_secondary": [
+          "atendimento-ao-cliente-para-corretores"
+        ],
+        "cta": "Quer captar leads internacionais? Veja o curso de captação de imóveis.",
+        "course_url": "https://academy.praia.digital/courses/captacao-imoveis-corretores",
+        "internal_links": [
+          "compra-imovel-litoral-estrangeiro-guia-passo-passo.html",
+          "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html",
+          "abordagem-proprietarios-whatsapp-litoral-2026.html"
+        ],
+        "status": "RASCUNHO",
+        "publication_url": "https://praia.digital/blog/imovel-litoral-estrangeiro-captar-leads-internacionais.html",
+        "canonical": "https://praia.digital/blog/imovel-litoral-estrangeiro-captar-leads-internacionais.html",
+        "indexation_status": "AGUARDANDO_SUBMISSAO",
+        "batch": "batch2",
+        "publication_order": null,
+        "planned_date": null,
+        "reviewed_at": null,
+        "published": false,
+        "published_date": null,
+        "published_at": null,
+        "http_status": null,
+        "http_ok": false,
+        "canonical_self": false,
+        "has_faq_schema": false,
+        "has_article_schema": false,
+        "internal_links_added": 0,
+        "interlinked": false,
+        "word_count": 0,
+        "file_size": 0
+      },
+      {
+        "title": "Conteúdo para Instagram de imobiliária: 15 ideias que geram consultas",
+        "h1": "Conteúdo para Instagram de imobiliária: 15 ideias que geram consultas",
+        "slug": "conteudo-instagram-imobiliaria-15-ideias-geram-consultas.html",
+        "cluster": "Instagram",
+        "intent": "informacional-comercial",
+        "keyword": "conteúdo para Instagram de imobiliária",
+        "meta_title": "Conteúdo para Instagram de imobiliária: 15 ideias que geram consultas no litoral",
+        "meta_description": "Ideias práticas de conteúdo para Instagram de imobiliária no litoral paulista, com foco em geração de consultas e leads.",
+        "course_main": "instagram-para-corretores",
+        "course_secondary": [
+          "marketing-imobiliario"
+        ],
+        "cta": "Aprenda a criar conteúdo que converte no Instagram para imobiliárias.",
+        "course_url": "https://academy.praia.digital/courses/instagram-para-corretores",
+        "internal_links": [
+          "instagram-imobiliarias-litoral-roteiro-conteudo-converte.html",
+          "anunciar-imoveis-google-litoral-paulista-2026.html",
+          "checklist-seo-local-para-corretores-do-litoral-em-2026-lote-2026-07-11-12.html"
+        ],
+        "status": "RASCUNHO",
+        "publication_url": "https://praia.digital/blog/conteudo-instagram-imobiliaria-15-ideias-geram-consultas.html",
+        "canonical": "https://praia.digital/blog/conteudo-instagram-imobiliaria-15-ideias-geram-consultas.html",
+        "indexation_status": "AGUARDANDO_SUBMISSAO",
+        "batch": "batch2",
+        "publication_order": null,
+        "planned_date": null,
+        "reviewed_at": null,
+        "published": false,
+        "published_date": null,
+        "published_at": null,
+        "http_status": null,
+        "http_ok": false,
+        "canonical_self": false,
+        "has_faq_schema": false,
+        "has_article_schema": false,
+        "internal_links_added": 0,
+        "interlinked": false,
+        "word_count": 0,
+        "file_size": 0
+      },
+      {
+        "title": "PriceLabs para temporada: ajustando regras de estadia mínima no litoral",
+        "h1": "PriceLabs para temporada: ajustando regras de estadia mínima no litoral",
+        "slug": "pricelabs-temporada-regras-estadia-minima-litoral.html",
+        "cluster": "PriceLabs",
+        "intent": "informacional",
+        "keyword": "PriceLabs para temporada",
+        "meta_title": "PriceLabs para temporada: ajustando regras de estadia mínima no litoral",
+        "meta_description": "Como usar o PriceLabs para ajustar estadia mínima e aumentar a rentabilidade de temporada no litoral paulista.",
+        "course_main": "priceplabs",
+        "course_secondary": [
+          "gestao-profissional-locacao"
+        ],
+        "cta": "Veja como montar regras de temporada no curso de PriceLabs.",
+        "course_url": "https://academy.praia.digital/courses/priceplabs",
+        "internal_links": [
+          "pricelabs-imobiliarias-litoral-aumentar-receita-temporada.html",
+          "pricelabs-airbnb-preco-minimo-maximo-temporada.html",
+          "Segmento-aluguel-temporada-litoral-2026.html"
+        ],
+        "status": "RASCUNHO",
+        "publication_url": "https://praia.digital/blog/pricelabs-temporada-regras-estadia-minima-litoral.html",
+        "canonical": "https://praia.digital/blog/pricelabs-temporada-regras-estadia-minima-litoral.html",
+        "indexation_status": "AGUARDANDO_SUBMISSAO",
+        "batch": "batch2",
+        "publication_order": null,
+        "planned_date": null,
+        "reviewed_at": null,
+        "published": false,
+        "published_date": null,
+        "published_at": null,
+        "http_status": null,
+        "http_ok": false,
+        "canonical_self": false,
+        "has_faq_schema": false,
+        "has_article_schema": false,
+        "internal_links_added": 0,
+        "interlinked": false,
+        "word_count": 0,
+        "file_size": 0
+      },
+      {
+        "title": "Financiamento de imóvel na praia: documentação essencial para aprovar",
+        "h1": "Financiamento de imóvel na praia: documentação essencial para aprovar",
+        "slug": "financiamento-imovel-praia-documentacao-aprovar.html",
+        "cluster": "Financeiro",
+        "intent": "transacional-informacional",
+        "keyword": "financiamento de imóvel na praia",
+        "meta_title": "Financiamento de imóvel na praia: documentação essencial para aprovar",
+        "meta_description": "Lista de documentos, prazos e cuidados para financiamento de imóvel na praia no litoral paulista.",
+        "course_main": "financiamento-imobiliario",
+        "course_secondary": [],
+        "cta": "Prepare seus clientes com o curso de financiamento imobiliário.",
+        "course_url": "https://academy.praia.digital/courses/financiamento-imobiliario",
+        "internal_links": [
+          "financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html",
+          "financiamento-imoveis-praia-bancos-aprovam-2026.html",
+          "analise-mercado-imobiliario-litoral-2026.html"
+        ],
+        "status": "RASCUNHO",
+        "publication_url": "https://praia.digital/blog/financiamento-imovel-praia-documentacao-aprovar.html",
+        "canonical": "https://praia.digital/blog/financiamento-imovel-praia-documentacao-aprovar.html",
+        "indexation_status": "AGUARDANDO_SUBMISSAO",
+        "batch": "batch2",
+        "publication_order": null,
+        "planned_date": null,
+        "reviewed_at": null,
+        "published": false,
+        "published_date": null,
+        "published_at": null,
+        "http_status": null,
+        "http_ok": false,
+        "canonical_self": false,
+        "has_faq_schema": false,
+        "has_article_schema": false,
+        "internal_links_added": 0,
+        "interlinked": false,
+        "word_count": 0,
+        "file_size": 0
+      },
+      {
+        "title": "Captação de imóveis para estrangeiros: roteiro para corretores",
+        "h1": "Captação de imóveis para estrangeiros: roteiro para corretores",
+        "slug": "captacao-imoveis-estrangeiros-roteiro-corretores.html",
+        "cluster": "Internacional",
+        "intent": "informacional-comercial",
+        "keyword": "captação de imóveis para estrangeiros",
+        "meta_title": "Captação de imóveis para estrangeiros: roteiro para corretores no litoral",
+        "meta_description": "Roteiro de captação de imóveis para estrangeiros no litoral paulista, com abordagem, documentação e follow-up.",
+        "course_main": "captacao-imoveis-corretores",
+        "course_secondary": [
+          "atendimento-ao-cliente-para-corretores"
+        ],
+        "cta": "Aprenda a captar imóveis com foco em público internacional no curso de captação.",
+        "course_url": "https://academy.praia.digital/courses/captacao-imoveis-corretores",
+        "internal_links": [
+          "imovel-litoral-estrangeiro-captar-leads-internacionais.html",
+          "compra-imovel-litoral-estrangeiro-guia-passo-passo.html",
+          "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html"
+        ],
+        "status": "RASCUNHO",
+        "publication_url": "https://praia.digital/blog/captacao-imoveis-estrangeiros-roteiro-corretores.html",
+        "canonical": "https://praia.digital/blog/captacao-imoveis-estrangeiros-roteiro-corretores.html",
+        "indexation_status": "AGUARDANDO_SUBMISSAO",
+        "batch": "batch2",
+        "publication_order": null,
+        "planned_date": null,
+        "reviewed_at": null,
+        "published": false,
+        "published_date": null,
+        "published_at": null,
+        "http_status": null,
+        "http_ok": false,
+        "canonical_self": false,
+        "has_faq_schema": false,
+        "has_article_schema": false,
+        "internal_links_added": 0,
+        "interlinked": false,
+        "word_count": 0,
+        "file_size": 0
+      }
+    ],
+    "status": "RASCUNHO",
+    "created_at": "2026-08-11T10:55:00.000000Z"
   }
 }
