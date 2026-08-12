@@ -1825,6 +1825,36 @@
       "published_at": "2026-08-12T15:31:13.741086",
       "http_status": "200",
       "validated_at": "2026-08-12T15:31:13.741086"
+    },
+    {
+      "slug": "home-staging-imoveis-praia-vender-mais-rapido-2026.html",
+      "title": "Home staging para imóveis de praia: venda ou alugue mais rápido — guia prático para corretores e proprietários",
+      "keyword_primary": "home staging imóveis praia",
+      "keywords_secondary": [
+        "home staging litoral",
+        "preparar imóvel praia para venda",
+        "aumentar valor do imóvel de praia"
+      ],
+      "intent": "comercial",
+      "audience": "corretores e proprietários no litoral paulista",
+      "region": "litoral paulista",
+      "content_type": "guia",
+      "commercial_potential": "alto",
+      "related_articles": [
+        "gestao-temporada-checkin-checkout-sem-dor-2026.html",
+        "airbnb-vs-booking-litoral-sp.html",
+        "rentabilidade-imoveis-praia-roi-cidade-litoral-2026.html"
+      ],
+      "internal_links_planned": [
+        "/blog/gestao-temporada-checkin-checkout-sem-dor-2026.html",
+        "/blog/airbnb-vs-booking-litoral-sp.html",
+        "/blog/rentabilidade-imoveis-praia-roi-cidade-litoral-2026.html"
+      ],
+      "priority": 1,
+      "status": "PUBLISHED",
+      "published": true,
+      "http_status": "200",
+      "validated_at": "2026-08-12T15:41:49.586948"
     }
   ],
   "publication_plan": [
