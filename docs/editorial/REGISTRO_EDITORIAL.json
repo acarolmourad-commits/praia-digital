@@ -553,7 +553,7 @@
       "faq_count": 1,
       "internal_links": [],
       "course_link": "",
-      "status": "RECUPERADO_VALIDADO",
+      "status": "PUBLISHED",
       "h2": [
         "O que mudou no mercado",
         "Checklist essencial",
@@ -567,13 +567,13 @@
       "word_count": 111,
       "file_size": 11779,
       "reviewed_at": "2026-08-11T10:45:17.006692Z",
-      "published": false,
+      "published": true,
       "published_date": "2026-08-17",
       "publication_url": "https://praia.digital/blog/checklist-seo-local-para-corretores-do-litoral-em-2026-lote-2026-07-11-12.html",
       "publication_order": 6,
       "planned_date": "2026-08-17",
       "published_at": "2026-08-11T10:50:54.740937Z",
-      "http_status": 200,
+      "http_status": "200",
       "indexation_status": "AGUARDANDO_SUBMISSAO",
       "internal_links_added": 2,
       "interlinked": true,
@@ -593,7 +593,8 @@
       "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31511957982",
       "monetization_potential": "AdSense",
       "updated_at": "2026-08-12T02:35:21Z",
-      "updated_by": "auto_audit_2026-08-11"
+      "updated_by": "auto_audit_2026-08-11",
+      "in_sitemap": true
     },
     {
       "title": "Assistente virtual para compradores: quando usar e quando evitar",
