@@ -14,18 +14,22 @@ Script:
 Destino:
 - backups/metricas/<YYYYMMDD_HHMMSS>/
 
-Execução:
+Execução manual:
 - python scripts/backup_metrics.py
+
+Execução pelo cronjob:
+- job_id: 4439d56fcbcb
+- workdir: C:/Users/Carolina/praia-digital/litoral-prime-imoveis
+- comando: python scripts/backup_metrics.py
 
 Validação:
 - O script cria manifest.json com sha256 de cada arquivo copiado.
 - Saída esperada: "Backup criado: ...", "Arquivos: ...", "Tamanho: ... bytes", "Manifest: ...".
 
-Restauração de teste:
-1. Copie o snapshot desejado para uma pasta temporária fora do projeto.
-2. Valide os hashes no manifest.json.
-3. Confira contagem de linhas/CSV e conteúdo do chat-log/relatório.
-4. Nunca sobrescreva a pasta original do projeto durante o teste.
+Restauração de teste validada:
+- 34 arquivos copiados para diretório temporário.
+- Todos os hashes sha256 conferem com o manifest.
+- Produção não foi alterada.
 
 Retenção:
 - Sem limpeza automática.
