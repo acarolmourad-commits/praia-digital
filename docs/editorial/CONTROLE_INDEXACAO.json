@@ -1277,5 +1277,14 @@
     "Monitorar métricas"
   ],
   "validated_at": "2026-08-12T02:35:11Z",
-  "validated_by": "auto_audit_2026-08-11"
+  "validated_by": "auto_audit_2026-08-11",
+  "artigos": [
+    {
+      "slug": "documentacao-compra-imovel-litoral-guia-2026.html",
+      "status": "BLOQUEADO_DEPLOY",
+      "http_status": "404",
+      "motivo": "Arquivo tracked no repositório e commitado, mas origem pública não reflete este arquivo; repetir deploy não altera HTTP. Diagnóstico pendente: binding do domínio para este repositório/CDN."
+    }
+  ],
+  "atualizado_em": "2026-08-12T12:04:24.604549"
 }
