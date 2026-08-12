@@ -1749,6 +1749,21 @@
       "in_sitemap": true,
       "canonical_self": true,
       "word_count": 700
+    },
+    {
+      "slug": "cases-de-sucesso-imobiliarias-litoral-paulista-2026.html",
+      "title": "Cases de sucesso: imobiliárias que cresceram no litoral paulista em 2026",
+      "h1": "Cases de sucesso: imobiliárias que cresceram no litoral paulista em 2026 — guia prático",
+      "status": "PUBLISHED",
+      "published": true,
+      "published_at": "2026-08-12T11:11:32Z",
+      "http_status": "200",
+      "in_sitemap": true,
+      "canonical_self": true,
+      "word_count": 1600,
+      "internal_links": 3,
+      "has_faq_schema": true,
+      "has_article_schema": true
     }
   ],
   "publication_plan": [
