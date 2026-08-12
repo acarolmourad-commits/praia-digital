@@ -1,8 +1,8 @@
 {
   "version": "2026-08-12",
-  "status": "PRONTO_PARA_CRIAR_CONTA_E_VERIFICAR_PROPRIEDADE",
+  "status": "VERIFICACAO_ADS_TXT_CRIADA_PUBLICADA",
   "domain": "praia.digital",
-  "adsense_ready": true,
+  "adsense_ready": false,
   "adsense_approved": false,
   "adsense_code_present": false,
   "required_pages": {
@@ -38,7 +38,14 @@
     "google_adsense_code_present": false,
     "google_analytics_present": false,
     "site_verification_meta_present": false,
-    "notes": "Nenhum código AdSense/GA/verificação Google encontrado no HTML principal. Implementação deve ser feita APENAS após criação da conta e verificação de propriedade."
+    "ads_txt": {
+      "url": "https://praia.digital/ads.txt",
+      "status": "PUBLISHED",
+      "http_status": "200",
+      "content": "google.com, pub-9562601722232986, DIRECT, f08c47fec0942fa0",
+      "notes": "Arquivo ads.txt criado e publicado em 2026-08-12"
+    },
+    "notes": "Nenhum código AdSense/GA/verificação Google encontrado no HTML principal. Implementação de código AdSense deve ser feita APENAS após aprovação da verificação de propriedade."
   },
   "content_requirements": {
     "min_words_per_article": 300,
@@ -103,11 +110,11 @@
     "Redes Sociais": "AdSense"
   },
   "next_steps": [
-    "CRIAR conta Google AdSense para domínio praia.digital",
-    "VERIFICAR propriedade via AdSense ou Search Console",
-    "IMPLEMENTAR código APENAS após verificação aprovada",
+    "AGUARDAR verificação da propriedade praia.digital pelo Google AdSense",
+    "RECEBER código/snippet de verificação/AdSense exato fornecido pelo Google",
+    "IMPLEMENTAR código APENAS após confirmação manual do snippet correto",
     "VALIDAR presença do código em produção",
-    "SUBMETER para aprovação"
+    "SUBMETER para aprovação mediante autorização explícita"
   ],
   "domain_verified": true,
   "articles_count": 58,
@@ -116,6 +123,6 @@
     "privacy_policy": "https://praia.digital/politica-privacidade.html",
     "terms_of_service": "https://praia.digital/termos-uso.html"
   },
-  "notes": "Fase 2 autorizada. Aguardando criação de conta AdSense e verificação de propriedade. Implementação de código será feita somente após aprovação da verificação.",
+  "notes": "Fase 2 em andamento: ads.txt criado e publicado. Próxima etapa depende de verificação oficial do Google AdSense e fornecimento do snippet exato para implementação.",
   "total_published_articles": 58
 }
