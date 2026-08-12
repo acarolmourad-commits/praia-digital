@@ -1,6 +1,6 @@
 {
   "version": "2026-08-12",
-  "status": "VERIFICACAO_ADS_TXT_CRIADA_PUBLICADA",
+  "status": "PRONTO_PARA_IMPLEMENTAR_CODIGO_ADSENSE",
   "domain": "praia.digital",
   "adsense_ready": false,
   "adsense_approved": false,
@@ -52,7 +52,7 @@
     "unique_content_required": true,
     "no_duplicate_content": true,
     "original_content_only": true,
-    "current_total_published_articles": 58,
+    "current_total_published_articles": 62,
     "status": "ATENDE_REQUISITO_MINIMO",
     "prohibited": [
       "conteúdo duplicado",
@@ -124,5 +124,5 @@
     "terms_of_service": "https://praia.digital/termos-uso.html"
   },
   "notes": "Fase 2 em andamento: ads.txt criado e publicado. Próxima etapa depende de verificação oficial do Google AdSense e fornecimento do snippet exato para implementação.",
-  "total_published_articles": 58
+  "total_published_articles": 62
 }
