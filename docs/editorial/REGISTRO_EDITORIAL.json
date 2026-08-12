@@ -349,7 +349,7 @@
       "faq_count": 0,
       "internal_links": [],
       "course_link": "",
-      "status": "RECUPERADO_VALIDADO",
+      "status": "PUBLISHED",
       "h2": [
         "O que mudou no mercado",
         "Checklist essencial",
@@ -361,13 +361,13 @@
       "word_count": 116,
       "file_size": 8243,
       "reviewed_at": "2026-08-11T10:45:17.001690Z",
-      "published": false,
+      "published": true,
       "published_date": "2026-08-13",
       "publication_url": "https://praia.digital/blog/5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html",
       "publication_order": 2,
       "planned_date": "2026-08-13",
       "published_at": "2026-08-11T10:50:54.740937Z",
-      "http_status": 200,
+      "http_status": "200",
       "indexation_status": "AGUARDANDO_SUBMISSAO",
       "internal_links_added": 2,
       "interlinked": true,
@@ -387,7 +387,8 @@
       "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31509566700",
       "monetization_potential": "AdSense",
       "updated_at": "2026-08-12T02:35:21Z",
-      "updated_by": "auto_audit_2026-08-11"
+      "updated_by": "auto_audit_2026-08-11",
+      "in_sitemap": true
     },
     {
       "title": "Segmento de aluguel de temporada no litoral paulista 2026",
@@ -400,7 +401,7 @@
       "faq_count": 2,
       "internal_links": [],
       "course_link": "",
-      "status": "RECUPERADO_VALIDADO",
+      "status": "PUBLISHED",
       "h2": [
         "Introdução",
         "Pontos principais"
@@ -412,13 +413,13 @@
       "word_count": 46,
       "file_size": 11762,
       "reviewed_at": "2026-08-11T10:45:17.003693Z",
-      "published": false,
+      "published": true,
       "published_date": "2026-08-14",
       "publication_url": "https://praia.digital/blog/Segmento-aluguel-temporada-litoral-2026.html",
       "publication_order": 3,
       "planned_date": "2026-08-14",
       "published_at": "2026-08-11T10:50:54.740937Z",
-      "http_status": 200,
+      "http_status": "200",
       "indexation_status": "AGUARDANDO_SUBMISSAO",
       "internal_links_added": 2,
       "interlinked": true,
@@ -438,7 +439,8 @@
       "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31509566700",
       "monetization_potential": "AdSense",
       "updated_at": "2026-08-12T02:35:21Z",
-      "updated_by": "auto_audit_2026-08-11"
+      "updated_by": "auto_audit_2026-08-11",
+      "in_sitemap": true
     },
     {
       "title": "Como anunciar imóveis no Google para o litoral: Guia Prático 2026",
@@ -607,7 +609,7 @@
       "faq_count": 1,
       "internal_links": [],
       "course_link": "",
-      "status": "RECUPERADO_VALIDADO",
+      "status": "PUBLISHED",
       "h2": [
         "Benefícios"
       ],
@@ -617,13 +619,13 @@
       "word_count": 862,
       "file_size": 11026,
       "reviewed_at": "2026-08-11T10:45:17.007692Z",
-      "published": false,
+      "published": true,
       "published_date": "2026-08-18",
       "publication_url": "https://praia.digital/blog/assistente-virtual-compradores-litoral-2026.html",
       "publication_order": 7,
       "planned_date": "2026-08-18",
       "published_at": "2026-08-11T10:50:54.740937Z",
-      "http_status": 200,
+      "http_status": "200",
       "indexation_status": "AGUARDANDO_SUBMISSAO",
       "internal_links_added": 2,
       "interlinked": true,
@@ -643,7 +645,8 @@
       "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31511957982",
       "monetization_potential": "AdSense",
       "updated_at": "2026-08-12T02:35:21Z",
-      "updated_by": "auto_audit_2026-08-11"
+      "updated_by": "auto_audit_2026-08-11",
+      "in_sitemap": true
     },
     {
       "title": "Abordagem a Proprietários por WhatsApp no Litoral",
@@ -656,7 +659,7 @@
       "faq_count": 1,
       "internal_links": [],
       "course_link": "",
-      "status": "RECUPERADO_VALIDADO",
+      "status": "PUBLISHED",
       "h2": [
         "1. Estrutura da primeira mensagem",
         "2. Tom e personalização",
@@ -670,13 +673,13 @@
       "word_count": 1004,
       "file_size": 13242,
       "reviewed_at": "2026-08-11T10:45:17.008691Z",
-      "published": false,
+      "published": true,
       "published_date": "2026-08-19",
       "publication_url": "https://praia.digital/blog/abordagem-proprietarios-whatsapp-litoral-2026.html",
       "publication_order": 8,
       "planned_date": "2026-08-19",
       "published_at": "2026-08-11T10:50:54.740937Z",
-      "http_status": 200,
+      "http_status": "200",
       "indexation_status": "AGUARDANDO_SUBMISSAO",
       "internal_links_added": 2,
       "interlinked": true,
@@ -696,7 +699,8 @@
       "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31509566700",
       "monetization_potential": "AdSense",
       "updated_at": "2026-08-12T02:35:21Z",
-      "updated_by": "auto_audit_2026-08-11"
+      "updated_by": "auto_audit_2026-08-11",
+      "in_sitemap": true
     },
     {
       "title": "Acelerar Fechamento de Vendas no Litoral: Checklists e Scripts 2026",
@@ -709,7 +713,7 @@
       "faq_count": 1,
       "internal_links": [],
       "course_link": "",
-      "status": "RECUPERADO_VALIDADO",
+      "status": "PUBLISHED",
       "h2": [
         "Checklist rápida",
         "Scripts",
@@ -721,13 +725,13 @@
       "word_count": 48,
       "file_size": 11292,
       "reviewed_at": "2026-08-11T10:45:17.009695Z",
-      "published": false,
+      "published": true,
       "published_date": "2026-08-20",
       "publication_url": "https://praia.digital/blog/acelerar-fechamento-vendas-litoral-paulista-2026.html",
       "publication_order": 9,
       "planned_date": "2026-08-20",
       "published_at": "2026-08-11T10:50:54.740937Z",
-      "http_status": 200,
+      "http_status": "200",
       "indexation_status": "AGUARDANDO_SUBMISSAO",
       "internal_links_added": 2,
       "interlinked": true,
@@ -747,7 +751,8 @@
       "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31511957982",
       "monetization_potential": "AdSense",
       "updated_at": "2026-08-12T02:35:21Z",
-      "updated_by": "auto_audit_2026-08-11"
+      "updated_by": "auto_audit_2026-08-11",
+      "in_sitemap": true
     },
     {
       "title": "Análise de Mercado Imobiliário no Litoral: Guia Prático para Investidor",
@@ -760,7 +765,7 @@
       "faq_count": 1,
       "internal_links": [],
       "course_link": "",
-      "status": "RECUPERADO_VALIDADO",
+      "status": "PUBLISHED",
       "h2": [
         "Indicadores essenciais",
         "Por Que Analisar o Mercado no Litoral Paulista?",
@@ -780,13 +785,13 @@
       "word_count": 825,
       "file_size": 10813,
       "reviewed_at": "2026-08-11T10:45:17.010692Z",
-      "published": false,
+      "published": true,
       "published_date": "2026-08-21",
       "publication_url": "https://praia.digital/blog/analise-mercado-imobiliario-litoral-2026.html",
       "publication_order": 10,
       "planned_date": "2026-08-21",
       "published_at": "2026-08-11T10:50:54.740937Z",
-      "http_status": 200,
+      "http_status": "200",
       "indexation_status": "AGUARDANDO_SUBMISSAO",
       "internal_links_added": 2,
       "interlinked": true,
@@ -806,11 +811,12 @@
       "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31511957982",
       "monetization_potential": "AdSense",
       "updated_at": "2026-08-12T02:35:21Z",
-      "updated_by": "auto_audit_2026-08-11"
+      "updated_by": "auto_audit_2026-08-11",
+      "in_sitemap": true
     },
     {
       "title": "Instagram Reels para imobiliárias: 7 modelos que geram leads no litoral",
-      "slug": "instagram-reels-imobiliarias-7-modelos-leads-litoral-2026",
+      "slug": "instagram-reels-imobiliarias-7-modelos-leads-litoral-2026.html",
       "keyword": "instagram reels imobiliárias leads litoral",
       "cluster": "Conteúdo/Redes Sociais",
       "monetization_potential": "AdSense",
@@ -833,7 +839,7 @@
     },
     {
       "title": "Como fazer análise de mercado imobiliário no litoral paulista em 2026",
-      "slug": "analise-mercado-imobiliario-litoral-paulista-2026",
+      "slug": "analise-mercado-imobiliario-litoral-paulista-2026.html",
       "keyword": "análise de mercado imobiliário litoral paulista",
       "cluster": "Análise de Mercado",
       "monetization_potential": "AdSense",
@@ -856,7 +862,7 @@
     },
     {
       "title": "Rentabilidade de imóveis na praia: ROI por cidade no litoral paulista",
-      "slug": "rentabilidade-imoveis-praia-roi-cidade-litoral-2026",
+      "slug": "rentabilidade-imoveis-praia-roi-cidade-litoral-2026.html",
       "keyword": "rentabilidade imóveis praia ROI litoral",
       "cluster": "Investimento",
       "monetization_potential": "AdSense",
@@ -879,7 +885,7 @@
     },
     {
       "title": "Imóveis de alto padrão no litoral: perfil do comprador em 2026",
-      "slug": "imoveis-alto-padrao-litoral-perfil-comprador-2026",
+      "slug": "imoveis-alto-padrao-litoral-perfil-comprador-2026.html",
       "keyword": "imóveis alto padrão litoral perfil comprador",
       "cluster": "Mercado Premium",
       "monetization_potential": "Lead",
@@ -902,7 +908,7 @@
     },
     {
       "title": "Como atender clientes internacionais no litoral paulista: guia completo",
-      "slug": "atender-clientes-internacionais-litoral-paulista-guia-2026",
+      "slug": "atender-clientes-internacionais-litoral-paulista-guia-2026.html",
       "keyword": "atender clientes internacionais litoral paulista",
       "cluster": "Internacional",
       "monetization_potential": "Lead",
@@ -925,7 +931,7 @@
     },
     {
       "title": "Documentação para compra de imóvel no litoral: guia completo 2026",
-      "slug": "documentacao-compra-imovel-litoral-guia-2026",
+      "slug": "documentacao-compra-imovel-litoral-guia-2026.html",
       "keyword": "documentação compra imóvel litoral",
       "cluster": "Legal/Documentação",
       "monetization_potential": "Serviço",
@@ -948,7 +954,7 @@
     },
     {
       "title": "IA para corretores: 3 usos práticos hoje no litoral paulista",
-      "slug": "ia-para-corretores-3-usos-praticos-litoral-2026",
+      "slug": "ia-para-corretores-3-usos-praticos-litoral-2026.html",
       "keyword": "IA para corretores usos práticos litoral",
       "cluster": "Tecnologia/IA",
       "monetization_potential": "AdSense",
@@ -971,7 +977,7 @@
     },
     {
       "title": "Gestão de temporada: do check-in ao check-out sem dor de cabeça",
-      "slug": "gestao-temporada-checkin-checkout-sem-dor-2026",
+      "slug": "gestao-temporada-checkin-checkout-sem-dor-2026.html",
       "keyword": "gestão de temporada check-in check-out litoral",
       "cluster": "Temporada",
       "monetization_potential": "Serviço",
@@ -994,7 +1000,7 @@
     },
     {
       "title": "Como captar imóveis de proprietários internacionais no litoral",
-      "slug": "captar-imoveis-proprietarios-internacionais-litoral-2026",
+      "slug": "captar-imoveis-proprietarios-internacionais-litoral-2026.html",
       "keyword": "captar imóveis proprietários internacionais litoral",
       "cluster": "Internacional",
       "monetization_potential": "Lead",
@@ -1017,7 +1023,7 @@
     },
     {
       "title": "Estratégia de preço dinâmico para temporada no litoral paulista",
-      "slug": "estrategia-preco-dinamico-temporada-litoral-2026",
+      "slug": "estrategia-preco-dinamico-temporada-litoral-2026.html",
       "keyword": "estratégia preço dinâmico temporada litoral",
       "cluster": "Pricing/Temporada",
       "monetization_potential": "Serviço",
@@ -1040,7 +1046,7 @@
     },
     {
       "title": "Marketing de conteúdo para imobiliárias: blog que converte em leads",
-      "slug": "marketing-conteudo-imobiliarias-blog-converte-leads-2026",
+      "slug": "marketing-conteudo-imobiliarias-blog-converte-leads-2026.html",
       "keyword": "marketing de conteúdo imobiliárias blog leads",
       "cluster": "Marketing/Conteúdo",
       "monetization_potential": "AdSense",
@@ -1059,7 +1065,7 @@
     },
     {
       "title": "Como montar parcerias com construtoras no litoral paulista",
-      "slug": "parcerias-construtoras-litoral-paulista-2026",
+      "slug": "parcerias-construtoras-litoral-paulista-2026.html",
       "keyword": "parcerias construtoras litoral paulista",
       "cluster": "Parcerias",
       "monetization_potential": "Parceria",
@@ -1082,7 +1088,7 @@
     },
     {
       "title": "Análise de concorrência para imobiliárias no litoral paulista",
-      "slug": "analise-concorrencia-imobiliarias-litoral-paulista-2026",
+      "slug": "analise-concorrencia-imobiliarias-litoral-paulista-2026.html",
       "keyword": "análise de concorrência imobiliárias litoral",
       "cluster": "Análise de Mercado",
       "monetization_potential": "AdSense",
@@ -1105,7 +1111,7 @@
     },
     {
       "title": "Imóveis na planta no litoral: vantagens e riscos para compradores",
-      "slug": "imoveis-na-planta-litoral-vantagens-riscos-2026",
+      "slug": "imoveis-na-planta-litoral-vantagens-riscos-2026.html",
       "keyword": "imóveis na planta litoral vantagens riscos",
       "cluster": "Investimento",
       "monetization_potential": "Lead",
@@ -1128,7 +1134,7 @@
     },
     {
       "title": "Google Meu Negócio para imobiliárias: guia completo 2026",
-      "slug": "google-meu-negocio-imobiliarias-guia-2026",
+      "slug": "google-meu-negocio-imobiliarias-guia-2026.html",
       "keyword": "Google Meu Negócio imobiliárias guia 2026",
       "cluster": "SEO/Local",
       "monetization_potential": "AdSense",
@@ -1151,7 +1157,7 @@
     },
     {
       "title": "Follow-up de leads: do primeiro contato ao fechamento em 2026",
-      "slug": "followup-leads-primeiro-contato-fechamento-2026",
+      "slug": "followup-leads-primeiro-contato-fechamento-2026.html",
       "keyword": "follow-up leads primeiro contato fechamento",
       "cluster": "Vendas/Follow-up",
       "monetization_potential": "Lead",
@@ -1174,7 +1180,7 @@
     },
     {
       "title": "Cases de sucesso: imobiliárias que cresceram no litoral paulista",
-      "slug": "cases-sucesso-imobiliarias-crescimento-litoral-2026",
+      "slug": "cases-sucesso-imobiliarias-crescimento-litoral-2026.html",
       "keyword": "cases de sucesso imobiliárias crescimento litoral",
       "cluster": "Cases/Sucesso",
       "monetization_potential": "AdSense",
@@ -1197,7 +1203,7 @@
     },
     {
       "title": "Como montar uma carteira de imóveis de temporada no litoral",
-      "slug": "montar-carteira-imoveis-temporada-litoral-2026",
+      "slug": "montar-carteira-imoveis-temporada-litoral-2026.html",
       "keyword": "montar carteira imóveis temporada litoral",
       "cluster": "Temporada/Investimento",
       "monetization_potential": "Serviço",
@@ -1220,7 +1226,7 @@
     },
     {
       "title": "Redes sociais para corretores: conteúdo que vende no litoral",
-      "slug": "redes-sociais-corretores-conteudo-vende-litoral-2026",
+      "slug": "redes-sociais-corretores-conteudo-vende-litoral-2026.html",
       "keyword": "redes sociais corretores conteúdo vende litoral",
       "cluster": "Redes Sociais",
       "monetization_potential": "AdSense",
@@ -1243,7 +1249,7 @@
     },
     {
       "title": "Análise de viabilidade: comprar para morar ou investir no litoral",
-      "slug": "analise-viabilidade-comprar-morar-investir-litoral-2026",
+      "slug": "analise-viabilidade-comprar-morar-investir-litoral-2026.html",
       "keyword": "análise viabilidade comprar morar investir litoral",
       "cluster": "Investimento",
       "monetization_potential": "Lead",
@@ -1266,7 +1272,7 @@
     },
     {
       "title": "Checklist de captação de imóveis no litoral: 21 passos para corretores em 2026",
-      "slug": "checklist-captacao-imoveis-litoral-21-passos-2026",
+      "slug": "checklist-captacao-imoveis-litoral-21-passos-2026.html",
       "keyword": "checklist captação imóveis litoral",
       "cluster": "Captação",
       "monetization_potential": "Lead + Serviço",
@@ -1289,7 +1295,7 @@
     },
     {
       "title": "Checklist de vendas para imobiliárias no litoral paulista: do lead ao fechamento",
-      "slug": "checklist-vendas-imobiliarias-litoral-paulista-2026",
+      "slug": "checklist-vendas-imobiliarias-litoral-paulista-2026.html",
       "keyword": "checklist vendas imobiliárias litoral",
       "cluster": "Vendas",
       "monetization_potential": "Lead + Serviço",
@@ -1312,7 +1318,7 @@
     },
     {
       "title": "E-mail marketing para imobiliárias: campanhas que geram captação no litoral",
-      "slug": "email-marketing-imobiliarias-campanhas-captacao-litoral-2026",
+      "slug": "email-marketing-imobiliarias-campanhas-captacao-litoral-2026.html",
       "keyword": "e-mail marketing imobiliárias captação litoral",
       "cluster": "Email Marketing",
       "monetization_potential": "AdSense + Lead",
@@ -1335,7 +1341,7 @@
     },
     {
       "title": "Checklist de avaliação de imóveis no litoral: como precificar com dado local em 2026",
-      "slug": "checklist-avaliacao-imoveis-litoral-precificar-dado-local-2026",
+      "slug": "checklist-avaliacao-imoveis-litoral-precificar-dado-local-2026.html",
       "keyword": "checklist avaliação imóveis litoral precificar",
       "cluster": "Avaliação",
       "monetization_potential": "Serviço + Lead",
@@ -1358,7 +1364,7 @@
     },
     {
       "title": "Roteiro de e-mail para captação de proprietários no litoral paulista",
-      "slug": "roteiro-email-captacao-proprietarios-litoral-paulista-2026",
+      "slug": "roteiro-email-captacao-proprietarios-litoral-paulista-2026.html",
       "keyword": "roteiro e-mail captação proprietários litoral",
       "cluster": "Email Marketing",
       "monetization_potential": "Lead + Serviço",
@@ -1381,7 +1387,7 @@
     },
     {
       "title": "Checklist de gestão de temporada para imóveis no litoral paulista",
-      "slug": "checklist-gestao-temporada-imoveis-litoral-paulista-2026",
+      "slug": "checklist-gestao-temporada-imoveis-litoral-paulista-2026.html",
       "keyword": "checklist gestão temporada imóveis litoral",
       "cluster": "Temporada",
       "monetization_potential": "Serviço + Hotmart",
@@ -1404,7 +1410,7 @@
     },
     {
       "title": "Modelo de proposta de venda de imóvel no litoral paulista em 2026",
-      "slug": "modelo-proposta-venda-imovel-litoral-paulista-2026",
+      "slug": "modelo-proposta-venda-imovel-litoral-paulista-2026.html",
       "keyword": "modelo proposta venda imóvel litoral",
       "cluster": "Vendas",
       "monetization_potential": "Lead + Serviço",
@@ -1427,7 +1433,7 @@
     },
     {
       "title": "Checklist de SEO local para imobiliárias no litoral paulista em 2026",
-      "slug": "checklist-seo-local-imobiliarias-litoral-paulista-2026-v2",
+      "slug": "checklist-seo-local-imobiliarias-litoral-paulista-2026-v2.html",
       "keyword": "checklist SEO local imobiliárias litoral",
       "cluster": "SEO/Local",
       "monetization_potential": "AdSense + Serviço",
@@ -1450,7 +1456,7 @@
     },
     {
       "title": "E-mail marketing para corretores: nutrição de leads no litoral paulista",
-      "slug": "email-marketing-corretores-nutricao-leads-litoral-2026",
+      "slug": "email-marketing-corretores-nutricao-leads-litoral-2026.html",
       "keyword": "e-mail marketing corretores nutrição leads litoral",
       "cluster": "Email Marketing",
       "monetization_potential": "AdSense + Lead",
@@ -1473,7 +1479,7 @@
     },
     {
       "title": "Checklist de follow-up de leads no litoral paulista: do primeiro contato ao fechamento",
-      "slug": "checklist-followup-leads-litoral-paulista-2026",
+      "slug": "checklist-followup-leads-litoral-paulista-2026.html",
       "keyword": "checklist follow-up leads litoral",
       "cluster": "Follow-up",
       "monetization_potential": "Lead + Serviço",
@@ -1496,7 +1502,7 @@
     },
     {
       "title": "Como usar dados locais para fechar mais vendas de imóveis no litoral paulista",
-      "slug": "usar-dados-locais-fechar-vendas-imoveis-litoral-2026",
+      "slug": "usar-dados-locais-fechar-vendas-imoveis-litoral-2026.html",
       "keyword": "dados locais fechar vendas imóveis litoral",
       "cluster": "Dados Locais",
       "monetization_potential": "Lead + Serviço",
@@ -1519,7 +1525,7 @@
     },
     {
       "title": "Temporada no litoral paulista: guia de preparação para imobiliárias e investidores",
-      "slug": "temporada-litoral-paulista-guia-preparacao-imobiliarias-investidores-2026",
+      "slug": "temporada-litoral-paulista-guia-preparacao-imobiliarias-investidores-2026.html",
       "keyword": "temporada litoral paulista guia preparação",
       "cluster": "Temporada",
       "monetization_potential": "Serviço + Hotmart",
@@ -1542,7 +1548,7 @@
     },
     {
       "title": "Imóveis econômicos no litoral paulista: como captar e vender mais em 2026",
-      "slug": "imoveis-economicos-litoral-paulista-captar-vender-mais-2026",
+      "slug": "imoveis-economicos-litoral-paulista-captar-vender-mais-2026.html",
       "keyword": "imóveis econômicos litoral paulista",
       "cluster": "Captação",
       "monetization_potential": "Lead + Serviço",
@@ -1565,7 +1571,7 @@
     },
     {
       "title": "Como montar operação de imobiliária enxuta no litoral paulista em 2026",
-      "slug": "montar-operacao-imobiliaria-enxuta-litoral-paulista-2026",
+      "slug": "montar-operacao-imobiliaria-enxuta-litoral-paulista-2026.html",
       "keyword": "montar operação imobiliária enxuta litoral",
       "cluster": "Operação",
       "monetization_potential": "Serviço + Lead",
@@ -1588,7 +1594,7 @@
     },
     {
       "title": "Checklist de captação digital para imobiliárias no litoral paulista em 2026",
-      "slug": "checklist-captacao-digital-imobiliarias-litoral-paulista-2026",
+      "slug": "checklist-captacao-digital-imobiliarias-litoral-paulista-2026.html",
       "keyword": "checklist captação digital imobiliárias litoral",
       "cluster": "Captação Digital",
       "monetization_potential": "Lead + Serviço",
@@ -1611,7 +1617,7 @@
     },
     {
       "title": "Roteiro de WhatsApp para corretores no litoral paulista: do primeiro contato ao fechamento",
-      "slug": "roteiro-whatsapp-corretores-litoral-paulista-primeiro-contato-fechamento-2026",
+      "slug": "roteiro-whatsapp-corretores-litoral-paulista-primeiro-contato-fechamento-2026.html",
       "keyword": "roteiro WhatsApp corretores litoral paulista",
       "cluster": "WhatsApp",
       "monetization_potential": "Lead + Serviço",
@@ -1633,7 +1639,7 @@
       "canonical_self": true
     },
     {
-      "slug": "checklist-inspecao-imoveis-litoral-visita-segura-2026",
+      "slug": "checklist-inspecao-imoveis-litoral-visita-segura-2026.html",
       "title": "Checklist de inspeção de imóveis no litoral paulista: visita segura e sem surpresas em 2026",
       "h1": "Checklist de inspeção de imóveis no litoral paulista: visita segura e sem surpresas em 2026",
       "status": "PUBLISHED",
@@ -1645,7 +1651,7 @@
       "word_count": 700
     },
     {
-      "slug": "checklist-preparacao-imovel-venda-litoral-primeira-visita-2026",
+      "slug": "checklist-preparacao-imovel-venda-litoral-primeira-visita-2026.html",
       "title": "Checklist de preparação de imóvel para venda no litoral paulista: da primeira visita à proposta em 2026",
       "h1": "Checklist de preparação de imóvel para venda no litoral paulista: da primeira visita à proposta em 2026",
       "status": "PUBLISHED",
@@ -1657,7 +1663,7 @@
       "word_count": 700
     },
     {
-      "slug": "checklist-negociacao-imoveis-litoral-2026",
+      "slug": "checklist-negociacao-imoveis-litoral-2026.html",
       "title": "Checklist de negociação de imóveis no litoral paulista: fechar com dado e sem conflito em 2026",
       "h1": "Checklist de negociação de imóveis no litoral paulista: fechar com dado e sem conflito em 2026",
       "status": "PUBLISHED",
@@ -1669,7 +1675,7 @@
       "word_count": 700
     },
     {
-      "slug": "checklist-fechamento-venda-imoveis-litoral-2026",
+      "slug": "checklist-fechamento-venda-imoveis-litoral-2026.html",
       "title": "Checklist de fechamento de venda de imóvel no litoral paulista: evitar retrabalho e antecipar registro em 2026",
       "h1": "Checklist de fechamento de venda de imóvel no litoral paulista: evitar retrabalho e antecipar registro em 2026",
       "status": "PUBLISHED",
@@ -1681,7 +1687,7 @@
       "word_count": 700
     },
     {
-      "slug": "impostos-compra-imoveis-litoral-paulista-guia-2026",
+      "slug": "impostos-compra-imoveis-litoral-paulista-guia-2026.html",
       "title": "Impostos na compra de imóvel no litoral paulista: guia completo para evitar surpresas em 2026",
       "h1": "Impostos na compra de imóvel no litoral paulista: guia completo para evitar surpresas em 2026",
       "status": "PUBLISHED",
@@ -1693,7 +1699,7 @@
       "word_count": 700
     },
     {
-      "slug": "roteiro-followup-pos-visita-imoveis-litoral-2026",
+      "slug": "roteiro-followup-pos-visita-imoveis-litoral-2026.html",
       "title": "Roteiro de follow-up pós-visita de imóvel no litoral paulista: do agradecimento à proposta em 2026",
       "h1": "Roteiro de follow-up pós-visita de imóvel no litoral paulista: do agradecimento à proposta em 2026",
       "status": "PUBLISHED",
@@ -1705,7 +1711,7 @@
       "word_count": 700
     },
     {
-      "slug": "checklist-visita-imoveis-litoral-paulista-2026",
+      "slug": "checklist-visita-imoveis-litoral-paulista-2026.html",
       "title": "Checklist de visita a imóveis no litoral paulista: o que fazer antes, durante e depois em 2026",
       "h1": "Checklist de visita a imóveis no litoral paulista: o que fazer antes, durante e depois em 2026",
       "status": "PUBLISHED",
@@ -1717,7 +1723,7 @@
       "word_count": 700
     },
     {
-      "slug": "como-fidelizar-clientes-imobiliaria-litoral-2026",
+      "slug": "como-fidelizar-clientes-imobiliaria-litoral-2026.html",
       "title": "Como fidelizar clientes em imobiliária no litoral paulista em 2026",
       "h1": "Como fidelizar clientes em imobiliária no litoral paulista em 2026",
       "status": "PUBLISHED",
@@ -1729,7 +1735,7 @@
       "word_count": 700
     },
     {
-      "slug": "retencao-clientes-imobiliaria-litoral-paulista-2026",
+      "slug": "retencao-clientes-imobiliaria-litoral-paulista-2026.html",
       "title": "Retenção de clientes em imobiliária no litoral paulista em 2026",
       "h1": "Retenção de clientes em imobiliária no litoral paulista em 2026",
       "status": "PUBLISHED",
