@@ -451,7 +451,7 @@
       "faq_count": 1,
       "internal_links": [],
       "course_link": "",
-      "status": "RECUPERADO_VALIDADO",
+      "status": "PUBLISHED",
       "h2": [
         "Ações",
         "Ferramentas"
@@ -462,13 +462,13 @@
       "word_count": 38,
       "file_size": 11058,
       "reviewed_at": "2026-08-11T10:45:17.004693Z",
-      "published": false,
+      "published": true,
       "published_date": "2026-08-15",
       "publication_url": "https://praia.digital/blog/anunciar-imoveis-google-litoral-paulista-2026.html",
       "publication_order": 4,
       "planned_date": "2026-08-15",
       "published_at": "2026-08-11T10:50:54.740937Z",
-      "http_status": 200,
+      "http_status": "200",
       "indexation_status": "AGUARDANDO_SUBMISSAO",
       "internal_links_added": 2,
       "interlinked": true,
@@ -488,7 +488,8 @@
       "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31511957982",
       "monetization_potential": "AdSense",
       "updated_at": "2026-08-12T02:35:21Z",
-      "updated_by": "auto_audit_2026-08-11"
+      "updated_by": "auto_audit_2026-08-11",
+      "in_sitemap": true
     },
     {
       "title": "Automação de captação de imóveis no litoral em passos",
@@ -501,7 +502,7 @@
       "faq_count": 1,
       "internal_links": [],
       "course_link": "",
-      "status": "RECUPERADO_VALIDADO",
+      "status": "PUBLISHED",
       "h2": [
         "Fluxo",
         "Checklist rapida"
@@ -512,13 +513,13 @@
       "word_count": 843,
       "file_size": 11035,
       "reviewed_at": "2026-08-11T10:45:17.004693Z",
-      "published": false,
+      "published": true,
       "published_date": "2026-08-16",
       "publication_url": "https://praia.digital/blog/automacao-captacao-imoveis-litoral-passos.html",
       "publication_order": 5,
       "planned_date": "2026-08-16",
       "published_at": "2026-08-11T10:50:54.740937Z",
-      "http_status": 200,
+      "http_status": "200",
       "indexation_status": "AGUARDANDO_SUBMISSAO",
       "internal_links_added": 2,
       "interlinked": true,
@@ -538,7 +539,8 @@
       "recovery_deploy_url": "https://github.com/acarolmourad-commits/praia-digital/actions/runs/31511957982",
       "monetization_potential": "AdSense",
       "updated_at": "2026-08-12T02:35:21Z",
-      "updated_by": "auto_audit_2026-08-11"
+      "updated_by": "auto_audit_2026-08-11",
+      "in_sitemap": true
     },
     {
       "title": "Checklist SEO local para corretores do litoral em 2026",
