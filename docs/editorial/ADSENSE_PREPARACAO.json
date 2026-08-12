@@ -1,35 +1,52 @@
 {
-  "version": "2026-08-11",
-  "status": "PRONTO_PARA_APROVACAO",
+  "version": "2026-08-12",
+  "status": "PRONTO_PARA_CRIAR_CONTA_E_VERIFICAR_PROPRIEDADE",
   "domain": "praia.digital",
-  "adsense_ready": false,
+  "adsense_ready": true,
+  "adsense_approved": false,
+  "adsense_code_present": false,
   "required_pages": {
     "politica_privacidade": {
       "url": "https://praia.digital/politica-privacidade.html",
       "status": "EXISTS",
-      "notes": "Política de privacidade criada em 2026-08-11"
+      "http_status": "200",
+      "notes": "Política de privacidade OK"
     },
     "termos_uso": {
       "url": "https://praia.digital/termos-uso.html",
-      "status": "PENDING",
-      "notes": "Termos de uso precisam ser criados"
+      "status": "EXISTS",
+      "http_status": "200",
+      "notes": "Termos de uso criados em 2026-08-12"
     },
     "contato": {
       "url": "https://praia.digital/contato.html",
       "status": "EXISTS",
-      "notes": "Página de contato existe"
+      "http_status": "200",
+      "notes": "Página de contato OK"
     },
     "sobre": {
       "url": "https://praia.digital/sobre.html",
       "status": "EXISTS",
-      "notes": "Página sobre existe"
+      "http_status": "200",
+      "notes": "Página sobre OK"
     }
+  },
+  "technical_validation": {
+    "home_http_status": "200",
+    "sitemap_http_status": "200",
+    "robots_http_status": "200",
+    "google_adsense_code_present": false,
+    "google_analytics_present": false,
+    "site_verification_meta_present": false,
+    "notes": "Nenhum código AdSense/GA/verificação Google encontrado no HTML principal. Implementação deve ser feita APENAS após criação da conta e verificação de propriedade."
   },
   "content_requirements": {
     "min_words_per_article": 300,
     "unique_content_required": true,
     "no_duplicate_content": true,
     "original_content_only": true,
+    "current_total_published_articles": 58,
+    "status": "ATENDE_REQUISITO_MINIMO",
     "prohibited": [
       "conteúdo duplicado",
       "conteúdo gerado automaticamente sem curadoria",
@@ -42,18 +59,19 @@
     "min_visitors_per_day": 100,
     "min_page_views_per_day": 300,
     "min_posts": 30,
-    "current_posts": 30,
+    "current_posts": 58,
     "current_status": "ATENDE_REQUISITO_MINIMO"
   },
   "implementation_checklist": [
-    "Criar conta Google AdSense",
-    "Verificar propriedade do domínio praia.digital",
-    "Implementar código AdSense em todas as páginas",
+    "CRIAR conta Google AdSense com dados reais",
+    "VERIFICAR propriedade do domínio praia.digital via AdSense",
+    "AGUARDAR aprovação de propriedade",
+    "IMPLEMENTAR código AdSense APENAS após verificação aprovada",
     "Criar unidades de anúncios responsivas",
     "Posicionar anúncios de forma não intrusiva",
     "Monitorar desempenho e cliques",
-    "Aguardar aprovação (pode levar até 2 semanas)",
-    "Implementar anúncios apenas após aprovação"
+    "Aguardar aprovação de conteúdo (pode levar até 2 semanas)",
+    "Implementar anúncios apenas após aprovação final"
   ],
   "compliance_rules": [
     "Não clicar em próprios anúncios",
@@ -85,19 +103,19 @@
     "Redes Sociais": "AdSense"
   },
   "next_steps": [
-    "Aguardar acesso seguro ao GSC para auditoria",
-    "Criar termos de uso",
-    "Preparar layout para unidades de anúncio",
-    "Documentar posicionamento de anúncios",
-    "Criar conta Google AdSense quando autorizado"
+    "CRIAR conta Google AdSense para domínio praia.digital",
+    "VERIFICAR propriedade via AdSense ou Search Console",
+    "IMPLEMENTAR código APENAS após verificação aprovada",
+    "VALIDAR presença do código em produção",
+    "SUBMETER para aprovação"
   ],
   "domain_verified": true,
-  "articles_count": 57,
+  "articles_count": 58,
   "sitemap_submitted": false,
   "policies": {
     "privacy_policy": "https://praia.digital/politica-privacidade.html",
     "terms_of_service": "https://praia.digital/termos-uso.html"
   },
-  "notes": "Aguardando criação de conta AdSense, implementação de código e submissão para aprovação.",
+  "notes": "Fase 2 autorizada. Aguardando criação de conta AdSense e verificação de propriedade. Implementação de código será feita somente após aprovação da verificação.",
   "total_published_articles": 58
 }
