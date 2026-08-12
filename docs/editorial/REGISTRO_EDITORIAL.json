@@ -1050,8 +1050,8 @@
       "keyword": "marketing de conteúdo imobiliárias blog leads",
       "cluster": "Marketing/Conteúdo",
       "monetization_potential": "AdSense",
-      "status": "PENDENTE",
-      "published": false,
+      "status": "PUBLISHED",
+      "published": true,
       "created_at": "2026-08-12T02:40:41Z",
       "created_by": "auto_editorial_2026-08-11",
       "h1": "Marketing de conteúdo para imobiliárias: blog que converte em leads",
@@ -1061,7 +1061,11 @@
       "h2_count": 0,
       "faq_count": 0,
       "internal_links": [],
-      "course_link": ""
+      "course_link": "",
+      "published_at": "2026-08-12T07:06:59Z",
+      "http_status": "200",
+      "in_sitemap": true,
+      "canonical_self": true
     },
     {
       "title": "Como montar parcerias com construtoras no litoral paulista",
