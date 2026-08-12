@@ -1,0 +1,94 @@
+{
+  "version": "2026-08-11",
+  "status": "PENDENTE_IMPLEMENTACAO",
+  "domain": "praia.digital",
+  "adsense_ready": false,
+  "required_pages": {
+    "politica_privacidade": {
+      "url": "https://praia.digital/politica-privacidade.html",
+      "status": "EXISTS",
+      "notes": "Política de privacidade criada em 2026-08-11"
+    },
+    "termos_uso": {
+      "url": "https://praia.digital/termos-uso.html",
+      "status": "PENDING",
+      "notes": "Termos de uso precisam ser criados"
+    },
+    "contato": {
+      "url": "https://praia.digital/contato.html",
+      "status": "EXISTS",
+      "notes": "Página de contato existe"
+    },
+    "sobre": {
+      "url": "https://praia.digital/sobre.html",
+      "status": "EXISTS",
+      "notes": "Página sobre existe"
+    }
+  },
+  "content_requirements": {
+    "min_words_per_article": 300,
+    "unique_content_required": true,
+    "no_duplicate_content": true,
+    "original_content_only": true,
+    "prohibited": [
+      "conteúdo duplicado",
+      "conteúdo gerado automaticamente sem curadoria",
+      "conteúdo genérico",
+      "conteúdo copiado de outras fontes",
+      "conteúdo de baixa qualidade"
+    ]
+  },
+  "traffic_requirements": {
+    "min_visitors_per_day": 100,
+    "min_page_views_per_day": 300,
+    "min_posts": 30,
+    "current_posts": 30,
+    "current_status": "ATENDE_REQUISITO_MINIMO"
+  },
+  "implementation_checklist": [
+    "Criar conta Google AdSense",
+    "Verificar propriedade do domínio praia.digital",
+    "Implementar código AdSense em todas as páginas",
+    "Criar unidades de anúncios responsivas",
+    "Posicionar anúncios de forma não intrusiva",
+    "Monitorar desempenho e cliques",
+    "Aguardar aprovação (pode levar até 2 semanas)",
+    "Implementar anúncios apenas após aprovação"
+  ],
+  "compliance_rules": [
+    "Não clicar em próprios anúncios",
+    "Não incentivar cliques em anúncios",
+    "Não criar conteúdo para manipular impressões",
+    "Não usar conteúdo duplicado ou genérico",
+    "Manter experiência do usuário como prioridade",
+    "Respeitar políticas do Google AdSense",
+    "Não colocar anúncios em páginas de erro 404",
+    "Não colocar anúncios em páginas de rascunho"
+  ],
+  "monetization_potential_by_cluster": {
+    "Captação e abordagem": "Lead + Serviço + Hotmart",
+    "Investimento": "Lead + AdSense",
+    "Análise de Mercado": "AdSense",
+    "Internacional": "Lead + Serviço",
+    "Conteúdo/Redes Sociais": "AdSense",
+    "Mercado Premium": "Lead + Serviço",
+    "Legal/Documentação": "Serviço",
+    "Tecnologia/IA": "AdSense + Hotmart",
+    "Temporada": "Serviço + Lead",
+    "Pricing/Temporada": "Serviço",
+    "Marketing/Conteúdo": "AdSense",
+    "Parcerias": "Parceria + Lead",
+    "SEO/Local": "AdSense + Serviço",
+    "Vendas/Follow-up": "Lead + Serviço",
+    "Cases/Sucesso": "AdSense + Lead",
+    "Temporada/Investimento": "Serviço + Lead",
+    "Redes Sociais": "AdSense"
+  },
+  "next_steps": [
+    "Aguardar acesso seguro ao GSC para auditoria",
+    "Criar termos de uso",
+    "Preparar layout para unidades de anúncio",
+    "Documentar posicionamento de anúncios",
+    "Criar conta Google AdSense quando autorizado"
+  ]
+}
