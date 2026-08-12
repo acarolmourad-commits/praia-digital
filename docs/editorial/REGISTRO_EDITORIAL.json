@@ -292,7 +292,12 @@
       "canonical": "https://praia.digital/blog/alugar-ou-comprar-imovel-litoral-paulista-2026.html",
       "h2_count": 5,
       "faq_count": 2,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/analise-viabilidade-comprar-morar-investir-litoral-2026.html",
+        "https://praia.digital/blog/financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/rentabilidade-imoveis-praia-roi-cidade-litoral-2026.html"
+      ],
       "course_link": "",
       "status": "PUBLISHED",
       "h2": [
@@ -336,7 +341,12 @@
       "monetization_potential": "AdSense",
       "updated_at": "2026-08-12T02:35:21Z",
       "updated_by": "auto_audit_2026-08-11",
-      "in_sitemap": true
+      "in_sitemap": true,
+      "author": "Praia Digital",
+      "cluster": "financiamento",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "5 táticas infalíveis para captação imobiliária no litoral paulista",
@@ -347,7 +357,12 @@
       "canonical": "https://praia.digital/blog/5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html",
       "h2_count": 5,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/abordagem-proprietarios-whatsapp-litoral-2026.html",
+        "https://praia.digital/blog/automacao-captacao-imoveis-litoral-passos.html",
+        "https://praia.digital/blog/captacao-imoveis-estrangeiros-roteiro-corretores.html",
+        "https://praia.digital/blog/index.html"
+      ],
       "course_link": "",
       "status": "PUBLISHED",
       "h2": [
@@ -388,7 +403,12 @@
       "monetization_potential": "AdSense",
       "updated_at": "2026-08-12T02:35:21Z",
       "updated_by": "auto_audit_2026-08-11",
-      "in_sitemap": true
+      "in_sitemap": true,
+      "author": "Praia Digital",
+      "cluster": "impostos_custos",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Segmento de aluguel de temporada no litoral paulista 2026",
@@ -399,7 +419,12 @@
       "canonical": "https://praia.digital/blog/Segmento-aluguel-temporada-litoral-2026.html",
       "h2_count": 2,
       "faq_count": 2,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/estrategia-preco-dinamico-temporada-litoral-2026.html",
+        "https://praia.digital/blog/gestao-temporada-checkin-checkout-sem-dor-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/montar-carteira-imoveis-temporada-litoral-2026.html"
+      ],
       "course_link": "",
       "status": "PUBLISHED",
       "h2": [
@@ -440,7 +465,12 @@
       "monetization_potential": "AdSense",
       "updated_at": "2026-08-12T02:35:21Z",
       "updated_by": "auto_audit_2026-08-11",
-      "in_sitemap": true
+      "in_sitemap": true,
+      "author": "Praia Digital",
+      "cluster": "avaliacao_precificacao",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Como anunciar imóveis no Google para o litoral: Guia Prático 2026",
@@ -451,7 +481,12 @@
       "canonical": "https://praia.digital/blog/anunciar-imoveis-google-litoral-paulista-2026.html",
       "h2_count": 2,
       "faq_count": 1,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/checklist-seo-local-para-corretores-do-litoral-em-2026-lote-2026-07-11-12.html",
+        "https://praia.digital/blog/crm-para-corretores-primeiro-contato-fechamento.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/site-imobiliaria-litoral-estrutura-converte-visitantes-leads.html"
+      ],
       "course_link": "",
       "status": "PUBLISHED",
       "h2": [
@@ -491,7 +526,12 @@
       "monetization_potential": "AdSense",
       "updated_at": "2026-08-12T02:35:21Z",
       "updated_by": "auto_audit_2026-08-11",
-      "in_sitemap": true
+      "in_sitemap": true,
+      "author": "Praia Digital",
+      "cluster": "impostos_custos",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Automação de captação de imóveis no litoral em passos",
@@ -502,7 +542,12 @@
       "canonical": "https://praia.digital/blog/automacao-captacao-imoveis-litoral-passos.html",
       "h2_count": 2,
       "faq_count": 1,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html",
+        "https://praia.digital/blog/abordagem-proprietarios-whatsapp-litoral-2026.html",
+        "https://praia.digital/blog/crm-para-corretores-primeiro-contato-fechamento.html",
+        "https://praia.digital/blog/index.html"
+      ],
       "course_link": "",
       "status": "PUBLISHED",
       "h2": [
@@ -542,7 +587,12 @@
       "monetization_potential": "AdSense",
       "updated_at": "2026-08-12T02:35:21Z",
       "updated_by": "auto_audit_2026-08-11",
-      "in_sitemap": true
+      "in_sitemap": true,
+      "author": "Praia Digital",
+      "cluster": "documentacao",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Checklist SEO local para corretores do litoral em 2026",
@@ -553,7 +603,12 @@
       "canonical": "https://praia.digital/blog/checklist-seo-local-para-corretores-do-litoral-em-2026-lote-2026-07-11-12.html",
       "h2_count": 5,
       "faq_count": 1,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/anunciar-imoveis-google-litoral-paulista-2026.html",
+        "https://praia.digital/blog/crm-para-corretores-primeiro-contato-fechamento.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/site-imobiliaria-litoral-estrutura-converte-visitantes-leads.html"
+      ],
       "course_link": "",
       "status": "PUBLISHED",
       "h2": [
@@ -596,7 +651,12 @@
       "monetization_potential": "AdSense",
       "updated_at": "2026-08-12T02:35:21Z",
       "updated_by": "auto_audit_2026-08-11",
-      "in_sitemap": true
+      "in_sitemap": true,
+      "author": "Praia Digital",
+      "cluster": "financiamento",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Assistente virtual para compradores: quando usar e quando evitar",
@@ -607,7 +667,12 @@
       "canonical": "https://praia.digital/blog/assistente-virtual-compradores-litoral-2026.html",
       "h2_count": 1,
       "faq_count": 1,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/abordagem-proprietarios-whatsapp-litoral-2026.html",
+        "https://praia.digital/blog/automacao-captacao-imoveis-litoral-passos.html",
+        "https://praia.digital/blog/crm-para-corretores-primeiro-contato-fechamento.html",
+        "https://praia.digital/blog/index.html"
+      ],
       "course_link": "",
       "status": "PUBLISHED",
       "h2": [
@@ -646,7 +711,12 @@
       "monetization_potential": "AdSense",
       "updated_at": "2026-08-12T02:35:21Z",
       "updated_by": "auto_audit_2026-08-11",
-      "in_sitemap": true
+      "in_sitemap": true,
+      "author": "Praia Digital",
+      "cluster": "documentacao",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Abordagem a Proprietários por WhatsApp no Litoral",
@@ -657,7 +727,13 @@
       "canonical": "https://praia.digital/blog/abordagem-proprietarios-whatsapp-litoral-2026.html",
       "h2_count": 5,
       "faq_count": 1,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html",
+        "https://praia.digital/blog/automacao-captacao-imoveis-litoral-passos.html",
+        "https://praia.digital/blog/captacao-imoveis-estrangeiros-roteiro-corretores.html",
+        "https://praia.digital/blog/followup-automático-do-primeiro-contato-ao-fechamento-lote-2026-08-03-22.html",
+        "https://praia.digital/blog/index.html"
+      ],
       "course_link": "",
       "status": "PUBLISHED",
       "h2": [
@@ -700,7 +776,12 @@
       "monetization_potential": "AdSense",
       "updated_at": "2026-08-12T02:35:21Z",
       "updated_by": "auto_audit_2026-08-11",
-      "in_sitemap": true
+      "in_sitemap": true,
+      "author": "Praia Digital",
+      "cluster": "documentacao",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Acelerar Fechamento de Vendas no Litoral: Checklists e Scripts 2026",
@@ -711,7 +792,12 @@
       "canonical": "https://praia.digital/blog/acelerar-fechamento-vendas-litoral-paulista-2026.html",
       "h2_count": 3,
       "faq_count": 1,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/abordagem-proprietarios-whatsapp-litoral-2026.html",
+        "https://praia.digital/blog/automacao-captacao-imoveis-litoral-passos.html",
+        "https://praia.digital/blog/crm-para-corretores-primeiro-contato-fechamento.html",
+        "https://praia.digital/blog/index.html"
+      ],
       "course_link": "",
       "status": "PUBLISHED",
       "h2": [
@@ -752,7 +838,12 @@
       "monetization_potential": "AdSense",
       "updated_at": "2026-08-12T02:35:21Z",
       "updated_by": "auto_audit_2026-08-11",
-      "in_sitemap": true
+      "in_sitemap": true,
+      "author": "Praia Digital",
+      "cluster": "financiamento",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Análise de Mercado Imobiliário no Litoral: Guia Prático para Investidor",
@@ -763,7 +854,12 @@
       "canonical": "https://praia.digital/blog/analise-mercado-imobiliario-litoral-2026.html",
       "h2_count": 1,
       "faq_count": 1,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html",
+        "https://praia.digital/blog/imovel-litoral-estrangeiro-captar-leads-internacionais.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/refinanciamento-imovel-praia-quando-vale-pena-2026.html"
+      ],
       "course_link": "",
       "status": "PUBLISHED",
       "h2": [
@@ -812,7 +908,12 @@
       "monetization_potential": "AdSense",
       "updated_at": "2026-08-12T02:35:21Z",
       "updated_by": "auto_audit_2026-08-11",
-      "in_sitemap": true
+      "in_sitemap": true,
+      "author": "Praia Digital",
+      "cluster": "financiamento",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Instagram Reels para imobiliárias: 7 modelos que geram leads no litoral",
@@ -828,14 +929,43 @@
       "meta_title": "Instagram Reels para imobiliárias: 7 modelos que geram leads no litoral",
       "meta_description": "Instagram Reels para imobiliárias: 7 modelos que geram leads no litoral",
       "canonical": "https://praia.digital/blog/instagram-reels-imobiliarias-7-modelos-leads-litoral-2026.html",
-      "h2_count": 0,
+      "h2_count": 17,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/conteudo-instagram-imobiliaria-15-ideias-geram-consultas.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/instagram-imobiliarias-litoral-roteiro-conteudo-converte.html",
+        "https://praia.digital/blog/seo-local-imobiliaria-litoral-paulista-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T03:07:58Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Por que Reels funciona para imobiliárias do litoral",
+        "Regra básica antes de gravar",
+        "Modelo 1: Antes e depois do imóvel",
+        "Modelo 2: Tour curto do imóvel",
+        "Modelo 3: Dado local rápido",
+        "Modelo 4: Depoimento curto",
+        "Modelo 5: Dia na vida do corretor",
+        "Modelo 6: Dúvida respondida",
+        "Modelo 7: Case rápido com número",
+        "Checklist de publicação",
+        "Métricas para acompanhar",
+        "Erros comuns",
+        "Cases práticos",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 1046,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Como fazer análise de mercado imobiliário no litoral paulista em 2026",
@@ -851,14 +981,38 @@
       "meta_title": "Como fazer análise de mercado imobiliário no litoral paulista em 2026",
       "meta_description": "Como fazer análise de mercado imobiliário no litoral paulista em 2026",
       "canonical": "https://praia.digital/blog/analise-mercado-imobiliario-litoral-paulista-2026.html",
-      "h2_count": 0,
+      "h2_count": 12,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/analise-concorrencia-imobiliaria-litoral-paulista-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/rentabilidade-imoveis-praia-2026.html",
+        "https://praia.digital/blog/vender-imovel-rapido-litoral-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T03:07:58Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Indicadores essenciais",
+        "Comparativo por cidade",
+        "Tendências 2026",
+        "Como aplicar na captação",
+        "Checklist",
+        "Cases",
+        "Métricas para acompanhar",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 901,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Rentabilidade de imóveis na praia: ROI por cidade no litoral paulista",
@@ -874,14 +1028,38 @@
       "meta_title": "Rentabilidade de imóveis na praia: ROI por cidade no litoral paulista",
       "meta_description": "Rentabilidade de imóveis na praia: ROI por cidade no litoral paulista",
       "canonical": "https://praia.digital/blog/rentabilidade-imoveis-praia-roi-cidade-litoral-2026.html",
-      "h2_count": 0,
+      "h2_count": 12,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/analise-mercado-imobiliario-litoral-2026.html",
+        "https://praia.digital/blog/financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/rentabilidade-imoveis-praia-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T03:07:58Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "O que é rentabilidade real",
+        "Comparativo por cidade",
+        "Custos obrigatórios",
+        "Cenários",
+        "Checklist",
+        "Cases",
+        "Métricas",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 754,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Imóveis de alto padrão no litoral: perfil do comprador em 2026",
@@ -897,14 +1075,39 @@
       "meta_title": "Imóveis de alto padrão no litoral: perfil do comprador em 2026",
       "meta_description": "Imóveis de alto padrão no litoral: perfil do comprador em 2026",
       "canonical": "https://praia.digital/blog/imoveis-alto-padrao-litoral-perfil-comprador-2026.html",
-      "h2_count": 0,
+      "h2_count": 13,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/analise-mercado-imobiliario-litoral-paulista-2026.html",
+        "https://praia.digital/blog/atender-clientes-internacionais-litoral-paulista-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/rentabilidade-imoveis-praia-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T03:07:58Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Perfil do comprador de alto padrão",
+        "Critérios de escolha",
+        "Tendências 2026",
+        "Cidades com maior concentração",
+        "Como atender esse público",
+        "Cases",
+        "Métricas",
+        "Erros comuns",
+        "Checklist",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 880,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Como atender clientes internacionais no litoral paulista: guia completo",
@@ -920,14 +1123,39 @@
       "meta_title": "Como atender clientes internacionais no litoral paulista: guia completo",
       "meta_description": "Como atender clientes internacionais no litoral paulista: guia completo",
       "canonical": "https://praia.digital/blog/atender-clientes-internacionais-litoral-paulista-guia-2026.html",
-      "h2_count": 0,
+      "h2_count": 13,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/compra-imovel-litoral-estrangeiro-guia-passo-a-passo.html",
+        "https://praia.digital/blog/documentacao-compra-imovel-litoral-guia-2026.html",
+        "https://praia.digital/blog/imoveis-alto-padrao-litoral-perfil-comprador-2026.html",
+        "https://praia.digital/blog/index.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T03:07:58Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Perfil do cliente internacional",
+        "Fluxo de atendimento",
+        "Documentos necessários",
+        "Comunicação bilíngue",
+        "Cuidados legais",
+        "Cases",
+        "Métricas",
+        "Erros comuns",
+        "Checklist",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 827,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Documentação para compra de imóvel no litoral: guia completo 2026",
@@ -943,14 +1171,38 @@
       "meta_title": "Documentação para compra de imóvel no litoral: guia completo 2026",
       "meta_description": "Documentação para compra de imóvel no litoral: guia completo 2026",
       "canonical": "https://praia.digital/blog/documentacao-compra-imovel-litoral-guia-2026.html",
-      "h2_count": 0,
+      "h2_count": 12,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/atender-clientes-internacionais-litoral-paulista-guia-2026.html",
+        "https://praia.digital/blog/compra-imovel-litoral-estrangeiro-guia-passo-a-passo.html",
+        "https://praia.digital/blog/financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html",
+        "https://praia.digital/blog/index.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T03:07:58Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Documentos do comprador",
+        "Documentos do vendedor",
+        "Documentos do imóvel",
+        "Checklist completo",
+        "Prazos",
+        "Custos",
+        "Erros comuns",
+        "Cases",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 796,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "IA para corretores: 3 usos práticos hoje no litoral paulista",
@@ -966,14 +1218,38 @@
       "meta_title": "IA para corretores: 3 usos práticos hoje no litoral paulista",
       "meta_description": "IA para corretores: 3 usos práticos hoje no litoral paulista",
       "canonical": "https://praia.digital/blog/ia-para-corretores-3-usos-praticos-litoral-2026.html",
-      "h2_count": 0,
+      "h2_count": 12,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/analise-mercado-imobiliario-litoral-paulista-2026.html",
+        "https://praia.digital/blog/assistente-virtual-atender-leads-imoveis-litoral-2026.html",
+        "https://praia.digital/blog/avaliação-automática-de-preço-como-usar-no-atendimento-lote-2026-08-03-33.html",
+        "https://praia.digital/blog/index.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T03:07:58Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Uso 1: Atendimento automático personalizado",
+        "Uso 2: Captação qualificada por perfil e cidade",
+        "Uso 3: Análise de mercado com dado local",
+        "Ferramentas recomendadas",
+        "Checklist",
+        "Cases",
+        "Métricas",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 847,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Gestão de temporada: do check-in ao check-out sem dor de cabeça",
@@ -989,14 +1265,38 @@
       "meta_title": "Gestão de temporada: do check-in ao check-out sem dor de cabeça",
       "meta_description": "Gestão de temporada: do check-in ao check-out sem dor de cabeça",
       "canonical": "https://praia.digital/blog/gestao-temporada-checkin-checkout-sem-dor-2026.html",
-      "h2_count": 0,
+      "h2_count": 12,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/checklist-gestao-temporada-imoveis-litoral-paulista-2026.html",
+        "https://praia.digital/blog/estrategia-preco-dinamico-temporada-litoral-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/montar-carteira-imoveis-temporada-litoral-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T06:19:00Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Check-in",
+        "Check-out",
+        "Operação",
+        "Custos",
+        "Métricas",
+        "Cases",
+        "Erros comuns",
+        "Checklist",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 709,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Como captar imóveis de proprietários internacionais no litoral",
@@ -1012,14 +1312,37 @@
       "meta_title": "Como captar imóveis de proprietários internacionais no litoral",
       "meta_description": "Como captar imóveis de proprietários internacionais no litoral",
       "canonical": "https://praia.digital/blog/captar-imoveis-proprietarios-internacionais-litoral-2026.html",
-      "h2_count": 0,
+      "h2_count": 11,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/analise-viabilidade-comprar-morar-investir-litoral-2026.html",
+        "https://praia.digital/blog/checklist-captacao-imoveis-litoral-21-passos-2026.html",
+        "https://praia.digital/blog/followup-leads-primeiro-contato-fechamento-2026.html",
+        "https://praia.digital/blog/index.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T06:19:00Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Abordagem",
+        "Canais",
+        "Documentação",
+        "Checklist",
+        "Cases",
+        "Métricas",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 632,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Estratégia de preço dinâmico para temporada no litoral paulista",
@@ -1035,14 +1358,36 @@
       "meta_title": "Estratégia de preço dinâmico para temporada no litoral paulista",
       "meta_description": "Estratégia de preço dinâmico para temporada no litoral paulista",
       "canonical": "https://praia.digital/blog/estrategia-preco-dinamico-temporada-litoral-2026.html",
-      "h2_count": 0,
+      "h2_count": 10,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/checklist-gestao-temporada-imoveis-litoral-paulista-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/montar-carteira-imoveis-temporada-litoral-2026.html",
+        "https://praia.digital/blog/rentabilidade-imoveis-praia-roi-cidade-litoral-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T06:19:00Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Regras básicas",
+        "Sazonalidade",
+        "Checklist",
+        "Cases",
+        "Métricas",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 643,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Marketing de conteúdo para imobiliárias: blog que converte em leads",
@@ -1058,14 +1403,36 @@
       "meta_title": "Marketing de conteúdo para imobiliárias: blog que converte em leads",
       "meta_description": "Marketing de conteúdo para imobiliárias: blog que converte em leads",
       "canonical": "https://praia.digital/blog/marketing-conteudo-imobiliarias-blog-converte-leads-2026.html",
-      "h2_count": 0,
+      "h2_count": 10,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/checklist-captacao-digital-imobiliarias-litoral-paulista-2026.html",
+        "https://praia.digital/blog/checklist-seo-local-imobiliarias-litoral-paulista-2026-v2.html",
+        "https://praia.digital/blog/google-meu-negocio-imobiliarias-guia-2026.html",
+        "https://praia.digital/blog/index.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T07:06:59Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Estrutura",
+        "Temas",
+        "Frequência",
+        "Métricas",
+        "Cases",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 632,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Como montar parcerias com construtoras no litoral paulista",
@@ -1081,14 +1448,38 @@
       "meta_title": "Como montar parcerias com construtoras no litoral paulista",
       "meta_description": "Como montar parcerias com construtoras no litoral paulista",
       "canonical": "https://praia.digital/blog/parcerias-construtoras-litoral-paulista-2026.html",
-      "h2_count": 0,
+      "h2_count": 12,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/analise-concorrencia-imobiliarias-litoral-paulista-2026.html",
+        "https://praia.digital/blog/cases-sucesso-imobiliarias-crescimento-litoral-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/marketing-de-conteudo-para-imobiliarias-blog-converte-leads-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T03:07:58Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Modelo de parceria recomendado",
+        "Critérios de escolha",
+        "Proposta comercial",
+        "Follow-up",
+        "Cases",
+        "Métricas",
+        "Erros comuns",
+        "Checklist",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 798,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Análise de concorrência para imobiliárias no litoral paulista",
@@ -1104,14 +1495,37 @@
       "meta_title": "Análise de concorrência para imobiliárias no litoral paulista",
       "meta_description": "Análise de concorrência para imobiliárias no litoral paulista",
       "canonical": "https://praia.digital/blog/analise-concorrencia-imobiliarias-litoral-paulista-2026.html",
-      "h2_count": 0,
+      "h2_count": 11,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/analise-mercado-imobiliario-litoral-paulista-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/marketing-de-conteudo-para-imobiliarias-blog-converte-leads-2026.html",
+        "https://praia.digital/blog/seo-local-imobiliaria-litoral-paulista-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T03:07:58Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "O que mapear",
+        "Comparativo",
+        "Critérios de diferenciação",
+        "Checklist",
+        "Cases",
+        "Métricas",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 737,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Imóveis na planta no litoral: vantagens e riscos para compradores",
@@ -1127,14 +1541,37 @@
       "meta_title": "Imóveis na planta no litoral: vantagens e riscos para compradores",
       "meta_description": "Imóveis na planta no litoral: vantagens e riscos para compradores",
       "canonical": "https://praia.digital/blog/imoveis-na-planta-litoral-vantagens-riscos-2026.html",
-      "h2_count": 0,
+      "h2_count": 11,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/documentacao-compra-imovel-litoral-guia-2026.html",
+        "https://praia.digital/blog/financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/rentabilidade-imoveis-praia-roi-cidade-litoral-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T03:07:58Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Vantagens",
+        "Riscos",
+        "Checklist",
+        "Financiamento",
+        "Cases",
+        "Métricas",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 725,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Google Meu Negócio para imobiliárias: guia completo 2026",
@@ -1150,14 +1587,39 @@
       "meta_title": "Google Meu Negócio para imobiliárias: guia completo 2026",
       "meta_description": "Google Meu Negócio para imobiliárias: guia completo 2026",
       "canonical": "https://praia.digital/blog/google-meu-negocio-imobiliarias-guia-2026.html",
-      "h2_count": 0,
+      "h2_count": 13,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/checklist-seo-local-para-corretores-do-litoral-em-2026-lote-2026-07-11-12.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/marketing-de-conteudo-para-imobiliarias-blog-converte-leads-2026.html",
+        "https://praia.digital/blog/seo-local-imobiliaria-litoral-paulista-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T03:07:58Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Configuração",
+        "SEO local",
+        "Avaliações",
+        "Fotos e vídeos",
+        "Posts",
+        "Métricas",
+        "Cases",
+        "Erros comuns",
+        "Checklist",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 758,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Follow-up de leads: do primeiro contato ao fechamento em 2026",
@@ -1173,14 +1635,37 @@
       "meta_title": "Follow-up de leads: do primeiro contato ao fechamento em 2026",
       "meta_description": "Follow-up de leads: do primeiro contato ao fechamento em 2026",
       "canonical": "https://praia.digital/blog/followup-leads-primeiro-contato-fechamento-2026.html",
-      "h2_count": 0,
+      "h2_count": 11,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/abordagem-proprietarios-whatsapp-litoral-2026.html",
+        "https://praia.digital/blog/acelerar-fechamento-vendas-litoral-paulista-2026.html",
+        "https://praia.digital/blog/followup-automático-do-primeiro-contato-ao-fechamento-lote-2026-08-03-22.html",
+        "https://praia.digital/blog/index.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T03:07:58Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Fluxo recomendado",
+        "Roteiros",
+        "Automação",
+        "Métricas",
+        "Cases",
+        "Erros comuns",
+        "Checklist",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 750,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Cases de sucesso: imobiliárias que cresceram no litoral paulista",
@@ -1196,14 +1681,38 @@
       "meta_title": "Cases de sucesso: imobiliárias que cresceram no litoral paulista",
       "meta_description": "Cases de sucesso: imobiliárias que cresceram no litoral paulista",
       "canonical": "https://praia.digital/blog/cases-sucesso-imobiliarias-crescimento-litoral-2026.html",
-      "h2_count": 0,
+      "h2_count": 12,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/followup-leads-primeiro-contato-fechamento-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/marketing-de-conteudo-para-imobiliarias-blog-converte-leads-2026.html",
+        "https://praia.digital/blog/seo-local-imobiliaria-litoral-paulista-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T04:33:35Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Case 1: SEO local + conteúdo por cidade",
+        "Case 2: Follow-up rápido + automação",
+        "Case 3: Dado local na captação",
+        "Case 4: Google Meu Negócio otimizado",
+        "Case 5: Conteúdo em redes sociais",
+        "Lições comuns",
+        "Métricas",
+        "Checklist",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 662,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Como montar uma carteira de imóveis de temporada no litoral",
@@ -1219,14 +1728,38 @@
       "meta_title": "Como montar uma carteira de imóveis de temporada no litoral",
       "meta_description": "Como montar uma carteira de imóveis de temporada no litoral",
       "canonical": "https://praia.digital/blog/montar-carteira-imoveis-temporada-litoral-2026.html",
-      "h2_count": 0,
+      "h2_count": 12,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/estrategia-preco-dinamico-temporada-litoral-2026.html",
+        "https://praia.digital/blog/gestao-temporada-checkin-checkout-sem-dor-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/rentabilidade-imoveis-praia-roi-cidade-litoral-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T04:33:35Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Passo 1: Definição de objetivo",
+        "Passo 2: Seleção de imóveis",
+        "Passo 3: Financiamento",
+        "Passo 4: Gestão de temporada",
+        "Passo 5: ROI e métricas",
+        "Cases",
+        "Erros comuns",
+        "Checklist",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 812,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Redes sociais para corretores: conteúdo que vende no litoral",
@@ -1242,14 +1775,36 @@
       "meta_title": "Redes sociais para corretores: conteúdo que vende no litoral",
       "meta_description": "Redes sociais para corretores: conteúdo que vende no litoral",
       "canonical": "https://praia.digital/blog/redes-sociais-corretores-conteudo-vende-litoral-2026.html",
-      "h2_count": 0,
+      "h2_count": 10,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/instagram-reels-imobiliarias-7-modelos-leads-litoral-2026.html",
+        "https://praia.digital/blog/marketing-de-conteudo-para-imobiliarias-blog-converte-leads-2026.html",
+        "https://praia.digital/blog/seo-local-imobiliaria-litoral-paulista-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T04:33:35Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Regras básicas",
+        "Modelos que vendem",
+        "Roteiros por cidade",
+        "Checklist",
+        "Métricas",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 701,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Análise de viabilidade: comprar para morar ou investir no litoral",
@@ -1265,14 +1820,35 @@
       "meta_title": "Análise de viabilidade: comprar para morar ou investir no litoral",
       "meta_description": "Análise de viabilidade: comprar para morar ou investir no litoral",
       "canonical": "https://praia.digital/blog/analise-viabilidade-comprar-morar-investir-litoral-2026.html",
-      "h2_count": 0,
+      "h2_count": 9,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/alugar-ou-comprar-imovel-litoral-paulista-2026.html",
+        "https://praia.digital/blog/financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/rentabilidade-imoveis-praia-roi-cidade-litoral-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T04:33:35Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Comparativo: morar vs investir",
+        "Custos",
+        "Retorno",
+        "Cases",
+        "Checklist",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 656,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Checklist de captação de imóveis no litoral: 21 passos para corretores em 2026",
@@ -1288,14 +1864,35 @@
       "meta_title": "Checklist de captação de imóveis no litoral: 21 passos para corretores em 2026",
       "meta_description": "Checklist de captação de imóveis no litoral: 21 passos para corretores em 2026",
       "canonical": "https://praia.digital/blog/checklist-captacao-imoveis-litoral-21-passos-2026.html",
-      "h2_count": 0,
+      "h2_count": 9,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html",
+        "https://praia.digital/blog/abordagem-proprietarios-whatsapp-litoral-2026.html",
+        "https://praia.digital/blog/followup-leads-primeiro-contato-fechamento-2026.html",
+        "https://praia.digital/blog/index.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T04:33:35Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "21 passos de captação",
+        "Roteiros",
+        "Métricas",
+        "Cases",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 755,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Checklist de vendas para imobiliárias no litoral paulista: do lead ao fechamento",
@@ -1311,14 +1908,36 @@
       "meta_title": "Checklist de vendas para imobiliárias no litoral paulista: do lead ao fechamento",
       "meta_description": "Checklist de vendas para imobiliárias no litoral paulista: do lead ao fechamento",
       "canonical": "https://praia.digital/blog/checklist-vendas-imobiliarias-litoral-paulista-2026.html",
-      "h2_count": 0,
+      "h2_count": 10,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/acelerar-fechamento-vendas-litoral-paulista-2026.html",
+        "https://praia.digital/blog/checklist-captacao-imoveis-litoral-21-passos-2026.html",
+        "https://praia.digital/blog/followup-leads-primeiro-contato-fechamento-2026.html",
+        "https://praia.digital/blog/index.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T04:33:35Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Fluxo de vendas",
+        "Checklist por estágio",
+        "Roteiros",
+        "Métricas",
+        "Cases",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 733,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "E-mail marketing para imobiliárias: campanhas que geram captação no litoral",
@@ -1334,14 +1953,35 @@
       "meta_title": "E-mail marketing para imobiliárias: campanhas que geram captação no litoral",
       "meta_description": "E-mail marketing para imobiliárias: campanhas que geram captação no litoral",
       "canonical": "https://praia.digital/blog/email-marketing-imobiliarias-campanhas-captacao-litoral-2026.html",
-      "h2_count": 0,
+      "h2_count": 9,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/followup-leads-primeiro-contato-fechamento-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/marketing-de-conteudo-para-imobiliarias-blog-converte-leads-2026.html",
+        "https://praia.digital/blog/seo-local-imobiliaria-litoral-paulista-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T04:33:35Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Modelos de campanha",
+        "Checklist",
+        "Métricas",
+        "Cases",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 696,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Checklist de avaliação de imóveis no litoral: como precificar com dado local em 2026",
@@ -1357,14 +1997,36 @@
       "meta_title": "Checklist de avaliação de imóveis no litoral: como precificar com dado local em 2026",
       "meta_description": "Checklist de avaliação de imóveis no litoral: como precificar com dado local em 2026",
       "canonical": "https://praia.digital/blog/checklist-avaliacao-imoveis-litoral-precificar-dado-local-2026.html",
-      "h2_count": 0,
+      "h2_count": 10,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html",
+        "https://praia.digital/blog/checklist-captacao-imoveis-litoral-21-passos-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/vender-imovel-rapido-litoral-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T04:33:35Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Checklist de avaliação",
+        "Fontes de dado local",
+        "Modelo rápido",
+        "Cases",
+        "Métricas",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 729,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Roteiro de e-mail para captação de proprietários no litoral paulista",
@@ -1380,14 +2042,36 @@
       "meta_title": "Roteiro de e-mail para captação de proprietários no litoral paulista",
       "meta_description": "Roteiro de e-mail para captação de proprietários no litoral paulista",
       "canonical": "https://praia.digital/blog/roteiro-email-captacao-proprietarios-litoral-paulista-2026.html",
-      "h2_count": 0,
+      "h2_count": 10,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/checklist-captacao-imoveis-litoral-21-passos-2026.html",
+        "https://praia.digital/blog/email-marketing-imobiliarias-campanhas-captacao-litoral-2026.html",
+        "https://praia.digital/blog/followup-leads-primeiro-contato-fechamento-2026.html",
+        "https://praia.digital/blog/index.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T04:33:35Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Estrutura recomendada",
+        "Modelos prontos",
+        "Checklist",
+        "Métricas",
+        "Cases",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 698,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Checklist de gestão de temporada para imóveis no litoral paulista",
@@ -1403,14 +2087,39 @@
       "meta_title": "Checklist de gestão de temporada para imóveis no litoral paulista",
       "meta_description": "Checklist de gestão de temporada para imóveis no litoral paulista",
       "canonical": "https://praia.digital/blog/checklist-gestao-temporada-imoveis-litoral-paulista-2026.html",
-      "h2_count": 0,
+      "h2_count": 13,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/estrategia-preco-dinamico-temporada-litoral-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/montar-carteira-imoveis-temporada-litoral-2026.html",
+        "https://praia.digital/blog/rentabilidade-imoveis-praia-roi-cidade-litoral-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T04:33:35Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Checklist pré-temporada",
+        "Checklist check-in",
+        "Checklist check-out",
+        "Checklist pós-temporada",
+        "Roteiros",
+        "Custos",
+        "Métricas",
+        "Cases",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 774,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Modelo de proposta de venda de imóvel no litoral paulista em 2026",
@@ -1426,14 +2135,37 @@
       "meta_title": "Modelo de proposta de venda de imóvel no litoral paulista em 2026",
       "meta_description": "Modelo de proposta de venda de imóvel no litoral paulista em 2026",
       "canonical": "https://praia.digital/blog/modelo-proposta-venda-imovel-litoral-paulista-2026.html",
-      "h2_count": 0,
+      "h2_count": 11,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/checklist-vendas-imobiliarias-litoral-paulista-2026.html",
+        "https://praia.digital/blog/followup-leads-primeiro-contato-fechamento-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/vender-imovel-rapido-litoral-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T04:33:35Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Estrutura recomendada",
+        "Modelo rápido",
+        "Exemplos por perfil",
+        "Checklist",
+        "Métricas",
+        "Cases",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 710,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Checklist de SEO local para imobiliárias no litoral paulista em 2026",
@@ -1449,14 +2181,35 @@
       "meta_title": "Checklist de SEO local para imobiliárias no litoral paulista em 2026",
       "meta_description": "Checklist de SEO local para imobiliárias no litoral paulista em 2026",
       "canonical": "https://praia.digital/blog/checklist-seo-local-imobiliarias-litoral-paulista-2026-v2.html",
-      "h2_count": 0,
+      "h2_count": 9,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/google-meu-negocio-imobiliarias-guia-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/marketing-de-conteudo-para-imobiliarias-blog-converte-leads-2026.html",
+        "https://praia.digital/blog/seo-local-imobiliaria-litoral-paulista-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T06:19:00Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Checklist",
+        "Otimizações",
+        "Métricas",
+        "Cases",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 661,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "E-mail marketing para corretores: nutrição de leads no litoral paulista",
@@ -1472,14 +2225,35 @@
       "meta_title": "E-mail marketing para corretores: nutrição de leads no litoral paulista",
       "meta_description": "E-mail marketing para corretores: nutrição de leads no litoral paulista",
       "canonical": "https://praia.digital/blog/email-marketing-corretores-nutricao-leads-litoral-2026.html",
-      "h2_count": 0,
+      "h2_count": 9,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/email-marketing-imobiliarias-campanhas-captacao-litoral-2026.html",
+        "https://praia.digital/blog/followup-leads-primeiro-contato-fechamento-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/roteiro-email-captacao-proprietarios-litoral-paulista-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T06:19:00Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Modelo de nutrição",
+        "Checklist",
+        "Métricas",
+        "Cases",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 640,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Checklist de follow-up de leads no litoral paulista: do primeiro contato ao fechamento",
@@ -1495,14 +2269,36 @@
       "meta_title": "Checklist de follow-up de leads no litoral paulista: do primeiro contato ao fechamento",
       "meta_description": "Checklist de follow-up de leads no litoral paulista: do primeiro contato ao fechamento",
       "canonical": "https://praia.digital/blog/checklist-followup-leads-litoral-paulista-2026.html",
-      "h2_count": 0,
+      "h2_count": 10,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/acelerar-fechamento-vendas-litoral-paulista-2026.html",
+        "https://praia.digital/blog/checklist-vendas-imobiliarias-litoral-paulista-2026.html",
+        "https://praia.digital/blog/followup-leads-primeiro-contato-fechamento-2026.html",
+        "https://praia.digital/blog/index.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T06:19:00Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Checklist por estágio",
+        "Roteiros",
+        "Automação",
+        "Métricas",
+        "Cases",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 746,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Como usar dados locais para fechar mais vendas de imóveis no litoral paulista",
@@ -1518,14 +2314,36 @@
       "meta_title": "Como usar dados locais para fechar mais vendas de imóveis no litoral paulista",
       "meta_description": "Como usar dados locais para fechar mais vendas de imóveis no litoral paulista",
       "canonical": "https://praia.digital/blog/usar-dados-locais-fechar-vendas-imoveis-litoral-2026.html",
-      "h2_count": 0,
+      "h2_count": 10,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/analise-mercado-imobiliario-litoral-paulista-2026.html",
+        "https://praia.digital/blog/checklist-avaliacao-imoveis-litoral-precificar-dado-local-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/vender-imovel-rapido-litoral-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T06:19:00Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Fontes de dado local",
+        "Modelo de argumento",
+        "Checklist",
+        "Cases",
+        "Métricas",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 677,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Temporada no litoral paulista: guia de preparação para imobiliárias e investidores",
@@ -1541,14 +2359,36 @@
       "meta_title": "Temporada no litoral paulista: guia de preparação para imobiliárias e investidores",
       "meta_description": "Temporada no litoral paulista: guia de preparação para imobiliárias e investidores",
       "canonical": "https://praia.digital/blog/temporada-litoral-paulista-guia-preparacao-imobiliarias-investidores-2026.html",
-      "h2_count": 0,
+      "h2_count": 10,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/estrategia-preco-dinamico-temporada-litoral-2026.html",
+        "https://praia.digital/blog/gestao-temporada-checkin-checkout-sem-dor-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/montar-carteira-imoveis-temporada-litoral-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T06:19:00Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Checklist de preparação",
+        "Preço e ocupação",
+        "Custos",
+        "Métricas",
+        "Cases",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 596,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Imóveis econômicos no litoral paulista: como captar e vender mais em 2026",
@@ -1564,14 +2404,37 @@
       "meta_title": "Imóveis econômicos no litoral paulista: como captar e vender mais em 2026",
       "meta_description": "Imóveis econômicos no litoral paulista: como captar e vender mais em 2026",
       "canonical": "https://praia.digital/blog/imoveis-economicos-litoral-paulista-captar-vender-mais-2026.html",
-      "h2_count": 0,
+      "h2_count": 11,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/checklist-captacao-imoveis-litoral-21-passos-2026.html",
+        "https://praia.digital/blog/financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/vender-imovel-rapido-litoral-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T06:19:00Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Estratégias",
+        "Canais",
+        "Roteiros",
+        "Cases",
+        "Métricas",
+        "Checklist",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 659,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Como montar operação de imobiliária enxuta no litoral paulista em 2026",
@@ -1587,14 +2450,37 @@
       "meta_title": "Como montar operação de imobiliária enxuta no litoral paulista em 2026",
       "meta_description": "Como montar operação de imobiliária enxuta no litoral paulista em 2026",
       "canonical": "https://praia.digital/blog/montar-operacao-imobiliaria-enxuta-litoral-paulista-2026.html",
-      "h2_count": 0,
+      "h2_count": 11,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/google-meu-negocio-imobiliarias-guia-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/marketing-de-conteudo-para-imobiliarias-blog-converte-leads-2026.html",
+        "https://praia.digital/blog/seo-local-imobiliaria-litoral-paulista-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T06:19:00Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Estrutura enxuta",
+        "Custos",
+        "Ferramentas",
+        "Cases",
+        "Métricas",
+        "Checklist",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 649,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Checklist de captação digital para imobiliárias no litoral paulista em 2026",
@@ -1610,14 +2496,36 @@
       "meta_title": "Checklist de captação digital para imobiliárias no litoral paulista em 2026",
       "meta_description": "Checklist de captação digital para imobiliárias no litoral paulista em 2026",
       "canonical": "https://praia.digital/blog/checklist-captacao-digital-imobiliarias-litoral-paulista-2026.html",
-      "h2_count": 0,
+      "h2_count": 10,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/checklist-captacao-imoveis-litoral-21-passos-2026.html",
+        "https://praia.digital/blog/google-meu-negocio-imobiliarias-guia-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/seo-local-imobiliaria-litoral-paulista-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T06:19:00Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Checklist",
+        "Canais",
+        "Automação",
+        "Métricas",
+        "Cases",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 658,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Roteiro de WhatsApp para corretores no litoral paulista: do primeiro contato ao fechamento",
@@ -1633,14 +2541,35 @@
       "meta_title": "Roteiro de WhatsApp para corretores no litoral paulista: do primeiro contato ao fechamento",
       "meta_description": "Roteiro de WhatsApp para corretores no litoral paulista: do primeiro contato ao fechamento",
       "canonical": "https://praia.digital/blog/roteiro-whatsapp-corretores-litoral-paulista-primeiro-contato-fechamento-2026.html",
-      "h2_count": 0,
+      "h2_count": 9,
       "faq_count": 0,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/checklist-followup-leads-litoral-paulista-2026.html",
+        "https://praia.digital/blog/followup-leads-primeiro-contato-fechamento-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/marketing-de-conteudo-para-imobiliarias-blog-converte-leads-2026.html"
+      ],
       "course_link": "",
       "published_at": "2026-08-12T06:19:00Z",
       "http_status": "200",
       "in_sitemap": true,
-      "canonical_self": true
+      "canonical_self": true,
+      "h2": [
+        "Roteiro por estágio",
+        "Automação",
+        "Métricas",
+        "Cases",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "word_count": 651,
+      "author": "Praia Digital",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "slug": "checklist-inspecao-imoveis-litoral-visita-segura-2026.html",
@@ -1652,7 +2581,32 @@
       "http_status": "200",
       "in_sitemap": true,
       "canonical_self": true,
-      "word_count": 700
+      "word_count": 700,
+      "canonical": "https://praia.digital/blog/checklist-inspecao-imoveis-litoral-visita-segura-2026.html",
+      "meta_title": "Checklist de inspeção de imóveis no litoral paulista: visita segura e sem surpresas em 2026 — guia prático | Praia Digital",
+      "h2": [
+        "Checklist",
+        "Roteiro",
+        "Documentação",
+        "Cases",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "h2_count": 9,
+      "author": "Praia Digital",
+      "cluster": "financiamento",
+      "internal_links": [
+        "https://praia.digital/blog/checklist-avaliacao-imoveis-litoral-precificar-dado-local-2026.html",
+        "https://praia.digital/blog/documentacao-compra-imovel-litoral-guia-2026.html",
+        "https://praia.digital/blog/financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html",
+        "https://praia.digital/blog/index.html"
+      ],
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "slug": "checklist-preparacao-imovel-venda-litoral-primeira-visita-2026.html",
@@ -1664,7 +2618,33 @@
       "http_status": "200",
       "in_sitemap": true,
       "canonical_self": true,
-      "word_count": 700
+      "word_count": 700,
+      "canonical": "https://praia.digital/blog/checklist-preparacao-imovel-venda-litoral-primeira-visita-2026.html",
+      "meta_title": "Checklist de preparação de imóvel para venda no litoral paulista: da primeira visita à proposta em 2026 — guia prático | Praia Digital",
+      "h2": [
+        "Checklist",
+        "Roteiro de visita",
+        "Documentação",
+        "Cases",
+        "Métricas",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "h2_count": 10,
+      "author": "Praia Digital",
+      "cluster": "documentacao",
+      "internal_links": [
+        "https://praia.digital/blog/checklist-inspecao-imoveis-litoral-visita-segura-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/modelo-proposta-venda-imovel-litoral-paulista-2026.html",
+        "https://praia.digital/blog/vender-imovel-rapido-litoral-2026.html"
+      ],
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "slug": "checklist-negociacao-imoveis-litoral-2026.html",
@@ -1676,7 +2656,32 @@
       "http_status": "200",
       "in_sitemap": true,
       "canonical_self": true,
-      "word_count": 700
+      "word_count": 700,
+      "canonical": "https://praia.digital/blog/checklist-negociacao-imoveis-litoral-2026.html",
+      "meta_title": "Checklist de negociação de imóveis no litoral paulista: fechar com dado e sem conflito em 2026 — guia prático | Praia Digital",
+      "h2": [
+        "Checklist",
+        "Roteiro",
+        "Cases",
+        "Métricas",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "h2_count": 9,
+      "author": "Praia Digital",
+      "cluster": "documentacao",
+      "internal_links": [
+        "https://praia.digital/blog/checklist-vendas-imobiliarias-litoral-paulista-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/modelo-proposta-venda-imovel-litoral-paulista-2026.html",
+        "https://praia.digital/blog/usar-dados-locais-fechar-vendas-imoveis-litoral-2026.html"
+      ],
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "slug": "checklist-fechamento-venda-imoveis-litoral-2026.html",
@@ -1688,7 +2693,33 @@
       "http_status": "200",
       "in_sitemap": true,
       "canonical_self": true,
-      "word_count": 700
+      "word_count": 700,
+      "canonical": "https://praia.digital/blog/checklist-fechamento-venda-imoveis-litoral-2026.html",
+      "meta_title": "Checklist de fechamento de venda de imóvel no litoral paulista: evitar retrabalho e antecipar registro em 2026 — guia prático | Praia Digital",
+      "h2": [
+        "Checklist pré-fechamento",
+        "Documentos",
+        "Pós-fechamento",
+        "Cases",
+        "Métricas",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "h2_count": 10,
+      "author": "Praia Digital",
+      "cluster": "documentacao",
+      "internal_links": [
+        "https://praia.digital/blog/checklist-negociacao-imoveis-litoral-2026.html",
+        "https://praia.digital/blog/documentacao-compra-imovel-litoral-guia-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/modelo-proposta-venda-imovel-litoral-paulista-2026.html"
+      ],
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "slug": "impostos-compra-imoveis-litoral-paulista-guia-2026.html",
@@ -1700,7 +2731,32 @@
       "http_status": "200",
       "in_sitemap": true,
       "canonical_self": true,
-      "word_count": 700
+      "word_count": 700,
+      "canonical": "https://praia.digital/blog/impostos-compra-imoveis-litoral-paulista-guia-2026.html",
+      "meta_title": "Impostos na compra de imóvel no litoral paulista: guia completo para evitar surpresas em 2026 — Praia Digital",
+      "h2": [
+        "Principais impostos",
+        "Como calcular",
+        "Checklist",
+        "Cases",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "h2_count": 9,
+      "author": "Praia Digital",
+      "cluster": "financiamento",
+      "internal_links": [
+        "https://praia.digital/blog/checklist-preparacao-imovel-venda-litoral-primeira-visita-2026.html",
+        "https://praia.digital/blog/documentacao-compra-imovel-litoral-guia-2026.html",
+        "https://praia.digital/blog/financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html",
+        "https://praia.digital/blog/index.html"
+      ],
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "slug": "roteiro-followup-pos-visita-imoveis-litoral-2026.html",
@@ -1712,7 +2768,33 @@
       "http_status": "200",
       "in_sitemap": true,
       "canonical_self": true,
-      "word_count": 700
+      "word_count": 700,
+      "canonical": "https://praia.digital/blog/roteiro-followup-pos-visita-imoveis-litoral-2026.html",
+      "meta_title": "Roteiro de follow-up pós-visita de imóvel no litoral paulista: do agradecimento à proposta em 2026 — guia prático | Praia Digital",
+      "h2": [
+        "Roteiro",
+        "Modelos",
+        "Automação",
+        "Cases",
+        "Métricas",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "h2_count": 10,
+      "author": "Praia Digital",
+      "cluster": "impostos_custos",
+      "internal_links": [
+        "https://praia.digital/blog/checklist-followup-leads-litoral-paulista-2026.html",
+        "https://praia.digital/blog/checklist-visita-imoveis-litoral-paulista-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/modelo-proposta-venda-imovel-litoral-paulista-2026.html"
+      ],
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "slug": "checklist-visita-imoveis-litoral-paulista-2026.html",
@@ -1724,7 +2806,33 @@
       "http_status": "200",
       "in_sitemap": true,
       "canonical_self": true,
-      "word_count": 700
+      "word_count": 700,
+      "canonical": "https://praia.digital/blog/checklist-visita-imoveis-litoral-paulista-2026.html",
+      "meta_title": "Checklist de visita a imóveis no litoral paulista: o que fazer antes, durante e depois em 2026 — guia prático | Praia Digital",
+      "h2": [
+        "Antes da visita",
+        "Durante a visita",
+        "Depois da visita",
+        "Perguntas essenciais",
+        "Cases",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "h2_count": 10,
+      "author": "Praia Digital",
+      "cluster": "documentacao",
+      "internal_links": [
+        "https://praia.digital/blog/alugar-ou-comprar-imovel-litoral-paulista-2026.html",
+        "https://praia.digital/blog/checklist-inspecao-imoveis-litoral-visita-segura-2026.html",
+        "https://praia.digital/blog/documentacao-compra-imovel-litoral-guia-2026.html",
+        "https://praia.digital/blog/index.html"
+      ],
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "slug": "como-fidelizar-clientes-imobiliaria-litoral-2026.html",
@@ -1736,7 +2844,33 @@
       "http_status": "200",
       "in_sitemap": true,
       "canonical_self": true,
-      "word_count": 700
+      "word_count": 700,
+      "canonical": "https://praia.digital/blog/como-fidelizar-clientes-imobiliaria-litoral-2026.html",
+      "meta_title": "Como fidelizar clientes em imobiliária no litoral paulista em 2026 — guia completo para corretores | Praia Digital",
+      "h2": [
+        "Estratégias",
+        "Follow-up pós-venda",
+        "Conteúdo para fidelização",
+        "Métricas",
+        "Cases",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "h2_count": 10,
+      "author": "Praia Digital",
+      "cluster": "impostos_custos",
+      "internal_links": [
+        "https://praia.digital/blog/checklist-followup-leads-litoral-paulista-2026.html",
+        "https://praia.digital/blog/followup-leads-primeiro-contato-fechamento-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/marketing-de-conteudo-para-imobiliarias-blog-converte-leads-2026.html"
+      ],
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "slug": "retencao-clientes-imobiliaria-litoral-paulista-2026.html",
@@ -1748,7 +2882,32 @@
       "http_status": "200",
       "in_sitemap": true,
       "canonical_self": true,
-      "word_count": 700
+      "word_count": 700,
+      "canonical": "https://praia.digital/blog/retencao-clientes-imobiliaria-litoral-paulista-2026.html",
+      "meta_title": "Retenção de clientes em imobiliária no litoral paulista em 2026 — guia completo para corretores | Praia Digital",
+      "h2": [
+        "Estratégias de retenção",
+        "Follow-up pós-venda",
+        "Métricas",
+        "Cases",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "h2_count": 9,
+      "author": "Praia Digital",
+      "cluster": "impostos_custos",
+      "internal_links": [
+        "https://praia.digital/blog/como-fidelizar-clientes-imobiliaria-litoral-2026.html",
+        "https://praia.digital/blog/followup-leads-primeiro-contato-fechamento-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/marketing-de-conteudo-para-imobiliarias-blog-converte-leads-2026.html"
+      ],
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "slug": "cases-de-sucesso-imobiliarias-litoral-paulista-2026.html",
@@ -1761,9 +2920,32 @@
       "in_sitemap": true,
       "canonical_self": true,
       "word_count": 1600,
-      "internal_links": 3,
+      "internal_links": [
+        "https://praia.digital/blog/analise-concorrencia-imobiliarias-litoral-paulista-2026.html",
+        "https://praia.digital/blog/checklist-seo-local-imobiliarias-litoral-paulista-2026-v2.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/marketing-conteudo-imobiliarias-blog-converte-leads-2026.html"
+      ],
       "has_faq_schema": true,
-      "has_article_schema": true
+      "has_article_schema": true,
+      "canonical": "https://praia.digital/blog/cases-de-sucesso-imobiliarias-litoral-paulista-2026.html",
+      "meta_title": "Cases de sucesso: imobiliárias que cresceram no litoral paulista em 2026 — guia prático | Praia Digital",
+      "h2": [
+        "Cases",
+        "Lições",
+        "Padrões",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "h2_count": 8,
+      "author": "Praia Digital",
+      "cluster": "avaliacao_precificacao",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "slug": "como-usar-instagram-reels-para-corretores-imobiliarias-litoral-paulista-2026.html",
@@ -1776,9 +2958,35 @@
       "in_sitemap": true,
       "canonical_self": true,
       "word_count": 1800,
-      "internal_links": 3,
+      "internal_links": [
+        "https://praia.digital/blog/cases-de-sucesso-imobiliarias-litoral-paulista-2026.html",
+        "https://praia.digital/blog/google-meu-negocio-imobiliarias-guia-2026.html",
+        "https://praia.digital/blog/index.html",
+        "https://praia.digital/blog/marketing-conteudo-imobiliarias-blog-converte-leads-2026.html"
+      ],
       "has_faq_schema": true,
-      "has_article_schema": true
+      "has_article_schema": true,
+      "canonical": "https://praia.digital/blog/como-usar-instagram-reels-para-corretores-imobiliarias-litoral-paulista-2026.html",
+      "meta_title": "Como usar Instagram Reels para corretores e imobiliárias no litoral paulista em 2026 — guia prático | Praia Digital",
+      "h2": [
+        "Ideias",
+        "Roteiro",
+        "SEO local",
+        "Hashtags",
+        "Cases",
+        "Métricas",
+        "Erros comuns",
+        "Dica prática",
+        "FAQ",
+        "Artigos relacionados",
+        "Conclusão"
+      ],
+      "h2_count": 11,
+      "author": "Praia Digital",
+      "cluster": "impostos_custos",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "slug": "como-ganhar-mais-com-aluguel-temporada-litoral-2026.html",
@@ -1786,7 +2994,18 @@
       "status": "PUBLISHED",
       "published": true,
       "http_status": "200",
-      "validated_at": "2026-08-12T12:45:44.115679Z"
+      "validated_at": "2026-08-12T12:45:44.115679Z",
+      "canonical": "https://praia.digital/blog/como-ganhar-mais-com-aluguel-temporada-litoral-2026.html",
+      "canonical_self": true,
+      "word_count": 10,
+      "author": "Praia Digital",
+      "published_at": "2026-08-12T22:50:24.263577+00:00",
+      "in_sitemap": true,
+      "cluster": "aluguel_temporada",
+      "internal_links": [],
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "slug": "precificar-imovel-litoral-com-dados-reais-2026.html",
@@ -1797,7 +3016,32 @@
       "http_status": "200",
       "word_count": 874,
       "created_at": "2026-08-12T14:40:58.468067Z",
-      "published_at": "2026-08-12T14:40:58.468067Z"
+      "published_at": "2026-08-12T14:40:58.468067Z",
+      "h1": "Como precificar imóvel no litoral com dados reais em 2026",
+      "meta_description": "Aprenda a precificar imóveis no litoral paulista usando dados reais de mercado, comparáveis locais e tendências sazonais. Guia prático para corretores e proprietários em 2026.",
+      "meta_title": "Como precificar imóvel no litoral com dados reais em 2026 — guia prático para corretores e proprietários",
+      "h2": [
+        "1. Por que a precificação baseada em dados reais é decisiva no litoral",
+        "2. Fontes de dados confiáveis para precificar imóveis no litoral",
+        "3. Passo a passo para precificar com dados reais",
+        "4. Como usar a precificação para gerar mais leads",
+        "5. Erros comuns na precificação de imóveis no litoral",
+        "6. Checklist rápido de precificação",
+        "Perguntas frequentes sobre precificação de imóveis no litoral",
+        "Conclusão"
+      ],
+      "h2_count": 8,
+      "author": "Praia Digital",
+      "in_sitemap": true,
+      "canonical_self": true,
+      "cluster": "documentacao",
+      "internal_links": [
+        "https://praia.digital/blog/estrategia-preco-dinamico-temporada-litoral-2026.html"
+      ],
+      "canonical": "https://praia.digital/blog/precificar-imovel-litoral-com-dados-reais-2026.html",
+      "intent": "informacional",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "slug": "crm-para-corretores-primeiro-contato-fechamento.html",
@@ -1825,7 +3069,11 @@
         "FAQ"
       ],
       "h2_count": 11,
-      "internal_links": [],
+      "internal_links": [
+        "https://praia.digital/blog/abordagem-proprietarios-whatsapp-litoral-2026.html",
+        "https://praia.digital/blog/checklist-followup-leads-litoral-paulista-2026.html",
+        "https://praia.digital/blog/followup-leads-primeiro-contato-fechamento-2026.html"
+      ],
       "faq_count": 0,
       "course_link": "",
       "keyword": "CRM para corretores: do primeiro contato ao fechamento — guia prático 2026",
@@ -1957,7 +3205,32 @@
       "status": "PUBLISHED",
       "published": true,
       "http_status": "200",
-      "validated_at": "2026-08-12T15:41:49.586948"
+      "validated_at": "2026-08-12T15:41:49.586948",
+      "h1": "Home staging para imóveis de praia: venda ou alugue mais rápido",
+      "meta_description": "Home staging para imóveis de praia no litoral paulista: técnicas práticas para valorizar o imóvel, reduzir o tempo de venda ou locação e aumentar a percepção de valor por fotos e tours.",
+      "meta_title": "Home staging para imóveis de praia: venda ou alugue mais rápido — guia prático para corretores e proprietários",
+      "h2": [
+        "O que é home staging no contexto de praia",
+        "Técnicas práticas para imóveis de praia",
+        "Antes e depois",
+        "Como aplicar sem custo alto",
+        "Impacto em anúncios digitais",
+        "FAQ",
+        "CTA"
+      ],
+      "h2_count": 7,
+      "internal_links": [
+        "/blog/captacao-imoveis-litoral-sem-custo-2026.html"
+      ],
+      "word_count": 429,
+      "author": "Praia Digital",
+      "published_at": "2026-08-12T22:50:24.270572+00:00",
+      "in_sitemap": true,
+      "canonical_self": true,
+      "cluster": "impostos_custos",
+      "canonical": "https://praia.digital/blog/home-staging-imoveis-praia-vender-mais-rapido-2026.html",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "slug": "erros-documentacao-compra-imovel-litoral-2026.html",
@@ -1973,7 +3246,36 @@
       "links_interno": [
         "https://praia.digital/blog/documentacao-compra-imovel-litoral-guia-2026.html"
       ],
-      "cta": "Fale com um especialista"
+      "cta": "Fale com um especialista",
+      "canonical": "https://praia.digital/blog/erros-documentacao-compra-imovel-litoral-2026.html",
+      "canonical_self": true,
+      "h1": "Erros na documentação para comprar imóvel no litoral que atrasam ou matam negócios — checklist prático",
+      "meta_description": "Evite erros comuns na documentação para comprar imóvel no litoral. Checklist prático para corretores e compradores fecharem negócio com segurança em 2026.",
+      "meta_title": "Erros na documentação para comprar imóvel no litoral — checklist prático para evitar prejuízos",
+      "h2": [
+        "1. Começar pelo financiamento sem análise prévia",
+        "2. Esquecer documentos pessoais atualizados",
+        "3. Não validar a documentação do imóvel",
+        "4. Ignorar restrições do condomínio",
+        "2. Esquecer a escritura e o registro",
+        "3. Aceitar sem vistoria",
+        "Checklist rápido",
+        "Quando vale pedir apoio profissional",
+        "Perguntas frequentes"
+      ],
+      "h2_count": 9,
+      "word_count": 401,
+      "author": "Praia Digital",
+      "published_at": "2026-08-12T22:50:24.271572+00:00",
+      "in_sitemap": true,
+      "cluster": "financiamento",
+      "internal_links": [
+        "https://praia.digital/blog/compra-imovel-herdado-litoral-cuidados-2026.html",
+        "https://praia.digital/blog/documentacao-compra-imovel-litoral-guia-2026.html",
+        "https://praia.digital/blog/documentacao-vender-imovel-litoral-2026.html"
+      ],
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "slug": "airbnb-boa-paginao-primeiro-mes-litoral-2026.html",
@@ -1989,7 +3291,34 @@
       "links_interno": [
         "https://praia.digital/blog/locacao-temporada-pet-friendly-litoral-2026.html"
       ],
-      "cta": "Quer otimizar sua estratégia no litoral?"
+      "cta": "Quer otimizar sua estratégia no litoral?",
+      "canonical": "https://praia.digital/blog/airbnb-boa-paginao-primeiro-mes-litoral-2026.html",
+      "canonical_self": true,
+      "h1": "Airbnb no litoral: como fazer uma boa página e conseguir primeiras reservas — guia para proprietários",
+      "meta_description": "Aprenda a criar uma página eficiente no Airbnb no litoral, melhorar apresentação, preço, avaliações e conseguir as primeiras reservas com mais rapidez.",
+      "meta_title": "Airbnb no litoral: como fazer uma boa página e conseguir primeiras reservas — guia para proprietários",
+      "h2": [
+        "Montar título e descrição claros",
+        "Fotos que convertem",
+        "Definir preço por temporada",
+        "Regras e experiência do hóspede",
+        "Avaliações e reputação",
+        "SEO interno do anúncio",
+        "Perguntas frequentes"
+      ],
+      "h2_count": 7,
+      "word_count": 351,
+      "author": "Praia Digital",
+      "published_at": "2026-08-12T22:50:24.272572+00:00",
+      "in_sitemap": true,
+      "cluster": "impostos_custos",
+      "internal_links": [
+        "https://praia.digital/blog/documentacao-aluguel-temporada-litoral-2026.html",
+        "https://praia.digital/blog/estrategia-preco-dinamico-temporada-litoral-2026.html",
+        "https://praia.digital/blog/gestao-temporada-checkin-checkout-sem-dor-2026.html"
+      ],
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "slug": "melhor-dia-divulgar-imoveis-litoral-2026.html",
@@ -2003,7 +3332,26 @@
       "created_at": "2026-08-12T16:17:51.132274",
       "updated_at": "2026-08-12T16:17:51.132274",
       "links_interno": [],
-      "cta": "Fale com um especialista"
+      "cta": "Fale com um especialista",
+      "h1": "Melhor dia para divulgar imóveis no litoral e aumentar cliques",
+      "meta_description": "Descubra o melhor dia para divulgar imóveis no litoral paulista e aumentar cliques sem anúncios pagos.",
+      "meta_title": "Melhor dia para divulgar imóveis no litoral e aumentar cliques | Praia Digital",
+      "h2": [
+        "Padrão útil no litoral paulista"
+      ],
+      "h2_count": 1,
+      "word_count": 404,
+      "author": "Praia Digital",
+      "published_at": "2026-08-12T22:50:24.273573+00:00",
+      "in_sitemap": true,
+      "canonical_self": true,
+      "cluster": "avaliacao_precificacao",
+      "internal_links": [
+        "https://praia.digital/blog/funil-vendas-imobiliaria-litoral-2026.html"
+      ],
+      "canonical": "https://praia.digital/blog/melhor-dia-divulgar-imoveis-litoral-2026.html",
+      "funnel": "Meio",
+      "article_type": "A"
     },
     {
       "title": "Financiar imóvel usado no litoral de SP em 2026 — guia prático",
