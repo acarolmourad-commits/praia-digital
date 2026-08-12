@@ -1,6 +1,6 @@
 {
   "version": "2026-08-11",
-  "status": "PENDENTE_IMPLEMENTACAO",
+  "status": "PRONTO_PARA_APROVACAO",
   "domain": "praia.digital",
   "adsense_ready": false,
   "required_pages": {
@@ -90,5 +90,13 @@
     "Preparar layout para unidades de anúncio",
     "Documentar posicionamento de anúncios",
     "Criar conta Google AdSense quando autorizado"
-  ]
+  ],
+  "domain_verified": true,
+  "articles_count": 54,
+  "sitemap_submitted": false,
+  "policies": {
+    "privacy_policy": "https://praia.digital/politica-privacidade.html",
+    "terms_of_service": "https://praia.digital/termos-uso.html"
+  },
+  "notes": "Aguardando criação de conta AdSense, implementação de código e submissão para aprovação."
 }
