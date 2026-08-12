@@ -1787,6 +1787,44 @@
       "published": true,
       "http_status": "200",
       "validated_at": "2026-08-12T12:45:44.115679Z"
+    },
+    {
+      "slug": "precificar-imovel-litoral-com-dados-reais-2026.html",
+      "title": "Como precificar imóvel no litoral com dados reais em 2026",
+      "category": "precificacao",
+      "status": "PUBLISHED",
+      "published": true,
+      "http_status": "200",
+      "word_count": 874,
+      "created_at": "2026-08-12T14:40:58.468067Z",
+      "published_at": "2026-08-12T14:40:58.468067Z"
+    },
+    {
+      "slug": "crm-para-corretores-primeiro-contato-fechamento",
+      "title": "CRM para corretores: do primeiro contato ao fechamento — guia prático 2026",
+      "status": "PUBLISHED",
+      "published": true,
+      "published_at": "2026-08-12T15:31:13.741086",
+      "http_status": "200",
+      "validated_at": "2026-08-12T15:31:13.741086"
+    },
+    {
+      "slug": "financiamento-social-imoveis-quando-vale-pena-corretores",
+      "title": "Financiamento social para imóveis: quando vale a pena para corretores | Praia Digital",
+      "status": "PUBLISHED",
+      "published": true,
+      "published_at": "2026-08-12T15:31:13.741086",
+      "http_status": "200",
+      "validated_at": "2026-08-12T15:31:13.741086"
+    },
+    {
+      "slug": "refinanciamento-imovel-praia-quando-vale-pena-2026",
+      "title": "Refinanciamento de imóvel na praia: quando vale a pena em 2026 | Praia Digital",
+      "status": "PUBLISHED",
+      "published": true,
+      "published_at": "2026-08-12T15:31:13.741086",
+      "http_status": "200",
+      "validated_at": "2026-08-12T15:31:13.741086"
     }
   ],
   "publication_plan": [
