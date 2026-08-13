@@ -896,11 +896,6 @@
   "next_queue": [
     {
       "cluster": "locacao_temporada",
-      "city": "bertioga",
-      "article_type": "C"
-    },
-    {
-      "cluster": "locacao_temporada",
       "city": "ubatuba",
       "article_type": "A"
     },
