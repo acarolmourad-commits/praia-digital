@@ -895,71 +895,71 @@
   "update_candidates": [],
   "next_queue": [
     {
-      "cluster": "automacao_ia",
+      "cluster": "bairros_cidades",
+      "city": "sao_sebastiao",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "editorial",
       "city": "santos",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "automacao_ia",
-      "city": "praia_grande",
+      "cluster": "editorial",
+      "city": "guaruja",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "automacao_ia",
+      "cluster": "editorial",
       "city": "bertioga",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "automacao_ia",
+      "cluster": "editorial",
       "city": "itanhaem",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "automacao_ia",
+      "cluster": "editorial",
       "city": "mongagua",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "automacao_ia",
+      "cluster": "editorial",
       "city": "peruibe",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "automacao_ia",
+      "cluster": "editorial",
       "city": "caraguatatuba",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "automacao_ia",
+      "cluster": "editorial",
       "city": "ilhabela",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "automacao_ia",
-      "city": "ubatuba",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "maresias",
+      "cluster": "editorial",
+      "city": "sao_sebastiao",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
