@@ -4,7 +4,7 @@
     "domain": "praia.digital",
     "blog_path": ".\\blog",
     "scope": "controle editorial contínuo + integracao hotmart",
-    "updated_at": "2026-08-13T19:02:13.567894+00:00"
+    "updated_at": "2026-08-13T19:05:57.718864+00:00"
   },
   "products": [
     {
@@ -898,78 +898,6 @@
       "cluster": "cases",
       "city": "litoral_paulista",
       "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "parcerias",
-      "city": "ilhabela",
-      "article_type": "A",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "parcerias",
-      "city": "sao_sebastiao",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "parcerias",
-      "city": "sao_sebastiao",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "parcerias",
-      "city": "sao_sebastiao",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "parcerias",
-      "city": "sao_sebastiao",
-      "article_type": "A",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "parcerias",
-      "city": "sao_vicente",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "parcerias",
-      "city": "sao_vicente",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "parcerias",
-      "city": "sao_vicente",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "parcerias",
-      "city": "sao_vicente",
-      "article_type": "A",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
