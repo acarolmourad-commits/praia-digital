@@ -1,0 +1,46 @@
+# Batch 46 — Candidate Topics
+
+Generated at: 2026-08-13T06:47:35.785540+00:00
+
+## All Candidates
+
+1. [VALID] Imóvel no litoral: direito de vizinhança — barulho (`imovel-litoral-direito-vizinhança-barulho-2026.html`)
+2. [VALID] Imóvel no litoral: direito de vizinhança — obras (`imovel-litoral-direito-vizinhança-obras-2026.html`)
+3. [VALID] Imóvel no litoral: direito de vizinhança — condomínio (`imovel-litoral-direito-vizinhança-condominio-2026.html`)
+4. [VALID] Investidor de imóvel no litoral: reforma — gasto e retorno (`investidor-imovel-litoral-reforma-gasto-retorno-2026.html`)
+5. [VALID] Investidor de imóvel no litoral: aluguel de curto prazo (`investidor-imovel-litoral-aluguel-curto-prazo-2026.html`)
+6. [VALID] Investidor de imóvel no litoral: calculadora de rentabilidade (`investidor-imovel-litoral-calculadora-rentabilidade-2026.html`)
+7. [VALID] Proprietário no litoral: reforma antes de alugar (`proprietario-litoral-reforma-antes-alugar-2026.html`)
+8. [VALID] Proprietário no litoral: contrato de aluguel pronto (`proprietario-litoral-contrato-aluguel-pronto-2026.html`)
+9. [VALID] Proprietário no litoral: fiscalização de aluguel (`proprietario-litoral-fiscalizacao-aluguel-2026.html`)
+10. [VALID] Corretor no litoral: captação de imóveis (`corretor-litoral-captacao-imoveis-2026.html`)
+11. [VALID] Corretor no litoral: follow-up de cliente (`corretor-litoral-follow-up-cliente-2026.html`)
+12. [VALID] Corretor no litoral: visita técnica de imóvel (`corretor-litoral-visita-tecnica-imovel-2026.html`)
+13. [VALID] Imóvel no litoral: segurança residencial em condomínio (`imovel-litoral-seguranca-residencial-condominio-2026.html`)
+14. [VALID] Imóvel no litoral: segurança em aluguel de temporada (`imovel-litoral-seguranca-aluguel-temporada-2026.html`)
+15. [VALID] Imóvel no litoral: segurança e portaria 24h (`imovel-litoral-seguranca-portaria-24h-2026.html`)
+16. [VALID] Imóvel no litoral: smart home e automação (`imovel-litoral-smart-home-automacao-2026.html`)
+17. [VALID] Imóvel no litoral: smart home e segurança (`imovel-litoral-smart-home-seguranca-2026.html`)
+18. [VALID] Imóvel no litoral: smart home e economia de energia (`imovel-litoral-smart-home-economia-energia-2026.html`)
+19. [VALID] Imóvel no litoral: sustentabilidade e energia solar (`imovel-litoral-sustentabilidade-energia-solar-2026.html`)
+20. [VALID] Imóvel no litoral: sustentabilidade e recuperação de água (`imovel-litoral-sustentabilidade-recuperacao-agua-2026.html`)
+21. [VALID] Imóvel no litoral: sustentabilidade e construção verde (`imovel-litoral-sustentabilidade-construcao-verde-2026.html`)
+22. [VALID] Imóvel no litoral: gestão de aluguel de temporada (`imovel-litoral-gestao-aluguel-temporada-2026.html`)
+23. [VALID] Imóvel no litoral: gestão de manutenção predial (`imovel-litoral-gestao-manutencao-predial-2026.html`)
+24. [VALID] Imóvel no litoral: gestão de custo fixo (`imovel-litoral-gestao-custo-fixo-2026.html`)
+25. [VALID] Imóvel no litoral: mercado e valorização (`imovel-litoral-mercado-valorizacao-2026.html`)
+26. [VALID] Imóvel no litoral: mercado e tendência (`imovel-litoral-mercado-tendencia-2026.html`)
+27. [VALID] Imóvel no litoral: mercado e comparação de cidades (`imovel-litoral-mercado-comparacao-cidades-2026.html`)
+
+## Selected (top 10)
+
+1. Imóvel no litoral: direito de vizinhança — barulho (`imovel-litoral-direito-vizinhança-barulho-2026.html`)
+2. Imóvel no litoral: direito de vizinhança — obras (`imovel-litoral-direito-vizinhança-obras-2026.html`)
+3. Imóvel no litoral: direito de vizinhança — condomínio (`imovel-litoral-direito-vizinhança-condominio-2026.html`)
+4. Investidor de imóvel no litoral: reforma — gasto e retorno (`investidor-imovel-litoral-reforma-gasto-retorno-2026.html`)
+5. Investidor de imóvel no litoral: aluguel de curto prazo (`investidor-imovel-litoral-aluguel-curto-prazo-2026.html`)
+6. Investidor de imóvel no litoral: calculadora de rentabilidade (`investidor-imovel-litoral-calculadora-rentabilidade-2026.html`)
+7. Proprietário no litoral: reforma antes de alugar (`proprietario-litoral-reforma-antes-alugar-2026.html`)
+8. Proprietário no litoral: contrato de aluguel pronto (`proprietario-litoral-contrato-aluguel-pronto-2026.html`)
+9. Proprietário no litoral: fiscalização de aluguel (`proprietario-litoral-fiscalizacao-aluguel-2026.html`)
+10. Corretor no litoral: captação de imóveis (`corretor-litoral-captacao-imoveis-2026.html`)
