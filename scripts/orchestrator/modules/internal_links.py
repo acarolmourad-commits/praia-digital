@@ -66,16 +66,15 @@ def run(context: dict) -> dict:
     for formation, count in formation_counts.items():
         if count < 3:
             opportunities.append({
-                'type': 'more_articles',
-                'formation': formation,
-                'current_count': count,
+                'type': 'add_links',
+                'message': f"{formation}: {count} artigos relacionados",
                 'priority': 3,
             })
 
     if without_links > 50:
         opportunities.append({
             'type': 'add_links',
-            'count': without_links,
+            'message': f"{without_links} artigos sem links para formações",
             'priority': 2,
         })
 
