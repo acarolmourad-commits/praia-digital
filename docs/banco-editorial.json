@@ -896,41 +896,27 @@
   "next_queue": [
     {
       "cluster": "compra_venda",
-      "city": "sao-vicente",
+      "city": "sao_sebastiao",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "investimento",
-      "city": "mongagua",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "investimento",
+      "cluster": "locacao_temporada",
       "city": "caraguatatuba",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "investimento",
-      "city": "sao-sebastiao",
+      "cluster": "locacao_temporada",
+      "city": "sao_sebastiao",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "investimento",
-      "city": "sao-vicente",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "investimento",
+      "cluster": "locacao_temporada",
       "city": "ubatuba",
       "count": 1,
       "priority_score": 3,
@@ -938,28 +924,7 @@
     },
     {
       "cluster": "locacao_temporada",
-      "city": "praia-grande",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "locacao_temporada",
-      "city": "itanhaem",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "locacao_temporada",
-      "city": "mongagua",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "locacao_temporada",
-      "city": "peruibe",
+      "city": "maresias",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
