@@ -4,7 +4,7 @@
     "domain": "praia.digital",
     "blog_path": ".\\blog",
     "scope": "controle editorial contínuo + integracao hotmart",
-    "updated_at": "2026-08-13T18:29:31.452815+00:00"
+    "updated_at": "2026-08-13T18:32:49.343930+00:00"
   },
   "products": [
     {
@@ -896,86 +896,6 @@
   "next_queue": [
     {
       "cluster": "cases",
-      "city": "ubatuba",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "cases",
-      "city": "ubatuba",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "cases",
-      "city": "ubatuba",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "cases",
-      "city": "maresias",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "cases",
-      "city": "maresias",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "cases",
-      "city": "maresias",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "cases",
-      "city": "maresias",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "cases",
-      "city": "litoral_paulista",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "cases",
-      "city": "litoral_paulista",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "cases",
-      "city": "litoral_paulista",
-      "article_type": "A",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "cases",
       "city": "litoral_paulista",
       "article_type": "E",
       "count": 1,
@@ -1290,6 +1210,86 @@
       "cluster": "parcerias",
       "city": "sao_sebastiao",
       "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "sao_sebastiao",
+      "article_type": "A",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "sao_vicente",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "sao_vicente",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "sao_vicente",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "sao_vicente",
+      "article_type": "A",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "ubatuba",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "ubatuba",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "ubatuba",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "ubatuba",
+      "article_type": "A",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "maresias",
+      "article_type": "B",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
