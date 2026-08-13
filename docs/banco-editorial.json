@@ -1,10 +1,10 @@
 {
   "meta": {
-    "total_articles": 1718,
+    "total_articles": 1719,
     "domain": "praia.digital",
     "blog_path": ".\\blog",
     "scope": "controle editorial contínuo + integracao hotmart",
-    "updated_at": "2026-08-13T14:11:00.605713+00:00"
+    "updated_at": "2026-08-13T14:13:19.025347+00:00"
   },
   "products": [
     {
@@ -136,14 +136,14 @@
     "E": "Artigo comercial"
   },
   "status_counts": {
-    "publicado": 1718
+    "publicado": 1719
   },
   "article_type_counts": {
     "A": 1134,
     "E": 295,
     "C": 177,
     "D": 74,
-    "B": 38
+    "B": 39
   },
   "funnel_counts": {
     "Meio": 951,
@@ -898,51 +898,6 @@
       "cluster": "locacao_temporada",
       "city": "bertioga",
       "article_type": "C"
-    },
-    {
-      "cluster": "locacao_temporada",
-      "city": "mongagua",
-      "article_type": "D"
-    },
-    {
-      "cluster": "locacao_temporada",
-      "city": "peruibe",
-      "article_type": "A"
-    },
-    {
-      "cluster": "locacao_temporada",
-      "city": "peruibe",
-      "article_type": "B"
-    },
-    {
-      "cluster": "locacao_temporada",
-      "city": "peruibe",
-      "article_type": "C"
-    },
-    {
-      "cluster": "locacao_temporada",
-      "city": "peruibe",
-      "article_type": "D"
-    },
-    {
-      "cluster": "locacao_temporada",
-      "city": "caraguatatuba",
-      "article_type": "A"
-    },
-    {
-      "cluster": "locacao_temporada",
-      "city": "caraguatatuba",
-      "article_type": "B"
-    },
-    {
-      "cluster": "locacao_temporada",
-      "city": "caraguatatuba",
-      "article_type": "C"
-    },
-    {
-      "cluster": "locacao_temporada",
-      "city": "caraguatatuba",
-      "article_type": "D"
     },
     {
       "cluster": "locacao_temporada",
@@ -60918,6 +60873,36 @@
       "status": "publicado",
       "article_type": "D",
       "article_type_label": "Case de sucesso",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "alta",
+      "commercial_cluster": "locacao_temporada",
+      "cta_intensity": "forte"
+    },
+    {
+      "id": "30491f8808",
+      "slug": "ilhabela-curso-locacao-temporada-imoveis-2026",
+      "path": "blog\\ilhabela-curso-locacao-temporada-imoveis-2026.html",
+      "title": "Ilhabela: curso de locação de temporada — guia 2026",
+      "h1": "Ilhabela: curso de locação de temporada — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Ilhabela: curso de locação de temporada — guia 2026. Material completo para corretores e proprietários no litoral paulista.",
+      "keywords": [
+        "Ilhabela: curso de locação de temporada — guia 2026",
+        "imóveis litoral paulista",
+        "ilhabela"
+      ],
+      "primary_keyword": "Ilhabela: curso de locação de temporada — guia 2026",
+      "city": "ilhabela",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "locacao_temporada",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "B",
+      "article_type_label": "Curso/Guia",
       "product_related_id": null,
       "product_relation_score": 0,
       "hotmart_link": null,
