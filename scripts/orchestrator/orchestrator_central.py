@@ -201,8 +201,21 @@ def main():
     
     # Phase 1: Descoberta
     print('[ORCHESTRATOR] 1. Descoberta...')
+    # Notícias reais
+    news_module = load_module('news_discovery', [REPO / 'scripts' / 'orchestrator' / 'discovery'])
+    news_result = {'status': 'ok', 'message': 'news_discovery skipped'}
+    if news_module:
+        try:
+            news_result = news_module.run(context)
+            news_result['module'] = 'news_discovery'
+        except Exception as e:
+            news_result = {'status': 'error', 'message': f'Erro em news_discovery: {str(e)}', 'module': 'news_discovery'}
+    # Descoberta genérica
     discovery_result = run_discovery(context)
     discovery_result['module'] = 'discovery'
+    # Combinar resultados
+    discovery_result['opportunities'] = (news_result.get('opportunities', []) + discovery_result.get('opportunities', []))[:20]
+    discovery_result['message'] = f"Descoberta: {len(discovery_result['opportunities'])} oportunidades"
     print(f"[ORCHESTRATOR] Descoberta: {discovery_result.get('message', '')}")
     
     # Phase 2: Decisão

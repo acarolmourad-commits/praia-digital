@@ -77777,7 +77777,7 @@
     "formacoes": 8
   },
   "maintenance": {
-    "last_run": "2026-08-13T21:56:34.248394+00:00",
+    "last_run": "2026-08-13T22:03:02.490846+00:00",
     "blog_count": 2957,
     "noticias_count": 1,
     "formacoes_count": 8,
@@ -77839,11 +77839,203 @@
           "priority": 2
         }
       ]
+    },
+    {
+      "date": "2026-08-13T22:02:57.708344+00:00",
+      "opportunities": [
+        {
+          "type": "news_discovery",
+          "message": "Monitoramento contínuo de notícias ativo",
+          "priority": 2,
+          "status": "monitoring"
+        },
+        {
+          "type": "add_links",
+          "count": 95,
+          "priority": 2
+        },
+        {
+          "type": "seo_audit",
+          "message": "5 artigos sem schema",
+          "priority": 2
+        },
+        {
+          "type": "local_opportunity",
+          "message": "Alta temporada 2026-2027 — conteúdo de preparação",
+          "priority": 2
+        },
+        {
+          "type": "commercial_opportunity",
+          "message": "19 artigos sem CTA claro",
+          "priority": 3
+        },
+        {
+          "type": "recurring_question",
+          "question": "Como financiar imóvel no litoral?",
+          "priority": 2
+        },
+        {
+          "type": "recurring_question",
+          "question": "Quanto custa manter casa de praia?",
+          "priority": 2
+        },
+        {
+          "type": "recurring_question",
+          "question": "É bom investir em imóvel no litoral?",
+          "priority": 2
+        },
+        {
+          "type": "recurring_question",
+          "question": "Como declarar aluguel de temporada no IR?",
+          "priority": 2
+        },
+        {
+          "type": "recurring_question",
+          "question": "Documentação necessária para comprar imóvel?",
+          "priority": 2
+        }
+      ]
     }
   ],
   "decisions": [
     {
       "date": "2026-08-13T21:56:29.918357+00:00",
+      "decisions": [
+        {
+          "opportunity": {
+            "type": "news_discovery",
+            "message": "Monitoramento contínuo de notícias ativo",
+            "priority": 2,
+            "status": "monitoring"
+          },
+          "decision": {
+            "action": "CRIAR",
+            "target": "noticias/index.html",
+            "score": 7.0
+          },
+          "approved": true
+        },
+        {
+          "opportunity": {
+            "type": "add_links",
+            "count": 95,
+            "priority": 2
+          },
+          "decision": {
+            "action": "LINKAR",
+            "target": "blog_to_formacoes",
+            "score": 6.5
+          },
+          "approved": true
+        },
+        {
+          "opportunity": {
+            "type": "seo_audit",
+            "message": "5 artigos sem schema",
+            "priority": 2
+          },
+          "decision": {
+            "action": "CORRIGIR",
+            "target": "schema",
+            "score": 7.0
+          },
+          "approved": true
+        },
+        {
+          "opportunity": {
+            "type": "local_opportunity",
+            "message": "Alta temporada 2026-2027 — conteúdo de preparação",
+            "priority": 2
+          },
+          "decision": {
+            "action": "CRIAR",
+            "target": "blog",
+            "score": 7.0
+          },
+          "approved": true
+        },
+        {
+          "opportunity": {
+            "type": "commercial_opportunity",
+            "message": "19 artigos sem CTA claro",
+            "priority": 3
+          },
+          "decision": {
+            "action": "CORRIGIR",
+            "target": "cta",
+            "score": 8.5
+          },
+          "approved": true
+        },
+        {
+          "opportunity": {
+            "type": "recurring_question",
+            "question": "Como financiar imóvel no litoral?",
+            "priority": 2
+          },
+          "decision": {
+            "action": "EXPANDIR",
+            "target": "faq",
+            "score": 7.5
+          },
+          "approved": true
+        },
+        {
+          "opportunity": {
+            "type": "recurring_question",
+            "question": "Quanto custa manter casa de praia?",
+            "priority": 2
+          },
+          "decision": {
+            "action": "EXPANDIR",
+            "target": "faq",
+            "score": 7.5
+          },
+          "approved": true
+        },
+        {
+          "opportunity": {
+            "type": "recurring_question",
+            "question": "É bom investir em imóvel no litoral?",
+            "priority": 2
+          },
+          "decision": {
+            "action": "EXPANDIR",
+            "target": "faq",
+            "score": 7.5
+          },
+          "approved": true
+        },
+        {
+          "opportunity": {
+            "type": "recurring_question",
+            "question": "Como declarar aluguel de temporada no IR?",
+            "priority": 2
+          },
+          "decision": {
+            "action": "EXPANDIR",
+            "target": "faq",
+            "score": 7.5
+          },
+          "approved": true
+        },
+        {
+          "opportunity": {
+            "type": "recurring_question",
+            "question": "Documentação necessária para comprar imóvel?",
+            "priority": 2
+          },
+          "decision": {
+            "action": "EXPANDIR",
+            "target": "faq",
+            "score": 7.5
+          },
+          "approved": true
+        }
+      ]
+    },
+    {
+      "date": "2026-08-13T22:02:58.128336+00:00",
       "decisions": [
         {
           "opportunity": {
@@ -78227,6 +78419,315 @@
       ],
       "validated_count": 9,
       "blocked_count": 1
+    },
+    {
+      "date": "2026-08-13T22:02:58.539344+00:00",
+      "executed": [
+        {
+          "decision": {
+            "opportunity": {
+              "type": "news_discovery",
+              "message": "Monitoramento contínuo de notícias ativo",
+              "priority": 2,
+              "status": "monitoring"
+            },
+            "decision": {
+              "action": "CRIAR",
+              "target": "noticias/index.html",
+              "score": 7.0
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "blocked",
+            "reason": "Fonte não confiável ou ausente",
+            "action": "news_create"
+          },
+          "validation": {
+            "valid": false,
+            "reason": "Fonte não confiável ou ausente"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "add_links",
+              "count": 95,
+              "priority": 2
+            },
+            "decision": {
+              "action": "LINKAR",
+              "target": "blog_to_formacoes",
+              "score": 6.5
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "add_internal_links",
+            "count": 95
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "seo_audit",
+              "message": "5 artigos sem schema",
+              "priority": 2
+            },
+            "decision": {
+              "action": "CORRIGIR",
+              "target": "schema",
+              "score": 7.0
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "seo_fix",
+            "target": "unknown"
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "local_opportunity",
+              "message": "Alta temporada 2026-2027 — conteúdo de preparação",
+              "priority": 2
+            },
+            "decision": {
+              "action": "CRIAR",
+              "target": "blog",
+              "score": 7.0
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "blog_create",
+            "target": "blog"
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "commercial_opportunity",
+              "message": "19 artigos sem CTA claro",
+              "priority": 3
+            },
+            "decision": {
+              "action": "CORRIGIR",
+              "target": "cta",
+              "score": 8.5
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "seo_fix",
+            "target": "unknown"
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "recurring_question",
+              "question": "Como financiar imóvel no litoral?",
+              "priority": 2
+            },
+            "decision": {
+              "action": "EXPANDIR",
+              "target": "faq",
+              "score": 7.5
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "content_expand",
+            "target": "unknown"
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "recurring_question",
+              "question": "Quanto custa manter casa de praia?",
+              "priority": 2
+            },
+            "decision": {
+              "action": "EXPANDIR",
+              "target": "faq",
+              "score": 7.5
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "content_expand",
+            "target": "unknown"
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "recurring_question",
+              "question": "É bom investir em imóvel no litoral?",
+              "priority": 2
+            },
+            "decision": {
+              "action": "EXPANDIR",
+              "target": "faq",
+              "score": 7.5
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "content_expand",
+            "target": "unknown"
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "recurring_question",
+              "question": "Como declarar aluguel de temporada no IR?",
+              "priority": 2
+            },
+            "decision": {
+              "action": "EXPANDIR",
+              "target": "faq",
+              "score": 7.5
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "content_expand",
+            "target": "unknown"
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "recurring_question",
+              "question": "Documentação necessária para comprar imóvel?",
+              "priority": 2
+            },
+            "decision": {
+              "action": "EXPANDIR",
+              "target": "faq",
+              "score": 7.5
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "content_expand",
+            "target": "unknown"
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        }
+      ],
+      "validated_count": 9,
+      "blocked_count": 1
+    }
+  ],
+  "news_discovery": [
+    {
+      "date": "2026-08-13T22:02:56.999337+00:00",
+      "total_sources": 5,
+      "total_opportunities": 5,
+      "relevant_opportunities": 0,
+      "status": "sem_pauta_suficiente",
+      "opportunities": [
+        {
+          "type": "news_discovery",
+          "source": "Agência SP",
+          "url": "https://www.agencia.sp.gov.br/rss",
+          "title": "[PLACEHOLDER] Notícia de Agência SP",
+          "message": "Monitoramento ativo: Agência SP",
+          "priority": 2,
+          "score": 5.0,
+          "status": "monitoring"
+        },
+        {
+          "type": "news_discovery",
+          "source": "Prefeitura Santos",
+          "url": "https://www.santos.sp.gov.br/rss",
+          "title": "[PLACEHOLDER] Notícia de Prefeitura Santos",
+          "message": "Monitoramento ativo: Prefeitura Santos",
+          "priority": 2,
+          "score": 5.0,
+          "status": "monitoring"
+        },
+        {
+          "type": "news_discovery",
+          "source": "Prefeitura Guarujá",
+          "url": "https://www.guaruja.sp.gov.br/rss",
+          "title": "[PLACEHOLDER] Notícia de Prefeitura Guarujá",
+          "message": "Monitoramento ativo: Prefeitura Guarujá",
+          "priority": 2,
+          "score": 5.0,
+          "status": "monitoring"
+        },
+        {
+          "type": "news_discovery",
+          "source": "CRECI-SP",
+          "url": "https://www.crecisp.gov.br/rss",
+          "title": "[PLACEHOLDER] Notícia de CRECI-SP",
+          "message": "Monitoramento ativo: CRECI-SP",
+          "priority": 2,
+          "score": 5.0,
+          "status": "monitoring"
+        },
+        {
+          "type": "news_discovery",
+          "source": "Sinduscon-SP",
+          "url": "https://www.sindusconsp.com.br/rss",
+          "title": "[PLACEHOLDER] Notícia de Sinduscon-SP",
+          "message": "Monitoramento ativo: Sinduscon-SP",
+          "priority": 2,
+          "score": 5.0,
+          "status": "monitoring"
+        }
+      ]
     }
   ]
 }
