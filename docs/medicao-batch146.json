@@ -1,0 +1,42 @@
+{
+  "batch": 146,
+  "date": "2026-08-13T00:00:00Z",
+  "status": "measurement_pending",
+  "items": [
+    {"slug": "casa-venda-guaruja-ia", "action": "ATUALIZAR"},
+    {"slug": "comprar-imovel-guaruja-2026", "action": "ATUALIZAR"},
+    {"slug": "comprar-imovel-na-planta-litoral-sp-2026", "action": "ATUALIZAR"},
+    {"slug": "primeira-compra-peruibe-ia", "action": "ATUALIZAR"},
+    {"slug": "peruibe-compra-venda-imoveis-2026", "action": "ATUALIZAR"},
+    {"slug": "sao-vicente-compra-venda-imoveis-2026", "action": "ATUALIZAR"},
+    {"slug": "praia-grande-compra-venda-imoveis-2026", "action": "ATUALIZAR"},
+    {"slug": "santos-financiamento-imoveis-2026", "action": "EXPANDIR"},
+    {"slug": "guaruja-financiamento-imoveis-2026", "action": "EXPANDIR"},
+    {"slug": "praia-grande-financiamento-imoveis-2026", "action": "EXPANDIR"},
+    {"slug": "bertioga-financiamento-imoveis-2026", "action": "EXPANDIR"},
+    {"slug": "itanhaem-financiamento-imoveis-2026", "action": "EXPANDIR"},
+    {"slug": "mongagua-financiamento-imoveis-2026", "action": "EXPANDIR"},
+    {"slug": "peruibe-financiamento-imoveis-2026", "action": "EXPANDIR"},
+    {"slug": "caraguatatuba-financiamento-imoveis-2026", "action": "EXPANDIR"},
+    {"slug": "como-declarar-aluguel-temporada-ir-2026", "action": "CRIAR"},
+    {"slug": "seguro-fianca-aluguel-temporada-2026", "action": "CRIAR"},
+    {"slug": "distrato-construtora-imoveis-litoral-2026", "action": "CRIAR"},
+    {"slug": "documentacao-venda-imovel-herdado-litoral", "action": "CRIAR"},
+    {"slug": "permuta-imoveis-litoral-paulista-2026", "action": "CRIAR"},
+    {"slug": "financiamento-por-idade-imoveis-litoral", "action": "CRIAR"},
+    {"slug": "imovel-compartilhado-litoral-paulista", "action": "CRIAR"},
+    {"slug": "taxa-ocupacao-media-temporada-litoral", "action": "CRIAR"}
+  ],
+  "metrics_to_track": [
+    "impressoes",
+    "cliques",
+    "CTR",
+    "posicao_media",
+    "indexacao",
+    "crescimento_consultas",
+    "links_internos_recebidos",
+    "sinais_canibalizacao"
+  ],
+  "measurement_window_days": 30,
+  "next_audit_after_days": 30
+}
