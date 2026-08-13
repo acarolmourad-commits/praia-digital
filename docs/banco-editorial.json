@@ -4,7 +4,7 @@
     "domain": "praia.digital",
     "blog_path": ".\\blog",
     "scope": "controle editorial contínuo + integracao hotmart",
-    "updated_at": "2026-08-13T18:00:11.314917+00:00"
+    "updated_at": "2026-08-13T18:01:17.121588+00:00"
   },
   "products": [
     {
@@ -893,128 +893,7 @@
     }
   ],
   "update_candidates": [],
-  "next_queue": [
-    {
-      "cluster": "juridico",
-      "city": "sao_vicente",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "juridico",
-      "city": "sao_vicente",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "juridico",
-      "city": "sao_vicente",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "juridico",
-      "city": "sao_vicente",
-      "article_type": "A",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "juridico",
-      "city": "ubatuba",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "juridico",
-      "city": "ubatuba",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "juridico",
-      "city": "ubatuba",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "juridico",
-      "city": "ubatuba",
-      "article_type": "A",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "juridico",
-      "city": "maresias",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "juridico",
-      "city": "maresias",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "juridico",
-      "city": "maresias",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "juridico",
-      "city": "maresias",
-      "article_type": "A",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "juridico",
-      "city": "litoral_paulista",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "juridico",
-      "city": "litoral_paulista",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "juridico",
-      "city": "litoral_paulista",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    }
-  ],
+  "next_queue": [],
   "coverage_by_city_cluster": {
     "litoral_paulista": {
       "editorial": 141,
