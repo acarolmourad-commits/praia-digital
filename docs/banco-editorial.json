@@ -896,86 +896,6 @@
   "next_queue": [
     {
       "cluster": "editorial",
-      "city": "bertioga",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "editorial",
-      "city": "itanhaem",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "editorial",
-      "city": "itanhaem",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "editorial",
-      "city": "itanhaem",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "editorial",
-      "city": "itanhaem",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "editorial",
-      "city": "mongagua",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "editorial",
-      "city": "mongagua",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "editorial",
-      "city": "mongagua",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "editorial",
-      "city": "mongagua",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "editorial",
-      "city": "peruibe",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "editorial",
       "city": "peruibe",
       "article_type": "C",
       "count": 1,
@@ -1290,6 +1210,86 @@
       "cluster": "marketing_digital",
       "city": "praia_grande",
       "article_type": "A",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "marketing_digital",
+      "city": "bertioga",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "marketing_digital",
+      "city": "bertioga",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "marketing_digital",
+      "city": "bertioga",
+      "article_type": "A",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "marketing_digital",
+      "city": "itanhaem",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "marketing_digital",
+      "city": "itanhaem",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "marketing_digital",
+      "city": "itanhaem",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "marketing_digital",
+      "city": "itanhaem",
+      "article_type": "A",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "marketing_digital",
+      "city": "mongagua",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "marketing_digital",
+      "city": "mongagua",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "marketing_digital",
+      "city": "mongagua",
+      "article_type": "D",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
