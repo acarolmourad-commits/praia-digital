@@ -896,86 +896,6 @@
   "next_queue": [
     {
       "cluster": "automacao_ia",
-      "city": "bertioga",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "bertioga",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "bertioga",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "bertioga",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "itanhaem",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "itanhaem",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "itanhaem",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "itanhaem",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "mongagua",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "mongagua",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
       "city": "mongagua",
       "article_type": "D",
       "count": 1,
@@ -1290,6 +1210,86 @@
       "cluster": "bairros_cidades",
       "city": "itanhaem",
       "article_type": "E",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "mongagua",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "mongagua",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "mongagua",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "mongagua",
+      "article_type": "E",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "peruibe",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "peruibe",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "peruibe",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "peruibe",
+      "article_type": "E",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "caraguatatuba",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "caraguatatuba",
+      "article_type": "D",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
