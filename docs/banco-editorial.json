@@ -76904,6 +76904,78 @@
       "top_needs": [],
       "created_materials": [],
       "status": "audited"
+    },
+    {
+      "date": "2026-08-13T21:49:30.174797+00:00",
+      "formation_analysis": [
+        {
+          "slug": "formacao-corretor-imoveis-litoral",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 6347,
+          "has_faq": true
+        },
+        {
+          "slug": "avaliacao-imoveis-ptam",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5991,
+          "has_faq": true
+        },
+        {
+          "slug": "financiamento-imobiliario",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5847,
+          "has_faq": true
+        },
+        {
+          "slug": "locacao-temporada-administracao",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5918,
+          "has_faq": true
+        },
+        {
+          "slug": "captacao-imoveis",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5805,
+          "has_faq": true
+        },
+        {
+          "slug": "marketing-imobiliario",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5970,
+          "has_faq": true
+        },
+        {
+          "slug": "documentacao-imoveis",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5987,
+          "has_faq": true
+        },
+        {
+          "slug": "mercado-imobiliario-litoral",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 6173,
+          "has_faq": true
+        }
+      ],
+      "top_needs": [],
+      "created_materials": [],
+      "status": "audited"
     }
   ],
   "news_audit": [
@@ -76979,6 +77051,11 @@
     },
     {
       "date": "2026-08-13T21:47:20.171449+00:00",
+      "status": "sem_pauta_suficiente",
+      "reason": "Nenhuma pauta encontrada na semana"
+    },
+    {
+      "date": "2026-08-13T21:49:29.763791+00:00",
       "status": "sem_pauta_suficiente",
       "reason": "Nenhuma pauta encontrada na semana"
     }
@@ -77431,9 +77508,38 @@
       "actions_blocked": 0,
       "qa_status": "ok",
       "qa_issues": []
+    },
+    {
+      "date": "2026-08-13T21:49:36.250789+00:00",
+      "site_state": {
+        "blog_pages": 2957,
+        "formacoes_pages": 8
+      },
+      "registry_status": "ok",
+      "modules": [
+        "news",
+        "academy",
+        "seo",
+        "refresh",
+        "internal_links",
+        "local_content",
+        "qa",
+        "qa_fixes",
+        "metrics",
+        "execution_plan",
+        "idempotency"
+      ],
+      "opportunities_total": 6,
+      "opportunities_deduped": 5,
+      "human_gates": 0,
+      "auto_opportunities": 5,
+      "actions_executed": 1,
+      "actions_blocked": 0,
+      "qa_status": "ok",
+      "qa_issues": []
     }
   ],
-  "last_refresh": "2026-08-13T21:47:24.656913+00:00",
+  "last_refresh": "2026-08-13T21:49:34.171790+00:00",
   "execution_plan": [
     {
       "date": "2026-08-13T21:47:25.785953+00:00",
@@ -77474,6 +77580,54 @@
       ],
       "blocked": [],
       "status": "planned"
+    },
+    {
+      "date": "2026-08-13T21:49:35.450789+00:00",
+      "priorities": [
+        {
+          "type": "add_links",
+          "message": "95 artigos sem links para formações",
+          "priority": 3
+        },
+        {
+          "type": "seo_audit",
+          "message": "3 artigos sem schema",
+          "priority": 2
+        },
+        {
+          "type": "local_content_audit",
+          "message": "78 duplicatas potenciais",
+          "priority": 2
+        }
+      ],
+      "executed": [
+        {
+          "type": "add_links",
+          "status": "approved_for_next_cycle",
+          "count": 95
+        },
+        {
+          "type": "seo_audit",
+          "status": "approved_for_next_cycle",
+          "count": 3
+        },
+        {
+          "type": "local_content_audit",
+          "status": "approved_for_next_cycle",
+          "count": 78,
+          "note": "apenas análise, sem fusão/exclusão"
+        }
+      ],
+      "blocked": [],
+      "status": "planned"
     }
-  ]
+  ],
+  "idempotency": {
+    "created_at": "2026-08-13T21:48:07.571526+00:00",
+    "completed_actions": [],
+    "partial_actions": [],
+    "last_check": "2026-08-13T21:48:07.571526+00:00",
+    "site_pages": 2957,
+    "formacoes": 8
+  }
 }
