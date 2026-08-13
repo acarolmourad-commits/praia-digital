@@ -896,86 +896,6 @@
   "next_queue": [
     {
       "cluster": "editorial",
-      "city": "peruibe",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "editorial",
-      "city": "peruibe",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "editorial",
-      "city": "peruibe",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "editorial",
-      "city": "caraguatatuba",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "editorial",
-      "city": "caraguatatuba",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "editorial",
-      "city": "caraguatatuba",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "editorial",
-      "city": "caraguatatuba",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "editorial",
-      "city": "ilhabela",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "editorial",
-      "city": "ilhabela",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "editorial",
-      "city": "ilhabela",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "editorial",
       "city": "ilhabela",
       "article_type": "E",
       "count": 1,
@@ -1290,6 +1210,86 @@
       "cluster": "marketing_digital",
       "city": "mongagua",
       "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "marketing_digital",
+      "city": "mongagua",
+      "article_type": "A",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "marketing_digital",
+      "city": "peruibe",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "marketing_digital",
+      "city": "peruibe",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "marketing_digital",
+      "city": "peruibe",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "marketing_digital",
+      "city": "peruibe",
+      "article_type": "A",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "marketing_digital",
+      "city": "caraguatatuba",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "marketing_digital",
+      "city": "caraguatatuba",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "marketing_digital",
+      "city": "caraguatatuba",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "marketing_digital",
+      "city": "caraguatatuba",
+      "article_type": "A",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "marketing_digital",
+      "city": "ilhabela",
+      "article_type": "B",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
