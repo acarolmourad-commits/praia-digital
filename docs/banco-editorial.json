@@ -1,10 +1,10 @@
 {
   "meta": {
-    "total_articles": 2113,
+    "total_articles": 2123,
     "domain": "praia.digital",
     "blog_path": ".\\blog",
     "scope": "controle editorial contínuo + integracao hotmart",
-    "updated_at": "2026-08-13T18:13:05.999039+00:00"
+    "updated_at": "2026-08-13T18:14:55.445983+00:00"
   },
   "products": [
     {
@@ -136,14 +136,14 @@
     "E": "Artigo comercial"
   },
   "status_counts": {
-    "publicado": 2113
+    "publicado": 2123
   },
   "article_type_counts": {
     "A": 1177,
-    "E": 347,
-    "C": 274,
-    "D": 168,
-    "B": 147
+    "E": 350,
+    "C": 277,
+    "D": 169,
+    "B": 150
   },
   "funnel_counts": {
     "Meio": 951,
@@ -896,86 +896,6 @@
   "next_queue": [
     {
       "cluster": "cases",
-      "city": "bertioga",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "cases",
-      "city": "bertioga",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "cases",
-      "city": "bertioga",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "cases",
-      "city": "itanhaem",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "cases",
-      "city": "itanhaem",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "cases",
-      "city": "itanhaem",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "cases",
-      "city": "itanhaem",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "cases",
-      "city": "mongagua",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "cases",
-      "city": "mongagua",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "cases",
-      "city": "mongagua",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "cases",
       "city": "mongagua",
       "article_type": "E",
       "count": 1,
@@ -1290,6 +1210,86 @@
       "cluster": "parcerias",
       "city": "praia_grande",
       "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "praia_grande",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "praia_grande",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "praia_grande",
+      "article_type": "A",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "bertioga",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "bertioga",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "bertioga",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "bertioga",
+      "article_type": "A",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "itanhaem",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "itanhaem",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "itanhaem",
+      "article_type": "D",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
@@ -73113,6 +73113,306 @@
       "status": "publicado",
       "article_type": "D",
       "article_type_label": "Case de sucesso",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "cases",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "5fa20ced28",
+      "slug": "mongagua-artigo-cases-imoveis-2026",
+      "path": "blog\\mongagua-artigo-cases-imoveis-2026.html",
+      "title": "Mongaguá: artigo sobre cases de sucesso imobiliário — 2026",
+      "h1": "Mongaguá: artigo sobre cases de sucesso imobiliário — 2026",
+      "h2_count": 0,
+      "meta_description": "Mongaguá: artigo sobre cases de sucesso imobiliário — 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Mongaguá: artigo sobre cases de sucesso imobiliário — 2026",
+        "cases imóveis",
+        "mongagua"
+      ],
+      "primary_keyword": "Mongaguá: artigo sobre cases de sucesso imobiliário — 2026",
+      "city": "mongagua",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "cases",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "cases",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "9b4f88e966",
+      "slug": "peruibe-curso-cases-imoveis-2026",
+      "path": "blog\\peruibe-curso-cases-imoveis-2026.html",
+      "title": "Peruíbe: curso de cases de sucesso imobiliário — guia 2026",
+      "h1": "Peruíbe: curso de cases de sucesso imobiliário — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Peruíbe: curso de cases de sucesso imobiliário — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Peruíbe: curso de cases de sucesso imobiliário — guia 2026",
+        "cases imóveis",
+        "peruibe"
+      ],
+      "primary_keyword": "Peruíbe: curso de cases de sucesso imobiliário — guia 2026",
+      "city": "peruibe",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "cases",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "B",
+      "article_type_label": "Curso imobiliário",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "cases",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "b06dbd17d1",
+      "slug": "peruibe-checklist-cases-imoveis-2026",
+      "path": "blog\\peruibe-checklist-cases-imoveis-2026.html",
+      "title": "Peruíbe: checklist de cases de sucesso imobiliário — 2026",
+      "h1": "Peruíbe: checklist de cases de sucesso imobiliário — 2026",
+      "h2_count": 0,
+      "meta_description": "Peruíbe: checklist de cases de sucesso imobiliário — 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Peruíbe: checklist de cases de sucesso imobiliário — 2026",
+        "cases imóveis",
+        "peruibe"
+      ],
+      "primary_keyword": "Peruíbe: checklist de cases de sucesso imobiliário — 2026",
+      "city": "peruibe",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "cases",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "C",
+      "article_type_label": "Checklist imobiliário",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "cases",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "e0af6ec916",
+      "slug": "peruibe-case-sucesso-cases-imoveis-2026",
+      "path": "blog\\peruibe-case-sucesso-cases-imoveis-2026.html",
+      "title": "Peruíbe: case de sucesso imobiliário — 2026",
+      "h1": "Peruíbe: case de sucesso imobiliário — 2026",
+      "h2_count": 0,
+      "meta_description": "Peruíbe: case de sucesso imobiliário — 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Peruíbe: case de sucesso imobiliário — 2026",
+        "cases imóveis",
+        "peruibe"
+      ],
+      "primary_keyword": "Peruíbe: case de sucesso imobiliário — 2026",
+      "city": "peruibe",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "cases",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "D",
+      "article_type_label": "Case de sucesso",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "cases",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "73f0e989c4",
+      "slug": "peruibe-artigo-cases-imoveis-2026",
+      "path": "blog\\peruibe-artigo-cases-imoveis-2026.html",
+      "title": "Peruíbe: artigo sobre cases de sucesso imobiliário — 2026",
+      "h1": "Peruíbe: artigo sobre cases de sucesso imobiliário — 2026",
+      "h2_count": 0,
+      "meta_description": "Peruíbe: artigo sobre cases de sucesso imobiliário — 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Peruíbe: artigo sobre cases de sucesso imobiliário — 2026",
+        "cases imóveis",
+        "peruibe"
+      ],
+      "primary_keyword": "Peruíbe: artigo sobre cases de sucesso imobiliário — 2026",
+      "city": "peruibe",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "cases",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "cases",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "74ddbf283b",
+      "slug": "caraguatatuba-curso-cases-imoveis-2026",
+      "path": "blog\\caraguatatuba-curso-cases-imoveis-2026.html",
+      "title": "Caraguatatuba: curso de cases de sucesso imobiliário — guia 2026",
+      "h1": "Caraguatatuba: curso de cases de sucesso imobiliário — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Caraguatatuba: curso de cases de sucesso imobiliário — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Caraguatatuba: curso de cases de sucesso imobiliário — guia 2026",
+        "cases imóveis",
+        "caraguatatuba"
+      ],
+      "primary_keyword": "Caraguatatuba: curso de cases de sucesso imobiliário — guia 2026",
+      "city": "caraguatatuba",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "cases",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "B",
+      "article_type_label": "Curso imobiliário",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "cases",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "c5767cd422",
+      "slug": "caraguatatuba-checklist-cases-imoveis-2026",
+      "path": "blog\\caraguatatuba-checklist-cases-imoveis-2026.html",
+      "title": "Caraguatatuba: checklist de cases de sucesso imobiliário — 2026",
+      "h1": "Caraguatatuba: checklist de cases de sucesso imobiliário — 2026",
+      "h2_count": 0,
+      "meta_description": "Caraguatatuba: checklist de cases de sucesso imobiliário — 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Caraguatatuba: checklist de cases de sucesso imobiliário — 2026",
+        "cases imóveis",
+        "caraguatatuba"
+      ],
+      "primary_keyword": "Caraguatatuba: checklist de cases de sucesso imobiliário — 2026",
+      "city": "caraguatatuba",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "cases",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "C",
+      "article_type_label": "Checklist imobiliário",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "cases",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "38f95b5b4f",
+      "slug": "caraguatatuba-artigo-cases-imoveis-2026",
+      "path": "blog\\caraguatatuba-artigo-cases-imoveis-2026.html",
+      "title": "Caraguatatuba: artigo sobre cases de sucesso imobiliário — 2026",
+      "h1": "Caraguatatuba: artigo sobre cases de sucesso imobiliário — 2026",
+      "h2_count": 0,
+      "meta_description": "Caraguatatuba: artigo sobre cases de sucesso imobiliário — 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Caraguatatuba: artigo sobre cases de sucesso imobiliário — 2026",
+        "cases imóveis",
+        "caraguatatuba"
+      ],
+      "primary_keyword": "Caraguatatuba: artigo sobre cases de sucesso imobiliário — 2026",
+      "city": "caraguatatuba",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "cases",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "cases",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "88d7604cc5",
+      "slug": "ilhabela-curso-cases-imoveis-2026",
+      "path": "blog\\ilhabela-curso-cases-imoveis-2026.html",
+      "title": "Ilhabela: curso de cases de sucesso imobiliário — guia 2026",
+      "h1": "Ilhabela: curso de cases de sucesso imobiliário — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Ilhabela: curso de cases de sucesso imobiliário — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Ilhabela: curso de cases de sucesso imobiliário — guia 2026",
+        "cases imóveis",
+        "ilhabela"
+      ],
+      "primary_keyword": "Ilhabela: curso de cases de sucesso imobiliário — guia 2026",
+      "city": "ilhabela",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "cases",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "B",
+      "article_type_label": "Curso imobiliário",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "cases",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "f3e39a5368",
+      "slug": "ilhabela-checklist-cases-imoveis-2026",
+      "path": "blog\\ilhabela-checklist-cases-imoveis-2026.html",
+      "title": "Ilhabela: checklist de cases de sucesso imobiliário — 2026",
+      "h1": "Ilhabela: checklist de cases de sucesso imobiliário — 2026",
+      "h2_count": 0,
+      "meta_description": "Ilhabela: checklist de cases de sucesso imobiliário — 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Ilhabela: checklist de cases de sucesso imobiliário — 2026",
+        "cases imóveis",
+        "ilhabela"
+      ],
+      "primary_keyword": "Ilhabela: checklist de cases de sucesso imobiliário — 2026",
+      "city": "ilhabela",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "cases",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "C",
+      "article_type_label": "Checklist imobiliário",
       "product_related_id": null,
       "product_relation_score": 0,
       "hotmart_link": null,
