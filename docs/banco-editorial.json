@@ -893,7 +893,168 @@
     }
   ],
   "update_candidates": [],
-  "next_queue": [],
+  "next_queue": [
+    {
+      "cluster": "investimento",
+      "city": "ubatuba",
+      "article_type": "A",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "investimento",
+      "city": "ubatuba",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "investimento",
+      "city": "ubatuba",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "investimento",
+      "city": "ubatuba",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "investimento",
+      "city": "maresias",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "investimento",
+      "city": "maresias",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "investimento",
+      "city": "maresias",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "investimento",
+      "city": "litoral_paulista",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "investimento",
+      "city": "litoral_paulista",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "santos",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "santos",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "santos",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "guaruja",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "guaruja",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "guaruja",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "praia_grande",
+      "article_type": "A",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "praia_grande",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "praia_grande",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "praia_grande",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "bertioga",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    }
+  ],
   "coverage_by_city_cluster": {
     "litoral_paulista": {
       "editorial": 141,
