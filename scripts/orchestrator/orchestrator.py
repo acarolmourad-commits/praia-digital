@@ -35,7 +35,7 @@ MODULES_DIR = REPO / 'scripts' / 'orchestrator' / 'modules'
 
 ALLOWED_MODULES = [
     'news', 'academy', 'seo', 'refresh',
-    'internal_links', 'local_content', 'qa', 'qa_fixes', 'metrics',
+    'internal_links', 'local_content', 'qa', 'qa_fixes', 'metrics', 'execution_plan',
 ]
 
 HUMAN_GATES = [
