@@ -1,10 +1,10 @@
 {
   "meta": {
-    "total_articles": 1512,
+    "total_articles": 1522,
     "domain": "praia.digital",
     "blog_path": ".\\blog",
     "scope": "controle editorial contínuo + integracao hotmart",
-    "updated_at": "2026-08-13T11:56:03.658082+00:00"
+    "updated_at": "2026-08-13T12:03:56.595594+00:00"
   },
   "products": [
     {
@@ -136,11 +136,11 @@
     "E": "Artigo comercial"
   },
   "status_counts": {
-    "publicado": 1512
+    "publicado": 1522
   },
   "article_type_counts": {
-    "A": 1087,
-    "E": 244,
+    "A": 1094,
+    "E": 247,
     "C": 146,
     "D": 32,
     "B": 3
@@ -896,70 +896,70 @@
   "next_queue": [
     {
       "cluster": "marketing_digital",
+      "city": "sao_vicente",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "marketing_digital",
+      "city": "ubatuba",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "marketing_digital",
+      "city": "maresias",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
       "city": "santos",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "marketing_digital",
+      "cluster": "seo_local",
       "city": "guaruja",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "marketing_digital",
+      "cluster": "seo_local",
       "city": "praia_grande",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "marketing_digital",
+      "cluster": "seo_local",
       "city": "bertioga",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "marketing_digital",
+      "cluster": "seo_local",
       "city": "itanhaem",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "marketing_digital",
+      "cluster": "seo_local",
       "city": "mongagua",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "marketing_digital",
+      "cluster": "seo_local",
       "city": "peruibe",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "marketing_digital",
-      "city": "caraguatatuba",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "marketing_digital",
-      "city": "ilhabela",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "marketing_digital",
-      "city": "sao_sebastiao",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
@@ -54719,6 +54719,306 @@
       "conversion_potential": "média",
       "commercial_cluster": "marketing_digital",
       "cta_intensity": "moderada"
+    },
+    {
+      "id": "38ce75f109",
+      "slug": "sao-vicente-marketing-digital-imoveis-2026",
+      "path": "blog\\sao-vicente-marketing-digital-imoveis-2026.html",
+      "title": "São Vicente: marketing digital para imóveis — guia 2026",
+      "h1": "São Vicente: marketing digital para imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "São Vicente: marketing digital para imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "São Vicente: marketing digital para imóveis — guia 2026",
+        "imóveis litoral paulista",
+        "sao_vicente"
+      ],
+      "primary_keyword": "São Vicente: marketing digital para imóveis — guia 2026",
+      "city": "sao_vicente",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "marketing_digital",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "marketing_digital",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "57459fd610",
+      "slug": "ubatuba-marketing-digital-imoveis-2026",
+      "path": "blog\\ubatuba-marketing-digital-imoveis-2026.html",
+      "title": "Ubatuba: marketing digital para imóveis — guia 2026",
+      "h1": "Ubatuba: marketing digital para imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Ubatuba: marketing digital para imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Ubatuba: marketing digital para imóveis — guia 2026",
+        "imóveis litoral paulista",
+        "ubatuba"
+      ],
+      "primary_keyword": "Ubatuba: marketing digital para imóveis — guia 2026",
+      "city": "ubatuba",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "marketing_digital",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "marketing_digital",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "070ebb7433",
+      "slug": "maresias-marketing-digital-imoveis-2026",
+      "path": "blog\\maresias-marketing-digital-imoveis-2026.html",
+      "title": "Maresias: marketing digital para imóveis — guia 2026",
+      "h1": "Maresias: marketing digital para imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Maresias: marketing digital para imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Maresias: marketing digital para imóveis — guia 2026",
+        "imóveis litoral paulista",
+        "maresias"
+      ],
+      "primary_keyword": "Maresias: marketing digital para imóveis — guia 2026",
+      "city": "maresias",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "marketing_digital",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "marketing_digital",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "4e3fe0d226",
+      "slug": "santos-seo-local-imoveis-2026",
+      "path": "blog\\santos-seo-local-imoveis-2026.html",
+      "title": "Santos: SEO local para imóveis — guia 2026",
+      "h1": "Santos: SEO local para imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Santos: SEO local para imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Santos: SEO local para imóveis — guia 2026",
+        "imóveis litoral paulista",
+        "santos"
+      ],
+      "primary_keyword": "Santos: SEO local para imóveis — guia 2026",
+      "city": "santos",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "seo_local",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "A",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "seo_local",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "e923d5dda3",
+      "slug": "guaruja-seo-local-imoveis-2026",
+      "path": "blog\\guaruja-seo-local-imoveis-2026.html",
+      "title": "Guarujá: SEO local para imóveis — guia 2026",
+      "h1": "Guarujá: SEO local para imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Guarujá: SEO local para imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Guarujá: SEO local para imóveis — guia 2026",
+        "imóveis litoral paulista",
+        "guaruja"
+      ],
+      "primary_keyword": "Guarujá: SEO local para imóveis — guia 2026",
+      "city": "guaruja",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "seo_local",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "A",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "seo_local",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "10118cf330",
+      "slug": "praia-grande-seo-local-imoveis-2026",
+      "path": "blog\\praia-grande-seo-local-imoveis-2026.html",
+      "title": "Praia Grande: SEO local para imóveis — guia 2026",
+      "h1": "Praia Grande: SEO local para imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Praia Grande: SEO local para imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Praia Grande: SEO local para imóveis — guia 2026",
+        "imóveis litoral paulista",
+        "praia_grande"
+      ],
+      "primary_keyword": "Praia Grande: SEO local para imóveis — guia 2026",
+      "city": "praia_grande",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "seo_local",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "A",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "seo_local",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "7d69f927ce",
+      "slug": "bertioga-seo-local-imoveis-2026",
+      "path": "blog\\bertioga-seo-local-imoveis-2026.html",
+      "title": "Bertioga: SEO local para imóveis — guia 2026",
+      "h1": "Bertioga: SEO local para imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Bertioga: SEO local para imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Bertioga: SEO local para imóveis — guia 2026",
+        "imóveis litoral paulista",
+        "bertioga"
+      ],
+      "primary_keyword": "Bertioga: SEO local para imóveis — guia 2026",
+      "city": "bertioga",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "seo_local",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "A",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "seo_local",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "106136fc98",
+      "slug": "itanhaem-seo-local-imoveis-2026",
+      "path": "blog\\itanhaem-seo-local-imoveis-2026.html",
+      "title": "Itanhaém: SEO local para imóveis — guia 2026",
+      "h1": "Itanhaém: SEO local para imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Itanhaém: SEO local para imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Itanhaém: SEO local para imóveis — guia 2026",
+        "imóveis litoral paulista",
+        "itanhaem"
+      ],
+      "primary_keyword": "Itanhaém: SEO local para imóveis — guia 2026",
+      "city": "itanhaem",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "seo_local",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "A",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "seo_local",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "d83cc5a7e3",
+      "slug": "mongagua-seo-local-imoveis-2026",
+      "path": "blog\\mongagua-seo-local-imoveis-2026.html",
+      "title": "Mongaguá: SEO local para imóveis — guia 2026",
+      "h1": "Mongaguá: SEO local para imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Mongaguá: SEO local para imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Mongaguá: SEO local para imóveis — guia 2026",
+        "imóveis litoral paulista",
+        "mongagua"
+      ],
+      "primary_keyword": "Mongaguá: SEO local para imóveis — guia 2026",
+      "city": "mongagua",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "seo_local",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "A",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "seo_local",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "9ee13dfea1",
+      "slug": "peruibe-seo-local-imoveis-2026",
+      "path": "blog\\peruibe-seo-local-imoveis-2026.html",
+      "title": "Peruíbe: SEO local para imóveis — guia 2026",
+      "h1": "Peruíbe: SEO local para imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Peruíbe: SEO local para imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Peruíbe: SEO local para imóveis — guia 2026",
+        "imóveis litoral paulista",
+        "peruibe"
+      ],
+      "primary_keyword": "Peruíbe: SEO local para imóveis — guia 2026",
+      "city": "peruibe",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "seo_local",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "A",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "seo_local",
+      "cta_intensity": "suave"
     }
   ]
 }
