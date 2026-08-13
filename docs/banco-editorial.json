@@ -1,10 +1,10 @@
 {
   "meta": {
-    "total_articles": 1475,
+    "total_articles": 1479,
     "domain": "praia.digital",
     "blog_path": ".\\blog",
     "scope": "controle editorial contínuo + integracao hotmart",
-    "updated_at": "2026-08-13T11:28:13.552888+00:00"
+    "updated_at": "2026-08-13T11:33:32.183082+00:00"
   },
   "products": [
     {
@@ -136,11 +136,11 @@
     "E": "Artigo comercial"
   },
   "status_counts": {
-    "publicado": 1475
+    "publicado": 1479
   },
   "article_type_counts": {
     "A": 1064,
-    "E": 230,
+    "E": 234,
     "C": 146,
     "D": 32,
     "B": 3
@@ -53560,6 +53560,126 @@
       ],
       "primary_keyword": "Peruíbe: locação temporada — guia 2026",
       "city": "peruibe",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "locacao_temporada",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "locacao_temporada",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "e82459951e",
+      "slug": "caraguatatuba-locacao-temporada-imoveis-2026",
+      "path": "blog\\caraguatatuba-locacao-temporada-imoveis-2026.html",
+      "title": "Caraguatatuba: locação temporada — guia 2026",
+      "h1": "Caraguatatuba: locação temporada — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Caraguatatuba: locação temporada — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Caraguatatuba: locação temporada — guia 2026",
+        "imóveis litoral paulista",
+        "caraguatatuba"
+      ],
+      "primary_keyword": "Caraguatatuba: locação temporada — guia 2026",
+      "city": "caraguatatuba",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "locacao_temporada",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "locacao_temporada",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "15763d54ba",
+      "slug": "sao-sebastiao-locacao-temporada-imoveis-2026",
+      "path": "blog\\sao-sebastiao-locacao-temporada-imoveis-2026.html",
+      "title": "São Sebastião: locação temporada — guia 2026",
+      "h1": "São Sebastião: locação temporada — guia 2026",
+      "h2_count": 0,
+      "meta_description": "São Sebastião: locação temporada — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "São Sebastião: locação temporada — guia 2026",
+        "imóveis litoral paulista",
+        "sao_sebastiao"
+      ],
+      "primary_keyword": "São Sebastião: locação temporada — guia 2026",
+      "city": "sao_sebastiao",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "locacao_temporada",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "locacao_temporada",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "764eac59bc",
+      "slug": "ubatuba-locacao-temporada-imoveis-2026",
+      "path": "blog\\ubatuba-locacao-temporada-imoveis-2026.html",
+      "title": "Ubatuba: locação temporada — guia 2026",
+      "h1": "Ubatuba: locação temporada — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Ubatuba: locação temporada — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Ubatuba: locação temporada — guia 2026",
+        "imóveis litoral paulista",
+        "ubatuba"
+      ],
+      "primary_keyword": "Ubatuba: locação temporada — guia 2026",
+      "city": "ubatuba",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "locacao_temporada",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "locacao_temporada",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "cf5f40b2d5",
+      "slug": "maresias-locacao-temporada-imoveis-2026",
+      "path": "blog\\maresias-locacao-temporada-imoveis-2026.html",
+      "title": "Maresias: locação temporada — guia 2026",
+      "h1": "Maresias: locação temporada — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Maresias: locação temporada — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Maresias: locação temporada — guia 2026",
+        "imóveis litoral paulista",
+        "maresias"
+      ],
+      "primary_keyword": "Maresias: locação temporada — guia 2026",
+      "city": "maresias",
       "funnel": "Meio",
       "intent": "comercial",
       "cluster": "locacao_temporada",
