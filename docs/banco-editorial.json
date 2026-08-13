@@ -4,7 +4,7 @@
     "domain": "praia.digital",
     "blog_path": ".\\blog",
     "scope": "controle editorial contínuo + integracao hotmart",
-    "updated_at": "2026-08-13T19:13:38.782230+00:00"
+    "updated_at": "2026-08-13T19:16:13.634076+00:00"
   },
   "products": [
     {
@@ -893,24 +893,7 @@
     }
   ],
   "update_candidates": [],
-  "next_queue": [
-    {
-      "cluster": "cases",
-      "city": "litoral_paulista",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "parcerias",
-      "city": "litoral_paulista",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    }
-  ],
+  "next_queue": [],
   "coverage_by_city_cluster": {
     "litoral_paulista": {
       "editorial": 141,
