@@ -893,16 +893,7 @@
     }
   ],
   "update_candidates": [],
-  "next_queue": [
-    {
-      "cluster": "locacao_temporada",
-      "city": "santos",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 2,
-      "priority": "média"
-    }
-  ],
+  "next_queue": [],
   "coverage_by_city_cluster": {
     "litoral_paulista": {
       "editorial": 141,
