@@ -1,10 +1,10 @@
 {
   "meta": {
-    "total_articles": 1467,
+    "total_articles": 1475,
     "domain": "praia.digital",
     "blog_path": ".\\blog",
     "scope": "controle editorial contínuo + integracao hotmart",
-    "updated_at": "2026-08-13T11:19:18.667416+00:00"
+    "updated_at": "2026-08-13T11:28:13.552888+00:00"
   },
   "products": [
     {
@@ -136,11 +136,11 @@
     "E": "Artigo comercial"
   },
   "status_counts": {
-    "publicado": 1467
+    "publicado": 1475
   },
   "article_type_counts": {
     "A": 1064,
-    "E": 222,
+    "E": 230,
     "C": 146,
     "D": 32,
     "B": 3
@@ -896,70 +896,70 @@
   "next_queue": [
     {
       "cluster": "compra_venda",
-      "city": "praia-grande",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "compra_venda",
-      "city": "itanhaem",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "compra_venda",
-      "city": "mongagua",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "compra_venda",
-      "city": "sao-sebastiao",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "compra_venda",
       "city": "sao-vicente",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "compra_venda",
+      "cluster": "investimento",
+      "city": "mongagua",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "investimento",
+      "city": "caraguatatuba",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "investimento",
+      "city": "sao-sebastiao",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "investimento",
+      "city": "sao-vicente",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "investimento",
       "city": "ubatuba",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "compra_venda",
-      "city": "maresias",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "investimento",
-      "city": "santos",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "investimento",
+      "cluster": "locacao_temporada",
       "city": "praia-grande",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "investimento",
+      "cluster": "locacao_temporada",
       "city": "itanhaem",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "mongagua",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "peruibe",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
@@ -53368,6 +53368,246 @@
       "recommended_cta": null,
       "conversion_potential": "média",
       "commercial_cluster": "investimento",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "85654b753a",
+      "slug": "mongagua-investimento-imoveis-2026",
+      "path": "blog\\mongagua-investimento-imoveis-2026.html",
+      "title": "Mongaguá: investimento em imóveis — análise 2026",
+      "h1": "Mongaguá: investimento em imóveis — análise 2026",
+      "h2_count": 0,
+      "meta_description": "Mongaguá: investimento em imóveis — análise 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Mongaguá: investimento em imóveis — análise 2026",
+        "imóveis litoral paulista",
+        "mongagua"
+      ],
+      "primary_keyword": "Mongaguá: investimento em imóveis — análise 2026",
+      "city": "mongagua",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "investimento",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "investimento",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "c2a684f453",
+      "slug": "caraguatatuba-investimento-imoveis-2026",
+      "path": "blog\\caraguatatuba-investimento-imoveis-2026.html",
+      "title": "Caraguatatuba: investimento em imóveis — análise 2026",
+      "h1": "Caraguatatuba: investimento em imóveis — análise 2026",
+      "h2_count": 0,
+      "meta_description": "Caraguatatuba: investimento em imóveis — análise 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Caraguatatuba: investimento em imóveis — análise 2026",
+        "imóveis litoral paulista",
+        "caraguatatuba"
+      ],
+      "primary_keyword": "Caraguatatuba: investimento em imóveis — análise 2026",
+      "city": "caraguatatuba",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "investimento",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "investimento",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "6363f9ea67",
+      "slug": "sao-vicente-investimento-imoveis-2026",
+      "path": "blog\\sao-vicente-investimento-imoveis-2026.html",
+      "title": "São Vicente: investimento em imóveis — análise 2026",
+      "h1": "São Vicente: investimento em imóveis — análise 2026",
+      "h2_count": 0,
+      "meta_description": "São Vicente: investimento em imóveis — análise 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "São Vicente: investimento em imóveis — análise 2026",
+        "imóveis litoral paulista",
+        "sao_vicente"
+      ],
+      "primary_keyword": "São Vicente: investimento em imóveis — análise 2026",
+      "city": "sao_vicente",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "investimento",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "investimento",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "7698ae4f82",
+      "slug": "ubatuba-investimento-imoveis-2026",
+      "path": "blog\\ubatuba-investimento-imoveis-2026.html",
+      "title": "Ubatuba: investimento em imóveis — análise 2026",
+      "h1": "Ubatuba: investimento em imóveis — análise 2026",
+      "h2_count": 0,
+      "meta_description": "Ubatuba: investimento em imóveis — análise 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Ubatuba: investimento em imóveis — análise 2026",
+        "imóveis litoral paulista",
+        "ubatuba"
+      ],
+      "primary_keyword": "Ubatuba: investimento em imóveis — análise 2026",
+      "city": "ubatuba",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "investimento",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "investimento",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "b5ae923eae",
+      "slug": "praia-grande-locacao-temporada-imoveis-2026",
+      "path": "blog\\praia-grande-locacao-temporada-imoveis-2026.html",
+      "title": "Praia Grande: locação temporada — guia 2026",
+      "h1": "Praia Grande: locação temporada — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Praia Grande: locação temporada — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Praia Grande: locação temporada — guia 2026",
+        "imóveis litoral paulista",
+        "praia_grande"
+      ],
+      "primary_keyword": "Praia Grande: locação temporada — guia 2026",
+      "city": "praia_grande",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "locacao_temporada",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "locacao_temporada",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "bb97cf8761",
+      "slug": "itanhaem-locacao-temporada-imoveis-2026",
+      "path": "blog\\itanhaem-locacao-temporada-imoveis-2026.html",
+      "title": "Itanhaém: locação temporada — guia 2026",
+      "h1": "Itanhaém: locação temporada — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Itanhaém: locação temporada — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Itanhaém: locação temporada — guia 2026",
+        "imóveis litoral paulista",
+        "itanhaem"
+      ],
+      "primary_keyword": "Itanhaém: locação temporada — guia 2026",
+      "city": "itanhaem",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "locacao_temporada",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "locacao_temporada",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "97657b6e4b",
+      "slug": "mongagua-locacao-temporada-imoveis-2026",
+      "path": "blog\\mongagua-locacao-temporada-imoveis-2026.html",
+      "title": "Mongaguá: locação temporada — guia 2026",
+      "h1": "Mongaguá: locação temporada — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Mongaguá: locação temporada — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Mongaguá: locação temporada — guia 2026",
+        "imóveis litoral paulista",
+        "mongagua"
+      ],
+      "primary_keyword": "Mongaguá: locação temporada — guia 2026",
+      "city": "mongagua",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "locacao_temporada",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "locacao_temporada",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "9bfc539193",
+      "slug": "peruibe-locacao-temporada-imoveis-2026",
+      "path": "blog\\peruibe-locacao-temporada-imoveis-2026.html",
+      "title": "Peruíbe: locação temporada — guia 2026",
+      "h1": "Peruíbe: locação temporada — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Peruíbe: locação temporada — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Peruíbe: locação temporada — guia 2026",
+        "imóveis litoral paulista",
+        "peruibe"
+      ],
+      "primary_keyword": "Peruíbe: locação temporada — guia 2026",
+      "city": "peruibe",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "locacao_temporada",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "locacao_temporada",
       "cta_intensity": "moderada"
     }
   ]
