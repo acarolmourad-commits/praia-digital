@@ -435,33 +435,33 @@
    - Hub: `documentacao-vender-imovel-litoral-2026.html`
    - Receberá links de: `checklist-revisao-contrato-compra-venda-imovel-litoral-2026.html`, `documentacao-compra-imovel-litoral-guia-2026.html`
 
-2. **Investir em imóveis no litoral com R$ 50 mil: é possível e como fazer** — P1
-   - Por que é prioritária: evergreen para investidor iniciante.
-   - Hub: `rentabilidade-imoveis-praia-roi-cidade-litoral-2026.html`
-   - Receberá links de: `vale-pena-investir-imovel-litoral-2026.html`, `imoveis-na-planta-litoral-vantagens-riscos-2026.html`
-
-3. **Checklist de inspeção de imóvel no litoral: visita segura para compra** — P1
+2. **Checklist de inspeção de imóvel no litoral: visita segura para compra** — P1
    - Por que é prioritária: reduz risco de compra errada; alto compartilhamento.
    - Hub: `guia-como-comprar-imovel-litoral.html`
    - Receberá links de: `checklist-unico-compra-imovel-litoral-2026.html`, `documentacao-compra-imovel-litoral-guia-2026.html`
 
-4. **Disputa de avaliação de imóvel no litoral: como contestar o valor do banco** — P1
-   - Por que é prioritária: conecta avaliação e financiamento em momento decisivo.
+3. **Quando vale a pena contratar uma avaliação profissional de imóvel no litoral** — P1
+   - Por que é prioritária: fecha etapa de avaliação com decisão objetiva; baixa canibalização.
    - Hub: `avaliacao-online-vs-presencial-imoveis-litoral-2026.html`
-   - Receberá links de: `financiamento-primeiro-imovel-litoral-sp-2026.html`, `precificar-imovel-litoral-com-dados-reais-2026.html`
+   - Receberá links de: `precificar-imovel-litoral-com-dados-reais-2026.html`, `checklist-avaliacao-imoveis-litoral-precificar-dado-local-2026.html`
 
-5. **Aluguel tradicional vs temporada no litoral: qual é mais lucrativo em 2026** — P1
-   - Por que é prioritária: decisão real de proprietários; liga dois clusters fortes.
-   - Hub: `alugar-imovel-temporada-litoral-guia-2026.html`
-   - Receberá links de: `montar-carteira-imoveis-temporada-litoral-2026.html`, `documentacao-aluguel-temporada-litoral-2026.html`
+4. **Comparativo: imóvel na planta vs pronto para morar no litoral** — P1
+   - Por que é prioritária: comparativo decisório; reduz ansiedade do comprador.
+   - Hub: `imoveis-na-planta-litoral-vantagens-riscos-2026.html`
+   - Receberá links de: `quando-comprar-imovel-na-planta-litoral-2026.html`, `guia-como-comprar-imovel-litoral.html`
+
+5. **Investimento em imóveis comerciais vs residenciais no litoral: comparativo 2026** — P1
+   - Por que é prioritária: abre jornada do investidor; liga investimento e mercado.
+   - Hub: `rentabilidade-imoveis-praia-roi-cidade-litoral-2026.html`
+   - Receberá links de: `vale-pena-investir-imovel-litoral-2026.html`, `analise-mercado-imobiliario-litoral-2026.html`
 
 ## 5 P1 principais
 
 1. **Documentação completa para venda de imóvel no litoral: passo a passo**
-2. **Investir em imóveis no litoral com R$ 50 mil: é possível e como fazer**
-3. **Checklist de inspeção de imóvel no litoral: visita segura para compra**
-4. **Disputa de avaliação de imóvel no litoral: como contestar o valor do banco**
-5. **Aluguel tradicional vs temporada no litoral: qual é mais lucrativo em 2026**
+2. **Checklist de inspeção de imóvel no litoral: visita segura para compra**
+3. **Quando vale a pena contratar uma avaliação profissional de imóvel no litoral**
+4. **Comparativo: imóvel na planta vs pronto para morar no litoral**
+5. **Investimento em imóveis comerciais vs residenciais no litoral: comparativo 2026**
 
 ## Hubs e arquitetura de links
 
