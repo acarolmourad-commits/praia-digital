@@ -76029,6 +76029,32 @@
       "actions_blocked": 0,
       "qa_status": "ok",
       "qa_issues": []
+    },
+    {
+      "date": "2026-08-13T21:07:11.788382+00:00",
+      "site_state": {
+        "blog_pages": 2957,
+        "formacoes_pages": 8
+      },
+      "registry_status": "ok",
+      "modules": [
+        "news",
+        "academy",
+        "seo",
+        "refresh",
+        "internal_links",
+        "local_content",
+        "qa",
+        "metrics"
+      ],
+      "opportunities_total": 0,
+      "opportunities_deduped": 0,
+      "human_gates": 0,
+      "auto_opportunities": 0,
+      "actions_executed": 0,
+      "actions_blocked": 0,
+      "qa_status": "ok",
+      "qa_issues": []
     }
   ]
 }
