@@ -1,0 +1,62 @@
+============================================================
+ORQUESTRADOR PRAIA DIGITAL — RELATÓRIO
+Data: 2026-08-13T21:09:56.009804+00:00
+============================================================
+
+MÓDULOS EXECUTADOS:
+  - news: sem_pauta_suficiente
+  - academy: ok
+    Academy auditada: 8 formações, 0 necessidades identificadas
+  - seo: ok
+    SEO audit: 20 artigos amostrados, 6 issues, 7 oportunidades
+  - refresh: error
+    cannot unpack non-iterable CompletedProcess object
+  - internal_links: ok
+    Links internos: 2957 artigos, 0 formações com poucos artigos
+  - local_content: ok
+    Local content: 0 cidades com cobertura < 50 artigos, 78 duplicatas potenciais
+  - qa: ok
+    QA: 28 arquivos verificados, 27 com issues
+  - metrics: ok
+    Métricas coletadas: 2957 blog pages, 8 formações, 2208 artigos
+
+OPORTUNIDADES COLETADAS:
+  - [deduplication] ? (priority=3)
+  - [measurement_window] Batch 146 em medição — não criar novas batches (priority=3)
+  - [add_links] ? (priority=2)
+  - [content_maturation] Site tem mais de 2000 páginas — foco em atualização e links internos (priority=2)
+  - [?] ? (priority=?)
+  - [?] ? (priority=?)
+  - [?] ? (priority=?)
+  - [?] ? (priority=?)
+  - [?] ? (priority=?)
+  - [?] ? (priority=?)
+
+AÇÕES EXECUTADAS:
+  - deduplication: unknown_action
+  - measurement_window: unknown_action
+  - add_links: unknown_action
+  - content_maturation: unknown_action
+  - unknown: unknown_action
+  - unknown: unknown_action
+  - unknown: unknown_action
+  - unknown: unknown_action
+  - unknown: unknown_action
+  - unknown: unknown_action
+  - unknown: unknown_action
+
+QA:
+  Status: ok
+
+PORTAS HUMANAS ATIVAS:
+  - batch_147
+  - next_queue
+  - large_expansion
+  - structural_change
+  - monetization
+  - adsense
+  - strategy_change
+  - reputation_risk
+
+PRÓXIMA EXECUÇÃO: aguardando agendamento
+============================================================
