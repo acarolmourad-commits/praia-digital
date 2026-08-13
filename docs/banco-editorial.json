@@ -896,86 +896,6 @@
   "next_queue": [
     {
       "cluster": "seo_local",
-      "city": "praia_grande",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "praia_grande",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "bertioga",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "bertioga",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "bertioga",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "bertioga",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "itanhaem",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "itanhaem",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "itanhaem",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "itanhaem",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
       "city": "mongagua",
       "article_type": "B",
       "count": 1,
@@ -1290,6 +1210,86 @@
       "cluster": "financiamento",
       "city": "guaruja",
       "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "financiamento",
+      "city": "guaruja",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "financiamento",
+      "city": "guaruja",
+      "article_type": "A",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "financiamento",
+      "city": "praia_grande",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "financiamento",
+      "city": "praia_grande",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "financiamento",
+      "city": "praia_grande",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "financiamento",
+      "city": "praia_grande",
+      "article_type": "A",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "financiamento",
+      "city": "bertioga",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "financiamento",
+      "city": "bertioga",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "financiamento",
+      "city": "bertioga",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "financiamento",
+      "city": "bertioga",
+      "article_type": "A",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
