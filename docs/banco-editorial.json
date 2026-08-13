@@ -1,10 +1,10 @@
 {
   "meta": {
-    "total_articles": 1458,
+    "total_articles": 1467,
     "domain": "praia.digital",
     "blog_path": ".\\blog",
     "scope": "controle editorial contínuo + integracao hotmart",
-    "updated_at": "2026-08-13T11:11:33.206809+00:00"
+    "updated_at": "2026-08-13T11:19:18.667416+00:00"
   },
   "products": [
     {
@@ -136,11 +136,11 @@
     "E": "Artigo comercial"
   },
   "status_counts": {
-    "publicado": 1458
+    "publicado": 1467
   },
   "article_type_counts": {
     "A": 1064,
-    "E": 213,
+    "E": 222,
     "C": 146,
     "D": 32,
     "B": 3
@@ -896,55 +896,55 @@
   "next_queue": [
     {
       "cluster": "compra_venda",
-      "city": "ilhabela",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "investimento",
-      "city": "ilhabela",
+      "city": "praia-grande",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
       "cluster": "compra_venda",
-      "city": "litoral_sp",
+      "city": "itanhaem",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "locacao_temporada",
-      "city": "litoral_sp",
+      "cluster": "compra_venda",
+      "city": "mongagua",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "investimento",
+      "cluster": "compra_venda",
+      "city": "sao-sebastiao",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "compra_venda",
+      "city": "sao-vicente",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "compra_venda",
+      "city": "ubatuba",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "compra_venda",
       "city": "maresias",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "compra_venda",
-      "city": "peruibe",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
       "cluster": "investimento",
-      "city": "peruibe",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "locacao_temporada",
       "city": "santos",
       "count": 1,
       "priority_score": 3,
@@ -952,14 +952,14 @@
     },
     {
       "cluster": "investimento",
-      "city": "sao_sebastiao",
+      "city": "praia-grande",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "compra_venda",
-      "city": "sao_vicente",
+      "cluster": "investimento",
+      "city": "itanhaem",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
@@ -53098,6 +53098,276 @@
       "recommended_cta": null,
       "conversion_potential": "média",
       "commercial_cluster": "compra_venda",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "1140ee0c13",
+      "slug": "praia-grande-compra-venda-imoveis-2026",
+      "path": "blog\\praia-grande-compra-venda-imoveis-2026.html",
+      "title": "Praia Grande: compra e venda de imóveis — guia 2026",
+      "h1": "Praia Grande: compra e venda de imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Praia Grande: compra e venda de imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Praia Grande: compra e venda de imóveis — guia 2026",
+        "imóveis litoral paulista",
+        "praia-grande"
+      ],
+      "primary_keyword": "Praia Grande: compra e venda de imóveis — guia 2026",
+      "city": "praia-grande",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "compra_venda",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "compra_venda",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "e3418666ee",
+      "slug": "itanhaem-compra-venda-imoveis-2026",
+      "path": "blog\\itanhaem-compra-venda-imoveis-2026.html",
+      "title": "Itanhaém: compra e venda de imóveis — guia 2026",
+      "h1": "Itanhaém: compra e venda de imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Itanhaém: compra e venda de imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Itanhaém: compra e venda de imóveis — guia 2026",
+        "imóveis litoral paulista",
+        "itanhaem"
+      ],
+      "primary_keyword": "Itanhaém: compra e venda de imóveis — guia 2026",
+      "city": "itanhaem",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "compra_venda",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "compra_venda",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "2edcfd5a50",
+      "slug": "mongagua-compra-venda-imoveis-2026",
+      "path": "blog\\mongagua-compra-venda-imoveis-2026.html",
+      "title": "Mongaguá: compra e venda de imóveis — guia 2026",
+      "h1": "Mongaguá: compra e venda de imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Mongaguá: compra e venda de imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Mongaguá: compra e venda de imóveis — guia 2026",
+        "imóveis litoral paulista",
+        "mongagua"
+      ],
+      "primary_keyword": "Mongaguá: compra e venda de imóveis — guia 2026",
+      "city": "mongagua",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "compra_venda",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "compra_venda",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "396253a675",
+      "slug": "sao-sebastiao-compra-venda-imoveis-2026",
+      "path": "blog\\sao-sebastiao-compra-venda-imoveis-2026.html",
+      "title": "São Sebastião: compra e venda de imóveis — guia 2026",
+      "h1": "São Sebastião: compra e venda de imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "São Sebastião: compra e venda de imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "São Sebastião: compra e venda de imóveis — guia 2026",
+        "imóveis litoral paulista",
+        "sao-sebastiao"
+      ],
+      "primary_keyword": "São Sebastião: compra e venda de imóveis — guia 2026",
+      "city": "sao-sebastiao",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "compra_venda",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "compra_venda",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "753961a2b4",
+      "slug": "ubatuba-compra-venda-imoveis-2026",
+      "path": "blog\\ubatuba-compra-venda-imoveis-2026.html",
+      "title": "Ubatuba: compra e venda de imóveis — guia 2026",
+      "h1": "Ubatuba: compra e venda de imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Ubatuba: compra e venda de imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Ubatuba: compra e venda de imóveis — guia 2026",
+        "imóveis litoral paulista",
+        "ubatuba"
+      ],
+      "primary_keyword": "Ubatuba: compra e venda de imóveis — guia 2026",
+      "city": "ubatuba",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "compra_venda",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "compra_venda",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "d6128b0e44",
+      "slug": "maresias-compra-venda-imoveis-2026",
+      "path": "blog\\maresias-compra-venda-imoveis-2026.html",
+      "title": "Maresias: compra e venda de imóveis — guia 2026",
+      "h1": "Maresias: compra e venda de imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Maresias: compra e venda de imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Maresias: compra e venda de imóveis — guia 2026",
+        "imóveis litoral paulista",
+        "maresias"
+      ],
+      "primary_keyword": "Maresias: compra e venda de imóveis — guia 2026",
+      "city": "maresias",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "compra_venda",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "compra_venda",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "bbc1042c9e",
+      "slug": "santos-investimento-imoveis-2026",
+      "path": "blog\\santos-investimento-imoveis-2026.html",
+      "title": "Santos: investimento em imóveis — análise 2026",
+      "h1": "Santos: investimento em imóveis — análise 2026",
+      "h2_count": 0,
+      "meta_description": "Santos: investimento em imóveis — análise 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Santos: investimento em imóveis — análise 2026",
+        "imóveis litoral paulista",
+        "santos"
+      ],
+      "primary_keyword": "Santos: investimento em imóveis — análise 2026",
+      "city": "santos",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "investimento",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "investimento",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "7422a2c47f",
+      "slug": "praia-grande-investimento-imoveis-2026",
+      "path": "blog\\praia-grande-investimento-imoveis-2026.html",
+      "title": "Praia Grande: investimento em imóveis — análise 2026",
+      "h1": "Praia Grande: investimento em imóveis — análise 2026",
+      "h2_count": 0,
+      "meta_description": "Praia Grande: investimento em imóveis — análise 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Praia Grande: investimento em imóveis — análise 2026",
+        "imóveis litoral paulista",
+        "praia-grande"
+      ],
+      "primary_keyword": "Praia Grande: investimento em imóveis — análise 2026",
+      "city": "praia-grande",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "investimento",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "investimento",
+      "cta_intensity": "moderada"
+    },
+    {
+      "id": "cab514acc9",
+      "slug": "itanhaem-investimento-imoveis-2026",
+      "path": "blog\\itanhaem-investimento-imoveis-2026.html",
+      "title": "Itanhaém: investimento em imóveis — análise 2026",
+      "h1": "Itanhaém: investimento em imóveis — análise 2026",
+      "h2_count": 0,
+      "meta_description": "Itanhaém: investimento em imóveis — análise 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Itanhaém: investimento em imóveis — análise 2026",
+        "imóveis litoral paulista",
+        "itanhaem"
+      ],
+      "primary_keyword": "Itanhaém: investimento em imóveis — análise 2026",
+      "city": "itanhaem",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "investimento",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "média",
+      "commercial_cluster": "investimento",
       "cta_intensity": "moderada"
     }
   ]
