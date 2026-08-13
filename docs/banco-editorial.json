@@ -4,7 +4,7 @@
     "domain": "praia.digital",
     "blog_path": ".\\blog",
     "scope": "controle editorial contínuo + integracao hotmart",
-    "updated_at": "2026-08-13T19:33:25.175808+00:00"
+    "updated_at": "2026-08-13T19:44:03.390814+00:00"
   },
   "products": [
     {
@@ -75569,6 +75569,37 @@
       "conversion_potential": "media",
       "commercial_cluster": "locacao_temporada",
       "cta_intensity": "moderada"
+    }
+  ],
+  "batch_history": [
+    {
+      "batch": 146,
+      "date": "2026-08-13T19:44:03Z",
+      "items": 23,
+      "actions": {
+        "ATUALIZAR": 7,
+        "EXPANDIR": 8,
+        "CRIAR": 8
+      },
+      "skips": [
+        {
+          "slug": "comprar-casa-na-praia-primeiro-imovel-em-sao-vicente-2026-07-13",
+          "reason": "Slug existente no registry e HTML, mas com acento e formatação diferente do slug de auditoria gerado; página foi recuperada e atualizada.",
+          "investigation": "Arquivo HTML confirmado em blog/. Entrada no registry encontrada com id 788b4797ec, city=sao_vicente, cluster=compra_venda. Erro veio da geração do slug de auditoria com acentos/espacos diferentes.",
+          "status": "resolvido"
+        }
+      ],
+      "measurement_pending": true,
+      "metrics_to_track": [
+        "impressoes",
+        "cliques",
+        "CTR",
+        "posicao_media",
+        "indexacao",
+        "crescimento_consultas",
+        "links_internos_recebidos",
+        "sinais_canibalizacao"
+      ]
     }
   ]
 }
