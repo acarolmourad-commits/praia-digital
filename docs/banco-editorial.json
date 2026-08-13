@@ -895,56 +895,6 @@
   "update_candidates": [],
   "next_queue": [
     {
-      "cluster": "compra_venda",
-      "city": "maresias",
-      "article_type": "B"
-    },
-    {
-      "cluster": "compra_venda",
-      "city": "maresias",
-      "article_type": "C"
-    },
-    {
-      "cluster": "compra_venda",
-      "city": "maresias",
-      "article_type": "D"
-    },
-    {
-      "cluster": "investimento",
-      "city": "santos",
-      "article_type": "A"
-    },
-    {
-      "cluster": "investimento",
-      "city": "santos",
-      "article_type": "B"
-    },
-    {
-      "cluster": "investimento",
-      "city": "santos",
-      "article_type": "C"
-    },
-    {
-      "cluster": "investimento",
-      "city": "santos",
-      "article_type": "D"
-    },
-    {
-      "cluster": "investimento",
-      "city": "guaruja",
-      "article_type": "B"
-    },
-    {
-      "cluster": "investimento",
-      "city": "guaruja",
-      "article_type": "C"
-    },
-    {
-      "cluster": "investimento",
-      "city": "guaruja",
-      "article_type": "D"
-    },
-    {
       "cluster": "investimento",
       "city": "praia_grande",
       "article_type": "B"
