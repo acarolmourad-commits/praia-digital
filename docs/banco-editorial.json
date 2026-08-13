@@ -902,7 +902,97 @@
     {
       "cluster": "locacao_temporada",
       "city": "ilhabela",
+      "article_type": "C"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "ilhabela",
+      "article_type": "D"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "sao_sebastiao",
+      "article_type": "A"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "sao_sebastiao",
       "article_type": "B"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "sao_sebastiao",
+      "article_type": "C"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "sao_sebastiao",
+      "article_type": "D"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "sao_vicente",
+      "article_type": "B"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "sao_vicente",
+      "article_type": "C"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "sao_vicente",
+      "article_type": "D"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "ubatuba",
+      "article_type": "A"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "ubatuba",
+      "article_type": "B"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "ubatuba",
+      "article_type": "C"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "ubatuba",
+      "article_type": "D"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "maresias",
+      "article_type": "A"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "maresias",
+      "article_type": "B"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "maresias",
+      "article_type": "C"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "litoral_paulista",
+      "article_type": "B"
+    },
+    {
+      "cluster": "automacao_ia",
+      "city": "santos",
+      "article_type": "B"
+    },
+    {
+      "cluster": "automacao_ia",
+      "city": "santos",
+      "article_type": "C"
     }
   ],
   "coverage_by_city_cluster": {
