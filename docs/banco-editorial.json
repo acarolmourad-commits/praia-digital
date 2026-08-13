@@ -901,22 +901,6 @@
       "count": 1,
       "priority_score": 2,
       "priority": "média"
-    },
-    {
-      "cluster": "locacao_temporada",
-      "city": "guaruja",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 2,
-      "priority": "média"
-    },
-    {
-      "cluster": "locacao_temporada",
-      "city": "praia_grande",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 2,
-      "priority": "média"
     }
   ],
   "coverage_by_city_cluster": {
@@ -60004,7 +59988,8 @@
       "meta_description": "Santos: checklist para locação de temporada — guia 2026. Material completo para corretores e proprietários no litoral paulista.",
       "keywords": [
         "Santos: checklist para locação de temporada — guia 2026",
-        "imóveis litoral paulista",
+        "locação de temporada",
+        "checklist imóveis",
         "santos"
       ],
       "primary_keyword": "Santos: checklist para locação de temporada — guia 2026",
@@ -60014,8 +59999,8 @@
       "cluster": "locacao_temporada",
       "canonical_ok": true,
       "status": "publicado",
-      "article_type": "B",
-      "article_type_label": "Curso/Guia",
+      "article_type": "C",
+      "article_type_label": "Checklist/Guia prático",
       "product_related_id": null,
       "product_relation_score": 0,
       "hotmart_link": null,
