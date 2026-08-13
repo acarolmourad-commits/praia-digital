@@ -1,0 +1,223 @@
+{
+  "formation_to_articles": {
+    "formacao-corretor-imoveis-litoral": [
+      {
+        "slug": "fechamento-vendas-corretores-litoral-2026",
+        "title": "Técnicas de fechamento de vendas para corretores do litoral paulista em 2026"
+      },
+      {
+        "slug": "fechamento-vendas-corretores-litoral-paulista-2026",
+        "title": "Fechamento de Vendas Para Corretores do Litoral: Técnicas e Scripts 2026"
+      },
+      {
+        "slug": "acelerar-fechamento-vendas-litoral-paulista-2026",
+        "title": "Acelerar Fechamento de Vendas no Litoral: Checklists e Scripts 2026"
+      }
+    ],
+    "avaliacao-imoveis-ptam": [
+      {
+        "slug": "avaliacao-automatica-preco-mercado-litoral-2026",
+        "title": "Avaliação automática de preço de mercado para imóveis no litoral"
+      },
+      {
+        "slug": "avaliacao-preco-mercado-litoral",
+        "title": "Avaliação de preço de mercado para imóveis no litoral"
+      },
+      {
+        "slug": "ia-avaliacao-preco-mercado-litoral-2026",
+        "title": "Avaliação automática de preço de mercado no litoral paulista"
+      }
+    ],
+    "financiamento-imobiliario": [
+      {
+        "slug": "aposentado-bertioga-ia",
+        "title": "Aposentado em Bertioga"
+      },
+      {
+        "slug": "aposentado-mongagua-ia",
+        "title": "Aposentado em Mongaguá"
+      },
+      {
+        "slug": "cobertura-aposentado-bertioga-ia",
+        "title": "Cobertura para aposentado em Bertioga"
+      }
+    ],
+    "locacao-temporada-administracao": [
+      {
+        "slug": "airbnb-corporativo-litoral",
+        "title": "Airbnb corporativo no litoral: nicho de alta ocupação"
+      },
+      {
+        "slug": "airbnb-ou-aluguel-anual-2026",
+        "title": "Airbnb ou aluguel anual?"
+      },
+      {
+        "slug": "airbnb-vs-booking-litoral-sp",
+        "title": "Airbnb ou Booking no litoral SP: onde seu imóvel vende mais"
+      }
+    ],
+    "captacao-imoveis": [
+      {
+        "slug": "captacao-leads-whatsapp-litoral-paulista-2026",
+        "title": "Captação de Leads por WhatsApp no Litoral: Estratégias 2026"
+      },
+      {
+        "slug": "abordagem-proprietarios-whatsapp-litoral-2026",
+        "title": "Abordagem a Proprietários por WhatsApp no Litoral"
+      },
+      {
+        "slug": "captacao-2026-imóveis-leads-2026-07-24",
+        "title": "Captação imóveis leads 2026 imóveis leads em 2026"
+      }
+    ],
+    "marketing-imobiliario": [
+      {
+        "slug": "anuncios-facebook-instagram-imoveis-litoral-2026",
+        "title": "Anuncios Facebook Instagram Imoveis Litoral"
+      },
+      {
+        "slug": "anuncios-locais-instagram-imobiliarias-litoral-2026",
+        "title": "Anúncios locais no Instagram para imobiliárias no litoral paulista em 2026"
+      },
+      {
+        "slug": "captacao-leads-imobiliarias-google-maps",
+        "title": "Captação de leads para imobiliárias no Google Maps"
+      }
+    ],
+    "documentacao-imoveis": [
+      {
+        "slug": "escritura-registro-imovel-litoral-passo-passo-2026",
+        "title": "Escritura e Registro de Imóvel no Litoral: Passo a Passo para Evitar Erros"
+      },
+      {
+        "slug": "automacao-contratos-aluguel-temporada-litoral-paulista-2026",
+        "title": "Automação de Contratos de Aluguel de Temporada no Litoral: Guia Prático 2026"
+      },
+      {
+        "slug": "biblioteca-contratos-documentos-imobiliaria",
+        "title": "Biblioteca de contratos e documentos para imobiliaria"
+      }
+    ],
+    "mercado-imobiliario-litoral": [
+      {
+        "slug": "analise-mercado-imobiliario-litoral-paulista-2026",
+        "title": "Análise de Mercado Imobiliário no Litoral Paulista: Dados e Tendências 2026"
+      },
+      {
+        "slug": "analise-mercado-imobiliario-litoral",
+        "title": "Análise de Mercado Imobiliário no Litoral Paulista: Guia Prático para Investidores e Corretores"
+      },
+      {
+        "slug": "avaliacao-automatica-preco-mercado-litoral-2026",
+        "title": "Avaliação automática de preço de mercado para imóveis no litoral"
+      }
+    ]
+  },
+  "article_to_formations": {
+    "fechamento-vendas-corretores-litoral-2026": [
+      "formacao-corretor-imoveis-litoral"
+    ],
+    "fechamento-vendas-corretores-litoral-paulista-2026": [
+      "formacao-corretor-imoveis-litoral"
+    ],
+    "acelerar-fechamento-vendas-litoral-paulista-2026": [
+      "formacao-corretor-imoveis-litoral"
+    ],
+    "avaliacao-automatica-preco-mercado-litoral-2026": [
+      "avaliacao-imoveis-ptam",
+      "mercado-imobiliario-litoral"
+    ],
+    "avaliacao-preco-mercado-litoral": [
+      "avaliacao-imoveis-ptam"
+    ],
+    "ia-avaliacao-preco-mercado-litoral-2026": [
+      "avaliacao-imoveis-ptam"
+    ],
+    "aposentado-bertioga-ia": [
+      "financiamento-imobiliario"
+    ],
+    "aposentado-mongagua-ia": [
+      "financiamento-imobiliario"
+    ],
+    "cobertura-aposentado-bertioga-ia": [
+      "financiamento-imobiliario"
+    ],
+    "airbnb-corporativo-litoral": [
+      "locacao-temporada-administracao"
+    ],
+    "airbnb-ou-aluguel-anual-2026": [
+      "locacao-temporada-administracao"
+    ],
+    "airbnb-vs-booking-litoral-sp": [
+      "locacao-temporada-administracao"
+    ],
+    "captacao-leads-whatsapp-litoral-paulista-2026": [
+      "captacao-imoveis"
+    ],
+    "abordagem-proprietarios-whatsapp-litoral-2026": [
+      "captacao-imoveis"
+    ],
+    "captacao-2026-imóveis-leads-2026-07-24": [
+      "captacao-imoveis"
+    ],
+    "anuncios-facebook-instagram-imoveis-litoral-2026": [
+      "marketing-imobiliario"
+    ],
+    "anuncios-locais-instagram-imobiliarias-litoral-2026": [
+      "marketing-imobiliario"
+    ],
+    "captacao-leads-imobiliarias-google-maps": [
+      "marketing-imobiliario"
+    ],
+    "escritura-registro-imovel-litoral-passo-passo-2026": [
+      "documentacao-imoveis"
+    ],
+    "automacao-contratos-aluguel-temporada-litoral-paulista-2026": [
+      "documentacao-imoveis"
+    ],
+    "biblioteca-contratos-documentos-imobiliaria": [
+      "documentacao-imoveis"
+    ],
+    "analise-mercado-imobiliario-litoral-paulista-2026": [
+      "mercado-imobiliario-litoral"
+    ],
+    "analise-mercado-imobiliario-litoral": [
+      "mercado-imobiliario-litoral"
+    ]
+  },
+  "updated_formacoes": [
+    "formacao-corretor-imoveis-litoral",
+    "avaliacao-imoveis-ptam",
+    "financiamento-imobiliario",
+    "locacao-temporada-administracao",
+    "captacao-imoveis",
+    "marketing-imobiliario",
+    "documentacao-imoveis",
+    "mercado-imobiliario-litoral"
+  ],
+  "updated_articles": [
+    "fechamento-vendas-corretores-litoral-2026",
+    "fechamento-vendas-corretores-litoral-paulista-2026",
+    "acelerar-fechamento-vendas-litoral-paulista-2026",
+    "avaliacao-automatica-preco-mercado-litoral-2026",
+    "avaliacao-preco-mercado-litoral",
+    "ia-avaliacao-preco-mercado-litoral-2026",
+    "aposentado-bertioga-ia",
+    "aposentado-mongagua-ia",
+    "cobertura-aposentado-bertioga-ia",
+    "airbnb-corporativo-litoral",
+    "airbnb-ou-aluguel-anual-2026",
+    "airbnb-vs-booking-litoral-sp",
+    "captacao-leads-whatsapp-litoral-paulista-2026",
+    "abordagem-proprietarios-whatsapp-litoral-2026",
+    "captacao-2026-imóveis-leads-2026-07-24",
+    "anuncios-facebook-instagram-imoveis-litoral-2026",
+    "anuncios-locais-instagram-imobiliarias-litoral-2026",
+    "captacao-leads-imobiliarias-google-maps",
+    "escritura-registro-imovel-litoral-passo-passo-2026",
+    "automacao-contratos-aluguel-temporada-litoral-paulista-2026",
+    "biblioteca-contratos-documentos-imobiliaria",
+    "analise-mercado-imobiliario-litoral-paulista-2026"
+  ],
+  "timestamp": "2026-08-13T20:46:10.421531+00:00"
+}
