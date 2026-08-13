@@ -6643,6 +6643,126 @@
         "https://praia.digital/blog/precificacao-imovel-litoral-dados-reais-2026.html",
         "https://praia.digital/blog/como-usar-dados-locais-fechar-vendas-imoveis-litoral-2026.html"
       ]
+    },
+    {
+      "title": "Guia de documentação para aluguel de temporada no litoral",
+      "slug": "guia-documentacao-aluguel-temporada-litoral-2026.html",
+      "h1": "Guia de documentação para aluguel de temporada no litoral",
+      "meta_title": "Guia de documentação para aluguel de temporada no litoral",
+      "meta_description": "Guia de documentação para aluguel de temporada no litoral.",
+      "canonical": "https://praia.digital/blog/guia-documentacao-aluguel-temporada-litoral-2026.html",
+      "cluster": "documentacao",
+      "intent": "prática",
+      "funnel": "Decisão",
+      "article_type": "guia prático",
+      "author": "Praia Digital",
+      "word_count": 170,
+      "status": "PUBLISHED",
+      "published_at": "2026-08-13T02:20:03.066842+00:00",
+      "created_at": "2026-08-13T02:20:03.066842+00:00",
+      "http_status": 200,
+      "in_sitemap": true,
+      "canonical_self": true,
+      "internal_links": [
+        "https://praia.digital/blog/aluguel-temporada-legalidade-documentos-2026.html",
+        "https://praia.digital/blog/documentacao-aluguel-temporada-litoral-contrato-registro-seguro-2026.html"
+      ]
+    },
+    {
+      "title": "Avaliação de imóvel no litoral: métodos práticos",
+      "slug": "avaliacao-imovel-litoral-metodos-2026.html",
+      "h1": "Avaliação de imóvel no litoral: métodos práticos",
+      "meta_title": "Avaliação de imóvel no litoral: métodos práticos",
+      "meta_description": "Avaliação de imóvel no litoral: métodos práticos.",
+      "canonical": "https://praia.digital/blog/avaliacao-imovel-litoral-metodos-2026.html",
+      "cluster": "avaliacao_precificacao",
+      "intent": "analítica",
+      "funnel": "Decisão",
+      "article_type": "análise",
+      "author": "Praia Digital",
+      "word_count": 160,
+      "status": "PUBLISHED",
+      "published_at": "2026-08-13T02:20:03.066842+00:00",
+      "created_at": "2026-08-13T02:20:03.066842+00:00",
+      "http_status": 200,
+      "in_sitemap": true,
+      "canonical_self": true,
+      "internal_links": [
+        "https://praia.digital/blog/avaliacao-mercado-imoveis-litoral-2026.html",
+        "https://praia.digital/blog/precificacao-imovel-litoral-dados-reais-2026.html"
+      ]
+    },
+    {
+      "title": "Retenção de imóveis no litoral: indicadores",
+      "slug": "retencao-imoveis-litoral-indicadores-2026.html",
+      "h1": "Retenção de imóveis no litoral: indicadores",
+      "meta_title": "Retenção de imóveis no litoral: indicadores",
+      "meta_description": "Retenção de imóveis no litoral: indicadores.",
+      "canonical": "https://praia.digital/blog/retencao-imoveis-litoral-indicadores-2026.html",
+      "cluster": "operacao",
+      "intent": "analítica",
+      "funnel": "Pós-locação",
+      "article_type": "análise",
+      "author": "Praia Digital",
+      "word_count": 160,
+      "status": "PUBLISHED",
+      "published_at": "2026-08-13T02:20:03.066842+00:00",
+      "created_at": "2026-08-13T02:20:03.066842+00:00",
+      "http_status": 200,
+      "in_sitemap": true,
+      "canonical_self": true,
+      "internal_links": [
+        "https://praia.digital/blog/indicadores-eficiencia-imobiliaria-litoral-2026.html",
+        "https://praia.digital/blog/rentabilidade-aluguel-temporada-cidade-litoral-paulista-2026.html"
+      ]
+    },
+    {
+      "title": "Planejamento de obra para imóvel na planta no litoral",
+      "slug": "planejamento-obra-imovel-planta-litoral-2026.html",
+      "h1": "Planejamento de obra para imóvel na planta no litoral",
+      "meta_title": "Planejamento de obra para imóvel na planta no litoral",
+      "meta_description": "Planejamento de obra para imóvel na planta no litoral.",
+      "canonical": "https://praia.digital/blog/planejamento-obra-imovel-planta-litoral-2026.html",
+      "cluster": "documentacao",
+      "intent": "prática",
+      "funnel": "Decisão",
+      "article_type": "guia prático",
+      "author": "Praia Digital",
+      "word_count": 170,
+      "status": "PUBLISHED",
+      "published_at": "2026-08-13T02:20:03.066842+00:00",
+      "created_at": "2026-08-13T02:20:03.066842+00:00",
+      "http_status": 200,
+      "in_sitemap": true,
+      "canonical_self": true,
+      "internal_links": [
+        "https://praia.digital/blog/imovel-planta-monitorar-obra-garantir-entrega-litoral-2026.html",
+        "https://praia.digital/blog/analise-risco-imoveis-planta-litoral-proteger-investimento-2026.html"
+      ]
+    },
+    {
+      "title": "Retorno do aluguel de temporada no litoral: indicadores",
+      "slug": "retorno-aluguel-temporada-indicadores-2026.html",
+      "h1": "Retorno do aluguel de temporada no litoral: indicadores",
+      "meta_title": "Retorno do aluguel de temporada no litoral: indicadores",
+      "meta_description": "Retorno do aluguel de temporada no litoral: indicadores.",
+      "canonical": "https://praia.digital/blog/retorno-aluguel-temporada-indicadores-2026.html",
+      "cluster": "aluguel",
+      "intent": "analítica",
+      "funnel": "Pós-locação",
+      "article_type": "análise",
+      "author": "Praia Digital",
+      "word_count": 160,
+      "status": "PUBLISHED",
+      "published_at": "2026-08-13T02:20:03.066842+00:00",
+      "created_at": "2026-08-13T02:20:03.066842+00:00",
+      "http_status": 200,
+      "in_sitemap": true,
+      "canonical_self": true,
+      "internal_links": [
+        "https://praia.digital/blog/rentabilidade-aluguel-temporada-cidade-litoral-paulista-2026.html",
+        "https://praia.digital/blog/fluxo-caixa-aluguel-temporada-litoral-2026.html"
+      ]
     }
   ],
   "publication_plan": [
