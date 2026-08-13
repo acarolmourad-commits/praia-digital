@@ -75968,6 +75968,78 @@
       ],
       "created_materials": [],
       "status": "audited"
+    },
+    {
+      "date": "2026-08-13T21:08:35.459241+00:00",
+      "formation_analysis": [
+        {
+          "slug": "formacao-corretor-imoveis-litoral",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 6347,
+          "has_faq": true
+        },
+        {
+          "slug": "avaliacao-imoveis-ptam",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5991,
+          "has_faq": true
+        },
+        {
+          "slug": "financiamento-imobiliario",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5847,
+          "has_faq": true
+        },
+        {
+          "slug": "locacao-temporada-administracao",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5918,
+          "has_faq": true
+        },
+        {
+          "slug": "captacao-imoveis",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5805,
+          "has_faq": true
+        },
+        {
+          "slug": "marketing-imobiliario",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5970,
+          "has_faq": true
+        },
+        {
+          "slug": "documentacao-imoveis",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5987,
+          "has_faq": true
+        },
+        {
+          "slug": "mercado-imobiliario-litoral",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 6173,
+          "has_faq": true
+        }
+      ],
+      "top_needs": [],
+      "created_materials": [],
+      "status": "audited"
     }
   ],
   "news_audit": [
@@ -75978,6 +76050,11 @@
     },
     {
       "date": "2026-08-13T21:07:57.228062+00:00",
+      "status": "sem_pauta_suficiente",
+      "reason": "Nenhuma pauta encontrada na semana"
+    },
+    {
+      "date": "2026-08-13T21:08:35.022281+00:00",
       "status": "sem_pauta_suficiente",
       "reason": "Nenhuma pauta encontrada na semana"
     }
@@ -76082,6 +76159,32 @@
       "opportunities_deduped": 5,
       "human_gates": 0,
       "auto_opportunities": 5,
+      "actions_executed": 0,
+      "actions_blocked": 0,
+      "qa_status": "ok",
+      "qa_issues": []
+    },
+    {
+      "date": "2026-08-13T21:08:40.418241+00:00",
+      "site_state": {
+        "blog_pages": 2957,
+        "formacoes_pages": 8
+      },
+      "registry_status": "ok",
+      "modules": [
+        "news",
+        "academy",
+        "seo",
+        "refresh",
+        "internal_links",
+        "local_content",
+        "qa",
+        "metrics"
+      ],
+      "opportunities_total": 7,
+      "opportunities_deduped": 7,
+      "human_gates": 0,
+      "auto_opportunities": 7,
       "actions_executed": 0,
       "actions_blocked": 0,
       "qa_status": "ok",
