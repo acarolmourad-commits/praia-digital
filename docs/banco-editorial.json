@@ -77775,5 +77775,12 @@
     "last_check": "2026-08-13T21:48:07.571526+00:00",
     "site_pages": 2957,
     "formacoes": 8
+  },
+  "maintenance": {
+    "last_run": "2026-08-13T21:55:34.043307+00:00",
+    "blog_count": 2957,
+    "noticias_count": 1,
+    "formacoes_count": 8,
+    "total_pages": 2966
   }
 }
