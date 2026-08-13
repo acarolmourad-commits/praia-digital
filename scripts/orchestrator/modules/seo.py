@@ -41,13 +41,29 @@ def run(context: dict) -> dict:
     results = [audit_article(f) for f in files]
 
     issues = [r for r in results if not r['has_h1'] or not r['has_meta'] or r['meta_len'] < 60]
-    opportunities = [r for r in results if r['has_h1'] and r['has_meta'] and r['meta_len'] < 120 and r['title_len'] < 60]
+    summary = {
+        'sampled': len(results),
+        'issues': len(issues),
+        'missing_schema': sum(1 for r in results if not r.get('has_schema')),
+        'short_meta': sum(1 for r in results if r.get('meta_len', 0) < 60),
+        'short_title': sum(1 for r in results if r.get('title_len', 0) < 40),
+        'missing_h1': sum(1 for r in results if not r.get('has_h1')),
+    }
+
+    opportunities = []
+    if summary['missing_schema'] > 0:
+        opportunities.append({'type': 'seo_audit', 'message': f"{summary['missing_schema']} artigos sem schema", 'priority': 2})
+    if summary['short_meta'] > 0:
+        opportunities.append({'type': 'seo_audit', 'message': f"{summary['short_meta']} artigos com meta curta", 'priority': 2})
+    if summary['missing_h1'] > 0:
+        opportunities.append({'type': 'seo_audit', 'message': f"{summary['missing_h1']} artigos sem h1", 'priority': 3})
 
     return {
         'status': 'ok',
         'actions': [],
         'sampled': len(results),
         'issues': issues[:10],
+        'summary': summary,
         'opportunities': opportunities[:10],
-        'message': f'SEO audit: {len(results)} artigos amostrados, {len(issues)} issues, {len(opportunities)} oportunidades',
+        'message': f"SEO audit: {len(results)} amostrados, {len(issues)} issues, {len(opportunities)} oportunidades",
     }

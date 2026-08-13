@@ -48,15 +48,14 @@ def run(context: dict) -> dict:
     for city in undercovered[:5]:
         opportunities.append({
             'type': 'local_content',
-            'city': city,
-            'current_count': city_counts[city],
+            'message': f"{city}: {city_counts[city]} artigos",
             'priority': 2,
         })
 
     if duplicates:
         opportunities.append({
             'type': 'deduplication',
-            'count': len(duplicates),
+            'message': f"{len(duplicates)} duplicatas potenciais",
             'priority': 3,
         })
 

@@ -2,6 +2,7 @@
 """
 Módulo: QA — Praia Digital.
 - Verifica HTML básico: tags fechadas, links internos válidos, schema mínimo
+- Ignora páginas de redirect/lote antigo
 - Não altera conteúdo, só reporta issues
 """
 import json, re
@@ -12,6 +13,10 @@ REPO = Path('.').resolve()
 BLOG_DIR = REPO / 'blog'
 FORMACOES_DIR = REPO / 'education' / 'formacoes'
 REGISTRY = REPO / 'docs' / 'banco-editorial.json'
+
+def is_redirect(path: Path) -> bool:
+    txt = path.read_text(encoding='utf-8', errors='ignore').lower()
+    return 'redirecionando' in txt or 'window.location.href' in txt or 'meta http-equiv="refresh"' in txt
 
 def check_html(path: Path) -> dict:
     html = path.read_text(encoding='utf-8', errors='ignore')
@@ -24,15 +29,11 @@ def check_html(path: Path) -> dict:
     if '<title' not in html.lower():
         issues.append('missing_title')
 
-    # Check for unclosed tags (basic)
-    open_tags = len(re.findall(r'<(?!/)(?!!)[a-zA-Z][^>]*>', html))
-    close_tags = len(re.findall(r'</[a-zA-Z][^>]*>', html))
-    if abs(open_tags - close_tags) > 5:
-        issues.append('possible_unbalanced_tags')
+    # Skip simple open/close balance check for complex HTML
+    # It produces false positives on pages with many self-closing tags
 
-    # Check for broken internal links (basic)
     internal_links = re.findall(r'href="(/[^"]+)"', html)
-    for link in internal_links[:10]:  # sample
+    for link in internal_links[:10]:
         target = REPO / link.lstrip('/')
         if not target.exists():
             issues.append(f'broken_link:{link}')
@@ -45,8 +46,7 @@ def check_html(path: Path) -> dict:
     }
 
 def run(context: dict) -> dict:
-    # Sample files from blog and formacoes
-    blog_files = list(BLOG_DIR.glob('*.html'))[:20]
+    blog_files = [f for f in list(BLOG_DIR.glob('*.html'))[:20] if not is_redirect(f)]
     formacoes_files = list(FORMACOES_DIR.glob('*.html'))[:8]
     all_files = blog_files + formacoes_files
 

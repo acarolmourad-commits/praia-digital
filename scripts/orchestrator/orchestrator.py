@@ -35,7 +35,7 @@ MODULES_DIR = REPO / 'scripts' / 'orchestrator' / 'modules'
 
 ALLOWED_MODULES = [
     'news', 'academy', 'seo', 'refresh',
-    'internal_links', 'local_content', 'qa', 'metrics',
+    'internal_links', 'local_content', 'qa', 'qa_fixes', 'metrics',
 ]
 
 HUMAN_GATES = [
@@ -47,7 +47,8 @@ HUMAN_GATES = [
 ALLOWED_ACTIONS = [
     'news_publish', 'academy_audit', 'seo_audit',
     'sitemap_refresh', 'add_internal_links', 'local_content_audit',
-    'qa_check', 'metrics_collect', 'update_dates', 'update_registry',
+    'qa_check', 'qa_fix', 'metrics_collect', 'update_dates', 'update_registry',
+    'internal_links_audit',
 ]
 
 DENIED_ACTIONS = [
@@ -163,7 +164,8 @@ def generate_report(module_results: list, executed_actions: list, qa_result: dic
     deduped = deduplicate(all_opps)
     prioritized = prioritize(deduped)
     for opp in prioritized[:10]:
-        report.append(f"  - [{opp.get('type', '?')}] {opp.get('message', opp.get('opportunity', '?'))} (priority={opp.get('priority', '?')})")
+        label = opp.get('message') or opp.get('opportunity') or opp.get('type', '?')
+        report.append(f"  - [{opp.get('type', '?')}] {label} (priority={opp.get('priority', '?')})")
     report.append('')
     report.append('AÇÕES EXECUTADAS:')
     for action in executed_actions:
