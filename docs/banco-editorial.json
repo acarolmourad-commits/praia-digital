@@ -4,7 +4,7 @@
     "domain": "praia.digital",
     "blog_path": ".\\blog",
     "scope": "controle editorial contínuo + integracao hotmart",
-    "updated_at": "2026-08-13T11:33:32.183082+00:00"
+    "updated_at": "2026-08-13T11:35:45.893603+00:00"
   },
   "products": [
     {
@@ -895,35 +895,70 @@
   "update_candidates": [],
   "next_queue": [
     {
-      "cluster": "compra_venda",
-      "city": "sao_sebastiao",
+      "cluster": "automacao_ia",
+      "city": "santos",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "locacao_temporada",
+      "cluster": "automacao_ia",
+      "city": "praia_grande",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "automacao_ia",
+      "city": "bertioga",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "automacao_ia",
+      "city": "itanhaem",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "automacao_ia",
+      "city": "mongagua",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "automacao_ia",
+      "city": "peruibe",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "automacao_ia",
       "city": "caraguatatuba",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "locacao_temporada",
-      "city": "sao_sebastiao",
+      "cluster": "automacao_ia",
+      "city": "ilhabela",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "locacao_temporada",
+      "cluster": "automacao_ia",
       "city": "ubatuba",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "locacao_temporada",
+      "cluster": "automacao_ia",
       "city": "maresias",
       "count": 1,
       "priority_score": 3,
@@ -53169,7 +53204,7 @@
         "sao-sebastiao"
       ],
       "primary_keyword": "São Sebastião: compra e venda de imóveis — guia 2026",
-      "city": "sao-sebastiao",
+      "city": "sao_sebastiao",
       "funnel": "Meio",
       "intent": "comercial",
       "cluster": "compra_venda",
