@@ -895,15 +895,359 @@
   "update_candidates": [],
   "next_queue": [
     {
-      "cluster": "marketing_digital",
+      "cluster": "seo_local",
+      "city": "santos",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "santos",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "santos",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "santos",
+      "article_type": "E",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "guaruja",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "guaruja",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "guaruja",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "guaruja",
+      "article_type": "E",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "praia_grande",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "praia_grande",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "praia_grande",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "praia_grande",
+      "article_type": "E",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "bertioga",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "bertioga",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "bertioga",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "bertioga",
+      "article_type": "E",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "itanhaem",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "itanhaem",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "itanhaem",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "itanhaem",
+      "article_type": "E",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "mongagua",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "mongagua",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "mongagua",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "mongagua",
+      "article_type": "E",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "peruibe",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "peruibe",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "peruibe",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "peruibe",
+      "article_type": "E",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "caraguatatuba",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "caraguatatuba",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "caraguatatuba",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "caraguatatuba",
+      "article_type": "E",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "ilhabela",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "ilhabela",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "ilhabela",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "ilhabela",
+      "article_type": "E",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "sao_sebastiao",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "sao_sebastiao",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "sao_sebastiao",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "sao_sebastiao",
+      "article_type": "E",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
       "city": "sao_vicente",
-      "article_type": "A",
+      "article_type": "B",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "marketing_digital",
+      "cluster": "seo_local",
+      "city": "sao_vicente",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "sao_vicente",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
+      "city": "sao_vicente",
+      "article_type": "E",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "seo_local",
       "city": "ubatuba",
       "article_type": "B",
       "count": 1,
@@ -911,7 +1255,7 @@
       "priority": "alta"
     },
     {
-      "cluster": "marketing_digital",
+      "cluster": "seo_local",
       "city": "ubatuba",
       "article_type": "C",
       "count": 1,
@@ -919,7 +1263,7 @@
       "priority": "alta"
     },
     {
-      "cluster": "marketing_digital",
+      "cluster": "seo_local",
       "city": "ubatuba",
       "article_type": "D",
       "count": 1,
@@ -927,15 +1271,15 @@
       "priority": "alta"
     },
     {
-      "cluster": "marketing_digital",
+      "cluster": "seo_local",
       "city": "ubatuba",
-      "article_type": "A",
+      "article_type": "E",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "marketing_digital",
+      "cluster": "seo_local",
       "city": "maresias",
       "article_type": "B",
       "count": 1,
@@ -943,353 +1287,9 @@
       "priority": "alta"
     },
     {
-      "cluster": "marketing_digital",
+      "cluster": "seo_local",
       "city": "maresias",
       "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "marketing_digital",
-      "city": "maresias",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "marketing_digital",
-      "city": "maresias",
-      "article_type": "A",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "marketing_digital",
-      "city": "litoral_paulista",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "santos",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "santos",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "santos",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "santos",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "guaruja",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "guaruja",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "guaruja",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "guaruja",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "praia_grande",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "praia_grande",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "praia_grande",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "praia_grande",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "bertioga",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "bertioga",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "bertioga",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "bertioga",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "itanhaem",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "itanhaem",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "itanhaem",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "itanhaem",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "mongagua",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "mongagua",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "mongagua",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "mongagua",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "peruibe",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "peruibe",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "peruibe",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "peruibe",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "caraguatatuba",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "caraguatatuba",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "caraguatatuba",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "caraguatatuba",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "ilhabela",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "ilhabela",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "ilhabela",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "ilhabela",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "sao_sebastiao",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "sao_sebastiao",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "sao_sebastiao",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "seo_local",
-      "city": "sao_sebastiao",
-      "article_type": "E",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
