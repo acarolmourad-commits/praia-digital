@@ -8563,6 +8563,126 @@
         "https://praia.digital/blog/reforma-imovel-litoral-licenca-prefeitura-2026.html",
         "https://praia.digital/blog/averbacao-obra-imovel-litoral-necessaria-quando-2026.html"
       ]
+    },
+    {
+      "title": "Aluguel de temporada no litoral: interrupção de fornecimento",
+      "slug": "aluguel-temporada-litoral-interrupcao-fornecimento-2026.html",
+      "h1": "Aluguel de temporada no litoral: interrupção de fornecimento",
+      "meta_title": "Aluguel de temporada no litoral: interrupção de fornecimento",
+      "meta_description": "Aluguel de temporada no litoral: interrupção de fornecimento.",
+      "canonical": "https://praia.digital/blog/aluguel-temporada-litoral-interrupcao-fornecimento-2026.html",
+      "cluster": "aluguel",
+      "intent": "prática",
+      "funnel": "Pós-locação",
+      "article_type": "guia prático",
+      "author": "Praia Digital",
+      "word_count": 160,
+      "status": "PUBLISHED",
+      "published_at": "2026-08-13T03:56:48.597192+00:00",
+      "created_at": "2026-08-13T03:56:48.597192+00:00",
+      "http_status": 200,
+      "in_sitemap": true,
+      "canonical_self": true,
+      "internal_links": [
+        "https://praia.digital/blog/aluguel-temporada-litoral-multa-rescisao-contrato-2026.html",
+        "https://praia.digital/blog/processo-aluguel-temporada-etapas-2026.html"
+      ]
+    },
+    {
+      "title": "Imóvel no litoral: vistoria de entrega e danos",
+      "slug": "imovel-litoral-vistoria-entrega-danos-2026.html",
+      "h1": "Imóvel no litoral: vistoria de entrega e danos",
+      "meta_title": "Imóvel no litoral: vistoria de entrega e danos",
+      "meta_description": "Imóvel no litoral: vistoria de entrega e danos.",
+      "canonical": "https://praia.digital/blog/imovel-litoral-vistoria-entrega-danos-2026.html",
+      "cluster": "aluguel",
+      "intent": "prática",
+      "funnel": "Decisão",
+      "article_type": "guia prático",
+      "author": "Praia Digital",
+      "word_count": 160,
+      "status": "PUBLISHED",
+      "published_at": "2026-08-13T03:56:48.597192+00:00",
+      "created_at": "2026-08-13T03:56:48.597192+00:00",
+      "http_status": 200,
+      "in_sitemap": true,
+      "canonical_self": true,
+      "internal_links": [
+        "https://praia.digital/blog/checklist-inspecao-imovel-litoral-visita-segura-2026.html",
+        "https://praia.digital/blog/checklist-compra-imovel-usado-litoral-2026.html"
+      ]
+    },
+    {
+      "title": "Aluguel de temporada no litoral: reserva e cancelamento",
+      "slug": "aluguel-temporada-litoral-reserva-cancelamento-2026.html",
+      "h1": "Aluguel de temporada no litoral: reserva e cancelamento",
+      "meta_title": "Aluguel de temporada no litoral: reserva e cancelamento",
+      "meta_description": "Aluguel de temporada no litoral: reserva e cancelamento.",
+      "canonical": "https://praia.digital/blog/aluguel-temporada-litoral-reserva-cancelamento-2026.html",
+      "cluster": "aluguel",
+      "intent": "prática",
+      "funnel": "Decisão",
+      "article_type": "guia prático",
+      "author": "Praia Digital",
+      "word_count": 160,
+      "status": "PUBLISHED",
+      "published_at": "2026-08-13T03:56:48.597192+00:00",
+      "created_at": "2026-08-13T03:56:48.597192+00:00",
+      "http_status": 200,
+      "in_sitemap": true,
+      "canonical_self": true,
+      "internal_links": [
+        "https://praia.digital/blog/processo-aluguel-temporada-etapas-2026.html",
+        "https://praia.digital/blog/aluguel-temporada-litoral-contrato-modelo-pronto-2026.html"
+      ]
+    },
+    {
+      "title": "Imóvel no litoral: ocupação irregular e despejo",
+      "slug": "imovel-litoral-ocupacao-irregular-despejo-2026.html",
+      "h1": "Imóvel no litoral: ocupação irregular e despejo",
+      "meta_title": "Imóvel no litoral: ocupação irregular e despejo",
+      "meta_description": "Imóvel no litoral: ocupação irregular e despejo.",
+      "canonical": "https://praia.digital/blog/imovel-litoral-ocupacao-irregular-despejo-2026.html",
+      "cluster": "documentacao",
+      "intent": "prática",
+      "funnel": "Decisão",
+      "article_type": "guia prático",
+      "author": "Praia Digital",
+      "word_count": 160,
+      "status": "PUBLISHED",
+      "published_at": "2026-08-13T03:56:48.597192+00:00",
+      "created_at": "2026-08-13T03:56:48.597192+00:00",
+      "http_status": 200,
+      "in_sitemap": true,
+      "canonical_self": true,
+      "internal_links": [
+        "https://praia.digital/blog/acidente-imovel-litoral-responsabilidade-proprietario-2026.html",
+        "https://praia.digital/blog/desapropriacao-imovel-litoral-indenizacao-2026.html"
+      ]
+    },
+    {
+      "title": "Venda de imóvel no litoral: saída da casa própria",
+      "slug": "venda-imovel-litoral-saida-casa-propria-2026.html",
+      "h1": "Venda de imóvel no litoral: saída da casa própria",
+      "meta_title": "Venda de imóvel no litoral: saída da casa própria",
+      "meta_description": "Venda de imóvel no litoral: saída da casa própria.",
+      "canonical": "https://praia.digital/blog/venda-imovel-litoral-saida-casa-propria-2026.html",
+      "cluster": "venda",
+      "intent": "prática",
+      "funnel": "Decisão",
+      "article_type": "guia prático",
+      "author": "Praia Digital",
+      "word_count": 160,
+      "status": "PUBLISHED",
+      "published_at": "2026-08-13T03:56:48.597192+00:00",
+      "created_at": "2026-08-13T03:56:48.597192+00:00",
+      "http_status": 200,
+      "in_sitemap": true,
+      "canonical_self": true,
+      "internal_links": [
+        "https://praia.digital/blog/checklist-venda-imovel-litoral-anuncio-2026.html",
+        "https://praia.digital/blog/venda-imovel-litoral-promessa-compra-venda-2026.html"
+      ]
     }
   ],
   "publication_plan": [
