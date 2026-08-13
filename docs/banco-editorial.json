@@ -1,10 +1,10 @@
 {
   "meta": {
-    "total_articles": 1768,
+    "total_articles": 1778,
     "domain": "praia.digital",
     "blog_path": ".\\blog",
     "scope": "controle editorial contínuo + integracao hotmart",
-    "updated_at": "2026-08-13T14:48:14.540862+00:00"
+    "updated_at": "2026-08-13T14:50:05.043701+00:00"
   },
   "products": [
     {
@@ -136,14 +136,14 @@
     "E": "Artigo comercial"
   },
   "status_counts": {
-    "publicado": 1768
+    "publicado": 1778
   },
   "article_type_counts": {
     "A": 1138,
-    "E": 302,
-    "C": 191,
-    "D": 85,
-    "B": 52
+    "E": 305,
+    "C": 193,
+    "D": 87,
+    "B": 55
   },
   "funnel_counts": {
     "Meio": 951,
@@ -896,86 +896,6 @@
   "next_queue": [
     {
       "cluster": "automacao_ia",
-      "city": "mongagua",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "mongagua",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "peruibe",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "peruibe",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "peruibe",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "peruibe",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "caraguatatuba",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "caraguatatuba",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "caraguatatuba",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "caraguatatuba",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
       "city": "ilhabela",
       "article_type": "B",
       "count": 1,
@@ -1290,6 +1210,86 @@
       "cluster": "bairros_cidades",
       "city": "caraguatatuba",
       "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "ilhabela",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "ilhabela",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "sao_sebastiao",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "sao_sebastiao",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "sao_sebastiao",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "sao_sebastiao",
+      "article_type": "E",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "sao_vicente",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "sao_vicente",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "sao_vicente",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "sao_vicente",
+      "article_type": "E",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
@@ -62756,6 +62756,306 @@
       ],
       "primary_keyword": "Caraguatatuba: automação com IA para imóveis — guia 2026",
       "city": "caraguatatuba",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "automacao_ia",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "automacao_ia",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "2189ae8884",
+      "slug": "ilhabela-curso-automacao-imoveis-2026",
+      "path": "blog\\ilhabela-curso-automacao-imoveis-2026.html",
+      "title": "Ilhabela: curso de automação imobiliária — guia 2026",
+      "h1": "Ilhabela: curso de automação imobiliária — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Ilhabela: curso de automação imobiliária — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Ilhabela: curso de automação imobiliária — guia 2026",
+        "automacao ia imóveis",
+        "ilhabela"
+      ],
+      "primary_keyword": "Ilhabela: curso de automação imobiliária — guia 2026",
+      "city": "ilhabela",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "automacao_ia",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "B",
+      "article_type_label": "Curso imobiliário",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "automacao_ia",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "45263e9eb7",
+      "slug": "ilhabela-checklist-automacao-imoveis-2026",
+      "path": "blog\\ilhabela-checklist-automacao-imoveis-2026.html",
+      "title": "Ilhabela: checklist de automação para imóveis — 2026",
+      "h1": "Ilhabela: checklist de automação para imóveis — 2026",
+      "h2_count": 0,
+      "meta_description": "Ilhabela: checklist de automação para imóveis — 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Ilhabela: checklist de automação para imóveis — 2026",
+        "automacao ia imóveis",
+        "ilhabela"
+      ],
+      "primary_keyword": "Ilhabela: checklist de automação para imóveis — 2026",
+      "city": "ilhabela",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "automacao_ia",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "C",
+      "article_type_label": "Checklist imobiliário",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "automacao_ia",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "8bacab6086",
+      "slug": "ilhabela-case-sucesso-automacao-imoveis-2026",
+      "path": "blog\\ilhabela-case-sucesso-automacao-imoveis-2026.html",
+      "title": "Ilhabela: case de sucesso em automação imobiliária — 2026",
+      "h1": "Ilhabela: case de sucesso em automação imobiliária — 2026",
+      "h2_count": 0,
+      "meta_description": "Ilhabela: case de sucesso em automação imobiliária — 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Ilhabela: case de sucesso em automação imobiliária — 2026",
+        "automacao ia imóveis",
+        "ilhabela"
+      ],
+      "primary_keyword": "Ilhabela: case de sucesso em automação imobiliária — 2026",
+      "city": "ilhabela",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "automacao_ia",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "D",
+      "article_type_label": "Case de sucesso",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "automacao_ia",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "a1ea1dc163",
+      "slug": "ilhabela-automacao-ia-imoveis-2026",
+      "path": "blog\\ilhabela-automacao-ia-imoveis-2026.html",
+      "title": "Ilhabela: automação com IA para imóveis — guia 2026",
+      "h1": "Ilhabela: automação com IA para imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Ilhabela: automação com IA para imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Ilhabela: automação com IA para imóveis — guia 2026",
+        "automacao ia imóveis",
+        "ilhabela"
+      ],
+      "primary_keyword": "Ilhabela: automação com IA para imóveis — guia 2026",
+      "city": "ilhabela",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "automacao_ia",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "automacao_ia",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "d329bc91be",
+      "slug": "sao-sebastiao-curso-automacao-imoveis-2026",
+      "path": "blog\\sao-sebastiao-curso-automacao-imoveis-2026.html",
+      "title": "São Sebastião: curso de automação imobiliária — guia 2026",
+      "h1": "São Sebastião: curso de automação imobiliária — guia 2026",
+      "h2_count": 0,
+      "meta_description": "São Sebastião: curso de automação imobiliária — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "São Sebastião: curso de automação imobiliária — guia 2026",
+        "automacao ia imóveis",
+        "sao_sebastiao"
+      ],
+      "primary_keyword": "São Sebastião: curso de automação imobiliária — guia 2026",
+      "city": "sao_sebastiao",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "automacao_ia",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "B",
+      "article_type_label": "Curso imobiliário",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "automacao_ia",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "2175da09db",
+      "slug": "sao-sebastiao-automacao-ia-imoveis-2026",
+      "path": "blog\\sao-sebastiao-automacao-ia-imoveis-2026.html",
+      "title": "São Sebastião: automação com IA para imóveis — guia 2026",
+      "h1": "São Sebastião: automação com IA para imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "São Sebastião: automação com IA para imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "São Sebastião: automação com IA para imóveis — guia 2026",
+        "automacao ia imóveis",
+        "sao_sebastiao"
+      ],
+      "primary_keyword": "São Sebastião: automação com IA para imóveis — guia 2026",
+      "city": "sao_sebastiao",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "automacao_ia",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "automacao_ia",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "f76e061631",
+      "slug": "sao-vicente-curso-automacao-imoveis-2026",
+      "path": "blog\\sao-vicente-curso-automacao-imoveis-2026.html",
+      "title": "São Vicente: curso de automação imobiliária — guia 2026",
+      "h1": "São Vicente: curso de automação imobiliária — guia 2026",
+      "h2_count": 0,
+      "meta_description": "São Vicente: curso de automação imobiliária — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "São Vicente: curso de automação imobiliária — guia 2026",
+        "automacao ia imóveis",
+        "sao_vicente"
+      ],
+      "primary_keyword": "São Vicente: curso de automação imobiliária — guia 2026",
+      "city": "sao_vicente",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "automacao_ia",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "B",
+      "article_type_label": "Curso imobiliário",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "automacao_ia",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "b95b4c4322",
+      "slug": "sao-vicente-checklist-automacao-imoveis-2026",
+      "path": "blog\\sao-vicente-checklist-automacao-imoveis-2026.html",
+      "title": "São Vicente: checklist de automação para imóveis — 2026",
+      "h1": "São Vicente: checklist de automação para imóveis — 2026",
+      "h2_count": 0,
+      "meta_description": "São Vicente: checklist de automação para imóveis — 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "São Vicente: checklist de automação para imóveis — 2026",
+        "automacao ia imóveis",
+        "sao_vicente"
+      ],
+      "primary_keyword": "São Vicente: checklist de automação para imóveis — 2026",
+      "city": "sao_vicente",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "automacao_ia",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "C",
+      "article_type_label": "Checklist imobiliário",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "automacao_ia",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "a0d13a1e3b",
+      "slug": "sao-vicente-case-sucesso-automacao-imoveis-2026",
+      "path": "blog\\sao-vicente-case-sucesso-automacao-imoveis-2026.html",
+      "title": "São Vicente: case de sucesso em automação imobiliária — 2026",
+      "h1": "São Vicente: case de sucesso em automação imobiliária — 2026",
+      "h2_count": 0,
+      "meta_description": "São Vicente: case de sucesso em automação imobiliária — 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "São Vicente: case de sucesso em automação imobiliária — 2026",
+        "automacao ia imóveis",
+        "sao_vicente"
+      ],
+      "primary_keyword": "São Vicente: case de sucesso em automação imobiliária — 2026",
+      "city": "sao_vicente",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "automacao_ia",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "D",
+      "article_type_label": "Case de sucesso",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "automacao_ia",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "68e7e20a8a",
+      "slug": "sao-vicente-automacao-ia-imoveis-2026",
+      "path": "blog\\sao-vicente-automacao-ia-imoveis-2026.html",
+      "title": "São Vicente: automação com IA para imóveis — guia 2026",
+      "h1": "São Vicente: automação com IA para imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "São Vicente: automação com IA para imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "São Vicente: automação com IA para imóveis — guia 2026",
+        "automacao ia imóveis",
+        "sao_vicente"
+      ],
+      "primary_keyword": "São Vicente: automação com IA para imóveis — guia 2026",
+      "city": "sao_vicente",
       "funnel": "Topo",
       "intent": "informacional",
       "cluster": "automacao_ia",
