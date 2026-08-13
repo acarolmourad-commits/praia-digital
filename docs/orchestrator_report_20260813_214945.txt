@@ -1,0 +1,57 @@
+============================================================
+ORQUESTRADOR PRAIA DIGITAL — RELATÓRIO
+Data: 2026-08-13T21:49:45.960495+00:00
+============================================================
+
+MÓDULOS EXECUTADOS:
+  - news: sem_pauta_suficiente
+  - academy: ok
+    Academy auditada: 8 formações, 0 necessidades identificadas
+  - seo: ok
+    SEO audit: 20 amostrados, 6 issues, 2 oportunidades
+  - refresh: ok
+    Sitemap atualizado: True
+  - internal_links: ok
+    Links internos: 2957 artigos, 0 formações com poucos artigos
+  - local_content: ok
+    Local content: 0 cidades com cobertura < 50 artigos, 78 duplicatas potenciais
+  - qa: ok
+    QA: 24 arquivos verificados, 0 com issues
+  - qa_fixes: error
+    name 'fixed' is not defined
+  - metrics: ok
+    Métricas coletadas: 2957 blog pages, 8 formações, 2208 artigos
+  - execution_plan: ok
+    Plano de execução: 3 tarefas priorizadas
+  - idempotency: ok
+    Ação default pode prosseguir
+
+OPORTUNIDADES COLETADAS:
+  - [deduplication] 78 duplicatas potenciais (priority=3)
+  - [measurement_window] Batch 146 em medição — não criar novas batches (priority=3)
+  - [seo_audit] 6 artigos sem schema (priority=2)
+  - [add_links] 95 artigos sem links para formações (priority=2)
+  - [content_maturation] Site tem mais de 2000 páginas — foco em atualização e links internos (priority=2)
+
+AÇÕES EXECUTADAS:
+  - deduplication: unknown_action
+  - measurement_window: unknown_action
+  - seo_audit: executed
+  - add_links: unknown_action
+  - content_maturation: unknown_action
+
+QA:
+  Status: ok
+
+PORTAS HUMANAS ATIVAS:
+  - batch_147
+  - next_queue
+  - large_expansion
+  - structural_change
+  - monetization
+  - adsense
+  - strategy_change
+  - reputation_risk
+
+PRÓXIMA EXECUÇÃO: aguardando agendamento
+============================================================
