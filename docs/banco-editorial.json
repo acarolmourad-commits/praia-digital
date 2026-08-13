@@ -1,10 +1,10 @@
 {
   "meta": {
-    "total_articles": 1548,
+    "total_articles": 1554,
     "domain": "praia.digital",
     "blog_path": ".\\blog",
     "scope": "controle editorial contínuo + integracao hotmart",
-    "updated_at": "2026-08-13T12:26:26.396638+00:00"
+    "updated_at": "2026-08-13T12:28:59.316035+00:00"
   },
   "products": [
     {
@@ -136,11 +136,11 @@
     "E": "Artigo comercial"
   },
   "status_counts": {
-    "publicado": 1548
+    "publicado": 1554
   },
   "article_type_counts": {
     "A": 1100,
-    "E": 267,
+    "E": 273,
     "C": 146,
     "D": 32,
     "B": 3
@@ -895,71 +895,43 @@
   "update_candidates": [],
   "next_queue": [
     {
-      "cluster": "financiamento",
+      "cluster": "juridico",
+      "city": "caraguatatuba",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "juridico",
+      "city": "ilhabela",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "juridico",
+      "city": "sao_sebastiao",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "juridico",
       "city": "sao_vicente",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "financiamento",
+      "cluster": "juridico",
       "city": "ubatuba",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
     },
     {
-      "cluster": "financiamento",
+      "cluster": "juridico",
       "city": "maresias",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "juridico",
-      "city": "santos",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "juridico",
-      "city": "guaruja",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "juridico",
-      "city": "praia_grande",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "juridico",
-      "city": "bertioga",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "juridico",
-      "city": "itanhaem",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "juridico",
-      "city": "mongagua",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "juridico",
-      "city": "peruibe",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
@@ -55785,6 +55757,186 @@
       ],
       "primary_keyword": "Peruíbe: jurídico imobiliário — guia 2026",
       "city": "peruibe",
+      "funnel": "Fundo",
+      "intent": "comercial",
+      "cluster": "juridico",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "alta",
+      "commercial_cluster": "juridico",
+      "cta_intensity": "forte"
+    },
+    {
+      "id": "267fd19c59",
+      "slug": "caraguatatuba-juridico-imoveis-2026",
+      "path": "blog\\caraguatatuba-juridico-imoveis-2026.html",
+      "title": "Caraguatatuba: jurídico imobiliário — guia 2026",
+      "h1": "Caraguatatuba: jurídico imobiliário — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Caraguatatuba: jurídico imobiliário — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Caraguatatuba: jurídico imobiliário — guia 2026",
+        "jurídico imobiliário",
+        "caraguatatuba"
+      ],
+      "primary_keyword": "Caraguatatuba: jurídico imobiliário — guia 2026",
+      "city": "caraguatatuba",
+      "funnel": "Fundo",
+      "intent": "comercial",
+      "cluster": "juridico",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "alta",
+      "commercial_cluster": "juridico",
+      "cta_intensity": "forte"
+    },
+    {
+      "id": "845c76d863",
+      "slug": "ilhabela-juridico-imoveis-2026",
+      "path": "blog\\ilhabela-juridico-imoveis-2026.html",
+      "title": "Ilhabela: jurídico imobiliário — guia 2026",
+      "h1": "Ilhabela: jurídico imobiliário — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Ilhabela: jurídico imobiliário — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Ilhabela: jurídico imobiliário — guia 2026",
+        "jurídico imobiliário",
+        "ilhabela"
+      ],
+      "primary_keyword": "Ilhabela: jurídico imobiliário — guia 2026",
+      "city": "ilhabela",
+      "funnel": "Fundo",
+      "intent": "comercial",
+      "cluster": "juridico",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "alta",
+      "commercial_cluster": "juridico",
+      "cta_intensity": "forte"
+    },
+    {
+      "id": "6a3e208340",
+      "slug": "sao-sebastiao-juridico-imoveis-2026",
+      "path": "blog\\sao-sebastiao-juridico-imoveis-2026.html",
+      "title": "São Sebastião: jurídico imobiliário — guia 2026",
+      "h1": "São Sebastião: jurídico imobiliário — guia 2026",
+      "h2_count": 0,
+      "meta_description": "São Sebastião: jurídico imobiliário — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "São Sebastião: jurídico imobiliário — guia 2026",
+        "jurídico imobiliário",
+        "sao_sebastiao"
+      ],
+      "primary_keyword": "São Sebastião: jurídico imobiliário — guia 2026",
+      "city": "sao_sebastiao",
+      "funnel": "Fundo",
+      "intent": "comercial",
+      "cluster": "juridico",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "alta",
+      "commercial_cluster": "juridico",
+      "cta_intensity": "forte"
+    },
+    {
+      "id": "7e19d1f6bd",
+      "slug": "sao-vicente-juridico-imoveis-2026",
+      "path": "blog\\sao-vicente-juridico-imoveis-2026.html",
+      "title": "São Vicente: jurídico imobiliário — guia 2026",
+      "h1": "São Vicente: jurídico imobiliário — guia 2026",
+      "h2_count": 0,
+      "meta_description": "São Vicente: jurídico imobiliário — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "São Vicente: jurídico imobiliário — guia 2026",
+        "jurídico imobiliário",
+        "sao_vicente"
+      ],
+      "primary_keyword": "São Vicente: jurídico imobiliário — guia 2026",
+      "city": "sao_vicente",
+      "funnel": "Fundo",
+      "intent": "comercial",
+      "cluster": "juridico",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "alta",
+      "commercial_cluster": "juridico",
+      "cta_intensity": "forte"
+    },
+    {
+      "id": "5aa3ebef64",
+      "slug": "ubatuba-juridico-imoveis-2026",
+      "path": "blog\\ubatuba-juridico-imoveis-2026.html",
+      "title": "Ubatuba: jurídico imobiliário — guia 2026",
+      "h1": "Ubatuba: jurídico imobiliário — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Ubatuba: jurídico imobiliário — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Ubatuba: jurídico imobiliário — guia 2026",
+        "jurídico imobiliário",
+        "ubatuba"
+      ],
+      "primary_keyword": "Ubatuba: jurídico imobiliário — guia 2026",
+      "city": "ubatuba",
+      "funnel": "Fundo",
+      "intent": "comercial",
+      "cluster": "juridico",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "alta",
+      "commercial_cluster": "juridico",
+      "cta_intensity": "forte"
+    },
+    {
+      "id": "1f7fe53b61",
+      "slug": "maresias-juridico-imoveis-2026",
+      "path": "blog\\maresias-juridico-imoveis-2026.html",
+      "title": "Maresias: jurídico imobiliário — guia 2026",
+      "h1": "Maresias: jurídico imobiliário — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Maresias: jurídico imobiliário — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Maresias: jurídico imobiliário — guia 2026",
+        "jurídico imobiliário",
+        "maresias"
+      ],
+      "primary_keyword": "Maresias: jurídico imobiliário — guia 2026",
+      "city": "maresias",
       "funnel": "Fundo",
       "intent": "comercial",
       "cluster": "juridico",
