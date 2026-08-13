@@ -896,53 +896,163 @@
   "next_queue": [
     {
       "cluster": "investimento",
-      "city": "praia_grande",
-      "article_type": "B"
+      "city": "mongagua",
+      "article_type": "A",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
     },
     {
       "cluster": "investimento",
-      "city": "praia_grande",
-      "article_type": "C"
+      "city": "mongagua",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
     },
     {
       "cluster": "investimento",
-      "city": "praia_grande",
-      "article_type": "D"
+      "city": "mongagua",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
     },
     {
       "cluster": "investimento",
-      "city": "bertioga",
-      "article_type": "B"
+      "city": "mongagua",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
     },
     {
       "cluster": "investimento",
-      "city": "bertioga",
-      "article_type": "C"
+      "city": "peruibe",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
     },
     {
       "cluster": "investimento",
-      "city": "bertioga",
-      "article_type": "D"
+      "city": "peruibe",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
     },
     {
       "cluster": "investimento",
-      "city": "itanhaem",
-      "article_type": "A"
+      "city": "peruibe",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
     },
     {
       "cluster": "investimento",
-      "city": "itanhaem",
-      "article_type": "B"
+      "city": "caraguatatuba",
+      "article_type": "A",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
     },
     {
       "cluster": "investimento",
-      "city": "itanhaem",
-      "article_type": "C"
+      "city": "caraguatatuba",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
     },
     {
       "cluster": "investimento",
-      "city": "itanhaem",
-      "article_type": "D"
+      "city": "caraguatatuba",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "investimento",
+      "city": "caraguatatuba",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "investimento",
+      "city": "ilhabela",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "investimento",
+      "city": "ilhabela",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "investimento",
+      "city": "sao_sebastiao",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "investimento",
+      "city": "sao_sebastiao",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "investimento",
+      "city": "sao_sebastiao",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "investimento",
+      "city": "sao_vicente",
+      "article_type": "A",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "investimento",
+      "city": "sao_vicente",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "investimento",
+      "city": "sao_vicente",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "investimento",
+      "city": "sao_vicente",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
     }
   ],
   "coverage_by_city_cluster": {
