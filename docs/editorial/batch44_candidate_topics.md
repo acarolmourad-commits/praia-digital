@@ -1,0 +1,45 @@
+# Batch 44 — Candidate Topics
+
+Generated at: 2026-08-13T06:30:10.791970+00:00
+
+## All Candidates
+
+1. [DUPLICATE] Imóvel no litoral: reforma estrutural — verificação (`imovel-litoral-reforma-estrutural-verificacao-2026.html`)
+2. [DUPLICATE] Imóvel no litoral: reforma estrutural — dúvidas (`imovel-litoral-reforma-estrutural-duvidas-2026.html`)
+3. [DUPLICATE] Imóvel no litoral: reforma estrutural — cuidados (`imovel-litoral-reforma-estrutural-cuidados-2026.html`)
+4. [DUPLICATE] Imóvel no litoral: reforma estrutural — custo (`imovel-litoral-reforma-estrutural-custo-2026.html`)
+5. [DUPLICATE] Aluguel de temporada no litoral: reserva para grupo grande — guia (`aluguel-temporada-litoral-reserva-grupo-grande-guia-2026.html`)
+6. [DUPLICATE] Venda de imóvel no litoral: proposta escrita — dicas (`venda-imovel-litoral-proposta-escrita-dicas-2026.html`)
+7. [DUPLICATE] Venda de imóvel no litoral: proposta escrita — timeline (`venda-imovel-litoral-proposta-escrita-timeline-2026.html`)
+8. [DUPLICATE] Financiamento de imóvel no litoral: amortização — iniciantes (`financiamento-imovel-litoral-amortizacao-iniciantes-2026.html`)
+9. [DUPLICATE] Financiamento de imóvel no litoral: amortização — dicas (`financiamento-imovel-litoral-amortizacao-dicas-2026.html`)
+10. [DUPLICATE] Imóvel no litoral: construção em terreno em lâmina — custo (`imovel-litoral-construcao-terreno-lamina-custo-2026.html`)
+11. [VALID] Condomínio no litoral: regras e multas — como funciona (`condominio-litoral-regras-multas-como-funciona-2026.html`)
+12. [VALID] Compra de imóvel no litoral: direito de arrependimento (`comprador-imovel-litoral-direito-arrependimento-2026.html`)
+13. [VALID] Venda de imóvel no litoral: ITBI — quem paga (`venda-imovel-litoral-itbi-quem-paga-2026.html`)
+14. [VALID] Locação de temporada no litoral: seguro obrigatório (`locacao-temporada-litoral-seguro-obrigatorio-2026.html`)
+15. [VALID] Imóvel no litoral: condomínio e área comum — regras (`imovel-litoral-condominio-area-comum-regras-2026.html`)
+16. [VALID] Proprietário no litoral: direito de preferência na compra (`proprietario-litoral-direito-preferencia-compra-2026.html`)
+17. [VALID] Investidor de imóvel no litoral: receita de aluguel — tributação (`investidor-imovel-litoral-receita-aluguel-tributacao-2026.html`)
+18. [VALID] Imóvel no litoral: usucapião — como funciona (`imovel-litoral-usucapiao-como-funciona-2026.html`)
+19. [VALID] Imóvel no litoral: reforma estrutural — custo-benefício (`imovel-litoral-reforma-estrutural-custo-beneficio-2026.html`)
+20. [DUPLICATE] Imóvel no litoral: reforma estrutural — inspeção (`imovel-litoral-reforma-estrutural-inspecao-2026.html`)
+21. [DUPLICATE] Imóvel no litoral: reforma estrutural — monitoramento (`imovel-litoral-reforma-estrutural-monitoramento-2026.html`)
+22. [DUPLICATE] Imóvel no litoral: reforma estrutural — projeto executivo (`imovel-litoral-reforma-estrutural-projeto-executivo-2026.html`)
+23. [DUPLICATE] Imóvel no litoral: reforma estrutural — avaliação técnica (`imovel-litoral-reforma-estrutural-avaliacao-tecnica-2026.html`)
+24. [VALID] Imóvel no litoral: reforma estrutural — prazo (`imovel-litoral-reforma-estrutural-prazo-2026.html`)
+25. [VALID] Imóvel no litoral: reforma estrutural — dicas (`imovel-litoral-reforma-estrutural-dicas-2026.html`)
+26. [VALID] Imóvel no litoral: reforma estrutural — rápida (`imovel-litoral-reforma-estrutural-rapida-2026.html`)
+
+## Selected (top 10)
+
+1. Condomínio no litoral: regras e multas — como funciona (`condominio-litoral-regras-multas-como-funciona-2026.html`)
+2. Compra de imóvel no litoral: direito de arrependimento (`comprador-imovel-litoral-direito-arrependimento-2026.html`)
+3. Venda de imóvel no litoral: ITBI — quem paga (`venda-imovel-litoral-itbi-quem-paga-2026.html`)
+4. Locação de temporada no litoral: seguro obrigatório (`locacao-temporada-litoral-seguro-obrigatorio-2026.html`)
+5. Imóvel no litoral: condomínio e área comum — regras (`imovel-litoral-condominio-area-comum-regras-2026.html`)
+6. Proprietário no litoral: direito de preferência na compra (`proprietario-litoral-direito-preferencia-compra-2026.html`)
+7. Investidor de imóvel no litoral: receita de aluguel — tributação (`investidor-imovel-litoral-receita-aluguel-tributacao-2026.html`)
+8. Imóvel no litoral: usucapião — como funciona (`imovel-litoral-usucapiao-como-funciona-2026.html`)
+9. Imóvel no litoral: reforma estrutural — custo-benefício (`imovel-litoral-reforma-estrutural-custo-beneficio-2026.html`)
+10. Imóvel no litoral: reforma estrutural — prazo (`imovel-litoral-reforma-estrutural-prazo-2026.html`)
