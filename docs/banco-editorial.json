@@ -77777,10 +77777,456 @@
     "formacoes": 8
   },
   "maintenance": {
-    "last_run": "2026-08-13T21:55:34.043307+00:00",
+    "last_run": "2026-08-13T21:56:34.248394+00:00",
     "blog_count": 2957,
     "noticias_count": 1,
     "formacoes_count": 8,
     "total_pages": 2966
-  }
+  },
+  "discovery": [
+    {
+      "date": "2026-08-13T21:56:29.484396+00:00",
+      "opportunities": [
+        {
+          "type": "news_discovery",
+          "message": "Monitoramento contínuo de notícias ativo",
+          "priority": 2,
+          "status": "monitoring"
+        },
+        {
+          "type": "add_links",
+          "count": 95,
+          "priority": 2
+        },
+        {
+          "type": "seo_audit",
+          "message": "5 artigos sem schema",
+          "priority": 2
+        },
+        {
+          "type": "local_opportunity",
+          "message": "Alta temporada 2026-2027 — conteúdo de preparação",
+          "priority": 2
+        },
+        {
+          "type": "commercial_opportunity",
+          "message": "19 artigos sem CTA claro",
+          "priority": 3
+        },
+        {
+          "type": "recurring_question",
+          "question": "Como financiar imóvel no litoral?",
+          "priority": 2
+        },
+        {
+          "type": "recurring_question",
+          "question": "Quanto custa manter casa de praia?",
+          "priority": 2
+        },
+        {
+          "type": "recurring_question",
+          "question": "É bom investir em imóvel no litoral?",
+          "priority": 2
+        },
+        {
+          "type": "recurring_question",
+          "question": "Como declarar aluguel de temporada no IR?",
+          "priority": 2
+        },
+        {
+          "type": "recurring_question",
+          "question": "Documentação necessária para comprar imóvel?",
+          "priority": 2
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "date": "2026-08-13T21:56:29.918357+00:00",
+      "decisions": [
+        {
+          "opportunity": {
+            "type": "news_discovery",
+            "message": "Monitoramento contínuo de notícias ativo",
+            "priority": 2,
+            "status": "monitoring"
+          },
+          "decision": {
+            "action": "CRIAR",
+            "target": "noticias/index.html",
+            "score": 7.0
+          },
+          "approved": true
+        },
+        {
+          "opportunity": {
+            "type": "add_links",
+            "count": 95,
+            "priority": 2
+          },
+          "decision": {
+            "action": "LINKAR",
+            "target": "blog_to_formacoes",
+            "score": 6.5
+          },
+          "approved": true
+        },
+        {
+          "opportunity": {
+            "type": "seo_audit",
+            "message": "5 artigos sem schema",
+            "priority": 2
+          },
+          "decision": {
+            "action": "CORRIGIR",
+            "target": "schema",
+            "score": 7.0
+          },
+          "approved": true
+        },
+        {
+          "opportunity": {
+            "type": "local_opportunity",
+            "message": "Alta temporada 2026-2027 — conteúdo de preparação",
+            "priority": 2
+          },
+          "decision": {
+            "action": "CRIAR",
+            "target": "blog",
+            "score": 7.0
+          },
+          "approved": true
+        },
+        {
+          "opportunity": {
+            "type": "commercial_opportunity",
+            "message": "19 artigos sem CTA claro",
+            "priority": 3
+          },
+          "decision": {
+            "action": "CORRIGIR",
+            "target": "cta",
+            "score": 8.5
+          },
+          "approved": true
+        },
+        {
+          "opportunity": {
+            "type": "recurring_question",
+            "question": "Como financiar imóvel no litoral?",
+            "priority": 2
+          },
+          "decision": {
+            "action": "EXPANDIR",
+            "target": "faq",
+            "score": 7.5
+          },
+          "approved": true
+        },
+        {
+          "opportunity": {
+            "type": "recurring_question",
+            "question": "Quanto custa manter casa de praia?",
+            "priority": 2
+          },
+          "decision": {
+            "action": "EXPANDIR",
+            "target": "faq",
+            "score": 7.5
+          },
+          "approved": true
+        },
+        {
+          "opportunity": {
+            "type": "recurring_question",
+            "question": "É bom investir em imóvel no litoral?",
+            "priority": 2
+          },
+          "decision": {
+            "action": "EXPANDIR",
+            "target": "faq",
+            "score": 7.5
+          },
+          "approved": true
+        },
+        {
+          "opportunity": {
+            "type": "recurring_question",
+            "question": "Como declarar aluguel de temporada no IR?",
+            "priority": 2
+          },
+          "decision": {
+            "action": "EXPANDIR",
+            "target": "faq",
+            "score": 7.5
+          },
+          "approved": true
+        },
+        {
+          "opportunity": {
+            "type": "recurring_question",
+            "question": "Documentação necessária para comprar imóvel?",
+            "priority": 2
+          },
+          "decision": {
+            "action": "EXPANDIR",
+            "target": "faq",
+            "score": 7.5
+          },
+          "approved": true
+        }
+      ]
+    }
+  ],
+  "pipeline": [
+    {
+      "date": "2026-08-13T21:56:30.327356+00:00",
+      "executed": [
+        {
+          "decision": {
+            "opportunity": {
+              "type": "news_discovery",
+              "message": "Monitoramento contínuo de notícias ativo",
+              "priority": 2,
+              "status": "monitoring"
+            },
+            "decision": {
+              "action": "CRIAR",
+              "target": "noticias/index.html",
+              "score": 7.0
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "blocked",
+            "reason": "Fonte não confiável ou ausente",
+            "action": "news_create"
+          },
+          "validation": {
+            "valid": false,
+            "reason": "Fonte não confiável ou ausente"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "add_links",
+              "count": 95,
+              "priority": 2
+            },
+            "decision": {
+              "action": "LINKAR",
+              "target": "blog_to_formacoes",
+              "score": 6.5
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "add_internal_links",
+            "count": 95
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "seo_audit",
+              "message": "5 artigos sem schema",
+              "priority": 2
+            },
+            "decision": {
+              "action": "CORRIGIR",
+              "target": "schema",
+              "score": 7.0
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "seo_fix",
+            "target": "unknown"
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "local_opportunity",
+              "message": "Alta temporada 2026-2027 — conteúdo de preparação",
+              "priority": 2
+            },
+            "decision": {
+              "action": "CRIAR",
+              "target": "blog",
+              "score": 7.0
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "blog_create",
+            "target": "blog"
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "commercial_opportunity",
+              "message": "19 artigos sem CTA claro",
+              "priority": 3
+            },
+            "decision": {
+              "action": "CORRIGIR",
+              "target": "cta",
+              "score": 8.5
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "seo_fix",
+            "target": "unknown"
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "recurring_question",
+              "question": "Como financiar imóvel no litoral?",
+              "priority": 2
+            },
+            "decision": {
+              "action": "EXPANDIR",
+              "target": "faq",
+              "score": 7.5
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "content_expand",
+            "target": "unknown"
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "recurring_question",
+              "question": "Quanto custa manter casa de praia?",
+              "priority": 2
+            },
+            "decision": {
+              "action": "EXPANDIR",
+              "target": "faq",
+              "score": 7.5
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "content_expand",
+            "target": "unknown"
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "recurring_question",
+              "question": "É bom investir em imóvel no litoral?",
+              "priority": 2
+            },
+            "decision": {
+              "action": "EXPANDIR",
+              "target": "faq",
+              "score": 7.5
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "content_expand",
+            "target": "unknown"
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "recurring_question",
+              "question": "Como declarar aluguel de temporada no IR?",
+              "priority": 2
+            },
+            "decision": {
+              "action": "EXPANDIR",
+              "target": "faq",
+              "score": 7.5
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "content_expand",
+            "target": "unknown"
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "recurring_question",
+              "question": "Documentação necessária para comprar imóvel?",
+              "priority": 2
+            },
+            "decision": {
+              "action": "EXPANDIR",
+              "target": "faq",
+              "score": 7.5
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "content_expand",
+            "target": "unknown"
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        }
+      ],
+      "validated_count": 9,
+      "blocked_count": 1
+    }
+  ]
 }
