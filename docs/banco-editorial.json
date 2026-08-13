@@ -77264,6 +77264,78 @@
       "top_needs": [],
       "created_materials": [],
       "status": "audited"
+    },
+    {
+      "date": "2026-08-13T22:55:09.101275+00:00",
+      "formation_analysis": [
+        {
+          "slug": "formacao-corretor-imoveis-litoral",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 6347,
+          "has_faq": true
+        },
+        {
+          "slug": "avaliacao-imoveis-ptam",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5991,
+          "has_faq": true
+        },
+        {
+          "slug": "financiamento-imobiliario",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5847,
+          "has_faq": true
+        },
+        {
+          "slug": "locacao-temporada-administracao",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5918,
+          "has_faq": true
+        },
+        {
+          "slug": "captacao-imoveis",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5805,
+          "has_faq": true
+        },
+        {
+          "slug": "marketing-imobiliario",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5970,
+          "has_faq": true
+        },
+        {
+          "slug": "documentacao-imoveis",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5987,
+          "has_faq": true
+        },
+        {
+          "slug": "mercado-imobiliario-litoral",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 6173,
+          "has_faq": true
+        }
+      ],
+      "top_needs": [],
+      "created_materials": [],
+      "status": "audited"
     }
   ],
   "news_audit": [
@@ -77993,7 +78065,7 @@
     "formacoes": 8
   },
   "maintenance": {
-    "last_run": "2026-08-13T22:37:12.699533+00:00",
+    "last_run": "2026-08-13T22:55:13.570138+00:00",
     "blog_count": 2957,
     "noticias_count": 1,
     "formacoes_count": 8,
@@ -79121,6 +79193,65 @@
           "status": "monitoring"
         }
       ]
+    },
+    {
+      "date": "2026-08-13T22:55:06.584497+00:00",
+      "total_sources": 5,
+      "total_opportunities": 5,
+      "relevant_opportunities": 0,
+      "status": "sem_pauta_suficiente",
+      "opportunities": [
+        {
+          "type": "news_discovery",
+          "source": "Agência SP",
+          "url": "https://www.agencia.sp.gov.br/rss",
+          "title": "[PLACEHOLDER] Notícia de Agência SP",
+          "message": "Monitoramento ativo: Agência SP",
+          "priority": 2,
+          "score": 5.0,
+          "status": "monitoring"
+        },
+        {
+          "type": "news_discovery",
+          "source": "Prefeitura Santos",
+          "url": "https://www.santos.sp.gov.br/rss",
+          "title": "[PLACEHOLDER] Notícia de Prefeitura Santos",
+          "message": "Monitoramento ativo: Prefeitura Santos",
+          "priority": 2,
+          "score": 5.0,
+          "status": "monitoring"
+        },
+        {
+          "type": "news_discovery",
+          "source": "Prefeitura Guarujá",
+          "url": "https://www.guaruja.sp.gov.br/rss",
+          "title": "[PLACEHOLDER] Notícia de Prefeitura Guarujá",
+          "message": "Monitoramento ativo: Prefeitura Guarujá",
+          "priority": 2,
+          "score": 5.0,
+          "status": "monitoring"
+        },
+        {
+          "type": "news_discovery",
+          "source": "CRECI-SP",
+          "url": "https://www.crecisp.gov.br/rss",
+          "title": "[PLACEHOLDER] Notícia de CRECI-SP",
+          "message": "Monitoramento ativo: CRECI-SP",
+          "priority": 2,
+          "score": 5.0,
+          "status": "monitoring"
+        },
+        {
+          "type": "news_discovery",
+          "source": "Sinduscon-SP",
+          "url": "https://www.sindusconsp.com.br/rss",
+          "title": "[PLACEHOLDER] Notícia de Sinduscon-SP",
+          "message": "Monitoramento ativo: Sinduscon-SP",
+          "priority": 2,
+          "score": 5.0,
+          "status": "monitoring"
+        }
+      ]
     }
   ],
   "orchestrator_24h": {
@@ -79142,6 +79273,13 @@
       },
       {
         "date": "2026-08-13T22:37:08.777537+00:00",
+        "detected": 0,
+        "produced": 3,
+        "published": 3,
+        "connected": 3
+      },
+      {
+        "date": "2026-08-13T22:55:09.544315+00:00",
         "detected": 0,
         "produced": 3,
         "published": 3,
