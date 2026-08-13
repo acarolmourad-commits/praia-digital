@@ -75601,5 +75601,39 @@
         "sinais_canibalizacao"
       ]
     }
-  ]
+  ],
+  "auditoria_qualitativa": {
+    "date": "2026-08-13T19:46:39.795242+00:00",
+    "total_articles": 2208,
+    "action_counts": {
+      "MANTER": 1572,
+      "ATUALIZAR": 558,
+      "EXPANDIR": 267,
+      "CRIAR": 6
+    },
+    "journey_gaps": [
+      {
+        "cluster": "juridico",
+        "funnel": "Fundo",
+        "count": 4
+      },
+      {
+        "cluster": "financiamento",
+        "funnel": "Fundo",
+        "count": 3
+      }
+    ],
+    "queue_summary": {
+      "total": 20,
+      "ATUALIZAR": 8,
+      "EXPANDIR": 12,
+      "CRIAR": 0
+    }
+  },
+  "academy_audit": {
+    "date": "2026-08-13T20:42:28.847011+00:00",
+    "formacoes_count": 8,
+    "updated_with_faq": 8,
+    "status": "completed"
+  }
 }
