@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-08-11T19:13:17.688452Z",
+  "editorial_state": {
+    "total_articles_recovered": 30,
+    "validated_http_200": 30,
+    "registry_validated": 20,
+    "registry_total_published": 20,
+    "batch4_draft_articles": 12,
+    "sitemap_urls": 30,
+    "status": "RECUPERADO_VALIDADO",
+    "gsc_audit": "PENDING_SECURE_ACCESS"
+  },
+  "blockers": [
+    "GSC audit blocked: browser_prepare returns browser_consent_required despite --grant existing-profile being applied"
+  ],
+  "next_actions": [
+    "Complete GSC access authorization",
+    "Run 30-URL indexation audit in GSC",
+    "Submit URLs for indexing only after audit results"
+  ]
+}
