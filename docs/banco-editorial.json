@@ -4,7 +4,7 @@
     "domain": "praia.digital",
     "blog_path": ".\\blog",
     "scope": "controle editorial contínuo + integracao hotmart",
-    "updated_at": "2026-08-13T18:43:52.914687+00:00"
+    "updated_at": "2026-08-13T18:46:53.987350+00:00"
   },
   "products": [
     {
@@ -898,78 +898,6 @@
       "cluster": "cases",
       "city": "litoral_paulista",
       "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "parcerias",
-      "city": "praia_grande",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "parcerias",
-      "city": "praia_grande",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "parcerias",
-      "city": "praia_grande",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "parcerias",
-      "city": "praia_grande",
-      "article_type": "A",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "parcerias",
-      "city": "bertioga",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "parcerias",
-      "city": "bertioga",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "parcerias",
-      "city": "bertioga",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "parcerias",
-      "city": "bertioga",
-      "article_type": "A",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "parcerias",
-      "city": "itanhaem",
-      "article_type": "B",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
