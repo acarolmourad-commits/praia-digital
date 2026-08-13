@@ -1,0 +1,39 @@
+============================================================
+ORQUESTRADOR CENTRAL — RELATÓRIO
+Data: 2026-08-13T21:56:40.698693+00:00
+============================================================
+
+DESCOBERTA:
+  - ok: Descoberta: 10 oportunidades encontradas
+    * [news_discovery] Monitoramento contínuo de notícias ativo
+    * [add_links] ?
+    * [seo_audit] 5 artigos sem schema
+    * [local_opportunity] Alta temporada 2026-2027 — conteúdo de preparação
+    * [commercial_opportunity] 19 artigos sem CTA claro
+
+DECISÕES:
+  - ok: Decisões: 10 aprovadas, 0 ignoradas
+    Aprovadas: 10, Ignoradas: 0
+
+PIPELINE:
+  - Pipeline: 10 executados, 9 validados
+
+MANUTENÇÃO:
+  - Manutenção: 4 tarefas executadas
+    * sitemap: True
+    * registry_counts: True
+    * orphan_pages: True
+    * git: True
+
+PORTAS HUMANAS ATIVAS:
+  - strategy_change
+  - batch_147
+  - reputation_risk
+  - large_expansion
+  - structural_change
+  - next_queue
+  - monetization
+  - adsense
+
+PRÓXIMA EXECUÇÃO: aguardando agendamento
+============================================================
