@@ -1,10 +1,10 @@
 {
   "meta": {
-    "total_articles": 1554,
+    "total_articles": 1564,
     "domain": "praia.digital",
     "blog_path": ".\\blog",
     "scope": "controle editorial contínuo + integracao hotmart",
-    "updated_at": "2026-08-13T12:28:59.316035+00:00"
+    "updated_at": "2026-08-13T12:36:00.516011+00:00"
   },
   "products": [
     {
@@ -136,10 +136,10 @@
     "E": "Artigo comercial"
   },
   "status_counts": {
-    "publicado": 1554
+    "publicado": 1564
   },
   "article_type_counts": {
-    "A": 1100,
+    "A": 1110,
     "E": 273,
     "C": 146,
     "D": 32,
@@ -893,7 +893,120 @@
     }
   ],
   "update_candidates": [],
-  "next_queue": [],
+  "next_queue": [
+    {
+      "cluster": "cases",
+      "city": "sao_vicente",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "cases",
+      "city": "ubatuba",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "cases",
+      "city": "maresias",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "santos",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "guaruja",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "praia_grande",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "bertioga",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "itanhaem",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "mongagua",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "peruibe",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "caraguatatuba",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "ilhabela",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "sao_sebastiao",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "sao_vicente",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "ubatuba",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    },
+    {
+      "cluster": "parcerias",
+      "city": "maresias",
+      "count": 1,
+      "priority_score": 2,
+      "priority": "média"
+    }
+  ],
   "coverage_by_city_cluster": {
     "litoral_paulista": {
       "editorial": 141,
@@ -55908,6 +56021,306 @@
       "conversion_potential": "alta",
       "commercial_cluster": "juridico",
       "cta_intensity": "forte"
+    },
+    {
+      "id": "300924627b",
+      "slug": "santos-cases-imoveis-2026",
+      "path": "blog\\santos-cases-imoveis-2026.html",
+      "title": "Santos: cases de imóveis — guia 2026",
+      "h1": "Santos: cases de imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Santos: cases de imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Santos: cases de imóveis — guia 2026",
+        "cases imóveis",
+        "santos"
+      ],
+      "primary_keyword": "Santos: cases de imóveis — guia 2026",
+      "city": "santos",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "cases",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "A",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "cases",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "a32f76ed01",
+      "slug": "guaruja-cases-imoveis-2026",
+      "path": "blog\\guaruja-cases-imoveis-2026.html",
+      "title": "Guarujá: cases de imóveis — guia 2026",
+      "h1": "Guarujá: cases de imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Guarujá: cases de imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Guarujá: cases de imóveis — guia 2026",
+        "cases imóveis",
+        "guaruja"
+      ],
+      "primary_keyword": "Guarujá: cases de imóveis — guia 2026",
+      "city": "guaruja",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "cases",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "A",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "cases",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "a10f578b90",
+      "slug": "praia-grande-cases-imoveis-2026",
+      "path": "blog\\praia-grande-cases-imoveis-2026.html",
+      "title": "Praia Grande: cases de imóveis — guia 2026",
+      "h1": "Praia Grande: cases de imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Praia Grande: cases de imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Praia Grande: cases de imóveis — guia 2026",
+        "cases imóveis",
+        "praia_grande"
+      ],
+      "primary_keyword": "Praia Grande: cases de imóveis — guia 2026",
+      "city": "praia_grande",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "cases",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "A",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "cases",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "8ed12c879e",
+      "slug": "bertioga-cases-imoveis-2026",
+      "path": "blog\\bertioga-cases-imoveis-2026.html",
+      "title": "Bertioga: cases de imóveis — guia 2026",
+      "h1": "Bertioga: cases de imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Bertioga: cases de imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Bertioga: cases de imóveis — guia 2026",
+        "cases imóveis",
+        "bertioga"
+      ],
+      "primary_keyword": "Bertioga: cases de imóveis — guia 2026",
+      "city": "bertioga",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "cases",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "A",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "cases",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "97e8682ea5",
+      "slug": "itanhaem-cases-imoveis-2026",
+      "path": "blog\\itanhaem-cases-imoveis-2026.html",
+      "title": "Itanhaém: cases de imóveis — guia 2026",
+      "h1": "Itanhaém: cases de imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Itanhaém: cases de imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Itanhaém: cases de imóveis — guia 2026",
+        "cases imóveis",
+        "itanhaem"
+      ],
+      "primary_keyword": "Itanhaém: cases de imóveis — guia 2026",
+      "city": "itanhaem",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "cases",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "A",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "cases",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "9220778631",
+      "slug": "mongagua-cases-imoveis-2026",
+      "path": "blog\\mongagua-cases-imoveis-2026.html",
+      "title": "Mongaguá: cases de imóveis — guia 2026",
+      "h1": "Mongaguá: cases de imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Mongaguá: cases de imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Mongaguá: cases de imóveis — guia 2026",
+        "cases imóveis",
+        "mongagua"
+      ],
+      "primary_keyword": "Mongaguá: cases de imóveis — guia 2026",
+      "city": "mongagua",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "cases",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "A",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "cases",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "1aa81933a9",
+      "slug": "peruibe-cases-imoveis-2026",
+      "path": "blog\\peruibe-cases-imoveis-2026.html",
+      "title": "Peruíbe: cases de imóveis — guia 2026",
+      "h1": "Peruíbe: cases de imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Peruíbe: cases de imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Peruíbe: cases de imóveis — guia 2026",
+        "cases imóveis",
+        "peruibe"
+      ],
+      "primary_keyword": "Peruíbe: cases de imóveis — guia 2026",
+      "city": "peruibe",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "cases",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "A",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "cases",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "74b6a6cf92",
+      "slug": "caraguatatuba-cases-imoveis-2026",
+      "path": "blog\\caraguatatuba-cases-imoveis-2026.html",
+      "title": "Caraguatatuba: cases de imóveis — guia 2026",
+      "h1": "Caraguatatuba: cases de imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Caraguatatuba: cases de imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Caraguatatuba: cases de imóveis — guia 2026",
+        "cases imóveis",
+        "caraguatatuba"
+      ],
+      "primary_keyword": "Caraguatatuba: cases de imóveis — guia 2026",
+      "city": "caraguatatuba",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "cases",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "A",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "cases",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "672abae6ba",
+      "slug": "ilhabela-cases-imoveis-2026",
+      "path": "blog\\ilhabela-cases-imoveis-2026.html",
+      "title": "Ilhabela: cases de imóveis — guia 2026",
+      "h1": "Ilhabela: cases de imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "Ilhabela: cases de imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "Ilhabela: cases de imóveis — guia 2026",
+        "cases imóveis",
+        "ilhabela"
+      ],
+      "primary_keyword": "Ilhabela: cases de imóveis — guia 2026",
+      "city": "ilhabela",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "cases",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "A",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "cases",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "6532c2a761",
+      "slug": "sao-sebastiao-cases-imoveis-2026",
+      "path": "blog\\sao-sebastiao-cases-imoveis-2026.html",
+      "title": "São Sebastião: cases de imóveis — guia 2026",
+      "h1": "São Sebastião: cases de imóveis — guia 2026",
+      "h2_count": 0,
+      "meta_description": "São Sebastião: cases de imóveis — guia 2026. Guia prático para imobiliárias e proprietários no litoral paulista.",
+      "keywords": [
+        "São Sebastião: cases de imóveis — guia 2026",
+        "cases imóveis",
+        "sao_sebastiao"
+      ],
+      "primary_keyword": "São Sebastião: cases de imóveis — guia 2026",
+      "city": "sao_sebastiao",
+      "funnel": "Topo",
+      "intent": "informacional",
+      "cluster": "cases",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "A",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "cases",
+      "cta_intensity": "suave"
     }
   ]
 }
