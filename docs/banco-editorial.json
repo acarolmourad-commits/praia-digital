@@ -75635,5 +75635,21 @@
     "formacoes_count": 8,
     "updated_with_faq": 8,
     "status": "completed"
-  }
+  },
+  "news": [
+    {
+      "slug": "baixada-santista-vendas-alta-locacoes-queda-junho-2026",
+      "title": "Mercado imobiliário da Baixada Santista tem alta nas vendas e queda nas locações em junho",
+      "source": "G1 / CRECISP",
+      "date": "2026-08-09",
+      "type": "news",
+      "url": "https://g1.globo.com/sp/santos-regiao/noticia/2026/08/09/mercado-imobiliario-da-baixada-santista-tem-alta-nas-vendas-e-queda-nas-locacoes-em-junho.ghtml",
+      "internal_links": [
+        "/education/formacoes/mercado-imobiliario-litoral.html",
+        "/education/formacoes/locacao-temporada-administracao.html",
+        "/blog/taxa-ocupacao-media-temporada-litoral.html",
+        "/education/formacoes/documentacao-imoveis.html"
+      ]
+    }
+  ]
 }
