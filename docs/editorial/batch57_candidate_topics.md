@@ -1,0 +1,46 @@
+# Batch 57 — Candidate Topics
+
+Generated at: 2026-08-13T08:49:05.131950+00:00
+
+## All Candidates
+
+1. [VALID] Imóvel no litoral: imposto na reforma — cálculo (`imovel-litoral-imposto-reforma-calculo-2026.html`)
+2. [VALID] Imóvel no litoral: imposto no aluguel — declaração (`imovel-litoral-imposto-aluguel-declaracao-2026.html`)
+3. [VALID] Imóvel no litoral: imposto na venda — ganho de capital (`imovel-litoral-imposto-venda-imovel-ganho-capital-2026.html`)
+4. [VALID] Imóvel no litoral: imposto na compra — ITBI (`imovel-litoral-imposto-compra-imovel-itbi-2026.html`)
+5. [VALID] Imóvel no litoral: custo de condomínio — análise (`imovel-litoral-custo-condominio-analise-2026.html`)
+6. [VALID] Imóvel no litoral: custo de manutenção predial (`imovel-litoral-custo-manutencao-predial-2026.html`)
+7. [VALID] Imóvel no litoral: custo de obra e reforma (`imovel-litoral-custo-obra-reforma-2026.html`)
+8. [VALID] Imóvel no litoral: precificação de aluguel de temporada (`imovel-litoral-precificacao-aluguel-temporada-2026.html`)
+9. [VALID] Imóvel no litoral: precificação para venda (`imovel-litoral-precificacao-venda-imovel-2026.html`)
+10. [VALID] Imóvel no litoral: precificação na compra (`imovel-litoral-precificacao-compra-imovel-2026.html`)
+11. [VALID] Imóvel no litoral: avaliação de imóvel — perícia (`imovel-litoral-avaliacao-imovel-pericia-2026.html`)
+12. [VALID] Imóvel no litoral: avaliação de imóvel — comparação (`imovel-litoral-avaliacao-imovel-comparacao-2026.html`)
+13. [VALID] Imóvel no litoral: marketing imobiliário — digital (`imovel-litoral-marketing-imovel-digital-2026.html`)
+14. [VALID] Imóvel no litoral: marketing imobiliário — redes sociais (`imovel-litoral-marketing-imovel-redes-sociais-2026.html`)
+15. [VALID] Imóvel no litoral: tecnologia na captação de imóveis (`imovel-litoral-tecnologia-captacao-imoveis-2026.html`)
+16. [VALID] Imóvel no litoral: tecnologia na divulgação de imóvel (`imovel-litoral-tecnologia-divulgacao-imovel-2026.html`)
+17. [VALID] Imóvel no litoral: sustentabilidade — reforma verde (`imovel-litoral-sustentabilidade-reforma-verde-2026.html`)
+18. [VALID] Imóvel no litoral: sustentabilidade — imóvel verde (`imovel-litoral-sustentabilidade-imovel-verde-2026.html`)
+19. [VALID] Imóvel no litoral: gestão de imóveis — rentabilidade (`imovel-litoral-gestao-imoveis-rentabilidade-2026.html`)
+20. [VALID] Imóvel no litoral: gestão de imóveis — operação (`imovel-litoral-gestao-imoveis-operacao-2026.html`)
+21. [VALID] Imóvel no litoral: follow-up de cliente (`imovel-litoral-follow-up-cliente-2026.html`)
+22. [VALID] Imóvel no litoral: WhatsApp na imobiliária (`imovel-litoral-whatsapp-imobiliaria-2026.html`)
+23. [VALID] Imóvel no litoral: cases de sucesso — venda (`imovel-litoral-cases-sucesso-venda-2026.html`)
+24. [VALID] Imóvel no litoral: cases de sucesso — aluguel (`imovel-litoral-cases-sucesso-aluguel-2026.html`)
+25. [VALID] Imóvel no litoral: análise de dados locais (`imovel-litoral-analise-dados-locais-2026.html`)
+26. [VALID] Imóvel no litoral: SEO local para imobiliária (`imovel-litoral-seo-local-imobiliaria-2026.html`)
+27. [VALID] Imóvel no litoral: redes sociais para imóvel (`imovel-litoral-redes-sociais-imovel-2026.html`)
+
+## Selected (top 10)
+
+1. Imóvel no litoral: imposto na reforma — cálculo (`imovel-litoral-imposto-reforma-calculo-2026.html`)
+2. Imóvel no litoral: imposto no aluguel — declaração (`imovel-litoral-imposto-aluguel-declaracao-2026.html`)
+3. Imóvel no litoral: imposto na venda — ganho de capital (`imovel-litoral-imposto-venda-imovel-ganho-capital-2026.html`)
+4. Imóvel no litoral: imposto na compra — ITBI (`imovel-litoral-imposto-compra-imovel-itbi-2026.html`)
+5. Imóvel no litoral: custo de condomínio — análise (`imovel-litoral-custo-condominio-analise-2026.html`)
+6. Imóvel no litoral: custo de manutenção predial (`imovel-litoral-custo-manutencao-predial-2026.html`)
+7. Imóvel no litoral: custo de obra e reforma (`imovel-litoral-custo-obra-reforma-2026.html`)
+8. Imóvel no litoral: precificação de aluguel de temporada (`imovel-litoral-precificacao-aluguel-temporada-2026.html`)
+9. Imóvel no litoral: precificação para venda (`imovel-litoral-precificacao-venda-imovel-2026.html`)
+10. Imóvel no litoral: precificação na compra (`imovel-litoral-precificacao-compra-imovel-2026.html`)
