@@ -6307,6 +6307,126 @@
         "https://praia.digital/blog/documentacao-completa-venda-imovel-litoral-passo-passo-2026.html",
         "https://praia.digital/blog/checklist-venda-imovel-litoral-anuncio-photos-2026.html"
       ]
+    },
+    {
+      "title": "Aluguel de temporada: manutenção e custo operacional",
+      "slug": "aluguel-temporada-manutencao-custo-2026.html",
+      "h1": "Aluguel de temporada: manutenção e custo operacional",
+      "meta_title": "Aluguel de temporada: manutenção e custo operacional",
+      "meta_description": "Aluguel de temporada: manutenção e custo operacional.",
+      "canonical": "https://praia.digital/blog/aluguel-temporada-manutencao-custo-2026.html",
+      "cluster": "aluguel",
+      "intent": "prática",
+      "funnel": "Pós-locação",
+      "article_type": "guia prático",
+      "author": "Praia Digital",
+      "word_count": 160,
+      "status": "PUBLISHED",
+      "published_at": "2026-08-13T01:59:30.763077+00:00",
+      "created_at": "2026-08-13T01:59:30.763077+00:00",
+      "http_status": 200,
+      "in_sitemap": true,
+      "canonical_self": true,
+      "internal_links": [
+        "https://praia.digital/blog/checklist-aluguel-temporada-anuncio-checkout-litoral-2026.html",
+        "https://praia.digital/blog/documentacao-aluguel-temporada-litoral-contrato-registro-seguro-2026.html"
+      ]
+    },
+    {
+      "title": "Reforma de imóvel no litoral e rentabilidade",
+      "slug": "reforma-imovel-litoral-rentabilidade-2026.html",
+      "h1": "Reforma de imóvel no litoral e rentabilidade",
+      "meta_title": "Reforma de imóvel no litoral e rentabilidade",
+      "meta_description": "Reforma de imóvel no litoral e rentabilidade.",
+      "canonical": "https://praia.digital/blog/reforma-imovel-litoral-rentabilidade-2026.html",
+      "cluster": "reforma",
+      "intent": "analítica",
+      "funnel": "Decisão",
+      "article_type": "análise",
+      "author": "Praia Digital",
+      "word_count": 160,
+      "status": "PUBLISHED",
+      "published_at": "2026-08-13T01:59:30.763077+00:00",
+      "created_at": "2026-08-13T01:59:30.763077+00:00",
+      "http_status": 200,
+      "in_sitemap": true,
+      "canonical_self": true,
+      "internal_links": [
+        "https://praia.digital/blog/reforma-imovel-aumentar-valor-litoral-2026.html",
+        "https://praia.digital/blog/reforma-rapida-imovel-litoral-vender-mais-2026.html"
+      ]
+    },
+    {
+      "title": "Compra de imóvel no litoral para verão: preparação",
+      "slug": "compra-imovel-litoral-verao-preparacao-2026.html",
+      "h1": "Compra de imóvel no litoral para verão: preparação",
+      "meta_title": "Compra de imóvel no litoral para verão: preparação",
+      "meta_description": "Compra de imóvel no litoral para verão: preparação.",
+      "canonical": "https://praia.digital/blog/compra-imovel-litoral-verao-preparacao-2026.html",
+      "cluster": "compra",
+      "intent": "prática",
+      "funnel": "Decisão",
+      "article_type": "guia prático",
+      "author": "Praia Digital",
+      "word_count": 160,
+      "status": "PUBLISHED",
+      "published_at": "2026-08-13T01:59:30.763077+00:00",
+      "created_at": "2026-08-13T01:59:30.763077+00:00",
+      "http_status": 200,
+      "in_sitemap": true,
+      "canonical_self": true,
+      "internal_links": [
+        "https://praia.digital/blog/compra-imovel-litoral-verao-urgente-2026.html",
+        "https://praia.digital/blog/antes-procurar-imovel-litoral-passos-2026.html"
+      ]
+    },
+    {
+      "title": "Visita a imóvel no litoral: roteiro de avaliação",
+      "slug": "visita-imovel-litoral-roteiro-avaliacao-2026.html",
+      "h1": "Visita a imóvel no litoral: roteiro de avaliação",
+      "meta_title": "Visita a imóvel no litoral: roteiro de avaliação",
+      "meta_description": "Visita a imóvel no litoral: roteiro de avaliação.",
+      "canonical": "https://praia.digital/blog/visita-imovel-litoral-roteiro-avaliacao-2026.html",
+      "cluster": "compra",
+      "intent": "prática",
+      "funnel": "Decisão",
+      "article_type": "guia prático",
+      "author": "Praia Digital",
+      "word_count": 160,
+      "status": "PUBLISHED",
+      "published_at": "2026-08-13T01:59:30.763077+00:00",
+      "created_at": "2026-08-13T01:59:30.763077+00:00",
+      "http_status": 200,
+      "in_sitemap": true,
+      "canonical_self": true,
+      "internal_links": [
+        "https://praia.digital/blog/checklist-inspecao-imovel-litoral-visita-segura-2026.html",
+        "https://praia.digital/blog/como-avaliar-imovel-litoral-visita-2026.html"
+      ]
+    },
+    {
+      "title": "Aluguel de temporada: check-in e check-out sem dor",
+      "slug": "aluguel-temporada-checkin-checkout-2026.html",
+      "h1": "Aluguel de temporada: check-in e check-out sem dor",
+      "meta_title": "Aluguel de temporada: check-in e check-out sem dor",
+      "meta_description": "Aluguel de temporada: check-in e check-out sem dor.",
+      "canonical": "https://praia.digital/blog/aluguel-temporada-checkin-checkout-2026.html",
+      "cluster": "aluguel",
+      "intent": "operacional",
+      "funnel": "Pós-locação",
+      "article_type": "guia prático",
+      "author": "Praia Digital",
+      "word_count": 160,
+      "status": "PUBLISHED",
+      "published_at": "2026-08-13T01:59:30.763077+00:00",
+      "created_at": "2026-08-13T01:59:30.763077+00:00",
+      "http_status": 200,
+      "in_sitemap": true,
+      "canonical_self": true,
+      "internal_links": [
+        "https://praia.digital/blog/checklist-aluguel-temporada-anuncio-checkout-litoral-2026.html",
+        "https://praia.digital/blog/aluguel-temporada-manutencao-custo-2026.html"
+      ]
     }
   ],
   "publication_plan": [
