@@ -896,86 +896,6 @@
   "next_queue": [
     {
       "cluster": "automacao_ia",
-      "city": "ilhabela",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "ilhabela",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "ilhabela",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "ilhabela",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "sao_sebastiao",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "sao_sebastiao",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "sao_vicente",
-      "article_type": "B",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "sao_vicente",
-      "article_type": "C",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "sao_vicente",
-      "article_type": "D",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
-      "city": "sao_vicente",
-      "article_type": "E",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "automacao_ia",
       "city": "ubatuba",
       "article_type": "B",
       "count": 1,
@@ -1290,6 +1210,86 @@
       "cluster": "bairros_cidades",
       "city": "sao_vicente",
       "article_type": "E",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "ubatuba",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "maresias",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "maresias",
+      "article_type": "E",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "litoral_paulista",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "bairros_cidades",
+      "city": "litoral_paulista",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "editorial",
+      "city": "santos",
+      "article_type": "B",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "editorial",
+      "city": "santos",
+      "article_type": "C",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "editorial",
+      "city": "santos",
+      "article_type": "D",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "editorial",
+      "city": "santos",
+      "article_type": "E",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "editorial",
+      "city": "guaruja",
+      "article_type": "B",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
