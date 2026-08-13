@@ -43,6 +43,19 @@ def fix_missing_title(path: Path) -> bool:
 
 def run(context: dict) -> dict:
     fixed = []
+    
+    # Idempotency: check if already completed
+    registry_path = REPO / 'docs' / 'banco-editorial.json'
+    if registry_path.exists():
+        registry = json.loads(registry_path.read_text(encoding='utf-8'))
+        completed = registry.get('idempotency', {}).get('completed_actions', [])
+        if 'qa_fixes' in completed:
+            return {
+                'status': 'ok',
+                'actions': [],
+                'fixed': fixed,
+                'message': 'QA fixes: já executado anteriormente (idempotente)',
+            }
     # Check a small sample of blog files
     files = list(BLOG_DIR.glob('*.html'))[:20] + list(FORMACOES_DIR.glob('*.html'))[:8]
     for f in files:
