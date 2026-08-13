@@ -75651,5 +75651,330 @@
         "/education/formacoes/documentacao-imoveis.html"
       ]
     }
+  ],
+  "academy_weekly": [
+    {
+      "date": "2026-08-13T20:56:20.282148+00:00",
+      "formation_analysis": [
+        {
+          "slug": "formacao-corretor-imoveis-litoral",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 6347,
+          "has_faq": true,
+          "has_entities": true,
+          "has_articles": true,
+          "has_cta": true
+        },
+        {
+          "slug": "avaliacao-imoveis-ptam",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5991,
+          "has_faq": true,
+          "has_entities": true,
+          "has_articles": true,
+          "has_cta": true
+        },
+        {
+          "slug": "financiamento-imobiliario",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5847,
+          "has_faq": true,
+          "has_entities": true,
+          "has_articles": true,
+          "has_cta": true
+        },
+        {
+          "slug": "locacao-temporada-administracao",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5918,
+          "has_faq": true,
+          "has_entities": true,
+          "has_articles": true,
+          "has_cta": true
+        },
+        {
+          "slug": "captacao-imoveis",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5805,
+          "has_faq": true,
+          "has_entities": true,
+          "has_articles": true,
+          "has_cta": true
+        },
+        {
+          "slug": "marketing-imobiliario",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5970,
+          "has_faq": true,
+          "has_entities": true,
+          "has_articles": true,
+          "has_cta": true
+        },
+        {
+          "slug": "documentacao-imoveis",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5987,
+          "has_faq": true,
+          "has_entities": true,
+          "has_articles": true,
+          "has_cta": true
+        },
+        {
+          "slug": "mercado-imobiliario-litoral",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 6173,
+          "has_faq": true,
+          "has_entities": true,
+          "has_articles": true,
+          "has_cta": true
+        }
+      ],
+      "formation_traffic": {
+        "formacao-corretor-imoveis-litoral": 3,
+        "avaliacao-imoveis-ptam": 3,
+        "mercado-imobiliario-litoral": 3,
+        "financiamento-imobiliario": 3,
+        "locacao-temporada-administracao": 3,
+        "captacao-imoveis": 3,
+        "marketing-imobiliario": 3,
+        "documentacao-imoveis": 3
+      },
+      "top_needs": [],
+      "opportunities": [
+        {
+          "formation": "formacao-corretor-imoveis-litoral",
+          "opportunity": "exercicios_praticos",
+          "justificativa": "Criar exercícios práticos para aplicar conteúdo"
+        },
+        {
+          "formation": "formacao-corretor-imoveis-litoral",
+          "opportunity": "checklists",
+          "justificativa": "Criar checklists operacionais para corretores"
+        },
+        {
+          "formation": "formacao-corretor-imoveis-litoral",
+          "opportunity": "modelos",
+          "justificativa": "Criar modelos/documentos editáveis"
+        },
+        {
+          "formation": "avaliacao-imoveis-ptam",
+          "opportunity": "exercicios_praticos",
+          "justificativa": "Criar exercícios práticos para aplicar conteúdo"
+        },
+        {
+          "formation": "avaliacao-imoveis-ptam",
+          "opportunity": "checklists",
+          "justificativa": "Criar checklists operacionais para corretores"
+        },
+        {
+          "formation": "avaliacao-imoveis-ptam",
+          "opportunity": "modelos",
+          "justificativa": "Criar modelos/documentos editáveis"
+        },
+        {
+          "formation": "financiamento-imobiliario",
+          "opportunity": "exercicios_praticos",
+          "justificativa": "Criar exercícios práticos para aplicar conteúdo"
+        },
+        {
+          "formation": "financiamento-imobiliario",
+          "opportunity": "checklists",
+          "justificativa": "Criar checklists operacionais para corretores"
+        },
+        {
+          "formation": "financiamento-imobiliario",
+          "opportunity": "modelos",
+          "justificativa": "Criar modelos/documentos editáveis"
+        },
+        {
+          "formation": "locacao-temporada-administracao",
+          "opportunity": "exercicios_praticos",
+          "justificativa": "Criar exercícios práticos para aplicar conteúdo"
+        }
+      ],
+      "created_materials": [],
+      "status": "audited"
+    },
+    {
+      "date": "2026-08-13T20:56:55.709946+00:00",
+      "formation_analysis": [
+        {
+          "slug": "formacao-corretor-imoveis-litoral",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 6347,
+          "has_faq": true,
+          "has_entities": true,
+          "has_articles": true,
+          "has_cta": true
+        },
+        {
+          "slug": "avaliacao-imoveis-ptam",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5991,
+          "has_faq": true,
+          "has_entities": true,
+          "has_articles": true,
+          "has_cta": true
+        },
+        {
+          "slug": "financiamento-imobiliario",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5847,
+          "has_faq": true,
+          "has_entities": true,
+          "has_articles": true,
+          "has_cta": true
+        },
+        {
+          "slug": "locacao-temporada-administracao",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5918,
+          "has_faq": true,
+          "has_entities": true,
+          "has_articles": true,
+          "has_cta": true
+        },
+        {
+          "slug": "captacao-imoveis",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5805,
+          "has_faq": true,
+          "has_entities": true,
+          "has_articles": true,
+          "has_cta": true
+        },
+        {
+          "slug": "marketing-imobiliario",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5970,
+          "has_faq": true,
+          "has_entities": true,
+          "has_articles": true,
+          "has_cta": true
+        },
+        {
+          "slug": "documentacao-imoveis",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5987,
+          "has_faq": true,
+          "has_entities": true,
+          "has_articles": true,
+          "has_cta": true
+        },
+        {
+          "slug": "mercado-imobiliario-litoral",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 6173,
+          "has_faq": true,
+          "has_entities": true,
+          "has_articles": true,
+          "has_cta": true
+        }
+      ],
+      "formation_traffic": {
+        "formacao-corretor-imoveis-litoral": 3,
+        "avaliacao-imoveis-ptam": 3,
+        "mercado-imobiliario-litoral": 3,
+        "financiamento-imobiliario": 3,
+        "locacao-temporada-administracao": 3,
+        "captacao-imoveis": 3,
+        "marketing-imobiliario": 3,
+        "documentacao-imoveis": 3
+      },
+      "top_needs": [],
+      "opportunities": [
+        {
+          "formation": "formacao-corretor-imoveis-litoral",
+          "opportunity": "exercicios_praticos",
+          "justificativa": "Criar exercícios práticos para aplicar conteúdo"
+        },
+        {
+          "formation": "formacao-corretor-imoveis-litoral",
+          "opportunity": "checklists",
+          "justificativa": "Criar checklists operacionais para corretores"
+        },
+        {
+          "formation": "formacao-corretor-imoveis-litoral",
+          "opportunity": "modelos",
+          "justificativa": "Criar modelos/documentos editáveis"
+        },
+        {
+          "formation": "avaliacao-imoveis-ptam",
+          "opportunity": "exercicios_praticos",
+          "justificativa": "Criar exercícios práticos para aplicar conteúdo"
+        },
+        {
+          "formation": "avaliacao-imoveis-ptam",
+          "opportunity": "checklists",
+          "justificativa": "Criar checklists operacionais para corretores"
+        },
+        {
+          "formation": "avaliacao-imoveis-ptam",
+          "opportunity": "modelos",
+          "justificativa": "Criar modelos/documentos editáveis"
+        },
+        {
+          "formation": "financiamento-imobiliario",
+          "opportunity": "exercicios_praticos",
+          "justificativa": "Criar exercícios práticos para aplicar conteúdo"
+        },
+        {
+          "formation": "financiamento-imobiliario",
+          "opportunity": "checklists",
+          "justificativa": "Criar checklists operacionais para corretores"
+        },
+        {
+          "formation": "financiamento-imobiliario",
+          "opportunity": "modelos",
+          "justificativa": "Criar modelos/documentos editáveis"
+        },
+        {
+          "formation": "locacao-temporada-administracao",
+          "opportunity": "exercicios_praticos",
+          "justificativa": "Criar exercícios práticos para aplicar conteúdo"
+        }
+      ],
+      "created_materials": [],
+      "status": "audited"
+    }
+  ],
+  "news_audit": [
+    {
+      "date": "2026-08-13T20:56:55.252947+00:00",
+      "status": "sem_pauta_suficiente",
+      "reason": "Nenhuma pauta encontrada na semana"
+    }
   ]
 }
