@@ -8203,6 +8203,126 @@
         "https://praia.digital/blog/usucapiao-imoveis-litoral-como-funciona-cuidados-2026.html",
         "https://praia.digital/blog/documentacao-venda-imovel-litoral-checklist-2026.html"
       ]
+    },
+    {
+      "title": "Locação de temporada: documentos fiscais obrigatórios",
+      "slug": "locacao-temporada-fiscal-documentos-2026.html",
+      "h1": "Locação de temporada: documentos fiscais obrigatórios",
+      "meta_title": "Locação de temporada: documentos fiscais obrigatórios",
+      "meta_description": "Locação de temporada: documentos fiscais obrigatórios.",
+      "canonical": "https://praia.digital/blog/locacao-temporada-fiscal-documentos-2026.html",
+      "cluster": "aluguel",
+      "intent": "prática",
+      "funnel": "Pós-locação",
+      "article_type": "guia prático",
+      "author": "Praia Digital",
+      "word_count": 160,
+      "status": "PUBLISHED",
+      "published_at": "2026-08-13T03:45:06.412501+00:00",
+      "created_at": "2026-08-13T03:45:06.412501+00:00",
+      "http_status": 200,
+      "in_sitemap": true,
+      "canonical_self": true,
+      "internal_links": [
+        "https://praia.digital/blog/tributacao-aluguel-temporada-litoral-guia-pratico-2026.html",
+        "https://praia.digital/blog/normas-municipais-aluguel-temporada-litoral-sp-2026.html"
+      ]
+    },
+    {
+      "title": "Aluguel de temporada: reforma e imposto de renda",
+      "slug": "aluguel-temporada-reforma-imposto-renda-2026.html",
+      "h1": "Aluguel de temporada: reforma e imposto de renda",
+      "meta_title": "Aluguel de temporada: reforma e imposto de renda",
+      "meta_description": "Aluguel de temporada: reforma e imposto de renda.",
+      "canonical": "https://praia.digital/blog/aluguel-temporada-reforma-imposto-renda-2026.html",
+      "cluster": "aluguel",
+      "intent": "prática",
+      "funnel": "Pós-locação",
+      "article_type": "guia prático",
+      "author": "Praia Digital",
+      "word_count": 160,
+      "status": "PUBLISHED",
+      "published_at": "2026-08-13T03:45:06.412501+00:00",
+      "created_at": "2026-08-13T03:45:06.412501+00:00",
+      "http_status": 200,
+      "in_sitemap": true,
+      "canonical_self": true,
+      "internal_links": [
+        "https://praia.digital/blog/reforma-imovel-litoral-licenca-prefeitura-2026.html",
+        "https://praia.digital/blog/fluxo-caixa-aluguel-temporada-litoral-2026.html"
+      ]
+    },
+    {
+      "title": "Imóvel no litoral em área de preservação permanente: regras",
+      "slug": "imovel-litoral-area-preservacao-permanente-2026.html",
+      "h1": "Imóvel no litoral em área de preservação permanente: regras",
+      "meta_title": "Imóvel no litoral em área de preservação permanente: regras",
+      "meta_description": "Imóvel no litoral em área de preservação permanente: regras.",
+      "canonical": "https://praia.digital/blog/imovel-litoral-area-preservacao-permanente-2026.html",
+      "cluster": "documentacao",
+      "intent": "prática",
+      "funnel": "Decisão",
+      "article_type": "guia prático",
+      "author": "Praia Digital",
+      "word_count": 160,
+      "status": "PUBLISHED",
+      "published_at": "2026-08-13T03:45:06.412501+00:00",
+      "created_at": "2026-08-13T03:45:06.412501+00:00",
+      "http_status": 200,
+      "in_sitemap": true,
+      "canonical_self": true,
+      "internal_links": [
+        "https://praia.digital/blog/imoveis-litoral-zonamento-restricoes-consultar-antes-comprar-2026.html",
+        "https://praia.digital/blog/imoveis-litoral-acessibilidade-universal-2026.html"
+      ]
+    },
+    {
+      "title": "Aluguel de temporada: honorários do corretor e como calcular",
+      "slug": "aluguel-temporada-honorarios-corretor-como-calcular-2026.html",
+      "h1": "Aluguel de temporada: honorários do corretor e como calcular",
+      "meta_title": "Aluguel de temporada: honorários do corretor e como calcular",
+      "meta_description": "Aluguel de temporada: honorários do corretor e como calcular.",
+      "canonical": "https://praia.digital/blog/aluguel-temporada-honorarios-corretor-como-calcular-2026.html",
+      "cluster": "aluguel",
+      "intent": "prática",
+      "funnel": "Decisão",
+      "article_type": "guia prático",
+      "author": "Praia Digital",
+      "word_count": 160,
+      "status": "PUBLISHED",
+      "published_at": "2026-08-13T03:45:06.412501+00:00",
+      "created_at": "2026-08-13T03:45:06.412501+00:00",
+      "http_status": 200,
+      "in_sitemap": true,
+      "canonical_self": true,
+      "internal_links": [
+        "https://praia.digital/blog/captacao-indicacao-clientes-imobiliaria-litoral-2026.html",
+        "https://praia.digital/blog/processo-aluguel-temporada-etapas-2026.html"
+      ]
+    },
+    {
+      "title": "Venda de imóvel no litoral envolvendo filhos menores: regras",
+      "slug": "imovel-litoral-venda-filhos-menores-2026.html",
+      "h1": "Venda de imóvel no litoral envolvendo filhos menores: regras",
+      "meta_title": "Venda de imóvel no litoral envolvendo filhos menores: regras",
+      "meta_description": "Venda de imóvel no litoral envolvendo filhos menores: regras.",
+      "canonical": "https://praia.digital/blog/imovel-litoral-venda-filhos-menores-2026.html",
+      "cluster": "venda",
+      "intent": "prática",
+      "funnel": "Decisão",
+      "article_type": "guia prático",
+      "author": "Praia Digital",
+      "word_count": 160,
+      "status": "PUBLISHED",
+      "published_at": "2026-08-13T03:45:06.412501+00:00",
+      "created_at": "2026-08-13T03:45:06.412501+00:00",
+      "http_status": 200,
+      "in_sitemap": true,
+      "canonical_self": true,
+      "internal_links": [
+        "https://praia.digital/blog/heranca-imoveis-litoral-inventario-partilha-2026.html",
+        "https://praia.digital/blog/checklist-venda-imovel-litoral-anuncio-2026.html"
+      ]
     }
   ],
   "publication_plan": [
