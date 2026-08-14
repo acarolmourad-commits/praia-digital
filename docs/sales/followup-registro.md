@@ -13333,3 +13333,20 @@ Atualizado em: 2026-07-14
 | Marcos Monteiro | Litoral Premium Imóveis | email | parceria | 2026-08-14 | 2026-08-17 | 2026-08-21 |
 | Ana Rocha | Prime Imóveis Prime | email | parceria | 2026-08-14 | 2026-08-17 | 2026-08-21 |
 | Fernanda Monteiro | Costa Verde Blue | email | parceria | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+
+- 2026-08-14 12:44: Aquisição 7 dias — Dia 1 PRONTO_PARA_ABORDAGEM_HUMANA
+| Roberto Dias | Litoral Premium Sant | email | parceria | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+| Larissa Nunes | Riviera Launch | email | parceria | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+| Gustavo Nunes | Riviera Platinum | email | parceria | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+| Isabela Costa | Riviera Elite | email | parceria | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+| Fernanda Nunes | Beta Imóveis Centro | email | parceria | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+| Mariana Costa | Litoral Norte Premium | email | parceria | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+| Luciana Souza | Caiçara Imóveis | email | parceria | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+| Fernanda Lima | Praia Grande Norte | email | parceria | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+| Mariana Costa | Riviera Norte | email | parceria | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+| Larissa Costa | Riviera Digital | email | parceria | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+| Patrícia Lima | Caiçara Digital | email | parceria | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+| Natália Almeida | Riviera Exclusive | email | parceria | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+| Larissa Gomes | Riviera Exclusive | email | parceria | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+| Luciana Dias | Caiçara Imóveis | email | parceria | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+| Marcelo Lima | Caiçara Conectada | email | parceria | 2026-08-14 | 2026-08-17 | 2026-08-21 |
