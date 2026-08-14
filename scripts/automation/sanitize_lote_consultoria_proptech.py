@@ -11,6 +11,7 @@ from pathlib import Path
 
 BASE = Path(__file__).resolve().parents[2]
 ENTRADA = BASE / "docs/sales/csv-lotes-b2b/lote-b2b-consultoria_proptech-2026-07-22.csv"
+FALLBACK_ENTRADA = BASE / "docs/sales/csv-lotes-b2b/lote-b2b-consultoria-2026-07-22.csv"
 SAIDA = BASE / "docs/sales/csv-lotes-b2b/lote-b2b-consultoria_proptech-sanitizado-2026-07-22.csv"
 
 
@@ -19,8 +20,12 @@ def normalizar(v):
 
 
 def main():
+    entrada = ENTRADA if ENTRADA.exists() else FALLBACK_ENTRADA
+    if not entrada.exists():
+        print("[SKIP] consultoria_proptech: lote de entrada não encontrado")
+        return
     rows = []
-    with ENTRADA.open(newline="", encoding="utf-8") as f:
+    with entrada.open(newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f, delimiter=";")
         for row in reader:
             rows.append(row)
