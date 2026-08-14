@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rodada 1 — Execução (Praia Digital)</title>
+<style>
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#f8fafc;color:#0f172a;padding:24px}
+  .wrap{max-width:900px;margin:0 auto}
+  .card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:20px;margin:14px 0;box-shadow:0 20px 35px rgba(0,0,0,.08)}
+  .muted{color:#475569;font-size:13px}
+  .tag{display:inline-block;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:700;margin:4px 4px 0 0}
+  .tag.pending{background:#fef9c3;color:#713f12}
+  .tag.sent{background:#dbeafe;color:#1e3a8a}
+  .tag.reply{background:#dcfce7;color:#14532d}
+  .tag.dead{background:#fee2e2;color:#450a0a}
+  .title{font-size:20px;font-weight:900;margin:6px 0}
+  table{width:100%;border-collapse:collapse;margin-top:10px}
+  th,td{text-align:left;padding:10px;border-bottom:1px solid #e5e7eb;font-size:14px}
+  th{color:#475569;font-weight:600;font-size:12px;text-transform:uppercase}
+  .btn{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:12px;background:#0f172a;color:#fff;text-decoration:none;font-weight:700}
+  .copy{margin-top:10px;padding:10px;background:#f1f5f9;border-radius:10px;font-size:13px;color:#334155;white-space:pre-wrap}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <div class="title">Rodada 1 — Execução</div>
+    <p class="muted">Envio humano, sem automação. Registrar respostas em rodada1-respostas.csv.</p>
+  </div>
+
+  <div class="card">
+    <div class="title">1. Riviera Temporada</div>
+    <div class="tag pending">Aguardando envio</div>
+    <p><strong>Canal:</strong> WhatsApp (11) 98426-2319 / e-mail contato@rivieratemporada.com.br</p>
+    <p><strong>Mensagem:</strong></p>
+    <div class="copy">“Olá, João.
+Acompanho o trabalho da Riviera Temporada na Riviera de São Lourenço.
+Acredito que um antes/depois de anúncio e fotos pode aumentar muito a percepção de valor dos imóveis.
+Trabalhamos com fotografia profissional e edição de anúncios para temporada.
+Se quiser, faço uma análise gratuita de 1 anúncio e mostro como melhorar a apresentação.”</div>
+    <a class="btn" href="https://wa.me/55119842312319?text=Ol%C3%A1%2C%20Jo%C3%A3o.%20Acompanho%20o%20trabalho%20da%20Riviera%20Temporada%20na%20Riviera%20de%20S%C3%A3o%20Louren%C3%A7o.%20Acredito%20que%20um%20antes%2Fdepois%20de%20an%C3%BAncio%20e%20fotos%20pode%20aumentar%20muito%20a%20percep%C3%A7%C3%A3o%20de%20valor%20dos%20im%C3%B3veis.%20Trabalhamos%20com%20fotografia%20profissional%20e%20edi%C3%A7%C3%A3o%20de%20an%C3%BAncios%20para%20temporada.%20Se%20quiser%2C%20fa%C3%A7o%20uma%20an%C3%A1lise%20gratuita%20de%201%20an%C3%BAncio%20e%20mostro%20como%20melhorar%20a%20apresenta%C3%A7%C3%A3o." target="_blank">Abrir WhatsApp</a>
+    <p class="muted" style="margin-top:10px">Follow-up 24h: exemplo genérico before/after. Se responder: pedir link do anúncio para diagnóstico gratuito.</p>
+  </div>
+
+  <div class="card">
+    <div class="title">2. CASA Home Management</div>
+    <div class="tag pending">Aguardando envio</div>
+    <p><strong>Canal:</strong> e-mail contato@casahm.com.br / telefone (11) 97079-2387</p>
+    <p><strong>Mensagem:</strong></p>
+    <div class="copy">“Olá, time da CASA Home Management.
+Coanfitrião em Juquehy/São Sebastião precisa de apresentação profissional para cada imóvel.
+Temos edição de anúncios e fotografia profissional com entrega em 48h.
+Posso mostrar um exemplo prático em 1 anúncio?”</div>
+    <a class="btn" href="mailto:contato@casahm.com.br?subject=Otimiza%C3%A7%C3%A3o%20de%20an%C3%BAncios%20%E2%80%94%20Praia%20Digital&body=Ol%C3%A1%2C%20time%20da%20CASA%20Home%20Management.%0D%0ACoanfitri%C3%A3o%20em%20Juquehy%2FS%C3%A3o%20Sebasti%C3%A3o%20precisa%20de%20apresenta%C3%A7%C3%A3o%20profissional%20para%20cada%20im%C3%B3vel.%0D%0ATemos%20edi%C3%A7%C3%A3o%20de%20an%C3%BAncios%20e%20fotografia%20profissional%20com%20entrega%20em%2048h.%0D%0APosso%20mostrar%20um%20exemplo%20pr%C3%A1tico%20em%201%20an%C3%BAncio%3F">Abrir e-mail</a>
+    <p class="muted" style="margin-top:10px">Follow-up 24h: exemplo genérico de copy + estrutura de anúncio. Se responder: pedir link de 1 anúncio.</p>
+  </div>
+
+  <div class="card">
+    <div class="title">Registro de respostas</div>
+    <p class="muted">Após cada envio, atualizar <strong>docs/sales/acquisition-7dias/rodada1-respostas.csv</strong>.</p>
+    <p class="muted">Campos: prospect, data_envio, canal, status, resposta, motivo_recusa, interesse, whatsapp_handoff, proximo_followup, observacoes</p>
+  </div>
+</div>
+</body>
+</html>
