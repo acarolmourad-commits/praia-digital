@@ -77696,6 +77696,78 @@
       "top_needs": [],
       "created_materials": [],
       "status": "audited"
+    },
+    {
+      "date": "2026-08-14T00:29:55.544141+00:00",
+      "formation_analysis": [
+        {
+          "slug": "formacao-corretor-imoveis-litoral",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 6347,
+          "has_faq": true
+        },
+        {
+          "slug": "avaliacao-imoveis-ptam",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5991,
+          "has_faq": true
+        },
+        {
+          "slug": "financiamento-imobiliario",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5847,
+          "has_faq": true
+        },
+        {
+          "slug": "locacao-temporada-administracao",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5918,
+          "has_faq": true
+        },
+        {
+          "slug": "captacao-imoveis",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5805,
+          "has_faq": true
+        },
+        {
+          "slug": "marketing-imobiliario",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5970,
+          "has_faq": true
+        },
+        {
+          "slug": "documentacao-imoveis",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 5987,
+          "has_faq": true
+        },
+        {
+          "slug": "mercado-imobiliario-litoral",
+          "status": "ok",
+          "needs": [],
+          "priority": 0,
+          "size": 6173,
+          "has_faq": true
+        }
+      ],
+      "top_needs": [],
+      "created_materials": [],
+      "status": "audited"
     }
   ],
   "news_audit": [
@@ -78425,7 +78497,7 @@
     "formacoes": 8
   },
   "maintenance": {
-    "last_run": "2026-08-14T00:07:34.565362+00:00",
+    "last_run": "2026-08-14T00:30:00.564147+00:00",
     "blog_count": 2957,
     "noticias_count": 1,
     "formacoes_count": 8,
@@ -79795,6 +79867,37 @@
           "published_at": "2026-08-13"
         }
       ]
+    },
+    {
+      "date": "2026-08-14T00:29:54.484141+00:00",
+      "total_sources": 5,
+      "total_opportunities": 2,
+      "relevant_opportunities": 2,
+      "status": "pauta_encontrada",
+      "opportunities": [
+        {
+          "type": "news_discovery",
+          "source": "CRECI-SP",
+          "url": "https://www.crecisp.gov.br/Files/marketresearch/84b91e51-88e4-4adf-9eae-ad9a1dffcd55_pesquisa-marco26baixada-santista.pdf",
+          "title": "Pesquisa CRECISP Baixada Santista e Região Março 2026",
+          "message": "Mercado imobiliário da Baixada Santista acelera em março/2026 com +37,56% nas vendas e +47,88% nas locações",
+          "priority": 1,
+          "score": 9.5,
+          "status": "verified",
+          "published_at": "2026-03-01"
+        },
+        {
+          "type": "news_discovery",
+          "source": "Prefeitura de Santos",
+          "url": "https://www.santos.sp.gov.br/?q=noticia/em-nova-fase-da-reocupacao-do-centro-de-santos-residencial-e-lancado-no-valongo",
+          "title": "Em nova fase da reocupação do Centro de Santos, residencial é lançado no Valongo",
+          "message": "Residencial Novo Valongo: 1.088 apartamentos, isenção de IPTU por 5 anos, isenção de ITBI, Minha Casa Minha Vida",
+          "priority": 1,
+          "score": 9.0,
+          "status": "verified",
+          "published_at": "2026-08-13"
+        }
+      ]
     }
   ],
   "orchestrator_24h": {
@@ -79858,6 +79961,13 @@
       },
       {
         "date": "2026-08-14T00:07:29.198356+00:00",
+        "detected": 0,
+        "produced": 3,
+        "published": 3,
+        "connected": 3
+      },
+      {
+        "date": "2026-08-14T00:29:55.990141+00:00",
         "detected": 0,
         "produced": 3,
         "published": 3,
