@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-14T20:05:22.210403+00:00",
-  "status": "Batch Análise de Dados 2026-08-14 — 5 artigos adicionados",
+  "generated_at": "2026-08-14T20:16:50.872944+00:00",
+  "status": "Batch Jurídico 2026-08-14 — 5 artigos adicionados",
   "registry_context": {
     "purpose": "Registro editorial do subconjunto verificado de artigos publicados",
     "total_published_definition": "Quantidade de artigos com evidência física verificada (HTML existente, publicado, registrado).",
@@ -20224,6 +20224,56 @@
       "path": "blog/risco-operacional-imobiliarias-litoral-temporada-2026.html",
       "url": "https://praia.digital/blog/risco-operacional-imobiliarias-litoral-temporada-2026.html",
       "source": "editorial_analise_dados",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "documentos-essenciais-compra-imovel-litoral-2026.html",
+      "title": "Documentos essenciais para compra de imóvel no litoral: checklist prático 2026",
+      "h1": "Documentos essenciais para compra de imóvel no litoral: checklist prático 2026",
+      "path": "blog/documentos-essenciais-compra-imovel-litoral-2026.html",
+      "url": "https://praia.digital/blog/documentos-essenciais-compra-imovel-litoral-2026.html",
+      "source": "editorial_juridico",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "escritura-imovel-litoral-passos-custos-2026.html",
+      "title": "Escritura de imóvel no litoral: passos e custos para registrar 2026",
+      "h1": "Escritura de imóvel no litoral: passos e custos para registrar 2026",
+      "path": "blog/escritura-imovel-litoral-passos-custos-2026.html",
+      "url": "https://praia.digital/blog/escritura-imovel-litoral-passos-custos-2026.html",
+      "source": "editorial_juridico",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "registro-imoveis-litoral-certidao-pratica-2026.html",
+      "title": "Registro de imóveis no litoral: certidão e regularização na prática 2026",
+      "h1": "Registro de imóveis no litoral: certidão e regularização na prática 2026",
+      "path": "blog/registro-imoveis-litoral-certidao-pratica-2026.html",
+      "url": "https://praia.digital/blog/registro-imoveis-litoral-certidao-pratica-2026.html",
+      "source": "editorial_juridico",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "compra-imovel-heranca-inventario-litoral-2026.html",
+      "title": "Compra de imóvel herdado no litoral: inventário, partilha e escritura 2026",
+      "h1": "Compra de imóvel herdado no litoral: inventário, partilha e escritura 2026",
+      "path": "blog/compra-imovel-heranca-inventario-litoral-2026.html",
+      "url": "https://praia.digital/blog/compra-imovel-heranca-inventario-litoral-2026.html",
+      "source": "editorial_juridico",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "direitos-deveres-aluguel-temporada-litoral-2026.html",
+      "title": "Direitos e deveres no aluguel de temporada no litoral: guia prático 2026",
+      "h1": "Direitos e deveres no aluguel de temporada no litoral: guia prático 2026",
+      "path": "blog/direitos-deveres-aluguel-temporada-litoral-2026.html",
+      "url": "https://praia.digital/blog/direitos-deveres-aluguel-temporada-litoral-2026.html",
+      "source": "editorial_juridico",
       "verified": true,
       "in_sitemap": true
     }
