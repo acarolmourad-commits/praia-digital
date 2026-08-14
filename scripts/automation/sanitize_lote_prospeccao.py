@@ -19,6 +19,9 @@ def normalizar(v):
 
 
 def main():
+    if not ENTRADA.exists():
+        print("[SKIP] prospeccao: lote de entrada não encontrado")
+        return
     rows = []
     with ENTRADA.open(newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f, delimiter=";")

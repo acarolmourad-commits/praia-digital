@@ -14,6 +14,7 @@ LOTE = BASE / "docs/sales/csv-lotes-b2b/lote-b2b-consultoria_proptech-sanitizado
 
 
 def main():
+    servico = "consultoria_proptech"
     if not LOTE.exists():
         print(f"[SKIP] consultoria_proptech: sanitizado não encontrado")
         return
