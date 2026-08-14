@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-11T17:08:24.831045Z",
-  "status": "AUDITADO_CORRIGIDO",
+  "generated_at": "2026-08-14T19:34:29.304197+00:00",
+  "status": "Batch SEO Local 2026-08-14 — 5 artigos adicionados",
   "registry_context": {
     "purpose": "Registro editorial do subconjunto verificado de artigos publicados",
     "total_published_definition": "Quantidade de artigos com evidência física verificada (HTML existente, publicado, registrado).",
@@ -20026,6 +20026,56 @@
       "article_type": "A",
       "author": "Praia Digital",
       "word_count": 230
+    },
+    {
+      "slug": "seo-local-imobiliarias-litoral-google-maps-pack-local-2026.html",
+      "title": "SEO local para imobiliárias no litoral: como aparecer no Google Maps e local pack em 2026",
+      "h1": "SEO local para imobiliárias no litoral: como aparecer no Google Maps e local pack em 2026",
+      "path": "blog/seo-local-imobiliarias-litoral-google-maps-pack-local-2026.html",
+      "url": "https://praia.digital/blog/seo-local-imobiliarias-litoral-google-maps-pack-local-2026.html",
+      "source": "editorial_seo_local",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "google-business-profile-corretores-imoveis-litoral-passo-passo-2026.html",
+      "title": "Google Business Profile para corretores de imóveis no litoral: passo a passo 2026",
+      "h1": "Google Business Profile para corretores de imóveis no litoral: passo a passo 2026",
+      "path": "blog/google-business-profile-corretores-imoveis-litoral-passo-passo-2026.html",
+      "url": "https://praia.digital/blog/google-business-profile-corretores-imoveis-litoral-passo-passo-2026.html",
+      "source": "editorial_seo_local",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "avaliacoes-google-imobiliarias-litoral-reputacao-local-2026.html",
+      "title": "Avaliações no Google para imobiliárias no litoral: reputação e SEO local em 2026",
+      "h1": "Avaliações no Google para imobiliárias no litoral: reputação e SEO local em 2026",
+      "path": "blog/avaliacoes-google-imobiliarias-litoral-reputacao-local-2026.html",
+      "url": "https://praia.digital/blog/avaliacoes-google-imobiliarias-litoral-reputacao-local-2026.html",
+      "source": "editorial_seo_local",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "schema-structured-data-local-imobiliarias-litoral-2026.html",
+      "title": "Schema e structured data para imobiliárias no litoral: SEO local prático 2026",
+      "h1": "Schema e structured data para imobiliárias no litoral: SEO local prático 2026",
+      "path": "blog/schema-structured-data-local-imobiliarias-litoral-2026.html",
+      "url": "https://praia.digital/blog/schema-structured-data-local-imobiliarias-litoral-2026.html",
+      "source": "editorial_seo_local",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "citacoes-nap-seo-local-imobiliarias-litoral-paulista-2026.html",
+      "title": "Citações NAP para SEO local no litoral paulista: guia para imobiliárias 2026",
+      "h1": "Citações NAP para SEO local no litoral paulista: guia para imobiliárias 2026",
+      "path": "blog/citacoes-nap-seo-local-imobiliarias-litoral-paulista-2026.html",
+      "url": "https://praia.digital/blog/citacoes-nap-seo-local-imobiliarias-litoral-paulista-2026.html",
+      "source": "editorial_seo_local",
+      "verified": true,
+      "in_sitemap": true
     }
   ],
   "sitemap_plan": {
