@@ -13350,3 +13350,15 @@ Atualizado em: 2026-07-14
 | Larissa Gomes | Riviera Exclusive | email | parceria | 2026-08-14 | 2026-08-17 | 2026-08-21 |
 | Luciana Dias | Caiçara Imóveis | email | parceria | 2026-08-14 | 2026-08-17 | 2026-08-21 |
 | Marcelo Lima | Caiçara Conectada | email | parceria | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+
+- 2026-08-14 12:48: Aquisição 7 dias — preparação Dia 2
+| Amanda Souza | Peruíbe Norte | email | fotografia/edição | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+| Fábio Costa | Gonzaga Norte | email | fotografia/edição | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+| Camila Ribeiro | Gonzaga Norte | email | fotografia/edição | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+| Juliano Mendes | Santos Vision | email | fotografia/edição | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+| Paulo Mendes | Bertioga Platinum | email | fotografia/edição | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+| Débora Almeida | Bertioga Elite | email | fotografia/edição | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+| Monique Rocha | Bertioga Prime | email | fotografia/edição | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+| Patrícia Barros | Mar & Sol Praia | email | fotografia/edição | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+| Fernanda Costa | Peruíbe Sol | email | fotografia/edição | 2026-08-14 | 2026-08-17 | 2026-08-21 |
+| Marina Rocha | Ponta da Praia | email | fotografia/edição | 2026-08-14 | 2026-08-17 | 2026-08-21 |
