@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-14T20:16:50.872944+00:00",
-  "status": "Batch Jurídico 2026-08-14 — 5 artigos adicionados",
+  "generated_at": "2026-08-14T20:25:33.394036+00:00",
+  "status": "Batch Sustentabilidade 2026-08-14 — 5 artigos adicionados",
   "registry_context": {
     "purpose": "Registro editorial do subconjunto verificado de artigos publicados",
     "total_published_definition": "Quantidade de artigos com evidência física verificada (HTML existente, publicado, registrado).",
@@ -20274,6 +20274,56 @@
       "path": "blog/direitos-deveres-aluguel-temporada-litoral-2026.html",
       "url": "https://praia.digital/blog/direitos-deveres-aluguel-temporada-litoral-2026.html",
       "source": "editorial_juridico",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "energia-renovavel-imoveis-litoral-passo-passo-2026.html",
+      "title": "Energia renovável em imóveis no litoral: passo a passo prático 2026",
+      "h1": "Energia renovável em imóveis no litoral: passo a passo prático 2026",
+      "path": "blog/energia-renovavel-imoveis-litoral-passo-passo-2026.html",
+      "url": "https://praia.digital/blog/energia-renovavel-imoveis-litoral-passo-passo-2026.html",
+      "source": "editorial_sustentabilidade",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "economia-agua-imoveis-litoral-pratico-2026.html",
+      "title": "Economia de água em imóveis no litoral: guia prático 2026",
+      "h1": "Economia de água em imóveis no litoral: guia prático 2026",
+      "path": "blog/economia-agua-imoveis-litoral-pratico-2026.html",
+      "url": "https://praia.digital/blog/economia-agua-imoveis-litoral-pratico-2026.html",
+      "source": "editorial_sustentabilidade",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "construcao-sustentavel-imoveis-litoral-guia-2026.html",
+      "title": "Construção sustentável no litoral: guia prático para imóveis 2026",
+      "h1": "Construção sustentável no litoral: guia prático para imóveis 2026",
+      "path": "blog/construcao-sustentavel-imoveis-litoral-guia-2026.html",
+      "url": "https://praia.digital/blog/construcao-sustentavel-imoveis-litoral-guia-2026.html",
+      "source": "editorial_sustentabilidade",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "eficiencia-energetica-imoveis-litoral-reduzir-custo-2026.html",
+      "title": "Eficiência energética em imóveis no litoral: reduzir custo com práticas simples 2026",
+      "h1": "Eficiência energética em imóveis no litoral: reduzir custo com práticas simples 2026",
+      "path": "blog/eficiencia-energetica-imoveis-litoral-reduzir-custo-2026.html",
+      "url": "https://praia.digital/blog/eficiencia-energetica-imoveis-litoral-reduzir-custo-2026.html",
+      "source": "editorial_sustentabilidade",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "pegada-ecologica-imoveis-litoral-medir-reduzir-2026.html",
+      "title": "Pegada ecológica em imóveis no litoral: como medir e reduzir 2026",
+      "h1": "Pegada ecológica em imóveis no litoral: como medir e reduzir 2026",
+      "path": "blog/pegada-ecologica-imoveis-litoral-medir-reduzir-2026.html",
+      "url": "https://praia.digital/blog/pegada-ecologica-imoveis-litoral-medir-reduzir-2026.html",
+      "source": "editorial_sustentabilidade",
       "verified": true,
       "in_sitemap": true
     }
