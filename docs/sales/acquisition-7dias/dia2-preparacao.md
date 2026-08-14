@@ -5,55 +5,31 @@ Regra: envio humano, sem automação externa
 
 ---
 
-## 1. Amanda Souza | Peruíbe Norte
-- Canal: e-mail
-- Segmento: Fotografia/Edição
-- Mensagem: “Olá. Vi o trabalho da Peruíbe Norte e acredito que apresentação profissional pode aumentar valor percebido. Temos fotografia + edição com entrega rápida. Posso mostrar 1 exemplo?”
+## Status: BLOQUEADO — Aguardando contato oficial confirmado
 
-## 2. Fábio Costa | Gonzaga Norte
-- Canal: e-mail
-- Segmento: Fotografia/Edição
-- Mensagem: “Olá. Acompanho imóveis na região e notei que alguns anúncios podem apresentar o imóvel com mais profissionalismo. Trabalhamos com fotografia e edição. Posso enviar 1 exemplo prático?”
+Motivo: tentativas de verificação pública não retornaram canais confirmados. Não seguir com e-mails “às cegas” sem site/contato oficial validado.
 
-## 3. Camila Ribeiro | Gonzaga Norte
-- Canal: e-mail
-- Segmento: Fotografia/Edição
-- Mensagem: “Olá. Profissionalizar a apresentação dos anúncios costuma aumentar cliques e contatos. Temos pacote de fotografia + edição. Posso mostrar como funciona em 1 anúncio?”
+Ação humana necessária:
+- Confirmar 1 canal público oficial por prospect abaixo
+- A partir dessa confirmação, eu preparo:
+  - CSV de follow-up
+  - CSV de envio human-approved
+  - remoção do bloqueio desta preparação
 
-## 4. Juliano Mendes | Santos Vision
-- Canal: e-mail
-- Segmento: Fotografia/Edição
-- Mensagem: “Olá. Santos tem imóveis com ótimo potencial que podem se beneficiar de fotografia profissional e anúncios otimizados. Posso fazer uma análise gratuita de 1 anúncio?”
+---
 
-## 5. Paulo Mendes | Bertioga Platinum
-- Canal: e-mail
-- Segmento: Fotografia/Edição
-- Mensagem: “Olá. Em Bertioga, a apresentação do anúncio faz diferença na conversão. Trabalhamos com fotografia + edição pronta para publicar. Posso mostrar 1 exemplo?”
+## Prospects em espera
 
-## 6. Débora Almeida | Bertioga Elite
-- Canal: e-mail
-- Segmento: Fotografia/Edição
-- Mensagem: “Olá. Perfis de alto padrão na Riviera/Bertioga combinam com apresentação visual mais profissional. Temos pacote fotografia + edição. Posso enviar um exemplo?”
-
-## 7. Monique Rocha | Bertioga Prime
-- Canal: e-mail
-- Segmento: Fotografia/Edição
-- Mensagem: “Olá. Bertioga Prime pode ganhar destaque com anúncios mais profissionais. Trabalhamos com fotografia + edição e entrega rápida. Posso mostrar 1 caso prático?”
-
-## 8. Patrícia Barros | Mar & Sol Praia
-- Canal: e-mail
-- Segmento: Fotografia/Edição
-- Mensagem: “Olá. Temporada no litoral depende de primeira impressão forte. Fazemos fotografia profissional e edição de anúncios. Posso enviar 1 exemplo before/after?”
-
-## 9. Fernanda Costa | Peruíbe Sol
-- Canal: e-mail
-- Segmento: Fotografia/Edição
-- Mensagem: “Olá. Peruíbe Sol pode melhorar muito a performance dos anúncios com fotografia e copy profissional. Temos pacote pronto. Posso mostrar 1 exemplo?”
-
-## 10. Marina Rocha | Ponta da Praia
-- Canal: e-mail
-- Segmento: Fotografia/Edição
-- Mensagem: “Olá. Ponta da Praia tem imóveis que podem apresentar melhor qualidade visual nos portais. Trabalhamos com fotografia + edição. Posso enviar 1 exemplo prático?”
+1. Amanda Souza | Peruíbe Norte
+2. Fábio Costa | Gonzaga Norte
+3. Camila Ribeiro | Gonzaga Norte
+4. Juliano Mendes | Santos Vision
+5. Paulo Mendes | Bertioga Platinum
+6. Débora Almeida | Bertioga Elite
+7. Monique Rocha | Bertioga Prime
+8. Patrícia Barros | Mar & Sol Praia
+9. Fernanda Costa | Peruíbe Sol
+10. Marina Rocha | Ponta da Praia
 
 ---
 
