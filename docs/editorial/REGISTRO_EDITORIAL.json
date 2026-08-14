@@ -20836,6 +20836,46 @@
       "status": "published",
       "published_at": "2026-08-14",
       "batch": "Casos de Sucesso 2"
+    },
+    {
+      "slug": "parceria-construtoras-imobiliarias-litoral-2026",
+      "title": "Parceria com construtoras para imobiliárias no litoral 2026",
+      "cluster": "Parcerias",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Parcerias 2"
+    },
+    {
+      "slug": "parceria-administradores-condominios-litoral-2026",
+      "title": "Parceria com administradores de condomínio para imobiliárias no litoral 2026",
+      "cluster": "Parcerias",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Parcerias 2"
+    },
+    {
+      "slug": "parceria-empresas-turismo-imobiliarias-litoral-2026",
+      "title": "Parceria com empresas de turismo para imobiliárias no litoral 2026",
+      "cluster": "Parcerias",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Parcerias 2"
+    },
+    {
+      "slug": "programa-indicacao-imobiliarias-litoral-2026",
+      "title": "Programa de indicação para imobiliárias no litoral 2026",
+      "cluster": "Parcerias",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Parcerias 2"
+    },
+    {
+      "slug": "medir-resultados-parcerias-imobiliarias-litoral-2026-v2",
+      "title": "Como medir resultados de parcerias para imobiliárias no litoral 2026",
+      "cluster": "Parcerias",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Parcerias 2"
     }
   ],
   "sitemap_plan": {
@@ -33014,7 +33054,7 @@
       "in_sitemap": true
     }
   ],
-  "total_published": 70,
+  "total_published": 75,
   "audit_correction_note": "total_published corrigido de 30 para 25 com base em evidências. 5 artigos não tinham correspondência verificável.",
-  "last_updated": "2026-08-14T22:01:53.518703+00:00"
+  "last_updated": "2026-08-14T22:12:03.748654+00:00"
 }
