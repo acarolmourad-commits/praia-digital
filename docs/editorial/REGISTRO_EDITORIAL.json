@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-14T20:25:33.394036+00:00",
-  "status": "Batch Sustentabilidade 2026-08-14 — 5 artigos adicionados",
+  "generated_at": "2026-08-14T20:33:43.528481+00:00",
+  "status": "Batch Gestão 2026-08-14 — 5 artigos adicionados",
   "registry_context": {
     "purpose": "Registro editorial do subconjunto verificado de artigos publicados",
     "total_published_definition": "Quantidade de artigos com evidência física verificada (HTML existente, publicado, registrado).",
@@ -20324,6 +20324,56 @@
       "path": "blog/pegada-ecologica-imoveis-litoral-medir-reduzir-2026.html",
       "url": "https://praia.digital/blog/pegada-ecologica-imoveis-litoral-medir-reduzir-2026.html",
       "source": "editorial_sustentabilidade",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "gestao-imobiliaria-litoral-equipe-processos-2026.html",
+      "title": "Gestão para imobiliárias no litoral: equipe, processos e resultados 2026",
+      "h1": "Gestão para imobiliárias no litoral: equipe, processos e resultados 2026",
+      "path": "blog/gestao-imobiliaria-litoral-equipe-processos-2026.html",
+      "url": "https://praia.digital/blog/gestao-imobiliaria-litoral-equipe-processos-2026.html",
+      "source": "editorial_gestao",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "metas-okr-imobiliarias-litoral-pratico-2026.html",
+      "title": "Metas e OKR para imobiliárias no litoral: guia prático 2026",
+      "h1": "Metas e OKR para imobiliárias no litoral: guia prático 2026",
+      "path": "blog/metas-okr-imobiliarias-litoral-pratico-2026.html",
+      "url": "https://praia.digital/blog/metas-okr-imobiliarias-litoral-pratico-2026.html",
+      "source": "editorial_gestao",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "onboarding-corretores-imobiliarias-litoral-2026.html",
+      "title": "Onboarding de corretores em imobiliárias no litoral: roteiro prático 2026",
+      "h1": "Onboarding de corretores em imobiliárias no litoral: roteiro prático 2026",
+      "path": "blog/onboarding-corretores-imobiliarias-litoral-2026.html",
+      "url": "https://praia.digital/blog/onboarding-corretores-imobiliarias-litoral-2026.html",
+      "source": "editorial_gestao",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "clima-organizacional-imobiliarias-litoral-2026.html",
+      "title": "Clima organizacional em imobiliárias no litoral: como melhorar 2026",
+      "h1": "Clima organizacional em imobiliárias no litoral: como melhorar 2026",
+      "path": "blog/clima-organizacional-imobiliarias-litoral-2026.html",
+      "url": "https://praia.digital/blog/clima-organizacional-imobiliarias-litoral-2026.html",
+      "source": "editorial_gestao",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "retencao-talentos-imobiliarias-litoral-2026.html",
+      "title": "Retenção de talentos em imobiliárias no litoral: guia prático 2026",
+      "h1": "Retenção de talentos em imobiliárias no litoral: guia prático 2026",
+      "path": "blog/retencao-talentos-imobiliarias-litoral-2026.html",
+      "url": "https://praia.digital/blog/retencao-talentos-imobiliarias-litoral-2026.html",
+      "source": "editorial_gestao",
       "verified": true,
       "in_sitemap": true
     }
