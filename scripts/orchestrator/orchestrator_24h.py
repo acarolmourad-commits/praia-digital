@@ -21,6 +21,7 @@ sys.path.insert(0, str((REPO / 'scripts' / 'orchestrator' / 'discovery').resolve
 sys.path.insert(0, str((REPO / 'scripts' / 'orchestrator' / 'decision').resolve()))
 sys.path.insert(0, str((REPO / 'scripts' / 'orchestrator' / 'pipeline').resolve()))
 sys.path.insert(0, str((REPO / 'scripts' / 'orchestrator' / 'maintenance').resolve()))
+sys.path.insert(0, str((REPO / 'scripts' / 'orchestrator' / 'pipeline').resolve()))
 
 HUMAN_GATES = {
     'batch_147', 'next_queue', 'large_expansion', 'structural_change',
@@ -295,14 +296,13 @@ def run(context: dict = {}) -> dict:
     registry = json.loads(REGISTRY.read_text(encoding='utf-8'))
     hour_key = datetime.now(timezone.utc).strftime('%Y%m%d%H')
     
-    if 'orchestrator_24h' in registry:
-        cycles = registry['orchestrator_24h'].get('cycles', [])
-        if cycles and cycles[-1].get('date', '').startswith(hour_key):
-            return {
-                'status': 'ok',
-                'message': f'Ciclo já executado para {hour_key} (idempotente)',
-                'skipped': True,
-            }
+    executed_actions = registry.get('executed_actions', [])
+    if f'cycle_{hour_key}' in executed_actions:
+        return {
+            'status': 'ok',
+            'message': f'Ciclo já executado para {hour_key} (idempotente)',
+            'skipped': True,
+        }
     
     # Fase 1: Detectar
     detected = detect(context)
