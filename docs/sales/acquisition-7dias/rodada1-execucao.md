@@ -1,6 +1,6 @@
 # Execução — Rodada 1
-Prospects autorizados: Riviera Temporada, CASA Home Management
-Data autorização: 2026-08-14
+Data: 2026-08-14
+Status: EM ANDAMENTO
 Regra: envio humano, sem automação externa
 
 ---
@@ -11,7 +11,7 @@ Prospect: Riviera Temporada (João Ranzani)
 Cidade/região: Bertioga / Riviera de São Lourenço
 Segmento: Administração de temporada
 Score: 76
-Canal público: 
+Canal público:
 - E-mail: contato@rivieratemporada.com.br
 - WhatsApp: (11) 98426-2319
 - Site: https://rivieratemporada.com.br/
@@ -26,14 +26,21 @@ Se quiser, faço uma análise gratuita de 1 anúncio e mostro como melhorar a ap
 Instrução de envio:
 - Enviar via WhatsApp ou e-mail público, conforme disponibilidade do humano.
 - Não enviar em massa.
-- Registrar data/hora do envio.
+- Registrar data/hora do envio abaixo.
 
 Follow-up aprovado:
 - 24h sem resposta: enviar exemplo genérico de before/after de título+foto principal.
 - Se responder: pedir link do anúncio para diagnóstico gratuito.
 - Máximo de 3 follow-ups.
 
-Status inicial: AGUARDANDO_ENVIO_HUMANO
+Status: AGUARDANDO_ENVIO_HUMANO
+
+### Registro de envio
+- Data/hora envio: _______________
+- Canal usado: _______________
+- Status: _______________
+- Resposta: _______________
+- Próximo follow-up: _______________
 
 ---
 
@@ -57,37 +64,25 @@ Posso mostrar um exemplo prático em 1 anúncio?”
 Instrução de envio:
 - Enviar via e-mail ou telefone/WhatsApp, conforme disponibilidade do humano.
 - Não enviar em massa.
-- Registrar data/hora do envio.
+- Registrar data/hora do envio abaixo.
 
 Follow-up aprovado:
 - 24h sem resposta: enviar exemplo genérico de copy+estrutura de anúncio.
 - Se responder: pedir link de 1 anúncio.
 - Máximo de 3 follow-ups.
 
-Status inicial: AGUARDANDO_ENVIO_HUMANO
+Status: AGUARDANDO_ENVIO_HUMANO
+
+### Registro de envio
+- Data/hora envio: _______________
+- Canal usado: _______________
+- Status: _______________
+- Resposta: _______________
+- Próximo follow-up: _______________
 
 ---
 
-## 3. Registro imediato obrigatório
-
-Após cada abordagem, registrar em docs/sales/acquisition-7dias/prospects-dia1.csv:
-
-- data/hora
-- prospect
-- canal
-- mensagem enviada
-- status
-- resposta, quando houver
-- próximo follow-up
-- observações
-
-Se houver resposta positiva:
-- WHATSAPP_HANDOFF = TRUE
-- registrar contexto completo para atendimento humano
-
----
-
-## 4. Follow-ups globais
+## 3. Follow-ups globais
 
 Follow-up 1 — 24h sem resposta:
 “Oi, só passando aqui rapidinho. Conseguiu ver a mensagem sobre a análise do anúncio? Sem pressa, quando quiser é só enviar o link.”
@@ -102,6 +97,25 @@ Regras:
 - Máximo de 3 follow-ups por prospect
 - Não insistir após o segundo “não” ou “agora não”
 - Sempre oferecer valor antes de vender
+- Se lead pedir para parar, remover da lista imediatamente
+
+---
+
+## 4. Registro obrigatório
+
+Após cada abordagem, registrar em docs/sales/acquisition-7dias/prospects-dia1.csv:
+- data/hora
+- prospect
+- canal
+- mensagem enviada
+- status
+- resposta, quando houver
+- próximo follow-up
+- observações
+
+Se houver resposta positiva:
+- WHATSAPP_HANDOFF = TRUE
+- registrar contexto completo para atendimento humano
 
 ---
 
