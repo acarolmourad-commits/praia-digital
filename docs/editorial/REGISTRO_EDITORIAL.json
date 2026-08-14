@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-14T19:43:01.004219+00:00",
-  "status": "Batch Marketing Digital 2026-08-14 — 5 artigos adicionados",
+  "generated_at": "2026-08-14T19:53:30.366978+00:00",
+  "status": "Batch Parcerias 2026-08-14 — 5 artigos adicionados",
   "registry_context": {
     "purpose": "Registro editorial do subconjunto verificado de artigos publicados",
     "total_published_definition": "Quantidade de artigos com evidência física verificada (HTML existente, publicado, registrado).",
@@ -20124,6 +20124,56 @@
       "path": "blog/email-marketing-imobiliarias-litoral-relacionamento-2026.html",
       "url": "https://praia.digital/blog/email-marketing-imobiliarias-litoral-relacionamento-2026.html",
       "source": "editorial_marketing_digital",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "networking-corretores-litoral-parcerias-indicacoes-2026.html",
+      "title": "Networking para corretores no litoral: como construir parcerias que geram indicações 2026",
+      "h1": "Networking para corretores no litoral: como construir parcerias que geram indicações 2026",
+      "path": "blog/networking-corretores-litoral-parcerias-indicacoes-2026.html",
+      "url": "https://praia.digital/blog/networking-corretores-litoral-parcerias-indicacoes-2026.html",
+      "source": "editorial_parcerias",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "indicacao-proprietarios-litoral-captacao-imoveis-2026.html",
+      "title": "Indicação de proprietários no litoral: como captar imóveis sem abordagem fria 2026",
+      "h1": "Indicação de proprietários no litoral: como captar imóveis sem abordagem fria 2026",
+      "path": "blog/indicacao-proprietarios-litoral-captacao-imoveis-2026.html",
+      "url": "https://praia.digital/blog/indicacao-proprietarios-litoral-captacao-imoveis-2026.html",
+      "source": "editorial_parcerias",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "parceria-construtora-imobiliarias-litoral-lancamentos-2026.html",
+      "title": "Parceria com construtoras no litoral: como captar lançamentos e imóveis na planta 2026",
+      "h1": "Parceria com construtoras no litoral: como captar lançamentos e imóveis na planta 2026",
+      "path": "blog/parceria-construtora-imobiliarias-litoral-lancamentos-2026.html",
+      "url": "https://praia.digital/blog/parceria-construtora-imobiliarias-litoral-lancamentos-2026.html",
+      "source": "editorial_parcerias",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "parceria-administradores-condominios-imobiliarias-litoral-2026.html",
+      "title": "Parceria com administradores de condomínio no litoral: captação e relacionamento 2026",
+      "h1": "Parceria com administradores de condomínio no litoral: captação e relacionamento 2026",
+      "path": "blog/parceria-administradores-condominios-imobiliarias-litoral-2026.html",
+      "url": "https://praia.digital/blog/parceria-administradores-condominios-imobiliarias-litoral-2026.html",
+      "source": "editorial_parcerias",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "medir-resultados-parcerias-imobiliarias-litoral-2026.html",
+      "title": "Como medir resultados de parcerias imobiliárias no litoral: indicadores simples 2026",
+      "h1": "Como medir resultados de parcerias imobiliárias no litoral: indicadores simples 2026",
+      "path": "blog/medir-resultados-parcerias-imobiliarias-litoral-2026.html",
+      "url": "https://praia.digital/blog/medir-resultados-parcerias-imobiliarias-litoral-2026.html",
+      "source": "editorial_parcerias",
       "verified": true,
       "in_sitemap": true
     }
