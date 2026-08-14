@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aquisição 7 dias — Status (Praia Digital)</title>
+<style>
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#f8fafc;color:#0f172a;padding:24px}
+  .wrap{max-width:1000px;margin:0 auto}
+  .card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:20px;margin:14px 0;box-shadow:0 20px 35px rgba(0,0,0,.08)}
+  .muted{color:#475569;font-size:13px}
+  .tag{display:inline-block;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:700;margin:4px 4px 0 0}
+  .tag.approved{background:#dcfce7;color:#14532d}
+  .tag.waiting{background:#fef9c3;color:#713f12}
+  .tag.discarded{background:#fee2e2;color:#450a0a}
+  .tag.ready{background:#dbeafe;color:#1e3a8a}
+  .title{font-size:20px;font-weight:900;margin:6px 0}
+  table{width:100%;border-collapse:collapse;margin-top:10px}
+  th,td{text-align:left;padding:10px;border-bottom:1px solid #e5e7eb;font-size:14px}
+  th{color:#475569;font-weight:600;font-size:12px;text-transform:uppercase}
+  .num{font-weight:700;color:#0f172a}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <div class="title">Aquisição 7 dias — Status</div>
+    <p class="muted">Frente: fotografia + edição | Contato externo: só humano | Última atualização: 14/08/2026</p>
+  </div>
+
+  <div class="card">
+    <div class="title">Visão geral</div>
+    <table>
+      <tr><th>Métrica</th><th>Valor</th></tr>
+      <tr><td>Prospects analisados</td><td class="num">15</td></tr>
+      <tr><td>Score ≥ 60</td><td class="num">9</td></tr>
+      <tr><td>Aprovados para abordagem</td><td class="num">2</td></tr>
+      <tr><td>Aguardando ajuste/aprovação</td><td class="num">2</td></tr>
+      <tr><td>Descartados</td><td class="num">1</td></tr>
+      <tr><td>Pendentes de verificação de contato</td><td class="num">10</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="title">Rodada 1 — Prontos para envio humano</div>
+    <table>
+      <tr><th>Prospect</th><th>Cidade</th><th>Canal</th><th>Serviço</th><th>Status</th></tr>
+      <tr>
+        <td>Riviera Temporada</td>
+        <td>Bertioga</td>
+        <td>WhatsApp / e-mail</td>
+        <td>Fotografia + edição</td>
+        <td><span class="tag approved">Aprovado</span></td>
+      </tr>
+      <tr>
+        <td>CASA Home Management</td>
+        <td>São Sebastião</td>
+        <td>E-mail / telefone</td>
+        <td>Edição + combo</td>
+        <td><span class="tag approved">Aprovado</span></td>
+      </tr>
+    </table>
+    <p class="muted" style="margin-top:10px">Ação: enviar manualmente e registrar resposta em prospects-dia1.csv.</p>
+  </div>
+
+  <div class="card">
+    <div class="title">Pendente aprovação humana</div>
+    <table>
+      <tr><th>Prospect</th><th>Cidade</th><th>Serviço</th><th>Status</th></tr>
+      <tr>
+        <td>Rivino Invest</td>
+        <td>Bertioga</td>
+        <td>Edição + combo + recorrência</td>
+        <td><span class="tag waiting">Aguardando aprovação</span></td>
+      </tr>
+      <tr>
+        <td>Quinta Prime</td>
+        <td>Bertioga</td>
+        <td>Edição + combo + recorrência</td>
+        <td><span class="tag waiting">Aguardando aprovação</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="title">Dia 2 — Aguardando verificação de contato</div>
+    <table>
+      <tr><th>#</th><th>Prospect</th><th>Cidade</th><th>Serviço</th></tr>
+      <tr><td>1</td><td>Amanda Souza</td><td>Peruíbe</td><td>Fotografia + edição</td></tr>
+      <tr><td>2</td><td>Fábio Costa</td><td>Santos</td><td>Fotografia + edição</td></tr>
+      <tr><td>3</td><td>Camila Ribeiro</td><td>Santos</td><td>Fotografia + edição</td></tr>
+      <tr><td>4</td><td>Juliano Mendes</td><td>Santos</td><td>Fotografia + edição</td></tr>
+      <tr><td>5</td><td>Paulo Mendes</td><td>Bertioga</td><td>Fotografia + edição</td></tr>
+      <tr><td>6</td><td>Débora Almeida</td><td>Bertioga</td><td>Fotografia + edição</td></tr>
+      <tr><td>7</td><td>Monique Rocha</td><td>Bertioga</td><td>Fotografia + edição</td></tr>
+      <tr><td>8</td><td>Patrícia Barros</td><td>Bertioga</td><td>Fotografia + edição</td></tr>
+      <tr><td>9</td><td>Fernanda Costa</td><td>Peruíbe</td><td>Fotografia + edição</td></tr>
+      <tr><td>10</td><td>Marina Rocha</td><td>Santos</td><td>Fotografia + edição</td></tr>
+    </table>
+    <p class="muted" style="margin-top:10px">Próximo: confirmar 1 canal público oficial por prospect para gerar o CSV de follow-up.</p>
+  </div>
+
+  <div class="card">
+    <div class="title">Arquivos da frente</div>
+    <p class="muted">- docs/sales/acquisition-7dias/prospects-dia1.csv</p>
+    <p class="muted">- docs/sales/acquisition-7dias/rodada1-execucao.md</p>
+    <p class="muted">- docs/sales/acquisition-7dias/rodada1-envio.html</p>
+    <p class="muted">- docs/sales/acquisition-7dias/contatos-dia1.html</p>
+    <p class="muted">- docs/sales/acquisition-7dias/dia2-preparacao.md</p>
+    <p class="muted">- docs/sales/acquisition-7dias/fila-aprovacao.csv</p>
+    <p class="muted">- docs/sales/acquisition-7dias/roteiro-abordagem.md</p>
+    <p class="muted">- docs/sales/acquisition-7dias/roteiro-followup.md</p>
+  </div>
+</div>
+</body>
+</html>
