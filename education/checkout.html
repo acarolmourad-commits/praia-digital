@@ -104,7 +104,7 @@
       let courseId = null;
       if (slug) {
         try {
-          const courseResp = await fetch('/academy/courses/' + encodeURIComponent(slug));
+          const courseResp = await fetch('/courses/' + encodeURIComponent(slug));
           if (courseResp.ok) {
             const courseData = await courseResp.json();
             courseId = courseData.id;
