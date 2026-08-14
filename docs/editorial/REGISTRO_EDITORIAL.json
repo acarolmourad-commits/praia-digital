@@ -21036,6 +21036,46 @@
       "status": "published",
       "published_at": "2026-08-14",
       "batch": "Marketing Digital 3"
+    },
+    {
+      "slug": "schema-realestatelisting-imoveis-litoral-2026",
+      "title": "Schema.org RealEstateListing para imóveis no litoral 2026",
+      "cluster": "SEO Local",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "SEO Local 3"
+    },
+    {
+      "slug": "core-web-vitals-imobiliarias-litoral-seo-2026",
+      "title": "Core Web Vitals para sites de imobiliárias no litoral 2026",
+      "cluster": "SEO Local",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "SEO Local 3"
+    },
+    {
+      "slug": "seo-local-ilhas-areas-remotas-litoral-2026",
+      "title": "SEO local para imobiliárias em ilhas e áreas remotas do litoral 2026",
+      "cluster": "SEO Local",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "SEO Local 3"
+    },
+    {
+      "slug": "conteudo-duplicado-imoveis-seo-local-litoral-2026",
+      "title": "Conteúdo duplicado de imóveis no site: como lidar no SEO local 2026",
+      "cluster": "SEO Local",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "SEO Local 3"
+    },
+    {
+      "slug": "seo-construtoras-incorporadoras-litoral-paulista-2026",
+      "title": "SEO para construtoras e incorporadoras no litoral paulista 2026",
+      "cluster": "SEO Local",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "SEO Local 3"
     }
   ],
   "sitemap_plan": {
@@ -33214,7 +33254,7 @@
       "in_sitemap": true
     }
   ],
-  "total_published": 95,
+  "total_published": 100,
   "audit_correction_note": "total_published corrigido de 30 para 25 com base em evidências. 5 artigos não tinham correspondência verificável.",
-  "last_updated": "2026-08-14T23:16:10.872344+00:00"
+  "last_updated": "2026-08-14T23:18:27.269113+00:00"
 }
