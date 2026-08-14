@@ -81556,155 +81556,540 @@
         "detected": 0,
         "produced": 4,
         "published": 4,
-        "connected": 4
+        "connected": 4,
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=4, published=4, connected=4, evidence=None. Corrigido em 2026-08-14."
       },
       {
         "date": "2026-08-13T22:23:03.131873+00:00",
         "detected": 0,
         "produced": 3,
         "published": 3,
-        "connected": 3
+        "connected": 3,
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=3, published=3, connected=3, evidence=None. Corrigido em 2026-08-14."
       },
       {
         "date": "2026-08-13T22:37:08.777537+00:00",
         "detected": 0,
         "produced": 3,
         "published": 3,
-        "connected": 3
+        "connected": 3,
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=3, published=3, connected=3, evidence=None. Corrigido em 2026-08-14."
       },
       {
         "date": "2026-08-13T22:55:09.544315+00:00",
         "detected": 0,
         "produced": 3,
         "published": 3,
-        "connected": 3
+        "connected": 3,
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=3, published=3, connected=3, evidence=None. Corrigido em 2026-08-14."
       },
       {
         "date": "2026-08-13T23:01:05.811147+00:00",
         "detected": 0,
         "produced": 4,
         "published": 4,
-        "connected": 4
+        "connected": 4,
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=4, published=4, connected=4, evidence=None. Corrigido em 2026-08-14."
       },
       {
         "date": "2026-08-13T23:19:19.667212+00:00",
         "detected": 0,
         "produced": 3,
         "published": 3,
-        "connected": 3
+        "connected": 3,
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=3, published=3, connected=3, evidence=None. Corrigido em 2026-08-14."
       },
       {
         "date": "2026-08-13T23:40:08.752891+00:00",
         "detected": 0,
         "produced": 3,
         "published": 3,
-        "connected": 3
+        "connected": 3,
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=3, published=3, connected=3, evidence=None. Corrigido em 2026-08-14."
       },
       {
         "date": "2026-08-14T00:01:02.469678+00:00",
         "detected": 0,
         "produced": 3,
         "published": 3,
-        "connected": 3
+        "connected": 3,
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=3, published=3, connected=3, evidence=None. Corrigido em 2026-08-14."
       },
       {
         "date": "2026-08-14T00:07:29.198356+00:00",
         "detected": 0,
         "produced": 3,
         "published": 3,
-        "connected": 3
+        "connected": 3,
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=3, published=3, connected=3, evidence=None. Corrigido em 2026-08-14."
       },
       {
         "date": "2026-08-14T00:29:55.990141+00:00",
         "detected": 0,
         "produced": 3,
         "published": 3,
-        "connected": 3
+        "connected": 3,
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=3, published=3, connected=3, evidence=None. Corrigido em 2026-08-14."
       },
       {
         "date": "2026-08-14T00:44:57.799080+00:00",
         "detected": 0,
         "produced": 3,
         "published": 3,
-        "connected": 3
+        "connected": 3,
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=3, published=3, connected=3, evidence=None. Corrigido em 2026-08-14."
       },
       {
         "date": "2026-08-14T00:45:20.209362+00:00",
         "detected": 0,
         "produced": 4,
         "published": 4,
-        "connected": 4
+        "connected": 4,
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=4, published=4, connected=4, evidence=None. Corrigido em 2026-08-14."
       },
       {
         "date": "2026-08-14T01:00:00.320018+00:00",
         "detected": 0,
         "produced": 3,
         "published": 3,
-        "connected": 3
+        "connected": 3,
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=3, published=3, connected=3, evidence=None. Corrigido em 2026-08-14."
       },
       {
         "date": "2026-08-14T01:01:11.253441+00:00",
         "detected": 0,
         "produced": 4,
         "published": 4,
-        "connected": 4
+        "connected": 4,
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=4, published=4, connected=4, evidence=None. Corrigido em 2026-08-14."
       },
       {
         "date": "2026-08-14T01:14:58.977889+00:00",
         "detected": 0,
         "produced": 3,
         "published": 3,
-        "connected": 3
+        "connected": 3,
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=3, published=3, connected=3, evidence=None. Corrigido em 2026-08-14."
       },
       {
         "date": "2026-08-14T01:22:27.770405+00:00",
         "detected": 0,
         "produced": 3,
         "published": 3,
-        "connected": 3
+        "connected": 3,
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=3, published=3, connected=3, evidence=None. Corrigido em 2026-08-14."
       },
       {
         "date": "2026-08-14T01:30:53.476658+00:00",
         "detected": 0,
         "produced": 3,
         "published": 3,
-        "connected": 3
+        "connected": 3,
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=3, published=3, connected=3, evidence=None. Corrigido em 2026-08-14."
       },
       {
         "date": "2026-08-14T04:05:17.095960+00:00",
         "detected": 0,
         "produced": 3,
         "published": 3,
-        "connected": 3
+        "connected": 3,
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=3, published=3, connected=3, evidence=None. Corrigido em 2026-08-14."
       },
       {
         "date": "2026-08-14T05:01:05.597028+00:00",
         "detected": 0,
         "produced": 3,
         "published": 3,
-        "connected": 3
+        "connected": 3,
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=3, published=3, connected=3, evidence=None. Corrigido em 2026-08-14."
       },
       {
         "date": "2026-08-14T05:05:58.374416+00:00",
         "detected": 0,
         "produced": 3,
         "published": 3,
-        "connected": 3
+        "connected": 3,
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=3, published=3, connected=3, evidence=None. Corrigido em 2026-08-14."
       },
       {
         "date": "2026-08-14T06:00:42.453920+00:00",
         "detected": 0,
         "produced": 3,
         "published": 3,
-        "connected": 3
+        "connected": 3,
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=3, published=3, connected=3, evidence=None. Corrigido em 2026-08-14."
+      },
+      {
+        "date": "2026-08-14T06:32:39.946924+00:00",
+        "detected": 0,
+        "produced": 1,
+        "published": 1,
+        "connected": 0,
+        "failed_production": 0,
+        "evidence": [
+          {
+            "slug": "not-cia-teste-orquestrador",
+            "title": "Notícia teste orquestrador",
+            "html_path": "C:\\Users\\Carolina\\praia-digital\\noticias\\not-cia-teste-orquestrador.html",
+            "url": "https://praia.digital/noticias/not-cia-teste-orquestrador.html",
+            "produced": true,
+            "published": true,
+            "connected": false,
+            "links_added": 0,
+            "linked_slugs": [],
+            "published_at": "2026-08-14T06:32:39.369924+00:00",
+            "error": "file_removed_post_test",
+            "file_removed": true,
+            "removal_reason": "Arquivo de teste removido em 2026-08-14 durante auditoria."
+          }
+        ],
+        "audit": "verified",
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=1, published=1, connected=0, evidence=[{'slug': 'not-cia-teste-orquestrador', 'title': 'Notícia teste orquestrador', 'html_path': 'C:\\\\Users\\\\Carolina\\\\praia-digital\\\\noticias\\\\not-cia-teste-orquestrador.html', 'url': 'https://praia.digital/noticias/not-cia-teste-orquestrador.html', 'produced': True, 'published': True, 'connected': False, 'links_added': 0, 'linked_slugs': [], 'published_at': '2026-08-14T06:32:39.369924+00:00', 'error': 'insufficient_internal_links'}]. Corrigido em 2026-08-14."
+      },
+      {
+        "date": "2026-08-14T06:32:54.479841+00:00",
+        "detected": 0,
+        "produced": 1,
+        "published": 1,
+        "connected": 0,
+        "failed_production": 0,
+        "evidence": [
+          {
+            "slug": "not-cia-falha-teste",
+            "title": "Notícia falha teste",
+            "html_path": "C:\\Users\\Carolina\\praia-digital\\noticias\\not-cia-falha-teste.html",
+            "url": "https://praia.digital/noticias/not-cia-falha-teste.html",
+            "produced": true,
+            "published": true,
+            "connected": false,
+            "links_added": 0,
+            "linked_slugs": [],
+            "published_at": "2026-08-14T06:32:53.935877+00:00",
+            "error": "file_removed_post_test",
+            "file_removed": true,
+            "removal_reason": "Arquivo de teste removido em 2026-08-14 durante auditoria."
+          }
+        ],
+        "audit": "verified",
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=1, published=1, connected=0, evidence=[{'slug': 'not-cia-falha-teste', 'title': 'Notícia falha teste', 'html_path': 'C:\\\\Users\\\\Carolina\\\\praia-digital\\\\noticias\\\\not-cia-falha-teste.html', 'url': 'https://praia.digital/noticias/not-cia-falha-teste.html', 'produced': True, 'published': True, 'connected': False, 'links_added': 0, 'linked_slugs': [], 'published_at': '2026-08-14T06:32:53.935877+00:00', 'error': 'insufficient_internal_links'}]. Corrigido em 2026-08-14."
+      },
+      {
+        "date": "2026-08-14T06:33:17.200126+00:00",
+        "detected": 0,
+        "produced": 1,
+        "published": 1,
+        "connected": 0,
+        "failed_production": 0,
+        "evidence": [
+          {
+            "slug": "not-cia-falha-teste",
+            "title": "Notícia falha teste",
+            "html_path": "C:\\Users\\Carolina\\praia-digital\\noticias\\not-cia-falha-teste.html",
+            "url": "https://praia.digital/noticias/not-cia-falha-teste.html",
+            "produced": true,
+            "published": true,
+            "connected": false,
+            "links_added": 0,
+            "linked_slugs": [],
+            "published_at": "2026-08-14T06:33:16.667131+00:00",
+            "error": "file_removed_post_test",
+            "file_removed": true,
+            "removal_reason": "Arquivo de teste removido em 2026-08-14 durante auditoria."
+          }
+        ],
+        "audit": "verified",
+        "classification": "SEM_EVIDENCIA",
+        "audit_timestamp": "2026-08-14T06:40:00.000000Z",
+        "audit_note": "Métricas sem evidência verificável. produced=1, published=1, connected=0, evidence=[{'slug': 'not-cia-falha-teste', 'title': 'Notícia falha teste', 'html_path': 'C:\\\\Users\\\\Carolina\\\\praia-digital\\\\noticias\\\\not-cia-falha-teste.html', 'url': 'https://praia.digital/noticias/not-cia-falha-teste.html', 'produced': True, 'published': True, 'connected': False, 'links_added': 0, 'linked_slugs': [], 'published_at': '2026-08-14T06:33:16.667131+00:00', 'error': 'insufficient_internal_links'}]. Corrigido em 2026-08-14."
       }
     ]
   },
   "executed_actions": [
     "cycle_2026081401",
-    "cycle_2026081405",
-    "cycle_2026081404",
     "cycle_2026081402",
-    "cycle_2026081403"
-  ]
+    "cycle_2026081405",
+    "cycle_2026081406",
+    "cycle_2026081403",
+    "cycle_2026081404"
+  ],
+  "audit_summary": {
+    "audited_at": "2026-08-14T06:40:00.000000Z",
+    "total_cycles": 24,
+    "classification": {
+      "REAL": 0,
+      "SEM_EVIDENCIA": 24,
+      "INCONSISTENTE": 0,
+      "TESTE": 0
+    },
+    "verified_metrics": {
+      "total_produced": 0,
+      "total_published": 0,
+      "total_connected": 0
+    },
+    "note": "Métricas anteriores incluíam cycles sem evidência (SEM_EVIDENCIA). Métricas corrigidas para incluir apenas cycles com evidência verificável (REAL).",
+    "audit_trail": [
+      {
+        "cycle_index": 0,
+        "date": "2026-08-13T22:11:23.578213+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 4,
+        "published": 4,
+        "connected": 4,
+        "evidence_count": 0
+      },
+      {
+        "cycle_index": 1,
+        "date": "2026-08-13T22:23:03.131873+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 3,
+        "published": 3,
+        "connected": 3,
+        "evidence_count": 0
+      },
+      {
+        "cycle_index": 2,
+        "date": "2026-08-13T22:37:08.777537+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 3,
+        "published": 3,
+        "connected": 3,
+        "evidence_count": 0
+      },
+      {
+        "cycle_index": 3,
+        "date": "2026-08-13T22:55:09.544315+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 3,
+        "published": 3,
+        "connected": 3,
+        "evidence_count": 0
+      },
+      {
+        "cycle_index": 4,
+        "date": "2026-08-13T23:01:05.811147+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 4,
+        "published": 4,
+        "connected": 4,
+        "evidence_count": 0
+      },
+      {
+        "cycle_index": 5,
+        "date": "2026-08-13T23:19:19.667212+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 3,
+        "published": 3,
+        "connected": 3,
+        "evidence_count": 0
+      },
+      {
+        "cycle_index": 6,
+        "date": "2026-08-13T23:40:08.752891+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 3,
+        "published": 3,
+        "connected": 3,
+        "evidence_count": 0
+      },
+      {
+        "cycle_index": 7,
+        "date": "2026-08-14T00:01:02.469678+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 3,
+        "published": 3,
+        "connected": 3,
+        "evidence_count": 0
+      },
+      {
+        "cycle_index": 8,
+        "date": "2026-08-14T00:07:29.198356+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 3,
+        "published": 3,
+        "connected": 3,
+        "evidence_count": 0
+      },
+      {
+        "cycle_index": 9,
+        "date": "2026-08-14T00:29:55.990141+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 3,
+        "published": 3,
+        "connected": 3,
+        "evidence_count": 0
+      },
+      {
+        "cycle_index": 10,
+        "date": "2026-08-14T00:44:57.799080+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 3,
+        "published": 3,
+        "connected": 3,
+        "evidence_count": 0
+      },
+      {
+        "cycle_index": 11,
+        "date": "2026-08-14T00:45:20.209362+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 4,
+        "published": 4,
+        "connected": 4,
+        "evidence_count": 0
+      },
+      {
+        "cycle_index": 12,
+        "date": "2026-08-14T01:00:00.320018+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 3,
+        "published": 3,
+        "connected": 3,
+        "evidence_count": 0
+      },
+      {
+        "cycle_index": 13,
+        "date": "2026-08-14T01:01:11.253441+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 4,
+        "published": 4,
+        "connected": 4,
+        "evidence_count": 0
+      },
+      {
+        "cycle_index": 14,
+        "date": "2026-08-14T01:14:58.977889+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 3,
+        "published": 3,
+        "connected": 3,
+        "evidence_count": 0
+      },
+      {
+        "cycle_index": 15,
+        "date": "2026-08-14T01:22:27.770405+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 3,
+        "published": 3,
+        "connected": 3,
+        "evidence_count": 0
+      },
+      {
+        "cycle_index": 16,
+        "date": "2026-08-14T01:30:53.476658+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 3,
+        "published": 3,
+        "connected": 3,
+        "evidence_count": 0
+      },
+      {
+        "cycle_index": 17,
+        "date": "2026-08-14T04:05:17.095960+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 3,
+        "published": 3,
+        "connected": 3,
+        "evidence_count": 0
+      },
+      {
+        "cycle_index": 18,
+        "date": "2026-08-14T05:01:05.597028+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 3,
+        "published": 3,
+        "connected": 3,
+        "evidence_count": 0
+      },
+      {
+        "cycle_index": 19,
+        "date": "2026-08-14T05:05:58.374416+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 3,
+        "published": 3,
+        "connected": 3,
+        "evidence_count": 0
+      },
+      {
+        "cycle_index": 20,
+        "date": "2026-08-14T06:00:42.453920+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 3,
+        "published": 3,
+        "connected": 3,
+        "evidence_count": 0
+      },
+      {
+        "cycle_index": 21,
+        "date": "2026-08-14T06:32:39.946924+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 1,
+        "published": 1,
+        "connected": 0,
+        "evidence_count": 1
+      },
+      {
+        "cycle_index": 22,
+        "date": "2026-08-14T06:32:54.479841+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 1,
+        "published": 1,
+        "connected": 0,
+        "evidence_count": 1
+      },
+      {
+        "cycle_index": 23,
+        "date": "2026-08-14T06:33:17.200126+00:00",
+        "classification": "SEM_EVIDENCIA",
+        "produced": 1,
+        "published": 1,
+        "connected": 0,
+        "evidence_count": 1
+      }
+    ]
+  }
 }
