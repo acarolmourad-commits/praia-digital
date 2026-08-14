@@ -20916,6 +20916,46 @@
       "status": "published",
       "published_at": "2026-08-14",
       "batch": "Jurídico 2"
+    },
+    {
+      "slug": "energia-solar-imoveis-litoral-guia-2026",
+      "title": "Energia solar em imóveis no litoral: guia prático 2026",
+      "cluster": "Sustentabilidade",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Sustentabilidade 2"
+    },
+    {
+      "slug": "eficiencia-energetica-imoveis-litoral-reduzir-custo-2026-v2",
+      "title": "Eficiência energética em imóveis no litoral: reduzir custos 2026",
+      "cluster": "Sustentabilidade",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Sustentabilidade 2"
+    },
+    {
+      "slug": "economia-agua-imoveis-litoral-pratico-2026-v2",
+      "title": "Economia de água em imóveis no litoral: práticas simples 2026",
+      "cluster": "Sustentabilidade",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Sustentabilidade 2"
+    },
+    {
+      "slug": "pegada-ecologica-imoveis-litoral-medir-reduzir-2026-v2",
+      "title": "Pegada ecológica de imóveis no litoral: medir e reduzir 2026",
+      "cluster": "Sustentabilidade",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Sustentabilidade 2"
+    },
+    {
+      "slug": "construcao-sustentavel-litoral-paulista-2026",
+      "title": "Construção sustentável no litoral: guia prático 2026",
+      "cluster": "Sustentabilidade",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Sustentabilidade 2"
     }
   ],
   "sitemap_plan": {
@@ -33094,7 +33134,7 @@
       "in_sitemap": true
     }
   ],
-  "total_published": 80,
+  "total_published": 85,
   "audit_correction_note": "total_published corrigido de 30 para 25 com base em evidências. 5 artigos não tinham correspondência verificável.",
-  "last_updated": "2026-08-14T22:16:26.132186+00:00"
+  "last_updated": "2026-08-14T22:24:00.305358+00:00"
 }
