@@ -20756,6 +20756,46 @@
       "status": "published",
       "published_at": "2026-08-14",
       "batch": "SEO Local 2"
+    },
+    {
+      "slug": "preco-m2-litoral-sp-analise-cidades-2026",
+      "title": "Preço do m2 no litoral de SP: análise por cidade 2026",
+      "cluster": "Análise de Dados",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Análise de Dados 2"
+    },
+    {
+      "slug": "tabela-precos-imoveis-litoral-sp-2026",
+      "title": "Tabela de preços de imóveis no litoral de SP 2026",
+      "cluster": "Análise de Dados",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Análise de Dados 2"
+    },
+    {
+      "slug": "revpar-adr-occupancy-imoveis-temporada-litoral-2026",
+      "title": "RevPAR ADR occupancy para imóveis de temporada no litoral 2026",
+      "cluster": "Análise de Dados",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Análise de Dados 2"
+    },
+    {
+      "slug": "rentabilidade-imoveis-temporada-litoral-2026",
+      "title": "Rentabilidade de imóveis de temporada no litoral 2026",
+      "cluster": "Análise de Dados",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Análise de Dados 2"
+    },
+    {
+      "slug": "analise-comparativa-mercado-imobiliario-cidades-litoral-2026",
+      "title": "Análise comparativa de mercado imobiliário por cidade no litoral 2026",
+      "cluster": "Análise de Dados",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Análise de Dados 2"
     }
   ],
   "sitemap_plan": {
@@ -32934,7 +32974,7 @@
       "in_sitemap": true
     }
   ],
-  "total_published": 60,
+  "total_published": 65,
   "audit_correction_note": "total_published corrigido de 30 para 25 com base em evidências. 5 artigos não tinham correspondência verificável.",
-  "last_updated": "2026-08-14T21:46:54.114320+00:00"
+  "last_updated": "2026-08-14T21:55:46.878853+00:00"
 }
