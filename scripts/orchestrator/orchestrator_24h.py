@@ -256,8 +256,10 @@ def run(context: dict = {}) -> dict:
     maint = run_module('auto_maintenance', [REPO / 'scripts' / 'orchestrator' / 'maintenance'], context)
     print(f"[ORCHESTRATOR-24H] Manutenção: {maint.get('message', '')}")
 
-    # Mark cycle as executed for idempotency
-    registry['executed_actions'] = list(set(executed_actions + [f'cycle_{hour_key}']))
+    # Mark cycle as executed for idempotency — reload registry to avoid
+    # overwriting writes from register() and auto_maintenance above.
+    registry = json.loads(REGISTRY.read_text(encoding='utf-8'))
+    registry['executed_actions'] = list(set(registry.get('executed_actions', []) + [f'cycle_{hour_key}']))
     REGISTRY.write_text(json.dumps(registry, ensure_ascii=False, indent=2), encoding='utf-8')
 
     print('[ORCHESTRATOR-24H] Ciclo concluído')
