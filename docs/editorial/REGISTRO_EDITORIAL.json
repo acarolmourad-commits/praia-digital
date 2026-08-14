@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-14T20:40:16.502425+00:00",
-  "status": "Batch SEO Local 2 2026-08-14 — 5 artigos adicionados",
+  "generated_at": "2026-08-14T20:45:17.559221+00:00",
+  "status": "Batch SEO Local + interlinking + metadados completos — 45 artigos registrados",
   "registry_context": {
     "purpose": "Registro editorial do subconjunto verificado de artigos publicados",
     "total_published_definition": "Quantidade de artigos com evidência física verificada (HTML existente, publicado, registrado).",
@@ -20035,7 +20035,12 @@
       "url": "https://praia.digital/blog/seo-local-imobiliarias-litoral-google-maps-pack-local-2026.html",
       "source": "editorial_seo_local",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "seo_local",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "google-business-profile-corretores-imoveis-litoral-passo-passo-2026.html",
@@ -20045,7 +20050,12 @@
       "url": "https://praia.digital/blog/google-business-profile-corretores-imoveis-litoral-passo-passo-2026.html",
       "source": "editorial_seo_local",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "seo_local",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "avaliacoes-google-imobiliarias-litoral-reputacao-local-2026.html",
@@ -20055,7 +20065,12 @@
       "url": "https://praia.digital/blog/avaliacoes-google-imobiliarias-litoral-reputacao-local-2026.html",
       "source": "editorial_seo_local",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "seo_local",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "schema-structured-data-local-imobiliarias-litoral-2026.html",
@@ -20065,7 +20080,12 @@
       "url": "https://praia.digital/blog/schema-structured-data-local-imobiliarias-litoral-2026.html",
       "source": "editorial_seo_local",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "seo_local",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "citacoes-nap-seo-local-imobiliarias-litoral-paulista-2026.html",
@@ -20075,7 +20095,12 @@
       "url": "https://praia.digital/blog/citacoes-nap-seo-local-imobiliarias-litoral-paulista-2026.html",
       "source": "editorial_seo_local",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "seo_local",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "google-ads-imobiliarias-litoral-paulista-campanhas-2026.html",
@@ -20085,7 +20110,12 @@
       "url": "https://praia.digital/blog/google-ads-imobiliarias-litoral-paulista-campanhas-2026.html",
       "source": "editorial_marketing_digital",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "marketing_digital",
+      "intent": "comercial",
+      "funnel": "Meio",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "meta-ads-imobiliarias-litoral-facebook-instagram-2026.html",
@@ -20095,7 +20125,12 @@
       "url": "https://praia.digital/blog/meta-ads-imobiliarias-litoral-facebook-instagram-2026.html",
       "source": "editorial_marketing_digital",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "marketing_digital",
+      "intent": "comercial",
+      "funnel": "Meio",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "redes-sociais-imobiliarias-litoral-conteudo-2026.html",
@@ -20105,7 +20140,12 @@
       "url": "https://praia.digital/blog/redes-sociais-imobiliarias-litoral-conteudo-2026.html",
       "source": "editorial_marketing_digital",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "marketing_digital",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "funil-vendas-imobiliario-litoral-digital-2026.html",
@@ -20115,7 +20155,12 @@
       "url": "https://praia.digital/blog/funil-vendas-imobiliario-litoral-digital-2026.html",
       "source": "editorial_marketing_digital",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "marketing_digital",
+      "intent": "comercial",
+      "funnel": "Meio",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "email-marketing-imobiliarias-litoral-relacionamento-2026.html",
@@ -20125,7 +20170,12 @@
       "url": "https://praia.digital/blog/email-marketing-imobiliarias-litoral-relacionamento-2026.html",
       "source": "editorial_marketing_digital",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "marketing_digital",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "networking-corretores-litoral-parcerias-indicacoes-2026.html",
@@ -20135,7 +20185,12 @@
       "url": "https://praia.digital/blog/networking-corretores-litoral-parcerias-indicacoes-2026.html",
       "source": "editorial_parcerias",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "parcerias",
+      "intent": "informativo",
+      "funnel": "Meio",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "indicacao-proprietarios-litoral-captacao-imoveis-2026.html",
@@ -20145,7 +20200,12 @@
       "url": "https://praia.digital/blog/indicacao-proprietarios-litoral-captacao-imoveis-2026.html",
       "source": "editorial_parcerias",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "parcerias",
+      "intent": "comercial",
+      "funnel": "Meio",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "parceria-construtora-imobiliarias-litoral-lancamentos-2026.html",
@@ -20155,7 +20215,12 @@
       "url": "https://praia.digital/blog/parceria-construtora-imobiliarias-litoral-lancamentos-2026.html",
       "source": "editorial_parcerias",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "parcerias",
+      "intent": "comercial",
+      "funnel": "Meio",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "parceria-administradores-condominios-imobiliarias-litoral-2026.html",
@@ -20165,7 +20230,12 @@
       "url": "https://praia.digital/blog/parceria-administradores-condominios-imobiliarias-litoral-2026.html",
       "source": "editorial_parcerias",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "parcerias",
+      "intent": "comercial",
+      "funnel": "Meio",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "medir-resultados-parcerias-imobiliarias-litoral-2026.html",
@@ -20175,7 +20245,12 @@
       "url": "https://praia.digital/blog/medir-resultados-parcerias-imobiliarias-litoral-2026.html",
       "source": "editorial_parcerias",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "parcerias",
+      "intent": "informativo",
+      "funnel": "Meio",
+      "city": "litoral_paulista",
+      "article_type": "A"
     },
     {
       "slug": "analise-dados-imobiliarias-litoral-pratico-2026.html",
@@ -20185,7 +20260,12 @@
       "url": "https://praia.digital/blog/analise-dados-imobiliarias-litoral-pratico-2026.html",
       "source": "editorial_analise_dados",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "analise_dados",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "dashboard-imobiliario-litoral-pratico-2026.html",
@@ -20195,7 +20275,12 @@
       "url": "https://praia.digital/blog/dashboard-imobiliario-litoral-pratico-2026.html",
       "source": "editorial_analise_dados",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "analise_dados",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "indicadores-imobiliarios-corretores-litoral-2026.html",
@@ -20205,7 +20290,12 @@
       "url": "https://praia.digital/blog/indicadores-imobiliarios-corretores-litoral-2026.html",
       "source": "editorial_analise_dados",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "analise_dados",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "analise-roi-imoveis-litoral-temporada-2026.html",
@@ -20215,7 +20305,12 @@
       "url": "https://praia.digital/blog/analise-roi-imoveis-litoral-temporada-2026.html",
       "source": "editorial_analise_dados",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "analise_dados",
+      "intent": "comercial",
+      "funnel": "Meio",
+      "city": "litoral_paulista",
+      "article_type": "A"
     },
     {
       "slug": "risco-operacional-imobiliarias-litoral-temporada-2026.html",
@@ -20225,7 +20320,12 @@
       "url": "https://praia.digital/blog/risco-operacional-imobiliarias-litoral-temporada-2026.html",
       "source": "editorial_analise_dados",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "analise_dados",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "A"
     },
     {
       "slug": "documentos-essenciais-compra-imovel-litoral-2026.html",
@@ -20235,7 +20335,12 @@
       "url": "https://praia.digital/blog/documentos-essenciais-compra-imovel-litoral-2026.html",
       "source": "editorial_juridico",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "juridico",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "escritura-imovel-litoral-passos-custos-2026.html",
@@ -20245,7 +20350,12 @@
       "url": "https://praia.digital/blog/escritura-imovel-litoral-passos-custos-2026.html",
       "source": "editorial_juridico",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "juridico",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "registro-imoveis-litoral-certidao-pratica-2026.html",
@@ -20255,7 +20365,12 @@
       "url": "https://praia.digital/blog/registro-imoveis-litoral-certidao-pratica-2026.html",
       "source": "editorial_juridico",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "juridico",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "compra-imovel-heranca-inventario-litoral-2026.html",
@@ -20265,7 +20380,12 @@
       "url": "https://praia.digital/blog/compra-imovel-heranca-inventario-litoral-2026.html",
       "source": "editorial_juridico",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "juridico",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "direitos-deveres-aluguel-temporada-litoral-2026.html",
@@ -20275,7 +20395,12 @@
       "url": "https://praia.digital/blog/direitos-deveres-aluguel-temporada-litoral-2026.html",
       "source": "editorial_juridico",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "juridico",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "energia-renovavel-imoveis-litoral-passo-passo-2026.html",
@@ -20285,7 +20410,12 @@
       "url": "https://praia.digital/blog/energia-renovavel-imoveis-litoral-passo-passo-2026.html",
       "source": "editorial_sustentabilidade",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "sustentabilidade",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "economia-agua-imoveis-litoral-pratico-2026.html",
@@ -20295,7 +20425,12 @@
       "url": "https://praia.digital/blog/economia-agua-imoveis-litoral-pratico-2026.html",
       "source": "editorial_sustentabilidade",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "sustentabilidade",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "construcao-sustentavel-imoveis-litoral-guia-2026.html",
@@ -20305,7 +20440,12 @@
       "url": "https://praia.digital/blog/construcao-sustentavel-imoveis-litoral-guia-2026.html",
       "source": "editorial_sustentabilidade",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "sustentabilidade",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "eficiencia-energetica-imoveis-litoral-reduzir-custo-2026.html",
@@ -20315,7 +20455,12 @@
       "url": "https://praia.digital/blog/eficiencia-energetica-imoveis-litoral-reduzir-custo-2026.html",
       "source": "editorial_sustentabilidade",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "sustentabilidade",
+      "intent": "comercial",
+      "funnel": "Meio",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "pegada-ecologica-imoveis-litoral-medir-reduzir-2026.html",
@@ -20325,7 +20470,12 @@
       "url": "https://praia.digital/blog/pegada-ecologica-imoveis-litoral-medir-reduzir-2026.html",
       "source": "editorial_sustentabilidade",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "sustentabilidade",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "gestao-imobiliaria-litoral-equipe-processos-2026.html",
@@ -20335,7 +20485,12 @@
       "url": "https://praia.digital/blog/gestao-imobiliaria-litoral-equipe-processos-2026.html",
       "source": "editorial_gestao",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "gestao",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "metas-okr-imobiliarias-litoral-pratico-2026.html",
@@ -20345,7 +20500,12 @@
       "url": "https://praia.digital/blog/metas-okr-imobiliarias-litoral-pratico-2026.html",
       "source": "editorial_gestao",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "gestao",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "onboarding-corretores-imobiliarias-litoral-2026.html",
@@ -20355,7 +20515,12 @@
       "url": "https://praia.digital/blog/onboarding-corretores-imobiliarias-litoral-2026.html",
       "source": "editorial_gestao",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "gestao",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "clima-organizacional-imobiliarias-litoral-2026.html",
@@ -20365,7 +20530,12 @@
       "url": "https://praia.digital/blog/clima-organizacional-imobiliarias-litoral-2026.html",
       "source": "editorial_gestao",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "gestao",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "retencao-talentos-imobiliarias-litoral-2026.html",
@@ -20375,7 +20545,12 @@
       "url": "https://praia.digital/blog/retencao-talentos-imobiliarias-litoral-2026.html",
       "source": "editorial_gestao",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "gestao",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "como-rankear-google-maps-imobiliarias-litoral-2026.html",
@@ -20385,7 +20560,12 @@
       "url": "https://praia.digital/blog/como-rankear-google-maps-imobiliarias-litoral-2026.html",
       "source": "editorial_seo_local",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "seo_local",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "seo-local-pequenos-negocios-litoral-iniciantes-2026.html",
@@ -20395,7 +20575,12 @@
       "url": "https://praia.digital/blog/seo-local-pequenos-negocios-litoral-iniciantes-2026.html",
       "source": "editorial_seo_local",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "seo_local",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "como-responder-avaliacoes-google-imobiliarias-litoral-2026.html",
@@ -20405,7 +20590,12 @@
       "url": "https://praia.digital/blog/como-responder-avaliacoes-google-imobiliarias-litoral-2026.html",
       "source": "editorial_seo_local",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "seo_local",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "como-conseguir-citacoes-locais-imobiliarias-litoral-2026.html",
@@ -20415,7 +20605,12 @@
       "url": "https://praia.digital/blog/como-conseguir-citacoes-locais-imobiliarias-litoral-2026.html",
       "source": "editorial_seo_local",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "seo_local",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     },
     {
       "slug": "como-aparecer-maps-pack-imobiliarias-litoral-2026.html",
@@ -20425,7 +20620,12 @@
       "url": "https://praia.digital/blog/como-aparecer-maps-pack-imobiliarias-litoral-2026.html",
       "source": "editorial_seo_local",
       "verified": true,
-      "in_sitemap": true
+      "in_sitemap": true,
+      "cluster": "seo_local",
+      "intent": "informativo",
+      "funnel": "Topo",
+      "city": "litoral_paulista",
+      "article_type": "E"
     }
   ],
   "sitemap_plan": {
