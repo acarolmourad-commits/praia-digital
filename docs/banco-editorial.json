@@ -78274,7 +78274,7 @@
       "status": "audited"
     },
     {
-      "date": "2026-08-14T01:32:09.771623+00:00",
+      "date": "2026-08-14T02:01:14.196372+00:00",
       "formation_analysis": [
         {
           "slug": "formacao-corretor-imoveis-litoral",
@@ -79073,7 +79073,7 @@
     "formacoes": 8
   },
   "maintenance": {
-    "last_run": "2026-08-14T01:32:37.303631+00:00",
+    "last_run": "2026-08-14T02:01:40.586746+00:00",
     "blog_count": 2957,
     "noticias_count": 1,
     "formacoes_count": 8,
@@ -80693,7 +80693,7 @@
       ]
     },
     {
-      "date": "2026-08-14T01:32:08.795632+00:00",
+      "date": "2026-08-14T02:01:13.230371+00:00",
       "total_sources": 5,
       "total_opportunities": 2,
       "relevant_opportunities": 2,
@@ -80847,12 +80847,15 @@
         "connected": 3
       },
       {
-        "date": "2026-08-14T01:32:33.231631+00:00",
+        "date": "2026-08-14T02:01:36.538442+00:00",
         "detected": 0,
         "produced": 3,
         "published": 3,
         "connected": 3
       }
     ]
-  }
+  },
+  "executed_actions": [
+    "cycle_2026081401"
+  ]
 }
