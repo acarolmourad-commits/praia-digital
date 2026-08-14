@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-14T20:45:17.559221+00:00",
-  "status": "Batch SEO Local + interlinking + metadados completos — 45 artigos registrados",
+  "generated_at": "2026-08-14T20:55:10.577313+00:00",
+  "status": "Batch Marketing Digital 2 2026-08-14 — 5 artigos adicionados",
   "registry_context": {
     "purpose": "Registro editorial do subconjunto verificado de artigos publicados",
     "total_published_definition": "Quantidade de artigos com evidência física verificada (HTML existente, publicado, registrado).",
@@ -20626,6 +20626,56 @@
       "funnel": "Topo",
       "city": "litoral_paulista",
       "article_type": "E"
+    },
+    {
+      "slug": "remarketing-imobiliarias-litoral-pratico-2026.html",
+      "title": "Remarketing para imobiliárias no litoral: guia prático 2026",
+      "h1": "Remarketing para imobiliárias no litoral: guia prático 2026",
+      "path": "blog/remarketing-imobiliarias-litoral-pratico-2026.html",
+      "url": "https://praia.digital/blog/remarketing-imobiliarias-litoral-pratico-2026.html",
+      "source": "editorial_marketing_digital",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "linkedin-imobiliarias-litoral-conteudo-networking-2026.html",
+      "title": "LinkedIn para imobiliárias no litoral: conteúdo e networking 2026",
+      "h1": "LinkedIn para imobiliárias no litoral: conteúdo e networking 2026",
+      "path": "blog/linkedin-imobiliarias-litoral-conteudo-networking-2026.html",
+      "url": "https://praia.digital/blog/linkedin-imobiliarias-litoral-conteudo-networking-2026.html",
+      "source": "editorial_marketing_digital",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "tiktok-imobiliarias-litoral-conteudo-video-2026.html",
+      "title": "TikTok para imobiliárias no litoral: conteúdo em vídeo 2026",
+      "h1": "TikTok para imobiliárias no litoral: conteúdo em vídeo 2026",
+      "path": "blog/tiktok-imobiliarias-litoral-conteudo-video-2026.html",
+      "url": "https://praia.digital/blog/tiktok-imobiliarias-litoral-conteudo-video-2026.html",
+      "source": "editorial_marketing_digital",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "email-nurture-imobiliarias-litoral-relacionamento-2026.html",
+      "title": "Email nurture para imobiliárias no litoral: relacionamento 2026",
+      "h1": "Email nurture para imobiliárias no litoral: relacionamento 2026",
+      "path": "blog/email-nurture-imobiliarias-litoral-relacionamento-2026.html",
+      "url": "https://praia.digital/blog/email-nurture-imobiliarias-litoral-relacionamento-2026.html",
+      "source": "editorial_marketing_digital",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "conteudo-redes-sociais-imobiliarias-litoral-2026.html",
+      "title": "Conteúdo para redes sociais de imobiliárias no litoral: guia prático 2026",
+      "h1": "Conteúdo para redes sociais de imobiliárias no litoral: guia prático 2026",
+      "path": "blog/conteudo-redes-sociais-imobiliarias-litoral-2026.html",
+      "url": "https://praia.digital/blog/conteudo-redes-sociais-imobiliarias-litoral-2026.html",
+      "source": "editorial_marketing_digital",
+      "verified": true,
+      "in_sitemap": true
     }
   ],
   "sitemap_plan": {
