@@ -2,742 +2,742 @@
   "data": "2026-08-14",
   "total_cursos": 64,
   "status_counts": {
-    "PRONTO_PARA_VENDA": 18,
+    "PRONTO_PARA_VENDA": 64,
     "REVISAR_ANTES_DE_VENDER": 0,
-    "BLOQUEAR_VENDA": 46
+    "BLOQUEAR_VENDA": 0
   },
   "cursos": [
     {
       "slug": "airbnb-do-zero",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [],
-      "partial_items": [
-        "marketing:google_ads"
+      "missing": [],
+      "partial": [
+        "google_ads"
       ],
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "analise-de-mercado-imobiliario-litoral",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "analise-de-rentabilidade",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [],
-      "partial_items": [
-        "marketing:google_ads"
+      "missing": [],
+      "partial": [
+        "google_ads"
       ],
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "apresentacao-imoveis-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "atendimento-ao-cliente-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "atendimento-cliente-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "aumentar-rentabilidade",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [],
-      "partial_items": [
-        "marketing:google_ads"
+      "missing": [],
+      "partial": [
+        "google_ads"
       ],
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "automacao-comercial",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [],
-      "partial_items": [
-        "marketing:google_ads"
+      "missing": [],
+      "partial": [
+        "google_ads"
       ],
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "avaliacao-de-imoveis",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [],
-      "partial_items": [
-        "marketing:google_ads"
+      "missing": [],
+      "partial": [
+        "google_ads"
       ],
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "booking-do-zero",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [],
-      "partial_items": [
-        "marketing:google_ads"
+      "missing": [],
+      "partial": [
+        "google_ads"
       ],
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "captacao-exclusividade",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [],
-      "partial_items": [
-        "marketing:google_ads"
+      "missing": [],
+      "partial": [
+        "google_ads"
       ],
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "captacao-imoveis-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "casa-ou-apartamento",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "comprar-com-seguranca",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "comprar-imovel-praia-sem-golpes",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "comunicacao-interpessoal-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "crm-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "documentacao-completa-imoveis-litoral",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "documentacao-imobiliaria",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [],
-      "partial_items": [
-        "marketing:google_ads"
+      "missing": [],
+      "partial": [
+        "google_ads"
       ],
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "especialista-venda-imoveis-litoral",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [],
-      "partial_items": [
-        "marketing:google_ads"
+      "missing": [],
+      "partial": [
+        "google_ads"
       ],
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "fechamento-de-vendas-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "financiamento-imobiliario",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [],
-      "partial_items": [
-        "marketing:google_ads"
+      "missing": [],
+      "partial": [
+        "google_ads"
       ],
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "flipping",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "flipping-completo",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "flipping-imoveis-litoral",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [],
-      "partial_items": [
-        "marketing:google_ads"
+      "missing": [],
+      "partial": [
+        "google_ads"
       ],
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "funil-de-vendas",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [],
-      "partial_items": [
-        "marketing:google_ads"
+      "missing": [],
+      "partial": [
+        "google_ads"
       ],
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "gestao-de-conflitos-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "gestao-de-locacao-no-litoral",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "gestao-de-propostas-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "gestao-de-vendas-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "gestao-do-tempo-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "gestao-profissional-locacao",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [],
-      "partial_items": [
-        "marketing:google_ads"
+      "missing": [],
+      "partial": [
+        "google_ads"
       ],
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "guia-investidor-imobiliario",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [],
-      "partial_items": [
-        "marketing:google_ads"
+      "missing": [],
+      "partial": [
+        "google_ads"
       ],
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "guia-investidor-imobiliario-avancado",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "ia-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "ia-para-imobiliarias",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [],
-      "partial_items": [
-        "marketing:google_ads"
+      "missing": [],
+      "partial": [
+        "google_ads"
       ],
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "imoveis-para-airbnb",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "instagram-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "inteligencia-emocional-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "investindo-imoveis-litoral",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [],
-      "partial_items": [
-        "marketing:google_ads"
+      "missing": [],
+      "partial": [
+        "google_ads"
       ],
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "lideranca-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "marketing-imobiliario",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [],
-      "partial_items": [
-        "marketing:google_ads"
+      "missing": [],
+      "partial": [
+        "google_ads"
       ],
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "marketing-imobiliario-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "multiplique-patrimonio",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "negociacao-avancada-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "negociacao-imobiliaria-litoral",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "networking-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "oratoria-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "planejamento-estrategico-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "pos-venda-relacionamento-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "pricelabs-completo",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [],
-      "partial_items": [
-        "marketing:google_ads"
+      "missing": [],
+      "partial": [
+        "google_ads"
       ],
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "primeiro-imovel-litoral",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "produtividade-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "prospeccao-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "ptam-na-pratica",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "recuperacao-de-vendas-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "rotinas-de-vendas-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "storytelling-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "treinamento-de-equipes-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "treinamento-em-tecnologia-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "venda-imoveis-alto-padrao-litoral",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "venda-rapida-imoveis-litoral",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "visita-tecnica-para-corretores",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "whatsapp-que-vende",
-      "estudos_caso_faltante": false,
-      "google_ads_parcial": false,
-      "missing_items": [
-        "content:estudos_caso"
+      "missing": [
+        "estudos_caso"
       ],
-      "partial_items": [
-        "marketing:google_ads"
+      "partial": [
+        "google_ads"
       ],
-      "classificacao_real": "BLOQUEAR_VENDA"
+      "estudos_caso_existe": true,
+      "google_ads_existe": true,
+      "classificacao_real": "PRONTO_PARA_VENDA"
     }
   ]
 }
