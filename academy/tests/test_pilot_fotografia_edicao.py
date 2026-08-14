@@ -1,7 +1,7 @@
 from fastapi.testclient import TestClient
 from academy.tests._shared_test_db import Base, get_db, override_get_db, TestingSessionLocal, engine as test_engine
 from academy.main import app
-from academy.core.models import Course, Enrollment, EnrollmentStatus, Payment, PaymentStatus, User
+from academy.core.models import Course, Enrollment, Payment
 
 app.dependency_overrides[get_db] = override_get_db
 client = TestClient(app)
@@ -31,7 +31,7 @@ def seed_course(slug: str, price: int = 9900):
 
 
 def test_pilot_flow_checkout_pending():
-    course = seed_course("formacao-fotografia-edicao-imoveis-temporada-2026", price=9900)
+    course = seed_course("checkout-piloto-pendente-001", price=9900)
     payload = {
         "items": [{"course_id": course.id, "quantity": 1}],
         "buyer_name": "Piloto Teste",
@@ -50,7 +50,7 @@ def test_pilot_flow_checkout_pending():
 
 
 def test_access_not_allowed_without_payment():
-    course = seed_course("curso-sem-pagamento", price=9900)
+    course = seed_course("checkout-piloto-bloqueado-002", price=9900)
     r = client.post("/academy/checkout", json={
         "items": [{"course_id": course.id, "quantity": 1}],
         "buyer_name": "Sem Pagamento",
@@ -68,7 +68,7 @@ def test_access_not_allowed_without_payment():
 
 
 def test_payment_confirmed_activates_enrollment():
-    course = seed_course("curso-pagamento-confirmado", price=9900)
+    course = seed_course("checkout-piloto-aprovado-003", price=9900)
     r = client.post("/academy/checkout", json={
         "items": [{"course_id": course.id, "quantity": 1}],
         "buyer_name": "Confirmado",
@@ -87,5 +87,5 @@ def test_payment_confirmed_activates_enrollment():
     data = r.json()
     assert data["status"] == "active"
     assert "Pagamento confirmado" in data["message"]
-    assert data["enrollment_id"] == 1
+    assert data["enrollment_id"] == order_id
     assert data["course_id"] == course.id
