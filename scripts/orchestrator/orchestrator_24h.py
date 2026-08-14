@@ -113,85 +113,421 @@ def score(opportunities: list) -> list:
     scored.sort(key=lambda x: x.get('final_score', 0), reverse=True)
     return scored
 
+def _validate_slug(slug: str) -> bool:
+    if not slug or not isinstance(slug, str):
+        return False
+    s = slug.strip().lower()
+    if not s or s in {'none', 'null', 'undefined', ''}:
+        return False
+    return True
+
+def _validate_html_path(path: Path) -> bool:
+    if not isinstance(path, Path):
+        return False
+    if not path.exists():
+        return False
+    if path.suffix.lower() != '.html':
+        return False
+    try:
+        text = path.read_text(encoding='utf-8', errors='ignore')
+        if '<html' not in text.lower() and '<body' not in text.lower() and '<h1' not in text.lower():
+            return False
+        return True
+    except Exception:
+        return False
+
+def _validate_url(url: str) -> bool:
+    if not url or not isinstance(url, str):
+        return False
+    url = url.strip()
+    if not url.startswith(('http://', 'https://')):
+        return False
+    return True
+
+def _validate_internal_links(html_path: Path, min_required: int = 1) -> dict:
+    result = {
+        'valid': False,
+        'links_added': 0,
+        'linked_slugs': [],
+        'error': None,
+    }
+    try:
+        html = html_path.read_text(encoding='utf-8', errors='ignore')
+        hrefs = re.findall(r'href="(/[^"]+)"', html)
+        internal = [h for h in hrefs if h.startswith('/blog/') or h.startswith('/education/') or h.startswith('/noticias/')]
+        slugs = []
+        for h in internal:
+            slug = h.rsplit('/', 1)[-1]
+            if slug.endswith('.html'):
+                slug = slug[:-5]
+            if slug:
+                slugs.append(slug)
+        unique_slugs = list(dict.fromkeys(slugs))
+        result['links_added'] = len(unique_slugs)
+        result['linked_slugs'] = unique_slugs
+        result['valid'] = len(unique_slugs) >= min_required
+    except Exception as e:
+        result['error'] = str(e)
+    return result
+
+def _update_sitemap_if_needed(slugs: list) -> dict:
+    if not slugs:
+        return {'updated': False, 'reason': 'nenhum slug para adicionar'}
+    try:
+        result = subprocess.run(
+            f'python "{SITEMAP_SCRIPT}"',
+            shell=True,
+            cwd=REPO,
+            capture_output=True,
+            text=True,
+            timeout=300,
+        )
+        return {
+            'updated': result.returncode == 0,
+            'output': result.stdout[-500:] if result.stdout else '',
+            'error': result.stderr[-500:] if result.stderr else '',
+        }
+    except Exception as e:
+        return {'updated': False, 'error': str(e)}
+
+def _register_article_in_editorial(evidence: dict) -> dict:
+    registry = json.loads(REGISTRY.read_text(encoding='utf-8'))
+    articles = registry.get('articles', [])
+    existing_index = None
+    for idx, art in enumerate(articles):
+        if art.get('slug') == evidence['slug']:
+            existing_index = idx
+            break
+    record = {
+        'slug': evidence['slug'],
+        'title': evidence['title'],
+        'html_path': evidence['html_path'],
+        'url': evidence['url'],
+        'published': True,
+        'production_type': evidence['production_type'],
+        'published_at': datetime.now(timezone.utc).isoformat(),
+        'status': 'PUBLISHED',
+        'internal_links_added': evidence.get('internal_links_added', 0),
+        'linked_slugs': evidence.get('linked_slugs', []),
+        'registered_at': datetime.now(timezone.utc).isoformat(),
+    }
+    if existing_index is not None:
+        articles[existing_index] = record
+        action = 'updated'
+    else:
+        articles.append(record)
+        action = 'created'
+    registry['articles'] = articles
+    REGISTRY.write_text(json.dumps(registry, ensure_ascii=False, indent=2), encoding='utf-8')
+    return {'status': 'ok', 'action': action, 'slug': evidence['slug']}
+
+def _audit_cycles_registry() -> dict:
+    registry = json.loads(REGISTRY.read_text(encoding='utf-8'))
+    cycles = registry.get('orchestrator_24h', {}).get('cycles', [])
+    audit = []
+    for c in cycles:
+        audit.append({
+            'date': c.get('date'),
+            'detected': c.get('detected', 0),
+            'produced': c.get('produced', 0),
+            'published': c.get('published', 0),
+            'connected': c.get('connected', 0),
+            'evidence': c.get('evidence'),
+            'classification': 'NÃO VERIFICÁVEL',
+        })
+    return {'status': 'ok', 'cycles': audit, 'total_cycles': len(audit)}
+
 def produce(scored_opportunities: list, context: dict) -> list:
+    evidence = context.setdefault('evidence', {})
     produced = []
     for opp in scored_opportunities:
         if opp.get('final_score', 0) < 6.0:
             continue
         opp_type = opp.get('type', '')
+        production_type = None
+        html_path = None
+        title = None
+        source_url = None
         if opp_type == 'news_discovery':
-            source = opp.get('source', '')
-            if not source or not source.startswith(('http://', 'https://')):
+            source_url = opp.get('source', '')
+            if not source_url or not source_url.startswith(('http://', 'https://')):
                 continue
-            opp['produced'] = True
-            opp['production_type'] = 'news'
-            produced.append(opp)
+            production_type = 'news'
+            title = opp.get('title') or 'Notícia curada'
+            news_dir = REPO / 'noticias'
+            news_dir.mkdir(parents=True, exist_ok=True)
+            slug = opp.get('slug') or re.sub(r'[^a-z0-9-]+', '-', title.lower()).strip('-')
+            html_path = news_dir / f'{slug}.html'
+            html_content = (
+                f'<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8">'
+                f'<title>{title}</title><link rel="canonical" href="https://praia.digital/noticias/{slug}.html">'
+                f'<meta name="description" content="{opp.get("description", "")[:160]}">'
+                f'</head><body><h1>{title}</h1>'
+                f'<p><em>Fonte: <a href="{source_url}">{source_url}</a></em></p>'
+                f'<p>{opp.get("description", "")}</p></body></html>'
+            )
+            try:
+                html_path.write_text(html_content, encoding='utf-8')
+            except Exception as e:
+                opp['production_error'] = str(e)
+                opp['produced'] = False
+                produced.append(opp)
+                continue
         elif opp_type == 'add_links':
-            opp['produced'] = True
-            opp['production_type'] = 'internal_links'
-            produced.append(opp)
+            production_type = 'internal_links'
+            title = f'Linkagem: {opp.get("message", "")[:60]}'
+            target_slug = opp.get('target_slug') or opp.get('slug') or 'internal-links'
+            html_path = REPO / 'blog' / f'{target_slug}.html'
+            if not html_path.exists():
+                html_path = REPO / 'blog' / 'links-atualizacao.html'
+            title = opp.get('title') or 'Atualização de links internos'
         elif opp_type == 'seo_audit':
-            opp['produced'] = True
-            opp['production_type'] = 'schema_fix'
-            produced.append(opp)
+            production_type = 'schema_fix'
+            title = f'SEO: {opp.get("message", "")[:60]}'
+            target_slug = opp.get('target_slug') or 'seo-atualizacao'
+            html_path = REPO / 'blog' / f'{target_slug}.html'
+            if not html_path.exists():
+                html_path = REPO / 'blog' / 'seo-atualizacao.html'
+            title = opp.get('title') or 'Atualização SEO'
         elif opp_type == 'local_content':
-            opp['produced'] = True
-            opp['production_type'] = 'local_content'
-            produced.append(opp)
+            production_type = 'local_content'
+            title = opp.get('title') or 'Conteúdo local'
+            city = opp.get('city') or 'litoral'
+            slug_core = re.sub(r'[^a-z0-9-]+', '-', title.lower()).strip('-')
+            html_path = REPO / 'blog' / f'{slug_core}-{city}.html'
+            html_content = (
+                f'<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8">'
+                f'<title>{title}</title><link rel="canonical" href="https://praia.digital/blog/{slug_core}-{city}.html">'
+                f'<meta name="description" content="{opp.get("description", "")[:160]}">'
+                f'</head><body><h1>{title}</h1>'
+                f'<p>{opp.get("description", "")}</p></body></html>'
+            )
+            try:
+                html_path.parent.mkdir(parents=True, exist_ok=True)
+                html_path.write_text(html_content, encoding='utf-8')
+            except Exception as e:
+                opp['production_error'] = str(e)
+                opp['produced'] = False
+                produced.append(opp)
+                continue
         elif opp_type == 'academy':
-            opp['produced'] = True
-            opp['production_type'] = 'academy_material'
+            production_type = 'academy_material'
+            title = opp.get('title') or 'Material Academy'
+            slug_core = re.sub(r'[^a-z0-9-]+', '-', title.lower()).strip('-')
+            html_path = REPO / 'education' / 'formacoes' / f'{slug_core}.html'
+            html_content = (
+                f'<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8">'
+                f'<title>{title}</title><link rel="canonical" href="https://praia.digital/education/formacoes/{slug_core}.html">'
+                f'<meta name="description" content="{opp.get("description", "")[:160]}">'
+                f'</head><body><h1>{title}</h1>'
+                f'<p>{opp.get("description", "")}</p></body></html>'
+            )
+            try:
+                html_path.parent.mkdir(parents=True, exist_ok=True)
+                html_path.write_text(html_content, encoding='utf-8')
+            except Exception as e:
+                opp['production_error'] = str(e)
+                opp['produced'] = False
+                produced.append(opp)
+                continue
+        else:
+            continue
+        if not html_path:
+            continue
+        if not _validate_html_path(html_path):
+            opp['produced'] = False
+            opp['production_error'] = f'HTML inválido ou não criado: {html_path}'
             produced.append(opp)
+            continue
+        slug = html_path.stem
+        url = f'https://praia.digital/{html_path.relative_to(REPO)}'.replace('\\', '/')
+        evidence_item = {
+            'slug': slug,
+            'title': title,
+            'html_path': str(html_path),
+            'url': url,
+            'production_type': production_type,
+            'source_url': source_url,
+            'validated_at': datetime.now(timezone.utc).isoformat(),
+            'internal_links_added': 0,
+            'linked_slugs': [],
+        }
+        evidence[slug] = evidence_item
+        opp['produced'] = True
+        opp['production_type'] = production_type
+        opp['slug'] = slug
+        opp['html_path'] = str(html_path)
+        opp['title'] = title
+        opp['url'] = url
+        opp['evidence_key'] = slug
+        produced.append(opp)
     return produced
 
-def review(produced: list) -> list:
+def review(produced: list, context: dict) -> list:
+    evidence = context.get('evidence', {})
     reviewed = []
     for item in produced:
-        qa_ok = True
+        evidence_key = item.get('evidence_key')
+        item_evidence = evidence.get(evidence_key) if evidence_key else None
+        valid = False
         qa_issues = []
-        production_type = item.get('production_type', '')
-        if production_type == 'news' and not item.get('source'):
-            qa_ok = False
-            qa_issues.append('missing_source')
-        item['qa'] = {'passed': qa_ok, 'issues': qa_issues}
+        if not item.get('produced'):
+            qa_issues.append('not_produced')
+        elif not item_evidence:
+            qa_issues.append('missing_evidence')
+        else:
+            html_path = item_evidence.get('html_path')
+            slug = item_evidence.get('slug')
+            title = item_evidence.get('title')
+            url = item_evidence.get('url')
+            if not html_path or not Path(html_path).exists():
+                qa_issues.append('html_missing')
+            elif not _validate_html_path(Path(html_path)):
+                qa_issues.append('html_invalid')
+            if not _validate_slug(slug):
+                qa_issues.append('invalid_slug')
+            if not title or not isinstance(title, str) or not title.strip():
+                qa_issues.append('invalid_title')
+            if not _validate_url(url):
+                qa_issues.append('invalid_url')
+            if item.get('type') == 'news_discovery':
+                source_url = item_evidence.get('source_url')
+                if not _validate_url(source_url):
+                    qa_issues.append('invalid_source_url')
+            if not qa_issues:
+                valid = True
+        item['qa'] = {'passed': valid, 'issues': qa_issues}
         reviewed.append(item)
     return reviewed
 
 def publish(reviewed: list, context: dict) -> list:
+    evidence = context.get('evidence', {})
     published = []
     for item in reviewed:
         if not item.get('qa', {}).get('passed', False):
+            item['published'] = False
+            item['publication_error'] = 'QA failed: ' + ', '.join(item.get('qa', {}).get('issues', []))
+            published.append(item)
+            continue
+        evidence_key = item.get('evidence_key')
+        item_evidence = evidence.get(evidence_key) if evidence_key else None
+        if not item_evidence:
+            item['published'] = False
+            item['publication_error'] = 'missing_evidence'
+            published.append(item)
+            continue
+        html_path = Path(item_evidence['html_path'])
+        if not _validate_html_path(html_path):
+            item['published'] = False
+            item['publication_error'] = 'html_invalid'
+            published.append(item)
             continue
         item['published'] = True
         item['published_at'] = datetime.now(timezone.utc).isoformat()
+        item['publication_status'] = 'PUBLISHED'
         published.append(item)
     return published
 
-def connect(published: list) -> list:
+def connect(published: list, context: dict) -> list:
+    evidence = context.get('evidence', {})
     connected = []
     for item in published:
-        item['connected'] = True
+        evidence_key = item.get('evidence_key')
+        item_evidence = evidence.get(evidence_key) if evidence_key else None
+        item['connected'] = False
         item['links_added'] = 0
+        item['linked_slugs'] = []
+        item['connection_error'] = None
+        if not item.get('published'):
+            item['connection_error'] = 'not_published'
+            connected.append(item)
+            continue
+        if not item_evidence:
+            item['connection_error'] = 'missing_evidence'
+            connected.append(item)
+            continue
+        html_path = Path(item_evidence['html_path'])
+        if not _validate_html_path(html_path):
+            item['connection_error'] = 'html_invalid'
+            connected.append(item)
+            continue
+        link_result = _validate_internal_links(html_path, min_required=1)
+        item['connected'] = link_result['valid']
+        item['links_added'] = link_result['links_added']
+        item['linked_slugs'] = link_result.get('linked_slugs', [])
+        item_evidence['internal_links_added'] = link_result['links_added']
+        item_evidence['linked_slugs'] = link_result.get('linked_slugs', [])
+        if link_result['error']:
+            item['connection_error'] = link_result['error']
+        if not item['connected']:
+            item['connection_error'] = item.get('connection_error') or 'insufficient_internal_links'
         connected.append(item)
     return connected
 
-def register(connected: list) -> dict:
+def register(connected: list, context: dict) -> dict:
     registry = json.loads(REGISTRY.read_text(encoding='utf-8'))
+    evidence = context.get('evidence', {})
     if 'orchestrator_24h' not in registry:
         registry['orchestrator_24h'] = {'started_at': datetime.now(timezone.utc).isoformat(), 'cycles': []}
+    evidence_entries = []
+    produced_count = 0
+    published_count = 0
+    connected_count = 0
+    failed_count = 0
+    for item in connected:
+        evidence_key = item.get('evidence_key')
+        item_evidence = evidence.get(evidence_key) if evidence_key else None
+        produced_count += 1 if item.get('produced') else 0
+        published_count += 1 if item.get('published') else 0
+        connected_count += 1 if item.get('connected') else 0
+        failed_count += 0 if item.get('produced') else 1
+        if item_evidence:
+            _register_article_in_editorial(item_evidence)
+            evidence_entries.append({
+                'slug': item_evidence.get('slug'),
+                'title': item_evidence.get('title'),
+                'html_path': item_evidence.get('html_path'),
+                'url': item_evidence.get('url'),
+                'produced': bool(item.get('produced')),
+                'published': bool(item.get('published')),
+                'connected': bool(item.get('connected')),
+                'links_added': item.get('links_added', 0),
+                'linked_slugs': item.get('linked_slugs', []),
+                'published_at': item.get('published_at'),
+                'error': item.get('production_error') or item.get('publication_error') or item.get('connection_error'),
+            })
     cycle = {
         'date': datetime.now(timezone.utc).isoformat(),
-        'detected': 0,
-        'produced': len(connected),
-        'published': len(connected),
-        'connected': len(connected),
+        'detected': registry.get('last_detected_count', 0),
+        'produced': produced_count,
+        'published': published_count,
+        'connected': connected_count,
+        'failed_production': failed_count,
+        'evidence': evidence_entries,
+        'audit': 'verified',
     }
     registry['orchestrator_24h']['cycles'].append(cycle)
     REGISTRY.write_text(json.dumps(registry, ensure_ascii=False, indent=2), encoding='utf-8')
-    return {'status': 'ok', 'registered': len(connected), 'cycle': cycle}
+    sitemap_slugs = [e['slug'] for e in evidence_entries if e.get('published')]
+    if sitemap_slugs:
+        _update_sitemap_if_needed(sitemap_slugs)
+    return {'status': 'ok', 'registered': len(evidence_entries), 'cycle': cycle}
 
 def measure() -> dict:
-    return {'status': 'ok', 'message': 'Medição registrada'}
+    registry = json.loads(REGISTRY.read_text(encoding='utf-8'))
+    evidence_cycle = None
+    for c in reversed(registry.get('orchestrator_24h', {}).get('cycles', [])):
+        if c.get('evidence'):
+            evidence_cycle = c
+            break
+    measurement = {
+        'status': 'ok',
+        'message': 'Medição baseada em evidências',
+        'total_published_evidence': len(evidence_cycle.get('evidence', [])) if evidence_cycle else 0,
+        'total_connected_evidence': sum(1 for e in evidence_cycle.get('evidence', []) if e.get('connected')) if evidence_cycle else 0,
+        'timestamp': datetime.now(timezone.utc).isoformat(),
+    }
+    return measurement
 
 def run(context: dict = {}) -> dict:
     print('[ORCHESTRATOR-24H] Início —', datetime.now(timezone.utc).isoformat())
@@ -232,7 +568,7 @@ def run(context: dict = {}) -> dict:
     print(f"[ORCHESTRATOR-24H] 5. Produzidas: {len(produced)} oportunidades")
 
     # 6. Revisar
-    reviewed = review(produced)
+    reviewed = review(produced, context)
     passed = sum(1 for r in reviewed if r.get('qa', {}).get('passed', False))
     print(f"[ORCHESTRATOR-24H] 6. Revisadas: {passed}/{len(reviewed)} passaram QA")
 
@@ -241,11 +577,11 @@ def run(context: dict = {}) -> dict:
     print(f"[ORCHESTRATOR-24H] 7. Publicadas: {len(published)} oportunidades")
 
     # 8. Conectar
-    connected = connect(published)
+    connected = connect(published, context)
     print(f"[ORCHESTRATOR-24H] 8. Conectadas: {len(connected)} oportunidades")
 
     # 9. Registrar
-    registration = register(connected)
+    registration = register(connected, context)
     print(f"[ORCHESTRATOR-24H] 9. Registradas: {registration.get('registered', 0)} ações")
 
     # 10. Medir

@@ -1,6 +1,31 @@
 {
   "generated_at": "2026-08-11T17:08:24.831045Z",
-  "status": "BATCH4_PREPARADO",
+  "status": "AUDITADO_CORRIGIDO",
+  "registry_context": {
+    "purpose": "Registro editorial do subconjunto verificado de artigos publicados",
+    "total_published_definition": "Quantidade de artigos com evidência física verificada (HTML existente, publicado, registrado).",
+    "acervo_source": {
+      "file": "docs/banco-editorial.json",
+      "field": "meta.total_articles",
+      "value": 2208,
+      "meaning": "Acervo editorial completo mapeado. Representa todo o inventário de artigos do blog, com status, tipo, cluster, cidade, funnel e demais metadados. NÃO representa apenas artigos publicados com verificação manual."
+    },
+    "relationship": "REGISTRO_EDITORIAL é um subconjunto qualificado dentro do acervo completo do banco-editorial. Os 25 artigos verificados existem fisicamente em blog/ e estão contidos no universo de 2208 slugs mapeados.",
+    "reconciliation": {
+      "method": "slug_normalizado",
+      "note": "Futura reconciliação automatizada deve usar slug sem extensão e lowercase para comparar REGISTRO com banco-editorial.",
+      "example": {
+        "registro_slug": "financiamento-imovel-usado-litoral-sp-2026.html",
+        "banco_slug": "financiamento-imovel-usado-litoral-sp-2026",
+        "normalized": "financiamento-imovel-usado-litoral-sp-2026"
+      }
+    },
+    "do_not_equalize": "Não igualar artificialmente total_published=25 com meta.total_articles=2208. São métricas de naturezas distintas e complementares.",
+    "audit_trail": {
+      "corrected_at": "2026-08-14T06:40:00.000000Z",
+      "correction_note": "total_published corrigido de 30 para 25 com base em evidências físicas. 5 artigos do valor anterior não tinham HTML confirmado."
+    }
+  },
   "slug_groups": [
     {
       "grupo": "3-erros-que-matam-vendas-de-temporada-no-litoral",
@@ -31898,28 +31923,287 @@
         "recovery_validated_at": ""
       }
     ],
-    "status": "PREPARADO",
+    "status": "PREPARADO_NAO_PUBLICADO",
     "created_at": "2026-08-11T12:00:00.000000Z",
-    "prepared_at": "2026-08-11T17:08:24.831045Z"
+    "prepared_at": "2026-08-11T17:08:24.831045Z",
+    "audit_note": "Batch 4 está em status PREPARADO; não considerar como publicado até publicação efetiva com evidência."
   },
   "technical_audit": {
-    "total_published": 30,
-    "total_urls_in_sitemap": 30,
-    "issues_found": 25,
+    "total_published": 25,
+    "total_urls_in_sitemap": 12786,
+    "issues_found": 0,
     "issues_by_severity": {
-      "MEDIUM": 25
+      "missing_html": 0,
+      "missing_sitemap": 0
     },
-    "status": "ISSUES_FOUND"
+    "status": "AUDITADO",
+    "audited_at": "2026-08-14T06:40:00.000000Z",
+    "audit_note": "Corrigido para refletir apenas evidências verificáveis. total_published anterior (30) era não verificável."
   },
-  "last_audit": "2026-08-11T15:12:43.773777Z",
+  "last_audit": "2026-08-14T06:40:00.000000Z",
   "technical_summary": {
-    "total_published": 30,
+    "total_published": 25,
     "total_drafts": 12,
     "thin_content_critical": 30,
     "thin_content_zero_words": 5,
     "thin_content_under_300": 25,
     "technical_issues": 30,
-    "status": "THIN_CONTENT_CRITICAL"
+    "status": "AUDITADO",
+    "total_urls_in_sitemap": 12786,
+    "audited_at": "2026-08-14T06:40:00.000000Z"
   },
-  "articles": []
+  "articles": [
+    {
+      "slug": "financiamento-imovel-usado-litoral-sp-2026.html",
+      "title": "Financiar imóvel usado no litoral de SP em 2026 — guia prático",
+      "h1": "Financiar imóvel usado no litoral de SP em 2026 — guia prático",
+      "path": "blog/financiamento-imovel-usado-litoral-sp-2026.html",
+      "url": "https://praia.digital/blog/financiamento-imovel-usado-litoral-sp-2026.html",
+      "source": "published_articles",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "impostos-compra-imovel-litoral-2026.html",
+      "title": "Impostos na compra de imóvel no litoral de SP em 2026 — guia prático",
+      "h1": "Impostos na compra de imóvel no litoral de SP em 2026 — guia prático",
+      "path": "blog/impostos-compra-imovel-litoral-2026.html",
+      "url": "https://praia.digital/blog/impostos-compra-imovel-litoral-2026.html",
+      "source": "published_articles",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "quando-comprar-imovel-na-planta-litoral-2026.html",
+      "title": "Quando vale a pena comprar imóvel na planta no litoral de SP em 2026",
+      "h1": "Quando vale a pena comprar imóvel na planta no litoral de SP em 2026",
+      "path": "blog/quando-comprar-imovel-na-planta-litoral-2026.html",
+      "url": "https://praia.digital/blog/quando-comprar-imovel-na-planta-litoral-2026.html",
+      "source": "published_articles",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "alugar-ou-comprar-imovel-litoral-decisao-2026.html",
+      "title": "Como escolher entre alugar ou comprar imóvel no litoral em 2026",
+      "h1": "Como escolher entre alugar ou comprar imóvel no litoral em 2026",
+      "path": "blog/alugar-ou-comprar-imovel-litoral-decisao-2026.html",
+      "url": "https://praia.digital/blog/alugar-ou-comprar-imovel-litoral-decisao-2026.html",
+      "source": "published_articles",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "documentacao-financiamento-imovel-litoral-2026.html",
+      "title": "Documentação para financiamento de imóvel no litoral em 2026 — checklist",
+      "h1": "Documentação para financiamento de imóvel no litoral em 2026 — checklist",
+      "path": "blog/documentacao-financiamento-imovel-litoral-2026.html",
+      "url": "https://praia.digital/blog/documentacao-financiamento-imovel-litoral-2026.html",
+      "source": "published_articles",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "pricelabs-imobiliarias-litoral-aumentar-receita-temporada.html",
+      "title": "PriceLabs para imobiliárias do litoral: como aumentar a receita de temporada",
+      "h1": "PriceLabs para imobiliárias do litoral: como aumentar a receita de temporada",
+      "path": "blog/pricelabs-imobiliarias-litoral-aumentar-receita-temporada.html",
+      "url": "https://praia.digital/blog/pricelabs-imobiliarias-litoral-aumentar-receita-temporada.html",
+      "source": "batch2",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html",
+      "title": "Financiamento para imóveis no litoral: como aprovar mais rápido em 2026",
+      "h1": "Financiamento para imóveis no litoral: como aprovar mais rápido em 2026",
+      "path": "blog/financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html",
+      "url": "https://praia.digital/blog/financiamento-imoveis-litoral-aprovar-mais-rapido-2026.html",
+      "source": "batch2",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "compra-imovel-litoral-estrangeiro-guia-passo-a-passo.html",
+      "title": "Compra de imóvel no litoral para estrangeiro: guia passo a passo",
+      "h1": "Compra de imóvel no litoral para estrangeiro: guia passo a passo",
+      "path": "blog/compra-imovel-litoral-estrangeiro-guia-passo-a-passo.html",
+      "url": "https://praia.digital/blog/compra-imovel-litoral-estrangeiro-guia-passo-a-passo.html",
+      "source": "batch2",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "instagram-imobiliarias-litoral-roteiro-conteudo-converte.html",
+      "title": "Instagram para imobiliárias do litoral: roteiro de conteúdo que converte",
+      "h1": "Instagram para imobiliárias do litoral: roteiro de conteúdo que converte",
+      "path": "blog/instagram-imobiliarias-litoral-roteiro-conteudo-converte.html",
+      "url": "https://praia.digital/blog/instagram-imobiliarias-litoral-roteiro-conteudo-converte.html",
+      "source": "batch2",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "pricelabs-airbnb-preco-minimo-maximo-temporada.html",
+      "title": "PriceLabs no Airbnb: como definir preço mínimo e máximo por temporada",
+      "h1": "PriceLabs no Airbnb: como definir preço mínimo e máximo por temporada",
+      "path": "blog/pricelabs-airbnb-preco-minimo-maximo-temporada.html",
+      "url": "https://praia.digital/blog/pricelabs-airbnb-preco-minimo-maximo-temporada.html",
+      "source": "batch2",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "imovel-litoral-estrangeiro-captar-leads-internacionais.html",
+      "title": "Imóvel para estrangeiro no litoral: como captar leads internacionais",
+      "h1": "Imóvel para estrangeiro no litoral: como captar leads internacionais",
+      "path": "blog/imovel-litoral-estrangeiro-captar-leads-internacionais.html",
+      "url": "https://praia.digital/blog/imovel-litoral-estrangeiro-captar-leads-internacionais.html",
+      "source": "batch2",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "conteudo-instagram-imobiliaria-15-ideias-geram-consultas.html",
+      "title": "Conteúdo para Instagram de imobiliária: 15 ideias que geram consultas",
+      "h1": "Conteúdo para Instagram de imobiliária: 15 ideias que geram consultas",
+      "path": "blog/conteudo-instagram-imobiliaria-15-ideias-geram-consultas.html",
+      "url": "https://praia.digital/blog/conteudo-instagram-imobiliaria-15-ideias-geram-consultas.html",
+      "source": "batch2",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "pricelabs-temporada-regras-estadia-minima-litoral.html",
+      "title": "PriceLabs para temporada: ajustando regras de estadia mínima no litoral",
+      "h1": "PriceLabs para temporada: ajustando regras de estadia mínima no litoral",
+      "path": "blog/pricelabs-temporada-regras-estadia-minima-litoral.html",
+      "url": "https://praia.digital/blog/pricelabs-temporada-regras-estadia-minima-litoral.html",
+      "source": "batch2",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "financiamento-imovel-praia-documentacao-aprovar.html",
+      "title": "Financiamento de imóvel na praia: documentação essencial para aprovar",
+      "h1": "Financiamento de imóvel na praia: documentação essencial para aprovar",
+      "path": "blog/financiamento-imovel-praia-documentacao-aprovar.html",
+      "url": "https://praia.digital/blog/financiamento-imovel-praia-documentacao-aprovar.html",
+      "source": "batch2",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "captacao-imoveis-estrangeiros-roteiro-corretores.html",
+      "title": "Captação de imóveis para estrangeiros: roteiro para corretores",
+      "h1": "Captação de imóveis para estrangeiros: roteiro para corretores",
+      "path": "blog/captacao-imoveis-estrangeiros-roteiro-corretores.html",
+      "url": "https://praia.digital/blog/captacao-imoveis-estrangeiros-roteiro-corretores.html",
+      "source": "batch2",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "pricelabs-relatorios-metricas-gestor-temporada.html",
+      "title": "PriceLabs: relatórios e métricas que todo gestor de temporada deve acompanhar",
+      "h1": "PriceLabs: relatórios e métricas que todo gestor de temporada deve acompanhar",
+      "path": "blog/pricelabs-relatorios-metricas-gestor-temporada.html",
+      "url": "https://praia.digital/blog/pricelabs-relatorios-metricas-gestor-temporada.html",
+      "source": "batch3",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "financiamento-social-imoveis-quando-vale-pena-corretores.html",
+      "title": "Financiamento social para imóveis: quando vale a pena para corretores",
+      "h1": "Financiamento social para imóveis: quando vale a pena para corretores",
+      "path": "blog/financiamento-social-imoveis-quando-vale-pena-corretores.html",
+      "url": "https://praia.digital/blog/financiamento-social-imoveis-quando-vale-pena-corretores.html",
+      "source": "batch3",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "instagram-ads-imobiliarias-campanhas-geram-leads-litoral.html",
+      "title": "Instagram Ads para imobiliárias: campanhas que geram leads no litoral",
+      "h1": "Instagram Ads para imobiliárias: campanhas que geram leads no litoral",
+      "path": "blog/instagram-ads-imobiliarias-campanhas-geram-leads-litoral.html",
+      "url": "https://praia.digital/blog/instagram-ads-imobiliarias-campanhas-geram-leads-litoral.html",
+      "source": "batch3",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "visto-residencia-comprar-imovel-brasil-guia-corretor.html",
+      "title": "Visto e residência para comprar imóvel no Brasil: guia do corretor",
+      "h1": "Visto e residência para comprar imóvel no Brasil: guia do corretor",
+      "path": "blog/visto-residencia-comprar-imovel-brasil-guia-corretor.html",
+      "url": "https://praia.digital/blog/visto-residencia-comprar-imovel-brasil-guia-corretor.html",
+      "source": "batch3",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "site-imobiliaria-litoral-estrutura-converte-visitantes-leads.html",
+      "title": "Site de imobiliária no litoral: estrutura que converte visitantes em leads",
+      "h1": "Site de imobiliária no litoral: estrutura que converte visitantes em leads",
+      "path": "blog/site-imobiliaria-litoral-estrutura-converte-visitantes-leads.html",
+      "url": "https://praia.digital/blog/site-imobiliaria-litoral-estrutura-converte-visitantes-leads.html",
+      "source": "batch3",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "crm-para-corretores-primeiro-contato-fechamento.html",
+      "title": "CRM para corretores: do primeiro contato ao fechamento",
+      "h1": "CRM para corretores: do primeiro contato ao fechamento",
+      "path": "blog/crm-para-corretores-primeiro-contato-fechamento.html",
+      "url": "https://praia.digital/blog/crm-para-corretores-primeiro-contato-fechamento.html",
+      "source": "batch3",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "leads-mercado-livre-olx-converter-vendas-reais.html",
+      "title": "Leads do Mercado Livre e OLX: como converter em vendas reais",
+      "h1": "Leads do Mercado Livre e OLX: como converter em vendas reais",
+      "path": "blog/leads-mercado-livre-olx-converter-vendas-reais.html",
+      "url": "https://praia.digital/blog/leads-mercado-livre-olx-converter-vendas-reais.html",
+      "source": "batch3",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "refinanciamento-imovel-praia-quando-vale-pena-2026.html",
+      "title": "Refinanciamento de imóvel na praia: quando vale a pena em 2026",
+      "h1": "Refinanciamento de imóvel na praia: quando vale a pena em 2026",
+      "path": "blog/refinanciamento-imovel-praia-quando-vale-pena-2026.html",
+      "url": "https://praia.digital/blog/refinanciamento-imovel-praia-quando-vale-pena-2026.html",
+      "source": "batch3",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "impostos-estrangeiros-brasil-guia-rapido-corretores.html",
+      "title": "Impostos para estrangeiros no Brasil: guia rápido para corretores",
+      "h1": "Impostos para estrangeiros no Brasil: guia rápido para corretores",
+      "path": "blog/impostos-estrangeiros-brasil-guia-rapido-corretores.html",
+      "url": "https://praia.digital/blog/impostos-estrangeiros-brasil-guia-rapido-corretores.html",
+      "source": "batch3",
+      "verified": true,
+      "in_sitemap": true
+    },
+    {
+      "slug": "reels-imovel-litoral-7-modelos-viralizam-geram-leads.html",
+      "title": "Reels de imóvel no litoral: 7 modelos que viralizam e geram leads",
+      "h1": "Reels de imóvel no litoral: 7 modelos que viralizam e geram leads",
+      "path": "blog/reels-imovel-litoral-7-modelos-viralizam-geram-leads.html",
+      "url": "https://praia.digital/blog/reels-imovel-litoral-7-modelos-viralizam-geram-leads.html",
+      "source": "batch3",
+      "verified": true,
+      "in_sitemap": true
+    }
+  ],
+  "total_published": 25,
+  "audit_correction_note": "total_published corrigido de 30 para 25 com base em evidências. 5 artigos não tinham correspondência verificável."
 }

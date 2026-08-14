@@ -19,7 +19,6 @@
 }
 </script>
 
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -61,11 +60,12 @@
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://praia.digital/index.html" },
-      { "@type": "ListItem", "position": 2, "name": "Página", "item": "https://praia.digital/servico-fotografia-edicao.html" }
+      { "@type": "ListItem", "position": 2, "name": "Serviços", "item": "https://praia.digital/servicos.html" },
+      { "@type": "ListItem", "position": 3, "name": "Fotografia e Edição", "item": "https://praia.digital/servico-fotografia-edicao.html" }
     ]
   }
   </script>
-  <meta name="description" content="Serviço de fotografia e edição profissional para imobiliárias e corretores. Aumente suas vendas em até 3x com imagens profissionais. Entrega em 48h.">
+  <meta name="description" content="Serviço de fotografia e edição profissional para imobiliárias e corretores. Aumente suas vendas com imagens profissionais. Entrega em 48h.">
   <meta name="keywords" content="fotografia imóveis, edição fotos imóveis, fotografia profissional imobiliária, edição profissional imóveis, fotos para anúncios imobiliários, fotógrafo imobiliário">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -147,14 +147,38 @@
       box-shadow: 0 10px 30px rgba(0,212,255,0.3);
     }
     .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(0,212,255,0.5); }
+    .btn-secondary {
+      display: inline-block;
+      background: transparent;
+      color: #ffffff;
+      font-weight: 700;
+      padding: 1.2rem 2.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s;
+      border: 2px solid rgba(255,255,255,0.25);
+      margin-left: 1rem;
+    }
+    .btn-secondary:hover { border-color: #ffffff; transform: translateY(-3px); }
     .footer { text-align: center; padding: 3rem 2rem; color: #6a7185; font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.05); }
     .footer a { color: #a0aec0; text-decoration: none; margin: 0 0.8rem; }
     .footer a:hover { color: #00d4ff; }
+
+    .form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 1rem; }
+    .field { display: flex; flex-direction: column; }
+    .field input, .field select { padding: 0.9rem 1rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.04); color: #e0e6f0; font-size: 1rem; }
+    .field label { font-size: 0.85rem; color: #a0aec0; margin-bottom: 0.4rem; }
+    .form-cta { margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+    .form-note { color: #a0aec0; font-size: 0.9rem; margin-top: 1rem; }
+    .form-status { margin-top: 0.75rem; font-size: 0.95rem; min-height: 1.2rem; }
+    .success { color: #00ff88; }
+    .error { color: #ff6b6b; }
 
     @media (max-width: 768px) {
       .hero h1 { font-size: 2rem; }
       .section-title { font-size: 1.8rem; }
       .grid-2 { grid-template-columns: 1fr; }
+      .btn-secondary { margin-left: 0; margin-top: 1rem; }
     }
   </style>
   <link rel="canonical" href="https://praia.digital/servico-fotografia-edicao.html">
@@ -195,7 +219,7 @@
   },
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
     "opens": "09:00",
     "closes": "18:00"
   }
@@ -203,14 +227,11 @@
 </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <link rel="preconnect" href="https://wa.me">
-  <link rel="preconnect" href="https://api.qrserver.com">
-
+  <link rel="preconnect" href="https://wa.me" crossorigin>
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
   <link rel="dns-prefetch" href="https://images.unsplash.com">
   <link rel="dns-prefetch" href="https://wa.me">
-  <link rel="dns-prefetch" href="https://api.qrserver.com">
 
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
@@ -238,19 +259,20 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     <div class="badge">⭐ Serviço Premium para Imobiliárias</div>
     <h1>Fotografia e Edição Profissional<br>para Imóveis</h1>
     <p>Imóveis com fotos profissionais recebem até 3x mais contatos e vendem até 2x mais rápido. Entregamos em 48h.</p>
-    <a href="#contato" class="btn-primary">Solicitar Orçamento Grátis</a>
+    <a href="#contato" class="btn-primary">Solicitar Orçamento</a>
+    <a class="btn-secondary" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Quero%20falar%20sobre%20fotografia%20e%20edi%C3%A7%C3%A3o%20de%20im%C3%B3veis&utm_source=site&utm_medium=whatsapp&utm_campaign=servico-fotografia-edicao" target="_blank" rel="noopener">WhatsApp</a>
   </header>
 
   <section class="section">
     <div class="container">
-      <h2 class="section-title">O que está incluso</h2>
-      <p class="section-subtitle">Serviço completo para deixar seus anúncios imobiliários irresistíveis.</p>
+      <h2 class="section-title">Serviços prioritários</h2>
+      <p class="section-subtitle">Dois serviços para transformar seus anúncios em conversão.</p>
 
       <div class="cards-grid">
         <div class="card">
           <div class="card-icon">📸</div>
-          <h3>Ensaio Fotográfico</h3>
-          <p>Até 10 fotos profissionais por imóvel, com iluminação e angles que valorizam cada ambiente.</p>
+          <h3>Fotografia profissional de imóveis</h3>
+          <p>Até 10 fotos profissionais por imóvel, com iluminação e ângulos que valorizam cada ambiente.</p>
           <ul>
             <li>Fotos de todos os cômodos</li>
             <li>Ângulos estratégicos</li>
@@ -259,32 +281,12 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         </div>
         <div class="card">
           <div class="card-icon">🎨</div>
-          <h3>Edição Avançada</h3>
-          <p>Correção de luz, cor, remoção de imperfeições e otimização para portais e redes sociais.</p>
+          <h3>Edição profissional de anúncios</h3>
+          <p>Otimização completa para portais, redes sociais e anúncios digitais.</p>
           <ul>
             <li>Remoção de objetos distrativos</li>
-            <li>Correção de perspectiva</li>
-            <li>Padronização de estilo</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="card-icon">📱</div>
-          <h3>Formatos Otimizados</h3>
-          <p>Fotos prontas para portais, Instagram, WhatsApp, site e e-mail marketing.</p>
-          <ul>
-            <li>Resolução ideal para cada plataforma</li>
-            <li> compressão sem perda de qualidade</li>
-            <li>Prontas para publicar</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="card-icon">⚡</div>
-          <h3>Entrega em 48h</h3>
-          <p>Receba tudo pronto para usar em até 2 dias úteis. Sem dor de cabeça, sem atrasos.</p>
-          <ul>
-            <li>Prazo garantido</li>
-            <li>Entrega digital</li>
-            <li>Revisão inclusa</li>
+            <li>Correção de luz, cor e perspectiva</li>
+            <li>Padronização para cada plataforma</li>
           </ul>
         </div>
       </div>
@@ -293,7 +295,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
   <section class="section" style="background: rgba(255,255,255,0.02);">
     <div class="container">
-      <h2 class="section-title">Resultados Comprovados</h2>
+      <h2 class="section-title">Resultados comprovados</h2>
       <p class="section-subtitle">Imóveis com fotos profissionais geram mais interesse e vendem mais rápido.</p>
 
       <div class="highlight-box">
@@ -322,13 +324,13 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
   <section class="section" id="modelo">
     <div class="container">
-      <h2 class="section-title">Modelo de Atendimento</h2>
+      <h2 class="section-title">Modelo de atendimento</h2>
       <p class="section-subtitle">Escolha o modelo que melhor se adapta à sua imobiliária.</p>
 
       <div class="cards-grid">
         <div class="card">
           <div class="card-icon">🏠</div>
-          <h3>Por Imóvel</h3>
+          <h3>Por imóvel</h3>
           <p>Ideal para imobiliárias com volume médio. Pague apenas pelos imóveis que quer destacar.</p>
           <ul>
             <li>A partir de R$ 150/imóvel</li>
@@ -338,7 +340,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         </div>
         <div class="card">
           <div class="card-icon">📦</div>
-          <h3>Pacote Mensal</h3>
+          <h3>Pacote mensal</h3>
           <p>Para imobiliárias com alto volume de lançamentos e captações. Melhor custo-benefício.</p>
           <ul>
             <li>20 fotos editadas/mês</li>
@@ -349,7 +351,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         </div>
         <div class="card">
           <div class="card-icon">🏆</div>
-          <h3>Pacote Premium</h3>
+          <h3>Pacote premium</h3>
           <p>Para imobiliárias de alto padrão. Inclui vídeo profissional + fotografia.</p>
           <ul>
             <li>10 fotos + vídeo/imóvel</li>
@@ -364,7 +366,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
   <section class="section" style="background: rgba(255,255,255,0.02);">
     <div class="container">
-      <h2 class="section-title">Como Funciona</h2>
+      <h2 class="section-title">Como funciona</h2>
       <p class="section-subtitle">Processo simples e rápido, sem complicações.</p>
 
       <div class="cards-grid">
@@ -387,10 +389,45 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
   <section class="section" id="contato">
     <div class="container">
       <div class="cta-section">
-        <h2>Pronto para Aumentar suas Vendas?</h2>
-        <p>Solicite um orçamento gratuito e sem compromisso. Descubra como fotos profissionais podem transformar seus resultados.</p>
-        <a href="mailto:comercial@praia.digital?subject=Orçamento%20Fotografia%20Imóveis" class="btn-primary">Solicitar Orçamento Grátis</a>
-        <p style="margin-top:1.5rem;font-size:0.9rem;">📞 (11) 95434-6288 | comercial@praia.digital</p>
+        <h2>Pronto para aumentar suas vendas?</h2>
+        <p>Solicite um orçamento gratuito e sem compromisso.</p>
+
+        <form id="leadForm" class="form-grid" style="max-width: 960px; margin: 0 auto; text-align: left;">
+          <div class="field">
+            <label for="name">Nome completo</label>
+            <input type="text" id="name" placeholder="Seu nome" required />
+          </div>
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="seu@email.com" />
+          </div>
+          <div class="field">
+            <label for="phone">WhatsApp</label>
+            <input type="tel" id="phone" placeholder="(11) 99999-9999" required />
+          </div>
+          <div class="field">
+            <label for="city">Cidade</label>
+            <input type="text" id="city" placeholder="Ex: Santos" required />
+          </div>
+          <div class="field" style="grid-column: 1 / -1;">
+            <label for="service_type">Tipo de serviço</label>
+            <select id="service_type" required>
+              <option value="" disabled selected>Selecione uma opção</option>
+              <option value="Fotografia profissional">Fotografia profissional de imóveis</option>
+              <option value="Edição profissional">Edição profissional de anúncios</option>
+              <option value="Fotografia + edição">Fotografia + edição</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </div>
+          <input type="hidden" id="source" value="servico-fotografia-edicao" />
+          <input type="hidden" id="magnet" value="" />
+          <div class="form-cta" style="grid-column: 1 / -1; justify-content: center;">
+            <button type="submit" class="btn-primary">Solicitar orçamento</button>
+            <a class="btn-secondary" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Quero%20falar%20sobre%20fotografia%20e%20edi%C3%A7%C3%A3o%20de%20im%C3%B3veis&utm_source=site&utm_medium=whatsapp&utm_campaign=servico-fotografia-edicao" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+          <div id="formStatus" class="form-status" style="grid-column: 1 / -1;"></div>
+          <p class="form-note">📞 (11) 95434-6288 | <a href="mailto:comercial@praia.digital?subject=Or%C3%A7amento%20Fotografia%20Im%C3%B3veis" style="color:#a0aec0">comercial@praia.digital</a></p>
+        </form>
       </div>
     </div>
   </section>
@@ -406,13 +443,65 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
   </footer>
 
   <script>
-    // Scroll suave para links internos
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         const target = document.querySelector(this.getAttribute('href'));
         if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
       });
     });
+
+    (function(){
+      var form = document.getElementById('leadForm');
+      if (!form) return;
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        var name = document.getElementById('name').value.trim();
+        var email = document.getElementById('email').value.trim() || null;
+        var phone = document.getElementById('phone').value.trim() || null;
+        var city = document.getElementById('city').value.trim() || null;
+        var service_type = document.getElementById('service_type').value || null;
+        var source = document.getElementById('source').value || 'servico-fotografia-edicao';
+        var magnet = document.getElementById('magnet').value || null;
+        var statusEl = document.getElementById('formStatus');
+
+        if (!name || !phone || !city || !service_type) {
+          statusEl.textContent = 'Preencha nome, WhatsApp, cidade e tipo de serviço.';
+          statusEl.className = 'form-status error';
+          return;
+        }
+
+        var data = {
+          name: name,
+          email: email,
+          phone: phone,
+          city: city,
+          service_type: service_type,
+          source: source,
+          magnet: magnet
+        };
+
+        fetch('https://academy.praia.digital/leads', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        })
+        .then(function(r){ return r.json().then(function(json){ return {status: r.status, json: json}; }); })
+        .then(function(res){
+          if (res.status === 200 || res.status === 201) {
+            statusEl.textContent = 'Recebido! Entraremos em contato em até 24h.';
+            statusEl.className = 'form-status success';
+            form.reset();
+          } else {
+            statusEl.textContent = 'Erro: ' + JSON.stringify(res.json || res.status);
+            statusEl.className = 'form-status error';
+          }
+        })
+        .catch(function(){
+          statusEl.textContent = 'Erro de conexão. Tente novamente.';
+          statusEl.className = 'form-status error';
+        });
+      });
+    })();
   </script>
 </body>
 </html>
