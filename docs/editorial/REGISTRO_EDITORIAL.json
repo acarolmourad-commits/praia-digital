@@ -20796,6 +20796,46 @@
       "status": "published",
       "published_at": "2026-08-14",
       "batch": "Análise de Dados 2"
+    },
+    {
+      "slug": "case-de-sucesso-proprietario-imovel-alto-padrao-litoral-2026",
+      "title": "Case de sucesso: proprietário de imóvel alto padrão no litoral 2026",
+      "cluster": "Casos de Sucesso",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Casos de Sucesso 2"
+    },
+    {
+      "slug": "case-de-sucesso-corretor-venda-rapida-litoral-2026",
+      "title": "Case de sucesso: corretor com venda rápida no litoral 2026",
+      "cluster": "Casos de Sucesso",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Casos de Sucesso 2"
+    },
+    {
+      "slug": "case-de-sucesso-imobiliaria-captacao-lideranca-litoral-2026",
+      "title": "Case de sucesso: imobiliária com captação e liderança no litoral 2026",
+      "cluster": "Casos de Sucesso",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Casos de Sucesso 2"
+    },
+    {
+      "slug": "case-de-sucesso-investidor-flipping-litoral-2026",
+      "title": "Case de sucesso: investidor com flipping no litoral 2026",
+      "cluster": "Casos de Sucesso",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Casos de Sucesso 2"
+    },
+    {
+      "slug": "case-de-sucesso-casa-home-management-gestao-temporada-2026",
+      "title": "Case de sucesso: CASA Home Management — gestão de temporada no litoral 2026",
+      "cluster": "Casos de Sucesso",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Casos de Sucesso 2"
     }
   ],
   "sitemap_plan": {
@@ -32974,7 +33014,7 @@
       "in_sitemap": true
     }
   ],
-  "total_published": 65,
+  "total_published": 70,
   "audit_correction_note": "total_published corrigido de 30 para 25 com base em evidências. 5 artigos não tinham correspondência verificável.",
-  "last_updated": "2026-08-14T21:55:46.878853+00:00"
+  "last_updated": "2026-08-14T22:01:53.518703+00:00"
 }
