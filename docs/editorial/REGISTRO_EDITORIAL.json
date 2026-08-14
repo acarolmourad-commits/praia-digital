@@ -20996,6 +20996,46 @@
       "status": "published",
       "published_at": "2026-08-14",
       "batch": "Gestão 2"
+    },
+    {
+      "slug": "funil-anuncios-lancamentos-litoral-paulista-2026",
+      "title": "Funil de anúncios para lançamentos no litoral paulista 2026",
+      "cluster": "Marketing Digital",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Marketing Digital 3"
+    },
+    {
+      "slug": "google-ads-temporada-fora-alta-litoral-paulista-2026",
+      "title": "Google Ads para temporada fora da alta temporada no litoral paulista 2026",
+      "cluster": "Marketing Digital",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Marketing Digital 3"
+    },
+    {
+      "slug": "ab-testing-anuncios-imobiliarios-locais-litoral-2026",
+      "title": "A/B testing em anúncios imobiliários locais no litoral 2026",
+      "cluster": "Marketing Digital",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Marketing Digital 3"
+    },
+    {
+      "slug": "automacao-orcamento-anuncios-imobiliarias-pequenas-litoral-2026",
+      "title": "Automação de orçamento em anúncios para imobiliárias pequenas no litoral 2026",
+      "cluster": "Marketing Digital",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Marketing Digital 3"
+    },
+    {
+      "slug": "mensuracao-attribution-marketing-imobiliario-local-litoral-2026",
+      "title": "Mensuração e attribution em marketing imobiliário local no litoral 2026",
+      "cluster": "Marketing Digital",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Marketing Digital 3"
     }
   ],
   "sitemap_plan": {
@@ -33174,7 +33214,7 @@
       "in_sitemap": true
     }
   ],
-  "total_published": 90,
+  "total_published": 95,
   "audit_correction_note": "total_published corrigido de 30 para 25 com base em evidências. 5 artigos não tinham correspondência verificável.",
-  "last_updated": "2026-08-14T23:07:40.477390+00:00"
+  "last_updated": "2026-08-14T23:16:10.872344+00:00"
 }
