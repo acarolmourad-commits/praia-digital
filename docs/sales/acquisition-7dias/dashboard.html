@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aquisição 7 dias — Dashboard (Praia Digital)</title>
+<style>
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#f8fafc;color:#0f172a;padding:24px}
+  .wrap{max-width:1100px;margin:0 auto}
+  .card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:20px;margin:14px 0;box-shadow:0 20px 35px rgba(0,0,0,.08)}
+  .muted{color:#475569;font-size:13px}
+  .tag{display:inline-block;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:700;margin:4px 4px 0 0}
+  .tag.approved{background:#dcfce7;color:#14532d}
+  .tag.waiting{background:#fef9c3;color:#713f12}
+  .tag.discarded{background:#fee2e2;color:#450a0a}
+  .tag.ready{background:#dbeafe;color:#1e3a8a}
+  .tag.blocked{background:#fee2e2;color:#450a0a}
+  .title{font-size:20px;font-weight:900;margin:6px 0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:10px}
+  .kpi{background:#f8fafc;border:1px solid #e5e7eb;border-radius:14px;padding:14px;text-align:center}
+  .kpi .num{font-size:28px;font-weight:900;color:#0f172a}
+  .kpi .label{color:#475569;font-size:12px;margin-top:4px}
+  table{width:100%;border-collapse:collapse;margin-top:10px}
+  th,td{text-align:left;padding:10px;border-bottom:1px solid #e5e7eb;font-size:14px}
+  th{color:#475569;font-weight:600;font-size:12px;text-transform:uppercase}
+  .btn{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:12px;background:#0f172a;color:#fff;text-decoration:none;font-weight:700}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <div class="title">Aquisição 7 dias — Dashboard</div>
+    <p class="muted">Frente: fotografia + edição | Contato externo: só humano | Última atualização: 14/08/2026</p>
+  </div>
+
+  <div class="card">
+    <div class="title">Métricas</div>
+    <div class="grid">
+      <div class="kpi"><div class="num">15</div><div class="label">Prospects analisados</div></div>
+      <div class="kpi"><div class="num">9</div><div class="label">Score ≥ 60</div></div>
+      <div class="kpi"><div class="num">2</div><div class="label">Aprovados para envio</div></div>
+      <div class="kpi"><div class="num">2</div><div class="label">Aguardando aprovação</div></div>
+      <div class="kpi"><div class="num">10</div><div class="label">Pendentes contato</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="title">Rodada 1 — Pronta para envio</div>
+    <table>
+      <tr><th>Prospect</th><th>Cidade</th><th>Canal</th><th>Serviço</th><th>Status</th></tr>
+      <tr>
+        <td>Riviera Temporada</td>
+        <td>Bertioga</td>
+        <td>WhatsApp / e-mail</td>
+        <td>Fotografia + edição</td>
+        <td><span class="tag approved">Aprovado</span></td>
+      </tr>
+      <tr>
+        <td>CASA Home Management</td>
+        <td>São Sebastião</td>
+        <td>E-mail / telefone</td>
+        <td>Edição + combo</td>
+        <td><span class="tag approved">Aprovado</span></td>
+      </tr>
+    </table>
+    <p class="muted" style="margin-top:10px">Ação: enviar manualmente e registrar em prospects-dia1.csv.</p>
+    <a class="btn" href="rodada1-envio.html" target="_blank">Abrir página de envio</a>
+  </div>
+
+  <div class="card">
+    <div class="title">Aguardando aprovação</div>
+    <table>
+      <tr><th>Prospect</th><th>Cidade</th><th>Serviço</th><th>Status</th></tr>
+      <tr>
+        <td>Rivino Invest</td>
+        <td>Bertioga</td>
+        <td>Edição + combo + recorrência</td>
+        <td><span class="tag waiting">Aguardando aprovação</span></td>
+      </tr>
+      <tr>
+        <td>Quinta Prime</td>
+        <td>Bertioga</td>
+        <td>Edição + combo + recorrência</td>
+        <td><span class="tag waiting">Aguardando aprovação</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="title">Dia 2 — Contato pendente</div>
+    <table>
+      <tr><th>#</th><th>Prospect</th><th>Cidade</th><th>Serviço</th><th>Status</th></tr>
+      <tr><td>1</td><td>Amanda Souza</td><td>Peruíbe</td><td>Fotografia + edição</td><td><span class="tag blocked">Bloqueado</span></td></tr>
+      <tr><td>2</td><td>Fábio Costa</td><td>Santos</td><td>Fotografia + edição</td><td><span class="tag blocked">Bloqueado</span></td></tr>
+      <tr><td>3</td><td>Camila Ribeiro</td><td>Santos</td><td>Fotografia + edição</td><td><span class="tag blocked">Bloqueado</span></td></tr>
+      <tr><td>4</td><td>Juliano Mendes</td><td>Santos</td><td>Fotografia + edição</td><td><span class="tag blocked">Bloqueado</span></td></tr>
+      <tr><td>5</td><td>Paulo Mendes</td><td>Bertioga</td><td>Fotografia + edição</td><td><span class="tag blocked">Bloqueado</span></td></tr>
+      <tr><td>6</td><td>Débora Almeida</td><td>Bertioga</td><td>Fotografia + edição</td><td><span class="tag blocked">Bloqueado</span></td></tr>
+      <tr><td>7</td><td>Monique Rocha</td><td>Bertioga</td><td>Fotografia + edição</td><td><span class="tag blocked">Bloqueado</span></td></tr>
+      <tr><td>8</td><td>Patrícia Barros</td><td>Bertioga</td><td>Fotografia + edição</td><td><span class="tag blocked">Bloqueado</span></td></tr>
+      <tr><td>9</td><td>Fernanda Costa</td><td>Peruíbe</td><td>Fotografia + edição</td><td><span class="tag blocked">Bloqueado</span></td></tr>
+      <tr><td>10</td><td>Marina Rocha</td><td>Santos</td><td>Fotografia + edição</td><td><span class="tag blocked">Bloqueado</span></td></tr>
+    </table>
+    <p class="muted" style="margin-top:10px">Condição de desbloqueio: confirmar 1 canal público oficial por prospect.</p>
+  </div>
+</div>
+</body>
+</html>
