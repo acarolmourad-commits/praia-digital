@@ -34,20 +34,20 @@
     input,select{width:100%;padding:.7rem;margin:.4rem 0 1rem;border-radius:12px;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.03);color:#e8ecf1}
     .badge{display:inline-block;background:#00B4D8;color:#000;font-weight:700;padding:.2rem .7rem;border-radius:999px;font-size:.8rem;margin-left:.5rem}
   </style>
-<!-- Google tag (gtag.js) -->
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){ dataLayer.push(arguments); }
-  var GA4_MEASUREMENT_ID = '';
-  if (GA4_MEASUREMENT_ID) {
-    var s = document.createElement('script');
-    s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_MEASUREMENT_ID;
-    document.head.appendChild(s);
-    gtag('js', new Date());
-    gtag('config', GA4_MEASUREMENT_ID, { anonymize_ip: true });
-  }
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    var GA4_MEASUREMENT_ID = '';
+    if (GA4_MEASUREMENT_ID) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_MEASUREMENT_ID;
+      document.head.appendChild(s);
+      gtag('js', new Date());
+      gtag('config', GA4_MEASUREMENT_ID, { anonymize_ip: true });
+    }
+  </script>
 </head>
 <body>
   <div class="wrap">
@@ -77,12 +77,8 @@
         <label>WhatsApp
           <input type="tel" id="phone" placeholder="(11) 99999-9999">
         </label>
-        <label>Forma de pagamento
-          <select id="payment">
-            <option value="pix">PIX</option>
-            <option value="credit">Cartão de crédito</option>
-            <option value="boleto">Boleto</option>
-          </select>
+        <label>CPF
+          <input type="text" id="document" placeholder="000.000.000-00">
         </label>
         <button type="submit" class="cta">Confirmar pagamento</button>
       </form>
@@ -103,25 +99,47 @@
 
     document.getElementById('checkout-form').addEventListener('submit', async (e) => {
       e.preventDefault();
+      
+      // Look up course_id from slug via API
+      let courseId = null;
+      if (slug) {
+        try {
+          const courseResp = await fetch('/academy/courses/' + encodeURIComponent(slug));
+          if (courseResp.ok) {
+            const courseData = await courseResp.json();
+            courseId = courseData.id;
+          }
+        } catch (err) {
+          console.error('Failed to look up course:', err);
+        }
+      }
+      
+      if (!courseId) {
+        const box = document.getElementById('result');
+        box.style.display = 'block';
+        box.innerHTML = '<p><strong>Erro</strong></p><p>Curso não encontrado. Verifique o link de origem.</p>';
+        return;
+      }
+      
       const payload = {
-        name: document.getElementById('name').value.trim(),
-        email: document.getElementById('email').value.trim(),
-        phone: document.getElementById('phone').value.trim(),
-        payment: document.getElementById('payment').value,
-        slug: slug,
-        title: title,
-        price: price,
+        items: [{ course_id: courseId, quantity: 1 }],
+        buyer_name: document.getElementById('name').value.trim(),
+        buyer_email: document.getElementById('email').value.trim(),
+        buyer_document: document.getElementById('document').value.trim() || undefined,
       };
+      
       const headers = {'Content-Type': 'application/json'};
       const token = localStorage.getItem('academy_token') || sessionStorage.getItem('academy_token');
       if (token) {
         headers['Authorization'] = 'Bearer ' + token;
       }
+      
       const r = await fetch('/academy/checkout', {
         method: 'POST',
         headers,
         body: JSON.stringify(payload)
       });
+      
       const data = await r.json();
       const box = document.getElementById('result');
       box.style.display = 'block';
