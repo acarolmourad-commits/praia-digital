@@ -18,11 +18,7 @@ FOLLOWUPS = [
     ("D5", 5),
 ]
 
-CSV_PATH = BASE / "docs/sales/csv-lotes-b2b/" + [s for s in [
-    "para-brevo-prospeccao-360-2026-07-22.csv",
-    "para-brevo-consultoria-proptech-2026-07-22.csv",
-    "para-brevo-gestao-anuncios-imobiliarios-2026-07-22.csv",
-] if servico in s][0]
+CSV_PATH = BASE / "docs/sales/csv-lotes-b2b/para-brevo-gestao-anuncios-imobiliarios-2026-07-22.csv"
 
 
 def main():
