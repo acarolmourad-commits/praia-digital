@@ -20876,6 +20876,46 @@
       "status": "published",
       "published_at": "2026-08-14",
       "batch": "Parcerias 2"
+    },
+    {
+      "slug": "documentos-compra-imovel-litoral-sp-checklist-2026",
+      "title": "Documentos para compra de imóvel no litoral de SP: checklist 2026",
+      "cluster": "Jurídico",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Jurídico 2"
+    },
+    {
+      "slug": "certidao-onus-matricula-imovel-litoral-2026",
+      "title": "Como ler certidão de ônus e matrícula do imóvel no litoral 2026",
+      "cluster": "Jurídico",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Jurídico 2"
+    },
+    {
+      "slug": "usucapiao-imoveis-litoral-sp-2026",
+      "title": "Usucapião de imóveis no litoral de SP: quando acontece e como evitar 2026",
+      "cluster": "Jurídico",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Jurídico 2"
+    },
+    {
+      "slug": "itbi-custos-escritura-litoral-sp-2026",
+      "title": "ITBI e custos de escritura no litoral de SP: guia prático 2026",
+      "cluster": "Jurídico",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Jurídico 2"
+    },
+    {
+      "slug": "compra-imovel-na-planta-litoral-sp-2026",
+      "title": "Compra de imóvel na planta no litoral de SP: riscos e cuidados 2026",
+      "cluster": "Jurídico",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Jurídico 2"
     }
   ],
   "sitemap_plan": {
@@ -33054,7 +33094,7 @@
       "in_sitemap": true
     }
   ],
-  "total_published": 75,
+  "total_published": 80,
   "audit_correction_note": "total_published corrigido de 30 para 25 com base em evidências. 5 artigos não tinham correspondência verificável.",
-  "last_updated": "2026-08-14T22:12:03.748654+00:00"
+  "last_updated": "2026-08-14T22:16:26.132186+00:00"
 }
