@@ -20956,6 +20956,46 @@
       "status": "published",
       "published_at": "2026-08-14",
       "batch": "Sustentabilidade 2"
+    },
+    {
+      "slug": "gestao-indicadores-imobiliarios-litoral-dashboard-2026",
+      "title": "Gestão de indicadores imobiliários no litoral: dashboard prático 2026",
+      "cluster": "Gestão",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Gestão 2"
+    },
+    {
+      "slug": "gestao-crise-imobiliaria-litoral-conflitos-resolucao-2026",
+      "title": "Gestão de crise em imobiliárias no litoral: conflitos e resolução 2026",
+      "cluster": "Gestão",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Gestão 2"
+    },
+    {
+      "slug": "gestao-inovacao-imobiliaria-litoral-tecnologia-2026",
+      "title": "Gestão da inovação em imobiliárias no litoral: tecnologia aplicada 2026",
+      "cluster": "Gestão",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Gestão 2"
+    },
+    {
+      "slug": "gestao-mudanca-imobiliaria-litoral-transformacao-digital-2026",
+      "title": "Gestão da mudança em imobiliárias no litoral: transformação digital 2026",
+      "cluster": "Gestão",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Gestão 2"
+    },
+    {
+      "slug": "gestao-risco-imobiliaria-litoral-compliance-2026",
+      "title": "Gestão de risco e compliance para imobiliárias no litoral 2026",
+      "cluster": "Gestão",
+      "status": "published",
+      "published_at": "2026-08-14",
+      "batch": "Gestão 2"
     }
   ],
   "sitemap_plan": {
@@ -33134,7 +33174,7 @@
       "in_sitemap": true
     }
   ],
-  "total_published": 85,
+  "total_published": 90,
   "audit_correction_note": "total_published corrigido de 30 para 25 com base em evidências. 5 artigos não tinham correspondência verificável.",
-  "last_updated": "2026-08-14T22:24:00.305358+00:00"
+  "last_updated": "2026-08-14T23:07:40.477390+00:00"
 }
