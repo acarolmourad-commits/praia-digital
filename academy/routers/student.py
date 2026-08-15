@@ -7,6 +7,7 @@ from academy.core.database import get_db
 from academy.core.models import Course, Module, Lesson, Enrollment, Progress, ContentAttachment
 from academy.core.schemas import CourseOut, ModuleOut, LessonOut, LessonContentOut, ContentAttachmentOut, ProgressOut
 from academy.core.security import get_current_user_optional
+from academy.core.tracking import track, TrackingEventType
 
 router = APIRouter(prefix="/academy/me", tags=["student"])
 optional_bearer = HTTPBearer(auto_error=False)
@@ -72,6 +73,7 @@ def get_my_course_modules(slug: str, db: Session = Depends(get_db), user=Depends
     ).first()
     if not enrollment:
         raise HTTPException(status_code=403, detail="Você não tem acesso a este curso.")
+    track(db, TrackingEventType.first_course_access, user_id=user["id"], course_id=course.id, enrollment_id=enrollment.id, commit=True)
     return course.modules
 
 @router.get("/modules/{module_id}/lessons", response_model=List[LessonOut])

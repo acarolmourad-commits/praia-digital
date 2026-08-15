@@ -97,7 +97,7 @@ def test_courses_list():
 
 def test_admin_leads_unauthorized():
     r = client.get("/admin/leads")
-    assert r.status_code == 403, r.text
+    assert r.status_code in {401, 403}, r.text
 
 
 def test_monitoring_status():

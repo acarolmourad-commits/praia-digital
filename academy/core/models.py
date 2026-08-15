@@ -61,6 +61,7 @@ class User(Base):
     orders = relationship("Order", back_populates="user", cascade="all, delete-orphan")
     carts = relationship("Cart", back_populates="user", cascade="all, delete-orphan")
     certificates = relationship("Certificate", back_populates="user", cascade="all, delete-orphan")
+    tracking_events = relationship("TrackingEvent", back_populates="user", cascade="all, delete-orphan")
 
 class Course(Base):
     __tablename__ = "courses"
@@ -89,6 +90,8 @@ class Course(Base):
     upsell_targets = relationship("UpsellRule", foreign_keys="UpsellRule.target_course_id", cascade="all, delete-orphan")
     cross_sell_triggers = relationship("CrossSellRule", foreign_keys="CrossSellRule.trigger_course_id", cascade="all, delete-orphan")
     cross_sell_targets = relationship("CrossSellRule", foreign_keys="CrossSellRule.target_course_id", cascade="all, delete-orphan")
+    tracking_events = relationship("TrackingEvent", back_populates="course", cascade="all, delete-orphan")
+    content_source = relationship("CourseContentSource", back_populates="course", uselist=False, cascade="all, delete-orphan")
 
 class Module(Base):
     __tablename__ = "modules"
@@ -136,6 +139,7 @@ class Enrollment(Base):
     course = relationship("Course", back_populates="enrollments")
     progresses = relationship("Progress", back_populates="enrollment", cascade="all, delete-orphan")
     certificate = relationship("Certificate", back_populates="enrollment", uselist=False, cascade="all, delete-orphan")
+    tracking_events = relationship("TrackingEvent", back_populates="enrollment", cascade="all, delete-orphan")
 
     __table_args__ = (UniqueConstraint("user_id", "course_id", name="uq_enrollment_user_course"),)
 
@@ -333,3 +337,68 @@ class LeadEvent(Base):
     created_at = Column(DateTime(timezone=True), server_default=func.now())
 
     lead = relationship("Lead", backref="events")
+
+
+class TrackingEventType(str, enum.Enum):
+    register = "register"
+    login = "login"
+    checkout_started = "checkout_started"
+    order_created = "order_created"
+    payment_approved = "payment_approved"
+    payment_pending = "payment_pending"
+    payment_rejected = "payment_rejected"
+    access_granted = "access_granted"
+    first_course_access = "first_course_access"
+    lesson_opened = "lesson_opened"
+    material_opened = "material_opened"
+    progress_updated = "progress_updated"
+    course_completed = "course_completed"
+    certificate_issued = "certificate_issued"
+    logout = "logout"
+    refund_requested = "refund_requested"
+    access_revoked = "access_revoked"
+    manual_access_granted = "manual_access_granted"
+    manual_access_revoked = "manual_access_revoked"
+
+
+class ContentSourceType(str, enum.Enum):
+    db = "db"
+    filesystem = "filesystem"
+
+
+class TrackingEvent(Base):
+    __tablename__ = "tracking_events"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=True)
+    course_id = Column(Integer, ForeignKey("courses.id", ondelete="CASCADE"), nullable=True)
+    enrollment_id = Column(Integer, ForeignKey("enrollments.id", ondelete="CASCADE"), nullable=True)
+    event = Column(Enum(TrackingEventType), nullable=False)
+    payload = Column(Text, nullable=True)
+    ip_address = Column(String(45), nullable=True)
+    user_agent = Column(String(255), nullable=True)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+
+    user = relationship("User", back_populates="tracking_events")
+    course = relationship("Course", back_populates="tracking_events")
+    enrollment = relationship("Enrollment", back_populates="tracking_events")
+
+    __table_args__ = (
+        Index("idx_tracking_user_course", "user_id", "course_id"),
+        Index("idx_tracking_event_created", "event", "created_at"),
+    )
+
+
+class CourseContentSource(Base):
+    __tablename__ = "course_content_sources"
+
+    id = Column(Integer, primary_key=True, index=True)
+    course_id = Column(Integer, ForeignKey("courses.id", ondelete="CASCADE"), nullable=False, unique=True)
+    source_type = Column(Enum(ContentSourceType), nullable=False, default=ContentSourceType.db)
+    fs_root = Column(String(500), nullable=True)
+    module_index_path = Column(String(500), nullable=True)
+    is_active = Column(Boolean, nullable=False, default=True)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+    updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
+
+    course = relationship("Course", back_populates="content_source")
