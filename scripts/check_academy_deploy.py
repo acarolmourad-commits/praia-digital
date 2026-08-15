@@ -17,8 +17,8 @@ import urllib.error
 def fetch(url, method="GET", payload=None):
     data = None
     if payload is not None:
-        data = urllib.parse.urlencode(payload).encode("utf-8")
-    req = urllib.request.Request(url, data=data, method=method)
+        data = json.dumps(payload).encode("utf-8")
+    req = urllib.request.Request(url, data=data, method=method, headers={"Content-Type": "application/json"})
     try:
         with urllib.request.urlopen(req, timeout=30) as resp:
             return resp.status, resp.read().decode("utf-8", errors="ignore")
@@ -44,7 +44,7 @@ def main():
 
     # health
     code, body = fetch(f"{base}/health")
-    checks.append(("health", code == 200 and '"status":"ok"' in body.replace(" ", "").replace("'",'"')))
+    checks.append(("health", code == 200 and '"status":"ok"' in body.replace(" ", "").replace("'", '"')))
     print(f"health: {code} -> {checks[-1][1]}")
 
     # public pages
@@ -67,8 +67,7 @@ def main():
     print(f"/docs: {code} -> {checks[-1][1]}")
 
     # register
-    register_url = f"{base}/auth/register"
-    code, body = fetch(register_url, method="POST", payload={
+    code, body = fetch(f"{base}/auth/register", method="POST", payload={
         "name": "Deploy Check",
         "email": "deploy-check@example.com",
         "password": "123456",
@@ -81,27 +80,14 @@ def main():
     checks.append(("/monitoring/status", code == 200 and '"checks"' in body))
     print(f"/monitoring/status: {code} -> {checks[-1][1]}")
 
-    # public checkout stub
-    checkout_payload = {
+    # public checkout
+    code, body = fetch(f"{base}/academy/checkout", method="POST", payload={
         "items": [{"course_id": 1, "quantity": 1}],
         "buyer_name": "Deploy Check",
         "buyer_email": "deploy-check@example.com",
         "buyer_document": "12345678900",
-    }
-    req = urllib.request.Request(
-        base + "/academy/checkout",
-        data=json.dumps(checkout_payload).encode("utf-8"),
-        method="POST",
-        headers={"Content-Type": "application/json"},
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            code, body = resp.status, resp.read().decode("utf-8", errors="ignore")
-    except urllib.error.HTTPError as e:
-        code, body = e.code, e.read().decode("utf-8", errors="ignore")
-    except Exception as e:
-        code, body = None, str(e)
-    checks.append(("/academy/checkout", code == 200 and '"status":"pending"' in body.replace(' ', '')))
+    })
+    checks.append(("/academy/checkout", code == 200 and '"status":"pending"' in body.replace(" ", "")))
     print(f"/academy/checkout: {code} -> {checks[-1][1]}")
 
     print("\nRESULTADO:")
