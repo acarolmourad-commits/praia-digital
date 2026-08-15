@@ -23,14 +23,23 @@ jobs:
         run: |
           cd academy
           pip install -r requirements.txt
+          pip install pytest
 
       - name: Validate imports
         run: |
           cd academy
           python -c "from academy.core import config, whatsapp_service, email_service; from academy.core import middleware; from academy.routers import monitoring, payments, certificates, automation_whatsapp, automation_email"
 
-      - name: Run validation script
+      - name: Run unit tests
+        run: |
+          cd academy
+          pytest tests/ -q
+
+      - name: Pre-deploy validation
         run: python scripts/validate_render_deploy.py
+
+      - name: Validate 64-course inventory
+        run: python scripts/validate_academy_inventory.py
 
   deploy-preview:
     needs: test
@@ -51,3 +60,26 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  post-deploy-validation:
+    needs: deploy-preview
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests
+
+      - name: Run production validation
+        env:
+          ACADEMY_BASE_URL: ${{ vars.ACADEMY_BASE_URL || 'https://academy.praia.digital' }}
+        run: |
+          python scripts/validate_academy_prod.py
