@@ -1,0 +1,563 @@
+{
+  "total_local_files": 3075,
+  "checked_internal_blog_refs": 17982,
+  "distinct_missing_targets": 139,
+  "top_missing": [
+    {
+      "slug": "assistente-virtual-compradores-fluxo-2026-08-03.html",
+      "referenced_from_files": 7
+    },
+    {
+      "slug": "checklist-completa-google-business-profile-corretores-imoveis-litoral-passo-passo-2026.html",
+      "referenced_from_files": 7
+    },
+    {
+      "slug": "alta-temporada-litoral-checklist-corretores-2026-08-03.html",
+      "referenced_from_files": 5
+    },
+    {
+      "slug": "avaliacao-automatica-preco-mercado-litoral-passos-2026-08-03.html",
+      "referenced_from_files": 5
+    },
+    {
+      "slug": "captacao-imoveis-whatsapp-roteiro-2026-08-03.html",
+      "referenced_from_files": 5
+    },
+    {
+      "slug": "como-escolher-corretor-litoral-2026-08-03.html",
+      "referenced_from_files": 5
+    },
+    {
+      "slug": "geracao-automatica-descricoes-anuncios-litoral-2026-08-03.html",
+      "referenced_from_files": 5
+    },
+    {
+      "slug": "gestao-temporada-sem-dor-de-cabeca-2026-08-03.html",
+      "referenced_from_files": 5
+    },
+    {
+      "slug": "recomendacao-automatica-imoveis-litoral-matches-2026-08-03.html",
+      "referenced_from_files": 5
+    },
+    {
+      "slug": "newsletter-semanal-semana-30-2026-08-03.html",
+      "referenced_from_files": 5
+    },
+    {
+      "slug": "roi-real-por-cidade-litoral-paulista-2026-08-03.html",
+      "referenced_from_files": 5
+    },
+    {
+      "slug": "parceria-white-label-70-30-imobiliaria-2026-08-03.html",
+      "referenced_from_files": 5
+    },
+    {
+      "slug": "alugar-apartamento-verao-santos-em-santos-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "angra-dos-reis-ilha-grande-2026-sp-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "arraial-do-cabo-mergulho-2026-sp-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "automacao-imobiliária-2026-vendas-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "automacao-vendas-leads-2026-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "automacao-visitas-2026-imobiliária-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "automacao-visitas-corretores-leads-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "automacao-visitas-vendas-corretores-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "avaliacao-de-imoveis-automatizada-ferramenta-gratuita-litoral-em-bertioga-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "avaliar-imovel-antes-comprar-litoral-paulista-em-mongaguá-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "balneario-camboriu-compras-praia-2026-sp-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "beneficios-investir-imovel-na-planta-em-ubatuba-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "bertioga-riviera-sao-francisco-guia-2026-sp-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "bombinhas-natureza-mergulho-2026-sc-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "buzios-praias-famosas-guia-2026-rj-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "cabo-frio-roteiro-casais-2026-sp-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "captacao-2026-litoral-leads-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "captacao-imobiliária-imóveis-2026-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "captacao-imoveis-para-corretores-sem-investimento-em-peruíbe-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "captacao-leads-imobiliária-litoral-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "captacao-leads-sem-anuncios-em-corretores-verao-em-praia-grande-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "captação-offline-no-litoralroteiro-para-10-novos-imóveis-por-semana-2026-08-03-praia-digital.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "chatbot-em-imoveis-primeira-mensagem-ideal-modelo-em-guarujá-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "checklist-antes-alugar-imovel-praia-temporada-em-itanhaém-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "checklist-de-visita-tecnica-imovel-litoral-corretores-em-ubatuba-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "como-avaliar-preço-de-imóvel-no-litoral-sem-errar-2026-08-03-praia-digital.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "como-escolher-imobiliaria-no-guaruja-em-guarujá-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "como-evitar-golpes-imobiliarios-temporada-aluguel-praia-em-guarujá-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "como-fechar-vendas-em-santos-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "como-funcionar-seguro-fianca-aluguel-praia-sao-paulo-em-ilhabela-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "como-responder-objecoes-em-guarujá-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "como-usar-provas-sociais-em-ubatuba-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "comprar-casa-na-praia-primeiro-imovel-em-são-vicente-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "credito-imobiliario-pre-aprovado-temporada-litoral-em-mongaguá-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "documentacao-necessaria-comprar-imovel-litoral-passo-a-passo-em-praia-grande-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "fechamento-de-temporada-no-litoral-checklist-do-vendedor-2026-08-03-praia-digital.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "financiamento-imobiliario-praia-grande-em-ubatuba-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "florianopolis-praias-guia-2026-sc-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "funil-de-vendas-em-imobiliarias-pequenas-litoral-paulista-em-santos-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "garopaca-surf-quietude-2026-sc-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "gestao-de-indicadores-imobiliarios-sem-planilha-complicada-em-mongaguá-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "guaruja-ilha-panqueca-fim-semana-2026-sp-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "guia-completo-praia-grande-familia-2026-sp-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "ia-2026-corretores-imobiliária-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "ia-2026-imobiliária-avaliação-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "ia-avaliação-corretores-imobiliária-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "ia-corretores-avaliação-2026-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "ia-litoral-2026-avaliação-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "ia-litoral-avaliação-imobiliária-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "ia-litoral-recomendação-2026-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "ia-recomendação-2026-avaliação-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "ia-recomendação-avaliação-imobiliária-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "ia-recomendação-litoral-corretores-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "imobiliaria-digital-vs-fisica-qual-escolher-litoral-em-são-vicente-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "imoveis-pet-friendly-compradores-em-santos-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "indice-semana-30-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "indice-semana-31-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "indice-semana-32-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "investir-em-imovel-no-litoral-vale-a-pena-em-praia-grande-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "itajai-porto-gastronomia-2026-sc-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "itanhaem-centro-antigo-lagoa-2026-sp-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "marketing-2026-digital-no-litoral-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "marketing-2026-digital-para-corretores-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "marketing-2026-imobiliário-para-corretores-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "marketing-2026-no-litoral-digital-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "marketing-2026-redes-sociais-digital-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "marketing-digital-2026-para-corretores-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "marketing-no-litoral-redes-sociais-imobiliário-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "marketing-para-corretores-redes-sociais-no-litoral-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "marketing-redes-sociais-digital-no-litoral-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "marketing-redes-sociais-imobiliário-para-corretores-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "marketing-redes-sociais-no-litoral-2026-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "melhores-bairros-investir-imobiliario-santos-guaruja-em-peruíbe-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "melhores-bairros-para-morar-em-ubatuba-familias-em-itanhaém-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "modelo-de-proposta-de-venda-imovel-temporada-praia-em-ilhabela-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "mongagua-praias-familiares-2026-sp-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "onboarding-rapido-em-novos-parceiros-imobiliarias-digitais-em-peruíbe-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "paraty-historico-ilhas-2026-rj-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "peruibe-centro-historico-praias-2026-sp-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "pousada-rentavel-litoral-paulista-em-bertioga-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "roteiro-de-follow-up-por-whatsapp-em-leads-frios-imobiliarios-em-itanhaém-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "roteiro-de-video-imobiliario-1-minuto-em-redes-sociais-em-são-vicente-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "santos-orla-gastronomia-passeios-2026-sp-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "sao-vicente-historico-monumentos-2026-sp-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "scripts-em-são-vicente-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "seguro-aluguel-temporada-praia-sao-paulo-em-ilhabela-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "seo-2026-litoral-imobiliária-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "seo-conteúdo-imobiliária-google-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "seo-imobiliária-google-blog-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "seo-litoral-conteúdo-blog-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "seo-local-para-imobiliárias-em-2026-atualize-antes-do-verão-2026-08-03-praia-digital.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "tecnicas-em-praia-grande-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "tendencias-decoracao-imoveis-temporada-verao-litoral-em-bertioga-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "ubatuba-trilhas-praias-guia-2026-sp-2026-08-03.html",
+      "referenced_from_files": 4
+    },
+    {
+      "slug": "gestao-locacao-temporada-imoveis.html",
+      "referenced_from_files": 3
+    },
+    {
+      "slug": "automacao-agendamento-visitas-corretores.html",
+      "referenced_from_files": 2
+    },
+    {
+      "slug": "apresentacao-video-imoveis-vender-mais.html",
+      "referenced_from_files": 2
+    },
+    {
+      "slug": "coronadelideranca-imobiliaria-2026.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "automacao-visitas-imobiliarias-2026.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "prova-social-imobiliaria-2026.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "precificacao-dinamica-temporada-2026.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "anunicar-imoveis-google-litoral-paulista-2026.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "prova-social-imobiliarias-litoral-2026.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "marketing-digital-imobiliarias-litoral-2026.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "automacao-imoveis-litoral-reducao-custos-2026-2026.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "captacao-imoveis-litoral-sem-taxa-2026-2026.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "precificacao-imoveis-temporada-litoral-paulista-2026.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "checklist-captacao-imoveis-temporada-litoral-2026-2026.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "como-usar-whatsapp-vendas-imoveis-litoral-2026-2026.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "consorcio-aderon-contratar-2026-2026.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "consorcio-imobiliario-litoral-aluguel-temporada-2026-2026.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "consorcio-imobiliario-vs-financiamento-2026-2026.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "consorcio-litoral-paulista-guia-investidor-2026-2026.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "consorcio-para-corretores-imobiliarios-2026-2026.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "guia-estudo-creci.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "fechamento-vendas-imobiliaria-litoral.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "checklist-vendas-imobiliaria-litoral.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "taxa-ocupacao-litoral-paulista-2026.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "crm-gratuito-imobiliaria-litoral.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "avaliacao-automatica-de-preço-como-usar-no-atendimento-lote-2026-08-03-33.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "mini-site-imobiliaria-local-captacao-litoral-2026-2026.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "roteiro-captacao-whatsapp-imoveis.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "modelo-renda-mista-aluguel-venda-litoral.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "roteiro-video-diario-corretor-litoral-2026-2026.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "taxa-ocupacao-alta-temporada-litoral-imoveis-2026-2026.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "guia-social-media-imobiliarias-litoral.html",
+      "referenced_from_files": 1
+    },
+    {
+      "slug": "video-imobiliario-profissional-aumentar-vendas-2026-2026.html",
+      "referenced_from_files": 1
+    }
+  ]
+}
