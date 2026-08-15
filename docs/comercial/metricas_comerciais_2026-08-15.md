@@ -2,13 +2,13 @@
 Data de referência: 2026-08-15
 
 ## KPIs
-- Leads encontrados: 29
-- Leads novos: 29
+- Leads encontrados: 30
+- Leads novos: 30
 - Duplicatas evitadas: 0
 - Leads por serviço: Administracao Airbnb/Temporada=4, Edicao de anuncio=10, Fotografia + Edicao=13
 - Leads por cidade: Bertioga=16, Sao Sebastiao=10
 - Score médio: 77
-- Propostas geradas: 20
+- Propostas geradas: 21
 - Mensagens enviadas: 0
 - Respostas: 0
 - Interessados: 0
