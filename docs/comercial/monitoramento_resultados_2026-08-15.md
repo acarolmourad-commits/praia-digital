@@ -19,6 +19,7 @@ Período de observação: até 25/08
 - D10: executar em 25/08 se sem resposta
 - Script: `scripts/follow_up_automacao.py`
 - Cron: diário às 09:00
+- Última verificação: 15/08 — 0 respostas
 
 ## Formato permanente para resposta positiva
 Quando chegar uma resposta positiva, registrar:
@@ -36,4 +37,4 @@ Exemplo:
 - Não aumentar volume de prospecção antes de validar comportamento dos primeiros 6 leads
 
 ## Próxima atualização
-Após D2 (16/08) ou quando houver primeira resposta.
+16/08 após execução do D2 ou quando houver primeira resposta.
