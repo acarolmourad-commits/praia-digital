@@ -1,7 +1,17 @@
-# Follow-up D2 — executar em 2026-08-16
+# Execução D2 — 2026-08-16
 Regra: executar apenas se não houver resposta até 16/08. Se houver resposta positiva/negativa/preço/agendamento, aplicar regra correspondente.
 
-## Leads
+## Ação do script follow_up_automacao.py em 16/08
+- Para cada lead com status ENVIADO_D0 e sem resposta:
+  - Atualizar status para ENVIADO_D2
+  - Registrar d2_enviado_em = 2026-08-16
+  - Não enviar mensagem automaticamente — apenas marcar no CRM
+- Para leads com resposta positiva: parar follow-up + HANDOFF
+- Para leads com resposta negativa: encerrar
+- Para leads com pedido de preço: responder com preço aprovado
+- Para leads com pedido de agendamento: HANDOFF HUMANO
+
+## Mensagens D2 prontas para envio humano
 | lead_id | canal | D2 |
 |---------|-------|-----|
 | 9 | OLX | "Olá, passando para lembrar que podemos melhorar as fotos e a descrição da casa em Juquehy e ajudar a aumentar as reservas. Se quiser, envio um exemplo rápido." |
