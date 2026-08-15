@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-08-14T20:55:10.577313+00:00",
-  "status": "Batch 158 publicada — 6 artigos adicionados",
+  "status": "Batch 159 publicada — 3 artigos adicionados",
   "registry_context": {
     "purpose": "Registro editorial do subconjunto verificado de artigos publicados",
     "total_published_definition": "Quantidade de artigos com evidência física verificada (HTML existente, publicado, registrado).",
@@ -23347,6 +23347,64 @@
       "article_type": "E",
       "author": "Praia Digital",
       "word_count": 185
+    },
+    {
+      "slug": "caraguatatuba-editorial-imoveis-2026.html",
+      "title": "Caraguatatuba: editorial de imóveis — guia 2026",
+      "h1": "Caraguatatuba: editorial de imóveis — guia 2026",
+      "meta_title": "Caraguatatuba: editorial de imóveis — guia 2026 | Praia Digital",
+      "meta_description": "Caraguatatuba: editorial de imóveis — guia 2026. Análise de mercado, tendências e oportunidades para corretores e investidores em Caraguatatuba.",
+      "canonical": "https://praia.digital/blog/caraguatatuba-editorial-imoveis-2026.html",
+      "h2_count": 4,
+      "faq_count": 2,
+      "internal_links": [],
+      "course_link": "",
+      "status": "PUBLISHED",
+      "h2": [
+        "Mercado imobiliário em Caraguatatuba",
+        "Oportunidades para corretores",
+        "Tendências de preço e demanda",
+        "Como usar conteúdo para captar leads"
+      ],
+      "cluster": "editorial",
+      "keyword": "editorial imoveis caraguatatuba 2026",
+      "publication_date": "2026-08-15",
+      "published_at": "2026-08-15T11:35:00+00:00",
+      "intent": "comercial",
+      "funnel": "Meio",
+      "city": "caraguatatuba",
+      "article_type": "E",
+      "author": "Praia Digital",
+      "word_count": 190
+    },
+    {
+      "slug": "sao-sebastiao-automacao-imobiliarias-2026.html",
+      "title": "São Sebastião: automação para imobiliárias — guia 2026",
+      "h1": "São Sebastião: automação para imobiliárias — guia 2026",
+      "meta_title": "São Sebastião: automação para imobiliárias — guia 2026 | Praia Digital",
+      "meta_description": "São Sebastião: automação para imobiliárias — guia 2026. Veja como automação, IA e processos podem aumentar a produtividade do corretor no litoral.",
+      "canonical": "https://praia.digital/blog/sao-sebastiao-automacao-imobiliarias-2026.html",
+      "h2_count": 4,
+      "faq_count": 2,
+      "internal_links": [],
+      "course_link": "",
+      "status": "PUBLISHED",
+      "h2": [
+        "O que é automação imobiliária",
+        "Benefícios para corretores",
+        "Ferramentas indicadas",
+        "Como implementar sem perder o toque humano"
+      ],
+      "cluster": "automacao",
+      "keyword": "automacao imobiliarias sao sebastiao 2026",
+      "publication_date": "2026-08-15",
+      "published_at": "2026-08-15T11:35:00+00:00",
+      "intent": "comercial",
+      "funnel": "Meio",
+      "city": "sao-sebastiao",
+      "article_type": "E",
+      "author": "Praia Digital",
+      "word_count": 180
     }
   ],
   "sitemap_plan": {
