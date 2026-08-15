@@ -12,7 +12,7 @@ Acesse https://dashboard.render.com e faça login.
 3. Branch: `main`
 4. Runtime: **Python 3**
 5. Build command: `pip install -r academy/requirements.txt`
-6. Start command: `cd academy && uvicorn main:app --host 0.0.0.0 --port $PORT`
+6. Start command: `PYTHONPATH=academy uvicorn academy.main:app --host 0.0.0.0 --port $PORT`
 7. Plano: **Starter** (ou Free para teste)
 
 ## 3. Variáveis de ambiente

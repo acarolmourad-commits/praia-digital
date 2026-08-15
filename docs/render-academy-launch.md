@@ -20,7 +20,7 @@ Pré-requisito: `python scripts/pre_deploy_check.py` já passou neste repo.
   ```
 - Start command:
   ```bash
-  cd academy && uvicorn main:app --host 0.0.0.0 --port $PORT
+  PYTHONPATH=academy uvicorn academy.main:app --host 0.0.0.0 --port $PORT
   ```
 
 ## 3) Variáveis de ambiente

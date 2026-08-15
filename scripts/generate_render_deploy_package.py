@@ -7,7 +7,7 @@ render_checklist = {
   "branch": "main",
   "runtime": "Python 3",
   "build_command": "pip install -r academy/requirements.txt",
-  "start_command": "cd academy && uvicorn main:app --host 0.0.0.0 --port $PORT",
+  "start_command": "PYTHONPATH=academy uvicorn academy.main:app --host 0.0.0.0 --port $PORT",
   "database": {
     "name": "academy-db",
     "type": "PostgreSQL",

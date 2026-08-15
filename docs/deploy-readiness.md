@@ -40,7 +40,7 @@ Passo manual restante
    - Repo: `acarolmourad-commits/praia-digital`
    - Branch: `main`
    - Build command: `pip install -r academy/requirements.txt`
-   - Start command: `cd academy && uvicorn main:app --host 0.0.0.0 --port $PORT`
+   - Start command: `PYTHONPATH=academy uvicorn academy.main:app --host 0.0.0.0 --port $PORT`
 3. Banco: crie/ative `academy-db` e vincule como `DATABASE_URL`
 4. Variáveis de ambiente mínimas:
    - `SECRET_KEY`: chave forte

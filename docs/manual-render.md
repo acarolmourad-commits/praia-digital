@@ -12,7 +12,7 @@
 4. Branch: `main`
 5. Runtime: **Python 3**
 6. Build command: `pip install -r academy/requirements.txt`
-7. Start command: `cd academy && uvicorn main:app --host 0.0.0.0 --port $PORT`
+7. Start command: `PYTHONPATH=academy uvicorn academy.main:app --host 0.0.0.0 --port $PORT`
 8. Plano: Starter ou Free
 
 ## Passo 2 — Variáveis de ambiente
