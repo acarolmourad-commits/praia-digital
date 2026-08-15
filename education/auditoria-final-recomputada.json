@@ -1,0 +1,521 @@
+{
+  "data": "2026-08-14",
+  "total_cursos": 64,
+  "status_counts": {
+    "PRONTO_PARA_VENDA": 51,
+    "BLOQUEAR_VENDA": 3,
+    "REVISAR_ANTES_DE_VENDER": 10
+  },
+  "cursos": [
+    {
+      "slug": "airbnb-do-zero",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "analise-de-mercado-imobiliario-litoral",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "analise-de-rentabilidade",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "apresentacao-imoveis-para-corretores",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "atendimento-ao-cliente-para-corretores",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "atendimento-cliente-para-corretores",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "aumentar-rentabilidade",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "automacao-comercial",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "avaliacao-de-imoveis",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "booking-do-zero",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "captacao-exclusividade",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "captacao-imoveis-corretores",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "casa-ou-apartamento",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "comprar-com-seguranca",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "comprar-imovel-praia-sem-golpes",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "comunicacao-interpessoal-para-corretores",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "crm-para-corretores",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "documentacao-completa-imoveis-litoral",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "documentacao-imobiliaria",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "especialista-venda-imoveis-litoral",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "fechamento-de-vendas-para-corretores",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "financiamento-imobiliario",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "flipping",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "flipping-completo",
+      "status": "BLOQUEAR_VENDA",
+      "missing": [
+        "planejamento",
+        "modulos",
+        "checklists",
+        "planilhas",
+        "pdfs",
+        "materiais_download",
+        "imagens",
+        "certificado",
+        "avaliacao_final",
+        "email_sequence",
+        "instagram",
+        "seo_articles",
+        "faq"
+      ],
+      "partial": [],
+      "classificacao_real": "BLOQUEAR_VENDA"
+    },
+    {
+      "slug": "flipping-imoveis-litoral",
+      "status": "BLOQUEAR_VENDA",
+      "missing": [
+        "planejamento",
+        "modulos",
+        "checklists",
+        "planilhas",
+        "pdfs",
+        "materiais_download",
+        "imagens",
+        "certificado",
+        "avaliacao_final",
+        "email_sequence",
+        "instagram",
+        "seo_articles",
+        "faq"
+      ],
+      "partial": [],
+      "classificacao_real": "BLOQUEAR_VENDA"
+    },
+    {
+      "slug": "funil-de-vendas",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "gestao-de-conflitos-para-corretores",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "gestao-de-locacao-no-litoral",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "gestao-de-propostas-para-corretores",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "gestao-de-vendas-para-corretores",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "gestao-do-tempo-para-corretores",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "gestao-profissional-locacao",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "guia-investidor-imobiliario",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "guia-investidor-imobiliario-avancado",
+      "status": "BLOQUEAR_VENDA",
+      "missing": [
+        "planejamento",
+        "modulos",
+        "checklists",
+        "planilhas",
+        "pdfs",
+        "materiais_download",
+        "imagens",
+        "certificado",
+        "avaliacao_final",
+        "email_sequence",
+        "instagram",
+        "seo_articles",
+        "faq"
+      ],
+      "partial": [],
+      "classificacao_real": "BLOQUEAR_VENDA"
+    },
+    {
+      "slug": "ia-para-corretores",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "ia-para-imobiliarias",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "imoveis-para-airbnb",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "instagram-para-corretores",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "inteligencia-emocional-para-corretores",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "investindo-imoveis-litoral",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "lideranca-para-corretores",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "marketing-imobiliario",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "marketing-imobiliario-corretores",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "multiplique-patrimonio",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "negociacao-avancada-para-corretores",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "negociacao-imobiliaria-litoral",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "networking-para-corretores",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "oratoria-para-corretores",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "planejamento-estrategico-para-corretores",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "pos-venda-relacionamento-corretores",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "pricelabs-completo",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "primeiro-imovel-litoral",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "produtividade-para-corretores",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "prospeccao-para-corretores",
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
+      "classificacao_real": "PRONTO_PARA_VENDA"
+    },
+    {
+      "slug": "ptam-na-pratica",
+      "status": "REVISAR_ANTES_DE_VENDER",
+      "missing": [],
+      "partial": [
+        "google_ads"
+      ],
+      "classificacao_real": "REVISAR_ANTES_DE_VENDER"
+    },
+    {
+      "slug": "recuperacao-de-vendas-para-corretores",
+      "status": "REVISAR_ANTES_DE_VENDER",
+      "missing": [],
+      "partial": [
+        "google_ads"
+      ],
+      "classificacao_real": "REVISAR_ANTES_DE_VENDER"
+    },
+    {
+      "slug": "rotinas-de-vendas-para-corretores",
+      "status": "REVISAR_ANTES_DE_VENDER",
+      "missing": [],
+      "partial": [
+        "google_ads"
+      ],
+      "classificacao_real": "REVISAR_ANTES_DE_VENDER"
+    },
+    {
+      "slug": "storytelling-para-corretores",
+      "status": "REVISAR_ANTES_DE_VENDER",
+      "missing": [],
+      "partial": [
+        "google_ads"
+      ],
+      "classificacao_real": "REVISAR_ANTES_DE_VENDER"
+    },
+    {
+      "slug": "treinamento-de-equipes-para-corretores",
+      "status": "REVISAR_ANTES_DE_VENDER",
+      "missing": [],
+      "partial": [
+        "google_ads"
+      ],
+      "classificacao_real": "REVISAR_ANTES_DE_VENDER"
+    },
+    {
+      "slug": "treinamento-em-tecnologia-para-corretores",
+      "status": "REVISAR_ANTES_DE_VENDER",
+      "missing": [],
+      "partial": [
+        "google_ads"
+      ],
+      "classificacao_real": "REVISAR_ANTES_DE_VENDER"
+    },
+    {
+      "slug": "venda-imoveis-alto-padrao-litoral",
+      "status": "REVISAR_ANTES_DE_VENDER",
+      "missing": [],
+      "partial": [
+        "google_ads"
+      ],
+      "classificacao_real": "REVISAR_ANTES_DE_VENDER"
+    },
+    {
+      "slug": "venda-rapida-imoveis-litoral",
+      "status": "REVISAR_ANTES_DE_VENDER",
+      "missing": [],
+      "partial": [
+        "google_ads"
+      ],
+      "classificacao_real": "REVISAR_ANTES_DE_VENDER"
+    },
+    {
+      "slug": "visita-tecnica-para-corretores",
+      "status": "REVISAR_ANTES_DE_VENDER",
+      "missing": [],
+      "partial": [
+        "google_ads"
+      ],
+      "classificacao_real": "REVISAR_ANTES_DE_VENDER"
+    },
+    {
+      "slug": "whatsapp-que-vende",
+      "status": "REVISAR_ANTES_DE_VENDER",
+      "missing": [],
+      "partial": [
+        "google_ads"
+      ],
+      "classificacao_real": "REVISAR_ANTES_DE_VENDER"
+    }
+  ]
+}

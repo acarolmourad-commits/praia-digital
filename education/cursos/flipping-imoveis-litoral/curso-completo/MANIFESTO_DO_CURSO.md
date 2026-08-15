@@ -1,0 +1,3 @@
+# Manifesto
+
+Propósito do curso.
