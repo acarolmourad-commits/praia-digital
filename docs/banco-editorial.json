@@ -82257,6 +82257,235 @@
           "has_cta": false
         }
       ]
+    },
+    {
+      "date": "2026-08-15T12:38:14.213679+00:00",
+      "checked": 10,
+      "failed": 3,
+      "failed_slugs": [
+        "ubatuba-guia-investimento-imoveis-2026",
+        "ubatuba-guia-compra-imoveis-2026",
+        "ubatuba-financiamento-imoveis-2026"
+      ],
+      "results": [
+        {
+          "slug": "ubatuba-guia-locacao-temporada-imoveis-2026",
+          "file": "ubatuba-guia-locacao-temporada-imoveis-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 4471,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-investimento-imoveis-2026",
+          "file": "ubatuba-investimento-imoveis-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 4336,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-juridico-imoveis-2026",
+          "file": "ubatuba-juridico-imoveis-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 4303,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-locacao-temporada-imoveis-2026",
+          "file": "ubatuba-locacao-temporada-imoveis-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 4318,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-marketing-digital-imoveis-2026",
+          "file": "ubatuba-marketing-digital-imoveis-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 4430,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-parcerias-imoveis-2026",
+          "file": "ubatuba-parcerias-imoveis-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 4332,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-seo-local-imoveis-2026",
+          "file": "ubatuba-seo-local-imoveis-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 4360,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-guia-investimento-imoveis-2026",
+          "file": "ubatuba-guia-investimento-imoveis-2026.html",
+          "valid": false,
+          "issues": [
+            "insufficient_internal_links:0",
+            "missing_cta_or_whatsapp"
+          ],
+          "size": 3833,
+          "internal_links": 0,
+          "in_sitemap": true,
+          "has_cta": false
+        },
+        {
+          "slug": "ubatuba-guia-compra-imoveis-2026",
+          "file": "ubatuba-guia-compra-imoveis-2026.html",
+          "valid": false,
+          "issues": [
+            "insufficient_internal_links:0",
+            "missing_cta_or_whatsapp"
+          ],
+          "size": 3774,
+          "internal_links": 0,
+          "in_sitemap": true,
+          "has_cta": false
+        },
+        {
+          "slug": "ubatuba-financiamento-imoveis-2026",
+          "file": "ubatuba-financiamento-imoveis-2026.html",
+          "valid": false,
+          "issues": [
+            "insufficient_internal_links:0",
+            "missing_cta_or_whatsapp"
+          ],
+          "size": 3736,
+          "internal_links": 0,
+          "in_sitemap": true,
+          "has_cta": false
+        }
+      ]
+    },
+    {
+      "date": "2026-08-15T12:38:41.441444+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "ubatuba-financiamento-imoveis-2026",
+          "file": "ubatuba-financiamento-imoveis-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 4368,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-guia-compra-imoveis-2026",
+          "file": "ubatuba-guia-compra-imoveis-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 4403,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-guia-investimento-imoveis-2026",
+          "file": "ubatuba-guia-investimento-imoveis-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 4455,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-guia-locacao-temporada-imoveis-2026",
+          "file": "ubatuba-guia-locacao-temporada-imoveis-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 4471,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-investimento-imoveis-2026",
+          "file": "ubatuba-investimento-imoveis-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 4336,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-juridico-imoveis-2026",
+          "file": "ubatuba-juridico-imoveis-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 4303,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-locacao-temporada-imoveis-2026",
+          "file": "ubatuba-locacao-temporada-imoveis-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 4318,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-marketing-digital-imoveis-2026",
+          "file": "ubatuba-marketing-digital-imoveis-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 4430,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-parcerias-imoveis-2026",
+          "file": "ubatuba-parcerias-imoveis-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 4332,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-seo-local-imoveis-2026",
+          "file": "ubatuba-seo-local-imoveis-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 4360,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
     }
   ]
 }
