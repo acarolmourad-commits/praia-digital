@@ -31,14 +31,15 @@
 
 | Classificação | Quantidade | % |
 |---|---|---|
-| 🟢 PRONTO_PARA_VENDA | 64 | 100% |
-| 🟡 REVISAR_ANTES_DE_VENDER | 0 | 0% |
-| 🔴 BLOQUEAR_VENDA | 0 | 0% |
+| 🟢 PRONTO_PARA_VENDA | 64 | 100.0% |
+| 🟡 REVISAR_ANTES_DE_VENDER | 0 | 0.0% |
+| 🔴 BLOQUEAR_VENDA | 0 | 0.0% |
 
 ### Critérios aplicados
 
-- **PRONTO_PARA_VENDA**: sem missing items na auditoria original, estudos-caso criados, Google Ads com estrutura mínima
-- **BLOQUEAR_VENDA**: com missing items na auditoria original
+- **PRONTO_PARA_VENDA**: todos os artefatos obrigatórios existem e `marketing/google-ads.md` contém estrutura mínima
+- **REVISAR_ANTES_DE_VENDER**: artefatos existem, mas `marketing/google-ads.md` está incompleto
+- **BLOQUEAR_VENDA**: artefatos centrais ausentes (ex.: diretórios vazios, sem módulos/certificado/avaliação)
 
 ## 4. Matriz de auditoria
 

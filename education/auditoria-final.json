@@ -2,741 +2,455 @@
   "data": "2026-08-14",
   "total_cursos": 64,
   "status_counts": {
-    "PRONTO_PARA_VENDA": 64,
-    "REVISAR_ANTES_DE_VENDER": 0,
-    "BLOQUEAR_VENDA": 0
+    "PRONTO_PARA_VENDA": 64
   },
   "cursos": [
     {
       "slug": "airbnb-do-zero",
+      "status": "PRONTO_PARA_VENDA",
       "missing": [],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "analise-de-mercado-imobiliario-litoral",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "analise-de-rentabilidade",
+      "status": "PRONTO_PARA_VENDA",
       "missing": [],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "apresentacao-imoveis-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "atendimento-ao-cliente-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "atendimento-cliente-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "aumentar-rentabilidade",
+      "status": "PRONTO_PARA_VENDA",
       "missing": [],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "automacao-comercial",
+      "status": "PRONTO_PARA_VENDA",
       "missing": [],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "avaliacao-de-imoveis",
+      "status": "PRONTO_PARA_VENDA",
       "missing": [],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "booking-do-zero",
+      "status": "PRONTO_PARA_VENDA",
       "missing": [],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "captacao-exclusividade",
+      "status": "PRONTO_PARA_VENDA",
       "missing": [],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "captacao-imoveis-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "casa-ou-apartamento",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "comprar-com-seguranca",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "comprar-imovel-praia-sem-golpes",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "comunicacao-interpessoal-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "crm-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "documentacao-completa-imoveis-litoral",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "documentacao-imobiliaria",
+      "status": "PRONTO_PARA_VENDA",
       "missing": [],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "especialista-venda-imoveis-litoral",
+      "status": "PRONTO_PARA_VENDA",
       "missing": [],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "fechamento-de-vendas-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "financiamento-imobiliario",
+      "status": "PRONTO_PARA_VENDA",
       "missing": [],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "flipping",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "flipping-completo",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "flipping-imoveis-litoral",
+      "status": "PRONTO_PARA_VENDA",
       "missing": [],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "funil-de-vendas",
+      "status": "PRONTO_PARA_VENDA",
       "missing": [],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "gestao-de-conflitos-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "gestao-de-locacao-no-litoral",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "gestao-de-propostas-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "gestao-de-vendas-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "gestao-do-tempo-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "gestao-profissional-locacao",
+      "status": "PRONTO_PARA_VENDA",
       "missing": [],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "guia-investidor-imobiliario",
+      "status": "PRONTO_PARA_VENDA",
       "missing": [],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "guia-investidor-imobiliario-avancado",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "ia-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "ia-para-imobiliarias",
+      "status": "PRONTO_PARA_VENDA",
       "missing": [],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "imoveis-para-airbnb",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "instagram-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "inteligencia-emocional-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "investindo-imoveis-litoral",
+      "status": "PRONTO_PARA_VENDA",
       "missing": [],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "lideranca-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "marketing-imobiliario",
+      "status": "PRONTO_PARA_VENDA",
       "missing": [],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "marketing-imobiliario-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "multiplique-patrimonio",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "negociacao-avancada-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "negociacao-imobiliaria-litoral",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "networking-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "oratoria-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "planejamento-estrategico-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "pos-venda-relacionamento-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "pricelabs-completo",
+      "status": "PRONTO_PARA_VENDA",
       "missing": [],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "primeiro-imovel-litoral",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "produtividade-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "prospeccao-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "ptam-na-pratica",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "recuperacao-de-vendas-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "rotinas-de-vendas-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "storytelling-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "treinamento-de-equipes-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "treinamento-em-tecnologia-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "venda-imoveis-alto-padrao-litoral",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "venda-rapida-imoveis-litoral",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "visita-tecnica-para-corretores",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     },
     {
       "slug": "whatsapp-que-vende",
-      "missing": [
-        "estudos_caso"
-      ],
-      "partial": [
-        "google_ads"
-      ],
-      "estudos_caso_existe": true,
-      "google_ads_existe": true,
+      "status": "PRONTO_PARA_VENDA",
+      "missing": [],
+      "partial": [],
       "classificacao_real": "PRONTO_PARA_VENDA"
     }
   ]
