@@ -1,0 +1,12 @@
+# Planilha de Precificação — Investindo em Imóveis no Litoral
+- [ ] Imóvel
+- [ ] Preço pedido
+- [ ] Avaliação
+- [ ] Entrada
+- [ ] Parcelas
+- [ ] Juros
+- [ ] IPTU
+- [ ] Condomínio
+- [ ] Receita estimada
+- [ ] ROI
+- [ ] Payback
