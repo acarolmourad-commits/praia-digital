@@ -1,0 +1,8 @@
+lead_id,city,bairro,tipo_cliente,nome_empresa,url,canal_contato,servico_potencial,evidencia,score,status
+1,Bertioga,Morada da Praia,anfitriao,Gumercindo,https://www.airbnb.pt/rooms/1315841675686499151,Airbnb,Administracao Airbnb/Temporada,Response rate 33% + rating 4.0 + gestao aparentemente manual,78,PROSPECTAR
+2,Sao Sebastiao,Praia da Baleia,proprietario/empresa,Tami Moreira,https://www.temporadalivre.com/aluguel-temporada/brasil/sao-paulo/sao-sebastiao/praia-da-baleia/54756-casa-pe-na-areia-na-praia-da-baleia,TemporadaLivre,Edicao de anuncio,Anunciante verificado 2019 sem preco cadastrado,72,PROSPECTAR
+3,Sao Sebastiao,Juquehy,imobiliaria,Imobiliaria Juquehy,http://juquehyimobiliaria.com/,Site,Edicao de anuncio + SEO local,Portal local sem sinal de presenca digital forte,65,NUTRIR
+4,Sao Sebastiao,Maresias,imobiliaria,Tropical Imobiliaria Maresias,https://tropicalimobiliaria.com.br/temporada/,Site,Edicao de anuncio + SEO local,Listagem de temporada sem diferenciacao visivel,62,NUTRIR
+5,Sao Sebastiao,,imobiliaria,Riviera Imoveis,https://www.rivieraimoveis.com/,Site,Edicao de anuncio + SEO local,Site institucional; avaliar qualidade de anuncios,60,NUTRIR
+6,Bertioga,Indaiá,proprietario/anfitriao,Desconhecido,https://www.instagram.com/reel/C79aACRuf0J/,Instagram,Fotografia + Edicao de anuncio,Aluguel direto R$650/dia; baixa apresentacao esperada,74,PROSPECTAR
+7,Bertioga,Enseada,proprietario,Desconhecido,https://www.temporadalivre.com/aluguel-temporada/brasil/sao-paulo/bertioga/praia-da-enseada/139114-casa-bertioga-c-piscina-3-quartos-1-suite-ate-15-pessoas-prox-sesc,TemporadaLivre,Fotografia + Edicao de anuncio,Casa grande piscina 3 quartos; avaliar qualidade de fotos/preco,68,PROSPECTAR
