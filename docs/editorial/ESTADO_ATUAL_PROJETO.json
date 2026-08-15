@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T00:45:00Z",
+  "generated_at": "2026-08-15T05:10:00Z",
   "project": "praia-digital",
   "branch": "main",
   "editorial_state": {
@@ -16,6 +16,7 @@
     "items_ready": 23,
     "setup_doc": "docs/medicao-batch146-setup.md",
     "result_template": "docs/medicao-batch146-resultado-template.json",
+    "result_file": "docs/medicao-batch146-resultado.json",
     "execution_plan": "documented in docs/medicao-batch146.json"
   },
   "academy": {
@@ -31,12 +32,13 @@
     "batch149": "docs/editorial/batch149_candidate_topics.md",
     "batch150": "docs/editorial/batch150_candidate_topics.md",
     "batch151": "docs/editorial/batch151_candidate_topics.md",
-    "batch152": "docs/editorial/batch152_candidate_topics.md"
+    "batch152": "docs/editorial/batch152_candidate_topics.md",
+    "batch153": "docs/editorial/batch153_candidate_topics.md"
   },
   "next_actions": [
     "Run Batch146 measurement on 2026-09-12",
-    "Expand medium articles content (745 in progress)",
     "Monitor Academy production endpoints",
-    "Complete Academy deploy variables when available"
+    "Complete Academy deploy variables when available",
+    "Execute execution_plan add_links/seo_audit/duplicate_signals when requested"
   ]
 }
