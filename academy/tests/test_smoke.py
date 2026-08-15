@@ -67,7 +67,6 @@ def test_checkout_public():
     assert data["status"] == "pending"
     assert data["total"] == 9900
     assert "checkout_url" in data
-    return data["order_id"]
 
 
 def test_checkout_confirm():
