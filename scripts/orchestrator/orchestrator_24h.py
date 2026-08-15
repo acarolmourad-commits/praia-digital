@@ -15,6 +15,7 @@ BLOG_DIR = REPO / 'blog'
 FORMACOES_DIR = REPO / 'education' / 'formacoes'
 REGISTRY = REPO / 'docs' / 'banco-editorial.json'
 SITEMAP_SCRIPT = REPO / 'scripts' / 'gerar_sitemap.py'
+SITEMAP_PATH = REPO / 'sitemap.xml'
 
 sys.path.insert(0, str((REPO / 'scripts' / 'orchestrator' / 'modules').resolve()))
 sys.path.insert(0, str((REPO / 'scripts' / 'orchestrator' / 'discovery').resolve()))
@@ -428,6 +429,112 @@ def publish(reviewed: list, context: dict) -> list:
         published.append(item)
     return published
 
+
+def verify_and_fix_published(published: list, context: dict) -> list:
+    """
+    Verifica artigos publicados e tenta corrigir automaticamente divergências.
+    Apenas considera PUBLICADO_OK se todas as verificações passarem.
+    """
+    evidence = context.get('evidence', {})
+    results = []
+    
+    for item in published:
+        evidence_key = item.get('evidence_key')
+        item_evidence = evidence.get(evidence_key) if evidence_key else None
+        if not item_evidence:
+            item['post_publish_status'] = 'REVISAR_HUMANO'
+            item['post_publish_error'] = 'missing_evidence'
+            results.append(item)
+            continue
+        
+        html_path = Path(item_evidence['html_path'])
+        slug = item_evidence.get('slug', '')
+        
+        # Run verification
+        try:
+            sitemap_slugs = set()
+            if SITEMAP_SCRIPT.exists():
+                sitemap_slugs = _load_sitemap_slugs()
+        except Exception:
+            sitemap_slugs = set()
+        
+        verification = _verify_article(html_path, sitemap_slugs)
+        item['post_publish_verification'] = verification
+        
+        if verification.get('valid'):
+            item['post_publish_status'] = 'PUBLISHED_OK'
+            results.append(item)
+        else:
+            # Try automatic fix
+            try:
+                fix_module = load_module('post_publish_fix', [REPO / 'scripts' / 'orchestrator' / 'maintenance'])
+                if fix_module:
+                    fix_result = fix_module.run({})
+                    # Re-verify after fix
+                    verification_after = _verify_article(html_path, sitemap_slugs)
+                    if verification_after.get('valid'):
+                        item['post_publish_status'] = 'PUBLISHED_OK'
+                        item['post_publish_fixed'] = True
+                    else:
+                        item['post_publish_status'] = 'REVISAR_HUMANO'
+                        item['post_publish_fix_failed'] = True
+                else:
+                    item['post_publish_status'] = 'REVISAR_HUMANO'
+                    item['post_publish_error'] = 'fix_module_not_found'
+            except Exception as e:
+                item['post_publish_status'] = 'REVISAR_HUMANO'
+                item['post_publish_error'] = f'fix_error: {str(e)}'
+            results.append(item)
+    
+    return results
+
+
+def _load_sitemap_slugs() -> set:
+    if not SITEMAP_PATH.exists():
+        return set()
+    txt = SITEMAP_PATH.read_text(encoding='utf-8', errors='ignore')
+    urls = set(re.findall(r'<loc>(.*?)</loc>', txt))
+    slugs = set()
+    for url in urls:
+        if '/blog/' in url and url.endswith('.html'):
+            slugs.add(Path(url).stem)
+    return slugs
+
+
+def _verify_article(html_path: Path, sitemap_slugs: set, min_required: int = 1) -> dict:
+    if not html_path.exists():
+        return {'valid': False, 'error': 'missing', 'issues': ['file_missing']}
+    txt = html_path.read_text(encoding='utf-8', errors='ignore')
+    slug = html_path.stem
+    issues = []
+    in_sitemap = slug in sitemap_slugs
+    if not in_sitemap:
+        issues.append('missing_from_sitemap')
+    hrefs = re.findall(r'href=["\']([^"\']+)["\']', txt, re.I)
+    internal = [h for h in hrefs if h.startswith('/blog/') or h.startswith('/education/') or h.startswith('/noticias/')]
+    if len(internal) < min_required:
+        issues.append(f'insufficient_internal_links:{len(internal)}')
+    if not any(p in txt.lower() for p in ['whatsapp', 'wa.me', 'comprar', 'checkout']):
+        issues.append('missing_cta_or_whatsapp')
+    if len(txt) < 800:
+        issues.append(f'content_too_small:{len(txt)}')
+    if '<title>' not in txt.lower():
+        issues.append('missing_title')
+    if 'meta name="description"' not in txt.lower():
+        issues.append('missing_description')
+    if '<h1' not in txt.lower():
+        issues.append('missing_h1')
+    if 'rel="canonical"' not in txt.lower():
+        issues.append('missing_canonical')
+    return {
+        'slug': slug,
+        'valid': len(issues) == 0,
+        'issues': issues,
+        'size': len(txt),
+        'internal_links': len(internal),
+        'in_sitemap': in_sitemap,
+    }
+
 def connect(published: list, context: dict) -> list:
     evidence = context.get('evidence', {})
     connected = []
@@ -576,8 +683,14 @@ def run(context: dict = {}) -> dict:
     published = publish(reviewed, context)
     print(f"[ORCHESTRATOR-24H] 7. Publicadas: {len(published)} oportunidades")
 
+    # 7.1 Verificar e corrigir publicadas
+    verified = verify_and_fix_published(published, context)
+    published_ok = sum(1 for v in verified if v.get('post_publish_status') == 'PUBLISHED_OK')
+    needs_human = sum(1 for v in verified if v.get('post_publish_status') == 'REVISAR_HUMANO')
+    print(f"[ORCHESTRATOR-24H] 7.1 Verificadas: {published_ok} OK, {needs_human} para revisão humana")
+
     # 8. Conectar
-    connected = connect(published, context)
+    connected = connect(verified, context)
     print(f"[ORCHESTRATOR-24H] 8. Conectadas: {len(connected)} oportunidades")
 
     # 9. Registrar
@@ -596,6 +709,14 @@ def run(context: dict = {}) -> dict:
             print(f"[ORCHESTRATOR-24H] 11. Verificação pós-publicação: {verification.get('status', 'unknown')}")
             if verification.get('status') == 'divergences_found':
                 print(f"[ORCHESTRATOR-24H] Divergências encontradas: {verification.get('failed_slugs', [])}")
+                # Tentar correção automática segura
+                try:
+                    fix_module = load_module('post_publish_fix', [REPO / 'scripts' / 'orchestrator' / 'maintenance'])
+                    if fix_module:
+                        fix_result = fix_module.run({})
+                        print(f"[ORCHESTRATOR-24H] 12. Correção automática: {fix_result.get('status', 'unknown')}")
+                except Exception as e:
+                    print(f"[ORCHESTRATOR-24H] 12. Correção automática erro: {e}")
         else:
             print('[ORCHESTRATOR-24H] 11. Verificação pós-publicação: módulo não encontrado')
     except Exception as e:
