@@ -1,21 +1,42 @@
 {
-  "generated_at": "2026-08-11T19:13:17.688452Z",
+  "generated_at": "2026-08-15T00:45:00Z",
+  "project": "praia-digital",
+  "branch": "main",
   "editorial_state": {
-    "total_articles_recovered": 30,
-    "validated_http_200": 30,
-    "registry_validated": 20,
-    "registry_total_published": 20,
-    "batch4_draft_articles": 12,
-    "sitemap_urls": 30,
-    "status": "RECUPERADO_VALIDADO",
-    "gsc_audit": "PENDING_SECURE_ACCESS"
+    "total_articles": 3074,
+    "links_broken": 0,
+    "last_link_audit": "2026-08-15",
+    "link_audit_csv": "docs/editorial/link-broken-map-2026-08-14.csv",
+    "link_manual_csv": "docs/editorial/link-broken-manual-2026-08-14.csv"
   },
-  "blockers": [
-    "GSC audit blocked: browser_prepare returns browser_consent_required despite --grant existing-profile being applied"
-  ],
+  "batch146": {
+    "status": "ready_to_run",
+    "measurement_date": "2026-09-12",
+    "items_total": 23,
+    "items_ready": 23,
+    "setup_doc": "docs/medicao-batch146-setup.md",
+    "result_template": "docs/medicao-batch146-resultado-template.json",
+    "execution_plan": "documented in docs/medicao-batch146.json"
+  },
+  "academy": {
+    "status": "64/64 PRONTO_PARA_VENDA",
+    "courses_seeded": 64,
+    "monitor_job": "academy-production-monitor",
+    "deploy_checklist": "docs/academy/DEPLOY-CHECKLIST.md"
+  },
+  "blog_batches": {
+    "batch76": "docs/editorial/batch76_candidate_topics.md",
+    "batch147": "docs/editorial/batch147_candidate_topics.md",
+    "batch148": "docs/editorial/batch148_candidate_topics.md",
+    "batch149": "docs/editorial/batch149_candidate_topics.md",
+    "batch150": "docs/editorial/batch150_candidate_topics.md",
+    "batch151": "docs/editorial/batch151_candidate_topics.md",
+    "batch152": "docs/editorial/batch152_candidate_topics.md"
+  },
   "next_actions": [
-    "Complete GSC access authorization",
-    "Run 30-URL indexation audit in GSC",
-    "Submit URLs for indexing only after audit results"
+    "Run Batch146 measurement on 2026-09-12",
+    "Expand medium articles content (745 in progress)",
+    "Monitor Academy production endpoints",
+    "Complete Academy deploy variables when available"
   ]
 }
