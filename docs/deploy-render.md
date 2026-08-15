@@ -15,7 +15,7 @@ Status atual: `academy-db` já existe e está `available`; a criação do web se
 - **Environment:** `Python 3`
 - **Branch:** `main`
 - **Build Command:** `pip install -r academy/requirements.txt`
-- **Start Command:** `cd academy && uvicorn main:app --host 0.0.0.0 --port $PORT`
+- **Start Command:** `PYTHONPATH=academy uvicorn academy.main:app --host 0.0.0.0 --port $PORT`
 - **Plan:** Free ou Starter
 
 ## Passo 3 — Variáveis de ambiente

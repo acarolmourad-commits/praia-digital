@@ -6,6 +6,7 @@ Uso:
 """
 
 import argparse
+import json
 import sys
 import time
 import urllib.parse
@@ -81,14 +82,27 @@ def main():
     print(f"/monitoring/status: {code} -> {checks[-1][1]}")
 
     # public checkout stub
-    code, body = fetch(base + "/payments/checkout", method="POST", payload={
+    checkout_payload = {
         "items": [{"course_id": 1, "quantity": 1}],
         "buyer_name": "Deploy Check",
         "buyer_email": "deploy-check@example.com",
         "buyer_document": "12345678900",
-    })
-    checks.append(("/payments/checkout", code == 200 and '"status":"pending"' in body.replace(' ', '')))
-    print(f"/payments/checkout: {code} -> {checks[-1][1]}")
+    }
+    req = urllib.request.Request(
+        base + "/academy/checkout",
+        data=json.dumps(checkout_payload).encode("utf-8"),
+        method="POST",
+        headers={"Content-Type": "application/json"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            code, body = resp.status, resp.read().decode("utf-8", errors="ignore")
+    except urllib.error.HTTPError as e:
+        code, body = e.code, e.read().decode("utf-8", errors="ignore")
+    except Exception as e:
+        code, body = None, str(e)
+    checks.append(("/academy/checkout", code == 200 and '"status":"pending"' in body.replace(' ', '')))
+    print(f"/academy/checkout: {code} -> {checks[-1][1]}")
 
     print("\nRESULTADO:")
     for name, ok in checks:

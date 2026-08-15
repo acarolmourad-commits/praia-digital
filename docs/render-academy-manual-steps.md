@@ -17,7 +17,7 @@ Pré-condições validadas: `python scripts/pre_deploy_check.py` → PASSED
    ```
 8. Start command:
    ```
-   cd academy && uvicorn main:app --host 0.0.0.0 --port $PORT
+   PYTHONPATH=academy uvicorn academy.main:app --host 0.0.0.0 --port $PORT
    ```
 9. Banco de dados: **Add PostgreSQL**
    - Nome: `academy-db`
