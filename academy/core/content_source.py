@@ -2,10 +2,13 @@ from sqlalchemy.orm import Session
 from academy.core.models import Course, CourseContentSource, ContentSourceType
 from pathlib import Path
 from typing import Optional
-import os
 
 REPO = Path(__file__).resolve().parents[2]
 COURSES_FS_ROOT = REPO / "academy" / "cursos"
+
+
+def get_content_source(db: Session, course_id: int) -> Optional[CourseContentSource]:
+    return db.query(CourseContentSource).filter(CourseContentSource.course_id == course_id).first()
 
 
 def ensure_content_source(db: Session, course: Course) -> Optional[CourseContentSource]:
@@ -31,15 +34,6 @@ def ensure_content_source(db: Session, course: Course) -> Optional[CourseContent
     db.flush()
     db.refresh(source)
     return source
-
-
-def get_content_source(db: Session, course_id: int) -> Optional[CourseContentSource]:
-    return db.query(CourseContentSource).filter(CourseContentSource.course_id == course_id).first()
-
-
-def resolve_course_slug(db: Session, course_id: int) -> Optional[str]:
-    course = db.query(Course).filter(Course.id == course_id).first()
-    return course.slug if course else None
 
 
 def auto_ensure_all(db: Session) -> dict:
@@ -68,3 +62,8 @@ def auto_ensure_all(db: Session) -> dict:
         result["created"] += 1
     db.commit()
     return result
+
+
+def resolve_course_slug(db: Session, course_id: int) -> Optional[str]:
+    course = db.query(Course).filter(Course.id == course_id).first()
+    return course.slug if course else None
