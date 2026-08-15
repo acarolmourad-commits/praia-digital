@@ -2,17 +2,16 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 from academy.core.database import Base, get_db
+import academy.core.models  # garante que modelos estão registrados antes de create_all
 
-SQLALCHEMY_DATABASE_URL = "sqlite:///:memory:"
-
-engine = create_engine(
-    SQLALCHEMY_DATABASE_URL,
+TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=create_engine(
+    "sqlite:///:memory:",
     connect_args={"check_same_thread": False},
     poolclass=StaticPool,
-)
-TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+))
 
-Base.metadata.create_all(bind=engine)
+Base.metadata.create_all(bind=TestingSessionLocal.kw["bind"])
+engine = TestingSessionLocal.kw["bind"]
 
 
 def override_get_db():
