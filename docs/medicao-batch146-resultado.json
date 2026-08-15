@@ -1,0 +1,459 @@
+{
+  "batch": 146,
+  "measurement_date": "2026-09-12",
+  "measurement_window_days": 30,
+  "status": "measurement_collected",
+  "metrics": {
+    "impressoes": null,
+    "cliques": null,
+    "CTR": null,
+    "posicao_media": null,
+    "indexacao": null,
+    "crescimento_consultas": null,
+    "links_internos_recebidos": null,
+    "sinais_canibalizacao": null
+  },
+  "items": [
+    {
+      "slug": "casa-venda-guaruja-ia",
+      "action": "ATUALIZAR",
+      "metrics": {}
+    },
+    {
+      "slug": "comprar-imovel-guaruja-2026",
+      "action": "ATUALIZAR",
+      "metrics": {}
+    },
+    {
+      "slug": "comprar-imovel-na-planta-litoral-sp-2026",
+      "action": "ATUALIZAR",
+      "metrics": {}
+    },
+    {
+      "slug": "primeira-compra-peruibe-ia",
+      "action": "ATUALIZAR",
+      "metrics": {}
+    },
+    {
+      "slug": "peruibe-compra-venda-imoveis-2026",
+      "action": "ATUALIZAR",
+      "metrics": {}
+    },
+    {
+      "slug": "sao-vicente-compra-venda-imoveis-2026",
+      "action": "ATUALIZAR",
+      "metrics": {}
+    },
+    {
+      "slug": "praia-grande-compra-venda-imoveis-2026",
+      "action": "ATUALIZAR",
+      "metrics": {}
+    },
+    {
+      "slug": "santos-financiamento-imoveis-2026",
+      "action": "EXPANDIR",
+      "metrics": {}
+    },
+    {
+      "slug": "guaruja-financiamento-imoveis-2026",
+      "action": "EXPANDIR",
+      "metrics": {}
+    },
+    {
+      "slug": "praia-grande-financiamento-imoveis-2026",
+      "action": "EXPANDIR",
+      "metrics": {}
+    },
+    {
+      "slug": "bertioga-financiamento-imoveis-2026",
+      "action": "EXPANDIR",
+      "metrics": {}
+    },
+    {
+      "slug": "itanhaem-financiamento-imoveis-2026",
+      "action": "EXPANDIR",
+      "metrics": {}
+    },
+    {
+      "slug": "mongagua-financiamento-imoveis-2026",
+      "action": "EXPANDIR",
+      "metrics": {}
+    },
+    {
+      "slug": "peruibe-financiamento-imoveis-2026",
+      "action": "EXPANDIR",
+      "metrics": {}
+    },
+    {
+      "slug": "caraguatatuba-financiamento-imoveis-2026",
+      "action": "EXPANDIR",
+      "metrics": {}
+    },
+    {
+      "slug": "como-declarar-aluguel-temporada-ir-2026",
+      "action": "CRIAR",
+      "metrics": {}
+    },
+    {
+      "slug": "seguro-fianca-aluguel-temporada-2026",
+      "action": "CRIAR",
+      "metrics": {}
+    },
+    {
+      "slug": "distrato-construtora-imoveis-litoral-2026",
+      "action": "CRIAR",
+      "metrics": {}
+    },
+    {
+      "slug": "documentacao-venda-imovel-herdado-litoral",
+      "action": "CRIAR",
+      "metrics": {}
+    },
+    {
+      "slug": "permuta-imoveis-litoral-paulista-2026",
+      "action": "CRIAR",
+      "metrics": {}
+    },
+    {
+      "slug": "financiamento-por-idade-imoveis-litoral",
+      "action": "CRIAR",
+      "metrics": {}
+    },
+    {
+      "slug": "imovel-compartilhado-litoral-paulista",
+      "action": "CRIAR",
+      "metrics": {}
+    },
+    {
+      "slug": "taxa-ocupacao-media-temporada-litoral",
+      "action": "CRIAR",
+      "metrics": {}
+    }
+  ],
+  "notes": "Preencher métricas em 2026-09-12. Usar scripts/collect_batch146_metrics.py para coleta automatizada quando possível.",
+  "collected_at": "1786762296.0045302",
+  "results": [
+    {
+      "slug": "casa-venda-guaruja-ia",
+      "action": "ATUALIZAR",
+      "local": {
+        "exists": true,
+        "chars": 14293,
+        "words": 2107,
+        "h1_count": 1,
+        "has_title": true,
+        "has_description": true
+      },
+      "remote_status": 200,
+      "remote_ok": true
+    },
+    {
+      "slug": "comprar-imovel-guaruja-2026",
+      "action": "ATUALIZAR",
+      "local": {
+        "exists": true,
+        "chars": 10925,
+        "words": 1553,
+        "h1_count": 1,
+        "has_title": true,
+        "has_description": true
+      },
+      "remote_status": 200,
+      "remote_ok": true
+    },
+    {
+      "slug": "comprar-imovel-na-planta-litoral-sp-2026",
+      "action": "ATUALIZAR",
+      "local": {
+        "exists": true,
+        "chars": 18771,
+        "words": 2772,
+        "h1_count": 1,
+        "has_title": true,
+        "has_description": true
+      },
+      "remote_status": 200,
+      "remote_ok": true
+    },
+    {
+      "slug": "primeira-compra-peruibe-ia",
+      "action": "ATUALIZAR",
+      "local": {
+        "exists": true,
+        "chars": 14162,
+        "words": 2053,
+        "h1_count": 1,
+        "has_title": true,
+        "has_description": true
+      },
+      "remote_status": 200,
+      "remote_ok": true
+    },
+    {
+      "slug": "peruibe-compra-venda-imoveis-2026",
+      "action": "ATUALIZAR",
+      "local": {
+        "exists": true,
+        "chars": 3283,
+        "words": 459,
+        "h1_count": 1,
+        "has_title": true,
+        "has_description": true
+      },
+      "remote_status": 200,
+      "remote_ok": true
+    },
+    {
+      "slug": "sao-vicente-compra-venda-imoveis-2026",
+      "action": "ATUALIZAR",
+      "local": {
+        "exists": true,
+        "chars": 3335,
+        "words": 472,
+        "h1_count": 1,
+        "has_title": true,
+        "has_description": true
+      },
+      "remote_status": 200,
+      "remote_ok": true
+    },
+    {
+      "slug": "praia-grande-compra-venda-imoveis-2026",
+      "action": "ATUALIZAR",
+      "local": {
+        "exists": true,
+        "chars": 3348,
+        "words": 472,
+        "h1_count": 1,
+        "has_title": true,
+        "has_description": true
+      },
+      "remote_status": 200,
+      "remote_ok": true
+    },
+    {
+      "slug": "santos-financiamento-imoveis-2026",
+      "action": "EXPANDIR",
+      "local": {
+        "exists": true,
+        "chars": 3867,
+        "words": 519,
+        "h1_count": 1,
+        "has_title": true,
+        "has_description": true
+      },
+      "remote_status": 200,
+      "remote_ok": true
+    },
+    {
+      "slug": "guaruja-financiamento-imoveis-2026",
+      "action": "EXPANDIR",
+      "local": {
+        "exists": true,
+        "chars": 3880,
+        "words": 519,
+        "h1_count": 1,
+        "has_title": true,
+        "has_description": true
+      },
+      "remote_status": 200,
+      "remote_ok": true
+    },
+    {
+      "slug": "praia-grande-financiamento-imoveis-2026",
+      "action": "EXPANDIR",
+      "local": {
+        "exists": true,
+        "chars": 3945,
+        "words": 532,
+        "h1_count": 1,
+        "has_title": true,
+        "has_description": true
+      },
+      "remote_status": 200,
+      "remote_ok": true
+    },
+    {
+      "slug": "bertioga-financiamento-imoveis-2026",
+      "action": "EXPANDIR",
+      "local": {
+        "exists": true,
+        "chars": 3893,
+        "words": 519,
+        "h1_count": 1,
+        "has_title": true,
+        "has_description": true
+      },
+      "remote_status": 200,
+      "remote_ok": true
+    },
+    {
+      "slug": "itanhaem-financiamento-imoveis-2026",
+      "action": "EXPANDIR",
+      "local": {
+        "exists": true,
+        "chars": 3893,
+        "words": 519,
+        "h1_count": 1,
+        "has_title": true,
+        "has_description": true
+      },
+      "remote_status": 200,
+      "remote_ok": true
+    },
+    {
+      "slug": "mongagua-financiamento-imoveis-2026",
+      "action": "EXPANDIR",
+      "local": {
+        "exists": true,
+        "chars": 3893,
+        "words": 519,
+        "h1_count": 1,
+        "has_title": true,
+        "has_description": true
+      },
+      "remote_status": 200,
+      "remote_ok": true
+    },
+    {
+      "slug": "peruibe-financiamento-imoveis-2026",
+      "action": "EXPANDIR",
+      "local": {
+        "exists": true,
+        "chars": 3880,
+        "words": 519,
+        "h1_count": 1,
+        "has_title": true,
+        "has_description": true
+      },
+      "remote_status": 200,
+      "remote_ok": true
+    },
+    {
+      "slug": "caraguatatuba-financiamento-imoveis-2026",
+      "action": "EXPANDIR",
+      "local": {
+        "exists": true,
+        "chars": 3958,
+        "words": 519,
+        "h1_count": 1,
+        "has_title": true,
+        "has_description": true
+      },
+      "remote_status": 200,
+      "remote_ok": true
+    },
+    {
+      "slug": "como-declarar-aluguel-temporada-ir-2026",
+      "action": "CRIAR",
+      "local": {
+        "exists": true,
+        "chars": 4165,
+        "words": 588,
+        "h1_count": 1,
+        "has_title": true,
+        "has_description": true
+      },
+      "remote_status": 200,
+      "remote_ok": true
+    },
+    {
+      "slug": "seguro-fianca-aluguel-temporada-2026",
+      "action": "CRIAR",
+      "local": {
+        "exists": true,
+        "chars": 4306,
+        "words": 602,
+        "h1_count": 1,
+        "has_title": true,
+        "has_description": true
+      },
+      "remote_status": 200,
+      "remote_ok": true
+    },
+    {
+      "slug": "distrato-construtora-imoveis-litoral-2026",
+      "action": "CRIAR",
+      "local": {
+        "exists": true,
+        "chars": 4353,
+        "words": 602,
+        "h1_count": 1,
+        "has_title": true,
+        "has_description": true
+      },
+      "remote_status": 200,
+      "remote_ok": true
+    },
+    {
+      "slug": "documentacao-venda-imovel-herdado-litoral",
+      "action": "CRIAR",
+      "local": {
+        "exists": true,
+        "chars": 4326,
+        "words": 593,
+        "h1_count": 1,
+        "has_title": true,
+        "has_description": true
+      },
+      "remote_status": 200,
+      "remote_ok": true
+    },
+    {
+      "slug": "permuta-imoveis-litoral-paulista-2026",
+      "action": "CRIAR",
+      "local": {
+        "exists": true,
+        "chars": 4328,
+        "words": 611,
+        "h1_count": 1,
+        "has_title": true,
+        "has_description": true
+      },
+      "remote_status": 200,
+      "remote_ok": true
+    },
+    {
+      "slug": "financiamento-por-idade-imoveis-litoral",
+      "action": "CRIAR",
+      "local": {
+        "exists": true,
+        "chars": 4381,
+        "words": 620,
+        "h1_count": 1,
+        "has_title": true,
+        "has_description": true
+      },
+      "remote_status": 200,
+      "remote_ok": true
+    },
+    {
+      "slug": "imovel-compartilhado-litoral-paulista",
+      "action": "CRIAR",
+      "local": {
+        "exists": true,
+        "chars": 4301,
+        "words": 589,
+        "h1_count": 1,
+        "has_title": true,
+        "has_description": true
+      },
+      "remote_status": 200,
+      "remote_ok": true
+    },
+    {
+      "slug": "taxa-ocupacao-media-temporada-litoral",
+      "action": "CRIAR",
+      "local": {
+        "exists": true,
+        "chars": 4292,
+        "words": 602,
+        "h1_count": 1,
+        "has_title": true,
+        "has_description": true
+      },
+      "remote_status": 200,
+      "remote_ok": true
+    }
+  ]
+}
