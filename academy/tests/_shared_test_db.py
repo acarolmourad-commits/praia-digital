@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 from academy.core.database import Base, get_db
-import academy.core.models  # garante que modelos estão registrados antes de create_all
+import academy.core.models
 
 TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=create_engine(
     "sqlite:///:memory:",
