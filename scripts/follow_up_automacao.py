@@ -11,7 +11,7 @@ import csv
 from pathlib import Path
 from datetime import datetime, date
 
-BASE = Path(__file__).resolve().parent.parent.parent / 'docs' / 'comercial'
+BASE = Path(__file__).resolve().parent.parent / 'docs' / 'comercial'
 LEADS_PATH = BASE / 'leads_sao_sebastiao_bertioga.csv'
 METRICS_PATH = BASE / 'metricas_comerciais_2026-08-15.md'
 
