@@ -49,10 +49,10 @@ app.include_router(content.router)
 app.include_router(admin_content.router)
 app.include_router(student.router)
 
-# Servir área do aluno como frontend sob /education/aluno
-frontend_dir = Path(__file__).resolve().parent.parent / "education" / "aluno"
+# Servir frontend da Academy sob /education
+frontend_dir = Path(__file__).resolve().parent.parent / "education"
 if frontend_dir.exists():
-    app.mount("/education/aluno", StaticFiles(directory=str(frontend_dir), html=True), name="aluno-frontend")
+    app.mount("/education", StaticFiles(directory=str(frontend_dir), html=True), name="education-frontend")
 
 # Servir arquivos estáticos da API sob /static
 static_dir = Path(__file__).resolve().parent / "static"
