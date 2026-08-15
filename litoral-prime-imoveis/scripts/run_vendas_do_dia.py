@@ -201,7 +201,7 @@ def update_social_meta():
             return
 
         html = path.read_text(encoding="utf-8")
-        if '<meta property="og:type" content="website">' in html:
+        if '<meta property="og:type" content="website">' in html and '<meta name="twitter:card"' in html:
             return
 
         first_title = re.search(r"<title>.*?</title>", html)
