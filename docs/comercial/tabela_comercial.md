@@ -13,9 +13,10 @@ Data de referência: 2026-08-15
 - Aplicação: proprietários/anfitriões com imóveis de temporada e gestão manual
 
 ## Fotografia imobiliária
-- Preço/pacote: PREÇO_PENDENTE
+- Preço: a partir de R$ 700
+- Preço final depende de: imóvel, quantidade de ambientes e escopo
 - Aplicação: imóveis com apresentação visual fraca, poucas fotos ou fotos amadoras
-- Ação pendente: definir pacote antes de enviar propostas
+- Comunicação comercial: "sessões a partir de R$ 700"
 
 ## Cross-sell
 - Fotografia → Edição de anúncio
