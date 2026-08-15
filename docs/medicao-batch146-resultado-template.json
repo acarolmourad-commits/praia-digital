@@ -1,0 +1,42 @@
+{
+  "batch": 146,
+  "measurement_date": "2026-09-12",
+  "measurement_window_days": 30,
+  "status": "measurement_pending",
+  "metrics": {
+    "impressoes": null,
+    "cliques": null,
+    "CTR": null,
+    "posicao_media": null,
+    "indexacao": null,
+    "crescimento_consultas": null,
+    "links_internos_recebidos": null,
+    "sinais_canibalizacao": null
+  },
+  "items": [
+    {"slug": "casa-venda-guaruja-ia", "action": "ATUALIZAR", "metrics": {}},
+    {"slug": "comprar-imovel-guaruja-2026", "action": "ATUALIZAR", "metrics": {}},
+    {"slug": "comprar-imovel-na-planta-litoral-sp-2026", "action": "ATUALIZAR", "metrics": {}},
+    {"slug": "primeira-compra-peruibe-ia", "action": "ATUALIZAR", "metrics": {}},
+    {"slug": "peruibe-compra-venda-imoveis-2026", "action": "ATUALIZAR", "metrics": {}},
+    {"slug": "sao-vicente-compra-venda-imoveis-2026", "action": "ATUALIZAR", "metrics": {}},
+    {"slug": "praia-grande-compra-venda-imoveis-2026", "action": "ATUALIZAR", "metrics": {}},
+    {"slug": "santos-financiamento-imoveis-2026", "action": "EXPANDIR", "metrics": {}},
+    {"slug": "guaruja-financiamento-imoveis-2026", "action": "EXPANDIR", "metrics": {}},
+    {"slug": "praia-grande-financiamento-imoveis-2026", "action": "EXPANDIR", "metrics": {}},
+    {"slug": "bertioga-financiamento-imoveis-2026", "action": "EXPANDIR", "metrics": {}},
+    {"slug": "itanhaem-financiamento-imoveis-2026", "action": "EXPANDIR", "metrics": {}},
+    {"slug": "mongagua-financiamento-imoveis-2026", "action": "EXPANDIR", "metrics": {}},
+    {"slug": "peruibe-financiamento-imoveis-2026", "action": "EXPANDIR", "metrics": {}},
+    {"slug": "caraguatatuba-financiamento-imoveis-2026", "action": "EXPANDIR", "metrics": {}},
+    {"slug": "como-declarar-aluguel-temporada-ir-2026", "action": "CRIAR", "metrics": {}},
+    {"slug": "seguro-fianca-aluguel-temporada-2026", "action": "CRIAR", "metrics": {}},
+    {"slug": "distrato-construtora-imoveis-litoral-2026", "action": "CRIAR", "metrics": {}},
+    {"slug": "documentacao-venda-imovel-herdado-litoral", "action": "CRIAR", "metrics": {}},
+    {"slug": "permuta-imoveis-litoral-paulista-2026", "action": "CRIAR", "metrics": {}},
+    {"slug": "financiamento-por-idade-imoveis-litoral", "action": "CRIAR", "metrics": {}},
+    {"slug": "imovel-compartilhado-litoral-paulista", "action": "CRIAR", "metrics": {}},
+    {"slug": "taxa-ocupacao-media-temporada-litoral", "action": "CRIAR", "metrics": {}}
+  ],
+  "notes": "Preencher métricas em 2026-09-12. Usar scripts/collect_batch146_metrics.py para coleta automatizada quando possível."
+}
