@@ -1,5 +1,5 @@
-# Follow-up D2 — preparado para 2026-08-17
-Regra: executar apenas se não houver resposta até 17/08. Se houver resposta positiva/negativa/preço/agendamento, aplicar regra correspondente.
+# Follow-up D2 — executar em 2026-08-16
+Regra: executar apenas se não houver resposta até 16/08. Se houver resposta positiva/negativa/preço/agendamento, aplicar regra correspondente.
 
 ## Leads
 | lead_id | canal | D2 |
