@@ -4,7 +4,21 @@
     "domain": "praia.digital",
     "blog_path": ".\\blog",
     "scope": "controle editorial contínuo + integracao hotmart",
-    "updated_at": "2026-08-13T19:44:03.390814+00:00"
+    "updated_at": "2026-08-13T19:44:03.390814+00:00",
+    "cluster_counts": {
+      "editorial": 286,
+      "locacao_temporada": 251,
+      "automacao_ia": 595,
+      "compra_venda": 233,
+      "bairros_cidades": 208,
+      "marketing_digital": 135,
+      "investimento": 117,
+      "seo_local": 95,
+      "financiamento": 73,
+      "parcerias": 73,
+      "juridico": 72,
+      "cases": 70
+    }
   },
   "products": [
     {
