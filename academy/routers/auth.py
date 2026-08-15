@@ -12,6 +12,7 @@ from academy.core.schemas import (
 from academy.core.config import SECRET_KEY, ALGORITHM, ACCESS_TOKEN_EXPIRE_MINUTES
 from academy.core.security import hash_password, verify_password
 from academy.core.auth import create_access_token
+from academy.core.tracking import track, TrackingEventType
 from typing import List, Optional
 
 router = APIRouter(prefix="/auth", tags=["auth"])
@@ -30,6 +31,7 @@ def register(payload: UserRegister, db: Session = Depends(get_db)):
     db.add(user)
     db.commit()
     db.refresh(user)
+    track(db, TrackingEventType.register, user_id=user.id, commit=True)
     token = create_access_token({"sub": str(user.id), "role": user.role.value})
     return Token(access_token=token, role=user.role)
 
@@ -43,5 +45,6 @@ def login(payload: UserLogin, db: Session = Depends(get_db)):
     user.last_login_at = datetime.utcnow()
     db.add(user)
     db.commit()
+    track(db, TrackingEventType.login, user_id=user.id, commit=True)
     token = create_access_token({"sub": str(user.id), "role": user.role.value})
     return Token(access_token=token, role=user.role)

@@ -8,6 +8,7 @@ from academy.core.models import Course, Enrollment, EnrollmentStatus, Payment, P
 from academy.core.security import get_current_user_optional
 from academy.core.payments.service import get_payment_provider, is_sandbox, create_payment, PaymentContext, PaymentGateway
 from academy.core.payments.webhooks import verify_webhook, handle_payment_event
+from academy.core.tracking import track, TrackingEventType
 import os
 import logging
 
@@ -46,36 +47,46 @@ def public_checkout(
     # cria matrículas por curso
     enrollments = []
     for course_id in course_ids:
+        existing = db.query(Enrollment).filter(Enrollment.user_id == user_id, Enrollment.course_id == course_id).first()
+        if existing:
+            continue
         enrollment = Enrollment(user_id=user_id, course_id=course_id, status=EnrollmentStatus.pending.value)
         db.add(enrollment)
         db.flush()
         enrollments.append(enrollment)
 
+    if not enrollments:
+        raise HTTPException(status_code=400, detail="Cursos já matriculados.")
+
     gateway = get_payment_provider()
+    primary_enrollment = enrollments[0]
     context = PaymentContext(
         gateway=gateway,
         is_sandbox=is_sandbox(),
-        enrollment_id=enrollments[0].id,
+        enrollment_id=primary_enrollment.id,
         amount=total,
         currency="BRL",
         buyer_email=payload.buyer_email or "",
         buyer_name=payload.buyer_name or "",
-        external_reference=str(enrollments[0].id),
+        external_reference=str(primary_enrollment.id),
     )
     if user_id:
         context = PaymentContext(
             gateway=gateway,
             is_sandbox=is_sandbox(),
-            enrollment_id=enrollments[0].id,
+            enrollment_id=primary_enrollment.id,
             amount=total,
             currency="BRL",
             buyer_email=payload.buyer_email or "",
             buyer_name=payload.buyer_name or "",
-            external_reference=str(enrollments[0].id),
+            external_reference=str(primary_enrollment.id),
             user_id=user_id,
         )
     payment = create_payment(db, context)
     db.commit()
+
+    track(db, TrackingEventType.checkout_started, user_id=user_id, course_id=primary_enrollment.course_id, enrollment_id=primary_enrollment.id, payload={"course_ids": course_ids, "total": total, "gateway": gateway.value}, commit=True)
+    track(db, TrackingEventType.order_created, user_id=user_id, course_id=primary_enrollment.course_id, enrollment_id=primary_enrollment.id, payload={"order_id": primary_enrollment.id, "payment_id": payment.id, "total": total}, commit=True)
 
     if gateway == PaymentGateway.sandbox:
         return {

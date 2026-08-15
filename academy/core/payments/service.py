@@ -7,6 +7,7 @@ from sqlalchemy.orm import Session
 from academy.core.models import Payment, PaymentStatus, Enrollment, EnrollmentStatus
 from academy.core.payments.types import PaymentContext, PaymentGateway
 from academy.core.email_service import send_enrollment_confirmation
+from academy.core.tracking import track, TrackingEventType
 from datetime import datetime, timedelta
 
 logger = logging.getLogger("academy.payments")
@@ -113,6 +114,7 @@ def _activate_enrollment(db: Session, payment: Payment) -> None:
     user = enrollment.user if hasattr(enrollment, "user") else None
     user_email = getattr(user, "email", None)
     send_enrollment_confirmation(user_email, course_title, course_url)
+    track(db, TrackingEventType.access_granted, user_id=enrollment.user_id, course_id=enrollment.course_id, enrollment_id=enrollment.id, payload={"payment_id": payment.id, "gateway_payment_id": payment.gateway_payment_id}, commit=True)
 
 
 def _deactivate_enrollment(db: Session, payment: Payment) -> None:
