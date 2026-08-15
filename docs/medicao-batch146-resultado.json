@@ -131,7 +131,7 @@
     }
   ],
   "notes": "Preencher métricas em 2026-09-12. Usar scripts/collect_batch146_metrics.py para coleta automatizada quando possível.",
-  "collected_at": "1786762296.0045302",
+  "collected_at": "1786774460.780145",
   "results": [
     {
       "slug": "casa-venda-guaruja-ia",
@@ -145,35 +145,38 @@
         "has_description": true
       },
       "remote_status": 200,
-      "remote_ok": true
+      "remote_ok": true,
+      "remote_url": "https://praia.digital/blog/casa-venda-guaruja-ia.html"
     },
     {
       "slug": "comprar-imovel-guaruja-2026",
       "action": "ATUALIZAR",
       "local": {
         "exists": true,
-        "chars": 10925,
-        "words": 1553,
+        "chars": 10674,
+        "words": 1517,
         "h1_count": 1,
         "has_title": true,
         "has_description": true
       },
       "remote_status": 200,
-      "remote_ok": true
+      "remote_ok": true,
+      "remote_url": "https://praia.digital/blog/comprar-imovel-guaruja-2026.html"
     },
     {
       "slug": "comprar-imovel-na-planta-litoral-sp-2026",
       "action": "ATUALIZAR",
       "local": {
         "exists": true,
-        "chars": 18771,
-        "words": 2772,
+        "chars": 18677,
+        "words": 2756,
         "h1_count": 1,
         "has_title": true,
         "has_description": true
       },
       "remote_status": 200,
-      "remote_ok": true
+      "remote_ok": true,
+      "remote_url": "https://praia.digital/blog/comprar-imovel-na-planta-litoral-sp-2026.html"
     },
     {
       "slug": "primeira-compra-peruibe-ia",
@@ -187,49 +190,53 @@
         "has_description": true
       },
       "remote_status": 200,
-      "remote_ok": true
+      "remote_ok": true,
+      "remote_url": "https://praia.digital/blog/primeira-compra-peruibe-ia.html"
     },
     {
       "slug": "peruibe-compra-venda-imoveis-2026",
       "action": "ATUALIZAR",
       "local": {
         "exists": true,
-        "chars": 3283,
-        "words": 459,
+        "chars": 3808,
+        "words": 530,
         "h1_count": 1,
         "has_title": true,
         "has_description": true
       },
       "remote_status": 200,
-      "remote_ok": true
+      "remote_ok": true,
+      "remote_url": "https://praia.digital/blog/peruibe-compra-venda-imoveis-2026.html"
     },
     {
       "slug": "sao-vicente-compra-venda-imoveis-2026",
       "action": "ATUALIZAR",
       "local": {
         "exists": true,
-        "chars": 3335,
-        "words": 472,
+        "chars": 3856,
+        "words": 542,
         "h1_count": 1,
         "has_title": true,
         "has_description": true
       },
       "remote_status": 200,
-      "remote_ok": true
+      "remote_ok": true,
+      "remote_url": "https://praia.digital/blog/sao-vicente-compra-venda-imoveis-2026.html"
     },
     {
       "slug": "praia-grande-compra-venda-imoveis-2026",
       "action": "ATUALIZAR",
       "local": {
         "exists": true,
-        "chars": 3348,
-        "words": 472,
+        "chars": 4047,
+        "words": 590,
         "h1_count": 1,
         "has_title": true,
         "has_description": true
       },
       "remote_status": 200,
-      "remote_ok": true
+      "remote_ok": true,
+      "remote_url": "https://praia.digital/blog/praia-grande-compra-venda-imoveis-2026.html"
     },
     {
       "slug": "santos-financiamento-imoveis-2026",
@@ -243,7 +250,8 @@
         "has_description": true
       },
       "remote_status": 200,
-      "remote_ok": true
+      "remote_ok": true,
+      "remote_url": "https://praia.digital/blog/santos-financiamento-imoveis-2026.html"
     },
     {
       "slug": "guaruja-financiamento-imoveis-2026",
@@ -257,7 +265,8 @@
         "has_description": true
       },
       "remote_status": 200,
-      "remote_ok": true
+      "remote_ok": true,
+      "remote_url": "https://praia.digital/blog/guaruja-financiamento-imoveis-2026.html"
     },
     {
       "slug": "praia-grande-financiamento-imoveis-2026",
@@ -271,7 +280,8 @@
         "has_description": true
       },
       "remote_status": 200,
-      "remote_ok": true
+      "remote_ok": true,
+      "remote_url": "https://praia.digital/blog/praia-grande-financiamento-imoveis-2026.html"
     },
     {
       "slug": "bertioga-financiamento-imoveis-2026",
@@ -285,7 +295,8 @@
         "has_description": true
       },
       "remote_status": 200,
-      "remote_ok": true
+      "remote_ok": true,
+      "remote_url": "https://praia.digital/blog/bertioga-financiamento-imoveis-2026.html"
     },
     {
       "slug": "itanhaem-financiamento-imoveis-2026",
@@ -299,7 +310,8 @@
         "has_description": true
       },
       "remote_status": 200,
-      "remote_ok": true
+      "remote_ok": true,
+      "remote_url": "https://praia.digital/blog/itanhaem-financiamento-imoveis-2026.html"
     },
     {
       "slug": "mongagua-financiamento-imoveis-2026",
@@ -313,7 +325,8 @@
         "has_description": true
       },
       "remote_status": 200,
-      "remote_ok": true
+      "remote_ok": true,
+      "remote_url": "https://praia.digital/blog/mongagua-financiamento-imoveis-2026.html"
     },
     {
       "slug": "peruibe-financiamento-imoveis-2026",
@@ -327,7 +340,8 @@
         "has_description": true
       },
       "remote_status": 200,
-      "remote_ok": true
+      "remote_ok": true,
+      "remote_url": "https://praia.digital/blog/peruibe-financiamento-imoveis-2026.html"
     },
     {
       "slug": "caraguatatuba-financiamento-imoveis-2026",
@@ -341,7 +355,8 @@
         "has_description": true
       },
       "remote_status": 200,
-      "remote_ok": true
+      "remote_ok": true,
+      "remote_url": "https://praia.digital/blog/caraguatatuba-financiamento-imoveis-2026.html"
     },
     {
       "slug": "como-declarar-aluguel-temporada-ir-2026",
@@ -355,7 +370,8 @@
         "has_description": true
       },
       "remote_status": 200,
-      "remote_ok": true
+      "remote_ok": true,
+      "remote_url": "https://praia.digital/blog/como-declarar-aluguel-temporada-ir-2026.html"
     },
     {
       "slug": "seguro-fianca-aluguel-temporada-2026",
@@ -369,7 +385,8 @@
         "has_description": true
       },
       "remote_status": 200,
-      "remote_ok": true
+      "remote_ok": true,
+      "remote_url": "https://praia.digital/blog/seguro-fianca-aluguel-temporada-2026.html"
     },
     {
       "slug": "distrato-construtora-imoveis-litoral-2026",
@@ -383,7 +400,8 @@
         "has_description": true
       },
       "remote_status": 200,
-      "remote_ok": true
+      "remote_ok": true,
+      "remote_url": "https://praia.digital/blog/distrato-construtora-imoveis-litoral-2026.html"
     },
     {
       "slug": "documentacao-venda-imovel-herdado-litoral",
@@ -397,7 +415,8 @@
         "has_description": true
       },
       "remote_status": 200,
-      "remote_ok": true
+      "remote_ok": true,
+      "remote_url": "https://praia.digital/blog/documentacao-venda-imovel-herdado-litoral.html"
     },
     {
       "slug": "permuta-imoveis-litoral-paulista-2026",
@@ -411,7 +430,8 @@
         "has_description": true
       },
       "remote_status": 200,
-      "remote_ok": true
+      "remote_ok": true,
+      "remote_url": "https://praia.digital/blog/permuta-imoveis-litoral-paulista-2026.html"
     },
     {
       "slug": "financiamento-por-idade-imoveis-litoral",
@@ -425,7 +445,8 @@
         "has_description": true
       },
       "remote_status": 200,
-      "remote_ok": true
+      "remote_ok": true,
+      "remote_url": "https://praia.digital/blog/financiamento-por-idade-imoveis-litoral.html"
     },
     {
       "slug": "imovel-compartilhado-litoral-paulista",
@@ -439,7 +460,8 @@
         "has_description": true
       },
       "remote_status": 200,
-      "remote_ok": true
+      "remote_ok": true,
+      "remote_url": "https://praia.digital/blog/imovel-compartilhado-litoral-paulista.html"
     },
     {
       "slug": "taxa-ocupacao-media-temporada-litoral",
@@ -453,7 +475,26 @@
         "has_description": true
       },
       "remote_status": 200,
-      "remote_ok": true
+      "remote_ok": true,
+      "remote_url": "https://praia.digital/blog/taxa-ocupacao-media-temporada-litoral.html"
     }
-  ]
+  ],
+  "summary": {
+    "local": {
+      "total": 23,
+      "exists": 23,
+      "missing": 0,
+      "no_title": 0,
+      "no_description": 0,
+      "short_local": 0
+    },
+    "remote": {
+      "total": 23,
+      "remote_ok": 23,
+      "remote_fail": 0,
+      "status_counts": {
+        "200": 23
+      }
+    }
+  }
 }
