@@ -588,6 +588,19 @@ def run(context: dict = {}) -> dict:
     measurement = measure()
     print(f"[ORCHESTRATOR-24H] 10. Medição: {measurement.get('message', '')}")
 
+    # 11. Verificação pós-publicação
+    try:
+        verification_module = load_module('post_publish_verify', [REPO / 'scripts' / 'orchestrator' / 'maintenance'])
+        if verification_module:
+            verification = verification_module.run({})
+            print(f"[ORCHESTRATOR-24H] 11. Verificação pós-publicação: {verification.get('status', 'unknown')}")
+            if verification.get('status') == 'divergences_found':
+                print(f"[ORCHESTRATOR-24H] Divergências encontradas: {verification.get('failed_slugs', [])}")
+        else:
+            print('[ORCHESTRATOR-24H] 11. Verificação pós-publicação: módulo não encontrado')
+    except Exception as e:
+        print(f"[ORCHESTRATOR-24H] 11. Verificação pós-publicação erro: {e}")
+
     # Manutenção
     maint = run_module('auto_maintenance', [REPO / 'scripts' / 'orchestrator' / 'maintenance'], context)
     print(f"[ORCHESTRATOR-24H] Manutenção: {maint.get('message', '')}")
