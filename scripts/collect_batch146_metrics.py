@@ -35,6 +35,36 @@ def local_metrics(slug):
         'has_description': '<meta name="description"' in txt.lower()
     }
 
+def summarize_local(items):
+    total = len(items)
+    exists = sum(1 for i in items if i['local'].get('exists'))
+    no_title = sum(1 for i in items if i['local'].get('exists') and not i['local'].get('has_title'))
+    no_desc = sum(1 for i in items if i['local'].get('exists') and not i['local'].get('has_description'))
+    short = sum(1 for i in items if i['local'].get('exists') and i['local'].get('words', 0) < 300)
+    return {
+        'total': total,
+        'exists': exists,
+        'missing': total - exists,
+        'no_title': no_title,
+        'no_description': no_desc,
+        'short_local': short
+    }
+
+def summarize_remote(results):
+    total = len(results)
+    remote_ok = sum(1 for r in results if r.get('remote_ok'))
+    remote_fail = total - remote_ok
+    statuses = {}
+    for r in results:
+        s = r.get('remote_status')
+        statuses[s] = statuses.get(s, 0) + 1
+    return {
+        'total': total,
+        'remote_ok': remote_ok,
+        'remote_fail': remote_fail,
+        'status_counts': statuses
+    }
+
 def main():
     spec = json.loads(SPEC.read_text(encoding='utf-8'))
     template = json.loads(TEMPLATE.read_text(encoding='utf-8'))
@@ -43,22 +73,27 @@ def main():
     for item in items:
         slug = item['slug']
         lm = local_metrics(slug)
-        # Try remote HTTP
         url = f"{SITE}/blog/{slug}.html"
         status, body = fetch(url)
-        remote_ok = status == 200
         results.append({
             'slug': slug,
             'action': item['action'],
             'local': lm,
             'remote_status': status,
-            'remote_ok': remote_ok,
+            'remote_ok': status == 200,
+            'remote_url': url,
         })
+    summary = {
+        'local': summarize_local([{**item, 'local': local_metrics(item['slug'])} for item in items]),
+        'remote': summarize_remote(results)
+    }
     template['status'] = 'measurement_collected'
     template['collected_at'] = str(Path(__file__).stat().st_mtime)
     template['results'] = results
+    template['summary'] = summary
     OUT.write_text(json.dumps(template, indent=2, ensure_ascii=False), encoding='utf-8')
     print('collected', len(results), 'items ->', OUT)
+    print('summary:', json.dumps(summary, ensure_ascii=False))
 
 if __name__ == '__main__':
     main()
