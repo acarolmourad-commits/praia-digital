@@ -17,7 +17,7 @@
     "setup_doc": "docs/medicao-batch146-setup.md",
     "result_template": "docs/medicao-batch146-resultado-template.json",
     "result_file": "docs/medicao-batch146-resultado.json",
-    "execution_plan": "documented in docs/medicao-batch146.json"
+    "execution_plan": "documented in docs/medicao-batch146.json; cron job batch146-measurement-runner scheduled for 2026-09-12 09:00"
   },
   "academy": {
     "status": "64/64 PRONTO_PARA_VENDA",
