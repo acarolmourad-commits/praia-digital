@@ -6,14 +6,14 @@ Amostra mínima alvo: 20-30 conclusões
 
 | Métrica | Valor | Taxa |
 |---------|-------|------|
-| Visitas | 5 | — |
-| Inícios | 5 | 100.0% |
-| Conclusões | 5 | 100.0% |
-| CTAs clicados | 4 | 80.0% |
-| Leads gerados | 3 | 75.0% |
-| Leads qualificados | 3 | — |
+| Visitas | 0 | — |
+| Inícios | 0 | 0% |
+| Conclusões | 0 | 0% |
+| CTAs clicados | 0 | 0% |
+| Leads gerados | 0 | 0% |
+| Leads qualificados | 0 | — |
 | Edições solicitadas | 0 | — |
-| Vendas | 0 | 0.0% |
+| Vendas | 0 | 0% |
 
 ## Distribuição das pontuações
 
@@ -24,41 +24,37 @@ Amostra mínima alvo: 20-30 conclusões
 | 🟢 Competitivo (70-84) | 0 |
 | ⭐ Muito bem estruturado (85-100) | 0 |
 
-Pontuação média dos diagnósticos concluídos: 70.2
+Pontuação média dos diagnósticos concluídos: —
 
 ## Origens do tráfego
 
 | Origem | Visitas |
 |--------|---------|
-| social/diagnostico-direct | 2 |
-| followup/diagnostico-followup | 1 |
-| social/diagnostico-followup | 1 |
-| organic/diagnostico-direct | 1 |
 
 ## Abandono por etapa
 
 | Etapa | Quantidade |
 |-------|------------|
-| visit | 5 |
-| start | 5 |
-| item_1 | 5 |
-| item_2 | 5 |
-| item_3 | 5 |
-| item_4 | 5 |
-| item_5 | 5 |
-| item_6 | 5 |
-| item_7 | 5 |
-| item_8 | 5 |
-| item_9 | 5 |
-| item_10 | 5 |
-| item_11 | 5 |
-| item_12 | 5 |
-| item_13 | 5 |
-| item_14 | 5 |
-| item_15 | 5 |
-| finish | 5 |
-| cta_click | 4 |
-| lead_created | 3 |
+| visit | 0 |
+| start | 0 |
+| item_1 | 0 |
+| item_2 | 0 |
+| item_3 | 0 |
+| item_4 | 0 |
+| item_5 | 0 |
+| item_6 | 0 |
+| item_7 | 0 |
+| item_8 | 0 |
+| item_9 | 0 |
+| item_10 | 0 |
+| item_11 | 0 |
+| item_12 | 0 |
+| item_13 | 0 |
+| item_14 | 0 |
+| item_15 | 0 |
+| finish | 0 |
+| cta_click | 0 |
+| lead_created | 0 |
 
 ## Alertas
 
@@ -66,7 +62,7 @@ Pontuação média dos diagnósticos concluídos: 70.2
 
 ## Observações qualitativas
 
-- Primeira amostra real: 5 visita(s), 5 conclusão(ões).
+- Primeira amostra real: 0 visita(s), 0 conclusão(ões).
 - Sem alterações no diagnóstico, tracking, CTA ou oferta durante a coleta.
 
 ## Classificação provisória do funil
