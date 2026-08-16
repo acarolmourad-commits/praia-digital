@@ -1,5 +1,5 @@
 # Acompanhamento diário — Motor B: Diagnóstico → Lead
-Data: 2026-08-15
+Data: 2026-08-16
 Amostra mínima alvo: 20-30 conclusões
 
 ## Métricas do dia
