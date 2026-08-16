@@ -1,0 +1,64 @@
+{
+  "audit_date": "2026-08-16",
+  "d2_impact": "SEM IMPACTO",
+  "inventory": {
+    "total_html": 4828,
+    "by_dir": {
+      "blog": 3305,
+      "docs": 963,
+      "cidades": 133,
+      "education": 181,
+      "bairros": 118,
+      "servicos": 63,
+      "assets": 56,
+      "anfitrioes": 8,
+      "noticias": 1
+    }
+  },
+  "sitemap": {
+    "total_urls": 11655,
+    "backup_urls": 0,
+    "redirect_urls": 3305,
+    "valid": true
+  },
+  "issues": {
+    "p0_critical": [],
+    "p1_high": [
+      {
+        "issue": "39 páginas com conteúdo de redirecionamento",
+        "count": 39,
+        "action": "Tratar individualmente"
+      },
+      {
+        "issue": "1 página sem canonical",
+        "count": 1,
+        "action": "Completar"
+      }
+    ],
+    "p2_medium": [
+      {
+        "issue": "4 páginas sem meta description",
+        "count": 4,
+        "action": "Completar"
+      },
+      {
+        "issue": "25 páginas sem max-width",
+        "count": 25,
+        "action": "Padronizar CSS"
+      }
+    ],
+    "p3_low": [
+      {
+        "issue": "Estrutura HTML variada",
+        "count": "multiple",
+        "action": "Padronizar componentes"
+      }
+    ]
+  },
+  "redirects": {
+    "total": 39,
+    "audit_file": "docs/seo/redirect_audit_2026-08-16.json",
+    "status": "AUDITED"
+  },
+  "conclusion": "Site com infraestrutura técnica sólida. Principais ações: tratar redirects e completar metadata faltante."
+}
