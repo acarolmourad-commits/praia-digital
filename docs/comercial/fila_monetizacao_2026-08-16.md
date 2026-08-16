@@ -1,0 +1,15 @@
+# Fila de implementação futura — monetização seletiva
+
+prioridade|url|problema|cta_recomendado|destino|link_interno|confiança|potencial_comercial|risco|acao_sugerida
+
+1|aluguel-temporada-checkin-checkout-2026.html|sem CTA final forte|Fotografia + edição|blog/edicao-fotografia-anuncio-temporada-litoral-2026.html|diagnostico-anuncio-temporada-litoral-2026.html|alta|médio|baixo|manter bloco monetizacao-cta-block-v1
+2|alugar-ou-comprar-imovel-litoral-decisao-2026.html|sem CTA final forte|Academy|https://academy.praia.digital/courses/investimento-imoveis-litoral|diagnostico-anuncio-temporada-litoral-2026.html|média|alto|médio|manter bloco; validar Academy externamente quando possível
+3|alta-temporada-litoral-checklist-corretores-2026-07-25.html|sem CTA final forte|SEO local / Administração Airbnb|blog/diagnostico-anuncio-temporada-litoral-2026.html|edicao-fotografia-anuncio-temporada-litoral-2026.html|alta|alto|baixo|manter bloco; reforçar link interno existente
+4|aluguel-temporada-litoral-calendario-reservas-organizacao-2026.html|sem CTA final forte|Administração Airbnb|blog/diagnostico-anuncio-temporada-litoral-2026.html|edicao-fotografia-anuncio-temporada-litoral-2026.html|alta|alto|baixo|manter bloco
+5|aluguel-temporada-definir-preco-disponibilidade-sem-conflitos-litoral-2026.html|sem CTA final forte|Administração Airbnb|blog/diagnostico-anuncio-temporada-litoral-2026.html|edicao-fotografia-anuncio-temporada-litoral-2026.html|alta|alto|baixo|manter bloco
+6|aluguel-temporada-litoral-checkout-rapido-organizacao-2026.html|sem CTA final forte|Fotografia + edição|blog/edicao-fotografia-anuncio-temporada-litoral-2026.html|diagnostico-anuncio-temporada-litoral-2026.html|alta|médio|baixo|manter bloco
+7|aluguel-temporada-litoral-checkout-atrasado-rapido-2026.html|sem CTA final forte|Administração Airbnb|blog/diagnostico-anuncio-temporada-litoral-2026.html|edicao-fotografia-anuncio-temporada-litoral-2026.html|alta|alto|baixo|manter bloco
+8|aluguel-temporada-litoral-checkout-atrasado-prevencao-2026.html|sem CTA final forte|Administração Airbnb|blog/diagnostico-anuncio-temporada-litoral-2026.html|edicao-fotografia-anuncio-temporada-litoral-2026.html|alta|alto|baixo|manter bloco
+9|aluguel-temporada-litoral-checkout-atrasado-prejuizo-2026.html|sem CTA final forte|Administração Airbnb|blog/diagnostico-anuncio-temporada-litoral-2026.html|edicao-fotografia-anuncio-temporada-litoral-2026.html|alta|alto|baixo|manter bloco
+10|5-sinais-imovel-subvalorizado-litoral-2026-08-05.html|sem CTA final forte|Consultoria/serviços|blog/diagnostico-anuncio-temporada-litoral-2026.html|edicao-fotografia-anuncio-temporada-litoral-2026.html|alta|médio|baixo|manter bloco
+11|aluguel-temporada-casa-vs-apartamento-litoral-2026.html|sem CTA final forte|Fotografia + edição|blog/edicao-fotografia-anuncio-temporada-litoral-2026.html|diagnostico-anuncio-temporada-litoral-2026.html|alta|médio|baixo|manter bloco
