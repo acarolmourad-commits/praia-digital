@@ -1,10 +1,10 @@
-# Execução D2 — 2026-08-16
-Regra: executar apenas se não houver resposta até 16/08. Se houver resposta positiva/negativa/preço/agendamento, aplicar regra correspondente.
+# Execução D2 — 2026-08-17
+Regra: executar apenas se não houver resposta até 17/08. Se houver resposta positiva/negativa/preço/agendamento, aplicar regra correspondente.
 
-## Ação do script follow_up_automacao.py em 16/08
+## Ação do script follow_up_automacao.py em 17/08
 - Para cada lead com status ENVIADO_D0 e sem resposta:
   - Atualizar status para ENVIADO_D2
-  - Registrar d2_enviado_em = 2026-08-16
+  - Registrar d2_enviado_em = 2026-08-17
   - Não enviar mensagem automaticamente — apenas marcar no CRM
 - Para leads com resposta positiva: parar follow-up + HANDOFF
 - Para leads com resposta negativa: encerrar
