@@ -1,55 +1,91 @@
-# Auditoria de vazamentos de valor — 2026-08-16
-import re
+#!/usr/bin/env python3
+"""
+Auditoria automática de vazamentos de valor — rotina reutilizável.
+Escopo por padrão: blog/*.html
+Saída: docs/comercial/auditoria_vazamentos_valor_<data>.md
+"""
+import re, csv
 from pathlib import Path
+from datetime import datetime
 
-root=Path('C:/Users/Carolina/praia-digital')
-out=root/'docs'/'comercial'/'auditoria_vazamentos_valor_2026-08-16.md'
+root = Path('C:/Users/Carolina/praia-digital')
+OUT_DIR = root / 'docs' / 'comercial'
+BLOG_DIR = root / 'blog'
 
-# Escopo reduzido para arquivos específicos para evitar timeout
-files=list((root/'blog').glob('*.html'))[:50]
-report=[]
-without_cta=[]
-cta_no_dest=[]
-services_without_content=[]
-content_without_service=[]
-courses_without_acquisition=[]
-traffic_poor_monetization=[]
+SERVICES = [
+    'administração airbnb', 'administracao airbnb', 'administração temporada', 'administracao temporada',
+    'edição de anúncio', 'edicao de anuncio', 'fotografia', 'seo local'
+]
+ACADEMY_KEYWORDS = ['academy', 'curso', 'aula']
+CTA_PATTERNS = re.compile(r'class="[^"]*cta|cta|compre|matricule|contrat|agende|fale.*whatsapp|whatsapp.*contato', re.I)
+TRAFFIC_SIGNALS = re.compile(r'invest|temporada|aluguel|turismo|receita|rentabilidade|lucratividade|diária|diaria|alta temporada', re.I)
 
-services=['administração airbnb','administracao airbnb','edição de anúncio','edicao de anuncio','fotografia','seo local','administração temporada','administracao temporada']
-academy_keywords=['academy','curso','aula']
-cta_patterns=re.compile(r'class="[^"]*cta|cta|compre|matricule|contrat', re.I)
 
-for path in files:
-    text=path.read_text(encoding='utf-8', errors='ignore')
-    has_cta=bool(cta_patterns.search(text))
-    title=re.search(r'<title[^>]*>(.*?)</title>', text, re.I)
-    title_text=title.group(1) if title else path.name
+def classify_page(path: Path):
+    text = path.read_text(encoding='utf-8', errors='ignore')
+    lower = text.lower()
+    title = re.search(r'<title[^>]*>(.*?)</title>', text, re.I)
+    title_text = title.group(1) if title else path.name
+
+    has_cta = bool(CTA_PATTERNS.search(text))
+    svc_found = [s for s in SERVICES if s in lower]
+    aca_found = [a for a in ACADEMY_KEYWORDS if a in lower]
+    traffic = bool(TRAFFIC_SIGNALS.search(lower))
+
+    issues = []
+    if not has_cta and traffic:
+        issues.append('sem_cta_com_trafego')
     if not has_cta:
-        without_cta.append(path.name)
-    lower=text.lower()
-    svc_found=[s for s in services if s in lower]
-    aca_found=[a for a in academy_keywords if a in lower]
+        issues.append('sem_cta')
+    if has_cta and not svc_found and not aca_found:
+        issues.append('cta_sem_destino_forte')
     if svc_found and not aca_found:
-        content_without_service.append((path.name, svc_found))
+        issues.append('conteudo_comercial_sem_curso')
     if not svc_found and aca_found:
-        services_without_content.append(path.name)
-    if not has_cta and ('invest' in lower or 'temporada' in lower or 'aluguel' in lower):
-        traffic_poor_monetization.append(path.name)
+        issues.append('curso_sem_conteudo_entrada')
+    if svc_found and not has_cta:
+        issues.append('servico_sem_cta')
 
-lines=['# Auditoria de vazamentos de valor — 2026-08-16\n','Escopo: 50 páginas do blog para varredura inicial.\n']
-lines.append(f'- Páginas sem CTA: {len(without_cta)}')
-lines.append(f'- Conteúdo comercial sem serviço/curso correspondente: {len(content_without_service)}')
-lines.append(f'- Conteúdo sem serviço/curso correspondente: {len(services_without_content)}')
-lines.append(f'- Páginas com potencial de tráfego mas baixa monetização: {len(traffic_poor_monetization)}')
-lines.append('\n## Amostras — conteúdo sem CTA\n')
-for x in without_cta[:15]:
-    lines.append(f'- {x}')
-lines.append('\n## Amostras — conteúdo com serviço mas sem CTA/curso\n')
-for name, svc in content_without_service[:15]:
-    lines.append(f'- {name}: {svc}')
-lines.append('\n## Amostras — potencial tráfego sem monetização\n')
-for x in traffic_poor_monetization[:15]:
-    lines.append(f'- {x}')
+    return {
+        'file': path.name,
+        'title': title_text,
+        'issues': issues,
+        'traffic': traffic,
+        'svc': svc_found,
+        'aca': aca_found,
+    }
 
-out.write_text('\n'.join(lines), encoding='utf-8')
-print(f'auditoria_vazamentos_valor_2026-08-16.md criada')
+
+def run():
+    files = sorted(BLOG_DIR.glob('*.html'))
+    results = [classify_page(p) for p in files]
+
+    counts = {}
+    for r in results:
+        for issue in r['issues']:
+            counts[issue] = counts.get(issue, 0) + 1
+
+    today = datetime.now().strftime('%Y-%m-%d')
+    out_path = OUT_DIR / f'auditoria_vazamentos_valor_{today}.md'
+    lines = [
+        f'# Auditoria de vazamentos de valor — {today}\n',
+        f'Escopo: {len(results)} páginas do blog.\n',
+        '## Contagem por tipo de problema\n'
+    ]
+    for issue, count in sorted(counts.items(), key=lambda x: x[1], reverse=True):
+        lines.append(f'- {issue}: {count}')
+    lines.append('\n## Páginas prioritárias (sem CTA e com tráfego potencial)\n')
+    priority = [r for r in results if 'sem_cta_com_trafego' in r['issues']]
+    for r in priority[:20]:
+        lines.append(f"- {r['file']} | {r['title']}")
+    lines.append('\n## Amostras — conteúdo comercial sem curso correspondente\n')
+    content_no_course = [r for r in results if 'conteudo_comercial_sem_curso' in r['issues']]
+    for r in content_no_course[:20]:
+        lines.append(f"- {r['file']} | serviços: {r['svc']}")
+    out_path.write_text('\n'.join(lines), encoding='utf-8')
+    print(f'Auditoria gerada em {out_path} — {len(results)} páginas, {len(priority)} prioritárias')
+    return str(out_path)
+
+
+if __name__ == '__main__':
+    run()

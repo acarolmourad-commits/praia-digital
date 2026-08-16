@@ -1,56 +1,75 @@
-# Preparar estoque comercial — 10 Motor A + 30 Motor B + 586 B2B
-
+#!/usr/bin/env python3
+"""
+Recalcula a fila comercial ranqueada a partir dos estoques disponíveis.
+Uso: python scripts/rank_estoque_comercial.py
+"""
 import csv
 from pathlib import Path
+from datetime import datetime
 
-root=Path('C:/Users/Carolina/praia-digital')
+root = Path('C:/Users/Carolina/praia-digital')
+OUT_DIR = root / 'docs' / 'comercial'
+MOTOR_A = OUT_DIR / 'motor_a_novo_estoque_2026-08-16.csv'
+MOTOR_B = root / 'docs' / 'comercial' / 'leads_sao_sebastiao_bertioga.csv'
 
-motor_a=root/'docs'/'comercial'/'motor_a_novo_estoque_2026-08-16.csv'
-motor_b=root/'docs'/'comercial'/'leads_sao_sebastiao_bertioga.csv'
+SERVICE_ADJUST = {
+    'administração airbnb': 6,
+    'administracao airbnb': 6,
+    'administração temporada': 5,
+    'administracao temporada': 5,
+    'edição de anúncio': 3,
+    'edicao de anuncio': 3,
+    'fotografia': 4,
+    'seo local': 4,
+}
 
-out=root/'docs'/'comercial'/'fila_comercial_rankeada_2026-08-16.md'
 
-def parse_score(v):
-    try: return float(v)
-    except: return 0
+def score_lead(score_raw: str, tipo: str, servico: str):
+    try:
+        base = float(score_raw)
+    except Exception:
+        base = 0.0
+    tipo_lower = (tipo or '').lower()
+    if any(x in tipo_lower for x in ['proprietário', 'proprietario', 'anfitriao', 'anfitrião']):
+        base += 5
+    elif 'imobiliaria' in tipo_lower:
+        base += 0
+    else:
+        base += 2
+    for key, adj in SERVICE_ADJUST.items():
+        if key in (servico or '').lower():
+            base += adj
+            break
+    return min(base, 100)
 
-def score_lead(score, tipo, servico):
-    s=parse_score(score)
-    t=(tipo or '').lower()
-    if any(x in t for x in ['proprietário','proprietario','anfitriao','anfitrião']): adj=5
-    elif 'imobiliaria' in t: adj=0
-    else: adj=2
-    final=s+adj
-    if 'administração' in (servico or '').lower() or 'administracao' in (servico or '').lower(): final+=5
-    if 'seo' in (servico or '').lower(): final+=3
-    return min(final,100)
 
-rows=[]
-for src in [motor_a, motor_b]:
-    if not src.exists(): continue
-    with src.open('r', encoding='utf-8') as f:
-        reader=csv.DictReader(f)
-        for row in reader:
-            rows.append({
-                'lead_id': row.get('lead_id',''),
-                'score_ajustado': score_lead(row.get('score',''), row.get('tipo_cliente',''), row.get('servico_potencial','')),
-                'score_bruto': parse_score(row.get('score','')),
-                'nome': row.get('nome_empresa',''),
-                'cidade': row.get('city',''),
-                'tipo': row.get('tipo_cliente',''),
-                'servico': row.get('servico_potencial',''),
-                'score_raw': row.get('score',''),
-                'status': row.get('status',''),
-                'url': row.get('url',''),
-                'canal': row.get('canal_contato',''),
-            })
+def build_queue():
+    rows = []
+    for src in [MOTOR_A, MOTOR_B]:
+        if not src.exists():
+            continue
+        with src.open('r', encoding='utf-8') as f:
+            for row in csv.DictReader(f):
+                rows.append({
+                    'lead_id': row.get('lead_id', ''),
+                    'score_ajustado': score_lead(row.get('score', ''), row.get('tipo_cliente', ''), row.get('servico_potencial', '')),
+                    'score_bruto': row.get('score', ''),
+                    'nome': row.get('nome_empresa', ''),
+                    'cidade': row.get('city', ''),
+                    'tipo': row.get('tipo_cliente', ''),
+                    'servico': row.get('servico_potencial', ''),
+                    'status': row.get('status', ''),
+                })
+    rows.sort(key=lambda x: x['score_ajustado'], reverse=True)
+    today = datetime.now().strftime('%Y-%m-%d')
+    out = OUT_DIR / f'fila_comercial_rankeada_{today}.md'
+    lines = [f'# Fila comercial ranqueada — {today}\n', 'Ranked por score ajustado (score + ajuste por tipo/serviço).\n']
+    for i, r in enumerate(rows, 1):
+        lines.append(f"{i}. {r['lead_id']} | {r['nome']} | {r['cidade']} | {r['servico']} | score={r['score_ajustado']}")
+    out.write_text('\n'.join(lines), encoding='utf-8')
+    print(f'Fila gerada: {out} ({len(rows)} leads)')
+    return str(out)
 
-rows_sorted=sorted(rows, key=lambda x: x['score_ajustado'], reverse=True)
-top=sorted(rows_sorted, key=lambda x: x['score_ajustado'], reverse=True)[:20]
 
-lines=['# Fila comercial ranqueada — 2026-08-16\n','Ranked por score ajustado: score bruto + ajuste por tipo e serviço.\n']
-for i,r in enumerate(top,1):
-    lines.append(f"{i}. {r['lead_id']} | {r['nome']} | {r['cidade']} | {r['servico']} | score_ajustado={r['score_ajustado']} | raw={r['score_raw']}")
-lines.append('\nUso: priorizar contato pelo maior score ajustado; para D2 pós-análise, usar como fila pós-aprendizado.')
-out.write_text('\n'.join(lines), encoding='utf-8')
-print(f'fila_comercial_rankeada_2026-08-16.md criada com {len(top)} leads no topo')
+if __name__ == '__main__':
+    build_queue()
