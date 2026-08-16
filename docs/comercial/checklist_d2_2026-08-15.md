@@ -1,5 +1,5 @@
 # Checklist — Execução D2 (16/08)
-Data alvo: 2026-08-16
+Data alvo: 2026-08-17
 Horário: 09:00 (cron diário)
 
 ## Pré-requisitos
@@ -8,7 +8,7 @@ Horário: 09:00 (cron diário)
 - [x] Mensagens D2 preparadas
 - [x] CRM com status ENVIADO_D0 e datas
 
-## Execução em 16/08
+## Execução em 17/08
 1. Cron executa script às 09:00
 2. Script verifica respostas nos 6 leads
 3. Se sem resposta: marca ENVIADO_D2 no CRM

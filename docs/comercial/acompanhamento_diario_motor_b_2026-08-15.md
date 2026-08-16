@@ -6,14 +6,14 @@ Amostra mínima alvo: 20-30 conclusões
 
 | Métrica | Valor | Taxa |
 |---------|-------|------|
-| Visitas | 1 | — |
-| Inícios | 1 | 100.0% |
-| Conclusões | 1 | 100.0% |
-| CTAs clicados | 1 | 100.0% |
-| Leads gerados | 1 | 100.0% |
+| Visitas | 0 | — |
+| Inícios | 0 | 0% |
+| Conclusões | 0 | 0% |
+| CTAs clicados | 0 | 0% |
+| Leads gerados | 0 | 0% |
 | Leads qualificados | 0 | — |
 | Edições solicitadas | 0 | — |
-| Vendas | 0 | 0.0% |
+| Vendas | 0 | 0% |
 
 ## Distribuição das pontuações
 
@@ -24,20 +24,19 @@ Amostra mínima alvo: 20-30 conclusões
 | 🟢 Competitivo (70-84) | 0 |
 | ⭐ Muito bem estruturado (85-100) | 0 |
 
-Pontuação média dos diagnósticos concluídos: 58.0
+Pontuação média dos diagnósticos concluídos: —
 
 ## Origens do tráfego
 
 | Origem | Visitas |
 |--------|---------|
-| organic/diagnostico-direct | 2 |
 
 ## Abandono por etapa
 
 | Etapa | Quantidade |
 |-------|------------|
-| visit | 2 |
-| start | 2 |
+| visit | 0 |
+| start | 0 |
 | item_1 | 0 |
 | item_2 | 0 |
 | item_3 | 0 |
@@ -53,9 +52,9 @@ Pontuação média dos diagnósticos concluídos: 58.0
 | item_13 | 0 |
 | item_14 | 0 |
 | item_15 | 0 |
-| finish | 2 |
-| cta_click | 2 |
-| lead_created | 2 |
+| finish | 0 |
+| cta_click | 0 |
+| lead_created | 0 |
 
 ## Alertas
 
@@ -63,7 +62,7 @@ Pontuação média dos diagnósticos concluídos: 58.0
 
 ## Observações qualitativas
 
-- Primeira amostra real: 1 visita(s), 1 conclusão(ões).
+- Primeira amostra real: 0 visita(s), 0 conclusão(ões).
 - Sem alterações no diagnóstico, tracking, CTA ou oferta durante a coleta.
 
 ## Classificação provisória do funil
