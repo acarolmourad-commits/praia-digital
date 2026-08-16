@@ -1,2 +1,0 @@
-lead_id,created_at,source,campaign,score,classification,path,name,contact,city,neighborhood,property_type,status,d0_sent,d2_sent,d5_sent,d10_sent,response,response_type,edition_requested,sale,notes
-LEAD-20260815221919,2026-08-15T22:19:19.888277,organic,diagnostico-direct,58,🟡 Anúncio com oportunidades,Caminho 2,Teste,test@example.com,São Sebastião,Praia da Baleia,Casa,CRIADO,,,,,,,,,Lead simulado Fase 5
