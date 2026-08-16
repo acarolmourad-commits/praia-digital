@@ -1,0 +1,11 @@
+event_id,session_id,timestamp,source,campaign,event,profile_type,score,classification,path,device,notes
+session--visit,session-20260815221919,2026-08-15T22:19:19.878273,organic,diagnostico-direct,visit,,,,,web,
+session--start,session-20260815221919,2026-08-15T22:19:19.879272,organic,diagnostico-direct,start,,,,,web,
+session--finish,session-20260815221919,2026-08-15T22:19:19.879272,organic,diagnostico-direct,finish,,58,🟡 Anúncio com oportunidades,Caminho 2,web,
+session--cta_click,session-20260815221919,2026-08-15T22:19:19.880274,organic,diagnostico-direct,cta_click,,58,🟡 Anúncio com oportunidades,Caminho 2,web,
+session--lead_created,session-20260815221919,2026-08-15T22:19:19.889276,organic,diagnostico-direct,lead_created,,58,🟡 Anúncio com oportunidades,Caminho 2,web,lead_id=LEAD-20260815221919
+session--visit,session-20260815221946,2026-08-15T22:19:46.978247,organic,diagnostico-direct,visit,,,,,web,
+session--start,session-20260815221946,2026-08-15T22:19:46.978247,organic,diagnostico-direct,start,,,,,web,
+session--finish,session-20260815221946,2026-08-15T22:19:46.979247,organic,diagnostico-direct,finish,,58,🟡 Anúncio com oportunidades,Caminho 2,web,
+session--cta_click,session-20260815221946,2026-08-15T22:19:46.980248,organic,diagnostico-direct,cta_click,,58,🟡 Anúncio com oportunidades,Caminho 2,web,
+session--lead_created,session-20260815221946,2026-08-15T22:19:46.988250,organic,diagnostico-direct,lead_created,,58,🟡 Anúncio com oportunidades,Caminho 2,web,lead_id=LEAD-20260815221946
