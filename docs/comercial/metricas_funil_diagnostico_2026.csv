@@ -1,0 +1,4 @@
+id,created_at,source,funnel_stage,profile_type,score,classification,path,call_to_action_clicked,lead_created,lead_qualified,edition_requested,sale,notes
+EX-001,2026-08-15,direct,visit,,,,"pré-avaliação rápida",,,,,exemplo
+EX-002,2026-08-15,social,inicio,,,,"diagnóstico completo",,,,,exemplo
+EX-003,2026-08-15,followup,conclusao,,58,🟡 oportunidades,Caminho 2,sim,sim,sim,sim,nao,exemplo
