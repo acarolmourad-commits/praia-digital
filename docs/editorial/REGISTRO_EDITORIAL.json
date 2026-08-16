@@ -39556,7 +39556,23 @@
       "in_sitemap": true
     }
   ],
-  "total_published": 100,
+  "total_published": 102,
   "audit_correction_note": "total_published corrigido de 30 para 25 com base em evidências. 5 artigos não tinham correspondência verificável.",
-  "last_updated": "2026-08-14T23:18:27.269113+00:00"
+  "last_updated": "2026-08-16T10:31:47.172046Z",
+  "new_articles_2026-08-16": [
+    {
+      "slug": "diagnostico-anuncio-temporada-litoral-2026",
+      "file": "blog/diagnostico-anuncio-temporada-litoral-2026.html",
+      "cluster": "Diagnóstico + Temporada",
+      "intention": "comercial",
+      "status": "published"
+    },
+    {
+      "slug": "edicao-fotografia-anuncio-temporada-litoral-2026",
+      "file": "blog/edicao-fotografia-anuncio-temporada-litoral-2026.html",
+      "cluster": "Edição/Fotografia + Temporada",
+      "intention": "comercial",
+      "status": "published"
+    }
+  ]
 }
