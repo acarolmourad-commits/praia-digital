@@ -15,6 +15,7 @@ LEADS_PATH = REPO / 'docs/comercial/leads_sao_sebastiao_bertioga.csv'
 RESULTADO_PATH = REPO / 'docs/comercial/resultado_d2_2026-08-17.md'
 ORDEM = ['9', '11', '14', '15', '27', '29']
 DATA_HOJE = '2026-08-17'
+ALLOWED_START = datetime(2026, 8, 17, 9, 0, 0)
 
 
 def run(cmd, cwd=REPO):
@@ -28,8 +29,14 @@ def run(cmd, cwd=REPO):
 
 
 def main():
+    now = datetime.now()
     print('=== D2 Motor A — Execução automática ===')
-    print(f'Data/hora: {datetime.now().isoformat()}')
+    print(f'Data/hora atual: {now.isoformat()}')
+
+    if now < ALLOWED_START:
+        print(f'BLOQUEIO: D2 só pode ser executado em {ALLOWED_START.isoformat()}.')
+        print('Nenhuma alteração foi feita.')
+        sys.exit(1)
 
     # 1. Ler leads
     with LEADS_PATH.open(encoding='utf-8') as f:
