@@ -1,0 +1,98 @@
+event_id,session_id,timestamp,source,campaign,event,profile_type,score,classification,path,device,notes
+session--visit,session-20260816070349-681,2026-08-16T07:03:49.203784,social,diagnostico-direct,visit,,,,,web,instrumented batch
+session--start,session-20260816070349-681,2026-08-16T07:03:49.219412,social,diagnostico-direct,start,,,,,web,instrumented batch
+session--item_1,session-20260816070349-681,2026-08-16T07:03:49.219412,social,diagnostico-direct,item_1,,94,⭐ Anúncio muito bem estruturado,Caminho 3,web,instrumented batch
+session--item_2,session-20260816070349-681,2026-08-16T07:03:49.219412,social,diagnostico-direct,item_2,,94,⭐ Anúncio muito bem estruturado,Caminho 3,web,instrumented batch
+session--item_3,session-20260816070349-681,2026-08-16T07:03:49.219412,social,diagnostico-direct,item_3,,94,⭐ Anúncio muito bem estruturado,Caminho 3,web,instrumented batch
+session--item_4,session-20260816070349-681,2026-08-16T07:03:49.219412,social,diagnostico-direct,item_4,,94,⭐ Anúncio muito bem estruturado,Caminho 3,web,instrumented batch
+session--item_5,session-20260816070349-681,2026-08-16T07:03:49.219412,social,diagnostico-direct,item_5,,94,⭐ Anúncio muito bem estruturado,Caminho 3,web,instrumented batch
+session--item_6,session-20260816070349-681,2026-08-16T07:03:49.219412,social,diagnostico-direct,item_6,,94,⭐ Anúncio muito bem estruturado,Caminho 3,web,instrumented batch
+session--item_7,session-20260816070349-681,2026-08-16T07:03:49.219412,social,diagnostico-direct,item_7,,94,⭐ Anúncio muito bem estruturado,Caminho 3,web,instrumented batch
+session--item_8,session-20260816070349-681,2026-08-16T07:03:49.219412,social,diagnostico-direct,item_8,,94,⭐ Anúncio muito bem estruturado,Caminho 3,web,instrumented batch
+session--item_9,session-20260816070349-681,2026-08-16T07:03:49.219412,social,diagnostico-direct,item_9,,94,⭐ Anúncio muito bem estruturado,Caminho 3,web,instrumented batch
+session--item_10,session-20260816070349-681,2026-08-16T07:03:49.219412,social,diagnostico-direct,item_10,,94,⭐ Anúncio muito bem estruturado,Caminho 3,web,instrumented batch
+session--item_11,session-20260816070349-681,2026-08-16T07:03:49.219412,social,diagnostico-direct,item_11,,94,⭐ Anúncio muito bem estruturado,Caminho 3,web,instrumented batch
+session--item_12,session-20260816070349-681,2026-08-16T07:03:49.219412,social,diagnostico-direct,item_12,,94,⭐ Anúncio muito bem estruturado,Caminho 3,web,instrumented batch
+session--item_13,session-20260816070349-681,2026-08-16T07:03:49.219412,social,diagnostico-direct,item_13,,94,⭐ Anúncio muito bem estruturado,Caminho 3,web,instrumented batch
+session--item_14,session-20260816070349-681,2026-08-16T07:03:49.219412,social,diagnostico-direct,item_14,,94,⭐ Anúncio muito bem estruturado,Caminho 3,web,instrumented batch
+session--item_15,session-20260816070349-681,2026-08-16T07:03:49.219412,social,diagnostico-direct,item_15,,94,⭐ Anúncio muito bem estruturado,Caminho 3,web,instrumented batch
+session--finish,session-20260816070349-681,2026-08-16T07:03:49.235033,social,diagnostico-direct,finish,proprietario,94,⭐ Anúncio muito bem estruturado,Caminho 3,web,instrumented batch
+session--cta_click,session-20260816070349-681,2026-08-16T07:03:49.235033,social,diagnostico-direct,cta_click,,94,⭐ Anúncio muito bem estruturado,Caminho 3,web,instrumented batch
+session--visit,session-20260816070349-372,2026-08-16T07:03:49.235033,followup,diagnostico-followup,visit,,,,,web,instrumented batch
+session--start,session-20260816070349-372,2026-08-16T07:03:49.235033,followup,diagnostico-followup,start,,,,,web,instrumented batch
+session--item_1,session-20260816070349-372,2026-08-16T07:03:49.235033,followup,diagnostico-followup,item_1,,80,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_2,session-20260816070349-372,2026-08-16T07:03:49.235033,followup,diagnostico-followup,item_2,,80,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_3,session-20260816070349-372,2026-08-16T07:03:49.235033,followup,diagnostico-followup,item_3,,80,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_4,session-20260816070349-372,2026-08-16T07:03:49.235033,followup,diagnostico-followup,item_4,,80,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_5,session-20260816070349-372,2026-08-16T07:03:49.235033,followup,diagnostico-followup,item_5,,80,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_6,session-20260816070349-372,2026-08-16T07:03:49.235033,followup,diagnostico-followup,item_6,,80,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_7,session-20260816070349-372,2026-08-16T07:03:49.235033,followup,diagnostico-followup,item_7,,80,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_8,session-20260816070349-372,2026-08-16T07:03:49.235033,followup,diagnostico-followup,item_8,,80,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_9,session-20260816070349-372,2026-08-16T07:03:49.235033,followup,diagnostico-followup,item_9,,80,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_10,session-20260816070349-372,2026-08-16T07:03:49.235033,followup,diagnostico-followup,item_10,,80,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_11,session-20260816070349-372,2026-08-16T07:03:49.235033,followup,diagnostico-followup,item_11,,80,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_12,session-20260816070349-372,2026-08-16T07:03:49.235033,followup,diagnostico-followup,item_12,,80,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_13,session-20260816070349-372,2026-08-16T07:03:49.235033,followup,diagnostico-followup,item_13,,80,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_14,session-20260816070349-372,2026-08-16T07:03:49.235033,followup,diagnostico-followup,item_14,,80,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_15,session-20260816070349-372,2026-08-16T07:03:49.250658,followup,diagnostico-followup,item_15,,80,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--finish,session-20260816070349-372,2026-08-16T07:03:49.250658,followup,diagnostico-followup,finish,proprietario,80,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--cta_click,session-20260816070349-372,2026-08-16T07:03:49.250658,followup,diagnostico-followup,cta_click,,80,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--lead_created,session-20260816070349-372,2026-08-16T07:03:49.250658,followup,diagnostico-followup,lead_created,,80,🟢 Anúncio competitivo,Caminho 3,web,lead_id=LEAD-20260816070349
+session--visit,session-20260816070349-236,2026-08-16T07:03:49.250658,social,diagnostico-followup,visit,,,,,web,instrumented batch
+session--start,session-20260816070349-236,2026-08-16T07:03:49.250658,social,diagnostico-followup,start,,,,,web,instrumented batch
+session--item_1,session-20260816070349-236,2026-08-16T07:03:49.250658,social,diagnostico-followup,item_1,,43,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_2,session-20260816070349-236,2026-08-16T07:03:49.250658,social,diagnostico-followup,item_2,,43,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_3,session-20260816070349-236,2026-08-16T07:03:49.250658,social,diagnostico-followup,item_3,,43,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_4,session-20260816070349-236,2026-08-16T07:03:49.250658,social,diagnostico-followup,item_4,,43,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_5,session-20260816070349-236,2026-08-16T07:03:49.250658,social,diagnostico-followup,item_5,,43,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_6,session-20260816070349-236,2026-08-16T07:03:49.250658,social,diagnostico-followup,item_6,,43,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_7,session-20260816070349-236,2026-08-16T07:03:49.250658,social,diagnostico-followup,item_7,,43,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_8,session-20260816070349-236,2026-08-16T07:03:49.250658,social,diagnostico-followup,item_8,,43,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_9,session-20260816070349-236,2026-08-16T07:03:49.266282,social,diagnostico-followup,item_9,,43,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_10,session-20260816070349-236,2026-08-16T07:03:49.266282,social,diagnostico-followup,item_10,,43,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_11,session-20260816070349-236,2026-08-16T07:03:49.266282,social,diagnostico-followup,item_11,,43,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_12,session-20260816070349-236,2026-08-16T07:03:49.266282,social,diagnostico-followup,item_12,,43,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_13,session-20260816070349-236,2026-08-16T07:03:49.266282,social,diagnostico-followup,item_13,,43,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_14,session-20260816070349-236,2026-08-16T07:03:49.271805,social,diagnostico-followup,item_14,,43,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_15,session-20260816070349-236,2026-08-16T07:03:49.271805,social,diagnostico-followup,item_15,,43,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--finish,session-20260816070349-236,2026-08-16T07:03:49.271805,social,diagnostico-followup,finish,proprietario,43,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--cta_click,session-20260816070349-236,2026-08-16T07:03:49.271805,social,diagnostico-followup,cta_click,,43,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--lead_created,session-20260816070349-236,2026-08-16T07:03:49.271805,social,diagnostico-followup,lead_created,,43,🟡 Anúncio com oportunidades,Caminho 2,web,lead_id=LEAD-20260816070349
+session--visit,session-20260816070349-531,2026-08-16T07:03:49.271805,organic,diagnostico-direct,visit,,,,,web,instrumented batch
+session--start,session-20260816070349-531,2026-08-16T07:03:49.271805,organic,diagnostico-direct,start,,,,,web,instrumented batch
+session--item_1,session-20260816070349-531,2026-08-16T07:03:49.271805,organic,diagnostico-direct,item_1,,52,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_2,session-20260816070349-531,2026-08-16T07:03:49.271805,organic,diagnostico-direct,item_2,,52,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_3,session-20260816070349-531,2026-08-16T07:03:49.271805,organic,diagnostico-direct,item_3,,52,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_4,session-20260816070349-531,2026-08-16T07:03:49.271805,organic,diagnostico-direct,item_4,,52,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_5,session-20260816070349-531,2026-08-16T07:03:49.271805,organic,diagnostico-direct,item_5,,52,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_6,session-20260816070349-531,2026-08-16T07:03:49.271805,organic,diagnostico-direct,item_6,,52,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_7,session-20260816070349-531,2026-08-16T07:03:49.271805,organic,diagnostico-direct,item_7,,52,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_8,session-20260816070349-531,2026-08-16T07:03:49.271805,organic,diagnostico-direct,item_8,,52,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_9,session-20260816070349-531,2026-08-16T07:03:49.287459,organic,diagnostico-direct,item_9,,52,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_10,session-20260816070349-531,2026-08-16T07:03:49.287459,organic,diagnostico-direct,item_10,,52,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_11,session-20260816070349-531,2026-08-16T07:03:49.287459,organic,diagnostico-direct,item_11,,52,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_12,session-20260816070349-531,2026-08-16T07:03:49.287459,organic,diagnostico-direct,item_12,,52,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_13,session-20260816070349-531,2026-08-16T07:03:49.287459,organic,diagnostico-direct,item_13,,52,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_14,session-20260816070349-531,2026-08-16T07:03:49.287459,organic,diagnostico-direct,item_14,,52,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--item_15,session-20260816070349-531,2026-08-16T07:03:49.287459,organic,diagnostico-direct,item_15,,52,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--finish,session-20260816070349-531,2026-08-16T07:03:49.287459,organic,diagnostico-direct,finish,proprietario,52,🟡 Anúncio com oportunidades,Caminho 2,web,instrumented batch
+session--visit,session-20260816070349-949,2026-08-16T07:03:49.287459,social,diagnostico-direct,visit,,,,,web,instrumented batch
+session--start,session-20260816070349-949,2026-08-16T07:03:49.287459,social,diagnostico-direct,start,,,,,web,instrumented batch
+session--item_1,session-20260816070349-949,2026-08-16T07:03:49.287459,social,diagnostico-direct,item_1,,82,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_2,session-20260816070349-949,2026-08-16T07:03:49.287459,social,diagnostico-direct,item_2,,82,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_3,session-20260816070349-949,2026-08-16T07:03:49.287459,social,diagnostico-direct,item_3,,82,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_4,session-20260816070349-949,2026-08-16T07:03:49.287459,social,diagnostico-direct,item_4,,82,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_5,session-20260816070349-949,2026-08-16T07:03:49.287459,social,diagnostico-direct,item_5,,82,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_6,session-20260816070349-949,2026-08-16T07:03:49.287459,social,diagnostico-direct,item_6,,82,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_7,session-20260816070349-949,2026-08-16T07:03:49.287459,social,diagnostico-direct,item_7,,82,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_8,session-20260816070349-949,2026-08-16T07:03:49.303078,social,diagnostico-direct,item_8,,82,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_9,session-20260816070349-949,2026-08-16T07:03:49.303078,social,diagnostico-direct,item_9,,82,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_10,session-20260816070349-949,2026-08-16T07:03:49.303078,social,diagnostico-direct,item_10,,82,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_11,session-20260816070349-949,2026-08-16T07:03:49.303078,social,diagnostico-direct,item_11,,82,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_12,session-20260816070349-949,2026-08-16T07:03:49.303078,social,diagnostico-direct,item_12,,82,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_13,session-20260816070349-949,2026-08-16T07:03:49.303078,social,diagnostico-direct,item_13,,82,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_14,session-20260816070349-949,2026-08-16T07:03:49.303078,social,diagnostico-direct,item_14,,82,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--item_15,session-20260816070349-949,2026-08-16T07:03:49.303078,social,diagnostico-direct,item_15,,82,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--finish,session-20260816070349-949,2026-08-16T07:03:49.303078,social,diagnostico-direct,finish,proprietario,82,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--cta_click,session-20260816070349-949,2026-08-16T07:03:49.303078,social,diagnostico-direct,cta_click,,82,🟢 Anúncio competitivo,Caminho 3,web,instrumented batch
+session--lead_created,session-20260816070349-949,2026-08-16T07:03:49.303078,social,diagnostico-direct,lead_created,,82,🟢 Anúncio competitivo,Caminho 3,web,lead_id=LEAD-20260816070349
