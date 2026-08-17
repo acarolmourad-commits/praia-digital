@@ -39939,5 +39939,35 @@
     "status": "published",
     "data": "2026-08-16",
     "nota": "CTA adicionado: Rankings + IA para imobiliárias"
+  },
+  "bertioga-agora": {
+    "slug": "bertioga-agora",
+    "title": "Bertioga Agora — notícias, clima, mar, eventos, mercado, imóveis e temporada",
+    "path": "cidades/bertioga/agora.html",
+    "tipo": "portal-vivo",
+    "cidade": "bertioga",
+    "status": "published",
+    "data": "2026-08-16",
+    "nota": "Hub vivo replicado de Santos. Placeholder para clima/mar/eventos."
+  },
+  "ubatuba-agora": {
+    "slug": "ubatuba-agora",
+    "title": "Ubatuba Agora — notícias, clima, mar, eventos, mercado, imóveis e temporada",
+    "path": "cidades/ubatuba/agora.html",
+    "tipo": "portal-vivo",
+    "cidade": "ubatuba",
+    "status": "published",
+    "data": "2026-08-16",
+    "nota": "Hub vivo replicado de Santos. Placeholder para clima/mar/eventos."
+  },
+  "sao-sebastiao-agora": {
+    "slug": "sao-sebastiao-agora",
+    "title": "São Sebastião Agora — notícias, clima, mar, eventos, mercado, imóveis e temporada",
+    "path": "cidades/sao-sebastiao/agora.html",
+    "tipo": "portal-vivo",
+    "cidade": "sao-sebastiao",
+    "status": "published",
+    "data": "2026-08-16",
+    "nota": "Hub vivo replicado de Santos. Placeholder para clima/mar/eventos."
   }
 }
