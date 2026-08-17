@@ -25,8 +25,10 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', '', { anonymize_ip: true });
 </script>
+<link rel="stylesheet" href="https://praia.digital/css/style.css">
 </head>
 <body>
+<meta name="pd-shared-nav">
 <div class="container">
 <h1>Expansão Nacional — Análise de Mercado</h1>
 <p>Inteligência imobiliária aplicada a destinos litorâneos. Aqui reunimos análise de viabilidade, perfil do turista, sazonalidade, diárias e pontos de investimento.</p>
@@ -70,5 +72,7 @@ gtag('config', '', { anonymize_ip: true });
       <script>(function(){var form=document.getElementById("leadForm");if(!form) return;form.addEventListener("submit",function(e){e.preventDefault();var data={name:document.querySelector("#leadForm [name=name]").value.trim(),phone:document.querySelector("#leadForm [name=phone]").value.trim()||null,source:document.querySelector("#leadForm [name=source]").value||null};fetch("https://academy.praia.digital/leads",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)}).then(function(r){return r.json().then(function(json){return {status:r.status,json:json};});}).then(function(res){document.getElementById("formStatus").textContent=res.status===200?"Recebido! Entraremos em contato.":"Erro: "+JSON.stringify(res.json);}).catch(function(){document.getElementById("formStatus").textContent="Erro de conexão. Tente novamente.";});});})();</script>
 
   </div>
+<meta name="pd-shared-footer">
+<script src="https://praia.digital/js/shared.js"></script>
 </body>
 </html>

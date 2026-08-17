@@ -83910,6 +83910,222 @@
           "has_cta": true
         }
       ]
+    },
+    {
+      "date": "2026-08-17T04:57:15.622776+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "compra-imovel-litoral-promessa-arrependimento-2026",
+          "file": "compra-imovel-litoral-promessa-arrependimento-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2664,
+          "internal_links": 6,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "compra-imovel-litoral-primeiro-imovel-2026",
+          "file": "compra-imovel-litoral-primeiro-imovel-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2692,
+          "internal_links": 6,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "compra-imovel-litoral-passo-passo-2026",
+          "file": "compra-imovel-litoral-passo-passo-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 10461,
+          "internal_links": 17,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "compra-imovel-litoral-pagamento-entrada-negociacao-2026",
+          "file": "compra-imovel-litoral-pagamento-entrada-negociacao-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2649,
+          "internal_links": 6,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "compra-imovel-litoral-negociacao-preco-dicas-2026",
+          "file": "compra-imovel-litoral-negociacao-preco-dicas-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2689,
+          "internal_links": 6,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "compra-imovel-litoral-investimento-checklist-pre-investimento-2026",
+          "file": "compra-imovel-litoral-investimento-checklist-pre-investimento-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2785,
+          "internal_links": 6,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "compra-imovel-litoral-imovel-reformado-riscos-2026",
+          "file": "compra-imovel-litoral-imovel-reformado-riscos-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2667,
+          "internal_links": 6,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "compra-imovel-litoral-imovel-reformado-rapido-2026",
+          "file": "compra-imovel-litoral-imovel-reformado-rapido-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2667,
+          "internal_links": 6,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "compra-imovel-litoral-imovel-reformado-negociacao-2026",
+          "file": "compra-imovel-litoral-imovel-reformado-negociacao-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2711,
+          "internal_links": 6,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "compra-imovel-litoral-imovel-reformado-inspecao-2026",
+          "file": "compra-imovel-litoral-imovel-reformado-inspecao-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2683,
+          "internal_links": 6,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
+    },
+    {
+      "date": "2026-08-17T05:21:11.250307+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "zona-sul-santos-imoveis-ia",
+          "file": "zona-sul-santos-imoveis-ia.html",
+          "valid": true,
+          "issues": [],
+          "size": 13998,
+          "internal_links": 17,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "zona-sao-vicente-imoveis-ia",
+          "file": "zona-sao-vicente-imoveis-ia.html",
+          "valid": true,
+          "issues": [],
+          "size": 14038,
+          "internal_links": 17,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "zona-praiagrande-imoveis-ia",
+          "file": "zona-praiagrande-imoveis-ia.html",
+          "valid": true,
+          "issues": [],
+          "size": 14064,
+          "internal_links": 17,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "zona-peruibe-imoveis-ia",
+          "file": "zona-peruibe-imoveis-ia.html",
+          "valid": true,
+          "issues": [],
+          "size": 13902,
+          "internal_links": 17,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "zona-oeste-guaruja-imoveis-ia",
+          "file": "zona-oeste-guaruja-imoveis-ia.html",
+          "valid": true,
+          "issues": [],
+          "size": 14097,
+          "internal_links": 17,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "zona-norte-santos-imoveis-ia",
+          "file": "zona-norte-santos-imoveis-ia.html",
+          "valid": true,
+          "issues": [],
+          "size": 14064,
+          "internal_links": 17,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "zona-mongagua-imoveis-ia",
+          "file": "zona-mongagua-imoveis-ia.html",
+          "valid": true,
+          "issues": [],
+          "size": 13936,
+          "internal_links": 17,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "zona-leste-guaruja-imoveis-ia",
+          "file": "zona-leste-guaruja-imoveis-ia.html",
+          "valid": true,
+          "issues": [],
+          "size": 14097,
+          "internal_links": 17,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "zona-itapua-santos-imoveis-ia",
+          "file": "zona-itapua-santos-imoveis-ia.html",
+          "valid": true,
+          "issues": [],
+          "size": 14321,
+          "internal_links": 17,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "zona-itanhaem-imoveis-ia",
+          "file": "zona-itanhaem-imoveis-ia.html",
+          "valid": true,
+          "issues": [],
+          "size": 13936,
+          "internal_links": 17,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
     }
   ]
 }

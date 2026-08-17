@@ -148,6 +148,7 @@
 <link rel="manifest" href="https://praia.digital/manifest.json">
 <meta name="robots" content="index, follow">
 <meta property="og:locale" content="pt_BR">
+<link rel="stylesheet" href="https://praia.digital/css/style.css">
 <meta name="theme-color" content="#0ea5e9">
 <script type="application/ld+json">
 {
@@ -210,10 +211,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 </head>
 <body>
 <a class="skip-link" href="#main" style="position:absolute;left:-9999px;">Pular para o conteúdo</a>
-<header>
-  <h1>📊 Relatório de Mercado Exclusivo</h1>
-  <p>Litoral São Paulo — {datetime.now().strftime('%B %Y')} | Dados proprietários Praia Digital</p>
-</header>
+<meta name="pd-shared-nav">
 <div class="container">
   <div class="report-grid">
     <div class="report-card">
@@ -246,8 +244,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     <p>Dados coletados de fontes exclusivas: anúncios próprios, registros de prospecção, integrações com parceiros (PriceLabs, Stays) e análise de mercado proprietária. Atualizados semanalmente pela equipe Praia Digital.</p>
   </div>
 </div>
-<footer>
-  <p>Relatório Exclusivo Praia Digital | {datetime.now().strftime('%d/%m/%Y')} | Uso permitido para assinantes</p>
-</footer>
+<meta name="pd-shared-footer">
+<script src="https://praia.digital/js/shared.js"></script>
 </body>
 </html>
