@@ -45,15 +45,15 @@
   </script>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Serviço: Chatbot imobiliário no site | Praia Digital">
-  <meta name="twitter:description" content="Chatbot para imobiliárias no litoral paulista: atendimento 24h, qualificação de leads e encaminhamento para WhatsApp.">
+  <meta name="twitter:description" content="Serviço de chatbot imobiliário para sites no litoral paulista. Atendimento 24h, qualificação de leads e encaminhamento para WhatsApp.">
   <meta property="og:title" content="Serviço: Chatbot imobiliário no site | Praia Digital">
-  <meta property="og:description" content="Chatbot para imobiliárias no litoral paulista: atendimento 24h, qualificação de leads e encaminhamento para WhatsApp.">
+  <meta property="og:description" content="Serviço de chatbot imobiliário para sites no litoral paulista. Atendimento 24h, qualificação de leads e encaminhamento para WhatsApp.">
 
   <meta name="twitter:image" content="https://praia.digital/img/default-home.jpg">
   <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
 <link rel="canonical" href="https://praia.digital/assets/servico-chatbot-imobiliaria-litoral.html">
-  <meta name="keywords" content="Serviço: Chatbot imobiliário no site | Praia Digital, Chatbot para imobiliárias no litoral paulista: atendimento 24h, qualificação de leads e encaminhamento para WhatsApp., imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
-  <meta name="description" content="Chatbot para imobiliárias no litoral paulista: atendimento 24h, qualificação de leads e encaminhamento para WhatsApp.">
+  <meta name="keywords" content="Serviço: Chatbot imobiliário no site | Praia Digital, Serviço de chatbot imobiliário para sites no litoral paulista. Atendimento 24h, qualificação de leads e encaminhamento para WhatsApp., imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
+  <meta name="description" content="Serviço de chatbot imobiliário para sites no litoral paulista. Atendimento 24h, qualificação de leads e encaminhamento para WhatsApp.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -83,39 +83,19 @@ gtag('config', '', { anonymize_ip: true });
 <body>
 <header><a class="logo" href="/">🌊 Praia Digital</a><nav><a href="/assets/" style="color:#fff;text-decoration:none;font-weight:600">Serviços</a></nav></header>
 <div class="hero">
-<h1>Chatbot para imobiliárias no litoral</h1>
-<p>Para quem quer responder leads mais rápido, fora do horário comercial e sem perder consultas.</p>
-<a class="btn" href="https://wa.me/5511954346288">Solicitar diagnóstico de atendimento</a>
+<h1>Chatbot imobiliário no site</h1>
+<p>Automação 24h para captação, qualificação e encaminhamento de leads ao WhatsApp.</p>
+<a class="btn" href="https://praia.digital">Começar grátis</a>
 </div>
 <div class="card">
-<h2>Para quem é este serviço</h2>
-<p>✅ Imobiliárias com alto volume de contatos<br>✅ Equipes que recebem perguntas repetitivas<br>✅ Operações que precisam de atendimento fora do horário<br>✅ Quem quer reduzir carga sobre corretores</p>
-<p><strong>Não é para:</strong> quem espera resultado sem base de conhecimento ou sem atendimento humano de apoio.</p>
-</div>
-<div class="card">
-<h2>Como funciona</h2>
-<p><strong>1. Diagnóstico</strong><br>Mapeamos perguntas frequentes, canais e fluxo atual de atendimento.</p>
-<p><strong>2. Configuração</strong><br>Configuramos respostas, qualificação e regras de transferência para corretores.</p>
-<p><strong>3. Implantação</strong><br>Instalamos no site/canais, testamos e validamos com a equipe.</p>
-<p><strong>4. Evolução</strong><br>Acompanhamos métricas, ajustamos conteúdo e expandimos fluxos.</p>
+<h2>Benefícios</h2>
+<p>• Resposta instantânea para visitantes;<br>• Perguntas qualificadoras por perfil;<br>• Integração leve sem rebuild do site;<br>• Métricas de atendimento.</p>
+<p class="keywords">chatbot, atendimento, leads, imobiliária, automação</p>
 </div>
 <div class="grid">
 <div class="card-item"><strong>24h</strong><p>Atendimento fora do horário comercial.</p></div>
 <div class="card-item"><strong>Qualificação</strong><p>Perfil, cidade e intenção.</p></div>
 <div class="card-item"><strong>WhatsApp</strong><p>Encaminhamento direto para corretor.</p></div>
-<div class="card-item"><strong>Métricas</strong><p>Atendimento com dados para ajustes.</p></div>
 </div>
-<div class="card">
-<h2>Diferencial</h2>
-<p>Configurado para o mercado imobiliário do litoral, com personalização por cidade e integração com canais que a equipe já usa.</p>
-</div>
-<div class="card">
-<h2>Perguntas frequentes</h2>
-<p><strong>O chatbot substitui o corretor?</strong><br>Não. Ele responde perguntas iniciais e transfere para humano quando necessário.</p>
-<p><strong>Preciso de um site novo?</strong><br>Não. Integramos com o site atual ou canais já utilizados.</p>
-<p><strong>Quais cidades são atendidas?</strong><br>Todo o litoral de SP: Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente e Peruíbe.</p>
-<p><strong>Quanto tempo para retorno?</strong><br>Em até 24 horas após o contato, com atendimento humanizado.</p>
-</div>
-<a class="btn" href="https://wa.me/5511954346288">Solicitar diagnóstico de atendimento</a>
 <footer>© Praia Digital — 2026 — IA para imóveis no litoral paulista</footer>
 </body></html>
