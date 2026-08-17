@@ -82702,6 +82702,114 @@
           "has_cta": true
         }
       ]
+    },
+    {
+      "date": "2026-08-17T03:22:53.559467+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "venda-imovel-litoral-saida-casa-propria-2026",
+          "file": "venda-imovel-litoral-saida-casa-propria-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2155,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "venda-imovel-litoral-proposta-formal-aceite-2026",
+          "file": "venda-imovel-litoral-proposta-formal-aceite-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2179,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "venda-imovel-litoral-proposta-escrita-timeline-2026",
+          "file": "venda-imovel-litoral-proposta-escrita-timeline-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2211,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "venda-imovel-litoral-proposta-escrita-prazo-2026",
+          "file": "venda-imovel-litoral-proposta-escrita-prazo-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2173,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "venda-imovel-litoral-proposta-escrita-negociacao-2026",
+          "file": "venda-imovel-litoral-proposta-escrita-negociacao-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2244,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "venda-imovel-litoral-proposta-escrita-importancia-2026",
+          "file": "venda-imovel-litoral-proposta-escrita-importancia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2240,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "venda-imovel-litoral-proposta-escrita-formalizacao-2026",
+          "file": "venda-imovel-litoral-proposta-escrita-formalizacao-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2274,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "venda-imovel-litoral-proposta-escrita-dicas-2026",
+          "file": "venda-imovel-litoral-proposta-escrita-dicas-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2175,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "venda-imovel-litoral-proposta-escrita-contraproposta-2026",
+          "file": "venda-imovel-litoral-proposta-escrita-contraproposta-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2269,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "venda-imovel-litoral-proposta-escrita-comparacao-2026",
+          "file": "venda-imovel-litoral-proposta-escrita-comparacao-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2242,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
     }
   ]
 }

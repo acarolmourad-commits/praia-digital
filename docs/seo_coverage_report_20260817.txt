@@ -1,0 +1,58 @@
+======================================================================
+RELATÓRIO DE COBERTURA SEO — BASELINE 2026-08-17
+======================================================================
+
+TOTAIS GERAIS:
+  Total de arquivos HTML: 3242
+  Redirect stubs: 0
+  Artigos válidos: 3242
+  Schema presente: 3242 (100.0%)
+  Meta description presente: 3242 (100.0%)
+  CTA/WhatsApp presente: 1747 (53.9%)
+
+COBERTURA POR CIDADE:
+  caraguatatuba:
+    Total: 3 | Schema: 3/3 (100%) | Meta: 3/3 (100%) | CTA: 3/3 (100%)
+  guaruja:
+    Total: 5 | Schema: 5/5 (100%) | Meta: 5/5 (100%) | CTA: 5/5 (100%)
+  ilhabela:
+    Total: 7 | Schema: 7/7 (100%) | Meta: 7/7 (100%) | CTA: 7/7 (100%)
+  litoral:
+    Total: 3210 | Schema: 3210/3210 (100%) | Meta: 3210/3210 (100%) | CTA: 1715/3210 (53%)
+  litoral-norte:
+    Total: 4 | Schema: 4/4 (100%) | Meta: 4/4 (100%) | CTA: 4/4 (100%)
+  praia-grande:
+    Total: 5 | Schema: 5/5 (100%) | Meta: 5/5 (100%) | CTA: 5/5 (100%)
+  santos:
+    Total: 2 | Schema: 2/2 (100%) | Meta: 2/2 (100%) | CTA: 2/2 (100%)
+  sao-sebastiao:
+    Total: 1 | Schema: 1/1 (100%) | Meta: 1/1 (100%) | CTA: 1/1 (100%)
+  ubatuba:
+    Total: 5 | Schema: 5/5 (100%) | Meta: 5/5 (100%) | CTA: 5/5 (100%)
+
+COBERTURA POR CLUSTER (top 20):
+  outros:
+    Total: 2927 | Schema: 2927/2927 (100%) | Meta: 2927/2927 (100%) | CTA: 1443/2927 (49%)
+  ebook-rentabilidade-temporada:
+    Total: 151 | Schema: 151/151 (100%) | Meta: 151/151 (100%) | CTA: 150/151 (99%)
+  curso-marketing-digital-imobiliaria:
+    Total: 109 | Schema: 109/109 (100%) | Meta: 109/109 (100%) | CTA: 100/109 (92%)
+  minicurso-automacao-imobiliaria:
+    Total: 29 | Schema: 29/29 (100%) | Meta: 29/29 (100%) | CTA: 29/29 (100%)
+  checklist-captacao-imoveis:
+    Total: 19 | Schema: 19/19 (100%) | Meta: 19/19 (100%) | CTA: 18/19 (95%)
+  curso-gestao-temporada:
+    Total: 4 | Schema: 4/4 (100%) | Meta: 4/4 (100%) | CTA: 4/4 (100%)
+  curso-comprar-imovel-praia-sem-golpes:
+    Total: 3 | Schema: 3/3 (100%) | Meta: 3/3 (100%) | CTA: 3/3 (100%)
+
+GAPS CRÍTICOS:
+  Schema faltando: 0 artigos
+  Meta description faltando: 0 artigos
+  CTA/WhatsApp faltando: 1495 artigos
+
+PRÓXIMO PASCO:
+  - Executar post_publish_verify.py em batch completo
+  - Corrigir CTA em artigos de alto volume (clusters principais)
+  - Validar links internos pendentes
+======================================================================
