@@ -86757,6 +86757,114 @@
           "has_cta": true
         }
       ]
+    },
+    {
+      "date": "2026-08-17T09:14:30.758550+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "litoralnorte-imoveis-em-ubatuba-temporada-oferta-e-avaliacao-de-mercado-2026",
+          "file": "litoralnorte-imoveis-em-ubatuba-temporada-oferta-e-avaliacao-de-mercado-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1452,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "saovicente-imoveis-em-sao-vicente-temporada-oportunidades-e-avaliacao-2026",
+          "file": "saovicente-imoveis-em-sao-vicente-temporada-oportunidades-e-avaliacao-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1456,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "litoralsul-imoveis-em-peruibe-dicas-temporada-e-avaliacao-de-mercado-2026",
+          "file": "litoralsul-imoveis-em-peruibe-dicas-temporada-e-avaliacao-de-mercado-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1427,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ilhabela-imoveis-em-ilhabela-temporada-mercado-e-oportunidades-em-2026",
+          "file": "ilhabela-imoveis-em-ilhabela-temporada-mercado-e-oportunidades-em-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1439,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "guaruja-imoveis-em-guaruja-ofertas-avaliacao-e-temporada-na-riviera-2026",
+          "file": "guaruja-imoveis-em-guaruja-ofertas-avaliacao-e-temporada-na-riviera-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1445,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "litoralnorte-imoveis-em-bertioga-temporada-mercado-e-oportunidades-2026",
+          "file": "litoralnorte-imoveis-em-bertioga-temporada-mercado-e-oportunidades-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1426,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "litoralnorte-imoveis-em-ilhabela-temporada-e-mercado-em-2026",
+          "file": "litoralnorte-imoveis-em-ilhabela-temporada-e-mercado-em-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1384,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "litoralnorte-imoveis-na-ilha-das-pecas-em-bertioga-oferta-e-temporada-2026",
+          "file": "litoralnorte-imoveis-na-ilha-das-pecas-em-bertioga-oferta-e-temporada-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1428,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-follow",
+          "file": "ubatuba-follow.html",
+          "valid": true,
+          "issues": [],
+          "size": 1222,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "saosebastiao-follow",
+          "file": "saosebastiao-follow.html",
+          "valid": true,
+          "issues": [],
+          "size": 1266,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
     }
   ]
 }
