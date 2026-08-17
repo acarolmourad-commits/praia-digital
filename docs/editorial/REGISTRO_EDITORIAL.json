@@ -39789,5 +39789,75 @@
     "status": "published",
     "data": "2026-08-16",
     "nota": "Página de conversão do funil B2B. CTA: WhatsApp para diagnóstico gratuito."
+  },
+  "guia-investimento-imovel-litoral-2026": {
+    "slug": "guia-investimento-imovel-litoral-2026",
+    "title": "Guia de Investimento no Litoral — como escolher imóvel, bairro e momento",
+    "path": "blog/guia-investimento-imovel-litoral-2026.html",
+    "tipo": "blog",
+    "cidade": "litoral",
+    "status": "published",
+    "data": "2026-08-16",
+    "velocidade": "evergreen"
+  },
+  "como-financiar-imovel-litoral-2026": {
+    "slug": "como-financiar-imovel-litoral-2026",
+    "title": "Como Financiar um Imóvel no Litoral — passo a passo, documentação e dicas",
+    "path": "blog/como-financiar-imovel-litoral-2026.html",
+    "tipo": "blog",
+    "cidade": "litoral",
+    "status": "published",
+    "data": "2026-08-16",
+    "velocidade": "evergreen"
+  },
+  "documentacao-compra-venda-imovel-litoral-2026": {
+    "slug": "documentacao-compra-venda-imovel-litoral-2026",
+    "title": "Documentação para compra e venda de imóvel no litoral — guia completo",
+    "path": "blog/documentacao-compra-venda-imovel-litoral-2026.html",
+    "tipo": "blog",
+    "cidade": "litoral",
+    "status": "published",
+    "data": "2026-08-16",
+    "velocidade": "evergreen"
+  },
+  "mercado-imobiliario-litoral-paulista-2026": {
+    "slug": "mercado-imobiliario-litoral-paulista-2026",
+    "title": "Mercado imobiliário litoral paulista — atualização semanal",
+    "path": "blog/mercado-imobiliario-litoral-paulista-2026.html",
+    "tipo": "blog",
+    "cidade": "litoral",
+    "status": "published",
+    "data": "2026-08-16",
+    "velocidade": "atualizado"
+  },
+  "noticia-temporada-2026-2027-mercado-litoral-2026-08-16": {
+    "slug": "noticia-temporada-2026-2027-mercado-litoral-2026-08-16",
+    "title": "Notícia: temporada 2026-2027 movimenta mercado imobiliário no litoral paulista",
+    "path": "blog/noticia-temporada-2026-2027-mercado-litoral-2026-08-16.html",
+    "tipo": "blog",
+    "cidade": "litoral",
+    "status": "published",
+    "data": "2026-08-16",
+    "velocidade": "noticia"
+  },
+  "temporada-litoral-paulista-2026-2027": {
+    "slug": "temporada-litoral-paulista-2026-2027",
+    "title": "Temporada no litoral paulista — guia atualizado para proprietários e hóspedes",
+    "path": "blog/temporada-litoral-paulista-2026-2027.html",
+    "tipo": "blog",
+    "cidade": "litoral",
+    "status": "published",
+    "data": "2026-08-16",
+    "velocidade": "atualizado"
+  },
+  "analise-litoral-paulista-investidores-2026": {
+    "slug": "analise-litoral-paulista-investidores-2026",
+    "title": "Análise: por que o litoral paulista continua atraindo investidores em 2026",
+    "path": "blog/analise-litoral-paulista-investidores-2026.html",
+    "tipo": "blog",
+    "cidade": "litoral",
+    "status": "published",
+    "data": "2026-08-16",
+    "velocidade": "analise"
   }
 }
