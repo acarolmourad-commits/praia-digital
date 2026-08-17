@@ -85129,6 +85129,114 @@
           "has_cta": true
         }
       ]
+    },
+    {
+      "date": "2026-08-17T07:36:46.833675+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "saovicente-sao-vicente-checklist-para-investimento-imobiliario-guia-2026",
+          "file": "saovicente-sao-vicente-checklist-para-investimento-imobiliario-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1326,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "saovicente-sao-vicente-curso-de-investimento-imobiliario-guia-2026",
+          "file": "saovicente-sao-vicente-curso-de-investimento-imobiliario-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1290,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "saosebastiao-sao-sebastiao-guia-para-investimento-imobiliario-analise-2026",
+          "file": "saosebastiao-sao-sebastiao-guia-para-investimento-imobiliario-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1332,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "saosebastiao-sao-sebastiao-checklist-para-investimento-imobiliario-guia-2026",
+          "file": "saosebastiao-sao-sebastiao-checklist-para-investimento-imobiliario-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1344,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "saosebastiao-sao-sebastiao-curso-de-investimento-imobiliario-guia-2026",
+          "file": "saosebastiao-sao-sebastiao-curso-de-investimento-imobiliario-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1308,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ilhabela-ilhabela-checklist-para-investimento-imobiliario-guia-2026",
+          "file": "ilhabela-ilhabela-checklist-para-investimento-imobiliario-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1300,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ilhabela-ilhabela-curso-de-investimento-imobiliario-guia-2026",
+          "file": "ilhabela-ilhabela-curso-de-investimento-imobiliario-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1264,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "caraguatatuba-caraguatatuba-guia-para-investimento-imobiliario-analise-2026",
+          "file": "caraguatatuba-caraguatatuba-guia-para-investimento-imobiliario-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1333,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "caraguatatuba-caraguatatuba-checklist-para-investimento-imobiliario-guia-2026",
+          "file": "caraguatatuba-caraguatatuba-checklist-para-investimento-imobiliario-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1345,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "caraguatatuba-caraguatatuba-curso-de-investimento-imobiliario-guia-2026",
+          "file": "caraguatatuba-caraguatatuba-curso-de-investimento-imobiliario-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1309,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
     }
   ]
 }
