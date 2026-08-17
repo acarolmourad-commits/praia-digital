@@ -84805,6 +84805,114 @@
           "has_cta": true
         }
       ]
+    },
+    {
+      "date": "2026-08-17T07:14:16.208806+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "santos-santos-curso-de-investimento-imobiliario-guia-2026",
+          "file": "santos-santos-curso-de-investimento-imobiliario-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1246,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "maresias-maresias-guia-para-compra-de-imoveis-analise-2026",
+          "file": "maresias-maresias-guia-para-compra-de-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1246,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "maresias-maresias-checklist-para-venda-de-imoveis-guia-2026",
+          "file": "maresias-maresias-checklist-para-venda-de-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1252,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "maresias-maresias-curso-para-corretor-de-imoveis-guia-2026",
+          "file": "maresias-maresias-curso-para-corretor-de-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1246,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-ubatuba-guia-para-compra-de-imoveis-analise-2026",
+          "file": "ubatuba-ubatuba-guia-para-compra-de-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1241,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-ubatuba-checklist-para-compra-de-imoveis-analise-2026",
+          "file": "ubatuba-ubatuba-checklist-para-compra-de-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1271,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "saovicente-sao-vicente-guia-para-compra-de-imoveis-analise-2026",
+          "file": "saovicente-sao-vicente-guia-para-compra-de-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1276,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "saosebastiao-sao-sebastiao-guia-para-compra-de-imoveis-analise-2026",
+          "file": "saosebastiao-sao-sebastiao-guia-para-compra-de-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1294,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ilhabela-ilhabela-guia-para-compra-de-imoveis-analise-2026",
+          "file": "ilhabela-ilhabela-guia-para-compra-de-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1250,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "caraguatatuba-caraguatatuba-guia-para-compra-de-imoveis-analise-2026",
+          "file": "caraguatatuba-caraguatatuba-guia-para-compra-de-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1295,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
     }
   ]
 }
