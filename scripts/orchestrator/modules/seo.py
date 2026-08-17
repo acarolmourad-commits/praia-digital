@@ -25,6 +25,10 @@ def audit_article(path: Path) -> dict:
     meta = re.search(r'<meta[^>]*name="description"[^>]*content="([^"]+)"', html, re.I)
     schema = 'schema.org' in html or 'application/ld+json' in html
 
+    is_redirect = (
+        title and 'redirecionando' in title.group(1).lower()
+    ) or bool(re.search(r'<meta[^>]+http-equiv=["\']refresh["\']', html, re.I))
+
     return {
         'slug': slug,
         'has_title': bool(title),
@@ -34,20 +38,21 @@ def audit_article(path: Path) -> dict:
         'title_len': len(title.group(1)) if title else 0,
         'h1_len': len(h1.group(1)) if h1 else 0,
         'meta_len': len(meta.group(1)) if meta else 0,
+        'is_redirect': is_redirect,
     }
 
 def run(context: dict) -> dict:
     files = sample_articles(20)
     results = [audit_article(f) for f in files]
 
-    issues = [r for r in results if not r['has_h1'] or not r['has_meta'] or r['meta_len'] < 60]
+    issues = [r for r in results if not r['is_redirect'] and (not r['has_h1'] or not r['has_meta'] or r['meta_len'] < 60)]
     summary = {
         'sampled': len(results),
         'issues': len(issues),
-        'missing_schema': sum(1 for r in results if not r.get('has_schema')),
-        'short_meta': sum(1 for r in results if r.get('meta_len', 0) < 60),
-        'short_title': sum(1 for r in results if r.get('title_len', 0) < 40),
-        'missing_h1': sum(1 for r in results if not r.get('has_h1')),
+        'missing_schema': sum(1 for r in results if not r.get('has_schema') and not r.get('is_redirect')),
+        'short_meta': sum(1 for r in results if r.get('meta_len', 0) < 60 and not r.get('is_redirect')),
+        'short_title': sum(1 for r in results if r.get('title_len', 0) < 40 and not r.get('is_redirect')),
+        'missing_h1': sum(1 for r in results if not r.get('has_h1') and not r.get('is_redirect')),
     }
 
     opportunities = []
