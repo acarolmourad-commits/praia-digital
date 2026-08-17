@@ -207,48 +207,6 @@
   "duplicate_signals": [
     {
       "type": "possible_duplicate",
-      "score": 1.0,
-      "a": "blog\\3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-11-23.html",
-      "b": "blog\\3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-12-23.html",
-      "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
-    },
-    {
-      "type": "possible_duplicate",
-      "score": 1.0,
-      "a": "blog\\3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-11-23.html",
-      "b": "blog\\3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-08-03-23.html",
-      "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
-    },
-    {
-      "type": "possible_duplicate",
-      "score": 1.0,
-      "a": "blog\\3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-12-23.html",
-      "b": "blog\\3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-08-03-23.html",
-      "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
-    },
-    {
-      "type": "possible_duplicate",
-      "score": 1.0,
-      "a": "blog\\5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-11-2.html",
-      "b": "blog\\5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-12-2.html",
-      "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
-    },
-    {
-      "type": "possible_duplicate",
-      "score": 1.0,
-      "a": "blog\\5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-11-2.html",
-      "b": "blog\\5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html",
-      "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
-    },
-    {
-      "type": "possible_duplicate",
-      "score": 1.0,
-      "a": "blog\\5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-12-2.html",
-      "b": "blog\\5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html",
-      "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
-    },
-    {
-      "type": "possible_duplicate",
       "score": 0.85,
       "a": "blog\\acoes-locais-imobiliarias-litoral-2026.html",
       "b": "blog\\branding-local-imobiliarias-litoral-paulista-2026.html",
@@ -1014,20 +972,6 @@
   },
   "product_mapping": {
     "ebook-rentabilidade-temporada": [
-      {
-        "path": "blog\\3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-11-23.html",
-        "title": "3 erros que matam vendas de temporada no litoral",
-        "type": "Artigo comercial",
-        "cta": "Quer calcular a viabilidade do seu imóvel? Baixe o guia completo de rentabilidade.",
-        "conversion_potential": "media"
-      },
-      {
-        "path": "blog\\3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-12-23.html",
-        "title": "3 erros que matam vendas de temporada no litoral",
-        "type": "Artigo comercial",
-        "cta": "Quer calcular a viabilidade do seu imóvel? Baixe o guia completo de rentabilidade.",
-        "conversion_potential": "media"
-      },
       {
         "path": "blog\\3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-08-03-23.html",
         "title": "3 erros que matam vendas de temporada no litoral",
@@ -3387,76 +3331,6 @@
       "cta_intensity": "suave"
     },
     {
-      "id": "4b414e37f6",
-      "slug": "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-11-23",
-      "path": "blog\\3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-11-23.html",
-      "title": "3 erros que matam vendas de temporada no litoral",
-      "h1": "3 erros que matam vendas de temporada no litoral",
-      "h2_count": 5,
-      "meta_description": "3 erros que matam vendas de temporada no litoral — guia prático para imobiliárias e corretores do litoral paulista.",
-      "keywords": [
-        "3 erros que matam vendas de temporada no litoral",
-        "3 erros que matam vendas de temporada no litoral — guia prático para imobiliárias e corretores do litoral paulista.",
-        "imóveis litoral paulista",
-        "Santos",
-        "Guarujá",
-        "Praia Grande",
-        "Bertioga",
-        "Itanhaém"
-      ],
-      "primary_keyword": "3 erros que matam vendas de temporada no litoral",
-      "city": "litoral_paulista",
-      "funnel": "Fundo",
-      "intent": "comercial",
-      "cluster": "locacao_temporada",
-      "canonical_ok": null,
-      "status": "publicado",
-      "article_type": "E",
-      "article_type_label": "Artigo comercial",
-      "product_related_id": "ebook-rentabilidade-temporada",
-      "product_relation_score": 1,
-      "hotmart_link": "https://www.hotmart.com/pt-br/producto/ebook-rentabilidade-temporada",
-      "recommended_cta": "Quer calcular a viabilidade do seu imóvel? Baixe o guia completo de rentabilidade.",
-      "conversion_potential": "media",
-      "commercial_cluster": "locacao_temporada",
-      "cta_intensity": "media"
-    },
-    {
-      "id": "e9153fbc2f",
-      "slug": "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-12-23",
-      "path": "blog\\3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-12-23.html",
-      "title": "3 erros que matam vendas de temporada no litoral",
-      "h1": "3 erros que matam vendas de temporada no litoral",
-      "h2_count": 5,
-      "meta_description": "3 erros que matam vendas de temporada no litoral — guia prático para imobiliárias e corretores do litoral paulista.",
-      "keywords": [
-        "3 erros que matam vendas de temporada no litoral",
-        "3 erros que matam vendas de temporada no litoral — guia prático para imobiliárias e corretores do litoral paulista.",
-        "imóveis litoral paulista",
-        "Santos",
-        "Guarujá",
-        "Praia Grande",
-        "Bertioga",
-        "Itanhaém"
-      ],
-      "primary_keyword": "3 erros que matam vendas de temporada no litoral",
-      "city": "litoral_paulista",
-      "funnel": "Fundo",
-      "intent": "comercial",
-      "cluster": "locacao_temporada",
-      "canonical_ok": null,
-      "status": "publicado",
-      "article_type": "E",
-      "article_type_label": "Artigo comercial",
-      "product_related_id": "ebook-rentabilidade-temporada",
-      "product_relation_score": 1,
-      "hotmart_link": "https://www.hotmart.com/pt-br/producto/ebook-rentabilidade-temporada",
-      "recommended_cta": "Quer calcular a viabilidade do seu imóvel? Baixe o guia completo de rentabilidade.",
-      "conversion_potential": "media",
-      "commercial_cluster": "locacao_temporada",
-      "cta_intensity": "media"
-    },
-    {
       "id": "eb7619da19",
       "slug": "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-08-03-23",
       "path": "blog\\3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-08-03-23.html",
@@ -3524,76 +3398,6 @@
       "recommended_cta": null,
       "conversion_potential": "baixa",
       "commercial_cluster": "editorial",
-      "cta_intensity": "suave"
-    },
-    {
-      "id": "7825ed5899",
-      "slug": "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-11-2",
-      "path": "blog\\5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-11-2.html",
-      "title": "5 táticas infalíveis para captação imobiliária no litoral paulista",
-      "h1": "5 táticas infalíveis para captação imobiliária no litoral paulista",
-      "h2_count": 5,
-      "meta_description": "5 táticas infalíveis para captação imobiliária no litoral paulista — guia prático para imobiliárias e corretores do litoral paulista.",
-      "keywords": [
-        "5 táticas infalíveis para captação imobiliária no litoral paulista",
-        "5 táticas infalíveis para captação imobiliária no litoral paulista — guia prático para imobiliárias e corretores do litoral paulista.",
-        "imóveis litoral paulista",
-        "Santos",
-        "Guarujá",
-        "Praia Grande",
-        "Bertioga",
-        "Itanhaém"
-      ],
-      "primary_keyword": "5 táticas infalíveis para captação imobiliária no litoral paulista",
-      "city": "litoral_paulista",
-      "funnel": "Meio",
-      "intent": "informacional",
-      "cluster": "automacao_ia",
-      "canonical_ok": null,
-      "status": "publicado",
-      "article_type": "A",
-      "article_type_label": "Artigo SEO gratuito",
-      "product_related_id": null,
-      "product_relation_score": 0,
-      "hotmart_link": null,
-      "recommended_cta": null,
-      "conversion_potential": "baixa",
-      "commercial_cluster": "automacao_ia",
-      "cta_intensity": "suave"
-    },
-    {
-      "id": "15046ef0c6",
-      "slug": "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-12-2",
-      "path": "blog\\5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-12-2.html",
-      "title": "5 táticas infalíveis para captação imobiliária no litoral paulista",
-      "h1": "5 táticas infalíveis para captação imobiliária no litoral paulista",
-      "h2_count": 5,
-      "meta_description": "5 táticas infalíveis para captação imobiliária no litoral paulista — guia prático para imobiliárias e corretores do litoral paulista.",
-      "keywords": [
-        "5 táticas infalíveis para captação imobiliária no litoral paulista",
-        "5 táticas infalíveis para captação imobiliária no litoral paulista — guia prático para imobiliárias e corretores do litoral paulista.",
-        "imóveis litoral paulista",
-        "Santos",
-        "Guarujá",
-        "Praia Grande",
-        "Bertioga",
-        "Itanhaém"
-      ],
-      "primary_keyword": "5 táticas infalíveis para captação imobiliária no litoral paulista",
-      "city": "litoral_paulista",
-      "funnel": "Meio",
-      "intent": "informacional",
-      "cluster": "automacao_ia",
-      "canonical_ok": null,
-      "status": "publicado",
-      "article_type": "A",
-      "article_type_label": "Artigo SEO gratuito",
-      "product_related_id": null,
-      "product_relation_score": 0,
-      "hotmart_link": null,
-      "recommended_cta": null,
-      "conversion_potential": "baixa",
-      "commercial_cluster": "automacao_ia",
       "cta_intensity": "suave"
     },
     {
@@ -82760,13 +82564,9 @@
     },
     {
       "date": "2026-08-17T02:22:36.633896+00:00",
-      "checked": 10,
-      "failed": 10,
+      "checked": 6,
+      "failed": 6,
       "failed_slugs": [
-        "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-12-2",
-        "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-11-2",
-        "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-12-23",
-        "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-11-23",
         "acidente-imovel-litoral-responsabilidade-proprietario-2026",
         "ab-testing-anuncios-imobiliarios-locais-litoral-2026",
         "analise-litoral-paulista-investidores-2026",
@@ -82775,66 +82575,6 @@
         "mercado-imobiliario-litoral-paulista-2026"
       ],
       "results": [
-        {
-          "slug": "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-12-2",
-          "file": "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-12-2.html",
-          "valid": false,
-          "issues": [
-            "missing_from_sitemap",
-            "insufficient_internal_links:0",
-            "missing_cta_or_whatsapp",
-            "missing_description"
-          ],
-          "size": 1652,
-          "internal_links": 0,
-          "in_sitemap": false,
-          "has_cta": false
-        },
-        {
-          "slug": "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-11-2",
-          "file": "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-11-2.html",
-          "valid": false,
-          "issues": [
-            "missing_from_sitemap",
-            "insufficient_internal_links:0",
-            "missing_cta_or_whatsapp",
-            "missing_description"
-          ],
-          "size": 1652,
-          "internal_links": 0,
-          "in_sitemap": false,
-          "has_cta": false
-        },
-        {
-          "slug": "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-12-23",
-          "file": "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-12-23.html",
-          "valid": false,
-          "issues": [
-            "missing_from_sitemap",
-            "insufficient_internal_links:0",
-            "missing_cta_or_whatsapp",
-            "missing_description"
-          ],
-          "size": 1584,
-          "internal_links": 0,
-          "in_sitemap": false,
-          "has_cta": false
-        },
-        {
-          "slug": "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-11-23",
-          "file": "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-11-23.html",
-          "valid": false,
-          "issues": [
-            "missing_from_sitemap",
-            "insufficient_internal_links:0",
-            "missing_cta_or_whatsapp",
-            "missing_description"
-          ],
-          "size": 1584,
-          "internal_links": 0,
-          "in_sitemap": false,
-          "has_cta": false
-        },
         {
           "slug": "acidente-imovel-litoral-responsabilidade-proprietario-2026",
           "file": "acidente-imovel-litoral-responsabilidade-proprietario-2026.html",
