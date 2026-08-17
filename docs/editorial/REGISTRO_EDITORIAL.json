@@ -39759,5 +39759,15 @@
     "cidade": "litoral",
     "status": "published",
     "data": "2026-08-16"
+  },
+  "santos-agora": {
+    "slug": "santos-agora",
+    "title": "Santos Agora — notícias, clima, mar, eventos, mercado, imóveis e temporada",
+    "path": "cidades/santos/agora.html",
+    "tipo": "portal-vivo",
+    "cidade": "santos",
+    "status": "published",
+    "data": "2026-08-16",
+    "nota": "Piloto único de hub vivo. Dados dinâmicos marcados como indisponíveis até integração de fontes."
   }
 }
