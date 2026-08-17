@@ -86217,6 +86217,114 @@
           "has_cta": true
         }
       ]
+    },
+    {
+      "date": "2026-08-17T08:36:44.559134+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "ubatuba-ubatuba-locacao-temporada-guia-2026",
+          "file": "ubatuba-ubatuba-locacao-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1204,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "saosebastiao-sao-sebastiao-locacao-temporada-guia-2026",
+          "file": "saosebastiao-sao-sebastiao-locacao-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1257,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "caraguatatuba-caraguatatuba-locacao-temporada-guia-2026",
+          "file": "caraguatatuba-caraguatatuba-locacao-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1258,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "peruibe-peruibe-locacao-temporada-guia-2026",
+          "file": "peruibe-peruibe-locacao-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1204,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "mongagua-mongagua-locacao-temporada-guia-2026",
+          "file": "mongagua-mongagua-locacao-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1213,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "itanhaem-itanhaem-locacao-temporada-guia-2026",
+          "file": "itanhaem-itanhaem-locacao-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1213,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "praiagrande-praia-grande-locacao-temporada-guia-2026",
+          "file": "praiagrande-praia-grande-locacao-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1248,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-ubatuba-investimento-em-imoveis-analise-2026",
+          "file": "ubatuba-ubatuba-investimento-em-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1253,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "saovicente-sao-vicente-investimento-em-imoveis-analise-2026",
+          "file": "saovicente-sao-vicente-investimento-em-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1288,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "caraguatatuba-caraguatatuba-investimento-em-imoveis-analise-2026",
+          "file": "caraguatatuba-caraguatatuba-investimento-em-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1307,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
     }
   ]
 }
