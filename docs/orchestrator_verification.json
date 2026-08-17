@@ -4,6 +4,66 @@
   "failed": 0,
   "results": [
     {
+      "slug": "antecipar-venda-imovel-litoral-preparar-2026",
+      "file": "antecipar-venda-imovel-litoral-preparar-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 2252,
+      "internal_links": 3,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "imovel-litoral-condominio-area-comum-regras-2026",
+      "file": "imovel-litoral-condominio-area-comum-regras-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 2174,
+      "internal_links": 3,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "compra-imovel-litoral-imovel-reformado-negociacao-2026",
+      "file": "compra-imovel-litoral-imovel-reformado-negociacao-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 2263,
+      "internal_links": 3,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "venda-imovel-litoral-tempo-venda-mercado-2026",
+      "file": "venda-imovel-litoral-tempo-venda-mercado-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 2157,
+      "internal_links": 3,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "imovel-litoral-norma-barulho-condominio-2026",
+      "file": "imovel-litoral-norma-barulho-condominio-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 2161,
+      "internal_links": 3,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "imovel-litoral-contrato-aluguel-modelo-2026",
+      "file": "imovel-litoral-contrato-aluguel-modelo-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 2101,
+      "internal_links": 3,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
       "slug": "usucapiao-imoveis-litoral-sp-2026",
       "file": "usucapiao-imoveis-litoral-sp-2026.html",
       "valid": true,
@@ -40,66 +100,6 @@
       "issues": [],
       "size": 9401,
       "internal_links": 15,
-      "in_sitemap": true,
-      "has_cta": true
-    },
-    {
-      "slug": "temporada-litoral-paulista-2026-2027",
-      "file": "temporada-litoral-paulista-2026-2027.html",
-      "valid": true,
-      "issues": [],
-      "size": 9322,
-      "internal_links": 21,
-      "in_sitemap": true,
-      "has_cta": true
-    },
-    {
-      "slug": "noticia-temporada-2026-2027-mercado-litoral-2026-08-16",
-      "file": "noticia-temporada-2026-2027-mercado-litoral-2026-08-16.html",
-      "valid": true,
-      "issues": [],
-      "size": 9631,
-      "internal_links": 18,
-      "in_sitemap": true,
-      "has_cta": true
-    },
-    {
-      "slug": "mercado-imobiliario-litoral-paulista-2026",
-      "file": "mercado-imobiliario-litoral-paulista-2026.html",
-      "valid": true,
-      "issues": [],
-      "size": 9772,
-      "internal_links": 21,
-      "in_sitemap": true,
-      "has_cta": true
-    },
-    {
-      "slug": "documentacao-compra-venda-imovel-litoral-2026",
-      "file": "documentacao-compra-venda-imovel-litoral-2026.html",
-      "valid": true,
-      "issues": [],
-      "size": 9653,
-      "internal_links": 15,
-      "in_sitemap": true,
-      "has_cta": true
-    },
-    {
-      "slug": "como-financiar-imovel-litoral-2026",
-      "file": "como-financiar-imovel-litoral-2026.html",
-      "valid": true,
-      "issues": [],
-      "size": 10214,
-      "internal_links": 21,
-      "in_sitemap": true,
-      "has_cta": true
-    },
-    {
-      "slug": "guia-investimento-imovel-litoral-2026",
-      "file": "guia-investimento-imovel-litoral-2026.html",
-      "valid": true,
-      "issues": [],
-      "size": 10512,
-      "internal_links": 24,
       "in_sitemap": true,
       "has_cta": true
     }
