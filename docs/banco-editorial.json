@@ -86541,6 +86541,114 @@
           "has_cta": true
         }
       ]
+    },
+    {
+      "date": "2026-08-17T08:59:18.521389+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "litoralnorte-imoveis-no-centro-de-ubatuba-oferta-e-temporada-em-2026",
+          "file": "litoralnorte-imoveis-no-centro-de-ubatuba-oferta-e-temporada-em-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1396,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "peruibe-captacao-imoveis-para-corretores-sem-investimento-em-peruibe",
+          "file": "peruibe-captacao-imoveis-para-corretores-sem-investimento-em-peruibe.html",
+          "valid": true,
+          "issues": [],
+          "size": 1695,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "guaruja-captacao-de-imoveis-na-baixa-temporada-no-guaruja",
+          "file": "guaruja-captacao-de-imoveis-na-baixa-temporada-no-guaruja.html",
+          "valid": true,
+          "issues": [],
+          "size": 1512,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "santos-captacao-de-imoveis-na-alta-temporada-em-santos",
+          "file": "santos-captacao-de-imoveis-na-alta-temporada-em-santos.html",
+          "valid": true,
+          "issues": [],
+          "size": 1496,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "litoralnorte-imoveis-em-bertioga-temporada-e-mercado-em-2026",
+          "file": "litoralnorte-imoveis-em-bertioga-temporada-e-mercado-em-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1386,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "litoralnorte-imoveis-na-barra-velha-em-ilhabela-oferta-e-temporada-2026",
+          "file": "litoralnorte-imoveis-na-barra-velha-em-ilhabela-oferta-e-temporada-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1426,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "bertioga-aluguel-por-temporada-em-bertioga-como-aumentar-ocupacao-e-renda",
+          "file": "bertioga-aluguel-por-temporada-em-bertioga-como-aumentar-ocupacao-e-renda.html",
+          "valid": true,
+          "issues": [],
+          "size": 1522,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "saovicente-comprar-casa-na-praia-primeiro-imovel-em-sao-vicente",
+          "file": "saovicente-comprar-casa-na-praia-primeiro-imovel-em-sao-vicente.html",
+          "valid": true,
+          "issues": [],
+          "size": 1666,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "guaruja-case-de-sucesso",
+          "file": "guaruja-case-de-sucesso.html",
+          "valid": true,
+          "issues": [],
+          "size": 1175,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-case-social-rapido-para-parcerias-em-ubatuba",
+          "file": "ubatuba-case-social-rapido-para-parcerias-em-ubatuba.html",
+          "valid": true,
+          "issues": [],
+          "size": 1218,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
     }
   ]
 }
