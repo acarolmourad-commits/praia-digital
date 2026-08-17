@@ -83694,6 +83694,114 @@
           "has_cta": true
         }
       ]
+    },
+    {
+      "date": "2026-08-17T04:09:35.691021+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "zona-sul-santos-imoveis-ia",
+          "file": "zona-sul-santos-imoveis-ia.html",
+          "valid": true,
+          "issues": [],
+          "size": 14485,
+          "internal_links": 19,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "zona-sao-vicente-imoveis-ia",
+          "file": "zona-sao-vicente-imoveis-ia.html",
+          "valid": true,
+          "issues": [],
+          "size": 14525,
+          "internal_links": 19,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "zona-praiagrande-imoveis-ia",
+          "file": "zona-praiagrande-imoveis-ia.html",
+          "valid": true,
+          "issues": [],
+          "size": 14551,
+          "internal_links": 19,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "zona-peruibe-imoveis-ia",
+          "file": "zona-peruibe-imoveis-ia.html",
+          "valid": true,
+          "issues": [],
+          "size": 14389,
+          "internal_links": 19,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "zona-oeste-guaruja-imoveis-ia",
+          "file": "zona-oeste-guaruja-imoveis-ia.html",
+          "valid": true,
+          "issues": [],
+          "size": 14584,
+          "internal_links": 19,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "zona-norte-santos-imoveis-ia",
+          "file": "zona-norte-santos-imoveis-ia.html",
+          "valid": true,
+          "issues": [],
+          "size": 14551,
+          "internal_links": 19,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "zona-mongagua-imoveis-ia",
+          "file": "zona-mongagua-imoveis-ia.html",
+          "valid": true,
+          "issues": [],
+          "size": 14423,
+          "internal_links": 19,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "zona-leste-guaruja-imoveis-ia",
+          "file": "zona-leste-guaruja-imoveis-ia.html",
+          "valid": true,
+          "issues": [],
+          "size": 14584,
+          "internal_links": 19,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "zona-itapua-santos-imoveis-ia",
+          "file": "zona-itapua-santos-imoveis-ia.html",
+          "valid": true,
+          "issues": [],
+          "size": 14808,
+          "internal_links": 19,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "zona-itanhaem-imoveis-ia",
+          "file": "zona-itanhaem-imoveis-ia.html",
+          "valid": true,
+          "issues": [],
+          "size": 14423,
+          "internal_links": 19,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
     }
   ]
 }
