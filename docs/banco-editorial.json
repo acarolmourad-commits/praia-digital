@@ -85345,6 +85345,114 @@
           "has_cta": true
         }
       ]
+    },
+    {
+      "date": "2026-08-17T07:51:45.746804+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "itanhaem-itanhaem-checklist-para-locacao-de-temporada-guia-2026",
+          "file": "itanhaem-itanhaem-checklist-para-locacao-de-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1281,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "itanhaem-itanhaem-curso-de-locacao-de-temporada-guia-2026",
+          "file": "itanhaem-itanhaem-curso-de-locacao-de-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1245,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "bertioga-bertioga-guia-para-locacao-de-temporada-analise-2026",
+          "file": "bertioga-bertioga-guia-para-locacao-de-temporada-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1269,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "santos-santos-curso-de-locacao-de-temporada-guia-2026",
+          "file": "santos-santos-curso-de-locacao-de-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1227,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "praiagrande-praia-grande-curso-de-locacao-de-temporada-guia-2026",
+          "file": "praiagrande-praia-grande-curso-de-locacao-de-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1280,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "guaruja-guaruja-curso-de-locacao-de-temporada-guia-2026",
+          "file": "guaruja-guaruja-curso-de-locacao-de-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1236,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "bertioga-bertioga-checklist-para-locacao-de-temporada-guia-2026",
+          "file": "bertioga-bertioga-checklist-para-locacao-de-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1281,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "praiagrande-praia-grande-guia-para-locacao-de-temporada-analise-2026",
+          "file": "praiagrande-praia-grande-guia-para-locacao-de-temporada-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1304,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "praiagrande-praia-grande-checklist-para-locacao-de-temporada-guia-2026",
+          "file": "praiagrande-praia-grande-checklist-para-locacao-de-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1316,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "guaruja-guaruja-guia-para-locacao-de-temporada-analise-2026",
+          "file": "guaruja-guaruja-guia-para-locacao-de-temporada-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1260,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
     }
   ]
 }
