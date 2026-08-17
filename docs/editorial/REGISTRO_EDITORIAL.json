@@ -39714,5 +39714,50 @@
       "intention": "comercial",
       "status": "published"
     }
-  ]
+  ],
+  "guia-do-proprietario": {
+    "slug": "guia-do-proprietario",
+    "title": "Guia do Proprietário — Como divulgar, vender, alugar e administrar imóvel no litoral",
+    "path": "proprietarios/guia-do-proprietario.html",
+    "tipo": "proprietarios",
+    "cidade": "litoral",
+    "status": "published",
+    "data": "2026-08-16"
+  },
+  "como-publicar-seu-imovel": {
+    "slug": "como-publicar-seu-imovel",
+    "title": "Como publicar seu imóvel — passo a passo para anunciar no litoral",
+    "path": "proprietarios/como-publicar-seu-imovel.html",
+    "tipo": "proprietarios",
+    "cidade": "litoral",
+    "status": "published",
+    "data": "2026-08-16"
+  },
+  "como-divulgar-imovel-venda": {
+    "slug": "como-divulgar-imovel-venda",
+    "title": "Como divulgar seu imóvel para venda — guia para proprietários no litoral",
+    "path": "proprietarios/como-divulgar-imovel-venda.html",
+    "tipo": "proprietarios",
+    "cidade": "litoral",
+    "status": "published",
+    "data": "2026-08-16"
+  },
+  "como-divulgar-imovel-aluguel": {
+    "slug": "como-divulgar-imovel-aluguel",
+    "title": "Como divulgar seu imóvel para aluguel — guia para proprietários no litoral",
+    "path": "proprietarios/como-divulgar-imovel-aluguel.html",
+    "tipo": "proprietarios",
+    "cidade": "litoral",
+    "status": "published",
+    "data": "2026-08-16"
+  },
+  "como-anunciar-imovel-temporada": {
+    "slug": "como-anunciar-imovel-temporada",
+    "title": "Como anunciar imóvel para temporada — guia para proprietários no litoral",
+    "path": "proprietarios/como-anunciar-imovel-temporada.html",
+    "tipo": "proprietarios",
+    "cidade": "litoral",
+    "status": "published",
+    "data": "2026-08-16"
+  }
 }
