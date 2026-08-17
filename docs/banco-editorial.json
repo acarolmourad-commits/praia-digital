@@ -86433,6 +86433,114 @@
           "has_cta": true
         }
       ]
+    },
+    {
+      "date": "2026-08-17T08:51:51.091087+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "praiagrande-case-social-rapido-para-parcerias-em-praia-grande",
+          "file": "praiagrande-case-social-rapido-para-parcerias-em-praia-grande.html",
+          "valid": true,
+          "issues": [],
+          "size": 1272,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "maresias-case-social-rapido-para-parcerias-em-maresias",
+          "file": "maresias-case-social-rapido-para-parcerias-em-maresias.html",
+          "valid": true,
+          "issues": [],
+          "size": 1229,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ilhabela-case-social-rapido-para-parcerias-em-ilhabela",
+          "file": "ilhabela-case-social-rapido-para-parcerias-em-ilhabela.html",
+          "valid": true,
+          "issues": [],
+          "size": 1229,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "guaruja-case-social-rapido-para-parcerias-em-guaruja",
+          "file": "guaruja-case-social-rapido-para-parcerias-em-guaruja.html",
+          "valid": true,
+          "issues": [],
+          "size": 1218,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "bertioga-case-social-rapido-para-parcerias-em-bertioga",
+          "file": "bertioga-case-social-rapido-para-parcerias-em-bertioga.html",
+          "valid": true,
+          "issues": [],
+          "size": 1229,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "guaruja-case-barra-norte-imoveis",
+          "file": "guaruja-case-barra-norte-imoveis.html",
+          "valid": true,
+          "issues": [],
+          "size": 1302,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "maresias-maresias-marketing-digital-para-imoveis-guia-2026",
+          "file": "maresias-maresias-marketing-digital-para-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1291,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-ubatuba-marketing-digital-para-imoveis-guia-2026",
+          "file": "ubatuba-ubatuba-marketing-digital-para-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1282,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "saovicente-sao-vicente-marketing-digital-para-imoveis-guia-2026",
+          "file": "saovicente-sao-vicente-marketing-digital-para-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1317,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "saosebastiao-sao-sebastiao-marketing-digital-para-imoveis-guia-2026",
+          "file": "saosebastiao-sao-sebastiao-marketing-digital-para-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1336,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
     }
   ]
 }
