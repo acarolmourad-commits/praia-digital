@@ -4,6 +4,16 @@
   "failed": 0,
   "results": [
     {
+      "slug": "usucapiao-imoveis-litoral-sp-2026",
+      "file": "usucapiao-imoveis-litoral-sp-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 1663,
+      "internal_links": 3,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
       "slug": "acidente-imovel-litoral-responsabilidade-proprietario-2026",
       "file": "acidente-imovel-litoral-responsabilidade-proprietario-2026.html",
       "valid": true,
@@ -22,50 +32,6 @@
       "internal_links": 5,
       "in_sitemap": true,
       "has_cta": true
-    },
-    {
-      "slug": "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-12-2",
-      "file": "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-12-2.html",
-      "valid": true,
-      "issues": [],
-      "size": 1652,
-      "internal_links": 0,
-      "in_sitemap": true,
-      "has_cta": false,
-      "skipped": true
-    },
-    {
-      "slug": "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-11-2",
-      "file": "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-11-2.html",
-      "valid": true,
-      "issues": [],
-      "size": 1652,
-      "internal_links": 0,
-      "in_sitemap": true,
-      "has_cta": false,
-      "skipped": true
-    },
-    {
-      "slug": "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-12-23",
-      "file": "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-12-23.html",
-      "valid": true,
-      "issues": [],
-      "size": 1584,
-      "internal_links": 0,
-      "in_sitemap": true,
-      "has_cta": false,
-      "skipped": true
-    },
-    {
-      "slug": "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-11-23",
-      "file": "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-11-23.html",
-      "valid": true,
-      "issues": [],
-      "size": 1584,
-      "internal_links": 0,
-      "in_sitemap": true,
-      "has_cta": false,
-      "skipped": true
     },
     {
       "slug": "analise-litoral-paulista-investidores-2026",
@@ -104,6 +70,36 @@
       "issues": [],
       "size": 9772,
       "internal_links": 21,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "documentacao-compra-venda-imovel-litoral-2026",
+      "file": "documentacao-compra-venda-imovel-litoral-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 9653,
+      "internal_links": 15,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "como-financiar-imovel-litoral-2026",
+      "file": "como-financiar-imovel-litoral-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 10214,
+      "internal_links": 21,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "guia-investimento-imovel-litoral-2026",
+      "file": "guia-investimento-imovel-litoral-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 10512,
+      "internal_links": 24,
       "in_sitemap": true,
       "has_cta": true
     }

@@ -1,0 +1,13 @@
+{
+  "fixes": [
+    {
+      "slug": "usucapiao-imoveis-litoral-sp-2026",
+      "fixed": true,
+      "applied": [
+        "cta_whatsapp"
+      ]
+    }
+  ],
+  "unrecoverable": [],
+  "last_run": "2026-08-17T02:44:19.683720+00:00"
+}
