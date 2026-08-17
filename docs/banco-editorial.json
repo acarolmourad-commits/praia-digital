@@ -82356,6 +82356,244 @@
           "has_cta": true
         }
       ]
+    },
+    {
+      "date": "2026-08-17T03:18:38.557194+00:00",
+      "checked": 10,
+      "failed": 7,
+      "failed_slugs": [
+        "vistoria-imovel-litoral-contrato-locacao-2026",
+        "visita-imovel-litoral-tecnica-inspector-imovel-2026",
+        "visita-imovel-litoral-roteiro-avaliacao-2026",
+        "visita-imovel-litoral-perguntas-fazer-corretor-2026",
+        "venda-imovel-litoral-visita-pos-venda-acompanhamento-2026",
+        "venda-imovel-litoral-visita-decorada-primeira-impressao-2026",
+        "venda-imovel-litoral-staging-dicas-rapidas-2026"
+      ],
+      "results": [
+        {
+          "slug": "whatsapp-business-para-imobiliárias-automação-passo-a-passo-lote-2026-08-03-21",
+          "file": "whatsapp-business-para-imobiliárias-automação-passo-a-passo-lote-2026-08-03-21.html",
+          "valid": true,
+          "issues": [],
+          "size": 12204,
+          "internal_links": 8,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "vistoria-imovel-litoral-contrato-locacao-2026",
+          "file": "vistoria-imovel-litoral-contrato-locacao-2026.html",
+          "valid": false,
+          "issues": [
+            "missing_cta_or_whatsapp"
+          ],
+          "size": 2012,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": false
+        },
+        {
+          "slug": "visto-residencia-comprar-imovel-brasil-guia-corretor",
+          "file": "visto-residencia-comprar-imovel-brasil-guia-corretor.html",
+          "valid": true,
+          "issues": [],
+          "size": 12603,
+          "internal_links": 7,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "visita-imovel-litoral-tecnica-inspector-imovel-2026",
+          "file": "visita-imovel-litoral-tecnica-inspector-imovel-2026.html",
+          "valid": false,
+          "issues": [
+            "missing_cta_or_whatsapp"
+          ],
+          "size": 1922,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": false
+        },
+        {
+          "slug": "visita-imovel-litoral-roteiro-avaliacao-2026",
+          "file": "visita-imovel-litoral-roteiro-avaliacao-2026.html",
+          "valid": false,
+          "issues": [
+            "missing_cta_or_whatsapp"
+          ],
+          "size": 1881,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": false
+        },
+        {
+          "slug": "visita-imovel-litoral-perguntas-fazer-corretor-2026",
+          "file": "visita-imovel-litoral-perguntas-fazer-corretor-2026.html",
+          "valid": false,
+          "issues": [
+            "missing_cta_or_whatsapp"
+          ],
+          "size": 1935,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": false
+        },
+        {
+          "slug": "vender-imovel-rapido-litoral-2026",
+          "file": "vender-imovel-rapido-litoral-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 11571,
+          "internal_links": 8,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "venda-imovel-litoral-visita-pos-venda-acompanhamento-2026",
+          "file": "venda-imovel-litoral-visita-pos-venda-acompanhamento-2026.html",
+          "valid": false,
+          "issues": [
+            "missing_cta_or_whatsapp"
+          ],
+          "size": 1882,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": false
+        },
+        {
+          "slug": "venda-imovel-litoral-visita-decorada-primeira-impressao-2026",
+          "file": "venda-imovel-litoral-visita-decorada-primeira-impressao-2026.html",
+          "valid": false,
+          "issues": [
+            "missing_cta_or_whatsapp"
+          ],
+          "size": 1981,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": false
+        },
+        {
+          "slug": "venda-imovel-litoral-staging-dicas-rapidas-2026",
+          "file": "venda-imovel-litoral-staging-dicas-rapidas-2026.html",
+          "valid": false,
+          "issues": [
+            "missing_cta_or_whatsapp"
+          ],
+          "size": 1859,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": false
+        }
+      ]
+    },
+    {
+      "date": "2026-08-17T03:19:35.797507+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "venda-imovel-litoral-staging-dicas-rapidas-2026",
+          "file": "venda-imovel-litoral-staging-dicas-rapidas-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2176,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "venda-imovel-litoral-visita-decorada-primeira-impressao-2026",
+          "file": "venda-imovel-litoral-visita-decorada-primeira-impressao-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2313,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "venda-imovel-litoral-visita-pos-venda-acompanhamento-2026",
+          "file": "venda-imovel-litoral-visita-pos-venda-acompanhamento-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2192,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "visita-imovel-litoral-perguntas-fazer-corretor-2026",
+          "file": "visita-imovel-litoral-perguntas-fazer-corretor-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2258,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "visita-imovel-litoral-roteiro-avaliacao-2026",
+          "file": "visita-imovel-litoral-roteiro-avaliacao-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2198,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "visita-imovel-litoral-tecnica-inspector-imovel-2026",
+          "file": "visita-imovel-litoral-tecnica-inspector-imovel-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2252,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "vistoria-imovel-litoral-contrato-locacao-2026",
+          "file": "vistoria-imovel-litoral-contrato-locacao-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2350,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "whatsapp-business-para-imobiliárias-automação-passo-a-passo-lote-2026-08-03-21",
+          "file": "whatsapp-business-para-imobiliárias-automação-passo-a-passo-lote-2026-08-03-21.html",
+          "valid": true,
+          "issues": [],
+          "size": 12204,
+          "internal_links": 8,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "visto-residencia-comprar-imovel-brasil-guia-corretor",
+          "file": "visto-residencia-comprar-imovel-brasil-guia-corretor.html",
+          "valid": true,
+          "issues": [],
+          "size": 12603,
+          "internal_links": 7,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "vender-imovel-rapido-litoral-2026",
+          "file": "vender-imovel-rapido-litoral-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 11571,
+          "internal_links": 8,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
     }
   ]
 }

@@ -4,8 +4,58 @@
   "failed": 0,
   "results": [
     {
-      "slug": "antecipar-venda-imovel-litoral-preparar-2026",
-      "file": "antecipar-venda-imovel-litoral-preparar-2026.html",
+      "slug": "venda-imovel-litoral-staging-dicas-rapidas-2026",
+      "file": "venda-imovel-litoral-staging-dicas-rapidas-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 2176,
+      "internal_links": 3,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "venda-imovel-litoral-visita-decorada-primeira-impressao-2026",
+      "file": "venda-imovel-litoral-visita-decorada-primeira-impressao-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 2313,
+      "internal_links": 3,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "venda-imovel-litoral-visita-pos-venda-acompanhamento-2026",
+      "file": "venda-imovel-litoral-visita-pos-venda-acompanhamento-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 2192,
+      "internal_links": 3,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "visita-imovel-litoral-perguntas-fazer-corretor-2026",
+      "file": "visita-imovel-litoral-perguntas-fazer-corretor-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 2258,
+      "internal_links": 3,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "visita-imovel-litoral-roteiro-avaliacao-2026",
+      "file": "visita-imovel-litoral-roteiro-avaliacao-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 2198,
+      "internal_links": 3,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "visita-imovel-litoral-tecnica-inspector-imovel-2026",
+      "file": "visita-imovel-litoral-tecnica-inspector-imovel-2026.html",
       "valid": true,
       "issues": [],
       "size": 2252,
@@ -14,92 +64,42 @@
       "has_cta": true
     },
     {
-      "slug": "imovel-litoral-condominio-area-comum-regras-2026",
-      "file": "imovel-litoral-condominio-area-comum-regras-2026.html",
+      "slug": "vistoria-imovel-litoral-contrato-locacao-2026",
+      "file": "vistoria-imovel-litoral-contrato-locacao-2026.html",
       "valid": true,
       "issues": [],
-      "size": 2174,
+      "size": 2350,
       "internal_links": 3,
       "in_sitemap": true,
       "has_cta": true
     },
     {
-      "slug": "compra-imovel-litoral-imovel-reformado-negociacao-2026",
-      "file": "compra-imovel-litoral-imovel-reformado-negociacao-2026.html",
+      "slug": "whatsapp-business-para-imobiliárias-automação-passo-a-passo-lote-2026-08-03-21",
+      "file": "whatsapp-business-para-imobiliárias-automação-passo-a-passo-lote-2026-08-03-21.html",
       "valid": true,
       "issues": [],
-      "size": 2263,
-      "internal_links": 3,
+      "size": 12204,
+      "internal_links": 8,
       "in_sitemap": true,
       "has_cta": true
     },
     {
-      "slug": "venda-imovel-litoral-tempo-venda-mercado-2026",
-      "file": "venda-imovel-litoral-tempo-venda-mercado-2026.html",
+      "slug": "visto-residencia-comprar-imovel-brasil-guia-corretor",
+      "file": "visto-residencia-comprar-imovel-brasil-guia-corretor.html",
       "valid": true,
       "issues": [],
-      "size": 2157,
-      "internal_links": 3,
+      "size": 12603,
+      "internal_links": 7,
       "in_sitemap": true,
       "has_cta": true
     },
     {
-      "slug": "imovel-litoral-norma-barulho-condominio-2026",
-      "file": "imovel-litoral-norma-barulho-condominio-2026.html",
+      "slug": "vender-imovel-rapido-litoral-2026",
+      "file": "vender-imovel-rapido-litoral-2026.html",
       "valid": true,
       "issues": [],
-      "size": 2161,
-      "internal_links": 3,
-      "in_sitemap": true,
-      "has_cta": true
-    },
-    {
-      "slug": "imovel-litoral-contrato-aluguel-modelo-2026",
-      "file": "imovel-litoral-contrato-aluguel-modelo-2026.html",
-      "valid": true,
-      "issues": [],
-      "size": 2101,
-      "internal_links": 3,
-      "in_sitemap": true,
-      "has_cta": true
-    },
-    {
-      "slug": "usucapiao-imoveis-litoral-sp-2026",
-      "file": "usucapiao-imoveis-litoral-sp-2026.html",
-      "valid": true,
-      "issues": [],
-      "size": 1663,
-      "internal_links": 3,
-      "in_sitemap": true,
-      "has_cta": true
-    },
-    {
-      "slug": "acidente-imovel-litoral-responsabilidade-proprietario-2026",
-      "file": "acidente-imovel-litoral-responsabilidade-proprietario-2026.html",
-      "valid": true,
-      "issues": [],
-      "size": 2575,
-      "internal_links": 5,
-      "in_sitemap": true,
-      "has_cta": true
-    },
-    {
-      "slug": "ab-testing-anuncios-imobiliarios-locais-litoral-2026",
-      "file": "ab-testing-anuncios-imobiliarios-locais-litoral-2026.html",
-      "valid": true,
-      "issues": [],
-      "size": 2831,
-      "internal_links": 5,
-      "in_sitemap": true,
-      "has_cta": true
-    },
-    {
-      "slug": "analise-litoral-paulista-investidores-2026",
-      "file": "analise-litoral-paulista-investidores-2026.html",
-      "valid": true,
-      "issues": [],
-      "size": 9401,
-      "internal_links": 15,
+      "size": 11571,
+      "internal_links": 8,
       "in_sitemap": true,
       "has_cta": true
     }
