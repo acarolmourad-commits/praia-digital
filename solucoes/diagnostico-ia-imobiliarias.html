@@ -176,9 +176,72 @@ footer { text-align: center; padding: 2rem 1rem; color: #64748b; font-size: 0.85
       <p>Se não fizer sentido, você sai com um entendimento melhor do que a IA pode e não pode fazer para o seu caso.</p>
     </section>
 
+    <section class="section">
+      <h2>Formulário de diagnóstico</h2>
+      <p>Preencha o formulário abaixo. Esta é uma demonstração estruturada: o envio ainda depende de processo manual, mas já organiza a qualificação inicial.</p>
+      <form style="max-width: 700px; margin: 1rem auto; display: grid; gap: 1rem;" onsubmit="event.preventDefault(); alert('Formulário enviado! Em breve entraremos em contato pelo WhatsApp ou e-mail.');">
+        <div class="grid grid-2">
+          <input type="text" placeholder="Nome" required style="padding: 0.7rem; border-radius: 8px; border: 1px solid #ccc;">
+          <input type="text" placeholder="Empresa" required style="padding: 0.7rem; border-radius: 8px; border: 1px solid #ccc;">
+        </div>
+        <div class="grid grid-2">
+          <input type="text" placeholder="Cidade/região" required style="padding: 0.7rem; border-radius: 8px; border: 1px solid #ccc;">
+          <input type="text" placeholder="Cargo" style="padding: 0.7rem; border-radius: 8px; border: 1px solid #ccc;">
+        </div>
+        <div class="grid grid-2">
+          <select required style="padding: 0.7rem; border-radius: 8px; border: 1px solid #ccc;">
+            <option value="">Tamanho da operação</option>
+            <option>Pequena</option>
+            <option>Média</option>
+            <option>Grande</option>
+            <option>Corretor autônomo</option>
+          </select>
+          <select required style="padding: 0.7rem; border-radius: 8px; border: 1px solid #ccc;">
+            <option value="">Tipo de negócio</option>
+            <option>Imobiliária</option>
+            <option>Corretor autônomo</option>
+            <option>Gestor</option>
+            <option>Administrador</option>
+            <option>Temporada</option>
+          </select>
+        </div>
+        <div class="grid grid-2">
+          <select required style="padding: 0.7rem; border-radius: 8px; border: 1px solid #ccc;">
+            <option value="">Principal desafio</option>
+            <option>Atendimento</option>
+            <option>Vendas</option>
+            <option>Locação</option>
+            <option>Temporada</option>
+            <option>Organização</option>
+            <option>Marketing</option>
+            <option>Captação</option>
+          </select>
+          <select required style="padding: 0.7rem; border-radius: 8px; border: 1px solid #ccc;">
+            <option value="">Área prioritária</option>
+            <option>Atendimento a interessados</option>
+            <option>Atendimento a proprietários</option>
+            <option>Qualificação de leads</option>
+            <option>Conhecimento interno</option>
+            <option>Marketing</option>
+          </select>
+        </div>
+        <input type="text" placeholder="Volume aproximado de atendimento por dia (ex: 10-20 contatos)" style="padding: 0.7rem; border-radius: 8px; border: 1px solid #ccc;">
+        <div class="grid grid-2">
+          <input type="tel" placeholder="WhatsApp" required style="padding: 0.7rem; border-radius: 8px; border: 1px solid #ccc;">
+          <input type="email" placeholder="E-mail" style="padding: 0.7rem; border-radius: 8px; border: 1px solid #ccc;">
+        </div>
+        <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+          <input type="checkbox" required>
+          Concordo em compartilhar esses dados para contato comercial da Praia Digital. Não compartilhamos dados com terceiros.
+        </label>
+        <button type="submit" class="btn btn-purple">Enviar solicitação</button>
+        <p class="updated">Fluxo manual: recebemos o formulário e respondemos em horário comercial.</p>
+      </form>
+    </section>
+
     <section class="whatsapp-box">
-      <h2>Solicitar diagnóstico</h2>
-      <p>Envie sua solicitação pelo WhatsApp. Não compartilhamos dados com terceiros.</p>
+      <h2>Solicitar diagnóstico pelo WhatsApp</h2>
+      <p>Prefere enviar diretamente? Clique no botão abaixo e envie seus dados.</p>
       <a class="btn btn-purple" href="https://wa.me/5511954346288?text=Olá!%20Quero%20um%20diagnóstico%20de%20IA%20para%20minha%20imobiliária.%20Nome:%20[seu%20nome]%20/%20Operação:%20[imobiliária/corretor]%20/%20Cidade:%20[saiba%20mais]" rel="noopener">Abrir WhatsApp</a>
       <p class="updated">Atendimento humano. Resposta em horário comercial.</p>
     </section>
