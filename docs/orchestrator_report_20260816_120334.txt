@@ -1,0 +1,39 @@
+============================================================
+ORQUESTRADOR CENTRAL — RELATÓRIO
+Data: 2026-08-16T12:03:34.453805+00:00
+============================================================
+
+DESCOBERTA:
+  - ok: Descoberta: 12 oportunidades
+    * [news_discovery] Mercado imobiliário da Baixada Santista acelera em março/2026 com +37,56% nas vendas e +47,88% nas locações
+    * [news_discovery] Residencial Novo Valongo: 1.088 apartamentos, isenção de IPTU por 5 anos, isenção de ITBI, Minha Casa Minha Vida
+    * [news_discovery] Monitoramento contínuo de notícias ativo
+    * [add_links] ?
+    * [seo_audit] 6 artigos sem schema
+
+DECISÕES:
+  - ok: Decisões: 10 aprovadas, 0 ignoradas
+    Aprovadas: 10, Ignoradas: 0
+
+PIPELINE:
+  - Pipeline: 10 executados, 9 validados
+
+MANUTENÇÃO:
+  - Manutenção: 4 tarefas executadas
+    * sitemap: True
+    * registry_counts: True
+    * orphan_pages: True
+    * git: True
+
+PORTAS HUMANAS ATIVAS:
+  - strategy_change
+  - batch_147
+  - next_queue
+  - structural_change
+  - monetization
+  - reputation_risk
+  - large_expansion
+  - adsense
+
+PRÓXIMA EXECUÇÃO: aguardando agendamento
+============================================================
