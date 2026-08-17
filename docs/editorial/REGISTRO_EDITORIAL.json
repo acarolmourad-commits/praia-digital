@@ -39779,5 +39779,15 @@
     "status": "published",
     "data": "2026-08-16",
     "nota": "Página pilar de IA para imobiliárias. Posicionamento: agente personalizado, não chatbot genérico."
+  },
+  "diagnostico-ia-imobiliarias": {
+    "slug": "diagnostico-ia-imobiliarias",
+    "title": "Diagnóstico Gratuito — IA para Imobiliárias | Praia Digital",
+    "path": "solucoes/diagnostico-ia-imobiliarias.html",
+    "tipo": "solucoes",
+    "cidade": "brasil",
+    "status": "published",
+    "data": "2026-08-16",
+    "nota": "Página de conversão do funil B2B. CTA: WhatsApp para diagnóstico gratuito."
   }
 }
