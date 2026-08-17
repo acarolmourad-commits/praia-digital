@@ -82757,6 +82757,159 @@
           "has_cta": true
         }
       ]
+    },
+    {
+      "date": "2026-08-17T02:22:36.633896+00:00",
+      "checked": 10,
+      "failed": 10,
+      "failed_slugs": [
+        "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-12-2",
+        "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-11-2",
+        "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-12-23",
+        "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-11-23",
+        "acidente-imovel-litoral-responsabilidade-proprietario-2026",
+        "ab-testing-anuncios-imobiliarios-locais-litoral-2026",
+        "analise-litoral-paulista-investidores-2026",
+        "temporada-litoral-paulista-2026-2027",
+        "noticia-temporada-2026-2027-mercado-litoral-2026-08-16",
+        "mercado-imobiliario-litoral-paulista-2026"
+      ],
+      "results": [
+        {
+          "slug": "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-12-2",
+          "file": "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-12-2.html",
+          "valid": false,
+          "issues": [
+            "missing_from_sitemap",
+            "insufficient_internal_links:0",
+            "missing_cta_or_whatsapp",
+            "missing_description"
+          ],
+          "size": 1652,
+          "internal_links": 0,
+          "in_sitemap": false,
+          "has_cta": false
+        },
+        {
+          "slug": "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-11-2",
+          "file": "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-11-2.html",
+          "valid": false,
+          "issues": [
+            "missing_from_sitemap",
+            "insufficient_internal_links:0",
+            "missing_cta_or_whatsapp",
+            "missing_description"
+          ],
+          "size": 1652,
+          "internal_links": 0,
+          "in_sitemap": false,
+          "has_cta": false
+        },
+        {
+          "slug": "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-12-23",
+          "file": "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-12-23.html",
+          "valid": false,
+          "issues": [
+            "missing_from_sitemap",
+            "insufficient_internal_links:0",
+            "missing_cta_or_whatsapp",
+            "missing_description"
+          ],
+          "size": 1584,
+          "internal_links": 0,
+          "in_sitemap": false,
+          "has_cta": false
+        },
+        {
+          "slug": "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-11-23",
+          "file": "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-11-23.html",
+          "valid": false,
+          "issues": [
+            "missing_from_sitemap",
+            "insufficient_internal_links:0",
+            "missing_cta_or_whatsapp",
+            "missing_description"
+          ],
+          "size": 1584,
+          "internal_links": 0,
+          "in_sitemap": false,
+          "has_cta": false
+        },
+        {
+          "slug": "acidente-imovel-litoral-responsabilidade-proprietario-2026",
+          "file": "acidente-imovel-litoral-responsabilidade-proprietario-2026.html",
+          "valid": false,
+          "issues": [
+            "insufficient_internal_links:0",
+            "missing_cta_or_whatsapp"
+          ],
+          "size": 1956,
+          "internal_links": 0,
+          "in_sitemap": true,
+          "has_cta": false
+        },
+        {
+          "slug": "ab-testing-anuncios-imobiliarios-locais-litoral-2026",
+          "file": "ab-testing-anuncios-imobiliarios-locais-litoral-2026.html",
+          "valid": false,
+          "issues": [
+            "insufficient_internal_links:0",
+            "missing_cta_or_whatsapp"
+          ],
+          "size": 2223,
+          "internal_links": 0,
+          "in_sitemap": true,
+          "has_cta": false
+        },
+        {
+          "slug": "analise-litoral-paulista-investidores-2026",
+          "file": "analise-litoral-paulista-investidores-2026.html",
+          "valid": false,
+          "issues": [
+            "insufficient_internal_links:0"
+          ],
+          "size": 9401,
+          "internal_links": 0,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "temporada-litoral-paulista-2026-2027",
+          "file": "temporada-litoral-paulista-2026-2027.html",
+          "valid": false,
+          "issues": [
+            "insufficient_internal_links:0"
+          ],
+          "size": 9322,
+          "internal_links": 0,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "noticia-temporada-2026-2027-mercado-litoral-2026-08-16",
+          "file": "noticia-temporada-2026-2027-mercado-litoral-2026-08-16.html",
+          "valid": false,
+          "issues": [
+            "insufficient_internal_links:0"
+          ],
+          "size": 9631,
+          "internal_links": 0,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "mercado-imobiliario-litoral-paulista-2026",
+          "file": "mercado-imobiliario-litoral-paulista-2026.html",
+          "valid": false,
+          "issues": [
+            "insufficient_internal_links:0"
+          ],
+          "size": 9772,
+          "internal_links": 0,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
     }
   ]
 }
