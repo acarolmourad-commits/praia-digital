@@ -84697,6 +84697,114 @@
           "has_cta": true
         }
       ]
+    },
+    {
+      "date": "2026-08-17T07:06:47.593428+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "peruibe-peruibe-guia-para-compra-de-imoveis-analise-2026",
+          "file": "peruibe-peruibe-guia-para-compra-de-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1241,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "mongagua-mongagua-guia-para-compra-de-imoveis-analise-2026",
+          "file": "mongagua-mongagua-guia-para-compra-de-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1250,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "bertioga-bertioga-guia-para-compra-de-imoveis-analise-2026",
+          "file": "bertioga-bertioga-guia-para-compra-de-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1250,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "praiagrande-praia-grande-guia-para-compra-de-imoveis-analise-2026",
+          "file": "praiagrande-praia-grande-guia-para-compra-de-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1285,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "guaruja-guaruja-guia-para-compra-de-imoveis-analise-2026",
+          "file": "guaruja-guaruja-guia-para-compra-de-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1241,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "santos-santos-guia-para-compra-de-imoveis-analise-2026",
+          "file": "santos-santos-guia-para-compra-de-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1232,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "guaruja-guaruja-automacao-imobiliaria-analise-2026",
+          "file": "guaruja-guaruja-automacao-imobiliaria-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1202,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "saovicente-sao-vicente-locacao-de-temporada-analise-2026",
+          "file": "saovicente-sao-vicente-locacao-de-temporada-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1236,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ilhabela-ilhabela-locacao-de-temporada-analise-2026",
+          "file": "ilhabela-ilhabela-locacao-de-temporada-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1210,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "bertioga-bertioga-locacao-de-temporada-analise-2026",
+          "file": "bertioga-bertioga-locacao-de-temporada-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1210,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
     }
   ]
 }
