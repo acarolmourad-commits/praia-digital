@@ -1,0 +1,316 @@
+{
+  "generated_at": "2026-08-17T06:46:28.413471",
+  "total_signals": 17,
+  "changed": 17,
+  "unchanged": 0,
+  "report": [
+    {
+      "pair": [
+        "blog\\atrair-compradores-estrangeiros-litoral-paulista-2026.html",
+        "blog\\como-atrair-estrangeiros-litoral-2026.html"
+      ],
+      "canonical": "blog\\atrair-compradores-estrangeiros-litoral-paulista-2026.html",
+      "duplicate": "blog\\como-atrair-estrangeiros-litoral-2026.html",
+      "score": 0.94,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade",
+      "action": "canonicalized"
+    },
+    {
+      "pair": [
+        "blog\\automacao-2026-visitas-corretores-2026-07-16.html",
+        "blog\\automacao-visitas-corretores-2026-2026-08-02.html"
+      ],
+      "canonical": "blog\\automacao-2026-visitas-corretores-2026-07-16.html",
+      "duplicate": "blog\\automacao-visitas-corretores-2026-2026-08-02.html",
+      "score": 0.93,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade",
+      "action": "canonicalized"
+    },
+    {
+      "pair": [
+        "blog\\automacao-follow-up-corretores-litoral-2026.html",
+        "blog\\automacao-followup-corretores-litoral-2026.html"
+      ],
+      "canonical": "blog\\automacao-followup-corretores-litoral-2026.html",
+      "duplicate": "blog\\automacao-follow-up-corretores-litoral-2026.html",
+      "score": 0.9,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade",
+      "action": "canonicalized"
+    },
+    {
+      "pair": [
+        "blog\\automacao-follow-up-corretores-litoral-2026.html",
+        "blog\\automacao-followup-post-visita-litoral-2026.html"
+      ],
+      "canonical": "blog\\automacao-follow-up-corretores-litoral-2026.html",
+      "duplicate": "blog\\automacao-followup-post-visita-litoral-2026.html",
+      "score": 0.9,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade",
+      "action": "canonicalized"
+    },
+    {
+      "pair": [
+        "blog\\automacao-followup-corretores-litoral-2026.html",
+        "blog\\automacao-followup-post-visita-litoral-2026.html"
+      ],
+      "canonical": "blog\\automacao-followup-corretores-litoral-2026.html",
+      "duplicate": "blog\\automacao-followup-post-visita-litoral-2026.html",
+      "score": 1.0,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade",
+      "action": "canonicalized"
+    },
+    {
+      "pair": [
+        "blog\\automacao-imobiliária-2026-vendas-2026-07-22.html",
+        "blog\\automacao-leads-2026-vendas-2026-08-04.html"
+      ],
+      "canonical": "blog\\automacao-imobiliária-2026-vendas-2026-07-22.html",
+      "duplicate": "blog\\automacao-leads-2026-vendas-2026-08-04.html",
+      "score": 0.91,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade",
+      "action": "canonicalized"
+    },
+    {
+      "pair": [
+        "blog\\avaliacao-automatica-preco-mercado-litoral-2026.html",
+        "blog\\avaliacao-preco-mercado-litoral.html"
+      ],
+      "canonical": "blog\\avaliacao-preco-mercado-litoral.html",
+      "duplicate": "blog\\avaliacao-automatica-preco-mercado-litoral-2026.html",
+      "score": 0.91,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade",
+      "action": "canonicalized"
+    },
+    {
+      "pair": [
+        "blog\\avaliacao-imoveis-IA-litoral-comparativo-metodos-2026.html",
+        "blog\\avaliacao-imoveis-litoral-guia-profissional.html"
+      ],
+      "canonical": "blog\\avaliacao-imoveis-IA-litoral-comparativo-metodos-2026.html",
+      "duplicate": "blog\\avaliacao-imoveis-litoral-guia-profissional.html",
+      "score": 0.9,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade",
+      "action": "canonicalized"
+    },
+    {
+      "pair": [
+        "blog\\bertioga-imoveis-temporada-oportunidades-2026.html",
+        "blog\\ilhabela-imoveis-temporada-oportunidades-2026.html"
+      ],
+      "canonical": "blog\\ilhabela-imoveis-temporada-oportunidades-2026.html",
+      "duplicate": "blog\\bertioga-imoveis-temporada-oportunidades-2026.html",
+      "score": 0.9,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade",
+      "action": "canonicalized"
+    },
+    {
+      "pair": [
+        "blog\\captacao-2026-imóveis-leads-2026-07-24.html",
+        "blog\\captacao-imóveis-leads-2026-2026-08-01.html"
+      ],
+      "canonical": "blog\\captacao-2026-imóveis-leads-2026-07-24.html",
+      "duplicate": "blog\\captacao-imóveis-leads-2026-2026-08-01.html",
+      "score": 0.9,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade",
+      "action": "canonicalized"
+    },
+    {
+      "pair": [
+        "blog\\captacao-imoveis-sem-custo-litoral-2026.html",
+        "blog\\como-captar-imoveis-baratos-2026.html"
+      ],
+      "canonical": "blog\\como-captar-imoveis-baratos-2026.html",
+      "duplicate": "blog\\captacao-imoveis-sem-custo-litoral-2026.html",
+      "score": 0.91,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade",
+      "action": "canonicalized"
+    },
+    {
+      "pair": [
+        "blog\\captacao-imóveis-imobiliária-2026-2026-08-02.html",
+        "blog\\captacao-imóveis-imobiliária-leads-2026-08-06.html"
+      ],
+      "canonical": "blog\\captacao-imóveis-imobiliária-2026-2026-08-02.html",
+      "duplicate": "blog\\captacao-imóveis-imobiliária-leads-2026-08-06.html",
+      "score": 0.92,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade",
+      "action": "canonicalized"
+    },
+    {
+      "pair": [
+        "blog\\chatbot-imobiliarias-litoral-paulista-2026.html",
+        "blog\\crm-imobiliaria-litoral-2026.html"
+      ],
+      "canonical": "blog\\chatbot-imobiliarias-litoral-paulista-2026.html",
+      "duplicate": "blog\\crm-imobiliaria-litoral-2026.html",
+      "score": 0.91,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade",
+      "action": "canonicalized"
+    },
+    {
+      "pair": [
+        "blog\\chatbot-imobiliarias-litoral-paulista-2026.html",
+        "blog\\crm-imobiliarias-litoral-2026.html"
+      ],
+      "canonical": "blog\\chatbot-imobiliarias-litoral-paulista-2026.html",
+      "duplicate": "blog\\crm-imobiliarias-litoral-2026.html",
+      "score": 0.92,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade",
+      "action": "canonicalized"
+    },
+    {
+      "pair": [
+        "blog\\checklist-captacao-imoveis-litoral.html",
+        "blog\\checklist-rapido-captacao-imoveis-litoral-2026.html"
+      ],
+      "canonical": "blog\\checklist-rapido-captacao-imoveis-litoral-2026.html",
+      "duplicate": "blog\\checklist-captacao-imoveis-litoral.html",
+      "score": 0.92,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade",
+      "action": "canonicalized"
+    },
+    {
+      "pair": [
+        "blog\\checklist-conversao-imoveis-litoral-2026.html",
+        "blog\\checklist-visita-imoveis-litoral-2026.html"
+      ],
+      "canonical": "blog\\checklist-conversao-imoveis-litoral-2026.html",
+      "duplicate": "blog\\checklist-visita-imoveis-litoral-2026.html",
+      "score": 0.91,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade",
+      "action": "canonicalized"
+    },
+    {
+      "pair": [
+        "blog\\como-escolher-imovel-temporada-litoral-paulista-2026.html",
+        "blog\\passo-a-passo-escolher-imovel-temporada-litoral-paulista-2026.html"
+      ],
+      "canonical": "blog\\passo-a-passo-escolher-imovel-temporada-litoral-paulista-2026.html",
+      "duplicate": "blog\\como-escolher-imovel-temporada-litoral-paulista-2026.html",
+      "score": 0.96,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade",
+      "action": "canonicalized"
+    }
+  ],
+  "changed_entries": [
+    {
+      "duplicate": "blog\\como-atrair-estrangeiros-litoral-2026.html",
+      "canonical": "blog\\atrair-compradores-estrangeiros-litoral-paulista-2026.html",
+      "canonical_url": "https://praia.digital/blog/atrair-compradores-estrangeiros-litoral-paulista-2026.html",
+      "score": 0.94,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
+    },
+    {
+      "duplicate": "blog\\automacao-visitas-corretores-2026-2026-08-02.html",
+      "canonical": "blog\\automacao-2026-visitas-corretores-2026-07-16.html",
+      "canonical_url": "https://praia.digital/blog/automacao-2026-visitas-corretores-2026-07-16.html",
+      "score": 0.93,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
+    },
+    {
+      "duplicate": "blog\\automacao-follow-up-corretores-litoral-2026.html",
+      "canonical": "blog\\automacao-followup-corretores-litoral-2026.html",
+      "canonical_url": "https://praia.digital/blog/automacao-followup-corretores-litoral-2026.html",
+      "score": 0.9,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
+    },
+    {
+      "duplicate": "blog\\automacao-followup-post-visita-litoral-2026.html",
+      "canonical": "blog\\automacao-follow-up-corretores-litoral-2026.html",
+      "canonical_url": "https://praia.digital/blog/automacao-follow-up-corretores-litoral-2026.html",
+      "score": 0.9,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
+    },
+    {
+      "duplicate": "blog\\automacao-followup-post-visita-litoral-2026.html",
+      "canonical": "blog\\automacao-followup-corretores-litoral-2026.html",
+      "canonical_url": "https://praia.digital/blog/automacao-followup-corretores-litoral-2026.html",
+      "score": 1.0,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
+    },
+    {
+      "duplicate": "blog\\automacao-leads-2026-vendas-2026-08-04.html",
+      "canonical": "blog\\automacao-imobiliária-2026-vendas-2026-07-22.html",
+      "canonical_url": "https://praia.digital/blog/automacao-imobiliária-2026-vendas-2026-07-22.html",
+      "score": 0.91,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
+    },
+    {
+      "duplicate": "blog\\avaliacao-automatica-preco-mercado-litoral-2026.html",
+      "canonical": "blog\\avaliacao-preco-mercado-litoral.html",
+      "canonical_url": "https://praia.digital/blog/avaliacao-preco-mercado-litoral.html",
+      "score": 0.91,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
+    },
+    {
+      "duplicate": "blog\\avaliacao-imoveis-litoral-guia-profissional.html",
+      "canonical": "blog\\avaliacao-imoveis-IA-litoral-comparativo-metodos-2026.html",
+      "canonical_url": "https://praia.digital/blog/avaliacao-imoveis-IA-litoral-comparativo-metodos-2026.html",
+      "score": 0.9,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
+    },
+    {
+      "duplicate": "blog\\bertioga-imoveis-temporada-oportunidades-2026.html",
+      "canonical": "blog\\ilhabela-imoveis-temporada-oportunidades-2026.html",
+      "canonical_url": "https://praia.digital/blog/ilhabela-imoveis-temporada-oportunidades-2026.html",
+      "score": 0.9,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
+    },
+    {
+      "duplicate": "blog\\captacao-imóveis-leads-2026-2026-08-01.html",
+      "canonical": "blog\\captacao-2026-imóveis-leads-2026-07-24.html",
+      "canonical_url": "https://praia.digital/blog/captacao-2026-imóveis-leads-2026-07-24.html",
+      "score": 0.9,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
+    },
+    {
+      "duplicate": "blog\\captacao-imoveis-sem-custo-litoral-2026.html",
+      "canonical": "blog\\como-captar-imoveis-baratos-2026.html",
+      "canonical_url": "https://praia.digital/blog/como-captar-imoveis-baratos-2026.html",
+      "score": 0.91,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
+    },
+    {
+      "duplicate": "blog\\captacao-imóveis-imobiliária-leads-2026-08-06.html",
+      "canonical": "blog\\captacao-imóveis-imobiliária-2026-2026-08-02.html",
+      "canonical_url": "https://praia.digital/blog/captacao-imóveis-imobiliária-2026-2026-08-02.html",
+      "score": 0.92,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
+    },
+    {
+      "duplicate": "blog\\crm-imobiliaria-litoral-2026.html",
+      "canonical": "blog\\chatbot-imobiliarias-litoral-paulista-2026.html",
+      "canonical_url": "https://praia.digital/blog/chatbot-imobiliarias-litoral-paulista-2026.html",
+      "score": 0.91,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
+    },
+    {
+      "duplicate": "blog\\crm-imobiliarias-litoral-2026.html",
+      "canonical": "blog\\chatbot-imobiliarias-litoral-paulista-2026.html",
+      "canonical_url": "https://praia.digital/blog/chatbot-imobiliarias-litoral-paulista-2026.html",
+      "score": 0.92,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
+    },
+    {
+      "duplicate": "blog\\checklist-captacao-imoveis-litoral.html",
+      "canonical": "blog\\checklist-rapido-captacao-imoveis-litoral-2026.html",
+      "canonical_url": "https://praia.digital/blog/checklist-rapido-captacao-imoveis-litoral-2026.html",
+      "score": 0.92,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
+    },
+    {
+      "duplicate": "blog\\checklist-visita-imoveis-litoral-2026.html",
+      "canonical": "blog\\checklist-conversao-imoveis-litoral-2026.html",
+      "canonical_url": "https://praia.digital/blog/checklist-conversao-imoveis-litoral-2026.html",
+      "score": 0.91,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
+    },
+    {
+      "duplicate": "blog\\como-escolher-imovel-temporada-litoral-paulista-2026.html",
+      "canonical": "blog\\passo-a-passo-escolher-imovel-temporada-litoral-paulista-2026.html",
+      "canonical_url": "https://praia.digital/blog/passo-a-passo-escolher-imovel-temporada-litoral-paulista-2026.html",
+      "score": 0.96,
+      "reason": "Títulos muito similares com mesma intenção, cluster e cidade"
+    }
+  ]
+}
