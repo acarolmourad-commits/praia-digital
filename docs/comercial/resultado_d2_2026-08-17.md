@@ -6,12 +6,12 @@ Horário: 09:00
 
 | lead_id | canal | enviado_em | resposta | tipo_resposta | servico_interesse | valor_potencial | estagio | proxima_acao | responsavel | objeção |
 |---------|-------|------------|----------|---------------|-------------------|-----------------|---------|--------------|-------------|---------|
-| 9 | OLX/WhatsApp | | | | | | | | | |
-| 11 | OLX/WhatsApp | | | | | | | | | |
-| 14 | Instagram/WhatsApp | | | | | | | | | |
-| 15 | Facebook/WhatsApp | | | | | | | | | |
-| 27 | Instagram/WhatsApp | | | | | | | | | |
-| 29 | Facebook/WhatsApp | | | | | | | | | |
+| 9 | OLX | 2026-08-17 | | | | | | | | | OLX/WhatsApp | | | | | | | | | |
+| 11 | OLX | 2026-08-17 | | | | | | | | | OLX/WhatsApp | | | | | | | | | |
+| 14 | Instagram | 2026-08-17 | | | | | | | | | Instagram/WhatsApp | | | | | | | | | |
+| 15 | Facebook | 2026-08-17 | | | | | | | | | Facebook/WhatsApp | | | | | | | | | |
+| 27 | Instagram | 2026-08-17 | | | | | | | | | Instagram/WhatsApp | | | | | | | | | |
+| 29 | Facebook | 2026-08-17 | | | | | | | | | Facebook/WhatsApp | | | | | | | | | |
 
 ## Classificação pós-D2
 
