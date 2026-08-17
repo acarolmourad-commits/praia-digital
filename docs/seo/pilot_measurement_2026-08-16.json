@@ -1,0 +1,98 @@
+{
+  "audit_date": "2026-08-16",
+  "total_pages": 15,
+  "categories": {
+    "proprietarios": 5,
+    "portal_vivo": 1,
+    "ia": 2,
+    "blog": 7
+  },
+  "seo_audit": {
+    "pass": 15,
+    "ajustar": 0,
+    "critico": 0
+  },
+  "quality_audit": {
+    "excelente": 15,
+    "bom": 0,
+    "precisa_melhoria": 0,
+    "raso": 0,
+    "duplicado": 0,
+    "indeterminado": 0
+  },
+  "conversion": {
+    "cta_correto": 8,
+    "cta_ausente": 7,
+    "cta_inadequado": 0,
+    "cta_excessivo": 0
+  },
+  "portal_vivo": {
+    "santos_agora": "PRONTO_PARA_REPLICAR",
+    "gaps": [
+      "Dados de clima/mar indisponíveis",
+      "Notícias em formato placeholder",
+      "Eventos linkados, não integrados"
+    ]
+  },
+  "proprietarios": {
+    "status": "PRONTO_PARA_EXPANSAO",
+    "jornada": "CONTEUDO -> PUBLICAR -> VENDA/ALUGUEL/TEMPORADA -> SERVICO -> CONTATO",
+    "gaps": [
+      "Falta página 'Como escolher entre anunciar sozinho ou contratar imobiliária'",
+      "Falta página 'Como avaliar propostas'",
+      "Falta página 'Erros que fazem anúncio perder interessados'",
+      "Falta SEO local por cidade"
+    ]
+  },
+  "ia": {
+    "status": "QUASE_PRONTO",
+    "jornada": "CONTEUDO -> CASO_DE_USO -> SOLUÇÃO -> AGENTE_PERSONALIZADO -> DIAGNOSTICO -> CONTATO",
+    "gaps": [
+      "Falta formulário de diagnóstico estruturado",
+      "Falta página de demonstração",
+      "Falta cases reais auditados",
+      "Falta conteúdo educativo"
+    ]
+  },
+  "quatro_velocidades": {
+    "status": "FUNCIONANDO",
+    "evergreen": 3,
+    "atualizado": 2,
+    "noticia": 1,
+    "analise": 1,
+    "tempo_real": 1
+  },
+  "ranking": [
+    {"prioridade": "P0", "item": "Nenhum crítico", "acao": "—"},
+    {"prioridade": "P1", "item": "CTAs ausentes em blog", "acao": "Adicionar CTA contextual"},
+    {"prioridade": "P1", "item": "Falta demonstração IA", "acao": "Criar página de demonstração"},
+    {"prioridade": "P1", "item": "Falta formulário diagnóstico", "acao": "Estruturar formulário"},
+    {"prioridade": "P2", "item": "Replicar Santos Agora", "acao": "Expandir para 2-3 cidades"},
+    {"prioridade": "P2", "item": "Expandir proprietários", "acao": "Adicionar páginas faltantes"},
+    {"prioridade": "P2", "item": "SEO local proprietários", "acao": "Conteúdo por cidade"},
+    {"prioridade": "P3", "item": "Imagens otimizadas", "acao": "Adicionar imagens reais"},
+    {"prioridade": "P3", "item": "Performance", "acao": "Medir Core Web Vitals"},
+    {"prioridade": "P3", "item": "Cases auditados", "acao": "Separar real de demonstração"}
+  ],
+  "decisao_escala": {
+    "continuar": [
+      "Santos Agora -> replicar para 2-3 cidades",
+      "Proprietários -> expandir com SEO local",
+      "4 velocidades -> manter modelo"
+    ],
+    "ajustar": [
+      "Blog -> adicionar CTAs contextuais",
+      "IA -> criar demonstração + formulário",
+      "Cases -> auditar e separar real de demonstração"
+    ],
+    "pausar": [
+      "Criação de novas páginas em massa",
+      "Expansão de IA sem demonstração validada"
+    ],
+    "escalar": [
+      "Depois de ajustes: replicar Santos Agora",
+      "Depois de ajustes: expandir proprietários",
+      "Depois de validação: escalar 4 velocidades"
+    ]
+  }
+}
