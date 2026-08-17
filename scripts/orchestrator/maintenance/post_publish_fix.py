@@ -111,7 +111,17 @@ def fix_article(html_path: Path, issues: list) -> dict:
     # Fix: insufficient internal links
     if any(issue.startswith('insufficient_internal_links') for issue in issues):
         hrefs = re.findall(r'href=["\']([^"\']+)["\']', txt, re.I)
-        internal = [h for h in hrefs if h.startswith('/blog/') or h.startswith('/education/')]
+        internal = []
+        for h in hrefs:
+            if h.startswith(('/blog/', '/education/', '/noticias/', 'blog/', 'education/', 'noticias/')):
+                internal.append(h)
+                continue
+            if h.startswith(('http://', 'https://', '//', '#', 'mailto:', 'tel:')):
+                if 'praia.digital' in h:
+                    internal.append(h)
+                continue
+            if h.endswith('.html') or h.endswith('.htm'):
+                internal.append(h)
         if len(internal) < MIN_INTERNAL_LINKS:
             related = get_related_slugs(slug, limit=3)
             links_html = '\n'.join([f'<p><a href="/blog/{r}.html">{r}</a></p>' for r in related if f'/blog/{r}.html' not in internal])

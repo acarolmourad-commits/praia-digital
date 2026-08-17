@@ -49,6 +49,14 @@ def verify_article(html_path: Path, sitemap_slugs: set) -> dict:
     slug = html_path.stem
     issues = []
 
+    # Skip redirect stubs: they are not publishable content
+    is_redirect = (
+        re.search(r'<title[^>]*>(.*?)</title>', txt, re.S|re.I) and
+        'redirecionando' in re.search(r'<title[^>]*>(.*?)</title>', txt, re.S|re.I).group(1).lower()
+    ) or bool(re.search(r'<meta[^>]+http-equiv=["\']refresh["\']', txt, re.I))
+    if is_redirect:
+        return {'slug': slug, 'file': html_path.name, 'valid': True, 'issues': [], 'size': len(txt), 'internal_links': 0, 'in_sitemap': True, 'has_cta': False, 'skipped': True}
+
     # 1. Exists in sitemap
     in_sitemap = slug in sitemap_slugs
     if not in_sitemap:
@@ -56,12 +64,15 @@ def verify_article(html_path: Path, sitemap_slugs: set) -> dict:
 
     # 2. Internal links
     hrefs = re.findall(r'href=["\']([^"\']+)["\']', txt, re.I)
+    domain = 'praia.digital'
     internal = []
     for h in hrefs:
         if h.startswith(('/blog/', '/education/', '/noticias/', 'blog/', 'education/', 'noticias/')):
             internal.append(h)
             continue
         if h.startswith(('http://', 'https://', '//', '#', 'mailto:', 'tel:')):
+            if domain in h:
+                internal.append(h)
             continue
         if h.endswith('.html') or h.endswith('.htm'):
             internal.append(h)
