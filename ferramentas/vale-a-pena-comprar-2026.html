@@ -72,6 +72,7 @@ a{color:#38bdf8;text-decoration:none}
 <link rel="manifest" href="https://praia.digital/manifest.json">
 <meta name="robots" content="index, follow">
 <meta property="og:locale" content="pt_BR">
+<link rel="stylesheet" href="https://praia.digital/css/style.css">
 <meta name="theme-color" content="#0ea5e9">
 <script type="application/ld+json">
 {
@@ -133,6 +134,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 </script>
 </head>
 <body>
+<meta name="pd-shared-nav">
 <a class="skip-link" href="#main" style="position:absolute;left:-9999px;">Pular para o conteúdo</a>
 <div class="container">
   <div class="card"><h1>Vale a pena comprar?</h1><p>Preencha os dados e receba uma análise rápida de viabilidade de investimento.</p></div>
@@ -147,6 +149,8 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     <div class="result" id="result" style="display:none"></div>
   </div>
   <p><a href="https://praia.digital/">← Voltar</a></p>
+<meta name="pd-shared-footer">
+<script src="https://praia.digital/js/shared.js"></script>
 </body>
 <script>
 function fmt(v){return typeof v==='number'?'R$ '+v.toLocaleString('pt-BR'):String(v)}
@@ -178,5 +182,6 @@ function analisar(){
     <p style="margin-top:10px;color:#94a3b8;font-size:.85rem">*Estimativa baseada em médias do litoral paulista. Consulte um especialista.</p>`;
 }
 </script>
+<meta name="pd-shared-footer">
 </body>
 </html>

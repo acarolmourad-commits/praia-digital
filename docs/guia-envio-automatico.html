@@ -47,16 +47,11 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 </script>
+<link rel="stylesheet" href="https://praia.digital/css/style.css">
 </head>
 <body>
   <div class="wrap">
-    <header>
-      <nav aria-label="Navegação principal">
-        <a href="https://praia.digital/index.html">Início</a>
-        <a href="https://praia.digital/servicos.html">Serviços</a>
-        <a href="https://praia.digital/docs/index.html">Documentos</a>
-      </nav>
-    </header>
+    <meta name="pd-shared-nav">
 
     <main id="main">
       <h1>Guia de envio automático</h1>
@@ -71,7 +66,8 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       </ul>
     </main>
 
-    <footer>Praia Digital — conteúdo original, sem placeholders.</footer>
+    <meta name="pd-shared-footer">
   </div>
+<script src="https://praia.digital/js/shared.js"></script>
 </body>
 </html>

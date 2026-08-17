@@ -13,7 +13,8 @@
   <meta property="og:description" content="Guia de imóveis em Jardim Sao Paulo, peruibe: valorização, acessos, temporada e contato direto.">
   <meta property="og:url" content="https://praia.digital/bairros/peruibe/jardim-sao-paulo.html">
   <meta property="og:site_name" content="Praia Digital">
-  <meta name="theme-color" content="#0b1220">
+  <link rel="stylesheet" href="https://praia.digital/css/style.css">
+<meta name="theme-color" content="#0b1220">
   <link rel="preconnect" href="https://praia.digital">
   <script type="application/ld+json">
   {
@@ -81,13 +82,7 @@ gtag('config', '', { anonymize_ip: true });
 </head>
 <body>
   <div class="wrap">
-    <header>
-      <nav aria-label="Navegação principal">
-        <a href="https://praia.digital/index.html">Início</a>
-        <a href="https://praia.digital/servicos.html">Serviços</a>
-        <a href="https://praia.digital/bairros/index.html">Bairros</a>
-      </nav>
-    </header>
+    <meta name="pd-shared-nav">
     <main id="main">
       <h1>Imóveis em Jardim Sao Paulo — Peruibe <span class="pill">Litoral de SP</span></h1>
       <p class="lead">Guia completo para comprar, vender e investir em imóveis em Jardim Sao Paulo, Peruibe.</p>
@@ -117,7 +112,8 @@ gtag('config', '', { anonymize_ip: true });
 </section>
     <div id="lm-form" style="margin-top:18px"><h2>Quero receber este guia</h2><form id="leadForm"><input type="text" id="name" placeholder="Seu nome" required /><input type="email" id="email" placeholder="Seu e-mail" /><input type="tel" id="phone" placeholder="Seu WhatsApp" /><input type="hidden" id="city" value="Peruibe" /><input type="hidden" id="source" value="bairro" /><input type="hidden" id="magnet" value="Peruibe" /><button type="submit">Enviar</button></form><p id="formStatus"></p></div><script>(function(){var form=document.getElementById("leadForm");if(!form) return;form.addEventListener("submit",function(e){e.preventDefault();var data={name:document.getElementById("name").value.trim(),email:document.getElementById("email").value.trim()null,phone:document.getElementById("phone").value.trim()null,city:document.getElementById("city").valuenull,source:document.getElementById("source").valuenull,magnet:document.getElementById("magnet").valuenull};fetch("https://academy.praia.digital/leads",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)}).then(function(r){return r.json().then(function(json){return {status:r.status,json:json};});}).then(function(res){document.getElementById("formStatus").textContent=res.status===200?"Recebido! Entraremos em contato.":"Erro: "+JSON.stringify(res.json);}).catch(function(){document.getElementById("formStatus").textContent="Erro de conexão. Tente novamente.";});});})();</script>
     </main>
-    <footer>Praia Digital — imóveis no litoral de SP com método, segurança e inteligência comercial.</footer>
+    <meta name="pd-shared-footer">
   </div>
+<script src="https://praia.digital/js/shared.js"></script>
 </body>
 </html>

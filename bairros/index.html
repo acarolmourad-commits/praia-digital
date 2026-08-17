@@ -25,7 +25,8 @@
   <meta property="og:description" content="Guia de bairros do litoral de SP: Caraguatatuba, Ubatuba, Ilhabela, São Sebastião, Bertioga, Guarujá, Santos e Praia Grande.">
   <meta property="og:url" content="https://praia.digital/bairros/index.html">
   <meta property="og:site_name" content="Praia Digital">
-  <meta name="theme-color" content="#0b1220">
+  <link rel="stylesheet" href="https://praia.digital/css/style.css">
+<meta name="theme-color" content="#0b1220">
   <link rel="preconnect" href="https://praia.digital">
   <script type="application/ld+json">
   {
@@ -69,16 +70,7 @@ gtag('config', '', { anonymize_ip: true });
 </head>
 <body>
   <div class="wrap">
-    <header>
-      <nav aria-label="Navegação principal">
-        <a href="https://praia.digital/index.html">Início</a>
-        <a href="https://praia.digital/servicos.html">Serviços</a>
-        <a href="https://praia.digital/education/index.html">Academy</a>
-        <a href="https://praia.digital/education/formacoes/index.html">Formações</a>
-        <a href="https://praia.digital/blog/index.html">Blog</a>
-        <a href="https://praia.digital/noticias/index.html">Notícias</a>
-      </nav>
-    </header>
+    <meta name="pd-shared-nav">
 
     <main id="main">
       <h1>Bairros do Litoral de SP</h1>
@@ -172,7 +164,8 @@ gtag('config', '', { anonymize_ip: true });
       <script>(function(){var form=document.getElementById("leadForm");if(!form) return;form.addEventListener("submit",function(e){e.preventDefault();var data={name:document.getElementById("name").value.trim(),phone:document.getElementById("phone").value.trim()||null,source:document.getElementById("source").value||null};fetch("https://academy.praia.digital/leads",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)}).then(function(r){return r.json().then(function(json){return {status:r.status,json:json};});}).then(function(res){document.getElementById("formStatus").textContent=res.status===200?"Recebido! Entraremos em contato.":"Erro: "+JSON.stringify(res.json);}).catch(function(){document.getElementById("formStatus").textContent="Erro de conexão. Tente novamente.";});});})();</script>
     </main>
 
-    <footer>Praia Digital — imóveis no litoral de SP com método, segurança e inteligência comercial.</footer>
+    <meta name="pd-shared-footer">
   </div>
+<script src="https://praia.digital/js/shared.js"></script>
 </body>
 </html>

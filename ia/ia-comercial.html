@@ -115,6 +115,7 @@
 <link rel="manifest" href="https://praia.digital/manifest.json">
 <meta name="robots" content="index, follow">
 <meta property="og:locale" content="pt_BR">
+<link rel="stylesheet" href="https://praia.digital/css/style.css">
 <meta name="theme-color" content="#0ea5e9">
 <script type="application/ld+json">
 {
@@ -180,22 +181,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 </head>
 <body>
 <a class="skip-link" href="#main" style="position:absolute;left:-9999px;">Pular para o conteúdo</a>
-  <header>
-    <a class="logo" href="/">
-      <svg class="logo-icon" viewBox="0 0 36 36" fill="none">
-        <circle cx="18" cy="18" r="18" fill="#FFFFFF" fill-opacity="0.2"/>
-        <path d="M8 22 Q18 12 28 22" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-        <path d="M6 26 Q18 16 30 26" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
-        <circle cx="26" cy="10" r="4" fill="#FFD700"/>
-      </svg>
-      Praia Digital
-    </a>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/ia/">Central de IA</a>
-      <a href="/ia/ia-comercial.html">IA Comercial</a>
-    </nav>
-  </header>
+  <meta name="pd-shared-nav">
 
   <div class="hero">
     <div class="hero-inner">
@@ -260,10 +246,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     </div>
   </div>
 
-  <footer aria-label="Rodapé">
-  <p>© Litoral Prime Imóveis • <a href="https://wa.me/5511954346288">WhatsApp</a> • <a href="mailto:comercial@praia.digital">comercial@praia.digital</a> • (11) 95434-6288</p>
-  <p><a href="sitemap.xml">Sitemap</a> · <a href="sitemap.html">Mapa do site</a></p>
-</footer>
+  <meta name="pd-shared-footer">
 
   <script>
     const listings = [
@@ -325,5 +308,6 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       document.getElementById('commercialResult').scrollIntoView({behavior:'smooth'});
     }
   </script>
+<script src="https://praia.digital/js/shared.js"></script>
 </body>
 </html>

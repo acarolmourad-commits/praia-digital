@@ -89,6 +89,7 @@ th{background:#f9fafb;font-weight:600}
 <link rel="manifest" href="https://praia.digital/manifest.json">
 <meta name="robots" content="index, follow">
 <meta property="og:locale" content="pt_BR">
+<link rel="stylesheet" href="https://praia.digital/css/style.css">
 <meta name="theme-color" content="#0ea5e9">
 <script type="application/ld+json">
 {
@@ -135,10 +136,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 <a id="skip-link" class="skip-link" href="#main">Pular para o conteúdo</a>
   <body>
 <div class="container">
-<header>
-<h1>Form Tracker</h1>
-<p class="lead">Acompanhe submissions de parceria e checklist aqui.</p>
-</header>
+<meta name="pd-shared-nav">
 
 <div class="card">
 <h2>📥 Importar CSV do Formspree</h2>
@@ -195,5 +193,7 @@ fileInput.addEventListener('change', (e) => {
   reader.readAsText(file);
 });
 </script>
+<meta name="pd-shared-footer">
+<script src="https://praia.digital/js/shared.js"></script>
 </body>
 </html>
