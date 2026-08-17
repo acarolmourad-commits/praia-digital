@@ -39859,5 +39859,85 @@
     "status": "published",
     "data": "2026-08-16",
     "velocidade": "analise"
+  },
+  "demo-ia-imobiliarias": {
+    "slug": "demo-ia-imobiliarias",
+    "title": "Demo — Agente de IA para Imobiliárias | Praia Digital",
+    "path": "solucoes/demo-ia-imobiliarias.html",
+    "tipo": "solucoes",
+    "cidade": "brasil",
+    "status": "published",
+    "data": "2026-08-16",
+    "nota": "Demonstração conceitual claramente marcada como DEMO."
+  },
+  "guia-investimento-imovel-litoral-2026-cta": {
+    "slug": "guia-investimento-imovel-litoral-2026-cta",
+    "title": "Guia de Investimento no Litoral — com CTA contextual",
+    "path": "blog/guia-investimento-imovel-litoral-2026.html",
+    "tipo": "blog",
+    "cidade": "litoral",
+    "status": "published",
+    "data": "2026-08-16",
+    "nota": "CTA adicionado: Rankings + Cidades"
+  },
+  "como-financiar-imovel-litoral-2026-cta": {
+    "slug": "como-financiar-imovel-litoral-2026-cta",
+    "title": "Como Financiar um Imóvel no Litoral — com CTA contextual",
+    "path": "blog/como-financiar-imovel-litoral-2026.html",
+    "tipo": "blog",
+    "cidade": "litoral",
+    "status": "published",
+    "data": "2026-08-16",
+    "nota": "CTA adicionado: Simulação + Cidades"
+  },
+  "documentacao-compra-venda-imovel-litoral-2026-cta": {
+    "slug": "documentacao-compra-venda-imovel-litoral-2026-cta",
+    "title": "Documentação para compra e venda — com CTA contextual",
+    "path": "blog/documentacao-compra-venda-imovel-litoral-2026.html",
+    "tipo": "blog",
+    "cidade": "litoral",
+    "status": "published",
+    "data": "2026-08-16",
+    "nota": "CTA adicionado: Guia do Proprietário + Consultoria"
+  },
+  "mercado-imobiliario-litoral-paulista-2026-cta": {
+    "slug": "mercado-imobiliario-litoral-paulista-2026-cta",
+    "title": "Mercado imobiliário litoral paulista — com CTA contextual",
+    "path": "blog/mercado-imobiliario-litoral-paulista-2026.html",
+    "tipo": "blog",
+    "cidade": "litoral",
+    "status": "published",
+    "data": "2026-08-16",
+    "nota": "CTA adicionado: Rankings + Santos Agora"
+  },
+  "noticia-temporada-2026-2027-mercado-litoral-2026-08-16-cta": {
+    "slug": "noticia-temporada-2026-2027-mercado-litoral-2026-08-16-cta",
+    "title": "Notícia temporada 2026-2027 — com CTA contextual",
+    "path": "blog/noticia-temporada-2026-2027-mercado-litoral-2026-08-16.html",
+    "tipo": "blog",
+    "cidade": "litoral",
+    "status": "published",
+    "data": "2026-08-16",
+    "nota": "CTA adicionado: Guia temporada + Santos Agora"
+  },
+  "temporada-litoral-paulista-2026-2027-cta": {
+    "slug": "temporada-litoral-paulista-2026-2027-cta",
+    "title": "Temporada no litoral paulista — com CTA contextual",
+    "path": "blog/temporada-litoral-paulista-2026-2027.html",
+    "tipo": "blog",
+    "cidade": "litoral",
+    "status": "published",
+    "data": "2026-08-16",
+    "nota": "CTA adicionado: Guia proprietário + Calculadora"
+  },
+  "analise-litoral-paulista-investidores-2026-cta": {
+    "slug": "analise-litoral-paulista-investidores-2026-cta",
+    "title": "Análise litoral paulista — com CTA contextual",
+    "path": "blog/analise-litoral-paulista-investidores-2026.html",
+    "tipo": "blog",
+    "cidade": "litoral",
+    "status": "published",
+    "data": "2026-08-16",
+    "nota": "CTA adicionado: Rankings + IA para imobiliárias"
   }
 }
