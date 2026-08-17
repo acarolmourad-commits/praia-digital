@@ -85889,6 +85889,226 @@
           "has_cta": true
         }
       ]
+    },
+    {
+      "date": "2026-08-17T08:21:47.904178+00:00",
+      "checked": 10,
+      "failed": 1,
+      "failed_slugs": [
+        "ilhabela-seguro-aluguel-temporada-praia-sao-paulo-em-ilhabela"
+      ],
+      "results": [
+        {
+          "slug": "saovicente-sao-vicente-compra-e-venda-de-imoveis-guia-2026",
+          "file": "saovicente-sao-vicente-compra-e-venda-de-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1282,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "saosebastiao-sao-sebastiao-investimento-em-imoveis-analise-2026",
+          "file": "saosebastiao-sao-sebastiao-investimento-em-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1306,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "santos-santos-locacao-temporada-guia-2026",
+          "file": "santos-santos-locacao-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1195,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "peruibe-peruibe-investimento-em-imoveis-analise-2026",
+          "file": "peruibe-peruibe-investimento-em-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1253,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "peruibe-peruibe-compra-e-venda-de-imoveis-guia-2026",
+          "file": "peruibe-peruibe-compra-e-venda-de-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1247,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "maresias-maresias-investimento-em-imoveis-analise-2026",
+          "file": "maresias-maresias-investimento-em-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1262,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ilhabela-ilhabela-investimento-em-imoveis-analise-2026",
+          "file": "ilhabela-ilhabela-investimento-em-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1262,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ilhabela-ilhabela-compra-e-venda-de-imoveis-guia-2026",
+          "file": "ilhabela-ilhabela-compra-e-venda-de-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1256,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "litoralnorte-vantagens-de-investir-em-imoveis-no-litoral-norte-em-2026",
+          "file": "litoralnorte-vantagens-de-investir-em-imoveis-no-litoral-norte-em-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1269,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ilhabela-seguro-aluguel-temporada-praia-sao-paulo-em-ilhabela",
+          "file": "ilhabela-seguro-aluguel-temporada-praia-sao-paulo-em-ilhabela.html",
+          "valid": false,
+          "issues": [
+            "missing_cta_or_whatsapp"
+          ],
+          "size": 1608,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": false
+        }
+      ]
+    },
+    {
+      "date": "2026-08-17T08:22:59.097595+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "ilhabela-seguro-aluguel-temporada-praia-sao-paulo-em-ilhabela",
+          "file": "ilhabela-seguro-aluguel-temporada-praia-sao-paulo-em-ilhabela.html",
+          "valid": true,
+          "issues": [],
+          "size": 1628,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "saovicente-sao-vicente-compra-e-venda-de-imoveis-guia-2026",
+          "file": "saovicente-sao-vicente-compra-e-venda-de-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1282,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "saosebastiao-sao-sebastiao-investimento-em-imoveis-analise-2026",
+          "file": "saosebastiao-sao-sebastiao-investimento-em-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1306,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "santos-santos-locacao-temporada-guia-2026",
+          "file": "santos-santos-locacao-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1195,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "peruibe-peruibe-investimento-em-imoveis-analise-2026",
+          "file": "peruibe-peruibe-investimento-em-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1253,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "peruibe-peruibe-compra-e-venda-de-imoveis-guia-2026",
+          "file": "peruibe-peruibe-compra-e-venda-de-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1247,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "maresias-maresias-investimento-em-imoveis-analise-2026",
+          "file": "maresias-maresias-investimento-em-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1262,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ilhabela-ilhabela-investimento-em-imoveis-analise-2026",
+          "file": "ilhabela-ilhabela-investimento-em-imoveis-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1262,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ilhabela-ilhabela-compra-e-venda-de-imoveis-guia-2026",
+          "file": "ilhabela-ilhabela-compra-e-venda-de-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1256,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "litoralnorte-vantagens-de-investir-em-imoveis-no-litoral-norte-em-2026",
+          "file": "litoralnorte-vantagens-de-investir-em-imoveis-no-litoral-norte-em-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1269,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
     }
   ]
 }
