@@ -84913,6 +84913,114 @@
           "has_cta": true
         }
       ]
+    },
+    {
+      "date": "2026-08-17T07:21:48.545632+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "bertioga-bertioga-checklist-para-investimento-imobiliario-guia-2026",
+          "file": "bertioga-bertioga-checklist-para-investimento-imobiliario-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1300,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "bertioga-bertioga-curso-de-investimento-imobiliario-guia-2026",
+          "file": "bertioga-bertioga-curso-de-investimento-imobiliario-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1264,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "praiagrande-praia-grande-guia-para-investimento-imobiliario-analise-2026",
+          "file": "praiagrande-praia-grande-guia-para-investimento-imobiliario-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1323,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "praiagrande-praia-grande-checklist-para-investimento-imobiliario-guia-2026",
+          "file": "praiagrande-praia-grande-checklist-para-investimento-imobiliario-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1335,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "praiagrande-praia-grande-curso-de-investimento-imobiliario-guia-2026",
+          "file": "praiagrande-praia-grande-curso-de-investimento-imobiliario-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1299,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "guaruja-guaruja-guia-para-investimento-imobiliario-analise-2026",
+          "file": "guaruja-guaruja-guia-para-investimento-imobiliario-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1279,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "guaruja-guaruja-checklist-para-investimento-imobiliario-guia-2026",
+          "file": "guaruja-guaruja-checklist-para-investimento-imobiliario-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1291,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "guaruja-guaruja-curso-de-investimento-imobiliario-guia-2026",
+          "file": "guaruja-guaruja-curso-de-investimento-imobiliario-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1255,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "santos-santos-guia-para-investimento-imobiliario-analise-2026",
+          "file": "santos-santos-guia-para-investimento-imobiliario-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1270,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "santos-santos-checklist-para-investimento-imobiliario-guia-2026",
+          "file": "santos-santos-checklist-para-investimento-imobiliario-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1282,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
     }
   ]
 }
