@@ -86325,6 +86325,114 @@
           "has_cta": true
         }
       ]
+    },
+    {
+      "date": "2026-08-17T08:44:18.990998+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "ilhabela-ilhabela-marketing-digital-para-imoveis-guia-2026",
+          "file": "ilhabela-ilhabela-marketing-digital-para-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1292,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "caraguatatuba-caraguatatuba-marketing-digital-para-imoveis-guia-2026",
+          "file": "caraguatatuba-caraguatatuba-marketing-digital-para-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1337,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "peruibe-peruibe-marketing-digital-para-imoveis-guia-2026",
+          "file": "peruibe-peruibe-marketing-digital-para-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1283,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "mongagua-mongagua-marketing-digital-para-imoveis-guia-2026",
+          "file": "mongagua-mongagua-marketing-digital-para-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1292,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "itanhaem-itanhaem-marketing-digital-para-imoveis-guia-2026",
+          "file": "itanhaem-itanhaem-marketing-digital-para-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1292,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "bertioga-bertioga-marketing-digital-para-imoveis-guia-2026",
+          "file": "bertioga-bertioga-marketing-digital-para-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1292,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "praiagrande-praia-grande-marketing-digital-para-imoveis-guia-2026",
+          "file": "praiagrande-praia-grande-marketing-digital-para-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1327,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "guaruja-guaruja-marketing-digital-para-imoveis-guia-2026",
+          "file": "guaruja-guaruja-marketing-digital-para-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1283,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "santos-santos-marketing-digital-para-imoveis-guia-2026",
+          "file": "santos-santos-marketing-digital-para-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1274,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "maresias-maresias-locacao-temporada-guia-2026",
+          "file": "maresias-maresias-locacao-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1213,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
     }
   ]
 }
