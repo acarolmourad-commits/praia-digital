@@ -86973,6 +86973,114 @@
           "has_cta": true
         }
       ]
+    },
+    {
+      "date": "2026-08-17T09:29:16.397316+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "litoralnorte-imoveis-em-ubatuba-temporada-e-avaliacao-em-2026",
+          "file": "litoralnorte-imoveis-em-ubatuba-temporada-e-avaliacao-em-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1376,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "santos-seo-local-para-imobiliarias-em-santos",
+          "file": "santos-seo-local-para-imobiliarias-em-santos.html",
+          "valid": true,
+          "issues": [],
+          "size": 1391,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "praiagrande-seo-local-para-imobiliarias-em-praia-grande",
+          "file": "praiagrande-seo-local-para-imobiliarias-em-praia-grande.html",
+          "valid": true,
+          "issues": [],
+          "size": 1445,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "praiagrande-seo-local-em-praia-grande-para-imoveis",
+          "file": "praiagrande-seo-local-em-praia-grande-para-imoveis.html",
+          "valid": true,
+          "issues": [],
+          "size": 1357,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "maresias-seo-local-em-maresias-para-imoveis",
+          "file": "maresias-seo-local-em-maresias-para-imoveis.html",
+          "valid": true,
+          "issues": [],
+          "size": 1314,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "guaruja-seo-local-em-guaruja-para-imoveis",
+          "file": "guaruja-seo-local-em-guaruja-para-imoveis.html",
+          "valid": true,
+          "issues": [],
+          "size": 1303,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "caraguatatuba-seo-local-em-caraguatatuba-para-imoveis",
+          "file": "caraguatatuba-seo-local-em-caraguatatuba-para-imoveis.html",
+          "valid": true,
+          "issues": [],
+          "size": 1369,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "bertioga-seo-local-em-bertioga-para-imoveis",
+          "file": "bertioga-seo-local-em-bertioga-para-imoveis.html",
+          "valid": true,
+          "issues": [],
+          "size": 1314,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "litoralsul-imoveis-em-peruibe-temporada-e-avaliacao-em-2026",
+          "file": "litoralsul-imoveis-em-peruibe-temporada-e-avaliacao-em-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1369,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "litoralnorte-modelo-de-contrato-de-temporada-para-o-litoral-norte",
+          "file": "litoralnorte-modelo-de-contrato-de-temporada-para-o-litoral-norte.html",
+          "valid": true,
+          "issues": [],
+          "size": 1391,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
     }
   ]
 }
