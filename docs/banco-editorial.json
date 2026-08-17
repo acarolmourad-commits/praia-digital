@@ -87081,6 +87081,114 @@
           "has_cta": true
         }
       ]
+    },
+    {
+      "date": "2026-08-17T09:39:20.875304+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "saovicente-sao-vicente-marketing-digital-para-imoveis-guia-2026",
+          "file": "saovicente-sao-vicente-marketing-digital-para-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1938,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-ubatuba-marketing-digital-para-imoveis-guia-2026",
+          "file": "ubatuba-ubatuba-marketing-digital-para-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1895,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "maresias-maresias-marketing-digital-para-imoveis-guia-2026",
+          "file": "maresias-maresias-marketing-digital-para-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1906,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "guaruja-case-barra-norte-imoveis",
+          "file": "guaruja-case-barra-norte-imoveis.html",
+          "valid": true,
+          "issues": [],
+          "size": 1971,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "bertioga-case-social-rapido-para-parcerias-em-bertioga",
+          "file": "bertioga-case-social-rapido-para-parcerias-em-bertioga.html",
+          "valid": true,
+          "issues": [],
+          "size": 1885,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "guaruja-case-social-rapido-para-parcerias-em-guaruja",
+          "file": "guaruja-case-social-rapido-para-parcerias-em-guaruja.html",
+          "valid": true,
+          "issues": [],
+          "size": 1873,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ilhabela-case-social-rapido-para-parcerias-em-ilhabela",
+          "file": "ilhabela-case-social-rapido-para-parcerias-em-ilhabela.html",
+          "valid": true,
+          "issues": [],
+          "size": 1885,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "maresias-case-social-rapido-para-parcerias-em-maresias",
+          "file": "maresias-case-social-rapido-para-parcerias-em-maresias.html",
+          "valid": true,
+          "issues": [],
+          "size": 1885,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "praiagrande-case-social-rapido-para-parcerias-em-praia-grande",
+          "file": "praiagrande-case-social-rapido-para-parcerias-em-praia-grande.html",
+          "valid": true,
+          "issues": [],
+          "size": 1932,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-case-social-rapido-para-parcerias-em-ubatuba",
+          "file": "ubatuba-case-social-rapido-para-parcerias-em-ubatuba.html",
+          "valid": true,
+          "issues": [],
+          "size": 1873,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
     }
   ]
 }
