@@ -80918,6 +80918,230 @@
       ],
       "validated_count": 8,
       "blocked_count": 1
+    },
+    {
+      "date": "2026-08-17T02:59:29.663257+00:00",
+      "executed": [
+        {
+          "decision": {
+            "opportunity": {
+              "type": "news_discovery",
+              "message": "Monitoramento contínuo de notícias ativo",
+              "priority": 2,
+              "status": "monitoring"
+            },
+            "decision": {
+              "action": "CRIAR",
+              "target": "noticias/index.html",
+              "score": 7.0
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "blocked",
+            "reason": "Fonte não confiável ou ausente",
+            "action": "news_create"
+          },
+          "validation": {
+            "valid": false,
+            "reason": "Fonte não confiável ou ausente"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "add_links",
+              "count": 95,
+              "priority": 2
+            },
+            "decision": {
+              "action": "LINKAR",
+              "target": "blog_to_formacoes",
+              "score": 6.5
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "add_internal_links",
+            "count": 95
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "local_opportunity",
+              "message": "Alta temporada 2026-2027 — conteúdo de preparação",
+              "priority": 2
+            },
+            "decision": {
+              "action": "CRIAR",
+              "target": "blog",
+              "score": 7.0
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "blog_create",
+            "target": "blog"
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "commercial_opportunity",
+              "message": "17 artigos sem CTA claro",
+              "priority": 3
+            },
+            "decision": {
+              "action": "CORRIGIR",
+              "target": "cta",
+              "score": 8.5
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "seo_fix",
+            "target": "unknown"
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "recurring_question",
+              "question": "Como financiar imóvel no litoral?",
+              "priority": 2
+            },
+            "decision": {
+              "action": "EXPANDIR",
+              "target": "faq",
+              "score": 7.5
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "content_expand",
+            "target": "unknown"
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "recurring_question",
+              "question": "Quanto custa manter casa de praia?",
+              "priority": 2
+            },
+            "decision": {
+              "action": "EXPANDIR",
+              "target": "faq",
+              "score": 7.5
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "content_expand",
+            "target": "unknown"
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "recurring_question",
+              "question": "É bom investir em imóvel no litoral?",
+              "priority": 2
+            },
+            "decision": {
+              "action": "EXPANDIR",
+              "target": "faq",
+              "score": 7.5
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "content_expand",
+            "target": "unknown"
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "recurring_question",
+              "question": "Como declarar aluguel de temporada no IR?",
+              "priority": 2
+            },
+            "decision": {
+              "action": "EXPANDIR",
+              "target": "faq",
+              "score": 7.5
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "content_expand",
+            "target": "unknown"
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        },
+        {
+          "decision": {
+            "opportunity": {
+              "type": "recurring_question",
+              "question": "Documentação necessária para comprar imóvel?",
+              "priority": 2
+            },
+            "decision": {
+              "action": "EXPANDIR",
+              "target": "faq",
+              "score": 7.5
+            },
+            "approved": true
+          },
+          "result": {
+            "status": "ok",
+            "action": "content_expand",
+            "target": "unknown"
+          },
+          "validation": {
+            "valid": true,
+            "reason": "Produção validada"
+          }
+        }
+      ],
+      "validated_count": 8,
+      "blocked_count": 1
     }
   ],
   "news_discovery": [
@@ -83202,6 +83426,114 @@
     },
     {
       "date": "2026-08-17T02:44:32.946883+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "usucapiao-imoveis-litoral-sp-2026",
+          "file": "usucapiao-imoveis-litoral-sp-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1663,
+          "internal_links": 3,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "acidente-imovel-litoral-responsabilidade-proprietario-2026",
+          "file": "acidente-imovel-litoral-responsabilidade-proprietario-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2575,
+          "internal_links": 5,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ab-testing-anuncios-imobiliarios-locais-litoral-2026",
+          "file": "ab-testing-anuncios-imobiliarios-locais-litoral-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 2831,
+          "internal_links": 5,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "analise-litoral-paulista-investidores-2026",
+          "file": "analise-litoral-paulista-investidores-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 9401,
+          "internal_links": 15,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "temporada-litoral-paulista-2026-2027",
+          "file": "temporada-litoral-paulista-2026-2027.html",
+          "valid": true,
+          "issues": [],
+          "size": 9322,
+          "internal_links": 21,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "noticia-temporada-2026-2027-mercado-litoral-2026-08-16",
+          "file": "noticia-temporada-2026-2027-mercado-litoral-2026-08-16.html",
+          "valid": true,
+          "issues": [],
+          "size": 9631,
+          "internal_links": 18,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "mercado-imobiliario-litoral-paulista-2026",
+          "file": "mercado-imobiliario-litoral-paulista-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 9772,
+          "internal_links": 21,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "documentacao-compra-venda-imovel-litoral-2026",
+          "file": "documentacao-compra-venda-imovel-litoral-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 9653,
+          "internal_links": 15,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "como-financiar-imovel-litoral-2026",
+          "file": "como-financiar-imovel-litoral-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 10214,
+          "internal_links": 21,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "guia-investimento-imovel-litoral-2026",
+          "file": "guia-investimento-imovel-litoral-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 10512,
+          "internal_links": 24,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
+    },
+    {
+      "date": "2026-08-17T02:59:08.272299+00:00",
       "checked": 10,
       "failed": 0,
       "failed_slugs": [],
