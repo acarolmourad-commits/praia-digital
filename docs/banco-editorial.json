@@ -85021,6 +85021,114 @@
           "has_cta": true
         }
       ]
+    },
+    {
+      "date": "2026-08-17T07:29:18.410552+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "peruibe-peruibe-guia-para-investimento-imobiliario-analise-2026",
+          "file": "peruibe-peruibe-guia-para-investimento-imobiliario-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1279,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "peruibe-peruibe-checklist-para-investimento-imobiliario-guia-2026",
+          "file": "peruibe-peruibe-checklist-para-investimento-imobiliario-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1291,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "peruibe-peruibe-curso-de-investimento-imobiliario-guia-2026",
+          "file": "peruibe-peruibe-curso-de-investimento-imobiliario-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1255,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "mongagua-mongagua-guia-para-investimento-imobiliario-analise-2026",
+          "file": "mongagua-mongagua-guia-para-investimento-imobiliario-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1288,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "mongagua-mongagua-checklist-para-investimento-imobiliario-guia-2026",
+          "file": "mongagua-mongagua-checklist-para-investimento-imobiliario-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1300,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "mongagua-mongagua-curso-de-investimento-imobiliario-guia-2026",
+          "file": "mongagua-mongagua-curso-de-investimento-imobiliario-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1264,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "itanhaem-itanhaem-guia-para-investimento-imobiliario-analise-2026",
+          "file": "itanhaem-itanhaem-guia-para-investimento-imobiliario-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1288,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "itanhaem-itanhaem-checklist-para-investimento-imobiliario-guia-2026",
+          "file": "itanhaem-itanhaem-checklist-para-investimento-imobiliario-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1300,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "itanhaem-itanhaem-curso-de-investimento-imobiliario-guia-2026",
+          "file": "itanhaem-itanhaem-curso-de-investimento-imobiliario-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1264,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "bertioga-bertioga-guia-para-investimento-imobiliario-analise-2026",
+          "file": "bertioga-bertioga-guia-para-investimento-imobiliario-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1288,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
     }
   ]
 }
