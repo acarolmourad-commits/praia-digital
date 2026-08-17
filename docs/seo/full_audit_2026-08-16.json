@@ -1,0 +1,126 @@
+{
+  "inventory": {
+    "by_dir": {
+      "blog": 3305,
+      "cidades": 133,
+      "bairros": 118,
+      "anfitrioes": 8,
+      "assets": 56,
+      "education": 181,
+      "servicos": 63,
+      "noticias": 1,
+      "docs": 963,
+      "backup": 1457
+    },
+    "total_html": 6285
+  },
+  "sitemap": {
+    "total_urls": 11616,
+    "backup_urls": 0,
+    "blog_urls": 3266,
+    "cidade_urls": 152,
+    "bairro_urls": 166,
+    "education_urls": 174,
+    "servico_urls": 123,
+    "anfitriao_urls": 8,
+    "noticia_urls": 1,
+    "docs_urls": 972,
+    "duplicate_urls": 0
+  },
+  "redirects": {
+    "count": 39,
+    "in_sitemap": 1
+  },
+  "technical": {
+    "sample_size": 100,
+    "issues": {
+      "meta_description_missing": 4
+    },
+    "schema_types": {
+      "Organization": 112,
+      "ListItem": 99,
+      "Question": 92,
+      "Answer": 92,
+      "FAQPage": 34,
+      "BreadcrumbList": 33,
+      "BlogPosting": 33,
+      "Article": 23,
+      "ImageObject": 23
+    }
+  },
+  "content_quality": {
+    "sample_size": 100,
+    "short_pages_lt300": 66,
+    "medium_pages_300_800": 24,
+    "long_pages_gt800": 10
+  },
+  "architecture": {
+    "hubs": {
+      "cidades": 133,
+      "bairros": 118,
+      "blog": 3305,
+      "education": 181,
+      "servicos": 63,
+      "anfitrioes": 8,
+      "noticias": 1
+    },
+    "has_city_hub": false,
+    "has_neighborhood_hub": false
+  },
+  "links": {
+    "internal_links_sample": 8,
+    "external_links_sample": 862,
+    "broken_internal_sample": 0,
+    "broken_internal_sample_list": []
+  },
+  "recommendations": [
+    {
+      "priority": "P0",
+      "action": "Investigar diferença entre 4.828 HTML e 11.616 URLs no sitemap",
+      "impact": "Alto",
+      "d2": "SEM IMPACTO"
+    },
+    {
+      "priority": "P0",
+      "action": "Definir política de indexação para redirect pages",
+      "impact": "Alto",
+      "d2": "SEM IMPACTO"
+    },
+    {
+      "priority": "P1",
+      "action": "Criar hubs de cidade com navegação estruturada",
+      "impact": "Alto",
+      "d2": "SEM IMPACTO"
+    },
+    {
+      "priority": "P1",
+      "action": "Implementar modelo de 4 velocidades editoriais",
+      "impact": "Alto",
+      "d2": "SEM IMPACTO"
+    },
+    {
+      "priority": "P1",
+      "action": "Criar páginas vivo/agora por cidade",
+      "impact": "Alto",
+      "d2": "SEM IMPACTO"
+    },
+    {
+      "priority": "P2",
+      "action": "Padronizar max-width em páginas afetadas",
+      "impact": "Médio",
+      "d2": "SEM IMPACTO"
+    },
+    {
+      "priority": "P2",
+      "action": "Completar meta descriptions faltantes",
+      "impact": "Médio",
+      "d2": "SEM IMPACTO"
+    },
+    {
+      "priority": "P3",
+      "action": "Otimizar Core Web Vitals",
+      "impact": "Alto",
+      "d2": "SEM IMPACTO"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "sitemap_total_urls": 11616,
+  "physical_html_count": 13311,
+  "url_categories": {
+    "UNKNOWN": 3356,
+    "BLOG_PHYSICAL": 3262,
+    "ROOT": 2680,
+    "DOCS": 971,
+    "IMOVEIS_PHYSICAL": 684,
+    "EDUCATION": 174,
+    "BAIRROS": 166,
+    "CIDADES": 152,
+    "SERVICOS": 123,
+    "IMOVEIS_UNKNOWN": 21,
+    "ANFITRIOES": 8,
+    "CIDADES_EXPANSAO": 8,
+    "CASES": 6,
+    "BLOG_UNKNOWN": 3,
+    "REDIRECT": 1,
+    "NOTICIAS": 1
+  },
+  "url_match_status": {
+    "MATCH": 8235,
+    "NO_MATCH": 3380
+  },
+  "url_examples_by_category": {
+    "ROOT": [
+      "https://praia.digital/404.html",
+      "https://praia.digital/acoes-hoje.html",
+      "https://praia.digital/acompanhamento-prospeccao.html",
+      "https://praia.digital/automacao-imobiliarias.html",
+      "https://praia.digital/avaliacao-preco-imoveis.html"
+    ],
+    "ANFITRIOES": [
+      "https://praia.digital/anfitrioes/central-airbnb.html",
+      "https://praia.digital/anfitrioes/central-booking.html",
+      "https://praia.digital/anfitrioes/central-priceplabs.html",
+      "https://praia.digital/anfitrioes/central-stays.html",
+      "https://praia.digital/anfitrioes/checklists-anfitrioes.html"
+    ],
+    "BAIRROS": [
+      "https://praia.digital/bairros/bertioga/centro-historico.html",
+      "https://praia.digital/bairros/bertioga/centro.html",
+      "https://praia.digital/bairros/bertioga/guaratuba.html",
+      "https://praia.digital/bairros/bertioga/index.html",
+      "https://praia.digital/bairros/bertioga/jardim-sao-paulo.html"
+    ],
+    "BLOG_PHYSICAL": [
+      "https://praia.digital/blog/10-artigos-seo-litoral-paulista-2026.html",
+      "https://praia.digital/blog/3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-08-03-23.html",
+      "https://praia.digital/blog/5-sinais-imovel-subvalorizado-litoral-2026-08-05.html",
+      "https://praia.digital/blog/5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html",
+      "https://praia.digital/blog/Segmento-aluguel-temporada-litoral-2026.html"
+    ],
+    "BLOG_UNKNOWN": [
+      "https://praia.digital/blog/automacao-imobiliária-leads-corretores-2026-08-16.html",
+      "https://praia.digital/blog/captacao-imobiliária-imóveis-2026-2026-08-16.html",
+      "https://praia.digital/blog/seo-conteúdo-2026-blog-2026-08-16.html"
+    ],
+    "REDIRECT": [
+      "https://praia.digital/blog/guia-seo-local-imobiliaria-litoral-paulista.html"
+    ],
+    "CASES": [
+      "https://praia.digital/cases/case-automacao-imobiliarias-litoral-sp-2026.html",
+      "https://praia.digital/cases/case-fechamento-centro-historico-2026.html",
+      "https://praia.digital/cases/case-imobiliaria-porto-da-lua-35-leads-2026.html",
+      "https://praia.digital/cases/case-recomendacao-automatica-imoveis-2026.html",
+      "https://praia.digital/cases/case-reducao-tempo-resposta-costa-verde-2026.html"
+    ],
+    "CIDADES_EXPANSAO": [
+      "https://praia.digital/cidades-expansao/angra-dos-reis.html",
+      "https://praia.digital/cidades-expansao/balneario-camboriu.html",
+      "https://praia.digital/cidades-expansao/buzios.html",
+      "https://praia.digital/cidades-expansao/cabo-frio.html",
+      "https://praia.digital/cidades-expansao/florianopolis.html"
+    ],
+    "CIDADES": [
+      "https://praia.digital/cidades/bertioga-academia.html",
+      "https://praia.digital/cidades/bertioga-comercial.html",
+      "https://praia.digital/cidades/bertioga-compra-programada.html",
+      "https://praia.digital/cidades/bertioga-elevador.html",
+      "https://praia.digital/cidades/bertioga-gestao-de-imovel.html"
+    ],
+    "UNKNOWN": [
+      "https://praia.digital/dashboards/1/index.html",
+      "https://praia.digital/dashboards/10/index.html",
+      "https://praia.digital/dashboards/100/index.html",
+      "https://praia.digital/dashboards/101/index.html",
+      "https://praia.digital/dashboards/102/index.html"
+    ],
+    "DOCS": [
+      "https://praia.digital/docs/checklist-publicacao-lote-50-imoveis-2026-07-12.html",
+      "https://praia.digital/docs/editorial/templates/ARTIGO_BLOG_PADRAO.html",
+      "https://praia.digital/docs/guia-anuncios-convertem-litoral-2026.html",
+      "https://praia.digital/docs/guia-atendimento-corretores-litoral-2026.html",
+      "https://praia.digital/docs/guia-automacao-imobiliarias-litoral-2026.html"
+    ],
+    "IMOVEIS_UNKNOWN": [
+      "https://praia.digital/docs/imoveis/parque-estoril-108-manifesto.html",
+      "https://praia.digital/litoral-prime-imoveis/imoveis/apartamento-cachoeira-guarujá-venda.html",
+      "https://praia.digital/litoral-prime-imoveis/imoveis/apartamento-indaia-bertioga-lançamento.html",
+      "https://praia.digital/litoral-prime-imoveis/imoveis/apartamento-itanhaem-itanhaém-venda.html",
+      "https://praia.digital/litoral-prime-imoveis/imoveis/apartamento-jose-menino-santos-lançamento.html"
+    ],
+    "EDUCATION": [
+      "https://praia.digital/education/admin/index.html",
+      "https://praia.digital/education/checkout.html",
+      "https://praia.digital/education/cursos/_archive_flipping-completo/index.html",
+      "https://praia.digital/education/cursos/_archive_flipping-completo/vendas.html",
+      "https://praia.digital/education/cursos/_archive_flipping-imoveis-litoral/index.html"
+    ],
+    "IMOVEIS_PHYSICAL": [
+      "https://praia.digital/imoveis/apartamento-1-quartos-bertioga.html",
+      "https://praia.digital/imoveis/apartamento-1-quartos-guaruja.html",
+      "https://praia.digital/imoveis/apartamento-1-quartos-itanhaem.html",
+      "https://praia.digital/imoveis/apartamento-1-quartos-mongagua.html",
+      "https://praia.digital/imoveis/apartamento-1-quartos-peruibe.html"
+    ],
+    "SERVICOS": [
+      "https://praia.digital/litoral-prime-imoveis/servicos/automacao.html",
+      "https://praia.digital/litoral-prime-imoveis/servicos/avaliacao.html",
+      "https://praia.digital/litoral-prime-imoveis/servicos/captacao.html",
+      "https://praia.digital/litoral-prime-imoveis/servicos/captura-rapida.html",
+      "https://praia.digital/litoral-prime-imoveis/servicos/checklist-leads.html"
+    ],
+    "NOTICIAS": [
+      "https://praia.digital/noticias/index.html"
+    ]
+  },
+  "redirect_pages_count": 39,
+  "key_findings": [
+    "3 URLs em blog/ sem arquivo físico correspondente",
+    "21 URLs em imoveis/ sem arquivo físico correspondente",
+    "3356 URLs com padrão desconhecido",
+    "0 URLs de backup",
+    "1 URLs de redirect",
+    "0 URLs da Academy",
+    "6 URLs de cases",
+    "8 URLs de cidades-expansao"
+  ]
+}

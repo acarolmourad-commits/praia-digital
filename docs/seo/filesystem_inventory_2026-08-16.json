@@ -1,0 +1,1568 @@
+{
+  "total_html": 13311,
+  "directories": [
+    {
+      "directory": "blog",
+      "html_count": 3274,
+      "total_size_bytes": 23245584,
+      "sample_files": [
+        "10-artigos-seo-litoral-paulista-2026.html",
+        "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-11-23.html",
+        "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-12-23.html",
+        "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-08-03-23.html",
+        "5-sinais-imovel-subvalorizado-litoral-2026-08-05.html",
+        "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-11-2.html",
+        "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-12-2.html",
+        "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html",
+        "ab-testing-anuncios-imobiliarios-locais-litoral-2026.html",
+        "abordagem-captacao-imoveis-alto-padrao-litoral-2026.html"
+      ]
+    },
+    {
+      "directory": "outreach",
+      "html_count": 2301,
+      "total_size_bytes": 15775635,
+      "sample_files": [
+        "acao-completa.html",
+        "acao-imediata.html",
+        "ajuda-prospeccao-whatsapp-local.html",
+        "automacao-email-praia-digital.html",
+        "avancar-negociacao-2026.html",
+        "avanco-negociacao-templates.html",
+        "batch-emails-30-2026-07-10.html",
+        "call-lead-1.html",
+        "call-lead-10.html",
+        "call-lead-101.html"
+      ]
+    },
+    {
+      "directory": "backup\\meta-descriptions",
+      "html_count": 1457,
+      "total_size_bytes": 17500879,
+      "sample_files": [
+        "10-artigos-seo-litoral-paulista-2026.html",
+        "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-11-23.html",
+        "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-07-12-23.html",
+        "3-erros-que-matam-vendas-de-temporada-no-litoral-lote-2026-08-03-23.html",
+        "5-sinais-imovel-subvalorizado-litoral-2026-08-05.html",
+        "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-11-2.html",
+        "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-07-12-2.html",
+        "5-táticas-infalíveis-para-captação-imobiliária-no-litoral-paulista-lote-2026-08-03-2.html",
+        "abordagem-captacao-imoveis-alto-padrao-litoral-2026.html",
+        "abordagem-proprietarios-whatsapp-litoral-2026.html"
+      ]
+    },
+    {
+      "directory": "outreach\\followups",
+      "html_count": 855,
+      "total_size_bytes": 3579127,
+      "sample_files": [
+        "followup-3dias-agenor-de-campos.html",
+        "followup-3dias-alpha-imóveis-blue.html",
+        "followup-3dias-alpha-imóveis-centro.html",
+        "followup-3dias-alpha-imóveis-digital.html",
+        "followup-3dias-alpha-imóveis-praia.html",
+        "followup-3dias-alpha-imóveis-prime.html",
+        "followup-3dias-alpha-imóveis-site.html",
+        "followup-3dias-alpha-imóveis-tech.html",
+        "followup-3dias-alpha-imóveis-view.html",
+        "followup-3dias-atlântico-imóveis-blue.html"
+      ]
+    },
+    {
+      "directory": "imoveis",
+      "html_count": 644,
+      "total_size_bytes": 6876116,
+      "sample_files": [
+        "apartamento-1-quartos-bertioga.html",
+        "apartamento-1-quartos-guaruja.html",
+        "apartamento-1-quartos-itanhaem.html",
+        "apartamento-1-quartos-mongagua.html",
+        "apartamento-1-quartos-peruibe.html",
+        "apartamento-1-quartos-praia-grande.html",
+        "apartamento-1-quartos-santos.html",
+        "apartamento-1-quartos-sao-vicente.html",
+        "apartamento-2-quartos-bertioga.html",
+        "apartamento-2-quartos-guaruja.html"
+      ]
+    },
+    {
+      "directory": "docs\\materiais",
+      "html_count": 623,
+      "total_size_bytes": 3999483,
+      "sample_files": [
+        "analisador-preseason-imobiliarias-gratuito-2026.html",
+        "avaliador-anuncios-imobiliarias-gratuito-2026.html",
+        "calendario-editorial-mensal-praia-digital-2026-08.html",
+        "checklist-diaria-seo-praia-digital-2026.html",
+        "faq-dinamica-parceiros-praia-digital-2026.html",
+        "ferramentas-gratuitas-especificas-imobiliarias-litoral-2026.html",
+        "gaps-auditor-seo-fechados-praia-digital-2026.html",
+        "guia-fechamento-whatsapp-parceiros-praia-digital-2026.html",
+        "guia-integracao-kit-parcerias-imobiliaria-praia-digital-2026.html",
+        "guia-seo-local-rapido-imobiliarias-litoral-2026.html"
+      ]
+    },
+    {
+      "directory": "outreach\\convites-demo-15min",
+      "html_count": 570,
+      "total_size_bytes": 3617701,
+      "sample_files": [
+        "agenor-de-campos-mongaguá-imobiliaria.html",
+        "alpha-imóveis-blue-peruíbe-gestor.html",
+        "alpha-imóveis-centro-guarujá-administradora.html",
+        "alpha-imóveis-centro-peruíbe-administradora.html",
+        "alpha-imóveis-centro-santos-administradora.html",
+        "alpha-imóveis-digital-itanhaém-corretor.html",
+        "alpha-imóveis-praia-santos-construtora.html",
+        "alpha-imóveis-prime-guarujá-corretor-autonomo.html",
+        "alpha-imóveis-site-mongaguá-corretor.html",
+        "alpha-imóveis-site-peruíbe-corretor-autonomo.html"
+      ]
+    },
+    {
+      "directory": "outreach\\por-lead",
+      "html_count": 453,
+      "total_size_bytes": 2695599,
+      "sample_files": [
+        "envio-auto-lead-1-alpha-imóveis-praia.html",
+        "envio-auto-lead-10-região-sul-praia.html",
+        "envio-auto-lead-11-imobiliária-litoral-litoral.html",
+        "envio-auto-lead-12-norte-sul-site.html",
+        "envio-auto-lead-129-riviera-business.html",
+        "envio-auto-lead-13-mar-&-sol-praia.html",
+        "envio-auto-lead-14-sol-&-mar-centro.html",
+        "envio-auto-lead-14-são-vicente-realty.html",
+        "envio-auto-lead-15-prime-imóveis-digital.html",
+        "envio-auto-lead-16-atlântico-digital.html"
+      ]
+    },
+    {
+      "directory": "outreach\\personalizados",
+      "html_count": 387,
+      "total_size_bytes": 2014631,
+      "sample_files": [
+        "email-personalizado-agenor-de-campos.html",
+        "email-personalizado-alpha-imóveis-blue.html",
+        "email-personalizado-alpha-imóveis-centro.html",
+        "email-personalizado-alpha-imóveis-digital.html",
+        "email-personalizado-alpha-imóveis-praia.html",
+        "email-personalizado-alpha-imóveis-prime.html",
+        "email-personalizado-alpha-imóveis-site.html",
+        "email-personalizado-alpha-imóveis-tech.html",
+        "email-personalizado-alpha-imóveis-view.html",
+        "email-personalizado-atlântico-imóveis-blue.html"
+      ]
+    },
+    {
+      "directory": "docs\\sales",
+      "html_count": 156,
+      "total_size_bytes": 2323338,
+      "sample_files": [
+        "ab-testing-emails-prospeccao-praia-digital-2026.html",
+        "agendador-followups-2026.html",
+        "agendamento-call-top20-2026-07-12.html",
+        "agendamento-calls-parque-estoril-2026-07-21.html",
+        "agendamento-calls.html",
+        "ativacao-piloto-automacao-2026-07-22.html",
+        "ativacao-piloto-prospeccao-360-2026-07-22.html",
+        "ativacao-unificada-3-servicos-2026-07-22.html",
+        "brief-ativacao-automacao-2026-07-22.html",
+        "briefing-matinal-comercial-praia-digital.html"
+      ]
+    },
+    {
+      "directory": "outreach\\followups-leads-reais",
+      "html_count": 150,
+      "total_size_bytes": 943769,
+      "sample_files": [
+        "followup-15d-lead-001-litoral-premium-sant.html",
+        "followup-15d-lead-002-santos-ocean-view.html",
+        "followup-15d-lead-003-santos-premium-digital.html",
+        "followup-15d-lead-004-santos-tower-imóveis.html",
+        "followup-15d-lead-005-santos-luxo.html",
+        "followup-15d-lead-006-santos-smart-home.html",
+        "followup-15d-lead-007-santos-executive.html",
+        "followup-15d-lead-008-santos-bay-homes.html",
+        "followup-15d-lead-009-santos-launch.html",
+        "followup-15d-lead-010-santos-platinum.html"
+      ]
+    },
+    {
+      "directory": "cidades",
+      "html_count": 133,
+      "total_size_bytes": 1347682,
+      "sample_files": [
+        "bertioga-academia.html",
+        "bertioga-comercial.html",
+        "bertioga-compra-programada.html",
+        "bertioga-elevador.html",
+        "bertioga-gestao-de-imovel.html",
+        "bertioga-imoveis-venda.html",
+        "bertioga-midia-profissional.html",
+        "bertioga-pet-friendly.html",
+        "bertioga-propaganda-imobiliaria.html",
+        "bertioga-residencial.html"
+      ]
+    },
+    {
+      "directory": ".",
+      "html_count": 131,
+      "total_size_bytes": 1672415,
+      "sample_files": [
+        "404.html",
+        "acoes-hoje.html",
+        "acompanhamento-prospeccao.html",
+        "automacao-imobiliarias.html",
+        "avaliacao-preco-imoveis.html",
+        "avaliacao-rapida-imovel.html",
+        "bertioga.html",
+        "captacao-imoveis-litoral.html",
+        "captura-leads.html",
+        "cases-depoimentos.html"
+      ]
+    },
+    {
+      "directory": "eventos-litoral-paulista-2026-2027",
+      "html_count": 72,
+      "total_size_bytes": 503469,
+      "sample_files": [
+        "agenda-eventos-bertioga.html",
+        "agenda-eventos-guaruja.html",
+        "agenda-eventos-itanhaem.html",
+        "agenda-eventos-mongagua.html",
+        "agenda-eventos-peruibe.html",
+        "agenda-eventos-praia-grande.html",
+        "agenda-eventos-santos.html",
+        "agenda-eventos-sao-vicente.html",
+        "bertioga.html",
+        "carnaval-bertioga.html"
+      ]
+    },
+    {
+      "directory": "litoral-prime-imoveis\\imoveis",
+      "html_count": 60,
+      "total_size_bytes": 349153,
+      "sample_files": [
+        "apartamento-cachoeira-guarujá-venda.html",
+        "apartamento-indaia-bertioga-lançamento.html",
+        "apartamento-itanhaem-itanhaém-venda.html",
+        "apartamento-jose-menino-santos-lançamento.html",
+        "apartamento-sao-vicente-são-vicente-venda.html",
+        "bertioga-bertioga-aluguel.html",
+        "bertioga-centro-lançamento.html",
+        "bertioga-mata-atlântica-venda.html",
+        "bertioga-riviera-venda.html",
+        "bertioga-sao-lourenço-aluguel.html"
+      ]
+    },
+    {
+      "directory": "outreach\\emails-followup-classificados",
+      "html_count": 50,
+      "total_size_bytes": 293206,
+      "sample_files": [
+        "001-enviar_proposta-imobiliaria-santos-centro.html",
+        "002-follow_up_7d-praia-grande-imoveis.html",
+        "003-enviar_proposta-guaruja-prime.html",
+        "004-enviar_proposta-bertioga-realty.html",
+        "005-follow_up_7d-itanhaem-imoveis.html",
+        "006-follow_up_7d-mongagua-properties.html",
+        "007-enviar_proposta-peruibe-real-estate.html",
+        "008-follow_up_90d-sao-vicente-imoveis.html",
+        "009-enviar_proposta-santos-luxo-imoveis.html",
+        "010-enviar_proposta-praia-grande-luxo.html"
+      ]
+    },
+    {
+      "directory": "outreach\\emails-personalizados",
+      "html_count": 50,
+      "total_size_bytes": 334610,
+      "sample_files": [
+        "lead-001-imobiliaria-santos-centro.html",
+        "lead-002-praia-grande-imoveis.html",
+        "lead-003-guaruja-prime.html",
+        "lead-004-bertioga-realty.html",
+        "lead-005-itanhaem-imoveis.html",
+        "lead-006-mongagua-properties.html",
+        "lead-007-peruibe-real-estate.html",
+        "lead-008-sao-vicente-imoveis.html",
+        "lead-009-santos-luxo-imoveis.html",
+        "lead-010-praia-grande-luxo.html"
+      ]
+    },
+    {
+      "directory": "docs\\sales\\onboarding",
+      "html_count": 49,
+      "total_size_bytes": 236443,
+      "sample_files": [
+        "onboarding-baixio-digital.html",
+        "onboarding-barra-digital-praia.html",
+        "onboarding-barra-norte.html",
+        "onboarding-barra-platinum.html",
+        "onboarding-bertioga-inovação.html",
+        "onboarding-bertioga-vision.html",
+        "onboarding-caiçara-digital-prime.html",
+        "onboarding-caiçara-digital-site.html",
+        "onboarding-caiçara-digital-view.html",
+        "onboarding-caiçara-executive.html"
+      ]
+    },
+    {
+      "directory": "docs\\sales\\parceiros",
+      "html_count": 49,
+      "total_size_bytes": 258875,
+      "sample_files": [
+        "parceria-baixio-digital.html",
+        "parceria-barra-digital-praia.html",
+        "parceria-barra-digital-site.html",
+        "parceria-barra-norte.html",
+        "parceria-barra-platinum.html",
+        "parceria-bertioga-inovação.html",
+        "parceria-bertioga-vision.html",
+        "parceria-beta-imóveis-site.html",
+        "parceria-caiçara-digital-prime.html",
+        "parceria-caiçara-digital-site.html"
+      ]
+    },
+    {
+      "directory": "assets",
+      "html_count": 48,
+      "total_size_bytes": 326552,
+      "sample_files": [
+        "analise-completa-imovel.html",
+        "analise-retorno-aluguel-temporada-ia.html",
+        "anuncio-parque-estoril-108-2026-07-21.html",
+        "busca-inteligente.html",
+        "cadastro-imovel-publico.html",
+        "cadastro-imovel.html",
+        "calculadora-captacao-leads-imobiliaria.html",
+        "calculadora-widget-standalone.html",
+        "calculadora-yield-cep.html",
+        "captacao-leads-imobiliaria-litoral-ia.html"
+      ]
+    },
+    {
+      "directory": "litoral-prime-imoveis\\servicos\\cidade-servico",
+      "html_count": 48,
+      "total_size_bytes": 711992,
+      "sample_files": [
+        "bertioga-automacao.html",
+        "bertioga-avaliacao.html",
+        "bertioga-captacao.html",
+        "bertioga-consultoria.html",
+        "bertioga-descricao-ia.html",
+        "bertioga-venda-imovel.html",
+        "guaruja-automacao.html",
+        "guaruja-avaliacao.html",
+        "guaruja-captacao.html",
+        "guaruja-consultoria.html"
+      ]
+    },
+    {
+      "directory": "servicos\\cidade-servico",
+      "html_count": 48,
+      "total_size_bytes": 758574,
+      "sample_files": [
+        "bertioga-automacao.html",
+        "bertioga-avaliacao.html",
+        "bertioga-captacao.html",
+        "bertioga-consultoria.html",
+        "bertioga-descricao-ia.html",
+        "bertioga-venda-imovel.html",
+        "guaruja-automacao.html",
+        "guaruja-avaliacao.html",
+        "guaruja-captacao.html",
+        "guaruja-consultoria.html"
+      ]
+    },
+    {
+      "directory": "outreach\\batch-semanal\\day1",
+      "html_count": 38,
+      "total_size_bytes": 234168,
+      "sample_files": [
+        "envio-10.html",
+        "envio-101.html",
+        "envio-109.html",
+        "envio-121.html",
+        "envio-129.html",
+        "envio-141.html",
+        "envio-161.html",
+        "envio-176.html",
+        "envio-184.html",
+        "envio-186.html"
+      ]
+    },
+    {
+      "directory": "outreach\\batch-semanal\\day3",
+      "html_count": 36,
+      "total_size_bytes": 191692,
+      "sample_files": [
+        "call-10.html",
+        "call-101.html",
+        "call-121.html",
+        "call-141.html",
+        "call-161.html",
+        "call-176.html",
+        "call-186.html",
+        "call-21.html",
+        "call-24.html",
+        "call-34.html"
+      ]
+    },
+    {
+      "directory": "outreach\\novo-ciclo",
+      "html_count": 30,
+      "total_size_bytes": 144255,
+      "sample_files": [
+        "envio-novociclo-bertioga-center.html",
+        "envio-novociclo-bertioga-executive.html",
+        "envio-novociclo-bertioga-praia.html",
+        "envio-novociclo-guarujá-blue.html",
+        "envio-novociclo-guarujá-digital.html",
+        "envio-novociclo-guarujá-platinum.html",
+        "envio-novociclo-ilhabela-center.html",
+        "envio-novociclo-ilhabela-executive.html",
+        "envio-novociclo-ilhabela-praia.html",
+        "envio-novociclo-itanhaém-launch.html"
+      ]
+    },
+    {
+      "directory": "outreach\\followups\\novo-ciclo",
+      "html_count": 28,
+      "total_size_bytes": 126911,
+      "sample_files": [
+        "followup-7dias-novociclo-bertioga-center.html",
+        "followup-7dias-novociclo-bertioga-executive.html",
+        "followup-7dias-novociclo-bertioga-praia.html",
+        "followup-7dias-novociclo-guarujá-blue.html",
+        "followup-7dias-novociclo-guarujá-digital.html",
+        "followup-7dias-novociclo-guarujá-platinum.html",
+        "followup-7dias-novociclo-ilhabela-executive.html",
+        "followup-7dias-novociclo-ilhabela-praia.html",
+        "followup-7dias-novociclo-itanhaém-launch.html",
+        "followup-7dias-novociclo-itanhaém-smart.html"
+      ]
+    },
+    {
+      "directory": "docs",
+      "html_count": 24,
+      "total_size_bytes": 79557,
+      "sample_files": [
+        "checklist-publicacao-lote-50-imoveis-2026-07-12.html",
+        "guia-anuncios-convertem-litoral-2026.html",
+        "guia-atendimento-corretores-litoral-2026.html",
+        "guia-automacao-imobiliarias-litoral-2026.html",
+        "guia-captacao-imoveis.html",
+        "guia-captacao-leads-organicos-litoral-2026.html",
+        "guia-conversao-imobiliarias-litoral-2026.html",
+        "guia-copy-anuncios-imoveis-litoral-2026.html",
+        "guia-envio-automatico.html",
+        "guia-geracao-leads-litoral-2026.html"
+      ]
+    },
+    {
+      "directory": "blog\\imoveis",
+      "html_count": 22,
+      "total_size_bytes": 177465,
+      "sample_files": [
+        "prop-apartamento-frente-mar-santos-2026.html",
+        "prop-apto-aluguel-temporada-itanhaem.html",
+        "prop-apto-bertioga-investimento.html",
+        "prop-apto-frente-mar-santos.html",
+        "prop-apto-investidor-praiagrande.html",
+        "prop-apto-peruibe-vista-mar.html",
+        "prop-apto-santos-centro.html",
+        "prop-apto-zona-norte-santos.html",
+        "prop-casa-condominio-praiagrande.html",
+        "prop-casa-familia-sao-vicente.html"
+      ]
+    },
+    {
+      "directory": "litoral-prime-imoveis\\cidades",
+      "html_count": 19,
+      "total_size_bytes": 227806,
+      "sample_files": [
+        "bertioga-imoveis-venda.html",
+        "bertioga.html",
+        "guaruja-imoveis-venda.html",
+        "guaruja.html",
+        "itanhaem-imoveis-venda.html",
+        "itanhaem.html",
+        "itanhaém.html",
+        "mongagua-imoveis-venda.html",
+        "mongagua.html",
+        "peruibe-imoveis-venda.html"
+      ]
+    },
+    {
+      "directory": "ferramentas",
+      "html_count": 18,
+      "total_size_bytes": 99630,
+      "sample_files": [
+        "airbnb-admin.html",
+        "assistente-virtual.html",
+        "avaliacao-preco.html",
+        "calculadora-diaria-ideal-airbnb-2026.html",
+        "calculadora-limpeza-airbnb-2026.html",
+        "calculadora-ocupacao-airbnb-2026.html",
+        "calculadora-roi-temporada.html",
+        "calendario-eventos-airbnb-2026.html",
+        "comparador-airbnb-aluguel-tradicional-2026.html",
+        "estimativa-faturamento-anual-airbnb-2026.html"
+      ]
+    },
+    {
+      "directory": "ferramentas-gratuitas\\captura-leads",
+      "html_count": 16,
+      "total_size_bytes": 121019,
+      "sample_files": [
+        "captura-leads-bertioga.html",
+        "captura-leads-cananeia.html",
+        "captura-leads-caraguatatuba.html",
+        "captura-leads-cidades-litoral-paulista-2026.html",
+        "captura-leads-guaruja.html",
+        "captura-leads-iguape.html",
+        "captura-leads-ilhabela.html",
+        "captura-leads-praia-grande.html",
+        "captura-leads-santos.html",
+        "captura-leads-sao-sebastiao.html"
+      ]
+    },
+    {
+      "directory": "ferramentas-gratuitas\\imobiliarias",
+      "html_count": 16,
+      "total_size_bytes": 161795,
+      "sample_files": [
+        "agendamento-visita-automatico-litoral.html",
+        "analise-retorno-temporada-litoral.html",
+        "assistente-virtual-compradores-litoral.html",
+        "calculadora-financiamento-litoral.html",
+        "checklist-captacao-imoveis-litoral.html",
+        "checklist-documentacao-imoveis-litoral.html",
+        "comparar-imoveis-litoral.html",
+        "gerador-descricao-ia.html",
+        "guia-aluguel-temporada-litoral.html",
+        "onboarding-rapido-parceiros-praia-digital-2026.html"
+      ]
+    },
+    {
+      "directory": "ia",
+      "html_count": 16,
+      "total_size_bytes": 269510,
+      "sample_files": [
+        "chat-central.html",
+        "ia-atendimento.html",
+        "ia-avaliacao.html",
+        "ia-captacao.html",
+        "ia-comercial.html",
+        "ia-conteudo.html",
+        "ia-gestao.html",
+        "ia-imagens.html",
+        "ia-investidores.html",
+        "ia-juridica.html"
+      ]
+    },
+    {
+      "directory": "outreach\\batch-semanal\\day2",
+      "html_count": 16,
+      "total_size_bytes": 86262,
+      "sample_files": [
+        "followup3-10.html",
+        "followup3-101.html",
+        "followup3-109.html",
+        "followup3-121.html",
+        "followup3-129.html",
+        "followup3-141.html",
+        "followup3-161.html",
+        "followup3-176.html",
+        "followup3-184.html",
+        "followup3-186.html"
+      ]
+    },
+    {
+      "directory": "docs\\sales\\agendamentos",
+      "html_count": 15,
+      "total_size_bytes": 94629,
+      "sample_files": [
+        "agendamento-caiçara-executive.html",
+        "agendamento-caiçara-norte.html",
+        "agendamento-embaré-digital.html",
+        "agendamento-embaré-tech.html",
+        "agendamento-gonzaga-elite.html",
+        "agendamento-ocean-blue-digital.html",
+        "agendamento-peruíbe-centro-digital.html",
+        "agendamento-peruíbe-launch.html",
+        "agendamento-região-sul-praia.html",
+        "agendamento-riviera-business.html"
+      ]
+    },
+    {
+      "directory": "docs\\sales\\onboarding\\novo-ciclo",
+      "html_count": 15,
+      "total_size_bytes": 75689,
+      "sample_files": [
+        "onboarding-bertioga-center.html",
+        "onboarding-guarujá-digital.html",
+        "onboarding-guarujá-platinum.html",
+        "onboarding-ilhabela-center.html",
+        "onboarding-itanhaém-premium.html",
+        "onboarding-mongaguá-connect.html",
+        "onboarding-peruíbe-blue.html",
+        "onboarding-praia-grande-tech.html",
+        "onboarding-santos-launch.html",
+        "onboarding-santos-premium.html"
+      ]
+    },
+    {
+      "directory": "servicos",
+      "html_count": 15,
+      "total_size_bytes": 188708,
+      "sample_files": [
+        "automacao.html",
+        "avaliacao.html",
+        "captacao.html",
+        "captura-rapida.html",
+        "checklist-leads.html",
+        "consulta-rapida.html",
+        "consultoria-proptech.html",
+        "descricao-ia.html",
+        "gestao-imoveis.html",
+        "guia-aluguel-temporada.html"
+      ]
+    },
+    {
+      "directory": "bairros\\santos",
+      "html_count": 14,
+      "total_size_bytes": 115522,
+      "sample_files": [
+        "aparecida.html",
+        "boqueirao.html",
+        "centro-historico.html",
+        "embare.html",
+        "gonzaga.html",
+        "index.html",
+        "jose-menino.html",
+        "macuco.html",
+        "paqueta.html",
+        "pompeia.html"
+      ]
+    },
+    {
+      "directory": "education\\marketing\\lead-magnets",
+      "html_count": 12,
+      "total_size_bytes": 133277,
+      "sample_files": [
+        "bertioga.html",
+        "caraguatatuba.html",
+        "guaruja.html",
+        "ilhabela.html",
+        "itanhaem.html",
+        "mongagua.html",
+        "peruibe.html",
+        "praia-grande.html",
+        "santos.html",
+        "sao-sebastiao.html"
+      ]
+    },
+    {
+      "directory": "litoral-prime-imoveis\\servicos",
+      "html_count": 12,
+      "total_size_bytes": 183536,
+      "sample_files": [
+        "automacao.html",
+        "avaliacao.html",
+        "captacao.html",
+        "captura-rapida.html",
+        "checklist-leads.html",
+        "consulta-rapida.html",
+        "consultoria-proptech.html",
+        "descricao-ia.html",
+        "guia-aluguel-temporada.html",
+        "quero-vender-imovel-litoral.html"
+      ]
+    },
+    {
+      "directory": "marketing",
+      "html_count": 12,
+      "total_size_bytes": 124500,
+      "sample_files": [
+        "calendario-conteudo-30-dias-2026.html",
+        "conteudo-redes-semana-1-2026-07-12.html",
+        "gerador-posts-redes-sociais-2026.html",
+        "hashtags-legendas-redes-2026.html",
+        "posts-redes-sociais-lote-50-imoveis-2026-07-12.html",
+        "posts-redes-sociais-semana-30-2026-07-21.html",
+        "posts-redes-sociais-semana-31-2026-07-25.html",
+        "posts-redes-sociais-semana-32-2026-08-01.html",
+        "posts-redes-sociais-semana-33-2026-08-05.html",
+        "posts-redes-sociais-semana-34-2026-08-09.html"
+      ]
+    },
+    {
+      "directory": "bairros\\guaruja",
+      "html_count": 11,
+      "total_size_bytes": 90477,
+      "sample_files": [
+        "asturias.html",
+        "enseada.html",
+        "index.html",
+        "jardim-progresso.html",
+        "jardim-sao-paulo.html",
+        "jardim-veneza.html",
+        "nova-guarau.html",
+        "pitangueiras.html",
+        "santa-maria.html",
+        "vicente-de-carvalho.html"
+      ]
+    },
+    {
+      "directory": "bairros\\praia-grande",
+      "html_count": 11,
+      "total_size_bytes": 90800,
+      "sample_files": [
+        "boqueirao.html",
+        "guilhermina.html",
+        "index.html",
+        "jardim-guanabara.html",
+        "jardim-veneza.html",
+        "ocian.html",
+        "solo-agua.html",
+        "tupi.html",
+        "tupiry.html",
+        "vila-sao-paulo.html"
+      ]
+    },
+    {
+      "directory": "landings",
+      "html_count": 11,
+      "total_size_bytes": 80936,
+      "sample_files": [
+        "landing-corretores-autonomos.html",
+        "landing-costa-verde.html",
+        "landing-financiamento-imovel-litoral-2026.html",
+        "landing-investidores-seed.html",
+        "landing-parcerias-imobiliarias.html",
+        "landing-porto-da-lua.html",
+        "landing-praia-grande.html",
+        "landing-primeiro-imovel-litoral-2026.html",
+        "landing-seguranca-imovel-litoral-2026.html",
+        "onboarding-parceiros.html"
+      ]
+    },
+    {
+      "directory": "primeiro-imovel-litoral-sp-2026",
+      "html_count": 11,
+      "total_size_bytes": 81979,
+      "sample_files": [
+        "bertioga.html",
+        "custos-ocultos-primeiro-imovel-litoral-2026.html",
+        "fgts-primeiro-imovel-litoral-2026.html",
+        "financiamento-vs-consorcio-primeiro-imovel-litoral-2026.html",
+        "guaruja.html",
+        "itanhaem.html",
+        "mongagua.html",
+        "peruibe.html",
+        "praia-grande.html",
+        "santos.html"
+      ]
+    },
+    {
+      "directory": "education\\formacoes",
+      "html_count": 10,
+      "total_size_bytes": 60074,
+      "sample_files": [
+        "avaliacao-imoveis-ptam.html",
+        "captacao-imoveis.html",
+        "documentacao-imoveis.html",
+        "financiamento-imobiliario.html",
+        "formacao-corretor-imoveis-litoral.html",
+        "formacao-fotografia-edicao-imoveis-temporada-2026.html",
+        "index.html",
+        "locacao-temporada-administracao.html",
+        "marketing-imobiliario.html",
+        "mercado-imobiliario-litoral.html"
+      ]
+    },
+    {
+      "directory": "outreach\\emails-followup-tracker",
+      "html_count": 10,
+      "total_size_bytes": 58336,
+      "sample_files": [
+        "1-enviar_proposta-ancore-realty.html",
+        "11-enviar_proposta-coral-realty-group.html",
+        "16-onboarding-harbor-real-estate.html",
+        "17-follow_up_7d-sunset-cove-realty.html",
+        "19-enviar_proposta-atlantic-dunes-homes.html",
+        "2-follow_up_7d-beachfront-brokers.html",
+        "3-onboarding-coastal-home-sales.html",
+        "5-follow_up_90d-bluewater-real-estate.html",
+        "8-onboarding-seaside-living-realty.html",
+        "9-assinatura-reef-real-estate.html"
+      ]
+    },
+    {
+      "directory": "bairros\\bertioga",
+      "html_count": 9,
+      "total_size_bytes": 72711,
+      "sample_files": [
+        "centro-historico.html",
+        "centro.html",
+        "guaratuba.html",
+        "index.html",
+        "jardim-sao-paulo.html",
+        "jardim-veneza.html",
+        "praia-do-ribeira.html",
+        "riviera.html",
+        "vila-veneza.html"
+      ]
+    },
+    {
+      "directory": "bairros\\caraguatatuba",
+      "html_count": 9,
+      "total_size_bytes": 73243,
+      "sample_files": [
+        "camburi.html",
+        "centro.html",
+        "index.html",
+        "jaguaribe.html",
+        "jaraguá.html",
+        "jardim-sao-paulo.html",
+        "massaguaçu.html",
+        "prainha.html",
+        "vila-veneza.html"
+      ]
+    },
+    {
+      "directory": "bairros\\ilhabela",
+      "html_count": 9,
+      "total_size_bytes": 72481,
+      "sample_files": [
+        "bonete.html",
+        "fumaca.html",
+        "index.html",
+        "jardim-sao-paulo.html",
+        "pernambuco.html",
+        "praia-da-enseada.html",
+        "saco-da-capela.html",
+        "vila-veneza.html",
+        "vila.html"
+      ]
+    },
+    {
+      "directory": "bairros\\itanhaem",
+      "html_count": 9,
+      "total_size_bytes": 72294,
+      "sample_files": [
+        "centro-historico.html",
+        "centro.html",
+        "condominios.html",
+        "index.html",
+        "jardim-mariana.html",
+        "jardim-sao-paulo.html",
+        "praia.html",
+        "vila-sao-joao.html",
+        "vila-veneza.html"
+      ]
+    },
+    {
+      "directory": "bairros\\mongagua",
+      "html_count": 9,
+      "total_size_bytes": 72313,
+      "sample_files": [
+        "centro-historico.html",
+        "centro.html",
+        "condominios.html",
+        "index.html",
+        "jardim-rio-branco.html",
+        "jardim-veneza.html",
+        "parque-mar.html",
+        "praia.html",
+        "vila-sao-paulo.html"
+      ]
+    },
+    {
+      "directory": "bairros\\peruibe",
+      "html_count": 9,
+      "total_size_bytes": 72067,
+      "sample_files": [
+        "centro-historico.html",
+        "centro.html",
+        "condominios.html",
+        "index.html",
+        "jardim-sao-paulo.html",
+        "jardim-veneza.html",
+        "praia.html",
+        "sao-joao-batista.html",
+        "vila-veneza.html"
+      ]
+    },
+    {
+      "directory": "bairros\\sao-sebastiao",
+      "html_count": 9,
+      "total_size_bytes": 73537,
+      "sample_files": [
+        "barra-do-sahy.html",
+        "boraceia.html",
+        "centro-historico.html",
+        "guaeca.html",
+        "index.html",
+        "jardim-sao-paulo.html",
+        "juquehy.html",
+        "maresias.html",
+        "vila-veneza.html"
+      ]
+    },
+    {
+      "directory": "bairros\\sao-vicente",
+      "html_count": 9,
+      "total_size_bytes": 73175,
+      "sample_files": [
+        "centro-historico.html",
+        "centro.html",
+        "index.html",
+        "jardim-guaruja.html",
+        "jardim-rio-branco.html",
+        "jardim.html",
+        "parque-sao-vicente.html",
+        "praia.html",
+        "vila-sao-jorge.html"
+      ]
+    },
+    {
+      "directory": "bairros\\ubatuba",
+      "html_count": 9,
+      "total_size_bytes": 71861,
+      "sample_files": [
+        "centro.html",
+        "domingues.html",
+        "index.html",
+        "itagua.html",
+        "jardim-sao-paulo.html",
+        "matarazzo.html",
+        "sao-lourenco.html",
+        "silveira.html",
+        "vila-veneza.html"
+      ]
+    },
+    {
+      "directory": "hub",
+      "html_count": 9,
+      "total_size_bytes": 47257,
+      "sample_files": [
+        "bertioga.html",
+        "guaruja.html",
+        "index.html",
+        "itanhaem.html",
+        "mongagua.html",
+        "peruibe.html",
+        "praia-grande.html",
+        "santos.html",
+        "sao-vicente.html"
+      ]
+    },
+    {
+      "directory": "personas",
+      "html_count": 9,
+      "total_size_bytes": 85058,
+      "sample_files": [
+        "airbnb-ia-2026.html",
+        "corretor-ia-2026.html",
+        "credito-ia-2026.html",
+        "documentacao-ia-2026.html",
+        "familia.html",
+        "investidor-ia-2026.html",
+        "investidor.html",
+        "primeiro-imovel.html",
+        "temporada.html"
+      ]
+    },
+    {
+      "directory": "anfitrioes",
+      "html_count": 8,
+      "total_size_bytes": 69676,
+      "sample_files": [
+        "central-airbnb.html",
+        "central-booking.html",
+        "central-priceplabs.html",
+        "central-stays.html",
+        "checklists-anfitrioes.html",
+        "diagnosticos-anfitrioes.html",
+        "index.html",
+        "tutoriais-anfitrioes.html"
+      ]
+    },
+    {
+      "directory": "blog\\mercado",
+      "html_count": 8,
+      "total_size_bytes": 53106,
+      "sample_files": [
+        "mercado-bertioga-2026.html",
+        "mercado-guaruja-2026.html",
+        "mercado-itanhaem-2026.html",
+        "mercado-mongagua-2026.html",
+        "mercado-peruibe-2026.html",
+        "mercado-praia-grande-2026.html",
+        "mercado-santos-2026.html",
+        "mercado-sao-vicente-2026.html"
+      ]
+    },
+    {
+      "directory": "cidades-expansao",
+      "html_count": 8,
+      "total_size_bytes": 85957,
+      "sample_files": [
+        "angra-dos-reis.html",
+        "balneario-camboriu.html",
+        "buzios.html",
+        "cabo-frio.html",
+        "florianopolis.html",
+        "index.html",
+        "maceio.html",
+        "porto-de-galinhas.html"
+      ]
+    },
+    {
+      "directory": "comprar-imovel-seguranca-litoral-2026",
+      "html_count": 8,
+      "total_size_bytes": 54049,
+      "sample_files": [
+        "bertioga.html",
+        "guaruja.html",
+        "itanhaem.html",
+        "mongagua.html",
+        "peruibe.html",
+        "praia-grande.html",
+        "santos.html",
+        "sao-vicente.html"
+      ]
+    },
+    {
+      "directory": "financiamento-imobiliario-litoral-sp-2026",
+      "html_count": 8,
+      "total_size_bytes": 50217,
+      "sample_files": [
+        "bertioga.html",
+        "guaruja.html",
+        "itanhaem.html",
+        "mongagua.html",
+        "peruibe.html",
+        "praia-grande.html",
+        "santos.html",
+        "sao-vicente.html"
+      ]
+    },
+    {
+      "directory": "leads",
+      "html_count": 8,
+      "total_size_bytes": 59909,
+      "sample_files": [
+        "apartamento-alto-padrao-bertioga.html",
+        "apartamento-compacto-mongagua.html",
+        "casa-duplex-guaruja.html",
+        "casa-terrea-itanhaem.html",
+        "cobertura-duplex-sao-vicente.html",
+        "santos-apartamento-vista-mar.html",
+        "sobrado-geminado-peruibe.html",
+        "studio-moderno-praia-grande.html"
+      ]
+    },
+    {
+      "directory": "litoral-prime-imoveis",
+      "html_count": 8,
+      "total_size_bytes": 144630,
+      "sample_files": [
+        "encontrar-imovel.html",
+        "guia-como-comprar-imovel-litoral.html",
+        "guia-como-comprar-imovel-temporada-litoral.html",
+        "guia-investidor-imovel-litoral.html",
+        "imoveis.html",
+        "index.html",
+        "servicos.html",
+        "sitemap.html"
+      ]
+    },
+    {
+      "directory": "litoral-prime-imoveis\\leads",
+      "html_count": 8,
+      "total_size_bytes": 65956,
+      "sample_files": [
+        "apartamento-alto-padrao-bertioga.html",
+        "apartamento-compacto-mongagua.html",
+        "casa-duplex-guaruja.html",
+        "casa-terrea-itanhaem.html",
+        "cobertura-duplex-sao-vicente.html",
+        "santos-apartamento-vista-mar.html",
+        "sobrado-geminado-peruibe.html",
+        "studio-moderno-praia-grande.html"
+      ]
+    },
+    {
+      "directory": "litoral-prime-imoveis\\outreach",
+      "html_count": 8,
+      "total_size_bytes": 398008,
+      "sample_files": [
+        "checklist-compartilhamento.html",
+        "desempenho.html",
+        "despacho.html",
+        "materiais.html",
+        "posts-redes-sociais-servicos.html",
+        "posts-redes-sociais.html",
+        "tracker-offline.html",
+        "tracker.html"
+      ]
+    },
+    {
+      "directory": "perfis",
+      "html_count": 8,
+      "total_size_bytes": 50979,
+      "sample_files": [
+        "perfil-adm_temporada.html",
+        "perfil-comprador.html",
+        "perfil-construtora.html",
+        "perfil-corretor.html",
+        "perfil-imobiliaria.html",
+        "perfil-investidor.html",
+        "perfil-proprietario.html",
+        "perfil-turista.html"
+      ]
+    },
+    {
+      "directory": "conteudo-periodico",
+      "html_count": 7,
+      "total_size_bytes": 51475,
+      "sample_files": [
+        "automacao-imobiliarias-litoral-sp-2026.html",
+        "estudo-itanhaem-2026-07-14.html",
+        "index.html",
+        "indicadores-2026-07-14.html",
+        "oportunidades-2026-07-14.html",
+        "ranking-semanal-2026-07-14.html",
+        "relatorio-semanal-2026-07-14.html"
+      ]
+    },
+    {
+      "directory": "education\\aluno",
+      "html_count": 7,
+      "total_size_bytes": 49949,
+      "sample_files": [
+        "admin.html",
+        "aula.html",
+        "certificado.html",
+        "curso.html",
+        "index.html",
+        "login.html",
+        "progresso.html"
+      ]
+    },
+    {
+      "directory": "outreach\\emails-pos-demo",
+      "html_count": 7,
+      "total_size_bytes": 30480,
+      "sample_files": [
+        "001-enviar_proposta-ancore-realty.html",
+        "003-onboarding-coastal-home-sales.html",
+        "008-onboarding-seaside-living-realty.html",
+        "009-assinatura-reef-real-estate.html",
+        "011-enviar_proposta-coral-realty-group.html",
+        "016-onboarding-harbor-real-estate.html",
+        "019-enviar_proposta-atlantic-dunes-homes.html"
+      ]
+    },
+    {
+      "directory": "cases",
+      "html_count": 6,
+      "total_size_bytes": 49862,
+      "sample_files": [
+        "case-automacao-imobiliarias-litoral-sp-2026.html",
+        "case-fechamento-centro-historico-2026.html",
+        "case-imobiliaria-porto-da-lua-35-leads-2026.html",
+        "case-recomendacao-automatica-imoveis-2026.html",
+        "case-reducao-tempo-resposta-costa-verde-2026.html",
+        "case-roi-imobiliaria-litoral-2026.html"
+      ]
+    },
+    {
+      "directory": "curso",
+      "html_count": 6,
+      "total_size_bytes": 37089,
+      "sample_files": [
+        "apostila-completa.html",
+        "bonus-email-prospeccao.html",
+        "bonus-prospeccao.html",
+        "certificado.html",
+        "exercicios.html",
+        "index.html"
+      ]
+    },
+    {
+      "directory": "docs\\sales\\acquisition-7dias",
+      "html_count": 6,
+      "total_size_bytes": 28964,
+      "sample_files": [
+        "contatos-dia1.html",
+        "dashboard.html",
+        "execucao.html",
+        "rodada1-envio.html",
+        "rodada1-execucao.html",
+        "status.html"
+      ]
+    },
+    {
+      "directory": "litoral-prime-imoveis\\bairros\\bertioga",
+      "html_count": 6,
+      "total_size_bytes": 33897,
+      "sample_files": [
+        "bertioga-bertioga.html",
+        "bertioga-centro.html",
+        "bertioga-mata-atlântica.html",
+        "bertioga-riviera.html",
+        "bertioga-são-lourenço.html",
+        "index.html"
+      ]
+    },
+    {
+      "directory": "litoral-prime-imoveis\\bairros\\guaruja",
+      "html_count": 6,
+      "total_size_bytes": 33618,
+      "sample_files": [
+        "guaruja-enseada.html",
+        "guaruja-guaruja.html",
+        "guaruja-jardim-acapulco.html",
+        "guaruja-pernambuco.html",
+        "guaruja-vila-julia.html",
+        "index.html"
+      ]
+    },
+    {
+      "directory": "litoral-prime-imoveis\\bairros\\itanhaém",
+      "html_count": 6,
+      "total_size_bytes": 33975,
+      "sample_files": [
+        "index.html",
+        "itanhaém-centro.html",
+        "itanhaém-cibratel.html",
+        "itanhaém-gaivota.html",
+        "itanhaém-itanhaém.html",
+        "itanhaém-jardim-grandesp.html"
+      ]
+    },
+    {
+      "directory": "litoral-prime-imoveis\\bairros\\mongagua",
+      "html_count": 6,
+      "total_size_bytes": 34039,
+      "sample_files": [
+        "index.html",
+        "mongagua-balneário.html",
+        "mongagua-centro.html",
+        "mongagua-mongaguá.html",
+        "mongagua-parque-turístico.html",
+        "mongagua-vila-virginia.html"
+      ]
+    },
+    {
+      "directory": "litoral-prime-imoveis\\bairros\\peruibe",
+      "html_count": 6,
+      "total_size_bytes": 33500,
+      "sample_files": [
+        "index.html",
+        "peruibe-centro.html",
+        "peruibe-costão.html",
+        "peruibe-peruíbe.html",
+        "peruibe-rio-preto.html",
+        "peruibe-vila-são-paulo.html"
+      ]
+    },
+    {
+      "directory": "litoral-prime-imoveis\\bairros\\praia grande",
+      "html_count": 6,
+      "total_size_bytes": 34163,
+      "sample_files": [
+        "index.html",
+        "praia grande-boqueirão.html",
+        "praia grande-caiçara.html",
+        "praia grande-ocian.html",
+        "praia grande-real.html",
+        "praia grande-vila-tupi.html"
+      ]
+    },
+    {
+      "directory": "litoral-prime-imoveis\\bairros\\santos",
+      "html_count": 6,
+      "total_size_bytes": 33467,
+      "sample_files": [
+        "index.html",
+        "santos-aparecida.html",
+        "santos-embaré.html",
+        "santos-gonzaga.html",
+        "santos-ponta-da-praia.html",
+        "santos-vila-nova.html"
+      ]
+    },
+    {
+      "directory": "litoral-prime-imoveis\\bairros\\sao vicente",
+      "html_count": 6,
+      "total_size_bytes": 34436,
+      "sample_files": [
+        "index.html",
+        "sao vicente-centro.html",
+        "sao vicente-gonzaguinha.html",
+        "sao vicente-itararé.html",
+        "sao vicente-são-vicente.html",
+        "sao vicente-vila-margarida.html"
+      ]
+    },
+    {
+      "directory": "docs\\partners",
+      "html_count": 5,
+      "total_size_bytes": 43409,
+      "sample_files": [
+        "captura-automatica-parceiros-2026.html",
+        "captura-parceiros-por-cidade-2026.html",
+        "checklist-parceiros-2026.html",
+        "onboarding-parceiros-2026.html",
+        "playbook-onboarding-parceiros-2026.html"
+      ]
+    },
+    {
+      "directory": "exclusivos",
+      "html_count": 5,
+      "total_size_bytes": 57873,
+      "sample_files": [
+        "comunidade-corretores-investidores.html",
+        "conteudo-rec-2026.html",
+        "estudo-santos-2026.html",
+        "rankings-exclusivos-2026.html",
+        "relatorio-mercado-2026.html"
+      ]
+    },
+    {
+      "directory": "outreach\\emails-brevo-lote-30-2026-07-10",
+      "html_count": 5,
+      "total_size_bytes": 31342,
+      "sample_files": [
+        "versao-a-seo-local.html",
+        "versao-b-anuncios.html",
+        "versao-c-assistente-whatsapp.html",
+        "versao-d-cases.html",
+        "versao-e-curta.html"
+      ]
+    },
+    {
+      "directory": "outreach\\envio-piloto-5-hoje",
+      "html_count": 5,
+      "total_size_bytes": 33029,
+      "sample_files": [
+        "envio-piloto-1-litoral-premium-sant.html",
+        "envio-piloto-2-santos-ocean-view.html",
+        "envio-piloto-3-santos-premium-digital.html",
+        "envio-piloto-4-santos-tower-imóveis.html",
+        "envio-piloto-5-santos-luxo.html"
+      ]
+    },
+    {
+      "directory": "propostas",
+      "html_count": 5,
+      "total_size_bytes": 42424,
+      "sample_files": [
+        "apresentacao-parceria-imobiliaria.html",
+        "contrato-parceria-digital-padrao.html",
+        "proposta-automacao-imobiliarias-2026.html",
+        "proposta-comercial-ia-padrao.html",
+        "proposta-personalizada-por-lead.html"
+      ]
+    },
+    {
+      "directory": "assets\\ferramentas",
+      "html_count": 4,
+      "total_size_bytes": 33707,
+      "sample_files": [
+        "captura-manual-leads-imobiliarias-2026.html",
+        "checklist-automatizacao-corretores-litoral-2026.html",
+        "recomendacao-automatica-imoveis-litoral-2026.html",
+        "simulador-roi-parcerias-imobiliarias-2026.html"
+      ]
+    },
+    {
+      "directory": "assets\\simples",
+      "html_count": 4,
+      "total_size_bytes": 33667,
+      "sample_files": [
+        "checklist-captacao-leads-litoral-30dias.html",
+        "modelo-receita-ia-imobiliaria-sem-taxa.html",
+        "proposta-comercial-padrao-imobiliaria.html",
+        "recomendacoes-ia-imobiliaria-litoral-30dias.html"
+      ]
+    },
+    {
+      "directory": "docs\\product",
+      "html_count": 4,
+      "total_size_bytes": 24748,
+      "sample_files": [
+        "dashboard-expansao.html",
+        "exemplo-embed-whitelabel.html",
+        "ranking-whitelabel.html",
+        "relatorio-expansao-executivo.html"
+      ]
+    },
+    {
+      "directory": "docs\\sales\\backups\\backup-2026-07-14",
+      "html_count": 4,
+      "total_size_bytes": 38688,
+      "sample_files": [
+        "central-comando-praia-digital.html",
+        "execucao-diaria-2026-07-14.html",
+        "followup-lote-74-2026-07-14.html",
+        "lote-prospeccao-74-bertioga-2026-07-14.html"
+      ]
+    },
+    {
+      "directory": "dono-norte",
+      "html_count": 4,
+      "total_size_bytes": 44710,
+      "sample_files": [
+        "dono-caraguatatuba.html",
+        "dono-ilhabela.html",
+        "dono-sao-sebastiao.html",
+        "dono-ubatuba.html"
+      ]
+    },
+    {
+      "directory": "investidores",
+      "html_count": 4,
+      "total_size_bytes": 31112,
+      "sample_files": [
+        "index.html",
+        "one-pager-2026.html",
+        "pitch-deck-2026.html",
+        "pitch-deck-proptech-2026.html"
+      ]
+    },
+    {
+      "directory": "litoral-prime-imoveis\\docs",
+      "html_count": 4,
+      "total_size_bytes": 60174,
+      "sample_files": [
+        "briefing-diario.html",
+        "duvidas-frequentes.html",
+        "guia-rapido.html",
+        "relatorio-diario-litoral-prime.html"
+      ]
+    },
+    {
+      "directory": "newsletter",
+      "html_count": 4,
+      "total_size_bytes": 31103,
+      "sample_files": [
+        "assinatura.html",
+        "edicao-001.html",
+        "edicao-01.html",
+        "edicao-edicao-unica-2026.html"
+      ]
+    },
+    {
+      "directory": "outreach\\batch-hoje",
+      "html_count": 4,
+      "total_size_bytes": 21026,
+      "sample_files": [
+        "day2-followup-3dias-lead-1.html",
+        "day2-followup-7dias-lead-1.html",
+        "day3-followup-3dias-lead-1.html",
+        "day3-followup-7dias-lead-1.html"
+      ]
+    },
+    {
+      "directory": "parcerias-norte",
+      "html_count": 4,
+      "total_size_bytes": 28277,
+      "sample_files": [
+        "parceria-caraguatatuba.html",
+        "parceria-ilhabela.html",
+        "parceria-sao-sebastiao.html",
+        "parceria-ubatuba.html"
+      ]
+    },
+    {
+      "directory": "proptech",
+      "html_count": 4,
+      "total_size_bytes": 32069,
+      "sample_files": [
+        "home.html",
+        "index.html",
+        "plano-7-dias.html",
+        "servicos-ia.html"
+      ]
+    },
+    {
+      "directory": "docs\\inteligencia",
+      "html_count": 3,
+      "total_size_bytes": 19304,
+      "sample_files": [
+        "arquivo-boletins.html",
+        "boletim-2026-07-17.html",
+        "boletim-diario.html"
+      ]
+    },
+    {
+      "directory": "docs\\sales\\backups\\backup-2026-07-12",
+      "html_count": 3,
+      "total_size_bytes": 24883,
+      "sample_files": [
+        "briefing-matinal-comercial-praia-digital.html",
+        "pacote-execucao-final-2026-07-12.html",
+        "top-leads-prontas-2026-07-12.html"
+      ]
+    }
+  ],
+  "top_level_dirs": {
+    "404.html": 1,
+    "acoes-hoje.html": 1,
+    "acompanhamento-prospeccao.html": 1,
+    "automacao-imobiliarias.html": 1,
+    "avaliacao-preco-imoveis.html": 1,
+    "avaliacao-rapida-imovel.html": 1,
+    "bertioga.html": 1,
+    "captacao-imoveis-litoral.html": 1,
+    "captura-leads.html": 1,
+    "cases-depoimentos.html": 1,
+    "cases-rapidos-parcerias.html": 1,
+    "cases.html": 1,
+    "central-comando-praia-digital.html": 1,
+    "checklist-corretores-litoral-download.html": 1,
+    "comparativo-cidades-litoral-por-perfil-2026.html": 1,
+    "comprar-imovel-seguranca-litoral-2026.html": 1,
+    "consorcio.html": 1,
+    "consultoria-transformacao-digital-imobiliarias.html": 1,
+    "contato.html": 1,
+    "curso-gratis-captar-leads-litoral-7-dias.html": 1,
+    "dashboard-automacao-imobiliarias.html": 1,
+    "dashboard-prospeccao.html": 1,
+    "descricao-imoveis-ia.html": 1,
+    "encontrar-imovel.html": 1,
+    "eventos-litoral-paulista-2026-2027.html": 1,
+    "expansao-nacional-litoral-paulista.html": 1,
+    "faq-automacao-imobiliarias-2026.html": 1,
+    "faq-avaliacao-preco-imoveis-2026.html": 1,
+    "faq-captacao-imoveis-litoral-2026.html": 1,
+    "faq-consultoria-transformacao-digital-2026.html": 1,
+    "faq-descricao-imoveis-ia-2026.html": 1,
+    "faq-parceiros.html": 1,
+    "faq-parcerias.html": 1,
+    "faq-seo-local-imobiliarias-2026.html": 1,
+    "faq-solucao-proptech-unificada-2026.html": 1,
+    "faq.html": 1,
+    "financiamento-imobiliario-litoral-sp-2026.html": 1,
+    "form-tracker.html": 1,
+    "guaruja.html": 1,
+    "guia-como-comprar-imovel-litoral.html": 1,
+    "guia-como-comprar-imovel-temporada-litoral.html": 1,
+    "guia-investidor-imovel-litoral.html": 1,
+    "imoveis.html": 1,
+    "index.html": 1,
+    "investidores.html": 1,
+    "itanhaem.html": 1,
+    "kit-vendas-b2b-2026.html": 1,
+    "landing-captacao-leads.html": 1,
+    "landing-captura-leads-litoral.html": 1,
+    "landing-parcerias-anuncios.html": 1
+  }
+}
