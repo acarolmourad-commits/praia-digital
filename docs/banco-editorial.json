@@ -85669,6 +85669,226 @@
           "has_cta": true
         }
       ]
+    },
+    {
+      "date": "2026-08-17T08:14:16.672103+00:00",
+      "checked": 10,
+      "failed": 1,
+      "failed_slugs": [
+        "litoralsp-como-calcular-a-rentabilidade-de-um-imovel-de-temporada-no-litoral-de-sp-em-2026"
+      ],
+      "results": [
+        {
+          "slug": "praiagrande-melhor-cidade-para-investir-no-litoral",
+          "file": "praiagrande-melhor-cidade-para-investir-no-litoral.html",
+          "valid": true,
+          "issues": [],
+          "size": 1222,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "praiagrande-investir-em-imovel-no-litoral-vale-a-pena-em-praia-grande",
+          "file": "praiagrande-investir-em-imovel-no-litoral-vale-a-pena-em-praia-grande.html",
+          "valid": true,
+          "issues": [],
+          "size": 1523,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "litoralsp-como-calcular-a-rentabilidade-de-um-imovel-de-temporada-no-litoral-de-sp-em-2026",
+          "file": "litoralsp-como-calcular-a-rentabilidade-de-um-imovel-de-temporada-no-litoral-de-sp-em-2026.html",
+          "valid": false,
+          "issues": [
+            "missing_cta_or_whatsapp"
+          ],
+          "size": 1591,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": false
+        },
+        {
+          "slug": "santos-alugar-apartamento-verao-santos-em-santos",
+          "file": "santos-alugar-apartamento-verao-santos-em-santos.html",
+          "valid": true,
+          "issues": [],
+          "size": 1431,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "santos-santos-checklist-de-automacao-imobiliaria-guia-2026",
+          "file": "santos-santos-checklist-de-automacao-imobiliaria-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1252,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "santos-santos-curso-de-automacao-imobiliaria-guia-2026",
+          "file": "santos-santos-curso-de-automacao-imobiliaria-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1228,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "maresias-maresias-checklist-para-locacao-de-temporada-guia-2026",
+          "file": "maresias-maresias-checklist-para-locacao-de-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1281,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "maresias-maresias-curso-de-locacao-de-temporada-guia-2026",
+          "file": "maresias-maresias-curso-de-locacao-de-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1245,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-ubatuba-guia-para-locacao-de-temporada-analise-2026",
+          "file": "ubatuba-ubatuba-guia-para-locacao-de-temporada-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1260,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-ubatuba-checklist-para-locacao-de-temporada-guia-2026",
+          "file": "ubatuba-ubatuba-checklist-para-locacao-de-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1272,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
+    },
+    {
+      "date": "2026-08-17T08:15:27.763110+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "litoralsp-como-calcular-a-rentabilidade-de-um-imovel-de-temporada-no-litoral-de-sp-em-2026",
+          "file": "litoralsp-como-calcular-a-rentabilidade-de-um-imovel-de-temporada-no-litoral-de-sp-em-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1562,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "praiagrande-melhor-cidade-para-investir-no-litoral",
+          "file": "praiagrande-melhor-cidade-para-investir-no-litoral.html",
+          "valid": true,
+          "issues": [],
+          "size": 1222,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "praiagrande-investir-em-imovel-no-litoral-vale-a-pena-em-praia-grande",
+          "file": "praiagrande-investir-em-imovel-no-litoral-vale-a-pena-em-praia-grande.html",
+          "valid": true,
+          "issues": [],
+          "size": 1523,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "santos-alugar-apartamento-verao-santos-em-santos",
+          "file": "santos-alugar-apartamento-verao-santos-em-santos.html",
+          "valid": true,
+          "issues": [],
+          "size": 1431,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "santos-santos-checklist-de-automacao-imobiliaria-guia-2026",
+          "file": "santos-santos-checklist-de-automacao-imobiliaria-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1252,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "santos-santos-curso-de-automacao-imobiliaria-guia-2026",
+          "file": "santos-santos-curso-de-automacao-imobiliaria-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1228,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "maresias-maresias-checklist-para-locacao-de-temporada-guia-2026",
+          "file": "maresias-maresias-checklist-para-locacao-de-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1281,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "maresias-maresias-curso-de-locacao-de-temporada-guia-2026",
+          "file": "maresias-maresias-curso-de-locacao-de-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1245,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-ubatuba-guia-para-locacao-de-temporada-analise-2026",
+          "file": "ubatuba-ubatuba-guia-para-locacao-de-temporada-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1260,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ubatuba-ubatuba-checklist-para-locacao-de-temporada-guia-2026",
+          "file": "ubatuba-ubatuba-checklist-para-locacao-de-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1272,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
     }
   ]
 }
