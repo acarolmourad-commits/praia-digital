@@ -4,58 +4,8 @@
   "failed": 0,
   "results": [
     {
-      "slug": "caraguatatuba-caraguatatuba-guia-para-locacao-de-temporada-analise-2026",
-      "file": "caraguatatuba-caraguatatuba-guia-para-locacao-de-temporada-analise-2026.html",
-      "valid": true,
-      "issues": [],
-      "size": 1314,
-      "internal_links": 2,
-      "in_sitemap": true,
-      "has_cta": true
-    },
-    {
-      "slug": "caraguatatuba-caraguatatuba-checklist-para-locacao-de-temporada-guia-2026",
-      "file": "caraguatatuba-caraguatatuba-checklist-para-locacao-de-temporada-guia-2026.html",
-      "valid": true,
-      "issues": [],
-      "size": 1326,
-      "internal_links": 2,
-      "in_sitemap": true,
-      "has_cta": true
-    },
-    {
-      "slug": "caraguatatuba-caraguatatuba-curso-de-locacao-de-temporada-guia-2026",
-      "file": "caraguatatuba-caraguatatuba-curso-de-locacao-de-temporada-guia-2026.html",
-      "valid": true,
-      "issues": [],
-      "size": 1290,
-      "internal_links": 2,
-      "in_sitemap": true,
-      "has_cta": true
-    },
-    {
-      "slug": "peruibe-peruibe-guia-para-locacao-de-temporada-analise-2026",
-      "file": "peruibe-peruibe-guia-para-locacao-de-temporada-analise-2026.html",
-      "valid": true,
-      "issues": [],
-      "size": 1260,
-      "internal_links": 2,
-      "in_sitemap": true,
-      "has_cta": true
-    },
-    {
-      "slug": "peruibe-peruibe-checklist-para-locacao-de-temporada-guia-2026",
-      "file": "peruibe-peruibe-checklist-para-locacao-de-temporada-guia-2026.html",
-      "valid": true,
-      "issues": [],
-      "size": 1272,
-      "internal_links": 2,
-      "in_sitemap": true,
-      "has_cta": true
-    },
-    {
-      "slug": "peruibe-peruibe-curso-de-locacao-de-temporada-guia-2026",
-      "file": "peruibe-peruibe-curso-de-locacao-de-temporada-guia-2026.html",
+      "slug": "ubatuba-ubatuba-curso-de-locacao-de-temporada-guia-2026",
+      "file": "ubatuba-ubatuba-curso-de-locacao-de-temporada-guia-2026.html",
       "valid": true,
       "issues": [],
       "size": 1236,
@@ -64,8 +14,68 @@
       "has_cta": true
     },
     {
-      "slug": "mongagua-mongagua-guia-para-locacao-de-temporada-analise-2026",
-      "file": "mongagua-mongagua-guia-para-locacao-de-temporada-analise-2026.html",
+      "slug": "saovicente-sao-vicente-guia-para-locacao-de-temporada-analise-2026",
+      "file": "saovicente-sao-vicente-guia-para-locacao-de-temporada-analise-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 1295,
+      "internal_links": 2,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "saovicente-sao-vicente-checklist-para-locacao-de-temporada-guia-2026",
+      "file": "saovicente-sao-vicente-checklist-para-locacao-de-temporada-guia-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 1307,
+      "internal_links": 2,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "saovicente-sao-vicente-curso-de-locacao-de-temporada-guia-2026",
+      "file": "saovicente-sao-vicente-curso-de-locacao-de-temporada-guia-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 1271,
+      "internal_links": 2,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "saosebastiao-sao-sebastiao-guia-para-locacao-de-temporada-analise-2026",
+      "file": "saosebastiao-sao-sebastiao-guia-para-locacao-de-temporada-analise-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 1313,
+      "internal_links": 2,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "saosebastiao-sao-sebastiao-checklist-para-locacao-de-temporada-guia-2026",
+      "file": "saosebastiao-sao-sebastiao-checklist-para-locacao-de-temporada-guia-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 1325,
+      "internal_links": 2,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "saosebastiao-sao-sebastiao-curso-de-locacao-de-temporada-guia-2026",
+      "file": "saosebastiao-sao-sebastiao-curso-de-locacao-de-temporada-guia-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 1289,
+      "internal_links": 2,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "ilhabela-ilhabela-guia-para-locacao-de-temporada-analise-2026",
+      "file": "ilhabela-ilhabela-guia-para-locacao-de-temporada-analise-2026.html",
       "valid": true,
       "issues": [],
       "size": 1269,
@@ -74,8 +84,8 @@
       "has_cta": true
     },
     {
-      "slug": "mongagua-mongagua-checklist-para-locacao-de-temporada-guia-2026",
-      "file": "mongagua-mongagua-checklist-para-locacao-de-temporada-guia-2026.html",
+      "slug": "ilhabela-ilhabela-checklist-para-locacao-de-temporada-guia-2026",
+      "file": "ilhabela-ilhabela-checklist-para-locacao-de-temporada-guia-2026.html",
       "valid": true,
       "issues": [],
       "size": 1281,
@@ -84,21 +94,11 @@
       "has_cta": true
     },
     {
-      "slug": "mongagua-mongagua-curso-de-locacao-de-temporada-guia-2026",
-      "file": "mongagua-mongagua-curso-de-locacao-de-temporada-guia-2026.html",
+      "slug": "ilhabela-ilhabela-curso-de-locacao-de-temporada-guia-2026",
+      "file": "ilhabela-ilhabela-curso-de-locacao-de-temporada-guia-2026.html",
       "valid": true,
       "issues": [],
       "size": 1245,
-      "internal_links": 2,
-      "in_sitemap": true,
-      "has_cta": true
-    },
-    {
-      "slug": "itanhaem-itanhaem-guia-para-locacao-de-temporada-analise-2026",
-      "file": "itanhaem-itanhaem-guia-para-locacao-de-temporada-analise-2026.html",
-      "valid": true,
-      "issues": [],
-      "size": 1269,
       "internal_links": 2,
       "in_sitemap": true,
       "has_cta": true

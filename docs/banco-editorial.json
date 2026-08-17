@@ -85561,6 +85561,114 @@
           "has_cta": true
         }
       ]
+    },
+    {
+      "date": "2026-08-17T08:06:45.365723+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "ubatuba-ubatuba-curso-de-locacao-de-temporada-guia-2026",
+          "file": "ubatuba-ubatuba-curso-de-locacao-de-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1236,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "saovicente-sao-vicente-guia-para-locacao-de-temporada-analise-2026",
+          "file": "saovicente-sao-vicente-guia-para-locacao-de-temporada-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1295,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "saovicente-sao-vicente-checklist-para-locacao-de-temporada-guia-2026",
+          "file": "saovicente-sao-vicente-checklist-para-locacao-de-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1307,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "saovicente-sao-vicente-curso-de-locacao-de-temporada-guia-2026",
+          "file": "saovicente-sao-vicente-curso-de-locacao-de-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1271,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "saosebastiao-sao-sebastiao-guia-para-locacao-de-temporada-analise-2026",
+          "file": "saosebastiao-sao-sebastiao-guia-para-locacao-de-temporada-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1313,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "saosebastiao-sao-sebastiao-checklist-para-locacao-de-temporada-guia-2026",
+          "file": "saosebastiao-sao-sebastiao-checklist-para-locacao-de-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1325,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "saosebastiao-sao-sebastiao-curso-de-locacao-de-temporada-guia-2026",
+          "file": "saosebastiao-sao-sebastiao-curso-de-locacao-de-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1289,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ilhabela-ilhabela-guia-para-locacao-de-temporada-analise-2026",
+          "file": "ilhabela-ilhabela-guia-para-locacao-de-temporada-analise-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1269,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ilhabela-ilhabela-checklist-para-locacao-de-temporada-guia-2026",
+          "file": "ilhabela-ilhabela-checklist-para-locacao-de-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1281,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ilhabela-ilhabela-curso-de-locacao-de-temporada-guia-2026",
+          "file": "ilhabela-ilhabela-curso-de-locacao-de-temporada-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1245,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
     }
   ]
 }
