@@ -63,6 +63,8 @@ def generate_article(target, template=None):
     meta_desc = target.get('meta_description') or ''
     cta = target.get('recommended_cta') or 'Fale conosco pelo WhatsApp: (11) 95434-6288.'
     hotmart = target.get('hotmart_link') or 'https://wa.me/5511954346288'
+    if 'wa.me' not in hotmart:
+        cta = cta + ' Fale conosco pelo WhatsApp: (11) 95434-6288.'
     
     slug = slugify(f"{city} {title}")
     filename = f"{slug}.html"
