@@ -39769,5 +39769,15 @@
     "status": "published",
     "data": "2026-08-16",
     "nota": "Piloto único de hub vivo. Dados dinâmicos marcados como indisponíveis até integração de fontes."
+  },
+  "ia-para-imobiliarias": {
+    "slug": "ia-para-imobiliarias",
+    "title": "IA para Imobiliárias — Agente Personalizado | Praia Digital",
+    "path": "solucoes/ia-para-imobiliarias.html",
+    "tipo": "solucoes",
+    "cidade": "brasil",
+    "status": "published",
+    "data": "2026-08-16",
+    "nota": "Página pilar de IA para imobiliárias. Posicionamento: agente personalizado, não chatbot genérico."
   }
 }
