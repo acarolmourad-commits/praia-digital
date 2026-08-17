@@ -84481,6 +84481,114 @@
           "has_cta": true
         }
       ]
+    },
+    {
+      "date": "2026-08-17T06:54:21.611817+00:00",
+      "checked": 10,
+      "failed": 0,
+      "failed_slugs": [],
+      "results": [
+        {
+          "slug": "ilhabela-ilhabela-checklist-para-venda-de-imoveis-guia-2026",
+          "file": "ilhabela-ilhabela-checklist-para-venda-de-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1275,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "ilhabela-ilhabela-curso-para-corretor-de-imoveis-guia-2026",
+          "file": "ilhabela-ilhabela-curso-para-corretor-de-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1269,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "caraguatatuba-caraguatatuba-curso-para-corretor-de-imoveis-guia-2026",
+          "file": "caraguatatuba-caraguatatuba-curso-para-corretor-de-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1314,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "peruibe-peruibe-checklist-para-venda-de-imoveis-guia-2026",
+          "file": "peruibe-peruibe-checklist-para-venda-de-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1266,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "peruibe-peruibe-curso-para-corretor-de-imoveis-guia-2026",
+          "file": "peruibe-peruibe-curso-para-corretor-de-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1260,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "mongagua-mongagua-checklist-para-venda-de-imoveis-guia-2026",
+          "file": "mongagua-mongagua-checklist-para-venda-de-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1275,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "mongagua-mongagua-curso-para-corretor-de-imoveis-guia-2026",
+          "file": "mongagua-mongagua-curso-para-corretor-de-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1269,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "itanhaem-itanhaem-checklist-para-venda-de-imoveis-guia-2026",
+          "file": "itanhaem-itanhaem-checklist-para-venda-de-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1275,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "itanhaem-itanhaem-curso-para-corretor-de-imoveis-guia-2026",
+          "file": "itanhaem-itanhaem-curso-para-corretor-de-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1269,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "bertioga-bertioga-curso-para-corretor-de-imoveis-guia-2026",
+          "file": "bertioga-bertioga-curso-para-corretor-de-imoveis-guia-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1269,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        }
+      ]
     }
   ]
 }
