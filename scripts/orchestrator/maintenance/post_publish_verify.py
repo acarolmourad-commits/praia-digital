@@ -56,7 +56,15 @@ def verify_article(html_path: Path, sitemap_slugs: set) -> dict:
 
     # 2. Internal links
     hrefs = re.findall(r'href=["\']([^"\']+)["\']', txt, re.I)
-    internal = [h for h in hrefs if h.startswith('/blog/') or h.startswith('/education/') or h.startswith('/noticias/')]
+    internal = []
+    for h in hrefs:
+        if h.startswith(('/blog/', '/education/', '/noticias/', 'blog/', 'education/', 'noticias/')):
+            internal.append(h)
+            continue
+        if h.startswith(('http://', 'https://', '//', '#', 'mailto:', 'tel:')):
+            continue
+        if h.endswith('.html') or h.endswith('.htm'):
+            internal.append(h)
     if len(internal) < MIN_INTERNAL_LINKS:
         issues.append(f'insufficient_internal_links:{len(internal)}')
 
