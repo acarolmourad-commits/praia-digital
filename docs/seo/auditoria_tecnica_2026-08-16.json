@@ -1,0 +1,48 @@
+{
+  "site_info": {
+    "blog_html_count": 3274,
+    "sitemap_exists": true,
+    "robots_exists": true
+  },
+  "technical": {
+    "sample_size": 50,
+    "title_missing_count": 0,
+    "h1_missing_count": 0,
+    "meta_desc_missing_count": 4,
+    "canonical_missing_count": 1,
+    "duplicate_titles": [
+      [
+        "Redirecionando...",
+        4
+      ]
+    ],
+    "duplicate_h1": [
+      [
+        "Redirecionando...",
+        4
+      ]
+    ],
+    "near_duplicate_groups": 0,
+    "schema_types_found": {
+      "Organization": 104,
+      "ListItem": 93,
+      "Question": 86,
+      "Answer": 86,
+      "FAQPage": 32,
+      "BreadcrumbList": 31,
+      "BlogPosting": 31,
+      "Article": 21,
+      "ImageObject": 21
+    },
+    "external_links_issues_count": 262
+  },
+  "content": {
+    "total_blog_pages": 3274,
+    "sample_audited": 50,
+    "near_duplicate_groups": 0
+  },
+  "links": {},
+  "ecommerce": {},
+  "architecture": {},
+  "priorities": []
+}

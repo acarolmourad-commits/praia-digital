@@ -1,0 +1,112 @@
+{
+  "city_coverage": {
+    "bertioga": 1490,
+    "santos": 1470,
+    "ubatuba": 162,
+    "ilhabela": 156,
+    "sao-sebastiao": 114,
+    "guaruja": 105,
+    "caraguatatuba": 100,
+    "praia-grande": 87,
+    "peruibe": 80,
+    "sao-vicente": 77,
+    "mongagua": 76,
+    "itanhaem": 76,
+    "cananeia": 22,
+    "barra-do-sul": 6,
+    "ilha-comprida": 6,
+    "jureia": 6
+  },
+  "topic_coverage": {
+    "praia": 3232,
+    "temporada": 1902,
+    "bairro": 1678,
+    "aluguel": 1661,
+    "mercado": 1503,
+    "preco": 1334,
+    "investimento": 1227,
+    "corretor": 1074,
+    "regras": 345,
+    "financiamento": 253,
+    "iptu": 194,
+    "seguro": 144,
+    "gestao": 127,
+    "anuncio": 127,
+    "avaliacao": 104,
+    "impostos": 101,
+    "escritura": 101,
+    "documentacao": 98,
+    "proprietario": 76,
+    "fotografia": 50,
+    "airbnb": 48,
+    "condominio": 44,
+    "booking": 34,
+    "edicao": 33,
+    "diagnostico": 28,
+    "alta-temporada": 15,
+    "administracao": 10,
+    "baixa-temporada": 10,
+    "anfitriao": 4,
+    "reveillon": 3,
+    "ferias": 2,
+    "surf": 2
+  },
+  "orphan_pages_count": 45,
+  "orphan_pages_sample": [
+    "ab-testing-anuncios-imobiliarios-locais-litoral-2026.html",
+    "analise-comparativa-mercado-imobiliario-cidades-litoral-2026.html",
+    "automacao-orcamento-anuncios-imobiliarias-pequenas-litoral-2026.html",
+    "case-de-sucesso-casa-home-management-gestao-temporada-2026.html",
+    "case-de-sucesso-corretor-venda-rapida-litoral-2026.html",
+    "case-de-sucesso-imobiliaria-captacao-lideranca-litoral-2026.html",
+    "case-de-sucesso-investidor-flipping-litoral-2026.html",
+    "case-de-sucesso-proprietario-imovel-alto-padrao-litoral-2026.html",
+    "certidao-onus-matricula-imovel-litoral-2026.html",
+    "checklist-seo-local-imobiliarias-litoral-2026.html"
+  ],
+  "internal_broken_links_count": 0,
+  "internal_broken_links_sample": [],
+  "external_links_count": 15108,
+  "external_links_sample": [
+    {
+      "from": "10-artigos-seo-litoral-paulista-2026.html",
+      "to": "https://images.unsplash.com"
+    },
+    {
+      "from": "10-artigos-seo-litoral-paulista-2026.html",
+      "to": "https://fonts.googleapis.com"
+    },
+    {
+      "from": "10-artigos-seo-litoral-paulista-2026.html",
+      "to": "https://cdn.jsdelivr.net"
+    },
+    {
+      "from": "10-artigos-seo-litoral-paulista-2026.html",
+      "to": "https://wa.me"
+    },
+    {
+      "from": "10-artigos-seo-litoral-paulista-2026.html",
+      "to": "https://api.qrserver.com"
+    },
+    {
+      "from": "10-artigos-seo-litoral-paulista-2026.html",
+      "to": "https://fonts.googleapis.com"
+    },
+    {
+      "from": "10-artigos-seo-litoral-paulista-2026.html",
+      "to": "https://cdn.jsdelivr.net"
+    },
+    {
+      "from": "10-artigos-seo-litoral-paulista-2026.html",
+      "to": "https://images.unsplash.com"
+    },
+    {
+      "from": "10-artigos-seo-litoral-paulista-2026.html",
+      "to": "https://wa.me"
+    },
+    {
+      "from": "10-artigos-seo-litoral-paulista-2026.html",
+      "to": "https://api.qrserver.com"
+    }
+  ]
+}
