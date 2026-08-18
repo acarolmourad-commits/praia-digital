@@ -1,22 +1,23 @@
 # Painel de monitoramento — resultados, não atividade
-Data de referência: 2026-08-15
-Período de observação: até 2026-08-25
+Data de referência: 2026-08-18
+Período de observação: até 25/08
 
-## Métricas de resultado
-- Respostas: 0
-- Respostas positivas: 0
+## KPIs de resultado
+- Taxa de resposta: 0% (0/6)
+- Taxa de resposta positiva: 0% (0/6)
 - Pedidos de preço: 0
-- Agendamentos: 0
-- Handoffs: 0
-- Leads encerrados: 0
-- Leads bloqueados: 0
+- Pedidos de agendamento: 0
+- Propostas apresentadas: 0
+- Vendas fechadas: 0
+- Receita por serviço: R$ 0
+- Objeções recorrentes: nenhuma até o momento
 
-## Estado do follow-up
-- D0 enviado: 6 leads em 2026-08-15
-- D2 agendado: 2026-08-17 (após 2 dias sem resposta)
-- D5 agendado: 2026-08-22
-- D10 agendado: 2026-08-27
+## Estado operacional
+- Motor A: 6 leads `ENVIADO_D2`; sem respostas registradas até 18/08 00:00
+- Motor B: coleta orgânica ativa; sem alterações
+- Próximo gatilho Motor A: D5 em 20/08
+- Próxima atualização relevante: 20/08
 
-## Regra ativa
+## Regra válida
 Sem nova prospecção até 25/08.
-Foco exclusivo em métricas de resultado, não atividade.
+Sem alteração de oferta, diagnóstico ou infraestrutura até dados reais.
