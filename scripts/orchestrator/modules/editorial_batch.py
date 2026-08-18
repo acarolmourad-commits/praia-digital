@@ -10,7 +10,7 @@ from datetime import datetime
 from collections import defaultdict
 
 from editorial_expansion import load_bank, get_expansion_targets, validate_slug
-from article_generator import generate_article, load_template
+from article_generator import generate_article, load_template, validate_generated_article, PublicationGateError
 
 REPO = Path(__file__).resolve().parents[3]
 BLOG_DIR = REPO / 'blog'
@@ -133,6 +133,7 @@ def generate_batch(batch_size=10, dry_run=False, start_from=0):
                     skipped.append({'target': target.get('title'), 'reason': 'already exists'})
                     continue
                 
+                validate_generated_article(article, path)
                 path.write_text(article, encoding='utf-8')
                 written_paths.append(rel_path)
                 written_articles.append({
@@ -144,6 +145,8 @@ def generate_batch(batch_size=10, dry_run=False, start_from=0):
                     'generated_at': datetime.now().isoformat(),
                 })
                 print(f'WRITE: {rel_path}')
+        except PublicationGateError as e:
+            skipped.append({'target': target.get('title'), 'reason': f'publication_gate: {e}'})
         except Exception as e:
             skipped.append({'target': target.get('title'), 'reason': str(e)})
     

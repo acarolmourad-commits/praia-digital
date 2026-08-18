@@ -11,6 +11,7 @@ from datetime import datetime
 REPO = Path(__file__).resolve().parents[3]
 BLOG_DIR = REPO / 'blog'
 TEMPLATE_PATH = REPO / 'partials' / 'article-template.html'
+PUBLICATION_GATE = REPO / 'scripts' / 'orchestrator' / 'modules' / 'publication_gate.py'
 
 # Required design system links
 DESIGN_CSS = 'https://praia.digital/css/style.css'
@@ -22,6 +23,16 @@ def load_template():
     if not TEMPLATE_PATH.exists():
         raise FileNotFoundError(f'Template não encontrado: {TEMPLATE_PATH}')
     return TEMPLATE_PATH.read_text(encoding='utf-8')
+
+
+def load_publication_gate():
+    if not PUBLICATION_GATE.exists():
+        return None
+    import importlib.util
+    spec = importlib.util.spec_from_file_location('publication_gate', str(PUBLICATION_GATE))
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
 
 
 def slugify(text):
@@ -40,7 +51,7 @@ def slugify(text):
 def generate_article(target, template=None):
     """
     Generate an article HTML file from an expansion target.
-    
+
     Expected target keys:
     - title/titulo
     - city
@@ -54,7 +65,7 @@ def generate_article(target, template=None):
     """
     if template is None:
         template = load_template()
-    
+
     title = target.get('title') or target.get('titulo') or 'Artigo'
     city = target.get('city') or 'litoral'
     cluster = target.get('cluster') or 'editorial'
@@ -65,14 +76,14 @@ def generate_article(target, template=None):
     hotmart = target.get('hotmart_link') or 'https://wa.me/5511954346288'
     if 'wa.me' not in hotmart:
         cta = cta + ' Fale conosco pelo WhatsApp: (11) 95434-6288.'
-    
+
     slug = slugify(f"{city} {title}")
     filename = f"{slug}.html"
     path = BLOG_DIR / filename
-    
+
     # Build article HTML
     article = template
-    
+
     # Replace placeholders
     article = article.replace('{{TITLE}}', title)
     article = article.replace('{{META_DESCRIPTION}}', meta_desc)
@@ -84,7 +95,7 @@ def generate_article(target, template=None):
     article = article.replace('{{CTA_TEXT}}', cta)
     article = article.replace('{{HOTMART_LINK}}', hotmart or '#')
     article = article.replace('{{DATE}}', datetime.now().strftime('%Y-%m-%d'))
-    
+
     # Inject shared navigation markers
     if '<meta name="pd-shared-nav">' not in article:
         article = article.replace('</head>', '<meta name="pd-shared-nav">\n</head>')
@@ -94,21 +105,43 @@ def generate_article(target, template=None):
         article = article.replace('</body>', f'<script src="{SHARED_JS}"></script>\n</body>')
     if DESIGN_CSS not in article:
         article = article.replace('</head>', f'<link rel="stylesheet" href="{DESIGN_CSS}">\n</head>')
-    
+
     return path, article, filename
+
+
+def validate_generated_article(html_text: str, path: Path) -> None:
+    """Raise if the generated article violates publication gate rules."""
+    gate = load_publication_gate()
+    if gate is None:
+        return
+    result = gate.run([str(path)])
+    file_result = result.get(str(path.relative_to(REPO))) or result.get(str(path))
+    if file_result and file_result.get('blocked'):
+        issues = file_result.get('issues', [])
+        raise PublicationGateError(path, issues)
+
+
+class PublicationGateError(Exception):
+    def __init__(self, path: Path, issues: list):
+        self.path = path
+        self.issues = issues
+        summary = '; '.join([f"{i.get('rule')}: {i.get('found')} (expected {i.get('expected')})" for i in issues])
+        super().__init__(f"BLOCK_PUBLICATION: {path} -> {summary}")
 
 
 def write_article(target, template=None, dry_run=False):
     path, article, filename = generate_article(target, template)
-    
+
     if dry_run:
         print(f'[DRY RUN] {path}')
         return path
-    
+
     if path.exists():
         print(f'SKIP (exists): {path}')
         return None
-    
+
+    validate_generated_article(article, path)
+
     path.write_text(article, encoding='utf-8')
     print(f'WRITE: {path}')
     return path
@@ -121,12 +154,12 @@ def generate_batch(targets, batch_size=10, dry_run=False):
     """
     template = load_template()
     written = []
-    
+
     for target in targets[:batch_size]:
         path = write_article(target, template, dry_run=dry_run)
         if path:
             written.append(path)
-    
+
     return written
 
 
@@ -142,8 +175,13 @@ if __name__ == '__main__':
         'recommended_cta': 'Quer profissionalizar seu imóvel? Veja a formação completa.',
         'hotmart_link': 'https://www.hotmart.com/pt-br/producto/curso-gestao-temporada',
     }
-    
-    path, article, filename = generate_article(test_target)
-    print(f'SMOKE_TEST: {path}')
-    print(f'FILENAME: {filename}')
-    print(f'SIZE: {len(article)} bytes')
+
+    try:
+        path, article, filename = generate_article(test_target)
+        validate_generated_article(article, path)
+        print(f'SMOKE_TEST: {path}')
+        print(f'FILENAME: {filename}')
+        print(f'SIZE: {len(article)} bytes')
+        print('PUBLICATION_GATE: PASS')
+    except PublicationGateError as e:
+        print(f'PUBLICATION_GATE: BLOCK -> {e}')
