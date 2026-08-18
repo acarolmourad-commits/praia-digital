@@ -51,19 +51,30 @@ ISSO NÃO É CASUAL. Há um padrão sistemático de páginas thin/placeholder no
 - Páginas com template de conteúdo repetitivo
 
 ## Correções executadas
-- Expandidas 3 páginas thin/placeholder com conteúdo real e útil:
+- Amostra 1 — 3 páginas expandidas:
   - `blog/peruibe-automacao-imoveis-2026.html`
   - `blog/case-sucesso-venda-caraguatatuba-2026.html`
   - `blog/guaruja-curso-seo-local-imoveis-2026.html`
-
-## Pendências
-- RECUPERAR_AGORA: 6 páginas adicionais com padrão confirmado de placeholder:
+- Amostra 2 — Lote E.1 — 6 páginas expandidas:
   - `blog/cananeia-bairros-imoveis-2026.html`
   - `blog/guaruja-artigo-bairros-imoveis-2026.html`
   - `blog/bertioga-artigo-juridico-imoveis-2026.html`
   - `blog/guaruja-case-sucesso-parcerias-imoveis-2026.html`
   - `blog/ubatuba-case-sucesso-editorial-imoveis-2026.html`
   - `blog/maresias-curso-financiamento-imoveis-2026.html`
+
+## Classificação final do lote E.1
+
+| Arquivo | Classificação final | Observação |
+|---|---|---|
+| `blog/cananeia-bairros-imoveis-2026.html` | RECUPERADA | Placeholder removido; conteúdo funcional sem risco factual. |
+| `blog/guaruja-artigo-bairros-imoveis-2026.html` | RECUPERADA | Placeholder removido; conteúdo funcional sem risco factual. |
+| `blog/bertioga-artigo-juridico-imoveis-2026.html` | RECUPERADA | Placeholder removido; conteúdo funcional sem risco factual. |
+| `blog/guaruja-case-sucesso-parcerias-imoveis-2026.html` | RECUPERADA | Placeholder removido; conteúdo funcional sem risco factual. |
+| `blog/ubatuba-case-sucesso-editorial-imoveis-2026.html` | RECUPERADA | Reestruturada como análise editorial; sem dados inventados. |
+| `blog/maresias-curso-financiamento-imoveis-2026.html` | RECUPERADA | Placeholder removido; conteúdo funcional sem risco factual. |
+
+## Pendências
 - ATUALIZAR_DEPOIS: `blog/seo-local-em-iguape-para-imoveis-iguape.html` (requer correção HTML/meta antes de expandir)
 - ESTÁVEL: `blog/checklist-pos-venda-imobiliaria-litoral-2026.html`, `blog/seguro-imovel-litoral-aluguel-temporada-2026.html`, `blog/como-funciona-arrematacao-leilao-imovel-litoral-2026.html`, `blog/turistas-internacionais-litoral-2026.html`
 
@@ -71,5 +82,5 @@ ISSO NÃO É CASUAL. Há um padrão sistemático de páginas thin/placeholder no
 Todos os demais arquivos das amostras permanecem inalterados.
 
 ## Próximos padrões identificados
-- O padrão de thin/placeholder é MAIOR do que as 3 páginas iniciais sugeriam.
-- Próxima ação recomendada: transformar a E.1 em rotina de recuperação controlada, começando pelas 6 páginas de ALTA confiança.
+- O padrão de thin/placeholder é sistêmico e concentrado em templates de cidades/cases/cursos.
+- Próxima ação recomendada: nova amostra para medir se há mais páginas fora desse padrão ou se o estoque degradado está majoritariamente concentrado nesses templates.
