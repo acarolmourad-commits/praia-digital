@@ -4162,7 +4162,7 @@ function saveSearch() {
   const name = document.getElementById('saveSearchName').value.trim();
   const email = document.getElementById('saveSearchEmail').value.trim();
   if (!name || !email) { alert('Informe nome e e-mail para salvar a busca.'); return; }
-  if (!email.includes('@')) { alert('Informe um e-mail válido.'); return; }
+  if (!email.includes('@') || !email.includes('.')) { alert('Informe um e-mail válido.'); return; }
   const filters = {
     tipo: document.getElementById('tipo').value,
     cidade: document.getElementById('cidade').value,
@@ -4458,7 +4458,7 @@ function printListing() {
 // SIMULATOR + CHART
 // ====================
 function calcSimulator() {
-  const valor = parseFloat(document.getElementById('simValor').value);
+  const valor = parseFloat(document.getElementById('simValor').value) || 0;
   const entrada = parseFloat(document.getElementById('simEntrada').value) || 0;
   const taxa = parseFloat(document.getElementById('simTaxa').value) / 100;
   const anos = parseInt(document.getElementById('simAnos').value);
@@ -5169,7 +5169,7 @@ function submitRentalForm() {
     return;
   }
 
-  if (!email.includes('@')  !email.includes('.')) {
+  if (!email.includes('@') || !email.includes('.')) {
     alert('Por favor, insira um e-mail válido.');
     return;
   }
@@ -5391,10 +5391,10 @@ function calcROI() {
 function calcEquity() {
   const preco = parseFloat(document.getElementById('eqPreco').value) || 400000;
   const percEntrada = parseFloat(document.getElementById('eqPercEntrada').value) || 20;
-  const taxaJuros = (parseFloat(document.getElementById('eqTaxaJuros').value)  11) / 100;
+  const taxaJuros = (parseFloat(document.getElementById('eqTaxaJuros').value) || 11) / 100;
   const prazoAnos = parseInt(document.getElementById('eqPrazo').value) || 30;
-  const valoriz = (parseFloat(document.getElementById('eqValoriz').value)  8) / 100;
-  const yieldRate = (parseFloat(document.getElementById('eqYield').value)  5) / 100;
+  const valoriz = (parseFloat(document.getElementById('eqValoriz').value) || 8) / 100;
+  const yieldRate = (parseFloat(document.getElementById('eqYield').value) || 5) / 100;
   const anos = parseInt(document.getElementById('eqAnos').value) || 10;
 
   const entrada = preco * (percEntrada / 100);
