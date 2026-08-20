@@ -3,20 +3,20 @@
 
 | Ferramenta | Status | Pública? | Backend | Produção | Risco | Próxima ação |
 |---|---|---|---|---|---|---|
-| Simulador de financiamento | ISOLATED | Não | Nenhum | Não verificado | Alto | Reconstruir com backend real |
-| AI Valuation | ISOLATED | Não | Nenhum | Não verificado | Alto | Reconstruir com backend real |
-| ROI Calculator | ISOLATED | Não | Nenhum | Não verificado | Alto | Reconstruir com backend real |
-| Rent vs Buy | ISOLATED | Não | Nenhum | Não verificado | Alto | Reconstruir com backend real |
-| QR Code | ISOLATED | Não | Nenhum | Não verificado | Médio | Reconstruir ou remover |
-| Embed | ISOLATED | Não | Nenhum | Não verificado | Médio | Reconstruir ou remover |
-| AI Description Generator | ISOLATED | Não | Nenhum | Não verificado | Alto | Reconstruir com backend real |
-| Transaction Costs | ISOLATED | Não | Nenhum | Não verificado | Médio | Reconstruir com backend real |
-| Credit Analyzer | ISOLATED | Não | Nenhum | Não verificado | Alto | Reconstruir com backend real |
-| Rental Revenue | ISOLATED | Não | Nenhum | Não verificado | Alto | Reconstruir com backend real |
-| Equity Growth | ISOLATED | Não | Nenhum | Não verificado | Alto | Reconstruir com backend real |
-| Report Generator | ISOLATED | Não | Nenhum | Não verificado | Médio | Reconstruir com backend real |
-| Commission Calculator | ISOLATED | Não | Nenhum | Não verificado | Baixo | Reconstruir ou remover |
-| Print/PDF tools | ISOLATED | Não | Nenhum | Não verificado | Baixo | Remover ou reconstruir com template engine |
+| Simulador de financiamento | REMOVED | Não | Nenhum | Não verificado | Alto | Reconstruir com backend real |
+| AI Valuation | REMOVED | Não | Nenhum | Não verificado | Alto | Reconstruir com backend real |
+| ROI Calculator | REMOVED | Não | Nenhum | Não verificado | Alto | Reconstruir com backend real |
+| Rent vs Buy | REMOVED | Não | Nenhum | Não verificado | Alto | Reconstruir com backend real |
+| QR Code | REMOVED | Não | Nenhum | Não verificado | Médio | Reconstruir ou remover |
+| Embed | REMOVED | Não | Nenhum | Não verificado | Médio | Reconstruir ou remover |
+| AI Description Generator | REMOVED | Não | Nenhum | Não verificado | Alto | Reconstruir com backend real |
+| Transaction Costs | REMOVED | Não | Nenhum | Não verificado | Médio | Reconstruir com backend real |
+| Credit Analyzer | REMOVED | Não | Nenhum | Não verificado | Alto | Reconstruir com backend real |
+| Rental Revenue | REMOVED | Não | Nenhum | Não verificado | Alto | Reconstruir com backend real |
+| Equity Growth | REMOVED | Não | Nenhum | Não verificado | Alto | Reconstruir com backend real |
+| Report Generator | REMOVED | Não | Nenhum | Não verificado | Médio | Reconstruir com backend real |
+| Commission Calculator | REMOVED | Não | Nenhum | Não verificado | Baixo | Reconstruir ou remover |
+| Print/PDF tools | REMOVED | Não | Nenhum | Não verificado | Baixo | Remover ou reconstruir com template engine |
 | Header/navegação | HEALTHY | Sim | N/A | Verificado | Nenhum | Manter |
 | Listagens de imóveis | HEALTHY | Sim | N/A | Verificado | Nenhum | Manter |
 | Conteúdo editorial/blog | HEALTHY | Sim | N/A | Verificado | Nenhum | Manter |
