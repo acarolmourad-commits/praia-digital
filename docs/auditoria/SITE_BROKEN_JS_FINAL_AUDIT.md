@@ -28,10 +28,12 @@ Quebra de frontend em produção do praia.digital com JavaScript inválido, cód
 
 ## 5. FUNÇÕES DUPLICADAS
 - `calcROI()` — duas implementações; uma removida, outra temporariamente desativada com `display:none`
+- `calcEquity()` — função única; desativada com `display:none`
 
 ## 6. SCRIPTS INVÁLIDOS
 - 5 blocos `<script>` em `index.html` continham JSON-LD/HTML interpretado como JS
 - Corrigidos via remoção/isolamento das ferramentas dependentes
+- 10 scripts restantes validados com `node --check`: 0 erros
 
 ## 7. ENDPOINTS LOCAIS
 - `127.0.0.1:8000/descrever`
@@ -47,27 +49,30 @@ Todos removidos do frontend público.
 - `servico-assistente-virtual-compradores-litoral.html` — script inline removido
 
 ## 9. FERRAMENTAS ISOLADAS
-- Simulador de financiamento
-- AI Valuation
-- ROI Calculator
-- Rent vs Buy
-- QR Code
-- Embed
-- AI Description Generator
-- Transaction Costs
-- Credit Analyzer
-- Rental Revenue
-- Equity Growth
-- Report Generator
-- Commission Calculator
+- Simulador de financiamento — FUNÇÃO REMOVIDA
+- AI Valuation — FUNÇÃO REMOVIDA
+- ROI Calculator — FUNÇÃO REMOVIDA + UI OCULTA
+- Rent vs Buy — FUNÇÃO REMOVIDA
+- QR Code — FUNÇÃO REMOVIDA
+- Embed — FUNÇÃO REMOVIDA
+- AI Description Generator — FUNÇÃO REMOVIDA + SCRIPT REMOVIDO NO ASSET
+- Transaction Costs — FUNÇÃO REMOVIDA
+- Credit Analyzer — FUNÇÃO REMOVIDA
+- Rental Revenue — FUNÇÃO REMOVIDA
+- Equity Growth — FUNÇÃO REMOVIDA + UI OCULTA
+- Report Generator — FUNÇÃO REMOVIDA
+- Commission Calculator — FUNÇÃO REMOVIDA
+- Print/PDF tools — FUNÇÕES REMOVIDAS
 
 ## 10. CORREÇÕES REALIZADAS
 - Removida duplicação de `calcROI()`
 - Desativadas calculadoras ROI e Equity com `display:none`
-- Removidas chamadas `calcROI()`, `calcEquity()`, `printListing()`, `printReport()`
-- Removidas referências a `127.0.0.1:8000` e `localhost`
+- Removidas funções: `calcSimulator`, `runValuation`, `checkCredit`, `generateReport`, `printListing`, `printReport`
+- Removidas chamadas `onclick`/`oninput` das ferramentas quebradas
+- Removidas referências a `127.0.0.1:8000` e `localhost` do frontend público
 - Corrigidos operadores ausentes em `assets/calculadora-yield-cep.html`
-- Removidos scripts inline quebrados em assets
+- Removidos scripts inline quebrados em `assets/servico-geracao-descricoes-anuncios-ia.html`
+- Removidos `w.document.write()` e `printWindow.document.write()`
 
 ## 11. TESTES LOCAIS
 - `node --check` em 10 scripts extraídos de `index.html`
@@ -75,7 +80,8 @@ Todos removidos do frontend público.
 - `git diff` confirmou alterações cirúrgicas
 
 ## 12. TESTES BROWSER
-- `curl https://praia.digital/` pós-deploy: 0 matches para `calcROI`, `calcEquity`, `127.0.0.1`, `localhost`
+- `curl https://praia.digital/` pós-deploy final: 0 matches para `calcSimulator`, `runValuation`, `checkCredit`, `generateReport`, `printListing`, `printReport`, `calcROI`, `calcEquity`, `127.0.0.1`, `localhost`
+- `node --check` em 10 scripts extraídos de `index.html`: 0 erros de sintaxe
 
 ## 13. CONSOLE
 - Sem SyntaxError crítico no frontend público
@@ -109,9 +115,8 @@ git log --oneline -5
 - Visual limpo, sem código exposto
 
 ## 18. RISCOS REMANESCENTES
-- `w.document.write` e `printListing()`/`printReport()` ainda presentes no código
-- Outras funções de ferramentas ainda no HTML mas sem backend
-- `backend/api/leads/b2b.js` referenciado sem endpoint real
+- Nenhum risco crítico remanescente no frontend público
+- `backend/api/leads/b2b.js` referenciado sem endpoint real; needs backend validation
 
 ## 19. FUNCIONALIDADES PENDENTES DE RECONSTRUÇÃO
 - ROI Calculator com backend real
@@ -122,3 +127,5 @@ git log --oneline -5
 - Buyer route API (`/roteiro`)
 - Sales prediction API (`/predizer`)
 - Print/PDF functionality com template engine seguro
+- Credit Analyzer com backend real
+- Report Generator com backend real
