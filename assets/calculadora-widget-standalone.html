@@ -141,7 +141,7 @@ document.documentElement.style.setProperty("--ciano", T.cor);
 document.getElementById("brandName").textContent = T.nome;
 document.getElementById("footer").textContent = T.nome + " · Gestão de temporada";
 
-const API = "http://127.0.0.1:8000"; // backend opcional; sem ele, usa mailto fallback
+const API = "https://praia.digital";
 function fmt(n){return "R$ "+Math.round(n).toLocaleString('pt-BR');}
 
 // motor de calculo (mesma logica do backend)

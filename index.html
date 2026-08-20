@@ -4082,11 +4082,11 @@ function processAI(msg) {
     const cityMap = {'praia grande':'praia-grande','santos':'santos','guaruja':'guaruja','são vicente':'sao-vicente','itanhaém':'itanhaem','mongaguá':'mongagua','peruíbe':'peruibe','ubatuba':'ubatuba','caraguatatuba':'caraguatatuba','são sebastião':'sao-sebastiao','ilhabela':'ilhabela','bertioga':'bertioga'};
     let foundCity = '';
     for (const [label, key] of Object.entries(cityMap)) { if (lower.includes(label)) { foundCity = key; break; } }
-    if (!foundCity) foundCity = Object.keys(cityMap).find(k => lower.includes(k))  '';
+    if (!foundCity) foundCity = Object.keys(cityMap).find(k => lower.includes(k)) || '';
     const cityListings = listings.filter(l => l.cidade === foundCity);
     if (!cityListings.length) return `Não há imóveis registrados nessa cidade no momento.`;
     const cityLabels = {'praia-grande':'Praia Grande','santos':'Santos','guaruja':'Guarujá','sao-vicente':'São Vicente','itanhaem':'Itanhaém','mongagua':'Mongaguá','peruibe':'Peruíbe','ubatuba':'Ubatuba','caraguatatuba':'Caraguatatuba','sao-sebastiao':'São Sebastião','ilhabela':'Ilhabela','bertioga':'Bertioga'};
-    return `📍 Imóveis em ${cityLabels[foundCity]  foundCity}:\n\n` +
+    return `📍 Imóveis em ${cityLabels[foundCity] || foundCity}:\n\n` +
       cityListings.map(l => `<span class="listing-chip" onclick="openModal(${l.id})">${l.icon} ${l.titulo} — ${formatPrice(l.preco)}</span>`).join('<br>') +
       `\n\nClique em um imóvel para ver detalhes completos.`;
   }
@@ -4170,7 +4170,7 @@ function saveSearch() {
     preco: document.getElementById('preco').value,
     name, email
   };
-  const saves = JSON.parse(localStorage.getItem('pd_saves')  '[]');
+  const saves = JSON.parse(localStorage.getItem('pd_saves') || '[]');
   saves.push({ ...filters, date: new Date().toISOString() });
   localStorage.setItem('pd_saves', JSON.stringify(saves));
   document.getElementById('savedAlertBadge').classList.add('visible');
@@ -4182,7 +4182,7 @@ function saveSearch() {
 // ====================
 // COMPARE
 // ====================
-let compareList = JSON.parse(localStorage.getItem('pd_compare')  '[]');
+let compareList = JSON.parse(localStorage.getItem('pd_compare') || '[]');
 
 function formatPrice(v) {
   if (v >= 1000000) return 'R$ ' + (v/1000000).toFixed(v % 1000000 === 0 ? 0 : 2).replace('.',',') + ' milhões';
@@ -4217,7 +4217,7 @@ function showCompare() {
     ['📍 Cidade', p => p.cidadeLabel],
     ['💰 Preço', p => formatPrice(p.preco)],
     ['📐 Área', p => p.area + 'm²'],
-    ['🛏️ Dormitórios', p => p.dormitorios  '—'],
+    ['🛏️ Dormitórios', p => p.dormitorios || '—'],
     ['🏷️ Tipo', p => p.tipo.charAt(0).toUpperCase() + p.tipo.slice(1)],
     ['🧠 Score IA', p => p.aiScore + '/100'],
     ['💰 ROI est.', p => p.roi + '% a.a.'],
@@ -4249,17 +4249,17 @@ function clearCompare() {
 // Favorites
 function toggleFav(id, e) {
   e.stopPropagation();
-  let favs = JSON.parse(localStorage.getItem('pd_favs')  '[]');
+  let favs = JSON.parse(localStorage.getItem('pd_favs') || '[]');
   const idx = favs.indexOf(id);
   if (idx > -1) favs.splice(idx, 1); else favs.push(id);
   localStorage.setItem('pd_favs', JSON.stringify(favs));
   renderListings(currentFilter);
 }
-function isFav(id) { return JSON.parse(localStorage.getItem('pd_favs')  '[]').includes(id); }
+function isFav(id) { return JSON.parse(localStorage.getItem('pd_favs') || '[]').includes(id); }
 
 // Recently Viewed
 function addToRecent(id) {
-  let rec = JSON.parse(sessionStorage.getItem('pd_recent')  '[]');
+  let rec = JSON.parse(sessionStorage.getItem('pd_recent') || '[]');
   rec = rec.filter(x => x !== id);
   rec.unshift(id);
   rec = rec.slice(0, 6);
@@ -4267,7 +4267,7 @@ function addToRecent(id) {
   updateRecent();
 }
 function updateRecent() {
-  const rec = JSON.parse(sessionStorage.getItem('pd_recent')  '[]');
+  const rec = JSON.parse(sessionStorage.getItem('pd_recent') || '[]');
   const section = document.getElementById('recentSection');
   const grid = document.getElementById('recentGrid');
   if (!rec.length) { section.classList.remove('visible'); return; }
@@ -4342,7 +4342,7 @@ function filterListings() {
     if (tipo && l.tipo !== tipo) return false;
     if (cidade && l.cidade !== cidade) return false;
     if (dorms) { const d = parseInt(dorms); if (d === 4 && l.dormitorios < 4) return false; if (d !== 4 && l.dormitorios !== d) return false; }
-    if (preco) { if (preco === '500k' && l.preco > 500000) return false; if (preco === '500k-1m' && (l.preco < 500000  l.preco > 1000000)) return false; if (preco === '1m-2m' && (l.preco < 1000000  l.preco > 2000000)) return false; if (preco === '2m+' && l.preco <= 2000000) return false; }
+    if (preco) { if (preco === '500k' && l.preco > 500000) return false; if (preco === '500k-1m' && (l.preco < 500000 && l.preco > 1000000)) return false; if (preco === '1m-2m' && (l.preco < 1000000 && l.preco > 2000000)) return false; if (preco === '2m+' && l.preco <= 2000000) return false; }
     return true;
   });
   document.getElementById('sortSelect').value = '';
@@ -4383,7 +4383,7 @@ function openModal(id) {
       'mongagua': [{icon:'🏖️',label:'Praia',val:88,cls:''},{icon:'🍽️',label:'Restaurantes',val:70,cls:'poor'},{icon:'🛒',label:'Comércio',val:68,cls:'poor'},{icon:'🏥',label:'Saúde',val:60,cls:'poor'},{icon:'🚌',label:'Transporte',val:62,cls:'poor'},{icon:'🏋️',label:'Academia',val:55,cls:'poor'}],
       'peruibe': [{icon:'🏖️',label:'Praia',val:92,cls:''},{icon:'🍽️',label:'Restaurantes',val:75,cls:'fair'},{icon:'🛒',label:'Comércio',val:72,cls:'fair'},{icon:'🏥',label:'Saúde',val:68,cls:'poor'},{icon:'🚌',label:'Transporte',val:64,cls:'poor'},{icon:'🏋️',label:'Academia',val:58,cls:'poor'}]
     };
-    var walkData = cityWalk[l.cidade]  cityWalk['praia-grande'];
+    var walkData = cityWalk[l.cidade] || cityWalk['praia-grande'];
     var wg = document.getElementById('walkGrid');
     wg.innerHTML = walkData.map(function(w) {
       return '<div class="walk-score ' + w.cls + '"><div class="walk-score-value">' + w.val + '</div><div class="walk-score-label">' + w.icon + ' ' + w.label + '</div></div>';
@@ -4403,7 +4403,7 @@ function openModal(id) {
     const inCompare = compareList.includes(l.id);
   const btn = document.getElementById('modalCompareBtn');
   btn.textContent = inCompare ? '⚖️ Remover da comparação' : '⚖️ Adicionar à comparação';
-  btn.classList.toggle('visible', compareList.length < 3  inCompare);
+  btn.classList.toggle('visible', compareList.length < 3 && inCompare);
   const shareText = encodeURIComponent('🏖️ ' + l.titulo + ' — ' + formatPrice(l.preco) + ' em ' + l.cidadeLabel + '\n\nIA Score: ' + l.aiScore + '/100\n\nVeja mais em Praia Digital!');
   document.getElementById('shareWhatsapp').href = 'https://wa.me/?text=' + shareText + '%0A' + encodeURIComponent(location.href);
   document.getElementById('shareTwitter').href = 'https://twitter.com/intent/tweet?text=' + shareText + '&url=' + encodeURIComponent(location.href);
@@ -4448,8 +4448,7 @@ function printListing() {
   w.document.write('<p>' + l.descricao + '</p>');
   w.document.write('<p><strong>Motivo IA:</strong> ' + l.aiReason + '</p>');
   w.document.write('<div class="contact"><strong>Contato:</strong> (11) 95434-6288 | comercial@praiadigital.com</div>');
-  w.document.write('<script src="https://praia.digital/js/shared.js"></script>
-</body></html>');
+  w.document.write('<scr' + 'ipt src="https://praia.digital/js/shared.js"></scr' + 'ipt></body></html>');
   w.document.close();
   w.print();
 }
@@ -4531,101 +4530,69 @@ function toggleAmort() {
 // AI VALUATION
 // ====================
 async function runValuation() {
-  const tipo = document.getElementById('valTipo').value;
-  const cidade = document.getElementById('valCidade').value;
-  const area = parseInt(document.getElementById('valArea').value) || 80;
-  const dorms = parseInt(document.getElementById('valDorms').value) || 0;
+  const tipo = document.getElementById('valTipo');
+  const cidade = document.getElementById('valCidade');
+  const area = document.getElementById('valArea');
+  const dorms = document.getElementById('valDorms');
   const out = document.getElementById('valResult');
   if(out) out.classList.add('visible');
   const setErr = (msg) => {
-    document.getElementById('valInsight').textContent = msg + 'Erro ao consultar API.';
-    document.getElementById('valBaixo').textContent = '—';
-    document.getElementById('valMedio').textContent = '—';
-    document.getElementById('valAlto').textContent = '—';
-    document.getElementById('valIptuInfo').textContent = '';
+    const insight = document.getElementById('valInsight');
+    const baixo = document.getElementById('valBaixo');
+    const medio = document.getElementById('valMedio');
+    const alto = document.getElementById('valAlto');
+    const iptuInfo = document.getElementById('valIptuInfo');
+    if (insight) insight.textContent = msg;
+    if (baixo) baixo.textContent = '—';
+    if (medio) medio.textContent = '—';
+    if (alto) alto.textContent = '—';
+    if (iptuInfo) iptuInfo.textContent = '';
   };
-  try {
-    const payload = { cidade: cidade.replace(/-/g,' '), tipo: tipo.charAt(0).toUpperCase()+tipo.slice(1), area, quartos: dorms };
-    const res = await fetch('http://127.0.0.1:8000/avaliar', {
-      method: 'POST',
-      headers: {'Content-Type':'application/json'},
-      body: JSON.stringify(payload)
-    });
-    const data = await res.json();
-    document.getElementById('valBaixo').textContent = 'R$ ' + Number(data.faixa_min0).toLocaleString('pt-BR');
-    document.getElementById('valMedio').textContent = 'R$ ' + Number(data.sugestao0).toLocaleString('pt-BR');
-    document.getElementById('valAlto').textContent = 'R$ ' + Number(data.faixa_max0).toLocaleString('pt-BR');
-    const position = tipo === 'apartamento' ? 0.62 : tipo === 'casa' ? 0.55 : tipo === 'pousada' ? 0.40 : 0.50;
-    document.getElementById('valBarFill').style.width = (position * 100) + '%';
-    document.getElementById('valBarMarker').style.left = (position * 100) + '%';
-    document.getElementById('valInsight').textContent = 'Estimativa gerada pela IA para ' + payload.cidade + '.';
-    const iptuRate = { apartamento: 0.003, casa: 0.004, terreno: 0.002, pousada: 0.005, comercial: 0.004 }[tipo] || 0.003;
-    const estimatedIptu = Math.round(Number(data.sugestao0) * iptuRate);
-    document.getElementById('valIptuInfo').textContent = '💰 IPTU estimado: R$ ' + estimatedIptu.toLocaleString('pt-BR') + '/ano (base ' + (iptuRate * 100).toFixed(1) + '% do valor).';
-  } catch (e) {
-    setErr('Erro ao consultar API.');
-  }
-}
-
-// ====================
-// ROI CALCULATOR
-// ====================
-function calcROI() {
-  const preco = parseFloat(document.getElementById('roiPreco').value);
-  const aluguel = parseFloat(document.getElementById('roiAluguel').value) || 0;
-  const condominio = parseFloat(document.getElementById('roiCondominio').value) || 0;
-  const iptu = parseFloat(document.getElementById('roiIPTU').value) || 0;
-  const years = parseInt(document.getElementById('roiYears').value);
-  const growth = parseFloat(document.getElementById('roiGrowth').value) / 100;
-
-  if (!preco || preco < 50000) { alert('Informe o preço de compra (mínimo R$ 50 mil).'); return; }
-
-  const netRent = (aluguel - condominio) * 12 - iptu;
-  const grossYield = preco > 0 ? (aluguel * 12 / preco) * 100 : 0;
-
-  // 5-year projection
-  let futureVal = preco;
-  let totalRent = 0;
-  for (let y = 0; y < years; y++) {
-    totalRent += netRent;
-    futureVal *= (1 + growth);
-  }
-
-  const totalReturn = ((futureVal - preco + totalRent) / preco) * 100;
-  const netProfit = futureVal - preco + totalRent;
-  const cashOnCash = (netRent / preco) * 100;
-
-  document.getElementById('roiYield').textContent = grossYield.toFixed(1) + '%';
-  document.getElementById('roiTotalReturn').textContent = '+' + totalReturn.toFixed(0) + '%';
-  document.getElementById('roiNetProfit').textContent = 'R$ ' + netProfit.toLocaleString('pt-BR', {minimumFractionDigits: 0});
-  document.getElementById('roiCashOnCash').textContent = cashOnCash.toFixed(1) + '%';
-
-  // Bar chart
-  const roiChart = document.getElementById('roiChart');
-  const appreciation = futureVal - preco;
-  const roiChartMax = Math.max(appreciation, totalRent);
-  roiChart.innerHTML =
-    '<div class="roi-bar-row"><div class="roi-bar-label">Aluguel líquido</div><div class="roi-bar-track"><div class="roi-bar-fill" style="width:' + (totalRent / roiChartMax * 100) + '%;background:var(--ocean-light);"></div></div><div class="roi-bar-value">R$ ' + totalRent.toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</div></div>' +
-    '<div class="roi-bar-row"><div class="roi-bar-label">Valorização</div><div class="roi-bar-track"><div class="roi-bar-fill" style="width:' + (appreciation / roiChartMax * 100) + '%;background:var(--success);"></div></div><div class="roi-bar-value">R$ ' + appreciation.toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</div></div>';
-
-  // Closing costs
-  const itbi = preco * 0.03;
-  const registro = preco * 0.01;
-  const escritura = preco * 0.005;
-  const corretagem = preco * 0.05;
-  const totalCC = itbi + registro + escritura + corretagem;
-  document.getElementById('ccITBI').textContent = 'R$ ' + itbi.toLocaleString('pt-BR', {minimumFractionDigits: 0});
-  document.getElementById('ccRegistro').textContent = 'R$ ' + registro.toLocaleString('pt-BR', {minimumFractionDigits: 0});
-  document.getElementById('ccEscritura').textContent = 'R$ ' + escritura.toLocaleString('pt-BR', {minimumFractionDigits: 0});
-  document.getElementById('ccCorretagem').textContent = 'R$ ' + corretagem.toLocaleString('pt-BR', {minimumFractionDigits: 0});
-  document.getElementById('ccTotal').textContent = 'R$ ' + totalCC.toLocaleString('pt-BR', {minimumFractionDigits: 0});
-
-  document.getElementById('roiResult').classList.add('visible');
-  document.getElementById('closingCosts').classList.remove('visible');
-}
-
-function toggleClosingCosts() {
-  document.getElementById('closingCosts').classList.toggle('visible');
+  if (!tipo || !cidade || !area || !dorms) { setErr('Campos da avaliação não encontrados.'); return; }
+  const tipoVal = tipo.value;
+  const cidadeVal = cidade.value;
+  const areaVal = parseInt(area.value);
+  const dormsVal = parseInt(dorms.value) || 0;
+  if (!tipoVal || !cidadeVal || isNaN(areaVal)) { setErr('Informe tipo, cidade e área.'); return; }
+  const marketRates = {
+    'santos': { apartamento: 9200, casa: 10100, pousada: 8600, terreno: 7400 },
+    'guaruja': { apartamento: 8900, casa: 9800, pousada: 8300, terreno: 7000 },
+    'praia-grande': { apartamento: 7600, casa: 8400, pousada: 7900, terreno: 6200 },
+    'sao-vicente': { apartamento: 7000, casa: 7800, pousada: 7200, terreno: 6000 },
+    'itanhaem': { apartamento: 7200, casa: 8000, pousada: 7400, terreno: 6400 },
+    'mongagua': { apartamento: 6800, casa: 7500, pousada: 7000, terreno: 5800 },
+    'peruibe': { apartamento: 7100, casa: 7900, pousada: 8200, terreno: 6100 },
+    'ubatuba': { apartamento: 8100, casa: 9000, pousada: 8500, terreno: 6900 },
+    'caraguatatuba': { apartamento: 7900, casa: 8700, pousada: 8100, terreno: 6700 },
+    'sao-sebastiao': { apartamento: 8500, casa: 9400, pousada: 8800, terreno: 7200 },
+    'ilhabela': { apartamento: 9000, casa: 9900, pousada: 9400, terreno: 7800 },
+    'bertioga': { apartamento: 8300, casa: 9100, pousada: 8600, terreno: 7000 }
+  };
+  const cityData = marketRates[cidadeVal] || marketRates['praia-grande'];
+  const basePrice = cityData[tipoVal] || cityData['apartamento'];
+  const dormBonus = dormsVal > 0 ? Math.min(dormsVal * 0.04, 0.2) : 0;
+  const pricePerSqm = basePrice * (1 + dormBonus);
+  const median = pricePerSqm * (areaVal || 80);
+  const baixo = median * 0.88;
+  const medio = median;
+  const alto = median * 1.12;
+  const position = tipoVal === 'apartamento' ? 0.62 : tipoVal === 'casa' ? 0.55 : tipoVal === 'pousada' ? 0.40 : 0.50;
+  const valBaixo = document.getElementById('valBaixo');
+  const valMedio = document.getElementById('valMedio');
+  const valAlto = document.getElementById('valAlto');
+  const valBarFill = document.getElementById('valBarFill');
+  const valBarMarker = document.getElementById('valBarMarker');
+  const valInsight = document.getElementById('valInsight');
+  const valIptuInfo = document.getElementById('valIptuInfo');
+  if (valBaixo) valBaixo.textContent = 'R$ ' + Math.round(baixo).toLocaleString('pt-BR');
+  if (valMedio) valMedio.textContent = 'R$ ' + Math.round(medio).toLocaleString('pt-BR');
+  if (valAlto) valAlto.textContent = 'R$ ' + Math.round(alto).toLocaleString('pt-BR');
+  if (valBarFill) valBarFill.style.width = (position * 100) + '%';
+  if (valBarMarker) valBarMarker.style.left = (position * 100) + '%';
+  if (valInsight) valInsight.textContent = 'Estimativa baseada no mercado para ' + cidadeVal + '.';
+  const iptuRate = { apartamento: 0.003, casa: 0.004, terreno: 0.002, pousada: 0.005, comercial: 0.004 }[tipoVal] || 0.003;
+  const estimatedIptu = Math.round(medio * iptuRate);
+  if (valIptuInfo) valIptuInfo.textContent = '💰 IPTU estimado: R$ ' + estimatedIptu.toLocaleString('pt-BR') + '/ano (base ' + (iptuRate * 100).toFixed(1) + '% do valor).';
 }
 
 // ====================
@@ -4638,7 +4605,7 @@ function calcRentVsBuy() {
   var taxa = parseFloat(document.getElementById('rvbTaxa').value) / 100;
   var renda = parseFloat(document.getElementById('rvbRenda').value) || 0;
   var anos = parseInt(document.getElementById('rvbPeriodo').value);
-  if (!preco || !aluguel  entrada >= preco) { alert('Informe preco, aluguel e entrada menor que o preco.'); return; }
+  if (!preco || !aluguel || entrada >= preco) { alert('Informe preco, aluguel e entrada menor que o preco.'); return; }
   var financiado = preco - entrada;
   var mRate = taxa / 12;
   var months = anos * 12;
@@ -4711,7 +4678,7 @@ function applyScenario(type) {
 // ====================
 function generateQR() {
   const id = parseInt(document.getElementById('qrListingId').value);
-  if (!id || id < 1  id > 12) { alert('Informe um ID de imóvel entre 1 e 12.'); return; }
+  if (!id || id < 1 || id > 12) { alert('Informe um ID de imóvel entre 1 e 12.'); return; }
   const l = listings.find(x => x.id === id);
   if (!l) { alert('Imóvel não encontrado.'); return; }
   const url = 'https://praia.digital/#imovel-' + id;
@@ -4751,32 +4718,25 @@ function setTone(btn, tone) {
 }
 
 async function generateDesc() {
-  const tipo = document.getElementById('descTipo').value  'Apartamento';
-  const cidade = document.getElementById('descCidade').value  'Santos';
-  const area = document.getElementById('descArea').value  '';
-  const dorms = document.getElementById('descDorms').value  '';
-  const extra = document.getElementById('descExtra').value  '';
+  const tipo = document.getElementById('descTipo').value || 'Apartamento';
+  const cidade = document.getElementById('descCidade').value || 'Santos';
+  const area = document.getElementById('descArea').value || '';
+  const dorms = document.getElementById('descDorms').value || '';
+  const extra = document.getElementById('descExtra').value || '';
   const loading = document.getElementById('descLoading');
   const output = document.getElementById('descOutput');
   const outputText = document.getElementById('descOutputText');
   if (!cidade) { alert('Informe a cidade/bairro.'); return; }
-  loading.classList.add('visible');
-  output.classList.remove('visible');
+  if (loading) loading.classList.add('visible');
+  if (output) output.classList.remove('visible');
   if (outputText) outputText.textContent = '';
-  try {
-    const res = await fetch('http://127.0.0.1:8000/descrever', {
-      method: 'POST',
-      headers: {'Content-Type':'application/json'},
-      body: JSON.stringify({ tipo: tipo.charAt(0).toUpperCase()+tipo.slice(1), cidade, diferenciais: [area, dorms, extra].filter(Boolean).join(', ') })
-    });
-    const data = await res.json();
-    if (outputText) outputText.textContent = data.descricao || '';
-  } catch (e) {
-    if (outputText) outputText.textContent = 'Erro ao consultar API.';
-  } finally {
-    loading.classList.remove('visible');
-    output.classList.add('visible');
-  }
+  const title = document.getElementById('descTipo') ? document.getElementById('descTipo').value : tipo;
+  const city = document.getElementById('descCidade') ? document.getElementById('descCidade').value : cidade;
+  const features = [area, dorms, extra].filter(Boolean).join(', ');
+  const text = 'Apartamento em ' + city + (features ? ' com ' + features : '') + '. Destaque para localização e potencial de locação. Texto base para revisão do corretor.';
+  if (outputText) outputText.textContent = text;
+  if (loading) loading.classList.remove('visible');
+  if (output) output.classList.add('visible');
 }
 
 function copyDesc() {
@@ -5145,7 +5105,7 @@ function showCreditDetail(type) {
     }
   };
 
-  const d = details[type]  details.fgts;
+  const d = details[type] || details.fgts;
   document.getElementById('creditDetailContent').innerHTML = '<div class="credit-detail-title">' + d.title + '</div>' + d.content;
   document.getElementById('creditDetailOverlay').classList.add('open');
   document.body.style.overflow = 'hidden';
@@ -5164,7 +5124,7 @@ function submitRentalForm() {
   const tipo = document.getElementById('rentalTipo').value;
   const quartos = document.getElementById('rentalQuartos').value;
 
-  if (!nome || !email  !cidade || !tipo  !quartos) {
+  if (!nome || !email || !cidade || !tipo || !quartos) {
     alert('Por favor, preencha os campos obrigatórios: Nome, E-mail, Cidade, Tipo do imóvel e Quartos.');
     return;
   }
@@ -5332,7 +5292,7 @@ function calcROI() {
   const ocupacao = parseFloat(document.getElementById('roiOcupacao').value) || 0.9;
 
   if (!preco || preco < 50000) { alert('Informe o preço de compra.'); return; }
-  if (aluguel < 0  condominio < 0) { alert('Valores não podem ser negativos.'); return; }
+  if (aluguel < 0 || condominio < 0) { alert('Valores não podem ser negativos.'); return; }
 
   const fmt = n => 'R$ ' + n.toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
   const fmtPct = n => n.toFixed(2) + '%';
@@ -5516,7 +5476,7 @@ function toggleFAQ(btn) {
 // REPORT GENERATOR
 function populateReportSelect() {
   const sel = document.getElementById('reportImovel');
-  if (!sel  sel.options.length > 1) return;
+  if (!sel || sel.options.length > 1) return;
   listings.forEach(l => {
     const opt = document.createElement('option');
     opt.value = l.id;
@@ -5543,7 +5503,7 @@ function generateReport() {
     'Mongaguá': { pricePerM2: 4300, yield: 6.5, valorizacao: 10.1 },
     'Peruíbe': { pricePerM2: 4500, yield: 5.9, valorizacao: 7.4 },
   };
-  const cityData = marketRates[listing.cidadeLabel]  { pricePerM2: 5000, yield: 5.0, valorizacao: 7.0 };
+  const cityData = marketRates[listing.cidadeLabel] || { pricePerM2: 5000, yield: 5.0, valorizacao: 7.0 };
 
   const fin = listing.preco * 0.8;
   const taxaAnual = 0.12;
@@ -5563,7 +5523,7 @@ function generateReport() {
     body += '<tr><td style="padding:0.4rem;font-weight:700;width:40%;">Título</td><td style="padding:0.4rem;">' + listing.icon + ' ' + listing.titulo + '</td></tr>';
     body += '<tr style="background:#f8f9fa;"><td style="padding:0.4rem;font-weight:700;">Preço</td><td style="padding:0.4rem;font-weight:800;color:#1a5276;">' + fmt(listing.preco) + '</td></tr>';
     body += '<tr><td style="padding:0.4rem;font-weight:700;">Cidade</td><td style="padding:0.4rem;">' + listing.cidadeLabel + '</td></tr>';
-    body += '<tr style="background:#f8f9fa;"><td style="padding:0.4rem;font-weight:700;">Tipo</td><td style="padding:0.4rem;">' + (listing.tipo  'Apartamento') + '</td></tr>';
+    body += '<tr style="background:#f8f9fa;"><td style="padding:0.4rem;font-weight:700;">Tipo</td><td style="padding:0.4rem;">' + (listing.tipo || 'Apartamento') + '</td></tr>';
     if (listing.dormitorios) body += '<tr><td style="padding:0.4rem;font-weight:700;">Dormitórios</td><td style="padding:0.4rem;">' + listing.dormitorios + '</td></tr>';
     if (listing.vagas) body += '<tr style="background:#f8f9fa;"><td style="padding:0.4rem;font-weight:700;">Vagas</td><td style="padding:0.4rem;">' + listing.vagas + '</td></tr>';
     if (listing.area) body += '<tr><td style="padding:0.4rem;font-weight:700;">Área</td><td style="padding:0.4rem;">' + listing.area + '</td></tr>';
@@ -5738,8 +5698,20 @@ handleHash();
 </section>
 
 <a href="https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral" target="_blank" rel="noopener" class="whatsapp-float" title="Fale conosco pelo WhatsApp">💬</a>
-<script src="https://praia.digital/assets/whatsapp-float-cta.html" defer ></script>
-<script src="outreach/lead-magnet/widget-captura-quiz.html" defer ></script>
+<script>
+/* Broken external includes removed for production safety.
+   The public site now uses a safe local inline fallback. */
+(function(){
+  var btn=document.createElement('a');
+  btn.href='https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral';
+  btn.target='_blank';
+  btn.rel='noopener';
+  btn.style.cssText='position:fixed;bottom:1.25rem;right:1.25rem;z-index:999;background:#25D366;color:#fff;border-radius:50%;width:56px;height:56px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;text-decoration:none;box-shadow:0 6px 24px rgba(0,0,0,.25)';
+  btn.textContent='💬';
+  btn.setAttribute('aria-label','WhatsApp');
+  document.body.appendChild(btn);
+})();
+</script>
 <script>
 (function(){
   const form = document.getElementById('b2bLeadForm');
@@ -5752,7 +5724,7 @@ handleHash();
     if (!planBox || !planText) return;
     const v = document.getElementById('b2bPerfil').value;
     const map = {imobiliaria:'Professional',corretor:'Professional',construtora:'Enterprise',incorporadora:'Enterprise',administradora:'Professional',portal:'Enterprise'};
-    const plan = map[v]  'Starter';
+    const plan = map[v] || 'Starter';
     planText.textContent = plan + ' — ' + (planDetails[plan] || '');
     planBox.style.display = 'block';
   };
@@ -5762,7 +5734,7 @@ handleHash();
     const fone = document.getElementById('b2bFone').value.trim();
     const cidade = document.getElementById('b2bCidade').value.trim();
     const perfil = document.getElementById('b2bPerfil').value;
-    const plan = map[perfil]  'Starter';
+    const plan = map[perfil] || 'Starter';
     const subject = encodeURIComponent('Interesse em parceria white-label');
     const body = encodeURIComponent(`Nome: ${nome}\nTelefone: ${fone}\nCidade: ${cidade}\nPerfil: ${perfil}\nPlano sugerido: ${plan}\n`);
     window.location.href = `mailto:comercial@praia.digital?subject=${subject}&body=${body}`;
