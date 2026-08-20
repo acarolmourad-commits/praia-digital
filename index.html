@@ -4770,7 +4770,7 @@ async function generateDesc() {
       body: JSON.stringify({ tipo: tipo.charAt(0).toUpperCase()+tipo.slice(1), cidade, diferenciais: [area, dorms, extra].filter(Boolean).join(', ') })
     });
     const data = await res.json();
-    if (outputText) outputText.textContent = data.descricao  '';
+    if (outputText) outputText.textContent = data.descricao || '';
   } catch (e) {
     if (outputText) outputText.textContent = 'Erro ao consultar API.';
   } finally {
@@ -4902,7 +4902,7 @@ function checkCredit() {
 
   // Eligible programs
   const programs = [];
-  const fgtsOk = tipo === 'clt'  tipo === 'pensionista';
+  const fgtsOk = tipo === 'clt' || tipo === 'pensionista';
   const tempoOk = tempo >= 12;
   if (fgtsOk && tempoOk) {
     programs.push({ name: '🏦 SFH + FGTS', rate: '9,0% a.a.', desc: 'Melhor taxa do mercado. Entrada mínima 10%.', maxFin: maxPriceFGTS, badge: 'Melhor opção' });
@@ -4915,7 +4915,7 @@ function checkCredit() {
   if (tempoOk) {
     programs.push({ name: '🏦 SBPE (Mercado)', rate: '11–12% a.a.', desc: 'Sem exigência de FGTS. Até 90% do imóvel.', maxFin: maxPriceSBPE, badge: '' });
   }
-  if (tipo === 'autonomo'  tipo === 'empresa') {
+  if (tipo === 'autonomo' || tipo === 'empresa') {
     programs.push({ name: '💼 Crédito Consorciado', rate: 'Sem taxa de juros', desc: 'Entrada + parcelas mensais. Sem juros.', maxFin: 0, badge: 'Alternativa' });
   }
 
@@ -5753,7 +5753,7 @@ handleHash();
     const v = document.getElementById('b2bPerfil').value;
     const map = {imobiliaria:'Professional',corretor:'Professional',construtora:'Enterprise',incorporadora:'Enterprise',administradora:'Professional',portal:'Enterprise'};
     const plan = map[v]  'Starter';
-    planText.textContent = plan + ' — ' + (planDetails[plan]  '');
+    planText.textContent = plan + ' — ' + (planDetails[plan] || '');
     planBox.style.display = 'block';
   };
   form.addEventListener('submit', async function(e){
