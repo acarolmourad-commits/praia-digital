@@ -187,7 +187,7 @@ gtag('config', '', { anonymize_ip: true });
 </div>
 
 <script>
-const API = "http://127.0.0.1:8000";
+const API = "https://praia.digital";
 let ultimo = null, ultimoCep = null, ultimaCidade = null, ultimoYield = null;
 
 // mapa heatmap fake (centro SP/Santos)
@@ -210,14 +210,14 @@ async function calcular(){
   if(cep.replace(/\D/g,'').length!==8){document.getElementById('err1').textContent="CEP inválido (8 dígitos).";return;}
   const btn=document.getElementById('calcBtn');btn.disabled=true;btn.textContent="Calculando…";
   const body={
-    cep, tipo:document.getElementById('tipo').value,
-    quartos:+document.getElementById('quartos').value,
-    banheiros:+document.getElementById('banheiros').valueundefined,
-    hospedes_max:+document.getElementById('hospedes').valueundefined,
-    metragem_m2:+document.getElementById('m2').valueundefined,
-    comodidades:document.getElementById('comod').value.split(',').map(s=>s.trim()).filter(Boolean),
-    valor_aquisicao:+document.getElementById('valor').valueundefined,
-    custos_fixos_mensais:+document.getElementById('custos').valueundefined
+  cep, tipo:document.getElementById('tipo').value,
+  quartos:+document.getElementById('quartos').value || 0,
+  banheiros:+document.getElementById('banheiros').value || 0,
+  hospedes_max:+document.getElementById('hospedes').value || 0,
+  metragem_m2:+document.getElementById('m2').value || 0,
+  comodidades:document.getElementById('comod').value.split(',').map(s=>s.trim()).filter(Boolean),
+  valor_aquisicao:+document.getElementById('valor').value || 0,
+  custos_fixos_mensais:+document.getElementById('custos').value || 0
   };
   try{
     const r=await fetch(API+"/api/v1/yield/estimate",{method:"POST",headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
