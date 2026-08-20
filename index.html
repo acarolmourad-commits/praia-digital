@@ -4026,7 +4026,7 @@ function sendAI() {
 function processAI(msg) {
   const lower = msg.toLowerCase();
 
-  if (lower.match(/simul|financi|parcela|empréstimo|emprestimo/i) && (lower.match(/\d/)  lower.match(/500|800|900|1000|mil|oitocentos|novecentos/))) {
+  if (lower.match(/simul|financi|parcela|empréstimo|emprestimo/i) && (lower.match(/\d/) || lower.match(/500|800|900|1000|mil|oitocentos|novecentos/))) {
     const priceMatch = msg.match(/(\d{3,7})/);
     const entradaMatch = msg.match(/entrada.*?(\d+)/i);
     let valor = priceMatch ? parseInt(priceMatch[1].replace(/\./g,'')) * 1000 : 0;
@@ -4117,11 +4117,11 @@ function nlSearch() {
   const query = document.getElementById('nlQuery').value.trim().toLowerCase();
   if (!query) return;
   let tipo = '', cidade = '', dorms = '';
-  if (query.includes('apartamento')  query.includes('apto')) tipo = 'apartamento';
+  if (query.includes('apartamento') || query.includes('apto')) tipo = 'apartamento';
   else if (query.includes('casa')) tipo = 'casa';
   else if (query.includes('pousada')) tipo = 'pousada';
   else if (query.includes('terreno')) tipo = 'terreno';
-  else if (query.includes('comercial')  query.includes('sala')) tipo = 'comercial';
+  else if (query.includes('comercial') || query.includes('sala')) tipo = 'comercial';
   const cityMap = {'praia grande':'praia-grande','santos':'santos','guaruja':'guaruja','são vicente':'sao-vicente','itanhaém':'itanhaem','mongaguá':'mongagua','peruíbe':'peruibe','ubatuba':'ubatuba','caraguatatuba':'caraguatatuba','são sebastião':'sao-sebastiao','ilhabela':'ilhabela','bertioga':'bertioga'};
   for (const [label, key] of Object.entries(cityMap)) { if (query.includes(label)) { cidade = key; break; } }
   const dormMatch = query.match(/(\d+)\s*(quarto|dorm|banhei)/i);
@@ -4459,11 +4459,11 @@ function printListing() {
 // ====================
 function calcSimulator() {
   const valor = parseFloat(document.getElementById('simValor').value);
-  const entrada = parseFloat(document.getElementById('simEntrada').value)  0;
+  const entrada = parseFloat(document.getElementById('simEntrada').value) || 0;
   const taxa = parseFloat(document.getElementById('simTaxa').value) / 100;
   const anos = parseInt(document.getElementById('simAnos').value);
   const mipRate = parseFloat(document.getElementById('simMip').value) / 100;
-  if (!valor  valor < 50000) { alert('Informe o valor do imóvel (mínimo R$ 50 mil).'); return; }
+  if (!valor || valor < 50000) { alert('Informe o valor do imóvel (mínimo R$ 50 mil).'); return; }
   const financed = valor - entrada;
   const monthlyRate = taxa / 12;
   const months = anos * 12;
@@ -4513,7 +4513,7 @@ function calcSimulator() {
     const interest = b * monthlyRate;
     const amort = installment - interest;
     b -= amort;
-    if (m <= 12  m % 12 === 0  m === maxRows) {
+    if (m <= 12 || m % 12 === 0 || m === maxRows) {
       rows += '<tr><td>' + m + '</td><td>R$ ' + installment.toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</td><td>R$ ' + interest.toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</td><td>R$ ' + amort.toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</td><td>R$ ' + Math.max(0, b).toLocaleString('pt-BR', {minimumFractionDigits: 0}) + '</td></tr>';
     }
   }
@@ -5264,7 +5264,7 @@ function formatBRL(n) {
 // TRANSACTION COSTS CALCULATOR
 function calcTransactionCosts() {
   const valor = parseFloat(document.getElementById('ccValor').value)  0;
-  if (!valor  valor < 50000) { alert('Informe o valor do imóvel (mínimo R$ 50 mil).'); return; }
+  if (!valor || valor < 50000) { alert('Informe o valor do imóvel (mínimo R$ 50 mil).'); return; }
 
   const estado = document.getElementById('ccEstado').value;
   const finalidade = document.getElementById('ccFinalidade').value;
