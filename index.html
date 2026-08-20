@@ -4538,7 +4538,7 @@ async function runValuation() {
   const out = document.getElementById('valResult');
   if(out) out.classList.add('visible');
   const setErr = (msg) => {
-    document.getElementById('valInsight').textContent = msg  'Erro ao consultar API.';
+    document.getElementById('valInsight').textContent = msg + 'Erro ao consultar API.';
     document.getElementById('valBaixo').textContent = '—';
     document.getElementById('valMedio').textContent = '—';
     document.getElementById('valAlto').textContent = '—';
@@ -4559,7 +4559,7 @@ async function runValuation() {
     document.getElementById('valBarFill').style.width = (position * 100) + '%';
     document.getElementById('valBarMarker').style.left = (position * 100) + '%';
     document.getElementById('valInsight').textContent = 'Estimativa gerada pela IA para ' + payload.cidade + '.';
-    const iptuRate = { apartamento: 0.003, casa: 0.004, terreno: 0.002, pousada: 0.005, comercial: 0.004 }[tipo]  0.003;
+    const iptuRate = { apartamento: 0.003, casa: 0.004, terreno: 0.002, pousada: 0.005, comercial: 0.004 }[tipo] || 0.003;
     const estimatedIptu = Math.round(Number(data.sugestao0) * iptuRate);
     document.getElementById('valIptuInfo').textContent = '💰 IPTU estimado: R$ ' + estimatedIptu.toLocaleString('pt-BR') + '/ano (base ' + (iptuRate * 100).toFixed(1) + '% do valor).';
   } catch (e) {
