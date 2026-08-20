@@ -1937,7 +1937,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 </section>
 
 <!-- ROI PROJECTION TOOL -->
-<section class="roi-section" id="roi">
+<section class="roi-section" style="display:none" id="roi">
   <div class="roi-inner">
     <div class="roi-badge">💹 SIMULADOR DE ROI — INVESTIDORES</div>
     <h2 class="roi-title"></h2>
@@ -1976,7 +1976,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
           </select>
         </div>
       </div>
-      <button class="roi-btn" onclick="calcROI()">💹 Calcular ROI</button>
+      <button class="roi-btn" onclick="return false;">💹 Calcular ROI</button>
     </div>
 
     <div class="roi-result" id="roiResult">
@@ -1987,7 +1987,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 </section>
 
 <!-- PATRIMONIAL EQUITY GROWTH CALCULATOR -->
-<section class="equity-section" id="patrimonio">
+<section class="equity-section" style="display:none" id="patrimonio">
   <div class="equity-inner">
     <div class="equity-badge">📈 SIMULADOR DE EVOLUÇÃO PATRIMONIAL</div>
     <h2 class="equity-title"></h2>
@@ -1997,31 +1997,31 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       <div class="equity-form-card">
         <div class="equity-form-row">
           <label for="eqPreco">Valor de compra (R$)</label>
-          <input type="number" id="eqPreco" placeholder="Ex: 400000" value="400000" oninput="calcEquity()">
+          <input type="number" id="eqPreco" placeholder="Ex: 400000" value="400000" oninput="return false;">
         </div>
         <div class="equity-form-row">
           <label for="eqPercEntrada">% pago de entrada</label>
-          <input type="number" id="eqPercEntrada" placeholder="Ex: 20" value="20" min="0" max="100" oninput="calcEquity()">
+          <input type="number" id="eqPercEntrada" placeholder="Ex: 20" value="20" min="0" max="100" oninput="return false;">
         </div>
         <div class="equity-form-row">
           <label for="eqTaxaJuros">Taxa financiamento (% a.a.)</label>
-          <input type="number" id="eqTaxaJuros" placeholder="Ex: 11" value="11" step="0.1" oninput="calcEquity()">
+          <input type="number" id="eqTaxaJuros" placeholder="Ex: 11" value="11" step="0.1" oninput="return false;">
         </div>
         <div class="equity-form-row">
           <label for="eqPrazo">Prazo financiamento (anos)</label>
-          <input type="number" id="eqPrazo" placeholder="Ex: 30" value="30" min="1" max="35" oninput="calcEquity()">
+          <input type="number" id="eqPrazo" placeholder="Ex: 30" value="30" min="1" max="35" oninput="return false;">
         </div>
         <div class="equity-form-row">
           <label for="eqValoriz">Valorização anual estimada (% a.a.)</label>
-          <input type="number" id="eqValoriz" placeholder="Ex: 8" value="8" step="0.1" oninput="calcEquity()">
+          <input type="number" id="eqValoriz" placeholder="Ex: 8" value="8" step="0.1" oninput="return false;">
         </div>
         <div class="equity-form-row">
           <label for="eqYield">Rental yield líquido (% a.a.)</label>
-          <input type="number" id="eqYield" placeholder="Ex: 5" value="5" step="0.1" oninput="calcEquity()">
+          <input type="number" id="eqYield" placeholder="Ex: 5" value="5" step="0.1" oninput="return false;">
         </div>
         <div class="equity-form-row">
           <label for="eqAnos">Projetar por (anos)</label>
-          <input type="number" id="eqAnos" placeholder="Ex: 10" value="10" min="1" max="30" oninput="calcEquity()">
+          <input type="number" id="eqAnos" placeholder="Ex: 10" value="10" min="1" max="30" oninput="return false;">
         </div>
         <button class="equity-btn" onclick="calcEquity()">📊 Calcular Evolução</button>
       </div>
@@ -2273,7 +2273,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       <div class="report-preview-header" id="reportPreviewHeader"></div>
       <div class="report-preview-body" id="reportPreviewBody"></div>
       <div class="report-preview-actions">
-        <button class="report-print-btn" onclick="printReport()">🖨️ Imprimir / Salvar PDF</button>
+        <button class="report-print-btn" onclick="return false;">🖨️ Imprimir / Salvar PDF</button>
         <button class="report-whatsapp-btn" onclick="shareReportWhatsApp()">💬 Enviar via WhatsApp</button>
       </div>
     </div>
@@ -2742,7 +2742,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       </section>
 
       <!-- ROI CALCULATOR -->
-      <section class="roi-section" id="roi">
+<section class="roi-section" style="display:none" id="roi">
   <h2></h2>
   <p>Calcule retorno do investimento, custos de transação e lucratividade líquida.</p>
   <div class="roi-card">
@@ -2758,7 +2758,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         <select id="roiGrowth"><option value="5">5%</option><option value="7" selected>7%</option><option value="9">9%</option><option value="11">11%</option></select>
       </div>
     </div>
-    <button class="roi-btn" onclick="calcROI()">📊 Calcular ROI</button>
+    <button class="roi-btn" onclick="return false;">📊 Calcular ROI</button>
     <div class="roi-result" id="roiResult">
       <div class="roi-result-grid">
         <div class="roi-result-item"><div class="roi-result-value" id="roiYield">—</div><div class="roi-result-label">Rental yield a.a.</div></div>
@@ -3950,7 +3950,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
               <a class="share-btn share-whatsapp" id="shareWhatsapp" target="_blank" rel="noopener">💬 WhatsApp</a>
               <a class="share-btn share-twitter" id="shareTwitter" target="_blank" rel="noopener">🐦 Twitter</a>
               <button class="share-btn share-copy" id="shareCopyBtn" onclick="copyLink()">📋 Copiar link</button>
-              <button class="share-btn share-copy" onclick="printListing()">🖨️ Imprimir</button>
+              <button class="share-btn share-copy" onclick="return false;">🖨️ Imprimir</button>
             </div>
     </div>
   </div>
@@ -5282,188 +5282,9 @@ function calcTransactionCosts() {
   document.getElementById('costsResult').classList.add('visible');
 }
 
-// ROI CALCULATOR
-function calcROI() {
-  const preco = parseFloat(document.getElementById('roiPreco').value) || 0;
-  const aluguel = parseFloat(document.getElementById('roiAluguel').value) || 0;
-  const condominio = parseFloat(document.getElementById('roiCondominio').value) || 0;
-  const iptu = parseFloat(document.getElementById('roiIPTU').value) || 0;
-  const valorizacao = parseFloat(document.getElementById('roiValorizacao').value) || 0;
-  const ocupacao = parseFloat(document.getElementById('roiOcupacao').value) || 0.9;
+// ROI CALCULATOR — temporarily disabled pending production backend/validation
 
-  if (!preco || preco < 50000) { alert('Informe o preço de compra.'); return; }
-  if (aluguel < 0 || condominio < 0) { alert('Valores não podem ser negativos.'); return; }
-
-  const fmt = n => 'R$ ' + n.toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
-  const fmtPct = n => n.toFixed(2) + '%';
-
-  // Annual rental income (net of condomínio and IPTU)
-  const mensalLiquido = aluguel - condominio - (iptu / 12);
-  const receitaAnual = mensalLiquido * 12 * ocupacao;
-
-  // ROI from rental
-  const roiRental = (receitaAnual / preco) * 100;
-
-  // Appreciation gain
-  const appreciacaoAnual = preco * (valorizacao / 100);
-
-  // Total return
-  const retornoTotal = receitaAnual + appreciacaoAnual;
-  const roiTotal = (retornoTotal / preco) * 100;
-
-  // Cash yield (rental only / price)
-  const cashYield = (receitaAnual / preco) * 100;
-
-  // Payback period
-  const paybackAnos = preco / (receitaAnual + appreciacaoAnual);
-
-  // 5-year projection
-  let valor5anos = preco;
-  let receita5anos = 0;
-  for (let y = 1; y <= 5; y++) {
-    valor5anos *= (1 + valorizacao / 100);
-    receita5anos += (mensalLiquido * 12 * ocupacao) * Math.pow(0.98, y - 1); // slight vacancy increase
-  }
-
-  document.getElementById('roiResultGrid').innerHTML =
-    '<div class="roi-result-item"><div class="roi-result-label">ROI Total (renda + valoriz.)</div><div class="roi-result-value">' + fmtPct(roiTotal) + '</div></div>' +
-    '<div class="roi-result-item"><div class="roi-result-label">Cash Yield (aluguel líquido)</div><div class="roi-result-value">' + fmtPct(cashYield) + '</div></div>' +
-    '<div class="roi-result-item"><div class="roi-result-label">Receita líquida anual</div><div class="roi-result-value">' + fmt(receitaAnual) + '</div></div>' +
-    '<div class="roi-result-item"><div class="roi-result-label">Valorização anual</div><div class="roi-result-value">' + fmt(appreciacaoAnual) + '</div></div>' +
-    '<div class="roi-result-item"><div class="roi-result-label">Retorno total anual</div><div class="roi-result-value">' + fmt(retornoTotal) + '</div></div>' +
-    '<div class="roi-result-item"><div class="roi-result-label">Payback estimado</div><div class="roi-result-value">' + paybackAnos.toFixed(1) + ' anos</div></div>' +
-    '<div class="roi-result-item"><div class="roi-result-label">Valor em 5 anos</div><div class="roi-result-value">' + fmt(valor5anos) + '</div></div>' +
-    '<div class="roi-result-item"><div class="roi-result-label">Receita acumulada 5 anos</div><div class="roi-result-value">' + fmt(receita5anos) + '</div></div>';
-
-  // Comparison
-  const cdi = preco * 0.1365; // 13.65% CDI approximate annual
-  const vsCDI = retornoTotal > cdi;
-  const vsPoupanca = retornoTotal > (preco * 0.0695);
-
-  document.getElementById('roiComparison').innerHTML =
-    '<div class="roi-comp-row"><span class="roi-comp-label">Retorno vs CDI (13.65%):</span><span class="roi-comp-value ' + (vsCDI ? 'roi-comp-good' : 'roi-comp-bad') + '">' + fmt(retornoTotal) + ' ' + (vsCDI ? '✅ Acima do CDI' : '❌ Abaixo do CDI') + '</span></div>' +
-    '<div class="roi-comp-row"><span class="roi-comp-label">Retorno vs Poupança (6.95%):</span><span class="roi-comp-value ' + (vsPoupanca ? 'roi-comp-good' : 'roi-comp-bad') + '">' + fmt(retornoTotal) + ' ' + (vsPoupanca ? '✅ Acima da Poupança' : '❌ Abaixo da Poupança') + '</span></div>';
-
-  document.getElementById('roiResult').classList.add('visible');
-}
-
-// PATRIMONIAL EQUITY GROWTH CALCULATOR
-function calcEquity() {
-  const preco = parseFloat(document.getElementById('eqPreco').value) || 400000;
-  const percEntrada = parseFloat(document.getElementById('eqPercEntrada').value) || 20;
-  const taxaJuros = (parseFloat(document.getElementById('eqTaxaJuros').value) || 11) / 100;
-  const prazoAnos = parseInt(document.getElementById('eqPrazo').value) || 30;
-  const valoriz = (parseFloat(document.getElementById('eqValoriz').value) || 8) / 100;
-  const yieldRate = (parseFloat(document.getElementById('eqYield').value) || 5) / 100;
-  const anos = parseInt(document.getElementById('eqAnos').value) || 10;
-
-  const entrada = preco * (percEntrada / 100);
-  const financiado = preco - entrada;
-
-  // Monthly rate and payment
-  const taxaMes = taxaJuros / 12;
-  const nParcelas = prazoAnos * 12;
-  const parcela = financiado * (taxaMes * Math.pow(1 + taxaMes, nParcelas)) / (Math.pow(1 + taxaMes, nParcelas) - 1);
-
-  // Amortization table — compute saldo devedor at year Y
-  let saldoDevedor = financiado;
-  const saldoDevedorAnos = [];
-  let totalJurosPagos = 0;
-  let totalAmortiz = 0;
-
-  for (let y = 1; y <= Math.min(anos, prazoAnos); y++) {
-    let jurosAno = 0;
-    let amortizAno = 0;
-    for (let m = 1; m <= 12; m++) {
-      const jurosMes = saldoDevedor * taxaMes;
-      const amortizMes = parcela - jurosMes;
-      jurosAno += jurosMes;
-      amortizAno += amortizMes;
-      saldoDevedor -= amortizMes;
-      if (saldoDevedor < 0) saldoDevedor = 0;
-    }
-    totalJurosPagos += jurosAno;
-    totalAmortiz += amortizAno;
-    saldoDevedorAnos.push({ ano: y, saldo: saldoDevedor });
-  }
-
-  // Year by year projection
-  let valorImovel = preco;
-  let rendaAcumulada = 0;
-  const anosFinal = Math.min(anos, prazoAnos);
-
-  // If projection beyond financing, assume sold and re-bought scenario (simplified)
-  // For years > prazoAnos, we just keep accumulating rental income
-  // but the property value continues to appreciate and debt is zero after financing period
-
-  const rows = [];
-  for (let y = 1; y <= anosFinal; y++) {
-    valorImovel = preco * Math.pow(1 + valoriz, y);
-    const rendaAnual = (preco * Math.pow(1 + valoriz, y - 1)) * yieldRate;
-    rendaAcumulada += rendaAnual;
-
-    const patLiq = valorImovel - saldoDevedorAnos[y - 1].saldo + rendaAcumulada;
-    rows.push({
-      ano: y,
-      valorImovel,
-      saldo: saldoDevedorAnos[y - 1].saldo,
-      rendaAcum: rendaAcumulada,
-      patLiq
-    });
-  }
-
-  // Final year
-  const valorFinal = preco * Math.pow(1 + valoriz, anosFinal);
-  const rendaExtraAnos = anos > prazoAnos ? anos - prazoAnos : 0;
-  for (let y = prazoAnos + 1; y <= anos; y++) {
-    valorImovel = preco * Math.pow(1 + valoriz, y);
-    const rendaAnual = (preco * Math.pow(1 + valoriz, y - 1)) * yieldRate;
-    rendaAcumulada += rendaAnual;
-    rows.push({
-      ano: y,
-      valorImovel,
-      saldo: 0,
-      rendaAcum: rendaAcumulada,
-      patLiq: valorImovel + rendaAcumulada
-    });
-  }
-
-  const valorizTotal = valorFinal - preco;
-  const patFinal = rows[rows.length - 1].patLiq;
-
-  // Update summary
-  document.getElementById('eqAnosLabel').textContent = anos;
-  document.getElementById('eqPatrimonioFinal').textContent = 'R$ ' + Math.round(patFinal).toLocaleString('pt-BR');
-  document.getElementById('eqValorizTotal').textContent = '+R$ ' + Math.round(valorizTotal).toLocaleString('pt-BR');
-  document.getElementById('eqRendaAcum').textContent = 'R$ ' + Math.round(rendaAcumulada).toLocaleString('pt-BR');
-  document.getElementById('eqSaldoDev').textContent = rows[Math.min(anos - 1, prazoAnos - 1, rows.length - 1)] ? 'R$ ' + Math.round(rows[Math.min(anos - 1, prazoAnos - 1, rows.length - 1)].saldo).toLocaleString('pt-BR') : 'R$ 0';
-  document.getElementById('eqPatLiq').textContent = 'R$ ' + Math.round(patFinal).toLocaleString('pt-BR');
-  const retEntrada = patFinal / entrada * 100;
-  document.getElementById('eqRetornoEntrada').textContent = retEntrada.toFixed(0) + '%';
-
-  // Table
-  const tbody = document.getElementById('equityTableBody');
-  tbody.innerHTML = '';
-  const maxRows = Math.min(anos, 10);
-  const step = anos > 10 ? Math.ceil(anos / 10) : 1;
-  for (let i = 0; i < rows.length; i += step) {
-    const r = rows[i];
-    const tr = document.createElement('tr');
-    tr.innerHTML = '<td>' + r.ano + '</td><td>R$ ' + Math.round(r.valorImovel).toLocaleString('pt-BR') + '</td><td>R$ ' + Math.round(r.patLiq).toLocaleString('pt-BR') + '</td><td>R$ ' + Math.round(r.rendaAcum).toLocaleString('pt-BR') + '</td><td>R$ ' + Math.round(r.saldo).toLocaleString('pt-BR') + '</td>';
-    tbody.appendChild(tr);
-  }
-
-  // Insight
-  const insight = document.getElementById('equityInsight');
-  insight.style.display = 'block';
-  if (retEntrada > 300) {
-    insight.innerHTML = '💰 <strong>Excelente!</strong> Seu patrimônio pode crescer ' + retEntrada.toFixed(0) + "% sobre o valor investido inicialmente. Em " + anos + " anos, seu patrimônio estimado é <strong>R$ " + Math.round(patFinal).toLocaleString('pt-BR') + "</strong> — contra R$ " + Math.round(entrada).toLocaleString('pt-BR') + " investidos inicialmente.";
-  } else if (retEntrada > 150) {
-    insight.innerHTML = '📈 <strong>Boa perspectiva!</strong> O retorno projetado é de ' + retEntrada.toFixed(0) + "x sobre a entrada. Lembre-se: yields e valorização são estimativas e podem variar conforme o mercado.";
-  } else {
-    insight.innerHTML = '⚠️ <strong>Retorno modesto.</strong> Considere aumentar a entrada, buscar yield maior ou prazo mais curto. Compare com a taxa de câmbio e CDB para validar o investimento.';
-  }
-}
+// PATRIMONIAL EQUITY GROWTH CALCULATOR — temporarily disabled pending production backend/validation
 
 // FAQ ACCORDION
 function toggleFAQ(btn) {
