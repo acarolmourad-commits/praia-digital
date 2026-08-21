@@ -109,6 +109,25 @@
     .nav-highlight-sale { background: var(--amber); color: var(--dark) !important; padding: 0.35rem 0.9rem; border-radius: 50px; font-weight: 700 !important; opacity: 1 !important; }
     .nav-highlight-sale:hover { background: #e6b000; }
 
+    /* PROFILE NAV */
+    .pd-nav { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; background: linear-gradient(135deg, var(--ocean) 0%, var(--ocean-light) 100%); color: var(--white); padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 16px rgba(0,0,0,0.15); }
+    .pd-nav-logo { font-size:1.35rem; font-weight:800; color:#fff; text-decoration:none; letter-spacing:0.2px; }
+    .pd-nav-toggle { display:none; background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.35); color:#fff; border-radius:10px; padding:0.45rem 0.75rem; font-weight:700; cursor:pointer; }
+    .pd-nav-menu { display:flex; align-items:center; gap:1.25rem; flex-wrap:wrap; }
+    .pd-nav-group { display:flex; gap:0.6rem; align-items:center; flex-wrap:wrap; }
+    .pd-nav-label { font-size:0.78rem; font-weight:700; opacity:0.75; letter-spacing:0.08em; text-transform:uppercase; padding:0.25rem 0.5rem; border-right:1px solid rgba(255,255,255,0.35); margin-right:0.25rem; }
+    .pd-nav-menu a { color:#fff; text-decoration:none; font-weight:600; opacity:0.9; padding:0.35rem 0.6rem; border-radius:999px; transition: background 0.2s, opacity 0.2s; }
+    .pd-nav-menu a:hover { background:rgba(255,255,255,0.12); opacity:1; }
+    .pd-nav-cta { background: var(--amber); color: var(--dark) !important; padding: 0.4rem 1rem; border-radius: 50px; font-weight: 800 !important; opacity:1 !important; }
+    .pd-nav-cta:hover { background:#e6b000; }
+    @media (max-width: 980px) {
+      .pd-nav-toggle { display:inline-flex; align-items:center; gap:0.4rem; }
+      .pd-nav-menu { display:none; width:100%; gap:0.75rem; }
+      .pd-nav-menu.open { display:flex; }
+      .pd-nav-group { width:100%; justify-content:space-between; }
+      .pd-nav-label { border-right:none; border-bottom:1px solid rgba(255,255,255,0.25); width:100%; }
+    }
+
     /* AI ASSISTANT */
     .ai-assistant { position: fixed; bottom: 5.5rem; right: 1.5rem; z-index: 998; width: 380px; max-width: calc(100vw - 2rem); background: var(--white); border-radius: 20px; box-shadow: 0 8px 40px rgba(0,0,0,0.2); display: none; flex-direction: column; max-height: 520px; overflow: hidden; border: 2px solid var(--purple-light); }
     .ai-assistant.open { display: flex; }
