@@ -27523,7 +27523,12 @@
     "https://praia.digital/blog/avaliacao-automatica-preco-imoveis-litoral-atendimento-2026.html",
     "https://praia.digital/blog/seo-local-imobiliarias-litoral-checklist-pratico-2026.html",
     "https://praia.digital/blog/whatsapp-business-imobiliarias-automacao-atendimento-2026.html",
-    "https://praia.digital/blog/follow-up-automatico-funil-vendas-imobiliarias-primeiro-contato-fechamento-2026.html"
+    "https://praia.digital/blog/follow-up-automatico-funil-vendas-imobiliarias-primeiro-contato-fechamento-2026.html",
+    "https://praia.digital/blog/documentacao-imovel-estrangeiro-compra-brasil-litoral-2026.html",
+    "https://praia.digital/blog/imposto-renda-aluguel-temporada-litoral-guia-2026.html",
+    "https://praia.digital/blog/administracao-imoveis-litoral-escolher-administradora-custos-riscos-2026.html",
+    "https://praia.digital/blog/transferencia-imovel-heranca-inventario-litoral-passos-2026.html",
+    "https://praia.digital/blog/gestao-profissional-imoveis-litoral-modelo-administracao-2026.html"
   ],
   "sitemap_plan": {
     "canonical_urls": [
@@ -40023,6 +40028,57 @@
         "cluster": "Conversão",
         "status": "PRODUZIDO_LOCALMENTE",
         "published_at": "2026-08-20"
+      }
+    ]
+  },
+  "batch6": {
+    "status": "PRODUZIDO_LOCALMENTE",
+    "published_at": null,
+    "articles": [
+      {
+        "slug": "documentacao-imovel-estrangeiro-compra-brasil-litoral-2026",
+        "url": "https://praia.digital/blog/documentacao-imovel-estrangeiro-compra-brasil-litoral-2026.html",
+        "title": "Documentação para estrangeiro comprar imóvel no Brasil: guia para o litoral em 2026",
+        "keyword": "documentação para estrangeiro comprar imóvel no Brasil",
+        "cluster": "Documentação e Estrangeiro",
+        "status": "PRODUZIDO_LOCALMENTE",
+        "published_at": null
+      },
+      {
+        "slug": "imposto-renda-aluguel-temporada-litoral-guia-2026",
+        "url": "https://praia.digital/blog/imposto-renda-aluguel-temporada-litoral-guia-2026.html",
+        "title": "Imposto de renda e aluguel temporada no litoral: guia prático 2026",
+        "keyword": "imposto de renda aluguel temporada litoral",
+        "cluster": "Documentação e Estrangeiro",
+        "status": "PRODUZIDO_LOCALMENTE",
+        "published_at": null
+      },
+      {
+        "slug": "administracao-imoveis-litoral-escolher-administradora-custos-riscos-2026",
+        "url": "https://praia.digital/blog/administracao-imoveis-litoral-escolher-administradora-custos-riscos-2026.html",
+        "title": "Como escolher administradora de imóveis no litoral: custos, contratos e riscos",
+        "keyword": "administradora de imóveis no litoral",
+        "cluster": "Documentação e Estrangeiro",
+        "status": "PRODUZIDO_LOCALMENTE",
+        "published_at": null
+      },
+      {
+        "slug": "transferencia-imovel-heranca-inventario-litoral-passos-2026",
+        "url": "https://praia.digital/blog/transferencia-imovel-heranca-inventario-litoral-passos-2026.html",
+        "title": "Transferência de imóvel por herança e inventário no litoral: passos, custos e documentos",
+        "keyword": "transferência de imóvel por herança litoral",
+        "cluster": "Documentação e Estrangeiro",
+        "status": "PRODUZIDO_LOCALMENTE",
+        "published_at": null
+      },
+      {
+        "slug": "gestao-profissional-imoveis-litoral-modelo-administracao-2026",
+        "url": "https://praia.digital/blog/gestao-profissional-imoveis-litoral-modelo-administracao-2026.html",
+        "title": "Gestão profissional de imóveis no litoral: modelo de administração 2026",
+        "keyword": "gestão profissional imóveis litoral 2026",
+        "cluster": "Documentação e Estrangeiro",
+        "status": "PRODUZIDO_LOCALMENTE",
+        "published_at": null
       }
     ]
   }
