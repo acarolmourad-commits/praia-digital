@@ -27518,7 +27518,12 @@
       "article_type": "C",
       "author": "Praia Digital",
       "word_count": 210
-    }
+    },
+    "https://praia.digital/blog/captacao-imoveis-litoral-sem-investimento-inicial-2026.html",
+    "https://praia.digital/blog/avaliacao-automatica-preco-imoveis-litoral-atendimento-2026.html",
+    "https://praia.digital/blog/seo-local-imobiliarias-litoral-checklist-pratico-2026.html",
+    "https://praia.digital/blog/whatsapp-business-imobiliarias-automacao-atendimento-2026.html",
+    "https://praia.digital/blog/follow-up-automatico-funil-vendas-imobiliarias-primeiro-contato-fechamento-2026.html"
   ],
   "sitemap_plan": {
     "canonical_urls": [
@@ -39969,5 +39974,56 @@
     "status": "published",
     "data": "2026-08-16",
     "nota": "Hub vivo replicado de Santos. Placeholder para clima/mar/eventos."
+  },
+  "batch5": {
+    "status": "PRODUZIDO_LOCALMENTE",
+    "published_at": "2026-08-20",
+    "articles": [
+      {
+        "slug": "captacao-imoveis-litoral-sem-investimento-inicial-2026",
+        "url": "https://praia.digital/blog/captacao-imoveis-litoral-sem-investimento-inicial-2026.html",
+        "title": "Captação de imóveis no litoral sem investimento inicial em 2026",
+        "keyword": "captação imóveis litoral 2026",
+        "cluster": "Captação",
+        "status": "PRODUZIDO_LOCALMENTE",
+        "published_at": "2026-08-20"
+      },
+      {
+        "slug": "avaliacao-automatica-preco-imoveis-litoral-atendimento-2026",
+        "url": "https://praia.digital/blog/avaliacao-automatica-preco-imoveis-litoral-atendimento-2026.html",
+        "title": "Avaliação automática de preço: como usar no atendimento de imóveis no litoral",
+        "keyword": "avaliação automática preço imóveis litoral",
+        "cluster": "Avaliação",
+        "status": "PRODUZIDO_LOCALMENTE",
+        "published_at": "2026-08-20"
+      },
+      {
+        "slug": "seo-local-imobiliarias-litoral-checklist-pratico-2026",
+        "url": "https://praia.digital/blog/seo-local-imobiliarias-litoral-checklist-pratico-2026.html",
+        "title": "SEO local para imobiliárias no litoral: checklist prático 2026",
+        "keyword": "SEO local imobiliárias litoral 2026",
+        "cluster": "SEO Local",
+        "status": "PRODUZIDO_LOCALMENTE",
+        "published_at": "2026-08-20"
+      },
+      {
+        "slug": "whatsapp-business-imobiliarias-automacao-atendimento-2026",
+        "url": "https://praia.digital/blog/whatsapp-business-imobiliarias-automacao-atendimento-2026.html",
+        "title": "WhatsApp Business para imobiliárias: automação e modelo de atendimento",
+        "keyword": "WhatsApp Business imobiliárias automação",
+        "cluster": "Atendimento",
+        "status": "PRODUZIDO_LOCALMENTE",
+        "published_at": "2026-08-20"
+      },
+      {
+        "slug": "follow-up-automatico-funil-vendas-imobiliarias-primeiro-contato-fechamento-2026",
+        "url": "https://praia.digital/blog/follow-up-automatico-funil-vendas-imobiliarias-primeiro-contato-fechamento-2026.html",
+        "title": "Follow-up automático no funil de vendas imobiliárias: do primeiro contato ao fechamento",
+        "keyword": "follow-up automático vendas imobiliárias",
+        "cluster": "Conversão",
+        "status": "PRODUZIDO_LOCALMENTE",
+        "published_at": "2026-08-20"
+      }
+    ]
   }
 }
