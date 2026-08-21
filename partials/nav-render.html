@@ -6,14 +6,37 @@
 <title>Partials</title>
 </head>
 <body>
-<nav aria-label="Navegação principal">
-  <a href="https://praia.digital/">Início</a>
-  <a href="https://praia.digital/blog/">Blog</a>
-  <a href="https://praia.digital/education/index.html">Academy</a>
-  <a href="https://praia.digital/education/formacoes/index.html">Formações</a>
-  <a href="https://praia.digital/servicos.html">Serviços</a>
-  <a href="https://praia.digital/noticias/index.html">Notícias</a>
-  <a href="https://wa.me/5511954346288" class="nav-highlight-sale">Fale conosco</a>
+<nav aria-label="Navegação principal" class="pd-nav">
+  <a href="https://praia.digital/" class="pd-nav-logo">Praia Digital</a>
+  <button class="pd-nav-toggle" aria-expanded="false" aria-controls="pd-nav-menu" onclick="this.nextElementSibling.classList.toggle('open')">
+    <span></span><span></span><span></span> Menu
+  </button>
+  <div id="pd-nav-menu" class="pd-nav-menu">
+    <div class="pd-nav-group">
+      <span class="pd-nav-label">Quero Investir</span>
+      <a href="#rental">Simulador de ROI</a>
+      <a href="exclusivos/relatorio-mercado-2026.html">Relatórios de Valorização</a>
+      <a href="cases.html">Oportunidades</a>
+    </div>
+    <div class="pd-nav-group">
+      <span class="pd-nav-label">Quero Comprar</span>
+      <a href="#buscar">Busca de Imóveis</a>
+      <a href="bairros/index.html">Guia de Bairros</a>
+      <a href="cases.html">Cases e Experiência</a>
+    </div>
+    <div class="pd-nav-group">
+      <span class="pd-nav-label">Sou Corretor / Imobiliária</span>
+      <a href="#gerador">Ferramentas de IA B2B</a>
+      <a href="education/index.html">Academy / Treinamentos</a>
+      <a href="cadastrar-imovel.html">Cadastrar Imóveis</a>
+    </div>
+    <div class="pd-nav-group">
+      <span class="pd-nav-label">Ferramentas IA</span>
+      <a href="#avaliacao">Avaliador de Imóveis</a>
+      <a href="#gerador">Gerador de Descrições</a>
+    </div>
+    <a href="https://wa.me/5511954346288" class="nav-highlight-sale pd-nav-cta">Fale conosco</a>
+  </div>
 </nav>
 </body>
 </html>
