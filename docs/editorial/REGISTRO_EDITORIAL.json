@@ -40081,5 +40081,64 @@
         "published_at": null
       }
     ]
-  }
+  },
+  "batches": [
+    {
+      "id": "batch7",
+      "date": "2026-08-21",
+      "status": "PRODUZIDO_LOCALMENTE",
+      "articles": [
+        {
+          "slug": "bertioga-crescendo-transformacao-2026.html",
+          "title": "Bertioga está crescendo: o que está mudando na cidade em 2026",
+          "keyword": "Bertioga crescendo 2026"
+        },
+        {
+          "slug": "valorizacao-metro-quadrado-bertioga-2026.html",
+          "title": "Valorização do metro quadrado em Bertioga: o que está impulsionando os preços",
+          "keyword": "valorização metro quadrado Bertioga"
+        },
+        {
+          "slug": "riviera-sao-lourenco-portaria-impactos-2026.html",
+          "title": "Riviera de São Lourenço: nova portaria e os impactos na experiência de moradores e visitantes",
+          "keyword": "Riviera de São Lourenço nova portaria"
+        },
+        {
+          "slug": "investir-bertioga-regioes-2026.html",
+          "title": "Investir em Bertioga: quais regiões merecem atenção em 2026",
+          "keyword": "investir em Bertioga regiões 2026"
+        },
+        {
+          "slug": "bertioga-ou-riviera-sao-lourenco-investir-2026.html",
+          "title": "Bertioga ou Riviera de São Lourenço: onde faz mais sentido investir em 2026?",
+          "keyword": "Bertioga ou Riviera de São Lourenço"
+        },
+        {
+          "slug": "infraestrutura-bertioga-investimentos-mercado-imobiliario-2026.html",
+          "title": "Infraestrutura de Bertioga: como novos investimentos podem influenciar o mercado imobiliário",
+          "keyword": "infraestrutura Bertioga investimentos"
+        },
+        {
+          "slug": "imoveis-bertioga-procura-aumentando-2026.html",
+          "title": "Imóveis em Bertioga: por que a procura vem aumentando em 2026",
+          "keyword": "imóveis Bertioga procura 2026"
+        },
+        {
+          "slug": "riviera-sao-lourenco-seguranca-infraestrutura-valorizacao-2026.html",
+          "title": "Riviera de São Lourenço: segurança, infraestrutura e valorização imobiliária",
+          "keyword": "Riviera de São Lourenço segurança infraestrutura"
+        },
+        {
+          "slug": "comprar-imovel-bertioga-2026-fatores-analise.html",
+          "title": "Comprar imóvel em Bertioga em 2026: fatores para analisar antes da decisão",
+          "keyword": "comprar imóvel Bertioga 2026"
+        },
+        {
+          "slug": "bertioga-perspectivas-mercado-imobiliario-2026.html",
+          "title": "Bertioga nos próximos anos: crescimento urbano e perspectivas para o mercado imobiliário",
+          "keyword": "Bertioga próximos anos mercado imobiliário"
+        }
+      ]
+    }
+  ]
 }
