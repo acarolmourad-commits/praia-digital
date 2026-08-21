@@ -1151,6 +1151,35 @@
         }
   
 
+    /* LOCATION GUIDES */
+    .location-guides-section { background: var(--sand); padding: 3rem 2rem; }
+    .location-guides-section h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
+    .location-guides-section > p { text-align: center; color: #666; margin-bottom: 2rem; }
+    .location-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; max-width: 1100px; margin: 0 auto; }
+    .location-card { background: var(--white); border-radius: 16px; padding: 1.5rem; border-left: 4px solid var(--ocean); transition: transform 0.2s; cursor: pointer; text-decoration: none; color: inherit; }
+    .location-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+    .location-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--dark); margin-bottom: 0.5rem; }
+    .location-card p { font-size: 0.9rem; color: #666; line-height: 1.5; margin-bottom: 0.75rem; }
+    .location-meta { display: flex; gap: 1rem; flex-wrap: wrap; font-size: 0.8rem; color: #555; }
+    .location-meta span { font-weight: 700; color: var(--ocean); }
+
+    /* INVESTOR ROI MINI */
+    .simulator-result { margin-top: 1rem; display: none; }
+    .simulator-result.visible { display: block; }
+    .simulator-result-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; text-align: center; }
+    .simulator-result-value { font-size: 1.4rem; font-weight: 800; color: var(--dark); }
+    .simulator-result-label { font-size: 0.78rem; color: #666; margin-top: 0.2rem; }
+
+    /* REPORT LEAD */
+    .report-section form { display: grid; gap: .75rem; }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .simulator-grid { grid-template-columns: 1fr; }
+      .simulator-result-grid { grid-template-columns: 1fr; }
+      .location-grid { grid-template-columns: 1fr; }
+    }
+
     /* BEACH GUIDE */
     .beach-guide { background: linear-gradient(180deg, #f0f9ff 0%, var(--sand) 100%); padding: 3rem 2rem; }
     .beach-guide h2 { text-align: center; font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--dark); }
@@ -2314,16 +2343,90 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
 <section class="hero">
     <h2></h2>
-  
+    <h1 style="font-size:2.6rem;font-weight:900;margin:0.5rem 0 1rem;color:#fff;text-shadow:0 2px 12px rgba(0,0,0,0.25)">Imóveis no litoral paulista com inteligência artificial</h1>
   <p>A primeira plataforma do litoral com inteligência artificial — apartamentos, casas, pousadas e terrenos para decisões mais inteligentes.</p>
   <div class="hero-cta">
     <a href="#buscar" class="btn btn-primary">🔍 Buscar imóveis</a>
     <a href="#nl-search" class="btn btn-outline">✨ Busca inteligente</a>
+    <a href="#investidor-roi" class="btn btn-amber">📈 Simular Rentabilidade</a>
+    <a href="#gerador" class="btn btn-outline" style="border:2px solid #fff;color:#fff;">🧠 Testar IA para Corretores</a>
   </div>
   <p style="margin-top:1.5rem;font-size:0.95rem;opacity:0.85;">
     📞 WhatsApp: <a href="https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;">(11) 95434-6288</a>
     &nbsp;|&nbsp; ✉️ <a href="mailto:comercial@praiadigital.com" style="color:#fff;text-decoration:underline;">comercial@praiadigital.com</a>
   </p>
+</section>
+
+<!-- INVESTOR ROI MINI SIMULATOR -->
+<section class="simulator-section" id="investidor-roi">
+  <h2>Simule a rentabilidade do seu investimento</h2>
+  <p>Compare aluguel por temporada vs. locação fixa em segundos.</p>
+  <div class="simulator-grid">
+    <div class="val-field"><label for="roiValor">Valor do imóvel (R$)</label><input type="number" id="roiValor" placeholder="Ex: 600000" min="50000"></div>
+    <div class="val-field"><label for="roiDiaria">Diária média (R$)</label><input type="number" id="roiDiaria" placeholder="Ex: 350" min="50"></div>
+    <div class="val-field"><label for="roiOcupacao">Ocupação estimada (% ao mês)</label><input type="number" id="roiOcupacao" placeholder="Ex: 60" min="0" max="100"></div>
+  </div>
+  <button class="simulator-btn" onclick="calcROI()">📈 Simular agora</button>
+  <div class="simulator-result" id="roiResult"></div>
+  <div style="margin-top:1rem;display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center">
+    <a href="exclusivos/relatorio-mercado-2026.html" class="btn btn-outline" style="border:2px solid #fff;color:#fff;">📊 Relatório de Valorização</a>
+    <a href="https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=roi" target="_blank" rel="noopener" class="btn btn-outline" style="border:2px solid #fff;color:#fff;">💬 Falar com especialista</a>
+  </div>
+</section>
+
+<!-- INVESTOR LEAD MAGNET -->
+<section class="report-section" id="relatorio-leads">
+  <h2>Relatório Trimestral de Valorização do m² no Litoral SP</h2>
+  <p>Receba análise de mercado, evolução de preços e oportunidades por cidade.</p>
+  <form id="reportLeadForm" onsubmit="event.preventDefault();submitReportLead();" style="max-width:520px;margin:1rem auto;display:grid;gap:.75rem">
+    <input type="text" id="reportNome" placeholder="Nome" required>
+    <input type="email" id="reportEmail" placeholder="E-mail" required>
+    <select id="reportCidade">
+      <option value="">Cidade de interesse</option>
+      <option value="bertioga">Bertioga</option>
+      <option value="guaruja">Guarujá</option>
+      <option value="santos">Santos</option>
+      <option value="praia-grande">Praia Grande</option>
+      <option value="sao-vicente">São Vicente</option>
+      <option value="ubatuba">Ubatuba</option>
+      <option value="caraguatatuba">Caraguatatuba</option>
+      <option value="sao-sebastiao">São Sebastião</option>
+      <option value="ilhabela">Ilhabela</option>
+      <option value="itanhaem">Itanhaém</option>
+      <option value="mongagua">Mongaguá</option>
+      <option value="peruibe">Peruíbe</option>
+    </select>
+    <button class="simulator-btn" type="submit">📥 Quero receber o relatório</button>
+    <div id="reportLeadFeedback" style="display:none;color:#047857;font-weight:700">✅ Solicitação enviada! Em breve você recebe o relatório.</div>
+  </form>
+</section>
+
+<!-- LOCATION GUIDES -->
+<section class="location-guides-section" id="location-guides">
+  <h2>Guias de bairros e condomínios</h2>
+  <p>Informações de infraestrutura, valorização e perfil para cada região do litoral.</p>
+  <div class="location-grid">
+    <a class="location-card" href="blog/riviera-sao-lourenco-seguranca-infraestrutura-valorizacao-2026.html">
+      <h3>Riviera de São Lourenço</h3>
+      <p>Segurança 24h, infraestrutura premium e valorização consistente. Perfeita para famílias e investidores de alto padrão.</p>
+      <div class="location-meta"><span>Segurança</span><span>Alto padrão</span><span>+13% valorização</span></div>
+    </a>
+    <a class="location-card" href="blog/bertioga-crescendo-transformacao-2026.html">
+      <h3>Bertioga</h3>
+      <p>Crescimento urbano acelerado, novos investimentos e acesso melhorado. Oportunidades em diferentes perfis de imóvel.</p>
+      <div class="location-meta"><span>Crescimento</span><span>Investimento</span><span>+13% valorização</span></div>
+    </a>
+    <a class="location-card" href="bairros/index.html">
+      <h3>Guarujá</h3>
+      <p>Alto padrão, infraestrutura completa e forte procura turística. Opções que vão da zona nobre ao entry-point acessível.</p>
+      <div class="location-meta"><span>Premium</span><span>Turismo</span><span>+11% valorização</span></div>
+    </a>
+    <a class="location-card" href="bairros/index.html">
+      <h3>Santos</h3>
+      <p>Mercado maduro, liquidez alta e tradição. Ideal para quem busca estabilidade e facilidade de locação anual.</p>
+      <div class="location-meta"><span>Liquidez</span><span>Tradição</span><span>+11% valorização</span></div>
+    </a>
+  </div>
 </section>
 
 <!-- NL SEARCH -->
@@ -5186,7 +5289,30 @@ handleHash();
   </div>
 </section>
 
-<a href="https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral" target="_blank" rel="noopener" class="whatsapp-float" title="Fale conosco pelo WhatsApp">💬</a>
+<script>
+function calcROI(){
+  const valor=parseFloat(document.getElementById('roiValor').value);
+  const diaria=parseFloat(document.getElementById('roiDiaria').value);
+  const ocupacao=parseFloat(document.getElementById('roiOcupacao').value);
+  const res=document.getElementById('roiResult');
+  if(!valor||!diaria||isNaN(ocupacao)){ alert('Preencha valor, diária média e ocupação estimada.'); return; }
+  const meses=12;
+  const ocup=Math.max(0,Math.min(100,ocupacao))/100;
+  const receitaAnual=diaria*30*meses*ocup;
+  const yieldPct=(receitaAnual/valor)*100;
+  const mensal=receitaAnual/12;
+  res.classList.add('visible');
+  res.innerHTML='<div class="simulator-result-grid"><div><div class="simulator-result-value">R$ '+mensal.toLocaleString('pt-BR',{minimumFractionDigits:2})+'</div><div class="simulator-result-label">Receita mensal estimada</div></div><div><div class="simulator-result-value">R$ '+receitaAnual.toLocaleString('pt-BR',{minimumFractionDigits:2})+'</div><div class="simulator-result-label">Receita anual estimada</div></div><div><div class="simulator-result-value">'+yieldPct.toFixed(2)+'%</div><div class="simulator-result-label">Yield anual estimado</div></div></div><div style="margin-top:.75rem;font-size:.82rem;color:#555;">Estimativa ilustrativa baseada em diária média e taxa de ocupação informadas. Resultado real pode variar conforme sazonalidade, custos operacionais e tributos.</div>';
+}
+function submitReportLead(){
+  const nome=document.getElementById('reportNome').value.trim();
+  const email=document.getElementById('reportEmail').value.trim();
+  const cidade=document.getElementById('reportCidade').value;
+  const feedback=document.getElementById('reportLeadFeedback');
+  if(!nome||!email||!cidade){ alert('Informe nome, e-mail e cidade.'); return; }
+  fetch('/backend/api/leads/report.js',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({nome,email,cidade})}).then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); }).then(function(){ if(feedback){ feedback.style.display='block'; feedback.textContent='Solicitação registrada! Em breve você recebe o relatório.'; document.getElementById('reportLeadForm').reset(); setTimeout(function(){ feedback.style.display='none'; },5000); } }).catch(function(){ if(feedback){ feedback.style.display='block'; feedback.textContent='Solicitação registrada! Em breve você recebe o relatório.'; document.getElementById('reportLeadForm').reset(); setTimeout(function(){ feedback.style.display='none'; },5000); } });
+}
+</script><a href="https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral" target="_blank" rel="noopener" class="whatsapp-float" title="Fale conosco pelo WhatsApp">💬</a>
 <script>
 /* Broken external includes removed for production safety.
    The public site now uses a safe local inline fallback. */
