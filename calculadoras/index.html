@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadoras — Praia Digital</title>
+<meta name="description" content="Calculadoras práticas para investimento e temporada no litoral paulista: rental yield, Airbnb vs aluguel anual e custo real da compra.">
+<link rel="canonical" href="https://praia.digital/calculadoras/index.html">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://praia.digital">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://praia.digital/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Calculadoras", "item": "https://praia.digital/calculadoras/index.html" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "As calculadoras substituem uma análise profissional?", "acceptedAnswer": { "@type": "Answer", "text": "Não. Elas servem para simulações rápidas e apoio à decisão." } },
+    { "@type": "Question", "name": "Os valores são atualizados?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, sempre que houver nova base de dados de mercado." } }
+  ]
+}
+</script>
+<style>
+  :root { font-family: Inter, system-ui, sans-serif; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #0b1220; color: #e8ecf1; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 28px 22px; }
+  h1 { font-size: 22px; margin: 0 0 6px; }
+  p.lead { margin: 0 0 22px; opacity: .8; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+  .card { background: #121c2e; border: 1px solid #243348; border-radius: 14px; padding: 18px; }
+  .card h2 { margin: 0 0 8px; font-size: 17px; }
+  .card p { margin: 0 0 12px; opacity: .75; font-size: 14px; }
+  .actions { display: flex; gap: 10px; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 9px 12px; border-radius: 10px; background: #1f6feb; color: #fff; text-decoration: none; font-weight: 600; font-size: 13px; }
+  input, select { width: 100%; padding: 10px; border-radius: 10px; border: 1px solid #243348; background: #0b1220; color: #e8ecf1; }
+  .result { margin-top: 10px; padding: 10px; border-radius: 10px; background: #0f172a; border: 1px solid #243348; }
+  footer { margin-top: 22px; opacity: .6; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Calculadoras</h1>
+  <p class="lead">Simulações rápidas para decisões de investimento, temporada e compra no litoral.</p>
+
+  <div class="grid">
+    <article class="card">
+      <h2>Rental Yield</h2>
+      <p>Estime o yield anual de um imóvel para temporada.</p>
+      <label>Valor do imóvel (R$)</label>
+      <input id="ry_price" type="number" value="500000">
+      <label>Diária média (R$)</label>
+      <input id="ry_daily" type="number" value="350">
+      <label>Ocupação anual (%)</label>
+      <input id="ry_occ" type="number" value="55">
+      <label>Custos operacionais (%)</label>
+      <input id="ry_costs" type="number" value="22">
+      <button class="btn" onclick="calcRentalYield()">Calcular</button>
+      <div id="ry_result" class="result"></div>
+    </article>
+
+    <article class="card">
+      <h2>Airbnb vs Aluguel Anual</h2>
+      <p>Compare margem líquida entre temporada e locação fixa.</p>
+      <label>Diária média (R$)</label>
+      <input id="ab_daily" type="number" value="350">
+      <label>Ocupação anual (%)</label>
+      <input id="ab_occ" type="number" value="55">
+      <label>Aluguel anual (R$)</label>
+      <input id="ab_annual" type="number" value="48000">
+      <label>Custos operacionais (%)</label>
+      <input id="ab_costs" type="number" value="22">
+      <button class="btn" onclick="calcAirbnb()">Calcular</button>
+      <div id="ab_result" class="result"></div>
+    </article>
+
+    <article class="card">
+      <h2>Custo Real da Compra</h2>
+      <p>Inclua impostos e taxas para entender o custo total.</p>
+      <label>Valor do imóvel (R$)</label>
+      <input id="cc_price" type="number" value="500000">
+      <label>ITBI (%)</label>
+      <input id="cc_itbi" type="number" value="3">
+      <label>Registro e escritura (R$)</label>
+      <input id="cc_reg" type="number" value="8000">
+      <label>Outras taxas (R$)</label>
+      <input id="cc_other" type="number" value="4000">
+      <button class="btn" onclick="calcCustoReal()">Calcular</button>
+      <div id="cc_result" class="result"></div>
+    </article>
+  </div>
+
+  <div style="margin-top:1.5rem">
+    <a class="btn" href="../blog/index.html">Voltar para o Blog</a>
+  </div>
+
+  <footer>Praia Digital — conteúdo informativo, não constitui aconselhamento financeiro.</footer>
+</div>
+
+<script>
+function fmtBRL(v){return v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});}
+function calcRentalYield(){
+  const price=Number(document.getElementById('ry_price').value)||0;
+  const daily=Number(document.getElementById('ry_daily').value)||0;
+  const occ=Number(document.getElementById('ry_occ').value)||0;
+  const costs=Number(document.getElementById('ry_costs').value)||0;
+  const gross=daily*365*(occ/100);
+  const net=gross*(1-costs/100);
+  const yield=price? (net/price)*100 : 0;
+  document.getElementById('ry_result').innerHTML=`Receita bruta: ${fmtBRL(gross)}<br>Receita líquida: ${fmtBRL(net)}<br>Yield: ${yield.toFixed(2)}% a.a.`;
+}
+function calcAirbnb(){
+  const daily=Number(document.getElementById('ab_daily').value)||0;
+  const occ=Number(document.getElementById('ab_occ').value)||0;
+  const annual=Number(document.getElementById('ab_annual').value)||0;
+  const costs=Number(document.getElementById('ab_costs').value)||0;
+  const gross=daily*365*(occ/100);
+  const netTemporada=gross*(1-costs/100);
+  const diff=netTemporada-annual;
+  document.getElementById('ab_result').innerHTML=`Temporada líquida: ${fmtBRL(netTemporada)}<br>Anual: ${fmtBRL(annual)}<br>Diferença: ${fmtBRL(diff)}`;
+}
+function calcCustoReal(){
+  const price=Number(document.getElementById('cc_price').value)||0;
+  const itbi=Number(document.getElementById('cc_itbi').value)||0;
+  const reg=Number(document.getElementById('cc_reg').value)||0;
+  const other=Number(document.getElementById('cc_other').value)||0;
+  const total=price+price*(itbi/100)+reg+other;
+  document.getElementById('cc_result').innerHTML=`Custo total estimado: ${fmtBRL(total)}`;
+}
+</script>
+</body>
+</html>
