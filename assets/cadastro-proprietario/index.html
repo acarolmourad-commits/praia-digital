@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro de Proprietário — Praia Digital</title>
+<link rel="canonical" href="https://praia.digital/assets/cadastro-proprietario/index.html">
+<meta name="description" content="Cadastro de proprietário para divulgação de imóveis no litoral de SP.">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:#07111f;color:#e2e8f0;line-height:1.6}
+  .wrap{max-width:760px;margin:0 auto;padding:1.2rem}
+  .step{display:none}
+  .step.active{display:block}
+  .card{background:#0f2942;border:1px solid #1e3a5f;border-radius:14px;padding:1.1rem;margin:.7rem 0}
+  label{display:block;font-size:.85rem;color:#cbd5e1;margin:.4rem 0 .2rem}
+  input,select,textarea{width:100%;padding:.65rem;border-radius:10px;border:1px solid #1e3a5f;background:#0b1d33;color:#e2e8f0}
+  .row{display:grid;grid-template-columns:1fr;gap:.6rem}
+  .actions{display:flex;gap:.6rem;justify-content:space-between;margin-top:1rem}
+  .btn{padding:.7rem 1.1rem;border-radius:999px;border:0;font-weight:700;cursor:pointer}
+  .btn-primary{background:#22d3ee;color:#04141f}
+  .btn-ghost{background:#1e3a5f;color:#e2e8f0}
+  .notice{background:#1a2e40;border:1px solid #254b6e;border-radius:12px;padding:.8rem;margin:.6rem 0;font-size:.9rem;color:#bcd}
+  .error{color:#f87171;font-size:.85rem}
+  .preview{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:.5rem;margin:.6rem 0}
+  .preview img{width:100%;border-radius:10px;border:1px solid #1e3a5f}
+  .summary dl{display:grid;grid-template-columns:1fr;gap:.3rem}
+  .summary dt{color:#94a3b8;font-size:.85rem}
+  .summary dd{color:#e2e8f0;font-weight:600}
+  .private{color:#f59e0b}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Cadastro de Proprietário</h1>
+  <p class="notice">Preencha as etapas abaixo. Seu cadastro será analisado antes da publicação.</p>
+
+  <form id="ownerForm">
+    <div class="step active" data-step="1">
+      <div class="card">
+        <h2>Identificação</h2>
+        <label>Nome completo</label>
+        <input id="nome" required>
+        <label>CPF/CNPJ</label>
+        <input id="cpf_cnpj" required>
+        <label>E-mail</label>
+        <input id="email" type="email" required>
+        <label>WhatsApp</label>
+        <input id="whatsapp" required>
+      </div>
+      <div class="actions"><span></span><button type="button" class="btn btn-primary" data-next>Próximo</button></div>
+    </div>
+
+    <div class="step" data-step="2">
+      <div class="card">
+        <h2>Imóvel</h2>
+        <label>Cidade</label>
+        <select id="cidade">
+          <option value="Santos">Santos</option>
+          <option value="Guarujá">Guarujá</option>
+          <option value="Praia Grande">Praia Grande</option>
+          <option value="Bertioga">Bertioga</option>
+          <option value="São Vicente">São Vicente</option>
+          <option value="Itanhaém">Itanhaém</option>
+          <option value="Peruíbe">Peruíbe</option>
+          <option value="Mongaguá">Mongaguá</option>
+        </select>
+        <label>Tipo</label>
+        <select id="tipo">
+          <option value="apartamento">Apartamento</option>
+          <option value="casa">Casa</option>
+          <option value="cobertura">Cobertura</option>
+          <option value="studio">Studio</option>
+          <option value="flat">Flat</option>
+        </select>
+        <label>Área (m²)</label>
+        <input id="area" type="number">
+        <label>Quartos</label>
+        <input id="quartos" type="number">
+        <label>Descrição</label>
+        <textarea id="desc" rows="3"></textarea>
+      </div>
+      <div class="actions"><button type="button" class="btn btn-ghost" data-prev>Voltar</button><button type="button" class="btn btn-primary" data-next>Próximo</button></div>
+    </div>
+
+    <div class="step" data-step="3">
+      <div class="card">
+        <h2>Comercial</h2>
+        <label>Valor anunciado (R$)</label>
+        <input id="valor_anunciado" type="number" required>
+        <label class="private">Valor líquido desejado (privado)</label>
+        <input id="valor_liquido" type="number">
+        <p class="notice">O valor líquido desejado é interno e nunca será exibido publicamente.</p>
+      </div>
+      <div class="actions"><button type="button" class="btn btn-ghost" data-prev>Voltar</button><button type="button" class="btn btn-primary" data-next>Próximo</button></div>
+    </div>
+
+    <div class="step" data-step="4">
+      <div class="card">
+        <h2>Fotos</h2>
+        <input id="fotos" type="file" accept="image/*" multiple>
+        <div id="fotosPreview" class="preview"></div>
+      </div>
+      <div class="actions"><button type="button" class="btn btn-ghost" data-prev>Voltar</button><button type="button" class="btn btn-primary" data-next>Próximo</button></div>
+    </div>
+
+    <div class="step" data-step="5">
+      <div class="card">
+        <h2>Documentação</h2>
+        <input id="docs" type="file" accept=".pdf,.jpg,.jpeg,.png,.webp" multiple>
+        <p class="notice">Documentos são privados e não serão publicados.</p>
+      </div>
+      <div class="actions"><button type="button" class="btn btn-ghost" data-prev>Voltar</button><button type="button" class="btn btn-primary" data-next>Próximo</button></div>
+    </div>
+
+    <div class="step" data-step="6">
+      <div class="card">
+        <h2>Declaração</h2>
+        <label><input id="declaracao" type="checkbox"> Confirmo que sou responsável pelo anúncio e autorizo a divulgação.</label>
+      </div>
+      <div class="actions"><button type="button" class="btn btn-ghost" data-prev>Voltar</button><button type="button" class="btn btn-primary" data-next>Próximo</button></div>
+    </div>
+
+    <div class="step" data-step="7">
+      <div class="card summary">
+        <h2>Revisão</h2>
+        <dl id="review"></dl>
+      </div>
+      <div class="actions"><button type="button" class="btn btn-ghost" data-prev>Voltar</button><button type="button" class="btn btn-primary" id="submitBtn">Enviar para análise</button></div>
+      <p id="formErr" class="error"></p>
+    </div>
+  </form>
+</div>
+
+<script>
+const state={};
+function showStep(n){document.querySelectorAll('.step').forEach(s=>s.classList.remove('active'));const el=document.querySelector(`.step[data-step="${n}"]`);if(el)el.classList.add('active');}
+document.querySelectorAll('[data-next]').forEach(btn=>btn.addEventListener('click',()=>{const step=btn.closest('.step');const next=parseInt(step.dataset.step)+1;collect(step);showStep(next);}));
+document.querySelectorAll('[data-prev]').forEach(btn=>btn.addEventListener('click',()=>{const step=btn.closest('.step');const prev=parseInt(step.dataset.step)-1;showStep(prev);}));
+function collect(step){
+  const q=(id)=>document.getElementById(id)?.value?.trim();
+  const n=step.dataset.step;
+  if(n==='1'){state.nome=q('nome');state.cpf_cnpj=q('cpf_cnpj');state.email=q('email');state.whatsapp=q('whatsapp');}
+  if(n==='2'){state.cidade=q('cidade');state.tipo=q('tipo');state.area=q('area');state.quartos=q('quartos');state.desc=q('desc');}
+  if(n==='3'){state.valor_anunciado=q('valor_anunciado');state.valor_liquido=q('valor_liquido');}
+  if(n==='4'){
+    const files=document.getElementById('fotos').files;
+    state.fotos=Array.from(files).map(f=>f.name);
+  }
+  if(n==='5'){
+    const files=document.getElementById('docs').files;
+    state.docs=Array.from(files).map(f=>f.name);
+  }
+  if(n==='6'){state.declaracao=document.getElementById('declaracao').checked;}
+  if(n==='7'){
+    const dl=document.getElementById('review');
+    dl.innerHTML=Object.entries(state).filter(([,v])=>v!==undefined && v!==false && v!=='').map(([k,v])=>`<dt>${k}</dt><dd>${Array.isArray(v)?v.join(', '):v}</dd>`).join('');
+  }
+}
+document.getElementById('submitBtn').addEventListener('click',async()=>{
+  const err=document.getElementById('formErr');err.textContent='';
+  if(!state.declaracao){err.textContent='Aceite a declaração.';return;}
+  const body={...state, declaracao_aceite:state.declaracao, valor_anunciado:Number(state.valor_anunciado), valor_liquido_desejado:Number(state.valor_liquido||0)};
+  const res=await fetch('/proprietarios',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+  if(!res.ok){const t=await res.text();err.textContent='Falha: '+t;return;}
+  const data=await res.json();
+  const codigo=data.codigo;
+  const upload=async (path,files,extra={})=>{
+    for(const file of files){
+      const fd=new FormData();fd.append('file',document.getElementById(path).files[0]);for(const [k,v] of Object.entries(extra)) fd.append(k,v);
+      const r=await fetch(`/proprietarios/${codigo}/${path==='docs'?'documentos':'fotos'}`,{method:'POST',body:fd});
+      if(!r.ok){err.textContent='Falha no upload';return;}
+    }
+  };
+  const fotos=document.getElementById('fotos').files;
+  const docs=document.getElementById('docs').files;
+  for(const file of fotos){const fd=new FormData();fd.append('file',file);const r=await fetch(`/proprietarios/${codigo}/fotos`,{method:'POST',body:fd});if(!r.ok){err.textContent='Falha no upload de fotos';return;}}
+  for(const file of docs){const fd=new FormData();fd.append('file',file);fd.append('tipo_documento','identidade');const r=await fetch(`/proprietarios/${codigo}/documentos`,{method:'POST',body:fd});if(!r.ok){err.textContent='Falha no upload de docs';return;}}
+  const r2=await fetch(`/proprietarios/${codigo}/analisar`,{method:'POST'});
+  if(!r2.ok){err.textContent='Falha na análise';return;}
+  const data2=await r2.json();
+  if(data2.status==='APROVADO'){
+    const r3=await fetch(`/proprietarios/${codigo}/publicar`,{method:'POST'});
+    if(!r3.ok){err.textContent='Falha na publicação';return;}
+    alert('Publicado! Código: '+codigo);
+  }else{
+    alert('Pendência: '+data2.status);
+  }
+});
+</script>
+</body>
+</html>

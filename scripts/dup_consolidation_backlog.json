@@ -1,0 +1,472 @@
+{
+  "timestamp": "2026-08-18T01:49:39.457243+00:00",
+  "total_candidates": 34,
+  "candidates": [
+    {
+      "title": "Redirecionando | Praia Digital",
+      "h1": "",
+      "files": [
+        "assets\\simulador-roi-parcerias-imobiliarias-2026.html",
+        "bairros\\guaruja-enseada.html",
+        "bairros\\praia-grande-ocian.html",
+        "bairros\\praia-grande-solemar.html",
+        "bairros\\santos-boqueirao.html",
+        "bairros\\saovicente-gonzaguinha.html",
+        "blog\\aluguel-temporada-litoral-guia-2026.html",
+        "blog\\bertioga-aluguel-temporada-2026.html",
+        "blog\\guaruja-aluguel-temporada-2026.html",
+        "blog\\peruibe-aluguel-temporada-2026.html",
+        "blog\\rentabilidade-imoveis-praia.html",
+        "blog\\santos-aluguel-temporada-2026.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Imóvel | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-1174.html",
+        "imoveis\\imovel-1175.html",
+        "imoveis\\imovel-1176.html",
+        "imoveis\\imovel-1177.html",
+        "imoveis\\imovel-1178.html",
+        "imoveis\\imovel-1179.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Relatório Diário — Litoral Prime Imóveis",
+      "h1": "Painel do Dia",
+      "files": [
+        "litoral-prime-imoveis\\backups\\metricas\\20260812_093515\\docs\\relatorio-diario-litoral-prime.html",
+        "litoral-prime-imoveis\\backups\\metricas\\20260813_090218\\docs\\relatorio-diario-litoral-prime.html",
+        "litoral-prime-imoveis\\backups\\metricas\\20260814_090707\\docs\\relatorio-diario-litoral-prime.html",
+        "litoral-prime-imoveis\\backups\\metricas\\20260815_090451\\docs\\relatorio-diario-litoral-prime.html",
+        "litoral-prime-imoveis\\backups\\metricas\\20260816_090212\\docs\\relatorio-diario-litoral-prime.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Casa em Bertioga, Bertioga | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-1001.html",
+        "imoveis\\imovel-1017.html",
+        "imoveis\\imovel-1046.html",
+        "imoveis\\imovel-1053.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Studio em Santos, Santos | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-1005.html",
+        "imoveis\\imovel-1006.html",
+        "imoveis\\imovel-1011.html",
+        "imoveis\\imovel-1045.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Apartamento Gonzaga Santos - Praia Digital | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-001-santos-gonzaga-2026.html",
+        "imoveis\\imovel-002-santos-gonzaga-2026.html",
+        "imoveis\\imovel-003-santos-gonzaga-2026.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Casa Gonzaga Santos - Praia Digital | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-004-santos-gonzaga-2026.html",
+        "imoveis\\imovel-005-santos-gonzaga-2026.html",
+        "imoveis\\imovel-006-santos-gonzaga-2026.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Cobertura Gonzaga Santos - Praia Digital | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-007-santos-gonzaga-2026.html",
+        "imoveis\\imovel-008-santos-gonzaga-2026.html",
+        "imoveis\\imovel-009-santos-gonzaga-2026.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Studio Gonzaga Santos - Praia Digital | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-010-santos-gonzaga-2026.html",
+        "imoveis\\imovel-011-santos-gonzaga-2026.html",
+        "imoveis\\imovel-012-santos-gonzaga-2026.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Flat Gonzaga Santos - Praia Digital | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-013-santos-gonzaga-2026.html",
+        "imoveis\\imovel-014-santos-gonzaga-2026.html",
+        "imoveis\\imovel-015-santos-gonzaga-2026.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Apartamento Boqueirão Santos - Praia Digital | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-016-santos-boqueirão-2026.html",
+        "imoveis\\imovel-017-santos-boqueirão-2026.html",
+        "imoveis\\imovel-018-santos-boqueirão-2026.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Casa Boqueirão Santos - Praia Digital | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-019-santos-boqueirão-2026.html",
+        "imoveis\\imovel-020-santos-boqueirão-2026.html",
+        "imoveis\\imovel-021-santos-boqueirão-2026.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Cobertura Boqueirão Santos - Praia Digital | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-022-santos-boqueirão-2026.html",
+        "imoveis\\imovel-023-santos-boqueirão-2026.html",
+        "imoveis\\imovel-024-santos-boqueirão-2026.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Studio Boqueirão Santos - Praia Digital | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-025-santos-boqueirão-2026.html",
+        "imoveis\\imovel-026-santos-boqueirão-2026.html",
+        "imoveis\\imovel-027-santos-boqueirão-2026.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Sobrado Geminado em São Sebastião | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-0254.html",
+        "imoveis\\imovel-0289.html",
+        "imoveis\\imovel-384.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Flat Boqueirão Santos - Praia Digital | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-028-santos-boqueirão-2026.html",
+        "imoveis\\imovel-029-santos-boqueirão-2026.html",
+        "imoveis\\imovel-030-santos-boqueirão-2026.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Apartamento Embaré Santos - Praia Digital | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-031-santos-embaré-2026.html",
+        "imoveis\\imovel-032-santos-embaré-2026.html",
+        "imoveis\\imovel-033-santos-embaré-2026.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Casa Embaré Santos - Praia Digital | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-034-santos-embaré-2026.html",
+        "imoveis\\imovel-035-santos-embaré-2026.html",
+        "imoveis\\imovel-036-santos-embaré-2026.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Cobertura Embaré Santos - Praia Digital | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-037-santos-embaré-2026.html",
+        "imoveis\\imovel-038-santos-embaré-2026.html",
+        "imoveis\\imovel-039-santos-embaré-2026.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Studio Embaré Santos - Praia Digital | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-040-santos-embaré-2026.html",
+        "imoveis\\imovel-041-santos-embaré-2026.html",
+        "imoveis\\imovel-042-santos-embaré-2026.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Flat Embaré Santos - Praia Digital | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-043-santos-embaré-2026.html",
+        "imoveis\\imovel-044-santos-embaré-2026.html",
+        "imoveis\\imovel-045-santos-embaré-2026.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Apartamento José Menino Santos - Praia Digital | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-046-santos-josé-menino-2026.html",
+        "imoveis\\imovel-047-santos-josé-menino-2026.html",
+        "imoveis\\imovel-048-santos-josé-menino-2026.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Apartamento em Ilhabela, Ilhabela | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-1003.html",
+        "imoveis\\imovel-1007.html",
+        "imoveis\\imovel-1052.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Loft em Bertioga, Bertioga | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-1015.html",
+        "imoveis\\imovel-1028.html",
+        "imoveis\\imovel-1047.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Apartamento em Guarujá, Guarujá | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-1016.html",
+        "imoveis\\imovel-1020.html",
+        "imoveis\\imovel-1037.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Studio em Bertioga, Bertioga | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-1019.html",
+        "imoveis\\imovel-1032.html",
+        "imoveis\\imovel-1040.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Cobertura em Itanhaém, Itanhaém | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-1023.html",
+        "imoveis\\imovel-1049.html",
+        "imoveis\\imovel-1050.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Flat em Santos, Santos | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-1030.html",
+        "imoveis\\imovel-1033.html",
+        "imoveis\\imovel-1054.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Casa com 5 quartos em Guarujá | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-1217.html",
+        "imoveis\\imovel-1223.html",
+        "imoveis\\imovel-1229.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Studio com 4 quartos em Peruíbe | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-1218.html",
+        "imoveis\\imovel-1224.html",
+        "imoveis\\imovel-1230.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Casa com 5 quartos em Itanhaém | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-1219.html",
+        "imoveis\\imovel-1225.html",
+        "imoveis\\imovel-1231.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Cobertura com 4 quartos em Guarujá | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-1220.html",
+        "imoveis\\imovel-1226.html",
+        "imoveis\\imovel-1232.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Loft com 2 quartos em Itanhaém | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-1221.html",
+        "imoveis\\imovel-1227.html",
+        "imoveis\\imovel-1233.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    },
+    {
+      "title": "Casa em Condomínio em Ubatuba | Litoral Prime Imóveis",
+      "h1": "",
+      "files": [
+        "imoveis\\imovel-370.html",
+        "imoveis\\imovel-380.html",
+        "imoveis\\imovel-388.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    }
+  ],
+  "rules": [
+    {
+      "rule": "R_DUP_EXATA",
+      "condition": "Same title, same H1, same content hash",
+      "action": "CONSOLIDAR_AUTOMATICAMENTE",
+      "confidence": "100%"
+    }
+  ]
+}

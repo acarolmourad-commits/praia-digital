@@ -1,0 +1,12 @@
+locacao_temporada: 187
+marketing_digital: 124
+seo_local: 54
+captacao_leads: 98
+avaliacao_mercado: 71
+documentacao: 10
+financiamento: 25
+venda_imoveis: 85
+investimento: 44
+tecnologia_ia: 492
+airbnb: 3
+outros: 249

@@ -1,0 +1,32 @@
+URL,CLUSTER,PROBLEM,OPPORTUNITY,RISK,RECOMMENDATION
+bairros/guaruja-enseada.html,bairros,ORPHAN,Add links from related pages,LOW,Link from cluster hub or related content
+bairros/praia-grande-ocian.html,bairros,ORPHAN,Add links from related pages,LOW,Link from cluster hub or related content
+bairros/praia-grande-solemar.html,bairros,ORPHAN,Add links from related pages,LOW,Link from cluster hub or related content
+bairros/santos-boqueirao.html,bairros,ORPHAN,Add links from related pages,LOW,Link from cluster hub or related content
+bairros/saovicente-gonzaguinha.html,bairros,ORPHAN,Add links from related pages,LOW,Link from cluster hub or related content
+blog/aluguel-temporada-litoral-guia-2026.html,blog,ORPHAN,Add links from related pages,LOW,Link from cluster hub or related content
+blog/automacao-follow-up-corretores-litoral-2026.html,blog,ORPHAN,Add links from related pages,LOW,Link from cluster hub or related content
+blog/avaliacao-automatica-preco-mercado-litoral-2026.html,blog,ORPHAN,Add links from related pages,LOW,Link from cluster hub or related content
+blog/bertioga-imoveis-temporada-oportunidades-2026.html,blog,ORPHAN,Add links from related pages,LOW,Link from cluster hub or related content
+blog/captacao-imoveis-sem-custo-litoral-2026.html,blog,ORPHAN,Add links from related pages,LOW,Link from cluster hub or related content
+blog/captacao-imóveis-imobiliária-leads-2026-08-06.html,blog,ORPHAN,Add links from related pages,LOW,Link from cluster hub or related content
+blog/captacao-imóveis-leads-2026-2026-08-01.html,blog,ORPHAN,Add links from related pages,LOW,Link from cluster hub or related content
+blog/checklist-captacao-imoveis-litoral.html,blog,ORPHAN,Add links from related pages,LOW,Link from cluster hub or related content
+blog/checklist-completa-google-business-profile-imobiliarias-litoral-2026.html,blog,ORPHAN,Add links from related pages,LOW,Link from cluster hub or related content
+blog/como-escolher-imovel-temporada-litoral-paulista-2026.html,blog,ORPHAN,Add links from related pages,LOW,Link from cluster hub or related content
+blog/marketing-digital-no-litoral-2026-2026-08-03.html,blog,ORPHAN,Add links from related pages,LOW,Link from cluster hub or related content
+blog/seo-blog-google-2026-2026-08-03.html,blog,ORPHAN,Add links from related pages,LOW,Link from cluster hub or related content
+servicos/index.html,servicos,ORPHAN,Add links from related pages,LOW,Link from cluster hub or related content
+servicos/midia-profissional.html,servicos,ORPHAN,Add links from related pages,LOW,Link from cluster hub or related content
+bairros/guaruja-enseada.html,bairros,REDIRECT,Review redirect necessity,LOW,Ensure redirect is intentional and documented
+bairros/praia-grande-ocian.html,bairros,REDIRECT,Review redirect necessity,LOW,Ensure redirect is intentional and documented
+bairros/praia-grande-solemar.html,bairros,REDIRECT,Review redirect necessity,LOW,Ensure redirect is intentional and documented
+bairros/santos-boqueirao.html,bairros,REDIRECT,Review redirect necessity,LOW,Ensure redirect is intentional and documented
+bairros/saovicente-gonzaguinha.html,bairros,REDIRECT,Review redirect necessity,LOW,Ensure redirect is intentional and documented
+blog/aluguel-temporada-litoral-guia-2026.html,blog,REDIRECT,Review redirect necessity,LOW,Ensure redirect is intentional and documented
+blog/bertioga-aluguel-temporada-2026.html,blog,REDIRECT,Review redirect necessity,LOW,Ensure redirect is intentional and documented
+blog/guaruja-aluguel-temporada-2026.html,blog,REDIRECT,Review redirect necessity,LOW,Ensure redirect is intentional and documented
+blog/peruibe-aluguel-temporada-2026.html,blog,REDIRECT,Review redirect necessity,LOW,Ensure redirect is intentional and documented
+blog/rentabilidade-imoveis-praia.html,blog,REDIRECT,Review redirect necessity,LOW,Ensure redirect is intentional and documented
+blog/santos-aluguel-temporada-2026.html,blog,REDIRECT,Review redirect necessity,LOW,Ensure redirect is intentional and documented
+servicos/midia-profissional.html,servicos,REDIRECT,Review redirect necessity,LOW,Ensure redirect is intentional and documented
