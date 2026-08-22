@@ -1,0 +1,87 @@
+{
+  "timestamp": "2026-08-18T01:59:02.137611+00:00",
+  "total": 13,
+  "valid": 13,
+  "invalid": 0,
+  "details": [
+    {
+      "file": "index.html",
+      "exists": true,
+      "valid": true,
+      "issues": []
+    },
+    {
+      "file": "servicos.html",
+      "exists": true,
+      "valid": true,
+      "issues": []
+    },
+    {
+      "file": "contato.html",
+      "exists": true,
+      "valid": true,
+      "issues": []
+    },
+    {
+      "file": "education/index.html",
+      "exists": true,
+      "valid": true,
+      "issues": []
+    },
+    {
+      "file": "cidades/santos.html",
+      "exists": true,
+      "valid": true,
+      "issues": []
+    },
+    {
+      "file": "cidades/guaruja.html",
+      "exists": true,
+      "valid": true,
+      "issues": []
+    },
+    {
+      "file": "cidades/praia-grande.html",
+      "exists": true,
+      "valid": true,
+      "issues": []
+    },
+    {
+      "file": "cidades/bertioga.html",
+      "exists": true,
+      "valid": true,
+      "issues": []
+    },
+    {
+      "file": "cidades/itanhaem.html",
+      "exists": true,
+      "valid": true,
+      "issues": []
+    },
+    {
+      "file": "cidades/sao-vicente.html",
+      "exists": true,
+      "valid": true,
+      "issues": []
+    },
+    {
+      "file": "cidades/mongagua.html",
+      "exists": true,
+      "valid": true,
+      "issues": []
+    },
+    {
+      "file": "cidades/peruibe.html",
+      "exists": true,
+      "valid": true,
+      "issues": []
+    },
+    {
+      "file": "servicos/cidade-servico/santos-captacao.html",
+      "exists": true,
+      "valid": true,
+      "issues": []
+    }
+  ],
+  "invalid_details": []
+}

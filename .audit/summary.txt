@@ -1,0 +1,4 @@
+confirmados=1680
+probaveis=0
+ainda_publicados=0
+incertos=8100

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+        {
+      "@type": "Question",
+      "name": "Como solicitar mais informações?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pelo WhatsApp ou formulário na página para atendimento rápido."
+      }
+    },    {
+      "@type": "Question",
+      "name": "Quais cidades são atendidas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Todo o litoral de SP: Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente e Peruíbe."
+      }
+    },    {
+      "@type": "Question",
+      "name": "Quanto tempo para retorno?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Em até 24 horas após o contato, com atendimento humanizado."
+      }
+    }
+  ]
+}
+</script>
+<meta charset="UTF-8">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Busca Inteligente — Praia Digital</title>
+  <link rel="preconnect" href="https://praia.digital">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://praia.digital/index.html" },      { "@type": "ListItem", "position": 2, "name": "Ferramentas", "item": "https://praia.digital/assets/" },      { "@type": "ListItem", "position": 3, "name": "Busca Inteligente", "item": "https://praia.digital/assets/busca-inteligente.html" }
+    ]
+  }
+  </script>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Busca Inteligente — Praia Digital">
+  <meta name="twitter:description" content="Ferramenta ou conteúdo da Praia Digital para o mercado imobiliário do litoral.">
+  <meta property="og:title" content="Busca Inteligente — Praia Digital">
+  <meta property="og:description" content="Ferramenta ou conteúdo da Praia Digital para o mercado imobiliário do litoral.">
+
+  <meta name="twitter:image" content="https://praia.digital/img/default-home.jpg">
+  <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+  <meta name="description" content="Ferramenta ou conteúdo da Praia Digital para o mercado imobiliário do litoral.">
+  <meta name="keywords" content="Busca Inteligente — Praia Digital, Ferramenta ou conteúdo da Praia Digital para o mercado imobiliário do litoral., imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
+  <link rel="canonical" href="https://praia.digital/assets/busca-inteligente.html">
+<style>body{font-family:Arial,sans-serif;max-width:900px;margin:auto;padding:20px;color:#112}
+h1{color:#0a3a6b}label{font-size:.8rem;color:#334;display:block;margin:.4rem 0 .1rem}
+select,input{padding:.45rem;width:100%;border:1px solid #cfe3f5;border-radius:7px;box-sizing:border-box}
+.filters{display:flex;gap:8px;flex-wrap:wrap}.filters>div{flex:1;min-width:140px}
+button{background:linear-gradient(90deg,#22d3ee,#4ade80);color:#04141f;font-weight:800;border:0;padding:.7rem 1.2rem;border-radius:9px;cursor:pointer;margin-top:.8rem;width:100%}
+.card{background:#f0f7ff;border:1px solid #cfe3f5;border-radius:12px;padding:1rem;margin:.7rem 0;display:flex;justify-content:space-between;align-items:center}
+.card b{color:#0a3a6b}.card small{color:#667}.tag{font-size:.7rem;background:#e0f2fe;color:#0369a1;padding:.15rem .5rem;border-radius:999px}
+.load{color:#0369a1;font-size:.85rem;padding:.6rem}.noresult{color:#667;padding:1rem;text-align:center}
+.sort{margin-top:.6rem;font-size:.8rem;color:#334}
+#cnt{font-weight:700;color:#0a3a6b;font-size:.9rem;margin:.5rem 0}
+</style>  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '', { anonymize_ip: true });
+</script>
+</head>
+<body>
+<h1>🔎 Busca Inteligente</h1>
+<p style="color:#445">Estoque real da Praia Digital — carregado de <code>propriedades/cadastro-imoveis.csv</code>.</p>
+<div class="filters">
+<div><label>Cidade (litoral SP)</label><select id="cidade"><option value="">Todas</option></select></div>
+<div><label>Tipo</label><select id="tipo"><option value="">Todos</option><option value="apartamento">apto/studio/loft/flat</option><option value="casa">casa</option><option value="cobertura">cobertura</option><option value="kitnet">kitnet</option></select></div>
+<div><label>Quartos</label><select id="q"><option value="">Todos</option><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
+<div><label>Finalidade</label><select id="fin"><option value="">Todas</option><option value="comprar">comprar</option><option value="investir">investir</option><option value="alugar_temporada">alugar temporada</option></select></div>
+<div><label>Preço máx (R$)</label><input id="preco" type="number" placeholder="ex: 600000"></div>
+</div>
+<div class="sort">Ordenar: <select id="sort"><option value="preco">Menor preço</option><option value="preco_desc">Maior preço</option><option value="dorm">Mais quartos</option><option value="area">Maior área</option></select></div>
+<button onclick="buscar()">Buscar →</button>
+<div class="load" id="load">Carregando estoque real…</div>
+<div id="cnt"></div>
+<div id="res"></div>
+<script>
+const CSV_URL="https://praia.digital/propriedades/cadastro-imoveis.csv";
+const YIELD_URL="https://praia.digital/docs/data/yield_por_imovel.json";
+let IMOVEIS=[];let YIELD_MAP={};
+function fmt(v){return 'R$ '+(+v).toLocaleString('pt-BR');}
+async function init(){
+ try{
+  const [rc,ry]=await Promise.all([fetch(CSV_URL),fetch(YIELD_URL)]);
+  const tc=await rc.text();const yj=await ry.json();
+  IMOVEIS=parseCSV(tc);
+  (yj.imovel[]).forEach(x=>YIELD_MAP[x.id]=x);
+  const cids=[...new Set(IMOVEIS.map(x=>x.cidade))].sort();
+  document.getElementById('cidade').insertAdjacentHTML('beforeend',cids.map(c=>`<option>${c}</option>`).join(''));
+  document.getElementById('load').style.display='none';
+  buscar();
+ }catch(e){document.getElementById('load').textContent='Estoque indisponível no momento.';}
+}
+function tipoMatch(csvTipo, filtro){
+ if(!filtro)return true;
+ const m={"apartamento":["apartamento","studio","loft","flat"],"casa":["casa"],"cobertura":["cobertura"],"kitnet":["kitnet"]};
+ return (m[filtro][]).some(x=>csvTipo.toLowerCase().includes(x));
+}
+function buscar(){
+ const c=document.getElementById('cidade').value,t=document.getElementById('tipo').value,
+       q=document.getElementById('q').value,f=document.getElementById('fin').value,
+       p=document.getElementById('preco').value,s=document.getElementById('sort').value;
+ let r=IMOVEIS.filter(x=>(!cx.cidade===c)&&tipoMatch(x.tipo,t)&&(!qx.dormitorios===q)&&(!p+x.preco<=+p));
+ if(s==='preco')r.sort((a,b)=>a.preco-b.preco);
+ if(s==='preco_desc')r.sort((a,b)=>b.preco-a.preco);
+ if(s==='dorm')r.sort((a,b)=>b.dormitorios-a.dormitorios);
+ if(s==='area')r.sort((a,b)=>b.area-a.area);
+ document.getElementById('cnt').textContent=r.length+' imóvel(is) encontrado(s)';
+ const res=document.getElementById('res');
+ if(!r.length){res.innerHTML='<div class="noresult">Nenhum imóvel com esses filtros.</div>';return;}
+ res.innerHTML=r.map(x=>{const yd=YIELD_MAP[x.id];const y=yd?yd.yield_pct:null;const yl=(y!=null&&y>35)?`<span title="yield atipico p/ o preco de cadastro">${y}% ⚠️</span>`:`${y!=null?y:'—'}%`;return `<div class="card"><div><b>${x.titulo}</b><br><small>${fmt(x.preco)} · ${x.dormitorios}q · ${x.area}m² · Yield ~${yl} a.a.</small></div><div><a href="analise-completa-imovel.html" style="background:linear-gradient(90deg,#22d3ee,#4ade80);color:#04141f;font-weight:700;padding:.5rem .9rem;border-radius:8px;text-decoration:none">Analisar →</a></div></div>`;}).join('');
+}
+init();
+</script></body></html>

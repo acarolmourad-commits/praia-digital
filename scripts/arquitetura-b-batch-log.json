@@ -1,0 +1,111 @@
+{
+  "batch_id": "arquitetura-b-lote-1-20260818-015541",
+  "timestamp": "2026-08-18T01:55:41.503506+00:00",
+  "results": [
+    {
+      "file": "index.html",
+      "status": "APPLIED",
+      "hash_before": "4b0ee53d59466b3e914b86af091d59b19c98073fec534ecdb48f3e5eed29d53d",
+      "hash_after": "b505b775aee3eef9",
+      "breadcrumb": true,
+      "cta": false
+    },
+    {
+      "file": "servicos.html",
+      "status": "APPLIED",
+      "hash_before": "892b07d6482d151c2fb8a6f28b5697bd9fb4c232e3c8f547729dcffb13144f01",
+      "hash_after": "6ff215546e9accce",
+      "breadcrumb": true,
+      "cta": true
+    },
+    {
+      "file": "contato.html",
+      "status": "APPLIED",
+      "hash_before": "9780486e3a86a85a1e36d8056b90d66d0f978be4fd5b4022284b2fb53ec76370",
+      "hash_after": "6ab793c20796852c",
+      "breadcrumb": true,
+      "cta": true
+    },
+    {
+      "file": "education/index.html",
+      "status": "APPLIED",
+      "hash_before": "30ad08f47efc789254da1db631590c50bc982cf17a07de575de0d99f7a9d689f",
+      "hash_after": "9322d391293df345",
+      "breadcrumb": true,
+      "cta": true
+    },
+    {
+      "file": "cidades/santos.html",
+      "status": "APPLIED",
+      "hash_before": "e6beacb6cb84567305b8e572030be87ac769a36c40ef3e8c0c505dc6276e6be2",
+      "hash_after": "4b818d5845eda478",
+      "breadcrumb": false,
+      "cta": false
+    },
+    {
+      "file": "cidades/guaruja.html",
+      "status": "APPLIED",
+      "hash_before": "552f18192795a5dd6c7b449c3d30d8fc60a3ece1047d654b522878a871f9a3a4",
+      "hash_after": "1d0fb283e0946396",
+      "breadcrumb": false,
+      "cta": false
+    },
+    {
+      "file": "cidades/praia-grande.html",
+      "status": "APPLIED",
+      "hash_before": "d6ac5c34c8bd5eea6e23af7bd2dab84496c938d508eddea2ddb552c3ab4bf30e",
+      "hash_after": "2365f7f8d9ba8747",
+      "breadcrumb": false,
+      "cta": false
+    },
+    {
+      "file": "cidades/bertioga.html",
+      "status": "APPLIED",
+      "hash_before": "ea9eb8276b21fd658b7fc312d3c3c7a147d45f37dff2e401b63a0cc4056625af",
+      "hash_after": "9b9404cd3bef3dc0",
+      "breadcrumb": false,
+      "cta": false
+    },
+    {
+      "file": "cidades/itanhaem.html",
+      "status": "APPLIED",
+      "hash_before": "1d5fc21b1892e533845f5a6f7e49d0b4abf6cdf696b95f69ae8b4052f3708579",
+      "hash_after": "84de6cbe9c6c26e2",
+      "breadcrumb": false,
+      "cta": false
+    },
+    {
+      "file": "cidades/sao-vicente.html",
+      "status": "APPLIED",
+      "hash_before": "062d4379342ee117fb96d31c59b25adaf5f58389fd5dda330aebec8d7da68eb5",
+      "hash_after": "872309403d1612d4",
+      "breadcrumb": false,
+      "cta": false
+    },
+    {
+      "file": "cidades/mongagua.html",
+      "status": "APPLIED",
+      "hash_before": "347399bd001690e579a82662a030e5af6569161eeffe1c92a3f57a407a7cac00",
+      "hash_after": "91a3f4887596a74a",
+      "breadcrumb": false,
+      "cta": false
+    },
+    {
+      "file": "cidades/peruibe.html",
+      "status": "APPLIED",
+      "hash_before": "419e2a417be47cecedd2238c15f8903db46390e66ad79eb22d4ccf921433d2a9",
+      "hash_after": "6f3165c4f6209da4",
+      "breadcrumb": false,
+      "cta": false
+    },
+    {
+      "file": "servicos/cidade-servico/santos-captacao.html",
+      "status": "APPLIED",
+      "hash_before": "db8424947a3e6e50e02eb1f8e988e3d915b7d39f7eabaac4c3fb396504c4cf36",
+      "hash_after": "c2fc8532350297d3",
+      "breadcrumb": false,
+      "cta": false
+    }
+  ],
+  "applied": 13
+}

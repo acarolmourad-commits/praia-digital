@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-08-18T01:50:47.125709+00:00",
+  "total_candidates": 1,
+  "candidates": [
+    {
+      "title": "Redirecionando | Praia Digital",
+      "h1": "",
+      "files": [
+        "assets\\simulador-roi-parcerias-imobiliarias-2026.html",
+        "bairros\\guaruja-enseada.html",
+        "bairros\\praia-grande-ocian.html",
+        "bairros\\praia-grande-solemar.html",
+        "bairros\\santos-boqueirao.html",
+        "bairros\\saovicente-gonzaguinha.html",
+        "blog\\aluguel-temporada-litoral-guia-2026.html",
+        "blog\\bertioga-aluguel-temporada-2026.html",
+        "blog\\guaruja-aluguel-temporada-2026.html",
+        "blog\\peruibe-aluguel-temporada-2026.html",
+        "blog\\rentabilidade-imoveis-praia.html",
+        "blog\\santos-aluguel-temporada-2026.html"
+      ],
+      "classification": "DUPLICATA_EXATA",
+      "auto_consolidate": true,
+      "human_review": false,
+      "action": "CONSOLIDAR_AUTOMATICAMENTE"
+    }
+  ],
+  "rules": [
+    {
+      "rule": "R_DUP_EXATA",
+      "condition": "Same title, same H1, same content hash, NOT redirect/backup/outreach/property-id",
+      "action": "CONSOLIDAR_AUTOMATICAMENTE",
+      "confidence": "100%"
+    }
+  ]
+}

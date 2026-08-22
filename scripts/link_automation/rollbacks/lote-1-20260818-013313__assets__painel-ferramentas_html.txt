@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+        {
+      "@type": "Question",
+      "name": "Como solicitar mais informações?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pelo WhatsApp ou formulário na página para atendimento rápido."
+      }
+    },    {
+      "@type": "Question",
+      "name": "Quais cidades são atendidas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Todo o litoral de SP: Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente e Peruíbe."
+      }
+    },    {
+      "@type": "Question",
+      "name": "Quanto tempo para retorno?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Em até 24 horas após o contato, com atendimento humanizado."
+      }
+    }
+  ]
+}
+</script>
+<meta charset="UTF-8">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel de Ferramentas — Praia Digital</title>
+  <link rel="preconnect" href="https://praia.digital">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://praia.digital/index.html" },      { "@type": "ListItem", "position": 2, "name": "Ferramentas", "item": "https://praia.digital/assets/" },      { "@type": "ListItem", "position": 3, "name": "Painel Ferramentas", "item": "https://praia.digital/assets/painel-ferramentas.html" }
+    ]
+  }
+  </script>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Painel de Ferramentas — Praia Digital">
+  <meta name="twitter:description" content="Ferramenta ou conteúdo da Praia Digital para o mercado imobiliário do litoral.">
+  <meta property="og:title" content="Painel de Ferramentas — Praia Digital">
+  <meta property="og:description" content="Ferramenta ou conteúdo da Praia Digital para o mercado imobiliário do litoral.">
+
+  <meta name="twitter:image" content="https://praia.digital/img/default-home.jpg">
+  <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+  <meta name="description" content="Ferramenta ou conteúdo da Praia Digital para o mercado imobiliário do litoral.">
+  <meta name="keywords" content="Painel de Ferramentas — Praia Digital, Ferramenta ou conteúdo da Praia Digital para o mercado imobiliário do litoral., imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
+  <link rel="canonical" href="https://praia.digital/assets/painel-ferramentas.html">
+<style>body{font-family:Arial,sans-serif;max-width:900px;margin:auto;padding:24px;color:#112}
+h1{color:#0a3a6b;font-size:1.8rem}a{text-decoration:none}
+.lead{color:#334;font-size:1.05rem;line-height:1.6}
+.grid{display:flex;gap:12px;flex-wrap:wrap;margin-top:1.2rem}
+.card{flex:1;min-width:250px;background:#f0f7ff;border:1px solid #cfe3f5;border-radius:12px;padding:1.2rem;transition:.2s}
+.card:hover{box-shadow:0 4px 16px rgba(34,211,238,.25);transform:translateY(-2px)}
+.card b{color:#0a3a6b;display:block;font-size:1.05rem;margin-bottom:.3rem}
+.card span{color:#445;font-size:.88rem;line-height:1.5}
+.card .go{display:inline-block;margin-top:.7rem;color:#0a3a6b;font-weight:700;font-size:.85rem}
+.banner{background:linear-gradient(135deg,#1e3a8a,#0a3a6b);color:#fff;border-radius:12px;padding:1.3rem;margin:1.2rem 0;text-align:center}
+.banner a{background:linear-gradient(90deg,#22d3ee,#4ade80);color:#04141f;font-weight:800;padding:.7rem 1.3rem;border-radius:9px}
+small{color:#667}</style>  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '', { anonymize_ip: true });
+</script>
+</head>
+<body>
+<h1>🧰 Painel de Ferramentas — Praia Digital</h1>
+<p class="lead">A 1ª plataforma brasileira de Inteligência Imobiliária, na palma da mão. Escolha uma ferramenta e decida com dado, não feeling.</p>
+<div class="grid">
+<a class="card" href="analise-completa-imovel.html"><b>🔍 Análise Completa</b><span>Valuation, ROI, yield, payback e Score Hermes num relatório.</span><span class="go">Abrir →</span></a>
+<a class="card" href="comparador-inteligente.html"><b>⚖️ Comparador Inteligente</b><span>Compare 3 imóveis por ROI, yield e payback.</span><span class="go">Abrir →</span></a>
+<a class="card" href="simulador-financiamento.html"><b>🏦 Simulador de Financiamento</b><span>Parcela, total pago e custo de juros reais.</span><span class="go">Abrir →</span></a>
+<a class="card" href="calculadora-widget-standalone.html?tenant=pd-norte"><b>📈 Calculadora de Rentabilidade</b><span>Yield por CEP e ROI de temporada.</span><span class="go">Abrir →</span></a>
+<a class="card" href="score-hermes.html"><b>🧠 Score Hermes</b><span>Índice de inteligência do seu ativo (0-100).</span><span class="go">Abrir →</span></a>
+<a class="card" href="https://praia.digital/docs/ferramentas/qualificador-leads.json"><b>🎯 Recomendações Personalizadas</b><span>Imóvel certo para o seu perfil (Qualificador Hermes).</span><span class="go">Abrir →</span></a>
+</div>
+<div class="banner">
+<p style="margin:.2rem 0">Não sabe por onde começar? O Hermes qualifica seu perfil e indica o caminho.</p>
+<a href="https://praia.digital/docs/ferramentas/qualificador-leads.json">Conversar com o Hermes →</a>
+</div>
+<p style="font-size:.8rem;color:#667">Praia Digital · 1ª Plataforma Brasileira de Inteligência Imobiliária · 2026-07-16</p>
+</body></html>
