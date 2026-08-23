@@ -17,6 +17,16 @@
       "source": "/blog/cadastrar-imovel.html",
       "destination": "/cadastrar-imovel.html",
       "permanent": true
+    },
+    {
+      "source": "/blog/exclusivos/relatorio-mercado-2026.html",
+      "destination": "/exclusivos/relatorio-mercado-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/demo-15min-imobiliarias-litoral-2026.html",
+      "destination": "/demo-15min-imobiliarias-litoral-2026.html",
+      "permanent": true
     }
   ]
 }
