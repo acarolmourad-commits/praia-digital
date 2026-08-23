@@ -3,6 +3,17 @@
    ============================================================ */
 window.PD_CALC = window.PD_CALC || {};
 
+PD_CALC.prioritizeHero = function () {
+  document.querySelectorAll('img').forEach((img) => {
+    const src = (img.getAttribute('src') || '').toLowerCase();
+    if (src.includes('default-home.jpg') || src.includes('hero') || src.includes('cover')) {
+      img.setAttribute('fetchpriority', 'high');
+      img.setAttribute('loading', 'eager');
+      img.setAttribute('decoding', 'sync');
+    }
+  });
+};
+
 PD_CALC.init = function ({ container = '.pd-calc', currency = 'BRL' } = {}) {
   const root = document.querySelector(container);
   if (!root) return null;
