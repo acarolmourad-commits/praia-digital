@@ -10,3 +10,8 @@ Disallow: /leads/
 
 Sitemap: https://praia.digital/sitemap.xml
 Host: https://praia.digital
+Disallow: /outreach/Disallow: /assets/ferramentas/Disallow: /servicos/cidade-servico/Disallow: /ferramentas/airbnb-admin.html
+Disallow: /outreach/
+Disallow: /assets/ferramentas/
+Disallow: /servicos/cidade-servico/
+Disallow: /ferramentas/airbnb-admin.html
