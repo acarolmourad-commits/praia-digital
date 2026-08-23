@@ -85,3 +85,32 @@
   text-decoration: none;
   font-weight: 700;
 }
+
+.pd-whatsapp-float {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 9998;
+  background: #25D366;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+@media (max-width: 768px) {
+  .pd-whatsapp-float {
+    right: 12px;
+    bottom: 12px;
+    padding: 9px 12px;
+    font-size: 14px;
+  }
+
+  /* Avoid overlap with mobile sticky ad */
+  .pd-sticky-ad:not(.is-closed) ~ .pd-whatsapp-float,
+  body.has-sticky-ad .pd-whatsapp-float {
+    bottom: 72px;
+  }
+}

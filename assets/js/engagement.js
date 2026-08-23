@@ -6,9 +6,7 @@ window.PD_ENGAGEMENT = window.PD_ENGAGEMENT || {};
 PD_ENGAGEMENT.initPush = function ({ serviceWorkerPath = '/sw.js', promptDelayMs = 3000 } = {}) {
   if (!('serviceWorker' in navigator)) return;
 
-  if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register(serviceWorkerPath, { scope: '/' }).catch(() => {});
-}
 
   setTimeout(() => {
     if (!('Notification' in window)) return;
@@ -55,6 +53,7 @@ PD_ENGAGEMENT.initGPTTelemetry = function () {
     } catch (e) { /* no-op */ }
   });
 };
+
 PD_ENGAGEMENT.initShare = function () {
   const urls = [
     'https://wa.me/?text=' + encodeURIComponent(location.href),
@@ -78,4 +77,26 @@ PD_ENGAGEMENT.initShare = function () {
   }
   container.appendChild(row);
   document.body.appendChild(container);
+};
+
+PD_ENGAGEMENT.initStickyOffset = function ({ offsetPx = 60 } = {}) {
+  const sticky = document.querySelector('.pd-sticky-ad');
+  const whatsapp = document.querySelector('.pd-whatsapp-float');
+  if (!sticky || !whatsapp) return;
+
+  const apply = () => {
+    const hidden = sticky.classList.contains('is-closed') || getComputedStyle(sticky).display === 'none';
+    if (!hidden) {
+      whatsapp.style.bottom = `calc(16px + ${offsetPx}px)`;
+      document.body.classList.add('has-sticky-ad');
+    } else {
+      whatsapp.style.bottom = '';
+      document.body.classList.remove('has-sticky-ad');
+    }
+  };
+
+  apply();
+  const observer = new MutationObserver(apply);
+  observer.observe(sticky, { attributes: true, attributeFilter: ['class', 'style'] });
+  window.addEventListener('resize', apply);
 };
