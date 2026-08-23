@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ Avançada — Agentes Autônomos 2026 | Praia Digital</title>
+  <meta name="description" content="FAQ avançada sobre agentes autônomos: LGPD, API, customização, escalabilidade e integrações nacionais. Respostas técnicas para decisores e equipes de tecnologia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #f8fafc;
+    }
+    .hero {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+      color: #fff;
+      padding: 80px 24px 60px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      opacity: 0.85;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+    .intro {
+      background: #fff;
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 40px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    .intro p {
+      color: #334155;
+      font-size: 1rem;
+    }
+    details {
+      background: #fff;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      overflow: hidden;
+      transition: box-shadow 0.2s ease;
+    }
+    details:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    details[open] {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    }
+    summary {
+      padding: 20px 24px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1.05rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+      list-style: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: '+';
+      font-size: 1.5rem;
+      font-weight: 300;
+      transition: transform 0.2s ease;
+      flex-shrink: 0;
+      margin-left: 16px;
+      color: #3b82f6;
+    }
+    details[open] summary::after {
+      content: '−';
+      transform: rotate(0deg);
+    }
+    .faq-body {
+      padding: 0 24px 24px;
+      color: #334155;
+      font-size: 0.97rem;
+      line-height: 1.8;
+    }
+    .faq-body h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 16px 0 6px;
+      color: #1e293b;
+    }
+    .faq-body ul, .faq-body ol {
+      margin: 8px 0 8px 20px;
+    }
+    .faq-body li { margin-bottom: 4px; }
+    .faq-body code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+      font-family: 'Courier New', monospace;
+      color: #0f172a;
+    }
+    .faq-body strong { color: #0f172a; }
+    .tag {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+    .tag-seguranca { background: #fef2f2; color: #991b1b; }
+    .tag-api { background: #eff6ff; color: #1d4ed8; }
+    .tag-customizacao { background: #f0fdf4; color: #166534; }
+    .tag-escalabilidade { background: #fffbeb; color: #92400e; }
+    .tag-integracoes { background: #fdf2f8; color: #9d174d; }
+    .cta {
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
+      color: #fff;
+      text-align: center;
+      padding: 48px 24px;
+      border-radius: 12px;
+      margin-top: 40px;
+    }
+    .cta h3 {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+    .cta a {
+      display: inline-block;
+      margin-top: 16px;
+      background: #fff;
+      color: #2563eb;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.15s;
+    }
+    .cta a:hover { transform: translateY(-2px); }
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      color: #64748b;
+      font-size: 0.85rem;
+    }
+    @media (max-width: 600px) {
+      .hero { padding: 60px 16px 40px; }
+      .container { padding: 24px 16px; }
+      summary { padding: 16px 18px; font-size: 0.98rem; }
+      .faq-body { padding: 0 18px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <h1>FAQ Avançada — Agentes Autônomos</h1>
+    <p>Segurança LGPD, API, customização, escalabilidade e integrações nacionais. Respostas técnicas para decisores e equipes de tecnologia, 2026.</p>
+  </header>
+
+  <div class="container">
+
+    <div class="intro">
+      <p><strong>Sobre esta FAQ:</strong> Este material complementa a documentação técnica e de produto da Praia Digital. Se você tem dúvidas sobre como agentes autônomos se aplicam ao seu contexto, envie um e-mail para <a href="mailto:contato@praia.digital">contato@praia.digital</a>.</p>
+    </div>
+
+    <!-- SEGURANÇA -->
+    <details>
+      <summary>
+        <span><span class="tag tag-seguranca">Segurança</span>Quais são os controles de segurança aplicados a agentes autônomos?</span>
+      </summary>
+      <div class="faq-body">
+        <p>A arquitetura de segurança de um agente autônomo segue uma abordagem em camadas:</p>
+        <ol>
+          <li><strong>Sandbox de execução:</strong> o agente roda em ambiente isolado; ações destrutivas são bloqueadas por padrão.</li>
+          <li><strong>Princípio do menor privilégio:</strong> permissões mínimas necessárias para cumprir o objetivo.</li>
+          <li><strong>Aprovação humana:</strong> fluxos sensíveis exigem confirmação antes de executar (ex.: exclusão de registros, envio de e-mails externos).</li>
+          <li><strong>Logs auditáveis:</strong> toda decisão é registrada com timestamp, entrada, saída e origem.</li>
+          <li><strong>Criptografia:</strong> dados em trânsito (TLS 1.3) e em repouso (AES-256).</li>
+          <li><strong>Monitoramento contínuo:</strong> alertas automáticos para comportamentos anômalos.</li>
+          <li><strong>Rollback:</strong> ações reversíveis sempre que a arquitetura-alvo permitir.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details>
+      <summary>
+        <span><span class="tag tag-seguranca">Segurança</span>Como a LGPD é atendida em operações com agentes autônomos?</span>
+      </summary>
+      <div class="faq-body">
+        <p>O agente opera como um processador de dados em nome do controlador (a empresa cliente). Nossas medidas:</p>
+        <ul>
+          <li><strong>Base legal documentada:</strong> cada fluxo tem uma base legal definida (contrato, legítimo interesse, consentimento).</li>
+          <li><strong>Minimização:</strong> o agente acessa apenas os campos estritamente necessários.</li>
+          <li><strong>Transparência:</strong> log das ações permite demonstrar o que foi feito, quando e por quê.</li>
+          <li><strong>Direitos do titular:</strong> processos podem ser reavaliados para exclusão ou correção de dados via solicitação formal.</li>
+          <li><strong>DPO consultivo:</strong> o design do agente pode ser revisado pelo seu DPO antes do deploy.</li>
+        </ul>
+        <p><em>Nota:</em> a responsabilidade final pelo cumprimento da LGPD é do controlador (empresa cliente). Nós fornecemos a arquitetura e a documentação para habilitar a conformidade.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>
+        <span><span class="tag tag-seguranca">Segurança</span>O agente armazena dados sensíveis? Por quanto tempo?</span>
+      </summary>
+      <div class="faq-body">
+        <p>Dados sensíveis não são armazenados por padrão. As regras de retenção são configuradas por fluxo:</p>
+        <ul>
+          <li><strong>Contexto de sessão:</strong> temporário, limpo após conclusão da tarefa.</li>
+          <li><strong>Logs operacionais:</strong> retenção configurável (geralmente 90 a 365 dias, conforme política do cliente).</li>
+          <li><strong>Base de conhecimento:</strong> pode incluir dados operacionais não sensíveis; dados pessoais são anonimizados ou excluídos.</li>
+        </ul>
+        <p>Você define as regras de retenção no contrato de processamento (DPA).</p>
+      </div>
+    </details>
+
+    <!-- API -->
+    <details>
+      <summary>
+        <span><span class="tag tag-api">API</span>Como funciona a integração via API? É necessário expor sistemas internos?</span>
+      </summary>
+      <div class="faq-body">
+        <p>A integração pode seguir duas arquiteturas:</p>
+        <ul>
+          <li><strong>API inbound:</strong> o agente consome APIs já expostas pelos seus sistemas (REST, SOAP, GraphQL).</li>
+          <li><strong>Webhook + API outbound:</strong> seus sistemas enviam eventos para o agente via webhook; o agente responde quando necessário.</li>
+        </ul>
+        <p><strong>Não é obrigatório expor sistemas diretamente à internet.</strong> Em cenários restritos, usamos um conector intermediário (middleware) dentro do seu perímetro de rede ou VPN privada.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>
+        <span><span class="tag tag-api">API</span>Quais protocolos e formatos são suportados?</span>
+      </summary>
+      <div class="faq-body">
+        <ul>
+          <li><strong>Protocolos:</strong> REST (HTTP/HTTPS), SOAP, Webhooks, FTP/SFTP para arquivos.</li>
+          <li><strong>Formatos de dados:</strong> JSON, XML, CSV, Excel (.xlsx), PDF (leitura de texto via OCR quando aplicável).</li>
+          <li><strong>Autenticação:</strong> API Key, OAuth 2.0, Basic Auth, certificados mTLS.</li>
+          <li><strong>Filas e mensageria:</strong> integração com RabbitMQ, SQS, Azure Service Bus.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>
+        <span><span class="tag tag-api">API</span>O agente funciona sem API nativa? E com sistemas legados?</span>
+      </summary>
+      <div class="faq-body">
+        <p>Sim. Para sistemas sem API pública, utilizamos:</p>
+        <ul>
+          <li><strong>RPA assistido:</strong> automação de interface gráfica com validação humana em pontos críticos.</li>
+          <li><strong>Scrapers controlados:</strong> extração de dados de portais e páginas, dentro de limites legais e de <code>robots.txt</code>.</li>
+          <li><strong>Connectors proprietários:</strong> drivers customizados para ERPs nacionais sem API aberta.</li>
+        </ul>
+        <p>A recomendação é avaliar caso a caso, pois RPA é mais frágil que API e requer manutenção contínua.</p>
+      </div>
+    </details>
+
+    <!-- CUSTOMIZAÇÃO -->
+    <details>
+      <summary>
+        <span><span class="tag tag-customizacao">Customização</span>Até que ponto o agente é customizável?</span>
+      </summary>
+      <div class="faq-body">
+        <p>Quase 100% customizável, porque o agente é desenhado para o seu processo. As dimensões de customização:</p>
+        <ol>
+          <li><strong>Objetivo:</strong> definição da tarefa final do agente.</li>
+          <li><strong>Entradas:</strong> fontes de dados, formatos, gatilhos (eventos, agendamento, webhook).</li>
+          <li><strong>Regras de negócio:</strong> lógica de decisão, filtros, condições, exceções.</li>
+          <li><strong>Saídas:</strong> formato do relatório, canal de entrega, destinatários.</li>
+          <li><strong>Interface:</strong> painel de monitoramento pode ser white-label.</li>
+          <li><strong>Permissões:</strong> controle de acesso por usuário, função ou sistema.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details>
+      <summary>
+        <span><span class="tag tag-customizacao">Customização</span>Como funciona o processo de discovery e design do agente?</span>
+      </summary>
+      <div class="faq-body">
+        <p>O processo é estruturado em 5 etapas:</p>
+        <ol>
+          <li><strong>Discovery (1 semana):</strong> workshop para mapear o processo, entradas, saídas, exceções.</li>
+          <li><strong>Design (3 dias):</strong> documentação do fluxo, definição de integrações, regras e permissões.</li>
+          <li><strong>MVP (1 semana):</strong> agente funcional em ambiente controlado com dados reais.</li>
+          <li><strong>Validação (3 dias):</strong> testes com o cliente, ajustes, correções.</li>
+          <li><strong>Deploy (2 dias):</strong> produção com monitoramento, documentação e handoff.</li>
+        </ol>
+        <p>Total: 2 a 3 semanas do discovery ao deploy.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>
+        <span><span class="tag tag-customizacao">Customização</span>O agente aprende sozinho ou precisa de regras explícitas?</span>
+      </summary>
+      <div class="faq-body">
+        <p>O agente opera com <strong>regras explícitas + aprendizado supervisionado</strong>. Isso significa:</p>
+        <ul>
+          <li><strong>Regras explícitas:</strong> você define o comportamento esperado (condições, ações, limitações).</li>
+          <li><strong>Aprendizado de contexto:</strong> o agente aprende padrões dos dados históricos para sugerir ajustes (ex.: classificação de documentos).</li>
+          <li><strong>Ajuste humano:</strong> toda sugestão de mudança de regra passa por validação humana antes de ser aplicada em produção.</li>
+        </ul>
+        <p>Não utilizamos “caixa preta” de aprendizado autônomo para ações produtivas — a governabilidade é prioridade.</p>
+      </div>
+    </details>
+
+    <!-- ESCALABILIDADE -->
+    <details>
+      <summary>
+        <span><span class="tag tag-escalabilidade">Escalabilidade</span>O agente aguenta volume alto de operações?</span>
+      </summary>
+      <div class="faq-body">
+        <p>Sim. A arquitetura é stateless e orientada a eventos, com capacidade de:</p>
+        <ul>
+          <li><strong>Paralelização:</strong> execução concorrente de múltiplas tarefas independentes.</li>
+          <li><strong>Filas de trabalho:</strong> priorização, retry e backoff automático.</li>
+          <li><strong>Escala horizontal:</strong> adicionar capacidade conforme o volume cresce, sem mudança de arquitetura.</li>
+        </ul>
+        <p>Volumes típicos em produção: 1.000 a 100.000+ execuções/dia, dependendo do processo.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>
+        <span><span class="tag tag-escalabilidade">Escalabilidade</span>O que acontece quando o agente falha ou o sistema cai?</span>
+      </summary>
+      <div class="faq-body">
+        <p>A resiliência é construída em camadas:</p>
+        <ol>
+          <li><strong>Retry automático:</strong> falhas transitórias são retentadas com backoff exponencial.</li>
+          <li><strong>Dead letter queue:</strong> tarefas que falham repetidamente são isoladas para inspeção manual.</li>
+          <li><strong>Checkpointing:</strong> tarefas longas registram progresso e podem ser retomadas de onde pararam.</li>
+          <li><strong>Alerta:</strong> equipe é notificada automaticamente em caso de falha persistente.</li>
+          <li><strong>Fallback:</strong> processos críticos podem manter um fluxo manual como contingência.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details>
+      <summary>
+        <span><span class="tag tag-escalabilidade">Escalabilidade</span>Como medir performance e throughput?</span>
+      </summary>
+      <div class="faq-body">
+        <p>Métricas padrão:</p>
+        <ul>
+          <li><strong>Throughput:</strong> tarefas executadas por minuto/hora.</li>
+          <li><strong>Latência p95/p99:</strong> tempo de execução do agente (busca + processamento + ação).</li>
+          <li><strong>Taxa de sucesso:</strong> % de tarefas completadas sem erro humano.</li>
+          <li><strong>Erros por tipo:</strong> timeout, API indisponível, regra não atendida.</li>
+          <li><strong>Utilização:</strong> % de capacidade utilizada para planejamento de escala.</li>
+        </ul>
+        <p>Painel de monitoramento incluso; alertas configuráveis via e-mail, Slack ou WhatsApp.</p>
+      </div>
+    </details>
+
+    <!-- INTEGRAÇÕES NACIONAIS -->
+    <details>
+      <summary>
+        <span><span class="tag tag-integracoes">Integrações</span>Quais integrações nacionais são suportadas?</span>
+      </summary>
+      <div class="faq-body">
+        <p>Integramos com ecossistema brasileiro e latino-americano:</p>
+        <ul>
+          <li><strong>ERP:</strong> TOTVS (Protheus, Datasul), Sankhya, SAP Business One</li>
+          <li><strong>CRM/marketing:</strong> RD Station, HubSpot, Pipedrive, ActiveCampaign</li>
+          <li><strong>E-commerce:</strong> Nuvemshop, Shopify, VTEX, Mercado Livre</li>
+          <li><strong>Pagamentos:</strong> Mercado Pago, PagSeguro, Stripe</li>
+          <li><strong>Mensageria:</strong> WhatsApp Business API, Telegram, Slack, Microsoft Teams</li>
+          <li><strong>Planilhas:</strong> Google Sheets, Excel Online, Airtable</li>
+          <li><strong>Banco de dados:</strong> PostgreSQL, MySQL, SQL Server</li>
+          <li><strong>Cloud:</strong> AWS, Azure, GCP (funções serverless, filas, storage)</li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>
+        <span><span class="tag tag-integracoes">Integrações</span>E se a ferramenta que uso não estiver na lista?</span>
+      </summary>
+      <div class="faq-body">
+        <p>Desenvolvemos conectores customizados. O processo:</p>
+        <ol>
+          <li>Você compartilha a documentação da API ou acesso de teste.</li>
+          <li>Avaliamos esforço e viabilidade em até 48h.</li>
+          <li>Desenvolvemos o conector em até 1 semana para casos padrão.</li>
+          <li>Integramos ao agente no MVP.</li>
+        </ol>
+        <p>Conectores customizados são parte do nosso processo habitual — não são exceção.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>
+        <span><span class="tag tag-integracoes">Integrações</span>O agente funciona com dados do governo ou portais públicos?</span>
+      </summary>
+      <div class="faq-body">
+        <p>Sim, com ressalvas:</p>
+        <ul>
+          <li><strong>Consulta a portais públicos:</strong> possível via scraping controlado ou APIs abertas (Receita Federal, Junta Comercial, prefeituras com APIs).</li>
+          <li><strong>Validação legal:</strong> scrapers respeitam <code>robots.txt</code> e termos de uso.</li>
+          <li><strong>Dados sensíveis de governo:</strong> requerem base legal específica e podem precisar de autenticação forte (certificados ICP-Brasil).</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- GERAIS TÉCNICAS -->
+    <details>
+      <summary>
+        <span><span class="tag tag-api">Técnico</span>Quais tecnologias compõem a stack do agente?</span>
+      </summary>
+      <div class="faq-body">
+        <p>Stack flexível, escolhida conforme o processo:</p>
+        <ul>
+          <li><strong>Orchestração:</strong> Python (LangChain, pré-processamento customizado)</li>
+          <li><strong>Modelos de IA:</strong> LLMs para classificação, extração, geração de texto; fine-tuning opcional</li>
+          <li><strong>Execução:</strong> containers isolados (Docker), serverless ou VMs, conforme requisito</li>
+          <li><strong>Mensageria:</strong> filas para desacoplamento e resiliência</li>
+          <li><strong>Observabilidade:</strong> logs estruturados, métricas, tracing (OpenTelemetry)</li>
+        </ul>
+        <p>Não somos vendor-locked: você pode auditar o código do agente mediante contrato.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>
+        <span><span class="tag tag-customizacao">Técnico</span>O agente pode ser hospedado no meu ambiente (on-premise)?</span>
+      </summary>
+      <div class="faq-body">
+        <p>Sim, duas opções:</p>
+        <ul>
+          <li><strong>Hospedagem Praia Digital (SaaS):</strong> gerenciamos infra, atualizações, monitoramento.</li>
+          <li><strong>Hospedagem cliente (on-prem / private cloud):</strong> deploy no seu datacenter ou VPC. Você gerencia infra; nós entregamos imagem e documentação.</li>
+        </ul>
+        <p>On-prem é comum em bancos, operadoras e empresas com requisitos regulatórios rigorosos.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>
+        <span><span class="tag tag-escalabilidade">Técnico</span>Qual o SLA de disponibilidade do agente?</span>
+      </summary>
+      <div class="faq-body">
+        <p>Depende do modelo de hospedagem:</p>
+        <ul>
+          <li><strong>SaaS:</strong> SLA 99,5% de disponibilidade do serviço de orquestração.</li>
+          <li><strong>On-prem:</strong> sem SLA externo; recomendamos arquitetura HA (múltiplas instâncias + load balancer).</li>
+        </ul>
+        <p>Além disso, cada integração consumida pelo agente tem seu próprio SLA (ex.: WhatsApp Business API 99,9%).</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>
+        <span><span class="tag tag-customizacao">Técnico</span>O agente pode ser integrado ao meu time de dados / BI?</span>
+      </summary>
+      <div class="faq-body">
+        <p>Sim, de várias formas:</p>
+        <ul>
+          <li><strong>Exportação de logs:</strong> CSV, JSON, parquet para Data Lake.</li>
+          <li><strong>Conexão direta:</strong> o agente pode escrever em tabelas do seu DW ou enviar métricas para ferramentas de BI.</li>
+          <li><strong>API de consulta:</strong> equipe de dados pode consultar status e resultados via API interna.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>
+        <span><span class="tag tag-seguranca">Segurança</span>Como é feito o controle de versão e mudanças nos agentes?</span>
+      </summary>
+      <div class="faq-body">
+        <ul>
+          <li><strong>Versionamento:</strong> todo agente tem versionamento semântico (ex.: v1.2.0).</li>
+          <li><strong>Change log:</strong> cada alteração de regra ou integração é registrada.</li>
+          <li><strong>Ambientes separados:</strong> dev, staging, produção — mudanças só chegam a prod após validação.</li>
+          <li><strong>Aprovação de mudança:</strong> alterações em regras sensíveis exigem aprovação formal.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>
+        <span><span class="tag tag-integracoes">Integrações</span>Há custos adicionais com APIs de terceiros?</span>
+      </summary>
+      <div class="faq-body">
+        <p>Sim. Integrações com serviços de terceiros podem envolver custos:</p>
+        <ul>
+          <li><strong>APIs pagas:</strong> algumas APIs cobram por chamada ou por assinatura (ex.: ERPs, gateways de pagamento).</li>
+          <li><strong>WhatsApp Business API:</strong> taxa de conversa conforme modelo do Meta.</li>
+          <li><strong>Serviços de OCR/IA:</strong> dependendo do volume, podem gerar custo adicional.</li>
+        </ul>
+        <p>Nós estimamos esses custos no levantamento do projeto e os apresentamos claramente na proposta.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>
+        <span><span class="tag tag-api">Técnico</span>O agente pode ser auditado por equipe de segurança interna?</span>
+      </summary>
+      <div class="faq-body">
+        <p>Sim. Providenciamos:</p>
+        <ul>
+          <li><strong>Código fonte do agente:</strong> mediante NDA, para auditores autorizados.</li>
+          <li><strong>Documentação arquitetônica:</strong> diagramas, fluxos, permissões.</li>
+          <li><strong>Políticas de segurança:</strong> descrição de controles, retenção de logs, gestão de acessos.</li>
+          <li><strong>DPA (Data Processing Agreement):</strong> contrato de processamento de dados, com cláusulas LGPD.</li>
+        </ul>
+      </div>
+    </details>
+
+  </div>
+
+  <div class="container">
+    <div class="cta">
+      <h3>Ficou com dúvidas técnicas?</h3>
+      <p>Nossa equipe de engenharia responde em até 48h.</p>
+      <a href="mailto:contato@praia.digital?subject=FAQ%20Agentes%20Aut%C3%B4nomos%20%E2%80%94%20D%C3%BAvida%20t%C3%A9cnica">Enviar pergunta →</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Praia Digital — Material técnico interno. Distribuição mediante autorização.</p>
+  </footer>
+
+</body>
+</html>
