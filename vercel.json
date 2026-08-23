@@ -12,6 +12,11 @@
       "source": "/blog/education/formacoes/index.html",
       "destination": "/education/formacoes/index.html",
       "permanent": true
+    },
+    {
+      "source": "/blog/cadastrar-imovel.html",
+      "destination": "/cadastrar-imovel.html",
+      "permanent": true
     }
   ]
 }
