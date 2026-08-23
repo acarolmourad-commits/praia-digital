@@ -1,0 +1,64 @@
+/* ============================================================
+   Praia Digital — Related Content + Native Ad
+   ============================================================ */
+.pd-related {
+  margin-top: 2rem;
+  padding: 1.4rem;
+  border-radius: 14px;
+  background: #f7f7f2;
+  border: 1px solid #e5e5db;
+}
+
+.pd-related__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #023047;
+  margin-bottom: 1rem;
+}
+
+.pd-related__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.pd-related__card {
+  background: #fff;
+  border: 1px solid #e5e5db;
+  border-radius: 12px;
+  padding: 16px;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.pd-related__card:hover {
+  border-color: #c9e6f7;
+}
+
+.pd-related__card h3 {
+  font-size: 1rem;
+  color: #0077B6;
+  margin: 0 0 0.4rem;
+}
+
+.pd-related__card p {
+  font-size: 0.9rem;
+  color: #4a5568;
+  margin: 0;
+}
+
+.pd-related__native {
+  background: linear-gradient(180deg, rgba(0,180,216,0.06), rgba(0,119,182,0.10));
+  border-style: dashed;
+}
+
+.pd-related__native::before {
+  content: 'Conteúdo patrocinado';
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #0077B6;
+  margin-bottom: 0.4rem;
+}
