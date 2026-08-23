@@ -102,3 +102,112 @@
 .pd-sticky-ad.is-closed {
   display: none !important;
 }
+
+/* ============================================================
+   8. Native CTA + newsletter + floating WhatsApp
+   ============================================================ */
+.pd-cta-native {
+  margin: 1.4rem 0;
+  padding: 1.2rem;
+  border-radius: 14px;
+  background: #eef6fb;
+  border: 1px solid #c9e6f7;
+}
+
+.pd-cta-native__inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pd-cta-native__title {
+  font-weight: 700;
+  color: #023047;
+  margin-bottom: 0.4rem;
+}
+
+.pd-cta-native__text {
+  color: #4a5568;
+  margin-bottom: 0.8rem;
+}
+
+.pd-cta-native__button {
+  display: inline-block;
+  background: #00B4D8;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.pd-newsletter {
+  margin: 1.6rem 0;
+  padding: 1.4rem;
+  border-radius: 14px;
+  background: #f7f7f2;
+  border: 1px solid #e5e5db;
+}
+
+.pd-newsletter__inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.pd-newsletter__title {
+  font-weight: 700;
+  color: #023047;
+  margin-bottom: 0.4rem;
+}
+
+.pd-newsletter__text {
+  color: #4a5568;
+  margin-bottom: 0.8rem;
+}
+
+.pd-newsletter__form {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pd-newsletter__input {
+  flex: 1 1 220px;
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+}
+
+.pd-newsletter__submit {
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background: #0077B6;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pd-whatsapp-float {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 9998;
+  background: #25D366;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+@media (max-width: 768px) {
+  .pd-whatsapp-float {
+    right: 12px;
+    bottom: 12px;
+    padding: 9px 12px;
+    font-size: 14px;
+  }
+}
