@@ -86,6 +86,8 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', '', { anonymize_ip: true });
 </script>
+<link rel="stylesheet" href="/assets/css/calc-widget.css">
+<link rel="stylesheet" href="/assets/css/compare-table.css">
 </head>
 <body>
   <div class="wrap">
@@ -112,11 +114,85 @@ gtag('config', '', { anonymize_ip: true });
 
       <a class="cta" href="https://wa.me/5511954346288?text=Quero%20imóveis%20em%20Boqueirao">Quero ver oportunidades em Boqueirao</a>
       <a class="cta" style="background:#fff;color:#0b1220" href="/education/cursos/comprar-imovel-praia-sem-golpes/index.html">Curso: compra segura</a>
-    <div id="lm-form" style="margin-top:18px"><h2>Quero receber este guia</h2><form id="leadForm"><input type="text" id="name" placeholder="Seu nome" required /><input type="email" id="email" placeholder="Seu e-mail" /><input type="tel" id="phone" placeholder="Seu WhatsApp" /><input type="hidden" id="city" value="Santos" /><input type="hidden" id="source" value="bairro" /><input type="hidden" id="magnet" value="Santos" /><button type="submit">Enviar</button></form><p id="formStatus"></p></div><script>(function(){var form=document.getElementById("leadForm");if(!form) return;form.addEventListener("submit",function(e){e.preventDefault();var data={name:document.getElementById("name").value.trim(),email:document.getElementById("email").value.trim()null,phone:document.getElementById("phone").value.trim()null,city:document.getElementById("city").valuenull,source:document.getElementById("source").valuenull,magnet:document.getElementById("magnet").valuenull};fetch("https://academy.praia.digital/leads",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)}).then(function(r){return r.json().then(function(json){return {status:r.status,json:json};});}).then(function(res){document.getElementById("formStatus").textContent=res.status===200?"Recebido! Entraremos em contato.":"Erro: "+JSON.stringify(res.json);}).catch(function(){document.getElementById("formStatus").textContent="Erro de conexão. Tente novamente.";});});})();</script>
+    <div id="lm-form" style="margin-top:18px"><div class="pd-calc">
+  <div class="pd-calc__title">Calculadora de rentabilidade estimada</div>
+  <div class="pd-calc__form">
+    <div class="pd-calc__row">
+      <input class="pd-calc__input" type="number" data-field="price" placeholder="Valor do imóvel (R$)" />
+      <input class="pd-calc__input" type="number" data-field="tax" placeholder="Custo anual (R$)" />
+    </div>
+    <div class="pd-calc__row">
+      <select class="pd-calc__select" data-field="mode">
+        <option value="season">Aluguel temporada</option>
+        <option value="annual">Aluguel anual</option>
+      </select>
+      <input class="pd-calc__input" type="number" data-field="nights" placeholder="Diárias no ano" />
+      <input class="pd-calc__input" type="number" data-field="daily" placeholder="Valor médio da diária (R$)" />
+    </div>
+    <div class="pd-calc__actions">
+      <button class="pd-calc__button" data-action="calculate" type="button">Calcular</button>
+      <button class="pd-calc__button pd-calc__reset" data-action="reset" type="button">Limpar</button>
+    </div>
+    <div class="pd-calc__result">
+      <div class="pd-calc__result-body"></div>
+    </div>
+  </div>
+</div>
+<div class="pd-compare">
+  <div class="pd-compare__title">Comparativo regional rápido</div>
+  <table class="pd-compare__table">
+    <thead>
+      <tr>
+        <th>Cidade/Bairro</th>
+        <th>Valor médio por m²</th>
+        <th>IPTU médio</th>
+        <th>Taxa de ocupação estimada</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Santos — Gonzaga</td>
+        <td>R$ 9.800/m²</td>
+        <td>R$ 1.200/ano</td>
+        <td>Alta</td>
+      </tr>
+      <tr>
+        <td>Guarujá — Enseada</td>
+        <td>R$ 8.400/m²</td>
+        <td>R$ 980/ano</td>
+        <td>Alta</td>
+      </tr>
+      <tr>
+        <td>Praia Grande — Guilhermina</td>
+        <td>R$ 6.700/m²</td>
+        <td>R$ 780/ano</td>
+        <td>Média/Alta</td>
+      </tr>
+      <tr>
+        <td>Bertioga — Riviera</td>
+        <td>R$ 12.400/m²</td>
+        <td>R$ 1.600/ano</td>
+        <td>Média</td>
+      </tr>
+      <tr>
+        <td>São Sebastião — Juquehy</td>
+        <td>R$ 11.100/m²</td>
+        <td>R$ 1.300/ano</td>
+        <td>Média/Alta</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h2>O que valoriza o Boqueirão em 2026</h2>
+<p>O Boqueirão combina oferta diversificada de apartamentos e casas, acesso rápido à orla e estrutura comercial consolidada. Em 2026, a busca por imóveis de 2 a 3 dormitórios na região segue aquecida, especialmente por compradores que desejam renda de aluguel por temporada sem abrir mão de mobilidade.</p>
+<p>Pontos fortes: comércio próximo, opções de lazer e boa oferta de transporte. Ponto de atenção: ruas com fluxo mais intenso e valorização mais concentrada em imóveis reformados.</p>
+<h2>Quero receber este guia</h2><form id="leadForm"><input type="text" id="name" placeholder="Seu nome" required /><input type="email" id="email" placeholder="Seu e-mail" /><input type="tel" id="phone" placeholder="Seu WhatsApp" /><input type="hidden" id="city" value="Santos" /><input type="hidden" id="source" value="bairro" /><input type="hidden" id="magnet" value="Santos" /><button type="submit">Enviar</button></form><p id="formStatus"></p></div><script>(function(){var form=document.getElementById("leadForm");if(!form) return;form.addEventListener("submit",function(e){e.preventDefault();var data={name:document.getElementById("name").value.trim(),email:document.getElementById("email").value.trim()null,phone:document.getElementById("phone").value.trim()null,city:document.getElementById("city").valuenull,source:document.getElementById("source").valuenull,magnet:document.getElementById("magnet").valuenull};fetch("https://academy.praia.digital/leads",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)}).then(function(r){return r.json().then(function(json){return {status:r.status,json:json};});}).then(function(res){document.getElementById("formStatus").textContent=res.status===200?"Recebido! Entraremos em contato.":"Erro: "+JSON.stringify(res.json);}).catch(function(){document.getElementById("formStatus").textContent="Erro de conexão. Tente novamente.";});});})();</script>
 </main>
 
     <meta name="pd-shared-footer">
   </div>
 <script src="https://praia.digital/js/shared.js"></script>
+<script src="/assets/js/calc-widget.js"></script>
+<script>PD_CALC.init();</script>
 </body>
 </html>
