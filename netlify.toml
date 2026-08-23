@@ -1,3 +1,9 @@
+[[redirects]]
+  from = "/blog/education/formacoes/index.html"
+  to = "/education/formacoes/index.html"
+  status = 301
+  force = true
+
 [functions]
   directory = "api"
   node_bundler = "esbuild"

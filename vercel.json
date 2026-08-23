@@ -6,5 +6,12 @@
       "memory": 1024,
       "maxDuration": 10
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/blog/education/formacoes/index.html",
+      "destination": "/education/formacoes/index.html",
+      "permanent": true
+    }
+  ]
 }
