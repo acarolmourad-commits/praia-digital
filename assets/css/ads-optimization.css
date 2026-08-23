@@ -49,3 +49,56 @@
 
 /* 6) Optional: constrain image/iframe leakage */
 .pd-ad iframe { max-width: 100%; }
+
+/* ============================================================
+   7. Mobile sticky anchor ad
+   ============================================================ */
+.pd-sticky-ad {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: rgba(15, 23, 42, 0.92);
+  backdrop-filter: saturate(140%) blur(8px);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 10px 12px;
+  display: none;
+}
+
+/* only show on small viewports */
+@media (max-width: 768px) {
+  .pd-sticky-ad { display: block; }
+}
+
+.pd-sticky-ad__inner {
+  position: relative;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.pd-ad--sticky {
+  min-height: 50px;
+  min-width: 100%;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+}
+
+.pd-sticky-ad__close {
+  position: absolute;
+  right: 6px;
+  top: 4px;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  line-height: 1;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.pd-sticky-ad.is-closed {
+  display: none !important;
+}
