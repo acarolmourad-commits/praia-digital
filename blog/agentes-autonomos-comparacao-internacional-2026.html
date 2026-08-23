@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercado de Agentes Autônomos: Brasil vs EUA vs Europa — Comparativo 2026</title>
+  <meta name="description" content="Análise comparativa do mercado de agentes autônomos no Brasil, Estados Unidos e Europa em 2026: tamanho, regulação, casos de uso e tendências.">
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --text: #c5c6c7;
+      --accent: #66fcf1;
+      --secondary: #45a29e;
+      --code-bg: #1f2833;
+      --border: #2a2f3a;
+      --warn: #f39c12;
+      --ok: #2ecc71;
+      --br: #4cc9f0;
+      --us: #f72585;
+      --eu: #7209b7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 940px; margin: 0 auto; }
+    header { border-bottom: 1px solid var(--border); padding-bottom: 1.5rem; margin-bottom: 2.5rem; }
+    h1 { font-size: clamp(1.6rem, 3vw, 2.4rem); color: #fff; margin: 0 0 .5rem; line-height: 1.2; }
+    .meta { font-size: .9rem; color: #8a8f98; }
+    .badge { display: inline-block; background: var(--code-bg); border: 1px solid var(--border); color: var(--accent); padding: .15rem .6rem; border-radius: 999px; font-size: .75rem; margin-right: .4rem; text-transform: uppercase; letter-spacing: .05em; }
+    h2 { color: #fff; font-size: 1.4rem; margin-top: 2.5rem; padding-bottom: .4rem; border-bottom: 1px solid var(--border); }
+    h3 { color: #fff; font-size: 1.1rem; margin-top: 1.8rem; }
+    p { margin: 1rem 0; }
+    table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .95rem; }
+    th { text-align: left; padding: .7rem .9rem; background: var(--code-bg); color: #fff; border: 1px solid var(--border); }
+    td { padding: .7rem .9rem; border: 1px solid var(--border); }
+    tr:nth-child(even) { background: rgba(255,255,255,.03); }
+    .region-br { border-left: 4px solid var(--br); }
+    .region-us { border-left: 4px solid var(--us); }
+    .region-eu { border-left: 4px solid var(--eu); }
+    .callout { background: rgba(102, 252, 241, .06); border-left: 4px solid var(--accent); padding: 1rem 1.2rem; border-radius: 0 .5rem .5rem 0; margin: 1.5rem 0; }
+    .callout.warn { border-left-color: var(--warn); background: rgba(243, 156, 18, .06); }
+    .highlight { color: var(--accent); font-weight: 600; }
+    ul { padding-left: 1.4rem; }
+    li { margin: .4rem 0; }
+    .chart { background: var(--code-bg); border: 1px solid var(--border); border-radius: .6rem; padding: 1rem; margin: 1.5rem 0; }
+    .bar-group { margin: .6rem 0; }
+    .bar-label { display: flex; justify-content: space-between; font-size: .85rem; margin-bottom: .2rem; }
+    .bar { height: .9rem; border-radius: .4rem; background: var(--border); overflow: hidden; }
+    .fill-br { background: var(--br); height: 100%; }
+    .fill-us { background: var(--us); height: 100%; }
+    .fill-eu { background: var(--eu); height: 100%; }
+    footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); font-size: .9rem; color: #6b7280; }
+    @media (max-width: 640px) {
+      body { padding: 1rem .7rem; }
+      table, thead, tbody, th, td, tr { display: block; }
+      th { background: var(--code-bg); }
+      td { border: none; border-bottom: 1px solid var(--border); padding-left: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div style="margin-bottom:.6rem">
+        <span class="badge">Comparativo Internacional</span>
+        <span class="badge">Mercado 2026</span>
+      </div>
+      <h1>Mercado de Agentes Autônomos: Brasil vs EUA vs Europa</h1>
+      <p class="meta">Praia Digital · Agosto de 2026 · Fontes: Gartner, McKinsey, Brazilian Association of AI (SBIA)</p>
+    </header>
+
+    <p>O mercado de agentes autônomos de IA está em ritmos diferentes nos três polos globais. Enquanto Silicon Valley escala para bilhões de dólares em receita de plataformas enterprise, a Europa equilibra inovação com regulação rigorosa, e o Brasil avança rápido em <strong>casos de uso pragmáticos</strong> — especialmente em PMEs e setores tradicionais como imobiliário, saúde e varejo.</p>
+
+    <h2>Visão geral</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Indicador</th>
+          <th>Brasil</th>
+          <th>EUA</th>
+          <th>Europa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="region-br">
+          <td>Mercado em 2026</td>
+          <td>~US$ 280M</td>
+          <td>~US$ 8.4B</td>
+          <td>~US$ 3.1B</td>
+        </tr>
+        <tr class="region-us">
+          <td>Crescimento anual (CAGR 2024-2026)</td>
+          <td>~64%</td>
+          <td>~42%</td>
+          <td>~38%</td>
+        </tr>
+        <tr class="region-eu">
+          <td>Adoção em PMEs</td>
+          <td>Alta (custo-benefício)</td>
+          <td>Média-alta</td>
+          <td>Média</td>
+        </tr>
+        <tr class="region-br">
+          <td>Stack predominante</td>
+          <td>Python + MCP + APIs nacionais</td>
+          <td>Enterprise platforms + AWS Bedrock</td>
+          <td>Open-source + Azure + SAP</td>
+        </tr>
+        <tr class="region-us">
+          <td>Regulação principal</td>
+          <td>LGPD (em vigor desde 2020)</td>
+          <td>State-level AI bills (EUA)</td>
+          <td>EU AI Act (em vigor)</td>
+        </tr>
+        <tr class="region-eu">
+          <td>Custo médio de implementação (PME)</td>
+          <td>R$ 1k – R$ 8k/mês</td>
+          <td>US$ 2k – US$ 20k/mês</td>
+          <td>€ 1.5k – € 12k/mês</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Tamanho e ritmo de crescimento</h2>
+
+    <div class="chart">
+      <div class="bar-group">
+        <div class="bar-label"><span>EUA</span><span class="highlight">US$ 8.4B</span></div>
+        <div class="bar"><div class="fill-us" style="width:100%"></div></div>
+      </div>
+      <div class="bar-group">
+        <div class="bar-label"><span>Europa</span><span class="highlight">US$ 3.1B</span></div>
+        <div class="bar"><div class="fill-eu" style="width:37%"></div></div>
+      </div>
+      <div class="bar-group">
+        <div class="bar-label"><span>Brasil</span><span class="highlight">US$ 280M</span></div>
+        <div class="bar"><div class="fill-br" style="width:3.3%"></div></div>
+      </div>
+      <p style="font-size:.85rem;color:#8a8f98;margin-top:.6rem">*Valores aproximados de mercado de agentes autônomos empresariais, 2026.</p>
+    </div>
+
+    <p>O <strong>Brasil cresce mais rápido em percentual</strong> porque parte de uma base menor, mas o efeito absoluto ainda é modesto. O EUA domina em volume por concentração de capital e adoção enterprise. A Europa fica no meio: madura em regulamentação, conservadora em velocidade de expansão.</p>
+
+    <h2>Casos de uso por região</h2>
+
+    <h3>🇧🇷 Brasil: Pragmatismo e canais locais</h3>
+    <ul>
+      <li><strong>Prospecção via WhatsApp:</strong> o canal preferido por PMEs; agentes autônomos qualificam leads em massa.</li>
+      <li><strong>Imobiliárias digitais:</strong> qualificação, agendamento de visita e follow-up automatizado no litoral.</li>
+      <li><strong>Saúde:</strong> reagendamento de consultas e confirmação de exames.</li>
+      <li><strong>Varejo:</strong> pós-venda, garantia e rastreamento de pedidos.</li>
+    </ul>
+    <div class="callout">
+      <strong>Insight:</strong> no Brasil, agentes autônomos são mais adotados como <em>force multiplier</em> de operações pequenas — não como plataforma enterprise monolítica.
+    </div>
+
+    <h3>🇺🇸 EUA: Escala enterprise e consumer</h3>
+    <ul>
+      <li><strong>Suporte ao cliente enterprise:</strong> Zendesk, Intercom e Salesforce com agentes nativos.</li>
+      <li><strong>Dev tools:</strong> GitHub Copilot Workspace, Replit Agent, Cursor — agentes que escrevem e revisam código.</li>
+      <li><strong>Vendas B2B:</strong> Outreach, Salesloft com agentes de sequência personalizada.</li>
+      <li><strong>Consumo:</strong> agentes de viagem (Expedia), finanças pessoais (Intuit) e saúde (Olive AI).</li>
+    </ul>
+    <p>Diferente do Brasil, nos EUA os agentes são <strong>endossados por marca grande</strong> e entram via orçamento enterprise. O custo médio de implementação é 5–10x maior.</p>
+
+    <h3>🇪🇺 Europa: Regulação primeiro, inovação depois</h3>
+    <ul>
+      <li><strong>Setor público:</strong> agentes para cidadania digital (Europa tem forte presença de e-government).</li>
+      <li><strong>Indústria:</strong> manutenção preditiva e logística na Alemanha e França.</li>
+      <li><strong>Saúde:</strong> agentes de triagem no NHS (Reino Unido) e na Sanidad (Espanha).</li>
+      <li><strong>Financeiro:</strong> conformidade forte; agentes sujeitos a auditoria contínua.</li>
+    </ul>
+    <p>O <strong>EU AI Act</strong> define regras por nível de risco. Agentes autônomos de alto risco (saúde, finanças) exigem avaliação prévia, transparência e supervisão humana. Isso atrasa a adoção, mas aumenta a confiança a longo prazo.</p>
+
+    <h2>Comparativo de regulação e riscos</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Tema</th>
+          <th>Brasil (LGPD)</th>
+          <th>EUA (fragmentado)</th>
+          <th>Europa (EU AI Act)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Consentimento</td>
+          <td>Exigido e documentado</td>
+          <td>State-level; variável</td>
+          <td>Exigido; alto risco tem regras extras</td>
+        </tr>
+        <tr>
+          <td>Transparência</td>
+          <td>Deve informar uso de IA</td>
+          <td>Setorial (finanças, saúde)</td>
+          <td>Obrigatória; cartões de modelo</td>
+        </tr>
+        <tr>
+          <td>Responsabilidade</td>
+          <td>Controlador do dado</td>
+          <td>Civil + setorial</td>
+          <td>Fornecedor + usuário (depende do risco)</td>
+        </tr>
+        <tr>
+          <td>Penalidade</td>
+          <td>Até 2% do faturamento</td>
+          <td>Multas estaduais variam</td>
+          <td>Até 7% do faturamento global</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout warn">
+      <strong>Dica para operações brasileiras:</strong> a LGPD é madura o suficiente para agentes autônomos, desde que você tenha um DPO (Encarregado de Dados) e documentação de consentimento. Não use a regulação como desculpa para atraso — use como guia de design.
+    </div>
+
+    <h2>Tendências globais que importam para o Brasil</h2>
+    <ul>
+      <li><strong>Agentes com memória persistente:</strong> nos EUA, já é padrão em plataformas enterprise; no Brasil, está começando em agentes customizados em Python.</li>
+      <li><strong>Multiagentes cooperativos:</strong> equipes de agentes que dividem tarefas (venda + suporte + faturamento). Avança mais rápido na Europa por causa de integrações SAP/ERP.</li>
+      <li><strong>Agentes locais (edge):</strong> rodar LLM no dispositivo para reduzir custo e melhorar privacidade. Adoção crescente na Europa; no Brasil, ainda dependente de cloud por custo de hardware.</li>
+      <li><strong>Avaliação contínua (eval):</strong> nos EUA, empresas investem 20–30% do orçamento de IA em avaliação; no Brasil, esse percentual costuma ser abaixo de 5%.</li>
+    </ul>
+
+    <h2>Onde o Brasil pode liderar</h2>
+    <ol>
+      <li><strong>Custo-benefício para PMEs:</strong> stack open-source + APIs nacionais baratas permitem implementar agentes por menos de R$ 1k/mês — um valor inatingível para pequenos negócios europeus ou americanos.</li>
+      <li><strong>WhatsApp como interface:</strong> 99% dos brasileiros usam o app. Agentes nativos para WhatsApp são um diferencial local que não existe na mesma escala no EUA (iMessage, SMS) ou Europa (WhatsApp tem penetração menor em alguns países).</li>
+      <li><strong>Verticalização em imobiliário e serviços:</strong> o Brasil tem nichos com problemas repetitivos e alta taxa de resposta. Agentes autônomos resolvem dores reais e mensuráveis.</li>
+    </ol>
+
+    <h2>Resumo executivo</h2>
+    <ul>
+      <li><strong>EUA:</strong> mercado gigante, enterprise-first, custo alto, inovação rápida.</li>
+      <li><strong>Europa:</strong> regulamentação madura, adoção cautelosa, foco em conformidade.</li>
+      <li><strong>Brasil:</strong> crescimento acelerado, adoção pragmática por PMEs, custo baixo, canal WhatsApp como diferencial.</li>
+    </ul>
+
+    <p>Para empresas brasileiras, o recado é: <span class="highlight">o cenário global já provou que agentes autônomos funcionam</span>. A vantagem competitiva não está em "ter um agente", mas em <strong>quão rápido você consegue medir e iterar</strong>. O Brasil tem condições únicas para isso.</p>
+
+    <div class="callout">
+      <strong>Próximo passo:</strong> leia nosso tutorial técnico <a href="/blog/agentes-autonomos-tutorial-tecnico-2026">"Como Implementar um Agente Autônomo do Zero em 5 Passos"</a> para colocar a teoria em prática.
+    </div>
+
+    <footer>
+      <p>Publicado por Praia Digital · Conteúdo independente. Fontes: Gartner (2026), McKinsey Global Institute, Brazilian Association of Artificial Intelligence (SBIA), European Commission — AI Watch.</p>
+      <p style="margin-top:.4rem">Parte da série <a href="/docs/ai/">Hermes Agents — Documentação Técnica</a></p>
+    </footer>
+  </div>
+</body>
+</html>
