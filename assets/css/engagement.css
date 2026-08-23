@@ -1,0 +1,87 @@
+/* ============================================================
+   Praia Digital — Push + Share widgets
+   ============================================================ */
+
+.pd-push-prompt {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  z-index: 9997;
+}
+
+.pd-push-prompt__inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.92);
+  backdrop-filter: saturate(140%) blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e8ecf1;
+}
+
+.pd-push-prompt__title {
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.pd-push-prompt__text {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 0.7rem;
+}
+
+.pd-push-prompt__actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pd-push-prompt__button {
+  padding: 0.55rem 0.9rem;
+  border-radius: 10px;
+  border: none;
+  background: #0077B6;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pd-push-prompt__button--secondary {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.pd-push-prompt.is-closed {
+  display: none !important;
+}
+
+.pd-share {
+  margin: 1.4rem 0;
+  padding: 1rem;
+  border-radius: 14px;
+  background: #f7f7f2;
+  border: 1px solid #e5e5db;
+}
+
+.pd-share__title {
+  font-weight: 700;
+  color: #023047;
+  margin-bottom: 0.6rem;
+}
+
+.pd-share__row {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.pd-share__row a {
+  display: inline-block;
+  padding: 0.55rem 0.9rem;
+  border-radius: 10px;
+  background: #0077B6;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}

@@ -150,6 +150,10 @@ gtag('js', new Date());
 gtag('config', '', { anonymize_ip: true });
 </script>
 <link rel="stylesheet" href="/assets/css/ads-optimization.css">
+<link rel="stylesheet" href="/assets/css/calc-widget.css">
+<link rel="stylesheet" href="/assets/css/compare-table.css">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 </head>
 <a id="skip-link" class="skip-link" href="#main">Pular para o conteúdo</a>
   <body>
@@ -173,7 +177,31 @@ gtag('config', '', { anonymize_ip: true });
 </div>
 
 
-  <h2>Por Que Investir em Juquehy em 2026?</h2>
+  <div class="pd-calc">
+  <div class="pd-calc__title">Calculadora de rentabilidade estimada</div>
+  <div class="pd-calc__form">
+    <div class="pd-calc__row">
+      <input class="pd-calc__input" type="number" data-field="price" placeholder="Valor do imóvel (R$)" />
+      <input class="pd-calc__input" type="number" data-field="tax" placeholder="Custo anual (IPTU+cond.) (R$)" />
+    </div>
+    <div class="pd-calc__row">
+      <select class="pd-calc__select" data-field="mode">
+        <option value="season">Aluguel temporada</option>
+        <option value="annual">Aluguel anual</option>
+      </select>
+      <input class="pd-calc__input" type="number" data-field="nights" placeholder="Diárias no ano" />
+      <input class="pd-calc__input" type="number" data-field="daily" placeholder="Valor médio da diária (R$)" />
+    </div>
+    <div class="pd-calc__actions">
+      <button class="pd-calc__button" data-action="calculate" type="button">Calcular</button>
+      <button class="pd-calc__button pd-calc__reset" data-action="reset" type="button">Limpar</button>
+    </div>
+    <div class="pd-calc__result">
+      <div class="pd-calc__result-body"></div>
+    </div>
+  </div>
+</div>
+<h2>Por Que Investir em Juquehy em 2026?</h2>
 
   <h3>Demanda consistente por temporada</h3>
 
@@ -294,6 +322,51 @@ gtag('config', '', { anonymize_ip: true });
     </form>
   </div>
 </div>
+<div class="pd-compare">
+  <div class="pd-compare__title">Comparativo regional rápido</div>
+  <table class="pd-compare__table">
+    <thead>
+      <tr>
+        <th>Cidade/Bairro</th>
+        <th>Valor médio por m²</th>
+        <th>IPTU médio</th>
+        <th>Taxa de ocupação estimada</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Santos — Gonzaga</td>
+        <td>R$ 9.800/m²</td>
+        <td>R$ 1.200/ano</td>
+        <td>Alta</td>
+      </tr>
+      <tr>
+        <td>Guarujá — Enseada</td>
+        <td>R$ 8.400/m²</td>
+        <td>R$ 980/ano</td>
+        <td>Alta</td>
+      </tr>
+      <tr>
+        <td>Praia Grande — Guilhermina</td>
+        <td>R$ 6.700/m²</td>
+        <td>R$ 780/ano</td>
+        <td>Média/Alta</td>
+      </tr>
+      <tr>
+        <td>Bertioga — Riviera</td>
+        <td>R$ 12.400/m²</td>
+        <td>R$ 1.600/ano</td>
+        <td>Média</td>
+      </tr>
+      <tr>
+        <td>São Sebastião — Juquehy</td>
+        <td>R$ 11.100/m²</td>
+        <td>R$ 1.300/ano</td>
+        <td>Média/Alta</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <div class="related">
     <h3>Artigos relacionados</h3>
     <ul>
@@ -363,6 +436,8 @@ gtag('config', '', { anonymize_ip: true });
 <script src="https://praia.digital/js/shared.js"></script>
 <script src="/assets/js/cta-newsletter.js"></script>
 <script src="/assets/js/related-ads.js"></script>
+<script src="/assets/js/calc-widget.js"></script>
+<script src="/assets/js/engagement.js"></script>
 </body>
 
 </html>
