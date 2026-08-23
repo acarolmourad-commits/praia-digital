@@ -10,6 +10,18 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "/blog/exclusivos/relatorio-mercado-2026.html"
+  to = "/exclusivos/relatorio-mercado-2026.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/demo-15min-imobiliarias-litoral-2026.html"
+  to = "/demo-15min-imobiliarias-litoral-2026.html"
+  status = 301
+  force = true
+
 [functions]
   directory = "api"
   node_bundler = "esbuild"
