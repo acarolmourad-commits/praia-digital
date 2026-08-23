@@ -1,0 +1,51 @@
+/* ============================================================
+   Praia Digital — Ad Optimization: CLS-safe + Lazy GPT + DAI
+   ============================================================ */
+
+/* 1) CLS prevention: reserve ad slot space before render */
+.pd-ad,
+.pd-ad--in-article,
+.pd-ad--in-feed {
+  min-height: 250px;
+  min-width: 300px;
+  width: 100%;
+  max-width: 100%;
+  margin: 16px 0;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,0.04) 25%, rgba(0,0,0,0.02) 50%, rgba(0,0,0,0.04) 75%);
+  background-size: 200% 100%;
+  animation: pd-ad-shimmer 1.4s infinite linear;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* responsive variants */
+.pd-ad--leaderboard { min-height: 90px; }
+.pd-ad--half-page   { min-height: 600px; }
+.pd-ad--rectangle   { min-height: 250px; }
+.pd-ad--skyscraper  { min-width: 160px; min-height: 600px; }
+
+/* 2) Skeleton state for clean visual while GPT auctions */
+.pd-ad__placeholder {
+  color: rgba(15, 23, 42, 0.35);
+  font: 500 12px/1.4 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+/* 3) Hide empty slots gracefully */
+.pd-ad.is-empty .pd-ad__placeholder { display: none; }
+
+/* 4) Improve viewability helper */
+.pd-ad > div { width: 100%; }
+
+/* 5) Animation */
+@keyframes pd-ad-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* 6) Optional: constrain image/iframe leakage */
+.pd-ad iframe { max-width: 100%; }
