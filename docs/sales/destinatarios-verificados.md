@@ -1,8 +1,13 @@
 # Destinatários Verificados — Prospecção Praia Digital
 
-**Total lidos:** 600
+**Total lidos:** 602
 **Distintos por e-mail:** 239
-**Duplicatas detectadas:** 361
+**Duplicatas detectadas:** 363
+
+| ID | Nome | Cidade | E-mail | Score | Status | Contato |
+|----|------|--------|---------|-------|---------|----------|
+| 601 | Gumercindo | Bertioga | pendente | 78 | pendente_verificacao | Praia Digital |
+| 602 | Tami Moreira | São Sebastião | pendente | 72 | pendente_verificacao | Praia Digital |
 
 | ID | Nome | Cidade | E-mail | Score | Status | Contato |
 |----|------|--------|---------|-------|---------|----------|
