@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Como Implementar um Agente Autônomo do Zero em 5 Passos — Tutorial Técnico 2026</title>
+  <meta name="description" content="Tutorial prático e técnico: construa um agente autônomo em Python do zero em 5 passos. Inclui código, arquitetura e deploy.">
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --text: #c5c6c7;
+      --accent: #66fcf1;
+      --secondary: #45a29e;
+      --code-bg: #1f2833;
+      --border: #2a2f3a;
+      --warn: #f39c12;
+      --ok: #2ecc71;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    h1 {
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      color: #fff;
+      margin: 0 0 .5rem;
+      line-height: 1.2;
+    }
+    .meta {
+      font-size: .9rem;
+      color: #8a8f98;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      color: var(--accent);
+      padding: .15rem .6rem;
+      border-radius: 999px;
+      font-size: .75rem;
+      margin-right: .4rem;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+    h2 {
+      color: #fff;
+      font-size: 1.4rem;
+      margin-top: 2.5rem;
+      padding-bottom: .4rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h3 {
+      color: #fff;
+      font-size: 1.1rem;
+      margin-top: 1.8rem;
+    }
+    p { margin: 1rem 0; }
+    code {
+      background: var(--code-bg);
+      padding: .15rem .4rem;
+      border-radius: .35rem;
+      font-family: 'Consolas', 'SF Mono', monospace;
+      font-size: .9em;
+      color: #ff79c6;
+    }
+    pre {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: .6rem;
+      padding: 1rem 1.2rem;
+      overflow-x: auto;
+      margin: 1.2rem 0;
+    }
+    pre code {
+      background: none;
+      padding: 0;
+      color: var(--text);
+      font-size: .9em;
+    }
+    .callout {
+      background: rgba(102, 252, 241, .06);
+      border-left: 4px solid var(--accent);
+      padding: 1rem 1.2rem;
+      border-radius: 0 .5rem .5rem 0;
+      margin: 1.5rem 0;
+    }
+    .callout.warn {
+      border-left-color: var(--warn);
+      background: rgba(243, 156, 18, .06);
+    }
+    .step {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: .7rem;
+      padding: 1.2rem 1.4rem;
+      margin: 1.5rem 0;
+    }
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem; height: 2rem;
+      background: var(--secondary);
+      color: #fff;
+      font-weight: 700;
+      border-radius: 50%;
+      margin-right: .6rem;
+      flex-shrink: 0;
+    }
+    .step h3 {
+      display: flex;
+      align-items: center;
+      margin-top: 0;
+    }
+    ul { padding-left: 1.4rem; }
+    li { margin: .4rem 0; }
+    .repo-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: .6rem 1.2rem;
+      background: var(--secondary);
+      color: #fff;
+      border-radius: .5rem;
+      font-weight: 600;
+    }
+    .repo-link:hover { background: var(--accent); color: var(--bg); text-decoration: none; }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: .9rem;
+      color: #6b7280;
+    }
+    @media (max-width: 640px) {
+      body { padding: 1rem .7rem; }
+      pre { padding: .8rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div style="margin-bottom:.6rem">
+        <span class="badge">Tutorial Técnico</span>
+        <span class="badge">Python</span>
+        <span class="badge">Agentes Autônomos</span>
+      </div>
+      <h1>Como Implementar um Agente Autônomo do Zero em 5 Passos</h1>
+      <p class="meta">Praia Digital · Atualizado em agosto de 2026 · Tempo de leitura: ~18 min</p>
+    </header>
+
+    <p>Este tutorial parte do princípio que você já sabe o básico de Python e APIs REST. Vamos construir um <strong>agente autônomo de qualificação de leads</strong> que recebe mensagens, consulta um CRM, classifica o lead e dispara ações — sem depender de um humano em cada etapa.</p>
+
+    <div class="callout">
+      <strong>Objetivo final:</strong> um agente enxuto, em produção, com menos de 300 linhas de código, rodando em container.
+    </div>
+
+    <h2>Pré-requisitos</h2>
+    <ul>
+      <li>Python 3.11+</li>
+      <li>Conta em provedor de LLM com <strong>function calling</strong> (ex: OpenAI, Anthropic)</li>
+      <li>Acesso a API do WhatsApp Business (Twilio ou provedor nacional)</li>
+      <li>Docker (para deploy)</li>
+      <li>Conhecimento básico de JSON e REST</li>
+    </ul>
+
+    <!-- PASSO 1 -->
+    <div class="step">
+      <h3><span class="step-number">1</span>Defina o objetivo e o fluxo ideal</h3>
+      <p>Todo agente começa por um processo, não por código. Escreva em texto puro:</p>
+      <ul>
+        <li><strong>Objetivo:</strong> qualificar leads de imóveis no litoral</li>
+        <li><strong>Critérios:</strong> tipo de imóvel, local, orçamento, prazo</li>
+        <li><strong>Ações:</strong> classificar como quente/morno/frio, atualizar CRM, agendar visita</li>
+        <li><strong>Handoff:</strong> se orçamento &gt; R$ 2M, alertar gerente humano</li>
+      </ul>
+      <p>Esse documento é o seu <em>contrato de comportamento</em> — ele evita que o agente "invente" fluxos.</p>
+    </div>
+
+    <!-- PASSO 2 -->
+    <div class="step">
+      <h3><span class="step-number">2</span>Escolha a arquitetura mínima viável</h3>
+      <p>Não comece com um ecossistema monolítico. Use:</p>
+      <ul>
+        <li><strong>Orquestrador:</strong> Python puro + LangGraph ou CrewAI (para fluxos)</li>
+        <li><strong>LLM:</strong> GPT-4o, Claude Sonnet ou Llama 3.1 rodando local</li>
+        <li><strong>Ferramentas:</strong> MCP (Model Context Protocol) para conectar CRM e WhatsApp</li>
+        <li><strong>Memória:</strong> SQLite ou Redis para contexto de curto prazo</li>
+      </ul>
+      <pre><code># estrutura do projeto
+agent/
+├── main.py           # ponto de entrada
+├── graph.py          # fluxo do agente
+├── tools.py          # conexões MCP / APIs
+├── memory.py         # memória curta
+├── prompts.py        # prompts do sistema
+└── config.py         # variáveis de ambiente</code></pre>
+    </div>
+
+    <!-- PASSO 3 -->
+    <div class="step">
+      <h3><span class="step-number">3</span>Implemente o núcleo com function calling</h3>
+      <p>A "mágica" do agente autônomo é o <strong>function calling</strong>: o LLM decide quando chamar uma função, com quais argumentos. Veja um exemplo mínimo:</p>
+
+      <pre><code>from openai import OpenAI
+import os
+
+client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+
+TOOLS = [
+    {
+        "type": "function",
+        "function": {
+            "name": "classify_lead",
+            "description": "Classifica um lead como quente, morno ou frio",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "name": {"type": "string"},
+                    "interest": {"type": "string"},
+                    "budget": {"type": "number"},
+                    "temperature": {"type": "string"}
+                },
+                "required": ["name", "interest", "budget"]
+            }
+        }
+    }
+]
+
+def run_agent(message: str):
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[{"role": "user", "content": message}],
+        tools=TOOLS,
+        tool_choice="auto"
+    )
+    return response.choices[0].message</code></pre>
+
+      <p>Esse trecho já permite que o modelo analise a mensagem do usuário e decida se deve classificar o lead — sem você escrever regras <code>if/else</code>.</p>
+    </div>
+
+    <!-- PASSO 4 -->
+    <div class="step">
+      <h3><span class="step-number">4</span>Conecte ferramentas via MCP</h3>
+      <p>O MCP padroniza como o agente "vê" APIs. Abaixo, um exemplo de servidor MCP simplificado para WhatsApp:</p>
+
+      <pre><code># tools/mcp_server.py
+from mcp.server import Server
+from mcp.types import Tool, TextContent
+
+app = Server("praia-whatsapp")
+
+@app.call_tool()
+async def send_whatsapp(name: str, phone: str, text: str):
+    """Envia mensagem de WhatsApp via API"""
+    # Aqui entra a integração com provedor (Twilio, Zenvia, etc.)
+    payload = {
+        "to": phone,
+        "type": "text",
+        "text": {"body": text}
+    }
+    # response = requests.post(API_URL, json=payload, headers=HEADERS)
+    return [TextContent(type="text", text=f"Enviado para {name}")]
+
+if __name__ == "__main__":
+    app.run()</code></pre>
+
+      <div class="callout warn">
+        <strong>Atenção LGPD:</strong> obtenha consentimento explícito antes de enviar mensagens automáticas. Armazene apenas dados necessários e ofereça opt-out em toda mensagem.
+      </div>
+    </div>
+
+    <!-- PASSO 5 -->
+    <div class="step">
+      <h3><span class="step-number">5</span>Deploy, monitoramento e aprendizado</h3>
+      <p>Empacote o agente em container e exponha via API mínima:</p>
+
+      <pre><code># Dockerfile
+FROM python:3.11-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . .
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]</code></pre>
+
+      <p>Monitore três métricas essenciais:</p>
+      <ul>
+        <li><strong>Taxa de sucesso:</strong> % de ações executadas sem erro</li>
+        <li><strong>Tempo de resolução:</strong> do primeiro contato até classificação final</li>
+        <li><strong>Handoff humano:</strong> % de leads que precisaram de intervenção humana</li>
+      </ul>
+      <p>Use logs estruturados (JSON) e um painel simples (Grafana ou até um dashboard Streamlit) para visualizar o fluxo em tempo real.</p>
+    </div>
+
+    <h2>Código completo de referência</h2>
+    <p>Para acompanhar o repositório com o código final do agente:</p>
+    <a class="repo-link" href="https://github.com/praiadigital/hermes-agents-example" target="_blank" rel="noopener">
+      github.com/praiadigital/hermes-agents-example
+    </a>
+
+    <h2>Próximos passos</h2>
+    <ul>
+      <li>Adicione memória vetorial (ChromaDB, Qdrant) para lembrar preferências de usuários</li>
+      <li>Implemente avaliação automática de respostas (RAG + eval)</li>
+      <li>Conecte múltiplos canais (e-mail, WhatsApp, chat) num mesmo agente</li>
+      <li>Leia nosso <a href="https://praia.digital/blog/agentes-autonomos-comparacao-internacional-2026">artigo de comparação internacional</a> para entender tendências globais</li>
+    </ul>
+
+    <footer>
+      <p>Publicado por Praia Digital · Conteúdo técnico independente. Dúvidas: <a href="mailto:contato@praia.digital">contato@praia.digital</a></p>
+      <p style="margin-top:.4rem">Parte da série <a href="/docs/ai/">Hermes Agents — Documentação Técnica</a></p>
+    </footer>
+  </div>
+</body>
+</html>
