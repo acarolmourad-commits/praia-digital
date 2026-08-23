@@ -6,7 +6,9 @@ window.PD_ENGAGEMENT = window.PD_ENGAGEMENT || {};
 PD_ENGAGEMENT.initPush = function ({ serviceWorkerPath = '/sw.js', promptDelayMs = 3000 } = {}) {
   if (!('serviceWorker' in navigator)) return;
 
-  navigator.serviceWorker.register(serviceWorkerPath).catch(() => {});
+  if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register(serviceWorkerPath, { scope: '/' }).catch(() => {});
+}
 
   setTimeout(() => {
     if (!('Notification' in window)) return;
@@ -38,6 +40,21 @@ PD_ENGAGEMENT.initPush = function ({ serviceWorkerPath = '/sw.js', promptDelayMs
   }, promptDelayMs);
 };
 
+PD_ENGAGEMENT.initGPTTelemetry = function () {
+  if (!window.googletag) return;
+  googletag.pubads().addEventListener('slotRenderEnded', (event) => {
+    if (!window.gtag) return;
+    try {
+      gtag('event', 'ad_render', {
+        adUnitPath: event.slot.getAdUnitPath(),
+        adWidth: event.size?.[0] || null,
+        adHeight: event.size?.[1] || null,
+        isEmpty: event.isEmpty,
+        sourceAgnosticCreativeId: event.sourceAgnosticCreativeId || null
+      });
+    } catch (e) { /* no-op */ }
+  });
+};
 PD_ENGAGEMENT.initShare = function () {
   const urls = [
     'https://wa.me/?text=' + encodeURIComponent(location.href),
