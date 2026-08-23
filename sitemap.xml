@@ -72494,9 +72494,15 @@
   </url>
   <url>
     <loc>https://praia.digital/sitemap.html</loc>
-    <lastmod>2026-08-22T19:34:13Z</lastmod>
+    <lastmod>2026-08-23T00:00:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/blog/guia-custo-metro-quadrado-santos-boqueirao-aparecida-2026.html</loc>
+    <lastmod>2026-08-23T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://praia.digital/sobre.html</loc>
