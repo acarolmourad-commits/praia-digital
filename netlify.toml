@@ -4,6 +4,12 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "/blog/cadastrar-imovel.html"
+  to = "/cadastrar-imovel.html"
+  status = 301
+  force = true
+
 [functions]
   directory = "api"
   node_bundler = "esbuild"
