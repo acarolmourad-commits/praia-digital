@@ -79,6 +79,8 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', '', { anonymize_ip: true });
 </script>
+<link rel="stylesheet" href="/assets/css/calc-widget.css">
+<link rel="stylesheet" href="/assets/css/compare-table.css">
 </head>
 <body>
   <div class="wrap">
@@ -104,7 +106,79 @@ gtag('config', '', { anonymize_ip: true });
         </div>
       </div>
     <section class="card">
-  <h2>Ver também</h2>
+  <div class="pd-calc">
+  <div class="pd-calc__title">Calculadora de rentabilidade estimada</div>
+  <div class="pd-calc__form">
+    <div class="pd-calc__row">
+      <input class="pd-calc__input" type="number" data-field="price" placeholder="Valor do imóvel (R$)" />
+      <input class="pd-calc__input" type="number" data-field="tax" placeholder="Custo anual (R$)" />
+    </div>
+    <div class="pd-calc__row">
+      <select class="pd-calc__select" data-field="mode">
+        <option value="season">Aluguel temporada</option>
+        <option value="annual">Aluguel anual</option>
+      </select>
+      <input class="pd-calc__input" type="number" data-field="nights" placeholder="Diárias no ano" />
+      <input class="pd-calc__input" type="number" data-field="daily" placeholder="Valor médio da diária (R$)" />
+    </div>
+    <div class="pd-calc__actions">
+      <button class="pd-calc__button" data-action="calculate" type="button">Calcular</button>
+      <button class="pd-calc__button pd-calc__reset" data-action="reset" type="button">Limpar</button>
+    </div>
+    <div class="pd-calc__result">
+      <div class="pd-calc__result-body"></div>
+    </div>
+  </div>
+</div>
+<div class="pd-compare">
+  <div class="pd-compare__title">Comparativo regional rápido</div>
+  <table class="pd-compare__table">
+    <thead>
+      <tr>
+        <th>Cidade/Bairro</th>
+        <th>Valor médio por m²</th>
+        <th>IPTU médio</th>
+        <th>Taxa de ocupação estimada</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Santos — Gonzaga</td>
+        <td>R$ 9.800/m²</td>
+        <td>R$ 1.200/ano</td>
+        <td>Alta</td>
+      </tr>
+      <tr>
+        <td>Guarujá — Enseada</td>
+        <td>R$ 8.400/m²</td>
+        <td>R$ 980/ano</td>
+        <td>Alta</td>
+      </tr>
+      <tr>
+        <td>Praia Grande — Guilhermina</td>
+        <td>R$ 6.700/m²</td>
+        <td>R$ 780/ano</td>
+        <td>Média/Alta</td>
+      </tr>
+      <tr>
+        <td>Bertioga — Riviera</td>
+        <td>R$ 12.400/m²</td>
+        <td>R$ 1.600/ano</td>
+        <td>Média</td>
+      </tr>
+      <tr>
+        <td>São Sebastião — Juquehy</td>
+        <td>R$ 11.100/m²</td>
+        <td>R$ 1.300/ano</td>
+        <td>Média/Alta</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h2>Por que a Aparecida ganha destaque no mercado</h2>
+<p>A Aparecida oferece equilíbrio entre preço por metro quadrado e acesso a serviços essenciais. Em 2026, continua relevante para famílias e investidores que buscam imóveis funcionais, com potencial de rentabilidade por aluguel anual ou temporada curta.</p>
+<p>Destaques: padronização de imóveis novos, facilidade de locação e valorização moderada e previsível. Para compra, o fator decisivo costuma ser a localização dentro do bairro e a conservação do prédio.</p>
+<h2>Ver também</h2>
   <ul>
     <li><a href="/bairros/santos/gonzaga.html">Gonzaga — Santos</a></li>
     <li><a href="/bairros/santos/embare.html">Embaré — Santos</a></li>
@@ -118,5 +192,7 @@ gtag('config', '', { anonymize_ip: true });
     <meta name="pd-shared-footer">
   </div>
 <script src="https://praia.digital/js/shared.js"></script>
+<script src="/assets/js/calc-widget.js"></script>
+<script>PD_CALC.init();</script>
 </body>
 </html>
