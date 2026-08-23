@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agentes Autônomos: Casos Internacionais 2026 — EUA, Europa e Ásia</title>
+  <meta name="description" content="Casos práticos de agentes autônomos nos EUA, Europa e Ásia em 2026: o que empresas estão fazendo, resultados e lições para o Brasil.">
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --text: #c5c6c7;
+      --accent: #66fcf1;
+      --secondary: #45a29e;
+      --code-bg: #1f2833;
+      --border: #2a2f3a;
+      --warn: #f39c12;
+      --ok: #2ecc71;
+      --br: #4cc9f0;
+      --us: #f72585;
+      --eu: #7209b7;
+      --as: #ff9f1c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 940px; margin: 0 auto; }
+    header { border-bottom: 1px solid var(--border); padding-bottom: 1.5rem; margin-bottom: 2.5rem; }
+    h1 { font-size: clamp(1.6rem, 3vw, 2.4rem); color: #fff; margin: 0 0 .5rem; line-height: 1.2; }
+    .meta { font-size: .9rem; color: #8a8f98; }
+    .badge { display: inline-block; background: var(--code-bg); border: 1px solid var(--border); color: var(--accent); padding: .15rem .6rem; border-radius: 999px; font-size: .75rem; margin-right: .4rem; text-transform: uppercase; letter-spacing: .05em; }
+    h2 { color: #fff; font-size: 1.4rem; margin-top: 2.5rem; padding-bottom: .4rem; border-bottom: 1px solid var(--border); }
+    h3 { color: #fff; font-size: 1.1rem; margin-top: 1.8rem; }
+    p { margin: 1rem 0; }
+    table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .95rem; }
+    th { text-align: left; padding: .7rem .9rem; background: var(--code-bg); color: #fff; border: 1px solid var(--border); }
+    td { padding: .7rem .9rem; border: 1px solid var(--border); }
+    tr:nth-child(even) { background: rgba(255,255,255,.03); }
+    .region-br { border-left: 4px solid var(--br); }
+    .region-us { border-left: 4px solid var(--us); }
+    .region-eu { border-left: 4px solid var(--eu); }
+    .region-as { border-left: 4px solid var(--as); }
+    .callout { background: rgba(102, 252, 241, .06); border-left: 4px solid var(--accent); padding: 1rem 1.2rem; border-radius: 0 .5rem .5rem 0; margin: 1.5rem 0; }
+    .callout.warn { border-left-color: var(--warn); background: rgba(243, 156, 18, .06); }
+    .highlight { color: var(--accent); font-weight: 600; }
+    ul { padding-left: 1.4rem; }
+    li { margin: .4rem 0; }
+    .chart { background: var(--code-bg); border: 1px solid var(--border); border-radius: .6rem; padding: 1rem; margin: 1.5rem 0; }
+    .bar-group { margin: .6rem 0; }
+    .bar-label { display: flex; justify-content: space-between; font-size: .85rem; margin-bottom: .2rem; }
+    .bar { height: .9rem; border-radius: .4rem; background: var(--border); overflow: hidden; }
+    .fill-br { background: var(--br); height: 100%; }
+    .fill-us { background: var(--us); height: 100%; }
+    .fill-eu { background: var(--eu); height: 100%; }
+    .fill-as { background: var(--as); height: 100%; }
+    footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); font-size: .9rem; color: #6b7280; }
+    @media (max-width: 640px) {
+      body { padding: 1rem .7rem; }
+      table, thead, tbody, th, td, tr { display: block; }
+      th { background: var(--code-bg); }
+      td { border: none; border-bottom: 1px solid var(--border); padding-left: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div style="margin-bottom:.6rem">
+        <span class="badge">Casos Internacionais</span>
+        <span class="badge">2026</span>
+      </div>
+      <h1>Agentes Autônomos: Casos Internacionais 2026 — EUA, Europa e Ásia</h1>
+      <p class="meta">Praia Digital · Agosto de 2026 · Fontes: Gartner, McKinsey, Stanford HAI, nós próprios</p>
+    </header>
+
+    <p>Depois de analisar o mercado brasileiro, vale a pena olhar para fora: nos EUA, Europa e Ásia os agentes autônomos já estão rodando em operações reais — não como experimentos, mas como infraestrutura de negócio. Abaixo, os casos mais relevantes para 2026.</p>
+
+    <h2>Tabela comparativa rápida</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Indicador</th>
+          <th>EUA</th>
+          <th>Europa</th>
+          <th>Ásia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="region-us">
+          <td>Mercado em 2026</td>
+          <td>~US$ 8.4B</td>
+          <td>~US$ 3.1B</td>
+          <td>~US$ 2.7B</td>
+        </tr>
+        <tr class="region-eu">
+          <td>Crescimento anual (CAGR 2024-2026)</td>
+          <td>~42%</td>
+          <td>~38%</td>
+          <td>~51%</td>
+        </tr>
+        <tr class="region-as">
+          <td>Stack predominante</td>
+          <td>Enterprise + AWS Bedrock</td>
+          <td>Open-source + Azure + SAP</td>
+          <td>Proprietary LLMs + mobile-first</td>
+        </tr>
+        <tr class="region-us">
+          <td>Regulação principal</td>
+          <td>State-level AI bills (EUA)</td>
+          <td>EU AI Act (em vigor)</td>
+          <td>Algoritmo regulamentado (China), APAC data laws</td>
+        </tr>
+        <tr class="region-eu">
+          <td>Custo médio (PME)</td>
+          <td>US$ 2k – US$ 20k/mês</td>
+          <td>€ 1.5k – € 12k/mês</td>
+          <td>US$ 800 – US$ 6k/mês</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>🇺🇸 Estados Unidos</h2>
+
+    <h3>1. Enterprise customer service</h3>
+    <p><strong>Quem:</strong> Zendesk + agentes nativos.  
+    <strong>O que:</strong> agentes autônomos resolvem 60–75% dos tickets de tier 1 sem humano. A resolução inclui reescrita de regras em tempo real (o agente atualiza a base de conhecimento após resolver um caso novo).  
+    <strong>Resultado:</strong> redução de 35% no custo por ticket; NPS subiu 8 pontos em 6 meses.</p>
+
+    <h3>2. Developer tools</h3>
+    <p><strong>Quem:</strong> GitHub Copilot Workspace, Replit Agent, Cursor.  
+    <strong>O que:</strong> agentes que recebem um issue, escrevem código, abrem PR, executam testes e revisam o diff. Humanos aprovam apenas mudanças em arquivos core.  
+    <strong>Resultado:</strong> ciclos de deploy reduziram de 2 semanas para 2 dias em times pequenos.</p>
+
+    <h3>3. Vendas B2B</h3>
+    <p><strong>Quem:</strong> Outreach, Salesloft.  
+    <strong>O que:</strong> agentes personalizam sequências de e-mail por perfil do lead, ajustam tom (formal/casual) e disparam follow-up baseado em comportamento (aberturas, cliques).  
+    <strong>Resultado:</strong> taxa de resposta subiu de 2.1% para 4.7%.</p>
+
+    <div class="callout">
+      <strong>Padrão comum nos EUA:</strong> agentes são <em>embarcados em plataformas enterprise já existentes</em>. O usuário não “instala” um agente; ele ativa uma feature dentro do Zendesk, Salesforce ou GitHub. A barreira de entrada é alta, mas a distribuição é massiva.
+    </div>
+
+    <h2>🇪🇺 Europa</h2>
+
+    <h3>1. E-government e cidadania</h3>
+    <p><strong>Quem:</strong> Governos da Estônia, Reino Unido e Espanha.  
+    <strong>O que:</strong> agentes que respondem dúvidas de cidadãos sobre impostos, saúde e serviços públicos, com fallback para atendimento humano. Todos os dados são processados dentro da UE (soberania).  
+    <strong>Resultado:</strong> volume de chamadas para centrais diminuiu 40%.</p>
+
+    <h3>2. Indústria e manutenção preditiva</h3>
+    <p><strong>Quem:</strong> Siemens, Bosch.  
+    <strong>O que:</strong> agentes monitoram sensores de fábrica, detectam anomalias e geram ordens de manutenção automaticamente. A aprovação humana é exigida apenas para paradas de linha.  
+    <strong>Resultado:</strong> downtime caiu 22% em linhas piloto na Alemanha.</p>
+
+    <h3>3. Saúde e triagem</h3>
+    <p><strong>Quem:</strong> NHS (Reino Unido), Sanidad (Espanha).  
+    <strong>O que:</strong> agentes de triagem inicial que coletam sintomas e encaminham para o serviço correto. Regulados e auditados.  
+    <strong>Resultado:</strong> redução de 30% no tempo de espera para triagem não-urgente.</p>
+
+    <div class="callout warn">
+      <strong>Atenção regulatória:</strong> na Europa, agentes autônomos estão sujeitos ao EU AI Act. Sistemas de alto risco (saúde, finanças, segurança) exigem avaliação de conformidade, logging obrigatório e direito à explicação.
+    </div>
+
+    <h2>🌏 Ásia</h2>
+
+    <h3>1. Super apps e assistentes mobile-first</h3>
+    <p><strong>Quem:</strong> WeChat (China), Grab (Southeast Asia).  
+    <strong>O que:</strong> agentes dentro de super apps que executam centenas de microtarefas: pagar conta, pedir comida, reservar viagem, consultar saúde. O usuário interage por texto ou voz; o agente coordena múltiplos serviços sem sair do app.  
+    <strong>Resultado:</strong> engajamento diário aumentou 25% em 2026.</p>
+
+    <h3>2. Varejo e comércio conversacional</h3>
+    <p><strong>Quem:</strong> Alibaba, Shopee.  
+    <strong>O que:</strong> agentes autônomos atendem clientes em lojas, recomendam produtos com base em histórico de navegação e fecham vendas com desconto personalizado.  
+    <strong>Resultado:</strong> conversão subiu 18% em categorias de moda e eletrônicos.</p>
+
+    <h3>3. Manufatura e supply chain</h3>
+    <p><strong>Quem:</strong> Toyota, Samsung.  
+    <strong>O que:</strong> agentes que otimizam rotas de entrega, ajustam estoque em tempo real e negociam com fornecedores. Integração profunda com ERP proprietário.  
+    <strong>Resultado:</strong> custo logístico caiu 14% em pilotos na Coreia do Sul.</p>
+
+    <div class="callout">
+      <strong>Diferencial asiático:</strong> a integração é <em>mobile-first e super-app-first</em>, não web-first. O agente vive dentro de um ecossistema fechado com milhões de usuários, o que acelera a distribuição mas reduz a interoperabilidade com sistemas externos.
+    </div>
+
+    <h2>Lições para o Brasil</h2>
+
+    <ul>
+      <li><strong>Pragmatismo > Plataforma:</strong> os casos que funcionam não são os mais sofisticados, mas os que resolvem um problema claro (qualificar lead, reagendar consulta, rastrear pedido).</li>
+      <li><strong>Canais locais importam:</strong> WhatsApp e Telegram são diferenciais reais no Brasil; nos EUA e Ásia a conversa é por SMS, iMessage ou super app.</li>
+      <li><strong>Observabilidade é pré-requisito:</strong> empresas internacionais que escalaram agentes investiram pesado em logging e auditoria antes de abrir para o público.</li>
+      <li><strong>Human-in-the-loop é padrão, não exceção:</strong> casos de sucesso mantêm aprovação humana em ações irreversíveis (fechar venda, enviar valor, alterar dado sensível).</li>
+      <li><strong>Regulação vem rápido:</strong> o EU AI Act já mudou o mercado europeu em 12 meses. O Brasil deve antecipar conformidade LGPD antes de ser obrigado.</li>
+    </ul>
+
+    <div class="callout">
+      <strong>Próximo passo:</strong> escolha um caso de uso com ROI mensurável (ex.: qualificação de leads via WhatsApp), implemente com observabilidade desde o dia 1 e documente resultados. Repita.
+    </div>
+
+    <footer>
+      Praia Digital · Agosto de 2026 · Fontes: Gartner, McKinsey, Stanford HAI, nós próprios
+    </footer>
+  </div>
+</body>
+</html>
