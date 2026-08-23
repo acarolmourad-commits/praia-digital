@@ -5,6 +5,7 @@ from pathlib import Path
 from academy.core.database import engine, Base
 from academy.core.middleware import RequestLoggingMiddleware, ErrorHandlerMiddleware, SecurityHeadersMiddleware, RateLimitMiddleware
 from academy.routers import auth, courses, academy, admin, payments, recommendations, automation, automation_whatsapp, certificates, monitoring, automation_email, leads, admin_leads, content, admin_content, student
+from academy.financeiro.router import router as financeiro_router
 import os
 
 Base.metadata.create_all(bind=engine)
@@ -35,6 +36,7 @@ app.add_middleware(
 app.include_router(auth.router)
 app.include_router(courses.router)
 app.include_router(academy.router)
+app.include_router(financeiro_router)
 app.include_router(payments.router)
 app.include_router(admin.router)
 app.include_router(recommendations.router)
