@@ -40486,5 +40486,26 @@
         "keyword": "aluguel temporada Guarujá IPTU 2026"
       }
     ]
+  },
+  "batch155": {
+    "published_at": "2026-08-22",
+    "author": "Litoral Prime Imóveis",
+    "articles": [
+      {
+        "slug": "praia-grande-investimento-bairros-promissores-2026.html",
+        "title": "Investimento em bairros promissores de Praia Grande",
+        "keyword": "investimento bairros promissores Praia Grande"
+      },
+      {
+        "slug": "bertioga-riviera-investimento-alto-padrao-2026.html",
+        "title": "Riviera de São Lourenço: investimento alto padrão em Bertioga",
+        "keyword": "Riviera São Lourenço Bertioga alto padrão"
+      },
+      {
+        "slug": "sao-sebastiao-juquehy-guia-investimento-temporada-2026.html",
+        "title": "Juquehy: guia de investimento e temporada em São Sebastião",
+        "keyword": "Juquehy São Sebastião investimento temporada"
+      }
+    ]
   }
 }
