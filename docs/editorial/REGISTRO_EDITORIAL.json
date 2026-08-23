@@ -40465,5 +40465,26 @@
         "publisher": "Praia Digital"
       }
     ]
+  },
+  "batch154": {
+    "published_at": "2026-08-22",
+    "author": "Litoral Prime Imóveis",
+    "articles": [
+      {
+        "slug": "educacao-formacoes-corretor-imoveis-litoral-2026.html",
+        "title": "Formações para corretores de imóveis no litoral",
+        "keyword": "formação corretores imóveis litoral"
+      },
+      {
+        "slug": "santos-gonzaga-guia-comprar-imoveis-2026.html",
+        "title": "Guia de compra de imóveis no Gonzaga, Santos",
+        "keyword": "comprar imóveis Gonzaga Santos"
+      },
+      {
+        "slug": "guaruja-aluguel-temporada-tributos-iptu-2026.html",
+        "title": "Aluguel de temporada no Guarujá: tributos e IPTU 2026",
+        "keyword": "aluguel temporada Guarujá IPTU 2026"
+      }
+    ]
   }
 }
