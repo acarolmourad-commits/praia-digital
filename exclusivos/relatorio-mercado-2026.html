@@ -208,6 +208,8 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 </script>
+<link rel="stylesheet" href="/assets/css/calc-widget.css">
+<link rel="stylesheet" href="/assets/css/compare-table.css">
 </head>
 <body>
 <a class="skip-link" href="#main" style="position:absolute;left:-9999px;">Pular para o conteúdo</a>
@@ -215,7 +217,31 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 <div class="container">
   <div class="report-grid">
     <div class="report-card">
-      <h2>🏖️ Tendência de Valorização</h2>
+      <div class="pd-calc">
+  <div class="pd-calc__title">Calculadora de rentabilidade estimada</div>
+  <div class="pd-calc__form">
+    <div class="pd-calc__row">
+      <input class="pd-calc__input" type="number" data-field="price" placeholder="Valor do imóvel (R$)" />
+      <input class="pd-calc__input" type="number" data-field="tax" placeholder="Custo anual (IPTU+cond.) (R$)" />
+    </div>
+    <div class="pd-calc__row">
+      <select class="pd-calc__select" data-field="mode">
+        <option value="season">Aluguel temporada</option>
+        <option value="annual">Aluguel anual</option>
+      </select>
+      <input class="pd-calc__input" type="number" data-field="nights" placeholder="Diárias no ano" />
+      <input class="pd-calc__input" type="number" data-field="daily" placeholder="Valor médio da diária (R$)" />
+    </div>
+    <div class="pd-calc__actions">
+      <button class="pd-calc__button" data-action="calculate" type="button">Calcular</button>
+      <button class="pd-calc__button pd-calc__reset" data-action="reset" type="button">Limpar</button>
+    </div>
+    <div class="pd-calc__result">
+      <div class="pd-calc__result-body"></div>
+    </div>
+  </div>
+</div>
+<h2>🏖️ Tendência de Valorização</h2>
       <p>Peruíbe lidera com <span class="highlight">+8.9%</span> em 12 meses.</p>
       <p>Itanhaém e Praia Grande seguem com crescimento acima de 7%.</p>
       <p>Santos e Guarujá mantêm estabilidade com valorização moderada.</p>
@@ -246,5 +272,6 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 </div>
 <meta name="pd-shared-footer">
 <script src="https://praia.digital/js/shared.js"></script>
+<script src="/assets/js/calc-widget.js"></script>
 </body>
 </html>
