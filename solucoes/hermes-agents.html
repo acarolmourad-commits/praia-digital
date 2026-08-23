@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermes Agents — Agentes Autônomos para Negócios | Praia Digital</title>
+  <meta name="keywords" content="hermes agent, agentes autônomos, IA para empresas, automação inteligente, agentes de IA, operação autônoma, produtividade com IA">
+  <meta name="description" content="Implementação de Hermes Agents: agentes autônomos para atendimento, vendas, suporte e operação. Integração com Telegram, WhatsApp, Discord e mais.">
+  <link rel="canonical" href="https://praia.digital/solucoes/hermes-agents.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hermes Agents — Agentes Autônomos para Negócios | Praia Digital">
+  <meta property="og:description" content="Implementação de Hermes Agents: agentes autônomos para atendimento, vendas, suporte e operação.">
+  <meta property="og:url" content="https://praia.digital/solucoes/hermes-agents.html">
+  <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hermes Agents — Agentes Autônomos para Negócios">
+  <meta name="twitter:description" content="Implementação de Hermes Agents: agentes autônomos para atendimento, vendas, suporte e operação.">
+  <meta name="twitter:image" content="https://praia.digital/img/default-home.jpg">
+  <link rel="alternate" hreflang="x-default" href="https://praia.digital/solucoes/hermes-agents.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://praia.digital/solucoes/hermes-agents.html">
+  <link rel="preconnect" href="https://praia.digital">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://praia.digital/index.html" },
+      { "@type": "ListItem", "position": 2, "name": "Soluções", "item": "https://praia.digital/solucoes/" },
+      { "@type": "ListItem", "position": 3, "name": "Hermes Agents", "item": "https://praia.digital/solucoes/hermes-agents.html" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "O que é um Hermes Agent?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "É um agente autônomo de IA que executa tarefas, integra ferramentas e aprende com o uso. Diferente de chatbots comuns, ele tem memória persistente, skills reutilizáveis e pode operar em segundo plano."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Para que serve um agente autônomo na minha operação?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Atendimento, suporte, vendas, qualificação de leads, automação de follow-up, pesquisa, geração de conteúdo e integração com sistemas existentes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quais plataformas são suportadas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Telegram, Discord, Slack, WhatsApp, Teams, Email, SMS, CLI local e muito mais. O mesmo agente pode atender em vários canais ao mesmo tempo."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --ocean:#0077B6; --ocean-light:#00B4D8; --sand:#F4EBD0; --white:#FFFFFF; --dark:#023047; --purple:#6B21A8; --amber:#F59E0B; --teal:#0d9488; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--sand); color: var(--dark); line-height: 1.6; }
+    a { color: inherit; text-decoration: underline; }
+    header { background: linear-gradient(135deg, var(--ocean) 0%, var(--ocean-light) 100%); color: var(--white); padding: 1.2rem 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 16px rgba(0,0,0,0.15); }
+    .logo { font-size: 1.3rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: var(--white); }
+    nav a { color: var(--white); text-decoration: none; margin-left: 1.2rem; font-weight: 500; opacity: 0.9; }
+    nav a:hover { opacity: 1; }
+    .hero { background: linear-gradient(135deg, #fff 0%, #f3e8ff 100%); padding: 3rem 2rem 2.2rem; text-align: center; border-bottom: 1px solid #e5e7eb; }
+    .hero-inner { max-width: 1100px; margin: 0 auto; }
+    .hero h1 { font-size: clamp(1.7rem, 4.2vw, 2.7rem); font-weight: 800; color: var(--dark); margin-bottom: 0.7rem; }
+    .hero p { color: #555; max-width: 780px; margin: 0 auto 1.4rem; font-size: 1.05rem; }
+    .hero-cta { display: inline-flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    .btn { padding: 0.75rem 1.7rem; border-radius: 50px; font-size: 1rem; font-weight: 600; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; border: none; display: inline-block; }
+    .btn-primary { background: var(--white); color: var(--ocean); }
+    .btn-purple { background: var(--purple); color: var(--white); }
+    .container { max-width: 1100px; margin: 0 auto; padding: 2rem 1rem; }
+    .section { margin-bottom: 2rem; }
+    .section h2 { font-size: 1.35rem; color: var(--dark); margin-bottom: 0.6rem; }
+    .section p { margin-bottom: 0.8rem; }
+    .grid { display: grid; gap: 1rem; margin-top: 1rem; }
+    .grid-3 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .card { background: rgba(255,255,255,0.6); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; padding: 18px 20px; }
+    .card h3 { margin-bottom: 0.4rem; color: var(--dark); }
+    .card p { color: #334155; font-size: 0.95rem; }
+    .faq { background: rgba(255,255,255,0.7); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; padding: 1rem; margin-top: 1rem; }
+    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 0.8rem 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-question { font-weight: 700; color: var(--dark); }
+    .faq-answer { margin-top: 0.3rem; color: #334155; }
+    footer { text-align: center; padding: 2rem 1rem; color: #64748b; font-size: 0.85rem; background: #fff; border-top: 1px solid #e5e7eb; margin-top: 2rem; }
+    .updated { font-size: 0.8rem; color: #64748b; margin-top: 0.3rem; }
+    .note { background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 12px; padding: 1rem; margin-top: 1rem; color: #0c4a6e; }
+    .warning { background: #fff7ed; border: 1px solid #fed7aa; border-radius: 12px; padding: 1rem; margin-top: 1rem; color: #7c2d12; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main" style="position:absolute;left:-9999px;">Pular para o conteúdo</a>
+  <header>
+    <div class="logo">🤖 Praia Digital — Hermes Agents</div>
+    <nav aria-label="Navegação principal">
+      <a href="https://praia.digital/index.html">Início</a>
+      <a href="https://praia.digital/solucoes/">Soluções</a>
+      <a href="https://praia.digital/servicos.html">Serviços</a>
+      <a href="https://praia.digital/blog/">Blog</a>
+      <a href="https://wa.me/5511954346288?text=Olá!%20Quero%20implementar%20Hermes%20Agents%20na%20minha%20empresa." class="btn btn-primary" rel="noopener">WhatsApp</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Hermes Agents</h1>
+      <p>Agentes autônomos de IA para atendimento, vendas, suporte e operação. Integração nativa com Telegram, WhatsApp, Discord, Slack, Teams e mais.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#o-que-e">Como funciona</a>
+        <a class="btn btn-purple" href="https://wa.me/5511954346288?text=Olá!%20Quero%20implementar%20Hermes%20Agents%20na%20minha%20empresa." rel="noopener">Solicitar implementação</a>
+      </div>
+      <p class="updated">Atualizado em 2026-08-23</p>
+    </div>
+  </section>
+
+  <main id="main">
+    <div class="container">
+      <section class="section" id="o-que-e">
+        <h2>O que é</h2>
+        <p>Hermes Agent é uma plataforma de agentes autônomos de IA criada pela Nous Research. Diferente de chatbots lineares, um Hermes Agent executa tarefas complexas, integra ferramentas, mantém memória persistente entre sessões e pode operar em segundo plano com supervisão humana quando necessário.</p>
+        <p>Na prática, ele funciona como um colaborador digital: aprende com a operação, reutiliza skills, agenda tarefas, delega trabalhos paralelos e se comunica por múltiplos canais — tudo configurado para a realidade do seu negócio.</p>
+      </section>
+
+      <section class="section" id="para-quem">
+        <h2>Para quem é</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>Imobiliárias</h3>
+            <p>Atendimento 24h, qualificação de leads, captação, agendamentos e suporte a corretores com automação inteligente.</p>
+          </div>
+          <div class="card">
+            <h3>Equipes comerciais</h3>
+            <p>Follow-up automático, prospecção, pesquisa de mercado e preparação de materiais de vendas.</p>
+          </div>
+          <div class="card">
+            <h3>Operações enxutas</h3>
+            <p>Automação de tarefas repetitivas, integração com ferramentas existentes e redução de carga operacional.</p>
+          </div>
+          <div class="card">
+            <h3>Startups e PMEs</h3>
+            <p>Produtividade sem precisar contratar headcount imediato. Um agente cobre múltiplas funções com supervisão humana.</p>
+          </div>
+          <div class="card">
+            <h3>Gestores</h3>
+            <p>Visão consolidada de operação, métricas, alertas e suporte à decisão baseado em dados.</p>
+          </div>
+          <div class="card">
+            <h3>Proprietários de imóveis</h3>
+            <p>Gestão de temporada, comunicação com hóspedes, check-in, suporte a administradoras e rotinas de manutenção.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="capacidades">
+        <h2>Capacidades principais</h2>
+        <p><strong>Autonomia real:</strong> executa fluxos sem intervenção constante, com limites definidos por você.</p>
+        <p><strong>Memória persistente:</strong> lembra de contextos, preferências e decisões anteriores entre sessões.</p>
+        <p><strong>Skills reutilizáveis:</strong> procedimentos empacotados que podem ser compartilhados, versionados e reutilizados.</p>
+        <p><strong>Multi-canal:</strong> Telegram, Discord, Slack, WhatsApp, Teams, Email, SMS, CLI e mais.</p>
+        <p><strong>Delegação paralela:</strong> spawn de subagentes para trabalho paralelo sem bloquear a operação principal.</p>
+        <p><strong>Segurança:</strong> aprovações de comando, autorização por ferramenta, isolamento de sessão e transparência de ações.</p>
+        <p><strong>Extensibilidade:</strong> conexão com MCP servers, APIs internas, bancos de dados, planilhas e qualquer ferramenta que sua operação já use.</p>
+      </section>
+
+      <section class="section" id="casos-de-uso">
+        <h2>Casos de uso</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>Atendimento imobiliário</h3>
+            <p>Responde dúvidas sobre imóveis, bairros, documentação e agendamentos. Encaminha casos complexos para humanos.</p>
+          </div>
+          <div class="card">
+            <h3>Qualificação de leads</h3>
+            <p>Classifica interessados por perfil, orçamento, urgência e canal. Prioriza follow-up e atualiza CRM.</p>
+          </div>
+          <div class="card">
+            <h3>Gestão de temporada</h3>
+            <p>Check-in, comunicação com hóspedes, regras de uso, disponibilidade e suporte pós-reserva.</p>
+          </div>
+          <div class="card">
+            <h3>Conteúdo e SEO</h3>
+            <p>Gera, revisa e publica conteúdo estruturado. Atualiza páginas, sitemaps e metadados com supervisão humana.</p>
+          </div>
+          <div class="card">
+            <h3>Monitoramento</h3>
+            <p>Acompanha métricas, alerta sobre mudanças e executa verificações automáticas em horários definidos.</p>
+          </div>
+          <div class="card">
+            <h3>Integrações</h3>
+            <p>Conecta-se a planilhas, CRMs, ERPs, bancos de dados e APIs para unificar dados e reduzir retrabalho.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="como-funciona">
+        <h2>Como funciona</h2>
+        <p><strong>1. Diagnóstico:</strong> entendemos a operação, os canais, os dados e os pontos de atenção.</p>
+        <p><strong>2. Configuração:</strong> o agente é configurado com conhecimento, skills, fluxos de trabalho e conexões com ferramentas existentes.</p>
+        <p><strong>3. Validação:</strong> testes com cenários reais, revisão humana e ajustes de comportamento.</p>
+        <p><strong>4. Implantação:</strong> integração com canais de atendimento, automações e monitoramento.</p>
+        <p><strong>5. Acompanhamento:</strong> melhorias contínuas, novas skills e ajustes baseados em uso real.</p>
+        <div class="note">Importante: o agente opera com supervisão humana. Decisões sensíveis, jurídicas ou financeiras continuam sendo humanas.</div>
+      </section>
+
+      <section class="section" id="limitacoes">
+        <h2>Limitações e responsabilidade</h2>
+        <p>O agente não inventa informações fora da base configurada. Quando a resposta depende de dado atualizado, ele indica a necessidade de fonte ou atualização.</p>
+        <p>O agente não garante resultados comerciais por si só. Ele apoia a operação, mas o resultado depende de dados, configuração e supervisão humana.</p>
+        <p>O agente não substitui profissionais quando a decisão exigir julgamento humano. Decisões jurídicas, financeiras ou relacionais são do cliente.</p>
+      </section>
+
+      <section class="section" id="seguranca">
+        <h2>Segurança e governança</h2>
+        <p>Toda configuração é feita com supervisão humana. O agente passa por validação antes de entrar em produção e recebe ajustes contínuos.</p>
+        <p>Comandos potencialmente sensíveis exigem aprovação. Decisões comerciais, jurídicas ou financeiras são do cliente, não do agente.</p>
+        <p>Dados sensíveis são tratados conforme a legislação vigente. O cliente define o nível de acesso e compartilhamento.</p>
+      </section>
+
+      <section class="faq">
+        <h2>Perguntas frequentes</h2>
+        <div class="faq-item">
+          <div class="faq-question">O que é um Hermes Agent?</div>
+          <div class="faq-answer">É um agente autônomo de IA que executa tarefas, integra ferramentas e aprende com o uso. Diferente de chatbots comuns, ele tem memória persistente, skills reutilizáveis e pode operar em segundo plano.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Para que serve um agente autônomo na minha operação?</div>
+          <div class="faq-answer">Atendimento, suporte, vendas, qualificação de leads, automação de follow-up, pesquisa, geração de conteúdo e integração com sistemas existentes.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Quais plataformas são suportadas?</div>
+          <div class="faq-answer">Telegram, Discord, Slack, WhatsApp, Teams, Email, SMS, CLI local e muito mais. O mesmo agente pode atender em vários canais ao mesmo tempo.</div>
+        </div>
+      </section>
+
+      <section class="section" style="margin-top:1.2rem;">
+        <h2>Como começar</h2>
+        <p>O primeiro passo é entender a operação, os canais, os dados e os pontos de atenção. Depois, configuramos o agente com o conhecimento da empresa e validamos com casos reais antes de colocar em produção.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="https://praia.digital/solucoes/ia-para-imobiliarias.html">IA para imobiliárias</a>
+          <a class="btn btn-purple" href="https://wa.me/5511954346288?text=Olá!%20Quero%20implementar%20Hermes%20Agents%20na%20minha%20empresa." rel="noopener">Solicitar implementação</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>© Praia Digital — informações e serviços imobiliários no litoral de SP. Contato: comercial@praia.digital | (11) 95434-6288</p>
+    <p><a href="https://praia.digital/sitemap.xml">Sitemap</a> · <a href="https://praia.digital/equipe.html">Equipe</a> · <a href="https://praia.digital/politica-editorial.html">Política Editorial</a></p>
+  </footer>
+  <script src="https://praia.digital/js/shared.js"></script>
+</body>
+</html>
