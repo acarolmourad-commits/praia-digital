@@ -1,0 +1,83 @@
+/* ============================================================
+   Praia Digital — Calculadora Imobiliária Widget
+   ============================================================ */
+.pd-calc {
+  margin: 1.4rem 0;
+  padding: 1.2rem;
+  border-radius: 14px;
+  background: #eef6fb;
+  border: 1px solid #c9e6f7;
+}
+
+.pd-calc__title {
+  font-weight: 700;
+  color: #023047;
+  margin-bottom: 0.6rem;
+}
+
+.pd-calc__form {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.pd-calc__row {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.pd-calc__input,
+.pd-calc__select {
+  flex: 1 1 180px;
+  padding: 0.6rem 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+}
+
+.pd-calc__actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 0.4rem;
+}
+
+.pd-calc__button {
+  padding: 0.65rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background: #0077B6;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pd-calc__reset {
+  background: #e5e7eb;
+  color: #023047;
+}
+
+.pd-calc__result {
+  margin-top: 0.8rem;
+  padding: 0.8rem;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #c9e6f7;
+  display: none;
+}
+
+.pd-calc__result.is-visible {
+  display: block;
+}
+
+.pd-calc__result-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.pd-calc__result-row:last-child {
+  border-bottom: none;
+}
