@@ -1,49 +1,79 @@
 /* ============================================================
-   Praia Digital — Ad Injection + GPT Lazy Load
+   Praia Digital — Advanced Ad Monetization
+   - First-party key-values
+   - Smart attention-based refresh
+   - Mobile sticky anchor
    ============================================================ */
 
-/**
- * Initialize GPT with lazy loading tuned for viewability
- * without harming scroll experience.
- */
 window.PD_ADS = window.PD_ADS || {};
 
+/* ============================================================
+   1. Context detection for first-party targeting
+   ============================================================ */
+PD_ADS.detectPageContext = function () {
+  const path = (location.pathname || '').toLowerCase();
+  const segments = path.split('/').filter(Boolean);
+
+  const bairros = [
+    'santos','guaruja','sao-vicente','praia-grande','bertioga',
+    'ubatuba','ilhabela','mongagua','itanhaem','peruibe','caraguatatuba'
+  ];
+  const categoria = segments.includes('education') ? 'educacional'
+    : /relatorio|mercado|valorizacao|yield|roi/.test(path) ? 'relatorio'
+    : segments.includes('bairros') ? 'listagem_bairros'
+    : 'editorial';
+
+  const bairro = bairros.find((b) => path.includes(b)) || 'geral';
+
+  const dispositivo = /mobile|android|iphone|ipad|iemobile|blackberry|opera mini/i.test(navigator.userAgent) ? 'mobile' : 'desktop';
+
+  return { bairro, categoria, dispositivo };
+};
+
+/* ============================================================
+   2. GPT init with lazy load + key-values
+   ============================================================ */
 PD_ADS.initGPT = function (adUnitPath, targeting) {
   if (!window.googletag) return null;
 
-  const slot = googletag.defineSlot(adUnitPath, targeting.sizes || [[300,250],[336,280],[320,100]], targeting.div)
+  const slot = googletag
+    .defineSlot(adUnitPath, targeting.sizes || [[300, 250], [336, 280], [320, 100]], targeting.div)
     .addService(googletag.pubads());
 
+  const ctx = PD_ADS.detectPageContext();
+
+  // page-level first-party targeting
+  googletag.pubads().setTargeting('bairro', ctx.bairro);
+  googletag.pubads().setTargeting('categoria', ctx.categoria);
+  googletag.pubads().setTargeting('dispositivo', ctx.dispositivo);
+
+  // slot-level overrides
   if (targeting.keyValues) {
-    googletag.pubads().setTargeting(targeting.key);
     Object.entries(targeting.keyValues).forEach(([k, v]) => slot.setTargeting(k, v));
   }
 
   googletag.pubads().enableLazyLoad({
-    fetchMarginPercent: 600,   // preload when within 6x viewport
-    renderMarginPercent: 200,  // render when within 2x viewport
-    mobileScaling: 2.0         // more preload on mobile to avoid blank spaces
+    fetchMarginPercent: 600,
+    renderMarginPercent: 200,
+    mobileScaling: 2.0,
   });
 
   return slot;
 };
 
-/**
- * Inject an in-article ad every N paragraphs.
- * Uses a placeholder container with CLS-safe CSS class.
- */
+/* ============================================================
+   3. DAI: in-article / in-feed
+   ============================================================ */
 PD_ADS.injectInArticle = function ({
   articleSelector = 'article',
   paragraphSelector = 'p',
   every = 4,
-  slotFactory
 } = {}) {
   const article = document.querySelector(articleSelector);
   if (!article) return [];
 
   const paragraphs = Array.from(article.querySelectorAll(paragraphSelector));
   const inserted = [];
-  let offset = 0;
 
   for (let i = every; i < paragraphs.length; i += every) {
     const wrapper = document.createElement('div');
@@ -61,14 +91,10 @@ PD_ADS.injectInArticle = function ({
   return inserted;
 };
 
-/**
- * Inject an in-feed ad every N items in card/list feeds.
- */
 PD_ADS.injectInFeed = function ({
   listSelector = '.grid',
   itemSelector = '.card, article, li',
   every = 5,
-  slotFactory
 } = {}) {
   const list = document.querySelector(listSelector);
   if (!list) return [];
@@ -92,19 +118,112 @@ PD_ADS.injectInFeed = function ({
   return inserted;
 };
 
-/**
- * Example bootstrap for pages that use GPT:
- * - loads GPT async
- * - enables lazy load
- * - boots DAI on article/feed routes
- */
-PD_ADS.boot = function ({ adUnitPath = '/1234/example', targeting = {} } = {}) {
-  if (!window.googletag) {
+/* ============================================================
+   4. Smart refresh: time-based + visibility/viewport gated
+   ============================================================ */
+PD_ADS.scheduleSmartRefresh = function ({ intervalMs = 30000, maxRefreshes = 3 } = {}) {
+  if (!window.googletag || !window.googletag.pubads) return;
+
+  let refreshCount = 0;
+  let timer = null;
+
+  const visibleSlots = () => {
+    if (!window.googletag || !window.googletag.pubads) return [];
+    const all = window.googletag.pubads().getSlots();
+    return all.filter((slot) => {
+      const el = document.getElementById(slot.getSlotElementId());
+      if (!el) return false;
+      const rect = el.getBoundingClientRect();
+      return rect.top < window.innerHeight && rect.bottom > 0;
+    });
+  };
+
+  const tryRefresh = () => {
+    if (document.hidden) return;
+    if (refreshCount >= maxRefreshes) return;
+
+    const slots = visibleSlots();
+    if (!slots.length) return;
+
+    window.googletag.pubads().refresh(slots);
+    refreshCount += 1;
+  };
+
+  const start = () => {
+    if (timer) return;
+    timer = setInterval(tryRefresh, intervalMs);
+  };
+
+  const stop = () => {
+    if (timer) {
+      clearInterval(timer);
+      timer = null;
+    }
+  };
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) stop(); else start();
+  });
+
+  start();
+};
+
+/* ============================================================
+   5. Mobile sticky anchor ad
+   ============================================================ */
+PD_ADS.initStickyAnchorMobile = function (adUnitPath, sizes = [[320, 50], [320, 100]]) {
+  if (!window.googletag) return null;
+  if (!/mobile|android|iphone|ipad|iemobile|blackberry|opera mini/i.test(navigator.userAgent)) return null;
+
+  const container = document.createElement('div');
+  container.className = 'pd-sticky-ad';
+  container.setAttribute('data-pd-ad', 'sticky-anchor');
+  container.innerHTML = `
+    <div class="pd-sticky-ad__inner">
+      <div id="pd-sticky-ad-slot" class="pd-ad pd-ad--sticky"></div>
+      <button class="pd-sticky-ad__close" aria-label="Fechar anúncio">×</button>
+    </div>
+  `;
+  document.body.appendChild(container);
+
+  const slot = googletag
+    .defineSlot(adUnitPath, sizes, 'pd-sticky-ad-slot')
+    .addService(googletag.pubads());
+
+  const ctx = PD_ADS.detectPageContext();
+  googletag.pubads().setTargeting('bairro', ctx.bairro);
+  googletag.pubads().setTargeting('categoria', ctx.categoria);
+  googletag.pubads().setTargeting('dispositivo', 'mobile');
+
+  googletag.pubads().enableLazyLoad({
+    fetchMarginPercent: 400,
+    renderMarginPercent: 150,
+    mobileScaling: 2.0,
+  });
+
+  const closeBtn = container.querySelector('.pd-sticky-ad__close');
+  closeBtn.addEventListener('click', () => {
+    container.classList.add('is-closed');
+  });
+
+  return slot;
+};
+
+/* ============================================================
+   6. Bootstrap
+   ============================================================ */
+PD_ADS.boot = function ({
+  adUnitPath = '/1234/praia-digital',
+  targeting = {},
+  enableStickyMobile = true,
+  refreshIntervalMs = 30000,
+} = {}) {
+  const loadGPT = () => {
     const s = document.createElement('script');
     s.async = true;
     s.src = 'https://securepubads.g.doubleclick.net/tag/js/gpt.js';
     document.head.appendChild(s);
-  }
+  };
 
   const init = () => {
     googletag.cmd.push(() => {
@@ -114,10 +233,20 @@ PD_ADS.boot = function ({ adUnitPath = '/1234/example', targeting = {} } = {}) {
 
       PD_ADS.injectInArticle({ every: 4 });
       PD_ADS.injectInFeed({ every: 5 });
+
+      PD_ADS.scheduleSmartRefresh({ intervalMs: refreshIntervalMs, maxRefreshes: 3 });
+
+      if (enableStickyMobile) {
+        PD_ADS.initStickyAnchorMobile(adUnitPath);
+      }
     });
   };
 
-  if (window.googletag && googletag.apiReady) init();
-  else window.googletag = window.googletag || { cmd: [] };
-  window.googletag.cmd.push(init);
+  if (window.googletag && window.googletag.apiReady) {
+    init();
+  } else {
+    loadGPT();
+    window.googletag = window.googletag || { cmd: [] };
+    window.googletag.cmd.push(init);
+  }
 };
