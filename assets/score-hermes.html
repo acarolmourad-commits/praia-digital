@@ -71,6 +71,14 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', '', { anonymize_ip: true });
 </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
 <body>
 <h1>🧠 Score Hermes</h1>
@@ -103,4 +111,46 @@ function score(){
    <b>Score Hermes: ${lvl}</b><br>
    <small style="color:#667">Composto por ROI (40%), Yield (30%), Demanda (20%), Bônus litoral/tipo (10%)</small>`;
 }
-</script></body></html>
+</script>  <script>
+  (function() {
+    function trackEvent(name, params) {
+      if (typeof gtag === 'function') {
+        gtag('event', name, params || {});
+      }
+    }
+    document.addEventListener('click', function(e) {
+      var target = e.target.closest('a, button');
+      if (!target) return;
+      var href = target.getAttribute('href') || '';
+      var text = (target.textContent || '').trim().toLowerCase();
+      var eventName = 'cta_click';
+      if (href.includes('wa.me') || text.includes('whatsapp')) {
+        eventName = 'whatsapp_click';
+      } else if (href.includes('tel:') || text.includes('ligar')) {
+        eventName = 'call_click';
+      }
+      trackEvent(eventName, {
+        page_path: window.location.pathname,
+        href: href.substring(0, 200),
+        text: text.substring(0, 100)
+      });
+    }, true);
+    var scrollMilestones = [25, 50, 75, 100];
+    var reached = {};
+    function checkScroll() {
+      var scrollTop = window.scrollY || document.documentElement.scrollTop;
+      var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (docHeight <= 0) return;
+      var pct = Math.round((scrollTop / docHeight) * 100);
+      scrollMilestones.forEach(function(m) {
+        if (pct >= m && !reached[m]) {
+          reached[m] = true;
+          trackEvent('scroll_depth', {percent: m, page_path: window.location.pathname});
+        }
+      });
+    }
+    window.addEventListener('scroll', checkScroll);
+    window.addEventListener('load', checkScroll);
+  })();
+  </script>
+</body></html>
