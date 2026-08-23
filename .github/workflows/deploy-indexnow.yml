@@ -1,0 +1,29 @@
+name: Deploy and IndexNow
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy-and-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run IndexNow
+        env:
+          INDEXNOW_API_KEY: ${{ secrets.INDEXNOW_API_KEY }}
+        run: |
+          if [ -n "$INDEXNOW_API_KEY" ]; then
+            python scripts/indexnow.py
+          else
+            echo "INDEXNOW_API_KEY not set; skipping IndexNow submission."
+          fi

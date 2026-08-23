@@ -1,0 +1,49 @@
+/* ============================================================
+   Praia Digital — Tabela Comparativa Regional
+   ============================================================ */
+.pd-compare {
+  margin: 1.6rem 0;
+  overflow: auto;
+  border-radius: 14px;
+  border: 1px solid #e5e5db;
+  background: #fff;
+}
+
+.pd-compare__title {
+  padding: 1rem 1.2rem;
+  font-weight: 700;
+  color: #023047;
+  background: #f7f7f2;
+}
+
+.pd-compare__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.pd-compare__table th,
+.pd-compare__table td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #f3f4f6;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.pd-compare__table th {
+  background: #eef6fb;
+  color: #023047;
+  font-weight: 700;
+}
+
+.pd-compare__table tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 720px) {
+  .pd-compare__table th,
+  .pd-compare__table td {
+    padding: 0.7rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
