@@ -103,6 +103,32 @@ def check_generic_repetition(html_text: str) -> str | None:
     return None
 
 
+def diversity_ratio(text: str) -> float:
+    words = re.findall(r'\w+', text.lower())
+    total = len(words)
+    if total == 0:
+        return 0.0
+    unique = len(set(words))
+    return unique / total
+
+
+def check_low_specificity(html_text: str) -> dict | None:
+    """Block when lexical diversity is extremely low regardless of sentence count."""
+    body_match = re.search(r'<body[^>]*>(.*)</body>', html_text, re.I | re.S)
+    body = body_match.group(1) if body_match else html_text
+    text = re.sub(r'<[^>]+>', ' ', body)
+    ratio = diversity_ratio(text)
+    if ratio < 0.02:
+        return {
+            'rule': 'low_specificity',
+            'reason': 'Conteúdo com baixa especificidade lexical',
+            'found': f'{ratio:.4f} (extremely_low_diversity)',
+            'expected': 'diversidade lexical >= 0.02',
+            'action': 'Enriquecer conteúdo com termos específicos e variados antes da publicação',
+        }
+    return None
+
+
 def validate_article(html_path: Path) -> dict:
     """Validate a single article against publication gate rules."""
     if not html_path.exists():
@@ -118,7 +144,7 @@ def validate_article(html_path: Path) -> dict:
         }
 
     txt = html_path.read_text(encoding='utf-8', errors='ignore')
-    rel = str(html_path.relative_to(REPO))
+    rel = str(html_path.resolve().relative_to(REPO))
     issues = []
 
     # 1) Placeholder / minimal content
@@ -143,7 +169,18 @@ def validate_article(html_path: Path) -> dict:
             'action': 'Substituir textos genéricos por conteúdo específico do tema',
         })
 
-    # 3) Word count / content size
+    # 3) Low specificity / lexical diversity
+    low_spec = check_low_specificity(txt)
+    if low_spec:
+        issues.append({
+            'rule': low_spec['rule'],
+            'reason': low_spec['reason'],
+            'found': low_spec['found'],
+            'expected': low_spec['expected'],
+            'action': low_spec['action'],
+        })
+
+    # 4) Word count / content size
     words = count_words(txt)
     if words < MIN_WORDS:
         issues.append({
