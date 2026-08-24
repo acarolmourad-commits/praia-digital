@@ -1,121 +1,124 @@
 {
   "status": "ok",
   "checked": 10,
-  "failed": 3,
+  "failed": 5,
   "results": [
     {
-      "slug": "captacao-2026-litoral-imóveis-2026-08-17",
-      "file": "captacao-2026-litoral-imóveis-2026-08-17.html",
+      "slug": "quando-procurar-advogado-imobiliario-litoral-2026",
+      "file": "quando-procurar-advogado-imobiliario-litoral-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 6866,
+      "internal_links": 9,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "regularizacao-fundiaria-usucapiao-litoral-2026",
+      "file": "regularizacao-fundiaria-usucapiao-litoral-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 7427,
+      "internal_links": 9,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "contrato-locacao-temporada-litoral-paulista-2026",
+      "file": "contrato-locacao-temporada-litoral-paulista-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 7430,
+      "internal_links": 9,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "materiais-resistentes-maresia-casas-praia-2026",
+      "file": "materiais-resistentes-maresia-casas-praia-2026.html",
       "valid": false,
       "issues": [
-        "missing_from_sitemap",
-        "missing_cta_or_whatsapp"
+        "missing_from_sitemap"
       ],
-      "size": 1013,
-      "internal_links": 1,
+      "size": 11125,
+      "internal_links": 8,
       "in_sitemap": false,
-      "has_cta": false
+      "has_cta": true
     },
     {
-      "slug": "automacao-2026-leads-visitas-2026-08-17",
-      "file": "automacao-2026-leads-visitas-2026-08-17.html",
+      "slug": "yield-imobiliario-litoral-paulista-2026",
+      "file": "yield-imobiliario-litoral-paulista-2026.html",
       "valid": false,
       "issues": [
-        "missing_from_sitemap",
-        "missing_cta_or_whatsapp"
+        "missing_from_sitemap"
       ],
-      "size": 1047,
-      "internal_links": 1,
+      "size": 11011,
+      "internal_links": 8,
       "in_sitemap": false,
-      "has_cta": false
+      "has_cta": true
     },
     {
-      "slug": "seo-google-blog-litoral-2026-08-17",
-      "file": "seo-google-blog-litoral-2026-08-17.html",
+      "slug": "fgts-segunda-moradia-litoral-2026",
+      "file": "fgts-segunda-moradia-litoral-2026.html",
       "valid": false,
       "issues": [
-        "missing_from_sitemap",
+        "missing_from_sitemap"
+      ],
+      "size": 10956,
+      "internal_links": 8,
+      "in_sitemap": false,
+      "has_cta": true
+    },
+    {
+      "slug": "laudemio-terrenos-marinha-litoral-paulista-2026",
+      "file": "laudemio-terrenos-marinha-litoral-paulista-2026.html",
+      "valid": false,
+      "issues": [
+        "missing_from_sitemap"
+      ],
+      "size": 11693,
+      "internal_links": 8,
+      "in_sitemap": false,
+      "has_cta": true
+    },
+    {
+      "slug": "assinatura-profissional-corretores-litoral-2026",
+      "file": "assinatura-profissional-corretores-litoral-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 11933,
+      "internal_links": 18,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "agentes-autonomos-english-version-2026",
+      "file": "agentes-autonomos-english-version-2026.html",
+      "valid": true,
+      "issues": [],
+      "size": 1713,
+      "internal_links": 2,
+      "in_sitemap": true,
+      "has_cta": true
+    },
+    {
+      "slug": "agentes-autonomos-growth-hacking-2026",
+      "file": "agentes-autonomos-growth-hacking-2026.html",
+      "valid": false,
+      "issues": [
         "missing_cta_or_whatsapp"
       ],
-      "size": 1015,
-      "internal_links": 1,
-      "in_sitemap": false,
+      "size": 1484,
+      "internal_links": 2,
+      "in_sitemap": true,
       "has_cta": false
-    },
-    {
-      "slug": "maresias-case-de-sucesso-locacao-de-temporada-em-maresias-em-2026",
-      "file": "maresias-case-de-sucesso-locacao-de-temporada-em-maresias-em-2026.html",
-      "valid": true,
-      "issues": [],
-      "size": 1879,
-      "internal_links": 2,
-      "in_sitemap": true,
-      "has_cta": true
-    },
-    {
-      "slug": "ilhabela-case-de-sucesso-investimento-imobiliario-em-ilhabela-em-2026",
-      "file": "ilhabela-case-de-sucesso-investimento-imobiliario-em-ilhabela-em-2026.html",
-      "valid": true,
-      "issues": [],
-      "size": 1859,
-      "internal_links": 2,
-      "in_sitemap": true,
-      "has_cta": true
-    },
-    {
-      "slug": "saosebastiao-case-de-sucesso-automacao-imobiliaria-em-sao-sebastiao-em-2026",
-      "file": "saosebastiao-case-de-sucesso-automacao-imobiliaria-em-sao-sebastiao-em-2026.html",
-      "valid": true,
-      "issues": [],
-      "size": 1978,
-      "internal_links": 2,
-      "in_sitemap": true,
-      "has_cta": true
-    },
-    {
-      "slug": "bertioga-case-de-sucesso-marketing-digital-para-imoveis-em-bertioga-em-2026",
-      "file": "bertioga-case-de-sucesso-marketing-digital-para-imoveis-em-bertioga-em-2026.html",
-      "valid": true,
-      "issues": [],
-      "size": 1927,
-      "internal_links": 2,
-      "in_sitemap": true,
-      "has_cta": true
-    },
-    {
-      "slug": "itanhaem-case-de-sucesso-fechamento-de-vendas-em-itanhaem-em-2026",
-      "file": "itanhaem-case-de-sucesso-fechamento-de-vendas-em-itanhaem-em-2026.html",
-      "valid": true,
-      "issues": [],
-      "size": 1896,
-      "internal_links": 2,
-      "in_sitemap": true,
-      "has_cta": true
-    },
-    {
-      "slug": "santos-santos-curso-para-corretor-de-imoveis-guia-2026",
-      "file": "santos-santos-curso-para-corretor-de-imoveis-guia-2026.html",
-      "valid": true,
-      "issues": [],
-      "size": 1896,
-      "internal_links": 2,
-      "in_sitemap": true,
-      "has_cta": true
-    },
-    {
-      "slug": "santos-santos-checklist-para-venda-de-imoveis-guia-2026",
-      "file": "santos-santos-checklist-para-venda-de-imoveis-guia-2026.html",
-      "valid": true,
-      "issues": [],
-      "size": 1902,
-      "internal_links": 2,
-      "in_sitemap": true,
-      "has_cta": true
     }
   ],
   "failed_slugs": [
-    "captacao-2026-litoral-imóveis-2026-08-17",
-    "automacao-2026-leads-visitas-2026-08-17",
-    "seo-google-blog-litoral-2026-08-17"
+    "materiais-resistentes-maresia-casas-praia-2026",
+    "yield-imobiliario-litoral-paulista-2026",
+    "fgts-segunda-moradia-litoral-2026",
+    "laudemio-terrenos-marinha-litoral-paulista-2026",
+    "agentes-autonomos-growth-hacking-2026"
   ]
 }

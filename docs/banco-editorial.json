@@ -204175,7 +204175,8 @@
       "article_type": "D",
       "funnel": "Fundo",
       "intent": "informacional",
-      "published_at": "2026-08-23"
+      "published_at": "2026-08-23",
+      "dateModified": "2026-08-23"
     },
     {
       "slug": "regularizacao-fundiaria-usucapiao-litoral-2026",
@@ -204186,7 +204187,8 @@
       "article_type": "D",
       "funnel": "Fundo",
       "intent": "informacional",
-      "published_at": "2026-08-23"
+      "published_at": "2026-08-23",
+      "dateModified": "2026-08-23"
     },
     {
       "slug": "quando-procurar-advogado-imobiliario-litoral-2026",
@@ -204197,7 +204199,258 @@
       "article_type": "D",
       "funnel": "Fundo",
       "intent": "informacional",
-      "published_at": "2026-08-23"
+      "published_at": "2026-08-23",
+      "dateModified": "2026-08-23"
+    }
+  ],
+  "orchestrator_verification": [
+    {
+      "date": "2026-08-24T02:48:31.649041+00:00",
+      "checked": 10,
+      "failed": 5,
+      "failed_slugs": [
+        "materiais-resistentes-maresia-casas-praia-2026",
+        "yield-imobiliario-litoral-paulista-2026",
+        "fgts-segunda-moradia-litoral-2026",
+        "laudemio-terrenos-marinha-litoral-paulista-2026",
+        "agentes-autonomos-growth-hacking-2026"
+      ],
+      "results": [
+        {
+          "slug": "quando-procurar-advogado-imobiliario-litoral-2026",
+          "file": "quando-procurar-advogado-imobiliario-litoral-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 6866,
+          "internal_links": 9,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "regularizacao-fundiaria-usucapiao-litoral-2026",
+          "file": "regularizacao-fundiaria-usucapiao-litoral-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 7427,
+          "internal_links": 9,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "contrato-locacao-temporada-litoral-paulista-2026",
+          "file": "contrato-locacao-temporada-litoral-paulista-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 7430,
+          "internal_links": 9,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "materiais-resistentes-maresia-casas-praia-2026",
+          "file": "materiais-resistentes-maresia-casas-praia-2026.html",
+          "valid": false,
+          "issues": [
+            "missing_from_sitemap"
+          ],
+          "size": 11125,
+          "internal_links": 8,
+          "in_sitemap": false,
+          "has_cta": true
+        },
+        {
+          "slug": "yield-imobiliario-litoral-paulista-2026",
+          "file": "yield-imobiliario-litoral-paulista-2026.html",
+          "valid": false,
+          "issues": [
+            "missing_from_sitemap"
+          ],
+          "size": 11011,
+          "internal_links": 8,
+          "in_sitemap": false,
+          "has_cta": true
+        },
+        {
+          "slug": "fgts-segunda-moradia-litoral-2026",
+          "file": "fgts-segunda-moradia-litoral-2026.html",
+          "valid": false,
+          "issues": [
+            "missing_from_sitemap"
+          ],
+          "size": 10956,
+          "internal_links": 8,
+          "in_sitemap": false,
+          "has_cta": true
+        },
+        {
+          "slug": "laudemio-terrenos-marinha-litoral-paulista-2026",
+          "file": "laudemio-terrenos-marinha-litoral-paulista-2026.html",
+          "valid": false,
+          "issues": [
+            "missing_from_sitemap"
+          ],
+          "size": 11693,
+          "internal_links": 8,
+          "in_sitemap": false,
+          "has_cta": true
+        },
+        {
+          "slug": "assinatura-profissional-corretores-litoral-2026",
+          "file": "assinatura-profissional-corretores-litoral-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 11933,
+          "internal_links": 18,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "agentes-autonomos-english-version-2026",
+          "file": "agentes-autonomos-english-version-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1713,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "agentes-autonomos-growth-hacking-2026",
+          "file": "agentes-autonomos-growth-hacking-2026.html",
+          "valid": false,
+          "issues": [
+            "missing_cta_or_whatsapp"
+          ],
+          "size": 1484,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": false
+        }
+      ]
+    },
+    {
+      "date": "2026-08-24T02:48:55.297102+00:00",
+      "checked": 10,
+      "failed": 5,
+      "failed_slugs": [
+        "materiais-resistentes-maresia-casas-praia-2026",
+        "yield-imobiliario-litoral-paulista-2026",
+        "fgts-segunda-moradia-litoral-2026",
+        "laudemio-terrenos-marinha-litoral-paulista-2026",
+        "agentes-autonomos-growth-hacking-2026"
+      ],
+      "results": [
+        {
+          "slug": "quando-procurar-advogado-imobiliario-litoral-2026",
+          "file": "quando-procurar-advogado-imobiliario-litoral-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 6866,
+          "internal_links": 9,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "regularizacao-fundiaria-usucapiao-litoral-2026",
+          "file": "regularizacao-fundiaria-usucapiao-litoral-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 7427,
+          "internal_links": 9,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "contrato-locacao-temporada-litoral-paulista-2026",
+          "file": "contrato-locacao-temporada-litoral-paulista-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 7430,
+          "internal_links": 9,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "materiais-resistentes-maresia-casas-praia-2026",
+          "file": "materiais-resistentes-maresia-casas-praia-2026.html",
+          "valid": false,
+          "issues": [
+            "missing_from_sitemap"
+          ],
+          "size": 11125,
+          "internal_links": 8,
+          "in_sitemap": false,
+          "has_cta": true
+        },
+        {
+          "slug": "yield-imobiliario-litoral-paulista-2026",
+          "file": "yield-imobiliario-litoral-paulista-2026.html",
+          "valid": false,
+          "issues": [
+            "missing_from_sitemap"
+          ],
+          "size": 11011,
+          "internal_links": 8,
+          "in_sitemap": false,
+          "has_cta": true
+        },
+        {
+          "slug": "fgts-segunda-moradia-litoral-2026",
+          "file": "fgts-segunda-moradia-litoral-2026.html",
+          "valid": false,
+          "issues": [
+            "missing_from_sitemap"
+          ],
+          "size": 10956,
+          "internal_links": 8,
+          "in_sitemap": false,
+          "has_cta": true
+        },
+        {
+          "slug": "laudemio-terrenos-marinha-litoral-paulista-2026",
+          "file": "laudemio-terrenos-marinha-litoral-paulista-2026.html",
+          "valid": false,
+          "issues": [
+            "missing_from_sitemap"
+          ],
+          "size": 11693,
+          "internal_links": 8,
+          "in_sitemap": false,
+          "has_cta": true
+        },
+        {
+          "slug": "assinatura-profissional-corretores-litoral-2026",
+          "file": "assinatura-profissional-corretores-litoral-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 11933,
+          "internal_links": 18,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "agentes-autonomos-english-version-2026",
+          "file": "agentes-autonomos-english-version-2026.html",
+          "valid": true,
+          "issues": [],
+          "size": 1713,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": true
+        },
+        {
+          "slug": "agentes-autonomos-growth-hacking-2026",
+          "file": "agentes-autonomos-growth-hacking-2026.html",
+          "valid": false,
+          "issues": [
+            "missing_cta_or_whatsapp"
+          ],
+          "size": 1484,
+          "internal_links": 2,
+          "in_sitemap": true,
+          "has_cta": false
+        }
+      ]
     }
   ]
 }
