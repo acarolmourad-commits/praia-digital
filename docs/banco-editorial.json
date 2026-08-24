@@ -204165,6 +204165,39 @@
     {
       "slug": "implementar-hermes-agents-guia-pratico-2026",
       "status": "PUBLISHED"
+    },
+    {
+      "slug": "contrato-locacao-temporada-litoral-paulista-2026",
+      "title": "Contrato de locação de temporada no litoral de SP: cláusulas essenciais em 2026",
+      "status": "PUBLISHED",
+      "cluster": "locacao_temporada",
+      "city": "litoral_paulista",
+      "article_type": "D",
+      "funnel": "Fundo",
+      "intent": "informacional",
+      "published_at": "2026-08-23"
+    },
+    {
+      "slug": "regularizacao-fundiaria-usucapiao-litoral-2026",
+      "title": "Regularização fundiária e usucapião no litoral de SP: guia do proprietário em 2026",
+      "status": "PUBLISHED",
+      "cluster": "juridico",
+      "city": "litoral_paulista",
+      "article_type": "D",
+      "funnel": "Fundo",
+      "intent": "informacional",
+      "published_at": "2026-08-23"
+    },
+    {
+      "slug": "quando-procurar-advogado-imobiliario-litoral-2026",
+      "title": "Quando procurar um advogado imobiliário no litoral de SP em 2026",
+      "status": "PUBLISHED",
+      "cluster": "juridico",
+      "city": "litoral_paulista",
+      "article_type": "D",
+      "funnel": "Fundo",
+      "intent": "informacional",
+      "published_at": "2026-08-23"
     }
   ]
 }
