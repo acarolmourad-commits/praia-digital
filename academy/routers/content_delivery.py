@@ -50,9 +50,14 @@ def get_course_filesystem_modules(slug: str, db: Session = Depends(get_db), user
 
     modules = []
     module_dirs = sorted([d for d in aulas_root.iterdir() if d.is_dir()], key=lambda p: p.name)
+    if not module_dirs:
+        module_dirs = [aulas_root]
     for module_dir in module_dirs:
         lessons = []
-        lesson_files = sorted([f for f in module_dir.iterdir() if f.is_file()], key=lambda p: p.name)
+        if module_dir.is_dir():
+            lesson_files = sorted([f for f in module_dir.iterdir() if f.is_file()], key=lambda p: p.name)
+        else:
+            lesson_files = []
         for lesson_file in lesson_files:
             relative_path = lesson_file.relative_to(fs_root)
             lessons.append({

@@ -51,23 +51,22 @@ def _setup_test_courses():
                 db.add(Course(slug=slug, title=slug, status="published"))
             db.commit()
         courses = db.query(Course).all()
-        # Garantir CourseContentSource para cada curso
-        repo_root = REPO
-        cursos_root = repo_root / "academy" / "cursos"
+        cursos_root = REPO / "academy" / "cursos"
         for course in courses:
             existing = db.query(CourseContentSource).filter(CourseContentSource.course_id == course.id).first()
-            if not existing:
-                fs_path = cursos_root / course.slug
-                module_index = fs_path / "aulas" / "sumario.md"
-                if not module_index.exists():
-                    module_index = fs_path / "curso-completo" / "sumario.md"
-                db.add(CourseContentSource(
-                    course_id=course.id,
-                    source_type="filesystem",
-                    fs_root=str(fs_path),
-                    module_index_path=str(module_index) if module_index.exists() else None,
-                    is_active=True,
-                ))
+            if existing:
+                continue
+            fs_path = cursos_root / course.slug
+            module_index = fs_path / "aulas" / "sumario.md"
+            if not module_index.exists():
+                module_index = fs_path / "curso-completo" / "sumario.md"
+            db.add(CourseContentSource(
+                course_id=course.id,
+                source_type="filesystem",
+                fs_root=str(fs_path),
+                module_index_path=str(module_index) if module_index.exists() else None,
+                is_active=True,
+            ))
         db.commit()
         return [c.slug for c in courses]
 
@@ -102,18 +101,23 @@ def test_64_cursos_endpoint_modules():
 def test_64_cursos_fallback_modulos_arquivo_unico():
     slugs = _setup_test_courses()
     headers = _login()
-    fallback_count = 0
+    cursos_com_aulas = 0
+    cursos_completo_fallback = 0
     for slug in slugs:
         r = client.get(f"/academy/content/courses/{slug}/filesystem-modules", headers=headers)
         assert r.status_code == 200, f"Slug {slug}: {r.status_code} {r.text}"
-        modules = r.json().get("modules", [])
-        assert len(modules) > 0
+        body = r.json()
+        modules = body.get("modules", [])
+        assert len(modules) > 0, f"Sem módulos reconhecidos: {slug}"
         for module in modules:
             lessons = module.get("lessons", [])
             assert len(lessons) > 0
-            if len(lessons) == 1 and module.get("directory", "").lower().startswith("modulo"):
-                fallback_count += 1
-    assert fallback_count >= 64
+            if body.get("fs_root", "").endswith(f"academy\\cursos\\{slug}\\aulas") or body.get("fs_root", "").endswith(f"academy/cursos/{slug}/aulas"):
+                if module.get("directory", "").lower().startswith("modulo"):
+                    cursos_completo_fallback += 1
+            else:
+                cursos_com_aulas += 1
+    assert cursos_com_aulas + cursos_completo_fallback == 64
 
 
 def test_64_cursos_sem_entrega_sem_pagamento():

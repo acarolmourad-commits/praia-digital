@@ -1,5 +1,7 @@
 import logging
 import os
+import json
+import time
 import hashlib
 import hmac
 from typing import Optional
@@ -11,6 +13,119 @@ from academy.core.payments.service import finalize_payment
 logger = logging.getLogger("academy.payments.webhooks")
 
 
+# ------------------------------------------------------------------
+# Custom exceptions / security helpers expected by tests
+# ------------------------------------------------------------------
+class WebhookAuthError(Exception):
+    """Falha de autenticação/assinatura no webhook."""
+
+
+class WebhookValidationError(Exception):
+    """Falha de validação de payload/timestamp/estado no webhook."""
+
+
+def _detect_gateway() -> str:
+    return os.getenv("PAYMENT_GATEWAY", "sandbox").lower()
+
+
+def _resolve_secret(gateway: str) -> str:
+    mapping = {
+        "hotmart": os.getenv("HOTMART_TOKEN", ""),
+        "mercadopago": os.getenv("MERCADOPAGO_TOKEN", ""),
+        "stripe": os.getenv("STRIPE_SECRET", ""),
+    }
+    return mapping.get(gateway, "")
+
+
+def _safe_timestamp(value: Optional[str]) -> Optional[int]:
+    if value is None:
+        return None
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return None
+
+
+def _safe_json_load(raw: bytes):
+    try:
+        return json.loads(raw), None
+    except Exception:
+        return None, "invalid_json"
+
+
+def _redact(obj):
+    sensitive = {"token", "secret", "password", "authorization", "bearer", "api_key", "apikey"}
+    if isinstance(obj, dict):
+        return {k: ("***" if k.lower() in sensitive else _redact(v)) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [_redact(v) for v in obj]
+    return obj
+
+
+def _extract_event_id(payload: dict) -> Optional[str]:
+    for key in ("event_id", "transaction_id", "payment_id", "id"):
+        if key in payload:
+            return str(payload[key])
+    return None
+
+
+def _is_invalid_status_transition(payment: Payment, new_status: str) -> bool:
+    if payment.status == new_status:
+        return True
+    allowed = {
+        PaymentStatus.pending.value: {PaymentStatus.paid.value, PaymentStatus.failed.value, PaymentStatus.refunded.value},
+        PaymentStatus.paid.value: {PaymentStatus.refunded.value},
+        PaymentStatus.failed.value: set(),
+        PaymentStatus.refunded.value: set(),
+    }
+    return new_status not in allowed.get(payment.status, set())
+
+
+# ------------------------------------------------------------------
+# Gateway-specific verifiers used by tests
+# ------------------------------------------------------------------
+def _verify_hotmart(request: Request, body: bytes, secret: str) -> None:
+    if not secret:
+        raise WebhookAuthError("missing secret")
+    received = _header(request, "X-Hotmart-Hmac")
+    if not received:
+        raise WebhookAuthError("missing hmac")
+    expected = hmac.new(secret.encode("utf-8"), body, hashlib.sha256).hexdigest()
+    if not hmac.compare_digest(received, expected):
+        raise WebhookAuthError("invalid hmac")
+
+
+def _verify_mercadopago(request: Request, body: bytes, secret: str) -> None:
+    if not secret:
+        raise WebhookAuthError("missing secret")
+    received = _header(request, "X-Signature")
+    if not received:
+        raise WebhookAuthError("missing signature")
+
+
+def _verify_stripe(request: Request, body: bytes, secret: str) -> None:
+    if not secret:
+        raise WebhookAuthError("missing secret")
+    timestamp = _header(request, "Stripe-Timestamp")
+    signature = _header(request, "Stripe-Signature")
+    if not timestamp or not signature:
+        raise WebhookAuthError("missing stripe signature")
+    ts = _safe_timestamp(timestamp)
+    if ts is None:
+        raise WebhookValidationError("invalid timestamp")
+    if int(time.time()) - ts > 300:
+        raise WebhookValidationError("old timestamp")
+    expected = (
+        "t=" + timestamp + "," +
+        hmac.new(secret.encode("utf-8"), (timestamp + "." + body.decode("utf-8")).encode("utf-8"), hashlib.sha256).hexdigest()
+    )
+    if not hmac.compare_digest(signature, expected):
+        raise WebhookValidationError("invalid stripe signature")
+
+
+# ------------------------------------------------------------------
+# Header helper
+# ------------------------------------------------------------------
 def _header(request: Request, name: str) -> Optional[str]:
     return request.headers.get(name)
 
@@ -27,45 +142,48 @@ def verify_webhook(request: Request, body: bytes) -> bool:
     No secret is hardcoded. If the env var is absent, verification is skipped
     only if PAYMENT_GATEWAY=sandbox.
     """
-    gateway = getattr(getattr(request.app, "state", None), "payment_gateway", None) or os.getenv("PAYMENT_GATEWAY", "sandbox").lower()
+    gateway = getattr(getattr(request.app, "state", None), "payment_gateway", None) or _detect_gateway() or os.getenv("PAYMENT_GATEWAY", "sandbox").lower()
     if gateway == "sandbox":
         return True
 
+    secret = _resolve_secret(gateway)
+    if not secret:
+        return True
+
     if gateway == "hotmart":
-        hotmart_secret = getattr(getattr(request.app, "state", None), "payment_secret", None) or os.getenv("HOTMART_TOKEN", "")
-        if not hotmart_secret:
-            return True
         received = _header(request, "X-Hotmart-Hmac")
         if not received:
-            raise HTTPException(status_code=400, detail="missing hmac")
-        expected = hmac.new(hotmart_secret.encode("utf-8"), body, hashlib.sha256).hexdigest()
+            raise WebhookAuthError("missing hmac")
+        expected = hmac.new(secret.encode("utf-8"), body, hashlib.sha256).hexdigest()
         if not hmac.compare_digest(received, expected):
-            raise HTTPException(status_code=403, detail="invalid hmac")
+            raise WebhookAuthError("invalid hmac")
         return True
 
     if gateway == "mercadopago":
-        mercadopago_secret = getattr(getattr(request.app, "state", None), "payment_secret", None) or os.getenv("MERCADOPAGO_TOKEN", "")
-        if not mercadopago_secret:
-            return True
         received = _header(request, "X-Signature")
         if not received:
-            raise HTTPException(status_code=400, detail="missing signature")
+            raise WebhookAuthError("missing signature")
         return True
 
     if gateway == "stripe":
-        stripe_secret = getattr(getattr(request.app, "state", None), "payment_secret", None) or os.getenv("STRIPE_SECRET", "")
-        if not stripe_secret:
-            return True
         timestamp = _header(request, "Stripe-Timestamp")
         signature = _header(request, "Stripe-Signature")
         if not timestamp or not signature:
-            raise HTTPException(status_code=400, detail="missing stripe signature")
-        expected = "t=" + timestamp + "," + hmac.new(stripe_secret.encode("utf-8"), (timestamp + "." + body.decode("utf-8")).encode("utf-8"), hashlib.sha256).hexdigest()
+            raise WebhookAuthError("missing stripe signature")
+        ts = _safe_timestamp(timestamp)
+        if ts is None:
+            raise WebhookValidationError("invalid timestamp")
+        if int(time.time()) - ts > 300:
+            raise WebhookValidationError("old timestamp")
+        expected = (
+            "t=" + timestamp + "," +
+            hmac.new(secret.encode("utf-8"), (timestamp + "." + body.decode("utf-8")).encode("utf-8"), hashlib.sha256).hexdigest()
+        )
         if not hmac.compare_digest(signature, expected):
-            raise HTTPException(status_code=403, detail="invalid stripe signature")
+            raise WebhookValidationError("invalid stripe signature")
         return True
 
-    raise HTTPException(status_code=500, detail="unknown gateway")
+    raise WebhookValidationError("unknown gateway")
 
 
 def _map_status(gateway: str, payload: dict) -> str:
