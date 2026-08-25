@@ -1,0 +1,64 @@
+/* Monetized Comparison Table — GEO/Conversion Optimized */
+.compare-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  margin: 1.5rem 0;
+}
+.compare-table thead th {
+  background: linear-gradient(135deg, var(--ocean), var(--ocean-light));
+  color: var(--white);
+  font-weight: 700;
+  padding: 1rem;
+  text-align: left;
+}
+.compare-table tbody td {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: top;
+}
+.compare-table tbody tr:last-child td { border-bottom: none; }
+.compare-table .col-metric {
+  width: 22%;
+  font-weight: 700;
+  background: #f8fafc;
+  color: var(--dark);
+}
+.compare-table .col-tradicional {
+  width: 30%;
+  color: #6b7280;
+}
+.compare-table .col-praia {
+  width: 30%;
+  background: rgba(0,119,182,0.04);
+  color: var(--dark);
+  font-weight: 600;
+}
+.compare-table .col-action {
+  width: 18%;
+  text-align: center;
+}
+.compare-table .highlight-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--ocean), var(--ocean-light));
+  color: var(--white);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.compare-table .win { color: var(--success); font-weight: 700; }
+@media (max-width: 760px) {
+  .compare-table thead { display: none; }
+  .compare-table tbody td { display: block; width: 100%; }
+  .compare-table tbody tr { display: block; margin: 0.75rem 0; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 6px rgba(0,0,0,0.06); }
+  .compare-table .col-metric { background: var(--ocean); color: var(--white); }
+  .compare-table .col-tradicional, .compare-table .col-praia { background: var(--white); }
+}
