@@ -10,6 +10,14 @@ def _reset_db():
     Base.metadata.drop_all(bind=engine)
 
 
+@pytest.fixture(scope="session")
+def client():
+    from fastapi.testclient import TestClient
+    from academy.main import app
+    app.dependency_overrides[get_db] = override_get_db
+    return TestClient(app)
+
+
 @pytest.fixture()
 def db():
     session = TestingSessionLocal()

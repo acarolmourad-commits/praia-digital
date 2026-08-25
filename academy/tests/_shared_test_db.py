@@ -4,6 +4,7 @@ from sqlalchemy.pool import StaticPool
 from sqlalchemy.exc import OperationalError
 import academy.core.models
 import academy.core.database as _db
+import academy.core.models_proprietarios
 
 TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=create_engine(
     "sqlite:///:memory:",
