@@ -1,3 +1,1 @@
-# Google AdSense - Praia Digital
-# Substitua PUBLISHER_ID pelo seu ID do Google AdSense (ex: pub-xxxxxxxxxxxxxxxx)
-# google.com, pub-xxxxxxxxxxxxxxxx, DIRECT, f08c47fec0942fa0
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
