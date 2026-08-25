@@ -1,0 +1,51 @@
+lead_id;nome_imobiliaria;cidade;uf;nome_contato;email;whatsapp;site;origem;notas;prioridade
+1;Imobiliaria Santos Centro;Santos;SP;Contato 1;contato1@example.com;(13) 99999-0001;https://imobiliariasantoscentro.com;manual;Lead teste realista;5
+2;Praia Grande Imoveis;Praia Grande;SP;Contato 2;contato2@example.com;(13) 99999-0002;https://praiagrandeimoveis.com;manual;Lead teste realista;5
+3;Guaruja Prime;Guaruja;SP;Contato 3;contato3@example.com;(13) 99999-0003;https://guarujaprime.com;manual;Lead teste realista;5
+4;Bertioga Realty;Bertioga;SP;Contato 4;contato4@example.com;(13) 99999-0004;https://bertiogarealty.com;manual;Lead teste realista;5
+5;Itanhaem Imoveis;Itanhaem;SP;Contato 5;contato5@example.com;(13) 99999-0005;https://itanhaemimoveis.com;manual;Lead teste realista;5
+6;Mongagua Properties;Mongagua;SP;Contato 6;contato6@example.com;(13) 99999-0006;https://mongaguaproperties.com;manual;Lead teste realista;5
+7;Peruibe Real Estate;Peruibe;SP;Contato 7;contato7@example.com;(13) 99999-0007;https://peruiberealestate.com;manual;Lead teste realista;5
+8;Sao Vicente Imoveis;Sao Vicente;SP;Contato 8;contato8@example.com;(13) 99999-0008;https://saovicenteimoveis.com;manual;Lead teste realista;5
+9;Santos Luxo Imoveis;Santos;SP;Contato 9;contato9@example.com;(13) 99999-0009;https://santosluxoimoveis.com;manual;Lead teste realista;5
+10;Praia Grande Luxo;Praia Grande;SP;Contato 10;contato10@example.com;(13) 99999-0010;https://praiagrandeluxo.com;manual;Lead teste realista;5
+11;Guaruja Beach;Guaruja;SP;Contato 11;contato11@example.com;(13) 99999-0011;https://guarujabeach.com;manual;Lead teste realista;5
+12;Bertioga Premium;Bertioga;SP;Contato 12;contato12@example.com;(13) 99999-0012;https://bertiogapremium.com;manual;Lead teste realista;5
+13;Itanhaem Beach;Itanhaem;SP;Contato 13;contato13@example.com;(13) 99999-0013;https://itanhaembeach.com;manual;Lead teste realista;5
+14;Mongagua Center;Mongagua;SP;Contato 14;contato14@example.com;(13) 99999-0014;https://mongaguacenter.com;manual;Lead teste realista;5
+15;Peruibe Center;Peruibe;SP;Contato 15;contato15@example.com;(13) 99999-0015;https://peruibecenter.com;manual;Lead teste realista;5
+16;Santos Ocean;Santos;SP;Contato 16;contato16@example.com;(13) 99999-0016;https://santosocean.com;manual;Lead teste realista;5
+17;Praia Grande Ocean;Praia Grande;SP;Contato 17;contato17@example.com;(13) 99999-0017;https://praiagrandeocean.com;manual;Lead teste realista;5
+18;Guaruja Ocean;Guaruja;SP;Contato 18;contato18@example.com;(13) 99999-0018;https://guarujaocean.com;manual;Lead teste realista;5
+19;Bertioga Beach;Bertioga;SP;Contato 19;contato19@example.com;(13) 99999-0019;https://bertiogabeach.com;manual;Lead teste realista;5
+20;Itanhaem Luxo;Itanhaem;SP;Contato 20;contato20@example.com;(13) 99999-0020;https://itanhaemluxo.com;manual;Lead teste realista;5
+21;Santos Premium;Santos;SP;Contato 21;contato21@example.com;(13) 99999-0021;https://santospremium.com;manual;Lead teste realista;5
+22;Praia Grande Premium;Praia Grande;SP;Contato 22;contato22@example.com;(13) 99999-0022;https://praiagrandepremium.com;manual;Lead teste realista;5
+23;Guaruja Premium;Guaruja;SP;Contato 23;contato23@example.com;(13) 99999-0023;https://guarujapremium.com;manual;Lead teste realista;5
+24;Santos Tower;Santos;SP;Contato 24;contato24@example.com;(13) 99999-0024;https://santostower.com;manual;Lead teste realista;5
+25;Praia Grande Tower;Praia Grande;SP;Contato 25;contato25@example.com;(13) 99999-0025;https://praiagrandetower.com;manual;Lead teste realista;5
+26;Guaruja Tower;Guaruja;SP;Contato 26;contato26@example.com;(13) 99999-0026;https://guarujatower.com;manual;Lead teste realista;5
+27;Santos Blue;Santos;SP;Contato 27;contato27@example.com;(13) 99999-0027;https://santosblue.com;manual;Lead teste realista;5
+28;Praia Grande Blue;Praia Grande;SP;Contato 28;contato28@example.com;(13) 99999-0028;https://praiagrandeblue.com;manual;Lead teste realista;5
+29;Guaruja Blue;Guaruja;SP;Contato 29;contato29@example.com;(13) 99999-0029;https://guarujablue.com;manual;Lead teste realista;5
+30;Bertioga Luxo;Bertioga;SP;Contato 30;contato30@example.com;(13) 99999-0030;https://bertiogaluxo.com;manual;Lead teste realista;5
+31;Itanhaem Premium;Itanhaem;SP;Contato 31;contato31@example.com;(13) 99999-0031;https://itanhaempremium.com;manual;Lead teste realista;5
+32;Mongagua Luxo;Mongagua;SP;Contato 32;contato32@example.com;(13) 99999-0032;https://mongagualuxo.com;manual;Lead teste realista;5
+33;Peruibe Luxo;Peruibe;SP;Contato 33;contato33@example.com;(13) 99999-0033;https://peruibeluxo.com;manual;Lead teste realista;5
+34;Santos View;Santos;SP;Contato 34;contato34@example.com;(13) 99999-0034;https://santosview.com;manual;Lead teste realista;5
+35;Praia Grande View;Praia Grande;SP;Contato 35;contato35@example.com;(13) 99999-0035;https://praiagrandeview.com;manual;Lead teste realista;5
+36;Guaruja View;Guaruja;SP;Contato 36;contato36@example.com;(13) 99999-0036;https://guarujaview.com;manual;Lead teste realista;5
+37;Santos Home;Santos;SP;Contato 37;contato37@example.com;(13) 99999-0037;https://santoshome.com;manual;Lead teste realista;5
+38;Praia Grande Home;Praia Grande;SP;Contato 38;contato38@example.com;(13) 99999-0038;https://praiagrandehome.com;manual;Lead teste realista;5
+39;Guaruja Home;Guaruja;SP;Contato 39;contato39@example.com;(13) 99999-0039;https://guarujahome.com;manual;Lead teste realista;5
+40;Bertioga Home;Bertioga;SP;Contato 40;contato40@example.com;(13) 99999-0040;https://bertiogahome.com;manual;Lead teste realista;5
+41;Itanhaem Home;Itanhaem;SP;Contato 41;contato41@example.com;(13) 99999-0041;https://itanhaemhome.com;manual;Lead teste realista;5
+42;Mongagua Home;Mongagua;SP;Contato 42;contato42@example.com;(13) 99999-0042;https://mongaguahome.com;manual;Lead teste realista;5
+43;Peruibe Home;Peruibe;SP;Contato 43;contato43@example.com;(13) 99999-0043;https://peruibehome.com;manual;Lead teste realista;5
+44;Santos Costa;Santos;SP;Contato 44;contato44@example.com;(13) 99999-0044;https://santoscosta.com;manual;Lead teste realista;5
+45;Praia Grande Costa;Praia Grande;SP;Contato 45;contato45@example.com;(13) 99999-0045;https://praiagrandecosta.com;manual;Lead teste realista;5
+46;Guaruja Costa;Guaruja;SP;Contato 46;contato46@example.com;(13) 99999-0046;https://guarujacosta.com;manual;Lead teste realista;5
+47;Bertioga Costa;Bertioga;SP;Contato 47;contato47@example.com;(13) 99999-0047;https://bertiogacosta.com;manual;Lead teste realista;5
+48;Itanhaem Costa;Itanhaem;SP;Contato 48;contato48@example.com;(13) 99999-0048;https://itanhaemcosta.com;manual;Lead teste realista;5
+49;Mongagua Costa;Mongagua;SP;Contato 49;contato49@example.com;(13) 99999-0049;https://mongaguacosta.com;manual;Lead teste realista;5
+50;Peruibe Costa;Peruibe;SP;Contato 50;contato50@example.com;(13) 99999-0050;https://peruibecosta.com;manual;Lead teste realista;5
