@@ -57,10 +57,16 @@ def atualizar_registro_financeiro(registro_id: int, payload: RegistroFinanceiroU
         reg.payment_verified_at = datetime.utcnow()
         reg.delivery_status = StatusEntrega.ENTREGUE
         reg.delivery_released_at = datetime.utcnow()
-    elif payload.payment_status in {StatusPagamento.PAGAMENTO_REJEITADO, StatusPagamento.PAGAMENTO_NAO_ENCONTRADO, StatusPagamento.PAGAMENTO_ESTORNADO}:
+    elif payload.payment_status in {
+        StatusPagamento.PAGAMENTO_REJEITADO,
+        StatusPagamento.PAGAMENTO_NAO_ENCONTRADO,
+        StatusPagamento.PAGAMENTO_ESTORNADO,
+    }:
         reg.revenue_confirmed = 0
         reg.delivery_status = StatusEntrega.BLOQUEADA
         reg.amount_paid = None
+        reg.delivery_released_at = None
+        reg.delivery_released_by = None
 
     db.commit()
     db.refresh(reg)
