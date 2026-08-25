@@ -17,7 +17,7 @@ from pathlib import Path
 SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = 587
 SMTP_USER = "seu-email@gmail.com"
-SMTP_PASSWORD = "sua-senha-app"
+SMTP_PASSWORD = os.getenv("SMTP_PASSWORD", "")
 FROM_NAME = "Carolina Mourad"
 FROM_EMAIL = "comercial@praia.digital"
 

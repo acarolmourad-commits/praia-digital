@@ -26,6 +26,14 @@ academy.db
 academy/static/
 
 # Sensitive / generated artifacts
+.env
+.env.*
+!.env.example
+*.secret
+*credentials*
+*secrets*
+chaves/
+keys/
 docs/sales/*.csv
 docs/sales/*.html
 docs/sales/*.md
