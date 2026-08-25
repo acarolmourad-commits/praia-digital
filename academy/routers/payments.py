@@ -224,12 +224,18 @@ def checkout_confirm(order_id: int, db: Session = Depends(get_db)):
 async def payments_webhook(request: Request, db: Session = Depends(get_db)):
     body_bytes = await request.body()
     gateway = getattr(request.app.state, "payment_gateway", "sandbox") if hasattr(request, "app") else "sandbox"
-    if not verify_webhook(request, body_bytes):
+    try:
+        ok = verify_webhook(request, body_bytes)
+    except HTTPException:
+        raise
+    except Exception as exc:
+        raise HTTPException(status_code=403, detail="invalid webhook") from exc
+    if not ok:
         raise HTTPException(status_code=403, detail="invalid webhook")
     try:
         payload = await request.json()
     except Exception:
-        payload = {}
+        raise HTTPException(status_code=400, detail="invalid_payload")
     result = handle_payment_event(db, gateway, payload)
     logger.info("webhook_received gateway=%s result=%s", gateway, result)
     return result

@@ -288,6 +288,8 @@ def handle_payment_event(db: Session, gateway: str, payload: dict) -> dict:
     new_status = _map_status(gateway, payload)
     if payment.status == new_status:
         return {"handled": True, "idempotent": True}
+    if _is_invalid_status_transition(payment, new_status):
+        raise WebhookValidationError(f"invalid status transition: {payment.status} -> {new_status}")
     finalize_payment(
         db,
         payment,
