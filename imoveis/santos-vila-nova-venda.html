@@ -69,7 +69,7 @@
     img{width:100%;border-radius:16px;margin-top:14px}
   </style>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=window.PD_GA4_ID || ''"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
@@ -102,6 +102,12 @@ gtag('config', '', { anonymize_ip: true });
 }
   </script>
 <link rel="preload" as="image" href="https://images.unsplash.com/photo-1500100000000?auto=format&fit=crop&w=900&q=60" fetchpriority="high">
+
+  <!-- Meta Pixel (env fallback) -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init", window.PD_META_PIXEL_ID || "");fbq("track","PageView");
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=" + (window.PD_META_PIXEL_ID || "") + "&ev=PageView&noscript=1" /></noscript>
 </head>
 <body>
   <div class="wrap">
@@ -131,6 +137,23 @@ gtag('config', '', { anonymize_ip: true });
           <input type="text" id="name" placeholder="Seu nome" required style="flex:1 1 220px;padding:.6rem .8rem;border-radius:10px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.07);color:#fff">
           <input type="tel" id="phone" placeholder="Seu WhatsApp" required style="flex:1 1 220px;padding:.6rem .8rem;border-radius:10px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.07);color:#fff">
           <input type="hidden" id="source" value="imovel" />
+          <label style="width:100%">Faixa de orçamento</label>
+          <select id="faixa_orcamento" style="flex:1 1 220px;padding:.6rem .8rem;border-radius:10px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.07);color:#fff">
+            <option value="">Selecione</option>
+            <option value="ate_300k">Até R$ 300 mil</option>
+            <option value="300k_500k">R$ 300 mil – R$ 500 mil</option>
+            <option value="500k_1m">R$ 500 mil – R$ 1 milhão</option>
+            <option value="acima_1m">Acima de R$ 1 milhão</option>
+          </select>
+          <label style="width:100%">Prazo de interesse</label>
+          <select id="prazo_interesse" style="flex:1 1 220px;padding:.6rem .8rem;border-radius:10px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.07);color:#fff">
+            <option value="">Selecione</option>
+            <option value="imediato">Imediato</option>
+            <option value="3_meses">Até 3 meses</option>
+            <option value="6_meses">3 a 6 meses</option>
+            <option value="12_meses">6 a 12 meses</option>
+            <option value="indefinido">Indefinido</option>
+          </select>
           <button type="submit" class="cta">Quero atendimento</button>
         </form>
         <p id="formStatus" style="margin-top:10px;opacity:.85"></p>
@@ -156,6 +179,9 @@ gtag('config', '', { anonymize_ip: true });
               var el = document.getElementById("formStatus");
               if (!el) return;
               el.textContent = res.status === 200 ? "Recebido! Entraremos em contato." : "Erro: " + JSON.stringify(res.json);
+              var detail = Object.assign({}, data, {status: res.status});
+              try { window.parent && window.parent.dispatchEvent && window.parent.dispatchEvent(new CustomEvent('lead_pre_qualificado', {detail: detail})); } catch (e) {}
+              try { window.dispatchEvent(new CustomEvent('lead_pre_qualificado', {detail: detail})); } catch (e) {}
             })
             .catch(function() {
               var el = document.getElementById("formStatus");
