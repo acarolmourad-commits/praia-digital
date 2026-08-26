@@ -144,9 +144,33 @@ document.getElementById('cadastroForm').addEventListener('submit', async e => {
   const desc = document.getElementById('desc').value.trim();
   const nome = document.getElementById('nome').value.trim();
   const whatsapp = document.getElementById('whatsapp').value.trim();
-  if (!titulo  !cidade  !tipo  !preco  !dorm  !area  !nome  !whatsapp  !faixa_orcamento  !prazo_interesse) {
+  const faixa_orcamento = document.getElementById('faixa_orcamento').value;
+  const prazo_interesse = document.getElementById('prazo_interesse').value;
+  if (!titulo || !cidade || !tipo || !preco || !dorm || !area || !nome || !whatsapp || !faixa_orcamento || !prazo_interesse) {
     err.textContent = 'Preencha todos os campos obrigatórios.';
     return;
+  }
+  const leadPayload = {
+    nome,
+    telefone: whatsapp,
+    cidade_interesse: cidade,
+    faixa_orcamento,
+    prazo_interesse,
+    origem: 'cadastro-imovel',
+    mensagem: `Tipo: ${tipo} | Preço: R$ ${Number(preco).toLocaleString('pt-BR')} | Dorm: ${dorm} | Área: ${area} m² | ${desc || ''}`
+  };
+  try {
+    const leadRes = await fetch('/api/lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(leadPayload)
+    });
+    if (!leadRes.ok) {
+      const leadErr = await leadRes.json().catch(() => ({}));
+      throw new Error(leadErr.detail || `Lead HTTP ${leadRes.status}`);
+    }
+  } catch (errLead) {
+    console.warn('Falha ao salvar lead local:', errLead.message);
   }
   const body = `### 🏠 Novo cadastro de imóvel\n\n` +
     `- **Título:** ${titulo}\n` +
@@ -155,7 +179,9 @@ document.getElementById('cadastroForm').addEventListener('submit', async e => {
     `- **Preço:** R$ ${Number(preco).toLocaleString('pt-BR')}\n` +
     `- **Dormitórios:** ${dorm}\n` +
     `- **Área:** ${area} m²\n` +
-    `- **Descrição:** ${desc  '-'}\n\n` +
+    `- **Faixa orçamento:** ${faixa_orcamento}\n` +
+    `- **Prazo interesse:** ${prazo_interesse}\n` +
+    `- **Descrição:** ${desc || '-'}\n\n` +
     `### 👤 Contato\n\n` +
     `- **Nome:** ${nome}\n` +
     `- **WhatsApp:** ${whatsapp}\n\n` +
@@ -168,7 +194,7 @@ document.getElementById('cadastroForm').addEventListener('submit', async e => {
     });
     if (!res.ok) {
       const data = await res.json().catch(() => ({}));
-      throw new Error(data.message  `HTTP ${res.status}`);
+      throw new Error(data.message || `HTTP ${res.status}`);
     }
     document.getElementById('cadastroForm').style.display = 'none';
     document.getElementById('out').style.display = 'block';
