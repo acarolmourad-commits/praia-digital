@@ -105,7 +105,7 @@ def main():
                           capture_output=True, text=True)
         if r.stdout.strip():
             subprocess.run(["git", "-C", REPO, "commit", "-m", f"chore: refresh dashboards outbound {date.today():%Y-%m-%d}"], check=True)
-            subprocess.run(["git", "-C", REPO, "push"], check=True)
+            subprocess.run(["git", "-C", REPO, "push", "origin", "main"], check=True)
             print("Commit+push dos artefatos atualizados.")
         else:
             print("Sem mudancas para versionar.")

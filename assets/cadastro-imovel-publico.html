@@ -88,6 +88,25 @@ gtag('config', '', { anonymize_ip: true });
 <label>Área (m²)</label>
 <input id="area" type="number" placeholder="60" required>
 
+
+<label>Faixa de orçamento</label>
+<select id="faixa_orcamento" required>
+  <option value="">Selecione</option>
+  <option>Até R$300k</option>
+  <option>R$300k-500k</option>
+  <option>R$500k-1M</option>
+  <option>Acima de R$1M</option>
+</select>
+
+<label>Prazo de interesse</label>
+<select id="prazo_interesse" required>
+  <option value="">Selecione</option>
+  <option>Imediato</option>
+  <option>3 meses</option>
+  <option>6 meses</option>
+  <option>12 meses</option>
+</select>
+
 <label>Descrição</label>
 <textarea id="desc" rows="3" placeholder="Diferenciais, localização, condomínio..."></textarea>
 
@@ -125,7 +144,7 @@ document.getElementById('cadastroForm').addEventListener('submit', async e => {
   const desc = document.getElementById('desc').value.trim();
   const nome = document.getElementById('nome').value.trim();
   const whatsapp = document.getElementById('whatsapp').value.trim();
-  if (!titulo  !cidade  !tipo  !preco  !dorm  !area  !nome  !whatsapp) {
+  if (!titulo  !cidade  !tipo  !preco  !dorm  !area  !nome  !whatsapp  !faixa_orcamento  !prazo_interesse) {
     err.textContent = 'Preencha todos os campos obrigatórios.';
     return;
   }

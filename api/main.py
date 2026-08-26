@@ -1,6 +1,9 @@
 from fastapi import FastAPI, HTTPException
+from pathlib import Path
 from pydantic import BaseModel
 from typing import Optional
+from datetime import datetime
+import json
 
 app = FastAPI(title="Praia Digital API", version="1.0.0")
 
@@ -15,7 +18,7 @@ class DescricaoRequest(BaseModel):
     cidade: str
     diferenciais: str
 
-class LeadRequest(BaseModel):
+class PriorizarRequest(BaseModel):
     origem: str
     tempo_resposta: int
     interacoes: int
@@ -96,7 +99,7 @@ def gerar_descricao(req: DescricaoRequest):
     return {"descricao": texto}
 
 @app.post("/priorizar")
-def priorizar_lead(req: LeadRequest):
+def priorizar_lead(req: PriorizarRequest):
     score = req.interacoes * 12
     score += 20 if req.tempo_resposta < 30 else 10 if req.tempo_resposta < 60 else 0
     score += 25 if req.origem == "Indicação" else 18 if req.origem == "WhatsApp" else 15 if req.origem == "Google Maps" else 10
@@ -107,3 +110,39 @@ def priorizar_lead(req: LeadRequest):
 @app.get("/health")
 def health():
     return {"status": "healthy"}
+
+
+class LeadRequest(BaseModel):
+    nome: str
+    email: Optional[str] = ""
+    telefone: Optional[str] = ""
+    cidade_interesse: Optional[str] = ""
+    faixa_orcamento: Optional[str] = ""
+    prazo_interesse: Optional[str] = ""
+    origem: Optional[str] = ""
+    mensagem: Optional[str] = ""
+
+
+try:
+    from .feed import gerar_feed
+except ImportError:
+    from feed import gerar_feed
+
+from fastapi import Response
+
+@app.get("/feed.xml")
+def feed_xml():
+    xml = gerar_feed()
+    return Response(content=xml, media_type="application/xml")
+
+@app.post("/lead")
+def salvar_lead(req: LeadRequest):
+    data = req.dict()
+    data["created_at"] = datetime.utcnow().isoformat() + "Z"
+    leads_dir = Path(__file__).resolve().parent / "leads"
+    leads_dir.mkdir(exist_ok=True)
+    date_str = datetime.utcnow().strftime("%Y-%m-%d")
+    file_path = leads_dir / f"{date_str}.jsonl"
+    with open(file_path, "a", encoding="utf-8") as f:
+        f.write(json.dumps(data, ensure_ascii=False) + "\n")
+    return {"status": "ok"}
