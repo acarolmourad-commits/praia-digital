@@ -62,3 +62,36 @@
   .compare-table .col-metric { background: var(--ocean); color: var(--white); }
   .compare-table .col-tradicional, .compare-table .col-praia { background: var(--white); }
 }
+
+/* Cluster guides section */
+#guias-relacionados .guides-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+#guias-relacionados .guide-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+#guias-relacionados .guide-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+#guias-relacionados .guide-card h3 {
+  font-size: 1.05rem;
+  margin: 0 0 .5rem;
+  color: var(--dark);
+}
+#guias-relacionados .guide-card p {
+  color: #6b7280;
+  font-size: .9rem;
+  margin: 0;
+}
+@media (max-width: 760px) {
+  #guias-relacionados .guides-grid { grid-template-columns: 1fr; }
+}
