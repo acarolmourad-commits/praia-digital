@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Captura de Leads — Litoral SP | Praia Digital</title>
+<meta name="description" content="Formulário de captação de leads para proprietários e imobiliárias do litoral de SP.">
+<link rel="preconnect" href="https://praia.digital">
+<script src="/assets/js/related-ads.js"></script>
+<link rel="stylesheet" href="/assets/css/related-ads.css">
+<meta name="pd-shared-nav">
+<style>
+  :root{--bg:#07111f;--card:#0f2942;--text:#e2e8f0;--muted:#94a3b8;--accent:#22d3ee;--accent2:#4ade80;--warn:#facc15;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  .wrap{max-width:980px;margin:0 auto;padding:2rem}
+  header{text-align:center;padding:2.5rem 0 1rem}
+  header h1{color:#fff;font-size:1.9rem;margin:0}
+  header p{color:var(--muted);margin:.4rem 0 0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1.5rem 0}
+  .card{background:var(--card);padding:1.25rem;border-radius:12px;border:1px solid #1f3a5f}
+  label{display:block;color:#cbd5e1;font-size:.9rem;margin:.6rem 0 .3rem}
+  input,select,textarea{width:100%;background:#0b1d33;border:1px solid #1f3a5f;color:#e2e8f0;padding:.6rem .8rem;border-radius:8px;outline:none}
+  input:focus,select:focus,textarea:focus{border-color:var(--accent)}
+  button{margin-top:1rem;background:var(--accent);color:#07111f;border:none;padding:.75rem 1rem;border-radius:8px;font-weight:700;cursor:pointer}
+  .result{margin-top:1rem;background:#0b2d4d;border:1px dashed var(--accent);padding:1rem;border-radius:12px;display:none}
+  footer{text-align:center;color:#64748b;font-size:.85rem;padding:2rem 0}
+  .disclaimer{background:#1a1a1a;border-left:3px solid var(--warn);padding:.8rem 1rem;border-radius:8px;color:#d6d3d1;font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>📥 Captura de Leads — Litoral SP</h1>
+    <p>Preencha os dados abaixo para receber uma análise consultiva do seu bairro.</p>
+  </header>
+
+  <form id="leadForm">
+    <div class="grid">
+      <div class="card">
+        <label for="nome">Nome completo</label>
+        <input id="nome" name="nome" required>
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required>
+        <label for="cidade">Cidade</label>
+        <select id="cidade" name="cidade" required>
+          <option value="">Selecione</option>
+          <option>Guarujá</option>
+          <option>São Vicente</option>
+          <option>Santos</option>
+          <option>Praia Grande</option>
+          <option>Peruíbe</option>
+          <option>Itanhaém</option>
+          <option>Bertioga</option>
+        </select>
+        <label for="bairro">Bairro do imóvel</label>
+        <input id="bairro" name="bairro" required>
+      </div>
+      <div class="card">
+        <label for="perfil">Perfil</label>
+        <select id="perfil" name="perfil">
+          <option>Proprietário</option>
+          <option>Investidor</option>
+          <option>Corretor</option>
+          <option>Imobiliária</option>
+          <option>Construtora</option>
+        </select>
+        <label for="interesse">Interesse principal</label>
+        <select id="interesse" name="interesse">
+          <option>Venda</option>
+          <option>Aluguel temporada</option>
+          <option>Aluguel anual</option>
+          <option>Avaliação</option>
+          <option>Outro</option>
+        </select>
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+      </div>
+    </div>
+    <button type="submit">Quero receber a análise</button>
+    <div class="result" id="result">Obrigado! Entraremos em contato.</div>
+    <button type="button" id="exportBtn" style="background:#fff;color:#07111f;margin-left:.6rem;">Exportar leads capturados</button>
+  </form>
+
+  <script>
+    const KEY = 'praiaLeads';
+    const form = document.getElementById('leadForm');
+    const result = document.getElementById('result');
+    const exportBtn = document.getElementById('exportBtn');
+    function load() {
+      try { return JSON.parse(localStorage.getItem(KEY) || '[]'); } catch { return []; }
+    }
+    function save(arr) { localStorage.setItem(KEY, JSON.stringify(arr)); }
+    function esc(s) { return String(s||'').replace(/"/g,'""'); }
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const data = {
+        nome: form.nome.value.trim(),
+        email: form.email.value.trim(),
+        cidade: form.cidade.value,
+        bairro: form.bairro.value.trim(),
+        perfil: form.perfil.value,
+        interesse: form.interesse.value,
+        mensagem: form.mensagem.value.trim(),
+        origem: 'captura-leads-litoral-2026',
+        status: 'novo',
+        score: '',
+        data_captura: new Date().toISOString().slice(0,10)
+      };
+      if (!data.nome || !data.email || !data.cidade || !data.bairro) {
+        result.style.display = 'block'; result.textContent = 'Preencha nome, e-mail, cidade e bairro.';
+        return;
+      }
+      const arr = load();
+      arr.push(data);
+      save(arr);
+      result.style.display = 'block'; result.textContent = 'Obrigado, ' + data.nome + '! Seu cadastro foi registrado.';
+      form.reset();
+    });
+    exportBtn.addEventListener('click', function () {
+      const arr = load();
+      if (!arr.length) { alert('Nenhum lead capturado ainda.'); return; }
+      const header = ['nome','email','cidade','bairro','perfil','interesse','mensagem','origem','status','score','data_captura'];
+      const lines = [header.join(';')];
+      for (const r of arr) lines.push(header.map(h => esc(r[h])).join(';'));
+      const blob = new Blob([lines.join('\n')], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href = url; a.download = 'leads-captura-site-export.csv';
+      document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url);
+    });
+  </script>
+
+  <div class="disclaimer">
+    <strong>Aviso legal:</strong> Os dados enviados serão usados apenas para contato comercial consultivo. Não compartilhamos informações com terceiros. Veja a Política de Privacidade.
+  </div>
+
+  <footer>
+    Praia Digital · Comércio e inteligência imobiliária no litoral de SP · 2026<br><br>
+    <a href="https://acarolmourad-commits.github.io/praia-digital/termos-uso.html" style="color:#94a3b8;">Termos de Uso</a> · 
+    <a href="https://acarolmourad-commits.github.io/praia-digital/politica-de-privacidade.html" style="color:#94a3b8;">Política de Privacidade</a>
+  </footer>
+  <meta name="pd-shared-footer">
+</div>
+</body>
+</html>

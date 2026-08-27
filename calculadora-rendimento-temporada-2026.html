@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Potencial de Rendimento — Aluguel de Temporada | Praia Digital</title>
+<meta name="description" content="Calcule o potencial de rendimento do seu imóvel de praia por temporada em 2026.">
+<style>
+  :root{--bg:#07111f;--card:#0f2942;--text:#e2e8f0;--muted:#94a3b8;--accent:#22d3ee;--accent2:#4ade80;--warn:#facc15;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  .wrap{max-width:980px;margin:0 auto;padding:2rem}
+  header{text-align:center;padding:2.5rem 0 1rem}
+  header h1{color:#fff;font-size:1.9rem;margin:0}
+  header p{color:var(--muted);margin:.4rem 0 0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1.5rem 0}
+  .card{background:var(--card);padding:1.25rem;border-radius:12px;border:1px solid #1f3a5f}
+  label{display:block;color:#cbd5e1;font-size:.9rem;margin:.6rem 0 .3rem}
+  input,select{width:100%;background:#0b1d33;border:1px solid #1f3a5f;color:#e2e8f0;padding:.6rem .8rem;border-radius:8px;outline:none}
+  input:focus,select:focus{border-color:var(--accent)}
+  button{margin-top:1rem;background:var(--accent);color:#07111f;border:none;padding:.75rem 1rem;border-radius:8px;font-weight:700;cursor:pointer}
+  .result{margin-top:1rem;background:#0b2d4d;border:1px dashed var(--accent);padding:1rem;border-radius:12px;display:none}
+  .result .num{font-size:1.6rem;color:#fff;font-weight:800}
+  .result .lbl{color:var(--muted);font-size:.9rem}
+  footer{text-align:center;color:#64748b;font-size:.85rem;padding:2rem 0}
+  .disclaimer{background:#1a1a1a;border-left:3px solid var(--warn);padding:.8rem 1rem;border-radius:8px;color:#d6d3d1;font-size:.9rem;margin-top:1rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🧮 Calculadora de Potencial de Rendimento</h1>
+    <p>Aluguel de temporada no litoral de SP — Estimativa 2026</p>
+  </header>
+
+  <form id="calcForm">
+    <div class="grid">
+      <div class="card">
+        <label for="cidade">Cidade</label>
+        <select id="cidade" name="cidade" required>
+          <option value="">Selecione</option>
+          <option>Santos</option>
+          <option>Guarujá</option>
+          <option>São Vicente</option>
+          <option>Praia Grande</option>
+          <option>Peruíbe</option>
+          <option>Itanhaém</option>
+          <option>Bertioga</option>
+        </select>
+        <label for="bairro">Bairro</label>
+        <input id="bairro" name="bairro" required>
+        <label for="quartos">Quartos</label>
+        <select id="quartos" name="quartos">
+          <option>1</option><option>2</option><option>3</option><option>4+</option>
+        </select>
+      </div>
+      <div class="card">
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required>
+        <label for="whatsapp">WhatsApp</label>
+        <input id="whatsapp" name="whatsapp" required>
+        <label for="ocupacao">Ocupação estimada (%)</label>
+        <input id="ocupacao" name="ocupacao" type="number" min="0" max="100" value="60">
+      </div>
+    </div>
+    <button type="submit">Calcular potencial</button>
+    <div class="result" id="result"></div>
+    <button type="button" id="exportBtn" style="background:#fff;color:#07111f;margin-left:.6rem;display:none;">Exportar leads capturados</button>
+  </form>
+
+  <div class="disclaimer">
+    <strong>Aviso legal:</strong> Esta estimativa é indicativa e não constitui garantia de rentabilidade. O resultado real depende de sazonalidade, localização, qualidade do anúncio e gestão. Veja a Política de Privacidade.
+  </div>
+
+  <footer>
+    Praia Digital · Comércio e inteligência imobiliária no litoral de SP · 2026
+  </footer>
+</div>
+
+<script>
+  const RATES = {
+    'Santos': [180,280,400,550],
+    'Guarujá': [150,240,350,480],
+    'São Vicente': [120,200,300,400],
+    'Praia Grande': [130,220,330,450],
+    'Peruíbe': [110,180,280,380],
+    'Itanhaém': [120,200,300,400],
+    'Bertioga': [160,260,380,500]
+  };
+  const KEY = 'praiaCalcLeads';
+  const form = document.getElementById('calcForm');
+  const result = document.getElementById('result');
+  const exportBtn = document.getElementById('exportBtn');
+
+  function esc(s){return String(s||'').replace(/"/g,'""');}
+  function load(){try{return JSON.parse(localStorage.getItem(KEY)||'[]');}catch{return [];}}
+  function save(arr){localStorage.setItem(KEY, JSON.stringify(arr));}
+
+  function calc(){
+    const cidade = form.cidade.value;
+    const bairro = form.bairro.value.trim();
+    const quartos = form.quartos.value;
+    const email = form.email.value.trim();
+    const whatsapp = form.whatsapp.value.trim();
+    const ocupacao = Math.max(0, Math.min(100, Number(form.ocupacao.value)||0));
+
+    if (!cidade || !bairro || !email || !whatsapp) {
+      result.style.display = 'block';
+      result.innerHTML = '<div class="lbl">Preencha todos os campos.</div>';
+      return;
+    }
+
+    const idx = Number(quartos) >= 4 ? 3 : Number(quartos) - 1;
+    const nightly = (RATES[cidade] || [150])[idx] || 150;
+    const annualNights = 365 * (ocupacao / 100);
+    const annual = nightly * annualNights;
+    const monthly = annual / 12;
+
+    const projection = { monthly, annual, nightly, currency: 'BRL' };
+
+    result.style.display = 'block';
+    result.innerHTML = `
+      <div class="num">R$ ${monthly.toFixed(0)}/mês</div>
+      <div class="lbl">Média estimada · R$ ${annual.toFixed(0)}/ano</div>
+      <div class="lbl">Diária base estimada: R$ ${nightly.toFixed(0)} · Ocupação: ${ocupacao}%</div>
+      <div class="lbl">Local: ${cidade} — ${bairro} · Quartos: ${quartos}</div>
+    `;
+
+    const arr = load();
+    arr.push({
+      nome:'', email, whatsapp, cidade, bairro, quartos, ocupacao,
+      proj_mensal: Number(monthly.toFixed(2)),
+      proj_anual: Number(annual.toFixed(2)),
+      diaria_base: nightly,
+      origem:'calculadora-rendimento-temporada-2026',
+      status:'novo',
+      data_captura: new Date().toISOString().slice(0,10)
+    });
+    save(arr);
+    exportBtn.style.display = 'inline-block';
+  }
+
+  form.addEventListener('submit', function(e){ e.preventDefault(); calc(); });
+
+  exportBtn.addEventListener('click', function(){
+    const arr = load();
+    if (!arr.length){ alert('Nenhum lead capturado ainda.'); return; }
+    const header = ['nome','email','whatsapp','cidade','bairro','quartos','ocupacao','proj_mensal','proj_anual','diaria_base','origem','status','data_captura'];
+    const lines = [header.join(';')];
+    for (const r of arr) lines.push(header.map(h => esc(r[h])).join(';'));
+    const blob = new Blob([lines.join('\n')], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a'); a.href = url; a.download = 'leads-calculadora-export.csv';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url);
+  });
+</script>
+</body>
+</html>
