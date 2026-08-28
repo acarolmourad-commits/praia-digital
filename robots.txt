@@ -7,11 +7,8 @@ Disallow: /.git/
 Disallow: /backups/
 Disallow: /dashboards/
 Disallow: /leads/
+Disallow: /outreach/
+Disallow: /ferramentas/airbnb-admin.html
 
 Sitemap: https://praia.digital/sitemap.xml
 Host: https://praia.digital
-Disallow: /outreach/Disallow: /assets/ferramentas/Disallow: /servicos/cidade-servico/Disallow: /ferramentas/airbnb-admin.html
-Disallow: /outreach/
-Disallow: /assets/ferramentas/
-Disallow: /servicos/cidade-servico/
-Disallow: /ferramentas/airbnb-admin.html
