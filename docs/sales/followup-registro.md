@@ -16891,3 +16891,1005 @@ Atualizado em: 2026-08-23
 - 30/08/2026 08:00: automação diária — 0 fu3d, 587 fu7d, 0 alertas
 
 - 30/08/2026 09:00: automação diária — 0 fu3d, 587 fu7d, 0 alertas
+| Roberto Dias | Litoral Premium Sant | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Nunes | Riviera Launch | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Gustavo Nunes | Riviera Platinum | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Isabela Costa | Riviera Elite | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Nunes | Beta Imóveis Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Mariana Costa | Litoral Norte Premium | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Souza | Caiçara Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Lima | Praia Grande Norte | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Mariana Costa | Riviera Norte | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Costa | Riviera Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Lima | Caiçara Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Natália Almeida | Riviera Exclusive | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Gomes | Riviera Exclusive | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Dias | Caiçara Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Marcelo Lima | Caiçara Conectada | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Gustavo Nunes | Riviera Executive | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Ferreira | Riviera Exclusive | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Dias | Caiçara Conectada | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Marcelo Dias | Caiçara Platinum | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Rafaela Nunes | Embaré Elite | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Lima | Caiçara Elite | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Lima | Prime Imóveis Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Renato Almeida | Litoral Norte Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Barros | Riviera Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Mendes | Boqueirão Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Costa | Boqueirão Norte | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Isabela Costa | Riviera Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Thiago Rocha | Peruíbe Eco | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Ribeiro | Gonzaga Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Nunes | Embaré Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carlos Dias | Peruíbe Natureza | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bianca Martins | Gonzaga Smart | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Ferreira | Embaré Conecta | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Amanda Souza | Peruíbe Executive | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fábio Costa | Gonzaga Executive | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Ferreira | Embaré Executive | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Gustavo Almeida | Peruíbe Nature | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bianca Martins | Gonzaga Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Amanda Souza | Peruíbe Platinum | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fábio Costa | Gonzaga Platinum | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Ferreira | Embaré Platinum | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Gustavo Henrique | Peruíbe Elite | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Mariana Rocha | Gonzaga Premium | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Barros | Rio Preto Sol | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Camila Souza | Peruíbe Norte | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Almeida | Gonzaga Sul | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Felipe Nascimento | Peruíbe Coast | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Débora Almeida | Bertioga Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Camila Ribeiro | Gonzaga Norte | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Humberto Costa | Peruíbe Ecologic | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Juliano Mendes | Santos Vision | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Mendes | Bertioga Platinum | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Débora Almeida | Bertioga Elite | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Monique Rocha | Bertioga Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Barros | Mar & Sol Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Costa | Peruíbe Sol | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Marina Rocha | Ponta da Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Thiago Lima | Itanhaém Norte | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Igor Barros | Guarujá Blue Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Monique Rocha | Bertioga Riviera Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fábio Souza | Itanhaém Premium | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Leonardo Azevedo | Guarujá Premium | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Lopes | Bertioga Green | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fábio Carvalho | Itanhaém Premium | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Rocha | Praia Grande Smart | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carla Nunes | Praia Grande Relax | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Marina Costa | Guarujá Executive | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Mendes | Bertioga Executive | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Barros | Itanhaém Executive | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carla Nunes | Praia Grande Vision | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| André Luiz | Guarujá Coast Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Costa | Bertioga Premium | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fábio Souza | Itanhaém Premium | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Thiago Barros | Guarujá Launch | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Rocha | Bertioga Launch | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fábio Souza | Itanhaém Launch | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Marina Costa | Guarujá Platinum | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Barros | Itanhaém Platinum | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fábio Rocha | Guarujá Elite | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Thiago Lima | Itanhaém Elite | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Igor Barros | Guarujá Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Lima | Norte Sul Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Nunes | Ocean Blue Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Souza | Prime Imóveis Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carlos Souza | Itanhaém Mar | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paula Souza | José Menino Premium | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paula Torres | Gaivota Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Barros | Itanhaém Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Eduardo Pires | Guarujá Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Sofia Almeida | Bertioga Riviera | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Gustavo Lima | Itanhaém View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Souza | Bertioga Smart | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Amanda Rocha | Guarujá Zen | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| André Luiz | Bertioga Premium | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Aline Barros | Guarujá Vision | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carlos Lima | Alpha Imóveis Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Ribeiro | Maresias Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Nunes | Mongaguá Atlântica | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Renata Lima | Vila Tupi Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Souza | Jussara Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Nunes | Mongaguá Sul | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Almeida | Barra Peruíbe Sul | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Aline Torres | Mongaguá Beach | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Lívia Souza | Mongaguá Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Marcelo Barros | Barra Norte | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Catarina Lima | Mongaguá Tropical | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Camila Ferreira | Mongaguá Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Marcelo Almeida | Barra Norte | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Aline Barros | Guarujá Smart | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Aline Souza | Mongaguá Relax | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Costa | Barra Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Rocha | Mongaguá Executive | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Costa | Barra Executive | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Camila Rocha | Mongaguá Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Camila Lima | Mongaguá Launch | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Rocha | Mongaguá Platinum | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Lívia Souza | Mongaguá Elite | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Marcelo Barros | Barra Elite | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Lima | Região Sul Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Costa | Norte Sul Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Nunes | Sol & Mar Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carlos Almeida | Barra de Peruíbe | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Lima | Balneário Conchas | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Juliana Mendes | Maresias Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Mendes | Praia Grande Sul | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| André Luiz | Praia Grande Business | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Nunes | Praia Grande Estrutura | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Lima | Praia Grande Executive | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Lima | Praia Grande Smart | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Mendes | Praia Grande Launch | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Lima | Praia Grande Platinum | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Mendes | Praia Grande Elite | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Maria Rocha | Beta Imóveis Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Mendes | Região Sul Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Mendes | Imobiliária Litoral Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Amanda Costa | Costa Azul Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Almeida | Vila São Paulo | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Marcos Vinícius | Praia Grande Park | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Rodrigo Dias | Praia Grande Center | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Costa | Jardim Rio Branco | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carlos Almeida | São Vicente Platinum | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carla Dias | São Vicente Elite | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Priscila Nunes | São Vicente Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Lima | São Vicente Premium | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Lucas Mendes | Agenor de Campos | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Camila Costa | Itinguçu Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| André Costa | Guarujá Mar Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carla Dias | São Vicente Norte | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Priscila Nunes | São Vicente Green | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Juliana Martins | São Vicente Bay | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Mendes | São Vicente Conectada | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carlos Almeida | São Vicente Executive | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carla Dias | São Vicente Connect | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carla Dias | São Vicente Launch | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Camila Torres | Enseada Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Alexandre Pires | Tombo Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Rafael Almeida | Tombo Beach | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carlos Mendes | São Vicente Smart | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fábio Ribeiro | Tombo Surf | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Rodrigo Almeida | São Vicente Premium | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bianca Martins | Tombo Executive | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Rafael Barros | Tombo Beach | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Rafael Almeida | Tombo Launch | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bianca Martins | Tombo Platinum | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Alexandre Pires | Tombo Elite | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carlos Mendes | Tombo Norte | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Rafael Souza | Tombo Beach | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Daniel Almeida | Catiapoã Sul | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Caio Ribeiro | Tombo Exclusive | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Renata Almeida | Catiapoã Nature | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Costa | Catiapoã Nature | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Renata Almeida | Catiapoã Platinum | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Daniel Almeida | Catiapoã Elite | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Rocha | Catiapoã Norte | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Costa | Catiapoã Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Renata Almeida | Catiapoã Executive | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Pereira | Região Sul Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Souza | Edifica Praia View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Pereira | Beta Imóveis View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Maria Barros | Sol & Mar Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Mendes | Região Sul Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Juliana Barros | Caiçara Digital Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Gomes | Porto da Lua Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Gomes | Edifica Praia Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Rocha | Praia Grande Site View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Nunes | Riviera Blue Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Gomes | Mar & Sol Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Costa | Santos Tower Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Gomes | Praia Grande Site Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Costa | Santos Tower Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Souza | Caiçara Digital Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Lima | Praia Grande Site View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Costa | Norte Sul Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Barros | Prime Imóveis Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carlos Costa | Norte Sul Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Gomes | Riviera Blue Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Gomes | Região Sul Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Pereira | Beta Imóveis Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Lima | Prime Imóveis Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Silva | Costa Verde Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Souza | Norte Sul Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Costa | Caiçara Digital Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Juliana Mendes | Riviera Blue View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carlos Nunes | Beta Imóveis Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Costa | Região Sul Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carlos Nunes | Norte Sul Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Mendes | Sol & Mar Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Lima | Alpha Imóveis View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carlos Barros | Santos Tower Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Juliana Rocha | Mar & Sol Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Alves | Ocean Blue Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Gomes | Litoral Premium Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Rocha | Caiçara Digital View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Maria Rocha | Porto da Lua Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Silva | Alpha Imóveis Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carlos Alves | Santos Tower Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Renata Nunes | Prime Imóveis Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Rocha | Costa Azul Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Gomes | Praia Grande Site Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Souza | Mar & Sol Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Lima | Ocean Blue Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Renata Mendes | Ocean Blue Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Gomes | Norte Imóveis View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Marcelo Mendes | Ocean Blue View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Barros | Riviera Blue Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Pereira | Caiçara Digital View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Pereira | Porto da Lua Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Marcelo Souza | Riviera Blue Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Pereira | Prime Imóveis Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Maria Barros | Costa Azul Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Marcelo Pereira | Praia Grande Site Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Alves | Itanhaém Premium Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Costa | Praia Grande Site Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Alves | Edifica Praia Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Gomes | Riviera Blue Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Nunes | Região Sul Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Maria Costa | Recife Imóveis Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Maria Nunes | Costa do Mar Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Lima | Norte Imóveis Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Silva | Praia Digital Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Gomes | Beta Imóveis Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Gomes | Norte Imóveis Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Silva | Porto da Lua Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Juliana Souza | Praia Digital View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Maria Pereira | Litoral Premium Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Pereira | Costa Verde Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carlos Alves | Praia Grande Site View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Souza | Atlântico Imóveis Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Lopes | Costa Verde Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Barros | Sul Imóveis Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Mendes | Edifica Praia Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Pereira | Ocean Blue Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Alves | Realize II Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Juliana Silva | Realize II Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Ferreira | Litoral Brasil Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Rocha | Barra Digital Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Lima | Riviera Blue Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Juliana Silva | Realize II Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Gomes | Beta Imóveis Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Maria Lima | Barra Digital Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carlos Silva | Mar & Sol Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Lima | Região Sul Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Gomes | Riviera Blue Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Juliana Nunes | Ocean Blue Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Maria Rocha | Ocean Blue View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carlos Rocha | Norte Sul Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Lima | Riviera Blue Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Pereira | Edifica Praia Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Rocha | Mar & Sol Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Silva | Alpha Imóveis Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Lima | Riviera Blue Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Barros | Edifica Praia Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Mendes | Região Sul Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Rocha | Mar & Sol Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Maria Barros | Santos Tower Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Barros | Santos Tower Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Juliana Rocha | Norte Sul Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Nunes | Praia Grande Site View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Lima | Norte Sul Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Silva | Riviera Blue View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Souza | Beta Imóveis View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Souza | Riviera Blue Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Souza | Mar & Sol Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Costa | Prime Imóveis Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Souza | Riviera Blue Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Maria Costa | Norte Sul Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Lopes | Mar & Sol Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Costa | Barra Digital Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Barros | Realize II Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Juliana Gomes | Sol & Mar Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Alves | Prime Imóveis Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Barros | Beta Imóveis Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Mendes | Praia Grande Site Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Rocha | Alpha Imóveis Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Mendes | Santos Tower Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Mendes | Riviera Blue Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Rocha | Beta Imóveis Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Mendes | Praia Grande Site Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Mariana Pereira | Sol & Mar View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Maria Alves | Santos Tower Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Teixeira | Riviera Blue Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Nunes | Norte Sul Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Mariana Alves | Realize II Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Ferreira | Beta Imóveis View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Mariana Lima | Mongaguá Imóveis Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Juliana Teixeira | Realize II Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Barros | Porto da Lua Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Lopes | Beta Imóveis Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Mendes | Caiçara Digital Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Juliana Souza | Caiçara Digital Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carlos Alves | Prime Imóveis Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Alves | Ocean Blue Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Gomes | Costa Verde Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Juliana Costa | Barra Digital Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Mariana Alves | Barra Digital Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Nunes | Região Sul Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carlos Lima | Beta Imóveis Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Silva | Vista Mar Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Ferreira | Vista Mar Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carlos Lopes | Mar & Sol Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Pereira | Caiçara Digital Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Barros | Caiçara Digital Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Teixeira | Realize II Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Lopes | Prime Imóveis Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Alves | Sol & Mar Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Barros | Sol & Mar Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Ramos | Porto da Lua Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Barros | Norte Sul Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Pereira | Itanhaém Premium Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Mendes | Norte Sul Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Alves | Porto da Lua Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Silva | Região Sul Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Diego Mendes | Costa Verde Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Rocha | Ocean Blue Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Mendes | Sol & Mar Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Maria Silva | Região Sul View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Alves | Região Sul Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Teixeira | Mar Brasil Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Mariana Lima | Barra Digital Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Mendes | Recife Imóveis Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Gomes | Litoral Brasil Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Juliana Pereira | Santos Tower Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Juliana Rocha | Riviera Blue View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Camila Nunes | Mar & Sol Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Moura | Mar & Sol Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carlos Ferreira | Litoral Premium Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Silva | Barra Digital Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Souza | Caiçara Digital Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Souza | Riviera Blue Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Mendes | Beta Imóveis Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Alves | Região Sul Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Maria Rocha | Mongaguá Imóveis Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Silva | Ocean Blue Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Ferreira | Edifica Praia Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Souza | Edifica Praia Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Costa | Barra Digital Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Maria Lima | Prime Imóveis Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Barros | Beta Imóveis Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Juliana Gomes | Caiçara Digital Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Souza | Costa Verde Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Ferreira | Edifica Praia Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Mendes | Edifica Praia Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Mariana Costa | Itanhaém Premium Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Nunes | Mar & Sol Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Felipe Nunes | Alpha Imóveis Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Camila Mendes | Santos Tower Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Diego Mendes | Prime Imóveis Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Diego Moura | Costa Verde View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Diego Silva | Região Sul Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Teixeira | Alpha Imóveis Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Maria Rocha | Santos Tower Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Souza | Mongaguá Imóveis Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Rocha | Mar & Sol View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Souza | Ocean Blue Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Teixeira | Litoral Premium Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Lima | Norte Sul Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Lima | Santos Tower Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Gomes | Região Sul Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Souza | Norte Sul Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Araújo | Costa Verde Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Gomes | Itanhaém Premium Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Mendes | Caiçara Digital Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Camila Nunes | Prime Imóveis Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Alves | Costa Verde Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Camila Alves | Santos Tower Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Juliana Barros | Norte Sul Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Juliana Teixeira | Praia Grande Site Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Camila Lopes | Itanhaém Premium Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Silva | Sol & Mar Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Camila Gomes | Litoral Premium Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Costa | Alpha Imóveis Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Lopes | Alpha Imóveis Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Barros | Norte Sul Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Alves | Litoral Premium Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Ferreira | Porto da Lua Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Pereira | Santos Tower Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Silva | Região Sul Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Costa | Praia Grande Site Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Lima | Realize II Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Amanda Gomes | Ocean Blue Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Rafael Nunes | Norte Imóveis Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Rafael Silva | Norte Sul Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Thiago Mendes | Alpha Imóveis Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Vieira | Praia Digital Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Mariana Mendes | Barra Digital Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Mariana Rocha | Vista Mar Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Lima | Sol & Mar Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Felipe Ferreira | Edifica Praia Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Felipe Ribeiro | Costa Azul Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Araújo | Mar & Sol Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bianca Rocha | Norte Sul Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Camila Teixeira | Barra Digital Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Thiago Lima | Praia Digital Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Rocha | Praia Digital Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Maria Teixeira | Norte Sul Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Amanda Barros | Edifica Praia Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Thiago Ferreira | Região Sul Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Thiago Cardoso | Costa do Mar Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Cardoso | Sol & Mar Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Mendes | Costa do Mar Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Teixeira | Edifica Praia Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ricardo Moreira | Prime Imóveis Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bianca Vieira | Litoral Brasil Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Alves | Prime Imóveis View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Souza | Santos Tower Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Mariana Mendes | Barra Digital View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Camila Cardoso | Mongaguá Imóveis Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Camila Mendes | Litoral Premium Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Nunes | Norte Imóveis Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Souza | Itanhaém Premium View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Rafael Ribeiro | Atlântico Imóveis Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Rafael Moura | Costa do Mar Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Rafael Ferreira | Realize II Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Rafael Alves | Recife Imóveis Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Amanda Gomes | Barra Digital Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Rafael Rocha | Alpha Imóveis Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Ribeiro | Alpha Imóveis Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Camila Souza | Praia Grande Site View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Amanda Rocha | Mar & Sol Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Mendes | Praia Grande Site Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Teixeira | Vista Mar Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bianca Alves | Edifica Praia Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Felipe Moreira | Prime Imóveis Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Thiago Cardoso | Sul Imóveis Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Moura | Região Sul Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Rafael Vieira | Barra Digital Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Amanda Nunes | Mar Brasil Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Mariana Alves | Barra Digital Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Nunes | Norte Sul Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Thiago Alves | Edifica Praia Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Juliana Barros | Norte Sul Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Thiago Souza | Realize II View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Rocha | Porto da Lua Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Maria Silva | Barra Digital Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Diego Lopes | Sul Imóveis Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Lopes | Ocean Blue Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Moreira | Itanhaém Premium View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Cardoso | Costa do Mar Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Thiago Souza | Mar Brasil Digital | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bianca Gomes | Atlântico Imóveis Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Rafael Moreira | Ocean Blue Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Maria Teixeira | Itanhaém Premium Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Camila Gomes | Mongaguá Imóveis Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Araújo | Atlântico Imóveis Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Alves | Realize II Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Maria Costa | Itanhaém Premium Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Rafael Teixeira | Beta Imóveis Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Costa | Caiçara Digital Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carlos Moura | Barra Digital Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Rocha | Litoral Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Patrícia Rocha | Mar & Sol Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Alves | Porto da Lua Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| João Lopes | Vista Mar Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Paulo Alves | Edifica Praia Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| André Teixeira | Costa Verde Litoral | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Leonardo Dias | Mongaguá Imóveis Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Marcos Souza | Praia Grande Site Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Marcos Freitas | Praia Grande Site Prop | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Mariana Freitas | Praia Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Sandra Mendes | Litoral Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Freitas | Alpha Imóveis Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Sandra Moura | Praia Grande Site View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Monteiro | Sol & Mar View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Mariana Cardoso | Edifica Praia Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Bruno Monteiro | Edifica Praia Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Vanessa Dias | Litoral Premium Tech | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Amanda Cavalcanti | Riviera Blue View | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Larissa Silva | Vista Mar Prop | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Sandra Ferreira | Edifica Praia Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Carlos Moreira | Mar Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Maria Freitas | Atlântico Imóveis Centro | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Marcos Barros | Edifica Praia Prop | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Leonardo Barros | Atlântico Imóveis Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Luciana Barros | Norte Sul Praia | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Marcos Souza | Costa Azul  Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Vanessa Nunes | Riviera Blue Site | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Marcos Monteiro | Litoral Premium Imóveis | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Ana Rocha | Prime Imóveis Prime | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+| Fernanda Monteiro | Costa Verde Blue | email | parceria | 2026-08-30 | 2026-09-02 | 2026-09-06 |
+
+- 31/08/2026 08:00: automação diária — 0 fu3d, 587 fu7d, 0 alertas
+
+- 31/08/2026 09:00: automação diária — 0 fu3d, 587 fu7d, 0 alertas
+| Roberto Dias | Litoral Premium Sant | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Nunes | Riviera Launch | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Gustavo Nunes | Riviera Platinum | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Isabela Costa | Riviera Elite | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Nunes | Beta Imóveis Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Mariana Costa | Litoral Norte Premium | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Souza | Caiçara Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Lima | Praia Grande Norte | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Mariana Costa | Riviera Norte | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Costa | Riviera Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Lima | Caiçara Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Natália Almeida | Riviera Exclusive | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Gomes | Riviera Exclusive | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Dias | Caiçara Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Marcelo Lima | Caiçara Conectada | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Gustavo Nunes | Riviera Executive | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Ferreira | Riviera Exclusive | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Dias | Caiçara Conectada | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Marcelo Dias | Caiçara Platinum | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Rafaela Nunes | Embaré Elite | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Lima | Caiçara Elite | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Lima | Prime Imóveis Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Renato Almeida | Litoral Norte Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Barros | Riviera Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Mendes | Boqueirão Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Costa | Boqueirão Norte | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Isabela Costa | Riviera Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Thiago Rocha | Peruíbe Eco | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Ribeiro | Gonzaga Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Nunes | Embaré Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carlos Dias | Peruíbe Natureza | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bianca Martins | Gonzaga Smart | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Ferreira | Embaré Conecta | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Amanda Souza | Peruíbe Executive | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fábio Costa | Gonzaga Executive | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Ferreira | Embaré Executive | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Gustavo Almeida | Peruíbe Nature | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bianca Martins | Gonzaga Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Amanda Souza | Peruíbe Platinum | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fábio Costa | Gonzaga Platinum | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Ferreira | Embaré Platinum | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Gustavo Henrique | Peruíbe Elite | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Mariana Rocha | Gonzaga Premium | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Barros | Rio Preto Sol | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Camila Souza | Peruíbe Norte | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Almeida | Gonzaga Sul | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Felipe Nascimento | Peruíbe Coast | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Débora Almeida | Bertioga Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Camila Ribeiro | Gonzaga Norte | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Humberto Costa | Peruíbe Ecologic | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Juliano Mendes | Santos Vision | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Mendes | Bertioga Platinum | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Débora Almeida | Bertioga Elite | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Monique Rocha | Bertioga Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Barros | Mar & Sol Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Costa | Peruíbe Sol | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Marina Rocha | Ponta da Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Thiago Lima | Itanhaém Norte | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Igor Barros | Guarujá Blue Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Monique Rocha | Bertioga Riviera Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fábio Souza | Itanhaém Premium | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Leonardo Azevedo | Guarujá Premium | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Lopes | Bertioga Green | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fábio Carvalho | Itanhaém Premium | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Rocha | Praia Grande Smart | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carla Nunes | Praia Grande Relax | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Marina Costa | Guarujá Executive | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Mendes | Bertioga Executive | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Barros | Itanhaém Executive | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carla Nunes | Praia Grande Vision | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| André Luiz | Guarujá Coast Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Costa | Bertioga Premium | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fábio Souza | Itanhaém Premium | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Thiago Barros | Guarujá Launch | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Rocha | Bertioga Launch | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fábio Souza | Itanhaém Launch | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Marina Costa | Guarujá Platinum | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Barros | Itanhaém Platinum | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fábio Rocha | Guarujá Elite | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Thiago Lima | Itanhaém Elite | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Igor Barros | Guarujá Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Lima | Norte Sul Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Nunes | Ocean Blue Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Souza | Prime Imóveis Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carlos Souza | Itanhaém Mar | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paula Souza | José Menino Premium | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paula Torres | Gaivota Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Barros | Itanhaém Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Eduardo Pires | Guarujá Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Sofia Almeida | Bertioga Riviera | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Gustavo Lima | Itanhaém View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Souza | Bertioga Smart | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Amanda Rocha | Guarujá Zen | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| André Luiz | Bertioga Premium | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Aline Barros | Guarujá Vision | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carlos Lima | Alpha Imóveis Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Ribeiro | Maresias Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Nunes | Mongaguá Atlântica | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Renata Lima | Vila Tupi Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Souza | Jussara Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Nunes | Mongaguá Sul | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Almeida | Barra Peruíbe Sul | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Aline Torres | Mongaguá Beach | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Lívia Souza | Mongaguá Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Marcelo Barros | Barra Norte | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Catarina Lima | Mongaguá Tropical | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Camila Ferreira | Mongaguá Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Marcelo Almeida | Barra Norte | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Aline Barros | Guarujá Smart | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Aline Souza | Mongaguá Relax | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Costa | Barra Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Rocha | Mongaguá Executive | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Costa | Barra Executive | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Camila Rocha | Mongaguá Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Camila Lima | Mongaguá Launch | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Rocha | Mongaguá Platinum | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Lívia Souza | Mongaguá Elite | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Marcelo Barros | Barra Elite | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Lima | Região Sul Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Costa | Norte Sul Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Nunes | Sol & Mar Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carlos Almeida | Barra de Peruíbe | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Lima | Balneário Conchas | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Juliana Mendes | Maresias Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Mendes | Praia Grande Sul | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| André Luiz | Praia Grande Business | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Nunes | Praia Grande Estrutura | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Lima | Praia Grande Executive | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Lima | Praia Grande Smart | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Mendes | Praia Grande Launch | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Lima | Praia Grande Platinum | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Mendes | Praia Grande Elite | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Maria Rocha | Beta Imóveis Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Mendes | Região Sul Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Mendes | Imobiliária Litoral Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Amanda Costa | Costa Azul Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Almeida | Vila São Paulo | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Marcos Vinícius | Praia Grande Park | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Rodrigo Dias | Praia Grande Center | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Costa | Jardim Rio Branco | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carlos Almeida | São Vicente Platinum | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carla Dias | São Vicente Elite | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Priscila Nunes | São Vicente Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Lima | São Vicente Premium | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Lucas Mendes | Agenor de Campos | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Camila Costa | Itinguçu Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| André Costa | Guarujá Mar Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carla Dias | São Vicente Norte | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Priscila Nunes | São Vicente Green | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Juliana Martins | São Vicente Bay | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Mendes | São Vicente Conectada | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carlos Almeida | São Vicente Executive | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carla Dias | São Vicente Connect | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carla Dias | São Vicente Launch | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Camila Torres | Enseada Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Alexandre Pires | Tombo Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Rafael Almeida | Tombo Beach | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carlos Mendes | São Vicente Smart | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fábio Ribeiro | Tombo Surf | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Rodrigo Almeida | São Vicente Premium | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bianca Martins | Tombo Executive | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Rafael Barros | Tombo Beach | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Rafael Almeida | Tombo Launch | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bianca Martins | Tombo Platinum | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Alexandre Pires | Tombo Elite | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carlos Mendes | Tombo Norte | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Rafael Souza | Tombo Beach | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Daniel Almeida | Catiapoã Sul | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Caio Ribeiro | Tombo Exclusive | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Renata Almeida | Catiapoã Nature | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Costa | Catiapoã Nature | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Renata Almeida | Catiapoã Platinum | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Daniel Almeida | Catiapoã Elite | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Rocha | Catiapoã Norte | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Costa | Catiapoã Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Renata Almeida | Catiapoã Executive | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Pereira | Região Sul Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Souza | Edifica Praia View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Pereira | Beta Imóveis View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Maria Barros | Sol & Mar Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Mendes | Região Sul Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Juliana Barros | Caiçara Digital Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Gomes | Porto da Lua Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Gomes | Edifica Praia Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Rocha | Praia Grande Site View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Nunes | Riviera Blue Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Gomes | Mar & Sol Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Costa | Santos Tower Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Gomes | Praia Grande Site Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Costa | Santos Tower Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Souza | Caiçara Digital Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Lima | Praia Grande Site View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Costa | Norte Sul Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Barros | Prime Imóveis Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carlos Costa | Norte Sul Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Gomes | Riviera Blue Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Gomes | Região Sul Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Pereira | Beta Imóveis Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Lima | Prime Imóveis Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Silva | Costa Verde Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Souza | Norte Sul Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Costa | Caiçara Digital Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Juliana Mendes | Riviera Blue View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carlos Nunes | Beta Imóveis Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Costa | Região Sul Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carlos Nunes | Norte Sul Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Mendes | Sol & Mar Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Lima | Alpha Imóveis View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carlos Barros | Santos Tower Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Juliana Rocha | Mar & Sol Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Alves | Ocean Blue Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Gomes | Litoral Premium Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Rocha | Caiçara Digital View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Maria Rocha | Porto da Lua Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Silva | Alpha Imóveis Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carlos Alves | Santos Tower Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Renata Nunes | Prime Imóveis Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Rocha | Costa Azul Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Gomes | Praia Grande Site Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Souza | Mar & Sol Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Lima | Ocean Blue Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Renata Mendes | Ocean Blue Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Gomes | Norte Imóveis View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Marcelo Mendes | Ocean Blue View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Barros | Riviera Blue Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Pereira | Caiçara Digital View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Pereira | Porto da Lua Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Marcelo Souza | Riviera Blue Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Pereira | Prime Imóveis Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Maria Barros | Costa Azul Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Marcelo Pereira | Praia Grande Site Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Alves | Itanhaém Premium Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Costa | Praia Grande Site Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Alves | Edifica Praia Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Gomes | Riviera Blue Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Nunes | Região Sul Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Maria Costa | Recife Imóveis Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Maria Nunes | Costa do Mar Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Lima | Norte Imóveis Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Silva | Praia Digital Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Gomes | Beta Imóveis Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Gomes | Norte Imóveis Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Silva | Porto da Lua Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Juliana Souza | Praia Digital View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Maria Pereira | Litoral Premium Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Pereira | Costa Verde Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carlos Alves | Praia Grande Site View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Souza | Atlântico Imóveis Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Lopes | Costa Verde Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Barros | Sul Imóveis Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Mendes | Edifica Praia Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Pereira | Ocean Blue Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Alves | Realize II Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Juliana Silva | Realize II Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Ferreira | Litoral Brasil Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Rocha | Barra Digital Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Lima | Riviera Blue Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Juliana Silva | Realize II Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Gomes | Beta Imóveis Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Maria Lima | Barra Digital Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carlos Silva | Mar & Sol Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Lima | Região Sul Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Gomes | Riviera Blue Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Juliana Nunes | Ocean Blue Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Maria Rocha | Ocean Blue View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carlos Rocha | Norte Sul Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Lima | Riviera Blue Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Pereira | Edifica Praia Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Rocha | Mar & Sol Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Silva | Alpha Imóveis Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Lima | Riviera Blue Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Barros | Edifica Praia Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Mendes | Região Sul Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Rocha | Mar & Sol Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Maria Barros | Santos Tower Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Barros | Santos Tower Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Juliana Rocha | Norte Sul Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Nunes | Praia Grande Site View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Lima | Norte Sul Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Silva | Riviera Blue View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Souza | Beta Imóveis View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Souza | Riviera Blue Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Souza | Mar & Sol Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Costa | Prime Imóveis Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Souza | Riviera Blue Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Maria Costa | Norte Sul Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Lopes | Mar & Sol Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Costa | Barra Digital Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Barros | Realize II Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Juliana Gomes | Sol & Mar Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Alves | Prime Imóveis Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Barros | Beta Imóveis Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Mendes | Praia Grande Site Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Rocha | Alpha Imóveis Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Mendes | Santos Tower Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Mendes | Riviera Blue Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Rocha | Beta Imóveis Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Mendes | Praia Grande Site Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Mariana Pereira | Sol & Mar View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Maria Alves | Santos Tower Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Teixeira | Riviera Blue Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Nunes | Norte Sul Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Mariana Alves | Realize II Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Ferreira | Beta Imóveis View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Mariana Lima | Mongaguá Imóveis Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Juliana Teixeira | Realize II Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Barros | Porto da Lua Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Lopes | Beta Imóveis Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Mendes | Caiçara Digital Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Juliana Souza | Caiçara Digital Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carlos Alves | Prime Imóveis Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Alves | Ocean Blue Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Gomes | Costa Verde Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Juliana Costa | Barra Digital Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Mariana Alves | Barra Digital Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Nunes | Região Sul Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carlos Lima | Beta Imóveis Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Silva | Vista Mar Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Ferreira | Vista Mar Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carlos Lopes | Mar & Sol Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Pereira | Caiçara Digital Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Barros | Caiçara Digital Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Teixeira | Realize II Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Lopes | Prime Imóveis Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Alves | Sol & Mar Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Barros | Sol & Mar Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Ramos | Porto da Lua Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Barros | Norte Sul Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Pereira | Itanhaém Premium Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Mendes | Norte Sul Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Alves | Porto da Lua Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Silva | Região Sul Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Diego Mendes | Costa Verde Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Rocha | Ocean Blue Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Mendes | Sol & Mar Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Maria Silva | Região Sul View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Alves | Região Sul Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Teixeira | Mar Brasil Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Mariana Lima | Barra Digital Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Mendes | Recife Imóveis Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Gomes | Litoral Brasil Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Juliana Pereira | Santos Tower Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Juliana Rocha | Riviera Blue View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Camila Nunes | Mar & Sol Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Moura | Mar & Sol Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carlos Ferreira | Litoral Premium Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Silva | Barra Digital Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Souza | Caiçara Digital Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Souza | Riviera Blue Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Mendes | Beta Imóveis Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Alves | Região Sul Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Maria Rocha | Mongaguá Imóveis Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Silva | Ocean Blue Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Ferreira | Edifica Praia Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Souza | Edifica Praia Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Costa | Barra Digital Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Maria Lima | Prime Imóveis Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Barros | Beta Imóveis Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Juliana Gomes | Caiçara Digital Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Souza | Costa Verde Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Ferreira | Edifica Praia Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Mendes | Edifica Praia Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Mariana Costa | Itanhaém Premium Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Nunes | Mar & Sol Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Felipe Nunes | Alpha Imóveis Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Camila Mendes | Santos Tower Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Diego Mendes | Prime Imóveis Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Diego Moura | Costa Verde View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Diego Silva | Região Sul Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Teixeira | Alpha Imóveis Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Maria Rocha | Santos Tower Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Souza | Mongaguá Imóveis Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Rocha | Mar & Sol View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Souza | Ocean Blue Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Teixeira | Litoral Premium Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Lima | Norte Sul Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Lima | Santos Tower Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Gomes | Região Sul Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Souza | Norte Sul Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Araújo | Costa Verde Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Gomes | Itanhaém Premium Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Mendes | Caiçara Digital Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Camila Nunes | Prime Imóveis Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Alves | Costa Verde Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Camila Alves | Santos Tower Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Juliana Barros | Norte Sul Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Juliana Teixeira | Praia Grande Site Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Camila Lopes | Itanhaém Premium Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Silva | Sol & Mar Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Camila Gomes | Litoral Premium Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Costa | Alpha Imóveis Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Lopes | Alpha Imóveis Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Barros | Norte Sul Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Alves | Litoral Premium Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Ferreira | Porto da Lua Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Pereira | Santos Tower Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Silva | Região Sul Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Costa | Praia Grande Site Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Lima | Realize II Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Amanda Gomes | Ocean Blue Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Rafael Nunes | Norte Imóveis Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Rafael Silva | Norte Sul Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Thiago Mendes | Alpha Imóveis Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Vieira | Praia Digital Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Mariana Mendes | Barra Digital Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Mariana Rocha | Vista Mar Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Lima | Sol & Mar Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Felipe Ferreira | Edifica Praia Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Felipe Ribeiro | Costa Azul Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Araújo | Mar & Sol Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bianca Rocha | Norte Sul Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Camila Teixeira | Barra Digital Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Thiago Lima | Praia Digital Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Rocha | Praia Digital Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Maria Teixeira | Norte Sul Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Amanda Barros | Edifica Praia Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Thiago Ferreira | Região Sul Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Thiago Cardoso | Costa do Mar Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Cardoso | Sol & Mar Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Mendes | Costa do Mar Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Teixeira | Edifica Praia Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ricardo Moreira | Prime Imóveis Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bianca Vieira | Litoral Brasil Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Alves | Prime Imóveis View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Souza | Santos Tower Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Mariana Mendes | Barra Digital View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Camila Cardoso | Mongaguá Imóveis Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Camila Mendes | Litoral Premium Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Nunes | Norte Imóveis Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Souza | Itanhaém Premium View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Rafael Ribeiro | Atlântico Imóveis Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Rafael Moura | Costa do Mar Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Rafael Ferreira | Realize II Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Rafael Alves | Recife Imóveis Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Amanda Gomes | Barra Digital Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Rafael Rocha | Alpha Imóveis Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Ribeiro | Alpha Imóveis Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Camila Souza | Praia Grande Site View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Amanda Rocha | Mar & Sol Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Mendes | Praia Grande Site Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Teixeira | Vista Mar Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bianca Alves | Edifica Praia Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Felipe Moreira | Prime Imóveis Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Thiago Cardoso | Sul Imóveis Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Moura | Região Sul Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Rafael Vieira | Barra Digital Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Amanda Nunes | Mar Brasil Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Mariana Alves | Barra Digital Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Nunes | Norte Sul Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Thiago Alves | Edifica Praia Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Juliana Barros | Norte Sul Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Thiago Souza | Realize II View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Rocha | Porto da Lua Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Maria Silva | Barra Digital Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Diego Lopes | Sul Imóveis Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Lopes | Ocean Blue Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Moreira | Itanhaém Premium View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Cardoso | Costa do Mar Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Thiago Souza | Mar Brasil Digital | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bianca Gomes | Atlântico Imóveis Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Rafael Moreira | Ocean Blue Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Maria Teixeira | Itanhaém Premium Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Camila Gomes | Mongaguá Imóveis Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Araújo | Atlântico Imóveis Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Alves | Realize II Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Maria Costa | Itanhaém Premium Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Rafael Teixeira | Beta Imóveis Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Costa | Caiçara Digital Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carlos Moura | Barra Digital Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Rocha | Litoral Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Patrícia Rocha | Mar & Sol Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Alves | Porto da Lua Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| João Lopes | Vista Mar Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Paulo Alves | Edifica Praia Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| André Teixeira | Costa Verde Litoral | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Leonardo Dias | Mongaguá Imóveis Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Marcos Souza | Praia Grande Site Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Marcos Freitas | Praia Grande Site Prop | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Mariana Freitas | Praia Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Sandra Mendes | Litoral Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Freitas | Alpha Imóveis Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Sandra Moura | Praia Grande Site View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Monteiro | Sol & Mar View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Mariana Cardoso | Edifica Praia Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Bruno Monteiro | Edifica Praia Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Vanessa Dias | Litoral Premium Tech | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Amanda Cavalcanti | Riviera Blue View | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Larissa Silva | Vista Mar Prop | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Sandra Ferreira | Edifica Praia Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Carlos Moreira | Mar Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Maria Freitas | Atlântico Imóveis Centro | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Marcos Barros | Edifica Praia Prop | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Leonardo Barros | Atlântico Imóveis Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Luciana Barros | Norte Sul Praia | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Marcos Souza | Costa Azul  Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Vanessa Nunes | Riviera Blue Site | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Marcos Monteiro | Litoral Premium Imóveis | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Ana Rocha | Prime Imóveis Prime | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
+| Fernanda Monteiro | Costa Verde Blue | email | parceria | 2026-08-31 | 2026-09-03 | 2026-09-07 |
