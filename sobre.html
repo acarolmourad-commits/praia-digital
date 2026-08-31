@@ -14,17 +14,6 @@
   <meta property="og:site_name" content="Praia Digital">
   <meta name="theme-color" content="#0b1220">
   <link rel="preconnect" href="https://praia.digital">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://praia.digital/index.html" },
-      { "@type": "ListItem", "position": 2, "name": "Sobre", "item": "https://praia.digital/sobre.html" }
-    ]
-  }
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <style>
     :root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial; }
@@ -35,15 +24,28 @@
     .lead { opacity: .85; line-height: 1.6; }
     ul { opacity: .85; line-height: 1.6; }
     footer { margin-top: 22px; opacity: .6; font-size: 12px; }
+    h1 { margin: 0 0 14px; font-size: 2rem; }
+    h2 { margin: 24px 0 10px; font-size: 1.25rem; color: #cfe3ff; }
+    p { margin: 10px 0; line-height: 1.7; opacity: .9; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .chip { background:#15233d; border:1px solid #223a5e; color:#cfe3ff; padding:6px 10px; border-radius:999px; font-size:13px; }
   </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
-</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Praia Digital",
+    "url": "https://praia.digital/",
+    "logo": "https://praia.digital/img/default-home.jpg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55-11-95434-6288",
+      "contactType": "sales",
+      "availableLanguage": ["Portuguese"]
+    },
+    "sameAs": ["https://wa.me/5511954346288"]
+  }
+  </script>
 </head>
 <body>
   <div class="wrap">
@@ -57,15 +59,35 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
     <main id="main">
       <h1>Sobre a Praia Digital</h1>
-      <p class="lead">Somos uma operação de SEO/GEO, conteúdo e tecnologia para imóveis no litoral norte e sul de São Paulo.</p>
+      <p class="lead">Somos uma operação de SEO/GEO, conteúdo e tecnologia dedicada ao mercado imobiliário do litoral norte e sul de São Paulo. Unimos dados, automação e experiência editorial para gerar visibilidade qualificada, leads úteis e resultados mensuráveis para corretores, imobiliárias, proprietários e investidores.</p>
 
-      <h2>O que fazemos</h2>
+      <h2>Nossa missão</h2>
+      <p>Transformar a maneira como imóveis e serviços imobiliários são descobertos no litoral paulista. Fazemos isso combinando estratégia de conteúdo com ferramentas digitais: páginas públicas otimizadas para busca, avaliações de preço, simuladores, assistentes virtuais e integração com canais de atendimento. O resultado é um ecossistema digital onde o comprador encontra informação confiável mais rápido e o profissional recebe contatos com intenção real.</p>
+
+      <h2>Experiência prática no litoral</h2>
+      <p>Trabalhamos diretamente com cidades como Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, Caraguatatuba, Ilhabela, São Sebastião e Ubatuba. Esse conhecimento de mercado não está só nos textos: ele orienta filtros, simuladores, índices de valorização e recomendações que aparecem no site e nos canais de conteúdo.</p>
+
+      <h2>Autoridade e transparência</h2>
+      <p>A autoridade da Praia Digital é construída por três pilares: <strong>experiência</strong> no mercado imobiliário litorâneo, <strong>expertise</strong> em SEO/GEO e tecnologia, e <strong>confiabilidade</strong> no tratamento de dados e comunicação. Publicamos conteúdo original, sem placeholders, com fontes e datas atualizadas. Quando utilizamos ferramentas de terceiros ou fornecedores, deixamos isso explícito, assim como deixamos claras as limitações informativas de cada dado.</p>
+
+      <h2>Compromisso com qualidade</h2>
+      <p>Não reproduzimos genéricos nem repetimos conteúdo sem adicionar contexto comercial local. Cada página, guia e FAQ é pensado para responder dúvidas reais de busca e para apresentar diferenciais de atendimento, negociação e acompanhamento. Seguimos princípios de E-E-A-T porque acreditamos que essa é a base sustentável para aprovação em programas de monetização e, mais importante, para a confiança do visitante.</p>
+
+      <h2>Para quem trabalhamos</h2>
       <ul>
-        <li>SEO/GEO por cidade e bairro</li>
-        <li>Conteúdo editorial alinhado a intenção de busca</li>
-        <li>Páginas públicas indexáveis para imóveis e serviços</li>
-        <li>Automação de publicação e distribuição</li>
+        <li>Corretores e imobiliárias que querem mais visibilidade orgânica.</li>
+        <li>Proprietários que desejam vender ou anunciar diretamente, com suporte digital.</li>
+        <li>Investidores que buscam dados de valorização, rentabilidade e comparação de cenários.</li>
+        <li>Equipes de gestão de locação por temporada que precisam de conteúdo, automação e canais de captação.</li>
       </ul>
+      <div class="chips">
+        <span class="chip">SEO local</span>
+        <span class="chip">GEO</span>
+        <span class="chip">Conteúdo editorial</span>
+        <span class="chip">Ferramentas públicas</span>
+        <span class="chip">Automação</span>
+        <span class="chip">LGPD</span>
+      </div>
     </main>
 
     <footer>Praia Digital — conteúdo original, sem placeholders.</footer>
