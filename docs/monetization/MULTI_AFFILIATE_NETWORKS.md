@@ -12,12 +12,19 @@ Padronizar a injeção de IDs de afiliado em múltiplas plataformas nos componen
 ## Pontos de injeção
 - Componente central: `partials/affiliate-products.html`
 - Blocos inline nos artigos do blog que contêm `.affiliate-card`
+- Booking.com: `partials/booking-banner.html`
 
 ## Formato por rede
 - Amazon: `https://www.amazon.com/s?k=...&tag=praiadigital-20`
 - Mercado Livre: `https://www.mercadolivre.com.br/...?id_afiliado=SEU_ID`
 - Shopee: `https://shopee.com.br/...?af_id=SEU_ID`
-- Booking.com: `https://www.booking.com/...?aid=SEU_AID&label=SEU_LABEL`
+- Booking.com: `https://www.booking.com/searchresults.pt.html?aid=BOOKING_AID_PLACEHOLDER&label=praia-digital`
+
+## Booking.com — Ativação
+1. Abra `partials/booking-banner.html`.
+2. Substitua `BOOKING_AID_PLACEHOLDER` pelo AID final.
+3. Insira o componente nas páginas desejadas via include ou snippet.
+4. Valide HTTP 200 após alterações.
 
 ## Instruções
 1. Abra os arquivos listados em `docs/monetization/PRODUCT_MAPPING_2026.md`.
