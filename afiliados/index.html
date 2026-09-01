@@ -37,6 +37,17 @@
     }
   }
   </script>
+  <style>
+    .commission-card { background: linear-gradient(135deg, #0b1220, #123053); color: #fff; border-radius: 16px; padding: 1.25rem; }
+    .commission-card .label { opacity: .75; font-size: .85rem; }
+    .commission-card .value { font-size: 1.6rem; font-weight: 800; }
+    .commission-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; }
+    .commission-field input, .commission-field select { width: 100%; padding: .65rem 1rem; border: 2px solid #e2e8f0; border-radius: 12px; font-size: 1rem; background: #fff; color: #0b1220; }
+    .commission-field label { display: block; font-size: .85rem; font-weight: 700; margin-bottom: .35rem; color: #0b1220; }
+    .commission-result { background: #eef2ff; border: 1px solid #c7d2fe; color: #1e3a8a; padding: .9rem 1rem; border-radius: 12px; margin-top: .75rem; }
+    .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+    .feature-grid label { display: flex; align-items: center; gap: .5rem; background: #f8fafc; border: 1px solid #e2e8f0; padding: .6rem .8rem; border-radius: 12px; font-weight: 600; cursor: pointer; }
+  </style>
 </head>
 <body>
   <div class="wrap">
@@ -59,6 +70,34 @@
       <section class="hero">
         <h1>Afiliados Praia Digital</h1>
         <p class="subtitle">Indique imóveis de proprietários e ganhe comissão quando a venda ou locação for concretizada por um corretor credenciado.</p>
+      </section>
+
+      <section class="section">
+        <div class="commission-card">
+          <h2 style="margin-top:0">Simulador de comissão estimada</h2>
+          <p class="muted" style="color:#c7d2fe">Valores informativos. A comissão final depende do fechamento efetivo.</p>
+          <div class="commission-grid">
+            <div class="commission-field">
+              <label>Valor estimado do imóvel (R$)</label>
+              <input type="text" id="commValor" placeholder="Ex: 900.000" inputmode="numeric">
+            </div>
+            <div class="commission-field">
+              <label>Tipo de negócio</label>
+              <select id="commNegocio">
+                <option value="venda">Venda</option>
+                <option value="temporada">Aluguel por Temporada</option>
+                <option value="hibrido">Híbrido</option>
+              </select>
+            </div>
+            <div class="commission-field">
+              <label>Comissão de indicação (%)</label>
+              <input type="number" id="commTaxa" value="5" min="0" max="50">
+            </div>
+          </div>
+          <div class="commission-result" id="commResult" style="display:none">
+            Comissão estimada: <strong id="commFinal">R$ 0</strong>
+          </div>
+        </div>
       </section>
 
       <section class="section">
@@ -96,20 +135,22 @@
         <div class="card">
           <h2>Formulário de indicação</h2>
           <p class="muted">Preencha com os dados do proprietário e do imóvel. Quanto mais completo, maior a chance de avançar para captação profissional.</p>
-          <form action="https://wa.me/5511954346288?text=Afiliado%3A%20quero%20indicar%20um%20im%C3%B3vel%20para%20capta%C3%A7%C3%A3o." method="get" target="_blank" rel="noopener">
+          <form action="mailto:comercial@praia.digital?subject=Indica%C3%A7%C3%A3o%20de%20im%C3%B3vel%20-%20Afiliado" method="post" enctype="text/plain" target="_blank">
             <h3 class="form-divider">Seus dados</h3>
             <label>Nome<br><input type="text" name="afiliado_nome" required placeholder="Ex: Maria Oliveira"></label>
-            <label>E-mail<br><input type="email" name="afiliado_email" required placeholder="Ex: maria@email.com"></label>
-            <label>Telefone/WhatsApp<br><input type="tel" name="afiliado_telefone" required placeholder="Ex: (11) 9xxxx-xxxx"></label>
+            <label>WhatsApp<br><input type="tel" name="afiliado_telefone" required placeholder="Ex: (11) 9xxxx-xxxx"></label>
+            <label>E-mail<br><input type="email" name="afiliado_email" placeholder="Ex: maria@email.com"></label>
+            <label>Chave PIX para recebimento<br><input type="text" name="afiliado_pix" required placeholder="CPF, e-mail ou chave aleatória"></label>
 
             <h3 class="form-divider">Dados do proprietário</h3>
             <label>Nome do proprietário<br><input type="text" name="proprietario_nome" required placeholder="Ex: José Silva"></label>
-            <label>Contato do proprietário<br><input type="tel" name="proprietario_telefone" placeholder="Ex: (13) 9xxxx-xxxx"></label>
+            <label>WhatsApp do proprietário<br><input type="tel" name="proprietario_telefone" required placeholder="Ex: (13) 9xxxx-xxxx"></label>
             <label>E-mail do proprietário<br><input type="email" name="proprietario_email" placeholder="Ex: jose@email.com"></label>
 
             <h3 class="form-divider">Dados do imóvel</h3>
-            <label>Cidade<br><input type="text" name="cidade" required placeholder="Ex: Guarujá"></label>
-            <label>Bairro<br><input type="text" name="bairro" required placeholder="Ex: Enseada"></label>
+            <label>Endereço/Condomínio<br><input type="text" name="endereco" required placeholder="Ex: Riviera de São Lourenço, Condomínio X"></label>
+            <label>Cidade<br><input type="text" name="cidade" required placeholder="Ex: Bertioga"></label>
+            <label>Bairro<br><input type="text" name="bairro" required placeholder="Ex: Riviera"></label>
             <label>Tipo de imóvel<br>
               <select name="tipo" required>
                 <option value="">Selecione</option>
@@ -126,13 +167,38 @@
               <select name="negocio" required>
                 <option value="">Selecione</option>
                 <option>Venda</option>
-                <option>Aluguel</option>
-                <option>Temporada</option>
-                <option>Venda e Aluguel</option>
+                <option>Aluguel por Temporada</option>
+                <option>Locação Anual</option>
+                <option>Híbrido</option>
               </select>
             </label>
-            <label>Valor estimado (R$)<br><input type="text" name="valor" placeholder="Ex: 720.000"></label>
-            <label>Características<br><textarea name="caracteristicas" rows="4" placeholder="Quartos, vagas, área, diferenciais, estado de conservação."></textarea></label>
+            <label>Valor estimado (R$)<br><input type="text" name="valor" required placeholder="Ex: 720.000"></label>
+
+            <h3 class="form-divider">Características</h3>
+            <div class="feature-grid">
+              <label><input type="checkbox" name="caracteristicas" value="piscina"> Piscina</label>
+              <label><input type="checkbox" name="caracteristicas" value="churrasqueira"> Churrasqueira</label>
+              <label><input type="checkbox" name="caracteristicas" value="pe_na_areia"> Pé na Areia</label>
+              <label><input type="checkbox" name="caracteristicas" value="vista_mar"> Vista para o Mar</label>
+              <label><input type="checkbox" name="caracteristicas" value="ar_condicionado"> Ar-Condicionado</label>
+              <label><input type="checkbox" name="caracteristicas" value="mobiliado"> Mobiliado</label>
+              <label><input type="checkbox" name="caracteristicas" value="varanda_gourmet"> Varanda Gourmet</label>
+              <label><input type="checkbox" name="caracteristicas" value="seguranca_24h"> Segurança 24h</label>
+              <label><input type="checkbox" name="caracteristicas" value="aceita_pet"> Aceita Pet</label>
+            </div>
+
+            <h3 class="form-divider">Status do primeiro contato</h3>
+            <label>
+              <select name="status_contato" required>
+                <option value="">Selecione</option>
+                <option>Proprietário já sabe que vou indicar</option>
+                <option>Precisa de contato inicial</option>
+                <option>Aguardando retorno do proprietário</option>
+                <option>Indicação com acesso ao imóvel</option>
+              </select>
+            </label>
+
+            <h3 class="form-divider">Detalhes adicionais</h3>
             <label>Observações<br><textarea name="observacoes" rows="4" placeholder="Disponibilidade de visita, urgência, relação com o proprietário, perfil do imóvel."></textarea></label>
 
             <button type="submit">Enviar indicação</button>
@@ -149,6 +215,8 @@
             <dd>Não. O programa é aberto a afiliados e indicadores, mas exige dados reais e intenção verdadeira de venda ou locação.</dd>
             <dt>Como acompanhar o status?</dt>
             <dd>Após o envio, o time da Praia Digital vai atualizar o andamento por WhatsApp ou e-mail.</dd>
+            <dt>Como recebo a comissão?</dt>
+            <dd>Informe sua chave PIX no formulário. O pagamento é processado após confirmação de fechamento pelo corretor credenciado.</dd>
           </dl>
           <p><a href="https://praia.digital/termos-de-uso.html" target="_blank" rel="noopener">Termos de uso</a> · <a href="https://praia.digital/politica-privacidade.html" target="_blank" rel="noopener">Privacidade</a></p>
         </aside>
@@ -160,6 +228,29 @@
       <p><a href="https://praia.digital/sitemap.html">Mapa do site</a></p>
     </footer>
     <script src="https://praia.digital/js/shared.js"></script>
+    <script>
+      (function(){
+        const valor = document.getElementById('commValor');
+        const taxa = document.getElementById('commTaxa');
+        const negocio = document.getElementById('commNegocio');
+        const result = document.getElementById('commResult');
+        const final = document.getElementById('commFinal');
+        function calc(){
+          const v = parseFloat((valor && valor.value || '').replace(/\./g,'').replace(',','.')) || 0;
+          const t = parseFloat(taxa && taxa.value || '0') || 0;
+          const n = (negocio && negocio.value || 'venda');
+          const effective = n === 'temporada' ? Math.min(t * 0.8, t) : t;
+          const commission = v * (effective / 100);
+          if(!v || !effective){ if(result) result.style.display='none'; return; }
+          const fmt = 'R$ ' + commission.toLocaleString('pt-BR', {minimumFractionDigits:2, maximumFractionDigits:2});
+          if(final) final.textContent = fmt;
+          if(result) result.style.display = 'block';
+        }
+        if(valor) valor.addEventListener('input', calc);
+        if(taxa) taxa.addEventListener('input', calc);
+        if(negocio) negocio.addEventListener('change', calc);
+      })();
+    </script>
   </div>
 </body>
 </html>
