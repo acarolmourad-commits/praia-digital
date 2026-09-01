@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Imóvel para Corretores | Praia Digital</title>
+  <meta name="keywords" content="cadastrar imóvel corretor, CRECI, área do corretor, anúncio de imóvel, litoral paulista, marketplace imobiliário, corretores credenciados">
+  <meta name="description" content="Área do corretor: cadastre imóveis com validação CRECI, fotos, localização, valor e documentos. Faça parte do marketplace imobiliário da Praia Digital.">
+  <link rel="canonical" href="https://praia.digital/corretores/cadastrar-imovel.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cadastro de Imóvel para Corretores | Praia Digital">
+  <meta property="og:description" content="Área do corretor com validação CRECI para cadastro e publicação de imóveis no marketplace da Praia Digital.">
+  <meta property="og:url" content="https://praia.digital/corretores/cadastrar-imovel.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cadastro de Imóvel para Corretores | Praia Digital">
+  <meta name="twitter:description" content="Área do corretor com validação CRECI para cadastro e publicação de imóveis no marketplace da Praia Digital.">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Cadastro de Imóvel para Corretores",
+    "url": "https://praia.digital/corretores/cadastrar-imovel.html",
+    "description": "Formulário de cadastro de imóveis para corretores credenciados com validação de CRECI.",
+    "mainEntity": {
+      "@type": "Service",
+      "name": "Cadastro e Publicação de Imóveis por Corretores",
+      "provider": {
+        "@type": "Organization",
+        "name": "Praia Digital",
+        "url": "https://praia.digital/"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "São Paulo"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <nav aria-label="Navegação principal">
+        <div class="logo">
+          <p class="brand">🏖️ Praia Digital</p>
+          <p class="tagline">Área do Corretor</p>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="https://praia.digital/index.html">Início</a></li>
+          <li><a href="https://praia.digital/servicos.html">Serviços</a></li>
+          <li><a href="/afiliados/index.html">Afiliados</a></li>
+          <li><a href="https://wa.me/5511954346288" target="_blank" rel="noopener">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <h1>Cadastro de Imóvel</h1>
+        <p class="subtitle">Preencha os dados abaixo para cadastrar um imóvel no marketplace da Praia Digital.</p>
+      </section>
+
+      <section class="section">
+        <div class="card">
+          <h2>Dados do corretor</h2>
+          <p class="muted">Campos obrigatórios para validação de segurança e rastreabilidade.</p>
+          <form action="https://wa.me/5511954346288?text=Corretor%3A%20quero%20cadastrar%20um%20im%C3%B3vel%20com%20valida%C3%A7%C3%A3o%20CRECI." method="get" target="_blank" rel="noopener">
+            <label>Nome completo<br><input type="text" name="corretor_nome" required placeholder="Ex: João Silva"></label>
+            <label>E-mail profissional<br><input type="email" name="corretor_email" required placeholder="Ex: joao@imobiliaria.com.br"></label>
+            <label>Telefone/WhatsApp<br><input type="tel" name="corretor_telefone" required placeholder="Ex: (11) 9xxxx-xxxx"></label>
+            <label>CRECI<br><input type="text" name="corretor_creci" required placeholder="Ex: 12345-F"></label>
+            <label>Imobiliária / Equipe<br><input type="text" name="corretor_imobiliaria" placeholder="Ex: Litoral Prime Imóveis"></label>
+
+            <h3 class="form-divider">Dados do imóvel</h3>
+            <label>Cidade<br><input type="text" name="cidade" required placeholder="Ex: Santos"></label>
+            <label>Bairro<br><input type="text" name="bairro" required placeholder="Ex: Gonzaga"></label>
+            <label>Tipo de imóvel<br>
+              <select name="tipo" required>
+                <option value="">Selecione</option>
+                <option>Apartamento</option>
+                <option>Casa</option>
+                <option>Cobertura</option>
+                <option>Flat</option>
+                <option>Comercial</option>
+                <option>Terreno</option>
+                <option>Chácara</option>
+              </select>
+            </label>
+            <label>Valor de venda/aluguel (R$)<br><input type="text" name="valor" required placeholder="Ex: 850.000"></label>
+            <label>Área útil aproximada (m²)<br><input type="text" name="area" placeholder="Ex: 95"></label>
+            <label>Quartos<br><input type="number" name="quartos" min="0" placeholder="Ex: 3"></label>
+            <label>Vagas de garagem<br><input type="number" name="vagas" min="0" placeholder="Ex: 2"></label>
+            <label>Tipo de negócio<br>
+              <select name="negocio" required>
+                <option value="">Selecione</option>
+                <option>Venda</option>
+                <option>Aluguel</option>
+                <option>Temporada</option>
+                <option>Venda e Aluguel</option>
+              </select>
+            </label>
+            <label>Título do anúncio<br><input type="text" name="titulo" required placeholder="Ex: Apartamento vista mar no Gonzaga"></label>
+            <label>Descrição<br><textarea name="descricao" rows="6" required placeholder="Destaque diferenciais, localização, conservação e potencial de investimento."></textarea></label>
+            <label>Link das fotos / Drive / Imgur<br><input type="url" name="fotos" placeholder="https://..."></label>
+            <label>Observações adicionais<br><textarea name="observacoes" rows="4" placeholder="Regras do condomínio, disponibilidade de visita, documentos pendentes, etc."></textarea></label>
+            <button type="submit">Enviar cadastro</button>
+          </form>
+          <p class="muted">Ao enviar, você concorda com a política de privacidade e os termos de uso da Praia Digital.</p>
+        </div>
+
+        <aside class="card">
+          <h2>Por que cadastrar aqui?</h2>
+          <ul>
+            <li>Exposição no marketplace da Praia Digital.</li>
+            <li>Divulgação integrada ao blog e às cidades do litoral.</li>
+            <li>Suporte com IA para descrição, precificação e SEO local.</li>
+            <li>Rastreabilidade e atendimento comercial com foco em conversão.</li>
+          </ul>
+          <p><a href="https://praia.digital/termos-de-uso.html" target="_blank" rel="noopener">Termos de uso</a> · <a href="https://praia.digital/politica-privacidade.html" target="_blank" rel="noopener">Privacidade</a></p>
+        </aside>
+      </section>
+    </main>
+
+    <footer aria-label="Rodapé">
+      <p>© Praia Digital • <a href="https://wa.me/5511954346288">WhatsApp</a> • <a href="mailto:comercial@praia.digital">comercial@praia.digital</a> • (11) 95434-6288</p>
+      <p><a href="https://praia.digital/sitemap.html">Mapa do site</a></p>
+    </footer>
+    <script src="https://praia.digital/js/shared.js"></script>
+  </div>
+</body>
+</html>
