@@ -72282,4 +72282,10 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://praia.digital/blog/cases.html</loc>
+    <lastmod>2026-08-31T23:25:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
