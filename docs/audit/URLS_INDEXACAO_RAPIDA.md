@@ -2,22 +2,25 @@
 
 Motivo: Google Search Console bloqueou fluxo automatizado e exige verificação/MFA manual. Use os links abaixo para indexação manual em 1 clique.
 
-## Inspeção rápida no Search Console
+## URLs de verificação direta
 
 - https://search.google.com/search-console/inspect?resource_id=https://praia.digital/&resource_url=https://praia.digital/
+- https://search.google.com/search-console/inspect?resource_id=https://praia.digital/sobre.html&resource_url=https://praia.digital/sobre.html
+- https://search.google.com/search-console/inspect?resource_id=https://praia.digital/termos-de-uso.html&resource_url=https://praia.digital/termos-de-uso.html
 - https://search.google.com/search-console/inspect?resource_id=https://praia.digital/blog/cases.html&resource_url=https://praia.digital/blog/cases.html
-- https://search.google.com/search-console/inspect?resource_id=https://praia.digital/blog/&resource_url=https://praia.digital/blog/
-- https://search.google.com/search-console/inspect?resource_id=https://praia.digital/sitemap.xml&resource_url=https://praia.digital/sitemap.xml
+- https://search.google.com/search-console/inspect?resource_id=https://praia.digital/blog/guia-investimento-imobiliario-riviera-de-sao-lourenco-bertioga-2026.html&resource_url=https://praia.digital/blog/guia-investimento-imobiliario-riviera-de-sao-lourenco-bertioga-2026.html
+- https://search.google.com/search-console/inspect?resource_id=https://praia.digital/blog/bertioga-riviera-investimento-alto-padrao-2026.html&resource_url=https://praia.digital/blog/bertioga-riviera-investimento-alto-padrao-2026.html
 
-## Sitemap oficial
-
-- https://praia.digital/sitemap.xml
-
-## URLs prioritárias para pedido de indexação
+## URLs públicas para validação HTTP 200
 
 - https://praia.digital/
+- https://praia.digital/sobre.html
+- https://praia.digital/termos-de-uso.html
 - https://praia.digital/blog/cases.html
 - https://praia.digital/blog/index.html
+- https://praia.digital/blog/guia-investimento-imobiliario-riviera-de-sao-lourenco-bertioga-2026.html
+- https://praia.digital/blog/bertioga-riviera-investimento-alto-padrao-2026.html
+- https://praia.digital/sitemap.xml
 
 ## Checklist operacional
 
