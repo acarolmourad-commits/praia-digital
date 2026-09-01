@@ -1,18 +1,24 @@
 # Amazon Associates — Guia de Injeção de Tag
 
-## Objetivo
-Centralizar a substituição do ID de afiliado da Amazon nos componentes de recomendação do Praia Digital.
+## Status
+- StoreID oficial aplicada em produção: `praiadigital-20`
 
 ## Ponto único de injeção
-Edite `partials/affiliate-products.html` e substitua o parâmetro de tracking pelos valores do seu programa:
+- Componente central: `partials/affiliate-products.html`
+- Artigos injetados:
+  - `blog/como-preparar-imovel-para-aluguel-temporada-riviera-2026.html`
+  - `blog/guia-de-servicos-e-conveniencia-riviera-de-sao-lourenco-2026.html`
+  - `blog/esportes-e-lazer-na-riviera-de-sao-lourenco-2026.html`
+  - `blog/guia-pet-friendly-riviera-de-sao-lourenco-bertioga-2026.html`
 
-- Atual: `href="/afiliados/index.html"`
-- Para injeção futura, altere para o modelo de link com tag, ex: `https://www.amazon.com/dp/XXXX?tag=praiadigital-20`
+## Formato aplicado
+- Links com parâmetro `tag=praiadigital-20` em todas as seções de produtos recomendados.
+- Exemplo: `https://www.amazon.com/s?k=smart+lock&tag=praiadigital-20`
 
 ## Instruções rápidas
-1. Abra `partials/affiliate-products.html`.
+1. Abra `partials/affiliate-products.html` ou os artigos acima.
 2. Localize os links de cada card.
-3. Substitua o `href` pelo link de produto Amazon com o parâmetro `?tag=SEU_TAG` ou `&tag=SEU_TAG`.
+3. Para alterar a tag, substitua `praiadigital-20` pelo novo ID em todos os arquivos.
 4. Salve e faça commit.
 
 ## Observações
