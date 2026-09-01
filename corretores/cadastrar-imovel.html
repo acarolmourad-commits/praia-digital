@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cadastro de Imóvel para Corretores | Praia Digital</title>
-  <meta name="keywords" content="cadastrar imóvel corretor, CRECI, área do corretor, anúncio de imóvel, litoral paulista, marketplace imobiliário, corretores credenciados">
-  <meta name="description" content="Área do corretor: cadastre imóveis com validação CRECI, fotos, localização, valor e documentos. Faça parte do marketplace imobiliário da Praia Digital.">
   <link rel="canonical" href="https://praia.digital/corretores/cadastrar-imovel.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Cadastro de Imóvel para Corretores | Praia Digital">
@@ -40,47 +38,20 @@
   }
   </script>
   <style>
-    .creci-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: .5rem;
-      background: #eef2ff;
-      color: #1e3a8a;
-      border: 1px solid #c7d2fe;
-      padding: .5rem .75rem;
-      border-radius: 999px;
-      font-weight: 700;
-      font-size: .9rem;
-      margin-bottom: 1rem;
-    }
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1rem;
-    }
-    .feature-grid label {
-      display: flex;
-      align-items: center;
-      gap: .5rem;
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      padding: .6rem .8rem;
-      border-radius: 12px;
-      font-weight: 600;
-      cursor: pointer;
-    }
-    .drop-area {
-      border: 2px dashed #cbd5e1;
-      border-radius: 16px;
-      padding: 1.5rem;
-      text-align: center;
-      color: #64748b;
-      background: #f8fafc;
-    }
-    .drop-area.drag {
-      border-color: #2563eb;
-      background: #eff6ff;
-    }
+    .wizard{display:flex;align-items:center;gap:.5rem;margin-bottom:1rem}
+    .wizard-step{flex:1;height:8px;border-radius:999px;background:#e2e8f0;overflow:hidden}
+    .wizard-step__fill{height:100%;background:#2563eb;width:0;transition:width .3s ease}
+    .wizard-step.active .wizard-step__fill{width:100%}
+    .wizard-step.done .wizard-step__fill{width:100%;background:#16a34a}
+    .completion{background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;padding:.6rem .9rem;border-radius:12px;font-weight:700;margin-bottom:1rem;display:inline-flex;gap:.5rem;align-items:center}
+    .step{display:none}
+    .step.active{display:block}
+    .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+    .feature-grid label { display: flex; align-items: center; gap: .5rem; background: #f8fafc; border: 1px solid #e2e8f0; padding: .6rem .8rem; border-radius: 12px; font-weight: 600; cursor: pointer; }
+    .drop-area { border: 2px dashed #cbd5e1; border-radius: 16px; padding: 1.5rem; text-align: center; color: #64748b; background: #f8fafc; }
+    .drop-area.drag { border-color: #2563eb; background: #eff6ff; }
+    .condo-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: .5rem; }
+    .condo-list label { display: flex; align-items: center; gap: .5rem; background: #f8fafc; border: 1px solid #e2e8f0; padding: .5rem .7rem; border-radius: 12px; font-weight: 600; cursor: pointer; }
   </style>
 </head>
 <body>
@@ -109,80 +80,117 @@
 
       <section class="section">
         <div class="card">
-          <h2>Dados do corretor</h2>
-          <p class="muted">Validação de segurança e rastreabilidade.</p>
-          <form action="mailto:comercial@praia.digital?subject=Cadastro%20de%20Im%C3%B3vel%20-%20Corretor" method="post" enctype="text/plain" target="_blank">
-            <label>Nome completo<br><input type="text" name="corretor_nome" required placeholder="Ex: João Silva"></label>
-            <label>E-mail profissional<br><input type="email" name="corretor_email" required placeholder="Ex: joao@imobiliaria.com.br"></label>
-            <label>Telefone/WhatsApp<br><input type="tel" name="corretor_telefone" required placeholder="Ex: (11) 9xxxx-xxxx"></label>
-            <label>CRECI<br><input type="text" name="corretor_creci" required placeholder="Ex: 12345-F" pattern="[0-9]{5,6}-[A-Za-z]" title="Formato esperado: 000000-F ou 000000-J"></label>
-            <label>Imobiliária / Equipe<br><input type="text" name="corretor_imobiliaria" placeholder="Ex: Litoral Prime Imóveis"></label>
+          <div class="wizard" aria-label="Progresso do formulário">
+            <div class="wizard-step active" id="ws1"><div class="wizard-step__fill"></div></div>
+            <div class="wizard-step" id="ws2"><div class="wizard-step__fill"></div></div>
+            <div class="wizard-step" id="ws3"><div class="wizard-step__fill"></div></div>
+          </div>
+          <div class="completion" id="completion">Formulário completo: 0%</div>
 
-            <h3 class="form-divider">Dados do imóvel</h3>
-            <label>Título do anúncio<br><input type="text" name="titulo" required placeholder="Ex: Apartamento vista mar no Gonzaga"></label>
-            <label>Cidade<br><input type="text" name="cidade" required placeholder="Ex: Santos"></label>
-            <label>Bairro<br><input type="text" name="bairro" required placeholder="Ex: Gonzaga"></label>
-            <label>Tipo de imóvel<br>
-              <select name="tipo" required>
-                <option value="">Selecione</option>
-                <option>Apartamento</option>
-                <option>Casa</option>
-                <option>Cobertura</option>
-                <option>Flat</option>
-                <option>Comercial</option>
-                <option>Terreno</option>
-                <option>Chácara</option>
-              </select>
-            </label>
-            <label>Tipo de negócio<br>
-              <select name="negocio" required>
-                <option value="">Selecione</option>
-                <option>Venda</option>
-                <option>Locação Anual</option>
-                <option>Aluguel por Temporada</option>
-                <option>Híbrido</option>
-              </select>
-            </label>
-            <label>Valor de venda/diária (R$)<br><input type="text" name="valor" required placeholder="Ex: 850.000"></label>
-            <label>Condomínio mensal (R$)<br><input type="text" name="condominio" placeholder="Ex: 1.200"></label>
-            <label>IPTU anual (R$)<br><input type="text" name="iptu" placeholder="Ex: 3.500"></label>
-            <label>Aceita financiamento ou permuta?<br>
-              <select name="financiamento">
-                <option value="">Selecione</option>
-                <option>Financiamento</option>
-                <option>Permuta</option>
-                <option>Ambos</option>
-                <option>Nenhum</option>
-              </select>
-            </label>
-
-            <h3 class="form-divider">Características</h3>
-            <div class="feature-grid">
-              <label><input type="checkbox" name="caracteristicas" value="piscina"> Piscina</label>
-              <label><input type="checkbox" name="caracteristicas" value="churrasqueira"> Churrasqueira</label>
-              <label><input type="checkbox" name="caracteristicas" value="pe_na_areia"> Pé na Areia</label>
-              <label><input type="checkbox" name="caracteristicas" value="vista_mar"> Vista para o Mar</label>
-              <label><input type="checkbox" name="caracteristicas" value="ar_condicionado"> Ar-Condicionado</label>
-              <label><input type="checkbox" name="caracteristicas" value="mobiliado"> Mobiliado</label>
-              <label><input type="checkbox" name="caracteristicas" value="varanda_gourmet"> Varanda Gourmet</label>
-              <label><input type="checkbox" name="caracteristicas" value="seguranca_24h"> Segurança 24h</label>
-              <label><input type="checkbox" name="caracteristicas" value="aceita_pet"> Aceita Pet</label>
+          <form action="mailto:comercial@praia.digital?subject=Cadastro%20de%20Im%C3%B3vel%20-%20Corretor" method="post" enctype="text/plain" target="_blank" id="wizardForm">
+            <div class="step active" data-step="1">
+              <h2>Identificação profissional</h2>
+              <p class="muted">Validação de segurança e rastreabilidade.</p>
+              <label>Nome completo<br><input type="text" name="corretor_nome" required placeholder="Ex: João Silva"></label>
+              <label>E-mail profissional<br><input type="email" name="corretor_email" required placeholder="Ex: joao@imobiliaria.com.br"></label>
+              <label>Telefone/WhatsApp<br><input type="tel" name="corretor_telefone" required placeholder="Ex: (11) 9xxxx-xxxx"></label>
+              <label>CRECI<br><input type="text" name="corretor_creci" required placeholder="Ex: 12345-F" pattern="[0-9]{5,6}-[A-Za-z]" title="Formato esperado: 000000-F ou 000000-J"></label>
+              <label>Imobiliária / Equipe<br><input type="text" name="corretor_imobiliaria" placeholder="Ex: Litoral Prime Imóveis"></label>
+              <div style="display:flex;justify-content:flex-end;margin-top:1rem">
+                <button type="button" class="btn btn-primary" onclick="nextStep(1)">Próximo</button>
+              </div>
             </div>
 
-            <h3 class="form-divider">Mídia</h3>
-            <label>Área de fotos<br>
-              <div class="drop-area" id="dropArea">Arraste e solte imagens aqui ou clique para selecionar</div>
-              <input type="file" name="fotos" multiple accept="image/*" style="margin-top:.5rem">
-            </label>
-            <label>Link do vídeo / Tour Virtual 360° (YouTube, Vimeo ou embed)<br><input type="url" name="video" placeholder="https://..."></label>
+            <div class="step" data-step="2">
+              <h2>Dados do imóvel e localização</h2>
+              <p class="muted">Informe o endereço ou selecione um condomínio conhecido.</p>
+              <label>Título do anúncio<br><input type="text" name="titulo" required placeholder="Ex: Apartamento vista mar na Riviera"></label>
+              <label>CEP<br><input type="text" name="cep" placeholder="Ex: 11250-000" id="cepInput"></label>
+              <label>Endereço/Condomínio<br><input type="text" name="endereco" required placeholder="Ex: Riviera de São Lourenço, Condomínio X" list="condominios"></label>
+              <datalist id="condominios">
+                <option value="Riviera de São Lourenço">
+                <option value="Morada das Garças">
+                <option value="Hanga Roa">
+                <option value="Bougainville">
+                <option value="Condomínio Marítimo">
+                <option value="Residencial Praia Grande">
+              </datalist>
+              <label>Cidade<br><input type="text" name="cidade" required placeholder="Ex: Bertioga"></label>
+              <label>Bairro<br><input type="text" name="bairro" required placeholder="Ex: Riviera"></label>
+              <label>Tipo de imóvel<br>
+                <select name="tipo" required>
+                  <option value="">Selecione</option>
+                  <option>Apartamento</option>
+                  <option>Casa</option>
+                  <option>Cobertura</option>
+                  <option>Flat</option>
+                  <option>Comercial</option>
+                  <option>Terreno</option>
+                  <option>Chácara</option>
+                </select>
+              </label>
+              <label>Tipo de negócio<br>
+                <select name="negocio" required>
+                  <option value="">Selecione</option>
+                  <option>Venda</option>
+                  <option>Locação Anual</option>
+                  <option>Aluguel por Temporada</option>
+                  <option>Híbrido</option>
+                </select>
+              </label>
+              <h3 class="form-divider">Características</h3>
+              <div class="feature-grid">
+                <label><input type="checkbox" name="caracteristicas" value="piscina"> Piscina</label>
+                <label><input type="checkbox" name="caracteristicas" value="churrasqueira"> Churrasqueira</label>
+                <label><input type="checkbox" name="caracteristicas" value="pe_na_areia"> Pé na Areia</label>
+                <label><input type="checkbox" name="caracteristicas" value="vista_mar"> Vista para o Mar</label>
+                <label><input type="checkbox" name="caracteristicas" value="ar_condicionado"> Ar-Condicionado</label>
+                <label><input type="checkbox" name="caracteristicas" value="mobiliado"> Mobiliado</label>
+                <label><input type="checkbox" name="caracteristicas" value="varanda_gourmet"> Varanda Gourmet</label>
+                <label><input type="checkbox" name="caracteristicas" value="seguranca_24h"> Segurança 24h</label>
+                <label><input type="checkbox" name="caracteristicas" value="aceita_pet"> Aceita Pet</label>
+              </div>
+              <div style="display:flex;justify-content:space-between;margin-top:1rem">
+                <button type="button" class="btn btn-secondary" onclick="prevStep(2)">Voltar</button>
+                <button type="button" class="btn btn-primary" onclick="nextStep(2)">Próximo</button>
+              </div>
+            </div>
 
-            <h3 class="form-divider">Descrição</h3>
-            <label>Descrição<br><textarea name="descricao" rows="6" required placeholder="Destaque diferenciais, localização, conservação e potencial de investimento."></textarea></label>
-            <label>Observações adicionais<br><textarea name="observacoes" rows="4" placeholder="Regras do condomínio, disponibilidade de visita, documentos pendentes, etc."></textarea></label>
+            <div class="step" data-step="3">
+              <h2>Valores, mídia e envio</h2>
+              <p class="muted">Preencha os valores e anexe fotos/vídeo do imóvel.</p>
+              <label>Valor de venda/diária (R$)<br><input type="text" name="valor" required placeholder="Ex: 850.000"></label>
+              <label>Condomínio mensal (R$)<br><input type="text" name="condominio" placeholder="Ex: 1.200"></label>
+              <label>IPTU anual (R$)<br><input type="text" name="iptu" placeholder="Ex: 3.500"></label>
+              <label>Aceita financiamento ou permuta?<br>
+                <select name="financiamento">
+                  <option value="">Selecione</option>
+                  <option>Financiamento</option>
+                  <option>Permuta</option>
+                  <option>Ambos</option>
+                  <option>Nenhum</option>
+                </select>
+              </label>
 
-            <button type="submit">Enviar cadastro</button>
+              <h3 class="form-divider">Mídia</h3>
+              <label>Área de fotos<br>
+                <div class="drop-area" id="dropArea">Arraste e solte imagens aqui ou clique para selecionar</div>
+                <input type="file" name="fotos" multiple accept="image/*" style="margin-top:.5rem">
+              </label>
+              <label>Link do vídeo / Tour Virtual 360° (YouTube, Vimeo ou embed)<br><input type="url" name="video" placeholder="https://..."></label>
+
+              <h3 class="form-divider">Descrição</h3>
+              <label>Descrição<br><textarea name="descricao" rows="6" required placeholder="Destaque diferenciais, localização, conservação e potencial de investimento."></textarea></label>
+              <label>Observações adicionais<br><textarea name="observacoes" rows="4" placeholder="Regras do condomínio, disponibilidade de visita, documentos pendentes, etc."></textarea></label>
+
+              <label><input type="checkbox" name="termos" required> Li e aceito a política de privacidade e os termos de uso da Praia Digital.</label>
+
+              <div style="display:flex;justify-content:space-between;margin-top:1rem">
+                <button type="button" class="btn btn-secondary" onclick="prevStep(3)">Voltar</button>
+                <button type="submit">Enviar cadastro</button>
+              </div>
+            </div>
           </form>
-          <p class="muted">Ao enviar, você concorda com a política de privacidade e os termos de uso da Praia Digital.</p>
         </div>
 
         <aside class="card">
@@ -205,14 +213,46 @@
     <script src="https://praia.digital/js/shared.js"></script>
     <script>
       (function(){
-        const area = document.getElementById('dropArea');
-        const input = area ? area.nextElementSibling : null;
-        if(area && input){
-          area.addEventListener('click', ()=> input.click());
-          area.addEventListener('dragover', ()=> area.classList.add('drag'));
-          area.addEventListener('dragleave', ()=> area.classList.remove('drag'));
-          area.addEventListener('drop', ()=> area.classList.remove('drag'));
+        const form = document.getElementById('wizardForm');
+        const completion = document.getElementById('completion');
+        function updateProgress(){
+          const fields = form.querySelectorAll('input[required], select[required], textarea[required]');
+          let filled = 0;
+          fields.forEach(f=>{
+            const val = (f.value||'').trim();
+            if(f.type==='checkbox' && f.name==='termos'){ if(f.checked) filled++; }
+            else if(val) filled++;
+          });
+          const pct = fields.length ? Math.round((filled/fields.length)*100) : 0;
+          if(completion) completion.textContent = 'Formulário completo: ' + pct + '%';
         }
+        form.addEventListener('input', updateProgress);
+        form.addEventListener('change', updateProgress);
+        window.nextStep = function(current){
+          const next = document.querySelector('.step[data-step="'+(current+1)+'"]');
+          const cur = document.querySelector('.step[data-step="'+current+'"]');
+          if(next){
+            cur.classList.remove('active');
+            next.classList.add('active');
+            const wsCur = document.getElementById('ws'+current);
+            const wsNext = document.getElementById('ws'+(current+1));
+            if(wsCur){ wsCur.classList.add('done'); wsCur.classList.remove('active'); }
+            if(wsNext){ wsNext.classList.add('active'); }
+            updateProgress();
+          }
+        };
+        window.prevStep = function(current){
+          const prev = document.querySelector('.step[data-step="'+(current-1)+'"]');
+          const cur = document.querySelector('.step[data-step="'+current+'"]');
+          if(prev){
+            cur.classList.remove('active');
+            prev.classList.add('active');
+            const wsCur = document.getElementById('ws'+current);
+            const wsPrev = document.getElementById('ws'+(current-1));
+            if(wsCur){ wsCur.classList.remove('active','done'); }
+            if(wsPrev){ wsPrev.classList.remove('done'); wsPrev.classList.add('active'); }
+          }
+        };
       })();
     </script>
   </div>
