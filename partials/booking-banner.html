@@ -1,0 +1,31 @@
+<section aria-label="Booking.com — Encontre sua estadia ideal">
+  <h2>Encontre a pousada ideal em Bertioga / Riviera</h2>
+  <p class="muted">Busque datas e preços com parceiros selecionados.</p>
+  <form action="https://www.booking.com/searchresults.pt.html" method="get" target="_blank" rel="noopener" class="booking-form">
+    <input type="hidden" name="aid" value="BOOKING_AID_PLACEHOLDER">
+    <input type="hidden" name="label" value="praia-digital">
+    <div class="booking-row">
+      <label>
+        Destino
+        <input type="text" name="ss" placeholder="Bertioga ou Riviera de São Lourenço" required>
+      </label>
+      <label>
+        Check-in
+        <input type="date" name="checkin" required>
+      </label>
+      <label>
+        Checkout
+        <input type="date" name="checkout" required>
+      </label>
+      <button class="btn btn-primary" type="submit">Ver opções</button>
+    </div>
+  </form>
+  <p class="muted">Ao buscar, você apoia o conteúdo do Praia Digital sem custo extra.</p>
+  <style>
+    .booking-form { background:#f8fafc; border:1px solid #e2e8f0; border-radius:16px; padding:1rem; }
+    .booking-row { display:grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap:.75rem; align-items:end; }
+    .booking-form label { display:flex; flex-direction:column; gap:.35rem; font-weight:600; font-size:.9rem; }
+    .booking-form input { padding:.6rem .8rem; border:1px solid #cbd5e1; border-radius:12px; background:#fff; }
+    .booking-form button { height:42px; }
+  </style>
+</section>
