@@ -72253,10 +72253,28 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://praia.digital/termos-uso.html</loc>
-    <lastmod>2026-08-30T12:07:34Z</lastmod>
+    <loc>https://praia.digital/termos-de-uso.html</loc>
+    <lastmod>2026-08-31T22:55:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/sobre.html</loc>
+    <lastmod>2026-08-31T22:55:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/blog/guia-investimento-imovel-riviera-sao-lourenco-litoral-norte-2026.html</loc>
+    <lastmod>2026-08-31T22:55:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://praia.digital/blog/guia-investimento-imobiliario-riviera-de-sao-lourenco-bertioga-2026.html</loc>
+    <lastmod>2026-08-31T22:55:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://praia.digital/top5-leads-hoje.html</loc>
