@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <title>Carrossel — Energia Portátil / Geradores / No-breaks</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 1080px; height: 1350px; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, sans-serif; background: #071a2b; color: #eaf6ff; }
+    .slide { width: 1080px; height: 1350px; padding: 64px 72px; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden; }
+    .slide--cover { background: linear-gradient(135deg, #023047, #0077B6, #00B4D8); }
+    .slide--problem { background: linear-gradient(135deg, #0b1d3a, #123b60); }
+    .slide--solution { background: linear-gradient(135deg, #08304d, #005f8a); }
+    .slide--cta { background: linear-gradient(135deg, #023047, #0077B6, #00B4D8); }
+    .badge { display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 999px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.18); font-weight: 600; font-size: 18px; letter-spacing: .3px; }
+    .title { font-size: 82px; line-height: 1.05; font-weight: 800; letter-spacing: -1.5px; }
+    .subtitle { margin-top: 18px; font-size: 32px; line-height: 1.35; opacity: .92; }
+    .label { font-size: 22px; text-transform: uppercase; letter-spacing: 2px; opacity: .85; }
+    .list { display: grid; gap: 18px; margin-top: 24px; }
+    .item { display: flex; align-items: center; gap: 16px; padding: 20px 22px; border-radius: 18px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); }
+    .item .icon { width: 56px; height: 56px; border-radius: 16px; background: linear-gradient(135deg, #00B4D8, #90E0EF); color: #023047; display: flex; align-items: center; justify-content: center; font-size: 26px; font-weight: 800; }
+    .item .text { font-size: 28px; font-weight: 700; }
+    .cta-row { display: flex; align-items: center; gap: 18px; margin-top: 22px; }
+    .btn { display: inline-flex; align-items: center; gap: 10px; padding: 18px 22px; border-radius: 14px; background: #ffffff; color: #023047; font-weight: 800; font-size: 26px; text-decoration: none; }
+    .footer { display: flex; justify-content: space-between; align-items: flex-end; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.18); }
+    .footer strong { font-size: 22px; }
+    .footer span { font-size: 18px; opacity: .8; }
+    .wave { position: absolute; bottom: -60px; left: -40px; width: 1160px; height: 280px; background: radial-gradient(120px 120px at 50% 100%, rgba(0,180,216,0.35), transparent 70%); pointer-events: none; }
+  </style>
+</head>
+<body>
+  <section class="slide slide--cover">
+    <div class="wave"></div>
+    <div class="badge">📸 Carrossel • Praia Digital</div>
+    <div>
+      <p class="label">Distribuição • Energia Portátil</p>
+      <h1 class="title" style="margin-top:18px">Falta de luz na Riviera?<br>Proteja Wi-Fi, automação e equipamentos gourmet.</h1>
+      <p class="subtitle">Guia prático 2026: estações LiFePO4, geradores inverter silenciosos, no-breaks senoidais, painéis solares dobráveis e proteção contra surtos.</p>
+    </div>
+    <div class="footer"><span>praia.digital/links</span><strong>🏖️ Praia Digital</strong></div>
+  </section>
+
+  <section class="slide slide--problem">
+    <div class="badge">⚠️ Problema</div>
+    <h2 class="title" style="margin-top:18px">Blackout na temporada não é só incômodo.</h2>
+    <p class="subtitle">Quedas de luz interrompem automação, câmeras, Wi-Fi, geladeiras gourmet e ar-condicionado. Para anfitriões, o custo aparece em avaliações ruins, cancelamentos e perda de receita.</p>
+    <div class="list">
+      <div class="item"><div class="icon">📉</div><div class="text">Cancelamentos e no-shows</div></div>
+      <div class="item"><div class="icon">⭐</div><div class="text">Avaliações ruins por experiência ruim</div></div>
+      <div class="item"><div class="icon">🔧</div><div class="text">Manutenção extra em equipamentos</div></div>
+    </div>
+    <div class="footer"><span>Slide 2/3</span><strong>🏖️ Praia Digital</strong></div>
+  </section>
+
+  <section class="slide slide--solution">
+    <div class="badge">✅ Soluções</div>
+    <h2 class="title" style="margin-top:18px">3 camadas de proteção energética.</h2>
+    <div class="list">
+      <div class="item"><div class="icon">🔋</div><div class="text">Estação LiFePO4 + no-break senoidal</div></div>
+      <div class="item"><div class="icon">🔇</div><div class="text">Gerador inverter silencioso</div></div>
+      <div class="item"><div class="icon">☀️</div><div class="text">Painel solar dobrável + protetor surto</div></div>
+    </div>
+    <div class="cta-row">
+      <a class="btn" href="https://praia.digital/links">Guia completo no link da bio ➔</a>
+    </div>
+    <div class="footer"><span>Slide 3/3</span><strong>🏖️ Praia Digital</strong></div>
+  </section>
+</body>
+</html>
