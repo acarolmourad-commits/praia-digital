@@ -85,6 +85,53 @@
         <h2>Gestão de hospedagem</h2>
         <p>Automação e processos claros reduzem custos. Fechaduras com senha temporária, check-in remoto e monitoramento remoto ajudam a escalar operação sem perder qualidade.</p>
 
+        <section aria-label="Simulador de rentabilidade de temporada" class="rent-calculator">
+          <h2>Simulador de rentabilidade de temporada</h2>
+          <p class="muted">Previsão estimada para avaliação inicial. Resultado não é garantia de locação.</p>
+          <form id="rentCalcForm" class="rent-calc-form" onsubmit="return false;">
+            <div class="rent-calc-row">
+              <label for="rcLocation">Localização</label>
+              <select id="rcLocation" required>
+                <option value="">Selecione</option>
+                <option value="riviera">Riviera de São Lourenço</option>
+                <option value="centro">Centro de Bertioga</option>
+                <option value="cantao">Cantão</option>
+                <option value="indaiá">Indaiá</option>
+              </select>
+            </div>
+            <div class="rent-calc-row">
+              <label for="rcBedrooms">Quartos</label>
+              <select id="rcBedrooms" required>
+                <option value="">Selecione</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5+</option>
+              </select>
+            </div>
+            <div class="rent-calc-row">
+              <label for="rcType">Tipo de imóvel</label>
+              <select id="rcType" required>
+                <option value="">Selecione</option>
+                <option value="apartamento">Apartamento</option>
+                <option value="casa-condominio">Casa em Condomínio</option>
+                <option value="casa-pe-na-areia">Casa Pé na Areia</option>
+              </select>
+            </div>
+            <button class="btn btn-primary" type="button" onclick="calcRent()">Calcular estimativa</button>
+          </form>
+
+          <div id="rentCalcResult" class="rent-calc-result" style="display:none" role="status" aria-live="polite">
+            <h3>Resultado estimado</h3>
+            <p><span id="rcHighRate"></span></p>
+            <p><span id="rcLowRate"></span></p>
+            <p><span id="rcGross"></span></p>
+            <p class="muted">Essa estimativa é indicativa. Para análise real, cadastre o imóvel.</p>
+            <a class="btn btn-ocean" href="/corretores/cadastrar-imovel.html">Quer rentabilizar seu imóvel na Riviera? Cadastre com nossos corretores parceiros</a>
+          </div>
+        </section>
+
         <h2>Recomendações de produtos</h2>
         <p>Itens selecionados para gestão remota e segurança:</p>
         <div class="affiliate-grid">

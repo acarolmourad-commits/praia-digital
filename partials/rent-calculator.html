@@ -1,0 +1,106 @@
+<section aria-label="Simulador de rentabilidade de temporada" class="rent-calculator">
+  <h2>Simulador de rentabilidade de temporada</h2>
+  <p class="muted">Previsão estimada para avaliação inicial. Resultado não é garantia de locação.</p>
+  <form id="rentCalcForm" class="rent-calc-form" onsubmit="return false;">
+    <div class="rent-calc-row">
+      <label for="rcLocation">Localização</label>
+      <select id="rcLocation" required>
+        <option value="">Selecione</option>
+        <option value="riviera">Riviera de São Lourenço</option>
+        <option value="centro">Centro de Bertioga</option>
+        <option value="cantao">Cantão</option>
+        <option value="indaiá">Indaiá</option>
+      </select>
+    </div>
+    <div class="rent-calc-row">
+      <label for="rcBedrooms">Quartos</label>
+      <select id="rcBedrooms" required>
+        <option value="">Selecione</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5+</option>
+      </select>
+    </div>
+    <div class="rent-calc-row">
+      <label for="rcType">Tipo de imóvel</label>
+      <select id="rcType" required>
+        <option value="">Selecione</option>
+        <option value="apartamento">Apartamento</option>
+        <option value="casa-condominio">Casa em Condomínio</option>
+        <option value="casa-pe-na-areia">Casa Pé na Areia</option>
+      </select>
+    </div>
+    <button class="btn btn-primary" type="button" onclick="calcRent()">Calcular estimativa</button>
+  </form>
+
+  <div id="rentCalcResult" class="rent-calc-result" style="display:none" role="status" aria-live="polite">
+    <h3>Resultado estimado</h3>
+    <p><span id="rcHighRate"></span></p>
+    <p><span id="rcLowRate"></span></p>
+    <p><span id="rcGross"></span></p>
+    <p class="muted">Essa estimativa é indicativa. Para análise real, cadastre o imóvel.</p>
+    <a class="btn btn-ocean" href="/corretores/cadastrar-imovel.html">Quer rentabilizar seu imóvel na Riviera? Cadastre com nossos corretores parceiros</a>
+  </div>
+</section>
+
+<script>
+(function(){
+  const baseRates = {
+    riviera: { high: 980, low: 620 },
+    centro: { high: 760, low: 460 },
+    cantao: { high: 720, low: 440 },
+    indaiá: { high: 700, low: 430 }
+  };
+  const typeMultiplier = {
+    apartamento: 1,
+    'casa-condominio': 1.18,
+    'casa-pe-na-areia': 1.35
+  };
+  const bedroomMultiplier = {
+    '1': 1,
+    '2': 1.12,
+    '3': 1.25,
+    '4': 1.4,
+    '5': 1.55
+  };
+  window.calcRent = function(){
+    const loc = document.getElementById('rcLocation').value;
+    const bedrooms = document.getElementById('rcBedrooms').value;
+    const type = document.getElementById('rcType').value;
+    const result = document.getElementById('rentCalcResult');
+    if(!loc || !bedrooms || !type){
+      result.style.display = 'none';
+      return;
+    }
+    const base = baseRates[loc] || baseRates['riviera'];
+    const tMul = typeMultiplier[type] || 1;
+    const bMul = bedroomMultiplier[bedrooms] || 1;
+    const highRate = Math.round(base.high * tMul * bMul);
+    const lowRate = Math.round(base.low * tMul * bMul);
+    const highSeasonDays = 120;
+    const lowSeasonDays = 245;
+    const gross = Math.round((highRate * highSeasonDays) + (lowRate * lowSeasonDays));
+    document.getElementById('rcHighRate').textContent = 'Média alta temporada: R$ ' + highRate + ' / dia';
+    document.getElementById('rcLowRate').textContent = 'Média baixa temporada: R$ ' + lowRate + ' / dia';
+    document.getElementById('rcGross').textContent = 'Faturamento anual bruto estimado: R$ ' + gross.toLocaleString('pt-BR');
+    result.style.display = 'block';
+  };
+})();
+</script>
+
+<style>
+.rent-calculator{background:linear-gradient(135deg,#0077B6,#00B4D8);color:#fff;padding:1.25rem;border-radius:18px;margin:1.5rem 0}
+.rent-calculator h2{color:#fff;margin:0 0 .5rem}
+.rent-calculator .muted{color:rgba(255,255,255,.85)}
+.rent-calc-form{display:grid;gap:.75rem;margin-top:.75rem}
+.rent-calc-row{display:flex;flex-direction:column;gap:.25rem}
+.rent-calc-row label{font-weight:700;font-size:.85rem}
+.rent-calc-row select{padding:.6rem .8rem;border-radius:10px;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.12);color:#fff;font-size:1rem}
+.rent-calc-row select option{background:#023047;color:#fff}
+.rent-calc-result{margin-top:1rem;background:rgba(255,255,255,.12);padding:1rem;border-radius:14px;border:1px solid rgba(255,255,255,.25)}
+.rent-calc-result h3{margin:0 0 .5rem;color:#fff}
+.rent-calc-result p{margin:.35rem 0}
+.rent-calculator .btn{display:inline-flex;margin-top:.6rem}
+</style>
