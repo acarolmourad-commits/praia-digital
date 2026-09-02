@@ -4,10 +4,10 @@
 Padronizar a injeção de IDs de afiliado em múltiplas plataformas nos componentes existentes do Praia Digital.
 
 ## Redes suportadas
-- Amazon Associates: já implementado via `tag=praiadigital-20`
-- Mercado Livre
-- Shopee
-- Booking.com
+- Amazon Associates: `tag=praiadigital-20` já implementado
+- Mercado Livre: em estrutura no componente de afiliados
+- Shopee: em estrutura no componente de afiliados
+- Booking.com: componente `partials/booking-banner.html` preparado
 
 ## Pontos de injeção
 - Componente central: `partials/affiliate-products.html`
@@ -20,13 +20,20 @@ Padronizar a injeção de IDs de afiliado em múltiplas plataformas nos componen
 - Shopee: `https://shopee.com.br/...?af_id=SEU_ID`
 - Booking.com: `https://www.booking.com/searchresults.pt.html?aid=BOOKING_AID_PLACEHOLDER&label=praia-digital`
 
+## Mercado Livre / Shopee — Como ativar
+1. Obtenha o ID de afiliado no portal de parceiros de cada rede.
+2. Abra `partials/affiliate-products.html`.
+3. Substitua os links `href` dos botões `Mercado Livre` e `Shopee` pelos links parametrizados com o ID oficial.
+4. Se desejar, remova a marcação de uma rede enquanto testa outra.
+5. Valide HTTP 200 nas páginas afetadas.
+
 ## Booking.com — Ativação
 1. Abra `partials/booking-banner.html`.
 2. Substitua `BOOKING_AID_PLACEHOLDER` pelo AID final.
 3. Insira o componente nas páginas desejadas via include ou snippet.
 4. Valide HTTP 200 após alterações.
 
-## Instruções
+## Instruções gerais
 1. Abra os arquivos listados em `docs/monetization/PRODUCT_MAPPING_2026.md`.
 2. Localize os `href` dos cards de afiliados.
 3. Para cada rede, substitua o placeholder pelo link formatado com o ID correspondente.
