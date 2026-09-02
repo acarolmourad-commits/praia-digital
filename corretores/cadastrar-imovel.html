@@ -91,7 +91,7 @@
           </div>
           <div class="completion" id="completion">Formulário completo: 0%</div>
 
-          <form action="mailto:comercial@praia.digital?subject=Cadastro%20de%20Im%C3%B3vel%20-%20Corretor" method="post" enctype="text/plain" target="_blank" id="wizardForm">
+          <form action="mailto:comercial@praia.digital?subject=Cadastro%20de%20Im%C3%B3vel%20-%20Corretor" method="post" enctype="text/plain" target="_blank" id="wizardForm" onsubmit="event.preventDefault();submitWizardLead();">
             <div class="step active" data-step="1">
               <h2>Identificação profissional</h2>
               <p class="muted">Validação de segurança e rastreabilidade.</p>
@@ -100,6 +100,18 @@
               <label>Telefone/WhatsApp<br><input type="tel" name="corretor_telefone" required placeholder="Ex: (11) 9xxxx-xxxx"></label>
               <label>CRECI<br><input type="text" name="corretor_creci" required placeholder="Ex: 12345-F" pattern="[0-9]{5,6}-[A-Za-z]" title="Formato esperado: 000000-F ou 000000-J"></label>
               <label>Imobiliária / Equipe<br><input type="text" name="corretor_imobiliaria" placeholder="Ex: Litoral Prime Imóveis"></label>
+              <label>Como nos conheceu?<br>
+                <select name="origem">
+                  <option value="Cadastrando Imóvel">Cadastrando Imóvel</option>
+                  <option value="Simulador de Rentabilidade">Simulador de Rentabilidade</option>
+                  <option value="Guia de Enxoval e Automação">Guia de Enxoval e Automação</option>
+                  <option value="Guia Top 10 Acessórios Praia">Guia Top 10 Acessórios Praia</option>
+                  <option value="Guia de Churrasco e Área Gourmet">Guia de Churrasco e Área Gourmet</option>
+                  <option value="Busca Google">Busca Google</option>
+                  <option value="Indicação">Indicação</option>
+                  <option value="Outro">Outro</option>
+                </select>
+              </label>
               <div style="display:flex;justify-content:flex-end;margin-top:1rem">
                 <button type="button" class="btn btn-primary" onclick="nextStep(1)">Próximo</button>
               </div>
@@ -256,6 +268,19 @@
             if(wsCur){ wsCur.classList.remove('active','done'); }
             if(wsPrev){ wsPrev.classList.remove('done'); wsPrev.classList.add('active'); }
           }
+        };
+        window.submitWizardLead = function(){
+          const f = document.getElementById('wizardForm');
+          const data = new FormData(f);
+          const nome = (data.get('corretor_nome')||'').trim();
+          const telefone = (data.get('corretor_telefone')||'').trim();
+          const origem = (data.get('origem')||'Cadastrando Imóvel').trim();
+          if(!nome || !telefone){ alert('Preencha nome e telefone.'); return; }
+          const msg = encodeURIComponent('Olá! Quero cadastrar um imóvel na Praia Digital. Nome: ' + nome + ' Telefone: ' + telefone + ' Origem: ' + origem);
+          const success = document.getElementById('wizardSuccess');
+          if(success){ success.style.display = 'block'; success.textContent = 'Cadastro iniciado! Abra o WhatsApp para enviar sua mensagem.'; }
+          f.style.display = 'none';
+          window.open('https://wa.me/5511954346288?text=' + msg, '_blank');
         };
       })();
     </script>

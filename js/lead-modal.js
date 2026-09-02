@@ -69,7 +69,7 @@
         var name = (document.getElementById('leadName')||{}).value || '';
         var phone = (document.getElementById('leadPhone')||{}).value || '';
         if(!name || !phone){ return; }
-        var msg = encodeURIComponent('Olá! Quero receber a Análise de Mercado Imobiliário em PDF. Nome: ' + name + ' WhatsApp: ' + phone);
+        var msg = encodeURIComponent('Olá! Quero receber a Análise de Mercado Imobiliário em PDF. Nome: ' + name + ' WhatsApp: ' + phone + ' Origem: Modal de Captura');
         var success = m.querySelector('.lead-modal-success');
         if(success) success.style.display = 'block';
         if(form) form.style.display = 'none';
