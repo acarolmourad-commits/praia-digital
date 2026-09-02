@@ -276,7 +276,7 @@
           const telefone = (data.get('corretor_telefone')||'').trim();
           const origem = (data.get('origem')||'Cadastrando Imóvel').trim();
           if(!nome || !telefone){ alert('Preencha nome e telefone.'); return; }
-          const msg = encodeURIComponent('Olá! Quero cadastrar um imóvel na Praia Digital. Nome: ' + nome + ' Telefone: ' + telefone + ' Origem: ' + origem);
+          const msg = encodeURIComponent('[COMPRA DE SERVIÇO] Olá! Quero cadastrar um imóvel na Praia Digital. Nome: ' + nome + ' Telefone: ' + telefone + ' Origem: ' + origem);
           const success = document.getElementById('wizardSuccess');
           if(success){ success.style.display = 'block'; success.textContent = 'Cadastro iniciado! Abra o WhatsApp para enviar sua mensagem.'; }
           f.style.display = 'none';

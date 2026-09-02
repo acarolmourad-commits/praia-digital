@@ -33,19 +33,28 @@
     markShown();
   }
 
+  function saveLeadSilently(name, phone){
+    try {
+      var payload = {
+        nome: name,
+        telefone: phone,
+        origem: 'Modal de Captura',
+        timestamp: new Date().toISOString(),
+        material: 'Analise de Mercado PDF'
+      };
+      if(navigator.sendBeacon){
+        var blob = new Blob([JSON.stringify(payload)], {type: 'application/json'});
+        navigator.sendBeacon('/api/leads', blob);
+      }
+    } catch(e){}
+  }
+
   function bindEvents(){
     var m = getModal();
-    if(!m) return;
-
-    m.addEventListener('click', function(e){
-      if(e.target.classList.contains('lead-modal-backdrop') || e.target.classList.contains('lead-modal-close')){
-        closeModal();
-      }
-    });
-
-    document.addEventListener('keydown', function(e){
-      if(e.key === 'Escape' && m.dataset.open === '1') closeModal();
-    });
+    var backdrop = m ? m.querySelector('.lead-modal-backdrop') : null;
+    var closeBtn = m ? m.querySelector('.lead-modal-close') : null;
+    if(backdrop){ backdrop.addEventListener('click', closeModal); }
+    if(closeBtn){ closeBtn.addEventListener('click', closeModal); }
 
     var scrollTarget = Math.max(300, Math.floor(document.body.scrollHeight * 0.6));
     window.addEventListener('scroll', function(){
@@ -69,11 +78,14 @@
         var name = (document.getElementById('leadName')||{}).value || '';
         var phone = (document.getElementById('leadPhone')||{}).value || '';
         if(!name || !phone){ return; }
-        var msg = encodeURIComponent('Olá! Quero receber a Análise de Mercado Imobiliário em PDF. Nome: ' + name + ' WhatsApp: ' + phone + ' Origem: Modal de Captura');
+        saveLeadSilently(name, phone);
         var success = m.querySelector('.lead-modal-success');
         if(success) success.style.display = 'block';
         if(form) form.style.display = 'none';
-        window.open('https://wa.me/5511954346288?text=' + msg, '_blank');
+        var title = m.querySelector('h2');
+        if(title) title.textContent = 'Análise liberada!';
+        var desc = m.querySelector('p');
+        if(desc) desc.textContent = 'Essa é uma demonstração estática. Na versão final, aqui será exibido o PDF para download.';
       });
     }
   }
