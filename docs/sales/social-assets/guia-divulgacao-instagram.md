@@ -2,6 +2,7 @@
 
 ## Ativos
 - Story: docs/sales/social-assets/story-rentabilizar-imovel-riviera-2026.html
+- Reels: docs/sales/social-assets/reels-iluminacao-jardim-praia-2026.html
 - Carrossel slide 1: docs/sales/social-assets/carrossel-maresia-eletronicos-slide1.html
 - Carrossel slide 2: docs/sales/social-assets/carrossel-maresia-eletronicos-slide2.html
 - Carrossel slide 3: docs/sales/social-assets/carrossel-maresia-eletronicos-slide3.html
@@ -17,6 +18,11 @@ Hashtags: #RivieradeSaoLourenco #Bertioga #CasadePraia #Climatizacao #Maresia #P
 Gancho: Quer rentabilizar seu imóvel ou avaliar seu patrimônio na Riviera em 2026? Acesse nosso relatório exclusivo.
 CTA: Botão interativo para WhatsApp + link na bio para /captura-leads-litoral-2026.html
 Hashtags: #RivieradeSaoLourenco #Bertioga #CasadePraia #AluguelTemporada #InvestimentoImobiliario
+
+### Post 3 — Reels Iluminação Anti-Maresia
+Gancho: Como iluminar jardins de praia sem sofrer com maresia? Projetos luminotécnicos com refletores IP68, balizadores em inox 316 e fitas LED de silicone para decks.
+CTA: Link na bio para o guia de iluminação externa.
+Hashtags: #RivieradeSaoLourenco #Bertioga #CasadePraia #IluminacaoExterna #Paisagismo #AntiMaresia
 
 ## Diretrizes
 - Tom: consultivo, técnico e transparente.
