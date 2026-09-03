@@ -9,6 +9,8 @@
 - Carrossel Piscina: docs/sales/social-assets/carrossel-piscina-perfeita-slide1.html, slide2.html, slide3.html
 - Story Toldos: docs/sales/social-assets/story-toldos-varanda-gourmet-2026.html
 - Carrossel Toldos: docs/sales/social-assets/carrossel-toldos-varanda-slide1.html, slide2.html, slide3.html
+- Story Pisos: docs/sales/social-assets/story-pisos-impermeabilizacao-2026.html
+- Carrossel Pisos: docs/sales/social-assets/carrossel-pisos-impermeabilizacao-slide1.html, slide2.html, slide3.html
 
 ## Legendas estratégicas
 
@@ -41,6 +43,11 @@ Hashtags: #RivieradeSaoLourenco #Bertioga #CasadePraia #PiscinaSmart #Tratamento
 Gancho: Como proteger sua varanda gourmet do sol e da chuva no litoral? Toldos retráteis, velas de sombra e cortinas rolô com proteção UV e fixação em inox 316.
 CTA: Link na bio para o guia de toldos e coberturas.
 Hashtags: #RivieradeSaoLourenco #Bertioga #CasadePraia #ToldosRetrateis #ProtecaoSolar #VarandaGourmet
+
+### Post 7 — Story/Carrossel Pisos e Impermeabilização
+Gancho: Como evitar infiltrações e pisos escorregadios na casa de praia? Mantas líquidas impermeabilizantes, seladores anti-umidade e hidro/oleofugantes.
+CTA: Link na bio para o guia de pisos e impermeabilização.
+Hashtags: #RivieradeSaoLourenco #Bertioga #CasadePraia #Impermeabilizacao #PisosExternos #AntiDerrapante
 
 ## Diretrizes
 - Tom: consultivo, técnico e transparente.
