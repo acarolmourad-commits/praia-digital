@@ -7,6 +7,8 @@
 - Carrossel Móveis: docs/sales/social-assets/carrossel-moveis-ombrelones-slide1.html, slide2.html, slide3.html
 - Story Piscina: docs/sales/social-assets/story-piscina-perfeita-temporada-2026.html
 - Carrossel Piscina: docs/sales/social-assets/carrossel-piscina-perfeita-slide1.html, slide2.html, slide3.html
+- Story Toldos: docs/sales/social-assets/story-toldos-varanda-gourmet-2026.html
+- Carrossel Toldos: docs/sales/social-assets/carrossel-toldos-varanda-slide1.html, slide2.html, slide3.html
 
 ## Legendas estratégicas
 
@@ -34,6 +36,11 @@ Hashtags: #RivieradeSaoLourenco #Bertioga #CasadePraia #MoveisExternos #Ombrelon
 Gancho: Como manter a piscina da casa de praia perfeita na alta temporada sem esforço? Robôs aspiradores, geradores de cloro a sal e bombas de calor inverter.
 CTA: Link na bio para o guia de piscinas smart.
 Hashtags: #RivieradeSaoLourenco #Bertioga #CasadePraia #PiscinaSmart #TratamentoAgua #AltaTemporada
+
+### Post 6 — Story/Carrossel Toldos e Proteção Solar
+Gancho: Como proteger sua varanda gourmet do sol e da chuva no litoral? Toldos retráteis, velas de sombra e cortinas rolô com proteção UV e fixação em inox 316.
+CTA: Link na bio para o guia de toldos e coberturas.
+Hashtags: #RivieradeSaoLourenco #Bertioga #CasadePraia #ToldosRetrateis #ProtecaoSolar #VarandaGourmet
 
 ## Diretrizes
 - Tom: consultivo, técnico e transparente.
