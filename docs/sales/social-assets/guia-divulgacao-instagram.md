@@ -4,9 +4,9 @@
 - Story: docs/sales/social-assets/story-rentabilizar-imovel-riviera-2026.html
 - Reels: docs/sales/social-assets/reels-iluminacao-jardim-praia-2026.html
 - Story Móveis: docs/sales/social-assets/story-moveis-ombrelones-anti-maresia-2026.html
-- Carrossel Móveis slide 1: docs/sales/social-assets/carrossel-moveis-ombrelones-slide1.html
-- Carrossel Móveis slide 2: docs/sales/social-assets/carrossel-moveis-ombrelones-slide2.html
-- Carrossel Móveis slide 3: docs/sales/social-assets/carrossel-moveis-ombrelones-slide3.html
+- Carrossel Móveis: docs/sales/social-assets/carrossel-moveis-ombrelones-slide1.html, slide2.html, slide3.html
+- Story Piscina: docs/sales/social-assets/story-piscina-perfeita-temporada-2026.html
+- Carrossel Piscina: docs/sales/social-assets/carrossel-piscina-perfeita-slide1.html, slide2.html, slide3.html
 
 ## Legendas estratégicas
 
@@ -29,6 +29,11 @@ Hashtags: #RivieradeSaoLourenco #Bertioga #CasadePraia #IluminacaoExterna #Paisa
 Gancho: Como escolher móveis e ombrelones que não estragam com a maresia? Alumínio naval, corda náutica, UV50+ e tecidos anti-mofo para varandas e decks.
 CTA: Link na bio para o guia de móveis externos.
 Hashtags: #RivieradeSaoLourenco #Bertioga #CasadePraia #MoveisExternos #Ombrelone #AntiMaresia
+
+### Post 5 — Story/Carrossel Piscina Perfeita
+Gancho: Como manter a piscina da casa de praia perfeita na alta temporada sem esforço? Robôs aspiradores, geradores de cloro a sal e bombas de calor inverter.
+CTA: Link na bio para o guia de piscinas smart.
+Hashtags: #RivieradeSaoLourenco #Bertioga #CasadePraia #PiscinaSmart #TratamentoAgua #AltaTemporada
 
 ## Diretrizes
 - Tom: consultivo, técnico e transparente.
