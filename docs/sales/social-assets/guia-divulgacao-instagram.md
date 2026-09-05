@@ -25,12 +25,12 @@ CTA: Botão interativo para WhatsApp + link na bio para /captura-leads-litoral-2
 Hashtags: #RivieradeSaoLourenco #Bertioga #CasadePraia #AluguelTemporada #InvestimentoImobiliario
 
 ### Post 3 — Reels Iluminação Anti-Maresia
-Gancho: Como iluminar jardins de praia sem sofrer com maresia? Projetos luminotécnicos com refletores IP68, balizadores em inox 316 e fitas LED de silicone para decks.
+Gancho: Como iluminar jardins de praia sem sofrer com maresia? Projetos luminotécnicos com refletores proteção IP68, balizadores em aço inoxidável 316 e fitas LED de silicone para decks.
 CTA: Link na bio para o guia de iluminação externa.
 Hashtags: #RivieradeSaoLourenco #Bertioga #CasadePraia #IluminacaoExterna #Paisagismo #AntiMaresia
 
 ### Post 4 — Story/Carrossel Móveis Anti-Maresia
-Gancho: Como escolher móveis e ombrelones que não estragam com a maresia? Alumínio naval, corda náutica, UV50+ e tecidos anti-mofo para varandas e decks.
+Gancho: Como escolher móveis e ombrelones que não estragam com a maresia? Alumínio naval, corda náutica, proteção UV50+ e tecidos anti-mofo para varandas e decks.
 CTA: Link na bio para o guia de móveis externos.
 Hashtags: #RivieradeSaoLourenco #Bertioga #CasadePraia #MoveisExternos #Ombrelone #AntiMaresia
 
@@ -40,7 +40,7 @@ CTA: Link na bio para o guia de piscinas smart.
 Hashtags: #RivieradeSaoLourenco #Bertioga #CasadePraia #PiscinaSmart #TratamentoAgua #AltaTemporada
 
 ### Post 6 — Story/Carrossel Toldos e Proteção Solar
-Gancho: Como proteger sua varanda gourmet do sol e da chuva no litoral? Toldos retráteis, velas de sombra e cortinas rolô com proteção UV e fixação em inox 316.
+Gancho: Como proteger sua varanda gourmet do sol e da chuva no litoral? Toldos retráteis, velas de sombra e cortinas rolô com proteção UV e fixação em aço inoxidável 316.
 CTA: Link na bio para o guia de toldos e coberturas.
 Hashtags: #RivieradeSaoLourenco #Bertioga #CasadePraia #ToldosRetrateis #ProtecaoSolar #VarandaGourmet
 

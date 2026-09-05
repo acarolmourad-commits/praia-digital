@@ -1,164 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Checkout — Praia Digital Academy</title>
-<meta name="description" content="Finalize sua compra na Praia Digital Academy. Pagamento seguro, acesso imediato.">
-<meta name="robots" content="noindex, follow">
-<link rel="canonical" href="https://praia.digital/education/checkout.html">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Checkout — Praia Digital Academy">
-<meta property="og:description" content="Finalize sua compra com acesso imediato ao curso.">
-<meta property="og:url" content="https://praia.digital/education/checkout.html">
-<meta property="og:site_name" content="Praia Digital Academy">
-<link rel="stylesheet" href="https://praia.digital/css/style.css">
-<meta name="theme-color" content="#0b1220">
-<link rel="preconnect" href="https://praia.digital">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://praia.digital/index.html" },
-    { "@type": "ListItem", "position": 2, "name": "Academy", "item": "https://praia.digital/education/index.html" },
-    { "@type": "ListItem", "position": 3, "name": "Checkout", "item": "https://praia.digital/education/checkout.html" }
-  ]
-}
-</script>
-</head>
-<body>
-<div class="wrap">
-<meta name="pd-shared-nav">
-<main id="main">
-  <h1>Finalizar compra <span class="badge">Checkout</span></h1>
-  <p class="lead">Preencha seus dados para acessar o curso escolhido.</p>
-
-  <div class="card" id="course-info">
-    <div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center">
-      <img id="course-cover" src="" alt="" style="width:120px;height:80px;object-fit:cover;border-radius:10px;display:none">
-      <div style="flex:1;min-width:200px">
-        <p><strong>Curso:</strong> <span id="course-name">—</span></p>
-        <p id="course-description" style="color:#94a3b8;font-size:.9rem;margin-top:.2rem"></p>
-        <p class="price" id="course-price">R$ 0</p>
-        <p style="font-size:.9rem;color:#94a3b8">
-          De <span id="course-price-original">R$ 0</span> 
-          <span style="color:#4ade80">• Pix: <span id="course-price-pix">R$ 0</span></span>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card" style="margin-top:1rem">
-    <h2 style="margin-top:0">Forma de pagamento</h2>
-    <label style="display:flex;align-items:center;gap:.5rem;margin:.4rem 0">
-      <input type="radio" name="payment-method" value="pix" checked> <strong>PIX</strong> <span style="color:#4ade80">5% desconto</span>
-    </label>
-    <label style="display:flex;align-items:center;gap:.5rem;margin:.4rem 0">
-      <input type="radio" name="payment-method" value="card"> <strong>Cartão de crédito</strong> <span style="color:#94a3b8">até 12x</span>
-    </label>
-  </div>
-
-  <div class="card" style="margin-top:1rem">
-    <h2 style="margin-top:0">Seus dados</h2>
-    <form id="checkout-form">
-      <label>Nome completo
-        <input type="text" id="name" required placeholder="Seu nome completo">
-      </label>
-      <label>E-mail
-        <input type="email" id="email" required placeholder="seu@email.com">
-      </label>
-      <label>Confirme seu e-mail
-        <input type="email" id="email-confirm" required placeholder="seu@email.com">
-        <span id="email-confirm-error" style="color:#facc15;font-size:.85rem;display:none">Os e-mails não coincidem</span>
-      </label>
-      <label>WhatsApp
-        <input type="tel" id="phone" required placeholder="(11) 99999-9999">
-      </label>
-      <label>CPF/CNPJ
-        <input type="text" id="document" required placeholder="000.000.000-00">
-      </label>
-
-      <div id="pix-form" style="margin-top:1rem">
-        <div style="background:#0b2d4d;padding:1rem;border-radius:12px;text-align:center">
-          <p style="margin:.5rem 0"><strong>QR Code PIX</strong></p>
-          <img id="qr-code" src="" alt="QR Code PIX" style="max-width:220px;display:none">
-          <p style="font-size:.85rem;color:#94a3b8;margin-top:.5rem">Código expira em: <span id="pix-expires">--</span></p>
-          <label style="text-align:left;margin-top:.8rem">Código Copia e Cola
-            <input type="text" id="qr-code-raw" readonly style="font-size:.8rem">
-          </label>
-          <p style="font-size:.85rem;color:#94a3b8;margin-top:.5rem">Após o pagamento, a confirmação é automática.</p>
-        </div>
-      </div>
-
-      <div id="card-form" style="display:none;margin-top:1rem">
-        <label>Número do cartão
-          <input type="text" id="card-number" placeholder="0000 0000 0000 0000">
-        </label>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
-          <label>Validade
-            <input type="text" id="card-expiry" placeholder="MM/AA">
-          </label>
-          <label>CVC
-            <input type="text" id="card-cvc" placeholder="000">
-          </label>
-        </div>
-        <label>Nome no cartão
-          <input type="text" id="card-name" placeholder="Como no cartão">
-        </label>
-        <label>Parcelas
-          <select id="installments"></select>
-        </label>
-        <p style="font-size:.9rem;color:#94a3b8;margin-top:.5rem">
-          Parcela: <span id="installment-preview">--</span><br>
-          Total: <span id="installment-total">--</span>
-        </p>
-      </div>
-
-      <button type="submit" id="submit-payment" class="cta">Confirmar pagamento</button>
-      <p id="payment-status" style="margin-top:.6rem;color:#94a3b8;font-size:.9rem"></p>
-    </form>
-  </div>
-
-  <div id="result" class="card" style="margin-top:1rem;display:none"></div>
-</main>
-<meta name="pd-shared-footer">
-</div>
-<script src="/education/assets/js/checkout.js"></script>
-<script src="https://praia.digital/js/shared.js"></script>
-
-<!-- Mercado Pago Checkout -->
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mercado Pago Checkout Block</title>
+  <title>Checkout — Praia Digital Academy</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://praia.digital/education/checkout.html">
+  <link rel="preconnect" href="https://praia.digital">
   <style>
-    .mp-checkout { max-width: 480px; margin: 2rem auto; padding: 1.5rem; background: #fff; border-radius: 16px; border: 1px solid #e5e7eb; font-family: 'Segoe UI', system-ui, sans-serif; }
-    .mp-checkout h3 { margin: 0 0 0.75rem; font-size: 1.25rem; color: #023047; }
-    .mp-checkout .price { font-size: 2rem; font-weight: 800; color: #0077B6; margin-bottom: 0.25rem; }
-    .mp-checkout .price-desc { color: #4b5563; font-size: 0.95rem; margin-bottom: 1.25rem; }
-    .mp-checkout .mp-btn { display: block; width: 100%; padding: 14px; background: #0077B6; color: #fff; text-align: center; border-radius: 10px; text-decoration: none; font-weight: 700; border: none; cursor: pointer; font-size: 1rem; }
-    .mp-checkout .mp-btn:hover { background: #005f8a; }
-    .mp-checkout .mp-btn.secondary { background: transparent; border: 2px solid #0077B6; color: #0077B6; margin-top: 0.5rem; }
-    .mp-checkout .mp-btn.secondary:hover { background: #0077B6; color: #fff; }
-    .mp-checkout .mp-note { margin-top: 1rem; font-size: 0.8rem; color: #6b7280; text-align: center; }
-    .mp-checkout .secure-badge { display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; font-size: 0.8rem; color: #059669; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0b1220; color: #e8ecf1; padding: 2rem; }
+    .wrap { max-width: 900px; margin: 0 auto; }
+    .card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 18px 20px; margin-bottom: 1rem; }
+    .cta { display: inline-block; background: #00B4D8; color: #fff; padding: 0.7rem 1.2rem; border-radius: 999px; font-weight: 700; text-decoration: none; margin-right: 10px; }
+    .price { font-size: 1.6rem; font-weight: 800; color: #90E0EF; }
+    .secure { color: #4ade80; font-size: 0.85rem; margin-top: 0.5rem; }
+    .guarantee { background: #0b2d4d; border-left: 4px solid #00B4D8; padding: 1rem; border-radius: 12px; margin-top: 1rem; }
+    .faq { margin-top: 1.5rem; }
+    .faq-item { border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.75rem 0; }
+    .faq-item strong { color: #00B4D8; }
   </style>
 </head>
 <body>
-  <div class="mp-checkout" id="mp-checkout-root">
-    <h3 id="mp-title">Finalizar pagamento</h3>
-    <div class="price" id="mp-price">R$ 0</div>
-    <div class="price-desc" id="mp-desc"></div>
-    <button class="mp-btn" id="mp-pay" data-preference-endpoint="">Pagar com Mercado Pago</button>
-    <button class="mp-btn secondary" id="mp-pix" data-preference-endpoint="">Pagar com PIX</button>
-    <p class="mp-note">Pagamento processado com segurança pelo Mercado Pago.</p>
-    <p class="secure-badge">🔒 Checkout seguro</p>
-  </div>
-</body>
-</html>
+  <div class="wrap">
+    <main id="main">
+      <h1>Finalizar compra</h1>
+      <p class="lead">Preencha seus dados para acessar o curso escolhido.</p>
 
+      <div class="card">
+        <p><strong>Curso:</strong> <span id="course-name">—</span></p>
+        <p class="price" id="course-price">R$ 0</p>
+        <p style="color:#94a3b8;font-size:.9rem">Acesso imediato e 100% online</p>
+        <a class="cta" id="checkout-hotmart" href="#" target="_blank" rel="noopener">Comprar agora</a>
+        <a class="cta" id="checkout-kiwify" href="#" target="_blank" rel="noopener" style="background:#fff;color:#0b1220">Comprar no Kiwify</a>
+        <p class="secure">🔒 Checkout seguro • Pagamento processado automaticamente</p>
+
+        <div class="guarantee">
+          <strong>✅ Garantia de 7 dias</strong>
+          <p style="color:#94a3b8;font-size:.9rem;margin-top:.25rem">Se não gostar, devolvemos 100% do valor. Sem perguntas.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <h2>Perguntas frequentes</h2>
+        <div class="faq-item">
+          <strong>Q: Como acesso o curso após a compra?</strong>
+          <p style="color:#94a3b8;font-size:.9rem;margin-top:.25rem">A: Após o pagamento confirmado, você recebe e-mail com link de acesso à área do aluno. Acesso é imediato.</p>
+        </div>
+        <div class="faq-item">
+          <strong>Q: Emite certificado?</strong>
+          <p style="color:#94a3b8;font-size:.9rem;margin-top:.25rem">A: Sim, emissão automática após conclusão.</p>
+        </div>
+        <div class="faq-item">
+          <strong>Q: Quais formas de pagamento?</strong>
+          <p style="color:#94a3b8;font-size:.9rem;margin-top:.25rem">A: PIX, cartão de crédito e boleto. Parcelamento disponível.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    (function(){
+      function getQueryParam(name) {
+        const url = new URL(window.location.href);
+        return url.searchParams.get(name) || '';
+      }
+      const slug = getQueryParam('slug');
+      const title = getQueryParam('title') || 'Curso';
+      const price = getQueryParam('price') || 'R$ 0';
+      const hotmartLink = getQueryParam('hotmart') || '#';
+      const kiwifyLink = getQueryParam('kiwify') || '#';
+
+      const nameEl = document.getElementById('course-name');
+      const priceEl = document.getElementById('course-price');
+      const hotmartBtn = document.getElementById('checkout-hotmart');
+      const kiwifyBtn = document.getElementById('checkout-kiwify');
+
+      if (nameEl) nameEl.textContent = decodeURIComponent(title);
+      if (priceEl) priceEl.textContent = price;
+      if (hotmartBtn) hotmartBtn.href = hotmartLink;
+      if (kiwifyBtn) kiwifyBtn.href = kiwifyLink;
+
+      // GA4 InitiateCheckout
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      if (typeof gtag === 'function') {
+        gtag('event', 'InitiateCheckout', {
+          event_category: 'Academy',
+          event_label: decodeURIComponent(title),
+          value: parseFloat(price.replace(/[^0-9.,]/g, '').replace(',', '.')) || 0,
+          currency: 'BRL'
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
