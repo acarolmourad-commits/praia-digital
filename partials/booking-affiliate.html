@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking.com Affiliate Block</title>
+  <style>
+    .booking-block { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; font-family: 'Segoe UI', system-ui, sans-serif; }
+    .booking-title { font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; color: #023047; }
+    .booking-search { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 1.25rem; display: grid; gap: 1rem; }
+    .booking-field { display: flex; flex-direction: column; gap: 0.35rem; }
+    .booking-field label { font-size: 0.85rem; font-weight: 600; color: #334155; }
+    .booking-field input, .booking-field select { padding: 0.6rem 0.8rem; border: 1px solid #d1d5db; border-radius: 8px; background: #fff; color: #023047; }
+    .booking-cta { display: inline-block; background: #0077B6; color: #fff; padding: 0.6rem 1.1rem; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 0.9rem; }
+    .booking-cta:hover { background: #005f8a; }
+    .booking-disclosure { margin-top: 0.75rem; font-size: 0.75rem; color: #6b7280; }
+    .booking-placeholder { opacity: 0.6; }
+  </style>
+</head>
+<body>
+  <div class="booking-block" id="booking-affiliate-root">
+    <div class="booking-title">🏨 Hospedagem no litoral</div>
+    <div class="booking-search booking-placeholder">
+      <div class="booking-field">
+        <label>Destino</label>
+        <input type="text" id="booking-destination" placeholder="Cidade ou bairro no litoral" value="">
+      </div>
+      <div class="booking-field">
+        <label>Check-in</label>
+        <input type="date" id="booking-checkin" value="">
+      </div>
+      <div class="booking-field">
+        <label>Check-out</label>
+        <input type="date" id="booking-checkout" value="">
+      </div>
+      <div class="booking-field">
+        <label>Hóspedes</label>
+        <select id="booking-guests">
+          <option value="1">1 hóspede</option>
+          <option value="2" selected>2 hóspedes</option>
+          <option value="3">3 hóspedes</option>
+          <option value="4">4 hóspedes</option>
+        </select>
+      </div>
+      <a class="booking-cta" id="booking-search-btn" href="https://www.booking.com/searchresults.pt.html?ss=Litoral+Paulista&checkin_year=2026&checkin_month=9&checkin_monthday=10&checkout_year=2026&checkout_month=9&checkout_monthday=13&group_adults=2&no_rooms=1&aid=XXXXXX&label=praiadigital-20" target="_blank" rel="noopener">Ver hospedagem no Booking.com ➔</a>
+      <p class="booking-disclosure">Esta página pode conter links de afiliados. Isso significa que posso receber uma comissão se você fizer uma reserva através dos links, sem nenhum custo adicional para você.</p>
+      <p class="booking-disclosure">Placeholder: substituir <code>aid=XXXXXX</code> e <code>label=...</code> pelas credenciais reais do programa de afiliados Booking/CJ.</p>
+    </div>
+  </div>
+</body>
+</html>
