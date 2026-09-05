@@ -35,5 +35,55 @@
       <p class="mp-note">Placeholder: integrar preferência real quando credenciais estiverem disponíveis.</p>
     </div>
   </div>
+
+<!-- VIP Waitlist -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista VIP — Praia Digital</title>
+  <style>
+    .vip-overlay { position: fixed; inset: 0; background: rgba(2, 48, 71, 0.6); display: none; align-items: center; justify-content: center; z-index: 1000; }
+    .vip-overlay.open { display: flex; }
+    .vip-modal { background: #fff; border-radius: 16px; padding: 1.5rem; max-width: 480px; width: 90%; box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
+    .vip-modal h2 { margin-bottom: 0.75rem; color: #023047; }
+    .vip-modal p { color: #334155; margin-bottom: 1rem; }
+    .vip-modal input { width: 100%; padding: 0.6rem 0.8rem; border: 1px solid #d1d5db; border-radius: 8px; margin-bottom: 0.75rem; }
+    .vip-modal button { width: 100%; padding: 0.75rem; background: #0077B6; color: #fff; border: none; border-radius: 10px; font-weight: 700; cursor: pointer; }
+    .vip-modal .vip-close { margin-top: 0.5rem; background: transparent; color: #334155; border: 1px solid #d1d5db; }
+  </style>
+</head>
+<body>
+  <div class="vip-overlay" id="vip-overlay">
+    <div class="vip-modal">
+      <h2>Lista VIP</h2>
+      <p>Pagamento ainda não está ativo. Deixe seu contato para entrar na lista VIP e ser avisado assim que liberarmos.</p>
+      <form id="vip-form">
+        <input type="text" id="vip-name" placeholder="Nome completo" required>
+        <input type="email" id="vip-email" placeholder="E-mail" required>
+        <input type="tel" id="vip-phone" placeholder="WhatsApp" required>
+        <button type="submit">Entrar na Lista VIP</button>
+      </form>
+      <button class="vip-close" id="vip-close">Fechar</button>
+    </div>
+  </div>
+</body>
+</html>
+
+<script>
+(function(){
+  var overlay = document.getElementById('vip-overlay');
+  var openBtn = document.getElementById('mp-placeholder');
+  var pixBtn = document.getElementById('mp-pix-placeholder');
+  var closeBtn = document.getElementById('vip-close');
+  if(openBtn){ openBtn.addEventListener('click', function(e){ e.preventDefault(); if(overlay) overlay.classList.add('open'); }); }
+  if(pixBtn){ pixBtn.addEventListener('click', function(e){ e.preventDefault(); if(overlay) overlay.classList.add('open'); }); }
+  if(closeBtn){ closeBtn.addEventListener('click', function(){ if(overlay) overlay.classList.remove('open'); }); }
+  var form = document.getElementById('vip-form');
+  if(form){ form.addEventListener('submit', function(e){ e.preventDefault(); alert('Você entrou na Lista VIP. Entraremos em contato quando o pagamento for liberado.'); if(overlay) overlay.classList.remove('open'); }); }
+})();
+</script>
+
 </body>
 </html>
