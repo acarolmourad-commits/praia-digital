@@ -20,25 +20,6 @@ These convert to Amazon product purchases with 1-3% commissions.
 
 ---
 
-## Account Creation Steps
-
-1. **Open signup:** https://affiliate-program.amazon.com/signup
-2. **Account info:**
-   - Email: `comercial@praia.digital`
-   - Password: choose strong password, store in password manager
-   - Name: Praia Digital / Carolina Mourad
-3. **Website/app info:**
-   - Primary URL: `https://praia.digital`
-   - Category: Real Estate → Home & Garden
-   - Traffic description: "SEO content for litoral paulista real estate buyers, sellers, and investors. Content includes neighborhood guides, investment analysis, buyer/seller checklists, and property automation tools."
-4. **Payment/ tax:**
-   - Country: Brazil
-   - Tax form: W-8BEN if requested
-   - Payment method: Bank transfer or Payoneer/PayPal
-5. **Submit application** and wait for approval email (1-3 business days)
-
----
-
 ## After Approval: Product Linking
 
 ### High-Intent Product Categories
