@@ -306,27 +306,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 </section>
 
 <!-- Mercado Pago Checkout -->
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mercado Pago Checkout Block</title>
-  <style>
-    .mp-checkout { max-width: 480px; margin: 2rem auto; padding: 1.5rem; background: #fff; border-radius: 16px; border: 1px solid #e5e7eb; font-family: 'Segoe UI', system-ui, sans-serif; }
-    .mp-checkout h3 { margin: 0 0 0.75rem; font-size: 1.25rem; color: #023047; }
-    .mp-checkout .price { font-size: 2rem; font-weight: 800; color: #0077B6; margin-bottom: 0.25rem; }
-    .mp-checkout .price-desc { color: #4b5563; font-size: 0.95rem; margin-bottom: 1.25rem; }
-    .mp-checkout .mp-btn { display: block; width: 100%; padding: 14px; background: #0077B6; color: #fff; text-align: center; border-radius: 10px; text-decoration: none; font-weight: 700; border: none; cursor: pointer; font-size: 1rem; }
-    .mp-checkout .mp-btn:hover { background: #005f8a; }
-    .mp-checkout .mp-btn.secondary { background: transparent; border: 2px solid #0077B6; color: #0077B6; margin-top: 0.5rem; }
-    .mp-checkout .mp-btn.secondary:hover { background: #0077B6; color: #fff; }
-    .mp-checkout .mp-note { margin-top: 1rem; font-size: 0.8rem; color: #6b7280; text-align: center; }
-    .mp-checkout .secure-badge { display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; font-size: 0.8rem; color: #059669; }
-  </style>
-</head>
-<body>
-  <div class="mp-checkout" id="mp-checkout-root">
+<div class="mp-checkout" id="mp-checkout-root">
     <h3 id="mp-title">Finalizar pagamento</h3>
     <div class="price" id="mp-price">R$ 0</div>
     <div class="price-desc" id="mp-desc"></div>
@@ -335,8 +315,3 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     <p class="mp-note">Pagamento processado com segurança pelo Mercado Pago.</p>
     <p class="secure-badge">🔒 Checkout seguro</p>
   </div>
-</body>
-</html>
-
-</body>
-</html>
