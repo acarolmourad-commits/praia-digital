@@ -32,6 +32,17 @@
         </header>
 
         <p>Em 2026, o mercado brasileiro de automação amadureceu. Ferramentas como <strong>Make</strong>, <strong>Zapier</strong>, <strong>n8n</strong> e <strong>Activepieces</strong> disputam espaço com novas gerações de plataformas baseadas em agentes de IA. Neste guia comparamos 8 critérios essenciais para ajudar você a escolher a melhor solução para o seu negócio.</p>
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-top" data-ad-id="ads-top" style="min-height:100px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (topo)
+  </div>
+  <noscript>
+    <!-- Fallback para quando JavaScript está desativado -->
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
 
         <h2>Tabela comparativa: 8 critérios decisivos</h2>
         <div class="table-wrapper">
@@ -154,7 +165,14 @@
         </ul>
 
         <h2>Conclusão</h2>
-        <p>Se o seu objetivo é <strong>automação inteligente, autônoma e multicanal</strong>, Hermes Agents se destaca por combinar IA nativa com canais brasileiros e personalização profunda. Para fluxos simples e rápidos, Make e Zapier ainda são boas opções — mas tendem a encarecer e limitar à medida que o negócio cresce.</p>
+        <p>Se o seu objetivo é <strong>automação inteligente, autônoma e multicanal</strong>, Hermes Agents se destaca por combinar IA nativa com canais brasileiros e personalização profunda. Para fluxos simples e rápidos, Make e Zapier ainda são boas opções — mas tendem a encarecer e limitar à medida que o negócio cresce.</p
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-inarticle" data-ad-id="ads-inarticle" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense nativo (meio do texto)
+  </div>
+</div>
+>
         <p><strong>Dica:</strong> comece mapeando um processo crítico com alta repetição e baixo valor agregado humano. Automatize-o com a ferramenta que melhor se encaixa no seu orçamento e perfil técnico — e escale depois.</p>
 
         <footer>
@@ -164,5 +182,30 @@
 
   <!--#include virtual="/partials/lead-modal.html" -->
   <script defer src="https://praia.digital/js/lead-modal.js"></script>
+<script>
+(function(){
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const adId = el.getAttribute('data-ad-id');
+          if (adId && !el.hasAttribute('data-ad-loaded')) {
+            el.setAttribute('data-ad-loaded', 'true');
+            // Placeholder para substituição futura pelo snippet AdSense real
+            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
+          }
+          observer.unobserve(el);
+        }
+      });
+    }, { rootMargin: '200px' });
+    
+    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
+      observer.observe(el);
+    });
+  }
+})();
+</script>
+
 </body>
 </html>

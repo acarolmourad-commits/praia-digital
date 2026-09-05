@@ -98,6 +98,17 @@
       <main>
         <h1>Agentes Autônomos Integração WhatsApp 2026 — Tutorial Completo</h1>
         <p><strong>Por Praia Digital</strong> | Publicado em 2026-08-23</p>
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-top" data-ad-id="ads-top" style="min-height:100px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (topo)
+  </div>
+  <noscript>
+    <!-- Fallback para quando JavaScript está desativado -->
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
         <p>Aprenda a integrar o WhatsApp Business API com agentes autônomos de IA: arquitetura, código Python, configuração de webhook, boas práticas de LGPD e casos práticos para imobiliárias e PMEs brasileiras.</p>
 
         <!-- AD IN-ARTICLE -->
@@ -105,7 +116,14 @@
         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
         <h2>1. Por que integrar WhatsApp com agentes autônomos</h2>
-        <p>O WhatsApp é o canal com maior taxa de abertura no Brasil: acima de 95% das mensagens são lidas em até 3 minutos. Agentes autônomos podem responder, qualificar leads, agendar visitas e sincronizar dados com CRM — sem intervenção humana para cada mensagem.</p>
+        <p>O WhatsApp é o canal com maior taxa de abertura no Brasil: acima de 95% das mensagens são lidas em até 3 minutos. Agentes autônomos podem responder, qualificar leads, agendar visitas e sincronizar dados com CRM — sem intervenção humana para cada mensagem.</p
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-inarticle" data-ad-id="ads-inarticle" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense nativo (meio do texto)
+  </div>
+</div>
+>
         <p>Resultado típico em imobiliárias: redução de 60% no tempo de resposta inicial, aumento de 25% na taxa de qualificação de leads e economia de 15h/semana da equipe de corretores.</p>
 
         <!-- AD BLOCK -->
@@ -312,7 +330,17 @@ def find_relevant_memories(sender: str, query: str):
         <p><strong>Qual a arquitetura mínima recomendada?</strong><br>Webhook FastAPI → fila Redis → orquestrador (LangGraph/Celery) → LLM + ferramentas (CRM, ERP) → resposta via WhatsApp. Adicione vector store para memória de longo prazo.</p>
 
         <p><a href="https://praia.digital/blog/10-artigos-seo-litoral-paulista-2026.html">&larr; Voltar para artigos SEO</a></p>
-      </main>
+      <div class="adsense-block" style="margin:2rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-footer" data-ad-id="ads-footer" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (rodapé)
+  </div>
+  <noscript>
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
+</main>
       <aside class="sidebar">
         <!-- SIDEBAR AD -->
         <ins class="adsbygoogle" style="display:block; text-align:center; margin:1.5rem 0;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="YYYYYYYYYY"></ins>
@@ -323,5 +351,30 @@ def find_relevant_memories(sender: str, query: str):
 <section id="tambem-veja" style="margin-top:28px"><p><strong>Veja também:</strong></p><ul><li><a href="/hub/index.html">Conteúdos relacionados sobre Index</a></li></ul></section><section id="disclaimer" style="margin-top:40px;padding:16px;border-top:1px solid #e5e7eb"><p><strong>Aviso legal:</strong> Este conteúdo tem caráter informativo e não constitui assessoria jurídica, contábil ou imobiliária. Dados e projeções dependem de contexto de mercado. Consulte profissional habilitado para decisões específicas.</p></section>
   <!--#include virtual="/partials/lead-modal.html" -->
   <script defer src="https://praia.digital/js/lead-modal.js"></script>
+<script>
+(function(){
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const adId = el.getAttribute('data-ad-id');
+          if (adId && !el.hasAttribute('data-ad-loaded')) {
+            el.setAttribute('data-ad-loaded', 'true');
+            // Placeholder para substituição futura pelo snippet AdSense real
+            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
+          }
+          observer.unobserve(el);
+        }
+      });
+    }, { rootMargin: '200px' });
+    
+    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
+      observer.observe(el);
+    });
+  }
+})();
+</script>
+
 </body>
 </html>

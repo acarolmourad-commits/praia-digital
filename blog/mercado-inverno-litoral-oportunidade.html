@@ -139,8 +139,26 @@ gtag('config', '', { anonymize_ip: true });
 <meta name="pd-shared-nav">
 <a class="skip-link" href="#main" style="position:absolute;left:-9999px;">Pular para o conteúdo</a>
 <h1>Inverno no litoral: a oportunidade de compra escondida</h1><p>Baixa temporada = preço de imóvel menor. Simulador projeta payback com ocupação anual.</p>
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-top" data-ad-id="ads-top" style="min-height:100px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (topo)
+  </div>
+  <noscript>
+    <!-- Fallback para quando JavaScript está desativado -->
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
 <p>Este é um artigo otimizado da Praia Digital, parte da série "Diário do Hermes". Para decisão completa, use nossas ferramentas de inteligência imobiliária.</p>
-<p style="text-align:center"><a class="cta" href="https://praia.digital/assets/painel-ferramentas.html" rel="noopener">Abrir Painel de Ferramentas →</a></p>
+<p style="text-align:center"><a class="cta" href="https://praia.digital/assets/painel-ferramentas.html" rel="noopener">Abrir Painel de Ferramentas →</a></p
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-inarticle" data-ad-id="ads-inarticle" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense nativo (meio do texto)
+  </div>
+</div>
+>
 <p style="font-size:.8rem;color:#667">Praia Digital · 1ª Plataforma Brasileira de Inteligência Imobiliária</p><script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -171,7 +189,17 @@ gtag('config', '', { anonymize_ip: true });
       <a href="../cidades/santos.html" style="padding:.4rem .8rem;border-radius:999px;border:1px solid rgba(255,255,255,.15);color:#cfe3ff;text-decoration:none;font-size:.9rem">Imóveis em Santos</a>
       <a href="../bairros/index.html" style="padding:.4rem .8rem;border-radius:999px;border:1px solid rgba(255,255,255,.15);color:#cfe3ff;text-decoration:none;font-size:.9rem">Bairros do litoral</a>
     </div>
-  </main>
+  <div class="adsense-block" style="margin:2rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-footer" data-ad-id="ads-footer" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (rodapé)
+  </div>
+  <noscript>
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
+</main>
 <meta name="pd-shared-footer">
 
 <p><strong>Conteúdos complementares:</strong></p>
@@ -184,5 +212,30 @@ gtag('config', '', { anonymize_ip: true });
 
   <!--#include virtual="/partials/lead-modal.html" -->
   <script defer src="https://praia.digital/js/lead-modal.js"></script>
+<script>
+(function(){
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const adId = el.getAttribute('data-ad-id');
+          if (adId && !el.hasAttribute('data-ad-loaded')) {
+            el.setAttribute('data-ad-loaded', 'true');
+            // Placeholder para substituição futura pelo snippet AdSense real
+            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
+          }
+          observer.unobserve(el);
+        }
+      });
+    }, { rootMargin: '200px' });
+    
+    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
+      observer.observe(el);
+    });
+  }
+})();
+</script>
+
 </body>
 </html>

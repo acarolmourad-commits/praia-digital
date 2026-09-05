@@ -94,6 +94,17 @@ a{color:#58a6ff;text-decoration:underline}
 <article>
 <h1>Anúncios de imóveis no litoral paulista — guia completo para converter em 2026</h1>
 <p>Anúncios de imóveis no litoral paulista deixaram de ser só fotos e preço: são combinações de SEO local, copy objetiva, imagem/vídeo profissional, CTA claro e segmentação por cidade, bairro e temporada. Em 2026, quem anunciar sem estratégia perde leads para concorrentes que combinam anúncios pagos com conteúdo orgânico. Neste guia completo, você encontra plataformas, exemplos, métricas, cases e checklist.</p>
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-top" data-ad-id="ads-top" style="min-height:100px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (topo)
+  </div>
+  <noscript>
+    <!-- Fallback para quando JavaScript está desativado -->
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
 
 <h2>Por que anunciar no litoral paulista</h2>
 <p>O litoral paulista tem busca alta, sazonalidade forte e competição crescente. Anúncios bem feitos reduzem custo por lead e aumentam fechamento.</p>
@@ -119,7 +130,14 @@ a{color:#58a6ff;text-decoration:underline}
 </table>
 
 <h2>SEO local para anúncios</h2>
-<p>SEO local reduz custo de anúncio porque aumenta relevância orgânica. Use cidade, bairro, temporada e diferenciais nos títulos, meta e copy.</p>
+<p>SEO local reduz custo de anúncio porque aumenta relevância orgânica. Use cidade, bairro, temporada e diferenciais nos títulos, meta e copy.</p
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-inarticle" data-ad-id="ads-inarticle" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense nativo (meio do texto)
+  </div>
+</div>
+>
 <ul>
 <li>Título com cidade e bairro.</li>
 <li>Meta description com benefício e CTA.</li>
@@ -246,5 +264,30 @@ a{color:#58a6ff;text-decoration:underline}
 
   <!--#include virtual="/partials/lead-modal.html" -->
   <script defer src="https://praia.digital/js/lead-modal.js"></script>
+<script>
+(function(){
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const adId = el.getAttribute('data-ad-id');
+          if (adId && !el.hasAttribute('data-ad-loaded')) {
+            el.setAttribute('data-ad-loaded', 'true');
+            // Placeholder para substituição futura pelo snippet AdSense real
+            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
+          }
+          observer.unobserve(el);
+        }
+      });
+    }, { rootMargin: '200px' });
+    
+    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
+      observer.observe(el);
+    });
+  }
+})();
+</script>
+
 </body>
 </html>

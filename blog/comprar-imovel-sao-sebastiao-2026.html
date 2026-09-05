@@ -94,6 +94,17 @@
   <main class="container article">
     <h1>Comprar imóvel em São Sebastião em 2026: guia completo</h1>
     <p class="lead">São Sebastião ocupa um lugar central no Litoral Norte paulista: é a cidade da Riviera de São Lourenço, dos acessos consolidados pela rodovia Tamoios e de um mercado que segue valorizado para quem busca segurança, liquidez e equilíbrio entre orla e estrutura urbana.</p>
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-top" data-ad-id="ads-top" style="min-height:100px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (topo)
+  </div>
+  <noscript>
+    <!-- Fallback para quando JavaScript está desativado -->
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
 
     <h2>Por que São Sebastião em 2026</h2>
     <p>Em 2026, São Sebastião continua atraindo famílias, investidores e profissionais que querem litoral com infraestrutura completa. A cidade combina:</p>
@@ -105,7 +116,14 @@
     </ul>
 
     <h2>Valorização imobiliária em São Sebastião</h2>
-    <p>O m² na região segue em trajetória de alta, puxado pela Riviera e por trechos com vista mar ou proximidade com serviços essenciais. Em 2026, o valor médio se mantém competitivo em relação a Ilhabela e Caraguatatuba, com vantagem de liquidez por causa do fluxo de vendas constante.</p>
+    <p>O m² na região segue em trajetória de alta, puxado pela Riviera e por trechos com vista mar ou proximidade com serviços essenciais. Em 2026, o valor médio se mantém competitivo em relação a Ilhabela e Caraguatatuba, com vantagem de liquidez por causa do fluxo de vendas constante.</p
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-inarticle" data-ad-id="ads-inarticle" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense nativo (meio do texto)
+  </div>
+</div>
+>
 
     <h2>Melhores regiões para comprar</h2>
     <h3>1) Riviera de São Lourenço</h3>
@@ -153,7 +171,17 @@
       <li><a href="../contato.html">Falar com especialista</a></li>
       <li><a href="../servicos-ia-imobiliarias-santos.html">Comparar com outras cidades do Litoral Norte</a></li>
     </ul>
-  </main>
+  <div class="adsense-block" style="margin:2rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-footer" data-ad-id="ads-footer" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (rodapé)
+  </div>
+  <noscript>
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
+</main>
 
   <meta name="pd-shared-footer">
 
@@ -167,5 +195,30 @@
 <section id="tambem-veja" style="margin-top:28px"><p><strong>Veja também:</strong></p><ul><li><a href="/hub/ia-corretores-litoral.html">Conteúdos relacionados sobre Ia-Corretores-Litoral</a></li></ul></section><section id="disclaimer" style="margin-top:40px;padding:16px;border-top:1px solid #e5e7eb"><p><strong>Aviso legal:</strong> Este conteúdo tem caráter informativo e não constitui assessoria jurídica, contábil ou imobiliária. Dados e projeções dependem de contexto de mercado. Consulte profissional habilitado para decisões específicas.</p></section>
   <!--#include virtual="/partials/lead-modal.html" -->
   <script defer src="https://praia.digital/js/lead-modal.js"></script>
+<script>
+(function(){
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const adId = el.getAttribute('data-ad-id');
+          if (adId && !el.hasAttribute('data-ad-loaded')) {
+            el.setAttribute('data-ad-loaded', 'true');
+            // Placeholder para substituição futura pelo snippet AdSense real
+            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
+          }
+          observer.unobserve(el);
+        }
+      });
+    }, { rootMargin: '200px' });
+    
+    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
+      observer.observe(el);
+    });
+  }
+})();
+</script>
+
 </body>
 </html>

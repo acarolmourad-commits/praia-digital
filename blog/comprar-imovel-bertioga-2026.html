@@ -124,6 +124,17 @@
     <main id="main">
       <h1>Comprar imóvel em Bertioga em 2026: guia completo com valores, bairros e dicas</h1>
       <p class="lead">Bertioga se mantém como uma das opções mais estratégicas do Litoral Norte de SP para quem busca valorização, temporada forte e contato com a Mata Atlântica. Neste guia, você compara valores, analisa bairros e entende os riscos e oportunidades de comprar imóvel em Bertioga em 2026.</p>
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-top" data-ad-id="ads-top" style="min-height:100px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (topo)
+  </div>
+  <noscript>
+    <!-- Fallback para quando JavaScript está desativado -->
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
 
       <h2>Por que comprar imóvel em Bertioga?</h2>
       <p>Bertioga combina orla acessível, infraestrutura turística consolidada e ritmo de crescimento menor que o de vizinhos como Guarujá ou Santos — o que reduz ruídos de especulação excessiva. Para moradia ou investimento, a cidade oferece:</p>
@@ -135,7 +146,14 @@
       </ul>
 
       <h2>Valores do m² em Bertioga em 2026</h2>
-      <p>Os preços variam conforme o bairro, padrão do imóvel e proximidade com a orla. Veja faixas estimadas para 2026:</p>
+      <p>Os preços variam conforme o bairro, padrão do imóvel e proximidade com a orla. Veja faixas estimadas para 2026:</p
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-inarticle" data-ad-id="ads-inarticle" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense nativo (meio do texto)
+  </div>
+</div>
+>
       <table>
         <tr><th>Bairro</th><th>Perfil</th><th>Faixa estimada do m²</th><th>Observação</th></tr>
         <tr><td>Riviera de São Lourenço</td><td>Alto padrão</td><td>R$ 9.000 – R$ 14.000</td><td>Alta procura por temporada e segunda residência</td></tr>
@@ -208,7 +226,17 @@
           <li><a href="../guia-investidor-imovel-litoral.html">Guia do investidor imobiliário no litoral</a></li>
         </ul>
       </div>
-    </main>
+    <div class="adsense-block" style="margin:2rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-footer" data-ad-id="ads-footer" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (rodapé)
+  </div>
+  <noscript>
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
+</main>
 
     <meta name="pd-shared-footer">
   </div>
@@ -223,5 +251,30 @@
 <section id="tambem-veja" style="margin-top:28px"><p><strong>Veja também:</strong></p><ul><li><a href="/hub/bertioga.html">Conteúdos relacionados sobre Bertioga</a></li></ul></section><section id="disclaimer" style="margin-top:40px;padding:16px;border-top:1px solid #e5e7eb"><p><strong>Aviso legal:</strong> Este conteúdo tem caráter informativo e não constitui assessoria jurídica, contábil ou imobiliária. Dados e projeções dependem de contexto de mercado. Consulte profissional habilitado para decisões específicas.</p></section>
   <!--#include virtual="/partials/lead-modal.html" -->
   <script defer src="https://praia.digital/js/lead-modal.js"></script>
+<script>
+(function(){
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const adId = el.getAttribute('data-ad-id');
+          if (adId && !el.hasAttribute('data-ad-loaded')) {
+            el.setAttribute('data-ad-loaded', 'true');
+            // Placeholder para substituição futura pelo snippet AdSense real
+            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
+          }
+          observer.unobserve(el);
+        }
+      });
+    }, { rootMargin: '200px' });
+    
+    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
+      observer.observe(el);
+    });
+  }
+})();
+</script>
+
 </body>
 </html>

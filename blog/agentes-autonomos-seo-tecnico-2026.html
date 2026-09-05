@@ -77,6 +77,17 @@
       <main>
         <h1>SEO Técnico para Agentes Autônomos: Como Deixar Seu Site Legível para IA em 2026</h1>
         <p><strong>Por Praia Digital</strong> | Publicado em 2026-08-23</p>
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-top" data-ad-id="ads-top" style="min-height:100px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (topo)
+  </div>
+  <noscript>
+    <!-- Fallback para quando JavaScript está desativado -->
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
         <p>Em 2026, os sites não são mais visitados apenas por humanos e robôs de busca. Agentes autônomos de IA — assistentes de compra, bots de prospecção, integradores de CRM, indexadores de conteúdo — já rastreiam, leem e executam ações diretamente nas páginas. Se o seu site não está tecnicamente preparado para ser lido por IA, você perde visibilidade, conversões e controle da operação. Este guia mostra o que fazer.</p>
 
         <!-- AD IN-ARTICLE -->
@@ -89,7 +100,14 @@
         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
         <h2>1. O que é SEO técnico para agentes autônomos (e por que é diferente)</h2>
-        <p>SEO tradicional otimiza para duas audiências: o usuário humano e o crawler do Google. SEO técnico para agentes autônomos adiciona uma terceira audiência: sistemas de IA que não apenas indexam, mas interpretam, tomam decisões e executam ações com base no conteúdo.</p>
+        <p>SEO tradicional otimiza para duas audiências: o usuário humano e o crawler do Google. SEO técnico para agentes autônomos adiciona uma terceira audiência: sistemas de IA que não apenas indexam, mas interpretam, tomam decisões e executam ações com base no conteúdo.</p
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-inarticle" data-ad-id="ads-inarticle" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense nativo (meio do texto)
+  </div>
+</div>
+>
         <p>A diferença fundamental é a ação. Um robô de busca classifica e armazena. Um agente autônomo pode, por exemplo, ler um anúncio de imóvel, extrair preço e localização, comparar com o banco de dados do usuário e agendar uma visita — sem intervenção humana. Para isso, o site precisa oferecer:</p>
         <ul>
           <li>Estrutura de dados explícita e sem ambiguidade.</li>
@@ -218,7 +236,17 @@
         <p><strong>Quais são os principais riscos de ignorar SEO para agentes?</strong><br>Ignorar SEO para agentes pode gerar alucinações da IA, perda de controle de marca, agentes incapazes de executar ações no seu site e menor confiança de parceiros tecnológicos.</p>
 
         <p><a href="https://praia.digital/blog/10-artigos-seo-litoral-paulista-2026.html">&larr; Voltar para artigos SEO</a></p>
-      </main>
+      <div class="adsense-block" style="margin:2rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-footer" data-ad-id="ads-footer" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (rodapé)
+  </div>
+  <noscript>
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
+</main>
       <aside class="sidebar">
         <!-- SIDEBAR AD -->
         <ins class="adsbygoogle"
@@ -249,5 +277,30 @@
 
   <!--#include virtual="/partials/lead-modal.html" -->
   <script defer src="https://praia.digital/js/lead-modal.js"></script>
+<script>
+(function(){
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const adId = el.getAttribute('data-ad-id');
+          if (adId && !el.hasAttribute('data-ad-loaded')) {
+            el.setAttribute('data-ad-loaded', 'true');
+            // Placeholder para substituição futura pelo snippet AdSense real
+            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
+          }
+          observer.unobserve(el);
+        }
+      });
+    }, { rootMargin: '200px' });
+    
+    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
+      observer.observe(el);
+    });
+  }
+})();
+</script>
+
 </body>
 </html>

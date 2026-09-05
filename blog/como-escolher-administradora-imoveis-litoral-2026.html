@@ -87,6 +87,17 @@ gtag('config', '', { anonymize_ip: true });
 <article>
 <h1>Como escolher uma administradora de imóveis: guia para proprietários no litoral</h1>
 <p>Escolher uma administradora de imóveis envolve comparar serviços, transparência, comunicação e resultados esperados — não apenas preço. Este guia ajuda o proprietário a avaliar opções com mais clareza antes de contratar gestão profissional no litoral paulista.</p>
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-top" data-ad-id="ads-top" style="min-height:100px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (topo)
+  </div>
+  <noscript>
+    <!-- Fallback para quando JavaScript está desativado -->
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
 
 <h2>1. Por que essa escolha exige atenção</h2>
 <p>A gestão profissional pode reduzir cancelamentos, melhorar a experiência do hóspede e organizar a operação, mas também transfere decisões do dia a dia para um terceiro. Antes de escolher, é útil separar promessas genéricas de processos realmente definidos.</p>
@@ -185,7 +196,14 @@ gtag('config', '', { anonymize_ip: true });
 </ul>
 
 <h2>11. Perguntas frequentes</h2>
-<p><strong>Administradora de imóvel de temporada vale a pena?</strong><br>Pode fazer sentido quando o proprietário não consegue acompanhar reservas, hóspedes, limpeza e manutenção com frequência. A decisão depende do perfil de uso do imóvel e da disponibilidade do proprietário.</p>
+<p><strong>Administradora de imóvel de temporada vale a pena?</strong><br>Pode fazer sentido quando o proprietário não consegue acompanhar reservas, hóspedes, limpeza e manutenção com frequência. A decisão depende do perfil de uso do imóvel e da disponibilidade do proprietário.</p
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-inarticle" data-ad-id="ads-inarticle" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense nativo (meio do texto)
+  </div>
+</div>
+>
 <p><strong>Como comparar propostas de administradoras sem escolher só por preço?</strong><br>Além do percentual ou valor fixo, compare serviços incluídos, resposta a imprevistos, relatórios, referências e clareza contratual.</p>
 <p><strong>O que deve estar claro no contrato?</strong><br>Serviços incluídos, valores, prazo, cancelamento, responsabilidades, forma de prestação de contas e regras de acesso ao imóvel.</p>
 
@@ -195,11 +213,46 @@ gtag('config', '', { anonymize_ip: true });
 <p><strong>CTA:</strong> quer entender como escolher a administradora ideal para o seu imóvel no litoral? <a href="https://praia.digital/index.html">Fale com a Praia Digital</a>.</p>
 <div class="related"></div>
 </article>
+<div class="adsense-block" style="margin:2rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-footer" data-ad-id="ads-footer" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (rodapé)
+  </div>
+  <noscript>
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
 </main>
 <meta name="pd-shared-footer">
 <script src="https://praia.digital/js/shared.js"></script>
 
   <!--#include virtual="/partials/lead-modal.html" -->
   <script defer src="https://praia.digital/js/lead-modal.js"></script>
+<script>
+(function(){
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const adId = el.getAttribute('data-ad-id');
+          if (adId && !el.hasAttribute('data-ad-loaded')) {
+            el.setAttribute('data-ad-loaded', 'true');
+            // Placeholder para substituição futura pelo snippet AdSense real
+            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
+          }
+          observer.unobserve(el);
+        }
+      });
+    }, { rootMargin: '200px' });
+    
+    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
+      observer.observe(el);
+    });
+  }
+})();
+</script>
+
 </body>
 </html>

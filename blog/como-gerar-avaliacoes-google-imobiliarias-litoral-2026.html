@@ -105,12 +105,30 @@
 <h1>Como gerar avaliações no Google para imobiliárias no litoral</h1>
 
 <p>Avaliações no Google influenciam diretamente o ranking no Maps Pack e a confiança de proprietários, compradores e corretores. Para imobiliárias no litoral, cada avaliação funciona como prova social local.</p>
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-top" data-ad-id="ads-top" style="min-height:100px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (topo)
+  </div>
+  <noscript>
+    <!-- Fallback para quando JavaScript está desativado -->
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
 
 <h2>Quando pedir avaliações</h2>
 <p>Peça logo após um atendimento positivo: visita realizada, proposta fechada ou aluguel de temporada confirmado. O momento em que o cliente ainda está satisfeito aumenta a taxa de resposta.</p>
 
 <h2>Como pedir sem parecer invasivo</h2>
-<p>Use tom consultivo e personalizado. Evite mensagens genéricas. Fale sobre a experiência entregue e só então peça a avaliação.</p>
+<p>Use tom consultivo e personalizado. Evite mensagens genéricas. Fale sobre a experiência entregue e só então peça a avaliação.</p
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-inarticle" data-ad-id="ads-inarticle" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense nativo (meio do texto)
+  </div>
+</div>
+>
 
 <h2>Modelo de mensagem para enviar</h2>
 <p>Exemplo:</p>
@@ -150,5 +168,30 @@
 <section id="tambem-veja" style="margin-top:28px"><p><strong>Veja também:</strong></p><ul><li><a href="/hub/ia-corretores-litoral.html">Conteúdos relacionados sobre Ia-Corretores-Litoral</a></li></ul></section><section id="disclaimer" style="margin-top:40px;padding:16px;border-top:1px solid #e5e7eb"><p><strong>Aviso legal:</strong> Este conteúdo tem caráter informativo e não constitui assessoria jurídica, contábil ou imobiliária. Dados e projeções dependem de contexto de mercado. Consulte profissional habilitado para decisões específicas.</p></section>
   <!--#include virtual="/partials/lead-modal.html" -->
   <script defer src="https://praia.digital/js/lead-modal.js"></script>
+<script>
+(function(){
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const adId = el.getAttribute('data-ad-id');
+          if (adId && !el.hasAttribute('data-ad-loaded')) {
+            el.setAttribute('data-ad-loaded', 'true');
+            // Placeholder para substituição futura pelo snippet AdSense real
+            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
+          }
+          observer.unobserve(el);
+        }
+      });
+    }, { rootMargin: '200px' });
+    
+    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
+      observer.observe(el);
+    });
+  }
+})();
+</script>
+
 </body>
 </html>

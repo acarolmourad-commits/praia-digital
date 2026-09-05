@@ -72,6 +72,17 @@
   <div class="meta">Atualizado em 2026 · Tempo de leitura: ~11 minutos</div>
 
   <p>Comprar imóvel no litoral parece simples, mas a documentação errada atrasa assinatura, aumenta custos e até mata negócios. Este guia lista os erros mais comuns e um checklist prático para corretores e compradores fecharem com segurança.</p>
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-top" data-ad-id="ads-top" style="min-height:100px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (topo)
+  </div>
+  <noscript>
+    <!-- Fallback para quando JavaScript está desativado -->
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
 
   <h2>1. Começar pelo financiamento sem análise prévia</h2>
   <p>Muitos compradores visitam imóveis antes de entender a verdadeira capacidade de aprovação. O ideal é revisar renda, score, entrada e dívidas antes de procurar o imóvel.</p>
@@ -85,7 +96,14 @@
   </ul>
 
   <h2>3. Não validar a documentação do imóvel</h2>
-  <p>Verifique matrícula, inscrição municipal, IPTU e possíveis ônus. Imóvel com pendência pode gerar registro inseguro.</p>
+  <p>Verifique matrícula, inscrição municipal, IPTU e possíveis ônus. Imóvel com pendência pode gerar registro inseguro.</p
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-inarticle" data-ad-id="ads-inarticle" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense nativo (meio do texto)
+  </div>
+</div>
+>
 
   <h2>4. Ignorar restrições do condomínio</h2>
   <p>Regras de uso, restrições de locação temporada e regulamentos podem impactar o investimento.</p>
@@ -139,6 +157,16 @@
     ]
   }
   </script>
+<div class="adsense-block" style="margin:2rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-footer" data-ad-id="ads-footer" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (rodapé)
+  </div>
+  <noscript>
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
 </main>
 
 <p>Leia também: <a href="documentacao-compra-imovel-litoral-guia-2026.html">Documentacao Compra Imovel Litoral Guia 2026</a>, <a href="documentacao-vender-imovel-litoral-2026.html">Documentacao Vender Imovel Litoral 2026</a>, <a href="compra-imovel-herdado-litoral-cuidados-2026.html">Compra Imovel Herdado Litoral Cuidados 2026</a>.</p>
@@ -156,5 +184,30 @@
 <section id="tambem-veja" style="margin-top:28px"><p><strong>Veja também:</strong></p><ul><li><a href="/hub/index.html">Conteúdos relacionados sobre Index</a></li></ul></section><section id="disclaimer" style="margin-top:40px;padding:16px;border-top:1px solid #e5e7eb"><p><strong>Aviso legal:</strong> Este conteúdo tem caráter informativo e não constitui assessoria jurídica, contábil ou imobiliária. Dados e projeções dependem de contexto de mercado. Consulte profissional habilitado para decisões específicas.</p></section>
   <!--#include virtual="/partials/lead-modal.html" -->
   <script defer src="https://praia.digital/js/lead-modal.js"></script>
+<script>
+(function(){
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const adId = el.getAttribute('data-ad-id');
+          if (adId && !el.hasAttribute('data-ad-loaded')) {
+            el.setAttribute('data-ad-loaded', 'true');
+            // Placeholder para substituição futura pelo snippet AdSense real
+            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
+          }
+          observer.unobserve(el);
+        }
+      });
+    }, { rootMargin: '200px' });
+    
+    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
+      observer.observe(el);
+    });
+  }
+})();
+</script>
+
 </body>
 </html>

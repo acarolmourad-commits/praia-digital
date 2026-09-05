@@ -94,6 +94,17 @@ a{color:#58a6ff;text-decoration:underline}
 <article>
 <h1>Atendimento em tempo real para clientes do litoral — guia do corretor 2026</h1>
 <p>Atendimento em tempo real para clientes do litoral paulista deixou de ser um diferencial e passou a ser obrigatório. O cliente quer resposta rápida, dados relevantes e próximo passo claro. Neste guia do corretor, você vê técnicas, scripts, automação, métricas e cases para melhorar o tempo de resposta sem aumentar custo fixo.</p>
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-top" data-ad-id="ads-top" style="min-height:100px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (topo)
+  </div>
+  <noscript>
+    <!-- Fallback para quando JavaScript está desativado -->
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
 
 <h2>Por que tempo real importa no litoral</h2>
 <p>No litoral paulista, a decisão de compra, venda ou aluguel acontece rápido. O lead recebe várias mensagens ao mesmo tempo: anúncios, indicações, marketplace e concorrentes. Se você responder em até 15 minutos, a chance de visita e fechamento aumenta muito.</p>
@@ -127,7 +138,14 @@ a{color:#58a6ff;text-decoration:underline}
 </table>
 
 <h2>Automação sem perder humanização</h2>
-<p>A automação deve acelerar primeiro contato, FAQ e follow-up. O tom deve ser consultivo, nunca robótico.</p>
+<p>A automação deve acelerar primeiro contato, FAQ e follow-up. O tom deve ser consultivo, nunca robótico.</p
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-inarticle" data-ad-id="ads-inarticle" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense nativo (meio do texto)
+  </div>
+</div>
+>
 <ul>
 <li>Respostas automáticas com opções claras.</li>
 <li>Modelos por estágio, sem parecer cópia.</li>
@@ -210,5 +228,30 @@ a{color:#58a6ff;text-decoration:underline}
 
   <!--#include virtual="/partials/lead-modal.html" -->
   <script defer src="https://praia.digital/js/lead-modal.js"></script>
+<script>
+(function(){
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const adId = el.getAttribute('data-ad-id');
+          if (adId && !el.hasAttribute('data-ad-loaded')) {
+            el.setAttribute('data-ad-loaded', 'true');
+            // Placeholder para substituição futura pelo snippet AdSense real
+            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
+          }
+          observer.unobserve(el);
+        }
+      });
+    }, { rootMargin: '200px' });
+    
+    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
+      observer.observe(el);
+    });
+  }
+})();
+</script>
+
 </body>
 </html>

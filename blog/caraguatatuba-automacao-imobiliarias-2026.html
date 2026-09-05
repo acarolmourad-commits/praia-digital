@@ -96,12 +96,30 @@ a{color:#58a6ff;text-decoration:underline}
 </div>
 <h1>Caraguatatuba: automação para imobiliárias — guia 2026</h1>
 <p>Caraguatatuba tem operações dependentes de atendimento rápido. Automações simples — respostas automáticas, CRM e follow-up — aumentam a resposta sem perder o relacionamento próximo.</p>
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-top" data-ad-id="ads-top" style="min-height:100px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (topo)
+  </div>
+  <noscript>
+    <!-- Fallback para quando JavaScript está desativado -->
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
 
 <h2>Automação para pequenas operações em Caraguatatuba</h2>
 <p>Equipes menores precisam de fluxos mais curtos: entrada do lead → qualificação → visita → proposta. Automatizar apenas os pontos repetitivos evita sobrecarga e reduz tempo de resposta.</p>
 
 <h2>CRM leve para imobiliárias</h2>
-<p>Um CRM simples organiza estágios do funil, lembra follow-ups e mostra conversão por canal. Para operações de Caraguatatuba, o ideal é cadastro limpo e histórico de contatos em uma tela.</p>
+<p>Um CRM simples organiza estágios do funil, lembra follow-ups e mostra conversão por canal. Para operações de Caraguatatuba, o ideal é cadastro limpo e histórico de contatos em uma tela.</p
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-inarticle" data-ad-id="ads-inarticle" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense nativo (meio do texto)
+  </div>
+</div>
+>
 
 <h2>Respostas automáticas no WhatsApp</h2>
 <p>Fluxos curtos com saudação, intenção (compra, aluguel, venda) e próximos passos reduzem atrito. Guardrails simples: envie respostas com toque humano, horário comercial e opção de falar com atendente.</p>
@@ -124,5 +142,30 @@ a{color:#58a6ff;text-decoration:underline}
 <section id="tambem-veja" style="margin-top:28px"><p><strong>Veja também:</strong></p><ul><li><a href="/hub/automacao-imobiliaria.html">Conteúdos relacionados sobre Automacao-Imobiliaria</a></li></ul></section><section id="disclaimer" style="margin-top:40px;padding:16px;border-top:1px solid #e5e7eb"><p><strong>Aviso legal:</strong> Este conteúdo tem caráter informativo e não constitui assessoria jurídica, contábil ou imobiliária. Dados e projeções dependem de contexto de mercado. Consulte profissional habilitado para decisões específicas.</p></section>
   <!--#include virtual="/partials/lead-modal.html" -->
   <script defer src="https://praia.digital/js/lead-modal.js"></script>
+<script>
+(function(){
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const adId = el.getAttribute('data-ad-id');
+          if (adId && !el.hasAttribute('data-ad-loaded')) {
+            el.setAttribute('data-ad-loaded', 'true');
+            // Placeholder para substituição futura pelo snippet AdSense real
+            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
+          }
+          observer.unobserve(el);
+        }
+      });
+    }, { rootMargin: '200px' });
+    
+    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
+      observer.observe(el);
+    });
+  }
+})();
+</script>
+
 </body>
 </html>

@@ -177,6 +177,17 @@ gtag('config', '', { anonymize_ip: true });
       <div class="meta"><span>📅 Atualizado em <time>junho de 2026</time></span><span>⏱ Leitura: 8 min</span><span>📌 Bertioga</span></div>
 
       <p>Selecionamos respostas rápidas para dúvidas comuns sobre compra, venda, temporada e investimento em Bertioga. Clique na pergunta para ver a resposta.</p>
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-top" data-ad-id="ads-top" style="min-height:100px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (topo)
+  </div>
+  <noscript>
+    <!-- Fallback para quando JavaScript está desativado -->
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
 
       <h2>Comprar</h2>
       <details><summary>Vale a pena comprar apartamento em Bertioga?</summary><div class="a">Sim, especialmente se o objetivo é segunda residência ou temporada. Custo de entrada menor que em Santos e Guarujá, aliado a natureza e proximidade de SP, faz da cidade uma opção equilibrada.</div></details>
@@ -209,7 +220,14 @@ gtag('config', '', { anonymize_ip: true });
       </div>
       <div class="related"></div>
 </article>
-<p><a class="btn-whatsapp" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20em%20bertioga%20faq.&utm_source=outros&utm_medium=outros&utm_campaign=site" target="_blank" rel="noopener">Fale com um especialista</a></p>
+<p><a class="btn-whatsapp" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20em%20bertioga%20faq.&utm_source=outros&utm_medium=outros&utm_campaign=site" target="_blank" rel="noopener">Fale com um especialista</a></p
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-inarticle" data-ad-id="ads-inarticle" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense nativo (meio do texto)
+  </div>
+</div>
+>
 
   <script type="application/ld+json">
 {
@@ -241,7 +259,17 @@ gtag('config', '', { anonymize_ip: true });
       <a href="../cidades/santos.html" style="padding:.4rem .8rem;border-radius:999px;border:1px solid rgba(255,255,255,.15);color:#cfe3ff;text-decoration:none;font-size:.9rem">Imóveis em Santos</a>
       <a href="../bairros/index.html" style="padding:.4rem .8rem;border-radius:999px;border:1px solid rgba(255,255,255,.15);color:#cfe3ff;text-decoration:none;font-size:.9rem">Bairros do litoral</a>
     </div>
-  </main>
+  <div class="adsense-block" style="margin:2rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-footer" data-ad-id="ads-footer" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (rodapé)
+  </div>
+  <noscript>
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
+</main>
   <meta name="pd-shared-footer">
   <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 
@@ -273,6 +301,31 @@ gtag('config', '', { anonymize_ip: true });
 
   <!--#include virtual="/partials/lead-modal.html" -->
   <script defer src="https://praia.digital/js/lead-modal.js"></script>
+<script>
+(function(){
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const adId = el.getAttribute('data-ad-id');
+          if (adId && !el.hasAttribute('data-ad-loaded')) {
+            el.setAttribute('data-ad-loaded', 'true');
+            // Placeholder para substituição futura pelo snippet AdSense real
+            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
+          }
+          observer.unobserve(el);
+        }
+      });
+    }, { rootMargin: '200px' });
+    
+    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
+      observer.observe(el);
+    });
+  }
+})();
+</script>
+
 </body>
 
 </html>

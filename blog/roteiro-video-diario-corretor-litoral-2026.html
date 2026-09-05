@@ -191,6 +191,17 @@ gtag('config', '', { anonymize_ip: true });
     <p style="font-size:1.05rem;color:#555;">Como criar vídeos curtos diários para Instagram, TikTok e YouTube Shorts e aumentar vendas. Roteiros prontos, exemplos e dicas de edição.</p>
     
 <p>Corretores do litoral que publicam <strong>vídeos curtos diários</strong> aumentam a visibilidade e captam mais leads orgânicos. Em 2026, o algoritmo premia consistência: 1 vídeo por dia pode gerar até <strong>50 leads/mês</strong> sem investir em anúncios.</p>
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-top" data-ad-id="ads-top" style="min-height:100px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (topo)
+  </div>
+  <noscript>
+    <!-- Fallback para quando JavaScript está desativado -->
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
 
 <h2>🎬 7 Formatos que Vendem</h2>
 <ol>
@@ -218,7 +229,14 @@ gtag('config', '', { anonymize_ip: true });
 
 <div style="background:rgba(0,255,136,0.08);border:2px solid rgba(0,255,136,0.2);border-radius:16px;padding:2rem;margin:2rem 0;text-align:center;">
 <h3 style="color:#fff;">Quer Vídeos Prontos Para Publicar?</h3>
-<p style="color:#a0aec0;">A Praia Digital produz e edita vídeos imobiliários profissionais com entrega em 48h.</p>
+<p style="color:#a0aec0;">A Praia Digital produz e edita vídeos imobiliários profissionais com entrega em 48h.</p
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-inarticle" data-ad-id="ads-inarticle" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense nativo (meio do texto)
+  </div>
+</div>
+>
 <a href="../servico-fotografia-edicao.html" class="btn-cta" style="background:linear-gradient(135deg,#00d4ff,#00ff88);color:#0a0f1f;padding:1rem 2.2rem;border-radius:50px;text-decoration:none;font-weight:700;display:inline-block;margin-top:1rem;">Solicitar Vídeo Profissional</a>
 </div>
 
@@ -267,7 +285,17 @@ gtag('config', '', { anonymize_ip: true });
       <a href="../cidades/santos.html" style="padding:.4rem .8rem;border-radius:999px;border:1px solid rgba(255,255,255,.15);color:#cfe3ff;text-decoration:none;font-size:.9rem">Imóveis em Santos</a>
       <a href="../bairros/index.html" style="padding:.4rem .8rem;border-radius:999px;border:1px solid rgba(255,255,255,.15);color:#cfe3ff;text-decoration:none;font-size:.9rem">Bairros do litoral</a>
     </div>
-  </main>
+  <div class="adsense-block" style="margin:2rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-footer" data-ad-id="ads-footer" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (rodapé)
+  </div>
+  <noscript>
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
+</main>
 <meta name="pd-shared-footer">
 
 <p><strong>Conteúdos complementares:</strong></p>
@@ -280,6 +308,31 @@ gtag('config', '', { anonymize_ip: true });
 <section id="tambem-veja" style="margin-top:28px"><p><strong>Veja também:</strong></p><ul><li><a href="/hub/ia-corretores-litoral.html">Conteúdos relacionados sobre Ia-Corretores-Litoral</a></li></ul></section><section id="disclaimer" style="margin-top:40px;padding:16px;border-top:1px solid #e5e7eb"><p><strong>Aviso legal:</strong> Este conteúdo tem caráter informativo e não constitui assessoria jurídica, contábil ou imobiliária. Dados e projeções dependem de contexto de mercado. Consulte profissional habilitado para decisões específicas.</p></section>
   <!--#include virtual="/partials/lead-modal.html" -->
   <script defer src="https://praia.digital/js/lead-modal.js"></script>
+<script>
+(function(){
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const adId = el.getAttribute('data-ad-id');
+          if (adId && !el.hasAttribute('data-ad-loaded')) {
+            el.setAttribute('data-ad-loaded', 'true');
+            // Placeholder para substituição futura pelo snippet AdSense real
+            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
+          }
+          observer.unobserve(el);
+        }
+      });
+    }, { rootMargin: '200px' });
+    
+    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
+      observer.observe(el);
+    });
+  }
+})();
+</script>
+
 </body>
 
 </html>

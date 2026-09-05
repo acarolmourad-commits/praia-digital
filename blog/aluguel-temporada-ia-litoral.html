@@ -193,6 +193,17 @@ gtag('config', '', { anonymize_ip: true });
 <div class="hero">
 <h1>Aluguel por temporada no litoral paulista com IA</h1>
 <p>Aumente ocupação e receita com automação, SEO local, chatbots e conteúdo otimizado para cada cidade do litoral.</p>
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-top" data-ad-id="ads-top" style="min-height:100px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (topo)
+  </div>
+  <noscript>
+    <!-- Fallback para quando JavaScript está desativado -->
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
 <div class="pill-row"><span class='pill'>🏖 Aluguel temporada</span><span class='pill'>📈 Ocupação</span><span class='pill'>🤖 Automação</span><span class='pill'>📊 Projeção de renda</span><span class='pill'>📍 SEO por cidade</span></div>
 <div style='display:inline-flex;gap:1rem;flex-wrap:wrap;justify-content:center;'>
 <a class="btn btn-primary" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Quero%20automatizar%20meu%20aluguel%20por%20temporada%20no%20litoral" rel="noopener">Quero automatizar minha temporada</a>
@@ -200,7 +211,14 @@ gtag('config', '', { anonymize_ip: true });
 </div>
 </div>
 <section class='section'><h2>Por que IA no aluguel de temporada?</h2><div style='margin-top:.8rem;'><p>Imóveis de temporada precisam de resposta imediata, previsão de demanda por cidade/bairro e presença em Google Maps. IA reduz cancelamento, qualifica intenção e aumenta renda em alta temporada.</p><div class='grid' style='margin-top:1rem;'>
-<div class='card'><h3>⚡ Resposta 24/7</h3><p>Chatbot no site e WhatsApp com checkout rápido.</p></div>
+<div class='card'><h3>⚡ Resposta 24/7</h3><p>Chatbot no site e WhatsApp com checkout rápido.</p
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-inarticle" data-ad-id="ads-inarticle" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense nativo (meio do texto)
+  </div>
+</div>
+></div>
 <div class='card'><h3>📊 Previsão de demanda</h3><p>Projeção por cidade, bairro e feriado com base em busca.</p></div>
 <div class='card'><h3>📝 Anúncios otimizados</h3><p>SEO e anúncios específicos para cada imóvel e temporada.</p></div>
 <div class='card'><h3>🧹 Follow-up automatizado</h3><p>Reduz cancelamento e aumenta recompra.</p></div>
@@ -254,7 +272,17 @@ gtag('config', '', { anonymize_ip: true });
       <a href="../cidades/santos.html" style="padding:.4rem .8rem;border-radius:999px;border:1px solid rgba(255,255,255,.15);color:#cfe3ff;text-decoration:none;font-size:.9rem">Imóveis em Santos</a>
       <a href="../bairros/index.html" style="padding:.4rem .8rem;border-radius:999px;border:1px solid rgba(255,255,255,.15);color:#cfe3ff;text-decoration:none;font-size:.9rem">Bairros do litoral</a>
     </div>
-  </main>
+  <div class="adsense-block" style="margin:2rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-footer" data-ad-id="ads-footer" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (rodapé)
+  </div>
+  <noscript>
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
+</main>
 <meta name="pd-shared-footer">
 
 <p><strong>Conteúdos complementares:</strong></p>
@@ -267,6 +295,31 @@ gtag('config', '', { anonymize_ip: true });
 <section id="tambem-veja" style="margin-top:28px"><p><strong>Veja também:</strong></p><ul><li><a href="/hub/ia-corretores-litoral.html">Conteúdos relacionados sobre Ia-Corretores-Litoral</a></li></ul></section><section id="disclaimer" style="margin-top:40px;padding:16px;border-top:1px solid #e5e7eb"><p><strong>Aviso legal:</strong> Este conteúdo tem caráter informativo e não constitui assessoria jurídica, contábil ou imobiliária. Dados e projeções dependem de contexto de mercado. Consulte profissional habilitado para decisões específicas.</p></section>
   <!--#include virtual="/partials/lead-modal.html" -->
   <script defer src="https://praia.digital/js/lead-modal.js"></script>
+<script>
+(function(){
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const adId = el.getAttribute('data-ad-id');
+          if (adId && !el.hasAttribute('data-ad-loaded')) {
+            el.setAttribute('data-ad-loaded', 'true');
+            // Placeholder para substituição futura pelo snippet AdSense real
+            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
+          }
+          observer.unobserve(el);
+        }
+      });
+    }, { rootMargin: '200px' });
+    
+    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
+      observer.observe(el);
+    });
+  }
+})();
+</script>
+
 </body>
 
 </html>

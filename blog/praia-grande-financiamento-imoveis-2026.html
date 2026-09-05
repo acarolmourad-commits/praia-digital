@@ -110,6 +110,17 @@ a{color:#58a6ff;text-decoration:underline}
 </div>
 <h1>Praia Grande: financiamento imobiliário — guia 2026</h1>
 <p>Financiar em Praia Grande depende de perfil, entrada e escolha do produto. Veja opções, documentos e cuidados para não perder oportunidade.</p>
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-top" data-ad-id="ads-top" style="min-height:100px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (topo)
+  </div>
+  <noscript>
+    <!-- Fallback para quando JavaScript está desativado -->
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
 
 <h2>Tipos de financiamento</h2>
 <ul>
@@ -122,7 +133,14 @@ a{color:#58a6ff;text-decoration:underline}
 <p>RG, CPF, comprovante de residência, renda, extrato bancário e documentação do imóvel. Em Praia Grande, priorize imóveis com IPTU e condomínio em dia.</p>
 
 <h2>Entrada e juros</h2>
-<p>Compare taxas e peso da entrada. Para usados, valor do imóvel e estado de conservação influenciam avaliação bancária.</p>
+<p>Compare taxas e peso da entrada. Para usados, valor do imóvel e estado de conservação influenciam avaliação bancária.</p
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-inarticle" data-ad-id="ads-inarticle" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense nativo (meio do texto)
+  </div>
+</div>
+>
 
 <h2>Quando trocar de produto</h2>
 <p>Se o contrato estiver caro ou o imóvel mudou de perfil, avalie portabilidade ou quitação antecipada com cuidado.</p>
@@ -146,5 +164,30 @@ a{color:#58a6ff;text-decoration:underline}
 <section id="tambem-veja" style="margin-top:28px"><p><strong>Veja também:</strong></p><ul><li><a href="/hub/ia-corretores-litoral.html">Conteúdos relacionados sobre Ia-Corretores-Litoral</a></li></ul></section><section id="disclaimer" style="margin-top:40px;padding:16px;border-top:1px solid #e5e7eb"><p><strong>Aviso legal:</strong> Este conteúdo tem caráter informativo e não constitui assessoria jurídica, contábil ou imobiliária. Dados e projeções dependem de contexto de mercado. Consulte profissional habilitado para decisões específicas.</p></section>
   <!--#include virtual="/partials/lead-modal.html" -->
   <script defer src="https://praia.digital/js/lead-modal.js"></script>
+<script>
+(function(){
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const adId = el.getAttribute('data-ad-id');
+          if (adId && !el.hasAttribute('data-ad-loaded')) {
+            el.setAttribute('data-ad-loaded', 'true');
+            // Placeholder para substituição futura pelo snippet AdSense real
+            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
+          }
+          observer.unobserve(el);
+        }
+      });
+    }, { rootMargin: '200px' });
+    
+    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
+      observer.observe(el);
+    });
+  }
+})();
+</script>
+
 </body>
 </html>

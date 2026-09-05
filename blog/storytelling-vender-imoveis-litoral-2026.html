@@ -94,6 +94,17 @@ a{color:#58a6ff;text-decoration:underline}
 <article>
 <h1>Storytelling para vender imóveis no litoral — roteiro prático para corretores 2026</h1>
 <p>Storytelling para vender imóveis no litoral paulista deixou de ser um diferencial e passou a ser necessidade. O comprador do litoral não compra só metros quadrados: compra vista, temporada, acesso, estilo de vida e memória. O corretor que sabe contar essa história aumenta engajamento, reduz objeção e fecha mais. Neste guia prático para 2026, você encontra técnicas, estrutura, exemplos, vídeo, Instagram, atendimento, casos, métricas e checklist.</p>
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-top" data-ad-id="ads-top" style="min-height:100px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (topo)
+  </div>
+  <noscript>
+    <!-- Fallback para quando JavaScript está desativado -->
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
 
 <h2>Por que storytelling funciona no litoral</h2>
 <p>No litoral paulista, a decisão de compra é emocional e prática ao mesmo tempo. O comprador quer sentir o imóvel antes de fechar. Storytelling aproxima esse sentimento.</p>
@@ -105,7 +116,14 @@ a{color:#58a6ff;text-decoration:underline}
 </ul>
 
 <h2>Estrutura de storytelling para imóveis</h2>
-<p>Uma história eficaz tem começo, meio e fim. No imobiliário, o fim é sempre o próximo passo: visita, proposta ou fechamento.</p>
+<p>Uma história eficaz tem começo, meio e fim. No imobiliário, o fim é sempre o próximo passo: visita, proposta ou fechamento.</p
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-inarticle" data-ad-id="ads-inarticle" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense nativo (meio do texto)
+  </div>
+</div>
+>
 <ul>
 <li>Começo: contexto do bairro, cidade ou temporada.</li>
 <li>Meio: detalhes do imóvel, diferenciais e transformação.</li>
@@ -243,5 +261,30 @@ a{color:#58a6ff;text-decoration:underline}
 
   <!--#include virtual="/partials/lead-modal.html" -->
   <script defer src="https://praia.digital/js/lead-modal.js"></script>
+<script>
+(function(){
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const adId = el.getAttribute('data-ad-id');
+          if (adId && !el.hasAttribute('data-ad-loaded')) {
+            el.setAttribute('data-ad-loaded', 'true');
+            // Placeholder para substituição futura pelo snippet AdSense real
+            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
+          }
+          observer.unobserve(el);
+        }
+      });
+    }, { rootMargin: '200px' });
+    
+    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
+      observer.observe(el);
+    });
+  }
+})();
+</script>
+
 </body>
 </html>

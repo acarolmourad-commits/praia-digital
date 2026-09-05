@@ -135,6 +135,17 @@ footer { text-align: center; padding: 2rem 1rem; color: #64748b; font-size: 0.85
   <div class="hero-inner">
     <h1>Guia de Investimento no Litoral</h1>
     <p>Como escolher imóvel, bairro e momento para investir no litoral de SP com mais clareza sobre valorização, rentabilidade e risco.</p>
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-top" data-ad-id="ads-top" style="min-height:100px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (topo)
+  </div>
+  <noscript>
+    <!-- Fallback para quando JavaScript está desativado -->
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
     <div class="hero-cta">
       <a class="btn btn-primary" href="https://praia.digital/cidades/index.html">Ver cidades</a>
       <a class="btn btn-purple" href="https://praia.digital/exclusivos/rankings-exclusivos-2026.html">Rankings exclusivos</a>
@@ -147,7 +158,14 @@ footer { text-align: center; padding: 2rem 1rem; color: #64748b; font-size: 0.85
   <div class="container">
     <section class="section">
       <h2>O que este guia cobre</h2>
-      <p>Investir no litoral envolve variáveis diferentes de investimento urbano: sazonalidade, perfil de público, distância de centros econômicos, custo de manutenção e regime de uso do imóvel. Este guia organiza essas variáveis para decisões mais racionais.</p>
+      <p>Investir no litoral envolve variáveis diferentes de investimento urbano: sazonalidade, perfil de público, distância de centros econômicos, custo de manutenção e regime de uso do imóvel. Este guia organiza essas variáveis para decisões mais racionais.</p
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-inarticle" data-ad-id="ads-inarticle" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense nativo (meio do texto)
+  </div>
+</div>
+>
     </section>
 
     <section class="section">
@@ -189,6 +207,16 @@ footer { text-align: center; padding: 2rem 1rem; color: #64748b; font-size: 0.85
       </div>
     </section>
   </div>
+<div class="adsense-block" style="margin:2rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-footer" data-ad-id="ads-footer" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (rodapé)
+  </div>
+  <noscript>
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
 </main>
 
 <meta name="pd-shared-footer">
@@ -203,5 +231,30 @@ footer { text-align: center; padding: 2rem 1rem; color: #64748b; font-size: 0.85
 <section id="tambem-veja" style="margin-top:28px"><p><strong>Veja também:</strong></p><ul><li><a href="/hub/ia-corretores-litoral.html">Conteúdos relacionados sobre Ia-Corretores-Litoral</a></li></ul></section><section id="disclaimer" style="margin-top:40px;padding:16px;border-top:1px solid #e5e7eb"><p><strong>Aviso legal:</strong> Este conteúdo tem caráter informativo e não constitui assessoria jurídica, contábil ou imobiliária. Dados e projeções dependem de contexto de mercado. Consulte profissional habilitado para decisões específicas.</p></section>
   <!--#include virtual="/partials/lead-modal.html" -->
   <script defer src="https://praia.digital/js/lead-modal.js"></script>
+<script>
+(function(){
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const adId = el.getAttribute('data-ad-id');
+          if (adId && !el.hasAttribute('data-ad-loaded')) {
+            el.setAttribute('data-ad-loaded', 'true');
+            // Placeholder para substituição futura pelo snippet AdSense real
+            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
+          }
+          observer.unobserve(el);
+        }
+      });
+    }, { rootMargin: '200px' });
+    
+    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
+      observer.observe(el);
+    });
+  }
+})();
+</script>
+
 </body>
 </html>

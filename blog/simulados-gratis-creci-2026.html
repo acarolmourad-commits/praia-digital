@@ -94,6 +94,17 @@ a{color:#58a6ff;text-decoration:underline}
 <article>
 <h1>Simulados gratuitos para prova do CRECI — guia completo 2026</h1>
 <p>Simulados gratuitos para prova do CRECI são uma das formas mais eficazes de se preparar para o exame sem gastar com cursos caros. O CRECI exige conhecimento em legislação, matemática financeira, avaliação de imóveis, negociação e ética. Neste guia completo para 2026, você encontra simulados, plano de estudo, matérias, dicas, gabarito comentado e como passar no exame para trabalhar no litoral paulista.</p>
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-top" data-ad-id="ads-top" style="min-height:100px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (topo)
+  </div>
+  <noscript>
+    <!-- Fallback para quando JavaScript está desativado -->
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
 
 <h2>Por que o CRECI importa para o litoral</h2>
 <p>No litoral paulista, o corretor com CRECI ativo tem mais credibilidade, acesso a ferramentas profissionais e maior taxa de conversão. O exame não é só formalidade: é diferencial competitivo.</p>
@@ -127,7 +138,14 @@ a{color:#58a6ff;text-decoration:underline}
 </ul>
 
 <h2>Simulados gratuitos recomendados</h2>
-<p>Use simulados gratuitos para medir evolução e adaptar ritmo. Algumas opções são amplamente usadas por candidatos ao CRECI.</p>
+<p>Use simulados gratuitos para medir evolução e adaptar ritmo. Algumas opções são amplamente usadas por candidatos ao CRECI.</p
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-inarticle" data-ad-id="ads-inarticle" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense nativo (meio do texto)
+  </div>
+</div>
+>
 <ul>
 <li>Questões de legislação em PDF e quizzes online.</li>
 <li>Simulados de matemática financeira com gabarito comentado.</li>
@@ -231,5 +249,30 @@ a{color:#58a6ff;text-decoration:underline}
 
   <!--#include virtual="/partials/lead-modal.html" -->
   <script defer src="https://praia.digital/js/lead-modal.js"></script>
+<script>
+(function(){
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const adId = el.getAttribute('data-ad-id');
+          if (adId && !el.hasAttribute('data-ad-loaded')) {
+            el.setAttribute('data-ad-loaded', 'true');
+            // Placeholder para substituição futura pelo snippet AdSense real
+            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
+          }
+          observer.unobserve(el);
+        }
+      });
+    }, { rootMargin: '200px' });
+    
+    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
+      observer.observe(el);
+    });
+  }
+})();
+</script>
+
 </body>
 </html>

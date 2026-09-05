@@ -35,9 +35,27 @@
   <p class="meta">Data: 23/08/2026 · Tempo de leitura: 6 min</p>
 
   <p>Empresas brasileiras começam a usar agentes autônomos não como experimento, mas como camada operacional. Listamos três casos reais — imobiliária, e-commerce e clínica — que mostram velocidade, redução de custo e receita incremental.</p>
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-top" data-ad-id="ads-top" style="min-height:100px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (topo)
+  </div>
+  <noscript>
+    <!-- Fallback para quando JavaScript está desativado -->
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
 
   <h2>1. Imobiliária: mais visitas, menos espera</h2>
-  <p>Uma imobiliária do litoral reduziu o tempo de resposta de <strong>4,2h para 18min</strong>. A taxa de agendamento saltou de 9% para 27% em 90 dias, gerando cerca de <span class="highlight">R$ 128k em receita incremental</span>. O agente qualifica o lead, envia opções e agenda automaticamente; o corretor assume só visita e fechamento.</p>
+  <p>Uma imobiliária do litoral reduziu o tempo de resposta de <strong>4,2h para 18min</strong>. A taxa de agendamento saltou de 9% para 27% em 90 dias, gerando cerca de <span class="highlight">R$ 128k em receita incremental</span>. O agente qualifica o lead, envia opções e agenda automaticamente; o corretor assume só visita e fechamento.</p
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-inarticle" data-ad-id="ads-inarticle" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense nativo (meio do texto)
+  </div>
+</div>
+>
 
   <h2>2. E-commerce: menos tickets, mais recompra</h2>
   <p>Um e-commerce com 2,4k tickets/mês alcançou <span class="highlight">82% de resolução sem humano</span>. O SLA de 1h subiu de 42% para 94%, e a recompra em 30 dias cresceu de 18% para 31%. Um segundo agente passou a enviar ofertas de reposição baseadas no histórico de cada cliente.</p>
@@ -53,5 +71,30 @@
 
   <!--#include virtual="/partials/lead-modal.html" -->
   <script defer src="https://praia.digital/js/lead-modal.js"></script>
+<script>
+(function(){
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const adId = el.getAttribute('data-ad-id');
+          if (adId && !el.hasAttribute('data-ad-loaded')) {
+            el.setAttribute('data-ad-loaded', 'true');
+            // Placeholder para substituição futura pelo snippet AdSense real
+            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
+          }
+          observer.unobserve(el);
+        }
+      });
+    }, { rootMargin: '200px' });
+    
+    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
+      observer.observe(el);
+    });
+  }
+})();
+</script>
+
 </body>
 </html>

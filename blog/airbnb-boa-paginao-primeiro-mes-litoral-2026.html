@@ -51,6 +51,17 @@
   <div class="meta">Atualizado em 2026 · Tempo de leitura: ~10 minutos</div>
 
   <p>Anunciar no Airbnb no litoral exige mais do que fotos bonitas. Esta página explica como criar uma apresentação objetiva, escolher preço competitivo, destacar diferenciais e gerar avaliações positivas para conseguir as primeiras reservas com mais rapidez.</p>
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-top" data-ad-id="ads-top" style="min-height:100px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (topo)
+  </div>
+  <noscript>
+    <!-- Fallback para quando JavaScript está desativado -->
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
 
   <h2>Montar título e descrição claros</h2>
   <p>Use título objetivo, cite cidade, bairro, capacidade e diferenciais relevantes. Mantenha descrição curta, direta e sem exageros.</p>
@@ -64,7 +75,14 @@
   </ul>
 
   <h2>Definir preço por temporada</h2>
-  <p>Utilize preço-base para baixa temporada, preço médio para média temporada e preço premium para alta temporada. Compare valores semelhantes na região e atualize regras de estadia mínima.</p>
+  <p>Utilize preço-base para baixa temporada, preço médio para média temporada e preço premium para alta temporada. Compare valores semelhantes na região e atualize regras de estadia mínima.</p
+<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-inarticle" data-ad-id="ads-inarticle" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense nativo (meio do texto)
+  </div>
+</div>
+>
 
   <h2>Regras e experiência do hóspede</h2>
   <p>Limite de hóspedes, regras de check-in/check-out, comunicação prévia e apoio durante estadia reduzem cancelamentos e melhoram avaliações.</p>
@@ -100,6 +118,16 @@
     ]
   }
   </script>
+<div class="adsense-block" style="margin:2rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
+  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
+  <div id="pd-ads-footer" data-ad-id="ads-footer" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
+    Espaço reservado para anúncio AdSense (rodapé)
+  </div>
+  <noscript>
+    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
+  </noscript>
+</div>
+
 </main>
 
 <p>Leia também: <a href="estrategia-preco-dinamico-temporada-litoral-2026.html">Estrategia Preco Dinamico Temporada Litoral 2026</a>, <a href="gestao-temporada-checkin-checkout-sem-dor-2026.html">Gestao Temporada Checkin Checkout Sem Dor 2026</a>, <a href="documentacao-aluguel-temporada-litoral-2026.html">Documentacao Aluguel Temporada Litoral 2026</a>.</p>
@@ -117,5 +145,30 @@
 
   <!--#include virtual="/partials/lead-modal.html" -->
   <script defer src="https://praia.digital/js/lead-modal.js"></script>
+<script>
+(function(){
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const adId = el.getAttribute('data-ad-id');
+          if (adId && !el.hasAttribute('data-ad-loaded')) {
+            el.setAttribute('data-ad-loaded', 'true');
+            // Placeholder para substituição futura pelo snippet AdSense real
+            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
+          }
+          observer.unobserve(el);
+        }
+      });
+    }, { rootMargin: '200px' });
+    
+    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
+      observer.observe(el);
+    });
+  }
+})();
+</script>
+
 </body>
 </html>
