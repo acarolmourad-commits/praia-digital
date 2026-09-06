@@ -34,8 +34,19 @@ TEMPLATES = {
     'B/D10': "Olá, última mensagem por aqui: se profissionalizar a apresentação do imóvel fizer sentido no momento, me avise. Caso contrário, posso manter contato para quando for oportuno.",
 }
 
+def parse_score(value):
+    if not value:
+        return 0
+    value = str(value).strip()
+    # Keep only digits and leading minus for safety
+    digits = ''.join(ch for ch in value if ch.isdigit() or (ch == '-' and value.index(ch) == 0))
+    try:
+        return int(digits) if digits else 0
+    except ValueError:
+        return 0
+
 def choose_variant(row):
-    score = int(row.get('score', 0) or 0)
+    score = parse_score(row.get('score'))
     evidencia = (row.get('evidencia', '') or '').lower()
     servico = (row.get('servico_potencial', '') or '').lower()
     if score >= 75 and any(k in evidencia for k in ['gestão manual', 'gestao manual', 'whatsapp público', 'whatsapp direto', 'administração']):
@@ -91,7 +102,7 @@ def main():
         bairro = row.get('bairro', '')
         canal = row.get('canal_contato', '')
         servico = row.get('servico_potencial', '')
-        score = int(row.get('score', 0) or 0)
+        score = parse_score(row.get('score'))
 
         d0 = parse_date(row.get('d0_enviado_em'))
         d2 = parse_date(row.get('d2_enviado_em'))
