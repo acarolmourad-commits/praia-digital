@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<style>
+  header, .pd-nav, .pd-nav-menu, .pd-nav-group, .pd-nav-label, .pd-nav-cta, nav { display: block !important; visibility: visible !important; opacity: 1 !important; }
+  .pd-nav { position: sticky !important; top: 0 !important; z-index: 100 !important; }
+  .pd-nav-menu { display: flex !important; flex-wrap: wrap !important; gap: 1rem !important; }
+  @media (max-width: 980px) {
+    .pd-nav-menu { display: none !important; }
+    .pd-nav-menu.open { display: flex !important; }
+    .pd-nav-toggle { display: inline-flex !important; }
+  }
+</style>
+
 
 <script type="application/ld+json">
 {
