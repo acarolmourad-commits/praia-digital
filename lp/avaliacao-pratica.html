@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Avaliação Prática — Praia Digital</title>
+<meta name="description" content="Solicite uma avaliação prática da sua operação: agentes autônomos versus automação tradicional, com análise de viabilidade e próximos passos."/>
+<link rel="canonical" href="https://praia.digital/lp/avaliacao-pratica.html"/>
+<link rel="preconnect" href="https://praia.digital"/>
+<link rel="preconnect" href="https://cdn.jsdelivr.net"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=window.PD_GA4_ID || ''"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','GA4_MEASUREMENT_ID',{anonymize_ip:true});
+</script>
+<style>
+:root{--primary:#0a58ca;--accent:#10b981;--dark:#0b1220;--surface:#ffffff;--muted:#64748b;--warn:#f59e0b;--danger:#ef4444;--radius:16px;--shadow:0 20px 35px rgba(0,0,0,.08)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial,sans-serif;background:linear-gradient(160deg,#f8fafc 0%,#eef2ff 50%,#ffe4ec 100%);color:#0f172a;line-height:1.65}
+.container{max-width:1100px;margin:0 auto;padding:28px 24px}
+.card{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;margin-bottom:18px}
+.badge{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;background:#eef2ff;color:#0a58ca;border:1px solid #c7d2fe;border-radius:999px;font-weight:600;font-size:13px}
+h1{font-size:clamp(26px,3.2vw,40px);line-height:1.15;letter-spacing:-.03em;margin:10px 0 12px}
+h2{font-size:clamp(20px,2vw,26px);letter-spacing:-.02em;margin:18px 0 10px}
+p{margin:0 0 14px;color:#1e293b}
+.field{display:grid;gap:6px;margin:12px 0}
+input,select,textarea{width:100%;padding:12px 14px;border:1px solid #e5e7eb;border-radius:12px;background:#fff;color:#0f172a;font:inherit}
+button[type="submit"]{padding:12px 16px;border-radius:999px;background:var(--primary);color:#fff;font-weight:800;border:none;box-shadow:0 10px 20px rgba(10,88,202,.25)}
+.success{border-left:4px solid var(--accent);padding:14px 16px;border-radius:8px;background:#ecfdf5;margin:16px 0}
+.error{border-left:4px solid var(--danger);padding:14px 16px;border-radius:8px;background:#fef2f2;margin:16px 0}
+@media (max-width:640px){.container{padding:18px 14px}}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <div class="badge">Praia Digital</div>
+    <h1>Avaliação prática da sua operação</h1>
+    <p>Preencha os dados abaixo para iniciarmos uma análise personalizada sobre automação tradicional versus agentes autônomos para o seu negócio.</p>
+    <div id="form-success" class="success" style="display:none">
+      <strong>Solicitação recebida.</strong> Nossa equipe vai entrar em contato em até 24 horas úteis.
+    </div>
+    <form id="lp-form" novalidate>
+      <div class="field">
+        <label for="name">Nome completo</label>
+        <input id="name" name="name" required placeholder="Ex.: Ana Silva"/>
+      </div>
+      <div class="field">
+        <label for="email">E-mail corporativo</label>
+        <input id="email" name="email" type="email" required placeholder="voce@empresa.com.br"/>
+      </div>
+      <div class="field">
+        <label for="phone">WhatsApp/telefone</label>
+        <input id="phone" name="phone" required placeholder="(11) 99999-9999"/>
+      </div>
+      <div class="field">
+        <label for="company">Empresa</label>
+        <input id="company" name="company" placeholder="Razão social ou nome fantasia"/>
+      </div>
+      <div class="field">
+        <label for="segment">Segmento</label>
+        <select id="segment" name="segment">
+          <option value="">Selecione</option>
+          <option value="imobiliaria">Imobiliária</option>
+          <option value="varejo">Varejo</option>
+          <option value="saude">Saúde</option>
+          <option value="servicos">Serviços</option>
+          <option value="industria">Indústria</option>
+          <option value="outro">Outro</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="volume">Volume aproximado de atendimentos/mês</label>
+        <select id="volume" name="volume">
+          <option value="">Selecione</option>
+          <option value="ate_500">Até 500</option>
+          <option value="500_2000">500 a 2.000</option>
+          <option value="2000_5000">2.000 a 5.000</option>
+          <option value="5000_plus">5.000+</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">Maior gargalo hoje</label>
+        <textarea id="message" name="message" rows="4" placeholder="Ex.: demora no atendimento fora de horário, retrabalho com CRM, follow-up manual..."></textarea>
+      </div>
+      <input type="hidden" name="source" value="lp_avaliacao_pratica"/>
+      <input type="hidden" name="utm_campaign" value="avaliacao_pratica"/>
+      <button type="submit" data-event="lead_submit" data-event-category="lp" data-event-label="avaliacao_pratica">Enviar solicitação</button>
+      <p style="font-size:.8rem;color:#6b7280;margin-top:10px">Ao enviar, você concorda em receber contato comercial. Não compartilhamos dados com terceiros.</p>
+    </form>
+    <div id="form-error" class="error" style="display:none"></div>
+  </div>
+</div>
+<script>
+(function(){
+  const form = document.getElementById('lp-form');
+  const success = document.getElementById('form-success');
+  const errorBox = document.getElementById('form-error');
+  const submitBtn = form.querySelector('button[type="submit"]');
+  if(window.gtag){
+    submitBtn.addEventListener('click', function(){
+      try { gtag('event', 'lead_click', { event_category: 'lp', event_label: 'avaliacao_pratica', page_path: location.pathname }); } catch(e){}
+    });
+  }
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    errorBox.style.display = 'none';
+    success.style.display = 'none';
+    const data = Object.fromEntries(new FormData(form).entries());
+    if(!data.name || !data.email || !data.phone){ errorBox.textContent = 'Preencha nome, e-mail e telefone.'; errorBox.style.display = 'block'; return; }
+    submitBtn.disabled = true; submitBtn.textContent = 'Enviando...';
+    try {
+      const endpoint = '/leads/avaliacao-pratica';
+      const res = await fetch(endpoint, { method: 'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(data) });
+      if(!res.ok) throw new Error('HTTP ' + res.status);
+      if(window.gtag){ try { gtag('event', 'lead_submit', { event_category: 'lp', event_label: 'avaliacao_pratica', value: 1 }); } catch(e){} }
+      form.reset(); success.style.display = 'block';
+    } catch (err) {
+      errorBox.textContent = 'Não foi possível enviar agora. Tente novamente ou chame no WhatsApp.';
+      errorBox.style.display = 'block';
+    } finally {
+      submitBtn.disabled = false; submitBtn.textContent = 'Enviar solicitação';
+    }
+  });
+})();
+</script>
+</body>
+</html>

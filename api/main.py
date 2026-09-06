@@ -123,6 +123,18 @@ class LeadRequest(BaseModel):
     mensagem: Optional[str] = ""
 
 
+class AvaliacaoPraticaRequest(BaseModel):
+    name: str
+    email: Optional[str] = ""
+    phone: Optional[str] = ""
+    company: Optional[str] = ""
+    segment: Optional[str] = ""
+    volume: Optional[str] = ""
+    message: Optional[str] = ""
+    source: Optional[str] = "lp_avaliacao_pratica"
+    utm_campaign: Optional[str] = "avaliacao_pratica"
+
+
 try:
     from .feed import gerar_feed
 except ImportError:
@@ -146,3 +158,15 @@ def salvar_lead(req: LeadRequest):
     with open(file_path, "a", encoding="utf-8") as f:
         f.write(json.dumps(data, ensure_ascii=False) + "\n")
     return {"status": "ok"}
+
+@app.post("/leads/avaliacao-pratica")
+def salvar_avaliacao_pratica(req: AvaliacaoPraticaRequest):
+    data = req.dict()
+    data["created_at"] = datetime.utcnow().isoformat() + "Z"
+    data["status"] = "novo"
+    leads_dir = Path(__file__).resolve().parent / "leads"
+    leads_dir.mkdir(exist_ok=True)
+    file_path = leads_dir / "avaliacao-pratica.jsonl"
+    with open(file_path, "a", encoding="utf-8") as f:
+        f.write(json.dumps(data, ensure_ascii=False) + "\n")
+    return {"status": "ok", "lista": "Avaliacao Pratica"}
