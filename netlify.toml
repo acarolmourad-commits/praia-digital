@@ -1,4 +1,10 @@
 [[redirects]]
+  from = "/blog/analise-mercado-imobiliario-litoral.html"
+  to = "/blog/analise-mercado-imobiliario-litoral-2026.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/blog/education/formacoes/index.html"
   to = "/education/formacoes/index.html"
   status = 301

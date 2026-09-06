@@ -1,0 +1,16 @@
+Relatorio de diagnostico e acao - 2026-09-06T12:13:24.932806
+
+A) 404 /blog/analise-mercado-imobiliario-litoral.html
+- Causa: slug antigo sem sufixo de ano.
+- Efeito: 404 porque o arquivo atual e /blog/analise-mercado-imobiliario-litoral-2026.html.
+- Solucao: adicionar redirect 301 em netlify.toml e _redirects.
+
+B) Comissao de corretagem 6%
+- Causa: nao localizei configuracao unica em api/academy/financeiro.
+- Efeito: risco de calculos divergentes entre simulacoes/relatorios.
+- Solucao: preciso apontar o arquivo/configuracao oficial para eu fixar/validar 6%.
+
+C) CSS inline do blog/index.html
+- Causa: necessario garantir renderizacao imediata.
+- Efeito: layout visivel mesmo com eventual atraso do CSS externo.
+- Solucao: remover inline e validar style.css externo; ja foi feito.
