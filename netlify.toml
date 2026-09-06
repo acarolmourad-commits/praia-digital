@@ -31,3 +31,9 @@
 [functions]
   directory = "api"
   node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/blog/hermes-agents-vs-automacao-tradicional-2026.html"
+  to = "/blog/implementar-hermes-agents-guia-pratico-2026.html"
+  status = 301
+  force = true
