@@ -91,6 +91,14 @@ main {
   padding: 2rem 1rem;
 }
 
+/* Blog layout fallbacks */
+.wrap { width: 100%; max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+.lead { color: #334155; margin-bottom: 1rem; }
+.topnav { display: flex; flex-wrap: wrap; gap: .5rem; }
+.topnav a { color: var(--ocean); font-weight: 600; text-decoration: none; }
+.actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .75rem; }
+
 /* Footer */
 footer {
   background: var(--dark);
