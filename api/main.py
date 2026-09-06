@@ -4,6 +4,8 @@ from pydantic import BaseModel
 from typing import Optional
 from datetime import datetime
 import json
+import os
+import urllib.request
 
 app = FastAPI(title="Praia Digital API", version="1.0.0")
 
@@ -135,6 +137,36 @@ class AvaliacaoPraticaRequest(BaseModel):
     utm_campaign: Optional[str] = "avaliacao_pratica"
 
 
+BREVO_API_KEY = os.getenv("BREVO_API_KEY", "")
+BREVO_CONTACT_LIST_ID_AVALIACAO_PRATICA = os.getenv("BREVO_CONTACT_LIST_ID_AVALIACAO_PRATICA", "")
+
+
+def _brevo_add_contact(email: str, name: str = "", list_id: str = ""):
+    if not BREVO_API_KEY or not email or not list_id:
+        return None
+    payload = json.dumps({
+        "email": email,
+        "listIds": [int(list_id)],
+        "updateEnabled": True,
+    }).encode("utf-8")
+    req = urllib.request.Request(
+        "https://api.brevo.com/v3/contacts",
+        data=payload,
+        headers={
+            "api-key": BREVO_API_KEY,
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+        },
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            body = resp.read().decode("utf-8")
+            return {"status": resp.status, "body": body}
+    except Exception as e:
+        return {"status": None, "error": str(e)}
+
+
 try:
     from .feed import gerar_feed
 except ImportError:
@@ -169,4 +201,14 @@ def salvar_avaliacao_pratica(req: AvaliacaoPraticaRequest):
     file_path = leads_dir / "avaliacao-pratica.jsonl"
     with open(file_path, "a", encoding="utf-8") as f:
         f.write(json.dumps(data, ensure_ascii=False) + "\n")
-    return {"status": "ok", "lista": "Avaliacao Pratica"}
+
+    email = (req.email or "").strip()
+    brevo_result = None
+    if email:
+        brevo_result = _brevo_add_contact(
+            email=email,
+            name=(req.name or "").strip(),
+            list_id=BREVO_CONTACT_LIST_ID_AVALIACAO_PRATICA,
+        )
+
+    return {"status": "ok", "lista": "Avaliacao Pratica", "brevo": brevo_result}
