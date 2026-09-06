@@ -47,9 +47,24 @@
       .pd-ad-disclosure { font-size: 0.75rem; color: #6b7280; margin-top: 0.5rem; }
     </style>
 
-    <link rel="stylesheet" href="https://praia.digital/css/style.css">
+    <style>
+  .wrap { width: 100%; max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+  .lead { color: #334155; margin-bottom: 1rem; }
+  .topnav { display: flex; flex-wrap: wrap; gap: .5rem; }
+  .topnav a { color: #0077B6; font-weight: 600; text-decoration: none; }
+  .actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .75rem; }
+  .card { background: #fff; border-radius: 16px; padding: 1.5rem; box-shadow: 0 2px 12px rgba(0,0,0,.08); }
+  .btn { display: inline-block; padding: .75rem 1.75rem; border-radius: 999px; background: #0077B6; color: #fff; font-weight: 600; text-decoration: none; margin: .25rem; }
+  .btn:hover { background: #055c91; }
+  main { flex: 1; width: 100%; }
+  header { background: linear-gradient(135deg,#0077B6,#00B4D8); color: #fff; padding: 1rem 2rem; }
+  nav a { color: #fff; font-weight: 500; text-decoration: none; margin-right: 1rem; }
+  footer { background: #023047; color: #fff; text-align: center; padding: 1.5rem; margin-top: auto; }
+</style>
+<link rel="stylesheet" href="https://praia.digital/css/style.css">
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=window.PD_GA4_ID || ''"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
@@ -73,7 +88,7 @@ gtag('config', '', { anonymize_ip: true });
 
   <!-- Meta Pixel (env fallback) -->
 <script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init", window.PD_META_PIXEL_ID || "");fbq("track","PageView");
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init", "");fbq("track","PageView");
 </script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=" + (window.PD_META_PIXEL_ID || "") + "&ev=PageView&noscript=1" /></noscript>
 </head>
@@ -252,6 +267,7 @@ gtag('config', '', { anonymize_ip: true });
       </article>
     </div>
   </main>
+<meta name="pd-shared-footer">
 
   <footer>
     <p><strong>Quer vender ou alugar seu imóvel no litoral?</strong></p>
