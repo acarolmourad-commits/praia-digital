@@ -1,5 +1,18 @@
 
 [[redirects]]
+  from = "/education/exclusivos/relatorio-mercado-2026.html"
+  to = "/exclusivos/relatorio-mercado-2026.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/education/exclusivos/education/education/index.html"
+  to = "/education/index.html"
+  status = 301
+  force = true
+
+
+[[redirects]]
   from = "/hub/ia-corretores-litoral.html"
   to = "/hub/ia-corretores-litoral/index.html"
   status = 301
