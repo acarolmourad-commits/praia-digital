@@ -1,3 +1,16 @@
+
+[[redirects]]
+  from = "/hub/ia-corretores-litoral.html"
+  to = "/hub/ia-corretores-litoral/index.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/education/index.html"
+  to = "/education/index.html"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/blog/analise-mercado-imobiliario-litoral.html"
   to = "/blog/analise-mercado-imobiliario-litoral-2026.html"
