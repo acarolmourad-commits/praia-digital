@@ -1,0 +1,11 @@
+id,nome,perfil,cidade,regiao,bairro,telefone,email,canal_origem,data_contato,status,observacoes,link_perfil,score_lead,orcamento_estimado,objetivo
+1,João Silva,corretor,Santos,Baixada Santista,Gonzaga,5511988880001,joao@imobiliaria.com.br,Instagram,2026-09-06,novo,Ativo em anúncios locais,https://instagram.com/joaosilva,8,50000,compra
+2,Maria Oliveira,proprietario,Praia Grande,Baixada Santista,Boqueirão,5511988880002,maria@email.com.br,WhatsApp,2026-09-06,qualificado,Interessada em administração de temporada,,9,200000,venda
+3,Carlos Mendes,investidor,São Vicente,Baixada Santista,Centro,5511988880003,carlos@email.com.br,Indicação,2026-09-06,follow-up-1,Prefere imóveis com vista mar,,7,300000,investimento
+4,Ana Costa,corretor,Bertioga/Riviera,Litoral Norte,Riviera,5511988880004,ana@imobiliaria.com.br,Website,2026-09-06,novo,Parceria white-label,,6,80000,compra
+5,Fernanda Lima,proprietario,Santos,Baixada Santista,Ponta da Praia,5511988880005,fernanda@email.com.br,Facebook,2026-09-06,novo,Quer vender apartamento,,8,450000,venda
+6,Ricardo Souza,investidor,Praia Grande,Baixada Santista,Vila Tupi,5511988880006,ricardo@email.com.br,Website,2026-09-06,qualificado,Perfil: investidor de entrada,,9,120000,investimento
+7,Patrícia Gomes,corretor,São Vicente,Baixada Santista,Itararé,5511988880007,patricia@imobiliaria.com.br,Instagram,2026-09-06,novo,Especialista em coberturas,,7,150000,compra
+8,Lucas Andrade,proprietario,Bertioga/Riviera,Litoral Norte,Centro Histórico,5511988880008,lucas@email.com.br,Indicação,2026-09-06,follow-up-2,Interessado em temporada,,8,350000,temporada
+9,Amanda Reis,investidor,Santos,Baixada Santista,Embaré,5511988880009,amanda@email.com.br,LinkedIn,2026-09-06,novo,ROI esperado: 8%+,,10,250000,investimento
+10,Thiago Martins,corretor,Praia Grande,Baixada Santista,Maracanã,5511988880010,thiago@imobiliaria.com.br,Website,2026-09-06,qualificado,Foco em lançamentos,,8,90000,compra
