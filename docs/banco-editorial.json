@@ -1,6 +1,6 @@
 {
   "meta": {
-    "total_articles": 3878,
+    "total_articles": 3883,
     "domain": "praia.digital",
     "blog_path": ".\\blog",
     "scope": "controle editorial contínuo + integracao hotmart"
@@ -135,23 +135,23 @@
     "E": "Artigo comercial"
   },
   "status_counts": {
-    "publicado": 3878
+    "publicado": 3883
   },
   "article_type_counts": {
-    "A": 2752,
-    "E": 298,
+    "A": 2755,
+    "E": 300,
     "C": 409,
     "D": 210,
     "B": 209
   },
   "funnel_counts": {
-    "Meio": 2417,
+    "Meio": 2422,
     "Fundo": 622,
     "Topo": 839
   },
   "intent_counts": {
-    "informacional": 3464,
-    "comercial": 181,
+    "informacional": 3468,
+    "comercial": 182,
     "navegacional_comparativo": 233
   },
   "city_counts": {
@@ -165,24 +165,24 @@
     "sao_vicente": 32,
     "guaruja": 65,
     "riviera": 18,
-    "litoral_norte": 40,
+    "litoral_norte": 42,
     "peruibe": 15,
     "praia_grande": 59,
     "sao_sebastiao": 60,
-    "ilhabela": 23,
+    "ilhabela": 24,
     "maresias": 18,
     "ubatuba": 21,
     "litoral_sul": 11,
-    "itanhaem": 11
+    "itanhaem": 13
   },
   "cluster_counts": {
     "editorial": 485,
     "locacao_temporada": 581,
     "automacao_ia": 953,
-    "compra_venda": 462,
-    "bairros_cidades": 838,
+    "compra_venda": 464,
+    "bairros_cidades": 839,
     "cases": 16,
-    "investimento": 325,
+    "investimento": 327,
     "marketing_digital": 117,
     "seo_local": 50,
     "parcerias": 7,
@@ -895,22 +895,8 @@
   "update_candidates": [],
   "next_queue": [
     {
-      "cluster": "compra_venda",
-      "city": "ilhabela",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
       "cluster": "investimento",
       "city": "ilhabela",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "investimento",
-      "city": "itanhaem",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
@@ -918,13 +904,6 @@
     {
       "cluster": "locacao_temporada",
       "city": "itanhaem",
-      "count": 1,
-      "priority_score": 3,
-      "priority": "alta"
-    },
-    {
-      "cluster": "compra_venda",
-      "city": "litoral_norte",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
@@ -960,6 +939,27 @@
     {
       "cluster": "compra_venda",
       "city": "peruibe",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "compra_venda",
+      "city": "riviera",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "investimento",
+      "city": "riviera",
+      "count": 1,
+      "priority_score": 3,
+      "priority": "alta"
+    },
+    {
+      "cluster": "locacao_temporada",
+      "city": "riviera",
       "count": 1,
       "priority_score": 3,
       "priority": "alta"
@@ -1052,9 +1052,9 @@
     "litoral_norte": {
       "locacao_temporada": 22,
       "cases": 1,
-      "investimento": 9,
+      "investimento": 10,
+      "compra_venda": 2,
       "bairros_cidades": 3,
-      "compra_venda": 1,
       "automacao_ia": 1,
       "editorial": 3
     },
@@ -1081,9 +1081,9 @@
     },
     "ilhabela": {
       "bairros_cidades": 15,
+      "compra_venda": 2,
       "locacao_temporada": 6,
-      "investimento": 1,
-      "compra_venda": 1
+      "investimento": 1
     },
     "maresias": {
       "bairros_cidades": 16,
@@ -1102,8 +1102,8 @@
       "compra_venda": 1
     },
     "itanhaem": {
-      "bairros_cidades": 9,
-      "investimento": 1,
+      "bairros_cidades": 10,
+      "investimento": 2,
       "locacao_temporada": 1
     }
   },
@@ -33051,6 +33051,32 @@
       "cta_intensity": "media"
     },
     {
+      "id": "698b9765f2",
+      "slug": "compra-imoveis-litoral-norte-2026",
+      "path": "blog\\compra-imoveis-litoral-norte-2026.html",
+      "title": "Compra de imóvel no Litoral Norte: comparativo de cidades, preços e tendências para 2026",
+      "h1": "Compra de imóvel no Litoral Norte: comparativo de cidades, preços e tendências para 2026",
+      "h2_count": 8,
+      "meta_description": "Comparativo de compra de imóvel no Litoral Norte em 2026: cidades, preços médios, tendências e dicas para investidores e compradores.",
+      "keywords": [],
+      "primary_keyword": null,
+      "city": "litoral_norte",
+      "funnel": "Meio",
+      "intent": "informacional",
+      "cluster": "compra_venda",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "A",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "compra_venda",
+      "cta_intensity": "suave"
+    },
+    {
       "id": "30a53e6016",
       "slug": "compra-imovel-heranca-inventario-litoral-2026",
       "path": "blog\\compra-imovel-heranca-inventario-litoral-2026.html",
@@ -33784,6 +33810,32 @@
       "keywords": [],
       "primary_keyword": null,
       "city": "litoral_sp",
+      "funnel": "Meio",
+      "intent": "informacional",
+      "cluster": "compra_venda",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "A",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "compra_venda",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "adc8f805d5",
+      "slug": "compra-venda-imoveis-ilhabela-2026",
+      "path": "blog\\compra-venda-imoveis-ilhabela-2026.html",
+      "title": "Compra e venda de imóveis em Ilhabela: 7 pontos que influenciam o preço real em 2026",
+      "h1": "Compra e venda de imóveis em Ilhabela: 7 pontos que influenciam o preço real em 2026",
+      "h2_count": 9,
+      "meta_description": "Guia prático de compra e venda de imóveis em Ilhabela em 2026: 7 pontos que influenciam o preço real, dicas de documentação, financiamento e sazonalidade turística.",
+      "keywords": [],
+      "primary_keyword": null,
+      "city": "ilhabela",
       "funnel": "Meio",
       "intent": "informacional",
       "cluster": "compra_venda",
@@ -73366,6 +73418,58 @@
       "cta_intensity": "suave"
     },
     {
+      "id": "fec43a835d",
+      "slug": "investimento-imoveis-ilhabela-2026",
+      "path": "blog\\investimento-imoveis-ilhabela-2026.html",
+      "title": "Investir em imóveis em Ilhabela: ROI médio, riscos e quando vale a pena em 2026",
+      "h1": "Investir em imóveis em Ilhabela: ROI médio, riscos e quando vale a pena em 2026",
+      "h2_count": 6,
+      "meta_description": "Análise de investimento imobiliário em Ilhabela em 2026: ROI médio, riscos, janelas oportunas e comparação com outras cidades do Litoral Norte.",
+      "keywords": [],
+      "primary_keyword": null,
+      "city": "litoral_norte",
+      "funnel": "Meio",
+      "intent": "informacional",
+      "cluster": "investimento",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo comercial",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "investimento",
+      "cta_intensity": "media"
+    },
+    {
+      "id": "c87a3cdd27",
+      "slug": "investimento-imoveis-itanhaem-2026",
+      "path": "blog\\investimento-imoveis-itanhaem-2026.html",
+      "title": "Investir em imóveis em Itanhaém: 5 indicadores para decidir entre renda e valorização",
+      "h1": "Investir em imóveis em Itanhaém: 5 indicadores para decidir entre renda e valorização",
+      "h2_count": 7,
+      "meta_description": "Guia de investimento imobiliário em Itanhaém em 2026: 5 indicadores para escolher entre renda de temporada e valorização estrutural.",
+      "keywords": [],
+      "primary_keyword": null,
+      "city": "itanhaem",
+      "funnel": "Meio",
+      "intent": "comercial",
+      "cluster": "investimento",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "E",
+      "article_type_label": "Artigo comercial",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "investimento",
+      "cta_intensity": "media"
+    },
+    {
       "id": "9f3ce9ac7a",
       "slug": "investimento-imoveis-litoral-paulista-2026",
       "path": "blog\\investimento-imoveis-litoral-paulista-2026.html",
@@ -79550,6 +79654,32 @@
       "recommended_cta": "Quer calcular a viabilidade do seu imóvel? Baixe o guia completo de rentabilidade.",
       "conversion_potential": "media",
       "commercial_cluster": "locacao_temporada",
+      "cta_intensity": "suave"
+    },
+    {
+      "id": "1d98e6af6c",
+      "slug": "locacao-temporaria-itanhaem-2026",
+      "path": "blog\\locacao-temporaria-itanhaem-2026.html",
+      "title": "Locação temporária em Itanhaém: preço médio, ocupação e regras municipais em 2026",
+      "h1": "Locação temporária em Itanhaém: preço médio, ocupação e regras municipais em 2026",
+      "h2_count": 6,
+      "meta_description": "Análise de locação temporária em Itanhaém em 2026: preço médio, taxa de ocupação estimada e regras municipais para anfitriões.",
+      "keywords": [],
+      "primary_keyword": null,
+      "city": "itanhaem",
+      "funnel": "Meio",
+      "intent": "informacional",
+      "cluster": "bairros_cidades",
+      "canonical_ok": true,
+      "status": "publicado",
+      "article_type": "A",
+      "article_type_label": "Artigo SEO gratuito",
+      "product_related_id": null,
+      "product_relation_score": 0,
+      "hotmart_link": null,
+      "recommended_cta": null,
+      "conversion_potential": "baixa",
+      "commercial_cluster": "bairros_cidades",
       "cta_intensity": "suave"
     },
     {
