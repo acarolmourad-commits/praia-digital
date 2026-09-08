@@ -199,14 +199,19 @@ footer {
 /* Affiliate */
 .affiliate-showcase { background: var(--white); padding: 2rem; border-radius: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); margin: 1.5rem 0; }
 .affiliate-showcase h2 { font-size: 1.6rem; margin-bottom: 0.25rem; color: var(--dark); }
-.affiliate-showcase .subtitle { color: #666; margin-bottom: 1.25rem; }
+.affiliate-showcase .subtitle { color: #374151; margin-bottom: 1.25rem; }
 .affiliate-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; }
-.affiliate-card { background: var(--sand); border-radius: 16px; padding: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem; border: 1px solid rgba(0,0,0,0.04); }
-.affiliate-card h3 { font-size: 1.05rem; color: var(--dark); }
-.affiliate-card p { font-size: 0.9rem; color: #555; }
+.affiliate-card { background: #FFFFFF; border: 1px solid rgba(0,0,0,0.08); border-radius: 16px; padding: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.affiliate-card .affiliate-product,
+.affiliate-card h3 { font-size: 1.05rem; color: #1E293B; font-weight: 700; }
+.affiliate-card .affiliate-desc,
+.affiliate-card p { font-size: 0.9rem; color: #334155; }
+.affiliate-cta { display: inline-block; background: #0077B6; color: #FFFFFF; padding: 0.55rem 1.1rem; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 0.85rem; }
+.affiliate-cta:hover { background: #055c91; }
+.affiliate-disclosure { margin-top: 1rem; font-size: 0.75rem; color: #4B5563; }
 .badge { display: inline-block; background: var(--amber); color: var(--dark); padding: 0.25rem 0.6rem; border-radius: 999px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; }
 .stars { color: #f5a623; font-size: 1rem; letter-spacing: 0.05em; }
-.trust-badge { margin-top: 0.6rem; font-size: 0.82rem; color: #555; opacity: 0.9; }
+.trust-badge { margin-top: 0.6rem; font-size: 0.82rem; color: #374151; opacity: 0.9; }
 .affiliate-card .btn { margin-top: 0.5rem; }
 
 /* Booking */
