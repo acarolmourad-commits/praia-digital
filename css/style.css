@@ -133,10 +133,14 @@ footer {
 /* Cards */
 .card {
   background: var(--white);
+  color: var(--dark);
   border-radius: 16px;
   padding: 1.5rem;
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
   transition: transform 0.2s, box-shadow 0.2s;
+}
+.card h2, .card h3, .card p, .card .btn {
+  color: inherit;
 }
 
 .card:hover {
