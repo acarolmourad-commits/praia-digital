@@ -1495,7 +1495,26 @@
       "meta_description": "Otimize anúncios no Airbnb e Booking para imóveis no litoral: títulos, descrições, algoritmos e fotos para aumentar reservas.",
       "h1": "Anúncios no Airbnb e Booking que Vendem Mais: Como Otimizar Títulos, Descrições e Algoritmos no Litoral",
       "type": "artigo-pilar",
-      "source": "manual-request"
+      "source": "manual-request",
+      "recovery_status": "RECUPERADO_VALIDADO",
+      "recovery_validated_at": "2026-09-08T01:26:11.541441+00:00"
+    },
+    {
+      "slug": "erros-anuncio-temporada-como-corrigir-2026.html",
+      "title": "7 Erros Que Fazem Seu Anúncio de Temporada Perder Reservas (e Como Corrigir)",
+      "h1": "7 Erros Que Fazem Seu Anúncio de Temporada Perder Reservas (e Como Corrigir)",
+      "path": "blog/erros-anuncio-temporada-como-corrigir-2026.html",
+      "url": "https://praia.digital/blog/erros-anuncio-temporada-como-corrigir-2026.html",
+      "source": "manual-request",
+      "status": "PUBLISHED",
+      "published": true,
+      "published_at": "2026-09-07T00:00:00.000000Z",
+      "updated_at": "2026-09-07T00:00:00.000000Z",
+      "updated_by": "assistant",
+      "http_status": "200",
+      "in_sitemap": true,
+      "canonical_self": true,
+      "canonical_url": "https://praia.digital/blog/erros-anuncio-temporada-como-corrigir-2026.html"
     }
   ],
   "publication_plan": [
@@ -28422,7 +28441,9 @@
       "meta_description": "Otimize anúncios no Airbnb e Booking para imóveis no litoral: títulos, descrições, algoritmos e fotos para aumentar reservas.",
       "h1": "Anúncios no Airbnb e Booking que Vendem Mais: Como Otimizar Títulos, Descrições e Algoritmos no Litoral",
       "type": "artigo-pilar",
-      "source": "manual-request"
+      "source": "manual-request",
+      "recovery_status": "RECUPERADO_VALIDADO",
+      "recovery_validated_at": "2026-09-08T01:26:11.541441+00:00"
     }
   ],
   "sitemap_plan": {
