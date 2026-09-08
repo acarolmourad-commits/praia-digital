@@ -959,47 +959,7 @@
       "in_sitemap": true
     },
     {
-      "slug": "remarketing-imobiliarias-litoral-pratico-2026",
-      "title": "Remarketing para imobiliárias no litoral: guia prático 2026",
-      "cluster": "Marketing Digital",
-      "status": "published",
-      "published_at": "2026-08-14",
-      "batch": "Marketing Digital 2"
-    },
-    {
-      "slug": "linkedin-imobiliarias-litoral-conteudo-networking-2026",
-      "title": "LinkedIn para imobiliárias no litoral: conteúdo e networking 2026",
-      "cluster": "Marketing Digital",
-      "status": "published",
-      "published_at": "2026-08-14",
-      "batch": "Marketing Digital 2"
-    },
-    {
-      "slug": "tiktok-imobiliarias-litoral-conteudo-video-2026",
-      "title": "TikTok para imobiliárias no litoral: conteúdo em vídeo 2026",
-      "cluster": "Marketing Digital",
-      "status": "published",
-      "published_at": "2026-08-14",
-      "batch": "Marketing Digital 2"
-    },
-    {
-      "slug": "email-nurture-imobiliarias-litoral-relacionamento-2026",
-      "title": "Email nurture para imobiliárias no litoral: relacionamento 2026",
-      "cluster": "Marketing Digital",
-      "status": "published",
-      "published_at": "2026-08-14",
-      "batch": "Marketing Digital 2"
-    },
-    {
-      "slug": "conteudo-redes-sociais-imobiliarias-litoral-2026",
-      "title": "Conteúdo para redes sociais de imobiliárias no litoral: guia 2026",
-      "cluster": "Marketing Digital",
-      "status": "published",
-      "published_at": "2026-08-14",
-      "batch": "Marketing Digital 2"
-    },
-    {
-      "slug": "como-gerar-avaliacoes-google-imobiliarias-litoral-2026",
+      "slug": "como-gerar-avaliacoes-google-imobiliarias-litoral-2026.html",
       "title": "Como gerar avaliações no Google para imobiliárias no litoral 2026",
       "cluster": "SEO Local",
       "status": "published",
@@ -1007,7 +967,7 @@
       "batch": "SEO Local 2"
     },
     {
-      "slug": "como-implementar-structured-data-imobiliarias-litoral-2026",
+      "slug": "como-implementar-structured-data-imobiliarias-litoral-2026.html",
       "title": "Como implementar structured data para imobiliárias no litoral 2026",
       "cluster": "SEO Local",
       "status": "published",
@@ -1015,7 +975,7 @@
       "batch": "SEO Local 2"
     },
     {
-      "slug": "seo-local-iniciantes-imobiliarias-litoral-2026",
+      "slug": "seo-local-iniciantes-imobiliarias-litoral-2026.html",
       "title": "SEO local para iniciantes: imobiliárias no litoral 2026",
       "cluster": "SEO Local",
       "status": "published",
@@ -1023,15 +983,7 @@
       "batch": "SEO Local 2"
     },
     {
-      "slug": "como-aparecer-maps-pack-imobiliarias-litoral-2026",
-      "title": "Como aparecer no Maps Pack para imobiliárias no litoral 2026",
-      "cluster": "SEO Local",
-      "status": "published",
-      "published_at": "2026-08-14",
-      "batch": "SEO Local 2"
-    },
-    {
-      "slug": "checklist-seo-local-imobiliarias-litoral-2026",
+      "slug": "checklist-seo-local-imobiliarias-litoral-2026.html",
       "title": "Checklist de SEO local para imobiliárias no litoral 2026",
       "cluster": "SEO Local",
       "status": "published",
@@ -1039,7 +991,7 @@
       "batch": "SEO Local 2"
     },
     {
-      "slug": "preco-m2-litoral-sp-analise-cidades-2026",
+      "slug": "preco-m2-litoral-sp-analise-cidades-2026.html",
       "title": "Preço do m2 no litoral de SP: análise por cidade 2026",
       "cluster": "Análise de Dados",
       "status": "published",
@@ -1047,7 +999,7 @@
       "batch": "Análise de Dados 2"
     },
     {
-      "slug": "tabela-precos-imoveis-litoral-sp-2026",
+      "slug": "tabela-precos-imoveis-litoral-sp-2026.html",
       "title": "Tabela de preços de imóveis no litoral de SP 2026",
       "cluster": "Análise de Dados",
       "status": "published",
@@ -1055,7 +1007,7 @@
       "batch": "Análise de Dados 2"
     },
     {
-      "slug": "revpar-adr-occupancy-imoveis-temporada-litoral-2026",
+      "slug": "revpar-adr-occupancy-imoveis-temporada-litoral-2026.html",
       "title": "RevPAR ADR occupancy para imóveis de temporada no litoral 2026",
       "cluster": "Análise de Dados",
       "status": "published",
@@ -1063,7 +1015,7 @@
       "batch": "Análise de Dados 2"
     },
     {
-      "slug": "rentabilidade-imoveis-temporada-litoral-2026",
+      "slug": "rentabilidade-imoveis-temporada-litoral-2026.html",
       "title": "Rentabilidade de imóveis de temporada no litoral 2026",
       "cluster": "Análise de Dados",
       "status": "published",
@@ -1071,7 +1023,7 @@
       "batch": "Análise de Dados 2"
     },
     {
-      "slug": "analise-comparativa-mercado-imobiliario-cidades-litoral-2026",
+      "slug": "analise-comparativa-mercado-imobiliario-cidades-litoral-2026.html",
       "title": "Análise comparativa de mercado imobiliário por cidade no litoral 2026",
       "cluster": "Análise de Dados",
       "status": "published",
@@ -1079,7 +1031,7 @@
       "batch": "Análise de Dados 2"
     },
     {
-      "slug": "case-de-sucesso-proprietario-imovel-alto-padrao-litoral-2026",
+      "slug": "case-de-sucesso-proprietario-imovel-alto-padrao-litoral-2026.html",
       "title": "Case de sucesso: proprietário de imóvel alto padrão no litoral 2026",
       "cluster": "Casos de Sucesso",
       "status": "published",
@@ -1087,7 +1039,7 @@
       "batch": "Casos de Sucesso 2"
     },
     {
-      "slug": "case-de-sucesso-corretor-venda-rapida-litoral-2026",
+      "slug": "case-de-sucesso-corretor-venda-rapida-litoral-2026.html",
       "title": "Case de sucesso: corretor com venda rápida no litoral 2026",
       "cluster": "Casos de Sucesso",
       "status": "published",
@@ -1095,7 +1047,7 @@
       "batch": "Casos de Sucesso 2"
     },
     {
-      "slug": "case-de-sucesso-imobiliaria-captacao-lideranca-litoral-2026",
+      "slug": "case-de-sucesso-imobiliaria-captacao-lideranca-litoral-2026.html",
       "title": "Case de sucesso: imobiliária com captação e liderança no litoral 2026",
       "cluster": "Casos de Sucesso",
       "status": "published",
@@ -1103,7 +1055,7 @@
       "batch": "Casos de Sucesso 2"
     },
     {
-      "slug": "case-de-sucesso-investidor-flipping-litoral-2026",
+      "slug": "case-de-sucesso-investidor-flipping-litoral-2026.html",
       "title": "Case de sucesso: investidor com flipping no litoral 2026",
       "cluster": "Casos de Sucesso",
       "status": "published",
@@ -1111,7 +1063,7 @@
       "batch": "Casos de Sucesso 2"
     },
     {
-      "slug": "case-de-sucesso-casa-home-management-gestao-temporada-2026",
+      "slug": "case-de-sucesso-casa-home-management-gestao-temporada-2026.html",
       "title": "Case de sucesso: CASA Home Management — gestão de temporada no litoral 2026",
       "cluster": "Casos de Sucesso",
       "status": "published",
@@ -1119,7 +1071,7 @@
       "batch": "Casos de Sucesso 2"
     },
     {
-      "slug": "parceria-construtoras-imobiliarias-litoral-2026",
+      "slug": "parceria-construtoras-imobiliarias-litoral-2026.html",
       "title": "Parceria com construtoras para imobiliárias no litoral 2026",
       "cluster": "Parcerias",
       "status": "published",
@@ -1127,7 +1079,7 @@
       "batch": "Parcerias 2"
     },
     {
-      "slug": "parceria-administradores-condominios-litoral-2026",
+      "slug": "parceria-administradores-condominios-litoral-2026.html",
       "title": "Parceria com administradores de condomínio para imobiliárias no litoral 2026",
       "cluster": "Parcerias",
       "status": "published",
@@ -1135,7 +1087,7 @@
       "batch": "Parcerias 2"
     },
     {
-      "slug": "parceria-empresas-turismo-imobiliarias-litoral-2026",
+      "slug": "parceria-empresas-turismo-imobiliarias-litoral-2026.html",
       "title": "Parceria com empresas de turismo para imobiliárias no litoral 2026",
       "cluster": "Parcerias",
       "status": "published",
@@ -1143,7 +1095,7 @@
       "batch": "Parcerias 2"
     },
     {
-      "slug": "programa-indicacao-imobiliarias-litoral-2026",
+      "slug": "programa-indicacao-imobiliarias-litoral-2026.html",
       "title": "Programa de indicação para imobiliárias no litoral 2026",
       "cluster": "Parcerias",
       "status": "published",
@@ -1151,7 +1103,7 @@
       "batch": "Parcerias 2"
     },
     {
-      "slug": "medir-resultados-parcerias-imobiliarias-litoral-2026-v2",
+      "slug": "medir-resultados-parcerias-imobiliarias-litoral-2026-v2.html",
       "title": "Como medir resultados de parcerias para imobiliárias no litoral 2026",
       "cluster": "Parcerias",
       "status": "published",
@@ -1159,7 +1111,7 @@
       "batch": "Parcerias 2"
     },
     {
-      "slug": "documentos-compra-imovel-litoral-sp-checklist-2026",
+      "slug": "documentos-compra-imovel-litoral-sp-checklist-2026.html",
       "title": "Documentos para compra de imóvel no litoral de SP: checklist 2026",
       "cluster": "Jurídico",
       "status": "published",
@@ -1167,7 +1119,7 @@
       "batch": "Jurídico 2"
     },
     {
-      "slug": "certidao-onus-matricula-imovel-litoral-2026",
+      "slug": "certidao-onus-matricula-imovel-litoral-2026.html",
       "title": "Como ler certidão de ônus e matrícula do imóvel no litoral 2026",
       "cluster": "Jurídico",
       "status": "published",
@@ -1175,7 +1127,7 @@
       "batch": "Jurídico 2"
     },
     {
-      "slug": "usucapiao-imoveis-litoral-sp-2026",
+      "slug": "usucapiao-imoveis-litoral-sp-2026.html",
       "title": "Usucapião de imóveis no litoral de SP: quando acontece e como evitar 2026",
       "cluster": "Jurídico",
       "status": "published",
@@ -1183,7 +1135,7 @@
       "batch": "Jurídico 2"
     },
     {
-      "slug": "itbi-custos-escritura-litoral-sp-2026",
+      "slug": "itbi-custos-escritura-litoral-sp-2026.html",
       "title": "ITBI e custos de escritura no litoral de SP: guia prático 2026",
       "cluster": "Jurídico",
       "status": "published",
@@ -1191,7 +1143,7 @@
       "batch": "Jurídico 2"
     },
     {
-      "slug": "compra-imovel-na-planta-litoral-sp-2026",
+      "slug": "compra-imovel-na-planta-litoral-sp-2026.html",
       "title": "Compra de imóvel na planta no litoral de SP: riscos e cuidados 2026",
       "cluster": "Jurídico",
       "status": "published",
@@ -1199,7 +1151,7 @@
       "batch": "Jurídico 2"
     },
     {
-      "slug": "energia-solar-imoveis-litoral-guia-2026",
+      "slug": "energia-solar-imoveis-litoral-guia-2026.html",
       "title": "Energia solar em imóveis no litoral: guia prático 2026",
       "cluster": "Sustentabilidade",
       "status": "published",
@@ -1207,7 +1159,7 @@
       "batch": "Sustentabilidade 2"
     },
     {
-      "slug": "eficiencia-energetica-imoveis-litoral-reduzir-custo-2026-v2",
+      "slug": "eficiencia-energetica-imoveis-litoral-reduzir-custo-2026-v2.html",
       "title": "Eficiência energética em imóveis no litoral: reduzir custos 2026",
       "cluster": "Sustentabilidade",
       "status": "published",
@@ -1215,7 +1167,7 @@
       "batch": "Sustentabilidade 2"
     },
     {
-      "slug": "economia-agua-imoveis-litoral-pratico-2026-v2",
+      "slug": "economia-agua-imoveis-litoral-pratico-2026-v2.html",
       "title": "Economia de água em imóveis no litoral: práticas simples 2026",
       "cluster": "Sustentabilidade",
       "status": "published",
@@ -1223,7 +1175,7 @@
       "batch": "Sustentabilidade 2"
     },
     {
-      "slug": "pegada-ecologica-imoveis-litoral-medir-reduzir-2026-v2",
+      "slug": "pegada-ecologica-imoveis-litoral-medir-reduzir-2026-v2.html",
       "title": "Pegada ecológica de imóveis no litoral: medir e reduzir 2026",
       "cluster": "Sustentabilidade",
       "status": "published",
@@ -1231,7 +1183,7 @@
       "batch": "Sustentabilidade 2"
     },
     {
-      "slug": "construcao-sustentavel-litoral-paulista-2026",
+      "slug": "construcao-sustentavel-litoral-paulista-2026.html",
       "title": "Construção sustentável no litoral: guia prático 2026",
       "cluster": "Sustentabilidade",
       "status": "published",
@@ -1239,7 +1191,7 @@
       "batch": "Sustentabilidade 2"
     },
     {
-      "slug": "gestao-indicadores-imobiliarios-litoral-dashboard-2026",
+      "slug": "gestao-indicadores-imobiliarios-litoral-dashboard-2026.html",
       "title": "Gestão de indicadores imobiliários no litoral: dashboard prático 2026",
       "cluster": "Gestão",
       "status": "published",
@@ -1247,7 +1199,7 @@
       "batch": "Gestão 2"
     },
     {
-      "slug": "gestao-crise-imobiliaria-litoral-conflitos-resolucao-2026",
+      "slug": "gestao-crise-imobiliaria-litoral-conflitos-resolucao-2026.html",
       "title": "Gestão de crise em imobiliárias no litoral: conflitos e resolução 2026",
       "cluster": "Gestão",
       "status": "published",
@@ -1255,7 +1207,7 @@
       "batch": "Gestão 2"
     },
     {
-      "slug": "gestao-inovacao-imobiliaria-litoral-tecnologia-2026",
+      "slug": "gestao-inovacao-imobiliaria-litoral-tecnologia-2026.html",
       "title": "Gestão da inovação em imobiliárias no litoral: tecnologia aplicada 2026",
       "cluster": "Gestão",
       "status": "published",
@@ -1263,7 +1215,7 @@
       "batch": "Gestão 2"
     },
     {
-      "slug": "gestao-mudanca-imobiliaria-litoral-transformacao-digital-2026",
+      "slug": "gestao-mudanca-imobiliaria-litoral-transformacao-digital-2026.html",
       "title": "Gestão da mudança em imobiliárias no litoral: transformação digital 2026",
       "cluster": "Gestão",
       "status": "published",
@@ -1271,7 +1223,7 @@
       "batch": "Gestão 2"
     },
     {
-      "slug": "gestao-risco-imobiliaria-litoral-compliance-2026",
+      "slug": "gestao-risco-imobiliaria-litoral-compliance-2026.html",
       "title": "Gestão de risco e compliance para imobiliárias no litoral 2026",
       "cluster": "Gestão",
       "status": "published",
@@ -1279,7 +1231,7 @@
       "batch": "Gestão 2"
     },
     {
-      "slug": "funil-anuncios-lancamentos-litoral-paulista-2026",
+      "slug": "funil-anuncios-lancamentos-litoral-paulista-2026.html",
       "title": "Funil de anúncios para lançamentos no litoral paulista 2026",
       "cluster": "Marketing Digital",
       "status": "published",
@@ -1287,7 +1239,7 @@
       "batch": "Marketing Digital 3"
     },
     {
-      "slug": "google-ads-temporada-fora-alta-litoral-paulista-2026",
+      "slug": "google-ads-temporada-fora-alta-litoral-paulista-2026.html",
       "title": "Google Ads para temporada fora da alta temporada no litoral paulista 2026",
       "cluster": "Marketing Digital",
       "status": "published",
@@ -1295,7 +1247,7 @@
       "batch": "Marketing Digital 3"
     },
     {
-      "slug": "ab-testing-anuncios-imobiliarios-locais-litoral-2026",
+      "slug": "ab-testing-anuncios-imobiliarios-locais-litoral-2026.html",
       "title": "A/B testing em anúncios imobiliários locais no litoral 2026",
       "cluster": "Marketing Digital",
       "status": "published",
@@ -1303,7 +1255,7 @@
       "batch": "Marketing Digital 3"
     },
     {
-      "slug": "automacao-orcamento-anuncios-imobiliarias-pequenas-litoral-2026",
+      "slug": "automacao-orcamento-anuncios-imobiliarias-pequenas-litoral-2026.html",
       "title": "Automação de orçamento em anúncios para imobiliárias pequenas no litoral 2026",
       "cluster": "Marketing Digital",
       "status": "published",
@@ -1311,7 +1263,7 @@
       "batch": "Marketing Digital 3"
     },
     {
-      "slug": "mensuracao-attribution-marketing-imobiliario-local-litoral-2026",
+      "slug": "mensuracao-attribution-marketing-imobiliario-local-litoral-2026.html",
       "title": "Mensuração e attribution em marketing imobiliário local no litoral 2026",
       "cluster": "Marketing Digital",
       "status": "published",
@@ -1319,7 +1271,7 @@
       "batch": "Marketing Digital 3"
     },
     {
-      "slug": "schema-realestatelisting-imoveis-litoral-2026",
+      "slug": "schema-realestatelisting-imoveis-litoral-2026.html",
       "title": "Schema.org RealEstateListing para imóveis no litoral 2026",
       "cluster": "SEO Local",
       "status": "published",
@@ -1327,7 +1279,7 @@
       "batch": "SEO Local 3"
     },
     {
-      "slug": "core-web-vitals-imobiliarias-litoral-seo-2026",
+      "slug": "core-web-vitals-imobiliarias-litoral-seo-2026.html",
       "title": "Core Web Vitals para sites de imobiliárias no litoral 2026",
       "cluster": "SEO Local",
       "status": "published",
@@ -1335,7 +1287,7 @@
       "batch": "SEO Local 3"
     },
     {
-      "slug": "seo-local-ilhas-areas-remotas-litoral-2026",
+      "slug": "seo-local-ilhas-areas-remotas-litoral-2026.html",
       "title": "SEO local para imobiliárias em ilhas e áreas remotas do litoral 2026",
       "cluster": "SEO Local",
       "status": "published",
@@ -1343,7 +1295,7 @@
       "batch": "SEO Local 3"
     },
     {
-      "slug": "conteudo-duplicado-imoveis-seo-local-litoral-2026",
+      "slug": "conteudo-duplicado-imoveis-seo-local-litoral-2026.html",
       "title": "Conteúdo duplicado de imóveis no site: como lidar no SEO local 2026",
       "cluster": "SEO Local",
       "status": "published",
@@ -1351,7 +1303,7 @@
       "batch": "SEO Local 3"
     },
     {
-      "slug": "seo-construtoras-incorporadoras-litoral-paulista-2026",
+      "slug": "seo-construtoras-incorporadoras-litoral-paulista-2026.html",
       "title": "SEO para construtoras e incorporadoras no litoral paulista 2026",
       "cluster": "SEO Local",
       "status": "published",
