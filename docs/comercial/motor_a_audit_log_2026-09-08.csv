@@ -1,0 +1,2 @@
+run_date,estoque_path,stock_count,queue_count,intersection_count,intersection_ids,front_a_ok,source,d2_status
+2026-09-08,C:\Users\Carolina\praia-digital\docs\comercial\motor_a_novo_estoque_2026-08-16.csv,10,10,5,12;16;18;26;30,assets/servico-video-ia-imoveis-litoral.html,motor_a_novo_estoque_2026-08-16,NÃO EXECUTADO — BLOQUEADO POR POLÍTICA/AGENDA
