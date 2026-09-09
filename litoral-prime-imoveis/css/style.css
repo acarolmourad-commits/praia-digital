@@ -156,22 +156,65 @@ nav {
   text-align:center;
 }
 .servicos-grid {
-  grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
 }
 .servico-card {
   background:#fff;
   border:1px solid #e5e7eb;
   border-radius:16px;
-  padding:16px;
+  padding:18px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
 }
 .servico-card h3 {
-  font-size:12px;ize:16px;
-  margin-bottom:8px;
+  font-size:16px;
+  margin-bottom:0;
   color:#0a58ca;
 }
-.servico-card p {
-  font-size:12px;ize:13px;
-  color:#334155;
+.servico-card .price {
+  font-weight:900;
+  color:#0a58ca;
+  margin:0;
+  font-size:18px;
+}
+.servico-card .meta {
+  color:#475569;
+  margin:0;
+  font-size:13px;
+}
+.servico-card ul {
+  margin:0;
+  padding-left:18px;
+}
+.servico-card li + li {
+  margin-top:4px;
+}
+.servico-card .actions {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:auto;
+  padding-top:10px;
+}
+.servico-card .btn-whatsapp,
+.servico-card .btn-secondary {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:44px;
+  border-radius:12px;
+  font-weight:800;
+  text-decoration:none;
+  padding:10px 14px;
+}
+.servico-card .btn-whatsapp {
+  background:#25d366;
+  color:#fff;
+}
+.servico-card .btn-secondary {
+  background:#0b1220;
+  color:#fff;
 }
 .contact-form {
   display:flex;
