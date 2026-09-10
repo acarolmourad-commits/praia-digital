@@ -86,7 +86,7 @@
         <p class="price">R$ 997</p>
         <p class="note">Setup completo do agente Hermes no seu ambiente, conexões, skills essenciais e validação operacional.</p>
         <div class="actions">
-          <a class="btn" href="https://checkout.stripe.com/f/pay/cs_live_a1bMQtaszAjlCk0VHyeUbiwqM4cFRB6vccfuqdaH3THydX7V0iomw9aYTe" target="_blank" rel="noopener nofollow sponsored">Pagar no Stripe</a>
+          <a class="btn" href="https://buy.stripe.com/aFa28s9Ry71qgEXcCxcMM00" target="_blank" rel="noopener nofollow sponsored">Pagar no Stripe</a>
           <a class="btn btn-secondary" href="https://wa.me/5511954346288?text=Olá! Quero contratar Instalação Hermes." target="_blank" rel="noopener">WhatsApp</a>
         </div>
       </article>
@@ -96,7 +96,7 @@
         <p class="price">R$ 1.497</p>
         <p class="note">Fluxos, prompts, automações e integrações sob medida para SEO, outbound e operações do dia a dia.</p>
         <div class="actions">
-          <a class="btn" href="https://checkout.stripe.com/c/pay/cs_live_a1zzVeaFSirq9SriDUWenhwzmRenciK5CAtlmXtDYMnngRX9o5R2kxh1bW" target="_blank" rel="noopener nofollow sponsored">Pagar no Stripe</a>
+          <a class="btn" href="https://buy.stripe.com/dRm9AU4xe0D29cv1XTcMM01" target="_blank" rel="noopener nofollow sponsored">Pagar no Stripe</a>
           <a class="btn btn-secondary" href="https://wa.me/5511954346288?text=Olá! Quero contratar Configuração Hermes." target="_blank" rel="noopener">WhatsApp</a>
         </div>
       </article>
@@ -106,7 +106,7 @@
         <p class="price">R$ 997/mês</p>
         <p class="note">Ajustes, atualizações, monitoramento e suporte técnico contínuo para manter operação saudável.</p>
         <div class="actions">
-          <a class="btn" href="https://checkout.stripe.com/c/pay/cs_live_a1tFaedP9l1FM7qZYKbKMJXBVrBAkcmTeHAmHhR1VdA87oOwLExKqDXeuj" target="_blank" rel="noopener nofollow sponsored">Pagar no Stripe</a>
+          <a class="btn" href="https://buy.stripe.com/5kQ00ke7OdpO9cvaupcMM02" target="_blank" rel="noopener nofollow sponsored">Pagar no Stripe</a>
           <a class="btn btn-secondary" href="https://wa.me/5511954346288?text=Olá! Quero contratar Manutenção Hermes." target="_blank" rel="noopener">WhatsApp</a>
         </div>
       </article>
@@ -116,7 +116,7 @@
         <p class="price">R$ 2.497</p>
         <p class="note">Instalação + configuração + 1 mês de manutenção. Entrega pronta para operar em até 48h.</p>
         <div class="actions">
-          <a class="btn" href="https://checkout.stripe.com/f/pay/cs_live_a13yVvvzk5vmAl6eBHk0alyvlcmGKqXyJCqbFu5wVfeYq79tBRncgRgQgm" target="_blank" rel="noopener nofollow sponsored">Pagar no Stripe</a>
+          <a class="btn" href="https://buy.stripe.com/3cIbJ24xe85ucoH8mhcMM03" target="_blank" rel="noopener nofollow sponsored">Pagar no Stripe</a>
           <a class="btn btn-secondary" href="https://wa.me/5511954346288?text=Olá! Quero contratar o Pacote Hermes." target="_blank" rel="noopener">WhatsApp</a>
         </div>
       </article>
@@ -128,5 +128,16 @@
     <p><a href="sitemap.xml">Sitemap</a> · <a href="sitemap.html">Mapa do site</a></p>
   </footer>
   <script src="https://praia.digital/js/shared.js"></script>
+  <script>
+    (function(){
+      const params = new URLSearchParams(window.location.search);
+      const status = params.get('status');
+      const banner = document.createElement('div');
+      banner.style.cssText = 'display:none;position:fixed;inset:0;background:rgba(0,0,0,0.45);align-items:center;justify-content:center;z-index:9999;';
+      banner.innerHTML = '<div style="background:#fff;max-width:520px;width:92%;padding:1.25rem;border-radius:16px;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,0.15);"><h2 style="margin:0 0 .5rem;color:#023047">Pagamento confirmado</h2><p style="margin:0 0 1rem;color:#334155">Em até 24h vamos dar entrada no seu serviço Hermes.</p><a href="/servicos-hermes.html" style="background:#0077B6;color:#fff;padding:.6rem 1rem;border-radius:999px;text-decoration:none;font-weight:700">Voltar para serviços</a></div>';
+      document.body.appendChild(banner);
+      if (status === 'success') { banner.style.display = 'flex'; }
+    })();
+  </script>
 </body>
 </html>
