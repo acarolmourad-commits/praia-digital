@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — Praia Digital Academy</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://praia.digital/education/checkout.html">
+  <link rel="preconnect" href="https://praia.digital">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0b1220; color: #e8ecf1; padding: 2rem; }
+    .wrap { max-width: 900px; margin: 0 auto; }
+    .card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 18px 20px; margin-bottom: 1rem; }
+    .cta { display: inline-block; background: #00B4D8; color: #fff; padding: 0.7rem 1.2rem; border-radius: 999px; font-weight: 700; text-decoration: none; margin-right: 10px; }
+    .price { font-size: 1.6rem; font-weight: 800; color: #90E0EF; }
+    .secure { color: #4ade80; font-size: 0.85rem; margin-top: 0.5rem; }
+    .guarantee { background: #0b2d4d; border-left: 4px solid #00B4D8; padding: 1rem; border-radius: 12px; margin-top: 1rem; }
+    .faq { margin-top: 1.5rem; }
+    .faq-item { border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.75rem 0; }
+    .faq-item strong { color: #00B4D8; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <main id="main">
+      <h1>Finalizar compra</h1>
+      <p class="lead">Preencha seus dados para acessar o curso escolhido.</p>
+
+      <div class="card">
+        <p><strong>Curso:</strong> <span id="course-name">—</span></p>
+        <p class="price" id="course-price">R$ 0</p>
+        <p style="color:#94a3b8;font-size:.9rem">Acesso imediato e 100% online</p>
+        <a class="cta" id="checkout-hotmart" href="#" target="_blank" rel="noopener">Comprar agora</a>
+        <a class="cta" id="checkout-kiwify" href="#" target="_blank" rel="noopener" style="background:#fff;color:#0b1220">Comprar no Kiwify</a>
+        <p class="secure">🔒 Checkout seguro • Pagamento processado automaticamente</p>
+
+        <div class="guarantee">
+          <strong>✅ Garantia de 7 dias</strong>
+          <p style="color:#94a3b8;font-size:.9rem;margin-top:.25rem">Se não gostar, devolvemos 100% do valor. Sem perguntas.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <h2>Perguntas frequentes</h2>
+        <div class="faq-item">
+          <strong>Q: Como acesso o curso após a compra?</strong>
+          <p style="color:#94a3b8;font-size:.9rem;margin-top:.25rem">A: Após o pagamento confirmado, você recebe e-mail com link de acesso à área do aluno. Acesso é imediato.</p>
+        </div>
+        <div class="faq-item">
+          <strong>Q: Emite certificado?</strong>
+          <p style="color:#94a3b8;font-size:.9rem;margin-top:.25rem">A: Sim, emissão automática após conclusão.</p>
+        </div>
+        <div class="faq-item">
+          <strong>Q: Quais formas de pagamento?</strong>
+          <p style="color:#94a3b8;font-size:.9rem;margin-top:.25rem">A: PIX, cartão de crédito e boleto. Parcelamento disponível.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    (function(){
+      function getQueryParam(name) {
+        const url = new URL(window.location.href);
+        return url.searchParams.get(name) || '';
+      }
+      const slug = getQueryParam('slug');
+      const title = getQueryParam('title') || 'Curso';
+      const price = getQueryParam('price') || 'R$ 0';
+      const hotmartLink = getQueryParam('hotmart') || '#';
+      const kiwifyLink = getQueryParam('kiwify') || '#';
+
+      const nameEl = document.getElementById('course-name');
+      const priceEl = document.getElementById('course-price');
+      const hotmartBtn = document.getElementById('checkout-hotmart');
+      const kiwifyBtn = document.getElementById('checkout-kiwify');
+
+      if (nameEl) nameEl.textContent = decodeURIComponent(title);
+      if (priceEl) priceEl.textContent = price;
+      if (hotmartBtn) hotmartBtn.href = hotmartLink;
+      if (kiwifyBtn) kiwifyBtn.href = kiwifyLink;
+
+      // GA4 InitiateCheckout
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      if (typeof gtag === 'function') {
+        gtag('event', 'InitiateCheckout', {
+          event_category: 'Academy',
+          event_label: decodeURIComponent(title),
+          value: parseFloat(price.replace(/[^0-9.,]/g, '').replace(',', '.')) || 0,
+          currency: 'BRL'
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
