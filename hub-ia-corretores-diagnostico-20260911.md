@@ -16,13 +16,13 @@ Data: 2026-09-11
 - Nenhum backup local encontrado desses arquivos específicos
 
 ## Ação corretiva
-- Criados subdiretórios faltantes no repo local:
+- Criados subdiretórios faltantes no repo local via terminal (`mkdir -p` + `cat << 'EOF' >`):
   - `hub/ia-corretores-litoral/exclusivos/relatorio-mercado-2026.html`
   - `hub/ia-corretores-litoral/bairros/index.html`
   - `hub/ia-corretores-litoral/bairros/cases.html`
   - `hub/ia-corretores-litoral/exclusivos/index.html`
 - Páginas fallback criadas no padrão visual escuro Praia.digital com CTA para hub completo
-- Commit: `4f6ad8580` — fix: update exclusivos index.html
+- Commit: `15b424441` — fix: restore 404 hub ia-corretores-litoral pages
 - Push: https://github.com/acarolmourad-commits/praia-digital.git → main
 
 ## Status atual
