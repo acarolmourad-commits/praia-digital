@@ -8,15 +8,15 @@
 <style>
 * { margin:0; padding:0; box-sizing:border-box }
 body { font-family:system-ui,sans-serif; background:#0f172a; color:#e2e8f0; display:flex; align-items:center; justify-content:center; min-height:100vh; padding:2rem }
-.card { max-width:600px; background:#1e293b; border-radius:12px; padding:2rem; border:1px solid #334155 }
+.card { max-width:600px; width:100%; background:#1e293b; border-radius:12px; padding:2rem; border:1px solid #334155 }
 h1 { font-size:1.5rem; margin-bottom:1rem; color:#38bdf8 }
 p { margin-bottom:.75rem; line-height:1.6; color:#cbd5e1 }
 a { color:#38bdf8; text-decoration:none }
 .cta { display:inline-block; margin-top:1rem; padding:.75rem 1.5rem; background:#0ea5e9; color:#fff; border-radius:8px; font-weight:600 }
 
 /* Table responsive */
-.table-responsive { width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; display:block }
-.table-responsive table { width:100%; min-width:600px; border-collapse:collapse }
+.table-responsive { display:block; width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch }
+.table-responsive table { width:auto !important; min-width:600px !important; margin:0 auto; border-collapse:collapse }
 .table-responsive th, .table-responsive td { padding:12px 16px; white-space:nowrap; border-bottom:1px solid #334155; color:#e2e8f0; font-size:.9rem }
 .table-responsive th { background:#0f172a; color:#38bdf8; font-weight:600; text-align:left }
 .table-responsive a { color:#38bdf8; text-decoration:underline; display:inline-block }
