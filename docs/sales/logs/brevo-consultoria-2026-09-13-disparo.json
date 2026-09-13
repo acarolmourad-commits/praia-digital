@@ -1,0 +1,9 @@
+{
+  "tipo": "consultoria",
+  "data": "2026-09-13",
+  "total": 8,
+  "result": {
+    "status": "skipped",
+    "reason": "BREVO_API_KEY not set"
+  }
+}
