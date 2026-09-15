@@ -34,10 +34,39 @@
     });
   }
 
+
+  // Enhance an existing static header: add a working mobile toggle if missing
+  function enhanceStaticNav() {
+    var header = document.querySelector('header.pd-nav');
+    if (!header || header.querySelector('.pd-nav-toggle')) return;
+    var menu = header.querySelector('.pd-nav-menu');
+    if (!menu) return;
+    if (!menu.id) menu.id = 'pd-main-menu';
+    var btn = document.createElement('button');
+    btn.className = 'pd-nav-toggle';
+    btn.type = 'button';
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-controls', menu.id);
+    btn.setAttribute('aria-label', 'Abrir menu');
+    btn.textContent = '☰ Menu';
+    btn.addEventListener('click', function() {
+      var open = menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(open));
+      btn.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+    });
+    header.insertBefore(btn, menu);
+    // safety CSS so the mobile menu hides until toggled
+    var st = document.createElement('style');
+    st.textContent = '@media (max-width:980px){header.pd-nav .pd-nav-toggle{display:inline-flex}header.pd-nav .pd-nav-menu{display:none;width:100%}header.pd-nav .pd-nav-menu.open{display:flex;flex-direction:column;align-items:stretch}}';
+    document.head.appendChild(st);
+  }
   function boot() {
     var navMarker = document.querySelector('meta[name="pd-shared-nav"]');
+    if (document.querySelector('header.pd-nav') || document.querySelector('nav.pd-nav')) navMarker = null;
     var footerMarker = document.querySelector('meta[name="pd-shared-footer"]');
+    if (document.querySelector('footer')) footerMarker = null;
     window.__pdShared.push(['boot', !!(navMarker || footerMarker), !!(navMarker), !!(footerMarker)]);
+    enhanceStaticNav();
     if (navMarker) inject(navMarker, NAV_URL);
     if (footerMarker) inject(footerMarker, FOOTER_URL);
     setTimeout(function() {

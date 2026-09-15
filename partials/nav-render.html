@@ -1,53 +1,34 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Partials</title>
-</head>
-<body>
 <nav aria-label="Navegação principal" class="pd-nav">
   <a href="https://praia.digital/" class="pd-nav-logo">Praia Digital</a>
-  <button class="pd-nav-toggle" aria-expanded="false" aria-controls="pd-nav-menu" onclick="this.nextElementSibling.classList.toggle('open')">
-    <span></span><span></span><span></span> Menu
+  <button class="pd-nav-toggle" aria-expanded="false" aria-controls="pd-nav-menu"
+    onclick="var m=document.getElementById('pd-nav-menu'),o=m.classList.toggle('open');this.setAttribute('aria-expanded',o)">
+    Menu
   </button>
   <div id="pd-nav-menu" class="pd-nav-menu">
     <div class="pd-nav-group">
       <span class="pd-nav-label">Quero Investir</span>
-      <a href="#rental">Simulador de ROI</a>
-      <a href="exclusivos/relatorio-mercado-2026.html">Relatórios de Valorização</a>
-      <a href="cases.html">Oportunidades</a>
+      <a href="https://praia.digital/#rental">Simulador de ROI</a>
+      <a href="https://praia.digital/exclusivos/relatorio-mercado-2026.html">Relatórios</a>
+      <a href="https://praia.digital/cases.html">Oportunidades</a>
     </div>
     <div class="pd-nav-group">
       <span class="pd-nav-label">Quero Comprar</span>
-      <a href="#buscar">Busca de Imóveis</a>
-      <a href="bairros/index.html">Guia de Bairros</a>
-      <a href="cases.html">Cases e Experiência</a>
+      <a href="https://praia.digital/#buscar">Busca de Imóveis</a>
+      <a href="https://praia.digital/bairros/index.html">Guia de Bairros</a>
+      <a href="https://praia.digital/cases.html">Cases</a>
     </div>
     <div class="pd-nav-group">
-      <span class="pd-nav-label">Sou Corretor / Imobiliária</span>
-      <a href="/corretores/cadastrar-imovel.html">Cadastrar Imóveis</a>
-      <a href="/afiliados/index.html">Afiliados</a>
-      <a href="education/index.html">Academy / Treinamentos</a>
+      <span class="pd-nav-label">Corretores</span>
+      <a href="https://praia.digital/servicos.html">Serviços com IA</a>
+      <a href="https://praia.digital/planos-assinatura.html">Planos</a>
+      <a href="https://praia.digital/education/index.html">Academy</a>
     </div>
     <div class="pd-nav-group">
-      <span class="pd-nav-label">Ferramentas IA</span>
-      <a href="/assets/servico-avaliacao-preco-imoveis-litoral.html">Avaliador de Imóveis</a>
-      <a href="/assets/servico-geracao-descricoes-anuncios-ia.html">Gerador de Descrições</a>
-    </div>
-    <div class="pd-nav-group">
-      <span class="pd-nav-label">Captação</span>
-      <a href="/captura-leads-litoral-2026.html">Quero avaliação do meu bairro</a>
-      <a href="/calculadora-rendimento-temporada-2026.html">Calculadora de rendimento</a>
-    </div>
-    <div class="pd-nav-group">
-      <span class="pd-nav-label">Inteligência & Estudos</span>
-      <a href="/blog/index.html">Blog & Estudos</a>
-      <a href="/exclusivos/relatorio-mercado-2026.html">Relatórios Exclusivos</a>
-      <a href="/consorcio.html">Consórcio sem Juros</a>
+      <span class="pd-nav-label">Estudos</span>
+      <a href="https://praia.digital/blog/index.html">Blog</a>
+      <a href="https://praia.digital/consorcio.html">Consórcio</a>
+      <a href="https://praia.digital/calculadora-rendimento-temporada-2026.html">Calculadora</a>
     </div>
     <a href="https://wa.me/5511954346288" class="nav-highlight-sale pd-nav-cta">Fale conosco</a>
   </div>
 </nav>
-</body>
-</html>
