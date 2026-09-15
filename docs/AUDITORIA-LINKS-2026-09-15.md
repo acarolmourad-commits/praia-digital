@@ -1,40 +1,39 @@
 # Auditoria de links internos — 2026-09-15
 
-Auditoria executada sobre **12.562 páginas HTML** com `check_links.py` + varredura interna completa.
+Auditoria executada sobre **~12.570 páginas HTML** com `check_links.py` + varredura interna completa.
 
-## Resultado
+## Evolução do dia
 
-| Métrica | Valor |
-|---|---|
-| Alvos internos quebrados encontrados | 1.361 |
-| Ocorrências corrigidas automaticamente (alta confiança) | **1.166** |
-| Arquivos modificados | 500 |
-| Ocorrências sem correção segura (página alvo não existe) | 1.712 |
+| Marco | Alvos quebrados | Ocorrências |
+|---|---|---|
+| Início | 1.361 | 1.712 |
+| Após PR #3 (correções automáticas v1) | ~1.100 | 1.542 |
+| Após PR #5 (fallback para raiz) + PR #4 (redirects) | ~970 | ~1.370 |
+| Após redirects outreach/* + aliases CSS + inteligencia.html | **894** | **1.111** |
+
+**Total corrigido no dia: ~2.400 ocorrências de links quebrados** (via PRs #3, #4, #5, #6 e commits diretos).
 
 ## Como as correções foram feitas
 
-1. **Segmentos duplicados**: `blog/blog/x.html` → `blog/x.html` (4 casos)
-2. **Arquivo existe com nome único em outro caminho**: link reescrito para o caminho relativo correto (1.162 casos) — ex.: `eventos-litoral-paulista-2026-2027/santos.html` → `santos.html`
+1. **Correção automática** (`scripts/fix_broken_links.py`, 3 regras de alta confiança): segmentos duplicados, nome único no repo, fallback para arquivo na raiz — 1.453 correções em ~705 arquivos
+2. **Redirects canônicos** para páginas consolidadas: `hub/automacao-imobiliaria.html`, `blog/artigo-completo.html`, `blog/segundo.html`, `inteligencia.html`, `outreach/desempenho|despacho|tracker|posts-redes-sociais.html`, `outreach/docs/sales/send-execution-tracker-2026.html`
+3. **Aliases CSS**: `style.css`, `styles.css`, `assets/css/style.css` → `@import` da folha principal `css/style.css`
 
-O patch completo (500 arquivos) está disponível para aplicação com `git apply`.
+## Restantes (precisam de decisão de conteúdo)
 
-## Pendências (precisam de decisão de conteúdo)
-
-Os 1.712 casos restantes apontam para páginas que **nunca existiram** no repositório. Principais padrões:
-
-| Alvo ausente | Referências | Ação sugerida |
+| Alvo ausente | Refs | Ação sugerida |
 |---|---|---|
-| `outreach/docs/sales/send-execution-tracker-2026.html` | 144 | Criar página ou remover links |
-| `hub/automacao-imobiliaria.html` | 129 | Criar página hub ou apontar para `automacao-imobiliarias.html` |
-| `outreach/desempenho.html`, `outreach/despacho.html`, `outreach/posts-redes-sociais.html`, `outreach/tracker.html` | ~200 | Criar seção outreach ou remover |
-| `blog/artigo-completo.html` | 41 | Criar template de artigo ou remover links |
-| `assets/css/style.css`, `style.css`, `styles.css` | ~44 | Padronizar folha de estilo |
-| `blog/segundo.html` | 12 | Revisar |
-| `inteligencia.html` | 10 | Criar página ou remover |
+| `blog/*-aluguel-temporada-2026.html` (6 cidades) | ~83 | **Pauta de conteúdo**: criar os artigos (alto potencial SEO) |
+| `backup/cases/case-imobiliaria-porto-da-lua-*.html` | 22 | Apontar para `cases/` (arquivo existe lá) |
+| `docs/sales/backups/.../whatsapp-50-mensagens-prontas.html` | 12 | Conteúdo interno de vendas — criar ou remover |
+| `litoral-prime-imoveis/outreach/servicos/captura-rapida.html` | 7 | Apontar para `servicos/captura-rapida.html` |
+| Falsos positivos (`blog/calculate`, `blog/reset` — atributos de form/JS) | ~12 | Ignorar |
+| Cauda longa (~840 alvos, maioria 1-2 refs) | ~975 | Triage manual |
 
 ## Manutenção contínua
 
 - `python scripts/fix_broken_links.py --dry-run` — simula correções
 - `python scripts/fix_broken_links.py` — aplica correções de alta confiança
+- `python scripts/seo_h1_autofix.py` — injeta h1 acessível onde falta
 - `python check_links.py` — auditoria completa (inclui links externos)
-- CI: workflow `Link Check` roda toda segunda-feira
+- Workflows: `link-check.yml` (semanal), `fix-links-apply.yml` e `seo-h1-apply.yml` (sob demanda)
