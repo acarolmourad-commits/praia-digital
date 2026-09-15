@@ -1,0 +1,30 @@
+name: SEO H1 Autofix (apply)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  seo-h1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Injetar h1 acessivel onde falta
+        run: python scripts/seo_h1_autofix.py
+      - name: Commitar em branch de correcao
+        run: |
+          if [ -z "$(git status --porcelain -- '*.html')" ]; then
+            echo 'Nenhuma correcao pendente.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git checkout -b seo/h1-autofix
+          git add -- '*.html' ':!seo_h1_report.json'
+          git commit -m 'feat(seo): injeta h1 acessivel (sr-only) em paginas sem h1'
+          git push -f origin seo/h1-autofix
