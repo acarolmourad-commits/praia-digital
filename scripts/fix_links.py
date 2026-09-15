@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
-"""Auto-fix systematic broken internal links in static HTML pages.
+"""Auto-fix systematic broken internal links in static HTML pages. v2
 
-Fixes two classes of errors:
-1. Doubled path segments (e.g. blog/blog/post.html -> blog/post.html,
-   docs/sales/docs/sales/x.html -> docs/sales/x.html)
-2. Links to files that moved (resolved by unique basename match, or
-   by progressively stripping leading path segments).
+Fix classes:
+1. Doubled path segments (blog/blog/x.html -> blog/x.html)
+2. Moved files (unique basename match / strip leading segments)
+3. Missing page but directory with index.html exists
+   (hub/automacao-imobiliaria.html -> hub/automacao-imobiliaria/index.html)
+4. Missing page whose parent dir has index.html (page -> dir/index.html)
 
 Only rewrites a link when the resolved target exists in the repo.
 Skips internal/asset-only dirs: backup, backups, outreach, docs, .audit.
+Empty href="" is left untouched (usually JS-filled placeholders).
 """
 import os
 import re
@@ -30,12 +32,23 @@ def main():
     for f in allfiles:
         byname.setdefault(os.path.basename(f), []).append(f)
 
+    def exists(t):
+        return t in allfiles
+
     def resolve(tgt, base):
         parts = tgt.split('/')
+        # 3a. page.html missing but page/index.html exists
+        if tgt.endswith('.html'):
+            cand = tgt[:-5].rstrip('/') + '/index.html'
+            if exists(cand):
+                return cand
+        # 3b. directory index
+        if exists(tgt.rstrip('/') + '/index.html'):
+            return tgt.rstrip('/') + '/index.html'
         # strip leading segments until something resolves
         for i in range(1, len(parts)):
             cand = '/'.join(parts[i:])
-            if cand in allfiles:
+            if exists(cand):
                 return cand
         # collapse doubled consecutive segments
         p2 = []
@@ -44,7 +57,7 @@ def main():
                 continue
             p2.append(p)
         cand = '/'.join(p2)
-        if cand in allfiles:
+        if exists(cand):
             return cand
         # unique basename anywhere, prefer same top-level dir, then root
         bn = os.path.basename(tgt)
@@ -59,6 +72,13 @@ def main():
             for c in cands:
                 if '/' not in c:
                     return c
+        # 4. parent directory index as last resort
+        parent = os.path.dirname(tgt)
+        while parent and parent != '.':
+            cand = parent.rstrip('/') + '/index.html'
+            if exists(cand):
+                return cand
+            parent = os.path.dirname(parent)
         return None
 
     fixed_files = 0
@@ -80,7 +100,7 @@ def main():
             if not path:
                 continue
             tgt = path.lstrip('/') if path.startswith('/') else os.path.normpath(os.path.join(base, path)).replace('\\', '/')
-            if tgt in allfiles or (tgt.rstrip('/') + '/index.html') in allfiles:
+            if exists(tgt) or exists(tgt.rstrip('/') + '/index.html'):
                 continue
             f = resolve(tgt, base)
             if not f:
