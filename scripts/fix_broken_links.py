@@ -5,6 +5,8 @@ Estrategia (somente correcoes de alta confianca):
 1. Colapsa segmentos duplicados no caminho (ex.: blog/blog/x.html -> blog/x.html)
 2. Se o nome do arquivo existe exatamente 1x no repo, reescreve o link
    para o caminho relativo correto.
+3. Se existe arquivo com o mesmo nome na RAIZ do repo, aponta para ele
+   (cobre links relativos de paginas aninhadas que assumem a raiz).
 
 Uso: python scripts/fix_broken_links.py [--dry-run]
 Gera fix_links_report.json com o resumo.
@@ -15,12 +17,15 @@ BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DRY = '--dry-run' in sys.argv
 
 all_files, basename_index = set(), {}
+root_files = set()
 for root, dirs, files in os.walk(BASE):
     if '.git' in root.split(os.sep): continue
     for f in files:
         rel = os.path.relpath(os.path.join(root, f), BASE)
         all_files.add(rel)
         basename_index.setdefault(f, []).append(rel)
+        if os.sep not in rel:
+            root_files.add(rel)
 
 href_pat = re.compile(r'((?:href|src|action)\s*=\s*)(["\'])(.*?)(\2)', re.I)
 
@@ -31,7 +36,7 @@ def collapse_dup(path):
         out.append(p)
     return '/'.join(out)
 
-stats = {'dup_segments': 0, 'unique_basename': 0, 'unresolved': 0}
+stats = {'dup_segments': 0, 'unique_basename': 0, 'root_fallback': 0, 'unresolved': 0}
 modified = []
 
 for rel in sorted(f for f in all_files if f.endswith('.html')):
@@ -65,6 +70,10 @@ for rel in sorted(f for f in all_files if f.endswith('.html')):
         if bn and len(matches) == 1:
             newlink = os.path.relpath(os.path.join(BASE, matches[0]), base)
             stats['unique_basename'] += 1; state['changed'] = True
+            return f'{prefix}{q}{newlink}{frag}{q}'
+        if bn in root_files and not path.startswith('/'):
+            newlink = os.path.relpath(os.path.join(BASE, bn), base)
+            stats['root_fallback'] += 1; state['changed'] = True
             return f'{prefix}{q}{newlink}{frag}{q}'
         stats['unresolved'] += 1
         return m.group(0)
