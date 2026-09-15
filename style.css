@@ -1,0 +1,2 @@
+/* Alias canonico: paginas que referenciam /style.css usam a folha principal. */
+@import url("css/style.css");
