@@ -25,7 +25,7 @@ Sou a Carol, CEO da Praia Digital. A [Nome da Imobiliária] em [Cidade] pode mel
 **Próximo passo:**
 Posso enviar uma proposta de 1 página com investimento e entrega?
 
-Contato: (11) 95434-6288 | comercial@praiadigital.com
+Contato: (11) 95434-6288 | comercial@praia.digital
 Site: https://praia.digital
 
 Abraço,

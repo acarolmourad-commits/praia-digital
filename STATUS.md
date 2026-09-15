@@ -1,4 +1,4 @@
-# Litoral Prime — Status Rápido
+# Praia Digital — Status Rápido
 - Site funcional em 8 cidades + páginas principais.
 - Sitemap gerado automaticamente.
 - Social meta injetada nas páginas de cidades.

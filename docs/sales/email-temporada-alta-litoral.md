@@ -12,4 +12,4 @@ Temporada aproxima e leads somem por tempo de resposta lento. Vamos usar IA leve
 Sem taxa alta: primeiro piloto de 30 dias.
 
 Site: https://praia.digital
-Contato: (11) 95434-6288 | comercial@praiadigital.com
+Contato: (11) 95434-6288 | comercial@praia.digital

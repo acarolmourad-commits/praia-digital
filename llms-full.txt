@@ -1,4 +1,4 @@
-# Litoral Prime Imóveis — LLM full site context
+# Praia Digital — LLM full site context
 
 URL base: https://praia.digital/
 Sitemap XML: https://praia.digital/sitemap.xml

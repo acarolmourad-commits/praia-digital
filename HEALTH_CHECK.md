@@ -1,4 +1,4 @@
-# Health Check — Praia Digital / Litoral Prime Imóveis
+# Health Check — Praia Digital / Praia Digital
 Data: 2026-08-03
 
 ## Resumo

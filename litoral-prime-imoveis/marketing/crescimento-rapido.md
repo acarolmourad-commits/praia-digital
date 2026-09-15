@@ -1,4 +1,4 @@
-# Kit de Crescimento Rápido — Litoral Prime Imóveis
+# Kit de Crescimento Rápido — Praia Digital
 ## Objetivo
 Aumentar atendimentos qualificados no WhatsApp e gerar mais visitas/imóveis fechados.
 

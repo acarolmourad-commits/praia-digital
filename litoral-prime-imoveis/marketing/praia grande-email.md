@@ -1,7 +1,7 @@
 # E-mail — Praia Grande
 
 ## Assuntos
-1. Oportunidades em Praia Grande — Litoral Prime Imóveis
+1. Oportunidades em Praia Grande — Praia Digital
 2. 3 imóveis selecionados para você em Praia Grande
 3. Acesso antecipado: imóveis em Praia Grande com condições especiais
 

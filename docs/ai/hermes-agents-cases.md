@@ -12,7 +12,7 @@
 - Receita incremental: R$ 128k em 90 dias
 
 > "Em 3 semanas já tínhamos mais visitas agendadas do que em 3 meses anteriores sem perder o toque humano."
-> — Marina Rezende, Gerente Comercial, Litoral Prime Imóveis
+> — Marina Rezende, Gerente Comercial, Praia Digital
 
 ---
 

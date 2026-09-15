@@ -1,4 +1,4 @@
-# Security Policy — Praia Digital / Litoral Prime Imóveis
+# Security Policy — Praia Digital / Praia Digital
 
 ## Contact
 - E-mail: comercial@praia.digital

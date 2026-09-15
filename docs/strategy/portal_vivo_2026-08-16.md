@@ -59,7 +59,7 @@ D2: SEM IMPACTO
 1. **Sem modelo “agora”**: não há páginas vivas por cidade
 2. **Sem documentação de fontes**: números sem fonte claramente citada
 3. **Sem frequência definida**: conteúdo periódico sem cronograma claro
-4. **Branding misto**: Praia Digital e Litoral Prime misturados
+4. **Branding misto**: Praia Digital e Praia Digital misturados
 5. **Sem automação**: atualizações manuais, sem pipeline
 6. **Sem integração**: eventos, dados e notícias não conversam
 

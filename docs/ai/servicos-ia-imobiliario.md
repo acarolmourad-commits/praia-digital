@@ -50,4 +50,4 @@
 
 **Stack atual:** site em produção, blog com 15 artigos indexados, ferramentas gratuitas de avaliação e ROI, chatbot de IA funcional.
 
-**Contato:** comercial@praiadigital.com | (11) 95434-6288
+**Contato:** comercial@praia.digital | (11) 95434-6288

@@ -1,4 +1,4 @@
-# 🚀 Deploy Executivo — Praia Digital / Litoral Prime Imóveis
+# 🚀 Deploy Executivo — Praia Digital / Praia Digital
 
 ## Status do deploy
 - **Branch:** `deploy/pages-safe`

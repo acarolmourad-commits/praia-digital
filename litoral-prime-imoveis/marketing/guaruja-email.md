@@ -1,7 +1,7 @@
 # E-mail — Guaruja
 
 ## Assuntos
-1. Oportunidades em Guaruja — Litoral Prime Imóveis
+1. Oportunidades em Guaruja — Praia Digital
 2. 3 imóveis selecionados para você em Guaruja
 3. Acesso antecipado: imóveis em Guaruja com condições especiais
 

@@ -1,4 +1,4 @@
-# Litoral Prime Imóveis — LLM-friendly site summary
+# Praia Digital — LLM-friendly site summary
 
 Site oficial: https://praia.digital/
 Sitemap: https://praia.digital/sitemap.xml

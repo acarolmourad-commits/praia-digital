@@ -1,4 +1,4 @@
-# Litoral Prime — Checklist mínimo de produção
+# Praia Digital — Checklist mínimo de produção
 Objetivo: colocar o site e os fluxos no ar com qualidade, sem gargalos manuais.
 
 ## 1. Domínio e hosting
