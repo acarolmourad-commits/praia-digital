@@ -1,0 +1,26 @@
+name: Simplificação de Navegação 2026-09
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Aplica simplificação de navegação
+        run: python3 scripts/nav-simplification-2026-09.py
+      - name: Commit e push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nada a commitar (já aplicado)."
+          else
+            git commit -m "feat(ux): menu em 3 personas + assistente IA com 3 atalhos"
+            git push
+          fi

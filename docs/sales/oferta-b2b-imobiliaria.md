@@ -27,5 +27,5 @@ Somos a primeira plataforma do litoral paulista com IA aplicada a imóveis de pr
 https://praia.digital
 
 ## Contato
-comercial@praiadigital.com | (11) 95434-6288
+comercial@praia.digital | (11) 95434-6288
 Ana Carolina Moura Dellaretti — CEO

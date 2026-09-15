@@ -1,7 +1,7 @@
 # E-mail — Peruibe
 
 ## Assuntos
-1. Oportunidades em Peruibe — Litoral Prime Imóveis
+1. Oportunidades em Peruibe — Praia Digital
 2. 3 imóveis selecionados para você em Peruibe
 3. Acesso antecipado: imóveis em Peruibe com condições especiais
 

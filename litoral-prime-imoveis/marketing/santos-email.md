@@ -1,7 +1,7 @@
 # E-mail — Santos
 
 ## Assuntos
-1. Oportunidades em Santos — Litoral Prime Imóveis
+1. Oportunidades em Santos — Praia Digital
 2. 3 imóveis selecionados para você em Santos
 3. Acesso antecipado: imóveis em Santos com condições especiais
 

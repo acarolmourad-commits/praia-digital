@@ -21,7 +21,7 @@ Proponho uma demonstração de 20 minutos para mostrar na prática como podemos 
 Abraço,
 Carolina Mourad
 CEO — Praia Digital
-(11) 95434-6288 | comercial@praiadigital.com
+(11) 95434-6288 | comercial@praia.digital
 
 ---
 

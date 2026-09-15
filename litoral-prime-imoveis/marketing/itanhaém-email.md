@@ -1,7 +1,7 @@
 # E-mail — Itanhaém
 
 ## Assuntos
-1. Oportunidades em Itanhaém — Litoral Prime Imóveis
+1. Oportunidades em Itanhaém — Praia Digital
 2. 3 imóveis selecionados para você em Itanhaém
 3. Acesso antecipado: imóveis em Itanhaém com condições especiais
 
