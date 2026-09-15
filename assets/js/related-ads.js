@@ -3,6 +3,25 @@
    ============================================================ */
 window.PD_RELATED = window.PD_RELATED || {};
 
+/* AdSense loader (idempotente): garante o snippet de verificação/monetização
+   em todas as páginas que incluem este script. */
+(function () {
+  if (document.querySelector('script[data-pd-adsense]') ||
+      document.querySelector('script[src*="pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]')) return;
+  if (!document.querySelector('meta[name="google-adsense-account"]')) {
+    var meta = document.createElement('meta');
+    meta.name = 'google-adsense-account';
+    meta.content = 'ca-pub-9562601722232986';
+    document.head.appendChild(meta);
+  }
+  var s = document.createElement('script');
+  s.async = true;
+  s.setAttribute('data-pd-adsense', '1');
+  s.crossOrigin = 'anonymous';
+  s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9562601722232986';
+  document.head.appendChild(s);
+})();
+
 PD_RELATED.inject = function ({ category, fallbackSlugs = [] } = {}) {
   const container = document.querySelector('.related');
   if (!container) return null;
