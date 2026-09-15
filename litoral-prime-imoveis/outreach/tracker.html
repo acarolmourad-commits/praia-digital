@@ -475,7 +475,7 @@ window.TRACKER_ROWS = [{"nome": "Roberto Lima", "telefone": "5511911112222", "ci
         const rawLink = (r.whatsapp_link  '').trim();
         const builtLink = r.telefone ? `https://wa.me/${r.telefone}?text=${encodeURIComponent(r.mensagem  '')}` : '';
         const href = rawLink  builtLink;
-        const sendBtn = href ? `<a class="btn" href="${href}" target="_blank" rel="noopener">Enviar</a>` : "-";
+        const sendBtn = href ? `<a class="btn" href="../index.html" target="_blank" rel="noopener">Enviar</a>` : "-";
         const markBtn = isSent ? `<button class="btn-undo" data-phone="${phoneKey}">Desfazer</button>` : `<button class="btn-sent" data-phone="${phoneKey}">Marcado</button>`;
         const removeBtn = r.manual ? `<button class="btn-undo" data-remove="${phoneKey}">Remover</button>` : "";
         const replyBtn = replySet.has(phoneKey) ? `<button class="btn-undo" data-phone="${phoneKey}" data-reply="1">Desmarcar resposta</button>` : `<button class="btn-sent" data-phone="${phoneKey}" data-reply="1">Respondeu</button>`;
@@ -782,7 +782,7 @@ window.TRACKER_ROWS = [{"nome": "Roberto Lima", "telefone": "5511911112222", "ci
             <textarea readonly rows="6" style="width:100%;padding:10px;border-radius:12px;border:1px solid #e5e7eb;font:inherit">Assunto: ${subject}\n\n${body}</textarea>
             <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap">
               <button class="btn-secondary" onclick="navigator.clipboard.writeText(this.parentElement.parentElement.querySelector('textarea').value)">Copiar</button>
-              <a class="btn" href="${mailtoHref}" rel="noopener">Abrir no e-mail</a>
+              <a class="btn" href="../index.html" rel="noopener">Abrir no e-mail</a>
             </div>
           </article>
         `;

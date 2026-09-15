@@ -257,7 +257,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         const [nome,telefone,cidade,tipo,estagio,mensagem,link,data] = r;
         counts[estagio] = (counts[estagio]0) + 1;
         const tr = document.createElement('tr');
-        tr.innerHTML = `<td>${nome}</td><td>${telefone}</td><td>${cidade}</td><td>${tipo}</td><td><span class="status">${estagio}</span></td><td>${mensagem}</td><td><a class="btn-send" href="${link}" target="_blank" rel="noopener">Enviar</a></td>`;
+        tr.innerHTML = `<td>${nome}</td><td>${telefone}</td><td>${cidade}</td><td>${tipo}</td><td><span class="status">${estagio}</span></td><td>${mensagem}</td><td><a class="btn-send" href="../index.html" target="_blank" rel="noopener">Enviar</a></td>`;
         tbody.appendChild(tr);
       }
       document.getElementById('chip-total').textContent = 'Total: ' + rows.length;

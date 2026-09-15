@@ -237,7 +237,7 @@ gtag('config', '', { anonymize_ip: true });
         <div style="font-size:.85rem;color:#777">Atualizado ${fmtDate(it.date)}</div>
       </div>`).join('');
       document.getElementById('posts').innerHTML = posts.map(p=>`<div class="card">
-        <strong><a href="${p.url}" style="color:var(--ocean);text-decoration:none">${p.title}</a></strong>
+        <strong><a href="index.html" style="color:var(--ocean);text-decoration:none">${p.title}</a></strong>
         <div style="font-size:.9rem;color:#555">${p.excerpt}</div>
         <div style="font-size:.82rem;color:#888">${fmtDate(p.date)}</div>
       </div>`).join('');

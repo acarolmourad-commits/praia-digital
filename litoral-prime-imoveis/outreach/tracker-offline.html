@@ -264,7 +264,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         const rawLink = (r.whatsapp_link  '').trim();
         const builtLink = r.telefone ? `https://wa.me/${r.telefone}?text=${encodeURIComponent(r.mensagem  '')}` : '';
         const href = rawLink  builtLink;
-        const sendBtn = href ? `<a class="btn" href="${href}" target="_blank" rel="noopener">Enviar</a>` : "-";
+        const sendBtn = href ? `<a class="btn" href="../index.html" target="_blank" rel="noopener">Enviar</a>` : "-";
         const markBtn = isSent ? `<button class="btn-undo" data-phone="${phoneKey}">Desfazer</button>` : `<button class="btn-sent" data-phone="${phoneKey}">Marcado</button>`;
 
         const tr=document.createElement('tr');

@@ -101,7 +101,7 @@
             <p><strong>Curso ID:</strong> ${c.course_id}</p>
             <p><strong>Matrícula ID:</strong> ${c.enrollment_id}</p>
             <p><strong>Emitido em:</strong> ${c.issued_at || 'pendente'}</p>
-            ${c.pdf_url ? `<a class="cta" href="${c.pdf_url}" target="_blank" rel="noopener">Baixar PDF</a>` : ''}
+            ${c.pdf_url ? `<a class="cta" href="index.html" target="_blank" rel="noopener">Baixar PDF</a>` : ''}
           `;
           container.appendChild(div);
         }

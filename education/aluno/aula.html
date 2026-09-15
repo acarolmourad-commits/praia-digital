@@ -136,7 +136,7 @@
         const materialsList = document.getElementById('materialsList');
         if (attachments.length > 0) {
           materialsArea.classList.remove('hidden');
-          materialsList.innerHTML = attachments.map(a => `<a href="${a.file_url}" target="_blank" rel="noopener">📎 ${a.file_name}</a>`).join('');
+          materialsList.innerHTML = attachments.map(a => `<a href="index.html" target="_blank" rel="noopener">📎 ${a.file_name}</a>`).join('');
         } else {
           materialsArea.classList.add('hidden');
         }
