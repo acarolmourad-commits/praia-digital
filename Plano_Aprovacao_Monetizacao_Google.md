@@ -62,3 +62,21 @@
 - Validar Gmail ACTIVE: abra `https://connect.composio.dev/link/lk_Q6EIIDCo54mY`.
 - No Search Console, abra a propriedade `praia.digital` e confirme: “Sitemaps” + “Cobertura”.
 - Responder aqui e eu continuo automaticamente na importação dos contatos para Sheets e na verificação dos alertas.
+
+---
+
+## 5. Progresso — 15/09/2026
+
+### Concluído (nesta rodada)
+- ✅ **Item 4:** páginas `quem-somos.html` e `fale-conosco.html` criadas com conteúdo original, schema.org (`AboutPage`/`ContactPage`), canonical e OG tags. Commits no fork `praiadigital/praia-digital`.
+- ✅ **Item 5 (parcial):** auditoria de snippets AdSense em páginas-chave: home, blog, sobre, contato, serviços, planos e captura-leads já tinham o snippet. Identificadas páginas sem snippet; solução escalável implementada: injeção idempotente do loader AdSense em `assets/js/related-ads.js`, script compartilhado por ~3.600 páginas (commit `d5b0f5e`).
+- ✅ **Diagnóstico de deploy:** o site praia.digital é servido pelo repositório-pai `acarolmourad-commits/praia-digital` (GitHub Pages); o fork não tem Pages habilitado e o workflow "Deploy to GitHub Pages" falha no fork (esperado). Aberto **PR #6** (`acarolmourad-commits/praia-digital/pull/6`) levando todas as mudanças do fork ao repositório que serve o site.
+
+### Bloqueios (ação manual necessária)
+- ⛔ **Merge do PR #6** — sem isso, as novas páginas e o loader AdSense não entram no ar.
+- ⛔ Verificação de propriedade no Search Console (meta `google-site-verification` já está na home; basta confirmar no painel).
+- ⛔ Autenticação Gmail/Composio e conta AdSense exigem identidade do proprietário.
+
+### Observações
+- Páginas de política/termos não precisam de anúncios (prática recomendada do AdSense); o loader cobre páginas de conteúdo.
+- PR #6 está grande (~518 arquivos) porque o fork divergiu do pai; revisar antes do merge.
