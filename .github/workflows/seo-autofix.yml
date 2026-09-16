@@ -13,17 +13,22 @@ jobs:
       - uses: actions/checkout@v4
       - name: Fix og:image SVG references and add missing OG tags
         run: |
-          set -e
+          set +e
           # 1) Social crawlers (WhatsApp, Facebook, LinkedIn) do not render SVG OG images.
           grep -rlZ 'og-image.svg' --include='*.html' . | xargs -0 -r sed -i 's#og-image\.svg#og-image.png#g'
           # 2) Add og:site_name after og:url where missing.
-          for f in $(grep -rl 'property="og:url"' --include='*.html' .); do
-            grep -q 'og:site_name' "$f" || sed -i 's#\(<meta property="og:url"[^>]*>\)#\1\n  <meta property="og:site_name" content="Praia Digital">#' "$f"
-          done
+          grep -rlZ 'property="og:url"' --include='*.html' . > /tmp/ogurl.txt
+          grep -rlZ 'og:site_name' --include='*.html' . > /tmp/sitename.txt
+          while IFS= read -r -d '' f; do
+            grep -qF "$f" /tmp/sitename.txt || sed -i 's#\(<meta property="og:url"[^>]*>\)#\1\n  <meta property="og:site_name" content="Praia Digital">#' "$f"
+          done < /tmp/ogurl.txt
           # 3) Add og:image dimensions/alt where missing (required for reliable rich previews).
-          for f in $(grep -rl 'property="og:image"' --include='*.html' .); do
-            grep -q 'og:image:width' "$f" || sed -i 's#\(<meta property="og:image"[^>]*>\)#\1\n  <meta property="og:image:width" content="1200">\n  <meta property="og:image:height" content="630">\n  <meta property="og:image:alt" content="Praia Digital — IA para imobiliárias no litoral paulista">#' "$f"
-          done
+          grep -rlZ 'property="og:image"' --include='*.html' . > /tmp/ogimg.txt
+          grep -rlZ 'og:image:width' --include='*.html' . > /tmp/ogwidth.txt
+          while IFS= read -r -d '' f; do
+            grep -qF "$f" /tmp/ogwidth.txt || sed -i 's#\(<meta property="og:image"[^>]*>\)#\1\n  <meta property="og:image:width" content="1200">\n  <meta property="og:image:height" content="630">\n  <meta property="og:image:alt" content="Praia Digital — IA para imobiliárias no litoral paulista">#' "$f"
+          done < /tmp/ogimg.txt
+          exit 0
       - name: Commit changes
         run: |
           if git diff --quiet; then
