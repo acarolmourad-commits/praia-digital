@@ -124,6 +124,9 @@
 <meta property="og:title" content="Relatório Diário — Praia Digital">
 <meta property="og:description" content="Conteúdo sobre imóveis no litoral paulista.">
 <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Praia Digital — IA para imobiliárias no litoral paulista">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Relatório Diário — Praia Digital">
 <meta name="twitter:description" content="Conteúdo sobre imóveis no litoral paulista.">
@@ -137,6 +140,9 @@
 <meta property="og:title" content="Relatório Diário — Praia Digital">
 <meta property="og:description" content="Conteúdo sobre imóveis no litoral paulista.">
 <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Praia Digital — IA para imobiliárias no litoral paulista">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Relatório Diário — Praia Digital">
 <meta name="twitter:description" content="Conteúdo sobre imóveis no litoral paulista.">
@@ -212,8 +218,8 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       </div>
       <ul class="nav-menu">
         <li><a href="../index.html">Início</a></li>
-        <li><a href="despacho.html">Despacho</a></li>
-        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="../outreach/despacho.html">Despacho</a></li>
+        <li><a href="../outreach/tracker.html">Tracker</a></li>
       </ul>
     </nav>
   </header>
@@ -274,7 +280,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
   <footer aria-label="Rodapé">
   <p>© Praia Digital • <a href="https://wa.me/5511954346288">WhatsApp</a> • <a href="mailto:comercial@praia.digital">comercial@praia.digital</a> • (11) 95434-6288</p>
-  <p><a href="sitemap.xml">Sitemap</a> · <a href="sitemap.html">Mapa do site</a></p>
+  <p><a href="../../sitemap.xml">Sitemap</a> · <a href="../../sitemap.html">Mapa do site</a></p>
 </footer>
 
   <script>
@@ -339,7 +345,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
           const msg = `Olá, ${r.nome}! Tudo bem? Você demonstrou interesse em ${r.tipo} em ${r.cidade}. Quer que eu envie 3 opções compatíveis?`;
           const link = waLink(r.telefone, msg);
           const tr = document.createElement('tr');
-          tr.innerHTML = `<td>${r.nome''}</td><td>${r.cidade''}</td><td>${r.tipo''}</td><td><span class="badge">${r.estagio''}</span></td><td><span class="severity-${status==='aguardando'?'warn':'ok'}">${status}</span></td><td>${r.data''}</td><td><a class="btn-whatsapp" href="${link}" target="_blank" rel="noopener">${label}</a></td>`;
+          tr.innerHTML = `<td>${r.nome''}</td><td>${r.cidade''}</td><td>${r.tipo''}</td><td><span class="badge">${r.estagio''}</span></td><td><span class="severity-${status==='aguardando'?'warn':'ok'}">${status}</span></td><td>${r.data''}</td><td><a class="btn-whatsapp" href="../index.html" target="_blank" rel="noopener">${label}</a></td>`;
           act.appendChild(tr);
         }
 
@@ -400,7 +406,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         const tr=document.createElement('tr');
         const msg = `Olá, ${r.nome}! Tudo bem? Você demonstrou interesse em ${r.tipo_interesse} em ${r.cidade_interesse}. Quer que eu envie 3 opções compatíveis?`;
         const link = waLink(r.telefone, msg);
-        tr.innerHTML=`<td>${r.ordem''}</td><td>${r.nome''}</td><td>${r.cidade_interesse''}</td><td>${r.tipo_interesse''}</td><td><span class="badge">${r.estagio''}</span></td><td>${score}</td><td><span style="display:inline-block;padding:4px 8px;border-radius:999px;font-size:12px;${badgeColor}">${cls'-'}</span></td><td>${r.janela_contato''}</td><td>${r.acao_sugerida''}</td><td><a class="btn-whatsapp" href="${link}" target="_blank" rel="noopener">WhatsApp</a></td>`;
+        tr.innerHTML=`<td>${r.ordem''}</td><td>${r.nome''}</td><td>${r.cidade_interesse''}</td><td>${r.tipo_interesse''}</td><td><span class="badge">${r.estagio''}</span></td><td>${score}</td><td><span style="display:inline-block;padding:4px 8px;border-radius:999px;font-size:12px;${badgeColor}">${cls'-'}</span></td><td>${r.janela_contato''}</td><td>${r.acao_sugerida''}</td><td><a class="btn-whatsapp" href="../index.html" target="_blank" rel="noopener">WhatsApp</a></td>`;
         tbody.appendChild(tr);
       }
     }

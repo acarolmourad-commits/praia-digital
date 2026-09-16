@@ -105,7 +105,7 @@
           const card = document.createElement('div');
           card.className = 'card';
           card.innerHTML = `
-            <a href="/education/cursos/${item.course_slug}/index.html" style="color:#cfe3ff;font-weight:700;text-decoration:none">${item.course_title}</a>
+            <a href="/index.html" style="color:#cfe3ff;font-weight:700;text-decoration:none">${item.course_title}</a>
             <p style="opacity:.75; margin-top:6px;">${item.completed_lessons || 0} de ${item.total_lessons || 0} aulas</p>
             <div class="bar"><div class="bar-fill" style="width:${percent}%"></div></div>
             <p style="font-size:.85rem;margin-top:6px;opacity:.85">${percent}%</p>

@@ -1,0 +1,42 @@
+name: SEO autofix
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+permissions:
+  contents: write
+jobs:
+  seo-autofix:
+    if: ${{ !contains(github.event.head_commit.message, '[seo-bot]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fix og:image SVG references and add missing OG tags
+        run: |
+          set +e
+          # 1) Social crawlers (WhatsApp, Facebook, LinkedIn) do not render SVG OG images.
+          grep -rlZ 'og-image.svg' --include='*.html' . | xargs -0 -r sed -i 's#og-image\.svg#og-image.png#g'
+          # 2) Add og:site_name after og:url where missing.
+          grep -rlZ 'property="og:url"' --include='*.html' . > /tmp/ogurl.txt
+          grep -rlZ 'og:site_name' --include='*.html' . > /tmp/sitename.txt
+          while IFS= read -r -d '' f; do
+            grep -qF "$f" /tmp/sitename.txt || sed -i 's#\(<meta property="og:url"[^>]*>\)#\1\n  <meta property="og:site_name" content="Praia Digital">#' "$f"
+          done < /tmp/ogurl.txt
+          # 3) Add og:image dimensions/alt where missing (required for reliable rich previews).
+          grep -rlZ 'property="og:image"' --include='*.html' . > /tmp/ogimg.txt
+          grep -rlZ 'og:image:width' --include='*.html' . > /tmp/ogwidth.txt
+          while IFS= read -r -d '' f; do
+            grep -qF "$f" /tmp/ogwidth.txt || sed -i 's#\(<meta property="og:image"[^>]*>\)#\1\n  <meta property="og:image:width" content="1200">\n  <meta property="og:image:height" content="630">\n  <meta property="og:image:alt" content="Praia Digital — IA para imobiliárias no litoral paulista">#' "$f"
+          done < /tmp/ogimg.txt
+          exit 0
+      - name: Commit changes
+        run: |
+          if git diff --quiet; then
+            echo "No SEO fixes needed"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: [seo-bot] og:image png swap and OG tag completion"
+          git push

@@ -1,0 +1,32 @@
+name: Link Check
+
+on:
+  schedule:
+    - cron: '0 8 * * 1' # segundas 08:00 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '**.html'
+      - 'check_links.py'
+
+permissions:
+  contents: read
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Auditar links
+        run: python check_links.py
+      - name: Publicar relatório
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: link-check-report
+          path: link_check_report.json
+          retention-days: 30

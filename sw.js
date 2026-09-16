@@ -1,5 +1,5 @@
-const CACHE_NAME = 'praia-digital-static-v1';
-const HTML_CACHE = 'praia-digital-html-v1';
+const CACHE_NAME = 'praia-digital-static-v2';
+const HTML_CACHE = 'praia-digital-html-v2';
 
 const STATIC_ASSETS = [
   '/',
@@ -49,6 +49,24 @@ self.addEventListener('fetch', (event) => {
             return response;
           })
           .catch(() => caches.match(request).then((cached) => cached || caches.match('/index.html')))
+      );
+      return;
+    }
+
+    // Network-first for JS/CSS so fixes (e.g. shared.js nav dedup) reach
+    // returning visitors immediately; fall back to cache when offline.
+    const isScriptOrStyle = /\.(js|css)$/.test(url.pathname);
+    if (isScriptOrStyle) {
+      event.respondWith(
+        fetch(request)
+          .then((response) => {
+            if (response && response.status === 200) {
+              const clone = response.clone();
+              caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
+            }
+            return response;
+          })
+          .catch(() => caches.match(request))
       );
       return;
     }

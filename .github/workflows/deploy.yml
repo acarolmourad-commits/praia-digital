@@ -11,6 +11,8 @@ permissions:
 
 jobs:
   deploy:
+    # Forks não têm GitHub Pages habilitado; o deploy real acontece no repo pai.
+    if: ${{ !github.event.repository.fork }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

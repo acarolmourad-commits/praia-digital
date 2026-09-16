@@ -124,6 +124,9 @@
 <meta property="og:title" content="Tracker Offline — 2026-07-24 — Praia Digital">
 <meta property="og:description" content="Conteúdo sobre imóveis no litoral paulista.">
 <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Praia Digital — IA para imobiliárias no litoral paulista">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Tracker Offline — 2026-07-24 — Praia Digital">
 <meta name="twitter:description" content="Conteúdo sobre imóveis no litoral paulista.">
@@ -264,7 +267,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         const rawLink = (r.whatsapp_link  '').trim();
         const builtLink = r.telefone ? `https://wa.me/${r.telefone}?text=${encodeURIComponent(r.mensagem  '')}` : '';
         const href = rawLink  builtLink;
-        const sendBtn = href ? `<a class="btn" href="${href}" target="_blank" rel="noopener">Enviar</a>` : "-";
+        const sendBtn = href ? `<a class="btn" href="../index.html" target="_blank" rel="noopener">Enviar</a>` : "-";
         const markBtn = isSent ? `<button class="btn-undo" data-phone="${phoneKey}">Desfazer</button>` : `<button class="btn-sent" data-phone="${phoneKey}">Marcado</button>`;
 
         const tr=document.createElement('tr');
