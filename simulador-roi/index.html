@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulador ROI — Rendimento de Locação de Temporada no Litoral | Praia Digital</title>
+<meta name="description" content="Simule quanto seu imóvel pode gerar por mês na temporada no litoral paulista: diária média, ocupação alta/baixa e taxas de plataforma (Airbnb, Booking, FlatinMate).">
+<style>
+body{font-family:system-ui,-apple-system,sans-serif;margin:0;background:#f0fdf4;color:#14532d;line-height:1.6}
+nav{background:#166534;padding:12px 20px;display:flex;gap:16px;flex-wrap:wrap}
+nav a{color:#dcfce7;text-decoration:none;font-weight:600}
+nav a:hover{color:#fff}
+.hero{background:linear-gradient(135deg,#166534,#16a34a);color:#fff;padding:60px 20px;text-align:center}
+.container{max-width:960px;margin:0 auto;padding:30px 20px}
+.card{background:#fff;border-radius:12px;padding:24px;margin:16px 0;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+label{display:block;margin:12px 0 4px;font-weight:600}
+input,select{width:100%;padding:10px;border:1px solid #bbf7d0;border-radius:8px;box-sizing:border-box}
+button{background:#16a34a;color:#fff;border:0;padding:14px 28px;border-radius:8px;font-size:1.05em;font-weight:700;cursor:pointer;margin-top:16px}
+button:hover{background:#15803d}
+#resultado{font-size:1.2em;font-weight:700;color:#166534;margin-top:16px}
+table{width:100%;border-collapse:collapse}
+th,td{padding:10px;border-bottom:1px solid #e5e7eb;text-align:left}
+footer{text-align:center;padding:24px;color:#64748b;font-size:.9em}
+</style>
+</head>
+<body>
+<nav>
+<a href="https://praia.digital/">🌊 Praia Digital</a>
+<a href="https://praia.digital/hermes-agents/">Hermes Agents</a>
+<a href="https://praia.digital/simulador-roi/">Simulador ROI</a>
+<a href="https://praia.digital/area-anfitriao/">Área do Anfitrião</a>
+<a href="https://praia.digital/guia-litoral/">Guia do Litoral</a>
+</nav>
+<div class="hero">
+<h1>📈 Simulador de ROI — Temporada no Litoral</h1>
+<p>Veja quanto seu imóvel pode gerar por mês na locação de temporada.</p>
+</div>
+<div class="container">
+<div class="card">
+<label for="diaria">Diária média na alta (R$)</label>
+<input id="diaria" type="number" value="350">
+<label for="ocupAlta">Ocupação alta temporada (%)</label>
+<select id="ocupAlta"><option>95</option><option selected>85</option><option>75</option><option>65</option></select>
+<label for="ocupBaixa">Ocupação baixa temporada (%)</label>
+<select id="ocupBaixa"><option>50</option><option selected>40</option><option>30</option><option>60</option></select>
+<label for="taxa">Taxa da plataforma (%)</label>
+<select id="taxa"><option value="5">Airbnb (~5%)</option><option value="12">FlatinMate (~12%)</option><option value="15">Booking (~15%)</option></select>
+<button onclick="calcular()">📊 Calcular Rendimento</button>
+<div id="resultado"></div>
+</div>
+<div class="card">
+<h2>Comparativo de plataformas (dados praia.digital)</h2>
+<table>
+<tr><th>Plataforma</th><th>Taxa</th><th>Ocupação alta/baixa</th><th>Diária média PG</th></tr>
+<tr><td>🏆 Airbnb Brasil</td><td>3-5% anfitrião</td><td>78% / 45%</td><td>R$ 280-450</td></tr>
+<tr><td>🥈 Booking.com</td><td>10-15%</td><td>65% / 40%</td><td>R$ 250-400</td></tr>
+<tr><td>🥉 FlatinMate</td><td>8-12%</td><td>55% / 35%</td><td>R$ 220-380</td></tr>
+</table>
+<p>Saiba mais: <a href="https://praia.digital/blog/estudo-rental-yield-apartamentos-1-2-dormitorios-praia-grande-2026.html">Estudo de rental yield em Praia Grande</a> · <a href="https://praia.digital/blog/calendario-sazonalidade-baixa-temporada-litoral-2026.html">Calendário de sazonalidade</a></p>
+</div>
+<div class="card">
+<h2>Próximos passos</h2>
+<p>🌟 <a href="https://praia.digital/area-anfitriao/">Cadastre seu imóvel na Área do Anfitrião</a> e receba análise de rendimento em 24h · 🤖 <a href="https://praia.digital/hermes-agents/">Automatize o atendimento com Hermes Agents</a> · 📊 <a href="https://praia.digital/guia-litoral/">Veja relatórios de mercado</a></p>
+</div>
+</div>
+<footer>Parte da rede <a href="https://praia.digital/">praia.digital</a></footer>
+<script>
+function calcular(){
+const d=parseFloat(document.getElementById('diaria').value)||0;
+const a=parseFloat(document.getElementById('ocupAlta').value)/100;
+const b=parseFloat(document.getElementById('ocupBaixa').value)/100;
+const t=parseFloat(document.getElementById('taxa').value)/100;
+const alta=d*90*a, baixa=(d*0.6)*275*b;
+const total=(alta+baixa)*(1-t);
+document.getElementById('resultado').innerHTML='Receita anual estimada: <strong>R$ '+total.toLocaleString('pt-BR',{maximumFractionDigits:0})+'</strong> (média de R$ '+(total/12).toLocaleString('pt-BR',{maximumFractionDigits:0})+'/mês)';
+}
+</script>
+</body>
+</html>
