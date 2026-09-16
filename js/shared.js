@@ -22,6 +22,14 @@
       if (node && marker.parentNode) {
         marker.parentNode.replaceChild(node, marker);
         window.__pdShared.push(['inject-nav-ok', url]);
+        // Remove header/nav inline legado (duplicado) após injetar o menu compartilhado
+        var legacy = document.querySelectorAll('header.pd-nav, body > header, body > nav:not(.pd-nav)');
+        for (var i = 0; i < legacy.length; i++) {
+          if (legacy[i] !== node && legacy[i].parentNode) {
+            legacy[i].parentNode.removeChild(legacy[i]);
+            window.__pdShared.push(['inline-nav-removed']);
+          }
+        }
       } else {
         window.__pdShared.push(['inject-nav-miss', url]);
       }
@@ -44,18 +52,11 @@
     var footerMarker = document.querySelector('meta[name="pd-shared-footer"]');
     window.__pdShared.push(['boot', !!(navMarker || footerMarker), !!(navMarker), !!(footerMarker)]);
 
-    // FIX duplicate header: only inject the shared nav when the page does NOT
-    // already render its own header/nav. Pages like index.html have an inline
-    // <header class="pd-nav"> AND the marker, which produced two stacked navs.
-    var hasInlineNav = !!(
-      document.querySelector('header.pd-nav') ||
-      document.querySelector('nav.pd-nav') ||
-      document.querySelector('body > header') ||
-      document.querySelector('body > nav')
-    );
+    // FIX duplicate header: se a página tem um <header>/<nav> inline legado
+    // (ex.: index.html), ele será removido APÓS a injeção do menu compartilhado
+    // (evita ficar sem navegação se o fetch falhar).
     if (navMarker) {
-      if (hasInlineNav) removeMarker(navMarker, 'inline-nav-present');
-      else inject(navMarker, NAV_URL);
+      inject(navMarker, NAV_URL);
     }
 
     // Same guard for the footer: never append a second footer.
