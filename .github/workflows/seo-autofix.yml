@@ -1,0 +1,37 @@
+name: SEO autofix
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+permissions:
+  contents: write
+jobs:
+  seo-autofix:
+    if: ${{ !contains(github.event.head_commit.message, '[seo-bot]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fix og:image SVG references and add missing OG tags
+        run: |
+          set -e
+          # 1) Social crawlers (WhatsApp, Facebook, LinkedIn) do not render SVG OG images.
+          grep -rlZ 'og-image.svg' --include='*.html' . | xargs -0 -r sed -i 's#og-image\.svg#og-image.png#g'
+          # 2) Add og:site_name after og:url where missing.
+          for f in $(grep -rl 'property="og:url"' --include='*.html' .); do
+            grep -q 'og:site_name' "$f" || sed -i 's#\(<meta property="og:url"[^>]*>\)#\1\n  <meta property="og:site_name" content="Praia Digital">#' "$f"
+          done
+          # 3) Add og:image dimensions/alt where missing (required for reliable rich previews).
+          for f in $(grep -rl 'property="og:image"' --include='*.html' .); do
+            grep -q 'og:image:width' "$f" || sed -i 's#\(<meta property="og:image"[^>]*>\)#\1\n  <meta property="og:image:width" content="1200">\n  <meta property="og:image:height" content="630">\n  <meta property="og:image:alt" content="Praia Digital — IA para imobiliárias no litoral paulista">#' "$f"
+          done
+      - name: Commit changes
+        run: |
+          if git diff --quiet; then
+            echo "No SEO fixes needed"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: [seo-bot] og:image png swap and OG tag completion"
+          git push
