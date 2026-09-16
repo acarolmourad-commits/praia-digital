@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulador de Crédito Imobiliário — FGTS, MCMV e SBPE | Praia Digital</title>
+<meta name="description" content="Compare FGTS, Minha Casa Minha Vida e SBPE: taxas, elegibilidade e quanto você pode financiar para comprar seu imóvel no litoral paulista.">
+<style>
+body{font-family:system-ui,-apple-system,sans-serif;margin:0;background:#fef2f2;color:#7f1d1d;line-height:1.6}
+nav{background:#b91c1c;padding:12px 20px;display:flex;gap:16px;flex-wrap:wrap}
+nav a{color:#fee2e2;text-decoration:none;font-weight:600}
+nav a:hover{color:#fff}
+.hero{background:linear-gradient(135deg,#b91c1c,#ef4444);color:#fff;padding:60px 20px;text-align:center}
+.container{max-width:960px;margin:0 auto;padding:30px 20px}
+.card{background:#fff;border-radius:12px;padding:24px;margin:16px 0;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.faixas{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.fx{border:1px solid #fecaca;border-radius:10px;padding:16px;text-align:center}
+.fx h3{margin:0 0 6px}
+label{display:block;margin:12px 0 4px;font-weight:600}
+input,select{width:100%;padding:10px;border:1px solid #fecaca;border-radius:8px;box-sizing:border-box}
+button{background:#ef4444;color:#fff;border:0;padding:14px 28px;border-radius:8px;font-size:1.05em;font-weight:700;cursor:pointer;margin-top:16px}
+button:hover{background:#dc2626}
+#resultado{font-size:1.15em;font-weight:700;color:#b91c1c;margin-top:16px}
+footer{text-align:center;padding:24px;color:#64748b;font-size:.9em}
+</style>
+</head>
+<body>
+<nav>
+<a href="https://praia.digital/">🌊 Praia Digital</a>
+<a href="https://praia.digital/hermes-agents/">Hermes Agents</a>
+<a href="https://praia.digital/simulador-roi/">Simulador ROI</a>
+<a href="https://praia.digital/area-anfitriao/">Área do Anfitrião</a>
+<a href="https://praia.digital/guia-litoral/">Guia do Litoral</a>
+<a href="https://praia.digital/blog-litoral/">Blog</a>
+</nav>
+<div class="hero">
+<h1>🏦 Simulador de Crédito Imobiliário</h1>
+<p>FGTS, Minha Casa Minha Vida, SBPE — compare taxas, descubra sua elegibilidade e veja quanto pode financiar em segundos.</p>
+</div>
+<div class="container">
+<div class="card">
+<div class="faixas">
+<div class="fx">🔶<h3>FGTS</h3>9% a.a.<br>Até 90% do imóvel<br><strong>Melhor taxa</strong></div>
+<div class="fx">🏠<h3>MCMV</h3>Subsídio até R$ 47,5k<br>Faixa 1-4, até R$ 350k<br><strong>Subsídio</strong></div>
+<div class="fx">🏦<h3>SBPE</h3>12% a.a.<br>Até 90% do imóvel<br><strong>Sem FGTS</strong></div>
+<div class="fx">🤝<h3>Parcerias</h3>10-11% a.a.<br>Construcard, cesta<br><strong>Ofertas especiais</strong></div>
+</div>
+</div>
+<div class="card">
+<h2>Quanto você pode financiar?</h2>
+<label for="renda">Renda bruta mensal (R$)</label>
+<input id="renda" type="number" value="6000">
+<label for="tipo">Tipo de renda</label>
+<select id="tipo"><option>CLT (Assalariado)</option><option>Autônomo / MEI</option><option>Pensionista / Aposentado</option><option>Sócio / PJ</option></select>
+<label for="tempo">Tempo na empresa/atividade</label>
+<select id="tempo"><option>6 meses</option><option selected>1 ano</option><option>2+ anos</option><option>3+ anos</option></select>
+<label for="valor">Valor do imóvel (R$)</label>
+<input id="valor" type="number" value="350000">
+<button onclick="simular()">🏦 Simular Financiamento</button>
+<div id="resultado"></div>
+</div>
+<div class="card">
+<h2>Saiba mais</h2>
+<p><a href="https://praia.digital/blog/fgts-financiamento-sbpe-mcmv-imovel-litoral-2026.html">Guia completo: FGTS, SBPE e MCMV para imóvel no litoral</a> · <a href="https://praia.digital/blog/guia-custo-real-compra-imovel-litoral-2026.html">Custo real de compra</a></p>
+<p>📈 Comprou para investir? <a href="https://praia.digital/simulador-roi/">Simule o ROI de temporada</a> · 🌟 <a href="https://praia.digital/area-anfitriao/">Área do Anfitrião</a> · 📊 <a href="https://praia.digital/guia-litoral/">Guia do Litoral</a></p>
+</div>
+</div>
+<footer>Parte da rede <a href="https://praia.digital/">praia.digital</a> — comercial@praia.digital</footer>
+<script>
+function simular(){
+const r=parseFloat(document.getElementById('renda').value)||0;
+const v=parseFloat(document.getElementById('valor').value)||0;
+const comprom=r*0.30; // parcela máx 30% da renda
+const taxaM=Math.pow(1+0.09,1/12)-1; // FGTS 9% a.a.
+const n=360;
+const pv=comprom*((1-Math.pow(1+taxaM,-n))/taxaM);
+const maxFin=Math.min(pv, v*0.9);
+let prog = v<=350000 && r<=8000 ? 'MCMV (possível subsídio até R$ 47,5 mil)' : 'FGTS/SBPE';
+document.getElementById('resultado').innerHTML='Financiamento estimado: até <strong>R$ '+maxFin.toLocaleString('pt-BR',{maximumFractionDigits:0})+'</strong> · Parcela máxima: R$ '+comprom.toLocaleString('pt-BR',{maximumFractionDigits:0})+'/mês · Programa indicado: <strong>'+prog+'</strong>';
+}
+</script>
+</body>
+</html>
