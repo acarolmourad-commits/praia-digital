@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quanto Vale Meu Imóvel no Litoral? — Estimador Gratuito | Praia Digital</title>
+  <meta name="description" content="Estime o valor do seu imóvel no litoral de SP: preço por m² por cidade, ajustes por frente-mar, mobília e estado de conservação. Gratuito, Praia Digital.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://praia.digital/apps/valor-imovel/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Quanto Vale Meu Imóvel no Litoral? | Praia Digital">
+  <meta property="og:description" content="Estimativa instantânea de valor por cidade, m² e características.">
+  <meta property="og:url" content="https://praia.digital/apps/valor-imovel/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Quanto Vale Meu Imóvel no Litoral?",
+    "url": "https://praia.digital/apps/valor-imovel/",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web",
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BRL"},
+    "provider": {"@type": "Organization", "name": "Praia Digital", "url": "https://praia.digital/"}
+  }
+  </script>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4F6F8;color:#0F172A;line-height:1.6}
+    header{background:linear-gradient(135deg,#0A3D2E,#0EA5E9);color:#fff;padding:28px 20px;text-align:center}
+    header h1{font-size:clamp(1.3rem,4vw,1.9rem)}
+    .wrap{max-width:860px;margin:0 auto;padding:20px 16px 48px}
+    .card{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:20px;margin-bottom:14px;box-shadow:0 4px 20px rgba(0,0,0,.04)}
+    label{font-size:13px;font-weight:600;display:block;margin:8px 0 3px}
+    input,select{width:100%;padding:10px;border:1px solid #DDD;border-radius:8px;font-size:15px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media(max-width:640px){.grid{grid-template-columns:1fr}}
+    .checks{display:grid;gap:8px;margin-top:8px}
+    .checks label{display:flex;gap:8px;align-items:center;font-weight:500;font-size:14px}
+    .checks input{width:auto}
+    button{background:#0A3D2E;color:#fff;border:none;padding:14px 28px;border-radius:10px;font-size:16px;font-weight:700;cursor:pointer;width:100%;margin-top:14px}
+    .result{display:none;margin-top:16px;text-align:center}
+    .big{font-size:2.4rem;font-weight:800;color:#0A3D2E}
+    .range{font-size:14px;color:#64748B;margin-top:4px}
+    .breakdown{text-align:left;margin-top:14px;font-size:13px}
+    .breakdown div{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #F1F5F9}
+    .links{display:grid;gap:10px;margin-top:8px}
+    .links a{display:block;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px;text-decoration:none;color:#0F172A;font-weight:600}
+    .links a span{color:#0EA5E9}
+    footer{text-align:center;color:#94A3B8;font-size:12px;padding:20px}
+    .note{font-size:12px;color:#64748B;margin-top:12px;text-align:left}
+  </style>
+</head>
+<body>
+<header>
+  <h1>💰 Quanto Vale Meu Imóvel no Litoral?</h1>
+  <p>Estimativa instantânea por cidade, tamanho e diferenciais • Praia Digital</p>
+</header>
+<div class="wrap">
+  <div class="card">
+    <div class="grid">
+      <div><label>Cidade</label>
+        <select id="cidade">
+          <option value="5800">Santos (R$5.800/m²)</option>
+          <option value="6500">São Sebastião (R$6.500/m²)</option>
+          <option value="7200">Ilhabela (R$7.200/m²)</option>
+          <option value="4100">Ubatuba (R$4.100/m²)</option>
+          <option value="3200" selected>Bertioga (R$3.200/m²)</option>
+          <option value="4900">Guarujá (R$4.900/m²)</option>
+          <option value="3600">Praia Grande (R$3.600/m²)</option>
+          <option value="2400">Itanhaém (R$2.400/m²)</option>
+          <option value="2100">Mongaguá (R$2.100/m²)</option>
+          <option value="1900">Peruíbe (R$1.900/m²)</option>
+        </select></div>
+      <div><label>Área construída (m²)</label><input type="number" id="area" value="105"></div>
+      <div><label>Quartos</label>
+        <select id="quartos"><option value="1.0">1</option><option value="1.05" selected>2</option><option value="1.12">3</option><option value="1.2">4+</option></select></div>
+      <div><label>Estado de conservação</label>
+        <select id="estado"><option value="0.85">Precisa reforma</option><option value="1.0" selected>Bom</option><option value="1.15">Reformado/novo</option></select></div>
+    </div>
+    <div class="checks">
+      <label><input type="checkbox" id="frente"> 🌊 Frente para o mar (+35%)</label>
+      <label><input type="checkbox" id="perto"> 🚶 A até 200m da praia (+12%)</label>
+      <label><input type="checkbox" id="cond"> 🏢 Condomínio com lazer (+8%)</label>
+      <label><input type="checkbox" id="mobilia"> 🛋️ Mobiliado (+7%)</label>
+      <label><input type="checkbox" id="vaga"> 🚗 Vaga de garagem (+4%)</label>
+    </div>
+    <button onclick="calc()">Estimar valor 💰</button>
+    <div class="result" id="res">
+      <div class="big" id="valor"></div>
+      <div class="range" id="range"></div>
+      <div class="breakdown" id="bd"></div>
+      <p class="note">⚠️ Estimativa automatizada com base em médias de mercado do litoral SP (2026). Para avaliação profissional precisa, fale com nossa equipe.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size:17px;margin-bottom:10px">🔗 Explore mais</h2>
+    <div class="links">
+      <a href="/apps/">🧰 <span>Praia Digital Apps</span> — todas as ferramentas</a>
+      <a href="/apps/comparador-cidades/">📊 Comparador de cidades do litoral</a>
+      <a href="/apps/simulador-roi-temporada/">🧮 Simulador de ROI de temporada</a>
+      <a href="/apps/checklist-vistoria/">📋 Checklist de vistoria</a>
+      <a href="/cadastrar-imovel.html">📢 Cadastre seu imóvel — avaliação profissional gratuita</a>
+      <a href="https://acarolmourad-commits.github.io/asf-app/apps/" target="_blank" rel="noopener">🌊 <span>ASF Apps</span> — ferramentas de surf do litoral</a>
+    </div>
+  </div>
+</div>
+<footer>Praia Digital — Tecnologia imobiliária do litoral • <a href="/" style="color:#0EA5E9">praia.digital</a></footer>
+<script>
+function fmt(v){ return 'R$ ' + Math.round(v).toLocaleString('pt-BR'); }
+function calc(){
+  const m2 = parseFloat(document.getElementById('cidade').value);
+  const area = parseFloat(document.getElementById('area').value)||0;
+  if(area<=0){ alert('Informe a área!'); return; }
+  let mult = parseFloat(document.getElementById('quartos').value) * parseFloat(document.getElementById('estado').value);
+  const extras = [];
+  if(document.getElementById('frente').checked){ mult*=1.35; extras.push('Frente mar +35%'); }
+  if(document.getElementById('perto').checked){ mult*=1.12; extras.push('Até 200m da praia +12%'); }
+  if(document.getElementById('cond').checked){ mult*=1.08; extras.push('Condomínio c/ lazer +8%'); }
+  if(document.getElementById('mobilia').checked){ mult*=1.07; extras.push('Mobiliado +7%'); }
+  if(document.getElementById('vaga').checked){ mult*=1.04; extras.push('Vaga +4%'); }
+  const base = m2*area;
+  const valor = base*mult;
+  document.getElementById('valor').textContent = fmt(valor);
+  document.getElementById('range').textContent = 'Faixa provável: ' + fmt(valor*0.93) + ' — ' + fmt(valor*1.07);
+  document.getElementById('bd').innerHTML =
+    `<div><span>Base (${fmt(m2)}/m² × ${area}m²)</span><strong>${fmt(base)}</strong></div>` +
+    extras.map(e=>`<div><span>${e}</span><strong>✓</strong></div>`).join('');
+  document.getElementById('res').style.display = 'block';
+  document.getElementById('res').scrollIntoView({behavior:'smooth'});
+}
+</script>
+</body>
+</html>
