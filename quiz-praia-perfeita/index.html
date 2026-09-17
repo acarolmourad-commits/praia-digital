@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz: Sua Praia Perfeita — Praia Digital</title>
+<meta name="description" content="Responda 4 perguntas e descubra qual praia do litoral paulista combina com seu estilo de vida.">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,sans-serif}
+  body{background:#f0f9ff;color:#0f172a;min-height:100vh}
+  header{background:linear-gradient(135deg,#0077B6,#00B4D8);color:#fff;padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+  header a{color:#fff;text-decoration:none;font-weight:700}.logo{font-size:1.2rem}
+  main{max-width:640px;margin:2rem auto;padding:0 1rem}
+  .card{background:#fff;border-radius:16px;padding:1.75rem;box-shadow:0 4px 24px rgba(0,60,100,.08)}
+  h1{font-size:1.5rem;color:#0077B6}.sub{color:#64748b;margin:.3rem 0 1.25rem;font-size:.95rem}
+  .step{display:none}.step.active{display:block}
+  .q{font-weight:700;margin-bottom:.8rem}
+  .opt{display:block;width:100%;text-align:left;padding:.85rem 1rem;margin-bottom:.5rem;border:1px solid #cbd5e1;border-radius:12px;background:#fff;cursor:pointer;font-size:1rem}
+  .opt:hover{border-color:#0077B6;background:#f0f9ff}
+  .barra{height:6px;background:#e2e8f0;border-radius:99px;margin-bottom:1.25rem;overflow:hidden}
+  .barra div{height:100%;background:linear-gradient(90deg,#0077B6,#00B4D8);transition:width .3s}
+  #res{display:none}
+  .praia{background:linear-gradient(135deg,#ecfeff,#f0f9ff);border:1px solid #67e8f9;border-radius:14px;padding:1.4rem;text-align:center}
+  .praia b{font-size:1.3rem;color:#0369a1;display:block;margin:.4rem 0}
+  .ctas{display:flex;gap:.6rem;margin-top:1rem;flex-wrap:wrap;justify-content:center}
+  .cta{padding:.7rem 1.2rem;border-radius:10px;text-decoration:none;font-weight:700;font-size:.9rem;background:#0077B6;color:#fff}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="https://praia.digital/">🏖️ Praia Digital</a>
+  <a href="https://praia.digital/guia-praias">Guia de Praias →</a>
+</header>
+<main>
+  <div class="card">
+    <h1>🏝️ Sua Praia Perfeita</h1>
+    <p class="sub">4 perguntas para encontrar seu paraíso no litoral paulista.</p>
+    <div class="barra"><div id="bar" style="width:25%"></div></div>
+    <div class="step active" data-s="0">
+      <p class="q">1. Seu fim de semana ideal é...</p>
+      <button class="opt" onclick="r(0,'agito')">🎉 Agito, bares e gente</button>
+      <button class="opt" onclick="r(0,'paz')">🧘 Paz, sossego e natureza</button>
+      <button class="opt" onclick="r(0,'familia')">👨‍👩‍👧 Diversão em família</button>
+    </div>
+    <div class="step" data-s="1">
+      <p class="q">2. Na água, você prefere...</p>
+      <button class="opt" onclick="r(1,'ondas')">🏄 Ondas para surfar</button>
+      <button class="opt" onclick="r(1,'calma')">🏊 Mar calmo para nadar</button>
+    </div>
+    <div class="step" data-s="2">
+      <p class="q">3. Orçamento de hospedagem?</p>
+      <button class="opt" onclick="r(2,'eco')">💰 Econômico</button>
+      <button class="opt" onclick="r(2,'medio')">💳 Médio</button>
+      <button class="opt" onclick="r(2,'luxo')">💎 Luxo</button>
+    </div>
+    <div class="step" data-s="3">
+      <p class="q">4. Distância de São Paulo?</p>
+      <button class="opt" onclick="r(3,'perto')">⚡ Perto (até 1h30)</button>
+      <button class="opt" onclick="r(3,'longe')">🚗 Aceito dirigir mais</button>
+    </div>
+    <div id="res">
+      <div class="praia">
+        <p>Sua praia perfeita é:</p>
+        <b id="nome"></b>
+        <p id="desc" style="font-size:.95rem;color:#475569"></p>
+        <div class="ctas">
+          <a class="cta" href="https://praia.digital/guia-praias">Explorar o Guia de Praias</a>
+          <a class="cta" id="cta2" href="#" style="background:#25d366">Ver imóveis na região</a>
+        </div>
+      </div>
+      <p style="text-align:center;margin-top:1rem"><a href="javascript:location.reload()" style="color:#64748b;font-size:.85rem">Refazer quiz</a></p>
+    </div>
+  </div>
+</main>
+<script>
+var resp_={};
+function r(s,v){
+  resp_[s]=v;
+  document.querySelectorAll('.step').forEach(function(e){e.classList.remove('active')});
+  var n=document.querySelector('.step[data-s="'+(s+1)+'"]');
+  document.getElementById('bar').style.width=((s+2)/4*100)+'%';
+  if(n){n.classList.add('active');return;}
+  var nome,desc;
+  if(resp_[2]==='luxo'){nome='Riviera de São Lourenço (Bertioga)';desc='Condomínio-planejado de alto padrão, praia preservada e a maior valorização do litoral.';}
+  else if(resp_[1]==='ondas'){nome='Maresias (São Sebastião)';desc='A capital paulista do surf: ondas o ano todo, vida noturna e natureza exuberante.';}
+  else if(resp_[0]==='paz'&&resp_[3]==='longe'){nome='Peruíbe';desc='Sossego, preços acessíveis e a vibe de cidade pequena de praia. Perfeita para desconectar.';}
+  else if(resp_[0]==='familia'){nome='Enseada (Guarujá)';desc='Mar calmo, orla completa e estrutura para crianças. A praia das famílias paulistanas.';}
+  else if(resp_[2]==='eco'){nome='Vila Tupi (Praia Grande)';desc='Orla revitalizada, preços amigos e pertinho de SP. Ótimo custo-benefício.';}
+  else{nome='Gonzaga (Santos)';desc='Urbano, completo e com a maior oferta de serviços do litoral. Praia + cidade grande.';}
+  document.getElementById('nome').textContent=nome;
+  document.getElementById('desc').textContent=desc;
+  document.getElementById('cta2').href='https://wa.me/5511954346288?text='+encodeURIComponent('Meu quiz deu: '+nome+'. Quero ver imóveis!');
+  document.getElementById('res').style.display='block';
+}
+</script>
+</body>
+</html>
