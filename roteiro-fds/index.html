@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roteiro de Fim de Semana no Litoral — Praia Digital</title>
+<meta name="description" content="Monte seu roteiro de sábado e domingo no litoral paulista: praias, restaurantes e passeios por perfil.">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,sans-serif}
+  body{background:#f0f9ff;color:#0f172a;min-height:100vh}
+  header{background:linear-gradient(135deg,#0077B6,#00B4D8);color:#fff;padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+  header a{color:#fff;text-decoration:none;font-weight:700}.logo{font-size:1.2rem}
+  main{max-width:680px;margin:2rem auto;padding:0 1rem}
+  .card{background:#fff;border-radius:16px;padding:1.75rem;box-shadow:0 4px 24px rgba(0,60,100,.08)}
+  h1{font-size:1.5rem;color:#0077B6}.sub{color:#64748b;margin:.3rem 0 1.2rem;font-size:.95rem}
+  label{display:block;font-weight:600;font-size:.85rem;margin:.9rem 0 .3rem}
+  select{width:100%;padding:.7rem;border:1px solid #cbd5e1;border-radius:10px;font-size:1rem}
+  button{width:100%;margin-top:1.3rem;padding:.9rem;border:0;border-radius:12px;background:#0077B6;color:#fff;font-weight:800;font-size:1rem;cursor:pointer}
+  #out{display:none;margin-top:1.3rem}
+  .dia{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:1rem;margin-top:.7rem}
+  .dia b{color:#0077B6}
+  .hora{display:flex;gap:.7rem;font-size:.9rem;padding:.35rem 0;border-bottom:1px dashed #e2e8f0}
+  .hora:last-child{border:0}
+  .hora span:first-child{font-weight:700;color:#0369a1;min-width:52px}
+  .dica{margin-top:1.2rem;background:#ecfeff;border:1px solid #67e8f9;border-radius:12px;padding:1rem;font-size:.9rem}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="https://praia.digital/">🏖️ Praia Digital</a>
+  <a href="https://praia.digital/guia-praias">Guia de Praias →</a>
+</header>
+<main>
+  <div class="card">
+    <h1>🗺️ Roteiro de Fim de Semana</h1>
+    <p class="sub">Escolha cidade e perfil — receba sábado e domingo planejados.</p>
+    <label>Cidade base</label>
+    <select id="cidade"><option>Santos</option><option>Guarujá</option><option>Praia Grande</option><option>Bertioga</option><option>Peruíbe</option></select>
+    <label>Perfil</label>
+    <select id="perfil"><option value="familia">👨‍👩‍👧 Família com crianças</option><option value="casal">❤️ Casal romântico</option><option value="aventura">🏄 Aventura e natureza</option></select>
+    <button onclick="gerar()">Montar roteiro</button>
+    <div id="out"></div>
+    <div class="dica">🏝️ Descubra sua praia ideal no <a href="https://praia.digital/quiz-praia-perfeita/" style="color:#0077B6;font-weight:700">Quiz Praia Perfeita</a> · Gostou da cidade? Veja imóveis no <a href="https://praia.digital/radar-ofertas/" style="color:#0077B6;font-weight:700">Radar de Ofertas</a></div>
+  </div>
+</main>
+<script>
+var roteiros={
+  familia:[['09:00','Café da manhã na orla'],['10:00','Praia com mar calmo e estrutura de quiosque'],['13:00','Almoço em restaurante com espaço kids'],['15:30','Sorveteria + passeio de bicicleta na ciclovia'],['19:00','Jantar cedo e descanso'],['08:30','Manhã de praia antes do movimento'],['12:00','Feirinha de artesanato local'],['14:00','Almoço e volta para casa sem pressa']],
+  casal:[['10:00','Café com vista para o mar'],['11:30','Praia mais tranquila da região'],['16:00','Pôr do sol no mirante'],['20:00','Jantar romântico à beira-mar'],['09:30','Trilha leve ou passeio de barco'],['13:00','Frutos do mar em restaurante escondido'],['15:30','Última caminhada na areia']],
+  aventura:[['07:00','Surf ou SUP no pico local'],['10:30','Café reforçado pós-mar'],['12:00','Trilha até mirante/cachoeira'],['16:00','Mergulho ou praia selvagem'],['19:30','Hamburgueria ou bar de surfistas'],['08:00','Aula de surf ou stand-up'],['11:00','Acarajé/pastel na feira'],['14:00','Último mergulho e estrada']]
+};
+function gerar(){
+  var c=document.getElementById('cidade').value, p=document.getElementById('perfil').value;
+  var r=roteiros[p];
+  var sab=r.slice(0,5), dom=r.slice(5);
+  function dia(titulo,itens){return '<div class="dia"><b>'+titulo+'</b>'+itens.map(function(i){return '<div class="hora"><span>'+i[0]+'</span><span>'+i[1]+'</span></div>'}).join('')+'</div>';}
+  document.getElementById('out').innerHTML='<p style="margin-top:.5rem;font-weight:700">Roteiro em '+c+':</p>'+dia('SÁBADO',sab)+dia('DOMINGO',dom);
+  document.getElementById('out').style.display='block';
+}
+</script>
+</body>
+</html>
