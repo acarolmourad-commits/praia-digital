@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roteiros de Bike e Caminhada na Orla — Praia Digital</title>
+<meta name="description" content="Os melhores trechos de orla para pedalar e caminhar no litoral paulista, por cidade e distância.">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,sans-serif}
+  body{background:#f0f9ff;color:#0f172a;min-height:100vh}
+  header{background:linear-gradient(135deg,#0077B6,#00B4D8);color:#fff;padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+  header a{color:#fff;text-decoration:none;font-weight:700}.logo{font-size:1.2rem}
+  main{max-width:720px;margin:2rem auto;padding:0 1rem}
+  .card{background:#fff;border-radius:16px;padding:1.75rem;box-shadow:0 4px 24px rgba(0,60,100,.08)}
+  h1{font-size:1.5rem;color:#0077B6}.sub{color:#64748b;margin:.3rem 0 1.2rem;font-size:.95rem}
+  .filtros{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.2rem}
+  .f{padding:.55rem 1rem;border:1px solid #cbd5e1;background:#fff;border-radius:999px;font-weight:600;cursor:pointer;font-size:.85rem}
+  .f.active{background:#0077B6;color:#fff;border-color:#0077B6}
+  .rota{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:1rem 1.1rem;margin-bottom:.6rem}
+  .rota h3{color:#0077B6;font-size:1rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.4rem}
+  .rota p{font-size:.88rem;color:#475569;margin:.3rem 0}
+  .km{font-weight:800;color:#166534;white-space:nowrap}
+  .dica{margin-top:1.2rem;background:#ecfeff;border:1px solid #67e8f9;border-radius:12px;padding:1rem;font-size:.9rem}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="https://praia.digital/">🏖️ Praia Digital</a>
+  <a href="https://praia.digital/guia-praias">Guia de Praias →</a>
+</header>
+<main>
+  <div class="card">
+    <h1>🚴 Bike e Caminhada na Orla</h1>
+    <p class="sub">Os melhores trechos para se exercitar com vista para o mar.</p>
+    <div class="filtros">
+      <button class="f active" onclick="filtrar('todas',this)">Todas</button>
+      <button class="f" onclick="filtrar('leve',this)">🚶 Leve (até 3km)</button>
+      <button class="f" onclick="filtrar('media',this)">🚴 Média (3–8km)</button>
+      <button class="f" onclick="filtrar('longa',this)">💪 Longa (8km+)</button>
+    </div>
+    <div id="lista"></div>
+    <div class="dica">🏝️ Morar perto de uma orla assim? Descubra sua <a href="https://praia.digital/quiz-praia-perfeita/" style="color:#0077B6;font-weight:700">Praia Perfeita</a> · 🗺️ <a href="https://praia.digital/roteiro-fds/" style="color:#0077B6;font-weight:700">Roteiro de FDS</a></div>
+  </div>
+</main>
+<script>
+var rotas=[
+  {n:'Orla de Santos (jardim da orla)',km:5.3,cat:'media',d:'O maior jardim de orla do mundo: gramado, ciclovia e coqueiros. Clássico absoluto.'},
+  {n:'Vila Tupi → Ocian (Praia Grande)',km:4.2,cat:'media',d:'Ciclovia revitalizada, quiosques novos e movimento o dia todo.'},
+  {n:'Enseada completa (Guarujá)',km:5.6,cat:'media',d:'A praia mais extensa do Guarujá, plana e com sombra de manhã.'},
+  {n:'Gonzaguinha (São Vicente)',km:2.1,cat:'leve',d:'Curta e charmosa, com teleférico e mirante no caminho.'},
+  {n:'Orla de Mongaguá',km:2.8,cat:'leve',d:'Tranquila, ideal para caminhadas em família no fim de tarde.'},
+  {n:'Riviera: módulo 1 ao 6 (Bertioga)',km:9.0,cat:'longa',d:'Ciclovia interna do condomínio, arborizada e segura.'},
+  {n:'Centro → Praia do Centro (Peruíbe)',km:3.4,cat:'media',d:'Passa pela feira de artesanato e pelo mirante do costão.'},
+  {n:'Itanhaém: Cibratel → Centro',km:6.2,cat:'longa',d:'Orla deserta e preservada, perfeita para longas pedaladas.'}
+];
+function filtrar(cat,btn){
+  document.querySelectorAll('.f').forEach(function(b){b.classList.remove('active')});
+  btn.classList.add('active');
+  var arr=cat==='todas'?rotas:rotas.filter(function(r){return r.cat===cat});
+  document.getElementById('lista').innerHTML=arr.map(function(r){
+    return '<div class="rota"><h3>'+r.n+' <span class="km">'+r.km+' km</span></h3><p>'+r.d+'</p></div>';
+  }).join('');
+}
+filtrar('todas',document.querySelector('.f'));
+</script>
+</body>
+</html>
