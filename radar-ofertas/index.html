@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radar de Ofertas — Praia Digital</title>
+<meta name="description" content="Monte seu perfil de busca e receba alertas de imóveis no litoral paulista direto no WhatsApp.">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,sans-serif}
+  body{background:#f0f9ff;color:#0f172a;min-height:100vh}
+  header{background:linear-gradient(135deg,#0077B6,#00B4D8);color:#fff;padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+  header a{color:#fff;text-decoration:none;font-weight:700}.logo{font-size:1.2rem}
+  main{max-width:680px;margin:2rem auto;padding:0 1rem}
+  .card{background:#fff;border-radius:16px;padding:1.75rem;box-shadow:0 4px 24px rgba(0,60,100,.08)}
+  h1{font-size:1.5rem;color:#0077B6}.sub{color:#64748b;margin:.3rem 0 1.2rem;font-size:.95rem}
+  label{display:block;font-weight:600;font-size:.85rem;margin:.9rem 0 .3rem}
+  input,select{width:100%;padding:.7rem;border:1px solid #cbd5e1;border-radius:10px;font-size:1rem}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:0 1rem}
+  @media(max-width:600px){.grid{grid-template-columns:1fr}}
+  button{width:100%;margin-top:1.3rem;padding:.95rem;border:0;border-radius:12px;background:#25d366;color:#fff;font-weight:800;font-size:1.05rem;cursor:pointer}
+  #preview{margin-top:1.2rem;background:#f8fafc;border:1px solid #cbd5e1;border-radius:12px;padding:1rem;font-size:.9rem;display:none;white-space:pre-wrap}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="https://praia.digital/">🏖️ Praia Digital</a>
+  <a href="https://praia.digital/apps">Rede de apps →</a>
+</header>
+<main>
+  <div class="card">
+    <h1>📡 Radar de Ofertas</h1>
+    <p class="sub">Configure seu perfil de busca. Nossa curadoria monitora o mercado e te avisa no WhatsApp quando surgir um imóvel compatível.</p>
+    <div class="grid">
+      <div><label>Cidade</label>
+        <select id="cidade"><option>Santos</option><option>Guarujá</option><option>Praia Grande</option><option>São Vicente</option><option>Bertioga</option><option>Mongaguá</option><option>Itanhaém</option><option>Peruíbe</option></select></div>
+      <div><label>Tipo</label>
+        <select id="tipo"><option>Apartamento</option><option>Casa</option><option>Cobertura</option><option>Studio</option><option>Terreno</option><option>Pousada</option></select></div>
+      <div><label>Quartos (mín.)</label><input type="number" id="quartos" value="2" min="0"></div>
+      <div><label>Orçamento máximo (R$)</label><input type="number" id="orc" value="600000" step="50000"></div>
+    </div>
+    <label>Objetivo</label>
+    <select id="obj"><option>Morar</option><option>Investir em temporada</option><option>Revender com valorização</option></select>
+    <button onclick="ativar()">🔔 Ativar meu radar no WhatsApp</button>
+    <div id="preview"></div>
+  </div>
+</main>
+<script>
+function ativar(){
+  var c=document.getElementById('cidade').value, t=document.getElementById('tipo').value;
+  var q=document.getElementById('quartos').value, o=document.getElementById('orc').value;
+  var ob=document.getElementById('obj').value;
+  var msg='📡 RADAR DE OFERTAS — Praia Digital\n\nCidade: '+c+'\nTipo: '+t+'\nQuartos: '+q+'+\nOrçamento: até R$ '+Number(o).toLocaleString('pt-BR')+'\nObjetivo: '+ob+'\n\nQuero receber alertas de imóveis compatíveis!';
+  document.getElementById('preview').textContent=msg;
+  document.getElementById('preview').style.display='block';
+  window.open('https://wa.me/5511954346288?text='+encodeURIComponent(msg),'_blank');
+}
+</script>
+</body>
+</html>
