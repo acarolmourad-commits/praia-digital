@@ -30,57 +30,270 @@ body {
 
 a { color: inherit; text-decoration: none; }
 
-/* Header */
-header {
+/* ===== Praia Digital Unified Header v2.0 ===== */
+
+.pd-header {
   background: linear-gradient(135deg, var(--ocean) 0%, var(--ocean-light) 100%);
   color: var(--white);
-  padding: 1rem 2rem;
+  padding: 0.75rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 1rem;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 5000;
   box-shadow: 0 2px 16px rgba(0,0,0,0.15);
 }
 
-.logo {
+.pd-logo {
   font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--white);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+/* Mobile hamburger toggle */
+.pd-nav-toggle {
+  display: none;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.35);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 0.45rem 0.75rem;
   font-weight: 700;
+  cursor: pointer;
+  font-size: 0.9rem;
+  align-items: center;
+  gap: 0.4rem;
+}
+.pd-nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--white);
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+/* Desktop nav menu */
+.pd-nav-menu {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--white);
+  flex-wrap: nowrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-nav {
+/* Nav group — dropdown container */
+.pd-nav-group {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown label trigger */
+.pd-nav-label {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-nav a {
+  gap: 0.35rem;
   color: var(--white);
-  font-weight: 500;
+  font-weight: 600;
   opacity: 0.9;
-  transition: opacity 0.2s;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.pd-nav-label:hover {
+  opacity: 1;
+  background: rgba(255,255,255,0.12);
+}
+.pd-nav-label[aria-expanded="true"] {
+  opacity: 1;
 }
 
-nav a:hover { opacity: 1; }
+/* Chevron icon */
+.pd-chevron {
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+}
 
-.nav-highlight-sale {
+/* Dropdown submenu */
+.pd-nav-submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: var(--dark);
+  border-radius: 10px;
+  padding: 0.5rem 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease;
+  z-index: 4999;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+.pd-nav-submenu a {
+  color: var(--white);
+  padding: 0.55rem 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 0.85;
+  transition: opacity 0.2s, background-color 0.2s;
+  white-space: nowrap;
+}
+.pd-nav-submenu a:hover {
+  opacity: 1;
+  background: rgba(255,255,255,0.1);
+}
+
+/* Open states (desktop hover / mobile click) */
+.pd-nav-group:hover .pd-nav-submenu,
+.pd-nav-submenu.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.pd-nav-group:hover .pd-chevron {
+  transform: rotate(180deg);
+}
+
+/* CTA button in nav */
+.pd-nav-cta {
   background: var(--amber);
-  color: var(--dark) !important;
-  padding: 0.35rem 0.9rem;
+  color: var(--dark);
+  padding: 0.5rem 1.1rem;
   border-radius: 50px;
-  font-weight: 700 !important;
-  opacity: 1 !important;
+  font-weight: 800;
+  text-decoration: none;
+  opacity: 1;
+  transition: background 0.2s;
+  white-space: nowrap;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.pd-nav-cta:hover {
+  background: #e6b000;
 }
 
-.nav-highlight-sale:hover { background: #e6b000; }
+/* ===== Mobile (tablet/phone) ===== */
+@media (max-width: 768px) {
+  .pd-nav-toggle {
+    display: inline-flex;
+  }
+
+  .pd-header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.6rem 1rem;
+  }
+
+  .pd-nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, var(--ocean) 0%, var(--ocean-light) 100%);
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem 0;
+    margin: 0;
+    border: none;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 4999;
+  }
+
+  .pd-nav-menu.open {
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  /* Mobile dropdown: accordion behavior */
+  .pd-nav-group {
+    margin-bottom: 0.4rem;
+  }
+
+  .pd-nav-submenu {
+    position: static;
+    background: rgba(0,0,0,0.2);
+    border-radius: 8px;
+    margin: 0.3rem 0 0 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    min-width: 0;
+  }
+  .pd-nav-submenu.open {
+    max-height: 300px;
+    padding: 0.3rem 0;
+  }
+  .pd-nav-submenu a {
+    padding: 0.5rem 1.5rem;
+    border-left: 2px solid transparent;
+  }
+  .pd-nav-submenu a:hover {
+    border-left-color: var(--amber);
+  }
+
+  .pd-nav-label {
+    padding: 0.55rem 1rem;
+    justify-content: space-between;
+  }
+
+  .pd-nav-cta {
+    margin: 0.5rem 1rem;
+    justify-content: center;
+  }
+}
+
+/* ===== Small phone ===== */
+@media (max-width: 480px) {
+  .pd-nav-submenu a {
+    padding: 0.5rem 1rem;
+  }
+  .pd-nav-cta {
+    margin: 0.5rem 0.5rem;
+  }
+}
+
+/* ===== Legacy fallbacks for old nav markup ===== */
+.pd-nav,
+.pd-nav-logo { display: none !important; }
+.pd-nav-menu,
+.pd-nav-group,
+.pd-nav-label,
+.pd-nav-submenu,
+.pd-nav-cta { display: block !important; }
+.pd-nav-toggle { display: none !important; }
 
 /* Main content area */
 main {
