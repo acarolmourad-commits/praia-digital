@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guia de Praias Interativo — Praia Digital</title>
+<meta name="description" content="Descubra a praia ideal para você no litoral paulista: perfil, estrutura e imóveis próximos.">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,sans-serif}
+  body{background:#f0f9ff;color:#0f172a;min-height:100vh}
+  header{background:linear-gradient(135deg,#0077B6,#00B4D8);color:#fff;padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+  header a{color:#fff;text-decoration:none;font-weight:700}.logo{font-size:1.2rem}
+  main{max-width:760px;margin:2rem auto;padding:0 1rem}
+  h1{font-size:1.5rem;color:#0077B6}.sub{color:#64748b;margin:.3rem 0 1.2rem;font-size:.95rem}
+  .filtros{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.2rem}
+  .f{padding:.55rem 1rem;border:1px solid #cbd5e1;background:#fff;border-radius:999px;font-weight:600;cursor:pointer;font-size:.85rem}
+  .f.active{background:#0077B6;color:#fff;border-color:#0077B6}
+  .praia{background:#fff;border-radius:14px;padding:1.1rem 1.25rem;margin-bottom:.7rem;box-shadow:0 2px 10px rgba(0,60,100,.06)}
+  .praia h3{color:#0077B6;font-size:1.05rem}
+  .praia p{font-size:.9rem;color:#475569;margin:.3rem 0 .5rem}
+  .tags{display:flex;gap:.4rem;flex-wrap:wrap}
+  .tag{background:#e0f2fe;color:#0369a1;font-size:.75rem;font-weight:600;border-radius:999px;padding:.2rem .6rem}
+  .praia a{color:#0077B6;font-weight:700;font-size:.85rem;text-decoration:none}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="https://praia.digital/">🏖️ Praia Digital</a>
+  <a href="https://praia.digital/apps">Rede de apps →</a>
+</header>
+<main>
+  <h1>🏝️ Guia de Praias Interativo</h1>
+  <p class="sub">Filtre pelo seu perfil e encontre a praia — e o mercado imobiliário — ideal.</p>
+  <div class="filtros">
+    <button class="f active" onclick="filtrar('todas',this)">Todas</button>
+    <button class="f" onclick="filtrar('familia',this)">👨‍👩‍👧 Família</button>
+    <button class="f" onclick="filtrar('surf',this)">🏄 Surf</button>
+    <button class="f" onclick="filtrar('luxo',this)">💎 Luxo</button>
+    <button class="f" onclick="filtrar('economica',this)">💰 Econômica</button>
+  </div>
+  <div id="lista"></div>
+</main>
+<script>
+var praias=[
+  {n:'Gonzaguinha — São Vicente',d:'Orla urbanizada, fácil acesso, mercado imobiliário líquido.',tags:['familia','economica'],c:'São Vicente'},
+  {n:'Astúrias — Guarujá',d:'Movimentada, ótima estrutura e alta demanda de temporada.',tags:['familia'],c:'Guarujá'},
+  {n:'Enseada — Guarujá',d:'A mais extensa do Guarujá, queridinha das famílias.',tags:['familia'],c:'Guarujá'},
+  {n:'Pitangueiras — Guarujá',d:'Centro, comércio forte e prédios com vista mar.',tags:['luxo'],c:'Guarujá'},
+  {n:'Riviera de São Lourenço — Bertioga',d:'Condomínio-planejado de alto padrão, maior valorização da região.',tags:['luxo','familia'],c:'Bertioga'},
+  {n:'Maresias — São Sebastião',d:'Capital do surf, ondas consistentes o ano todo.',tags:['surf'],c:'São Sebastião'},
+  {n:'Itaguá — Ubatuba',d:'Centro, praias urbanas e porta para o norte do litoral.',tags:['familia'],c:'Ubatuba'},
+  {n:'Vila Tupi — Praia Grande',d:'Orla revitalizada, preços acessíveis e metrô próximo.',tags:['economica','familia'],c:'Praia Grande'},
+  {n:'Balneário Flórida — Praia Grande',d:'Tranquila e barata, ótima para primeiro imóvel.',tags:['economica'],c:'Praia Grande'},
+  {n:'Centro — Peruíbe',d:'Frontier de valorização, preços ainda baixos.',tags:['economica','surf'],c:'Peruíbe'}
+];
+function filtrar(cat,btn){
+  document.querySelectorAll('.f').forEach(function(b){b.classList.remove('active')});
+  btn.classList.add('active');
+  var arr=cat==='todas'?praias:praias.filter(function(p){return p.tags.indexOf(cat)>=0});
+  document.getElementById('lista').innerHTML=arr.map(function(p){
+    return '<div class="praia"><h3>🏖️ '+p.n+'</h3><p>'+p.d+'</p><div class="tags">'+p.tags.map(function(t){return '<span class="tag">'+t+'</span>'}).join('')+'</div><p style="margin-top:.6rem"><a href="https://praia.digital/avaliador-imoveis">Avaliar imóvel em '+p.c+' →</a></p></div>';
+  }).join('')||'<p>Nenhuma praia encontrada.</p>';
+}
+filtrar('todas',document.querySelector('.f'));
+</script>
+</body>
+</html>
