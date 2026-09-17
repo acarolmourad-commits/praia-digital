@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mapa de Bairros — Explore o Litoral Paulista por Perfil | Praia Digital</title>
+<meta name="description" content="Explorador interativo de cidades e bairros do litoral paulista: filtre por perfil (família, investidor, surfista, aposentado) e encontre sua praia ideal.">
+<style>
+body{font-family:system-ui,sans-serif;margin:0;background:#f0fdfa;color:#134e4a;line-height:1.6}
+nav{background:#0f766e;padding:12px 20px;display:flex;gap:14px;flex-wrap:wrap}
+nav a{color:#99f6e4;text-decoration:none;font-weight:600;font-size:.95em}
+.hero{background:linear-gradient(135deg,#0f766e,#14b8a6);color:#fff;padding:50px 20px;text-align:center}
+.container{max-width:960px;margin:0 auto;padding:30px 20px}
+.filtros{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:16px 0}
+.fil{background:#ccfbf1;border:2px solid #14b8a6;color:#0f766e;padding:8px 18px;border-radius:999px;cursor:pointer;font-weight:600}
+.fil.on{background:#0f766e;color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.b{background:#fff;border-radius:12px;padding:18px;box-shadow:0 2px 8px rgba(0,0,0,.08);border-top:5px solid #14b8a6}
+.tag{display:inline-block;background:#ccfbf1;color:#0f766e;font-size:.75em;padding:2px 10px;border-radius:999px;margin:2px}
+footer{text-align:center;padding:24px;color:#0f766e;font-size:.9em}
+</style>
+</head>
+<body>
+<nav>
+<a href="https://praia.digital/">🌊 Praia Digital</a>
+<a href="https://praia.digital/apps/">🗂️ Apps</a>
+<a href="https://praia.digital/radar-m2/">Radar m²</a>
+<a href="https://praia.digital/match-imobiliario/">Match Imobiliário</a>
+<a href="https://praia.digital/guia-litoral/">Guia do Litoral</a>
+</nav>
+<div class="hero"><h1>🗺️ Mapa de Bairros</h1><p>Filtre pelo seu perfil e descubra onde morar ou investir no litoral.</p></div>
+<div class="container">
+<div class="filtros" id="filtros"></div>
+<div class="grid" id="grid"></div>
+<div class="card" style="margin-top:20px;background:#fff;border-radius:12px;padding:20px">
+<p>💘 Quer uma recomendação direta? <a href="https://praia.digital/match-imobiliario/">Match Imobiliário</a> · 📡 <a href="https://praia.digital/radar-m2/">Preços por m²</a> · 📚 <a href="https://praia.digital/bairros/index.html">Guia completo de bairros</a></p>
+</div>
+</div>
+<footer>Parte da rede <a href="https://praia.digital/apps/">Apps Praia Digital</a> · <a href="https://praia.digital/">praia.digital</a></footer>
+<script>
+const bairros=[
+{n:'Ocian / Vila Mirim',c:'Praia Grande',t:['familia','investidor'],d:'Melhor custo-benefício da Baixada: comércio forte, m² ~R$ 6.900 e rental yield líder.'},
+{n:'Boqueirão / Gonzaga',c:'Santos',t:['familia','aposentado'],d:'Orla urbanizada, serviços completos, m² ~R$ 10.800. Praia de cidade grande.'},
+{n:'Enseada / Pitangueiras',c:'Guarujá',t:['familia','investidor'],d:'Forte em temporada: m² ~R$ 11.200 e ocupação alta o ano todo.'},
+{n:'Riviera (módulos 1-13)',c:'Bertioga (Riviera)',t:['familia','luxo'],d:'Condomínio planejado, segurança e valorização de ~7% a.a.'},
+{n:'Centro / Indaiá',c:'Bertioga',t:['investidor','surfista'],d:'Cidade em transformação: maior valorização do litoral (~8,9% a.a.), m² ~R$ 7.400.'},
+{n:'Maresias / Juquehy',c:'São Sebastião',t:['surfista','luxo'],d:'Point de surf e alto padrão, diárias premium na temporada.'},
+{n:'Centro / Perequê',c:'Ilhabela',t:['luxo','aposentado'],d:'Ilha paradisíaca, m² ~R$ 12.500, forte turismo náutico.'},
+{n:'Centro / Praia Grande',c:'Ubatuba',t:['surfista','familia'],d:'100+ praias, ecoturismo, m² ~R$ 8.200.'},
+{n:'Centro',c:'Peruíbe',t:['aposentado','investidor'],d:'Menor m² do litoral (~R$ 3.800): entrada acessível p/ primeiro imóvel.'},
+{n:'Centro / Balneários',c:'Mongaguá',t:['aposentado'],d:'Tranquila e barata (~R$ 4.200/m²), ideal para aposentadoria.'}];
+const perfis=[['todos','Todos'],['familia','👨‍👩‍👧 Família'],['investidor','💰 Investidor'],['surfista','🏄 Surfista'],['aposentado','🌅 Aposentado'],['luxo','💎 Luxo']];
+let ativo='todos';
+document.getElementById('filtros').innerHTML=perfis.map(p=>`<button class="fil ${p[0]=='todos'?'on':''}" onclick="f('${p[0]}',this)">${p[1]}</button>`).join('');
+function draw(){document.getElementById('grid').innerHTML=bairros.filter(b=>ativo=='todos'||b.t.includes(ativo)).map(b=>`<div class="b"><h3>${b.n}</h3><p style="color:#0f766e;font-weight:600;margin:0 0 6px">${b.c}</p><p>${b.d}</p>${b.t.map(t=>'<span class="tag">'+t+'</span>').join('')}</div>`).join('');}
+function f(p,el){ativo=p;document.querySelectorAll('.fil').forEach(e=>e.classList.remove('on'));el.classList.add('on');draw();}
+draw();
+</script>
+</body>
+</html>

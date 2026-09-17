@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gerador de Anúncios — Airbnb e Booking Otimizados | Praia Digital</title>
+<meta name="description" content="Gere um anúncio otimizado e persuasivo para Airbnb, Booking e VRBO a partir das características do seu imóvel no litoral. Grátis e instantâneo.">
+<style>
+body{font-family:system-ui,sans-serif;margin:0;background:#faf5ff;color:#581c87;line-height:1.6}
+nav{background:#7e22ce;padding:12px 20px;display:flex;gap:14px;flex-wrap:wrap}
+nav a{color:#e9d5ff;text-decoration:none;font-weight:600;font-size:.95em}
+.hero{background:linear-gradient(135deg,#7e22ce,#a855f7);color:#fff;padding:50px 20px;text-align:center}
+.container{max-width:720px;margin:0 auto;padding:30px 20px}
+.card{background:#fff;border-radius:12px;padding:24px;margin:16px 0;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+label{font-weight:600;display:block;margin:10px 0 4px}
+input,select{width:100%;padding:10px;border:1px solid #e9d5ff;border-radius:8px;box-sizing:border-box}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0}
+.chip{background:#f3e8ff;border:2px solid #d8b4fe;color:#7e22ce;padding:6px 14px;border-radius:999px;cursor:pointer;font-size:.9em}
+.chip.on{background:#7e22ce;color:#fff}
+button.g{background:#9333ea;color:#fff;border:0;padding:14px 28px;border-radius:8px;font-weight:700;font-size:1.05em;cursor:pointer;margin-top:14px}
+#anuncio{white-space:pre-wrap;background:#faf5ff;border:1px solid #e9d5ff;border-radius:10px;padding:18px;margin-top:16px;display:none}
+footer{text-align:center;padding:24px;color:#7e22ce;font-size:.9em}
+</style>
+</head>
+<body>
+<nav>
+<a href="https://praia.digital/">🌊 Praia Digital</a>
+<a href="https://praia.digital/apps/">🗂️ Apps</a>
+<a href="https://praia.digital/area-anfitriao/">Área do Anfitrião</a>
+<a href="https://praia.digital/simulador-roi/">Simulador ROI</a>
+<a href="https://praia.digital/concierge-ia/">Concierge IA</a>
+</nav>
+<div class="hero"><h1>✨ Gerador de Anúncios</h1><p>Anúncio otimizado para Airbnb/Booking em 30 segundos. Grátis.</p></div>
+<div class="container">
+<div class="card">
+<label>Tipo de imóvel</label><select id="tipo"><option>Apartamento</option><option>Casa</option><option>Kitnet / Studio</option><option>Cobertura</option><option>Pousada / Chalé</option></select>
+<label>Cidade / Bairro</label><input id="local" value="Praia Grande — Ocian">
+<label>Quartos</label><select id="quartos"><option>1</option><option selected>2</option><option>3</option><option>4+</option></select>
+<label>Diferenciais (clique para selecionar)</label>
+<div class="chips" id="chips"></div>
+<button class="g" onclick="gerar()">✨ Gerar anúncio</button>
+<div id="anuncio"></div>
+</div>
+<div class="card">
+<h2>Quer um texto profissional?</h2>
+<p>Copywriting de alta conversão por <strong>R$ 497 no PIX</strong>: <a href="mailto:comercial@praia.digital?subject=Anúncio profissional">comercial@praia.digital</a> · Leia o <a href="https://praia.digital/blog/checklist-anuncio-perfeito-airbnb-booking-litoral-2026.html">Checklist do anúncio perfeito</a> · 🌟 <a href="https://praia.digital/area-anfitriao/">Área do Anfitrião</a></p>
+</div>
+</div>
+<footer>Parte da rede <a href="https://praia.digital/apps/">Apps Praia Digital</a> · <a href="https://praia.digital/">praia.digital</a></footer>
+<script>
+const diffs=['Vista para o mar 🌊','Pé na areia 🏖️','Piscina 🏊','Churrasqueira 🍖','Wi-Fi rápido 📶','Ar-condicionado ❄️','Pet-friendly 🐾','Estacionamento 🚗','TV Smart 📺','Varanda gourmet 🌅'];
+const on=new Set();
+document.getElementById('chips').innerHTML=diffs.map(d=>`<span class="chip" onclick="t(this,'${d}')">${d}</span>`).join('');
+function t(el,d){el.classList.toggle('on');on.has(d)?on.delete(d):on.add(d);}
+function gerar(){
+const tipo=document.getElementById('tipo').value,local=document.getElementById('local').value||'Litoral Paulista',q=document.getElementById('quartos').value;
+const lista=[...on];
+const titulo=`${tipo} ${q} quarto(s) em ${local}${lista.length?' · '+lista[0].replace(/[^\p{L} ]/gu,'').trim():''}`;
+const txt=`🏖️ ${titulo.toUpperCase()}\n\nBem-vindo ao seu refúgio em ${local}! Este ${tipo.toLowerCase()} com ${q} quarto(s) foi preparado para você viver o melhor do litoral.\n\n✨ DIFERENCIAIS\n${lista.length?lista.map(d=>'• '+d).join('\n'):'• Conforto e praticidade a poucos minutos da praia'}\n\n📍 LOCALIZAÇÃO\nLocalização estratégica em ${local} — perto de mercados, restaurantes e, claro, do mar.\n\n🛏️ ACOMODAÇÕES\n${q} quarto(s) completos, cozinha equipada e tudo o que você precisa para dias inesquecíveis.\n\nReserve agora e garanta suas datas na melhor temporada! 📅`;
+const el=document.getElementById('anuncio');el.style.display='block';el.textContent=txt;
+if(navigator.clipboard){navigator.clipboard.writeText(txt);el.textContent=txt+'\n\n✅ Copiado para a área de transferência!';}}
+</script>
+</body>
+</html>

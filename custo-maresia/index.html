@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custo Maresia — O Custo Real de Manter Imóvel na Praia | Praia Digital</title>
+<meta name="description" content="Calculadora do custo real de manutenção de imóvel no litoral: maresia, condomínio, IPTU e reserva de obras — a conta que ninguém faz antes de comprar.">
+<style>
+body{font-family:system-ui,sans-serif;margin:0;background:#fff1f2;color:#881337;line-height:1.6}
+nav{background:#be123c;padding:12px 20px;display:flex;gap:14px;flex-wrap:wrap}
+nav a{color:#fecdd3;text-decoration:none;font-weight:600;font-size:.95em}
+.hero{background:linear-gradient(135deg,#be123c,#fb7185);color:#fff;padding:50px 20px;text-align:center}
+.container{max-width:720px;margin:0 auto;padding:30px 20px}
+.card{background:#fff;border-radius:12px;padding:24px;margin:16px 0;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+label{font-weight:600;display:block;margin:10px 0 4px}
+input,select{width:100%;padding:10px;border:1px solid #fecdd3;border-radius:8px;box-sizing:border-box}
+button{background:#e11d48;color:#fff;border:0;padding:14px 28px;border-radius:8px;font-weight:700;font-size:1.05em;cursor:pointer;margin-top:14px}
+#out{margin-top:16px}
+.lin{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #ffe4e6}
+.tot{font-weight:700;font-size:1.2em;color:#9f1239}
+footer{text-align:center;padding:24px;color:#be123c;font-size:.9em}
+</style>
+</head>
+<body>
+<nav>
+<a href="https://praia.digital/">🌊 Praia Digital</a>
+<a href="https://praia.digital/apps/">🗂️ Apps</a>
+<a href="https://praia.digital/plano-patrimonio/">Plano Patrimônio</a>
+<a href="https://praia.digital/caca-ofertas/">Caça-Ofertas</a>
+<a href="https://praia.digital/simulador-roi/">Simulador ROI</a>
+</nav>
+<div class="hero"><h1>🌊 Custo Maresia</h1><p>A conta que ninguém faz antes de comprar: quanto custa manter um imóvel na praia por ano.</p></div>
+<div class="container">
+<div class="card">
+<label>Valor do imóvel (R$)</label><input id="valor" type="number" value="450000">
+<label>Distância da praia</label><select id="dist"><option value="1.5">Frente mar / até 200m</option><option value="1.2" selected>200–600m</option><option value="1.0">Mais de 600m</option></select>
+<label>Condomínio mensal (R$)</label><input id="cond" type="number" value="600">
+<label>Uso</label><select id="uso"><option value="temporada">Temporada (locação)</option><option value="moradia">Moradia</option><option value="fechado">Fica fechado (fins de semana)</option></select>
+<button onclick="calc()">🌊 Calcular custo anual</button>
+<div id="out"></div>
+</div>
+<div class="card">
+<p>Inclua esse custo na sua <a href="https://praia.digital/plano-patrimonio/">projeção patrimonial</a> e no <a href="https://praia.digital/simulador-roi/">ROI de temporada</a>. Custo de compra: <a href="https://praia.digital/blog/guia-custo-real-compra-imovel-litoral-2026.html">guia completo</a></p>
+</div>
+</div>
+<footer>Parte da rede <a href="https://praia.digital/apps/">Apps Praia Digital</a> · <a href="https://praia.digital/">praia.digital</a></footer>
+<script>
+function fmt(v){return 'R$ '+Math.round(v).toLocaleString('pt-BR');}
+function calc(){
+const v=parseFloat(document.getElementById('valor').value)||0,d=parseFloat(document.getElementById('dist').value),c=(parseFloat(document.getElementById('cond').value)||0)*12,u=document.getElementById('uso').value;
+const iptu=v*0.01;
+const manut=v*0.008*d; // maresia: pintura, corrosão, ar-condicionado
+const limpeza=u=='temporada'?4800:(u=='fechado'?1800:0);
+const mobilia=u=='temporada'?v*0.015:0;
+const total=iptu+c+manut+limpeza+mobilia;
+document.getElementById('out').innerHTML=`<div class="lin"><span>IPTU (~1%)</span><span>${fmt(iptu)}</span></div><div class="lin"><span>Condomínio</span><span>${fmt(c)}</span></div><div class="lin"><span>Manutenção e maresia</span><span>${fmt(manut)}</span></div><div class="lin"><span>Limpeza/zeladoria</span><span>${fmt(limpeza)}</span></div><div class="lin"><span>Reposição de mobília</span><span>${fmt(mobilia)}</span></div><div class="lin tot"><span>Total anual</span><span>${fmt(total)} (${fmt(total/12)}/mês)</span></div><p style="margin-top:10px">💡 Isso representa <strong>${(total/v*100).toFixed(1)}%</strong> do valor do imóvel por ano.</p>`;}
+</script>
+</body>
+</html>
