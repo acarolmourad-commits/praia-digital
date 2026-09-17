@@ -159,3 +159,30 @@
     boot();
   }
 })();
+
+// Boost de visibilidade — imóvel id:25 (Casa em condomínio fechado — Bertioga)
+(function () {
+  function boost() {
+    try {
+      if (typeof listings === 'undefined' || !Array.isArray(listings)) return;
+      var p = null;
+      for (var i = 0; i < listings.length; i++) { if (listings[i].id === 25) { p = listings[i]; break; } }
+      if (!p) return;
+      p.badge = '\uD83D\uDD25 Destaque';
+      p.destaque = true;
+      if (p.aiScore < 96) p.aiScore = 96;
+      listings.sort(function (a, b) { return a.id === 25 ? -1 : b.id === 25 ? 1 : 0; });
+      if (typeof currentFilter !== 'undefined' && typeof renderListings === 'function') {
+        currentFilter = listings.slice();
+        renderListings(currentFilter);
+        var count = document.getElementById('resultsCount');
+        if (count) count.textContent = currentFilter.length + ' imóveis encontrados';
+      }
+    } catch (e) { /* noop */ }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', boost);
+  } else {
+    boost();
+  }
+})();
