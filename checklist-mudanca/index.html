@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checklist Mudança para o Litoral — Guia Interativo | Praia Digital</title>
+<meta name="description" content="Checklist interativo para quem vai se mudar para o litoral paulista: documentos, imóvel, serviços e adaptação — progresso salvo no navegador.">
+<style>
+body{font-family:system-ui,sans-serif;margin:0;background:#ecfdf5;color:#064e3b;line-height:1.6}
+nav{background:#047857;padding:12px 20px;display:flex;gap:14px;flex-wrap:wrap}
+nav a{color:#a7f3d0;text-decoration:none;font-weight:600;font-size:.95em}
+.hero{background:linear-gradient(135deg,#047857,#10b981);color:#fff;padding:50px 20px;text-align:center}
+.container{max-width:720px;margin:0 auto;padding:30px 20px}
+.card{background:#fff;border-radius:12px;padding:24px;margin:16px 0;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.item{display:flex;gap:10px;align-items:center;padding:10px;border-bottom:1px solid #d1fae5;cursor:pointer}
+.item:hover{background:#f0fdf4}
+.item input{width:20px;height:20px;accent-color:#059669}
+.done{text-decoration:line-through;color:#9ca3af}
+#barra{height:14px;background:#d1fae5;border-radius:999px;overflow:hidden;margin:10px 0}
+#fill{height:100%;background:#059669;width:0%;transition:width .3s}
+footer{text-align:center;padding:24px;color:#047857;font-size:.9em}
+</style>
+</head>
+<body>
+<nav>
+<a href="https://praia.digital/">🌊 Praia Digital</a>
+<a href="https://praia.digital/apps/">🗂️ Apps</a>
+<a href="https://praia.digital/match-imobiliario/">Match Imobiliário</a>
+<a href="https://praia.digital/radar-m2/">Radar m²</a>
+<a href="https://praia.digital/concierge-ia/">Concierge IA</a>
+</nav>
+<div class="hero"><h1>📋 Checklist Mudança para o Litoral</h1><p>Seu progresso fica salvo no navegador. Boa mudança! 🏖️</p></div>
+<div class="container">
+<div class="card">
+<h2>Progresso: <span id="pct">0%</span></h2>
+<div id="barra"><div id="fill"></div></div>
+<div id="lista"></div>
+</div>
+<div class="card">
+<h2>Ainda escolhendo a cidade?</h2>
+<p>💘 <a href="https://praia.digital/match-imobiliario/">Faça o Match Imobiliário</a> · 📡 <a href="https://praia.digital/radar-m2/">Compare o m² no Radar</a> · 🏦 <a href="https://praia.digital/simulador-credito/">Simule o financiamento</a> · 📊 <a href="https://praia.digital/guia-litoral/">Guia de bairros e relatórios</a></p>
+</div>
+</div>
+<footer>Parte da rede <a href="https://praia.digital/apps/">Apps Praia Digital</a> · <a href="https://praia.digital/">praia.digital</a></footer>
+<script>
+const itens=['Definir cidade e bairro (use o Radar m²)','Simular financiamento (FGTS/SBPE/MCMV)','Visitar o imóvel em dia de semana e fim de semana','Verificar documentação e matrícula','Calcular custo real (ITBI, cartório, escritura)','Reservar valor para mudança e mobília','Contratar internet e verificar cobertura','Transferir contas de água/luz','Atualizar endereço em bancos e cadastros','Plano de saúde: rede credenciada na cidade','Conhecer mercados, farmácias e hospital local','Testar o trajeto de trabalho/escola em horário de pico','Proteção contra maresia (móveis e eletrônicos)','Fazer as malas e celebrar! 🎉'];
+const saved=JSON.parse(localStorage.getItem('pd-checklist')||'[]');
+const lista=document.getElementById('lista');
+function draw(){lista.innerHTML=itens.map((t,i)=>`<label class="item ${saved[i]?'done':''}"><input type="checkbox" ${saved[i]?'checked':''} onchange="toggle(${i})"> ${t}</label>`).join('');
+const pct=Math.round(saved.filter(Boolean).length/itens.length*100);
+document.getElementById('pct').textContent=pct+'%';document.getElementById('fill').style.width=pct+'%';}
+function toggle(i){saved[i]=!saved[i];localStorage.setItem('pd-checklist',JSON.stringify(saved));draw();}
+draw();
+</script>
+</body>
+</html>

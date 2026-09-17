@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plano Patrimônio — Projeção de 10 Anos com Imóvel no Litoral | Praia Digital</title>
+<meta name="description" content="Projete seu patrimônio a 10 anos combinando valorização do imóvel no litoral paulista com renda de locação de temporada.">
+<style>
+body{font-family:system-ui,sans-serif;margin:0;background:#f0f9ff;color:#0c4a6e;line-height:1.6}
+nav{background:#075985;padding:12px 20px;display:flex;gap:14px;flex-wrap:wrap}
+nav a{color:#bae6fd;text-decoration:none;font-weight:600;font-size:.95em}
+.hero{background:linear-gradient(135deg,#075985,#0ea5e9);color:#fff;padding:50px 20px;text-align:center}
+.container{max-width:760px;margin:0 auto;padding:30px 20px}
+.card{background:#fff;border-radius:12px;padding:24px;margin:16px 0;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+label{font-weight:600;display:block;margin:10px 0 4px}
+input,select{width:100%;padding:10px;border:1px solid #bae6fd;border-radius:8px;box-sizing:border-box}
+button{background:#0284c7;color:#fff;border:0;padding:14px 28px;border-radius:8px;font-weight:700;font-size:1.05em;cursor:pointer;margin-top:14px}
+table{width:100%;border-collapse:collapse;margin-top:12px}
+th,td{padding:8px;border-bottom:1px solid #e0f2fe;text-align:right}
+th:first-child,td:first-child{text-align:left}
+.total{font-weight:700;color:#075985}
+footer{text-align:center;padding:24px;color:#64748b;font-size:.9em}
+</style>
+</head>
+<body>
+<nav>
+<a href="https://praia.digital/">🌊 Praia Digital</a>
+<a href="https://praia.digital/apps/">🗂️ Apps</a>
+<a href="https://praia.digital/radar-m2/">Radar m²</a>
+<a href="https://praia.digital/simulador-roi/">Simulador ROI</a>
+<a href="https://praia.digital/caca-ofertas/">Caça-Ofertas</a>
+</nav>
+<div class="hero"><h1>📈 Plano Patrimônio</h1><p>Valorização + renda de temporada: veja seu patrimônio em 10 anos no litoral.</p></div>
+<div class="container">
+<div class="card">
+<label>Cidade do imóvel</label><select id="cidade"></select>
+<label>Valor do imóvel hoje (R$)</label><input id="valor" type="number" value="450000">
+<label>Renda anual de temporada (R$)</label><input id="renda" type="number" value="24000">
+<button onclick="proj()">📈 Projetar 10 anos</button>
+<div id="out"></div>
+</div>
+<div class="card">
+<p>Valorizações baseadas no <a href="https://praia.digital/radar-m2/">Radar m²</a> · Estime a renda no <a href="https://praia.digital/simulador-roi/">Simulador ROI</a> · Leia: <a href="https://praia.digital/blog/tecnologia-dados-ia-investimento-imobiliario-baixada-santista-2026.html">IA no investimento imobiliário</a></p>
+</div>
+</div>
+<footer>Parte da rede <a href="https://praia.digital/apps/">Apps Praia Digital</a> · <a href="https://praia.digital/">praia.digital</a></footer>
+<script>
+const val={'Riviera de São Lourenço':7.2,'Ilhabela':6.8,'São Sebastião':6.1,'Guarujá':5.8,'Ubatuba':5.5,'Caraguatatuba':5.2,'Santos':4.9,'Praia Grande':4.6,'Itanhaém':4.3,'Mongaguá':4.1,'Peruíbe':4.0,'São Vicente':3.9,'Bertioga':8.9};
+const sel=document.getElementById('cidade');
+Object.keys(val).sort((a,b)=>val[b]-val[a]).forEach(c=>sel.add(new Option(c+' ('+val[c]+'% a.a.)',c)));
+function fmt(v){return 'R$ '+Math.round(v).toLocaleString('pt-BR');}
+function proj(){
+const v0=parseFloat(document.getElementById('valor').value)||0,r=parseFloat(document.getElementById('renda').value)||0,taxa=val[sel.value]/100;
+let v=v0,acum=0,rows='';
+for(let y=2026;y<=2036;y++){v=v*(1+taxa);acum+=r;rows+=`<tr><td>${y}</td><td>${fmt(v)}</td><td>${fmt(acum)}</td><td class="total">${fmt(v+acum)}</td></tr>`;}
+document.getElementById('out').innerHTML=`<table><tr><th>Ano</th><th>Valor do imóvel</th><th>Renda acumulada</th><th>Patrimônio total</th></tr>${rows}</table>`;}
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caça-Ofertas — Score de Oportunidade Imobiliária no Litoral | Praia Digital</title>
+<meta name="description" content="Cole o preço e a área de um anúncio e descubra na hora se é uma pechincha ou está acima do mercado — score vs média do m² da cidade no litoral paulista.">
+<style>
+body{font-family:system-ui,sans-serif;margin:0;background:#fefce8;color:#713f12;line-height:1.6}
+nav{background:#a16207;padding:12px 20px;display:flex;gap:14px;flex-wrap:wrap}
+nav a{color:#fef9c3;text-decoration:none;font-weight:600;font-size:.95em}
+.hero{background:linear-gradient(135deg,#a16207,#eab308);color:#fff;padding:50px 20px;text-align:center}
+.container{max-width:720px;margin:0 auto;padding:30px 20px}
+.card{background:#fff;border-radius:12px;padding:24px;margin:16px 0;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+label{font-weight:600;display:block;margin:10px 0 4px}
+input,select{width:100%;padding:10px;border:1px solid #fde68a;border-radius:8px;box-sizing:border-box}
+button{background:#ca8a04;color:#fff;border:0;padding:14px 28px;border-radius:8px;font-weight:700;font-size:1.05em;cursor:pointer;margin-top:14px}
+#score{font-size:1.3em;font-weight:700;margin-top:16px;text-align:center}
+footer{text-align:center;padding:24px;color:#a16207;font-size:.9em}
+</style>
+</head>
+<body>
+<nav>
+<a href="https://praia.digital/">🌊 Praia Digital</a>
+<a href="https://praia.digital/apps/">🗂️ Apps</a>
+<a href="https://praia.digital/radar-m2/">Radar m²</a>
+<a href="https://praia.digital/match-imobiliario/">Match Imobiliário</a>
+<a href="https://praia.digital/concierge-ia/">Concierge IA</a>
+</nav>
+<div class="hero"><h1>🎯 Caça-Ofertas</h1><p>É pechincha ou cilada? Descubra o score de qualquer anúncio em 10 segundos.</p></div>
+<div class="container">
+<div class="card">
+<label>Cidade</label><select id="cidade"></select>
+<label>Preço do anúncio (R$)</label><input id="preco" type="number" value="450000">
+<label>Área (m²)</label><input id="area" type="number" value="65">
+<button onclick="calc()">🎯 Calcular Score</button>
+<div id="score"></div>
+</div>
+<div class="card">
+<h2>Como interpretar</h2>
+<ul>
+<li>🔥 <strong>Score 80+:</strong> oportunidade rara — 15%+ abaixo da média</li>
+<li>✅ <strong>60–79:</strong> bom negócio — abaixo da média</li>
+<li>⚖️ <strong>40–59:</strong> preço de mercado</li>
+<li>⚠️ <strong>Abaixo de 40:</strong> acima da média — negocie ou compare</li>
+</ul>
+<p>Dados de média do <a href="https://praia.digital/radar-m2/">Radar m²</a> · Custo total de compra: <a href="https://praia.digital/blog/guia-custo-real-compra-imovel-litoral-2026.html">guia completo</a> · 🏦 <a href="https://praia.digital/simulador-credito/">Simular financiamento</a></p>
+</div>
+</div>
+<footer>Parte da rede <a href="https://praia.digital/apps/">Apps Praia Digital</a> · <a href="https://praia.digital/">praia.digital</a></footer>
+<script>
+const medias={'Riviera de São Lourenço':18500,'Ilhabela':12500,'Guarujá':11200,'Santos':10800,'São Sebastião':9800,'Ubatuba':8200,'Caraguatatuba':7600,'Bertioga':7400,'Praia Grande':6900,'São Vicente':5800,'Itanhaém':4500,'Mongaguá':4200,'Peruíbe':3800};
+const sel=document.getElementById('cidade');
+Object.keys(medias).forEach(c=>sel.add(new Option(c,c)));
+sel.value='Praia Grande';
+function calc(){
+const p=parseFloat(document.getElementById('preco').value),a=parseFloat(document.getElementById('area').value),m=medias[sel.value];
+if(!p||!a)return;
+const pm2=p/a,ratio=pm2/m,score=Math.max(0,Math.min(100,Math.round(100-(ratio-0.7)/0.6*100)));
+let icon,txt;
+if(score>=80){icon='🔥';txt='OPORTUNIDADE RARA';}else if(score>=60){icon='✅';txt='Bom negócio';}else if(score>=40){icon='⚖️';txt='Preço de mercado';}else{icon='⚠️';txt='Acima da média — negocie!';}
+document.getElementById('score').innerHTML=`${icon} Score <strong>${score}/100</strong> — ${txt}<br><small>Seu m²: R$ ${Math.round(pm2).toLocaleString('pt-BR')} · Média ${sel.value}: R$ ${m.toLocaleString('pt-BR')}</small>`;}
+</script>
+</body>
+</html>
