@@ -45,6 +45,15 @@
           navMarker.parentNode.replaceChild(header, navMarker);
           window.__pdShared.push(['inject-header-ok']);
           initDropdowns();
+          // Remove headers/nav inline legados (ex.: index.html) para evitar menu duplicado.
+          // Só roda DEPOIS da injeção bem-sucedida, para nunca deixar a página sem navegação.
+          var legacy = document.querySelectorAll('header.pd-nav, body > header:not(.pd-header), body > nav.pd-nav');
+          for (var i = 0; i < legacy.length; i++) {
+            if (legacy[i] !== header && legacy[i].parentNode) {
+              legacy[i].parentNode.removeChild(legacy[i]);
+              window.__pdShared.push(['legacy-nav-removed']);
+            }
+          }
         } else {
           window.__pdShared.push(['inject-header-miss']);
         }
