@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Match Imóveis — Encontre seu imóvel ideal no litoral | Praia Digital</title>
+<meta name="description" content="Responda 4 perguntas e descubra qual tipo de imóvel e cidade do litoral paulista combinam com seu perfil: morar, investir ou temporada.">
+<style>
+body{font-family:system-ui,-apple-system,sans-serif;margin:0;background:#fdf2f8;color:#831843;line-height:1.6}
+nav{background:#be185d;padding:12px 20px;display:flex;gap:14px;flex-wrap:wrap}
+nav a{color:#fce7f3;text-decoration:none;font-weight:600}
+nav a:hover{color:#fff}
+.hero{background:linear-gradient(135deg,#be185d,#ec4899);color:#fff;padding:50px 20px;text-align:center}
+.container{max-width:720px;margin:0 auto;padding:30px 20px}
+.card{background:#fff;border-radius:12px;padding:24px;margin:16px 0;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.q{font-weight:700;margin:14px 0 8px}
+.opt{display:block;width:100%;text-align:left;background:#fdf2f8;border:1px solid #f9a8d4;border-radius:10px;padding:12px;margin:6px 0;cursor:pointer;font-size:1em}
+.opt:hover{background:#fbcfe8}
+.opt.sel{background:#ec4899;color:#fff;border-color:#ec4899}
+button.go{background:#be185d;color:#fff;border:0;padding:14px 28px;border-radius:8px;font-size:1.05em;font-weight:700;cursor:pointer;margin-top:16px;width:100%}
+#res{font-size:1.1em;margin-top:16px}
+footer{text-align:center;padding:24px;color:#64748b;font-size:.9em}
+</style>
+</head>
+<body>
+<nav>
+<a href="https://praia.digital/">🌊 Praia Digital</a>
+<a href="https://praia.digital/apps/">🗂️ Apps</a>
+<a href="https://praia.digital/radar-preco-m2/">Radar m²</a>
+<a href="https://praia.digital/match-imoveis/">Match Imóveis</a>
+<a href="https://praia.digital/precificador-temporada/">Precificador</a>
+<a href="https://praia.digital/concierge-ia/">Concierge IA</a>
+</nav>
+<div class="hero">
+<h1>💘 Match Imóveis</h1>
+<p>4 perguntas. 1 match perfeito. Descubra seu imóvel ideal no litoral paulista.</p>
+</div>
+<div class="container">
+<div class="card">
+<p class="q">1. Qual seu objetivo?</p>
+<button class="opt" data-q="obj" data-v="morar">🏠 Morar com a família</button>
+<button class="opt" data-q="obj" data-v="investir">📈 Investir para renda</button>
+<button class="opt" data-q="obj" data-v="temporada">🏖️ Uso próprio + temporada</button>
+<p class="q">2. Orçamento total?</p>
+<button class="opt" data-q="orc" data-v="a">Até R$ 300 mil</button>
+<button class="opt" data-q="orc" data-v="b">R$ 300–600 mil</button>
+<button class="opt" data-q="orc" data-v="c">Acima de R$ 600 mil</button>
+<p class="q">3. O que é indispensável?</p>
+<button class="opt" data-q="pref" data-v="mar">🌊 Perto da praia</button>
+<button class="opt" data-q="pref" data-v="cond">🏘️ Condomínio com estrutura</button>
+<button class="opt" data-q="pref" data-v="cidade">🏙️ Infraestrutura urbana</button>
+<p class="q">4. Perfil de cidade?</p>
+<button class="opt" data-q="cid" data-v="mov">🎉 Movimentada e turística</button>
+<button class="opt" data-q="cid" data-v="tranq">🌴 Tranquila e familiar</button>
+<button class="opt" data-q="cid" data-v="luxo">✨ Sofisticada e exclusiva</button>
+<button class="go" onclick="match()">❤️ Encontrar meu match</button>
+<div id="res"></div>
+</div>
+<div class="card">
+<h2>Achou seu match?</h2>
+<p>🏦 <a href="https://praia.digital/simulador-credito/">Simule o financiamento</a> · 📡 <a href="https://praia.digital/radar-preco-m2/">Compare o preço/m²</a> · 📈 <a href="https://praia.digital/simulador-roi/">Calcule o ROI</a> · 🤖 <a href="https://praia.digital/">Busque com a IA da Praia Digital</a></p>
+</div>
+</div>
+<footer>Parte da rede <a href="https://praia.digital/">praia.digital</a> · <a href="https://praia.digital/apps/">Todos os apps</a></footer>
+<script>
+const a={};document.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{a[b.dataset.q]=b.dataset.v;document.querySelectorAll(`.opt[data-q=${b.dataset.q}]`).forEach(x=>x.classList.remove('sel'));b.classList.add('sel');});
+function match(){
+if(!a.obj||!a.orc||!a.pref||!a.cid){document.getElementById('res').innerHTML='⚠️ Responda as 4 perguntas!';return;}
+let c,t;
+if(a.cid=='luxo'){c='Riviera de São Lourenço';t='casa ou apartamento em condomínio fechado';}
+else if(a.obj=='investir'&&a.orc!='c'){c='Praia Grande';t='apartamento de 1-2 dormitórios perto da praia (maior rental yield do litoral)';}
+else if(a.cid=='mov'){c=a.orc=='a'?'Mongaguá':'Guarujá';t='apartamento próximo à orla';}
+else if(a.cid=='tranq'){c=a.orc=='a'?'Peruíbe':'Bertioga';t='casa em bairro arborizado';}
+else{c='Santos';t='apartamento em bairro com infraestrutura completa';}
+if(a.pref=='cond'&&a.orc=='c'){c='Riviera de São Lourenço';t='casa em condomínio com lazer completo';}
+document.getElementById('res').innerHTML=`💘 <strong>Seu match: ${c}</strong> — procure um <strong>${t}</strong>. Veja o <a href="https://praia.digital/bairros/index.html">guia de bairros</a> e simule no <a href="https://praia.digital/radar-preco-m2/">Radar m²</a>.`;
+}
+</script>
+</body>
+</html>

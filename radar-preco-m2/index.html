@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radar Preço/m² — Litoral Paulista | Praia Digital</title>
+<meta name="description" content="Radar interativo do preço por m² nas cidades do litoral paulista: compare Praia Grande, Santos, Guarujá, Bertioga, Riviera e mais, com tendências 2026.">
+<style>
+body{font-family:system-ui,-apple-system,sans-serif;margin:0;background:#eff6ff;color:#1e3a8a;line-height:1.6}
+nav{background:#1d4ed8;padding:12px 20px;display:flex;gap:14px;flex-wrap:wrap}
+nav a{color:#dbeafe;text-decoration:none;font-weight:600}
+nav a:hover{color:#fff}
+.hero{background:linear-gradient(135deg,#1d4ed8,#3b82f6);color:#fff;padding:50px 20px;text-align:center}
+.container{max-width:960px;margin:0 auto;padding:30px 20px}
+.card{background:#fff;border-radius:12px;padding:24px;margin:16px 0;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.bar{display:flex;align-items:center;gap:10px;margin:10px 0;cursor:pointer}
+.bar:hover .fill{filter:brightness(1.1)}
+.lbl{width:150px;font-weight:600}
+.fill{height:30px;border-radius:6px;background:linear-gradient(90deg,#3b82f6,#60a5fa);color:#fff;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;font-weight:700;min-width:60px;transition:width .8s}
+.up{color:#15803d;font-weight:700}
+footer{text-align:center;padding:24px;color:#64748b;font-size:.9em}
+</style>
+</head>
+<body>
+<nav>
+<a href="https://praia.digital/">🌊 Praia Digital</a>
+<a href="https://praia.digital/apps/">🗂️ Apps</a>
+<a href="https://praia.digital/radar-preco-m2/">Radar m²</a>
+<a href="https://praia.digital/match-imoveis/">Match Imóveis</a>
+<a href="https://praia.digital/precificador-temporada/">Precificador</a>
+<a href="https://praia.digital/concierge-ia/">Concierge IA</a>
+<a href="https://praia.digital/simulador-roi/">Simulador ROI</a>
+</nav>
+<div class="hero">
+<h1>📡 Radar Preço/m² — Litoral Paulista</h1>
+<p>Compare o preço por metro quadrado entre as cidades do litoral e acompanhe a valorização de 2026. Clique em uma cidade para detalhes.</p>
+</div>
+<div class="container">
+<div class="card">
+<h2>Preço médio por m² (venda, 2026)</h2>
+<div id="radar"></div>
+<div id="detalhe" style="margin-top:16px;font-size:1.05em"></div>
+<p style="color:#64748b;font-size:.85em">Estimativas baseadas no <a href="https://praia.digital/blog/indice-preco-m2-litoral-paulista-tabela-tendencias-2026.html">Índice de preço por m² do litoral paulista</a>.</p>
+</div>
+<div class="card">
+<h2>Ferramentas para investir melhor</h2>
+<p>🏦 <a href="https://praia.digital/simulador-credito/">Simule seu financiamento</a> · 📈 <a href="https://praia.digital/simulador-roi/">Calcule o ROI de temporada</a> · 📊 <a href="https://praia.digital/guia-litoral/">Guia do Litoral completo</a> · 💘 <a href="https://praia.digital/match-imoveis/">Encontre seu imóvel ideal</a></p>
+</div>
+</div>
+<footer>Parte da rede <a href="https://praia.digital/">praia.digital</a> · <a href="https://praia.digital/apps/">Todos os apps</a></footer>
+<script>
+const dados=[
+["Riviera de São Lourenço",14200,9.8],["Guarujá",11800,7.4],["Santos",10900,6.1],["São Sebastião",9800,8.2],["Caraguatatuba",7400,5.5],["Praia Grande",6900,6.8],["Bertioga",6600,11.3],["São Vicente",5800,4.2],["Mongaguá",4500,5.9],["Peruíbe",3900,6.4]];
+const max=dados[0][1];
+const r=document.getElementById('radar');
+dados.forEach(([c,v,t])=>{
+const d=document.createElement('div');d.className='bar';
+d.innerHTML=`<span class="lbl">${c}</span><div class="fill" style="width:${Math.round(v/max*100)}%">R$ ${v.toLocaleString('pt-BR')}</div><span class="up">+${t}%</span>`;
+d.onclick=()=>document.getElementById('detalhe').innerHTML=`<strong>${c}</strong>: m² médio de <strong>R$ ${v.toLocaleString('pt-BR')}</strong>, valorização de <strong class="up">+${t}%</strong> em 12 meses. Um apartamento de 60m² sai em média por <strong>R$ ${(v*60).toLocaleString('pt-BR')}</strong>.`;
+r.appendChild(d);
+});
+</script>
+</body>
+</html>
