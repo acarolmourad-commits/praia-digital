@@ -33,6 +33,7 @@
   function boot() {
     if (injected) return; // hard guard — run ONCE
     injected = true;
+    injectAppsSection();
 
     var navMarker  = document.querySelector('meta[name="pd-shared-nav"]');
     var footMarker = document.querySelector('meta[name="pd-shared-footer"]');
@@ -112,6 +113,34 @@
         if (toggle) toggle.setAttribute('aria-expanded', 'false');
       }
     });
+  }
+
+
+  // Homepage: inject Apps section (from partials/apps-section.html) after #ferramentas
+  function injectAppsSection() {
+    var path = window.location.pathname;
+    var isHome = path === '/' || path === '/index.html' || path === '';
+    if (!isHome) return;
+    if (document.getElementById('apps')) return;
+    var anchor = document.getElementById('ferramentas') || document.querySelector('footer');
+    if (!anchor) return;
+    fetch('https://praia.digital/partials/apps-section.html?v=1.0', { credentials: 'omit', cache: 'no-store' })
+      .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+      .then(function(html) {
+        var tmp = document.createElement('div');
+        tmp.innerHTML = html;
+        var section = tmp.querySelector('section');
+        if (!section) return;
+        if (anchor.nextSibling) {
+          anchor.parentNode.insertBefore(section, anchor.nextSibling);
+        } else {
+          anchor.parentNode.appendChild(section);
+        }
+        window.__pdShared.push(['inject-apps-ok']);
+      })
+      .catch(function(err) {
+        window.__pdShared.push(['inject-apps-error', err && err.message]);
+      });
   }
 
   // Boot once
