@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendário de Feriados e Demanda 2026-2027 — Praia Digital</title>
+<meta name="description" content="Todos os feriados prolongados do litoral paulista com nível de demanda esperado para temporada.">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,sans-serif}
+  body{background:#f0f9ff;color:#0f172a;min-height:100vh}
+  header{background:linear-gradient(135deg,#0077B6,#00B4D8);color:#fff;padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+  header a{color:#fff;text-decoration:none;font-weight:700}.logo{font-size:1.2rem}
+  main{max-width:720px;margin:2rem auto;padding:0 1rem}
+  .card{background:#fff;border-radius:16px;padding:1.75rem;box-shadow:0 4px 24px rgba(0,60,100,.08)}
+  h1{font-size:1.5rem;color:#0077B6}.sub{color:#64748b;margin:.3rem 0 1.2rem;font-size:.95rem}
+  .fer{display:flex;justify-content:space-between;align-items:center;gap:.8rem;padding:.8rem 1rem;border-radius:12px;margin-bottom:.5rem;border:1px solid #e2e8f0;background:#f8fafc;flex-wrap:wrap}
+  .fer b{font-size:.95rem}
+  .fer small{color:#64748b;display:block}
+  .nivel{font-size:.75rem;font-weight:800;border-radius:999px;padding:.25rem .7rem;white-space:nowrap}
+  .alt{background:#fee2e2;color:#991b1b}.med{background:#fef9c3;color:#854d0e}
+  .dica{margin-top:1.2rem;background:#ecfeff;border:1px solid #67e8f9;border-radius:12px;padding:1rem;font-size:.9rem}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="https://praia.digital/">🏖️ Praia Digital</a>
+  <a href="https://praia.digital/apps">Rede de apps →</a>
+</header>
+<main>
+  <div class="card">
+    <h1>🗓️ Feriados e Demanda 2026–2027</h1>
+    <p class="sub">Anfitriões: bloqueie as datas e ajuste preços com antecedência.</p>
+    <div id="lista"></div>
+    <div class="dica">📅 Precifique cada feriado no <a href="https://praia.digital/area-anfitriao/precificador-dinamico/" style="color:#0077B6;font-weight:700">Precificador Dinâmico</a> · 📈 <a href="https://praia.digital/area-anfitriao/calendario-sazonal/" style="color:#0077B6;font-weight:700">Calendário Sazonal</a></div>
+  </div>
+</main>
+<script>
+var feriados=[
+  ['01/01/2027','Confraternização Universal','Réveillon — maior demanda do ano','alt'],
+  ['16/02/2027','Carnaval','Segundo maior pico: bloqueie com meses de antecedência','alt'],
+  ['02/04/2027','Sexta-feira Santa','Prolongado de 3 dias — forte demanda','alt'],
+  ['21/04/2027','Tiradentes','Quarta — emenda provável','med'],
+  ['01/05/2027','Dia do Trabalho','Sábado — demanda moderada','med'],
+  ['03/06/2027','Corpus Christi','Quinta — emenda clássica de 4 dias','alt'],
+  ['09/07/2027','Revolução Constitucionalista (SP)','Feriado estadual, forte no litoral de SP','med'],
+  ['07/09/2027','Independência','Terça — emenda provável','med'],
+  ['12/10/2027','N. Sra. Aparecida','Terça — último grande prolongado do ano','alt'],
+  ['02/11/2027','Finados','Terça — emenda provável','med'],
+  ['15/11/2027','Proclamação da República','Segunda — prolongado automático','med'],
+  ['25/12/2027','Natal','Alta demanda familiar','alt']
+];
+document.getElementById('lista').innerHTML=feriados.map(function(f){
+  var nl=f[3]==='alt'?'🔥 Altíssima':'🌤️ Moderada';
+  return '<div class="fer"><div><b>'+f[1]+'</b><small>'+f[0]+' · '+f[2]+'</small></div><span class="nivel '+f[3]+'">'+nl+'</span></div>';
+}).join('');
+</script>
+</body>
+</html>
