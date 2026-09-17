@@ -6,7 +6,8 @@
   window.__pdShared = window.__pdShared || [];
 
   function inject(marker, url) {
-    if (!marker || marker.getAttribute('data-partial') === 'done') return;
+    if (!marker) return;
+    if (marker.getAttribute('data-partial') === 'done') return;
     marker.setAttribute('data-partial', 'done');
     window.__pdShared.push(['inject-start', url]);
     fetch(url, { credentials: 'omit', cache: 'no-store' }).then(function(r) {
@@ -50,8 +51,4 @@
   } else {
     boot();
   }
-  // retry after load if needed
-  window.addEventListener('load', function() {
-    setTimeout(boot, 0);
-  });
 })();
