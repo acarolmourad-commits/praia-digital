@@ -253,7 +253,8 @@ a { color: inherit; text-decoration: none; }
     min-width: 0;
   }
   .pd-nav-submenu.open {
-    max-height: 300px;
+    max-height: 1000px;
+    opacity: 1;
     padding: 0.3rem 0;
   }
   .pd-nav-submenu a {
