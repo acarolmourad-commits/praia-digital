@@ -7,28 +7,62 @@
 </head>
 <body>
 <nav aria-label="Navegação principal" class="pd-nav">
+<style>
+/* Praia Digital — Menu principal em dropdown (desktop e mobile)
+   O painel fica OCULTO por padrão e só abre ao clicar no botão "Menu". */
+#pd-nav-menu { display: none !important; }
+/* posicionamento da barra vem do CSS da página (sticky já ancora o dropdown) */
+.pd-nav-toggle { display: inline-flex !important; align-items: center; gap: 0.4rem; cursor: pointer; }
+#pd-nav-menu.open {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.5rem 1.25rem;
+  position: absolute;
+  top: 100%;
+  right: 1rem;
+  min-width: 280px;
+  max-width: 680px;
+  width: max-content;
+  max-height: calc(100vh - 5rem);
+  overflow-y: auto;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  z-index: 999;
+}
+#pd-nav-menu.open .pd-nav-group { flex-direction: column; align-items: flex-start; gap: 0.15rem; width: 100%; }
+#pd-nav-menu.open .pd-nav-label { border-right: none; border-bottom: 1px solid #e2e8f0; width: 100%; color: #64748b; opacity: 1; margin: 0 0 0.25rem; }
+#pd-nav-menu.open a { color: #023047 !important; opacity: 1; border-radius: 8px; width: 100%; }
+#pd-nav-menu.open a:hover { background: #f1f5f9 !important; }
+#pd-nav-menu.open .pd-nav-cta { grid-column: 1 / -1; text-align: center; background: #F59E0B !important; color: #023047 !important; }
+@media (max-width: 640px) {
+  #pd-nav-menu.open { left: 1rem; right: 1rem; width: auto; max-width: none; grid-template-columns: 1fr; }
+}
+</style>
   <a href="https://praia.digital/" class="pd-nav-logo">Praia Digital</a>
-  <button class="pd-nav-toggle" aria-expanded="false" aria-controls="pd-nav-menu" onclick="this.nextElementSibling.classList.toggle('open')">
+  <button class="pd-nav-toggle" aria-expanded="false" aria-controls="pd-nav-menu" onclick="var m=document.getElementById('pd-nav-menu');m.classList.toggle('open');this.setAttribute('aria-expanded',m.classList.contains('open'))">
     <span></span><span></span><span></span> Menu
   </button>
   <div id="pd-nav-menu" class="pd-nav-menu">
     <div class="pd-nav-group">
       <span class="pd-nav-label">Quero Investir</span>
-      <a href="#rental">Simulador de ROI</a>
-      <a href="../exclusivos/relatorio-mercado-2026.html">Relatórios de Valorização</a>
-      <a href="../cases.html">Oportunidades</a>
+      <a href="https://praia.digital/#rental">Simulador de ROI</a>
+      <a href="/exclusivos/relatorio-mercado-2026.html">Relatórios de Valorização</a>
+      <a href="/cases.html">Oportunidades</a>
     </div>
     <div class="pd-nav-group">
       <span class="pd-nav-label">Quero Comprar</span>
-      <a href="#buscar">Busca de Imóveis</a>
-      <a href="../bairros/index.html">Guia de Bairros</a>
-      <a href="../cases.html">Cases e Experiência</a>
+      <a href="https://praia.digital/#buscar">Busca de Imóveis</a>
+      <a href="/bairros/index.html">Guia de Bairros</a>
+      <a href="/cases.html">Cases e Experiência</a>
     </div>
     <div class="pd-nav-group">
       <span class="pd-nav-label">Sou Corretor / Imobiliária</span>
       <a href="/corretores/cadastrar-imovel.html">Cadastrar Imóveis</a>
       <a href="/afiliados/index.html">Afiliados</a>
-      <a href="../education/index.html">Academy / Treinamentos</a>
+      <a href="/education/index.html">Academy / Treinamentos</a>
     </div>
     <div class="pd-nav-group">
       <span class="pd-nav-label">Ferramentas IA</span>
@@ -41,8 +75,8 @@
       <a href="/calculadora-rendimento-temporada-2026.html">Calculadora de rendimento</a>
     </div>
     <div class="pd-nav-group">
-      <span class="pd-nav-label">Inteligência & Estudos</span>
-      <a href="/blog/index.html">Blog & Estudos</a>
+      <span class="pd-nav-label">Inteligência &amp; Estudos</span>
+      <a href="/blog/index.html">Blog &amp; Estudos</a>
       <a href="/exclusivos/relatorio-mercado-2026.html">Relatórios Exclusivos</a>
       <a href="/consorcio.html">Consórcio sem Juros</a>
     </div>
