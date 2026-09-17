@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comparador de Bairros — Litoral Paulista Lado a Lado | Praia Digital</title>
+<meta name="description" content="Compare cidades e bairros do litoral paulista lado a lado: preço por m², rental yield, temporada, perfil e tendência de valorização.">
+<style>
+body{font-family:system-ui,sans-serif;margin:0;background:#f0fdfa;color:#134e4a;line-height:1.6}
+nav{background:#0f766e;padding:12px 20px;display:flex;gap:14px;flex-wrap:wrap}
+nav a{color:#ccfbf1;text-decoration:none;font-weight:600;font-size:.95em}
+nav a:hover{color:#fff}
+.hero{background:linear-gradient(135deg,#0f766e,#14b8a6);color:#fff;padding:50px 20px;text-align:center}
+.container{max-width:960px;margin:0 auto;padding:30px 20px}
+.card{background:#fff;border-radius:12px;padding:24px;margin:16px 0;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+select{width:100%;padding:10px;border:1px solid #99f6e4;border-radius:8px;margin:6px 0}
+table{width:100%;border-collapse:collapse;margin-top:14px}
+th,td{padding:10px;border-bottom:1px solid #e5e7eb;text-align:left}
+.win{color:#0f766e;font-weight:700}
+footer{text-align:center;padding:24px;color:#64748b;font-size:.9em}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+</style>
+</head>
+<body>
+<nav>
+<a href="https://praia.digital/">🌊 Praia Digital</a>
+<a href="https://praia.digital/apps/">🗂️ Todos os Apps</a>
+<a href="https://praia.digital/radar-imoveis/">Radar</a>
+<a href="https://praia.digital/comparador-bairros/">Comparador</a>
+<a href="https://praia.digital/vistoria-digital/">Vistoria</a>
+<a href="https://praia.digital/custo-compra/">Custo de Compra</a>
+<a href="https://praia.digital/area-anfitriao/">Anfitrião</a>
+<a href="https://praia.digital/guia-litoral/">Guia</a>
+</nav>
+<div class="hero"><h1>⚖️ Comparador de Bairros</h1><p>Duas cidades do litoral, lado a lado, com dados de mercado 2026.</p></div>
+<div class="container">
+<div class="card">
+<div class="cols">
+<div><strong>Cidade A</strong><select id="a"></select></div>
+<div><strong>Cidade B</strong><select id="b"></select></div>
+</div>
+<table id="cmp"></table>
+</div>
+<div class="card">
+<h2>Aprofunde a análise</h2>
+<p>📡 <a href="https://praia.digital/radar-imoveis/">Score de oportunidade no Radar</a> · 📊 <a href="https://praia.digital/guia-litoral/">Relatórios de valorização</a> · 📈 <a href="https://praia.digital/simulador-roi/">Simulador ROI</a> · <a href="https://praia.digital/bairros/index.html">Guia de bairros completo</a></p>
+</div>
+</div>
+<footer>Parte da rede <a href="https://praia.digital/">praia.digital</a> — <a href="https://praia.digital/apps/">todos os apps</a></footer>
+<script>
+const d={"Praia Grande":{m2:6500,yield:7.2,diaria:"280-450",perfil:"Maior liquidez, público C/B",tend:8},"Santos":{m2:11000,yield:5.1,diaria:"380-600",perfil:"Urbano, serviços, alto padrão",tend:6},"Guarujá":{m2:9500,yield:5.8,diaria:"350-550",perfil:"Tradicional, forte temporada",tend:6.5},"Bertioga":{m2:7200,yield:6.8,diaria:"300-500",perfil:"Em transformação, Riviera",tend:9},"Itanhaém":{m2:5200,yield:6.4,diaria:"220-380",perfil:"Custo-benefício, crescimento",tend:7},"Peruíbe":{m2:4300,yield:6.9,diaria:"200-340",perfil:"Entrada barata, potencial",tend:7.5},"Riviera":{m2:15000,yield:4.6,diaria:"600-1200",perfil:"Luxo, condomínio fechado",tend:8.5}};
+const a=document.getElementById('a'),b=document.getElementById('b');
+for(const k of Object.keys(d)){a.add(new Option(k,k));b.add(new Option(k,k));}
+a.value="Praia Grande";b.value="Bertioga";
+function cmp(){
+const x=d[a.value],y=d[b.value];
+const rows=[["Preço médio m²",`R$ ${x.m2.toLocaleString('pt-BR')}`,`R$ ${y.m2.toLocaleString('pt-BR')}`,x.m2<y.m2?0:1],["Rental yield","% a.a.","% a.a.",x.yield>y.yield?0:1],["Diária alta temporada",x.diaria,y.diaria,-1],["Perfil",x.perfil,y.perfil,-1],["Tendência valorização",x.tend+"/10",y.tend+"/10",x.tend>y.tend?0:1]];
+let h=`<tr><th>Critério</th><th>${a.value}</th><th>${b.value}</th></tr>`;
+for(const r of rows){const v0=r[1].includes("% a.a.")?(r[0]==="Rental yield"?x.yield+"% a.a.":r[1]):r[1];const v1=r[1].includes("% a.a.")?y.yield+"% a.a.":r[2];h+=`<tr><td>${r[0]}</td><td class="${r[3]===0?'win':''}">${r[0]==="Rental yield"?x.yield+"% a.a.":r[1]}</td><td class="${r[3]===1?'win':''}">${r[0]==="Rental yield"?y.yield+"% a.a.":r[2]}</td></tr>`}
+document.getElementById('cmp').innerHTML=h;
+}
+a.onchange=cmp;b.onchange=cmp;cmp();
+</script>
+</body>
+</html>

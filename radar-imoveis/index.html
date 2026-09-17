@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radar de Imóveis — Score de Oportunidade no Litoral | Praia Digital</title>
+<meta name="description" content="Descubra o score de oportunidade de cada cidade do litoral paulista: preço por m², rental yield e tendência de valorização em um radar interativo.">
+<style>
+body{font-family:system-ui,sans-serif;margin:0;background:#eef2ff;color:#1e1b4b;line-height:1.6}
+nav{background:#4338ca;padding:12px 20px;display:flex;gap:14px;flex-wrap:wrap}
+nav a{color:#e0e7ff;text-decoration:none;font-weight:600;font-size:.95em}
+nav a:hover{color:#fff}
+.hero{background:linear-gradient(135deg,#4338ca,#6366f1);color:#fff;padding:50px 20px;text-align:center}
+.container{max-width:960px;margin:0 auto;padding:30px 20px}
+.card{background:#fff;border-radius:12px;padding:24px;margin:16px 0;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+label{display:block;margin:10px 0 4px;font-weight:600}
+input,select{width:100%;padding:10px;border:1px solid #c7d2fe;border-radius:8px;box-sizing:border-box}
+button{background:#6366f1;color:#fff;border:0;padding:12px 26px;border-radius:8px;font-weight:700;cursor:pointer;margin-top:14px;font-size:1em}
+#out{margin-top:14px;font-weight:700;color:#4338ca}
+.bar{height:14px;border-radius:7px;background:#e0e7ff;overflow:hidden;margin:4px 0 12px}
+.bar div{height:100%;background:#6366f1}
+footer{text-align:center;padding:24px;color:#64748b;font-size:.9em}
+</style>
+</head>
+<body>
+<nav>
+<a href="https://praia.digital/">🌊 Praia Digital</a>
+<a href="https://praia.digital/apps/">🗂️ Todos os Apps</a>
+<a href="https://praia.digital/radar-imoveis/">Radar</a>
+<a href="https://praia.digital/comparador-bairros/">Comparador</a>
+<a href="https://praia.digital/vistoria-digital/">Vistoria</a>
+<a href="https://praia.digital/custo-compra/">Custo de Compra</a>
+<a href="https://praia.digital/simulador-roi/">ROI</a>
+<a href="https://praia.digital/guia-litoral/">Guia</a>
+</nav>
+<div class="hero"><h1>📡 Radar de Imóveis</h1><p>Score de oportunidade por cidade do litoral: preço, yield e tendência em um só radar.</p></div>
+<div class="container">
+<div class="card">
+<h2>Calcule o Score de Oportunidade</h2>
+<label for="cidade">Cidade</label>
+<select id="cidade">
+<option value="pg">Praia Grande</option><option value="santos">Santos</option><option value="guaruja">Guarujá</option><option value="bertioga">Bertioga</option><option value="itanhaem">Itanhaém</option><option value="peruibe">Peruíbe</option><option value="riviera">Riviera de São Lourenço</option>
+</select>
+<label for="preco">Preço do imóvel (R$)</label><input id="preco" type="number" value="300000">
+<label for="diaria">Diária potencial na temporada (R$)</label><input id="diaria" type="number" value="350">
+<button onclick="calc()">📡 Calcular Score</button>
+<div id="out"></div>
+</div>
+<div class="card">
+<h2>Referências de mercado (2026)</h2>
+<div id="tabela"></div>
+<p>Dados completos: <a href="https://praia.digital/blog/indice-preco-m2-litoral-paulista-tabela-tendencias-2026.html">Índice de preço por m²</a> · <a href="https://praia.digital/guia-litoral/">Guia do Litoral</a></p>
+</div>
+<div class="card">
+<h2>Explore a rede</h2>
+<p>⚖️ <a href="https://praia.digital/comparador-bairros/">Compare duas cidades lado a lado</a> · 🧮 <a href="https://praia.digital/custo-compra/">Calcule o custo real de compra</a> · 📈 <a href="https://praia.digital/simulador-roi/">Simule o ROI de temporada</a> · 🤖 <a href="https://praia.digital/hermes-agents/">Hermes Agents</a></p>
+</div>
+</div>
+<footer>Parte da rede <a href="https://praia.digital/">praia.digital</a> — <a href="https://praia.digital/apps/">todos os apps</a></footer>
+<script>
+const dados={pg:{m2:6500,yield:7.2,tend:8},santos:{m2:11000,yield:5.1,tend:6},guaruja:{m2:9500,yield:5.8,tend:6.5},bertioga:{m2:7200,yield:6.8,tend:9},itanhaem:{m2:5200,yield:6.4,tend:7},peruibe:{m2:4300,yield:6.9,tend:7.5},riviera:{m2:15000,yield:4.6,tend:8.5}};
+function calc(){
+const c=dados[document.getElementById('cidade').value];
+const p=parseFloat(document.getElementById('preco').value)||0;
+const d=parseFloat(document.getElementById('diaria').value)||0;
+const yieldReal=p>0?(d*120*12*0.45)/p*100:c.yield;
+const score=Math.max(0,Math.min(100,Math.round(yieldReal*8+c.tend*4)));
+document.getElementById('out').innerHTML=`Score de oportunidade: <span style="font-size:1.6em">${score}/100</span><br>Yield estimado: ${yieldReal.toFixed(1)}% a.a. · Preço médio: R$ ${c.m2.toLocaleString('pt-BR')}/m² · Tendência: ${c.tend}/10`;
+}
+let t='';for(const[k,v]of Object.entries(dados)){t+=`<strong>${k.toUpperCase()}</strong> — R$ ${v.m2.toLocaleString('pt-BR')}/m² · yield ${v.yield}%<div class="bar"><div style="width:${v.tend*10}%"></div></div>`}
+document.getElementById('tabela').innerHTML=t;
+</script>
+</body>
+</html>
