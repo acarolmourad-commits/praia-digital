@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checklist de Vistoria de Imóvel — Litoral SP | Praia Digital</title>
+  <meta name="description" content="Checklist interativo de vistoria de imóvel no litoral: maresia, infiltração, estrutura e documentação. Gere score de qualidade e imprima o relatório. Gratuito, Praia Digital.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://praia.digital/apps/checklist-vistoria/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Checklist de Vistoria de Imóvel | Praia Digital">
+  <meta property="og:description" content="Vistorie imóveis no litoral com checklist profissional e score de qualidade.">
+  <meta property="og:url" content="https://praia.digital/apps/checklist-vistoria/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Checklist de Vistoria de Imóvel",
+    "url": "https://praia.digital/apps/checklist-vistoria/",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BRL"},
+    "provider": {"@type": "Organization", "name": "Praia Digital", "url": "https://praia.digital/"}
+  }
+  </script>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4F6F8;color:#0F172A;line-height:1.6}
+    header{background:linear-gradient(135deg,#0A3D2E,#0EA5E9);color:#fff;padding:28px 20px;text-align:center}
+    header h1{font-size:clamp(1.3rem,4vw,1.9rem)}
+    .wrap{max-width:860px;margin:0 auto;padding:20px 16px 48px}
+    .card{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:20px;margin-bottom:14px;box-shadow:0 4px 20px rgba(0,0,0,.04)}
+    .card h2{font-size:16px;margin-bottom:8px;color:#0A3D2E}
+    .item{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid #F1F5F9;font-size:14px;cursor:pointer}
+    .item input{margin-top:3px}
+    .item.ok span{color:#16A34A}
+    .item.bad span{color:#DC2626;text-decoration:line-through}
+    .opts{display:flex;gap:6px;margin-left:auto;flex-shrink:0}
+    .opts button{border:1px solid #E5E7EB;background:#fff;border-radius:8px;padding:4px 10px;font-size:12px;cursor:pointer}
+    .scorebox{text-align:center;padding:10px 0}
+    .scorebox .s{font-size:3rem;font-weight:800}
+    .prog{height:10px;background:#E5E7EB;border-radius:5px;margin-top:8px}
+    .prog i{display:block;height:100%;border-radius:5px;transition:width .3s}
+    .actions{display:flex;gap:10px;margin-top:14px}
+    .actions button,.actions a{flex:1;text-align:center;background:#0A3D2E;color:#fff;border:none;padding:13px;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;text-decoration:none}
+    .actions .ghost{background:#fff;color:#0A3D2E;border:1px solid #0A3D2E}
+    .links{display:grid;gap:10px;margin-top:8px}
+    .links a{display:block;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px;text-decoration:none;color:#0F172A;font-weight:600}
+    .links a span{color:#0EA5E9}
+    footer{text-align:center;color:#94A3B8;font-size:12px;padding:20px}
+    @media print{header,.actions,.links,.card:last-child,footer{display:none}.card{box-shadow:none;border:none}}
+  </style>
+</head>
+<body>
+<header>
+  <h1>📋 Checklist de Vistoria de Imóvel</h1>
+  <p>Vistoria profissional para imóveis no litoral — com score e relatório • Praia Digital</p>
+</header>
+<div class="wrap">
+  <div class="card">
+    <h2>Score da vistoria</h2>
+    <div class="scorebox"><div class="s" id="score">—</div><div id="verdict" style="font-size:13px;color:#64748B">Avalie os itens abaixo</div></div>
+    <div class="prog"><i id="bar" style="width:0%;background:#0EA5E9"></i></div>
+    <div class="actions">
+      <button onclick="window.print()">🖨️ Imprimir / salvar PDF</button>
+      <button class="ghost" onclick="resetAll()">↺ Recomeçar</button>
+    </div>
+  </div>
+  <div id="groups"></div>
+
+  <div class="card">
+    <h2>🔗 Explore mais</h2>
+    <div class="links">
+      <a href="/apps/">🧰 <span>Praia Digital Apps</span> — todas as ferramentas</a>
+      <a href="/apps/comparador-cidades/">📊 Comparador de cidades do litoral</a>
+      <a href="/apps/simulador-roi-temporada/">🧮 Simulador de ROI de temporada</a>
+      <a href="/comprar-com-seguranca">📖 Guia: comprar imóvel com segurança</a>
+      <a href="https://acarolmourad-commits.github.io/asf-app/apps/" target="_blank" rel="noopener">🌊 <span>ASF Apps</span> — ferramentas de surf do litoral</a>
+    </div>
+  </div>
+</div>
+<footer>Praia Digital — Tecnologia imobiliária do litoral • <a href="/" style="color:#0EA5E9">praia.digital</a></footer>
+<script>
+const GROUPS = [
+  {nome:'🌊 Maresia & Umidade (crítico no litoral)', items:[
+    'Esquadrias sem corrosão (alumínio/anodizado)','Ferragens e dobradiças sem ferrugem','Ar-condicionado com serpentina protegida','Pintura/revestimento sem bolhas de umidade','Sem cheiro de mofo em armários e cantos']},
+  {nome:'🏗️ Estrutura & Construção', items:[
+    'Sem trincas estruturais em paredes/teto','Piso nivelado, sem partes ocas','Telhado/laje sem infiltração','Impermeabilização de banheiros OK','Elétrica: disjuntores e tomadas funcionando']},
+  {nome:'🚿 Hidráulica', items:[
+    'Pressão de água boa em todos os pontos','Sem vazamentos visíveis (torneiras, sifões)','Esgoto sem retorno de odor','Aquecimento (boiler/solar) funcionando']},
+  {nome:'📄 Documentação', items:[
+    'Matrícula atualizada sem ônus','IPTU quitado','Habite-se / averbação da construção','Condomínio: atas e inadimplência OK','Nada consta na prefeitura (regularização)']},
+  {nome:'📍 Entorno', items:[
+    'Distância real da praia conferida','Rua/entorno sem alagamento em chuva','Comércio e serviços próximos','Vagas de garagem conforme anúncio']}
+];
+const KEY = 'pd-vistoria-v1';
+let st = JSON.parse(localStorage.getItem(KEY)||'{}');
+function render(){
+  document.getElementById('groups').innerHTML = GROUPS.map((g,gi)=>`
+    <div class="card"><h2>${g.nome}</h2>
+    ${g.items.map((t,ii)=>{const k=gi+'_'+ii; const v=st[k]; return `
+      <div class="item ${v==='ok'?'ok':v==='bad'?'bad':''}">
+        <span style="flex:1" onclick="mark('${k}','ok')">${t}</span>
+        <div class="opts">
+          <button onclick="mark('${k}','ok')" style="${v==='ok'?'background:#DCFCE7;border-color:#16A34A':''}">✓ OK</button>
+          <button onclick="mark('${k}','bad')" style="${v==='bad'?'background:#FEE2E2;border-color:#DC2626':''}">✗ Problema</button>
+        </div>
+      </div>`;}).join('')}
+    </div>`).join('');
+  const keys = Object.keys(st);
+  const total = GROUPS.reduce((s,g)=>s+g.items.length,0);
+  const ok = keys.filter(k=>st[k]==='ok').length;
+  const done = keys.length;
+  const pct = Math.round(done/total*100);
+  document.getElementById('bar').style.width = pct+'%';
+  if(done===0){ document.getElementById('score').textContent='—'; document.getElementById('verdict').textContent='Avalie os itens abaixo'; return; }
+  const score = Math.round(ok/done*100);
+  const el = document.getElementById('score');
+  el.textContent = score + '%';
+  el.style.color = score>=85 ? '#16A34A' : score>=60 ? '#CA8A04' : '#DC2626';
+  document.getElementById('verdict').textContent =
+    done<total ? `${done}/${total} itens avaliados — continue` :
+    score>=85 ? '✅ Imóvel em ótimo estado — pode avançar!' :
+    score>=60 ? '⚠️ Bom, mas negocie reparos no preço' : '🚨 Muitos problemas — avalie com cautela';
+}
+function mark(k,v){ st[k] = st[k]===v ? undefined : v; if(!st[k]) delete st[k]; localStorage.setItem(KEY, JSON.stringify(st)); render(); }
+function resetAll(){ if(confirm('Limpar toda a vistoria?')){ st={}; localStorage.removeItem(KEY); render(); } }
+render();
+</script>
+</body>
+</html>
