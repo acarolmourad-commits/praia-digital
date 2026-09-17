@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Gerador + publicador automatico de carrosseis no Instagram (Praia Digital).
-Roda 4x/dia via GitHub Actions. Escolhe tema rotativo da fila, gera artes 1080x1350,
-commita as imagens no repo e publica via Instagram Graph API."""
+Roda 4x/dia via GitHub Actions (7h, 9h, 15h, 20h BRT). Escolhe tema rotativo da fila,
+gera artes 1080x1350, commita as imagens no repo e publica via Instagram Graph API."""
 import os, sys, json, time, datetime, subprocess, requests
 from PIL import Image, ImageDraw, ImageFont
 
@@ -10,6 +10,7 @@ IG = os.environ['IG_USER_ID']
 REPO = os.environ['GITHUB_REPOSITORY']
 API = 'https://graph.facebook.com/v21.0'
 RAW = f'https://raw.githubusercontent.com/{REPO}/main/social/auto'
+SLOTS_UTC = [10, 12, 18, 23]  # 7h, 9h, 15h, 20h em Brasilia (UTC-3)
 W, H = 1080, 1350
 DARK=(2,48,71); OCEAN=(0,119,182); LIGHT=(0,180,216); AMBER=(245,158,11); ACC=(144,224,239); WHITE=(255,255,255)
 FB='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
@@ -56,7 +57,7 @@ def slide(badge, blocks, idx, total):
 def pick_topic():
     queue=json.load(open('scripts/ig_content_queue.json'))
     now=datetime.datetime.now(datetime.timezone.utc)
-    slot=min(range(4), key=lambda i: abs(now.hour-[12,15,19,22][i]))
+    slot=min(range(4), key=lambda i: abs(now.hour-SLOTS_UTC[i]))
     idx=(now.toordinal()*4+slot)%len(queue)
     return queue[idx], idx
 
