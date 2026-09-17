@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radar m² — Preço por m² no Litoral Paulista em Tempo Real | Praia Digital</title>
+<meta name="description" content="Radar interativo de preço por m², tendências de valorização e comparativo entre cidades do litoral paulista: Praia Grande, Santos, Guarujá, Bertioga e mais.">
+<style>
+body{font-family:system-ui,-apple-system,sans-serif;margin:0;background:#0f172a;color:#e2e8f0;line-height:1.6}
+nav{background:#1e293b;padding:12px 20px;display:flex;gap:14px;flex-wrap:wrap}
+nav a{color:#93c5fd;text-decoration:none;font-weight:600;font-size:.95em}
+nav a:hover{color:#fff}
+.hero{background:linear-gradient(135deg,#0f172a,#1d4ed8);padding:50px 20px;text-align:center}
+.container{max-width:960px;margin:0 auto;padding:30px 20px}
+.card{background:#1e293b;border-radius:12px;padding:24px;margin:16px 0;border:1px solid #334155}
+.bar{height:26px;border-radius:6px;background:linear-gradient(90deg,#3b82f6,#60a5fa);margin:6px 0 14px;position:relative}
+.bar span{position:absolute;right:8px;top:3px;font-size:.85em;font-weight:700;color:#0f172a}
+.up{color:#4ade80;font-weight:700}.down{color:#f87171;font-weight:700}
+label{font-weight:600;display:block;margin:10px 0 4px}
+select{width:100%;padding:10px;border-radius:8px;background:#0f172a;color:#e2e8f0;border:1px solid #475569}
+#cmp{margin-top:14px;font-size:1.15em;font-weight:700;color:#93c5fd}
+footer{text-align:center;padding:24px;color:#64748b;font-size:.9em}
+</style>
+</head>
+<body>
+<nav>
+<a href="https://praia.digital/">🌊 Praia Digital</a>
+<a href="https://praia.digital/apps/">🗂️ Apps</a>
+<a href="https://praia.digital/radar-m2/">Radar m²</a>
+<a href="https://praia.digital/match-imobiliario/">Match Imobiliário</a>
+<a href="https://praia.digital/concierge-ia/">Concierge IA</a>
+<a href="https://praia.digital/simulador-roi/">Simulador ROI</a>
+<a href="https://praia.digital/guia-litoral/">Guia do Litoral</a>
+</nav>
+<div class="hero">
+<h1>📡 Radar m²</h1>
+<p>Radar interativo de preço por m² e valorização no litoral paulista — baseado nos estudos da Praia Digital.</p>
+</div>
+<div class="container">
+<div class="card">
+<h2>Preço médio por m² (2026)</h2>
+<div id="radar"></div>
+</div>
+<div class="card">
+<h2>Comparar duas cidades</h2>
+<label>Cidade A</label><select id="a"></select>
+<label>Cidade B</label><select id="b"></select>
+<div id="cmp"></div>
+</div>
+<div class="card">
+<h2>Aprofunde-se</h2>
+<p>📊 <a href="https://praia.digital/blog/indice-preco-m2-litoral-paulista-tabela-tendencias-2026.html">Índice completo de preço/m² com tabela e tendências</a> · <a href="https://praia.digital/blog/analise-mercado-cidades-valorizadas-litoral-paulista-2026.html">Cidades mais valorizadas</a></p>
+<p>💘 Não sabe qual cidade combina com você? <a href="https://praia.digital/match-imobiliario/">Faça o Match Imobiliário</a> · 🏦 <a href="https://praia.digital/simulador-credito/">Simule seu financiamento</a> · 📈 <a href="https://praia.digital/simulador-roi/">Simule o ROI de temporada</a></p>
+</div>
+</div>
+<footer>Parte da rede <a href="https://praia.digital/apps/">Apps Praia Digital</a> · <a href="https://praia.digital/">praia.digital</a></footer>
+<script>
+const dados=[['Riviera de São Lourenço',18500,7.2],['Guarujá',11200,5.8],['Santos',10800,4.9],['São Sebastião',9800,6.1],['Ilhabela',12500,6.8],['Caraguatatuba',7600,5.2],['Ubatuba',8200,5.5],['Praia Grande',6900,4.6],['Bertioga',7400,8.9],['São Vicente',5800,3.9],['Mongaguá',4200,4.1],['Itanhaém',4500,4.3],['Peruíbe',3800,4.0]];
+const max=Math.max(...dados.map(d=>d[1]));
+dados.sort((x,y)=>y[1]-x[1]);
+document.getElementById('radar').innerHTML=dados.map(d=>`<div><strong>${d[0]}</strong> — R$ ${d[1].toLocaleString('pt-BR')}/m² <span class="up">▲ ${d[2]}% a.a.</span><div class="bar" style="width:${Math.round(d[1]/max*100)}%"></div></div>`).join('');
+const a=document.getElementById('a'),b=document.getElementById('b');
+dados.forEach((d,i)=>{a.add(new Option(d[0],i));b.add(new Option(d[0],i));});
+b.selectedIndex=7;
+function cmp(){const x=dados[a.value],y=dados[b.value];const diff=((x[1]/y[1]-1)*100).toFixed(1);
+document.getElementById('cmp').innerHTML=`${x[0]} está <span class="${diff>0?'up':'down'}">${Math.abs(diff)}% ${diff>0?'mais caro':'mais barato'}</span> que ${y[0]} (R$ ${x[1].toLocaleString('pt-BR')} vs R$ ${y[1].toLocaleString('pt-BR')} por m²)`;}
+a.onchange=cmp;b.onchange=cmp;cmp();
+</script>
+</body>
+</html>

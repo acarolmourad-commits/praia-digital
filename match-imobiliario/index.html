@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Match Imobiliário — Descubra Seu Imóvel Ideal no Litoral | Praia Digital</title>
+<meta name="description" content="Responda 5 perguntas e descubra qual tipo de imóvel e cidade do litoral paulista combinam com seu perfil: moradia, investimento ou temporada.">
+<style>
+body{font-family:system-ui,-apple-system,sans-serif;margin:0;background:#fdf2f8;color:#831843;line-height:1.6}
+nav{background:#be185d;padding:12px 20px;display:flex;gap:14px;flex-wrap:wrap}
+nav a{color:#fbcfe8;text-decoration:none;font-weight:600;font-size:.95em}
+nav a:hover{color:#fff}
+.hero{background:linear-gradient(135deg,#be185d,#ec4899);color:#fff;padding:50px 20px;text-align:center}
+.container{max-width:720px;margin:0 auto;padding:30px 20px}
+.card{background:#fff;border-radius:12px;padding:24px;margin:16px 0;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.opt{display:block;width:100%;text-align:left;background:#fdf2f8;border:2px solid #f9a8d4;border-radius:10px;padding:14px;margin:8px 0;font-size:1em;cursor:pointer;color:#831843}
+.opt:hover{background:#fce7f3;border-color:#ec4899}
+#resultado{display:none;text-align:center}
+.badge{display:inline-block;background:#ec4899;color:#fff;padding:6px 16px;border-radius:999px;font-weight:700;margin:4px}
+.cta{display:inline-block;background:#be185d;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:700;margin:6px}
+footer{text-align:center;padding:24px;color:#9d174d;font-size:.9em}
+</style>
+</head>
+<body>
+<nav>
+<a href="https://praia.digital/">🌊 Praia Digital</a>
+<a href="https://praia.digital/apps/">🗂️ Apps</a>
+<a href="https://praia.digital/radar-m2/">Radar m²</a>
+<a href="https://praia.digital/match-imobiliario/">Match Imobiliário</a>
+<a href="https://praia.digital/concierge-ia/">Concierge IA</a>
+<a href="https://praia.digital/area-anfitriao/">Área do Anfitrião</a>
+</nav>
+<div class="hero">
+<h1>💘 Match Imobiliário</h1>
+<p>5 perguntas. 1 perfil. O imóvel ideal para você no litoral paulista.</p>
+</div>
+<div class="container">
+<div class="card" id="quiz"></div>
+<div class="card" id="resultado">
+<h2>✨ Seu match:</h2>
+<div id="match"></div>
+<p id="desc"></p>
+<a class="cta" href="https://praia.digital/simulador-credito/">🏦 Simular financiamento</a>
+<a class="cta" href="https://praia.digital/simulador-roi/">📈 Simular ROI</a>
+<a class="cta" href="https://praia.digital/#buscar">🔎 Buscar imóveis</a>
+</div>
+</div>
+<footer>Parte da rede <a href="https://praia.digital/apps/">Apps Praia Digital</a> · <a href="https://praia.digital/">praia.digital</a></footer>
+<script>
+const perguntas=[
+{q:'Qual é o seu objetivo principal?',o:[['Morar o ano todo','morar'],['Renda com temporada','investir'],['Fins de semana e férias','lazer']]},
+{q:'Orçamento total aproximado?',o:[['Até R$ 350 mil','350'],['R$ 350–700 mil','700'],['Acima de R$ 700 mil','999']]},
+{q:'O que é indispensável?',o:[['Perto da praia','praia'],['Piscina e lazer','lazer'],['Conforto e praticidade','conforto']]},
+{q:'Quantos quartos?',o:[['1–2','2'],['3','3'],['4 ou mais','4']]},
+{q:'Prefere movimento ou tranquilidade?',o:[['Cidade movimentada','mov'],['Equilíbrio','eq'],['Sossego total','sos']]}];
+const matches={
+'investir-350':['🏢 Apto 1–2 dorm em Praia Grande','Rental yield líder do litoral: alta demanda de temporada e entrada acessível. Veja o estudo: praia.digital/blog/estudo-rental-yield-apartamentos-1-2-dormitorios-praia-grande-2026.html'],
+'investir-700':['🏖️ Apto frente-mar no Guarujá ou Santos','Valorização consistente + diárias premium na alta temporada.'],
+'investir-999':['🏝️ Casa em Riviera de São Lourenço ou Ilhabela','Alto padrão com as maiores valorizações do litoral (7%+ a.a.).'],
+'morar-350':['🏠 Apto 2 dorm em São Vicente ou PG','Melhor custo/m² do litoral com infraestrutura completa.'],
+'morar-700':['🏡 Casa em Bertioga','Cidade em transformação, m² ainda acessível e qualidade de vida.'],
+'morar-999':['🏘️ Casa em condomínio em Riviera','Segurança, infraestrutura e valorização premium.'],
+'lazer-350':['🌴 Kitnet/studio em Itanhaém ou Peruíbe','Pé na areia de fim de semana sem comprometer o orçamento.'],
+'lazer-700':['⛵ Casa em Caraguatatuba ou Ubatuba','Equilíbrio entre natureza e estrutura.'],
+'lazer-999':['🌊 Casa com piscina em São Sebastião','O refúgio definitivo a poucos metros da praia.']};
+let i=0,ans=[];
+function render(){
+if(i<perguntas.length){const p=perguntas[i];
+document.getElementById('quiz').innerHTML=`<h3>Pergunta ${i+1} de 5</h3><p><strong>${p.q}</strong></p>`+p.o.map(o=>`<button class="opt" onclick="pick('${o[1]}')">${o[0]}</button>`).join('');}
+else{const key=ans[0]+'-'+ans[1];const m=matches[key]||matches['investir-700'];
+document.getElementById('quiz').style.display='none';
+document.getElementById('resultado').style.display='block';
+document.getElementById('match').innerHTML=`<span class="badge">${m[0]}</span>`;
+document.getElementById('desc').textContent=m[1];}}
+function pick(v){ans.push(v);i++;render();}
+render();
+</script>
+</body>
+</html>
