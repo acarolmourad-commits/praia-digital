@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alugar ou Comprar no Litoral? — Comparador Financeiro | Praia Digital</title>
+  <meta name="description" content="Alugar ou comprar imóvel no litoral de SP? Compare custos de aluguel vs. financiamento, ponto de equilíbrio e patrimônio acumulado. Ferramenta gratuita Praia Digital.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://praia.digital/apps/alugar-ou-comprar/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alugar ou Comprar no Litoral? | Praia Digital">
+  <meta property="og:description" content="Comparador financeiro: aluguel vs. compra de imóvel no litoral paulista.">
+  <meta property="og:url" content="https://praia.digital/apps/alugar-ou-comprar/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Alugar ou Comprar no Litoral?",
+    "url": "https://praia.digital/apps/alugar-ou-comprar/",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web",
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BRL"},
+    "provider": {"@type": "Organization", "name": "Praia Digital", "url": "https://praia.digital/"}
+  }
+  </script>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4F6F8;color:#0F172A;line-height:1.6}
+    header{background:linear-gradient(135deg,#0A3D2E,#0EA5E9);color:#fff;padding:28px 20px;text-align:center}
+    header h1{font-size:clamp(1.3rem,4vw,1.9rem)}
+    .wrap{max-width:860px;margin:0 auto;padding:20px 16px 48px}
+    .card{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:20px;margin-bottom:14px;box-shadow:0 4px 20px rgba(0,0,0,.04)}
+    label{font-size:13px;font-weight:600;display:block;margin:8px 0 3px}
+    input{width:100%;padding:10px;border:1px solid #DDD;border-radius:8px;font-size:15px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media(max-width:640px){.grid{grid-template-columns:1fr}}
+    button{background:#0A3D2E;color:#fff;border:none;padding:14px 28px;border-radius:10px;font-size:16px;font-weight:700;cursor:pointer;width:100%;margin-top:14px}
+    .result{display:none;margin-top:16px}
+    .rrow{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #EEE;font-size:14px;gap:8px;flex-wrap:wrap}
+    .rrow strong{color:#0A3D2E}
+    .verdict{text-align:center;font-size:1.15rem;font-weight:800;padding:14px;border-radius:12px;margin-top:12px}
+    .links{display:grid;gap:10px;margin-top:8px}
+    .links a{display:block;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px;text-decoration:none;color:#0F172A;font-weight:600}
+    .links a span{color:#0EA5E9}
+    footer{text-align:center;color:#94A3B8;font-size:12px;padding:20px}
+    .note{font-size:12px;color:#64748B;margin-top:12px}
+  </style>
+</head>
+<body>
+<header>
+  <h1>⚖️ Alugar ou Comprar no Litoral?</h1>
+  <p>A resposta em números, não em opinião • Praia Digital</p>
+</header>
+<div class="wrap">
+  <div class="card">
+    <div class="grid">
+      <div><label>Valor do imóvel (R$)</label><input type="number" id="valor" value="595000"></div>
+      <div><label>Aluguel mensal equivalente (R$)</label><input type="number" id="aluguel" value="2800"></div>
+      <div><label>Entrada disponível (R$)</label><input type="number" id="entrada" value="120000"></div>
+      <div><label>Taxa de financiamento (% a.a.)</label><input type="number" id="taxa" value="12"></div>
+      <div><label>Prazo (anos)</label><input type="number" id="anos" value="20"></div>
+      <div><label>Valorização anual do imóvel (%)</label><input type="number" id="valoriz" value="10"></div>
+    </div>
+    <button onclick="calc()">Comparar ⚖️</button>
+    <div class="result" id="res">
+      <div class="rrow"><span>Parcela do financiamento (Price)</span><strong id="rParc"></strong></div>
+      <div class="rrow"><span>Diferença mensal (parcela − aluguel)</span><strong id="rDif"></strong></div>
+      <div class="rrow"><span>Total pago em aluguel no prazo</span><strong id="rAlug"></strong></div>
+      <div class="rrow"><span>Valor do imóvel ao fim do prazo</span><strong id="rImovel"></strong></div>
+      <div class="verdict" id="rVerdict"></div>
+      <p class="note">⚠️ Simulação simplificada (Tabela Price, sem ITBI/cartório/manutenção; aluguel sem reajuste). Ferramenta educativa — decisões reais merecem assessoria profissional.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size:17px;margin-bottom:10px">🔗 Explore mais</h2>
+    <div class="links">
+      <a href="/apps/">🧰 <span>Praia Digital Apps</span> — todas as ferramentas</a>
+      <a href="/apps/valor-imovel/">💰 Quanto vale meu imóvel?</a>
+      <a href="/apps/calculadora-consorcio/">🏦 Calculadora de consórcio</a>
+      <a href="/apps/comparador-cidades/">📊 Comparador de cidades</a>
+      <a href="/encontrar-imovel.html">🔍 Encontrar imóvel</a>
+      <a href="https://acarolmourad-commits.github.io/asf-app/apps/" target="_blank" rel="noopener">🌊 <span>ASF Apps</span> — ferramentas de surf do litoral</a>
+    </div>
+  </div>
+</div>
+<footer>Praia Digital — Tecnologia imobiliária do litoral • <a href="/" style="color:#0EA5E9">praia.digital</a></footer>
+<script>
+function fmt(v){ return 'R$ ' + Math.round(v).toLocaleString('pt-BR'); }
+function calc(){
+  const V = parseFloat(document.getElementById('valor').value)||0;
+  const A = parseFloat(document.getElementById('aluguel').value)||0;
+  const E = parseFloat(document.getElementById('entrada').value)||0;
+  const i = (parseFloat(document.getElementById('taxa').value)||0)/100/12;
+  const anos = parseFloat(document.getElementById('anos').value)||20;
+  const val = (parseFloat(document.getElementById('valoriz').value)||0)/100;
+  const n = anos*12;
+  const fin = Math.max(0, V - E);
+  const parc = i>0 ? fin*i/(1-Math.pow(1+i,-n)) : fin/n;
+  const imovelFuturo = V * Math.pow(1+val, anos);
+  document.getElementById('rParc').textContent = fmt(parc);
+  document.getElementById('rDif').textContent = (parc>A ? '+' : '') + fmt(parc-A) + '/mês';
+  document.getElementById('rAlug').textContent = fmt(A*n);
+  document.getElementById('rImovel').textContent = fmt(imovelFuturo);
+  const el = document.getElementById('rVerdict');
+  const razao = (A*12)/V*100;
+  if (razao < 4.5){
+    el.style.background='#DCFCE7'; el.style.color='#14532D';
+    el.textContent = '🏠 Comprar tende a compensar: aluguel anual = ' + razao.toFixed(1) + '% do valor do imóvel (barato vs. compra).';
+  } else if (razao < 6.5){
+    el.style.background='#FEF9C3'; el.style.color='#713F12';
+    el.textContent = '🤔 Equilíbrio: aluguel anual = ' + razao.toFixed(1) + '% do valor. Decida por flexibilidade vs. patrimônio.';
+  } else {
+    el.style.background='#FEE2E2'; el.style.color='#7F1D1D';
+    el.textContent = '🔑 Alugar tende a compensar: aluguel anual = ' + razao.toFixed(1) + '% do valor do imóvel (caro comprar agora).';
+  }
+  document.getElementById('res').style.display = 'block';
+}
+</script>
+</body>
+</html>

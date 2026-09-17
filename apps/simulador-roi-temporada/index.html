@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de ROI — Aluguel de Temporada no Litoral SP | Praia Digital</title>
+  <meta name="description" content="Simule gratuitamente o ROI de um imóvel de aluguel por temporada no litoral de São Paulo: receita bruta, custos, ROI líquido e payback.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://praia.digital/apps/simulador-roi-temporada/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Simulador de ROI — Aluguel de Temporada | Praia Digital">
+  <meta property="og:description" content="Calcule a rentabilidade do seu imóvel de temporada no litoral paulista.">
+  <meta property="og:url" content="https://praia.digital/apps/simulador-roi-temporada/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Simulador de ROI — Aluguel de Temporada",
+    "url": "https://praia.digital/apps/simulador-roi-temporada/",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web",
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BRL"},
+    "provider": {"@type": "Organization", "name": "Praia Digital", "url": "https://praia.digital/"}
+  }
+  </script>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4F6F8;color:#0F172A;line-height:1.6}
+    header{background:linear-gradient(135deg,#0A3D2E,#0EA5E9);color:#fff;padding:28px 20px;text-align:center}
+    header h1{font-size:clamp(1.3rem,4vw,1.9rem)}
+    header p{opacity:.92;margin-top:6px;font-size:14px}
+    .wrap{max-width:860px;margin:0 auto;padding:20px 16px 48px}
+    .card{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:20px;margin-bottom:14px;box-shadow:0 4px 20px rgba(0,0,0,.04)}
+    label{font-size:13px;font-weight:600;display:block;margin-bottom:4px}
+    input,select{width:100%;padding:10px;border:1px solid #DDD;border-radius:8px;font-size:15px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media(max-width:640px){.grid{grid-template-columns:1fr}}
+    button{background:#0A3D2E;color:#fff;border:none;padding:14px 28px;border-radius:10px;font-size:16px;font-weight:700;cursor:pointer;width:100%;margin-top:14px}
+    .result{margin-top:16px;display:none}
+    .rrow{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #EEE;font-size:15px}
+    .rrow strong{color:#0A3D2E}
+    .big{font-size:1.6rem;font-weight:800;color:#0A3D2E;text-align:center;margin-top:10px}
+    .links{display:grid;gap:10px;margin-top:8px}
+    .links a{display:block;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px;text-decoration:none;color:#0F172A;font-weight:600}
+    .links a span{color:#0EA5E9}
+    footer{text-align:center;color:#94A3B8;font-size:12px;padding:20px}
+    .note{font-size:12px;color:#64748B;margin-top:12px}
+  </style>
+</head>
+<body>
+<header>
+  <h1>🧮 Simulador de ROI — Aluguel de Temporada</h1>
+  <p>Descubra a rentabilidade do seu imóvel no litoral de São Paulo • Gratuito, por Praia Digital</p>
+</header>
+<div class="wrap">
+  <div class="card">
+    <div class="grid">
+      <div><label>Valor do imóvel (R$)</label><input type="number" id="valor" value="595000"></div>
+      <div><label>Diária média — ADR (R$)</label><input type="number" id="adr" value="750"></div>
+      <div><label>Ocupação anual (%)</label><input type="number" id="ocup" value="55"></div>
+      <div><label>Noites disponíveis por ano</label><input type="number" id="noites" value="200"></div>
+      <div><label>Custos anuais (R$) — limpeza, gestão, manutenção</label><input type="number" id="custos" value="38000"></div>
+      <div><label>Cidade (referência)</label>
+        <select id="cidade">
+          <option value="">Personalizado</option>
+          <option value="750,55">Bertioga (ADR R$750, 55%)</option>
+          <option value="900,68">São Sebastião (ADR R$900, 68%)</option>
+          <option value="1100,62">Ilhabela (ADR R$1.100, 62%)</option>
+          <option value="700,58">Ubatuba (ADR R$700, 58%)</option>
+          <option value="850,51">Santos (ADR R$850, 51%)</option>
+        </select>
+      </div>
+    </div>
+    <button onclick="calcular()">Calcular rentabilidade</button>
+    <div class="result" id="result">
+      <div class="rrow"><span>Receita bruta anual</span><strong id="rBruta"></strong></div>
+      <div class="rrow"><span>Receita líquida anual</span><strong id="rLiq"></strong></div>
+      <div class="rrow"><span>ROI bruto</span><strong id="rRoiB"></strong></div>
+      <div class="rrow"><span>ROI líquido</span><strong id="rRoiL"></strong></div>
+      <div class="rrow"><span>Payback estimado</span><strong id="rPayback"></strong></div>
+      <div class="big" id="rBig"></div>
+      <p class="note">Estimativa baseada em parâmetros informados. Referências de mercado: AirDNA/Airbtics (litoral SP, 2026). Não constitui garantia de rendimento.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size:17px;margin-bottom:10px">🔗 Explore mais</h2>
+    <div class="links">
+      <a href="/">🏠 <span>Praia Digital</span> — imóveis no litoral de São Paulo</a>
+      <a href="/encontrar-imovel.html">🔍 Encontrar imóvel ranqueado por score</a>
+      <a href="/dados-ocupacao-temporada-litoral-sp-2026.html">📊 Dados de ocupação de temporada no litoral SP</a>
+      <a href="/casa-condominio-fechado-bertioga.html">🏖️ Exemplo real: casa em Bertioga com ROI projetado</a>
+      <a href="https://acarolmourad-commits.github.io/asf-app/previsao-surf/" target="_blank" rel="noopener">🌊 <span>ASF</span> — previsão de ondas em tempo real no litoral</a>
+      <a href="https://acarolmourad-commits.github.io/asf-app/" target="_blank" rel="noopener">🏄‍♀️ ASF — Associação de Surf Feminino</a>
+    </div>
+  </div>
+</div>
+<footer>Praia Digital — Tecnologia imobiliária do litoral • <a href="/" style="color:#0EA5E9">praia.digital</a></footer>
+
+<script>
+const sel = document.getElementById('cidade');
+sel.addEventListener('change', function(){
+  if(!this.value) return;
+  const [adr, ocup] = this.value.split(',');
+  document.getElementById('adr').value = adr;
+  document.getElementById('ocup').value = ocup;
+});
+function fmt(v){ return 'R$ ' + Math.round(v).toLocaleString('pt-BR'); }
+function calcular(){
+  const v = parseFloat(document.getElementById('valor').value)||0;
+  const a = parseFloat(document.getElementById('adr').value)||0;
+  const o = parseFloat(document.getElementById('ocup').value)||0;
+  const n = parseFloat(document.getElementById('noites').value)||0;
+  const c = parseFloat(document.getElementById('custos').value)||0;
+  if(v<=0){ alert('Informe o valor do imóvel.'); return; }
+  const bruta = a*(o/100)*n;
+  const liq = bruta - c;
+  document.getElementById('rBruta').textContent = fmt(bruta);
+  document.getElementById('rLiq').textContent = fmt(liq);
+  document.getElementById('rRoiB').textContent = (bruta/v*100).toFixed(1)+'% ao ano';
+  document.getElementById('rRoiL').textContent = (liq/v*100).toFixed(1)+'% ao ano';
+  document.getElementById('rPayback').textContent = liq>0 ? (v/liq).toFixed(1)+' anos' : '—';
+  const roiL = liq/v*100;
+  document.getElementById('rBig').textContent = roiL>=10 ? '🏆 Excelente investimento para temporada!' : roiL>=6 ? '👍 Bom potencial — otimize ocupação e ADR.' : '🤔 Retorno modesto — revise custos ou precificação.';
+  document.getElementById('result').style.display = 'block';
+}
+</script>
+</body>
+</html>

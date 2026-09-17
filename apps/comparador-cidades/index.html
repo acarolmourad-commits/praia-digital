@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparador de Cidades do Litoral SP — Onde Investir? | Praia Digital</title>
+  <meta name="description" content="Compare as cidades do litoral paulista lado a lado: preço por m², ocupação de temporada, ROI, valorização e liquidez. Ferramenta gratuita da Praia Digital.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://praia.digital/apps/comparador-cidades/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Comparador de Cidades do Litoral SP | Praia Digital">
+  <meta property="og:description" content="Ranqueie as cidades do litoral pelo seu perfil: investimento, temporada ou moradia.">
+  <meta property="og:url" content="https://praia.digital/apps/comparador-cidades/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Comparador de Cidades do Litoral SP",
+    "url": "https://praia.digital/apps/comparador-cidades/",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web",
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BRL"},
+    "provider": {"@type": "Organization", "name": "Praia Digital", "url": "https://praia.digital/"}
+  }
+  </script>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4F6F8;color:#0F172A;line-height:1.6}
+    header{background:linear-gradient(135deg,#0A3D2E,#0EA5E9);color:#fff;padding:28px 20px;text-align:center}
+    header h1{font-size:clamp(1.3rem,4vw,1.9rem)}
+    .wrap{max-width:900px;margin:0 auto;padding:20px 16px 48px}
+    .card{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:20px;margin-bottom:14px;box-shadow:0 4px 20px rgba(0,0,0,.04)}
+    .profiles{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+    .prof{background:#fff;border:2px solid #E5E7EB;border-radius:999px;padding:10px 18px;font-size:14px;font-weight:600;cursor:pointer}
+    .prof.on{border-color:#0EA5E9;background:#EFF6FF;color:#0369A1}
+    table{width:100%;border-collapse:collapse;font-size:14px}
+    th{background:#0A3D2E;color:#fff;padding:10px;text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:.3px}
+    td{padding:10px;border-bottom:1px solid #EEE}
+    tr.hl{background:#F0FDF4}
+    .score{font-weight:800;color:#0A3D2E;font-size:1.1rem}
+    .bar{height:6px;background:#E5E7EB;border-radius:3px;margin-top:4px}
+    .bar i{display:block;height:100%;background:linear-gradient(90deg,#0EA5E9,#0A3D2E);border-radius:3px}
+    .links{display:grid;gap:10px;margin-top:8px}
+    .links a{display:block;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px;text-decoration:none;color:#0F172A;font-weight:600}
+    .links a span{color:#0EA5E9}
+    footer{text-align:center;color:#94A3B8;font-size:12px;padding:20px}
+    .note{font-size:12px;color:#64748B;margin-top:12px}
+  </style>
+</head>
+<body>
+<header>
+  <h1>📊 Comparador de Cidades do Litoral</h1>
+  <p>Qual cidade combina com seu objetivo? Compare e decida com dados • Praia Digital</p>
+</header>
+<div class="wrap">
+  <div class="card">
+    <h2 style="font-size:17px;margin-bottom:10px">Escolha seu perfil</h2>
+    <div class="profiles">
+      <button class="prof on" data-p="investidor" onclick="setProfile(this)">💰 Investidor</button>
+      <button class="prof" data-p="temporada" onclick="setProfile(this)">🏖️ Renda de temporada</button>
+      <button class="prof" data-p="morar" onclick="setProfile(this)">🏠 Morar bem</button>
+    </div>
+    <div style="overflow-x:auto">
+      <table>
+        <thead><tr><th>Cidade</th><th>Preço/m²</th><th>Ocupação</th><th>Valorização</th><th>Liquidez</th><th>Score</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <p class="note">Dados de referência: AirDNA/Airbtics e análise Praia Digital (2026). Liquidez: 1–10 (10 = vende rápido). Score ponderado pelo perfil escolhido. Não constitui recomendação de investimento.</p>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size:17px;margin-bottom:10px">🔗 Explore mais</h2>
+    <div class="links">
+      <a href="/apps/">🧰 <span>Praia Digital Apps</span> — todas as ferramentas</a>
+      <a href="/apps/simulador-roi-temporada/">🧮 Simulador de ROI de temporada</a>
+      <a href="/apps/calculadora-consorcio/">🏦 Calculadora de consórcio</a>
+      <a href="/comparativo-cidades-litoral-por-perfil-2026.html">📖 Análise completa por perfil (artigo)</a>
+      <a href="/encontrar-imovel.html">🔍 Encontrar imóvel</a>
+      <a href="https://acarolmourad-commits.github.io/asf-app/apps/" target="_blank" rel="noopener">🌊 <span>ASF Apps</span> — previsão de ondas, marés e diário de surf</a>
+    </div>
+  </div>
+</div>
+<footer>Praia Digital — Tecnologia imobiliária do litoral • <a href="/" style="color:#0EA5E9">praia.digital</a></footer>
+<script>
+const CIDADES = [
+  {nome:'Santos', m2:5800, ocup:51, valor:9.8, liq:9, infra:9},
+  {nome:'São Sebastião', m2:6500, ocup:68, valor:12.1, liq:8, infra:7},
+  {nome:'Ilhabela', m2:7200, ocup:62, valor:10.5, liq:6, infra:6},
+  {nome:'Ubatuba', m2:4100, ocup:58, valor:11.3, liq:5, infra:6},
+  {nome:'Bertioga', m2:3200, ocup:55, valor:15.2, liq:6, infra:6},
+  {nome:'Guarujá', m2:4900, ocup:54, valor:8.9, liq:8, infra:8},
+  {nome:'Praia Grande', m2:3600, ocup:50, valor:9.5, liq:7, infra:7},
+  {nome:'Itanhaém', m2:2400, ocup:42, valor:13.8, liq:4, infra:5},
+  {nome:'Mongaguá', m2:2100, ocup:40, valor:12.5, liq:4, infra:5},
+  {nome:'Peruíbe', m2:1900, ocup:38, valor:14.1, liq:3, infra:4}
+];
+const PERFIS = {
+  investidor: {m2:-0.25, ocup:0.2, valor:0.35, liq:0.2, infra:0},
+  temporada:  {m2:-0.15, ocup:0.4, valor:0.15, liq:0.1, infra:0.2},
+  morar:      {m2:-0.25, ocup:0, valor:0.15, liq:0.1, infra:0.5}
+};
+let perfil = 'investidor';
+function setProfile(btn){
+  document.querySelectorAll('.prof').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  perfil = btn.dataset.p;
+  render();
+}
+function norm(v, arr, invert){
+  const min = Math.min(...arr), max = Math.max(...arr);
+  let s = max===min ? 0.5 : (v-min)/(max-min);
+  return invert ? 1-s : s;
+}
+function render(){
+  const w = PERFIS[perfil];
+  const m2s = CIDADES.map(c=>c.m2), ocups = CIDADES.map(c=>c.ocup), vals = CIDADES.map(c=>c.valor), liqs = CIDADES.map(c=>c.liq), infs = CIDADES.map(c=>c.infra);
+  const rows = CIDADES.map(c=>{
+    const score = 100*(w.m2*norm(c.m2,m2s,true)*-1*-1 === 0 ? 0 :
+      (Math.abs(w.m2)*norm(c.m2,m2s,true) + w.ocup*norm(c.ocup,ocups) + w.valor*norm(c.valor,vals) + w.liq*norm(c.liq,liqs) + w.infra*norm(c.infra,infs)) / (Math.abs(w.m2)+w.ocup+w.valor+w.liq+w.infra));
+    return {...c, score};
+  }).sort((a,b)=>b.score-a.score);
+  document.getElementById('tbody').innerHTML = rows.map((c,i)=>`
+    <tr class="${i===0?'hl':''}">
+      <td>${i===0?'🥇 ':i===1?'🥈 ':i===2?'🥉 ':''}<strong>${c.nome}</strong></td>
+      <td>R$ ${c.m2.toLocaleString('pt-BR')}</td>
+      <td>${c.ocup}%</td>
+      <td>+${c.valor}%</td>
+      <td>${c.liq}/10</td>
+      <td><span class="score">${c.score.toFixed(0)}</span><div class="bar"><i style="width:${c.score}%"></i></div></td>
+    </tr>`).join('');
+}
+render();
+</script>
+</body>
+</html>

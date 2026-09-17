@@ -1,7 +1,7 @@
 # E-mail — Sao Vicente
 
 ## Assuntos
-1. Oportunidades em Sao Vicente — Litoral Prime Imóveis
+1. Oportunidades em Sao Vicente — Praia Digital
 2. 3 imóveis selecionados para você em Sao Vicente
 3. Acesso antecipado: imóveis em Sao Vicente com condições especiais
 

@@ -12,4 +12,4 @@ Tudo bem? Estava revisitando o mercado de imóveis no litoral e identifiquei uma
 Proponho um piloto de 30 dias sem taxa mínima e sem fidelidade longa. Se não captar leads qualificados, não continuamos.
 
 Site: https://praia.digital
-Contato: (11) 95434-6288 | comercial@praiadigital.com
+Contato: (11) 95434-6288 | comercial@praia.digital

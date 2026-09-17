@@ -11,4 +11,4 @@ Fiz uma proposta simples para imobiliárias no litoral paulista que querem cresc
 
 Sem taxa mínima. Queremos resultados primeiro.
 
-Contato: (11) 95434-6288 | comercial@praiadigital.com
+Contato: (11) 95434-6288 | comercial@praia.digital

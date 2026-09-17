@@ -17,4 +17,4 @@ Queremos apresentar um plano 30 dias. Posso enviar?
 
 Abraço,
 Carol
-(11) 95434-6288 | comercial@praiadigital.com
+(11) 95434-6288 | comercial@praia.digital

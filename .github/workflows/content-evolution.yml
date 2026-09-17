@@ -1,0 +1,26 @@
+name: Evolução de Conteúdo 2026-09
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Aplica melhorias de conteúdo aprovadas
+        run: python3 scripts/content-evolution-2026-09.py
+      - name: Commit e push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nada a commitar (já aplicado)."
+          else
+            git commit -m "feat(conteudo): aplica relatório de evolução de conteúdo 2026-09 (hero, CTAs, marca, e-mail oficial, governança)"
+            git push
+          fi

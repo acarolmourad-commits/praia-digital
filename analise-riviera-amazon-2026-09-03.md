@@ -82,10 +82,10 @@
 |------|--------|
 | `bairros/bertioga/riviera.html` | Imóveis na Riviera — Bertioga |
 | `afiliados/enxoval-automacao-riviera.html` | Checklist de Enxoval e Automação Praiana — Riviera e Bertioga 2026 |
-| `imoveis/bertioga-riviera-venda.html` | Venda em Riviera - Bertioga — Litoral Prime Imóveis |
-| `litoral-prime-imoveis/bairros/bertioga/bertioga-riviera.html` | Riviera — Imóveis em Bertioga \| Litoral Prime Imóveis |
-| `litoral-prime-imoveis/imoveis/bertioga-riviera-venda.html` | Venda em Riviera - Bertioga — Litoral Prime Imóveis |
-| `litoral-prime-imoveis/imoveis/loft-sao-lourenco-bertioga-venda.html` | Loft em São Lourenço - Bertioga — Litoral Prime Imóveis |
+| `imoveis/bertioga-riviera-venda.html` | Venda em Riviera - Bertioga — Praia Digital |
+| `litoral-prime-imoveis/bairros/bertioga/bertioga-riviera.html` | Riviera — Imóveis em Bertioga \| Praia Digital |
+| `litoral-prime-imoveis/imoveis/bertioga-riviera-venda.html` | Venda em Riviera - Bertioga — Praia Digital |
+| `litoral-prime-imoveis/imoveis/loft-sao-lourenco-bertioga-venda.html` | Loft em São Lourenço - Bertioga — Praia Digital |
 | `content/posts/airbnb-riviera-sao-lourenco-2026.md` | Airbnb na Riviera de São Lourenço: Guia de Aluguel por Temporada para Proprietários 2026 |
 | `compras/index.html` | Guia de Equipamentos & Compras Rápidas na Riviera e Bertioga 2026 |
 | `links/index.html` | Praia Digital — Portal Riviera & Bertioga |

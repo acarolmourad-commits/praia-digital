@@ -1,4 +1,4 @@
-/* humans.txt — Litoral Prime Imóveis / Praia Digital */
+/* humans.txt — Praia Digital / Praia Digital */
 /* Equipe e agradecimentos */
 
 Team

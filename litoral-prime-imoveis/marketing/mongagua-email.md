@@ -1,7 +1,7 @@
 # E-mail — Mongagua
 
 ## Assuntos
-1. Oportunidades em Mongagua — Litoral Prime Imóveis
+1. Oportunidades em Mongagua — Praia Digital
 2. 3 imóveis selecionados para você em Mongagua
 3. Acesso antecipado: imóveis em Mongagua com condições especiais
 

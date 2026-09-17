@@ -18,4 +18,4 @@ Queremos crescer juntos. Posso enviar um exemplo prático?
 
 Abraço,
 Carol
-(11) 95434-6288 | comercial@praiadigital.com
+(11) 95434-6288 | comercial@praia.digital

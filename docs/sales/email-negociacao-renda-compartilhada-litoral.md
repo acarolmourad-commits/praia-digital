@@ -11,4 +11,4 @@ Podemos trabalhar juntos por ganho compartilhado:
 
 Sem taxa fixa obrigatória. Queremos resultados reais.
 
-Contato: (11) 95434-6288 | comercial@praiadigital.com
+Contato: (11) 95434-6288 | comercial@praia.digital

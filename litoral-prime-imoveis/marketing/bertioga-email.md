@@ -1,7 +1,7 @@
 # E-mail — Bertioga
 
 ## Assuntos
-1. Oportunidades em Bertioga — Litoral Prime Imóveis
+1. Oportunidades em Bertioga — Praia Digital
 2. 3 imóveis selecionados para você em Bertioga
 3. Acesso antecipado: imóveis em Bertioga com condições especiais
 

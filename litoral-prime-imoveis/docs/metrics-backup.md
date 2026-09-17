@@ -1,4 +1,4 @@
-# Backup de métricas — Litoral Prime Imóveis
+# Backup de métricas — Praia Digital
 
 Fonte oficial:
 - outreach/metricas.csv
