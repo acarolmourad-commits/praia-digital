@@ -22,6 +22,7 @@
       if (node && marker.parentNode) {
         marker.parentNode.replaceChild(node, marker);
         window.__pdShared.push(['inject-nav-ok', url]);
+        bindNavDropdown();
         // Remove header/nav inline legado (duplicado) após injetar o menu compartilhado
         var legacy = document.querySelectorAll('header.pd-nav, body > header, body > nav:not(.pd-nav)');
         for (var i = 0; i < legacy.length; i++) {
@@ -39,6 +40,33 @@
       }
     }).catch(function (err) {
       window.__pdShared.push(['inject-error', url, err && err.message]);
+    });
+  }
+
+
+  // Dropdown do menu principal: fecha ao clicar fora, com ESC ou ao clicar em link
+  function bindNavDropdown() {
+    var menu = document.getElementById('pd-nav-menu');
+    var toggle = document.querySelector('.pd-nav-toggle');
+    if (!menu || !toggle || toggle.getAttribute('data-pd-bound') === '1') return;
+    toggle.setAttribute('data-pd-bound', '1');
+    document.addEventListener('click', function (e) {
+      if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    menu.addEventListener('click', function (e) {
+      if (e.target && e.target.closest && e.target.closest('a')) {
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
     });
   }
 
@@ -67,6 +95,7 @@
     }
 
     setTimeout(function () {
+      bindNavDropdown();
       window.__pdShared.push(['boot-delay', !!document.querySelector('.pd-nav'), !!document.querySelector('footer')]);
     }, 1500);
   }
