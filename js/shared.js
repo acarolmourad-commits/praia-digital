@@ -186,3 +186,93 @@
     boost();
   }
 })();
+
+// ====================
+// Listings reais + captura de leads qualificados
+// ====================
+(function () {
+  'use strict';
+
+  // IDs com dados verificados e página real de detalhes
+  var REAL_IDS = (typeof window !== 'undefined' && window.PD_REAL_IDS) || [24, 25];
+
+  function onlyRealListings() {
+    try {
+      if (typeof listings === 'undefined' || !Array.isArray(listings)) return false;
+      var hadSynthetic = false;
+      for (var i = listings.length - 1; i >= 0; i--) {
+        if (REAL_IDS.indexOf(listings[i].id) === -1) { listings.splice(i, 1); hadSynthetic = true; }
+      }
+      if (typeof currentFilter !== 'undefined' && typeof renderListings === 'function') {
+        currentFilter = listings.slice();
+        renderListings(currentFilter);
+      }
+      var count = document.getElementById('resultsCount');
+      if (count) {
+        count.textContent = listings.length + (listings.length === 1 ? ' imóvel verificado' : ' imóveis verificados');
+        var note = document.createElement('p');
+        note.id = 'pd-real-note';
+        note.style.cssText = 'font-size:0.85rem;color:#666;margin-top:0.25rem;';
+        note.textContent = 'Exibimos apenas imóveis com dados verificados. Procurando outro perfil? Cadastre seu interesse abaixo e receba opções sob medida.';
+        if (!document.getElementById('pd-real-note') && count.parentNode) count.parentNode.appendChild(note);
+      }
+      return hadSynthetic;
+    } catch (e) { return false; }
+  }
+
+  function injectLeadTool() {
+    var grid = document.getElementById('resultsGrid');
+    if (!grid || document.getElementById('pdLeadTool')) return;
+    var wrap = document.createElement('div');
+    wrap.id = 'pdLeadTool';
+    wrap.style.cssText = 'max-width:860px;margin:2rem auto 0;background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,.04);';
+    wrap.innerHTML =
+      '<h3 style="margin:0 0 0.25rem;font-size:1.15rem;color:#0A3D2E;">🎯 Não encontrou o padrão que procura?</h3>' +
+      '<p style="margin:0 0 1rem;font-size:0.9rem;color:#555;">Conte o que você busca — tipo, cidade, faixa de preço — e a gente filtra as melhores opções para você no WhatsApp.</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:0.75rem;">' +
+        '<select id="pdLeadTipo" style="padding:0.6rem;border:2px solid #e0e0e0;border-radius:12px;font-size:0.9rem;">' +
+          '<option value="">Tipo de imóvel</option><option>Casa</option><option>Apartamento</option><option>Terreno</option><option>Pousada</option><option>Comercial</option>' +
+        '</select>' +
+        '<select id="pdLeadCidade" style="padding:0.6rem;border:2px solid #e0e0e0;border-radius:12px;font-size:0.9rem;">' +
+          '<option value="">Cidade</option><option>Santos</option><option>Guarujá</option><option>Praia Grande</option><option>Bertioga</option><option>Itanhaém</option><option>Mongaguá</option><option>São Vicente</option><option>Peruíbe</option><option>Ubatuba</option><option>Caraguatatuba</option><option>São Sebastião</option><option>Ilhabela</option>' +
+        '</select>' +
+        '<select id="pdLeadPreco" style="padding:0.6rem;border:2px solid #e0e0e0;border-radius:12px;font-size:0.9rem;">' +
+          '<option value="">Faixa de preço</option><option>Até R$ 500 mil</option><option>R$ 500 mil a R$ 1 milhão</option><option>R$ 1 a 2 milhões</option><option>Acima de R$ 2 milhões</option>' +
+        '</select>' +
+        '<select id="pdLeadDorms" style="padding:0.6rem;border:2px solid #e0e0e0;border-radius:12px;font-size:0.9rem;">' +
+          '<option value="">Dormitórios</option><option>1+</option><option>2+</option><option>3+</option><option>4+</option>' +
+        '</select>' +
+      '</div>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:0.75rem;margin-top:0.75rem;">' +
+        '<input id="pdLeadNome" placeholder="Seu nome" style="padding:0.6rem;border:2px solid #e0e0e0;border-radius:12px;font-size:0.9rem;">' +
+        '<input id="pdLeadFone" placeholder="Seu WhatsApp (opcional)" style="padding:0.6rem;border:2px solid #e0e0e0;border-radius:12px;font-size:0.9rem;">' +
+      '</div>' +
+      '<button id="pdLeadBtn" style="margin-top:1rem;background:#0A3D2E;color:#fff;border:none;padding:0.8rem 1.5rem;border-radius:12px;font-size:1rem;font-weight:700;cursor:pointer;width:100%;">💬 Receber opções no WhatsApp</button>';
+    if (grid.parentNode) grid.parentNode.appendChild(wrap);
+
+    document.getElementById('pdLeadBtn').addEventListener('click', function () {
+      var v = function (id) { var el = document.getElementById(id); return el ? el.value.trim() : ''; };
+      var partes = [];
+      if (v('pdLeadTipo')) partes.push(v('pdLeadTipo'));
+      if (v('pdLeadCidade')) partes.push('em ' + v('pdLeadCidade'));
+      if (v('pdLeadPreco')) partes.push('na faixa ' + v('pdLeadPreco'));
+      if (v('pdLeadDorms')) partes.push('com ' + v('pdLeadDorms') + ' dormitórios');
+      var msg = 'Olá! Quero receber opções de imóveis' + (partes.length ? ': ' + partes.join(', ') : ' no litoral de SP') + '.';
+      if (v('pdLeadNome')) msg += ' Meu nome é ' + v('pdLeadNome') + '.';
+      if (v('pdLeadFone')) msg += ' Meu WhatsApp: ' + v('pdLeadFone') + '.';
+      window.open('https://wa.me/5511954346288?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+    });
+  }
+
+  function run() {
+    if (document.getElementById('resultsGrid')) {
+      onlyRealListings();
+      injectLeadTool();
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', run);
+  } else {
+    run();
+  }
+})();
