@@ -58,7 +58,7 @@
       <div><label>Prazo (meses)</label><input type="number" id="prazo" value="180"></div>
       <div><label>Taxa administrativa total (%)</label><input type="number" id="taxa" value="18"></div>
       <div><label>Lance (% do crédito, opcional)</label><input type="number" id="lance" value="0"></div>
-      <div><label>Taxa do financiamento p/ comparar (% a.a.)</label><input type="number" id="taxaFin" value="12"></div>
+      <div><label>Taxa do financiamento p/ comparar (% a.a.)</label><input type="number" id="taxaFin" step="0.01" value="11.19"></div>
     </div>
     <button onclick="calcular()">Simular consórcio</button>
     <div class="result" id="result">
@@ -69,6 +69,27 @@
       <div class="save" id="rSave"></div>
       <p class="note">Simulação simplificada (fundo de reserva e seguros não incluídos; financiamento pela Tabela Price). Valores estimados — consulte administradoras autorizadas pelo Banco Central.</p>
     </div>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size:17px;margin-bottom:10px">💡 Por que o consórcio atrai tanta gente em 2026?</h2>
+    <p style="font-size:14px;margin-bottom:10px">Com a Selic em <strong>13,75% a.a.</strong> (Copom, set/2026), o financiamento bancário continua caro: na Tabela Price, um imóvel de R$ 500 mil em 15 anos pode custar mais de R$ 1 milhão no total. No consórcio não existe juros — você paga só a <strong>taxa de administração</strong> (em geral 12% a 20% <em>do crédito, diluída em todo o prazo</em>), fundo de reserva e, opcionalmente, seguro. É por isso que a economia estimada acima costuma ser de centenas de milhares de reais.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;font-size:14px">
+      <div style="border:1px solid #E5E7EB;border-radius:12px;padding:14px"><strong>🚫 Sem juros bancários</strong><br>Custo total previsível: crédito + taxa administrativa diluída.</div>
+      <div style="border:1px solid #E5E7EB;border-radius:12px;padding:14px"><strong>💪 Poder de compra à vista</strong><br>Contemplado, você recebe a carta de crédito e negocia o imóvel como quem paga em dinheiro — ótimo para conseguir desconto.</div>
+      <div style="border:1px solid #E5E7EB;border-radius:12px;padding:14px"><strong>🏦 FGTS no consórcio</strong><br>Desde 2019 é permitido usar FGTS para dar lance, complementar a carta ou quitar/reduzir parcelas de consórcio habitacional.</div>
+      <div style="border:1px solid #E5E7EB;border-radius:12px;padding:14px"><strong>📋 Fiscalizado pelo BC</strong><br>Consórcios são regulados pela Lei 11.795/2008 e supervisionados pelo Banco Central do Brasil.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size:17px;margin-bottom:10px">❓ Dúvidas frequentes sobre consórcio imobiliário</h2>
+    <details style="border:1px solid #E5E7EB;border-radius:12px;padding:14px;margin-bottom:10px"><summary style="font-weight:600;cursor:pointer;font-size:14px">Como sou contemplado?</summary><p style="margin:8px 0 0;font-size:14px;color:#475569">De duas formas: <strong>sorteio</strong> (mensal, todos concorrem em igualdade) ou <strong>lance</strong> — você oferece um percentual do crédito e o maior lance do grupo vence. Quanto maior o lance, maior a chance de antecipar a contemplação.</p></details>
+    <details style="border:1px solid #E5E7EB;border-radius:12px;padding:14px;margin-bottom:10px"><summary style="font-weight:600;cursor:pointer;font-size:14px">Posso usar FGTS?</summary><p style="margin:8px 0 0;font-size:14px;color:#475569">Sim. O FGTS pode ser usado para <strong>ofertar lance</strong>, <strong>complementar o valor da carta de crédito</strong> ou <strong>amortizar/quitar parcelas</strong> em consórcio habitacional, respeitadas as regras do fundo (ex.: imóvel residencial, valor dentro do teto de avaliação).</p></details>
+    <details style="border:1px solid #E5E7EB;border-radius:12px;padding:14px;margin-bottom:10px"><summary style="font-weight:600;cursor:pointer;font-size:14px">A parcela fica congelada até o fim?</summary><p style="margin:8px 0 0;font-size:14px;color:#475569">Não. Crédito e parcela são <strong>reajustados periodicamente</strong> (normalmente todo ano) por índice do contrato — em consórcios imobiliários é comum o <strong>INCC</strong> (custo da construção) ou IPCA. Isso preserva seu poder de compra até a contemplação.</p></details>
+    <details style="border:1px solid #E5E7EB;border-radius:12px;padding:14px;margin-bottom:10px"><summary style="font-weight:600;cursor:pointer;font-size:14px">E se eu desistir antes de ser contemplado?</summary><p style="margin:8px 0 0;font-size:14px;color:#475569">Você pode cancelar e recebe de volta o valor acumulado no fundo comum (descontadas taxa de administração e multas previstas em contrato), mas o resgate geralmente ocorre <strong>somente por sorteio de cotas canceladas ou no encerramento do grupo</strong> — ou seja, não é dinheiro de liquidez imediata.</p></details>
+    <details style="border:1px solid #E5E7EB;border-radius:12px;padding:14px;margin-bottom:10px"><summary style="font-weight:600;cursor:pointer;font-size:14px">Consórcio ou financiamento: qual escolher?</summary><p style="margin:8px 0 0;font-size:14px;color:#475569">Se você <strong>precisa do imóvel agora</strong>, o financiamento entrega o crédito imediato (mas com juros altos). Se <strong>pode esperar e planejar</strong>, o consórcio costuma custar muito menos no total. Muita gente combina os dois: consórcio rodando enquanto junta um lance maior para acelerar a contemplação.</p></details>
+    <details style="border:1px solid #E5E7EB;border-radius:12px;padding:14px"><summary style="font-weight:600;cursor:pointer;font-size:14px">Posso comprar imóvel no litoral com a carta de crédito?</summary><p style="margin:8px 0 0;font-size:14px;color:#475569">Sim — a carta de crédito imobiliária vale para imóveis residenciais, casas de veraneio e até terrenos, em qualquer cidade do Brasil, inclusive Santos, Guarujá, Praia Grande, Bertioga e todo o litoral de SP. <a href="/encontrar-imovel.html" style="color:#0EA5E9">Veja imóveis disponíveis</a>.</p></details>
   </div>
 
   <div class="card">
