@@ -64,7 +64,7 @@ const server = http.createServer(async (req, res) => {
       return res.end();
     }
 
-    if (req.method === 'POST' && new RegExp('^leads/(b2b|report|index)\.js$').test(rel)) {
+    if (req.method === 'POST' && new RegExp('^leads/(b2b|report|index|avaliacao|automacao|white-label)\\.js$').test(rel)) {
       let body = '';
       req.setEncoding('utf8');
       for await (const chunk of req) body += chunk;
