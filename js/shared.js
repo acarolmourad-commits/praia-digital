@@ -451,8 +451,14 @@
       })
     }).then(function(r){
       if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json().catch(function(){ return {}; });
+    }).then(function(data){
       feedback.style.display = 'block';
-      feedback.textContent = '✅ Relatório enviado para ' + email + '! Confira também o resultado na tela e baixe a versão completa abaixo.';
+      if (data && data.emailSent === false) {
+        feedback.textContent = '📊 Avaliação gerada na tela abaixo. O envio por e-mail está em configuração — baixe o relatório completo agora.';
+      } else {
+        feedback.textContent = '✅ Relatório enviado para ' + email + '! Confira também o resultado na tela e baixe a versão completa abaixo.';
+      }
     }).catch(function(){
       feedback.style.display = 'block';
       feedback.textContent = '📊 Avaliação gerada na tela abaixo. Não foi possível registrar o envio agora, mas você pode baixar o relatório completo.';
