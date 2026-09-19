@@ -332,3 +332,175 @@
     injectGuide();
   }
 })();
+
+// Praia Digital — Avaliação de Imóveis (seção #avaliacao da home)
+// Completa a seção: título, campo de e-mail, botão de envio, cálculo da
+// estimativa por região, registro do lead e geração do relatório.
+(function() {
+  'use strict';
+
+  var VAL_DATA = {
+    'praia-grande':   {nome:'Praia Grande',   m2:12000, valorizacao:9.1, regiao:'Litoral Sul / Baixada Santista'},
+    'santos':         {nome:'Santos',         m2:14500, valorizacao:7.8, regiao:'Litoral Sul / Baixada Santista'},
+    'guaruja':        {nome:'Guarujá',        m2:13200, valorizacao:8.4, regiao:'Litoral Sul / Baixada Santista'},
+    'sao-vicente':    {nome:'São Vicente',    m2:9800,  valorizacao:6.9, regiao:'Litoral Sul / Baixada Santista'},
+    'itanhaem':       {nome:'Itanhaém',       m2:7200,  valorizacao:7.5, regiao:'Litoral Sul / Baixada Santista'},
+    'mongagua':       {nome:'Mongaguá',       m2:6800,  valorizacao:7.2, regiao:'Litoral Sul / Baixada Santista'},
+    'peruibe':        {nome:'Peruíbe',        m2:7400,  valorizacao:8.0, regiao:'Litoral Sul / Baixada Santista'},
+    'ubatuba':        {nome:'Ubatuba',        m2:11500, valorizacao:8.8, regiao:'Litoral Norte'},
+    'caraguatatuba':  {nome:'Caraguatatuba',  m2:9600,  valorizacao:8.1, regiao:'Litoral Norte'},
+    'sao-sebastiao':  {nome:'São Sebastião',  m2:12800, valorizacao:8.6, regiao:'Litoral Norte'},
+    'ilhabela':       {nome:'Ilhabela',       m2:16000, valorizacao:9.4, regiao:'Litoral Norte'},
+    'bertioga':       {nome:'Bertioga',       m2:8900,  valorizacao:8.9, regiao:'Litoral Norte'}
+  };
+  var TIPO_FATOR = {apartamento:1.0, casa:1.08, terreno:0.55, pousada:1.25, comercial:1.15};
+  var DORM_BONUS = {0:0, 1:0.02, 2:0.05, 3:0.08, 4:0.12};
+  var lastReport = null;
+
+  function fmt(v){ return 'R$ ' + Math.round(v).toLocaleString('pt-BR'); }
+  function el(id){ return document.getElementById(id); }
+
+  function buildUI(section){
+    var h2 = section.querySelector('h2');
+    if (h2 && !h2.textContent.trim()) h2.textContent = '📊 Avaliação Gratuita do seu Imóvel';
+    var sub = section.querySelector('p');
+    if (sub) sub.textContent = 'Selecione a região, informe os dados do imóvel e seu e-mail — o relatório de avaliação é gerado na hora e enviado para você.';
+
+    var fields = section.querySelector('.valuation-fields');
+    if (!fields || el('valEmail')) return;
+
+    // Campo de e-mail (coleta para envio do relatório)
+    var emailField = document.createElement('div');
+    emailField.className = 'val-field';
+    emailField.style.gridColumn = '1/-1';
+    emailField.innerHTML = '<label for="valEmail">📧 Seu e-mail (para receber o relatório)</label>' +
+      '<input type="email" id="valEmail" placeholder="voce@email.com" required>';
+    fields.appendChild(emailField);
+
+    // Botão de envio
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'val-btn';
+    btn.id = 'valBtn';
+    btn.textContent = '📩 Receber avaliação por e-mail';
+    btn.addEventListener('click', submitValuation);
+    fields.parentNode.insertBefore(btn, fields.nextSibling);
+
+    // Feedback
+    var fb = document.createElement('div');
+    fb.id = 'valFeedback';
+    fb.style.cssText = 'display:none;margin-top:0.9rem;font-size:0.85rem;background:rgba(255,255,255,0.15);border-radius:12px;padding:0.75rem 1rem;';
+    btn.parentNode.insertBefore(fb, btn.nextSibling);
+
+    // Botão de download do relatório
+    var res = el('valResult');
+    if (res && !el('valDownloadBtn')) {
+      var dl = document.createElement('button');
+      dl.type = 'button';
+      dl.className = 'val-btn';
+      dl.id = 'valDownloadBtn';
+      dl.style.cssText = 'margin-top:1rem;display:none;';
+      dl.textContent = '⬇️ Baixar relatório completo (.txt)';
+      dl.addEventListener('click', downloadValuationReport);
+      res.appendChild(dl);
+    }
+  }
+
+  function submitValuation(){
+    var tipo = el('valTipo').value;
+    var cidadeKey = el('valCidade').value;
+    var area = parseFloat(el('valArea').value);
+    var dorms = el('valDorms').value;
+    var email = (el('valEmail').value || '').trim();
+    var feedback = el('valFeedback');
+    if (!area || area < 20) { alert('Informe uma área válida (mínimo 20 m²).'); return; }
+    if (!email || email.indexOf('@') < 0) { alert('Informe um e-mail válido para receber o relatório.'); return; }
+
+    var c = VAL_DATA[cidadeKey];
+    if (!c) { alert('Selecione uma região/cidade válida.'); return; }
+    var base = c.m2 * area * (TIPO_FATOR[tipo] || 1) * (1 + (DORM_BONUS[dorms] || 0));
+    var baixo = base * 0.9, alto = base * 1.12;
+
+    el('valBaixo').textContent = fmt(baixo);
+    el('valMedio').textContent = fmt(base);
+    el('valAlto').textContent = fmt(alto);
+    var pos = Math.min(90, Math.max(10, 50 + (TIPO_FATOR[tipo] - 1) * 100 + (DORM_BONUS[dorms] || 0) * 150));
+    el('valBarFill').style.width = pos + '%';
+    el('valBarMarker').style.left = pos + '%';
+    el('valInsight').textContent = c.nome + ' (' + c.regiao + '): preço médio de ' + fmt(c.m2) +
+      '/m² e valorização anual de +' + c.valorizacao.toLocaleString('pt-BR') +
+      '%. Estimativa baseada em dados locais de mercado — use como referência inicial de negociação.';
+    el('valIptuInfo').textContent = '💡 Multiplique o valor por m² pela área para cenários personalizados. Para laudo formal (financiamento), consulte um avaliador credenciado.';
+    el('valResult').classList.add('visible');
+    el('valDownloadBtn').style.display = 'block';
+
+    lastReport = {tipo:tipo, cidade:c.nome, regiao:c.regiao, area:area, dorms:dorms,
+                  m2:c.m2, valorizacao:c.valorizacao, baixo:baixo, medio:base, alto:alto, email:email};
+
+    // Registra o lead e solicita o envio do relatório
+    var btn = el('valBtn');
+    btn.disabled = true; btn.textContent = '⏳ Enviando relatório...';
+    fetch('/backend/api/leads/avaliacao.js', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        email: email, cidade: c.nome, regiao: c.regiao, tipo: tipo,
+        area: area, dormitorios: dorms,
+        valor_min: Math.round(baixo), valor_medio: Math.round(base), valor_max: Math.round(alto),
+        origem: 'avaliacao-home'
+      })
+    }).then(function(r){
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      feedback.style.display = 'block';
+      feedback.textContent = '✅ Relatório enviado para ' + email + '! Confira também o resultado na tela e baixe a versão completa abaixo.';
+    }).catch(function(){
+      feedback.style.display = 'block';
+      feedback.textContent = '📊 Avaliação gerada na tela abaixo. Não foi possível registrar o envio agora, mas você pode baixar o relatório completo.';
+    }).finally(function(){
+      btn.disabled = false; btn.textContent = '📩 Receber avaliação por e-mail';
+    });
+  }
+
+  function downloadValuationReport(){
+    if (!lastReport) return;
+    var r = lastReport;
+    var lines = [
+      'RELATÓRIO DE AVALIAÇÃO DE IMÓVEL — PRAIA DIGITAL',
+      'Gerado em: ' + new Date().toLocaleString('pt-BR'),
+      'Solicitante: ' + r.email,
+      '',
+      'REGIÃO: ' + r.cidade + ' (' + r.regiao + ')',
+      'Tipo: ' + r.tipo + ' | Área: ' + r.area + ' m² | Dormitórios: ' + r.dorms,
+      '',
+      'Preço médio de referência: ' + fmt(r.m2) + '/m²',
+      'Valorização anual da região: +' + r.valorizacao.toLocaleString('pt-BR') + '%',
+      '',
+      'ESTIMATIVA DE MERCADO',
+      '  Mínimo:      ' + fmt(r.baixo),
+      '  Valor médio: ' + fmt(r.medio),
+      '  Máximo:      ' + fmt(r.alto),
+      '',
+      'Estimativa automatizada baseada em dados públicos de mercado do litoral paulista.',
+      'Para laudo formal, consulte um avaliador credenciado (CRECI/CNAI).',
+      'https://praia.digital'
+    ].join('\n');
+    var blob = new Blob([lines], {type: 'text/plain;charset=utf-8'});
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'avaliacao-' + r.cidade.toLowerCase().replace(/[^a-z]/g, '-') + '.txt';
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 500);
+  }
+
+  function init(){
+    var section = document.querySelector('section#avaliacao.ai-valuation-section');
+    if (section) buildUI(section);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
