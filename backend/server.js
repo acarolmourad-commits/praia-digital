@@ -17,7 +17,9 @@ function sendJson(res, statusCode, obj) {
 }
 
 function tryStaticApi(reqPath) {
-  const safe = path.normalize(reqPath).replace(/^\.\//, '').replace(/\\/g, '/');
+  let safe = path.normalize(reqPath);
+  while (safe.startsWith('./') || safe.startsWith('.\\')) { safe = safe.slice(2); }
+  safe = safe.split(path.sep).join('/');
   const full = path.join(API_DIR, safe);
   if (!full.startsWith(API_DIR)) return null;
   if (!fs.existsSync(full) || !fs.statSync(full).isFile()) return null;
@@ -64,7 +66,10 @@ const server = http.createServer(async (req, res) => {
       return res.end();
     }
 
-    if (req.method === 'POST' && new RegExp('^leads/(b2b|report|index|avaliacao|automacao|white-label)\\.js$').test(rel)) {
+    const leadName = rel.endsWith('.js') ? rel.slice(0, -3) : '';
+    const isLeadPost = req.method === 'POST' && leadName.startsWith('leads/') &&
+      ['leads/b2b','leads/report','leads/index','leads/avaliacao','leads/automacao','leads/white-label'].indexOf(leadName) !== -1;
+    if (isLeadPost) {
       let body = '';
       req.setEncoding('utf8');
       for await (const chunk of req) body += chunk;
