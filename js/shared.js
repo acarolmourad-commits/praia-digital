@@ -276,3 +276,59 @@
     run();
   }
 })();
+
+// ====================
+// Seção explicativa — busca e cadastro de imóveis (homepage)
+// ====================
+(function () {
+  'use strict';
+
+  function injectGuide() {
+    var busca = document.getElementById('buscar') || document.getElementById('nl-search');
+    if (!busca || document.getElementById('pdHowItWorks')) return;
+
+    // Preenche o título vazio da seção de busca
+    var h2 = busca.querySelector('h2');
+    if (h2 && !h2.textContent.trim()) h2.textContent = '🔍 Busque seu imóvel no litoral';
+
+    var sec = document.createElement('section');
+    sec.id = 'pdHowItWorks';
+    sec.style.cssText = 'max-width:1000px;margin:0 auto;padding:2.5rem 1rem 0;';
+    sec.innerHTML =
+      '<h2 style="text-align:center;font-size:1.5rem;color:var(--dark,#023047);margin:0 0 0.25rem;">Como funciona a Praia Digital</h2>' +
+      '<p style="text-align:center;color:#666;font-size:0.95rem;margin:0 0 1.75rem;">Dois caminhos simples — escolha o seu:</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;">' +
+
+        '<div style="background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,.04);">' +
+          '<div style="font-size:1.6rem;margin-bottom:0.5rem;">🔍</div>' +
+          '<h3 style="margin:0 0 0.75rem;font-size:1.1rem;color:var(--dark,#023047);">Quero encontrar um imóvel</h3>' +
+          '<ol style="margin:0;padding-left:1.25rem;font-size:0.9rem;color:#475569;display:grid;gap:0.5rem;">' +
+            '<li><strong>Busque do seu jeito:</strong> escreva em linguagem natural (ex.: "casa com piscina em Guarujá") ou use os filtros de tipo, cidade, quartos e preço abaixo.</li>' +
+            '<li><strong>Compare com critério:</strong> cada imóvel mostra score de IA 🧠 e ROI 📈. Use "⚖️ Comparar" para ver até 3 lado a lado.</li>' +
+            '<li><strong>Fale direto:</strong> clique no imóvel e chame no WhatsApp — atendimento humanizado em até 24h.</li>' +
+          '</ol>' +
+          '<a href="#buscar" style="display:inline-block;margin-top:1rem;background:var(--ocean,#0077B6);color:#fff;padding:0.7rem 1.4rem;border-radius:50px;font-weight:700;font-size:0.9rem;text-decoration:none;">Começar a buscar ↓</a>' +
+        '</div>' +
+
+        '<div style="background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,.04);">' +
+          '<div style="font-size:1.6rem;margin-bottom:0.5rem;">🏠</div>' +
+          '<h3 style="margin:0 0 0.75rem;font-size:1.1rem;color:var(--dark,#023047);">Quero anunciar meu imóvel</h3>' +
+          '<ol style="margin:0;padding-left:1.25rem;font-size:0.9rem;color:#475569;display:grid;gap:0.5rem;">' +
+            '<li><strong>Cadastre em 5 minutos:</strong> formulário rápido com fotos, endereço e características. Corretores informam o CRECI (validado).</li>' +
+            '<li><strong>A gente publica:</strong> nossa equipe revisa os dados e cria a página de detalhes do seu imóvel com QR code próprio.</li>' +
+            '<li><strong>Receba leads qualificados:</strong> interessados chegam pelo WhatsApp já informando o que procuram.</li>' +
+          '</ol>' +
+          '<a href="/corretores/cadastrar-imovel.html" style="display:inline-block;margin-top:1rem;background:var(--ocean,#0A3D2E);color:#fff;padding:0.7rem 1.4rem;border-radius:50px;font-weight:700;font-size:0.9rem;text-decoration:none;">Cadastrar imóvel grátis →</a>' +
+        '</div>' +
+
+      '</div>';
+
+    busca.parentNode.insertBefore(sec, busca);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectGuide);
+  } else {
+    injectGuide();
+  }
+})();
