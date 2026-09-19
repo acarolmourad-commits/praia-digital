@@ -17,7 +17,7 @@ function sendJson(res, statusCode, obj) {
 }
 
 function tryStaticApi(reqPath) {
-  const safe = path.normalize(reqPath).replace(/^\.\//, '').replace(/\/g, '/');
+  const safe = path.normalize(reqPath).replace(/^\.\//, '').replace(/\\/g, '/');
   const full = path.join(API_DIR, safe);
   if (!full.startsWith(API_DIR)) return null;
   if (!fs.existsSync(full) || !fs.statSync(full).isFile()) return null;
