@@ -441,3 +441,43 @@ footer {
 .booking-cta { display: inline-flex; align-items: center; justify-content: center; padding: 0.7rem 1rem; border-radius: 999px; background: var(--ocean); color: var(--white); font-weight: 700; text-decoration: none; margin-top: 0.5rem; }
 .booking-cta:hover { background: #055c91; }
 .booking-disclosure { font-size: 0.8rem; color: #6b7280; margin-top: 0.6rem; line-height: 1.45; }
+
+/* ==== Nav: mobile igual ao desktop (menu sempre visível, sem hambúrguer) ====
+   Sobrescreve o @media (max-width: 768px) do Unified Header v2 e os blocos
+   inline @media (max-width: 980px) legados das páginas. */
+@media (max-width: 980px) {
+  .pd-nav-toggle { display: none !important; }
+  .pd-nav-menu {
+    display: flex !important;
+    position: static !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center;
+    gap: 0.5rem;
+    max-height: none !important;
+    overflow: visible !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    background: none;
+    box-shadow: none;
+    padding: 0 !important;
+    margin: 0;
+  }
+  .pd-nav-submenu {
+    position: absolute !important;
+    top: 100%;
+    max-height: none !important;
+    overflow: visible !important;
+    background: var(--dark) !important;
+    border-radius: 10px;
+    padding: 0.5rem 0;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  }
+  .pd-nav-group:hover .pd-nav-submenu,
+  .pd-nav-submenu.open { opacity: 1 !important; visibility: visible !important; }
+  .pd-nav-submenu a { border-left: none; padding: 0.55rem 1rem; }
+  .pd-nav-cta { margin: 0 0 0 auto; }
+}

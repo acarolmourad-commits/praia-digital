@@ -1,0 +1,26 @@
+name: Instagram Auto-Post (4x/dia)
+
+on:
+  schedule:
+    # 7h, 9h, 15h e 20h horario de Brasilia (UTC-3)
+    - cron: '0 10,12,18,23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  post:
+    if: ${{ !github.event.repository.fork }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pillow requests
+      - name: Gerar artes e publicar no Instagram
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: python scripts/ig_auto_post.py

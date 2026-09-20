@@ -9,6 +9,10 @@
   <meta property="og:title" content="Cadastro de Imóvel para Corretores | Praia Digital">
   <meta property="og:description" content="Área do corretor com validação CRECI para cadastro e publicação de imóveis no marketplace da Praia Digital.">
   <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Praia Digital — imóveis no litoral com IA">
+  <meta property="og:site_name" content="Praia Digital">
   <meta name="twitter:image" content="https://praia.digital/img/default-home.jpg">
   <meta property="og:url" content="https://praia.digital/corretores/cadastrar-imovel.html">
   <meta name="twitter:card" content="summary_large_image">
@@ -56,6 +60,14 @@
     .affiliate-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 1rem; }
     .affiliate-card h3 { font-size: 1rem; margin-bottom: .5rem; }
     .affiliate-card p { font-size: .9rem; color: #334155; }
+    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.6rem;margin:1rem 0}
+    .gallery-grid img{width:100%;height:120px;object-fit:cover;border-radius:10px;display:block}
+    .anuncio-card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,.05)}
+    .badge{display:inline-block;background:#0A3D2E;color:#fff;font-size:.72rem;font-weight:700;padding:.2rem .7rem;border-radius:50px;margin-bottom:.5rem}
+    .preco{font-size:1.3rem;font-weight:800;color:#0077B6;margin:.25rem 0 .75rem}
+    details{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:.8rem 1rem;margin-bottom:.6rem}
+    details summary{font-weight:700;cursor:pointer;color:#023047}
+    details p{margin:.5rem 0 0;color:#475569;font-size:.9rem}
   </style>
 </head>
 <body>
@@ -80,6 +92,13 @@
         <h1>Cadastro de Imóvel</h1>
         <p class="subtitle">Formulário profissional para corretores credenciados. Quanto mais completo, maior a chance de captação qualificada.</p>
         <div class="creci-badge" aria-label="Aviso de segurança">🔒 Exclusivo para Corretores Credenciados pelo CRECI-SP</div>
+        <div style="max-width:720px;margin:1.5rem auto 0;text-align:left;">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0.75rem;font-size:0.9rem;">
+            <div style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:0.9rem;"><strong>1️⃣ Preencha em ~5 min</strong><br>Dados do imóvel, fotos e suas informações profissionais.</div>
+            <div style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:0.9rem;"><strong>2️⃣ Nós revisamos e publicamos</strong><br>Página de detalhes exclusiva + QR code do anúncio, sem custo.</div>
+            <div style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:0.9rem;"><strong>3️⃣ Receba leads no WhatsApp</strong><br>Interessados chegam qualificados, direto para você.</div>
+          </div>
+        </div>
       </section>
 
       <section class="section">
@@ -219,6 +238,38 @@
           </ul>
           <p><a href="https://praia.digital/termos-de-uso.html" target="_blank" rel="noopener">Termos de uso</a> · <a href="https://praia.digital/politica-privacidade.html" target="_blank" rel="noopener">Privacidade</a></p>
         </aside>
+      </section>
+
+      <section class="section" id="imovel-cadastrado">
+        <h2>Imóvel cadastrado recentemente</h2>
+        <p class="muted">Exemplo real de anúncio publicado: ao cadastrar, seu imóvel ganha uma página completa como esta.</p>
+        <div class="anuncio-card">
+          <span class="badge">ANÚNCIO PUBLICADO</span>
+          <h3 style="margin:.25rem 0;color:#023047">🏡 Casa em condomínio fechado — Bertioga</h3>
+          <p style="margin:0;color:#475569;font-size:.9rem">105m² · 2 dormitórios · 2 banheiros · 100m da praia · piscina, sauna e academia</p>
+          <p class="preco">R$ 595.000</p>
+          <div class="gallery-grid">
+            <img src="/img/bertioga-casa-fachada-externa.webp" alt="Fachada externa da casa em Bertioga" loading="lazy" decoding="async">
+            <img src="/img/bertioga-casa-hall-living-nautico.webp" alt="Hall living náutico" loading="lazy" decoding="async">
+            <img src="/img/bertioga-casa-sala-estar-living.webp" alt="Sala de estar e living" loading="lazy" decoding="async">
+            <img src="/img/bertioga-casa-cozinha-moderna.webp" alt="Cozinha moderna" loading="lazy" decoding="async">
+            <img src="/img/bertioga-casa-dormitorio-suite.webp" alt="Dormitório suíte" loading="lazy" decoding="async">
+            <img src="/img/bertioga-casa-banheiro-moderno.webp" alt="Banheiro moderno" loading="lazy" decoding="async">
+            <img src="/img/bertioga-casa-vista-praia-area-externa.webp" alt="Vista da praia na área externa" loading="lazy" decoding="async">
+            <img src="/img/bertioga-condominio-piscina-academia.webp" alt="Piscina e academia do condomínio" loading="lazy" decoding="async">
+            <img src="/img/bertioga-condominio-area-lazer-sauna.webp" alt="Área de lazer e sauna do condomínio" loading="lazy" decoding="async">
+            <img src="/img/bertioga-terraco-vista-mar-condominio.webp" alt="Terraço com vista para o mar" loading="lazy" decoding="async">
+          </div>
+          <a href="/casa-condominio-fechado-bertioga.html" style="display:inline-block;background:#0077B6;color:#fff;padding:.6rem 1.4rem;border-radius:50px;font-weight:700;font-size:.9rem;text-decoration:none">Ver anúncio completo →</a>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <h2>Perguntas frequentes</h2>
+        <details><summary>Quanto custa cadastrar um imóvel?</summary><p>O cadastro é gratuito. Você só precisa ter CRECI válido e preencher o formulário com os dados e fotos do imóvel.</p></details>
+        <details><summary>Quais fotos devo enviar?</summary><p>Envie de 8 a 15 fotos em boa resolução: fachada, living, cozinha, dormitórios, banheiros, área externa e lazer do condomínio — como no anúncio modelo acima.</p></details>
+        <details><summary>Como o imóvel é divulgado?</summary><p>O imóvel ganha página exclusiva com galeria de fotos, dados de mercado (ROI de temporada, IPTU, condomínio) e botão de interesse via WhatsApp, além de divulgação no blog e nas páginas das cidades do litoral.</p></details>
+        <details><summary>Preciso validar meu CRECI?</summary><p>Sim. A validação do CRECI garante segurança para proprietários e compradores e é obrigatória para publicar no marketplace.</p></details>
       </section>
     </main>
 

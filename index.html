@@ -86,7 +86,11 @@
   <meta name="twitter:title" content="Praia Digital — Imóveis no Litoral com IA para imobiliárias">
   <meta name="twitter:description" content="Praia Digital — serviços de IA para imobiliárias no litoral paulista: recomendação automática, avaliação de preço, assistente virtual e geração de descrições. SEO local, captação de leads e ferramentas gratuitas.">
   <meta name="twitter:image" content="https://praia.digital/img/default-home.jpg">
-  <meta property="og:image" content="https://praia.digital/og-image.svg">
+  <meta property="og:image" content="https://praia.digital/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Praia Digital — imóveis no litoral com IA">
+  <meta property="og:site_name" content="Praia Digital">
   <link rel="canonical" href="https://praia.digital/">
   <meta name="google-site-verification" content="IRJ_gCjX3xZ5XN3kAcb-nmBno0yDGlb_1brZggWncak">
   <link rel="preconnect" href="https://praia.digital">
@@ -3202,7 +3206,7 @@
       <h3></h3>
       <p>Gere um QR code que abre direto no listing — para imprimir ou enviar via WhatsApp.</p>
       <div class="qr-preview" id="qrPreview">QR</div>
-      <input type="number" class="qr-input" id="qrListingId" placeholder="ID do imóvel (ex: 1)" min="1" max="12">
+      <input type="number" class="qr-input" id="qrListingId" placeholder="ID do imóvel (ex: 1)" min="1" max="25">
       <button class="qr-btn" onclick="generateQR()">🎯 Gerar QR Code</button>
       <div class="qr-result-url" id="qrResultUrl"></div>
     </div>
@@ -4108,7 +4112,8 @@ const listings = [
   {id:20,tipo:'casa',cidade:'ilhabela',cidadeLabel:'Ilhabela — Feiticeira',titulo:'Casa 4 suítes — beach club',preco:5500000,dormitorios:4,area:350,tags:['4 suítes','350m²','Beach club'],icon:'🏝️',badge:'Ultra-premium',descricao:'Casa exclusiva na Praia da Feiticeira, região dos beach clubs mais badalados da ilha. Acesso por trilha privativa, piscina com borda infinita, adega, heliporto. Alto luxo.',aiScore:98,aiReason:'Feiticeira é o endereço mais cobiçado da ilha. Beach clubs atraem público premium todo verão.',roi:6.0},
   {id:21,tipo:'apartamento',cidade:'ilhabela',cidadeLabel:'Ilhabela — Perequê',titulo:'Apto 2 dorms — centro histórico',preco:1100000,dormitorios:2,area:80,tags:['2 dorms','80m²','Centro'],icon:'⚓',badge:'',descricao:'Apartamento no Perequê, centro histórico e ponto de chegada da balsa. Comércio, restaurantes, marina, vida noturna a pé. Condomínio com vista para o canal.',aiScore:93,aiReason:'Centro da ilha com infraestrutura completa. Alta procura para locação anual e executivos da balsa.',roi:6.5},
   {id:22,tipo:'casa',cidade:'bertioga',cidadeLabel:'Bertioga — Riviera de São Lourenço',titulo:'Casa 5 suítes — Riviera premium',preco:7200000,dormitorios:5,area:400,tags:['5 suítes','400m²','Riviera'],icon:'🏖️',badge:'Ultra-premium',descricao:'Casa na Riviera de São Lourenço, condomínio mais exclusivo do litoral paulista. Marina privativa, campo de golfe, segurança máxima, praia exclusiva. 5 suítes, home office, adega.',aiScore:100,aiReason:'Referência de altíssimo padrão no Brasil. Riviera mantém valorização recorde histórica.',roi:5.5},
-  {id:23,tipo:'terreno',cidade:'bertioga',cidadeLabel:'Bertioga — Guaraú',titulo:'Terreno 800m² — Guaraú preservado',preco:1200000,dormitorios:0,area:800,tags:['800m²','Preservado','Natureza'],icon:'🏗️',badge:'Oportunidade',descricao:'Terreno no Guaraú, região de restinga preservada e praias selvagens. Acesso controlado, natureza intocada. Ideal para casa de veraneio ecológica ou pousada boutique.',aiScore:95,aiReason:'Últimas áreas grandes disponíveis no Guaraú. Restinga preservada = valorização garantida.',roi:6.0}
+  {id:23,tipo:'terreno',cidade:'bertioga',cidadeLabel:'Bertioga — Guaraú',titulo:'Terreno 800m² — Guaraú preservado',preco:1200000,dormitorios:0,area:800,tags:['800m²','Preservado','Natureza'],icon:'🏗️',badge:'Oportunidade',descricao:'Terreno no Guaraú, região de restinga preservada e praias selvagens. Acesso controlado, natureza intocada. Ideal para casa de veraneio ecológica ou pousada boutique.',aiScore:95,aiReason:'Últimas áreas grandes disponíveis no Guaraú. Restinga preservada = valorização garantida.',roi:6.0},
+  {id:25,tipo:'casa',cidade:'bertioga',cidadeLabel:'Bertioga — Condomínio fechado (100m da praia)',titulo:'Casa em condomínio fechado — 2 dorms',preco:595000,dormitorios:2,area:105,tags:['2 dorms','105m²','100m da praia','Piscina','1 vaga'],icon:'🏡',badge:'Novo',descricao:'Casa em condomínio fechado em Bertioga a apenas 100 metros da praia. 105m² bem distribuídos, 2 dormitórios, 2 banheiros e 1 vaga de garagem. Condomínio completo com piscina, sauna, academia e sala de jogos. IPTU R$105/mês. Condomínio R$710 (água e internet inclusas). Detalhes em casa-condominio-fechado-bertioga.html',aiScore:93,aiReason:'Entry-point forte em Bertioga: 100m da praia com condomínio completo. ROI de temporada projetado em 19,4% bruto / 11,3% líquido (AirDNA).',roi:11.3,url:'casa-condominio-fechado-bertioga.html'},
 ];
 
 // ====================
@@ -5476,3 +5481,4 @@ function submitReportLead(){
 
 <!-- Internal product links -->
 <p style="margin-top:.75rem"><a href="https://praia.digital/produtos/relatorio-mercado-temporada/index.html" style="color:#0077B6;font-weight:600">Relatório de Mercado — Aluguel Temporada</a></p>
+
