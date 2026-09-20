@@ -321,6 +321,29 @@
           '<a href="/corretores/cadastrar-imovel.html" style="display:inline-block;margin-top:1rem;background:var(--ocean,#0A3D2E);color:#fff;padding:0.7rem 1.4rem;border-radius:50px;font-weight:700;font-size:0.9rem;text-decoration:none;">Cadastrar imóvel grátis →</a>' +
         '</div>' +
 
+      '</div>' +
+
+      // Anúncio modelo — casa em condomínio fechado em Bertioga (R$ 595.000)
+      '<div style="margin-top:1.75rem;background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,.04);">' +
+        '<h3 style="margin:0 0 0.25rem;font-size:1.1rem;color:var(--dark,#023047);">🏆 Anúncio modelo — veja como seu imóvel vai aparecer</h3>' +
+        '<p style="margin:0 0 1rem;font-size:0.88rem;color:#555;">Este é um anúncio real publicado pela Praia Digital. Ao cadastrar, seu imóvel ganha uma página completa como esta:</p>' +
+        '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;align-items:center;">' +
+          '<a href="/casa-condominio-fechado-bertioga.html" style="display:block;border-radius:12px;overflow:hidden;">' +
+            '<img src="https://praia.digital/img/bertioga-casa-hall-living-nautico.webp" alt="Casa em condomínio fechado em Bertioga — anúncio modelo" width="400" height="300" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;">' +
+          '</a>' +
+          '<div>' +
+            '<div style="display:inline-block;background:#0A3D2E;color:#fff;font-size:0.72rem;font-weight:700;padding:0.2rem 0.7rem;border-radius:50px;margin-bottom:0.5rem;">ANÚNCIO MODELO</div>' +
+            '<h4 style="margin:0 0 0.35rem;font-size:1.05rem;color:var(--dark,#023047);">🏡 Casa em condomínio fechado — Bertioga</h4>' +
+            '<p style="margin:0 0 0.5rem;font-size:0.85rem;color:#475569;">105m² · 2 dorms · 2 banheiros · 100m da praia · piscina, sauna e academia</p>' +
+            '<p style="margin:0 0 0.75rem;font-size:1.15rem;font-weight:800;color:var(--ocean,#0077B6);">R$ 595.000</p>' +
+            '<ul style="margin:0 0 0.9rem;padding-left:1.1rem;font-size:0.82rem;color:#475569;display:grid;gap:0.3rem;">' +
+              '<li>Página exclusiva com galeria de 10 fotos e modal de ampliação</li>' +
+              '<li>Dados de mercado: ROI de temporada, IPTU e condomínio</li>' +
+              '<li>Botão direto de interesse via WhatsApp</li>' +
+            '</ul>' +
+            '<a href="/casa-condominio-fechado-bertioga.html" style="display:inline-block;background:transparent;color:var(--ocean,#0077B6);border:2px solid var(--ocean,#0077B6);padding:0.55rem 1.2rem;border-radius:50px;font-weight:700;font-size:0.85rem;text-decoration:none;">Ver anúncio modelo →</a>' +
+          '</div>' +
+        '</div>' +
       '</div>';
 
     busca.parentNode.insertBefore(sec, busca);
