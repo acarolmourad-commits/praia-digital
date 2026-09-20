@@ -19,11 +19,4 @@ jobs:
           python-version: '3.11'
 
       - name: Run IndexNow
-        env:
-          INDEXNOW_API_KEY: ${{ secrets.INDEXNOW_API_KEY }}
-        run: |
-          if [ -n "$INDEXNOW_API_KEY" ]; then
-            python scripts/indexnow.py
-          else
-            echo "INDEXNOW_API_KEY not set; skipping IndexNow submission."
-          fi
+        run: python scripts/indexnow.py
