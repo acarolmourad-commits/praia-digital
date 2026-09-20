@@ -11,4 +11,5 @@ Disallow: /outreach/
 Disallow: /ferramentas/airbnb-admin.html
 
 Sitemap: https://praia.digital/sitemap.xml
+Sitemap: https://praia.digital/sitemap-apps.xml
 Host: https://praia.digital
