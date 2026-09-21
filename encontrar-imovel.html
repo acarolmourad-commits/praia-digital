@@ -98,7 +98,7 @@
 <meta property="og:locale" content="pt_BR">
 <meta name="theme-color" content="#0ea5e9">
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="preconnect" href="https://wa.me">
   <link rel="preconnect" href="https://api.qrserver.com">
 
@@ -179,6 +179,26 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       🧮 Novo: Simulador de ROI para Aluguel de Temporada — calcule a rentabilidade do seu imóvel →
     </a>
   </div>
+  
+  <!-- Busca inteligente: interpreta parâmetros vindos da home -->
+  <div id="pd-busca-interpretada" role="status" style="display:none;max-width:900px;margin:18px auto 0;padding:14px 18px;border:1px solid #0e7c7b;background:#eef6f6;border-radius:12px;font-size:.95rem;color:#0a2540;"></div>
+  <script>
+  (function(){
+    var p=new URLSearchParams(location.search);
+    var labels={cidade:'Cidade',quartos:'Quartos (mín.)',preco_max:'Preço máx.',tipo:'Tipo',perfil:'Perfil',q:'Busca'};
+    var parts=[];
+    ['cidade','quartos','tipo','perfil','q'].forEach(function(k){var v=p.get(k);if(v)parts.push('<strong>'+labels[k]+':</strong> '+v.replace(/</g,'&lt;'));});
+    var pm=p.get('preco_max');
+    if(pm){var n=parseInt(pm,10);if(!isNaN(n))parts.push('<strong>Preço máx.:</strong> R$ '+n.toLocaleString('pt-BR'));}
+    if(parts.length){
+      var d=document.getElementById('pd-busca-interpretada');
+      d.innerHTML='🔎 Busca interpretada: '+parts.join(' · ')+' &nbsp;<a href="/imoveis.html?'+location.search.slice(1).replace(/"/g,'&quot;')+'" style="font-weight:600">Ver imóveis com esses filtros →</a>';
+      d.style.display='block';
+      d.scrollIntoView({behavior:'smooth',block:'center'});
+    }
+  })();
+  </script>
+
   <meta name="pd-shared-footer">
   <script src="https://praia.digital/js/shared.js?v=2.0"></script>
 </body>
