@@ -1,82 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Metodologia — Praia Digital</title>
-  <link rel="canonical" href="https://praia.digital/metodologia.html">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://praia.digital/index.html"},
-      {"@type": "ListItem", "position": 2, "name": "Metodologia", "item": "https://praia.digital/metodologia.html"}
-    ]
-  }
-  </script>
-  <meta name="description" content="Metodologia da Praia Digital para avaliação de mercado imobiliário no litoral paulista, testes de automação com IA e validação de métricas de rental yield.">
-  <link rel="canonical" href="https://praia.digital/metodologia.html">
-  <meta property="og:title" content="Metodologia — Praia Digital">
-  <meta property="og:description" content="Como avaliamos mercado, validamos automação e medimos retorno no litoral paulista.">
-  <meta property="og:url" content="https://praia.digital/metodologia.html">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Metodologia — Praia Digital">
-  <meta name="twitter:description" content="Como avaliamos mercado, validamos automação e medimos retorno no litoral paulista.">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "name": "Metodologia — Praia Digital",
-    "url": "https://praia.digital/metodologia.html",
-    "description": "Metodologia para avaliação de mercado, automação com IA e validação de rental yield no litoral paulista."
-  }
-  </script>
-  <link rel="stylesheet" href="https://praia.digital/css/style.css">
-  <link rel="preconnect" href="https://praia.digital" crossorigin>
-  <style>
-    .method-wrap{max-width:980px;margin:0 auto;padding:2rem}
-    .method-wrap h1{font-size:2rem;margin-bottom:.6rem}
-    .method-wrap h2{font-size:1.35rem;margin-top:1.6rem;margin-bottom:.5rem}
-    .method-wrap p{margin:.6rem 0}
-    .method-wrap ul{margin:.6rem 0 .6rem 1.2rem}
-    .method-wrap li{margin:.35rem 0}
-    .callout{background:#eef6fb;border:1px solid #c9e6f7;padding:1rem;border-radius:12px;margin:1rem 0}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Como calculamos nossos dados — Praia Digital</title>
+<meta name="description" content="Fontes, metodologia, períodos de análise, fórmulas e limitações das métricas publicadas pelo Praia Digital.">
+<link rel="canonical" href="https://praia.digital/metodologia.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Como calculamos nossos dados — Praia Digital">
+<meta property="og:description" content="Fontes, metodologia e limitações das métricas do Praia Digital.">
+<meta property="og:url" content="https://praia.digital/metodologia.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Como calculamos nossos dados","author":{"@type":"Organization","name":"Praia Digital"},"publisher":{"@type":"Organization","name":"Praia Digital"},"mainEntityOfPage":"https://praia.digital/metodologia.html","dateModified":"2026-09-20"}
+</script>
+<style>
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#0a2540;line-height:1.7;margin:0;background:#fff}
+.wrap{max-width:760px;margin:0 auto;padding:40px 20px 80px}
+h1{font-size:2rem;letter-spacing:-.02em;line-height:1.2;margin:14px 0 8px}
+h2{font-size:1.25rem;margin:36px 0 8px}
+p,li{color:#42546a;font-size:.98rem}
+a{color:#0e7c7b}
+.kicker{font-size:.78rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#0e7c7b}
+.notice{background:#f7f4ee;border-left:4px solid #0e7c7b;padding:16px 20px;border-radius:0 10px 10px 0;margin:22px 0}
+code{background:#f0f4f8;padding:2px 6px;border-radius:6px;font-size:.9em}
+header{border-bottom:1px solid #e3e9ef}
+header .wrap{padding:16px 20px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;color:#0a2540;text-decoration:none;font-size:1.1rem}
+.logo span{color:#0e7c7b}
+</style>
 </head>
 <body>
-  <meta name="pd-shared-nav">
-  <div class="method-wrap">
-    <h1>Metodologia</h1>
-    <p class="lead">Como a Praia Digital avalia o mercado, projeta automação e mede resultados reais no litoral paulista.</p>
+<header><div class="wrap"><a class="logo" href="/">Praia<span>Digital</span></a><a href="/">← Voltar à home</a></div></header>
+<main class="wrap">
+<p class="kicker">Transparência</p>
+<h1>Como calculamos nossos dados</h1>
+<p>Esta página explica, de forma permanente e pública, como as métricas exibidas no Praia Digital são produzidas. Última atualização: <strong>setembro de 2026</strong>.</p>
 
-    <h2>1. Avaliação de mercado imobiliário</h2>
-    <ul>
-      <li>Base de comparação por bairro/cidade com ofertas públicas, anúncios e histórico de fechamento.</li>
-      <li>Indicadores utilizados: preço por m², tempo de fechamento, estoque disponível e sazonalidade.</li>
-      <li>Validação cruzada entre fontes para evitar viés de anúncio.</li>
-    </ul>
+<h2>1. Fontes de dados</h2>
+<ul>
+<li><strong>Anúncios públicos de imóveis</strong> coletados do nosso próprio catálogo e de parceiros;</li>
+<li><strong>Dados informados por usuários e profissionais</strong> (corretores, imobiliárias e proprietários parceiros);</li>
+<li><strong>Fontes públicas oficiais</strong> quando aplicável (ex.: dados municipais, índices econômicos públicos).</li>
+</ul>
+<p>Cada métrica publicada indica sua fonte específica, o período considerado e a data de atualização.</p>
 
-    <h2>2. Testes de automação com IA</h2>
-    <ul>
-      <li>Protótipos fechados com fluxos reais de atendimento, captação e agendamento.</li>
-      <li>Métricas mínimas: taxa de resposta, tempo de atendimento, taxa de conversão para visita e taxa de fechamento.</li>
-      <li>Rollback por etapa se o resultado não cumprir o threshold definido no piloto.</li>
-    </ul>
+<h2>2. Dado observado vs. estimativa</h2>
+<div class="notice"><p><strong>Dado observado:</strong> calculado diretamente a partir de registros reais (ex.: preço médio de anúncios ativos em um período).</p>
+<p><strong>Estimativa:</strong> projeção produzida por modelos estatísticos ou de IA a partir de dados observados. Estimativas são sempre identificadas como tal e <strong>não constituem garantia de resultado financeiro</strong>.</p></div>
 
-    <h2>3. Métricas de rental yield e retorno</h2>
-    <ul>
-      <li>Cálculo de yield por imóvel/região considerando temporada alta, baixa e custos operacionais.</li>
-      <li>Simulação de cenários: ocupação, diária média, impostos, administração e manutenção.</li>
-      <li>Relatório final com recomendação de operação ou ajuste de estratégia.</li>
-    </ul>
+<h2>3. Métricas e fórmulas</h2>
+<ul>
+<li><strong>Preço médio:</strong> média dos preços de anúncios ativos no período, excluindo outliers (valores fora de 1,5× o intervalo interquartil).</li>
+<li><strong>Preço por m²:</strong> <code>preço do imóvel ÷ área útil (m²)</code>, agregado por mediana por cidade/bairro.</li>
+<li><strong>Rental yield (bruto):</strong> <code>(aluguel anual estimado ÷ preço do imóvel) × 100</code>.</li>
+<li><strong>ROI de temporada:</strong> estimativa que considera receita de diárias, taxa de ocupação estimada, custos fixos e variáveis informados pelo usuário. É sempre apresentado como estimativa.</li>
+<li><strong>Valorização:</strong> variação percentual do preço/m² entre dois períodos, quando há dados suficientes. Sem dados suficientes, exibimos "—".</li>
+</ul>
 
-    <div class="callout">
-      <strong>Atualização:</strong> Revisamos periodicamente premissas, regras de automação e thresholds. Esta página reflete a versão atualizada em 2026-08-25.
-    </div>
-  </div>
-  <meta name="pd-shared-footer">
-  <script src="https://praia.digital/js/shared.js?v=2.0"></script>
+<h2>4. Atualização</h2>
+<p>Os dados são revisados periodicamente. A data de atualização aparece junto a cada métrica ou tabela. Conteúdos de mercado no blog indicam a data de publicação.</p>
+
+<h2>5. Limitações</h2>
+<ul>
+<li>Amostras pequenas em bairros específicos podem gerar variações relevantes;</li>
+<li>Preços de anúncio podem diferir dos preços efetivamente negociados;</li>
+<li>Projeções dependem de premissas (ocupação, diária, custos) que podem não se confirmar;</li>
+<li>Nada neste site constitui recomendação de investimento ou garantia de retorno.</li>
+</ul>
+
+<h2>6. Correções</h2>
+<p>Encontrou um dado incorreto? Fale conosco pelo <a href="https://wa.me/5511954346288">WhatsApp</a> ou <a href="mailto:comercial@praia.digital">comercial@praia.digital</a>. Corrigimos e registramos a alteração.</p>
+
+<p style="margin-top:30px"><a class="btn" href="/" style="display:inline-block;background:#0e7c7b;color:#fff;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:600">Voltar à página inicial</a></p>
+</main>
 </body>
 </html>
