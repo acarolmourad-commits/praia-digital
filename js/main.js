@@ -29,6 +29,20 @@
   
   const properties = [
       {
+        "id": 9,
+        "title": "Casa em condomínio fechado - Bertioga",
+        "slug": "../casa-condominio-fechado-bertioga",
+        "city": "Bertioga",
+        "type": "Venda",
+        "price": "R$ 595.000",
+        "bedrooms": "2",
+        "area": "105m²",
+        "score": 95,
+        "image": "https://praia.digital/img/bertioga-casa-fachada-externa.webp",
+        "tags": ["100m da praia", "Piscina", "Sauna", "Academia"],
+        "description": "Casa em condomínio fechado a 100m da praia, com piscina, sauna e academia. Anúncio modelo do serviço de cadastramento Praia Digital."
+      },
+      {
         "id": 1,
         "title": "Apartamento vista mar - Santos",
         "slug": "apartamento-vista-mar-santos",
