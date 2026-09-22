@@ -113,20 +113,6 @@
         "description": "Apartamento compacto com financiamento facilitado, próximo à orla e com opção de FGTS."
       },
       {
-        "id": 7,
-        "title": "Sobrado geminado - Peruíbe",
-        "slug": "sobrado-geminado-peruibe",
-        "city": "Peruíbe",
-        "type": "Venda",
-        "price": "R$ 450.000",
-        "bedrooms": "3",
-        "area": "130m²",
-        "score": 60,
-        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=60",
-        "tags": ["Lazer", "Segurança", "Quintal"],
-        "description": "Sobrado geminado em condomínio fechado, com área de lazer e segurança 24h."
-      },
-      {
         "id": 8,
         "title": "Apartamento alto padrão - Bertioga",
         "slug": "apartamento-alto-padrao-bertioga",
