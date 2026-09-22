@@ -9,3 +9,12 @@
 /blog/demo-15min-imobiliarias-litoral-2026.html  /demo-15min-imobiliarias-litoral-2026.html  301!
 /politica-privacidade.html  /politica-de-privacidade.html  301!
 /termos-uso.html  /termos-de-uso.html  301!
+
+# P0 — consolidação SEO: páginas de cidade duplicadas (raiz -> /cidades/)
+/bertioga.html  /cidades/bertioga.html  301!
+/guaruja.html  /cidades/guaruja.html  301!
+/santos.html  /cidades/santos.html  301!
+/praia-grande.html  /cidades/praia-grande.html  301!
+# P0 — consolidação SEO: páginas de avaliação (canônica: /ferramentas/avaliacao-preco.html)
+/avaliacao-preco-imoveis.html  /ferramentas/avaliacao-preco.html  301!
+/avaliacao-rapida-imovel.html  /ferramentas/avaliacao-preco.html  301!

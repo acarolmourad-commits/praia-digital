@@ -49,7 +49,7 @@ h1{font-size:clamp(1.9rem,4.6vw,3.2rem);line-height:1.15;letter-spacing:-.02em;m
 .search input{flex:1;border:0;outline:0;font-size:1rem;padding:14px 16px;color:var(--ink);background:transparent;min-width:0}
 .search input::placeholder{color:#8aa0b4}
 .search-hint{font-size:.83rem;color:#9db4c6;margin-top:12px}
-.aud{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:-46px;position:relative;z-index:2}
+.aud{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:-46px;position:relative;z-index:2}
 .aud a{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px;color:var(--ink);box-shadow:0 8px 30px rgba(10,37,64,.07);transition:transform .15s,border-color .15s;display:block}
 .aud a:hover{transform:translateY(-3px);border-color:var(--sea)}
 .aud .t{font-weight:700;font-size:1.05rem;margin-bottom:4px}
@@ -130,6 +130,7 @@ footer .cols{grid-template-columns:1fr 1fr}
 <div class="aud">
   <a href="/imoveis.html"><span class="arrow">→</span><div class="t">Quero comprar</div><div class="d">Imóveis verificados, guias de bairros e comparadores para escolher com segurança.</div></a>
   <a href="/ferramentas/calculadora-roi-temporada.html"><span class="arrow">→</span><div class="t">Quero investir</div><div class="d">ROI, rental yield, valorização e análise de temporada para decidir com dados.</div></a>
+  <a href="/proprietarios/guia-do-proprietario.html"><span class="arrow">→</span><div class="t">Quero vender ou alugar</div><div class="d">Avalie seu imóvel, anuncie e conte com especialistas para vender ou alugar — inclusive por temporada.</div></a>
   <a href="/servicos.html"><span class="arrow">→</span><div class="t">Sou profissional</div><div class="d">IA, automação e geração de leads para corretores e imobiliárias.</div></a>
 </div>
 </div>
@@ -176,12 +177,12 @@ footer .cols{grid-template-columns:1fr 1fr}
   <h2>Compare cidades e bairros</h2>
   <p class="lead">Métricas lado a lado para escolher onde comprar ou investir no litoral.</p>
   <table class="cmp">
-    <thead><tr><th>Cidade</th><th>Preço médio</th><th>Preço/m² (apto)</th><th>Valorização</th><th>Potencial temporada</th></tr></thead>
+    <thead><tr><th>Cidade</th><th>Preço/m² (apto)</th></tr></thead>
     <tbody>
-      <tr><td>Bertioga</td><td data-placeholder="aguardando dado">—</td><td data-placeholder="aguardando dado">—</td><td data-placeholder="aguardando dado">—</td><td data-placeholder="aguardando dado">—</td></tr>
-      <tr><td>Guarujá</td><td data-placeholder="aguardando dado">—</td><td>R$ 15.000</td><td data-placeholder="aguardando dado">—</td><td data-placeholder="aguardando dado">—</td></tr>
-      <tr><td>Santos</td><td data-placeholder="aguardando dado">—</td><td>R$ 18.000</td><td data-placeholder="aguardando dado">—</td><td data-placeholder="aguardando dado">—</td></tr>
-      <tr><td>Praia Grande</td><td data-placeholder="aguardando dado">—</td><td>R$ 12.000</td><td data-placeholder="aguardando dado">—</td><td data-placeholder="aguardando dado">—</td></tr>
+      <tr><td>Bertioga</td><td data-placeholder="aguardando dado">—</td></tr>
+      <tr><td>Guarujá</td><td>R$ 15.000</td></tr>
+      <tr><td>Santos</td><td>R$ 18.000</td></tr>
+      <tr><td>Praia Grande</td><td>R$ 12.000</td></tr>
     </tbody>
   </table>
   <p class="src">Preço/m² de apartamentos: <a href="/blog/indice-preco-m2-litoral-paulista-tabela-tendencias-2026.html">Índice de preço por m² — Praia Digital, 2026</a> (base: anúncios publicados; mediana por cidade). Demais métricas serão publicadas quando houver dados verificados. <a href="/metodologia.html">Como calculamos nossos dados →</a></p>
