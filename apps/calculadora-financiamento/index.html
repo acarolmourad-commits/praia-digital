@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulador de Financiamento Imobiliário — SAC vs Price | Praia Digital Apps</title>
+<meta name="description" content="Simule financiamento imobiliário nos sistemas SAC e Price: parcela inicial, amortização, juros totais e custo efetivo. Gratuito, do litoral de SP.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://praia.digital/apps/calculadora-financiamento/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4F6F8;color:#0F172A}
+header{background:linear-gradient(135deg,#0A3D2E,#0EA5E9);color:#fff;padding:26px 20px;text-align:center}
+.wrap{max-width:760px;margin:0 auto;padding:20px 16px}
+.card{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:20px;margin-bottom:14px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+label{display:block;font-size:13px;font-weight:600;margin:10px 0 4px}
+input,select{width:100%;padding:10px;border:1px solid #CBD5E1;border-radius:10px;font-size:15px}
+button{margin-top:14px;width:100%;padding:13px;background:#0A3D2E;color:#fff;border:0;border-radius:12px;font-size:16px;font-weight:700;cursor:pointer}
+button:hover{background:#0c5c43}
+.res{display:none;background:#ECFDF5;border:1px solid #10B981;border-radius:12px;padding:16px;margin-top:14px}
+.res p{margin:6px 0;font-size:15px}
+a{color:#0EA5E9}
+table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
+td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Simulador de Financiamento Imobiliário — SAC vs Price | Praia Digital Apps","url":"https://praia.digital/apps/calculadora-financiamento/","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0"}}</script>
+<meta property="og:type" content="website"><meta property="og:title" content="Simulador de Financiamento Imobiliário — SAC vs Price | Praia Digital Apps">
+<meta property="og:description" content="Simule financiamento imobiliário nos sistemas SAC e Price: parcela inicial, amortização, juros totais e custo efetivo. Gratuito, do litoral de SP."><meta property="og:url" content="https://praia.digital/apps/calculadora-financiamento/">
+<meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+</head>
+<body>
+
+<header><h1>🏠 Simulador de Financiamento</h1><p>SAC vs. Price — veja qual sistema pesa menos no bolso</p></header>
+<div class="wrap">
+<div class="card">
+  <label>Valor do imóvel (R$)</label><input id="valor" type="number" value="595000">
+  <label>Entrada (R$)</label><input id="entrada" type="number" value="119000">
+  <label>Taxa de juros anual (%)</label><input id="taxa" type="number" step="0.01" value="10.5">
+  <label>Prazo (anos)</label><input id="anos" type="number" value="30">
+  <button onclick="simular()">Simular SAC vs Price</button>
+  <div class="res" id="res">
+    <table><tr><th></th><th>SAC</th><th>Price</th></tr>
+    <tr><td>1ª parcela</td><td id="sacP1"></td><td id="prcP1"></td></tr>
+    <tr><td>Última parcela</td><td id="sacPn"></td><td id="prcPn"></td></tr>
+    <tr><td>Total de juros</td><td id="sacJ"></td><td id="prcJ"></td></tr>
+    <tr><td>Custo total</td><td id="sacT"></td><td id="prcT"></td></tr></table>
+    <p id="dica" style="font-weight:700"></p>
+  </div>
+</div>
+<div class="card"><h2>📌 Como interpretar</h2>
+<p style="font-size:14px;margin-top:6px">No <b>SAC</b>, a amortização é constante: as parcelas começam mais altas e caem com o tempo — paga-se menos juros no total. Na <b>Price</b>, a parcela é fixa, mas o custo final é maior. Regra de ouro dos bancos: a parcela não deve passar de 30% da renda familiar.</p>
+<p style="font-size:14px;margin-top:8px">Alternativa sem juros bancários: simule um <a href="/apps/calculadora-consorcio/">consórcio imobiliário</a> e compare a economia.</p></div>
+</div>
+<script>
+const fmt=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+function simular(){
+  const V=parseFloat(document.getElementById('valor').value)||0;
+  const E=parseFloat(document.getElementById('entrada').value)||0;
+  const C=V-E, ta=(parseFloat(document.getElementById('taxa').value)||0)/100, i=ta/12;
+  const n=(parseFloat(document.getElementById('anos').value)||0)*12;
+  if(C<=0||n<=0){alert('Verifique os valores.');return;}
+  // SAC
+  const am=C/n; const sacP1=am+C*i, sacPn=am+am*i;
+  const sacJuros=i*(C*n - am*n*(n-1)/2); const sacTotal=C+sacJuros;
+  // Price
+  const pmt = i>0 ? C*i/(1-Math.pow(1+i,-n)) : C/n; const prcTotal=pmt*n; const prcJuros=prcTotal-C;
+  document.getElementById('sacP1').textContent=fmt(sacP1);
+  document.getElementById('sacPn').textContent=fmt(sacPn);
+  document.getElementById('sacJ').textContent=fmt(sacJuros);
+  document.getElementById('sacT').textContent=fmt(sacTotal);
+  document.getElementById('prcP1').textContent=fmt(pmt);
+  document.getElementById('prcPn').textContent=fmt(pmt);
+  document.getElementById('prcJ').textContent=fmt(prcJuros);
+  document.getElementById('prcT').textContent=fmt(prcTotal);
+  document.getElementById('dica').textContent = sacTotal<prcTotal ? `✅ SAC economiza ${fmt(prcTotal-sacTotal)} em juros neste cenário.` : '✅ Compare as parcelas iniciais com sua renda.';
+  document.getElementById('res').style.display='block';
+}
+</script>
+
+<!-- Praia Digital Apps: rede de interlinks -->
+<section style="max-width:760px;margin:32px auto 0;padding:0 16px 32px">
+  <h2 style="font-size:1.05rem;margin-bottom:12px">🧰 Explore todos os apps gratuitos da Praia Digital</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px">
+    <a href="/apps/alugar-ou-comprar/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">⚖️</span><span><b>Alugar ou Comprar?</b><br><small style="color:#64748B">Ponto de equilíbrio aluguel vs. financiamento</small></span></a><a href="/apps/valor-imovel/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">💰</span><span><b>Quanto Vale Meu Imóvel?</b><br><small style="color:#64748B">Estimativa instantânea por cidade, m² e diferenciais</small></span></a><a href="/apps/checklist-vistoria/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">📋</span><span><b>Checklist de Vistoria</b><br><small style="color:#64748B">Vistorie imóveis com score de qualidade</small></span></a><a href="/apps/comparador-cidades/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">📊</span><span><b>Comparador de Cidades</b><br><small style="color:#64748B">Ranqueie o litoral pelo seu perfil</small></span></a><a href="/apps/simulador-roi-temporada/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🧮</span><span><b>Simulador de ROI — Temporada</b><br><small style="color:#64748B">Receita, ROI líquido e payback</small></span></a><a href="/apps/calculadora-consorcio/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🏦</span><span><b>Calculadora de Consórcio</b><br><small style="color:#64748B">Parcela, lance e economia vs. financiamento</small></span></a><a href="/apps/custo-de-compra/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🧾</span><span><b>Custos de Compra</b><br><small style="color:#64748B">ITBI, escritura, registro e custos de fechamento</small></span></a>
+  </div>
+  <p style="margin-top:14px;font-size:13px;color:#64748B;text-align:center">
+    <a href="/apps/" style="color:#0EA5E9">Ver índice completo de apps</a> ·
+    <a href="/" style="color:#0EA5E9">Praia Digital</a> ·
+    <a href="/encontrar-imovel.html" style="color:#0EA5E9">Encontrar imóvel</a>
+  </p>
+</section>
+
+</body>
+</html>
