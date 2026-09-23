@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Valorização Imobiliária — Projeção por cidade | Praia Digital Apps</title>
+<meta name="description" content="Projete a valorização de um imóvel no litoral paulista por taxa anual e prazo, e compare com o rendimento do CDI. Gratuito.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://praia.digital/apps/calculadora-valorizacao/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4F6F8;color:#0F172A}
+header{background:linear-gradient(135deg,#0A3D2E,#0EA5E9);color:#fff;padding:26px 20px;text-align:center}
+.wrap{max-width:760px;margin:0 auto;padding:20px 16px}
+.card{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:20px;margin-bottom:14px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+label{display:block;font-size:13px;font-weight:600;margin:10px 0 4px}
+input,select{width:100%;padding:10px;border:1px solid #CBD5E1;border-radius:10px;font-size:15px}
+button{margin-top:14px;width:100%;padding:13px;background:#0A3D2E;color:#fff;border:0;border-radius:12px;font-size:16px;font-weight:700;cursor:pointer}
+button:hover{background:#0c5c43}
+.res{display:none;background:#ECFDF5;border:1px solid #10B981;border-radius:12px;padding:16px;margin-top:14px}
+.res p{margin:6px 0;font-size:15px}
+a{color:#0EA5E9}
+table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
+td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Valorização Imobiliária | Praia Digital Apps","url":"https://praia.digital/apps/calculadora-valorizacao/","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0"}}</script>
+<meta property="og:type" content="website"><meta property="og:title" content="Calculadora de Valorização Imobiliária — Projeção por cidade | Praia Digital Apps"><meta property="og:description" content="Projete a valorização de um imóvel no litoral por taxa anual e prazo, comparada ao CDI. Gratuito."><meta property="og:url" content="https://praia.digital/apps/calculadora-valorizacao/">
+<meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+</head>
+<body>
+<header><h1>📈 Calculadora de Valorização</h1><p>Projete o valor futuro do seu imóvel no litoral e compare com o CDI</p></header>
+<div class="wrap">
+<div class="card">
+  <label>Valor atual do imóvel (R$)</label><input id="valor" type="number" value="500000">
+  <label>Cenário de valorização anual</label>
+  <select id="cenario" onchange="aplicar()">
+    <option value="4">Conservador — 4% a.a. (inflação)</option>
+    <option value="7" selected>Médio litoral — 7% a.a.</option>
+    <option value="10">Otimista (bairros em expansão) — 10% a.a.</option>
+    <option value="custom">Personalizada</option>
+  </select>
+  <label>Taxa anual personalizada (% a.a.)</label><input id="taxa" type="number" step="0.1" value="7">
+  <label>Prazo (anos)</label><input id="anos" type="number" value="10">
+  <label>CDI médio para comparação (% a.a.)</label><input id="cdi" type="number" step="0.1" value="10.5">
+  <button onclick="calcular()">Projetar valorização</button>
+  <div class="res" id="res">
+    <table>
+      <tr><th></th><th>Imóvel</th><th>CDI</th></tr>
+      <tr><td>Valor em <span id="prazo"></span> anos</td><td id="vfImo"></td><td id="vfCdi"></td></tr>
+      <tr><td>Ganho total</td><td id="gImo"></td><td id="gCdi"></td></tr>
+    </table>
+    <p id="dica" style="font-weight:700"></p>
+  </div>
+</div>
+<div class="card"><h2>📌 Como interpretar</h2>
+<p style="font-size:14px;margin-top:6px">A valorização imobiliária varia muito por cidade e bairro: use o <a href="/apps/comparador-cidades/">comparador de cidades</a> para escolher onde investir e o <a href="/apps/valor-imovel/">estimador de valor</a> para saber quanto seu imóvel vale hoje. Lembre-se: o imóvel também gera renda — some a valorização ao retorno do <a href="/apps/simulador-roi-temporada/">simulador de ROI de temporada</a> para o retorno total do investimento.</p>
+<p style="font-size:14px;margin-top:8px">Valores são projeções educativas, sem garantia. Consulte dados reais no <a href="/blog/indice-preco-m2-litoral-paulista-tabela-tendencias-2026.html">índice de preço por m² do litoral</a>.</p></div>
+</div>
+<script>
+const fmt=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+function aplicar(){const c=document.getElementById('cenario').value;if(c!=='custom')document.getElementById('taxa').value=c;}
+function calcular(){
+  const V=parseFloat(document.getElementById('valor').value)||0;
+  const t=(parseFloat(document.getElementById('taxa').value)||0)/100;
+  const a=parseFloat(document.getElementById('anos').value)||0;
+  const c=(parseFloat(document.getElementById('cdi').value)||0)/100;
+  if(V<=0||a<=0){alert('Verifique os valores.');return;}
+  const vfI=V*Math.pow(1+t,a), vfC=V*Math.pow(1+c,a);
+  document.getElementById('prazo').textContent=a;
+  document.getElementById('vfImo').textContent=fmt(vfI);
+  document.getElementById('vfCdi').textContent=fmt(vfC);
+  document.getElementById('gImo').textContent=fmt(vfI-V);
+  document.getElementById('gCdi').textContent=fmt(vfC-V);
+  document.getElementById('dica').textContent = vfI>vfC ? '🏆 Neste cenário, o imóvel supera o CDI — sem contar a renda de aluguel.' : 'ℹ️ O CDI rende mais neste cenário; some a renda de temporada ao imóvel para comparar o retorno total.';
+  document.getElementById('res').style.display='block';
+}
+</script>
+
+<!-- Praia Digital Apps: rede de interlinks -->
+<section style="max-width:760px;margin:32px auto 0;padding:0 16px 32px">
+  <h2 style="font-size:1.05rem;margin-bottom:12px">🧰 Explore todos os apps gratuitos da Praia Digital</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px">
+    <a href="/apps/alugar-ou-comprar/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">⚖️</span><span><b>Alugar ou Comprar?</b><br><small style="color:#64748B">Ponto de equilíbrio aluguel vs. financiamento</small></span></a><a href="/apps/valor-imovel/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">💰</span><span><b>Quanto Vale Meu Imóvel?</b><br><small style="color:#64748B">Estimativa instantânea por cidade, m² e diferenciais</small></span></a><a href="/apps/checklist-vistoria/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">📋</span><span><b>Checklist de Vistoria</b><br><small style="color:#64748B">Vistorie imóveis com score de qualidade</small></span></a><a href="/apps/comparador-cidades/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">📊</span><span><b>Comparador de Cidades</b><br><small style="color:#64748B">Ranqueie o litoral pelo seu perfil</small></span></a><a href="/apps/simulador-roi-temporada/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🏖️</span><span><b>Simulador de ROI — Temporada</b><br><small style="color:#64748B">Receita, ROI líquido e payback</small></span></a><a href="/apps/calculadora-consorcio/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🏦</span><span><b>Calculadora de Consórcio</b><br><small style="color:#64748B">Parcela, lance e economia vs. financiamento</small></span></a><a href="/apps/calculadora-financiamento/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🏠</span><span><b>Simulador de Financiamento</b><br><small style="color:#64748B">SAC vs. Price: parcelas, juros e custo total</small></span></a><a href="/apps/custo-de-compra/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🧾</span><span><b>Custos de Compra</b><br><small style="color:#64748B">ITBI, escritura, registro e custo de fechamento</small></span></a><a href="/apps/planejador-entrada/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🎯</span><span><b>Planejador de Entrada</b><br><small style="color:#64748B">Quanto guardar por mês para juntar a entrada</small></span></a>
+  </div>
+  <p style="margin-top:14px;font-size:13px;color:#64748B;text-align:center">
+    <a href="/apps/" style="color:#0EA5E9">Ver índice completo de apps</a> ·
+    <a href="/" style="color:#0EA5E9">Praia Digital</a> ·
+    <a href="/encontrar-imovel.html" style="color:#0EA5E9">Encontrar imóvel</a>
+  </p>
+</section>
+
+</body>
+</html>
