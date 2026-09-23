@@ -100,15 +100,71 @@ def main():
                  "docs/sales/prova-entrega-outbound.json",
                  "docs/sales/prova-entrega-outbound.html",
                  "docs/sales/csv-lotes-email/nurture-pendente.csv"]
+        # 3a) stage only the outbound artefacts
         subprocess.run(["git", "-C", REPO, "add"] + alvos, check=True)
+
+        # 3b) fetch remote to check divergence
+        subprocess.run(["git", "-C", REPO, "fetch", "origin", "main"], check=True)
+
+        # 3c) stash any unrelated working-tree changes so merge/rebase won't abort
+        stash_needed = False
+        st = subprocess.run(["git", "-C", REPO, "status", "--porcelain", "--untracked-files=no"],
+                            capture_output=True, text=True)
+        dirty_files = [ln[3:] for ln in st.stdout.strip().splitlines() if ln[:2] == " M"]
+        # check files outside our alvos list
+        others = [f for f in dirty_files if f not in alvos]
+        if others:
+            stash_needed = True
+            subprocess.run(["git", "-C", REPO, "stash", "--keep-index"], check=True)
+
+        # 3d) try rebase (safer, keeps history linear)
+        rb = subprocess.run(["git", "-C", REPO, "rebase", "origin/main"],
+                            capture_output=True, text=True)
+        if rb.returncode != 0:
+            # Check for conflicts
+            conflicted = subprocess.run(
+                ["git", "-C", REPO, "diff", "--name-only", "--diff-filter=U"],
+                capture_output=True, text=True).stdout.strip().splitlines()
+            # Dashboard files are regenerated fresh by this script → local wins
+            dashboard_conflicts = [f for f in conflicted
+                                   if f in alvos]
+            other_conflicts = [f for f in conflicted
+                               if f not in alvos]
+            if other_conflicts:
+                # Conflito real em arquivos que não são dashboards do outbound:
+                # preserva tudo e interrompe de forma segura para revisão
+                subprocess.run(["git", "-C", REPO, "rebase", "--abort"], capture_output=True)
+                if stash_needed:
+                    subprocess.run(["git", "-C", REPO, "stash", "pop"], capture_output=True)
+                print("CONFLITO DETECTADO em arquivos não-outbound. "
+                      "Arquivos preservados. Revisar manualmente.")
+                print("Conflitos:", other_conflicts)
+                return
+            # Only dashboard conflicts: resolve with local (just generated) versions
+            for f in dashboard_conflicts:
+                subprocess.run(["git", "-C", REPO, "checkout", "--theirs", f],
+                               check=True)
+            subprocess.run(["git", "-C", REPO, "rebase", "--continue"],
+                           capture_output=True)
+
+        # 3e) commit se houver mudanças nos arquivos do outbound
         r = subprocess.run(["git", "-C", REPO, "status", "--porcelain"] + alvos,
-                          capture_output=True, text=True)
+                           capture_output=True, text=True)
         if r.stdout.strip():
-            subprocess.run(["git", "-C", REPO, "commit", "-m", f"chore: refresh dashboards outbound {date.today():%Y-%m-%d}"], check=True)
-            subprocess.run(["git", "-C", REPO, "push", "origin", "main"], check=True)
+            subprocess.run(["git", "-C", REPO, "commit", "-m",
+                            f"chore: refresh dashboards outbound {date.today():%Y-%m-%d}"],
+                           check=True)
+        subprocess.run(["git", "-C", REPO, "push", "origin", "main"], check=True)
+        if r.stdout.strip():
             print("Commit+push dos artefatos atualizados.")
         else:
-            print("Sem mudancas para versionar.")
+            print("Push de sincronização concluído (sem novas mudanças nos artefatos).")
+
+        # 3f) restore any stashed unrelated changes
+        if stash_needed:
+            subprocess.run(["git", "-C", REPO, "stash", "pop"], capture_output=True)
+    else:
+        print("Modo dry-run: sem push. Artefatos regenerados localmente.")
 
 if __name__ == "__main__":
     main()
