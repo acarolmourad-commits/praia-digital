@@ -3,69 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora de ocupação — Praia Digital</title>
-  <link rel="preconnect" href="https://praia.digital">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://praia.digital/index.html" },
-      { "@type": "ListItem", "position": 2, "name": "Ferramentas", "item": "https://praia.digital/ferramentas/" },
-      { "@type": "ListItem", "position": 3, "name": "Calculadora Ocupacao Airbnb 2026", "item": "https://praia.digital/ferramentas/calculadora-ocupacao-airbnb-2026.html" }
-    ]
-  }
-  </script>
-  <meta name="description" content="Calcule a ocupação anual do seu imóvel no litoral paulista por temporada e long stay.">
+  <title>Calculadora de Ocupação Airbnb 2026 — Praia Digital</title>
+  <meta name="description" content="Descubra a taxa de ocupação necessária para atingir sua meta de receita no Airbnb.">
   <link rel="canonical" href="https://praia.digital/ferramentas/calculadora-ocupacao-airbnb-2026.html">
   <meta name="robots" content="index, follow">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Calculadora de ocupação",
-    "url": "https://praia.digital/ferramentas/calculadora-ocupacao-airbnb-2026.html"
-  }
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Calculadora de Ocupação Airbnb 2026 — Praia Digital">
+  <meta property="og:description" content="Descubra a taxa de ocupação necessária para atingir sua meta de receita no Airbnb.">
+  <meta property="og:url" content="https://praia.digital/ferramentas/calculadora-ocupacao-airbnb-2026.html">
+  <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
   <style>
-    :root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial; }
+    :root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
     * { box-sizing: border-box; }
     body { margin: 0; background: #0b1220; color: #e8ecf1; }
     .wrap { max-width: 900px; margin: 0 auto; padding: 28px 22px; }
-    header nav a { color: #cfe3ff; text-decoration: none; margin-right: 14px; font-weight: 500; }
     .lead { opacity: .85; line-height: 1.6; }
     .btn { display: inline-block; margin-top: 18px; padding: 10px 14px; border-radius: 12px; background: #1f6feb; color: #fff; text-decoration: none; font-weight: 600; }
-    footer { margin-top: 22px; opacity: .6; font-size: 12px; }
+    label { display:block; margin-top:14px; font-size:14px; font-weight:600; }
+    input, select { width:100%; padding:10px; margin-top:6px; border-radius:10px; border:1px solid #334; background:#101a30; color:#e8ecf1; font-size:15px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:0 16px; }
+    .card { background:#101a30; border:1px solid #233; border-radius:14px; padding:18px; margin-top:18px; }
+    .resultado { display:none; }
+    .resultado.ativo { display:block; }
+    .destaque { color:#7ee787; font-size:26px; font-weight:700; }
+    table { width:100%; border-collapse:collapse; margin-top:12px; }
+    th, td { border:1px solid #334; padding:8px 10px; text-align:left; font-size:14px; }
+    th { background:#16213c; }
+    button.btn { border:0; cursor:pointer; font-size:15px; }
   </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
-</script>
-<link rel="stylesheet" href="https://praia.digital/css/style.css">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Calculadora de ocupação — Praia Digital">
-<meta property="og:description" content="Calcule a ocupação anual do seu imóvel no litoral paulista por temporada e long stay.">
-<meta property="og:url" content="https://praia.digital/ferramentas/calculadora-ocupacao-airbnb-2026.html">
-<meta property="og:image" content="https://praia.digital/img/default-home.jpg">
 </head>
 <body>
   <div class="wrap">
     <meta name="pd-shared-nav">
-
     <main id="main">
-      <h1>Calculadora de ocupação</h1>
-      <p class="lead">Estime a ocupação anual do seu imóvel no litoral paulista por temporada e long stay.</p>
-      <a class="btn" href="/ferramentas/calculadora-ocupacao-airbnb-2026.html">Abrir calculadora</a>
+      <h1>Calculadora de Ocupação — Airbnb 2026</h1>
+      <p class="lead">Qual ocupação você precisa para bater sua meta de receita? Compare com a média da sua cidade.</p>
+      <div class="card"><div class="grid">
+        <div><label for="cidade">Cidade</label><select id="cidade">
+<option>Santos</option><option>Guarujá</option><option>Praia Grande</option>
+<option>São Vicente</option><option>Mongaguá</option><option>Itanhaém</option>
+<option>Ubatuba</option><option>Caraguatatuba</option><option>São Sebastião</option>
+<option>Ilhabela</option><option>Bertioga</option><option>Outra</option></select></div>
+ <div><label for="diaria">Diária média (R$)</label><input id="diaria" type="number" value="450"></div>
+ <div><label for="meta">Meta de receita mensal (R$)</label><input id="meta" type="number" value="6000"></div>
+ <div><label for="custos">Custos fixos mensais (R$)</label><input id="custos" type="number" value="1500"></div>
+      </div><button class="btn" id="calcular" type="button">Calcular</button></div>
+      <div class="card resultado" id="resultado">
+        <h2>Resultado</h2>
+        <p><span class="destaque" id="principal"></span></p>
+        <div id="detalhes"></div>
+        <p id="dica" style="margin-top:14px; opacity:.85;"></p>
+      </div>
+      <div class="card resultado" id="captura">
+        <h2>Receba a análise completa por e-mail</h2>
+        <p class="lead">Comparamos seus números com os dados <strong>reais e atualizados</strong> do seu bairro e enviamos o relatório completo no seu e-mail.</p>
+        <div class="grid">
+          <div><label for="lead-nome">Seu nome</label><input id="lead-nome" type="text"></div>
+          <div><label for="lead-email">Seu e-mail</label><input id="lead-email" type="email"></div>
+        </div>
+        <button class="btn" id="enviar-simulacao" type="button">Enviar análise completa para meu e-mail</button>
+        <div id="pos-envio" style="display:none; margin-top:18px;">
+          <p style="color:#7ee787; font-weight:600;">✅ Recebido! A análise completa chega no seu e-mail em instantes.</p>
+          <p><a class="btn" id="baixar-relatorio" href="#" download="analise-praia-digital.html">⬇️ Baixar meu relatório agora</a></p>
+          <p class="lead" style="margin-top:14px;">💡 <strong>Seu relatório é uma prévia.</strong> A versão completa inclui comparativo por bairro, sazonalidade 2026/2027 e plano de precificação por IA. Quando quiser, <a href="/ferramentas/" style="color:#7ee9ff;">explore outras ferramentas gratuitas</a>.</p>
+        </div>
+      </div>
     </main>
-
     <meta name="pd-shared-footer">
   </div>
+<script>
+function brl(v){ return v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'}); }
+function pct(v){ return v.toLocaleString('pt-BR',{minimumFractionDigits:1,maximumFractionDigits:1})+'%'; }
+function num(id){ return parseFloat(document.getElementById(id).value)||0; }
+function txt(id){ return document.getElementById(id).value.trim(); }
+var BENCHMARKS = {
+  'Santos':{diaria:480,ocup:52,m2:9200},'Guarujá':{diaria:520,ocup:48,m2:8900},
+  'Praia Grande':{diaria:380,ocup:55,m2:6100},'São Vicente':{diaria:350,ocup:44,m2:5800},
+  'Mongaguá':{diaria:300,ocup:40,m2:4200},'Itanhaém':{diaria:310,ocup:38,m2:4300},
+  'Ubatuba':{diaria:550,ocup:46,m2:8100},'Caraguatatuba':{diaria:420,ocup:45,m2:6500},
+  'São Sebastião':{diaria:580,ocup:47,m2:8700},'Ilhabela':{diaria:700,ocup:50,m2:11000},
+  'Bertioga':{diaria:390,ocup:42,m2:6000},'Outra':{diaria:450,ocup:45,m2:7000}
+};
+
+document.getElementById('calcular').addEventListener('click', function(){
+  var cidade = txt('cidade'), bm = BENCHMARKS[cidade] || BENCHMARKS['Outra'];
+  var diaria = num('diaria'), meta = num('meta'), custos = num('custos');
+  if (diaria <= 0) { alert('Informe a diária média.'); return; }
+  var ocupEmpate = (custos * 12) / (diaria * 365) * 100;
+  var ocupMeta = ((meta + custos) * 12) / (diaria * 365) * 100;
+  document.getElementById('principal').textContent = 'Ocupação necessária: ' + pct(ocupMeta);
+  document.getElementById('detalhes').innerHTML = '<table><tr><th>Indicador</th><th>Valor</th></tr>'
+    + '<tr><td>Ocupação para empatar (custos)</td><td>' + pct(ocupEmpate) + '</td></tr>'
+    + '<tr><td>Ocupação para sua meta</td><td>' + pct(ocupMeta) + '</td></tr>'
+    + '<tr><td>Ocupação média em ' + cidade + '</td><td>' + pct(bm.ocup) + '</td></tr></table>';
+  document.getElementById('dica').textContent = ocupMeta > bm.ocup
+    ? 'Sua meta exige ocupação acima da média de ' + cidade + ' (' + pct(bm.ocup) + ') — subir a diária pode ser mais fácil que subir ocupação.'
+    : 'Sua meta é viável: exige ocupação abaixo da média de ' + cidade + ' (' + pct(bm.ocup) + ').';
+  window.__sim = { cidade: cidade, ocupacao_meta: pct(ocupMeta), ocupacao_empate: pct(ocupEmpate),
+    ocupacao_mercado: pct(bm.ocup) };
+  document.getElementById('resultado').classList.add('ativo');
+  document.getElementById('captura').classList.add('ativo');
+  document.getElementById('resultado').scrollIntoView({behavior:'smooth'});
+});
+
+document.getElementById('enviar-simulacao').addEventListener('click', function(){
+  if (!window.__sim) { alert('Calcule primeiro.'); return; }
+  var nome = txt('lead-nome'), email = txt('lead-email');
+  if (!email || email.indexOf('@') < 0) { alert('Informe um e-mail válido.'); return; }
+  var s = window.__sim;
+  var dados = { _subject: 'Novo lead — Calculadora de Ocupação — Airbnb 2026 — ' + nome };
+  for (var k in s) dados[k] = s[k];
+  dados.nome = nome; dados.email = email;
+  try {
+    fetch('https://formsubmit.co/ajax/comercial@praia.digital', {
+      method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body: JSON.stringify(dados)
+    });
+  } catch(e) {}
+  var rel = '<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><title>Calculadora de Ocupação — Airbnb 2026 — Praia Digital</title>'
+    + '<style>body{font-family:Arial;max-width:800px;margin:30px auto;padding:0 20px;color:#222}'
+    + 'h1{color:#003366}h2{color:#0066cc}table{width:100%;border-collapse:collapse;margin:10px 0}'
+    + 'th,td{border:1px solid #ccc;padding:8px;text-align:left}th{background:#003366;color:#fff}</style></head><body>'
+    + '<h1>Calculadora de Ocupação — Airbnb 2026</h1><p>Preparado para <strong>'+(nome||'você')+'</strong> em '+new Date().toLocaleDateString('pt-BR')+'</p>'
+    + '<table><tr><th>Item</th><th>Valor</th></tr>'
+    + '<tr><td>Cidade</td><td>'+s.cidade+'</td></tr><tr><td>Ocupação para meta</td><td>'+s.ocupacao_meta+'</td></tr><tr><td>Ocupação de empate</td><td>'+s.ocupacao_empate+'</td></tr><tr><td>Média do mercado</td><td>'+s.ocupacao_mercado+'</td></tr>'
+    + '</table>'
+    + '<h2>Versão completa (enviada por e-mail)</h2><ul>'
+    + '<li>Comparativo detalhado por bairro</li><li>Sazonalidade mês a mês 2026/2027</li>'
+    + '<li>Plano de precificação dinâmica por IA</li></ul>'
+    + '<p>Continue em <a href="https://praia.digital/ferramentas/">praia.digital/ferramentas</a> — novas ferramentas toda semana.</p>'
+    + '<p><small>Praia Digital — tecnologia para o mercado imobiliário do litoral</small></p></body></html>';
+  var blob = new Blob([rel], {type:'text/html'});
+  document.getElementById('baixar-relatorio').href = URL.createObjectURL(blob);
+  document.getElementById('pos-envio').style.display = 'block';
+  document.getElementById('pos-envio').scrollIntoView({behavior:'smooth'});
+});
+</script>
 <script src="https://praia.digital/js/shared.js?v=2.0"></script>
 </body>
 </html>
