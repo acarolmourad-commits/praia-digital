@@ -6,6 +6,9 @@ LEADS = f"{REPO}/docs/sales/leads-litoral-enriquecido.csv"
 REGISTRO = f"{REPO}/docs/sales/followup-registro.md"
 RELATORIO = f"{REPO}/docs/sales/relatorio-diario.html"
 
+# Status que NAO entram nas filas de follow-up
+STATUS_EXCLUIDOS = ("interessado", "parceria_fechada", "arquivado", "descartado")
+
 def parse_date(s):
     try:
         return datetime.strptime(s.strip(), "%d/%m/%Y")
@@ -25,6 +28,7 @@ def run():
     followups_3d = []
     followups_7d = []
     interessados_sem_call = []
+    excluidos = 0
 
     for row in rows:
         nome = row.get("nome_da_imobiliaria","").strip()
@@ -32,6 +36,10 @@ def run():
         email = row.get("email","").strip()
         status = row.get("status","").strip() or "novo"
         last = parse_date(row.get("last_contact",""))
+        # CORRECAO: parceria_fechada/arquivado/descartado nao entram em follow-up
+        if status in ("parceria_fechada", "arquivado", "descartado"):
+            excluidos += 1
+            continue
         if last is None:
             alerts.append(f"{nome} ({cidade}) — sem data de último contato")
             continue
@@ -70,7 +78,7 @@ th {{ background:#003366; color:#fff; }}
 </style></head><body>
 <h1>Relatório Diário — {now:%d/%m/%Y}</h1>
 """)
-        f.write(f"<p><strong>Total leads:</strong> {len(rows)}</p>")
+        f.write(f"<p><strong>Total leads:</strong> {len(rows)} | <strong>Excluídos das filas (parceria_fechada/arquivado/descartado):</strong> {excluidos}</p>")
         table("Follow-ups 3 dias pendentes", [(n,c,e,d) for n,c,e,d in followups_3d], ["Nome","Cidade","E-mail","Dias sem contato"])
         table("Follow-ups 7 dias pendentes", [(n,c,e,d) for n,c,e,d in followups_7d], ["Nome","Cidade","E-mail","Dias sem contato"])
         table("Interessados sem call agendada", [(n,c,e) for n,c,e in interessados_sem_call], ["Nome","Cidade","E-mail"])
@@ -78,6 +86,7 @@ th {{ background:#003366; color:#fff; }}
         f.write("<p><small>Gerado automaticamente por automacao_diaria.py — CEO Praia Digital</small></p></body></html>")
     print(f"Relatório diário gerado: {RELATORIO}")
     print(f"Follow-ups 3d: {len(followups_3d)}, 7d: {len(followups_7d)}, alertas: {len(alerts)}")
+    print(f"Leads excluídos da fila (parceria_fechada/arquivado/descartado): {excluidos}")
 
 if __name__ == "__main__":
     run()
