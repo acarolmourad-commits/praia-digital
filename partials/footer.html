@@ -1,5 +1,14 @@
 <footer>
   <p> Praia Digital — Imóveis no Litoral com IA. Atendimento humanizado para corretores, imobiliárias e proprietários.</p>
+  <div id="pdFlForm" style="max-width:640px;margin:14px auto;padding:14px;border:1px solid #E5E7EB;border-radius:14px;background:#f8fafc;">
+    <p style="margin:0 0 8px;font-weight:700;">📩 Receba análises e novidades do mercado do litoral por e-mail</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px;">
+      <input id="pdFlNome" type="text" placeholder="Seu nome" style="padding:9px;border:1px solid #d0d7de;border-radius:10px;">
+      <input id="pdFlEmail" type="email" placeholder="Seu e-mail" style="padding:9px;border:1px solid #d0d7de;border-radius:10px;">
+    </div>
+    <button type="button" onclick="var e=document.getElementById('pdFlEmail').value.trim();if(!e||e.indexOf('@')<0){alert('Informe um e-mail válido.');return;}var n=document.getElementById('pdFlNome').value.trim();try{fetch('https://formsubmit.co/ajax/comercial@praia.digital',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({_subject:'Novo lead (site) — '+n+' — '+document.title,nome:n,email:e,pagina:location.pathname})});}catch(x){}document.getElementById('pdFlForm').style.display='none';document.getElementById('pdFlOk').style.display='block';" style="margin-top:10px;padding:9px 16px;border:0;border-radius:10px;background:#0A3D2E;color:#fff;font-weight:700;cursor:pointer;">Quero receber</button>
+  </div>
+  <p id="pdFlOk" style="display:none;font-weight:700;">✅ Recebido! Você vai receber nossas análises por e-mail. Enquanto isso, <a href="/ferramentas/">explore as ferramentas gratuitas</a>.</p>
   <nav aria-label="Rodapé">
     <a href="https://praia.digital/">Início</a>
     <a href="https://praia.digital/blog/">Blog & Estudos</a>
