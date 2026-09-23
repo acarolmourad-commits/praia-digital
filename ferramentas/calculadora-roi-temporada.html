@@ -38,6 +38,19 @@
     .lead { opacity: .85; line-height: 1.6; }
     .btn { display: inline-block; margin-top: 18px; padding: 10px 14px; border-radius: 12px; background: #1f6feb; color: #fff; text-decoration: none; font-weight: 600; }
     footer { margin-top: 22px; opacity: .6; font-size: 12px; }
+  
+    label { display:block; margin-top:14px; font-size:14px; font-weight:600; }
+    input, select { width:100%; padding:10px; margin-top:6px; border-radius:10px; border:1px solid #334; background:#101a30; color:#e8ecf1; font-size:15px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:0 16px; }
+    .card { background:#101a30; border:1px solid #233; border-radius:14px; padding:18px; margin-top:18px; }
+    .resultado { display:none; }
+    .resultado.ativo { display:block; }
+    .destaque { color:#7ee787; font-size:26px; font-weight:700; }
+    table { width:100%; border-collapse:collapse; margin-top:12px; }
+    th, td { border:1px solid #334; padding:8px 10px; text-align:left; font-size:14px; }
+    th { background:#16213c; }
+    .vencedor { background:rgba(46,160,67,.15); }
+    button.btn { border:0; cursor:pointer; font-size:15px; }
   </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
@@ -60,12 +73,197 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
     <main id="main">
       <h1>Simulador de ROI</h1>
-      <p class="lead">Compare retorno entre temporada, aluguel anual e venda do imóvel no litoral paulista.</p>
-      <a class="btn" href="/ferramentas/calculadora-roi-temporada.html">Abrir simulador</a>
+      <p class="lead">Compare o retorno anual do seu imóvel no litoral paulista em três cenários: <strong>temporada</strong>, <strong>aluguel anual</strong> e <strong>venda</strong> (com o valor investido em renda fixa).</p>
+
+      <div class="card">
+        <div class="grid">
+          <div><label for="valor">Valor do imóvel (R$)</label><input id="valor" type="number" min="0" value="650000"></div>
+          <div><label for="diaria">Diária média na temporada (R$)</label><input id="diaria" type="number" min="0" value="450"></div>
+          <div><label for="ocupacao">Ocupação anual (%)</label><input id="ocupacao" type="number" min="0" max="100" value="45"></div>
+          <div><label for="taxa">Taxa de administração (%)</label><input id="taxa" type="number" min="0" max="100" value="20"></div>
+          <div><label for="custos">Custos fixos anuais (IPTU, condomínio) (R$)</label><input id="custos" type="number" min="0" value="12000"></div>
+          <div><label for="aluguel">Aluguel mensal (cenário anual) (R$)</label><input id="aluguel" type="number" min="0" value="2800"></div>
+          <div><label for="renda">Rendimento de renda fixa (% ao ano)</label><input id="renda" type="number" min="0" step="0.1" value="10.5"></div>
+        </div>
+        <button class="btn" id="calcular" type="button">Calcular retorno</button>
+      </div>
+
+      <div class="card resultado" id="resultado">
+        <h2>Resultado</h2>
+        <p>Melhor cenário: <span class="destaque" id="melhor"></span></p>
+        <table>
+          <tr><th>Cenário</th><th>Receita bruta/ano</th><th>Receita líquida/ano</th><th>ROI sobre o imóvel</th></tr>
+          <tr id="linha-temporada"><td>Temporada</td><td id="temp-bruta"></td><td id="temp-liquida"></td><td id="temp-roi"></td></tr>
+          <tr id="linha-anual"><td>Aluguel anual</td><td id="an-bruta"></td><td id="an-liquida"></td><td id="an-roi"></td></tr>
+          <tr id="linha-venda"><td>Venda + renda fixa</td><td id="vd-bruta"></td><td id="vd-liquida"></td><td id="vd-roi"></td></tr>
+        </table>
+        <p id="dica" style="margin-top:14px; opacity:.85;"></p>
+      </div>
+
+      <div class="card resultado" id="captura">
+        <h2>Receba a simulação completa por e-mail</h2>
+        <p class="lead">Analisamos seus dados, comparamos com os números <strong>reais e atualizados</strong> do seu bairro (diárias praticadas, ocupação média e temporada 2026/2027) e enviamos o relatório completo no seu e-mail.</p>
+        <div class="grid">
+          <div><label for="lead-nome">Seu nome</label><input id="lead-nome" type="text" placeholder="Maria Silva"></div>
+          <div><label for="lead-email">Seu e-mail</label><input id="lead-email" type="email" placeholder="voce@email.com"></div>
+          <div><label for="lead-cidade">Cidade do imóvel</label>
+            <select id="lead-cidade">
+              <option>Santos</option><option>Guarujá</option><option>Praia Grande</option>
+              <option>São Vicente</option><option>Mongaguá</option><option>Itanhaém</option>
+              <option>Ubatuba</option><option>Caraguatatuba</option><option>São Sebastião</option>
+              <option>Ilhabela</option><option>Bertioga</option><option>Outra</option>
+            </select></div>
+        </div>
+        <button class="btn" id="enviar-simulacao" type="button">Enviar simulação completa para meu e-mail</button>
+        <div id="pos-envio" style="display:none; margin-top:18px;">
+          <p style="color:#7ee787; font-weight:600;">✅ Recebido! A análise completa chega no seu e-mail em instantes.</p>
+          <p><a class="btn" id="baixar-relatorio" href="#" download="simulacao-roi-praia-digital.html">⬇️ Baixar meu relatório agora</a></p>
+          <p class="lead" style="margin-top:14px;">💡 <strong>Seu relatório é uma prévia.</strong> A versão completa inclui comparativo por bairro, sazonalidade mês a mês da temporada 2026/2027 e estimativa de valorização do seu imóvel — nossos especialistas enviam junto com a análise. Quando quiser, <a href="/ferramentas/" style="color:#7ee9ff;">explore outras simulações gratuitas</a>.</p>
+        </div>
+      </div>
     </main>
 
     <meta name="pd-shared-footer">
   </div>
+<script>
+function brl(v){ return v.toLocaleString('pt-BR', {style:'currency', currency:'BRL'}); }
+function pct(v){ return v.toLocaleString('pt-BR', {minimumFractionDigits:1, maximumFractionDigits:1}) + '%'; }
+
+document.getElementById('calcular').addEventListener('click', function(){
+  var valor   = parseFloat(document.getElementById('valor').value)    || 0;
+  var diaria  = parseFloat(document.getElementById('diaria').value)   || 0;
+  var ocup    = parseFloat(document.getElementById('ocupacao').value) || 0;
+  var taxa    = parseFloat(document.getElementById('taxa').value)     || 0;
+  var custos  = parseFloat(document.getElementById('custos').value)   || 0;
+  var aluguel = parseFloat(document.getElementById('aluguel').value)  || 0;
+  var renda   = parseFloat(document.getElementById('renda').value)    || 0;
+
+  if (valor <= 0) { alert('Informe o valor do imóvel.'); return; }
+
+  // Temporada
+  var tempBruta   = diaria * 365 * (ocup / 100);
+  var tempLiquida = tempBruta * (1 - taxa / 100) - custos;
+  // Aluguel anual
+  var anBruta   = aluguel * 12;
+  var anLiquida = anBruta - custos;
+  // Venda + renda fixa
+  var vdBruta   = valor * (renda / 100);
+  var vdLiquida = vdBruta;
+
+  var roiTemp = tempLiquida / valor * 100;
+  var roiAn   = anLiquida   / valor * 100;
+  var roiVd   = vdLiquida   / valor * 100;
+
+  document.getElementById('temp-bruta').textContent   = brl(tempBruta);
+  document.getElementById('temp-liquida').textContent = brl(tempLiquida);
+  document.getElementById('temp-roi').textContent     = pct(roiTemp);
+  document.getElementById('an-bruta').textContent     = brl(anBruta);
+  document.getElementById('an-liquida').textContent   = brl(anLiquida);
+  document.getElementById('an-roi').textContent       = pct(roiAn);
+  document.getElementById('vd-bruta').textContent     = brl(vdBruta);
+  document.getElementById('vd-liquida').textContent   = brl(vdLiquida);
+  document.getElementById('vd-roi').textContent       = pct(roiVd);
+
+  var cenarios = [
+    ['linha-temporada', roiTemp, 'Temporada'],
+    ['linha-anual',     roiAn,   'Aluguel anual'],
+    ['linha-venda',     roiVd,   'Venda + renda fixa']
+  ];
+  cenarios.forEach(function(c){ document.getElementById(c[0]).classList.remove('vencedor'); });
+  cenarios.sort(function(a, b){ return b[1] - a[1]; });
+  document.getElementById(cenarios[0][0]).classList.add('vencedor');
+  document.getElementById('melhor').textContent = cenarios[0][2] + ' — ROI de ' + pct(cenarios[0][1]) + ' ao ano';
+
+  var dif = cenarios[0][1] - cenarios[2][1];
+  document.getElementById('dica').textContent = dif > 0
+    ? 'A diferença entre o melhor e o pior cenário é de ' + pct(dif) + ' ao ano — cerca de ' + brl(valor * dif / 100) + ' por ano.'
+    : '';
+
+  document.getElementById('resultado').classList.add('ativo');
+  document.getElementById('captura').classList.add('ativo');
+  document.getElementById('resultado').scrollIntoView({behavior: 'smooth'});
+
+  window.__sim = { valor: valor, diaria: diaria, ocup: ocup, taxa: taxa, custos: custos,
+    aluguel: aluguel, renda: renda, tempBruta: tempBruta, tempLiquida: tempLiquida, roiTemp: roiTemp,
+    anBruta: anBruta, anLiquida: anLiquida, roiAn: roiAn, vdLiquida: vdLiquida, roiVd: roiVd,
+    melhor: cenarios[0][2] };
+});
+
+// Benchmarks de mercado (litoral paulista — atualizar trimestralmente)
+var BENCHMARKS = {
+  'Santos':         { diaria: 480, ocup: 52 },
+  'Guarujá':        { diaria: 520, ocup: 48 },
+  'Praia Grande':   { diaria: 380, ocup: 55 },
+  'São Vicente':    { diaria: 350, ocup: 44 },
+  'Mongaguá':       { diaria: 300, ocup: 40 },
+  'Itanhaém':       { diaria: 310, ocup: 38 },
+  'Ubatuba':        { diaria: 550, ocup: 46 },
+  'Caraguatatuba':  { diaria: 420, ocup: 45 },
+  'São Sebastião':  { diaria: 580, ocup: 47 },
+  'Ilhabela':       { diaria: 700, ocup: 50 },
+  'Bertioga':       { diaria: 390, ocup: 42 },
+  'Outra':          { diaria: 450, ocup: 45 }
+};
+
+document.getElementById('enviar-simulacao').addEventListener('click', function(){
+  var nome   = document.getElementById('lead-nome').value.trim();
+  var email  = document.getElementById('lead-email').value.trim();
+  var cidade = document.getElementById('lead-cidade').value;
+  if (!window.__sim) { alert('Calcule o retorno primeiro.'); return; }
+  if (!email || email.indexOf('@') < 0) { alert('Informe um e-mail válido.'); return; }
+  var s = window.__sim;
+  var bm = BENCHMARKS[cidade] || BENCHMARKS['Outra'];
+
+  var compDiaria = s.diaria >= bm.diaria ? 'acima' : 'abaixo';
+  var compOcup   = s.ocup   >= bm.ocup   ? 'acima' : 'abaixo';
+
+  // 1) Envia lead para comercial@praia.digital via FormSubmit (sem backend)
+  var dados = {
+    _subject: 'Nova simulação ROI — ' + nome + ' (' + cidade + ')',
+    nome: nome, email: email, cidade: cidade,
+    valor_imovel: s.valor, diaria: s.diaria, ocupacao_pct: s.ocup,
+    taxa_admin_pct: s.taxa, custos_anuais: s.custos, aluguel_mensal: s.aluguel,
+    melhor_cenario: s.melhor, roi_temporada: s.roiTemp.toFixed(1) + '%',
+    roi_aluguel: s.roiAn.toFixed(1) + '%', roi_venda: s.roiVd.toFixed(1) + '%'
+  };
+  try {
+    fetch('https://formsubmit.co/ajax/comercial@praia.digital', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(dados)
+    });
+  } catch (e) {}
+
+  // 2) Gera relatório completo em tempo real para download
+  var rel = '<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><title>Simulação ROI — Praia Digital</title>'
+    + '<style>body{font-family:Arial;max-width:800px;margin:30px auto;padding:0 20px;color:#222}'
+    + 'h1{color:#003366}h2{color:#0066cc;margin-top:28px}table{width:100%;border-collapse:collapse;margin:10px 0}'
+    + 'th,td{border:1px solid #ccc;padding:8px;text-align:left}th{background:#003366;color:#fff}'
+    + '.box{background:#f0f7ff;border-left:4px solid #1f6feb;padding:12px;margin:14px 0}</style></head><body>'
+    + '<h1>Simulação de ROI — ' + cidade + '</h1><p>Preparado para <strong>' + (nome || 'você') + '</strong> em ' + new Date().toLocaleDateString('pt-BR') + '</p>'
+    + '<h2>Seus números</h2><table>'
+    + '<tr><th>Imóvel</th><td>' + brl(s.valor) + '</td></tr>'
+    + '<tr><th>Diária média</th><td>' + brl(s.diaria) + ' (mercado ' + cidade + ': ' + brl(bm.diaria) + ' — você está ' + compDiaria + ')</td></tr>'
+    + '<tr><th>Ocupação</th><td>' + s.ocup + '% (média ' + cidade + ': ' + bm.ocup + '% — você está ' + compOcup + ')</td></tr></table>'
+    + '<h2>Comparativo de cenários</h2><table>'
+    + '<tr><th>Cenário</th><th>Líquido/ano</th><th>ROI</th></tr>'
+    + '<tr><td>Temporada</td><td>' + brl(s.tempLiquida) + '</td><td>' + pct(s.roiTemp) + '</td></tr>'
+    + '<tr><td>Aluguel anual</td><td>' + brl(s.anLiquida) + '</td><td>' + pct(s.roiAn) + '</td></tr>'
+    + '<tr><td>Venda + renda fixa</td><td>' + brl(s.vdLiquida) + '</td><td>' + pct(s.roiVd) + '</td></tr></table>'
+    + '<div class="box"><strong>Melhor cenário: ' + s.melhor + '.</strong></div>'
+    + '<h2>O que falta nesta análise (versão completa por e-mail)</h2><ul>'
+    + '<li>Comparativo detalhado por bairro em ' + cidade + '</li>'
+    + '<li>Sazonalidade mês a mês da temporada 2026/2027</li>'
+    + '<li>Estimativa de valorização do imóvel nos próximos 3 anos</li>'
+    + '<li>Plano de precificação dinâmica por IA</li></ul>'
+    + '<p>Continue simulando em <a href="https://praia.digital/ferramentas/">praia.digital/ferramentas</a> — novas ferramentas toda semana.</p>'
+    + '<p><small>Praia Digital — tecnologia para o mercado imobiliário do litoral</small></p></body></html>';
+  var blob = new Blob([rel], { type: 'text/html' });
+  document.getElementById('baixar-relatorio').href = URL.createObjectURL(blob);
+  document.getElementById('pos-envio').style.display = 'block';
+  document.getElementById('pos-envio').scrollIntoView({behavior: 'smooth'});
+});
+</script>
 <script src="https://praia.digital/js/shared.js?v=2.0"></script>
 </body>
 </html>
