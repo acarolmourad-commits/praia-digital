@@ -533,3 +533,46 @@
     init();
   }
 })();
+
+/* === Praia Digital AdSense global loader (2026-09-23) ===
+   Carrega adsbygoogle.js em todo o site (Auto Ads) e converte placeholders
+   .adsense-block [data-ad-id] em unidades reais quando entram na viewport. */
+(function(){
+  var CLIENT = 'ca-pub-9562601722232986';
+  var loaded = false;
+  function loadAdsense(){
+    if (loaded) return; loaded = true;
+    var s = document.createElement('script');
+    s.async = true; s.crossOrigin = 'anonymous';
+    s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + CLIENT;
+    document.head.appendChild(s);
+  }
+  function activate(el){
+    if (el.hasAttribute('data-ad-loaded')) return;
+    el.setAttribute('data-ad-loaded','true');
+    var ins = document.createElement('ins');
+    ins.className = 'adsbygoogle';
+    ins.style.display = 'block';
+    ins.style.minHeight = (el.style && el.style.minHeight) || '100px';
+    ins.setAttribute('data-ad-client', CLIENT);
+    ins.setAttribute('data-ad-format','auto');
+    ins.setAttribute('data-full-width-responsive','true');
+    var slot = el.getAttribute('data-ad-slot');
+    if (slot) ins.setAttribute('data-ad-slot', slot);
+    el.innerHTML = ''; el.appendChild(ins);
+    try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch(e){}
+  }
+  function init(){
+    loadAdsense();
+    var els = document.querySelectorAll('.adsense-block [data-ad-id]');
+    if (!els.length) return;
+    if ('IntersectionObserver' in window) {
+      var ob = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){ if (en.isIntersecting){ activate(en.target); ob.unobserve(en.target); } });
+      }, { rootMargin: '200px' });
+      els.forEach(function(el){ ob.observe(el); });
+    } else { els.forEach(activate); }
+  }
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); } else { init(); }
+})();
+/* === fim AdSense global loader === */
