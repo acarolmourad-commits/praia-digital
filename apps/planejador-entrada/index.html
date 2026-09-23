@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planejador de Entrada — Quanto guardar por mês para comprar | Praia Digital Apps</title>
+<meta name="description" content="Planeje a entrada do seu imóvel no litoral: veja quanto guardar por mês, quanto tempo leva e o efeito dos juros (CDI) na sua meta. Gratuito.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://praia.digital/apps/planejador-entrada/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4F6F8;color:#0F172A}
+header{background:linear-gradient(135deg,#0A3D2E,#0EA5E9);color:#fff;padding:26px 20px;text-align:center}
+.wrap{max-width:760px;margin:0 auto;padding:20px 16px}
+.card{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:20px;margin-bottom:14px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+label{display:block;font-size:13px;font-weight:600;margin:10px 0 4px}
+input,select{width:100%;padding:10px;border:1px solid #CBD5E1;border-radius:10px;font-size:15px}
+button{margin-top:14px;width:100%;padding:13px;background:#0A3D2E;color:#fff;border:0;border-radius:12px;font-size:16px;font-weight:700;cursor:pointer}
+button:hover{background:#0c5c43}
+.res{display:none;background:#ECFDF5;border:1px solid #10B981;border-radius:12px;padding:16px;margin-top:14px}
+.res p{margin:6px 0;font-size:15px}
+a{color:#0EA5E9}
+table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
+td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Planejador de Entrada | Praia Digital Apps","url":"https://praia.digital/apps/planejador-entrada/","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0"}}</script>
+<meta property="og:type" content="website"><meta property="og:title" content="Planejador de Entrada — Quanto guardar por mês para comprar | Praia Digital Apps"><meta property="og:description" content="Planeje a entrada do seu imóvel no litoral: quanto guardar por mês, prazo e efeito dos juros. Gratuito."><meta property="og:url" content="https://praia.digital/apps/planejador-entrada/">
+<meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+</head>
+<body>
+<header><h1>🎯 Planejador de Entrada</h1><p>Transforme o sonho do imóvel no litoral em uma meta mensal concreta</p></header>
+<div class="wrap">
+<div class="card">
+  <label>Valor do imóvel desejado (R$)</label><input id="valor" type="number" value="450000">
+  <label>Percentual de entrada (%)</label><input id="pct" type="number" value="20">
+  <label>Quanto você já tem guardado (R$)</label><input id="guardado" type="number" value="15000">
+  <label>Quanto consegue guardar por mês (R$)</label><input id="mensal" type="number" value="2500">
+  <label>Rendimento mensal da aplicação (% a.m.)</label><input id="rend" type="number" step="0.01" value="0.8">
+  <button onclick="planejar()">Planejar minha entrada</button>
+  <div class="res" id="res">
+    <table>
+      <tr><th></th><th>Valor</th></tr>
+      <tr><td>Meta da entrada</td><td id="meta"></td></tr>
+      <tr><td>Falta juntar</td><td id="falta"></td></tr>
+      <tr><td>Tempo estimado</td><td id="tempo"></td></tr>
+      <tr><td>Total guardado (sem juros)</td><td id="guard"></td></tr>
+      <tr><td>Juros acumulados</td><td id="juros"></td></tr>
+    </table>
+    <p id="dica" style="font-weight:700"></p>
+  </div>
+</div>
+<div class="card"><h2>📌 Como acelerar sua entrada</h2>
+<p style="font-size:14px;margin-top:6px">Quanto maior a entrada, menor o financiamento e os juros. Combine este planejador com o <a href="/apps/calculadora-financiamento/">simulador SAC vs. Price</a> para ver o impacto no valor da parcela, e com o <a href="/apps/custo-de-compra/">custo de compra</a> para lembrar do ITBI, escritura e registro (em geral 4–5% do valor do imóvel). Uma alternativa sem juros bancários é o <a href="/apps/calculadora-consorcio/">consórcio</a>, que também pode usar o valor guardado como lance.</p>
+<p style="font-size:14px;margin-top:8px">Dica: aplique o dinheiro da entrada em CDBs de liquidez diária ou Tesouro Selic — rendimento próximo de 0,8% a.m. e baixo risco.</p></div>
+</div>
+<script>
+const fmt=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+function planejar(){
+  const V=parseFloat(document.getElementById('valor').value)||0;
+  const P=(parseFloat(document.getElementById('pct').value)||0)/100;
+  const G=parseFloat(document.getElementById('guardado').value)||0;
+  const M=parseFloat(document.getElementById('mensal').value)||0;
+  const r=(parseFloat(document.getElementById('rend').value)||0)/100;
+  const meta=V*P;
+  if(meta<=0||M<=0){alert('Verifique os valores.');return;}
+  let saldo=G,m=0;
+  while(saldo<meta&&m<1200){saldo=saldo*(1+r)+M;m++;}
+  const anos=Math.floor(m/12),meses=m%12;
+  const guardadoTotal=G+m*M;
+  document.getElementById('meta').textContent=fmt(meta);
+  document.getElementById('falta').textContent=fmt(Math.max(0,meta-G));
+  document.getElementById('tempo').textContent=(anos?anos+' ano(s) e ':'')+meses+' mês(es)';
+  document.getElementById('guard').textContent=fmt(guardadoTotal);
+  document.getElementById('juros').textContent=fmt(Math.max(0,saldo-guardadoTotal));
+  document.getElementById('dica').textContent = m>=1200 ? '⚠️ Com esse ritmo, a meta fica muito longe. Considere aumentar o aporte ou reduzir o valor do imóvel.' : '✅ Meta alcançável! Os juros trabalham a seu favor.';
+  document.getElementById('res').style.display='block';
+}
+</script>
+
+<!-- Praia Digital Apps: rede de interlinks -->
+<section style="max-width:760px;margin:32px auto 0;padding:0 16px 32px">
+  <h2 style="font-size:1.05rem;margin-bottom:12px">🧰 Explore todos os apps gratuitos da Praia Digital</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px">
+    <a href="/apps/alugar-ou-comprar/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">⚖️</span><span><b>Alugar ou Comprar?</b><br><small style="color:#64748B">Ponto de equilíbrio aluguel vs. financiamento</small></span></a><a href="/apps/valor-imovel/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">💰</span><span><b>Quanto Vale Meu Imóvel?</b><br><small style="color:#64748B">Estimativa instantânea por cidade, m² e diferenciais</small></span></a><a href="/apps/checklist-vistoria/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">📋</span><span><b>Checklist de Vistoria</b><br><small style="color:#64748B">Vistorie imóveis com score de qualidade</small></span></a><a href="/apps/comparador-cidades/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">📊</span><span><b>Comparador de Cidades</b><br><small style="color:#64748B">Ranqueie o litoral pelo seu perfil</small></span></a><a href="/apps/simulador-roi-temporada/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🏖️</span><span><b>Simulador de ROI — Temporada</b><br><small style="color:#64748B">Receita, ROI líquido e payback</small></span></a><a href="/apps/calculadora-consorcio/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🏦</span><span><b>Calculadora de Consórcio</b><br><small style="color:#64748B">Parcela, lance e economia vs. financiamento</small></span></a><a href="/apps/calculadora-financiamento/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🏠</span><span><b>Simulador de Financiamento</b><br><small style="color:#64748B">SAC vs. Price: parcelas, juros e custo total</small></span></a><a href="/apps/custo-de-compra/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🧾</span><span><b>Custos de Compra</b><br><small style="color:#64748B">ITBI, escritura, registro e custo de fechamento</small></span></a><a href="/apps/calculadora-valorizacao/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">📈</span><span><b>Valorização Projetada</b><br><small style="color:#64748B">Projete o valor futuro do imóvel por cidade</small></span></a>
+  </div>
+  <p style="margin-top:14px;font-size:13px;color:#64748B;text-align:center">
+    <a href="/apps/" style="color:#0EA5E9">Ver índice completo de apps</a> ·
+    <a href="/" style="color:#0EA5E9">Praia Digital</a> ·
+    <a href="/encontrar-imovel.html" style="color:#0EA5E9">Encontrar imóvel</a>
+  </p>
+</section>
+
+</body>
+</html>
