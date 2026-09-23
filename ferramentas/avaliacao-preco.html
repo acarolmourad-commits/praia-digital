@@ -76,13 +76,14 @@ function brl(v){ return v.toLocaleString('pt-BR',{style:'currency',currency:'BRL
 function pct(v){ return v.toLocaleString('pt-BR',{minimumFractionDigits:1,maximumFractionDigits:1})+'%'; }
 function num(id){ return parseFloat(document.getElementById(id).value)||0; }
 function txt(id){ return document.getElementById(id).value.trim(); }
+// m2 alinhado ao VAL_DATA do shared.js (dados oficiais da avaliação da home)
 var BENCHMARKS = {
-  'Santos':{diaria:480,ocup:52,m2:9200},'Guarujá':{diaria:520,ocup:48,m2:8900},
-  'Praia Grande':{diaria:380,ocup:55,m2:6100},'São Vicente':{diaria:350,ocup:44,m2:5800},
-  'Mongaguá':{diaria:300,ocup:40,m2:4200},'Itanhaém':{diaria:310,ocup:38,m2:4300},
-  'Ubatuba':{diaria:550,ocup:46,m2:8100},'Caraguatatuba':{diaria:420,ocup:45,m2:6500},
-  'São Sebastião':{diaria:580,ocup:47,m2:8700},'Ilhabela':{diaria:700,ocup:50,m2:11000},
-  'Bertioga':{diaria:390,ocup:42,m2:6000},'Outra':{diaria:450,ocup:45,m2:7000}
+  'Santos':{diaria:480,ocup:52,m2:14500},'Guarujá':{diaria:520,ocup:48,m2:13200},
+  'Praia Grande':{diaria:380,ocup:55,m2:12000},'São Vicente':{diaria:350,ocup:44,m2:9800},
+  'Mongaguá':{diaria:300,ocup:40,m2:6800},'Itanhaém':{diaria:310,ocup:38,m2:7200},
+  'Ubatuba':{diaria:550,ocup:46,m2:11500},'Caraguatatuba':{diaria:420,ocup:45,m2:9600},
+  'São Sebastião':{diaria:580,ocup:47,m2:12800},'Ilhabela':{diaria:700,ocup:50,m2:16000},
+  'Bertioga':{diaria:390,ocup:42,m2:8900},'Outra':{diaria:450,ocup:45,m2:10000}
 };
 
 document.getElementById('calcular').addEventListener('click', function(){
