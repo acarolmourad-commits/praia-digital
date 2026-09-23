@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Custos de Compra — ITBI, Escritura e Registro | Praia Digital Apps</title>
+<meta name="description" content="Calcule todos os custos de fechamento na compra de um imóvel no litoral de SP: ITBI, escritura, registro e custas cartorárias. Gratuito.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://praia.digital/apps/custo-de-compra/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4F6F8;color:#0F172A}
+header{background:linear-gradient(135deg,#0A3D2E,#0EA5E9);color:#fff;padding:26px 20px;text-align:center}
+.wrap{max-width:760px;margin:0 auto;padding:20px 16px}
+.card{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:20px;margin-bottom:14px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+label{display:block;font-size:13px;font-weight:600;margin:10px 0 4px}
+input,select{width:100%;padding:10px;border:1px solid #CBD5E1;border-radius:10px;font-size:15px}
+button{margin-top:14px;width:100%;padding:13px;background:#0A3D2E;color:#fff;border:0;border-radius:12px;font-size:16px;font-weight:700;cursor:pointer}
+button:hover{background:#0c5c43}
+.res{display:none;background:#ECFDF5;border:1px solid #10B981;border-radius:12px;padding:16px;margin-top:14px}
+.res p{margin:6px 0;font-size:15px}
+a{color:#0EA5E9}
+table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
+td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Custos de Compra — ITBI, Escritura e Registro | Praia Digital Apps","url":"https://praia.digital/apps/custo-de-compra/","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0"}}</script>
+<meta property="og:type" content="website"><meta property="og:title" content="Calculadora de Custos de Compra — ITBI, Escritura e Registro | Praia Digital Apps">
+<meta property="og:description" content="Calcule todos os custos de fechamento na compra de um imóvel no litoral de SP: ITBI, escritura, registro e custas cartorárias. Gratuito."><meta property="og:url" content="https://praia.digital/apps/custo-de-compra/">
+<meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+</head>
+<body>
+
+<header><h1>🧾 Custos de Compra do Imóvel</h1><p>ITBI, escritura e registro — sem surpresas no fechamento</p></header>
+<div class="wrap">
+<div class="card">
+  <label>Valor do imóvel (R$)</label><input id="valor" type="number" value="595000">
+  <label>Cidade</label>
+  <select id="cidade">
+    <option value="0.02">Bertioga (ITBI 2%)</option>
+    <option value="0.03">São Sebastião (ITBI 3%)</option>
+    <option value="0.02">Caraguatatuba (ITBI 2%)</option>
+    <option value="0.03">Ubatuba (ITBI 3%)</option>
+    <option value="0.02">Santos (ITBI 2%)</option>
+    <option value="0.02" selected>Guarujá (ITBI 2%)</option>
+    <option value="0.03">Praia Grande (ITBI 3%)</option>
+    <option value="0.02">Mongaguá / Itanhaém / Peruíbe (ITBI 2%)</option>
+  </select>
+  <label><input type="checkbox" id="financ" style="width:auto;display:inline"> Vou financiar (registro do contrato em cartório)</label>
+  <button onclick="calc()">Calcular custos de fechamento</button>
+  <div class="res" id="res">
+    <p>🏛️ <b>ITBI:</b> <span id="itbi"></span></p>
+    <p>✍️ <b>Escritura pública (tabela SP):</b> <span id="escr"></span></p>
+    <p>📜 <b>Registro do imóvel:</b> <span id="reg"></span></p>
+    <p id="regFinRow" style="display:none">🏦 <b>Registro do financiamento (estimativa):</b> <span id="regFin"></span></p>
+    <hr>
+    <p style="font-size:17px"><b>💰 Total estimado:</b> <span id="total"></span></p>
+    <p style="font-size:13px;color:#64748B">≈ <span id="pct"></span> do valor do imóvel. Valores estimados — confirme as custas no cartório da cidade.</p>
+  </div>
+</div>
+<div class="card"><h2>📌 Bom saber</h2>
+<p style="font-size:14px;margin-top:6px">O ITBI é cobrado sobre o maior valor entre o de compra e o venal de referência. Algumas cidades oferecem desconto para primeiro imóvel ou pagamento à vista. Já sabe quanto vale o imóvel? Use o <a href="/apps/valor-imovel/">estimador de valor</a>.</p></div>
+</div>
+<script>
+const fmt=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+function tabela(v){ // aproximação das tabelas de emolumentos SP
+  if(v<=0) return 0;
+  return Math.min(Math.max(v*0.008, 500), 9000);
+}
+function calc(){
+  const V=parseFloat(document.getElementById('valor').value)||0;
+  const aliq=parseFloat(document.getElementById('cidade').value);
+  if(V<=0){alert('Informe o valor do imóvel.');return;}
+  const itbi=V*aliq, escr=tabela(V), reg=tabela(V);
+  const fin=document.getElementById('financ').checked;
+  const regFin= fin ? tabela(V*0.8) : 0;
+  const tot=itbi+escr+reg+regFin;
+  document.getElementById('itbi').textContent=fmt(itbi);
+  document.getElementById('escr').textContent=fmt(escr);
+  document.getElementById('reg').textContent=fmt(reg);
+  if(fin){document.getElementById('regFinRow').style.display='block';document.getElementById('regFin').textContent=fmt(regFin);}else{document.getElementById('regFinRow').style.display='none';}
+  document.getElementById('total').textContent=fmt(tot);
+  document.getElementById('pct').textContent=(tot/V*100).toFixed(1)+'%';
+  document.getElementById('res').style.display='block';
+}
+</script>
+
+<!-- Praia Digital Apps: rede de interlinks -->
+<section style="max-width:760px;margin:32px auto 0;padding:0 16px 32px">
+  <h2 style="font-size:1.05rem;margin-bottom:12px">🧰 Explore todos os apps gratuitos da Praia Digital</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px">
+    <a href="/apps/alugar-ou-comprar/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">⚖️</span><span><b>Alugar ou Comprar?</b><br><small style="color:#64748B">Ponto de equilíbrio aluguel vs. financiamento</small></span></a><a href="/apps/valor-imovel/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">💰</span><span><b>Quanto Vale Meu Imóvel?</b><br><small style="color:#64748B">Estimativa instantânea por cidade, m² e diferenciais</small></span></a><a href="/apps/checklist-vistoria/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">📋</span><span><b>Checklist de Vistoria</b><br><small style="color:#64748B">Vistorie imóveis com score de qualidade</small></span></a><a href="/apps/comparador-cidades/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">📊</span><span><b>Comparador de Cidades</b><br><small style="color:#64748B">Ranqueie o litoral pelo seu perfil</small></span></a><a href="/apps/simulador-roi-temporada/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🧮</span><span><b>Simulador de ROI — Temporada</b><br><small style="color:#64748B">Receita, ROI líquido e payback</small></span></a><a href="/apps/calculadora-consorcio/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🏦</span><span><b>Calculadora de Consórcio</b><br><small style="color:#64748B">Parcela, lance e economia vs. financiamento</small></span></a><a href="/apps/calculadora-financiamento/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🏠</span><span><b>Simulador de Financiamento</b><br><small style="color:#64748B">SAC vs. Price: parcelas, amortização e custo total</small></span></a>
+  </div>
+  <p style="margin-top:14px;font-size:13px;color:#64748B;text-align:center">
+    <a href="/apps/" style="color:#0EA5E9">Ver índice completo de apps</a> ·
+    <a href="/" style="color:#0EA5E9">Praia Digital</a> ·
+    <a href="/encontrar-imovel.html" style="color:#0EA5E9">Encontrar imóvel</a>
+  </p>
+</section>
+
+</body>
+</html>
