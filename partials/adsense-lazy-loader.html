@@ -1,24 +1,54 @@
 <script>
+/* Praia Digital — AdSense lazy loader v2 (real)
+   Carrega o adsbygoogle.js (Auto Ads) e converte placeholders .adsense-block [data-ad-id]
+   em unidades de anúncio reais. Requer Auto Ads ativado no painel do AdSense;
+   para unidades manuais, defina data-ad-slot com o ID do bloco criado no AdSense. */
 (function(){
+  var CLIENT = 'ca-pub-9562601722232986';
+  var loaded = false;
+
+  function loadAdsense(){
+    if (loaded) return;
+    loaded = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.crossOrigin = 'anonymous';
+    s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + CLIENT;
+    document.head.appendChild(s);
+  }
+
+  function activate(el){
+    if (el.hasAttribute('data-ad-loaded')) return;
+    el.setAttribute('data-ad-loaded', 'true');
+    var ins = document.createElement('ins');
+    ins.className = 'adsbygoogle';
+    ins.style.display = 'block';
+    ins.style.minHeight = el.style.minHeight || '100px';
+    ins.setAttribute('data-ad-client', CLIENT);
+    ins.setAttribute('data-ad-format', 'auto');
+    ins.setAttribute('data-full-width-responsive', 'true');
+    var slot = el.getAttribute('data-ad-slot');
+    if (slot) ins.setAttribute('data-ad-slot', slot);
+    el.innerHTML = '';
+    el.appendChild(ins);
+    try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
+  }
+
+  loadAdsense();
+
   if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(function(entries){
+    var observer = new IntersectionObserver(function(entries){
       entries.forEach(function(entry){
         if (entry.isIntersecting) {
-          const el = entry.target;
-          const adId = el.getAttribute('data-ad-id');
-          if (adId && !el.hasAttribute('data-ad-loaded')) {
-            el.setAttribute('data-ad-loaded', 'true');
-            // Placeholder para substituição futura pelo snippet AdSense real
-            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
-          }
+          var el = entry.target;
+          if (el.getAttribute('data-ad-id')) activate(el);
           observer.unobserve(el);
         }
       });
     }, { rootMargin: '200px' });
-    
-    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
-      observer.observe(el);
-    });
+    document.querySelectorAll('.adsense-block [data-ad-id]').forEach(function(el){ observer.observe(el); });
+  } else {
+    document.querySelectorAll('.adsense-block [data-ad-id]').forEach(activate);
   }
 })();
 </script>
