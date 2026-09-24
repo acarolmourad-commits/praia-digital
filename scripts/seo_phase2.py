@@ -11,6 +11,10 @@ SHARED = 'js/shared.js'
 EXTRA_URLS = [
     'https://praia.digital/servicos/edicao-anuncios-airbnb-booking.html',
     'https://praia.digital/guias/aluguel-temporada-airbnb-litoral-sp.html',
+    'https://praia.digital/guias/baixada-santista-imoveis.html',
+    'https://praia.digital/guias/litoral-norte-imoveis.html',
+    'https://praia.digital/guias/investir-imoveis-litoral-paulista.html',
+    'https://praia.digital/guias/financiamento-consorcio-imovel-litoral.html',
 ]
 
 JUNK = re.compile(r'(_archive|\-print\-|proposta|propostas|dashboard|form-tracker|top5-leads|cadastrar|campaigns|onboarding|subscription|templates|kit-vendas|acompanhamento-prospeccao|central-comando|mapa-inteligente|obrigado|newsletter|/leads?/)', re.I)
