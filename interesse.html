@@ -60,6 +60,8 @@ a{color:#0EA5E9}
 <p class="hint"><a href="/">← Voltar para praia.digital</a> · <a href="/apps/">Apps gratuitos</a></p>
 </div>
 <script>
+// URL do Google Apps Script web app (docs/sales/apps-script-leads/Code.gs). Preencher após implantar.
+const LEADS_ENDPOINT = '';
 function enviar(e){
   e.preventDefault();
   const nome=document.getElementById('nome').value.trim();
@@ -67,6 +69,13 @@ function enviar(e){
   const cidade=document.getElementById('cidade').value;
   const produto=document.getElementById('produto').value;
   const pagto=document.getElementById('pagto').value;
+  // Grava na planilha de leads (não bloqueia o WhatsApp se falhar)
+  if(LEADS_ENDPOINT){
+    try{
+      const body=new URLSearchParams({nome:nome,telefone:tel,cidade:cidade,produto:produto,pagamento:pagto,origem:'interesse.html'});
+      fetch(LEADS_ENDPOINT,{method:'POST',mode:'no-cors',body:body});
+    }catch(err){}
+  }
   let msg='Olá! Meu nome é '+nome+'\nCidade: '+cidade+'\nProduto de interesse: '+produto+'\nForma de pagamento preferida: '+pagto;
   if(tel) msg+='\nTelefone: '+tel;
   msg+='\n\nAguardo o contato. Obrigado(a)!';
