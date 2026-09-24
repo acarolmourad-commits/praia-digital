@@ -651,3 +651,18 @@
     });
   }
 })();
+
+/* ===== Praia Digital — SEO Module v3.1: canonical de cidades duplicadas (2026-09-24) ===== */
+(function () {
+  'use strict';
+  var m = location.pathname.match(/^\/(santos|guaruja|praia-grande|bertioga|sao-vicente|itanhaem|mongagua|peruibe)\.html$/);
+  if (!m) return;
+  var canon = 'https://praia.digital/cidades/' + m[1] + '.html';
+  var links = document.head.querySelectorAll('link[rel="canonical"]');
+  if (links.length) { links[0].href = canon; }
+  else {
+    var l = document.createElement('link');
+    l.rel = 'canonical'; l.href = canon;
+    document.head.appendChild(l);
+  }
+})();
