@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temporada ou Aluguel Anual — o que rende mais? | Praia Digital Apps</title>
+<meta name="description" content="Compare a receita líquida de aluguel de temporada vs. contrato anual no litoral de SP, com taxas, ocupação e yield anual. Gratuito.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://praia.digital/apps/temporada-ou-anual/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4F6F8;color:#0F172A}
+header{background:linear-gradient(135deg,#0A3D2E,#0EA5E9);color:#fff;padding:26px 20px;text-align:center}
+.wrap{max-width:760px;margin:0 auto;padding:20px 16px}
+.card{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:20px;margin-bottom:14px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+label{display:block;font-size:13px;font-weight:600;margin:10px 0 4px}
+input,select{width:100%;padding:10px;border:1px solid #CBD5E1;border-radius:10px;font-size:15px}
+button{margin-top:14px;width:100%;padding:13px;background:#0A3D2E;color:#fff;border:0;border-radius:12px;font-size:16px;font-weight:700;cursor:pointer}
+button:hover{background:#0c5c43}
+.res{display:none;background:#ECFDF5;border:1px solid #10B981;border-radius:12px;padding:16px;margin-top:14px}
+.res p{margin:6px 0;font-size:15px}
+a{color:#0EA5E9}
+table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
+td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Temporada ou Aluguel Anual — o que rende mais? | Praia Digital Apps","url":"https://praia.digital/apps/temporada-ou-anual/","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0"}}</script>
+<meta property="og:type" content="website"><meta property="og:title" content="Temporada ou Aluguel Anual — o que rende mais? | Praia Digital Apps"><meta property="og:description" content="Compare a receita líquida de aluguel de temporada vs. contrato anual no litoral de SP, com taxas, ocupação e yield anual. Gratuito."><meta property="og:url" content="https://praia.digital/apps/temporada-ou-anual/">
+<meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+</head>
+<body>
+<header><h1>🌴 Temporada ou Aluguel Anual?</h1><p>Compare os dois modelos de renda do seu imóvel no litoral</p></header>
+<div class="wrap">
+<div class="card">
+  <label>Valor do imóvel (R$)</label><input id="valor" type="number" value="450000">
+  <label>Diária média de temporada (R$)</label><input id="diaria" type="number" value="450">
+  <label>Noites ocupadas por mês (média anual)</label><input id="noites" type="number" value="12">
+  <label>Taxas de temporada: plataforma + limpeza + gestão (%)</label><input id="taxa" type="number" value="25">
+  <label>Custos fixos mensais da temporada (R$): condomínio, IPTU, luz, internet</label><input id="custos" type="number" value="1200">
+  <label>Aluguel anual mensal possível (R$)</label><input id="anual" type="number" value="2800">
+  <button onclick="calc()">Comparar modelos</button>
+  <div class="res" id="res">
+    <table>
+      <tr><th></th><th>Temporada</th><th>Aluguel anual</th></tr>
+      <tr><td>Receita bruta/mês</td><td id="bt"></td><td id="ba"></td></tr>
+      <tr><td>Receita líquida/mês</td><td id="lt"></td><td id="la"></td></tr>
+      <tr><td>Líquido no ano</td><td id="at"></td><td id="aa"></td></tr>
+      <tr><td>Yield anual s/ valor do imóvel</td><td id="yt"></td><td id="ya"></td></tr>
+    </table>
+    <p id="dica" style="font-weight:700"></p>
+  </div>
+</div>
+<div class="card"><h2>📌 Qual modelo combina com seu imóvel?</h2>
+<p style="font-size:14px;margin-top:6px">Temporada no litoral de SP pode render 2–3× o aluguel anual, mas exige ocupação, gestão e tem custos maiores. A média anual de ocupação costuma ficar entre 8 e 14 noites/mês, concentrada no verão e feriados. Aprofunde a análise no <a href="/apps/simulador-roi-temporada/">Simulador de ROI de Temporada</a>, estime o valor do imóvel em <a href="/apps/valor-imovel/">Quanto Vale Meu Imóvel?</a> e projete a valorização na <a href="/apps/calculadora-valorizacao/">Calculadora de Valorização</a>.</p>
+<p style="font-size:14px;margin-top:8px">Ainda escolhendo a cidade? Use o <a href="/apps/comparador-cidades/">Comparador de Cidades</a> para ranquear o litoral pelo seu perfil de investimento.</p></div>
+</div>
+<script>
+const fmt=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+function calc(){
+  const V=parseFloat(document.getElementById('valor').value)||1;
+  const D=parseFloat(document.getElementById('diaria').value)||0;
+  const N=parseFloat(document.getElementById('noites').value)||0;
+  const T=(parseFloat(document.getElementById('taxa').value)||0)/100;
+  const C=parseFloat(document.getElementById('custos').value)||0;
+  const A=parseFloat(document.getElementById('anual').value)||0;
+  const bt=D*N, lt=bt*(1-T)-C, la=A;
+  document.getElementById('bt').textContent=fmt(bt);
+  document.getElementById('ba').textContent=fmt(A);
+  document.getElementById('lt').textContent=fmt(lt);
+  document.getElementById('la').textContent=fmt(la);
+  document.getElementById('at').textContent=fmt(lt*12);
+  document.getElementById('aa').textContent=fmt(la*12);
+  document.getElementById('yt').textContent=(lt*12/V*100).toFixed(1)+'%';
+  document.getElementById('ya').textContent=(la*12/V*100).toFixed(1)+'%';
+  document.getElementById('dica').textContent = lt>la ? '🏆 Temporada rende mais no seu cenário — detalhe o payback no Simulador de ROI.' : '🏆 Aluguel anual rende mais no seu cenário — a temporada precisa de mais ocupação ou diária maior.';
+  document.getElementById('res').style.display='block';
+}
+</script>
+
+<!-- Praia Digital Apps: rede de interlinks -->
+<section style="max-width:760px;margin:32px auto 0;padding:0 16px 32px">
+  <h2 style="font-size:1.05rem;margin-bottom:12px">🧰 Explore todos os apps gratuitos da Praia Digital</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px"><a href="/apps/alugar-ou-comprar/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">⚖️</span><span><b>Alugar ou Comprar?</b><br><small style="color:#64748B">Ponto de equilíbrio aluguel vs. financiamento</small></span></a><a href="/apps/valor-imovel/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">💰</span><span><b>Quanto Vale Meu Imóvel?</b><br><small style="color:#64748B">Estimativa instantânea por cidade, m² e diferenciais</small></span></a><a href="/apps/checklist-vistoria/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">📋</span><span><b>Checklist de Vistoria</b><br><small style="color:#64748B">Vistorie imóveis com score de qualidade</small></span></a><a href="/apps/comparador-cidades/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">📊</span><span><b>Comparador de Cidades</b><br><small style="color:#64748B">Ranqueie o litoral pelo seu perfil</small></span></a><a href="/apps/simulador-roi-temporada/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🏖️</span><span><b>Simulador de ROI — Temporada</b><br><small style="color:#64748B">Receita, ROI líquido e payback</small></span></a><a href="/apps/calculadora-consorcio/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🏦</span><span><b>Calculadora de Consórcio</b><br><small style="color:#64748B">Parcela, lance e economia vs. financiamento</small></span></a><a href="/apps/calculadora-financiamento/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🏠</span><span><b>Simulador de Financiamento</b><br><small style="color:#64748B">SAC vs. Price: parcelas, juros e custo total</small></span></a><a href="/apps/custo-de-compra/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🧾</span><span><b>Custos de Compra</b><br><small style="color:#64748B">ITBI, escritura, registro e custo de fechamento</small></span></a><a href="/apps/planejador-entrada/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🎯</span><span><b>Planejador de Entrada</b><br><small style="color:#64748B">Quanto guardar por mês para a entrada</small></span></a><a href="/apps/calculadora-valorizacao/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">📈</span><span><b>Valorização Projetada</b><br><small style="color:#64748B">Projete o valor futuro do imóvel por cidade</small></span></a><a href="/apps/renda-para-financiar/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">💼</span><span><b>Renda para Financiar</b><br><small style="color:#64748B">Quanto ganhar para o financiamento caber no bolso</small></span></a></div>
+  <p style="margin-top:14px;font-size:13px;color:#64748B;text-align:center">
+    <a href="/apps/" style="color:#0EA5E9">Ver índice completo de apps</a> ·
+    <a href="/" style="color:#0EA5E9">Praia Digital</a> ·
+    <a href="/encontrar-imovel.html" style="color:#0EA5E9">Encontrar imóvel</a>
+  </p>
+</section>
+</body>
+</html>
