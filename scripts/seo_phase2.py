@@ -15,6 +15,9 @@ EXTRA_URLS = [
     'https://praia.digital/guias/litoral-norte-imoveis.html',
     'https://praia.digital/guias/investir-imoveis-litoral-paulista.html',
     'https://praia.digital/guias/financiamento-consorcio-imovel-litoral.html',
+    'https://praia.digital/guias/marketing-imobiliario-corretores-litoral.html',
+    'https://praia.digital/guias/comprar-imovel-litoral.html',
+    'https://praia.digital/guias/impostos-custos-imovel-litoral.html',
 ]
 
 JUNK = re.compile(r'(_archive|\-print\-|proposta|propostas|dashboard|form-tracker|top5-leads|cadastrar|campaigns|onboarding|subscription|templates|kit-vendas|acompanhamento-prospeccao|central-comando|mapa-inteligente|obrigado|newsletter|/leads?/)', re.I)
