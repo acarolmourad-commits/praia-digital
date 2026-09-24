@@ -1,0 +1,2 @@
+﻿Pagamento_ID;Lead;Telefone;Produto;Plano;Valor;Forma_Pagamento;Vencimento;Status_Pagamento;Comprovante;Data_Pagamento;Entrega_Liberada;Data_Entrega;Obs
+# Regra: Entrega_Liberada so pode ser "sim" apos Status_Pagamento=pago E Comprovante preenchido. Produto entregue somente apos confirmacao de pagamento.
