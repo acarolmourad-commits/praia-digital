@@ -536,12 +536,15 @@
 
 /* === Praia Digital AdSense global loader (2026-09-23) ===
    Carrega adsbygoogle.js em todo o site (Auto Ads) e converte placeholders
-   .adsense-block [data-ad-id] em unidades reais quando entram na viewport. */
+   .adsense-block [data-ad-id] em unidades reais quando entram na viewport.
+   v3.0: páginas de conversão/operacionais NÃO exibem ads. */
 (function(){
   var CLIENT = 'ca-pub-9562601722232986';
   var loaded = false;
+  var NO_ADS = /(\/servicos|\/landings|\/lp\/|landing-|checkout|obrigado|planos-assinatura|precos|\/imoveis\/|litoral-prime-imoveis|proposta|captura-leads|captar-leads|demo-|\-print\-|_archive|dashboard)/i;
   function loadAdsense(){
     if (loaded) return; loaded = true;
+    if (NO_ADS.test(location.pathname)) return; // páginas de conversão não exibem ads
     var s = document.createElement('script');
     s.async = true; s.crossOrigin = 'anonymous';
     s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + CLIENT;
@@ -612,3 +615,39 @@
   if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', bind); } else { bind(); }
 })();
 /* === fim fix leadForm === */
+
+/* ===== Praia Digital — SEO Module v3.0 (auditoria 2026-09-24) ===== */
+(function () {
+  'use strict';
+  var path = location.pathname;
+  var JUNK = /(_archive|\-print\-|proposta|dashboard|form-tracker|top5-leads|cadastrar|campaigns|onboarding|subscription|templates|kit-vendas|acompanhamento-prospeccao|central-comando|mapa-inteligente|obrigado|newsletter|\/leads?\/)/i;
+  if (JUNK.test(path)) {
+    var m = document.createElement('meta');
+    m.name = 'robots'; m.content = 'noindex,follow';
+    document.head.appendChild(m);
+    return;
+  }
+  if (/\/vendas\.html$/.test(path)) {
+    var canon = 'https://praia.digital' + path.replace(/\/vendas\.html$/, '/index.html');
+    var links = document.head.querySelectorAll('link[rel="canonical"]');
+    if (links.length) { links[0].href = canon; }
+    else {
+      var l = document.createElement('link');
+      l.rel = 'canonical'; l.href = canon;
+      document.head.appendChild(l);
+    }
+    return;
+  }
+  var AIRBNB = /(airbnb|booking|temporada|hosped|anuncio)/i;
+  if (AIRBNB.test(path) && path.indexOf('/servicos/edicao-anuncios-airbnb-booking.html') === -1) {
+    document.addEventListener('DOMContentLoaded', function () {
+      var b = document.createElement('div');
+      b.style.cssText = 'background:linear-gradient(90deg,#0077b6,#00b4d8);color:#fff;padding:14px 18px;border-radius:12px;margin:18px auto;max-width:960px;font-family:Segoe UI,system-ui,sans-serif;display:flex;flex-wrap:wrap;align-items:center;gap:10px';
+      b.innerHTML = '<strong style="font-size:15px">🏖️ Anuncie melhor no Airbnb e Booking</strong>' +
+        '<span style="font-size:13px;opacity:.95;flex:1;min-width:220px">Edição e otimização profissional de anúncios de temporada no litoral de SP — título, descrição, precificação e SEO do anúncio.</span>' +
+        '<a href="https://praia.digital/servicos/edicao-anuncios-airbnb-booking.html" style="background:#fff;color:#0077b6;font-weight:700;padding:8px 16px;border-radius:999px;text-decoration:none;font-size:13px;white-space:nowrap">Quero otimizar meu anúncio</a>';
+      var main = document.querySelector('main') || document.body;
+      main.insertBefore(b, main.firstChild);
+    });
+  }
+})();

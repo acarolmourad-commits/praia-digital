@@ -5,9 +5,15 @@ Disallow: /scripts/automation/
 Disallow: /node_modules/
 Disallow: /.git/
 Disallow: /backups/
+Disallow: /backup/
 Disallow: /dashboards/
+Disallow: /dashboard/
 Disallow: /leads/
+Disallow: /lead/
 Disallow: /outreach/
+Disallow: /propostas/
+Disallow: /education/cursos/_archive
+Disallow: /education/marketing/campaigns/
 Disallow: /ferramentas/airbnb-admin.html
 
 Sitemap: https://praia.digital/sitemap.xml
