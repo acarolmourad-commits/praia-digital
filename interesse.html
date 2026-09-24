@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fale com a Praia Digital — Formulário de Interesse</title>
+<meta name="description" content="Preencha seus dados e o produto de interesse para falar com um especialista da Praia Digital no WhatsApp.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://praia.digital/interesse.html">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4F6F8;color:#0F172A}
+header{background:linear-gradient(135deg,#0A3D2E,#0EA5E9);color:#fff;padding:26px 20px;text-align:center}
+.wrap{max-width:560px;margin:0 auto;padding:24px 16px 48px}
+.card{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:24px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+label{display:block;font-size:13px;font-weight:600;margin:12px 0 4px}
+input,select{width:100%;padding:11px;border:1px solid #CBD5E1;border-radius:10px;font-size:15px}
+button{margin-top:18px;width:100%;padding:14px;background:#25D366;color:#fff;border:0;border-radius:12px;font-size:16px;font-weight:800;cursor:pointer}
+button:hover{background:#1eb85a}
+.hint{font-size:12px;color:#64748B;margin-top:10px;text-align:center}
+a{color:#0EA5E9}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Formulário de Interesse — Praia Digital","url":"https://praia.digital/interesse.html"}</script>
+</head>
+<body>
+<header><h1>💬 Fale com um especialista</h1><p>Preencha rapidinho — você será direcionado ao nosso WhatsApp com tudo pronto</p></header>
+<div class="wrap">
+<div class="card">
+  <form id="f" onsubmit="return enviar(event)">
+    <label>Seu nome *</label><input id="nome" required placeholder="Ex.: Maria Silva">
+    <label>Seu telefone (opcional)</label><input id="tel" type="tel" placeholder="(13) 99999-0000">
+    <label>Cidade *</label>
+    <select id="cidade" required>
+      <option value="">Selecione…</option>
+      <option>Santos</option><option>Guarujá</option><option>Praia Grande</option><option>Bertioga</option>
+      <option>São Vicente</option><option>Mongaguá</option><option>Itanhaém</option><option>Peruíbe</option>
+      <option>São Sebastião</option><option>Caraguatatuba</option><option>Ubatuba</option><option>Ilhabela</option>
+      <option>Outra</option>
+    </select>
+    <label>Produto de interesse *</label>
+    <select id="produto" required>
+      <option value="">Selecione…</option>
+      <option>Avaliação do meu imóvel (gratuita)</option>
+      <option>Anunciar meu imóvel</option>
+      <option>Gestão de aluguel de temporada</option>
+      <option>Plano profissional (corretor/imobiliária)</option>
+      <option>Automação para imobiliárias</option>
+      <option>Comprar imóvel</option>
+      <option>Investir no litoral</option>
+      <option>Outro assunto</option>
+    </select>
+    <label>Forma de pagamento preferida *</label>
+    <select id="pagto" required>
+      <option value="">Selecione…</option>
+      <option>Pix</option><option>Cartão de crédito</option><option>Boleto</option><option>Transferência</option><option>A combinar</option>
+    </select>
+    <button type="submit">➤ Continuar no WhatsApp</button>
+    <p class="hint">Seus dados vão preenchidos na mensagem — assim já sabemos como te ajudar. O produto é entregue somente após confirmação de pagamento. Ao continuar você concorda com a <a href="/politica-de-privacidade.html">Política de Privacidade</a>.</p>
+  </form>
+</div>
+<p class="hint"><a href="/">← Voltar para praia.digital</a> · <a href="/apps/">Apps gratuitos</a></p>
+</div>
+<script>
+function enviar(e){
+  e.preventDefault();
+  const nome=document.getElementById('nome').value.trim();
+  const tel=document.getElementById('tel').value.trim();
+  const cidade=document.getElementById('cidade').value;
+  const produto=document.getElementById('produto').value;
+  const pagto=document.getElementById('pagto').value;
+  let msg='Olá! Meu nome é '+nome+'\nCidade: '+cidade+'\nProduto de interesse: '+produto+'\nForma de pagamento preferida: '+pagto;
+  if(tel) msg+='\nTelefone: '+tel;
+  msg+='\n\nAguardo o contato. Obrigado(a)!';
+  window.location.href='https://wa.me/5511954346288?text='+encodeURIComponent(msg);
+  return false;
+}
+</script>
+</body>
+</html>
