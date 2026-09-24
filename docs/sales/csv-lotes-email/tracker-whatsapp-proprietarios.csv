@@ -1,5 +1,5 @@
 Lote;Nome;Telefone;Cidade;Data_Msg1;Status;Resposta;Valor_Estimado;Obs;Acao_Conversao;Produto_Consultado;Produto_Comprado;Proposta_ID;Data_Fechamento;Forma_Pagamento;Status_Pagamento;Comprovante;Data_Pagamento;Data_Entrega
-149;Fernanda Lima;(13) 99999-7301;Santos;2026-07-15;respondeu;;;;Retorno positivo via WhatsApp — venda NÃO registrada: produto não identificado. Aguardando definição de produto, pagamento e comprovante.;aguardando_produto;;;;;;;;;
+149;Fernanda Lima;(13) 99999-7301;Santos;2026-07-15;respondeu;;;;Retorno positivo via WhatsApp. Marcação anterior de "fechou" estava incorreta — NÃO houve venda (23/09/2026). Produto de interesse não identificado ainda.;aguardando_produto;;;;;;;;;
 149;Paulo Vieira;(11) 99999-7302;Guarujá;2026-07-15;enviado_msg1;;;;;;;;;;;;;
 149;Ricardo Mendes;(13) 99999-7303;Praia Grande;2026-07-15;enviado_msg1;;;;;;;;;;;;;
 149;Bruno Costa;(13) 99999-7304;Itanhaém;2026-07-15;enviado_msg1;;;;;;;;;;;;;
