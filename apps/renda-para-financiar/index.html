@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Renda para Financiar — Quanto preciso ganhar? | Praia Digital Apps</title>
+<meta name="description" content="Descubra a renda mínima necessária para financiar seu imóvel no litoral, comparando SAC e Price pela regra dos 30%. Gratuito.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://praia.digital/apps/renda-para-financiar/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4F6F8;color:#0F172A}
+header{background:linear-gradient(135deg,#0A3D2E,#0EA5E9);color:#fff;padding:26px 20px;text-align:center}
+.wrap{max-width:760px;margin:0 auto;padding:20px 16px}
+.card{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:20px;margin-bottom:14px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+label{display:block;font-size:13px;font-weight:600;margin:10px 0 4px}
+input,select{width:100%;padding:10px;border:1px solid #CBD5E1;border-radius:10px;font-size:15px}
+button{margin-top:14px;width:100%;padding:13px;background:#0A3D2E;color:#fff;border:0;border-radius:12px;font-size:16px;font-weight:700;cursor:pointer}
+button:hover{background:#0c5c43}
+.res{display:none;background:#ECFDF5;border:1px solid #10B981;border-radius:12px;padding:16px;margin-top:14px}
+.res p{margin:6px 0;font-size:15px}
+a{color:#0EA5E9}
+table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
+td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Renda para Financiar — Quanto preciso ganhar? | Praia Digital Apps","url":"https://praia.digital/apps/renda-para-financiar/","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0"}}</script>
+<meta property="og:type" content="website"><meta property="og:title" content="Renda para Financiar — Quanto preciso ganhar? | Praia Digital Apps"><meta property="og:description" content="Descubra a renda mínima necessária para financiar seu imóvel no litoral, comparando SAC e Price pela regra dos 30%. Gratuito."><meta property="og:url" content="https://praia.digital/apps/renda-para-financiar/">
+<meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+</head>
+<body>
+<header><h1>💼 Renda para Financiar</h1><p>Descubra se o imóvel dos seus sonhos cabe na sua renda — SAC vs. Price</p></header>
+<div class="wrap">
+<div class="card">
+  <label>Valor do imóvel (R$)</label><input id="valor" type="number" value="450000">
+  <label>Entrada (%)</label><input id="entrada" type="number" value="20">
+  <label>Taxa de juros (% a.a.)</label><input id="taxa" type="number" step="0.01" value="10.5">
+  <label>Prazo (meses)</label><input id="prazo" type="number" value="360">
+  <label>Máximo da renda comprometida (%)</label><input id="pct" type="number" value="30">
+  <button onclick="calc()">Calcular renda necessária</button>
+  <div class="res" id="res">
+    <table>
+      <tr><th></th><th>SAC</th><th>Price</th></tr>
+      <tr><td>Parcela inicial</td><td id="sac1"></td><td id="price"></td></tr>
+      <tr><td>Renda mínima necessária</td><td id="rsac"></td><td id="rprice"></td></tr>
+    </table>
+    <p id="dica" style="font-weight:700"></p>
+  </div>
+</div>
+<div class="card"><h2>📌 A regra dos 30%</h2>
+<p style="font-size:14px;margin-top:6px">Bancos recomendam que a parcela do financiamento não passe de 30% da renda familiar bruta. Este app mostra a renda mínima para o imóvel que você quer — e a diferença entre <a href="/apps/calculadora-financiamento/">SAC e Price</a>. Não esqueça da entrada: use o <a href="/apps/planejador-entrada/">Planejador de Entrada</a> para montar sua meta, e o <a href="/apps/custo-de-compra/">Custo de Compra</a> para lembrar do ITBI, escritura e registro.</p>
+<p style="font-size:14px;margin-top:8px">Se a renda necessária assustar, compare com o <a href="/apps/calculadora-consorcio/">consórcio</a> (sem juros, com lance) ou veja se <a href="/apps/alugar-ou-comprar/">alugar ainda compensa</a> no seu caso.</p></div>
+</div>
+<script>
+const fmt=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+function calc(){
+  const V=parseFloat(document.getElementById('valor').value)||0;
+  const E=(parseFloat(document.getElementById('entrada').value)||0)/100;
+  const i=(parseFloat(document.getElementById('taxa').value)||0)/100/12;
+  const n=parseInt(document.getElementById('prazo').value)||0;
+  const pct=(parseFloat(document.getElementById('pct').value)||30)/100;
+  const F=V*(1-E);
+  if(F<=0||n<=0||i<=0){alert('Verifique os valores.');return;}
+  const sac1=F/n+F*i;
+  const price=F*i/(1-Math.pow(1+i,-n));
+  document.getElementById('sac1').textContent=fmt(sac1);
+  document.getElementById('price').textContent=fmt(price);
+  document.getElementById('rsac').textContent=fmt(sac1/pct);
+  document.getElementById('rprice').textContent=fmt(price/pct);
+  document.getElementById('dica').textContent = '💡 A Price exige renda menor no início; a SAC economiza juros no total. Compare no Simulador de Financiamento.';
+  document.getElementById('res').style.display='block';
+}
+</script>
+
+<!-- Praia Digital Apps: rede de interlinks -->
+<section style="max-width:760px;margin:32px auto 0;padding:0 16px 32px">
+  <h2 style="font-size:1.05rem;margin-bottom:12px">🧰 Explore todos os apps gratuitos da Praia Digital</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px"><a href="/apps/alugar-ou-comprar/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">⚖️</span><span><b>Alugar ou Comprar?</b><br><small style="color:#64748B">Ponto de equilíbrio aluguel vs. financiamento</small></span></a><a href="/apps/valor-imovel/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">💰</span><span><b>Quanto Vale Meu Imóvel?</b><br><small style="color:#64748B">Estimativa instantânea por cidade, m² e diferenciais</small></span></a><a href="/apps/checklist-vistoria/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">📋</span><span><b>Checklist de Vistoria</b><br><small style="color:#64748B">Vistorie imóveis com score de qualidade</small></span></a><a href="/apps/comparador-cidades/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">📊</span><span><b>Comparador de Cidades</b><br><small style="color:#64748B">Ranqueie o litoral pelo seu perfil</small></span></a><a href="/apps/simulador-roi-temporada/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🏖️</span><span><b>Simulador de ROI — Temporada</b><br><small style="color:#64748B">Receita, ROI líquido e payback</small></span></a><a href="/apps/calculadora-consorcio/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🏦</span><span><b>Calculadora de Consórcio</b><br><small style="color:#64748B">Parcela, lance e economia vs. financiamento</small></span></a><a href="/apps/calculadora-financiamento/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🏠</span><span><b>Simulador de Financiamento</b><br><small style="color:#64748B">SAC vs. Price: parcelas, juros e custo total</small></span></a><a href="/apps/custo-de-compra/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🧾</span><span><b>Custos de Compra</b><br><small style="color:#64748B">ITBI, escritura, registro e custo de fechamento</small></span></a><a href="/apps/planejador-entrada/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🎯</span><span><b>Planejador de Entrada</b><br><small style="color:#64748B">Quanto guardar por mês para a entrada</small></span></a><a href="/apps/calculadora-valorizacao/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">📈</span><span><b>Valorização Projetada</b><br><small style="color:#64748B">Projete o valor futuro do imóvel por cidade</small></span></a><a href="/apps/temporada-ou-anual/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🌴</span><span><b>Temporada ou Aluguel Anual?</b><br><small style="color:#64748B">Compare a receita líquida dos dois modelos</small></span></a></div>
+  <p style="margin-top:14px;font-size:13px;color:#64748B;text-align:center">
+    <a href="/apps/" style="color:#0EA5E9">Ver índice completo de apps</a> ·
+    <a href="/" style="color:#0EA5E9">Praia Digital</a> ·
+    <a href="/encontrar-imovel.html" style="color:#0EA5E9">Encontrar imóvel</a>
+  </p>
+</section>
+</body>
+</html>
