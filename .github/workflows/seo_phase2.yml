@@ -1,10 +1,11 @@
-name: SEO Fase 2 — limpeza de sitemap e canonicals
+name: SEO — limpeza de sitemap, canonicals e consolidacao
 on:
   workflow_dispatch:
   push:
     branches: [main]
     paths:
       - 'scripts/seo_phase2.py'
+      - 'scripts/seo_phase3.py'
 permissions:
   contents: write
 jobs:
@@ -12,16 +13,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Executar limpeza
+      - name: Fase 2 — limpeza sitemap + canonicals
         run: python3 scripts/seo_phase2.py
+      - name: Fase 4 — consolidacao posts finos -> pilares
+        run: python3 scripts/seo_phase3.py
       - name: Commit se houver mudancas
         run: |
           git config user.name 'seo-bot'
           git config user.email 'seo-bot@praia.digital'
-          git add sitemap.xml js/shared.js
+          git add sitemap.xml js/shared.js blog/
           if git diff --cached --quiet; then
             echo 'Nada a commitar'
           else
-            git commit -m 'SEO Fase 2: sitemap limpo + canonical cidades [skip ci]'
+            git commit -m 'SEO: sitemap limpo + canonicals + consolidacao de posts [skip ci]'
             git push
           fi
