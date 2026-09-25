@@ -1,27 +1,77 @@
 /**
- * Praia Digital — Captura de Leads do Formulário de Interesse
- * Planilha: https://docs.google.com/spreadsheets/d/1sv7zfFhbjoUgVhgZPBXVCK-vUwoP8tGNdwkjL0eo02w
+ * Praia Digital — Captura de Leads (Google Apps Script Web App)
  *
- * COMO ATIVAR (2 minutos, uma vez só):
- * 1. Abra a planilha acima → menu Extensões → Apps Script
- * 2. Cole este código e salve
- * 3. Implantar → Nova implantação → tipo: App da Web
- *    - Executar como: Eu (comercial@praia.digital)
- *    - Quem tem acesso: Qualquer pessoa
- * 4. Copie a URL do web app (termina em /exec)
- * 5. No arquivo interesse.html, substitua LEADS_ENDPOINT pela URL copiada e faça commit
+ * COMO IMPLANTAR (manual, ~5 min):
+ * 1. Crie uma planilha Google chamada "Praia Digital — Leads" e copie o ID da URL.
+ * 2. Em script.google.com, crie um projeto e cole este arquivo (Code.gs).
+ * 3. Projeto > Configurações > Propriedades do script: adicione
+ *      SHEET_ID = <id da planilha>
+ *      NOTIFY_EMAIL = comercial@praia.digital   (opcional)
+ * 4. Implantar > Nova implantação > Tipo: App da Web
+ *      Executar como: Eu  |  Acesso: Qualquer pessoa
+ * 5. Copie a URL /exec e informe para preencher:
+ *      - LEADS_ENDPOINT em interesse.html
+ *      - endpoint dos formulários das páginas de bairros (hoje apontam para
+ *        https://academy.praia.digital/leads — domínio fora do ar)
+ *
+ * Aceita DOIS formatos:
+ *  a) form-encoded (URLSearchParams, mode no-cors) — usado por interesse.html
+ *     campos: nome, telefone, cidade, produto, pagamento, origem
+ *  b) JSON (Content-Type text/plain ou application/json) — páginas de bairros
+ *     campos: name, email, phone, city, source, magnet
  */
-const SHEET_ID = '1sv7zfFhbjoUgVhgZPBXVCK-vUwoP8tGNdwkjL0eo02w';
 
 function doPost(e) {
-  const p = e.parameter || {};
-  const ss = SpreadsheetApp.openById(SHEET_ID).getSheets()[0];
-  ss.appendRow([
-    new Date().toLocaleString('pt-BR', {timeZone: 'America/Sao_Paulo'}),
-    p.nome || '', p.telefone || '', p.cidade || '',
-    p.produto || '', p.pagamento || '', p.origem || 'interesse.html',
-    'pendente', '', 'não'
-  ]);
-  return ContentService.createTextOutput(JSON.stringify({ok: true}))
+  var d = {};
+  try {
+    if (e && e.postData && e.postData.contents) {
+      var body = e.postData.contents;
+      if (body && body.trim().charAt(0) === '{') {
+        d = JSON.parse(body);
+      }
+    }
+  } catch (err) {}
+  var p = (e && e.parameter) || {};
+
+  var lead = {
+    data:      new Date(),
+    nome:      p.nome      || d.name    || '',
+    email:     p.email     || d.email   || '',
+    telefone:  p.telefone  || d.phone   || '',
+    cidade:    p.cidade    || d.city    || '',
+    produto:   p.produto   || '',
+    pagamento: p.pagamento || '',
+    origem:    p.origem    || d.source  || '',
+    magnet:    p.magnet    || d.magnet  || ''
+  };
+
+  var sheetId = PropertiesService.getScriptProperties().getProperty('SHEET_ID');
+  if (sheetId) {
+    var ss = SpreadsheetApp.openById(sheetId);
+    var sh = ss.getSheetByName('Leads') || ss.insertSheet('Leads');
+    if (sh.getLastRow() === 0) {
+      sh.appendRow(['Data','Nome','E-mail','Telefone','Cidade','Produto','Pagamento','Origem','Lead magnet']);
+    }
+    sh.appendRow([lead.data, lead.nome, lead.email, lead.telefone, lead.cidade,
+                  lead.produto, lead.pagamento, lead.origem, lead.magnet]);
+  }
+
+  var email = PropertiesService.getScriptProperties().getProperty('NOTIFY_EMAIL');
+  if (email && lead.nome) {
+    MailApp.sendEmail(email,
+      'Novo lead praia.digital — ' + lead.nome,
+      'Nome: ' + lead.nome + '\nE-mail: ' + lead.email + '\nTelefone: ' + lead.telefone +
+      '\nCidade: ' + lead.cidade + '\nProduto: ' + lead.produto + '\nPagamento: ' + lead.pagamento +
+      '\nOrigem: ' + lead.origem + '\nMagnet: ' + lead.magnet);
+  }
+
+  return ContentService
+    .createTextOutput(JSON.stringify({ status: 'ok' }))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
+function doGet() {
+  return ContentService
+    .createTextOutput(JSON.stringify({ status: 'ok', service: 'praia-digital-leads' }))
     .setMimeType(ContentService.MimeType.JSON);
 }
