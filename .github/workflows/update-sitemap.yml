@@ -1,0 +1,31 @@
+name: Atualizar sitemap (18 novas paginas de bairros)
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/update-sitemap.yml'
+permissions:
+  contents: write
+jobs:
+  patch-sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inserir 18 URLs no sitemap.xml
+        run: |
+          python3 - <<'PYEOF'
+          p='sitemap.xml'
+          s=open(p,encoding='utf-8').read()
+          pages=['bertioga/indaia','bertioga/maitinga','caraguatatuba/indaia','caraguatatuba/martim-de-sa','guaruja/guaiuba','guaruja/tombo','ilhabela/armacao','ilhabela/itaguacu','itanhaem/gaivota','itanhaem/suarao','mongagua/agenor-de-campos','mongagua/itaguai','peruibe/guarau','peruibe/jardim-ribamar','praia-grande/caicara','praia-grande/real','santos/encruzilhada','santos/sao-manuel']
+          add=''.join('<url><loc>https://praia.digital/bairros/%s.html</loc><lastmod>2026-09-25</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>\n' % pg for pg in pages if ('/bairros/%s.html' % pg) not in s)
+          if add:
+              s=s.replace('</urlset>', add+'</urlset>')
+              open(p,'w',encoding='utf-8').write(s)
+          print('URLs inseridas:', add.count('<url>'))
+          PYEOF
+      - name: Commit e push (se houver mudanca)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sitemap.xml
+          git diff --cached --quiet && echo "Nada a commitar" || (git commit -m "sitemap: incluir 18 novas paginas de bairros" && git push)
