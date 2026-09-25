@@ -60,8 +60,8 @@ a{color:#0EA5E9}
 <p class="hint"><a href="/">← Voltar para praia.digital</a> · <a href="/apps/">Apps gratuitos</a></p>
 </div>
 <script>
-// URL do Google Apps Script web app (docs/sales/apps-script-leads/Code.gs). Preencher após implantar.
-const LEADS_ENDPOINT = '';
+// Endpoint FormSubmit -> comercial@praia.digital (fallback enquanto Apps Script não é implantado)
+const LEADS_ENDPOINT = 'https://formsubmit.co/comercial@praia.digital';
 function enviar(e){
   e.preventDefault();
   const nome=document.getElementById('nome').value.trim();
