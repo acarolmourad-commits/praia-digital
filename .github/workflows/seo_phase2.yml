@@ -1,4 +1,4 @@
-name: SEO — limpeza de sitemap, canonicals e consolidacao
+name: SEO — limpeza de sitemap, canonicals, consolidacao e fixes
 on:
   workflow_dispatch:
   push:
@@ -6,6 +6,7 @@ on:
     paths:
       - 'scripts/seo_phase2.py'
       - 'scripts/seo_phase3.py'
+      - 'scripts/seo_phase5.py'
 permissions:
   contents: write
 jobs:
@@ -17,14 +18,16 @@ jobs:
         run: python3 scripts/seo_phase2.py
       - name: Fase 4 — consolidacao posts finos -> pilares
         run: python3 scripts/seo_phase3.py
+      - name: Fix — bairros e blog index
+        run: python3 scripts/seo_phase5.py
       - name: Commit se houver mudancas
         run: |
           git config user.name 'seo-bot'
           git config user.email 'seo-bot@praia.digital'
-          git add sitemap.xml js/shared.js blog/
+          git add sitemap.xml js/shared.js blog/ bairros/index.html
           if git diff --cached --quiet; then
             echo 'Nada a commitar'
           else
-            git commit -m 'SEO: sitemap limpo + canonicals + consolidacao de posts [skip ci]'
+            git commit -m 'SEO: sitemap + canonicals + consolidacao + fix bairros/blog index [skip ci]'
             git push
           fi
