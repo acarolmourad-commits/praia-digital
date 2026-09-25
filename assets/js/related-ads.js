@@ -65,3 +65,30 @@ PD_RELATED.inject = function ({ category, fallbackSlugs = [] } = {}) {
 
   return wrapper;
 };
+
+/* ===== Praia Digital — Footer fallback p/ monetização (2026-09-25) =====
+   Garante que toda página que carrega este script tenha um rodapé com
+   links institucionais (requisito de revisão do AdSense). */
+(function () {
+  'use strict';
+  function ensureFooter() {
+    if (document.querySelector('footer') || document.querySelector('[data-pd-footer-fallback]')) return;
+    if (!document.body) return;
+    var f = document.createElement('footer');
+    f.setAttribute('data-pd-footer-fallback', '1');
+    f.style.cssText = 'margin-top:40px;padding:24px 16px;text-align:center;font-size:14px;color:#64748B;border-top:1px solid #E5E7EB;';
+    f.innerHTML = '<p>Praia Digital — Inteligência imobiliária para o litoral paulista.</p>' +
+      '<nav aria-label="Rodapé" style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:8px;">' +
+      '<a href="https://praia.digital/">Início</a>' +
+      '<a href="https://praia.digital/sobre.html">Sobre</a>' +
+      '<a href="https://praia.digital/contato.html">Contato</a>' +
+      '<a href="https://praia.digital/politica-de-privacidade.html">Política de Privacidade</a>' +
+      '<a href="https://praia.digital/termos-de-uso.html">Termos de Uso</a>' +
+      '<a href="https://praia.digital/metodologia.html">Metodologia</a>' +
+      '</nav>';
+    document.body.appendChild(f);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () { setTimeout(ensureFooter, 1500); });
+  } else { setTimeout(ensureFooter, 1500); }
+})();
