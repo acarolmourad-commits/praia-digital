@@ -42,19 +42,25 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://praia.digital/css/style.css?v=3">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<!-- Google tag (gtag.js) — ativado quando window.PD_GTAG_ID estiver definido -->
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', '', { anonymize_ip: true });
+(function(){
+  var gid = window.PD_GTAG_ID || "";
+  if (!gid) return;
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = "https://www.googletagmanager.com/gtag/js?id=" + gid;
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  gtag('js', new Date());
+  gtag('config', gid, { anonymize_ip: true });
+})();
 </script>
   <!-- Google AdSense -->
   <meta name="google-adsense-account" content="ca-pub-9562601722232986">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9562601722232986" crossorigin="anonymous"></script>
-  <ins class="adsbygoogle" style="display:block; text-align:center; min-height:120px; margin:1rem 0;" data-ad-client="ca-pub-9562601722232986" data-ad-slot="PLACEHOLDER_SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
   <link rel="stylesheet" href="https://praia.digital/css/style.css?v=3">
 <link rel="manifest" href="/manifest.json">
@@ -67,7 +73,7 @@ gtag('config', '', { anonymize_ip: true });
 
   <!-- Meta Pixel (env fallback) -->
 <script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init", "");fbq("track","PageView");
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init", window.PD_META_PIXEL_ID || "");fbq("track","PageView");
 </script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=" + (window.PD_META_PIXEL_ID || "") + "&ev=PageView&noscript=1" /></noscript>
 </head>
@@ -100,6 +106,42 @@ gtag('config', '', { anonymize_ip: true });
     <input id="pdBlogSearch" type="search" placeholder="Buscar artigo... (ex.: airbnb, santos, financiamento)" style="width:100%;padding:.8rem 1rem;border:2px solid #e0e0e0;border-radius:12px;font-size:1rem;margin-bottom:1rem">
     <p id="pdBlogCount" style="font-size:.85rem;color:#6b7280">Carregando artigos...</p>
     <ul id="pdBlogList" style="list-style:none;padding:0;margin:0;display:grid;gap:.4rem"></ul>
+    <script>
+    (function(){
+      var list = document.getElementById('pdBlogList');
+      var count = document.getElementById('pdBlogCount');
+      var search = document.getElementById('pdBlogSearch');
+      if (!list) return;
+      var seen = {};
+      var items = [];
+      document.querySelectorAll('main a.btn[href]').forEach(function(a){
+        var href = a.getAttribute('href');
+        var label = a.textContent.trim();
+        if (!href || !label || seen[href]) return;
+        seen[href] = 1;
+        items.push({href: href, label: label});
+      });
+      function render(filter){
+        var f = (filter || '').toLowerCase();
+        list.innerHTML = '';
+        var shown = 0;
+        items.forEach(function(it){
+          if (f && it.label.toLowerCase().indexOf(f) === -1 && it.href.toLowerCase().indexOf(f) === -1) return;
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.href = it.href;
+          a.textContent = it.label;
+          a.style.cssText = 'color:#0077B6;text-decoration:none;font-weight:500';
+          li.appendChild(a);
+          list.appendChild(li);
+          shown++;
+        });
+        if (count) count.textContent = shown + (shown === 1 ? ' artigo' : ' artigos') + (f ? ' para "' + filter + '"' : '');
+      }
+      render('');
+      if (search) search.addEventListener('input', function(){ render(search.value); });
+    })();
+    </script>
 
 <div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
   <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
