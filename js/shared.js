@@ -194,7 +194,7 @@
   var REAL_IDS = (typeof window !== 'undefined' && window.PD_REAL_IDS) || [24, 25];
   function onlyRealListings() {
     try {
-      if (typeof listings === 'undefined!�|| !Array.isArray(listings)) return false;
+      if (typeof listings === 'undefined' || !Array.isArray(listings)) return false;
       var hadSynthetic = false;
       for (var i = listings.length - 1; i >= 0; i--) {
         if (REAL_IDS.indexOf(listings[i].id) === -1) { listings.splice(i, 1); hadSynthetic = true; }
@@ -274,19 +274,92 @@
 })();
 
 // ====================
-// Seção explicativa — busca e cadastro de imóveis (homepage)
+// Breadcrumb global com logo Praia Digital (todas as paginas)
 // ====================
 (function () {
   'use strict';
 
-  function injectGuide() {
-    var busca = document.getElementById('buscar') || document.getElementById('nl-search');
-    if (!busca || document.getElementById('pdHowItWorks')) return;
-    // Preenche o título vazio da seção de busca
-    var h2 = busca.querySelector('h2');
-    if (h2 && !h2.textContent.trim()) h2.textContent = '🔍 Busque seu imóvel no litoral';
-    var sec = document.createElement('section');
-    sec.id = 'pdHowItWorks';
-    sec.style.cssText = 'max-width:1000px;margin:0 auto;padding:2.5rem 1rem 0;';
-    sec.innerHTML =
-      '<h2 style="text
+  var LABELS = {
+    'blog': 'Blog', 'bairros': 'Bairros', 'guias': 'Guias', 'apps': 'Apps',
+    'ferramentas': 'Ferramentas', 'cidades': 'Cidades', 'education': 'Academy',
+    'formacoes': 'Forma\u00e7\u00f5es', 'servicos': 'Servi\u00e7\u00f5es', 'imoveis': 'Im\u00f3veis',
+    'corretores': 'Corretores', 'afiliados': 'Afiliados', 'produtos': 'Produtos',
+    'cases': 'Cases', 'leads': 'Leads', 'lp': 'Landing', 'landings': 'Landing',
+    'solucoes': 'Solu\u00e7\u00f5es', 'proprietarios': 'Propriet\u00e1rios', 'investidores': 'Investidores',
+    'profissionais': 'Profissionais', 'newsletter': 'Newsletter',
+    'noticias': 'Not\u00edcias', 'eventos': 'Eventos', 'checklists': 'Checklists',
+    'calculadoras': 'Calculadoras', 'lead-magnets': 'Materiais', 'hub': 'Hub',
+    'dashboard': 'Dashboard', 'dashboards': 'Dashboard', 'exclusivos': 'Exclusivos',
+    'primeiro-imovel-litoral-sp-2026': 'Primeiro Im\u00f3vel 2026'
+  };
+
+  function pretty(seg) {
+    if (LABELS[seg]) return LABELS[seg];
+    seg = seg.replace(/\.html?$/i, '').replace(/[-_]+/g, ' ').trim();
+    if (!seg || seg === 'index') return '';
+    return seg.replace(/(^|\s)(\S)/g, function (m, s, c) { return s + c.toUpperCase(); });
+  }
+
+  function insertBreadcrumb() {
+    try {
+      if (document.querySelector('nav[aria-label="Breadcrumb"]')) return;
+      var path = window.location.pathname || '/';
+      if (path === '/' || path === '/index.html') return;
+      var segs = path.split('/').filter(Boolean);
+      if (!segs.length) return;
+      if (segs[segs.length - 1] === 'index.html') segs.pop();
+
+      var nav = document.createElement('nav');
+      nav.setAttribute('aria-label', 'Breadcrumb');
+      nav.style.cssText = 'display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin:0 0 1.2rem;font-size:.9rem;color:#6b7280;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif';
+
+      var home = document.createElement('a');
+      home.href = '/index.html';
+      home.style.cssText = 'display:inline-flex;align-items:center;gap:.45rem;color:inherit;text-decoration:none';
+      home.innerHTML = '<img src="/img/logo-praia-digital.jpg" alt="Logo Praia Digital" width="28" height="28" style="border-radius:6px;object-fit:cover" loading="lazy"><span>In\u00edcio</span>';
+      nav.appendChild(home);
+
+      var acc = '';
+      for (var i = 0; i < segs.length; i++) {
+        var seg = segs[i];
+        var label = pretty(seg);
+        if (!label) continue;
+        acc += '/' + seg;
+        var sep = document.createElement('span');
+        sep.setAttribute('aria-hidden', 'true');
+        sep.textContent = ' \u203a ';
+        nav.appendChild(sep);
+        if (i < segs.length - 1) {
+          var a = document.createElement('a');
+          a.href = acc + '/';
+          a.textContent = label;
+          a.style.cssText = 'color:inherit;text-decoration:none';
+          nav.appendChild(a);
+        } else {
+          var cur = document.createElement('span');
+          cur.setAttribute('aria-current', 'page');
+          var h1 = document.querySelector('main h1, .wrap h1, h1');
+          cur.textContent = (h1 && h1.textContent.trim().length < 70) ? h1.textContent.trim() : label;
+          cur.style.cssText = 'color:#0a2540;font-weight:600';
+          nav.appendChild(cur);
+        }
+      }
+      if (nav.children.length <= 1) return;
+
+      var anchor = document.querySelector('main') || document.querySelector('.wrap') || document.body;
+      if (anchor === document.body) {
+        document.body.insertBefore(nav, document.body.firstChild);
+      } else {
+        anchor.insertBefore(nav, anchor.firstChild);
+      }
+      window.__pdShared = window.__pdShared || [];
+      window.__pdShared.push(['breadcrumb-ok', path]);
+    } catch (e) { /* noop */ }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', insertBreadcrumb);
+  } else {
+    insertBreadcrumb();
+  }
+})();
