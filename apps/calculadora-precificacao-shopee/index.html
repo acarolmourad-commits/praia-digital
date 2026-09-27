@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de Precificação Shopee & TikTok Shop — Margem Real | Praia Digital</title>
+<meta name="description" content="Calcule o lucro real do seu produto na Shopee e TikTok Shop com as taxas atualizadas de 2026. Descubra o preço ideal para a margem que você quer.">
+<link rel="canonical" href="https://praia.digital/apps/calculadora-precificacao-shopee/">
+<meta property="og:title" content="Calculadora de Precificação Shopee & TikTok Shop">
+<meta property="og:description" content="Lucro real por venda com as taxas atuais das plataformas. Grátis, sem cadastro.">
+<meta property="og:url" content="https://praia.digital/apps/calculadora-precificacao-shopee/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Precificação Shopee & TikTok Shop","url":"https://praia.digital/apps/calculadora-precificacao-shopee/","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"}}
+</script>
+<style>
+:root{--ink:#0a2540;--ink2:#42546a;--sea:#0e7c7b;--sea-d:#0a5f5e;--sand:#f7f4ee;--line:#e3e9ef;--r:14px;--red:#c0392b;--green:#1e8e5a}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--sand);line-height:1.6}
+a{color:var(--sea)}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+header{padding:18px 0;background:#fff;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:14px}
+.logo{font-weight:800;font-size:1.1rem;color:var(--ink)}
+.logo span{color:var(--sea)}
+main{padding:44px 0 60px}
+.eyebrow{font-size:.75rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--sea)}
+h1{font-size:clamp(1.4rem,3vw,2rem);letter-spacing:-.02em;margin:6px 0 8px}
+.sub{color:var(--ink2);max-width:600px;margin-bottom:26px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{font-size:.82rem;font-weight:600;color:var(--ink2);display:block;margin-bottom:5px}
+input,select{width:100%;padding:11px 12px;border:1.5px solid #d5dde5;border-radius:10px;font-size:1rem;background:#fff}
+input:focus,select:focus{outline:none;border-color:var(--sea)}
+.btn{display:inline-block;background:var(--sea);color:#fff;border:0;padding:13px 26px;border-radius:10px;font-weight:700;font-size:1rem;cursor:pointer;margin-top:16px}
+.btn:hover{background:var(--sea-d)}
+.result{display:none}
+.result.show{display:block}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px}
+.kpi{background:var(--sand);border-radius:12px;padding:16px;text-align:center}
+.kpi b{display:block;font-size:1.45rem}
+.kpi small{color:var(--ink2);font-size:.75rem}
+.good{color:var(--green)}
+.bad{color:var(--red)}
+.warn{color:#b7791f}
+.note{font-size:.82rem;color:var(--ink2);margin-top:12px}
+.alert{border-radius:10px;padding:12px 14px;font-size:.9rem;margin-top:12px;display:none}
+.alert.show{display:block}
+.alert.ok{background:#e8f7ef;color:var(--green)}
+.alert.bad{background:#fdecea;color:var(--red)}
+.alert.warn{background:#fdf3e3;color:#b7791f}
+table{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:8px}
+td,th{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left}
+th{font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink2)}
+footer{padding:28px 0;font-size:.82rem;color:var(--ink2);text-align:center}
+@media(max-width:640px){.grid,.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="/">Praia<span>Digital</span></a><a href="/apps/" style="font-size:.85rem">← Todos os apps</a></div></header>
+<main><div class="wrap">
+<p class="eyebrow">App gratuito</p>
+<h1>Calculadora de Precificação — Shopee & TikTok Shop</h1>
+<p class="sub">Informe o custo e o preço de venda para ver o lucro real por pedido, já descontadas as taxas vigentes da plataforma. Ou descubra o preço ideal para a margem que você quer.</p>
+
+<div class="panel">
+  <div class="grid">
+    <div><label for="plat">Plataforma</label>
+      <select id="plat"><option value="shopee">Shopee</option><option value="tiktok">TikTok Shop</option></select></div>
+    <div><label for="custo">Custo do produto (R$)</label><input id="custo" type="number" min="0" step="0.01" placeholder="41.00"></div>
+    <div><label for="preco">Preço de venda (R$)</label><input id="preco" type="number" min="0" step="0.01" placeholder="69.90"></div>
+    <div id="afWrap" style="display:none"><label for="afiliado">Comissão de afiliado TikTok (%)</label><input id="afiliado" type="number" min="0" max="50" step="0.1" value="10"></div>
+    <div><label for="margemAlvo">Margem-alvo (%) — opcional, p/ preço sugerido</label><input id="margemAlvo" type="number" min="1" max="80" step="1" value="15"></div>
+    <div><label for="frete">Custo extra por pedido (embalagem, frete não repassado) R$</label><input id="frete" type="number" min="0" step="0.01" value="0"></div>
+  </div>
+  <button class="btn" onclick="calc()">Calcular</button>
+</div>
+
+<div class="panel result" id="res">
+  <div class="kpis">
+    <div class="kpi"><b id="kLucro">—</b><small>Lucro por pedido</small></div>
+    <div class="kpi"><b id="kMargem">—</b><small>Margem líquida</small></div>
+    <div class="kpi"><b id="kTaxa">—</b><small>Taxa da plataforma</small></div>
+  </div>
+  <div class="alert" id="alerta"></div>
+  <p class="note" id="sugestao"></p>
+  <table id="detalhe">
+    <thead><tr><th>Item</th><th>Valor</th></tr></thead>
+    <tbody id="detalheBody"></tbody>
+  </table>
+</div>
+
+<div class="panel">
+  <h2 style="font-size:1.05rem;margin-bottom:8px">Tabela de taxas usada (2026)</h2>
+  <table>
+    <thead><tr><th>Plataforma</th><th>Faixa de preço</th><th>Taxa</th></tr></thead>
+    <tbody>
+      <tr><td>Shopee</td><td>até R$ 79,99</td><td>20% + R$ 4,50</td></tr>
+      <tr><td>Shopee</td><td>R$ 80,00 – R$ 99,99</td><td>14% + R$ 16,00</td></tr>
+      <tr><td>Shopee</td><td>R$ 100,00 – R$ 199,99</td><td>14% + R$ 20,00</td></tr>
+      <tr><td>Shopee</td><td>R$ 200,00 ou mais</td><td>14% + R$ 26,00</td></tr>
+      <tr><td>TikTok Shop</td><td>qualquer valor</td><td>comissão da plataforma + comissão de afiliado (9,5%–12%, configurável acima)</td></tr>
+    </tbody>
+  </table>
+  <p class="note">Margem de referência saudável em marketplace: <strong>10% a 20%</strong>. Abaixo de 10% qualquer imprevisto (extravio, reembolso, spike de ads) vira prejuízo.</p>
+</div>
+
+<div class="panel" style="text-align:center">
+  <p style="font-weight:700">Prefere que especialistas cuidem de tudo isso?</p>
+  <p class="note" style="margin:6px 0 14px">Gestão completa de lojas na Shopee e TikTok Shop: cadastro, precificação, anúncios e relatórios.</p>
+  <a class="btn" style="text-decoration:none" href="/gestao-marketplaces.html">Conhecer a gestão de marketplaces</a>
+</div>
+</div></main>
+<footer><div class="wrap">© 2026 Praia Digital · <a href="/termos-de-uso.html">Termos</a> · <a href="/politica-de-privacidade.html">Privacidade</a> · <a href="/contato.html">Contato</a></div></footer>
+<script>
+const plat=document.getElementById('plat'),afWrap=document.getElementById('afWrap');
+plat.addEventListener('change',()=>{afWrap.style.display=plat.value==='tiktok'?'block':'none';});
+function taxaShopee(p){if(p<80)return p*0.20+4.50;if(p<100)return p*0.14+16;if(p<200)return p*0.14+20;return p*0.14+26;}
+function taxaTikTok(p,af){return p*0.06+2+p*(af/100);} // comissão base estimada 6% + R$2 fixo + afiliado
+function taxa(p,pl,af){return pl==='shopee'?taxaShopee(p):taxaTikTok(p,af);}
+function lucro(p,c,pl,af,ex){const t=taxa(p,pl,af);return{lucro:p-c-t-ex,taxa:t};}
+function fmt(v){return 'R$ '+v.toFixed(2).replace('.',',');}
+function precoParaMargem(c,pl,af,ex,alvo){let lo=c+0.01,hi=c*10+200;for(let i=0;i<60;i++){const mid=(lo+hi)/2;const m=lucro(mid,c,pl,af,ex).lucro/mid*100;if(m<alvo)lo=mid;else hi=mid;}return hi;}
+function calc(){
+  const c=parseFloat(document.getElementById('custo').value),p=parseFloat(document.getElementById('preco').value);
+  const pl=plat.value,af=parseFloat(document.getElementById('afiliado').value)||0,ex=parseFloat(document.getElementById('frete').value)||0;
+  const alvo=parseFloat(document.getElementById('margemAlvo').value)||15;
+  const res=document.getElementById('res'),al=document.getElementById('alerta');
+  if(!c||!p){alert('Informe custo e preço de venda.');return;}
+  const r=lucro(p,c,pl,af,ex),m=r.lucro/p*100;
+  document.getElementById('kLucro').textContent=fmt(r.lucro);
+  document.getElementById('kLucro').className=r.lucro>=0?'good':'bad';
+  document.getElementById('kMargem').textContent=m.toFixed(1).replace('.',',')+'%';
+  document.getElementById('kMargem').className=m>=10?'good':(m>=0?'warn':'bad');
+  document.getElementById('kTaxa').textContent=fmt(r.taxa);
+  al.className='alert show '+(m>=10?'ok':(m>=0?'warn':'bad'));
+  al.textContent=m>=20?'Excelente: margem acima de 20% — avalie se o preço não está alto demais para converter.':(m>=10?'Dentro da faixa saudável (10–20%). Bom produto para escalar.':(m>=0?'Atenção: margem abaixo de 10%. Qualquer imprevisto vira prejuízo. Considere subir o preço ou reduzir custo.':'Prejuízo: este preço não cobre custo + taxas. Não anuncie nesse valor.'));
+  const ps=precoParaMargem(c,pl,af,ex,alvo);
+  document.getElementById('sugestao').innerHTML='💡 Para margem de <strong>'+alvo+'%</strong>, o preço sugerido é <strong>'+fmt(ps)+'</strong>.';
+  const tb=document.getElementById('detalheBody');
+  tb.innerHTML='<tr><td>Preço de venda</td><td>'+fmt(p)+'</td></tr>'+
+    '<tr><td>(–) Custo do produto</td><td>'+fmt(c)+'</td></tr>'+
+    '<tr><td>(–) Taxa da plataforma'+(pl==='tiktok'?' (incl. afiliado '+af+'%)':'')+'</td><td>'+fmt(r.taxa)+'</td></tr>'+
+    (ex?'<tr><td>(–) Custo extra por pedido</td><td>'+fmt(ex)+'</td></tr>':'')+
+    '<tr><td><strong>= Lucro líquido por pedido</strong></td><td><strong>'+fmt(r.lucro)+'</strong></td></tr>';
+  res.classList.add('show');res.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+</script>
+</body>
+</html>
