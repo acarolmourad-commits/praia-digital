@@ -1,5 +1,5 @@
-const CACHE_NAME = 'praia-digital-static-v2';
-const HTML_CACHE = 'praia-digital-html-v2';
+const CACHE_NAME = 'praia-digital-static-v3';
+const HTML_CACHE = 'praia-digital-html-v3';
 
 const STATIC_ASSETS = [
   '/',
