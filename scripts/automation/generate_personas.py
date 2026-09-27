@@ -161,14 +161,7 @@ def build(persona):
     "@type": "WebPage",
     "name": "{persona['title'].split(' | ')[0]}",
     "description": "{persona['description']}",
-    "url": "https://praia.digital/personas/{persona['slug']}.html",
-    "breadcrumb": {{
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://praia.digital/index.html"}},
-        {{"@type": "ListItem", "position": 2, "name": "{persona['tagline']}", "item": "https://praia.digital/personas/{persona['slug']}.html"}}
-      ]
-    }}
+    "url": "https://praia.digital/personas/{persona['slug']}.html"
   }}
   </script>
   <link rel="stylesheet" href="../css/style.css">

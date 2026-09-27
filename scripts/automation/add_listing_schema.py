@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 add_listing_schema.py
-Adiciona RealEstateListing + BreadcrumbList JSON-LD nas páginas de imoveis/.
+Adiciona RealEstateListing JSON-LD nas páginas de imoveis/. (breadcrumb removido em 2026-09-27)
 """
 from pathlib import Path
 import re, json
@@ -59,17 +59,6 @@ def extract_image(text: str, path: Path):
         return 'https://acarolmourad.github.io/praia-digital/' + str(path.relative_to(BASE)).replace('\\', '/')
     return 'https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/img/default-home.jpg'
 
-def make_breadcrumb(name: str, url: str):
-    return {
-        '@context': 'https://schema.org',
-        '@type': 'BreadcrumbList',
-        'itemListElement': [
-            {'@type': 'ListItem', 'position': 1, 'name': 'Início', 'item': 'https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/index.html'},
-            {'@type': 'ListItem', 'position': 2, 'name': 'Imóveis', 'item': 'https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/imoveis.html'},
-            {'@type': 'ListItem', 'position': 3, 'name': name, 'item': url},
-        ],
-    }
-
 def make_listing(name: str, description: str, url: str, image: str, price: str, city: str):
     return {
         '@context': 'https://schema.org',
@@ -115,12 +104,10 @@ for path in sorted(IMOVEIS.glob('*.html')):
     rel_path = str(path.relative_to(BASE)).replace('\\', '/')
     url = 'https://acarolmourad.github.io/praia-digital/' + rel_path
 
-    bc = make_breadcrumb(title, url)
     rl = make_listing(title, description, url, image, price, city)
 
-    bc_json = json.dumps(bc, ensure_ascii=False, indent=2)
     rl_json = json.dumps(rl, ensure_ascii=False, indent=2)
-    injection = f'<script type="application/ld+json">\n{bc_json}\n</script>\n<script type="application/ld+json">\n{rl_json}\n</script>\n'
+    injection = f'<script type="application/ld+json">\n{rl_json}\n</script>\n'
 
     if '</main>' in text:
         text = text.replace('</main>', injection + '</main>', 1)

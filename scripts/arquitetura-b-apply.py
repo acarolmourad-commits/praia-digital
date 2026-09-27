@@ -27,24 +27,6 @@ HTML_TARGETS = [
     'servicos/cidade-servico/santos-captacao.html',
 ]
 
-# Mapa de breadcrumbs por arquivo
-BREADCRUMBS = {
-    'index.html': [
-        {'name': 'Início', 'item': 'https://praia.digital/'}
-    ],
-    'servicos.html': [
-        {'name': 'Início', 'item': 'https://praia.digital/'},
-        {'name': 'Serviços', 'item': 'https://praia.digital/servicos.html'}
-    ],
-    'contato.html': [
-        {'name': 'Início', 'item': 'https://praia.digital/'},
-        {'name': 'Contato', 'item': 'https://praia.digital/contato.html'}
-    ],
-    'education/index.html': [
-        {'name': 'Início', 'item': 'https://praia.digital/'},
-        {'name': 'Academy', 'item': 'https://praia.digital/education/index.html'}
-    ],
-}
 
 # Mapa de CTAs por jornada
 CTAS = {
@@ -64,39 +46,6 @@ CTAS = {
         'label': 'Contato'
     }
 }
-
-
-def breadcrumb_json(items):
-    return json.dumps({
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": i + 1,
-                "name": item['name'],
-                "item": item['item']
-            }
-            for i, item in enumerate(items)
-        ]
-    }, ensure_ascii=False)
-
-
-def inject_breadcrumb(text, items):
-    tag = f'<script type="application/ld+json">\n{breadcrumb_json(items)}\n  </script>\n'
-    if 'BreadcrumbList' in text:
-        # Replace existing breadcrumb
-        import re
-        text = re.sub(
-            r'<script type="application/ld+json">\s*{\s*"@context".*?"BreadcrumbList".*?</script>',
-            tag.strip(),
-            text,
-            flags=re.DOTALL | re.IGNORECASE
-        )
-    else:
-        # Insert after first script tag or in head
-        text = text.replace('</title>', '</title>\n  ' + tag.strip())
-    return text
 
 
 def inject_cta(text, cta):
@@ -124,9 +73,6 @@ def main():
         text = p.read_text(encoding='utf-8', errors='ignore')
         original_hash = checkpoint['files'].get(rel, {}).get('hash', '')
         
-        # Apply breadcrumb if defined
-        if rel in BREADCRUMBS:
-            text = inject_breadcrumb(text, BREADCRUMBS[rel])
         
         # Apply CTA if defined
         if rel in CTAS:
@@ -141,7 +87,7 @@ def main():
                 'status': 'APPLIED',
                 'hash_before': original_hash,
                 'hash_after': new_hash,
-                'breadcrumb': rel in BREADCRUMBS,
+                'breadcrumb': False,  # breadcrumbs descontinuados em 2026-09-27
                 'cta': rel in CTAS,
             })
         else:

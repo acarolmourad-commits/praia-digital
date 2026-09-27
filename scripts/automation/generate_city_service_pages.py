@@ -74,8 +74,6 @@ def replace_placeholders(html, city_slug, service_slug, service_title, descripti
         '{{canonical}}': url,
         '{{og_url}}': url,
         '{{keywords}}': f'{service_title} em {city_label}, {city_label}, imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário',
-        '{{breadcrumb_city}}': city_label,
-        '{{breadcrumb_service}}': service_title,
         '{{lead_button}}': f'Solicitar {service_title}',
         '{{lead_subtitle}}': f'Envie seus dados e um especialista entra em contato pelo WhatsApp para {service_title.lower()} em {city_label}.',
         '{{page_heading}}': f'{service_title} em {city_label}',
