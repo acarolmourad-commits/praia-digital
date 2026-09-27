@@ -1,5 +1,5 @@
-const CACHE_NAME = 'praia-digital-static-v1';
-const HTML_CACHE = 'praia-digital-html-v1';
+const CACHE_NAME = 'praia-digital-static-v2';
+const HTML_CACHE = 'praia-digital-html-v2';
 
 const STATIC_ASSETS = [
   '/',
@@ -31,6 +31,34 @@ self.addEventListener('activate', (event) => {
   );
 });
 
+// Network-first com fallback ao cache: garante que JS/CSS atualizados
+// (ex.: modulo de breadcrumb no shared.js) cheguem aos visitantes.
+function networkFirst(request) {
+  return fetch(request)
+    .then((response) => {
+      if (response && response.status === 200) {
+        const clone = response.clone();
+        caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
+      }
+      return response;
+    })
+    .catch(() => caches.match(request, { ignoreSearch: true }));
+}
+
+// Stale-while-revalidate para demais assets estaticos (imagens, fontes etc.)
+function staleWhileRevalidate(request) {
+  return caches.match(request).then((cached) => {
+    const fetched = fetch(request).then((response) => {
+      if (response && response.status === 200) {
+        const clone = response.clone();
+        caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
+      }
+      return response;
+    }).catch(() => cached);
+    return cached || fetched;
+  });
+}
+
 self.addEventListener('fetch', (event) => {
   const { request } = event;
   const url = new URL(request.url);
@@ -53,17 +81,11 @@ self.addEventListener('fetch', (event) => {
       return;
     }
 
-    event.respondWith(
-      caches.match(request).then((cached) => {
-        if (cached) return cached;
-        return fetch(request).then((response) => {
-          if (response && response.status === 200) {
-            const clone = response.clone();
-            caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
-          }
-          return response;
-        });
-      })
-    );
+    if (/\.(js|css)(\?.*)?$/.test(url.pathname)) {
+      event.respondWith(networkFirst(request));
+      return;
+    }
+
+    event.respondWith(staleWhileRevalidate(request));
   }
 });
