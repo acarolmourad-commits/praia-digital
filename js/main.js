@@ -82,7 +82,7 @@
         "bedrooms": "1",
         "area": "45m²",
         "score": 72,
-        "image": "https://images.unsplash.com/photo-1522708323590-d24cb9b0267?auto=format&fit=crop&w=900&q=60",
+        "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=60",
         "tags": ["Investimento", "Baixa manutenção", "Mobiliado"],
         "description": "Studio moderno em lançamento com entrada facilitada. Ótimo para investimento ou início de vida."
       },
