@@ -311,7 +311,7 @@
 
       var nav = document.createElement('nav');
       nav.setAttribute('aria-label', 'Breadcrumb');
-      nav.style.cssText = 'display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin:0 0 1.2rem;font-size:.9rem;color:#6b7280;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif';
+      nav.style.cssText = 'display:inline-flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin:0 0 1.2rem;padding:.5rem .95rem;font-size:.9rem;color:#4b5563;background:#ffffff;border:1px solid #e5e7eb;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,.10);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif';
 
       var home = document.createElement('a');
       home.href = '/index.html';
