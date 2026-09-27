@@ -17,7 +17,9 @@
         <p class="property-meta">${escapeHtml(p.city)} · ${escapeHtml(p.type)}</p>
         <p class="property-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
           <meta itemprop="priceCurrency" content="BRL">
-          <span itemprop="price">${escapeHtml(p.price)}</span>
+          <meta itemprop="price" content="${priceNumber(p.price)}">
+          <link itemprop="availability" href="https://schema.org/InStock">
+          <span>${escapeHtml(p.price)}</span>
         </p>
         <p class="property-meta">${escapeHtml(p.bedrooms)} quartos · ${escapeHtml(p.area)}</p>
         <p class="property-meta">${escapeHtml((p.tags||[]).join(', '))}</p>
@@ -80,7 +82,7 @@
         "bedrooms": "1",
         "area": "45m²",
         "score": 72,
-        "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=60",
+        "image": "https://images.unsplash.com/photo-1522708323590-d24cb9b0267?auto=format&fit=crop&w=900&q=60",
         "tags": ["Investimento", "Baixa manutenção", "Mobiliado"],
         "description": "Studio moderno em lançamento com entrada facilitada. Ótimo para investimento ou início de vida."
       },
@@ -141,6 +143,13 @@
         "description": "Apartamento alto padrão com vista mar, lazer completo e acabamento premium em Bertioga."
       }
     ];
+
+  function priceNumber(text) {
+    // Extrai valor numérico puro ("R$ 1.250.000" -> 1250000, "R$ 4.500/mês" -> 4500)
+    if (text === null || text === undefined) return '';
+    const digits = String(text).replace(/[^0-9]/g, '');
+    return digits || '';
+  }
 
   function escapeHtml(text) {
     if (text === null || text === undefined) return '';
