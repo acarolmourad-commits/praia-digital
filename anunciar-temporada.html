@@ -117,6 +117,8 @@ a{color:#0EA5E9}
 </div>
 <script>
 const LEADS_ENDPOINT = 'https://formsubmit.co/comercial@praia.digital';
+// URL /exec do Apps Script (docs/sales/apps-script-leads/Code.gs) apos deploy manual
+const SHEETS_ENDPOINT = '';
 function enviar(e){
   e.preventDefault();
   const g=id=>document.getElementById(id).value.trim();
@@ -125,6 +127,7 @@ function enviar(e){
     try{
       const body=new URLSearchParams({nome:dados.nome,documento:dados.doc,telefone:dados.tel,email:dados.email,vinculo:dados.vinculo,tipo:dados.tipo,cidade:dados.cidade,bairro:dados.bairro,endereco:dados.endereco,quartos:dados.quartos,hospedes:dados.hospedes,diaria:dados.diaria,temporada_ano:dados.ano,descricao:dados.desc,link_anuncio:dados.link,comprovante:dados.comprovante,origem:'anunciar-temporada.html'});
       fetch(LEADS_ENDPOINT,{method:'POST',mode:'no-cors',body:body});
+      if(SHEETS_ENDPOINT){ fetch(SHEETS_ENDPOINT,{method:'POST',mode:'no-cors',body:new URLSearchParams(body)}); }
     }catch(err){}
   }
   let msg='Olá! Quero anunciar meu imóvel de temporada.\n\nNome: '+dados.nome+'\nVínculo: '+dados.vinculo+'\nImóvel: '+dados.tipo+' em '+dados.bairro+', '+dados.cidade+'\nQuartos: '+dados.quartos+' · Hóspedes: '+dados.hospedes+' · Diária: R$ '+dados.diaria+'\nComprovante: '+dados.comprovante;
