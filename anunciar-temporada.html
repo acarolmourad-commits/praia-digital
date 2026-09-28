@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anuncie seu imóvel de temporada — Praia Digital</title>
+<meta name="description" content="Cadastre seu imóvel de temporada na Praia Digital: você mesmo anuncia, como no Airbnb. Ficha de cadastro com verificação para garantir anúncios verdadeiros.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://praia.digital/anunciar-temporada.html">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4F6F8;color:#0F172A}
+header{background:linear-gradient(135deg,#0A3D2E,#0EA5E9);color:#fff;padding:30px 20px;text-align:center}
+header h1{font-size:26px}
+header p{margin-top:8px;opacity:.95}
+.wrap{max-width:640px;margin:0 auto;padding:24px 16px 48px}
+.steps{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:20px}
+.step{background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 10px;text-align:center;font-size:13px}
+.step b{display:block;font-size:22px;margin-bottom:4px}
+.card{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:24px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+fieldset{border:0;margin-bottom:8px}
+legend{font-size:15px;font-weight:800;color:#0A3D2E;margin:14px 0 6px;padding-top:10px;border-top:1px solid #E5E7EB;width:100%}
+legend:first-child{border-top:0;padding-top:0}
+label{display:block;font-size:13px;font-weight:600;margin:12px 0 4px}
+input,select,textarea{width:100%;padding:11px;border:1px solid #CBD5E1;border-radius:10px;font-size:15px;font-family:inherit}
+textarea{min-height:80px;resize:vertical}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.check{display:flex;gap:8px;align-items:flex-start;margin-top:14px;font-size:13px;color:#334155}
+.check input{width:auto;margin-top:2px}
+.note{background:#FFFBEB;border:1px solid #FDE68A;border-radius:10px;padding:12px;font-size:13px;color:#92400E;margin-top:14px}
+button{margin-top:20px;width:100%;padding:14px;background:#25D366;color:#fff;border:0;border-radius:12px;font-size:16px;font-weight:800;cursor:pointer}
+button:hover{background:#1eb85a}
+.hint{font-size:12px;color:#64748B;margin-top:10px;text-align:center}
+a{color:#0EA5E9}
+@media(max-width:560px){.steps{grid-template-columns:1fr}.row{grid-template-columns:1fr}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Anuncie seu imóvel de temporada — Praia Digital","url":"https://praia.digital/anunciar-temporada.html"}</script>
+</head>
+<body>
+<header>
+<h1>🏖️ Anuncie seu imóvel de temporada</h1>
+<p>Você mesmo cadastra, como no Airbnb — e de graça. Já anuncia na Booking ou Airbnb? Traga seu imóvel para uma nova plataforma e receba reservas diretas.</p>
+</header>
+<div class="wrap">
+<div class="steps">
+  <div class="step"><b>1️⃣</b>Preencha a ficha abaixo</div>
+  <div class="step"><b>2️⃣</b>Validamos seu anúncio</div>
+  <div class="step"><b>3️⃣</b>Seu imóvel entra no ar</div>
+</div>
+<div class="card">
+  <form id="f" onsubmit="return enviar(event)">
+    <fieldset>
+      <legend>👤 Seus dados</legend>
+      <label>Nome completo *</label><input id="nome" required placeholder="Ex.: Maria Silva">
+      <div class="row">
+        <div><label>CPF ou CNPJ *</label><input id="doc" required placeholder="000.000.000-00"></div>
+        <div><label>WhatsApp *</label><input id="tel" type="tel" required placeholder="(13) 99999-0000"></div>
+      </div>
+      <label>E-mail *</label><input id="email" type="email" required placeholder="voce@email.com">
+      <label>Você é *</label>
+      <select id="vinculo" required>
+        <option value="">Selecione…</option>
+        <option>Proprietário(a) do imóvel</option>
+        <option>Administrador(a) autorizado(a)</option>
+        <option>Corretor(a) / Imobiliária</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>🏠 Dados do imóvel</legend>
+      <div class="row">
+        <div><label>Tipo *</label>
+          <select id="tipo" required>
+            <option value="">Selecione…</option>
+            <option>Apartamento</option><option>Casa</option><option>Kitnet/Studio</option>
+            <option>Cobertura</option><option>Chalé</option><option>Outro</option>
+          </select>
+        </div>
+        <div><label>Cidade/UF *</label><input id="cidade" required placeholder="Ex.: Bombinhas/SC"></div>
+      </div>
+      <div class="row">
+        <div><label>Bairro/Praia *</label><input id="bairro" required placeholder="Ex.: Mariscal"></div>
+        <div><label>Endereço (rua e nº) *</label><input id="endereco" required placeholder="Rua ..., 123"></div>
+      </div>
+      <div class="row">
+        <div><label>Quartos *</label><input id="quartos" type="number" min="0" required placeholder="2"></div>
+        <div><label>Hóspedes (máx.) *</label><input id="hospedes" type="number" min="1" required placeholder="6"></div>
+      </div>
+      <div class="row">
+        <div><label>Diária média (R$) *</label><input id="diaria" type="number" min="0" required placeholder="350"></div>
+        <div><label>Temporada todo o ano? *</label>
+          <select id="ano" required><option value="">Selecione…</option><option>Sim</option><option>Não, só alta temporada</option></select>
+        </div>
+      </div>
+      <label>Descreva o imóvel (diferenciais, distância da praia, itens) *</label>
+      <textarea id="desc" required placeholder="Ex.: Apto a 200m da praia, 2 quartos, ar-condicionado, churrasqueira, vaga de garagem..."></textarea>
+    </fieldset>
+    <fieldset>
+      <legend>✅ Verificação do anúncio</legend>
+      <label>Já anuncia no Airbnb ou Booking? Cole o link do anúncio (recomendado)</label>
+      <input id="link" type="url" placeholder="https://www.airbnb.com.br/rooms/...">
+      <label>Comprovante de propriedade/administração *</label>
+      <select id="comprovante" required>
+        <option value="">Selecione o que pode apresentar…</option>
+        <option>Matrícula ou escritura do imóvel</option>
+        <option>Carnê de IPTU no meu nome</option>
+        <option>Contrato de administração com o proprietário</option>
+        <option>Conta de água/luz + declaração do proprietário</option>
+      </select>
+      <div class="note">📎 Após enviar a ficha, envie as <b>fotos do imóvel</b> e o <b>documento escolhido</b> pelo WhatsApp. O anúncio só é publicado após a verificação.</div>
+      <label class="check"><input id="verdade" type="checkbox" required> Declaro que as informações são verdadeiras e que tenho autorização para anunciar este imóvel. Estou ciente de que anúncios falsos serão removidos e o cadastro bloqueado.</label>
+      <label class="check"><input id="priv" type="checkbox" required> Li e concordo com a <a href="/politica-de-privacidade.html">Política de Privacidade</a> e os <a href="/termos-de-uso.html">Termos de Uso</a>.</label>
+    </fieldset>
+    <button type="submit">➤ Enviar ficha e continuar no WhatsApp</button>
+    <p class="hint">Cadastro gratuito. Analisamos em até 1 dia útil e você recebe o retorno no WhatsApp.</p>
+  </form>
+</div>
+<p class="hint"><a href="/">← Voltar para praia.digital</a> · <a href="/imoveis/">Ver imóveis</a> · <a href="/interesse.html">Fale com um especialista</a></p>
+</div>
+<script>
+const LEADS_ENDPOINT = 'https://formsubmit.co/comercial@praia.digital';
+function enviar(e){
+  e.preventDefault();
+  const g=id=>document.getElementById(id).value.trim();
+  const dados={nome:g('nome'),doc:g('doc'),tel:g('tel'),email:g('email'),vinculo:g('vinculo'),tipo:g('tipo'),cidade:g('cidade'),bairro:g('bairro'),endereco:g('endereco'),quartos:g('quartos'),hospedes:g('hospedes'),diaria:g('diaria'),ano:g('ano'),desc:g('desc'),link:g('link'),comprovante:g('comprovante')};
+  if(LEADS_ENDPOINT){
+    try{
+      const body=new URLSearchParams({nome:dados.nome,documento:dados.doc,telefone:dados.tel,email:dados.email,vinculo:dados.vinculo,tipo:dados.tipo,cidade:dados.cidade,bairro:dados.bairro,endereco:dados.endereco,quartos:dados.quartos,hospedes:dados.hospedes,diaria:dados.diaria,temporada_ano:dados.ano,descricao:dados.desc,link_anuncio:dados.link,comprovante:dados.comprovante,origem:'anunciar-temporada.html'});
+      fetch(LEADS_ENDPOINT,{method:'POST',mode:'no-cors',body:body});
+    }catch(err){}
+  }
+  let msg='Olá! Quero anunciar meu imóvel de temporada.\n\nNome: '+dados.nome+'\nVínculo: '+dados.vinculo+'\nImóvel: '+dados.tipo+' em '+dados.bairro+', '+dados.cidade+'\nQuartos: '+dados.quartos+' · Hóspedes: '+dados.hospedes+' · Diária: R$ '+dados.diaria+'\nComprovante: '+dados.comprovante;
+  if(dados.link) msg+='\nAnúncio atual: '+dados.link;
+  msg+='\n\nVou enviar as fotos e o documento por aqui. Obrigado(a)!';
+  window.location.href='https://wa.me/5511954346288?text='+encodeURIComponent(msg);
+  return false;
+}
+</script>
+</body>
+</html>
