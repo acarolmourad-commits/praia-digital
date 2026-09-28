@@ -12,17 +12,57 @@
   <meta property="og:description" content="Gestão de imóvel, propaganda imobiliária, anúncios Airbnb/Booking e mídia profissional no litoral paulista.">
   <meta property="og:url" content="https://praia.digital/servicos.html">
   <meta property="og:site_name" content="Praia Digital">
-  <meta name="theme-color" content="#0b1220">
+  <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+  <meta name="theme-color" content="#0ea5e9">
   <link rel="preconnect" href="https://praia.digital">
-<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://wa.me" crossorigin>
-  <link rel="stylesheet" href="/css/style.css">
   <style>
-  .pd-ad { padding: 1rem 2rem; background: #f8fafc; border-top: 1px solid #e5e7eb; }
-  .pd-ad-inner { max-width: 1200px; margin: 0 auto; text-align: center; }
-  .pd-ad-disclosure { font-size: 0.75rem; color: #6b7280; margin-top: 0.5rem; }
-</style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4F6F8;color:#0F172A}
+    .hero{background:linear-gradient(135deg,#0A3D2E,#0EA5E9);color:#fff;padding:48px 20px 42px;text-align:center}
+    .hero h1{font-size:1.9rem;letter-spacing:-.02em;display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap}
+    .hero h1 svg{width:32px;height:32px}
+    .hero .lead{opacity:.92;margin-top:8px;font-size:1.05rem}
+    .hero .sub{opacity:.85;margin-top:6px;font-size:.92rem;max-width:640px;margin-left:auto;margin-right:auto}
+    .wrap{max-width:880px;margin:0 auto;padding:28px 16px 56px}
+    .grid{display:grid;grid-template-columns:1fr;gap:12px}
+    @media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+    .card{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:18px;text-decoration:none;color:#0F172A;box-shadow:0 1px 3px rgba(15,23,42,.06);transition:transform .18s ease,box-shadow .18s ease}
+    .card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(15,23,42,.10)}
+    .thumb{flex:0 0 52px;width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:inset 0 -2px 6px rgba(0,0,0,.18),0 4px 10px rgba(15,23,42,.12)}
+    .thumb svg{width:26px;height:26px}
+    .info{flex:1;min-width:0}
+    .info b{display:block;font-size:1.02rem}
+    .info small{color:#64748B;line-height:1.4;display:block;margin-top:3px}
+    .price{display:inline-block;margin-top:6px;background:#FACC15;color:#713F12;font-size:11px;font-weight:800;letter-spacing:.03em;padding:2px 10px;border-radius:999px}
+    .cta{display:inline-flex;align-items:center;gap:4px;margin-top:8px;color:#0EA5E9;font-weight:600;font-size:.9rem}
+    .sect{margin-top:36px}
+    .sect h2{font-size:1.3rem;margin-bottom:12px}
+    .pills{display:flex;flex-wrap:wrap;gap:10px}
+    .pill{background:#fff;border:1px solid #E5E7EB;border-radius:999px;padding:9px 16px;text-decoration:none;color:#0F172A;font-size:.9rem;font-weight:500;box-shadow:0 1px 2px rgba(15,23,42,.05);transition:transform .15s ease,border-color .15s ease}
+    .pill:hover{transform:translateY(-2px);border-color:#0EA5E9;color:#0369A1}
+    .faq details{margin-bottom:10px;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px}
+    .faq summary{font-weight:600;cursor:pointer}
+    .faq p{margin-top:8px;color:#64748B}
+    .cta-final{margin-top:40px;background:linear-gradient(135deg,#0ea5e9,#0a3a6b);padding:2.5rem 1.5rem;text-align:center;color:#fff;border-radius:16px}
+    .cta-final h2{color:#fff;margin-bottom:.5rem}
+    .cta-final p{margin-bottom:1.1rem;color:#e2e8f0}
+    .cta-final .btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+    .btn-wa{display:inline-block;background:linear-gradient(90deg,#25D366,#128C7E);color:#fff;font-weight:800;padding:.9rem 1.6rem;border-radius:50px;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+    .btn-ghost{display:inline-block;background:rgba(255,255,255,.12);color:#fff;font-weight:600;padding:.9rem 1.4rem;border-radius:50px;text-decoration:none;border:1px solid rgba(255,255,255,.35)}
+    .affiliate-block{margin-top:36px;background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:20px}
+    .affiliate-title{font-weight:700;margin-bottom:12px}
+    .affiliate-grid{display:grid;grid-template-columns:1fr;gap:10px}
+    @media(min-width:640px){.affiliate-grid{grid-template-columns:1fr 1fr}}
+    .affiliate-card{border:1px solid #E5E7EB;border-radius:12px;padding:14px}
+    .affiliate-product{font-weight:600}
+    .affiliate-desc{color:#64748B;font-size:.88rem;margin:4px 0 8px}
+    .affiliate-cta{color:#0369A1;font-weight:600;font-size:.88rem;text-decoration:none}
+    .affiliate-disclosure{font-size:.75rem;color:#94A3B8;margin-top:12px}
+    .prod-links{margin-top:20px;text-align:center;font-size:.92rem}
+    .prod-links a{color:#0369A1;font-weight:600;text-decoration:none}
+  </style>
 
 <!-- Google tag (gtag.js) -->
 <script>
@@ -39,158 +79,156 @@
   }
 </script>
 <meta name="google-adsense-account" content="ca-pub-9562601722232986">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quais cidades são atendidas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Atendemos todo o litoral paulista, incluindo Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, Caraguatatuba, Ilhabela, São Sebastião e Ubatuba."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como solicitar um serviço?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pelo WhatsApp ou formulário de contato; a equipe retorna com proposta e prazo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Os serviços são para temporada?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, a gestão de imóvel atende temporada e long stay, com foco em ocupação e experiência."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vocês implementam agentes autônomos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Implementamos Hermes Agents para atendimento, vendas, suporte e operação multi-canal com supervisão humana."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <nav aria-label="Navegação principal">
-        <a href="https://praia.digital/index.html">Início</a>
-        <a href="https://praia.digital/servicos.html">Serviços</a>
-        <a href="https://praia.digital/education/index.html">Academy</a>
-        <a href="https://praia.digital/education/formacoes/index.html">Formações</a>
-        <a href="https://praia.digital/blog/index.html">Blog</a>
-        <a href="https://praia.digital/noticias/index.html">Notícias</a>
-        <a href="https://praia.digital/cidades/index.html">Cidades</a>
-      </nav>
-    </header>
+  <meta name="pd-shared-nav">
 
-    <main id="main">
-      <h1>Serviços que enchem sua agenda de visitas</h1>
-      <p class="lead">Conteúdo, mídia profissional e automação com IA para imobiliárias e proprietários do litoral paulista.</p>
+  <section class="hero">
+    <h1><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2-2 2.5-2.5z"/></svg> Serviços que enchem sua agenda de visitas</h1>
+    <p class="lead">Conteúdo, mídia profissional e automação com IA para imobiliárias e proprietários do litoral paulista.</p>
+    <p class="sub">Da descrição do anúncio à gestão completa da temporada: cada serviço existe para atrair mais interessados e converter leads em locações e vendas. Comece por qualquer serviço, sem fidelidade.</p>
+  </section>
 
-      <p>Da descrição do anúncio à gestão completa da temporada: cada serviço existe para atrair mais interessados e converter leads em locações e vendas. Comece por qualquer serviço, sem fidelidade.</p>
+  <main id="main" class="wrap">
+    <div class="grid">
+      <a class="card" href="https://praia.digital/servicos/gestao-imoveis.html">
+        <span class="thumb" style="background:linear-gradient(135deg,#0EA5E9,#2563EB)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M9 21v-4h6v4"/><path d="M8 7h.01M12 7h.01M16 7h.01M8 11h.01M12 11h.01M16 11h.01"/></svg></span>
+        <span class="info"><b>Gestão de imóvel</b><small>Administração profissional para temporada e long stay.</small><span class="cta">Ver como funciona <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px"><path d="M9 6l6 6-6 6"/></svg></span></span>
+      </a>
+      <a class="card" href="https://praia.digital/servicos/propaganda-imobiliaria.html">
+        <span class="thumb" style="background:linear-gradient(135deg,#F59E0B,#D97706)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l15-6v14L3 13z"/><path d="M11 13.5V19a2 2 0 0 1-4 0v-4.5"/><path d="M18 8a4 4 0 0 1 0 6"/></svg></span>
+        <span class="info"><b>Propaganda imobiliária</b><small>Descrição otimizada e copywriting de alta conversão para Airbnb, Booking e VRBO.</small><span class="price">R$ 497,00 no PIX</span><span class="cta">Ver como funciona <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px"><path d="M9 6l6 6-6 6"/></svg></span></span>
+      </a>
+      <a class="card" href="https://praia.digital/servico-fotografia-edicao.html">
+        <span class="thumb" style="background:linear-gradient(135deg,#8B5CF6,#6D28D9)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="14" r="3.5"/></svg></span>
+        <span class="info"><b>Mídia profissional</b><small>Fotos, vídeos e conteúdo para atrair compradores e parceiros.</small><span class="cta">Fotografia e edição <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px"><path d="M9 6l6 6-6 6"/></svg></span></span>
+      </a>
+      <a class="card" href="https://praia.digital/anfitrioes/index.html">
+        <span class="thumb" style="background:linear-gradient(135deg,#10B981,#0A3D2E)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3"/><path d="M16 7l3 3"/></svg></span>
+        <span class="info"><b>Área do anfitrião</b><small>Ferramentas, tutoriais e suporte para Airbnb, Booking e PriceLabs no litoral.</small><span class="cta">Ver área do anfitrião <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px"><path d="M9 6l6 6-6 6"/></svg></span></span>
+      </a>
+      <a class="card" href="https://praia.digital/servicos/anuncios-airbnb-booking.html">
+        <span class="thumb" style="background:linear-gradient(135deg,#06B6D4,#0891B2)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/><path d="M9 15l2 2 4-4"/></svg></span>
+        <span class="info"><b>Anúncios Airbnb e Booking</b><small>Criação e otimização profissional de anúncios de temporada: fotos, descrição, diagnóstico e precificação dinâmica.</small><span class="cta">Ver o serviço <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px"><path d="M9 6l6 6-6 6"/></svg></span></span>
+      </a>
+      <a class="card" href="https://praia.digital/solucoes/hermes-agents.html">
+        <span class="thumb" style="background:linear-gradient(135deg,#F43F5E,#BE123C)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 8V4"/><circle cx="12" cy="3" r="1"/><circle cx="9" cy="13" r="1" fill="currentColor"/><circle cx="15" cy="13" r="1" fill="currentColor"/><path d="M9 17h6"/><path d="M2 12v4M22 12v4"/></svg></span>
+        <span class="info"><b>Hermes Agents</b><small>Implantamos agentes autônomos de IA para atendimento, vendas, suporte e operação multi-canal.</small><span class="cta">Ver solução <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px"><path d="M9 6l6 6-6 6"/></svg></span></span>
+      </a>
+    </div>
 
-      <div class="grid">
-        <div class="card">
-          <h3>Gestão de imóvel</h3>
-          <p>Administração profissional para temporada e long stay.</p>
-          <a class="btn-whatsapp" href="https://praia.digital/servicos/gestao-imoveis.html">Ver como funciona</a>
+    <div class="sect">
+      <h2>Serviços em destaque</h2>
+      <div class="pills">
+        <a class="pill" href="/assets/servico-aluguel-temporada-ia-litoral.html">Gestão de temporada com IA</a>
+        <a class="pill" href="/assets/servico-geracao-descricoes-anuncios-ia.html">Geração de descrições com IA</a>
+        <a class="pill" href="/assets/servico-seo-local-imobiliarias-litoral.html">SEO local para imobiliárias</a>
+        <a class="pill" href="/assets/servico-avaliacao-preco-imoveis-litoral.html">Avaliação de preço de imóveis</a>
+        <a class="pill" href="https://praia.digital/solucoes/hermes-agents.html">Hermes Agents — agentes autônomos</a>
+      </div>
+    </div>
+
+    <div class="sect faq">
+      <h2>Perguntas frequentes</h2>
+      <details>
+        <summary>Quais cidades são atendidas?</summary>
+        <p>Atendemos todo o litoral paulista, incluindo Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, Caraguatatuba, Ilhabela, São Sebastião e Ubatuba.</p>
+      </details>
+      <details>
+        <summary>Como solicitar um serviço?</summary>
+        <p>Pelo WhatsApp ou formulário de contato; a equipe retorna com proposta e prazo.</p>
+      </details>
+      <details>
+        <summary>Os serviços são para temporada?</summary>
+        <p>Sim, a gestão de imóvel atende temporada e long stay, com foco em ocupação e experiência.</p>
+      </details>
+      <details>
+        <summary>Vocês implementam agentes autônomos?</summary>
+        <p>Sim. Implementamos Hermes Agents para atendimento, vendas, suporte e operação multi-canal com supervisão humana.</p>
+      </details>
+    </div>
+
+    <div class="cta-final">
+      <h2>Pronto para atrair mais clientes?</h2>
+      <p>Fale agora com um especialista e receba uma proposta sem compromisso.</p>
+      <div class="btns">
+        <a class="btn-wa" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Quero%20conversar%20sobre%20servi%C3%A7os&utm_source=site&utm_medium=whatsapp&utm_campaign=servicos" target="_blank" rel="noopener">Falar com especialista</a>
+        <a class="btn-ghost" href="https://praia.digital/solucoes/proposta-hermes-agents.html">Ver proposta Hermes Agents</a>
+      </div>
+    </div>
+
+    <!-- Amazon Affiliate Block -->
+    <div class="affiliate-block">
+      <div class="affiliate-title">Equipamentos para Home Office que recomendamos</div>
+      <div class="affiliate-grid">
+        <div class="affiliate-card">
+          <div class="affiliate-product">Mesa em pé regulável</div>
+          <div class="affiliate-desc">Ideal para home office com ajuste de altura e espaço amplo.</div>
+          <a class="affiliate-cta" href="https://www.amazon.com.br/s?k=mesa+em+p%C3%A9+regul%C3%A1vel&tag=praiadigital-20" target="_blank" rel="noopener">Conferir na Amazon →</a>
         </div>
-        <div class="card">
-          <h3>Propaganda imobiliária</h3>
-          <p>Descrição otimizada e copywriting de alta conversão para Airbnb, Booking e VRBO. Textos persuasivos para posicionar seu imóvel no topo e multiplicar suas reservas.</p>
-          <p style="opacity:.9; font-size:.85rem; margin-top:.35rem;"><strong>R$ 497,00 no PIX</strong></p>
-          <a class="btn-whatsapp" href="https://praia.digital/servicos/propaganda-imobiliaria.html">Ver como funciona</a>
+        <div class="affiliate-card">
+          <div class="affiliate-product">Suporte articulado para monitor</div>
+          <div class="affiliate-desc">Libera espaço na mesa e ajusta a tela para ergonomia.</div>
+          <a class="affiliate-cta" href="https://www.amazon.com.br/s?k=suporte+articulado+monitor&tag=praiadigital-20" target="_blank" rel="noopener">Conferir na Amazon →</a>
         </div>
-        <div class="card">
-          <h3>Mídia profissional</h3>
-          <p>Fotos, vídeos e conteúdo para atrair compradores e parceiros.</p>
-          <a class="btn-whatsapp" href="https://praia.digital/servico-fotografia-edicao.html">Fotografia e edição</a>
+        <div class="affiliate-card">
+          <div class="affiliate-product">Cadeira ergonômica</div>
+          <div class="affiliate-desc">Conforto para longas jornadas de trabalho.</div>
+          <a class="affiliate-cta" href="https://www.amazon.com.br/s?k=cadeira+ergon%C3%B4mica&tag=praiadigital-20" target="_blank" rel="noopener">Conferir na Amazon →</a>
         </div>
-        <div class="card">
-          <h3>Área do anfitrião</h3>
-          <p>Ferramentas, tutoriais e suporte para Airbnb, Booking e PriceLabs no litoral.</p>
-          <a class="btn-whatsapp" href="https://praia.digital/anfitrioes/index.html">Ver área do anfitrião</a>
-        </div>
-        <div class="card">
-          <h3>Anúncios Airbnb e Booking</h3>
-          <p>Criação e otimização profissional de anúncios de temporada: fotos, descrição, diagnóstico e precificação dinâmica.</p>
-          <a class="btn-whatsapp" href="https://praia.digital/servicos/anuncios-airbnb-booking.html">Ver o serviço</a>
-        </div>
-        <div class="card">
-          <h3>Hermes Agents</h3>
-          <p>Implantamos agentes autônomos de IA para atendimento, vendas, suporte e operação multi-canal.</p>
-          <a class="btn-whatsapp" href="https://praia.digital/solucoes/hermes-agents.html">Ver solução</a>
+        <div class="affiliate-card">
+          <div class="affiliate-product">Iluminação de mesa LED</div>
+          <div class="affiliate-desc">Reduz fadiga visual e melhora foco.</div>
+          <a class="affiliate-cta" href="https://www.amazon.com.br/s?k=l%C3%A2mpada+mesa+LED&tag=praiadigital-20" target="_blank" rel="noopener">Conferir na Amazon →</a>
         </div>
       </div>
-
-      <h2>Serviços em destaque</h2>
-      <ul>
-        <li><a href="/assets/servico-aluguel-temporada-ia-litoral.html">Gestão de temporada com IA</a></li>
-        <li><a href="/assets/servico-geracao-descricoes-anuncios-ia.html">Geração de descrições de anúncios com IA</a></li>
-        <li><a href="/assets/servico-seo-local-imobiliarias-litoral.html">SEO local para imobiliárias no litoral</a></li>
-        <li><a href="/assets/servico-avaliacao-preco-imoveis-litoral.html">Avaliação de preço de imóveis no litoral</a></li>
-        <li><a href="https://praia.digital/solucoes/hermes-agents.html">Hermes Agents — agentes autônomos</a></li>
-      </ul>
-
-      <a class="btn-whatsapp" href="https://wa.me/5511954346288?text=Olá!%20Quero%20conversar%20sobre%20servi%C3%A7os&utm_source=site&utm_medium=whatsapp&utm_campaign=servicos" target="_blank" rel="noopener">Falar com especialista</a>
-    </main>
-
-    <footer>Praia Digital — conteúdo original, sem placeholders.</footer>
-  </div>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Quais cidades são atendidas?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Atendemos todo o litoral paulista, incluindo Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, Caraguatatuba, Ilhabela, São Sebastião e Ubatuba."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Como solicitar um serviço?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Pelo WhatsApp ou formulário de contato; a equipe retorna com proposta e prazo."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Os serviços são para temporada?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sim, a gestão de imóvel atende temporada e long stay, com foco em ocupação e experiência."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Vocês implementam agentes autônomos?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sim. Implementamos Hermes Agents para atendimento, vendas, suporte e operação multi-canal com supervisão humana."
-        }
-      }
-    ]
-  }
-  </script>
-<script src="https://praia.digital/js/shared.js?v=2.1"></script>
-  <div class="cta-section">
-    <a class="btn" href="https://wa.me/5511954346288?text=Olá!%20Quero%20solicitar%20um%20orçamento%20de%20serviço%20imobiliário.">Solicitar orçamento</a>
-    <a class="btn btn-purple" href="https://praia.digital/solucoes/proposta-hermes-agents.html" style="margin-left: 0.5rem;">Ver proposta Hermes Agents</a>
-  </div>
-
-<!-- Bloco AdSense removido em 27/09/2026: slot AUTO_SLOT inválido gerava espaço em branco abaixo do CTA de orçamento. Reativar somente com data-ad-slot real. -->
-
-<!-- Amazon Affiliate Block -->
-<div class="affiliate-block">
-  <div class="affiliate-title">🏠 Equipamentos para Home Office que recomendamos</div>
-  <div class="affiliate-grid">
-
-    <div class="affiliate-card">
-      <div class="affiliate-product">Mesa em pé regulável</div>
-      <div class="affiliate-desc">Ideal para home office com ajuste de altura e espaço amplo.</div>
-      <a class="affiliate-cta" href="https://www.amazon.com.br/s?k=mesa+em+p%C3%A9+regul%C3%A1vel&tag=praiadigital-20" target="_blank" rel="noopener">Conferir na Amazon ➔</a>
+      <p class="affiliate-disclosure">Esta página pode conter links de afiliados. Isso significa que podemos receber uma comissão se você fizer uma compra através dos links, sem nenhum custo adicional para você.</p>
     </div>
 
-    <div class="affiliate-card">
-      <div class="affiliate-product">Suporte articulado para monitor</div>
-      <div class="affiliate-desc">Libera espaço na mesa e ajusta a tela para ergonomia.</div>
-      <a class="affiliate-cta" href="https://www.amazon.com.br/s?k=suporte+articulado+monitor&tag=praiadigital-20" target="_blank" rel="noopener">Conferir na Amazon ➔</a>
-    </div>
+    <p class="prod-links"><a href="https://praia.digital/produtos/relatorio-mercado-temporada/index.html">Relatório de Mercado</a> · <a href="https://praia.digital/produtos/planilha-avaliacao-imovel/index.html">Planilha de Avaliação</a> · <a href="https://praia.digital/produtos/checklist-premium/index.html">Checklist Premium</a></p>
+  </main>
 
-    <div class="affiliate-card">
-      <div class="affiliate-product">Cadeira ergonômica</div>
-      <div class="affiliate-desc">Conforto para longas jornadas de trabalho.</div>
-      <a class="affiliate-cta" href="https://www.amazon.com.br/s?k=cadeira+ergon%C3%B4mica&tag=praiadigital-20" target="_blank" rel="noopener">Conferir na Amazon ➔</a>
-    </div>
-
-    <div class="affiliate-card">
-      <div class="affiliate-product">Iluminação de mesa LED</div>
-      <div class="affiliate-desc">Reduz fadiga visual e melhora foco.</div>
-      <a class="affiliate-cta" href="https://www.amazon.com.br/s?k=l%C3%A2mpada+mesa+LED&tag=praiadigital-20" target="_blank" rel="noopener">Conferir na Amazon ➔</a>
-    </div>
-
-  </div>
-  <p class="affiliate-disclosure">Esta página pode conter links de afiliados. Isso significa que posso receber uma comissão se você fizer uma compra através dos links, sem nenhum custo adicional para você.</p>
-</div>
-
-<!-- Internal product links -->
-<p style="margin-top:.75rem"><a href="https://praia.digital/produtos/relatorio-mercado-temporada/index.html" style="color:#0077B6;font-weight:600">Relatório de Mercado</a> · <a href="https://praia.digital/produtos/planilha-avaliacao-imovel/index.html" style="color:#0077B6;font-weight:600">Planilha de Avaliação</a> · <a href="https://praia.digital/produtos/checklist-premium/index.html" style="color:#0077B6;font-weight:600">Checklist Premium</a></p>
+  <meta name="pd-shared-footer">
+  <script src="https://praia.digital/js/shared.js?v=2.1"></script>
 </body>
 </html>
