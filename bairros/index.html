@@ -3,113 +3,188 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bairros do Litoral — Praia Digital</title>
-  <meta name="keywords" content="bairros do litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, imóveis litoral, custo m², aluguel temporada">
-  <meta name="description" content="Guia de bairros do litoral paulista: custo por m², potencial de rentabilidade e lançamentos em Santos, Guarujá, Praia Grande, Bertioga e mais.">
+  <title>Bairros do Litoral Paulista — Guia Completo por Cidade | Praia Digital</title>
+  <meta name="description" content="Todos os 123 bairros do litoral de SP em um só índice: Santos, Guarujá, Praia Grande, São Vicente, Bertioga, Itanhaém, Mongaguá, Peruíbe, Caraguatatuba, Ilhabela, São Sebastião e Ubatuba. Custo por m², rentabilidade e lançamentos por bairro.">
+  <meta name="keywords" content="bairros do litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, Caraguatatuba, Ilhabela, São Sebastião, Ubatuba, imóveis litoral, custo m², aluguel temporada">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://praia.digital/bairros/index.html">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Bairros do Litoral — Praia Digital">
-  <meta property="og:description" content="Guia de bairros do litoral paulista: custo por m², potencial de rentabilidade e lançamentos.">
+  <meta property="og:title" content="Bairros do Litoral Paulista — Guia Completo por Cidade | Praia Digital">
+  <meta property="og:description" content="Todos os 123 bairros do litoral de SP agrupados por cidade: custo por m², potencial de rentabilidade e lançamentos.">
   <meta property="og:url" content="https://praia.digital/bairros/index.html">
+  <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="/css/style.css?v=3">
+  <link rel="stylesheet" href="/css/style.css?v=4">
   <link rel="stylesheet" href="/assets/css/ads-optimization.css">
-  <link rel="manifest" href="/manifest.json">  <script type="application/ld+json">
+  <link rel="manifest" href="/manifest.json">
+  <style>
+    .pd-hero{background:linear-gradient(135deg,#0A3D2E,#0EA5E9);color:#fff;padding:44px 20px 38px;text-align:center}
+    .pd-hero h1{font-size:1.9rem;letter-spacing:-.02em;display:flex;align-items:center;justify-content:center;gap:10px;margin:0}
+    .pd-hero h1 svg{width:32px;height:32px}
+    .pd-hero p{opacity:.92;margin:8px auto 0;max-width:640px}
+    .pd-hero .stats{margin-top:14px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+    .pd-hero .stat{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:4px 14px;font-size:.82rem;font-weight:700}
+    .pd-wrap{max-width:960px;margin:0 auto;padding:26px 16px 56px;display:grid;grid-template-columns:1fr;gap:14px}
+    @media(min-width:680px){.pd-wrap{grid-template-columns:1fr 1fr}}
+    .card{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:18px;box-shadow:0 1px 3px rgba(15,23,42,.06);transition:transform .18s ease,box-shadow .18s ease}
+    .card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(15,23,42,.10)}
+    .card-head{display:flex;gap:14px;align-items:center}
+    .thumb{flex:0 0 52px;width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:inset 0 -2px 6px rgba(0,0,0,.18),0 4px 10px rgba(15,23,42,.12)}
+    .thumb svg{width:26px;height:26px}
+    .info h2{font-size:1.05rem;margin:0;display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+    .info h2 a{color:#0F172A;text-decoration:none}
+    .info h2 a:hover{color:#0EA5E9}
+    .count{background:#FACC15;color:#713F12;font-size:10px;font-weight:800;letter-spacing:.04em;padding:2px 8px;border-radius:999px}
+    .info p{color:#64748B;font-size:.85rem;line-height:1.4;margin:4px 0 0}
+    details{margin-top:12px;border-top:1px solid #F1F5F9;padding-top:10px}
+    summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;font-weight:700;font-size:.9rem;color:#0EA5E9}
+    summary::-webkit-details-marker{display:none}
+    summary .chev{width:18px;height:18px;transition:transform .18s ease}
+    details[open] summary .chev{transform:rotate(180deg)}
+    .bairros{list-style:none;margin:12px 0 0;padding:0;display:grid;grid-template-columns:1fr;gap:2px}
+    @media(min-width:480px){.bairros{grid-template-columns:1fr 1fr}}
+    .bairros a{display:block;padding:7px 10px;border-radius:8px;color:#0F172A;text-decoration:none;font-size:.9rem;transition:background .15s ease,color .15s ease}
+    .bairros a:hover{background:#F0F9FF;color:#0369A1}
+    .bairros a::before{content:"›";color:#CBD5E1;margin-right:6px}
+    .cta{text-align:center;margin-top:26px}
+    .cta a{display:inline-block;background:linear-gradient(135deg,#0A3D2E,#0EA5E9);color:#fff;font-weight:800;text-decoration:none;padding:12px 26px;border-radius:12px;box-shadow:0 6px 16px rgba(14,165,233,.35)}
+    .cta p{color:#64748B;font-size:.9rem;margin:0 0 10px}
+  </style>
+  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Bairros do Litoral",
-    "description": "Lista de bairros do litoral paulista com potencial de investimento e turismo.",
+    "name": "Bairros do Litoral Paulista",
+    "description": "Índice completo de bairros do litoral de São Paulo com custo por m², rentabilidade e lançamentos, agrupados por cidade.",
     "url": "https://praia.digital/bairros/index.html",
+    "numberOfItems": 123,
     "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Santos",
-        "url": "https://praia.digital/bairros/santos/index.html",
-        "description": "Boqueirão, Gonzaga, Embaré, Aparecida, São Manuel e Encruzilhada com custo por m² e rentabilidade."
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Praia Grande",
-        "url": "https://praia.digital/bairros/praia-grande/index.html",
-        "description": "Guilhermina, Canto do Forte, Boqueirão PG, Caiçara e Real: lançamentos e temporada."
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Guarujá",
-        "url": "https://praia.digital/bairros/guaruja/index.html",
-        "description": "Pitangueiras, Enseada, Tombo e Guaiuba: temporada forte e valorização."
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "name": "São Vicente",
-        "url": "https://praia.digital/bairros/sao-vicente/index.html",
-        "description": "Mercado imobiliário e custo por m² acessível."
-      },
-      {
-        "@type": "ListItem",
-        "position": 5,
-        "name": "Bertioga",
-        "url": "https://praia.digital/bairros/bertioga/index.html",
-        "description": "Riviera, Indaiá e Maitinga: oportunidades de investimento e lançamentos."
-      },
-      {
-        "@type": "ListItem",
-        "position": 6,
-        "name": "Itanhaém",
-        "url": "https://praia.digital/bairros/itanhaem/index.html",
-        "description": "Centro, Suarão e Gaivota: bairros com potencial de valorização."
-      },
-      {
-        "@type": "ListItem",
-        "position": 7,
-        "name": "Mongaguá",
-        "url": "https://praia.digital/bairros/mongagua/index.html",
-        "description": "Centro, Itaguaí e Agenor de Campos: oportunidades de compra e temporada."
-      },
-      {
-        "@type": "ListItem",
-        "position": 8,
-        "name": "Peruíbe",
-        "url": "https://praia.digital/bairros/peruibe/index.html",
-        "description": "Centro, Guaraú e Jardim Ribamar: mercado e potencial de investimento."
-      },
-      {
-        "@type": "ListItem",
-        "position": 9,
-        "name": "Caraguatatuba",
-        "url": "https://praia.digital/bairros/caraguatatuba/index.html",
-        "description": "Centro, Indaiá e Martim de Sá: litoral norte em valorização."
-      },
-      {
-        "@type": "ListItem",
-        "position": 10,
-        "name": "Ilhabela",
-        "url": "https://praia.digital/bairros/ilhabela/index.html",
-        "description": "Armação, Itaguaçu e Vila: mercado de ilha premium."
-      },
-      {
-        "@type": "ListItem",
-        "position": 11,
-        "name": "São Sebastião",
-        "url": "https://praia.digital/bairros/sao-sebastiao/index.html",
-        "description": "Maresias, Juquehy e Barra do Sahy: alto padrão e temporada."
-      },
-      {
-        "@type": "ListItem",
-        "position": 12,
-        "name": "Ubatuba",
-        "url": "https://praia.digital/bairros/ubatuba/index.html",
-        "description": "Centro, Itaguá e Perequê-Açu: capital do surf."
-      }
+      {"@type":"ListItem","position":1,"name":"Aparecida — Santos","url":"https://praia.digital/bairros/santos/aparecida.html"},
+      {"@type":"ListItem","position":2,"name":"Boqueirão — Santos","url":"https://praia.digital/bairros/santos/boqueirao.html"},
+      {"@type":"ListItem","position":3,"name":"Centro Histórico — Santos","url":"https://praia.digital/bairros/santos/centro-historico.html"},
+      {"@type":"ListItem","position":4,"name":"Embaré — Santos","url":"https://praia.digital/bairros/santos/embare.html"},
+      {"@type":"ListItem","position":5,"name":"Encruzilhada — Santos","url":"https://praia.digital/bairros/santos/encruzilhada.html"},
+      {"@type":"ListItem","position":6,"name":"Gonzaga — Santos","url":"https://praia.digital/bairros/santos/gonzaga.html"},
+      {"@type":"ListItem","position":7,"name":"José Menino — Santos","url":"https://praia.digital/bairros/santos/jose-menino.html"},
+      {"@type":"ListItem","position":8,"name":"Macuco — Santos","url":"https://praia.digital/bairros/santos/macuco.html"},
+      {"@type":"ListItem","position":9,"name":"Paquetá — Santos","url":"https://praia.digital/bairros/santos/paqueta.html"},
+      {"@type":"ListItem","position":10,"name":"Pompéia — Santos","url":"https://praia.digital/bairros/santos/pompeia.html"},
+      {"@type":"ListItem","position":11,"name":"Ponta da Praia — Santos","url":"https://praia.digital/bairros/santos/ponta-da-praia.html"},
+      {"@type":"ListItem","position":12,"name":"Santa Maria — Santos","url":"https://praia.digital/bairros/santos/santa-maria.html"},
+      {"@type":"ListItem","position":13,"name":"São Manuel — Santos","url":"https://praia.digital/bairros/santos/sao-manuel.html"},
+      {"@type":"ListItem","position":14,"name":"Valongo — Santos","url":"https://praia.digital/bairros/santos/valongo.html"},
+      {"@type":"ListItem","position":15,"name":"Vila Mathias — Santos","url":"https://praia.digital/bairros/santos/vila-mathias.html"},
+      {"@type":"ListItem","position":16,"name":"Boqueirão — Praia Grande","url":"https://praia.digital/bairros/praia-grande/boqueirao.html"},
+      {"@type":"ListItem","position":17,"name":"Caiçara — Praia Grande","url":"https://praia.digital/bairros/praia-grande/caicara.html"},
+      {"@type":"ListItem","position":18,"name":"Guilhermina — Praia Grande","url":"https://praia.digital/bairros/praia-grande/guilhermina.html"},
+      {"@type":"ListItem","position":19,"name":"Jardim Guanabara — Praia Grande","url":"https://praia.digital/bairros/praia-grande/jardim-guanabara.html"},
+      {"@type":"ListItem","position":20,"name":"Jardim Veneza — Praia Grande","url":"https://praia.digital/bairros/praia-grande/jardim-veneza.html"},
+      {"@type":"ListItem","position":21,"name":"Ocian — Praia Grande","url":"https://praia.digital/bairros/praia-grande/ocian.html"},
+      {"@type":"ListItem","position":22,"name":"Real — Praia Grande","url":"https://praia.digital/bairros/praia-grande/real.html"},
+      {"@type":"ListItem","position":23,"name":"Solo Sagrado/Água — Praia Grande","url":"https://praia.digital/bairros/praia-grande/solo-agua.html"},
+      {"@type":"ListItem","position":24,"name":"Tupi — Praia Grande","url":"https://praia.digital/bairros/praia-grande/tupi.html"},
+      {"@type":"ListItem","position":25,"name":"Tupiry — Praia Grande","url":"https://praia.digital/bairros/praia-grande/tupiry.html"},
+      {"@type":"ListItem","position":26,"name":"Vila São Paulo — Praia Grande","url":"https://praia.digital/bairros/praia-grande/vila-sao-paulo.html"},
+      {"@type":"ListItem","position":27,"name":"Vila Tupi — Praia Grande","url":"https://praia.digital/bairros/praia-grande/vila-tupi.html"},
+      {"@type":"ListItem","position":28,"name":"Astúrias — Guarujá","url":"https://praia.digital/bairros/guaruja/asturias.html"},
+      {"@type":"ListItem","position":29,"name":"Enseada — Guarujá","url":"https://praia.digital/bairros/guaruja/enseada.html"},
+      {"@type":"ListItem","position":30,"name":"Guaiúba — Guarujá","url":"https://praia.digital/bairros/guaruja/guaiuba.html"},
+      {"@type":"ListItem","position":31,"name":"Jardim Progresso — Guarujá","url":"https://praia.digital/bairros/guaruja/jardim-progresso.html"},
+      {"@type":"ListItem","position":32,"name":"Jardim São Paulo — Guarujá","url":"https://praia.digital/bairros/guaruja/jardim-sao-paulo.html"},
+      {"@type":"ListItem","position":33,"name":"Jardim Veneza — Guarujá","url":"https://praia.digital/bairros/guaruja/jardim-veneza.html"},
+      {"@type":"ListItem","position":34,"name":"Nova Guaraú — Guarujá","url":"https://praia.digital/bairros/guaruja/nova-guarau.html"},
+      {"@type":"ListItem","position":35,"name":"Pitangueiras — Guarujá","url":"https://praia.digital/bairros/guaruja/pitangueiras.html"},
+      {"@type":"ListItem","position":36,"name":"Santa Maria — Guarujá","url":"https://praia.digital/bairros/guaruja/santa-maria.html"},
+      {"@type":"ListItem","position":37,"name":"Tombo — Guarujá","url":"https://praia.digital/bairros/guaruja/tombo.html"},
+      {"@type":"ListItem","position":38,"name":"Vicente de Carvalho — Guarujá","url":"https://praia.digital/bairros/guaruja/vicente-de-carvalho.html"},
+      {"@type":"ListItem","position":39,"name":"Vila São Paulo — Guarujá","url":"https://praia.digital/bairros/guaruja/vila-sao-paulo.html"},
+      {"@type":"ListItem","position":40,"name":"Centro Histórico — São Vicente","url":"https://praia.digital/bairros/sao-vicente/centro-historico.html"},
+      {"@type":"ListItem","position":41,"name":"Centro — São Vicente","url":"https://praia.digital/bairros/sao-vicente/centro.html"},
+      {"@type":"ListItem","position":42,"name":"Jardim Guarujá — São Vicente","url":"https://praia.digital/bairros/sao-vicente/jardim-guaruja.html"},
+      {"@type":"ListItem","position":43,"name":"Jardim Rio Branco — São Vicente","url":"https://praia.digital/bairros/sao-vicente/jardim-rio-branco.html"},
+      {"@type":"ListItem","position":44,"name":"Jardim — São Vicente","url":"https://praia.digital/bairros/sao-vicente/jardim.html"},
+      {"@type":"ListItem","position":45,"name":"Parque São Vicente — São Vicente","url":"https://praia.digital/bairros/sao-vicente/parque-sao-vicente.html"},
+      {"@type":"ListItem","position":46,"name":"Praia — São Vicente","url":"https://praia.digital/bairros/sao-vicente/praia.html"},
+      {"@type":"ListItem","position":47,"name":"Vila São Jorge — São Vicente","url":"https://praia.digital/bairros/sao-vicente/vila-sao-jorge.html"},
+      {"@type":"ListItem","position":48,"name":"Centro Histórico — Bertioga","url":"https://praia.digital/bairros/bertioga/centro-historico.html"},
+      {"@type":"ListItem","position":49,"name":"Centro — Bertioga","url":"https://praia.digital/bairros/bertioga/centro.html"},
+      {"@type":"ListItem","position":50,"name":"Guaratuba — Bertioga","url":"https://praia.digital/bairros/bertioga/guaratuba.html"},
+      {"@type":"ListItem","position":51,"name":"Indaiá — Bertioga","url":"https://praia.digital/bairros/bertioga/indaia.html"},
+      {"@type":"ListItem","position":52,"name":"Jardim São Paulo — Bertioga","url":"https://praia.digital/bairros/bertioga/jardim-sao-paulo.html"},
+      {"@type":"ListItem","position":53,"name":"Jardim Veneza — Bertioga","url":"https://praia.digital/bairros/bertioga/jardim-veneza.html"},
+      {"@type":"ListItem","position":54,"name":"Maitinga — Bertioga","url":"https://praia.digital/bairros/bertioga/maitinga.html"},
+      {"@type":"ListItem","position":55,"name":"Praia do Ribeira — Bertioga","url":"https://praia.digital/bairros/bertioga/praia-do-ribeira.html"},
+      {"@type":"ListItem","position":56,"name":"Riviera de São Lourenço — Bertioga","url":"https://praia.digital/bairros/bertioga/riviera.html"},
+      {"@type":"ListItem","position":57,"name":"Vila Veneza — Bertioga","url":"https://praia.digital/bairros/bertioga/vila-veneza.html"},
+      {"@type":"ListItem","position":58,"name":"Centro Histórico — Itanhaém","url":"https://praia.digital/bairros/itanhaem/centro-historico.html"},
+      {"@type":"ListItem","position":59,"name":"Centro — Itanhaém","url":"https://praia.digital/bairros/itanhaem/centro.html"},
+      {"@type":"ListItem","position":60,"name":"Condomínios — Itanhaém","url":"https://praia.digital/bairros/itanhaem/condominios.html"},
+      {"@type":"ListItem","position":61,"name":"Gaivota — Itanhaém","url":"https://praia.digital/bairros/itanhaem/gaivota.html"},
+      {"@type":"ListItem","position":62,"name":"Jardim Mariana — Itanhaém","url":"https://praia.digital/bairros/itanhaem/jardim-mariana.html"},
+      {"@type":"ListItem","position":63,"name":"Jardim São Paulo — Itanhaém","url":"https://praia.digital/bairros/itanhaem/jardim-sao-paulo.html"},
+      {"@type":"ListItem","position":64,"name":"Praia — Itanhaém","url":"https://praia.digital/bairros/itanhaem/praia.html"},
+      {"@type":"ListItem","position":65,"name":"Suarão — Itanhaém","url":"https://praia.digital/bairros/itanhaem/suarao.html"},
+      {"@type":"ListItem","position":66,"name":"Vila São João — Itanhaém","url":"https://praia.digital/bairros/itanhaem/vila-sao-joao.html"},
+      {"@type":"ListItem","position":67,"name":"Vila Veneza — Itanhaém","url":"https://praia.digital/bairros/itanhaem/vila-veneza.html"},
+      {"@type":"ListItem","position":68,"name":"Agenor de Campos — Mongaguá","url":"https://praia.digital/bairros/mongagua/agenor-de-campos.html"},
+      {"@type":"ListItem","position":69,"name":"Centro Histórico — Mongaguá","url":"https://praia.digital/bairros/mongagua/centro-historico.html"},
+      {"@type":"ListItem","position":70,"name":"Centro — Mongaguá","url":"https://praia.digital/bairros/mongagua/centro.html"},
+      {"@type":"ListItem","position":71,"name":"Condomínios — Mongaguá","url":"https://praia.digital/bairros/mongagua/condominios.html"},
+      {"@type":"ListItem","position":72,"name":"Itaguaí — Mongaguá","url":"https://praia.digital/bairros/mongagua/itaguai.html"},
+      {"@type":"ListItem","position":73,"name":"Jardim Rio Branco — Mongaguá","url":"https://praia.digital/bairros/mongagua/jardim-rio-branco.html"},
+      {"@type":"ListItem","position":74,"name":"Jardim Veneza — Mongaguá","url":"https://praia.digital/bairros/mongagua/jardim-veneza.html"},
+      {"@type":"ListItem","position":75,"name":"Parque Mar — Mongaguá","url":"https://praia.digital/bairros/mongagua/parque-mar.html"},
+      {"@type":"ListItem","position":76,"name":"Praia — Mongaguá","url":"https://praia.digital/bairros/mongagua/praia.html"},
+      {"@type":"ListItem","position":77,"name":"Vila São Paulo — Mongaguá","url":"https://praia.digital/bairros/mongagua/vila-sao-paulo.html"},
+      {"@type":"ListItem","position":78,"name":"Centro Histórico — Peruíbe","url":"https://praia.digital/bairros/peruibe/centro-historico.html"},
+      {"@type":"ListItem","position":79,"name":"Centro — Peruíbe","url":"https://praia.digital/bairros/peruibe/centro.html"},
+      {"@type":"ListItem","position":80,"name":"Condomínios — Peruíbe","url":"https://praia.digital/bairros/peruibe/condominios.html"},
+      {"@type":"ListItem","position":81,"name":"Guaraú — Peruíbe","url":"https://praia.digital/bairros/peruibe/guarau.html"},
+      {"@type":"ListItem","position":82,"name":"Jardim Ribamar — Peruíbe","url":"https://praia.digital/bairros/peruibe/jardim-ribamar.html"},
+      {"@type":"ListItem","position":83,"name":"Jardim São Paulo — Peruíbe","url":"https://praia.digital/bairros/peruibe/jardim-sao-paulo.html"},
+      {"@type":"ListItem","position":84,"name":"Jardim Veneza — Peruíbe","url":"https://praia.digital/bairros/peruibe/jardim-veneza.html"},
+      {"@type":"ListItem","position":85,"name":"Praia — Peruíbe","url":"https://praia.digital/bairros/peruibe/praia.html"},
+      {"@type":"ListItem","position":86,"name":"São João Batista — Peruíbe","url":"https://praia.digital/bairros/peruibe/sao-joao-batista.html"},
+      {"@type":"ListItem","position":87,"name":"Vila Veneza — Peruíbe","url":"https://praia.digital/bairros/peruibe/vila-veneza.html"},
+      {"@type":"ListItem","position":88,"name":"Camburi — Caraguatatuba","url":"https://praia.digital/bairros/caraguatatuba/camburi.html"},
+      {"@type":"ListItem","position":89,"name":"Centro — Caraguatatuba","url":"https://praia.digital/bairros/caraguatatuba/centro.html"},
+      {"@type":"ListItem","position":90,"name":"Indaiá — Caraguatatuba","url":"https://praia.digital/bairros/caraguatatuba/indaia.html"},
+      {"@type":"ListItem","position":91,"name":"Jaguaribe — Caraguatatuba","url":"https://praia.digital/bairros/caraguatatuba/jaguaribe.html"},
+      {"@type":"ListItem","position":92,"name":"Jaraguá — Caraguatatuba","url":"https://praia.digital/bairros/caraguatatuba/jaraguá.html"},
+      {"@type":"ListItem","position":93,"name":"Jardim São Paulo — Caraguatatuba","url":"https://praia.digital/bairros/caraguatatuba/jardim-sao-paulo.html"},
+      {"@type":"ListItem","position":94,"name":"Martim de Sá — Caraguatatuba","url":"https://praia.digital/bairros/caraguatatuba/martim-de-sa.html"},
+      {"@type":"ListItem","position":95,"name":"Massaguaçu — Caraguatatuba","url":"https://praia.digital/bairros/caraguatatuba/massaguaçu.html"},
+      {"@type":"ListItem","position":96,"name":"Prainha — Caraguatatuba","url":"https://praia.digital/bairros/caraguatatuba/prainha.html"},
+      {"@type":"ListItem","position":97,"name":"Vila Veneza — Caraguatatuba","url":"https://praia.digital/bairros/caraguatatuba/vila-veneza.html"},
+      {"@type":"ListItem","position":98,"name":"Armação — Ilhabela","url":"https://praia.digital/bairros/ilhabela/armacao.html"},
+      {"@type":"ListItem","position":99,"name":"Bonete — Ilhabela","url":"https://praia.digital/bairros/ilhabela/bonete.html"},
+      {"@type":"ListItem","position":100,"name":"Fumaça — Ilhabela","url":"https://praia.digital/bairros/ilhabela/fumaca.html"},
+      {"@type":"ListItem","position":101,"name":"Itaguaçu — Ilhabela","url":"https://praia.digital/bairros/ilhabela/itaguacu.html"},
+      {"@type":"ListItem","position":102,"name":"Jardim São Paulo — Ilhabela","url":"https://praia.digital/bairros/ilhabela/jardim-sao-paulo.html"},
+      {"@type":"ListItem","position":103,"name":"Pernambuco — Ilhabela","url":"https://praia.digital/bairros/ilhabela/pernambuco.html"},
+      {"@type":"ListItem","position":104,"name":"Praia da Enseada — Ilhabela","url":"https://praia.digital/bairros/ilhabela/praia-da-enseada.html"},
+      {"@type":"ListItem","position":105,"name":"Saco da Capela — Ilhabela","url":"https://praia.digital/bairros/ilhabela/saco-da-capela.html"},
+      {"@type":"ListItem","position":106,"name":"Vila Veneza — Ilhabela","url":"https://praia.digital/bairros/ilhabela/vila-veneza.html"},
+      {"@type":"ListItem","position":107,"name":"Vila (Centro) — Ilhabela","url":"https://praia.digital/bairros/ilhabela/vila.html"},
+      {"@type":"ListItem","position":108,"name":"Barra do Sahy — São Sebastião","url":"https://praia.digital/bairros/sao-sebastiao/barra-do-sahy.html"},
+      {"@type":"ListItem","position":109,"name":"Boracéia — São Sebastião","url":"https://praia.digital/bairros/sao-sebastiao/boraceia.html"},
+      {"@type":"ListItem","position":110,"name":"Centro Histórico — São Sebastião","url":"https://praia.digital/bairros/sao-sebastiao/centro-historico.html"},
+      {"@type":"ListItem","position":111,"name":"Guaecá — São Sebastião","url":"https://praia.digital/bairros/sao-sebastiao/guaeca.html"},
+      {"@type":"ListItem","position":112,"name":"Jardim São Paulo — São Sebastião","url":"https://praia.digital/bairros/sao-sebastiao/jardim-sao-paulo.html"},
+      {"@type":"ListItem","position":113,"name":"Juquehy — São Sebastião","url":"https://praia.digital/bairros/sao-sebastiao/juquehy.html"},
+      {"@type":"ListItem","position":114,"name":"Maresias — São Sebastião","url":"https://praia.digital/bairros/sao-sebastiao/maresias.html"},
+      {"@type":"ListItem","position":115,"name":"Vila Veneza — São Sebastião","url":"https://praia.digital/bairros/sao-sebastiao/vila-veneza.html"},
+      {"@type":"ListItem","position":116,"name":"Centro — Ubatuba","url":"https://praia.digital/bairros/ubatuba/centro.html"},
+      {"@type":"ListItem","position":117,"name":"Domingues — Ubatuba","url":"https://praia.digital/bairros/ubatuba/domingues.html"},
+      {"@type":"ListItem","position":118,"name":"Itaguá — Ubatuba","url":"https://praia.digital/bairros/ubatuba/itagua.html"},
+      {"@type":"ListItem","position":119,"name":"Jardim São Paulo — Ubatuba","url":"https://praia.digital/bairros/ubatuba/jardim-sao-paulo.html"},
+      {"@type":"ListItem","position":120,"name":"Matarazzo — Ubatuba","url":"https://praia.digital/bairros/ubatuba/matarazzo.html"},
+      {"@type":"ListItem","position":121,"name":"São Lourenço — Ubatuba","url":"https://praia.digital/bairros/ubatuba/sao-lourenco.html"},
+      {"@type":"ListItem","position":122,"name":"Silveira — Ubatuba","url":"https://praia.digital/bairros/ubatuba/silveira.html"},
+      {"@type":"ListItem","position":123,"name":"Vila Veneza — Ubatuba","url":"https://praia.digital/bairros/ubatuba/vila-veneza.html"}
     ]
   }
   </script>
-
   <!-- Meta Pixel (env fallback) -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init", window.PD_META_PIXEL_ID || "");fbq("track","PageView");
@@ -118,206 +193,328 @@
 </head>
 <body>
 <meta name="pd-shared-nav">
-  <div class="wrap">    <h1>Bairros do Litoral Paulista</h1>
-    <p>Compare custo por m², rentabilidade e lançamentos nos principais bairros do litoral de São Paulo. Conteúdo atualizado para 2026.</p>
-
-    <!-- Santos -->
-    <section class="city-section">
-      <h2>Santos</h2>
-      <p class="market-summary">Mercado estável com valorização contínua na orla. O m² na orla de Santos tende a ser mais alto, mas com fluxo de temporada consistente e liquidez elevada.</p>
-      <div class="badges">
-        <span class="badge">m² orla: alto</span>
-        <span class="badge">temporada: forte</span>
-        <span class="badge">liquidez: alta</span>
+<section class="pd-hero">
+  <h1><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Bairros do Litoral Paulista</h1>
+  <p>Compare custo por m², rentabilidade e lançamentos em todos os bairros do litoral de São Paulo. Conteúdo atualizado para 2026.</p>
+  <div class="stats"><span class="stat">12 cidades</span><span class="stat">123 bairros</span><span class="stat">Guias atualizados 2026</span></div>
+</section>
+<main class="pd-wrap">
+  <section class="card">
+    <div class="card-head">
+      <span class="thumb" style="background:linear-gradient(135deg,#0EA5E9,#2563EB)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span>
+      <div class="info">
+        <h2><a href="/bairros/santos/index.html">Santos</a> <span class="count">15 bairros</span></h2>
+        <p>Mercado estável com valorização contínua na orla; liquidez elevada e temporada consistente.</p>
       </div>
-      <ul>
-        <li><a href="/bairros/santos/boqueirao.html">Boqueirão</a> — custo-benefício e ocupação consistente.</li>
-        <li><a href="/bairros/santos/gonzaga.html">Gonzaga</a> — padrão alto e valorização histórica.</li>
-        <li><a href="/bairros/santos/embare.html">Embaré</a> — equilíbrio entre preço e localização.</li>
-        <li><a href="/bairros/santos/aparecida.html">Aparecida</a> — potencial de valorização e custo acessível.</li>
-        <li><a href="/bairros/santos/sao-manuel.html">São Manuel</a> — residencial tradicional entre os canais 2 e 3.</li>
-        <li><a href="/bairros/santos/encruzilhada.html">Encruzilhada</a> — comércio forte e acesso à orla.</li>
-      </ul>
-      <p><a href="/blog/guia-custo-metro-quadrado-santos-boqueirao-aparecida-2026.html">Guia completo: custo por m² e rentabilidade em Santos →</a></p>
-    </section>
-
-    <!-- Praia Grande -->
-    <section class="city-section">
-      <h2>Praia Grande</h2>
-      <p class="market-summary">Custo por m² mais acessível que Santos, com crescimento de lançamentos e temporada. Bairros como Guilhermina oferecem entrada controlada e fluxo constante de locação.</p>
-      <div class="badges">
-        <span class="badge">m²: médio</span>
-        <span class="badge">lançamentos: crescente</span>
-        <span class="badge">temporada: moderada</span>
-      </div>
-      <ul>
-        <li><a href="/bairros/praia-grande/guilhermina.html">Guilhermina</a> — infraestrutura consolidada e rentabilidade.</li>
-        <li><a href="/bairros/praia-grande/canto-do-forte.html">Canto do Forte</a> — alto padrão e turismo de luxo.</li>
-        <li><a href="/bairros/praia-grande/boqueirao.html">Boqueirão PG</a> — equilíbrio entre custo e temporada.</li>
-        <li><a href="/bairros/praia-grande/caicara.html">Caiçara</a> — central, comercial e colado na orla.</li>
-        <li><a href="/bairros/praia-grande/real.html">Real</a> — residencial valorizado.</li>
-      </ul>
-      <p><a href="/blog/investir-bairro-guilhermina-praia-grande-2026.html">Investir na Guilhermina em 2026 →</a></p>
-    </section>
-
-    <!-- Guarujá -->
-    <section class="city-section">
-      <h2>Guarujá</h2>
-      <p class="market-summary">Destino tradicional do litoral paulista com temporada forte e valorização estável. O m² varia conforme proximidade da orla e infraestrutura do bairro.</p>
-      <div class="badges">
-        <span class="badge">m²: variado</span>
-        <span class="badge">temporada: forte</span>
-        <span class="badge">valorização: estável</span>
-      </div>
-      <ul>
-        <li><a href="/bairros/guaruja/index.html">Centro / Guarujá</a> — conveniência e fluxo turístico.</li>
-        <li><a href="/bairros/guaruja/peninsula.html">Península</a> — exclusividade e resorts.</li>
-        <li><a href="/bairros/guaruja/enseada.html">Enseada</a> — custo-benefício e família.</li>
-        <li><a href="/bairros/guaruja/tombo.html">Tombo</a> — frente-mar valorizado, ondas fortes.</li>
-        <li><a href="/bairros/guaruja/guaiuba.html">Guaiuba</a> — mar calmo, perfil familiar.</li>
-      </ul>
-    </section>
-
-    <!-- São Vicente -->
-    <section class="city-section">
-      <h2>São Vicente</h2>
-      <p class="market-summary">Mercado com preços mais acessíveis e conectividade com a região metropolitana. Ideal para quem busca entrada rápida no litoral.</p>
-      <div class="badges">
-        <span class="badge">m²: acessível</span>
-        <span class="badge">conectividade: alta</span>
-        <span class="badge">temporada: moderada</span>
-      </div>
-      <ul>
-        <li><a href="/bairros/sao-vicente/index.html">Centro</a> — serviços e mobilidade.</li>
-        <li><a href="/bairros/sao-vicente/itatiba.html">Itatiba</a> — potencial de valorização.</li>
-      </ul>
-    </section>
-
-    <!-- Bertioga -->
-    <section class="city-section">
-      <h2>Bertioga</h2>
-      <p class="market-summary">Bairros com foco em segunda residência e temporada. Oferta mais controlada e valorização ligada a infraestrutura de lazer.</p>
-      <div class="badges">
-        <span class="badge">m²: médio-alto</span>
-        <span class="badge">temporada: alta</span>
-        <span class="badge">valorização: moderada</span>
-      </div>
-      <ul>
-        <li><a href="/bairros/bertioga/index.html">Riviera de São Lourenço</a> — alto padrão e rentabilidade.</li>
-        <li><a href="/bairros/bertioga/centro.html">Centro</a> — custo-benefício.</li>
-        <li><a href="/bairros/bertioga/indaia.html">Indaiá</a> — residencial, perto do centro e da praia.</li>
-        <li><a href="/bairros/bertioga/maitinga.html">Maitinga</a> — tranquilo, casas de condomínio.</li>
-      </ul>
-    </section>
-
-    <!-- Mongaguá -->
-    <section class="city-section">
-      <h2>Mongaguá</h2>
-      <p class="market-summary">Mercado menor, com preços acessíveis e temporada forte em períodos de verão e feriados. Boa para investidores de entrada.</p>
-      <div class="badges">
-        <span class="badge">m²: acessível</span>
-        <span class="badge">temporada: sazonal</span>
-        <span class="badge">valorização: moderada</span>
-      </div>
-      <ul>
-        <li><a href="/bairros/mongagua/index.html">Centro</a> — serviços e orla.</li>
-        <li><a href="/bairros/mongagua/balneario.html">Balneário</a> — potencial de temporada.</li>
-        <li><a href="/bairros/mongagua/itaguai.html">Itaguaí</a> — residencial, perfil familiar.</li>
-        <li><a href="/bairros/mongagua/agenor-de-campos.html">Agenor de Campos</a> — comércio crescente ao norte.</li>
-      </ul>
-    </section>
-
-    <!-- Itanhaém -->
-    <section class="city-section">
-      <h2>Itanhaém</h2>
-      <p class="market-summary">Segunda cidade mais antiga do Brasil, com preços acessíveis e bairros de veraneio consolidados ao norte.</p>
-      <ul>
-        <li><a href="/bairros/itanhaem/index.html">Centro</a> — serviços e história.</li>
-        <li><a href="/bairros/itanhaem/suarao.html">Suarão</a> — veraneio clássico, praia extensa.</li>
-        <li><a href="/bairros/itanhaem/gaivota.html">Gaivota</a> — residencial de praia, tranquilo.</li>
-      </ul>
-    </section>
-
-    <!-- Peruíbe -->
-    <section class="city-section">
-      <h2>Peruíbe</h2>
-      <p class="market-summary">Entre a Estação Ecológica da Juréia e o Guaraú: natureza preservada e preços de entrada baixos.</p>
-      <ul>
-        <li><a href="/bairros/peruibe/index.html">Centro</a> — serviços e orla urbana.</li>
-        <li><a href="/bairros/peruibe/guarau.html">Guaraú</a> — vila de pescadores, praia preserveda.</li>
-        <li><a href="/bairros/peruibe/jardim-ribamar.html">Jardim Ribamar</a> — veraneio consolidado.</li>
-      </ul>
-    </section>
-
-    <!-- Caraguatatuba -->
-    <section class="city-section">
-      <h2>Caraguatatuba</h2>
-      <p class="market-summary">Maior cidade do litoral norte, com temporada forte e ciclovia na orla.</p>
-      <ul>
-        <li><a href="/bairros/caraguatatuba/index.html">Centro</a> — comércio e serviços completos.</li>
-        <li><a href="/bairros/caraguatatuba/indaia.html">Indaiá</a> — arborizado, perto da orla.</li>
-        <li><a href="/bairros/caraguatatuba/martim-de-sa.html">Martim de Sá</a> — praia movimentada, forte temporada.</li>
-      </ul>
-    </section>
-
-    <!-- Ilhabela -->
-    <section class="city-section">
-      <h2>Ilhabela</h2>
-      <p class="market-summary">Mercado de ilha premium: oferta limitada, temporada forte e alto ticket médio.</p>
-      <ul>
-        <li><a href="/bairros/ilhabela/index.html">Vila</a> — centro histórico e gastronomia.</li>
-        <li><a href="/bairros/ilhabela/armacao.html">Armação</a> — perto da balsa, pôr do sol famoso.</li>
-        <li><a href="/bairros/ilhabela/itaguacu.html">Itaguaçu</a> — praia urbana no sul da ilha.</li>
-      </ul>
-    </section>
-
-    <!-- São Sebastião -->
-    <section class="city-section">
-      <h2>São Sebastião</h2>
-      <p class="market-summary">Maresias e Juquehy concentram o alto padrão; centro histórico com charme e serviços.</p>
-      <ul>
-        <li><a href="/bairros/sao-sebastiao/index.html">Centro</a> — histórico e completo.</li>
-        <li><a href="/bairros/sao-sebastiao/maresias.html">Maresias</a> — surf e temporada premium.</li>
-        <li><a href="/bairros/sao-sebastiao/juquehy.html">Juquehy</a> — alto padrão familiar.</li>
-      </ul>
-    </section>
-
-    <!-- Ubatuba -->
-    <section class="city-section">
-      <h2>Ubatuba</h2>
-      <p class="market-summary">Capital do surf, com mais de 100 praias e mercado aquecido de casas de temporada.</p>
-      <ul>
-        <li><a href="/bairros/ubatuba/index.html">Centro</a> — serviços e aquário.</li>
-        <li><a href="/bairros/ubatuba/itagua.html">Itaguá</a> — marina, restaurantes e saindo para passeios.</li>
-      </ul>
-    </section>
-
-    <h2>Cadastre seu Imóvel</h2>
-    <p>Quer vender ou alugar por temporada? Cadastre seu imóvel e receba avaliação, fotografia profissional e divulgação.</p>
-    <p><a href="/cadastrar-imovel.html">Cadastrar imóvel →</a></p>
-
-    <!-- Mobile sticky anchor placeholder -->
-    <div id="pd-mobile-anchor" style="position:fixed; bottom:0; left:0; width:100%; padding:.6rem; background:#0f2942; color:#fff; text-align:center; display:none; z-index:50;">
-      <a href="/cadastrar-imovel.html" style="color:#22d3ee; font-weight:800; text-decoration:none;">Cadastrar Imóvel</a>
     </div>
-  </div>
-
-  <script>
-    window.PD_ADS = window.PD_ADS || {};
-    PD_ADS.boot({
-      adUnitPath: '/1234/praia-digital',
-      targeting: {
-        div: 'pd-gpt-slot',
-        sizes: [[300,250],[336,280],[320,100]],
-        key: 'page_type',
-        keyValues: { page_type: 'bairros' }
-      },
-      enableStickyMobile: true,
-      refreshIntervalMs: 30000
-    });
-  </script>
-  <script src="/assets/js/ads-optimization.js"></script>
-  <script src="/assets/js/engagement.js"></script>
+    <details>
+      <summary>Ver todos os bairros de Santos <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <ul class="bairros">
+        <li><a href="/bairros/santos/aparecida.html">Aparecida</a></li>
+        <li><a href="/bairros/santos/boqueirao.html">Boqueirão</a></li>
+        <li><a href="/bairros/santos/centro-historico.html">Centro Histórico</a></li>
+        <li><a href="/bairros/santos/embare.html">Embaré</a></li>
+        <li><a href="/bairros/santos/encruzilhada.html">Encruzilhada</a></li>
+        <li><a href="/bairros/santos/gonzaga.html">Gonzaga</a></li>
+        <li><a href="/bairros/santos/jose-menino.html">José Menino</a></li>
+        <li><a href="/bairros/santos/macuco.html">Macuco</a></li>
+        <li><a href="/bairros/santos/paqueta.html">Paquetá</a></li>
+        <li><a href="/bairros/santos/pompeia.html">Pompéia</a></li>
+        <li><a href="/bairros/santos/ponta-da-praia.html">Ponta da Praia</a></li>
+        <li><a href="/bairros/santos/santa-maria.html">Santa Maria</a></li>
+        <li><a href="/bairros/santos/sao-manuel.html">São Manuel</a></li>
+        <li><a href="/bairros/santos/valongo.html">Valongo</a></li>
+        <li><a href="/bairros/santos/vila-mathias.html">Vila Mathias</a></li>
+      </ul>
+    </details>
+  </section>
+  <section class="card">
+    <div class="card-head">
+      <span class="thumb" style="background:linear-gradient(135deg,#10B981,#0A3D2E)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span>
+      <div class="info">
+        <h2><a href="/bairros/praia-grande/index.html">Praia Grande</a> <span class="count">12 bairros</span></h2>
+        <p>Lançamentos e temporada forte; maior estoque de novos da baixada.</p>
+      </div>
+    </div>
+    <details>
+      <summary>Ver todos os bairros de Praia Grande <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <ul class="bairros">
+        <li><a href="/bairros/praia-grande/boqueirao.html">Boqueirão</a></li>
+        <li><a href="/bairros/praia-grande/caicara.html">Caiçara</a></li>
+        <li><a href="/bairros/praia-grande/guilhermina.html">Guilhermina</a></li>
+        <li><a href="/bairros/praia-grande/jardim-guanabara.html">Jardim Guanabara</a></li>
+        <li><a href="/bairros/praia-grande/jardim-veneza.html">Jardim Veneza</a></li>
+        <li><a href="/bairros/praia-grande/ocian.html">Ocian</a></li>
+        <li><a href="/bairros/praia-grande/real.html">Real</a></li>
+        <li><a href="/bairros/praia-grande/solo-agua.html">Solo Sagrado/Água</a></li>
+        <li><a href="/bairros/praia-grande/tupi.html">Tupi</a></li>
+        <li><a href="/bairros/praia-grande/tupiry.html">Tupiry</a></li>
+        <li><a href="/bairros/praia-grande/vila-sao-paulo.html">Vila São Paulo</a></li>
+        <li><a href="/bairros/praia-grande/vila-tupi.html">Vila Tupi</a></li>
+      </ul>
+    </details>
+  </section>
+  <section class="card">
+    <div class="card-head">
+      <span class="thumb" style="background:linear-gradient(135deg,#F59E0B,#D97706)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span>
+      <div class="info">
+        <h2><a href="/bairros/guaruja/index.html">Guarujá</a> <span class="count">12 bairros</span></h2>
+        <p>Temporada forte e valorização; da Enseada às praias selvagens.</p>
+      </div>
+    </div>
+    <details>
+      <summary>Ver todos os bairros de Guarujá <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <ul class="bairros">
+        <li><a href="/bairros/guaruja/asturias.html">Astúrias</a></li>
+        <li><a href="/bairros/guaruja/enseada.html">Enseada</a></li>
+        <li><a href="/bairros/guaruja/guaiuba.html">Guaiúba</a></li>
+        <li><a href="/bairros/guaruja/jardim-progresso.html">Jardim Progresso</a></li>
+        <li><a href="/bairros/guaruja/jardim-sao-paulo.html">Jardim São Paulo</a></li>
+        <li><a href="/bairros/guaruja/jardim-veneza.html">Jardim Veneza</a></li>
+        <li><a href="/bairros/guaruja/nova-guarau.html">Nova Guaraú</a></li>
+        <li><a href="/bairros/guaruja/pitangueiras.html">Pitangueiras</a></li>
+        <li><a href="/bairros/guaruja/santa-maria.html">Santa Maria</a></li>
+        <li><a href="/bairros/guaruja/tombo.html">Tombo</a></li>
+        <li><a href="/bairros/guaruja/vicente-de-carvalho.html">Vicente de Carvalho</a></li>
+        <li><a href="/bairros/guaruja/vila-sao-paulo.html">Vila São Paulo</a></li>
+      </ul>
+    </details>
+  </section>
+  <section class="card">
+    <div class="card-head">
+      <span class="thumb" style="background:linear-gradient(135deg,#8B5CF6,#6D28D9)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span>
+      <div class="info">
+        <h2><a href="/bairros/sao-vicente/index.html">São Vicente</a> <span class="count">8 bairros</span></h2>
+        <p>Custo por m² acessível e demanda de aluguel anual.</p>
+      </div>
+    </div>
+    <details>
+      <summary>Ver todos os bairros de São Vicente <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <ul class="bairros">
+        <li><a href="/bairros/sao-vicente/centro-historico.html">Centro Histórico</a></li>
+        <li><a href="/bairros/sao-vicente/centro.html">Centro</a></li>
+        <li><a href="/bairros/sao-vicente/jardim-guaruja.html">Jardim Guarujá</a></li>
+        <li><a href="/bairros/sao-vicente/jardim-rio-branco.html">Jardim Rio Branco</a></li>
+        <li><a href="/bairros/sao-vicente/jardim.html">Jardim</a></li>
+        <li><a href="/bairros/sao-vicente/parque-sao-vicente.html">Parque São Vicente</a></li>
+        <li><a href="/bairros/sao-vicente/praia.html">Praia</a></li>
+        <li><a href="/bairros/sao-vicente/vila-sao-jorge.html">Vila São Jorge</a></li>
+      </ul>
+    </details>
+  </section>
+  <section class="card">
+    <div class="card-head">
+      <span class="thumb" style="background:linear-gradient(135deg,#EC4899,#BE185D)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span>
+      <div class="info">
+        <h2><a href="/bairros/bertioga/index.html">Bertioga</a> <span class="count">10 bairros</span></h2>
+        <p>Riviera e Indaiá: oportunidades de investimento e lançamentos.</p>
+      </div>
+    </div>
+    <details>
+      <summary>Ver todos os bairros de Bertioga <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <ul class="bairros">
+        <li><a href="/bairros/bertioga/centro-historico.html">Centro Histórico</a></li>
+        <li><a href="/bairros/bertioga/centro.html">Centro</a></li>
+        <li><a href="/bairros/bertioga/guaratuba.html">Guaratuba</a></li>
+        <li><a href="/bairros/bertioga/indaia.html">Indaiá</a></li>
+        <li><a href="/bairros/bertioga/jardim-sao-paulo.html">Jardim São Paulo</a></li>
+        <li><a href="/bairros/bertioga/jardim-veneza.html">Jardim Veneza</a></li>
+        <li><a href="/bairros/bertioga/maitinga.html">Maitinga</a></li>
+        <li><a href="/bairros/bertioga/praia-do-ribeira.html">Praia do Ribeira</a></li>
+        <li><a href="/bairros/bertioga/riviera.html">Riviera de São Lourenço</a></li>
+        <li><a href="/bairros/bertioga/vila-veneza.html">Vila Veneza</a></li>
+      </ul>
+    </details>
+  </section>
+  <section class="card">
+    <div class="card-head">
+      <span class="thumb" style="background:linear-gradient(135deg,#14B8A6,#0F766E)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span>
+      <div class="info">
+        <h2><a href="/bairros/itanhaem/index.html">Itanhaém</a> <span class="count">10 bairros</span></h2>
+        <p>Centro, Suarão e Gaivota: bairros com potencial de valorização.</p>
+      </div>
+    </div>
+    <details>
+      <summary>Ver todos os bairros de Itanhaém <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <ul class="bairros">
+        <li><a href="/bairros/itanhaem/centro-historico.html">Centro Histórico</a></li>
+        <li><a href="/bairros/itanhaem/centro.html">Centro</a></li>
+        <li><a href="/bairros/itanhaem/condominios.html">Condomínios</a></li>
+        <li><a href="/bairros/itanhaem/gaivota.html">Gaivota</a></li>
+        <li><a href="/bairros/itanhaem/jardim-mariana.html">Jardim Mariana</a></li>
+        <li><a href="/bairros/itanhaem/jardim-sao-paulo.html">Jardim São Paulo</a></li>
+        <li><a href="/bairros/itanhaem/praia.html">Praia</a></li>
+        <li><a href="/bairros/itanhaem/suarao.html">Suarão</a></li>
+        <li><a href="/bairros/itanhaem/vila-sao-joao.html">Vila São João</a></li>
+        <li><a href="/bairros/itanhaem/vila-veneza.html">Vila Veneza</a></li>
+      </ul>
+    </details>
+  </section>
+  <section class="card">
+    <div class="card-head">
+      <span class="thumb" style="background:linear-gradient(135deg,#F97316,#C2410C)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span>
+      <div class="info">
+        <h2><a href="/bairros/mongagua/index.html">Mongaguá</a> <span class="count">10 bairros</span></h2>
+        <p>Oportunidades de compra e temporada com preços acessíveis.</p>
+      </div>
+    </div>
+    <details>
+      <summary>Ver todos os bairros de Mongaguá <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <ul class="bairros">
+        <li><a href="/bairros/mongagua/agenor-de-campos.html">Agenor de Campos</a></li>
+        <li><a href="/bairros/mongagua/centro-historico.html">Centro Histórico</a></li>
+        <li><a href="/bairros/mongagua/centro.html">Centro</a></li>
+        <li><a href="/bairros/mongagua/condominios.html">Condomínios</a></li>
+        <li><a href="/bairros/mongagua/itaguai.html">Itaguaí</a></li>
+        <li><a href="/bairros/mongagua/jardim-rio-branco.html">Jardim Rio Branco</a></li>
+        <li><a href="/bairros/mongagua/jardim-veneza.html">Jardim Veneza</a></li>
+        <li><a href="/bairros/mongagua/parque-mar.html">Parque Mar</a></li>
+        <li><a href="/bairros/mongagua/praia.html">Praia</a></li>
+        <li><a href="/bairros/mongagua/vila-sao-paulo.html">Vila São Paulo</a></li>
+      </ul>
+    </details>
+  </section>
+  <section class="card">
+    <div class="card-head">
+      <span class="thumb" style="background:linear-gradient(135deg,#6366F1,#4338CA)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span>
+      <div class="info">
+        <h2><a href="/bairros/peruibe/index.html">Peruíbe</a> <span class="count">10 bairros</span></h2>
+        <p>Centro, Guaraú e Jardim Ribamar: mercado em valorização.</p>
+      </div>
+    </div>
+    <details>
+      <summary>Ver todos os bairros de Peruíbe <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <ul class="bairros">
+        <li><a href="/bairros/peruibe/centro-historico.html">Centro Histórico</a></li>
+        <li><a href="/bairros/peruibe/centro.html">Centro</a></li>
+        <li><a href="/bairros/peruibe/condominios.html">Condomínios</a></li>
+        <li><a href="/bairros/peruibe/guarau.html">Guaraú</a></li>
+        <li><a href="/bairros/peruibe/jardim-ribamar.html">Jardim Ribamar</a></li>
+        <li><a href="/bairros/peruibe/jardim-sao-paulo.html">Jardim São Paulo</a></li>
+        <li><a href="/bairros/peruibe/jardim-veneza.html">Jardim Veneza</a></li>
+        <li><a href="/bairros/peruibe/praia.html">Praia</a></li>
+        <li><a href="/bairros/peruibe/sao-joao-batista.html">São João Batista</a></li>
+        <li><a href="/bairros/peruibe/vila-veneza.html">Vila Veneza</a></li>
+      </ul>
+    </details>
+  </section>
+  <section class="card">
+    <div class="card-head">
+      <span class="thumb" style="background:linear-gradient(135deg,#84CC16,#4D7C0F)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span>
+      <div class="info">
+        <h2><a href="/bairros/caraguatatuba/index.html">Caraguatatuba</a> <span class="count">10 bairros</span></h2>
+        <p>Litoral norte em valorização; maior polo de serviços da região.</p>
+      </div>
+    </div>
+    <details>
+      <summary>Ver todos os bairros de Caraguatatuba <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <ul class="bairros">
+        <li><a href="/bairros/caraguatatuba/camburi.html">Camburi</a></li>
+        <li><a href="/bairros/caraguatatuba/centro.html">Centro</a></li>
+        <li><a href="/bairros/caraguatatuba/indaia.html">Indaiá</a></li>
+        <li><a href="/bairros/caraguatatuba/jaguaribe.html">Jaguaribe</a></li>
+        <li><a href="/bairros/caraguatatuba/jaraguá.html">Jaraguá</a></li>
+        <li><a href="/bairros/caraguatatuba/jardim-sao-paulo.html">Jardim São Paulo</a></li>
+        <li><a href="/bairros/caraguatatuba/martim-de-sa.html">Martim de Sá</a></li>
+        <li><a href="/bairros/caraguatatuba/massaguaçu.html">Massaguaçu</a></li>
+        <li><a href="/bairros/caraguatatuba/prainha.html">Prainha</a></li>
+        <li><a href="/bairros/caraguatatuba/vila-veneza.html">Vila Veneza</a></li>
+      </ul>
+    </details>
+  </section>
+  <section class="card">
+    <div class="card-head">
+      <span class="thumb" style="background:linear-gradient(135deg,#06B6D4,#0E7490)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span>
+      <div class="info">
+        <h2><a href="/bairros/ilhabela/index.html">Ilhabela</a> <span class="count">10 bairros</span></h2>
+        <p>Mercado de ilha premium: oferta limitada e alto ticket médio.</p>
+      </div>
+    </div>
+    <details>
+      <summary>Ver todos os bairros de Ilhabela <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <ul class="bairros">
+        <li><a href="/bairros/ilhabela/armacao.html">Armação</a></li>
+        <li><a href="/bairros/ilhabela/bonete.html">Bonete</a></li>
+        <li><a href="/bairros/ilhabela/fumaca.html">Fumaça</a></li>
+        <li><a href="/bairros/ilhabela/itaguacu.html">Itaguaçu</a></li>
+        <li><a href="/bairros/ilhabela/jardim-sao-paulo.html">Jardim São Paulo</a></li>
+        <li><a href="/bairros/ilhabela/pernambuco.html">Pernambuco</a></li>
+        <li><a href="/bairros/ilhabela/praia-da-enseada.html">Praia da Enseada</a></li>
+        <li><a href="/bairros/ilhabela/saco-da-capela.html">Saco da Capela</a></li>
+        <li><a href="/bairros/ilhabela/vila-veneza.html">Vila Veneza</a></li>
+        <li><a href="/bairros/ilhabela/vila.html">Vila (Centro)</a></li>
+      </ul>
+    </details>
+  </section>
+  <section class="card">
+    <div class="card-head">
+      <span class="thumb" style="background:linear-gradient(135deg,#EF4444,#B91C1C)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span>
+      <div class="info">
+        <h2><a href="/bairros/sao-sebastiao/index.html">São Sebastião</a> <span class="count">8 bairros</span></h2>
+        <p>Maresias e Juquehy concentram o alto padrão; centro histórico charmoso.</p>
+      </div>
+    </div>
+    <details>
+      <summary>Ver todos os bairros de São Sebastião <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <ul class="bairros">
+        <li><a href="/bairros/sao-sebastiao/barra-do-sahy.html">Barra do Sahy</a></li>
+        <li><a href="/bairros/sao-sebastiao/boraceia.html">Boracéia</a></li>
+        <li><a href="/bairros/sao-sebastiao/centro-historico.html">Centro Histórico</a></li>
+        <li><a href="/bairros/sao-sebastiao/guaeca.html">Guaecá</a></li>
+        <li><a href="/bairros/sao-sebastiao/jardim-sao-paulo.html">Jardim São Paulo</a></li>
+        <li><a href="/bairros/sao-sebastiao/juquehy.html">Juquehy</a></li>
+        <li><a href="/bairros/sao-sebastiao/maresias.html">Maresias</a></li>
+        <li><a href="/bairros/sao-sebastiao/vila-veneza.html">Vila Veneza</a></li>
+      </ul>
+    </details>
+  </section>
+  <section class="card">
+    <div class="card-head">
+      <span class="thumb" style="background:linear-gradient(135deg,#A855F7,#7E22CE)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span>
+      <div class="info">
+        <h2><a href="/bairros/ubatuba/index.html">Ubatuba</a> <span class="count">8 bairros</span></h2>
+        <p>Capital do surf, com mais de 100 praias e mercado aquecido de temporada.</p>
+      </div>
+    </div>
+    <details>
+      <summary>Ver todos os bairros de Ubatuba <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <ul class="bairros">
+        <li><a href="/bairros/ubatuba/centro.html">Centro</a></li>
+        <li><a href="/bairros/ubatuba/domingues.html">Domingues</a></li>
+        <li><a href="/bairros/ubatuba/itagua.html">Itaguá</a></li>
+        <li><a href="/bairros/ubatuba/jardim-sao-paulo.html">Jardim São Paulo</a></li>
+        <li><a href="/bairros/ubatuba/matarazzo.html">Matarazzo</a></li>
+        <li><a href="/bairros/ubatuba/sao-lourenco.html">São Lourenço</a></li>
+        <li><a href="/bairros/ubatuba/silveira.html">Silveira</a></li>
+        <li><a href="/bairros/ubatuba/vila-veneza.html">Vila Veneza</a></li>
+      </ul>
+    </details>
+  </section>
+</main>
+<div class="cta">
+  <p>Quer vender ou alugar por temporada? Cadastre seu imóvel e receba avaliação, fotografia profissional e divulgação.</p>
+  <a href="/cadastrar-imovel.html">Cadastrar imóvel →</a>
+</div>
+<!-- Mobile sticky anchor placeholder -->
+<div id="pd-mobile-anchor" style="position:fixed; bottom:0; left:0; width:100%; padding:.6rem; background:#0f2942; color:#fff; text-align:center; display:none; z-index:50;">
+  <a href="/cadastrar-imovel.html" style="color:#22d3ee; font-weight:800; text-decoration:none;">Cadastrar Imóvel</a>
+</div>
+<script>
+  window.PD_ADS = window.PD_ADS || {};
+  PD_ADS.boot({
+    adUnitPath: '/1234/praia-digital',
+    targeting: {
+      div: 'pd-gpt-slot',
+      sizes: [[300,250],[336,280],[320,100]],
+      key: 'page_type',
+      keyValues: { page_type: 'bairros' }
+    },
+    enableStickyMobile: true,
+    refreshIntervalMs: 30000
+  });
+</script>
+<script src="/assets/js/ads-optimization.js"></script>
+<script src="/assets/js/engagement.js"></script>
 <meta name="pd-shared-footer">
 <script src="https://praia.digital/js/shared.js?v=2.0"></script>
 </body>
