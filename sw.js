@@ -1,5 +1,5 @@
-const CACHE_NAME = 'praia-digital-static-v3';
-const HTML_CACHE = 'praia-digital-html-v3';
+const CACHE_NAME = 'praia-digital-static-v4';
+const HTML_CACHE = 'praia-digital-html-v4';
 
 const STATIC_ASSETS = [
   '/',
@@ -32,7 +32,7 @@ self.addEventListener('activate', (event) => {
 });
 
 // Network-first com fallback ao cache: garante que JS/CSS atualizados
-// (ex.: modulo de breadcrumb no shared.js) cheguem aos visitantes.
+// cheguem aos visitantes (breadcrumb global removido por decisao em 27/09/2026).
 function networkFirst(request) {
   return fetch(request)
     .then((response) => {
