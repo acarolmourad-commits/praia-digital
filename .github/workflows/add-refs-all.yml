@@ -1,0 +1,73 @@
+name: add-refs-all-cities
+on:
+  push:
+    paths:
+      - '.github/workflows/add-refs-all.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  edit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Propagate Referencias section to all bairros pages
+        run: |
+          python3 << 'PYEOF'
+          import pathlib, re
+          H2 = 'Referências e informações da região'
+          CITIES = ['bertioga','caraguatatuba','guaruja','ilhabela','itanhaem','mongagua','peruibe','praia-grande','santos','sao-sebastiao','sao-vicente','ubatuba']
+          def extract_section(html):
+              i = html.find(H2)
+              if i == -1: return None
+              start = html.rfind('<h2', 0, i)
+              g = html.find('<div class="grid', i)
+              if g == -1: return None
+              bal = 0
+              for m in re.finditer(r'<div\b|</div>', html[g:]):
+                  bal += 1 if m.group(0) == '<div' else -1
+                  if bal == 0:
+                      return html[start:g + m.end()]
+              return None
+          total = 0
+          for city in CITIES:
+              cf = pathlib.Path('cidades') / (city + '.html')
+              if not cf.exists():
+                  print(city, 'NO CITY PAGE'); continue
+              sec = extract_section(cf.read_text(encoding='utf-8'))
+              if not sec:
+                  print(city, 'NO SECTION'); continue
+              d = pathlib.Path('bairros') / city
+              if not d.is_dir():
+                  print(city, 'NO BAIRROS DIR'); continue
+              added = 0
+              for p in sorted(d.glob('*.html')):
+                  if p.name == 'index.html': continue
+                  t = p.read_text(encoding='utf-8')
+                  if H2 in t: continue
+                  idx = t.find('<div id="lm-form"')
+                  if idx == -1:
+                      idx = t.find('</main>')
+                      if idx == -1:
+                          print('NOANCHOR', p); continue
+                  nt = t[:idx] + '
+      ' + sec.strip() + '
+
+    ' + t[idx:]
+                  p.write_text(nt, encoding='utf-8')
+                  added += 1
+              total += added
+              print(city, 'added', added)
+          print('TOTAL', total)
+          PYEOF
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "feat(bairros): propaga secao Referencias da pagina da cidade para todas as paginas de bairro (10 cidades, ~96 paginas)"
+            git push
+          fi
