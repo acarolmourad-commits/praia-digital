@@ -1,0 +1,86 @@
+name: add-refs-santos
+on:
+  push:
+    paths:
+      - '.github/workflows/add-refs-santos.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  edit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add Referencias section to Santos bairros + clean dup script tag
+        run: |
+          python3 << 'PYEOF'
+          import pathlib, re
+
+          SECTION = '''
+      <h2>Refer\u00eancias e informa\u00e7\u00f5es da regi\u00e3o</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>\U0001F6A2 Balsa Santos\u2013Guaruj\u00e1 (travessia gratuita para pedestres)</h3>
+          <p>Para quem est\u00e1 em {bairro} e quer atravessar para o Guaruj\u00e1, a travessia de balsa \u00e9 operada pelo Estado de S\u00e3o Paulo (DERSA), com funcionamento <strong>24 horas por dia</strong>, de forma cont\u00ednua. Pedestres pagam tarifa reduzida (R$ 3,10) e a <strong>gratuidade para pedestres est\u00e1 confirmada a partir do segundo semestre de 2026</strong>, com a nova concess\u00e3o (PPP). Tarifas, filas e o sistema Hora Marcada est\u00e3o no portal p\u00fablico do governo de SP:</p>
+          <p><a href="https://semil.sp.gov.br/2024/08/travessias-governo-entrega-oitava-embarcacao-modernizada-e-prepara-ppp/" rel="noopener" target="_blank">Travessias \u2014 Governo de SP (p\u00fablico e gratuito)</a></p>
+        </div>
+        <div class="card">
+          <h3>\U0001F37D\uFE0F Gastronomia premiada em Santos</h3>
+          <ul>
+            <li><strong>Mad\u00ea</strong> (Boqueir\u00e3o): reconhecido pelo 50 Best Discovery; celebra 8 anos com festival gastron\u00f4mico em 26/out/2026.</li>
+            <li><strong>Espanhol Sabores da Terra</strong>: sede do jantar de encerramento da Restaurant Week (10/out).</li>
+            <li>Santos \u00e9 o cora\u00e7\u00e3o da <strong>Baixada Santista Restaurant Week</strong> \u2014 13\u00aa edi\u00e7\u00e3o at\u00e9 11/out/2026, recorde de 43 restaurantes com menus a pre\u00e7o fixo.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>\U0001F389 Eventos e programa\u00e7\u00e3o \u2014 Santos (fim de 2026)</h3>
+          <ul>
+            <li><strong>at\u00e9 11/out/2026</strong> \u2014 Baixada Santista Restaurant Week (43 restaurantes).</li>
+            <li><strong>17/out/2026</strong> \u2014 Crema Cultural nos Arcos do Valongo (m\u00fasica + \u00e1rea gastron\u00f4mica).</li>
+            <li><strong>26/out/2026</strong> \u2014 Festival de 8 anos do restaurante Mad\u00ea, 16h \u00e0s 22h.</li>
+          </ul>
+          <p>Programa\u00e7\u00e3o sujeita a altera\u00e7\u00f5es; confira os canais oficiais dos organizadores.</p>
+        </div>
+      </div>
+'''
+
+          added, cleaned = [], 0
+          # 1) cleanup duplicate closing script tag everywhere
+          for p in pathlib.Path('.').rglob('*.html'):
+              t = p.read_text(encoding='utf-8')
+              nt = t.replace('</script></script>', '</script>')
+              if nt != t:
+                  p.write_text(nt, encoding='utf-8')
+                  cleaned += 1
+
+          # 2) insert section in santos bairros
+          for p in sorted(pathlib.Path('bairros/santos').glob('*.html')):
+              if p.name == 'index.html':
+                  continue
+              t = p.read_text(encoding='utf-8')
+              if 'Refer\u00eancias e informa\u00e7\u00f5es da regi\u00e3o' in t:
+                  continue
+              m = re.search(r'Im\u00f3veis em (.*?) \u2014', t)
+              bairro = m.group(1) if m else p.stem.replace('-', ' ').title()
+              idx = t.find('<div id="lm-form"')
+              if idx == -1:
+                  print('SKIP no lm-form:', p)
+                  continue
+              p.write_text(t[:idx] + SECTION.format(bairro=bairro) + '    ' + t[idx:], encoding='utf-8')
+              added.append(f'{p} ({bairro})')
+          print(f'cleaned dup script: {cleaned}')
+          print(f'section added: {len(added)}')
+          for a in added:
+              print(a)
+          PYEOF
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "feat(bairros/santos): adiciona se\u00e7\u00e3o 'Refer\u00eancias e informa\u00e7\u00f5es da regi\u00e3o' em 15 p\u00e1ginas + fix: remove tag </script> duplicada"
+            git push
+          fi
