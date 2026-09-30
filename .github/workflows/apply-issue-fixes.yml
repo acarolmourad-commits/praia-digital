@@ -1,0 +1,25 @@
+name: apply-issue-fixes
+on:
+  push:
+    paths:
+      - 'scripts/apply_issue_fixes.py'
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/apply_issue_fixes.py
+      - name: Commit and push fixes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "fix: issues #31 #22 #21 #24 #25 - cidade-servico (48 fix + 36 novas), menu Baixada, nav, bairros, hub cidades"
+            git push
+          fi
