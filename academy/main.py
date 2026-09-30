@@ -7,6 +7,7 @@ from academy.core.middleware import RequestLoggingMiddleware, ErrorHandlerMiddle
 from academy.routers import auth, courses, academy, admin, payments, recommendations, automation, automation_whatsapp, certificates, monitoring, automation_email, leads, admin_leads, content, admin_content, student, proprietarios
 from academy.routers.content_delivery import router as content_delivery_router
 from academy.financeiro.router import router as financeiro_router
+from academy.admin.router import router as admin_router
 import os
 
 Base.metadata.create_all(bind=engine)
@@ -53,6 +54,7 @@ app.include_router(admin_content.router)
 app.include_router(student.router)
 app.include_router(content_delivery_router)
 app.include_router(proprietarios.router)
+app.include_router(admin_router)
 
 # Servir frontend da Academy sob /education
 frontend_dir = Path(__file__).resolve().parent.parent / "education"
