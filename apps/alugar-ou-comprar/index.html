@@ -44,7 +44,35 @@
     .links a span{color:#0EA5E9}
     footer{text-align:center;color:#94A3B8;font-size:12px;padding:20px}
     .note{font-size:12px;color:#64748B;margin-top:12px}
+    table{width:100%;border-collapse:collapse;font-size:14px}
+    th{background:#F8FAFC;text-align:left;padding:8px 10px;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#475569}
+    td{padding:8px 10px;border-bottom:1px solid #F1F5F9}
+    tr:last-child td{border-bottom:none}
+    td a{color:#0EA5E9;text-decoration:none;font-weight:600}
+    .tag{display:inline-block;background:#ECFDF5;color:#065F46;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;margin-left:6px}
+    .faq details{border:1px solid #E5E7EB;border-radius:10px;margin-bottom:8px;background:#fff}
+    .faq summary{cursor:pointer;padding:12px 14px;font-weight:600;font-size:14px;list-style:none}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq details p{padding:0 14px 12px;font-size:14px;color:#475569}
+    .badge{padding:2px 8px;border-radius:999px;font-size:11px;font-weight:800}
+    .b-rent{background:#DBEAFE;color:#1E40AF}
+    .b-buy{background:#D1FAE5;color:#065F46}
+    .b-tie{background:#FEF3C7;color:#92400E}
+
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Vale mais a pena alugar ou comprar imóvel no litoral de SP em 2026?", "acceptedAnswer": {"@type": "Answer", "text": "Com a Selic em 13,75% a.a. e financiamento a partir de 11,19% a.a., alugar tende a ser mais barato para permanências curtas (até ~5 anos), pois a entrada rende ~13,6% a.a. em CDB. Comprar ganha em horizontes de 10–15 anos ou quando o yield anual do aluguel supera ~8% do valor do imóvel."}},
+      {"@type": "Question", "name": "O que é o yield do aluguel e como interpretar?", "acceptedAnswer": {"@type": "Answer", "text": "Yield é o aluguel anual dividido pelo preço do imóvel. Abaixo de ~6% a.a., alugar costuma sair mais barato; entre 6% e 8%, o resultado depende do prazo; acima de ~8%, comprar tende a ser vantajoso."}},
+      {"@type": "Question", "name": "Como o IGP-M baixo afeta meu aluguel em 2026?", "acceptedAnswer": {"@type": "Answer", "text": "Com o IGP-M em 12 meses em apenas 0,95% (jul/2026), contratos reajustados por esse índice ficam praticamente congelados. Na renovação, vale negociar a troca pelo IPCA (4,22% em 12 meses) ou usar o índice baixo como argumento."}},
+      {"@type": "Question", "name": "Quanto custa comprar um imóvel além do valor de venda?", "acceptedAnswer": {"@type": "Answer", "text": "No litoral de SP, some ITBI (2–3% conforme o município), escritura e registro em cartório (~1%) e eventuais custos de avaliação do banco. Um imóvel de R$ 500 mil pode ter R$ 15–20 mil de custos de fechamento."}},
+      {"@type": "Question", "name": "Tabela Price ou SAC: qual escolher?", "acceptedAnswer": {"@type": "Answer", "text": "Na Price a parcela é fixa; no SAC começa ~20–30% mais alta e cai todo mês, com menos juros totais. Se o orçamento comporta a parcela inicial do SAC (dentro do limite de 30% da renda), ele costuma ser mais barato no longo prazo."}}
+    ]
+  }
+  </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9562601722232986" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -97,6 +125,46 @@
       <li><strong>Valorização realista:</strong> faixa conservadora litoral paulista 6–8% a.a.; acima de 10% só em bairros em forte expansão. Ver <a href="https://praia.digital/apps/comparador-cidades/">Comparador de Cidades</a>.</li>
     </ul>
     <p class="note">Fontes: API de dados abertos do Banco Central do Brasil (séries SGS 11, 13522, 4175, 226), apurado em 29/09/2026.</p>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size:17px;margin-bottom:10px">🏘️ Aluguel vs. compra por cidade <span class="tag">set/2026</span></h2>
+    <p style="font-size:14px;color:#475569;margin-bottom:8px">Exemplo de apartamento de 2 quartos (60–75 m²): preço médio de venda, aluguel mensal típico e yield anual. Quanto maior o yield, mais a compra se aproxima do empate.</p>
+    <table>
+      <tr><th>Cidade</th><th>Preço típico</th><th>Aluguel/mês</th><th>Yield a.a.</th><th>Tendência</th></tr>
+      <tr><td><a href="/bairros/santos/index.html">Santos</a></td><td>R$ 560 mil</td><td>R$ 2.800</td><td>6,0%</td><td><span class="badge b-tie">empate</span></td></tr>
+      <tr><td><a href="/bairros/ilhabela/index.html">Ilhabela</a></td><td>R$ 540 mil</td><td>R$ 2.600</td><td>5,8%</td><td><span class="badge b-rent">alugar</span></td></tr>
+      <tr><td><a href="/bairros/sao-sebastiao/index.html">São Sebastião</a></td><td>R$ 488 mil</td><td>R$ 2.400</td><td>5,9%</td><td><span class="badge b-rent">alugar</span></td></tr>
+      <tr><td><a href="/bairros/guaruja/index.html">Guarujá</a></td><td>R$ 368 mil</td><td>R$ 2.100</td><td>6,8%</td><td><span class="badge b-tie">empate</span></td></tr>
+      <tr><td><a href="/bairros/sao-vicente/index.html">São Vicente</a></td><td>R$ 315 mil</td><td>R$ 1.900</td><td>7,2%</td><td><span class="badge b-buy">comprar</span></td></tr>
+      <tr><td><a href="/bairros/ubatuba/index.html">Ubatuba</a></td><td>R$ 308 mil</td><td>R$ 1.800</td><td>7,0%</td><td><span class="badge b-tie">empate</span></td></tr>
+      <tr><td><a href="/bairros/praia-grande/index.html">Praia Grande</a></td><td>R$ 270 mil</td><td>R$ 1.700</td><td>7,6%</td><td><span class="badge b-buy">comprar</span></td></tr>
+      <tr><td><a href="/bairros/caraguatatuba/index.html">Caraguatatuba</a></td><td>R$ 255 mil</td><td>R$ 1.600</td><td>7,5%</td><td><span class="badge b-buy">comprar</span></td></tr>
+      <tr><td><a href="/bairros/bertioga/index.html">Bertioga</a></td><td>R$ 240 mil</td><td>R$ 1.500</td><td>7,5%</td><td><span class="badge b-buy">comprar</span></td></tr>
+      <tr><td><a href="/bairros/itanhaem/index.html">Itanhaém</a></td><td>R$ 180 mil</td><td>R$ 1.200</td><td>8,0%</td><td><span class="badge b-buy">comprar</span></td></tr>
+      <tr><td><a href="/bairros/mongagua/index.html">Mongaguá</a></td><td>R$ 158 mil</td><td>R$ 1.100</td><td>8,4%</td><td><span class="badge b-buy">comprar</span></td></tr>
+      <tr><td><a href="/bairros/peruibe/index.html">Peruíbe</a></td><td>R$ 143 mil</td><td>R$ 1.000</td><td>8,4%</td><td><span class="badge b-buy">comprar</span></td></tr>
+    </table>
+    <p class="note">Estimativas Praia Digital com base em anúncios ativos e médias de mercado (set/2026). Yield = aluguel anual ÷ preço de venda. Tendência considera juros atuais (11,19% a.a.) e horizonte de 10 anos.</p>
+  </div>
+
+  <div class="card faq">
+    <h2 style="font-size:17px;margin-bottom:10px">❓ Perguntas frequentes</h2>
+    <details><summary>Vale mais alugar ou comprar no litoral em 2026?</summary><p>Depende do horizonte: até ~5 anos, alugar tende a vencer (a entrada rende ~13,6% a.a. em CDB 100% CDI). Acima de 10–15 anos, comprar ganha — especialmente em cidades com yield acima de 7,5%, como Praia Grande, Mongaguá e Peruíbe.</p></details>
+    <details><summary>O que é o yield do aluguel?</summary><p>Aluguel anual ÷ preço do imóvel. Abaixo de ~6% a.a., alugar sai mais barato; acima de ~8%, comprar tende a ser vantajoso. No litoral, os yields vão de ~5,8% (Ilhabela) a ~8,4% (Mongaguá/Peruíbe).</p></details>
+    <details><summary>IGP-M em 0,95%: o que muda no meu aluguel?</summary><p>Contratos com IGP-M ficam quase congelados no reajuste anual. Na renovação, negocie: o IPCA (4,22%) é o índice mais comum, mas o IGP-M baixo é argumento para segurar o valor.</p></details>
+    <details><summary>Quais custos a compra tem além do preço?</summary><p>ITBI (2–3% conforme o município), escritura e registro (~1%), avaliação bancária e seguros embutidos no CET. Em um imóvel de R$ 500 mil, reserve R$ 15–20 mil de fechamento.</p></details>
+    <details><summary>Price ou SAC?</summary><p>Price: parcela fixa. SAC: parcela inicial ~20–30% maior, caindo ao longo do contrato, com menos juros totais. Se couber nos 30% da renda, o SAC costuma ser mais barato.</p></details>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size:17px;margin-bottom:10px">📍 Aprofunde por bairro</h2>
+    <p style="font-size:14px;color:#475569;margin-bottom:8px">Preço de venda e aluguel variam muito entre bairros da mesma cidade. Consulte os guias com m², rentabilidade e lançamentos:</p>
+    <div class="links">
+      <a href="/bairros/"><span>🏙️ Índice de bairros</span> — 123 bairros em 12 cidades do litoral</a>
+      <a href="/apps/valor-imovel/">💰 Estime o valor do imóvel que você quer comparar</a>
+      <a href="/apps/simulador-roi-temporada/">🏖️ Vai alugar por temporada? Simule o ROI</a>
+    </div>
   </div>
 
   <div class="card">
