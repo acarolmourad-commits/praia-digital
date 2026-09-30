@@ -393,6 +393,24 @@ class LancamentoCreate(BaseModel):
     observacao: Optional[str] = None
 
 
+class LancamentoPatch(BaseModel):
+    ordem_id: Optional[int] = None
+    cliente_id: Optional[int] = None
+    tipo: Optional[TipoLancamento] = None
+    categoria: Optional[str] = None
+    descricao: Optional[str] = None
+    valor_previsto: Optional[Decimal] = None
+    valor_faturado: Optional[Decimal] = None
+    valor_pago: Optional[Decimal] = None
+    data_prevista: Optional[date] = None
+    data_vencimento: Optional[date] = None
+    data_pagamento: Optional[date] = None
+    forma_pagamento: Optional[str] = None
+    status: Optional[StatusLancamento] = None
+    documento_url: Optional[str] = None
+    observacao: Optional[str] = None
+
+
 class LancamentoOut(BaseModel):
     id: int
     ordem_id: Optional[int]

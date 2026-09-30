@@ -43,7 +43,7 @@ from academy.admin.schemas import (
     AprovacaoCreate, AprovacaoOut,
     OrdemCreate, OrdemOut,
     RecebimentoCreate, RecebimentoOut,
-    LancamentoCreate, LancamentoOut,
+    LancamentoCreate, LancamentoOut, LancamentoPatch,
     AuditoriaOut,
     SolicitacaoFilter, LancamentoFilter,
 )
@@ -61,7 +61,7 @@ def admin_login(payload: dict, db: Session = Depends(get_db)):
     if not password:
         raise HTTPException(400, "Password required")
 
-    from academy.core.auth import create_access_token  # already imported at top
+    from academy.core.auth import create_access_token
 
     admin_user = db.query(Usuario).filter(Usuario.username == "admin").first()
     if not admin_user:
@@ -69,7 +69,7 @@ def admin_login(payload: dict, db: Session = Depends(get_db)):
             username="admin",
             nome="Administrador Praia Digital",
             email="admin@praia.digital",
-            senha_hash=get_password_hash(password),
+            senha_hash=hash_password(password),
             perfil="ADMINISTRADOR",
         )
         db.add(admin_user)
@@ -241,7 +241,7 @@ def create_usuario(payload: UsuarioCreate,
                    admin=Depends(admin_required)):
     if db.query(Usuario).filter(Usuario.username == payload.username).first():
         raise HTTPException(409, "Username já existe")
-    from academy.core.security import get_password_hash
+    from academy.core.security import hash_password as get_password_hash
     u = Usuario(
         username=payload.username,
         nome=payload.nome,
@@ -317,6 +317,15 @@ def create_solicitacao(payload: SolicitacaoCreate,
     log_audit(db, admin.get("id"), "create", "SolicitacaoCompra", s.id,
               valor_novo={"numero": numero, **payload.model_dump()})
     db.commit()
+    return s
+
+
+@router.get("/solicitacoes/{solicitacao_id}", response_model=SolicitacaoOut)
+def get_solicitacao(solicitacao_id: int, db: Session = Depends(get_db),
+                    admin=Depends(admin_required)):
+    s = db.get(SolicitacaoCompra, solicitacao_id)
+    if not s:
+        raise HTTPException(404, "Solicitação não encontrada")
     return s
 
 
@@ -496,7 +505,7 @@ def create_lancamento(payload: LancamentoCreate,
 
 
 @router.patch("/financeiro/lancamentos/{lancamento_id}", response_model=LancamentoOut)
-def update_lancamento(lancamento_id: int, payload: LancamentoCreate,
+def update_lancamento(lancamento_id: int, payload: LancamentoPatch,
                       db: Session = Depends(get_db),
                       admin=Depends(admin_required)):
     """
@@ -558,7 +567,7 @@ def get_resumo(
     admin=Depends(admin_required),
 ):
     """Dashboard executivo — saldo, receitas, despesas, DRE, alertas."""
-    from sqlalchemy import func as sql_func
+    from sqlalchemy import func as sql_func, case as sqlalchemy_case
     from decimal import Decimal
 
     base = db.query(LancamentoFinanceiro)
@@ -569,17 +578,21 @@ def get_resumo(
 
     saldo_previsto = base.with_entities(
         sql_func.sum(
-            sql_func.case((LancamentoFinanceiro.tipo == TipoLancamento.RECEITA,
-                           LancamentoFinanceiro.valor_previsto),
-                           else_=LancamentoFinanceiro.valor_previsto * -1)
+            sqlalchemy_case(
+                (LancamentoFinanceiro.tipo == TipoLancamento.RECEITA,
+                 LancamentoFinanceiro.valor_previsto),
+                else_=(LancamentoFinanceiro.valor_previsto * -1)
+            )
         )
     ).scalar() or Decimal("0")
 
     saldo_pago = base.with_entities(
         sql_func.sum(
-            sql_func.case((LancamentoFinanceiro.tipo == TipoLancamento.RECEITA,
-                           LancamentoFinanceiro.valor_pago),
-                           else_=LancamentoFinanceiro.valor_pago * -1)
+            sqlalchemy_case(
+                (LancamentoFinanceiro.tipo == TipoLancamento.RECEITA,
+                 LancamentoFinanceiro.valor_pago),
+                else_=(LancamentoFinanceiro.valor_pago * -1)
+            )
         )
     ).scalar() or Decimal("0")
 
