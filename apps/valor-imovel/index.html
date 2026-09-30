@@ -48,7 +48,31 @@
     .links a span{color:#0EA5E9}
     footer{text-align:center;color:#94A3B8;font-size:12px;padding:20px}
     .note{font-size:12px;color:#64748B;margin-top:12px;text-align:left}
+    table{width:100%;border-collapse:collapse;font-size:14px}
+    th{background:#F8FAFC;text-align:left;padding:8px 10px;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#475569}
+    td{padding:8px 10px;border-bottom:1px solid #F1F5F9}
+    tr:last-child td{border-bottom:none}
+    td a{color:#0EA5E9;text-decoration:none;font-weight:600}
+    .faq details{border:1px solid #E5E7EB;border-radius:10px;margin-bottom:8px;background:#fff}
+    .faq summary{cursor:pointer;padding:12px 14px;font-weight:600;font-size:14px;list-style:none}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq details p{padding:0 14px 12px;font-size:14px;color:#475569}
+    .tag{display:inline-block;background:#ECFDF5;color:#065F46;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;margin-left:6px}
+
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Como é calculada a estimativa de valor do imóvel?", "acceptedAnswer": {"@type": "Answer", "text": "Multiplicamos a média de preço por m² da cidade (dados de mercado de setembro de 2026) pela área construída, e aplicamos ajustes por número de quartos, estado de conservação, proximidade do mar, mobília, condomínio e vagas de garagem. O resultado é uma faixa de ±7%."}},
+      {"@type": "Question", "name": "Qual cidade do litoral tem o metro quadrado mais caro?", "acceptedAnswer": {"@type": "Answer", "text": "Santos lidera com média de R$ 8.000/m², chegando a R$ 12 mil/m² em bairros frente ao mar como Gonzaga e Boqueirão. Na sequência vêm Ilhabela (R$ 7.200/m²) e São Sebastião (R$ 6.500/m²)."}},
+      {"@type": "Question", "name": "Imóvel frente ao mar valoriza quanto a mais?", "acceptedAnswer": {"@type": "Answer", "text": "No litoral paulista, a frente para o mar adiciona em média 35% ao valor do m². Estar a até 200 metros da praia agrega cerca de 12%."}},
+      {"@type": "Question", "name": "A estimativa substitui uma avaliação profissional?", "acceptedAnswer": {"@type": "Answer", "text": "Não. A ferramenta dá uma faixa inicial baseada em médias de mercado. Para precificar de fato, recomenda-se avaliação profissional que considera andar, vista, documentação e comparáveis reais do bairro."}},
+      {"@type": "Question", "name": "Qual cidade do litoral de SP tem o imóvel mais barato?", "acceptedAnswer": {"@type": "Answer", "text": "Peruíbe (R$ 1.900/m²), Mongaguá (R$ 2.100/m²) e Itanhaém (R$ 2.400/m²) têm os menores valores médios por m² do litoral paulista, com boa liquidez para temporada."}}
+    ]
+  }
+  </script>
 </head>
 <body>
 <header>
@@ -91,6 +115,47 @@
       <div class="range" id="range"></div>
       <div class="breakdown" id="bd"></div>
       <p class="note">⚠️ Estimativa automatizada com base em médias de mercado do litoral SP (coletadas em set/2026). Santos frente ao mar recalibrado para R$8–12 mil/m². Para avaliação profissional precisa, fale com nossa equipe.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size:17px;margin-bottom:10px">📊 Preço médio por m² no litoral de SP <span class="tag">set/2026</span></h2>
+    <table>
+      <tr><th>Cidade</th><th>Média R$/m²</th><th>Frente mar</th><th>Guia</th></tr>
+      <tr><td>Santos</td><td>R$ 8.000</td><td>R$ 8–12 mil</td><td><a href="/bairros/santos/index.html">15 bairros</a></td></tr>
+      <tr><td>Ilhabela</td><td>R$ 7.200</td><td>até R$ 10 mil</td><td><a href="/bairros/ilhabela/index.html">10 bairros</a></td></tr>
+      <tr><td>São Sebastião</td><td>R$ 6.500</td><td>R$ 7–9 mil (Maresias/Juquehy)</td><td><a href="/bairros/sao-sebastiao/index.html">8 bairros</a></td></tr>
+      <tr><td>Guarujá</td><td>R$ 4.900</td><td>R$ 6–8 mil (Enseada/Astúrias)</td><td><a href="/bairros/guaruja/index.html">12 bairros</a></td></tr>
+      <tr><td>São Vicente</td><td>R$ 4.200</td><td>até R$ 6 mil</td><td><a href="/bairros/sao-vicente/index.html">8 bairros</a></td></tr>
+      <tr><td>Ubatuba</td><td>R$ 4.100</td><td>R$ 5–7 mil (Itaguá)</td><td><a href="/bairros/ubatuba/index.html">8 bairros</a></td></tr>
+      <tr><td>Praia Grande</td><td>R$ 3.600</td><td>R$ 4–6 mil (Ocian/Caiçara)</td><td><a href="/bairros/praia-grande/index.html">12 bairros</a></td></tr>
+      <tr><td>Caraguatatuba</td><td>R$ 3.400</td><td>até R$ 5 mil (Martim de Sá)</td><td><a href="/bairros/caraguatatuba/index.html">10 bairros</a></td></tr>
+      <tr><td>Bertioga</td><td>R$ 3.200</td><td>R$ 8–15 mil (Riviera)</td><td><a href="/bairros/bertioga/index.html">10 bairros</a></td></tr>
+      <tr><td>Itanhaém</td><td>R$ 2.400</td><td>até R$ 4 mil</td><td><a href="/bairros/itanhaem/index.html">10 bairros</a></td></tr>
+      <tr><td>Mongaguá</td><td>R$ 2.100</td><td>até R$ 3,5 mil</td><td><a href="/bairros/mongagua/index.html">10 bairros</a></td></tr>
+      <tr><td>Peruíbe</td><td>R$ 1.900</td><td>até R$ 3 mil</td><td><a href="/bairros/peruibe/index.html">10 bairros</a></td></tr>
+    </table>
+    <p class="note">Fontes: médias de anúncios ativos, transações recentes e índices de mercado coletados pela Praia Digital em setembro/2026. Valores de frente mar variam por bairro — consulte o guia da cidade para o detalhe.</p>
+  </div>
+
+  <div class="card faq">
+    <h2 style="font-size:17px;margin-bottom:10px">❓ Perguntas frequentes</h2>
+    <details><summary>Como é calculada a estimativa?</summary><p>Multiplicamos a média de R$/m² da cidade (set/2026) pela área construída e aplicamos ajustes por quartos, conservação, proximidade do mar, mobília, condomínio e vagas. O resultado é uma faixa de ±7%.</p></details>
+    <details><summary>Qual cidade tem o m² mais caro do litoral?</summary><p>Santos, com média de R$ 8.000/m² e até R$ 12 mil/m² frente ao mar (Gonzaga, Boqueirão). Depois vêm Ilhabela (R$ 7.200) e São Sebastião (R$ 6.500). O condomínio Riviera, em Bertioga, é caso à parte: R$ 8–15 mil/m².</p></details>
+    <details><summary>Frente para o mar vale quanto a mais?</summary><p>Em média +35% sobre o valor base. Estar a até 200 m da praia agrega ~12%. Condomínio com lazer completo soma ~8%.</p></details>
+    <details><summary>Onde o imóvel é mais barato?</summary><p>Peruíbe (R$ 1.900/m²), Mongaguá (R$ 2.100/m²) e Itanhaém (R$ 2.400/m²) — boas opções de entrada com demanda de temporada.</p></details>
+    <details><summary>A estimativa substitui avaliação profissional?</summary><p>Não. Ela dá uma faixa inicial. A precificação real depende de andar, vista, sol, documentação e comparáveis do bairro. <a href="/cadastrar-imovel.html" style="color:#0EA5E9">Peça uma avaliação gratuita</a>.</p></details>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size:17px;margin-bottom:10px">📍 Veja o valor por bairro</h2>
+    <p style="font-size:14px;color:#475569;margin-bottom:8px">O m² varia muito dentro da mesma cidade. Explore os guias de bairros com custo por m², rentabilidade de temporada e lançamentos:</p>
+    <div class="links">
+      <a href="/bairros/"><span>🏙️ Índice de bairros</span> — 123 bairros em 12 cidades do litoral</a>
+      <a href="/bairros/santos/index.html">Santos — Gonzaga, Boqueirão, Pompéia e mais</a>
+      <a href="/bairros/guaruja/index.html">Guarujá — Enseada, Pitangueiras, Astúrias e mais</a>
+      <a href="/bairros/sao-sebastiao/index.html">São Sebastião — Maresias, Juquehy, Barra do Sahy e mais</a>
+      <a href="/bairros/ilhabela/index.html">Ilhabela — Vila, Bonete, Saco da Capela e mais</a>
     </div>
   </div>
 
