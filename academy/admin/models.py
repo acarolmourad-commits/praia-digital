@@ -41,7 +41,7 @@ class Usuario(Base):
     email       = Column(String(200), unique=True, nullable=False)
     cpf         = Column(String(14), unique=True, nullable=True)   # <-- dado sensível
     senha_hash  = Column(String(255), nullable=False)             # <-- hash, nunca plain
-    perfil      = Column(Enum(PerfilUsuario), nullable=False)
+    perfil      = Column(Enum(PerfisUsuario), nullable=False)
     ativo       = Column(Boolean, default=True)
     criado_em   = Column(DateTime(timezone=True), server_default=func.now())
     ultimo_login = Column(DateTime(timezone=True), nullable=True)
