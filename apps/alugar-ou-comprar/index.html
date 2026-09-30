@@ -60,7 +60,8 @@
       <div><label>Entrada disponível (R$)</label><input type="number" id="entrada" value="120000"></div>
       <div><label>Taxa de financiamento (% a.a.)</label><input type="number" id="taxa" step="0.01" value="11.19"></div>
       <div><label>Prazo (anos)</label><input type="number" id="anos" value="20"></div>
-      <div><label>Valorização anual do imóvel (%)</label><input type="number" id="valoriz" value="10"></div>
+      <div><label>Valorização anual do imóvel (%)</label><input type="number" id="valoriz" value="7"></div>
+      <div><label>Reajuste anual do aluguel (%) — IPCA 12m</label><input type="number" id="reajAluguel" step="0.01" value="4.22"></div>
     </div>
     <button onclick="calc()">Comparar ⚖️</button>
     <div class="result" id="res">
@@ -69,7 +70,7 @@
       <div class="rrow"><span>Total pago em aluguel no prazo</span><strong id="rAlug"></strong></div>
       <div class="rrow"><span>Valor do imóvel ao fim do prazo</span><strong id="rImovel"></strong></div>
       <div class="verdict" id="rVerdict"></div>
-      <p class="note">⚠️ Simulação simplificada (Tabela Price, sem ITBI/cartório/manutenção; aluguel sem reajuste). Ferramenta educativa — decisões reais merecem assessoria profissional.</p>
+      <p class="note">⚠️ Simulação simplificada (Tabela Price, sem ITBI/cartório/manutenção; aluguel reajustado anualmente pelo índice informado). Ferramenta educativa — decisões reais merecem assessoria profissional.</p>
     </div>
   </div>
 
@@ -85,6 +86,17 @@
       <li><strong>Price ou SAC?</strong> Na Tabela Price a parcela é fixa; no SAC começa mais alta e cai ao longo do tempo, com menos juros totais. Se o orçamento permite a parcela inicial do SAC, ele costuma ser mais barato no longo prazo.</li>
     </ul>
     <p class="note">Dados de juros apurados em 17/09/2026 (Copom/Banco Central, Caixa). Condições de crédito variam por perfil — confirme com seu banco antes de decidir.</p>
+  </div>
+  <div class="card">
+    <h2 style="font-size:17px;margin-bottom:10px">📊 Números oficiais hoje (Banco Central, 29/09/2026)</h2>
+    <ul style="margin:0 0 0 18px;font-size:14px;display:grid;gap:10px">
+      <li><strong>Selic efetiva: 13,66% a.a.</strong> (meta 13,75% após o corte do Copom de 16/09/2026). Cada corte de 0,25 ponto na Selic tende a pressionar as taxas de financiamento nos meses seguintes.</li>
+      <li><strong>IPCA em 12 meses: 4,22%</strong> (ago/2026) — reajuste típico de aluguel por aniversário de contrato.</li>
+      <li><strong>IGP-M em 12 meses: apenas 0,95%</strong> (jul/2026) — contratos com IGP-M praticamente congelados; vale negociar troca para IPCA na renovação.</li>
+      <li><strong>Custo de oportunidade da entrada:</strong> poupança ~0,67%/mês (~8,3% a.a.), TR 0,166%/mês; CDB ~100% CDI (~13,6% a.a.) faria R$ 120 mil renderem ~R$ 1.360/mês — comparar com o aluguel antes de imobilizar.</li>
+      <li><strong>Valorização realista:</strong> faixa conservadora litoral paulista 6–8% a.a.; acima de 10% só em bairros em forte expansão. Ver <a href="https://praia.digital/apps/comparador-cidades/">Comparador de Cidades</a>.</li>
+    </ul>
+    <p class="note">Fontes: API de dados abertos do Banco Central do Brasil (séries SGS 11, 13522, 4175, 226), apurado em 29/09/2026.</p>
   </div>
 
   <div class="card">
@@ -109,13 +121,15 @@ function calc(){
   const i = (parseFloat(document.getElementById('taxa').value)||0)/100/12;
   const anos = parseFloat(document.getElementById('anos').value)||20;
   const val = (parseFloat(document.getElementById('valoriz').value)||0)/100;
+  const reaj = (parseFloat(document.getElementById('reajAluguel').value)||0)/100;
   const n = anos*12;
   const fin = Math.max(0, V - E);
   const parc = i>0 ? fin*i/(1-Math.pow(1+i,-n)) : fin/n;
   const imovelFuturo = V * Math.pow(1+val, anos);
   document.getElementById('rParc').textContent = fmt(parc);
   document.getElementById('rDif').textContent = (parc>A ? '+' : '') + fmt(parc-A) + '/mês';
-  document.getElementById('rAlug').textContent = fmt(A*n);
+  const aluguelTotal = reaj>0 ? A*12*(Math.pow(1+reaj, anos)-1)/reaj : A*n;
+  document.getElementById('rAlug').textContent = fmt(aluguelTotal) + ' (com reajuste anual)';
   document.getElementById('rImovel').textContent = fmt(imovelFuturo);
   const el = document.getElementById('rVerdict');
   const razao = (A*12)/V*100;
