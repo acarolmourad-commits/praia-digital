@@ -62,11 +62,11 @@
     </div>
     <div style="overflow-x:auto">
       <table>
-        <thead><tr><th>Cidade</th><th>Preço/m²</th><th>Ocupação</th><th>Valorização</th><th>Liquidez</th><th>Score</th></tr></thead>
+        <thead><tr><th>Cidade</th><th>Preço/m²</th><th>Ocupação</th><th>ADR</th><th>Valorização (últimos 12m)</th><th>Liquidez</th><th>Score</th></tr></thead>
         <tbody id="tbody"></tbody>
       </table>
     </div>
-    <p class="note">Dados de referência: AirDNA/Airbtics e análise Praia Digital (2026). Liquidez: 1–10 (10 = vende rápido). Score ponderado pelo perfil escolhido. Não constitui recomendação de investimento.</p>
+    <p class="note">Dados de referência: AirDNA/Airbtics e análise Praia Digital (coletados em set/2026). Valorização refere-se aos últimos 12 meses. Liquidez: 1–10 (10 = vende rápido). Score ponderado pelo perfil escolhido. Não constitui recomendação de investimento.</p>
   </div>
 
   <div class="card">
@@ -84,16 +84,17 @@
 <footer>Praia Digital — Tecnologia imobiliária do litoral • <a href="/" style="color:#0EA5E9">praia.digital</a></footer>
 <script>
 const CIDADES = [
-  {nome:'Santos', m2:5800, ocup:51, valor:9.8, liq:9, infra:9},
-  {nome:'São Sebastião', m2:6500, ocup:68, valor:12.1, liq:8, infra:7},
-  {nome:'Ilhabela', m2:7200, ocup:62, valor:10.5, liq:6, infra:6},
-  {nome:'Ubatuba', m2:4100, ocup:58, valor:11.3, liq:5, infra:6},
-  {nome:'Bertioga', m2:3200, ocup:55, valor:15.2, liq:6, infra:6},
-  {nome:'Guarujá', m2:4900, ocup:54, valor:8.9, liq:8, infra:8},
-  {nome:'Praia Grande', m2:3600, ocup:50, valor:9.5, liq:7, infra:7},
-  {nome:'Itanhaém', m2:2400, ocup:42, valor:13.8, liq:4, infra:5},
-  {nome:'Mongaguá', m2:2100, ocup:40, valor:12.5, liq:4, infra:5},
-  {nome:'Peruíbe', m2:1900, ocup:38, valor:14.1, liq:3, infra:4}
+  {nome:'Santos', m2:8000, ocup:51, adr:850, valor:9.8, liq:9, infra:9},
+  {nome:'São Vicente', m2:4200, ocup:48, adr:500, valor:10.5, liq:8, infra:8},
+  {nome:'São Sebastião', m2:6500, ocup:68, adr:900, valor:12.1, liq:8, infra:7},
+  {nome:'Ilhabela', m2:7200, ocup:62, adr:1100, valor:10.5, liq:6, infra:6},
+  {nome:'Ubatuba', m2:4100, ocup:58, adr:700, valor:11.3, liq:5, infra:6},
+  {nome:'Bertioga', m2:3200, ocup:55, adr:750, valor:15.2, liq:6, infra:6},
+  {nome:'Guarujá', m2:4900, ocup:54, adr:700, valor:8.9, liq:8, infra:8},
+  {nome:'Praia Grande', m2:3600, ocup:50, adr:450, valor:9.5, liq:7, infra:7},
+  {nome:'Itanhaém', m2:2400, ocup:42, adr:400, valor:13.8, liq:4, infra:5},
+  {nome:'Mongaguá', m2:2100, ocup:40, adr:350, valor:12.5, liq:4, infra:5},
+  {nome:'Peruíbe', m2:1900, ocup:38, adr:380, valor:14.1, liq:3, infra:4}
 ];
 const PERFIS = {
   investidor: {m2:-0.25, ocup:0.2, valor:0.35, liq:0.2, infra:0},
@@ -124,6 +125,7 @@ function render(){
       <td>${i===0?'🥇 ':i===1?'🥈 ':i===2?'🥉 ':''}<strong>${c.nome}</strong></td>
       <td>R$ ${c.m2.toLocaleString('pt-BR')}</td>
       <td>${c.ocup}%</td>
+      <td>R$ ${c.adr}</td>
       <td>+${c.valor}%</td>
       <td>${c.liq}/10</td>
       <td><span class="score">${c.score.toFixed(0)}</span><div class="bar"><i style="width:${c.score}%"></i></div></td>
