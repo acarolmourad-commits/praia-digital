@@ -34,7 +34,7 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
   <label>Percentual de entrada (%)</label><input id="pct" type="number" value="20">
   <label>Quanto você já tem guardado (R$)</label><input id="guardado" type="number" value="15000">
   <label>Quanto consegue guardar por mês (R$)</label><input id="mensal" type="number" value="2500">
-  <label>Rendimento mensal da aplicação (% a.m.)</label><input id="rend" type="number" step="0.01" value="0.8">
+  <label>Rendimento mensal da aplicação (% a.m.)</label><input id="rend" type="number" step="0.01" value="1.07">
   <button onclick="planejar()">Planejar minha entrada</button>
   <div class="res" id="res">
     <table>
@@ -50,7 +50,7 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
 </div>
 <div class="card"><h2>📌 Como acelerar sua entrada</h2>
 <p style="font-size:14px;margin-top:6px">Quanto maior a entrada, menor o financiamento e os juros. Combine este planejador com o <a href="/apps/calculadora-financiamento/">simulador SAC vs. Price</a> para ver o impacto no valor da parcela, e com o <a href="/apps/custo-de-compra/">custo de compra</a> para lembrar do ITBI, escritura e registro (em geral 4–5% do valor do imóvel). Uma alternativa sem juros bancários é o <a href="/apps/calculadora-consorcio/">consórcio</a>, que também pode usar o valor guardado como lance.</p>
-<p style="font-size:14px;margin-top:8px">Dica: aplique o dinheiro da entrada em CDBs de liquidez diária ou Tesouro Selic — rendimento próximo de 0,8% a.m. e baixo risco.</p></div>
+<p style="font-size:14px;margin-top:8px">Dica: aplique o dinheiro da entrada em CDBs de liquidez diária ou Tesouro Selic — rendimento próximo do CDI (~1,07% a.m. com Selic a 13,75% a.a., set/2026) e baixo risco.</p></div>
 </div>
 <script>
 const fmt=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});

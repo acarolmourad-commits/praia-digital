@@ -43,14 +43,17 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
     <option value="0.02" selected>Guarujá (ITBI 2%)</option>
     <option value="0.03">Praia Grande (ITBI 3%)</option>
     <option value="0.02">Mongaguá / Itanhaém / Peruíbe (ITBI 2%)</option>
+    <option value="0.02">São Vicente (ITBI 2%)</option>
+    <option value="0.02">Ilhabela (ITBI 2%)</option>
   </select>
-  <label><input type="checkbox" id="financ" style="width:auto;display:inline"> Vou financiar (registro do contrato em cartório)</label>
+  <label><input type="checkbox" id="financ" style="width:auto;display:inline"> Vou financiar (registro do contrato em cartório + tarifa bancária de avaliação)</label>
   <button onclick="calc()">Calcular custos de fechamento</button>
   <div class="res" id="res">
     <p>🏛️ <b>ITBI:</b> <span id="itbi"></span></p>
     <p>✍️ <b>Escritura pública (tabela SP):</b> <span id="escr"></span></p>
     <p>📜 <b>Registro do imóvel:</b> <span id="reg"></span></p>
     <p id="regFinRow" style="display:none">🏦 <b>Registro do financiamento (estimativa):</b> <span id="regFin"></span></p>
+    <p id="tarifaRow" style="display:none">🏦 <b>Tarifa bancária de avaliação do imóvel:</b> <span id="tarifa"></span> <small>(~R$3.000 em 2026, cobrada na contratação)</small></p>
     <hr>
     <p style="font-size:17px"><b>💰 Total estimado:</b> <span id="total"></span></p>
     <p style="font-size:13px;color:#64748B">≈ <span id="pct"></span> do valor do imóvel. Valores estimados — confirme as custas no cartório da cidade.</p>
@@ -72,11 +75,13 @@ function calc(){
   const itbi=V*aliq, escr=tabela(V), reg=tabela(V);
   const fin=document.getElementById('financ').checked;
   const regFin= fin ? tabela(V*0.8) : 0;
-  const tot=itbi+escr+reg+regFin;
+  const tarifa= fin ? 3000 : 0;
+  const tot=itbi+escr+reg+regFin+tarifa;
   document.getElementById('itbi').textContent=fmt(itbi);
   document.getElementById('escr').textContent=fmt(escr);
   document.getElementById('reg').textContent=fmt(reg);
   if(fin){document.getElementById('regFinRow').style.display='block';document.getElementById('regFin').textContent=fmt(regFin);}else{document.getElementById('regFinRow').style.display='none';}
+  if(fin){document.getElementById('tarifaRow').style.display='block';document.getElementById('tarifa').textContent=fmt(tarifa);}else{document.getElementById('tarifaRow').style.display='none';}
   document.getElementById('total').textContent=fmt(tot);
   document.getElementById('pct').textContent=(tot/V*100).toFixed(1)+'%';
   document.getElementById('res').style.display='block';
