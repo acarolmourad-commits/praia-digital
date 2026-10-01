@@ -21,11 +21,25 @@ button:hover{background:#0c5c43}
 a{color:#0EA5E9}
 table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
 td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
+    table{width:100%;border-collapse:collapse;font-size:14px}
+    th{background:#F8FAFC;text-align:left;padding:8px 10px;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#475569}
+    td{padding:8px 10px;border-bottom:1px solid #F1F5F9}
+    .tag{display:inline-block;background:#ECFDF5;color:#065F46;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;margin-left:6px}
+    .faq details{border:1px solid #E5E7EB;border-radius:10px;margin-bottom:8px;background:#fff}
+    .faq summary{cursor:pointer;padding:12px 14px;font-weight:600;font-size:14px;list-style:none}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq details p{padding:0 14px 12px;font-size:14px;color:#475569}
+    .links{display:grid;gap:10px;margin-top:8px}
+    .links a{display:block;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px;text-decoration:none;color:#0F172A;font-weight:600}
+    .links a span{color:#0EA5E9}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Simulador de Financiamento Imobiliário — SAC vs Price | Praia Digital Apps","url":"https://praia.digital/apps/calculadora-financiamento/","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0"}}</script>
 <meta property="og:type" content="website"><meta property="og:title" content="Simulador de Financiamento Imobiliário — SAC vs Price | Praia Digital Apps">
 <meta property="og:description" content="Simule financiamento imobiliário nos sistemas SAC e Price: parcela inicial, amortização, juros totais e custo efetivo. Gratuito, do litoral de SP."><meta property="og:url" content="https://praia.digital/apps/calculadora-financiamento/">
 <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qual a taxa de financiamento em 2026?","acceptedAnswer":{"@type":"Answer","text":"A menor taxa nominal da Caixa (SBPE) está em 11,19% a.a. (ago/2026), variando por relacionamento, entrada e prazo. Com a Selic em queda (13,75%), novas reduções são esperadas. Compare sempre o CET, não só a taxa nominal."}},{"@type":"Question","name":"SAC ou Price: qual escolher?","acceptedAnswer":{"@type":"Answer","text":"SAC: parcela inicial ~20–30% maior, caindo todo mês, com menos juros totais. Price: parcela fixa, mais cara no total. Se a 1ª parcela do SAC couber em 30% da renda, ele costuma ser mais barato."}},{"@type":"Question","name":"Quanto de entrada preciso?","acceptedAnswer":{"@type":"Answer","text":"Bancos financiam até 80–90% do valor (menos para imóveis de temporada/usados). Com 20% de entrada e FGTS, as condições melhoram. Planeje com o Planejador de Entrada."}},{"@type":"Question","name":"Posso usar FGTS no financiamento?","acceptedAnswer":{"@type":"Answer","text":"Sim: na entrada, na amortização ou para quitar parcelas (a cada 2 anos), desde que o imóvel seja residencial, avaliado dentro do teto do programa e você não tenha outro financiamento SFH ativo."}}]}
+  </script>
 </head>
 <body>
 
@@ -46,6 +60,37 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
     <p id="dica" style="font-weight:700"></p>
   </div>
 </div>
+<div class="card">
+<h2 style="font-size:17px;margin-bottom:10px">📊 Simulações prontas <span class="tag">set/2026</span></h2>
+<p style="font-size:14px;color:#475569;margin-bottom:8px">Financiamento a 11,19% a.a. (menor taxa Caixa SBPE, ago/2026), 20 anos, entrada de 20%:</p>
+<table>
+  <tr><th>Imóvel</th><th>Financiado</th><th>Price 1ª parcela</th><th>SAC 1ª parcela</th><th>Renda mín. (30%)</th></tr>
+  <tr><td>R$ 200 mil (Mongaguá/Peruíbe)</td><td>R$ 160 mil</td><td>R$ 1.680</td><td>R$ 2.160</td><td>~R$ 5.600</td></tr>
+  <tr><td>R$ 270 mil (Praia Grande)</td><td>R$ 216 mil</td><td>R$ 2.270</td><td>R$ 2.915</td><td>~R$ 7.600</td></tr>
+  <tr><td>R$ 370 mil (Guarujá)</td><td>R$ 296 mil</td><td>R$ 3.110</td><td>R$ 3.995</td><td>~R$ 10.400</td></tr>
+  <tr><td>R$ 560 mil (Santos)</td><td>R$ 448 mil</td><td>R$ 4.710</td><td>R$ 6.050</td><td>~R$ 15.700</td></tr>
+</table>
+<p style="font-size:12px;color:#64748B;margin-top:12px">Valores aproximados, sem seguros MIP/DFI nem correção TR. Renda mínima pela regra dos 30% usando a 1ª parcela do SAC. Compare com a tabela de <a href="/apps/alugar-ou-comprar/" style="color:#0EA5E9">aluguel vs. compra</a>.</p>
+</div>
+
+  <div class="card faq">
+    <h2 style="font-size:17px;margin-bottom:10px">❓ Perguntas frequentes</h2>
+    <details><summary>Qual a taxa de financiamento em 2026?</summary><p>A menor taxa nominal da Caixa (SBPE) está em 11,19% a.a. (ago/2026), variando por relacionamento, entrada e prazo. Com a Selic em queda (13,75%), novas reduções são esperadas. Compare sempre o CET, não só a taxa nominal.</p></details>
+    <details><summary>SAC ou Price: qual escolher?</summary><p>SAC: parcela inicial ~20–30% maior, caindo todo mês, com menos juros totais. Price: parcela fixa, mais cara no total. Se a 1ª parcela do SAC couber em 30% da renda, ele costuma ser mais barato.</p></details>
+    <details><summary>Quanto de entrada preciso?</summary><p>Bancos financiam até 80–90% do valor (menos para imóveis de temporada/usados). Com 20% de entrada e FGTS, as condições melhoram. Planeje com o Planejador de Entrada.</p></details>
+    <details><summary>Posso usar FGTS no financiamento?</summary><p>Sim: na entrada, na amortização ou para quitar parcelas (a cada 2 anos), desde que o imóvel seja residencial, avaliado dentro do teto do programa e você não tenha outro financiamento SFH ativo.</p></details>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size:17px;margin-bottom:10px">📍 Aprofunde por bairro</h2>
+    <div class="links">
+      <a href="/bairros/"><span>🏙️ Índice de bairros</span> — 123 bairros em 12 cidades do litoral</a>
+      <a href="/bairros/santos/index.html">Santos — Gonzaga, Boqueirão, Pompéia e mais</a>
+      <a href="/bairros/guaruja/index.html">Guarujá — Enseada, Pitangueiras, Astúrias e mais</a>
+      <a href="/bairros/sao-sebastiao/index.html">São Sebastião — Maresias, Juquehy, Barra do Sahy e mais</a>
+    </div>
+  </div>
+
 <div class="card"><h2>📌 Como interpretar</h2>
 <p style="font-size:14px;margin-top:6px">No <b>SAC</b>, a amortização é constante: as parcelas começam mais altas e caem com o tempo — paga-se menos juros no total. Na <b>Price</b>, a parcela é fixa, mas o custo final é maior. Regra de ouro dos bancos: a parcela não deve passar de 30% da renda familiar.</p>
 <p style="font-size:14px;margin-top:8px">Alternativa sem juros bancários: simule um <a href="/apps/calculadora-consorcio/">consórcio imobiliário</a> e compare a economia.</p>
