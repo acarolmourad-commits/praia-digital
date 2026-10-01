@@ -21,11 +21,25 @@ button:hover{background:#0c5c43}
 a{color:#0EA5E9}
 table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
 td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
+    table{width:100%;border-collapse:collapse;font-size:14px}
+    th{background:#F8FAFC;text-align:left;padding:8px 10px;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#475569}
+    td{padding:8px 10px;border-bottom:1px solid #F1F5F9}
+    .tag{display:inline-block;background:#ECFDF5;color:#065F46;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;margin-left:6px}
+    .faq details{border:1px solid #E5E7EB;border-radius:10px;margin-bottom:8px;background:#fff}
+    .faq summary{cursor:pointer;padding:12px 14px;font-weight:600;font-size:14px;list-style:none}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq details p{padding:0 14px 12px;font-size:14px;color:#475569}
+    .links{display:grid;gap:10px;margin-top:8px}
+    .links a{display:block;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px;text-decoration:none;color:#0F172A;font-weight:600}
+    .links a span{color:#0EA5E9}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Custos de Compra — ITBI, Escritura e Registro | Praia Digital Apps","url":"https://praia.digital/apps/custo-de-compra/","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0"}}</script>
 <meta property="og:type" content="website"><meta property="og:title" content="Calculadora de Custos de Compra — ITBI, Escritura e Registro | Praia Digital Apps">
 <meta property="og:description" content="Calcule todos os custos de fechamento na compra de um imóvel no litoral de SP: ITBI, escritura, registro e custas cartorárias. Gratuito."><meta property="og:url" content="https://praia.digital/apps/custo-de-compra/">
 <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quanto custa o 'fechamento' de um imóvel no litoral?","acceptedAnswer":{"@type":"Answer","text":"Some ITBI (2–3%), escritura e registro (~1% cada tabela de emolumentos SP) e tarifa bancária de avaliação (~R$ 3 mil se financiado). Um imóvel de R$ 400 mil costuma ter R$ 14–18 mil de custos totais."}},{"@type":"Question","name":"ITBI é sobre o valor da venda?","acceptedAnswer":{"@type":"Answer","text":"Sobre o maior valor entre o preço de compra e o valor venal de referência do município. Em cidades com venal atualizado (Santos, São Sebastião), a diferença pode ser relevante."}},{"@type":"Question","name":"Tem desconto no ITBI?","acceptedAnswer":{"@type":"Answer","text":"Várias cidades oferecem redução para primeiro imóvel, pagamento à vista ou imóveis na planta. Santos e São Vicente têm programas — pergunte na prefeitura antes de emitir a guia."}},{"@type":"Question","name":"Quem paga a escritura e o registro?","acceptedAnswer":{"@type":"Answer","text":"Por costume de mercado, o comprador paga ITBI, escritura e registro; o vendedor paga o laudo/ITBI de quitação e comissão (salvo negociação). Tudo é negociável no contrato."}}]}
+  </script>
 </head>
 <body>
 
@@ -59,6 +73,42 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
     <p style="font-size:13px;color:#64748B">≈ <span id="pct"></span> do valor do imóvel. Valores estimados — confirme as custas no cartório da cidade.</p>
   </div>
 </div>
+<div class="card">
+<h2 style="font-size:17px;margin-bottom:10px">🏛️ ITBI por cidade do litoral <span class="tag">set/2026</span></h2>
+<table>
+  <tr><th>Município</th><th>Alíquota típica</th><th>Observações</th></tr>
+  <tr><td>Santos</td><td>2%</td><td>desconto p/ 1º imóvel e pagamento à vista</td></tr>
+  <tr><td>São Vicente</td><td>2%</td><td>isenção parcial em programas municipais</td></tr>
+  <tr><td>Praia Grande</td><td>2%</td><td>base = maior entre venda e venal</td></tr>
+  <tr><td>Guarujá</td><td>3%</td><td>consulte desconto à vista</td></tr>
+  <tr><td>Bertioga</td><td>2%</td><td>Riviera: confira valor venal alto</td></tr>
+  <tr><td>Itanhaém / Mongaguá / Peruíbe</td><td>2%</td><td>prazos curtos após escritura</td></tr>
+  <tr><td>Caraguatatuba</td><td>2%</td><td>guia emitida pela prefeitura</td></tr>
+  <tr><td>São Sebastião</td><td>3%</td><td>atenção ao venal em Maresias/Juquehy</td></tr>
+  <tr><td>Ilhabela</td><td>2%</td><td>pagamento antes do registro</td></tr>
+  <tr><td>Ubatuba</td><td>2%</td><td>confira atualização do venal 2026</td></tr>
+</table>
+<p style="font-size:12px;color:#64748B;margin-top:12px">Alíquotas de referência (set/2026) — cada prefeitura tem regras e descontos próprios; confirme a guia oficial antes do pagamento.</p>
+</div>
+
+  <div class="card faq">
+    <h2 style="font-size:17px;margin-bottom:10px">❓ Perguntas frequentes</h2>
+    <details><summary>Quanto custa o 'fechamento' de um imóvel no litoral?</summary><p>Some ITBI (2–3%), escritura e registro (~1% cada tabela de emolumentos SP) e tarifa bancária de avaliação (~R$ 3 mil se financiado). Um imóvel de R$ 400 mil costuma ter R$ 14–18 mil de custos totais.</p></details>
+    <details><summary>ITBI é sobre o valor da venda?</summary><p>Sobre o maior valor entre o preço de compra e o valor venal de referência do município. Em cidades com venal atualizado (Santos, São Sebastião), a diferença pode ser relevante.</p></details>
+    <details><summary>Tem desconto no ITBI?</summary><p>Várias cidades oferecem redução para primeiro imóvel, pagamento à vista ou imóveis na planta. Santos e São Vicente têm programas — pergunte na prefeitura antes de emitir a guia.</p></details>
+    <details><summary>Quem paga a escritura e o registro?</summary><p>Por costume de mercado, o comprador paga ITBI, escritura e registro; o vendedor paga o laudo/ITBI de quitação e comissão (salvo negociação). Tudo é negociável no contrato.</p></details>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size:17px;margin-bottom:10px">📍 Aprofunde por bairro</h2>
+    <div class="links">
+      <a href="/bairros/"><span>🏙️ Índice de bairros</span> — 123 bairros em 12 cidades do litoral</a>
+      <a href="/bairros/santos/index.html">Santos — Gonzaga, Boqueirão, Pompéia e mais</a>
+      <a href="/bairros/guaruja/index.html">Guarujá — Enseada, Pitangueiras, Astúrias e mais</a>
+      <a href="/bairros/sao-sebastiao/index.html">São Sebastião — Maresias, Juquehy, Barra do Sahy e mais</a>
+    </div>
+  </div>
+
 <div class="card"><h2>📌 Bom saber</h2>
 <p style="font-size:14px;margin-top:6px">O ITBI é cobrado sobre o maior valor entre o de compra e o venal de referência. Algumas cidades oferecem desconto para primeiro imóvel ou pagamento à vista. Já sabe quanto vale o imóvel? Use o <a href="/apps/valor-imovel/">estimador de valor</a>.</p></div>
 </div>
