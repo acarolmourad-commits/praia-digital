@@ -45,7 +45,21 @@
     .links a span{color:#0EA5E9}
     footer{text-align:center;color:#94A3B8;font-size:12px;padding:20px}
     .note{font-size:12px;color:#64748B;margin-top:12px}
+      table{width:100%;border-collapse:collapse;font-size:14px}
+    th{background:#F8FAFC;text-align:left;padding:8px 10px;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#475569}
+    td{padding:8px 10px;border-bottom:1px solid #F1F5F9}
+    .tag{display:inline-block;background:#ECFDF5;color:#065F46;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;margin-left:6px}
+    .faq details{border:1px solid #E5E7EB;border-radius:10px;margin-bottom:8px;background:#fff}
+    .faq summary{cursor:pointer;padding:12px 14px;font-weight:600;font-size:14px;list-style:none}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq details p{padding:0 14px 12px;font-size:14px;color:#475569}
+    .links{display:grid;gap:10px;margin-top:8px}
+    .links a{display:block;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px;text-decoration:none;color:#0F172A;font-weight:600}
+    .links a span{color:#0EA5E9}
   </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qual cidade do litoral é melhor para investir?","acceptedAnswer":{"@type":"Answer","text":"Pelos yields de aluguel (8%+), Mongaguá, Peruíbe e Itanhaém lideram em retorno sobre o capital. Praia Grande combina yield 7,6% com o maior estoque de lançamentos da baixada. Santos oferece a maior liquidez para revenda."}},{"@type":"Question","name":"Qual cidade tem a temporada mais forte?","acceptedAnswer":{"@type":"Answer","text":"São Sebastião (Maresias/Juquehy) e Ilhabela têm as maiores diárias do litoral na alta temporada, mas também os preços de compra mais altos — o yield fica em ~5,8–5,9%. Guarujá equilibra diária alta com preço médio menor."}},{"@type":"Question","name":"Qual cidade é mais barata para morar?","acceptedAnswer":{"@type":"Answer","text":"Peruíbe (R$ 1.900/m²), Mongaguá (R$ 2.100/m²) e Itanhaém (R$ 2.400/m²) têm os menores custos de compra e aluguel do litoral paulista."}},{"@type":"Question","name":"Como escolher entre Baixada Santista e Litoral Norte?","acceptedAnswer":{"@type":"Answer","text":"Baixada (Santos a Peruíbe): infraestrutura urbana, emprego, liquidez e preços menores. Litoral Norte (Caraguá a Ubatuba): praias preservadas, temporada premium e valorização turística, com menos liquidez fora de temporada."}}]}
+  </script>
 </head>
 <body>
 <header>
@@ -67,6 +81,44 @@
       </table>
     </div>
     <p class="note">Dados de referência: AirDNA/Airbtics e análise Praia Digital (coletados em set/2026). Valorização refere-se aos últimos 12 meses. Liquidez: 1–10 (10 = vende rápido). Score ponderado pelo perfil escolhido. Não constitui recomendação de investimento.</p>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size:17px;margin-bottom:10px">📊 Dados-chave por cidade <span class="tag">set/2026</span></h2>
+    <table>
+      <tr><th>Cidade</th><th>R$/m² médio</th><th>Aluguel 2q/mês</th><th>Yield a.a.</th><th>Perfil</th></tr>
+      <tr><td>Santos</td><td>R$ 8.000</td><td>R$ 2.800</td><td>6,0%</td><td>moradia + liquidez</td></tr>
+      <tr><td>Ilhabela</td><td>R$ 7.200</td><td>R$ 2.600</td><td>5,8%</td><td>temporada premium</td></tr>
+      <tr><td>São Sebastião</td><td>R$ 6.500</td><td>R$ 2.400</td><td>5,9%</td><td>temporada premium</td></tr>
+      <tr><td>Guarujá</td><td>R$ 4.900</td><td>R$ 2.100</td><td>6,8%</td><td>equilíbrio</td></tr>
+      <tr><td>São Vicente</td><td>R$ 4.200</td><td>R$ 1.900</td><td>7,2%</td><td>equilíbrio</td></tr>
+      <tr><td>Ubatuba</td><td>R$ 4.100</td><td>R$ 1.800</td><td>7,0%</td><td>equilíbrio</td></tr>
+      <tr><td>Praia Grande</td><td>R$ 3.600</td><td>R$ 1.700</td><td>7,6%</td><td>investimento</td></tr>
+      <tr><td>Caraguatatuba</td><td>R$ 3.400</td><td>R$ 1.600</td><td>7,5%</td><td>investimento</td></tr>
+      <tr><td>Bertioga</td><td>R$ 3.200</td><td>R$ 1.500</td><td>7,5%</td><td>investimento</td></tr>
+      <tr><td>Itanhaém</td><td>R$ 2.400</td><td>R$ 1.200</td><td>8,0%</td><td>entrada barata</td></tr>
+      <tr><td>Mongaguá</td><td>R$ 2.100</td><td>R$ 1.100</td><td>8,4%</td><td>entrada barata</td></tr>
+      <tr><td>Peruíbe</td><td>R$ 1.900</td><td>R$ 1.000</td><td>8,4%</td><td>entrada barata</td></tr>
+    </table>
+    <p style="font-size:12px;color:#64748B;margin-top:12px">Médias de anúncios ativos coletadas pela Praia Digital em set/2026. Valores por bairro variam — veja os guias.</p>
+  </div>
+
+  <div class="card faq">
+    <h2 style="font-size:17px;margin-bottom:10px">❓ Perguntas frequentes</h2>
+    <details><summary>Qual cidade do litoral é melhor para investir?</summary><p>Pelos yields de aluguel (8%+), Mongaguá, Peruíbe e Itanhaém lideram em retorno sobre o capital. Praia Grande combina yield 7,6% com o maior estoque de lançamentos da baixada. Santos oferece a maior liquidez para revenda.</p></details>
+    <details><summary>Qual cidade tem a temporada mais forte?</summary><p>São Sebastião (Maresias/Juquehy) e Ilhabela têm as maiores diárias do litoral na alta temporada, mas também os preços de compra mais altos — o yield fica em ~5,8–5,9%. Guarujá equilibra diária alta com preço médio menor.</p></details>
+    <details><summary>Qual cidade é mais barata para morar?</summary><p>Peruíbe (R$ 1.900/m²), Mongaguá (R$ 2.100/m²) e Itanhaém (R$ 2.400/m²) têm os menores custos de compra e aluguel do litoral paulista.</p></details>
+    <details><summary>Como escolher entre Baixada Santista e Litoral Norte?</summary><p>Baixada (Santos a Peruíbe): infraestrutura urbana, emprego, liquidez e preços menores. Litoral Norte (Caraguá a Ubatuba): praias preservadas, temporada premium e valorização turística, com menos liquidez fora de temporada.</p></details>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size:17px;margin-bottom:10px">📍 Aprofunde por bairro</h2>
+    <div class="links">
+      <a href="/bairros/"><span>🏙️ Índice de bairros</span> — 123 bairros em 12 cidades do litoral</a>
+      <a href="/bairros/santos/index.html">Santos — Gonzaga, Boqueirão, Pompéia e mais</a>
+      <a href="/bairros/guaruja/index.html">Guarujá — Enseada, Pitangueiras, Astúrias e mais</a>
+      <a href="/bairros/sao-sebastiao/index.html">São Sebastião — Maresias, Juquehy, Barra do Sahy e mais</a>
+    </div>
   </div>
 
   <div class="card">
