@@ -21,10 +21,20 @@ button:hover{background:#0c5c43}
 a{color:#0EA5E9}
 table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
 td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
+
+    .tag{display:inline-block;background:#ECFDF5;color:#065F46;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;margin-left:6px}
+    .faq details{border:1px solid #E5E7EB;border-radius:10px;margin-bottom:8px;background:#fff}
+    .faq summary{cursor:pointer;padding:12px 14px;font-weight:600;font-size:14px;list-style:none}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq details p{padding:0 14px 12px;font-size:14px;color:#475569}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Renda para Financiar — Quanto preciso ganhar? | Praia Digital Apps","url":"https://praia.digital/apps/renda-para-financiar/","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0"}}</script>
 <meta property="og:type" content="website"><meta property="og:title" content="Renda para Financiar — Quanto preciso ganhar? | Praia Digital Apps"><meta property="og:description" content="Descubra a renda mínima necessária para financiar seu imóvel no litoral, comparando SAC e Price pela regra dos 30%. Gratuito."><meta property="og:url" content="https://praia.digital/apps/renda-para-financiar/">
 <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Qual a taxa de financiamento em 2026?", "acceptedAnswer": {"@type": "Answer", "text": "A menor taxa nominal da Caixa (SBPE) está em 11,19% a.a. (ago/2026), variando por relacionamento, entrada e prazo. Com a Selic em 13,75% e em queda, novas reduções são esperadas. Compare sempre o CET, não só a taxa nominal."}}, {"@type": "Question", "name": "A regra dos 30% é obrigatória?", "acceptedAnswer": {"@type": "Answer", "text": "Na prática, sim: bancos limitam a parcela a 30% da renda familiar bruta comprovada. Autônomos podem compor renda com extratos e declaração de IR. Alguns bancos aceitam até 35% para alta renda."}}, {"@type": "Question", "name": "Como financiar ganhando menos?", "acceptedAnswer": {"@type": "Answer", "text": "Três caminhos: aumentar a entrada (FGTS ajuda), escolher imóvel no Minha Casa Minha Vida (até R$ 350 mil, juros a partir de ~4% a.a. em 2026) ou considerar consórcio, que não exige renda mínima tão alta mas depende de sorteio/lance."}}, {"@type": "Question", "name": "Posso somar renda com outra pessoa?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Cônjuge, companheiro(a) ou parentes em 1º grau podem compor renda na maioria dos bancos. Alguns aceitam até 3 proponentes sem parentesco, desde que todos fiquem no contrato."}}]}
+  </script>
 </head>
 <body>
 <header><h1>💼 Renda para Financiar</h1><p>Descubra se o imóvel dos seus sonhos cabe na sua renda — SAC vs. Price</p></header>
@@ -48,6 +58,22 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
 <div class="card"><h2>📌 A regra dos 30%</h2>
 <p style="font-size:14px;margin-top:6px">Bancos recomendam que a parcela do financiamento não passe de 30% da renda familiar bruta. Este app mostra a renda mínima para o imóvel que você quer — e a diferença entre <a href="/apps/calculadora-financiamento/">SAC e Price</a>. Não esqueça da entrada: use o <a href="/apps/planejador-entrada/">Planejador de Entrada</a> para montar sua meta, e o <a href="/apps/custo-de-compra/">Custo de Compra</a> para lembrar do ITBI, escritura e registro.</p>
 <p style="font-size:14px;margin-top:8px">Se a renda necessária assustar, compare com o <a href="/apps/calculadora-consorcio/">consórcio</a> (sem juros, com lance) ou veja se <a href="/apps/alugar-ou-comprar/">alugar ainda compensa</a> no seu caso.</p></div>
+<div class="card">
+<h2 style="font-size:17px;margin-bottom:10px">📊 Renda mínima por faixa de imóvel <span class="tag">out/2026</span></h2>
+<p style="font-size:14px;color:#475569;margin-bottom:8px">Entrada de 20%, prazo de 30 anos, taxa de 11,19% a.a. (menor Caixa SBPE, ago/2026), parcela máxima de 30% da renda:</p>
+<table>
+  <tr><th>Imóvel</th><th>Parcela Price</th><th>1ª parcela SAC</th><th>Renda mínima Price / SAC</th></tr>
+  <tr><td>R$ 300 mil</td><td>R$ 2.320</td><td>R$ 2.905</td><td><b>R$ 7.734</b> / <b>R$ 9.682</b></td></tr>
+  <tr><td>R$ 450 mil</td><td>R$ 3.480</td><td>R$ 4.357</td><td><b>R$ 11.600</b> / <b>R$ 14.523</b></td></tr>
+  <tr><td>R$ 600 mil</td><td>R$ 4.640</td><td>R$ 5.809</td><td><b>R$ 15.467</b> / <b>R$ 19.364</b></td></tr>
+  <tr><td>R$ 800 mil</td><td>R$ 6.187</td><td>R$ 7.746</td><td><b>R$ 20.623</b> / <b>R$ 25.819</b></td></tr>
+</table>
+<p style="font-size:13px;color:#64748B;margin-top:8px">Imóveis até R$ 350 mil podem entrar no <b>Minha Casa Minha Vida 2026</b> (renda familiar até R$ 12 mil), com juros de ~4% a 8% a.a. — a renda mínima cai 30–45%.</p>
+</div>
+<div class="card"><h2 style="font-size:17px;margin-bottom:6px">❓ Perguntas frequentes</h2>
+<div class="faq" style="margin-top:10px"><details><summary>Qual a taxa de financiamento em 2026?</summary><p>A menor taxa nominal da Caixa (SBPE) está em 11,19% a.a. (ago/2026), variando por relacionamento, entrada e prazo. Com a Selic em 13,75% e em queda, novas reduções são esperadas. Compare sempre o CET, não só a taxa nominal.</p></details><details><summary>A regra dos 30% é obrigatória?</summary><p>Na prática, sim: bancos limitam a parcela a 30% da renda familiar bruta comprovada. Autônomos podem compor renda com extratos e declaração de IR. Alguns bancos aceitam até 35% para alta renda.</p></details><details><summary>Como financiar ganhando menos?</summary><p>Três caminhos: aumentar a entrada (FGTS ajuda), escolher imóvel no Minha Casa Minha Vida (até R$ 350 mil, juros a partir de ~4% a.a. em 2026) ou considerar consórcio, que não exige renda mínima tão alta mas depende de sorteio/lance.</p></details><details><summary>Posso somar renda com outra pessoa?</summary><p>Sim. Cônjuge, companheiro(a) ou parentes em 1º grau podem compor renda na maioria dos bancos. Alguns aceitam até 3 proponentes sem parentesco, desde que todos fiquem no contrato.</p></details></div>
+<p style="font-size:14px;margin-top:10px">📍 <a href="/bairros/"><b>Aprofunde por bairro</b></a> — veja preços de m² e perfil de 123 bairros do litoral de SP para mirar um imóvel que caiba na sua renda.</p>
+</div>
 </div>
 <script>
 const fmt=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
