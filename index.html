@@ -32,6 +32,15 @@ header{position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:bl
 .nav-links{display:flex;gap:18px;margin-left:auto;font-size:.92rem}
 .nav-links a{color:var(--ink2);font-weight:500}
 .nav-links a:hover{color:var(--sea)}
+
+.dropdown{position:relative}
+.dropdown>button{background:none;border:0;font:inherit;font-size:.92rem;font-weight:500;color:var(--ink2);cursor:pointer;padding:8px 0}
+.dropdown>button:hover{color:var(--sea)}
+.dropdown-menu{display:none;position:absolute;top:100%;left:0;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 14px 40px rgba(10,37,64,.14);padding:10px;min-width:220px;z-index:60}
+.dropdown:hover .dropdown-menu,.dropdown:focus-within .dropdown-menu{display:block}
+.dropdown-menu a{display:block;padding:8px 10px;border-radius:8px;color:var(--ink2);white-space:nowrap}
+.dropdown-menu a:hover{background:var(--sand);color:var(--sea)}
+
 .btn{display:inline-block;background:var(--sea);color:#fff!important;padding:12px 22px;border-radius:10px;font-weight:600;border:0;cursor:pointer;font-size:1rem;transition:background .2s}
 .btn:hover{background:var(--sea-d)}
 .btn-ghost{background:transparent;color:var(--ink)!important;border:1.5px solid var(--line)}
@@ -97,14 +106,55 @@ footer .cols{grid-template-columns:1fr 1fr}
 <div class="wrap nav">
   <a class="logo" href="/">Praia<span>Digital</span></a>
   <nav class="nav-links" aria-label="Navegação principal">
-    <a href="/imoveis.html">Imóveis</a>
-    <a href="/cidades/bertioga.html">Cidades</a>
-    <a href="/bairros/index.html">Bairros</a>
-    <a href="/ferramentas/index.html">Ferramentas</a>
-    <a href="/apps/">Apps</a>
-    <a href="/blog/index.html">Inteligência</a>
-    <a href="/servicos.html">Para profissionais</a>
-    <a href="/anunciar-temporada.html">Anunciar temporada</a>
+    <div class="dropdown">
+      <button type="button" aria-haspopup="true">Comprar</button>
+      <div class="dropdown-menu">
+        <a href="/imoveis.html">Imóveis</a>
+        <a href="/mapa-inteligente.html">Mapa</a>
+        <a href="/cidades/bertioga.html">Cidades</a>
+        <a href="/bairros/index.html">Bairros</a>
+        <a href="/apps/comparador-cidades/index.html">Comparar cidades</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button type="button" aria-haspopup="true">Investir</button>
+      <div class="dropdown-menu">
+        <a href="/ferramentas/avaliacao-preco.html">Avaliação de imóvel</a>
+        <a href="/apps/simulador-roi-temporada/index.html">ROI e temporada</a>
+        <a href="/apps/calculadora-financiamento/">Financiamento</a>
+        <a href="/ferramentas/vale-a-pena-comprar-2026.html">Vale a pena comprar?</a>
+        <a href="/apps/alugar-ou-comprar/index.html">Comprar × alugar</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button type="button" aria-haspopup="true">Meu Imóvel</button>
+      <div class="dropdown-menu">
+        <a href="/meu-imovel.html">Central do proprietário</a>
+        <a href="/ferramentas/avaliacao-preco.html">Avaliar meu imóvel</a>
+        <a href="/anunciar-temporada.html">Anunciar temporada</a>
+        <a href="/proprietarios/guia-do-proprietario.html">Guia do proprietário</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button type="button" aria-haspopup="true">Profissionais</button>
+      <div class="dropdown-menu">
+        <a href="/servicos.html">Soluções</a>
+        <a href="/automacao-imobiliarias.html">Automação</a>
+        <a href="/captacao-imoveis-litoral.html">Captação</a>
+        <a href="/education/index.html">Academy</a>
+        <a href="/planos-assinatura.html">Planos</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button type="button" aria-haspopup="true">Inteligência</button>
+      <div class="dropdown-menu">
+        <a href="/blog/index.html">Blog</a>
+        <a href="/blog/indice-preco-m2-litoral-paulista-tabela-tendencias-2026.html">Índice de preço por m²</a>
+        <a href="/ferramentas/index.html">Ferramentas</a>
+        <a href="/apps/">Apps gratuitos</a>
+        <a href="/ferramentas/assistente-virtual.html">Assistente IA</a>
+      </div>
+    </div>
   </nav>
   <a class="btn" href="/interesse.html" style="padding:9px 18px;font-size:.9rem">Falar com especialista</a>
 </div>
@@ -271,14 +321,16 @@ footer .cols{grid-template-columns:1fr 1fr}
 
 <footer>
 <div class="wrap">
-  <div class="cols">
+  <div class="cols" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr">
     <div>
       <p class="logo" style="color:#fff;margin-bottom:10px">Praia<span>Digital</span></p>
       <p style="max-width:320px">Inteligência imobiliária para o litoral paulista: imóveis, dados de mercado e IA em uma só plataforma.</p>
     </div>
-    <div><h4>Plataforma</h4><a href="/imoveis.html">Imóveis</a><a href="/mapa-inteligente.html">Mapa</a><a href="/cidades/bertioga.html">Cidades</a><a href="/bairros/index.html">Bairros</a><a href="/ferramentas/index.html">Ferramentas</a><a href="/anunciar-temporada.html">Anunciar temporada</a></div>
-    <div><h4>Apps gratuitos</h4><a href="/apps/">Todos os apps</a><a href="/apps/simulador-roi-temporada/index.html">Simulador ROI</a><a href="/apps/calculadora-financiamento/">Financiamento SAC vs Price</a><a href="/apps/custo-de-compra/">Custos de compra</a><a href="/apps/planejador-entrada/">Planejador de entrada</a><a href="/apps/calculadora-valorizacao/">Valorização projetada</a><a href="/apps/renda-para-financiar/">Renda para financiar</a><a href="/apps/temporada-ou-anual/">Temporada ou anual</a></div>
-    <div><h4>Profissionais</h4><a href="/servicos.html">Soluções</a><a href="/planos-assinatura.html">Planos</a><a href="/education/index.html">Academy</a><a href="/interesse.html">WhatsApp</a></div>
+    <div><h4>Comprar</h4><a href="/imoveis.html">Imóveis</a><a href="/mapa-inteligente.html">Mapa</a><a href="/cidades/bertioga.html">Cidades</a><a href="/bairros/index.html">Bairros</a></div>
+    <div><h4>Investir</h4><a href="/ferramentas/avaliacao-preco.html">Avaliação</a><a href="/apps/simulador-roi-temporada/index.html">Simulador ROI</a><a href="/apps/calculadora-financiamento/">Financiamento</a><a href="/apps/comparador-cidades/index.html">Comparar cidades</a></div>
+    <div><h4>Meu Imóvel</h4><a href="/meu-imovel.html">Central do proprietário</a><a href="/anunciar-temporada.html">Anunciar temporada</a><a href="/proprietarios/guia-do-proprietario.html">Guia do proprietário</a></div>
+    <div><h4>Profissionais</h4><a href="/servicos.html">Soluções</a><a href="/planos-assinatura.html">Planos</a><a href="/education/index.html">Academy</a><a href="/cases.html">Cases</a></div>
+    <div><h4>Inteligência</h4><a href="/blog/index.html">Blog</a><a href="/ferramentas/index.html">Ferramentas</a><a href="/apps/">Apps gratuitos</a><a href="/metodologia.html">Metodologia</a></div>
   </div>
   <div class="legal">
     <span>© 2026 Praia Digital — inteligência imobiliária para o litoral.</span>
