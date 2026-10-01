@@ -21,10 +21,24 @@ button:hover{background:#0c5c43}
 a{color:#0EA5E9}
 table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
 td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
+    table{width:100%;border-collapse:collapse;font-size:14px}
+    th{background:#F8FAFC;text-align:left;padding:8px 10px;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#475569}
+    td{padding:8px 10px;border-bottom:1px solid #F1F5F9}
+    .tag{display:inline-block;background:#ECFDF5;color:#065F46;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;margin-left:6px}
+    .faq details{border:1px solid #E5E7EB;border-radius:10px;margin-bottom:8px;background:#fff}
+    .faq summary{cursor:pointer;padding:12px 14px;font-weight:600;font-size:14px;list-style:none}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq details p{padding:0 14px 12px;font-size:14px;color:#475569}
+    .links{display:grid;gap:10px;margin-top:8px}
+    .links a{display:block;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px;text-decoration:none;color:#0F172A;font-weight:600}
+    .links a span{color:#0EA5E9}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Valorização Imobiliária | Praia Digital Apps","url":"https://praia.digital/apps/calculadora-valorizacao/","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0"}}</script>
 <meta property="og:type" content="website"><meta property="og:title" content="Calculadora de Valorização Imobiliária — Projeção por cidade | Praia Digital Apps"><meta property="og:description" content="Projete a valorização de um imóvel no litoral por taxa anual e prazo, comparada ao CDI. Gratuito."><meta property="og:url" content="https://praia.digital/apps/calculadora-valorizacao/">
 <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quanto valoriza um imóvel no litoral por ano?","acceptedAnswer":{"@type":"Answer","text":"A faixa conservadora para o litoral paulista é 6–8% a.a. Cidades em expansão (Bertioga, Itanhaém, Peruíbe) têm registrado picos acima de 10% a.a. nos últimos 12 meses, enquanto mercados maduros como Santos valorizam com mais estabilidade (~8–10% na orla)."}},{"@type":"Question","name":"O que mais influencia a valorização?","acceptedAnswer":{"@type":"Answer","text":"Proximidade do mar, infraestrutura do bairro, novos lançamentos, acessos rodoviários e liquidez. Bairros em transformação (ex.: Ocian/Tupi em Praia Grande, Vila em Ilhabela) tendem a superar a média da cidade."}},{"@type":"Question","name":"Valorização nominal ou real?","acceptedAnswer":{"@type":"Answer","text":"Nominal inclui inflação. Com IPCA em ~4,2% (12m), uma valorização de 7% a.a. equivale a ~2,7% de ganho real. Compare com renda fixa (CDI ~13,6%) para avaliar o custo de oportunidade."}},{"@type":"Question","name":"Imóvel na planta valoriza mais?","acceptedAnswer":{"@type":"Answer","text":"Historicamente, imóveis na planta no litoral valorizam 10–20% entre lançamento e entrega, mas concentram risco (atraso, construtora). Desconfie de projeções acima de 15% a.a. — não são sustentáveis no longo prazo."}}]}
+  </script>
 </head>
 <body>
 <header><h1>📈 Calculadora de Valorização</h1><p>Projete o valor futuro do seu imóvel no litoral e compare com o CDI</p></header>
@@ -51,6 +65,43 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
     <p id="dica" style="font-weight:700"></p>
   </div>
 </div>
+<div class="card">
+<h2 style="font-size:17px;margin-bottom:10px">📈 Valorização anual por cidade <span class="tag">12 meses até set/2026</span></h2>
+<table>
+  <tr><th>Cidade</th><th>Valorização 12m</th><th>Driver principal</th></tr>
+  <tr><td>Bertioga</td><td>+15,2%</td><td>Riviera + expansão da orla sul</td></tr>
+  <tr><td>Peruíbe</td><td>+14,1%</td><td>preço-base baixo, nova demanda</td></tr>
+  <tr><td>Itanhaém</td><td>+13,8%</td><td>condomínios e acesso pela Padre Manoel</td></tr>
+  <tr><td>Mongaguá</td><td>+12,5%</td><td>plataforma de pesca + verticalização</td></tr>
+  <tr><td>São Sebastião</td><td>+12,1%</td><td>Maresias/Juquehy, temporada premium</td></tr>
+  <tr><td>Ubatuba</td><td>+11,3%</td><td>turismo o ano todo</td></tr>
+  <tr><td>Ilhabela</td><td>+10,5%</td><td>estoque limitado (ilha)</td></tr>
+  <tr><td>São Vicente</td><td>+10,5%</td><td>revitalização do centro e orla</td></tr>
+  <tr><td>Santos</td><td>+9,8%</td><td>liquidez e requalificação do centro</td></tr>
+  <tr><td>Praia Grande</td><td>+9,5%</td><td>maior estoque de lançamentos da baixada</td></tr>
+  <tr><td>Guarujá</td><td>+8,9%</td><td>Enseada/Astúrias, demanda de SP</td></tr>
+</table>
+<p style="font-size:12px;color:#64748B;margin-top:12px">Fonte: análise Praia Digital sobre anúncios e transações (12 meses até set/2026). Valorização passada não garante retorno futuro — use como referência, não como promessa.</p>
+</div>
+
+  <div class="card faq">
+    <h2 style="font-size:17px;margin-bottom:10px">❓ Perguntas frequentes</h2>
+    <details><summary>Quanto valoriza um imóvel no litoral por ano?</summary><p>A faixa conservadora para o litoral paulista é 6–8% a.a. Cidades em expansão (Bertioga, Itanhaém, Peruíbe) têm registrado picos acima de 10% a.a. nos últimos 12 meses, enquanto mercados maduros como Santos valorizam com mais estabilidade (~8–10% na orla).</p></details>
+    <details><summary>O que mais influencia a valorização?</summary><p>Proximidade do mar, infraestrutura do bairro, novos lançamentos, acessos rodoviários e liquidez. Bairros em transformação (ex.: Ocian/Tupi em Praia Grande, Vila em Ilhabela) tendem a superar a média da cidade.</p></details>
+    <details><summary>Valorização nominal ou real?</summary><p>Nominal inclui inflação. Com IPCA em ~4,2% (12m), uma valorização de 7% a.a. equivale a ~2,7% de ganho real. Compare com renda fixa (CDI ~13,6%) para avaliar o custo de oportunidade.</p></details>
+    <details><summary>Imóvel na planta valoriza mais?</summary><p>Historicamente, imóveis na planta no litoral valorizam 10–20% entre lançamento e entrega, mas concentram risco (atraso, construtora). Desconfie de projeções acima de 15% a.a. — não são sustentáveis no longo prazo.</p></details>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size:17px;margin-bottom:10px">📍 Aprofunde por bairro</h2>
+    <div class="links">
+      <a href="/bairros/"><span>🏙️ Índice de bairros</span> — 123 bairros em 12 cidades do litoral</a>
+      <a href="/bairros/santos/index.html">Santos — Gonzaga, Boqueirão, Pompéia e mais</a>
+      <a href="/bairros/guaruja/index.html">Guarujá — Enseada, Pitangueiras, Astúrias e mais</a>
+      <a href="/bairros/sao-sebastiao/index.html">São Sebastião — Maresias, Juquehy, Barra do Sahy e mais</a>
+    </div>
+  </div>
+
 <div class="card"><h2>📌 Como interpretar</h2>
 <p style="font-size:14px;margin-top:6px">A valorização imobiliária varia muito por cidade e bairro: use o <a href="/apps/comparador-cidades/">comparador de cidades</a> para escolher onde investir e o <a href="/apps/valor-imovel/">estimador de valor</a> para saber quanto seu imóvel vale hoje. Lembre-se: o imóvel também gera renda — some a valorização ao retorno do <a href="/apps/simulador-roi-temporada/">simulador de ROI de temporada</a> para o retorno total do investimento.</p>
 <p style="font-size:14px;margin-top:8px">Valores são projeções educativas, sem garantia. Consulte dados reais no <a href="/blog/indice-preco-m2-litoral-paulista-tabela-tendencias-2026.html">índice de preço por m² do litoral</a>.</p></div>
