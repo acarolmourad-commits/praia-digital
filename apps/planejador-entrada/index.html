@@ -21,10 +21,24 @@ button:hover{background:#0c5c43}
 a{color:#0EA5E9}
 table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
 td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
+    table{width:100%;border-collapse:collapse;font-size:14px}
+    th{background:#F8FAFC;text-align:left;padding:8px 10px;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#475569}
+    td{padding:8px 10px;border-bottom:1px solid #F1F5F9}
+    .tag{display:inline-block;background:#ECFDF5;color:#065F46;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;margin-left:6px}
+    .faq details{border:1px solid #E5E7EB;border-radius:10px;margin-bottom:8px;background:#fff}
+    .faq summary{cursor:pointer;padding:12px 14px;font-weight:600;font-size:14px;list-style:none}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq details p{padding:0 14px 12px;font-size:14px;color:#475569}
+    .links{display:grid;gap:10px;margin-top:8px}
+    .links a{display:block;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px;text-decoration:none;color:#0F172A;font-weight:600}
+    .links a span{color:#0EA5E9}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Planejador de Entrada | Praia Digital Apps","url":"https://praia.digital/apps/planejador-entrada/","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0"}}</script>
 <meta property="og:type" content="website"><meta property="og:title" content="Planejador de Entrada — Quanto guardar por mês para comprar | Praia Digital Apps"><meta property="og:description" content="Planeje a entrada do seu imóvel no litoral: quanto guardar por mês, prazo e efeito dos juros. Gratuito."><meta property="og:url" content="https://praia.digital/apps/planejador-entrada/">
 <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quanto preciso de entrada para um imóvel no litoral?","acceptedAnswer":{"@type":"Answer","text":"Bancos financiam até 80–90% do valor. Para um apto de R$ 270 mil em Praia Grande, a entrada típica é R$ 40–55 mil; em Santos (R$ 560 mil), R$ 85–115 mil. Some ainda R$ 10–20 mil de custos de fechamento (ITBI + cartório)."}},{"@type":"Question","name":"Onde deixar o dinheiro da entrada rendendo?","acceptedAnswer":{"@type":"Answer","text":"Com o CDI em ~13,6% a.a. (set/2026), CDB 100% CDI com liquidez diária ou Tesouro Selic são as opções padrão: R$ 100 mil rendem ~R$ 1.100/mês. Evite deixar na poupança (~8,3% a.a.)."}},{"@type":"Question","name":"Vale usar FGTS na entrada?","acceptedAnswer":{"@type":"Answer","text":"Sim — é o uso mais eficiente do fundo: reduz o valor financiado e os juros totais, sem custo de oportunidade relevante (FGTS rende TR + 3% a.a., bem abaixo do CDI)."}},{"@type":"Question","name":"Quanto tempo para juntar a entrada?","acceptedAnswer":{"@type":"Answer","text":"Guardando R$ 2.000/mês a 13,6% a.a., você acumula ~R$ 55 mil em 24 meses ou ~R$ 90 mil em 36 meses. Acelere com FGTS, 13º, restituição do IR e venda de bens."}}]}
+  </script>
 </head>
 <body>
 <header><h1>🎯 Planejador de Entrada</h1><p>Transforme o sonho do imóvel no litoral em uma meta mensal concreta</p></header>
@@ -48,6 +62,43 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
     <p id="dica" style="font-weight:700"></p>
   </div>
 </div>
+<div class="card">
+<h2 style="font-size:17px;margin-bottom:10px">🎯 Quanto de entrada por cidade <span class="tag">set/2026</span></h2>
+<p style="font-size:14px;color:#475569;margin-bottom:8px">Entrada típica de 20% sobre o preço de um apto de 2 quartos + custos de fechamento estimados (ITBI + cartório):</p>
+<table>
+  <tr><th>Cidade</th><th>Preço típico</th><th>Entrada (20%)</th><th>Custos fechamento</th><th>Total inicial</th></tr>
+  <tr><td>Peruíbe</td><td>R$ 143 mil</td><td>R$ 29 mil</td><td>~R$ 6 mil</td><td>~R$ 35 mil</td></tr>
+  <tr><td>Mongaguá</td><td>R$ 158 mil</td><td>R$ 32 mil</td><td>~R$ 6 mil</td><td>~R$ 38 mil</td></tr>
+  <tr><td>Itanhaém</td><td>R$ 180 mil</td><td>R$ 36 mil</td><td>~R$ 7 mil</td><td>~R$ 43 mil</td></tr>
+  <tr><td>Bertioga</td><td>R$ 240 mil</td><td>R$ 48 mil</td><td>~R$ 9 mil</td><td>~R$ 57 mil</td></tr>
+  <tr><td>Praia Grande</td><td>R$ 270 mil</td><td>R$ 54 mil</td><td>~R$ 10 mil</td><td>~R$ 64 mil</td></tr>
+  <tr><td>São Vicente</td><td>R$ 315 mil</td><td>R$ 63 mil</td><td>~R$ 11 mil</td><td>~R$ 74 mil</td></tr>
+  <tr><td>Guarujá</td><td>R$ 368 mil</td><td>R$ 74 mil</td><td>~R$ 14 mil</td><td>~R$ 88 mil</td></tr>
+  <tr><td>São Sebastião</td><td>R$ 488 mil</td><td>R$ 98 mil</td><td>~R$ 19 mil</td><td>~R$ 117 mil</td></tr>
+  <tr><td>Ilhabela</td><td>R$ 540 mil</td><td>R$ 108 mil</td><td>~R$ 16 mil</td><td>~R$ 124 mil</td></tr>
+  <tr><td>Santos</td><td>R$ 560 mil</td><td>R$ 112 mil</td><td>~R$ 17 mil</td><td>~R$ 129 mil</td></tr>
+</table>
+<p style="font-size:12px;color:#64748B;margin-top:12px">Estimativas Praia Digital (set/2026). ITBI 2–3% conforme município — veja a <a href="/apps/custo-de-compra/" style="color:#0EA5E9">calculadora de custos de compra</a>. FGTS pode abater a entrada.</p>
+</div>
+
+  <div class="card faq">
+    <h2 style="font-size:17px;margin-bottom:10px">❓ Perguntas frequentes</h2>
+    <details><summary>Quanto preciso de entrada para um imóvel no litoral?</summary><p>Bancos financiam até 80–90% do valor. Para um apto de R$ 270 mil em Praia Grande, a entrada típica é R$ 40–55 mil; em Santos (R$ 560 mil), R$ 85–115 mil. Some ainda R$ 10–20 mil de custos de fechamento (ITBI + cartório).</p></details>
+    <details><summary>Onde deixar o dinheiro da entrada rendendo?</summary><p>Com o CDI em ~13,6% a.a. (set/2026), CDB 100% CDI com liquidez diária ou Tesouro Selic são as opções padrão: R$ 100 mil rendem ~R$ 1.100/mês. Evite deixar na poupança (~8,3% a.a.).</p></details>
+    <details><summary>Vale usar FGTS na entrada?</summary><p>Sim — é o uso mais eficiente do fundo: reduz o valor financiado e os juros totais, sem custo de oportunidade relevante (FGTS rende TR + 3% a.a., bem abaixo do CDI).</p></details>
+    <details><summary>Quanto tempo para juntar a entrada?</summary><p>Guardando R$ 2.000/mês a 13,6% a.a., você acumula ~R$ 55 mil em 24 meses ou ~R$ 90 mil em 36 meses. Acelere com FGTS, 13º, restituição do IR e venda de bens.</p></details>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size:17px;margin-bottom:10px">📍 Aprofunde por bairro</h2>
+    <div class="links">
+      <a href="/bairros/"><span>🏙️ Índice de bairros</span> — 123 bairros em 12 cidades do litoral</a>
+      <a href="/bairros/santos/index.html">Santos — Gonzaga, Boqueirão, Pompéia e mais</a>
+      <a href="/bairros/guaruja/index.html">Guarujá — Enseada, Pitangueiras, Astúrias e mais</a>
+      <a href="/bairros/sao-sebastiao/index.html">São Sebastião — Maresias, Juquehy, Barra do Sahy e mais</a>
+    </div>
+  </div>
+
 <div class="card"><h2>📌 Como acelerar sua entrada</h2>
 <p style="font-size:14px;margin-top:6px">Quanto maior a entrada, menor o financiamento e os juros. Combine este planejador com o <a href="/apps/calculadora-financiamento/">simulador SAC vs. Price</a> para ver o impacto no valor da parcela, e com o <a href="/apps/custo-de-compra/">custo de compra</a> para lembrar do ITBI, escritura e registro (em geral 4–5% do valor do imóvel). Uma alternativa sem juros bancários é o <a href="/apps/calculadora-consorcio/">consórcio</a>, que também pode usar o valor guardado como lance.</p>
 <p style="font-size:14px;margin-top:8px">Dica: aplique o dinheiro da entrada em CDBs de liquidez diária ou Tesouro Selic — rendimento próximo do CDI (~1,07% a.m. com Selic a 13,75% a.a., set/2026) e baixo risco.</p></div>
