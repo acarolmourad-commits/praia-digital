@@ -45,7 +45,21 @@
     .links a span{color:#0EA5E9}
     footer{text-align:center;color:#94A3B8;font-size:12px;padding:20px}
     .note{font-size:12px;color:#64748B;margin-top:12px}
+      table{width:100%;border-collapse:collapse;font-size:14px}
+    th{background:#F8FAFC;text-align:left;padding:8px 10px;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#475569}
+    td{padding:8px 10px;border-bottom:1px solid #F1F5F9}
+    .tag{display:inline-block;background:#ECFDF5;color:#065F46;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;margin-left:6px}
+    .faq details{border:1px solid #E5E7EB;border-radius:10px;margin-bottom:8px;background:#fff}
+    .faq summary{cursor:pointer;padding:12px 14px;font-weight:600;font-size:14px;list-style:none}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq details p{padding:0 14px 12px;font-size:14px;color:#475569}
+    .links{display:grid;gap:10px;margin-top:8px}
+    .links a{display:block;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px;text-decoration:none;color:#0F172A;font-weight:600}
+    .links a span{color:#0EA5E9}
   </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qual ROI esperar de aluguel de temporada no litoral?","acceptedAnswer":{"@type":"Answer","text":"Bem localizado e com boa gestão, um imóvel de temporada no litoral rende 8–14% ao ano bruto sobre o valor de compra. Cidades baratas (Mongaguá, Peruíbe) têm menor receita absoluta, mas maior retorno percentual."}},{"@type":"Question","name":"O que mais impacta o ROI de temporada?","acceptedAnswer":{"@type":"Answer","text":"Ocupação (localização, avaliações, fotos), diária dinâmica por temporada, taxa das plataformas (~15–20%) e custos fixos: condomínio, IPTU, limpeza e manutenção."}},{"@type":"Question","name":"Vale comprar pensando só em temporada?","acceptedAnswer":{"@type":"Answer","text":"Depende do yield: acima de ~8% ao ano líquido, a temporada tende a superar o aluguel tradicional e o CDB. Use o simulador com ocupação conservadora (30–35%) antes de decidir."}},{"@type":"Question","name":"Alta temporada paga o ano todo?","acceptedAnswer":{"@type":"Answer","text":"Em geral, dezembro–março + feriados representam 60–70% da receita anual no litoral de SP. A baixa temporada define se o ROI fica positivo — precifique com descontos semanais e mensais."}}]}
+  </script>
 </head>
 <body>
 <header>
@@ -96,6 +110,45 @@
       <div class="rrow"><span>Payback estimado</span><strong id="rPayback"></strong></div>
       <div class="big" id="rBig"></div>
       <p class="note">Estimativa baseada em parâmetros informados (dados coletados em set/2026). Taxas de plataforma: Airbnb ~15,5% (host-only), Booking 15–25%. IR via carnê-leão, faixas progressivas até 27,5%. Referências de mercado: AirDNA/Airbtics (litoral SP, 2026). Não constitui garantia de rendimento.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size:17px;margin-bottom:10px">🏖️ Diária e ocupação por cidade <span class="tag">set/2026</span></h2>
+    <p style="font-size:14px;color:#475569;margin-bottom:8px">Referências para apto 2 quartos bem avaliado em plataformas de temporada. Ocupação = média anual estimada (alta temporada chega a 90–100%).</p>
+    <table>
+      <tr><th>Cidade</th><th>Diária média</th><th>Alta temporada</th><th>Ocupação anual</th></tr>
+      <tr><td>São Sebastião (Maresias/Juquehy)</td><td>R$ 900</td><td>R$ 1.500–2.500</td><td>~35%</td></tr>
+      <tr><td>Ilhabela</td><td>R$ 800</td><td>R$ 1.300–2.200</td><td>~35%</td></tr>
+      <tr><td>Santos</td><td>R$ 450</td><td>R$ 700–1.000</td><td>~55%</td></tr>
+      <tr><td>Guarujá</td><td>R$ 450</td><td>R$ 700–1.100</td><td>~50%</td></tr>
+      <tr><td>Ubatuba</td><td>R$ 400</td><td>R$ 650–1.000</td><td>~35%</td></tr>
+      <tr><td>Praia Grande</td><td>R$ 320</td><td>R$ 500–750</td><td>~50%</td></tr>
+      <tr><td>Caraguatatuba</td><td>R$ 320</td><td>R$ 500–800</td><td>~35%</td></tr>
+      <tr><td>São Vicente</td><td>R$ 280</td><td>R$ 450–650</td><td>~45%</td></tr>
+      <tr><td>Bertioga</td><td>R$ 350</td><td>R$ 600–900 (Riviera: R$ 1.500+)</td><td>~35%</td></tr>
+      <tr><td>Itanhaém</td><td>R$ 250</td><td>R$ 400–600</td><td>~35%</td></tr>
+      <tr><td>Mongaguá</td><td>R$ 220</td><td>R$ 350–550</td><td>~35%</td></tr>
+      <tr><td>Peruíbe</td><td>R$ 200</td><td>R$ 320–500</td><td>~30%</td></tr>
+    </table>
+    <p style="font-size:12px;color:#64748B;margin-top:12px">Estimativas Praia Digital (set/2026) a partir de anúncios ativos em plataformas de temporada. Gestão profissional e boas avaliações elevam a ocupação.</p>
+  </div>
+
+  <div class="card faq">
+    <h2 style="font-size:17px;margin-bottom:10px">❓ Perguntas frequentes</h2>
+    <details><summary>Qual ROI esperar de aluguel de temporada no litoral?</summary><p>Bem localizado e com boa gestão, um imóvel de temporada no litoral rende 8–14% ao ano bruto sobre o valor de compra. Cidades baratas (Mongaguá, Peruíbe) têm menor receita absoluta, mas maior retorno percentual.</p></details>
+    <details><summary>O que mais impacta o ROI de temporada?</summary><p>Ocupação (localização, avaliações, fotos), diária dinâmica por temporada, taxa das plataformas (~15–20%) e custos fixos: condomínio, IPTU, limpeza e manutenção.</p></details>
+    <details><summary>Vale comprar pensando só em temporada?</summary><p>Depende do yield: acima de ~8% ao ano líquido, a temporada tende a superar o aluguel tradicional e o CDB. Use o simulador com ocupação conservadora (30–35%) antes de decidir.</p></details>
+    <details><summary>Alta temporada paga o ano todo?</summary><p>Em geral, dezembro–março + feriados representam 60–70% da receita anual no litoral de SP. A baixa temporada define se o ROI fica positivo — precifique com descontos semanais e mensais.</p></details>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size:17px;margin-bottom:10px">📍 Aprofunde por bairro</h2>
+    <div class="links">
+      <a href="/bairros/"><span>🏙️ Índice de bairros</span> — 123 bairros em 12 cidades do litoral</a>
+      <a href="/bairros/santos/index.html">Santos — Gonzaga, Boqueirão, Pompéia e mais</a>
+      <a href="/bairros/guaruja/index.html">Guarujá — Enseada, Pitangueiras, Astúrias e mais</a>
+      <a href="/bairros/sao-sebastiao/index.html">São Sebastião — Maresias, Juquehy, Barra do Sahy e mais</a>
     </div>
   </div>
 
