@@ -21,10 +21,20 @@ button:hover{background:#0c5c43}
 a{color:#0EA5E9}
 table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
 td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
+
+    .tag{display:inline-block;background:#ECFDF5;color:#065F46;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;margin-left:6px}
+    .faq details{border:1px solid #E5E7EB;border-radius:10px;margin-bottom:8px;background:#fff}
+    .faq summary{cursor:pointer;padding:12px 14px;font-weight:600;font-size:14px;list-style:none}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq details p{padding:0 14px 12px;font-size:14px;color:#475569}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Temporada ou Aluguel Anual — o que rende mais? | Praia Digital Apps","url":"https://praia.digital/apps/temporada-ou-anual/","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0"}}</script>
 <meta property="og:type" content="website"><meta property="og:title" content="Temporada ou Aluguel Anual — o que rende mais? | Praia Digital Apps"><meta property="og:description" content="Compare a receita líquida de aluguel de temporada vs. contrato anual no litoral de SP, com taxas, ocupação e yield anual. Gratuito."><meta property="og:url" content="https://praia.digital/apps/temporada-ou-anual/">
 <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quanto rende temporada vs. aluguel anual no litoral?", "acceptedAnswer": {"@type": "Answer", "text": "Em cidades como Guarujá e Santos, a temporada pode render 1,8–2,5× o aluguel anual em receita bruta, mas depois de taxas (20–30%), custos fixos e vacância, o líquido fica em 1,2–1,8×. Vale mais quem administra bem e aceita a oscilação."}}, {"@type": "Question", "name": "Qual ocupação anual é realista?", "acceptedAnswer": {"@type": "Answer", "text": "A média no litoral de SP fica entre 8 e 14 noites/mês (100–170 noites/ano), concentrada em dezembro–março, feriados e julho. Imóveis com piscina, vista mar e boas avaliações chegam a 15+ noites/mês."}}, {"@type": "Question", "name": "Quais taxas a temporada tem que o anual não tem?", "acceptedAnswer": {"@type": "Answer", "text": "Plataformas (Airbnb/Booking: 15–18% somando anfitrião+hóspede), limpeza (R$ 120–250 por estadia), gestão (15–25% se terceirizar), além de contas de consumo que no anual ficam com o inquilino."}}, {"@type": "Question", "name": "Posso misturar os dois modelos?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, e é uma estratégia comum: temporada no verão/feriados e contrato curto (ou temporada corporativa) no resto do ano. O aluguel por temporada mantém o imóvel disponível para seu uso próprio — impossível no contrato anual."}}]}
+  </script>
 </head>
 <body>
 <header><h1>🌴 Temporada ou Aluguel Anual?</h1><p>Compare os dois modelos de renda do seu imóvel no litoral</p></header>
@@ -51,6 +61,24 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
 <div class="card"><h2>📌 Qual modelo combina com seu imóvel?</h2>
 <p style="font-size:14px;margin-top:6px">Temporada no litoral de SP pode render 2–3× o aluguel anual, mas exige ocupação, gestão e tem custos maiores. A média anual de ocupação costuma ficar entre 8 e 14 noites/mês, concentrada no verão e feriados. Aprofunde a análise no <a href="/apps/simulador-roi-temporada/">Simulador de ROI de Temporada</a>, estime o valor do imóvel em <a href="/apps/valor-imovel/">Quanto Vale Meu Imóvel?</a> e projete a valorização na <a href="/apps/calculadora-valorizacao/">Calculadora de Valorização</a>.</p>
 <p style="font-size:14px;margin-top:8px">Ainda escolhendo a cidade? Use o <a href="/apps/comparador-cidades/">Comparador de Cidades</a> para ranquear o litoral pelo seu perfil de investimento.</p></div>
+<div class="card">
+<h2 style="font-size:17px;margin-bottom:10px">📊 Temporada vs. anual por cidade <span class="tag">out/2026</span></h2>
+<p style="font-size:14px;color:#475569;margin-bottom:8px">Diária média e ocupação real de plataformas (Airbnb/Booking) no litoral de SP; líquido estimado já desconta ~28% de taxas e ~R$ 1.100/mês de custos fixos:</p>
+<table>
+  <tr><th>Cidade</th><th>Diária média</th><th>Noites/mês</th><th>Receita mensal temporada</th><th>Aluguel anual/mês</th></tr>
+  <tr><td>Guarujá</td><td>R$ 550</td><td>10</td><td>R$ 5.500 <small>(~R$ 2.860 líq.)</small></td><td>R$ 3.200</td></tr>
+  <tr><td>Santos</td><td>R$ 500</td><td>9</td><td>R$ 4.500 <small>(~R$ 2.140 líq.)</small></td><td>R$ 2.900</td></tr>
+  <tr><td>Bertioga</td><td>R$ 480</td><td>8</td><td>R$ 3.840 <small>(~R$ 1.665 líq.)</small></td><td>R$ 2.400</td></tr>
+  <tr><td>Praia Grande</td><td>R$ 380</td><td>9</td><td>R$ 3.420 <small>(~R$ 1.362 líq.)</small></td><td>R$ 2.300</td></tr>
+  <tr><td>Itanhaém</td><td>R$ 320</td><td>8</td><td>R$ 2.560 <small>(~R$ 743 líq.)</small></td><td>R$ 1.800</td></tr>
+  <tr><td>Mongaguá</td><td>R$ 300</td><td>7</td><td>R$ 2.100 <small>(~R$ 412 líq.)</small></td><td>R$ 1.600</td></tr>
+</table>
+<p style="font-size:13px;color:#64748B;margin-top:8px">Regra prática: temporada compensa quando a receita líquida supera o anual em 40%+ — abaixo disso, a estabilidade do contrato anual costuma vencer.</p>
+</div>
+<div class="card"><h2 style="font-size:17px;margin-bottom:6px">❓ Perguntas frequentes</h2>
+<div class="faq" style="margin-top:10px"><details><summary>Quanto rende temporada vs. aluguel anual no litoral?</summary><p>Em cidades como Guarujá e Santos, a temporada pode render 1,8–2,5× o aluguel anual em receita bruta, mas depois de taxas (20–30%), custos fixos e vacância, o líquido fica em 1,2–1,8×. Vale mais quem administra bem e aceita a oscilação.</p></details><details><summary>Qual ocupação anual é realista?</summary><p>A média no litoral de SP fica entre 8 e 14 noites/mês (100–170 noites/ano), concentrada em dezembro–março, feriados e julho. Imóveis com piscina, vista mar e boas avaliações chegam a 15+ noites/mês.</p></details><details><summary>Quais taxas a temporada tem que o anual não tem?</summary><p>Plataformas (Airbnb/Booking: 15–18% somando anfitrião+hóspede), limpeza (R$ 120–250 por estadia), gestão (15–25% se terceirizar), além de contas de consumo que no anual ficam com o inquilino.</p></details><details><summary>Posso misturar os dois modelos?</summary><p>Sim, e é uma estratégia comum: temporada no verão/feriados e contrato curto (ou temporada corporativa) no resto do ano. O aluguel por temporada mantém o imóvel disponível para seu uso próprio — impossível no contrato anual.</p></details></div>
+<p style="font-size:14px;margin-top:10px">📍 <a href="/bairros/"><b>Aprofunde por bairro</b></a> — rentabilidade varia muito entre bairros: compare 123 bairros do litoral no nosso índice.</p>
+</div>
 </div>
 <script>
 const fmt=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
