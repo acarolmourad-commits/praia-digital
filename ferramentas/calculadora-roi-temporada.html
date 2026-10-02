@@ -66,11 +66,11 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         <div class="grid">
           <div><label for="valor">Valor do imóvel (R$)</label><input id="valor" type="number" min="0" value="650000"></div>
           <div><label for="diaria">Diária média na temporada (R$)</label><input id="diaria" type="number" min="0" value="450"></div>
-          <div><label for="ocupacao">Ocupação anual (%)</label><input id="ocupacao" type="number" min="0" max="100" value="45"></div>
+          <div><label for="ocupacao">Ocupação anual (%)</label><input id="ocupacao" type="number" min="0" max="100" value="45"><small style="opacity:.7">Média do litoral: 58,7% (AirDNA set/2026)</small></div>
           <div><label for="taxa">Taxa de administração (%)</label><input id="taxa" type="number" min="0" max="100" value="20"></div>
           <div><label for="custos">Custos fixos anuais (IPTU, condomínio) (R$)</label><input id="custos" type="number" min="0" value="12000"></div>
           <div><label for="aluguel">Aluguel mensal (cenário anual) (R$)</label><input id="aluguel" type="number" min="0" value="2800"></div>
-          <div><label for="renda">Rendimento de renda fixa (% ao ano)</label><input id="renda" type="number" min="0" step="0.1" value="10.5"></div>
+          <div><label for="renda">Rendimento de renda fixa (% ao ano)</label><input id="renda" type="number" min="0" step="0.05" value="13.75"><small style="opacity:.7">Selic out/2026: 13,75% a.a. (Banco Central)</small></div>
         </div>
         <button class="btn" id="calcular" type="button">Calcular retorno</button>
       </div>
@@ -85,6 +85,45 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
           <tr id="linha-venda"><td>Venda + renda fixa</td><td id="vd-bruta"></td><td id="vd-liquida"></td><td id="vd-roi"></td></tr>
         </table>
         <p id="dica" style="margin-top:14px; opacity:.85;"></p>
+      </div>
+
+      
+      <div class="card resultado" id="dados-reais" style="background:#0d1b2e;">
+        <h2>📊 Dados reais de referência (set/2026)</h2>
+        <p class="lead">Use estes números — de anúncios reais de temporada — para calibrar a simulação acima.</p>
+
+        <h3 style="margin-top:18px;">Ocupação e receita por cidade (temporada)</h3>
+        <table>
+          <tr><th>Cidade</th><th>Ocupação média</th><th>Diária média (ADR)</th><th>Receita anual média</th><th>Pico</th></tr>
+          <tr><td>Ilhabela</td><td>62%</td><td>R$ 950</td><td>R$ 203.000</td><td>Dez–Fev</td></tr>
+          <tr><td>São Sebastião</td><td>68%</td><td>R$ 1.080</td><td>R$ 189.000</td><td>Jan–Mar</td></tr>
+          <tr><td>Ubatuba</td><td>58%</td><td>R$ 820</td><td>R$ 148.000</td><td>Dez–Jan</td></tr>
+          <tr><td>Santos</td><td>51%</td><td>R$ 650</td><td>R$ 102.000</td><td>Jan–Fev</td></tr>
+          <tr><td>Guarujá</td><td>48%</td><td>R$ 720</td><td>R$ 118.000</td><td>Dez–Mar</td></tr>
+          <tr><td>Itanhaém</td><td>42%</td><td>R$ 580</td><td>R$ 89.000</td><td>Jan–Fev</td></tr>
+          <tr><td>Praia Grande</td><td>45%</td><td>R$ 550</td><td>R$ 82.000</td><td>Jan–Abr</td></tr>
+          <tr><td>Mongaguá</td><td>38%</td><td>R$ 480</td><td>R$ 67.000</td><td>Dez–Fev</td></tr>
+        </table>
+        <p style="margin-top:8px; opacity:.8; font-size:.9rem;">Média do litoral paulista: <strong>58,7% de ocupação</strong> e ADR de <strong>R$ 890</strong> (Brasil: 45,4% e R$ 650). Anúncios ativos monitorados: 8.179.</p>
+
+        <h3 style="margin-top:18px;">Sazonalidade (ocupação × diária por mês)</h3>
+        <table>
+          <tr><th>Mês</th><th>Ocupação média</th><th>Diária média</th></tr>
+          <tr><td>Janeiro</td><td>72%</td><td>R$ 1.150</td></tr>
+          <tr><td>Fevereiro</td><td>68%</td><td>R$ 1.090</td></tr>
+          <tr><td>Dezembro</td><td>62%</td><td>R$ 980</td></tr>
+          <tr><td>Março</td><td>55%</td><td>R$ 890</td></tr>
+          <tr><td>Junho (feriados)</td><td>45%</td><td>R$ 700</td></tr>
+          <tr><td>Julho</td><td>42%</td><td>R$ 650</td></tr>
+          <tr><td>Abril</td><td>38%</td><td>R$ 620</td></tr>
+          <tr><td>Agosto</td><td>35%</td><td>R$ 550</td></tr>
+          <tr><td>Setembro</td><td>32%</td><td>R$ 500</td></tr>
+        </table>
+
+        <h3 style="margin-top:18px;">Benchmark de renda fixa</h3>
+        <p>Selic em <strong>13,75% ao ano</strong> (Banco Central do Brasil, série temporal 432, consulta em out/2026). É o parâmetro usado no cenário "venda + renda fixa" — por isso atualizamos o campo "Rendimento de renda fixa" para <strong>13,75%</strong>.</p>
+
+        <p style="margin-top:14px; font-size:.85rem; opacity:.75;">Fontes: AirDNA (set/2026), Airbtics (2025–2026), GuestFavorites (set/2026), Banco Central do Brasil (out/2026). Valores baseados em <strong>preços anunciados</strong> de temporada, não em transações. Metodologia completa em <a href="/metodologia.html" style="color:#7ee9ff;">/metodologia.html</a> · Dados detalhados em <a href="/dados-ocupacao-temporada-litoral-sp-2026.html" style="color:#7ee9ff;">Dados de ocupação 2026</a>.</p>
       </div>
 
       <div class="card resultado" id="captura">
@@ -176,18 +215,18 @@ document.getElementById('calcular').addEventListener('click', function(){
     melhor: cenarios[0][2] };
 });
 
-// Benchmarks de mercado (litoral paulista — atualizar trimestralmente)
+// Benchmarks de mercado (litoral paulista — AirDNA/Airbtics set/2026; cidades sem dado mantêm estimativa anterior)
 var BENCHMARKS = {
-  'Santos':         { diaria: 480, ocup: 52 },
-  'Guarujá':        { diaria: 520, ocup: 48 },
-  'Praia Grande':   { diaria: 380, ocup: 55 },
+  'Santos':         { diaria: 650, ocup: 51 },
+  'Guarujá':        { diaria: 720, ocup: 48 },
+  'Praia Grande':   { diaria: 550, ocup: 45 },
   'São Vicente':    { diaria: 350, ocup: 44 },
-  'Mongaguá':       { diaria: 300, ocup: 40 },
-  'Itanhaém':       { diaria: 310, ocup: 38 },
-  'Ubatuba':        { diaria: 550, ocup: 46 },
+  'Mongaguá':       { diaria: 480, ocup: 38 },
+  'Itanhaém':       { diaria: 580, ocup: 42 },
+  'Ubatuba':        { diaria: 820, ocup: 58 },
   'Caraguatatuba':  { diaria: 420, ocup: 45 },
-  'São Sebastião':  { diaria: 580, ocup: 47 },
-  'Ilhabela':       { diaria: 700, ocup: 50 },
+  'São Sebastião':  { diaria: 1080, ocup: 68 },
+  'Ilhabela':       { diaria: 950, ocup: 62 },
   'Bertioga':       { diaria: 390, ocup: 42 },
   'Outra':          { diaria: 450, ocup: 45 }
 };
