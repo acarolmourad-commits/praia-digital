@@ -1,0 +1,88 @@
+name: SEO Page Audit
+
+on:
+  push:
+    branches: [main]
+    paths: ['**.html']
+  pull_request:
+    paths: ['**.html']
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Audit HTML pages (canonical, metas, schema)
+        run: |
+          python3 - << 'EOF'
+          import os, re, sys, json
+
+          BAD_CANONICAL = 'guias/marketing-imobiliario-corretores-litoral.html'
+          issues = []
+          scanned = 0
+
+          for root, _, files in os.walk('.'):
+              if '.git' in root: continue
+              for fn in files:
+                  if not fn.endswith('.html'): continue
+                  path = os.path.join(root, fn).lstrip('./')
+                  try:
+                      html = open(path, encoding='utf-8', errors='ignore').read()
+                  except Exception:
+                      continue
+                  scanned += 1
+
+                  canonicals = re.findall(r'<link[^>]+rel="canonical"[^>]*>', html)
+                  bad_canon = [c for c in canonicals if BAD_CANONICAL in c]
+                  if bad_canon:
+                      issues.append(f'ERROR {path}: canonical aponta para página errada ({BAD_CANONICAL})')
+                  if len(canonicals) > 1:
+                      issues.append(f'WARN  {path}: {len(canonicals)} tags canonical duplicadas')
+
+                  if '<meta name="description"' not in html:
+                      issues.append(f'WARN  {path}: meta description ausente')
+
+                  # meta tags malformadas (terminadas com ">>" ou " />">")
+                  if re.search(r'">+\s*$', html, re.M) and '>' in html:
+                      pass
+                  if re.search(r'content="[^"]*">>', html):
+                      issues.append(f'WARN  {path}: meta tag malformada (">>" no final)')
+
+                  # FAQPage genérico inválido (perguntas sobre o blog, não sobre o tema)
+                  for m in re.findall(r'"@type":\s*"FAQPage".*?"name":\s*"([^"]+)"', html, re.S):
+                      if m.strip() in ('Os artigos são atualizados?', 'Como usar o blog?', 'Tem guia de temporada?'):
+                          issues.append(f'WARN  {path}: FAQPage genérico inválido ("{m}")')
+                          break
+
+                  # h1 ausente ou quebrado
+                  h1 = re.findall(r'<h1[^>]*>(.*?)</h1>', html, re.S)
+                  if not h1:
+                      issues.append(f'WARN  {path}: <h1> ausente')
+                  elif h1[0].strip() in ('>', ''):
+                      issues.append(f'ERROR {path}: <h1> vazio/quebrado')
+
+          print(f'Páginas auditadas: {scanned}')
+          errors = [i for i in issues if i.startswith('ERROR')]
+          warns = [i for i in issues if i.startswith('WARN')]
+          for i in issues[:200]:
+              print(i)
+          if len(issues) > 200:
+              print(f'... e mais {len(issues)-200} ocorrências')
+          print(f'\nResumo: {len(errors)} erros, {len(warns)} avisos')
+
+          with open('seo-audit-report.txt', 'w') as f:
+              f.write('\n'.join(issues))
+
+          if errors:
+              sys.exit(1)
+          EOF
+
+      - name: Upload audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-audit-report
+          path: seo-audit-report.txt
+          if-no-files-found: ignore
