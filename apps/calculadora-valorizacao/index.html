@@ -37,7 +37,7 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
 <meta property="og:type" content="website"><meta property="og:title" content="Calculadora de Valorização Imobiliária — Projeção por cidade | Praia Digital Apps"><meta property="og:description" content="Projete a valorização de um imóvel no litoral por taxa anual e prazo, comparada ao CDI. Gratuito."><meta property="og:url" content="https://praia.digital/apps/calculadora-valorizacao/">
 <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quanto valoriza um imóvel no litoral por ano?","acceptedAnswer":{"@type":"Answer","text":"A faixa conservadora para o litoral paulista é 6–8% a.a. Cidades em expansão (Bertioga, Itanhaém, Peruíbe) têm registrado picos acima de 10% a.a. nos últimos 12 meses, enquanto mercados maduros como Santos valorizam com mais estabilidade (~8–10% na orla)."}},{"@type":"Question","name":"O que mais influencia a valorização?","acceptedAnswer":{"@type":"Answer","text":"Proximidade do mar, infraestrutura do bairro, novos lançamentos, acessos rodoviários e liquidez. Bairros em transformação (ex.: Ocian/Tupi em Praia Grande, Vila em Ilhabela) tendem a superar a média da cidade."}},{"@type":"Question","name":"Valorização nominal ou real?","acceptedAnswer":{"@type":"Answer","text":"Nominal inclui inflação. Com IPCA em ~4,2% (12m), uma valorização de 7% a.a. equivale a ~2,7% de ganho real. Compare com renda fixa (CDI ~13,6%) para avaliar o custo de oportunidade."}},{"@type":"Question","name":"Imóvel na planta valoriza mais?","acceptedAnswer":{"@type":"Answer","text":"Historicamente, imóveis na planta no litoral valorizam 10–20% entre lançamento e entrega, mas concentram risco (atraso, construtora). Desconfie de projeções acima de 15% a.a. — não são sustentáveis no longo prazo."}}]}
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quanto valoriza um imóvel no litoral por ano?","acceptedAnswer":{"@type":"Answer","text":"A faixa conservadora para o litoral paulista é 6–8% a.a. Cidades em expansão (Bertioga, Itanhaém, Peruíbe) têm registrado picos acima de 10% a.a. nos últimos 12 meses, enquanto mercados maduros como Santos valorizam com mais estabilidade (~8–10% na orla)."}},{"@type":"Question","name":"O que mais influencia a valorização?","acceptedAnswer":{"@type":"Answer","text":"Proximidade do mar, infraestrutura do bairro, novos lançamentos, acessos rodoviários e liquidez. Bairros em transformação (ex.: Ocian/Tupi em Praia Grande, Vila em Ilhabela) tendem a superar a média da cidade."}},{"@type":"Question","name":"Valorização nominal ou real?","acceptedAnswer":{"@type":"Answer","text":"Nominal inclui inflação. Com IPCA em ~4,2% (12m), uma valorização de 7% a.a. equivale a ~2,7% de ganho real. Compare com renda fixa (CDI ~13,6%) para avaliar o custo de oportunidade."}},{"@type":"Question","name":"Quais custos entram na compra e na venda?","acceptedAnswer":{"@type":"Answer","text":"Na compra: ITBI (2–3%) + escritura e registro (~1%). Na venda: corretagem (5–6%) e IR sobre ganho de capital (15–22,5%, com isenções como a de único imóvel até R$ 440 mil). Total típico: 8–10% do valor."}},{"@type":"Question","name":"Imóvel ou CDI: qual rende mais?","acceptedAnswer":{"@type":"Answer","text":"Depende do horizonte. O CDI ganha no curtíssimo prazo, mas o imóvel soma valorização + aluguel líquido (~5% a.a. na temporada bem gerida) + proteção contra inflação — e o ganho na venda do único imóvel pode ser isento de IR."}},{"@type":"Question","name":"Imóvel na planta valoriza mais?","acceptedAnswer":{"@type":"Answer","text":"Historicamente, imóveis na planta no litoral valorizam 10–20% entre lançamento e entrega, mas concentram risco (atraso, construtora). Desconfie de projeções acima de 15% a.a. — não são sustentáveis no longo prazo."}}]}
   </script>
 </head>
 <body>
@@ -54,7 +54,7 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
   </select>
   <label>Taxa anual personalizada (% a.a.)</label><input id="taxa" type="number" step="0.1" value="7">
   <label>Prazo (anos)</label><input id="anos" type="number" value="10">
-  <label>CDI médio para comparação (% a.a.)</label><input id="cdi" type="number" step="0.1" value="10.5">
+  <label>CDI médio para comparação (% a.a.)</label><input id="cdi" type="number" step="0.1" value="13.5">
   <button onclick="calcular()">Projetar valorização</button>
   <div class="res" id="res">
     <table>
@@ -84,11 +84,56 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
 <p style="font-size:12px;color:#64748B;margin-top:12px">Fonte: análise Praia Digital sobre anúncios e transações (12 meses até set/2026). Valorização passada não garante retorno futuro — use como referência, não como promessa.</p>
 </div>
 
+<div class="card">
+<h2 style="font-size:17px;margin-bottom:10px">💰 Valorização é só metade da conta: o retorno total</h2>
+<p style="font-size:14px;color:#334155">Imóvel de investimento rende de dois jeitos: <b>valorização</b> (patrimônio) e <b>aluguel</b> (renda). Somando os dois, a comparação com renda fixa muda de figura:</p>
+<table>
+  <tr><th>Exemplo: imóvel de R$ 500 mil em Praia Grande</th><th>Apenas valorização</th><th>Valorização + temporada</th></tr>
+  <tr><td>Retorno em 10 anos (9,5% a.a. + renda líquida ~5% a.a.)</td><td>~R$ 1,24 mi</td><td>~R$ 1,24 mi + ~R$ 25 mil/ano de renda</td></tr>
+  <tr><td>Equivalente em CDI (13,5% a.a. bruto)</td><td colspan="2">~R$ 1,77 mi — mas sem uso, sem hedge de inflação e com IR de 15–22,5% sobre o ganho</td></tr>
+</table>
+<p style="font-size:13px;color:#64748B;margin-top:8px">Regra prática: se a <b>valorização anual + yield líquido de aluguel</b> superar o CDI após impostos, o imóvel ganha no longo prazo — e ainda entrega uso próprio nas férias.</p>
+</div>
+
+<div class="card">
+<h2 style="font-size:17px;margin-bottom:10px">🚧 O que está impulsionando o litoral em 2026</h2>
+<ul style="font-size:14px;color:#334155;padding-left:1.2rem;line-height:1.7">
+  <li><b>Expansão da Riviera de São Lourenço (Bertioga):</b> novos módulos puxam toda a orla sul da cidade — maior valorização 12m do litoral (+15,2%).</li>
+  <li><b>Home office consolidado:</b> ~1 em cada 4 compradores de temporada no litoral declara trabalho remoto — demanda por 2+ quartos com escritório segue forte.</li>
+  <li><b>Temporada de cruzeiros em Santos:</b> o terminal portuário recebe dezenas de escalas por temporada, aquecendo comércio e aluguel de curta temporada no centro e na orla.</li>
+  <li><b>Acessos e mobilidade:</b> obras e melhorias na Padre Manoel da Nóbrega (Itanhaém/Peruíbe) e no sistema Anchieta–Imigrantes reduzem o tempo SP→praia e ampliam a base de visitantes de fim de semana.</li>
+  <li><b>Estoque limitado em ilhas e áreas preservadas:</b> Ilhabela e trechos de São Sebastião têm restrição física de novos lotes — escassez estrutural sustenta preços.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2 style="font-size:17px;margin-bottom:10px">⚠️ Custos de transação que corroem o ganho (não esqueça!)</h2>
+<table>
+  <tr><th>Custo</th><th>Faixa típica</th><th>Quando incide</th></tr>
+  <tr><td>ITBI</td><td>2–3% do valor</td><td>na compra</td></tr>
+  <tr><td>Escritura + registro</td><td>~1%</td><td>na compra</td></tr>
+  <tr><td>Corretagem</td><td>5–6%</td><td>na venda</td></tr>
+  <tr><td>IR sobre ganho de capital</td><td>15–22,5%</td><td>na venda (há isenções, ex.: único imóvel até R$ 440 mil)</td></tr>
+</table>
+<p style="font-size:13px;color:#64748B;margin-top:8px">Na prática, comprar e vender "come" 8–10% do valor do imóvel. Por isso valorização só compensa com horizonte de <b>5+ anos</b> — em prazos curtos, os custos vencem o ganho.</p>
+</div>
+
+<div class="card">
+<h2 style="font-size:17px;margin-bottom:10px">🧭 3 erros comuns ao projetar valorização</h2>
+<ol style="font-size:14px;color:#334155;padding-left:1.2rem;line-height:1.7">
+  <li><b>Usar preço de anúncio como se fosse preço de venda.</b> O desconto médio de negociação no litoral fica entre 5% e 10% — projete com o valor real de transação.</li>
+  <li><b>Extrapolar um ano excepcional.</b> Bertioga subiu 15,2% em 12 meses, mas a média de longo prazo é menor. Use 6–8% a.a. no cenário-base e trate picos como bônus.</li>
+  <li><b>Ignorar a liquidez.</b> Imóvel fora do padrão do bairro (muito grande, sem vaga, longe do mar) pode ficar 12+ meses à venda — e liquidez baixa corrói o preço final.</li>
+</ol>
+</div>
+
   <div class="card faq">
     <h2 style="font-size:17px;margin-bottom:10px">❓ Perguntas frequentes</h2>
     <details><summary>Quanto valoriza um imóvel no litoral por ano?</summary><p>A faixa conservadora para o litoral paulista é 6–8% a.a. Cidades em expansão (Bertioga, Itanhaém, Peruíbe) têm registrado picos acima de 10% a.a. nos últimos 12 meses, enquanto mercados maduros como Santos valorizam com mais estabilidade (~8–10% na orla).</p></details>
     <details><summary>O que mais influencia a valorização?</summary><p>Proximidade do mar, infraestrutura do bairro, novos lançamentos, acessos rodoviários e liquidez. Bairros em transformação (ex.: Ocian/Tupi em Praia Grande, Vila em Ilhabela) tendem a superar a média da cidade.</p></details>
-    <details><summary>Valorização nominal ou real?</summary><p>Nominal inclui inflação. Com IPCA em ~4,2% (12m), uma valorização de 7% a.a. equivale a ~2,7% de ganho real. Compare com renda fixa (CDI ~13,6%) para avaliar o custo de oportunidade.</p></details>
+    <details><summary>Valorização nominal ou real?</summary><p>Nominal inclui inflação. Com IPCA em ~4,2% (12m), uma valorização de 7% a.a. equivale a ~2,7% de ganho real. Compare com renda fixa (CDI ~13,5%) para avaliar o custo de oportunidade.</p></details>
+    <details><summary>Quais custos entram na compra e na venda?</summary><p>Na compra: ITBI (2–3%) + escritura e registro (~1%). Na venda: corretagem (5–6%) e IR sobre ganho de capital (15–22,5%, com isenções como a de único imóvel até R$ 440 mil). Total típico: 8–10% do valor.</p></details>
+    <details><summary>Imóvel ou CDI: qual rende mais?</summary><p>Depende do horizonte. O CDI (~13,5% a.a. bruto) ganha no curtíssimo prazo, mas o imóvel soma valorização + aluguel líquido (~5% a.a. na temporada bem gerida) + proteção contra inflação — e, ao contrário da renda fixa, o ganho na venda do único imóvel pode ser isento de IR.</p></details>
     <details><summary>Imóvel na planta valoriza mais?</summary><p>Historicamente, imóveis na planta no litoral valorizam 10–20% entre lançamento e entrega, mas concentram risco (atraso, construtora). Desconfie de projeções acima de 15% a.a. — não são sustentáveis no longo prazo.</p></details>
   </div>
 
