@@ -4,7 +4,7 @@ url|tema|intencao_busca|intencao_comercial|potencial_trafego|servico|cta|destino
 
 5-sinais-imovel-subvalorizado-litoral-2026-08-05.html|5 sinais de que o imóvel no litoral está subvalorizado — praia digital|informacional|comercial|4|fotografia|SEO local|blog/diagnostico-anuncio-temporada-litoral-2026.html|alta
 alta-temporada-litoral-checklist-corretores-2026-07-25.html|alta temporada no litoral: checklist rápido para corretores — praia digital|informacional|comercial|4|fotografia|Administração Airbnb|blog/diagnostico-anuncio-temporada-litoral-2026.html|alta
-alugar-ou-comprar-imovel-litoral-decisao-2026.html|como escolher entre alugar ou comprar imóvel no litoral em 2026 | praia digital|informacional|comercial|4|fotografia|Academy|https://academy.praia.digital/courses/investimento-imoveis-litoral|média
+alugar-ou-comprar-imovel-litoral-decisao-2026.html|como escolher entre alugar ou comprar imóvel no litoral em 2026 | praia digital|informacional|comercial|4|fotografia|Academy|https://praia.digital/education/cursos/investindo-imoveis-litoral/|média
 aluguel-temporada-casa-vs-apartamento-litoral-2026.html|aluguel de temporada: casa vs apartamento no litoral|informacional|comercial|2|fotografia|Administração Airbnb|blog/diagnostico-anuncio-temporada-litoral-2026.html|alta
 aluguel-temporada-checkin-checkout-2026.html|aluguel de temporada: check-in e check-out sem dor|informacional|comercial|2|fotografia|Fotografia + edição|blog/edicao-fotografia-anuncio-temporada-litoral-2026.html|alta
 aluguel-temporada-definir-preco-disponibilidade-sem-conflitos-litoral-2026.html|aluguel por temporada: como definir preço e disponibilidade sem conflitos|informacional|comercial|3|fotografia|Administração Airbnb|blog/diagnostico-anuncio-temporada-litoral-2026.html|alta
