@@ -99,3 +99,5 @@ with open('docs/hotmart-catalogo-cursos.csv', 'w', newline='', encoding='utf-8')
     w.writerows(catalog)
 report['catalog'] = len(catalog)
 print(json.dumps(report, ensure_ascii=False))
+
+# trigger: rerun after kb_part4 fix
