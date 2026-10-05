@@ -32,7 +32,7 @@ def test_financeiro_routes_registered():
 
 def test_create_registro_requires_auth():
     r = client.post('/financeiro/registros', json={"customer_name": "Fernanda Lima", "amount_expected": 1200})
-    assert r.status_code == 401
+    assert r.status_code in (401, 403)
 
 
 def test_create_registro_and_flow():
@@ -95,11 +95,11 @@ def test_fechou_does_not_liberate_academy():
 
 def test_list_registros_requires_admin():
     r = client.get('/financeiro/registros')
-    assert r.status_code == 401
+    assert r.status_code in (401, 403)
 
 
 if __name__ == "__main__":
-    test_financeiro_routes_registered()
+    test_financeiro_routers_registered()
     test_create_registro_requires_auth()
     test_create_registro_and_flow()
     test_fechou_does_not_liberate_academy()

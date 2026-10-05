@@ -18,7 +18,7 @@ from academy.core.security import hash_password
 
 app.dependency_overrides[get_db] = override_get_db
 client = TestClient(app)
-REPO = Path("C:/Users/Carolina/praia-digital")
+REPO = Path(__file__).resolve().parents[2]
 CURSOS_DIR = REPO / "academy" / "cursos"
 MAPA = REPO / "academy" / "tests" / "mapeamento-cursos-20260817.json"
 

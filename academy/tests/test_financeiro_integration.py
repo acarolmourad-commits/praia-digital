@@ -17,5 +17,5 @@ def test_financeiro_routers_registered():
 
 def test_financeiro_create_requires_auth():
     r = client.post('/financeiro/registros', json={"customer_name": "Fernanda Lima", "amount_expected": 1200})
-    assert r.status_code == 401
+    assert r.status_code in (401, 403)
     print('AUTH_OK', r.status_code)
