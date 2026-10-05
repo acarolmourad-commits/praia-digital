@@ -38,6 +38,12 @@ jobs:
           cd academy
           pytest tests/ -q
 
+      - name: Clean test artifacts
+        run: |
+          git reset --hard HEAD
+          git clean -fd academy/uploads academy/proprietarios || true
+          git status --porcelain
+
       - name: Pre-deploy validation
         run: python scripts/validate_render_deploy.py
 
@@ -71,7 +77,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -80,7 +85,6 @@ jobs:
       - name: Install dependencies
         run: |
           pip install requests
-
       - name: Run production validation
         env:
           ACADEMY_BASE_URL: ${{ vars.ACADEMY_BASE_URL || 'https://academy.praia.digital' }}
