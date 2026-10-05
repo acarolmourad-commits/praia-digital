@@ -1,0 +1,26 @@
+name: Fix Academy theme
+on:
+  push:
+    paths:
+      - 'tools/fix_academy_theme.py'
+      - '.github/workflows/fix-academy-theme.yml'
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply fix
+        run: python3 tools/fix_academy_theme.py
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nada para commitar"
+          else
+            git commit -m "fix(education): padrao visual claro legivel em todas as paginas da Academy"
+            git push
+          fi
