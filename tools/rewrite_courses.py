@@ -44,6 +44,7 @@ report = {'rewritten': 0, 'catalog': 0, 'skipped': []}
 catalog = []
 
 for slug in sorted(os.listdir('education/cursos')):
+    if slug.startswith('_archive'): report['skipped'].append(slug); continue
     base = f'education/cursos/{slug}'
     cdir = f'{base}/curso-completo'
     ipath = f'{base}/index.html'
