@@ -5,8 +5,8 @@ gera artes 1080x1350, commita as imagens no repo e publica via Instagram Graph A
 import os, sys, json, time, datetime, subprocess, requests
 from PIL import Image, ImageDraw, ImageFont
 
-TOKEN = os.environ['IG_ACCESS_TOKEN']
-IG = os.environ['IG_USER_ID']
+TOKEN = os.environ.get('IG_ACCESS_TOKEN','')
+IG = os.environ.get('IG_USER_ID','')
 REPO = os.environ['GITHUB_REPOSITORY']
 API = 'https://graph.facebook.com/v21.0'
 RAW = f'https://raw.githubusercontent.com/{REPO}/main/social/auto'
@@ -86,6 +86,9 @@ def main():
     run(f'git add social/auto && git commit -m "social: artes {tag}" || echo nada-a-commitar')
     run('git push')
     time.sleep(20)
+    if not TOKEN or not IG:
+        print('AVISO: IG_ACCESS_TOKEN/IG_USER_ID nao configurados - artes geradas e commitadas; publicacao pulada.')
+        return
     urls=[f'{RAW}/{os.path.basename(p)}' for p in files]
     children=[]
     for u in urls:
