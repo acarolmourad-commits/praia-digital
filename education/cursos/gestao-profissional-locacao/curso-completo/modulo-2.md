@@ -1,115 +1,34 @@
-# Módulo 2 — Operação e Administração do Imóvel
+# Módulo 2 — Precificação Dinâmica
 
-## Introdução
+## Objetivo do módulo
+Maximizar receita com preço que responde à demanda real.
 
-Neste módulo você vai aprender a operar o imóvel no dia a dia: limpeza, manutenção, check-in/check-out e gestão de equipes.
+## Aula 2.1 — Sazonalidade e calendário de receita
+O ano do litoral tem 4 camadas: altíssima (Réveillon, Carnaval — multiplicador 3x a 5x sobre a diária base), alta (jan-fev, feriados prolongados — 1,5x a 2,5x), média (fins de semana de mar-jun e set-nov) e baixa (dias de semana fora de temporada). Quem usa preço fixo o ano inteiro perde receita nos picos e fica vazio na baixa.
 
-## Aula 2.1 — Processo operacional
+Monte o calendário anual antes de abrir as reservas: bloqueie as datas de altíssima com preço premium e estadia mínima (5-7 noites no Réveillon), e libere a baixa com preço agressivo para ocupação.
 
-### Fluxo operacional padrão
+**Prática:**
+- Monte o calendário anual com as 4 camadas de preço
+- Defina estadia mínima por camada
+- Revise o calendário trimestralmente
 
-1. **Check-in**
-   - Verificação de documentação
-   - Auto check-in ou recepção
-   - Apresentação do imóvel
-   - Manual de boas-vindas
+## Aula 2.2 — Ferramentas de precificação: PriceLabs e similares
+Ferramentas como PriceLabs, Beyond e Wheelhouse cruzam dados de demanda (eventos, feriados, ocupação dos concorrentes, antecedência de busca) e sugerem preço diário por data. O algoritmo captura o que o gestor não vê: um show anunciado em Santos que dobra a busca por aquela data.
 
-2. **Durante estadia**
-   - Suporte por WhatsApp
-   - Manutenção emergencial
-   - Solicitações extras
+Mas a ferramenta não substitui o gestor: configure preço base realista, limites mínimo/máximo, e regras de última hora (desconto progressivo a 7, 3 e 1 dia). Revise semanalmente — mercado de temporada muda rápido.
 
-3. **Check-out**
-   - Verificação do imóvel
-   - Checklist de danos
-   - Repasse para limpeza
+**Prática:**
+- Defina preço base, mínimo e máximo de cada imóvel
+- Configure regra de desconto de última hora (7/3/1 dia)
+- Compare 1 semana de preço sugerido x seu histórico
 
-4. **Pós estadia**
-   - Limpeza e preparação
-   - Reposição de itens
-   - Manutenção preventiva
+## Aula 2.3 — Ocupação x tarifa: o equilíbrio que maximiza o ano
+Vale mais 38% de ocupação a ADR alta ou 55% a ADR baixa? Faça a conta: RevPAR. No litoral, a resposta muda por camada do ano — na alta, proteja a tarifa (a demanda vem); na baixa, proteja a ocupação (noite vazia é receita zero para sempre).
 
-### Padronização
+KPI semanal do gestor: pickup (reservas novas na semana), ocupação futura por mês e comparação com o ano anterior. Decisão de preço sem olhar pickup é chute.
 
-- **Checklist de entrada**: documento com estado do imóvel
-- **Checklist de saída**: verificação de danos
-- **Manual do hóspede**: regras, dicas, contatos
-
-### Ferramentas
-
-- **Trello/Notion**: gestão de tarefas
-- **Google Calendar**: agendamento de limpeza
-- **WhatsApp Business**: comunicação profissional
-
-## Aula 2.2 — Limpeza e manutenção
-
-### Limpeza profissional
-
-- **Equipe terceirizada**: agilidade, qualidade
-- **Equipe própria**: controle total, custo menor
-- **Híbrido**: equipe fixa + freelancers para picos
-
-### Padronização de limpeza
-
-1. **Checklist por ambiente**
-2. **Produtos padrão**
-3. **Tempo por imóvel**
-4. **Inspeção pré-check-in**
-
-### Manutenção preventiva
-
-- **Ar-condicionado**: limpeza trimestral
-- **Elétrica**: inspeção semestral
-- **Hidráulica**: verificação mensal
-- **Eletrodomésticos**: revisão anual
-
-### Exercício
-
-Crie um checklist de limpeza e manutenção para o seu imóvel.
-
-## Aula 2.3 — Gestão de equipes
-
-### Estrutura mínima
-
-- **Limpeza**: 1-2 pessoas por imóvel
-- **Manutenção**: parceiro fixo ou sob demanda
-- **Suporte**: você ou gerente
-
-### Recrutamento
-
-1. **Indicações**: confiança primeiro
-2. **Entrevista**: verifique experiência
-3. **Teste prático**: limpeza de avaliação
-4. **Treinamento**: padrões e expectativas
-
-### Gestão de desempenho
-
-- **Avaliação semanal**: checklist, tempo, qualidade
-- **Feedback contínuo**: positivo + correções
-- **Reconhecimento**: premie bons resultados
-
-### Exercício
-
-Monte uma estrutura de equipe para gerir 3 imóveis no litoral.
-
-## Resumo
-
-- Processo operacional padronizado reduz erros.
-- Limpeza e manutenção são diferenciais.
-- Equipe bem gerida garanta qualidade.
-
-## Checklist
-
-- [ ] Fluxo operacional documentado
-- [ ] Equipe de limpeza contratada
-- [ ] Manutenção preventiva programada
-- [ ] Gestão de desempenho implementada
-
-## Materiais para download
-
-- Checklist operacional padrão
-- Template de manual do hóspede
-
-## Prompt de IA
-
-Atue como consultor de gestão de locação. Crie um plano operacional completo para eu gerenciar meu imóvel no litoral com profissionalismo.
+**Prática:**
+- Calcule o RevPAR das 2 estratégias para seu imóvel típico
+- Crie o relatório semanal de pickup
+- Defina gatilhos de ação: se ocupação futura < X%, revisar preço

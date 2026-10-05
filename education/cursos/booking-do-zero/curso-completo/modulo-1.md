@@ -1,118 +1,34 @@
-# Módulo 1 — Fundamentos do Aluguel por Temporada
+# Módulo 1 — O Negócio de Temporada no Litoral
 
-## Introdução
+## Objetivo do módulo
+Entender a economia da temporada e os números que sustentam a operação.
 
-Neste módulo você vai entender o funcionamento do Booking, o perfil do hóspede que usa a plataforma e como preparar seu imóvel para receber reservas de forma profissional.
+## Aula 1.1 — A matemática da temporada: ocupação, ADR e RevPAR
+Três números governam a temporada: ADR (diária média), ocupação (% de noites vendidas) e RevPAR (ADR × ocupação — a receita real por imóvel). No litoral paulista, a alta temporada (15/dez a fev + feriados) concentra 50% a 60% da receita anual em ~90 dias.
 
-## Aula 1.1 — Como funciona o Booking para anfitriões
+Exemplo real: apartamento de 2 dorm. em Ubatuba, ADR de R$ 700 na alta e R$ 350 na baixa, ocupação anual de 38% → receita bruta ~R$ 62 mil/ano. Custos (plataformas 15-17%, limpeza, manutenção, condomínio, IPTU) consomem 35-45%. Apresentar essa matemática ao proprietário é o que separa o gestor profissional do "amigo que cuida".
 
-### O ecossistema Booking.com
+**Prática:**
+- Calcule ADR, ocupação e RevPAR de 1 imóvel real
+- Monte a planilha de receita bruta x custos x líquido
+- Identifique os 90 dias críticos de receita no seu calendário
 
-- **Booking.com**: maior plataforma de reservas do mundo
-- **Booking Holdings**: grupo que inclui Booking, Agoda, Kayak, Priceline
-- **Anfitrião**: você cadastra propriedade, define preços e disponibilidade
-- **Hóspede**: reserva diretamente na plataforma
+## Aula 1.2 — Lei do Inquilinato e o contrato de temporada
+Locação de temporada (até 90 dias, com mobília) é regida pela Lei 8.245/91, art. 48. Diferenças críticas da locação residencial: pode exigir caução e pagamento antecipado, e não há renovação automática. Contrato escrito é obrigatório na prática — com check-in/check-out, regras de condomínio, inventário de mobília e multa por danos.
 
-### Vantagens para anfitriões
+Erro grave comum: usar contrato de locação residencial para temporada. Isso pode caracterizar locação de longo prazo e complicar desocupação. Use modelo específico de temporada, revisado por advogado.
 
-- **Alcance global**: milhões de hóspedes potenciais
-- **Pagamento garantido**: Booking processa pagamento
-- **Proteção**: seguro contra danos e cancelamentos
-- **Ferramentas**: gestão de calendário, mensagens, analytics
+**Prática:**
+- Revise seu contrato: é específico de temporada (Lei 8.245/91, art. 48)?
+- Inclua inventário fotográfico de mobília como anexo
+- Defina política de caução e danos por escrito
 
-### Desvantagens
+## Aula 1.3 — Posicionamento do imóvel: para quem você anuncia
+Imóvel de temporada bem posicionado tem público definido: família com crianças (segurança, cozinha, 2 quartos), casal romântico (vista, piscina), grupo de amigos (capacidade, churrasqueira) ou home-office de temporada (internet boa, silêncio). Cada público muda o anúncio, as fotos, o preço mínimo de noites e as regras.
 
-- **Comissão**: 15-25% por reserva
-- **Concorrência**: muitos anfitriões na mesma região
-- **Regras**: políticas rígidas de cancelamento
+O erro é anunciar "para todo mundo": anúncio genérico converte mal e atrai hóspede errado — o grupo de festa no imóvel de família é o pesadelo que gera reclamação de condomínio e review negativo.
 
-### Exemplo real
-
-Um apartamento em Praia Grande listado no Booking faturou R$ 28.000 em 6 meses com taxa de ocupação de 58%. Comissão paga: R$ 5.600.
-
-## Aula 1.2 — Perfil do hóspede Booking
-
-### Tipos de hóspedes Booking
-
-- **Famílias**: planejamento 2-3 meses antes
-- **Casais**: busca por experiências românticas
-- **Corporativos**: estadias longas, próximos a centros de eventos
-- **Mochileiros**: preço baixo, flexibilidade
-
-### Como identificar seu público
-
-1. **Avaliações de concorrentes**: leia reviews para entender expectativas
-2. **Dados do Booking Analytics**: idade, origem, motivo da viagem
-3. **Pesquisa local**: eventos, pontos turísticos, restaurantes
-
-### Persona Booking para litoral
-
-```
-Nome: Família Costa
-Idade: 30-40 anos
-Origem: São Paulo/Interior
-Motivo: férias de 7 dias
-Expectativa: conforto, localização, valor
-Orçamento: R$ 400-600/noite
-```
-
-## Aula 1.3 — ROI e expectativa de resultado
-
-### Cálculo de ROI no Booking
-
-```
-ROI = (Receita Booking - Comissão - Custos) / Investimento inicial × 100
-```
-
-### Custos específicos Booking
-
-- **Comissão**: 15-25%
-- **Taxa de processamento**: 3-5%
-- **Ferramentas extras**: Channel Manager, analytics
-
-### Receita esperada
-
-| Período | Reservas | Receita bruta | Comissão | Receita líquida |
-|---------|----------|---------------|----------|-----------------|
-| Janeiro | 25 | R$ 25.000 | R$ 4.500 | R$ 20.500 |
-| Fevereiro | 20 | R$ 18.000 | R$ 3.600 | R$ 14.400 |
-| Março | 15 | R$ 12.000 | R$ 2.400 | R$ 9.600 |
-
-### Expectativas realistas
-
-- **Mês 1-2**: cadastro e otimização
-- **Mês 3-4**: primeiras reservas
-- **Mês 5-6**: ocupação de 40-50%
-- **Mês 7-12**: ocupação de 55-65% se bem executado
-
-### Exercício
-
-Calcule o ROI do seu imóvel no Booking considerando comissão, custos operacionais e expectativa de reservas.
-
-## Resumo
-
-- Booking oferece alcance global e pagamento garantido.
-- Comissão de 15-25% deve ser considerada no preço.
-- Hóspedes Booking planejam com antecedência.
-
-## Checklist
-
-- [ ] Conta de parceiro criada
-- [ ] Propriedade cadastrada
-- [ ] Preços e disponibilidade configurados
-- [ ] Comissão considerada no preço-base
-
-## Materiais para download
-
-- Planilha de cálculo de ROI Booking
-- Template de descrição otimizada
-
-## Ferramentas recomendadas
-
-- Booking Partner Academy
-- PriceLabs
-- AirDNA
-
-## Prompt de IA
-
-Atue como consultor Booking para anfitriões no litoral. Faça um diagnóstico de otimização do meu cadastro para aumentar reservas.
+**Prática:**
+- Defina o público principal de cada imóvel da carteira
+- Reescreva 1 anúncio com foco total nesse público
+- Ajuste regras (nº mínimo de noites, horários) ao público

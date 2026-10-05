@@ -1,100 +1,34 @@
-# Módulo 1 — O Mercado Imobiliário do Litoral Paulista
+# Módulo 1 — Fundamentos do Investimento em Imóveis
 
-## Introdução
+## Objetivo do módulo
+Construir a base conceitual para investir com método, não com impulso.
 
-Neste módulo você vai entender a lógica por trás dos preços no litoral, como medir valorização de imóveis e identificar oportunidades antes da maioria do mercado.
+## Aula 1.1 — Por que imóvel: retorno, proteção e alavancagem
+O imóvel combina três motores que nenhum outro ativo popular entrega junto: renda (aluguel), valorização (longo prazo) e alavancagem (você controla um ativo de R$ 500 mil com R$ 100 mil de entrada e financiamento). No litoral paulista, soma-se um quarto motor: renda de temporada, que em bons imóveis paga o custo de manter e ainda sobra.
 
-## Aula 1.1 — Particularidades do mercado litorâneo
+Mas imóvel tem custos que o entusiasta ignora: liquidez baixa (vender leva meses), custo de transação alto (ITBI, cartório, comissão — 8% a 10% na ponta de compra+venda) e vacância. O investidor profissional só compra quando os números absorvem esses custos.
 
-### O que torna o litoral único
+**Prática:**
+- Liste os 4 motores de retorno de 1 imóvel que você acompanha
+- Calcule o custo total de transação (compra+venda) dele
+- Defina seu horizonte mínimo de permanência (regra: 5 anos)
 
-- **Sazonalidade**: verão, feriados, férias alteram preços
-- **Acessos**: Imigrantes, Anchieta, Tamoios, Rio-Santos
-- **Marinha**: regras para imóveis na faixa de praia
-- **Turismo**: puxa preços e rentabilidade
-- **Especulação**: áreas em expansão valorizam rápido
+## Aula 1.2 — Os indicadores essenciais: cap rate, yield e payback
+Cap rate = aluguel anual líquido ÷ valor do imóvel. No litoral, imóveis residenciais giram entre 0,35% e 0,55% ao mês de aluguel bruto (4% a 6,5% ao ano); temporada bem operada pode entregar 6% a 10% ao ano líquido, com mais trabalho e risco.
 
-### Fatores que influenciam preços
+Yield bruto engana: desconte IPTU, condomínio, manutenção (regra prática: 5% do valor do imóvel a cada 10 anos) e vacância (1 mês/ano na locação anual). Payback simples = valor ÷ renda líquida anual; acima de 20 anos no residencial exige justificativa pela valorização esperada.
 
-1. **Distância da praia**: até 500m = premium
-2. **Acessos**: rodovias, ferry-boat, aeroporto
-3. **Infraestrutura**: comércio, saúde, lazer
-4. **Regulamentação**: zoneamento, marinha, IPTU
+**Prática:**
+- Calcule cap rate bruto e líquido de 2 imóveis reais
+- Monte planilha com IPTU, condomínio, manutenção e vacância
+- Defina seu cap rate mínimo de compra
 
-### Tabela comparativa
+## Aula 1.3 — Os ciclos do mercado imobiliário do litoral
+O mercado do litoral tem dois ciclos sobrepostos: o macro (juros, crédito, renda — financiamento barato infla preços) e o local (obras de infraestrutura, veraneio, lançamentos). Exemplos locais: a duplicação da Tamoios valorizou Caraguatatuba e Ubatuba; o polo de cruzeiros pressionou Santos.
 
-| Cidade | Valor médio m² | Ocupação | Acessos | Perfil |
-|--------|---------------|----------|---------|--------|
-| Santos | R$ 8.000-12.000 | 75% | Imigrantes/Anchieta | Urbano |
-| Guarujá | R$ 7.000-10.000 | 70% | Imigrantes | Turístico |
-| Praia Grande | R$ 5.500-8.000 | 65% | Imigrantes | Popular |
-| Bertioga | R$ 6.500-9.500 | 60% | Rio-Santos | Tranquilo |
-| Itanhaém | R$ 5.000-7.500 | 55% | Rodovia | Colonial |
-| Mongaguá | R$ 4.500-6.500 | 50% | Rodovia | Econômico |
-| São Vicente | R$ 5.500-8.000 | 60% | Imigrantes | Histórico |
-| Peruíbe | R$ 4.500-6.500 | 50% | Rio-Santos | Natureza |
+Regra do investidor: compre no ciclo de juros altos (menos competição, vendedores flexíveis) e venda no ciclo de juros baixos. Quem espera "a certeza" compra no topo junto com a manchete de jornal.
 
-## Aula 1.2 — Fontes de dados para análise
-
-### Dados públicos
-
-- **ITBI**: preços de transação
-- **IPTU**: valores cadastrados
-- **Censo**: dados demográficos
-- **Prefeitura**: plano diretor
-
-### Dados privados
-
-- **AirDNA**: ocupação e preços de temporada
-- **PriceLabs**: histórico de preços
-- **Zap/QuintoAndar**: anúncios ativos
-- **Imobiliárias**: dados de venda
-
-### Planilha de análise
-
-1. **Coleta**: 20 imóveis similares na região
-2. **Comparação**: preço, área, quartos, vagas
-3. **Ajuste**: diferenças de localização, estado
-4. **Conclusão**: preço justo do seu imóvel
-
-## Aula 1.3 — Identificando oportunidades
-
-### Oportunidades de valorização
-
-1. **Áreas em expansão**: novos empreendimentos, infraestrutura
-2. **Regularização**: imóveis sem documentação
-3. **Reforma**: imóvel mal conservado com potencial
-4. **Temporada**: imóvel para aluguel com alta demanda
-
-### Sinais de alerta
-
-- Preço muito abaixo do mercado
-- Documentação pendente
-- Regras restritivas (marinha, zoneamento)
-- Oferta excessiva na região
-
-### Exercício
-
-Escolha uma cidade do litoral e identifique 3 oportunidades de valorização imobiliária.
-
-## Resumo
-
-- Mercado litorâneo tem particularidades que afetam preço.
-- Dados públicos e privados são essenciais.
-- Oportunidades surgem de análise, não intuição.
-
-## Checklist
-
-- [ ] Mercado local pesquisado
-- [ ] Dados coletados
-- [ ] Preço justo calculado
-- [ ] Oportunidades identificadas
-
-## Materiais para download
-
-- Planilha de análise de mercado
-- Tabela comparativa por cidade
-
-## Prompt de IA
-
-Atue como analista imobiliário do litoral. Faça um diagnóstico de valorização do meu imóvel considerando mercado, acessos e regulamentação.
+**Prática:**
+- Mapeie 2 obras de infraestrutura em andamento nas suas cidades
+- Acompanhe a taxa básica de juros e o volume de crédito imobiliário
+- Escreva sua tese de compra para os próximos 24 meses

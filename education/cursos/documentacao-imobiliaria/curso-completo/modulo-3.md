@@ -1,60 +1,34 @@
-# Módulo 3 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar documentacao imobiliaria com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 3 — Contratos e Formalização
 
-## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Garantir que o combinado vire documento válido.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 3.1 — Do sinal à escritura: a sequência correta
+Sequência segura: proposta por escrito → contrato de compra e venda (ou promessa, conforme o caso) com sinal → due diligence completa → escritura pública → registro na matrícula (só o registro transfere a propriedade). Pular etapas é o atalho que vira processo.
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+Pontos críticos do contrato: descrição exata do imóvel e da matrícula, condições de pagamento, prazos, multa por desistência (arras — em geral 10-25% do sinal), e condição suspensiva de financiamento quando houver (se o banco não aprovar, devolve o sinal).
 
-## Aula 3.2 — Caso real 2: como evitar erros custosos
-Fundamentos, ferramentas e fluxos recomendados para documentacao imobiliaria no litoral.
+**Prática:**
+- Revise seu modelo de contrato de sinal
+- Inclua sempre a cláusula de condição de financiamento
+- Explique a diferença escritura x registro em 2 frases
 
-**Ferramentas recomendadas:**
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
+## Aula 3.2 — Golpes imobiliários: os padrões que se repetem no litoral
+Os 4 golpes mais comuns: vendedor falso com documentos adulterados (sempre confira identidade presencialmente ou por reconhecimento), imóvel com ônus ocultado (matrícula velha "para facilitar"), loteamento irregular em área de preservação e o falso corretor que cobra "taxa de reserva" e some.
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+Blindagem: matrícula sempre nova e pedida por você (não aceite PDF enviado), pagamentos sempre rastreáveis e nunca em dinheiro, e desconfiança saudável de urgência artificial ("tem outro comprador com dinheiro na mão hoje").
 
-## Aula 3.3 — Lições aplicáveis ao seu contexto
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Adote a regra: matrícula só pedida por você, sempre recente
+- Nunca intermedie pagamento em dinheiro
+- Documente os 4 padrões de golpe e compartilhe com clientes
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 3.3 — Escritura, registro e custos: o fechamento sem sustos
+Custos de fechamento que o comprador precisa conhecer no primeiro dia: ITBI (2-3% conforme o município), escritura pública e registro (tabelados por valor, em geral ~1% combinados), e certidões. Em financiamento, somam-se avaliação e tarifas bancárias.
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+O registro é o que transfere a propriedade — a escritura sozinha não basta. Acompanhe o cliente até a averbação final: o processo termina no cartório de registro, não no tabelionato.
 
-## Exercício
-Analise um caso real do mercado e adapte as lições para a sua realidade.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
-
-## Prompt de IA
-Atue como mentor experiente. Analise este caso real de documentacao imobiliaria no litoral e aponte 5 lições práticas: [descreva o caso].
+**Prática:**
+- Monte a tabela de custos de fechamento das suas cidades
+- Explique a tríade proposta→escritura→registro em 3 frases
+- Acompanhe 1 processo até a averbação final

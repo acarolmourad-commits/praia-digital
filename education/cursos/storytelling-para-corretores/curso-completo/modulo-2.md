@@ -1,60 +1,34 @@
-# Módulo 2 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar storytelling para corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 2 — Conteúdo que Vende
 
-## Aula 2.1 — Passo a passo para aplicar storytelling para corretores na prática
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Produzir conteúdo com método: atrair, nutrir e converter.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 2.1 — A pirâmide de conteúdo do corretor
+70% conteúdo de valor (bairros, preços médios, documentação, erros de compradores), 20% prova (cases, antes/depois, depoimentos, "vendido"), 10% oferta direta (imóveis à venda). Quem inverte a pirâmide — só posta imóvel — é ignorado, porque ninguém segue catálogo.
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+Formatos que funcionam no litoral: tour de imóvel em vídeo vertical (primeiros 3 segundos na melhor vista), comparativos de bairros, "quanto custa morar em X" e mitos do financiamento.
 
-## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
-Fundamentos, ferramentas e fluxos recomendados para storytelling para corretores no litoral.
+**Prática:**
+- Classifique seus últimos 12 posts na pirâmide
+- Planeje 8 conteúdos de valor para o mês
+- Grave 1 tour com a regra dos 3 segundos
 
-**Ferramentas recomendadas:**
-- CRM de atendimento
-- Planilha de acompanhamento
-- Ferramenta de automação de mensagens
+## Aula 2.2 — Instagram para corretores: o sistema completo
+Rotina mínima eficaz: 3-4 Reels/semana (tours e dicas), Stories diários (bastidores criam confiança), carrossel semanal educativo e destaques organizados (Vendas, Bairros, Depoimentos, Sobre mim).
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+Métricas que importam: salvamentos e compartilhamentos (interesse real), respostas aos Stories (leads quentes) e cliques no link. Curtida é vaidade. E consistência vence perfeição: conta que posta 3x por semana por 6 meses supera a que faz 15 posts perfeitos em janeiro e some.
 
-## Aula 2.3 — Automação e fluxos que economizam horas por semana
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Organize os 4 destaques do perfil
+- Estabeleça o calendário mínimo semanal
+- Revise métricas certas toda segunda-feira
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 2.3 — SEO local: ser encontrado por quem já quer comprar
+Quem busca "apartamento 2 quartos Praia Grande" tem intenção de compra — diferente do scroll do Instagram. As bases do SEO local imobiliário: Perfil de Empresa no Google completo e com avaliações, páginas por bairro/cidade no seu site e conteúdo respondendo dúvidas reais (preço médio, documentação, financiamento).
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+Resultado de SEO leva 3-6 meses, mas depois compõe: o artigo que responde "documentação para comprar imóvel na praia" traz leads todos os meses, de graça, por anos.
 
-## Exercício
-Monte um plano prático de storytelling para corretores para os próximos 30 dias, com ações diárias e semanais.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- CRM de atendimento
-- Planilha de acompanhamento
-- Ferramenta de automação de mensagens
-
-## Prompt de IA
-Atue como consultor de storytelling para corretores. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].
+**Prática:**
+- Complete 100% do Perfil de Empresa no Google
+- Liste 10 dúvidas reais que clientes te perguntam
+- Produza 1 conteúdo por semana respondendo cada uma

@@ -1,60 +1,24 @@
-# Módulo 2 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar gestao do tempo para corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 2 — Finanças Pessoais do Corretor Autônomo
 
-## Aula 2.1 — Passo a passo para aplicar gestao do tempo para corretores na prática
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Organizar a renda variável para ela não controlar você.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 2.1 — Vivendo com renda variável: o sistema de 3 contas
+A renda do corretor é irregular — o sistema resolve: conta 1 (essencial): salário mensal fixo que você se paga, calculado pela média dos 12 meses; conta 2 (reserva): meses bons alimentam 3-6 meses de custo; conta 3 (impostos e reinvestimento): percentual de cada comissão separado no dia do recebimento.
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+O erro clássico: viver o padrão do melhor mês. Janeiro de alta temporada paga fevereiro fraco — quem gasta em janeiro como se todo mês fosse janeiro, quebra em março.
 
-## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
-Fundamentos, ferramentas e fluxos recomendados para gestao do tempo para corretores no litoral.
+**Prática:**
+- Calcule sua média de renda dos últimos 12 meses
+- Defina seu salário mensal fixo
+- Separe o percentual de reserva/impostos da próxima comissão no dia
 
-**Ferramentas recomendadas:**
-- CRM de atendimento
-- Planilha de acompanhamento
-- Ferramenta de automação de mensagens
+## Aula 2.2 — Precificando o próprio trabalho
+Corretor autônomo precisa saber seu custo-hora real: some custos fixos (transporte, telefone, marketing, ferramentas) + salário-alvo, divida pelas horas produtivas. Esse número disciplina decisões: vale fazer aquela visita de 2h para um lead desqualificado? Quando você conhece seu custo-hora, o "sim" indiscriminado acaba.
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+O mesmo cálculo vale para imóveis da carteira: captação que consome 40 horas e não vende custou caro — a curva ABC da carteira é também uma decisão financeira.
 
-## Aula 2.3 — Automação e fluxos que economizam horas por semana
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
-
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
-
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
-
-## Exercício
-Monte um plano prático de gestao do tempo para corretores para os próximos 30 dias, com ações diárias e semanais.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- CRM de atendimento
-- Planilha de acompanhamento
-- Ferramenta de automação de mensagens
-
-## Prompt de IA
-Atue como consultor de gestao do tempo para corretores. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].
+**Prática:**
+- Calcule seu custo-hora real
+- Aplique o custo-hora na decisão de 3 compromissos desta semana
+- Revise a carteira sob a ótica de horas investidas

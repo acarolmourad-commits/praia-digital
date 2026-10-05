@@ -1,60 +1,34 @@
-# Módulo 2 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar documentacao imobiliaria com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 2 — Avaliação de Imóveis
 
-## Aula 2.1 — Passo a passo para aplicar documentacao imobiliaria na prática
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Precificar com método e credibilidade técnica.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 2.1 — O método comparativo de mercado
+É o método padrão do corretor: comparar o imóvel com similares vendidos recentemente, ajustando pelas diferenças (andar, vista, conservação, garagem). Fontes: fechamentos reais da sua rede, valores de anúncio corrigidos pelo deságio típico (10-20% no litoral) e dados de cartório.
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+Qualidade da amostra: mínimo 3 comparáveis, ideal 5-7, do mesmo bairro e padrão, vendidos nos últimos 6 meses. Comparável de 2 anos atrás em mercado aquecido vale pouco.
 
-## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
-Fundamentos, ferramentas e fluxos recomendados para documentacao imobiliaria no litoral.
+**Prática:**
+- Monte sua base de comparáveis por bairro
+- Corrija 3 anúncios pelo deságio típico local
+- Produza 1 avaliação completa pelo método comparativo
 
-**Ferramentas recomendadas:**
-- CRM de atendimento
-- Planilha de acompanhamento
-- Ferramenta de automação de mensagens
+## Aula 2.2 — Fatores de valor: o que pesa mais no litoral
+No litoral, os multiplicadores de valor têm hierarquia própria: distância do mar (frente-mar pode valer 40-60% mais que 3ª quadra), vista permanente (verifique o que pode ser construído na frente!), estado de conservação frente à maresia, sol da manhã vs. sol da tarde, e infraestrutura do condomínio.
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+Documente cada ajuste: a avaliação defensável é a que mostra os fatores. "Vale R$ 800 mil porque sim" não convence proprietário nem comprador; "vale porque o comparável X vendeu por Y ajustado por Z" convence.
 
-## Aula 2.3 — Automação e fluxos que economizam horas por semana
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Monte sua tabela de fatores com pesos típicos locais
+- Verifique plano diretor/gabarito dos terrenos em frente a 1 imóvel com vista
+- Apresente 1 avaliação com fatores documentados
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 2.3 — Quando chamar o PTAM: a avaliação formal
+O PTAM (Parecer Técnico de Avaliação Mercadológica) é a avaliação formal emitida por corretor com especialização, seguindo norma ABNT — exigido em disputas judiciais, partilhas e operações que precisam de respaldo documental. É um serviço pago à parte da corretagem e uma fonte extra de renda para o corretor especializado.
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+Diferença prática: a avaliação comparativa informal orienta a negociação do dia a dia; o PTAM tem valor técnico formal. Saber a diferença — e ter um avaliador parceiro — resolve o cliente que precisa do documento.
 
-## Exercício
-Monte um plano prático de documentacao imobiliaria para os próximos 30 dias, com ações diárias e semanais.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- CRM de atendimento
-- Planilha de acompanhamento
-- Ferramenta de automação de mensagens
-
-## Prompt de IA
-Atue como consultor de documentacao imobiliaria. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].
+**Prática:**
+- Entenda quando o PTAM é exigido (3 situações)
+- Tenha 1 avaliador PTAM parceiro
+- Considere a especialização em avaliações como fonte de renda

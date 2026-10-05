@@ -1,5 +1,6 @@
 # Sumário do Curso: Visita Tecnica Para Corretores
-- Módulo 1: Fundamentos
-- Módulo 2: Aplicação Prática
-- Módulo 3: Casos Reais
-- Módulo 4: Crescimento
+
+- Módulo 1: Documentação do Imóvel
+- Módulo 2: Avaliação de Imóveis
+- Módulo 3: Contratos e Formalização
+- Módulo 4: Visita Técnica e Vistoria Profissional

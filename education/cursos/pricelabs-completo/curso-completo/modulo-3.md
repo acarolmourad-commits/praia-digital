@@ -1,60 +1,34 @@
-# Módulo 3 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar pricelabs completo com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 3 — Operação e Experiência do Hóspede
 
-## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Rodar a operação com padrão hoteleiro e escala.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 3.1 — Check-in, limpeza e manutenção: a operação invisível
+A nota do hóspede é construída em 3 momentos: chegada (check-in sem atrito — fechadura eletrônica ou cofre de chave elimina 90% dos problemas), limpeza (padrão hoteleiro: roupa de cama branca, checklist de 40 itens, foto pós-limpeza) e resposta a problemas (chuveiro queimado resolvido em 4h salva a avaliação; em 24h, condena).
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+Monte a rede local: camareira fixa por região, eletricista e encanador de plantão, estoque de itens críticos. O gestor profissional vende tranquilidade ao proprietário porque tem operação real por trás.
 
-## Aula 3.2 — Caso real 2: como evitar erros custosos
-Fundamentos, ferramentas e fluxos recomendados para pricelabs completo no litoral.
+**Prática:**
+- Implante check-in autônomo em 1 imóvel-piloto
+- Crie o checklist de limpeza de 40 itens
+- Formalize a rede de fornecedores com contatos de plantão
 
-**Ferramentas recomendadas:**
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
+## Aula 3.2 — Comunicação automatizada com o hóspede
+Régua de mensagens que funciona: confirmação da reserva (boas-vindas + regras), D-3 (endereço, check-in, dicas), dia do check-in (código da fechadura), D+1 (está tudo bem?), check-out (instruções + pedido de avaliação). Automatize com templates no WhatsApp ou nas plataformas — mas mantenha tom humano.
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+A mensagem D+1 é a mais importante: ela captura o problema antes que ele vire review negativo. Hóspede que reclama e é atendido avalia melhor que hóspede sem problema nenhum.
 
-## Aula 3.3 — Lições aplicáveis ao seu contexto
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Escreva os 5 templates da régua
+- Automatize envio por data de reserva
+- Institua a regra: toda mensagem de hóspede respondida em <30min
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 3.3 — Avaliações e reputação: o ativo que compõe juros
+Nos portais de temporada, a nota é o ranking: imóveis 4.8+ aparecem primeiro e podem cobrar 10-20% mais. A reputação se constrói com consistência (mesma experiência toda vez) e se protege com resposta profissional a toda avaliação — inclusive às negativas, que respondidas bem viram prova de seriedade.
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+Peça avaliação no momento de pico de satisfação: logo após o check-out, com link direto. E nunca compre ou fabrique reviews — as plataformas detectam padrões e punem com shadowban.
 
-## Exercício
-Analise um caso real do mercado e adapte as lições para a sua realidade.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
-
-## Prompt de IA
-Atue como mentor experiente. Analise este caso real de pricelabs completo no litoral e aponte 5 lições práticas: [descreva o caso].
+**Prática:**
+- Defina o ritual do pedido de avaliação pós-checkout
+- Responda 100% das avaliações em até 48h
+- Monitore nota média por imóvel mensalmente

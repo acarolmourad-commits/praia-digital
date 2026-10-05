@@ -1,60 +1,34 @@
-# Módulo 4 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar venda imoveis alto padrao litoral com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 4 — Funil de Vendas Imobiliário
 
-## Aula 4.1 — Métricas para acompanhar evolução e resultado
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Organizar o pipeline para prever receita e não perder oportunidades.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 4.1 — As 5 etapas do funil imobiliário
+Lead novo → Qualificado (orçamento e perfil confirmados) → Visita agendada → Proposta → Fechamento. Cada etapa tem taxa de conversão típica: lead→qualificado 40-60%, qualificado→visita 30-50%, visita→proposta 15-25%, proposta→fechamento 50-70%.
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+Com esses números você descobre quantos leads precisa por mês para bater a meta: para 2 vendas/mês, são necessárias ~4 propostas, ~20 visitas e ~50 leads qualificados. Sem funil, o corretor vive de sorte; com funil, vive de processo.
 
-## Aula 4.2 — Otimizações para aumentar rentabilidade ou desempenho
-Fundamentos, ferramentas e fluxos recomendados para venda imoveis alto padrao litoral no litoral.
+**Prática:**
+- Desenhe seu funil atual com as 5 etapas
+- Preencha com seus números dos últimos 90 dias
+- Identifique a etapa com maior vazamento e ataque-a
 
-**Ferramentas recomendadas:**
-- Dashboard de métricas
-- Planilha de rentabilidade
-- Sistema de gestão de tarefas
+## Aula 4.2 — Qualificação de leads: BANT adaptado ao imobiliário
+Qualifique com 4 perguntas: Budget (faixa de investimento real, origem dos recursos — financiamento, FGTS, à vista), Autoridade (quem decide? casal decide junto no litoral), Necessidade (uso: moradia, temporada, investimento) e Tempo (quando pretende decidir).
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+Lead desqualificado consome 70% do tempo do corretor mal organizado. Regra prática: lead sem orçamento definido e sem prazo vai para fluxo de nutrição, não para visita.
 
-## Aula 4.3 — Escala: como crescer sem perder a qualidade
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Aplique as 4 perguntas nos seus 10 leads ativos
+- Separe: visita esta semana / nutrição / descarte
+- Configure tags de qualificação no CRM
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 4.3 — Velocidade de resposta: a métrica que decide vendas
+Estudos de inside sales mostram que responder o lead em até 5 minutos multiplica por até 8 a chance de qualificação comparado a 30 minutos. No WhatsApp do litoral, o lead que pergunta sobre um imóvel às 21h está olhando 3 concorrentes ao mesmo tempo.
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+Estruture: resposta automática inteligente fora do horário, plantão de resposta nos horários de pico (12h-14h e 19h-22h) e primeira resposta sempre com pergunta de qualificação, nunca só "oi, tudo bem?".
 
-## Exercício
-Desenvolva um plano de crescimento para venda imoveis alto padrao litoral com metas mensuráveis.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- Dashboard de métricas
-- Planilha de rentabilidade
-- Sistema de gestão de tarefas
-
-## Prompt de IA
-Atue como estrategista de crescimento. Monte um plano de escala para venda imoveis alto padrao litoral com métricas e prazos: [dados do negócio].
+**Prática:**
+- Meça seu tempo médio de resposta atual
+- Configure resposta automática com 1 pergunta de qualificação
+- Defina plantão de resposta nos horários de pico

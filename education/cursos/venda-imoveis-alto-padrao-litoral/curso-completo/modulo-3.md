@@ -1,60 +1,34 @@
-# Módulo 3 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar venda imoveis alto padrao litoral com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 3 — Objeções e Negociação
 
-## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Tratar objeções como pedidos de informação e conduzir negociações ganha-ganha.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 3.1 — As 6 objeções que dominam o mercado do litoral
+1) "Está caro" — quase sempre é valor não construído, não preço; 2) "Vou pensar" — falta informação ou há objeção oculta; 3) "Preciso falar com meu cônjuge" — você apresentou para o decisor errado ou não envolveu ambos; 4) "Vou esperar baixar" — mostre o histórico de valorização do bairro e o custo de oportunidade; 5) "Não tenho entrada" — apresente alternativas reais (FGTS, financiamento direto com construtora, imóvel de menor valor); 6) "O condomínio é alto" — compare com o custo de manter casa de praia própria (IPTU, segurança, manutenção).
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+Para cada uma, a técnica base é a mesma: valide ("entendo, faz sentido"), isole ("se resolvermos isso, fechamos?") e responda com evidência.
 
-## Aula 3.2 — Caso real 2: como evitar erros custosos
-Fundamentos, ferramentas e fluxos recomendados para venda imoveis alto padrao litoral no litoral.
+**Prática:**
+- Escreva sua resposta para cada uma das 6 objeções
+- Treine validar-isolar-responder em role-play
+- Registre no CRM qual objeção mais aparece nos seus leads
 
-**Ferramentas recomendadas:**
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
+## Aula 3.2 — Negociação de preço: protegendo o valor sem perder o cliente
+Nunca aceite nem recuse a primeira proposta imediatamente. A técnica do recuo gradual: cada concessão sua deve ser menor que a anterior e acompanhada de uma contrapartida (prazo, entrada maior, inclusão de mobília). Se o cliente pede 10% de desconto, conceda no máximo em etapas: 3%, depois 2%, depois 1% — a curva decrescente sinaliza o limite.
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+E lembre: quem fala o primeiro número perde a ancoragem, mas quem ancora bem define o campo da negociação. Em vendas para investidores, ancore no retorno; para famílias, ancore no estilo de vida.
 
-## Aula 3.3 — Lições aplicáveis ao seu contexto
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Defina seus limites de concessão por imóvel antes de qualquer proposta
+- Monte tabela de contrapartidas possíveis (prazo, entrada, mobília, documentação)
+- Pratique a frase: "posso trabalhar esse valor se ajustarmos X"
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 3.3 — Fechamento: as 5 técnicas essenciais
+1) Fechamento direto — quando os sinais são claros, peça: "vamos reservar?"; 2) Fechamento alternativo — "prefere assinar sexta ou segunda?"; 3) Fechamento por resumo — recapitule os 3 pontos decisivos e conclua; 4) Fechamento de urgência legítima — apenas com urgência real (outra proposta em análise, fim de condição); urgência fabricada destrói confiança; 5) Fechamento por eliminação — remova a última objeção e confirme.
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+Depois do "sim", silêncio e ação: encaminhe documentação imediatamente. O período entre o aceite e a assinatura é onde morrem 20% das vendas.
 
-## Exercício
-Analise um caso real do mercado e adapte as lições para a sua realidade.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
-
-## Prompt de IA
-Atue como mentor experiente. Analise este caso real de venda imoveis alto padrao litoral no litoral e aponte 5 lições práticas: [descreva o caso].
+**Prática:**
+- Identifique qual técnica combina com seu estilo e treine-a até naturalizar
+- Cronometre: do aceite verbal ao envio de documentos, máximo 2 horas
+- Monitore sua taxa de perda pós-aceite

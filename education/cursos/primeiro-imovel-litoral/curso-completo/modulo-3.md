@@ -1,60 +1,34 @@
-# Módulo 3 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar primeiro imovel litoral com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 3 — Estratégias de Retorno
 
-## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Escolher e executar a estratégia certa para cada perfil de capital.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 3.1 — Renda passiva: locação anual x temporada x mista
+Locação anual: renda previsível, menos trabalho, cap rate 4-6%. Temporada: potencial 6-10% líquido, mas exige operação (ou gestora, que cobra 20-30%). Mista: temporada no verão + locação anual fora dela — raro de executar por contrato, mas possível com inquilino que aceita saída em novembro (comum com aposentados que passam o verão com filhos).
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+A escolha depende do seu tempo e da localização: apartamento a 2 quadras da praia em Guarujá é máquina de temporada; o mesmo capital em bairro residencial de Santos rende melhor em locação anual.
 
-## Aula 3.2 — Caso real 2: como evitar erros custosos
-Fundamentos, ferramentas e fluxos recomendados para primeiro imovel litoral no litoral.
+**Prática:**
+- Simule as 3 estratégias para 1 imóvel real
+- Defina quanto do seu tempo a operação pode consumir
+- Escolha 1 estratégia padrão e 1 alternativa
 
-**Ferramentas recomendadas:**
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
+## Aula 3.2 — Valorização forçada: reforma que paga
+A reforma certa no litoral: cozinha e banheiro (decidem a compra), pintura clara e piso vinílico (custo baixo, efeito visual alto) e o combate invisível — impermeabilização e esquadrias contra maresia (o comprador experiente do litoral procura isso).
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+Regra prática: reforma deve custar até 10-15% do valor do imóvel e agregar 20-30% no valor percebido. Reforma de gosto pessoal exagerada não se recupera na venda.
 
-## Aula 3.3 — Lições aplicáveis ao seu contexto
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Liste as 5 melhorias de melhor retorno
+- Peça 2 orçamentos de referência (cozinha e banheiro)
+- Calcule o ROI esperado de 1 projeto real
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 3.3 — Compra na planta: o jogo do desconto e do INCC
+Comprar na planta no litoral pode render 20-40% até a entrega, mas o risco é real: atraso de obra, correção do saldo pelo INCC (que em ciclos de construção cara come a margem) e revenda difícil antes das chaves.
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+O investidor profissional só entra com: construtora com histórico de entregas verificável, desconto real sobre a tabela futura (compare com usado pronto no mesmo bairro — a diferença deve compensar o risco de obra), e plano de saída definido (revender na entrega ou renda).
 
-## Exercício
-Analise um caso real do mercado e adapte as lições para a sua realidade.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
-
-## Prompt de IA
-Atue como mentor experiente. Analise este caso real de primeiro imovel litoral no litoral e aponte 5 lições práticas: [descreva o caso].
+**Prática:**
+- Verifique o histórico de entregas de 2 construtoras locais
+- Compare preço de planta x pronto em 1 bairro
+- Simule a evolução do saldo devedor com INCC

@@ -1,106 +1,34 @@
-# Módulo 1 — Fundamentos da Gestão de Locação
+# Módulo 1 — O Negócio de Temporada no Litoral
 
-## Introdução
+## Objetivo do módulo
+Entender a economia da temporada e os números que sustentam a operação.
 
-Neste módulo você vai entender o mercado de locação no litoral, identificar oportunidades e aprender a estruturar uma gestão profissional.
+## Aula 1.1 — A matemática da temporada: ocupação, ADR e RevPAR
+Três números governam a temporada: ADR (diária média), ocupação (% de noites vendidas) e RevPAR (ADR × ocupação — a receita real por imóvel). No litoral paulista, a alta temporada (15/dez a fev + feriados) concentra 50% a 60% da receita anual em ~90 dias.
 
-## Aula 1.1 — O mercado de locação no litoral paulista
+Exemplo real: apartamento de 2 dorm. em Ubatuba, ADR de R$ 700 na alta e R$ 350 na baixa, ocupação anual de 38% → receita bruta ~R$ 62 mil/ano. Custos (plataformas 15-17%, limpeza, manutenção, condomínio, IPTU) consomem 35-45%. Apresentar essa matemática ao proprietário é o que separa o gestor profissional do "amigo que cuida".
 
-### Características do mercado
+**Prática:**
+- Calcule ADR, ocupação e RevPAR de 1 imóvel real
+- Monte a planilha de receita bruta x custos x líquido
+- Identifique os 90 dias críticos de receita no seu calendário
 
-- **Alta demanda sazonal**: verão, feriados, férias
-- **Mix de perfis**: temporada + anual + corporativo
-- **Regulamentação municipal**: cada cidade tem regras específicas
-- **Valorização do imóvel**: locação bem gerida valoriza o patrimônio
+## Aula 1.2 — Lei do Inquilinato e o contrato de temporada
+Locação de temporada (até 90 dias, com mobília) é regida pela Lei 8.245/91, art. 48. Diferenças críticas da locação residencial: pode exigir caução e pagamento antecipado, e não há renovação automática. Contrato escrito é obrigatório na prática — com check-in/check-out, regras de condomínio, inventário de mobília e multa por danos.
 
-### Oportunidades por cidade
+Erro grave comum: usar contrato de locação residencial para temporada. Isso pode caracterizar locação de longo prazo e complicar desocupação. Use modelo específico de temporada, revisado por advogado.
 
-| Cidade | Perfil de locação | Valor médio mensal |
-|--------|-------------------|-------------------|
-| Santos | Anual + temporada | R$ 2.500-4.500 |
-| Guarujá | Temporada + anual | R$ 2.000-3.500 |
-| Praia Grande | Anual + temporada | R$ 1.800-3.000 |
-| Bertioga | Temporada | R$ 3.000-5.000 |
-| Itanhaém | Anual + temporada | R$ 1.500-2.800 |
-| Mongaguá | Temporada | R$ 1.200-2.200 |
-| São Vicente | Anual | R$ 1.500-2.500 |
-| Peruíbe | Temporada | R$ 1.800-3.000 |
+**Prática:**
+- Revise seu contrato: é específico de temporada (Lei 8.245/91, art. 48)?
+- Inclua inventário fotográfico de mobília como anexo
+- Defina política de caução e danos por escrito
 
-### Exemplo real
+## Aula 1.3 — Posicionamento do imóvel: para quem você anuncia
+Imóvel de temporada bem posicionado tem público definido: família com crianças (segurança, cozinha, 2 quartos), casal romântico (vista, piscina), grupo de amigos (capacidade, churrasqueira) ou home-office de temporada (internet boa, silêncio). Cada público muda o anúncio, as fotos, o preço mínimo de noites e as regras.
 
-Um apartamento em Santos, 2 quartos, gerou R$ 48.000 em 2024 com gestão profissional: R$ 32.000 temporada + R$ 16.000 anual.
+O erro é anunciar "para todo mundo": anúncio genérico converte mal e atrai hóspede errado — o grupo de festa no imóvel de família é o pesadelo que gera reclamação de condomínio e review negativo.
 
-## Aula 1.2 — Perfil do locatário
-
-### Tipos de locatários
-
-- **Temporada**: férias, feriados, finais de semana
-- **Anual**: moradia temporária, trabalho remoto
-- **Corporativo**: estadias longas, empresas
-
-### Como identificar o público
-
-1. **Dados históricos**: perfil de hóspedes anteriores
-2. **Pesquisa local**: eventos, empresas, temporadas
-3. **Concorrentes**: veja o que funciona na região
-
-### Persona para locação
-
-```
-Nome: Família Silva
-Idade: 35-45 anos
-Renda: R$ 8.000-15.000/mês
-Objetivo: férias de 7 dias em janeiro
-Dores: segurança, trânsito, hospedagem cara
-Desejos: conforto, localização, economia
-```
-
-## Aula 1.3 — ROI da gestão profissional
-
-### Cálculo de ROI
-
-```
-ROI = (Receita de locação - Custos operacionais) / Investimento inicial × 100
-```
-
-### Custos típicos
-
-- **Limpeza**: R$ 150-300/hospedagem
-- **Manutenção**: R$ 200-500/mês
-- **Energia/água**: R$ 150-400/mês
-- **Internet**: R$ 100-150/mês
-- **Impostos**: variam por município
-
-### Receita esperada
-
-| Tipo | Ocupação | Receita anual |
-|------|----------|---------------|
-| Temporada pura | 50-70% | R$ 30.000-50.000 |
-| Anual | 100% | R$ 24.000-36.000 |
-| Misto | 60-80% | R$ 35.000-55.000 |
-
-### Exercício
-
-Calcule o ROI da gestão profissional do seu imóvel considerando temporada, anual e custos.
-
-## Resumo
-
-- Mercado de locação no litoral é sazonal e segmentado.
-- Conhecer o perfil do locatário é essencial.
-- Gestão profissional maximiza receita.
-
-## Checklist
-
-- [ ] Mercado local pesquisado
-- [ ] Público-alvo definido
-- [ ] ROI calculado
-- [ ] Plano de gestão estruturado
-
-## Materiais para download
-
-- Planilha de cálculo de ROI
-- Template de persona de locatário
-
-## Prompt de IA
-
-Atue como consultor de gestão de locação no litoral. Faça um diagnóstico de viabilidade do meu imóvel considerando temporada, anual e custos.
+**Prática:**
+- Defina o público principal de cada imóvel da carteira
+- Reescreva 1 anúncio com foco total nesse público
+- Ajuste regras (nº mínimo de noites, horários) ao público

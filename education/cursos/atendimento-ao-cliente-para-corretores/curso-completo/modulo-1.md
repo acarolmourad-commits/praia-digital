@@ -1,60 +1,34 @@
-# Módulo 1 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar atendimento ao cliente para corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 1 — Fundamentos do Atendimento Imobiliário
 
-## Aula 1.1 — Visão geral do mercado de atendimento ao cliente para corretores no litoral paulista
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Construir a base de um atendimento que gera confiança imediata.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 1.1 — Os primeiros 5 minutos: como a confiança nasce
+O cliente decide se confia em você antes de decidir sobre o imóvel. Os 5 primeiros minutos definem: pontualidade, preparo (saber o nome do cliente e o que ele buscou), escuta real e postura consultiva.
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+Regra prática: no primeiro contato, o cliente deve falar 70% do tempo. Faça perguntas abertas ("o que é indispensável para vocês?") e anote as palavras exatas do cliente — elas serão sua ferramenta de fechamento depois.
 
-## Aula 1.2 — Conceitos essenciais: termos, métricas e particularidades locais
-Fundamentos, ferramentas e fluxos recomendados para atendimento ao cliente para corretores no litoral.
+**Prática:**
+- Prepare 3 perguntas abertas de abertura
+- Registre as palavras exatas do cliente no CRM
+- Avalie-se: no último atendimento, quem falou mais?
 
-**Ferramentas recomendadas:**
-- Portal oficial de imóveis do litoral
-- Planilha de diagnóstico
-- Consulta de matrícula online
+## Aula 1.2 — Escuta ativa e espelhamento
+Escuta ativa é técnica, não dom: parafrasear ("se entendi, o quintal para o cachorro é inegociável"), validar emoções ("imagino que a mudança de cidade preocupe") e resumir antes de avançar.
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+Espelhamento (matching): adapte ritmo e canal ao cliente — cliente objetivo recebe resposta direta; cliente analítico recebe planilha; cliente relacional recebe conversa. Errar o canal certo para a pessoa errada é a causa invisível de leads que "esfriam".
 
-## Aula 1.3 — Estudo de caso real: como um aluno aplicou o método e obteve resultado em 30 dias
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Pratique parafrasear em 3 atendimentos reais
+- Classifique seus leads: objetivo, analítico ou relacional
+- Adapte o próximo contato ao estilo de cada um
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 1.3 — Atendimento multicanal com padrão
+WhatsApp, ligação, e-mail e presencial têm funções diferentes: WhatsApp para agilidade e confirmações, ligação para temas sensíveis (proposta, negociação), e-mail para formalização e presencial para decisão. Documente tudo relevante por escrito — inclusive o combinado por telefone ("conforme conversamos, fica registrado...").
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+Padrão de resposta: até 15 min no horário comercial para leads novos, até 2h para clientes em processo. Fora do horário, resposta automática inteligente com previsão de retorno.
 
-## Exercício
-Faça o diagnóstico do seu cenário atual em atendimento ao cliente para corretores: liste pontos fortes, fracos, oportunidades e ameaças.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- Portal oficial de imóveis do litoral
-- Planilha de diagnóstico
-- Consulta de matrícula online
-
-## Prompt de IA
-Atue como especialista em atendimento ao cliente para corretores no litoral paulista. Faça um diagnóstico personalizado com base nestas respostas: [insira suas respostas].
+**Prática:**
+- Defina seu SLA de resposta por canal
+- Crie o hábito do registro escrito pós-ligação
+- Configure resposta automática fora do horário

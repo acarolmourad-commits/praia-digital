@@ -1,89 +1,34 @@
-# Módulo 4 — Pós-venda e Relacionamento
+# Módulo 4 — Funil de Vendas Imobiliário
 
-## Introdução
+## Objetivo do módulo
+Organizar o pipeline para prever receita e não perder oportunidades.
 
-Neste módulo você vai aprender a manter o relacionamento com o comprador, garantir um pós-venda eficiente e construir uma rede de indicações.
+## Aula 4.1 — As 5 etapas do funil imobiliário
+Lead novo → Qualificado (orçamento e perfil confirmados) → Visita agendada → Proposta → Fechamento. Cada etapa tem taxa de conversão típica: lead→qualificado 40-60%, qualificado→visita 30-50%, visita→proposta 15-25%, proposta→fechamento 50-70%.
 
-## Aula 4.1 — Pós-venda eficiente
+Com esses números você descobre quantos leads precisa por mês para bater a meta: para 2 vendas/mês, são necessárias ~4 propostas, ~20 visitas e ~50 leads qualificados. Sem funil, o corretor vive de sorte; com funil, vive de processo.
 
-### Por que o pós-venda é importante
+**Prática:**
+- Desenhe seu funil atual com as 5 etapas
+- Preencha com seus números dos últimos 90 dias
+- Identifique a etapa com maior vazamento e ataque-a
 
-- **Indicações**: clientes satisfeitos indicam novos compradores
-- **Reputação**: imobiliária/consultor com pós-venda se destaca
-- **Recompra**: cliente que vende pode comprar novamente
+## Aula 4.2 — Qualificação de leads: BANT adaptado ao imobiliário
+Qualifique com 4 perguntas: Budget (faixa de investimento real, origem dos recursos — financiamento, FGTS, à vista), Autoridade (quem decide? casal decide junto no litoral), Necessidade (uso: moradia, temporada, investimento) e Tempo (quando pretende decidir).
 
-### Fluxo de pós-venda
+Lead desqualificado consome 70% do tempo do corretor mal organizado. Regra prática: lead sem orçamento definido e sem prazo vai para fluxo de nutrição, não para visita.
 
-1. **Entrega das chaves**: checklist de itens entregues
-2. **Contato pós-entrega**: 7 dias após entrega
-3. **Acompanhamento**: 30 dias, 90 dias, 6 meses
-4. **Indicação**: solicite indicações no momento certo
+**Prática:**
+- Aplique as 4 perguntas nos seus 10 leads ativos
+- Separe: visita esta semana / nutrição / descarte
+- Configure tags de qualificação no CRM
 
-### Checklist de entrega
+## Aula 4.3 — Velocidade de resposta: a métrica que decide vendas
+Estudos de inside sales mostram que responder o lead em até 5 minutos multiplica por até 8 a chance de qualificação comparado a 30 minutos. No WhatsApp do litoral, o lead que pergunta sobre um imóvel às 21h está olhando 3 concorrentes ao mesmo tempo.
 
-- [ ] Chaves entregues
-- [ ] Manuais de equipamentos entregues
-- [ ] Contatos de manutenção fornecidos
-- [ ] Documentos do imóvel entregues
-- [ ] Agradecimento personalizado
+Estruture: resposta automática inteligente fora do horário, plantão de resposta nos horários de pico (12h-14h e 19h-22h) e primeira resposta sempre com pergunta de qualificação, nunca só "oi, tudo bem?".
 
-## Aula 4.2 — Indicações e networking
-
-### Como gerar indicações
-
-1. **Supere expectativas**: atendimento acima da média
-2. **Peça no momento certo**: após entrega das chaves
-3. **Facilite o processo**: compartilhe link de indicação
-4. **Recompense**: brinde, desconto em próximo serviço
-
-### Networking no litoral
-
-- **Imobiliárias**: parcerias locais
-- **Corretores**: indicações cruzadas
-- **Advogados**: indicações de clientes
-- **Arquitetos**: indicações de reformas
-
-### Exemplo real
-
-Um consultor em Santos mantém contato com 50+ clientes por ano. Taxa de recompra: 30%. Indicações: 40% das vendas.
-
-## Aula 4.3 — Escala e profissionalização
-
-### Quando profissionalizar
-
-- 5+ vendas por ano
-- Receita recorrente de comissões
-- Demanda por serviços adicionais
-
-### Serviços adicionais
-
-1. **Consultoria de preço**: avaliação profissional
-2. **Home staging**: preparação para venda
-3. **Fotografia profissional**: parceria com fotógrafos
-4. **Gestão de vendas**: acompanhamento completo
-
-### Exercício
-
-Defina 3 metas para profissionalizar sua operação de venda de imóveis no litoral.
-
-## Resumo
-
-- Pós-venda gera indicações e recompra.
-- Networking amplia oportunidades.
-- Profissionalização permite escala.
-
-## Checklist
-
-- [ ] Processo de pós-venda definido
-- [ ] Acompanhamento de clientes implementado
-- [ ] Sistema de indicações criado
-- [ ] Metas de profissionalização definidas
-
-## Materiais para download
-
-- Template de follow-up pós-venda
-- Checklist de networking
-
-## Prompt de IA
-
-Atue como consultor imobiliário. Crie um plano de pós-venda e indicações para eu escalar minha operação no litoral.
+**Prática:**
+- Meça seu tempo médio de resposta atual
+- Configure resposta automática com 1 pergunta de qualificação
+- Defina plantão de resposta nos horários de pico

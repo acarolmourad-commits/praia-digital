@@ -1,60 +1,34 @@
-# Módulo 1 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar instagram para corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 1 — Posicionamento e Marca Pessoal
 
-## Aula 1.1 — Visão geral do mercado de instagram para corretores no litoral paulista
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Construir uma marca pessoal que atrai clientes em vez de persegui-los.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 1.1 — Nicho vence generalista: escolha seu território
+O corretor "de tudo" compete com milhares; o corretor de "apartamentos frente-mar no Guarujá para famílias" compete com dezenas. Nicho = geografia + perfil de imóvel + perfil de cliente. Quanto mais específico, maior a taxa de conversão e menor o custo de aquisição.
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+Teste de nicho: em 10 segundos, um estranho deve saber para quem te indicar. "Corretor de imóveis" falha no teste; "especialista em casas de condomínio em Ubatuba para quem sai de SP" passa.
 
-## Aula 1.2 — Conceitos essenciais: termos, métricas e particularidades locais
-Fundamentos, ferramentas e fluxos recomendados para instagram para corretores no litoral.
+**Prática:**
+- Escreva sua frase de posicionamento (nicho em 1 linha)
+- Liste os 3 nichos mais rentáveis da sua cidade
+- Escolha 1 e comprometa 90 dias de conteúdo focado
 
-**Ferramentas recomendadas:**
-- Portal oficial de imóveis do litoral
-- Planilha de diagnóstico
-- Consulta de matrícula online
+## Aula 1.2 — Identidade profissional: foto, bio e prova social
+O kit mínimo profissional: foto atual e bem produzida (rosto visível, fundo neutro), bio que fala do resultado para o cliente (não de você), e prova social real — avaliações no Google, depoimentos em vídeo, números de vendas.
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+No digital, você é o que o Google mostra. Pesquise seu nome agora: o que aparece? Perfil abandonado ou inconsistente custa vendas silenciosamente. Padronize foto e descrição em todas as redes e no WhatsApp Business.
 
-## Aula 1.3 — Estudo de caso real: como um aluno aplicou o método e obteve resultado em 30 dias
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Google seu nome e documente o resultado
+- Atualize foto e bio em todas as plataformas hoje
+- Peça 3 avaliações no Google para clientes satisfeitos
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 1.3 — Prova social: o multiplicador de confiança
+Depoimento vale 10x o que você diz sobre si. Sistema de coleta: peça no pico de satisfação (entrega das chaves, problema resolvido), facilite ao máximo (link direto do Google, roteiro de 3 perguntas para depoimento em vídeo) e publique com autorização.
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+Hierarquia da prova: vídeo de cliente > avaliação Google com nome > print de WhatsApp > sua declaração. Construa o acervo pelos degraus mais altos que conseguir.
 
-## Exercício
-Faça o diagnóstico do seu cenário atual em instagram para corretores: liste pontos fortes, fracos, oportunidades e ameaças.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- Portal oficial de imóveis do litoral
-- Planilha de diagnóstico
-- Consulta de matrícula online
-
-## Prompt de IA
-Atue como especialista em instagram para corretores no litoral paulista. Faça um diagnóstico personalizado com base nestas respostas: [insira suas respostas].
+**Prática:**
+- Defina o ritual do pedido de depoimento
+- Colete 2 depoimentos esta semana
+- Organize o acervo de provas (pasta por tipo)

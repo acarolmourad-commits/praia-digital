@@ -1,60 +1,34 @@
-# Módulo 4 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar visita tecnica para corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 4 — Visita Técnica e Vistoria Profissional
 
-## Aula 4.1 — Métricas para acompanhar evolução e resultado
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Avaliar o estado real do imóvel com olhar técnico.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 4.1 — A vistoria estruturada: os 20 pontos do checklist
+Vistoria profissional cobre: estrutura (rachaduras em vigas e pilares x fissuras de revestimento), hidráulica (pressão, sinais de vazamento, esgoto), elétrica (quadro, tomadas, aquecimento), cobertura/telhado (umidade no forro) e as especificidades do litoral: corrosão em esquadrias e ferragens, impermeabilização de fachada e áreas de condomínio expostas ao sal.
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+Fotografe tudo com referência de escala e monte o laudo simples: ponto, condição, foto, recomendação. O laudo vira peça de negociação — problemas documentados justificam desconto.
 
-## Aula 4.2 — Otimizações para aumentar rentabilidade ou desempenho
-Fundamentos, ferramentas e fluxos recomendados para visita tecnica para corretores no litoral.
+**Prática:**
+- Monte seu checklist de 20 pontos
+- Vistorie 1 imóvel aplicando o checklist completo
+- Produza 1 laudo fotográfico simples
 
-**Ferramentas recomendadas:**
-- Dashboard de métricas
-- Planilha de rentabilidade
-- Sistema de gestão de tarefas
+## Aula 4.2 — Maresia e umidade: os inimigos invisíveis do litoral
+A maresia (aerossol de sal) corrói metal, esquadrias e instalações em ritmo acelerado — imóvel a 100m do mar exige manutenção preventiva que o mesmo imóvel a 1 km não precisa. Na vistoria: verifique esquadrias (alumínio anodizado ou pintura eletrostática resistem mais), ferragens de portas, aparelhos de ar-condicionado e a pintura da fachada.
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+Umidade: distinga umidade de condensação (comum em imóvel fechado na baixa temporada, resolve com ventilação) de infiltração estrutural (manchas que crescem, tinta estufada — resolve com obra). Confundir as duas compromete a avaliação.
 
-## Aula 4.3 — Escala: como crescer sem perder a qualidade
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Aprenda os 3 sinais de infiltração estrutural
+- Verifique esquadrias e ferragens em toda vistoria litorânea
+- Inclua "custo de maresia" na análise de imóveis frente-mar
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 4.3 — Apresentação técnica: transformando o laudo em argumento
+O laudo de vistoria serve a dois senhores: ao vendedor (transparência que acelera a venda — imóvel com laudo limpo vende mais rápido) e ao comprador (segurança para decidir). Apresente com estrutura: pontos fortes primeiro, pendências com custo estimado de correção, e comparativo com o padrão do bairro.
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+Regra de credibilidade: nunca esconda problema documentável. O corretor que aponta a infiltração antes do cliente descobrir ganha a confiança; o que é pego escondendo perde a venda e a reputação.
 
-## Exercício
-Desenvolva um plano de crescimento para visita tecnica para corretores com metas mensuráveis.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- Dashboard de métricas
-- Planilha de rentabilidade
-- Sistema de gestão de tarefas
-
-## Prompt de IA
-Atue como estrategista de crescimento. Monte um plano de escala para visita tecnica para corretores com métricas e prazos: [dados do negócio].
+**Prática:**
+- Crie seu modelo de apresentação de laudo
+- Estime custos de correção dos 5 problemas mais comuns
+- Adote a regra: problema documentável sempre apresentado

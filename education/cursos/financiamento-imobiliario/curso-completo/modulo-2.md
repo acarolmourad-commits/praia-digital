@@ -1,60 +1,34 @@
-# Módulo 2 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar financiamento imobiliario com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 2 — Aprovação de Crédito e Documentação
 
-## Aula 2.1 — Passo a passo para aplicar financiamento imobiliario na prática
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Conduzir o cliente até a aprovação sem surpresas.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 2.1 — Análise de crédito: o que o banco realmente olha
+O banco avalia score de crédito, comprometimento de renda (máx. 30%), estabilidade profissional, vínculo com a região e o próprio imóvel (avaliação do engenheiro). Restrições em órgãos de proteção quase sempre reprovam — verifique antes de simular.
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+No litoral, atenção redobrada com imóveis em áreas de preservação, sem habite-se ou com documentação irregular de terreno: o banco reprova o imóvel, não o cliente. Verifique a documentação do imóvel antes de prometer aprovação.
 
-## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
-Fundamentos, ferramentas e fluxos recomendados para financiamento imobiliario no litoral.
+**Prática:**
+- Inclua "situação de crédito" na qualificação do lead
+- Exija matrícula atualizada antes de iniciar processo
+- Mapeie 2 engenheiros avaliadores que atendem os bancos locais
 
-**Ferramentas recomendadas:**
-- CRM de atendimento
-- Planilha de acompanhamento
-- Ferramenta de automação de mensagens
+## Aula 2.2 — Documentação completa: o checklist que evita 90% das reprovações
+Do comprador: RG/CNH, CPF, comprovante de estado civil, comprovantes de renda (3 últimos holerites ou Decore), IR, comprovante de residência. Do imóvel: matrícula atualizada, certidões negativas dos vendedores, IPTU, habite-se e convenção de condomínio se houver.
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+Fluxo profissional: pasta digital padronizada por cliente, documentos nomeados, checklist compartilhado. O corretor que entrega a pasta completa ao banco reduz o tempo de análise de semanas para dias — e vira referência para os gerentes, que passam a indicar clientes.
 
-## Aula 2.3 — Automação e fluxos que economizam horas por semana
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Crie a pasta digital padrão com o checklist
+- Cronometre seu tempo médio atual de montagem de processo
+- Apresente-se a 2 gerentes de banco com seu processo organizado
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 2.3 — Recusa de crédito: o plano B profissional
+Reprovou? Diagnostique o motivo real (score, renda, imóvel) antes de tentar outro banco — tentativas em sequência sem correção derrubam o score. Alternativas reais: financiamento direto com a construtora (comum em lançamentos do litoral), consórcio contemplado, aumento de entrada com prazo, ou reposicionar o cliente para imóvel de menor valor.
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+Comunique a recusa com plano anexo: "o banco X reprovou por Y; o caminho é Z em N meses". Cliente bem tratado na recusa volta — e indica.
 
-## Exercício
-Monte um plano prático de financiamento imobiliario para os próximos 30 dias, com ações diárias e semanais.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- CRM de atendimento
-- Planilha de acompanhamento
-- Ferramenta de automação de mensagens
-
-## Prompt de IA
-Atue como consultor de financiamento imobiliario. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].
+**Prática:**
+- Crie a árvore de alternativas pós-recusa (4 caminhos)
+- Tenha 1 contato de construtora com financiamento direto
+- Documente o motivo de cada recusa para aprender o padrão

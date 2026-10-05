@@ -1,97 +1,34 @@
-# Módulo 2 — Indicadores e Comparativos
+# Módulo 2 — Análise de Oportunidades
 
-## Introdução
+## Objetivo do módulo
+Avaliar imóveis com planilha e critério, não com achismo.
 
-Neste módulo você vai aprender os principais indicadores de rentabilidade, comparar oportunidades e identificar os melhores investimentos no litoral.
+## Aula 2.1 — A ficha de análise: 12 dados antes de qualquer proposta
+Antes de propor: valor pedido x valor de mercado (comparáveis reais), m² privativo, custo de reforma estimado, IPTU, condomínio, potencial de aluguel anual e de temporada, liquidez do bairro (tempo médio de venda), pendências documentais, zoneamento, riscos ambientais (litoral: recuo de maré, áreas de preservação) e motivação real do vendedor.
 
-## Aula 2.1 — Indicadores essenciais
+A motivação do vendedor vale ouro: inventário, mudança de cidade, imóvel parado há anos — cada uma dessas situações abre espaço real de negociação de 10% a 20%.
 
-### Cap rate
+**Prática:**
+- Monte sua ficha de análise com os 12 dados
+- Aplique em 3 imóveis esta semana
+- Crie o hábito: nenhuma proposta sem ficha completa
 
-```
-Cap rate = Receita anual / Valor do imóvel × 100
-```
+## Aula 2.2 — Onde está o valor no litoral: leitura micro dos bairros
+Dentro da mesma cidade, a diferença de retorno entre bairros chega a 3x. Analise: frente-mar x quadra intermediária (frente-mar valoriza mais, mas a quadra do lado tem yield melhor), comércio e serviços andáveis (critério nº 1 de locação), perfil do turista do bairro e estoque de lançamentos (muita oferta nova pressiona o usado).
 
-Exemplo: imóvel de R$ 500.000 com receita de R$ 40.000/ano = 8% cap rate.
+Ferramenta: o mapa de calor pessoal. Rode os bairros em dia de semana à noite — rua vazia às 20h em janeiro é sinal de bairro puramente sazonal; rua viva indica moradia, serviços e liquidez o ano inteiro.
 
-### ROI
+**Prática:**
+- Monte seu mapa de calor: 5 bairros, notas de 0-10 em 5 critérios
+- Visite 1 bairro-alvo em dia de semana à noite
+- Compare yield de frente-mar x intermediária em 1 cidade
 
-```
-ROI = (Receita anual - Custos anuais) / Investimento total × 100
-```
+## Aula 2.3 — Due diligence documental do investidor
+Antes de fechar: matrícula atualizada (ônus, hipotecas, ações), certidões dos vendedores (federais, estaduais, trabalhistas — dívida trabalhista do vendedor pode atingir o imóvel), IPTU e condomínio quitados, habite-se/averbação de construção e, no litoral, verificação de área de marinha (terreno de marinha tem taxa anual e regras próprias).
 
-### Payback
+Custo de uma due diligence com despachante/advogado: R$ 1.500 a R$ 3.000. Custo de pular essa etapa: potencialmente o imóvel inteiro.
 
-```
-Payback = Investimento total / Receita líquida mensal
-```
-
-Exemplo: investimento de R$ 100.000, receita líquida de R$ 3.000/mês = 33 meses.
-
-### Taxa de ocupação
-
-```
-Ocupação = Dias alugados / Total de dias × 100
-```
-
-## Aula 2.2 — Comparativo por cidade
-
-### Tabela comparativa
-
-| Cidade | Cap rate médio | ROI médio | Ocupação média | Valorização |
-|--------|---------------|-----------|----------------|-------------|
-| Santos | 6-8% | 7-10% | 65-75% | 5-7% |
-| Guarujá | 7-9% | 8-12% | 60-70% | 6-9% |
-| Praia Grande | 6-8% | 8-12% | 55-65% | 7-10% |
-| Bertioga | 7-10% | 9-14% | 50-60% | 6-8% |
-
-### Quando escolher cada cidade
-
-- **Santos**: estabilidade, alta demanda
-- **Guarujá**: temporada forte, valorização
-- **Praia Grande**: preço baixo, potencial
-- **Bertioga**: exclusividade, rentabilidade alta
-
-## Aula 2.3 — Análise de risco
-
-### Matriz de risco
-
-| Fator | Baixo | Médio | Alto |
-|-------|-------|-------|------|
-| Localização | Orla consolidada | Em expansão | Periferia |
-| Documentação | Regular | Pendências menores | Irregular |
-| Demanda | Alta | Média | Baixa |
-| Concorrência | Baixa | Média | Alta |
-
-### Como mitigar risco
-
-1. **Diversifique**: não concentre em uma cidade
-2. **Reserva de emergência**: 6 meses de custos
-3. **Seguro**: proteja o imóvel
-4. **Análise contínua**: acompanhe mercado
-
-### Exercício
-
-Classifique 3 imóveis do litoral por nível de risco.
-
-## Resumo
-
-- Indicadores permitem comparar oportunidades.
-- Cada cidade tem perfil de risco e retorno.
-- Análise de risco evita surpresas.
-
-## Checklist
-
-- [ ] Cap rate calculado
-- [ ] ROI projetado
-- [ ] Comparativo por cidade feito
-- [ ] Risco avaliado
-
-## Materiais para download
-
-- Planilha de indicadores
-- Matriz de risco
-
-## Prompt de IA
-
-Atue como consultor de investimentos. Compare 3 imóveis do litoral por rentabilidade e risco.
+**Prática:**
+- Crie seu checklist documental de compra
+- Tenha 1 despachante e 1 advogado parceiros
+- Verifique o que é área de marinha nas suas cidades

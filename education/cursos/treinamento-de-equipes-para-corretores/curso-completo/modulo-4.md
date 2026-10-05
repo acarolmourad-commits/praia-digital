@@ -1,60 +1,33 @@
-# Módulo 4 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar treinamento de equipes para corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 4 — Excelência Operacional do Atendimento
 
-## Aula 4.1 — Métricas para acompanhar evolução e resultado
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Padronizar a excelência para ela não depender do seu humor.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 4.1 — Scripts e padrões: a excelência replicável
+Padronize sem robotizar: scripts de primeiro atendimento, confirmação de visita, pós-visita, envio de proposta e pós-venda. O script garante o piso — nenhum cliente recebe atendimento ruim — e libera sua energia para personalizar o que importa.
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+Teste e evolua: revise os scripts trimestralmente com base no que os clientes perguntam. O script que não muda há um ano está desatualizado com o mercado.
 
-## Aula 4.2 — Otimizações para aumentar rentabilidade ou desempenho
-Fundamentos, ferramentas e fluxos recomendados para treinamento de equipes para corretores no litoral.
+**Prática:**
+- Escreva seus 5 scripts essenciais
+- Revise 1 script por trimestre
+- Treine até o script virar conversa, não leitura
 
-**Ferramentas recomendadas:**
-- Dashboard de métricas
-- Planilha de rentabilidade
-- Sistema de gestão de tarefas
+## Aula 4.2 — Medindo a qualidade: NPS e feedback estruturado
+Meça o que quer melhorar: aplique o NPS simples ("de 0 a 10, quanto indicaria meu trabalho?") ao fim de cada processo e pergunte o porquê da nota. Detratores (0-6) viram plano de correção; promotores (9-10) viram depoimento e indicação.
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+Feche o ciclo: todo feedback gera uma ação registrada. O cliente que vê sua sugestão implementada se sente dono do processo — e defende sua marca.
 
-## Aula 4.3 — Escala: como crescer sem perder a qualidade
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Implante a pergunta NPS ao fim de cada venda
+- Registre feedbacks e ações em planilha única
+- Converta 1 promotor em depoimento público por mês
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 4.3 — Trabalho em equipe e multiplicação
+Quando a agenda estoura, a escolha é entre perder qualidade ou multiplicar braços. Caminho profissional: primeiro padronize seus processos (scripts, checklists, CRM), depois traga o assistente/parceiro júnior e treine nos padrões escritos.
+Delegação que funciona: delegue tarefas com padrão definido (confirmações, agendamentos, montagem de pastas) e mantenha com você o que decide dinheiro (negociação, fechamento, relacionamento-chave).
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
-
-## Exercício
-Desenvolva um plano de crescimento para treinamento de equipes para corretores com metas mensuráveis.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- Dashboard de métricas
-- Planilha de rentabilidade
-- Sistema de gestão de tarefas
-
-## Prompt de IA
-Atue como estrategista de crescimento. Monte um plano de escala para treinamento de equipes para corretores com métricas e prazos: [dados do negócio].
+**Prática:**
+- Documente seus 5 processos principais antes de contratar
+- Defina o que nunca será delegado
+- Crie o treinamento de onboarding de 1 semana

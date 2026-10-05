@@ -1,5 +1,6 @@
-# Sumário do Curso: Crm Para Corretores
-- Módulo 1: Fundamentos
-- Módulo 2: Aplicação Prática
-- Módulo 3: Casos Reais
-- Módulo 4: Crescimento
+# Sumário do Curso: CRM para Corretores
+
+- Módulo 1: Ferramentas Essenciais do Corretor Digital
+- Módulo 2: IA Aplicada ao Dia a Dia
+- Módulo 3: Segurança Digital e LGPD
+- Módulo 4: Tecnologia na Experiência do Cliente

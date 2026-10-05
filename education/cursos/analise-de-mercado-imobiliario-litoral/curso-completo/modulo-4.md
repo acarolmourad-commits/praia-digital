@@ -1,118 +1,34 @@
-# Módulo 4 — Análise de Cenários e Tomada de Decisão
+# Módulo 4 — Portfólio, Financiamento e Saída
 
-## Introdução
+## Objetivo do módulo
+Escalar com alavancagem consciente e planejar a saída desde a compra.
 
-Neste módulo você vai aprender a analisar diferentes cenários, tomar decisões de investimento com dados e planejar estratégias de longo prazo.
+## Aula 4.1 — Alavancagem inteligente: usar o banco a seu favor
+Financiar um investimento parece contraditório, mas a matemática manda: se o imóvel rende 6% líquido + valorização e o crédito custa ~11% ao ano, o carry é negativo — porém o investidor alavanca o capital próprio e mantém liquidez para a próxima oportunidade.
 
-## Aula 4.1 — Cenários de mercado
+Regra de segurança: a soma das parcelas não pode depender de ocupação perfeita. Reserve de 6 a 12 meses de parcela antes de alavancar. Quem quebra no imobiliário quebra por fluxo de caixa, não por patrimônio.
 
-### Cenário otimista
+**Prática:**
+- Simule 1 compra alavancada com carry negativo explícito
+- Monte sua reserva de segurança (6-12 parcelas)
+- Defina seu limite de alavancagem
 
-- Alta demanda por temporada
-- Valorização acima de 10% ao ano
-- Novos empreendimentos na região
-- Acessos melhorados
+## Aula 4.2 — Gestão de portfólio: quando segurar, vender ou trocar
+Revise o portfólio anualmente: cada imóvel precisa justificar sua presença (renda, valorização ou uso). O imóvel que valorizou muito e agora tem cap rate comprimido é candidato a venda e rolagem para mercado com yield melhor.
 
-### Cenário base
+Sinais de venda: cap rate líquido abaixo do CDB, manutenção crescente, bairro em declínio relativo. Sinais de hold: infraestrutura chegando, estoque local encolhendo, renda subindo. Decida com planilha, não com apego.
 
-- Demanda estável
-- Valorização de 5-8% ao ano
-- Infraestrutura mantida
-- Ocupação de 50-60%
+**Prática:**
+- Revise 1 imóvel: hold, vender ou melhorar?
+- Calcule o cap rate atual pelo valor de mercado de hoje (não o de compra)
+- Escreva os gatilhos de venda de cada ativo seu
 
-### Cenário pessimista
+## Aula 4.3 — Impostos e estrutura: o que o investidor precisa saber
+Venda com lucro: ganho de capital de 15% a 22,5% sobre o lucro, com isenções possíveis (único imóvel até R$ 440 mil, venda de residencial para compra de outro em 180 dias). Aluguel recebido por pessoa física: carnê-leão mensal. Holding familiar: reduz custo de sucessão e pode otimizar IR, mas tem custo de manutenção — vale a partir de determinado patrimônio.
 
-- Queda de demanda
-- Valorização baixa ou negativa
-- Problemas econômicos
-- Ocupação abaixo de 40%
+Erro comum: vender e "esquecer" o ganho de capital — a multa e os juros corroem o lucro. Consulte contador antes da venda, não depois.
 
-### Como se preparar
-
-1. **Diversifique**: não coloque tudo em uma cidade
-2. **Reserva de emergência**: 6 meses de custos
-3. **Seguro**: proteja o imóvel
-4. **Flexibilidade**: estratégias adaptáveis
-
-## Aula 4.2 — Modelos de investimento
-
-### Modelo 1: Buy and Hold
-
-- **Objetivo**: valorização de longo prazo
-- **Prazo**: 5-10 anos
-- **Risco**: baixo
-- **Retorno**: 8-12% ao ano
-
-### Modelo 2: Temporada
-
-- **Objetivo**: renda mensal alta
-- **Prazo**: 1-5 anos
-- **Risco**: médio
-- **Retorno**: 10-15% ao ano
-
-### Modelo 3: Flipping
-
-- **Objetivo**: lucro rápido na revenda
-- **Prazo**: 6-18 meses
-- **Risco**: alto
-- **Retorno**: 20-40% por projeto
-
-### Modelo 4: Misto
-
-- **Objetivo**: renda + valorização
-- **Prazo**: 3-7 anos
-- **Risco**: médio
-- **Retorno**: 10-14% ao ano
-
-### Exercício
-
-Escolha um modelo e crie um plano de investimento detalhado.
-
-## Aula 4.3 — Monitoramento e ajustes
-
-### Indicadores para acompanhar
-
-1. **Valorização**: compare com mercado trimestralmente
-2. **Ocupação**: dias alugados por mês
-3. **Receita**: entradas mensais
-4. **Custos**: despesas operacionais
-5. **Satisfação**: avaliações de hóspedes
-
-### Quando ajustar
-
-- Ocupação abaixo de 40% por 3 meses
-- Custos aumentando acima da inflação
-- Mercado com valorização negativa
-- Nova concorrência forte
-
-### Ferramentas
-
-- **Planilha de acompanhamento**: dados mensais
-- **Alertas de mercado**: novos empreendimentos
-- **Relatórios automáticos**: receita, custos, ocupação
-
-### Exercício
-
-Crie um dashboard de monitoramento para o seu investimento.
-
-## Resumo
-
-- Cenários ajudam a se preparar para o futuro.
-- Cada modelo tem risco e retorno diferentes.
-- Monitoramento contínuo permite ajustes rápidos.
-
-## Checklist
-
-- [ ] Cenários mapeados
-- [ ] Modelo escolhido
-- [ ] Plano de monitoramento criado
-- [ ] Indicadores definidos
-
-## Materiais para download
-
-- Planilha de cenários
-- Template de dashboard de monitoramento
-
-## Prompt de IA
-
-Atue como consultor de investimentos imobiliários. Crie um plano de monitoramento e ajustes para meu investimento no litoral.
+**Prática:**
+- Entenda as 2 principais isenções de ganho de capital
+- Regularize o carnê-leão se recebe aluguel como PF
+- Consulte 1 contador sobre seu caso específico

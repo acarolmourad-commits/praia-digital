@@ -1,100 +1,34 @@
-# Módulo 3 — Relacionamento e Satisfação do Locatário
+# Módulo 3 — Operação e Experiência do Hóspede
 
-## Introdução
+## Objetivo do módulo
+Rodar a operação com padrão hoteleiro e escala.
 
-Neste módulo você vai aprender a construir relacionamento duradouro com locatários, resolver conflitos e transformar inquilinos em promotores do seu imóvel.
+## Aula 3.1 — Check-in, limpeza e manutenção: a operação invisível
+A nota do hóspede é construída em 3 momentos: chegada (check-in sem atrito — fechadura eletrônica ou cofre de chave elimina 90% dos problemas), limpeza (padrão hoteleiro: roupa de cama branca, checklist de 40 itens, foto pós-limpeza) e resposta a problemas (chuveiro queimado resolvido em 4h salva a avaliação; em 24h, condena).
 
-## Aula 3.1 — Comunicação eficaz
+Monte a rede local: camareira fixa por região, eletricista e encanador de plantão, estoque de itens críticos. O gestor profissional vende tranquilidade ao proprietário porque tem operação real por trás.
 
-### Canais de comunicação
+**Prática:**
+- Implante check-in autônomo em 1 imóvel-piloto
+- Crie o checklist de limpeza de 40 itens
+- Formalize a rede de fornecedores com contatos de plantão
 
-- **WhatsApp Business**: rápido, prático
-- **E-mail**: formal, documentado
-- **Telefone**: urgências, conflitos
-- **Portal do hóspede**: informações centralizadas
+## Aula 3.2 — Comunicação automatizada com o hóspede
+Régua de mensagens que funciona: confirmação da reserva (boas-vindas + regras), D-3 (endereço, check-in, dicas), dia do check-in (código da fechadura), D+1 (está tudo bem?), check-out (instruções + pedido de avaliação). Automatize com templates no WhatsApp ou nas plataformas — mas mantenha tom humano.
 
-### Tom de comunicação
+A mensagem D+1 é a mais importante: ela captura o problema antes que ele vire review negativo. Hóspede que reclama e é atendido avalia melhor que hóspede sem problema nenhum.
 
-1. **Profissional**: cordial, objetivo
-2. **Resolutivo**: propor solução, não apenas explicar problema
-3. **Proativo**: antecipe necessidades
-4. **Empático**: entenda a situação do locatário
+**Prática:**
+- Escreva os 5 templates da régua
+- Automatize envio por data de reserva
+- Institua a regra: toda mensagem de hóspede respondida em <30min
 
-### Template de mensagens
+## Aula 3.3 — Avaliações e reputação: o ativo que compõe juros
+Nos portais de temporada, a nota é o ranking: imóveis 4.8+ aparecem primeiro e podem cobrar 10-20% mais. A reputação se constrói com consistência (mesma experiência toda vez) e se protege com resposta profissional a toda avaliação — inclusive às negativas, que respondidas bem viram prova de seriedade.
 
-**Confirmação de reserva:**
-> "Olá [nome], sua reserva para [data] está confirmada. Check-in a partir de 15h. Qualquer dúvida, estou à disposição."
+Peça avaliação no momento de pico de satisfação: logo após o check-out, com link direto. E nunca compre ou fabrique reviews — as plataformas detectam padrões e punem com shadowban.
 
-**Lembrete de check-out:**
-> "Olá [nome], lembrete: check-out até 11h. Esperamos que tenha gostado da estadia!"
-
-**Pós estadia:**
-> "Olá [nome], espero que tenha gostado da estadia. Sua opinião é muito importante. Poderia avaliar sua experiência?"
-
-## Aula 3.2 — Resolução de conflitos
-
-### Tipos de conflitos
-
-1. **Problemas no imóvel**: quebra, falta de funcionamento
-2. **Desentendimentos**: regras, horários, áreas comuns
-3. **Reclamações**: limpeza, ruído, disponibilidade
-4. **Cancelamentos**: pedido de reembolso, alteração de datas
-
-### Metodologia de resolução
-
-1. **Escute sem julgar**: entenda o problema
-2. **Peça desculpas**: mesmo que não seja sua culpa
-3. **Proponha solução**: imediata e justa
-4. **Documente**: registro do ocorrido e solução
-
-### Exemplo de resolução
-
-**Problema:** ar-condicionado não funciona no primeiro dia
-**Solução:** troca imediata por equipamento novo + desconto de 10% na estadia
-
-### Exercício
-
-Escreva um script de resolução para um conflito comum (barulho, quebra, falta de funcionamento).
-
-## Aula 3.3 — Fidelização de locatários
-
-### Estratégias de fidelização
-
-1. **Desconto para retorno**: 10-15% para estadias subsequentes
-2. **Benefícios exclusivos**: welcome drink, early check-in
-3. **Comunicação personalizada**: lembretes de datas especiais
-4. **Programa de indicações**: desconto para quem indicar
-
-### Indicadores de satisfação
-
-- **Avaliações**: nota média acima de 4.5/5
-- **Taxa de reocupação**: acima de 60%
-- **Taxa de recompra**: acima de 20%
-- **Tempo de resposta**: menos de 1h
-
-### Exercício
-
-Crie um programa de fidelização para os locatários do seu imóvel.
-
-## Resumo
-
-- Comunicação eficaz evita conflitos.
-- Resolução rápida transforma problemas em confiança.
-- Fidelização reduz custos de aquisição.
-
-## Checklist
-
-- [ ] Canais de comunicação definidos
-- [ ] Templates de mensagens criados
-- [ ] Processo de resolução documentado
-- [ ] Programa de fidelização estruturado
-
-## Materiais para download
-
-- Templates de comunicação
-- Script de resolução de conflitos
-- Programa de fidelização modelo
-
-## Prompt de IA
-
-Atue como consultor de gestão de locação. Crie um plano de relacionamento e fidelização para os locatários do meu imóvel no litoral.
+**Prática:**
+- Defina o ritual do pedido de avaliação pós-checkout
+- Responda 100% das avaliações em até 48h
+- Monitore nota média por imóvel mensalmente

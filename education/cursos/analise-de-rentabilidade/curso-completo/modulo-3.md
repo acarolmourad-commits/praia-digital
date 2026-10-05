@@ -1,97 +1,34 @@
-# Módulo 3 — Estratégias de Maximização de Receita
+# Módulo 3 — Estratégias de Retorno
 
-## Introdução
+## Objetivo do módulo
+Escolher e executar a estratégia certa para cada perfil de capital.
 
-Neste módulo você vai aprender estratégias práticas para aumentar a receita de investimentos imobiliários no litoral, incluindo temporada, upgrades e otimização de preços.
+## Aula 3.1 — Renda passiva: locação anual x temporada x mista
+Locação anual: renda previsível, menos trabalho, cap rate 4-6%. Temporada: potencial 6-10% líquido, mas exige operação (ou gestora, que cobra 20-30%). Mista: temporada no verão + locação anual fora dela — raro de executar por contrato, mas possível com inquilino que aceita saída em novembro (comum com aposentados que passam o verão com filhos).
 
-## Aula 3.1 — Aumentando receita de locação
+A escolha depende do seu tempo e da localização: apartamento a 2 quadras da praia em Guarujá é máquina de temporada; o mesmo capital em bairro residencial de Santos rende melhor em locação anual.
 
-### Estratégias de aumento
+**Prática:**
+- Simule as 3 estratégias para 1 imóvel real
+- Defina quanto do seu tempo a operação pode consumir
+- Escolha 1 estratégia padrão e 1 alternativa
 
-1. **Upgrades do imóvel**: reforma, equipamentos, decoração
-2. **Serviços extras**: café da manhã, traslado, passeios
-3. **Temporada**: aluguel por temporada com diária premium
-4. **Eventos**: pacotes para Reveillon, Carnaval
+## Aula 3.2 — Valorização forçada: reforma que paga
+A reforma certa no litoral: cozinha e banheiro (decidem a compra), pintura clara e piso vinílico (custo baixo, efeito visual alto) e o combate invisível — impermeabilização e esquadrias contra maresia (o comprador experiente do litoral procura isso).
 
-### Cálculo de upgrade
+Regra prática: reforma deve custar até 10-15% do valor do imóvel e agregar 20-30% no valor percebido. Reforma de gosto pessoal exagerada não se recupera na venda.
 
-```
-Custo do upgrade: R$ 10.000
-Aumento de aluguel: R$ 500/mês
-Payback: 20 meses
-ROI adicional: 30%
-```
+**Prática:**
+- Liste as 5 melhorias de melhor retorno
+- Peça 2 orçamentos de referência (cozinha e banheiro)
+- Calcule o ROI esperado de 1 projeto real
 
-### Exemplo real
+## Aula 3.3 — Compra na planta: o jogo do desconto e do INCC
+Comprar na planta no litoral pode render 20-40% até a entrega, mas o risco é real: atraso de obra, correção do saldo pelo INCC (que em ciclos de construção cara come a margem) e revenda difícil antes das chaves.
 
-Um apartamento em Santos investiu R$ 15.000 em reforma (cozinha nova, pintura, decoração). A diária aumentou de R$ 350 para R$ 550. Payback: 10 meses de alta temporada.
+O investidor profissional só entra com: construtora com histórico de entregas verificável, desconto real sobre a tabela futura (compare com usado pronto no mesmo bairro — a diferença deve compensar o risco de obra), e plano de saída definido (revender na entrega ou renda).
 
-## Aula 3.2 — Precificação otimizada
-
-### Preço base
-
-- **Mercado**: consulte 20 imóveis similares
-- **Localização**: até 500m da praia = premium
-- **Estado de conservação**: reformado = +
-- **Serviços**: café da manhã = +
-
-### Temporada
-
-- **Alta temporada**: +100% a +200%
-- **Média temporada**: +50%
-- **Baixa temporada**: -30%
-
-### Descontos estratégicos
-
-- **Long stay**: 20% para 7+ noites
-- **Early bird**: 10% para reservas 60+ dias antes
-- **Last minute**: 15% para ocupar datas próximas
-
-### Exercício
-
-Monte uma tabela de preços otimizada para um apartamento no litoral.
-
-## Aula 3.3 — Diversificação de receita
-
-### Fontes adicionais
-
-1. **Experiências**: passeios, degustações, aventuras
-2. **Aluguel de equipamentos**: prancha, bike, cadeira de praia
-3. **Estacionamento**: vaga privativa
-4. **Coworking**: espaço para trabalho remoto
-5. **Eventos**: festas, reuniões, workshops
-
-### Modelos de negócio
-
-| Modelo | Receita base | Receita extra | Complexidade |
-|--------|--------------|---------------|--------------|
-| Locação simples | 100% | 0% | Baixa |
-| Temporada | 70% | 30% | Média |
-| Experiências | 60% | 40% | Alta |
-| Misto completo | 50% | 50% | Alta |
-
-### Exercício
-
-Crie um modelo de negócio diversificado para um imóvel no litoral.
-
-## Resumo
-
-- Aumentar receita exige investimento em melhorias.
-- Precificação otimizada maximiza temporada.
-- Diversificação reduz risco e aumenta receita.
-
-## Checklist
-
-- [ ] Upgrades planejados
-- [ ] Tabela de preços otimizada
-- [ ] Serviços extras definidos
-- [ ] Modelo de negócio escolhido
-
-## Materiais para download
-
-- Planilha de otimização de preços
-- Template de modelo de negócio
-
-## Prompt de IA
-
-Atue como consultor de rentabilidade. Crie um plano de maximização de receita para um imóvel no litoral.
+**Prática:**
+- Verifique o histórico de entregas de 2 construtoras locais
+- Compare preço de planta x pronto em 1 bairro
+- Simule a evolução do saldo devedor com INCC

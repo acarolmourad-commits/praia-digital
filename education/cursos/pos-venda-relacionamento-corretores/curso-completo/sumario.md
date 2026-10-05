@@ -1,5 +1,6 @@
 # Sumário do Curso: Pos Venda Relacionamento Corretores
-- Módulo 1: Fundamentos
-- Módulo 2: Aplicação Prática
-- Módulo 3: Casos Reais
-- Módulo 4: Crescimento
+
+- Módulo 1: Fundamentos da Venda Consultiva
+- Módulo 2: Condução, Visita e Demonstração
+- Módulo 3: Objeções e Negociação
+- Módulo 4: Funil de Vendas Imobiliário

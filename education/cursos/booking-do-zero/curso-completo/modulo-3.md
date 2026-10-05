@@ -1,99 +1,34 @@
-# Módulo 3 — Gestão de Reservas e Preços
+# Módulo 3 — Operação e Experiência do Hóspede
 
-## Introdução
+## Objetivo do módulo
+Rodar a operação com padrão hoteleiro e escala.
 
-Neste módulo você vai aprender a gerenciar reservas, configurar preços dinâmicos e usar ferramentas para maximizar receita no Booking.
+## Aula 3.1 — Check-in, limpeza e manutenção: a operação invisível
+A nota do hóspede é construída em 3 momentos: chegada (check-in sem atrito — fechadura eletrônica ou cofre de chave elimina 90% dos problemas), limpeza (padrão hoteleiro: roupa de cama branca, checklist de 40 itens, foto pós-limpeza) e resposta a problemas (chuveiro queimado resolvido em 4h salva a avaliação; em 24h, condena).
 
-## Aula 3.1 — Gestão de reservas
+Monte a rede local: camareira fixa por região, eletricista e encanador de plantão, estoque de itens críticos. O gestor profissional vende tranquilidade ao proprietário porque tem operação real por trás.
 
-### Dashboard do parceiro
+**Prática:**
+- Implante check-in autônomo em 1 imóvel-piloto
+- Crie o checklist de limpeza de 40 itens
+- Formalize a rede de fornecedores com contatos de plantão
 
-- **Calendário**: visualize disponibilidade e reservas
-- **Mensagens**: centralize comunicação com hóspedes
-- **Reservas**: acompanhe status e pagamentos
+## Aula 3.2 — Comunicação automatizada com o hóspede
+Régua de mensagens que funciona: confirmação da reserva (boas-vindas + regras), D-3 (endereço, check-in, dicas), dia do check-in (código da fechadura), D+1 (está tudo bem?), check-out (instruções + pedido de avaliação). Automatize com templates no WhatsApp ou nas plataformas — mas mantenha tom humano.
 
-### Fluxo de reserva
+A mensagem D+1 é a mais importante: ela captura o problema antes que ele vire review negativo. Hóspede que reclama e é atendido avalia melhor que hóspede sem problema nenhum.
 
-1. **Hóspede pesquisa**: filtros, datas, preço
-2. **Hóspede reserva**: pagamento processado pelo Booking
-3. **Você confirma**: aceite ou recuse
-4. **Hóspede chega**: check-in
-5. **Hóspede sai**: check-out, avaliação
+**Prática:**
+- Escreva os 5 templates da régua
+- Automatize envio por data de reserva
+- Institua a regra: toda mensagem de hóspede respondida em <30min
 
-### Política de cancelamento
+## Aula 3.3 — Avaliações e reputação: o ativo que compõe juros
+Nos portais de temporada, a nota é o ranking: imóveis 4.8+ aparecem primeiro e podem cobrar 10-20% mais. A reputação se constrói com consistência (mesma experiência toda vez) e se protege com resposta profissional a toda avaliação — inclusive às negativas, que respondidas bem viram prova de seriedade.
 
-- **Flexível**: cancelamento até 24h antes
-- **Moderada**: cancelamento até 5 dias antes
-- **Rigorosa**: cancelamento até 7 dias antes
+Peça avaliação no momento de pico de satisfação: logo após o check-out, com link direto. E nunca compre ou fabrique reviews — as plataformas detectam padrões e punem com shadowban.
 
-### Exercício
-
-Configure a política de cancelamento mais adequada para o seu perfil de hóspedes.
-
-## Aula 3.2 — Precificação dinâmica
-
-### Estratégias Booking
-
-1. **Preço base**: valor médio da região
-2. **Multiplicador de temporada**:
-   - Alta temporada: +100% a +200%
-   - Baixa temporada: -30% a -50%
-3. **Mínimo de noites**: finais de semana, feriados
-4. **Descontos estratégicos**: estadias longas
-
-### Ferramentas
-
-- **PriceLabs**: automação completa
-- **Wheelhouse**: machine learning
-- **Booking Analytics**: dados da plataforma
-
-### Exemplo prático
-
-| Período | Preço base | Multiplicador | Preço final |
-|---------|-----------|---------------|-------------|
-| Janeiro (alta) | R$ 400 | +150% | R$ 1.000 |
-| Fevereiro (média) | R$ 400 | +50% | R$ 600 |
-| Março (baixa) | R$ 400 | -30% | R$ 280 |
-
-## Aula 3.3 — Eventos e picos
-
-### Calendário de picos no litoral
-
-| Mês | Evento | Impacto |
-|-----|--------|---------|
-| Janeiro | Verão, Reveillon | +200% |
-| Fevereiro | Carnaval | +150% |
-| Julho | Férias escolares | +50% |
-| Dezembro | Natal | +100% |
-
-### Como antecipar picos
-
-1. **Monitore eventos locais**: prefeituras, sites de turismo
-2. **Ajuste preços com 30 dias de antecedência**
-3. **Crie pacotes temáticos**: lua de mel, ano novo, carnaval
-
-### Exercício
-
-Configure preços para o Carnaval 2026 no seu imóvel.
-
-## Resumo
-
-- Gestão eficiente de reservas reduz trabalho manual.
-- Precificação dinâmica maximiza receita.
-- Antecipe picos para capturar demanda.
-
-## Checklist
-
-- [ ] Política de cancelamento definida
-- [ ] Tabela de preços criada
-- [ ] Ferramenta de automação escolhida
-- [ ] Eventos locais mapeados
-
-## Materiais para download
-
-- Planilha de precificação Booking
-- Template de política de cancelamento
-
-## Prompt de IA
-
-Atue como consultor Booking. Crie uma estratégia de precificação dinâmica para o meu imóvel no litoral.
+**Prática:**
+- Defina o ritual do pedido de avaliação pós-checkout
+- Responda 100% das avaliações em até 48h
+- Monitore nota média por imóvel mensalmente

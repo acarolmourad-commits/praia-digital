@@ -1,60 +1,34 @@
-# Módulo 4 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar primeiro imovel litoral com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 4 — Portfólio, Financiamento e Saída
 
-## Aula 4.1 — Métricas para acompanhar evolução e resultado
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Escalar com alavancagem consciente e planejar a saída desde a compra.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 4.1 — Alavancagem inteligente: usar o banco a seu favor
+Financiar um investimento parece contraditório, mas a matemática manda: se o imóvel rende 6% líquido + valorização e o crédito custa ~11% ao ano, o carry é negativo — porém o investidor alavanca o capital próprio e mantém liquidez para a próxima oportunidade.
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+Regra de segurança: a soma das parcelas não pode depender de ocupação perfeita. Reserve de 6 a 12 meses de parcela antes de alavancar. Quem quebra no imobiliário quebra por fluxo de caixa, não por patrimônio.
 
-## Aula 4.2 — Otimizações para aumentar rentabilidade ou desempenho
-Fundamentos, ferramentas e fluxos recomendados para primeiro imovel litoral no litoral.
+**Prática:**
+- Simule 1 compra alavancada com carry negativo explícito
+- Monte sua reserva de segurança (6-12 parcelas)
+- Defina seu limite de alavancagem
 
-**Ferramentas recomendadas:**
-- Dashboard de métricas
-- Planilha de rentabilidade
-- Sistema de gestão de tarefas
+## Aula 4.2 — Gestão de portfólio: quando segurar, vender ou trocar
+Revise o portfólio anualmente: cada imóvel precisa justificar sua presença (renda, valorização ou uso). O imóvel que valorizou muito e agora tem cap rate comprimido é candidato a venda e rolagem para mercado com yield melhor.
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+Sinais de venda: cap rate líquido abaixo do CDB, manutenção crescente, bairro em declínio relativo. Sinais de hold: infraestrutura chegando, estoque local encolhendo, renda subindo. Decida com planilha, não com apego.
 
-## Aula 4.3 — Escala: como crescer sem perder a qualidade
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Revise 1 imóvel: hold, vender ou melhorar?
+- Calcule o cap rate atual pelo valor de mercado de hoje (não o de compra)
+- Escreva os gatilhos de venda de cada ativo seu
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 4.3 — Impostos e estrutura: o que o investidor precisa saber
+Venda com lucro: ganho de capital de 15% a 22,5% sobre o lucro, com isenções possíveis (único imóvel até R$ 440 mil, venda de residencial para compra de outro em 180 dias). Aluguel recebido por pessoa física: carnê-leão mensal. Holding familiar: reduz custo de sucessão e pode otimizar IR, mas tem custo de manutenção — vale a partir de determinado patrimônio.
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+Erro comum: vender e "esquecer" o ganho de capital — a multa e os juros corroem o lucro. Consulte contador antes da venda, não depois.
 
-## Exercício
-Desenvolva um plano de crescimento para primeiro imovel litoral com metas mensuráveis.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- Dashboard de métricas
-- Planilha de rentabilidade
-- Sistema de gestão de tarefas
-
-## Prompt de IA
-Atue como estrategista de crescimento. Monte um plano de escala para primeiro imovel litoral com métricas e prazos: [dados do negócio].
+**Prática:**
+- Entenda as 2 principais isenções de ganho de capital
+- Regularize o carnê-leão se recebe aluguel como PF
+- Consulte 1 contador sobre seu caso específico

@@ -1,129 +1,34 @@
-# Módulo 1 — Fundamentos da Temporada no Litoral
+# Módulo 1 — O Negócio de Temporada no Litoral
 
-## Introdução
+## Objetivo do módulo
+Entender a economia da temporada e os números que sustentam a operação.
 
-Neste módulo você vai entender por que o mercado de temporada no litoral paulista é diferente de qualquer outro, como medir o potencial real do seu imóvel e qual a expectativa de retorno antes de investir tempo e dinheiro.
+## Aula 1.1 — A matemática da temporada: ocupação, ADR e RevPAR
+Três números governam a temporada: ADR (diária média), ocupação (% de noites vendidas) e RevPAR (ADR × ocupação — a receita real por imóvel). No litoral paulista, a alta temporada (15/dez a fev + feriados) concentra 50% a 60% da receita anual em ~90 dias.
 
-## Aula 1.1 — O mercado de temporada no litoral paulista
+Exemplo real: apartamento de 2 dorm. em Ubatuba, ADR de R$ 700 na alta e R$ 350 na baixa, ocupação anual de 38% → receita bruta ~R$ 62 mil/ano. Custos (plataformas 15-17%, limpeza, manutenção, condomínio, IPTU) consomem 35-45%. Apresentar essa matemática ao proprietário é o que separa o gestor profissional do "amigo que cuida".
 
-O mercado de temporada no litoral não é igual ao mercado de locação tradicional. Ele é influenciado por:
+**Prática:**
+- Calcule ADR, ocupação e RevPAR de 1 imóvel real
+- Monte a planilha de receita bruta x custos x líquido
+- Identifique os 90 dias críticos de receita no seu calendário
 
-- **Temporadas de alta e baixa**: verão, feriados prolongados, férias escolares.
-- **Perfil do hóspede**: famílias, casais, grupos de amigos, corporativos.
-- **Regulamentações municipais**: cada cidade tem regras específicas para aluguel por temporada.
-- **Sazonalidade climática**: chuvas, maresia, temperatura da água.
+## Aula 1.2 — Lei do Inquilinato e o contrato de temporada
+Locação de temporada (até 90 dias, com mobília) é regida pela Lei 8.245/91, art. 48. Diferenças críticas da locação residencial: pode exigir caução e pagamento antecipado, e não há renovação automática. Contrato escrito é obrigatório na prática — com check-in/check-out, regras de condomínio, inventário de mobília e multa por danos.
 
-### Particularidades por cidade
+Erro grave comum: usar contrato de locação residencial para temporada. Isso pode caracterizar locação de longo prazo e complicar desocupação. Use modelo específico de temporada, revisado por advogado.
 
-| Cidade | Pico | Valor médio diária | Ocupação média |
-|--------|------|-------------------|----------------|
-| Santos | Verão/janeiro | R$ 350-600 | 65-75% |
-| Guarujá | Verão/dezembro | R$ 400-700 | 60-70% |
-| Praia Grande | Verão/feriados | R$ 250-450 | 55-65% |
-| Bertioga | Ano todo/verão | R$ 300-550 | 50-60% |
-| Itanhaém | Férias/verão | R$ 200-400 | 45-55% |
-| Mongaguá | Feriados prolongados | R$ 180-350 | 40-50% |
-| São Vicente | Verão/janeiro | R$ 250-500 | 55-65% |
-| Peruíbe | Ano todo/férias | R$ 200-400 | 45-55% |
+**Prática:**
+- Revise seu contrato: é específico de temporada (Lei 8.245/91, art. 48)?
+- Inclua inventário fotográfico de mobília como anexo
+- Defina política de caução e danos por escrito
 
-### Exemplo real
+## Aula 1.3 — Posicionamento do imóvel: para quem você anuncia
+Imóvel de temporada bem posicionado tem público definido: família com crianças (segurança, cozinha, 2 quartos), casal romântico (vista, piscina), grupo de amigos (capacidade, churrasqueira) ou home-office de temporada (internet boa, silêncio). Cada público muda o anúncio, as fotos, o preço mínimo de noites e as regras.
 
-Um apartamento de 1 quarto em Santos, a 300m da praia, com wi-fi, ar-condicionado e garagem, faturou R$ 18.000 em janeiro de 2025 com taxa de ocupação de 80%. O investimento inicial em fotos profissionais e anúncio foi de R$ 1.200.
+O erro é anunciar "para todo mundo": anúncio genérico converte mal e atrai hóspede errado — o grupo de festa no imóvel de família é o pesadelo que gera reclamação de condomínio e review negativo.
 
-### O que você precisa saber antes de começar
-
-1. **Não existe "Airbnb do zero" sem planejamento**: você precisa definir público-alvo, diferencial e preço-base.
-2. **Localização > imóvel**: um apartamento simples na orla vende mais que uma cobertura longe da praia.
-3. **Fotos são 70% da decisão**: invista em fotos profissionais.
-
-## Aula 1.2 — Perfil do hóspede no litoral paulista
-
-### Tipos de hóspedes
-
-- **Famílias**: buscam segurança, proximidade da praia, cozinha equipada.
-- **Casais**: valorizam privacidade, vista mar, experiences românticas.
-- **Grupos de amigos**: querem agito, perto de bares/restaurantes, wi-fi rápido.
-- **Corporativos**: eventos, treinamentos, temporadas longas.
-
-### Como identificar seu público
-
-1. **Pesquise concorrentes**: veja avaliações de imóveis similares na sua região.
-2. **Analise dados de busca**: use o Google Trends para entender o que procuram.
-3. **Crie uma persona**: defina idade, renda, interesses e dores.
-
-### Exemplo de persona para Airbnb no litoral
-
-```
-Nome: Família Silva
-Idade: 35-45 anos
-Renda: R$ 8.000-15.000/mês
-Objetivo: férias de 7 dias em janeiro
-Dores: segurança, trânsito, hospedagem cara
-Desejos: conforto, localização, economia
-```
-
-## Aula 1.3 — ROI e expectativa de resultado
-
-### Como calcular o ROI do seu imóvel
-
-```
-ROI = (Receita anual - Custos anuais) / Investimento inicial × 100
-```
-
-### Custos típicos
-
-- **Limpeza**: R$ 150-300/hospedagem
-- **Manutenção**: R$ 200-500/mês
-- **Energia/água**: R$ 150-400/mês
-- **Internet**: R$ 100-150/mês
-- **Impostos**: variam por município
-
-### Receita esperada
-
-| Imóvel | Cidade | Investimento | Receita anual | ROI |
-|--------|--------|--------------|---------------|-----|
-| 1 quarto | Santos | R$ 5.000 | R$ 35.000 | 600% |
-| 2 quartos | Guarujá | R$ 8.000 | R$ 48.000 | 500% |
-| Flat | Praia Grande | R$ 4.000 | R$ 25.000 | 525% |
-
-### Expectativas realistas
-
-- **Mês 1-2**: aprendizado e ajustes
-- **Mês 3-4**: primeiras reservas
-- **Mês 5-6**: ocupação de 30-40%
-- **Mês 7-12**: ocupação de 50-70% se bem executado
-
-### Exercício
-
-Calcule o ROI do seu imóvel considerando:
-- Quanto você gastaria para preparar o imóvel?
-- Qual a diária que você cobraria?
-- Quantos dias por mês você espera alugar?
-
-## Resumo
-
-- O mercado de temporada no litoral é sazonal e segmentado.
-- Conhecer o perfil do hóspede é essencial para posicionar o imóvel.
-- ROI depende de localização, preparação e execução contínua.
-
-## Checklist
-
-- [ ] Defini o público-alvo do imóvel
-- [ ] Pesquisou concorrentes na região
-- [ ] Calculou custos e expectativa de receita
-- [ ] Identificou diferenciais do imóvel
-
-## Materiais para download
-
-- Planilha de cálculo de ROI
-- Template de persona de hóspede
-
-## Ferramentas recomendadas
-
-- Google Trends
-- Airbnb Analytics
-- Planilha de acompanhamento
-
-## Prompt de IA
-
-Atue como consultor de aluguel de temporada no litoral paulista. Faça um diagnóstico de viabilidade do meu imóvel considerando localização, público-alvo, custos e expectativa de receita.
+**Prática:**
+- Defina o público principal de cada imóvel da carteira
+- Reescreva 1 anúncio com foco total nesse público
+- Ajuste regras (nº mínimo de noites, horários) ao público

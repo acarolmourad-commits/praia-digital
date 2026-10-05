@@ -1,60 +1,34 @@
-# Módulo 4 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar marketing imobiliario com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 4 — Métricas e Rotina de Crescimento
 
-## Aula 4.1 — Métricas para acompanhar evolução e resultado
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Transformar marketing em sistema mensurável e previsível.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 4.1 — O painel mínimo de marketing do corretor
+Cinco números por semana: alcance, leads gerados, custo por lead, leads qualificados e vendas originadas. Com eles você calcula o que importa: quanto custa uma venda no seu marketing e qual canal merece mais recurso.
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+Regra de alocação: 70% do orçamento no canal que já produz venda, 20% no segundo melhor, 10% em experimentos. Marketing sem número é hobby; com número, é investimento.
 
-## Aula 4.2 — Otimizações para aumentar rentabilidade ou desempenho
-Fundamentos, ferramentas e fluxos recomendados para marketing imobiliario no litoral.
+**Prática:**
+- Monte o painel de 5 números (planilha simples)
+- Calcule seu custo por venda atual por canal
+- Realoque o orçamento na regra 70/20/10
 
-**Ferramentas recomendadas:**
-- Dashboard de métricas
-- Planilha de rentabilidade
-- Sistema de gestão de tarefas
+## Aula 4.2 — Rotina semanal de marketing em 3 horas
+Marketing sustentável para quem vende: segunda (1h) — revisar métricas e planejar a semana; quarta (1h) — produzir o conteúdo principal; sexta (1h) — agendar posts e responder comentários acumulados. O resto é Stories no fluxo do dia (bastidores custam zero horas extras).
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+Batching é o segredo: produzir 3 Reels em uma única manhã de visitas custa muito menos que 3 produções separadas. Grave sempre que estiver em um imóvel bonito.
 
-## Aula 4.3 — Escala: como crescer sem perder a qualidade
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Bloqueie as 3 horas semanais na agenda
+- Adote batching: grave 3 conteúdos por sessão
+- Use dias de visita como fonte de bastidores
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 4.3 — Case de marketing real no litoral
+Síntese de caso típico: corretora de Caraguatatuba parou de impulsionar fotos de imóveis e passou a publicar 3 Reels semanais de tours + conteúdo de bairros. Em 5 meses: perfil saiu de 800 para 4.200 seguidores locais, 30% dos leads passaram a vir do Instagram (custo zero), e o custo por lead das campanhas pagas caiu 40% porque os criativos viraram os tours que já performavam no orgânico.
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+Lições: orgânico bom alimenta o pago (teste criativos no orgânico primeiro), conteúdo local supera conteúdo genérico e constância de 5 meses é o preço de entrada do resultado.
 
-## Exercício
-Desenvolva um plano de crescimento para marketing imobiliario com metas mensuráveis.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- Dashboard de métricas
-- Planilha de rentabilidade
-- Sistema de gestão de tarefas
-
-## Prompt de IA
-Atue como estrategista de crescimento. Monte um plano de escala para marketing imobiliario com métricas e prazos: [dados do negócio].
+**Prática:**
+- Teste seus criativos no orgânico antes de pagar
+- Defina o compromisso mínimo de 5 meses
+- Documente sua evolução mês a mês

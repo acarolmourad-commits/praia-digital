@@ -1,60 +1,34 @@
-# Módulo 3 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar storytelling para corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 3 — Anúncios Pagos e Conversão
 
-## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Investir em tráfego com retorno mensurável.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 3.1 — Meta Ads para imobiliárias: estrutura de campanha
+Estrutura enxuta que funciona: campanha de leads com segmentação por raio nas cidades-alvo (inclua SP capital para imóveis de temporada — o comprador mora lá), criativo em vídeo do imóvel real e formulário com 3-4 perguntas de qualificação (orçamento, prazo, uso).
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+Erros que queimam verba: impulsionar post (botão azul) sem estrutura, segmentar "interesse em imóveis" (audiência fria e genérica) e formulário sem qualificação (lead de R$ 3 que não atende telefone). Meta de referência: custo por lead qualificado de R$ 8 a R$ 25 no litoral, dependendo do ticket.
 
-## Aula 3.2 — Caso real 2: como evitar erros custosos
-Fundamentos, ferramentas e fluxos recomendados para storytelling para corretores no litoral.
+**Prática:**
+- Pare todo impulsionamento sem estrutura hoje
+- Monte 1 campanha com formulário de qualificação
+- Meça custo por lead qualificado, não por lead bruto
 
-**Ferramentas recomendadas:**
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
+## Aula 3.2 — Landing pages e captura: o destino do anúncio
+Nunca mande tráfego pago para a home do site. Cada campanha precisa de página específica: título com a promessa, 3 provas (fotos reais, números, depoimento), formulário curto e WhatsApp visível.
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+Teste o essencial: título (o maior alavancador), imagem principal e número de campos do formulário. A cada 100 visitas, uma landing boa de imobiliário converte 5 a 15 leads; abaixo de 3, há problema de página ou de público.
 
-## Aula 3.3 — Lições aplicáveis ao seu contexto
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Audite: seus anúncios levam a páginas específicas?
+- Reduza seu formulário a 4 campos
+- Registre a taxa de conversão semanal
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 3.3 — WhatsApp Business: o motor de conversão
+No Brasil, a venda imobiliária se fecha no WhatsApp. Configure o Business: catálogo com imóveis em destaque, respostas rápidas para as 10 perguntas frequentes, etiquetas por etapa do funil e mensagem de ausência.
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+Regra de ouro: WhatsApp é canal de conversa, não de despejo — nada de listas de transmissão diárias com 20 imóveis. Envio segmentado (lead de temporada recebe temporada) e com contexto ("vi que você se interessou por X, surgiu Y no mesmo condomínio") converte; spam bloqueia.
 
-## Exercício
-Analise um caso real do mercado e adapte as lições para a sua realidade.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
-
-## Prompt de IA
-Atue como mentor experiente. Analise este caso real de storytelling para corretores no litoral e aponte 5 lições práticas: [descreva o caso].
+**Prática:**
+- Configure catálogo e respostas rápidas
+- Implante etiquetas por etapa do funil
+- Substitua transmissão em massa por envio segmentado

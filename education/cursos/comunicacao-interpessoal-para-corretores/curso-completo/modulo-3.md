@@ -1,60 +1,34 @@
-# Módulo 3 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar comunicacao interpessoal para corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 3 — Relacionamento de Longo Prazo
 
-## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Construir a base de clientes que volta e indica.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 3.1 — O CRM como memória do relacionamento
+Anote tudo: nomes dos filhos, time, motivo da compra, datas importantes, preferências. O corretor que liga no aniversário da compra e pergunta do cachorro pelo nome não é lembrado como vendedor — é lembrado como referência.
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+Segmente a base: clientes em processo, clientes pós-venda (12 meses), base quente (podem indicar) e base fria (nutrição trimestral). Cada grupo tem cadência e conteúdo próprios.
 
-## Aula 3.2 — Caso real 2: como evitar erros custosos
-Fundamentos, ferramentas e fluxos recomendados para comunicacao interpessoal para corretores no litoral.
+**Prática:**
+- Complete os dados pessoais dos 10 clientes mais recentes
+- Segmente sua base nos 4 grupos
+- Programe as datas de aniversário de compra
 
-**Ferramentas recomendadas:**
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
+## Aula 3.2 — Fidelização: cliente que compra de novo
+O cliente imobiliário volta: upgrade, imóvel para filho, investimento. O ciclo médio de recompra é de 5-8 anos — quem sumiu depois da escritura não participa da segunda venda.
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+Régua de longo prazo: contato semestral com valor real (valorização do bairro, oportunidade alinhada ao perfil, convite). E a regra de ouro da indicação: peça no momento do elogio, com facilidade total (seu contato pronto para encaminhar).
 
-## Aula 3.3 — Lições aplicáveis ao seu contexto
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Agende contatos semestrais para a base pós-venda
+- Crie seu "cartão de indicação" digital (contato pronto para compartilhar)
+- Mapeie quais clientes têm perfil de recompra em 3-5 anos
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 3.3 — Gestão de expectativas: o segredo da satisfação
+Quase toda decepção de cliente nasce de expectativa mal calibrada. Prometa o prazo realista com margem (documento em 10 dias? prometa 15 e entregue em 10), explique os riscos antes deles acontecerem e alinhe o que depende de você versus o que depende de terceiros (banco, cartório, construtora).
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+A fórmula da satisfação é simples: expectativa < entrega. O corretor que promete pouco e entrega muito coleciona fãs; o que promete tudo e entrega o normal coleciona reclamações.
 
-## Exercício
-Analise um caso real do mercado e adapte as lições para a sua realidade.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
-
-## Prompt de IA
-Atue como mentor experiente. Analise este caso real de comunicacao interpessoal para corretores no litoral e aponte 5 lições práticas: [descreva o caso].
+**Prática:**
+- Revise suas promessas-padrão: há margem nelas?
+- Adicione o mapa de riscos ao seu processo de venda
+- Prometa 15, entregue 10: teste na próxima semana

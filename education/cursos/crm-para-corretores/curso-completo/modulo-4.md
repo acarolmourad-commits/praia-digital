@@ -1,60 +1,24 @@
-# Módulo 4 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar crm para corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 4 — Tecnologia na Experiência do Cliente
 
-## Aula 4.1 — Métricas para acompanhar evolução e resultado
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Usar tecnologia para encantar: tours, assinatura digital e processos sem atrito.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 4.1 — Tour virtual e visita remota: vendendo a distância
+Grande parte dos compradores do litoral mora longe. O tour bem feito — vídeo guiado ao vivo por videochamada ou tour 360° — qualifica antes da visita presencial: quem vem depois do tour já vem quase decidido.
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+Roteiro do tour ao vivo: comece pela vista/ponto forte, mostre os pontos fracos proativamente (transparência gera confiança), termine na rua e no entorno. Grave (com permissão) para o cliente compartilhar com a família — decisão imobiliária é coletiva.
 
-## Aula 4.2 — Otimizações para aumentar rentabilidade ou desempenho
-Fundamentos, ferramentas e fluxos recomendados para crm para corretores no litoral.
+**Prática:**
+- Faça 1 tour ao vivo por videochamada esta semana
+- Defina o roteiro padrão do tour
+- Teste 1 ferramenta de tour 360° em um imóvel
 
-**Ferramentas recomendadas:**
-- Dashboard de métricas
-- Planilha de rentabilidade
-- Sistema de gestão de tarefas
+## Aula 4.2 — Assinatura digital e documentos sem papel
+Contratos com assinatura eletrônica (plataformas reconhecidas) têm validade jurídica e aceleram dias em horas — essencial quando o proprietário mora na capital e o comprador em outra cidade. Organize o fluxo: documento revisado → envio para assinatura → confirmação → arquivo em pasta digital do processo.
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+Combine com videoconferência para dúvidas: o pacote completo remoto (tour + proposta + assinatura) viabiliza vendas que antes morriam na logística de encontros.
 
-## Aula 4.3 — Escala: como crescer sem perder a qualidade
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
-
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
-
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
-
-## Exercício
-Desenvolva um plano de crescimento para crm para corretores com metas mensuráveis.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- Dashboard de métricas
-- Planilha de rentabilidade
-- Sistema de gestão de tarefas
-
-## Prompt de IA
-Atue como estrategista de crescimento. Monte um plano de escala para crm para corretores com métricas e prazos: [dados do negócio].
+**Prática:**
+- Escolha 1 plataforma de assinatura eletrônica
+- Monte o fluxo de assinatura remota passo a passo
+- Teste o fluxo completo em 1 operação

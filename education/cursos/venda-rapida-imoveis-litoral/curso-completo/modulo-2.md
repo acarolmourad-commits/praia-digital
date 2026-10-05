@@ -1,92 +1,34 @@
-# Módulo 2 — Preparação e Apresentação do Imóvel
+# Módulo 2 — Condução, Visita e Demonstração
 
-## Introdução
+## Objetivo do módulo
+Transformar visitas em decisões com preparação e roteiro.
 
-Neste módulo você vai aprender a preparar o imóvel para venda rápida, criar uma apresentação profissional e divulgar nos canais certos.
+## Aula 2.1 — Preparação da visita: o jogo se ganha antes
+Visita profissional começa na véspera: confirme horário e endereço, revise a ficha do lead (perfil, orçamento, objeções anteriores), prepare a ordem dos ambientes (terminar sempre no ponto mais forte do imóvel — a varanda com vista, nunca na área de serviço) e leve material de apoio: comparáveis, simulação de financiamento e estimativa de retorno se for investidor.
 
-## Aula 2.1 — Preparação do imóvel
+No litoral, detalhes matam visitas: chegue antes e verifique cheiros (umidade), iluminação e barulho da rua no horário da visita. Se houver ponto fraco evidente, prepare a resposta antes de ser perguntado.
 
-### O que fazer antes de anunciar
+**Prática:**
+- Crie checklist de pré-visita (12 itens)
+- Defina o roteiro de ambientes dos seus 3 imóveis principais
+- Prepare a resposta para o ponto fraco de cada um
 
-1. **Limpeza geral**: imóvel limpo vende mais
-2. **Pequenos reparos**: torneiras, pintura, iluminação
-3. **Despacho**: retire objetos pessoais
-4. **Home staging**: organize móveis para fotos
+## Aula 2.2 — Técnicas de condução durante a visita
+Durante a visita, fale menos que o cliente. Use a técnica das perguntas de confirmação: "essa cozinha atenderia os almoços de família que você mencionou?" — cada "sim" é um micro-fechamento. Observe o tempo que o cliente passa em cada ambiente: onde ele demora é onde está a decisão.
 
-### Home staging para venda
+Sinais de compra a monitorar: perguntas sobre documentação, prazo de entrega, condomínio, possibilidade de reforma e "o que preciso fazer para reservar?". Ao primeiro sinal, pare de apresentar e comece a conduzir o próximo passo.
 
-- **Sala**: sofá, mesa, iluminação
-- **Quartos**: cama, travesseiros, cortinas
-- **Cozinha**: organize armários, retire eletrodomésticos extras
-- **Banheiro**: toalhas limpas, produtos organizados
+**Prática:**
+- Liste 5 perguntas de confirmação para seu imóvel principal
+- Treine identificar 4 sinais de compra
+- Defina sua frase de transição visita→proposta
 
-### Exemplo prático
+## Aula 2.3 — O fechamento da visita: próximo passo claro
+Visita sem próximo passo agendado é visita perdida. Antes de sair do imóvel, defina: ou o cliente faz proposta, ou agenda segunda visita, ou recebe simulação de financiamento até determinada hora no dia seguinte — com data e hora marcadas para a conversa de retorno.
 
-Um apartamento em Praia Grande com home staging simples (sofá novo, cortinas, iluminação) vendeu 40% mais rápido que imóveis similares sem preparação.
+Regra de ouro: quem controla a agenda controla a venda. "Eu te mando e você vê com calma" entrega o controle; "amanhã às 10h te ligo com a simulação e conversamos" mantém o processo vivo.
 
-## Aula 2.2 — Fotos e apresentação profissional
-
-### Fotos que vendem
-
-- **Quantidade**: mínimo 20 fotos
-- **Ordem**: sala → quartos → banheiro → cozinha → área externa
-- **Qualidade**: luz natural, lente grande angular
-- **Destaques**: vista mar, varanda, localização
-
-### Tour virtual
-
-- **Matterport**: tour 3D profissional
-- **Google Street View**: tour simples
-- **Vídeo**: walkthrough de 1-2 minutos
-
-### Descrição que converte
-
-Estrutura:
-1. **Hook**: 1 frase que desperta interesse
-2. **Diferenciais**: lista bullet points
-3. **Localização**: proximidade com pontos turísticos
-4. **Documentação**: regularizada
-5. **Call-to-action**: "Agende visita"
-
-## Aula 2.3 — Divulgação nos canais certos
-
-### Canais de venda
-
-1. **Imobiliárias locais**: acesso a base de clientes
-2. **Portais imobiliários**: Zap, Viva Real, OLX
-3. **Redes sociais**: Facebook, Instagram, WhatsApp
-4. **Site próprio**: se você tem tráfego
-
-### Estratégia de divulgação
-
-1. **Primeira semana**: anúncio em 3 plataformas
-2. **Segunda semana**: boost em redes sociais
-3. **Terceira semana**: contato com imobiliárias
-4. **Quarta semana**: reavaliação de preço
-
-### Exercício
-
-Crie um plano de divulgação de 4 semanas para o seu imóvel.
-
-## Resumo
-
-- Preparação profissional aumenta percepção de valor.
-- Fotos e descrição são 70% da decisão.
-- Divulgação multicanal acelera a venda.
-
-## Checklist
-
-- [ ] Imóvel preparado e limpo
-- [ ] Fotos profissionais tiradas
-- [ ] Descrição otimizada
-- [ ] Anúncios criados nos canais
-
-## Materiais para download
-
-- Checklist de preparação de imóvel
-- Template de descrição de venda
-- Guia de divulgação
-
-## Prompt de IA
-
-Atue como consultor imobiliário. Crie um plano de preparação e divulgação para vender meu imóvel no litoral em até 30 dias.
+**Prática:**
+- Padronize os 3 próximos passos possíveis pós-visita
+- Nunca encerre contato sem data/hora do seguinte
+- Registre no CRM o compromisso assumido pelo cliente

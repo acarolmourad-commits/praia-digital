@@ -1,109 +1,34 @@
-# Módulo 2 — Métricas de Valorização e Rentabilidade
+# Módulo 2 — Análise de Oportunidades
 
-## Introdução
+## Objetivo do módulo
+Avaliar imóveis com planilha e critério, não com achismo.
 
-Neste módulo você vai aprender a calcular valorização imobiliária, medir rentabilidade e entender como o mercado do litoral se comporta ao longo do tempo.
+## Aula 2.1 — A ficha de análise: 12 dados antes de qualquer proposta
+Antes de propor: valor pedido x valor de mercado (comparáveis reais), m² privativo, custo de reforma estimado, IPTU, condomínio, potencial de aluguel anual e de temporada, liquidez do bairro (tempo médio de venda), pendências documentais, zoneamento, riscos ambientais (litoral: recuo de maré, áreas de preservação) e motivação real do vendedor.
 
-## Aula 2.1 — Valorização imobiliária
+A motivação do vendedor vale ouro: inventário, mudança de cidade, imóvel parado há anos — cada uma dessas situações abre espaço real de negociação de 10% a 20%.
 
-### O que é valorização?
+**Prática:**
+- Monte sua ficha de análise com os 12 dados
+- Aplique em 3 imóveis esta semana
+- Crie o hábito: nenhuma proposta sem ficha completa
 
-A valorização é o aumento do valor do imóvel ao longo do tempo, influenciado por:
+## Aula 2.2 — Onde está o valor no litoral: leitura micro dos bairros
+Dentro da mesma cidade, a diferença de retorno entre bairros chega a 3x. Analise: frente-mar x quadra intermediária (frente-mar valoriza mais, mas a quadra do lado tem yield melhor), comércio e serviços andáveis (critério nº 1 de locação), perfil do turista do bairro e estoque de lançamentos (muita oferta nova pressiona o usado).
 
-- **Infraestrutura**: novos empreendimentos, asfalto, iluminação
-- **Demanda**: turismo, população, empresas
-- **Política**: plano diretor, incentivos fiscais
-- **Acessos**: rodovias, aeroportos, transporte público
+Ferramenta: o mapa de calor pessoal. Rode os bairros em dia de semana à noite — rua vazia às 20h em janeiro é sinal de bairro puramente sazonal; rua viva indica moradia, serviços e liquidez o ano inteiro.
 
-### Como calcular valorização
+**Prática:**
+- Monte seu mapa de calor: 5 bairros, notas de 0-10 em 5 critérios
+- Visite 1 bairro-alvo em dia de semana à noite
+- Compare yield de frente-mar x intermediária em 1 cidade
 
-```
-Valorização = (Valor atual - Valor de compra) / Valor de compra × 100
-```
+## Aula 2.3 — Due diligence documental do investidor
+Antes de fechar: matrícula atualizada (ônus, hipotecas, ações), certidões dos vendedores (federais, estaduais, trabalhistas — dívida trabalhista do vendedor pode atingir o imóvel), IPTU e condomínio quitados, habite-se/averbação de construção e, no litoral, verificação de área de marinha (terreno de marinha tem taxa anual e regras próprias).
 
-### Exemplo prático
+Custo de uma due diligence com despachante/advogado: R$ 1.500 a R$ 3.000. Custo de pular essa etapa: potencialmente o imóvel inteiro.
 
-| Ano | Valor m² | Valorização acumulada |
-|-----|----------|----------------------|
-| 2020 | R$ 6.000 | - |
-| 2021 | R$ 6.800 | +13% |
-| 2022 | R$ 7.500 | +25% |
-| 2023 | R$ 8.200 | +37% |
-| 2024 | R$ 8.900 | +48% |
-
-### Fatores que aceleram valorização
-
-1. **Anúncios de investimentos**: novo resort, ponte, aeroporto
-2. **Regularização fundiária**: segurança jurídica
-3. **Aumento de demanda**: Airbnb, investidores
-4. **Melhoria de acessos**: novas rodovias, transporte
-
-## Aula 2.2 — Rentabilidade por tipo de investimento
-
-### Tipos de investimento
-
-1. **Compra para venda**: flipping, médio prazo
-2. **Compra para locação**: renda mensal, longo prazo
-3. **Temporada**: alta rentabilidade, sazonalidade
-4. **Misto**: temporada + anual
-
-### Cálculo de rentabilidade
-
-```
-ROI anual = (Receita anual - Custos anuais) / Investimento total × 100
-```
-
-### Comparativo por cidade
-
-| Cidade | Compra/venda | Locação anual | Temporada | Misto |
-|--------|--------------|---------------|-----------|-------|
-| Santos | 8-12% | 4-6% | 6-10% | 7-11% |
-| Guarujá | 10-15% | 5-7% | 8-12% | 9-13% |
-| Praia Grande | 12-18% | 4-6% | 7-11% | 8-12% |
-| Bertioga | 10-14% | 3-5% | 9-14% | 8-12% |
-
-### Exercício
-
-Calcule o ROI de um imóvel em Santos considerando compra, reforma e locação por temporada.
-
-## Aula 2.3 — Indicadores avançados
-
-### Indicadores-chave
-
-1. **Valorização anual**: % de aumento por ano
-2. **Rentabilidade líquida**: receita - custos
-3. **Taxa de ocupação**: dias alugados / total de dias
-4. **Payback**: tempo para recuperar investimento
-5. **Cap rate**: receita / valor do imóvel
-
-### Análise de risco
-
-- **Risco baixo**: imóvel na orla, documentação ok, demanda alta
-- **Risco médio**: imóvel em expansão, infraestrutura prometida
-- **Risco alto**: área irregular, demanda incerta
-
-### Exercício
-
-Calcule 5 indicadores para um imóvel do litoral.
-
-## Resumo
-
-- Valorização depende de infraestrutura e demanda.
-- Rentabilidade varia por tipo de investimento.
-- Indicadores ajudam a comparar oportunidades.
-
-## Checklist
-
-- [ ] Valorização histórica pesquisada
-- [ ] ROI calculado por cenário
-- [ ] Indicadores mapeados
-- [ ] Risco avaliado
-
-## Materiais para download
-
-- Planilha de cálculo de rentabilidade
-- Tabela de indicadores por cidade
-
-## Prompt de IA
-
-Atue como analista de investimentos imobiliários. Calcule a rentabilidade e valorização de um imóvel no litoral paulista.
+**Prática:**
+- Crie seu checklist documental de compra
+- Tenha 1 despachante e 1 advogado parceiros
+- Verifique o que é área de marinha nas suas cidades

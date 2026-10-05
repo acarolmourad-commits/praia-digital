@@ -1,60 +1,34 @@
-# Módulo 3 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar crm para corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 3 — Segurança Digital e LGPD
 
-## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Proteger dados de clientes e a operação digital.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 3.1 — LGPD na prática do corretor
+Você coleta dados pessoais sensíveis (renda, documentos, CPF). A LGPD exige: finalidade clara (coletar só o necessário para a negociação), segurança (senhas, dispositivos protegidos, nada de documentos em grupo de WhatsApp) e direito do titular (se pedir para apagar, apague).
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+Prática segura: pasta digital por cliente com acesso restrito, compartilhamento por link com validade, e política simples informando como os dados são usados. Vazamento de dados de clientes é dano de reputação que não se recupera.
 
-## Aula 3.2 — Caso real 2: como evitar erros custosos
-Fundamentos, ferramentas e fluxos recomendados para crm para corretores no litoral.
+**Prática:**
+- Audite onde estão os documentos dos clientes hoje
+- Pare de receber documentos por WhatsApp sem organização
+- Escreva sua política de uso de dados em 5 linhas
 
-**Ferramentas recomendadas:**
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
+## Aula 3.2 — Segurança das contas: o básico que evita o desastre
+Ative verificação em duas etapas em WhatsApp, e-mail, redes sociais e banco — sem exceção. Senha única por serviço (gerenciador de senhas resolve). E cuidado com o golpe do WhatsApp clonado, comum contra corretores: o golpista se passa por você e pede "taxa de reserva" aos seus clientes.
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+Previna com comunicação proativa: informe no primeiro contato que você nunca pede valores por WhatsApp antes de contrato, e qual é seu número oficial. Cliente avisado não cai.
 
-## Aula 3.3 — Lições aplicáveis ao seu contexto
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Ative 2FA em todas as contas hoje
+- Instale um gerenciador de senhas
+- Inclua o aviso anti-golpe no primeiro atendimento
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 3.3 — Backup e continuidade: seu negócio não cabe em um celular
+Sua carteira de contatos, contratos e histórico de clientes é seu ativo mais valioso — e provavelmente está em um único celular. Regra 3-2-1: 3 cópias, 2 mídias, 1 fora (nuvem). Backup automático de fotos e conversas, exportação mensal do CRM e documentos em nuvem com acesso de segundo fator.
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+Teste o desastre antes dele: e se o celular sumir hoje? Se a resposta envolve pânico, seu plano de continuidade ainda não existe.
 
-## Exercício
-Analise um caso real do mercado e adapte as lições para a sua realidade.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
-
-## Prompt de IA
-Atue como mentor experiente. Analise este caso real de crm para corretores no litoral e aponte 5 lições práticas: [descreva o caso].
+**Prática:**
+- Ative backup automático de fotos e conversas
+- Exporte o CRM mensalmente
+- Faça o teste do celular perdido (mentalmente)

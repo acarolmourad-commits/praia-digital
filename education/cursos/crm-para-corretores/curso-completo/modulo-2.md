@@ -1,60 +1,34 @@
-# Módulo 2 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar crm para corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 2 — IA Aplicada ao Dia a Dia
 
-## Aula 2.1 — Passo a passo para aplicar crm para corretores na prática
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Usar inteligência artificial como assistente produtiva, com revisão humana.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 2.1 — IA para descrições e conteúdo de imóveis
+A IA gera em segundos o que levava uma hora: descrição de anúncio, post de rede social, resposta a perguntas frequentes. O fluxo profissional: dê à IA a ficha técnica do imóvel (dormitórios, m², diferenciais, bairro) + o público-alvo + o tom desejado; receba o rascunho; revise dados e personalize.
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+Regra inviolável: a IA escreve, você confere. Erro de dado em anúncio (metragem errada, condomínio inventado) vira problema jurídico. Use a IA para velocidade e estilo; a responsabilidade pelo fato é sua.
 
-## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
-Fundamentos, ferramentas e fluxos recomendados para crm para corretores no litoral.
+**Prática:**
+- Crie seu prompt padrão de descrição (ficha + público + tom)
+- Gere e revise 3 descrições hoje
+- Compare tempo: antes x com IA
 
-**Ferramentas recomendadas:**
-- CRM de atendimento
-- Planilha de acompanhamento
-- Ferramenta de automação de mensagens
+## Aula 2.2 — IA para qualificação e atendimento inicial
+Assistentes de IA podem conduzir o primeiro atendimento 24/7: responder sobre o imóvel, qualificar (orçamento, prazo, perfil) e agendar visita. O lead das 23h de domingo é atendido na hora — e chega qualificado para você na segunda de manhã.
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+Cuidados: deixe claro que é um assistente virtual, defina o ponto de transferência para humano (proposta, negociação, reclamação) e revise semanalmente as conversas para corrigir respostas. IA mal configurada promete o que o imóvel não tem.
 
-## Aula 2.3 — Automação e fluxos que economizam horas por semana
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Mapeie as 10 perguntas que todo lead faz
+- Defina os pontos de transferência obrigatória para humano
+- Revise conversas semanalmente nos primeiros 60 dias
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 2.3 — Análise de dados com IA: decisões mais rápidas
+Use IA para ler dados: cole sua planilha de leads e peça padrões ("qual origem converte mais?", "em qual etapa perco mais leads?"), ou peça comparativos de bairros com os dados que você coletou. A IA enxerga padrões que a planilha esconde.
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+Limite importante: a IA só analisa o que você fornece — dado ruim gera conclusão ruim. Mantenha o CRM limpo e padronizado para que a análise valha alguma coisa.
 
-## Exercício
-Monte um plano prático de crm para corretores para os próximos 30 dias, com ações diárias e semanais.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- CRM de atendimento
-- Planilha de acompanhamento
-- Ferramenta de automação de mensagens
-
-## Prompt de IA
-Atue como consultor de crm para corretores. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].
+**Prática:**
+- Exporte seus dados de leads e peça 3 análises à IA
+- Padronize os campos do CRM (origem, etapa, motivo de perda)
+- Tome 1 decisão do mês baseada nesses dados

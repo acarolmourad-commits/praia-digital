@@ -1,60 +1,34 @@
-# Módulo 1 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar financiamento imobiliario com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 1 — Sistemas e Regras do Financiamento
 
-## Aula 1.1 — Visão geral do mercado de financiamento imobiliario no litoral paulista
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Dominar as regras do jogo: SFH, SFI, amortização e os programas habitacionais.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 1.1 — SFH, SFI e Minha Casa Minha Vida: o mapa completo
+O SFH (Sistema Financeiro da Habitação) usa recursos da poupança e do FGTS, com taxas mais baixas e teto de valor de imóvel (R$ 1,5 milhão nas grandes regiões metropolitanas). Acima disso, o crédito é SFI — recursos livres dos bancos, taxas maiores, sem subsídio.
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+O Minha Casa Minha Vida (faixas por renda familiar) oferece subsídio e taxas reduzidas, mas tem limites de valor do imóvel e regras de enquadramento — verifique os valores vigentes, que são atualizados periodicamente. No litoral, atenção: imóveis de temporada e casas em condomínio de alto padrão raramente se enquadram; já apartamentos compactos em Praia Grande, Mongaguá e Peruíbe frequentemente sim.
 
-## Aula 1.2 — Conceitos essenciais: termos, métricas e particularidades locais
-Fundamentos, ferramentas e fluxos recomendados para financiamento imobiliario no litoral.
+**Prática:**
+- Monte uma tabela de enquadramento: SFH x SFI x MCMV com tetos atuais
+- Verifique o teto do MCMV vigente nas cidades onde você atua
+- Identifique 3 imóveis da sua carteira enquadráveis no MCMV
 
-**Ferramentas recomendadas:**
-- Portal oficial de imóveis do litoral
-- Planilha de diagnóstico
-- Consulta de matrícula online
+## Aula 1.2 — Tabela Price x SAC na prática (com números)
+Na Price, a parcela é fixa; no SAC, a amortização é fixa e a parcela decresce. Exemplo: R$ 300.000 a 10% a.a. (≈0,797% a.m.) por 360 meses — Price: parcela fixa de ~R$ 2.633; SAC: primeira parcela ~R$ 3.225, última ~R$ 840. Juros totais: Price ≈ R$ 648 mil; SAC ≈ R$ 542 mil.
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+Regra prática para o cliente: se a renda comporta a parcela inicial do SAC (os bancos exigem comprometimento de até 30% da renda), o SAC economiza juros; se o orçamento é apertado no início, a Price cabe no bolso. Explique isso com a simulação na mão e você vira consultor, não vendedor.
 
-## Aula 1.3 — Estudo de caso real: como um aluno aplicou o método e obteve resultado em 30 dias
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Refaça a simulação acima na calculadora ou planilha
+- Prepare 1 simulação Price x SAC para cada faixa de preço da sua carteira
+- Treine explicar a diferença em 60 segundos
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 1.3 — FGTS, subsídio e composição de renda
+O FGTS pode ser usado para entrada, amortização ou pagamento de parcelas, desde que o comprador tenha 3 anos de registro, não tenha imóvel na mesma cidade e não tenha financiamento ativo no SFH. A composição de renda permite somar renda de cônjuge, e alguns bancos aceitam parentes.
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+Detalhe que reprova: renda informal sem comprovação. Autônomos devem organizar extratos, declaração de IR ou Decore feita por contador antes de simular. Orientar o cliente nessa preparação vale mais que qualquer desconto.
 
-## Exercício
-Faça o diagnóstico do seu cenário atual em financiamento imobiliario: liste pontos fortes, fracos, oportunidades e ameaças.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- Portal oficial de imóveis do litoral
-- Planilha de diagnóstico
-- Consulta de matrícula online
-
-## Prompt de IA
-Atue como especialista em financiamento imobiliario no litoral paulista. Faça um diagnóstico personalizado com base nestas respostas: [insira suas respostas].
+**Prática:**
+- Monte checklist de elegibilidade FGTS (3 regras)
+- Liste os documentos de renda para CLT, autônomo e aposentado
+- Tenha contato de 1 contador parceiro para Decore

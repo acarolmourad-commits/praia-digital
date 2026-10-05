@@ -1,5 +1,6 @@
 # Sumário do Curso: Comunicacao Interpessoal Para Corretores
-- Módulo 1: Fundamentos
-- Módulo 2: Aplicação Prática
-- Módulo 3: Casos Reais
-- Módulo 4: Crescimento
+
+- Módulo 1: Fundamentos do Atendimento Imobiliário
+- Módulo 2: Gestão de Conflitos e Momentos Difíceis
+- Módulo 3: Relacionamento de Longo Prazo
+- Módulo 4: Excelência Operacional do Atendimento

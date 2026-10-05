@@ -1,60 +1,34 @@
-# Módulo 1 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar comprar imovel praia sem golpes com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 1 — Fundamentos do Investimento em Imóveis
 
-## Aula 1.1 — Visão geral do mercado de comprar imovel praia sem golpes no litoral paulista
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Construir a base conceitual para investir com método, não com impulso.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 1.1 — Por que imóvel: retorno, proteção e alavancagem
+O imóvel combina três motores que nenhum outro ativo popular entrega junto: renda (aluguel), valorização (longo prazo) e alavancagem (você controla um ativo de R$ 500 mil com R$ 100 mil de entrada e financiamento). No litoral paulista, soma-se um quarto motor: renda de temporada, que em bons imóveis paga o custo de manter e ainda sobra.
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+Mas imóvel tem custos que o entusiasta ignora: liquidez baixa (vender leva meses), custo de transação alto (ITBI, cartório, comissão — 8% a 10% na ponta de compra+venda) e vacância. O investidor profissional só compra quando os números absorvem esses custos.
 
-## Aula 1.2 — Conceitos essenciais: termos, métricas e particularidades locais
-Fundamentos, ferramentas e fluxos recomendados para comprar imovel praia sem golpes no litoral.
+**Prática:**
+- Liste os 4 motores de retorno de 1 imóvel que você acompanha
+- Calcule o custo total de transação (compra+venda) dele
+- Defina seu horizonte mínimo de permanência (regra: 5 anos)
 
-**Ferramentas recomendadas:**
-- Portal oficial de imóveis do litoral
-- Planilha de diagnóstico
-- Consulta de matrícula online
+## Aula 1.2 — Os indicadores essenciais: cap rate, yield e payback
+Cap rate = aluguel anual líquido ÷ valor do imóvel. No litoral, imóveis residenciais giram entre 0,35% e 0,55% ao mês de aluguel bruto (4% a 6,5% ao ano); temporada bem operada pode entregar 6% a 10% ao ano líquido, com mais trabalho e risco.
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+Yield bruto engana: desconte IPTU, condomínio, manutenção (regra prática: 5% do valor do imóvel a cada 10 anos) e vacância (1 mês/ano na locação anual). Payback simples = valor ÷ renda líquida anual; acima de 20 anos no residencial exige justificativa pela valorização esperada.
 
-## Aula 1.3 — Estudo de caso real: como um aluno aplicou o método e obteve resultado em 30 dias
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Calcule cap rate bruto e líquido de 2 imóveis reais
+- Monte planilha com IPTU, condomínio, manutenção e vacância
+- Defina seu cap rate mínimo de compra
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 1.3 — Os ciclos do mercado imobiliário do litoral
+O mercado do litoral tem dois ciclos sobrepostos: o macro (juros, crédito, renda — financiamento barato infla preços) e o local (obras de infraestrutura, veraneio, lançamentos). Exemplos locais: a duplicação da Tamoios valorizou Caraguatatuba e Ubatuba; o polo de cruzeiros pressionou Santos.
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+Regra do investidor: compre no ciclo de juros altos (menos competição, vendedores flexíveis) e venda no ciclo de juros baixos. Quem espera "a certeza" compra no topo junto com a manchete de jornal.
 
-## Exercício
-Faça o diagnóstico do seu cenário atual em comprar imovel praia sem golpes: liste pontos fortes, fracos, oportunidades e ameaças.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- Portal oficial de imóveis do litoral
-- Planilha de diagnóstico
-- Consulta de matrícula online
-
-## Prompt de IA
-Atue como especialista em comprar imovel praia sem golpes no litoral paulista. Faça um diagnóstico personalizado com base nestas respostas: [insira suas respostas].
+**Prática:**
+- Mapeie 2 obras de infraestrutura em andamento nas suas cidades
+- Acompanhe a taxa básica de juros e o volume de crédito imobiliário
+- Escreva sua tese de compra para os próximos 24 meses

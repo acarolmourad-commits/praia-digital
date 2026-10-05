@@ -1,5 +1,6 @@
-# Sumário do Curso: Funil De Vendas
-- Módulo 1: Fundamentos
-- Módulo 2: Aplicação Prática
-- Módulo 3: Casos Reais
-- Módulo 4: Crescimento
+# Sumário do Curso: Funil de Vendas para Corretores
+
+- Módulo 1: Fundamentos da Venda Consultiva
+- Módulo 2: Condução, Visita e Demonstração
+- Módulo 3: Objeções e Negociação
+- Módulo 4: Funil de Vendas Imobiliário

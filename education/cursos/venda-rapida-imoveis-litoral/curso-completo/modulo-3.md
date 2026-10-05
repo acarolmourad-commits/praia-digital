@@ -1,99 +1,34 @@
-# Módulo 3 — Negociação e Fechamento
+# Módulo 3 — Objeções e Negociação
 
-## Introdução
+## Objetivo do módulo
+Tratar objeções como pedidos de informação e conduzir negociações ganha-ganha.
 
-Neste módulo você vai aprender a receber ofertas, negociar com inteligência e fechar a venda com segurança jurídica.
+## Aula 3.1 — As 6 objeções que dominam o mercado do litoral
+1) "Está caro" — quase sempre é valor não construído, não preço; 2) "Vou pensar" — falta informação ou há objeção oculta; 3) "Preciso falar com meu cônjuge" — você apresentou para o decisor errado ou não envolveu ambos; 4) "Vou esperar baixar" — mostre o histórico de valorização do bairro e o custo de oportunidade; 5) "Não tenho entrada" — apresente alternativas reais (FGTS, financiamento direto com construtora, imóvel de menor valor); 6) "O condomínio é alto" — compare com o custo de manter casa de praia própria (IPTU, segurança, manutenção).
 
-## Aula 3.1 — Recebendo e avaliando ofertas
+Para cada uma, a técnica base é a mesma: valide ("entendo, faz sentido"), isole ("se resolvermos isso, fechamos?") e responda com evidência.
 
-### Tipos de ofertas
+**Prática:**
+- Escreva sua resposta para cada uma das 6 objeções
+- Treine validar-isolar-responder em role-play
+- Registre no CRM qual objeção mais aparece nos seus leads
 
-- **À vista**: maior desconto, menor risco
-- **Financiamento**: prazo maior, juros para o comprador
-- **Permuta**: troca por outro imóvel
-- **Parcelamento direto**: risco maior, controle do vendedor
+## Aula 3.2 — Negociação de preço: protegendo o valor sem perder o cliente
+Nunca aceite nem recuse a primeira proposta imediatamente. A técnica do recuo gradual: cada concessão sua deve ser menor que a anterior e acompanhada de uma contrapartida (prazo, entrada maior, inclusão de mobília). Se o cliente pede 10% de desconto, conceda no máximo em etapas: 3%, depois 2%, depois 1% — a curva decrescente sinaliza o limite.
 
-### Como avaliar uma oferta
+E lembre: quem fala o primeiro número perde a ancoragem, mas quem ancora bem define o campo da negociação. Em vendas para investidores, ancore no retorno; para famílias, ancore no estilo de vida.
 
-1. **Preço**: compare com o mercado
-2. **Condição de pagamento**: risco de inadimplência
-3. **Prazo**: tempo para concretizar
-4. **Garantias**: entrada, documentos, seguros
+**Prática:**
+- Defina seus limites de concessão por imóvel antes de qualquer proposta
+- Monte tabela de contrapartidas possíveis (prazo, entrada, mobília, documentação)
+- Pratique a frase: "posso trabalhar esse valor se ajustarmos X"
 
-### Tabela de negociação
+## Aula 3.3 — Fechamento: as 5 técnicas essenciais
+1) Fechamento direto — quando os sinais são claros, peça: "vamos reservar?"; 2) Fechamento alternativo — "prefere assinar sexta ou segunda?"; 3) Fechamento por resumo — recapitule os 3 pontos decisivos e conclua; 4) Fechamento de urgência legítima — apenas com urgência real (outra proposta em análise, fim de condição); urgência fabricada destrói confiança; 5) Fechamento por eliminação — remova a última objeção e confirme.
 
-| Oferta | Avaliação | Ação |
-|--------|-----------|------|
-| Acima de 95% do preço | Aceitar | Contraoferta mínima |
-| 90-95% do preço | Negociar | Contraoferta com prazo |
-| 85-90% do preço | Avaliar | Contraoferta com condições |
-| Abaixo de 85% | Recusar | Manter preço |
+Depois do "sim", silêncio e ação: encaminhe documentação imediatamente. O período entre o aceite e a assinatura é onde morrem 20% das vendas.
 
-## Aula 3.2 — Técnicas de negociação
-
-### Princípios básicos
-
-1. **Escute primeiro**: entenda as necessidades do comprador
-2. **Justifique o preço**: dados de mercado, diferenciais
-3. **Crie valor**: destaque benefícios, não apenas características
-4. **Seja flexível**: prazo, forma de pagamento
-5. **Mantenha calma**: negociação é processo, não pressa
-
-### Objeções comuns
-
-| Objeção | Resposta |
-|---------|----------|
-| "Muito caro" | "Compare com imóveis similares na região" |
-| "Preciso de desconto" | "Posso flexibilizar o prazo de pagamento" |
-| "Vou pensar" | "Posso reservar por 48h com sinal" |
-| "Outro imóvel é melhor" | "Cada imóvel tem seu diferencial, vamos visitar" |
-
-### Exercício
-
-Pratique uma simulação de negociação com um colega.
-
-## Aula 3.3 — Documentação e fechamento
-
-### Documentos necessários
-
-- **Vendedor**: RG, CPF, certidão de nascimento/casamento, comprovante de residência
-- **Imóvel**: matrícula, IPTU, certidão negativa
-- **Comprador**: RG, CPF, comprovante de renda, certidão de casamento
-
-### Tipos de contrato
-
-1. **Compromisso de compra e venda**: pré-contrato com sinal
-2. **Contrato de compra e venda**: definitivo
-3. **Escritura**: formalização em cartório
-
-### Segurança jurídica
-
-- **Análise de documentação**: verifique matrícula e pendências
-- **Cláusulas de proteção**: multa, arrependimento, vícios
-- **Registro em cartório**: essencial para validade
-
-### Exercício
-
-Liste os documentos necessários para vender o seu imóvel e verifique se estão em dia.
-
-## Resumo
-
-- Avalie ofertas com base em dados de mercado.
-- Negociação é sobre criar valor, não apenas preço.
-- Documentação e segurança jurídica são essenciais.
-
-## Checklist
-
-- [ ] Oferta avaliada com base no mercado
-- [ ] Técnicas de negociação praticadas
-- [ ] Documentos reunidos
-- [ ] Advogado consultado
-
-## Materiais para download
-
-- Template de contrato de compra e venda
-- Checklist de documentação
-
-## Prompt de IA
-
-Atue como consultor imobiliário. Crie um roteiro de negociação e fechamento para vender meu imóvel no litoral com segurança.
+**Prática:**
+- Identifique qual técnica combina com seu estilo e treine-a até naturalizar
+- Cronometre: do aceite verbal ao envio de documentos, máximo 2 horas
+- Monitore sua taxa de perda pós-aceite

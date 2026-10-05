@@ -1,101 +1,34 @@
-# Módulo 1 — Fundamentos da Análise de Rentabilidade
+# Módulo 1 — Fundamentos do Investimento em Imóveis
 
-## Introdução
+## Objetivo do módulo
+Construir a base conceitual para investir com método, não com impulso.
 
-Neste módulo você vai aprender a calcular e analisar a rentabilidade de investimentos imobiliários no litoral, identificando as melhores oportunidades de retorno.
+## Aula 1.1 — Por que imóvel: retorno, proteção e alavancagem
+O imóvel combina três motores que nenhum outro ativo popular entrega junto: renda (aluguel), valorização (longo prazo) e alavancagem (você controla um ativo de R$ 500 mil com R$ 100 mil de entrada e financiamento). No litoral paulista, soma-se um quarto motor: renda de temporada, que em bons imóveis paga o custo de manter e ainda sobra.
 
-## Aula 1.1 — O que é rentabilidade imobiliária
+Mas imóvel tem custos que o entusiasta ignora: liquidez baixa (vender leva meses), custo de transação alto (ITBI, cartório, comissão — 8% a 10% na ponta de compra+venda) e vacância. O investidor profissional só compra quando os números absorvem esses custos.
 
-### Conceitos básicos
+**Prática:**
+- Liste os 4 motores de retorno de 1 imóvel que você acompanha
+- Calcule o custo total de transação (compra+venda) dele
+- Defina seu horizonte mínimo de permanência (regra: 5 anos)
 
-- **Rentabilidade**: retorno financeiro obtido pelo investimento
-- **ROI**: retorno sobre investimento
-- **Cap rate**: receita anual dividida pelo valor do imóvel
-- **Payback**: tempo para recuperar o investimento
+## Aula 1.2 — Os indicadores essenciais: cap rate, yield e payback
+Cap rate = aluguel anual líquido ÷ valor do imóvel. No litoral, imóveis residenciais giram entre 0,35% e 0,55% ao mês de aluguel bruto (4% a 6,5% ao ano); temporada bem operada pode entregar 6% a 10% ao ano líquido, com mais trabalho e risco.
 
-### Tipos de rentabilidade
+Yield bruto engana: desconte IPTU, condomínio, manutenção (regra prática: 5% do valor do imóvel a cada 10 anos) e vacância (1 mês/ano na locação anual). Payback simples = valor ÷ renda líquida anual; acima de 20 anos no residencial exige justificativa pela valorização esperada.
 
-1. **Locação tradicional**: aluguel mensal
-2. **Temporada**: aluguel por temporada
-3. **Venda rápida**: compra, reforma, venda
-4. **Misto**: combinação de locação + venda
+**Prática:**
+- Calcule cap rate bruto e líquido de 2 imóveis reais
+- Monte planilha com IPTU, condomínio, manutenção e vacância
+- Defina seu cap rate mínimo de compra
 
-### Fórmulas essenciais
+## Aula 1.3 — Os ciclos do mercado imobiliário do litoral
+O mercado do litoral tem dois ciclos sobrepostos: o macro (juros, crédito, renda — financiamento barato infla preços) e o local (obras de infraestrutura, veraneio, lançamentos). Exemplos locais: a duplicação da Tamoios valorizou Caraguatatuba e Ubatuba; o polo de cruzeiros pressionou Santos.
 
-```
-ROI = (Receita - Custos) / Investimento × 100
-Cap rate = Receita anual / Valor do imóvel × 100
-Payback = Investimento / Receita mensal
-```
+Regra do investidor: compre no ciclo de juros altos (menos competição, vendedores flexíveis) e venda no ciclo de juros baixos. Quem espera "a certeza" compra no topo junto com a manchete de jornal.
 
-## Aula 1.2 — Custos do investimento
-
-### Custos iniciais
-
-- **Compra do imóvel**: valor de aquisição
-- **Reforma**: preparação para locação/venda
-- **Documentação**: escritura, registro, ITBI
-- **Ferramentas**: câmera, anúncios, plataformas
-
-### Custos operacionais
-
-- **Condomínio**: mensal
-- **IPTU**: anual
-- **Energia/água**: mensal
-- **Internet**: mensal
-- **Limpeza**: por hospedagem
-- **Manutenção**: preventiva + corretiva
-
-### Custos de oportunidade
-
-- **Dinheiro par**: quanto você deixaria de ganhar
-- **Tempo**: horas gastas na gestão
-- **Risco**: probabilidade de perda
-
-### Exercício
-
-Liste todos os custos de um investimento imobiliário no litoral.
-
-## Aula 1.3 — Receitas potenciais
-
-### Fontes de receita
-
-1. **Aluguel mensal**: locação tradicional
-2. **Aluguel temporada**: diárias em alta temporada
-3. **Venda do imóvel**: ganho de capital
-4. **Serviços extras**: check-in, limpeza, consultoria
-
-### Tabela de receita por cidade
-
-| Cidade | Locação mensal | Temporada/dia | Venda média |
-|--------|---------------|---------------|-------------|
-| Santos | R$ 3.000-5.000 | R$ 400-800 | R$ 8.000/m² |
-| Guarujá | R$ 2.500-4.000 | R$ 350-700 | R$ 7.000/m² |
-| Praia Grande | R$ 2.000-3.500 | R$ 250-500 | R$ 5.500/m² |
-| Bertioga | R$ 2.800-4.500 | R$ 300-600 | R$ 6.500/m² |
-
-### Exercício
-
-Calcule a receita potencial de um apartamento 1 quarto em Santos.
-
-## Resumo
-
-- Rentabilidade depende de receita e custos.
-- Custos operacionais são frequentemente subestimados.
-- Dados locais são essenciais para projeções realistas.
-
-## Checklist
-
-- [ ] Custos mapeados
-- [ ] Receitas estimadas
-- [ ] ROI calculado
-- [ ] Cenários comparados
-
-## Materiais para download
-
-- Planilha de cálculo de rentabilidade
-- Tabela de custos por cidade
-
-## Prompt de IA
-
-Atue como consultor de investimentos imobiliários. Calcule a rentabilidade de um imóvel no litoral considerando todos os custos e receitas.
+**Prática:**
+- Mapeie 2 obras de infraestrutura em andamento nas suas cidades
+- Acompanhe a taxa básica de juros e o volume de crédito imobiliário
+- Escreva sua tese de compra para os próximos 24 meses

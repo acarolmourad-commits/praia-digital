@@ -1,60 +1,34 @@
-# Módulo 3 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar prospeccao para corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 3 — Contrato de Captação e Exclusividade
 
-## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Transformar avaliações em contratos assinados, com exclusividade quando fizer sentido.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 3.1 — Anatomia do contrato de captação
+O contrato de mediação (autorização de venda) deve conter: identificação completa das partes, descrição e matrícula do imóvel, valor e condições de venda autorizadas, prazo de vigência, percentual de comissão (padrão de mercado: 5% a 6% para venda urbana; no litoral, imóveis de alto valor podem fechar em 4% a 5%), e obrigações do corretor (plano de divulgação, relatórios).
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+Ponto jurídico essencial: mesmo sem exclusividade, o corretor que comprova ter aproximado o comprador tem direito à comissão (art. 725 do Código Civil). Mas provar é difícil — por isso registre visitas com assinatura e data.
 
-## Aula 3.2 — Caso real 2: como evitar erros custosos
-Fundamentos, ferramentas e fluxos recomendados para prospeccao para corretores no litoral.
+**Prática:**
+- Revise seu modelo de contrato com um advogado uma vez por ano
+- Inclua cláusula de relatório quinzenal de divulgação
+- Sempre registre visitas por escrito (ficha assinada ou e-mail de confirmação)
 
-**Ferramentas recomendadas:**
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
+## Aula 3.2 — Vendendo a exclusividade sem parecer ganancioso
+Exclusividade não se pede — se justifica. O argumento correto é econômico: com exclusividade, você investe dinheiro real no imóvel (fotos profissionais, anúncios patrocinados, tour virtual) e coordena a estratégia de preço sem interferência de anúncios concorrentes com valores conflitantes.
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+Apresente um plano escrito de 30-60-90 dias: o que será feito, quando e com qual investimento. Comprometa-se com relatórios quinzenais. Dê prazo de saída: contratos de 3 a 6 meses com possibilidade de rescisão mediante aviso convertem muito mais que contratos abertos.
 
-## Aula 3.3 — Lições aplicáveis ao seu contexto
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Monte sua apresentação de exclusividade em 1 página (plano 30-60-90)
+- Defina seu pacote mínimo de investimento por imóvel exclusivo
+- Treine a resposta à objeção "outra imobiliária não pede exclusividade"
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 3.3 — Precificação orientada por dados: o momento que define a venda
+Imóvel com preço errado queima no mercado: os primeiros 30 dias concentram a maior parte do interesse. A técnica é apresentar três faixas com evidência: valor de liquidez rápida (vende em até 60 dias), valor de mercado (90-180 dias) e valor aspiracional (sem previsão). Deixe o proprietário escolher — mas com os números na mesa.
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+No litoral, inclua na análise a sazonalidade: anunciar em outubro-novembro captura a demanda de quem quer o imóvel pronto para o verão; o mesmo imóvel em abril tem menos tráfego.
 
-## Exercício
-Analise um caso real do mercado e adapte as lições para a sua realidade.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
-
-## Prompt de IA
-Atue como mentor experiente. Analise este caso real de prospeccao para corretores no litoral e aponte 5 lições práticas: [descreva o caso].
+**Prática:**
+- Monte relatório de precificação padrão com 3 faixas e justificativas
+- Use sempre 3+ comparáveis reais de fechamento
+- Reavalie o preço a cada 45 dias sem visitas qualificadas

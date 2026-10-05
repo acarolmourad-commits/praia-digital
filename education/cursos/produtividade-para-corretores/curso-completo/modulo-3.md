@@ -1,60 +1,34 @@
-# Módulo 3 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar produtividade para corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 3 — Carreira e Especialização
 
-## Aula 3.1 — Caso real 1: do problema à solução em 7 dias
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Construir uma carreira que valoriza com o tempo.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 3.1 — De generalista a referência: o caminho da especialização
+O corretor que domina um nicho (temporada de alto padrão, aposentados, investidores) cobra melhor, recebe indicação qualificada e sofre menos com concorrência. A especialização se constrói com: conhecimento profundo (cursos, dados locais), presença (conteúdo no nicho) e cases documentados.
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+Cronograma realista: 6-12 meses para ser reconhecido no nicho, 24 meses para ser a referência. O atalho não existe — mas a consistência acelera.
 
-## Aula 3.2 — Caso real 2: como evitar erros custosos
-Fundamentos, ferramentas e fluxos recomendados para produtividade para corretores no litoral.
+**Prática:**
+- Escolha seu nicho de especialização
+- Defina o plano de 12 meses (conhecimento, presença, cases)
+- Documente seu primeiro case do nicho
 
-**Ferramentas recomendadas:**
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
+## Aula 3.2 — Networking profissional: sua rede é seu estoque
+Advogados, contadores, gerentes de banco, síndicos, administradoras e outros corretores (parcerias 50/50 em imóveis fora da sua área) formam a rede que alimenta sua carteira. Cada relacionamento profissional vale captações indiretas por anos.
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+Regra do networking útil: dê antes de pedir. Envie o cliente que precisa de contador para o contador; a recíproca vem. Participe de 1 evento ou associação local por mês — com follow-up real depois.
 
-## Aula 3.3 — Lições aplicáveis ao seu contexto
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Liste sua rede atual e os 5 perfis que faltam
+- Faça 1 contato de valor (sem pedir nada) esta semana
+- Agende 1 evento local por mês
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 3.3 — Aprendizado contínuo: o corretor que não para
+O mercado muda (juros, regras, tecnologia, plataformas) e a estante parada desvaloriza. Sistema mínimo: 30 min diários de estudo (legislação, técnica de vendas, dados do mercado local), 1 curso estruturado por trimestre e revisão mensal dos próprios resultados — o melhor professor é seu funil.
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+Documente o aprendizado: cada conceito novo vira um teste prático na semana seguinte. Conhecimento não aplicado em 30 dias é esquecido.
 
-## Exercício
-Analise um caso real do mercado e adapte as lições para a sua realidade.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- Modelos de proposta
-- Planilha de ROI
-- Checklist de documentação
-
-## Prompt de IA
-Atue como mentor experiente. Analise este caso real de produtividade para corretores no litoral e aponte 5 lições práticas: [descreva o caso].
+**Prática:**
+- Bloqueie os 30 min diários de estudo
+- Escolha o curso do trimestre
+- Regra: todo conceito novo vira teste prático em 7 dias

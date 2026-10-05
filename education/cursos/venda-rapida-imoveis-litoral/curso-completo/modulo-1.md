@@ -1,111 +1,34 @@
-# Módulo 1 — Mercado e Diagnóstico para Venda Rápida
+# Módulo 1 — Fundamentos da Venda Consultiva
 
-## Introdução
+## Objetivo do módulo
+Migrar do modelo de "empurrar imóvel" para a venda consultiva baseada em diagnóstico.
 
-Neste módulo você vai entender o mercado imobiliário do litoral paulista, identificar por que alguns imóveis vendem rápido enquanto outros ficam meses expostos e aprender a fazer um diagnóstico preciso do seu imóvel.
+## Aula 1.1 — Como o cliente de imóvel no litoral decide
+O comprador de imóvel no litoral combina razão e emoção em doses que mudam conforme o perfil: o investidor decide por planilha (retorno, liquidez, custo de oportunidade); a família de segunda residência decide por imaginário (verões, filhos, status) validado por números; o morador definitivo decide por rotina (trabalho, escola, serviços).
 
-## Aula 1.1 — Por que alguns imóveis vendem rápido no litoral
+A venda consultiva começa identificando o perfil nos primeiros 10 minutos de conversa — com perguntas, não com apresentação de imóveis. Quem apresenta imóvel antes de diagnosticar vende para a planilha errada.
 
-### Fatores que aceleram a venda
+**Prática:**
+- Liste 5 perguntas de diagnóstico que separam investidor de usuário final
+- Identifique o perfil dos seus 5 leads ativos agora
+- Adapte o discurso de 1 imóvel para cada um dos 3 perfis
 
-1. **Preço justo**: alinhado com o mercado
-2. **Fotos profissionais**: primeiro impacto decisivo
-3. **Descrição convincente**: destaca diferenciais
-4. **Localização**: proximidade da praia, comércio, acesso
-5. **Documentação regular**: sem pendências
+## Aula 1.2 — SPIN Selling aplicado a imóveis
+O método SPIN estrutura a conversa em quatro camadas: Situação (como usa imóvel hoje?), Problema (o que incomoda? custo, distância, manutenção?), Implicação (quanto custa não resolver? temporada perdida, patrimônio parado) e Necessidade de solução (o que mudaria com o imóvel certo?).
 
-### Erros que atrasam a venda
+Exemplo real: em vez de "quer conhecer um apartamento no Guarujá?", a sequência consultiva leva o próprio cliente a concluir que manter o dinheiro parado rende menos que um imóvel com retorno de temporada de 5% a 8% ao ano em bairros valorizados.
 
-- Preço acima do mercado
-- Fotos amadoras
-- Descrição genérica
-- Falta de divulgação
-- Documentação incompleta
+**Prática:**
+- Escreva 2 perguntas de cada tipo SPIN para seu nicho
+- Role-play: conduza uma conversa completa sem apresentar imóvel nos primeiros 15 minutos
+- Registre as objeções que surgirem por tipo de pergunta
 
-### Exemplo real
+## Aula 1.3 — Apresentação de valor: do preço para o custo-benefício
+Cliente nunca acha o preço bom — acha o preço justo ou injusto para o valor percebido. Construa valor antes de falar de preço: escassez real (poucas unidades com aquela vista), custo de reconstruir (preço do m² novo no bairro), e custo de não decidir (mercado do litoral historicamente se valoriza nos ciclos de verão).
 
-Um apartamento em Santos ficou 8 meses à venda por R$ 850.000 sem fotos profissionais. Após reanúncio com fotos profissionais e preço ajustado para R$ 750.000, vendeu em 15 dias.
+Técnica da ancoragem: apresente primeiro o imóvel de maior valor da seleção. O segundo parecerá mais acessível — sem você ter dito nada sobre desconto.
 
-## Aula 1.2 — Diagnóstico do imóvel
-
-### Checklist de diagnóstico
-
-1. **Localização**
-   - Distância da praia
-   - Acessos principais
-   - Comércio e serviços próximos
-   - Segurança da região
-
-2. **Imóvel**
-   - Estado de conservação
-   - Área útil e privativa
-   - Vagas de garagem
-   - Áreas comuns
-
-3. **Documentação**
-   - Matrícula regularizada
-   - IPTU em dia
-   - Sem pendências judiciais
-
-4. **Mercado**
-   - Preços de imóveis similares
-   - Tempo médio de venda
-   - Demanda por tipo de imóvel
-
-### Exemplo de diagnóstico
-
-```
-Imóvel: Apartamento 2 quartos, Santos
-Pontos fortes: orla, reformado, garagem
-Pontos fracos: sem varanda, edifício antigo
-Oportunidades: preço abaixo do mercado, documento ok
-Ameaças: concorrência alta na região
-```
-
-## Aula 1.3 — Estudo de caso: venda em 30 dias
-
-### Caso real
-
-Um apartamento em Guarujá, 2 quartos, 70m², a 400m da praia.
-
-**Situação inicial:**
-- Preço pedido: R$ 520.000
-- Fotos: amadoras
-- Descrição: genérica
-
-**Ações realizadas:**
-1. Reanúncio com fotos profissionais (R$ 800)
-2. Descrição focada em diferenciais
-3. Preço ajustado para R$ 480.000
-4. Divulgação em 5 plataformas
-
-**Resultado:**
-- Venda em 22 dias
-- Valor final: R$ 480.000
-- Economia de 2 meses de condomínio + IPTU
-
-### Exercício
-
-Faça o diagnóstico do seu imóvel e liste 3 ações para acelerar a venda.
-
-## Resumo
-
-- Venda rápida depende de preço, apresentação e divulgação.
-- Diagnóstico preciso evita erros comuns.
-- Pequenos ajustes geram grandes resultados.
-
-## Checklist
-
-- [ ] Diagnóstico do imóvel concluído
-- [ ] Preço de mercado pesquisado
-- [ ] Documentação verificada
-- [ ] Plano de ação definido
-
-## Materiais para download
-
-- Checklist de diagnóstico imobiliário
-- Planilha de comparação de mercado
-
-## Prompt de IA
-
-Atue como consultor imobiliário do litoral. Faça um diagnóstico de venda rápida para o meu imóvel considerando localização, documentação, preço e mercado.
+**Prática:**
+- Para cada imóvel ativo, escreva 3 argumentos de valor não relacionados a preço
+- Ordene sua seleção do mais caro ao mais barato nas apresentações
+- Cronometre: fale de preço só depois de 3 pontos de valor

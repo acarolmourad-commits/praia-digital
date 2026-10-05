@@ -1,60 +1,34 @@
-# Módulo 2 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar casa ou apartamento com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 2 — Análise de Oportunidades
 
-## Aula 2.1 — Passo a passo para aplicar casa ou apartamento na prática
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Avaliar imóveis com planilha e critério, não com achismo.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 2.1 — A ficha de análise: 12 dados antes de qualquer proposta
+Antes de propor: valor pedido x valor de mercado (comparáveis reais), m² privativo, custo de reforma estimado, IPTU, condomínio, potencial de aluguel anual e de temporada, liquidez do bairro (tempo médio de venda), pendências documentais, zoneamento, riscos ambientais (litoral: recuo de maré, áreas de preservação) e motivação real do vendedor.
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+A motivação do vendedor vale ouro: inventário, mudança de cidade, imóvel parado há anos — cada uma dessas situações abre espaço real de negociação de 10% a 20%.
 
-## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
-Fundamentos, ferramentas e fluxos recomendados para casa ou apartamento no litoral.
+**Prática:**
+- Monte sua ficha de análise com os 12 dados
+- Aplique em 3 imóveis esta semana
+- Crie o hábito: nenhuma proposta sem ficha completa
 
-**Ferramentas recomendadas:**
-- CRM de atendimento
-- Planilha de acompanhamento
-- Ferramenta de automação de mensagens
+## Aula 2.2 — Onde está o valor no litoral: leitura micro dos bairros
+Dentro da mesma cidade, a diferença de retorno entre bairros chega a 3x. Analise: frente-mar x quadra intermediária (frente-mar valoriza mais, mas a quadra do lado tem yield melhor), comércio e serviços andáveis (critério nº 1 de locação), perfil do turista do bairro e estoque de lançamentos (muita oferta nova pressiona o usado).
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+Ferramenta: o mapa de calor pessoal. Rode os bairros em dia de semana à noite — rua vazia às 20h em janeiro é sinal de bairro puramente sazonal; rua viva indica moradia, serviços e liquidez o ano inteiro.
 
-## Aula 2.3 — Automação e fluxos que economizam horas por semana
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Monte seu mapa de calor: 5 bairros, notas de 0-10 em 5 critérios
+- Visite 1 bairro-alvo em dia de semana à noite
+- Compare yield de frente-mar x intermediária em 1 cidade
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 2.3 — Due diligence documental do investidor
+Antes de fechar: matrícula atualizada (ônus, hipotecas, ações), certidões dos vendedores (federais, estaduais, trabalhistas — dívida trabalhista do vendedor pode atingir o imóvel), IPTU e condomínio quitados, habite-se/averbação de construção e, no litoral, verificação de área de marinha (terreno de marinha tem taxa anual e regras próprias).
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+Custo de uma due diligence com despachante/advogado: R$ 1.500 a R$ 3.000. Custo de pular essa etapa: potencialmente o imóvel inteiro.
 
-## Exercício
-Monte um plano prático de casa ou apartamento para os próximos 30 dias, com ações diárias e semanais.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- CRM de atendimento
-- Planilha de acompanhamento
-- Ferramenta de automação de mensagens
-
-## Prompt de IA
-Atue como consultor de casa ou apartamento. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].
+**Prática:**
+- Crie seu checklist documental de compra
+- Tenha 1 despachante e 1 advogado parceiros
+- Verifique o que é área de marinha nas suas cidades

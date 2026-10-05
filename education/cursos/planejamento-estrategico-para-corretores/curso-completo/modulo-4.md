@@ -1,60 +1,24 @@
-# Módulo 4 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar planejamento estrategico para corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 4 — Oratória e Comunicação Profissional
 
-## Aula 4.1 — Métricas para acompanhar evolução e resultado
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Comunicar com clareza em visitas, negociações e vídeos.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 4.1 — Falar bem vende mais: estrutura e clareza
+Boa comunicação imobiliária é estrutura, não dom: prepare a abertura (o que o cliente ganha ouvindo você), desenvolva em 3 pontos (mais que 3, ninguém retém) e feche com próximo passo claro.
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+Em vídeo, as mesmas regras + 2: os primeiros 3 segundos decidem (comece no ponto forte) e fale olhando a lente como se fosse o cliente. Grave, assista, corte o que não agrega. Os primeiros 20 vídeos serão medianos — os próximos 20 vão te diferenciar de 95% do mercado.
 
-## Aula 4.2 — Otimizações para aumentar rentabilidade ou desempenho
-Fundamentos, ferramentas e fluxos recomendados para planejamento estrategico para corretores no litoral.
+**Prática:**
+- Estruture sua próxima apresentação em 3 pontos
+- Grave 1 vídeo curto seguindo as regras
+- Peça feedback honesto a 1 colega
 
-**Ferramentas recomendadas:**
-- Dashboard de métricas
-- Planilha de rentabilidade
-- Sistema de gestão de tarefas
+## Aula 4.2 — Apresentações para grupos e parceiros
+Apresentar para uma administradora de condomínios ou uma equipe de vendas exige versão ampliada da mesma estrutura: problema da audiência (não o seu serviço), evidência (case com números), proposta clara e chamada única para ação.
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+Prepare-se com a regra 10-20-30 adaptada: até 10 slides, 20 minutos, sem texto menor que o legível. Ensaie em voz alta 2 vezes — a segunda versão é sempre 30% melhor.
 
-## Aula 4.3 — Escala: como crescer sem perder a qualidade
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
-
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
-
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
-
-## Exercício
-Desenvolva um plano de crescimento para planejamento estrategico para corretores com metas mensuráveis.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- Dashboard de métricas
-- Planilha de rentabilidade
-- Sistema de gestão de tarefas
-
-## Prompt de IA
-Atue como estrategista de crescimento. Monte um plano de escala para planejamento estrategico para corretores com métricas e prazos: [dados do negócio].
+**Prática:**
+- Monte sua apresentação institucional de 10 slides
+- Ensaie em voz alta 2 vezes
+- Ofereça 1 apresentação para 1 administradora este mês

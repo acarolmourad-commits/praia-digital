@@ -1,60 +1,34 @@
-# Módulo 1 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar captacao imoveis corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 1 — Fundamentos da Captação Profissional
 
-## Aula 1.1 — Visão geral do mercado de captacao imoveis corretores no litoral paulista
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Entender o papel estratégico da captação e montar a base de uma carteira sólida no litoral paulista.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 1.1 — O mercado imobiliário do litoral paulista: dados e dinâmica
+O litoral de São Paulo concentra dois mercados distintos: o de moradia permanente (Baixada Santista, com Santos e Guarujá à frente) e o de segunda residência/temporada (forte em Ubatuba, Ilhabela, Caraguatatuba e São Sebastião). Cerca de 60% dos imóveis à venda em cidades como Ilhabela pertencem a proprietários não residentes — o que muda completamente a abordagem de captação: o contato inicial é quase sempre remoto, a confiança é construída por consistência, e a documentação costuma ter pendências (inventários, usufrutos, averbações).
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+O corretor que entende essa dinâmica para de disputar os mesmos imóveis anunciados nos portais e passa a criar carteira própria. A regra prática do mercado: quem capta bem escolhe com quem trabalha; quem não capta aceita qualquer imóvel e qualquer condição.
 
-## Aula 1.2 — Conceitos essenciais: termos, métricas e particularidades locais
-Fundamentos, ferramentas e fluxos recomendados para captacao imoveis corretores no litoral.
+**Prática:**
+- Mapeie sua cidade: bairros de moradia fixa x bairros de temporada
+- Liste 10 ruas/condomínios prioritários para monitorar
+- Identifique em cada um: perfil do proprietário (residente ou não), ticket médio e giro estimado
 
-**Ferramentas recomendadas:**
-- Portal oficial de imóveis do litoral
-- Planilha de diagnóstico
-- Consulta de matrícula online
+## Aula 1.2 — Captação ativa x captação passiva: onde investir seu tempo
+Captação passiva é esperar o proprietário chegar (anúncios, placas, indicação espontânea). Captação ativa é ir ao encontro: porta a porta em condomínios-alvo, contato com síndicos, zeladores e administradoras, monitoramento de anúncios "vende-se pelo proprietário" e redes de relacionamento (advogados de família, contadores, gerentes de banco).
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+No litoral, a captação ativa rende mais porque muitos proprietários moram na capital e não têm vínculo com imobiliárias locais. Um roteiro profissional de primeiro contato — apresentação objetiva, proposta de avaliação gratuita e materiais de credibilidade — converte entre 8% e 15% dos contatos frios bem escolhidos em avaliações agendadas.
 
-## Aula 1.3 — Estudo de caso real: como um aluno aplicou o método e obteve resultado em 30 dias
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Defina meta semanal: 20 contatos ativos novos
+- Monte sua apresentação de 30 segundos (quem você é, resultado que entrega, prova)
+- Registre todo contato no CRM com data do próximo follow-up
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 1.3 — Avaliação inicial do imóvel: o que observar antes de precificar
+Antes de falar em preço, o captador profissional levanta: localização micro (quadra, lado da rua, vista), estado de conservação real (umidade e corrosão por maresia são críticos no litoral), documentação (matrícula atualizada, IPTU, débitos de condomínio) e comparáveis reais de venda — não de anúncio.
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+Erro clássico: usar valor de anúncio de portais como referência. Anúncios no litoral ficam em média 10% a 20% acima do valor de fechamento. Trabalhe com fechamentos reais, percepção de corretores ativos e, quando possível, dados de cartório (CRI) da cidade.
 
-## Exercício
-Faça o diagnóstico do seu cenário atual em captacao imoveis corretores: liste pontos fortes, fracos, oportunidades e ameaças.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- Portal oficial de imóveis do litoral
-- Planilha de diagnóstico
-- Consulta de matrícula online
-
-## Prompt de IA
-Atue como especialista em captacao imoveis corretores no litoral paulista. Faça um diagnóstico personalizado com base nestas respostas: [insira suas respostas].
+**Prática:**
+- Crie ficha de avaliação padrão (localização, conservação, documentação, comparáveis)
+- Separe valor de anúncio de valor de mercado na conversa com o proprietário
+- Fotografe pontos críticos: fachada, infiltrações, elétrica, esquadrias (maresia)

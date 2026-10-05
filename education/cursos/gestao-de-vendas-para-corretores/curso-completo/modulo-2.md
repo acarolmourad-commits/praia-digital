@@ -1,60 +1,34 @@
-# Módulo 2 — Conteúdo Premium
-## Introdução
-Neste módulo você vai dominar gestao de vendas para corretores com método, exemplos reais do litoral paulista e aplicação prática passo a passo.
+# Módulo 2 — Condução, Visita e Demonstração
 
-## Aula 2.1 — Passo a passo para aplicar gestao de vendas para corretores na prática
-Conteúdo completo com exemplos reais, particularidades do litoral e aplicação imediata.
+## Objetivo do módulo
+Transformar visitas em decisões com preparação e roteiro.
 
-**Exemplo real:** Aplicação prática observada no mercado do litoral paulista, com resultado mensurável e lições replicáveis.
+## Aula 2.1 — Preparação da visita: o jogo se ganha antes
+Visita profissional começa na véspera: confirme horário e endereço, revise a ficha do lead (perfil, orçamento, objeções anteriores), prepare a ordem dos ambientes (terminar sempre no ponto mais forte do imóvel — a varanda com vista, nunca na área de serviço) e leve material de apoio: comparáveis, simulação de financiamento e estimativa de retorno se for investidor.
 
-**Estudo de caso:** Caso real com dados anonimizados, mostrando erros, acertos e resultados financeiros.
+No litoral, detalhes matam visitas: chegue antes e verifique cheiros (umidade), iluminação e barulho da rua no horário da visita. Se houver ponto fraco evidente, prepare a resposta antes de ser perguntado.
 
-## Aula 2.2 — Ferramentas profissionais recomendadas e gratuitas
-Fundamentos, ferramentas e fluxos recomendados para gestao de vendas para corretores no litoral.
+**Prática:**
+- Crie checklist de pré-visita (12 itens)
+- Defina o roteiro de ambientes dos seus 3 imóveis principais
+- Prepare a resposta para o ponto fraco de cada um
 
-**Ferramentas recomendadas:**
-- CRM de atendimento
-- Planilha de acompanhamento
-- Ferramenta de automação de mensagens
+## Aula 2.2 — Técnicas de condução durante a visita
+Durante a visita, fale menos que o cliente. Use a técnica das perguntas de confirmação: "essa cozinha atenderia os almoços de família que você mencionou?" — cada "sim" é um micro-fechamento. Observe o tempo que o cliente passa em cada ambiente: onde ele demora é onde está a decisão.
 
-**Dica prática:** Use este checklist rápido para não perder nenhuma etapa essencial.
+Sinais de compra a monitorar: perguntas sobre documentação, prazo de entrega, condomínio, possibilidade de reforma e "o que preciso fazer para reservar?". Ao primeiro sinal, pare de apresentar e comece a conduzir o próximo passo.
 
-## Aula 2.3 — Automação e fluxos que economizam horas por semana
-Análise detalhada de cases reais, erros comuns e boas práticas consolidadas.
+**Prática:**
+- Liste 5 perguntas de confirmação para seu imóvel principal
+- Treine identificar 4 sinais de compra
+- Defina sua frase de transição visita→proposta
 
-**Erros comuns a evitar:**
-- Erro 1: falta de planejamento local
-- Erro 2: ignorar particularidades documentais
-- Erro 3: não medir métricas de resultado
+## Aula 2.3 — O fechamento da visita: próximo passo claro
+Visita sem próximo passo agendado é visita perdida. Antes de sair do imóvel, defina: ou o cliente faz proposta, ou agenda segunda visita, ou recebe simulação de financiamento até determinada hora no dia seguinte — com data e hora marcadas para a conversa de retorno.
 
-**Lições aplicáveis:**
-- Lição 1: valide o contexto local antes de decidir
-- Lição 2: use dados comparáveis, não apenas intuição
-- Lição 3: documente tudo para ganhar agilidade
+Regra de ouro: quem controla a agenda controla a venda. "Eu te mando e você vê com calma" entrega o controle; "amanhã às 10h te ligo com a simulação e conversamos" mantém o processo vivo.
 
-## Exercício
-Monte um plano prático de gestao de vendas para corretores para os próximos 30 dias, com ações diárias e semanais.
-
-## Resumo
-- Pontos-chave para revisão antes da próxima etapa
-- Checklist rápido de verificação
-- Próximo passo recomendado
-
-## Checklist
-- [ ] Conteúdo do módulo estudado
-- [ ] Exercício aplicado ao seu contexto
-- [ ] Ferramentas configuradas
-- [ ] Próximo passo definido
-
-## Materiais para download
-- PDF do módulo
-- Template editável
-- Planilha de acompanhamento
-
-## Ferramentas recomendadas
-- CRM de atendimento
-- Planilha de acompanhamento
-- Ferramenta de automação de mensagens
-
-## Prompt de IA
-Atue como consultor de gestao de vendas para corretores. Monte um plano prático de 30 dias para este cenário: [descreva seu contexto].
+**Prática:**
+- Padronize os 3 próximos passos possíveis pós-visita
+- Nunca encerre contato sem data/hora do seguinte
+- Registre no CRM o compromisso assumido pelo cliente
