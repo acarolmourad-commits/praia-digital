@@ -1,0 +1,26 @@
+name: Rewrite courses with real content
+on:
+  push:
+    paths:
+      - 'tools/rewrite_courses.py'
+      - '.github/workflows/rewrite-courses.yml'
+permissions:
+  contents: write
+jobs:
+  rewrite:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rewrite courses
+        run: python3 tools/rewrite_courses.py
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nada para commitar"
+          else
+            git commit -m "feat(education): conteudo real e profissional nos 67 cursos (modulos reescritos por familia tematica) + catalogo hotmart"
+            git push
+          fi
