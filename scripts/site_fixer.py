@@ -5,7 +5,9 @@ Correcoes automaticas seguras:
 1. Links internos quebrados que resolvem com .html ou /index.html -> reescrita.
 2. Mencoes a anos antigos (<= ano anterior) em texto visivel -> ano corrente
    (conteudo datado em blog/ nao e alterado).
-Commita as correcoes e comenta na issue de origem."""
+Commita as correcoes e comenta na issue de origem.
+Fix 2026-10-06: nao falha quando nao ha mudancas reais (git commit vazio)
+e so contabiliza correcao quando o link de fato muda."""
 import os, re, json, glob, datetime, subprocess, urllib.request
 
 TOKEN = os.environ.get('GITHUB_TOKEN','')
@@ -45,7 +47,7 @@ for f in HTML:
         pre, u, pos = m.groups()
         if u.startswith(SKIP_PREFIX): return m.group(0)
         v = resolve_variants(u, f)
-        if v:
+        if v and v != u:  # so conta se o link de fato muda
             fix_links.append({'page': f, 'from': u, 'to': v})
             return pre + v + pos
         if v is False:
@@ -77,13 +79,19 @@ def gh(method, path, payload=None):
     with urllib.request.urlopen(req) as r:
         return json.loads(r.read() or b'{}')
 
-if fix_links or fix_years:
+def has_changes():
+    r = subprocess.run('git status --porcelain', shell=True, capture_output=True, text=True)
+    return bool(r.stdout.strip())
+
+if (fix_links or fix_years) and has_changes():
     run('git config user.name "github-actions[bot]"')
     run('git config user.email "github-actions[bot]@users.noreply.github.com"')
     run('git add -A')
     msg = f"fix(site): site-fixer - {len(fix_links)} links corrigidos, {len(fix_years)} mencoes atualizadas para {CURRENT_YEAR}"
     run(f'git commit -m "{msg}"')
     run('git push')
+else:
+    print('Nenhuma mudanca real no working tree - nada a commitar.')
 
 summary = f"""### Correcoes aplicadas pelo subagente site-fixer
 

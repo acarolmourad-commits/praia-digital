@@ -1,0 +1,28 @@
+name: HTML Validation (blog h1/title)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'blog/*.html'
+      - 'scripts/validate_html.py'
+      - '.github/workflows/html-validation.yml'
+  pull_request:
+    paths:
+      - 'blog/*.html'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    if: ${{ !github.event.repository.fork }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validar h1/title dos artigos do blog
+        run: python scripts/validate_html.py blog
