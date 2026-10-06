@@ -1,0 +1,29 @@
+name: Site Fixer (subagente)
+
+on:
+  issues:
+    types: [opened, labeled]
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: 'Numero da issue do site-inspector'
+        required: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  fix:
+    if: ${{ !github.event.repository.fork && (github.event_name == 'workflow_dispatch' || contains(github.event.issue.labels.*.name, 'site-inspection')) }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Aplicar correcoes automaticas
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.inputs.issue_number || github.event.issue.number }}
+        run: python scripts/site_fixer.py
