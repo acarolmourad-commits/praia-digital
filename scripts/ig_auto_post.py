@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Gerador + publicador automatico de carrosseis no Instagram (Praia Digital).
+Design v2: capa centralizada, cards coloridos com acento rotativo, CTA final.
 Roda 4x/dia via GitHub Actions (7h, 9h, 15h, 20h BRT). Escolhe tema rotativo da fila,
 gera artes 1080x1350, commita as imagens no repo e publica via Instagram Graph API."""
 import os, sys, json, time, datetime, subprocess, requests
@@ -12,46 +13,67 @@ API = 'https://graph.facebook.com/v21.0'
 RAW = f'https://raw.githubusercontent.com/{REPO}/main/social/auto'
 SLOTS_UTC = [10, 12, 18, 23]  # 7h, 9h, 15h, 20h em Brasilia (UTC-3)
 W, H = 1080, 1350
-DARK=(2,48,71); OCEAN=(0,119,182); LIGHT=(0,180,216); AMBER=(245,158,11); ACC=(144,224,239); WHITE=(255,255,255)
+BG1=(15,23,42); BG2=(30,58,95)
+PALETTE=[(34,211,238),(52,211,153),(251,191,36),(248,113,113),(167,139,250),(96,165,250)]
+WHITE=(255,255,255); MUTED=(148,163,184)
 FB='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
 FR='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
 
 def font(sz, bold=True): return ImageFont.truetype(FB if bold else FR, sz)
 
-def base():
+def gradient(top, bottom):
     img = Image.new('RGB',(W,H)); px = img.load()
     for y in range(H):
         t=y/H
-        if t<0.55: a,b,tt=DARK,OCEAN,t/0.55
-        else: a,b,tt=OCEAN,LIGHT,(t-0.55)/0.45
-        c=tuple(int(a[j]+(b[j]-a[j])*tt) for j in range(3))
+        c=tuple(int(top[j]+(bottom[j]-top[j])*t) for j in range(3))
         for x in range(W): px[x,y]=c
     return img
 
-def wrap(d,text,f,maxw):
-    lines=[]
+def ctext(d, y, txt, f, fill=WHITE):
+    w=d.textlength(txt,font=f); d.text(((W-w)/2,y),txt,font=f,fill=fill)
+
+def wrap_center(d, text, f, y, maxw, fill=WHITE, lh=1.28):
+    """Quebra o texto e centraliza cada linha; retorna o y final."""
     for para in text.split('\n'):
         words=para.split(); line=''
-        for w in words:
-            t=(line+' '+w).strip()
+        for w_ in words:
+            t=(line+' '+w_).strip()
             if d.textlength(t,font=f)<=maxw: line=t
-            else: lines.append(line); line=w
-        lines.append(line)
-    return lines
+            else:
+                ctext(d,y,line,f,fill); y+=int(f.size*lh); line=w_
+        ctext(d,y,line,f,fill); y+=int(f.size*lh)
+    return y
 
-def slide(badge, blocks, idx, total):
-    img=base(); d=ImageDraw.Draw(img)
-    f=font(26); txt=badge.upper(); w=d.textlength(txt,font=f)
-    d.rounded_rectangle([90,120,90+w+52,178],radius=29,fill=AMBER)
-    d.text((116,134),txt,font=f,fill=DARK); y=218
-    for kind,txt,sz,col in blocks:
-        f=font(sz,bold=True)
-        for ln in wrap(d,txt,f,W-180):
-            d.text((90,y),ln,font=f,fill=col); y+=int(sz*1.28)
-        y+=34
-    d.text((90,H-100),'praia.digital',font=font(30),fill=WHITE)
-    dots=' '.join('*' if i==idx else 'o' for i in range(total))
-    d.text((W-90-d.textlength(dots,font=font(30)),H-102),dots,font=font(30),fill=WHITE)
+def pill(d, y, txt, fill_pill, fill_txt, sz=30):
+    f=font(sz); w=d.textlength(txt.upper(),font=f)
+    d.rounded_rectangle([(W-w-52)/2,y,(W+w+52)/2,y+sz+36],radius=(sz+36)//2,fill=fill_pill)
+    ctext(d,y+18,txt.upper(),f,fill_txt)
+
+def cover(badge, title):
+    img=gradient(BG1,BG2); d=ImageDraw.Draw(img)
+    pill(d,400,badge,(251,191,36),BG1)
+    y=wrap_center(d,title,font(72),540,W-160)
+    ctext(d,y+40,'Arraste para ver  >>>',font(30,False),MUTED)
+    ctext(d,1250,'praia.digital',font(36),PALETTE[0])
+    return img
+
+def card(kicker, big, small, accent):
+    img=gradient(BG1,BG2); d=ImageDraw.Draw(img)
+    pill(d,300,kicker,accent,BG1)
+    y=wrap_center(d,big,font(76),440,W-160)
+    wrap_center(d,small,font(34,False),y+50,W-200,MUTED)
+    ctext(d,1250,'praia.digital',font(32),PALETTE[0])
+    return img
+
+def cta():
+    img=gradient(BG2,(13,84,102)); d=ImageDraw.Draw(img)
+    ctext(d,420,'Gostou?',font(72))
+    ctext(d,520,'Saiba mais no site',font(48))
+    d.rounded_rectangle([240,680,840,770],radius=45,fill=PALETTE[1])
+    ctext(d,700,'LINK NA BIO',font(44),BG1)
+    ctext(d,860,'WhatsApp: (11) 95434-6288',font(34,False),WHITE)
+    ctext(d,930,'praia.digital',font(40),PALETTE[2])
+    ctext(d,1150,'Imoveis • Dados • IA para corretores',font(28,False),MUTED)
     return img
 
 def pick_topic():
@@ -70,25 +92,28 @@ def api(method, url, **kw):
 def main():
     topic,ti = pick_topic()
     tag=f"{datetime.date.today().isoformat()}-{ti}"
-    blocks=[[('h',topic['title'],80,WHITE),('p','Arraste para ver  >>>',40,WHITE)]]
-    for bdg,big,small in topic['slides']:
-        blocks.append([('b',bdg.upper(),30,ACC),('h',big,88,AMBER),('p',small,38,WHITE)])
-    blocks.append([('h','Link na bio',88,AMBER),('p','Saiba mais em praia.digital\nWhatsApp: (11) 95434-6288',38,WHITE)])
-    total=len(blocks)
+    slides=[cover(topic['badge'],topic['title'])]
+    for i,(kicker,big,small) in enumerate(topic['slides']):
+        slides.append(card(kicker,big,small,PALETTE[i%len(PALETTE)]))
+    slides.append(cta())
+    total=len(slides)
     os.makedirs('social/auto',exist_ok=True)
     files=[]
-    for i,bl in enumerate(blocks):
+    for i,img in enumerate(slides):
+        # indicador de progresso
+        d=ImageDraw.Draw(img)
+        dots=' '.join('*' if j==i else 'o' for j in range(total))
+        ctext(d,H-70,dots,font(26),WHITE)
         p=f'social/auto/{tag}-{i+1}.jpg'
-        slide(topic['badge'], bl, i, total).save(p,'JPEG',quality=90)
-        files.append(p)
+        img.save(p,'JPEG',quality=92); files.append(p)
     run('git config user.name "github-actions[bot]"')
     run('git config user.email "github-actions[bot]@users.noreply.github.com"')
     run(f'git add social/auto && git commit -m "social: artes {tag}" || echo nada-a-commitar')
     run('git push')
-    time.sleep(20)
     if not TOKEN or not IG:
         print('AVISO: IG_ACCESS_TOKEN/IG_USER_ID nao configurados - artes geradas e commitadas; publicacao pulada.')
         return
+    time.sleep(20)
     urls=[f'{RAW}/{os.path.basename(p)}' for p in files]
     children=[]
     for u in urls:
