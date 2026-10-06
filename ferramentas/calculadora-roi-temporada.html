@@ -45,6 +45,7 @@
     .presets{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 14px}
     .preset{background:#123;border:1px solid #22d3ee;color:#e8f4ff;border-radius:999px;padding:8px 16px;cursor:pointer;font-size:14px;transition:.2s}
     .preset:hover{background:#22d3ee;color:#0f172a;transform:translateY(-2px)}
+    .preset.ativo{background:#22d3ee;color:#0f172a;font-weight:700;box-shadow:0 0 0 2px #7ee9ff}
     .bar-row{display:grid;grid-template-columns:150px 1fr 110px;align-items:center;gap:10px;margin:8px 0;font-size:14px}
     .bar-track{background:#0d1b2e;border-radius:8px;height:26px;overflow:hidden}
     .bar-fill{height:100%;border-radius:8px;transition:width .8s ease;width:0}
@@ -101,19 +102,22 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
           <div><label for="taxa">Taxa de administração (%)</label><input id="taxa" type="number" min="0" max="100" value="20"></div>
           <div><label for="custos">Custos fixos anuais (IPTU, condomínio) (R$)</label><input id="custos" type="number" min="0" value="12000"></div>
           <div><label for="aluguel">Aluguel mensal (cenário anual) (R$)</label><input id="aluguel" type="number" min="0" value="2800"></div>
+          <div><label for="limpeza">Limpeza por estadia (R$)</label><input id="limpeza" type="number" min="0" value="150"><small style="opacity:.7">Média mercado: R$ 120–250</small></div>
+          <div><label for="duracao">Estadia média (diárias)</label><input id="duracao" type="number" min="1" value="4"></div>
           <div><label for="renda">Rendimento de renda fixa (% ao ano)</label><input id="renda" type="number" min="0" step="0.05" value="13.75"><small style="opacity:.7">Selic out/2026: 13,75% a.a. (Banco Central)</small></div>
         </div>
         <button class="btn" id="calcular" type="button">Calcular retorno</button>
+        <label style="display:flex;align-items:center;gap:8px;margin-top:12px;font-weight:400;font-size:14px;cursor:pointer"><input id="ir-rf" type="checkbox" checked style="width:auto;margin:0"> Descontar IR da renda fixa (15% sobre o rendimento, alíquota acima de 720 dias)</label>
       </div>
 
       <div class="card resultado" id="resultado">
         <h2>Resultado</h2>
         <p>Melhor cenário: <span class="destaque" id="melhor"></span></p>
         <table>
-          <tr><th>Cenário</th><th>Receita bruta/ano</th><th>Receita líquida/ano</th><th>ROI sobre o imóvel</th></tr>
-          <tr id="linha-temporada"><td>Temporada</td><td id="temp-bruta"></td><td id="temp-liquida"></td><td id="temp-roi"></td></tr>
-          <tr id="linha-anual"><td>Aluguel anual</td><td id="an-bruta"></td><td id="an-liquida"></td><td id="an-roi"></td></tr>
-          <tr id="linha-venda"><td>Venda + renda fixa</td><td id="vd-bruta"></td><td id="vd-liquida"></td><td id="vd-roi"></td></tr>
+          <tr><th>Cenário</th><th>Receita bruta/ano</th><th>Receita líquida/ano</th><th>ROI sobre o imóvel</th><th>Acumulado 3 anos</th></tr>
+          <tr id="linha-temporada"><td>Temporada</td><td id="temp-bruta"></td><td id="temp-liquida"></td><td id="temp-roi"></td><td id="temp-3a"></td></tr>
+          <tr id="linha-anual"><td>Aluguel anual</td><td id="an-bruta"></td><td id="an-liquida"></td><td id="an-roi"></td><td id="an-3a"></td></tr>
+          <tr id="linha-venda"><td>Venda + renda fixa</td><td id="vd-bruta"></td><td id="vd-liquida"></td><td id="vd-roi"></td><td id="vd-3a"></td></tr>
         </table>
         <div id="grafico-cenarios" style="margin-top:20px; display:none">
           <h3 style="margin-bottom:10px;">Comparativo visual (receita líquida/ano)</h3>
@@ -210,6 +214,18 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
           <li>Ilhabela bem gerenciada: 50% a 58% no ano, com picos de 88% a 90% na alta temporada.</li>
         </ul>
 
+        <h3 style="margin-top:18px;">Quanto custa operar na temporada (valores de mercado, 2026)</h3>
+        <table>
+          <tr><th>Item</th><th>Custo típico</th><th>Periodicidade</th></tr>
+          <tr><td>Limpeza profissional por estadia</td><td>R$ 120 – R$ 250</td><td>Por reserva</td></tr>
+          <tr><td>Enxoval (lavanderia/ressuprimento)</td><td>R$ 40 – R$ 90</td><td>Por reserva</td></tr>
+          <tr><td>Condomínio (apto 2 dorm., pé na areia)</td><td>R$ 500 – R$ 1.200</td><td>Mensal</td></tr>
+          <tr><td>IPTU (apto 2 dorm., Baixada Santista)</td><td>R$ 1.200 – R$ 3.600</td><td>Anual</td></tr>
+          <tr><td>Energia + internet + streaming</td><td>R$ 250 – R$ 450</td><td>Mensal</td></tr>
+          <tr><td>Gestão/administração profissional</td><td>15% – 25% do faturamento</td><td>Mensal</td></tr>
+        </table>
+        <p style="margin-top:8px; opacity:.8; font-size:.9rem;">💡 Os campos <strong>Limpeza por estadia</strong> e <strong>Estadia média</strong> acima já descontam esse custo automaticamente da simulação — ajuste com os valores do seu condomínio.</p>
+
         <h3 style="margin-top:18px;">Calendário da alta temporada 2026/2027</h3>
         <table>
           <tr><th>Período</th><th>Data</th><th>Demanda esperada</th></tr>
@@ -261,18 +277,23 @@ document.getElementById('calcular').addEventListener('click', function(){
   var custos  = parseFloat(document.getElementById('custos').value)   || 0;
   var aluguel = parseFloat(document.getElementById('aluguel').value)  || 0;
   var renda   = parseFloat(document.getElementById('renda').value)    || 0;
+  var limpeza = parseFloat(document.getElementById('limpeza').value)  || 0;
+  var duracao = Math.max(parseFloat(document.getElementById('duracao').value) || 4, 1);
+  var descIR  = document.getElementById('ir-rf').checked;
 
   if (valor <= 0) { alert('Informe o valor do imóvel.'); return; }
 
-  // Temporada
+  // Temporada (desconta taxa de admin, custos fixos e limpeza por estadia)
   var tempBruta   = diaria * 365 * (ocup / 100);
-  var tempLiquida = tempBruta * (1 - taxa / 100) - custos;
+  var estadias    = Math.round(365 * (ocup / 100) / duracao);
+  var custoLimp   = estadias * limpeza;
+  var tempLiquida = tempBruta * (1 - taxa / 100) - custos - custoLimp;
   // Aluguel anual
   var anBruta   = aluguel * 12;
   var anLiquida = anBruta - custos;
-  // Venda + renda fixa
+  // Venda + renda fixa (IR opcional: 15% sobre o rendimento)
   var vdBruta   = valor * (renda / 100);
-  var vdLiquida = vdBruta;
+  var vdLiquida = descIR ? vdBruta * 0.85 : vdBruta;
 
   var roiTemp = tempLiquida / valor * 100;
   var roiAn   = anLiquida   / valor * 100;
@@ -287,6 +308,9 @@ document.getElementById('calcular').addEventListener('click', function(){
   document.getElementById('vd-bruta').textContent     = brl(vdBruta);
   document.getElementById('vd-liquida').textContent   = brl(vdLiquida);
   document.getElementById('vd-roi').textContent       = pct(roiVd);
+  document.getElementById('temp-3a').textContent      = brl(tempLiquida * 3);
+  document.getElementById('an-3a').textContent        = brl(anLiquida * 3);
+  document.getElementById('vd-3a').textContent        = brl(vdLiquida * 3);
 
   var cenarios = [
     ['linha-temporada', roiTemp, 'Temporada'],
@@ -299,16 +323,19 @@ document.getElementById('calcular').addEventListener('click', function(){
   document.getElementById('melhor').textContent = cenarios[0][2] + ' — ROI de ' + pct(cenarios[0][1]) + ' ao ano';
 
   var dif = cenarios[0][1] - cenarios[2][1];
-  document.getElementById('dica').textContent = dif > 0
-    ? 'A diferença entre o melhor e o pior cenário é de ' + pct(dif) + ' ao ano — cerca de ' + brl(valor * dif / 100) + ' por ano.'
-    : '';
+  document.getElementById('dica').textContent = (dif > 0
+    ? 'A diferença entre o melhor e o pior cenário é de ' + pct(dif) + ' ao ano — cerca de ' + brl(valor * dif / 100) + ' por ano. '
+    : '')
+    + '(Temporada calculada com ' + estadias + ' estadias de ' + duracao + ' diárias e ' + brl(custoLimp) + '/ano em limpezas'
+    + (descIR ? '; renda fixa já líquida de IR de 15%' : '') + '.)';
 
   document.getElementById('resultado').classList.add('ativo');
   document.getElementById('captura').classList.add('ativo');
   document.getElementById('resultado').scrollIntoView({behavior: 'smooth'});
 
   window.__sim = { valor: valor, diaria: diaria, ocup: ocup, taxa: taxa, custos: custos,
-    aluguel: aluguel, renda: renda, tempBruta: tempBruta, tempLiquida: tempLiquida, roiTemp: roiTemp,
+    aluguel: aluguel, renda: renda, limpeza: limpeza, duracao: duracao, estadias: estadias,
+    tempBruta: tempBruta, tempLiquida: tempLiquida, roiTemp: roiTemp,
     anBruta: anBruta, anLiquida: anLiquida, roiAn: roiAn, vdLiquida: vdLiquida, roiVd: roiVd,
     melhor: cenarios[0][2] };
 });
@@ -347,6 +374,7 @@ document.getElementById('enviar-simulacao').addEventListener('click', function()
     nome: nome, email: email, cidade: cidade,
     valor_imovel: s.valor, diaria: s.diaria, ocupacao_pct: s.ocup,
     taxa_admin_pct: s.taxa, custos_anuais: s.custos, aluguel_mensal: s.aluguel,
+    limpeza_por_estadia: s.limpeza, estadia_media_diarias: s.duracao, estadias_ano: s.estadias,
     melhor_cenario: s.melhor, roi_temporada: s.roiTemp.toFixed(1) + '%',
     roi_aluguel: s.roiAn.toFixed(1) + '%', roi_venda: s.roiVd.toFixed(1) + '%'
   };
@@ -368,7 +396,8 @@ document.getElementById('enviar-simulacao').addEventListener('click', function()
     + '<h2>Seus números</h2><table>'
     + '<tr><th>Imóvel</th><td>' + brl(s.valor) + '</td></tr>'
     + '<tr><th>Diária média</th><td>' + brl(s.diaria) + ' (mercado ' + cidade + ': ' + brl(bm.diaria) + ' — você está ' + compDiaria + ')</td></tr>'
-    + '<tr><th>Ocupação</th><td>' + s.ocup + '% (média ' + cidade + ': ' + bm.ocup + '% — você está ' + compOcup + ')</td></tr></table>'
+    + '<tr><th>Ocupação</th><td>' + s.ocup + '% (média ' + cidade + ': ' + bm.ocup + '% — você está ' + compOcup + ')</td></tr>'
+    + '<tr><th>Estadias/ano</th><td>~' + s.estadias + ' estadias de ' + s.duracao + ' diárias — limpezas: ' + brl(s.estadias * s.limpeza) + '/ano</td></tr></table>'
     + '<h2>Comparativo de cenários</h2><table>'
     + '<tr><th>Cenário</th><th>Líquido/ano</th><th>ROI</th></tr>'
     + '<tr><td>Temporada</td><td>' + brl(s.tempLiquida) + '</td><td>' + pct(s.roiTemp) + '</td></tr>'
@@ -422,8 +451,18 @@ function renderGrafico(){
 document.getElementById('calcular').addEventListener('click', function(){ setTimeout(renderGrafico, 50); });
 
 // Recalculo ao vivo ao alterar qualquer campo
-['valor','diaria','ocupacao','taxa','custos','aluguel','renda'].forEach(function(id){
+['valor','diaria','ocupacao','taxa','custos','aluguel','renda','limpeza','duracao'].forEach(function(id){
   document.getElementById(id).addEventListener('input', function(){ document.getElementById('calcular').click(); });
+});
+
+document.getElementById('ir-rf').addEventListener('change', function(){ document.getElementById('calcular').click(); });
+
+// Preset ativo destacado
+document.querySelectorAll('#presets .preset').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('#presets .preset').forEach(function(b){ b.classList.remove('ativo'); });
+    btn.classList.add('ativo');
+  });
 });
 
 // Simulação inicial automática ao abrir a página
