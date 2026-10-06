@@ -1,0 +1,19 @@
+name: Fix Blog H1
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix-h1:
+    if: ${{ !github.event.repository.fork }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Corrigir h1 quebrados do blog
+        run: python scripts/fix_blog_h1.py
