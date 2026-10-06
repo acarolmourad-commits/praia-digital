@@ -38,7 +38,21 @@
     th { background:#16213c; }
     .vencedor { background:rgba(46,160,67,.15); }
     button.btn { border:0; cursor:pointer; font-size:15px; }
-  </style>
+  
+    .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:22px 0}
+    .step{background:#0d1b2e;border-radius:14px;padding:18px;border-left:4px solid #22d3ee}
+    .step b{color:#fbbf24;display:block;margin-bottom:6px}
+    .presets{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 14px}
+    .preset{background:#123;border:1px solid #22d3ee;color:#e8f4ff;border-radius:999px;padding:8px 16px;cursor:pointer;font-size:14px;transition:.2s}
+    .preset:hover{background:#22d3ee;color:#0f172a;transform:translateY(-2px)}
+    .bar-row{display:grid;grid-template-columns:150px 1fr 110px;align-items:center;gap:10px;margin:8px 0;font-size:14px}
+    .bar-track{background:#0d1b2e;border-radius:8px;height:26px;overflow:hidden}
+    .bar-fill{height:100%;border-radius:8px;transition:width .8s ease;width:0}
+    .mkt-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:16px 0}
+    .mkt-card{background:#0d1b2e;border-radius:14px;padding:18px;text-align:center;border-top:4px solid}
+    .mkt-card .big{font-size:30px;font-weight:700}
+    .mkt-card small{opacity:.75;display:block;margin-top:6px}
+</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
 <script>
@@ -62,6 +76,23 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       <h1>Simulador de ROI</h1>
       <p class="lead">Compare o retorno anual do seu imóvel no litoral paulista em três cenários: <strong>temporada</strong>, <strong>aluguel anual</strong> e <strong>venda</strong> (com o valor investido em renda fixa).</p>
 
+      <div class="steps">
+        <div class="step"><b>1️⃣ Preencha ou escolha uma cidade</b>Use os botões abaixo para carregar dados reais de temporada (diária e ocupação média de anúncios reais) e ajuste para o seu imóvel.</div>
+        <div class="step"><b>2️⃣ Clique em Calcular</b>Comparamos 3 cenários: aluguel de temporada, aluguel anual e vender o imóvel para aplicar em renda fixa (Selic 13,75% a.a.).</div>
+        <div class="step"><b>3️⃣ Leia o veredito</b>O melhor cenário fica destacado, com gráfico comparativo e dica personalizada. Depois, receba a análise completa por e-mail.</div>
+      </div>
+
+      <p style="margin:4px 0 6px"><strong>⚡ Preencher com dados reais da cidade:</strong></p>
+      <div class="presets" id="presets">
+        <button type="button" class="preset" data-d="550" data-o="45" data-a="1900">Praia Grande</button>
+        <button type="button" class="preset" data-d="650" data-o="51" data-a="2600">Santos</button>
+        <button type="button" class="preset" data-d="720" data-o="48" data-a="2900">Guarujá</button>
+        <button type="button" class="preset" data-d="1080" data-o="68" data-a="3800">São Sebastião</button>
+        <button type="button" class="preset" data-d="950" data-o="62" data-a="3600">Ilhabela</button>
+        <button type="button" class="preset" data-d="820" data-o="58" data-a="2400">Ubatuba</button>
+        <button type="button" class="preset" data-d="480" data-o="38" data-a="1400">Mongaguá</button>
+      </div>
+
       <div class="card">
         <div class="grid">
           <div><label for="valor">Valor do imóvel (R$)</label><input id="valor" type="number" min="0" value="650000"></div>
@@ -84,10 +115,35 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
           <tr id="linha-anual"><td>Aluguel anual</td><td id="an-bruta"></td><td id="an-liquida"></td><td id="an-roi"></td></tr>
           <tr id="linha-venda"><td>Venda + renda fixa</td><td id="vd-bruta"></td><td id="vd-liquida"></td><td id="vd-roi"></td></tr>
         </table>
+        <div id="grafico-cenarios" style="margin-top:20px; display:none">
+          <h3 style="margin-bottom:10px;">Comparativo visual (receita líquida/ano)</h3>
+          <div class="bar-row"><span>🏖️ Temporada</span><div class="bar-track"><div class="bar-fill" id="bar-temp" style="background:#22d3ee"></div></div><strong id="lbl-temp"></strong></div>
+          <div class="bar-row"><span>📄 Aluguel anual</span><div class="bar-track"><div class="bar-fill" id="bar-an" style="background:#34d399"></div></div><strong id="lbl-an"></strong></div>
+          <div class="bar-row"><span>💰 Venda + renda fixa</span><div class="bar-track"><div class="bar-fill" id="bar-vd" style="background:#fbbf24"></div></div><strong id="lbl-vd"></strong></div>
+        </div>
         <p id="dica" style="margin-top:14px; opacity:.85;"></p>
       </div>
 
       
+      <div class="card resultado" id="mercado-agora" style="background:#0d1b2e;">
+        <h2>📈 O mercado agora (out/2026)</h2>
+        <p class="lead">Contexto real e atualizado para embasar sua simulação.</p>
+        <div class="mkt-grid">
+          <div class="mkt-card" style="border-color:#34d399"><div class="big" style="color:#34d399">+48%</div><small>nas vendas de imóveis em um único mês na Baixada Santista (G1, 01/out/2026)</small></div>
+          <div class="mkt-card" style="border-color:#fbbf24"><div class="big" style="color:#fbbf24">R$ 928 mil</div><small>valor médio do apartamento na região — acima da média estadual (CBN, mar/2026)</small></div>
+          <div class="mkt-card" style="border-color:#22d3ee"><div class="big" style="color:#22d3ee">R$ 828 mi</div><small>movimentados pelo mercado imobiliário da Baixada Santista (Boqnews, mai/2026)</small></div>
+          <div class="mkt-card" style="border-color:#a78bfa"><div class="big" style="color:#a78bfa">R$ 11,2–15,8 mil</div><small>por m² no alto padrão de Praia Grande, que atrai projetos recordes (Secovi-SP, jun/2026)</small></div>
+        </div>
+        <h3>Preço médio por m² (apartamentos, mediana de anúncios 2026)</h3>
+        <table>
+          <tr><th>Cidade</th><th>Preço/m²</th><th>Leitura para o investidor</th></tr>
+          <tr><td>Praia Grande</td><td>R$ 12.000</td><td>Melhor custo-benefício: entrada menor, demanda de temporada forte</td></tr>
+          <tr><td>Guarujá</td><td>R$ 15.000</td><td>Intermediário: público de alto poder aquisitivo, diárias altas</td></tr>
+          <tr><td>Santos</td><td>R$ 18.000</td><td>Mercado premium: valorização de 9,36% em 12 meses</td></tr>
+        </table>
+        <p style="opacity:.75; font-size:14px;">Fontes: G1 (01/out/2026), CBN Santos (mar/2026), Boqnews (mai/2026), Secovi-SP (jun/2026), Índice de preço por m² Praia Digital 2026. Valores de anúncios, não de transações.</p>
+      </div>
+
       <div class="card resultado" id="dados-reais" style="background:#0d1b2e;">
         <h2>📊 Dados reais de referência (set/2026)</h2>
         <p class="lead">Use estes números — de anúncios reais de temporada — para calibrar a simulação acima.</p>
@@ -331,6 +387,47 @@ document.getElementById('enviar-simulacao').addEventListener('click', function()
   document.getElementById('pos-envio').style.display = 'block';
   document.getElementById('pos-envio').scrollIntoView({behavior: 'smooth'});
 });
+</script>
+<script>
+// Presets por cidade: preenchem diária/ocupação/aluguel com dados reais e calculam
+document.querySelectorAll('#presets .preset').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    document.getElementById('diaria').value = btn.dataset.d;
+    document.getElementById('ocupacao').value = btn.dataset.o;
+    document.getElementById('aluguel').value = btn.dataset.a;
+    document.getElementById('calcular').click();
+    document.getElementById('resultado').scrollIntoView({behavior:'smooth', block:'start'});
+  });
+});
+
+function parseBRL(t){ return parseFloat((t||'').replace(/[^0-9,]/g,'').replace(',','.')) || 0; }
+
+function renderGrafico(){
+  var vals = [
+    ['temp', parseBRL(document.getElementById('temp-liquida').textContent)],
+    ['an',   parseBRL(document.getElementById('an-liquida').textContent)],
+    ['vd',   parseBRL(document.getElementById('vd-liquida').textContent)]
+  ];
+  if (vals.every(function(v){ return v[1] === 0; })) return;
+  var max = Math.max.apply(null, vals.map(function(v){ return Math.max(v[1], 0); }));
+  var box = document.getElementById('grafico-cenarios');
+  box.style.display = 'block';
+  vals.forEach(function(v){
+    var cellId = v[0] === 'temp' ? 'temp-liquida' : (v[0] === 'an' ? 'an-liquida' : 'vd-liquida');
+    var w = max > 0 ? Math.max(v[1],0) / max * 100 : 0;
+    document.getElementById('bar-' + v[0]).style.width = w + '%';
+    document.getElementById('lbl-' + v[0]).textContent = document.getElementById(cellId).textContent;
+  });
+}
+document.getElementById('calcular').addEventListener('click', function(){ setTimeout(renderGrafico, 50); });
+
+// Recalculo ao vivo ao alterar qualquer campo
+['valor','diaria','ocupacao','taxa','custos','aluguel','renda'].forEach(function(id){
+  document.getElementById(id).addEventListener('input', function(){ document.getElementById('calcular').click(); });
+});
+
+// Simulação inicial automática ao abrir a página
+window.addEventListener('load', function(){ document.getElementById('calcular').click(); });
 </script>
 <script src="https://praia.digital/js/shared.js?v=2.0"></script>
 </body>
