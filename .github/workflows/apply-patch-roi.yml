@@ -1,0 +1,19 @@
+name: Apply ROI Patch 2026-10-06
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: ${{ !github.event.repository.fork }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Aplicar patch na calculadora ROI
+        run: python scripts/patch_roi_20261006.py
