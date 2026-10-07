@@ -1,215 +1,198 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Assistente Virtual para Compradores | Praia Digital</title>
-  <meta name="description" content="Assistente virtual com IA para compradores de imóveis no litoral paulista: encontre imóveis por orçamento, cidade e perfil, agende visitas e fale com especialistas.">
-  <meta name="keywords" content="assistente virtual imobiliário, comprar imóvel litoral, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, apartamento vista mar, casa condomínio, investimento imobiliário">
-  <link rel="canonical" href="https://praia.digital/ferramentas/assistente-virtual.html">
-  <meta name="robots" content="index, follow">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Assistente Virtual para Compradores | Praia Digital">
-  <meta property="og:description" content="Encontre imóveis no litoral paulista com ajuda de IA: busca por orçamento e perfil, sugestões curadas e agendamento de visitas.">
-  <meta property="og:url" content="https://praia.digital/ferramentas/assistente-virtual.html">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Praia Digital — imóveis no litoral com IA">
-  <meta property="og:site_name" content="Praia Digital">
-  <meta property="og:locale" content="pt_BR">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Assistente Virtual para Compradores | Praia Digital">
-  <meta name="twitter:description" content="Encontre imóveis no litoral paulista com ajuda de IA.">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
-  <link rel="alternate" hreflang="pt-BR" href="https://praia.digital/ferramentas/assistente-virtual.html">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="referrer" content="no-referrer-when-downgrade">
-  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
-  <link rel="preconnect" href="https://praia.digital/" crossorigin>
-  <link rel="icon" type="image/x-icon" href="https://praia.digital/favicon.ico">
-  <link rel="apple-touch-icon" href="https://praia.digital/favicon.ico">
-  <link rel="manifest" href="https://praia.digital/manifest.json">
-  <meta name="theme-color" content="#0ea5e9">
-  <link rel="stylesheet" href="https://praia.digital/css/style.css">
-  <style>
-    body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;margin:0;padding:0;background:#07112b;color:#fff;line-height:1.6}
-    .container{max-width:880px;margin:0 auto;padding:24px}
-    .hero{text-align:center;padding:24px 0 8px}
-    .hero h1{font-size:1.9rem;margin:0 0 .5rem}
-    .hero p{color:#cbd5e1;max-width:640px;margin:0 auto}
-    .card{background:#0e214d;border-radius:12px;padding:24px;margin-top:16px}
-    .btn{background:#3b82f6;color:#fff;padding:12px 16px;border-radius:8px;border:0;cursor:pointer;font-size:16px;font-weight:600}
-    .btn:hover{background:#2563eb}
-    .btn-wa{display:inline-block;background:#22c55e;color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:700;margin-top:12px}
-    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #334155;background:#0b1a3a;color:#fff;margin-top:8px;box-sizing:border-box;font-family:inherit;font-size:15px}
-    label{font-weight:600;font-size:.95rem;color:#e2e8f0}
-    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-    .chip{background:#0b1a3a;border:1px solid #334155;color:#cbd5e1;padding:8px 12px;border-radius:999px;cursor:pointer;font-size:.85rem}
-    .chip:hover{border-color:#3b82f6;color:#fff}
-    .chat{background:#0b1a3a;border-radius:8px;padding:16px;margin-top:16px;min-height:120px;color:#e2e8f0}
-    .chat .msg{margin-bottom:12px}
-    .chat .who{font-weight:700;color:#93c5fd}
-    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:16px}
-    .feature{background:#0e214d;border-radius:12px;padding:18px}
-    .feature h3{margin:0 0 .4rem;font-size:1.05rem}
-    .feature p{margin:0;color:#cbd5e1;font-size:.9rem}
-    details{background:#0e214d;border-radius:10px;padding:14px 16px;margin-top:10px}
-    summary{cursor:pointer;font-weight:600}
-    details p{color:#cbd5e1;margin:.5rem 0 0}
-    a{color:#93c5fd}
-  </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Como solicitar mais informações?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Pelo WhatsApp ou formulário na página para atendimento rápido." }
-      },
-      {
-        "@type": "Question",
-        "name": "Quais cidades são atendidas?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Todo o litoral de SP: Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente e Peruíbe." }
-      },
-      {
-        "@type": "Question",
-        "name": "Quanto tempo para retorno?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Em até 24 horas após o contato, com atendimento humanizado." }
-      }
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Praia Digital",
-    "url": "https://praia.digital/",
-    "logo": "https://praia.digital/img/logo.png",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+55-11-95434-6288",
-      "contactType": "sales",
-      "areaServed": "BR",
-      "availableLanguage": ["pt-BR", "en"]
-    }
-  }
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    if (window.PD_GTAG_ID) {
-      var s = document.createElement('script');
-      s.async = true;
-      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.PD_GTAG_ID;
-      document.head.appendChild(s);
-      gtag('js', new Date());
-      gtag('config', window.PD_GTAG_ID, { anonymize_ip: true });
-    }
-  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assistente Virtual para Compradores | Praia Digital</title>
+<meta name="description" content="Assistente virtual com IA para compradores de imóveis no litoral paulista: encontre imóveis por orçamento, cidade e perfil, tire dúvidas de financiamento e fale com especialistas.">
+<meta name="keywords" content="assistente virtual imobiliário, comprar imóvel litoral, Santos, Guarujá, Praia Grande, Bertioga, financiamento 2026, FGTS, temporada, documentação imóvel">
+<link rel="canonical" href="https://praia.digital/ferramentas/assistente-virtual.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Como solicitar mais informações?", "acceptedAnswer": {"@type": "Answer", "text": "Pelo WhatsApp ou formulário na página, com atendimento em até 24 horas."}},
+    {"@type": "Question", "name": "Quais cidades são atendidas?", "acceptedAnswer": {"@type": "Answer", "text": "Todo o litoral de SP: Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente e Peruíbe."}},
+    {"@type": "Question", "name": "O assistente substitui um corretor?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Ele organiza opções e tira dúvidas iniciais; quem fecha o atendimento é um especialista humano."}}
+  ]
+}
+</script>
+<style>
+body{font-family:Segoe UI,Arial,sans-serif;background:#fff;color:#1f2937;margin:0;padding:0}
+.container{max-width:960px;margin:0 auto;padding:2rem}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:1.4rem;margin-bottom:1rem;box-shadow:0 4px 14px rgba(0,0,0,.06)}
+h1{font-size:1.6rem;margin-bottom:.4rem}
+h2{font-size:1.15rem;color:#0e7c7b;margin-top:0}
+label{display:block;color:#334155;font-weight:600;margin:.6rem 0 .2rem}
+textarea{width:100%;padding:12px;border-radius:10px;border:1px solid #cbd5e1;background:#f8fafc;color:#1f2937;box-sizing:border-box;font-family:inherit;font-size:1rem}
+.btn{display:inline-block;background:#0e7c7b;color:#fff;padding:12px 18px;border-radius:10px;border:0;cursor:pointer;font-weight:700;font-size:1rem;text-decoration:none}
+.btn:hover{background:#0b6867}
+.pill{display:inline-block;background:#e0f5f5;color:#0e7c7b;border-radius:999px;padding:4px 12px;font-size:.85rem;font-weight:700;margin:0 6px 6px 0}
+.chips{margin:.6rem 0}
+.chip{background:#e0f5f5;color:#0e7c7b;border:0;border-radius:999px;padding:8px 14px;margin:0 6px 6px 0;cursor:pointer;font-weight:700;font-size:.85rem}
+.chip:hover{background:#0e7c7b;color:#fff}
+.chat{margin-top:1rem;display:grid;gap:10px}
+.msg{padding:12px 14px;border-radius:12px;font-size:.95rem;line-height:1.5}
+.msg.user{background:#e0f5f5;color:#0f172a;justify-self:end;max-width:85%}
+.msg.bot{background:#f0fdfa;border:1px solid #99d9d8;color:#1f2937;max-width:92%}
+.msg.bot a{color:#0e7c7b;font-weight:700}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:1rem}
+.feature{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:1rem}
+.feature h3{margin:0 0 .3rem;font-size:1rem;color:#0e7c7b}
+.feature p{margin:0;font-size:.9rem;color:#475569}
+details{border:1px solid #e2e8f0;border-radius:10px;margin-bottom:8px;padding:10px 14px;background:#fff}
+summary{cursor:pointer;font-weight:700;color:#0f172a}
+details[open] summary{color:#0e7c7b}
+table{width:100%;border-collapse:collapse;font-size:.95rem}
+th,td{border:1px solid #e2e8f0;padding:8px 10px;text-align:left}
+th{background:#f1f5f9;color:#334155}
+a{color:#0e7c7b;text-decoration:none}
+a:hover{text-decoration:underline}
+.note{font-size:.85rem;color:#64748b;margin-top:.8rem}
+.toc{font-size:.95rem;margin:.4rem 0 0}
+.toc a{margin-right:14px;display:inline-block;padding:3px 0}
+</style>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Assistente Virtual para Compradores | Praia Digital">
+<meta property="og:description" content="Descreva o imóvel dos seus sonhos no litoral paulista e receba sugestões curadas, sem cadastro.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
+<meta property="og:site_name" content="Praia Digital">
+<meta property="og:url" content="https://praia.digital/ferramentas/assistente-virtual.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow">
+<meta property="og:locale" content="pt_BR">
+<link rel="stylesheet" href="https://praia.digital/css/style.css">
+<meta name="theme-color" content="#0ea5e9">
+<link rel="icon" type="image/x-icon" href="https://praia.digital/favicon.ico">
+<link rel="dns-prefetch" href="https://wa.me">
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+gtag('js', new Date());
+gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
+</script>
 </head>
 <body>
 <meta name="pd-shared-nav">
 <a class="skip-link" href="#main" style="position:absolute;left:-9999px;">Pular para o conteúdo</a>
 <main id="main">
-  <div class="container">
-    <div class="hero">
-      <h1>Assistente Virtual para Compradores</h1>
-      <p>Descreva o imóvel dos seus sonhos no litoral paulista e receba sugestões curadas pelo nosso assistente. Sem cadastro, direto ao ponto.</p>
-    </div>
+<div class="container">
 
-    <div class="card">
-      <label for="msg">Mensagem do comprador</label>
-      <textarea id="msg" rows="3">Quero um apartamento perto da praia, até R$ 800 mil.</textarea>
-      <div class="chips">
-        <button type="button" class="chip" data-q="Quero um apartamento perto da praia, até R$ 800 mil.">🏖️ Perto da praia até R$ 800 mil</button>
-        <button type="button" class="chip" data-q="Procuro casa em condomínio fechado em Bertioga para temporada.">🏡 Casa em condomínio em Bertioga</button>
-        <button type="button" class="chip" data-q="Quero investir em imóvel para renda de temporada no litoral.">📈 Investir em temporada</button>
-        <button type="button" class="chip" data-q="Como funciona a documentação para comprar imóvel no litoral?">📄 Dúvidas de documentação</button>
-      </div>
-      <button class="btn" style="margin-top:12px" onclick="responder()">Responder</button>
-      <div class="chat" id="chat" aria-live="polite"></div>
-    </div>
-
-    <div class="features">
-      <div class="feature">
-        <h3>🎯 Busca por perfil</h3>
-        <p>Orçamento, cidade, tipo de imóvel e estilo de vida — o assistente filtra o que realmente combina com você.</p>
-      </div>
-      <div class="feature">
-        <h3>📅 Agendamento de visitas</h3>
-        <p>Encontrou opções? Agende visita presencial ou virtual direto pelo WhatsApp com nossa equipe.</p>
-      </div>
-      <div class="feature">
-        <h3>🤝 Atendimento humanizado</h3>
-        <p>A IA organiza as opções; quem fecha com você é gente de verdade, em até 24 horas.</p>
-      </div>
-    </div>
-
-    <div class="card" style="text-align:center">
-      <h2 style="margin:0 0 .4rem">Prefere falar com um especialista?</h2>
-      <p style="color:#cbd5e1;margin:0 0 .4rem">Conte seu objetivo e receba uma seleção personalizada de imóveis no litoral.</p>
-      <a class="btn-wa" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Quero%20ajuda%20para%20encontrar%20um%20im%C3%B3vel%20no%20litoral." target="_blank" rel="noopener">💬 Falar no WhatsApp</a>
-    </div>
-
-    <h2>Perguntas frequentes</h2>
-    <details>
-      <summary>Como solicitar mais informações?</summary>
-      <p>Pelo WhatsApp ou formulário na página para atendimento rápido.</p>
-    </details>
-    <details>
-      <summary>Quais cidades são atendidas?</summary>
-      <p>Todo o litoral de SP: Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente e Peruíbe.</p>
-    </details>
-    <details>
-      <summary>Quanto tempo para retorno?</summary>
-      <p>Em até 24 horas após o contato, com atendimento humanizado.</p>
-    </details>
-
-    <p style="margin-top:16px"><a href="https://praia.digital/ferramentas/">← Ver todas as ferramentas</a> · <a href="https://praia.digital/">Voltar para a Praia Digital</a></p>
+  <div class="card">
+    <span class="pill">Sem cadastro</span><span class="pill">Resposta em segundos</span><span class="pill">Todo o litoral de SP</span>
+    <h1>Assistente Virtual para Compradores</h1>
+    <p>Descreva o que você procura — orçamento, cidade, tipo de imóvel ou dúvida — e receba uma orientação na hora, com links para as ferramentas certas.</p>
+    <p class="toc">Ir para: <a href="#assistente">Assistente</a> <a href="#como-funciona">Como funciona</a> <a href="#valores">Valores de referência</a> <a href="#faq">FAQ</a></p>
   </div>
+
+  <div class="card" id="assistente">
+    <h2>Converse com o assistente</h2>
+    <label for="msg">Sua mensagem</label>
+    <textarea id="msg" rows="3">Quero um apartamento perto da praia, até R$ 800 mil.</textarea>
+    <div class="chips">
+      <button type="button" class="chip" data-q="Quero um apartamento perto da praia, até R$ 800 mil.">🏖️ Perto da praia até R$ 800 mil</button>
+      <button type="button" class="chip" data-q="Procuro casa em condomínio fechado em Bertioga para temporada.">🏡 Casa em condomínio em Bertioga</button>
+      <button type="button" class="chip" data-q="Quero investir em imóvel para renda de temporada no litoral.">📈 Investir em temporada</button>
+      <button type="button" class="chip" data-q="Como funciona o financiamento em 2026? Consigo usar FGTS?">💰 Financiamento e FGTS</button>
+      <button type="button" class="chip" data-q="Como funciona a documentação para comprar imóvel no litoral?">📄 Documentação</button>
+      <button type="button" class="chip" data-q="Qual cidade tem o melhor custo-benefício?">🌆 Melhor cidade</button>
+    </div>
+    <button class="btn" onclick="responder()">Enviar</button>
+    <div class="chat" id="chat" aria-live="polite"></div>
+    <p class="note">O assistente usa regras e dados de mercado da Praia Digital. Para análise completa, fale com um especialista humano.</p>
+  </div>
+
+  <div id="como-funciona" class="features">
+    <div class="feature"><h3>🎯 Busca por perfil</h3><p>Orçamento, cidade, tipo de imóvel e estilo de vida — o assistente filtra o que realmente combina com você.</p></div>
+    <div class="feature"><h3>📅 Agendamento de visitas</h3><p>Encontrou opções? Agende visita presencial ou virtual direto pelo WhatsApp com nossa equipe.</p></div>
+    <div class="feature"><h3>🤝 Atendimento humanizado</h3><p>A IA organiza as opções; quem fecha com você é gente de verdade, em até 24 horas.</p></div>
+  </div>
+
+  <div class="card" id="valores">
+    <h2>Valores de referência no litoral (2025-2026)</h2>
+    <table>
+      <tr><th>Cidade</th><th>Preço médio m²</th><th>O que você encontra até R$ 800 mil</th></tr>
+      <tr><td>Santos</td><td>R$ 9.000 – 11.000</td><td>Aptos de 2 dorm. em bairros como Gonzaga e Embaré</td></tr>
+      <tr><td>Guarujá</td><td>R$ 6.000 – 8.000</td><td>Aptos na Enseada e Pitangueiras próximos à praia</td></tr>
+      <tr><td>Bertioga</td><td>R$ 5.000 – 7.000</td><td>Casas na Boracéia; aptos na Riviera (planta/médio padrão)</td></tr>
+      <tr><td>Praia Grande</td><td>R$ 4.500 – 6.000</td><td>Aptos novos de 2-3 dorm. a poucos quarteirões do mar</td></tr>
+      <tr><td>São Vicente</td><td>R$ 4.000 – 5.000</td><td>Aptos espaçosos; ótimo para moradia</td></tr>
+      <tr><td>Itanhaém / Mongaguá</td><td>R$ 3.000 – 4.000</td><td>Casas e aptos grandes; entrada acessível</td></tr>
+      <tr><td>Peruíbe</td><td>R$ 2.500 – 3.500</td><td>Menor preço da região; casas próximas à praia</td></tr>
+    </table>
+    <p class="note">Faixas de referência de mercado. O valor exato depende de bairro, andar, vista e estado do imóvel.</p>
+  </div>
+
+  <div class="card" style="text-align:center">
+    <h2 style="margin:0 0 .4rem">Prefere falar com um especialista?</h2>
+    <p style="color:#475569;margin:0 0 .8rem">Conte seu objetivo e receba uma seleção personalizada de imóveis no litoral.</p>
+    <a class="btn" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Quero%20ajuda%20para%20encontrar%20um%20im%C3%B3vel%20no%20litoral." target="_blank" rel="noopener">💬 Falar no WhatsApp</a>
+  </div>
+
+  <div class="card" id="faq">
+    <h2>Perguntas frequentes</h2>
+    <details><summary>Como solicitar mais informações?</summary><p>Pelo WhatsApp ou formulário na página, com retorno em até 24 horas.</p></details>
+    <details><summary>Quais cidades são atendidas?</summary><p>Todo o litoral de SP: Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente e Peruíbe.</p></details>
+    <details><summary>O assistente substitui um corretor?</summary><p>Não. Ele organiza opções e tira dúvidas iniciais; o atendimento final é feito por especialistas humanos.</p></details>
+    <details><summary>Consigo financiar com a Selic a 15%?</summary><p>Sim, mas planeje bem: taxas SBPE partem de ~11-12% a.a. Use a <a href="https://praia.digital/ferramentas/pre-qualificacao-credito-2026.html">pré-qualificação de crédito</a> para ver sua parcela estimada e o limite de 30% da renda.</p></details>
+    <details><summary>Vale a pena comprar ou é melhor alugar?</summary><p>Depende da relação parcela x aluguel e do seu horizonte. Teste no <a href="https://praia.digital/ferramentas/vale-a-pena-comprar-2026.html">simulador vale a pena comprar</a>.</p></details>
+  </div>
+
+  <p><a href="https://praia.digital/ferramentas/">← Todas as ferramentas</a> · <a href="https://wa.me/5511954346288" rel="noopener">Falar com especialista →</a></p>
+<meta name="pd-shared-footer">
+<script src="https://praia.digital/js/shared.js?v=2.1"></script>
+</div>
 </main>
 <script>
 (function () {
-  var WA = 'https://wa.me/5511954346288';
+  var WA='https://wa.me/5511954346288';
+  function link(t,u){return '<a href="'+u+'" target="_blank" rel="noopener">'+t+'</a>';}
   function respostaPara(msg) {
-    var m = msg.toLowerCase();
-    if (m.indexOf('document') !== -1) {
-      return 'Para comprar no litoral você vai precisar de: RG/CNPJ, comprovante de renda e certidões do imóvel. Nossa equipe acompanha toda a due diligence sem custo. Quer o checklist completo no WhatsApp?';
+    var m=(msg||'').toLowerCase();
+    if(/(financ|fgts|cr[eé]dito|parcela|entrada|selic|juros)/.test(m)){
+      return 'Em 2026, com a Selic a 15% a.a., as taxas de financiamento partem de ~11-12% a.a. (SBPE) e 9-10% a.a. (poupança). Os bancos limitam a parcela a 30% da renda e pedem entrada mínima de 20%. FGTS exige 3 anos de regime e nenhum imóvel na cidade. Faça agora a '+link('pré-qualificação de crédito','https://praia.digital/ferramentas/pre-qualificacao-credito-2026.html')+' — o cálculo é ao vivo.';
     }
-    if (m.indexOf('invest') !== -1 || m.indexOf('temporada') !== -1 || m.indexOf('renda') !== -1) {
-      return 'Boa escolha! No litoral paulista, imóveis de temporada bem localizados chegam a 8-12% de retorno ao ano. Separei 3 opções com alto potencial de ocupação. Quer receber pelo WhatsApp e simular o rendimento?';
+    if(/(document|escritura|itbi|registro|cart[óo]rio|contrato)/.test(m)){
+      return 'A compra envolve: 1) certidões do imóvel e do vendedor, 2) ITBI (2% em Santos, até 3% em outras cidades do litoral), 3) escritura pública e 4) registro no cartório de imóveis. Reserve ~5% do valor do imóvel para essas custas. Nosso time acompanha todo o processo: '+link('fale no WhatsApp',WA)+'.';
     }
-    if (m.indexOf('condom') !== -1 || m.indexOf('casa') !== -1) {
-      return 'Encontrei casas em condomínio fechado em Bertioga e Riviera dentro desse perfil — segurança, lazer completo e ótima liquidez. Posso enviar fotos e valores pelo WhatsApp. Quer agendar uma visita?';
+    if(/(temporada|airbnb|renda|investir|investimento|rentabilidade)/.test(m)){
+      return 'Temporada no litoral rende 8-12% a.a. brutos (ocupação média 40-50%), contra 5-6% do aluguel anual. Riviera de São Lourenço e Praia Grande lideram a demanda. Simule o retorno no '+link('simulador de ROI de temporada','https://praia.digital/apps/simulador-roi-temporada/')+' e veja se '+link('vale a pena comprar','https://praia.digital/ferramentas/vale-a-pena-comprar-2026.html')+'.';
     }
-    return 'Olá! Encontrei opções que combinam com seu orçamento: selecionei 3 imóveis perto da praia com boa avaliação e documentação verificada. Quer receber os detalhes pelo WhatsApp e agendar uma visita virtual?';
+    if(/(bertioga|riviera|condom[íi]nio)/.test(m)){
+      return 'Bertioga combina casas na Boracéia (ótimo custo-benefício) e o alto padrão da Riviera de São Lourenço, com diárias fortes na temporada. Preço médio: R$ 5-7 mil/m². Veja o '+link('guia completo de Bertioga','https://praia.digital/cidades/bertioga.html')+' e o imóvel em destaque: '+link('casa em condomínio fechado — R$ 595 mil','https://praia.digital/casa-condominio-fechado-bertioga.html')+'.';
+    }
+    if(/(cidade|melhor|custo|barata|onde)/.test(m)){
+      return 'Custo-benefício: Praia Grande e Itanhaém (m² acessível + alta demanda de temporada). Liquidez: Santos. Porta de entrada mais barata: Peruíbe (R$ 2,5-3,5 mil/m²). Compare todas no '+link('comparador de cidades','https://praia.digital/apps/comparador-cidades/')+'.';
+    }
+    if(/(alugar|aluguel|morar|moradia)/.test(m)){
+      return 'Com a Selic a 15%, compare sempre: aluguel equivale a ~0,45% do valor do imóvel ao mês. Se a parcela for até ~1,3x o aluguel e você fica 5+ anos, comprar tende a valer a pena. Teste no '+link('simulador comprar vs alugar','https://praia.digital/ferramentas/vale-a-pena-comprar-2026.html')+'.';
+    }
+    return 'Entendi! Com esse perfil, sugiro: 1) definir a cidade pelo '+link('guia de cidades','https://praia.digital/cidades/bertioga.html')+', 2) estimar o valor com a '+link('avaliação de preço','https://praia.digital/ferramentas/avaliacao-preco.html')+' e 3) ver o crédito na '+link('pré-qualificação','https://praia.digital/ferramentas/pre-qualificacao-credito-2026.html')+'. Se preferir, '+link('fale com um especialista agora',WA)+'.';
   }
+  var chat=document.getElementById('chat');
   window.responder = function () {
-    var msg = document.getElementById('msg').value.trim();
-    if (!msg) return;
-    var box = document.getElementById('chat');
-    var div = document.createElement('div');
-    div.className = 'msg';
-    div.innerHTML = '<span class="who">Comprador:</span> ' + msg.replace(/</g, '&lt;') +
-      '<br><br><span class="who">Assistente:</span> ' + respostaPara(msg) +
-      '<br><br><a href="' + WA + '?text=' + encodeURIComponent('Olá! ' + msg) + '" target="_blank" rel="noopener">💬 Continuar no WhatsApp</a>';
-    box.appendChild(div);
-    div.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    var el=document.getElementById('msg');
+    var texto=(el.value||'').trim();
+    if(!texto)return;
+    chat.innerHTML+='<div class="msg user">'+texto.replace(/</g,'&lt;')+'</div>';
+    chat.innerHTML+='<div class="msg bot">'+respostaPara(texto)+'</div>';
+    chat.scrollTop=chat.scrollHeight;
+    el.value='';
   };
-  var chips = document.querySelectorAll('.chip');
-  for (var i = 0; i < chips.length; i++) {
+  var chips=document.querySelectorAll('.chip');
+  for(var i=0;i<chips.length;i++){
     chips[i].addEventListener('click', function () {
-      document.getElementById('msg').value = this.getAttribute('data-q');
-      window.responder();
+      document.getElementById('msg').value=this.dataset.q;
+      responder();
     });
   }
+  document.getElementById('msg').addEventListener('keydown',function(e){
+    if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();responder();}
+  });
 })();
 </script>
 <meta name="pd-shared-footer">
-<script src="https://praia.digital/js/shared.js?v=2.1"></script>
 </body>
 </html>
