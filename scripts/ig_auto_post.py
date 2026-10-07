@@ -3,12 +3,16 @@
 Design v2: capa centralizada, cards coloridos com acento rotativo, CTA final.
 Roda 4x/dia via GitHub Actions (7h, 9h, 15h, 20h BRT). Escolhe tema rotativo da fila,
 gera artes 1080x1350, commita as imagens no repo e publica via Instagram Graph API."""
-import os, sys, json, time, datetime, subprocess, requests
+import argparse, os, sys, json, time, datetime, subprocess, requests
+try:
+    from .ig_content_validation import validate_queue
+except ImportError:
+    from ig_content_validation import validate_queue
 from PIL import Image, ImageDraw, ImageFont
 
 TOKEN = os.environ.get('IG_ACCESS_TOKEN','')
 IG = os.environ.get('IG_USER_ID','')
-REPO = os.environ['GITHUB_REPOSITORY']
+REPO = os.environ.get('GITHUB_REPOSITORY', '')
 API = 'https://graph.facebook.com/v21.0'
 RAW = f'https://raw.githubusercontent.com/{REPO}/main/social/auto'
 SLOTS_UTC = [10, 12, 18, 23]  # 7h, 9h, 15h, 20h em Brasilia (UTC-3)
@@ -76,8 +80,7 @@ def cta():
     ctext(d,1150,'Imoveis • Dados • IA para corretores',font(28,False),MUTED)
     return img
 
-def pick_topic():
-    queue=json.load(open('scripts/ig_content_queue.json'))
+def pick_topic(queue):
     now=datetime.datetime.now(datetime.timezone.utc)
     slot=min(range(4), key=lambda i: abs(now.hour-SLOTS_UTC[i]))
     idx=(now.toordinal()*4+slot)%len(queue)
@@ -89,8 +92,20 @@ def api(method, url, **kw):
     r=requests.request(method,url,timeout=60,**kw)
     r.raise_for_status(); return r.json()
 
-def main():
-    topic,ti = pick_topic()
+def main(argv=None):
+    parser = argparse.ArgumentParser(description="Validate and publish Instagram content")
+    parser.add_argument('--queue', default='scripts/ig_content_queue.json')
+    parser.add_argument('--dry-run', action='store_true',
+                        help='Validate all content only: no images, writes, git or API')
+    args = parser.parse_args(argv)
+    with open(args.queue, encoding='utf-8') as source:
+        queue = validate_queue(json.load(source))
+    if args.dry_run:
+        print(f"DRY-RUN OK: {len(queue)} topics, {sum(len(t['slides']) for t in queue)} slides; no side effects")
+        return 0
+    if not TOKEN or not IG or not REPO:
+        raise ValueError('IG_ACCESS_TOKEN, IG_USER_ID and GITHUB_REPOSITORY are required before any side effects')
+    topic,ti = pick_topic(queue)
     tag=f"{datetime.date.today().isoformat()}-{ti}"
     slides=[cover(topic['badge'],topic['title'])]
     for i,(kicker,big,small) in enumerate(topic['slides']):
@@ -123,7 +138,11 @@ def main():
     for _ in range(20):
         st=api('GET',f'{API}/{parent}?fields=status_code&access_token={TOKEN}').get('status_code')
         if st=='FINISHED': break
+        if st in ('ERROR', 'EXPIRED'):
+            raise RuntimeError('Instagram carousel processing failed; publication cancelled')
         time.sleep(5)
+    else:
+        raise RuntimeError('Instagram carousel did not finish; publication cancelled')
     pub=api('POST',f'{API}/{IG}/media_publish',data={'creation_id':parent,'access_token':TOKEN})
     print('PUBLICADO:', pub)
 
