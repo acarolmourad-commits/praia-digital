@@ -1,110 +1,57 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Partials — Header</title>
-<meta name="description" content="Partials — Header">
-<link rel="canonical" href="https://praia.digital/partials/header.html">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Partials — Header", "description": "Partials — Header", "url": "https://praia.digital/partials/header.html"}</script>
-<meta property="og:type" content="website">
-<meta property="og:title" content="Partials — Header">
-<meta property="og:description" content="Partials — Header">
-<meta property="og:url" content="https://praia.digital/partials/header.html">
-<meta property="og:image" content="https://praia.digital/img/default-home.jpg">
-</head>
-<body>
-<h1>Partials — Header</h1>
-<header class="pd-header" role="banner">
-  <!-- Logo -->
-  <a href="/" class="pd-logo" aria-label="Praia Digital — Início">
-    <img src="/img/logo.png" alt="Praia Digital" width="40" height="40" style="display:inline-block;vertical-align:middle;border-radius:8px;margin-right:.5rem"> <span style="vertical-align:middle">Praia Digital</span>
-  </a>
-
-  <!-- Mobile toggle -->
-  <button type="button"
-          class="pd-nav-toggle"
-          aria-expanded="false"
-          aria-controls="pd-nav-menu"
-          aria-label="Alternar menu de navegação"
-          onclick="document.getElementById('pd-nav-menu').classList.toggle('open'); this.setAttribute('aria-expanded', this.nextElementSibling.classList.contains('open'))">
-    <span></span><span></span><span></span> Menu
-  </button>
-
-  <!-- Main nav -->
-  <nav id="pd-nav-menu" class="pd-nav-menu" role="navigation" aria-label="Navegação principal">
-
-    <!-- QUERO INVESTIR -->
-    <div class="pd-nav-group" data-dropdown>
-      <a href="/apps/simulador-roi-temporada/" class="pd-nav-label" role="button" aria-expanded="false">
-        Quero Investir
-        <svg class="pd-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <polyline points="6 9 12 15 18 9"/>
-        </svg>
-      </a>
-      <div class="pd-nav-submenu">
-        <a href="/apps/simulador-roi-temporada/">Simulador de ROI</a>
-        <a href="/exclusivos/relatorio-mercado-2026.html">Relatórios de Valorização</a>
-        <a href="/cases.html">Oportunidades</a>
-      </div>
-    </div>
-
-    <!-- QUERO COMPRAR -->
-    <div class="pd-nav-group" data-dropdown>
-      <a href="/encontrar-imovel.html" class="pd-nav-label" role="button" aria-expanded="false">
-        Quero Comprar
-        <svg class="pd-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <polyline points="6 9 12 15 18 9"/>
-        </svg>
-      </a>
-      <div class="pd-nav-submenu">
-        <a href="/encontrar-imovel.html">Busca de Imóveis</a>
-        <a href="/bairros/index.html">Guia de Bairros</a>
-        <a href="/cases.html">Cases e Experiência</a>
-      </div>
-    </div>
-
-    <!-- SOU CORRETOR / IMOBILIÁRIA -->
-    <div class="pd-nav-group" data-dropdown>
-      <a href="/corretores/cadastrar-imovel.html" class="pd-nav-label" role="button" aria-expanded="false">
-        Sou Corretor / Imobiliária
-        <svg class="pd-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <polyline points="6 9 12 15 18 9"/>
-        </svg>
-      </a>
-      <div class="pd-nav-submenu">
-        <a href="/corretores/cadastrar-imovel.html">Cadastrar Imóveis</a>
-        <a href="/afiliados/index.html">Afiliados</a>
-        <a href="/education/index.html">Academy / Treinamentos</a>
-        <a href="/planos-assinatura.html">Planos &amp; Assinaturas</a>
-      </div>
-    </div>
-
-    <!-- FERRAMENTAS IA & ESTUDOS -->
-    <div class="pd-nav-group" data-dropdown>
-      <a href="/apps/" class="pd-nav-label" role="button" aria-expanded="false">
-        Ferramentas IA &amp; Estudos
-        <svg class="pd-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <polyline points="6 9 12 15 18 9"/>
-        </svg>
-      </a>
-      <div class="pd-nav-submenu">
-        <a href="/assets/servico-avaliacao-preco-imoveis-litoral.html">Avaliador de Imóveis</a>
-        <a href="/assets/servico-geracao-descricoes-anuncios-ia.html">Gerador de Descrições</a>
-        <a href="/calculadora-rendimento-temporada-2026.html">Calculadora de Rendimento</a>
-        <a href="/captura-leads-litoral-2026.html">Quero avaliação do meu bairro</a>
-        <a href="/blog/index.html">Blog &amp; Estudos</a>
-      </div>
-    </div>
-
-    <!-- CTA Button -->
-    <a href="https://wa.me/5511954346288"
-       class="pd-nav-cta"
-       aria-label="Falar no WhatsApp"
-       target="_blank" rel="noopener">
-      💬 Falar no WhatsApp
-    </a>
-  </nav>
+<header class="pd-header pd-site-header" data-pd-navigation="3" role="banner">
+<div class="pd-site-wrap">
+<a aria-label="Praia Digital — Início" class="pd-site-logo" href="/">Praia<span>Digital</span></a>
+<button aria-controls="pd-site-menu" aria-expanded="false" aria-label="Abrir menu de navegação" class="pd-site-toggle" type="button">☰ Menu</button><nav aria-label="Navegação principal" class="pd-site-menu" id="pd-site-menu">
+<div class="pd-site-group">
+<button aria-controls="pd-site-submenu-0" aria-expanded="false" aria-haspopup="true" class="pd-site-label" type="button">Comprar</button>
+<div class="pd-site-submenu" id="pd-site-submenu-0">
+<a href="/imoveis.html">Imóveis</a>
+<a href="/mapa-inteligente.html">Mapa</a>
+<a href="/cidades/bertioga.html">Cidades</a>
+<a href="/bairros/index.html">Bairros</a>
+<a href="/apps/comparador-cidades/index.html">Comparar cidades</a>
+</div>
+</div>
+<div class="pd-site-group">
+<button aria-controls="pd-site-submenu-1" aria-expanded="false" aria-haspopup="true" class="pd-site-label" type="button">Investir</button>
+<div class="pd-site-submenu" id="pd-site-submenu-1">
+<a href="/ferramentas/avaliacao-preco.html">Avaliação de imóvel</a>
+<a href="/apps/simulador-roi-temporada/index.html">ROI e temporada</a>
+<a href="/apps/calculadora-financiamento/">Financiamento</a>
+<a href="/ferramentas/vale-a-pena-comprar-2026.html">Vale a pena comprar?</a>
+<a href="/apps/alugar-ou-comprar/index.html">Comprar × alugar</a>
+</div>
+</div>
+<div class="pd-site-group">
+<button aria-controls="pd-site-submenu-2" aria-expanded="false" aria-haspopup="true" class="pd-site-label" type="button">Meu Imóvel</button>
+<div class="pd-site-submenu" id="pd-site-submenu-2">
+<a href="/meu-imovel.html">Central do proprietário</a>
+<a href="/ferramentas/avaliacao-preco.html">Avaliar meu imóvel</a>
+<a href="/anunciar-temporada.html">Anunciar temporada</a>
+<a href="/proprietarios/guia-do-proprietario.html">Guia do proprietário</a>
+</div>
+</div>
+<div class="pd-site-group">
+<button aria-controls="pd-site-submenu-3" aria-expanded="false" aria-haspopup="true" class="pd-site-label" type="button">Profissionais</button>
+<div class="pd-site-submenu" id="pd-site-submenu-3">
+<a href="/servicos.html">Soluções</a>
+<a href="/automacao-imobiliarias.html">Automação</a>
+<a href="/captacao-imoveis-litoral.html">Captação</a>
+<a href="/education/index.html">Academy</a>
+<a href="/planos-assinatura.html">Planos</a>
+</div>
+</div>
+<div class="pd-site-group">
+<button aria-controls="pd-site-submenu-4" aria-expanded="false" aria-haspopup="true" class="pd-site-label" type="button">Inteligência</button>
+<div class="pd-site-submenu" id="pd-site-submenu-4">
+<a href="/blog/index.html">Blog</a>
+<a href="/blog/indice-preco-m2-litoral-paulista-tabela-tendencias-2026.html">Índice de preço por m²</a>
+<a href="/ferramentas/index.html">Ferramentas</a>
+<a href="/apps/">Apps gratuitos</a>
+<a href="/ferramentas/assistente-virtual.html">Assistente IA</a>
+</div>
+</div>
+</nav>
+<a class="pd-site-cta" href="/interesse.html">Falar com especialista</a>
+</div>
 </header>
-</body>
-</html>
