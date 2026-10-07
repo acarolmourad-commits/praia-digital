@@ -20,37 +20,37 @@
   <style>
     :root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial; }
     * { box-sizing: border-box; }
-    body { margin: 0; background: #0b1220; color: #e8ecf1; }
+    body { margin: 0; background: #ffffff; color: #1f2937; }
     .wrap { max-width: 900px; margin: 0 auto; padding: 28px 22px; }
-    .lead { opacity: .85; line-height: 1.6; }
-    .btn { display: inline-block; margin-top: 18px; padding: 10px 14px; border-radius: 12px; background: #1f6feb; color: #fff; text-decoration: none; font-weight: 600; }
+    .lead { color: #4b5563; line-height: 1.6; }
+    .btn { display: inline-block; margin-top: 18px; padding: 10px 14px; border-radius: 12px; background: #0e7c7b; color: #fff; text-decoration: none; font-weight: 600; }
     footer { margin-top: 22px; opacity: .6; font-size: 12px; }
   
-    label { display:block; margin-top:14px; font-size:14px; font-weight:600; }
-    input, select { width:100%; padding:10px; margin-top:6px; border-radius:10px; border:1px solid #334; background:#101a30; color:#e8ecf1; font-size:15px; }
+    label { display:block; margin-top:14px; font-size:14px; font-weight:600; color:#111827; }
+    input, select { width:100%; padding:10px; margin-top:6px; border-radius:10px; border:1px solid #d1d5db; background:#ffffff; color:#111827; font-size:15px; }
     .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:0 16px; }
-    .card { background:#101a30; border:1px solid #233; border-radius:14px; padding:18px; margin-top:18px; }
+    .card { background:#ffffff; border:1px solid #e5e7eb; border-radius:14px; padding:18px; margin-top:18px; box-shadow:0 1px 4px rgba(0,0,0,.05); }
     .resultado { display:none; }
     .resultado.ativo { display:block; }
-    .destaque { color:#7ee787; font-size:26px; font-weight:700; }
+    .destaque { color:#0e7c7b; font-size:26px; font-weight:700; }
     table { width:100%; border-collapse:collapse; margin-top:12px; }
-    th, td { border:1px solid #334; padding:8px 10px; text-align:left; font-size:14px; }
-    th { background:#16213c; }
-    .vencedor { background:rgba(46,160,67,.15); }
+    th, td { border:1px solid #e5e7eb; padding:8px 10px; text-align:left; font-size:14px; }
+    th { background:#f3f4f6; color:#111827; }
+    .vencedor { background:rgba(14,124,123,.12); }
     button.btn { border:0; cursor:pointer; font-size:15px; }
   
     .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:22px 0}
-    .step{background:#0d1b2e;border-radius:14px;padding:18px;border-left:4px solid #22d3ee}
-    .step b{color:#fbbf24;display:block;margin-bottom:6px}
+    .step{background:#ffffff;border:1px solid #e5e7eb;border-radius:14px;padding:18px;border-left:4px solid #0e7c7b}
+    .step b{color:#b45309;display:block;margin-bottom:6px}
     .presets{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 14px}
-    .preset{background:#123;border:1px solid #22d3ee;color:#e8f4ff;border-radius:999px;padding:8px 16px;cursor:pointer;font-size:14px;transition:.2s}
-    .preset:hover{background:#22d3ee;color:#0f172a;transform:translateY(-2px)}
-    .preset.ativo{background:#22d3ee;color:#0f172a;font-weight:700;box-shadow:0 0 0 2px #7ee9ff}
+    .preset{background:#ffffff;border:1px solid #0e7c7b;color:#0e7c7b;border-radius:999px;padding:8px 16px;cursor:pointer;font-size:14px;transition:.2s}
+    .preset:hover{background:#0e7c7b;color:#ffffff;transform:translateY(-2px)}
+    .preset.ativo{background:#0e7c7b;color:#ffffff;font-weight:700;box-shadow:0 0 0 2px #99e4e3}
     .bar-row{display:grid;grid-template-columns:150px 1fr 110px;align-items:center;gap:10px;margin:8px 0;font-size:14px}
-    .bar-track{background:#0d1b2e;border-radius:8px;height:26px;overflow:hidden}
+    .bar-track{background:#f3f4f6;border-radius:8px;height:26px;overflow:hidden}
     .bar-fill{height:100%;border-radius:8px;transition:width .8s ease;width:0}
     .mkt-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:16px 0}
-    .mkt-card{background:#0d1b2e;border-radius:14px;padding:18px;text-align:center;border-top:4px solid}
+    .mkt-card{background:#ffffff;border:1px solid #e5e7eb;border-radius:14px;padding:18px;text-align:center;border-top:4px solid}
     .mkt-card .big{font-size:30px;font-weight:700}
     .mkt-card small{opacity:.75;display:block;margin-top:6px}
 </style>
@@ -129,7 +129,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       </div>
 
       
-      <div class="card resultado" id="mercado-agora" style="background:#0d1b2e;">
+      <div class="card resultado" id="mercado-agora" >
         <h2>📈 O mercado agora (out/2026)</h2>
         <p class="lead">Contexto real e atualizado para embasar sua simulação.</p>
         <div class="mkt-grid">
@@ -148,7 +148,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         <p style="opacity:.75; font-size:14px;">Fontes: G1 (01/out/2026), CBN Santos (mar/2026), Boqnews (mai/2026), Secovi-SP (jun/2026), Índice de preço por m² Praia Digital 2026. Valores de anúncios, não de transações.</p>
       </div>
 
-      <div class="card resultado" id="dados-reais" style="background:#0d1b2e;">
+      <div class="card resultado" id="dados-reais" >
         <h2>📊 Dados reais de referência (set/2026)</h2>
         <p class="lead">Use estes números — de anúncios reais de temporada — para calibrar a simulação acima.</p>
 
@@ -183,11 +183,11 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         <h3 style="margin-top:18px;">Benchmark de renda fixa</h3>
         <p>Selic em <strong>13,75% ao ano</strong> (Banco Central do Brasil, série temporal 432, consulta em out/2026). É o parâmetro usado no cenário "venda + renda fixa" — por isso atualizamos o campo "Rendimento de renda fixa" para <strong>13,75%</strong>.</p>
 
-        <p style="margin-top:14px; font-size:.85rem; opacity:.75;">Fontes: AirDNA (set/2026), Airbtics (2026–2026), GuestFavorites (set/2026), Banco Central do Brasil (out/2026). Valores baseados em <strong>preços anunciados</strong> de temporada, não em transações. Metodologia completa em <a href="/metodologia.html" style="color:#7ee9ff;">/metodologia.html</a> · Dados detalhados em <a href="/dados-ocupacao-temporada-litoral-sp-2026.html" style="color:#7ee9ff;">Dados de ocupação 2026</a>.</p>
+        <p style="margin-top:14px; font-size:.85rem; opacity:.75;">Fontes: AirDNA (set/2026), Airbtics (2025–2026), GuestFavorites (set/2026), Banco Central do Brasil (out/2026). Valores baseados em <strong>preços anunciados</strong> de temporada, não em transações. Metodologia completa em <a href="/metodologia.html" style="color:#0e7c7b;">/metodologia.html</a> · Dados detalhados em <a href="/dados-ocupacao-temporada-litoral-sp-2026.html" style="color:#0e7c7b;">Dados de ocupação 2026</a>.</p>
       </div>
 
       
-      <div class="card resultado" id="info-atual" style="background:#0d1b2e;">
+      <div class="card resultado" id="info-atual" >
         <h2>🗓️ Informações reais e atuais (out/2026)</h2>
 
         <h3 style="margin-top:18px;">Cenário macro — atualizado em out/2026</h3>
@@ -256,9 +256,9 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         </div>
         <button class="btn" id="enviar-simulacao" type="button">Enviar simulação completa para meu e-mail</button>
         <div id="pos-envio" style="display:none; margin-top:18px;">
-          <p style="color:#7ee787; font-weight:600;">✅ Recebido! A análise completa chega no seu e-mail em instantes.</p>
+          <p style="color:#15803d; font-weight:600;">✅ Recebido! A análise completa chega no seu e-mail em instantes.</p>
           <p><a class="btn" id="baixar-relatorio" href="#" download="simulacao-roi-praia-digital.html">⬇️ Baixar meu relatório agora</a></p>
-          <p class="lead" style="margin-top:14px;">💡 <strong>Seu relatório é uma prévia.</strong> A versão completa inclui comparativo por bairro, sazonalidade mês a mês da temporada 2026/2027 e estimativa de valorização do seu imóvel — nossos especialistas enviam junto com a análise. Quando quiser, <a href="/ferramentas/" style="color:#7ee9ff;">explore outras simulações gratuitas</a>.</p>
+          <p class="lead" style="margin-top:14px;">💡 <strong>Seu relatório é uma prévia.</strong> A versão completa inclui comparativo por bairro, sazonalidade mês a mês da temporada 2026/2027 e estimativa de valorização do seu imóvel — nossos especialistas enviam junto com a análise. Quando quiser, <a href="/ferramentas/" style="color:#0e7c7b;">explore outras simulações gratuitas</a>.</p>
         </div>
       </div>
     </main>
