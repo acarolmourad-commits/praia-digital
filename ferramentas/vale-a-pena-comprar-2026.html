@@ -1,72 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-        {
-      "@type": "Question",
-      "name": "Como solicitar mais informações?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Pelo WhatsApp ou formulário na página para atendimento rápido."
-      }
-    },    {
-      "@type": "Question",
-      "name": "Quais cidades são atendidas?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Todo o litoral de SP: Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente e Peruíbe."
-      }
-    },    {
-      "@type": "Question",
-      "name": "Quanto tempo para retorno?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Em até 24 horas após o contato, com atendimento humanizado."
-      }
-    }
+    {"@type": "Question", "name": "Vale a pena comprar imóvel no litoral em 2026?", "acceptedAnswer": {"@type": "Answer", "text": "Com a Selic em 15% a.a., financiar ficou caro, mas o litoral paulista valorizou acima da inflação em 2024-2025 e o yield de aluguel de temporada chega a 8-12% a.a. brutos. A resposta depende do objetivo: moradia, temporada ou renda anual."}},
+    {"@type": "Question", "name": "Qual o preço médio do m² no litoral de SP?", "acceptedAnswer": {"@type": "Answer", "text": "Em 2025-2026: Santos R$ 9-11 mil/m², Guarujá R$ 6-8 mil/m², Praia Grande R$ 4,5-6 mil/m², São Vicente R$ 4-5 mil/m², Bertioga R$ 5-7 mil/m², Itanhaém e Mongaguá R$ 3-4 mil/m², Peruíbe R$ 2,5-3,5 mil/m²."}},
+    {"@type": "Question", "name": "Comprar ou alugar: como decidir?", "acceptedAnswer": {"@type": "Answer", "text": "Compare a parcela do financiamento com o aluguel equivalente (cerca de 0,4% a 0,5% do valor do imóvel ao mês). Se a parcela for até ~30% maior que o aluguel, comprar tende a valer a pena no médio prazo."}},
+    {"@type": "Question", "name": "Quanto rende um imóvel de temporada no litoral?", "acceptedAnswer": {"@type": "Answer", "text": "Diárias de referência variam de R$ 250 a R$ 1.200 conforme cidade e padrão; com ocupação média de 40-50% ao ano, o yield bruto fica entre 8% e 12% a.a."}}
   ]
 }
 </script>
-
 <meta charset="UTF-8">
-  
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vale a pena comprar? | Praia Digital</title>
-<meta name="keywords" content="Vale a pena comprar? | Praia Digital, Simulador de viabilidade imobiliária: preço, entrada, financiamento e objetivo no litoral paulista., imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
-  <meta name="description" content="Simulador de viabilidade imobiliária: preço, entrada, financiamento e objetivo no litoral paulista.">
+<meta name="keywords" content="Vale a pena comprar, simulador imobiliário litoral paulista, comprar ou alugar, preço m2 Santos Guarujá Praia Grande, investimento temporada, yield aluguel, financiamento 2026">
+<meta name="description" content="Simulador de viabilidade imobiliária 2025-2026: compare comprar vs alugar, veja preço por m² por cidade, yield de temporada e nota de investimento ao vivo.">
 <link rel="canonical" href="https://praia.digital/ferramentas/vale-a-pena-comprar-2026.html">
 <style>
-body{font-family:Segoe UI,Arial,sans-serif;background:#0f172a;color:#f8fafc;margin:0;padding:0}
+body{font-family:Segoe UI,Arial,sans-serif;background:#fff;color:#1f2937;margin:0;padding:0}
 .container{max-width:960px;margin:0 auto;padding:2rem}
-.card{background:#111827;border-radius:14px;padding:1.4rem;margin-bottom:1rem;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:1.4rem;margin-bottom:1rem;box-shadow:0 4px 14px rgba(0,0,0,.06)}
 h1{font-size:1.6rem;margin-bottom:.4rem}
-label{display:block;color:#cbd5e1;font-weight:600;margin:.6rem 0 .2rem}
-input,select{width:100%;padding:12px;border-radius:10px;border:1px solid #334155;background:#0b152b;color:#fff}
-.btn{display:inline-block;margin-top:1rem;background:#2563eb;color:#fff;padding:12px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
-.result{background:#0b152b;border:1px solid #1f2b47;border-radius:12px;padding:1rem;margin-top:1rem;color:#e2e8f0}
-.metric{display:inline-flex;flex-direction:column;min-width:120px;background:#0f172a;border:1px solid #1f2b47;padding:.7rem;border-radius:10px;margin:.4rem .4rem 0 0}
-.metric strong{color:#fbbf24;font-size:1.1rem}
-a{color:#38bdf8;text-decoration:none}
+h2{font-size:1.15rem;color:#0e7c7b;margin-top:0}
+label{display:block;color:#334155;font-weight:600;margin:.6rem 0 .2rem}
+input,select{width:100%;padding:12px;border-radius:10px;border:1px solid #cbd5e1;background:#f8fafc;color:#1f2937;box-sizing:border-box}
+.btn{display:inline-block;margin-top:1rem;background:#0e7c7b;color:#fff;padding:12px 18px;border-radius:10px;border:0;cursor:pointer;font-weight:700;font-size:1rem}
+.btn:hover{background:#0b6867}
+.result{background:#f0fdfa;border:1px solid #99d9d8;border-radius:12px;padding:1rem;margin-top:1rem;color:#1f2937}
+a{color:#0e7c7b;text-decoration:none}
+a:hover{text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.pill{display:inline-block;background:#e0f5f5;color:#0e7c7b;border-radius:999px;padding:4px 12px;font-size:.85rem;font-weight:700;margin:0 6px 6px 0}
+.metric{display:inline-flex;flex-direction:column;min-width:130px;flex:1;background:#f8fafc;border:1px solid #e2e8f0;padding:.8rem;border-radius:10px;margin:.4rem .4rem 0 0}
+.metric strong{color:#0e7c7b;font-size:1.05rem;margin-top:2px}
+.metric span{font-size:.8rem;color:#64748b}
+.bar{height:14px;background:#e2e8f0;border-radius:999px;overflow:hidden;margin:6px 0}
+.bar>div{height:100%;background:#0e7c7b;transition:width .2s}
+.key{font-size:.92rem;color:#475569}
+.verdict{font-size:1.1rem;font-weight:700;padding:10px 14px;border-radius:10px;margin-top:8px}
+.v-sim{background:#dcfce7;color:#166534}
+.v-talvez{background:#fef9c3;color:#854d0e}
+.v-nao{background:#fee2e2;color:#991b1b}
+details{border:1px solid #e2e8f0;border-radius:10px;margin-bottom:8px;padding:10px 14px;background:#fff}
+summary{cursor:pointer;font-weight:700;color:#0f172a}
+details[open] summary{color:#0e7c7b}
+table{width:100%;border-collapse:collapse;font-size:.95rem}
+th,td{border:1px solid #e2e8f0;padding:8px 10px;text-align:left}
+th{background:#f1f5f9;color:#334155}
+.note{font-size:.85rem;color:#64748b;margin-top:.8rem}
+.chips{margin:.3rem 0 .8rem}
+.chips button{background:#e0f5f5;color:#0e7c7b;border:0;border-radius:999px;padding:6px 14px;margin:0 6px 6px 0;cursor:pointer;font-weight:700;font-size:.85rem}
+.chips button:hover{background:#0e7c7b;color:#fff}
+.toc{font-size:.95rem;margin:.4rem 0 0}
+.toc a{margin-right:14px;display:inline-block;padding:3px 0}
 </style>
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Vale a pena comprar? | Praia Digital">
-  <meta property="og:description" content="Simulador de viabilidade imobiliária: preço, entrada, financiamento e objetivo no litoral paulista.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Praia Digital — imóveis no litoral com IA">
-  <meta property="og:site_name" content="Praia Digital">
-  <meta property="og:url" content="https://praia.digital/ferramentas/vale-a-pena-comprar-2026.html">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Vale a pena comprar? | Praia Digital">
-  <meta name="twitter:description" content="Simulador de viabilidade imobiliária: preço, entrada, financiamento e objetivo no litoral paulista.">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
-  <link rel="alternate" hreflang="pt-BR" href="https://praia.digital/ferramentas/vale-a-pena-comprar-2026.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vale a pena comprar? | Praia Digital">
+<meta property="og:description" content="Simulador de viabilidade imobiliária: comprar vs alugar, preço por m² e yield de temporada no litoral paulista.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Praia Digital — imóveis no litoral com IA">
+<meta property="og:site_name" content="Praia Digital">
+<meta property="og:url" content="https://praia.digital/ferramentas/vale-a-pena-comprar-2026.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vale a pena comprar? | Praia Digital">
+<meta name="twitter:description" content="Simulador de viabilidade imobiliária: comprar vs alugar, preço por m² e yield de temporada no litoral paulista.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
+<link rel="alternate" hreflang="pt-BR" href="https://praia.digital/ferramentas/vale-a-pena-comprar-2026.html">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="referrer" content="no-referrer-when-downgrade">
 <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
@@ -85,23 +89,12 @@ a{color:#38bdf8;text-decoration:none}
   "name": "Praia Digital",
   "url": "https://praia.digital/",
   "logo": "https://praia.digital/img/logo.png",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+55-11-95434-6288",
-    "contactType": "sales",
-    "areaServed": "BR",
-    "availableLanguage": ["pt-BR", "en"]
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-    "opens": "09:00",
-    "closes": "18:00"
-  }
+  "contactPoint": {"@type": "ContactPoint", "telephone": "+55-11-95434-6288", "contactType": "sales", "areaServed": "BR", "availableLanguage": ["pt-BR", "en"]},
+  "openingHoursSpecification": {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "09:00", "closes": "18:00"}
 }
 </script>
-  <link rel="dns-prefetch" href="https://images.unsplash.com">
-
+<link rel="dns-prefetch" href="https://images.unsplash.com">
+<link rel="dns-prefetch" href="https://wa.me">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
 <script>
@@ -114,51 +107,173 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 <body>
 <meta name="pd-shared-nav">
 <a class="skip-link" href="#main" style="position:absolute;left:-9999px;">Pular para o conteúdo</a>
-<div class="container">
-  <div class="card"><h1>Vale a pena comprar?</h1><p>Preencha os dados e receba uma análise rápida de viabilidade de investimento.</p></div>
+<div class="container" id="main">
+
   <div class="card">
-    <label>Cidade</label><input id="cidade" placeholder="Ex: Bertioga">
-    <label>Preço do imóvel (R$)</label><input id="preco" type="number" placeholder="Ex: 500000">
-    <label>Entrada (R$)</label><input id="entrada" type="number" placeholder="Ex: 100000">
-    <label>Financiamento (R$)</label><input id="financiamento" type="number" placeholder="Ex: 400000">
-    <label>Objetivo</label>
-    <select id="objetivo"><option value="">Selecione</option><option>Moradia</option><option>Investimento temporada</option><option>Aluguel anual</option><option>Consórcio</option></select>
-    <button class="btn" onclick="analisar()">Analisar viabilidade</button>
-    <div class="result" id="result" style="display:none"></div>
+    <span class="pill">Atualizado 2025-2026</span><span class="pill">Selic 15% a.a.</span><span class="pill">Dados por cidade</span>
+    <h1>Vale a pena comprar?</h1>
+    <p>Descubra em segundos se comprar esse imóvel faz sentido para o seu objetivo — com números reais do litoral paulista e cálculo automático enquanto você digita.</p>
+    <p class="toc">Ir para: <a href="#simulador">Simulador</a> <a href="#precos">Preços por m²</a> <a href="#comprar-alugar">Comprar vs alugar</a> <a href="#temporada">Temporada</a> <a href="#faq">FAQ</a></p>
   </div>
-  <p><a href="https://praia.digital/">← Voltar</a></p>
+
+  <div class="card" id="simulador">
+    <h2>Simulador de viabilidade</h2>
+    <div class="chips">
+      <button type="button" onclick="setCidade('Santos')">Santos</button>
+      <button type="button" onclick="setCidade('Guarujá')">Guarujá</button>
+      <button type="button" onclick="setCidade('Praia Grande')">Praia Grande</button>
+      <button type="button" onclick="setCidade('Bertioga')">Bertioga</button>
+      <button type="button" onclick="setCidade('São Vicente')">São Vicente</button>
+      <button type="button" onclick="setCidade('Itanhaém')">Itanhaém</button>
+      <button type="button" onclick="setCidade('Mongaguá')">Mongaguá</button>
+      <button type="button" onclick="setCidade('Peruíbe')">Peruíbe</button>
+    </div>
+    <div class="grid">
+      <div><label for="cidade">Cidade</label><input id="cidade" placeholder="Ex: Bertioga"></div>
+      <div><label for="area">Área útil (m²)</label><input id="area" type="number" min="0" placeholder="Ex: 65"></div>
+    </div>
+    <div class="grid">
+      <div><label for="preco">Preço do imóvel (R$)</label><input id="preco" type="number" min="0" placeholder="Ex: 500000"></div>
+      <div><label for="entrada">Entrada (R$)</label><input id="entrada" type="number" min="0" placeholder="Ex: 100000"></div>
+    </div>
+    <div class="grid">
+      <div><label for="financiamento">Financiamento (R$)</label><input id="financiamento" type="number" min="0" placeholder="Ex: 400000"></div>
+      <div><label for="objetivo">Objetivo</label>
+        <select id="objetivo">
+          <option>Moradia</option>
+          <option>Investimento temporada</option>
+          <option>Aluguel anual</option>
+          <option>Consórcio</option>
+        </select>
+      </div>
+    </div>
+    <button class="btn" onclick="analisar(true)">Analisar viabilidade</button>
+    <div class="result" id="result" style="display:none"></div>
+    <p class="note">Estimativas com médias de mercado do litoral paulista (2025-2026). Financiamento calculado pela tabela Price, 30 anos, taxa média SBPE de ~11,5% a.a.</p>
+  </div>
+
+  <div class="card" id="precos">
+    <h2>Preço médio por m² no litoral (2025-2026)</h2>
+    <table>
+      <tr><th>Cidade</th><th>Preço médio m²</th><th>Perfil do mercado</th></tr>
+      <tr><td>Santos</td><td>R$ 9.000 – 11.000</td><td>Mais valorizado; alta liquidez e demanda o ano todo</td></tr>
+      <tr><td>Guarujá</td><td>R$ 6.000 – 8.000</td><td>Forte em temporada; condomínios podem pesar no custo</td></tr>
+      <tr><td>Bertioga</td><td>R$ 5.000 – 7.000</td><td>Riviera puxa a média; bom para temporada de alto padrão</td></tr>
+      <tr><td>Praia Grande</td><td>R$ 4.500 – 6.000</td><td>Maior volume de lançamentos; bom custo-benefício</td></tr>
+      <tr><td>São Vicente</td><td>R$ 4.000 – 5.000</td><td>Mercado de moradia; preços mais estáveis</td></tr>
+      <tr><td>Itanhaém</td><td>R$ 3.000 – 4.000</td><td>Entrada acessível; valorização crescente</td></tr>
+      <tr><td>Mongaguá</td><td>R$ 3.000 – 4.000</td><td>Popular para segunda residência</td></tr>
+      <tr><td>Peruíbe</td><td>R$ 2.500 – 3.500</td><td>Menor preço da região; perfil tranquilo</td></tr>
+    </table>
+    <p class="note">Faixas de referência compiladas de portais e índices de mercado (FipeZAP e correlatos). O valor exato depende de bairro, andar, vista e estado do imóvel.</p>
+  </div>
+
+  <div class="card" id="comprar-alugar">
+    <h2>Comprar ou alugar? A conta de 2026</h2>
+    <p>Com a Selic em 15% a.a., o dinheiro rende ~1,15% ao mês no CDI — isso tornou a comparação mais importante do que nunca:</p>
+    <table>
+      <tr><th>Cenário (imóvel de R$ 500 mil)</th><th>Valor mensal</th></tr>
+      <tr><td>Aluguel equivalente (0,45% do valor)</td><td>~R$ 2.250</td></tr>
+      <tr><td>Parcela do financiamento (20% de entrada, 30 anos)</td><td>~R$ 4.300</td></tr>
+      <tr><td>Rendimento da entrada no CDI (R$ 100 mil)</td><td>~R$ 1.150/mês</td></tr>
+    </table>
+    <p class="key"><strong>Regra prática:</strong> se a parcela for até ~30% maior que o aluguel e você pretende ficar 5+ anos, comprar tende a valer a pena. Acima disso, alugar e investir a diferença pode render mais — a menos que o objetivo seja renda com temporada.</p>
+  </div>
+
+  <div class="card" id="temporada">
+    <h2>Temporada e aluguel anual: quanto rende</h2>
+    <table>
+      <tr><th>Modalidade</th><th>Yield bruto típico</th><th>Observações</th></tr>
+      <tr><td>Temporada (Airbnb)</td><td>8% – 12% a.a.</td><td>Ocupação média 40-50%; exige gestão, limpeza e mobília</td></tr>
+      <tr><td>Aluguel anual</td><td>5% – 6% a.a.</td><td>Renda estável e previsível; menos trabalho</td></tr>
+      <tr><td>CDI (referência)</td><td>~14,9% a.a. bruto</td><td>Comparação importante com Selic a 15% — imóvel precisa somar yield + valorização</td></tr>
+    </table>
+    <p class="key">Valorização média do litoral paulista ficou entre 8% e 15% a.a. em 2024-2025, acima da inflação — o que, somado ao yield, sustenta o caso de compra para investimento.</p>
+  </div>
+
+  <div class="card" id="faq">
+    <h2>Perguntas frequentes</h2>
+    <details><summary>Vale a pena comprar imóvel no litoral em 2026?</summary><p>Depende do objetivo. Para moradia de longo prazo, sim — preços seguem valorizando. Para investimento, a conta precisa somar yield de aluguel + valorização acima do CDI (~14,9% a.a. bruto). Temporada bem gerida costuma passar disso; aluguel anual sozinho, não.</p></details>
+    <details><summary>Qual cidade tem melhor custo-benefício?</summary><p>Praia Grande e Itanhaém combinam preço por m² acessível e alta demanda de temporada. Santos tem a maior liquidez para revenda. Peruíbe é a porta de entrada mais barata.</p></details>
+    <details><summary>Com a Selic a 15%, financiar ainda compensa?</summary><p>Com taxas de 11-12% a.a., o custo total do financiamento está alto. Quanto maior a entrada (ideal: 30-40%), melhor a conta. Consórcio volta a ser alternativa interessante para quem não tem pressa.</p></details>
+    <details><summary>Quais custas além do preço do imóvel?</summary><p>ITBI (2% em Santos, até 3% em outras cidades), escritura e registro (1% a 2%) e, em lançamentos, taxa de evolução de obra. Reserve ~5% do valor do imóvel.</p></details>
+    <details><summary>Temporada ou aluguel anual: qual rende mais?</summary><p>Temporada rende até o dobro (8-12% vs 5-6% a.a.), mas exige mobília completa, gestão ativa e aceita sazonalidade: forte no verão e feriados, fraca no inverno.</p></details>
+    <details><summary>Quais cidades atendemos?</summary><p>Todo o litoral paulista: Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente e Peruíbe.</p></details>
+  </div>
+
+  <p><a href="https://praia.digital/ferramentas/pre-qualificacao-credito-2026.html">Pré-qualificação de crédito →</a> · <a href="https://wa.me/5511954346288" rel="noopener">Falar com especialista no WhatsApp →</a></p>
 <meta name="pd-shared-footer">
 <script src="https://praia.digital/js/shared.js?v=2.0"></script>
-</body>
+</div>
 <script>
-function fmt(v){return typeof v==='number'?'R$ '+v.toLocaleString('pt-BR'):String(v)}
-function analisar(){
-  const cidade=(document.getElementById('cidade').value'Litoral').trim();
-  const preco=parseFloat(document.getElementById('preco').value)0;
-  const entrada=parseFloat(document.getElementById('entrada').value)0;
-  const financiamento=parseFloat(document.getElementById('financiamento').value)0;
-  const objetivo=(document.getElementById('objetivo').value'Investimento').trim();
-  const score=Math.min(10, Math.max(1, +(7.5 + Math.random()*2.1).toFixed(1)));
-  const valoracao=Math.min(18, Math.max(3, +(preco*0.0045).toFixed(1)));
-  const diariaBase=Math.min(1200, Math.max(180, Math.round(preco*0.0018)));
-  const airbnbYield=Math.min(14, Math.max(2.5, +(preco?((diariaBase*180)/(preco1))*100:0).toFixed(1)));
-  const perfil=objetivo.includes('temporada')?'Perfil: temporada / curta estadia':
-               objetivo.includes('anual')?'Perfil: aluguel anual / caixa recorrente':
-               objetivo.includes('consórcio')?'Perfil: consórcio / médio prazo':
-               'Perfil: moradia + potencial de valorização';
-  const box=document.getElementById('result');
+var M2={'Santos':10000,'Guarujá':7000,'Praia Grande':5200,'Bertioga':6000,'São Vicente':4500,'Itanhaém':3500,'Mongaguá':3500,'Peruíbe':3000};
+var DIARIA={'Santos':550,'Guarujá':500,'Praia Grande':380,'Bertioga':520,'São Vicente':320,'Itanhaém':280,'Mongaguá':280,'Peruíbe':250};
+function fmt(v){return typeof v==='number'?'R$ '+v.toLocaleString('pt-BR',{minimumFractionDigits:0,maximumFractionDigits:0}):String(v)}
+function setCidade(c){document.getElementById('cidade').value=c;analisar(false)}
+function norm(s){return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()}
+function achar(mapa,cidade){var n=norm(cidade);for(var k in mapa){if(norm(k)===n)return mapa[k]}return null}
+function parcelaPrice(c,meses,taxaM){return c*(Math.pow(1+taxaM,meses)*taxaM)/(Math.pow(1+taxaM,meses)-1)}
+function analisar(showEmpty){
+  var cidade=(document.getElementById('cidade').value||'').trim();
+  var area=parseFloat(document.getElementById('area').value)||0;
+  var preco=parseFloat(document.getElementById('preco').value)||0;
+  var entrada=parseFloat(document.getElementById('entrada').value)||0;
+  var financ=parseFloat(document.getElementById('financiamento').value)||0;
+  var objetivo=document.getElementById('objetivo').value;
+  var box=document.getElementById('result');
+  if(!preco){if(showEmpty){box.style.display='block';box.innerHTML='<p>Preencha ao menos a cidade e o preço do imóvel para analisar.</p>';}return;}
+  if(!financ)financ=Math.max(0,preco-entrada);
+  var taxaM=Math.pow(1.115,1/12)-1;
+  var parcela=financ>0?parcelaPrice(financ,360,taxaM):0;
+  var aluguelMes=preco*0.0045;
+  var m2ref=achar(M2,cidade);
+  var diaria=achar(DIARIA,cidade)||Math.min(1200,Math.max(180,Math.round(preco*0.0012)));
+  var yieldTemp=Math.min(14,Math.max(2.5,(diaria*150)/preco*100));
+  var yieldAnual=5.4;
+  var m2preco=area?preco/area:0;
+  var desvio=m2ref&&area?((m2preco-m2ref)/m2ref*100):null;
+  var ratio=aluguelMes>0?parcela/aluguelMes:9;
+  var pctEntrada=preco?entrada/preco:0;
+  var score=5;
+  score+=Math.min(2,pctEntrada*5);
+  score+=desvio!==null?(desvio<=0?1.5:(desvio>15?-1.5:(desvio>5?-0.5:0.5))):0;
+  if(objetivo==='Investimento temporada')score+=yieldTemp>=9?1.5:(yieldTemp>=6?0.5:-1);
+  if(objetivo==='Aluguel anual')score+=-0.5;
+  if(objetivo==='Moradia')score+=ratio<=1.3?1.5:(ratio<=1.8?0.5:-1);
+  if(objetivo==='Consórcio')score+=0.5;
+  score=Math.min(10,Math.max(1,Math.round(score*10)/10));
+  var veredicto,cls;
+  if(score>=7){veredicto='✅ Vale a pena comprar';cls='v-sim';}
+  else if(score>=5){veredicto='🟡 Vale a pena com ressalvas';cls='v-talvez';}
+  else{veredicto='🔴 Melhor revisar antes de comprar';cls='v-nao';}
+  var dicas=[];
+  if(desvio!==null&&desvio>5)dicas.push('o preço por m² está '+desvio.toFixed(0)+'% acima da média de '+cidade+' — há margem para negociar');
+  if(desvio!==null&&desvio<=-5)dicas.push('o preço por m² está '+Math.abs(desvio).toFixed(0)+'% abaixo da média de '+cidade+' — oportunidade, mas verifique documentação e estado do imóvel');
+  if(pctEntrada<0.2)dicas.push('a entrada está abaixo de 20%; bancos costumam exigir ao menos isso');
+  if(ratio>1.8&&objetivo==='Moradia')dicas.push('a parcela está muito acima do aluguel equivalente; considere aumentar a entrada ou negociar o preço');
+  if(objetivo==='Investimento temporada')dicas.push('reserve 10-15% do valor para mobília completa e gestão de temporada');
+  if(!dicas.length)dicas.push('os números estão equilibrados para o seu objetivo');
   box.style.display='block';
-  box.innerHTML=`<p><strong>Este imóvel possui potencial de valorização de médio prazo.</strong></p>
-    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px">
-      <div class="metric"><strong>Nota de investimento</strong>${score}/10</div>
-      <div class="metric"><strong>Valorização estimada</strong>${valoracao}% em 36 meses</div>
-      <div class="metric"><strong>Yield</strong>${airbnbYield}% a.a.</div>
-      <div class="metric"><strong>Diária de referência</strong>${fmt(diariaBase)}/dia</div>
-    </div>
-    <p style="margin-top:10px"><strong>Rentabilidade Airbnb:</strong> até ${airbnbYield}% a.a. no cenário base de ocupação sazonal.</p>
-    <p><strong>${perfil}</strong></p>
-    <p style="margin-top:10px;color:#94a3b8;font-size:.85rem">*Estimativa baseada em médias do litoral paulista. Consulte um especialista.</p>`;
+  box.innerHTML='<div class="verdict '+cls+'">'+veredicto+'</div>'
+    +'<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:10px">'
+    +'<div class="metric"><span>Nota de investimento</span><strong>'+score+'/10</strong></div>'
+    +(m2preco&&m2ref?'<div class="metric"><span>Seu m² vs média '+(cidade||'cidade')+'</span><strong>'+fmt(m2preco)+' vs '+fmt(m2ref)+'</strong></div>':'')
+    +'<div class="metric"><span>Yield temporada</span><strong>'+yieldTemp.toFixed(1)+'% a.a.</strong></div>'
+    +'<div class="metric"><span>Diária de referência</span><strong>'+fmt(diaria)+'/dia</strong></div>'
+    +'</div>'
+    +(financ>0?'<p style="margin-top:10px"><strong>Parcela estimada:</strong> '+fmt(parcela)+'/mês · <strong>Aluguel equivalente:</strong> '+fmt(aluguelMes)+'/mês (relação '+ratio.toFixed(1)+'x)</p>'
+      +'<div class="bar"><div style="width:'+Math.min(100,ratio/2*100)+'%"></div></div>'
+      +'<p class="key">Comprar tende a valer a pena quando a parcela é até ~1,3x o aluguel e o horizonte é de 5+ anos.</p>':'')
+    +'<p style="margin-top:10px"><strong>O que observar:</strong> '+dicas.join('; ')+'.</p>'
+    +'<p class="key" style="margin-top:6px">Perfil: '+(objetivo==='Investimento temporada'?'temporada / curta estadia':objetivo==='Aluguel anual'?'aluguel anual / renda recorrente':objetivo==='Consórcio'?'consórcio / médio prazo':'moradia + potencial de valorização')+'</p>'
+    +'<p><a href="https://wa.me/5511954346288" rel="noopener">Quer uma análise completa? Fale com um especialista →</a></p>'
+    +'<p class="note">*Estimativa baseada em médias do litoral paulista (2025-2026). Não constitui recomendação de investimento.</p>';
 }
+['cidade','area','preco','entrada','financiamento','objetivo'].forEach(function(id){
+  var el=document.getElementById(id);
+  el.addEventListener('input',function(){analisar(false)});
+  el.addEventListener('change',function(){analisar(false)});
+});
 </script>
 <meta name="pd-shared-footer">
 </body>
