@@ -87,13 +87,25 @@ class Layout(HTMLParser):
         if tag in self.stack:
             self.stack = self.stack[:len(self.stack) - 1 - self.stack[::-1].index(tag)]
 
+def preserve_header_intro(fragment):
+    """Keep editorial headings, descriptions, forms and scripts from mixed legacy headers."""
+    elements = [m.group(0) for m in re.finditer(
+        r'<(?P<tag>h[1-6]|p|form|section|article|figure|picture|script|style)\b[^>]*>.*?</(?P=tag)\s*>',
+        fragment, flags=re.I | re.S)]
+    if not elements:
+        return ''
+    return ('<div class="pd-preserved-intro" style="max-width:1120px;margin:0 auto;padding:20px">'
+            + ''.join(elements) + '</div>')
+
 def transform(text, header):
     parsed = Layout(text)
     parsed.feed(text)
     if parsed.redirect or parsed.body_end is None or parsed.head_close is None:
         return text, False
     for start, end in sorted(parsed.ranges, reverse=True):
-        text = text[:start] + text[end:]
+        fragment = text[start:end]
+        intro = preserve_header_intro(fragment) if re.match(r'<header\b', fragment, re.I) else ''
+        text = text[:start] + intro + text[end:]
     # Remove only assets owned by this builder; leave all application scripts/styles intact.
     text = re.sub(r'<link\b[^>]*href[^>]*?/assets/css/pd-navigation\.css[^>]*>\s*', '', text, flags=re.I)
     text = re.sub(r'<script\b[^>]*src[^>]*?/js/pd-navigation\.js[^>]*>\s*</script>\s*', '', text, flags=re.I)
@@ -110,7 +122,13 @@ def build(root):
             report['skipped'].append(str(rel))
             continue
         text = path.read_text(encoding='utf-8', errors='surrogateescape')
-        updated, included = transform(repair_heading(rel.as_posix(), text), header)
+        prepared = repair_heading(rel.as_posix(), text)
+        updated, included = transform(prepared, header)
+        if included:
+            from collections import Counter
+            headings = lambda html: Counter(re.findall(r'<h1\b[^>]*>.*?</h1\s*>', html, re.I | re.S))
+            if headings(prepared) != headings(updated):
+                raise ValueError(f'Navigation build would alter content headings: {rel}')
         if included:
             path.write_text(updated, encoding='utf-8', errors='surrogateescape')
         report['included' if included else 'skipped'].append(str(rel))

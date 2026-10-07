@@ -45,6 +45,17 @@ class ValidatorTests(unittest.TestCase):
             self.assertEqual(nav.repair_heading(path, '<h1>Custom title</h1>'), '<h1>Custom title</h1>')
         self.assertEqual(nav.repair_heading('other.html', '<h1></h1>'), '<h1></h1>')
 
+    def test_mixed_navigation_header_preserves_editorial_content(self):
+        fragment = '<header><h1>Serviços</h1><p>Escolha seu perfil</p><nav><ul><li><a href="/old">Old menu</a></li></ul></nav></header>'
+        text = '<html><head></head><body>' + fragment + '<main>Original content</main></body></html>'
+        fixed, ok = nav.transform(text, '<header class="pd-site-header">New menu</header>')
+        self.assertTrue(ok)
+        self.assertIn('<h1>Serviços</h1>', fixed)
+        self.assertIn('<p>Escolha seu perfil</p>', fixed)
+        self.assertIn('<main>Original content</main>', fixed)
+        self.assertNotIn('/old', fixed)
+        self.assertEqual(nav.transform(fixed, '<header class="pd-site-header">New menu</header>')[0], fixed)
+
     def test_audit_allows_self_canonical_but_rejects_wrong_page(self):
         workflow = (ROOT / '.github/workflows/seo-page-audit.yml').read_text()
         script = textwrap.dedent(workflow.split("python3 - << 'EOF'\n", 1)[1].split('          EOF', 1)[0])
