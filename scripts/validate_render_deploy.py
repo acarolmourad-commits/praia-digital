@@ -5,7 +5,9 @@ Uso:
   python scripts/validate_render_deploy.py
 """
 
+import argparse
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -20,7 +22,26 @@ def check(name, condition, detail=""):
     print(f"[{status}] {name}" + (f" — {detail}" if detail else ""))
 
 
+def branch_context_valid(branch, mode, env):
+    """Accept PR merge checkouts only for validation, never for production deployment."""
+    actions = env.get("GITHUB_ACTIONS") == "true"
+    event = env.get("GITHUB_EVENT_NAME", "")
+    ref = env.get("GITHUB_REF", "")
+    if mode == "pr":
+        return (actions and event == "pull_request" and
+                env.get("GITHUB_BASE_REF") == "main" and
+                bool(re.fullmatch(r"refs/pull/\d+/merge", ref)))
+    if mode != "deployment":
+        return False
+    if actions:
+        return event in {"push", "workflow_dispatch"} and ref == "refs/heads/main"
+    return branch == "main"
+
+
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--check-mode", choices=["deployment", "pr"], default="deployment")
+    args = parser.parse_args()
     print("=== Validação Pré-Deploy — Praia Digital Academy ===\n")
 
     # 1. Branch principal
@@ -28,7 +49,8 @@ def main():
         os.chdir(REPO_ROOT)
         with os.popen("git rev-parse --abbrev-ref HEAD") as f:
             branch = f.read().strip()
-        check("Branch principal", branch == "main", branch)
+        check("Contexto de branch", branch_context_valid(branch, args.check_mode, os.environ),
+              f"{args.check_mode}: {branch}; ref={os.environ.get('GITHUB_REF', 'local')}")
     except Exception as e:
         check("Branch principal", False, str(e))
 

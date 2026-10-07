@@ -3,9 +3,9 @@ name: SEO Page Audit
 on:
   push:
     branches: [main]
-    paths: ['**.html']
+    paths: ['**.html', 'scripts/build-navigation.py', '.github/workflows/seo-page-audit.yml']
   pull_request:
-    paths: ['**.html']
+    paths: ['**.html', 'scripts/build-navigation.py', '.github/workflows/seo-page-audit.yml']
   workflow_dispatch:
 
 jobs:
@@ -13,6 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Prepare published navigation and IA headings
+        run: python3 scripts/build-navigation.py
 
       - name: Audit HTML pages (canonical, metas, schema)
         run: |
@@ -36,7 +39,7 @@ jobs:
 
                   canonicals = re.findall(r'<link[^>]+rel="canonical"[^>]*>', html)
                   bad_canon = [c for c in canonicals if BAD_CANONICAL in c]
-                  if bad_canon:
+                  if bad_canon and path != BAD_CANONICAL:
                       issues.append(f'ERROR {path}: canonical aponta para página errada ({BAD_CANONICAL})')
                   if len(canonicals) > 1:
                       issues.append(f'WARN  {path}: {len(canonicals)} tags canonical duplicadas')
@@ -66,7 +69,7 @@ jobs:
           print(f'Páginas auditadas: {scanned}')
           errors = [i for i in issues if i.startswith('ERROR')]
           warns = [i for i in issues if i.startswith('WARN')]
-          for i in issues[:200]:
+          for i in (errors + warns)[:200]:
               print(i)
           if len(issues) > 200:
               print(f'... e mais {len(issues)-200} ocorrências')

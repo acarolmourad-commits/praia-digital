@@ -11,10 +11,21 @@ permissions:
 
 jobs:
   deploy:
+    concurrency:
+      group: pages
+      cancel-in-progress: false
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Prepare shared navigation
+        run: |
+          python3 -m unittest discover -s tests -p 'test_navigation.py'
+          python3 scripts/build-navigation.py --report "$RUNNER_TEMP/navigation-report.json"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

@@ -45,12 +45,15 @@ jobs:
           git status --porcelain
 
       - name: Pre-deploy validation
-        run: python scripts/validate_render_deploy.py
+        run: python scripts/validate_render_deploy.py --check-mode ${{ github.event_name == 'pull_request' && 'pr' || 'deployment' }}
 
       - name: Validate 64-course inventory
         run: python scripts/validate_academy_inventory.py
 
   deploy-preview:
+    concurrency:
+      group: pages
+      cancel-in-progress: false
     needs: test
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -63,6 +66,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Prepare shared navigation
+        run: python3 scripts/build-navigation.py
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

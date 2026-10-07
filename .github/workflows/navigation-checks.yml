@@ -1,0 +1,55 @@
+name: Shared navigation checks
+
+on:
+  pull_request:
+    paths:
+      - 'partials/header.html'
+      - 'assets/css/pd-navigation.css'
+      - 'js/pd-navigation.js'
+      - 'scripts/build-navigation.py'
+      - 'scripts/validate_render_deploy.py'
+      - 'tests/test_ci_validators.py'
+      - 'tests/test_navigation.py'
+      - 'tests/navigation-browser.cjs'
+      - '.github/workflows/deploy.yml'
+      - '.github/workflows/navigation-checks.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  navigation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unit tests
+        run: python3 -m unittest discover -s tests -p 'test_navigation.py' -v
+      - name: Validator regression tests
+        run: python3 -m unittest discover -s tests -p 'test_ci_validators.py' -v
+      - name: JavaScript syntax
+        run: node --check js/pd-navigation.js
+      - name: Build public navigation (no deployment)
+        run: python3 scripts/build-navigation.py --report "$RUNNER_TEMP/navigation-report.json"
+      - name: Verify reference pages
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          report = json.loads(Path(os.environ['RUNNER_TEMP'], 'navigation-report.json').read_text())
+          for name in ['index.html', 'imoveis.html', 'cidades/bertioga.html', 'cidades/santos.html', 'cidades/guaruja.html', 'cidades/praia-grande.html']:
+              assert name in report['included'], name
+              text = Path(name).read_text()
+              assert text.count('data-pd-navigation="3"') == 1, name
+              assert 'pd-shared-nav' not in text, name
+          print('Reference pages validated')
+          PY
+      - name: Browser interaction tests
+        run: |
+          npm install --prefix "$RUNNER_TEMP/pd-navigation" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/pd-navigation/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          NODE_PATH="$RUNNER_TEMP/pd-navigation/node_modules" node tests/navigation-browser.cjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: navigation-coverage
+          path: ${{ runner.temp }}/navigation-report.json
