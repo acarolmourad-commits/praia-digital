@@ -7,6 +7,8 @@ on:
       - 'assets/css/pd-navigation.css'
       - 'js/pd-navigation.js'
       - 'scripts/build-navigation.py'
+      - 'scripts/validate_render_deploy.py'
+      - 'tests/test_ci_validators.py'
       - 'tests/test_navigation.py'
       - 'tests/navigation-browser.cjs'
       - '.github/workflows/deploy.yml'
@@ -22,6 +24,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Unit tests
         run: python3 -m unittest discover -s tests -p 'test_navigation.py' -v
+      - name: Validator regression tests
+        run: python3 -m unittest discover -s tests -p 'test_ci_validators.py' -v
       - name: JavaScript syntax
         run: node --check js/pd-navigation.js
       - name: Build public navigation (no deployment)

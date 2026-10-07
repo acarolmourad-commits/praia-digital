@@ -12,6 +12,23 @@ EXCLUDED = {'.git', '.github', '.audit', '.hermes-tmp-idempotency', 'backup', 'b
 ASSETS = ('<link rel="stylesheet" href="/assets/css/pd-navigation.css?v=3">\n'
           '<script defer src="/js/pd-navigation.js?v=3"></script>\n')
 
+IA_HEADINGS = {
+    'ia/ia-mercado.html': 'IA para Análise de Mercado',
+    'ia/ia-captacao.html': 'IA para Captação',
+    'ia/ia-investidores.html': 'IA para Investidores',
+    'ia/ia-marketing.html': 'IA para Marketing',
+    'ia/ia-gestao.html': 'IA para Gestão',
+}
+
+def repair_heading(path, text):
+    """Restore only known empty IA headings, using existing page titles."""
+    title = IA_HEADINGS.get(path)
+    if title is None:
+        return text
+    return re.sub(r'(<h1\b[^>]*>)\s*(?:&gt;|>)?\s*(</h1>)',
+                  lambda m: m.group(1) + title + m.group(2),
+                  text, count=1, flags=re.I)
+
 class Layout(HTMLParser):
     def __init__(self, text):
         super().__init__(convert_charrefs=False)
@@ -93,7 +110,7 @@ def build(root):
             report['skipped'].append(str(rel))
             continue
         text = path.read_text(encoding='utf-8', errors='surrogateescape')
-        updated, included = transform(text, header)
+        updated, included = transform(repair_heading(rel.as_posix(), text), header)
         if included:
             path.write_text(updated, encoding='utf-8', errors='surrogateescape')
         report['included' if included else 'skipped'].append(str(rel))
