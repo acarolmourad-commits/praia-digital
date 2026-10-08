@@ -26,6 +26,7 @@ jobs:
         run: |
           python3 -m unittest discover -s tests -p 'test_navigation.py'
           python3 scripts/build-navigation.py --report "$RUNNER_TEMP/navigation-report.json"
+          python3 scripts/fix_empty_h1.py
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
