@@ -93,7 +93,8 @@ def main():
     topic,ti = pick_topic()
     tag=f"{datetime.date.today().isoformat()}-{ti}"
     slides=[cover(topic['badge'],topic['title'])]
-    for i,(kicker,big,small) in enumerate(topic['slides']):
+    for i,sl in enumerate(topic['slides']):
+        kicker,big,small=(list(sl)+['','',''])[:3]
         slides.append(card(kicker,big,small,PALETTE[i%len(PALETTE)]))
     slides.append(cta())
     total=len(slides)
