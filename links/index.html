@@ -3,152 +3,171 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Praia Digital — Portal Riviera & Bertioga</title>
-  <meta name="description" content="Central de links do Praia Digital: simulador de rentabilidade, guia de automação, top 10 acessórios, cadastro de imóveis e atendimento VIP.">
-  <meta name="keywords" content="Praia Digital, Riviera de São Lourenço, Bertioga, links úteis, simulador rentabilidade, automação, acessórios praia">
+  <title>Links úteis: apps, imóveis e atendimento | Praia Digital</title>
+  <meta name="description" content="Acesse apps imobiliários gratuitos, simule rentabilidade, cadastre imóveis como corretor e encontre atendimento e guias para o litoral paulista.">
   <link rel="canonical" href="https://praia.digital/links/index.html">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Praia Digital — Portal Riviera & Bertioga">
-  <meta property="og:description" content="Central de links do Praia Digital: simulador de rentabilidade, guia de automação, top 10 acessórios, cadastro de imóveis e atendimento VIP.">
+  <meta property="og:title" content="Links úteis | Praia Digital">
+  <meta property="og:description" content="Apps gratuitos, cadastro para corretores, atendimento e guias em um só lugar.">
   <meta property="og:url" content="https://praia.digital/links/index.html">
   <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Praia Digital — imóveis no litoral com IA">
+  <meta property="og:image:alt" content="Praia Digital — inteligência imobiliária para o litoral">
   <meta property="og:site_name" content="Praia Digital">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Praia Digital — Portal Riviera & Bertioga">
-  <meta name="twitter:description" content="Central de links do Praia Digital: simulador de rentabilidade, guia de automação, top 10 acessórios, cadastro de imóveis e atendimento VIP.">
+  <meta name="twitter:title" content="Links úteis | Praia Digital">
+  <meta name="twitter:description" content="Apps gratuitos, cadastro para corretores, atendimento e guias em um só lugar.">
   <meta name="twitter:image" content="https://praia.digital/img/default-home.jpg">
   <link rel="stylesheet" href="/css/style.css">
-<style>
-    .links-wrap { max-width: 640px; margin: 2rem auto; padding: 0 1.25rem; }
-    .links-title { font-size: clamp(1.6rem, 3.6vw, 2.4rem); font-weight: 800; text-align: center; margin-bottom: 0.5rem; color: #023047; }
-    .links-sub { text-align: center; color: #555; margin-bottom: 1.5rem; }
-    .link-card { display: flex; align-items: center; gap: 1rem; padding: 1.1rem 1.25rem; border-radius: 18px; background: #fff; text-decoration: none; color: #023047; box-shadow: 0 4px 18px rgba(0,0,0,0.08); transition: transform .2s, box-shadow .2s; margin-bottom: 1rem; }
-    .link-card:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(0,0,0,0.12); }
-    .link-icon { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 14px; background: linear-gradient(135deg, #0077B6, #00B4D8); color: #fff; font-size: 1.3rem; flex-shrink: 0; }
-    .link-body { flex: 1; }
-    .link-body strong { display: block; font-size: 1rem; font-weight: 700; }
-    .link-body span { font-size: 0.82rem; color: #666; }
-    .link-arrow { color: #90E0EF; font-size: 1.1rem; }
-    .link-whatsapp { background: linear-gradient(135deg, #0f3460, #1a1a2e); color: #fff; }
-    .link-whatsapp .link-icon { background: linear-gradient(135deg, #25D366, #128C7E); }
+  <link rel="stylesheet" href="/assets/css/pd-navigation.css?v=3">
+  <script defer src="/js/pd-navigation.js?v=3"></script>
+  <style>
+    .links-wrap{max-width:720px;margin:2rem auto;padding:0 1.25rem}
+    .links-title{font-size:clamp(1.6rem,3.6vw,2.4rem);text-align:center;color:#023047}
+    .links-sub{color:#475569;text-align:center;margin:1rem 0 1.5rem}
+    .link-card{display:flex;align-items:center;gap:1rem;padding:1.1rem 1.25rem;border-radius:18px;background:#fff;text-decoration:none;color:#023047;box-shadow:0 4px 18px rgba(0,0,0,.08);margin-bottom:1rem}
+    .link-icon{width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:14px;background:#0077b6;color:#fff;font-size:1.3rem;flex-shrink:0}
+    .link-body{flex:1;min-width:0}.link-body strong{display:block;font-size:1rem}.link-body span{font-size:.9rem;color:#475569}
+    .link-arrow{color:#475569}.links-note{font-size:.9rem;color:#475569;margin:1rem 0}
+    .links-wrap a:focus-visible,.skip-link:focus-visible{outline:3px solid #0077b6;outline-offset:4px}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .skip-link{position:absolute;left:1rem;top:-100px;z-index:100;background:#fff;padding:1rem}.skip-link:focus{top:1rem}
+    .links-wrap .affiliate-grid{grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr))}
+    .links-wrap .affiliate-showcase{padding:1.25rem}.links-wrap footer{text-align:center;margin-top:2rem}
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <nav aria-label="Navegação principal">
-        <div class="logo">
-          <p class="brand">🏖️ Praia Digital</p>
-          <p class="tagline">Links</p>
-        </div>
-        <ul class="nav-menu">
-          <li><a href="https://praia.digital/index.html">Início</a></li>
-          <li><a href="https://praia.digital/servicos.html">Serviços</a></li>
-          <li><a href="/corretores/cadastrar-imovel.html">Corretores</a></li>
-          <li><a href="/afiliados/index.html">Afiliados</a></li>
-          <li></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main id="main">
-      <section class="links-wrap">
-        <h1 class="links-title">Praia Digital — Portal Riviera & Bertioga</h1>
-        <p class="links-sub">Conteúdo, ferramentas e atendimento em um só lugar.</p>
-
-        <a class="link-card" href="/blog/guia-ar-condicionado-inverter-adegas-climatizadas-fechaduras-digitais-praia-riviera-2026.html">
-          <div class="link-icon">⚡</div>
-          <div class="link-body">
-            <strong>Automação e Conforto Doméstico High-Ticket</strong>
-            <span>Guia 2026: inverter com proteção contra maresia, adegas climatizadas, fechaduras digitais e desumidificadores.</span>
-          </div>
-          <div class="link-arrow">›</div>
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
+<header class="pd-header pd-site-header" data-pd-navigation="3" role="banner">
+<div class="pd-site-wrap">
+<a aria-label="Praia Digital — Início" class="pd-site-logo" href="/">Praia<span>Digital</span></a>
+<button aria-controls="pd-site-menu" aria-expanded="false" aria-label="Abrir menu de navegação" class="pd-site-toggle" type="button">☰ Menu</button><nav aria-label="Navegação principal" class="pd-site-menu" id="pd-site-menu">
+<div class="pd-site-group">
+<button aria-controls="pd-site-submenu-0" aria-expanded="false" aria-haspopup="true" class="pd-site-label" type="button">Comprar</button>
+<div class="pd-site-submenu" id="pd-site-submenu-0">
+<a href="/imoveis.html">Imóveis</a>
+<a href="/mapa-inteligente.html">Mapa</a>
+<a href="/cidades/bertioga.html">Cidades</a>
+<a href="/bairros/index.html">Bairros</a>
+<a href="/apps/comparador-cidades/index.html">Comparar cidades</a>
+</div>
+</div>
+<div class="pd-site-group">
+<button aria-controls="pd-site-submenu-1" aria-expanded="false" aria-haspopup="true" class="pd-site-label" type="button">Investir</button>
+<div class="pd-site-submenu" id="pd-site-submenu-1">
+<a href="/ferramentas/avaliacao-preco.html">Avaliação de imóvel</a>
+<a href="/apps/simulador-roi-temporada/index.html">ROI e temporada</a>
+<a href="/apps/calculadora-financiamento/">Financiamento</a>
+<a href="/ferramentas/vale-a-pena-comprar-2026.html">Vale a pena comprar?</a>
+<a href="/apps/alugar-ou-comprar/index.html">Comprar × alugar</a>
+</div>
+</div>
+<div class="pd-site-group">
+<button aria-controls="pd-site-submenu-2" aria-expanded="false" aria-haspopup="true" class="pd-site-label" type="button">Meu Imóvel</button>
+<div class="pd-site-submenu" id="pd-site-submenu-2">
+<a href="/meu-imovel.html">Central do proprietário</a>
+<a href="/ferramentas/avaliacao-preco.html">Avaliar meu imóvel</a>
+<a href="/anunciar-temporada.html">Anunciar temporada</a>
+<a href="/proprietarios/guia-do-proprietario.html">Guia do proprietário</a>
+</div>
+</div>
+<div class="pd-site-group">
+<button aria-controls="pd-site-submenu-3" aria-expanded="false" aria-haspopup="true" class="pd-site-label" type="button">Profissionais</button>
+<div class="pd-site-submenu" id="pd-site-submenu-3">
+<a href="/servicos.html">Soluções</a>
+<a href="/automacao-imobiliarias.html">Automação</a>
+<a href="/captacao-imoveis-litoral.html">Captação</a>
+<a href="/education/index.html">Academy</a>
+<a href="/planos-assinatura.html">Planos</a>
+</div>
+</div>
+<div class="pd-site-group">
+<button aria-controls="pd-site-submenu-4" aria-expanded="false" aria-haspopup="true" class="pd-site-label" type="button">Inteligência</button>
+<div class="pd-site-submenu" id="pd-site-submenu-4">
+<a href="/blog/index.html">Blog</a>
+<a href="/blog/indice-preco-m2-litoral-paulista-tabela-tendencias-2026.html">Índice de preço por m²</a>
+<a href="/ferramentas/index.html">Ferramentas</a>
+<a href="/apps/">Apps gratuitos</a>
+<a href="/ferramentas/assistente-virtual.html">Assistente IA</a>
+</div>
+</div>
+</nav>
+<a class="pd-site-cta" href="/interesse.html">Falar com especialista</a>
+</div>
+</header>
+  <main id="main" tabindex="-1">
+    <section class="links-wrap" aria-labelledby="links-title">
+      <h1 class="links-title" id="links-title">Praia Digital — links úteis</h1>
+      <p class="links-sub">Ferramentas, imóveis e atendimento para decisões no litoral paulista.</p>
+        <a class="link-card" href="/apps/">
+          <span class="link-icon" aria-hidden="true">🧰</span>
+          <span class="link-body"><strong>Apps imobiliários gratuitos</strong><span>Compare financiamento, entrada, custos de compra e cenários de investimento.</span></span>
+          <span class="link-arrow" aria-hidden="true">›</span>
         </a>
-
-        <a class="link-card" href="/blog/rentabilidade-aluguel-temporada-riviera-bertioga-2026.html">
-          <div class="link-icon">📊</div>
-          <div class="link-body">
-            <strong>Simulador de Rentabilidade</strong>
-            <span>Airbnb vs Anual — veja quanto seu imóvel pode gerar</span>
-          </div>
-          <div class="link-arrow">›</div>
+        <a class="link-card" href="/apps/simulador-roi-temporada/index.html">
+          <span class="link-icon" aria-hidden="true">📊</span>
+          <span class="link-body"><strong>Simular rentabilidade de temporada</strong><span>Informe diária, ocupação e despesas para explorar um cenário de ROI.</span></span>
+          <span class="link-arrow" aria-hidden="true">›</span>
         </a>
-
-        <a class="link-card" href="/afiliados/enxoval-automacao-riviera.html">
-          <div class="link-icon">🛍️</div>
-          <div class="link-body">
-            <strong>Guia de Automação & Enxoval</strong>
-            <span>Ofertas Amazon selecionadas para a Riviera</span>
-          </div>
-          <div class="link-arrow">›</div>
+        <a class="link-card" href="/apps/temporada-ou-anual/index.html">
+          <span class="link-icon" aria-hidden="true">⚖️</span>
+          <span class="link-body"><strong>Comparar temporada e aluguel anual</strong><span>Compare receitas e custos informados por você, sem garantia de rendimento.</span></span>
+          <span class="link-arrow" aria-hidden="true">›</span>
         </a>
-
-        <a class="link-card" href="/blog/top-10-acessorios-indispensaveis-praia-riviera-2026.html">
-          <div class="link-icon">🏖️</div>
-          <div class="link-body">
-            <strong>Top 10 Acessórios de Praia 2026</strong>
-            <span>Lista curada com os itens mais vendidos</span>
-          </div>
-          <div class="link-arrow">›</div>
-        </a>
-
         <a class="link-card" href="/corretores/cadastrar-imovel.html">
-          <div class="link-icon">🏠</div>
-          <div class="link-body">
-            <strong>Cadastre seu Imóvel para Temporada</strong>
-            <span>Formulário rápido para proprietários e corretores</span>
-          </div>
-          <div class="link-arrow">›</div>
+          <span class="link-icon" aria-hidden="true">🏠</span>
+          <span class="link-body"><strong>Cadastrar imóvel — para corretores</strong><span>Formulário exclusivo para corretores com CRECI válido. Proprietários podem falar com a equipe abaixo.</span></span>
+          <span class="link-arrow" aria-hidden="true">›</span>
         </a>
-
-        <section class="affiliate-showcase" aria-label="Destaques Amazon na Central de Links">
-          <h2>🛒 Destaques da Semana — Entrega Rápida</h2>
-          <div class="affiliate-grid">
+        <a class="link-card" href="/interesse.html">
+          <span class="link-icon" aria-hidden="true">💬</span>
+          <span class="link-body"><strong>Falar com especialista</strong><span>Conte sua necessidade sobre imóveis, IA ou automação pelo canal de atendimento.</span></span>
+          <span class="link-arrow" aria-hidden="true">›</span>
+        </a>
+        <a class="link-card" href="/blog/guia-ar-condicionado-inverter-adegas-climatizadas-fechaduras-digitais-praia-riviera-2026.html">
+          <span class="link-icon" aria-hidden="true">⚡</span>
+          <span class="link-body"><strong>Guia de automação e conforto</strong><span>Conheça critérios para avaliar climatização, acesso e equipamentos de casas de praia.</span></span>
+          <span class="link-arrow" aria-hidden="true">›</span>
+        </a>
+        <a class="link-card" href="/afiliados/enxoval-automacao-riviera.html">
+          <span class="link-icon" aria-hidden="true">🛍️</span>
+          <span class="link-body"><strong>Guia de enxoval e automação</strong><span>Explore o guia; confira em cada destino as condições e informações comerciais.</span></span>
+          <span class="link-arrow" aria-hidden="true">›</span>
+        </a>
+        <a class="link-card" href="/blog/top-10-acessorios-indispensaveis-praia-riviera-2026.html">
+          <span class="link-icon" aria-hidden="true">🏖️</span>
+          <span class="link-body"><strong>Guia de acessórios de praia</strong><span>Veja sugestões de categorias para planejar sua próxima ida à praia.</span></span>
+          <span class="link-arrow" aria-hidden="true">›</span>
+        </a>
+      <p class="links-note">As simulações são educativas e dependem dos dados informados. Não constituem avaliação formal, aprovação de crédito ou garantia de rendimento.</p>
+      <section class="affiliate-showcase" aria-labelledby="compras-title">
+        <h2 id="compras-title">Categorias para sua casa de praia</h2>
+        <p class="subtitle">Os botões abrem buscas na Amazon Brasil, não ofertas de produtos específicos.</p>
+        <div class="affiliate-grid">
             <article class="affiliate-card">
-              <h3>Refletor Solar LED Inteligente</h3>
-              <p>Alta potência com sensor crepuscular para jardim e entrada.</p>
-              <span class="badge">Mais Vendido</span>
-              <span class="stars" aria-label="5 de 5">★★★★★</span>
-              <a class="btn btn-primary" href="https://www.amazon.com/s?k=solar+led+flood+light+motion+sensor+outdoor+waterproof&tag=praiadigital-20" target="_blank" rel="noopener noreferrer">Conferir na Amazon ➔</a>
-              <p class="trust-badge">🔒 Compra Segura via Amazon Brasil | Garantia e Entrega Rápida</p>
+              <h3>Iluminação externa</h3><p>Compare alimentação, resistência à água e instalação.</p>
+              <a class="btn btn-primary" href="https://www.amazon.com.br/s?k=refletor+solar+led+externo" target="_blank" rel="sponsored noopener noreferrer">Pesquisar na Amazon Brasil <span class="sr-only">(abre em nova aba)</span></a>
             </article>
             <article class="affiliate-card">
-              <h3>Robô Aspirador com Mapeamento a Laser</h3>
-              <p>Limpeza automática inteligente para grandes metragens.</p>
-              <span class="badge">Recomendado 2026</span>
-              <span class="stars" aria-label="5 de 5">★★★★★</span>
-              <a class="btn btn-primary" href="https://www.amazon.com/s?k=robot+vacuum+laser+mapping+large+home&tag=praiadigital-20" target="_blank" rel="noopener noreferrer">Conferir na Amazon ➔</a>
-              <p class="trust-badge">🔒 Compra Segura via Amazon Brasil | Garantia e Entrega Rápida</p>
+              <h3>Robô aspirador</h3><p>Compare autonomia, mapeamento e suporte do fabricante.</p>
+              <a class="btn btn-primary" href="https://www.amazon.com.br/s?k=robo+aspirador+mapeamento" target="_blank" rel="sponsored noopener noreferrer">Pesquisar na Amazon Brasil <span class="sr-only">(abre em nova aba)</span></a>
             </article>
             <article class="affiliate-card">
-              <h3>Cadeira de Praia em Alumínio Reforçado</h3>
-              <p>Conforto e durabilidade para o dia todo na areia.</p>
-              <span class="badge">Entrega Rápida</span>
-              <span class="stars" aria-label="4 de 5">★★★★☆</span>
-              <a class="btn btn-primary" href="https://www.amazon.com/s?k=reinforced+aluminum+beach+chair+premium&tag=praiadigital-20" target="_blank" rel="noopener noreferrer">Conferir na Amazon ➔</a>
-              <p class="trust-badge">🔒 Compra Segura via Amazon Brasil | Garantia e Entrega Rápida</p>
+              <h3>Cadeira de praia</h3><p>Confira capacidade de carga, material e dimensões.</p>
+              <a class="btn btn-primary" href="https://www.amazon.com.br/s?k=cadeira+praia+aluminio+reforcada" target="_blank" rel="sponsored noopener noreferrer">Pesquisar na Amazon Brasil <span class="sr-only">(abre em nova aba)</span></a>
             </article>
             <article class="affiliate-card">
-              <h3>Airfryer de Cesto Duplo Alta Capacidade</h3>
-              <p>Fritadeira sem óleo para toda a família na praia.</p>
-              <span class="badge">Mais Vendido</span>
-              <span class="stars" aria-label="5 de 5">★★★★★</span>
-              <a class="btn btn-primary" href="https://www.amazon.com/s?k=dual+basket+air+fryer+large+capacity+smart+app&tag=praiadigital-20" target="_blank" rel="noopener noreferrer">Conferir na Amazon ➔</a>
-              <p class="trust-badge">🔒 Compra Segura via Amazon Brasil | Garantia e Entrega Rápida</p>
+              <h3>Airfryer de cesto duplo</h3><p>Confira capacidade, voltagem e espaço disponível.</p>
+              <a class="btn btn-primary" href="https://www.amazon.com.br/s?k=airfryer+cesto+duplo" target="_blank" rel="sponsored noopener noreferrer">Pesquisar na Amazon Brasil <span class="sr-only">(abre em nova aba)</span></a>
             </article>
-          </div>
-        </section>
+        </div>
+        <p class="affiliate-disclosure">Transparência: os quatro links de busca desta seção não contêm código de afiliado e não geram comissão de afiliação para a Praia Digital. Outros guias podem conter links comissionados; consulte os avisos em cada página.</p>
+        <p class="links-note">Preços, avaliações, estoque, frete, prazo de entrega e garantia devem ser confirmados na Amazon e com o vendedor. Não atribuímos notas nem garantimos essas condições.</p>
       </section>
-    </main>
-
-    <footer aria-label="Rodapé">
-      <p>© Praia Digital • <a href="mailto:comercial@praia.digital">comercial@praia.digital</a> • (11) 95434-6288</p>
-      <p><a href="https://praia.digital/sitemap.html">Mapa do site</a></p>
-    </footer>
-    <script src="https://praia.digital/js/shared.js?v=2.0"></script>
-  </div>
+    </section>
+  </main>
+  <footer aria-label="Rodapé">
+    <p>© Praia Digital · <a href="mailto:comercial@praia.digital">comercial@praia.digital</a> · (11) 95434-6288</p>
+    <p><a href="/">Início</a> · <a href="/sitemap.html">Mapa do site</a></p>
+  </footer>
 </body>
 </html>
