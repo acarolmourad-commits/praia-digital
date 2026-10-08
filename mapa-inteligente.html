@@ -1,425 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-        {
-      "@type": "Question",
-      "name": "Como solicitar mais informações?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Pelo WhatsApp ou formulário na página para atendimento rápido."
-      }
-    },    {
-      "@type": "Question",
-      "name": "Quais cidades são atendidas?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Todo o litoral de SP: Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente e Peruíbe."
-      }
-    },    {
-      "@type": "Question",
-      "name": "Quanto tempo para retorno?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Em até 24 horas após o contato, com atendimento humanizado."
-      }
-    }
-  ]
-}
-</script>
-
-  <meta name="keywords" content="Mapa Inteligente — Litoral SP | Praia Digital, Ative as camadas para explorar praias, ROI Airbnb, valorização, serviços e eventos, imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
-  <meta name="description" content="Ative as camadas para explorar praias, ROI Airbnb, valorização, serviços e eventos">
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mapa Inteligente — Litoral SP | Praia Digital</title>
-  <link rel="preconnect" href="https://praia.digital">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<style>
-  body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f8fafc; }
-  header { background: linear-gradient(135deg, #0a1628 0%, #1e3a5f 100%); color: white; padding: 2rem 1rem; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-  header h1 { margin: 0; font-size: 2rem; font-weight: 700; }
-  header p { margin: 0.5rem 0 0; opacity: 0.9; font-size: 0.95rem; }
-  .container { max-width: 1400px; margin: 0 auto; padding: 2rem 1rem; }
-  #map { height: 600px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 2rem; }
-  .legend { background: white; padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
-  .legend h3 { margin: 0 0 1rem; color: #0a1628; font-size: 1.1rem; }
-  .legend-item { display: flex; align-items: center; margin-bottom: 0.5rem; cursor: pointer; padding: 0.25rem; border-radius: 4px; transition: background 0.2s; }
-  .legend-item:hover { background: #f4f6f9; }
-  .legend-item input { margin-right: 0.5rem; }
-  .legend-color { width: 16px; height: 16px; border-radius: 50%; margin-right: 0.5rem; border: 2px solid white; box-shadow: 0 1px 3px rgba(0,0,0,0.3); }
-  .info-panel { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
-  .info-panel h2 { margin: 0 0 1rem; color: #0a1628; }
-  .info-panel p { color: #64748b; line-height: 1.6; }
-  footer { text-align: center; padding: 2rem 1rem; color: #64748b; font-size: 0.85rem; }
-  @media (max-width: 768px) {
-    #map { height: 400px; }
-    header h1 { font-size: 1.5rem; }
-  }
-</style>
-  <link rel="canonical" href="https://praia.digital/mapa-inteligente.html">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Mapa Inteligente — Litoral SP | Praia Digital">
-  <meta property="og:description" content="Ative as camadas para explorar praias, ROI Airbnb, valorização, serviços e eventos">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Praia Digital — imóveis no litoral com IA">
-  <meta property="og:site_name" content="Praia Digital">
-  <meta property="og:url" content="https://praia.digital/mapa-inteligente.html">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Mapa Inteligente — Litoral SP | Praia Digital">
-  <meta name="twitter:description" content="Ative as camadas para explorar praias, ROI Airbnb, valorização, serviços e eventos">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
-  <link rel="alternate" hreflang="x-default" href="https://praia.digital/mapa-inteligente.html" />
-  <link rel="alternate" hreflang="pt-BR" href="https://praia.digital/mapa-inteligente.html">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="referrer" content="no-referrer-when-downgrade">
-<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
-<link rel="preconnect" href="https://praia.digital/" crossorigin>
-<link rel="icon" type="image/x-icon" href="https://praia.digital/favicon.ico">
-<link rel="apple-touch-icon" href="https://praia.digital/favicon.ico">
-<link rel="manifest" href="https://praia.digital/manifest.json">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapa do Litoral Paulista: praias, natureza e entorno | Praia Digital</title>
+<meta name="description" content="Explore praias e áreas naturais do litoral paulista. Filtre por cidade, consulte fontes oficiais e avalie o entorno antes de comprar ou investir.">
+<link rel="canonical" href="https://praia.digital/mapa-inteligente.html">
 <meta name="robots" content="index, follow">
+<meta name="theme-color" content="#102c3b">
+<meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
-<meta name="theme-color" content="#0ea5e9">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Praia Digital",
-  "url": "https://praia.digital/",
-  "logo": "https://praia.digital/img/logo.png",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+55-11-95434-6288",
-    "contactType": "sales",
-    "areaServed": "BR",
-    "availableLanguage": ["pt-BR", "en"]
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-    "opens": "09:00",
-    "closes": "18:00"
-  }
-}
-</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <link rel="preconnect" href="https://wa.me">
-  <link rel="preconnect" href="https://api.qrserver.com">
-
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-  <link rel="dns-prefetch" href="https://images.unsplash.com">
-  <link rel="dns-prefetch" href="https://wa.me">
-  <link rel="dns-prefetch" href="https://api.qrserver.com">
-
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
-</script>
+<meta property="og:site_name" content="Praia Digital">
+<meta property="og:title" content="Mapa Inteligente do Litoral Paulista">
+<meta property="og:description" content="Explore a região com fontes oficiais e informações transparentes sobre praias, natureza e entorno.">
+<meta property="og:url" content="https://praia.digital/mapa-inteligente.html">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+:root{--ink:#102c3b;--muted:#4e6573;--teal:#086c70;--line:#dce5e9;--paper:#f3f7f8}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--teal);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}button,input,select{font:inherit}button{cursor:pointer}a,button,input,select,summary{outline-offset:4px}:focus-visible{outline:3px solid #bd6000}.skip-link{position:absolute;left:12px;top:-80px;z-index:3000;background:white;padding:12px}.skip-link:focus{top:12px}.site-nav{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:18px max(20px,calc((100% - 1240px)/2));background:white;border-bottom:1px solid var(--line);flex-wrap:wrap}.brand{font-size:23px;font-weight:800;color:var(--ink);text-decoration:none}.brand span{color:var(--teal)}.site-nav nav{display:flex;gap:20px;flex-wrap:wrap}.site-nav nav a{font-size:14px;font-weight:650}.wrap{max-width:1280px;margin:auto;padding:0 24px}.hero{background:linear-gradient(125deg,#102c3b,#13545b);color:white;padding:58px 0 46px}.eyebrow{text-transform:uppercase;letter-spacing:.15em;font-size:12px;font-weight:800;color:#a6ece3}h1{font-size:clamp(30px,4.5vw,52px);line-height:1.15;max-width:850px;margin:14px 0 20px;letter-spacing:-.035em}.hero p{max-width:740px;color:#e0f0f2}.hero a{color:white}.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}.tag{border:1px solid #ffffff50;border-radius:24px;padding:6px 14px;font-size:13px}.section{padding-top:36px;padding-bottom:12px}h2{font-size:clamp(23px,3vw,30px);line-height:1.25;margin:0 0 12px;letter-spacing:-.02em}h3{font-size:19px;line-height:1.3;margin:10px 0}.muted,.note{color:var(--muted)}.note{font-size:13px}.notice{background:#fff8e9;border-left:4px solid #bb7400;border-radius:8px;padding:16px 20px;margin:22px 0}.workspace{display:grid;grid-template-columns:280px 1fr;gap:20px;margin-top:24px}.panel,.card{background:white;border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 6px 22px #102c3b05}.panel h3{margin-top:0}.field{display:block;font-weight:650;margin-bottom:16px}.field input,.field select{display:block;margin-top:6px;width:100%;padding:11px;border:1px solid #a9bcc6;border-radius:8px;background:white;color:var(--ink)}fieldset{border:0;padding:0;margin:0 0 20px}legend{font-weight:700;margin-bottom:8px}.check{display:flex;align-items:center;gap:9px;padding:9px 0}.check input{width:18px;height:18px;accent-color:var(--teal)}.dot{width:12px;height:12px;border-radius:50%;display:inline-block}.beach{background:#b96309}.nature{background:#0b776c}.culture{background:#694bb0}.button{display:inline-block;background:var(--teal);color:white!important;border:0;border-radius:9px;text-decoration:none;font-weight:700;padding:11px 18px;text-align:center}.button.secondary{background:white;color:var(--teal)!important;border:1px solid #aac8ca}.panel .button{width:100%}.map-shell{overflow:hidden;background:white;border:1px solid var(--line);border-radius:16px}#map{height:560px;background:#e5eef1}.map-caption{padding:14px 18px;margin:0;font-size:13px;color:var(--muted)}.status{margin:12px 0;font-weight:650;font-size:14px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.poi-grid{grid-template-columns:repeat(2,1fr)}.card p{margin:10px 0}.card .meta{font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--teal);font-weight:800}.card-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:16px}.card-actions button{font-size:14px}.card-actions a{font-size:14px}.leaflet-popup-content{font:14px/1.55 system-ui,sans-serif}.leaflet-popup-content h3{font-size:16px}.leaflet-popup-content a{color:#086c70}.source-list{padding-left:22px}.source-list li{margin:12px 0}.split{display:grid;grid-template-columns:1fr 1fr;gap:20px}.cta{background:var(--ink);color:white;border-radius:18px;padding:30px;margin:30px 0}.cta p{color:#deedf0}.cta .button{background:#d3f3ee;color:var(--ink)!important}details{border-bottom:1px solid var(--line);padding:18px 0}summary{cursor:pointer;font-weight:700}footer{text-align:center;padding:34px 24px;font-size:13px;color:var(--muted)}[hidden]{display:none!important}@media(max-width:900px){.workspace{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.panel fieldset{display:flex;gap:16px;flex-wrap:wrap}.panel legend{width:100%}.split{grid-template-columns:1fr}#map{height:450px}}@media(max-width:600px){.wrap{padding:0 16px}.hero{padding:36px 0}.grid,.poi-grid{grid-template-columns:1fr}.card,.panel{padding:18px}.site-nav{padding:14px 16px;gap:10px}.site-nav nav{gap:14px}#map{height:380px}.section{padding-top:28px}.tags{gap:6px}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Mapa Inteligente do Litoral Paulista","url":"https://praia.digital/mapa-inteligente.html","description":"Guia exploratório de praias, natureza e entorno com fontes oficiais.","inLanguage":"pt-BR","dateModified":"2026-10-08","publisher":{"@type":"Organization","name":"Praia Digital","url":"https://praia.digital/"}}</script>
 </head>
-<a id="skip-link" class="skip-link" href="#main">Pular para o conteúdo</a>
-  <body>
-<header>
-  <h1>🗺️ Mapa Inteligente do Litoral</h1>
-  <p>Ative as camadas para explorar praias, ROI Airbnb, valorização, serviços e eventos</p>
-</header>
-
-<div class="container">
-  <div class="legend">
-    <h2>Camadas</h3>
-    <div class="legend-item"><input type="checkbox" id="layer-praias" checked><span class="legend-color" style="background:#f59e0b;"></span>Praias</div>
-    <div class="legend-item"><input type="checkbox" id="layer-roi"><span class="legend-color" style="background:#10b981;"></span>Maior ROI Airbnb</div>
-    <div class="legend-item"><input type="checkbox" id="layer-valorizacao"><span class="legend-color" style="background:#3b82f6;"></span>Maior Valorização</div>
-    <div class="legend-item"><input type="checkbox" id="layer-hospitais"><span class="legend-color" style="background:#ef4444;"></span>Hospitais</div>
-    <div class="legend-item"><input type="checkbox" id="layer-escolas"><span class="legend-color" style="background:#8b5cf6;"></span>Escolas</div>
-    <div class="legend-item"><input type="checkbox" id="layer-marinas"><span class="legend-color" style="background:#06b6d4;"></span>Marinas</div>
-    <div class="legend-item"><input type="checkbox" id="layer-surf"><span class="legend-color" style="background:#ec4899;"></span>Surf</div>
-
-    <div class="legend-item"><input type="checkbox" id="layer-transporte"><span class="legend-color" style="background:#64748b;"></span>Transporte</div>
-    <div class="legend-item"><input type="checkbox" id="layer-gastronomia"><span class="legend-color" style="background:#f97316;"></span>Gastronomia</div>
-    <div class="legend-item"><input type="checkbox" id="layer-parques"><span class="legend-color" style="background:#22c55e;"></span>Parques</div>
-    <div class="legend-item"><input type="checkbox" id="layer-parceiros"><span class="legend-color" style="background:#6366f1;"></span>Parceiros</div>
-    <div class="legend-item"><input type="checkbox" id="layer-eventos"><span class="legend-color" style="background:#f59e0b;"></span>Eventos</div>
-  </div>
-
-  <div id="map"></div>
-
-  <div class="info-panel">
-    <h2>Sobre o Mapa</h2>
-    <p>Este mapa inteligente integra dados do mercado imobiliário com pontos de interesse do Litoral de São Paulo. Use as camadas acima para visualizar diferentes aspectos da região: potencial de investimento em Airbnb, valorização de imóveis, infraestrutura urbana e eventos culturais.</p>
-  </div>
-</div>
-
-<footer aria-label="Rodapé">
-  <p>Mapa Inteligente — Litoral SP | Praia Digital | Dados atualizados em 2026</p>
-</footer>
-
+<body>
+<a class="skip-link" href="#main">Pular para o conteúdo</a>
+<header class="pd-header site-nav"><a class="brand" href="/">Praia<span>Digital</span></a><nav aria-label="Navegação principal"><a href="/imoveis.html">Imóveis</a><a href="/mapa-inteligente.html" aria-current="page">Mapa</a><a href="/ferramentas/index.html">Ferramentas</a><a href="/interesse.html">Falar com especialista</a></nav></header>
+<main id="main">
+<section class="hero"><div class="wrap"><span class="eyebrow">Território, contexto e escolhas melhores</span><h1>Conheça o litoral antes de escolher seu imóvel.</h1><p>Explore praias, áreas naturais e referências culturais. Cruze a localização com informações oficiais e entenda o entorno antes de morar, comprar ou investir.</p><div class="tags"><span class="tag">8 referências em 5 municípios</span><span class="tag">Fontes públicas identificadas</span><span class="tag">Revisão editorial: 08/10/2026</span></div></div></section>
+<section class="wrap section" aria-labelledby="explore-title"><h2 id="explore-title">Explore a região no mapa</h2><p class="muted">Busque um local, selecione uma cidade e escolha as categorias. A lista abaixo acompanha os filtros e permite consultar as fontes sem depender do mapa.</p><div class="notice"><strong>Transparência antes de tudo.</strong> Este é um guia exploratório, não um cadastro completo do litoral. Os marcadores indicam posições aproximadas, não entradas, limites de parques ou acessos de emergência. Não há dados de balneabilidade, trânsito ou retorno financeiro em tempo real.</div>
+<div class="workspace"><aside class="panel" aria-label="Filtros do mapa"><h3>Personalize sua consulta</h3><label class="field" for="search">Buscar local<input id="search" type="search" placeholder="Ex.: Tombo, Anchieta" maxlength="100"></label><label class="field" for="city">Cidade<select id="city"><option value="">Todas as cidades</option><option>Bertioga</option><option>Guarujá</option><option>Itanhaém</option><option>Peruíbe</option><option>Santos</option></select></label><fieldset><legend>Categorias</legend><label class="check"><input type="checkbox" name="category" value="Praias" checked><span class="dot beach" aria-hidden="true"></span>Praias</label><label class="check"><input type="checkbox" name="category" value="Natureza" checked><span class="dot nature" aria-hidden="true"></span>Natureza</label><label class="check"><input type="checkbox" name="category" value="Cultura" checked><span class="dot culture" aria-hidden="true"></span>Cultura e paisagem</label></fieldset><button class="button secondary" id="reset" type="button">Limpar filtros</button><p class="note">O uso do mapa carrega recursos externos de Leaflet e OpenStreetMap. Nenhuma localização pessoal é solicitada.</p></aside><div class="map-shell"><div id="map" role="region" aria-label="Mapa interativo de referências do litoral paulista"><p style="padding:24px">Carregando mapa. As informações também estão disponíveis na lista abaixo.</p></div><p class="map-caption">Posições aproximadas para exploração regional. Confirme endereço, acesso e regras de visitação com o responsável pelo local.</p></div></div><p id="status" class="status" role="status" aria-live="polite">8 referências disponíveis.</p><noscript><p class="notice">O mapa e os filtros precisam de JavaScript. Consulte abaixo os locais e suas fontes oficiais.</p></noscript><div id="poi-list" class="grid poi-grid">
+<article class="card poi" data-city="Guarujá" data-category="Praias" data-lat="-24.007" data-lng="-46.259"><span class="meta">Guarujá · Praias</span><h3>Praia de Pitangueiras</h3><p>Referência da orla central de Guarujá. Ao avaliar imóveis no entorno, visite a região em dias e horários diferentes para comparar movimento, ruído e deslocamentos.</p><a class="source" href="https://www.guaruja.sp.gov.br/sample-page-2/praias" target="_blank" rel="noopener noreferrer">Fonte: Prefeitura de Guarujá</a><p class="note">Cadastro municipal localizado em busca pública; não foi possível extrair a página nesta revisão. Condições atuais de uso não verificadas.</p></article>
+<article class="card poi" data-city="Guarujá" data-category="Praias" data-lat="-23.986" data-lng="-46.232"><span class="meta">Guarujá · Praias</span><h3>Praia da Enseada</h3><p>Praia de Guarujá citada no roteiro turístico municipal. A proximidade do mar não substitui a análise de acesso, manutenção predial, serviços e custos de condomínio.</p><a class="source" href="https://www.guaruja.sp.gov.br/onibus-turistico-de-guaruja-inicia-passeios-neste-sabado-29" target="_blank" rel="noopener noreferrer">Referência histórica: Prefeitura de Guarujá, roteiro turístico de 2021</a><p class="note">Roteiro histórico; não confirma operação atual do ônibus turístico. Consulte a prefeitura para informações vigentes.</p></article>
+<article class="card poi" data-city="Guarujá" data-category="Praias" data-lat="-24.020" data-lng="-46.290"><span class="meta">Guarujá · Praias</span><h3>Praia do Tombo</h3><p>Praia identificada no cadastro turístico municipal. Antes de entrar no mar, observe a sinalização dos guarda-vidas, as condições locais e o boletim de balneabilidade.</p><a class="source" href="https://www.guaruja.sp.gov.br/sample-page-2/praias" target="_blank" rel="noopener noreferrer">Fonte: Prefeitura de Guarujá</a><p class="note">Referência localizada em busca pública. Certificações, condições do mar e balneabilidade atuais não verificadas.</p></article>
+<article class="card poi" data-city="Santos" data-category="Natureza" data-lat="-23.940" data-lng="-46.382"><span class="meta">Santos · Natureza</span><h3>Jardim Botânico Chico Mendes</h3><p>Área verde no bairro Bom Retiro, com 90 mil m² e mais de 300 espécies vegetais catalogadas, segundo o portal municipal. O espaço reúne alamedas, lagos e atividades de educação ambiental.</p><a class="source" href="https://www.turismosantos.com.br/pt-br/content/jardim-bot%C3%A2nico-chico-mendes" target="_blank" rel="noopener noreferrer">Fonte: Turismo Santos</a><p class="note">Rua João Fraccaroli, s/nº, Bom Retiro. Confirme horários e atividades na fonte oficial antes da visita.</p></article>
+<article class="card poi" data-city="Itanhaém" data-category="Cultura" data-lat="-24.195" data-lng="-46.802"><span class="meta">Itanhaém · Cultura e paisagem</span><h3>Cama de Anchieta</h3><p>Formação rochosa entre o costão da Praia da Gruta e a Praia do Sonho. A prefeitura descreve uma passarela de 220 metros associada ao acesso e à paisagem histórica do local.</p><a class="source" href="https://www2.itanhaem.sp.gov.br/turismo/cama-de-anchieta/" target="_blank" rel="noopener noreferrer">Fonte: Prefeitura de Itanhaém</a><p class="note">Referência: Rua da Enseada, Praia dos Sonhos. A existência da descrição não garante que a passarela esteja aberta; confirme acesso e condições.</p></article>
+<article class="card poi" data-city="Itanhaém" data-category="Praias" data-lat="-24.193" data-lng="-46.797"><span class="meta">Itanhaém · Praias</span><h3>Praia do Sonho</h3><p>Praia citada pela prefeitura como referência do entorno da Cama de Anchieta. Conhecer os percursos a pé e as condições de acesso ajuda a avaliar o uso cotidiano da região.</p><a class="source" href="https://www2.itanhaem.sp.gov.br/turismo/cama-de-anchieta/" target="_blank" rel="noopener noreferrer">Fonte: Prefeitura de Itanhaém</a><p class="note">Consulte balneabilidade e sinalização local. Nenhuma indicação de segurança de banho é inferida deste cadastro.</p></article>
+<article class="card poi" data-city="Peruíbe" data-category="Natureza" data-lat="-24.386" data-lng="-47.129"><span class="meta">Peruíbe / Iguape · Natureza</span><h3>Parque Estadual do Itinguçu</h3><p>Unidade de conservação em Peruíbe e Iguape, integrante do Mosaico Jureia-Itatins. O guia estadual informa criação em 2013 e área de 5.040 hectares, com ecossistemas da Mata Atlântica.</p><a class="source" href="https://guiadeareasprotegidas.sp.gov.br/ap/parque-estadual-itingucu/" target="_blank" rel="noopener noreferrer">Fonte: Guia de Áreas Protegidas de São Paulo</a><p class="note">Marcador regional, não portaria. Trilhas, agendamento, capacidade de visitação e acessos devem ser confirmados com a gestão.</p></article>
+<article class="card poi" data-city="Bertioga" data-category="Natureza" data-lat="-23.800" data-lng="-46.070"><span class="meta">Bertioga · Natureza</span><h3>Parque Estadual Restinga de Bertioga</h3><p>Unidade de conservação com documentação de plano de manejo no SIGAM/SEMIL. Para avaliar terrenos ou imóveis no entorno, verifique o zoneamento e as restrições ambientais aplicáveis ao endereço.</p><a class="source" href="https://sigam.ambiente.sp.gov.br/sigam3/Default.aspx?idPagina=15015" target="_blank" rel="noopener noreferrer">Fonte: SIGAM/SEMIL — documentação de zoneamento</a><p class="note">Marcador regional; não representa os limites da unidade. A página de consulta pública é documental, não uma autorização vigente de uso ou visitação.</p></article>
+</div><p id="empty" class="notice" hidden>Nenhum local corresponde aos filtros. Experimente outra cidade, categoria ou termo de busca.</p></section>
+<section class="wrap section" aria-labelledby="official-title"><h2 id="official-title">Informações atuais: consulte quem produz o dado</h2><p class="muted">Informações operacionais mudam. Use os canais oficiais e confira sempre a data do boletim ou do documento, não apenas a data desta página.</p><div class="grid"><article class="card"><span class="meta">Qualidade da água</span><h3>Balneabilidade das praias</h3><p>A classificação deve ser consultada por praia e ponto de coleta no boletim vigente. Não atribuímos status de própria ou imprópria sem leitura do boletim.</p><a href="https://sistemasinter.cetesb.sp.gov.br/praias/mapa_praias/respraia1.asp" target="_blank" rel="noopener noreferrer">Consultar mapa oficial da CETESB</a><p class="note">Portal localizado, mas boletim não extraído nesta revisão. Sem sincronização automática.</p></article><article class="card"><span class="meta">Planejamento do acesso</span><h3>Rodovias e interdições</h3><p>Antes de visitar um imóvel, verifique as restrições da rota no DER-SP e os canais da concessionária responsável. Uma viagem em alta temporada pode ter dinâmica diferente da rotina local.</p><a href="https://www.der.sp.gov.br/der/rodovias/interdicoes" target="_blank" rel="noopener noreferrer">Consultar interdições no DER-SP</a><p class="note">Fonte consultada em 08/10/2026. Não reproduzimos condições como se fossem tempo real.</p></article><article class="card"><span class="meta">Contexto demográfico</span><h3>Bertioga: 64.188 habitantes</h3><p>População residente registrada pelo IBGE no Censo 2022. O dado tem referência histórica e não representa uma estimativa de população de 2026 nem o movimento turístico sazonal.</p><a href="https://www.ibge.gov.br/cidades-e-estados/sp/bertioga.html" target="_blank" rel="noopener noreferrer">Consultar Bertioga no IBGE</a><p class="note">Referência: Censo 2022. Dado localizado no portal oficial nesta revisão.</p></article></div></section>
+<section class="wrap section" aria-labelledby="decision-title"><h2 id="decision-title">Transforme localização em uma análise mais completa</h2><div class="split"><article class="card"><h3>Para morar ou ter uma segunda residência</h3><ul><li>Teste o trajeto até trabalho, escola e serviços em horários reais de uso.</li><li>Confirme endereço, atendimento e horários de unidades de saúde e ensino diretamente nos canais oficiais.</li><li>Avalie ruído, drenagem, iluminação e acessibilidade com visitas presenciais.</li><li>Verifique conservação, maresia, elevadores, condomínio e despesas extraordinárias.</li><li>Consulte documentação, zoneamento municipal e restrições ambientais antes de negociar.</li></ul></article><article class="card"><h3>Para investir em aluguel de temporada</h3><ul><li>Separe receita bruta de resultado líquido após taxas, limpeza, manutenção, tributos e vacância.</li><li>Compare cenários de baixa e alta temporada; não extrapole uma diária de feriado para o ano inteiro.</li><li>Verifique as regras do condomínio e as exigências municipais para a atividade.</li><li>Use preços e ocupação com fonte, amostra e período identificados.</li><li>Trate retorno e valorização como hipóteses, não garantias.</li></ul><a href="/apps/simulador-roi-temporada/index.html">Simular cenários de aluguel de temporada</a></article></div><div class="cta"><h2>Seu próximo passo precisa de contexto, não de promessas.</h2><p>Use o mapa para explorar a região e leve suas prioridades para uma análise do imóvel, da documentação e dos custos.</p><a class="button" href="/interesse.html">Conversar com um especialista</a></div></section>
+<section class="wrap section" aria-labelledby="method-title"><h2 id="method-title">Fontes, metodologia e limites</h2><div class="card"><p><strong>Revisão editorial:</strong> <time datetime="2026-10-08">8 de outubro de 2026</time>. Essa data indica a revisão desta página, não a atualização simultânea de todas as fontes.</p><p>Os pontos foram selecionados a partir de referências públicas municipais e estaduais. As fichas diferenciam conteúdo consultado, referências históricas e páginas apenas localizadas em busca. Coordenadas são aproximações editoriais, não um levantamento georreferenciado validado.</p><p>O mapa-base utiliza OpenStreetMap e a biblioteca Leaflet. Não representa limites cadastrais, riscos ambientais, distância exata de um imóvel até a praia ou cobertura completa de serviços.</p><p><strong>Indicadores financeiros:</strong> não publicamos rankings de ROI, valorização, notas de restaurantes ou parceiros sem documentação verificável. Hospitais, escolas, marinas e eventos só devem entrar no cadastro após confirmação de identidade, localização e vigência. Não há agenda de eventos confirmados nesta versão.</p><p><strong>Manutenção:</strong> esta versão é editorial e estática; não existe atualização automática de boletins, horários ou indicadores. Para informações operacionais, prevalece a fonte oficial vigente.</p><p><a href="/interesse.html">Sugerir um local ou informar uma correção</a> — envie nome, endereço e link oficial para facilitar a conferência.</p></div></section>
+<section class="wrap section" aria-labelledby="faq-title"><h2 id="faq-title">Perguntas frequentes</h2><details><summary>Este mapa cobre todo o litoral de São Paulo?</summary><p>Não. A seleção inicial contém oito referências em Bertioga, Guarujá, Itanhaém, Peruíbe e Santos. O nome da região não implica cobertura de todas as cidades, praias ou serviços.</p></details><details><summary>Posso usar os marcadores para chegar a uma trilha ou parque?</summary><p>Não como orientação de acesso. As posições são aproximadas e podem representar uma área extensa. Confirme portaria, endereço, autorização e regras de visitação com a gestão do local.</p></details><details><summary>O mapa mostra praias próprias para banho?</summary><p>Não. Consulte o boletim vigente da CETESB para o ponto desejado e siga a sinalização local. A presença de uma praia no mapa não é uma declaração de segurança.</p></details><details><summary>Onde estão os percentuais de retorno e valorização?</summary><p>Foram retirados os indicadores sem fonte e metodologia. Para projetar um investimento, use dados documentados e compare cenários de receita, despesas e vacância. Simulações não garantem resultados.</p></details></section>
+</main>
+<footer><p>Praia Digital · Mapa Inteligente do Litoral Paulista</p><p>Conteúdo informativo. Confirme dados operacionais e faça a verificação documental antes de decidir.</p><a href="/">Voltar ao início</a></footer>
 <script>
-  const map = L.map('map').setView([-24.0, -46.0], 10);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap contributors'
-  }).addTo(map);
-
-  // Dados das camadas
-  const praias_base = [
-    { nome: 'Praia de Santos', coords: [-23.96, -46.33], desc: 'Principal praia urbana' },
-    { nome: 'Praia do Guarujá', coords: [-24.00, -46.26], desc: 'Ilha de Santo Amaro' },
-    { nome: 'Praia de Praia Grande', coords: [-24.00, -46.40], desc: 'Orla extensa' },
-    { nome: 'Praia de Peruíbe', coords: [-24.30, -47.00], desc: 'Preservação natural' },
-    { nome: 'Praia de Bertioga', coords: [-23.85, -45.85], desc: 'Mangues e trilhas' },
-  ];
-
-  const roiAirbnb = [
-    { cidade: 'Peruíbe', coords: [-24.30, -47.00], roi: 7.9 },
-    { cidade: 'Itanhaém', coords: [-24.18, -46.78], roi: 7.6 },
-    { cidade: 'Praia Grande', coords: [-24.00, -46.40], roi: 7.2 },
-    { cidade: 'Mongaguá', coords: [-24.08, -46.63], roi: 7.0 },
-    { cidade: 'Bertioga', coords: [-23.85, -45.85], roi: 6.7 },
-    { cidade: 'Guarujá', coords: [-24.00, -46.26], roi: 6.4 },
-    { cidade: 'São Vicente', coords: [-23.95, -46.38], roi: 6.1 },
-    { cidade: 'Santos', coords: [-23.96, -46.33], roi: 5.8 },
-  ];
-
-  const valorizacao = [
-    { cidade: 'Peruíbe', coords: [-24.30, -47.00], valor: 8.9 },
-    { cidade: 'Itanhaém', coords: [-24.18, -46.78], valor: 8.4 },
-    { cidade: 'Praia Grande', coords: [-24.00, -46.40], valor: 7.8 },
-    { cidade: 'Mongaguá', coords: [-24.08, -46.63], valor: 7.5 },
-    { cidade: 'Bertioga', coords: [-23.85, -45.85], valor: 6.5 },
-    { cidade: 'São Vicente', coords: [-23.95, -46.38], valor: 6.7 },
-    { cidade: 'Guarujá', coords: [-24.00, -46.26], valor: 6.1 },
-    { cidade: 'Santos', coords: [-23.96, -46.33], valor: 5.2 },
-  ];
-
-  const hospitais = [
-    { nome: 'Hospital São José', coords: [-23.96, -46.33], cidade: 'Santos' },
-    { nome: 'Hospital da Ilha', coords: [-24.00, -46.26], cidade: 'Guarujá' },
-    { nome: 'Hospital Regional de Praia Grande', coords: [-24.00, -46.40], cidade: 'Praia Grande' },
-    { nome: 'Hospital Municipal de Itanhaém', coords: [-24.18, -46.78], cidade: 'Itanhaém' },
-  ];
-
-  const escolas = [
-    { nome: 'Unidade Escolar Santos', coords: [-23.97, -46.34], tipo: 'Escola' },
-    { nome: 'Colégio Guarujá', coords: [-24.01, -46.27], tipo: 'Colégio' },
-    { nome: 'Escola Técnica Praia Grande', coords: [-23.99, -46.41], tipo: 'Escola Técnica' },
-    { nome: 'Universidade de Itanhaém', coords: [-24.19, -46.79], tipo: 'Universidade' },
-  ];
-
-  const marinas = [
-    { nome: 'Marina de Santos', coords: [-23.95, -46.30], slots: 300 },
-    { nome: 'Marina do Guarujá', coords: [-23.99, -46.25], slots: 150 },
-    { nome: 'Marina de São Vicente', coords: [-23.94, -46.37], slots: 200 },
-  ];
-
-  const surf_base = [
-    { nome: 'Quebra-mar Santos', coords: [-23.96, -46.32], tipo: 'Quebra-mar' },
-    { nome: 'Ponta da Praia', coords: [-23.95, -46.31], tipo: 'Ponta' },
-    { nome: 'Praia de Pernambuco', coords: [-24.02, -46.20], tipo: 'Praia' },
-    { nome: 'Ilha Comprida', coords: [-24.45, -47.20], tipo: 'Ilha' },
-  ];
-
-  const eventos = [
-    { nome: 'Festival de Verão Santos', coords: [-23.96, -46.33], data: 'Janeiro 2026' },
-    { nome: 'Regata Internacional', coords: [-23.95, -46.30], data: 'Março 2026' },
-    { nome: 'Festival do Camarão', coords: [-24.00, -46.26], data: 'Abril 2026' },
-    { nome: 'São Vicente surfe', coords: [-23.95, -46.38], data: 'Fevereiro 2026' },
-  ];
-
-
-  // Transporte / Terminais
-  const transporte = [
-    { nome: 'Terminal Marítimo Santos', coords: [-23.95, -46.30], tipo: 'Terminal Marítimo' },
-    { nome: 'Ferry Boat Guarujá', coords: [-24.00, -46.26], tipo: 'Terminal de Ferry' },
-    { nome: 'Terminal Rodoviário Praia Grande', coords: [-24.00, -46.40], tipo: 'Rodoviária' },
-    { nome: 'Porto de São Vicente', coords: [-23.95, -46.38], tipo: 'Porto' },
-  ];
-
-  // Gastronomia / Restaurantes
-  const gastronomia = [
-    { nome: 'Restaurante Peixe na Rede', coords: [-23.96, -46.33], cidade: 'Santos', nota: 4.7 },
-    { nome: 'Bar do Zé', coords: [-24.00, -46.26], cidade: 'Guarujá', nota: 4.5 },
-    { nome: 'Pizzaria da Orla', coords: [-24.00, -46.40], cidade: 'Praia Grande', nota: 4.6 },
-    { nome: 'Restaurante Sabor do Mar', coords: [-24.18, -46.78], cidade: 'Itanhaém', nota: 4.8 },
-  ];
-
-  // Parques e áreas verdes
-  const parques = [
-    { nome: 'Jardim Botânico Santos', coords: [-23.97, -46.32], tipo: 'Jardim Botânico' },
-    { nome: 'Parque do Guarujá', coords: [-24.00, -46.27], tipo: 'Parque Municipal' },
-    { nome: 'Área de preservação Peruíbe', coords: [-24.30, -47.00], tipo: 'Reserva' },
-    { nome: 'Parque Linear Itanhaém', coords: [-24.18, -46.79], tipo: 'Parque Linear' },
-  ];
-
-  // Corretoras / Imobiliárias parceiras
-  const parceiros = [
-    { nome: 'Santos Premium Launch', coords: [-23.96, -46.33], cidade: 'Santos', tipo: 'Imobiliária' },
-    { nome: 'Guarujá Digital Tech', coords: [-24.00, -46.26], cidade: 'Guarujá', tipo: 'Imobiliária' },
-    { nome: 'PG Blue Launch', coords: [-24.00, -46.40], cidade: 'Praia Grande', tipo: 'Construtora' },
-    { nome: 'Itanhaém Tech View', coords: [-24.18, -46.78], cidade: 'Itanhaém', tipo: 'Imobiliária' },
-    { nome: 'SV Premium Launch', coords: [-23.95, -46.38], cidade: 'São Vicente', tipo: 'Imobiliária' },
-  ];
-
-  // Mais praias
-  const praias_extra = [
-    { nome: 'Praia do Gonzaguinha', coords: [-23.96, -46.31], desc: 'Famosa por shows' },
-    { nome: 'Praia da Enseada', coords: [-24.00, -46.24], desc: 'Águas calmas' },
-    { nome: 'Praia do Sonho', coords: [-24.01, -46.39], desc: 'Ótima para famílias' },
-    { nome: 'Praia de Itanhaém', coords: [-24.17, -46.77], desc: 'Surf e tranquilidade' },
-    { nome: 'Praia de São Vicente', coords: [-23.94, -46.37], desc: 'Orla histórica' },
-  ];
-
-  // Mais surf spots
-  const surf_extra = [
-    { nome: 'Monteiro Lobato', coords: [-23.95, -46.35], tipo: 'Reef break' },
-    { nome: 'Praia de São Vicente', coords: [-23.94, -46.36], tipo: 'Beach break' },
-    { nome: 'Praia de Peruíbe', coords: [-24.29, -46.99], tipo: 'Point preservado' },
-    { nome: 'Bertioga Norte', coords: [-23.86, -45.86], tipo: 'Onda consistente' },
-  ];
-
-  const praias_completas = praias.concat(praias_extra);
-  const surf_completo = surf.concat(surf_extra);
-  // Função para criar camadas
-  function createCircleMarker(coords, color, radius = 10) {
-    return L.circleMarker(coords, {
-      radius: radius,
-      fillColor: color,
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    });
-  }
-
-  // Camadas
-  const layerPraias = L.layerGroup(praias.map(p => {
-    const marker = createCircleMarker(p.coords, '#f59e0b', 12);
-    marker.bindPopup(`<b>${p.nome}</b><br>${p.desc}`);
-    return marker;
-  }));
-
-  const layerRoi = L.layerGroup(roiAirbnb.map(c => {
-    const marker = createCircleMarker(c.coords, '#10b981', 8 + c.roi * 2);
-    marker.bindPopup(`<b>${c.cidade}</b><br>ROI Airbnb: ${c.roi}%`);
-    return marker;
-  }));
-
-  const layerValorizacao = L.layerGroup(valorizacao.map(c => {
-    const marker = createCircleMarker(c.coords, '#3b82f6', 8 + c.valor * 2);
-    marker.bindPopup(`<b>${c.cidade}</b><br>Valorização 12m: +${c.valor}%`);
-    return marker;
-  }));
-
-  const layerHospitais = L.layerGroup(hospitais.map(h => {
-    const marker = L.marker(h.coords);
-    marker.bindPopup(`<b>${h.nome}</b><br>${h.cidade}`);
-    return marker;
-  }));
-
-  const layerEscolas = L.layerGroup(escolas.map(e => {
-    const marker = L.marker(e.coords);
-    marker.bindPopup(`<b>${e.nome}</b><br>${e.tipo}`);
-    return marker;
-  }));
-
-  const layerMarinas = L.layerGroup(marinas.map(m => {
-    const marker = L.marker(m.coords);
-    marker.bindPopup(`<b>${m.nome}</b><br>${m.slots} vagas`);
-    return marker;
-  }));
-
-  const layerSurf = L.layerGroup(surf.map(s => {
-    const marker = L.circleMarker(s.coords, { radius: 10, fillColor: '#ec4899', color: '#fff', weight: 2, opacity: 1, fillOpacity: 0.8 });
-    marker.bindPopup(`<b>${s.nome}</b><br>${s.tipo}`);
-    return marker;
-  }));
-
-  const layerEventos = L.layerGroup(eventos.map(e => {
-    const marker = L.marker(e.coords);
-    marker.bindPopup(`<b>${e.nome}</b><br>${e.data}`);
-    return marker;
-  }));
-
-  // Adicionar camadas padrão
-  layerPraias.addTo(map);
-  layerRoi.addTo(map);
-  layerValorizacao.addTo(map);
-
-  // Controles
-  document.getElementById('layer-praias').addEventListener('change', (e) => { e.target.checked ? layerPraias.addTo(map) : map.removeLayer(layerPraias); });
-  document.getElementById('layer-roi').addEventListener('change', (e) => { e.target.checked ? layerRoi.addTo(map) : map.removeLayer(layerRoi); });
-  document.getElementById('layer-valorizacao').addEventListener('change', (e) => { e.target.checked ? layerValorizacao.addTo(map) : map.removeLayer(layerValorizacao); });
-  document.getElementById('layer-hospitais').addEventListener('change', (e) => { e.target.checked ? layerHospitais.addTo(map) : map.removeLayer(layerHospitais); });
-  document.getElementById('layer-escolas').addEventListener('change', (e) => { e.target.checked ? layerEscolas.addTo(map) : map.removeLayer(layerEscolas); });
-  document.getElementById('layer-marinas').addEventListener('change', (e) => { e.target.checked ? layerMarinas.addTo(map) : map.removeLayer(layerMarinas); });
-  document.getElementById('layer-surf').addEventListener('change', (e) => { e.target.checked ? layerSurf.addTo(map) : map.removeLayer(layerSurf); });
-  document.getElementById('layer-eventos').addEventListener('change', (e) => { e.target.checked ? layerEventos.addTo(map) : map.removeLayer(layerEventos); });
-  const layerTransporte = L.layerGroup(transporte.map(t => {
-    const marker = L.marker(t.coords);
-    marker.bindPopup(`<b>${t.nome}</b><br>${t.tipo}`);
-    return marker;
-  }));
-
-  const layerGastronomia = L.layerGroup(gastronomia.map(g => {
-    const marker = L.marker(g.coords);
-    marker.bindPopup(`<b>${g.nome}</b><br>${g.cidade} — Nota ${g.nota}`);
-    return marker;
-  }));
-
-  const layerParques = L.layerGroup(parques.map(p => {
-    const marker = L.circleMarker(p.coords, { radius: 10, fillColor: '#22c55e', color: '#fff', weight: 2, opacity: 1, fillOpacity: 0.8 });
-    marker.bindPopup(`<b>${p.nome}</b><br>${p.tipo}`);
-    return marker;
-  }));
-
-  const layerParceiros = L.layerGroup(parceiros.map(p => {
-    const marker = L.marker(p.coords);
-    marker.bindPopup(`<b>${p.nome}</b><br>${p.cidade} — ${p.tipo}`);
-    return marker;
-  }));
-
-  const layerPraiasCompleta = L.layerGroup(praias_completas.map(p => {
-    const marker = createCircleMarker(p.coords, '#f59e0b', 12);
-    marker.bindPopup(`<b>${p.nome}</b><br>${p.desc  ''}`);
-    return marker;
-  }));
-
-  const layerSurfCompleto = L.layerGroup(surf_completo.map(s => {
-    const marker = L.circleMarker(s.coords, { radius: 10, fillColor: '#ec4899', color: '#fff', weight: 2, opacity: 1, fillOpacity: 0.8 });
-    marker.bindPopup(`<b>${s.nome}</b><br>${s.tipo}`);
-    return marker;
-  }));
-
-  // Atualizar camadas padrão
-  map.removeLayer(layerPraias);
-  layerPraiasCompleta.addTo(map);
-
-  // Atualizar surf
-  if (map.hasLayer(layerSurf)) {
-    map.removeLayer(layerSurf);
-    layerSurfCompleto.addTo(map);
-  }
-
-  // Controles adicionais
-  document.getElementById('layer-transporte').addEventListener('change', (e) => { e.target.checked ? layerTransporte.addTo(map) : map.removeLayer(layerTransporte); });
-  document.getElementById('layer-gastronomia').addEventListener('change', (e) => { e.target.checked ? layerGastronomia.addTo(map) : map.removeLayer(layerGastronomia); });
-  document.getElementById('layer-parques').addEventListener('change', (e) => { e.target.checked ? layerParques.addTo(map) : map.removeLayer(layerParques); });
-  document.getElementById('layer-parceiros').addEventListener('change', (e) => { e.target.checked ? layerParceiros.addTo(map) : map.removeLayer(layerParceiros); });
-
+(function(){
+'use strict';
+const cards=Array.from(document.querySelectorAll('.poi'));
+const search=document.getElementById('search');
+const city=document.getElementById('city');
+const checks=Array.from(document.querySelectorAll('input[name="category"]'));
+const status=document.getElementById('status');
+const colors={Praias:'#b96309',Natureza:'#0b776c',Cultura:'#694bb0'};
+const normalize=value=>value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+let map=null,group=null;
+const markers=new Map();
+function visible(){const query=normalize(search.value.trim());const categories=checks.filter(c=>c.checked).map(c=>c.value);return cards.filter(card=>(!city.value||card.dataset.city===city.value)&&categories.includes(card.dataset.category)&&normalize(card.textContent).includes(query));}
+function update(){const selected=visible();cards.forEach(card=>{card.hidden=!selected.includes(card);});document.getElementById('empty').hidden=selected.length!==0;status.textContent=selected.length+' de '+cards.length+' referências exibidas.'+(map?'':' Mapa indisponível; consulte a lista.');if(!map)return;group.clearLayers();selected.forEach(card=>group.addLayer(markers.get(card)));if(selected.length)map.fitBounds(L.latLngBounds(selected.map(card=>[Number(card.dataset.lat),Number(card.dataset.lng)])),{padding:[35,35],maxZoom:13});}
+function init(){try{if(!window.L)throw new Error('Leaflet indisponível');document.getElementById('map').textContent='';map=L.map('map',{scrollWheelZoom:false}).setView([-24.10,-46.55],9);L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);group=L.layerGroup().addTo(map);cards.forEach(card=>{const name=card.querySelector('h3').textContent;const marker=L.circleMarker([Number(card.dataset.lat),Number(card.dataset.lng)],{radius:9,color:'#fff',weight:2,fillColor:colors[card.dataset.category],fillOpacity:1});const popup=document.createElement('div');const heading=document.createElement('h3');heading.textContent=name;popup.appendChild(heading);const info=document.createElement('p');info.textContent=card.dataset.city+' · '+card.dataset.category+' · posição aproximada';popup.appendChild(info);popup.appendChild(card.querySelector('.source').cloneNode(true));marker.bindPopup(popup);markers.set(card,marker);const actions=document.createElement('div');actions.className='card-actions';const button=document.createElement('button');button.type='button';button.className='button secondary';button.textContent='Ver no mapa';button.setAttribute('aria-label','Ver '+name+' no mapa');button.addEventListener('click',()=>{document.getElementById('map').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'center'});map.setView(marker.getLatLng(),14);marker.openPopup();});actions.appendChild(button);card.appendChild(actions);});}catch(error){map=null;document.getElementById('map').textContent='Não foi possível carregar o mapa. Todos os locais e fontes permanecem disponíveis na lista abaixo.';}update();}
+search.addEventListener('input',update);city.addEventListener('change',update);checks.forEach(check=>check.addEventListener('change',update));document.getElementById('reset').addEventListener('click',()=>{search.value='';city.value='';checks.forEach(check=>check.checked=true);update();});if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+})();
 </script>
-<script src="https://praia.digital/js/shared.js?v=2.0"></script>
+<script defer src="/js/shared.js?v=2.0"></script>
 </body>
 </html>
