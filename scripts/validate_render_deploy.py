@@ -28,9 +28,11 @@ def branch_context_valid(branch, mode, env):
     event = env.get("GITHUB_EVENT_NAME", "")
     ref = env.get("GITHUB_REF", "")
     if mode == "pr":
-        return (actions and event == "pull_request" and
-                env.get("GITHUB_BASE_REF") == "main" and
-                bool(re.fullmatch(r"refs/pull/\d+/merge", ref)))
+        if not (actions and event == "pull_request"):
+            return False
+        # checkout de PR pode ser ref refs/pull/N/merge OU HEAD destacado no sha do PR
+        return (env.get("GITHUB_BASE_REF") == "main" and
+                (bool(re.fullmatch(r"refs/pull/\d+/merge", ref)) or branch == "HEAD"))
     if mode != "deployment":
         return False
     if actions:
