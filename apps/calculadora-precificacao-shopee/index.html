@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Calculadora de Precificação Shopee & TikTok Shop — Margem Real | Praia Digital</title>
-<meta name="description" content="Calcule o lucro real do seu produto na Shopee e TikTok Shop com as taxas atualizadas de 2026. Descubra o preço ideal para a margem que você quer.">
+<title>Calculadora de Precificação Shopee & TikTok Shop — Margem Estimada | Praia Digital</title>
+<meta name="description" content="Simule a margem por pedido na Shopee e TikTok Shop com as premissas de taxas exibidas. Confirme tarifas e tributos aplicáveis antes de decidir.">
 <link rel="canonical" href="https://praia.digital/apps/calculadora-precificacao-shopee/">
 <meta property="og:title" content="Calculadora de Precificação Shopee & TikTok Shop">
-<meta property="og:description" content="Lucro real por venda com as taxas atuais das plataformas. Grátis, sem cadastro.">
+<meta property="og:description" content="Estimativa de margem por venda com premissas de taxas. Valide tarifas e tributos. Grátis, sem cadastro.">
 <meta property="og:url" content="https://praia.digital/apps/calculadora-precificacao-shopee/">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Precificação Shopee & TikTok Shop","url":"https://praia.digital/apps/calculadora-precificacao-shopee/","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"}}
@@ -60,7 +60,7 @@ footer{padding:28px 0;font-size:.82rem;color:var(--ink2);text-align:center}
 <main><div class="wrap">
 <p class="eyebrow">App gratuito</p>
 <h1>Calculadora de Precificação — Shopee & TikTok Shop</h1>
-<p class="sub">Informe o custo e o preço de venda para ver o lucro real por pedido, já descontadas as taxas vigentes da plataforma. Ou descubra o preço ideal para a margem que você quer.</p>
+<p class="sub">Informe custo, preço e despesas para simular a margem por pedido. As taxas exibidas são premissas: confirme a tarifa aplicável à sua conta. Inclua tributos locais e de importação nos custos/despesas, quando aplicáveis. A estimativa não representa lucro líquido contábil nem garantia de resultado.</p>
 
 <div class="panel">
   <div class="grid">
@@ -68,8 +68,8 @@ footer{padding:28px 0;font-size:.82rem;color:var(--ink2);text-align:center}
       <select id="plat"><option value="shopee">Shopee</option><option value="tiktok">TikTok Shop</option></select></div>
     <div><label for="custo">Custo do produto (R$)</label><input id="custo" type="number" min="0" step="0.01" placeholder="41.00"></div>
     <div><label for="preco">Preço de venda (R$)</label><input id="preco" type="number" min="0" step="0.01" placeholder="69.90"></div>
-    <div id="afWrap" style="display:none"><label for="afiliado">Comissão de afiliado TikTok (%)</label><input id="afiliado" type="number" min="0" max="50" step="0.1" value="10"></div>
-    <div><label for="margemAlvo">Margem-alvo (%) — opcional, p/ preço sugerido</label><input id="margemAlvo" type="number" min="1" max="80" step="1" value="15"></div>
+    <div id="afWrap" style="display:none"><label for="afiliado">Comissão de afiliado TikTok (%)</label><input id="afiliado" type="number" min="0" max="100" step="0.1" value="10"></div>
+    <div><label for="margemAlvo">Margem-alvo (%) — opcional, p/ preço sugerido</label><input id="margemAlvo" type="number" min="0" max="99.99" step="0.01" value="15"></div>
     <div><label for="frete">Custo extra por pedido (embalagem, frete não repassado) R$</label><input id="frete" type="number" min="0" step="0.01" value="0"></div>
   </div>
   <button class="btn" onclick="calc()">Calcular</button>
@@ -78,7 +78,7 @@ footer{padding:28px 0;font-size:.82rem;color:var(--ink2);text-align:center}
 <div class="panel result" id="res">
   <div class="kpis">
     <div class="kpi"><b id="kLucro">—</b><small>Lucro por pedido</small></div>
-    <div class="kpi"><b id="kMargem">—</b><small>Margem líquida</small></div>
+    <div class="kpi"><b id="kMargem">—</b><small>Margem estimada</small></div>
     <div class="kpi"><b id="kTaxa">—</b><small>Taxa da plataforma</small></div>
   </div>
   <div class="alert" id="alerta"></div>
@@ -90,7 +90,7 @@ footer{padding:28px 0;font-size:.82rem;color:var(--ink2);text-align:center}
 </div>
 
 <div class="panel">
-  <h2 style="font-size:1.05rem;margin-bottom:8px">Tabela de taxas usada (2026)</h2>
+  <h2 style="font-size:1.05rem;margin-bottom:8px">Premissas de taxas usadas — confirme a vigência</h2>
   <table>
     <thead><tr><th>Plataforma</th><th>Faixa de preço</th><th>Taxa</th></tr></thead>
     <tbody>
@@ -119,13 +119,26 @@ function taxaTikTok(p,af){return p*0.06+2+p*(af/100);} // comissão base estimad
 function taxa(p,pl,af){return pl==='shopee'?taxaShopee(p):taxaTikTok(p,af);}
 function lucro(p,c,pl,af,ex){const t=taxa(p,pl,af);return{lucro:p-c-t-ex,taxa:t};}
 function fmt(v){return 'R$ '+v.toFixed(2).replace('.',',');}
-function precoParaMargem(c,pl,af,ex,alvo){let lo=c+0.01,hi=c*10+200;for(let i=0;i<60;i++){const mid=(lo+hi)/2;const m=lucro(mid,c,pl,af,ex).lucro/mid*100;if(m<alvo)lo=mid;else hi=mid;}return hi;}
+function precoParaMargem(c,pl,af,ex,alvo){
+  if (!['shopee','tiktok'].includes(pl) || ![c,af,ex,alvo].every(Number.isFinite) || c<0 || ex<0 || af<0 || af>100 || alvo<0 || alvo>=100) return null;
+  const faixas=pl==='shopee'
+    ? [[0,80,0.20,4.50],[80,100,0.14,16],[100,200,0.14,20],[200,Infinity,0.14,26]]
+    : [[0,Infinity,0.06+af/100,2]];
+  const candidatos=[];
+  for (const [min,max,percentual,fixa] of faixas){
+    const denominador=1-percentual-alvo/100;
+    if (denominador<=0) continue;
+    let valor=Math.ceil(Math.max(0.01,min,(c+ex+fixa)/denominador)*100-1e-8)/100;
+    if (Number.isFinite(valor) && valor<max && lucro(valor,c,pl,af,ex).lucro/valor*100>=alvo-1e-8) candidatos.push(valor);
+  }
+  return candidatos.length?Math.min(...candidatos):null;
+}
 function calc(){
   const c=parseFloat(document.getElementById('custo').value),p=parseFloat(document.getElementById('preco').value);
-  const pl=plat.value,af=parseFloat(document.getElementById('afiliado').value)||0,ex=parseFloat(document.getElementById('frete').value)||0;
-  const alvo=parseFloat(document.getElementById('margemAlvo').value)||15;
+  const pl=plat.value,af=Number(document.getElementById('afiliado').value),ex=Number(document.getElementById('frete').value);
+  const alvo=document.getElementById('margemAlvo').value.trim()===''?15:Number(document.getElementById('margemAlvo').value);
   const res=document.getElementById('res'),al=document.getElementById('alerta');
-  if(!c||!p){alert('Informe custo e preço de venda.');return;}
+  if (![c,p,af,ex,alvo].every(Number.isFinite) || c<0 || p<=0 || af<0 || af>100 || ex<0 || alvo<0 || alvo>=100){alert('Informe valores válidos: custo e despesas não negativos, preço positivo, afiliado de 0 a 100% e margem de 0 a menos de 100%.');return;}
   const r=lucro(p,c,pl,af,ex),m=r.lucro/p*100;
   document.getElementById('kLucro').textContent=fmt(r.lucro);
   document.getElementById('kLucro').className=r.lucro>=0?'good':'bad';
@@ -135,13 +148,13 @@ function calc(){
   al.className='alert show '+(m>=10?'ok':(m>=0?'warn':'bad'));
   al.textContent=m>=20?'Excelente: margem acima de 20% — avalie se o preço não está alto demais para converter.':(m>=10?'Dentro da faixa saudável (10–20%). Bom produto para escalar.':(m>=0?'Atenção: margem abaixo de 10%. Qualquer imprevisto vira prejuízo. Considere subir o preço ou reduzir custo.':'Prejuízo: este preço não cobre custo + taxas. Não anuncie nesse valor.'));
   const ps=precoParaMargem(c,pl,af,ex,alvo);
-  document.getElementById('sugestao').innerHTML='💡 Para margem de <strong>'+alvo+'%</strong>, o preço sugerido é <strong>'+fmt(ps)+'</strong>.';
+  document.getElementById('sugestao').textContent=ps===null?'Meta inviável com as taxas e custos informados.':'Para margem de '+alvo+'%, o menor preço estimado em centavos é '+fmt(ps)+'. Valide taxas e tributos antes de usar.';
   const tb=document.getElementById('detalheBody');
   tb.innerHTML='<tr><td>Preço de venda</td><td>'+fmt(p)+'</td></tr>'+
     '<tr><td>(–) Custo do produto</td><td>'+fmt(c)+'</td></tr>'+
     '<tr><td>(–) Taxa da plataforma'+(pl==='tiktok'?' (incl. afiliado '+af+'%)':'')+'</td><td>'+fmt(r.taxa)+'</td></tr>'+
     (ex?'<tr><td>(–) Custo extra por pedido</td><td>'+fmt(ex)+'</td></tr>':'')+
-    '<tr><td><strong>= Lucro líquido por pedido</strong></td><td><strong>'+fmt(r.lucro)+'</strong></td></tr>';
+    '<tr><td><strong>= Resultado estimado por pedido</strong></td><td><strong>'+fmt(r.lucro)+'</strong></td></tr>';
   res.classList.add('show');res.scrollIntoView({behavior:'smooth',block:'nearest'});
 }
 </script>
