@@ -54,12 +54,14 @@ th{font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:var(--in
 footer{padding:28px 0;font-size:.82rem;color:var(--ink2);text-align:center}
 @media(max-width:640px){.grid,.kpis{grid-template-columns:1fr}}
 </style>
+<link rel="stylesheet" href="/css/app-network.css">
 </head>
-<body>
-<header><div class="wrap"><a class="logo" href="//">Praia<span>Digital</span></a><a href="/apps/" style="font-size:.85rem">← Todos os apps</a></div></header>
+<body data-pd-app>
+<a class="pd-skip" href="#pd-app-title">Pular para o aplicativo</a><nav class="pd-network-nav" aria-label="Navegação dos aplicativos"><ul><li><a href="/">Página inicial</a></li><li><a href="/apps/">Todos os aplicativos</a></li><li><a href="/#jornadas-apps">Roteiros de análise</a></li></ul></nav>
+<header><div class="wrap"><a class="logo" href="/">Praia<span>Digital</span></a><a href="/apps/" style="font-size:.85rem">← Todos os apps</a></div></header>
 <main><div class="wrap">
 <p class="eyebrow">App gratuito</p>
-<h1>Calculadora de Precificação — Shopee & TikTok Shop</h1>
+<h1 id="pd-app-title" tabindex="-1">Calculadora de Precificação — Shopee & TikTok Shop</h1>
 <p class="sub">Informe custo, preço e despesas para simular a margem por pedido. As taxas exibidas são premissas: confirme a tarifa aplicável à sua conta. Inclua tributos locais e de importação nos custos/despesas, quando aplicáveis. A estimativa não representa lucro líquido contábil nem garantia de resultado.</p>
 
 <div class="panel">
@@ -158,5 +160,9 @@ function calc(){
   res.classList.add('show');res.scrollIntoView({behavior:'smooth',block:'nearest'});
 }
 </script>
+
+<section class="pd-network" aria-labelledby="pd-network-title"><h2 id="pd-network-title">Continue sua análise com os aplicativos</h2><p>Ferramentas conectadas por objetivo, com acesso direto ao catálogo e à página inicial.</p><details><summary>Explorar os outros 12 aplicativos</summary><ul class="pd-network-grid"><li><a href="/apps/alugar-ou-comprar/">Alugar ou Comprar no Litoral?</a></li><li><a href="/apps/calculadora-consorcio/">Calculadora de Consórcio Imobiliário</a></li><li><a href="/apps/calculadora-financiamento/">Simulador de Financiamento</a></li><li><a href="/apps/calculadora-valorizacao/">Calculadora de Valorização</a></li><li><a href="/apps/checklist-vistoria/">Checklist de Vistoria de Imóvel</a></li><li><a href="/apps/comparador-cidades/">Comparador de Cidades do Litoral</a></li><li><a href="/apps/custo-de-compra/">Calculadora de ITBI e Custos de Compra do Imóvel</a></li><li><a href="/apps/planejador-entrada/">Planejador de Entrada</a></li><li><a href="/apps/renda-para-financiar/">Renda para Financiar</a></li><li><a href="/apps/simulador-roi-temporada/">Simulador de ROI — Aluguel de Temporada</a></li><li><a href="/apps/temporada-ou-anual/">Temporada ou Aluguel Anual?</a></li><li><a href="/apps/valor-imovel/">Quanto Vale Meu Imóvel no Litoral?</a></li></ul></details><p><a href="/apps/">Catálogo de aplicativos</a> · <a href="/#jornadas-apps">Roteiros na página inicial</a></p><p class="pd-network-note">Os links não transferem dados automaticamente. Registre suas premissas e confira custos, tributos e limitações antes de decidir.</p></section>
+
+<section class="pd-guide" aria-labelledby="pd-guide-title"><h2 id="pd-guide-title">Precifique com premissas verificadas</h2><ol><li>Informe custo, preço, plataforma e despesas adicionais aplicáveis.</li><li>Confira as taxas atuais no seu contrato e contabilize tributos, frete, devoluções e outros custos fora da simulação.</li><li>Use a margem sugerida como estimativa; não representa lucro líquido garantido nem recomendação de escala.</li></ol><details><summary>Como interpretar e compartilhar esta análise</summary><h3>Os resultados são uma proposta ou garantia?</h3><p>Não. São estimativas ou registros de apoio, sujeitos às premissas e limitações de cada ferramenta. Confirme dados e condições com os profissionais responsáveis.</p><h3>Como usar os apps em sequência?</h3><p>Comece pelo seu objetivo, registre as premissas e compare os resultados das ferramentas relacionadas. Os links não transferem automaticamente os dados preenchidos.</p><h3>Devo inserir informações confidenciais?</h3><p>Evite senhas, documentos pessoais e dados de clientes. Use apenas as informações necessárias e consulte a política de privacidade antes de compartilhar qualquer dado.</p></details></section>
 </body>
 </html>
