@@ -60,12 +60,16 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qual cidade do litoral é melhor para investir?","acceptedAnswer":{"@type":"Answer","text":"Pelos yields de aluguel (8%+), Mongaguá, Peruíbe e Itanhaém lideram em retorno sobre o capital. Praia Grande combina yield 7,6% com o maior estoque de lançamentos da baixada. Santos oferece a maior liquidez para revenda."}},{"@type":"Question","name":"Qual cidade tem a temporada mais forte?","acceptedAnswer":{"@type":"Answer","text":"São Sebastião (Maresias/Juquehy) e Ilhabela têm as maiores diárias do litoral na alta temporada, mas também os preços de compra mais altos — o yield fica em ~5,8–5,9%. Guarujá equilibra diária alta com preço médio menor."}},{"@type":"Question","name":"Qual cidade é mais barata para morar?","acceptedAnswer":{"@type":"Answer","text":"Peruíbe (R$ 1.900/m²), Mongaguá (R$ 2.100/m²) e Itanhaém (R$ 2.400/m²) têm os menores custos de compra e aluguel do litoral paulista."}},{"@type":"Question","name":"Como escolher entre Baixada Santista e Litoral Norte?","acceptedAnswer":{"@type":"Answer","text":"Baixada (Santos a Peruíbe): infraestrutura urbana, emprego, liquidez e preços menores. Litoral Norte (Caraguá a Ubatuba): praias preservadas, temporada premium e valorização turística, com menos liquidez fora de temporada."}}]}
   </script>
+<link rel="stylesheet" href="/css/app-network.css">
 </head>
-<body>
+<body data-pd-app="comparador-cidades">
+<a class="pd-skip" href="#pd-app-title">Ir para a ferramenta</a>
 <header>
-  <h1>📊 Comparador de Cidades do Litoral</h1>
+  <h1 id="pd-app-title" tabindex="-1">📊 Comparador de Cidades do Litoral</h1>
   <p>Qual cidade combina com seu objetivo? Compare e decida com dados • Praia Digital</p>
 </header>
+<nav class="pd-network-nav" aria-label="Navegação da rede de aplicativos"><ul><li><a href="/">Página inicial</a></li><li><a href="/apps/">Todos os aplicativos</a></li><li><a href="/#jornadas-apps">Roteiros de análise</a></li></ul></nav>
+
 <div class="wrap">
   <div class="card">
     <h2 style="font-size:17px;margin-bottom:10px">Escolha seu perfil</h2>
@@ -133,7 +137,7 @@
     </div>
   </div>
 </div>
-<footer>Praia Digital — Tecnologia imobiliária do litoral • <a href="//" style="color:#0EA5E9">praia.digital</a></footer>
+<footer>Praia Digital — Tecnologia imobiliária do litoral • <a href="/" style="color:#0EA5E9">praia.digital</a></footer>
 <script>
 const CIDADES = [
   {nome:'Santos', m2:8000, ocup:51, adr:850, valor:9.8, liq:9, infra:9},
@@ -194,10 +198,13 @@ render();
   </div>
   <p style="margin-top:14px;font-size:13px;color:#64748B;text-align:center">
     <a href="/apps/" style="color:#0EA5E9">Ver índice completo de apps</a> ·
-    <a href="//" style="color:#0EA5E9">Praia Digital</a> ·
+    <a href="/" style="color:#0EA5E9">Praia Digital</a> ·
     <a href="/encontrar-imovel.html" style="color:#0EA5E9">Encontrar imóvel</a>
   </p>
 </section>
 
-<script defer src="/js/shared.js"></script><script defer src="/assets/js/related-ads.js"></script></body>
+<script defer src="/js/shared.js"></script><script defer src="/assets/js/related-ads.js"></script>
+<section class="pd-guide" aria-labelledby="pd-guide-title"><h2 id="pd-guide-title">Como usar esta análise com segurança</h2><ol><li>Compare bairros, mobilidade e perfil do imóvel, não apenas médias municipais.</li><li>Confira a data e a fonte de cada indicador antes de considerar dados como atuais.</li><li>Use estimativa de valor e custos de aquisição para aprofundar a análise de um imóvel concreto.</li></ol><p class="pd-network-note">As premissas, taxas e tabelas preexistentes precisam de conferência de fonte e data. Este conteúdo não atualiza nem valida essas premissas. Simulações educativas não são propostas bancárias, garantia de retorno ou orientação jurídica e tributária individual.</p></section>
+<section class="pd-network" aria-labelledby="pd-network-title"><h2 id="pd-network-title">Continue sua análise</h2><p>Combine ferramentas para comparar cenários e organizar decisões.</p><ul class="pd-network-grid"><li><a href="/apps/alugar-ou-comprar/">Alugar ou comprar</a></li><li><a href="/apps/calculadora-consorcio/">Consórcio</a></li><li><a href="/apps/calculadora-financiamento/">Financiamento</a></li><li><a href="/apps/calculadora-precificacao-shopee/">Precificação Shopee</a></li><li><a href="/apps/calculadora-valorizacao/">Valorização</a></li><li><a href="/apps/checklist-vistoria/">Checklist de vistoria</a></li><li><a href="/apps/custo-de-compra/">Custo de compra</a></li><li><a href="/apps/planejador-entrada/">Planejar entrada</a></li><li><a href="/apps/renda-para-financiar/">Renda para financiar</a></li><li><a href="/apps/simulador-roi-temporada/">ROI de temporada</a></li><li><a href="/apps/temporada-ou-anual/">Temporada ou anual</a></li><li><a href="/apps/valor-imovel/">Estimar valor do imóvel</a></li></ul></section>
+</body>
 </html>
