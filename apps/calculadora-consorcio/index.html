@@ -48,12 +48,16 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Consórcio ou financiamento: qual sai mais barato em 2026?","acceptedAnswer":{"@type":"Answer","text":"Com financiamento a ~11,19% a.a., o consórcio (taxa de administração ~14–20% total, sem juros) costuma custar 30–50% menos no valor total. Mas o financiamento entrega o imóvel na hora — o consórcio exige paciência ou lance."}},{"@type":"Question","name":"Como sou contemplado no consórcio imobiliário?","acceptedAnswer":{"@type":"Answer","text":"Por sorteio mensal ou lance (maior percentual do crédito vence). FGTS pode compor o lance ou complementar a carta de crédito."}},{"@type":"Question","name":"A parcela do consórcio fica congelada?","acceptedAnswer":{"@type":"Answer","text":"Não. Crédito e parcela são reajustados anualmente por índice do contrato (INCC ou IPCA), preservando o poder de compra até a contemplação."}},{"@type":"Question","name":"Posso comprar imóvel no litoral com a carta de crédito?","acceptedAnswer":{"@type":"Answer","text":"Sim. A carta de crédito imobiliária vale para imóveis residenciais, casas de veraneio e terrenos em qualquer cidade do Brasil, incluindo todo o litoral de SP."}}]}
   </script>
+<link rel="stylesheet" href="/css/app-network.css">
 </head>
-<body>
+<body data-pd-app="calculadora-consorcio">
+<a class="pd-skip" href="#pd-app-title">Ir para a ferramenta</a>
 <header>
-  <h1>🏦 Calculadora de Consórcio Imobiliário</h1>
+  <h1 id="pd-app-title" tabindex="-1">🏦 Calculadora de Consórcio Imobiliário</h1>
   <p>Parcela, lance e economia vs. financiamento • Gratuito, por Praia Digital</p>
 </header>
+<nav class="pd-network-nav" aria-label="Navegação da rede de aplicativos"><ul><li><a href="/">Página inicial</a></li><li><a href="/apps/">Todos os aplicativos</a></li><li><a href="/#jornadas-apps">Roteiros de análise</a></li></ul></nav>
+
 <div class="wrap">
   <div class="card">
     <div class="grid">
@@ -122,7 +126,7 @@
   <div class="card">
     <h2 style="font-size:17px;margin-bottom:10px">🔗 Explore mais</h2>
     <div class="links">
-      <a href="//">🏠 <span>Praia Digital</span> — imóveis no litoral de SP</a>
+      <a href="/">🏠 <span>Praia Digital</span> — imóveis no litoral de SP</a>
       <a href="/apps/simulador-roi-temporada/">🧮 Simulador de ROI de aluguel por temporada</a>
       <a href="/consorcio-imobiliario-costeiro-litoral-sem-juros-2026.html">📖 Guia: consórcio no litoral sem juros bancários</a>
       <a href="/encontrar-imovel.html">🔍 Encontrar imóvel</a>
@@ -131,7 +135,7 @@
     </div>
   </div>
 </div>
-<footer>Praia Digital — Tecnologia imobiliária do litoral • <a href="//" style="color:#0EA5E9">praia.digital</a></footer>
+<footer>Praia Digital — Tecnologia imobiliária do litoral • <a href="/" style="color:#0EA5E9">praia.digital</a></footer>
 <script>
 function fmt(v){ return 'R$ ' + Math.round(v).toLocaleString('pt-BR'); }
 function calcular(){
@@ -162,10 +166,13 @@ function calcular(){
   </div>
   <p style="margin-top:14px;font-size:13px;color:#64748B;text-align:center">
     <a href="/apps/" style="color:#0EA5E9">Ver índice completo de apps</a> ·
-    <a href="//" style="color:#0EA5E9">Praia Digital</a> ·
+    <a href="/" style="color:#0EA5E9">Praia Digital</a> ·
     <a href="/encontrar-imovel.html" style="color:#0EA5E9">Encontrar imóvel</a>
   </p>
 </section>
 
-<script defer src="/js/shared.js"></script><script defer src="/assets/js/related-ads.js"></script></body>
+<script defer src="/js/shared.js"></script><script defer src="/assets/js/related-ads.js"></script>
+<section class="pd-guide" aria-labelledby="pd-guide-title"><h2 id="pd-guide-title">Como usar esta análise com segurança</h2><ol><li>Use a proposta real da administradora para informar prazo, taxa de administração e demais encargos.</li><li>Considere correção da carta e parcelas, fundo de reserva e seguros previstos no contrato.</li><li>Contemplação não é garantida em uma data; compare com financiamento e compra à vista.</li></ol><p class="pd-network-note">As premissas, taxas e tabelas preexistentes precisam de conferência de fonte e data. Este conteúdo não atualiza nem valida essas premissas. Simulações educativas não são propostas bancárias, garantia de retorno ou orientação jurídica e tributária individual.</p></section>
+<section class="pd-network" aria-labelledby="pd-network-title"><h2 id="pd-network-title">Continue sua análise</h2><p>Combine ferramentas para comparar cenários e organizar decisões.</p><ul class="pd-network-grid"><li><a href="/apps/alugar-ou-comprar/">Alugar ou comprar</a></li><li><a href="/apps/calculadora-financiamento/">Financiamento</a></li><li><a href="/apps/calculadora-precificacao-shopee/">Precificação Shopee</a></li><li><a href="/apps/calculadora-valorizacao/">Valorização</a></li><li><a href="/apps/checklist-vistoria/">Checklist de vistoria</a></li><li><a href="/apps/comparador-cidades/">Comparar cidades</a></li><li><a href="/apps/custo-de-compra/">Custo de compra</a></li><li><a href="/apps/planejador-entrada/">Planejar entrada</a></li><li><a href="/apps/renda-para-financiar/">Renda para financiar</a></li><li><a href="/apps/simulador-roi-temporada/">ROI de temporada</a></li><li><a href="/apps/temporada-ou-anual/">Temporada ou anual</a></li><li><a href="/apps/valor-imovel/">Estimar valor do imóvel</a></li></ul></section>
+</body>
 </html>
