@@ -40,10 +40,14 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quanto custa o 'fechamento' de um imóvel no litoral?","acceptedAnswer":{"@type":"Answer","text":"Some ITBI (2–3%), escritura e registro (~1% cada tabela de emolumentos SP) e tarifa bancária de avaliação (~R$ 3 mil se financiado). Um imóvel de R$ 400 mil costuma ter R$ 14–18 mil de custos totais."}},{"@type":"Question","name":"ITBI é sobre o valor da venda?","acceptedAnswer":{"@type":"Answer","text":"Sobre o maior valor entre o preço de compra e o valor venal de referência do município. Em cidades com venal atualizado (Santos, São Sebastião), a diferença pode ser relevante."}},{"@type":"Question","name":"Tem desconto no ITBI?","acceptedAnswer":{"@type":"Answer","text":"Várias cidades oferecem redução para primeiro imóvel, pagamento à vista ou imóveis na planta. Santos e São Vicente têm programas — pergunte na prefeitura antes de emitir a guia."}},{"@type":"Question","name":"Quem paga a escritura e o registro?","acceptedAnswer":{"@type":"Answer","text":"Por costume de mercado, o comprador paga ITBI, escritura e registro; o vendedor paga o laudo/ITBI de quitação e comissão (salvo negociação). Tudo é negociável no contrato."}}]}
   </script>
+<link rel="stylesheet" href="/css/app-network.css">
 </head>
-<body>
+<body data-pd-app="custo-de-compra">
+<a class="pd-skip" href="#pd-app-title">Ir para a ferramenta</a>
 
-<header><h1>🧾 Calculadora de ITBI e Custos de Compra do Imóvel</h1><p>ITBI, escritura e registro — sem surpresas no fechamento</p></header>
+<header><h1 id="pd-app-title" tabindex="-1">🧾 Calculadora de ITBI e Custos de Compra do Imóvel</h1><p>ITBI, escritura e registro — sem surpresas no fechamento</p></header>
+<nav class="pd-network-nav" aria-label="Navegação da rede de aplicativos"><ul><li><a href="/">Página inicial</a></li><li><a href="/apps/">Todos os aplicativos</a></li><li><a href="/#jornadas-apps">Roteiros de análise</a></li></ul></nav>
+
 <div class="wrap">
 <div class="card">
   <label>Valor do imóvel (R$)</label><input id="valor" type="number" value="595000">
@@ -146,7 +150,7 @@ function calc(){
   </div>
   <p style="margin-top:14px;font-size:13px;color:#64748B;text-align:center">
     <a href="/apps/" style="color:#0EA5E9">Ver índice completo de apps</a> ·
-    <a href="//" style="color:#0EA5E9">Praia Digital</a> ·
+    <a href="/" style="color:#0EA5E9">Praia Digital</a> ·
     <a href="/encontrar-imovel.html" style="color:#0EA5E9">Encontrar imóvel</a>
   </p>
 </section>
@@ -177,5 +181,8 @@ function calc(){
 {"@type":"Question","name":"Quando devo pagar o ITBI?","acceptedAnswer":{"@type":"Answer","text":"Antes da escritura ou do registro — sem a guia quitada o cartório não registra a transferência."}}
 ]}
 </script>
+
+<section class="pd-guide" aria-labelledby="pd-guide-title"><h2 id="pd-guide-title">Como usar esta análise com segurança</h2><ol><li>Consulte a legislação municipal vigente de ITBI e verifique base de cálculo e possíveis isenções.</li><li>Solicite orçamento de escritura, registro, avaliação bancária e demais despesas aplicáveis.</li><li>Reserve recursos para custos não incluídos no simulador; o resultado não é uma guia tributária.</li></ol><p class="pd-network-note">As premissas, taxas e tabelas preexistentes precisam de conferência de fonte e data. Este conteúdo não atualiza nem valida essas premissas. Simulações educativas não são propostas bancárias, garantia de retorno ou orientação jurídica e tributária individual.</p></section>
+<section class="pd-network" aria-labelledby="pd-network-title"><h2 id="pd-network-title">Continue sua análise</h2><p>Combine ferramentas para comparar cenários e organizar decisões.</p><ul class="pd-network-grid"><li><a href="/apps/alugar-ou-comprar/">Alugar ou comprar</a></li><li><a href="/apps/calculadora-consorcio/">Consórcio</a></li><li><a href="/apps/calculadora-financiamento/">Financiamento</a></li><li><a href="/apps/calculadora-precificacao-shopee/">Precificação Shopee</a></li><li><a href="/apps/calculadora-valorizacao/">Valorização</a></li><li><a href="/apps/checklist-vistoria/">Checklist de vistoria</a></li><li><a href="/apps/comparador-cidades/">Comparar cidades</a></li><li><a href="/apps/planejador-entrada/">Planejar entrada</a></li><li><a href="/apps/renda-para-financiar/">Renda para financiar</a></li><li><a href="/apps/simulador-roi-temporada/">ROI de temporada</a></li><li><a href="/apps/temporada-ou-anual/">Temporada ou anual</a></li><li><a href="/apps/valor-imovel/">Estimar valor do imóvel</a></li></ul></section>
 </body>
 </html>
