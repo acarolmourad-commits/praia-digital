@@ -1,11 +1,10 @@
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches: [main]
-  workflow_dispatch:
+  workflow_call:
 
 permissions:
+  contents: read
   pages: write
   id-token: write
 
@@ -13,7 +12,7 @@ jobs:
   deploy:
     concurrency:
       group: pages
-      cancel-in-progress: true
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -28,13 +27,20 @@ jobs:
           python3 scripts/build-navigation.py --report "$RUNNER_TEMP/navigation-report.json"
           python3 scripts/fix_empty_h1.py
 
+      - name: Test public artifact boundary
+        run: python3 -m unittest discover -s tests -p 'test_pages_public.py'
+
+      - name: Prepare explicitly reviewed public artifact
+        run: |
+          python3 scripts/prepare_pages_public.py --source "$GITHUB_WORKSPACE" --destination "$RUNNER_TEMP/praia-public" --manifest config/pages-public-manifest.json
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: ${{ runner.temp }}/praia-public
 
       - name: Deploy to GitHub Pages
         id: deployment

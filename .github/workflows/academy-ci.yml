@@ -44,6 +44,9 @@ jobs:
           git clean -fd academy/uploads academy/proprietarios || true
           git status --porcelain
 
+      - name: Test public artifact boundary
+        run: python3 -m unittest discover -s tests -p 'test_pages_public.py'
+
       - name: Pre-deploy validation
         run: python scripts/validate_render_deploy.py --check-mode ${{ github.event_name == 'pull_request' && 'pr' || 'deployment' }}
 
@@ -51,36 +54,13 @@ jobs:
         run: python scripts/validate_academy_inventory.py
 
   deploy-preview:
-    concurrency:
-      group: pages
-      cancel-in-progress: false
     needs: test
-    runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    uses: ./.github/workflows/deploy.yml
     permissions:
+      contents: read
       pages: write
       id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Prepare shared navigation
-        run: python3 scripts/build-navigation.py
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
 
   post-deploy-validation:
     needs: deploy-preview
