@@ -61,11 +61,11 @@
 <div class="wrap">
   <div class="card">
     <div class="grid">
-      <div><label>Crédito desejado (R$)</label><input type="number" id="credito" value="500000"></div>
-      <div><label>Prazo (meses)</label><input type="number" id="prazo" value="180"></div>
-      <div><label>Taxa administrativa total (%)</label><input type="number" id="taxa" value="18"></div>
-      <div><label>Lance (% do crédito, opcional)</label><input type="number" id="lance" value="0"></div>
-      <div><label>Taxa do financiamento p/ comparar (% a.a.)</label><input type="number" id="taxaFin" step="0.01" value="11.19"></div>
+      <div><label for="credito">Crédito desejado (R$)</label><input type="number" id="credito" value="500000"></div>
+      <div><label for="prazo">Prazo (meses)</label><input type="number" id="prazo" value="180"></div>
+      <div><label for="taxa">Taxa administrativa total (%)</label><input type="number" id="taxa" value="18"></div>
+      <div><label for="lance">Lance (% do crédito, opcional)</label><input type="number" id="lance" value="0"></div>
+      <div><label for="taxaFin">Taxa do financiamento p/ comparar (% a.a.)</label><input type="number" id="taxaFin" step="0.01" value="11.19"></div>
     </div>
     <button onclick="calcular()">Simular consórcio</button>
     <div class="result" id="result">
