@@ -167,23 +167,18 @@
     grid.innerHTML = list.map((item) => propertyCardTemplate(item)).join('');
   }
 
-  function filterProperties() {
-    const query = (document.getElementById('busca')?.value || '').trim().toLowerCase();
-    const typeFilter = document.getElementById('tipo-filtro')?.value || '';
-    const cityFilter = document.getElementById('cidade-filtro')?.value || '';
-
-    const filtered = properties.filter((p) => {
-      const matchesQuery =
-        !query ||
-        [p.title, p.city, p.type, p.tags.join(' ')].some((v) => String(v).toLowerCase().includes(query));
-
-      const matchesType = !typeFilter || p.type === typeFilter || p.type.toLowerCase() === typeFilter.toLowerCase();
-      const matchesCity = !cityFilter || p.city === cityFilter || p.city.toLowerCase() === cityFilter.toLowerCase();
-
-      return matchesQuery && matchesType && matchesCity;
-    });
-
-    render(filtered);
+  let searchContract, entryFilters;
+  function searchNotice(message) {
+    const grid = document.getElementById('lista-imoveis');
+    if (!grid) return;
+    let box = document.getElementById('pd-search-status');
+    if (!box) {
+      box = document.createElement('p');
+      box.id = 'pd-search-status';
+      box.setAttribute('role', 'status');
+      grid.parentNode.insertBefore(box, grid);
+    }
+    box.textContent = message;
   }
 
   function initFilters() {
@@ -204,20 +199,41 @@
   }
 
   function buscarImoveis() {
-    const q = (document.getElementById('busca')?.value || '').trim().toLowerCase();
-    const typeFilter = document.getElementById('tipo-filtro')?.value || '';
-    const cityFilter = document.getElementById('cidade-filtro')?.value || '';
-
-    let filtered = properties.filter((p) => {
-      const text = [p.title, p.city, p.type, p.description, (p.tags||[]).join(' ')].join(' ');
-      const matchesQuery = !q || String(text).toLowerCase().includes(q);
-      const matchesType = !typeFilter || p.type === typeFilter || p.type.toLowerCase() === typeFilter.toLowerCase();
-      const matchesCity = !cityFilter || p.city === cityFilter || p.city.toLowerCase() === cityFilter.toLowerCase();
-      return matchesQuery && matchesType && matchesCity;
-    });
-
-    filtered = filtered.slice().sort((a,b)=> (parseInt(b.score||0,10)-parseInt(a.score||0,10)));
+    const query = document.getElementById('busca');
+    const f = Object.assign({}, entryFilters);
+    if (query && query.value !== (entryFilters.q || '')) Object.assign(f, searchContract.parse(query.value));
+    const type = document.getElementById('tipo-filtro');
+    const city = document.getElementById('cidade-filtro');
+    if (type) { if (type.value) f.finalidade = searchContract.norm(type.value); else delete f.finalidade; }
+    if (city) { if (city.value) f.cidade = searchContract.norm(city.value); else delete f.cidade; }
+    const filtered = properties.filter(p => searchContract.matches(p, f)).sort((a, b) => Number(b.score || 0) - Number(a.score || 0));
     render(filtered);
+    searchNotice(f.invalid.length ? 'Filtros inválidos: ' + f.invalid.join(', ') + '. Corrija a URL da busca.' : (filtered.length ? filtered.length + ' imóveis encontrados.' : 'Nenhum imóvel corresponde aos filtros.') + ' Somente filtros estruturados reconhecidos são aplicados à busca estruturada. Valores e disponibilidade precisam de confirmação.');
+  }
+
+  function initSearch() {
+    searchContract = window.PDPropertySearch;
+    entryFilters = searchContract.read(window.location.search);
+    initFilters();
+    for (const [id, key] of [['cidade-filtro', 'cidade'], ['tipo-filtro', 'finalidade']]) {
+      const select = document.getElementById(id);
+      if (!select || !entryFilters[key]) continue;
+      const option = Array.from(select.options).find(o => searchContract.norm(o.value) === entryFilters[key]);
+      if (option) select.value = option.value;
+      else {
+        const added = document.createElement('option');
+        added.value = entryFilters[key]; added.textContent = entryFilters[key];
+        select.appendChild(added); select.value = added.value;
+      }
+    }
+    const input = document.getElementById('busca');
+    if (input && entryFilters.q) input.value = entryFilters.q;
+    buscarImoveis();
+    if (input) { input.addEventListener('input', buscarImoveis); input.addEventListener('search', buscarImoveis); }
+    for (const id of ['tipo-filtro', 'cidade-filtro']) {
+      const select = document.getElementById(id);
+      if (select) select.addEventListener('change', buscarImoveis);
+    }
   }
 
   function onFormSubmit(e) {
@@ -242,19 +258,16 @@
   }
 
   document.addEventListener('DOMContentLoaded', () => {
-    initFilters();
-    render(properties);
-
-    const buscaInput = document.getElementById('busca');
-    if (buscaInput) {
-      buscaInput.addEventListener('input', buscarImoveis);
-      buscaInput.addEventListener('search', buscarImoveis);
+    if (document.getElementById('lista-imoveis')) {
+      if (window.PDPropertySearch) initSearch();
+      else {
+        const script = document.createElement('script');
+        script.src = '/js/property-search.js';
+        script.onload = initSearch;
+        script.onerror = () => { render([]); searchNotice('Busca indisponível. Recarregue a página antes de consultar os filtros.'); };
+        document.head.appendChild(script);
+      }
     }
-    const tipo = document.getElementById('tipo-filtro');
-    if (tipo) tipo.addEventListener('change', buscarImoveis);
-    const cidade = document.getElementById('cidade-filtro');
-    if (cidade) cidade.addEventListener('change', buscarImoveis);
-
     const contatoForm = document.getElementById('contato-form');
     if (contatoForm) contatoForm.addEventListener('submit', onFormSubmit);
   });
