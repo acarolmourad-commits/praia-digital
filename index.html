@@ -598,7 +598,7 @@ footer .cols{grid-template-columns:1fr 1fr}
     <a class="card" href="/captura-leads.html"><h3>Geração de leads</h3><p>Qualificação automática de interessados.</p></a>
     <a class="card" href="/education/index.html"><h3>Praia Academy</h3><p>Cursos e formações para profissionais do mercado.</p></a>
     <a class="card" href="/planos-assinatura.html"><h3>Planos</h3><p>Assinaturas para imobiliárias e corretores.</p></a>
-    <a class="card" href="/cases.html"><h3>Cases</h3><p>Resultados de quem já usa a plataforma.</p></a>
+    <a class="card" href="/cases.html"><h3>Cases</h3><p>Exemplos ilustrativos de aplicação; não representam resultados comprovados de clientes.</p></a>
   </div>
   <p style="margin-top:26px"><a class="btn" href="/servicos.html">Conhecer soluções para imobiliárias</a></p>
 </div>
@@ -640,25 +640,15 @@ footer .cols{grid-template-columns:1fr 1fr}
 </div>
 </footer>
 
+<script src="/js/property-search.js"></script>
 <script>
-document.getElementById('smartsearch').addEventListener('submit',function(e){
-  var q=document.getElementById('q').value.toLowerCase();
-  var cidades=['bertioga','guaruja','guarujá','santos','praia grande','mongaguá','mongagua','itanhaém','itanhaem','peruíbe','peruibe','são vicente','sao vicente','são sebastião','sao sebastiao','caraguatatuba','ubatuba','ilhabela','riviera'];
-  var params=[];
-  for(var i=0;i<cidades.length;i++){if(q.indexOf(cidades[i])>-1){params.push('cidade='+encodeURIComponent(cidades[i]));break}}
-  var m=q.match(/(\d)\s*quarto/);if(m)params.push('quartos='+m[1]);
-  m=q.match(/r?\$?\s*([\d.,]+)\s*(mil|milhão|milhoes|milhões|mi)?/);
-  if(m){var v=parseFloat(m[1].replace('.','').replace(',','.'));
-    if(m[2]){v*=(m[2]==='mil'?1e3:1e6)}else if(v<10000){v*=1000}
-    params.push('preco_max='+Math.round(v));}
-  if(q.indexOf('casa')>-1)params.push('tipo=casa');
-  if(q.indexOf('apartamento')>-1||q.indexOf('apto')>-1)params.push('tipo=apartamento');
-  if(q.indexOf('temporada')>-1)params.push('perfil=temporada');
-  if(q.indexOf('invest')>-1)params.push('perfil=investimento');
-  params.push('q='+encodeURIComponent(document.getElementById('q').value));
-  this.action='/encontrar-imovel.html?'+params.join('&');
+document.getElementById('smartsearch').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var filters = PDPropertySearch.parse(document.getElementById('q').value);
+  window.location.assign('/encontrar-imovel.html?' + PDPropertySearch.params(filters).toString());
 });
 </script>
 <script src="https://praia.digital/js/shared.js?v=2.0" defer></script>
 </body>
 </html>
+
