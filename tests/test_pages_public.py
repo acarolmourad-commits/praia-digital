@@ -96,4 +96,60 @@ class PublicArtifactTests(unittest.TestCase):
     def test_disallowed_file_type(self):
         (self.source/"example.csv").write_text("SYNTHETIC ONLY")
         self.reject(self.manifest(["example.csv"]))
+    def test_manifest_version_type_strict(self):
+        for version in (True, 1.0, "1", None, 0, 2):
+            with self.subTest(version=version):
+                self.reject({"version": version, "reviewed": True, "files": ["index.html"]})
+    def test_manifest_integer_version_one_allowed(self):
+        self.assertEqual(MODULE.prepare(self.source, self.output, self.manifest(["index.html"])), 1)
+    def test_casefold_duplicate_paths(self):
+        self.reject(self.manifest(["index.html", "INDEX.HTML"]))
+    def test_file_directory_conflict_both_orders(self):
+        for names in (["fixture.html", "fixture.html/child.html"], ["FIXTURE.HTML/child.html", "fixture.html"]):
+            with self.subTest(names=names):
+                with self.assertRaisesRegex(ValueError, "File and directory path conflict"):
+                    MODULE.prepare(self.source, self.output, self.manifest(names))
+                self.assertFalse(self.output.exists())
+    def test_control_and_incompatible_paths(self):
+        names = ("nul\x00.html", "tab\t.html", "newline\n.html", "del\x7f.html", "control\x85.html", "C:/index.html", "C:index.html", "asset:stream.html", "star*.html", "query?.html", "quote\".html", "less<.html", "greater>.html", "pipe|.html", "folder./index.html", "folder /index.html", "folder/CON.html", "aux.html", "LPT1.html", "COM9.html")
+        for name in names:
+            with self.subTest(name=repr(name)):
+                with self.assertRaisesRegex(ValueError, "Invalid relative path"):
+                    MODULE.prepare(self.source, self.output, self.manifest([name]))
+                self.assertFalse(self.output.exists())
+    def test_safe_prefix_siblings_allowed(self):
+        names = ["folder/index.html", "folder-more/index.html", "COM10.html"]
+        for name in names:
+            fixture=self.source/name; fixture.parent.mkdir(parents=True, exist_ok=True); fixture.write_text("SYNTHETIC ONLY")
+        self.assertEqual(MODULE.prepare(self.source,self.output,self.manifest(names)),3)
+    def test_source_root_symlink(self):
+        alias=self.root/"source-alias"; alias.symlink_to(self.source,target_is_directory=True)
+        with self.assertRaisesRegex(ValueError,"Symlinks are not allowed"):
+            MODULE.prepare(alias,self.output,self.manifest(["index.html"]))
+        self.assertFalse(self.output.exists())
+    def test_source_parent_symlink(self):
+        alias=self.root/"parent-alias"; alias.symlink_to(self.root,target_is_directory=True)
+        with self.assertRaisesRegex(ValueError,"Symlinks are not allowed"):
+            MODULE.prepare(alias/"checkout",self.output,self.manifest(["index.html"]))
+        self.assertFalse(self.output.exists())
+    def test_source_dangling_symlink(self):
+        alias=self.root/"dangling-source"; alias.symlink_to(self.root/"missing")
+        with self.assertRaisesRegex(ValueError,"Symlinks are not allowed"):
+            MODULE.prepare(alias,self.output,self.manifest(["index.html"]))
+        self.assertFalse(self.output.exists())
+    def test_output_symlink_external_parent(self):
+        external=self.root/"external"; external.mkdir(); alias=self.root/"output-alias"; alias.symlink_to(external,target_is_directory=True)
+        with self.assertRaisesRegex(ValueError,"Symlinks are not allowed"):
+            MODULE.prepare(self.source,alias/"public",self.manifest(["index.html"]))
+        self.assertEqual(list(external.iterdir()),[])
+    def test_output_dangling_symlink(self):
+        target=self.root/"missing-output"; self.output.symlink_to(target)
+        with self.assertRaisesRegex(ValueError,"Symlinks are not allowed"):
+            MODULE.prepare(self.source,self.output,self.manifest(["index.html"]))
+        self.assertFalse(target.exists()); self.assertTrue(self.output.is_symlink())
+    def test_output_dangling_symlink_parent(self):
+        target=self.root/"missing-parent"; alias=self.root/"dangling-parent"; alias.symlink_to(target,target_is_directory=True)
+        with self.assertRaisesRegex(ValueError,"Symlinks are not allowed"):
+            MODULE.prepare(self.source,alias/"public",self.manifest(["index.html"]))
+        self.assertFalse(target.exists()); self.assertTrue(alias.is_symlink())
 if __name__ == "__main__": unittest.main()

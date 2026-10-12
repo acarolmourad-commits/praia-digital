@@ -1,0 +1,29 @@
+name: Pages manifest static audit
+on:
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: pages-manifest-audit-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+jobs:
+  static-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Synthetic audit tests
+        run: python -m unittest discover -s tests -p test_pages_dependencies.py -v
+      - name: Existing public-boundary tests
+        run: python -m unittest discover -s tests -p test_pages_public.py -v
+      - name: Read-only bounded dependency report
+        run: python scripts/audit_pages_dependencies.py --source . --manifest config/pages-public-manifest.json --entry index.html
+# No upload, write permissions, secrets, dispatch, deployment, or manifest edits.
+# Advisory static coverage only; a successful job never approves publication.

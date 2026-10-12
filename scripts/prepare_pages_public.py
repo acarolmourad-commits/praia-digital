@@ -1,23 +1,48 @@
-import argparse, json, shutil
+import argparse, json, shutil, unicodedata
 from pathlib import Path, PurePosixPath
 BLOCKED = {"docs", "leads", "outreach", "csv-lotes-email", "propostas", "backup", "backups", "backend", "automation", "scripts", "tests", "admin", "uploads", "api", "dashboard", "dashboards", "lead", "node_modules"}
 BLOCKED_PATHS = {"ferramentas/airbnb-admin.html", "education/cursos/_archive", "education/marketing/campaigns", "acoes-hoje.html", "acompanhamento-prospeccao.html", "top5-leads-hoje.html"}
 EXTENSIONS = {".html", ".css", ".js", ".json", ".svg", ".png", ".jpg", ".jpeg", ".webp", ".gif", ".ico", ".woff", ".woff2", ".ttf", ".xml", ".webmanifest"}
 SPECIAL = {"CNAME", "robots.txt", "ads.txt", ".nojekyll"}
+def reject_symlink_components(value):
+    path = Path(value).absolute()
+    if any(part.is_symlink() for part in (path, *path.parents)):
+        raise ValueError("Symlinks are not allowed")
+    return path
+
+def validate_explicit_paths(files):
+    if not isinstance(files, list) or not files or any(not isinstance(p, str) for p in files):
+        raise ValueError("A nonempty explicit file list is required")
+    names = set()
+    reserved = {"con", "prn", "aux", "nul"} | {f"com{i}" for i in range(1, 10)} | {f"lpt{i}" for i in range(1, 10)}
+    for name in files:
+        path = PurePosixPath(name)
+        parts = name.split("/")
+        if (not name or path.is_absolute() or "\\" in name
+                or any(p in {"", ".", ".."} for p in parts)
+                or any(unicodedata.category(c) in {"Cc", "Cs"} or c in ':*?"<>|' for c in name)
+                or any(p.endswith((".", " ")) or p.split(".", 1)[0].casefold() in reserved for p in parts)):
+            raise ValueError("Invalid relative path")
+        canonical = name.casefold()
+        if canonical in names:
+            raise ValueError("Duplicate paths")
+        names.add(canonical)
+    for name in names:
+        parts = name.split("/")
+        if any("/".join(parts[:i]) in names for i in range(1, len(parts))):
+            raise ValueError("File and directory path conflict")
+
 def prepare(source, destination, manifest):
-    source = Path(source).resolve()
-    destination = Path(destination).resolve(strict=False)
+    source = reject_symlink_components(source).resolve()
+    destination = reject_symlink_components(destination).resolve(strict=False)
     if destination == source or source in destination.parents:
         raise ValueError("Output must be outside the checkout")
     if destination.exists() or destination.is_symlink():
         raise ValueError("Output must be a new path")
-    if not isinstance(manifest, dict) or manifest.get("version") != 1 or manifest.get("reviewed") is not True:
+    if not isinstance(manifest, dict) or (type(manifest.get("version")) is not int or manifest["version"] != 1) or manifest.get("reviewed") is not True:
         raise ValueError("A reviewed version-1 manifest is required")
     files = manifest.get("files")
-    if not isinstance(files, list) or not files or any(not isinstance(p,str) for p in files):
-        raise ValueError("A nonempty explicit file list is required")
-    if len(set(files)) != len(files):
-        raise ValueError("Duplicate paths")
+    validate_explicit_paths(files)
     planned = []
     for name in files:
         path = PurePosixPath(name)
