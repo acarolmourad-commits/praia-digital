@@ -1,7 +1,7 @@
 import argparse, json, shutil
 from pathlib import Path, PurePosixPath
 BLOCKED = {"docs", "leads", "outreach", "csv-lotes-email", "propostas", "backup", "backups", "backend", "automation", "scripts", "tests", "admin", "uploads", "api", "dashboard", "dashboards", "lead", "node_modules"}
-BLOCKED_PATHS = {"ferramentas/airbnb-admin.html", "education/cursos/_archive", "education/marketing/campaigns"}
+BLOCKED_PATHS = {"ferramentas/airbnb-admin.html", "education/cursos/_archive", "education/marketing/campaigns", "acoes-hoje.html", "acompanhamento-prospeccao.html", "top5-leads-hoje.html"}
 EXTENSIONS = {".html", ".css", ".js", ".json", ".svg", ".png", ".jpg", ".jpeg", ".webp", ".gif", ".ico", ".woff", ".woff2", ".ttf", ".xml", ".webmanifest"}
 SPECIAL = {"CNAME", "robots.txt", "ads.txt", ".nojekyll"}
 def prepare(source, destination, manifest):

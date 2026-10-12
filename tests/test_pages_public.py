@@ -42,6 +42,26 @@ class PublicArtifactTests(unittest.TestCase):
             with self.subTest(name=name): self.reject_internal(name)
     def test_blocked_file_path_descendants(self):
         self.reject_internal("ferramentas/airbnb-admin.html/fixture.json")
+    def test_root_operational_pages_blocked(self):
+        names = ("acoes-hoje.html", "acompanhamento-prospeccao.html", "top5-leads-hoje.html")
+        for name in names:
+            for spelling in (name, name.upper(), name.title()):
+                with self.subTest(name=spelling): self.reject_internal(spelling)
+    def test_root_operational_path_descendants_blocked(self):
+        names = ("acoes-hoje.html", "acompanhamento-prospeccao.html", "top5-leads-hoje.html")
+        for name in names:
+            for spelling in (name, name.upper()):
+                path = spelling + "/fixture.json"
+                with self.subTest(name=path): self.reject_internal(path)
+    def test_root_operational_prefix_siblings_allowed(self):
+        names = ("acoes-hoje-public.html", "acompanhamento-prospeccao-public.html", "top5-leads-hoje-public.html")
+        for name in names:
+            (self.source/name).write_text("<h1>SYNTHETIC ONLY</h1>", encoding="utf-8")
+        self.assertEqual(MODULE.prepare(self.source, self.output, self.manifest(list(names))), len(names))
+        actual = {p.relative_to(self.output).as_posix() for p in self.output.rglob("*") if p.is_file()}
+        self.assertEqual(actual, set(names))
+        for name in names:
+            self.assertEqual((self.output/name).read_text(encoding="utf-8"), "<h1>SYNTHETIC ONLY</h1>")
     def test_allowed_resources_and_prefix_siblings(self):
         fixtures = {"index.html":"<h1>Public fixture</h1>", "assets/site.css":"body { color: black; }", "js/site.js":"console.log('SYNTHETIC ONLY');", "assets/public.json":'{"synthetic": true}', "ferramentas/airbnb-admin-public.html":"<h1>Synthetic public sibling</h1>", "education/cursos/_archive-public/index.html":"<h1>Synthetic public sibling</h1>", "education/marketing/campaigns-public/index.html":"<h1>Synthetic public sibling</h1>"}
         for name, content in fixtures.items():
