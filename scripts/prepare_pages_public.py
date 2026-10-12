@@ -1,6 +1,7 @@
 import argparse, json, shutil
 from pathlib import Path, PurePosixPath
-BLOCKED = {"docs", "leads", "outreach", "csv-lotes-email", "propostas", "backup", "backups", "backend", "automation", "scripts", "tests", "admin", "uploads"}
+BLOCKED = {"docs", "leads", "outreach", "csv-lotes-email", "propostas", "backup", "backups", "backend", "automation", "scripts", "tests", "admin", "uploads", "api", "dashboard", "dashboards", "lead", "node_modules"}
+BLOCKED_PATHS = {"ferramentas/airbnb-admin.html", "education/cursos/_archive", "education/marketing/campaigns"}
 EXTENSIONS = {".html", ".css", ".js", ".json", ".svg", ".png", ".jpg", ".jpeg", ".webp", ".gif", ".ico", ".woff", ".woff2", ".ttf", ".xml", ".webmanifest"}
 SPECIAL = {"CNAME", "robots.txt", "ads.txt", ".nojekyll"}
 def prepare(source, destination, manifest):
@@ -22,6 +23,9 @@ def prepare(source, destination, manifest):
         path = PurePosixPath(name)
         if not name or path.is_absolute() or "\\" in name or any(p in {"", ".", ".."} for p in name.split("/")):
             raise ValueError("Invalid relative path")
+        normalized = path.as_posix().casefold()
+        if any(normalized == blocked or normalized.startswith(blocked + "/") for blocked in BLOCKED_PATHS):
+            raise ValueError("Blocked internal or hidden path")
         if any(p.casefold() in BLOCKED or p.startswith(".") for p in path.parts) and name != ".nojekyll":
             raise ValueError("Blocked internal or hidden path")
         if path.suffix.lower() not in EXTENSIONS and name not in SPECIAL:
