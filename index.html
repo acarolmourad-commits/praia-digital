@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Praia Digital — Inteligência imobiliária para o litoral</title>
-<meta name="description" content="Encontre, analise e invista em imóveis no litoral paulista com inteligência: dados de mercado, IA e imóveis reais para decisões melhores.">
+<meta name="description" content="Explore imóveis no litoral paulista, compare bairros e simule seu investimento com dados e ferramentas gratuitas da Praia Digital.">
 <link rel="canonical" href="https://praia.digital/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Praia Digital — Inteligência imobiliária para o litoral">
@@ -359,13 +359,59 @@ footer .cols{grid-template-columns:1fr 1fr}
 
 
 </style>
+<style>
+
+/* Home conversion review: scoped layout and progressive disclosure. */
+.skip-link{position:fixed;top:-100px;left:16px;z-index:6000;background:#fff;color:var(--ink);padding:12px 18px;border:2px solid var(--sea);border-radius:8px}
+.skip-link:focus{top:12px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #e5a800;outline-offset:4px}
+#conteudo-principal,#conteudo-principal section{scroll-margin-top:100px}
+.hero{padding:64px 0 88px}
+.hero-layout{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:44px;align-items:center}
+.hero-copy h1{font-size:clamp(2rem,3.6vw,3rem)}
+.hero-copy .sub{font-size:1.08rem;margin-bottom:24px}
+.hero-ctas{margin-bottom:18px}
+.hero-pro-link{display:inline-block;color:#c9eeed;text-decoration:underline;text-underline-offset:4px;margin-bottom:24px}
+.hero-visual{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.2);color:var(--ink)}
+.hero-visual img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.hero-visual figcaption{padding:20px 22px;font-weight:600;font-size:1rem}
+.hero-visual figcaption a{display:inline-block;margin-top:6px;text-decoration:underline;text-underline-offset:3px}
+.hero-visual .visual-note{font-size:.75rem;line-height:1.5;color:var(--ink2);padding:0 22px 18px}
+.search{box-shadow:0 8px 24px rgba(4,20,35,.22)}
+.search input{padding:12px 10px}
+.search input::placeholder{color:#526477}
+.search-hint{color:#c9d8e2}
+.aud{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:-34px}
+.owner-paths{text-align:center;color:var(--ink2);font-size:.9rem;padding:20px 0 0}
+.owner-paths a{text-decoration:underline;text-underline-offset:3px;margin:0 8px;display:inline-block;padding:8px 0}
+.card-action{display:inline-block;margin-top:16px;color:var(--sea-d);font-size:.9rem;font-weight:700}
+.card:hover{border-color:var(--sea)}
+.more-tools{margin-top:22px;border:1px solid var(--line);border-radius:var(--r);background:#fff;padding:0 20px}
+.more-tools summary{cursor:pointer;font-weight:600;padding:18px 0;color:var(--ink)}
+.more-tools[open]{padding-bottom:20px}
+.estimate-note{font-size:.85rem;color:var(--ink2);margin-top:22px;max-width:780px}
+#jornadas-apps ol{padding-left:22px;margin-top:16px}
+#jornadas-apps li{margin:8px 0}
+#profissionais{background:#edf6f5;border-top:1px solid #cce2df;border-bottom:1px solid #cce2df}
+#profissionais .kicker{color:var(--sea-d)}
+.final-cta{background:var(--sand);text-align:center}
+.final-cta .lead{margin:0 auto 24px}
+.final-cta .hero-ctas{justify-content:center}
+footer .home-footer-cols{grid-template-columns:2fr repeat(5,minmax(0,1fr))}
+@media(max-width:1000px){.hero-layout{gap:24px}footer .home-footer-cols{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:860px){.hero-layout{grid-template-columns:1fr}.hero-visual{max-width:520px}.aud{grid-template-columns:repeat(3,minmax(0,1fr))}.aud a{padding:18px}.hero-copy h1{max-width:700px}}
+@media(max-width:540px){.hero{padding:40px 0 64px}.hero-visual{display:none}.aud{grid-template-columns:1fr;gap:10px}.aud a{padding:18px}.hero-ctas .btn{width:100%;text-align:center}.eyebrow{font-size:.68rem;letter-spacing:.08em}.owner-paths span{display:none}.owner-paths a{display:block}.more-tools{padding:0 14px}footer .home-footer-cols{grid-template-columns:1fr 1fr}.final-cta .hero-ctas{display:grid;grid-template-columns:1fr}.hero-copy h1{font-size:2rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+</style>
 </head>
 <body>
+<a class="skip-link" href="#conteudo-principal">Ir para o conteúdo</a>
 <meta name="pd-shared-nav">
 
 <header>
 <div class="wrap nav">
-  <a class="logo" href="//">Praia<span>Digital</span></a>
+  <a class="logo" href="/">Praia<span>Digital</span></a>
   <nav class="nav-links" aria-label="Navegação principal">
     <div class="dropdown">
       <button type="button" aria-haspopup="true">Comprar</button>
@@ -421,32 +467,40 @@ footer .cols{grid-template-columns:1fr 1fr}
 </div>
 </header>
 
+<main id="conteudo-principal">
 <div class="hero">
-<div class="wrap">
-  <span class="eyebrow">Inteligência imobiliária · Litoral paulista</span>
-  <h1>Encontre, analise e invista em imóveis no litoral com inteligência.</h1>
-  <p class="sub">Dados de mercado, inteligência artificial e imóveis reais para ajudar você a tomar decisões melhores — seja para morar, investir ou trabalhar.</p>
-  <div class="hero-ctas">
-    <a class="btn" href="/imoveis.html">Encontrar imóvel</a>
-    <a class="btn" href="/ferramentas/calculadora-roi-temporada.html" style="background:#fff;color:var(--ink)!important">Analisar investimento</a>
-    <a class="btn btn-ghost hero" href="/servicos.html">Sou profissional</a>
+<div class="wrap hero-layout">
+  <div class="hero-copy">
+    <span class="eyebrow">Inteligência imobiliária · Litoral paulista</span>
+    <h1>Seu próximo imóvel no litoral começa com uma decisão bem informada.</h1>
+    <p class="sub">Explore imóveis, compare bairros e simule o retorno do investimento com dados e ferramentas gratuitas.</p>
+    <div class="hero-ctas">
+      <a class="btn" href="/imoveis.html">Encontrar meu imóvel</a>
+      <a class="btn btn-ghost hero" href="/ferramentas/calculadora-roi-temporada.html">Simular investimento</a>
+    </div>
+    <a class="hero-pro-link" href="/servicos.html">Soluções para profissionais →</a>
+    <form class="search" action="/encontrar-imovel.html" method="get" role="search" id="smartsearch">
+      <label class="sr-only" for="q">Descreva o imóvel que você procura</label>
+      <input type="search" name="q" id="q" aria-label="Busca inteligente de imóveis" placeholder="Ex.: apartamento em Bertioga até R$ 700 mil">
+      <button class="btn" type="submit">Buscar</button>
+    </form>
+    <p class="search-hint">Informe cidade, tipo de imóvel e orçamento. Confira e ajuste os filtros na próxima página.</p>
   </div>
-  <form class="search" action="/encontrar-imovel.html" method="get" role="search" id="smartsearch">
-    <input type="search" name="q" id="q" aria-label="Busca inteligente de imóveis" placeholder="Ex.: apartamento de 2 quartos até R$ 700 mil em Bertioga, perto da praia, com potencial para temporada">
-    <button class="btn" type="submit">Buscar</button>
-  </form>
-  <p class="search-hint">Busca em linguagem natural — descreva o imóvel que você procura e nós interpretamos para você.</p>
+  <figure class="hero-visual">
+    <img src="/img/bertioga-casa-vista-praia-area-externa.webp" alt="Área externa de uma casa em Bertioga" width="1280" height="960" fetchpriority="high" decoding="async">
+    <figcaption>Conheça Bertioga e explore o litoral paulista.<br><a href="/cidades/bertioga.html">Explorar Bertioga →</a></figcaption>
+    <p class="visual-note">Imagem ilustrativa da região; não representa disponibilidade de anúncio.</p>
+  </figure>
 </div>
 </div>
 
 <div class="wrap">
-<div class="aud">
-  <a href="/imoveis.html"><span class="arrow">→</span><div class="t">Quero comprar</div><div class="d">Imóveis verificados, guias de bairros e comparadores para escolher com segurança.</div></a>
-  <a href="/ferramentas/calculadora-roi-temporada.html"><span class="arrow">→</span><div class="t">Quero investir</div><div class="d">ROI, rental yield, valorização e análise de temporada para decidir com dados.</div></a>
-  <a href="/proprietarios/guia-do-proprietario.html"><span class="arrow">→</span><div class="t">Quero vender ou alugar</div><div class="d">Avalie seu imóvel, anuncie e conte com especialistas para vender ou alugar — inclusive por temporada.</div></a>
-  <a href="/anunciar-temporada.html"><span class="arrow">→</span><div class="t">Quero anunciar temporada</div><div class="d">Cadastre seu imóvel de temporada você mesmo, como no Airbnb — grátis e com verificação.</div></a>
-  <a href="/servicos.html"><span class="arrow">→</span><div class="t">Sou profissional</div><div class="d">IA, automação e geração de leads para corretores e imobiliárias.</div></a>
-</div>
+  <nav class="aud" aria-label="Escolha seu objetivo">
+    <a href="/imoveis.html"><span class="arrow" aria-hidden="true">→</span><div class="t">Quero comprar</div><div class="d">Explore imóveis, mapas e guias para comparar suas opções.</div></a>
+    <a href="/ferramentas/calculadora-roi-temporada.html"><span class="arrow" aria-hidden="true">→</span><div class="t">Quero investir</div><div class="d">Simule custos, ocupação e retorno antes de decidir.</div></a>
+    <a href="/meu-imovel.html"><span class="arrow" aria-hidden="true">→</span><div class="t">Tenho um imóvel</div><div class="d">Encontre os próximos passos para vender, alugar ou anunciar temporada.</div></a>
+  </nav>
+  <p class="owner-paths"><a href="/proprietarios/guia-do-proprietario.html">Guia para vender ou alugar</a> <span aria-hidden="true">·</span> <a href="/anunciar-temporada.html">Cadastrar imóvel de temporada</a></p>
 </div>
 
 <section id="imoveis">
@@ -474,13 +528,18 @@ footer .cols{grid-template-columns:1fr 1fr}
   <h2>Descubra se vale a pena</h2>
   <p class="lead">Ferramentas gratuitas para avaliar preço, retorno e financiamento antes de decidir.</p>
   <div class="grid g3">
-    <a class="card" href="/ferramentas/avaliacao-preco.html"><h3>Avaliação de imóvel</h3><p>Estime o valor de mercado e o preço por m².</p></a>
-    <a class="card" href="/ferramentas/calculadora-roi-temporada.html"><h3>ROI e rental yield</h3><p>Simule retorno com aluguel de temporada.</p></a>
-    <a class="card" href="/ferramentas/vale-a-pena-comprar-2026.html"><h3>Vale a pena comprar?</h3><p>Compare compra vs. aluguel para o seu perfil.</p></a>
+    <a class="card" href="/ferramentas/avaliacao-preco.html"><span class="tag">Preço</span><h3>O preço pedido faz sentido?</h3><p>Estime o valor de mercado e compare o preço por m².</p><span class="card-action">Avaliar um imóvel →</span></a>
+    <a class="card" href="/ferramentas/calculadora-roi-temporada.html"><span class="tag">Retorno</span><h3>Quanto este imóvel pode render?</h3><p>Simule o retorno da locação por temporada com as suas premissas.</p><span class="card-action">Simular retorno →</span></a>
+    <a class="card" href="/ferramentas/vale-a-pena-comprar-2026.html"><span class="tag">Decisão</span><h3>Comprar ou alugar: o que faz sentido?</h3><p>Compare os dois cenários para o seu perfil.</p><span class="card-action">Comparar cenários →</span></a>
+  </div>
+  <details class="more-tools"><summary>Mais ferramentas de preço, crédito e localização</summary>
+  <div class="grid g3">
     <a class="card" href="/ferramentas/pre-qualificacao-credito-2026.html"><h3>Financiamento</h3><p>Pré-qualificação de crédito imobiliário.</p></a>
     <a class="card" href="/apps/valor-imovel/index.html"><h3>Valor do imóvel</h3><p>Estimativa rápida de valor por características.</p></a>
     <a class="card" href="/apps/comparador-cidades/index.html"><h3>Comparador de cidades</h3><p>Compare custo, aluguel e potencial entre cidades.</p></a>
   </div>
+  </details>
+  <p class="estimate-note">Resultados são estimativas, não garantias de rentabilidade ou aprovação de crédito. Confira premissas, custos e tributos com os profissionais responsáveis.</p>
   <p style="margin-top:26px"><a class="btn" href="/ferramentas/avaliacao-preco.html">Analisar um imóvel</a></p>
 </div>
 </section>
@@ -523,12 +582,15 @@ footer .cols{grid-template-columns:1fr 1fr}
 <section id="apps">
 <div class="wrap">
   <p class="kicker">Apps gratuitos</p>
-  <h2>Ferramentas que trabalham por você</h2>
-  <p class="lead">Nossa rede de mini-apps gratuitos para quem compra, investe ou financia imóveis no litoral — sem cadastro, direto no navegador.</p>
+  <h2>Do planejamento à decisão: escolha sua ferramenta</h2>
+  <p class="lead">Comece pelo retorno do investimento, pelo financiamento ou pelos custos da compra. Explore as outras ferramentas quando precisar.</p>
   <div class="grid g3">
     <a class="card" href="/apps/simulador-roi-temporada/index.html"><h3>Simulador de investimento</h3><p>ROI de temporada com custos e ocupação estimados.</p></a>
     <a class="card" href="/apps/calculadora-financiamento/"><h3>Simulador de financiamento <span class="tag">Novo</span></h3><p>SAC vs. Price: descubra qual sistema pesa menos no seu bolso.</p></a>
     <a class="card" href="/apps/custo-de-compra/"><h3>Custo de compra <span class="tag">Novo</span></h3><p>ITBI, escritura e registro: o custo real do fechamento.</p></a>
+  </div>
+  <details class="more-tools"><summary>Explorar mais ferramentas e conteúdos de apoio</summary>
+  <div class="grid g3">
     <a class="card" href="/calculadora-rendimento-temporada-2026.html"><h3>Rendimento de temporada</h3><p>Projeção de receita de aluguel por temporada.</p></a>
     <a class="card" href="/exclusivos/relatorio-mercado-2026.html"><h3>Relatório de mercado</h3><p>Análise aprofundada do mercado do litoral.</p></a>
     <a class="card" href="/dados-ocupacao-temporada-litoral-sp-2026.html"><h3>Dados de ocupação</h3><p>Ocupação de temporada no litoral de SP.</p></a>
@@ -540,6 +602,7 @@ footer .cols{grid-template-columns:1fr 1fr}
     <a class="card" href="/apps/renda-para-financiar/"><h3>Renda para financiar <span class="tag">Novo</span></h3><p>Descubra a renda mínima para o financiamento caber no bolso — SAC vs. Price.</p></a>
     <a class="card" href="/apps/temporada-ou-anual/"><h3>Temporada ou anual? <span class="tag">Novo</span></h3><p>Compare a receita líquida de aluguel de temporada vs. contrato anual.</p></a>
   </div>
+  </details>
   <p style="margin-top:26px"><a class="btn" href="/apps/simulador-roi-temporada/index.html">Simular investimento</a></p>
   <p style="margin-top:10px"><a class="btn btn-ghost" href="/apps/">🧰 Ver todos os apps gratuitos</a></p>
 </div>
@@ -585,14 +648,27 @@ footer .cols{grid-template-columns:1fr 1fr}
 </div>
 </section>
 
+<section id="transparencia" aria-labelledby="transparencia-titulo">
+<div class="wrap">
+  <p class="kicker">Antes de decidir</p>
+  <h2 id="transparencia-titulo">Entenda os dados. Confira as premissas.</h2>
+  <p class="lead">Use as ferramentas como apoio à sua análise, não como substitutas da avaliação profissional.</p>
+  <div class="grid g3">
+    <article class="card"><h3>Consulte a metodologia</h3><p>Confira as fontes e o método descritos para cada indicador.</p><a class="card-action" href="/metodologia.html">Conhecer a metodologia →</a></article>
+    <article class="card"><h3>Simulações não são promessas</h3><p>Custos, ocupação e taxas mudam o resultado. Revise os valores usados antes de tomar uma decisão.</p><a class="card-action" href="/apps/">Escolher uma ferramenta →</a></article>
+    <article class="card"><h3>Confira cada imóvel</h3><p>Confirme disponibilidade, documentação e condições com o responsável pelo anúncio.</p><a class="card-action" href="/interesse.html">Falar com um especialista →</a></article>
+  </div>
+</div>
+</section>
+
 <section id="profissionais">
 <div class="wrap">
   <p class="kicker">Para empresas</p>
-  <h2>Para imobiliárias e corretores</h2>
-  <p class="lead" style="font-size:1.15rem;color:var(--ink);font-weight:600">Mais leads. Menos trabalho manual.</p>
+  <h2>Menos tarefas manuais. Mais tempo para atender.</h2>
+  <p class="lead">Soluções de IA e automação para imobiliárias e corretores: explore ferramentas para organizar contatos, apoiar o atendimento e acompanhar oportunidades.</p>
   <div class="grid g4">
     <a class="card" href="/automacao-imobiliarias.html"><h3>Automação</h3><p>Atendimento, follow-up e rotinas automatizadas.</p></a>
-    <a class="card" href="/solucoes/hermes-agents.html"><h3>Agentes autônomos</h3><p>IA que trabalha na sua operação 24/7.</p></a>
+    <a class="card" href="/solucoes/hermes-agents.html"><h3>Agentes autônomos</h3><p>Conheça possibilidades de apoio à operação com agentes de IA.</p></a>
     <a class="card" href="/captacao-imoveis-litoral.html"><h3>Captação de imóveis</h3><p>Fluxos inteligentes para captar proprietários.</p></a>
     <a class="card" href="/ferramentas/geracao-descricoes.html"><h3>Anúncios com IA</h3><p>Descrições e anúncios gerados automaticamente.</p></a>
     <a class="card" href="/captura-leads.html"><h3>Geração de leads</h3><p>Qualificação automática de interessados.</p></a>
@@ -600,7 +676,7 @@ footer .cols{grid-template-columns:1fr 1fr}
     <a class="card" href="/planos-assinatura.html"><h3>Planos</h3><p>Assinaturas para imobiliárias e corretores.</p></a>
     <a class="card" href="/cases.html"><h3>Cases</h3><p>Resultados de quem já usa a plataforma.</p></a>
   </div>
-  <p style="margin-top:26px"><a class="btn" href="/servicos.html">Conhecer soluções para imobiliárias</a></p>
+  <p style="margin-top:26px"><a class="btn" href="/servicos.html">Conhecer soluções para minha imobiliária</a></p>
 </div>
 </section>
 
@@ -620,9 +696,18 @@ footer .cols{grid-template-columns:1fr 1fr}
 </div>
 </section>
 
+<section class="final-cta" aria-labelledby="proximo-passo">
+<div class="wrap">
+  <h2 id="proximo-passo">Qual é o seu próximo passo no litoral?</h2>
+  <p class="lead">Explore as opções, teste suas premissas ou peça ajuda para continuar a análise.</p>
+  <div class="hero-ctas"><a class="btn" href="/imoveis.html">Encontrar meu imóvel</a><a class="btn btn-ghost" href="/interesse.html">Falar com um especialista</a></div>
+</div>
+</section>
+</main>
+
 <footer>
 <div class="wrap">
-  <div class="cols" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr">
+  <div class="cols home-footer-cols">
     <div>
       <p class="logo" style="color:#fff;margin-bottom:10px">Praia<span>Digital</span></p>
       <p style="max-width:320px">Inteligência imobiliária para o litoral paulista: imóveis, dados de mercado e IA em uma só plataforma.</p>
