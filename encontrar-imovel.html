@@ -192,22 +192,22 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
   
   <!-- Busca inteligente: interpreta parâmetros vindos da home -->
   <div id="pd-busca-interpretada" role="status" style="display:none;max-width:900px;margin:18px auto 0;padding:14px 18px;border:1px solid #0e7c7b;background:#eef6f6;border-radius:12px;font-size:.95rem;color:#0a2540;"></div>
-  <script>
-  (function(){
-    var p=new URLSearchParams(location.search);
-    var labels={cidade:'Cidade',quartos:'Quartos (mín.)',preco_max:'Preço máx.',tipo:'Tipo',perfil:'Perfil',q:'Busca'};
-    var parts=[];
-    ['cidade','quartos','tipo','perfil','q'].forEach(function(k){var v=p.get(k);if(v)parts.push('<strong>'+labels[k]+':</strong> '+v.replace(/</g,'&lt;'));});
-    var pm=p.get('preco_max');
-    if(pm){var n=parseInt(pm,10);if(!isNaN(n))parts.push('<strong>Preço máx.:</strong> R$ '+n.toLocaleString('pt-BR'));}
-    if(parts.length){
-      var d=document.getElementById('pd-busca-interpretada');
-      d.innerHTML='🔎 Busca interpretada: '+parts.join(' · ')+' &nbsp;<a href="/imoveis.html?'+location.search.slice(1).replace(/"/g,'&quot;')+'" style="font-weight:600">Ver imóveis com esses filtros →</a>';
-      d.style.display='block';
-      d.scrollIntoView({behavior:'smooth',block:'center'});
-    }
-  })();
-  </script>
+  <script src="/js/property-search.js"></script>
+<script>
+(function () {
+  var filters = PDPropertySearch.read(window.location.search);
+  var box = document.getElementById('pd-busca-interpretada');
+  if (!box || !window.location.search) return;
+  box.textContent = filters.invalid.length ? 'Filtros inválidos: ' + filters.invalid.join(', ') + '. Corrija a busca antes de continuar.' : 'Busca: ' + (filters.q || PDPropertySearch.params(filters).toString()) + '. Aplicamos somente os filtros estruturados reconhecidos; confirme preço e disponibilidade com o responsável.';
+  if (!filters.invalid.length) {
+    var link = document.createElement('a');
+    link.href = '/imoveis.html?' + PDPropertySearch.params(filters).toString();
+    link.textContent = ' Ver imóveis com esses filtros →';
+    box.appendChild(link);
+  }
+  box.style.display = 'block';
+})();
+</script>
 
   <meta name="pd-shared-footer">
   <script src="https://praia.digital/js/shared.js?v=2.0"></script>

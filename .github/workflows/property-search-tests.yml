@@ -1,0 +1,26 @@
+name: Property search contract tests
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - index.html
+      - encontrar-imovel.html
+      - js/main.js
+      - js/property-search.js
+      - tests/test_property_search.cjs
+      - .github/workflows/property-search-tests.yml
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check js/property-search.js && node --check js/main.js
+      - run: node tests/test_property_search.cjs
