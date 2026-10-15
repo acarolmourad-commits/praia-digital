@@ -86,7 +86,7 @@ section.ai{background:linear-gradient(160deg,#0a2540,#0e3a52);color:#fff}
 .ai-q{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:16px 18px;font-size:.95rem;color:#dce8f0}
 .ai-q:hover{border-color:#7fd1cf;cursor:pointer}
 footer{background:#081c30;color:#9db4c6;padding:56px 0 40px;font-size:.88rem}
-footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:28px;margin-bottom:34px}
+footer .cols{display:grid;grid-template-columns:2fr repeat(5,minmax(0,1fr));gap:28px;margin-bottom:34px}
 footer h4{color:#fff;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
 footer a{color:#9db4c6;display:block;padding:3px 0}
 footer a:hover{color:#7fd1cf}
@@ -494,12 +494,12 @@ footer .cols{grid-template-columns:1fr 1fr}
     <thead><tr><th>Cidade</th><th>Preço/m² (apto)</th></tr></thead>
     <tbody>
       <tr><td>Bertioga</td><td data-placeholder="aguardando dado">—</td></tr>
-      <tr><td>Guarujá</td><td>R$ 15.000</td></tr>
-      <tr><td>Santos</td><td>R$ 18.000</td></tr>
-      <tr><td>Praia Grande</td><td>R$ 12.000</td></tr>
+      <tr><td>Guarujá</td><td>Indisponível</td></tr>
+      <tr><td>Santos</td><td>Indisponível</td></tr>
+      <tr><td>Praia Grande</td><td>Indisponível</td></tr>
     </tbody>
   </table>
-  <p class="src">Preço/m² de apartamentos: <a href="/blog/indice-preco-m2-litoral-paulista-tabela-tendencias-2026.html">Índice de preço por m² — Praia Digital, 2026</a> (base: anúncios publicados; mediana por cidade). Demais métricas serão publicadas quando houver dados verificados. <a href="/metodologia.html">Como calculamos nossos dados →</a></p>
+  <p class="src">Preço anunciado por m² de apartamentos: indisponível até validação da amostra, do período e da origem. Valores de anúncio não equivalem a valores de transação nem a avaliações de mercado. <a href="/metodologia.html">Metodologia e critérios de publicação →</a></p>
   <p style="margin-top:22px"><a class="btn btn-ghost" href="/apps/comparador-cidades/index.html">Abrir comparador completo</a></p>
 </div>
 </section>
@@ -598,7 +598,7 @@ footer .cols{grid-template-columns:1fr 1fr}
     <a class="card" href="/captura-leads.html"><h3>Geração de leads</h3><p>Qualificação automática de interessados.</p></a>
     <a class="card" href="/education/index.html"><h3>Praia Academy</h3><p>Cursos e formações para profissionais do mercado.</p></a>
     <a class="card" href="/planos-assinatura.html"><h3>Planos</h3><p>Assinaturas para imobiliárias e corretores.</p></a>
-    <a class="card" href="/cases.html"><h3>Cases</h3><p>Resultados de quem já usa a plataforma.</p></a>
+    <a class="card" href="/cases.html"><h3>Cases</h3><p>Exemplos ilustrativos; não representam resultados comprovados de clientes.</p></a>
   </div>
   <p style="margin-top:26px"><a class="btn" href="/servicos.html">Conhecer soluções para imobiliárias</a></p>
 </div>
@@ -622,7 +622,7 @@ footer .cols{grid-template-columns:1fr 1fr}
 
 <footer>
 <div class="wrap">
-  <div class="cols" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr">
+  <div class="cols">
     <div>
       <p class="logo" style="color:#fff;margin-bottom:10px">Praia<span>Digital</span></p>
       <p style="max-width:320px">Inteligência imobiliária para o litoral paulista: imóveis, dados de mercado e IA em uma só plataforma.</p>
