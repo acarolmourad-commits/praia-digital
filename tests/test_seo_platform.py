@@ -50,31 +50,32 @@ def test_jsonld_required_fields_in_all_pages(imovel_files):
     assert not failures, f"Missing valid JSON-LD RealEstateListing: {failures[:10]}"
 
 def test_imgs_have_lazy_and_decoding(imovel_files):
-    from bs4 import BeautifulSoup
-    bad = []
-    for p in imovel_files:
-        soup = BeautifulSoup(p.read_text(encoding="utf-8"), "html.parser")
-        for img in soup.find_all("img"):
-            if img.get("loading") != "lazy":
-                bad.append((p.name, img.get("src")))
-                break
-            if img.get("decoding") != "async":
-                bad.append((p.name, img.get("src")))
-                break
-    assert not bad, f"Images missing lazy/async: {bad[:10]}"
+    # Audit ALL pages by actual role: eager high-priority hero, lazy below-fold
+    # content; exact hidden 1x1 Facebook fallback is not a visible image.
+    import sys
+    sys.path.insert(0, str(PROJECT / "scripts"))
+    from image_policy import image_issues
+    bad = [(p.name, image_issues(p.read_text(encoding="utf-8"))) for p in imovel_files]
+    bad = [(name, issues) for name, issues in bad if issues]
+    assert not bad, f"Image-role policy violations: {bad[:10]}"
+    css = (PROJECT / "assets/css/pd-navigation.css").read_text()
+    assert "body main .hero picture > img { max-width: 100%; height: auto; }" in css
+
 
 def test_preload_link_present():
-    from bs4 import BeautifulSoup
+    # Only a visible critical image needs matching preload. An index with only
+    # a tracking pixel must never invent a preload just to pass an audit.
+    import sys
+    sys.path.insert(0, str(PROJECT / "scripts"))
+    from image_policy import image_issues
     bad = []
     for p in IMOVEIS_DIR.glob("*.html"):
-        txt = p.read_text(encoding="utf-8")
-        soup = BeautifulSoup(txt, "html.parser")
-        imgs = soup.find_all("img")
-        has_img = any(img.get("src") and not img.get("src").startswith("data:") for img in imgs)
-        has_preload = bool(soup.find("link", rel="preload", attrs={"as": "image"}))
-        if has_img and not has_preload:
-            bad.append(p.name)
-    assert not bad, f"Missing preload link on: {bad[:10]}"
+        issues = [e for e in image_issues(p.read_text(encoding="utf-8"))
+                  if e in ("hero_preload_mismatch", "tracking_pixel_preloaded")]
+        if issues:
+            bad.append((p.name, issues))
+    assert not bad, f"Critical image preload violations: {bad[:10]}"
+
 
 def test_feed_xml_well_formed():
     import importlib.util

@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "metric_id": "asking_price_m2_median_apartment",
+  "metric_kind": "asking_price",
+  "unit": "BRL/m2",
+  "aggregation": "median",
+  "property_type": "apartment",
+  "review_date": "2026-10-15",
+  "status": "unavailable",
+  "reason": "Não foi localizada, nesta auditoria, uma amostra rastreável que permita reproduzir os valores publicados. Não substituir por estimativa.",
+  "data": [
+    {
+      "city": "Santos",
+      "value": null,
+      "status": "unavailable",
+      "period_start": null,
+      "period_end": null,
+      "sample_size": null,
+      "source_urls": [],
+      "sample_reference": null,
+      "methodology_url": "https://praia.digital/metodologia.html"
+    },
+    {
+      "city": "Guarujá",
+      "value": null,
+      "status": "unavailable",
+      "period_start": null,
+      "period_end": null,
+      "sample_size": null,
+      "source_urls": [],
+      "sample_reference": null,
+      "methodology_url": "https://praia.digital/metodologia.html"
+    },
+    {
+      "city": "Praia Grande",
+      "value": null,
+      "status": "unavailable",
+      "period_start": null,
+      "period_end": null,
+      "sample_size": null,
+      "source_urls": [],
+      "sample_reference": null,
+      "methodology_url": "https://praia.digital/metodologia.html"
+    },
+    {
+      "city": "São Vicente",
+      "value": null,
+      "status": "unavailable",
+      "period_start": null,
+      "period_end": null,
+      "sample_size": null,
+      "source_urls": [],
+      "sample_reference": null,
+      "methodology_url": "https://praia.digital/metodologia.html"
+    },
+    {
+      "city": "Mongaguá",
+      "value": null,
+      "status": "unavailable",
+      "period_start": null,
+      "period_end": null,
+      "sample_size": null,
+      "source_urls": [],
+      "sample_reference": null,
+      "methodology_url": "https://praia.digital/metodologia.html"
+    },
+    {
+      "city": "Itanhaém",
+      "value": null,
+      "status": "unavailable",
+      "period_start": null,
+      "period_end": null,
+      "sample_size": null,
+      "source_urls": [],
+      "sample_reference": null,
+      "methodology_url": "https://praia.digital/metodologia.html"
+    },
+    {
+      "city": "Ubatuba",
+      "value": null,
+      "status": "unavailable",
+      "period_start": null,
+      "period_end": null,
+      "sample_size": null,
+      "source_urls": [],
+      "sample_reference": null,
+      "methodology_url": "https://praia.digital/metodologia.html"
+    },
+    {
+      "city": "Caraguatatuba",
+      "value": null,
+      "status": "unavailable",
+      "period_start": null,
+      "period_end": null,
+      "sample_size": null,
+      "source_urls": [],
+      "sample_reference": null,
+      "methodology_url": "https://praia.digital/metodologia.html"
+    },
+    {
+      "city": "São Sebastião",
+      "value": null,
+      "status": "unavailable",
+      "period_start": null,
+      "period_end": null,
+      "sample_size": null,
+      "source_urls": [],
+      "sample_reference": null,
+      "methodology_url": "https://praia.digital/metodologia.html"
+    },
+    {
+      "city": "Ilhabela",
+      "value": null,
+      "status": "unavailable",
+      "period_start": null,
+      "period_end": null,
+      "sample_size": null,
+      "source_urls": [],
+      "sample_reference": null,
+      "methodology_url": "https://praia.digital/metodologia.html"
+    },
+    {
+      "city": "Bertioga",
+      "value": null,
+      "status": "unavailable",
+      "period_start": null,
+      "period_end": null,
+      "sample_size": null,
+      "source_urls": [],
+      "sample_reference": null,
+      "methodology_url": "https://praia.digital/metodologia.html"
+    },
+    {
+      "city": "Peruíbe",
+      "value": null,
+      "status": "unavailable",
+      "period_start": null,
+      "period_end": null,
+      "sample_size": null,
+      "source_urls": [],
+      "sample_reference": null,
+      "methodology_url": "https://praia.digital/metodologia.html"
+    }
+  ]
+}

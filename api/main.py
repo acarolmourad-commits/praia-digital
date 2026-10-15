@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from pathlib import Path
-from pydantic import BaseModel
+from pydantic import BaseModel, Field, ConfigDict
 from typing import Optional
 from datetime import datetime
 import json
@@ -10,10 +10,11 @@ import urllib.request
 app = FastAPI(title="Praia Digital API", version="1.0.0")
 
 class AvaliacaoRequest(BaseModel):
-    cidade: str
-    tipo: str
-    area: float
-    quartos: int
+    model_config = ConfigDict(allow_inf_nan=False)
+    cidade: str = Field(min_length=1, max_length=100)
+    tipo: str = Field(min_length=1, max_length=50)
+    area: float = Field(gt=0, le=1000000)
+    quartos: int = Field(ge=0, le=1000)
 
 class DescricaoRequest(BaseModel):
     tipo: str
@@ -71,25 +72,13 @@ def root():
 
 @app.post("/avaliar")
 def avaliar_preco(req: AvaliacaoRequest):
-    base_por_m2 = {
-        "Santos": 7200, "Guarujá": 6800, "Praia Grande": 5400,
-        "São Vicente": 4800, "Bertioga": 5100, "Itanhaém": 4600,
-        "Peruíbe": 4200, "Mongaguá": 4400
-    }
-    fator_tipo = {"Apartamento": 1.0, "Casa": 1.15, "Cobertura": 1.35, "Flat": 1.1}
-    base = base_por_m2.get(req.cidade, 5000)
-    fator = fator_tipo.get(req.tipo, 1.0)
-    faixa_min = base * req.area * 0.9 * fator
-    faixa_max = base * req.area * 1.15 * fator
-    sugestao = (faixa_min + faixa_max) / 2
-    return {
-        "cidade": req.cidade,
-        "tipo": req.tipo,
-        "area": req.area,
-        "faixa_min": round(faixa_min, 2),
-        "faixa_max": round(faixa_max, 2),
-        "sugestao": round(sugestao, 2)
-    }
+    # Keep import compatible with both uvicorn api.main:app and main:app.
+    try:
+        from .property_indicators import assessment_unavailable
+    except ImportError:
+        from property_indicators import assessment_unavailable
+    return {"cidade": req.cidade, "tipo": req.tipo, "area": req.area,
+            **assessment_unavailable(req.cidade, req.tipo)}
 
 @app.post("/descrever")
 def gerar_descricao(req: DescricaoRequest):
@@ -181,7 +170,7 @@ def feed_xml():
 
 @app.post("/lead")
 def salvar_lead(req: LeadRequest):
-    data = req.dict()
+    data = req.model_dump()
     data["created_at"] = datetime.utcnow().isoformat() + "Z"
     leads_dir = Path(__file__).resolve().parent / "leads"
     leads_dir.mkdir(exist_ok=True)
@@ -193,7 +182,7 @@ def salvar_lead(req: LeadRequest):
 
 @app.post("/leads/avaliacao-pratica")
 def salvar_avaliacao_pratica(req: AvaliacaoPraticaRequest):
-    data = req.dict()
+    data = req.model_dump()
     data["created_at"] = datetime.utcnow().isoformat() + "Z"
     data["status"] = "novo"
     leads_dir = Path(__file__).resolve().parent / "leads"

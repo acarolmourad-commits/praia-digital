@@ -14,7 +14,7 @@ reachable with the current template. The tests use clearly separable ranges:
 import sys
 from pathlib import Path
 
-REPO = Path('C:/Users/Carolina/praia-digital')
+REPO = Path(__file__).resolve().parents[1]
 TMP_DIR = REPO / 'docs' / 'seo' / 'tmp_adversarial'
 sys.path.insert(0, str(REPO / 'scripts' / 'orchestrator' / 'modules'))
 from publication_gate import validate_article
@@ -40,6 +40,7 @@ def build(title, slug, h1, content, meta='Meta description coerente.'):
 
 
 def run_case(name, html):
+    TMP_DIR.mkdir(parents=True, exist_ok=True)
     path = TMP_DIR / f'boundary_{name}.html'
     path.write_text(html, encoding='utf-8')
     return validate_article(path)

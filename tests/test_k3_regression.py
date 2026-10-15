@@ -11,7 +11,7 @@ import json
 import sys
 from pathlib import Path
 
-REPO = Path('C:/Users/Carolina/praia-digital')
+REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO / 'scripts' / 'orchestrator' / 'modules'))
 from publication_gate import validate_article
 
@@ -53,6 +53,7 @@ def test_low_diversity_with_few_sentences_blocks():
     # Use 2 unique words repeated many times → diversity ~0.02 boundary
     content = 'palavra_a palavra_b ' * 120
     html = html.format(content=content, content2=content)
+    TMP_DIR.mkdir(parents=True, exist_ok=True)
     path = TMP_DIR / 'sentence_bypass_protection.html'
     path.write_text(html, encoding='utf-8')
     result = validate_article(path)

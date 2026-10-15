@@ -21,3 +21,6 @@
 @media(max-width:1080px){.pd-site-header .pd-site-wrap{flex-wrap:wrap;gap:12px;padding:12px 20px}.pd-site-header .pd-site-toggle{display:block;margin-left:auto}.pd-site-header .pd-site-menu{display:none;order:4;width:100%;margin:0;flex-direction:column;align-items:stretch;gap:4px;max-height:70vh;overflow-y:auto}.pd-site-header.is-menu-open .pd-site-menu{display:flex}.pd-site-header .pd-site-label{display:flex;width:100%;text-align:left;justify-content:space-between;padding:10px}.pd-site-header .pd-site-submenu{position:static;box-shadow:none;margin:0 10px 8px;min-width:0}.pd-site-header .pd-site-submenu a{white-space:normal}.pd-site-header .pd-site-cta{font-size:.85rem;padding:8px 12px}}
 @media(max-width:540px){.pd-site-header .pd-site-wrap{gap:8px;padding:10px 14px}.pd-site-header .pd-site-cta{order:5;display:none;width:100%;text-align:center}.pd-site-header.is-menu-open .pd-site-cta{display:block}}
 @media(prefers-reduced-motion:reduce){.pd-site-header *{transition:none!important}}
+
+/* P0: listing hero images keep aspect ratio without viewport overflow. */
+body main .hero picture > img { max-width: 100%; height: auto; }
