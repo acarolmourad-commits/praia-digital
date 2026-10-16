@@ -30,9 +30,9 @@ def branch_context_valid(branch, mode, env):
     if mode == "pr":
         if not (actions and event == "pull_request"):
             return False
-        # checkout de PR pode ser ref refs/pull/N/merge OU HEAD destacado no sha do PR
+        # HEAD destacado não substitui uma referência válida de merge de PR.
         return (env.get("GITHUB_BASE_REF") == "main" and
-                (bool(re.fullmatch(r"refs/pull/\d+/merge", ref)) or branch == "HEAD"))
+                bool(re.fullmatch(r"refs/pull/[1-9][0-9]*/merge", ref)))
     if mode != "deployment":
         return False
     if actions:
