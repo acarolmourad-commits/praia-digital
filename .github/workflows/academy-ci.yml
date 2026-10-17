@@ -50,56 +50,7 @@ jobs:
       - name: Validate 64-course inventory
         run: python scripts/validate_academy_inventory.py
 
-  deploy-preview:
-    concurrency:
-      group: pages
-      cancel-in-progress: false
-    needs: test
-    runs-on: ubuntu-latest
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Prepare shared navigation
-        run: python3 scripts/build-navigation.py
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-
-  post-deploy-validation:
-    needs: deploy-preview
-    runs-on: ubuntu-latest
-    continue-on-error: true
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install dependencies
-        run: |
-          pip install requests
-      - name: Run production validation
-        env:
-          ACADEMY_BASE_URL: ${{ vars.ACADEMY_BASE_URL || 'https://academy.praia.digital' }}
-        run: |
-          python scripts/validate_academy_prod.py
+  # Publicacao Pages removida deste workflow em 2026-10-16:
+  # quem publica o site e exclusivamente "Deploy to GitHub Pages" (.github/workflows/deploy.yml),
+  # para eliminar deploys concorrentes (deploy-preview falhou apos testes verdes - run 37796353912).
+  # O job test acima continua como gate de PR/push.
