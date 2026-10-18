@@ -1,0 +1,30 @@
+name: Aplicar lote home Academy avulsos 2026-10-18 (one-shot)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: ${{ !github.event.repository.fork }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Aplicar lote validado
+        run: python scripts/apply_home_academy_avulsos_20261018.py
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add js/shared.js partials/header.html education/vendas.html education/checkout.html obrigado-relatorio-avaliacao.html obrigado-kit-temporada.html obrigado-pacote-descricoes.html entrega-relatorio-avaliacao.html entrega-descricoes-ia.html entrega-kit-temporada.html
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "feat: corrige home, Academy assistida e pos-compra dos avulsos"
+            git push
+          fi
