@@ -261,7 +261,7 @@
         sec.id='planos-praia-digital';
         sec.setAttribute('style','max-width:1100px;margin:48px auto;padding:32px 24px;background:#0f2a4a;color:#fff;border-radius:18px;text-align:center');
         sec.innerHTML='<h2 style="margin:0 0 12px">Planos Praia Digital para corretores e imobiliárias</h2><p style="margin:0 auto 20px;max-width:760px">Comece grátis nas ferramentas e pague só pela camada profissional: Starter R$ 79/mês, Growth R$ 249/mês, Scale R$ 799/mês, Kit Temporada R$ 39 por imóvel/mês e relatórios avulsos.</p><p style="margin:0"><a href="https://praia.digital/planos.html" style="display:inline-block;background:#22c55e;color:#062b16;padding:14px 28px;border-radius:999px;font-weight:800;text-decoration:none">Ver planos e assinar</a> &nbsp; <a href="https://praia.digital/entrega-relatorio-avaliacao.html" style="display:inline-block;background:#fff;color:#0f2a4a;padding:14px 28px;border-radius:999px;font-weight:800;text-decoration:none">Relatório PDF R$ 49</a></p>';
-        (document.body||document.documentElement).appendChild(sec);
+        var footer=document.querySelector('footer'); if(footer && footer.parentNode){ footer.parentNode.insertBefore(sec, footer); } else { (document.body||document.documentElement).appendChild(sec); }
       }
     } catch(e) {}
   }

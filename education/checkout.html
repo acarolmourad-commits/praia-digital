@@ -1,105 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Checkout — Praia Digital Academy</title>
-  <meta name="robots" content="noindex, follow">
-  <link rel="canonical" href="https://praia.digital/education/checkout.html">
-  <link rel="preconnect" href="https://praia.digital">
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Segoe UI', system-ui, sans-serif; background: #F4EBD0; color: #023047; padding: 2rem; }
-    .wrap { max-width: 900px; margin: 0 auto; }
-    .card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 18px 20px; margin-bottom: 1rem; }
-    .cta { display: inline-block; background: #00B4D8; color: #fff; padding: 0.7rem 1.2rem; border-radius: 999px; font-weight: 700; text-decoration: none; margin-right: 10px; }
-    .price { font-size: 1.6rem; font-weight: 800; color: #90E0EF; }
-    .secure { color: #4ade80; font-size: 0.85rem; margin-top: 0.5rem; }
-    .guarantee { background: #f8fafc; border-left: 4px solid #00B4D8; padding: 1rem; border-radius: 12px; margin-top: 1rem; }
-    .faq { margin-top: 1.5rem; }
-    .faq-item { border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.75rem 0; }
-    .faq-item strong { color: #00B4D8; }
-  </style>
-<meta name="description" content="Checkout — Praia Digital Academy">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Checkout — Praia Digital Academy", "description": "Checkout — Praia Digital Academy", "url": "https://praia.digital/education/checkout.html"}</script>
-<meta property="og:type" content="website">
-<meta property="og:title" content="Checkout — Praia Digital Academy">
-<meta property="og:description" content="Checkout — Praia Digital Academy">
-<meta property="og:url" content="https://praia.digital/education/checkout.html">
-<meta property="og:image" content="https://praia.digital/img/default-home.jpg">
-</head>
-<body>
-  <div class="wrap">
-    <main id="main">
-      <h1>Finalizar compra</h1>
-      <p class="lead">Preencha seus dados para acessar o curso escolhido.</p>
-
-      <div class="card">
-        <p><strong>Curso:</strong> <span id="course-name">—</span></p>
-        <p class="price" id="course-price">R$ 0</p>
-        <p style="color:#41525f;font-size:.9rem">Acesso imediato e 100% online</p>
-        <a class="cta" id="checkout-hotmart" href="#" target="_blank" rel="noopener">Comprar agora</a>
-        <a class="cta" id="checkout-kiwify" href="#" target="_blank" rel="noopener" style="background:#fff;color:#F4EBD0">Comprar no Kiwify</a>
-        <p class="secure">🔒 Checkout seguro • Pagamento processado automaticamente</p>
-
-        <div class="guarantee">
-          <strong>✅ Garantia de 7 dias</strong>
-          <p style="color:#41525f;font-size:.9rem;margin-top:.25rem">Se não gostar, devolvemos 100% do valor. Sem perguntas.</p>
-        </div>
-      </div>
-
-      <div class="faq">
-        <h2>Perguntas frequentes</h2>
-        <div class="faq-item">
-          <strong>Q: Como acesso o curso após a compra?</strong>
-          <p style="color:#41525f;font-size:.9rem;margin-top:.25rem">A: Após o pagamento confirmado, você recebe e-mail com link de acesso à área do aluno. Acesso é imediato.</p>
-        </div>
-        <div class="faq-item">
-          <strong>Q: Emite certificado?</strong>
-          <p style="color:#41525f;font-size:.9rem;margin-top:.25rem">A: Sim, emissão automática após conclusão.</p>
-        </div>
-        <div class="faq-item">
-          <strong>Q: Quais formas de pagamento?</strong>
-          <p style="color:#41525f;font-size:.9rem;margin-top:.25rem">A: PIX, cartão de crédito e boleto. Parcelamento disponível.</p>
-        </div>
-      </div>
-    </main>
-  </div>
-
-  <script>
-    (function(){
-      function getQueryParam(name) {
-        const url = new URL(window.location.href);
-        return url.searchParams.get(name) || '';
-      }
-      const slug = getQueryParam('slug');
-      const title = getQueryParam('title') || 'Curso';
-      const price = getQueryParam('price') || 'R$ 0';
-      const hotmartLink = getQueryParam('hotmart') || '#';
-      const kiwifyLink = getQueryParam('kiwify') || '#';
-
-      const nameEl = document.getElementById('course-name');
-      const priceEl = document.getElementById('course-price');
-      const hotmartBtn = document.getElementById('checkout-hotmart');
-      const kiwifyBtn = document.getElementById('checkout-kiwify');
-
-      if (nameEl) nameEl.textContent = decodeURIComponent(title);
-      if (priceEl) priceEl.textContent = price;
-      if (hotmartBtn) hotmartBtn.href = hotmartLink;
-      if (kiwifyBtn) kiwifyBtn.href = kiwifyLink;
-
-      // GA4 InitiateCheckout
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){ dataLayer.push(arguments); }
-      if (typeof gtag === 'function') {
-        gtag('event', 'InitiateCheckout', {
-          event_category: 'Academy',
-          event_label: decodeURIComponent(title),
-          value: parseFloat(price.replace(/[^0-9.,]/g, '').replace(',', '.')) || 0,
-          currency: 'BRL'
-        });
-      }
-    })();
-  </script>
-</body>
-</html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matrícula assistida — Praia Digital Academy</title><meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://praia.digital/education/checkout.html">
+<meta name="description" content="Matrícula assistida da Praia Digital Academy. Escolha o curso e fale com a equipe para receber as instruções de pagamento e acesso.">
+<style>*{box-sizing:border-box}body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4EBD0;color:#023047;margin:0;padding:32px 20px;line-height:1.65}.wrap{max-width:900px;margin:0 auto}.card{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:16px;padding:22px;margin:18px 0}.cta{display:inline-block;background:#00B4D8;color:#fff;padding:.75rem 1.25rem;border-radius:999px;font-weight:700;text-decoration:none;margin:.35rem}.secondary{background:#023047}.muted{color:#41525f}.notice{background:#fff8e6;border-left:5px solid #f2b705;padding:16px;border-radius:10px}</style></head>
+<body><div class="wrap"><main id="main"><p><a href="/education/vendas.html">← Voltar para os cursos</a></p>
+<h1>Matrícula assistida — Praia Digital Academy</h1>
+<p>A Academy está em fase de matrícula assistida. A equipe confirma o curso ideal para o seu objetivo antes de enviar as instruções finais de pagamento e acesso.</p>
+<div class="card"><h2>Como funciona</h2><ol><li>Escolha o curso no catálogo da Academy.</li><li>Fale com a equipe informando o curso desejado.</li><li>Receba a confirmação do valor, as instruções de pagamento e o próximo passo para acessar o conteúdo.</li></ol>
+<p><a class="cta" href="https://wa.me/5511954346288?text=Quero%20fazer%20minha%20matr%C3%ADcula%20na%20Praia%20Digital%20Academy" target="_blank" rel="noopener">Solicitar matrícula no WhatsApp</a>
+<a class="cta secondary" href="mailto:comercial@praia.digital?subject=Matr%C3%ADcula%20assistida%20%E2%80%94%20Praia%20Digital%20Academy&body=Ol%C3%A1%2C%20equipe%20Praia%20Digital!%0A%0AQuero%20fazer%20minha%20matr%C3%ADcula%20na%20Academy.%0A%0ACurso%20desejado%3A%0ANome%3A%0AWhatsApp%3A%0AObjetivo%20com%20o%20curso%3A%0A%0AObrigado(a).">Solicitar matrícula por e-mail</a></p></div>
+<div class="notice"><strong>Importante:</strong> esta página não processa pagamentos automaticamente. Não informe dados de cartão aqui. O pagamento só deve ser feito após a confirmação da equipe Praia Digital.</div>
+<h2>Perguntas frequentes</h2><div class="card">
+<p><strong>Como acesso o curso após a matrícula?</strong><br><span class="muted">Após a confirmação da matrícula pela equipe, você recebe as instruções de acesso à área do aluno e ao conteúdo contratado.</span></p>
+<p><strong>Emite certificado?</strong><br><span class="muted">Os cursos e formações indicam no catálogo quando há certificado após a conclusão.</span></p>
+<p><strong>Quais formas de pagamento estão disponíveis?</strong><br><span class="muted">A equipe confirma as opções disponíveis no momento da matrícula, antes de qualquer pagamento.</span></p></div>
+<p><a href="/education/index.html">Conhecer a Academy</a> · <a href="/education/cursos/index.html">Ver catálogo de cursos</a> · <a href="/planos.html">Ver planos Praia Digital</a></p>
+</main></div></body></html>
