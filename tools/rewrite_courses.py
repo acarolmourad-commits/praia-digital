@@ -11,6 +11,8 @@ FAMS.update(K1)
 VENDAS_EXTRA = KB2.pop('VENDAS_M')
 FAMS['VENDAS']['modulos'] = (FAMS['VENDAS']['modulos'] + VENDAS_EXTRA)[:4]
 FAMS.update(KB2); FAMS.update(KB3); FAMS.update(KB4); FAMS.update(KB5)
+from editorial_corrections import apply_corrections
+FAMS = apply_corrections(FAMS)
 
 RULES = [
  (['financiamento'], 'FINANCIAMENTO'),
@@ -40,6 +42,35 @@ def display_name(slug, ipath):
 
 def esc(s): return html.escape(s)
 
+# Fail closed: require an explicit, reviewed curriculum for every course.
+course_payload_path = 'tools/kb/course_content_by_slug.json'
+if not os.path.isfile(course_payload_path):
+    raise RuntimeError('Missing course-specific curricula. Family-wide rewriting is disabled.')
+with open(course_payload_path, encoding='utf-8') as course_file:
+    COURSE_CONTENT = json.load(course_file)
+required_slugs = [s for s in os.listdir('education/cursos')
+    if not s.startswith('_archive')
+    and os.path.isdir(f'education/cursos/{s}/curso-completo')
+    and os.path.isfile(f'education/cursos/{s}/index.html')]
+missing = [s for s in required_slugs if s not in COURSE_CONTENT]
+if missing:
+    raise RuntimeError('Missing curricula: ' + ', '.join(sorted(missing)))
+fingerprints = {}
+for s in required_slugs:
+    payload = COURSE_CONTENT[s]
+    if not isinstance(payload, dict) or not payload.get('familia') or len(payload.get('modulos', [])) != 4:
+        raise RuntimeError('Invalid curriculum structure: ' + s)
+    for module in payload['modulos']:
+        if not all(k in module for k in ('t', 'obj', 'aulas')) or not module['aulas']:
+            raise RuntimeError('Incomplete module: ' + s)
+        for lesson in module['aulas']:
+            if not all(k in lesson for k in ('t', 'c', 'p')) or not lesson['c'].strip():
+                raise RuntimeError('Incomplete lesson: ' + s)
+    fingerprint = json.dumps(payload['modulos'], sort_keys=True, ensure_ascii=False)
+    if fingerprint in fingerprints:
+        raise RuntimeError('Duplicate curriculum: ' + fingerprints[fingerprint] + ' / ' + s)
+    fingerprints[fingerprint] = s
+
 report = {'rewritten': 0, 'catalog': 0, 'skipped': []}
 catalog = []
 
@@ -50,7 +81,7 @@ for slug in sorted(os.listdir('education/cursos')):
     ipath = f'{base}/index.html'
     if not os.path.isdir(cdir) or not os.path.isfile(ipath):
         report['skipped'].append(slug); continue
-    fam = FAMS[family_of(slug)]
+    fam = COURSE_CONTENT[slug]
     nome = display_name(slug, ipath)
     mods = fam['modulos'][:4]
     sumario = [f'# Sumário do Curso: {nome}', '']

@@ -1,4 +1,4 @@
-// Praia Digital — Shared Header/Footer Injector v2.0
+// Praia Digital â€” Shared Header/Footer Injector v2.0
 // Single-source navigation injection with no boot duplication
 (function() {
   'use strict';
@@ -31,7 +31,7 @@
   }
 
   function boot() {
-    if (injected) return; // hard guard — run ONCE
+    if (injected) return;
     injected = true;
     injectAppsSection();
     var navMarker  = document.querySelector('meta[name="pd-shared-nav"]');
@@ -44,8 +44,6 @@
           navMarker.parentNode.replaceChild(header, navMarker);
           window.__pdShared.push(['inject-header-ok']);
           initDropdowns();
-          // Remove headers/nav inline legados (ex.: index.html) para evitar menu duplicado.
-          // Tó roda DEPOIS da injeção bem-sucedida, para nunca deixar a p�gina sem navegação.
           var legacy = document.querySelectorAll('header.pd-nav, body > header:not(.pd-header), body > nav.pd-nav');
           for (var i = 0; i < legacy.length; i++) {
             if (legacy[i] !== header && legacy[i].parentNode) {
@@ -69,15 +67,12 @@
     }
   }
 
-  // Dropdown interaction: hover on desktop, click on mobile/tablet
   function initDropdowns() {
     var groups = document.querySelectorAll('.pd-nav-group[data-dropdown]');
     groups.forEach(function(group) {
       var label  = group.querySelector('.pd-nav-label');
       var submenu = group.querySelector('.pd-nav-submenu');
       if (!label || !submenu) return;
-
-      // Desktop: hover
       group.addEventListener('mouseenter', function() {
         if (window.innerWidth > 768) {
           submenu.classList.add('open');
@@ -90,8 +85,6 @@
           label.setAttribute('aria-expanded', 'false');
         }
       });
-
-      // Mobile: click toggle
       label.addEventListener('click', function(e) {
         if (window.innerWidth <= 768) {
           e.preventDefault();
@@ -100,18 +93,11 @@
         }
       });
     });
-
-    // Mobile menu toggle (hamburger)
     var toggle = document.querySelector('.pd-nav-toggle');
     var menu   = document.querySelector('.pd-nav-menu');
     if (toggle && menu) {
-      // Use onclick already set inline; also ensure aria-expanded sync
-      menu.addEventListener('transitionend', function() {
-        // optional: close submenus when menu collapses
-      });
+      menu.addEventListener('transitionend', function() {});
     }
-
-    // Close mobile menu / dropdowns when clicking outside
     document.addEventListener('click', function(e) {
       if (window.innerWidth > 768) return;
       var isMenuClick = e.target.closest('.pd-nav-menu');
@@ -122,8 +108,6 @@
     });
   }
 
-
-  // Homepage: inject Apps section (from partials/apps-section.html) after #ferramentas
   function injectAppsSection() {
     var path = window.location.pathname;
     var isHome = path === '/' || path === '/index.html' || path === '';
@@ -149,7 +133,6 @@
       });
   }
 
-  // Boot once
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', boot);
   } else {
@@ -157,7 +140,6 @@
   }
 })();
 
-// Boost de visibilidade — imóvel id:25 (Casa em condomínio fechado — Bertioga)
 (function () {
   function boost() {
     try {
@@ -175,7 +157,7 @@
       var count = document.getElementById('resultsCount');
         if (count) count.textContent = currentFilter.length + ' imóveis encontrados';
       }
-    } catch (e) { /* noop */ }
+    } catch (e) { }
   }
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', boost);
@@ -184,13 +166,8 @@
   }
 })();
 
-// ====================
-// Listings reais + captura de leads qualificados
-// ====================
 (function () {
   'use strict';
-
-  // IDs com dados verificados e página real de detalhes
   var REAL_IDS = (typeof window !== 'undefined' && window.PD_REAL_IDS) || [24, 25];
   function onlyRealListings() {
     try {
@@ -205,7 +182,7 @@
       }
       var count = document.getElementById('resultsCount');
       if (count) {
-        count.textContent = listings.length + (listings.length === 1 ? ' ioótvel verificado' : ' imóveis verificados');
+        count.textContent = listings.length + (listings.length === 1 ? ' imóvel verificado' : ' imóveis verificados');
         var note = document.createElement('p');
         note.id = 'pd-real-note';
         note.style.cssText = 'font-size:0.85rem;color:#666;margin-top:0.25rem;';
@@ -215,7 +192,6 @@
       return hadSynthetic;
     } catch (e) { return false; }
   }
-
   function injectLeadTool() {
     var grid = document.getElementById('resultsGrid');
     if (!grid || document.getElementById('pdLeadTool')) return;
@@ -223,8 +199,8 @@
     wrap.id = 'pdLeadTool';
     wrap.style.cssText = 'max-width:860px;margin:2rem auto 0;background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,.04);';
     wrap.innerHTML =
-      '<h3 style="margin:0 0 0.25rem;font-size:1.15rem;color:#0A3D2E;">🎯 Não encontrou o padrão que procura?</h3>' +
-      '<p style="margin:0 0 1rem;font-size:0.9rem;color:#555;">Conte o que você busca — tipo, cidade, faixa de preço — e a gente filtra as melhores opções para você no WhatsApp.</p>' +
+      '<h3 style="margin:0 0 0.25rem;font-size:1.15rem;color:#0A3D2E;">Não encontrou o padrão que procura?</h3>' +
+      '<p style="margin:0 0 1rem;font-size:0.9rem;color:#555;">Conte o que você busca e a gente filtra as melhores opções para você no WhatsApp.</p>' +
       '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:0.75rem;">' +
         '<select id="pdLeadTipo" style="padding:0.6rem;border:2px solid #e0e0e0;border-radius:12px;font-size:0.9rem;">' +
           '<option value="">Tipo de imóvel</option><option>Casa</option><option>Apartamento</option><option>Terreno</option><option>Pousada</option><option>Comercial</option>' +
@@ -243,9 +219,8 @@
         '<input id="pdLeadNome" placeholder="Seu nome" style="padding:0.6rem;border:2px solid #e0e0e0;border-radius:12px;font-size:0.9rem;">' +
         '<input id="pdLeadFone" placeholder="Seu WhatsApp (opcional)" style="padding:0.6rem;border:2px solid #e0e0e0;border-radius:12px;font-size:0.9rem;">' +
       '</div>' +
-      '<button id="pdLeadBtn" style="margin-top:1rem;background:#0A3D2E;color:#fff;border:none;padding:0.8rem 1.5rem;border-radius:12px;font-size:1rem;font-weight:700;cursor:pointer;width:100%;">💬 Receber opções no WhatsApp</button>';
+      '<button id="pdLeadBtn" style="margin-top:1rem;background:#0A3D2E;color:#fff;border:none;padding:0.8rem 1.5rem;border-radius:12px;font-size:1rem;font-weight:700;cursor:pointer;width:100%;">Receber opções no WhatsApp</button>';
     if (grid.parentNode) grid.parentNode.appendChild(wrap);
-
     document.getElementById('pdLeadBtn').addEventListener('click', function () {
       var v = function (id) { var el = document.getElementById(id); return el ? el.value.trim() : ''; };
       var partes = [];
@@ -259,7 +234,6 @@
       window.open('https://wa.me/5511954346288?text=' + encodeURIComponent(msg), '_blank', 'noopener');
     });
   }
-
   function run() {
     if (document.getElementById('resultsGrid')) {
       onlyRealListings();
@@ -271,4 +245,25 @@
   } else {
     run();
   }
+})();
+
+// === Praia Digital — Unified Plans CTA v2026-10-18 ===
+(function(){
+  'use strict';
+  function unify(){
+    try {
+      var links=document.querySelectorAll('a[href="/planos-assinatura.html"], a[href="planos-assinatura.html"], a[href="https://praia.digital/planos-assinatura.html"], a[href="/planos-assinatura-profissionais.html"], a[href="/planos-proptech-2026.html"]');
+      links.forEach(function(a){ a.setAttribute('href','/planos.html'); });
+      var path=window.location.pathname;
+      var isHome=(path==='/'||path==='/index.html'||path==='');
+      if(isHome && !document.getElementById('planos-praia-digital')){
+        var sec=document.createElement('section');
+        sec.id='planos-praia-digital';
+        sec.setAttribute('style','max-width:1100px;margin:48px auto;padding:32px 24px;background:#0f2a4a;color:#fff;border-radius:18px;text-align:center');
+        sec.innerHTML='<h2 style="margin:0 0 12px">Planos Praia Digital para corretores e imobiliárias</h2><p style="margin:0 auto 20px;max-width:760px">Comece grátis nas ferramentas e pague só pela camada profissional. Sem taxa de setup; impostos e condições no checkout e na proposta comercial.</p><p style="margin:0 auto 14px;max-width:900px"><a href="https://buy.stripe.com/14AfZie8gaxNadF19e4ZR1R" style="display:inline-block;background:#22c55e;color:#062b16;padding:12px 20px;border-radius:999px;font-weight:800;text-decoration:none;margin:4px">Starter — R$ 79/mês</a><a href="https://buy.stripe.com/28E00k6FOcFV1H93hm4ZR1Q" style="display:inline-block;background:#22c55e;color:#062b16;padding:12px 20px;border-radius:999px;font-weight:800;text-decoration:none;margin:4px">Growth — R$ 249/mês</a><a href="https://buy.stripe.com/cNidRa5BK8pF4TldW04ZR1S" style="display:inline-block;background:#22c55e;color:#062b16;padding:12px 20px;border-radius:999px;font-weight:800;text-decoration:none;margin:4px">Scale — R$ 799/mês</a></p><p style="margin:0 auto 14px;max-width:900px"><a href="https://buy.stripe.com/aFa00k3tCbBRadF3hm4ZR1P" style="display:inline-block;background:#fff;color:#0f2a4a;padding:12px 20px;border-radius:999px;font-weight:800;text-decoration:none;margin:4px">Relatório de avaliação PDF — R$ 49</a><a href="https://buy.stripe.com/eVqcN68NW7lB4Tl2di4ZR1U" style="display:inline-block;background:#fff;color:#0f2a4a;padding:12px 20px;border-radius:999px;font-weight:800;text-decoration:none;margin:4px">Kit Temporada — R$ 39/imóvel/mês</a><a href="https://buy.stripe.com/9B68wQ6FOfS72Ld8BG4ZR1T" style="display:inline-block;background:#fff;color:#0f2a4a;padding:12px 20px;border-radius:999px;font-weight:800;text-decoration:none;margin:4px">Pacote 20 descrições — R$ 97</a></p><p style="margin:0"><a href="https://praia.digital/planos.html" style="color:#7fd1cf;font-weight:700">Ver planos completos e comparar →</a></p>';
+        var footer=document.querySelector('footer'); if(footer && footer.parentNode){ footer.parentNode.insertBefore(sec, footer); } else { (document.body||document.documentElement).appendChild(sec); }
+      }
+    } catch(e) {}
+  }
+  if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded', unify); } else { unify(); }
 })();

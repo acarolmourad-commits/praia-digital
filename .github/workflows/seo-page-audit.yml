@@ -3,9 +3,9 @@ name: SEO Page Audit
 on:
   push:
     branches: [main]
-    paths: ['**.html', 'scripts/build-navigation.py', '.github/workflows/seo-page-audit.yml']
+    paths: ['**.html', 'scripts/build-navigation.py', 'scripts/fix_empty_h1.py', '.github/workflows/seo-page-audit.yml']
   pull_request:
-    paths: ['**.html', 'scripts/build-navigation.py', '.github/workflows/seo-page-audit.yml']
+    paths: ['**.html', 'scripts/build-navigation.py', 'scripts/fix_empty_h1.py', '.github/workflows/seo-page-audit.yml']
   workflow_dispatch:
 
 jobs:
@@ -15,7 +15,9 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Prepare published navigation and IA headings
-        run: python3 scripts/build-navigation.py
+        run: |
+          python3 scripts/build-navigation.py
+          python3 scripts/fix_empty_h1.py
 
       - name: Audit HTML pages (canonical, metas, schema)
         run: |

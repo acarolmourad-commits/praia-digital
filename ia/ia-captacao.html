@@ -33,8 +33,8 @@
 }
 </script>
 
-    <meta name="keywords" content="IA para Captação — Praia Digital, Praia Digital Home Central de IA Captação 🎯 IA para Captação Análise rápida de potencial, preço, argumentos e plano de captação., imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
-  <meta name="description" content="Praia Digital Home Central de IA Captação 🎯 IA para Captação Análise rápida de potencial, preço, argumentos e plano de captação.">
+    <meta name="keywords" content="IA para Captação — Praia Digital, análise de captação imobiliária, preço sugerido imóvel litoral, plano de captação corretor, Santos, Guarujá, Praia Grande, Bertioga">
+  <meta name="description" content="IA para Captação: análise rápida de potencial, preço sugerido, argumentos de venda e plano de captação para imóveis no litoral paulista.">
   <meta charset="UTF-8">
     
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -90,7 +90,7 @@
     .insight-value { font-size: 1.1rem; font-weight: 900; color: var(--dark); }
     .insight-label { font-size: .7rem; color: #888; text-transform: uppercase; letter-spacing: 0.06em; margin-top: .2rem; }
     .plan { background: #f3e8ff; border: 2px solid var(--purple-light); border-radius: 14px; padding: 1rem; }
-    .plan h4 { color: var(--purple); margin-bottom: .5rem; }
+    .plan h3, .plan h4 { color: var(--purple); margin-bottom: .5rem; }
     .plan ul { padding-left: 1.25rem; font-size: .9rem; color: #444; }
     .plan li { margin-bottom: .35rem; }
     .notice { background:#fff7ed; border-left:4px solid var(--orange); padding:14px; border-radius:8px; margin-top:18px; color:#7c2d12; }
@@ -98,7 +98,7 @@
   <link rel="canonical" href="https://praia.digital/ia/ia-captacao.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="IA para Captação — Praia Digital">
-  <meta property="og:description" content="Praia Digital Home Central de IA Captação 🎯 IA para Captação Análise rápida de potencial, preço, argumentos e plano de captação.">
+  <meta property="og:description" content="Análise rápida de potencial, preço, argumentos e plano de captação.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -107,7 +107,7 @@
   <meta property="og:url" content="https://praia.digital/ia/ia-captacao.html">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="IA para Captação — Praia Digital">
-  <meta name="twitter:description" content="Praia Digital Home Central de IA Captação 🎯 IA para Captação Análise rápida de potencial, preço, argumentos e plano de captação.">
+  <meta name="twitter:description" content="Análise rápida de potencial, preço, argumentos e plano de captação.">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
   <link rel="alternate" hreflang="pt-BR" href="https://praia.digital/ia/ia-captacao.html">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -160,7 +160,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
   <div class="hero">
     <div class="hero-inner">
-      <h1></h1>
+      <h1>IA para Captação</h1>
       <p>Análise rápida de potencial, preço, argumentos e plano de captação.</p>
       <div class="hero-cta">
         <a class="btn btn-purple" href="#analisador">Analisar imóvel</a>
@@ -171,7 +171,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
   <div class="wrap" id="analisador">
     <div class="capture-panel">
-      <h2 class="section-title"></h2>
+      <h2 class="section-title">Análise de captação</h2>
       <div class="capture-form">
         <div class="field">
           <label for="capTipo">Tipo</label>
@@ -219,7 +219,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
     <div style="margin-top: 1.5rem; display:flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
       <a class="btn btn-primary" href="/ia/">Voltar para central</a>
-      <a class="btn btn-primary" href="//">Home</a>
+      <a class="btn btn-primary" href="https://praia.digital/">Home</a>
     </div>
   </div>
 
@@ -242,16 +242,16 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     };
     const cityYield = {'praia-grande':5.8,'santos':5.0,'guaruja':4.6,'sao-vicente':6.1,'itanhaem':6.4,'mongagua':6.9,'peruibe':7.2,'ubatuba':5.4,'caraguatatuba':5.9,'sao-sebastiao':4.9,'ilhabela':4.4,'bertioga':5.1};
 
-    function fmt(v){ return 'R$ ' + Number(v0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0}); }
+    function fmt(v){ return 'R$ ' + Number(v||0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0}); }
 
     function runCapture(){
       const tipo = document.getElementById('capTipo').value;
       const cidade = document.getElementById('capCidade').value;
-      const area = Number(document.getElementById('capArea').value0);
-      const quartos = Number(document.getElementById('capQuartos').value0);
+      const area = Number(document.getElementById('capArea').value)||0;
+      const quartos = Number(document.getElementById('capQuartos').value)||0;
       const diferencial = document.getElementById('capDiferencial').value.trim();
-      const precoPedido = Number(document.getElementById('capPreco').value0);
-      const base = priceByCity[cidade]  priceByCity['praia-grande'];
+      const precoPedido = Number(document.getElementById('capPreco').value)||0;
+      const base = priceByCity[cidade] || priceByCity['praia-grande'];
 
       let suggested = base.base;
       if(tipo==='apartamento') suggested += area * 1800 + quartos * 25000;
@@ -260,25 +260,25 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       else if(tipo==='comercial') suggested += area * 2200;
       else if(tipo==='pousada') suggested += area * 1600 + quartos * 18000;
 
-      if(diferencial.includes('mar')  diferencial.includes('frente')) suggested += 180000;
+      if(diferencial.includes('mar') || diferencial.includes('frente')) suggested += 180000;
       else if(diferencial.includes('piscina')) suggested += 120000;
-      else if(diferencial.includes('wi-fi')  diferencial.includes('wifi')) suggested += 15000;
+      else if(diferencial.includes('wi-fi') || diferencial.includes('wifi')) suggested += 15000;
 
       suggested = Math.round(suggested * base.factor);
       const faixaMin = Math.round(suggested * 0.92);
       const faixaMax = Math.round(suggested * 1.08);
-      const yieldEst = cityYield[cidade]  5.5;
+      const yieldEst = cityYield[cidade] || 5.5;
       const rentabilidade = ((suggested * yieldEst / 100) / suggested) * 100;
 
       const pontosFortes = ['Localização', 'Área', 'Acabamento', 'Diferencial'];
-      const pontosFracos = [' Conservação', ' Documentação', ' Oferta comparável', 'Acessibilidade'];
+      const pontosFracos = ['Conservação', 'Documentação', 'Oferta comparável', 'Acessibilidade'];
       if(area > 150) pontosFortes.push('Espaço amplo');
       if(diferencial.includes('mar')) pontosFortes.push('Vista privilegiada');
       if(precoPedido && precoPedido > suggested * 1.1) pontosFracos.push('Preço acima da faixa');
 
       const argumentos = [
         `Imóvel em ${base.label}, cidade com valorização consistente no litoral.`,
-        `${tipo} com ${area}m² e ${quartos'?'} quartos, atendendo demanda por espaço e localização.`,
+        `${tipo} com ${area}m² e ${quartos} quartos, atendendo demanda por espaço e localização.`,
         diferencial ? `Diferencial: ${diferencial}.` : 'Negociável dentro da faixa de mercado.'
       ];
 
@@ -298,13 +298,13 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
           <div class="insight"><div class="insight-value">${rentabilidade.toFixed(1)}%</div><div class="insight-label">Rentabilidade estimada</div></div>
         </div>
         <div class="plan">
-          <h3></h3>
+          <h3>Pontos fortes</h3>
           <ul>${pontosFortes.map(x=>`<li>${x}</li>`).join('')}</ul>
-          <h4 style="margin-top:0.75rem"></h4>
+          <h4 style="margin-top:0.75rem">Pontos de atenção</h4>
           <ul>${pontosFracos.map(x=>`<li>${x}</li>`).join('')}</ul>
-          <h4 style="margin-top:0.75rem"></h4>
+          <h4 style="margin-top:0.75rem">Argumentos de venda</h4>
           <ul>${argumentos.map(x=>`<li>${x}</li>`).join('')}</ul>
-          <h4 style="margin-top:0.75rem"></h4>
+          <h4 style="margin-top:0.75rem">Plano de captação</h4>
           <ul>${plan.map(x=>`<li>${x}</li>`).join('')}</ul>
         </div>
       `;
