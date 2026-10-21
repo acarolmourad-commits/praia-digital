@@ -121,7 +121,7 @@ def index_html(articles):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Novidades Airbnb e Booking | Praia Digital</title>
 <meta name="description" content="Acompanhe novidades oficiais do Airbnb e da Booking.com para anfitrioes de temporada, detectadas a cada 6 horas pela Sentinela Praia Digital.">
-<style>body{{font-family:system-ui,sans-serif;color:#0a2540;line-height:1.65;margin:0}}.wrap{{max-width:860px;margin:0 auto;padding:0 20px}}header{{background:#0a2540;color:#fff;padding:18px 0}}header a{{color:#7fd1cf}}main{{padding:36px 0 56px}}.tag{{background:#eef6f6;color:#0a5f5e;padding:3px 10px;border-radius:99px;font-size:.75rem;font-weight:700}}a{{color:#0e7c7b}}li{{margin:12px 0}}</style>
+<style>body{{font-family:system-ui,sans-serif;color:#0a2540;line-height:1.65;margin:0}}.wrap{{max-width:860px;margin:0 auto;padding:0 20px}}header{{background:#0a2540;color:#fff;padding:18px 0}}header a{{color:#7fd1cf}}main{{padding:36px 0 56px}}.tag{{background:#eef6f6;color:#0a5f5e;padding:3px 10px;border-radius:99px;font-size:.75rem;font-weight:700}}a{{color:#0e7c7b}}li{{margin:12px 0}}.card{{background:#f7f4ee;border:1px solid #e3e9ef;border-radius:14px;padding:18px 20px;margin:24px 0}}footer{{background:#081c30;color:#9db4c6;padding:26px 0;font-size:.9rem}}footer a{{color:#7fd1cf}}</style>
 </head>
 <body>
 <header><div class="wrap"><a href="/">Praia<strong>Digital</strong></a> · Novidades Airbnb + Booking</div></header>
