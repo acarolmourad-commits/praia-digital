@@ -1,4 +1,4 @@
-name: Aplicar template Sentinela interligado 2026-10-21 (one-shot)
+name: Aplicar template Sentinela 2026-10-21 (one-shot)
 
 on:
   workflow_dispatch:
@@ -15,11 +15,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Aplicar patch e validar sintaxe
+      - name: Atualizar template do hub e artigos da Sentinela
         run: |
-          python scripts/patch_sentinela_template_20261021.py
+          python scripts/fix_sentinela_template_20261021.py
           python -m py_compile scripts/sentinela_airbnb_booking.py scripts/fix_apps_network_20261021.py scripts/ig_auto_post.py
-      - name: Commit and push changes
+      - name: Commit and push template changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -27,6 +27,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "feat(sentinela): template do hub interligado a apps e servicos"
+            git commit -m "fix(sentinela): template do hub/artigos com navegacao consistente e apps interligados"
             git push
           fi
