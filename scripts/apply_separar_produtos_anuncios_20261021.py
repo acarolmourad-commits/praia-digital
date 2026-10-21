@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Separa Propaganda Imobiliaria (venda/locacao) de Anuncios Airbnb/Booking (temporada).
 Sao produtos independentes: nao sao etapas, pacotes nem alternativas um do outro.
+Versao v2 (2026-10-21): adaptada a main atual, onde a home ja tem a secao
+'Central Airbnb + Booking' separada da secao de destaque da Propaganda.
 Idempotente. Falha se algum trecho esperado nao for encontrado.
 Uso: python3 scripts/apply_separar_produtos_anuncios_20261021.py
 """
@@ -9,13 +11,15 @@ from pathlib import Path
 EDITS = {
     'index.html': [
         ('<h2>Criação de anúncios por R$ 499</h2>',
-         '<h2>Dois produtos diferentes, para objetivos diferentes</h2>'),
+         '<h2>Propaganda Imobiliária — anúncio para vender ou alugar (R$ 499)</h2>'),
         ('<p class="lead">Anúncio profissional pronto para publicar — escolha a finalidade do seu imóvel:</p>',
-         '<p class="lead"><strong>Propaganda Imobiliária</strong> e <strong>Anúncios Airbnb/Booking</strong> são produtos independentes — não são etapas, pacotes nem alternativas um do outro. Um vende ou aluga o imóvel; o outro vende diárias de temporada. Contratação e escopo separados.</p>'),
+         '<p class="lead">Produto independente para <strong>venda ou locação</strong> do imóvel. Não é anúncio de temporada, não é Airbnb nem Booking e não vende diárias.</p>'),
         ('<span class="tag">Venda ou locação</span><h3>Propaganda imobiliária — R$ 499</h3><p>Criação de anúncio para venda ou locação de imóveis, por imóvel: copy, estrutura e roteiro de distribuição em portais, redes sociais e WhatsApp.</p>',
          '<span class="tag">Venda ou locação · produto independente</span><h3>Propaganda imobiliária — R$ 499</h3><p>Para vender ou alugar o imóvel: anúncio por imóvel, com copy, estrutura e roteiro de distribuição em portais imobiliários, redes sociais e WhatsApp, para gerar compradores e locatários interessados. Não é anúncio de temporada.</p>'),
-        ('<span class="tag">Temporada</span><h3>Anúncios Airbnb e Booking — R$ 499</h3><p>Criação e otimização de anúncios de temporada, por anúncio, por plataforma: fotos, descrição, diagnóstico e precificação dinâmica.</p>',
-         '<span class="tag">Temporada · hospedagem · produto independente</span><h3>Anúncios Airbnb e Booking — R$ 499</h3><p>Para vender diárias no Airbnb ou Booking: criação ou edição por anúncio, por plataforma, com fotos, descrição, diagnóstico, calendário e precificação dinâmica, para gerar reservas de hóspedes. Não é propaganda de venda ou locação.</p>'),
+        ('<p class="lead">Todos os serviços de Airbnb, Booking e marketplaces de temporada da Praia Digital, reunidos nesta seção: criação e gestão de anúncios, centrais do anfitrião, precificação, suporte e ferramentas de rentabilidade.</p>',
+         '<p class="lead">Todos os serviços de Airbnb, Booking e marketplaces de temporada da Praia Digital, reunidos nesta seção: criação e gestão de anúncios, centrais do anfitrião, precificação, suporte e ferramentas de rentabilidade. <strong>Produto independente de temporada/hospedagem — não é propaganda para venda ou locação do imóvel.</strong></p>'),
+        ('<a class="card" href="/servicos/anuncios-airbnb-booking.html"><span class="tag">Anúncios</span><h3>Anúncios Airbnb e Booking</h3><p>Criação e otimização de anúncios de temporada: fotos, descrição, diagnóstico e precificação dinâmica.</p><p><strong>Ver o serviço →</strong></p></a>',
+         '<a class="card" href="/servicos/anuncios-airbnb-booking.html"><span class="tag">Anúncios · temporada</span><h3>Anúncios Airbnb e Booking — R$ 499</h3><p>Criação e otimização de anúncios de temporada, por anúncio, por plataforma: fotos, descrição, diagnóstico e precificação dinâmica para gerar reservas de hóspedes. Produto independente — não é propaganda de venda ou locação.</p><p><strong>Ver o serviço e pagar →</strong></p></a>'),
     ],
     'servicos.html': [
         ('<b>Propaganda imobiliária</b><small>Criação de anúncio para venda ou locação: copy, estrutura e roteiro de distribuição em portais, redes sociais e WhatsApp.</small>',
