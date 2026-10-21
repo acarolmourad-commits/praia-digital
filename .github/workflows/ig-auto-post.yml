@@ -18,29 +18,19 @@ jobs:
     if: ${{ !github.event.repository.fork }}
     runs-on: ubuntu-latest
     steps:
-      - name: Verificar credenciais do Instagram
-        id: ig_creds
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pillow requests
+      - name: Gerar artes e publicar no Instagram
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
         run: |
           if [ -z "$IG_ACCESS_TOKEN" ] || [ -z "$IG_USER_ID" ]; then
-            echo "::warning::IG_ACCESS_TOKEN/IG_USER_ID ausentes - publicacao ignorada sem falha. Configure os secrets para reativar."
-            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::IG_ACCESS_TOKEN/IG_USER_ID ausentes - validacao dry-run (sem publicar)."
+            python scripts/ig_auto_post.py --dry-run
           else
-            echo "ready=true" >> "$GITHUB_OUTPUT"
+            python scripts/ig_auto_post.py
           fi
-      - uses: actions/checkout@v4
-        if: steps.ig_creds.outputs.ready == 'true'
-      - uses: actions/setup-python@v5
-        if: steps.ig_creds.outputs.ready == 'true'
-        with:
-          python-version: '3.12'
-      - run: pip install pillow requests
-        if: steps.ig_creds.outputs.ready == 'true'
-      - name: Gerar artes e publicar no Instagram
-        if: steps.ig_creds.outputs.ready == 'true'
-        env:
-          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          IG_USER_ID: ${{ secrets.IG_USER_ID }}
-        run: python scripts/ig_auto_post.py

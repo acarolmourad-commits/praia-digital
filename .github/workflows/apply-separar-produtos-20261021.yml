@@ -1,0 +1,30 @@
+name: Aplicar separacao Propaganda x Airbnb/Booking (one-shot)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: ${{ !github.event.repository.fork }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Separar apresentacao dos produtos
+        run: python3 scripts/apply_separar_produtos_anuncios_20261021.py
+      - name: Commit and push page changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html servicos.html servicos/anuncios-airbnb-booking.html servicos/propaganda-imobiliaria.html
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "feat(produtos): separa Propaganda Imobiliaria de Anuncios Airbnb/Booking"
+            git push
+          fi
