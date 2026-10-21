@@ -1,0 +1,32 @@
+name: Aplicar template Sentinela interligado 2026-10-21 (one-shot)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: ${{ !github.event.repository.fork }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Aplicar patch e validar sintaxe
+        run: |
+          python scripts/patch_sentinela_template_20261021.py
+          python -m py_compile scripts/sentinela_airbnb_booking.py scripts/fix_apps_network_20261021.py scripts/ig_auto_post.py
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/sentinela_airbnb_booking.py
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "feat(sentinela): template do hub interligado a apps e servicos"
+            git push
+          fi

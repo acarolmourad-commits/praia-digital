@@ -2,7 +2,6 @@ name: Instagram Auto-Post (4x/dia)
 
 on:
   schedule:
-    # 7h, 9h, 15h e 20h horario de Brasilia (UTC-3)
     - cron: '0 10,12,18,23 * * *'
   workflow_dispatch:
 
@@ -23,4 +22,10 @@ jobs:
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
-        run: python scripts/ig_auto_post.py
+        run: |
+          if [ -z "$IG_ACCESS_TOKEN" ] || [ -z "$IG_USER_ID" ]; then
+            echo "::warning::IG_ACCESS_TOKEN/IG_USER_ID ausentes - validacao dry-run (sem publicar)."
+            python scripts/ig_auto_post.py --dry-run
+          else
+            python scripts/ig_auto_post.py
+          fi
