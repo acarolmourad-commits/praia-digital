@@ -78,9 +78,10 @@
         "https://www.airbnb.com/resources/hosting-homes/a/tips-for-avoiding-preventable-cancellations-373": "Avoiding cancellations",
         "https://www.airbnb.com/resources/hosting-homes/a/how-aircover-for-hosts-works-469": "How AirCover for Hosts works",
         "https://www.airbnb.com/resources/hosting-homes/a/how-airbnb-protects-hosts-5": "How Airbnb protects hosts",
-        "https://www.airbnb.com/resources/hosting-homes/a/important-safety-guidelines-for-hosts-459": "Safety guidelines for hosts"
+        "https://www.airbnb.com/resources/hosting-homes/a/important-safety-guidelines-for-hosts-459": "Safety guidelines for hosts",
+        "https://www.airbnb.com/resources/hosting-homes/a/new-tools-to-host-smarter-not-harder-776": "New tools to host smarter"
       },
-      "hash": "afb17ac2b8ba2be497d66ba64c60895c27c2ac39e59fcbb10223d16913a5803b"
+      "hash": "327f6c5125c1f4c2da462b0cc3c2f61da367f6a1bb3db83669edd5f36088e8c9"
     },
     "booking-partner": {
       "name": "Booking Partner Hub (oficial)",
@@ -98,5 +99,13 @@
       "seen": {}
     }
   },
-  "articles": []
+  "articles": [
+    {
+      "date": "2026-10-21 19:47 UTC",
+      "platform": "Airbnb",
+      "title": "Novidades Airbnb: New tools to host smarter",
+      "file": "novidades-20261021-194712-airbnb-resources.html",
+      "source": "https://www.airbnb.com/resources/hosting-homes"
+    }
+  ]
 }
