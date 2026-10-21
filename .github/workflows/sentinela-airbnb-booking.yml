@@ -1,0 +1,42 @@
+name: Sentinela Airbnb + Booking
+
+on:
+  schedule:
+    - cron: '17 3,9,15,21 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: sentinela-airbnb-booking
+  cancel-in-progress: false
+
+jobs:
+  monitorar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Monitorar fontes oficiais e publicar novidades auto-revisadas
+        id: sentinela
+        run: python scripts/sentinela_airbnb_booking.py
+      - name: Commit e push das novidades
+        if: steps.sentinela.outputs.changed == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add blog/novidades-airbnb-booking.html 'blog/novidades-*.html' automation/marketplaces/sentinela-estado.json automation/marketplaces/sentinela-ultimo-relatorio.md
+          if git diff --cached --quiet; then echo 'Nada para commitar'; exit 0; fi
+          git commit -m 'chore(novidades): Sentinela Airbnb + Booking [skip ci]'
+          git push
+      - name: Registrar issue de acompanhamento
+        if: steps.sentinela.outputs.published_count != '0' && steps.sentinela.outputs.published_count != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue create --title "🛎️ Sentinela: novidade Airbnb/Booking publicada (${{ steps.sentinela.outputs.published_count }})" --body-file automation/marketplaces/sentinela-ultimo-relatorio.md
