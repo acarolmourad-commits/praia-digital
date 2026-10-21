@@ -2,11 +2,16 @@ name: Instagram Auto-Post (4x/dia)
 
 on:
   schedule:
+    # 7h, 9h, 15h e 20h horario de Brasilia (UTC-3)
     - cron: '0 10,12,18,23 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: ig-auto-post
+  cancel-in-progress: false
 
 jobs:
   post:

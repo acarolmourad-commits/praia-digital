@@ -1,0 +1,30 @@
+name: Aplicar destaque Anuncios 499 na home (one-shot)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: ${{ !github.event.repository.fork }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Aplicar destaque R$ 499 na home
+        run: python3 scripts/apply_anuncios_499_home_20261021.py
+      - name: Commit and push home changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "feat(home): destaque Anuncios Airbnb/Booking R$ 499"
+            git push
+          fi
