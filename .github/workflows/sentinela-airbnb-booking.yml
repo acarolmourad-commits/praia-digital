@@ -44,4 +44,5 @@ jobs:
         if: steps.sentinela.outputs.published_count != '0' && steps.sentinela.outputs.published_count != ''
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh issue create --title "🛎️ Sentinela: novidade Airbnb/Booking publicada (${{ steps.sentinela.outputs.published_count }})" --body-file automation/marketplaces/sentinela-ultimo-relatorio.md
+        run: |
+          gh issue create --title "Sentinela - novidade Airbnb/Booking publicada (${{ steps.sentinela.outputs.published_count }})" --body-file automation/marketplaces/sentinela-ultimo-relatorio.md
