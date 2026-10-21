@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "sources": {
+    "airbnb-releases": {
+      "name": "Airbnb Product Releases (oficial)",
+      "url": "https://news.airbnb.com/product-releases/",
+      "status": 200,
+      "seen": {
+        "https://news.airbnb.com/product-releases/airbnb-2026-summer-release": "Airbnb 2026 Summer Release",
+        "https://news.airbnb.com/product-releases/airbnb-2025-winter-release": "Airbnb 2025 Winter Release",
+        "https://news.airbnb.com/product-releases/airbnb-2025-summer-release": "Airbnb 2025 Summer Release",
+        "https://news.airbnb.com/product-releases/airbnb-2024-winter-release": "Airbnb 2024 Winter Release",
+        "https://news.airbnb.com/product-releases/airbnb-2024-summer-release": "Airbnb 2024 Summer Release",
+        "https://news.airbnb.com/product-releases/airbnb-2023-winter-release": "Airbnb 2023 Winter Release",
+        "https://news.airbnb.com/product-releases/airbnb-2023-summer-release": "Airbnb 2023 Summer Release",
+        "https://news.airbnb.com/product-releases/airbnb-2022-winter-release": "Airbnb 2022 Winter Release",
+        "https://news.airbnb.com/product-releases/airbnb-2022-summer-release": "Airbnb 2022 Summer Release",
+        "https://news.airbnb.com/product-releases/airbnb-2021-winter-release": "Airbnb 2021 Winter Release",
+        "https://news.airbnb.com/product-releases/airbnb-2021-summer-release": "Airbnb 2021 Summer Release"
+      },
+      "hash": "c5ca415ca4c780fab23ed3d04954e264f7729c6d43b903272ec61b82737a009d"
+    },
+    "airbnb-news": {
+      "name": "Airbnb Newsroom (oficial)",
+      "url": "https://news.airbnb.com/",
+      "status": 200,
+      "seen": {
+        "https://news.airbnb.com/gen-z-is-driving-a-45-jump-in-halloween-weekend-searches": "Gen Z is driving a 45% jump in Halloween weekend searches",
+        "https://news.airbnb.com/airbnb-org-hurricane-isaias": "Airbnb.org offers emergency housing to people displaced by Hurricane Isaias",
+        "https://news.airbnb.com/airbnb-contributes-100k-to-massachusetts-legalize-starter-homes-campaign": "Airbnb contributes $100K+ to Massachusetts’ Legalize Starter Homes campaign",
+        "https://news.airbnb.com/airbnb-2026-fall-update": "Airbnb 2026 Fall Update",
+        "https://news.airbnb.com/explore-art-basel-paris-with-new-airbnb-experiences-unique-stays-and-support-for-emerging-artists": "Explore Art Basel Paris With New Airbnb Experiences Unique Stays And Support For Emerging Artists",
+        "https://news.airbnb.com/discover-gordon-bay-cottage-now-on-airbnb": "Discover Gordon Bay Cottage, now on Airbnb September 9, 2026",
+        "https://news.airbnb.com/introducing-one-of-a-kind-fan-experiences-for-fifa-world-cup-2026": "Introducing one-of-a-kind fan experiences for FIFA World Cup 2026™ May 5, 2026",
+        "https://news.airbnb.com/stay-at-mexico-city-stadium-with-hugo-sanchez-with-world-cup-tickets-including-tickets-to-the-opening-match-of-the-fifa-world-cup-2026": "A night inside Mexico City Stadium with Hugo Sánchez: FIFA World Cup 2026™ tickets included March 17, 2026",
+        "https://news.airbnb.com/step-inside-the-wild-romance-of-wuthering-heights": "Step inside the wild romance of “Wuthering Heights” February 4, 2026",
+        "https://news.airbnb.com/expanding-access-to-openai-frontier-models-including-gpt-6-astra": "Expanding access to OpenAI frontier models, including GPT-6 Astra",
+        "https://news.airbnb.com/airbnb-expands-groceries-with-instacart-across-us-and-canada": "Airbnb Expands Groceries With Instacart Across Us And Canada",
+        "https://news.airbnb.com/announcing-housing-accelerator": "Airbnb launches new housing accelerator",
+        "https://news.airbnb.com/new-research-highlights-hosting-as-an-engine-for-latino-generational-wealth": "New Research Highlights Hosting As An Engine For Latino Generational Wealth",
+        "https://news.airbnb.com/airbnb-and-little-village-chamber-of-commerce-boost-local-small-businesses-as-mexican-independence-day-brings-visitor-surge-to-the-neighborhood": "Airbnb And Little Village Chamber Of Commerce Boost Local Small Businesses As Mexican Independence Day Brings Visitor Surge To The Neighborhood",
+        "https://news.airbnb.com/airbnb-announces-pepijn-rijvers-as-chief-business-officer": "Airbnb Announces Pepijn Rijvers As Chief Business Officer",
+        "https://news.airbnb.com/airbnb-org-jcs-211-miami-and-volunteer-florida-announce-disaster-response": "Airbnb.org, JCS 211 Miami and Volunteer Florida announce disaster response partnerships during peak hurricane season",
+        "https://news.airbnb.com/airbnb-commits-1-million-to-environmental-protection-in-washington": "Airbnb commits $1 million to environmental protection in Washington",
+        "https://news.airbnb.com/fall-beats-summer-as-the-top-season-for-weekend-trips": "Fall Beats Summer As The Top Season For Weekend Trips",
+        "https://news.airbnb.com/airbnb-org-offers-free-emergency-housing-to-first-responders-after-the-earthquake-in-colombia": "Airbnb Org Offers Free Emergency Housing To First Responders After The Earthquake In Colombia",
+        "https://news.airbnb.com/airbnb-q2-2026-financial-results": "Airbnb Q2 2026 Financial Results",
+        "https://news.airbnb.com/what-makes-airbnb-airbnb": "What Makes Airbnb Airbnb"
+      },
+      "hash": "9f0971a27f708e96a23917e50c59144f3f81b8655dc7abd29831229db51c8c25"
+    },
+    "airbnb-resources": {
+      "name": "Airbnb Resource Center - Anfitrioes (oficial)",
+      "url": "https://www.airbnb.com/resources/hosting-homes",
+      "status": 200,
+      "seen": {
+        "https://www.airbnb.com/resources/hosting-homes/a/important-changes-to-house-rules-21": "Important Changes To House Rules 21",
+        "https://www.airbnb.com/resources/hosting-homes/a/introducing-the-all-new-community-center-773": "The all-new Community Center",
+        "https://www.airbnb.com/resources/hosting-homes/a/exploring-your-hosting-tools-738": "Exploring your hosting tools",
+        "https://www.airbnb.com/resources/hosting-homes/a/help-your-listing-stand-out-658": "Helping your listing stand out",
+        "https://www.airbnb.com/resources/hosting-homes/a/manage-your-calendar-654": "Managing your calendar",
+        "https://www.airbnb.com/resources/hosting-homes/a/how-to-welcome-your-first-airbnb-guests-32": "Welcoming your first guests",
+        "https://www.airbnb.com/resources/hosting-homes/a/prepare-your-space-656": "Preparing your space",
+        "https://www.airbnb.com/resources/hosting-homes/a/refresh-your-listing-661": "Refreshing your listing",
+        "https://www.airbnb.com/resources/hosting-homes/a/use-guest-reviews-to-improve-665": "Using guest reviews to improve",
+        "https://www.airbnb.com/resources/hosting-homes/a/review-your-price-655": "Reviewing your price",
+        "https://www.airbnb.com/resources/hosting-homes/a/getting-the-most-out-of-the-messages-tab-678": "Messaging with guests",
+        "https://www.airbnb.com/resources/hosting-homes/a/the-right-price-for-every-season-766": "Setting seasonal prices",
+        "https://www.airbnb.com/resources/hosting-homes/a/updating-your-availability-708": "Updating your availability",
+        "https://www.airbnb.com/resources/hosting-homes/a/simplifying-service-fees-on-airbnb-771": "Simplifying service fees on Airbnb",
+        "https://www.airbnb.com/resources/hosting-homes/a/turning-high-demand-into-high-earnings-703": "Turning demand into earnings",
+        "https://www.airbnb.com/resources/hosting-homes/a/make-check-in-and-checkout-easy-662": "Simplifying check-in & checkout",
+        "https://www.airbnb.com/resources/hosting-homes/a/reservations-redesigned-765": "Reservations, redesigned",
+        "https://www.airbnb.com/resources/hosting-homes/a/all-new-insights-to-help-your-listing-stand-out-768": "Introducing personalized insights",
+        "https://www.airbnb.com/resources/hosting-homes/a/understanding-pricing-on-airbnb-370": "Pricing competitively",
+        "https://www.airbnb.com/resources/hosting-homes/a/understanding-instant-book-17": "Understanding Instant Book",
+        "https://www.airbnb.com/resources/hosting-homes/a/control-when-and-how-you-host-290": "Control when and how you host",
+        "https://www.airbnb.com/resources/hosting-homes/a/tips-for-avoiding-preventable-cancellations-373": "Avoiding cancellations",
+        "https://www.airbnb.com/resources/hosting-homes/a/how-aircover-for-hosts-works-469": "How AirCover for Hosts works",
+        "https://www.airbnb.com/resources/hosting-homes/a/how-airbnb-protects-hosts-5": "How Airbnb protects hosts",
+        "https://www.airbnb.com/resources/hosting-homes/a/important-safety-guidelines-for-hosts-459": "Safety guidelines for hosts"
+      },
+      "hash": "afb17ac2b8ba2be497d66ba64c60895c27c2ac39e59fcbb10223d16913a5803b"
+    },
+    "booking-partner": {
+      "name": "Booking Partner Hub (oficial)",
+      "url": "https://partner.booking.com/en-us",
+      "status": 202,
+      "seen": {},
+      "hash": null,
+      "unavailable": true
+    },
+    "booking-join": {
+      "name": "Booking - pagina oficial para parceiros",
+      "url": "https://join.booking.com/",
+      "status": 200,
+      "hash": "c12b223b168c6998f58a449dd7dfbf1e8249a4e37f2c48b0bcbbc85f1477e988",
+      "seen": {}
+    }
+  },
+  "articles": []
+}
