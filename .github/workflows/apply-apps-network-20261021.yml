@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Interligar rede de apps
+      - name: Interligar rede de apps (sem ASF, ancora corrigida, novidades)
         run: python scripts/fix_apps_network_20261021.py
       - name: Commit and push page changes
         id: commit
