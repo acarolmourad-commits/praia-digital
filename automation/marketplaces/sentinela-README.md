@@ -11,12 +11,12 @@ Agente autonomo de monitoramento de novidades oficiais do Airbnb e da Booking.co
   - Booking Partner Hub: https://partner.booking.com/en-us (pode retornar 202/protecao anti-robo; nesse caso registra indisponivel e NAO publica nada)
   - Booking (parceiros): https://join.booking.com/
 - Estado (itens ja vistos, hashes e posts) fica em `automation/marketplaces/sentinela-estado.json`.
-- Cada execucao gera `sentinela-report.md` no ambiente do workflow; quando ha novidade, ele vira o corpo da Issue de acompanhamento.
+- Cada execucao gera `automation/marketplaces/sentinela-ultimo-relatorio.md` no ambiente do workflow; quando ha novidade, ele vira o corpo da Issue de acompanhamento.
 
 ## Publicacao automatica (com revisao editorial fixa)
 Quando surge item novo em fonte oficial, o agente:
-1. Gera um post em `novidades-airbnb-booking/novidade-*.html` usando SOMENTE a manchete e o link oficiais.
-2. Atualiza `novidades-airbnb-booking/index.html`.
+1. Gera um post em `blog/novidades-*.html` usando SOMENTE a manchete e o link oficiais.
+2. Atualiza o hub `blog/novidades-airbnb-booking.html`.
 3. Commita no `main`, dispara o deploy do GitHub Pages e abre uma Issue de acompanhamento.
 
 O modelo do post e fixo e assertivo: **O que mudou -> O que isso significa para anfitrioes -> O que fazer agora -> Fonte oficial**.
@@ -25,4 +25,4 @@ O agente nunca inventa funcionalidade que nao esteja na manchete/fonte oficial. 
 ## Operacao
 - Para pausar: desative o workflow em Actions > Sentinela Airbnb + Booking.
 - Para forcar uma verificacao: Actions > Sentinela Airbnb + Booking > Run workflow.
-- Posts publicados: https://praia.digital/novidades-airbnb-booking/
+- Posts publicados: https://praia.digital/blog/novidades-airbnb-booking.html

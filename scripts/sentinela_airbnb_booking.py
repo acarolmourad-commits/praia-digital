@@ -9,8 +9,8 @@ from datetime import datetime, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATE = os.path.join(ROOT, "automation", "marketplaces", "sentinela-estado.json")
-OUTDIR = os.path.join(ROOT, "novidades-airbnb-booking")
-REPORT = os.path.join(ROOT, "automation", "marketplaces", "sentinela-report.md")
+OUTDIR = os.path.join(ROOT, "blog")
+REPORT = os.path.join(ROOT, "automation", "marketplaces", "sentinela-ultimo-relatorio.md")
 
 SOURCES = [
     {"id": "airbnb-releases", "platform": "Airbnb", "name": "Airbnb Product Releases (oficial)",
@@ -86,7 +86,7 @@ a{{color:#0e7c7b}} footer{{background:#081c30;color:#9db4c6;padding:26px 0;font-
 </style>
 </head>
 <body>
-<header><div class="wrap"><a href="/">Praia<strong>Digital</strong></a> · <a href="/novidades-airbnb-booking/">Novidades Airbnb + Booking</a></div></header>
+<header><div class="wrap"><a href="/">Praia<strong>Digital</strong></a> · <a href="/blog/novidades-airbnb-booking.html">Novidades Airbnb + Booking</a></div></header>
 <main><div class="wrap">
 <p class="tag">{esc(platform)} · Detectado em {date_str}</p>
 <h1>{esc(title)}</h1>
@@ -111,15 +111,15 @@ a{{color:#0e7c7b}} footer{{background:#081c30;color:#9db4c6;padding:26px 0;font-
 def index_html(articles):
     rows = ""
     for a in reversed(articles):
-        rows += f'<li><span class="tag">{esc(a["platform"])}</span> <a href="/novidades-airbnb-booking/{esc(a["file"])}">{esc(a["title"])}</a> <small>({esc(a["date"])})</small></li>'
+        rows += f'<li><span class="tag">{esc(a["platform"])}</span> <a href="/blog/{esc(a["file"])}">{esc(a["title"])}</a> <small>({esc(a["date"])})</small></li>'
     if not rows:
-        rows = "<li>Nenhuma novidade publicada ainda. A Sentinela ja esta monitorando as fontes oficiais.</li>"
+        rows = "<li>O Sentinela está ativo e aguardando a próxima novidade oficial das plataformas.</li>"
     return f"""<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Novidades Airbnb e Booking — Praia Digital</title>
+<title>Novidades Airbnb e Booking | Praia Digital</title>
 <meta name="description" content="Acompanhe novidades oficiais do Airbnb e da Booking.com para anfitrioes de temporada, detectadas a cada 6 horas pela Sentinela Praia Digital.">
 <style>body{{font-family:system-ui,sans-serif;color:#0a2540;line-height:1.65;margin:0}}.wrap{{max-width:860px;margin:0 auto;padding:0 20px}}header{{background:#0a2540;color:#fff;padding:18px 0}}header a{{color:#7fd1cf}}main{{padding:36px 0 56px}}.tag{{background:#eef6f6;color:#0a5f5e;padding:3px 10px;border-radius:99px;font-size:.75rem;font-weight:700}}a{{color:#0e7c7b}}li{{margin:12px 0}}</style>
 </head>
@@ -145,6 +145,7 @@ def main():
             state = json.load(f)
     os.makedirs(OUTDIR, exist_ok=True)
     new_posts = []
+    baseline_created = not os.path.exists(STATE)
     report = []
     for src in SOURCES:
         prev = state["sources"].get(src["id"], {})
@@ -164,11 +165,12 @@ def main():
             entry["seen"] = {**seen, **items}
             entry["hash"] = page_hash(body)
             if not seen:
+                baseline_created = True
                 report.append(f"- {src['name']}: baseline criado com {len(items)} itens; nenhum post.")
             elif new_items:
                 new_items = new_items[:5]
                 title = f"Novidades {src['platform']}: {new_items[0][1]}"
-                fname = f"novidade-{stamp}-{src['id']}.html"
+                fname = f"novidades-{stamp}-{src['id']}.html"
                 with open(os.path.join(OUTDIR, fname), "w", encoding="utf-8") as f:
                     f.write(article_html(src["platform"], title, date_str, new_items, src, False))
                 state.setdefault("articles", []).append({"date": date_str, "platform": src["platform"], "title": title, "file": fname, "source": src["url"]})
@@ -182,20 +184,21 @@ def main():
             entry["seen"] = prev.get("seen", {})
             if prev.get("hash") and prev["hash"] != h:
                 title = f"Atualizacao detectada: {src['name']}"
-                fname = f"novidade-{stamp}-{src['id']}.html"
+                fname = f"novidades-{stamp}-{src['id']}.html"
                 with open(os.path.join(OUTDIR, fname), "w", encoding="utf-8") as f:
                     f.write(article_html(src["platform"], title, date_str, [], src, True))
                 state.setdefault("articles", []).append({"date": date_str, "platform": src["platform"], "title": title, "file": fname, "source": src["url"]})
                 new_posts.append(title)
                 report.append(f"- {src['name']}: alteracao de pagina detectada -> post {fname}")
             elif not prev.get("hash"):
+                baseline_created = True
                 report.append(f"- {src['name']}: baseline de hash criado; nenhum post.")
             else:
                 report.append(f"- {src['name']}: sem alteracao.")
         state["sources"][src["id"]] = entry
     with open(STATE, "w", encoding="utf-8") as f:
         json.dump(state, f, ensure_ascii=False, indent=2)
-    with open(os.path.join(OUTDIR, "index.html"), "w", encoding="utf-8") as f:
+    with open(os.path.join(OUTDIR, "novidades-airbnb-booking.html"), "w", encoding="utf-8") as f:
         f.write(index_html(state.get("articles", [])))
     with open(REPORT, "w", encoding="utf-8") as f:
         f.write("# Sentinela Airbnb + Booking\n\n" + f"Verificacao: {date_str}\n\n" + "\n".join(report) + "\n")
@@ -204,6 +207,8 @@ def main():
         with open(out, "a", encoding="utf-8") as f:
             f.write(f"has_new={'true' if new_posts else 'false'}\n")
             f.write(f"new_posts={len(new_posts)}\n")
+            f.write(f"published_count={len(new_posts)}\n")
+            f.write(f"changed={'true' if (new_posts or baseline_created) else 'false'}\n")
     print("\n".join(report))
     print(f"NEW_POSTS={len(new_posts)}")
 
