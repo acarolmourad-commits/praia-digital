@@ -103,7 +103,7 @@ a{{color:#0e7c7b}} footer{{background:#081c30;color:#9db4c6;padding:26px 0;font-
 </ol>
 <p><em>Fonte oficial monitorada: <a href="{esc(src['url'])}">{esc(src['name'])}</a>. Post gerado automaticamente pela Sentinela Praia Digital a partir de fonte oficial, com modelo editorial fixo de verificacao.</em></p>
 </div></main>
-<footer><div class="wrap">Praia Digital — <a href="/anfitrioes/central-airbnb.html">Central Airbnb</a> · <a href="/anfitrioes/central-booking.html">Central Booking.com</a> · <a href="/">Home</a></div></footer>
+<footer><div class="wrap">Praia Digital — <a href="/anfitrioes/central-airbnb.html">Central Airbnb</a> · <a href="/anfitrioes/central-booking.html">Central Booking.com</a> · <a href="/apps/">Apps gratuitos</a> · <a href="/servicos/anuncios-airbnb-booking.html">Anuncios Airbnb/Booking</a> · <a href="/">Home</a></div></footer>
 </body>
 </html>
 """
@@ -130,7 +130,9 @@ def index_html(articles):
 <p>Posts automaticos, a partir de <strong>fontes oficiais</strong>, detectados a cada 6 horas pela Sentinela Praia Digital. Cada post traz: o que mudou, o que significa para anfitrioes e o que fazer agora.</p>
 <ul>{rows}</ul>
 <p>Veja tambem: <a href="/#central-airbnb-booking">Central Airbnb + Booking</a> · <a href="/anfitrioes/central-airbnb.html">Central Airbnb</a> · <a href="/anfitrioes/central-booking.html">Central Booking.com</a></p>
+<section class="card"><h2 style="margin-top:0">Continue explorando a Praia Digital</h2><p>Ferramentas gratuitas e servicos para anfitrioes e proprietarios no litoral:</p><ul><li><a href="/#central-airbnb-booking">Central Airbnb + Booking</a></li><li><a href="/apps/">Apps gratuitos Praia Digital</a></li><li><a href="/apps/simulador-roi-temporada/">Simulador de ROI de temporada</a></li><li><a href="/servicos/anuncios-airbnb-booking.html">Criacao e edicao de anuncios Airbnb e Booking</a></li></ul></section>
 </div></main>
+<footer><div class="wrap">Praia Digital — <a href="/">Home</a> · <a href="/apps/">Apps</a> · <a href="/#central-airbnb-booking">Central Airbnb + Booking</a></div></footer>
 </body>
 </html>
 """
