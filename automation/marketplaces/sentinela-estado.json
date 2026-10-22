@@ -45,9 +45,10 @@
         "https://news.airbnb.com/fall-beats-summer-as-the-top-season-for-weekend-trips": "Fall Beats Summer As The Top Season For Weekend Trips",
         "https://news.airbnb.com/airbnb-org-offers-free-emergency-housing-to-first-responders-after-the-earthquake-in-colombia": "Airbnb Org Offers Free Emergency Housing To First Responders After The Earthquake In Colombia",
         "https://news.airbnb.com/airbnb-q2-2026-financial-results": "Airbnb Q2 2026 Financial Results",
-        "https://news.airbnb.com/what-makes-airbnb-airbnb": "What Makes Airbnb Airbnb"
+        "https://news.airbnb.com/what-makes-airbnb-airbnb": "What Makes Airbnb Airbnb",
+        "https://news.airbnb.com/introducing-a-new-way-to-book-stays-through-american-express-travel": "Introducing a new way to book stays and unlock benefits through American Express Travel"
       },
-      "hash": "9f0971a27f708e96a23917e50c59144f3f81b8655dc7abd29831229db51c8c25"
+      "hash": "fe310b6ba29142fd3649ff23baefdcf42fdfb26d009f56f14a750951e57ec988"
     },
     "airbnb-resources": {
       "name": "Airbnb Resource Center - Anfitrioes (oficial)",
@@ -106,6 +107,13 @@
       "title": "Novidades Airbnb: New tools to host smarter",
       "file": "novidades-20261021-194712-airbnb-resources.html",
       "source": "https://www.airbnb.com/resources/hosting-homes"
+    },
+    {
+      "date": "2026-10-22 14:31 UTC",
+      "platform": "Airbnb",
+      "title": "Novidades Airbnb: Introducing a new way to book stays and unlock benefits through American Express Travel",
+      "file": "novidades-20261022-143108-airbnb-news.html",
+      "source": "https://news.airbnb.com/"
     }
   ]
 }
