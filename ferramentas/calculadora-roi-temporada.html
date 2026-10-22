@@ -53,6 +53,20 @@
     .mkt-card{background:#ffffff;border:1px solid #e5e7eb;border-radius:14px;padding:18px;text-align:center;border-top:4px solid}
     .mkt-card .big{font-size:30px;font-weight:700}
     .mkt-card small{opacity:.75;display:block;margin-top:6px}
+
+    /* FIX table leak 2026-10-22: tabelas contidas, rolaveis e legiveis */
+    .card,.wrap{min-width:0;max-width:100%}
+    .table-scroll{width:100%;max-width:100%;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;margin-top:12px;border:1px solid #e5e7eb;border-radius:10px;background:#fff}
+    .table-scroll:focus{outline:2px solid #0e7c7b;outline-offset:2px}
+    .table-scroll table{width:100%;min-width:580px;margin-top:0;border-collapse:collapse}
+    .table-scroll.tight table{min-width:460px}
+    .table-scroll th,.table-scroll td{vertical-align:top;overflow-wrap:break-word}
+    @media (max-width:640px){
+      .wrap{padding:20px 14px}
+      .card{padding:14px}
+      .table-scroll th,.table-scroll td{font-size:13px;padding:7px 8px;line-height:1.45}
+      .bar-row{grid-template-columns:108px 1fr 82px;font-size:12px;gap:6px}
+    }
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
@@ -113,12 +127,12 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       <div class="card resultado" id="resultado">
         <h2>Resultado</h2>
         <p>Melhor cenário: <span class="destaque" id="melhor"></span></p>
-        <table>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Tabela com rolagem horizontal se necessario"><table>
           <tr><th>Cenário</th><th>Receita bruta/ano</th><th>Receita líquida/ano</th><th>ROI sobre o imóvel</th><th>Acumulado 3 anos</th></tr>
           <tr id="linha-temporada"><td>Temporada</td><td id="temp-bruta"></td><td id="temp-liquida"></td><td id="temp-roi"></td><td id="temp-3a"></td></tr>
           <tr id="linha-anual"><td>Aluguel anual</td><td id="an-bruta"></td><td id="an-liquida"></td><td id="an-roi"></td><td id="an-3a"></td></tr>
           <tr id="linha-venda"><td>Venda + renda fixa</td><td id="vd-bruta"></td><td id="vd-liquida"></td><td id="vd-roi"></td><td id="vd-3a"></td></tr>
-        </table>
+        </table></div>
         <div id="grafico-cenarios" style="margin-top:20px; display:none">
           <h3 style="margin-bottom:10px;">Comparativo visual (receita líquida/ano)</h3>
           <div class="bar-row"><span>🏖️ Temporada</span><div class="bar-track"><div class="bar-fill" id="bar-temp" style="background:#22d3ee"></div></div><strong id="lbl-temp"></strong></div>
@@ -139,12 +153,12 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
           <div class="mkt-card" style="border-color:#a78bfa"><div class="big" style="color:#a78bfa">R$ 11,2–15,8 mil</div><small>por m² no alto padrão de Praia Grande, que atrai projetos recordes (Secovi-SP, jun/2026)</small></div>
         </div>
         <h3>Preço médio por m² (apartamentos, mediana de anúncios 2026)</h3>
-        <table>
+        <div class="table-scroll tight" tabindex="0" role="region" aria-label="Tabela com rolagem horizontal se necessario"><table>
           <tr><th>Cidade</th><th>Preço/m²</th><th>Leitura para o investidor</th></tr>
           <tr><td>Praia Grande</td><td>R$ 12.000</td><td>Melhor custo-benefício: entrada menor, demanda de temporada forte</td></tr>
           <tr><td>Guarujá</td><td>R$ 15.000</td><td>Intermediário: público de alto poder aquisitivo, diárias altas</td></tr>
           <tr><td>Santos</td><td>R$ 18.000</td><td>Mercado premium: valorização de 9,36% em 12 meses</td></tr>
-        </table>
+        </table></div>
         <p style="opacity:.75; font-size:14px;">Fontes: G1 (01/out/2026), CBN Santos (mar/2026), Boqnews (mai/2026), Secovi-SP (jun/2026), Índice de preço por m² Praia Digital 2026. Valores de anúncios, não de transações.</p>
       </div>
 
@@ -153,7 +167,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         <p class="lead">Use estes números — de anúncios reais de temporada — para calibrar a simulação acima.</p>
 
         <h3 style="margin-top:18px;">Ocupação e receita por cidade (temporada)</h3>
-        <table>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Tabela com rolagem horizontal se necessario"><table>
           <tr><th>Cidade</th><th>Ocupação média</th><th>Diária média (ADR)</th><th>Receita anual média</th><th>Pico</th></tr>
           <tr><td>Ilhabela</td><td>62%</td><td>R$ 950</td><td>R$ 203.000</td><td>Dez–Fev</td></tr>
           <tr><td>São Sebastião</td><td>68%</td><td>R$ 1.080</td><td>R$ 189.000</td><td>Jan–Mar</td></tr>
@@ -163,11 +177,11 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
           <tr><td>Itanhaém</td><td>42%</td><td>R$ 580</td><td>R$ 89.000</td><td>Jan–Fev</td></tr>
           <tr><td>Praia Grande</td><td>45%</td><td>R$ 550</td><td>R$ 82.000</td><td>Jan–Abr</td></tr>
           <tr><td>Mongaguá</td><td>38%</td><td>R$ 480</td><td>R$ 67.000</td><td>Dez–Fev</td></tr>
-        </table>
+        </table></div>
         <p style="margin-top:8px; opacity:.8; font-size:.9rem;">Média do litoral paulista: <strong>58,7% de ocupação</strong> e ADR de <strong>R$ 890</strong> (Brasil: 45,4% e R$ 650). Anúncios ativos monitorados: 8.179.</p>
 
         <h3 style="margin-top:18px;">Sazonalidade (ocupação × diária por mês)</h3>
-        <table>
+        <div class="table-scroll tight" tabindex="0" role="region" aria-label="Tabela com rolagem horizontal se necessario"><table>
           <tr><th>Mês</th><th>Ocupação média</th><th>Diária média</th></tr>
           <tr><td>Janeiro</td><td>72%</td><td>R$ 1.150</td></tr>
           <tr><td>Fevereiro</td><td>68%</td><td>R$ 1.090</td></tr>
@@ -178,7 +192,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
           <tr><td>Abril</td><td>38%</td><td>R$ 620</td></tr>
           <tr><td>Agosto</td><td>35%</td><td>R$ 550</td></tr>
           <tr><td>Setembro</td><td>32%</td><td>R$ 500</td></tr>
-        </table>
+        </table></div>
 
         <h3 style="margin-top:18px;">Benchmark de renda fixa</h3>
         <p>Selic em <strong>13,75% ao ano</strong> (Banco Central do Brasil, série temporal 432, consulta em out/2026). É o parâmetro usado no cenário "venda + renda fixa" — por isso atualizamos o campo "Rendimento de renda fixa" para <strong>13,75%</strong>.</p>
@@ -198,13 +212,13 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         </ul>
 
         <h3 style="margin-top:18px;">Custos reais das plataformas de temporada</h3>
-        <table>
+        <div class="table-scroll tight" tabindex="0" role="region" aria-label="Tabela com rolagem horizontal se necessario"><table>
           <tr><th>Plataforma</th><th>Comissão</th><th>Observação</th></tr>
           <tr><td>Airbnb (taxa dividida)</td><td>3% do anfitrião + ~14,2% do hóspede</td><td>Modelo tradicional</td></tr>
           <tr><td>Airbnb (taxa única)</td><td>15,5% do anfitrião</td><td>Obrigatória para quem usa gerenciador (PMS) desde out/2026</td></tr>
           <tr><td>Booking.com</td><td>15% a 25%</td><td>Varia por região e plano de visibilidade</td></tr>
           <tr><td>TemporadaLivre / Vrbo</td><td>~8% a 12% + anuidade opcional</td><td>Alternativa para reduzir custo por reserva</td></tr>
-        </table>
+        </table></div>
         <p style="margin-top:8px; opacity:.8; font-size:.9rem;">Some a isso a <strong>taxa de administração</strong> (campo acima — média de mercado: 15% a 25% do faturamento bruto) e custos de limpeza, lavanderia e reposição (tipicamente R$ 120–R$ 250 por estadia).</p>
 
         <h3 style="margin-top:18px;">Ocupação real — litoral de SP (2026)</h3>
@@ -215,7 +229,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         </ul>
 
         <h3 style="margin-top:18px;">Quanto custa operar na temporada (valores de mercado, 2026)</h3>
-        <table>
+        <div class="table-scroll tight" tabindex="0" role="region" aria-label="Tabela com rolagem horizontal se necessario"><table>
           <tr><th>Item</th><th>Custo típico</th><th>Periodicidade</th></tr>
           <tr><td>Limpeza profissional por estadia</td><td>R$ 120 – R$ 250</td><td>Por reserva</td></tr>
           <tr><td>Enxoval (lavanderia/ressuprimento)</td><td>R$ 40 – R$ 90</td><td>Por reserva</td></tr>
@@ -223,11 +237,11 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
           <tr><td>IPTU (apto 2 dorm., Baixada Santista)</td><td>R$ 1.200 – R$ 3.600</td><td>Anual</td></tr>
           <tr><td>Energia + internet + streaming</td><td>R$ 250 – R$ 450</td><td>Mensal</td></tr>
           <tr><td>Gestão/administração profissional</td><td>15% – 25% do faturamento</td><td>Mensal</td></tr>
-        </table>
+        </table></div>
         <p style="margin-top:8px; opacity:.8; font-size:.9rem;">💡 Os campos <strong>Limpeza por estadia</strong> e <strong>Estadia média</strong> acima já descontam esse custo automaticamente da simulação — ajuste com os valores do seu condomínio.</p>
 
         <h3 style="margin-top:18px;">Calendário da alta temporada 2026/2027</h3>
-        <table>
+        <div class="table-scroll tight" tabindex="0" role="region" aria-label="Tabela com rolagem horizontal se necessario"><table>
           <tr><th>Período</th><th>Data</th><th>Demanda esperada</th></tr>
           <tr><td>Feriado de Finados</td><td>02/nov/2026</td><td>Alta (feriadão)</td></tr>
           <tr><td>Proclamação da República</td><td>15/nov/2026 (domingo)</td><td>Média</td></tr>
@@ -235,7 +249,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
           <tr><td>Réveillon</td><td>31/dez/2026 – 01/jan/2027</td><td>Pico do ano — diárias até 3× a média</td></tr>
           <tr><td>Férias de janeiro</td><td>todo jan/2027</td><td>Ocupação mais alta do ano (~72% média histórica)</td></tr>
           <tr><td>Carnaval 2027</td><td>06 a 09/fev/2027 (terça: 09/02)</td><td>Pico — diárias 2× a 3× a média</td></tr>
-        </table>
+        </table></div>
 
         <p style="margin-top:14px; font-size:.85rem; opacity:.75;">Fontes: Banco Central do Brasil (comunicado Copom 16/09/2026), Airbnb/Booking (tabelas oficiais de comissão 2026), ZeloHost Índice 2026, GuestFavorites (jul/2026), calendário oficial de feriados. Receita Federal (tributação).</p>
       </div>
