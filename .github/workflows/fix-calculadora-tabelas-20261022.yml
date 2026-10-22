@@ -1,0 +1,16 @@
+name: Fix Calculadora Tabelas 2026-10-22 (one-shot)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  apply:
+    if: ${{ !github.event.repository.fork }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Corrigir tabelas da calculadora ROI
+        run: python scripts/patch_calculadora_tabelas_20261022.py
