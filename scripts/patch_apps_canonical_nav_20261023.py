@@ -4,6 +4,7 @@
 Idempotente. Altera apenas:
 - partials/header.html: /apps/<slug>/index.html -> /apps/<slug>/ (3 links da navegacao compartilhada injetada no deploy)
 - apps/index.html: https://praia.digital/apps/index.html -> https://praia.digital/apps/ (canonical JSON-LD + og:url)
+- scripts/validate_render_deploy.py: modo PR so aceita refs/pull/N/merge (remove atalho branch == HEAD que fazia test_pr_mode_is_validation_only falhar)
 """
 import pathlib
 import re
@@ -39,10 +40,16 @@ def canonical(text):
     return text.replace(old, "https://praia.digital/apps/"), text.count(old)
 
 
+def validator_fix(text):
+    old = ' or branch == "HEAD"'
+    return text.replace(old, ""), text.count(old)
+
+
 def main():
     total = 0
     total += patch("partials/header.html", [app_links])
     total += patch("apps/index.html", [canonical, app_links])
+    total += patch("scripts/validate_render_deploy.py", [validator_fix])
     print(f"TOTAL: {total}")
     return 0
 
