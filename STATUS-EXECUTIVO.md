@@ -1,35 +1,37 @@
 # Status Executivo — Praia Digital
-_Atualizado: 2026-07-07_
+_Atualizado: 2026-10-23_
 
-## 1. Estrutura proptech
-- Estratégia, marca, modelo de monetização, funil de vendas, SEO, marketing, redes sociais e plano para investidores: ✅ `docs/startup-proptech/estrategia-proptech.md`
-- Roteiro de 7 dias de vídeo: ✅ `marketing/roteiro-video-diario-7dias-2026.html`
-- Newsletter semanal: ✅ `newsletter/assinatura.html` e `newsletter/edicao-001.html`
-- Plano de assinatura para profissionais: ✅ `assets/planos-assinatura.html`
+## Escopo
+- Somente Praia Digital nesta frente. Sem CRECI, sem Agilize, sem Shopee e sem ASF.
+- Nunca divulgar precos ou informacoes confidenciais em conteudo publico.
 
-## 2. Conteúdo e imóveis
-- Imóveis publicados: 216
-- Artigos/blog únicos: 331
-- Regra de unicidade: checagem de títulos antes do deploy
+## Site e rede de apps
+- Site: https://praia.digital/
+- Hub de apps: https://praia.digital/apps/ (13 apps)
+- Apps: alugar-ou-comprar, calculadora-consorcio, calculadora-financiamento, calculadora-precificacao-shopee, calculadora-valorizacao, checklist-vistoria, comparador-cidades, custo-de-compra, planejador-entrada, renda-para-financiar, simulador-roi-temporada, temporada-ou-anual, valor-imovel.
+- Home e /apps/ interligados desde 2026-10-21.
 
-## 3. Serviços de IA
-- Recomendação automática: ✅ `ferramentas/recomendacao-imoveis.html`
-- Avaliação de preço: ✅ `ferramentas/avaliacao-preco.html`
-- Assistente virtual: ✅ `ferramentas/assistente-virtual.html`
-- Geração de descrições: ✅ `ferramentas/geracao-descricoes.html`
+## Conteudo GSC
+- Lotes 1 e 2: 10 artigos publicados a partir do Search Console (25/07 a 20/10/2026, 799 impressoes, 11 cliques na analise).
+- Lote 2 (2026-10-23): inventario de imovel, marketing digital para imobiliarias, rescisao de temporada, comprar com FGTS, Enseada ou Pitangueiras.
+- Links internos de 5 artigos antigos para os 5 do lote 2 publicados e verificados ao vivo (commits 3818faa e 8b6bb44; runs 39885748293 e 39885778058 success).
+- Monitorar GSC dos 10 artigos em 14-28 dias (aprox. 06/11 a 20/11/2026) antes de lote 3.
 
-## 4. Aquisição e conversão
-- Base de leads: 600 imobiliárias/construtoras do litoral paulista
-- Templates de prospecção: 84
-- Automação diária: `scripts/executar-automacao-diaria.bat`
-- Follow-ups: 3 e 7 dias prontos por lead
+## Operacao
+- Sentinela Airbnb + Booking ativa, com hub https://praia.digital/blog/novidades-airbnb-booking.html e issues #58 e #60.
+- Calculadora ROI de temporada: tabelas corrigidas e verificadas ao vivo em 2026-10-22.
+- Issues abertas: #34 Site Inspector (12.702 paginas, 3.008 links relatados, requer triagem de falsos positivos) e #13 DNS www (depende de CNAME no Cloudflare, fora do GitHub).
 
-## 5. Métricas
-- Total de páginas públicas publicadas em produção
-- Conteúdo novo garantido como único vs base existente
-- Pipeline de prospecção ativo
+## Aquisicao (sem precos)
+- Outreach Airbnb/Booking de 21/10 para 5 imobiliarias; follow-up somente a partir de 28/10 e apenas para quem nao responder.
+- Familia Imoveis: proximo contato somente a partir de 26/10. Tome: nao repetir (ja teve follow-up unico). ImoBert: nao enviar.
+- 23/10: resposta a Imoveis Global/Kenlo (XML externo com 404, sem credenciais) e follow-up a Jurandir (calculadora de ocupacao, Guaruja). HubSpot atualizado sem duplicar (contato 253810446094).
 
-## 6. Próximos passos recomendados
-- Enviar lote 200+366 hoje
-- Rodar automação diária de imóveis
-- Publicar mais 3 artigos SEO na semana
+## Checkpoints
+- Lote 2: Supermemory 8mo8DYKPCSYe9p41TGUCHA; Mem0 89fe0497-1041-4316-8d49-9656a2668a18.
+- Links internos e melhorias: ver checkpoint praia-checkpoint-20261023-melhorias-v1 no Supermemory/Mem0 e Notion Controle executivo 23/10/2026.
+
+## Proximos passos
+1. Monitorar respostas de Kenlo e Jurandir; nao enviar novos lotes sem lista nominal aprovada.
+2. Triar a issue #34 separando links realmente quebrados de falsos positivos de template.
+3. Reavaliar GSC dos lotes 1 e 2 na janela 06/11 a 20/11/2026.

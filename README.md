@@ -50,3 +50,17 @@ Este repositório publica o site estático da Praia Digital (GitHub Pages, branc
 Alterações devem entrar por branch e pull request, com os workflows de validação verdes antes do merge.
 
 Problemas conhecidos e sugestões: https://github.com/acarolmourad-commits/praia-digital/issues
+
+## Conteudo GSC - lotes 1 e 2 (2026-10)
+
+Artigos do lote 2, com links internos de artigos antigos verificados ao vivo:
+
+- https://praia.digital/blog/inventario-imovel-litoral-passo-a-passo-custos-prazo.html
+- https://praia.digital/blog/marketing-digital-imobiliarias-litoral-plano-30-dias.html
+- https://praia.digital/blog/rescisao-contrato-aluguel-temporada-multa-distrato.html
+- https://praia.digital/blog/comprar-imovel-litoral-com-fgts-regras.html
+- https://praia.digital/blog/enseada-ou-pitangueiras-guaruja-onde-ficar-comprar.html
+
+Hub de novidades Airbnb/Booking: https://praia.digital/blog/novidades-airbnb-booking.html
+
+Status executivo atualizado: STATUS-EXECUTIVO.md
