@@ -56,3 +56,6 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+
+# Verificacao pos-patch na branch: 0 residuos /apps/.../index.html em
+# partials/header.html e apps/index.html; validator sem atalho HEAD.
