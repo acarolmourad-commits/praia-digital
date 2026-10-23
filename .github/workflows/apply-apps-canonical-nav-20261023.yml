@@ -1,0 +1,40 @@
+name: Apply apps canonical nav 2026-10-23 (one-shot)
+
+on:
+  push:
+    branches: ["fix/apps-canonical-nav-20261023"]
+    paths:
+      - "scripts/patch_apps_canonical_nav_20261023.py"
+      - ".github/workflows/apply-apps-canonical-nav-20261023.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: ${{ !github.event.repository.fork }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Padronizar links canonicos /apps/
+        run: python scripts/patch_apps_canonical_nav_20261023.py
+      - name: Commit and push page changes
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add partials/header.html apps/index.html
+          if git diff --cached --quiet; then
+            echo "committed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes to commit"
+          else
+            git commit -m "fix(apps): padroniza links /apps/<slug>/ e canonical do hub (#34)"
+            git push origin "HEAD:${{ github.ref_name }}"
+            echo "committed=true" >> "$GITHUB_OUTPUT"
+          fi
