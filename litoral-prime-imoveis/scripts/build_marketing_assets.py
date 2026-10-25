@@ -14,7 +14,7 @@ marketing_dir = base / 'marketing'
 marketing_dir.mkdir(parents=True, exist_ok=True)
 
 for city, items in by_city.items():
-    top = sorted(items, key=lambda x: x['score'], reverse=True)[:3]
+    top = sorted(items, key=lambda x: x.get('score', 0), reverse=True)[:3]
     best = top[0]
     city_lower = city.lower()
     

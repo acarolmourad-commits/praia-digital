@@ -86,7 +86,7 @@ for city, items in by_city.items():
     # Bairro pages
     for item in items:
         bairro_slug = item['bairro'].lower().replace(' ', '-')
-        top = sorted(items, key=lambda x: x['score'], reverse=True)[:3]
+        top = sorted(items, key=lambda x: x.get('score', 0), reverse=True)[:3]
         top_links = '\n'.join([f'      <article class="servico-card">\n        <h3>🏠 {p["title"]}</h3>\n        <p>{p["price"]} · {p["area"]} · {p["bedrooms"]} quartos</p>\n        <p>{", ".join(p["tags"])}</p>\n        <a class="btn-whatsapp" href="https://wa.me/5511954346288?text=Olá! Tenho interesse no imóvel: {p["title"]} — {p["city"]}. Pode me enviar mais detalhes?" target="_blank" rel="noopener">Conversar no WhatsApp</a>\n        <a class="btn-secondary" href="/imoveis/{p["slug"]}.html" target="_blank" rel="noopener">Ver detalhes</a>\n      </article>' for p in top])
         
         html = f'''<!DOCTYPE html>

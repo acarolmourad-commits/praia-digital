@@ -1,5 +1,9 @@
+admin
 core
+cursos
+financeiro
+proprietarios
 routers
-static
-templates
+scripts
 tests
+uploads
