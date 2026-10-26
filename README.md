@@ -1,3 +1,4 @@
+
 # Praia Digital
 
 Inteligência imobiliária para o litoral paulista: encontrar, analisar e investir em imóveis com ferramentas gratuitas, conteúdo local e serviços especializados.
@@ -38,6 +39,7 @@ Hub completo: https://praia.digital/apps/
 ## Site e conteúdo
 
 - Imóveis: https://praia.digital/imoveis.html
+- Cases e exemplos de aplicação: https://praia.digital/cases.html
 - Cidades do litoral: https://praia.digital/cidades/index.html
 - Bairros: https://praia.digital/bairros/index.html
 - Blog e novidades Airbnb/Booking: https://praia.digital/blog/novidades-airbnb-booking.html
