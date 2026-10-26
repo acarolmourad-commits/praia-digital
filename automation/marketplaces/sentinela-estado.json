@@ -46,9 +46,10 @@
         "https://news.airbnb.com/airbnb-org-offers-free-emergency-housing-to-first-responders-after-the-earthquake-in-colombia": "Airbnb Org Offers Free Emergency Housing To First Responders After The Earthquake In Colombia",
         "https://news.airbnb.com/airbnb-q2-2026-financial-results": "Airbnb Q2 2026 Financial Results",
         "https://news.airbnb.com/what-makes-airbnb-airbnb": "What Makes Airbnb Airbnb",
-        "https://news.airbnb.com/introducing-a-new-way-to-book-stays-through-american-express-travel": "Introducing a new way to book stays and unlock benefits through American Express Travel"
+        "https://news.airbnb.com/introducing-a-new-way-to-book-stays-through-american-express-travel": "Introducing a new way to book stays and unlock benefits through American Express Travel",
+        "https://news.airbnb.com/cracking-down-on-parties-this-halloween-weekend": "Cracking Down On Parties This Halloween Weekend"
       },
-      "hash": "308a1a7b5f3aa6fa178761eafed4d2505542cbb3be7c16fb0be177b38f8db773"
+      "hash": "f72c294d361a543dd0c7f127cd69b39fd73ff9b3fb8d461ac7004bebf0263b0f"
     },
     "airbnb-resources": {
       "name": "Airbnb Resource Center - Anfitrioes (oficial)",
@@ -113,6 +114,13 @@
       "platform": "Airbnb",
       "title": "Novidades Airbnb: Introducing a new way to book stays and unlock benefits through American Express Travel",
       "file": "novidades-20261022-143108-airbnb-news.html",
+      "source": "https://news.airbnb.com/"
+    },
+    {
+      "date": "2026-10-26 16:07 UTC",
+      "platform": "Airbnb",
+      "title": "Novidades Airbnb: Cracking Down On Parties This Halloween Weekend",
+      "file": "novidades-20261026-160739-airbnb-news.html",
       "source": "https://news.airbnb.com/"
     }
   ]
