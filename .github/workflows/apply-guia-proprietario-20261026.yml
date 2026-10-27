@@ -1,0 +1,27 @@
+name: Apply guia proprietario atualizacao 2026-10-26 (one-shot)
+on:
+  push:
+    branches: ["content/guia-proprietario-atualizacao-20261026"]
+    paths:
+      - "scripts/patch_guia_proprietario_20261026.py"
+      - ".github/workflows/apply-guia-proprietario-20261026.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  apply:
+    if: ${{ !github.event.repository.fork }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/patch_guia_proprietario_20261026.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add proprietarios/guia-do-proprietario.html
+          if git diff --cached --quiet; then echo "No changes"; else git commit -m "content(proprietarios): atualiza Guia do Proprietario com rede de apps e cases"; git push origin "HEAD:${{ github.ref_name }}"; fi
