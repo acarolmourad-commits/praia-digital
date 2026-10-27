@@ -5,7 +5,7 @@ _Atualizado: 2026-10-26_
 ## Escopo
 - Somente Praia Digital nesta frente. Sem CRECI, sem Agilize, sem Shopee e sem ASF.
 - Nunca divulgar precos ou informacoes confidenciais em conteudo publico.
-- 2026-10-26: usuario decidiu nao responder e-mails por ora; envios e follow-ups suspensos ate nova ordem.
+- 2026-10-26: usuario aprovou as acoes propostas; envios somente com confirmacao nominal nesta conversa.
 
 ## Site e rede de apps
 - Site: https://praia.digital/
@@ -27,13 +27,13 @@ _Atualizado: 2026-10-26_
 - GitHub Actions na main: ultimas 20 execucoes em success em 25/10/2026; sem falha atual na main.
 
 ## Aquisicao (sem precos)
-- Outreach Airbnb/Booking de 21/10 para 5 imobiliarias; follow-up somente a partir de 28/10 e apenas para quem nao responder. SUSPENSO em 26/10 por decisao do usuario (nao responder e-mails por ora).
-- Familia Imoveis: proximo contato somente a partir de 26/10. SUSPENSO na mesma decisao.
-- Tome: nao repetir (ja teve follow-up unico). ImoBert: nao enviar.
-- 23/10: resposta a Imoveis Global/Kenlo recebida em 23/10 21:47 UTC; retorno da Praia Digital suspenso em 26/10. HubSpot: bounces definitivos de 18/10 marcados como UNQUALIFIED em 26/10 (aluga@aluga.com.br e suporte@casafy.com.br) — nao reenviar.
+- Outreach Airbnb/Booking de 21/10 para 5 imobiliarias; follow-up somente a partir de 28/10 e apenas para quem nao responder.
+- Familia Imoveis: follow-up unico ja enviado em 19/10 — nao reenviar. Tome: nao repetir (ja teve follow-up unico). ImoBert: nao enviar.
+- 23/10: resposta a Imoveis Global/Kenlo recebida em 23/10 21:47 UTC; rascunho de retorno criado em 26/10, envio confirmado pelo usuario nesta conversa. HubSpot: bounces definitivos de 18/10 marcados como UNQUALIFIED em 26/10 (aluga@aluga.com.br e suporte@casafy.com.br) — nao reenviar.
 
 ## Checkpoints
 - 2026-10-25: praia-checkpoint-20261025-v1 no Supermemory, Mem0 e Notion (Controle executivo 25/10/2026 17:44 UTC).
+- 2026-10-26: praia-checkpoint-20261026-1007-v2 no Supermemory, Mem0 e Notion.
 - Lote 2: Supermemory 8mo8DYKPCSYe9p41TGUCHA; Mem0 89fe0497-1041-4316-8d49-9656a2668a18.
 - Links internos e melhorias: ver checkpoint praia-checkpoint-20261023-melhorias-v1 no Supermemory/Mem0 e Notion Controle executivo 23/10/2026.
 
@@ -41,4 +41,4 @@ _Atualizado: 2026-10-26_
 1. Mergear o PR de interligacao cases/apps apos Actions verdes e verificar https://praia.digital/cases.html ao vivo (200 e links /apps/).
 2. Triar a issue #34 separando links realmente quebrados de falsos positivos de template.
 3. Reavaliar GSC dos lotes 1 e 2 na janela 06/11 a 20/11/2026.
-4. Novos leads (Apollo/Hunter): apresentar lista nominal verificada antes de qualquer envio; envios seguem suspensos ate nova ordem.
+4. Novos leads (Apollo/Hunter): apresentar lista nominal verificada antes de qualquer envio; criar rascunhos personalizados antes do envio.
