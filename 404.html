@@ -6,40 +6,47 @@
   <title>Página não encontrada — Praia Digital</title>
   <meta name="description" content="Página não encontrada na Praia Digital. Volte para o início e encontre imóveis no litoral com IA.">
   <meta name="robots" content="noindex, follow">
-  <link rel="canonical" href="https://praia.digital/404.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Página não encontrada — Praia Digital">
   <meta property="og:description" content="Volte para o início e encontre imóveis no litoral com IA.">
-  <meta property="og:url" content="https://praia.digital/404.html">
   <meta property="og:site_name" content="Praia Digital">
   <link rel="stylesheet" href="https://praia.digital/css/style.css">
-<meta name="theme-color" content="#0b1220">
+  <meta name="theme-color" content="#0077B6">
   <link rel="preconnect" href="https://praia.digital">
-<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <style>
-    :root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial; }
     * { box-sizing: border-box; }
-    body { margin: 0; background: #0b1220; color: #e8ecf1; }
-    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 22px; }
-    a { color: #cfe3ff; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 48px 22px 56px; width: 100%; }
+    .error-code { font-size: clamp(3rem, 10vw, 5.5rem); font-weight: 800; line-height: 1; color: var(--ocean, #0077B6); margin: 0 0 8px; }
+    .wrap h1 { margin: 0 0 12px; color: var(--dark, #023047); }
+    .wrap p { max-width: 640px; }
+    .search { display: flex; gap: 10px; flex-wrap: wrap; margin: 28px 0 18px; }
+    .search input { flex: 1 1 260px; padding: 12px 14px; border: 1px solid #b8c7d1; border-radius: 10px; font: inherit; background: #fff; color: var(--dark, #023047); }
+    .search button, .cta a { display: inline-block; padding: 12px 18px; border-radius: 10px; font: inherit; font-weight: 700; text-decoration: none; cursor: pointer; }
+    .search button { border: 0; background: var(--ocean, #0077B6); color: #fff; }
+    .cta { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+    .cta a { background: var(--ocean, #0077B6); color: #fff; }
+    .cta a.secondary { background: #fff; color: var(--ocean, #0077B6); border: 1.5px solid var(--ocean, #0077B6); }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
-</script>
 </head>
 <body>
 <meta name="pd-shared-nav">
-  <div class="wrap">
-    <h1>404</h1>
-    <p>Página não encontrada.</p>
-    <p><a href="https://praia.digital/index.html">Voltar para a página inicial</a></p>
-  </div>
+  <main class="wrap">
+    <p class="error-code">404</p>
+    <h1>Página não encontrada</h1>
+    <p>O endereço que você acessou pode ter sido movido, removido ou digitado com algum erro. Busque um imóvel ou continue por uma das páginas principais:</p>
+    <form class="search" action="/encontrar-imovel.html" method="get" role="search">
+      <label class="sr-only" for="q404">Buscar imóveis no litoral</label>
+      <input id="q404" name="q" type="search" placeholder="Buscar cidade, bairro ou tipo de imóvel" autocomplete="off">
+      <button type="submit">Buscar</button>
+    </form>
+    <nav class="cta" aria-label="Páginas principais">
+      <a href="/">Página inicial</a>
+      <a class="secondary" href="/imoveis.html">Imóveis</a>
+      <a class="secondary" href="/apps/">Aplicativos gratuitos</a>
+      <a class="secondary" href="/cases.html">Cases e exemplos</a>
+    </nav>
+  </main>
 <meta name="pd-shared-footer">
 <script src="https://praia.digital/js/shared.js?v=2.0"></script>
 </body>
