@@ -47,16 +47,17 @@
         "https://news.airbnb.com/airbnb-q2-2026-financial-results": "Airbnb Q2 2026 Financial Results",
         "https://news.airbnb.com/what-makes-airbnb-airbnb": "What Makes Airbnb Airbnb",
         "https://news.airbnb.com/introducing-a-new-way-to-book-stays-through-american-express-travel": "Introducing a new way to book stays and unlock benefits through American Express Travel",
-        "https://news.airbnb.com/cracking-down-on-parties-this-halloween-weekend": "Cracking Down On Parties This Halloween Weekend"
+        "https://news.airbnb.com/cracking-down-on-parties-this-halloween-weekend": "Cracking Down On Parties This Halloween Weekend",
+        "https://news.airbnb.com/every-home-booked-on-airbnb-helps-house-people-in-crisis": "Starting today, every home booked on Airbnb will help house people in crisis"
       },
-      "hash": "f72c294d361a543dd0c7f127cd69b39fd73ff9b3fb8d461ac7004bebf0263b0f"
+      "hash": "c969ada48c5334fefdc9a674efe8c98b238eeb16927b0fb62673507b0b495c32"
     },
     "airbnb-resources": {
       "name": "Airbnb Resource Center - Anfitrioes (oficial)",
       "url": "https://www.airbnb.com/resources/hosting-homes",
       "status": 200,
       "seen": {
-        "https://www.airbnb.com/resources/hosting-homes/a/important-changes-to-house-rules-21": "Important Changes To House Rules 21",
+        "https://www.airbnb.com/resources/hosting-homes/a/important-changes-to-house-rules-21": "Important changes to house rules",
         "https://www.airbnb.com/resources/hosting-homes/a/introducing-the-all-new-community-center-773": "The all-new Community Center",
         "https://www.airbnb.com/resources/hosting-homes/a/exploring-your-hosting-tools-738": "Exploring your hosting tools",
         "https://www.airbnb.com/resources/hosting-homes/a/help-your-listing-stand-out-658": "Helping your listing stand out",
@@ -81,9 +82,10 @@
         "https://www.airbnb.com/resources/hosting-homes/a/how-aircover-for-hosts-works-469": "How AirCover for Hosts works",
         "https://www.airbnb.com/resources/hosting-homes/a/how-airbnb-protects-hosts-5": "How Airbnb protects hosts",
         "https://www.airbnb.com/resources/hosting-homes/a/important-safety-guidelines-for-hosts-459": "Safety guidelines for hosts",
-        "https://www.airbnb.com/resources/hosting-homes/a/new-tools-to-host-smarter-not-harder-776": "New tools to host smarter"
+        "https://www.airbnb.com/resources/hosting-homes/a/new-tools-to-host-smarter-not-harder-776": "New tools to host smarter",
+        "https://www.airbnb.com/resources/hosting-homes/a/every-stay-supports-free-emergency-housing-778": "Every Stay Supports Free Emergency Housing 778"
       },
-      "hash": "327f6c5125c1f4c2da462b0cc3c2f61da367f6a1bb3db83669edd5f36088e8c9"
+      "hash": "a2897e4c3b3386efc726b9134d38a7f4554bf9bc2a51f75c2108af1b1249e3dc"
     },
     "booking-partner": {
       "name": "Booking Partner Hub (oficial)",
@@ -122,6 +124,20 @@
       "title": "Novidades Airbnb: Cracking Down On Parties This Halloween Weekend",
       "file": "novidades-20261026-160739-airbnb-news.html",
       "source": "https://news.airbnb.com/"
+    },
+    {
+      "date": "2026-10-28 20:16 UTC",
+      "platform": "Airbnb",
+      "title": "Novidades Airbnb: Starting today, every home booked on Airbnb will help house people in crisis",
+      "file": "novidades-20261028-201644-airbnb-news.html",
+      "source": "https://news.airbnb.com/"
+    },
+    {
+      "date": "2026-10-28 20:16 UTC",
+      "platform": "Airbnb",
+      "title": "Novidades Airbnb: Every Stay Supports Free Emergency Housing 778",
+      "file": "novidades-20261028-201644-airbnb-resources.html",
+      "source": "https://www.airbnb.com/resources/hosting-homes"
     }
   ]
 }
