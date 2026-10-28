@@ -193,8 +193,21 @@
     </section>
 
     <section id="imoveis" class="imoveis-section">
-      <h2>Imóveis Disponíveis</h2>
-      <div id="lista-imoveis" class="imoveis-grid">
+      <h2>Imóveis disponíveis</h2>
+      <div class="imoveis-toolbar" role="search" aria-label="Buscar imóveis">
+        <label class="sr-only" for="busca">Buscar por imóvel, cidade ou característica</label>
+        <input id="busca" type="search" placeholder="Busque por cidade, imóvel ou característica..." autocomplete="off">
+        <label class="sr-only" for="tipo-filtro">Finalidade</label>
+        <select id="tipo-filtro" aria-label="Filtrar por finalidade">
+          <option value="">Comprar ou alugar</option>
+        </select>
+        <label class="sr-only" for="cidade-filtro">Cidade</label>
+        <select id="cidade-filtro" aria-label="Filtrar por cidade">
+          <option value="">Todas as cidades</option>
+        </select>
+      </div>
+      <p class="imoveis-helper">Encontre seu próximo imóvel no litoral paulista.</p>
+      <div id="lista-imoveis" class="imoveis-grid" aria-live="polite">
         <!-- Carregado via JS -->
       </div>
     </section>

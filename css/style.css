@@ -435,3 +435,128 @@ footer {
 .booking-cta { display: inline-flex; align-items: center; justify-content: center; padding: 0.7rem 1rem; border-radius: 999px; background: var(--ocean); color: var(--white); font-weight: 700; text-decoration: none; margin-top: 0.5rem; }
 .booking-cta:hover { background: #055c91; }
 .booking-disclosure { font-size: 0.8rem; color: #6b7280; margin-top: 0.6rem; line-height: 1.45; }
+
+
+/* ===== Imóveis: busca, cards e layout responsivo ===== */
+.imoveis-section {
+  width: 100%;
+  margin: 0 auto;
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+  background: rgba(255,255,255,.78);
+  border: 1px solid rgba(2,48,71,.08);
+  border-radius: 24px;
+}
+.imoveis-section > h2 {
+  margin: 0 0 1.25rem;
+  color: var(--dark);
+  font-size: clamp(1.55rem, 3vw, 2.15rem);
+  line-height: 1.2;
+}
+.imoveis-toolbar {
+  display: grid;
+  grid-template-columns: minmax(220px, 2fr) repeat(2, minmax(150px, 1fr));
+  gap: .75rem;
+  padding: 1rem;
+  margin-bottom: .75rem;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(2,48,71,.06);
+}
+.imoveis-toolbar input,
+.imoveis-toolbar select {
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  padding: .75rem .9rem;
+  color: #123047;
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font: inherit;
+}
+.imoveis-toolbar input:focus,
+.imoveis-toolbar select:focus {
+  outline: 3px solid rgba(0,119,182,.2);
+  border-color: var(--ocean);
+}
+.imoveis-helper { margin: 0 0 1rem; color: #64748b; font-size: .92rem; }
+.imoveis-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 1.25rem;
+}
+.property-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(2,48,71,.07);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.property-card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(2,48,71,.13); }
+.property-media { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: #e2e8f0; }
+.property-media img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
+.property-card:hover .property-media img { transform: scale(1.035); }
+.property-info { display: flex; flex: 1; flex-direction: column; align-items: flex-start; gap: .65rem; padding: 1.1rem; }
+.property-title { color: #0f2e43; font-size: 1.08rem; line-height: 1.35; overflow-wrap: anywhere; }
+.property-meta { color: #64748b; font-size: .9rem; line-height: 1.45; }
+.property-price { color: #0077b6; font-size: 1.35rem; font-weight: 800; line-height: 1.25; }
+.btn-whatsapp, .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 44px;
+  margin-top: auto;
+  padding: .7rem .85rem;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 750;
+  line-height: 1.25;
+  transition: background .2s ease, transform .2s ease;
+}
+.btn-whatsapp { color: #fff; background: #16834b; }
+.btn-whatsapp:hover { background: #116c3d; }
+.btn-secondary { margin-top: .15rem; color: #075985; background: #e0f2fe; border: 1px solid #bae6fd; }
+.btn-secondary:hover { background: #ccecff; }
+.imoveis-empty {
+  grid-column: 1 / -1;
+  padding: 2rem 1rem;
+  color: #475569;
+  background: #fff;
+  border: 1px dashed #cbd5e1;
+  border-radius: 14px;
+  text-align: center;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+@media (max-width: 980px) {
+  .imoveis-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .imoveis-toolbar { grid-template-columns: 1fr 1fr; }
+  .imoveis-toolbar input { grid-column: 1 / -1; }
+}
+@media (max-width: 600px) {
+  .imoveis-section { padding: 1rem; border-radius: 16px; }
+  .imoveis-grid { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+  .imoveis-toolbar { grid-template-columns: minmax(0, 1fr); padding: .75rem; }
+  .imoveis-toolbar input { grid-column: auto; }
+  .property-info { padding: 1rem; }
+  .property-title { font-size: 1.02rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .property-card, .property-media img, .btn-whatsapp, .btn-secondary { transition: none; }
+}

@@ -6,7 +6,11 @@
     return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message || '')}`;
   }
 
-  propertyCardTemplate = (p) => `
+  const detailUrl = (p) => p.slug.startsWith('../')
+    ? `${p.slug.slice(3)}.html`
+    : `imoveis/${p.slug}.html`;
+
+  const propertyCardTemplate = (p) => `
     <article class="property-card" itemscope itemtype="https://schema.org/Product">
       <meta itemprop="name" content="${escapeHtml(p.title)}">
       <div class="property-media">
@@ -24,7 +28,7 @@
         <p class="property-meta">${escapeHtml(p.bedrooms)} quartos · ${escapeHtml(p.area)}</p>
         <p class="property-meta">${escapeHtml((p.tags||[]).join(', '))}</p>
         <a class="btn-whatsapp" href="${waLink(`Olá! Tenho interesse no imóvel: ${escapeHtml(p.title)} — ${escapeHtml(p.city)}. Pode me enviar mais detalhes?`)}" target="_blank" rel="noopener">Conversar no WhatsApp</a>
-        <a class="btn-secondary" href="imoveis/${p.slug}.html" target="_blank" rel="noopener">Ver detalhes</a>
+        <a class="btn-secondary" href="${detailUrl(p)}">Ver detalhes</a>
       </div>
     </article>
   `;
@@ -164,6 +168,10 @@
   function render(list) {
     const grid = document.getElementById('lista-imoveis');
     if (!grid) return;
+    if (!list.length) {
+      grid.innerHTML = '<p class="imoveis-empty">Nenhum imóvel encontrado com esses filtros. Tente outra cidade ou característica.</p>';
+      return;
+    }
     grid.innerHTML = list.map((item) => propertyCardTemplate(item)).join('');
   }
 
