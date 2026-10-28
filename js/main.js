@@ -39,7 +39,7 @@
         "city": "Bertioga",
         "type": "Lançamento",
         "price": "R$ 2.500.000",
-        "bedrooms": "4 suítes",
+        "bedrooms": "4",
         "area": "aprox. 200m²",
         "score": 100,
         "image": "",
