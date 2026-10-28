@@ -42,7 +42,7 @@
         "bedrooms": "4",
         "area": "aprox. 200m²",
         "score": 100,
-        "image": "",
+        "image": "https://praia.digital/assets/casas-sao-lourenco/fachada.jpg",
         "tags": ["São Lourenço", "Terreno 180m²", "Piscina", "Sauna", "Espaço gourmet integrado", "Vista para Itaguaré"],
         "description": "Lançamento de casas em São Lourenço, Bertioga. Terreno de 180m² (6 x 30m), aproximadamente 200m² construídos, 4 suítes, piscina, sauna, espaço gourmet integrado e suíte master com vista para a praia de Itaguaré. Parcelamento direto em até 18 meses ou financiamento direto em até 100 meses, sujeito a condições."
       },
