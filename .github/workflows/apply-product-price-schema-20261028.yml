@@ -1,0 +1,40 @@
+name: Apply product price schema fix 2026-10-28 (one-shot)
+
+on:
+  push:
+    branches: ["fix/product-price-schema-20261028"]
+    paths:
+      - "scripts/automation/fix_product_price_schema_20261028.py"
+      - ".github/workflows/apply-product-price-schema-20261028.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: ${{ !github.event.repository.fork }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Corrigir offers.price AggregateOffer e remover Sob consulta
+        run: python scripts/automation/fix_product_price_schema_20261028.py
+      - name: Commit and push page changes
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add imoveis scripts/batch_seo_changes.py scripts/automation/add_listing_schema.py
+          if git diff --cached --quiet; then
+            echo "committed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes to commit"
+          else
+            git commit -m "fix(schema): corrige offers.price AggregateOffer e remove Sob consulta (GSC produto)"
+            git push origin "HEAD:${{ github.ref_name }}"
+            echo "committed=true" >> "$GITHUB_OUTPUT"
+          fi

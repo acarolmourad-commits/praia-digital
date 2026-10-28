@@ -89,8 +89,6 @@ def build_jsonld(slug: str, canonical_url: str, html: str) -> str:
         "url": canonical_url,
         "image": image,
         "availability": "https://schema.org/InStock",
-        "price": "Sob consulta",
-        "priceCurrency": "BRL",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": cidade,

@@ -47,7 +47,7 @@ def extract_price(text: str):
     m = re.search(r'R\$\s*([\d\.]+)', text)
     if m:
         return m.group(1).replace('.', '')
-    return 'Consulte'
+    return ''
 
 def extract_image(text: str, path: Path):
     m = re.search(r'<img[^>]+src=["\'](.*?)["\']', text, re.S|re.I)
@@ -69,8 +69,7 @@ def make_listing(name: str, description: str, url: str, image: str, price: str, 
         'image': image,
         'offers': {
             '@type': 'Offer',
-            'price': price,
-            'priceCurrency': 'BRL',
+            **({'price': price, 'priceCurrency': 'BRL'} if str(price).isdigit() else {}),
             'availability': 'https://schema.org/InStock',
         },
         'provider': {
