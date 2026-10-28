@@ -13,9 +13,7 @@
   const propertyCardTemplate = (p) => `
     <article class="property-card" itemscope itemtype="https://schema.org/Product">
       <meta itemprop="name" content="${escapeHtml(p.title)}">
-      <div class="property-media">
-        <img src="${p.image}" alt="${escapeHtml(p.title)}" loading="lazy" itemprop="image">
-      </div>
+      ${p.image ? `<div class="property-media"><img src="${p.image}" alt="${escapeHtml(p.title)}" loading="lazy" itemprop="image"></div>` : ''}
       <div class="property-info">
         <h3 class="property-title" itemprop="name">${escapeHtml(p.title)} <span style="margin-left:8px;font-size:12px;color:#64748b">#${p.score||0}</span></h3>
         <p class="property-meta">${escapeHtml(p.city)} · ${escapeHtml(p.type)}</p>
