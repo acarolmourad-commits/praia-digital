@@ -1,0 +1,25 @@
+name: SEO metadata and sitemap checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  seo-regressions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Listing schema regression tests
+        run: python3 -m unittest discover -s tests -p 'test_listing_schema.py' -v
+      - name: Sitemap validator regression tests
+        run: python3 -m unittest discover -s tests -p 'test_sitemap_targets.py' -v
+      - name: Validate published sitemap targets
+        run: python3 scripts/validate_sitemap_targets.py
