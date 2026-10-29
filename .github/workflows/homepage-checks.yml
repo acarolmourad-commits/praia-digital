@@ -1,0 +1,62 @@
+name: Homepage conversion journeys
+
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'imoveis.html'
+      - 'encontrar-imovel.html'
+      - 'interesse.html'
+      - 'cases.html'
+      - 'anfitrioes/central-priceplabs.html'
+      - 'js/**'
+      - 'css/**'
+      - 'assets/css/**'
+      - 'partials/**'
+      - 'scripts/build-navigation.py'
+      - 'tests/homepage-browser.cjs'
+      - 'tests/test_property_search.cjs'
+      - 'tests/test_contact_cases.cjs'
+      - 'tests/test_homepage_content.py'
+      - '.github/workflows/homepage-checks.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  homepage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: JavaScript syntax
+        run: |
+          node --check js/shared.js
+          node --check js/main.js
+          node --check js/property-search.js
+          node --check tests/homepage-browser.cjs
+      - name: Focused homepage and conversion regressions
+        run: |
+          python3 -m unittest discover -s tests -p 'test_homepage_content.py' -v
+          node tests/test_property_search.cjs
+          node tests/test_contact_cases.cjs
+      - name: Build the navigation used by deployment
+        run: python3 scripts/build-navigation.py --report "$RUNNER_TEMP/homepage-navigation.json"
+      - name: Browser journey tests (offline, no form submission)
+        env:
+          HOMEPAGE_QA_OUTPUT: ${{ runner.temp }}/homepage-qa
+        run: |
+          npm install --prefix "$RUNNER_TEMP/homepage-browser" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/homepage-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          NODE_PATH="$RUNNER_TEMP/homepage-browser/node_modules" node tests/homepage-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: homepage-browser-evidence
+          path: |
+            ${{ runner.temp }}/homepage-qa
+            ${{ runner.temp }}/homepage-navigation.json
+          if-no-files-found: warn
