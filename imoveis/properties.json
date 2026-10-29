@@ -665,25 +665,6 @@
     "description": "Imóvel aluguel em São Vicente, Sao Vicente. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista."
   },
   {
-    "id": 36,
-    "title": "Venda em Centro - Peruibe",
-    "slug": "peruibe-centro-venda",
-    "city": "Peruibe",
-    "bairro": "Centro",
-    "type": "Venda",
-    "price": "R$ 242.000",
-    "bedrooms": "1",
-    "area": "35m²",
-    "score": 50,
-    "image": "https://images.unsplash.com/photo-1503600000000?auto=format&fit=crop&w=900&q=60",
-    "tags": [
-      "Vista mar",
-      "Varanda gourmet",
-      "Condomínio fechado"
-    ],
-    "description": "Imóvel venda em Centro, Peruibe. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista."
-  },
-  {
     "id": 37,
     "title": "Aluguel em Vila São Paulo - Peruibe",
     "slug": "peruibe-vila-sao-paulo-aluguel",

@@ -66,7 +66,9 @@ for city, bairros in cities.items():
         })
         idx += 1
 
-final_properties = properties[:40]
+# Retired at the owner’s request; filter after generation to preserve other IDs.
+RETIRED_SLUGS = {'peruibe-centro-venda'}
+final_properties = [item for item in properties[:40] if item['slug'] not in RETIRED_SLUGS]
 (imoveis_dir / 'properties.json').write_text(json.dumps(final_properties, ensure_ascii=False, indent=2), encoding='utf-8')
 
 main_js = (base / 'js' / 'main.js').read_text(encoding='utf-8')
