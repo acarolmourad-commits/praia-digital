@@ -61,6 +61,10 @@ h1{font-size:clamp(1.9rem,4.6vw,3.2rem);line-height:1.15;letter-spacing:-.02em;m
 .aud{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:-46px;position:relative;z-index:2}
 .aud a{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px;color:var(--ink);box-shadow:0 8px 30px rgba(10,37,64,.07);transition:transform .15s,border-color .15s;display:block}
 .aud a:hover{transform:translateY(-3px);border-color:var(--sea)}
+.aud-primary{grid-template-columns:repeat(3,1fr);margin-top:-38px}
+.aud-primary a{padding:26px}
+@media(max-width:860px){.aud-primary{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.aud-primary{grid-template-columns:1fr}}
 .aud .t{font-weight:700;font-size:1.05rem;margin-bottom:4px}
 .aud .d{font-size:.88rem;color:var(--ink2)}
 .aud .arrow{float:right;color:var(--sea);font-weight:700}
@@ -426,7 +430,7 @@ footer .cols{grid-template-columns:1fr 1fr}
 <div class="wrap">
   <span class="eyebrow">Inteligência imobiliária · Litoral paulista</span>
   <h1>Encontre, analise e invista em imóveis no litoral com inteligência.</h1>
-  <p class="sub">Dados de mercado, inteligência artificial e imóveis reais para ajudar você a tomar decisões melhores — seja para morar, investir ou trabalhar.</p>
+  <p class="sub">Encontre imóveis no litoral paulista, compare cidades e estime custos e rentabilidade antes de decidir. Informações, ferramentas e serviços reunidos em um só lugar.</p>
   <div class="hero-ctas">
     <a class="btn" href="/imoveis.html">Encontrar imóvel</a>
     <a class="btn" href="/ferramentas/calculadora-roi-temporada.html" style="background:#fff;color:var(--ink)!important">Analisar investimento</a>
@@ -440,16 +444,27 @@ footer .cols{grid-template-columns:1fr 1fr}
 </div>
 
 <div class="wrap">
-<div class="aud">
-  <a href="/imoveis.html"><span class="arrow">→</span><div class="t">Quero comprar</div><div class="d">Imóveis verificados, guias de bairros e comparadores para escolher com segurança.</div></a>
-  <a href="/ferramentas/calculadora-roi-temporada.html"><span class="arrow">→</span><div class="t">Quero investir</div><div class="d">ROI, rental yield, valorização e análise de temporada para decidir com dados.</div></a>
-  <a href="/proprietarios/guia-do-proprietario.html"><span class="arrow">→</span><div class="t">Quero vender ou alugar</div><div class="d">Avalie seu imóvel, anuncie e conte com especialistas para vender ou alugar — inclusive por temporada.</div></a>
-  <a href="/anunciar-temporada.html"><span class="arrow">→</span><div class="t">Quero anunciar temporada</div><div class="d">Cadastre seu imóvel de temporada você mesmo, como no Airbnb — grátis e com verificação.</div></a>
-  <a href="/servicos.html"><span class="arrow">→</span><div class="t">Sou profissional</div><div class="d">IA, automação e geração de leads para corretores e imobiliárias.</div></a>
+<div class="aud aud-primary">
+  <a href="/imoveis.html"><span class="arrow">→</span><div class="t">Encontrar um imóvel</div><div class="d">Explore anúncios, cidades e bairros para encontrar opções alinhadas ao seu objetivo.</div></a>
+  <a href="/apps/comparador-cidades/"><span class="arrow">→</span><div class="t">Analisar um investimento</div><div class="d">Compare localidades, simule custos e estime cenários antes de tomar uma decisão.</div></a>
+  <a href="/meu-imovel.html"><span class="arrow">→</span><div class="t">Anunciar ou valorizar meu imóvel</div><div class="d">Conheça os serviços para venda, locação e temporada, com escopos separados.</div></a>
 </div>
 </div>
 
 <section id="servicos-destaque">
+<div class="wrap">
+  <p class="kicker">Como ajudamos</p>
+  <h2>Escolha o serviço certo para o seu objetivo</h2>
+  <p class="lead">A Praia Digital reúne ferramentas gratuitas e serviços especializados. Confira o escopo e o preço na página de cada serviço antes de contratar.</p>
+  <div class="grid g3">
+    <a class="card" href="/imoveis.html"><span class="tag">Comprar</span><h3>Busca de imóveis</h3><p>Explore o catálogo, mapas, cidades e guias de bairros.</p><p><strong>Explorar imóveis →</strong></p></a>
+    <a class="card" href="/ferramentas/index.html"><span class="tag">Decidir</span><h3>Ferramentas de análise</h3><p>Faça simulações de custos, financiamento e retorno usando suas próprias premissas.</p><p><strong>Ver ferramentas →</strong></p></a>
+    <a class="card" href="/servicos.html"><span class="tag">Contratar</span><h3>Serviços profissionais</h3><p>Compare as opções para anúncio, temporada e apoio a profissionais do mercado.</p><p><strong>Conhecer serviços →</strong></p></a>
+  </div>
+</div>
+</section>
+
+<section id="propaganda-imobiliaria">
 <div class="wrap">
   <p class="kicker">Serviços em destaque</p>
   <h2>Propaganda Imobiliária — anúncio para vender ou alugar (R$ 499)</h2>
@@ -464,21 +479,14 @@ footer .cols{grid-template-columns:1fr 1fr}
 <div class="wrap">
   <p class="kicker">Temporada em um só lugar</p>
   <h2>Central Airbnb + Booking — aluguel de temporada em um só lugar</h2>
-  <p class="lead">Todos os serviços de Airbnb, Booking e marketplaces de temporada da Praia Digital, reunidos nesta seção: criação e gestão de anúncios, centrais do anfitrião, precificação, suporte e ferramentas de rentabilidade. <strong>Produto independente de temporada/hospedagem — não é propaganda para venda ou locação do imóvel.</strong></p>
+  <p class="lead">Recursos para quem trabalha com hospedagem por temporada. A criação de anúncios, a gestão operacional e as ferramentas de precificação são serviços diferentes; confira o escopo de cada opção antes de contratar.</p>
   <div class="grid g3" style="margin-top:16px">
-    <a class="card" href="/servicos/anuncios-airbnb-booking.html"><span class="tag">Temporada · fácil de contratar</span><h3>Anúncios Airbnb e Booking — R$ 499,00</h3><p>Criação ou edição de anúncio de temporada, por anúncio, por plataforma: título e descrição que vendem, fotos organizadas, comodidades completas, calendários sincronizados e precificação inicial. Um anúncio excelente gera mais cliques, mais confiança e mais reservas. Produto independente — não é propaganda de venda ou locação.</p><p><strong>Ver o serviço e pagar →</strong></p></a>
-    <a class="card" href="/servicos/edicao-anuncios-airbnb-booking.html"><span class="tag">Anúncios</span><h3>Edição de anúncios Airbnb e Booking</h3><p>Revisão e melhoria de anúncios já publicados para aumentar visibilidade e conversão em reservas.</p><p><strong>Ver o serviço →</strong></p></a>
-    <a class="card" href="/anfitrioes/central-airbnb.html"><span class="tag">Anfitriões</span><h3>Central Airbnb</h3><p>Recursos, rotinas e orientações para anfitriões que anunciam no Airbnb.</p><p><strong>Abrir a central →</strong></p></a>
-    <a class="card" href="/anfitrioes/central-booking.html"><span class="tag">Anfitriões</span><h3>Central Booking.com</h3><p>Recursos, rotinas e orientações para anfitriões que anunciam na Booking.com.</p><p><strong>Abrir a central →</strong></p></a>
-    <a class="card" href="/anfitrioes/central-priceplabs.html"><span class="tag">Precificação</span><h3>Central PriceLabs</h3><p>Precificação dinâmica e inteligência de tarifas para imóveis de temporada.</p><p><strong>Abrir a central →</strong></p></a>
-    <a class="card" href="/anfitrioes/central-stays.html"><span class="tag">Anfitriões</span><h3>Central Stays</h3><p>Recursos e rotinas para operação de temporada pela Stays.</p><p><strong>Abrir a central →</strong></p></a>
-    <a class="card" href="/anfitrioes/index.html"><span class="tag">Anfitriões</span><h3>Hub do Anfitrião</h3><p>Checklists, diagnósticos e tutoriais para anfitriões de temporada, em um único hub.</p><p><strong>Abrir o hub →</strong></p></a>
-    <a class="card" href="/gestao-marketplaces.html"><span class="tag">Gestão</span><h3>Gestão de marketplaces</h3><p>Gestão de canais de temporada e marketplaces para o seu imóvel.</p><p><strong>Ver o serviço →</strong></p></a>
-    <a class="card" href="/suporte-marketplaces.html"><span class="tag">Suporte</span><h3>Suporte a marketplaces</h3><p>Suporte operacional para anúncios e canais de aluguel de temporada.</p><p><strong>Ver o serviço →</strong></p></a>
-    <a class="card" href="/servicos/gestao-imoveis.html"><span class="tag">Gestão</span><h3>Gestão de imóveis</h3><p>Gestão de imóveis para venda, locação e temporada com apoio da Praia Digital.</p><p><strong>Ver o serviço →</strong></p></a>
-    <a class="card" href="/blog/novidades-airbnb-booking.html"><span class="tag">Novidades</span><h3>Novidades Airbnb e Booking</h3><p>Atualizações oficiais das plataformas acompanhadas a cada 6 horas pelo Sentinela Praia Digital.</p><p><strong>Ver novidades →</strong></p></a>
-    <a class="card" href="/anunciar-temporada.html"><span class="tag">Anuncie</span><h3>Anunciar temporada</h3><p>Cadastre seu imóvel de temporada e comece a receber reservas.</p><p><strong>Anunciar meu imóvel →</strong></p></a>
-    <a class="card" href="/calculadora-rendimento-temporada-2026.html"><span class="tag">Ferramentas</span><h3>Rendimento de temporada</h3><p>Projeção de receita de aluguel por temporada para decidir com dados.</p><p><strong>Calcular rendimento →</strong></p></a>
+    <a class="card" href="/servicos/anuncios-airbnb-booking.html"><span class="tag">Criação de anúncio</span><h3>Anúncios Airbnb e Booking</h3><p>Consulte o escopo, as entregas e o preço atual para criação ou edição por anúncio e plataforma.</p><p><strong>Ver serviço →</strong></p></a>
+    <a class="card" href="/anfitrioes/index.html"><span class="tag">Central do anfitrião</span><h3>Guias e rotinas de temporada</h3><p>Reúna orientações, checklists e recursos para organizar a operação.</p><p><strong>Abrir o hub →</strong></p></a>
+    <a class="card" href="/anfitrioes/central-priceplabs.html"><span class="tag">Precificação</span><h3>Preço e rentabilidade</h3><p>Conheça recursos de precificação dinâmica e simule cenários com suas próprias premissas.</p><p><strong>Ver recursos →</strong></p></a>
+    <a class="card" href="/gestao-marketplaces.html"><span class="tag">Gestão</span><h3>Gestão de marketplaces</h3><p>Entenda as opções de apoio operacional para canais de temporada.</p><p><strong>Ver serviço →</strong></p></a>
+    <a class="card" href="/suporte-marketplaces.html"><span class="tag">Suporte</span><h3>Suporte a marketplaces</h3><p>Consulte o escopo de suporte para anúncios e canais de hospedagem.</p><p><strong>Ver serviço →</strong></p></a>
+    <a class="card" href="/calculadora-rendimento-temporada-2026.html"><span class="tag">Ferramenta</span><h3>Simular rendimento</h3><p>Faça uma projeção com premissas de diária, ocupação e custos — não uma garantia de receita.</p><p><strong>Calcular rendimento →</strong></p></a>
   </div>
   <p style="margin-top:20px">Mais para temporada: <a href="/dados-ocupacao-temporada-litoral-sp-2026.html">Dados de ocupação no litoral de SP</a> · <a href="/apps/temporada-ou-anual/">Temporada ou aluguel anual?</a> · <a href="/servicos/guia-aluguel-temporada.html">Guia de aluguel de temporada</a></p>
 </div>
@@ -522,17 +530,13 @@ footer .cols{grid-template-columns:1fr 1fr}
 <div class="wrap">
   <p class="kicker">Dados de mercado</p>
   <h2>Compare cidades e bairros</h2>
-  <p class="lead">Métricas lado a lado para escolher onde comprar ou investir no litoral.</p>
-  <table class="cmp">
-    <thead><tr><th>Cidade</th><th>Preço/m² (apto)</th></tr></thead>
-    <tbody>
-      <tr><td>Bertioga</td><td data-placeholder="aguardando dado">—</td></tr>
-      <tr><td>Guarujá</td><td>R$ 15.000</td></tr>
-      <tr><td>Santos</td><td>R$ 18.000</td></tr>
-      <tr><td>Praia Grande</td><td>R$ 12.000</td></tr>
-    </tbody>
-  </table>
-  <p class="src">Preço/m² de apartamentos: <a href="/blog/indice-preco-m2-litoral-paulista-tabela-tendencias-2026.html">Índice de preço por m² — Praia Digital, 2026</a> (base: anúncios publicados; mediana por cidade). Demais métricas serão publicadas quando houver dados verificados. <a href="/metodologia.html">Como calculamos nossos dados →</a></p>
+  <p class="lead">Compare as localidades e consulte a metodologia antes de usar indicadores de mercado para tomar uma decisão.</p>
+  <div class="grid g3">
+    <a class="card" href="/apps/comparador-cidades/"><span class="tag">Ferramenta</span><h3>Comparador de cidades</h3><p>Compare localidades com os critérios disponíveis e adapte a análise ao seu objetivo.</p><p><strong>Comparar cidades →</strong></p></a>
+    <a class="card" href="/blog/indice-preco-m2-litoral-paulista-tabela-tendencias-2026.html"><span class="tag">Dados de mercado</span><h3>Índice de preço por m²</h3><p>Consulte o estudo e verifique a data, a amostra e a metodologia informadas na publicação.</p><p><strong>Consultar o índice →</strong></p></a>
+    <a class="card" href="/metodologia.html"><span class="tag">Transparência</span><h3>Como calculamos</h3><p>Entenda as fontes, limitações e critérios usados na interpretação dos dados.</p><p><strong>Ler metodologia →</strong></p></a>
+  </div>
+  <p class="src">Valores de anúncios não equivalem necessariamente a preços de transação. Use estimativas como referência, confira a data e a amostra da fonte e valide os dados antes de decidir.</p>
 </div>
 </section>
 
@@ -540,7 +544,7 @@ footer .cols{grid-template-columns:1fr 1fr}
 <div class="wrap">
   <p class="kicker" style="color:#7fd1cf">Inteligência artificial</p>
   <h2 style="color:#fff">Pergunte ao Praia Digital</h2>
-  <p class="lead">Nossa IA cruza dados de mercado, imóveis e bairros para responder perguntas reais de quem compra, investe ou vende.</p>
+  <p class="lead">Use o assistente para explorar dúvidas sobre imóveis, bairros e investimento. As respostas são apoio informativo: confira fontes e valide números e condições antes de decidir.</p>
   <div class="grid g4">
     <div class="ai-q">"Qual cidade tem melhor relação entre preço e aluguel?"</div>
     <div class="ai-q">"Quanto posso ganhar alugando este apartamento?"</div>
@@ -555,7 +559,7 @@ footer .cols{grid-template-columns:1fr 1fr}
 <div class="wrap">
   <p class="kicker">Apps gratuitos</p>
   <h2>Ferramentas que trabalham por você</h2>
-  <p class="lead">Nossa rede de mini-apps gratuitos para quem compra, investe ou financia imóveis no litoral — sem cadastro, direto no navegador.</p>
+  <p class="lead">Ferramentas de apoio para explorar cenários. Confira os campos, as premissas e os resultados; simulações não substituem avaliação profissional, proposta de crédito ou orientação jurídica.</p>
   <div class="grid g3">
     <a class="card" href="/apps/simulador-roi-temporada/"><h3>Simulador de investimento</h3><p>ROI de temporada com custos e ocupação estimados.</p></a>
     <a class="card" href="/apps/calculadora-financiamento/"><h3>Simulador de financiamento <span class="tag">Novo</span></h3><p>SAC vs. Price: descubra qual sistema pesa menos no seu bolso.</p></a>
@@ -576,7 +580,7 @@ footer .cols{grid-template-columns:1fr 1fr}
 <div class="wrap">
   <p class="kicker">Para empresas</p>
   <h2>Para imobiliárias e corretores</h2>
-  <p class="lead" style="font-size:1.15rem;color:var(--ink);font-weight:600">Atendimento organizado, com escopo e revisão humana.</p>
+  <p class="lead" style="font-size:1.15rem;color:var(--ink);font-weight:600">Soluções com escopo definido, supervisão humana e foco em rotinas imobiliárias.</p>
   <div class="grid g4">
     <a class="card" href="/automacao-imobiliarias.html"><h3>Automação</h3><p>Atendimento, follow-up e rotinas automatizadas.</p></a>
     <a class="card" href="/solucoes/hermes-agents.html"><h3>Agentes autônomos</h3><p>Apoio de IA para rotinas definidas e supervisionadas.</p></a>
@@ -634,10 +638,10 @@ document.getElementById('smartsearch').addEventListener('submit',function(e){
   var params=[];
   for(var i=0;i<cidades.length;i++){if(q.indexOf(cidades[i])>-1){params.push('cidade='+encodeURIComponent(cidades[i]));break}}
   var m=q.match(/(\d)\s*quarto/);if(m)params.push('quartos='+m[1]);
-  m=q.match(/r?\$?\s*([\d.,]+)\s*(mil|milhão|milhoes|milhões|mi)?/);
-  if(m){var v=parseFloat(m[1].replace('.','').replace(',','.'));
+  m=q.match(/(?:r\$\s*|até\s+)([\d.]+(?:,[\d]+)?)\s*(mil|milhão|milhoes|milhões|mi)?/);
+  if(m){var v=parseFloat(m[1].replace(/\./g,'').replace(',','.'));
     if(m[2]){v*=(m[2]==='mil'?1e3:1e6)}else if(v<10000){v*=1000}
-    params.push('preco_max='+Math.round(v));}
+    if(Number.isFinite(v)&&v>0)params.push('preco_max='+Math.round(v));}
   if(q.indexOf('casa')>-1)params.push('tipo=casa');
   if(q.indexOf('apartamento')>-1||q.indexOf('apto')>-1)params.push('tipo=apartamento');
   if(q.indexOf('temporada')>-1)params.push('perfil=temporada');
