@@ -8,12 +8,40 @@ are decoded before lookup. No files are modified.
 from __future__ import annotations
 
 import argparse
+from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 import xml.etree.ElementTree as ET
 
 NAMESPACE = "http://www.sitemaps.org/schemas/sitemap/0.9"
 DEFAULT_ROOT = Path(__file__).resolve().parents[1]
+
+
+class IndexingDirectives(HTMLParser):
+    """Read existing indexing directives without changing a page's intent."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.reasons = set()
+
+    def handle_starttag(self, tag, attrs):
+        if tag != "meta":
+            return
+        attrs = {key: (value or "") for key, value in attrs}
+        name = attrs.get("name", "").lower().strip()
+        directives = attrs.get("content", "").lower().replace(",", " ").split()
+        if name in ("robots", "googlebot") and any(value in ("noindex", "none") for value in directives):
+            self.reasons.add("noindex")
+        if attrs.get("http-equiv", "").lower().strip() == "refresh":
+            self.reasons.add("meta refresh")
+
+
+def indexing_exclusions(path: Path) -> list[str]:
+    """Return explicit HTML reasons to omit a URL from a search sitemap."""
+    if path.suffix.lower() not in (".html", ".htm"):
+        return []
+    parser = IndexingDirectives()
+    parser.feed(path.read_text(encoding="utf-8"))
+    return sorted(parser.reasons)
 
 
 def validate_sitemap(sitemap: Path, root: Path) -> list[str]:
@@ -64,6 +92,14 @@ def validate_sitemap(sitemap: Path, root: Path) -> list[str]:
             errors.append(f"{sitemap.name}: URL escapes site root: {url}")
         elif not target.is_file():
             errors.append(f"{sitemap.name}: missing local target: {url}")
+        else:
+            try:
+                reasons = indexing_exclusions(target)
+            except (OSError, UnicodeError) as exc:
+                errors.append(f"{sitemap.name}: cannot read target {url}: {exc}")
+            else:
+                if reasons:
+                    errors.append(f"{sitemap.name}: non-indexable target ({', '.join(reasons)}): {url}")
     return errors
 
 

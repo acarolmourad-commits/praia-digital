@@ -41,6 +41,35 @@ class SitemapTargetsTests(unittest.TestCase):
             "https://praia.digital/avalia%C3%A7%C3%A3o.html",
         ]))
 
+    def test_omits_explicit_noindex_and_meta_refresh_pages(self):
+        page = self.root / "page.html"
+        for markup in ['<meta name="robots" content="noindex, follow">',
+                       "<META CONTENT='NONE' NAME='ROBOTS'>",
+                       '<meta name="googlebot" content="max-snippet:20 noindex">',
+                       '<meta http-equiv="REFRESH" content="0; url=/destination.html">']:
+            with self.subTest(markup=markup):
+                page.write_text(markup)
+                errors = self.validate(["https://praia.digital/page.html"])
+                self.assertEqual(len(errors), 1)
+                self.assertIn("non-indexable target", errors[0])
+
+    def test_indexable_pages_are_not_removed_for_unrelated_text(self):
+        page = self.root / "page.html"
+        for markup in ['<meta name="robots" content="index, follow">',
+                       '<meta name="robots" content="nofollow">',
+                       '<meta name="description" content="noindex">',
+                       '<p>Explain noindex and redirects.</p>',
+                       '<!-- <meta name="robots" content="noindex"> -->',
+                       '<script>const example = \'<meta name="robots" content="noindex">\';</script>']:
+            with self.subTest(markup=markup):
+                page.write_text(markup)
+                self.assertEqual(self.validate(["https://praia.digital/page.html"]), [])
+
+    def test_directory_index_obeys_robots_directive(self):
+        (self.root / "apps").mkdir()
+        (self.root / "apps/index.html").write_text('<meta name="robots" content="noindex">')
+        self.assertIn("non-indexable target", self.validate(["https://praia.digital/apps/"])[0])
+
     def test_missing_file_and_directory_without_index(self):
         (self.root / "empty").mkdir()
         errors = self.validate([
