@@ -22,6 +22,9 @@ class HomepageContent(unittest.TestCase):
         for slug in ['airbnb-booking','pricelabs']: self.assertIn('/interesse.html?produto='+slug,self.html)
         for price in ['R$ 39 / imóvel / mês','R$ 97 / pacote','R$ 499 / anúncio / plataforma','R$ 79/mês','R$ 249/mês','R$ 799/mês']: self.assertIn(price,self.html)
         self.assertNotIn('Resultados de quem já usa',self.html)
+        catalog=(ROOT/'imoveis.html').read_text()
+        self.assertNotIn('<h3>Case real</h3>',catalog)
+        self.assertIn('Cenário hipotético de captação',catalog)
     def test_links_and_schema(self):
         ids={a['id'] for t,a in self.tags if 'id' in a}
         from urllib.parse import urlsplit
