@@ -100,7 +100,7 @@ document.getElementById('calcular').addEventListener('click', function(){
   document.getElementById('detalhes').innerHTML = '<table><tr><th>Indicador</th><th>Valor</th></tr>'
     + '<tr><td>Ocupação para empatar (custos)</td><td>' + pct(ocupEmpate) + '</td></tr>'
     + '<tr><td>Ocupação para sua meta</td><td>' + pct(ocupMeta) + '</td></tr>'
-    + '<tr><td>Ocupação média em ' + cidade + '</td><td>' + pct(bm.ocup) + '</td></tr></table>';
+    + '<tr><td>Referência ilustrativa de ocupação em ' + cidade + '</td><td>' + pct(bm.ocup) + '</td></tr></table>';
   if (ocupMeta <= 100) document.getElementById('dica').textContent = ocupMeta > bm.ocup
     ? 'Sua meta exige ocupação acima da média de ' + cidade + ' (' + pct(bm.ocup) + ') — subir a diária pode ser mais fácil que subir ocupação.'
     : 'Sua meta é viável: exige ocupação abaixo da média de ' + cidade + ' (' + pct(bm.ocup) + ').';
@@ -135,7 +135,7 @@ document.getElementById('enviar-simulacao').addEventListener('click', async func
     + '<table><tr><th>Item</th><th>Valor</th></tr>'
     + '<tr><td>Cidade</td><td>'+s.cidade+'</td></tr><tr><td>Ocupação para meta</td><td>'+s.ocupacao_meta+'</td></tr><tr><td>Ocupação de empate</td><td>'+s.ocupacao_empate+'</td></tr><tr><td>Média do mercado</td><td>'+s.ocupacao_mercado+'</td></tr>'
     + '</table>'
-    + '<h2>Versão completa (enviada por e-mail)</h2><ul>'
+    + '<h2>O que este resumo contém</h2><ul>'
     + '<li>Comparativo detalhado por bairro</li><li>Sazonalidade mês a mês 2026/2027</li>'
     + '<li>Plano de precificação dinâmica por IA</li></ul>'
     + '<p>Continue em <a href="https://praia.digital/ferramentas/">praia.digital/ferramentas</a> — novas ferramentas toda semana.</p>'
