@@ -23,5 +23,7 @@ jobs:
         run: python3 -m unittest discover -s tests -p 'test_sitemap_targets.py' -v
       - name: Sitemap generator regression tests
         run: python3 -m unittest discover -s tests -p 'test_sitemap_generator.py' -v
+      - name: Removed listing regression tests
+        run: python3 -m unittest discover -s tests -p 'test_removed_listings.py' -v
       - name: Validate published sitemap targets
         run: python3 scripts/validate_sitemap_targets.py
