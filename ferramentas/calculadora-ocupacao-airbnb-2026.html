@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora de Ocupação Airbnb 2026 — Praia Digital</title>
-  <meta name="description" content="Descubra a taxa de ocupação necessária para atingir sua meta de receita no Airbnb.">
+  <meta name="description" content="Calcule a ocupação necessária para atingir uma meta de receita bruta no aluguel por temporada, considerando diária, custos fixos e noites disponíveis.">
   <link rel="canonical" href="https://praia.digital/ferramentas/calculadora-ocupacao-airbnb-2026.html">
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Calculadora de Ocupação Airbnb 2026 — Praia Digital">
-  <meta property="og:description" content="Descubra a taxa de ocupação necessária para atingir sua meta de receita no Airbnb.">
+  <meta property="og:description" content="Calcule a ocupação necessária para atingir uma meta de receita bruta no aluguel por temporada.">
   <meta property="og:url" content="https://praia.digital/ferramentas/calculadora-ocupacao-airbnb-2026.html">
   <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
   <style>
@@ -37,33 +37,33 @@
     <meta name="pd-shared-nav">
     <main id="main">
       <h1>Calculadora de Ocupação — Airbnb 2026</h1>
-      <p class="lead">Qual ocupação você precisa para cobrir custos e atingir sua meta? Ajuste as noites em que o imóvel realmente estará disponível.</p>
+      <p class="lead">Calcule a ocupação necessária para alcançar sua meta de receita bruta mensal. A ferramenta também estima a ocupação para cobrir os custos fixos informados; taxas e despesas variáveis devem ser consideradas à parte.</p>
       <div class="card"><div class="grid">
         <div><label for="cidade">Cidade</label><select id="cidade">
 <option>Santos</option><option>Guarujá</option><option>Praia Grande</option>
 <option>São Vicente</option><option>Mongaguá</option><option>Itanhaém</option>
 <option>Ubatuba</option><option>Caraguatatuba</option><option>São Sebastião</option>
 <option>Ilhabela</option><option>Bertioga</option><option>Outra</option></select></div>
- <div><label for="diaria">Diária média (R$)</label><input id="diaria" type="number" value="450"></div>
- <div><label for="meta">Meta de receita mensal (R$)</label><input id="meta" type="number" value="6000"></div>
- <div><label for="custos">Custos fixos mensais (R$)</label><input id="custos" type="number" min="0" step="0.01" value="1500"></div>
- <div><label for="disponiveis">Noites disponíveis por ano</label><input id="disponiveis" type="number" min="1" max="365" step="1" value="365"></div>
+ <div><label for="diaria">Diária média (R$)</label><input id="diaria" type="number" min="0.01" max="1000000" step="0.01" value="450" required></div>
+ <div><label for="meta">Meta de receita bruta mensal (R$)</label><input id="meta" type="number" min="0" max="100000000" step="0.01" value="6000" required></div>
+ <div><label for="custos">Custos fixos mensais (R$)</label><input id="custos" type="number" min="0" max="100000000" step="0.01" value="1500" required></div>
+ <div><label for="disponiveis">Noites disponíveis por ano</label><input id="disponiveis" type="number" min="1" max="365" step="1" value="365" required></div>
       </div><button class="btn" id="calcular" type="button">Calcular</button></div>
-      <p class="lead">Referências de cidade são parâmetros ilustrativos e não representam dados oficiais ou atualizados em tempo real. Use dados próprios para decisões financeiras.</p>
+      <p class="lead">A cidade serve apenas para identificar o cenário. Esta versão não compara sua simulação com médias de mercado, pois não há uma base atualizada e documentada para sustentar essa comparação.</p>
       <div class="card resultado" id="resultado">
         <h2>Resultado</h2>
-        <p><span class="destaque" id="principal"></span></p>
+        <p><span class="destaque" id="principal" aria-live="polite"></span></p>
         <div id="detalhes"></div>
         <p id="dica" style="margin-top:14px; opacity:.85;"></p>
       </div>
       <div class="card resultado" id="captura">
-        <h2>Receba a análise completa por e-mail</h2>
-        <p class="lead">Você pode baixar um resumo da simulação neste dispositivo. As referências por cidade abaixo são ilustrativas, não dados oficiais em tempo real. Se optar por enviar seus dados, o formulário tentará encaminhá-los por e-mail; a confirmação só será exibida se o serviço responder com sucesso.</p>
+        <h2>Receba os resultados da simulação</h2>
+        <p class="lead">Você pode solicitar o envio dos resultados para seu e-mail e baixar um resumo local. O envio depende da resposta do serviço de e-mail e não garante entrega na caixa de entrada.</p>
         <div class="grid">
           <div><label for="lead-nome">Seu nome</label><input id="lead-nome" type="text"></div>
           <div><label for="lead-email">Seu e-mail</label><input id="lead-email" type="email"></div>
         </div>
-        <button class="btn" id="enviar-simulacao" type="button">Enviar análise completa para meu e-mail</button>
+        <button class="btn" id="enviar-simulacao" type="button">Solicitar envio dos resultados</button>
         <div id="pos-envio" style="display:none; margin-top:18px;">
           <p id="status-envio" role="status" aria-live="polite" style="font-weight:600;"></p>
           <p><a class="btn" id="baixar-relatorio" href="#" download="analise-praia-digital.html">⬇️ Baixar resumo da simulação</a></p>
@@ -76,79 +76,137 @@
 <script>
 function brl(v){ return v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'}); }
 function pct(v){ return v.toLocaleString('pt-BR',{minimumFractionDigits:1,maximumFractionDigits:1})+'%'; }
-function num(id){ return parseFloat(document.getElementById(id).value)||0; }
-function txt(id){ return document.getElementById(id).value.trim(); }
-var BENCHMARKS = {
-  'Santos':{diaria:480,ocup:52,m2:9200},'Guarujá':{diaria:520,ocup:48,m2:8900},
-  'Praia Grande':{diaria:380,ocup:55,m2:6100},'São Vicente':{diaria:350,ocup:44,m2:5800},
-  'Mongaguá':{diaria:300,ocup:40,m2:4200},'Itanhaém':{diaria:310,ocup:38,m2:4300},
-  'Ubatuba':{diaria:550,ocup:46,m2:8100},'Caraguatatuba':{diaria:420,ocup:45,m2:6500},
-  'São Sebastião':{diaria:580,ocup:47,m2:8700},'Ilhabela':{diaria:700,ocup:50,m2:11000},
-  'Bertioga':{diaria:390,ocup:42,m2:6000},'Outra':{diaria:450,ocup:45,m2:7000}
-};
-
+function value(id){ return document.getElementById(id).value.trim(); }
+function numberValue(id){ return Number(value(id)); }
+function escapeHtml(s){ return String(s).replace(/[&<>"']/g, function(ch){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]; }); }
+function setError(message, firstId){
+  alert(message);
+  if(firstId) document.getElementById(firstId).focus();
+}
 document.getElementById('calcular').addEventListener('click', function(){
-  var cidade = txt('cidade'), bm = BENCHMARKS[cidade] || BENCHMARKS['Outra'];
-  var diaria = num('diaria'), meta = num('meta'), custos = num('custos');
-  if (diaria <= 0) { alert('Informe a diária média.'); return; }
-  var disponiveis = num('disponiveis');
-  if (meta < 0 || custos < 0 || disponiveis < 1 || disponiveis > 365) { alert('Informe valores não negativos e de 1 a 365 noites disponíveis.'); return; }
-  var ocupEmpate = (custos * 12) / (diaria * disponiveis) * 100;
-  var ocupMeta = ((meta + custos) * 12) / (diaria * disponiveis) * 100;
-  document.getElementById('principal').textContent = 'Ocupação necessária: ' + pct(ocupMeta);
-  if (ocupMeta > 100) document.getElementById('dica').textContent = 'A meta não é alcançável com esses valores: a ocupação necessária supera 100%. Aumente a diária, reduza custos/meta ou revise as noites disponíveis.';
+  var cidade = value('cidade');
+  var diaria = numberValue('diaria'), meta = numberValue('meta'), custos = numberValue('custos');
+  var disponiveis = numberValue('disponiveis');
+  var fields = [
+    {id:'diaria',v:diaria,label:'diária média',min:0.01,max:1000000},
+    {id:'meta',v:meta,label:'meta de receita bruta mensal',min:0,max:100000000},
+    {id:'custos',v:custos,label:'custos fixos mensais',min:0,max:100000000},
+    {id:'disponiveis',v:disponiveis,label:'noites disponíveis',min:1,max:365}
+  ];
+  for (var i=0;i<fields.length;i++){
+    var f=fields[i];
+    if (value(f.id)==='' || !Number.isFinite(f.v) || f.v<f.min || f.v>f.max){
+      setError('Confira o campo "'+f.label+'". Informe um valor válido entre '+f.min+' e '+f.max+'.', f.id);
+      return;
+    }
+  }
+  if (!Number.isInteger(disponiveis)){
+    setError('Informe um número inteiro de noites disponíveis entre 1 e 365.','disponiveis');
+    return;
+  }
+  var receitaAnualMeta = meta * 12;
+  var custosAnuais = custos * 12;
+  var capacidadeAnual = diaria * disponiveis;
+  var ocupMeta = receitaAnualMeta / capacidadeAnual * 100;
+  var ocupCustos = custosAnuais / capacidadeAnual * 100;
+  var receitaMaximaMensal = capacidadeAnual / 12;
+  var principal = document.getElementById('principal');
+  principal.textContent = 'Ocupação necessária para a meta de receita bruta: ' + pct(ocupMeta);
+  var dica = document.getElementById('dica');
+  if (ocupMeta > 100){
+    dica.textContent = 'A meta de receita bruta não é alcançável com essas premissas: a ocupação necessária supera 100%. Revise a diária, a meta ou as noites disponíveis.';
+  } else if (ocupCustos > 100){
+    dica.textContent = 'Atenção: nem a ocupação total cobre os custos fixos informados. Revise os custos ou a diária.';
+  } else {
+    dica.textContent = 'A meta de receita bruta é matematicamente possível com as premissas informadas. Isso não representa lucro líquido: taxas, impostos, limpeza, manutenção e demais despesas variáveis não estão incluídos.';
+  }
   document.getElementById('detalhes').innerHTML = '<table><tr><th>Indicador</th><th>Valor</th></tr>'
-    + '<tr><td>Ocupação para empatar (custos)</td><td>' + pct(ocupEmpate) + '</td></tr>'
-    + '<tr><td>Ocupação para sua meta</td><td>' + pct(ocupMeta) + '</td></tr>'
-    + '<tr><td>Referência ilustrativa de ocupação em ' + cidade + '</td><td>' + pct(bm.ocup) + '</td></tr></table>';
-  if (ocupMeta <= 100) document.getElementById('dica').textContent = ocupMeta > bm.ocup
-    ? 'Sua meta exige ocupação acima da referência ilustrativa de ' + cidade + ' (' + pct(bm.ocup) + ') — subir a diária pode ser mais fácil que subir ocupação.'
-    : 'Sua meta é viável: exige ocupação abaixo da referência ilustrativa de ' + cidade + ' (' + pct(bm.ocup) + ').';
-  window.__sim = { cidade: cidade, ocupacao_meta: pct(ocupMeta), ocupacao_empate: pct(ocupEmpate),
-    ocupacao_mercado: pct(bm.ocup), noites_disponiveis: disponiveis, diaria_informada: brl(diaria), meta_mensal: brl(meta), custos_mensais: brl(custos) };
+    + '<tr><td>Ocupação para atingir a receita bruta mensal desejada</td><td>' + pct(ocupMeta) + '</td></tr>'
+    + '<tr><td>Ocupação para cobrir os custos fixos informados</td><td>' + pct(ocupCustos) + '</td></tr>'
+    + '<tr><td>Receita bruta mensal máxima teórica, com 100% das noites disponíveis vendidas</td><td>' + brl(receitaMaximaMensal) + '</td></tr>'
+    + '<tr><td>Receita bruta mensal desejada</td><td>' + brl(meta) + '</td></tr>'
+    + '<tr><td>Custos fixos mensais informados</td><td>' + brl(custos) + '</td></tr>'
+    + '<tr><td>Noites disponíveis por ano</td><td>' + disponiveis + '</td></tr></table>';
+  window.__sim = {
+    cidade:cidade,
+    diaria_informada:diaria,
+    meta_receita_bruta_mensal:meta,
+    custos_fixos_mensais:custos,
+    noites_disponiveis_ano:disponiveis,
+    ocupacao_para_meta_pct:ocupMeta,
+    ocupacao_para_cobrir_custos_pct:ocupCustos,
+    receita_bruta_maxima_teorica_mensal:receitaMaximaMensal
+  };
   document.getElementById('resultado').classList.add('ativo');
   document.getElementById('captura').classList.add('ativo');
   document.getElementById('resultado').scrollIntoView({behavior:'smooth'});
 });
 
 document.getElementById('enviar-simulacao').addEventListener('click', async function(){
-  if (!window.__sim) { alert('Calcule primeiro.'); return; }
-  var nome = txt('lead-nome'), email = txt('lead-email');
-  if (!email || email.indexOf('@') < 0) { alert('Informe um e-mail válido.'); return; }
+  if (!window.__sim) { setError('Calcule primeiro para gerar os resultados.','calcular'); return; }
+  var nome = value('lead-nome'), email = value('lead-email');
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+    setError('Informe um endereço de e-mail válido.','lead-email');
+    return;
+  }
   var s = window.__sim;
-  var dados = { _subject: 'Novo lead — Calculadora de Ocupação — Airbnb 2026 — ' + nome };
-  for (var k in s) dados[k] = s[k];
-  dados.nome = nome; dados.email = email;
-  var envioOk = false;
+  var dados = {
+    _subject:'Resultados da Calculadora de Ocupação — Praia Digital',
+    nome:nome,
+    email:email,
+    cidade:s.cidade,
+    diaria_informada:brl(s.diaria_informada),
+    meta_receita_bruta_mensal:brl(s.meta_receita_bruta_mensal),
+    custos_fixos_mensais:brl(s.custos_fixos_mensais),
+    noites_disponiveis_ano:s.noites_disponiveis_ano,
+    ocupacao_para_meta_pct:pct(s.ocupacao_para_meta_pct),
+    ocupacao_para_cobrir_custos_pct:pct(s.ocupacao_para_cobrir_custos_pct),
+    receita_bruta_maxima_teorica_mensal:brl(s.receita_bruta_maxima_teorica_mensal)
+  };
+  var envioAceito = false;
   try {
     var resposta = await fetch('https://formsubmit.co/ajax/comercial@praia.digital', {
-      method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'},
-      body: JSON.stringify(dados)
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify(dados)
     });
-    envioOk = resposta.ok;
-  } catch(e) { envioOk = false; }
-  var rel = '<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><title>Calculadora de Ocupação — Airbnb 2026 — Praia Digital</title>'
-    + '<style>body{font-family:Arial;max-width:800px;margin:30px auto;padding:0 20px;color:#222}'
-    + 'h1{color:#003366}h2{color:#0066cc}table{width:100%;border-collapse:collapse;margin:10px 0}'
-    + 'th,td{border:1px solid #ccc;padding:8px;text-align:left}th{background:#003366;color:#fff}</style></head><body>'
-    + '<h1>Calculadora de Ocupação — Airbnb 2026</h1><p>Preparado para <strong>'+(nome||'você')+'</strong> em '+new Date().toLocaleDateString('pt-BR')+'</p>'
-    + '<table><tr><th>Item</th><th>Valor</th></tr>'
-    + '<tr><td>Cidade</td><td>'+s.cidade+'</td></tr><tr><td>Ocupação para meta</td><td>'+s.ocupacao_meta+'</td></tr><tr><td>Ocupação de empate</td><td>'+s.ocupacao_empate+'</td></tr><tr><td>Média do mercado</td><td>'+s.ocupacao_mercado+'</td></tr>'
-    + '</table>'
-    + '<h2>O que este resumo contém</h2><ul>'
-    + '<li>Comparativo detalhado por bairro</li><li>Sazonalidade mês a mês 2026/2027</li>'
-    + '<li>Plano de precificação dinâmica por IA</li></ul>'
-    + '<p>Continue em <a href="https://praia.digital/ferramentas/">praia.digital/ferramentas</a> — novas ferramentas toda semana.</p>'
-    + '<p><small>Praia Digital — tecnologia para o mercado imobiliário do litoral</small></p></body></html>';
-  var blob = new Blob([rel], {type:'text/html'});
-  document.getElementById('baixar-relatorio').href = URL.createObjectURL(blob);
+    var corpo = null;
+    try { corpo = await resposta.json(); } catch(e) { corpo = null; }
+    envioAceito = resposta.ok && !!corpo && (
+      corpo.success === true ||
+      (typeof corpo.success === 'string' && /success|sent|ok/i.test(corpo.success))
+    );
+  } catch(e) { envioAceito = false; }
+
+  var rel = '<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Resumo da simulação — Praia Digital</title>'
+    + '<style>body{font-family:Arial,sans-serif;max-width:800px;margin:30px auto;padding:0 20px;color:#222;line-height:1.5}h1{color:#003366}table{width:100%;border-collapse:collapse;margin:10px 0}th,td{border:1px solid #ccc;padding:8px;text-align:left}th{background:#003366;color:#fff}small{color:#555}</style></head><body>'
+    + '<h1>Resumo da simulação de ocupação</h1><p>Gerado em '+new Date().toLocaleDateString('pt-BR')+(nome ? ' para <strong>'+escapeHtml(nome)+'</strong>' : '')+'.</p>'
+    + '<table><tr><th>Indicador</th><th>Resultado</th></tr>'
+    + '<tr><td>Cidade informada</td><td>'+escapeHtml(s.cidade)+'</td></tr>'
+    + '<tr><td>Diária média</td><td>'+brl(s.diaria_informada)+'</td></tr>'
+    + '<tr><td>Meta de receita bruta mensal</td><td>'+brl(s.meta_receita_bruta_mensal)+'</td></tr>'
+    + '<tr><td>Custos fixos mensais</td><td>'+brl(s.custos_fixos_mensais)+'</td></tr>'
+    + '<tr><td>Noites disponíveis por ano</td><td>'+s.noites_disponiveis_ano+'</td></tr>'
+    + '<tr><td>Ocupação para atingir a meta</td><td>'+pct(s.ocupacao_para_meta_pct)+'</td></tr>'
+    + '<tr><td>Ocupação para cobrir custos fixos</td><td>'+pct(s.ocupacao_para_cobrir_custos_pct)+'</td></tr>'
+    + '<tr><td>Receita bruta mensal máxima teórica</td><td>'+brl(s.receita_bruta_maxima_teorica_mensal)+'</td></tr></table>'
+    + '<h2>Limitações importantes</h2><p>Este é um cálculo simplificado, não uma previsão de receita nem uma estimativa de lucro líquido. Não inclui impostos, taxas de plataforma, limpeza, gestão, manutenção ou outros custos variáveis. O resultado pressupõe uma diária média constante ao longo das noites disponíveis.</p>'
+    + '<p>Praia Digital — <a href="https://praia.digital/metodologia.html">metodologia e limitações</a></p></body></html>';
+  var blob = new Blob([rel], {type:'text/html;charset=utf-8'});
+  var oldUrl = document.getElementById('baixar-relatorio').dataset.blobUrl;
+  if (oldUrl) URL.revokeObjectURL(oldUrl);
+  var blobUrl = URL.createObjectURL(blob);
+  document.getElementById('baixar-relatorio').href = blobUrl;
+  document.getElementById('baixar-relatorio').dataset.blobUrl = blobUrl;
   var status = document.getElementById('status-envio');
-  status.textContent = envioOk ? 'Solicitação enviada ao serviço de e-mail.' : 'Não foi possível confirmar o envio por e-mail. Você ainda pode baixar o resumo abaixo.';
-  status.style.color = envioOk ? '#7ee787' : '#ffd166';
+  status.textContent = envioAceito
+    ? 'O serviço confirmou a aceitação da solicitação. Isso não garante que a mensagem chegou à caixa de entrada.'
+    : 'Não foi possível confirmar a aceitação pelo serviço de e-mail. Você ainda pode baixar o resumo abaixo.';
+  status.style.color = envioAceito ? '#7ee787' : '#ffd166';
   document.getElementById('pos-envio').style.display = 'block';
   document.getElementById('pos-envio').scrollIntoView({behavior:'smooth'});
 });
-</script>
+</script>>
 <script src="https://praia.digital/js/shared.js?v=2.0"></script>
 </body>
 </html>
