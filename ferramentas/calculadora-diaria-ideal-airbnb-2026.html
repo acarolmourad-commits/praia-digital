@@ -44,11 +44,13 @@
 <option>São Vicente</option><option>Mongaguá</option><option>Itanhaém</option>
 <option>Ubatuba</option><option>Caraguatatuba</option><option>São Sebastião</option>
 <option>Ilhabela</option><option>Bertioga</option><option>Outra</option></select></div>
- <div><label for="custos">Custos fixos mensais (R$)</label><input id="custos" type="number" value="1500"></div>
+ <div><label for="custos">Custos fixos mensais (R$)</label><input id="custos" type="number" min="0" step="0.01" value="1500"></div>
  <div><label for="limpeza">Taxa de limpeza por reserva (R$)</label><input id="limpeza" type="number" value="150"></div>
  <div><label for="ocupacao">Ocupação esperada (%)</label><input id="ocupacao" type="number" value="45"></div>
- <div><label for="lucro">Lucro mensal desejado (R$)</label><input id="lucro" type="number" value="3000"></div>
+ <div><label for="lucro">Lucro mensal desejado (R$)</label><input id="lucro" type="number" min="0" step="0.01" value="3000"></div>
+ <div><label for="estadia">Média de noites por reserva</label><input id="estadia" type="number" min="1" max="365" step="1" value="3"></div>
       </div><button class="btn" id="calcular" type="button">Calcular</button></div>
+      <p class="lead">Referências de cidade são parâmetros ilustrativos e não representam dados oficiais ou atualizados em tempo real. Use dados próprios para decisões financeiras.</p>
       <div class="card resultado" id="resultado">
         <h2>Resultado</h2>
         <p><span class="destaque" id="principal"></span></p>
@@ -57,16 +59,16 @@
       </div>
       <div class="card resultado" id="captura">
         <h2>Receba a análise completa por e-mail</h2>
-        <p class="lead">Comparamos seus números com os dados <strong>reais e atualizados</strong> do seu bairro e enviamos o relatório completo no seu e-mail.</p>
+        <p class="lead">Você pode baixar um resumo da simulação neste dispositivo. As referências por cidade abaixo são ilustrativas, não dados oficiais em tempo real. Se optar por enviar seus dados, o formulário tentará encaminhá-los por e-mail; a confirmação só será exibida se o serviço responder com sucesso.</p>
         <div class="grid">
           <div><label for="lead-nome">Seu nome</label><input id="lead-nome" type="text"></div>
           <div><label for="lead-email">Seu e-mail</label><input id="lead-email" type="email"></div>
         </div>
         <button class="btn" id="enviar-simulacao" type="button">Enviar análise completa para meu e-mail</button>
         <div id="pos-envio" style="display:none; margin-top:18px;">
-          <p style="color:#7ee787; font-weight:600;">✅ Recebido! A análise completa chega no seu e-mail em instantes.</p>
-          <p><a class="btn" id="baixar-relatorio" href="#" download="analise-praia-digital.html">⬇️ Baixar meu relatório agora</a></p>
-          <p class="lead" style="margin-top:14px;">💡 <strong>Seu relatório é uma prévia.</strong> A versão completa inclui comparativo por bairro, sazonalidade 2026/2027 e plano de precificação por IA. Quando quiser, <a href="/ferramentas/" style="color:#7ee9ff;">explore outras ferramentas gratuitas</a>.</p>
+          <p id="status-envio" role="status" aria-live="polite" style="font-weight:600;"></p>
+          <p><a class="btn" id="baixar-relatorio" href="#" download="analise-praia-digital.html">⬇️ Baixar resumo da simulação</a></p>
+          <p class="lead" style="margin-top:14px;">O arquivo baixado contém os resultados calculados nesta página; não inclui pesquisa de mercado ou análise enviada automaticamente. <a href="/ferramentas/" style="color:#7ee9ff;">Explore outras ferramentas gratuitas</a>.</p>
         </div>
       </div>
     </main>
@@ -88,10 +90,10 @@ var BENCHMARKS = {
 
 document.getElementById('calcular').addEventListener('click', function(){
   var cidade = txt('cidade'), bm = BENCHMARKS[cidade] || BENCHMARKS['Outra'];
-  var custos = num('custos'), limpeza = num('limpeza'), ocup = num('ocupacao'), lucro = num('lucro');
+  var custos = num('custos'), limpeza = num('limpeza'), ocup = num('ocupacao'), lucro = num('lucro'), estadia = num('estadia');
+  if (custos < 0 || limpeza < 0 || lucro < 0 || ocup <= 0 || ocup > 100 || estadia < 1 || estadia > 365) { alert('Revise os valores: custos, limpeza e lucro não podem ser negativos; ocupação deve ser de 1% a 100% e a estadia média de 1 a 365 noites.'); return; }
   var diasOcup = 365 * ocup / 100;
-  if (diasOcup <= 0) { alert('Informe a ocupação esperada.'); return; }
-  var reservasMes = diasOcup / 12 / 3; // média 3 noites/reserva
+  var reservasMes = diasOcup / 12 / estadia;
   var diariaMinima = (custos * 12 + limpeza * reservasMes * 12) / diasOcup;
   var diariaIdeal = (custos * 12 + lucro * 12 + limpeza * reservasMes * 12) / diasOcup;
   document.getElementById('principal').textContent = 'Diária ideal: ' + brl(diariaIdeal);
@@ -103,13 +105,13 @@ document.getElementById('calcular').addEventListener('click', function(){
     ? 'Sua diária ideal está acima da média de ' + cidade + ' — considere elevar a ocupação ou reduzir custos.'
     : 'Sua diária ideal está abaixo da média de ' + cidade + ' — há margem para subir o preço.';
   window.__sim = { cidade: cidade, diaria_ideal: brl(diariaIdeal), diaria_minima: brl(diariaMinima),
-    diaria_mercado: brl(bm.diaria), ocupacao_pct: ocup };
+    diaria_mercado: brl(bm.diaria), ocupacao_pct: ocup, noites_media_reserva: estadia, custos_mensais: brl(custos), lucro_mensal: brl(lucro) };
   document.getElementById('resultado').classList.add('ativo');
   document.getElementById('captura').classList.add('ativo');
   document.getElementById('resultado').scrollIntoView({behavior:'smooth'});
 });
 
-document.getElementById('enviar-simulacao').addEventListener('click', function(){
+document.getElementById('enviar-simulacao').addEventListener('click', async function(){
   if (!window.__sim) { alert('Calcule primeiro.'); return; }
   var nome = txt('lead-nome'), email = txt('lead-email');
   if (!email || email.indexOf('@') < 0) { alert('Informe um e-mail válido.'); return; }
@@ -117,12 +119,14 @@ document.getElementById('enviar-simulacao').addEventListener('click', function()
   var dados = { _subject: 'Novo lead — Calculadora de Diária Ideal — Airbnb 2026 — ' + nome };
   for (var k in s) dados[k] = s[k];
   dados.nome = nome; dados.email = email;
+  var envioOk = false;
   try {
-    fetch('https://formsubmit.co/ajax/comercial@praia.digital', {
+    var resposta = await fetch('https://formsubmit.co/ajax/comercial@praia.digital', {
       method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'},
       body: JSON.stringify(dados)
     });
-  } catch(e) {}
+    envioOk = resposta.ok;
+  } catch(e) { envioOk = false; }
   var rel = '<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><title>Calculadora de Diária Ideal — Airbnb 2026 — Praia Digital</title>'
     + '<style>body{font-family:Arial;max-width:800px;margin:30px auto;padding:0 20px;color:#222}'
     + 'h1{color:#003366}h2{color:#0066cc}table{width:100%;border-collapse:collapse;margin:10px 0}'
@@ -136,6 +140,9 @@ document.getElementById('enviar-simulacao').addEventListener('click', function()
     + '<p><small>Praia Digital — tecnologia para o mercado imobiliário do litoral</small></p></body></html>';
   var blob = new Blob([rel], {type:'text/html'});
   document.getElementById('baixar-relatorio').href = URL.createObjectURL(blob);
+  var status = document.getElementById('status-envio');
+  status.textContent = envioOk ? 'Solicitação enviada ao serviço de e-mail.' : 'Não foi possível confirmar o envio por e-mail. Você ainda pode baixar o resumo abaixo.';
+  status.style.color = envioOk ? '#7ee787' : '#ffd166';
   document.getElementById('pos-envio').style.display = 'block';
   document.getElementById('pos-envio').scrollIntoView({behavior:'smooth'});
 });
