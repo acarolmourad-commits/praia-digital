@@ -99,7 +99,7 @@ document.getElementById('calcular').addEventListener('click', function(){
   document.getElementById('principal').textContent = 'Diária ideal: ' + brl(diariaIdeal);
   document.getElementById('detalhes').innerHTML = '<table><tr><th>Indicador</th><th>Valor</th></tr>'
     + '<tr><td>Diária mínima (empate)</td><td>' + brl(diariaMinima) + '</td></tr>'
-    + '<tr><td>Diária média do mercado em ' + cidade + '</td><td>' + brl(bm.diaria) + '</td></tr>'
+    + '<tr><td>Referência ilustrativa de diária em ' + cidade + '</td><td>' + brl(bm.diaria) + '</td></tr>'
     + '<tr><td>Ocupação média do mercado</td><td>' + pct(bm.ocup) + '</td></tr></table>';
   document.getElementById('dica').textContent = diariaIdeal > bm.diaria
     ? 'Sua diária ideal está acima da média de ' + cidade + ' — considere elevar a ocupação ou reduzir custos.'
@@ -133,7 +133,7 @@ document.getElementById('enviar-simulacao').addEventListener('click', async func
     + 'th,td{border:1px solid #ccc;padding:8px;text-align:left}th{background:#003366;color:#fff}</style></head><body>'
     + '<h1>Calculadora de Diária Ideal — Airbnb 2026</h1><p>Preparado para <strong>'+(nome||'você')+'</strong> em '+new Date().toLocaleDateString('pt-BR')+'</p>'
     + '<table><tr><th>Item</th><th>Valor</th></tr>' + '<tr><td>Cidade</td><td>'+s.cidade+'</td></tr><tr><td>Diária ideal</td><td>'+s.diaria_ideal+'</td></tr><tr><td>Diária mínima</td><td>'+s.diaria_minima+'</td></tr><tr><td>Mercado</td><td>'+s.diaria_mercado+'</td></tr>' + '</table>'
-    + '<h2>Versão completa (enviada por e-mail)</h2><ul>'
+    + '<h2>O que este resumo contém</h2><ul>'
     + '<li>Comparativo detalhado por bairro</li><li>Sazonalidade mês a mês 2026/2027</li>'
     + '<li>Plano de precificação dinâmica por IA</li></ul>'
     + '<p>Continue em <a href="https://praia.digital/ferramentas/">praia.digital/ferramentas</a> — novas ferramentas toda semana.</p>'
