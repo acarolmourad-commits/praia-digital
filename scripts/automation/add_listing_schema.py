@@ -5,9 +5,13 @@ Adiciona RealEstateListing JSON-LD nas páginas de imoveis/. (breadcrumb removid
 """
 from pathlib import Path
 import re, json
+from html import unescape
+from html.parser import HTMLParser
+from urllib.parse import urljoin, urlsplit
 
 BASE = Path(__file__).resolve().parents[2]
 IMOVEIS = BASE / 'imoveis'
+SITE_URL = 'https://praia.digital/'
 
 CITY_SLUG_TO_NAME = {
     'santos': 'Santos',
@@ -44,20 +48,42 @@ def extract_meta_description(text: str):
     return ''
 
 def extract_price(text: str):
-    m = re.search(r'R\$\s*([\d\.]+)', text)
+    # Brazilian displayed prices use dots for thousands and commas for cents.
+    # Reject incomplete/malformed amounts instead of publishing a partial price.
+    m = re.search(r'R\$\s*((?:[0-9]{1,3}(?:\.[0-9]{3})+|[0-9]+)(?:,[0-9]{2})?)(?![0-9.,])', unescape(text))
     if m:
-        return m.group(1).replace('.', '')
+        return m.group(1).replace('.', '').replace(',', '.')
     return ''
 
+
+class ImageSources(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.sources = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag == 'img':
+            self.sources.append(dict(attrs).get('src') or '')
+
+
 def extract_image(text: str, path: Path):
-    m = re.search(r'<img[^>]+src=["\'](.*?)["\']', text, re.S|re.I)
-    if m:
-        src = m.group(1).strip()
-        if src.startswith('http'):
-            return src
-        # make absolute-ish
-        return 'https://acarolmourad.github.io/praia-digital/' + str(path.relative_to(BASE)).replace('\\', '/')
-    return 'https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/img/default-home.jpg'
+    page_url = urljoin(SITE_URL, path.relative_to(BASE).as_posix())
+    parser = ImageSources()
+    parser.feed(text)
+    for src in parser.sources:
+        src = src.strip()
+        if not src:
+            continue
+        try:
+            image_url = urljoin(page_url, src)
+            parsed = urlsplit(image_url)
+        except ValueError:
+            continue
+        if parsed.scheme in ('http', 'https') and parsed.netloc:
+            return image_url
+    # An absent image is preferable to an invented URL returning 404.
+    return ''
+
 
 def make_listing(name: str, description: str, url: str, image: str, price: str, city: str):
     return {
@@ -66,10 +92,10 @@ def make_listing(name: str, description: str, url: str, image: str, price: str, 
         'name': name,
         'description': description,
         'url': url,
-        'image': image,
+        **({'image': image} if image else {}),
         'offers': {
             '@type': 'Offer',
-            **({'price': price, 'priceCurrency': 'BRL'} if str(price).isdigit() else {}),
+            **({'price': price, 'priceCurrency': 'BRL'} if re.fullmatch(r'[0-9]+(?:\.[0-9]{1,2})?', str(price)) else {}),
             'availability': 'https://schema.org/InStock',
         },
         'provider': {
@@ -80,47 +106,54 @@ def make_listing(name: str, description: str, url: str, image: str, price: str, 
         },
     }
 
-updated = 0
-skipped = 0
-errors = 0
-for path in sorted(IMOVEIS.glob('*.html')):
-    try:
-        text = path.read_text(encoding='utf-8', errors='ignore')
-    except Exception as e:
-        errors += 1
-        continue
 
-    # skip if already has RealEstateListing
-    if 'RealEstateListing' in text:
-        skipped += 1
-        continue
+def main():
+    updated = 0
+    skipped = 0
+    errors = 0
+    for path in sorted(IMOVEIS.glob('*.html')):
+        try:
+            text = path.read_text(encoding='utf-8', errors='ignore')
+        except Exception as e:
+            errors += 1
+            continue
 
-    title = extract_title(text, path.stem)
-    description = extract_meta_description(text) or title
-    price = extract_price(text)
-    image = extract_image(text, path)
-    city = extract_city_from_slug(path.name)
-    rel_path = str(path.relative_to(BASE)).replace('\\', '/')
-    url = 'https://acarolmourad.github.io/praia-digital/' + rel_path
+        # skip if already has RealEstateListing
+        if 'RealEstateListing' in text:
+            skipped += 1
+            continue
 
-    rl = make_listing(title, description, url, image, price, city)
+        title = extract_title(text, path.stem)
+        description = extract_meta_description(text) or title
+        price = extract_price(text)
+        image = extract_image(text, path)
+        city = extract_city_from_slug(path.name)
+        rel_path = str(path.relative_to(BASE)).replace('\\', '/')
+        url = urljoin(SITE_URL, rel_path)
 
-    rl_json = json.dumps(rl, ensure_ascii=False, indent=2)
-    injection = f'<script type="application/ld+json">\n{rl_json}\n</script>\n'
+        rl = make_listing(title, description, url, image, price, city)
 
-    if '</main>' in text:
-        text = text.replace('</main>', injection + '</main>', 1)
-    elif '</body>' in text:
-        text = text.replace('</body>', injection + '</body>', 1)
-    else:
-        text += '\n' + injection
+        rl_json = json.dumps(rl, ensure_ascii=False, indent=2).replace('<', r'\u003c')
+        injection = f'<script type="application/ld+json">\n{rl_json}\n</script>\n'
 
-    try:
-        path.write_text(text, encoding='utf-8')
-        print('updated', path.relative_to(BASE))
-        updated += 1
-    except Exception as e:
-        print('write error', path.relative_to(BASE), e)
-        errors += 1
+        if '</main>' in text:
+            text = text.replace('</main>', injection + '</main>', 1)
+        elif '</body>' in text:
+            text = text.replace('</body>', injection + '</body>', 1)
+        else:
+            text += '\n' + injection
 
-print('done', 'updated=', updated, 'skipped=', skipped, 'errors=', errors)
+        try:
+            path.write_text(text, encoding='utf-8')
+            print('updated', path.relative_to(BASE))
+            updated += 1
+        except Exception as e:
+            print('write error', path.relative_to(BASE), e)
+            errors += 1
+
+    print('done', 'updated=', updated, 'skipped=', skipped, 'errors=', errors)
+    return 1 if errors else 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
