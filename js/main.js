@@ -164,8 +164,8 @@
   function priceNumber(text) {
     // Extrai valor numérico puro ("R$ 1.250.000" -> 1250000, "R$ 4.500/mês" -> 4500)
     if (text === null || text === undefined) return '';
-    const digits = String(text).replace(/[^0-9]/g, '');
-    return digits || '';
+    const value = window.PDPropertySearch.money(String(text).replace(/\/(?:mes|mês|dia).*$/i, ''));
+    return value === null ? '' : value;
   }
 
   function escapeHtml(text) {
@@ -188,59 +188,39 @@
     grid.innerHTML = list.map((item) => propertyCardTemplate(item)).join('');
   }
 
-  function filterProperties() {
-    const query = (document.getElementById('busca')?.value || '').trim().toLowerCase();
-    const typeFilter = document.getElementById('tipo-filtro')?.value || '';
-    const cityFilter = document.getElementById('cidade-filtro')?.value || '';
-
-    const filtered = properties.filter((p) => {
-      const matchesQuery =
-        !query ||
-        [p.title, p.city, p.type, p.tags.join(' ')].some((v) => String(v).toLowerCase().includes(query));
-
-      const matchesType = !typeFilter || p.type === typeFilter || p.type.toLowerCase() === typeFilter.toLowerCase();
-      const matchesCity = !cityFilter || p.city === cityFilter || p.city.toLowerCase() === cityFilter.toLowerCase();
-
-      return matchesQuery && matchesType && matchesCity;
-    });
-
-    render(filtered);
-  }
-
+  const search = window.PDPropertySearch;
+  let state;
+  const fields = {cidade:'cidade-filtro', finalidade:'tipo-filtro', tipo:'categoria-filtro', quartos:'quartos-filtro', preco_max:'preco-filtro'};
   function initFilters() {
-    const cities = Array.from(new Set(properties.map((p) => p.city))).sort();
-
-    const citySelect = document.getElementById('cidade-filtro');
-    if (citySelect) {
-      citySelect.innerHTML = '<option value="">Todas as cidades</option>' + cities.map((c) => `<option value="${escapeHtml(c)}">${escapeHtml(c)}</option>`).join('');
-    }
-
-    const typeSelect = document.getElementById('tipo-filtro');
-    if (typeSelect) {
-      typeSelect.innerHTML = '<option value="">Todos os tipos</option>' +
-        ['Venda', 'Aluguel', 'Lançamento']
-        .map((t) => `<option value="${escapeHtml(t)}">${escapeHtml(t)}</option>`)
-        .join('');
+    const citySelect=document.getElementById('cidade-filtro');
+    if(citySelect) citySelect.innerHTML='<option value="">Todas as cidades</option>'+search.cities.map(c=>`<option value="${c}">${c}</option>`).join('');
+    const purpose=document.getElementById('tipo-filtro');
+    if(purpose) purpose.innerHTML='<option value="">Comprar ou alugar</option>'+['Venda','Aluguel','Lançamento'].map(t=>`<option>${t}</option>`).join('');
+  }
+  function updateControls() {
+    document.getElementById('busca').value=state.q;
+    for(const [key,id] of Object.entries(fields)) {
+      const el=document.getElementById(id);
+      if(el.tagName==='SELECT' && state[key] && !Array.from(el.options).some(o=>search.normalize(o.value)===search.normalize(state[key]))) el.add(new Option(state[key],state[key]));
+      const option=el.tagName==='SELECT' && Array.from(el.options).find(o=>search.normalize(o.value)===search.normalize(state[key]));
+      el.value=option?option.value:state[key];
     }
   }
-
-  function buscarImoveis() {
-    const q = (document.getElementById('busca')?.value || '').trim().toLowerCase();
-    const typeFilter = document.getElementById('tipo-filtro')?.value || '';
-    const cityFilter = document.getElementById('cidade-filtro')?.value || '';
-
-    let filtered = properties.filter((p) => {
-      const text = [p.title, p.city, p.type, p.description, (p.tags||[]).join(' ')].join(' ');
-      const matchesQuery = !q || String(text).toLowerCase().includes(q);
-      const matchesType = !typeFilter || p.type === typeFilter || p.type.toLowerCase() === typeFilter.toLowerCase();
-      const matchesCity = !cityFilter || p.city === cityFilter || p.city.toLowerCase() === cityFilter.toLowerCase();
-      return matchesQuery && matchesType && matchesCity;
-    });
-
-    filtered = filtered.slice().sort((a,b)=> (parseInt(b.score||0,10)-parseInt(a.score||0,10)));
+  function showResults() {
+    const filtered=properties.filter(p=>search.matches(p,state)).sort((a,b)=>Number(b.score||0)-Number(a.score||0));
     render(filtered);
+    document.getElementById('search-status').textContent=filtered.length+' imóvel(is) encontrado(s).'+(state.perfil==='investimento'?' Investimento é seu objetivo; rentabilidade não é garantida.':'')+(state.perfil==='temporada'?' Temporada: somente anúncios que mencionam esse perfil.':'');
   }
-
+  function saveSearch(push) {
+    const url=new URL(location.href);
+    for(const key of ['q',...Object.keys(fields),'perfil']) url.searchParams.set(key,state[key] || '');
+    history[push?'pushState':'replaceState'](null,'',url);
+    showResults();
+  }
+  function restoreSearch() {
+    state=search.fromParams(new URLSearchParams(location.search));
+    updateControls(); showResults();
+  }
   function onFormSubmit(e) {
     e.preventDefault();
     const nome = (document.getElementById('nome')?.value || '').trim();
@@ -263,18 +243,16 @@
   }
 
   document.addEventListener('DOMContentLoaded', () => {
-    initFilters();
-    render(properties);
-
-    const buscaInput = document.getElementById('busca');
-    if (buscaInput) {
-      buscaInput.addEventListener('input', buscarImoveis);
-      buscaInput.addEventListener('search', buscarImoveis);
+    if(document.getElementById('lista-imoveis') && search) {
+      initFilters(); restoreSearch();
+      const input=document.getElementById('busca');
+      function queryChanged() { state={q:input.value,...search.parse(input.value)}; updateControls(); saveSearch(false); }
+      input.addEventListener('input',queryChanged);
+      input.addEventListener('search',queryChanged);
+      for(const [key,id] of Object.entries(fields)) document.getElementById(id).addEventListener('change',function(){ if(!this.checkValidity()) { this.reportValidity(); return; } state[key]=this.value; saveSearch(true); });
+      document.getElementById('limpar-busca').addEventListener('click',function(){ state={q:'',...search.parse('')}; updateControls(); saveSearch(true); input.focus(); });
+      window.addEventListener('popstate',restoreSearch);
     }
-    const tipo = document.getElementById('tipo-filtro');
-    if (tipo) tipo.addEventListener('change', buscarImoveis);
-    const cidade = document.getElementById('cidade-filtro');
-    if (cidade) cidade.addEventListener('change', buscarImoveis);
 
     const contatoForm = document.getElementById('contato-form');
     if (contatoForm) contatoForm.addEventListener('submit', onFormSubmit);

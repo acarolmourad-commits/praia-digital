@@ -112,7 +112,7 @@
     var path = window.location.pathname;
     var isHome = path === '/' || path === '/index.html' || path === '';
     if (!isHome) return;
-    if (document.getElementById('apps')) return;
+    if (document.getElementById('apps') || document.getElementById('produtos-comparacao')) return;
     var anchor = document.getElementById('ferramentas') || document.querySelector('footer');
     if (!anchor) return;
     fetch('https://praia.digital/partials/apps-section.html?v=1.0', { credentials: 'omit', cache: 'no-store' })
@@ -256,7 +256,7 @@
       links.forEach(function(a){ a.setAttribute('href','/planos.html'); });
       var path=window.location.pathname;
       var isHome=(path==='/'||path==='/index.html'||path==='');
-      if(isHome && !document.getElementById('planos-praia-digital')){
+      if(isHome && !document.getElementById('produtos-comparacao') && !document.getElementById('planos-praia-digital')){
         var sec=document.createElement('section');
         sec.id='planos-praia-digital';
         sec.setAttribute('style','max-width:1100px;margin:48px auto;padding:32px 24px;background:#0f2a4a;color:#fff;border-radius:18px;text-align:center');
