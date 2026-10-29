@@ -28,6 +28,9 @@ jobs:
           python3 scripts/build-navigation.py --report "$RUNNER_TEMP/navigation-report.json"
           python3 scripts/fix_empty_h1.py
 
+      - name: Validate sitemap before publication
+        run: python3 scripts/validate_sitemap_targets.py
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
