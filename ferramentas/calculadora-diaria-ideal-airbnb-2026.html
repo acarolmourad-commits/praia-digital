@@ -100,10 +100,10 @@ document.getElementById('calcular').addEventListener('click', function(){
   document.getElementById('detalhes').innerHTML = '<table><tr><th>Indicador</th><th>Valor</th></tr>'
     + '<tr><td>Diária mínima (empate)</td><td>' + brl(diariaMinima) + '</td></tr>'
     + '<tr><td>Referência ilustrativa de diária em ' + cidade + '</td><td>' + brl(bm.diaria) + '</td></tr>'
-    + '<tr><td>Ocupação média do mercado</td><td>' + pct(bm.ocup) + '</td></tr></table>';
+    + '<tr><td>Referência ilustrativa de ocupação</td><td>' + pct(bm.ocup) + '</td></tr></table>';
   document.getElementById('dica').textContent = diariaIdeal > bm.diaria
-    ? 'Sua diária ideal está acima da média de ' + cidade + ' — considere elevar a ocupação ou reduzir custos.'
-    : 'Sua diária ideal está abaixo da média de ' + cidade + ' — há margem para subir o preço.';
+    ? 'Sua diária ideal está acima da referência ilustrativa de ' + cidade + ' — considere elevar a ocupação ou reduzir custos.'
+    : 'Sua diária ideal está abaixo da referência ilustrativa de ' + cidade + ' — há margem para subir o preço.';
   window.__sim = { cidade: cidade, diaria_ideal: brl(diariaIdeal), diaria_minima: brl(diariaMinima),
     diaria_mercado: brl(bm.diaria), ocupacao_pct: ocup, noites_media_reserva: estadia, custos_mensais: brl(custos), lucro_mensal: brl(lucro) };
   document.getElementById('resultado').classList.add('ativo');
