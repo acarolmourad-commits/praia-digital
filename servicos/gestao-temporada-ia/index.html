@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestão de aluguel por temporada com IA | Praia Digital</title>
+  <meta name="description" content="Organize a operação de aluguel por temporada no litoral paulista com diagnóstico, precificação, fluxos de atendimento e automações sob medida.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://praia.digital/servicos/gestao-temporada-ia/">
+  <meta name="theme-color" content="#0b2942">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Praia Digital">
+  <meta property="og:title" content="Gestão de temporada com IA | Praia Digital">
+  <meta property="og:description" content="Diagnóstico e melhorias de operação, precificação e atendimento para aluguel por temporada.">
+  <meta property="og:url" content="https://praia.digital/servicos/gestao-temporada-ia/">
+  <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
+  <meta property="og:image:alt" content="Praia Digital — soluções para aluguel por temporada no litoral paulista">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gestão de temporada com IA | Praia Digital">
+  <meta name="twitter:description" content="Organize atendimento, precificação e processos de hospedagem com diagnóstico e automações sob medida.">
+  <meta name="twitter:image" content="https://praia.digital/img/default-home.jpg">
+  <link rel="icon" href="https://praia.digital/favicon.ico">
+  <style>
+    :root{--navy:#0b2942;--teal:#087e8b;--ink:#183447;--muted:#526879;--line:#dce6ec;--bg:#f4f8fa;--soft:#e8f4f5;--white:#fff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:1rem}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
+    a{color:#075e78}
+    a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #e6a23c;outline-offset:3px}
+    .skip{position:absolute;left:1rem;top:-5rem;background:#fff;padding:.7rem 1rem;z-index:10}.skip:focus{top:1rem}
+    .wrap{width:min(1100px,calc(100% - 2rem));margin-inline:auto}
+    header{background:var(--navy);color:#fff;padding:1rem 0}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem}.logo{color:#fff;text-decoration:none;font-weight:850;font-size:1.1rem}.nav a:not(.logo){color:#e6f5f7;text-decoration:none}
+    .hero{background:linear-gradient(130deg,#0b2942,#12566a);color:#fff;padding:clamp(3rem,8vw,6rem) 0}
+    .eyebrow{color:#bce9e8;text-transform:uppercase;letter-spacing:.12em;font-weight:800;font-size:.8rem}
+    h1{font-size:clamp(2.1rem,5vw,3.7rem);line-height:1.1;letter-spacing:-.04em;max-width:850px;margin:.5rem 0 1rem}
+    .hero p{font-size:1.12rem;color:#e2eff4;max-width:780px}
+    .actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.4rem}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:.75rem 1rem;border-radius:.7rem;text-decoration:none;font-weight:800;border:1px solid transparent}
+    .primary{background:#fff;color:var(--navy)}.outline{border-color:#b7d7df;color:#fff}
+    main{padding:2.2rem 0 3.5rem}
+    section{margin-top:3rem}.intro{font-size:1.05rem;color:var(--muted);max-width:850px}
+    h2{font-size:clamp(1.55rem,3vw,2.2rem);line-height:1.2;margin:0 0 .6rem;letter-spacing:-.025em}
+    h3{line-height:1.3;margin:.3rem 0 .5rem}.lead{max-width:800px;color:var(--muted);margin:.2rem 0 1.2rem}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+    .card,.panel{background:#fff;border:1px solid var(--line);border-radius:1rem;padding:1.3rem;box-shadow:0 4px 16px rgba(15,42,60,.04);min-width:0}
+    .card p,.panel p{color:var(--muted);margin:.3rem 0 .6rem}
+    .number{display:inline-grid;place-items:center;width:2.2rem;height:2.2rem;border-radius:.65rem;background:var(--soft);color:var(--navy);font-weight:900}
+    .two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+    ul{padding-left:1.2rem}li{margin:.35rem 0}
+    .notice{background:#fff8e9;border-left:4px solid #d69a37;padding:1rem;border-radius:.5rem;color:#59421b;margin-top:1rem}
+    .cta{background:var(--navy);color:#fff;padding:clamp(1.3rem,4vw,2.2rem);border-radius:1rem}
+    .cta p{color:#e2eff4;max-width:800px}.cta .primary{margin-top:.5rem}
+    details{padding:1rem 0;border-bottom:1px solid var(--line)}summary{cursor:pointer;font-weight:800}details p{color:var(--muted);margin-bottom:0}
+    footer{text-align:center;color:var(--muted);padding:1.5rem 1rem;font-size:.9rem}
+    @media(max-width:760px){.grid,.two{grid-template-columns:1fr}.nav{align-items:flex-start}.actions .btn{width:100%}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"Diagnóstico e otimização de aluguel por temporada com IA",
+    "serviceType":"Consultoria e apoio operacional para aluguel por temporada",
+    "provider":{"@type":"Organization","name":"Praia Digital","url":"https://praia.digital/"},
+    "areaServed":{"@type":"AdministrativeArea","name":"Litoral do estado de São Paulo, Brasil"},
+    "url":"https://praia.digital/servicos/gestao-temporada-ia/",
+    "description":"Diagnóstico da operação, revisão de processos, apoio à precificação e desenho de automações conforme escopo contratado."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Quais entregas estão incluídas?","acceptedAnswer":{"@type":"Answer","text":"O escopo é definido após o diagnóstico e pode incluir mapeamento de processos, revisão de fluxos de atendimento, recomendações de precificação, desenho de automações e indicadores. As entregas exatas, ferramentas e limites são confirmados na proposta antes da contratação."}},
+      {"@type":"Question","name":"A automação garante maior ocupação ou receita?","acceptedAnswer":{"@type":"Answer","text":"Não. O serviço busca organizar processos e apoiar decisões. Ocupação, tarifas e receita dependem de fatores como demanda, imóvel, sazonalidade, concorrência, disponibilidade e execução. Não há garantia de resultado financeiro."}},
+      {"@type":"Question","name":"Vocês integram Airbnb, Stays ou PriceLabs automaticamente?","acceptedAnswer":{"@type":"Answer","text":"Integrações dependem dos recursos disponíveis em cada plataforma, permissões, plano contratado, acesso técnico e validação de viabilidade. Nenhuma conexão automática é presumida; as integrações possíveis são confirmadas na proposta."}},
+      {"@type":"Question","name":"Quanto custa e quanto tempo leva?","acceptedAnswer":{"@type":"Answer","text":"Preço e prazo dependem da quantidade de imóveis, dos processos envolvidos e das integrações necessárias. Após uma conversa inicial, a Praia Digital confirma escopo, entregáveis, prazo, preço e condições antes de qualquer contratação."}},
+      {"@type":"Question","name":"Quais localidades são atendidas?","acceptedAnswer":{"@type":"Answer","text":"A Praia Digital avalia projetos no litoral paulista. A disponibilidade para cada cidade e operação é confirmada durante o contato inicial."}},
+      {"@type":"Question","name":"O serviço substitui a equipe ou o suporte das plataformas?","acceptedAnswer":{"@type":"Answer","text":"Não. O serviço é de apoio à organização e melhoria de processos e não substitui equipes, prestadores locais, suporte oficial das plataformas ou obrigações legais do anfitrião."}}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo principal</a>
+  <header>
+    <div class="wrap nav">
+      <a class="logo" href="/">🌊 Praia Digital</a>
+      <a href="/anfitrioes/">Área do Anfitrião</a>
+    </div>
+  </header>
+  <div class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Soluções para anfitriões e gestores</p>
+      <h1>Uma operação de temporada mais organizada, com automações que fazem sentido</h1>
+      <p>Mapeie gargalos no atendimento, na precificação e na rotina do imóvel. A Praia Digital ajuda a estruturar processos e avaliar automações compatíveis com a sua operação — sem promessas irreais de ocupação ou faturamento.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://wa.me/5511954346288?text=Ol%C3%A1%2C%20quero%20conversar%20sobre%20diagn%C3%B3stico%20e%20automa%C3%A7%C3%A3o%20para%20aluguel%20por%20temporada." target="_blank" rel="noopener noreferrer">Solicitar diagnóstico inicial</a>
+        <a class="btn outline" href="#como-funciona">Entender como funciona</a>
+      </div>
+    </div>
+  </div>
+  <main id="conteudo" class="wrap">
+    <p class="intro">Indicado para proprietários, anfitriões, coanfitriões, administradores e imobiliárias que desejam melhorar a consistência dos processos. O trabalho começa pelo que sua operação realmente precisa — não pela instalação de ferramentas sem um objetivo definido.</p>
+
+    <section aria-labelledby="problemas">
+      <h2 id="problemas">Onde podemos ajudar</h2>
+      <p class="lead">A prioridade é identificar tarefas repetitivas e decisões que possam ser organizadas, medidas ou simplificadas.</p>
+      <div class="grid">
+        <article class="card"><span class="number">01</span><h3>Atendimento ao hóspede</h3><p>Padronização de mensagens, etapas de pré-chegada, instruções e acompanhamento, com revisão humana nos casos necessários.</p></article>
+        <article class="card"><span class="number">02</span><h3>Precificação e calendário</h3><p>Revisão de regras, sazonalidade e indicadores disponíveis para apoiar decisões sobre tarifas e disponibilidade.</p></article>
+        <article class="card"><span class="number">03</span><h3>Rotina operacional</h3><p>Checklists, responsabilidades, passagem de informações e fluxos para reduzir esquecimentos e retrabalho.</p></article>
+        <article class="card"><span class="number">04</span><h3>Organização de canais</h3><p>Mapeamento de canais e processos existentes. A viabilidade de integrações é avaliada antes de qualquer promessa de conexão.</p></article>
+        <article class="card"><span class="number">05</span><h3>Indicadores</h3><p>Definição de métricas adequadas, como tempo de resposta, conversão de consultas, ocupação e receita por noite disponível, quando os dados existirem.</p></article>
+        <article class="card"><span class="number">06</span><h3>Uso responsável de IA</h3><p>Identificação de tarefas adequadas à automação, limites de segurança, tratamento de dados e pontos em que a decisão humana deve permanecer.</p></article>
+      </div>
+    </section>
+
+    <section id="como-funciona" aria-labelledby="steps">
+      <h2 id="steps">Como funciona o trabalho</h2>
+      <p class="lead">O escopo e os critérios de conclusão são combinados antes da contratação.</p>
+      <div class="grid">
+        <article class="card"><span class="number">1</span><h3>Diagnóstico</h3><p>Entendemos o número de imóveis, os canais utilizados, os principais gargalos e os indicadores atualmente disponíveis.</p></article>
+        <article class="card"><span class="number">2</span><h3>Plano de ação</h3><p>Priorizamos melhorias e descrevemos entregas, responsabilidades, ferramentas, dependências, prazo e investimento.</p></article>
+        <article class="card"><span class="number">3</span><h3>Implantação validada</h3><p>Quando contratada, a implementação é feita conforme o escopo aprovado, com testes e orientações para uso e acompanhamento.</p></article>
+      </div>
+      <div class="notice"><strong>Importante:</strong> a contratação não pressupõe acesso automático às contas Airbnb, Stays, PriceLabs ou a outros sistemas. Integrações dependem de permissões, funcionalidades disponíveis, planos e viabilidade técnica, e só são incluídas se descritas na proposta.</div>
+    </section>
+
+    <section aria-labelledby="deliverables">
+      <h2 id="deliverables">O que pode constar na proposta</h2>
+      <div class="two">
+        <div class="panel"><h3>Entregáveis possíveis</h3><ul><li>Mapa do processo atual e dos principais gargalos</li><li>Plano priorizado de melhorias</li><li>Modelos de comunicação e checklists</li><li>Recomendações de precificação e indicadores</li><li>Desenho ou configuração de automações acordadas</li><li>Orientações de uso e critérios de validação</li></ul></div>
+        <div class="panel"><h3>O que será confirmado antes da contratação</h3><ul><li>Imóveis, canais e processos abrangidos</li><li>Ferramentas e integrações tecnicamente viáveis</li><li>Responsabilidades e acessos necessários</li><li>Prazo e marcos de entrega</li><li>Preço, forma de pagamento e suporte incluído</li><li>Limitações, exclusões e critérios de aceite</li></ul></div>
+      </div>
+      <p class="lead" style="margin-top:1rem">Não publicamos um preço único porque o esforço depende do escopo e das integrações. Você receberá as condições por escrito para avaliar antes de decidir. O contato inicial não obriga à contratação.</p>
+    </section>
+
+    <section aria-labelledby="metrics">
+      <h2 id="metrics">Como avaliar se as melhorias funcionam</h2>
+      <p class="lead">Quando houver dados confiáveis, comparamos uma linha de base com períodos equivalentes. Os indicadores são escolhidos de acordo com o objetivo do projeto.</p>
+      <div class="grid">
+        <article class="card"><h3>Tempo de resposta</h3><p>Tempo médio ou mediano entre a mensagem recebida e a primeira resposta.</p></article>
+        <article class="card"><h3>Conversão de consultas</h3><p>Proporção de consultas que evoluem para reservas, quando esse dado está disponível.</p></article>
+        <article class="card"><h3>Desempenho da hospedagem</h3><p>Ocupação, diária média e receita por noite disponível, contextualizadas por sazonalidade e oferta.</p></article>
+      </div>
+      <p class="notice">Esses indicadores ajudam a observar a operação, mas não provam isoladamente que uma automação causou uma mudança. Demanda, localização, qualidade do imóvel, preços, concorrência e outros fatores também influenciam os resultados.</p>
+    </section>
+
+    <section aria-labelledby="coverage">
+      <h2 id="coverage">Atendimento no litoral paulista</h2>
+      <p class="lead">A Praia Digital avalia projetos em cidades do litoral de São Paulo. Informe a cidade, o número de imóveis e como sua operação funciona para confirmarmos disponibilidade e adequação do serviço. A cobertura de cada projeto é confirmada no contato inicial.</p>
+    </section>
+
+    <section id="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">Perguntas frequentes</h2>
+      <details><summary>Quais entregas estão incluídas?</summary><p>O escopo é definido após o diagnóstico e pode incluir mapeamento de processos, revisão de fluxos de atendimento, recomendações de precificação, desenho de automações e indicadores. As entregas exatas, ferramentas e limites são confirmados na proposta antes da contratação.</p></details>
+      <details><summary>A automação garante maior ocupação ou receita?</summary><p>Não. O serviço busca organizar processos e apoiar decisões. Ocupação, tarifas e receita dependem de fatores como demanda, imóvel, sazonalidade, concorrência, disponibilidade e execução. Não há garantia de resultado financeiro.</p></details>
+      <details><summary>Vocês integram Airbnb, Stays ou PriceLabs automaticamente?</summary><p>Integrações dependem dos recursos disponíveis em cada plataforma, permissões, plano contratado, acesso técnico e validação de viabilidade. Nenhuma conexão automática é presumida; as integrações possíveis são confirmadas na proposta.</p></details>
+      <details><summary>Quanto custa e quanto tempo leva?</summary><p>Preço e prazo dependem da quantidade de imóveis, dos processos envolvidos e das integrações necessárias. Após uma conversa inicial, a Praia Digital confirma escopo, entregáveis, prazo, preço e condições antes de qualquer contratação.</p></details>
+      <details><summary>Quais localidades são atendidas?</summary><p>A Praia Digital avalia projetos no litoral paulista. A disponibilidade para cada cidade e operação é confirmada durante o contato inicial.</p></details>
+      <details><summary>O serviço substitui a equipe ou o suporte das plataformas?</summary><p>Não. O serviço é de apoio à organização e melhoria de processos e não substitui equipes, prestadores locais, suporte oficial das plataformas ou obrigações legais do anfitrião.</p></details>
+      <details><summary>Como começo?</summary><p>Entre em contato e informe sua cidade, quantos imóveis administra, quais canais utiliza e qual tarefa mais consome tempo hoje. Com essas informações, podemos avaliar o próximo passo.</p></details>
+    </section>
+
+    <section class="cta" aria-labelledby="contact-title">
+      <h2 id="contact-title">Vamos identificar o próximo passo para sua operação?</h2>
+      <p>Envie as informações básicas do seu negócio. A conversa inicial serve para entender a necessidade e avaliar o escopo; prazo, preço e entregas serão confirmados antes de qualquer contratação.</p>
+      <a class="btn primary" href="https://wa.me/5511954346288?text=Ol%C3%A1%2C%20quero%20avaliar%20a%20opera%C3%A7%C3%A3o%20do%20meu%20aluguel%20por%20temporada.%20Cidade%3A%20%5Bpreencher%5D.%20Quantidade%20de%20im%C3%B3veis%3A%20%5Bpreencher%5D.%20Principal%20desafio%3A%20%5Bpreencher%5D." target="_blank" rel="noopener noreferrer">Conversar pelo WhatsApp</a>
+      <p style="font-size:.88rem">WhatsApp comercial: o contato não implica contratação nem garante disponibilidade imediata.</p>
+    </section>
+  </main>
+  <footer><p>© Praia Digital · Soluções para aluguel por temporada no litoral paulista.</p><p>Airbnb, Stays e PriceLabs são marcas de terceiros. Esta página não representa endosso oficial nem substitui o suporte dessas plataformas.</p></footer>
+</body>
+</html>
