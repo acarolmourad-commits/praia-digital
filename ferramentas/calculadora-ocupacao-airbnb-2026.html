@@ -37,7 +37,7 @@
     <meta name="pd-shared-nav">
     <main id="main">
       <h1>Calculadora de Ocupação — Airbnb 2026</h1>
-      <p class="lead">Qual ocupação você precisa para bater sua meta de receita? Compare com a média da sua cidade.</p>
+      <p class="lead">Qual ocupação você precisa para cobrir custos e atingir sua meta? Ajuste as noites em que o imóvel realmente estará disponível.</p>
       <div class="card"><div class="grid">
         <div><label for="cidade">Cidade</label><select id="cidade">
 <option>Santos</option><option>Guarujá</option><option>Praia Grande</option>
@@ -46,8 +46,10 @@
 <option>Ilhabela</option><option>Bertioga</option><option>Outra</option></select></div>
  <div><label for="diaria">Diária média (R$)</label><input id="diaria" type="number" value="450"></div>
  <div><label for="meta">Meta de receita mensal (R$)</label><input id="meta" type="number" value="6000"></div>
- <div><label for="custos">Custos fixos mensais (R$)</label><input id="custos" type="number" value="1500"></div>
+ <div><label for="custos">Custos fixos mensais (R$)</label><input id="custos" type="number" min="0" step="0.01" value="1500"></div>
+ <div><label for="disponiveis">Noites disponíveis por ano</label><input id="disponiveis" type="number" min="1" max="365" step="1" value="365"></div>
       </div><button class="btn" id="calcular" type="button">Calcular</button></div>
+      <p class="lead">Referências de cidade são parâmetros ilustrativos e não representam dados oficiais ou atualizados em tempo real. Use dados próprios para decisões financeiras.</p>
       <div class="card resultado" id="resultado">
         <h2>Resultado</h2>
         <p><span class="destaque" id="principal"></span></p>
@@ -56,16 +58,16 @@
       </div>
       <div class="card resultado" id="captura">
         <h2>Receba a análise completa por e-mail</h2>
-        <p class="lead">Comparamos seus números com os dados <strong>reais e atualizados</strong> do seu bairro e enviamos o relatório completo no seu e-mail.</p>
+        <p class="lead">Você pode baixar um resumo da simulação neste dispositivo. As referências por cidade abaixo são ilustrativas, não dados oficiais em tempo real. Se optar por enviar seus dados, o formulário tentará encaminhá-los por e-mail; a confirmação só será exibida se o serviço responder com sucesso.</p>
         <div class="grid">
           <div><label for="lead-nome">Seu nome</label><input id="lead-nome" type="text"></div>
           <div><label for="lead-email">Seu e-mail</label><input id="lead-email" type="email"></div>
         </div>
         <button class="btn" id="enviar-simulacao" type="button">Enviar análise completa para meu e-mail</button>
         <div id="pos-envio" style="display:none; margin-top:18px;">
-          <p style="color:#7ee787; font-weight:600;">✅ Recebido! A análise completa chega no seu e-mail em instantes.</p>
-          <p><a class="btn" id="baixar-relatorio" href="#" download="analise-praia-digital.html">⬇️ Baixar meu relatório agora</a></p>
-          <p class="lead" style="margin-top:14px;">💡 <strong>Seu relatório é uma prévia.</strong> A versão completa inclui comparativo por bairro, sazonalidade 2026/2027 e plano de precificação por IA. Quando quiser, <a href="/ferramentas/" style="color:#7ee9ff;">explore outras ferramentas gratuitas</a>.</p>
+          <p id="status-envio" role="status" aria-live="polite" style="font-weight:600;"></p>
+          <p><a class="btn" id="baixar-relatorio" href="#" download="analise-praia-digital.html">⬇️ Baixar resumo da simulação</a></p>
+          <p class="lead" style="margin-top:14px;">O arquivo baixado contém os resultados calculados nesta página; não inclui pesquisa de mercado ou análise enviada automaticamente. <a href="/ferramentas/" style="color:#7ee9ff;">Explore outras ferramentas gratuitas</a>.</p>
         </div>
       </div>
     </main>
@@ -89,24 +91,27 @@ document.getElementById('calcular').addEventListener('click', function(){
   var cidade = txt('cidade'), bm = BENCHMARKS[cidade] || BENCHMARKS['Outra'];
   var diaria = num('diaria'), meta = num('meta'), custos = num('custos');
   if (diaria <= 0) { alert('Informe a diária média.'); return; }
-  var ocupEmpate = (custos * 12) / (diaria * 365) * 100;
-  var ocupMeta = ((meta + custos) * 12) / (diaria * 365) * 100;
+  var disponiveis = num('disponiveis');
+  if (meta < 0 || custos < 0 || disponiveis < 1 || disponiveis > 365) { alert('Informe valores não negativos e de 1 a 365 noites disponíveis.'); return; }
+  var ocupEmpate = (custos * 12) / (diaria * disponiveis) * 100;
+  var ocupMeta = ((meta + custos) * 12) / (diaria * disponiveis) * 100;
   document.getElementById('principal').textContent = 'Ocupação necessária: ' + pct(ocupMeta);
+  if (ocupMeta > 100) document.getElementById('dica').textContent = 'A meta não é alcançável com esses valores: a ocupação necessária supera 100%. Aumente a diária, reduza custos/meta ou revise as noites disponíveis.';
   document.getElementById('detalhes').innerHTML = '<table><tr><th>Indicador</th><th>Valor</th></tr>'
     + '<tr><td>Ocupação para empatar (custos)</td><td>' + pct(ocupEmpate) + '</td></tr>'
     + '<tr><td>Ocupação para sua meta</td><td>' + pct(ocupMeta) + '</td></tr>'
     + '<tr><td>Ocupação média em ' + cidade + '</td><td>' + pct(bm.ocup) + '</td></tr></table>';
-  document.getElementById('dica').textContent = ocupMeta > bm.ocup
+  if (ocupMeta <= 100) document.getElementById('dica').textContent = ocupMeta > bm.ocup
     ? 'Sua meta exige ocupação acima da média de ' + cidade + ' (' + pct(bm.ocup) + ') — subir a diária pode ser mais fácil que subir ocupação.'
     : 'Sua meta é viável: exige ocupação abaixo da média de ' + cidade + ' (' + pct(bm.ocup) + ').';
   window.__sim = { cidade: cidade, ocupacao_meta: pct(ocupMeta), ocupacao_empate: pct(ocupEmpate),
-    ocupacao_mercado: pct(bm.ocup) };
+    ocupacao_mercado: pct(bm.ocup), noites_disponiveis: disponiveis, diaria_informada: brl(diaria), meta_mensal: brl(meta), custos_mensais: brl(custos) };
   document.getElementById('resultado').classList.add('ativo');
   document.getElementById('captura').classList.add('ativo');
   document.getElementById('resultado').scrollIntoView({behavior:'smooth'});
 });
 
-document.getElementById('enviar-simulacao').addEventListener('click', function(){
+document.getElementById('enviar-simulacao').addEventListener('click', async function(){
   if (!window.__sim) { alert('Calcule primeiro.'); return; }
   var nome = txt('lead-nome'), email = txt('lead-email');
   if (!email || email.indexOf('@') < 0) { alert('Informe um e-mail válido.'); return; }
@@ -114,12 +119,14 @@ document.getElementById('enviar-simulacao').addEventListener('click', function()
   var dados = { _subject: 'Novo lead — Calculadora de Ocupação — Airbnb 2026 — ' + nome };
   for (var k in s) dados[k] = s[k];
   dados.nome = nome; dados.email = email;
+  var envioOk = false;
   try {
-    fetch('https://formsubmit.co/ajax/comercial@praia.digital', {
+    var resposta = await fetch('https://formsubmit.co/ajax/comercial@praia.digital', {
       method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'},
       body: JSON.stringify(dados)
     });
-  } catch(e) {}
+    envioOk = resposta.ok;
+  } catch(e) { envioOk = false; }
   var rel = '<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><title>Calculadora de Ocupação — Airbnb 2026 — Praia Digital</title>'
     + '<style>body{font-family:Arial;max-width:800px;margin:30px auto;padding:0 20px;color:#222}'
     + 'h1{color:#003366}h2{color:#0066cc}table{width:100%;border-collapse:collapse;margin:10px 0}'
@@ -135,6 +142,9 @@ document.getElementById('enviar-simulacao').addEventListener('click', function()
     + '<p><small>Praia Digital — tecnologia para o mercado imobiliário do litoral</small></p></body></html>';
   var blob = new Blob([rel], {type:'text/html'});
   document.getElementById('baixar-relatorio').href = URL.createObjectURL(blob);
+  var status = document.getElementById('status-envio');
+  status.textContent = envioOk ? 'Solicitação enviada ao serviço de e-mail.' : 'Não foi possível confirmar o envio por e-mail. Você ainda pode baixar o resumo abaixo.';
+  status.style.color = envioOk ? '#7ee787' : '#ffd166';
   document.getElementById('pos-envio').style.display = 'block';
   document.getElementById('pos-envio').scrollIntoView({behavior:'smooth'});
 });
