@@ -102,8 +102,8 @@ document.getElementById('calcular').addEventListener('click', function(){
     + '<tr><td>Ocupação para sua meta</td><td>' + pct(ocupMeta) + '</td></tr>'
     + '<tr><td>Referência ilustrativa de ocupação em ' + cidade + '</td><td>' + pct(bm.ocup) + '</td></tr></table>';
   if (ocupMeta <= 100) document.getElementById('dica').textContent = ocupMeta > bm.ocup
-    ? 'Sua meta exige ocupação acima da média de ' + cidade + ' (' + pct(bm.ocup) + ') — subir a diária pode ser mais fácil que subir ocupação.'
-    : 'Sua meta é viável: exige ocupação abaixo da média de ' + cidade + ' (' + pct(bm.ocup) + ').';
+    ? 'Sua meta exige ocupação acima da referência ilustrativa de ' + cidade + ' (' + pct(bm.ocup) + ') — subir a diária pode ser mais fácil que subir ocupação.'
+    : 'Sua meta é viável: exige ocupação abaixo da referência ilustrativa de ' + cidade + ' (' + pct(bm.ocup) + ').';
   window.__sim = { cidade: cidade, ocupacao_meta: pct(ocupMeta), ocupacao_empate: pct(ocupEmpate),
     ocupacao_mercado: pct(bm.ocup), noites_disponiveis: disponiveis, diaria_informada: brl(diaria), meta_mensal: brl(meta), custos_mensais: brl(custos) };
   document.getElementById('resultado').classList.add('ativo');
