@@ -1,118 +1,195 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-        {
-      "@type": "Question",
-      "name": "Como solicitar mais informações?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Pelo WhatsApp ou formulário na página para atendimento rápido."
-      }
-    },    {
-      "@type": "Question",
-      "name": "Quais cidades são atendidas?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Todo o litoral de SP: Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente e Peruíbe."
-      }
-    },    {
-      "@type": "Question",
-      "name": "Quanto tempo para retorno?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Em até 24 horas após o contato, com atendimento humanizado."
-      }
-    }
-  ]
-}
-</script>
-
-  <meta name="keywords" content="Comparador Airbnb x Aluguel tradicional, Aluguel tradicional mensal R$ &lt;input id=&quot;a&quot; type=&quot;number&quot; value=&quot;2800&quot;&gt; | Diária média Airbnb R$ &lt;input..., imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
-  <meta name="description" content="Aluguel tradicional mensal R$ &lt;input id=&quot;a&quot; type=&quot;number&quot; value=&quot;2800&quot;&gt; | Diária média Airbnb R$ &lt;input...">
-  <meta charset="UTF-8">
-  
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Comparador Airbnb x Aluguel tradicional</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Airbnb ou aluguel tradicional? Compare o resultado líquido | Praia Digital</title>
+<meta name="description" content="Compare aluguel por temporada e aluguel tradicional na mesma base mensal e anual. Simule ocupação, vacância, taxas, administração, limpeza, condomínio, IPTU e manutenção.">
+<link rel="canonical" href="https://praia.digital/ferramentas/comparador-airbnb-aluguel-tradicional-2026.html">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Airbnb ou aluguel tradicional? Compare o resultado líquido">
+<meta property="og:description" content="Simule receitas, vacância, taxas e despesas do proprietário em uma comparação mensal e anual.">
+<meta property="og:url" content="https://praia.digital/ferramentas/comparador-airbnb-aluguel-tradicional-2026.html">
+<meta name="theme-color" content="#123047">
 <style>
-body{font-family:Segoe UI,Arial,sans-serif;background:#f4f6f9;color:#1f2937;margin:0}
-main{max-width:900px;margin:0 auto;padding:2rem}
-input{padding:.45rem;margin:.25rem}
-button{padding:.5rem .9rem;border:0;background:#0a1628;color:#fff;border-radius:8px}
+:root{color-scheme:light;--ink:#173449;--muted:#536b79;--line:#d7e2e8;--paper:#f3f7f9;--brand:#087e8b;--brand-dark:#075d69;--good:#176b45;--bad:#a33b32}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+a{color:#075e79}header,main,footer{width:min(1080px,100%);margin-inline:auto;padding-inline:20px}
+header{padding-top:22px}header a{font-weight:650;text-decoration:none}.eyebrow{margin-top:30px;color:var(--brand-dark);font-size:.78rem;font-weight:750;letter-spacing:.12em;text-transform:uppercase}
+h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.1;max-width:850px;margin:.45rem 0 1rem}h2{font-size:1.4rem;line-height:1.25;margin:0 0 14px}h3{font-size:1.05rem;margin:0 0 10px}
+.lead{max-width:760px;color:var(--muted)}.notice{margin:22px 0;padding:14px 16px;border-left:4px solid var(--brand);background:#e7f2f4;border-radius:8px}
+main{padding-top:14px;padding-bottom:50px}.panel{background:white;border:1px solid var(--line);border-radius:16px;padding:clamp(16px,3vw,26px);margin:18px 0;box-shadow:0 6px 24px #15394b0a}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.field{min-width:0}.field label{display:block;font-size:.92rem;font-weight:650;margin-bottom:5px}
+input{width:100%;min-height:44px;padding:9px 11px;border:1px solid #9fb3be;border-radius:8px;background:white;color:var(--ink);font:inherit;font-variant-numeric:tabular-nums}
+input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #55c5d0;outline-offset:2px}
+.hint,.muted{color:var(--muted);font-size:.88rem}.hint{display:block;margin-top:3px}
+.actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:20px}
+button{min-height:46px;padding:11px 20px;border:0;border-radius:9px;background:var(--brand);color:white;font:inherit;font-weight:750;cursor:pointer}
+button:hover{background:var(--brand-dark)}button.secondary{background:#e8eff2;color:var(--ink)}button.secondary:hover{background:#dce8ed}
+.results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.result{border:1px solid var(--line);border-radius:12px;padding:17px;min-width:0}.result h3{margin-bottom:8px}.big{font-size:clamp(1.45rem,3vw,2rem);font-weight:800;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:12px}.metric{padding:10px;background:#f3f7f9;border-radius:8px}.metric span{display:block;color:var(--muted);font-size:.82rem}.metric strong{font-variant-numeric:tabular-nums}
+.verdict{margin-top:16px;padding:14px;border-radius:9px;background:#e9f3ef}.positive{color:var(--good)}.negative{color:var(--bad)}
+table{width:100%;border-collapse:collapse;margin-top:15px;font-variant-numeric:tabular-nums}th,td{text-align:right;padding:10px 8px;border-bottom:1px solid var(--line)}th:first-child,td:first-child{text-align:left}thead th{font-size:.85rem;color:var(--muted)}
+details{margin:14px 0}summary{cursor:pointer;font-weight:700;padding:8px 0}
+ul{padding-left:22px}li{margin:7px 0}.sources a{overflow-wrap:anywhere}
+footer{padding-top:8px;padding-bottom:35px;color:var(--muted);font-size:.9rem}
+@media(max-width:680px){header,main,footer{padding-inline:14px}.grid,.results{grid-template-columns:1fr}.fields{gap:10px}.panel{padding:16px}.metrics{gap:7px}th,td{padding:8px 5px;font-size:.88rem}}
+@media(max-width:390px){.fields{grid-template-columns:1fr}.actions button{width:100%}}
 </style>
-  <link rel="canonical" href="https://praia.digital/ferramentas/comparador-airbnb-aluguel-tradicional-2026.html">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Comparador Airbnb x Aluguel tradicional">
-  <meta property="og:description" content="Aluguel tradicional mensal R$ &lt;input id=&quot;a&quot; type=&quot;number&quot; value=&quot;2800&quot;&gt; | Diária média Airbnb R$ &lt;input...">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Praia Digital — imóveis no litoral com IA">
-  <meta property="og:site_name" content="Praia Digital">
-  <meta property="og:url" content="https://praia.digital/ferramentas/comparador-airbnb-aluguel-tradicional-2026.html">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Comparador Airbnb x Aluguel tradicional">
-  <meta name="twitter:description" content="Aluguel tradicional mensal R$ &lt;input id=&quot;a&quot; type=&quot;number&quot; value=&quot;2800&quot;&gt; | Diária média Airbnb R$ &lt;input...">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
-  <link rel="alternate" hreflang="pt-BR" href="https://praia.digital/ferramentas/comparador-airbnb-aluguel-tradicional-2026.html">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="referrer" content="no-referrer-when-downgrade">
-<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
-<link rel="preconnect" href="https://praia.digital/" crossorigin>
-<link rel="icon" type="image/x-icon" href="https://praia.digital/favicon.ico">
-<link rel="apple-touch-icon" href="https://praia.digital/favicon.ico">
-<link rel="manifest" href="https://praia.digital/manifest.json">
-<meta name="robots" content="index, follow">
-<meta property="og:locale" content="pt_BR">
-<link rel="stylesheet" href="https://praia.digital/css/style.css">
-<meta name="theme-color" content="#0ea5e9">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Praia Digital",
-  "url": "https://praia.digital/",
-  "logo": "https://praia.digital/img/logo.png",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+55-11-95434-6288",
-    "contactType": "sales",
-    "areaServed": "BR",
-    "availableLanguage": ["pt-BR", "en"]
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-    "opens": "09:00",
-    "closes": "18:00"
-  }
-}
-</script>
-  <link rel="dns-prefetch" href="https://images.unsplash.com">
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
-</script>
 </head>
 <body>
-<meta name="pd-shared-nav">
-<a class="skip-link" href="#main" style="position:absolute;left:-9999px;">Pular para o conteúdo</a>
-<main id="main">
-  <h1>Comparador Airbnb x Aluguel tradicional</h1>
-  <p>Aluguel tradicional mensal R$ &lt;input id=&quot;a&quot; type=&quot;number&quot; value=&quot;2800&quot;&gt; | Diária média Airbnb R$ &lt;input id=&quot;d&quot; type=&quot;number&quot; value=&quot;320&quot;&gt; | Ocupação % &lt;input id=&quot;o&quot; type=&quot;number&quot; value=&quot;60&quot;&gt; &lt;br/&gt;&lt;button onclick=&quot;const a=+document.getElementById(&#x27;a&#x27;).value,d=+document.getElementById(&#x27;d&#x27;).value,o=+document.getElementById(&#x27;o&#x27;).value/100;const anual_airbnb=d*o*365;const anual_trad=a*12;document.getElementById(&#x27;r&#x27;).textContent=&#x27;Anual Airbnb: R$ &#x27;+anual_airbnb.toLocaleString(&#x27;pt-BR&#x27;)+&#x27; | Tradicional: R$ &#x27;+anual_trad.toLocaleString(&#x27;pt-BR&#x27;)+&#x27; | Diferença: R$ &#x27;+(anual_airbnb-anual_trad).toLocaleString(&#x27;pt-BR&#x27;);&quot;&gt;Comparar&lt;/button&gt;&lt;p id=&quot;r&quot;&gt;&lt;/p&gt;</p>
-  <p><a href="airbnb-admin.html">← Voltar para Área Administrador Airbnb</a></p>
+<header>
+<a href="/">← Praia Digital</a>
+<div class="eyebrow">Ferramenta gratuita · 2026</div>
+<h1>Airbnb ou aluguel tradicional: qual deixa mais resultado?</h1>
+<p class="lead">Compare as duas modalidades usando o mesmo horizonte de 12 meses e despesas que realmente ficam com o proprietário. Ajuste as premissas ao seu imóvel; não existe taxa ou ocupação universal.</p>
+<div class="notice"><strong>Importante:</strong> simulação financeira, não promessa de rendimento. O resultado operacional estimado não é lucro contábil nem substitui a análise de impostos, financiamento ou regras do condomínio.</div>
+</header>
+<main id="conteudo">
+<form id="comparator" novalidate>
+<section class="panel" aria-labelledby="base-title">
+<h2 id="base-title">1. Horizonte e disponibilidade</h2>
+<div class="fields">
+<div class="field"><label for="days">Dias disponíveis para temporada no ano</label><input id="days" name="days" type="number" min="0" max="366" step="1" value="330" inputmode="numeric"><span class="hint">Desconte dias bloqueados para uso próprio ou indisponibilidade.</span></div>
+<div class="field"><label for="occupancy">Ocupação das noites disponíveis (%)</label><input id="occupancy" name="occupancy" type="number" min="0" max="100" step="0.1" value="55" inputmode="decimal"><span class="hint">Percentual aplicado somente aos dias disponíveis.</span></div>
+<div class="field"><label for="avgStay">Duração média de cada reserva (noites)</label><input id="avgStay" name="avgStay" type="number" min="1" max="366" step="1" value="4" inputmode="numeric"></div>
+<div class="field"><label for="monthsVacant">Vacância do aluguel tradicional (meses/ano)</label><input id="monthsVacant" name="monthsVacant" type="number" min="0" max="12" step="0.1" value="1" inputmode="decimal"><span class="hint">Inclua períodos sem inquilino entre contratos.</span></div>
+</div>
+</section>
+<div class="grid">
+<section class="panel" aria-labelledby="season-title">
+<h2 id="season-title">2. Airbnb / temporada</h2>
+<div class="fields">
+<div class="field"><label for="nightly">Diária média recebida (R$)</label><input id="nightly" type="number" min="0" step="0.01" value="320" inputmode="decimal"></div>
+<div class="field"><label for="platform">Taxa da plataforma (%)</label><input id="platform" type="number" min="0" max="100" step="0.1" value="16" inputmode="decimal"><span class="hint">Edite conforme a estrutura e o extrato da sua conta.</span></div>
+<div class="field"><label for="seasonAdmin">Administração / coanfitrião (%)</label><input id="seasonAdmin" type="number" min="0" max="100" step="0.1" value="0" inputmode="decimal"></div>
+<div class="field"><label for="cleaning">Custo de limpeza por saída (R$)</label><input id="cleaning" type="number" min="0" step="0.01" value="150" inputmode="decimal"><span class="hint">Informe o custo líquido pago pelo proprietário, após eventual cobrança ao hóspede.</span></div>
+<div class="field"><label for="seasonCondo">Condomínio mensal pago pelo proprietário (R$)</label><input id="seasonCondo" type="number" min="0" step="0.01" value="600" inputmode="decimal"></div>
+<div class="field"><label for="seasonTax">IPTU mensal equivalente pago pelo proprietário (R$)</label><input id="seasonTax" type="number" min="0" step="0.01" value="150" inputmode="decimal"></div>
+<div class="field"><label for="seasonMaintenance">Manutenção / reposição mensal (R$)</label><input id="seasonMaintenance" type="number" min="0" step="0.01" value="200" inputmode="decimal"></div>
+<div class="field"><label for="seasonOther">Outras despesas mensais do proprietário (R$)</label><input id="seasonOther" type="number" min="0" step="0.01" value="250" inputmode="decimal"><span class="hint">Ex.: internet, energia, água, gás, seguro e consumíveis.</span></div>
+<div class="field"><label for="seasonSetup">Investimento inicial específico (R$)</label><input id="seasonSetup" type="number" min="0" step="0.01" value="0" inputmode="decimal"><span class="hint">Mobília, enxoval, fotos, fechadura etc.</span></div>
+</div>
+</section>
+<section class="panel" aria-labelledby="traditional-title">
+<h2 id="traditional-title">3. Aluguel tradicional</h2>
+<div class="fields">
+<div class="field"><label for="rent">Aluguel mensal contratado (R$)</label><input id="rent" type="number" min="0" step="0.01" value="2800" inputmode="decimal"></div>
+<div class="field"><label for="rentAdmin">Administração imobiliária (%)</label><input id="rentAdmin" type="number" min="0" max="100" step="0.1" value="0" inputmode="decimal"><span class="hint">Use a comissão prevista no contrato, se houver.</span></div>
+<div class="field"><label for="rentCondo">Condomínio mensal pago pelo proprietário (R$)</label><input id="rentCondo" type="number" min="0" step="0.01" value="0" inputmode="decimal"><span class="hint">Não inclua despesas ordinárias repassadas ao inquilino.</span></div>
+<div class="field"><label for="rentTax">IPTU mensal equivalente pago pelo proprietário (R$)</label><input id="rentTax" type="number" min="0" step="0.01" value="150" inputmode="decimal"></div>
+<div class="field"><label for="rentMaintenance">Manutenção / seguro mensal (R$)</label><input id="rentMaintenance" type="number" min="0" step="0.01" value="150" inputmode="decimal"></div>
+<div class="field"><label for="rentOther">Outras despesas mensais do proprietário (R$)</label><input id="rentOther" type="number" min="0" step="0.01" value="0" inputmode="decimal"></div>
+<div class="field"><label for="rentSetup">Investimento inicial específico (R$)</label><input id="rentSetup" type="number" min="0" step="0.01" value="0" inputmode="decimal"><span class="hint">Reformas, adequações ou custos de entrada.</span></div>
+<div class="field"><label for="horizon">Prazo para diluir o investimento (anos)</label><input id="horizon" type="number" min="1" max="30" step="1" value="5" inputmode="numeric"><span class="hint">Usado apenas para mostrar resultado após amortização gerencial.</span></div>
+</div>
+</section>
+</div>
+<div class="actions">
+<button type="submit">Calcular comparação</button>
+<button class="secondary" type="reset">Restaurar valores iniciais</button>
+</div>
+<p id="error" role="alert" aria-live="assertive" class="negative"></p>
+</form>
+<section class="panel" id="results" aria-labelledby="results-title" aria-live="polite">
+<h2 id="results-title">4. Resultado comparável</h2>
+<p class="muted">Preencha os campos e selecione “Calcular comparação”. Todos os valores abaixo usam o mesmo período de 12 meses.</p>
+<div id="output" hidden>
+<div class="results">
+<div class="result"><h3>Temporada / Airbnb</h3><div class="big" id="seasonNet"></div><span class="muted">Resultado operacional anual estimado, antes de IR e financiamento</span><div class="metrics"><div class="metric"><span>Receita bruta anual</span><strong id="seasonGross"></strong></div><div class="metric"><span>Média mensal líquida</span><strong id="seasonMonthly"></strong></div><div class="metric"><span>Noites ocupadas</span><strong id="occupied"></strong></div><div class="metric"><span>Despesas anuais</span><strong id="seasonCosts"></strong></div></div></div>
+<div class="result"><h3>Aluguel tradicional</h3><div class="big" id="rentNet"></div><span class="muted">Resultado operacional anual estimado, antes de IR e financiamento</span><div class="metrics"><div class="metric"><span>Receita bruta efetiva</span><strong id="rentGross"></strong></div><div class="metric"><span>Média mensal líquida</span><strong id="rentMonthly"></strong></div><div class="metric"><span>Meses vagos</span><strong id="vacant"></strong></div><div class="metric"><span>Despesas anuais</span><strong id="rentCosts"></strong></div></div></div>
+</div>
+<div class="verdict" id="verdict"></div>
+<h3 style="margin-top:22px">Comparação mensal e anual</h3>
+<table><thead><tr><th scope="col">Indicador</th><th scope="col">Temporada</th><th scope="col">Tradicional</th></tr></thead><tbody>
+<tr><th scope="row">Receita bruta anual</th><td id="tSeasonGross"></td><td id="tRentGross"></td></tr>
+<tr><th scope="row">Despesas operacionais anuais</th><td id="tSeasonCosts"></td><td id="tRentCosts"></td></tr>
+<tr><th scope="row">Resultado operacional anual</th><td id="tSeasonNet"></td><td id="tRentNet"></td></tr>
+<tr><th scope="row">Resultado operacional mensal médio</th><td id="tSeasonMonthly"></td><td id="tRentMonthly"></td></tr>
+<tr><th scope="row">Resultado anual após diluir investimento</th><td id="tSeasonAfter"></td><td id="tRentAfter"></td></tr>
+</tbody></table>
+<h3 style="margin-top:22px">Ponto de equilíbrio da temporada</h3>
+<p id="breakEven"></p><p id="rateBreakEven"></p>
+</div>
+</section>
+<section class="panel">
+<h2>Como interpretar corretamente</h2>
+<ul>
+<li><strong>Receita bruta:</strong> aluguel antes de descontar taxas e despesas do proprietário. Taxas cobradas do hóspede não são receita do anfitrião, salvo quando efetivamente repassadas a ele.</li>
+<li><strong>Resultado operacional:</strong> receita efetiva menos as despesas informadas. Não é lucro líquido fiscal: IR, IBS/CBS quando aplicáveis, juros, parcelas de financiamento e depreciação não são calculados.</li>
+<li><strong>Limpeza:</strong> o modelo estima saídas dividindo noites ocupadas pela duração média da estadia. Informe o custo que de fato fica com você, descontando o que receber do hóspede.</li>
+<li><strong>Condomínio e IPTU:</strong> informe apenas a parcela que cabe ao proprietário em cada modalidade. No aluguel tradicional, a responsabilidade contratual e legal pode alterar quem paga cada encargo.</li>
+<li><strong>Investimento inicial:</strong> aparece separado e também pode ser diluído pelo prazo escolhido. A amortização é uma visão gerencial, não uma apuração contábil ou fiscal.</li>
+</ul>
+<p class="muted">A comparação mantém 12 meses para ambas as modalidades. A ocupação incide sobre noites disponíveis; a vacância reduz os meses efetivamente alugados no contrato tradicional. Sazonalidade não é prevista automaticamente: use uma diária média ponderada realista ou simule cenários separados.</p>
+</section>
+<section class="panel sources">
+<h2>Fontes e limites</h2>
+<ul>
+<li><a href="https://www.airbnb.com.br/help/article/1857" target="_blank" rel="noopener noreferrer">Airbnb — taxas de serviço</a>: a central de ajuda informa estruturas diferentes; para anúncios no Brasil, a taxa única indicada é 16%, enquanto a estrutura dividida pode ter taxa de anfitrião diferente. Confira a taxa efetiva de cada reserva.</li>
+<li><a href="https://www.planalto.gov.br/ccivil_03/leis/l8245.htm" target="_blank" rel="noopener noreferrer">Lei nº 8.245/1991 (Lei do Inquilinato)</a>: regras de encargos do locador e do locatário, despesas ordinárias e extraordinárias de condomínio e locação por temporada.</li>
+<li><a href="https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/preenchimento/manual-mir/rendimentos/rendimentos-do-capital" target="_blank" rel="noopener noreferrer">Receita Federal — rendimentos do capital</a>: tratamento de rendimentos de aluguel por temporada e encargos dedutíveis quando suportados exclusivamente pelo locador.</li>
+</ul>
+<p class="muted">As taxas da plataforma e o tratamento tributário podem mudar. Consulte as regras vigentes e um profissional contábil para o seu enquadramento.</p>
+</section>
+<p><a href="/ferramentas/">← Ver outras ferramentas gratuitas</a></p>
 </main>
-<meta name="pd-shared-footer">
-<script src="https://praia.digital/js/shared.js?v=2.0"></script>
+<footer>Praia Digital · Inteligência imobiliária para o litoral paulista</footer>
+<script>
+(function(){
+'use strict';
+const form=document.getElementById('comparator');
+const error=document.getElementById('error');
+const output=document.getElementById('output');
+const money=new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:2});
+const number=new Intl.NumberFormat('pt-BR',{maximumFractionDigits:1});
+function val(id){return Number(document.getElementById(id).value);}
+function calculate(x){
+ const occupied=x.days*x.occupancy/100;
+ const stays=occupied===0?0:occupied/x.avgStay;
+ const seasonGross=occupied*x.nightly;
+ const seasonVariable=seasonGross*(x.platform+x.seasonAdmin)/100+stays*x.cleaning;
+ const seasonFixed=12*(x.seasonCondo+x.seasonTax+x.seasonMaintenance+x.seasonOther);
+ const seasonCosts=seasonVariable+seasonFixed;
+ const seasonNet=seasonGross-seasonCosts;
+ const rentGross=x.rent*(12-x.monthsVacant);
+ const rentCosts=rentGross*x.rentAdmin/100+12*(x.rentCondo+x.rentTax+x.rentMaintenance+x.rentOther);
+ const rentNet=rentGross-rentCosts;
+ const seasonAfter=seasonNet-x.seasonSetup/x.horizon;
+ const rentAfter=rentNet-x.rentSetup/x.horizon;
+ const perNightMargin=x.nightly*(1-(x.platform+x.seasonAdmin)/100)-x.cleaning/x.avgStay;
+ const fixedSeason=seasonFixed+x.seasonSetup/x.horizon;
+ const target=rentAfter+fixedSeason;
+ const breakEven=perNightMargin>0&&x.days>0?target/(x.days*perNightMargin)*100:null;
+ const rateBreakEven=occupied>0?(rentAfter+seasonCosts-x.seasonSetup/x.horizon)/(occupied*(1-(x.platform+x.seasonAdmin)/100)):null;
+ return {occupied,stays,seasonGross,seasonCosts,seasonNet,rentGross,rentCosts,rentNet,seasonAfter,rentAfter,breakEven,rateBreakEven};
+}
+function read(){
+ const x={days:val('days'),occupancy:val('occupancy'),avgStay:val('avgStay'),monthsVacant:val('monthsVacant'),nightly:val('nightly'),platform:val('platform'),seasonAdmin:val('seasonAdmin'),cleaning:val('cleaning'),seasonCondo:val('seasonCondo'),seasonTax:val('seasonTax'),seasonMaintenance:val('seasonMaintenance'),seasonOther:val('seasonOther'),seasonSetup:val('seasonSetup'),rent:val('rent'),rentAdmin:val('rentAdmin'),rentCondo:val('rentCondo'),rentTax:val('rentTax'),rentMaintenance:val('rentMaintenance'),rentOther:val('rentOther'),rentSetup:val('rentSetup'),horizon:val('horizon')};
+ const limits={days:[0,366],occupancy:[0,100],avgStay:[1,366],monthsVacant:[0,12],nightly:[0,1e7],platform:[0,100],seasonAdmin:[0,100],cleaning:[0,1e7],seasonCondo:[0,1e7],seasonTax:[0,1e7],seasonMaintenance:[0,1e7],seasonOther:[0,1e7],seasonSetup:[0,1e9],rent:[0,1e7],rentAdmin:[0,100],rentCondo:[0,1e7],rentTax:[0,1e7],rentMaintenance:[0,1e7],rentOther:[0,1e7],rentSetup:[0,1e9],horizon:[1,30]};
+ for(const [key,[min,max]] of Object.entries(limits)){
+  if(!Number.isFinite(x[key])||document.getElementById(key).value.trim()===''||x[key]<min||x[key]>max)throw new Error('Confira o campo "'+document.querySelector('[for="'+key+'"]').textContent+'". Informe um número entre '+min+' e '+max+'.');
+ }
+ if(x.avgStay<=0||x.horizon<=0)throw new Error('Duração média e prazo de amortização devem ser maiores que zero.');
+ return x;
+}
+function set(id,value){document.getElementById(id).textContent=value;}
+function render(r){
+ set('seasonNet',money.format(r.seasonNet));set('seasonGross',money.format(r.seasonGross));set('seasonMonthly',money.format(r.seasonNet/12));set('occupied',number.format(r.occupied)+' noites');set('seasonCosts',money.format(r.seasonCosts));
+ set('rentNet',money.format(r.rentNet));set('rentGross',money.format(r.rentGross));set('rentMonthly',money.format(r.rentNet/12));set('vacant',number.format(val('monthsVacant'))+' meses');set('rentCosts',money.format(r.rentCosts));
+ set('tSeasonGross',money.format(r.seasonGross));set('tRentGross',money.format(r.rentGross));set('tSeasonCosts',money.format(r.seasonCosts));set('tRentCosts',money.format(r.rentCosts));set('tSeasonNet',money.format(r.seasonNet));set('tRentNet',money.format(r.rentNet));set('tSeasonMonthly',money.format(r.seasonNet/12));set('tRentMonthly',money.format(r.rentNet/12));set('tSeasonAfter',money.format(r.seasonAfter));set('tRentAfter',money.format(r.rentAfter));
+ const delta=r.seasonAfter-r.rentAfter;
+ document.getElementById('verdict').textContent=delta>0?'Nas premissas informadas, temporada apresenta resultado anual após investimento '+money.format(delta)+' maior.':delta<0?'Nas premissas informadas, aluguel tradicional apresenta resultado anual após investimento '+money.format(Math.abs(delta))+' maior.':'Nas premissas informadas, os resultados após investimento são equivalentes.';
+ const b=r.breakEven;
+ set('breakEven',b===null?'Não há ponto de equilíbrio calculável com margem variável não positiva ou ausência de noites disponíveis.':b<=0?'Com as premissas atuais, o resultado da temporada já alcança o tradicional mesmo sem ocupação.':b>100?'A temporada precisaria de '+number.format(b)+'% de ocupação; acima de 100%, portanto não atinge o equilíbrio nas premissas atuais.':'A temporada precisa de aproximadamente '+number.format(b)+'% das noites disponíveis ocupadas para igualar o resultado tradicional após investimento.');
+ set('rateBreakEven',r.rateBreakEven===null||!Number.isFinite(r.rateBreakEven)?'Diária de equilíbrio: não calculável com zero noites ocupadas.':'Diária média de equilíbrio na ocupação informada: '+money.format(r.rateBreakEven)+'.');
+ output.hidden=false;
+}
+form.addEventListener('submit',function(e){e.preventDefault();error.textContent='';try{render(calculate(read()));}catch(err){error.textContent=err.message;output.hidden=true;}});
+form.addEventListener('reset',function(){error.textContent='';output.hidden=true;});
+})();
+</script>
 </body>
 </html>
