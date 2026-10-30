@@ -1,6 +1,12 @@
 # Payment-link safety — 2026-10-30
 
-## Current release
+## Verified service checkout update — 16:05 UTC
+
+The authorized active Stripe account was verified enabled for charges and payouts with no outstanding requirements. Three active LIVE Payment Links were created and independently read back, with exact one-time BRL prices and quantity 1: listing for one property/platform R$499; both platforms for the same property R$998; one-off pricing diagnostic R$499. Public allowlist: `assets/data/service-payment-links.json`.
+
+The site presents these links only after scope-confirmation guidance. Payment does not imply instant service delivery or Academy access. Continuous PriceLabs management remains separately quoted. No checkout transaction was performed, and unrelated payment links are unchanged. Legacy Academy sales remain paused and their public-source protection limitation remains unresolved.
+
+## Earlier state at 12:50 UTC
 
 No new Stripe checkout is published. The confirmed active merchant account is not currently enabled for charges; the authenticated Stripe integration rejected Payment Link creation. Three service product/price definitions were prepared separately, but there are no verified new payment URLs. Account remediation belongs to the owner in Stripe; no credentials, revenue declarations or payment-method settings are changed here.
 
