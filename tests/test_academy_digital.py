@@ -1,5 +1,5 @@
 """Public Academy consistency checks: actual pages, curriculum and delivery, not readiness flags."""
-import unittest,json,re,hashlib,subprocess,html,importlib.util
+import unittest,json,re,hashlib,subprocess,html,importlib.util,os,tempfile
 from pathlib import Path
 from html.parser import HTMLParser
 ROOT=Path(__file__).resolve().parents[1]
@@ -21,26 +21,31 @@ class Page(HTMLParser):
 class AcademyTest(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
-  cls.plans=json.loads((ROOT/'docs/academy/course-learning-plans.json').read_text());cls.catalog=json.loads((ROOT/'education/assets/catalog.json').read_text());cls.prices=json.loads((ROOT/'docs/academy/course-prices.json').read_text())
+  cls.plans=json.loads((ROOT/'docs/academy/public-offer-map.json').read_text());cls.catalog=json.loads((ROOT/'education/assets/catalog.json').read_text());cls.prices=json.loads((ROOT/'docs/academy/course-prices.json').read_text())
  def test_release_manifest_matches_sources(self):
   release=json.loads((ROOT/'education/assets/release.json').read_text())
   self.assertEqual(release['offerings'],len(self.catalog))
   self.assertEqual(release['catalog_sha256'],hashlib.sha256((ROOT/'education/assets/catalog.json').read_bytes()).hexdigest())
-  self.assertEqual(release['learning_plan_sha256'],hashlib.sha256((ROOT/'docs/academy/course-learning-plans.json').read_bytes()).hexdigest())
+  self.assertEqual(release['learning_plan_sha256'],self.plans['private_source_sha256'])
  def test_generator_rejects_incomplete_instruction(self):
   spec=importlib.util.spec_from_file_location('academy_builder',ROOT/'scripts/build_academy_digital.py')
   builder=importlib.util.module_from_spec(spec);spec.loader.exec_module(builder)
-  builder.read=lambda p: {'courses':{'unfinished':{}},'aliases':{}} if 'learning-plans' in p else {'courses':{'unfinished':29}}
-  with self.assertRaisesRegex(ValueError,'Instructional applications'):builder.build()
+  with tempfile.TemporaryDirectory() as temp:
+   source=Path(temp)/'input.json';source.write_text(json.dumps({'courses':{'unfinished':{}},'aliases':{}}))
+   with self.assertRaisesRegex(ValueError,'Instructional applications'):builder.build(source,Path(temp)/'output')
+  with self.assertRaisesRegex(ValueError,'required'):builder.build()
+  with self.assertRaisesRegex(ValueError,'outside'):builder.build(ROOT/'input.json',ROOT/'output')
  def test_inventory_reconciled(self):
   old=json.loads((ROOT/'docs/academy/inventory-64-cursos.json').read_text()); offered={c['slug'] for c in self.catalog};aliases=self.plans.get('aliases',{})
   self.assertEqual(len(old),64)
   self.assertFalse(set(aliases)&offered)
   for x in old:self.assertTrue(x['slug'] in offered or x['slug'] in aliases,x['slug'])
   self.assertEqual(len(offered),len(self.catalog))
+ @unittest.skipUnless(os.getenv('ACADEMY_PRIVATE_PLANS') and os.getenv('ACADEMY_PRIVATE_OUTPUT'),'Private curriculum audit runs separately with external inputs; public CI does not contain paid content')
  def test_differentiated_materials(self):
+  plans=json.loads(Path(os.environ['ACADEMY_PRIVATE_PLANS']).read_text())
   signatures=set()
-  for slug,c in self.plans['courses'].items():
+  for slug,c in plans['courses'].items():
    if slug in self.plans.get('aliases',{}):continue
    self.assertGreaterEqual(len(c['lessons']),3,slug)
    self.assertGreaterEqual(len(c['objectives']),3,slug)
@@ -64,7 +69,7 @@ class AcademyTest(unittest.TestCase):
    text=' '.join(paragraphs)
    self.assertGreaterEqual(len(text.split()),180,slug)
    sig=hashlib.sha256(text.encode()).hexdigest();self.assertNotIn(sig,signatures,slug);signatures.add(sig)
-   delivery=ROOT/f'docs/academy/delivery/{slug}.html'
+   delivery=Path(os.environ['ACADEMY_PRIVATE_OUTPUT'])/(slug+'.html')
    self.assertTrue(delivery.is_file(),slug)
    self.assertNotIn('href="/education/assets/academy.css"',delivery.read_text())
    self.assertIn('<style>',delivery.read_text())

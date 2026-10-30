@@ -31,3 +31,10 @@ docs/sales/*.html
 docs/sales/*.md
 blog/*2026-08-08*.html
 outreach/
+
+# Academy full authoring/delivery: keep outside this public repository.
+docs/academy/course-learning-plans*.json
+docs/academy/course-application-*.json
+docs/academy/delivery/
+private-content/
+academy-private-pdf/

@@ -38,6 +38,11 @@ jobs:
           cd academy
           pytest tests/ -q
 
+      - name: Reject private Academy material in public checkout
+        run: |
+          python scripts/check_academy_private_boundary.py
+          python -m unittest discover -s tests -p "test_academy_private_boundary.py"
+
       - name: Validate digital catalog and enrollment
         run: |
           python -m unittest discover -s tests -p "test_academy_digital.py"

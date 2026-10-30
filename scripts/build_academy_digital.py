@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Deterministic static Academy catalog. No payment/authentication side effects.
-Sources: reviewed learning plans and market-based price map under docs/academy.
+Full learning plans and workbook output must be supplied outside this repository.
+Public prices and offer structure remain under docs/academy.
 """
-import json, html, hashlib
+import json, html, hashlib, argparse, re
 from pathlib import Path
 from urllib.parse import quote
 ROOT=Path(__file__).resolve().parents[1]
@@ -53,16 +54,31 @@ def application_html(c):
 def practice_html(p):
  return '<section class="card"><h2>Atividade prática</h2><p>'+esc(p['scenario'])+'</p><ol>'+''.join('<li>'+esc(s)+'</li>' for s in p['steps'])+'</ol><h3>Entregável</h3><p>'+esc(p['deliverable'])+'</p><h3>Como revisar seu trabalho</h3>'+ul(p['review'])+'</section>'
 def card(c): return f'<article class="card" data-course><span class="tag">{esc(c.get("category") or c["kind"])}</span><h3><a href="{c["path"]}">{esc(c["title"])}</a></h3><p>{esc(c["scope"])}</p><p class="price">{money(c["price"])}</p><a href="{c["path"]}">Ver conteúdo e amostra →</a></article>'
-def build():
- plans=read('docs/academy/course-learning-plans.json'); prices=read('docs/academy/course-prices.json')
+def external_path(value,label):
+ if not value:raise ValueError(label+' is required; full course material must stay outside the public repository')
+ path=Path(value).expanduser().resolve()
+ if path==ROOT.resolve() or ROOT.resolve() in path.parents:raise ValueError(label+' must be outside the public repository')
+ return path
+def private_target(directory,slug):
+ target=directory/(slug+'.html')
+ if target.is_symlink() or (target.exists() and target.stat().st_nlink>1):raise ValueError('Private output must not use linked files')
+ resolved=target.resolve()
+ if directory not in resolved.parents or ROOT.resolve() in resolved.parents:raise ValueError('Private output escaped its external directory')
+ return target
+def build(plans_path=None,private_output=None):
+ plans_path=external_path(plans_path,'Private learning plans')
+ private_output=external_path(private_output,'Private workbook output')
+ plans=json.loads(plans_path.read_text(encoding='utf-8')); prices=read('docs/academy/course-prices.json')
  courses=plans['courses']; aliases=plans.get('aliases',{}); catalog=[]
  missing=[slug for slug,c in courses.items() if slug not in aliases and not c.get('application')]
  if missing:raise ValueError('Instructional applications must be complete before generating paid offers: '+', '.join(missing))
  for slug,c in courses.items():
+  if not re.fullmatch(r'[a-z0-9][a-z0-9-]*',slug):raise ValueError('Unsafe course identifier')
   if slug in aliases:continue
   a=c['application']
   if len(a.get('procedure',[]))<3 or len(a.get('filled_template',[]))<3 or set(a.get('failure_case',{}))!={'scenario','diagnosis','correction','verification'}:raise ValueError('Incomplete application: '+slug)
   if slug not in prices['courses']:raise ValueError('Missing price: '+slug)
+  private_target(private_output,slug)
  for slug,c in courses.items():
   if slug in aliases: continue
   price=prices['courses'][slug]; path=f'/education/cursos/{slug}/index.html'
@@ -78,7 +94,8 @@ def build():
   full=f'<article class="reading"><p class="eyebrow">Apostila digital · edição outubro de 2026</p><h1>{esc(c["title"])}</h1><p>{esc(c["scope"])}</p><p>{POLICY}</p>{ul(c["objectives"])}'+''.join(lesson_html(x) for x in c['lessons'])+workbook_html(c)+application_html(c)+practice_html(c['practice'])+sources_html(c)+f'<h2>Seu caderno de respostas</h2><p>Salve ou imprima esta página em PDF pelo navegador. Registre suas respostas em um documento próprio; esta página não envia nem armazena seus dados.</p><div class="answer">Observações, hipóteses, resultados e próximos passos:</div><p>{LIMITS}</p></article>'
   delivery=shell(c['title'],c['scope'],path,full,noindex=True)
   delivery=delivery.replace('<link rel="stylesheet" href="/education/assets/academy.css">','<style>'+(ROOT/'education/assets/academy.css').read_text()+'</style>').replace('href="/','href="https://praia.digital/')
-  write(f'docs/academy/delivery/{slug}.html',delivery)
+  private_output.mkdir(parents=True,exist_ok=True)
+  private_target(private_output,slug).write_text(delivery.replace('><','>\n<')+'\n',encoding='utf-8')
  for old,new in aliases.items():
   target=f'/education/cursos/{new}/index.html';title=courses[new]['title']
   body=f'<h1>{esc(title)}</h1><p>Este endereço é uma versão anterior do mesmo conteúdo. Para evitar uma compra duplicada, consulte a edição atual; não é um curso adicional.</p><a class="cta" href="{target}">Ver a edição atual</a>'
@@ -99,7 +116,7 @@ def build():
   body=f'<header class="hero"><p class="eyebrow">Trilha de leitura digital</p><h1>{esc(title)}</h1><p class="lead">{esc(desc)}</p><p>{POLICY}</p></header><div class="card"><h2>Materiais incluídos</h2>{links}<p>Esta trilha reúne os cursos curtos acima; não acrescenta videoaulas, acompanhamento ou certificado. Se você já possui um material, informe a equipe antes de contratar para evitar duplicidade.</p><p class="price">{money(price)}</p><a class="cta" href="/education/checkout.html?course={quote(bundle_slug)}">Solicitar esta trilha</a><p>{DELIVERY}</p></div><div class="notice">Não habilita ao exercício de profissão, não substitui TTI, registro profissional ou requisitos para emissão de laudos. {LIMITS}</div>'
   write(path.lstrip('/'),shell(title,desc,path,body));catalog.append({'slug':'trilha-'+slug,'title':title,'price':price,'path':path,'kind':'Trilha digital','scope':desc})
  write('education/assets/catalog.json',json.dumps(catalog,ensure_ascii=False,indent=2)+'\n')
- release={'edition':'2026-10-30-digital','offerings':len(catalog),'catalog_sha256':hashlib.sha256((ROOT/'education/assets/catalog.json').read_bytes()).hexdigest(),'learning_plan_sha256':hashlib.sha256((ROOT/'docs/academy/course-learning-plans.json').read_bytes()).hexdigest()}
+ release={'edition':'2026-10-30-digital','offerings':len(catalog),'catalog_sha256':hashlib.sha256((ROOT/'education/assets/catalog.json').read_bytes()).hexdigest(),'learning_plan_sha256':hashlib.sha256(plans_path.read_bytes()).hexdigest()}
  write('education/assets/release.json',json.dumps(release,ensure_ascii=False,indent=2)+'\n')
  guides=[c for c in catalog if c['kind']=='Curso curto digital'];bundles=[c for c in catalog if c['kind']=='Trilha digital']
  for path,title,items in [('/education/cursos/index.html','Cursos curtos digitais',guides),('/education/vendas.html','Cursos e trilhas digitais',catalog),('/education/formacoes/index.html','Trilhas de leitura digital',bundles)]:
@@ -120,4 +137,8 @@ def build():
  write('docs/academy/inventory-64-cursos.json',json.dumps(historical,ensure_ascii=False,indent=2)+'\n')
  write('docs/academy/catalog-64-cursos.json',json.dumps({'generated_at':'2026-10-30','historical_url_count':64,'total':len(catalog),'items':catalog},ensure_ascii=False,indent=2)+'\n')
  print(f'Built {len(guides)} courses,{len(bundles)} bundles,{len(aliases)} aliases; catalog {len(catalog)} items')
-if __name__=='__main__':build()
+if __name__=='__main__':
+ parser=argparse.ArgumentParser(description=__doc__)
+ parser.add_argument('--private-plans',required=True,type=Path)
+ parser.add_argument('--private-output',required=True,type=Path)
+ args=parser.parse_args();build(args.private_plans,args.private_output)

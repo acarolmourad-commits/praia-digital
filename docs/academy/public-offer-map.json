@@ -1,0 +1,139 @@
+{
+  "aliases": {
+    "flipping-completo": "flipping",
+    "flipping-imoveis-litoral": "flipping",
+    "guia-investidor-imobiliario-avancado": "guia-investidor-imobiliario"
+  },
+  "formations": {
+    "avaliacao-imoveis-ptam": {
+      "courses": [
+        "avaliacao-de-imoveis",
+        "analise-de-mercado-imobiliario-litoral",
+        "ptam-na-pratica"
+      ]
+    },
+    "captacao-imoveis": {
+      "courses": [
+        "captacao-imoveis-corretores",
+        "captacao-exclusividade",
+        "prospeccao-para-corretores"
+      ]
+    },
+    "documentacao-imoveis": {
+      "courses": [
+        "documentacao-imobiliaria",
+        "documentacao-completa-imoveis-litoral",
+        "comprar-com-seguranca"
+      ]
+    },
+    "financiamento-imobiliario": {
+      "courses": [
+        "financiamento-imobiliario",
+        "primeiro-imovel-litoral",
+        "casa-ou-apartamento"
+      ]
+    },
+    "formacao-corretor-imoveis-litoral": {
+      "courses": [
+        "captacao-imoveis-corretores",
+        "visita-tecnica-para-corretores",
+        "negociacao-imobiliaria-litoral",
+        "pos-venda-relacionamento-corretores"
+      ]
+    },
+    "formacao-fotografia-edicao-imoveis-temporada-2026": {
+      "courses": [
+        "fotografia-imoveis-temporada"
+      ],
+      "same_product": "fotografia-imoveis-temporada"
+    },
+    "locacao-temporada-administracao": {
+      "courses": [
+        "airbnb-do-zero",
+        "booking-do-zero",
+        "gestao-de-locacao-no-litoral",
+        "gestao-profissional-locacao"
+      ]
+    },
+    "marketing-imobiliario": {
+      "courses": [
+        "marketing-imobiliario",
+        "instagram-para-corretores",
+        "storytelling-para-corretores"
+      ]
+    },
+    "mercado-imobiliario-litoral": {
+      "courses": [
+        "analise-de-mercado-imobiliario-litoral",
+        "analise-de-rentabilidade",
+        "investindo-imoveis-litoral"
+      ]
+    }
+  },
+  "course_slugs": [
+    "airbnb-do-zero",
+    "analise-de-mercado-imobiliario-litoral",
+    "analise-de-rentabilidade",
+    "apresentacao-imoveis-para-corretores",
+    "atendimento-ao-cliente-para-corretores",
+    "atendimento-cliente-para-corretores",
+    "aumentar-rentabilidade",
+    "automacao-comercial",
+    "avaliacao-de-imoveis",
+    "booking-do-zero",
+    "captacao-exclusividade",
+    "captacao-imoveis-corretores",
+    "casa-ou-apartamento",
+    "comprar-com-seguranca",
+    "comprar-imovel-praia-sem-golpes",
+    "comunicacao-interpessoal-para-corretores",
+    "crm-para-corretores",
+    "documentacao-completa-imoveis-litoral",
+    "documentacao-imobiliaria",
+    "especialista-venda-imoveis-litoral",
+    "fechamento-de-vendas-para-corretores",
+    "financiamento-imobiliario",
+    "flipping",
+    "fotografia-imoveis-temporada",
+    "funil-de-vendas",
+    "gestao-de-conflitos-para-corretores",
+    "gestao-de-locacao-no-litoral",
+    "gestao-de-propostas-para-corretores",
+    "gestao-de-vendas-para-corretores",
+    "gestao-do-tempo-para-corretores",
+    "gestao-profissional-locacao",
+    "guia-investidor-imobiliario",
+    "ia-para-corretores",
+    "ia-para-imobiliarias",
+    "imoveis-para-airbnb",
+    "instagram-para-corretores",
+    "inteligencia-emocional-para-corretores",
+    "investindo-imoveis-litoral",
+    "lideranca-para-corretores",
+    "marketing-imobiliario",
+    "marketing-imobiliario-corretores",
+    "multiplique-patrimonio",
+    "negociacao-avancada-para-corretores",
+    "negociacao-imobiliaria-litoral",
+    "networking-para-corretores",
+    "oratoria-para-corretores",
+    "planejamento-estrategico-para-corretores",
+    "pos-venda-relacionamento-corretores",
+    "pricelabs-completo",
+    "primeiro-imovel-litoral",
+    "produtividade-para-corretores",
+    "prospeccao-para-corretores",
+    "ptam-na-pratica",
+    "recuperacao-de-vendas-para-corretores",
+    "rotinas-de-vendas-para-corretores",
+    "storytelling-para-corretores",
+    "treinamento-de-equipes-para-corretores",
+    "treinamento-em-tecnologia-para-corretores",
+    "venda-imoveis-alto-padrao-litoral",
+    "venda-rapida-imoveis-litoral",
+    "visita-tecnica-para-corretores",
+    "whatsapp-que-vende"
+  ],
+  "private_source_sha256": "f391dd7a37ac86178b1eb64e429a06c85e397a0d4852ed421447c1f37820375c",
+  "warning": "Public offer structure only. Full course authoring and delivery are outside this repository; this does not revoke historical public copies."
+}
