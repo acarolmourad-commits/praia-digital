@@ -31,6 +31,7 @@ class ServicePromotionSafety(unittest.TestCase):
         for key in ['listing_single_platform','listing_two_platforms']:self.assertIn(data['services'][key]['url'],listing)
         self.assertIn(data['services']['pricing_diagnostic']['url'],(ROOT/PAGES[2]).read_text())
         self.assertIn('não representa entrega imediata',listing)
+        self.assertIn('ziontechgr (Ziontechgroup)',listing)
     def test_blocked_service_checkout_routes_to_consultation(self):
         services=(ROOT/'servicos.html').read_text()
         diagnostics=(ROOT/'anfitrioes/diagnosticos-anfitrioes.html').read_text()
