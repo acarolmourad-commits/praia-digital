@@ -4,12 +4,15 @@ Does not touch backend academy/cursos or legacy course-completo student fallback
 Run --check for a read-only list/audit, without removal.
 """
 import argparse,json,re,shutil
+from check_academy_private_boundary import violations
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 COLLATERAL=('marketing','email-sequence','instagram','seo-articles')
 def candidates():
  return [ROOT/'docs/academy/delivery',*sorted((ROOT/'docs/academy').glob('course-learning-plans*.json')),*sorted((ROOT/'docs/academy').glob('course-application-*.json')),*sorted(p for name in COLLATERAL for p in (ROOT/'education/cursos').glob('*/'+name))]
 def main():
+ found=violations(ROOT)
+ if found:raise SystemExit('Refusing public build with full Academy material: '+json.dumps(found))
  ap=argparse.ArgumentParser();ap.add_argument('--check',action='store_true');args=ap.parse_args();paths=[p for p in candidates() if p.exists()]
  # Refuse to remove any collateral with an active HTML link to its published path.
  prefixes=['/'+p.relative_to(ROOT).as_posix()+'/' for p in paths if p.is_dir() and 'education' in p.parts]

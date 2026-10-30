@@ -18,10 +18,10 @@ const root=path.resolve(__dirname,'..');const catalog=require('../education/asse
   const paths=['/education/index.html','/education/cursos/index.html','/education/formacoes/index.html',...catalog.map(x=>x.path)];
   for(const p of paths){await page.goto('https://praia.digital'+p);assert.equal(await page.locator('h1').count(),1,p);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`${width}:${p}`);assert.ok((await page.title()).length<160);}
   for(const course of catalog.filter(c=>c.kind==='Curso curto digital')){
-   await page.goto('https://praia.digital/docs/academy/delivery/'+course.slug+'.html');
-   assert.equal(await page.getByRole('heading',{name:'Procedimento demonstrado',exact:true}).count(),1);
-   assert.equal(await page.getByRole('heading',{name:'Quando o plano falha',exact:true}).count(),1);
-   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`delivery:${width}:${course.slug}`);
+   const missing=await page.goto('https://praia.digital/docs/academy/delivery/'+course.slug+'.html');
+   assert.equal(missing.status(),404,'Private workbooks must not be in the public checkout');
+   await page.goto('https://praia.digital/education/cursos/'+course.slug+'/amostra.html');
+   assert.ok((await page.locator('body').innerText()).includes('Amostra gratuita'));
   }
   await page.goto('https://praia.digital/education/cursos/index.html');await page.screenshot({path:path.join(output,`catalog-${width}.png`),fullPage:false});await page.getByLabel('Buscar por assunto').fill('pricelabs');assert.ok(await page.locator('[data-course]:visible').count()>=1);await page.getByLabel('Buscar por assunto').fill('imoveis');assert.ok(await page.locator('[data-course]:visible').count()>1);await page.getByLabel('Buscar por assunto').fill('zzzz-no-such-course');assert.equal(await page.locator('[data-course]:visible').count(),0);await page.getByLabel('Buscar por assunto').fill('');assert.ok(await page.locator('[data-course]:visible').count()>50);
   await page.goto('https://praia.digital/education/cursos/airbnb-do-zero/index.html');await page.screenshot({path:path.join(output,`course-${width}.png`),fullPage:true});await page.getByRole('link',{name:'Ler amostra gratuita'}).click();assert.ok(page.url().endsWith('amostra.html'));await page.goBack();assert.ok(page.url().endsWith('index.html'));await page.getByRole('link',{name:'Solicitar matrícula',exact:true}).click();await page.locator('#selected-course').waitFor({state:'visible'});await page.screenshot({path:path.join(output,`checkout-${width}.png`),fullPage:true});assert.ok((await page.locator('#course-title').textContent()).includes('Airbnb'));await page.goBack();assert.ok(page.url().includes('airbnb-do-zero/index.html'));assert.deepEqual(errors,[]);await context.close();
