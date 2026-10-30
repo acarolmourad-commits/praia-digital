@@ -20,12 +20,13 @@ const fs=require('node:fs'),path=require('node:path'),os=require('node:os'),asse
   });
   await page.goto('https://academy-preview.test/'+publicPath);
   assert.equal(await page.locator('[data-kit]').count(),62);
+  assert.equal(await page.locator('[data-bundle]').count(),8);
   assert.equal(await page.locator('a[href*="stripe"]').count(),0);
   assert.ok((await page.locator('body').innerText()).includes('não instantâneas'));
   assert.ok((await page.locator('body').innerText()).includes('antes do pagamento'));
   await page.keyboard.press('Tab');assert.equal(await page.locator(':focus').getAttribute('href'),'#main');
   await page.screenshot({path:path.join(out,'catalog-'+width+'.png'),fullPage:false});
-  for(const a of await page.locator('[data-kit] a').all()){
+  for(const a of await page.locator('[data-kit] a,[data-bundle] a').all()){
    const href=await a.getAttribute('href');assert.ok(href.startsWith('mailto:comercial@praia.digital?'));
    const url=new URL(href);assert.ok(url.searchParams.get('subject').startsWith('Solicitar compra'));
    assert.ok(url.searchParams.get('body').includes('Antes do pagamento'));
@@ -37,10 +38,17 @@ const fs=require('node:fs'),path=require('node:path'),os=require('node:os'),asse
   await page.locator('#kit-search').fill('zzznothing');assert.equal(await page.locator('[data-kit]:visible').count(),0);assert.ok(await page.locator('#empty').isVisible());
   await page.locator('#kit-search').fill('');assert.equal(await page.locator('[data-kit]:visible').count(),62);
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
+  const bundle=page.locator('[data-bundle]').first();
+  assert.ok((await bundle.innerText()).includes('mesmos kits vendidos individualmente'));
+  const details=bundle.locator('details');await details.locator('summary').click();assert.ok(await details.evaluate(el=>el.open));
+  assert.equal(await details.locator('ul li').count(),3);assert.equal(await details.locator('ol li').count(),3);
+  await bundle.scrollIntoViewIfNeeded();await page.screenshot({path:path.join(out,'bundle-'+width+'.png'),fullPage:false});
+  await details.locator('summary').click();assert.ok(!(await details.evaluate(el=>el.open)));
+  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
   assert.deepEqual(errors,[]);assert.deepEqual(unexpected,[]);
   await page.close();
  }
  }finally{await browser.close();}
- fs.writeFileSync(path.join(out,'result.json'),JSON.stringify({state:'passed',page:publicPath,sha256:crypto.createHash('sha256').update(html).digest('hex'),viewports:[390,1280],count:62,scope:'Contact only; no mail sent, payment, or private content'},null,2));
+ fs.writeFileSync(path.join(out,'result.json'),JSON.stringify({state:'passed',page:publicPath,sha256:crypto.createHash('sha256').update(html).digest('hex'),viewports:[390,1280],count:62,bundles:8,scope:'Contact only; no mail sent, payment, or private content'},null,2));
  console.log('PASS62 contact-only offers,390/1280,search/empty/recovery,keyboard,contextual mailto,no overflow/no checkout');
 })().catch(e=>{console.error(e);process.exit(1)});
