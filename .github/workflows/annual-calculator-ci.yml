@@ -1,0 +1,24 @@
+name: Annual calculator regression
+on:
+  pull_request:
+    paths:
+      - 'ferramentas/estimativa-faturamento-anual-airbnb-2026.html'
+      - 'tests/test-annual-fees.mjs'
+      - '.github/workflows/annual-calculator-ci.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'ferramentas/estimativa-faturamento-anual-airbnb-2026.html'
+      - 'tests/test-annual-fees.mjs'
+      - '.github/workflows/annual-calculator-ci.yml'
+permissions:
+  contents: read
+jobs:
+  combined-fee-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node tests/test-annual-fees.mjs
