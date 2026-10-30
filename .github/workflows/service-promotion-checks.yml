@@ -1,0 +1,29 @@
+name: Service Promotion Safety
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+jobs:
+  safe-service-offers:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate prices, claims, schemas and navigation
+        run: python -m unittest discover -s tests -p 'test_service_promotion_safety.py'
+      - name: Prepare production navigation
+        run: python scripts/build-navigation.py
+      - name: Offline responsive browser verification
+        run: |
+          npm install --prefix "$RUNNER_TEMP/service-browser" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/service-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          NODE_PATH="$RUNNER_TEMP/service-browser/node_modules" node tests/service-promotion-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: service-promotion-visual-evidence
+          path: ${{ runner.temp }}/service-promotion-qa
+          if-no-files-found: warn
