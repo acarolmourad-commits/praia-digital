@@ -1,0 +1,693 @@
+[
+  {
+    "slug": "airbnb-do-zero",
+    "title": "Airbnb: preparação do primeiro anúncio",
+    "price": 29,
+    "path": "/education/cursos/airbnb-do-zero/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia escrito introdutório para preparar os dados, a descrição e a operação antes de publicar um anúncio.",
+    "category": "Anfitriões e gestores",
+    "aliases": []
+  },
+  {
+    "slug": "analise-de-mercado-imobiliario-litoral",
+    "title": "Leitura do Mercado Imobiliário no Litoral",
+    "price": 29,
+    "path": "/education/cursos/analise-de-mercado-imobiliario-litoral/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia digital introdutório de pesquisa comparativa; não apresenta projeções ou dados locais em tempo real.",
+    "category": "Compradores e investidores",
+    "aliases": []
+  },
+  {
+    "slug": "analise-de-rentabilidade",
+    "title": "Análise de Rentabilidade: Custos e Cenários",
+    "price": 29,
+    "path": "/education/cursos/analise-de-rentabilidade/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital de cálculo introdutório com números hipotéticos, sem recomendação de compra ou retorno prometido.",
+    "category": "Compradores e investidores",
+    "aliases": []
+  },
+  {
+    "slug": "apresentacao-imoveis-para-corretores",
+    "title": "Apresentação de Imóveis para Corretores",
+    "price": 29,
+    "path": "/education/cursos/apresentacao-imoveis-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Preparar uma apresentação factual orientada à necessidade do comprador.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "atendimento-ao-cliente-para-corretores",
+    "title": "Atendimento ao Cliente para Corretores",
+    "price": 29,
+    "path": "/education/cursos/atendimento-ao-cliente-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Estruturar o primeiro atendimento e a continuidade da busca.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "atendimento-cliente-para-corretores",
+    "title": "Recuperação do Atendimento ao Cliente",
+    "price": 29,
+    "path": "/education/cursos/atendimento-cliente-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Tratar falhas de atendimento e reclamações com registro e acompanhamento.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "aumentar-rentabilidade",
+    "title": "Rentabilidade da locação: diagnóstico e melhorias",
+    "price": 29,
+    "path": "/education/cursos/aumentar-rentabilidade/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia escrito para localizar perdas e priorizar testes; não promete percentual de aumento.",
+    "category": "Anfitriões e gestores",
+    "aliases": []
+  },
+  {
+    "slug": "automacao-comercial",
+    "title": "Automação Comercial para Imobiliárias",
+    "price": 29,
+    "path": "/education/cursos/automacao-comercial/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Mapear e testar uma rotina comercial simples com controle humano.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "avaliacao-de-imoveis",
+    "title": "Fundamentos da Comparação de Imóveis",
+    "price": 29,
+    "path": "/education/cursos/avaliacao-de-imoveis/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Introdução digital à organização de comparáveis; não habilita para avaliações profissionais.",
+    "category": "Compradores e investidores",
+    "aliases": []
+  },
+  {
+    "slug": "booking-do-zero",
+    "title": "Booking: preparação do cadastro e da operação",
+    "price": 29,
+    "path": "/education/cursos/booking-do-zero/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia escrito introdutório de inventário, condições da estadia e conciliação operacional; não é tutorial de telas da plataforma.",
+    "category": "Anfitriões e gestores",
+    "aliases": []
+  },
+  {
+    "slug": "captacao-exclusividade",
+    "title": "Captação com Exclusividade",
+    "price": 29,
+    "path": "/education/cursos/captacao-exclusividade/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Preparar uma proposta de serviço de captação transparente.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "captacao-imoveis-corretores",
+    "title": "Captação de Imóveis para Corretores",
+    "price": 29,
+    "path": "/education/cursos/captacao-imoveis-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Qualificar imóveis e proprietários antes de incorporar uma oferta.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "casa-ou-apartamento",
+    "title": "Casa ou Apartamento: Critérios de Escolha",
+    "price": 29,
+    "path": "/education/cursos/casa-ou-apartamento/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia digital para estruturar preferências, custos e perguntas de visita, sem indicar um imóvel específico.",
+    "category": "Compradores e investidores",
+    "aliases": []
+  },
+  {
+    "slug": "comprar-com-seguranca",
+    "title": "Compra de Imóvel: Organização da Verificação",
+    "price": 29,
+    "path": "/education/cursos/comprar-com-seguranca/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia digital de preparação e registro de pendências; não substitui análise jurídica, registral ou técnica.",
+    "category": "Compradores e investidores",
+    "aliases": []
+  },
+  {
+    "slug": "comprar-imovel-praia-sem-golpes",
+    "title": "Compra no Litoral: Sinais de Alerta e Verificação",
+    "price": 29,
+    "path": "/education/cursos/comprar-imovel-praia-sem-golpes/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia digital de prevenção e triagem; nenhum roteiro garante ausência de fraude.",
+    "category": "Compradores e investidores",
+    "aliases": []
+  },
+  {
+    "slug": "comunicacao-interpessoal-para-corretores",
+    "title": "Comunicação Interpessoal para Corretores",
+    "price": 29,
+    "path": "/education/cursos/comunicacao-interpessoal-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Reduzir ambiguidades em conversas com clientes e parceiros.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "crm-para-corretores",
+    "title": "CRM para Corretores",
+    "price": 29,
+    "path": "/education/cursos/crm-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Organizar contatos, etapas e próximos passos em um registro comercial.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "documentacao-completa-imoveis-litoral",
+    "title": "Dossiê de Documentação: Organização e Rastreabilidade",
+    "price": 29,
+    "path": "/education/cursos/documentacao-completa-imoveis-litoral/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital de organização documental, sem promessa de lista universal ou suficiência jurídica.",
+    "category": "Compradores e investidores",
+    "aliases": []
+  },
+  {
+    "slug": "documentacao-imobiliaria",
+    "title": "Documentação Imobiliária: Leitura Inicial",
+    "price": 29,
+    "path": "/education/cursos/documentacao-imobiliaria/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Introdução digital às perguntas de leitura documental; não ensina a aprovar negócios ou emitir pareceres.",
+    "category": "Compradores e investidores",
+    "aliases": []
+  },
+  {
+    "slug": "especialista-venda-imoveis-litoral",
+    "title": "Venda de Imóveis no Litoral: Fundamentos",
+    "price": 29,
+    "path": "/education/cursos/especialista-venda-imoveis-litoral/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Relacionar características locais ao uso pretendido, sem conferir título profissional.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "fechamento-de-vendas-para-corretores",
+    "title": "Fechamento de Vendas para Corretores",
+    "price": 29,
+    "path": "/education/cursos/fechamento-de-vendas-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Conduzir a decisão comercial sem pressão e sem antecipar validade contratual.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "financiamento-imobiliario",
+    "title": "Financiamento Imobiliário: Comparação de Propostas",
+    "price": 29,
+    "path": "/education/cursos/financiamento-imobiliario/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia digital de leitura e comparação; não apresenta taxas atuais, aprovação de crédito ou recomendação de banco.",
+    "category": "Compradores e investidores",
+    "aliases": []
+  },
+  {
+    "slug": "flipping",
+    "title": "Reforma para Revenda: Orçamento e Riscos",
+    "price": 29,
+    "path": "/education/cursos/flipping/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de viabilidade com exercício hipotético; não recomenda compra ou execução de obra.",
+    "category": "Compradores e investidores",
+    "aliases": [
+      "flipping-completo",
+      "flipping-imoveis-litoral"
+    ]
+  },
+  {
+    "slug": "fotografia-imoveis-temporada",
+    "title": "Fotografia de imóveis: captura e edição essencial",
+    "price": 29,
+    "path": "/education/cursos/fotografia-imoveis-temporada/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia escrito prático de preparação, enquadramento, seleção e edição fiel do imóvel; não inclui serviço de fotografia.",
+    "category": "Anfitriões e gestores",
+    "aliases": [
+      "formacao-fotografia-edicao-imoveis-temporada-2026"
+    ]
+  },
+  {
+    "slug": "funil-de-vendas",
+    "title": "Funil de Vendas para Corretores",
+    "price": 29,
+    "path": "/education/cursos/funil-de-vendas/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Ler conversões e identificar o ponto de melhoria do processo.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "gestao-de-conflitos-para-corretores",
+    "title": "Gestão de Conflitos para Corretores",
+    "price": 29,
+    "path": "/education/cursos/gestao-de-conflitos-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Organizar divergências comerciais sem substituir mediação ou orientação jurídica.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "gestao-de-locacao-no-litoral",
+    "title": "Locação no litoral: rotina da estadia",
+    "price": 29,
+    "path": "/education/cursos/gestao-de-locacao-no-litoral/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia escrito de organização do ciclo da reserva, da preparação à saída do hóspede.",
+    "category": "Anfitriões e gestores",
+    "aliases": []
+  },
+  {
+    "slug": "gestao-de-propostas-para-corretores",
+    "title": "Gestão de Propostas para Corretores",
+    "price": 29,
+    "path": "/education/cursos/gestao-de-propostas-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Controlar versões e condições de propostas comerciais.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "gestao-de-vendas-para-corretores",
+    "title": "Gestão de Vendas para Corretores",
+    "price": 29,
+    "path": "/education/cursos/gestao-de-vendas-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Acompanhar carteira, capacidade de atendimento e qualidade das oportunidades.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "gestao-do-tempo-para-corretores",
+    "title": "Gestão do Tempo para Corretores",
+    "price": 29,
+    "path": "/education/cursos/gestao-do-tempo-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Planejar agenda com deslocamentos, prioridades e margens realistas.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "gestao-profissional-locacao",
+    "title": "Gestão de locação: controles de uma carteira",
+    "price": 29,
+    "path": "/education/cursos/gestao-profissional-locacao/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia escrito introdutório de governança operacional e financeira da carteira, diferente da rotina de uma única estadia.",
+    "category": "Anfitriões e gestores",
+    "aliases": []
+  },
+  {
+    "slug": "guia-investidor-imobiliario",
+    "title": "Investimento Imobiliário: Perguntas Essenciais",
+    "price": 29,
+    "path": "/education/cursos/guia-investidor-imobiliario/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia digital conceitual, sem carteira recomendada, projeções de ganho ou aconselhamento individual.",
+    "category": "Compradores e investidores",
+    "aliases": [
+      "guia-investidor-imobiliario-avancado"
+    ]
+  },
+  {
+    "slug": "ia-para-corretores",
+    "title": "IA para Corretores: Uso Assistido",
+    "price": 29,
+    "path": "/education/cursos/ia-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Produzir e revisar rascunhos comerciais com proteção de dados.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "ia-para-imobiliarias",
+    "title": "IA para Imobiliárias: Governança Inicial",
+    "price": 29,
+    "path": "/education/cursos/ia-para-imobiliarias/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Definir usos permitidos, responsabilidades e avaliação de uma experiência-piloto.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "imoveis-para-airbnb",
+    "title": "Imóveis para temporada: critérios de adequação",
+    "price": 29,
+    "path": "/education/cursos/imoveis-para-airbnb/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia escrito de análise de uso, experiência e custo de preparação; não recomenda uma compra nem prevê retorno.",
+    "category": "Anfitriões e gestores",
+    "aliases": []
+  },
+  {
+    "slug": "instagram-para-corretores",
+    "title": "Instagram para Corretores",
+    "price": 29,
+    "path": "/education/cursos/instagram-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Planejar conteúdo informativo e avaliar contatos gerados com contexto.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "inteligencia-emocional-para-corretores",
+    "title": "Autopercepção e Regulação no Atendimento",
+    "price": 29,
+    "path": "/education/cursos/inteligencia-emocional-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Reconhecer reações emocionais e escolher respostas profissionais; não é tratamento psicológico.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "investindo-imoveis-litoral",
+    "title": "Imóveis no Litoral: Uso, Sazonalidade e Operação",
+    "price": 29,
+    "path": "/education/cursos/investindo-imoveis-litoral/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital de pesquisa contextual, sem estatísticas locais atuais ou recomendação de investimento.",
+    "category": "Compradores e investidores",
+    "aliases": []
+  },
+  {
+    "slug": "lideranca-para-corretores",
+    "title": "Liderança de Equipes Comerciais",
+    "price": 29,
+    "path": "/education/cursos/lideranca-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Alinhar expectativas, delegar e oferecer feedback sobre comportamentos observáveis.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "marketing-imobiliario",
+    "title": "Marketing Imobiliário: Planejamento",
+    "price": 29,
+    "path": "/education/cursos/marketing-imobiliario/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Organizar proposta de valor, canais e critérios de avaliação de uma imobiliária.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "marketing-imobiliario-corretores",
+    "title": "Marketing Pessoal para Corretores",
+    "price": 29,
+    "path": "/education/cursos/marketing-imobiliario-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Construir presença profissional consistente sem depender de promessas de resultado.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "multiplique-patrimonio",
+    "title": "Planejamento Patrimonial com Imóveis: Cenários",
+    "price": 29,
+    "path": "/education/cursos/multiplique-patrimonio/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia digital introdutório de organização patrimonial; o título não promete multiplicação de capital.",
+    "category": "Compradores e investidores",
+    "aliases": []
+  },
+  {
+    "slug": "negociacao-avancada-para-corretores",
+    "title": "Negociação: Comparação de Alternativas",
+    "price": 29,
+    "path": "/education/cursos/negociacao-avancada-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Introdução à negociação de múltiplas condições; não equivale a formação avançada.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "negociacao-imobiliaria-litoral",
+    "title": "Negociação Imobiliária no Litoral",
+    "price": 29,
+    "path": "/education/cursos/negociacao-imobiliaria-litoral/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Tratar expectativas de uso, manutenção e sazonalidade em uma negociação.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "networking-para-corretores",
+    "title": "Networking para Corretores",
+    "price": 29,
+    "path": "/education/cursos/networking-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Construir relações profissionais úteis com limites e reciprocidade.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "oratoria-para-corretores",
+    "title": "Oratória para Corretores",
+    "price": 29,
+    "path": "/education/cursos/oratoria-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Caderno digital introdutório de estudo autônomo. Preparar uma fala curta, clara e baseada em informações verificadas.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "planejamento-estrategico-para-corretores",
+    "title": "Planejamento comercial: prioridades e escolhas",
+    "price": 29,
+    "path": "/education/cursos/planejamento-estrategico-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia digital escrito para elaborar um plano comercial curto, com escolhas, hipóteses e revisão.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "pos-venda-relacionamento-corretores",
+    "title": "Pós-venda: continuidade e pendências",
+    "price": 29,
+    "path": "/education/cursos/pos-venda-relacionamento-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia escrito de passagem de responsabilidades, contato útil e encerramento de pendências.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "pricelabs-completo",
+    "title": "PriceLabs: planejamento e revisão de preços",
+    "price": 19,
+    "path": "/education/cursos/pricelabs-completo/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia escrito introdutório para planejar limites, cenários e revisão de preços; não substitui a documentação atual do PriceLabs.",
+    "category": "Anfitriões e gestores",
+    "aliases": []
+  },
+  {
+    "slug": "primeiro-imovel-litoral",
+    "title": "Primeiro Imóvel no Litoral: Preparação da Busca",
+    "price": 29,
+    "path": "/education/cursos/primeiro-imovel-litoral/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia digital de organização da busca, visita e comparação, sem assessoria de compra individual.",
+    "category": "Compradores e investidores",
+    "aliases": []
+  },
+  {
+    "slug": "produtividade-para-corretores",
+    "title": "Produtividade: fluxo de trabalho e foco",
+    "price": 29,
+    "path": "/education/cursos/produtividade-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia escrito de organização do fluxo pessoal, redução de retrabalho e limites de trabalho simultâneo.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "prospeccao-para-corretores",
+    "title": "Prospecção: pesquisa e primeira abordagem",
+    "price": 29,
+    "path": "/education/cursos/prospeccao-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia escrito de seleção de oportunidades e abordagem contextual, sem listas de contatos ou envios automáticos.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "ptam-na-pratica",
+    "title": "PTAM: Introdução à Estrutura e às Evidências",
+    "price": 29,
+    "path": "/education/cursos/ptam-na-pratica/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Material digital introdutório e educacional; não habilita, credencia ou autoriza emissão de PTAM.",
+    "category": "Compradores e investidores",
+    "aliases": []
+  },
+  {
+    "slug": "recuperacao-de-vendas-para-corretores",
+    "title": "Oportunidades interrompidas: diagnóstico e retomada",
+    "price": 29,
+    "path": "/education/cursos/recuperacao-de-vendas-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia escrito para distinguir oportunidades retomáveis de encerramentos e preparar um retorno útil.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "rotinas-de-vendas-para-corretores",
+    "title": "Rotina comercial: acompanhamento diário e semanal",
+    "price": 29,
+    "path": "/education/cursos/rotinas-de-vendas-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia escrito para construir uma cadência simples de revisão da carteira e passagem de informações.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "storytelling-para-corretores",
+    "title": "Narrativas imobiliárias: contexto sem exagero",
+    "price": 29,
+    "path": "/education/cursos/storytelling-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia escrito para transformar características em uma narrativa clara, sem inventar histórias ou resultados.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "treinamento-de-equipes-para-corretores",
+    "title": "Treinamento de equipe: prática e feedback",
+    "price": 29,
+    "path": "/education/cursos/treinamento-de-equipes-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia escrito para organizar uma sessão curta de prática, observação e melhoria de uma habilidade.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "treinamento-em-tecnologia-para-corretores",
+    "title": "Tecnologia na rotina: adoção e teste seguro",
+    "price": 29,
+    "path": "/education/cursos/treinamento-em-tecnologia-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia escrito para testar uma tecnologia em tarefa delimitada, com dados fictícios e critério de continuidade.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "venda-imoveis-alto-padrao-litoral",
+    "title": "Imóveis de maior valor: preparação e discrição",
+    "price": 29,
+    "path": "/education/cursos/venda-imoveis-alto-padrao-litoral/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia escrito de briefing, comprovação de diferenciais e visita discreta; não promete acesso a compradores ou vendas.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "venda-rapida-imoveis-litoral",
+    "title": "Agilidade na venda: redução de obstáculos",
+    "price": 29,
+    "path": "/education/cursos/venda-rapida-imoveis-litoral/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia escrito de diagnóstico de obstáculos e ações de preparação, sem promessa de prazo para venda.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "visita-tecnica-para-corretores",
+    "title": "Visita ao imóvel: observação e registro",
+    "price": 29,
+    "path": "/education/cursos/visita-tecnica-para-corretores/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia escrito de observação comercial e encaminhamento de dúvidas; não é inspeção técnica, perícia ou avaliação de engenharia.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "whatsapp-que-vende",
+    "title": "WhatsApp comercial: clareza e próximo passo",
+    "price": 29,
+    "path": "/education/cursos/whatsapp-que-vende/index.html",
+    "kind": "Curso curto digital",
+    "scope": "Guia escrito de mensagens contextuais, confirmação de entendimento e encerramento respeitoso; sem automação de disparos.",
+    "category": "Corretores e imobiliárias",
+    "aliases": []
+  },
+  {
+    "slug": "trilha-avaliacao-imoveis-ptam",
+    "title": "Trilha de estudos: avaliação e documentação de valor",
+    "price": 69,
+    "path": "/education/formacoes/avaliacao-imoveis-ptam.html",
+    "kind": "Trilha digital",
+    "scope": "Sequência de guias escritos introdutórios para organizar referências e entender limites da análise. Não habilita a emitir PTAM nem substitui formação ou registro profissional."
+  },
+  {
+    "slug": "trilha-captacao-imoveis",
+    "title": "Trilha de estudos: captação e relacionamento",
+    "price": 69,
+    "path": "/education/formacoes/captacao-imoveis.html",
+    "kind": "Trilha digital",
+    "scope": "Guias escritos para planejar prospecção, conversa com o proprietário e acompanhamento; sem promessa de contratos ou exclusividades."
+  },
+  {
+    "slug": "trilha-documentacao-imoveis",
+    "title": "Trilha de estudos: organização documental",
+    "price": 69,
+    "path": "/education/formacoes/documentacao-imoveis.html",
+    "kind": "Trilha digital",
+    "scope": "Guias escritos para montar uma lista de verificações e perguntas antes de uma negociação. Não substitui diligência, análise jurídica ou atuação de profissionais habilitados."
+  },
+  {
+    "slug": "trilha-financiamento-imobiliario",
+    "title": "Trilha de estudos: planejamento da compra financiada",
+    "price": 69,
+    "path": "/education/formacoes/financiamento-imobiliario.html",
+    "kind": "Trilha digital",
+    "scope": "Guias escritos para organizar orçamento, comparar cenários e preparar perguntas. Não concede crédito, simulação bancária oficial nem recomendação financeira individual."
+  },
+  {
+    "slug": "trilha-formacao-corretor-imoveis-litoral",
+    "title": "Trilha de estudos: rotina comercial imobiliária",
+    "price": 92,
+    "path": "/education/formacoes/formacao-corretor-imoveis-litoral.html",
+    "kind": "Trilha digital",
+    "scope": "Guias escritos complementares sobre captação, apresentação e acompanhamento. Não é curso técnico, não habilita a profissão e não concede registro no CRECI."
+  },
+  {
+    "slug": "trilha-locacao-temporada-administracao",
+    "title": "Trilha de estudos: operação de temporada",
+    "price": 92,
+    "path": "/education/formacoes/locacao-temporada-administracao.html",
+    "kind": "Trilha digital",
+    "scope": "Guias escritos para preparar anúncio, rotina da estadia e controles da gestão. Não inclui gestão executada, atendimento a hóspedes nem assinatura de plataformas."
+  },
+  {
+    "slug": "trilha-marketing-imobiliario",
+    "title": "Trilha de estudos: comunicação e anúncios imobiliários",
+    "price": 69,
+    "path": "/education/formacoes/marketing-imobiliario.html",
+    "kind": "Trilha digital",
+    "scope": "Guias escritos para posicionar a oferta, organizar mensagens e planejar divulgação. Não inclui campanha executada, verba de mídia nem leads."
+  },
+  {
+    "slug": "trilha-mercado-imobiliario-litoral",
+    "title": "Trilha de estudos: comparação de imóveis e cenários",
+    "price": 69,
+    "path": "/education/formacoes/mercado-imobiliario-litoral.html",
+    "kind": "Trilha digital",
+    "scope": "Guias escritos de análise exploratória e cenários para estudos pessoais. Não é relatório de dados atuais nem recomendação de compra, venda ou investimento."
+  }
+]

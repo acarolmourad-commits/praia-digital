@@ -1,0 +1,482 @@
+{
+  "airbnb-do-zero": {
+    "procedure": [
+      {
+        "title": "1. Transformar observações em uma ficha de anúncio",
+        "body": [
+          "Considere um apartamento fictício com dois dormitórios, uma vaga e acesso por escada. Visite cada ambiente com uma lista vazia, em vez de começar copiando um anúncio concorrente. Anote o que observou, quem informou e a data da conferência. “Tem internet” não comprova velocidade nem estabilidade; “acomoda quatro” precisa ser compatível com camas, condições de uso e regras aplicáveis. Marque como pendente tudo que ainda depende de confirmação. Depois separe características que favorecem a escolha e limitações decisivas. Essa ficha será a fonte para descrição, fotos e mensagens. Se uma informação mudar, atualize a ficha primeiro e confira todos os textos derivados, evitando versões contraditórias."
+        ]
+      },
+      {
+        "title": "2. Produzir uma descrição que permita decidir",
+        "body": [
+          "Comece com uma frase factual: “Apartamento com dois dormitórios, uma vaga e acesso por escada.” Na sequência, descreva como o hóspede usa os ambientes: onde dorme, prepara refeições e guarda pertences. Não confunda desejo de posicionamento com fato: “ideal para todos” não ajuda alguém com mobilidade reduzida. Reserve um trecho visível para restrições e informações a confirmar antes da reserva. Associe cada comodidade importante a uma fotografia ou verificação. Leia o texto como se não conhecesse o imóvel e destaque perguntas ainda sem resposta. Remova adjetivos que não acrescentam informação. A revisão deve procurar omissões que mudariam a decisão, não apenas erros de português."
+        ]
+      },
+      {
+        "title": "3. Simular a primeira estadia antes de publicar",
+        "body": [
+          "Faça um ensaio fictício da jornada: chegada à rua, identificação da entrada, acesso, uso dos itens anunciados e saída. Peça a uma pessoa autorizada que siga as instruções sem explicações adicionais; registre onde ela hesita. Não inclua códigos reais em um material público. Em paralelo, atribua responsável e alternativa para cada tarefa. Se a limpeza termina às quinze horas e a chegada está prevista para o mesmo horário, o roteiro não tem margem de conferência. Ajuste a organização antes de prometer disponibilidade. Somente avance quando as características decisivas, o acesso e a operação estiverem coerentes. O exercício prepara a publicação; não publica nem garante que uma plataforma aprovará ou gerará reservas."
+        ]
+      }
+    ],
+    "filled_template": [
+      {
+        "field": "Identificação e estado da informação",
+        "value": "Unidade fictícia A; dois dormitórios observados; capacidade planejada de quatro pessoas, sujeita à conferência das condições aplicáveis.",
+        "why": "Separar observação e capacidade proposta evita transformar uma intenção do proprietário em afirmação definitiva."
+      },
+      {
+        "field": "Limitação que deve aparecer",
+        "value": "Acesso por escada; não há elevador. Informação presente na abertura e na seção de acesso.",
+        "why": "Uma restrição decisiva não deve ficar escondida no fim de uma mensagem enviada após a reserva."
+      },
+      {
+        "field": "Comodidade e evidência",
+        "value": "Uma vaga identificada na visita; dimensão e condições de uso ainda a confirmar.",
+        "why": "“Tem vaga” não responde se o veículo do hóspede cabe ou se há restrição relevante."
+      },
+      {
+        "field": "Sequência fotográfica planejada",
+        "value": "Sala, dormitórios, cozinha, banheiro, acesso e vaga; cada foto com uma finalidade distinta.",
+        "why": "A sequência deve explicar o imóvel inteiro, não repetir o ambiente mais bonito para compensar informação ausente."
+      },
+      {
+        "field": "Tarefa operacional e alternativa",
+        "value": "Conferência de acesso por responsável A antes da chegada; responsável B substitui em caso de indisponibilidade.",
+        "why": "Uma atividade sem substituto pode bloquear a primeira estadia mesmo quando o anúncio está bem escrito."
+      },
+      {
+        "field": "Pendência impeditiva",
+        "value": "Confirmar utensílios antes de usar a expressão “cozinha equipada”; até lá, descrever apenas itens efetivamente vistos.",
+        "why": "O rascunho deve permanecer revisável e não prometer uma entrega que ainda não existe."
+      }
+    ],
+    "failure_case": {
+      "scenario": "Caso fictício: o anúncio diz “acesso fácil para toda a família”, mas a entrada exige dois lances de escada. Um interessado pergunta se pode levar uma pessoa com dificuldade de locomoção.",
+      "diagnosis": "O problema não é apenas escolher um adjetivo melhor. A oferta omitiu uma característica que pode tornar a estadia inadequada. Não conclua que a pessoa consegue subir nem ofereça avaliação de acessibilidade sem base.",
+      "correction": "Responda com a descrição concreta do acesso, confirme o que sabe e reconheça o que não foi avaliado. Corrija o anúncio e a sequência de fotos para tornar a escada visível. Revise também mensagens-modelo que repetem “acesso fácil”.",
+      "verification": "Peça a um revisor para localizar a informação de acesso sem orientação. Compare título, descrição, fotos e mensagens com a ficha revisada. A correção está concluída quando a pessoa consegue decidir com informação clara, não quando o texto fica mais persuasivo."
+    }
+  },
+  "booking-do-zero": {
+    "procedure": [
+      {
+        "title": "1. Desenhar o inventário antes de configurar a oferta",
+        "body": [
+          "Considere uma propriedade fictícia com duas unidades: A possui cozinha privativa; B não possui cozinha, mas compartilha uma área externa. Crie uma ficha por unidade e escolha códigos estáveis que a equipe consiga reconhecer. Descreva o que é privativo, compartilhado ou indisponível. Se o anúncio tratar as duas unidades como equivalentes, uma reserva poderá criar expectativa errada. Não reúna fotografias de ambas sem identificação. A ficha deve indicar capacidade, camas, acesso e diferenças operacionais. Antes de usar um tipo de acomodação ou opção do canal, confirme na documentação e no ambiente oficial o significado vigente; este guia não presume que todas as propriedades recebem as mesmas opções de configuração."
+        ]
+      },
+      {
+        "title": "2. Organizar condições e responsabilidades da reserva",
+        "body": [
+          "Monte um quadro com cada condição que o interessado precisa entender: datas, unidade, quantidade de hóspedes, itens incluídos, cancelamento e cobranças aplicáveis. Ao lado, anote onde a informação foi conferida e o que depende da modalidade contratada. Não deduza quem recebe um pagamento apenas porque a reserva apareceu no calendário. Separe situação da reserva de situação financeira. Por exemplo, “confirmada” e “valor recebido” são estados diferentes. Quando uma condição não estiver clara, pare a preparação daquela parte e obtenha esclarecimento no canal oficial ou com o responsável. Use um texto consistente nas comunicações, mas não substitua condições contratuais por uma mensagem informal que acrescente cobranças inesperadas."
+        ]
+      },
+      {
+        "title": "3. Conferir uma alteração de ponta a ponta",
+        "body": [
+          "Simule uma reserva fictícia na unidade B de sexta a domingo que muda para sábado a segunda. Registre a alteração com origem e data, mantenha o histórico e atualize o controle operacional. Confira se a segunda-feira está disponível, se a equipe consegue preparar a unidade e se valores ou condições precisam ser revistos. Se houver outro canal, confirme a atualização nele em vez de supor sincronização imediata. Faça uma passagem de serviço para limpeza e atendimento. Termine comparando as datas, a unidade e a situação financeira nas fontes usadas pela operação. Uma alteração só está operacionalmente resolvida quando todas as partes relevantes trabalham com a mesma informação."
+        ]
+      }
+    ],
+    "filled_template": [
+      {
+        "field": "Unidade e diferenciação",
+        "value": "A: cozinha privativa; B: sem cozinha; área externa compartilhada por ambas.",
+        "why": "O hóspede precisa compreender exatamente qual conjunto de características está contratando, sem inferir pela foto de outra unidade."
+      },
+      {
+        "field": "Reserva fictícia e período",
+        "value": "Referência B-02; unidade B; nova entrada sábado; nova saída segunda; duas pessoas.",
+        "why": "Identificador e unidade impedem que uma alteração seja aplicada por engano ao calendário da acomodação vizinha."
+      },
+      {
+        "field": "Estado comercial e financeiro",
+        "value": "Reserva alterada conforme confirmação registrada; recebimento ainda em conferência.",
+        "why": "Usar colunas separadas evita tratar confirmação de hospedagem como comprovação de dinheiro recebido."
+      },
+      {
+        "field": "Origem da mudança",
+        "value": "Confirmação do canal oficial registrada com data e responsável pela leitura; mensagem informal guardada apenas como contexto.",
+        "why": "A operação precisa saber qual informação sustenta a decisão, principalmente quando mensagens e calendário divergem."
+      },
+      {
+        "field": "Tarefa e responsável",
+        "value": "Limpeza transferida para segunda após a saída; responsável operacional confirma disponibilidade do prestador.",
+        "why": "Uma mudança aparentemente simples pode afetar a equipe e a próxima chegada, não apenas o registro digital."
+      },
+      {
+        "field": "Conferência final",
+        "value": "Datas e unidade iguais no controle de reservas e no roteiro da equipe; cobrança pendente permanece sinalizada.",
+        "why": "A revisão deve resolver divergências sem esconder o que ainda não foi confirmado."
+      }
+    ],
+    "failure_case": {
+      "scenario": "Caso fictício: a equipe anuncia duas unidades como idênticas e usa a fotografia da cozinha de A também na oferta de B. O hóspede de B pergunta onde está a cozinha ao chegar.",
+      "diagnosis": "A falha começou na representação do inventário. Uma legenda genérica e um código interno não corrigem a expectativa criada pela fotografia. Não atribua ao hóspede o dever de descobrir uma diferença que a oferta não explicou.",
+      "correction": "Confira a oferta e as condições da reserva, trate a ocorrência com o responsável e registre a solução efetivamente acordada. Separe as fotografias por unidade e descreva claramente áreas compartilhadas. Não prometa compensação que não esteja autorizada nem altere um registro para apagar o histórico.",
+      "verification": "Revise cada unidade com uma pessoa que não conhece a propriedade: ela deve identificar se há cozinha privativa, o que é compartilhado e qual acomodação está selecionada. Confira ainda se o roteiro da equipe usa os mesmos códigos e descrições da oferta."
+    }
+  },
+  "pricelabs-completo": {
+    "procedure": [
+      {
+        "title": "1. Preparar uma referência de preço com premissas explícitas",
+        "body": [
+          "Use um imóvel fictício e crie uma ficha antes de alterar qualquer ferramenta. Registre período analisado, capacidade, características relevantes, noites disponíveis, histórico utilizável e custos por estadia. Separe diária anunciada de receita efetivamente recebida: elas não são automaticamente iguais. Compare apenas referências de uso semelhante e anote limitações de localização, conservação e período. Defina um preço de trabalho como hipótese, acompanhado da justificativa e da data de revisão. Evite escolher o número apenas para alcançar uma meta de receita desejada. O preço mínimo também não deve ser uma porcentagem arbitrária do preço base: ele precisa conversar com a operação, os custos e a estratégia de estadia que o gestor consegue sustentar."
+        ]
+      },
+      {
+        "title": "2. Especificar um teste limitado antes de mexer no calendário",
+        "body": [
+          "Escreva o comportamento que deseja avaliar: por exemplo, estudar duas noites disponíveis entre reservas já confirmadas. Identifique as datas, a estadia mínima aplicável, a faixa de preço aceita e quem pode autorizar mudanças. Liste configurações que podem interagir, como descontos e restrições existentes no canal ou no sistema de gestão. Consulte a documentação oficial do PriceLabs para confirmar os recursos e integrações disponíveis na conta; nomes e telas podem mudar. Este exercício não manda sincronizar preços nem editar uma conta real. Primeiro registre o estado anterior e uma forma de reversão. Uma alteração sem período delimitado pode alcançar datas importantes que não faziam parte da hipótese original."
+        ]
+      },
+      {
+        "title": "3. Ler o resultado e decidir com uma comparação justa",
+        "body": [
+          "Monte uma revisão com preço planejado, preço final observado no canal, novas reservas, cancelamentos e custo incremental. Se a ferramenta mostra um preço e o hóspede vê outro, investigue as camadas de regras antes de atribuir o resultado à demanda. Compare períodos com disponibilidade e contexto semelhantes; um feriado não é controle adequado para uma semana comum. Diferencie indicador antecedente, como novas reservas, de resultado realizado, como receita de estadias concluídas. Registre a decisão de manter, ajustar ou desfazer a hipótese e a evidência utilizada. Poucas observações permitem apenas uma leitura provisória. Não aumente a confiança porque o painel apresenta números precisos: a qualidade da conclusão depende dos dados e da comparação."
+        ]
+      }
+    ],
+    "filled_template": [
+      {
+        "field": "Hipótese do teste",
+        "value": "No imóvel fictício A, investigar uma lacuna de duas noites entre reservas, sem modificar outras datas.",
+        "why": "Delimitar o problema impede que uma regra ampla seja aplicada por conveniência a todo o calendário."
+      },
+      {
+        "field": "Base e limites de trabalho",
+        "value": "Preço de referência hipotético de R$ 300; limites ainda dependem da ficha de custos e da aprovação do gestor.",
+        "why": "O exemplo não recomenda essa diária. Um número isolado não serve como configuração padrão para imóveis reais."
+      },
+      {
+        "field": "Estado anterior registrado",
+        "value": "Guardar datas, preços e restrições anteriores em registro interno autorizado antes de testar qualquer mudança.",
+        "why": "A reversão precisa ser possível e compreensível; não basta lembrar aproximadamente como o calendário estava."
+      },
+      {
+        "field": "Camadas que precisam de conferência",
+        "value": "PriceLabs, sistema de gestão e canal de venda: identificar quais participam da operação e quais regras podem interagir.",
+        "why": "Não presumir integração ou atualização imediata evita interpretar uma divergência técnica como comportamento do mercado."
+      },
+      {
+        "field": "Indicador econômico",
+        "value": "Comparar diferença de receita com custos adicionais; no exemplo anterior, R$ 240 brutos não cobrem R$ 280 extras.",
+        "why": "Aumento de ocupação não comprova melhoria de resultado quando exige mais gasto do que gera de receita."
+      },
+      {
+        "field": "Critério de reversão e revisão",
+        "value": "Interromper o teste se atingir datas não planejadas ou produzir preço incompatível com os limites aprovados; registrar responsável e próximo retorno.",
+        "why": "Um critério observável reduz improviso e separa falha de configuração de uma hipótese comercial ainda inconclusiva."
+      }
+    ],
+    "failure_case": {
+      "scenario": "Caso fictício: após um ajuste, o gestor vê ocupação maior e declara sucesso. Depois percebe que um desconto existente no canal se acumulou com a estratégia e alcançou datas fora do teste.",
+      "diagnosis": "Há dois problemas distintos: o desenho do teste não controlou as regras participantes e a análise usou ocupação como se fosse resultado líquido. Não é possível atribuir a diferença observada apenas ao ajuste feito no PriceLabs.",
+      "correction": "Recupere o registro anterior, identifique datas e regras afetadas e encaminhe a correção ao responsável autorizado. Recalcule receita e custos com definições consistentes. Reescreva a hipótese com limites, conferência do preço final e critérios de interrupção antes de considerar novo teste.",
+      "verification": "Confira uma amostra das datas planejadas e das datas que não deveriam mudar. Compare valores no sistema e no canal, registre divergências e confirme a reversão quando necessária. Continue a aprendizagem na documentação e no treinamento oficial gratuito; este material é um guia independente de planejamento, não implantação da ferramenta."
+    }
+  },
+  "aumentar-rentabilidade": {
+    "procedure": [
+      {
+        "title": "1. Montar uma conta que explique o resultado",
+        "body": [
+          "Considere dez estadias fictícias em um período fechado. Reúna valores recebidos e gastos associados, mantendo referência para cada lançamento. Crie categorias simples: receita de hospedagem, valores cobrados para cobrir custos, limpeza, lavanderia, consumíveis, manutenção e despesas fixas. Não some uma cobrança de limpeza à margem sem registrar o custo correspondente. Separe pagamento realizado, despesa ainda pendente e estimativa. Se parte dos custos pertence a outro período, sinalize a necessidade de tratamento consistente em vez de ajustar silenciosamente. A finalidade é entender a operação, não produzir uma demonstração contábil profissional. Ao terminar, explique em palavras por que o saldo bancário pode ser diferente do resultado apurado."
+        ]
+      },
+      {
+        "title": "2. Priorizar uma perda pela causa, não pela aparência",
+        "body": [
+          "No exemplo, seis deslocamentos extras custaram R$ 50 cada. Antes de comprar uma solução, classifique os motivos: entrega de item esquecido, manutenção urgente e erro de instrução de acesso podem exigir respostas diferentes. Conte frequência e impacto de cada causa. Se apenas dois deslocamentos vieram de uma instrução confusa, não atribua os seis à mesma falha. Compare ações possíveis pelo custo total, esforço de manutenção e consequência de erro. Um novo equipamento pode reduzir visitas, mas também exigir instalação e suporte. Escolha uma hipótese pequena e reversível, como revisar a conferência de itens antes da chegada, sem prometer que eliminará todo gasto extraordinário."
+        ]
+      },
+      {
+        "title": "3. Decidir se a mudança merece continuar",
+        "body": [
+          "Defina uma medida antes de iniciar o teste: número de deslocamentos por estadia, custo evitável e tempo de atendimento. Use uma ficha por ocorrência para registrar motivo e solução. Compare um período semelhante e observe se o volume de estadias mudou; menos ocorrências com metade das reservas não prova melhoria. Inclua o custo da intervenção, mesmo quando pago apenas uma vez, e explique o período considerado. Se os dados forem poucos, registre resultado inconclusivo. Uma decisão possível é manter o procedimento por segurança operacional, sem alegar retorno financeiro comprovado. O relatório deve separar benefício observado, hipótese ainda não testada e despesa adicional produzida pela mudança."
+        ]
+      }
+    ],
+    "filled_template": [
+      {
+        "field": "Período e unidade de comparação",
+        "value": "Dez estadias fictícias no período A; comparar ocorrências por estadia, além do total de despesas.",
+        "why": "Normalizar pelo volume evita celebrar uma queda de custos causada apenas por menos hóspedes."
+      },
+      {
+        "field": "Resultado inicial",
+        "value": "R$ 8.000 recebidos menos R$ 5.500 de custos considerados resultam em R$ 2.500, antes de itens não incluídos.",
+        "why": "Declarar exclusões impede chamar um resultado parcial de lucro líquido definitivo."
+      },
+      {
+        "field": "Causa investigada",
+        "value": "Dois dos seis deslocamentos vieram da falta de conferência de enxoval; os demais têm causas diferentes.",
+        "why": "A intervenção deve ser dimensionada para a causa que realmente pretende tratar, sem somar economias incompatíveis."
+      },
+      {
+        "field": "Ação proposta",
+        "value": "Acrescentar conferência de quantidade e estado do enxoval antes da liberação, com responsável identificado.",
+        "why": "Uma etapa observável é mais fácil de testar do que uma orientação vaga para “ter mais atenção”."
+      },
+      {
+        "field": "Custo e efeito hipotéticos",
+        "value": "Intervenção de R$ 180 que evita dois deslocamentos de R$ 50 gera R$ 100 evitados e não se paga nesse período.",
+        "why": "Contar apenas gasto evitado produziria uma conclusão otimista e esconderia o custo de executar a melhoria."
+      },
+      {
+        "field": "Decisão e condição de revisão",
+        "value": "Reavaliar após reunir ocorrências comparáveis; manter separado o motivo operacional do argumento financeiro.",
+        "why": "Uma ação pode ter valor para a experiência do hóspede sem justificar uma promessa de aumento de rentabilidade."
+      }
+    ],
+    "failure_case": {
+      "scenario": "Caso fictício: o proprietário troca fotos, reduz preço e muda a duração mínima das estadias na semana de um feriado. A receita sobe e ele atribui todo o crescimento às fotografias.",
+      "diagnosis": "As três intervenções e a mudança de contexto impedem identificar uma causa única. Receita maior também não informa quanto sobrou após limpeza adicional, descontos e outros custos. A conclusão mistura divulgação, demanda e operação.",
+      "correction": "Reconstrua a linha do tempo das alterações e registre as diferenças de disponibilidade e sazonalidade. Calcule resultado com as mesmas categorias de custos. Em um próximo teste, delimite melhor a intervenção e use comparação plausível, sem tentar reproduzir artificialmente condições que não existem.",
+      "verification": "O relatório corrigido deve dizer o que foi observado e o que permanece incerto. Verifique se alguém consegue refazer a conta pelos lançamentos e compreender por que não há base para prometer um percentual de ganho. Não esconda resultado desfavorável para preservar a hipótese inicial."
+    }
+  },
+  "gestao-de-locacao-no-litoral": {
+    "procedure": [
+      {
+        "title": "1. Construir uma linha do tempo que caiba no dia",
+        "body": [
+          "Use uma troca fictícia de hóspedes: saída às dez horas e próxima chegada às dezesseis. Divida o intervalo em atividades reais, não apenas no rótulo “limpeza”. Inclua retirada e reposição de enxoval, inspeção, pequenos ajustes, conferência de acesso e liberação. Consulte quem executa cada tarefa sobre duração e dependências. Se a lavanderia entrega às quinze e trinta, uma conferência marcada para quinze não pode depender desse enxoval. Mantenha uma margem para imprevistos e um responsável por decidir quando a unidade está pronta. Não altere unilateralmente horários combinados para fazer a planilha fechar. O objetivo do roteiro é revelar conflitos antes que eles atinjam a chegada."
+        ]
+      },
+      {
+        "title": "2. Transformar o checklist em evidência observável",
+        "body": [
+          "Escreva itens que outra pessoa consiga verificar: “torneira abre e fecha sem vazamento aparente” é mais específico que “banheiro perfeito”. Use o mesmo critério para acesso, iluminação, roupa de cama e itens anunciados. Registre apenas o necessário e evite fotografar documentos ou objetos pessoais. Diferencie limpeza concluída, pendência identificada e liberação autorizada. Quando um item falha, o checklist deve apontar quem recebe a ocorrência e qual decisão está pendente. Ele não substitui avaliação técnica nem permite concluir que uma instalação é segura apenas pela aparência. Problemas de risco exigem encaminhamento apropriado, não uma tentativa improvisada de reparo por quem não tem competência para fazê-lo."
+        ]
+      },
+      {
+        "title": "3. Fazer uma passagem de serviço que não dependa da memória",
+        "body": [
+          "Ao encerrar uma etapa, entregue ao próximo responsável um resumo com unidade, estado, pendências, decisões e horário do próximo retorno. No exemplo de vazamento, a mensagem “já avisei alguém” é insuficiente: falta saber quem assumiu, o que foi confirmado e se a chegada pode ocorrer. Mantenha comunicação factual e não anuncie conclusão antes da conferência. Se for necessário falar com o hóspede, apresente informações verificadas e o próximo passo possível, sem prometer solução ou compensação sem autorização. Após a estadia, revise o registro para identificar se a falha poderia ter sido detectada antes. A revisão serve para melhorar processo, não para procurar culpado por qualquer ocorrência."
+        ]
+      }
+    ],
+    "filled_template": [
+      {
+        "field": "Janela operacional",
+        "value": "Saída fictícia às 10h; chegada às 16h; limpeza, conferência e liberação são etapas separadas.",
+        "why": "Uma janela de seis horas só é útil se as dependências e a capacidade da equipe forem compatíveis."
+      },
+      {
+        "field": "Tarefa observável",
+        "value": "Conferir quantidade de jogos de cama e testar o acesso segundo procedimento autorizado.",
+        "why": "A descrição permite que duas pessoas entendam a mesma entrega e reduz interpretações como “acho que está tudo certo”."
+      },
+      {
+        "field": "Estado da unidade",
+        "value": "Às 12h, limpeza em andamento e vazamento aparente registrado; unidade ainda não liberada.",
+        "why": "Informar o estado evita que a conclusão de uma tarefa seja confundida com prontidão completa."
+      },
+      {
+        "field": "Responsabilidade da ocorrência",
+        "value": "Gestor acompanha o retorno do prestador e informa decisão sobre a liberação; contato do hóspede fica com responsável definido.",
+        "why": "Sem separação de papéis, várias pessoas podem transmitir respostas contraditórias ou nenhuma pessoa assumir o acompanhamento."
+      },
+      {
+        "field": "Próxima comunicação",
+        "value": "Retorno operacional combinado para 13h30, mesmo que a solução ainda não esteja concluída.",
+        "why": "Atualização não precisa fingir resolução; deve reduzir incerteza sobre o que está sendo feito e quando haverá nova informação."
+      },
+      {
+        "field": "Fechamento e prevenção",
+        "value": "Registrar solução confirmada, horário da conferência e ajuste necessário no checklist da próxima troca.",
+        "why": "O histórico precisa produzir aprendizagem; encerrar a conversa sem registrar a causa deixa a mesma falha reaparecer."
+      }
+    ],
+    "failure_case": {
+      "scenario": "Caso fictício: a limpeza envia uma fotografia da sala pronta e o gestor libera a entrada. A chave de acesso não foi conferida e o hóspede fica aguardando do lado de fora.",
+      "diagnosis": "A fotografia demonstra apenas parte da preparação. O processo não definiu um responsável pela conferência final nem incluiu acesso como requisito de liberação. Culpar a limpeza não corrige essa lacuna de coordenação.",
+      "correction": "Acione o responsável autorizado para resolver o acesso, mantenha o hóspede informado e registre o ocorrido sem divulgar códigos em canais amplos. Separe formalmente limpeza e liberação no roteiro e atribua quem verifica o acesso antes de autorizar a chegada.",
+      "verification": "Na próxima simulação, outra pessoa deve conseguir localizar quem libera a unidade e qual evidência sustenta essa decisão. Confira se a equipe usa o estado “pendente” quando algum requisito falha, em vez de marcar a tarefa inteira como concluída para cumprir o horário."
+    }
+  },
+  "gestao-profissional-locacao": {
+    "procedure": [
+      {
+        "title": "1. Definir o que a gestão assume e o que precisa de aprovação",
+        "body": [
+          "Considere uma carteira fictícia de três imóveis com proprietários diferentes. Para cada unidade, liste atividades incluídas, responsabilidades do proprietário e situações que exigem autorização específica. Não suponha que o acordo de um imóvel vale para todos. Registre quem decide sobre manutenção, bloqueios de uso e despesas extraordinárias, mantendo informações sensíveis restritas às pessoas necessárias. Esse quadro organiza a operação, mas não substitui revisão dos instrumentos contratuais por profissional competente. Quando uma condição estiver indefinida, marque a lacuna antes de executar algo que gere obrigação. A equipe precisa saber não apenas quem faz a tarefa, mas também quem pode autorizar uma decisão e como registrar essa autorização."
+        ]
+      },
+      {
+        "title": "2. Conciliar valores sem misturar imóveis e períodos",
+        "body": [
+          "Crie um controle por unidade com identificador de cada lançamento, referência, data, categoria, valor previsto e valor realizado. Relacione recebimentos e despesas às evidências disponíveis, evitando guardar dados de pagamento desnecessários. Se uma compra atende dois imóveis, registre o critério de distribuição e mantenha o total reconciliável; não lance o valor integral em cada unidade. Separe ajustes, cancelamentos e valores pendentes em vez de apagar linhas antigas. Ao fechar o período, compare as fontes e explique diferenças. O saldo de entradas menos saídas não é automaticamente o valor que pode ser repassado: a apuração precisa respeitar os acordos aplicáveis e as obrigações ainda não consideradas."
+        ]
+      },
+      {
+        "title": "3. Transformar o fechamento em um painel de decisões",
+        "body": [
+          "Prepare um resumo que destaque exceções: manutenção sem aprovação, divergência de recebimento, chegada sem responsável e tarefa vencida. Mostre valor ou impacto, causa conhecida, informação faltante, responsável e próxima ação. Não esconda pendências em um total geral que parece correto. Faça também uma revisão de capacidade nos dias críticos: duas trocas simultâneas podem exceder a equipe mesmo quando a média mensal é baixa. Quando houver conflito, registre uma alternativa viável antes de aceitar novas promessas operacionais. Ao informar o proprietário, diferencie fato confirmado, estimativa e decisão solicitada. Um painel útil permite saber o que precisa acontecer em seguida, não apenas observar indicadores coloridos."
+        ]
+      }
+    ],
+    "filled_template": [
+      {
+        "field": "Unidade e limite de atuação",
+        "value": "Imóvel fictício A; rotina de reservas incluída; aprovação de despesa extraordinária ainda depende do responsável indicado no acordo.",
+        "why": "O registro evita que uma prática informal vire obrigação presumida ou seja aplicada a outro proprietário sem revisão."
+      },
+      {
+        "field": "Recebimento rastreável",
+        "value": "Lançamento REC-A-01: R$ 4.000 recebidos no período, com referência interna da origem e data da conferência.",
+        "why": "Cada valor deve poder ser reconstruído sem expor dados pessoais completos do hóspede no relatório."
+      },
+      {
+        "field": "Despesa compartilhada",
+        "value": "Compra fictícia de R$ 240 atende A e B; critério documentado atribui R$ 120 a cada, sem duplicar o total.",
+        "why": "A soma distribuída deve corresponder ao gasto original, permitindo explicar como cada unidade participa do custo."
+      },
+      {
+        "field": "Pendência de aprovação",
+        "value": "Manutenção estimada em R$ 300 sinalizada como pendente; não registrada como pagamento realizado.",
+        "why": "A apresentação separa necessidade operacional de saída efetiva de caixa e não simula autorização inexistente."
+      },
+      {
+        "field": "Exceção operacional",
+        "value": "Duas trocas no mesmo horário; equipe principal atende apenas uma; alternativa ainda precisa de confirmação.",
+        "why": "A média de capacidade não resolve um conflito concreto de agenda. A pendência deve aparecer antes das chegadas."
+      },
+      {
+        "field": "Mensagem de fechamento",
+        "value": "“Saldo apurado conforme lançamentos; itens pendentes listados à parte; solicito confirmação da manutenção e da alternativa operacional.”",
+        "why": "Uma mensagem objetiva facilita a decisão sem apresentar saldo parcial como valor final de repasse."
+      }
+    ],
+    "failure_case": {
+      "scenario": "Caso fictício: o demonstrativo de dois imóveis parece equilibrado, mas a mesma nota de R$ 240 foi lançada integralmente nas duas unidades. Um proprietário questiona a despesa.",
+      "diagnosis": "O erro é de alocação e reconciliação, não apenas de comunicação. A soma dos lançamentos ultrapassa o documento original. Uma explicação genérica sobre custos de operação não resolve a diferença nem justifica manter o registro duplicado.",
+      "correction": "Confira o documento e o critério de distribuição, corrija os lançamentos preservando o histórico do ajuste e informe os responsáveis afetados. Recalcule os demonstrativos relacionados. Não altere silenciosamente um relatório já enviado nem atribua ao proprietário obrigação que não foi acordada.",
+      "verification": "Compare o total distribuído com o valor da fonte e verifique se cada ajuste possui referência e justificativa. Inclua essa conferência no fechamento seguinte. O teste passa quando outra pessoa consegue refazer a distribuição e compreender o que mudou, sem depender da memória do gestor."
+    }
+  },
+  "imoveis-para-airbnb": {
+    "procedure": [
+      {
+        "title": "1. Transformar um perfil de hóspede em requisitos observáveis",
+        "body": [
+          "Considere uma comparação fictícia entre apartamento e casa para um grupo que chega de carro à noite e viaja com criança pequena. Liste necessidades observáveis: acesso, estacionamento, capacidade, segurança do uso e possibilidade de preparar refeições. Não atribua preferências a todas as famílias nem avalie segurança estrutural por conta própria. Separe requisitos que tornam o imóvel inadequado ao perfil de características apenas desejáveis. Para cada item, registre o que foi observado, o que foi declarado e o que ainda precisa de confirmação. Uma vista bonita não compensa automaticamente uma restrição decisiva. Essa primeira etapa organiza adequação operacional, sem concluir que o imóvel deve ser comprado ou que terá procura suficiente."
+        ]
+      },
+      {
+        "title": "2. Fazer um inventário de preparação com dependências",
+        "body": [
+          "Percorra o imóvel e separe itens essenciais, reparos e melhorias opcionais. No exemplo, a casa precisa de manutenção em uma janela e de um plano para conservação do quintal; o apartamento precisa confirmar condições da vaga. Solicite orçamentos adequados quando necessário, sem inventar valores de mercado para preencher a planilha. Registre prazo, responsável e dependências: não planeje fotografar o ambiente antes de concluir o reparo que altera sua apresentação. Quando houver questão técnica, encaminhe ao profissional competente. Some também trabalho de preparação e manutenção futura, não apenas compras de mobília. Um item barato pode exigir uma operação cara e frequente, enquanto uma comodidade desejável pode não ser essencial para começar."
+        ]
+      },
+      {
+        "title": "3. Comparar cenários sem esconder informação ausente",
+        "body": [
+          "Monte a mesma tabela para as duas alternativas, usando períodos e categorias iguais. Registre noites destinadas ao uso próprio, manutenção e disponibilidade potencial; disponível não significa reservado. Separe custos conhecidos, estimados e não informados. Se a regra aplicável à atividade ainda não foi confirmada, marque a decisão como pendente, mesmo que uma projeção pareça atraente. Use referências de anúncios apenas como indícios de oferta, não como prova de receita recebida. Escreva uma conclusão provisória que diga quais verificações mudariam a comparação. O produto deste processo é uma lista priorizada de diligências e necessidades operacionais, não um ranking que transforma hipóteses frágeis em recomendação patrimonial."
+        ]
+      }
+    ],
+    "filled_template": [
+      {
+        "field": "Perfil utilizado no exercício",
+        "value": "Grupo fictício com chegada noturna, carro e criança; necessidades de acesso, estacionamento e uso dos ambientes descritas sem presumir comportamento universal.",
+        "why": "A comparação precisa responder a um perfil definido para não reunir vantagens que atendem a públicos incompatíveis."
+      },
+      {
+        "field": "Requisito decisivo e evidência",
+        "value": "Acesso noturno precisa ser compreensível; apartamento observado em visita diurna, casa ainda sem simulação de chegada.",
+        "why": "Uma observação em condições diferentes não comprova toda a experiência. A lacuna indica qual teste autorizado realizar."
+      },
+      {
+        "field": "Regra e autorização a confirmar",
+        "value": "Condições de uso para temporada pendentes em ambas as alternativas; registrar fonte adequada e responsável pela verificação.",
+        "why": "Nenhuma projeção financeira deve fazer uma restrição desconhecida desaparecer da análise."
+      },
+      {
+        "field": "Preparação essencial",
+        "value": "Casa: avaliar reparo da janela com profissional apropriado; apartamento: confirmar características e condições de uso da vaga.",
+        "why": "Identificar a próxima verificação é mais útil que registrar “pronto” com base em fotografias atraentes."
+      },
+      {
+        "field": "Operação recorrente",
+        "value": "Casa exige plano de manutenção externa; apartamento exige organização do acesso e das regras aplicáveis ao prédio.",
+        "why": "Custos e tarefas continuam após a preparação inicial e podem afetar a viabilidade de operar à distância."
+      },
+      {
+        "field": "Conclusão provisória",
+        "value": "Não escolher ainda; esclarecer uso permitido, reparo e acesso antes de comparar cenários de disponibilidade e custo.",
+        "why": "Uma conclusão responsável pode ser adiar a decisão até obter evidência, em vez de selecionar o maior número projetado."
+      }
+    ],
+    "failure_case": {
+      "scenario": "Caso fictício: um interessado estima receita anual multiplicando a diária anunciada por todas as noites do ano. Ele desconsidera uso próprio, manutenção, noites sem reserva e custos de operação.",
+      "diagnosis": "A conta trata preço ofertado como receita realizada e disponibilidade total como ocupação garantida. Mesmo uma multiplicação correta produz uma conclusão inválida quando as premissas não correspondem ao que foi observado.",
+      "correction": "Refaça o calendário distinguindo uso próprio, indisponibilidade e noites potencialmente ofertadas. Crie hipóteses explícitas de noites reservadas e registre a ausência de evidência de demanda. Acrescente custos com as mesmas categorias para as alternativas, sem preencher valores desconhecidos como zero.",
+      "verification": "Peça a um revisor para identificar, em cada número, se há dado confirmado ou hipótese. A análise está melhor quando as incertezas ficam visíveis e as próximas verificações são claras. Ela continua sem equivaler a recomendação de compra, avaliação técnica ou promessa de retorno."
+    }
+  },
+  "fotografia-imoveis-temporada": {
+    "procedure": [
+      {
+        "title": "1. Planejar imagens pelo que elas precisam explicar",
+        "body": [
+          "Use um apartamento fictício ou um ambiente real autorizado. Desenhe uma lista de imagens e escreva a pergunta respondida por cada uma: como é a circulação, onde se dorme, o que existe na cozinha ou como é o acesso. Remova documentos, objetos pessoais e reflexos que exponham pessoas antes de fotografar. Não esconda uma característica permanente para melhorar artificialmente a oferta. Se só tiver autorização para um cômodo, limite a prática a ele e explique essa limitação. A lista evita fotografar muitas vezes o mesmo detalhe bonito e esquecer informação essencial. Organize também o momento da captura, considerando luz disponível, movimentação de pessoas e condições seguras para usar o equipamento."
+        ]
+      },
+      {
+        "title": "2. Comparar duas capturas antes de escolher o enquadramento",
+        "body": [
+          "Faça uma versão a partir de uma posição estável e outra com pequeno deslocamento, mantendo o mesmo ambiente. Compare linhas de portas e paredes, objetos cortados e proporção percebida. Uma posição muito próxima de um móvel pode fazê-lo parecer desproporcional, e uma lente muito aberta pode exagerar a profundidade. Escolha a imagem que explica melhor o espaço, não a que parece aumentar sua área. Observe janelas e superfícies reflexivas: excesso de claridade pode apagar informação, enquanto reflexos revelam objetos ou pessoas. Ajuste a posição e teste novamente antes de depender da edição. Não se coloque em locais inseguros nem mova equipamentos ou instalações sem autorização para obter um ângulo."
+        ]
+      },
+      {
+        "title": "3. Editar uma cópia e documentar a seleção",
+        "body": [
+          "Preserve o arquivo original e trabalhe em uma cópia. Faça ajustes moderados de exposição, balanço de branco, recorte e alinhamento, avaliando o efeito de cada um. Compare antes e depois com o ambiente, não com uma imagem idealizada da internet. Não apague danos, acrescente vista ou crie comodidades inexistentes. Na seleção final, atribua uma finalidade a cada imagem e retire repetições. Verifique a versão exportada em tamanho de leitura comum: ela precisa manter detalhes úteis sem expor dados pessoais. Guarde uma anotação dos ajustes e da autorização de uso. Esse histórico permite revisar o material quando o imóvel mudar ou quando surgir dúvida sobre o que uma fotografia representa."
+        ]
+      }
+    ],
+    "filled_template": [
+      {
+        "field": "Pergunta e imagem planejada",
+        "value": "Imagem da sala responde como os assentos se relacionam com a circulação; não serve apenas para mostrar um objeto decorativo.",
+        "why": "Uma finalidade definida ajuda a escolher enquadramento e evita sequências que parecem bonitas, mas não explicam o espaço."
+      },
+      {
+        "field": "Preparação e privacidade",
+        "value": "Retirar correspondência da bancada e conferir reflexos em espelho, janela e televisão antes da captura autorizada.",
+        "why": "Dados pessoais podem aparecer fora do assunto principal e continuar legíveis mesmo quando não foram percebidos no local."
+      },
+      {
+        "field": "Comparação de enquadramento",
+        "value": "Versão A corta a passagem; versão B mostra o caminho entre entrada e sala sem distorção exagerada.",
+        "why": "A escolha é justificada pela informação acrescentada, não por uma promessa de aumentar cliques."
+      },
+      {
+        "field": "Ajuste realizado em cópia",
+        "value": "Correção moderada de balanço de branco e alinhamento; original preservado com identificação correspondente.",
+        "why": "A edição precisa ser reversível e rastreável para não confundir correção de captura com alteração da realidade."
+      },
+      {
+        "field": "Característica mantida",
+        "value": "Marca permanente visível não apagada da fotografia; ocorrência encaminhada à gestão para avaliação e tratamento adequado.",
+        "why": "Editar uma falha material para ocultá-la cria uma expectativa diferente do imóvel entregue."
+      },
+      {
+        "field": "Sequência e legenda",
+        "value": "Sala, dormitório, cozinha, banheiro e acesso, quando autorizados; legendas descrevem características verificadas.",
+        "why": "Ordem e texto devem reduzir dúvidas, sem repetir superlativos ou apresentar como privativa uma área compartilhada."
+      }
+    ],
+    "failure_case": {
+      "scenario": "Caso fictício: o editor clareia excessivamente o interior e substitui a vista da janela por uma imagem de mar. A fotografia fica atraente, mas a vista real é de outro prédio.",
+      "diagnosis": "O problema ultrapassa estilo de edição: a imagem passou a afirmar uma característica que o imóvel não possui. Uma legenda vaga não neutraliza a expectativa criada, e o arquivo original guardado não torna a publicação fiel.",
+      "correction": "Descarte a versão que inventa a vista e retome o original. Ajuste a exposição apenas até tornar o ambiente legível, preservando a informação real da janela. Revise outras imagens para detectar alterações semelhantes e confirme a sequência com quem conhece o imóvel.",
+      "verification": "Compare cada imagem final com o ambiente e descreva quais alterações foram feitas. Um revisor deve conseguir distinguir ajustes de captura de mudanças de conteúdo. A seleção só está pronta quando suas características relevantes são verdadeiras e a autorização de uso e a privacidade foram conferidas."
+    }
+  }
+}

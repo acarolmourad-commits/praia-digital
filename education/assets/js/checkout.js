@@ -1,3 +1,6 @@
+/* LEGACY / NOT LOADED: the public Academy checkout uses enrollment.js for assisted
+ * enrollment. Do not reconnect this historical payment UI without a separately
+ * verified end-to-end integration. Current public pages do not load this file. */
 /**
  * Course catalog for Praia Digital Academy checkout.
  * In production, this can be fetched from /education/cursos/assets-gerados.json

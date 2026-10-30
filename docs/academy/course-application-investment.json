@@ -1,0 +1,902 @@
+{
+  "analise-de-mercado-imobiliario-litoral": {
+    "procedure": [
+      {
+        "title": "Delimitar a pergunta e montar uma amostra coerente",
+        "body": [
+          "Neste exercício inteiramente fictício, a pergunta é: como se distribuem os preços anunciados de apartamentos de dois dormitórios entre duas microáreas? Antes de recolher números, fixe tipologia, intervalo de área, período de observação e atributos importantes. Use a mesma regra nas duas microáreas. Um anúncio sem área informada fica como pendente, não recebe uma estimativa improvisada. Registre também anúncios descartados e motivo. Se uma área tiver apenas duas observações compatíveis e a outra dez, essa desigualdade precisa aparecer na leitura. A amostra serve para descrever o material observado, não para representar automaticamente todos os imóveis do bairro."
+        ]
+      },
+      {
+        "title": "Transformar registros em medidas conferíveis",
+        "body": [
+          "Crie uma linha por imóvel, mantendo identificação suficiente para reconhecer anúncios repetidos sem copiar dados pessoais. Calcule preço anunciado dividido pela área declarada e preserve o valor original para conferência. No conjunto fictício de R$ 4.800, R$ 5.000, R$ 5.200, R$ 5.600 e R$ 8.000 por metro quadrado, a mediana é R$ 5.200. O último registro pode ter condição diferente; investigue antes de excluir. Se a exclusão for justificada, a nova mediana é R$ 5.100. Mostre os dois resultados e a razão da mudança. Não confunda esse procedimento exploratório com método suficiente para avaliação profissional."
+        ]
+      },
+      {
+        "title": "Produzir uma conclusão que não exceda os dados",
+        "body": [
+          "Separe o relatório em observação, interpretação e dúvida. Observação: a amostra A apresenta determinada mediana de preços anunciados na data registrada. Interpretação possível: diferenças de conservação ou composição podem influenciar a comparação. Dúvida: não sabemos por esses anúncios o preço efetivamente negociado ou o tempo até a venda. Termine indicando qual informação adicional mudaria a conclusão, como confirmação de área ou eliminação de anúncio duplicado. Evite frases como “o bairro valorizou” quando só comparou anúncios de um único momento. Para discutir mudança ao longo do tempo, seria necessário um desenho comparável de períodos e uma avaliação mais cuidadosa das fontes."
+        ]
+      }
+    ],
+    "filled_template": [
+      {
+        "field": "Pergunta",
+        "value": "Comparar anúncios fictícios de apartamentos de dois dormitórios em A e B, na mesma semana.",
+        "why": "Define uma comparação estreita, sem transformar o levantamento em previsão de investimento."
+      },
+      {
+        "field": "Inclusão",
+        "value": "Área declarada entre 55 e 75 m²; uso residencial; uma unidade por registro.",
+        "why": "A regra é aplicada antes de olhar qual conjunto parece mais atraente."
+      },
+      {
+        "field": "Registro",
+        "value": "A-03; 60 m²; R$ 312.000 anunciados; fonte simulada; data fictícia 10/10.",
+        "why": "Preço e área permanecem visíveis para conferir R$ 5.200 por m²."
+      },
+      {
+        "field": "Pendência",
+        "value": "A-05 anuncia vista especial; condição e área ainda não confirmadas.",
+        "why": "Um valor extremo exige investigação, não exclusão conveniente ou aceitação automática."
+      },
+      {
+        "field": "Resultado",
+        "value": "Mediana inicial A: R$ 5.200/m²; sem extremo justificado: R$ 5.100/m².",
+        "why": "Apresentar sensibilidade permite perceber o efeito da composição da amostra."
+      },
+      {
+        "field": "Limitação",
+        "value": "Não há dados de transação concluída nem amostra probabilística.",
+        "why": "A conclusão descreve anúncios e não declara valor de venda ou tendência geral."
+      }
+    ],
+    "failure_case": {
+      "scenario": "Uma pessoa junta anúncios de apartamentos novos com casas antigas e conclui que uma microárea custa metade da outra. O conjunto também contém o mesmo apartamento publicado por três anunciantes.",
+      "diagnosis": "A diferença aparente mistura tipologias, conservação e repetição. Três anúncios do mesmo imóvel não são três observações independentes; a contagem dá peso excessivo a uma única oferta e pode distorcer mediana e percepção de disponibilidade.",
+      "correction": "Reconstrua a tabela usando o critério definido antes da comparação, marque duplicidades e preserve o histórico das exclusões. Se restarem poucos registros, assuma a insuficiência em vez de ampliar silenciosamente a amostra com imóveis incompatíveis.",
+      "verification": "Uma segunda pessoa deve conseguir reproduzir os filtros e os cálculos a partir da tabela. Confira se cada conclusão menciona período, número de observações, preço anunciado e limitações. Se faltar informação para distinguir duplicidades, mantenha a análise como provisória."
+    }
+  },
+  "analise-de-rentabilidade": {
+    "procedure": [
+      {
+        "title": "Construir a conta sem misturar bases",
+        "body": [
+          "Use um imóvel fictício para organizar a lógica, não para inferir retorno de mercado. Comece por um período de doze meses e defina se cada linha representa previsão ou realização. Registre receita de hospedagem, cobranças acessórias e custos correspondentes separadamente. Para evitar confusão, monte primeiro um quadro operacional antes de financiamento, depois um quadro de caixa com parcelas e outros pagamentos. Um custo já descontado no repasse não deve ser novamente subtraído sem ajustar a receita de partida. Escreva ao lado de cada número sua origem e os itens incluídos. Essa definição é tão importante quanto a fórmula final."
+        ]
+      },
+      {
+        "title": "Calcular e testar uma hipótese de cada vez",
+        "body": [
+          "Considere receita anual fictícia de R$ 48.000, despesas operacionais de R$ 24.000 e capital considerado de R$ 400.000. O resultado operacional é R$ 24.000 e a relação simples com o capital é 6% ao ano, antes de itens não informados. Reduza apenas a receita em 15%: ela passa a R$ 40.800 e o resultado a R$ 16.800, ou 4,2%. Depois acrescente manutenção extraordinária de R$ 8.000: restam R$ 8.800, equivalentes a 2,2%. Ao alterar uma premissa por etapa, fica claro qual mudança explica cada diferença. Esses percentuais não são rentabilidade líquida prometida nem previsão de desempenho."
+        ]
+      },
+      {
+        "title": "Verificar o calendário de caixa",
+        "body": [
+          "O resultado anual não mostra se haverá dinheiro no mês de maior despesa. Distribua entradas e saídas pelos meses em que são esperadas ou realizadas. Em um exemplo simples, uma receita concentrada no verão não cobre automaticamente uma manutenção anterior se não houver caixa reservado. Mostre saldo inicial, entradas, saídas e saldo final de cada mês, transferindo o saldo para o seguinte. Separe aportes do proprietário da receita operacional; um aporte melhora o caixa, mas não prova que a operação gerou lucro. Quando faltarem informações tributárias, financeiras ou contratuais, mantenha campos pendentes e procure avaliação apropriada para qualquer decisão real."
+        ]
+      }
+    ],
+    "filled_template": [
+      {
+        "field": "Período e base",
+        "value": "Doze meses fictícios; projeção separada de valores realizados.",
+        "why": "Impede comparar um orçamento anual com alguns meses de recebimentos sem explicar a diferença."
+      },
+      {
+        "field": "Receita",
+        "value": "R$ 48.000 antes dos custos listados no quadro.",
+        "why": "A definição evita subtrair duas vezes uma taxa já descontada no repasse."
+      },
+      {
+        "field": "Despesas",
+        "value": "R$ 24.000 operacionais; financiamento e tributos não informados ficam separados.",
+        "why": "O rótulo do resultado deve corresponder aos custos efetivamente considerados."
+      },
+      {
+        "field": "Capital",
+        "value": "R$ 400.000 considerados apenas para o indicador didático.",
+        "why": "Mudar para o valor da entrada produziria outro indicador e exigiria tratamento consistente da dívida."
+      },
+      {
+        "field": "Sensibilidade",
+        "value": "Receita menor: R$ 16.800 de resultado; com manutenção: R$ 8.800.",
+        "why": "Cenários permitem observar fragilidade sem selecionar apenas o número favorável."
+      },
+      {
+        "field": "Caixa",
+        "value": "Linha mensal de aporte identificada como aporte, não como receita de aluguel.",
+        "why": "Um saldo bancário positivo pode depender de recursos externos à operação."
+      }
+    ],
+    "failure_case": {
+      "scenario": "Uma planilha apresenta rendimento positivo porque soma o sinal recebido em dezembro e também o valor integral da mesma reserva em janeiro. Ela omite uma despesa de reparo que será paga no mês seguinte.",
+      "diagnosis": "Há dupla contagem de uma entrada e diferença entre resultado e calendário de pagamentos. A aparência de sobra pode desaparecer quando a reserva é reconciliada e a obrigação pendente entra no controle de caixa.",
+      "correction": "Atribua uma referência à reserva, detalhe sinal e saldo e confira se o total coincide com o valor devido. Registre o reparo como compromisso pendente e mostre sua saída no mês previsto, sem apresentá-lo como já pago.",
+      "verification": "Refaça o total por reserva e o saldo de cada mês. As parcelas recebidas devem somar o total correto uma única vez. Verifique também se compromissos pendentes e custos excluídos estão visíveis antes de interpretar qualquer percentual."
+    }
+  },
+  "avaliacao-de-imoveis": {
+    "procedure": [
+      {
+        "title": "Descrever o objeto antes de procurar referências",
+        "body": [
+          "Escolha um apartamento inteiramente fictício e escreva uma ficha de referência: localização aproximada, tipologia, área declarada, dormitórios, vagas, estado de conservação observado e finalidade do estudo. Distinga observação própria de declaração de terceiros. Se a área ou a situação da vaga não estiver confirmada, marque a pendência. Não procure primeiro o preço que deseja defender para depois selecionar anúncios compatíveis com ele. A comparação educacional deve partir da pergunta e das características relevantes. Ela não substitui vistoria, documentação adequada ou metodologia exigida em uma avaliação profissional e não produz um parecer válido para uso externo."
+        ]
+      },
+      {
+        "title": "Selecionar e justificar comparáveis",
+        "body": [
+          "Imagine seis referências simuladas: quatro apartamentos de características próximas, uma casa muito maior e uma sala comercial. Exclua os dois últimos por incompatibilidade com a pergunta, explicando o critério. Entre os quatro restantes, registre diferenças de área, conservação e vagas sem inventar fatores percentuais de ajuste. Um apartamento reformado não permite deduzir automaticamente um desconto padrão para outro não reformado. Se a diferença for material e não puder ser analisada adequadamente, trate o comparável com cautela ou mantenha a conclusão inconclusiva. A qualidade das referências importa mais que preencher um número arbitrário de linhas na tabela."
+        ]
+      },
+      {
+        "title": "Apresentar faixa observada e limitações",
+        "body": [
+          "Para quatro unidades fictícias de 60 m² anunciadas a R$ 300.000, R$ 318.000, R$ 330.000 e R$ 354.000, as referências por área são R$ 5.000, R$ 5.300, R$ 5.500 e R$ 5.900 por m². Essa faixa descreve os anúncios escolhidos; não determina sozinha o valor do imóvel estudado. Escreva quais condições não foram verificadas e se as fontes representam preço pedido ou transação realizada. Evite arredondar uma média e apresentá-la como conclusão técnica. O encerramento apropriado do exercício pode ser uma lista de dados faltantes e perguntas para um profissional habilitado, em vez de um valor final."
+        ]
+      }
+    ],
+    "filled_template": [
+      {
+        "field": "Objeto",
+        "value": "Apartamento fictício de 60 m², dois dormitórios e vaga declarada.",
+        "why": "Identifica a referência estudada sem tratar a declaração da vaga como comprovação documental."
+      },
+      {
+        "field": "Finalidade",
+        "value": "Organizar anúncios para exercício de comparação, sem laudo ou parecer.",
+        "why": "O uso educacional deve estar visível para evitar emprego indevido por terceiros."
+      },
+      {
+        "field": "Referência incluída",
+        "value": "Apartamento A, 60 m², R$ 318.000 anunciados, conservação não verificada.",
+        "why": "Permite calcular R$ 5.300/m² e mantém uma limitação importante junto ao número."
+      },
+      {
+        "field": "Referência excluída",
+        "value": "Sala comercial, apesar de estar no mesmo quarteirão.",
+        "why": "Proximidade geográfica não compensa uma tipologia incompatível com a pergunta."
+      },
+      {
+        "field": "Faixa observada",
+        "value": "R$ 5.000 a R$ 5.900/m² nos quatro anúncios simulados.",
+        "why": "Descreve o conjunto sem atribuir a ele precisão de avaliação profissional."
+      },
+      {
+        "field": "Próxima verificação",
+        "value": "Confirmar área, características da vaga e comparabilidade da conservação.",
+        "why": "Explicita quais lacunas podem alterar a leitura antes de qualquer uso real."
+      }
+    ],
+    "failure_case": {
+      "scenario": "Um aluno encontra um anúncio de luxo e usa seu preço por metro quadrado para atribuir valor a uma unidade simples do mesmo bairro. Em seguida aplica um desconto de 10% porque viu esse percentual em outro exemplo.",
+      "diagnosis": "O raciocínio ignora diferenças relevantes e inventa um ajuste sem base demonstrada. O cálculo pode parecer preciso, mas a precisão numérica não corrige a fragilidade das referências nem transforma o exercício em avaliação técnica.",
+      "correction": "Volte à ficha do objeto e selecione referências mais coerentes. Registre as diferenças que continuam sem análise e retire o desconto arbitrário. Se não houver material suficiente, conclua que a comparação exploratória ainda não sustenta uma estimativa.",
+      "verification": "Peça a um revisor que explique por que cada referência foi incluída e de onde veio cada transformação numérica. Qualquer percentual sem origem justificável deve ser removido. O arquivo final precisa continuar identificado como estudo educacional, não documento profissional."
+    }
+  },
+  "casa-ou-apartamento": {
+    "procedure": [
+      {
+        "title": "Transformar preferências em critérios observáveis",
+        "body": [
+          "Considere uma família fictícia que visita o litoral duas vezes por mês e recebe uma pessoa com dificuldade de locomoção. Comece descrevendo atividades reais: chegada com bagagem, preparo de refeições, circulação, descanso e retorno à cidade de origem. A partir disso, separe requisitos eliminatórios de preferências. Acesso compatível pode ser requisito; quintal pode ser preferência. Não permita que uma soma de pontos compense uma incompatibilidade decisiva. Escreva como cada critério será verificado durante a visita e quais informações exigem confirmação externa. Isso reduz o risco de uma fotografia atraente substituir a análise das necessidades concretas da família."
+        ]
+      },
+      {
+        "title": "Comparar o trabalho de manter cada opção",
+        "body": [
+          "Uma casa e um apartamento podem distribuir custos e responsabilidades de maneiras diferentes. Não assuma que um sempre custa menos. Para cada alternativa, liste conservação interna, áreas externas, limpeza, deslocamentos, apoio local e despesas informadas. Separe valores conhecidos, estimativas e campos ainda vazios. Em um cenário de ausência de trinta dias, quem identifica um vazamento ou recebe um prestador? Em uma chegada noturna, como funciona o acesso? Essas perguntas tornam a comparação operacional, não apenas estética. Quando houver regras de uso ou responsabilidades compartilhadas, obtenha informação adequada em vez de deduzi-las pela tipologia do imóvel."
+        ]
+      },
+      {
+        "title": "Usar pesos sem esconder uma escolha emocional",
+        "body": [
+          "Depois de verificar os requisitos, atribua pesos simples às preferências e explique o motivo de cada peso. Em um exemplo fictício, privacidade recebe peso três, quintal peso quatro e facilidade de manutenção peso cinco. Avalie cada alternativa com uma escala claramente definida e registre a evidência, não apenas a nota. Refaça o quadro reduzindo o peso do quintal pela metade. Se a ordem das opções mudar, a decisão depende fortemente dessa preferência. Isso não a torna errada, mas deve ser reconhecido. A matriz organiza a conversa; não é uma fórmula que recomenda compra ou substitui verificações jurídicas, técnicas e financeiras."
+        ]
+      }
+    ],
+    "filled_template": [
+      {
+        "field": "Persona e uso",
+        "value": "Família fictícia, visitas quinzenais e necessidade de circulação sem degraus relevantes.",
+        "why": "O critério nasce do uso previsto e não de uma preferência genérica por casa ou apartamento."
+      },
+      {
+        "field": "Requisito",
+        "value": "Acesso compatível ainda não confirmado na casa A; confirmado no apartamento B.",
+        "why": "Uma pendência decisiva impede tratar as alternativas como igualmente adequadas neste momento."
+      },
+      {
+        "field": "Preferência",
+        "value": "Quintal: peso quatro; manutenção simples: peso cinco, com justificativa escrita.",
+        "why": "Os pesos tornam prioridades discutíveis e revisáveis, em vez de ocultá-las em uma nota final."
+      },
+      {
+        "field": "Custo",
+        "value": "Conservação externa da casa: orçamento pendente; despesas informadas do apartamento: a conferir.",
+        "why": "Campos desconhecidos não viram zero apenas porque ainda não há um número disponível."
+      },
+      {
+        "field": "Ausência",
+        "value": "Durante trinta dias, contato local e rotina de verificação ainda precisam ser definidos.",
+        "why": "A operação durante ausência pode ser tão importante quanto a experiência de um fim de semana."
+      },
+      {
+        "field": "Teste de sensibilidade",
+        "value": "Reduzir peso do quintal de quatro para dois e registrar mudança na classificação.",
+        "why": "Mostra quanto a comparação depende de uma preferência sem declarar uma resposta universal."
+      }
+    ],
+    "failure_case": {
+      "scenario": "Uma família escolhe uma casa pela nota total alta, embora a visita tenha revelado uma escada incompatível com uma necessidade essencial. A nota do quintal e da vista compensou matematicamente o problema de acesso.",
+      "diagnosis": "O erro está no desenho da matriz: um requisito eliminatório foi tratado como preferência negociável. A soma cria uma aparência de decisão objetiva, mas não responde à necessidade que motivou a busca e pode ocultar uma restrição prática importante.",
+      "correction": "Retire os requisitos da soma e avalie-os primeiro como atendidos, não atendidos ou pendentes. Somente alternativas compatíveis seguem para a comparação de preferências. Se houver possibilidade de adaptação, registre a necessidade de avaliação técnica e orçamento antes de considerá-la resolvida.",
+      "verification": "Peça à família que descreva uma chegada real, com bagagem e todos os usuários previstos. Confira se cada etapa é viável nas condições observadas. A comparação só deve avançar quando a restrição estiver esclarecida; nenhuma nota substitui essa evidência."
+    }
+  },
+  "comprar-com-seguranca": {
+    "procedure": [
+      {
+        "title": "Organizar decisões e pontos de parada",
+        "body": [
+          "Em vez de tratar a compra como uma sequência automática de visita, sinal e assinatura, desenhe decisões condicionadas a informações. No caso fictício, o interessado gostou do imóvel, mas a situação de ocupação e as condições de entrega não estão claras. A próxima decisão não é escolher a data do pagamento; é esclarecer essas pendências com as fontes e profissionais adequados. Monte uma linha do tempo com pergunta, responsável pela resposta, evidência esperada e decisão que depende dela. Não existe uma lista única que torne toda compra segura: características do imóvel e da negociação podem exigir verificações diferentes."
+        ]
+      },
+      {
+        "title": "Separar fatos, declarações e conclusões",
+        "body": [
+          "Durante a visita fictícia, há móveis e objetos pessoais, enquanto o vendedor descreve o imóvel como desocupado. Registre ambos sem acusação: objetos observados na data da visita; declaração recebida de determinada pessoa. Pergunte qual é a situação de ocupação e como a entrega será documentada. Não conclua quem mora ali ou quais direitos existem apenas pela aparência. Da mesma forma, uma afirmação sobre despesas quitadas precisa ser encaminhada à verificação apropriada. A organização serve para formular perguntas e acompanhar respostas; interpretar efeitos jurídicos ou condições técnicas exige análise competente para o caso concreto."
+        ]
+      },
+      {
+        "title": "Revisar pendências antes de assumir compromisso",
+        "body": [
+          "Quando as respostas chegarem, não marque tudo como resolvido por haver um arquivo anexado. Verifique se a informação responde à pergunta, identifica o imóvel e as partes corretas e corresponde ao momento relevante. Registre quem revisou e quais dúvidas permaneceram. Se uma condição de entrega foi discutida verbalmente, peça que seja tratada adequadamente na documentação da negociação, com apoio profissional quando necessário. Compare a versão mais recente da proposta com o que foi efetivamente entendido. Pressa comercial não deve apagar divergências. A decisão final depende de avaliação específica, não de uma pontuação ou selo de aprovação criado neste exercício."
+        ]
+      }
+    ],
+    "filled_template": [
+      {
+        "field": "Decisão pendente",
+        "value": "Avaliar uma proposta somente após esclarecer ocupação e entrega do imóvel fictício.",
+        "why": "Define o que está sendo preparado sem presumir que o negócio já foi aprovado."
+      },
+      {
+        "field": "Fato observado",
+        "value": "Objetos pessoais presentes na visita, registrados sem identificar moradores.",
+        "why": "Uma observação concreta é diferente de uma conclusão sobre posse ou direito de ocupação."
+      },
+      {
+        "field": "Declaração recebida",
+        "value": "Vendedor informa que o imóvel estará disponível; condições ainda não documentadas.",
+        "why": "Preserva o conteúdo da conversa e destaca o que falta esclarecer."
+      },
+      {
+        "field": "Pergunta",
+        "value": "Qual é a situação atual de ocupação e quais condições de entrega serão formalizadas?",
+        "why": "A pergunta busca informação verificável sem formular acusação ou conclusão jurídica."
+      },
+      {
+        "field": "Responsável e evidência",
+        "value": "Fonte adequada a confirmar; análise contratual encaminhada a profissional competente.",
+        "why": "Evita transformar o corretor ou o comprador em validador de temas fora de sua competência."
+      },
+      {
+        "field": "Estado da pendência",
+        "value": "Aguardando resposta suficiente; não liberada apenas porque foi enviado um documento.",
+        "why": "O controle acompanha a qualidade da resposta, não somente a presença de um anexo."
+      }
+    ],
+    "failure_case": {
+      "scenario": "Depois de receber uma proposta revisada, o comprador confere apenas o preço e ignora que a condição de entrega discutida anteriormente desapareceu. A versão é encaminhada como “igual à anterior, só com desconto”.",
+      "diagnosis": "A frase informal substituiu uma comparação efetiva de versões. Mesmo uma alteração de preço pode vir acompanhada de outros ajustes; a ausência de uma condição relevante muda o entendimento e precisa ser examinada antes de qualquer compromisso.",
+      "correction": "Compare os campos relevantes das duas versões e registre diferenças sem tentar interpretar sozinho os efeitos jurídicos. Peça esclarecimento sobre a condição ausente e encaminhe a revisão adequada. Mantenha ambas as versões identificadas, evitando sobrescrever o arquivo anterior.",
+      "verification": "Uma pessoa que não participou da conversa deve conseguir localizar preço, entrega, responsabilidades e pontos pendentes na versão considerada. Se o documento não refletir o entendimento confirmado, a pendência permanece aberta; não use a aprovação verbal como substituto automático."
+    }
+  },
+  "comprar-imovel-praia-sem-golpes": {
+    "procedure": [
+      {
+        "title": "Reconhecer pressão sem transformar suspeita em acusação",
+        "body": [
+          "Considere um anúncio fictício com fotos também encontradas em outro portal e pedido de sinal imediato para “segurar a oportunidade”. Esses elementos merecem verificação, mas não demonstram sozinhos a ocorrência de crime. Registre o que efetivamente ocorreu: endereço do anúncio, data, texto do pedido e informação sobre o destinatário do pagamento. Separe interpretação de fato. Uma resposta prudente pode dizer que qualquer avanço depende de confirmar identidade, autorização para negociar e condições da oferta por meios adequados. Não envie um valor pequeno como teste, nem documentos pessoais desnecessários para provar interesse ou acelerar uma confirmação incerta."
+        ]
+      },
+      {
+        "title": "Criar uma verificação independente",
+        "body": [
+          "Informações fornecidas pelo mesmo contato não são necessariamente confirmações independentes entre si. Se alguém envia um número para “confirmar tudo”, avalie se esse canal foi obtido por uma fonte confiável e distinta. Organize perguntas sobre identificação das partes, vínculo com o imóvel e autorização para a negociação, recorrendo a fontes oficiais e profissionais apropriados ao caso. Não use este material como lista suficiente de documentos. A finalidade é evitar que a urgência substitua a diligência. Se houver inconsistências relevantes ou dificuldade de confirmar informações essenciais, mantenha a negociação pausada e busque orientação antes de transmitir dados ou recursos."
+        ]
+      },
+      {
+        "title": "Preservar evidências com exposição mínima",
+        "body": [
+          "Crie um registro restrito com referências dos anúncios, datas e mensagens relevantes, sem divulgar acusações ou dados pessoais em grupos públicos. Anote a origem de cada evidência e o que ainda falta verificar. Evite editar arquivos originais de forma que se perca o contexto; mantenha uma cópia de trabalho separada quando precisar fazer anotações. Se a situação exigir orientação especializada ou comunicação às autoridades competentes, use os canais apropriados e forneça os fatos de forma organizada. A prevenção não depende de investigar pessoas por conta própria, confrontá-las ou obter dados privados que não são necessários à decisão de interromper o avanço."
+        ]
+      }
+    ],
+    "filled_template": [
+      {
+        "field": "Fato",
+        "value": "Fotos iguais em dois anúncios fictícios; vínculo entre anunciantes não explicado.",
+        "why": "Duplicidade de imagem gera pergunta de verificação, não prova automática de fraude."
+      },
+      {
+        "field": "Pressão",
+        "value": "Pedido de transferência no mesmo dia para uma conta cuja relação com a negociação está pendente.",
+        "why": "A urgência é registrada como contexto e não usada como motivo para dispensar conferência."
+      },
+      {
+        "field": "Canal independente",
+        "value": "Origem do canal de confirmação ainda será verificada em fonte adequada.",
+        "why": "Um contato indicado pela própria pessoa não deve ser tratado automaticamente como confirmação externa."
+      },
+      {
+        "field": "Resposta neutra",
+        "value": "Antes de avançar, preciso esclarecer identidade, autorização e condições por meios verificáveis.",
+        "why": "A mensagem pausa o processo sem acusar, negociar sob pressão ou fornecer informação sensível."
+      },
+      {
+        "field": "Evidência",
+        "value": "Referência do anúncio, data e mensagem preservadas em pasta de acesso restrito.",
+        "why": "Mantém contexto útil e reduz divulgação desnecessária de dados de envolvidos."
+      },
+      {
+        "field": "Próximo passo",
+        "value": "Buscar orientação apropriada e não transmitir valores enquanto persistirem inconsistências essenciais.",
+        "why": "O objetivo é controlar o próprio risco, não realizar uma investigação informal ou garantir ausência de fraude."
+      }
+    ],
+    "failure_case": {
+      "scenario": "O interessado desconfia do anúncio, mas aceita uma videochamada como confirmação definitiva. Depois recebe pressão para transferir um sinal a uma conta diferente daquela mencionada inicialmente e considera a mudança um detalhe administrativo.",
+      "diagnosis": "Uma interação convincente não esclarece necessariamente autorização para negociar, vínculo com o imóvel ou destino legítimo dos recursos. A mudança de dados de pagamento é uma nova informação relevante; ela não fica validada por uma chamada anterior.",
+      "correction": "Interrompa o avanço, registre a divergência e procure confirmação por canais adequados e independentes. Não envie comprovantes, senhas ou documentos adicionais para “desbloquear” a oferta. Encaminhe dúvidas a profissionais ou autoridades competentes conforme a situação, sem confrontação arriscada.",
+      "verification": "O registro deve mostrar quais fatos foram confirmados, por qual fonte e quais permanecem sem explicação. Se a confirmação essencial não puder ser obtida, a conclusão do exercício é manter a pausa, e não inventar uma justificativa para prosseguir."
+    }
+  },
+  "documentacao-completa-imoveis-litoral": {
+    "procedure": [
+      {
+        "title": "Montar um índice antes de interpretar os arquivos",
+        "body": [
+          "Imagine um dossiê fictício recebido por três canais, com duas propostas, uma ficha comercial e documentos de origens diferentes. Comece pelo inventário, não pela escolha da versão que parece mais recente. Dê a cada arquivo um identificador e registre nome original, origem, data do documento, data de recebimento e versão declarada. Preserve o arquivo recebido e faça anotações em cópia separada. Um nome como “final” não comprova aceitação nem substitui a confirmação de quem pode esclarecer o estado da negociação. Marque arquivos ilegíveis ou incompletos como pendentes. O índice deve permitir localizar a fonte sem espalhar dados pessoais em mensagens ou pastas abertas."
+        ]
+      },
+      {
+        "title": "Registrar divergências sem corrigir a fonte",
+        "body": [
+          "No exemplo, a ficha comercial informa 60 m² e outro documento informa 66 m². Copie cada informação com sua referência e registre uma pergunta: as áreas representam o mesmo conceito e a mesma unidade? Não escolha um número por conveniência nem edite o arquivo original para fazê-lo coincidir com o anúncio. Faça o mesmo com identificação, partes, datas e condições propostas. Diferencie erro de digitação presumido de erro confirmado por fonte competente. Cada divergência recebe responsável pelo encaminhamento, informação necessária e situação atual. Assim, o dossiê deixa de ser uma coleção de arquivos e passa a mostrar o que ainda impede uma análise consistente."
+        ]
+      },
+      {
+        "title": "Encaminhar uma versão controlada e conferir o retorno",
+        "body": [
+          "Prepare um resumo com finalidade do envio, índice, divergências e perguntas. Compartilhe somente o necessário com as pessoas envolvidas, utilizando o canal autorizado. Explique que a organização documental não valida autenticidade, regularidade ou adequação jurídica. Quando uma resposta chegar, registre quem respondeu, quando, qual referência sustentou a resposta e o que permanece aberto. Não exclua a pergunta antiga: marque sua resolução com evidência. Antes de reenviar o dossiê, confira se os anexos citados estão presentes e se a versão indicada é a mesma acessível ao destinatário. Uma revisão profissional fica mais eficiente quando recebe um conjunto rastreável, mas continua necessária quando a questão exige competência específica."
+        ]
+      }
+    ],
+    "filled_template": [
+      {
+        "field": "Identificador",
+        "value": "DOC-01: proposta recebida por canal autorizado; nome original preservado; versão declarada A.",
+        "why": "Permite falar sobre um arquivo específico sem depender de nomes vagos ou reenviar todos os anexos."
+      },
+      {
+        "field": "Datas distintas",
+        "value": "Documento datado de 02/10; recebimento fictício em 05/10; análise iniciada em 06/10.",
+        "why": "Recebimento mais recente não significa que o conteúdo foi produzido ou aceito mais recentemente."
+      },
+      {
+        "field": "Divergência",
+        "value": "Área: DOC-03 informa 60 m² e DOC-04 informa 66 m²; conceito e origem a esclarecer.",
+        "why": "O registro preserva as duas fontes e não transforma hipótese de equivalência em conclusão."
+      },
+      {
+        "field": "Pergunta de encaminhamento",
+        "value": "“As duas áreas se referem à mesma unidade e ao mesmo conceito? Qual fonte esclarece a diferença?”",
+        "why": "Uma pergunta delimitada facilita resposta verificável, em vez de solicitar genericamente que alguém confira tudo."
+      },
+      {
+        "field": "Acesso ao conjunto",
+        "value": "Pasta de trabalho restrita aos responsáveis; resumo sem documentos pessoais completos.",
+        "why": "Organização não exige exposição desnecessária e deve respeitar a necessidade de cada destinatário."
+      },
+      {
+        "field": "Estado de resolução",
+        "value": "Divergência aberta; resposta aguardada; nenhum número foi escolhido como correto.",
+        "why": "Um estado explícito evita que o silêncio seja interpretado como validação ou ausência de problema."
+      }
+    ],
+    "failure_case": {
+      "scenario": "Caso fictício: uma equipe substitui a proposta original por um arquivo chamado “final2” e informa ao comprador que as condições já estão alinhadas. Depois descobre que uma das partes nunca recebeu essa versão.",
+      "diagnosis": "O controle confundiu nome de arquivo, cronologia e manifestação das partes. A organização da pasta não demonstra acordo, e apagar a versão anterior impede reconstruir quais condições foram apresentadas em cada momento.",
+      "correction": "Recupere o histórico disponível, identifique origem e circulação de cada versão e encaminhe a divergência aos responsáveis. Suspenda a afirmação de que houve alinhamento até obter esclarecimento adequado. Não produza confirmação em nome de uma parte.",
+      "verification": "Confira se o índice diferencia versão recebida, versão encaminhada e condição confirmada. Um revisor deve conseguir reconstruir a sequência sem inferir aceitação pelo nome do arquivo. Pendências precisam permanecer visíveis no resumo enviado."
+    }
+  },
+  "documentacao-imobiliaria": {
+    "procedure": [
+      {
+        "title": "Ler finalidade e origem antes de confiar na aparência",
+        "body": [
+          "Neste exercício fictício, compare uma ficha comercial, uma proposta e um documento cadastral. Para cada um, pergunte quem produziu, com qual finalidade, em que data e por qual canal chegou. Não use aparência formal, logotipo ou assinatura como atalho para concluir autenticidade ou regularidade. Uma ficha comercial apresenta uma oferta; uma proposta descreve condições apresentadas; um cadastro pode registrar informações específicas de uma fonte. Eles não necessariamente respondem à mesma pergunta. Escreva ao lado o que o material efetivamente informa e o que você apenas supõe. Essa separação é a base da leitura crítica, não uma avaliação jurídica do documento."
+        ]
+      },
+      {
+        "title": "Comparar campos sem confundir declarações e comprovações",
+        "body": [
+          "Monte uma tabela com endereço, identificação da unidade, área declarada, nomes das partes e datas. Transcreva o campo como aparece e indique a fonte. Se o anúncio diz “quitado” ou “documentação perfeita”, trate a frase como declaração que requer verificação adequada, não como prova autossuficiente. Identifique diferenças de nomenclatura antes de concluir contradição: um mesmo termo pode ser usado informalmente com significados distintos. Quando não entender o campo, registre a dúvida em vez de completar pela experiência de outro imóvel. Não altere a informação para torná-la uniforme. O objetivo é formular perguntas melhores para as fontes e profissionais responsáveis."
+        ]
+      },
+      {
+        "title": "Construir uma consulta que permita resposta específica",
+        "body": [
+          "Em vez de perguntar “está tudo certo?”, explique a decisão que pretende compreender e liste as fontes disponíveis. Por exemplo: “Estas três descrições parecem se referir à mesma unidade, mas a área e a condição de entrega diferem. Que verificações são adequadas para esclarecer esses pontos?” Anexe referências necessárias, sem expor dados pessoais além do necessário. Peça que a resposta indique o alcance da análise e o que não foi verificado. Ao receber orientação, registre a fonte e evite aplicar automaticamente a conclusão a outro imóvel. Um documento pode ajudar a esclarecer uma questão e não resolver outras, como condição física, ocupação ou obrigações específicas da negociação."
+        ]
+      }
+    ],
+    "filled_template": [
+      {
+        "field": "Material e finalidade",
+        "value": "Ficha fictícia F-01: descrição comercial para divulgação, produzida pelo anunciante.",
+        "why": "Identificar a finalidade impede atribuir ao material uma função de certificação que ele não declara."
+      },
+      {
+        "field": "Informação literal",
+        "value": "Campo de área: “aproximadamente 60 m²”, sem fonte de medição informada.",
+        "why": "Preservar o qualificativo evita transformar estimativa de divulgação em dado confirmado."
+      },
+      {
+        "field": "Declaração pendente",
+        "value": "Anúncio informa “quitado”; não há, neste exercício, fonte suficiente para concluir a situação.",
+        "why": "A ausência de comprovação é uma pendência, não prova automática de irregularidade ou regularidade."
+      },
+      {
+        "field": "Comparação objetiva",
+        "value": "Proposta identifica unidade 12; ficha comercial não informa número da unidade.",
+        "why": "A comparação mostra uma lacuna concreta que precisa ser resolvida antes de combinar informações."
+      },
+      {
+        "field": "Pergunta adequada",
+        "value": "“Como confirmar que os três materiais se referem à mesma unidade e quais limites tem cada fonte?”",
+        "why": "A pergunta exige identificação e alcance da evidência, não apenas uma opinião genérica."
+      },
+      {
+        "field": "Registro da resposta",
+        "value": "Resposta aguardada de fonte competente; conclusão sobre a negociação permanece em aberto.",
+        "why": "Registrar o estado impede que uma consulta iniciada seja confundida com análise concluída."
+      }
+    ],
+    "failure_case": {
+      "scenario": "Caso fictício: alguém recebe um cadastro com endereço correto e conclui que isso também comprova ausência de dívidas, autorização de venda e bom estado físico do imóvel.",
+      "diagnosis": "A conclusão ultrapassa a finalidade e o conteúdo observados. Um dado de identificação não responde automaticamente a todas as dimensões de uma negociação. O erro está no salto entre informação presente e segurança geral presumida.",
+      "correction": "Divida a afirmação ampla em perguntas separadas sobre identificação, legitimidade, obrigações e condição física. Para cada pergunta, identifique a fonte ou profissional adequado. Não tente preencher as lacunas com um único documento ou uma declaração comercial.",
+      "verification": "Revise a consulta e marque quais conclusões são sustentadas por qual evidência. Se uma conclusão não tiver base adequada, mantenha-a pendente. O exercício está correto quando explicita limites, mesmo que não produza uma resposta definitiva sobre a compra."
+    }
+  },
+  "financiamento-imobiliario": {
+    "procedure": [
+      {
+        "title": "Construir uma comparação com premissas iguais",
+        "body": [
+          "Use duas propostas inteiramente fictícias para estudar a leitura, sem representar oferta bancária. Ambas devem considerar o mesmo valor financiado e prazo para que a primeira comparação faça sentido. Registre data, entrada, despesas informadas, condições de variação e fluxo previsto de pagamentos. Se uma proposta omite seguro ou outro componente, escreva “não informado”, nunca zero. Não escolha pela primeira parcela antes de entender o restante. Uma simulação pode depender de condições que ainda não foram analisadas pela instituição. Separe preço do imóvel, recursos próprios e crédito solicitado para evitar que uma entrada diferente faça a proposta parecer mais barata sem que o compromisso seja equivalente."
+        ]
+      },
+      {
+        "title": "Traduzir as propostas em perguntas e cenários de caixa",
+        "body": [
+          "Monte um calendário fictício de renda e saídas, incluindo moradia e despesas essenciais além da prestação. Em um cenário didático, renda mensal de R$ 9.000, despesas de R$ 4.200 e compromisso habitacional de R$ 2.700 deixam R$ 2.100 antes dos itens não considerados. Com renda 25% menor, o valor cai para R$ 6.750 e o saldo passa a menos R$ 150. Esse teste não define capacidade segura de pagamento, mas revela uma fragilidade. Não use reserva acumulada como se fosse renda recorrente. Liste custos e mudanças de parcela ainda desconhecidos e solicite esclarecimento diretamente à instituição antes de interpretar o resultado como comparação completa."
+        ]
+      },
+      {
+        "title": "Registrar uma conclusão limitada e reproduzível",
+        "body": [
+          "Escreva uma conclusão que diferencie o que foi comparado do que ainda falta: “As propostas usam o mesmo principal e prazo, mas uma não informa todos os componentes; por isso não é possível decidir pelo menor valor inicial.” Registre perguntas, respostas e validade informada das condições. Se as premissas mudarem, gere uma nova versão da comparação em vez de misturar dados antigos com novos. Não transforme aprovação eventual em recomendação de contratação: disponibilidade de crédito e adequação ao orçamento são questões diferentes. Para uma decisão real, avalie necessidades pessoais, obrigações e condições contratuais com orientação apropriada. O produto do exercício é uma tabela esclarecida, não a indicação de banco ou modalidade."
+        ]
+      }
+    ],
+    "filled_template": [
+      {
+        "field": "Premissas comuns",
+        "value": "Duas simulações fictícias: R$ 220.000 financiados pelo mesmo prazo, na mesma data de referência.",
+        "why": "Sem uma base equivalente, diferenças podem vir de principal ou duração e não do custo da oferta."
+      },
+      {
+        "field": "Campo incompleto",
+        "value": "Proposta A: seguro não informado; proposta B: componente descrito separadamente.",
+        "why": "Um dado ausente precisa de esclarecimento e não pode reduzir artificialmente o custo considerado."
+      },
+      {
+        "field": "Orçamento base",
+        "value": "R$ 9.000 de renda menos R$ 4.200 e R$ 2.700 de saídas deixam R$ 2.100.",
+        "why": "A conta é hipotética e ainda exige explicitar quais despesas não foram incluídas."
+      },
+      {
+        "field": "Teste adverso",
+        "value": "Renda reduzida a R$ 6.750; mesmas saídas de R$ 6.900; saldo de menos R$ 150.",
+        "why": "A simulação mostra sensibilidade a uma mudança de renda, sem prescrever um limite pessoal de endividamento."
+      },
+      {
+        "field": "Pergunta à instituição",
+        "value": "“Quais componentes, condições de variação e valores do fluxo estão incluídos nesta simulação?”",
+        "why": "Uma resposta específica permite revisar o calendário em vez de comparar apenas uma parcela destacada."
+      },
+      {
+        "field": "Estado da decisão",
+        "value": "Comparação incompleta até esclarecer componentes; nenhuma contratação recomendada pelo exercício.",
+        "why": "O registro evita converter uma atividade educacional em aconselhamento individual ou confirmação de crédito."
+      }
+    ],
+    "failure_case": {
+      "scenario": "Caso fictício: uma pessoa compara prestação inicial de duas propostas com prazos diferentes e afirma que a menor parcela é a opção de menor custo. Também usa sua reserva como renda mensal para justificar a escolha.",
+      "diagnosis": "A análise mistura duração, fluxo de pagamentos e recursos acumulados. Uma reserva pode cobrir saídas por algum tempo, mas não se renova automaticamente. O menor desembolso inicial não demonstra o compromisso total nem sua adequação ao contexto pessoal.",
+      "correction": "Reorganize as propostas com premissas comparáveis ou destaque claramente as diferenças que impedem comparação direta. Separe renda recorrente, reserva e saídas extraordinárias. Solicite fluxo e componentes completos, sem preencher lacunas com estimativas apresentadas como fatos.",
+      "verification": "Uma segunda pessoa deve conseguir refazer os saldos e identificar cada premissa. Confira se prazo, principal e condições de variação estão visíveis e se a reserva aparece separada. Se os dados continuarem incompletos, a conclusão correta é aguardar esclarecimento."
+    }
+  },
+  "flipping": {
+    "procedure": [
+      {
+        "title": "Desenhar o projeto antes de supor a margem",
+        "body": [
+          "Considere um projeto fictício de compra, intervenção e revenda. Divida a conta em aquisição, preparação, obra, manutenção durante o período e custos associados à saída. Registre a origem de cada estimativa e o que depende de avaliação técnica ou orçamento. Um imóvel parecer simples de reformar não comprova viabilidade, autorização ou ausência de problema oculto. Não escolha um preço de revenda apenas para obter a margem desejada. Separe referência anunciada de negociação efetivamente observada. O projeto precisa mostrar quais condições devem ser verificadas antes de qualquer compromisso; este exercício não autoriza execução de obra nem substitui análise jurídica, técnica, tributária ou financeira específica."
+        ]
+      },
+      {
+        "title": "Montar um cenário base e alterar as variáveis principais",
+        "body": [
+          "No exemplo didático, aquisição de R$ 280.000, obra de R$ 45.000, outros custos de R$ 30.000 e revenda suposta de R$ 390.000 produzem diferença nominal de R$ 35.000. Agora aumente a obra em 20%, para R$ 54.000, e reduza a revenda em 8%, para R$ 358.800. O resultado passa a menos R$ 5.200, antes de itens ausentes. Acrescente quatro meses extras de manutenção fictícia de R$ 1.200, se esses valores ainda não estiverem nos outros custos: a diferença cai a menos R$ 10.000. Mantenha as fórmulas visíveis para perceber qual premissa muda a conclusão."
+        ]
+      },
+      {
+        "title": "Transformar o cenário em pontos de controle",
+        "body": [
+          "Crie marcos de revisão: levantamento técnico, orçamento detalhado, autorização aplicável, execução e preparação da saída. Em cada marco, registre evidência esperada, responsável e condição que exige reavaliar o plano. Não continue automaticamente apenas porque já houve gasto; custos anteriores não tornam uma nova decisão vantajosa. Se um orçamento muda, atualize prazo e demais custos associados, não apenas a linha da obra. Explique quais valores são nominais e quais despesas não entraram no exercício. Uma eventual diferença positiva não equivale a retorno garantido, liquidez imediata ou remuneração adequada do risco. A finalidade é revelar dependências e perguntas para uma análise real mais completa."
+        ]
+      }
+    ],
+    "filled_template": [
+      {
+        "field": "Aquisição hipotética",
+        "value": "R$ 280.000, sem tratar o exemplo como preço de mercado ou oportunidade real.",
+        "why": "A hipótese precisa ser separada de uma oferta verificada e de qualquer recomendação de compra."
+      },
+      {
+        "field": "Obra e verificação",
+        "value": "R$ 45.000 estimados; escopo e condição física ainda dependem de revisão técnica apropriada.",
+        "why": "Uma verba genérica não demonstra que todas as intervenções necessárias foram identificadas ou autorizadas."
+      },
+      {
+        "field": "Outros custos",
+        "value": "R$ 30.000 considerados no cenário, com lista de componentes e itens ausentes a explicitar.",
+        "why": "Uma categoria agregada pode esconder omissões ou duplicar custos lançados novamente no prazo adicional."
+      },
+      {
+        "field": "Cenário adverso",
+        "value": "Obra R$ 54.000; revenda R$ 358.800; diferença nominal de menos R$ 5.200.",
+        "why": "Modificar custo e saída mostra que a margem inicial depende fortemente de hipóteses ainda não garantidas."
+      },
+      {
+        "field": "Atraso adicional",
+        "value": "Quatro meses a R$ 1.200 somam R$ 4.800, levando o cenário adverso a menos R$ 10.000.",
+        "why": "O prazo afeta o caixa e deve ser incorporado sem repetir despesas já incluídas em outra categoria."
+      },
+      {
+        "field": "Marco de decisão",
+        "value": "Revisar escopo e cenário após orçamento técnico, antes de assumir nova etapa do projeto.",
+        "why": "Um ponto de controle permite reagir a informação nova em vez de seguir uma projeção desatualizada."
+      }
+    ],
+    "failure_case": {
+      "scenario": "Caso fictício: após descobrir uma intervenção adicional, o responsável aumenta a previsão de revenda para preservar a margem original. Mantém o prazo anterior apesar da nova obra e apresenta a planilha como projeto confirmado.",
+      "diagnosis": "O ajuste não adicionou evidência de mercado; apenas fez a hipótese final absorver um custo inconveniente. O prazo também deixou de refletir o escopo. A planilha passou a defender a decisão em vez de testar sua fragilidade.",
+      "correction": "Restaure a separação entre evidência, estimativa e meta desejada. Atualize orçamento, sequência e custos do prazo, mantendo a revenda como hipótese independente. Registre o que precisa ser verificado por profissionais e quais condições podem exigir interrupção ou reformulação.",
+      "verification": "Confira se o preço de saída tem justificativa externa à margem desejada e se cada mudança de escopo afeta os custos correspondentes. O cenário deve admitir resultado negativo quando as premissas o produzem, sem esconder linhas ou recalibrar a saída para evitar essa conclusão."
+    }
+  },
+  "guia-investidor-imobiliario": {
+    "procedure": [
+      {
+        "title": "Converter uma intenção ampla em uma pergunta concreta",
+        "body": [
+          "Use uma persona fictícia que deseja estudar imóveis, mas também prevê uma despesa familiar e considera uso pessoal. Em vez de começar por uma lista de anúncios, escreva objetivo, horizonte, necessidade de recursos disponíveis e compromissos existentes. Diferencie desejo de renda, expectativa de valorização e benefício de uso. Eles podem coexistir, mas não são a mesma medida. Uma propriedade usada pela família em determinadas datas não deve ser comparada como se estivesse sempre disponível para locação. O exercício não escolhe uma estratégia para a pessoa; organiza critérios para perceber quando duas alternativas respondem a necessidades diferentes e quais informações seriam indispensáveis antes de uma decisão real."
+        ]
+      },
+      {
+        "title": "Construir fichas comparáveis e identificar lacunas",
+        "body": [
+          "Crie uma ficha por alternativa com preço informado, custos de preparação, despesas recorrentes, condição de uso e fonte de cada dado. Separe renda comprovada, projeção do anunciante e cálculo próprio. Não multiplique uma diária anunciada por todas as noites disponíveis como se isso fosse receita certa. Registre também conservação, tempo de preparação e dependências operacionais. Se a informação não existe, escreva a pergunta e a fonte adequada para obtê-la. Não substitua uma lacuna por uma média sem explicar origem e limites. A comparação deve manter categorias iguais nas duas fichas, inclusive os custos pouco atraentes, para evitar que uma opção pareça superior apenas porque foi descrita com menos detalhes."
+        ]
+      },
+      {
+        "title": "Elaborar uma conclusão de investigação, não de compra",
+        "body": [
+          "Organize os achados em compatibilidades, restrições e dúvidas prioritárias. Por exemplo: a alternativa A atende melhor ao uso pessoal, mas tem custos de preparação desconhecidos; a B possui uma projeção de renda, porém não há histórico suficiente para verificá-la. Explique por que ainda não é possível ordenar as opções apenas pelo preço. Defina qual informação poderia mudar a análise e quem tem competência para verificá-la. Uma decisão real envolve condições patrimoniais, jurídicas, tributárias e financeiras específicas. O resultado deste estudo é um roteiro de diligência e uma visão das premissas, não uma recomendação individual de investimento, promessa de renda ou previsão de valorização."
+        ]
+      }
+    ],
+    "filled_template": [
+      {
+        "field": "Objetivo da persona",
+        "value": "Estudar uso familiar e renda eventual, mantendo recursos para uma despesa futura ainda a detalhar.",
+        "why": "A intenção explicita necessidades que um anúncio atrativo não resolve e evita comparar tudo por um único percentual."
+      },
+      {
+        "field": "Uso próprio",
+        "value": "Datas familiares pretendidas registradas separadamente das datas potencialmente disponíveis para terceiros.",
+        "why": "Disponibilidade operacional e benefício de uso não podem ser contados simultaneamente como receita de locação."
+      },
+      {
+        "field": "Origem da receita",
+        "value": "Alternativa B apresenta apenas projeção comercial; recebimentos históricos não foram disponibilizados no exercício.",
+        "why": "Projeção e renda comprovada precisam de rótulos diferentes para não adquirir o mesmo peso na análise."
+      },
+      {
+        "field": "Custo incompleto",
+        "value": "Alternativa A exige adequação; orçamento e prazo ainda não foram levantados.",
+        "why": "Um custo desconhecido não deve desaparecer da comparação nem receber valor zero por falta de informação."
+      },
+      {
+        "field": "Pergunta prioritária",
+        "value": "“Que evidências sustentam a projeção e quais despesas foram consideradas?”",
+        "why": "A pergunta testa a construção do número, em vez de apenas pedir confirmação de que a renda será boa."
+      },
+      {
+        "field": "Conclusão provisória",
+        "value": "Comparação ainda incompleta; investigar preparação de A e premissas de receita de B antes de ordenar alternativas.",
+        "why": "A conclusão permanece proporcional à evidência, sem transformar o estudo em indicação de compra."
+      }
+    ],
+    "failure_case": {
+      "scenario": "Caso fictício: duas opções são apresentadas com o mesmo retorno percentual, mas uma usa receita bruta anual sobre o preço e outra usa resultado mensal sobre a entrada. O leitor considera as propostas equivalentes.",
+      "diagnosis": "Período, numerador e denominador são diferentes. O mesmo símbolo de porcentagem esconde medidas incompatíveis e tratamento distinto de custos e financiamento. Não é possível comparar a atratividade apenas porque os números exibidos coincidem.",
+      "correction": "Reconstrua cada indicador com nome, fórmula, período e componentes. Peça os dados ausentes e mantenha separados receita, despesas, dívida e capital considerado. Se não houver informação suficiente para uma base coerente, declare que a comparação não pode ser concluída.",
+      "verification": "Uma pessoa externa deve conseguir identificar o que cada percentual mede e reproduzir a conta. Confira se as mesmas categorias aparecem nas alternativas e se hipóteses não foram tratadas como fatos. A correção pode terminar em mais perguntas, não necessariamente em uma classificação."
+    }
+  },
+  "investindo-imoveis-litoral": {
+    "procedure": [
+      {
+        "title": "Mapear o uso do imóvel antes de projetar receita",
+        "body": [
+          "Considere um proprietário fictício que deseja usar o imóvel em algumas datas e estudar formas diferentes de locação. Monte um calendário de referência com uso próprio, manutenção, indisponibilidades conhecidas e dias potencialmente oferecidos. Não trate todos os períodos como equivalentes: datas escolhidas pela família podem coincidir com maior procura, mas isso precisa de evidência, não de uma regra universal. Registre a origem de cada bloqueio e não confunda disponibilidade com venda. Um calendário de 365 dias com 24 noites de uso próprio e 12 de manutenção deixa 329 noites potencialmente disponíveis, antes de outras restrições. Esse total é uma condição de oferta, não previsão de ocupação."
+        ]
+      },
+      {
+        "title": "Descrever a operação que cada alternativa exigiria",
+        "body": [
+          "Para cada forma de uso estudada, liste tarefas, frequência, responsáveis possíveis e custos a levantar. Limpeza entre estadias, manutenção, conferência de acesso e comunicação podem produzir rotinas diferentes. Não presuma que um prestador estará disponível apenas porque atende outro imóvel da região. Inclua deslocamento, armazenamento e tempo de resposta quando forem relevantes, sem inventar valores de mercado. Verifique as condições aplicáveis ao imóvel e à atividade com fontes e profissionais adequados. Separe custos comuns de conservação das diferenças específicas de cada modelo. A análise fica mais clara quando mostra quem executaria cada entrega e quais dependências ainda impedem considerar a operação viável."
+        ]
+      },
+      {
+        "title": "Comparar os cenários sem contar benefícios duas vezes",
+        "body": [
+          "Prepare duas colunas com o mesmo período e as mesmas categorias. Em cada uma, registre disponibilidade, hipótese de receita, conservação, custos específicos e uso pessoal preservado ou reduzido. Se um cenário permite mais uso familiar, descreva esse benefício separadamente, sem convertê-lo em receita recebida. Se outro requer atendimento frequente, inclua a necessidade operacional em vez de tratá-la como trabalho gratuito e ilimitado. Termine com perguntas sobre capacidade, regras, custos e dados ausentes. O exercício ajuda a compreender os efeitos de cada desenho, mas não recomenda modalidade de locação nem prevê retorno. Uma comparação responsável pode concluir que faltam informações para escolher entre os cenários."
+        ]
+      }
+    ],
+    "filled_template": [
+      {
+        "field": "Calendário inicial",
+        "value": "Ano fictício de 365 noites: 24 de uso próprio e 12 de manutenção; 329 potencialmente disponíveis.",
+        "why": "A conta evita oferecer o mesmo período para uso familiar e receita, mas ainda não prevê reservas."
+      },
+      {
+        "field": "Restrição temporal",
+        "value": "Uso próprio concentrado em alguns feriados; efeito sobre demanda ainda não quantificado.",
+        "why": "A distribuição das noites importa e não pode ser substituída automaticamente por uma média anual."
+      },
+      {
+        "field": "Tarefa e capacidade",
+        "value": "Conferência de chegada precisa de responsável e alternativa; disponibilidade do prestador ainda pendente.",
+        "why": "Viabilidade operacional depende de pessoas e prazos, não apenas de uma receita projetada na planilha."
+      },
+      {
+        "field": "Custo comum",
+        "value": "Conservação do imóvel aparece nos dois cenários com a mesma definição e período.",
+        "why": "O cenário favorecido não deve parecer melhor porque omitiu uma despesa que também existe nele."
+      },
+      {
+        "field": "Diferença específica",
+        "value": "Cenário A exige mais trocas; cenário B possui outra rotina a detalhar, sem supor custos automaticamente menores.",
+        "why": "A comparação deve explicar mecanismos e levantar dados, não declarar vencedor com base em estereótipos."
+      },
+      {
+        "field": "Dúvida prioritária",
+        "value": "Confirmar condições de uso e capacidade de atendimento antes de interpretar projeções como operação possível.",
+        "why": "Uma restrição decisiva pode invalidar o cenário mesmo que a conta preliminar pareça atraente."
+      }
+    ],
+    "failure_case": {
+      "scenario": "Caso fictício: o proprietário reserva para si vinte datas desejadas, mas calcula receita como se o imóvel estivesse disponível o ano inteiro. Depois adiciona manutenção apenas ao cenário que deseja descartar.",
+      "diagnosis": "A comparação conta algumas noites duas vezes e aplica custos de forma desigual. O problema não é uma pequena diferença de estimativa: a estrutura favorece uma conclusão antes de considerar as mesmas condições nas duas opções.",
+      "correction": "Refaça o calendário separando uso próprio, manutenção e disponibilidade. Use as mesmas definições de custo nos cenários e identifique diferenças efetivas de operação. Preserve as hipóteses originais como histórico, registrando por que foram alteradas.",
+      "verification": "Confira se cada noite pertence a uma única categoria e se o total corresponde ao período estudado. Revise a presença de conservação e outros custos comuns em ambas as colunas. A conclusão deve reconhecer incertezas de demanda e de execução, sem prometer uma ocupação para preencher a planilha."
+    }
+  },
+  "multiplique-patrimonio": {
+    "procedure": [
+      {
+        "title": "Separar patrimônio estimado de recursos disponíveis",
+        "body": [
+          "Use uma família fictícia com imóvel estimado em R$ 500.000, dívida associada de R$ 180.000 e caixa de R$ 60.000. Nesse quadro simplificado, ativos menos dívida somam R$ 380.000, mas apenas R$ 60.000 aparecem como caixa. O valor estimado do imóvel não pode ser usado imediatamente para pagar uma despesa sem algum processo que gere disponibilidade, com condições e custos próprios. Registre origem e data das estimativas, obrigações recorrentes e recursos já destinados a compromissos. Não trate uma avaliação informal como preço garantido de venda. A primeira entrega do exercício é compreender a diferença entre quantidade de ativos, endividamento e capacidade de atender necessidades de caixa."
+        ]
+      },
+      {
+        "title": "Mapear concentrações antes de contar imóveis",
+        "body": [
+          "Desenhe um mapa de exposições para dois imóveis hipotéticos: localização, tipo de uso, perfil de demanda, prestadores, necessidade de manutenção e fontes de financiamento. Dois endereços diferentes podem depender das mesmas condições econômicas ou operacionais. Não conclua diversificação apenas pela quantidade de unidades. Identifique quais problemas poderiam afetar ambos ao mesmo tempo, sem tentar atribuir probabilidades inventadas. Acrescente o tempo que a família consegue dedicar à gestão e a necessidade de apoio profissional. Esse mapa não define uma alocação adequada, mas revela dependências que uma soma de valores de mercado não mostra. Uma expansão patrimonial deve ser analisada em conjunto com obrigações e objetivos, não isoladamente."
+        ]
+      },
+      {
+        "title": "Testar mudanças de caixa sem presumir valorização",
+        "body": [
+          "Monte um cenário de valor estimado estável e despesa extraordinária fictícia de R$ 25.000 paga em caixa. O caixa cai de R$ 60.000 para R$ 35.000; mantendo os demais componentes, o patrimônio simplificado cai de R$ 380.000 para R$ 355.000. Explique que custos, tributos e outros ativos ou obrigações não incluídos podem alterar o quadro. Depois descreva o que aconteceria se duas despesas ocorressem próximas, sem concluir que o saldo remanescente é suficiente para aquela família. A finalidade é identificar perguntas sobre liquidez, compromissos e concentração. Decisões reais exigem avaliação individual apropriada; este material não recomenda aquisição, venda, endividamento ou estratégia para multiplicar patrimônio."
+        ]
+      }
+    ],
+    "filled_template": [
+      {
+        "field": "Ativo estimado",
+        "value": "Imóvel fictício: R$ 500.000, com origem e data da estimativa ainda a documentar.",
+        "why": "Estimativa de valor é diferente de preço realizável, disponibilidade imediata e recurso líquido após custos."
+      },
+      {
+        "field": "Dívida separada",
+        "value": "Saldo hipotético de R$ 180.000 registrado como obrigação, sem analisar contrato ou condições reais.",
+        "why": "Contar o imóvel inteiro como riqueza disponível ignoraria a obrigação associada e distorceria o quadro."
+      },
+      {
+        "field": "Caixa inicial",
+        "value": "R$ 60.000, com compromissos futuros a identificar em coluna própria.",
+        "why": "Mesmo um saldo existente pode já ter finalidade definida e não estar livre para uma nova decisão."
+      },
+      {
+        "field": "Patrimônio simplificado",
+        "value": "R$ 500.000 mais R$ 60.000 menos R$ 180.000 resultam em R$ 380.000.",
+        "why": "A fórmula fica transparente e seus limites devem acompanhar o número, sem qualificá-lo como diagnóstico completo."
+      },
+      {
+        "field": "Choque de despesa",
+        "value": "Saída fictícia de R$ 25.000 reduz caixa a R$ 35.000 e o quadro simplificado a R$ 355.000.",
+        "why": "O cenário mostra efeito aritmético, não estabelece reserva adequada ou prevê a ocorrência de uma despesa."
+      },
+      {
+        "field": "Concentração observada",
+        "value": "Dois imóveis hipotéticos dependem do mesmo prestador e da mesma região de demanda.",
+        "why": "Mais unidades podem repetir exposições; o mapa precisa mostrar dependências além do número de propriedades."
+      }
+    ],
+    "failure_case": {
+      "scenario": "Caso fictício: uma família soma valores anunciados de imóveis e declara que pode assumir uma nova obrigação porque “o patrimônio cobre tudo”. O quadro não inclui dívidas, custos de venda nem despesas próximas.",
+      "diagnosis": "A afirmação mistura valor estimado com liquidez e omite obrigações. Cobertura patrimonial aparente não demonstra que haverá caixa na data necessária nem que uma venda ocorrerá pelo preço esperado. O diagnóstico está incompleto antes de qualquer interpretação.",
+      "correction": "Refaça o quadro com ativos, dívidas, caixa, compromissos e limitações das estimativas. Separe cenários de disponibilidade temporal e identifique quais dados dependem de avaliação profissional. Não use valorização futura como ajuste automático para fazer a conta suportar a obrigação desejada.",
+      "verification": "Confira se cada valor tem origem, data e categoria e se as despesas aparecem no período em que exigem caixa. A conclusão deve distinguir o que o cenário mostra do que ainda precisa ser analisado. Não apresentar crescimento de ativos como garantia de segurança financeira."
+    }
+  },
+  "primeiro-imovel-litoral": {
+    "procedure": [
+      {
+        "title": "Construir um briefing que sobreviva ao anúncio atraente",
+        "body": [
+          "Considere uma persona fictícia que pretende usar um imóvel em fins de semana e precisa de acesso compatível com sua mobilidade. Escreva primeiro requisitos eliminatórios, depois preferências e dúvidas. Um requisito é algo cuja ausência pode tornar o uso inadequado; uma preferência pode ser negociada. Não atribua pontuação que permita uma vista bonita compensar um acesso inviável. Registre frequência de uso, pessoas atendidas, necessidade de deslocamento e tarefas de conservação. O briefing não deve virar uma decisão financeira automática: orçamento, condições da negociação e questões técnicas exigem análise própria. Ele organiza a busca para que cada visita responda às mesmas perguntas, em vez de seguir apenas a emoção da apresentação."
+        ]
+      },
+      {
+        "title": "Usar a visita para observar e produzir perguntas",
+        "body": [
+          "Prepare uma ficha curta com acesso, circulação, conservação aparente, instalações anunciadas e condições que ainda precisam de confirmação. Durante uma visita autorizada, descreva observações sem diagnosticar causas técnicas. Uma mancha pode exigir avaliação, mas não permite afirmar que há ou não um problema estrutural. Separe o que foi visto do que foi informado pelo anunciante. Fotografe apenas com autorização e sem expor dados ou pessoas desnecessariamente. Use o mesmo roteiro em três opções fictícias. Se uma pergunta não puder ser respondida, registre a fonte adequada para esclarecê-la. A visita comercial é uma etapa de coleta, não substitui inspeção, diligência jurídica ou avaliação profissional."
+        ]
+      },
+      {
+        "title": "Ordenar as dúvidas antes de ordenar os imóveis",
+        "body": [
+          "Depois das visitas, monte uma tabela com requisitos atendidos, pendências decisivas, adequações e custos conhecidos, estimados ou desconhecidos. Se a opção A tem reparo sem orçamento e a C não confirma o acesso, essas dúvidas vêm antes de comparar apenas o preço. Defina próximos passos concretos: obter informação, repetir uma observação ou encaminhar questão ao profissional competente. Não use zero para custos ausentes nem trate estimativa verbal como orçamento confirmado. Ao final, escreva por que uma opção segue em estudo ou fica suspensa por incompatibilidade com o briefing. Este exercício não recomenda compra; ajuda a evitar que uma decisão importante dependa de informações incompletas ou critérios que mudam a cada anúncio."
+        ]
+      }
+    ],
+    "filled_template": [
+      {
+        "field": "Objetivo de uso",
+        "value": "Fins de semana para uma família fictícia; necessidade de acesso compatível com mobilidade registrada antes da busca.",
+        "why": "O objetivo permite verificar adequação sem presumir que todas as famílias precisam do mesmo imóvel."
+      },
+      {
+        "field": "Requisito e preferência",
+        "value": "Requisito: acesso adequado; preferência: vaga coberta; ambos em campos separados.",
+        "why": "Uma preferência valorizada não deve compensar silenciosamente uma condição essencial não atendida."
+      },
+      {
+        "field": "Observação da visita",
+        "value": "Opção A: mancha visível no teto; causa não identificada durante a observação comercial.",
+        "why": "O registro descreve o fato e evita produzir um diagnóstico técnico a partir da aparência."
+      },
+      {
+        "field": "Informação declarada",
+        "value": "Anunciante informa reparo anterior, mas evidência correspondente não foi apresentada no exercício.",
+        "why": "Relato de terceiro e fato verificado precisam permanecer distintos na ficha."
+      },
+      {
+        "field": "Custo e pendência",
+        "value": "Adequação de A ainda sem orçamento; acesso de C ainda não confirmado; nenhum campo recebe zero.",
+        "why": "A comparação mantém lacunas visíveis em vez de favorecer a opção sobre a qual se sabe menos."
+      },
+      {
+        "field": "Próxima investigação",
+        "value": "Esclarecer acesso de C e encaminhar a condição observada em A para avaliação apropriada.",
+        "why": "A prioridade segue o impacto da dúvida na adequação, não a pressão para escolher rapidamente."
+      }
+    ],
+    "failure_case": {
+      "scenario": "Caso fictício: a pessoa inicialmente exige acesso sem escada, mas muda a planilha após ver uma vista atraente. Reduz o peso do acesso e informa à família que o imóvel “atende quase tudo”, sem explicar a mudança.",
+      "diagnosis": "O critério decisivo foi transformado em preferência para justificar uma opção específica. A pontuação mascara uma incompatibilidade que deveria ser discutida explicitamente. O problema não é gostar da vista, mas esconder o efeito da mudança no uso pretendido.",
+      "correction": "Retorne ao briefing e registre se o requisito realmente mudou e por quê, envolvendo as pessoas afetadas. Se a necessidade permanece, não use a soma de pontos para compensá-la. Investigue alternativas e mantenha separadas emoção, informação e condição de uso.",
+      "verification": "Peça a um revisor para identificar requisitos, preferências e mudanças desde a primeira versão. A conclusão deve explicar qualquer incompatibilidade e pendência. Uma ficha coerente permite decidir o que investigar, sem obrigar a escolher entre opções inadequadas."
+    }
+  },
+  "ptam-na-pratica": {
+    "procedure": [
+      {
+        "title": "Delimitar um exercício de organização, não um parecer",
+        "body": [
+          "Use um imóvel inteiramente imaginário e escreva em destaque que o material é um exercício educacional, sem validade como PTAM profissional. Defina objeto, finalidade didática, data de referência e perguntas que pretende estudar. Não acrescente assinatura, credencial fictícia ou aparência de documento oficial para tornar o exercício convincente. A atividade ensina a organizar evidências e perceber limites; requisitos profissionais e metodológicos para uma atuação real devem ser verificados nas fontes oficiais e com profissional habilitado. Se alguém solicitar o documento para uso em negociação, crédito ou processo, explique que o exercício não serve para essa finalidade. Clareza de escopo vem antes de qualquer número ou apresentação gráfica."
+        ]
+      },
+      {
+        "title": "Montar uma cadeia de evidências e critérios explícitos",
+        "body": [
+          "Crie um índice com ficha do objeto imaginário, observações simuladas, conjunto de referências fictícias, critérios de comparação e limitações. Cada item precisa de identificador e indicação de que foi criado para estudo. Selecione referências pelas características relevantes à pergunta, não pelo resultado que gostaria de obter. Explique inclusões e exclusões, preservando registro de dados insuficientes. Não invente fatores de ajuste, coeficientes ou métodos para aparentar rigor técnico. Ao citar uma informação no texto, indique qual evidência a sustenta. Quando a evidência faltar, registre a lacuna. A cadeia deve permitir que um leitor compreenda o caminho da pergunta aos dados, sem apresentar uma conclusão profissional de valor."
+        ]
+      },
+      {
+        "title": "Revisar coerência e impedir uso fora do contexto",
+        "body": [
+          "Faça uma revisão cruzada: o objeto descrito é o mesmo em todas as partes? As datas se referem ao período indicado? Os anexos citados existem e estão identificados como simulados? Uma conclusão parcial ultrapassa o que os dados mostram? Separe problemas de forma, como uma referência errada, de insuficiências de conteúdo, como ausência de evidência relevante. Corrigir a capa não resolve a segunda situação. Prepare um resumo das limitações e das questões que exigiriam orientação profissional para um trabalho real. O exercício termina com organização e revisão, não com emissão, validação ou autorização de um parecer. Não remova o aviso didático ao compartilhar o material para discussão."
+        ]
+      }
+    ],
+    "filled_template": [
+      {
+        "field": "Identificação do exercício",
+        "value": "“Documento educacional fictício; não é PTAM profissional”, visível na abertura e no resumo.",
+        "why": "O aviso impede que o formato seja confundido com um produto técnico destinado a uso real."
+      },
+      {
+        "field": "Objeto e finalidade",
+        "value": "Apartamento imaginário X; estudar organização de informações e limites de comparação, sem determinar valor profissional.",
+        "why": "A pergunta delimitada evita que o exercício seja ampliado para uma finalidade que ele não atende."
+      },
+      {
+        "field": "Índice de evidência",
+        "value": "E-01 ficha simulada; E-02 observações fictícias; E-03 referências inventadas para aprendizagem.",
+        "why": "Identificadores permitem conferir o texto e deixam clara a ausência de dados de um caso real."
+      },
+      {
+        "field": "Critério de inclusão",
+        "value": "Referências de mesma tipologia imaginária; excluir registro cuja identificação não permita comparação, com motivo documentado.",
+        "why": "O critério deve responder à pergunta do exercício, não selecionar números convenientes para uma conclusão desejada."
+      },
+      {
+        "field": "Limitação encontrada",
+        "value": "E-04 foi citada no texto, mas não foi preparada; conclusão que dependia dela permanece sem suporte.",
+        "why": "Reconhecer a falta é mais correto do que criar evidência retroativamente para dar aparência de completude."
+      },
+      {
+        "field": "Encaminhamento educacional",
+        "value": "Listar dúvidas sobre requisitos e metodologia para consulta a fontes oficiais e profissional competente antes de qualquer atuação real.",
+        "why": "A atividade não concede habilitação, credenciamento, autorização de emissão ou validação do documento."
+      }
+    ],
+    "failure_case": {
+      "scenario": "Caso fictício: uma pessoa prepara o exercício, remove o aviso didático, acrescenta uma assinatura decorativa e pretende apresentá-lo como documento válido para apoiar uma negociação. Os dados continuam simulados e parte dos anexos não existe.",
+      "diagnosis": "A apresentação passou a atribuir ao material uma finalidade e uma validade que ele não possui. Aparência formal não transforma dados fictícios em evidência nem supre requisitos profissionais. A falta de anexos também impede conferir o raciocínio apresentado.",
+      "correction": "Restabeleça a identificação educacional, não utilize o material como parecer e explique seus limites a quem o recebeu para estudo. Se houver necessidade real de análise, encaminhe a demanda ao profissional competente, que definirá dados, requisitos e procedimentos adequados ao caso.",
+      "verification": "Confira se todos os arquivos e resumos mantêm o aviso, se as fontes são marcadas como simuladas e se não há afirmação de validade profissional. A revisão deve concluir apenas sobre a coerência didática; não deve declarar o material apto para uso técnico."
+    }
+  }
+}

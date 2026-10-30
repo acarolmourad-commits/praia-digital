@@ -2,18 +2,21 @@
 <html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Matrícula assistida — Praia Digital Academy</title><meta name="robots" content="noindex, follow">
 <link rel="canonical" href="https://praia.digital/education/checkout.html">
-<meta name="description" content="Matrícula assistida da Praia Digital Academy. Escolha o curso e fale com a equipe para receber as instruções de pagamento e acesso.">
-<style>*{box-sizing:border-box}body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4EBD0;color:#023047;margin:0;padding:32px 20px;line-height:1.65}.wrap{max-width:900px;margin:0 auto}.card{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:16px;padding:22px;margin:18px 0}.cta{display:inline-block;background:#00B4D8;color:#fff;padding:.75rem 1.25rem;border-radius:999px;font-weight:700;text-decoration:none;margin:.35rem}.secondary{background:#023047}.muted{color:#41525f}.notice{background:#fff8e6;border-left:5px solid #f2b705;padding:16px;border-radius:10px}</style></head>
-<body><div class="wrap"><main id="main"><p><a href="/education/vendas.html">← Voltar para os cursos</a></p>
-<h1>Matrícula assistida — Praia Digital Academy</h1>
-<p>A Academy está em fase de matrícula assistida. A equipe confirma o curso ideal para o seu objetivo antes de enviar as instruções finais de pagamento e acesso.</p>
-<div class="card"><h2>Como funciona</h2><ol><li>Escolha o curso no catálogo da Academy.</li><li>Fale com a equipe informando o curso desejado.</li><li>Receba a confirmação do valor, as instruções de pagamento e o próximo passo para acessar o conteúdo.</li></ol>
-<p><a class="cta" href="https://wa.me/5511954346288?text=Quero%20fazer%20minha%20matr%C3%ADcula%20na%20Praia%20Digital%20Academy" target="_blank" rel="noopener">Solicitar matrícula no WhatsApp</a>
-<a class="cta secondary" href="mailto:comercial@praia.digital?subject=Matr%C3%ADcula%20assistida%20%E2%80%94%20Praia%20Digital%20Academy&body=Ol%C3%A1%2C%20equipe%20Praia%20Digital!%0A%0AQuero%20fazer%20minha%20matr%C3%ADcula%20na%20Academy.%0A%0ACurso%20desejado%3A%0ANome%3A%0AWhatsApp%3A%0AObjetivo%20com%20o%20curso%3A%0A%0AObrigado(a).">Solicitar matrícula por e-mail</a></p></div>
-<div class="notice"><strong>Importante:</strong> esta página não processa pagamentos automaticamente. Não informe dados de cartão aqui. O pagamento só deve ser feito após a confirmação da equipe Praia Digital.</div>
-<h2>Perguntas frequentes</h2><div class="card">
-<p><strong>Como acesso o curso após a matrícula?</strong><br><span class="muted">Após a confirmação da matrícula pela equipe, você recebe as instruções de acesso à área do aluno e ao conteúdo contratado.</span></p>
-<p><strong>Emite certificado?</strong><br><span class="muted">Os cursos e formações indicam no catálogo quando há certificado após a conclusão.</span></p>
-<p><strong>Quais formas de pagamento estão disponíveis?</strong><br><span class="muted">A equipe confirma as opções disponíveis no momento da matrícula, antes de qualquer pagamento.</span></p></div>
-<p><a href="/education/index.html">Conhecer a Academy</a> · <a href="/education/cursos/index.html">Ver catálogo de cursos</a> · <a href="/planos.html">Ver planos Praia Digital</a></p>
+<meta name="description" content="Solicite informações sobre materiais 100% digitais da Praia Digital Academy. Matrícula assistida com confirmação de conteúdo, pagamento e entrega.">
+<style>*{box-sizing:border-box}body{font-family:system-ui,sans-serif;background:#f4ebd0;color:#023047;margin:0;line-height:1.65}.wrap{max-width:900px;margin:auto;padding:28px 20px}.card{background:#fff;border:1px solid #cbd5e1;border-radius:16px;padding:22px;margin:18px 0}a{color:#075985;overflow-wrap:anywhere}.cta{display:inline-block;background:#075985;color:#fff;padding:.75rem 1.25rem;border-radius:12px;font-weight:700;text-decoration:none;margin:.35rem 0;min-height:44px}.secondary{background:#023047}.notice{background:#fff8e6;border-left:5px solid #a36c00;padding:16px;border-radius:10px}a:focus-visible{outline:3px solid #a36c00;outline-offset:4px}[hidden]{display:none!important}h1{font-size:clamp(1.7rem,5vw,2.5rem);line-height:1.2}.price{font-size:1.5rem;font-weight:750}</style>
+<script src="/education/assets/js/enrollment.js" defer></script></head>
+<body><div class="wrap"><main id="main"><nav aria-label="Navegação da Academy"><a href="/education/index.html">Academy</a> · <a href="/education/cursos/index.html">Catálogo</a></nav>
+<h1>Matrícula assistida</h1>
+<p>Materiais <strong>100% digitais</strong>, para leitura e estudo autônomo. Confirme com a equipe o conteúdo, o valor e a forma de entrega antes de contratar.</p>
+<p id="selection-status" role="status">Conferindo a seleção no catálogo…</p>
+<noscript><p>Para confirmar sua seleção, informe à equipe o título do material. Os contatos abaixo funcionam sem JavaScript.</p></noscript>
+<section class="card" id="selected-course" hidden aria-labelledby="course-title"><h2 id="course-title"></h2><p class="price" id="course-price"></p><p>Valor anunciado para este material digital. A equipe confirma as condições antes de qualquer pagamento.</p><a id="course-link" href="/education/cursos/index.html">Revisar conteúdo e escopo</a></section>
+<section class="card"><h2>Como funciona</h2><ol><li>Revise o material e seu escopo no catálogo.</li><li>Solicite a confirmação do conteúdo incluído, do valor, da forma e do prazo de entrega digital.</li><li>Somente após essa confirmação, avalie as instruções de pagamento enviadas pela equipe.</li></ol>
+<p><a class="cta" id="contact-whatsapp" href="https://wa.me/5511954346288?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20a%20Academy%20100%25%20digital" target="_blank" rel="noopener">Conversar no WhatsApp (nova aba)</a><br>
+<a class="cta secondary" id="contact-email" href="mailto:comercial@praia.digital?subject=Matr%C3%ADcula%20assistida%20Academy">Solicitar informações por e-mail</a></p></section>
+<div class="notice"><strong>Sem cobrança nesta página.</strong> Não informe dados de cartão aqui. O contato não conclui a matrícula nem processa pagamento. Não há liberação automática de acesso neste fluxo.</div>
+<section class="card"><h2>O que esperar</h2>
+<h3>Como recebo o material?</h3><p>A equipe deve confirmar o formato, o canal e o prazo de entrega digital antes da contratação. Não há atividade presencial.</p>
+<h3>Há videoaulas, acompanhamento ou certificado?</h3><p>A oferta atual é de materiais escritos para estudo autônomo. Não inclui videoaulas, tutoria individual, certificado ou habilitação profissional.</p>
+<h3>Já comprei e preciso de acesso?</h3><p>Fale com a equipe pelos contatos acima, informando o título contratado. Não envie senha ou dados de cartão. <a href="/education/aluno/login.html">Ver orientação de acesso do aluno</a>.</p></section>
 </main></div></body></html>

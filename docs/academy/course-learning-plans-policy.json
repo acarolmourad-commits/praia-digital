@@ -1,0 +1,102 @@
+{
+  "policy": {
+    "format": "Produto 100% digital em texto: guia de estudo com lições curtas, exercício aplicado e checklist de revisão. Não inclui videoaulas, aulas ao vivo ou encontros presenciais.",
+    "access": "Atendimento de matrícula assistido. Antes de qualquer pagamento, a equipe deve confirmar o produto, o preço e a forma de entrega do arquivo digital. Não há liberação automática, portal de aluno ou prazo de entrega garantido nesta oferta.",
+    "certificate": "Esta oferta não inclui certificado, credenciamento, habilitação profissional ou carga horária certificada.",
+    "limits": "Conteúdo introdutório para estudo independente; sem tutoria individual, comunidade, assinatura de software, implantação de ferramentas ou garantia de resultado.",
+    "updates": "A compra não promete atualizações permanentes nem acesso vitalício a uma plataforma. A edição e o formato do arquivo devem constar da confirmação da oferta.",
+    "professional_boundaries": "Conteúdo informativo. Questões jurídicas, tributárias, técnicas e financeiras exigem verificação atual e orientação do profissional competente.",
+    "delivery_readiness": "Os guias completos precisam estar gerados e revisados para entrega antes de aceitar pagamento. Preview público não equivale a matrícula; não coletar cartão nem afirmar pagamento aprovado.",
+    "catalog_language": "Usar guia digital ou trilha de estudos; retirar completo, avançado, formação profissional, resultados percentuais e duração em horas quando não sustentados pelo conteúdo.",
+    "no_duplicate_sale": "URLs antigas de um mesmo produto devem apontar à oferta canônica; informar itens incluídos em trilhas para evitar compra repetida."
+  },
+  "aliases": {
+    "flipping-completo": "flipping",
+    "flipping-imoveis-litoral": "flipping",
+    "guia-investidor-imobiliario-avancado": "guia-investidor-imobiliario"
+  },
+  "formations": {
+    "avaliacao-imoveis-ptam": {
+      "title": "Trilha de estudos: avaliação e documentação de valor",
+      "scope": "Sequência de guias escritos introdutórios para organizar referências e entender limites da análise. Não habilita a emitir PTAM nem substitui formação ou registro profissional.",
+      "courses": [
+        "avaliacao-de-imoveis",
+        "analise-de-mercado-imobiliario-litoral",
+        "ptam-na-pratica"
+      ]
+    },
+    "captacao-imoveis": {
+      "title": "Trilha de estudos: captação e relacionamento",
+      "scope": "Guias escritos para planejar prospecção, conversa com o proprietário e acompanhamento; sem promessa de contratos ou exclusividades.",
+      "courses": [
+        "captacao-imoveis-corretores",
+        "captacao-exclusividade",
+        "prospeccao-para-corretores"
+      ]
+    },
+    "documentacao-imoveis": {
+      "title": "Trilha de estudos: organização documental",
+      "scope": "Guias escritos para montar uma lista de verificações e perguntas antes de uma negociação. Não substitui diligência, análise jurídica ou atuação de profissionais habilitados.",
+      "courses": [
+        "documentacao-imobiliaria",
+        "documentacao-completa-imoveis-litoral",
+        "comprar-com-seguranca"
+      ]
+    },
+    "financiamento-imobiliario": {
+      "title": "Trilha de estudos: planejamento da compra financiada",
+      "scope": "Guias escritos para organizar orçamento, comparar cenários e preparar perguntas. Não concede crédito, simulação bancária oficial nem recomendação financeira individual.",
+      "courses": [
+        "financiamento-imobiliario",
+        "primeiro-imovel-litoral",
+        "casa-ou-apartamento"
+      ]
+    },
+    "formacao-corretor-imoveis-litoral": {
+      "title": "Trilha de estudos: rotina comercial imobiliária",
+      "scope": "Guias escritos complementares sobre captação, apresentação e acompanhamento. Não é curso técnico, não habilita a profissão e não concede registro no CRECI.",
+      "courses": [
+        "captacao-imoveis-corretores",
+        "visita-tecnica-para-corretores",
+        "negociacao-imobiliaria-litoral",
+        "pos-venda-relacionamento-corretores"
+      ]
+    },
+    "formacao-fotografia-edicao-imoveis-temporada-2026": {
+      "title": "Fotografia de imóveis: captura e edição essencial",
+      "scope": "Guia escrito de preparação, enquadramento, seleção e edição fiel. Esta página apresenta o mesmo guia do catálogo, não um produto adicional nem serviço de fotografia.",
+      "courses": [
+        "fotografia-imoveis-temporada"
+      ],
+      "same_product": "fotografia-imoveis-temporada"
+    },
+    "locacao-temporada-administracao": {
+      "title": "Trilha de estudos: operação de temporada",
+      "scope": "Guias escritos para preparar anúncio, rotina da estadia e controles da gestão. Não inclui gestão executada, atendimento a hóspedes nem assinatura de plataformas.",
+      "courses": [
+        "airbnb-do-zero",
+        "booking-do-zero",
+        "gestao-de-locacao-no-litoral",
+        "gestao-profissional-locacao"
+      ]
+    },
+    "marketing-imobiliario": {
+      "title": "Trilha de estudos: comunicação e anúncios imobiliários",
+      "scope": "Guias escritos para posicionar a oferta, organizar mensagens e planejar divulgação. Não inclui campanha executada, verba de mídia nem leads.",
+      "courses": [
+        "marketing-imobiliario",
+        "instagram-para-corretores",
+        "storytelling-para-corretores"
+      ]
+    },
+    "mercado-imobiliario-litoral": {
+      "title": "Trilha de estudos: comparação de imóveis e cenários",
+      "scope": "Guias escritos de análise exploratória e cenários para estudos pessoais. Não é relatório de dados atuais nem recomendação de compra, venda ou investimento.",
+      "courses": [
+        "analise-de-mercado-imobiliario-litoral",
+        "analise-de-rentabilidade",
+        "investindo-imoveis-litoral"
+      ]
+    }
+  }
+}

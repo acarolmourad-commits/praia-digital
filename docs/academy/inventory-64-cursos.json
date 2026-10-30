@@ -1,1310 +1,1246 @@
 [
   {
     "slug": "airbnb-do-zero",
-    "title": "Airbnb do Zero no Litoral — Praia Digital Academy",
-    "h1": "Airbnb do Zero no Litoral — Praia Digital Academy",
-    "description": "Curso para montar um Airbnb lucrativo no litoral: cadastro, anúncio, precificação e gestão.",
+    "title": "Airbnb: preparação do primeiro anúncio",
+    "h1": "Airbnb: preparação do primeiro anúncio",
+    "description": "Guia escrito introdutório para preparar os dados, a descrição e a operação antes de publicar um anúncio.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 98.8,
+    "classificacao": "curso_curto_digital",
     "missing": [],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "analise-de-mercado-imobiliario-litoral",
-    "title": "Analise De Mercado Imobiliario Litoral — Praia Digital Academy",
-    "h1": "Analise De Mercado Imobiliario Litoral — Praia Digital Academy",
-    "description": "Curso completo sobre Analise De Mercado Imobiliario Litoral: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Leitura do Mercado Imobiliário no Litoral",
+    "h1": "Leitura do Mercado Imobiliário no Litoral",
+    "description": "Guia digital introdutório de pesquisa comparativa; não apresenta projeções ou dados locais em tempo real.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "analise-de-rentabilidade",
-    "title": "Análise de Rentabilidade no Litoral — Praia Digital Academy",
-    "h1": "Análise de Rentabilidade no Litoral — Praia Digital Academy",
-    "description": "Curso de análise de rentabilidade no litoral: ROI, fluxo de caixa, temporada e decisão de investimento.",
+    "title": "Análise de Rentabilidade: Custos e Cenários",
+    "h1": "Análise de Rentabilidade: Custos e Cenários",
+    "description": "Caderno digital de cálculo introdutório com números hipotéticos, sem recomendação de compra ou retorno prometido.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 98.8,
+    "classificacao": "curso_curto_digital",
     "missing": [],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "apresentacao-imoveis-para-corretores",
-    "title": "Apresentacao Imoveis Para Corretores — Praia Digital Academy",
-    "h1": "Apresentacao Imoveis Para Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Apresentacao Imoveis Para Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Apresentação de Imóveis para Corretores",
+    "h1": "Apresentação de Imóveis para Corretores",
+    "description": "Caderno digital introdutório de estudo autônomo. Preparar uma apresentação factual orientada à necessidade do comprador.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "atendimento-ao-cliente-para-corretores",
-    "title": "Atendimento Ao Cliente Para Corretores — Praia Digital Academy",
-    "h1": "Atendimento Ao Cliente Para Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Atendimento Ao Cliente Para Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Atendimento ao Cliente para Corretores",
+    "h1": "Atendimento ao Cliente para Corretores",
+    "description": "Caderno digital introdutório de estudo autônomo. Estruturar o primeiro atendimento e a continuidade da busca.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "atendimento-cliente-para-corretores",
-    "title": "Atendimento Cliente Para Corretores — Praia Digital Academy",
-    "h1": "Atendimento Cliente Para Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Atendimento Cliente Para Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Recuperação do Atendimento ao Cliente",
+    "h1": "Recuperação do Atendimento ao Cliente",
+    "description": "Caderno digital introdutório de estudo autônomo. Tratar falhas de atendimento e reclamações com registro e acompanhamento.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "aumentar-rentabilidade",
-    "title": "Como Aumentar em 30% a Rentabilidade — Praia Digital Academy",
-    "h1": "Como Aumentar em 30% a Rentabilidade — Praia Digital Academy",
-    "description": "Curso para aumentar rentabilidade de imóveis no litoral: preço, operação, experiência e indicadores.",
+    "title": "Rentabilidade da locação: diagnóstico e melhorias",
+    "h1": "Rentabilidade da locação: diagnóstico e melhorias",
+    "description": "Guia escrito para localizar perdas e priorizar testes; não promete percentual de aumento.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 98.8,
+    "classificacao": "curso_curto_digital",
     "missing": [],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "automacao-comercial",
-    "title": "Automação Comercial para Imobiliárias — Praia Digital Academy",
-    "h1": "Automação Comercial para Imobiliárias — Praia Digital Academy",
-    "description": "Curso de automação comercial para imobiliárias do litoral: CRM, processos, follow-up e escala.",
+    "title": "Automação Comercial para Imobiliárias",
+    "h1": "Automação Comercial para Imobiliárias",
+    "description": "Caderno digital introdutório de estudo autônomo. Mapear e testar uma rotina comercial simples com controle humano.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 98.8,
+    "classificacao": "curso_curto_digital",
     "missing": [],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "avaliacao-de-imoveis",
-    "title": "Avaliação de Imóveis no Litoral — Praia Digital Academy",
-    "h1": "Avaliação de Imóveis no Litoral — Praia Digital Academy",
-    "description": "Curso de avaliação de imóveis no litoral: método comparativo, análise de dados e precificação precisa.",
+    "title": "Fundamentos da Comparação de Imóveis",
+    "h1": "Fundamentos da Comparação de Imóveis",
+    "description": "Introdução digital à organização de comparáveis; não habilita para avaliações profissionais.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 98.8,
+    "classificacao": "curso_curto_digital",
     "missing": [],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "booking-do-zero",
-    "title": "Booking do Zero no Litoral — Praia Digital Academy",
-    "h1": "Booking do Zero no Litoral — Praia Digital Academy",
-    "description": "Curso para montar e otimizar um imóvel no Booking: anúncio, políticas, precificação e gestão de reservas.",
+    "title": "Booking: preparação do cadastro e da operação",
+    "h1": "Booking: preparação do cadastro e da operação",
+    "description": "Guia escrito introdutório de inventário, condições da estadia e conciliação operacional; não é tutorial de telas da plataforma.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 98.8,
+    "classificacao": "curso_curto_digital",
     "missing": [],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "captacao-exclusividade",
-    "title": "Captação de Exclusividade — Praia Digital Academy",
-    "h1": "Captação de Exclusividade — Praia Digital Academy",
-    "description": "Curso para corretores captarem exclusividade no litoral: prospecção, posicionamento, negociação e funil.",
+    "title": "Captação com Exclusividade",
+    "h1": "Captação com Exclusividade",
+    "description": "Caderno digital introdutório de estudo autônomo. Preparar uma proposta de serviço de captação transparente.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 98.8,
+    "classificacao": "curso_curto_digital",
     "missing": [],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "captacao-imoveis-corretores",
-    "title": "Captacao Imoveis Corretores — Praia Digital Academy",
-    "h1": "Captacao Imoveis Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Captacao Imoveis Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Captação de Imóveis para Corretores",
+    "h1": "Captação de Imóveis para Corretores",
+    "description": "Caderno digital introdutório de estudo autônomo. Qualificar imóveis e proprietários antes de incorporar uma oferta.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "casa-ou-apartamento",
-    "title": "Casa ou Apartamento no Litoral? — Praia Digital Academy",
-    "h1": "Casa ou Apartamento no Litoral? — Praia Digital Academy",
-    "description": "Aprenda a escolher entre casa ou apartamento no litoral com critérios objetivos e sem achismo.",
+    "title": "Casa ou Apartamento: Critérios de Escolha",
+    "h1": "Casa ou Apartamento: Critérios de Escolha",
+    "description": "Guia digital para estruturar preferências, custos e perguntas de visita, sem indicar um imóvel específico.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "comprar-com-seguranca",
-    "title": "Como Comprar com Segurança — Praia Digital Academy",
-    "h1": "Como Comprar com Segurança — Praia Digital Academy",
-    "description": "Curso para comprar imóveis no litoral com segurança: documentação, contratos, riscos e fechamento.",
+    "title": "Compra de Imóvel: Organização da Verificação",
+    "h1": "Compra de Imóvel: Organização da Verificação",
+    "description": "Guia digital de preparação e registro de pendências; não substitui análise jurídica, registral ou técnica.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "comprar-imovel-praia-sem-golpes",
-    "title": "Como Comprar um Imóvel na Praia sem Cair em Golpes — Praia Digital Academy",
-    "h1": "Como Comprar um Imóvel na Praia sem Cair em Golpes — Praia Digital Academy",
-    "description": "Aprenda a comprar um imóvel no litoral com segurança: documentação, negociação, riscos e casos práticos.",
+    "title": "Compra no Litoral: Sinais de Alerta e Verificação",
+    "h1": "Compra no Litoral: Sinais de Alerta e Verificação",
+    "description": "Guia digital de prevenção e triagem; nenhum roteiro garante ausência de fraude.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "comunicacao-interpessoal-para-corretores",
-    "title": "Comunicacao Interpessoal Para Corretores — Praia Digital Academy",
-    "h1": "Comunicacao Interpessoal Para Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Comunicacao Interpessoal Para Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Comunicação Interpessoal para Corretores",
+    "h1": "Comunicação Interpessoal para Corretores",
+    "description": "Caderno digital introdutório de estudo autônomo. Reduzir ambiguidades em conversas com clientes e parceiros.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "crm-para-corretores",
-    "title": "CRM para Corretores — Praia Digital Academy",
-    "h1": "CRM para Corretores — Praia Digital Academy",
-    "description": "Curso de CRM para corretores do litoral: organização de leads, follow-up e métricas.",
+    "title": "CRM para Corretores",
+    "h1": "CRM para Corretores",
+    "description": "Caderno digital introdutório de estudo autônomo. Organizar contatos, etapas e próximos passos em um registro comercial.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "documentacao-completa-imoveis-litoral",
-    "title": "Documentacao Completa Imoveis Litoral — Praia Digital Academy",
-    "h1": "Documentacao Completa Imoveis Litoral — Praia Digital Academy",
-    "description": "Curso completo sobre Documentacao Completa Imoveis Litoral: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Dossiê de Documentação: Organização e Rastreabilidade",
+    "h1": "Dossiê de Documentação: Organização e Rastreabilidade",
+    "description": "Caderno digital de organização documental, sem promessa de lista universal ou suficiência jurídica.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "documentacao-imobiliaria",
-    "title": "Documentação Imobiliária — Praia Digital Academy",
-    "h1": "Documentação Imobiliária — Praia Digital Academy",
-    "description": "Curso de documentação imobiliária para corretores do litoral: contratos, registros, riscos e checklist.",
+    "title": "Documentação Imobiliária: Leitura Inicial",
+    "h1": "Documentação Imobiliária: Leitura Inicial",
+    "description": "Introdução digital às perguntas de leitura documental; não ensina a aprovar negócios ou emitir pareceres.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 98.8,
+    "classificacao": "curso_curto_digital",
     "missing": [],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "especialista-venda-imoveis-litoral",
-    "title": "Especialista em Venda de Imóveis no Litoral — Praia Digital Academy",
-    "h1": "Especialista em Venda de Imóveis no Litoral — Praia Digital Academy",
-    "description": "Curso para corretores venderem mais no litoral: atendimento, qualificação, negociação e closing.",
+    "title": "Venda de Imóveis no Litoral: Fundamentos",
+    "h1": "Venda de Imóveis no Litoral: Fundamentos",
+    "description": "Caderno digital introdutório de estudo autônomo. Relacionar características locais ao uso pretendido, sem conferir título profissional.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 98.8,
+    "classificacao": "curso_curto_digital",
     "missing": [],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "fechamento-de-vendas-para-corretores",
-    "title": "Fechamento De Vendas Para Corretores — Praia Digital Academy",
-    "h1": "Fechamento De Vendas Para Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Fechamento De Vendas Para Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Fechamento de Vendas para Corretores",
+    "h1": "Fechamento de Vendas para Corretores",
+    "description": "Caderno digital introdutório de estudo autônomo. Conduzir a decisão comercial sem pressão e sem antecipar validade contratual.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "financiamento-imobiliario",
-    "title": "Financiamento Imobiliário sem Complicação — Praia Digital Academy",
-    "h1": "Financiamento Imobiliário sem Complicação — Praia Digital Academy",
-    "description": "Guia prático para simular, comparar e aprovar financiamento imobiliário no litoral.",
+    "title": "Financiamento Imobiliário: Comparação de Propostas",
+    "h1": "Financiamento Imobiliário: Comparação de Propostas",
+    "description": "Guia digital de leitura e comparação; não apresenta taxas atuais, aprovação de crédito ou recomendação de banco.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 98.8,
+    "classificacao": "curso_curto_digital",
     "missing": [],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "flipping",
-    "title": "Flipping no Litoral — Praia Digital Academy",
-    "h1": "Flipping no Litoral — Praia Digital Academy",
-    "description": "Curso de flipping no litoral: sourcing, reforma, precificação e venda rápida com lucro.",
+    "title": "Reforma para Revenda: Orçamento e Riscos",
+    "h1": "Reforma para Revenda: Orçamento e Riscos",
+    "description": "Caderno digital introdutório de viabilidade com exercício hipotético; não recomenda compra ou execução de obra.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "flipping-completo",
-    "title": "flipping-completo",
-    "h1": "flipping-completo",
-    "description": "",
+    "title": "Reforma para Revenda: Orçamento e Riscos",
+    "h1": "Reforma para Revenda: Orçamento e Riscos",
+    "description": "Caderno digital introdutório de viabilidade com exercício hipotético; não recomenda compra ou execução de obra.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "alias",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "ALIAS_CONSOLIDADO"
   },
   {
     "slug": "flipping-imoveis-litoral",
-    "title": "flipping-imoveis-litoral",
-    "h1": "flipping-imoveis-litoral",
-    "description": "",
+    "title": "Reforma para Revenda: Orçamento e Riscos",
+    "h1": "Reforma para Revenda: Orçamento e Riscos",
+    "description": "Caderno digital introdutório de viabilidade com exercício hipotético; não recomenda compra ou execução de obra.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 98.8,
+    "classificacao": "alias",
     "missing": [],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "ALIAS_CONSOLIDADO"
   },
   {
     "slug": "funil-de-vendas",
-    "title": "Funil de Vendas para Corretores — Praia Digital Academy",
-    "h1": "Funil de Vendas para Corretores — Praia Digital Academy",
-    "description": "Curso de funil de vendas para corretores do litoral: leads, follow-up, objeções e fechamento.",
+    "title": "Funil de Vendas para Corretores",
+    "h1": "Funil de Vendas para Corretores",
+    "description": "Caderno digital introdutório de estudo autônomo. Ler conversões e identificar o ponto de melhoria do processo.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 98.8,
+    "classificacao": "curso_curto_digital",
     "missing": [],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "gestao-de-conflitos-para-corretores",
-    "title": "Gestao De Conflitos Para Corretores — Praia Digital Academy",
-    "h1": "Gestao De Conflitos Para Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Gestao De Conflitos Para Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Gestão de Conflitos para Corretores",
+    "h1": "Gestão de Conflitos para Corretores",
+    "description": "Caderno digital introdutório de estudo autônomo. Organizar divergências comerciais sem substituir mediação ou orientação jurídica.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "gestao-de-locacao-no-litoral",
-    "title": "Gestao De Locacao No Litoral — Praia Digital Academy",
-    "h1": "Gestao De Locacao No Litoral — Praia Digital Academy",
-    "description": "Curso completo sobre Gestao De Locacao No Litoral: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Locação no litoral: rotina da estadia",
+    "h1": "Locação no litoral: rotina da estadia",
+    "description": "Guia escrito de organização do ciclo da reserva, da preparação à saída do hóspede.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "gestao-de-propostas-para-corretores",
-    "title": "Gestao De Propostas Para Corretores — Praia Digital Academy",
-    "h1": "Gestao De Propostas Para Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Gestao De Propostas Para Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Gestão de Propostas para Corretores",
+    "h1": "Gestão de Propostas para Corretores",
+    "description": "Caderno digital introdutório de estudo autônomo. Controlar versões e condições de propostas comerciais.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "gestao-de-vendas-para-corretores",
-    "title": "Gestao De Vendas Para Corretores — Praia Digital Academy",
-    "h1": "Gestao De Vendas Para Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Gestao De Vendas Para Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Gestão de Vendas para Corretores",
+    "h1": "Gestão de Vendas para Corretores",
+    "description": "Caderno digital introdutório de estudo autônomo. Acompanhar carteira, capacidade de atendimento e qualidade das oportunidades.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "gestao-do-tempo-para-corretores",
-    "title": "Gestao Do Tempo Para Corretores — Praia Digital Academy",
-    "h1": "Gestao Do Tempo Para Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Gestao Do Tempo Para Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Gestão do Tempo para Corretores",
+    "h1": "Gestão do Tempo para Corretores",
+    "description": "Caderno digital introdutório de estudo autônomo. Planejar agenda com deslocamentos, prioridades e margens realistas.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "gestao-profissional-locacao",
-    "title": "Gestão Profissional da Locação — Praia Digital Academy",
-    "h1": "Gestão Profissional da Locação — Praia Digital Academy",
-    "description": "Curso para profissionalizar gestão de locação de temporada: operação, atendimento, limpeza, manutenção e crescimento.",
+    "title": "Gestão de locação: controles de uma carteira",
+    "h1": "Gestão de locação: controles de uma carteira",
+    "description": "Guia escrito introdutório de governança operacional e financeira da carteira, diferente da rotina de uma única estadia.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 98.8,
+    "classificacao": "curso_curto_digital",
     "missing": [],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "guia-investidor-imobiliario",
-    "title": "Guia Completo do Investidor Imobiliário — Praia Digital Academy",
-    "h1": "Guia Completo do Investidor Imobiliário — Praia Digital Academy",
-    "description": "Curso completo para investidores imobiliários no litoral: estratégia, análise, rentabilidade e execução.",
+    "title": "Investimento Imobiliário: Perguntas Essenciais",
+    "h1": "Investimento Imobiliário: Perguntas Essenciais",
+    "description": "Guia digital conceitual, sem carteira recomendada, projeções de ganho ou aconselhamento individual.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 98.8,
+    "classificacao": "curso_curto_digital",
     "missing": [],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "guia-investidor-imobiliario-avancado",
-    "title": "guia-investidor-imobiliario-avancado",
-    "h1": "guia-investidor-imobiliario-avancado",
-    "description": "",
+    "title": "Investimento Imobiliário: Perguntas Essenciais",
+    "h1": "Investimento Imobiliário: Perguntas Essenciais",
+    "description": "Guia digital conceitual, sem carteira recomendada, projeções de ganho ou aconselhamento individual.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "alias",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "ALIAS_CONSOLIDADO"
   },
   {
     "slug": "ia-para-corretores",
-    "title": "Inteligência Artificial para Corretores — Praia Digital Academy",
-    "h1": "Inteligência Artificial para Corretores — Praia Digital Academy",
-    "description": "Curso para corretores usarem IA para vender mais no litoral: prompts, automação, atendimento e marketing.",
+    "title": "IA para Corretores: Uso Assistido",
+    "h1": "IA para Corretores: Uso Assistido",
+    "description": "Caderno digital introdutório de estudo autônomo. Produzir e revisar rascunhos comerciais com proteção de dados.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "ia-para-imobiliarias",
-    "title": "IA para Imobiliárias — Praia Digital Academy",
-    "h1": "IA para Imobiliárias — Praia Digital Academy",
-    "description": "Curso de IA para imobiliárias do litoral: captação, atendimento, marketing e gestão com inteligência artificial.",
+    "title": "IA para Imobiliárias: Governança Inicial",
+    "h1": "IA para Imobiliárias: Governança Inicial",
+    "description": "Caderno digital introdutório de estudo autônomo. Definir usos permitidos, responsabilidades e avaliação de uma experiência-piloto.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 98.8,
+    "classificacao": "curso_curto_digital",
     "missing": [],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "imoveis-para-airbnb",
-    "title": "Imóveis para Airbnb no Litoral — Praia Digital Academy",
-    "h1": "Imóveis para Airbnb no Litoral — Praia Digital Academy",
-    "description": "Curso para escolher, preparar e lucrar com imóveis para temporada no Airbnb.",
+    "title": "Imóveis para temporada: critérios de adequação",
+    "h1": "Imóveis para temporada: critérios de adequação",
+    "description": "Guia escrito de análise de uso, experiência e custo de preparação; não recomenda uma compra nem prevê retorno.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "instagram-para-corretores",
-    "title": "Instagram para Corretores — Praia Digital Academy",
-    "h1": "Instagram para Corretores — Praia Digital Academy",
-    "description": "Curso para corretores usarem o Instagram para gerar leads e vender imóveis no litoral.",
+    "title": "Instagram para Corretores",
+    "h1": "Instagram para Corretores",
+    "description": "Caderno digital introdutório de estudo autônomo. Planejar conteúdo informativo e avaliar contatos gerados com contexto.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "inteligencia-emocional-para-corretores",
-    "title": "Inteligencia Emocional Para Corretores — Praia Digital Academy",
-    "h1": "Inteligencia Emocional Para Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Inteligencia Emocional Para Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Autopercepção e Regulação no Atendimento",
+    "h1": "Autopercepção e Regulação no Atendimento",
+    "description": "Caderno digital introdutório de estudo autônomo. Reconhecer reações emocionais e escolher respostas profissionais; não é tratamento psicológico.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "investindo-imoveis-litoral",
-    "title": "Investindo em Imóveis no Litoral — Praia Digital Academy",
-    "h1": "Investindo em Imóveis no Litoral — Praia Digital Academy",
-    "description": "Curso completo de investimento em imóveis no litoral: análise, rentabilidade, documentação e execução.",
+    "title": "Imóveis no Litoral: Uso, Sazonalidade e Operação",
+    "h1": "Imóveis no Litoral: Uso, Sazonalidade e Operação",
+    "description": "Caderno digital de pesquisa contextual, sem estatísticas locais atuais ou recomendação de investimento.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 98.8,
+    "classificacao": "curso_curto_digital",
     "missing": [],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "lideranca-para-corretores",
-    "title": "Lideranca Para Corretores — Praia Digital Academy",
-    "h1": "Lideranca Para Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Lideranca Para Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Liderança de Equipes Comerciais",
+    "h1": "Liderança de Equipes Comerciais",
+    "description": "Caderno digital introdutório de estudo autônomo. Alinhar expectativas, delegar e oferecer feedback sobre comportamentos observáveis.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "marketing-imobiliario",
-    "title": "Marketing Imobiliário — Praia Digital Academy",
-    "h1": "Marketing Imobiliário — Praia Digital Academy",
-    "description": "Curso de marketing imobiliário para corretores do litoral: conteúdo, anúncios, SEO e conversão.",
+    "title": "Marketing Imobiliário: Planejamento",
+    "h1": "Marketing Imobiliário: Planejamento",
+    "description": "Caderno digital introdutório de estudo autônomo. Organizar proposta de valor, canais e critérios de avaliação de uma imobiliária.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 98.8,
+    "classificacao": "curso_curto_digital",
     "missing": [],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "marketing-imobiliario-corretores",
-    "title": "Marketing Imobiliario Corretores — Praia Digital Academy",
-    "h1": "Marketing Imobiliario Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Marketing Imobiliario Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Marketing Pessoal para Corretores",
+    "h1": "Marketing Pessoal para Corretores",
+    "description": "Caderno digital introdutório de estudo autônomo. Construir presença profissional consistente sem depender de promessas de resultado.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "multiplique-patrimonio",
-    "title": "Multiplique seu Patrimônio no Litoral — Praia Digital Academy",
-    "h1": "Multiplique seu Patrimônio no Litoral — Praia Digital Academy",
-    "description": "Curso para multiplicar patrimônio no litoral: estratégia, execução, temporada e escala.",
+    "title": "Planejamento Patrimonial com Imóveis: Cenários",
+    "h1": "Planejamento Patrimonial com Imóveis: Cenários",
+    "description": "Guia digital introdutório de organização patrimonial; o título não promete multiplicação de capital.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "negociacao-avancada-para-corretores",
-    "title": "Negociacao Avancada Para Corretores — Praia Digital Academy",
-    "h1": "Negociacao Avancada Para Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Negociacao Avancada Para Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Negociação: Comparação de Alternativas",
+    "h1": "Negociação: Comparação de Alternativas",
+    "description": "Caderno digital introdutório de estudo autônomo. Introdução à negociação de múltiplas condições; não equivale a formação avançada.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "negociacao-imobiliaria-litoral",
-    "title": "Negociacao Imobiliaria Litoral — Praia Digital Academy",
-    "h1": "Negociacao Imobiliaria Litoral — Praia Digital Academy",
-    "description": "Curso completo sobre Negociacao Imobiliaria Litoral: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Negociação Imobiliária no Litoral",
+    "h1": "Negociação Imobiliária no Litoral",
+    "description": "Caderno digital introdutório de estudo autônomo. Tratar expectativas de uso, manutenção e sazonalidade em uma negociação.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "networking-para-corretores",
-    "title": "Networking Para Corretores — Praia Digital Academy",
-    "h1": "Networking Para Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Networking Para Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Networking para Corretores",
+    "h1": "Networking para Corretores",
+    "description": "Caderno digital introdutório de estudo autônomo. Construir relações profissionais úteis com limites e reciprocidade.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "oratoria-para-corretores",
-    "title": "Oratoria Para Corretores — Praia Digital Academy",
-    "h1": "Oratoria Para Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Oratoria Para Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Oratória para Corretores",
+    "h1": "Oratória para Corretores",
+    "description": "Caderno digital introdutório de estudo autônomo. Preparar uma fala curta, clara e baseada em informações verificadas.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "planejamento-estrategico-para-corretores",
-    "title": "Planejamento Estrategico Para Corretores — Praia Digital Academy",
-    "h1": "Planejamento Estrategico Para Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Planejamento Estrategico Para Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Planejamento comercial: prioridades e escolhas",
+    "h1": "Planejamento comercial: prioridades e escolhas",
+    "description": "Guia digital escrito para elaborar um plano comercial curto, com escolhas, hipóteses e revisão.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "pos-venda-relacionamento-corretores",
-    "title": "Pos Venda Relacionamento Corretores — Praia Digital Academy",
-    "h1": "Pos Venda Relacionamento Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Pos Venda Relacionamento Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Pós-venda: continuidade e pendências",
+    "h1": "Pós-venda: continuidade e pendências",
+    "description": "Guia escrito de passagem de responsabilidades, contato útil e encerramento de pendências.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "pricelabs-completo",
-    "title": "PriceLabs Completo para Temporada no Litoral — Praia Digital Academy",
-    "h1": "PriceLabs Completo para Temporada no Litoral — Praia Digital Academy",
-    "description": "Curso de PriceLabs para temporada no litoral: configuração, sazonalidade, eventos e aumento de receita.",
+    "title": "PriceLabs: planejamento e revisão de preços",
+    "h1": "PriceLabs: planejamento e revisão de preços",
+    "description": "Guia escrito introdutório para planejar limites, cenários e revisão de preços; não substitui a documentação atual do PriceLabs.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 98.8,
+    "classificacao": "curso_curto_digital",
     "missing": [],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "primeiro-imovel-litoral",
-    "title": "Primeiro Imóvel no Litoral — Praia Digital Academy",
-    "h1": "Primeiro Imóvel no Litoral — Praia Digital Academy",
-    "description": "Guia prático para comprar seu primeiro imóvel no litoral: planejamento, financiamento, documentação e negociação.",
+    "title": "Primeiro Imóvel no Litoral: Preparação da Busca",
+    "h1": "Primeiro Imóvel no Litoral: Preparação da Busca",
+    "description": "Guia digital de organização da busca, visita e comparação, sem assessoria de compra individual.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "produtividade-para-corretores",
-    "title": "Produtividade Para Corretores — Praia Digital Academy",
-    "h1": "Produtividade Para Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Produtividade Para Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Produtividade: fluxo de trabalho e foco",
+    "h1": "Produtividade: fluxo de trabalho e foco",
+    "description": "Guia escrito de organização do fluxo pessoal, redução de retrabalho e limites de trabalho simultâneo.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "prospeccao-para-corretores",
-    "title": "Prospeccao Para Corretores — Praia Digital Academy",
-    "h1": "Prospeccao Para Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Prospeccao Para Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Prospecção: pesquisa e primeira abordagem",
+    "h1": "Prospecção: pesquisa e primeira abordagem",
+    "description": "Guia escrito de seleção de oportunidades e abordagem contextual, sem listas de contatos ou envios automáticos.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "ptam-na-pratica",
-    "title": "PTAM na Prática — Praia Digital Academy",
-    "h1": "PTAM na Prática — Praia Digital Academy",
-    "description": "Curso de PTAM para avaliação de imóveis no litoral: método, preenchimento e defesa técnica.",
+    "title": "PTAM: Introdução à Estrutura e às Evidências",
+    "h1": "PTAM: Introdução à Estrutura e às Evidências",
+    "description": "Material digital introdutório e educacional; não habilita, credencia ou autoriza emissão de PTAM.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "recuperacao-de-vendas-para-corretores",
-    "title": "Recuperacao De Vendas Para Corretores — Praia Digital Academy",
-    "h1": "Recuperacao De Vendas Para Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Recuperacao De Vendas Para Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Oportunidades interrompidas: diagnóstico e retomada",
+    "h1": "Oportunidades interrompidas: diagnóstico e retomada",
+    "description": "Guia escrito para distinguir oportunidades retomáveis de encerramentos e preparar um retorno útil.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "rotinas-de-vendas-para-corretores",
-    "title": "Rotinas De Vendas Para Corretores — Praia Digital Academy",
-    "h1": "Rotinas De Vendas Para Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Rotinas De Vendas Para Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Rotina comercial: acompanhamento diário e semanal",
+    "h1": "Rotina comercial: acompanhamento diário e semanal",
+    "description": "Guia escrito para construir uma cadência simples de revisão da carteira e passagem de informações.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "storytelling-para-corretores",
-    "title": "Storytelling Para Corretores — Praia Digital Academy",
-    "h1": "Storytelling Para Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Storytelling Para Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Narrativas imobiliárias: contexto sem exagero",
+    "h1": "Narrativas imobiliárias: contexto sem exagero",
+    "description": "Guia escrito para transformar características em uma narrativa clara, sem inventar histórias ou resultados.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "treinamento-de-equipes-para-corretores",
-    "title": "Treinamento De Equipes Para Corretores — Praia Digital Academy",
-    "h1": "Treinamento De Equipes Para Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Treinamento De Equipes Para Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Treinamento de equipe: prática e feedback",
+    "h1": "Treinamento de equipe: prática e feedback",
+    "description": "Guia escrito para organizar uma sessão curta de prática, observação e melhoria de uma habilidade.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "treinamento-em-tecnologia-para-corretores",
-    "title": "Treinamento Em Tecnologia Para Corretores — Praia Digital Academy",
-    "h1": "Treinamento Em Tecnologia Para Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Treinamento Em Tecnologia Para Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Tecnologia na rotina: adoção e teste seguro",
+    "h1": "Tecnologia na rotina: adoção e teste seguro",
+    "description": "Guia escrito para testar uma tecnologia em tarefa delimitada, com dados fictícios e critério de continuidade.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "venda-imoveis-alto-padrao-litoral",
-    "title": "Venda Imoveis Alto Padrao Litoral — Praia Digital Academy",
-    "h1": "Venda Imoveis Alto Padrao Litoral — Praia Digital Academy",
-    "description": "Curso completo sobre Venda Imoveis Alto Padrao Litoral: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Imóveis de maior valor: preparação e discrição",
+    "h1": "Imóveis de maior valor: preparação e discrição",
+    "description": "Guia escrito de briefing, comprovação de diferenciais e visita discreta; não promete acesso a compradores ou vendas.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "venda-rapida-imoveis-litoral",
-    "title": "Venda Rapida Imoveis Litoral — Praia Digital Academy",
-    "h1": "Venda Rapida Imoveis Litoral — Praia Digital Academy",
-    "description": "Curso completo sobre Venda Rapida Imoveis Litoral: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Agilidade na venda: redução de obstáculos",
+    "h1": "Agilidade na venda: redução de obstáculos",
+    "description": "Guia escrito de diagnóstico de obstáculos e ações de preparação, sem promessa de prazo para venda.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "visita-tecnica-para-corretores",
-    "title": "Visita Tecnica Para Corretores — Praia Digital Academy",
-    "h1": "Visita Tecnica Para Corretores — Praia Digital Academy",
-    "description": "Curso completo sobre Visita Tecnica Para Corretores: conteúdo aplicado ao mercado imobiliário do litoral.",
+    "title": "Visita ao imóvel: observação e registro",
+    "h1": "Visita ao imóvel: observação e registro",
+    "description": "Guia escrito de observação comercial e encaminhamento de dúvidas; não é inspeção técnica, perícia ou avaliação de engenharia.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   },
   {
     "slug": "whatsapp-que-vende",
-    "title": "WhatsApp que Vende — Praia Digital Academy",
-    "h1": "WhatsApp que Vende — Praia Digital Academy",
-    "description": "Curso para corretores usarem o WhatsApp para vender mais imóveis no litoral: atendimento, follow-up e fechamento.",
+    "title": "WhatsApp comercial: clareza e próximo passo",
+    "h1": "WhatsApp comercial: clareza e próximo passo",
+    "description": "Guia escrito de mensagens contextuais, confirmação de entendimento e encerramento respeitoso; sem automação de disparos.",
     "has_index": true,
     "has_vendas": true,
     "status": "UNKNOWN",
-    "audit_status": "",
+    "audit_status": "ESCOPO_TEXTUAL_REVISADO_2026_10_30",
     "has_marketing": true,
     "has_content": true,
-    "classificacao": "pronto",
-    "percentual_geral": 95.9,
+    "classificacao": "curso_curto_digital",
     "missing": [
       "estudos_caso"
     ],
     "partial": [
       "google_ads"
     ],
-    "status_final": "PRONTO_PARA_VENDA"
+    "status_final": "CURSO_CURTO_DIGITAL"
   }
 ]
