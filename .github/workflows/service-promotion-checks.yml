@@ -13,7 +13,9 @@ jobs:
         with:
           python-version: '3.11'
       - name: Validate prices, claims, schemas and navigation
-        run: python -m unittest discover -s tests -p 'test_service_promotion_safety.py'
+        run: |
+          python -m unittest discover -s tests -p 'test_service_promotion_safety.py'
+          python -m unittest discover -s tests -p 'test_legacy_academy_purchase_gate.py'
       - name: Prepare production navigation
         run: python scripts/build-navigation.py
       - name: Offline responsive browser verification

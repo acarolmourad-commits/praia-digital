@@ -70,7 +70,8 @@
         <p><strong>Nível:</strong> Iniciante → Intermediário</p>
         <p><strong>Acesso:</strong> vitalício + atualizações</p>
         <p class="price">R$ 497</p>
-        <a class="cta" href="https://wa.me/5511954346288?text=Quero%20investir%20em%20imóveis%20no%20litoral">Quero garantir minha vaga</a> | <a class="cta" style="background:#fff;color:#0b1220;margin-left:10px" href="https://buy.stripe.com/fZueVe4xe0D2gEX1XTcMM0u">Comprar agora</a>
+        <a class="cta" href="https://wa.me/5511954346288?text=Quero%20investir%20em%20imóveis%20no%20litoral">Consultar pelo WhatsApp</a> | <a class="cta" style="background:#fff;color:#0b1220;margin-left:10px" href="mailto:comercial@praia.digital?subject=Disponibilidade%20Academy%20%E2%80%94%20Gestao%20De%20Propostas%20Para%20Corretores%20%E2%80%94%20Praia%20Digital%20Academy">Consultar disponibilidade</a>
+        <p class="academy-purchase-paused" role="note"><strong>Novas compras pausadas.</strong> A venda deste curso está suspensa enquanto a entrega protegida do conteúdo é preparada. Consulte a disponibilidade antes de qualquer pagamento; o contato não reserva vaga nem conclui uma compra. Os acessos e materiais de alunos existentes não são alterados por este aviso.</p>
         </div>
 
       <div class=grid">
@@ -163,7 +164,7 @@
       const status = params.get('status');
       const banner = document.createElement('div');
       banner.style.cssText = 'display:none;position:fixed;inset:0;background:rgba(0,0,0,0.45);align-items:center;justify-content:center;z-index:9999;';
-      banner.innerHTML = '<div style="background:#fff;max-width:520px;width:92%;padding:1.25rem;border-radius:16px;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,0.15);"><h2 style="margin:0 0 .5rem;color:#023047">Pagamento confirmado</h2><p style="margin:0 0 1rem;color:#334155">Em até 24h vamos dar entrada no seu serviço/acesso.</p><a href="/education/cursos/gestao-de-propostas-para-corretores/index.html" style="background:#00B4D8;color:#fff;padding:.6rem 1rem;border-radius:999px;text-decoration:none;font-weight:700">Voltar para o curso</a></div>';
+      banner.innerHTML = '<div style="background:#fff;max-width:520px;width:92%;padding:1.25rem;border-radius:16px;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,0.15);"><h2 style="margin:0 0 .5rem;color:#023047">Pagamento não verificado</h2><p style="margin:0 0 1rem;color:#334155">Este endereço não comprova pagamento. Novas compras estão pausadas; fale com comercial@praia.digital. Nenhum acesso é liberado por esta página.</p><a href="/education/cursos/gestao-de-propostas-para-corretores/index.html" style="background:#00B4D8;color:#fff;padding:.6rem 1rem;border-radius:999px;text-decoration:none;font-weight:700">Voltar para o curso</a></div>';
       document.body.appendChild(banner);
       if (status === 'success') { banner.style.display = 'flex'; }
     })();
