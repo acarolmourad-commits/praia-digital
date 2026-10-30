@@ -1,0 +1,22 @@
+{
+  "verified_at": "2026-10-30T16:05:00Z",
+  "mode": "live",
+  "currency": "brl",
+  "billing": "one_time",
+  "fulfillment": "human_assisted",
+  "academy_included": false,
+  "services": {
+    "listing_single_platform": {
+      "url": "https://buy.stripe.com/7sY6oHdD1b1Q9pNeXd0Ny00",
+      "unit_amount": 49900
+    },
+    "listing_two_platforms": {
+      "url": "https://buy.stripe.com/9B64gz0Qf9XM6dBeXd0Ny01",
+      "unit_amount": 99800
+    },
+    "pricing_diagnostic": {
+      "url": "https://buy.stripe.com/5kQ28r8iHee2bxVbL10Ny02",
+      "unit_amount": 49900
+    }
+  }
+}

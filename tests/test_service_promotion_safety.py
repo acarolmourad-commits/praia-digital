@@ -14,10 +14,24 @@ class Parser(HTMLParser):
         if tag=='a' and 'href' in a:self.links.append(a['href'])
 class ServicePromotionSafety(unittest.TestCase):
     def test_no_unverified_payment_or_performance_claims(self):
-        forbidden=['buy.stripe.com','+64%','zero horas','Sem overbooking','lota sua agenda','máquina de reservas','aparece mais alto','cartão, Pix ou boleto','até 5 dias úteis','SEU_AFFILIATE','YOUR_AFFILIATE','O pagamento é processado pela Stripe','procedimentos informados no checkout']
+        forbidden=['+64%','zero horas','Sem overbooking','lota sua agenda','máquina de reservas','aparece mais alto','cartão, Pix ou boleto','até 5 dias úteis','SEU_AFFILIATE','YOUR_AFFILIATE','O pagamento é processado pela Stripe','procedimentos informados no checkout']
         for path in PAGES:
             source=(ROOT/path).read_text()
             for text in forbidden:self.assertNotIn(text,source,path)
+    def test_only_verified_service_payment_links(self):
+        data=json.loads((ROOT/'assets/data/service-payment-links.json').read_text())
+        self.assertFalse(data['academy_included'])
+        self.assertEqual({k:v['unit_amount'] for k,v in data['services'].items()}, {'listing_single_platform':49900,'listing_two_platforms':99800,'pricing_diagnostic':49900})
+        permitted={v['url'] for v in data['services'].values()}
+        for path in PAGES:
+            p=Parser();p.feed((ROOT/path).read_text())
+            for href in p.links:
+                if 'buy.stripe.com' in href:self.assertIn(href,permitted)
+        listing=(ROOT/PAGES[0]).read_text()
+        for key in ['listing_single_platform','listing_two_platforms']:self.assertIn(data['services'][key]['url'],listing)
+        self.assertIn(data['services']['pricing_diagnostic']['url'],(ROOT/PAGES[2]).read_text())
+        self.assertIn('não representa entrega imediata',listing)
+        self.assertIn('ziontechgr (Ziontechgroup)',listing)
     def test_blocked_service_checkout_routes_to_consultation(self):
         services=(ROOT/'servicos.html').read_text()
         diagnostics=(ROOT/'anfitrioes/diagnosticos-anfitrioes.html').read_text()
