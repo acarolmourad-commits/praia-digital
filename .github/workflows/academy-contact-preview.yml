@@ -1,0 +1,43 @@
+name: Academy contact preview
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'education/index.html'
+      - 'education/cursos/index.html'
+      - 'education/kits-2026.html'
+      - 'education/assets/academy.css'
+      - 'tests/academy-contact-preview.spec.cjs'
+      - '.github/workflows/academy-contact-preview.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'education/index.html'
+      - 'education/cursos/index.html'
+      - 'education/kits-2026.html'
+      - 'education/assets/academy.css'
+      - 'tests/academy-contact-preview.spec.cjs'
+      - '.github/workflows/academy-contact-preview.yml'
+permissions:
+  contents: read
+jobs:
+  contact-only-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install isolated browser test dependency
+        run: |
+          npm install --prefix "$RUNNER_TEMP/contact-browser" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/contact-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+      - name: Verify local-only contact page
+        run: NODE_PATH="$RUNNER_TEMP/contact-browser/node_modules" node tests/academy-contact-preview.spec.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: academy-contact-preview-evidence
+          path: ${{ runner.temp }}/academy-contact-qa
+          if-no-files-found: warn
