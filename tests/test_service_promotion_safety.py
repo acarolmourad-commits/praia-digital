@@ -41,6 +41,9 @@ class ServicePromotionSafety(unittest.TestCase):
         self.assertIn('não inclui compra, acesso integral ou acompanhamento humano',source)
         self.assertNotIn('/academy/cursos/',source)
         self.assertNotIn('precificação dinâmica',source)
+    def test_contrast_overrides_survive_shared_styles(self):
+        self.assertIn('section.cta{background:linear-gradient', (ROOT/PAGES[0]).read_text())
+        self.assertIn('.hero .btn-secondary{background:#15385b', (ROOT/PAGES[2]).read_text())
     def test_local_links_resolve(self):
         for page in PAGES:
             p=Parser();p.feed((ROOT/page).read_text())
