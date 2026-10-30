@@ -163,7 +163,8 @@ function calculate(x){
  const fixedSeason=seasonFixed+x.seasonSetup/x.horizon;
  const target=rentAfter+fixedSeason;
  const breakEven=perNightMargin>0&&x.days>0?target/(x.days*perNightMargin)*100:null;
- const rateBreakEven=occupied>0?(rentAfter+seasonCosts-x.seasonSetup/x.horizon)/(occupied*(1-(x.platform+x.seasonAdmin)/100)):null;
+ const feeFraction=1-(x.platform+x.seasonAdmin)/100;
+ const rateBreakEven=occupied>0&&feeFraction>0?(rentAfter+seasonFixed+x.seasonSetup/x.horizon+stays*x.cleaning)/(occupied*feeFraction):null;
  return {occupied,stays,seasonGross,seasonCosts,seasonNet,rentGross,rentCosts,rentNet,seasonAfter,rentAfter,breakEven,rateBreakEven};
 }
 function read(){
