@@ -1,0 +1,808 @@
+{
+  "apresentacao-imoveis-para-corretores": {
+    "application": {
+      "procedure": [
+        {
+          "title": "Preparar uma comparação que responda ao comprador",
+          "body": [
+            "Neste caso fictício, Lia e Rui procuram um lugar para fins de semana com uma pessoa que evita escadas. Há duas opções: apartamento com elevador e casa com área externa. Antes de montar slides, escreva a pergunta central: qual opção atende ao acesso e à rotina pretendida? Na ficha, registre elevador como observado na visita, mas deixe custo condominial como pendente porque ainda não recebeu a fonte adequada. Para a casa, registre a escada sem tentar compensá-la com adjetivos sobre o quintal. Prepare uma folha por opção usando os mesmos campos. Assim, diferenças de apresentação não fazem uma alternativa parecer melhor simplesmente porque recebeu mais fotografias."
+          ]
+        },
+        {
+          "title": "Transformar a ficha em percurso demonstrativo",
+          "body": [
+            "A apresentação começa pela chegada ao imóvel, pois acesso é o critério principal. Diga: “Vamos observar o caminho desde a entrada; depois veremos os ambientes e as informações ainda pendentes”. Durante o percurso, mostre os fatos em vez de repetir a ficha inteira. Ao chegar à escada, pergunte se aquela condição é compatível com o uso descrito; não responda pelo casal. Faça uma pausa para observação e registre a dúvida sobre transporte de bagagens. Só depois apresente quartos e área externa. Se o visitante mudar de prioridade, confirme a mudança e ajuste o roteiro, preservando as limitações que já foram identificadas."
+          ]
+        },
+        {
+          "title": "Entregar um resumo que permita decidir o próximo passo",
+          "body": [
+            "Depois da visita, produza um resumo curto com três blocos: compatibilidades, restrições e verificações. Para o apartamento, escreva “elevador observado; custo mensal ainda não confirmado”. Para a casa, “área externa observada; acesso inclui escada”. Evite concluir “apartamento ideal”, porque a escolha pertence ao interessado e existem dados faltantes. Peça ao casal que indique qual pergunta precisa ser respondida primeiro. Se escolherem o custo mensal, registre a obtenção da informação como próxima ação, com responsável e prazo de retorno combinado. Envie somente imagens autorizadas e revise se o resumo corresponde ao imóvel efetivamente visitado, não a outro anúncio parecido."
+          ]
+        }
+      ],
+      "filled_template": [
+        {
+          "field": "Objetivo",
+          "value": "Uso aos fins de semana por casal e familiar que evita escadas.",
+          "why": "Define a situação concreta; impede organizar a apresentação apenas pela ordem das fotos ou pelo interesse do vendedor."
+        },
+        {
+          "field": "Critério prioritário",
+          "value": "Acesso sem escada confirmado pelo interessado.",
+          "why": "Uma preferência verbal só orienta o percurso depois de ser confirmada; limitações de acesso devem aparecer antes dos ambientes decorados."
+        },
+        {
+          "field": "Fato demonstrado",
+          "value": "Elevador do apartamento observado na visita fictícia de terça-feira.",
+          "why": "A origem e o momento da observação distinguem o que foi visto de uma informação copiada de um anúncio antigo."
+        },
+        {
+          "field": "Pendência",
+          "value": "Valor condominial: solicitar documento ou confirmação pela fonte adequada.",
+          "why": "Não conhecer um custo é diferente de ele ser baixo ou inexistente; a lacuna precisa acompanhar a apresentação comercial."
+        },
+        {
+          "field": "Pergunta após a visita",
+          "value": "Qual informação falta para comparar estas duas opções com tranquilidade?",
+          "why": "A pergunta identifica a próxima necessidade sem pedir decisão prematura nem presumir que silêncio significa aprovação."
+        },
+        {
+          "field": "Encaminhamento",
+          "value": "Responsável comercial obterá a informação pendente e combinará o retorno.",
+          "why": "A apresentação termina em uma tarefa verificável, não em uma promessa vaga de que toda a documentação está correta."
+        }
+      ],
+      "failure_case": {
+        "scenario": "A ficha enviada depois da visita diz “sem restrições de acesso”, embora a casa tenha escada e o casal tenha mencionado mobilidade.",
+        "diagnosis": "O problema não é falta de entusiasmo no texto: a informação decisiva foi omitida. O resumo contradiz a visita e pode fazer o interessado descartar uma preocupação legítima.",
+        "correction": "Corrija o resumo, informe a correção de forma explícita e recoloque a escada no quadro comparativo. Confirme com o interessado se essa condição elimina a opção ou exige outra análise; não suavize a informação com “apenas alguns degraus”.",
+        "verification": "Compare o resumo corrigido com a ficha e o roteiro. Peça a outra pessoa para localizar a limitação sem explicação oral. Se ela não encontrar rapidamente, a informação ainda não está suficientemente visível."
+      }
+    }
+  },
+  "atendimento-ao-cliente-para-corretores": {
+    "application": {
+      "procedure": [
+        {
+          "title": "Abrir espaço para entender a demanda",
+          "body": [
+            "No cenário fictício, Pedro escreve “quero algo perto da praia” e espera uma resposta simples. Em vez de enviar dez links, responda identificando-se e pedindo permissão para três perguntas breves. Pergunte o uso pretendido, uma característica indispensável e a faixa de valor que deseja considerar. Se ele não quiser informar o orçamento naquele momento, registre a lacuna sem adivinhar renda ou capacidade financeira. Pedro responde que busca lazer, precisa evitar escadas e ainda está discutindo o valor com a família. Essas respostas já permitem evitar opções incompatíveis, mesmo sem concluir todo o briefing na primeira conversa."
+          ]
+        },
+        {
+          "title": "Registrar sem transformar a conversa em interrogatório",
+          "body": [
+            "Crie um registro mínimo com o que Pedro declarou e com as perguntas que ficaram abertas. Separe “obrigatório: acesso sem escada” de “preferência: varanda”, caso essa informação apareça depois. Não solicite documentos pessoais para simplesmente apresentar opções iniciais. Ao resumir, use uma confirmação: “Entendi que o acesso é indispensável e que o valor ainda será definido. Está correto?”. Se Pedro corrigir o objetivo, atualize a ficha e mantenha apenas o histórico relevante. Evite campos preenchidos com “qualquer” quando a pessoa ainda não respondeu; essa palavra pode ser interpretada por outro atendente como autorização para ampliar a seleção."
+          ]
+        },
+        {
+          "title": "Combinar uma devolutiva pequena e executável",
+          "body": [
+            "Antes de encerrar, defina o que pode realmente entregar. Neste caso, ofereça conferir duas opções quanto ao acesso, sem afirmar que ambas estarão disponíveis ou adequadas antes da verificação. Pergunte o canal e o momento preferidos para retorno. Registre quem fará a conferência e qual informação falta para prosseguir. Na devolutiva, apresente os fatos apurados e as lacunas restantes, em vez de esconder que o briefing está incompleto. Se nenhuma opção atender ao requisito, diga isso claramente e pergunte se o cliente quer aguardar ou rever algum critério. Não substitua a necessidade declarada por aquilo que é mais fácil vender."
+          ]
+        }
+      ],
+      "filled_template": [
+        {
+          "field": "Pedido inicial",
+          "value": "“Quero algo perto da praia”, recebido em conversa fictícia.",
+          "why": "Manter o pedido original ajuda a conferir se o atendimento esclareceu a demanda ou simplesmente a reinterpretou para caber no catálogo."
+        },
+        {
+          "field": "Uso confirmado",
+          "value": "Lazer aos fins de semana.",
+          "why": "O uso orienta perguntas sobre acesso, manutenção e frequência; não deve ser inferido apenas pela localização solicitada."
+        },
+        {
+          "field": "Obrigatório",
+          "value": "Acesso sem escada, confirmado por Pedro.",
+          "why": "Registrar como requisito evita que colegas tratem o ponto como preferência negociável e enviem opções incompatíveis."
+        },
+        {
+          "field": "Informação pendente",
+          "value": "Faixa de valor será discutida com a família.",
+          "why": "O campo registra uma ausência conhecida, sem inventar orçamento nem pressionar por informação que a pessoa ainda não quer fornecer."
+        },
+        {
+          "field": "Devolutiva combinada",
+          "value": "Conferir acesso de duas opções e retornar pelo canal escolhido.",
+          "why": "Uma entrega limitada é mais verificável que prometer encontrar o imóvel ideal, especialmente quando ainda existem critérios em aberto."
+        },
+        {
+          "field": "Condição de continuidade",
+          "value": "Pedro decide se deseja receber novas opções após a primeira devolutiva.",
+          "why": "O atendimento preserva a escolha do interessado e não transforma uma pergunta inicial em autorização para mensagens indefinidas."
+        }
+      ],
+      "failure_case": {
+        "scenario": "Outro colega recebe o atendimento e envia opções com escada porque o campo de acesso ficou vazio.",
+        "diagnosis": "A informação existia na conversa, mas não foi transformada em critério compartilhado. O problema é perda de contexto na passagem do atendimento, não falta de interesse do cliente.",
+        "correction": "Atualize a ficha com o requisito confirmado, avise o colega e reconheça o envio inadequado ao interessado sem responsabilizar publicamente outra pessoa. Pergunte se ele quer receber apenas opções verificadas ou pausar o atendimento.",
+        "verification": "Faça uma passagem simulada: alguém que não leu a conversa deve conseguir identificar objetivo, requisito, pendência e próximo passo apenas pelo registro. Se precisar adivinhar, o briefing ainda está incompleto."
+      }
+    }
+  },
+  "atendimento-cliente-para-corretores": {
+    "application": {
+      "procedure": [
+        {
+          "title": "Reconhecer impacto sem inventar explicação",
+          "body": [
+            "Neste exercício fictício, Marina reclama que recebeu fotos de um imóvel já indisponível e gastou tempo discutindo a opção com a família. Comece pelo impacto relatado: “Entendo que vocês dedicaram tempo a uma opção que não podia ser oferecida”. Não diga que houve erro do sistema se isso ainda não foi apurado. Faça uma pergunta objetiva sobre qual material ela recebeu e quando, evitando pedir novamente tudo que já está registrado. Combine um horário de retorno que possa cumprir, mesmo que seja apenas para informar o andamento. Uma primeira resposta útil reconhece a situação e delimita a investigação, sem prometer solução que depende de terceiros."
+          ]
+        },
+        {
+          "title": "Reconstruir a sequência e escolher a correção",
+          "body": [
+            "Consulte a versão do anúncio enviada, a data da última confirmação de disponibilidade e quem estava responsável pela atualização. No caso, a equipe encontra uma confirmação antiga usada sem nova conferência. Registre esse fato e evite uma explicação genérica como “falha de comunicação”, que não mostra onde o processo quebrou. A correção imediata é retirar a opção das sugestões atuais e rever contatos que possam ter recebido a mesma informação, respeitando o escopo de cada atendimento. Uma alternativa de imóvel só deve ser oferecida depois de verificar os critérios de Marina; trocar o link sem reconhecer o problema pode repetir a experiência ruim."
+          ]
+        },
+        {
+          "title": "Fechar o retorno sem exigir satisfação",
+          "body": [
+            "A devolutiva explica o que foi confirmado: “A disponibilidade não havia sido reconferida antes do envio. Atualizamos o controle e deixamos a opção fora das sugestões”. Depois, pergunte se Marina prefere receber uma alternativa verificada, aguardar ou encerrar. Não condicione a correção à retirada de uma reclamação e não peça avaliação positiva como contrapartida. Registre a escolha dela e a ação preventiva, incluindo quem passará a conferir a informação antes do próximo envio. A reclamação pode estar operacionalmente resolvida sem que a pessoa queira continuar comprando; aceitar essa possibilidade faz parte de um encerramento respeitoso e evita insistência inadequada."
+          ]
+        }
+      ],
+      "filled_template": [
+        {
+          "field": "Relato",
+          "value": "Cliente recebeu material de opção indisponível e perdeu tempo comparando.",
+          "why": "A descrição registra o impacto informado, sem classificar a pessoa como difícil nem reduzir a reclamação a uma reação emocional."
+        },
+        {
+          "field": "Fato apurado",
+          "value": "A última confirmação de disponibilidade estava desatualizada.",
+          "why": "O campo diferencia investigação concluída de hipótese; uma causa específica permite desenhar uma prevenção que possa ser verificada."
+        },
+        {
+          "field": "Correção imediata",
+          "value": "Retirar a opção das sugestões e corrigir o registro de disponibilidade.",
+          "why": "A ação resolve a fonte do erro antes de propor nova venda, reduzindo a chance de outros atendimentos repetirem o problema."
+        },
+        {
+          "field": "Escolha do cliente",
+          "value": "Marina prefere aguardar e não receber alternativas nesta semana.",
+          "why": "A preferência deve orientar contatos seguintes; resolver uma reclamação não cria autorização para uma nova sequência comercial."
+        },
+        {
+          "field": "Prevenção",
+          "value": "Responsável confere disponibilidade antes de enviar uma opção.",
+          "why": "A prevenção descreve comportamento e momento, em vez de um pedido genérico para a equipe prestar mais atenção."
+        },
+        {
+          "field": "Encerramento",
+          "value": "Retorno enviado com causa confirmada, correção e preferência registrada.",
+          "why": "Mensagem enviada não comprova satisfação; o encerramento registra o que a equipe efetivamente fez e o que a pessoa decidiu."
+        }
+      ],
+      "failure_case": {
+        "scenario": "A equipe responde “já resolvemos” e envia três novos links, sem explicar a indisponibilidade nem observar que Marina pediu pausa.",
+        "diagnosis": "A resposta confunde recuperação de atendimento com retomada imediata de venda. Ela não demonstra a correção e ainda ignora a escolha expressa da cliente.",
+        "correction": "Retire Marina da sequência de novos envios, explique a correção factual e confirme que a pausa foi registrada. Não envie uma longa defesa da equipe nem peça que ela reconheça o esforço feito.",
+        "verification": "Revise o atendimento após a pausa: o registro deve mostrar causa, ação corretiva e condição de não contato. Simule uma consulta pelo próximo atendente e confira se essa restrição aparece antes de qualquer nova oferta."
+      }
+    }
+  },
+  "automacao-comercial": {
+    "application": {
+      "procedure": [
+        {
+          "title": "Descrever o processo manual antes da regra",
+          "body": [
+            "O caso fictício é uma equipe que esquece retornos combinados. Antes de escolher software, escreva o processo atual: pessoa solicita retorno em uma data; atendente registra o compromisso; responsável consulta a agenda; conversa ocorre ou é reagendada. A automação proposta será apenas uma lista interna de tarefas, não envio automático de mensagens. Defina os campos mínimos: código do atendimento, data acordada, responsável e estado ativo ou pausado. Se o registro não tiver data ou responsável, ele deve entrar em revisão, não receber um valor inventado. Esse desenho permite identificar se o problema está na regra ou na falta de dados de entrada."
+          ]
+        },
+        {
+          "title": "Construir uma regra com exceções demonstradas",
+          "body": [
+            "Escreva a regra em linguagem comum: quando chegar a data combinada de um atendimento ativo, mostrar uma tarefa ao responsável. Acrescente exceções explícitas: cliente pediu pausa, atendimento duplicado, tarefa já concluída ou data alterada. Teste quatro registros fictícios. A-01 está ativo com retorno hoje e entra na lista; A-02 está pausado e não entra; A-03 está concluído e não reaparece; A-04 não possui responsável e vai para revisão. Registre o resultado esperado e o observado. Não teste com dados reais de clientes se um conjunto fictício permite verificar a lógica, e não autorize mensagens externas como parte desse primeiro teste."
+          ]
+        },
+        {
+          "title": "Implantar com revisão e forma de desligar",
+          "body": [
+            "Se os testes corresponderem ao esperado, compare a lista automática com uma revisão manual em um período definido pela equipe. Qualquer diferença deve ser investigada antes de aumentar o escopo. Registre quem pode alterar a regra, quem revisa falhas e como retornar ao controle manual. Uma tarefa exibida não significa que o contato ocorreu; o responsável deve registrar a ação efetiva e respeitar a preferência do cliente. Quando a data mudar, confira se a tarefa anterior foi substituída corretamente. A automação deve reduzir esquecimentos sem criar a impressão falsa de que o atendimento está resolvido apenas porque uma notificação apareceu."
+          ]
+        }
+      ],
+      "filled_template": [
+        {
+          "field": "Problema",
+          "value": "Retornos acordados não aparecem na revisão diária.",
+          "why": "A formulação identifica um comportamento observável e evita comprar uma ferramenta para resolver um objetivo vago como melhorar vendas."
+        },
+        {
+          "field": "Gatilho",
+          "value": "Data combinada alcançada em atendimento ativo.",
+          "why": "O gatilho depende de dados definidos e não de uma inferência sobre interesse do cliente ou probabilidade de compra."
+        },
+        {
+          "field": "Ação",
+          "value": "Criar tarefa interna para o responsável registrado.",
+          "why": "A ação mantém revisão humana antes de contato externo; não pressupõe autorização para enviar mensagens ao interessado."
+        },
+        {
+          "field": "Exceções",
+          "value": "Pausa, duplicidade, conclusão, data alterada ou responsável ausente.",
+          "why": "As exceções impedem que a regra trate todos os registros como equivalentes e ajudam a localizar falhas nos testes."
+        },
+        {
+          "field": "Teste",
+          "value": "A-01 entra; A-02 pausado não entra; A-04 sem responsável vai para revisão.",
+          "why": "Resultados esperados concretos permitem reproduzir o teste após mudanças, sem depender apenas de alguém dizer que funcionou."
+        },
+        {
+          "field": "Reversão",
+          "value": "Desligar a regra e usar lista manual se houver tarefas indevidas.",
+          "why": "A alternativa mantém o processo funcionando enquanto a equipe corrige a causa; automação não deve eliminar a capacidade de operar manualmente."
+        }
+      ],
+      "failure_case": {
+        "scenario": "Após uma mudança, a lista volta a mostrar clientes que pediram pausa, porque o novo filtro considera apenas a data.",
+        "diagnosis": "A regra perdeu uma exceção essencial. O erro não exige mais velocidade de atendimento: exige impedir que uma tarefa indevida seja interpretada como autorização de contato.",
+        "correction": "Desligue a regra afetada, restaure a revisão manual e recoloque o estado de pausa entre os critérios. Confira registros já gerados e remova tarefas indevidas antes que alguém execute contatos.",
+        "verification": "Repita os quatro testes e acrescente um caso de pausa registrada depois do agendamento. A aprovação exige que ambos os casos pausados fiquem fora da lista e que os ativos corretos continuem aparecendo."
+      }
+    }
+  },
+  "captacao-exclusividade": {
+    "application": {
+      "procedure": [
+        {
+          "title": "Descobrir qual problema a proposta deve resolver",
+          "body": [
+            "No caso fictício, a proprietária Sônia recebeu informações diferentes sobre seu imóvel em vários anúncios e quer mais organização. Antes de defender exclusividade, pergunte quais divergências ocorreram e quais efeitos ela percebeu. Sônia cita fotografias antigas e visitas sem confirmação. Registre esses dois problemas como fatos a verificar, sem concluir que todos os profissionais envolvidos agiram mal. Explique que uma proposta de atuação deve mostrar responsáveis, rotina de atualização e comunicação. Se a principal necessidade não puder ser atendida pela equipe, não use exclusividade como resposta automática. O diagnóstico serve para construir uma oferta coerente, não para produzir argumentos que pressionem a proprietária."
+          ]
+        },
+        {
+          "title": "Traduzir o diagnóstico em entregas verificáveis",
+          "body": [
+            "Prepare uma página com entregas que a equipe realmente consegue executar: conferir a ficha antes da divulgação, manter um responsável por atualizações e confirmar visitas pelo canal combinado. Para cada entrega, indique frequência ou momento, responsável e evidência. Por exemplo, atualização de disponibilidade será registrada antes de uma nova sugestão comercial; o relatório terá ações realizadas e dúvidas recebidas, não números inventados de alcance. Separe atividades incluídas de serviços que dependem de contratação adicional. Mostre a página a Sônia e pergunte o que ainda está pouco claro. A proposta deve permitir comparar o trabalho oferecido sem depender de promessas de venda rápida ou preço superior."
+          ]
+        },
+        {
+          "title": "Revisar condições antes de qualquer formalização",
+          "body": [
+            "Depois de discutir as entregas, liste condições que precisam de esclarecimento: prazo, remuneração, responsabilidades, autorizações, limites e encerramento. Não preencha um documento jurídico por analogia com outra negociação nem prometa que uma modalidade é adequada a todos. Encaminhe questões formais para revisão competente. Confirme que Sônia entende o que está escolhendo e pode fazer perguntas antes de decidir. Se ela não quiser prosseguir, registre a decisão sem continuar apresentando a recusa como objeção a vencer. O resultado esperado desta atividade é uma proposta comercial compreensível e uma lista de pontos a revisar, não um contrato pronto nem uma exclusividade obtida a qualquer custo."
+          ]
+        }
+      ],
+      "filled_template": [
+        {
+          "field": "Problema declarado",
+          "value": "Fotografias antigas e visitas sem confirmação em anúncios anteriores.",
+          "why": "A proposta parte de ocorrências concretas relatadas pela proprietária, não de uma afirmação genérica de que exclusividade sempre gera melhor resultado."
+        },
+        {
+          "field": "Entrega incluída",
+          "value": "Conferir ficha e imagens autorizadas antes de cada nova divulgação.",
+          "why": "A entrega especifica uma ação controlável pela equipe; não confunde qualidade do processo com garantia de interessados ou de venda."
+        },
+        {
+          "field": "Responsável",
+          "value": "Uma pessoa identifica e registra as atualizações recebidas de Sônia.",
+          "why": "Ter responsável definido reduz a dispersão de informações, mas não significa prometer disponibilidade permanente ou atendimento fora do combinado."
+        },
+        {
+          "field": "Evidência",
+          "value": "Registro da versão da ficha usada e da data da conferência.",
+          "why": "A proprietária pode verificar se a rotina foi cumprida sem depender apenas de um relato informal sobre o esforço comercial."
+        },
+        {
+          "field": "Ponto formal pendente",
+          "value": "Prazo e condições de encerramento precisam de revisão adequada.",
+          "why": "O material comercial não deve apresentar como resolvida uma condição contratual ainda não compreendida ou autorizada pelas partes."
+        },
+        {
+          "field": "Próximo passo",
+          "value": "Sônia revisará a página de entregas e reunirá dúvidas antes de decidir.",
+          "why": "A continuidade respeita a decisão da proprietária e evita tratar uma conversa exploratória como aceite de uma contratação."
+        }
+      ],
+      "failure_case": {
+        "scenario": "A proposta diz “relatório semanal”, mas a equipe só consegue produzir uma revisão mensal e omite essa diferença durante a conversa.",
+        "diagnosis": "A promessa não corresponde à capacidade operacional. O risco não desaparece porque o relatório seria útil; uma frequência impossível cria expectativa que a equipe não pode cumprir.",
+        "correction": "Revise a proposta antes da decisão, explique a frequência que pode ser executada e permita que a proprietária reavalie. Se a frequência semanal for indispensável, não apresente a alternativa mensal como equivalente.",
+        "verification": "Confronte cada entrega com responsável, capacidade e evidência. Simule um ciclo de atendimento: se não houver quem execute e registre a atividade no prazo proposto, ela deve ser revista ou excluída."
+      }
+    }
+  },
+  "captacao-imoveis-corretores": {
+    "application": {
+      "procedure": [
+        {
+          "title": "Preparar um contato com contexto legítimo",
+          "body": [
+            "Neste cenário fictício, um contato comum informa que André deseja conversar sobre a venda de um apartamento. Antes de abordá-lo, confirme se ele espera o contato e qual canal foi indicado; não presuma autorização para compartilhar dados pessoais ou adicioná-lo a campanhas. Prepare uma apresentação curta que explique quem você é e por que está entrando em contato. A primeira pergunta é se aquele é um momento adequado para conversar. Se André disser que não procura atendimento, encerre sem tentar obter detalhes por outros canais. Uma lista grande de nomes não substitui relevância, contexto e respeito à escolha de cada pessoa."
+          ]
+        },
+        {
+          "title": "Qualificar o imóvel sem antecipar a divulgação",
+          "body": [
+            "André aceita conversar e informa que ainda está organizando documentos e discutindo o prazo com a família. Registre objetivo, situação declarada e informações pendentes. Pergunte quais características do imóvel podem ser conferidas e quem tem autorização para decidir sobre divulgação. Não publique fotografias recebidas apenas para análise sem confirmar o uso permitido. Separe a ficha exploratória da ficha aprovada para anúncio: a primeira pode conter dúvidas; a segunda exige conferência e autorização adequadas. Ao final, devolva um resumo para correção. Se houver divergência de área ou de condição de ocupação, registre a questão e encaminhe a verificação, sem escolher o número mais conveniente."
+          ]
+        },
+        {
+          "title": "Construir um próximo passo proporcional ao estágio",
+          "body": [
+            "Como André ainda não definiu o prazo, a próxima ação será revisar a ficha e esclarecer as autorizações, não lançar uma campanha. Combine quem enviará as informações, quem fará a conferência e quando haverá retorno. Explique quais materiais são necessários para essa etapa e evite pedir documentos que não tenham relação com o objetivo imediato. Se o proprietário decidir pausar, marque esse estado e não mantenha o imóvel como disponível por conveniência comercial. O acompanhamento deve mostrar o que falta para avançar. Uma captação bem organizada pode terminar em adiamento ou recusa; isso é preferível a divulgar um imóvel sem condições claras de representação e informação."
+          ]
+        }
+      ],
+      "filled_template": [
+        {
+          "field": "Origem",
+          "value": "Indicação de contato comum; André esperava uma conversa sobre venda.",
+          "why": "O contexto explica a abordagem e evita transformar informação recebida informalmente em autorização irrestrita para prospecção ou divulgação."
+        },
+        {
+          "field": "Objetivo declarado",
+          "value": "Organizar a possível venda, ainda sem prazo definido.",
+          "why": "A formulação não presume urgência nem compromisso de anunciar; ela orienta uma próxima etapa compatível com a situação real."
+        },
+        {
+          "field": "Estado da ficha",
+          "value": "Exploratória, com área e condição de ocupação a conferir.",
+          "why": "Marcar o estado impede que outro integrante use dados preliminares como informações prontas para publicidade."
+        },
+        {
+          "field": "Uso de imagens",
+          "value": "Fotos recebidas para análise; autorização de divulgação ainda pendente.",
+          "why": "O recebimento do arquivo não resolve automaticamente seu uso comercial, e o registro deve tornar essa distinção visível."
+        },
+        {
+          "field": "Próxima ação",
+          "value": "André revisará o resumo e indicará quem decide sobre divulgação.",
+          "why": "A tarefa esclarece autoridade e informação antes de preparar anúncios ou agendar visitas com terceiros."
+        },
+        {
+          "field": "Condição de pausa",
+          "value": "Sem publicação enquanto prazo, dados e autorização estiverem indefinidos.",
+          "why": "O controle protege a coerência da oferta e evita apresentar como disponível um imóvel cujo proprietário ainda está deliberando."
+        }
+      ],
+      "failure_case": {
+        "scenario": "Um colega copia a ficha exploratória e publica um anúncio porque as fotografias já estavam na pasta compartilhada.",
+        "diagnosis": "O processo confundiu acesso interno ao material com autorização de uso externo. A ausência de um estado visível permitiu que informação incompleta parecesse pronta para divulgação.",
+        "correction": "Interrompa a publicação inadequada, informe o responsável pelo atendimento e esclareça a situação com o proprietário. Separe materiais preliminares dos aprovados e registre a conferência necessária antes de qualquer novo anúncio.",
+        "verification": "Faça um teste de passagem: alguém que não participou da conversa deve identificar o que pode ser divulgado, o que está pendente e quem autoriza. Se isso depender de memória oral, o controle ainda falha."
+      }
+    }
+  },
+  "comunicacao-interpessoal-para-corretores": {
+    "application": {
+      "procedure": [
+        {
+          "title": "Separar a frase recebida da interpretação pessoal",
+          "body": [
+            "O exercício começa quando Clara diz: “Vocês não escutam o que eu peço”. O atendente pode sentir vontade de listar todas as opções enviadas, mas isso responderia à crítica antes de compreender a necessidade. Registre mentalmente a frase como relato da experiência de Clara, não como prova de má intenção nem como ataque que precise ser vencido. Responda com uma pergunta aberta: “Qual ponto importante ficou de fora das opções que recebeu?”. Evite perguntas que já tragam uma defesa, como “mas você não disse que queria perto da praia?”. O objetivo inicial é localizar a divergência entre pedido e entrega."
+          ]
+        },
+        {
+          "title": "Confirmar entendimento com palavras observáveis",
+          "body": [
+            "Clara explica que precisa evitar escadas, mas recebeu duas opções com esse tipo de acesso. Faça uma paráfrase: “O acesso sem escadas é indispensável, e as sugestões não atenderam a isso. Entendi corretamente?”. Se ela confirmar, registre o critério como obrigatório. Se acrescentar que também precisa de vaga, pergunte se essa condição é igualmente indispensável ou uma preferência. Não use o resumo para diminuir a reclamação; ele deve permitir correção. Evite expressões vagas como “mais conforto” quando existe um requisito observável. A confirmação cria um ponto comum a partir do qual será possível propor uma ação útil."
+          ]
+        },
+        {
+          "title": "Fechar a conversa com acordo e verificação",
+          "body": [
+            "Depois de entender a divergência, explique uma ação que possa executar: conferir acesso antes de uma nova sugestão e indicar explicitamente o que ainda não foi verificado. Pergunte se Clara deseja continuar recebendo opções ou prefere pausar. Se ela aceitar continuar, combine o retorno sem prometer que haverá uma alternativa adequada. Atualize o registro compartilhado para que outra pessoa não repita o erro. Ao preparar a próxima mensagem, confira se ela demonstra o critério corrigido. Comunicação eficaz neste exercício não é fazer a cliente concordar com a equipe; é reduzir a ambiguidade e alinhar uma entrega às necessidades que ela efetivamente confirmou."
+          ]
+        }
+      ],
+      "filled_template": [
+        {
+          "field": "Frase original",
+          "value": "“Vocês não escutam o que eu peço”.",
+          "why": "Guardar a formulação ajuda a reconhecer a experiência relatada sem substituí-la por um rótulo sobre o comportamento da pessoa."
+        },
+        {
+          "field": "Pergunta de esclarecimento",
+          "value": "Qual ponto importante ficou de fora das opções recebidas?",
+          "why": "A pergunta abre espaço para informação concreta e não exige que a cliente defenda a legitimidade de sua insatisfação."
+        },
+        {
+          "field": "Critério confirmado",
+          "value": "Acesso sem escadas é indispensável.",
+          "why": "Um critério observável pode orientar seleção e conferência; palavras amplas como conforto deixariam a mesma ambiguidade no atendimento."
+        },
+        {
+          "field": "Paráfrase",
+          "value": "As sugestões não atenderam ao acesso que você considera obrigatório.",
+          "why": "O resumo permite à cliente corrigir o entendimento antes que a equipe execute outra ação baseada em uma interpretação incompleta."
+        },
+        {
+          "field": "Acordo",
+          "value": "Conferir acesso antes de sugerir novas opções, se Clara quiser continuar.",
+          "why": "A ação respeita a escolha de continuidade e descreve uma melhoria de processo, não uma promessa de encontrar imediatamente um imóvel."
+        },
+        {
+          "field": "Verificação",
+          "value": "Próxima mensagem mostrará acesso confirmado ou pendente de cada opção.",
+          "why": "A mudança na comunicação deve ser visível no material enviado, não apenas afirmada em uma conversa de desculpas."
+        }
+      ],
+      "failure_case": {
+        "scenario": "O atendente responde “entendi perfeitamente”, mas resume o pedido como preferência por imóveis mais confortáveis e mantém opções com escadas.",
+        "diagnosis": "A concordância foi apenas verbal. A informação específica se perdeu em uma expressão ampla, permitindo que o mesmo erro continue sem parecer uma contradição no registro.",
+        "correction": "Refaça a paráfrase usando o critério concreto e peça confirmação. Atualize o briefing para separar obrigatório e desejável; suspenda sugestões incompatíveis até verificar se existe alguma mudança autorizada pela cliente.",
+        "verification": "Leia o briefing sem acesso à conversa e tente selecionar uma opção. Se alguém puder incluir um imóvel com escadas sem contrariar o texto, o registro ainda não representa o acordo alcançado."
+      }
+    }
+  },
+  "crm-para-corretores": {
+    "application": {
+      "procedure": [
+        {
+          "title": "Definir etapas que descrevem acontecimentos",
+          "body": [
+            "Imagine uma equipe fictícia em que cada pessoa usa uma definição diferente de “interessado”. Comece reunindo cinco atendimentos simulados e identifique o último acontecimento confirmado em cada um. Transforme acontecimentos em etapas: contato recebido, necessidade confirmada, opção apresentada, visita realizada e proposta recebida. Não use “quente” como etapa, porque é uma interpretação difícil de conferir. Para cada passagem, escreva uma evidência mínima. Uma visita agendada não é visita realizada; uma pergunta sobre preço não é proposta. Teste as definições com duas pessoas classificando os mesmos registros. Quando discordarem, ajuste o critério antes de transferir uma carteira inteira para qualquer ferramenta."
+          ]
+        },
+        {
+          "title": "Construir e revisar um registro mínimo útil",
+          "body": [
+            "Use o atendimento fictício C-014. Registre objetivo, característica indispensável, etapa comprovada, próxima ação, responsável e prazo combinado. Anote a origem de informações relevantes, mas não copie documentos pessoais para campos livres. Se dois colegas registraram o mesmo atendimento, confira a identidade pelos critérios internos adequados antes de consolidar. Preserve o histórico necessário e marque qual informação substituiu outra. Não apague uma preferência antiga sem registrar que ela mudou. O registro deve responder a uma pergunta prática: outra pessoa autorizada consegue continuar o atendimento sem pedir ao cliente que repita tudo? Se faltam próxima ação ou responsável, completar esses campos costuma ser mais útil que acrescentar novas etiquetas."
+          ]
+        },
+        {
+          "title": "Usar a revisão para decidir trabalho, não vigiar pessoas",
+          "body": [
+            "Separe a carteira em registros com ação futura, ações vencidas, pendências externas e atendimentos pausados. Comece pelos vencidos e confirme se o evento realmente ocorreu antes de apenas trocar a data. Se a resposta depende do proprietário, registre essa dependência e combine um retorno possível com o interessado. Uma pausa solicitada pelo cliente não deve gerar sequência automática de cobranças. Na revisão semanal, procure campos que ninguém usa e erros recorrentes de classificação. Meça qualidade pela possibilidade de reconstruir a situação e executar o próximo passo, não pelo volume de notas. O procedimento funciona em uma planilha ou sistema autorizado, sem presumir recursos específicos de uma marca."
+          ]
+        }
+      ],
+      "filled_template": [
+        {
+          "field": "Código e etapa",
+          "value": "C-014; necessidade confirmada; nenhuma visita realizada até a revisão.",
+          "why": "O código organiza o exercício sem expor pessoa real; a etapa descreve evidência, não entusiasmo do corretor."
+        },
+        {
+          "field": "Necessidade indispensável",
+          "value": "Acesso sem escada; uso eventual por familiar com mobilidade limitada, conforme relato fictício.",
+          "why": "Registrar a necessidade orienta a seleção sem transformar o relato em avaliação médica ou garantir acessibilidade."
+        },
+        {
+          "field": "Próxima ação",
+          "value": "Conferir o acesso da unidade A antes de sugerir visita.",
+          "why": "Uma ação específica é executável e impede enviar novas opções sem resolver o critério já conhecido."
+        },
+        {
+          "field": "Responsável e retorno",
+          "value": "Ana verifica a informação e retorna na sexta, conforme prazo combinado no cenário.",
+          "why": "A responsabilidade individual evita que todos suponham que outra pessoa está conduzindo o atendimento."
+        },
+        {
+          "field": "Fonte e situação",
+          "value": "Elevador informado pelo proprietário; funcionamento e percurso ainda não conferidos.",
+          "why": "A origem permite distinguir declaração de observação e evita publicar um dado pendente como fato definitivo."
+        },
+        {
+          "field": "Estado de comunicação",
+          "value": "Cliente pediu pausa até receber a informação de acesso; não iniciar contatos adicionais sobre outros imóveis.",
+          "why": "O registro preserva o contexto e reduz insistência que poderia ser gerada por uma rotina genérica de acompanhamento."
+        }
+      ],
+      "failure_case": {
+        "scenario": "Caso fictício: um colega muda um atendimento para “proposta recebida” porque o cliente perguntou se o preço era negociável. O gestor inclui esse registro na previsão de propostas.",
+        "diagnosis": "A classificação antecipou um acontecimento. Uma pergunta sobre flexibilidade não contém necessariamente valor, condições ou manifestação de proposta. O indicador passa a representar expectativa do corretor, não eventos comparáveis.",
+        "correction": "Retorne o registro à etapa sustentada pelos fatos, mantendo nota da correção. Esclareça o critério de proposta e registre a pergunta como dúvida comercial a responder. Revise outros registros classificados pelo mesmo hábito, sem pressionar o cliente a produzir uma proposta apenas para confirmar a previsão.",
+        "verification": "Peça a duas pessoas que classifiquem novamente os exemplos usando o critério revisto. Confira se o relatório consegue apontar a evidência de cada passagem. Se ainda houver divergência, simplifique a definição antes de criar novos indicadores ou automações."
+      }
+    }
+  },
+  "especialista-venda-imoveis-litoral": {
+    "application": {
+      "procedure": [
+        {
+          "title": "Converter o uso pretendido em perguntas locais",
+          "body": [
+            "Considere duas personas fictícias: uma família que visita o litoral aos fins de semana e uma pessoa que pretende permanecer por períodos longos. Não suponha que procuram o mesmo imóvel apenas porque desejam a mesma cidade. Para a família, investigue acesso, armazenamento e rotina de chegada; para a permanência longa, inclua serviços cotidianos, manutenção e organização do trabalho. Pergunte quais critérios são indispensáveis e quais são preferências negociáveis. Registre respostas antes de escolher argumentos de venda. O papel deste roteiro é tornar a comparação mais relevante, não conceder especialização profissional nem substituir verificações técnicas. Características locais precisam ser confirmadas para o imóvel e a situação concreta."
+          ]
+        },
+        {
+          "title": "Separar informação observada, relato e hipótese",
+          "body": [
+            "Monte uma ficha com três colunas: fato observado, informação de terceiros e ponto ainda não confirmado. Em uma visita fictícia, você observa a distância entre a portaria e a unidade, recebe relato sobre movimento em feriados e não sabe como a rua se comporta em dias de chuva. Não transforme esses três níveis em uma descrição única e segura. Para cada dúvida relevante, escolha uma fonte adequada e registre a data. Uma experiência pessoal em um único fim de semana não prova um padrão anual. Se a questão envolve condição estrutural, documentação ou regra aplicável, encaminhe ao profissional ou responsável competente em vez de improvisar uma conclusão comercial."
+          ]
+        },
+        {
+          "title": "Apresentar alternativas com o mesmo roteiro",
+          "body": [
+            "Compare duas opções usando campos iguais: adequação ao uso, acesso, conservação, custos conhecidos e pendências. Mostre primeiro os critérios indispensáveis e depois as preferências. Se uma opção possui área externa e outra oferece menor necessidade aparente de manutenção, explique a diferença sem declarar uma vencedora universal. Pergunte qual informação mudaria a decisão do interessado. Organize a próxima verificação em torno dessa resposta. Ao enviar o resumo, identifique o que foi confirmado e o que continua pendente, evitando promessas sobre valorização, ausência de problemas ou facilidade de revenda. Uma apresentação útil reduz incertezas relevantes; não precisa transformar toda característica do litoral em vantagem."
+          ]
+        }
+      ],
+      "filled_template": [
+        {
+          "field": "Uso pretendido",
+          "value": "Família fictícia pretende visitar duas vezes por mês e guardar equipamentos de praia no imóvel.",
+          "why": "O uso concreto permite discutir armazenamento e rotina, em vez de recorrer a uma persona genérica de comprador."
+        },
+        {
+          "field": "Critério indispensável",
+          "value": "Acesso compatível com as necessidades relatadas; percurso ainda será observado com o interessado.",
+          "why": "Não cabe ao vendedor garantir adequação pessoal apenas porque existe elevador ou porque outros visitantes usam o acesso."
+        },
+        {
+          "field": "Fato observado",
+          "value": "A unidade A possui espaço de armazenamento visto durante a visita autorizada.",
+          "why": "Uma observação delimitada é mais confiável que afirmar que o imóvel atende qualquer volume de equipamentos."
+        },
+        {
+          "field": "Relato a confirmar",
+          "value": "Proprietário informa maior movimento na rua em determinados feriados; não há levantamento apresentado.",
+          "why": "A origem e o limite do relato impedem convertê-lo em estatística de demanda ou avaliação universal de tranquilidade."
+        },
+        {
+          "field": "Comparação",
+          "value": "A oferece armazenamento; B parece exigir menos manutenção externa, mas faltam informações sobre custos recorrentes.",
+          "why": "A mesma ficha preserva vantagens e lacunas de cada alternativa, sem esconder dados inconvenientes à narrativa comercial."
+        },
+        {
+          "field": "Próxima verificação",
+          "value": "Obter informações documentadas de custos e organizar observação do acesso antes de nova proposta.",
+          "why": "O próximo passo responde à dúvida decisiva e não força uma negociação enquanto informações básicas permanecem ausentes."
+        }
+      ],
+      "failure_case": {
+        "scenario": "Caso fictício: um corretor afirma que uma região “nunca tem problemas de acesso” porque a visitou em um dia tranquilo. O comprador pretende chegar em horários diferentes e pergunta sobre essa garantia.",
+        "diagnosis": "A afirmação extrapola uma observação limitada e promete estabilidade de uma condição que pode variar. A confiança pessoal do corretor não substitui dados nem verificação compatível com o uso pretendido.",
+        "correction": "Retire a garantia e explique o alcance da observação realizada. Identifique quais horários e condições importam para o comprador e quais fontes podem ajudar a verificar a questão. Se não houver informação suficiente, mantenha a incerteza explícita; não a substitua por outro adjetivo absoluto.",
+        "verification": "Releia anúncio e mensagens procurando expressões como “sempre”, “nunca” e “garantido”. Verifique se cada descrição local informa sua base quando necessário. O resumo final deve permitir ao interessado reconhecer tanto características confirmadas quanto limitações da análise."
+      }
+    }
+  },
+  "fechamento-de-vendas-para-corretores": {
+    "application": {
+      "procedure": [
+        {
+          "title": "Verificar prontidão sem fabricar urgência",
+          "body": [
+            "Em uma negociação fictícia, o interessado gosta do imóvel, mas ainda não confirmou uma condição de pagamento e uma informação documental. Antes de perguntar se pode “fechar hoje”, recapitule o que está entendido e o que falta. Pergunte qual pendência impede a próxima decisão e quem pode esclarecê-la. Não interprete silêncio como concordância nem transforme simpatia durante a visita em autorização para avançar. A prontidão depende de compreensão e condições verificadas, não apenas de disposição emocional. Se houver análise técnica, financeira ou jurídica necessária, organize o encaminhamento adequado. O roteiro comercial não decide a validade de documentos nem substitui orientação profissional sobre compromissos assumidos."
+          ]
+        },
+        {
+          "title": "Consolidar condições em um resumo rastreável",
+          "body": [
+            "Crie um resumo de trabalho com objeto da negociação, valor discutido, condições apresentadas, pendências e versão. Identifique quais pontos foram propostos, quais receberam resposta e quais ainda exigem confirmação. Não escreva “acordado” quando uma pessoa apenas disse que consultaria outra parte. Leia o resumo com atenção às diferenças entre datas desejadas e datas efetivamente confirmadas. Mantenha a origem das manifestações e use o canal adequado para revisão. Se uma condição mudar, atualize a versão e destaque a alteração; não envie um documento silenciosamente diferente do que foi discutido. Esse cuidado reduz retrabalho e permite que os responsáveis revisem a situação real, sem conclusão contratual improvisada."
+          ]
+        },
+        {
+          "title": "Organizar a transição após a decisão comercial",
+          "body": [
+            "Quando houver uma decisão de avançar pelos meios apropriados, prepare uma passagem de serviço: quem conduz a próxima etapa, quais informações precisam ser reunidas e qual retorno foi combinado. Não marque a venda como concluída apenas porque alguém enviou uma mensagem entusiasmada. Defina o evento que sustenta cada estado do acompanhamento conforme o processo real e a revisão profissional aplicável. Se a decisão for não avançar, registre o encerramento sem insistência e preserve apenas o necessário. Um fechamento bem organizado também aceita a pausa. O objetivo é que ninguém confunda intenção, negociação e conclusão, e que o cliente saiba qual é o próximo passo sem receber promessas de prazo não confirmadas."
+          ]
+        }
+      ],
+      "filled_template": [
+        {
+          "field": "Situação atual",
+          "value": "Interessado fictício deseja continuar, mas aguarda esclarecimento de uma condição de pagamento.",
+          "why": "Interesse em avançar não equivale a aprovação de todas as condições nem autoriza anunciar a negociação como concluída."
+        },
+        {
+          "field": "Pontos discutidos",
+          "value": "Objeto e valor foram apresentados; data de entrega permanece como preferência ainda não confirmada.",
+          "why": "Separar proposta e confirmação evita que uma expectativa de uma parte apareça como obrigação aceita pela outra."
+        },
+        {
+          "field": "Pendência decisiva",
+          "value": "Confirmar a condição de pagamento com a fonte competente antes de pedir uma decisão final.",
+          "why": "Uma pendência concreta permite organizar trabalho; uma pergunta genérica sobre “o que falta para fechar” pode produzir pressão sem solução."
+        },
+        {
+          "field": "Resumo e versão",
+          "value": "Resumo comercial R-03, com alteração de data destacada e referência à versão anterior.",
+          "why": "O histórico permite conferir o que mudou e impede que diferentes pessoas revisem condições incompatíveis sem perceber."
+        },
+        {
+          "field": "Responsável e retorno",
+          "value": "Pessoa responsável obtém esclarecimento e informa o prazo de resposta que efetivamente conseguiu confirmar.",
+          "why": "Um prazo baseado em disponibilidade real reduz frustração e não promete ação de terceiros sem autorização."
+        },
+        {
+          "field": "Critério do próximo estado",
+          "value": "Manter “em análise” até ocorrer o evento previsto no processo real e devidamente verificado.",
+          "why": "Estados claros preservam indicadores e comunicação, sem simular que um roteiro comercial determina validade contratual."
+        }
+      ],
+      "failure_case": {
+        "scenario": "Caso fictício: após ouvir “vou conversar com minha família”, o corretor registra a negociação como fechada e informa ao proprietário que a decisão está tomada. No dia seguinte, o interessado apresenta novas dúvidas.",
+        "diagnosis": "O erro foi interpretar uma intenção de consulta como decisão. A comunicação criou expectativa indevida e pode levar outras pessoas a agir sobre uma conclusão inexistente. Não se trata de uma falha do cliente em cumprir algo que nunca confirmou.",
+        "correction": "Corrija o registro e informe ao proprietário o estado efetivamente conhecido, sem atribuir culpa ao interessado. Retome as dúvidas de forma objetiva e pergunte qual informação é necessária para a próxima decisão. Revise o critério usado pela equipe para diferenciar análise, intenção e conclusão.",
+        "verification": "Confira uma amostra de registros recentes e a evidência associada aos seus estados. Peça a um colega para identificar a decisão documentada sem ouvir a interpretação do vendedor. Quando não houver evidência suficiente, mantenha o acompanhamento em estágio compatível com os fatos."
+      }
+    }
+  },
+  "funil-de-vendas": {
+    "application": {
+      "procedure": [
+        {
+          "title": "Definir o conjunto antes de calcular conversão",
+          "body": [
+            "Use um conjunto fictício de quarenta contatos recebidos em um período. Determine se os números seguintes pertencem a essas mesmas pessoas ou se misturam contatos de meses diferentes. Registre eventos observáveis: necessidade diagnosticada, visita realizada e proposta recebida. Uma pessoa pode fazer duas visitas; por isso, diferencie contagem de pessoas e contagem de eventos. Para este exercício, use pessoas únicas em cada etapa. Defina também a data de corte, pois alguns contatos ainda podem avançar depois dela. Sem essas escolhas, uma porcentagem aparentemente precisa compara unidades diferentes. O primeiro produto da análise é uma definição compreensível do indicador, não um gráfico colorido."
+          ]
+        },
+        {
+          "title": "Calcular etapas e localizar a pergunta útil",
+          "body": [
+            "No exemplo, vinte dos quarenta contatos tiveram diagnóstico, cinco realizaram visita e uma pessoa apresentou proposta. As conversões entre etapas são 20/40 = 50%, 5/20 = 25% e 1/5 = 20%. A conversão de contato a proposta é 1/40 = 2,5%; ela responde a outra pergunta. Não some as taxas nem compare a última etapa diretamente com a primeira sem explicar o denominador. A menor taxa não revela sozinha a causa do problema. Investigue registros de quem ainda não avançou: falta de opção adequada, informação pendente e pedido de pausa exigem ações distintas. Contato sem visita até a data de corte não é automaticamente oportunidade perdida."
+          ]
+        },
+        {
+          "title": "Testar uma mudança com critério de acompanhamento",
+          "body": [
+            "Suponha que a revisão encontre cinco diagnósticos sem próxima ação registrada. Escolha corrigir esse processo antes de comprar mais divulgação. Defina uma ação: ao concluir o diagnóstico, registrar encaminhamento, responsável e retorno combinado. Acompanhe a completude desses campos e os eventos posteriores no mesmo conjunto. Não atribua toda mudança de propostas ao procedimento se também alterou preço, público e oferta. Registre diferenças relevantes entre os períodos e reconheça quando a amostra é pequena. O teste pode demonstrar melhoria de organização sem comprovar aumento de vendas. Ao final, decida se mantém, ajusta ou abandona a ação com base na evidência disponível, preservando as limitações da comparação."
+          ]
+        }
+      ],
+      "filled_template": [
+        {
+          "field": "Unidade de contagem",
+          "value": "Pessoas únicas do conjunto fictício de quarenta contatos, acompanhadas até uma data de corte definida.",
+          "why": "Evita misturar número de mensagens, visitas repetidas e pessoas diferentes em um mesmo cálculo de conversão."
+        },
+        {
+          "field": "Eventos por etapa",
+          "value": "40 contatos, 20 diagnósticos, 5 pessoas com visita realizada e 1 pessoa com proposta recebida.",
+          "why": "Os números só são comparáveis porque pertencem ao mesmo conjunto e usam definições observáveis de passagem."
+        },
+        {
+          "field": "Taxas entre etapas",
+          "value": "Diagnóstico: 50%; visita após diagnóstico: 25%; proposta após visita: 20%.",
+          "why": "Cada taxa mostra uma transição específica; não representa probabilidade universal nem referência de desempenho do mercado."
+        },
+        {
+          "field": "Taxa total",
+          "value": "Uma proposta dividida por quarenta contatos resulta em 2,5% até a data de corte.",
+          "why": "Explicitar período e denominador impede confundir essa taxa com os 20% calculados apenas entre visitantes."
+        },
+        {
+          "field": "Problema investigado",
+          "value": "Cinco diagnósticos estão sem próxima ação registrada; ainda não há motivo confirmado de encerramento.",
+          "why": "Ausência de registro é uma falha de processo, mas não permite concluir que todas essas pessoas rejeitaram a oferta."
+        },
+        {
+          "field": "Teste e verificação",
+          "value": "Adicionar próxima ação e responsável ao fechamento do diagnóstico e conferir os campos na revisão seguinte.",
+          "why": "O teste atua sobre uma causa observada e produz uma evidência verificável, sem prometer que corrigirá todas as conversões."
+        }
+      ],
+      "failure_case": {
+        "scenario": "Caso fictício: o relatório mostra dez visitas em um mês e oito propostas, mas várias propostas vieram de visitas realizadas no mês anterior. A equipe divulga conversão de visita em proposta de 80%.",
+        "diagnosis": "O cálculo mistura fluxos de períodos diferentes. Pode ser uma relação entre volumes mensais, mas não demonstra que oito das dez pessoas visitadas apresentaram proposta. A conclusão atribui causalidade e pertencimento que os dados não comprovam.",
+        "correction": "Separe o relatório de volume mensal do acompanhamento por conjunto de contatos. Para medir a transição, vincule cada proposta à pessoa e à etapa anterior correspondente, respeitando os cuidados com dados pessoais. Marque registros sem vínculo como pendentes em vez de forçar uma associação.",
+        "verification": "Refaça uma pequena amostra manualmente e confirme se cada numerador pertence ao denominador. Mostre a data de corte e quantos atendimentos permanecem abertos. O indicador está pronto quando outra pessoa consegue explicar o que ele mede e o que não permite concluir."
+      }
+    }
+  },
+  "gestao-de-conflitos-para-corretores": {
+    "application": {
+      "procedure": [
+        {
+          "title": "Separar fatos, interpretações e interesses",
+          "body": [
+            "Considere um conflito fictício: o comprador acredita que a visita estava confirmada, enquanto o proprietário afirma ter recebido apenas uma consulta de horário. Reúna mensagens e registros relevantes sem expor dados além do necessário. Escreva o que cada fonte mostra e o que cada pessoa interpretou. Não comece decidindo quem é “difícil” ou quem está mentindo. Pergunte o que precisa ser resolvido agora: reorganizar a visita, esclarecer um compromisso ou evitar novo deslocamento desnecessário. Diferencie posição, como exigir um horário, de interesse, como não perder outra manhã. Esse mapa reduz julgamentos e ajuda a identificar opções, mas não substitui mediação especializada ou avaliação jurídica quando o caso exigir."
+          ]
+        },
+        {
+          "title": "Criar opções dentro da autoridade disponível",
+          "body": [
+            "Depois de esclarecer a divergência, liste alternativas concretas sem prometer recursos que você não controla. No exemplo, pode haver outro horário autorizado, confirmação escrita antes do deslocamento ou mudança do responsável pelo agendamento. Verifique a viabilidade de cada opção com quem precisa executá-la. Não ofereça desconto, reembolso ou obrigação de terceiros apenas para encerrar a conversa rapidamente. Apresente as alternativas de forma neutra e confira se atendem ao problema identificado. Quando a discussão envolve direitos, ameaça, segurança ou questões além da atuação comercial, interrompa a tentativa de solução improvisada e encaminhe ao responsável competente. Resolver um conflito não significa manter a conversa a qualquer custo."
+          ]
+        },
+        {
+          "title": "Registrar entendimento e acompanhar a execução",
+          "body": [
+            "Se houver uma opção aceita pelos participantes apropriados, registre ação, responsável, prazo e condições de confirmação. Use linguagem factual: “horário será confirmado até quinta” é diferente de “visita garantida na sexta”. Peça que as pessoas confiram o entendimento pelo meio adequado, sem apresentar o resumo comercial como instrumento jurídico validado. Acompanhe a execução no prazo combinado e avise quando houver impedimento. Após o episódio, identifique qual parte do processo contribuiu para a divergência: mensagem ambígua, ausência de confirmação ou responsabilidade indefinida. Ajuste esse ponto em vez de criar uma regra punitiva para todos os clientes. O aprendizado deve prevenir repetição sem apagar o histórico do ocorrido."
+          ]
+        }
+      ],
+      "filled_template": [
+        {
+          "field": "Fato documentado",
+          "value": "Mensagem fictícia enviada: “Vou consultar se sexta é possível”; não há confirmação posterior registrada.",
+          "why": "A frase sustenta uma consulta de disponibilidade, não a certeza de que o compromisso foi aceito por todas as partes."
+        },
+        {
+          "field": "Interpretação do interessado",
+          "value": "Comprador entendeu que deveria reservar a manhã para a visita.",
+          "why": "Reconhecer a interpretação ajuda a entender o impacto sem declarar automaticamente que ela corresponde a um compromisso confirmado."
+        },
+        {
+          "field": "Interesse a atender",
+          "value": "Evitar novo deslocamento sem horário efetivamente confirmado.",
+          "why": "O interesse abre espaço para alternativas práticas e impede reduzir a conversa a uma disputa sobre quem tem razão."
+        },
+        {
+          "field": "Opção viável",
+          "value": "Responsável consulta dois horários e envia confirmação explícita antes de qualquer orientação de deslocamento.",
+          "why": "A opção depende de ações verificáveis e não promete disponibilidade do proprietário antes da consulta."
+        },
+        {
+          "field": "Limite de autoridade",
+          "value": "Qualquer pedido de compensação será encaminhado ao responsável, sem promessa de aprovação.",
+          "why": "Acolher uma solicitação não autoriza assumir uma obrigação financeira ou contratual em nome de outra pessoa."
+        },
+        {
+          "field": "Registro de acompanhamento",
+          "value": "Próximo retorno na quinta; responsável identificado; ausência de confirmação mantém a visita como pendente.",
+          "why": "O estado da tarefa continua claro mesmo quando a solução exige esperar resposta de terceiros."
+        }
+      ],
+      "failure_case": {
+        "scenario": "Caso fictício: para acalmar uma discussão sobre informações divergentes, o corretor promete pagar uma despesa do interessado sem consultar quem teria autoridade para assumir esse compromisso.",
+        "diagnosis": "A tentativa de reduzir tensão criou uma nova obrigação não verificada e pode ampliar o conflito. O problema original continua sem análise, enquanto a conversa passa a depender de uma promessa que talvez não possa ser cumprida.",
+        "correction": "Informe prontamente que a solicitação precisa da análise do responsável e esclareça o que foi dito, sem esconder a promessa anterior. Registre fatos e encaminhe a situação ao canal competente. Não tente corrigir o erro com outra garantia ou com pressão para o interessado desistir da questão.",
+        "verification": "Revise as mensagens-modelo e os limites de decisão da equipe. Em uma simulação, o atendente deve conseguir acolher o problema, explicar o próximo encaminhamento e evitar compromissos não autorizados. Confirme que o acompanhamento registra uma resposta real, não apenas o encerramento unilateral da reclamação."
+      }
+    }
+  },
+  "gestao-de-propostas-para-corretores": {
+    "application": {
+      "procedure": [
+        {
+          "title": "Registrar a proposta sem completar lacunas por conta própria",
+          "body": [
+            "Use uma negociação fictícia em que o interessado apresenta valor e prazo desejado, mas não informa uma condição importante de pagamento. Abra um registro com identificador, data, origem, imóvel e condições exatamente como foram recebidas. Marque o campo ausente como pendente; não copie a condição de uma negociação anterior nem preencha com o que parece usual. Diferencie proposta comercial, manifestação preliminar e documento formal conforme o processo aplicável, sem decidir validade jurídica pelo nome do arquivo. Antes de encaminhar, confirme se o resumo preserva o sentido da mensagem original e se há autorização adequada para compartilhar as informações necessárias com as pessoas envolvidas."
+          ]
+        },
+        {
+          "title": "Controlar contrapropostas como versões vinculadas",
+          "body": [
+            "Suponha que a outra parte proponha uma data diferente. Crie uma nova versão vinculada à anterior e destaque o campo alterado. Mantenha valor, prazo e condições não alteradas visíveis para revisão, evitando que a discussão de um item esconda mudanças em outro. Use estados descritivos, como recebida, encaminhada, aguardando resposta e encerrada, com critérios claros. Uma pessoa dizer que analisará a versão não significa aceitação. Registre a origem da resposta e as pendências. Se houver duas versões circulando, identifique qual está em análise e avise os participantes apropriados. Não apague arquivos antigos para deixar a pasta “limpa”; preserve o histórico necessário com controle de acesso."
+          ]
+        },
+        {
+          "title": "Encerrar cada ciclo com uma decisão e uma trilha de conferência",
+          "body": [
+            "Na revisão do dia, separe propostas com retorno combinado, condições incompletas e negociações pausadas. Para cada uma, registre a próxima ação específica e quem a executa. Quando ocorrer uma decisão pelos meios adequados, atualize o estado com a referência que a sustenta, respeitando a orientação profissional aplicável. Não trate uma versão mais recente como automaticamente válida ou aceita. Se a negociação terminar sem avanço, registre o encerramento e suspenda acompanhamentos que não façam mais sentido. Antes de passar o caso à etapa seguinte, confira se as pessoas trabalham com o mesmo conjunto de condições e se as informações pendentes estão destacadas, não escondidas em notas dispersas."
+          ]
+        }
+      ],
+      "filled_template": [
+        {
+          "field": "Identificador e origem",
+          "value": "Proposta fictícia P-014, recebida em mensagem registrada na data do exercício.",
+          "why": "Uma referência estável permite relacionar manifestações e arquivos sem depender apenas do nome da pessoa ou do imóvel."
+        },
+        {
+          "field": "Condições recebidas",
+          "value": "Valor apresentado e prazo desejado registrados; condição de pagamento adicional marcada como não informada.",
+          "why": "O controle deve representar o que foi recebido, sem preencher a lacuna com suposições ou práticas de outra negociação."
+        },
+        {
+          "field": "Versão e alteração",
+          "value": "P-014-v2 altera somente a data proposta; comparação com v1 destaca esse campo.",
+          "why": "A diferença visível reduz o risco de alguém revisar uma condição antiga acreditando que está diante da versão atual."
+        },
+        {
+          "field": "Estado e evidência",
+          "value": "Versão v2 encaminhada e aguardando resposta; destinatário informou que analisará.",
+          "why": "Análise não é aceitação. O estado deve corresponder à evidência disponível e não ao resultado desejado pelo vendedor."
+        },
+        {
+          "field": "Próxima ação",
+          "value": "Obter esclarecimento da condição pendente antes de solicitar revisão completa dos termos.",
+          "why": "Uma tarefa delimitada evita contatos repetitivos que cobram decisão sem resolver o que impede a análise."
+        },
+        {
+          "field": "Passagem para outra etapa",
+          "value": "Resumo final identifica versão em análise, condições confirmadas por fonte e pontos ainda dependentes de revisão.",
+          "why": "Quem recebe o caso precisa reconstruir a situação sem adivinhar qual arquivo ou mensagem prevalece."
+        }
+      ],
+      "failure_case": {
+        "scenario": "Caso fictício: a equipe envia v1 ao proprietário e v2 ao comprador, mas ambos recebem arquivos chamados “proposta final”. Cada pessoa responde sobre uma data diferente e o corretor registra concordância geral.",
+        "diagnosis": "O nome do arquivo ocultou versões distintas e a conclusão juntou respostas incompatíveis. Não há base para afirmar que as partes analisaram o mesmo conjunto de condições. A versão mais recente no computador não resolve esse problema de entendimento.",
+        "correction": "Interrompa o avanço operacional e reúna as versões e respostas com suas datas. Esclareça a divergência aos responsáveis, apresente uma comparação objetiva e encaminhe a revisão adequada. Não altere respostas antigas nem renomeie arquivos para simular que todos receberam o mesmo documento desde o início.",
+        "verification": "Faça uma conferência cruzada: cada resposta deve estar ligada à versão correspondente, e os pontos pendentes precisam aparecer no resumo. Teste se outro colega consegue reconstruir a sequência sem explicação oral. Só atualize o estado quando houver evidência compatível com o processo real."
+      }
+    }
+  }
+}

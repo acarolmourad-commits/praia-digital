@@ -38,6 +38,25 @@ jobs:
           cd academy
           pytest tests/ -q
 
+      - name: Validate digital catalog and enrollment
+        run: |
+          python -m unittest discover -s tests -p "test_academy_digital.py"
+          node tests/test_academy_enrollment.cjs
+
+      - name: Offline mobile and desktop enrollment regression
+        run: |
+          npm install --prefix "$RUNNER_TEMP/academy-browser" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/academy-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          NODE_PATH="$RUNNER_TEMP/academy-browser/node_modules" ACADEMY_BROWSER_TEST=1 node tests/test_academy_enrollment.cjs
+          NODE_PATH="$RUNNER_TEMP/academy-browser/node_modules" node tests/academy-browser.cjs
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: academy-browser-evidence
+          path: ${{ runner.temp }}/academy-qa
+          if-no-files-found: warn
+
       - name: Clean test artifacts
         run: |
           git reset --hard HEAD

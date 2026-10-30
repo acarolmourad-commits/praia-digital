@@ -1,90 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login — Área do Aluno — Praia Digital Academy</title>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Login — Área do Aluno — Praia Digital Academy",
-    "url": "https://praia.digital/education/aluno/login.html"
-  }
-  </script>
-
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Login — Área do Aluno — Praia Digital Academy">
-  <meta property="og:description" content="Login — Área do Aluno — Praia Digital Academy">
-  <meta property="og:url" content="https://praia.digital/education/aluno/login.html">
-  <meta property="og:site_name" content="Praia Digital Academy">
-  <link rel="stylesheet" href="https://praia.digital/css/style.css">
-<meta name="theme-color" content="#F4EBD0">
-
-  <meta name="description" content="Faça login na área do aluno da Praia Digital Academy para acessar seus cursos.">
-  <meta name="robots" content="noindex, nofollow">
-  <link rel="canonical" href="https://praia.digital/education/aluno/login.html">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acesso do aluno — Praia Digital Academy</title><meta name="description" content="Orientação de acesso e atendimento para alunos da Praia Digital Academy."><meta name="robots" content="noindex, nofollow"><link rel="canonical" href="https://praia.digital/education/aluno/login.html">
+<style>*{box-sizing:border-box}body{font-family:system-ui,sans-serif;background:#f4ebd0;color:#023047;margin:0;line-height:1.6}.wrap{max-width:620px;margin:40px auto;padding:0 20px}.card{background:#fff;border:1px solid #cbd5e1;border-radius:16px;padding:24px;margin:20px 0}a{color:#075985}label{display:block;font-weight:650;margin-bottom:6px}input{width:100%;font:inherit;border:1px solid #64748b;border-radius:8px;padding:10px;background:#fff;color:#172b3a}form{display:grid;gap:18px}button{font:inherit;background:#075985;color:#fff;border:0;border-radius:8px;padding:12px;cursor:pointer;font-weight:700}button:disabled{opacity:.7;cursor:wait}a:focus-visible,input:focus-visible,button:focus-visible{outline:3px solid #a36c00;outline-offset:3px}.notice{border-left:4px solid #a36c00;background:#fff8e6;padding:14px}#error{color:#9f1239;font-weight:600}[hidden]{display:none!important}</style></head>
+<body><main class="wrap"><nav aria-label="Navegação da Academy"><a href="/education/index.html">Academy</a> · <a href="/education/cursos/index.html">Catálogo</a></nav>
+<h1>Acesso do aluno</h1><p>O conteúdo da Academy é 100% digital. A matrícula e as instruções de entrega são assistidas pela equipe.</p>
+<p class="notice">A integração de acesso automático ainda não está validada. Use o formulário somente se já recebeu credenciais da equipe. Se não conseguir entrar, solicite ajuda; não refaça o pagamento.</p>
+<section class="card" aria-labelledby="login-heading"><h2 id="login-heading">Já recebi minhas credenciais</h2>
+<form id="loginForm"><div><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="username" required></div>
+<div><label for="password">Senha</label><input id="password" name="password" type="password" autocomplete="current-password" required minlength="6"></div>
+<button id="login-submit" type="submit">Entrar</button><p id="error" role="alert" tabindex="-1" hidden></p></form>
+<noscript><p>O login precisa de JavaScript. Se preferir, solicite orientação pelos contatos abaixo.</p></noscript></section>
+<section class="card"><h2>Precisa de ajuda?</h2><p>Para recuperar o acesso, esclarecer a entrega ou informar uma dificuldade, fale com a equipe. Não envie sua senha ou dados de cartão.</p><p><a href="https://wa.me/5511954346288?text=Preciso%20de%20ajuda%20com%20o%20acesso%20ao%20material%20digital%20da%20Academy" target="_blank" rel="noopener">Ajuda no WhatsApp (nova aba)</a> · <a href="mailto:comercial@praia.digital?subject=Ajuda%20com%20acesso%20Academy">Ajuda por e-mail</a></p><a href="/education/checkout.html">Informações sobre matrícula assistida</a></section></main>
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
-</script>
-</head>
-<body style="background:#F4EBD0;color:#023047;min-height:100vh;display:flex;align-items:center;justify-content:center">
-  <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:18px 20px;width:100%;max-width:420px">
-    <h1 style="font-size:1.5rem;font-weight:700;color:#fff;margin-bottom:.5rem">Área do Aluno</h1>
-    <p style="color:#9ca3af;margin-bottom:1rem">Entre com seu e-mail e senha.</p>
-    <form id="loginForm" style="display:flex;flex-direction:column;gap:1rem">
-      <div>
-        <label style="display:block;font-size:.875rem;color:#d1d5db;margin-bottom:.25rem">E-mail</label>
-        <input id="email" type="email" required style="width:100%;background:#111827;border:1px solid #374151;border-radius:8px;padding:8px 12px;color:#fff" />
-      </div>
-      <div>
-        <label style="display:block;font-size:.875rem;color:#d1d5db;margin-bottom:.25rem">Senha</label>
-        <input id="password" type="password" required minlength="6" style="width:100%;background:#111827;border:1px solid #374151;border-radius:8px;padding:8px 12px;color:#fff" />
-      </div>
-      <button type="submit" style="width:100%;background:#00B4D8;color:#000;font-weight:700;padding:.5rem;border-radius:8px;border:none;cursor:pointer">Entrar</button>
-      <p id="error" style="color:#f87171;font-size:.875rem;display:none"></p>
-    </form>
-    <p style="color:#9ca3af;font-size:.875rem;margin-top:1rem">Ainda não tem conta? <a href="/education/index.html" style="color:#00B4D8">Ver cursos</a>.</p>
-  </div>
-
-  <script>
-    const apiBase = '/academy';
-    const token = localStorage.getItem('academy_token') || sessionStorage.getItem('academy_token');
-    if (token) {
-      window.location.href = '/education/aluno/index.html';
-    }
-
-    document.getElementById('loginForm').addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const email = document.getElementById('email').value.trim();
-      const password = document.getElementById('password').value;
-      const errorEl = document.getElementById('error');
-      try {
-        const res = await fetch(apiBase + '/auth/login', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email, password })
-        });
-        const data = await res.json();
-        if (res.status === 200) {
-          localStorage.setItem('academy_token', data.access_token);
-          window.location.href = '/education/aluno/index.html';
-        } else {
-          errorEl.textContent = data.detail || 'Erro ao entrar.';
-          errorEl.classList.remove('hidden');
-        }
-      } catch (err) {
-        errorEl.textContent = 'Erro de conexão. Tente novamente.';
-        errorEl.classList.remove('hidden');
+(function () {
+  'use strict';
+  const apiBase = '/academy';
+  const form = document.getElementById('loginForm');
+  const errorEl = document.getElementById('error');
+  const button = document.getElementById('login-submit');
+  let pending = false;
+  form.addEventListener('submit', async function (event) {
+    event.preventDefault();
+    if (pending) return;
+    pending = true;
+    errorEl.hidden = true;
+    errorEl.textContent = '';
+    button.disabled = true;
+    button.textContent = 'Conferindo…';
+    form.setAttribute('aria-busy', 'true');
+    const controller = new AbortController();
+    const timeout = setTimeout(function () { controller.abort(); }, 15000);
+    try {
+      const response = await fetch(apiBase + '/auth/login', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, signal: controller.signal,
+        body: JSON.stringify({ email: document.getElementById('email').value.trim(), password: document.getElementById('password').value })
+      });
+      const contentType = response.headers.get('content-type') || '';
+      if (!contentType.includes('application/json')) throw new Error('unavailable');
+      const data = await response.json();
+      if (response.ok && typeof data.access_token === 'string' && data.access_token.length) {
+        localStorage.setItem('academy_token', data.access_token);
+        window.location.assign('/education/aluno/index.html');
+      } else {
+        errorEl.textContent = response.status === 401 || response.status === 403
+          ? 'Não foi possível validar seu acesso. Confira os dados ou solicite ajuda à equipe.'
+          : 'O acesso não foi concluído. Solicite orientação à equipe pelos contatos abaixo.';
+        errorEl.hidden = false;
+        errorEl.focus();
       }
-    });
-  </script>
-<meta name="pd-shared-footer">
-<script src="https://praia.digital/js/shared.js?v=2.0"></script>
-</body>
-</html>
+    } catch (_) {
+      errorEl.textContent = 'O serviço de acesso está indisponível ou não respondeu. Solicite ajuda à equipe pelos contatos abaixo; não refaça o pagamento.';
+      errorEl.hidden = false;
+      errorEl.focus();
+    } finally {
+      clearTimeout(timeout);
+      document.getElementById('password').value = '';
+      pending = false;
+      button.disabled = false;
+      button.textContent = 'Entrar';
+      form.removeAttribute('aria-busy');
+    }
+  });
+})();
+</script></body></html>
