@@ -26,6 +26,8 @@ class ServicePromotionSafety(unittest.TestCase):
         self.assertIn('R$ 499 por plataforma',services)
         self.assertIn('consulta_diagnostico_precificacao',diagnostics)
         self.assertIn('Pagamento a confirmar com a equipe',diagnostics)
+        self.assertNotIn('Você será direcionado ao checkout externo',diagnostics)
+        self.assertIn('Confirme como pagar',diagnostics)
         # Unrelated services are not silently reassigned to these products.
         self.assertIn('bJe28sd4c0XdfxZ19e4ZR1Y',services)
         self.assertIn('14A7sMc08bBR99BaJO4ZR25',diagnostics)
