@@ -18,6 +18,18 @@ class ServicePromotionSafety(unittest.TestCase):
         for path in PAGES:
             source=(ROOT/path).read_text()
             for text in forbidden:self.assertNotIn(text,source,path)
+    def test_blocked_service_checkout_routes_to_consultation(self):
+        services=(ROOT/'servicos.html').read_text()
+        diagnostics=(ROOT/'anfitrioes/diagnosticos-anfitrioes.html').read_text()
+        self.assertNotIn('7sY9AU3tC21h4Tl5pu4ZR1X',services)
+        self.assertNotIn('bJeeVeaW4fS7gC3bNS4ZR24',diagnostics)
+        self.assertIn('R$ 499 por plataforma',services)
+        self.assertIn('consulta_diagnostico_precificacao',diagnostics)
+        self.assertIn('Pagamento a confirmar com a equipe',diagnostics)
+        # Unrelated services are not silently reassigned to these products.
+        self.assertIn('bJe28sd4c0XdfxZ19e4ZR1Y',services)
+        self.assertIn('14A7sMc08bBR99BaJO4ZR25',diagnostics)
+        self.assertIn('00w8wQ7JS35l99B19e4ZR23',diagnostics)
     def test_listing_prices_and_exclusions_remain(self):
         for path in PAGES[:2]:
             source=(ROOT/path).read_text()
