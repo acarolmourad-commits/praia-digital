@@ -43,6 +43,7 @@ const fs=require('node:fs'),path=require('node:path'),os=require('node:os'),asse
   const details=bundle.locator('details');await details.locator('summary').click();assert.ok(await details.evaluate(el=>el.open));
   assert.equal(await details.locator('ul li').count(),3);assert.equal(await details.locator('ol li').count(),3);
   await bundle.scrollIntoViewIfNeeded();await page.screenshot({path:path.join(out,'bundle-'+width+'.png'),fullPage:false});
+  await bundle.screenshot({path:path.join(out,'bundle-complete-'+width+'.png')});
   await details.locator('summary').click();assert.ok(!(await details.evaluate(el=>el.open)));
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
   assert.deepEqual(errors,[]);assert.deepEqual(unexpected,[]);
