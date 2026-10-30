@@ -14,7 +14,7 @@ class Parser(HTMLParser):
         if tag=='a' and 'href' in a:self.links.append(a['href'])
 class ServicePromotionSafety(unittest.TestCase):
     def test_no_unverified_payment_or_performance_claims(self):
-        forbidden=['buy.stripe.com','+64%','zero horas','Sem overbooking','lota sua agenda','máquina de reservas','aparece mais alto','cartão, Pix ou boleto','até 5 dias úteis','SEU_AFFILIATE','YOUR_AFFILIATE']
+        forbidden=['buy.stripe.com','+64%','zero horas','Sem overbooking','lota sua agenda','máquina de reservas','aparece mais alto','cartão, Pix ou boleto','até 5 dias úteis','SEU_AFFILIATE','YOUR_AFFILIATE','O pagamento é processado pela Stripe','procedimentos informados no checkout']
         for path in PAGES:
             source=(ROOT/path).read_text()
             for text in forbidden:self.assertNotIn(text,source,path)
@@ -40,6 +40,7 @@ class ServicePromotionSafety(unittest.TestCase):
         self.assertIn('/education/cursos/airbnb-do-zero/amostra.html',source)
         self.assertIn('não inclui compra, acesso integral ou acompanhamento humano',source)
         self.assertNotIn('/academy/cursos/',source)
+        self.assertNotIn('precificação dinâmica',source)
     def test_local_links_resolve(self):
         for page in PAGES:
             p=Parser();p.feed((ROOT/page).read_text())
