@@ -82,6 +82,7 @@ class AcademyTest(unittest.TestCase):
     if link.startswith('/education/'):
      self.assertTrue((ROOT/link.split('?')[0].split('#')[0].lstrip('/')).exists(),link)
    if c['kind']=='Curso curto digital':
+    self.assertIn('<h3>Não incluído neste material</h3>',text)
     sales=(p.parent/'vendas.html').read_text();self.assertEqual(text,sales)
     sample=(p.parent/'amostra.html').read_text();self.assertNotIn('docs/academy/delivery',sample)
  def test_legacy_alias_pages(self):
