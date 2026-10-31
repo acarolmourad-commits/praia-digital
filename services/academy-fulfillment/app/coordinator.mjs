@@ -1,9 +1,9 @@
-import {ConsumerComposio} from './consumer-composio.mjs';
+import {AcademyProviders} from './providers.mjs';
 import {validateSession} from './payment.mjs';
 import {GmailDelivery} from './gmail.mjs';
 import {processOne} from '../durable/process.mjs';
 export class Coordinator {
- constructor(ledger,storage,env,client=new ConsumerComposio(env)){this.ledger=ledger;this.storage=storage;this.env=env;this.client=client;this.ledger.sql.exec('CREATE TABLE IF NOT EXISTS pending_sessions(id TEXT PRIMARY KEY,due INTEGER NOT NULL)');}
+ constructor(ledger,storage,env,client=new AcademyProviders(env)){this.ledger=ledger;this.storage=storage;this.env=env;this.client=client;this.ledger.sql.exec('CREATE TABLE IF NOT EXISTS pending_sessions(id TEXT PRIMARY KEY,due INTEGER NOT NULL)');}
  async catalog(){
   const sha=this.env.CATALOG_SHA256;
   if(!/^[a-f0-9]{64}$/.test(sha||''))throw Error('CATALOG_NOT_CONFIGURED');

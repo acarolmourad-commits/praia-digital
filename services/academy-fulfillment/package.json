@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node durable/ledger.test.mjs && node app/adapter.test.mjs && node app/payment.test.mjs && node app/gmail.test.mjs && node app/drive.test.mjs && node app/coordinator.test.mjs && node app/consumer-session.test.mjs && node app/consumer-composio.test.mjs",
+    "test": "node durable/ledger.test.mjs && node app/adapter.test.mjs && node app/payment.test.mjs && node app/gmail.test.mjs && node app/drive.test.mjs && node app/coordinator.test.mjs && node app/consumer-session.test.mjs && node app/consumer-composio.test.mjs && node app/stripe-readonly.test.mjs",
     "build": "wrangler deploy --dry-run --outdir build"
   },
   "devDependencies": {

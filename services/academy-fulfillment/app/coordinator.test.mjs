@@ -5,6 +5,7 @@ import {DatabaseSync} from 'node:sqlite';
 import {Ledger} from '../durable/store.mjs';
 import {Coordinator} from './coordinator.mjs';
 import {ConsumerComposio} from './consumer-composio.mjs';
+import {AcademyProviders} from './providers.mjs';
 const realNow=Date.now;let clock=1800000000000;Date.now=()=>clock;
 async function fixture(useConsumer=false){
  const db=new DatabaseSync(':memory:'),kv=new Map(),drafts=new Map(),sent=new Map(),calls=[];let alarm=null;
@@ -36,8 +37,10 @@ async function fixture(useConsumer=false){
  let runtimeClient=client;
  if(useConsumer){
   const accounts={stripe:'coup_stripe_fixture',gmail:'coup_gmail_fixture',googledrive:'coup_drive_fixture'};
-  const consumerEnv={...env,COMPOSIO_ORG_ID:'org_fixture',COMPOSIO_CONSUMER_PROJECT_ID:'proj_fixture',COMPOSIO_USER_API_KEY:'fixture-user-key',COMPOSIO_USER_ID:'fixture-owner',COMPOSIO_CONSUMER_SESSION_ID:'trs_fixture',COMPOSIO_CONSUMER_ACCOUNTS_JSON:JSON.stringify(accounts)};
-  runtimeClient=new ConsumerComposio(consumerEnv,async(url,options)=>{
+  if(useConsumer==='hybrid')delete accounts.stripe;
+  const consumerEnv={...env,STRIPE_READONLY_API_KEY:'rk_test_fixture',COMPOSIO_ORG_ID:'org_fixture',COMPOSIO_CONSUMER_PROJECT_ID:'proj_fixture',COMPOSIO_USER_API_KEY:'fixture-user-key',COMPOSIO_USER_ID:'fixture-owner',COMPOSIO_CONSUMER_SESSION_ID:'trs_fixture',COMPOSIO_CONSUMER_ACCOUNTS_JSON:JSON.stringify(accounts)};
+  runtimeClient=new (useConsumer==='hybrid'?AcademyProviders:ConsumerComposio)(consumerEnv,async(url,options)=>{
+   if(url.startsWith('https://api.stripe.com/')){const u=new URL(url);let data;if(u.pathname.includes('/checkout/sessions/'))data=u.pathname.endsWith('/line_items')?await client.lineItems():await client.session(u.pathname.split('/').at(-1));else data=(await client.call('stripe','GET',u.pathname+u.search)).data;return Response.json(data);}
    if(options.method==='GET'){const b=runtimeClient.sessionClient.creationBody();return Response.json({session_id:'trs_fixture',config:{...b,toolkits:{enabled:b.toolkits.enable},tools:Object.fromEntries(Object.keys(accounts).map(k=>[k,{enabled:[]}])),manage_connections:{enabled:false}}});}
    const b=JSON.parse(options.body),u=new URL(b.endpoint);for(const p of b.parameters||[])if(p.in==='query')u.searchParams.append(p.name,p.value);
    const path=u.pathname+u.search;let data;
@@ -58,6 +61,7 @@ async function fixture(useConsumer=false){
 }
 let count=0;async function test(name,fn,useConsumer=false){const f=await fixture(useConsumer);try{await fn(f);console.log('PASS',name);count++;}finally{f.db.close();}}
 try{
+ await test('direct restricted Stripe plus Google consumer completes delivery once',async f=>{f.event('evt_hybrid');await f.run();assert.equal(f.ledger.get('cs_valid').state,'DRAFT_READY');clock+=2000;await f.run();assert.equal(f.ledger.get('cs_valid').state,'SENT');assert.deepEqual(f.calls,['draft','send']);},'hybrid');
  await test('consumer session proxy completes exact payment-to-draft-to-send once',async f=>{f.event('evt_consumer');await f.run();assert.equal(f.ledger.get('cs_valid').state,'DRAFT_READY');clock+=2000;await f.run();assert.equal(f.ledger.get('cs_valid').state,'SENT');assert.deepEqual(f.calls,['draft','send']);},true);
  await test('idle queue clears alarm without any provider calls',async f=>{f.client.identity=async()=>{throw Error('unexpected identity');};await f.run();assert.equal(f.alarm,null);});
  await test('future work schedules exactly due without provider calls',async f=>{f.client.identity=async()=>{throw Error('unexpected identity');};f.ledger.sql.exec('INSERT INTO pending_sessions VALUES(?,?)','cs_valid',clock+900000);await f.run();assert.equal(f.alarm,clock+900000);});

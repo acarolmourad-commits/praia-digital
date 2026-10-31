@@ -4,11 +4,13 @@ const ORIGIN='https://backend.composio.dev';
 const KINDS=new Set(['stripe','gmail','googledrive']);
 const same=(a,b)=>JSON.stringify([...a].sort())===JSON.stringify([...b].sort());
 export class ConsumerSession {
- constructor(env,policy,fetcher=fetch,proxyMode=false){
+ constructor(env,policy,fetcher=fetch,proxyMode=false,kinds=[...KINDS]){
+  if(!same(kinds,[...KINDS])&&!same(kinds,['gmail','googledrive']))throw Error('CONSUMER_KINDS_INVALID');
+  this.kinds=[...kinds];
   this.proxyMode=proxyMode;
   this.env=env;this.fetcher=fetcher;this.policy=structuredClone(policy);this.checked=false;
   if(!/^(?:org|ok)_[A-Za-z0-9_-]+$/.test(env.COMPOSIO_ORG_ID||'')||!/^(?:proj|pr)_[A-Za-z0-9_-]+$/.test(env.COMPOSIO_CONSUMER_PROJECT_ID||'')||!env.COMPOSIO_USER_API_KEY||!env.COMPOSIO_USER_ID)throw Error('CONSUMER_SCOPE_REQUIRED');
-  if(!policy||!same(Object.keys(policy),[...KINDS]))throw Error('CONSUMER_POLICY_REQUIRED');
+  if(!policy||!same(Object.keys(policy),this.kinds))throw Error('CONSUMER_POLICY_REQUIRED');
   this.toolToKind=new Map();
   for(const [kind,p] of Object.entries(policy)){
    if(!Array.isArray(p.tools)||(!proxyMode&&!p.tools.length)||p.tools.length>20||typeof p.account!=='string'||!/^(?:ca|coup)_[A-Za-z0-9_-]+$/.test(p.account))throw Error('CONSUMER_ACCOUNT_OR_TOOLS_INVALID');
@@ -21,10 +23,10 @@ export class ConsumerSession {
   if(!response.ok)throw Error('CONSUMER_HTTP_'+response.status);
   return response.json();
  }
- creationBody(){return{user_id:this.env.COMPOSIO_USER_ID,toolkits:{enable:[...KINDS]},connected_accounts:Object.fromEntries(Object.entries(this.policy).map(([k,v])=>[k,[v.account]])),tools:Object.fromEntries(Object.entries(this.policy).map(([k,v])=>[k,{enable:v.tools}])),instant:false,manage_connections:{enable:false},workbench:{enable:false},proxy_execute:{enable:this.proxyMode},search:{enable:false},execute:{enable_multi_execute:false},preload:{tools:[...this.toolToKind.keys()]},experimental:{no_elicitation_support_fallback:'deny'}};}
+ creationBody(){return{user_id:this.env.COMPOSIO_USER_ID,toolkits:{enable:this.kinds},connected_accounts:Object.fromEntries(Object.entries(this.policy).map(([k,v])=>[k,[v.account]])),tools:Object.fromEntries(Object.entries(this.policy).map(([k,v])=>[k,{enable:v.tools}])),instant:false,manage_connections:{enable:false},workbench:{enable:false},proxy_execute:{enable:this.proxyMode},search:{enable:false},execute:{enable_multi_execute:false},preload:{tools:[...this.toolToKind.keys()]},experimental:{no_elicitation_support_fallback:'deny'}};}
  verifyConfig(config){
   if(!config||config.user_id!==this.env.COMPOSIO_USER_ID||config.instant!==false||config.manage_connections?.enabled!==false||config.workbench?.enable!==false||config.proxy_execute?.enable!==this.proxyMode||config.search?.enable!==false||config.execute?.enable_multi_execute!==false)throw Error('CONSUMER_CONFIG_DRIFT');
-  if(!Array.isArray(config.toolkits?.enabled)||!same(config.toolkits.enabled,[...KINDS])||!same(Object.keys(config.tools||{}),[...KINDS])||!same(Object.keys(config.connected_accounts||{}),[...KINDS]))throw Error('CONSUMER_SCOPE_DRIFT');
+  if(!Array.isArray(config.toolkits?.enabled)||!same(config.toolkits.enabled,this.kinds)||!same(Object.keys(config.tools||{}),this.kinds)||!same(Object.keys(config.connected_accounts||{}),this.kinds))throw Error('CONSUMER_SCOPE_DRIFT');
   for(const [kind,p] of Object.entries(this.policy))if(!Array.isArray(config.tools[kind]?.enabled)||Object.hasOwn(config.tools[kind],'disabled')||!Array.isArray(config.connected_accounts[kind])||!same(config.tools[kind].enabled,p.tools)||!same(config.connected_accounts[kind],[p.account]))throw Error('CONSUMER_TOOL_OR_ACCOUNT_DRIFT');
  }
  async createForSetup(){
