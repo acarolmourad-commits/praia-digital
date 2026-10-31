@@ -1,5 +1,5 @@
-/* Consumer session transport only. Not wired into fulfillment until concrete
- * provider schemas are verified. No legacy ca_ connection or proxy fallback. */
+/* Consumer session transport. Runtime activation requires verified concrete
+ * provider identities, configuration and end-to-end TEST. Account provenance is verified within consumer scope; no legacy proxy fallback. */
 const ORIGIN='https://backend.composio.dev';
 const KINDS=new Set(['stripe','gmail','googledrive']);
 const same=(a,b)=>JSON.stringify([...a].sort())===JSON.stringify([...b].sort());
@@ -7,11 +7,11 @@ export class ConsumerSession {
  constructor(env,policy,fetcher=fetch,proxyMode=false){
   this.proxyMode=proxyMode;
   this.env=env;this.fetcher=fetcher;this.policy=structuredClone(policy);this.checked=false;
-  if(!/^org_[A-Za-z0-9_-]+$/.test(env.COMPOSIO_ORG_ID||'')||!/^proj_[A-Za-z0-9_-]+$/.test(env.COMPOSIO_CONSUMER_PROJECT_ID||'')||!env.COMPOSIO_USER_API_KEY||!env.COMPOSIO_USER_ID)throw Error('CONSUMER_SCOPE_REQUIRED');
+  if(!/^(?:org|ok)_[A-Za-z0-9_-]+$/.test(env.COMPOSIO_ORG_ID||'')||!/^(?:proj|pr)_[A-Za-z0-9_-]+$/.test(env.COMPOSIO_CONSUMER_PROJECT_ID||'')||!env.COMPOSIO_USER_API_KEY||!env.COMPOSIO_USER_ID)throw Error('CONSUMER_SCOPE_REQUIRED');
   if(!policy||!same(Object.keys(policy),[...KINDS]))throw Error('CONSUMER_POLICY_REQUIRED');
   this.toolToKind=new Map();
   for(const [kind,p] of Object.entries(policy)){
-   if(!Array.isArray(p.tools)||(!proxyMode&&!p.tools.length)||p.tools.length>20||typeof p.account!=='string'||!p.account||/^ca_/.test(p.account))throw Error('CONSUMER_ACCOUNT_OR_TOOLS_INVALID');
+   if(!Array.isArray(p.tools)||(!proxyMode&&!p.tools.length)||p.tools.length>20||typeof p.account!=='string'||!/^(?:ca|coup)_[A-Za-z0-9_-]+$/.test(p.account))throw Error('CONSUMER_ACCOUNT_OR_TOOLS_INVALID');
    for(const tool of p.tools){if(!/^[A-Z][A-Z0-9_]+$/.test(tool)||tool.startsWith('COMPOSIO_')||this.toolToKind.has(tool))throw Error('CONSUMER_TOOL_INVALID');this.toolToKind.set(tool,kind);}
   }
  }

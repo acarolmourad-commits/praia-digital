@@ -10,7 +10,7 @@ The public repository contains generic code and synthetic tests only. Private ca
 ## Consumer session, not the legacy proxy
 `app/consumer-composio.mjs` is the coordinator default. It calls `/api/v3.1/tool_router/session/{id}/proxy_execute` with `toolkit_slug`, native endpoint, method, parameters and body. It does **not** put developer connection IDs into legacy proxy requests. `drive` maps to `googledrive`.
 
-Consumer requests use `x-user-api-key`, `x-org-id` and `x-project-id`. The user key can reach other projects/apps accessible to its owner; scope headers select a context, not a narrower credential. Keep this broader authorization explicit. Never put the key in chat, tool logs, command-line literals, screenshots, Git or exported session config.
+Consumer requests use `x-user-api-key`, `x-org-id` and `x-project-id`. Verified API versions can return `ok_`/`pr_` scope nano IDs as well as documented `org_`/`proj_` examples. Consumer connection IDs can also be `ca_`; provenance within the resolved consumer user/project and authoritative identity checks matter, not the prefix alone. The user key can reach other projects/apps accessible to its owner; scope headers select a context, not a narrower credential. Keep this broader authorization explicit. Never put the key in chat, tool logs, command-line literals, screenshots, Git or exported session config.
 
 Provision and independently read back a session with exactly three verified account pins, no app-tool allowance, `instant:false`, connection management/workbench/search/multi-execute disabled and session proxy enabled. Tool restrictions do **not** constrain proxy endpoints: the local fixed route allowlist remains mandatory. No public generic proxy endpoint exists. Session config is checked before provider writes; missing/changed allowlists or account pins fail closed. Authentication/approval errors are never bypassed; expired sessions are not recreated automatically.
 
@@ -33,7 +33,7 @@ Store the owner-only private catalog as `application/octet-stream` with exact or
 - Already-delivered attachments cannot be recalled after a later refund. Gmail acceptance is not proof the buyer read the email.
 
 ## Verification
-Run Node24 `npm ci`, `npm test` (100 offline tests), `npm run build` (Wrangler dry-run only). Tests include SQLite persistence, paid/async/refund cases, private-byte validation, raw MIME tampering, ambiguous send, consumer scope/config drift and synthetic end-to-end coordinator flow.
+Run Node24 `npm ci`, `npm test` (102 offline tests), `npm run build` (Wrangler dry-run only). Tests include SQLite persistence, paid/async/refund cases, private-byte validation, raw MIME tampering, ambiguous send, consumer scope/config drift and synthetic end-to-end coordinator flow.
 
 PR CI also runs real local workerd signed-intake/duplicate/tampered-body checks with delivery disabled and synthetic credentials. The original runtime check passed after pinning the compatibility date to the installed binary; exact revised-head CI must also pass. This is not a real payment/email/provider test.
 
