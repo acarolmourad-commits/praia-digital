@@ -6,20 +6,19 @@ const TYPES=new Set(['checkout.session.completed','checkout.session.async_paymen
 export class AcademyLedger extends DurableObject {
  constructor(ctx,env){super(ctx,env);this.ctx=ctx;this.env=env;this.ledger=new Ledger(ctx.storage);}
  async intake(event){
-  return this.ctx.blockConcurrencyWhile(async()=>{
+  // Storage input/output gates protect this storage-only sequence.
    const record=this.ledger.recordEvent(event);
    const due=Date.now()+1000, existing=await this.ctx.storage.getAlarm();
    if(existing===null||existing>due)await this.ctx.storage.setAlarm(due);
    return {persisted:true,event_id:record.id};
-  });
  }
  async wake(){
   if(this.env.AUTOMATIC_DELIVERY_ENABLED!=='true')return;
-  await new Coordinator(this.ledger,this.ctx.storage,this.env,undefined,fn=>this.ctx.blockConcurrencyWhile(fn)).schedule();
+  await new Coordinator(this.ledger,this.ctx.storage,this.env).schedule();
  }
  async alarm(){
   if(this.env.AUTOMATIC_DELIVERY_ENABLED!=='true')return;
-  await new Coordinator(this.ledger,this.ctx.storage,this.env,undefined,fn=>this.ctx.blockConcurrencyWhile(fn)).run();
+  await new Coordinator(this.ledger,this.ctx.storage,this.env).run();
  }
 }
 export default {async scheduled(event,env,ctx){

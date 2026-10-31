@@ -9,7 +9,7 @@ WEBHOOK_INTAKE_ENABLED=false and AUTOMATIC_DELIVERY_ENABLED=false by default. Th
 ## Executed evidence
 - 81 passing local tests:12 SQLite +8 proxy/signature +22 payment +25 Gmail +4 Drive +10 integrated coordinator.
 - Wrangler4.156.0 deploy --dry-run bundle succeeds; no deployment occurred.
-- Real workerd local execution blocked by environment uv_interface_addresses permission error. One supported escalation also failed during environment setup on a protected runtime path. No workaround attempted. Runtime smoke script is app/runtime.smoke.mjs and must be run in a supported local environment before release.
+- Real workerd synthetic intake test passed in GitHub Actions (run41222736088): durable signed event intake, duplicate intake, tampered signature rejection and delivery-disabled state. Local development-container execution was blocked; CI used the supported Ubuntu runner. This does not exercise real Composio/Gmail or paid delivery.
 - Node mocks are not evidence of Cloudflare CPU compliance or provider OAuth/MIME interoperability.
 
 ## Required actual configuration and approval
@@ -25,7 +25,7 @@ WEBHOOK_INTAKE_ENABLED=false and AUTOMATIC_DELIVERY_ENABLED=false by default. Th
 Cloudflare's authenticated API supports PUT /accounts/{account_id}/workers/scripts/{script_name}/secrets with name/type=secret_text/text; text is writeOnly and sensitive. That does NOT make a literal secret in a tool-call argument/history safe. Preferred: owner enters newly created key in Cloudflare's protected dashboard field, or an explicitly approved authenticated local process pipes it to `wrangler secret put`/bulk via stdin without echo, command-line literal, file in Git, log, screenshot or chat. Do not extract credentials from interactive connector/session storage. No existing secret has been read or transferred here. No new Cloudflare deployment token is needed if the approved connector performs deployment; if GitHub deploy is later desired, its additional token grant is separate.
 
 ## Remaining engineering/release limits
-Local runtime/CPU testing still pending; real Composio binary host/shape and Gmail normalization must be verified with authorized TEST accounts. Alarm rearming covers provider outages but free-quota exhaustion can still delay work; no instant SLA. Durable backups/retention/monitoring need operational validation. Existing event handlers cannot recall attachments already sent after later refund. Default logging is disabled to avoid raw PII exposure; add sanitized metrics/owner alerts before launch without dumping provider responses.
+Production CPU/memory and provider testing still pending; real Composio binary host/shape and Gmail normalization must be verified with authorized TEST accounts. Alarm rearming covers provider outages but free-quota exhaustion can still delay work; no instant SLA. Durable backups/retention/monitoring need operational validation. Existing event handlers cannot recall attachments already sent after later refund. Default logging is disabled to avoid raw PII exposure; add sanitized metrics/owner alerts before launch without dumping provider responses.
 
 Official schema sources:
 https://docs.composio.dev/reference/api-reference/tools/postToolsExecuteProxy

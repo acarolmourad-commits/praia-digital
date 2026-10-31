@@ -3,7 +3,7 @@ import {validateSession} from './payment.mjs';
 import {GmailDelivery} from './gmail.mjs';
 import {processOne} from '../durable/process.mjs';
 export class Coordinator {
- constructor(ledger,storage,env,client=new Composio(env),scheduleGuard=fn=>fn()){this.scheduleGuard=scheduleGuard;this.ledger=ledger;this.storage=storage;this.env=env;this.client=client;this.ledger.sql.exec('CREATE TABLE IF NOT EXISTS pending_sessions(id TEXT PRIMARY KEY,due INTEGER NOT NULL)');}
+ constructor(ledger,storage,env,client=new Composio(env)){this.ledger=ledger;this.storage=storage;this.env=env;this.client=client;this.ledger.sql.exec('CREATE TABLE IF NOT EXISTS pending_sessions(id TEXT PRIMARY KEY,due INTEGER NOT NULL)');}
  async catalog(){
   const sha=this.env.CATALOG_SHA256;
   if(!/^[a-f0-9]{64}$/.test(sha||''))throw Error('CATALOG_NOT_CONFIGURED');
@@ -16,7 +16,7 @@ export class Coordinator {
   await this.storage.put('approved-catalog',{sha,data:parsed});return parsed;
  }
  nextDue(){return this.ledger.rows("SELECT MIN(due) AS due FROM (SELECT due FROM events WHERE state='PENDING' UNION ALL SELECT MAX(due,lease_until) FROM orders WHERE state NOT IN ('SENT','HELD','REVOKED') UNION ALL SELECT due FROM pending_sessions)")[0]?.due??null;}
- async schedule(now=Date.now()){return this.scheduleGuard(async()=>{const due=this.nextDue();if(due===null)await this.storage.deleteAlarm();else await this.storage.setAlarm(Math.max(now+1000,due));return due;});}
+ async schedule(now=Date.now()){const due=this.nextDue();if(due===null)await this.storage.deleteAlarm();else await this.storage.setAlarm(Math.max(now+1000,due));return due;}
  async run(now=Date.now()){
   if(this.env.AUTOMATIC_DELIVERY_ENABLED!=='true')return;
   const due=await this.schedule(now);
