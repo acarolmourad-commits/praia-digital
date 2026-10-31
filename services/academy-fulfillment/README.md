@@ -1,40 +1,51 @@
-# Automatic Academy delivery — local preparation checkpoint
-2026-10-31. No external resources/credentials have been created. No mail sent.
+# Academy fulfillment runtime — disabled draft
 
-## Concrete implementation
-Worker entrypoint app/worker.mjs verifies raw Stripe signatures and durably records supported events in SQLite DO. app/coordinator.mjs processes bounded isolated events, delayed payments and outbox states with rearmed alarms. app/composio.mjs uses official v3.1 Proxy Execute wire schema with pinned connected accounts and fixed internal route allowlists; it validates owner-only Drive permissions before/after binary download and exact size/hash. app/payment.mjs performs authoritative payment/account/SKU/price checks. app/gmail.mjs builds and validates owned MIME, exact recipient/attachment, searches actual Sent messages and does not blindly resend ambiguous sends. durable/ is the transactional ledger/state machine.
+No website behavior or live delivery is changed by this directory. There is no deployment workflow. `WEBHOOK_INTAKE_ENABLED`, `AUTOMATIC_DELIVERY_ENABLED` and `WATCHDOG_ENABLED` default to false.
 
-WEBHOOK_INTAKE_ENABLED=false and AUTOMATIC_DELIVERY_ENABLED=false by default. They MUST remain false until explicit grants, private configuration and successful live-provider TEST proof. No end-to-end production readiness claimed.
+## Architecture
+Stripe signs exact webhook bytes → Worker verifies signature, timestamp, merchant/mode and event scope → SQLite Durable Object records events and orders → alarms process bounded work → authenticated Composio **consumer session proxy** revalidates Stripe payment and retrieves owner-only Drive bytes → Gmail draft is verified and sent to the verified buyer.
 
-## Executed evidence
-- 81 passing local tests:12 SQLite +8 proxy/signature +22 payment +25 Gmail +4 Drive +10 integrated coordinator.
-- Wrangler4.156.0 deploy --dry-run bundle succeeds; no deployment occurred.
-- Real workerd synthetic intake test passed in GitHub Actions (run41222736088): durable signed event intake, duplicate intake, tampered signature rejection and delivery-disabled state. Local development-container execution was blocked; CI used the supported Ubuntu runner. This does not exercise real Composio/Gmail or paid delivery.
-- Node mocks are not evidence of Cloudflare CPU compliance or provider OAuth/MIME interoperability.
+The public repository contains generic code and synthetic tests only. Private catalog, connection IDs, package files, buyer data and all credentials belong outside Git. Historical public course copies are not protected by this runtime.
 
-## Required actual configuration and approval
-1. Confirm FREE account plan and hard-limit behavior, one Worker/SQLite namespace, no paid addons or plan upgrade.
-2. Register exact TEST then LIVE Stripe webhook events; place whsec only in Cloudflare secret binding.
-3. Dedicated Composio project containing only required Stripe, Drive and Gmail connections. A scoped project key granting Proxy execute Write-only; it still permits arbitrary API actions under those connections if stolen, so narrow upstream RAK/OAuth and project isolation are required. No auth-config/connection/webhook-management grant needed at runtime.
-4. Stripe readonly session/lineitem/PI/charge/dispute/account; Drive readonly file metadata/permissions/download; Gmail compose/send and read-Sent. New OAuth consent or RAK creation needs exact approval.
-5. Pin connection IDs, Composio user identity, merchant/mode, sender, TEST buyer allowlist. Keep all private IDs and approved70offer map outside Git.
-6. Owner-only private catalog JSON, pinned bytes/SHA, and an explicit approved presigned-download hostname allowlist observed from authenticated Composio response. Do not wildcard arbitrary download origins.
-7. TEST from actual signed Stripe event to commercial mailbox with exact ZIP, duplicates, async/failure, permission/hash drift, refunds and ambiguous-send recovery. Only then enable LIVE after approval.
+## Consumer session, not the legacy proxy
+`app/consumer-composio.mjs` is the coordinator default. It calls `/api/v3.1/tool_router/session/{id}/proxy_execute` with `toolkit_slug`, native endpoint, method, parameters and body. It does **not** put developer connection IDs into legacy proxy requests. `drive` maps to `googledrive`.
 
-## Secret transfer: supported route and limit
-Cloudflare's authenticated API supports PUT /accounts/{account_id}/workers/scripts/{script_name}/secrets with name/type=secret_text/text; text is writeOnly and sensitive. That does NOT make a literal secret in a tool-call argument/history safe. Preferred: owner enters newly created key in Cloudflare's protected dashboard field, or an explicitly approved authenticated local process pipes it to `wrangler secret put`/bulk via stdin without echo, command-line literal, file in Git, log, screenshot or chat. Do not extract credentials from interactive connector/session storage. No existing secret has been read or transferred here. No new Cloudflare deployment token is needed if the approved connector performs deployment; if GitHub deploy is later desired, its additional token grant is separate.
+Consumer requests use `x-user-api-key`, `x-org-id` and `x-project-id`. The user key can reach other projects/apps accessible to its owner; scope headers select a context, not a narrower credential. Keep this broader authorization explicit. Never put the key in chat, tool logs, command-line literals, screenshots, Git or exported session config.
 
-## Remaining engineering/release limits
-Production CPU/memory and provider testing still pending; real Composio binary host/shape and Gmail normalization must be verified with authorized TEST accounts. Alarm rearming covers provider outages but free-quota exhaustion can still delay work; no instant SLA. Durable backups/retention/monitoring need operational validation. Existing event handlers cannot recall attachments already sent after later refund. Default logging is disabled to avoid raw PII exposure; add sanitized metrics/owner alerts before launch without dumping provider responses.
+Provision and independently read back a session with exactly three verified account pins, no app-tool allowance, `instant:false`, connection management/workbench/search/multi-execute disabled and session proxy enabled. Tool restrictions do **not** constrain proxy endpoints: the local fixed route allowlist remains mandatory. No public generic proxy endpoint exists. Session config is checked before provider writes; missing/changed allowlists or account pins fail closed. Authentication/approval errors are never bypassed; expired sessions are not recreated automatically.
 
-Official schema sources:
-https://docs.composio.dev/reference/api-reference/tools/postToolsExecuteProxy
-https://docs.composio.dev/reference/authenticating-to-composio/project-api-key-permissions
-https://developers.cloudflare.com/workers/configuration/secrets/
-https://developers.cloudflare.com/durable-objects/api/alarms/
-https://developers.google.com/workspace/gmail/api/guides/sending
+Configuration (private values, no examples of real IDs):
+- `COMPOSIO_USER_API_KEY`, `COMPOSIO_ORG_ID`, `COMPOSIO_CONSUMER_PROJECT_ID`, `COMPOSIO_USER_ID`, `COMPOSIO_CONSUMER_SESSION_ID`.
+- `COMPOSIO_CONSUMER_ACCOUNTS_JSON`: exact account pins keyed `stripe`, `gmail`, `googledrive`, verified in that consumer scope.
+- `STRIPE_ACCOUNT_ID`, `STRIPE_MODE`, `STRIPE_WEBHOOK_SECRET`, `SENDER_EMAIL`, `TEST_BUYER_EMAIL`.
+- `CATALOG_FILE_ID`, `CATALOG_SHA256`, `CATALOG_BYTES`, `EXPECTED_OFFER_COUNT`, `COMPOSIO_DOWNLOAD_HOSTS_JSON`.
 
-## Quota and recovery gates
-No provider calls occur when idle or before work is due. Each alarm handles at most2 events,2 pending sessions,1 order; exact Sent search is capped at2 results with incomplete searches held. The watchdog scheduled handler only calls custom wake() RPC to schedule persisted due work; it never directly processes orders. Production configuration must explicitly enable an hourly cron (e.g. 17 * * * *) and WATCHDOG_ENABLED after approval, so exhausted alarm retries can recover after daily quota reset. Defaults have no cron and watchdog is disabled. Verify real Free-plan quotas and monitoring; no guaranteed immediate delivery.
+Store the owner-only private catalog as `application/octet-stream` with exact original UTF-8 JSON bytes. Catalog maps approved PaymentLink IDs to immutable product/price/edition/package metadata. Never hash reserialized JSON. Actual Composio binary response and download hostname must be verified, not guessed or wildcarded.
 
-Store the private catalog as an owner-only application/octet-stream Drive file with exact original UTF-8 JSON bytes. The download adapter requires Composio binary_data and verifies those exact bytes; it must never hash reserialized provider JSON. Actual provider binary behavior is a TEST release gate.
+## Safety and limitations
+- Fresh payment/session/line-item/charge checks; exact price/product/quantity and BRL integration amount. Foreign presentment cannot override base-price validation.
+- Unpaid, failed, refunded, disputed or wrong-account payments do not deliver.
+- Private Drive ownership/permissions before and after exact byte/hash download.
+- Durable order deduplication, leases and compare-and-set state. Stable Message-ID and exact Sent reconciliation. Ambiguous sends are held, never blindly repeated; no exactly-once claim.
+- Two events, two pending sessions and one order per alarm; bounded Sent search. Empty queues make no provider calls.
+- Input/output storage gates protect storage-only scheduling; provider I/O is outside storage critical sections.
+- Custom `wake()` only schedules persisted work. Before production explicitly configure an hourly watchdog cron (for example `17 * * * *`) and enable its flag after approval. This recovers lost alarm retries after quota reset; it does not guarantee immediate delivery.
+- Already-delivered attachments cannot be recalled after a later refund. Gmail acceptance is not proof the buyer read the email.
+
+## Verification
+Run Node24 `npm ci`, `npm test` (100 offline tests), `npm run build` (Wrangler dry-run only). Tests include SQLite persistence, paid/async/refund cases, private-byte validation, raw MIME tampering, ambiguous send, consumer scope/config drift and synthetic end-to-end coordinator flow.
+
+PR CI also runs real local workerd signed-intake/duplicate/tampered-body checks with delivery disabled and synthetic credentials. The original runtime check passed after pinning the compatibility date to the installed binary; exact revised-head CI must also pass. This is not a real payment/email/provider test.
+
+## Release gates — still blocked until verified
+Actual Free-plan entitlement/CPU/memory/quota behavior; safely stored approved credentials; intended identities for every consumer connection; successful authenticated exact-byte catalog/Drive and Gmail MIME TEST; test-mode signed payment to intended test mailbox; duplicates, delayed payments, failures, refund and ambiguous-send checks; hourly watchdog and sanitized operational alerts. No LIVE enablement until those gates and required approval are complete. Do not retry blocked Google OAuth by changing account scopes without authorization.
+
+Official references:
+- https://docs.composio.dev/docs/consumer-agents
+- https://docs.composio.dev/reference/authenticating-to-composio
+- https://docs.composio.dev/reference/api-reference/tool-router/postToolRouterSession
+- https://docs.composio.dev/reference/api-reference/tool-router/postToolRouterSessionBySessionIdProxyExecute
+- https://docs.composio.dev/docs/extending-sessions/proxy-execute
+- https://developers.cloudflare.com/durable-objects/best-practices/rules-of-durable-objects/
+- https://developers.cloudflare.com/durable-objects/api/alarms/
+- https://developers.google.com/workspace/gmail/api/guides/sending

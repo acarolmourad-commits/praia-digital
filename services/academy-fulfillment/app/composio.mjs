@@ -2,9 +2,7 @@
 export class Composio {
  constructor(env,fetcher=fetch){this.env=env;this.fetcher=fetcher;}
  async call(kind,method,path,body){
-  const allowed={stripe:[/^GET \/v1\/account$/, /^GET \/v1\/checkout\/sessions\/cs_[A-Za-z0-9_]+(?:\/line_items)?$/, /^GET \/v1\/payment_intents\/pi_[A-Za-z0-9]+$/, /^GET \/v1\/charges\/ch_[A-Za-z0-9]+$/, /^GET \/v1\/disputes\/dp_[A-Za-z0-9]+$/],drive:[/^GET \/drive\/v3\/files\/[A-Za-z0-9_-]+$/],gmail:[/^GET \/gmail\/v1\/users\/me\/profile$/, /^POST \/gmail\/v1\/users\/me\/drafts$/, /^POST \/gmail\/v1\/users\/me\/drafts\/send$/, /^GET \/gmail\/v1\/users\/me\/(drafts|messages)(?:\/[A-Za-z0-9_-]+)?$/]};
-  const url=new URL(path,'https://placeholder.invalid');
-  if(!allowed[kind]?.some(r=>r.test(method+' '+url.pathname))||url.origin!=='https://placeholder.invalid')throw Error('DISALLOWED_PROVIDER_ROUTE');
+  const {url}=providerRoute(kind,method,path);
   const id=this.env[kind.toUpperCase()+'_CONNECTION_ID'];
   if(!/^ca_[A-Za-z0-9_-]+$/.test(id||'')||!this.env.COMPOSIO_API_KEY||!this.env.COMPOSIO_USER_ID)throw Error('PROVIDER_NOT_CONFIGURED');
   const host={stripe:'https://api.stripe.com',drive:'https://www.googleapis.com',gmail:'https://gmail.googleapis.com'}[kind];
@@ -44,4 +42,11 @@ export class Composio {
   return bytes;
  }
 
+}
+
+export function providerRoute(kind,method,path){
+  const allowed={stripe:[/^GET \/v1\/account$/, /^GET \/v1\/checkout\/sessions\/cs_[A-Za-z0-9_]+(?:\/line_items)?$/, /^GET \/v1\/payment_intents\/pi_[A-Za-z0-9]+$/, /^GET \/v1\/charges\/ch_[A-Za-z0-9]+$/, /^GET \/v1\/disputes\/dp_[A-Za-z0-9]+$/],drive:[/^GET \/drive\/v3\/files\/[A-Za-z0-9_-]+$/],gmail:[/^GET \/gmail\/v1\/users\/me\/profile$/, /^POST \/gmail\/v1\/users\/me\/drafts$/, /^POST \/gmail\/v1\/users\/me\/drafts\/send$/, /^GET \/gmail\/v1\/users\/me\/(drafts|messages)(?:\/[A-Za-z0-9_-]+)?$/]};
+  const url=new URL(path,'https://placeholder.invalid');
+  if(!allowed[kind]?.some(r=>r.test(method+' '+url.pathname))||url.origin!=='https://placeholder.invalid')throw Error('DISALLOWED_PROVIDER_ROUTE');
+ return {url};
 }

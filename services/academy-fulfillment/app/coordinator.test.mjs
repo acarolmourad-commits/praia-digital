@@ -4,8 +4,9 @@ import assert from 'node:assert/strict';
 import {DatabaseSync} from 'node:sqlite';
 import {Ledger} from '../durable/store.mjs';
 import {Coordinator} from './coordinator.mjs';
+import {ConsumerComposio} from './consumer-composio.mjs';
 const realNow=Date.now;let clock=1800000000000;Date.now=()=>clock;
-async function fixture(){
+async function fixture(useConsumer=false){
  const db=new DatabaseSync(':memory:'),kv=new Map(),drafts=new Map(),sent=new Map(),calls=[];let alarm=null;
  const storage={sql:{exec(q,...a){const p=db.prepare(q);return p.columns().length?p.all(...a):(p.run(...a),[]);}},transactionSync(fn){db.exec('BEGIN IMMEDIATE');try{const r=fn();db.exec('COMMIT');return r;}catch(e){db.exec('ROLLBACK');throw e;}},get:async k=>kv.get(k),put:async(k,v)=>kv.set(k,v),deleteAlarm:async()=>{alarm=null;},setAlarm:async n=>{alarm=n;}};
  const ledger=new Ledger(storage),zip=new TextEncoder().encode('PK fixture private file bytes');
@@ -32,12 +33,32 @@ async function fixture(){
   }
   throw Error('UNEXPECTED_FIXTURE_ROUTE '+path);
  }};
- const c=new Coordinator(ledger,storage,env,client);
+ let runtimeClient=client;
+ if(useConsumer){
+  const accounts={stripe:'coup_stripe_fixture',gmail:'coup_gmail_fixture',googledrive:'coup_drive_fixture'};
+  const consumerEnv={...env,COMPOSIO_ORG_ID:'org_fixture',COMPOSIO_CONSUMER_PROJECT_ID:'proj_fixture',COMPOSIO_USER_API_KEY:'fixture-user-key',COMPOSIO_USER_ID:'fixture-owner',COMPOSIO_CONSUMER_SESSION_ID:'trs_fixture',COMPOSIO_CONSUMER_ACCOUNTS_JSON:JSON.stringify(accounts)};
+  runtimeClient=new ConsumerComposio(consumerEnv,async(url,options)=>{
+   if(options.method==='GET'){const b=runtimeClient.sessionClient.creationBody();return Response.json({session_id:'trs_fixture',config:{...b,toolkits:{enabled:b.toolkits.enable},tools:Object.fromEntries(Object.keys(accounts).map(k=>[k,{enabled:[]}])),manage_connections:{enabled:false}}});}
+   const b=JSON.parse(options.body),u=new URL(b.endpoint);for(const p of b.parameters||[])if(p.in==='query')u.searchParams.append(p.name,p.value);
+   const path=u.pathname+u.search;let data;
+   if(u.pathname==='/gmail/v1/users/me/profile')data={emailAddress:env.SENDER_EMAIL};
+   else if(b.toolkit_slug==='stripe'&&u.pathname.includes('/checkout/sessions/'))data=u.pathname.endsWith('/line_items')?await client.lineItems():await client.session(u.pathname.split('/').at(-1));
+   else if(u.pathname==='/gmail/v1/users/me/drafts'&&b.method==='POST')data=await client.draft(b.body.message.raw);
+   else if(u.pathname==='/gmail/v1/users/me/drafts/send')data=await client.sendDraft(b.body.id);
+   else data=(await client.call(b.toolkit_slug,b.method,path)).data;
+   return Response.json({result_type:'completed',status:200,data});
+  });
+  // Binary metadata/hash adapter has separate tests; this fixture focuses on
+  // authoritative payment and exact Gmail MIME through actual session proxy.
+  runtimeClient.downloadVerifiedZip=client.downloadVerifiedZip;
+ }
+ const c=new Coordinator(ledger,storage,env,runtimeClient);
  const event=(id,type='checkout.session.completed',object='cs_valid',created=1)=>ledger.recordEvent({id,type,object_id:object,created});
  return{db,kv,ledger,client,c,calls,charge,sessions,session,event,drafts,sent,get alarm(){return alarm;},run:()=>c.run(clock)};
 }
-let count=0;async function test(name,fn){const f=await fixture();try{await fn(f);console.log('PASS',name);count++;}finally{f.db.close();}}
+let count=0;async function test(name,fn,useConsumer=false){const f=await fixture(useConsumer);try{await fn(f);console.log('PASS',name);count++;}finally{f.db.close();}}
 try{
+ await test('consumer session proxy completes exact payment-to-draft-to-send once',async f=>{f.event('evt_consumer');await f.run();assert.equal(f.ledger.get('cs_valid').state,'DRAFT_READY');clock+=2000;await f.run();assert.equal(f.ledger.get('cs_valid').state,'SENT');assert.deepEqual(f.calls,['draft','send']);},true);
  await test('idle queue clears alarm without any provider calls',async f=>{f.client.identity=async()=>{throw Error('unexpected identity');};await f.run();assert.equal(f.alarm,null);});
  await test('future work schedules exactly due without provider calls',async f=>{f.client.identity=async()=>{throw Error('unexpected identity');};f.ledger.sql.exec('INSERT INTO pending_sessions VALUES(?,?)','cs_valid',clock+900000);await f.run();assert.equal(f.alarm,clock+900000);});
  await test('real validator and MIME draft then send once across duplicate events',async f=>{f.event('evt_one');await f.run();assert.equal(f.ledger.get('cs_valid').state,'DRAFT_READY');clock+=2000;await f.run();assert.equal(f.ledger.get('cs_valid').state,'SENT');f.event('evt_two');await f.run();assert.deepEqual(f.calls,['draft','send']);});
