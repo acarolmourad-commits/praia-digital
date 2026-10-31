@@ -1,0 +1,41 @@
+name: Academy fulfillment offline checks
+on:
+  pull_request:
+    paths:
+      - 'services/academy-fulfillment/**'
+      - '.github/workflows/academy-fulfillment-test.yml'
+permissions:
+  contents: read
+jobs:
+  offline-runtime:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: services/academy-fulfillment
+    env:
+      WRANGLER_SEND_METRICS: 'false'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm ci --no-audit --no-fund
+      - run: npm test
+      - run: npm run build
+      - name: Local workerd signed intake (synthetic fixtures only)
+        run: |
+          npx wrangler dev --local --port 8797 --ip 127.0.0.1 --var WEBHOOK_INTAKE_ENABLED:true --var STRIPE_WEBHOOK_SECRET:whsec_local_runtime_fixture --var STRIPE_ACCOUNT_ID:acct_fixture > "$RUNNER_TEMP/academy-local-runtime.log" 2>&1 &
+          PID=$!
+          trap 'kill "$PID" 2>/dev/null || true' EXIT
+          for attempt in $(seq 1 40); do
+            if curl --fail --silent http://127.0.0.1:8797/health >/dev/null; then break; fi
+            sleep 1
+          done
+          node app/runtime.smoke.mjs
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: academy-synthetic-runtime-log
+          path: ${{ runner.temp }}/academy-local-runtime.log
+          if-no-files-found: ignore
