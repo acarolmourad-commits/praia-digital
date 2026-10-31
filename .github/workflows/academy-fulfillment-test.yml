@@ -32,7 +32,7 @@ jobs:
             if curl --fail --silent http://127.0.0.1:8797/health >/dev/null; then break; fi
             sleep 1
           done
-          node app/runtime.smoke.mjs
+          node app/runtime.smoke.mjs || { cat "$RUNNER_TEMP/academy-local-runtime.log"; exit 1; }
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
