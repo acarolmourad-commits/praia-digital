@@ -50,6 +50,13 @@ async function homepage(page, width) {
   assert.equal(await page.locator('#produtos-comparacao').count(), 1);
   assert.equal(await page.locator('#planos-praia-digital').count(), 0, 'legacy plan injection must not duplicate comparison');
   assert.equal(await page.locator('#apps').count(), 0, 'legacy apps injection must not duplicate curated home content');
+  await page.locator('#produtos-comparacao summary').focus();
+  await page.keyboard.press('Enter');
+  assert.equal(await page.locator('#produtos-comparacao details').evaluate(el=>el.open),true);
+  assert.match(await page.locator('#academy').innerText(), /62 kits e 8 trilhas/);
+  assert.match(await page.locator('#academy').innerText(), /compra assistida/);
+  await page.locator('#academy').scrollIntoViewIfNeeded();
+  await page.screenshot({path:path.join(output,`academy-${width}.png`)});
   assert.equal(await page.locator('#analise a[href="/apps/"]').count(), 1);
   assert.match(await page.locator('#produtos-comparacao').innerText(), /39\s*\/\s*imóvel\s*\/\s*mês/);
   assert.match(await page.locator('#produtos-comparacao').innerText(), /499\s*\/\s*anúncio\s*\/\s*plataforma/);
@@ -87,6 +94,7 @@ async function homepage(page, width) {
 
 async function searchJourney(page, width) {
   const query = 'apartamento em Santos com 2 quartos até R$ 500 mil';
+  await page.locator('#finalidade').selectOption('Venda');
   await page.locator('#smartsearch input[name="q"]').fill(query);
   await Promise.all([page.waitForURL(url => url.pathname === '/imoveis.html'), page.locator('#smartsearch button[type="submit"]').click()]);
   await page.locator('#lista-imoveis .imoveis-empty').waitFor();
@@ -126,6 +134,31 @@ async function searchJourney(page, width) {
   await page.waitForURL(url => url.pathname === '/imoveis.html');
   assert.equal(new URL(page.url()).searchParams.get('q'), 'casa em Bertioga');
   assert.equal(new URL(page.url()).searchParams.get('preco_max'), '3000000');
+  assert.match(await page.locator('#search-status').innerText(), /Finalidade pendente/);
+  await page.goto(origin+'/imoveis.html?q='+encodeURIComponent('apartamento de 2 quartos até R$ 700 mil em Bertioga'));
+  assert.equal(await page.locator('.property-card').count(),0);
+  await page.locator('#tipo-filtro').selectOption('Venda');
+  assert.equal(await page.locator('.property-card').count(),0);
+  await page.locator('#tipo-filtro').selectOption('Aluguel');
+  assert.equal(await page.locator('#preco-filtro').inputValue(),'');
+  assert(!/700/.test(await page.locator('#busca').inputValue()),'old purchase budget is removed from the query');
+  assert.match(await page.locator('#preco-label').innerText(), /R\$\/mês/);
+  await page.locator('#preco-filtro').fill('9000');
+  await page.locator('#preco-filtro').press('Tab');
+  assert.equal(await page.locator('.property-card').count(),1);
+  await page.screenshot({path:path.join(output,`rental-search-${width}.png`)});
+  await page.reload();
+  assert.equal(await page.locator('#preco-filtro').inputValue(),'9000');
+  await page.locator('#busca').fill('apartamento em Bertioga');
+  assert.equal(await page.locator('#tipo-filtro').inputValue(),'Aluguel');
+  await page.goto(origin+'/');
+  const questions=await page.locator('.ai-q').evaluateAll(links=>links.map(a=>({url:a.href,question:a.textContent.split('"')[1]})));
+  assert.equal(new Set(questions.map(q=>q.url)).size,4);
+  for(const q of questions){
+    await page.goto(q.url);
+    assert.equal(await page.locator('#msg').inputValue(),q.question);
+    assert.equal(await page.locator('#chat .user').count(),0,'prefill never submits');
+  }
 }
 
 async function contactAndCases(page, width) {

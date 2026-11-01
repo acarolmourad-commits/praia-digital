@@ -28,8 +28,11 @@
     for (const [re, type] of [[/\b(?:apartamentos?|aptos?|apes?)\b/g,'apartamento'],[/\bcasas?\b/g,'casa'],[/\bcoberturas?\b/g,'cobertura'],[/\bterrenos?\b/g,'terreno'],[/\bstudios?\b/g,'studio']]) {
       if(re.test(rest)) { result.tipo=type; rest=rest.replace(re,' '); break; }
     }
-    rest = rest.replace(/\b(?:comprar|compra|venda)\b/g, () => { result.finalidade='Venda'; return ' '; });
-    rest = rest.replace(/\b(?:alugar|aluguel|locacao)\b/g, () => { result.finalidade='Aluguel'; return ' '; });
+    const buying=/\b(?:comprar|compra|venda)\b/.test(rest);
+    const renting=/\b(?:alugar|aluguel|locacao)\b/.test(rest);
+    result.finalidade=buying===renting ? '' : buying ? 'Venda' : 'Aluguel';
+    rest = rest.replace(/\b(?:comprar|compra|venda|alugar|aluguel|locacao)\b/g, ' ');
+    rest = rest.replace(/(?:\/|por\s+|ao\s+)(?:mes|mensal)\b/g, ' ');
     rest = rest.replace(/\btemporada\b/g, () => { result.perfil='temporada'; return ' '; });
     rest = rest.replace(/\binvest\w*\b/g, () => { result.perfil='investimento'; return ' '; });
     const stop = new Set('a o as os um uma uns umas de do da dos das em no na nos nas e com para por ate perto potencial litoral praia paulista quero procuro buscar encontrar imovel imoveis minimo minima pelo menos'.split(' '));
@@ -44,12 +47,15 @@
     return state;
   }
   function matches(p, state) {
+    // A budget cannot compare an acquisition price with a monthly rent.
+    if(state.preco_max && !state.finalidade) return false;
     const text=normalize([p.title,p.city,p.type,p.description,...(p.tags||[])].join(' '));
     if(state.cidade && normalize(p.city)!==normalize(state.cidade)) return false;
-    if(state.finalidade && normalize(p.type)!==normalize(state.finalidade)) return false;
+    if(state.finalidade && normalize(p.type)!==normalize(state.finalidade) && !(state.finalidade==='Venda' && normalize(p.type)==='lancamento')) return false;
     if(state.tipo && !normalize(p.title).split(/[^a-z0-9]+/).some(word=>word.startsWith(normalize(state.tipo)))) return false;
     if(state.quartos && Number(p.bedrooms)<Number(state.quartos)) return false;
     const price=money(String(p.price).replace(/\/(?:mes|mês|dia).*$/i,''));
+    if(state.preco_max && state.finalidade==='Aluguel' && !/\/m[eê]s\b/i.test(String(p.price))) return false;
     if(state.preco_max && (price===null || price>Number(state.preco_max))) return false;
     if(state.perfil==='temporada' && !/temporada/.test(text)) return false;
     return state.terms.every(term=>text.includes(term));

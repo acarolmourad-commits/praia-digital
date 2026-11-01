@@ -195,7 +195,7 @@
     const citySelect=document.getElementById('cidade-filtro');
     if(citySelect) citySelect.innerHTML='<option value="">Todas as cidades</option>'+search.cities.map(c=>`<option value="${c}">${c}</option>`).join('');
     const purpose=document.getElementById('tipo-filtro');
-    if(purpose) purpose.innerHTML='<option value="">Comprar ou alugar</option>'+['Venda','Aluguel','Lançamento'].map(t=>`<option>${t}</option>`).join('');
+    if(purpose) purpose.innerHTML='<option value="">Escolha: comprar ou alugar</option><option value="Venda">Comprar (inclui lançamentos)</option><option value="Aluguel">Alugar por mês</option><option value="Lançamento">Somente lançamentos</option>';
   }
   function updateControls() {
     document.getElementById('busca').value=state.q;
@@ -205,8 +205,14 @@
       const option=el.tagName==='SELECT' && Array.from(el.options).find(o=>search.normalize(o.value)===search.normalize(state[key]));
       el.value=option?option.value:state[key];
     }
+    document.getElementById('preco-label').textContent=state.finalidade==='Aluguel' ? 'Aluguel máximo (R$/mês)' : state.finalidade ? 'Preço de compra máximo (R$)' : 'Orçamento máximo (escolha a finalidade)';
   }
   function showResults() {
+    if(state.preco_max && !state.finalidade) {
+      document.getElementById('lista-imoveis').innerHTML='<p class="imoveis-empty">Escolha comprar ou alugar para aplicar o orçamento informado.</p>';
+      document.getElementById('search-status').textContent='Finalidade pendente: preço de compra e aluguel mensal não são comparáveis.';
+      return;
+    }
     const filtered=properties.filter(p=>search.matches(p,state)).sort((a,b)=>Number(b.score||0)-Number(a.score||0));
     render(filtered);
     document.getElementById('search-status').textContent=filtered.length+' imóvel(is) encontrado(s).'+(state.perfil==='investimento'?' Investimento é seu objetivo; rentabilidade não é garantida.':'')+(state.perfil==='temporada'?' Temporada: somente anúncios que mencionam esse perfil.':'');
@@ -246,10 +252,26 @@
     if(document.getElementById('lista-imoveis') && search) {
       initFilters(); restoreSearch();
       const input=document.getElementById('busca');
-      function queryChanged() { state={q:input.value,...search.parse(input.value)}; updateControls(); saveSearch(false); }
+      function queryChanged() {
+        const parsed=search.parse(input.value);
+        const explicit=/\b(comprar|compra|venda|alugar|aluguel|locacao)\b/.test(search.normalize(input.value));
+        state={q:input.value,...parsed,finalidade:explicit?parsed.finalidade:state.finalidade};
+        updateControls(); saveSearch(false);
+      }
       input.addEventListener('input',queryChanged);
       input.addEventListener('search',queryChanged);
-      for(const [key,id] of Object.entries(fields)) document.getElementById(id).addEventListener('change',function(){ if(!this.checkValidity()) { this.reportValidity(); return; } state[key]=this.value; saveSearch(true); });
+      for(const [key,id] of Object.entries(fields)) document.getElementById(id).addEventListener('change',function(){
+        if(!this.checkValidity()) { this.reportValidity(); return; }
+        // Preserve a pending budget on first selection; clear it when switching units.
+        const unitChanged=key==='finalidade' && state.finalidade && this.value!==state.finalidade && (state.finalidade==='Aluguel' || this.value==='Aluguel' || !this.value);
+        if(unitChanged) {
+          state.preco_max='';
+          state.q=state.q.replace(/(?:at[eé]\s*(?:r\$\s*)?|r\$\s*)[\d.,]+\s*(?:milh[oõ]es|milh[aã]o|mil|mi)?(?:\s*(?:\/|por\s+|ao\s+)m[eê]s)?/gi,' ')
+            .replace(/\b(?:comprar|compra|venda|alugar|aluguel|loca[cç][aã]o)\b/gi,' ').replace(/\s+/g,' ').trim();
+        }
+        state[key]=this.value; updateControls(); saveSearch(true);
+        if(unitChanged) document.getElementById('search-status').textContent+=' Orçamento limpo: informe o valor para a nova finalidade.';
+      });
       document.getElementById('limpar-busca').addEventListener('click',function(){ state={q:'',...search.parse('')}; updateControls(); saveSearch(true); input.focus(); });
       window.addEventListener('popstate',restoreSearch);
     }

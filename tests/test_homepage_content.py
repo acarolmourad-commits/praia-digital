@@ -46,4 +46,21 @@ class HomepageContent(unittest.TestCase):
         self.assertIn('id="gestao-pricelabs"',pl)
         self.assertIn('Ele não representa o preço de gestão contínua',pl)
         self.assertIn('/interesse.html?produto=pricelabs',pl)
+    def test_academy_purpose_and_evidence(self):
+        self.assertIn('62 kits e 8 trilhas',self.html)
+        self.assertIn('compra assistida por contato',self.html)
+        self.assertIn('PDF/DOCX',self.html)
+        self.assertIn('href="/education/kits-2026.html"',self.html)
+        self.assertIn('href="/cidades/index.html">Cidades',self.html)
+        self.assertNotIn('href="/cidades/bertioga.html">Cidades',self.html)
+        catalog=(ROOT/'imoveis.html').read_text()
+        for claim in ['500+','1.200+','98%']: self.assertNotIn(claim,catalog)
+        purposes=[a for t,a in self.tags if t=='select' and a.get('name')=='finalidade']
+        self.assertEqual(len(purposes),1)
+        self.assertIn('required',purposes[0])
+        for file in ['index.html','imoveis.html','ferramentas/assistente-virtual.html']:
+            tags=Tags((ROOT/file).read_text()).tags
+            self.assertEqual(sum(t=='h1' for t,a in tags),1,file)
+            self.assertEqual(sum(t=='link' and a.get('rel')=='canonical' for t,a in tags),1,file)
+            self.assertTrue(any(t=='meta' and a.get('name')=='viewport' for t,a in tags),file)
 if __name__=='__main__': unittest.main()

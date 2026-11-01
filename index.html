@@ -55,7 +55,8 @@ h1{font-size:clamp(1.9rem,4.6vw,3.2rem);line-height:1.15;letter-spacing:-.02em;m
 .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:34px}
 .search{background:#fff;border-radius:var(--r);padding:10px;display:flex;gap:10px;max-width:780px;box-shadow:0 18px 50px rgba(4,20,35,.35)}
 .search input{flex:1;border:0;font-size:1rem;padding:14px 16px;color:var(--ink);background:transparent;min-width:0}
-.search input::placeholder{color:#8aa0b4}
+.search input::placeholder{color:#52687a}
+.search label{color:var(--ink);font-size:.85rem;display:flex;flex-direction:column;justify-content:center}.search select{font:inherit;padding:8px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--ink)}
 .search-hint{font-size:.83rem;color:#9db4c6;margin-top:12px}
 .aud{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:-46px;position:relative;z-index:2}
 .aud a{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px;color:var(--ink);box-shadow:0 8px 30px rgba(10,37,64,.07);transition:transform .15s,border-color .15s;display:block}
@@ -388,7 +389,7 @@ footer .cols{grid-template-columns:repeat(3,minmax(0,1fr))}footer .cols>div{min-
       <div class="dropdown-menu">
         <a href="/imoveis.html">Imóveis</a>
         <a href="/mapa-inteligente.html">Mapa</a>
-        <a href="/cidades/bertioga.html">Cidades</a>
+        <a href="/cidades/index.html">Cidades</a>
         <a href="/bairros/index.html">Bairros</a>
         <a href="/apps/comparador-cidades/">Comparar cidades</a>
       </div>
@@ -418,7 +419,7 @@ footer .cols{grid-template-columns:repeat(3,minmax(0,1fr))}footer .cols>div{min-
         <a href="/servicos.html">Soluções</a>
         <a href="/automacao-imobiliarias.html">Automação</a>
         <a href="/captacao-imoveis-litoral.html">Captação</a>
-        <a href="/education/index.html">Academy</a>
+        <a href="/education/kits-2026.html">Academy</a>
         <a href="/planos.html">Planos</a>
       </div>
     </div>
@@ -448,10 +449,11 @@ footer .cols{grid-template-columns:repeat(3,minmax(0,1fr))}footer .cols>div{min-
     <a class="btn" href="/ferramentas/calculadora-roi-temporada.html" style="background:#fff;color:var(--ink)!important">Analisar investimento</a>
   </div>
   <form class="search" action="/imoveis.html" method="get" role="search" id="smartsearch">
+    <label for="finalidade">Finalidade<select id="finalidade" name="finalidade" required><option value="">Escolha uma opção</option><option value="Venda">Comprar</option><option value="Aluguel">Alugar por mês</option></select></label>
     <input type="search" name="q" id="q" aria-label="Busca inteligente de imóveis" placeholder="Ex.: apartamento de 2 quartos até R$ 700 mil em Bertioga, perto da praia, com potencial para temporada">
     <button class="btn" type="submit">Buscar</button>
   </form>
-  <p class="search-hint">Busque por cidade, tipo, quartos e orçamento. Você poderá conferir e ajustar os filtros no catálogo.</p>
+  <p class="search-hint">Escolha a finalidade e descreva cidade, tipo e quartos. Informe o preço de compra ou o aluguel por mês; confira os filtros no catálogo.</p>
 </div>
 </div>
 
@@ -470,7 +472,7 @@ footer .cols{grid-template-columns:repeat(3,minmax(0,1fr))}footer .cols>div{min-
 <div class="wrap">
   <p class="kicker">Busca</p>
   <h2>Encontre seu imóvel</h2>
-  <p class="lead">Filtre por cidade, bairro, praia, preço, quartos, tipo e distância da praia.</p>
+  <p class="lead">Busque por cidade, tipo, quartos e finalidade. Explore os guias de bairros e o mapa para conhecer a região.</p>
   <div class="grid g3">
     <a class="card" href="/imoveis.html"><span class="tag">Catálogo</span><h3>Todos os imóveis</h3><p>Explore o catálogo completo de imóveis no litoral paulista.</p></a>
     <a class="card" href="/mapa-inteligente.html"><span class="tag">Mapa</span><h3>Mapa inteligente</h3><p>Veja imóveis no mapa e explore por localização e proximidade da praia.</p></a>
@@ -523,26 +525,37 @@ footer .cols{grid-template-columns:repeat(3,minmax(0,1fr))}footer .cols>div{min-
   <h2 style="color:#fff">Pergunte ao Praia Digital</h2>
   <p class="lead">Use o assistente para explorar dúvidas sobre imóveis, bairros e investimento. As respostas são apoio informativo: confira fontes e valide números e condições antes de decidir.</p>
   <div class="grid g4">
-    <a class="ai-q" href="/ferramentas/assistente-virtual.html">"Qual cidade tem melhor relação entre preço e aluguel?" →</a>
-    <a class="ai-q" href="/ferramentas/assistente-virtual.html">"Quanto posso ganhar alugando este apartamento?" →</a>
-    <a class="ai-q" href="/ferramentas/assistente-virtual.html">"Esse imóvel está caro?" →</a>
-    <a class="ai-q" href="/ferramentas/assistente-virtual.html">"Quais bairros estão valorizando?" →</a>
+    <a class="ai-q" href="/ferramentas/assistente-virtual.html?q=Qual%20cidade%20tem%20melhor%20rela%C3%A7%C3%A3o%20entre%20pre%C3%A7o%20e%20aluguel%3F">"Qual cidade tem melhor relação entre preço e aluguel?" →</a>
+    <a class="ai-q" href="/ferramentas/assistente-virtual.html?q=Quanto%20posso%20ganhar%20alugando%20este%20apartamento%3F">"Quanto posso ganhar alugando este apartamento?" →</a>
+    <a class="ai-q" href="/ferramentas/assistente-virtual.html?q=Esse%20im%C3%B3vel%20est%C3%A1%20caro%3F">"Esse imóvel está caro?" →</a>
+    <a class="ai-q" href="/ferramentas/assistente-virtual.html?q=Quais%20bairros%20est%C3%A3o%20valorizando%3F">"Quais bairros estão valorizando?" →</a>
   </div>
   <p style="margin-top:26px"><a class="btn" href="/ferramentas/assistente-virtual.html">Conversar com a IA</a></p>
 </div>
 </section>
 
 
+<section id="academy"><div class="wrap">
+  <p class="kicker">Praia Digital Academy · Edição 2026</p>
+  <h2>Aprenda no seu ritmo, com materiais para aplicar</h2>
+  <article class="card"><span class="tag">Materiais escritos para autoestudo</span><h3>62 kits e 8 trilhas</h3>
+  <p>Explore os temas e escolha kits individuais ou trilhas de estudo. Materiais em PDF/DOCX, com compra assistida por contato.</p>
+  <p>Confira conteúdo, formato e condições no catálogo e combine o recebimento antes de comprar.</p>
+  <p><a class="btn" href="/education/kits-2026.html">Explorar kits e trilhas da Academy →</a></p></article>
+</div></section>
+
 <section id="produtos-comparacao">
 <div class="wrap">
 <p class="kicker">Entenda antes de contratar</p><h2>Qual produto atende ao que você precisa?</h2>
 <p class="lead">Ferramentas públicas continuam gratuitas. Os produtos abaixo têm entregas e formas de cobrança diferentes; confira as condições completas na página de cada um.</p>
-<div class="grid g3">
+<details class="card"><summary>Comparar produtos e planos profissionais</summary>
+<div class="grid g3" style="margin-top:20px">
 <article class="card"><h3>Kit Temporada</h3><p class="product-price">R$ 39 / imóvel / mês</p><p>Uso recorrente por imóvel: diária, ocupação, ROI, custos e calendário, com acompanhamento mensal e recomendações.</p><p>Não é a criação completa de um anúncio.</p><a href="/entrega-kit-temporada.html">Ver conteúdo do kit →</a></article>
 <article class="card"><h3>20 descrições com IA</h3><p class="product-price">R$ 97 / pacote</p><p>Textos organizados por imóvel e canal, com título, versões para portais, redes e WhatsApp e SEO local. Você revisa antes de publicar.</p><p>Entrega de textos, não configuração completa do anúncio.</p><a href="/entrega-descricoes-ia.html">Ver modelos e entregas →</a></article>
 <article class="card"><h3>Anúncio Airbnb ou Booking</h3><p class="product-price">R$ 499 / anúncio / plataforma</p><p>Criação ou edição completa conforme o escopo: texto, fotos organizadas, comodidades, regras, calendário e precificação inicial.</p><p>Duas plataformas: R$ 998. Não equivale a gestão contínua.</p><a href="/servicos/anuncios-airbnb-booking.html">Ver serviço completo →</a></article>
 </div>
 <div class="plans-note"><h3>Precisa de uma rotina profissional?</h3><p><strong>Starter: R$ 79/mês · Growth: R$ 249/mês · Scale: R$ 799/mês.</strong> Planos para corretores e imobiliárias, com capacidades, limites e integrações diferentes.</p><p><a href="/planos.html">Comparar todos os planos, limites e condições →</a></p><p class="src">Consulte impostos e condições comerciais na página dos planos antes de contratar. Gestão com PriceLabs tem escopo e valor sob consulta, separados do diagnóstico pontual e dos produtos acima.</p></div>
+</details>
 </div></section>
 
 <section id="profissionais">
@@ -550,16 +563,7 @@ footer .cols{grid-template-columns:repeat(3,minmax(0,1fr))}footer .cols>div{min-
   <p class="kicker">Para empresas</p>
   <h2>Para imobiliárias e corretores</h2>
   <p class="lead" style="font-size:1.15rem;color:var(--ink);font-weight:600">Soluções com escopo definido, supervisão humana e foco em rotinas imobiliárias.</p>
-  <div class="grid g4">
-    <a class="card" href="/automacao-imobiliarias.html"><h3>Automação</h3><p>Atendimento, follow-up e rotinas automatizadas.</p></a>
-    <a class="card" href="/solucoes/hermes-agents.html"><h3>Agentes autônomos</h3><p>Apoio de IA para rotinas definidas e supervisionadas.</p></a>
-    <a class="card" href="/captacao-imoveis-litoral.html"><h3>Captação de imóveis</h3><p>Fluxos inteligentes para captar proprietários.</p></a>
-    <a class="card" href="/ferramentas/geracao-descricoes.html"><h3>Anúncios com IA</h3><p>Descrições e anúncios gerados automaticamente.</p></a>
-    <a class="card" href="/captura-leads.html"><h3>Geração de leads</h3><p>Qualificação automática de interessados.</p></a>
-    <a class="card" href="/education/index.html"><h3>Praia Academy</h3><p>Cursos e formações para profissionais do mercado.</p></a>
-    <a class="card" href="/planos.html"><h3>Planos</h3><p>Assinaturas para imobiliárias e corretores.</p></a>
-    <a class="card" href="/cases.html"><h3>Exemplos ilustrativos</h3><p>Cenários hipotéticos para entender aplicações, não resultados de clientes.</p></a>
-  </div>
+  <details class="card"><summary>Explorar soluções para sua rotina profissional</summary><p class="hub-links"><a href="/automacao-imobiliarias.html">Automação</a> · <a href="/solucoes/hermes-agents.html">Agentes autônomos</a> · <a href="/captacao-imoveis-litoral.html">Captação de imóveis</a> · <a href="/ferramentas/geracao-descricoes.html">Anúncios com IA</a> · <a href="/captura-leads.html">Geração de leads</a> · <a href="/planos.html">Planos</a> · <a href="/cases.html">Exemplos ilustrativos</a></p></details>
   <p style="margin-top:26px"><a class="btn" href="/servicos.html">Conhecer soluções para imobiliárias</a></p>
 </div>
 </section>
@@ -588,10 +592,10 @@ footer .cols{grid-template-columns:repeat(3,minmax(0,1fr))}footer .cols>div{min-
       <p class="logo" style="color:#fff;margin-bottom:10px">Praia<span>Digital</span></p>
       <p style="max-width:320px">Inteligência imobiliária para o litoral paulista: imóveis, dados de mercado e IA em uma só plataforma.</p>
     </div>
-    <div><h4>Comprar</h4><a href="/imoveis.html">Imóveis</a><a href="/mapa-inteligente.html">Mapa</a><a href="/cidades/bertioga.html">Cidades</a><a href="/bairros/index.html">Bairros</a></div>
+    <div><h4>Comprar</h4><a href="/imoveis.html">Imóveis</a><a href="/mapa-inteligente.html">Mapa</a><a href="/cidades/index.html">Cidades</a><a href="/bairros/index.html">Bairros</a></div>
     <div><h4>Investir</h4><a href="/ferramentas/avaliacao-preco.html">Avaliação</a><a href="/apps/simulador-roi-temporada/">Simulador ROI</a><a href="/apps/calculadora-financiamento/">Financiamento</a><a href="/apps/comparador-cidades/">Comparar cidades</a></div>
     <div><h4>Meu Imóvel</h4><a href="/meu-imovel.html">Central do proprietário</a><a href="/anunciar-temporada.html">Anunciar temporada</a><a href="/proprietarios/guia-do-proprietario.html">Guia do proprietário</a></div>
-    <div><h4>Profissionais</h4><a href="/servicos.html">Soluções</a><a href="/planos.html">Planos</a><a href="/education/index.html">Academy</a><a href="/cases.html">Exemplos ilustrativos</a></div>
+    <div><h4>Profissionais</h4><a href="/servicos.html">Soluções</a><a href="/planos.html">Planos</a><a href="/education/kits-2026.html">Academy</a><a href="/cases.html">Exemplos ilustrativos</a></div>
     <div><h4>Inteligência</h4><a href="/blog/index.html">Blog</a><a href="/ferramentas/index.html">Ferramentas</a><a href="/apps/">Apps gratuitos</a><a href="/metodologia.html">Metodologia</a></div>
   </div>
   <div class="legal">
