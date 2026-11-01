@@ -191,11 +191,12 @@
   const search = window.PDPropertySearch;
   let state;
   const fields = {cidade:'cidade-filtro', finalidade:'tipo-filtro', tipo:'categoria-filtro', quartos:'quartos-filtro', preco_max:'preco-filtro'};
+  const {budgetUnit,withoutBudget}=search || {};
   function initFilters() {
     const citySelect=document.getElementById('cidade-filtro');
     if(citySelect) citySelect.innerHTML='<option value="">Todas as cidades</option>'+search.cities.map(c=>`<option value="${c}">${c}</option>`).join('');
     const purpose=document.getElementById('tipo-filtro');
-    if(purpose) purpose.innerHTML='<option value="">Comprar ou alugar</option>'+['Venda','Aluguel','Lançamento'].map(t=>`<option>${t}</option>`).join('');
+    if(purpose) purpose.innerHTML='<option value="">Escolha: comprar ou alugar</option><option value="Venda">Comprar (inclui lançamentos)</option><option value="Aluguel">Alugar por mês</option><option value="Lançamento">Somente lançamentos</option>';
   }
   function updateControls() {
     document.getElementById('busca').value=state.q;
@@ -205,11 +206,18 @@
       const option=el.tagName==='SELECT' && Array.from(el.options).find(o=>search.normalize(o.value)===search.normalize(state[key]));
       el.value=option?option.value:state[key];
     }
+    document.getElementById('preco-label').textContent=state.finalidade==='Aluguel' ? 'Aluguel máximo (R$/mês)' : state.finalidade ? 'Preço de compra máximo (R$)' : 'Orçamento máximo (escolha a finalidade)';
   }
   function showResults() {
+    if(state.preco_max && !state.finalidade) {
+      document.getElementById('lista-imoveis').innerHTML='<p class="imoveis-empty">Escolha comprar ou alugar para aplicar o orçamento informado.</p>';
+      document.getElementById('search-status').textContent='Finalidade pendente: preço de compra e aluguel mensal não são comparáveis.';
+      return;
+    }
     const filtered=properties.filter(p=>search.matches(p,state)).sort((a,b)=>Number(b.score||0)-Number(a.score||0));
     render(filtered);
     document.getElementById('search-status').textContent=filtered.length+' imóvel(is) encontrado(s).'+(state.perfil==='investimento'?' Investimento é seu objetivo; rentabilidade não é garantida.':'')+(state.perfil==='temporada'?' Temporada: somente anúncios que mencionam esse perfil.':'');
+    if(state.budgetCleared) document.getElementById('search-status').textContent+=' Orçamento limpo: o texto e a finalidade do link eram diferentes. Informe o valor para a finalidade escolhida.';
   }
   function saveSearch(push) {
     const url=new URL(location.href);
@@ -246,10 +254,33 @@
     if(document.getElementById('lista-imoveis') && search) {
       initFilters(); restoreSearch();
       const input=document.getElementById('busca');
-      function queryChanged() { state={q:input.value,...search.parse(input.value)}; updateControls(); saveSearch(false); }
+      function queryChanged() {
+        const parsed=search.parse(input.value);
+        const explicit=/\b(comprar|compra|venda|alugar|aluguel|locacao)\b/.test(search.normalize(input.value));
+        // Explicit text edits win over the current selector; otherwise keep its choice.
+        const purpose=explicit?parsed.finalidade:state.finalidade;
+        const unitChanged=state.finalidade && budgetUnit(purpose)!==budgetUnit(state.finalidade);
+        state={q:input.value,...parsed,finalidade:purpose};
+        if(unitChanged) { state.preco_max=''; state.q=withoutBudget(state.q); }
+        updateControls(); saveSearch(false);
+        if(unitChanged) document.getElementById('search-status').textContent+=' Orçamento limpo: informe o valor para a nova finalidade.';
+      }
       input.addEventListener('input',queryChanged);
       input.addEventListener('search',queryChanged);
-      for(const [key,id] of Object.entries(fields)) document.getElementById(id).addEventListener('change',function(){ if(!this.checkValidity()) { this.reportValidity(); return; } state[key]=this.value; saveSearch(true); });
+      for(const [key,id] of Object.entries(fields)) document.getElementById(id).addEventListener('change',function(){
+        if(!this.checkValidity()) { this.reportValidity(); return; }
+        state.budgetCleared=false;
+        // Preserve a pending budget on first selection; clear it when switching units.
+        const unitChanged=key==='finalidade' && state.finalidade && budgetUnit(this.value)!==budgetUnit(state.finalidade);
+        if(unitChanged) {
+          state.preco_max='';
+          state.q=withoutBudget(state.q);
+        }
+        // A manual selector choice supersedes purpose words in the old query.
+        if(key==='finalidade') state.q=state.q.replace(/\b(?:comprar|compra|venda|alugar|aluguel|loca[cç][aã]o)\b/gi,' ').replace(/\s+/g,' ').trim();
+        state[key]=this.value; updateControls(); saveSearch(true);
+        if(unitChanged) document.getElementById('search-status').textContent+=' Orçamento limpo: informe o valor para a nova finalidade.';
+      });
       document.getElementById('limpar-busca').addEventListener('click',function(){ state={q:'',...search.parse('')}; updateControls(); saveSearch(true); input.focus(); });
       window.addEventListener('popstate',restoreSearch);
     }

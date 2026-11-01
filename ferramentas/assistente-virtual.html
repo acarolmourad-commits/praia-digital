@@ -89,7 +89,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
   <div class="card" id="assistente">
     <h2>Converse com o assistente</h2>
-    <label for="msg">Sua mensagem</label>
+    <label for="msg">Sua pergunta</label>
     <textarea id="msg" rows="3">Quero um apartamento perto da praia, até R$ 800 mil.</textarea>
     <div class="chips">
       <button type="button" class="chip" data-q="Quero um apartamento perto da praia, até R$ 800 mil.">🏖️ Perto da praia até R$ 800 mil</button>
@@ -171,6 +171,9 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     }
     return 'Entendi! Com esse perfil, sugiro: 1) definir a cidade pelo '+link('guia de cidades','https://praia.digital/cidades/bertioga.html')+', 2) estimar o valor com a '+link('avaliação de preço','https://praia.digital/ferramentas/avaliacao-preco.html')+' e 3) ver o crédito na '+link('pré-qualificação','https://praia.digital/ferramentas/pre-qualificacao-credito-2026.html')+'. Se preferir, '+link('fale com um especialista agora',WA)+'.';
   }
+  // Prefill only: the visitor reviews and submits the question.
+  var initialQuestion=new URLSearchParams(location.search).get('q');
+  if(initialQuestion) document.getElementById('msg').value=initialQuestion.slice(0,2000);
   var chat=document.getElementById('chat');
   window.responder = function () {
     var el=document.getElementById('msg');

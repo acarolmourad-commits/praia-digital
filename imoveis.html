@@ -197,10 +197,10 @@
       <div class="imoveis-toolbar" role="search" aria-label="Buscar imóveis">
         <label class="sr-only" for="busca">Buscar por imóvel, cidade ou característica</label>
         <input id="busca" type="search" placeholder="Busque por cidade, imóvel ou característica..." autocomplete="off">
-        <label class="sr-only" for="tipo-filtro">Finalidade</label>
+        <label for="tipo-filtro">Finalidade
         <select id="tipo-filtro" aria-label="Filtrar por finalidade">
-          <option value="">Comprar ou alugar</option>
-        </select>
+          <option value="">Escolha: comprar ou alugar</option>
+        </select></label>
         <label class="sr-only" for="cidade-filtro">Cidade</label>
         <select id="cidade-filtro" aria-label="Filtrar por cidade">
           <option value="">Todas as cidades</option>
@@ -209,9 +209,10 @@
       <div class="imoveis-toolbar" aria-label="Filtros adicionais">
         <label>Tipo de imóvel <select id="categoria-filtro"><option value="">Todos</option><option value="apartamento">Apartamento</option><option value="casa">Casa</option><option value="cobertura">Cobertura</option><option value="terreno">Terreno</option><option value="studio">Studio</option></select></label>
         <label>Quartos (mínimo) <input id="quartos-filtro" type="number" min="0" max="99" step="1"></label>
-        <label>Preço máximo (R$) <input id="preco-filtro" type="number" min="0" step="0.01"></label>
+        <label><span id="preco-label">Orçamento máximo (escolha a finalidade)</span> <input id="preco-filtro" type="number" min="0" step="0.01" aria-describedby="budget-help"></label>
         <button id="limpar-busca" type="button">Limpar filtros</button>
       </div>
+      <p id="budget-help">Para filtrar por orçamento, escolha comprar ou alugar. Na locação, o valor é mensal; ao trocar a finalidade, confira o novo orçamento.</p>
       <p id="search-status" role="status" aria-live="polite"></p>
       <p class="imoveis-helper">Encontre seu próximo imóvel no litoral paulista.</p>
       <div id="lista-imoveis" class="imoveis-grid" aria-live="polite">
@@ -224,16 +225,16 @@
       <p>Somos uma imobiliária 100% digital, especializada no litoral de São Paulo. Oferecemos uma experiência moderna, rápida e transparente para comprar, vender ou alugar imóveis.</p>
       <div class="stats">
         <div class="stat">
-          <h3>500+</h3>
-          <p>Imóveis cadastrados</p>
+          <h3>Catálogo</h3>
+          <p>Filtros por cidade, tipo e finalidade</p>
         </div>
         <div class="stat">
-          <h3>1.200+</h3>
-          <p>Clientes atendidos</p>
+          <h3>Contato direto</h3>
+          <p>Consulte detalhes e disponibilidade de cada anúncio</p>
         </div>
         <div class="stat">
-          <h3>98%</h3>
-          <p>Satisfação</p>
+          <h3>Informação</h3>
+          <p>Guias e ferramentas para apoiar sua decisão</p>
         </div>
       </div>
       <p><a href="https://praia.digital/servicos.html">Ver todos os serviços →</a></p>

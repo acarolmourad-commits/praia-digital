@@ -37,6 +37,7 @@ jobs:
           node --check js/shared.js
           node --check js/main.js
           node --check js/property-search.js
+          node --check js/home-search.js
           node --check tests/homepage-browser.cjs
       - name: Focused homepage and conversion regressions
         run: |
