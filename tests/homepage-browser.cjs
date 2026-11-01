@@ -156,6 +156,8 @@ async function searchJourney(page, width) {
   assert.equal(new Set(questions.map(q=>q.url)).size,4);
   for(const q of questions){
     await page.goto(q.url);
+    assert.equal(await page.locator('label[for="msg"]').count(),1,'one accessible label for the question');
+    assert.equal(await page.getByRole('textbox',{name:'Sua pergunta',exact:true}).count(),1);
     assert.equal(await page.locator('#msg').inputValue(),q.question);
     assert.equal(await page.locator('#chat .user').count(),0,'prefill never submits');
   }
