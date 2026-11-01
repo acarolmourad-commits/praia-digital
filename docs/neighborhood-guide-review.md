@@ -30,7 +30,7 @@ GUIDE_BUILT_ROOT=/tmp/guide-preview GUIDE_QA_OUTPUT=/tmp/guide-qa node tests/nei
 
 Instale Playwright 1.63.0 com Chromium para o teste de navegador. No Windows local foi usado Chrome instalado (`GUIDE_BROWSER_CHANNEL=chrome`), pois o Chromium empacotado não estava instalado. O teste intercepta requisições, serve arquivos locais e bloqueia tráfego externo e envios de formulário. As imagens e `results.json` são gerados em `GUIDE_QA_OUTPUT`; o workflow específico anexa essas evidências ao CI.
 
-Testes locais: 5 testes do guia, 6 de navegação e 5 da home passaram. Navegador: 375, 390 e 1280 px, busca com/sem acentos, filtros combinados, estado vazio, limpeza/foco, teclado em `summary`, expandir/recolher, retorno de artigos, 123 guias sem JavaScript, ausência de overflow e de erros de execução. O build de navegação foi aplicado às três páginas em diretório isolado. `-X utf8` evita a limitação preexistente de encoding padrão Windows no teste de navegação.
+Testes locais: 5 testes do guia, 6 de navegação e 5 da home passaram. O validador existente de H1/title passou nos 4.063 HTML do blog. Uma comparação com o HTML da base confirmou a preservação exata dos 123 hrefs de guias. Navegador: 375, 390 e 1280 px, busca com/sem acentos, filtros combinados, estado vazio, limpeza/foco, teclado em `summary`, expandir/recolher, retorno de artigos, 123 guias sem JavaScript, ausência de overflow e de erros de execução. O build de navegação foi aplicado às três páginas em diretório isolado. `-X utf8` evita a limitação preexistente de encoding padrão Windows no teste de navegação.
 
 ## Limites de escopo
 
