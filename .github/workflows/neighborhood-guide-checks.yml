@@ -1,0 +1,40 @@
+name: Neighborhood guide
+on:
+  pull_request:
+    paths:
+      - 'bairros/**'
+      - 'blog/riviera-sao-lourenco-seguranca-infraestrutura-valorizacao-2026.html'
+      - 'blog/estudo-rental-yield-apartamentos-1-2-dormitorios-praia-grande-2026.html'
+      - 'assets/css/neighborhood-guide.css'
+      - 'js/neighborhood-guide.js'
+      - 'tests/*neighborhood*'
+      - 'scripts/preview-neighborhood-guide.py'
+      - '.github/workflows/neighborhood-guide-checks.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  guide:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          python3 -m unittest discover -s tests -p 'test_neighborhood_guide.py' -v
+          node --check js/neighborhood-guide.js
+          python3 scripts/preview-neighborhood-guide.py "$RUNNER_TEMP/guide-preview"
+      - name: Offline browser checks
+        env:
+          GUIDE_BUILT_ROOT: ${{ runner.temp }}/guide-preview
+          GUIDE_QA_OUTPUT: ${{ runner.temp }}/guide-qa
+        run: |
+          npm install --prefix "$RUNNER_TEMP/guide-browser" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/guide-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          NODE_PATH="$RUNNER_TEMP/guide-browser/node_modules" node tests/neighborhood-guide-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: neighborhood-guide-evidence
+          path: ${{ runner.temp }}/guide-qa
