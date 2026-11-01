@@ -191,6 +191,7 @@
   const search = window.PDPropertySearch;
   let state;
   const fields = {cidade:'cidade-filtro', finalidade:'tipo-filtro', tipo:'categoria-filtro', quartos:'quartos-filtro', preco_max:'preco-filtro'};
+  const {budgetUnit,withoutBudget}=search || {};
   function initFilters() {
     const citySelect=document.getElementById('cidade-filtro');
     if(citySelect) citySelect.innerHTML='<option value="">Todas as cidades</option>'+search.cities.map(c=>`<option value="${c}">${c}</option>`).join('');
@@ -255,20 +256,26 @@
       function queryChanged() {
         const parsed=search.parse(input.value);
         const explicit=/\b(comprar|compra|venda|alugar|aluguel|locacao)\b/.test(search.normalize(input.value));
-        state={q:input.value,...parsed,finalidade:explicit?parsed.finalidade:state.finalidade};
+        // Explicit text edits win over the current selector; otherwise keep its choice.
+        const purpose=explicit?parsed.finalidade:state.finalidade;
+        const unitChanged=state.finalidade && budgetUnit(purpose)!==budgetUnit(state.finalidade);
+        state={q:input.value,...parsed,finalidade:purpose};
+        if(unitChanged) { state.preco_max=''; state.q=withoutBudget(state.q); }
         updateControls(); saveSearch(false);
+        if(unitChanged) document.getElementById('search-status').textContent+=' Orçamento limpo: informe o valor para a nova finalidade.';
       }
       input.addEventListener('input',queryChanged);
       input.addEventListener('search',queryChanged);
       for(const [key,id] of Object.entries(fields)) document.getElementById(id).addEventListener('change',function(){
         if(!this.checkValidity()) { this.reportValidity(); return; }
         // Preserve a pending budget on first selection; clear it when switching units.
-        const unitChanged=key==='finalidade' && state.finalidade && this.value!==state.finalidade && (state.finalidade==='Aluguel' || this.value==='Aluguel' || !this.value);
+        const unitChanged=key==='finalidade' && state.finalidade && budgetUnit(this.value)!==budgetUnit(state.finalidade);
         if(unitChanged) {
           state.preco_max='';
-          state.q=state.q.replace(/(?:at[eé]\s*(?:r\$\s*)?|r\$\s*)[\d.,]+\s*(?:milh[oõ]es|milh[aã]o|mil|mi)?(?:\s*(?:\/|por\s+|ao\s+)m[eê]s)?/gi,' ')
-            .replace(/\b(?:comprar|compra|venda|alugar|aluguel|loca[cç][aã]o)\b/gi,' ').replace(/\s+/g,' ').trim();
+          state.q=withoutBudget(state.q);
         }
+        // A manual selector choice supersedes purpose words in the old query.
+        if(key==='finalidade') state.q=state.q.replace(/\b(?:comprar|compra|venda|alugar|aluguel|loca[cç][aã]o)\b/gi,' ').replace(/\s+/g,' ').trim();
         state[key]=this.value; updateControls(); saveSearch(true);
         if(unitChanged) document.getElementById('search-status').textContent+=' Orçamento limpo: informe o valor para a nova finalidade.';
       });

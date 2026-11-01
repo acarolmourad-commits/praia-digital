@@ -60,7 +60,9 @@
     if(state.perfil==='temporada' && !/temporada/.test(text)) return false;
     return state.terms.every(term=>text.includes(term));
   }
-  const api={normalize,money,parse,fromParams,matches,cities};
+  const budgetUnit = purpose => purpose==='Aluguel' ? 'monthly' : purpose ? 'purchase' : '';
+  const withoutBudget = query => query.replace(/(?:at[eé]\s*(?:r\$\s*)?|r\$\s*)[\d.,]+\s*(?:milh[oõ]es|milh[aã]o|mil|mi)?(?:\s*(?:\/|por\s+|ao\s+)m[eê]s)?/gi,' ').replace(/\s+/g,' ').trim();
+  const api={normalize,money,parse,fromParams,matches,cities,budgetUnit,withoutBudget};
   if(typeof module==='object'&&module.exports) module.exports=api;
   else root.PDPropertySearch=api;
 })(typeof window==='undefined'?globalThis:window);
