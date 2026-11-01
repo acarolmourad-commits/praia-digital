@@ -227,6 +227,10 @@ async function purposeTransitions(page) {
   await page.locator('#busca').fill('comprar apartamento em Bertioga até R$ 9 mil');
   assert.equal(await page.locator('#tipo-filtro').inputValue(),'Venda');
   assert.equal(await page.locator('#preco-filtro').inputValue(),'');
+  await page.goto(origin+'/imoveis.html?q='+encodeURIComponent(buying)+'&finalidade=Aluguel');
+  assert.equal(await page.locator('#tipo-filtro').inputValue(),'Aluguel');
+  assert.equal(await page.locator('#preco-filtro').inputValue(),'');
+  assert.match(await page.locator('#search-status').innerText(),/texto e a finalidade do link eram diferentes/);
 }
 
 (async () => {

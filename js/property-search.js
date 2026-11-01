@@ -41,9 +41,16 @@
   }
   function fromParams(params) {
     const q=params.get('q') || '';
-    const state={q,...parse(q)};
+    const parsed=parse(q);
+    const state={q,...parsed};
     for(const key of ['cidade','quartos','preco_max','tipo','finalidade','perfil']) if(params.has(key)) state[key]=params.get(key);
     for(const key of ['quartos','preco_max']) if(state[key] && (!Number.isFinite(Number(state[key])) || Number(state[key])<0)) state[key]='';
+    // Explicit URL filters win, but a contradictory query cannot supply their budget.
+    if(parsed.finalidade && params.has('finalidade') && budgetUnit(parsed.finalidade)!==budgetUnit(state.finalidade)) {
+      state.preco_max='';
+      state.q=withoutBudget(q).replace(/\b(?:comprar|compra|venda|alugar|aluguel|loca[cç][aã]o)\b/gi,' ').replace(/\s+/g,' ').trim();
+      state.budgetCleared=true;
+    }
     return state;
   }
   function matches(p, state) {

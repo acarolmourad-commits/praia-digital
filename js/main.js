@@ -217,6 +217,7 @@
     const filtered=properties.filter(p=>search.matches(p,state)).sort((a,b)=>Number(b.score||0)-Number(a.score||0));
     render(filtered);
     document.getElementById('search-status').textContent=filtered.length+' imóvel(is) encontrado(s).'+(state.perfil==='investimento'?' Investimento é seu objetivo; rentabilidade não é garantida.':'')+(state.perfil==='temporada'?' Temporada: somente anúncios que mencionam esse perfil.':'');
+    if(state.budgetCleared) document.getElementById('search-status').textContent+=' Orçamento limpo: o texto e a finalidade do link eram diferentes. Informe o valor para a finalidade escolhida.';
   }
   function saveSearch(push) {
     const url=new URL(location.href);
@@ -268,6 +269,7 @@
       input.addEventListener('search',queryChanged);
       for(const [key,id] of Object.entries(fields)) document.getElementById(id).addEventListener('change',function(){
         if(!this.checkValidity()) { this.reportValidity(); return; }
+        state.budgetCleared=false;
         // Preserve a pending budget on first selection; clear it when switching units.
         const unitChanged=key==='finalidade' && state.finalidade && budgetUnit(this.value)!==budgetUnit(state.finalidade);
         if(unitChanged) {
