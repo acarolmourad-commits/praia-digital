@@ -1,230 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>PriceLabs no Airbnb: como definir preço mínimo e máximo por temporada | Praia Digital</title>
-<meta content="Aprenda a configurar preço mínimo e máximo no PriceLabs para imóveis de temporada no litoral paulista, com regras por período e exemplos práticos." name="description"/>
-<meta content="PriceLabs Airbnb, preço mínimo temporada, preço máximo temporada, PriceLabs litoral, imóveis temporada, gestão de temporada" name="keywords"/>
-<link href="https://praia.digital/blog/pricelabs-airbnb-preco-minimo-maximo-temporada.html" rel="canonical"/>
-<meta content="article" property="og:type"/>
-<meta content="PriceLabs no Airbnb: como definir preço mínimo e máximo por temporada" property="og:title"/>
-<meta content="Aprenda a configurar preço mínimo e máximo no PriceLabs para imóveis de temporada no litoral paulista, com regras por período e exemplos práticos." property="og:description"/>
-<meta content="https://praia.digital/blog/pricelabs-airbnb-preco-minimo-maximo-temporada.html" property="og:url"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="PriceLabs no Airbnb: como definir preço mínimo e máximo por temporada" name="twitter:title"/>
-<meta content="Aprenda a configurar preço mínimo e máximo no PriceLabs." name="twitter:description"/>
-<meta content="index, follow" name="robots"/>
-<script type="application/ld+json">
-{
+<html lang="pt-BR"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PriceLabs: como definir mínimo, base e máximo sem ignorar custos | Praia Digital</title>
+<meta name="description" content="Calcule um piso de planejamento, entenda mínimo, base e máximo no PriceLabs e confira descontos, exceções e preço final antes de sincronizar.">
+<link rel="canonical" href="https://praia.digital/blog/pricelabs-airbnb-preco-minimo-maximo-temporada.html"><meta name="robots" content="index, follow">
+<meta property="og:type" content="article"><meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Praia Digital"><meta property="og:title" content="PriceLabs: como definir mínimo, base e máximo sem ignorar custos">
+<meta property="og:description" content="Calcule um piso de planejamento, entenda mínimo, base e máximo no PriceLabs e confira descontos, exceções e preço final antes de sincronizar."><meta property="og:url" content="https://praia.digital/blog/pricelabs-airbnb-preco-minimo-maximo-temporada.html">
+<meta property="og:image" content="https://praia.digital/assets/social/praia-digital-institucional-v1.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Praia Digital — Inteligência imobiliária para o litoral">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="PriceLabs: como definir mínimo, base e máximo sem ignorar custos">
+<meta name="twitter:description" content="Calcule um piso de planejamento, entenda mínimo, base e máximo no PriceLabs e confira descontos, exceções e preço final antes de sincronizar."><meta name="twitter:image" content="https://praia.digital/assets/social/praia-digital-institucional-v1.png">
+<link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/css/style.css">
+<style>body{margin:0;background:#f5f8fb;color:#16334a;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.7}main{max-width:860px;margin:auto;padding:32px 22px 56px}h1{font-size:clamp(1.9rem,5vw,2.8rem);line-height:1.16;color:#023047}h2{font-size:1.5rem;line-height:1.3;margin-top:2.2rem}h3{line-height:1.4}a{color:#00638d;text-underline-offset:.18em}a:focus-visible{outline:3px solid #e99500;outline-offset:4px}.meta{font-size:.9rem;color:#526777}.lead{font-size:1.15rem}.toc,.card,.cta-box{padding:22px;border:1px solid #cbdce8;border-radius:16px;background:white;margin:24px 0}.toc a{display:block;margin:.35rem 0}.cta-box{background:#e5f4fa;border-left:5px solid #0077b6}.button{display:inline-block;background:#00638d;color:white;padding:12px 18px;border-radius:8px;font-weight:700;text-decoration:none}li{margin:.6rem 0}dt{margin-top:1rem}dd{margin-left:0}.formula{padding:18px;background:#e5f4fa;border-radius:10px;font-weight:650;overflow-wrap:anywhere}.sources{font-size:.94rem;border-top:1px solid #cbdce8;margin-top:36px;padding-top:16px}.skip-link{position:absolute;left:-9999px}.skip-link:focus{position:fixed;left:12px;top:12px;background:white;padding:12px;z-index:9999}.fallback-nav{max-width:860px;margin:auto;padding:16px 22px}.fallback-nav a{margin-right:16px}.fine{font-size:.9rem}*{box-sizing:border-box}</style>
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "PriceLabs no Airbnb: como definir preço mínimo e máximo por temporada",
-  "description": "Aprenda a configurar preço mínimo e máximo no PriceLabs para imóveis de temporada no litoral paulista, com regras por período e exemplos práticos.",
+  "headline": "PriceLabs: como definir mínimo, base e máximo sem ignorar custos",
+  "description": "Calcule um piso de planejamento, entenda mínimo, base e máximo no PriceLabs e confira descontos, exceções e preço final antes de sincronizar.",
   "url": "https://praia.digital/blog/pricelabs-airbnb-preco-minimo-maximo-temporada.html",
-  "author": {"@type": "Organization", "name": "Praia Digital"},
-  "publisher": {"@type": "Organization", "name": "Praia Digital"},
+  "mainEntityOfPage": "https://praia.digital/blog/pricelabs-airbnb-preco-minimo-maximo-temporada.html",
+  "inLanguage": "pt-BR",
   "datePublished": "2026-08-11T12:11:37Z",
-  "dateModified": "2026-08-25"
-}
-</script>
-<style>
-body{font-family:Arial,Helvetica,sans-serif;background:#F4EBD0;color:#023047;margin:0;padding:0}
-.container{max-width:900px;margin:0 auto;padding:20px}
-a{color:#0077B6;text-decoration:underline}
-.nav{margin-bottom:20px}
-.nav a{margin-right:10px}
-.card{background:#f8fafc;border:1px solid #d0d7de;border-radius:8px;padding:16px;margin:12px 0}
-.badge{display:inline-block;background:#0077B6;color:#fff;padding:4px 8px;border-radius:999px;font-size:12px;margin:4px 6px 0 0}
-.cta{background:#0077B6;color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;display:inline-block;margin:16px 0}
-</style>
-<meta name="description" content="PriceLabs no Airbnb: como definir preço mínimo e máximo por temporada">
-<link rel="stylesheet" href="https://praia.digital/css/style.css">
-<link rel="stylesheet" href="/assets/css/related-ads.css">
-<script src="/assets/js/related-ads.js"></script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "",
-  "url": "https://praia.digital/blog/pricelabs-airbnb-preco-minimo-maximo-temporada.html",
-  "datePublished": "2026-08-25",
-  "dateModified": "2026-08-25",
+  "dateModified": "2026-11-02",
   "author": {
-    "@type": "Person",
-    "name": "Caroline Mourad",
-    "jobTitle": "Especialista em SEO e Proptech — Praia Digital",
-    "url": "https://praia.digital/"
+    "@type": "Organization",
+    "name": "Praia Digital"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Praia Digital",
     "url": "https://praia.digital/"
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Pricelabs Airbnb Preco Minimo Maximo Temporada: quanto custa e como começar?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Custo e prazo variam por escopo; o caminho mais rápido é um piloto com automação e captação no WhatsApp."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Pricelabs Airbnb Preco Minimo Maximo Temporada realmente aumenta resultados no litoral?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sim, quando aplicado com fluxos claros, métricas e follow-up em até 24h."
-      }
-    }
-  ]
-}
-</script>
-  <!-- Meta Pixel (env fallback) -->
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init", window.PD_META_PIXEL_ID || "");fbq("track","PageView");
-</script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=" + (window.PD_META_PIXEL_ID || "") + "&ev=PageView&noscript=1" /></noscript>
-</head>
-<body>
+  },
+  "image": "https://praia.digital/assets/social/praia-digital-institucional-v1.png"
+}</script>
+</head><body><a class="skip-link" href="#main">Pular para o conteúdo</a>
 <meta name="pd-shared-nav">
-<div class="container">
-<div class="nav">
-<a href="https://praia.digital/index.html">Início</a>
-<a href="https://praia.digital/blog/index.html">Blog</a>
-</div>
-<article>
-<p><strong>Pricelabs Airbnb Preco Minimo Maximo Temporada</strong>: veja o que funciona na prática no litoral paulista e como aplicar sem perder tempo.</p>
-<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
-  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
-  <div id="pd-ads-top" data-ad-id="ads-top" style="min-height:100px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
-    Espaço reservado para anúncio AdSense (topo)
-  </div>
-  <noscript>
-    <!-- Fallback para quando JavaScript está desativado -->
-    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
-  </noscript>
-</div>
+<nav class="fallback-nav" aria-label="Caminho da página"><a href="/">Início</a><a href="/blog/index.html">Blog</a><a href="/servicos/anuncios-airbnb-booking.html">Serviços para anfitriões</a></nav>
+<main id="main"><article><header><h1>PriceLabs: como definir mínimo, base e máximo sem ignorar custos</h1><p class="meta">Por Praia Digital · Atualizado em <time datetime="2026-11-02">2 de novembro de 2026</time></p></header>
 
-<ul>
-  <li>Passo a passo prático para reduzir fricção.</li>
-  <li>Erros comuns que aumentam custo e atrasam resultado.</li>
-  <li>Indicadores mínimos para medir resultado.</li>
-</ul>
-<p>Se quiser um plano aplicado por especialistas, fale no WhatsApp: <a href="https://wa.me/5511954346288">(11) 95434-6288</a></p>
-<h1>PriceLabs no Airbnb: como definir preço mínimo e máximo por temporada</h1>
-<p>Definir preço mínimo e máximo no PriceLabs não é só apertar “automático”. No litoral, cada período exige regras diferentes: alta temporada, feriados prolongados e baixa temporada pedem limites distintos para proteger receita e ocupação.</p
-<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
-  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
-  <div id="pd-ads-inarticle" data-ad-id="ads-inarticle" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
-    Espaço reservado para anúncio AdSense nativo (meio do texto)
-  </div>
-</div>
->
+<p class="lead">O mínimo protege uma decisão de preço; não garante lucro. O preço-base orienta o algoritmo; não é a diária fixa. E o máximo precisa de uma justificativa, não de um multiplicador universal. Este roteiro é para anfitriões que precisam revisar sua configuração com custos e calendário em mãos.</p>
+<nav class="toc" aria-label="Neste artigo"><strong>Neste guia</strong><a href="#conceitos">Os três preços</a><a href="#conta">Exemplo de cálculo</a><a href="#configuracao">Revisão da configuração</a><a href="#teste">Teste no canal</a><a href="#rotina">Acompanhamento</a></nav>
+<h2 id="conceitos">1. Entenda o que cada campo faz</h2>
+<dl><dt><strong>Preço mínimo</strong></dt><dd>É um limite das recomendações, sujeito às regras e exceções da ferramenta. Uma substituição fixa para datas específicas pode prevalecer sobre o mínimo. Portanto, não trate o campo como uma trava absoluta de qualquer preço final.</dd><dt><strong>Preço-base</strong></dt><dd>É a referência a partir da qual a ferramenta calcula variações. Não confunda essa referência com custo, diária média realizada ou promessa de faturamento.</dd><dt><strong>Preço máximo</strong></dt><dd>Limita recomendações superiores, também sujeito à configuração. Um teto muito baixo pode conter preços em datas de demanda elevada; um teto alto não significa que haverá compradores.</dd></dl>
+<p>Essas distinções e as exceções são descritas na <a href="https://help.pricelabs.co/portal/en/kb/articles/what-are-minimum-base-and-maximum-prices-how-to-set-them-up">documentação de mínimo, base e máximo</a>. A hierarquia de personalizações importa: confira também <a href="https://help.pricelabs.co/portal/en/kb/articles/advanced-minimum-price-settings">as configurações avançadas de mínimo</a>. As telas e opções podem variar conforme integração e conta.</p>
+<h2 id="conta">2. Faça um piso de planejamento antes de mexer no calendário</h2>
+<p>Reúna condomínio, IPTU mensalizado, internet, manutenção, custos da ferramenta, gestão e demais despesas aplicáveis. Separe <strong>custos fixos mensais</strong>, <strong>custos por noite ocupada</strong> e <strong>custos por reserva</strong>. Use despesas comprovadas e uma hipótese explícita de noites vendidas — não as 30 noites do mês por padrão.</p>
+<p>Uma conta simplificada, quando toda a receita considerada é a diária e os descontos percentuais incidem sobre essa mesma base, é:</p>
+<div class="formula">Diária de equilíbrio planejada = (custos fixos ÷ noites vendidas + custo por noite + custo por reserva ÷ noites por reserva) ÷ (1 − deduções proporcionais)</div>
+<p>As deduções precisam ser menores que 100%. Se houver taxa de limpeza cobrada à parte, impostos com outra base de cálculo, comissões diferentes ou receitas adicionais, adapte a planilha. Não some percentuais que incidem sobre bases diferentes. Não conte a mesma limpeza como custo integral e como custo já compensado por uma receita líquida específica.</p>
+<div class="card"><h3>Exemplo hipotético, não tarifa recomendada para o litoral</h3><ul><li>Custos fixos: R$ 1.800 por mês.</li><li>Previsão: 15 noites vendidas; estadia média de 3 noites.</li><li>Custo variável: R$ 30 por noite; limpeza: R$ 150 por reserva.</li><li>Deduções hipotéticas: 20% de toda a receita de diárias. Esse percentual não representa a tarifa de uma plataforma.</li><li>Neste exemplo não há cobrança separada de limpeza, receita extra nem outros custos fora dos valores listados.</li></ul><p>Conta: (1.800 ÷ 15 + 30 + 150 ÷ 3) ÷ (1 − 0,20) = (120 + 30 + 50) ÷ 0,80 = <strong>R$ 250 por noite</strong>.</p><p>Conferência: 15 × 250 = R$ 3.750 de receita; R$ 750 de deduções; R$ 1.800 fixos; R$ 450 variáveis; 5 limpezas × R$ 150 = R$ 750. Saldo: <strong>R$ 0</strong>. É equilíbrio desse cenário, não lucro, retorno do investimento ou garantia de ocupação.</p></div>
+<p>Se vender só 10 noites, mantendo as demais hipóteses, o piso planejado passa para (180 + 30 + 50) ÷ 0,80 = <strong>R$ 325</strong>. O custo por reserva foi rateado pela estadia média de três noites; não representa uma contagem inteira de reservas nesse segundo cenário. Isso mostra a sensibilidade à ocupação. O mercado não é obrigado a aceitar essa tarifa: se o preço viável para o hóspede for menor, reveja custos, produto e estratégia em vez de declarar que o algoritmo garantirá a margem.</p>
+<p><strong>Taxas reais:</strong> confira cada reserva e contrato. A documentação atual do <a href="https://www.airbnb.com/help/article/1857">Airbnb</a> descreve estruturas de taxa e uma transição entre elas; não aplique um percentual único a todas as reservas, sobretudo às feitas antes da mudança. No Booking e nas ferramentas de gestão, use as condições efetivas da sua conta. Custos tributários exigem enquadramento próprio e orientação contábil quando necessário.</p>
+<h2 id="configuracao">3. Defina a base com comparáveis e revise o máximo</h2>
+<p>Compare imóveis de localização, capacidade, estrutura e condições semelhantes. Uma casa com piscina não é comparável direto a um studio sem estacionamento. Registre também período, antecedência, estadia mínima, política de cancelamento e preço total. Preço anunciado por concorrente não é prova de preço efetivamente vendido.</p>
+<p>Use a ajuda de preço-base da ferramenta como apoio, não como substituta da análise do seu imóvel. Consulte <a href="https://help.pricelabs.co/portal/en/kb/articles/setting-base-price">a orientação oficial para definir a base</a>. Anúncios novos têm menos histórico próprio; documente a hipótese e o motivo de cada ajuste.</p>
+<p>Não existe neste guia uma regra de “máximo igual a três vezes a base”. Se adotar um teto, explique por que ele é adequado ao posicionamento e às datas. Observe se muitas recomendações encostam no teto; isso pede investigação, não aumento automático. Feriados exigem conferir demanda, calendário local e restrições antes de definir exceções.</p>
+<h2>4. Confira quem controla o preço</h2>
+<ul><li>Identifique o caminho de sincronização: PriceLabs → canal ou PriceLabs → sistema de gestão → canal.</li><li>Registre qual ferramenta envia preços e quais campos ela controla. Evite configurações concorrentes que sobrescrevam alterações.</li><li>Revise substituições por data, regras de grupo/conta e mínimos sazonais antes de alterar a configuração geral.</li><li>Confira descontos semanais, mensais e promoções no canal. Um preço enviado não é necessariamente o valor líquido final.</li><li>Trate estadia mínima separadamente: uma diária disponível pode continuar impossível de reservar por causa de restrições de duração ou chegada.</li></ul>
+<h2 id="teste">5. Teste antes de considerar a revisão concluída</h2>
+<ol><li>Guarde os valores anteriores e o motivo da alteração, sem registrar chaves ou senhas.</li><li>Escolha datas de teste: dia útil, fim de semana, feriado, lacuna entre reservas e uma estadia mais longa.</li><li>Compare recomendação, preço enviado e preço exibido no canal para os mesmos hóspedes e datas.</li><li>Abra a simulação até o detalhamento do total, sem efetuar uma compra. Confira taxas, descontos e duração mínima.</li><li>Se houver diferença, identifique sua origem antes de repetir a sincronização. Verifique exceções e documentação da integração.</li><li>Registre data, responsável e resultado. Só então amplie o ajuste, preservando reservas já confirmadas.</li></ol>
+<h2 id="rotina">6. Acompanhe resultado com contexto</h2>
+<p>Revise semanalmente, como rotina operacional sugerida, noites vendidas, noites realmente ofertadas, diária média e receita líquida após custos identificados. Compare períodos de mesma duração e informe bloqueios para uso próprio ou manutenção. Não celebre ocupação maior se o desconto fez a contribuição financeira cair.</p>
+<p>Altere poucas variáveis por vez e mantenha um histórico. Resultado fraco pode envolver foto, regras, localização, disponibilidade ou produto, não só tarifa. Use o <a href="/blog/checklist-anuncio-perfeito-airbnb-booking-litoral-2026.html">checklist de anúncio Airbnb e Booking</a> para revisar a apresentação antes de recorrer a descontos sucessivos.</p>
+<section class="cta-box"><h2>Precisa revisar sua configuração com apoio?</h2><p>A consultoria ou gestão com PriceLabs tem <strong>escopo e valor sob consulta</strong>, separados do serviço de anúncio de R$ 499 e da assinatura da ferramenta. Não há garantia de reservas ou rentabilidade.</p><p>Envie o link público do anúncio, cidade, quantidade de imóveis e objetivo da revisão. Não envie senha, chave de API ou dados pessoais de hóspedes.</p><a class="button" href="/anfitrioes/central-priceplabs.html#gestao-pricelabs">Consultar gestão e revisão de preços</a></section>
 
-<h2>Por que preço mínimo e máximo importam no litoral</h2>
-<p>O preço mínimo evita diárias abaixo do custo operacional em baixa temporada. O preço máximo protege a percepção de valor em feriados e impede que o algoritmo gere cobranças excessivas que afastem buscas.</p>
-
-<h2>Como calcular o preço mínimo</h2>
-<ul>
-<li>Some custos fixos mensais: condomínio, energia, limpeza e manutenção.</li>
-<li>Divida pela capacidade máxima de ocupação do mês.</li>
-<li>Some custos variáveis por diária.</li>
-<li>Use esse valor como piso mínimo em meses fracos.</li>
-</ul>
-
-<h2>Como calcular o preço máximo</h2>
-<p>Observe os 5 concorrentes diretos mais bem avaliados do bairro. Se o PriceLabs sugerir valor acima do teto do mercado, limite manualmente para preservar competitividade e avaliações.</p>
-
-<h2>Ajustes por temporada no litoral</h2>
-<ul>
-<li>Alta temporada: preço máximo pode subir até 2x o valor base.</li>
-<li>Feriados prolongados: eleve máximo e mantenha estadia mínima maior.</li>
-<li>Baixa temporada: reduza mínimo para manter fluxo e avaliações.</li>
-<li>Semana útil fora de temporada: flexibilidade maior se a ocupação cair.</li>
-</ul>
-
-<h2>Erros comuns</h2>
-<ul>
-<li>deixar o algoritmo 100% automático sem revisão de feriados;</li>
-<li>ignorar concorrentes diretos do mesmo bairro;</li>
-<li>não diferenciar imóveis com vista mar, piscina ou sacada.</li>
-</ul>
-
-<h2>Checklist rápida</h2>
-<ul>
-<li>Defina custo operacional por diária.</li>
-<li>Monitore 5 concorrentes diretos.</li>
-<li>Ajuste regras por temporada e feriado.</li>
-<li>Revise recomendações semanalmente.</li>
-</ul>
-
-<h2>FAQ</h2>
-<p><strong>1. O PriceLabs ajusta preço automaticamente?</strong><br/>Sim, mas é recomendado revisar regras de mínimo, máximo e estadia mínima periodicamente.</p>
-<p><strong>2.Quando devo subir o preço máximo?</strong><br/>Em alta temporada, feriados prolongados e quando a antecedência de reserva for alta.</p>
-
-<div class="card">
-<p>Domine o PriceLabs na prática com o curso oficial da Praia Digital Academy.</p>
-<a class="cta" href="https://praia.digital/education/cursos/pricelabs-completo/">Acessar curso</a>
-</div>
-
-<h2>Artigos relacionados</h2>
-<ul>
-<li><a href="Segmento-aluguel-temporada-litoral-2026.html">Segmento de aluguel de temporada no litoral</a></li>
-<li><a href="airbnb-vs-booking-litoral-sp.html">Airbnb vs Booking no litoral</a></li>
-<li><a href="pricelabs-imobiliarias-litoral-aumentar-receita-temporada.html">PriceLabs para imobiliárias do litoral</a></li>
-</ul>
-<div class="related"></div>
-</article>
-</div>
-
-<p><strong>Quer vender ou alugar seu imóvel no litoral?</strong></p>
-<p>Fale agora com um especialista pelo WhatsApp: <a href="https://wa.me/5511954346288?text=Ol%C3%A1,%20tenho%20interesse%20em%20PriceLabs%20no%20Airbnb%3A%20como%20definir%20pre%C3%A7o%20m%C3%ADnimo%20e%20m%C3%A1ximo%20por%20temporada">Clique aqui para atendimento</a></p>
-
-
-<p><strong>Conteúdos complementares:</strong></p>
-<ul>
-<li><a href="/education/formacoes/locacao-temporada-administracao.html">Locacao Temporada Administracao</a></li>
-<li><a href="/education/formacoes/avaliacao-imoveis-ptam.html">Avaliacao Imoveis Ptam</a></li>
-</ul>
-
-<meta name="pd-shared-footer">
-<script src="https://praia.digital/js/shared.js?v=2.0"></script>
-<section id="tambem-veja" style="margin-top:28px"><p><strong>Veja também:</strong></p><ul><li><a href="/hub/aluguel-temporada-litoral/">Conteúdos relacionados sobre Aluguel-Temporada-Litoral</a></li></ul></section><section id="disclaimer" style="margin-top:40px;padding:16px;border-top:1px solid #e5e7eb"><p><strong>Aviso legal:</strong> Este conteúdo tem caráter informativo e não constitui assessoria jurídica, contábil ou imobiliária. Dados e projeções dependem de contexto de mercado. Consulte profissional habilitado para decisões específicas.</p></section>
-  <!--#include virtual="/partials/lead-modal.html" -->
-  <script defer src="https://praia.digital/js/lead-modal.js"></script>
-<script>
-(function(){
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if (entry.isIntersecting) {
-          const el = entry.target;
-          const adId = el.getAttribute('data-ad-id');
-          if (adId && !el.hasAttribute('data-ad-loaded')) {
-            el.setAttribute('data-ad-loaded', 'true');
-            // Placeholder para substituição futura pelo snippet AdSense real
-            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
-          }
-          observer.unobserve(el);
-        }
-      });
-    }, { rootMargin: '200px' });
-    
-    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
-      observer.observe(el);
-    });
-  }
-})();
-</script>
-
-</body>
-</html>
+<section class="sources" aria-labelledby="fontes"><h2 id="fontes">Fontes e critérios de atualização</h2><p>Documentação oficial consultada em 2 de novembro de 2026. Configurações e políticas podem mudar; confirme as condições da sua conta antes de aplicar. Os checklists são orientações editoriais da Praia Digital, e os exemplos numéricos são hipotéticos.</p><ul><li><a href="https://help.pricelabs.co/portal/en/kb/articles/what-are-minimum-base-and-maximum-prices-how-to-set-them-up">PriceLabs — Mínimo, base e máximo</a></li><li><a href="https://help.pricelabs.co/portal/en/kb/articles/advanced-minimum-price-settings">PriceLabs — Configurações avançadas de mínimo</a></li><li><a href="https://help.pricelabs.co/portal/en/kb/articles/setting-base-price">PriceLabs — Definir o preço-base</a></li><li><a href="https://www.airbnb.com/help/article/1857">Airbnb — Taxas de serviço</a></li></ul><p class="fine">Conteúdo informativo, sem garantia de reservas ou receita. Não substitui análise jurídica, contábil ou técnica específica do imóvel.</p></section>
+</article></main><meta name="pd-shared-footer"><script src="/js/shared.js?v=2.0" defer></script>
+</body></html>
