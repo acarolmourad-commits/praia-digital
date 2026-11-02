@@ -110,7 +110,11 @@ def transform(text, header):
     text = re.sub(r'<link\b[^>]*href[^>]*?/assets/css/pd-navigation\.css[^>]*>\s*', '', text, flags=re.I)
     text = re.sub(r'<script\b[^>]*src[^>]*?/js/pd-navigation\.js[^>]*>\s*</script>\s*', '', text, flags=re.I)
     text = re.sub(r'</head\s*>', lambda m: ASSETS + m.group(), text, count=1, flags=re.I)
-    text = re.sub(r'(<body\b[^>]*>)\s*', lambda m: m.group(1) + '\n' + header.rstrip() + '\n', text, count=1, flags=re.I)
+    # A leading skip link must remain before the navigation it lets keyboard users bypass.
+    text = re.sub(
+        r'(<body\b[^>]*>)\s*(?P<skip><a\b[^>]*class=["\'][^"\']*\bskip-link\b[^"\']*["\'][^>]*>.*?</a>\s*)?',
+        lambda m: m.group(1) + '\n' + (m.group('skip').rstrip() + '\n' if m.group('skip') else '') + header.rstrip() + '\n',
+        text, count=1, flags=re.I | re.S)
     return text, True
 
 def build(root):

@@ -1,0 +1,182 @@
+{
+  "reviewed": "2026-11-02",
+  "regionalSource": "https://semil.sp.gov.br/sma/gerco/",
+  "cities": [
+    {
+      "slug": "ubatuba",
+      "name": "Ubatuba",
+      "region": "Litoral Norte",
+      "intro": "Praias e núcleos urbanos ao longo da costa: comece pela localização do imóvel e pelos serviços de que você precisa no dia a dia.",
+      "local": "Itaguá reúne comércio, restaurantes e hospedagem junto à orla. O portal municipal descreve sua ligação com a Praia do Cruzeiro pela barra do Rio Tavares.",
+      "visit": "Use Itaguá como referência para observar serviços e circulação a pé. Praia urbanizada e proximidade do mar não dispensam a consulta à balneabilidade antes do banho.",
+      "check": "Compare a distância real entre o endereço, os serviços e a praia escolhida. Não trate todas as praias de Ubatuba como um único mercado.",
+      "source": "https://turismo.ubatuba.sp.gov.br/praias/praia-do-itagua/",
+      "sourceLabel": "Turismo de Ubatuba — Itaguá"
+    },
+    {
+      "slug": "caraguatatuba",
+      "name": "Caraguatatuba",
+      "region": "Litoral Norte",
+      "intro": "Martim de Sá, Centro e outros núcleos pedem uma comparação por endereço, com atenção à rotina e aos trajetos dentro da cidade.",
+      "local": "A praia de Martim de Sá abriga os arcos próximos ao Rio Guaxinduba. A Prefeitura também identifica o Complexo Turístico do Camaroeiro e a Praça do Caiçara entre os pontos turísticos municipais.",
+      "visit": "Inclua a orla da Martim de Sá e o Camaroeiro na visita de reconhecimento. Observe a distância entre esses pontos e o imóvel, sem usar a localização turística como promessa de retorno.",
+      "check": "Teste os deslocamentos entre a moradia, o trabalho e os serviços que utiliza. Uma visita à orla não substitui a avaliação da rua e do prédio.",
+      "source": "https://www.caraguatatuba.sp.gov.br/pmc/2022/02/prefeitura-de-caraguatatuba-revitaliza-arcos-da-martim-de-sa/",
+      "sourceLabel": "Prefeitura de Caraguatatuba — referências urbanas de Martim de Sá"
+    },
+    {
+      "slug": "sao-sebastiao",
+      "name": "São Sebastião",
+      "region": "Litoral Norte",
+      "intro": "Escolher a praia e o trecho da costa é parte da escolha do imóvel. Maresias é uma das referências locais, mas não representa toda a cidade.",
+      "local": "Maresias fica entre Boiçucanga e Paúba, no eixo da Rio–Santos. O portal de turismo destaca a ligação da praia com o surf e os serviços de hospedagem e alimentação.",
+      "visit": "Na visita a Maresias, compare a posição do imóvel em relação à rodovia, à praia e aos serviços. Para banho e atividades no mar, observe a sinalização e as condições do dia.",
+      "check": "Planeje o percurso até o endereço exato e visite em horários diferentes. A distância até o centro de São Sebastião merece atenção quando ele faz parte da sua rotina.",
+      "source": "https://www.turismosaosebastiao.com.br/item/maresias",
+      "sourceLabel": "Turismo São Sebastião — Maresias"
+    },
+    {
+      "slug": "ilhabela",
+      "name": "Ilhabela",
+      "region": "Litoral Norte",
+      "intro": "A localização na ilha e os deslocamentos fazem parte da decisão. Compare a rotina pretendida com o acesso ao imóvel e aos serviços.",
+      "local": "A Praia do Perequê fica entre a balsa e a Vila, próxima ao centro comercial. Seu entorno reúne restaurantes, quiosques e uma ciclovia acompanhando a orla.",
+      "visit": "Perequê é uma referência para reconhecer a faixa urbana. Se o imóvel estiver em outra região da ilha, confira o trajeto completo antes de usar essa estrutura como parâmetro.",
+      "check": "Inclua a travessia no planejamento quando houver viagens ao continente. Consulte a operação vigente e não considere um tempo fixo de espera para todos os dias.",
+      "source": "https://turismoilhabela.com/praias/praia-do-pereque/",
+      "sourceLabel": "Turismo Ilhabela — Praia do Perequê"
+    },
+    {
+      "slug": "bertioga",
+      "name": "Bertioga",
+      "region": "Baixada Santista",
+      "intro": "Enseada, Riviera de São Lourenço e praias como Itaguaré e Guaratuba ajudam a orientar a pesquisa por diferentes trechos do município.",
+      "local": "O guia municipal distingue Enseada, Indaiá, São Lourenço, Itaguaré, Guaratuba e Boracéia. Itaguaré está associada ao Parque Estadual Restinga de Bertioga; a Riviera integra a referência de São Lourenço.",
+      "visit": "Compare a estrutura existente em cada trecho e o caminho até a praia. Itaguaré e as áreas de restinga exigem atenção às orientações ambientais e de visitação.",
+      "check": "Bertioga integra a Baixada Santista no recorte regional adotado aqui, embora apareça em roteiros turísticos do Litoral Norte. Confirme o endereço e os trajetos, sem presumir que todos os bairros tenham a estrutura da Riviera.",
+      "source": "https://www.bertioga.sp.gov.br/turismo/pontos-turisticos/praias",
+      "sourceLabel": "Prefeitura de Bertioga — praias"
+    },
+    {
+      "slug": "guaruja",
+      "name": "Guarujá",
+      "region": "Baixada Santista",
+      "intro": "Pitangueiras, Enseada, Astúrias e Tombo são referências distintas para começar a comparar a localização de um imóvel.",
+      "local": "Pitangueiras ocupa uma posição central na cidade. Astúrias fica entre Pitangueiras e Tombo, enquanto a Enseada tem uma orla com serviços turísticos e opções de lazer.",
+      "visit": "Reconheça a praia e as ruas do entorno de cada endereço. O portal municipal diferencia os acessos e as características das praias; consulte as condições atuais antes da visita.",
+      "check": "Avalie o trajeto de entrada e saída da cidade e, se depender de travessia, consulte sua operação. Proximidade da praia não informa, sozinha, custo de condomínio ou estado de conservação.",
+      "source": "https://www.guaruja.sp.gov.br/praias",
+      "sourceLabel": "Prefeitura de Guarujá — praias"
+    },
+    {
+      "slug": "santos",
+      "name": "Santos",
+      "region": "Baixada Santista",
+      "intro": "A orla e seus jardins são referências para localizar bairros, mas a pesquisa de moradia deve incluir os trajetos e os serviços usados durante a semana.",
+      "local": "Os jardins da orla acompanham o trecho entre José Menino e Ponta da Praia. Além da paisagem, reúnem monumentos e uma ciclovia, conforme o portal municipal de turismo.",
+      "visit": "Percorra o trecho da orla próximo ao endereço e depois visite as ruas internas. A caminhada ajuda a comparar acessos, circulação e distância até comércio e transporte.",
+      "check": "Em apartamentos, peça informações sobre manutenção do edifício e despesas condominiais. Compare imóveis semelhantes no mesmo entorno antes de extrapolar preços para toda Santos.",
+      "source": "https://www.turismosantos.com.br/pt-br/content/jardim-da-orla",
+      "sourceLabel": "Turismo Santos — Jardim da Orla"
+    },
+    {
+      "slug": "sao-vicente",
+      "name": "São Vicente",
+      "region": "Baixada Santista",
+      "intro": "Gonzaguinha, Itararé e a região da Ilha Porchat oferecem referências para conhecer a orla vicentina e situar sua busca.",
+      "local": "A Prefeitura identifica o eixo entre Itararé e Ilha Porchat como área de atrativos, incluindo o Memorial dos 500 Anos. Gonzaguinha e o centro comercial compõem outro trecho importante para reconhecer a cidade.",
+      "visit": "Compare os percursos entre a orla, o centro e o endereço de interesse. Consulte os canais municipais para saber a situação de obras e equipamentos antes de programar uma visita.",
+      "check": "Diferencie o endereço do imóvel da referência turística usada no anúncio. Faça o trajeto até trabalho, escola ou transporte no horário em que pretende utilizá-lo.",
+      "source": "https://www.saovicente.sp.gov.br/informacao/pacote-de-investimentos-no-itarare-conecta-turismo-e-seguranca",
+      "sourceLabel": "Prefeitura de São Vicente — referências do eixo Itararé e Ilha Porchat"
+    },
+    {
+      "slug": "cubatao",
+      "name": "Cubatão",
+      "region": "Baixada Santista",
+      "intro": "Uma cidade da Baixada Santista com contexto industrial e estuarino. Sua inclusão regional não significa que tenha praia oceânica.",
+      "local": "O parque industrial de Cubatão integra a dinâmica econômica regional descrita pela Semil. Para avaliar uma moradia, o endereço e o trajeto de trabalho são referências mais úteis que uma comparação genérica com cidades de praia.",
+      "visit": "O Caminhos do Mar liga o patrimônio histórico à paisagem da Serra do Mar. Confira portaria de acesso, funcionamento e condições de visitação diretamente com o equipamento.",
+      "check": "Compare deslocamentos cotidianos, serviços e características do entorno. Não deduza demanda de aluguel ou valorização apenas pela presença de atividades industriais.",
+      "source": "https://visitecubatao.com.br/servicos/12",
+      "sourceLabel": "Visite Cubatão — Caminhos do Mar"
+    },
+    {
+      "slug": "praia-grande",
+      "name": "Praia Grande",
+      "region": "Baixada Santista",
+      "intro": "A escolha do bairro e da distância até os serviços ajuda a tornar a busca na orla mais concreta. Canto do Forte é uma das referências de visita.",
+      "local": "A Fortaleza de Itaipu fica no Canto do Forte, junto à Mata Atlântica e com vista para a Baía de Santos. É um ponto de patrimônio e paisagem identificado pelo turismo municipal.",
+      "visit": "Use a região do Canto do Forte para reconhecer esse trecho da cidade, sem generalizar suas características para todos os bairros. A visita à Fortaleza depende das orientações do local.",
+      "check": "No imóvel, confira garagem, manutenção do prédio e despesas mensais. Compare a posição em relação à orla e às vias de acesso, e não apenas o nome do bairro.",
+      "source": "https://turismo.praiagrande.sp.gov.br/2021/04/16/fortaleza-de-itaipu/",
+      "sourceLabel": "Turismo Praia Grande — Fortaleza de Itaipu"
+    },
+    {
+      "slug": "mongagua",
+      "name": "Mongaguá",
+      "region": "Baixada Santista",
+      "intro": "Centro e Agenor de Campos ajudam a organizar uma primeira visita à cidade, combinando referências urbanas e pontos de lazer.",
+      "local": "A Plataforma de Pesca Amadora está em Agenor de Campos. O portal municipal também lista o Poço das Antas e o Morro da Padroeira entre os atrativos locais.",
+      "visit": "Escolha o trecho de interesse antes de percorrer os atrativos. Compare a distância do imóvel até os serviços de uso frequente e consulte as condições de visita nos canais municipais.",
+      "check": "Observe a rua, a drenagem visível e as condições de acesso durante a visita. Verifique com os órgãos locais as informações do endereço antes de decidir por uma compra.",
+      "source": "https://mongagua.sp.gov.br/turismo",
+      "sourceLabel": "Prefeitura de Mongaguá — turismo"
+    },
+    {
+      "slug": "itanhaem",
+      "name": "Itanhaém",
+      "region": "Baixada Santista",
+      "intro": "O Centro Histórico e os trechos de praia permitem reconhecer diferentes partes da cidade antes de escolher um endereço.",
+      "local": "O Centro Histórico reúne a Matriz de Sant’Anna, o Convento Nossa Senhora da Conceição e o Museu Conceição de Itanhaém. A Gruta Nossa Senhora de Lourdes fica entre Cibratel e Praia dos Sonhos.",
+      "visit": "Separe uma visita ao núcleo histórico de outra ao entorno do imóvel. Assim é possível avaliar a distância entre patrimônio, praia e serviços sem confundir essas referências.",
+      "check": "Para casas e terrenos, confirme a localização do lote, os serviços disponíveis na rua e a situação documental com os responsáveis competentes.",
+      "source": "https://www2.itanhaem.sp.gov.br/2022/11/11/conheca-alguns-dos-pontos-turisticos-para-visitar-em-itanhaem/",
+      "sourceLabel": "Prefeitura de Itanhaém — pontos turísticos"
+    },
+    {
+      "slug": "peruibe",
+      "name": "Peruíbe",
+      "region": "Baixada Santista",
+      "intro": "A pesquisa de imóveis deve distinguir a área urbana e os trechos próximos a ambientes protegidos, com atenção ao acesso de cada endereço.",
+      "local": "O portal municipal destaca a Juréia-Itatins e unidades como o Parque Natural Municipal da Restinga do Guaraú. Natureza e praia são referências locais, com orientações específicas de uso e visitação.",
+      "visit": "Consulte a Prefeitura e a unidade de conservação antes de planejar passeios em áreas protegidas. Não considere toda área natural como livre para acesso ou ocupação.",
+      "check": "Ao comparar endereços próximos ao Guaraú ou a áreas de conservação, confirme acesso, infraestrutura e restrições aplicáveis ao imóvel com os órgãos responsáveis.",
+      "source": "https://www.peruibe.sp.gov.br/turismo/",
+      "sourceLabel": "Prefeitura de Peruíbe — turismo e patrimônio ambiental"
+    },
+    {
+      "slug": "iguape",
+      "name": "Iguape",
+      "region": "Litoral Sul (Lagamar)",
+      "intro": "Iguape integra o Lagamar, com paisagem estuarina e ligação com Ilha Comprida. São municípios diferentes, que precisam ser distinguidos na busca.",
+      "local": "A Semil inclui Iguape no Complexo Estuarino-Lagunar ao lado de Cananéia e Ilha Comprida. A ligação rodoviária pela ponte para Ilha Comprida é uma referência para planejar os deslocamentos entre os municípios.",
+      "visit": "Defina se o endereço pretendido está em Iguape ou em Ilha Comprida. O acesso pela ponte leva ao norte de Ilha Comprida; isso não torna seus balneários bairros de Iguape.",
+      "check": "Ao analisar um anúncio do Lagamar, confira município, endereço e matrícula. Uma descrição regional ampla não permite identificar a infraestrutura disponível no lote.",
+      "source": "https://www.ilhacomprida.sp.gov.br/como-chegar",
+      "sourceLabel": "Prefeitura de Ilha Comprida — informações municipais e acessos"
+    },
+    {
+      "slug": "ilha-comprida",
+      "name": "Ilha Comprida",
+      "region": "Litoral Sul (Lagamar)",
+      "intro": "Boqueirão Norte, Boqueirão Sul e as vilas voltadas ao Mar Pequeno exigem atenção à localização e ao acesso escolhido.",
+      "local": "A Prefeitura descreve um município entre o mar aberto e o Mar Pequeno, com dunas e vilas caiçaras. Boqueirão Norte e Boqueirão Sul são referências territoriais da ilha, não municípios separados.",
+      "visit": "Compare o ponto do imóvel com o acesso à ilha e os serviços próximos. A paisagem do Mar Pequeno e a frente para o oceano são situações distintas para reconhecer na visita.",
+      "check": "A Prefeitura informa que todo o território está em Área de Proteção Ambiental. Antes de comprar um lote, confirme sua regularidade e as regras específicas de uso com os órgãos competentes.",
+      "source": "https://ilhacomprida.sp.gov.br/turismo-surpreenda-se-com-os-encantos-da-ilha-de-norte-a-sul",
+      "sourceLabel": "Prefeitura de Ilha Comprida — referências de norte a sul"
+    },
+    {
+      "slug": "cananeia",
+      "name": "Cananéia",
+      "region": "Litoral Sul (Lagamar)",
+      "intro": "Cidade do Lagamar: a localização do endereço e as ligações entre áreas urbanas, ilhas e continente são centrais na pesquisa.",
+      "local": "Cananéia integra o Complexo Estuarino-Lagunar com Iguape e Ilha Comprida. O portal municipal oferece canais de turismo e planejamento que ajudam a conferir o destino antes da visita.",
+      "visit": "Planeje o deslocamento até o endereço exato e consulte os canais locais sobre travessias e passeios. Uma referência a Cananéia em um anúncio não esclarece, sozinha, como chegar ao imóvel.",
+      "check": "Diferencie o uso pretendido para moradia de uma estadia turística. Verifique acesso, serviços e situação documental antes de projetar despesas ou receitas de locação.",
+      "source": "https://cananeia.sp.gov.br/",
+      "sourceLabel": "Prefeitura de Cananéia — canais municipais"
+    }
+  ]
+}
