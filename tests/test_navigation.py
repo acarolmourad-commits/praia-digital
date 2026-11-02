@@ -10,6 +10,17 @@ spec.loader.exec_module(nav)
 HEADER = (ROOT / 'partials/header.html').read_text(encoding='utf-8')
 
 class NavigationTests(unittest.TestCase):
+    def test_leading_skip_link_precedes_navigation(self):
+        skip = '<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>'
+        text = '<html><head></head><body>' + skip + '<meta name="pd-shared-nav"><main id="conteudo">Guide</main></body></html>'
+        result, ok = nav.transform(text, HEADER)
+        self.assertTrue(ok)
+        self.assertLess(result.index(skip), result.index('<header'))
+        again, _ = nav.transform(result, HEADER)
+        self.assertEqual(again.count(skip), 1)
+        self.assertLess(again.index(skip), again.index('<header'))
+        self.assertEqual(again, result)
+
     def test_replaces_menu_preserves_content(self):
         content = '<main><h1>Imóveis — Bertioga</h1><form id="lead"><input></form></main><script>window.listings=[];</script>'
         text = '<html><head><title>Teste</title></head><body><meta name="pd-shared-nav"><header class="pd"><a class="logo" href="//">Praia</a></header>' + content + '</body></html>'

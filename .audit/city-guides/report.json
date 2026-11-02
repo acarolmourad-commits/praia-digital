@@ -1,0 +1,393 @@
+{
+  "base": "04e83b23dff4ef271de5f4c11b0899ebad6a1c63",
+  "branch": "codex/cidades-litoral-padrao",
+  "date": "2026-11-02",
+  "coverage": {
+    "before": 13,
+    "after": 16,
+    "newGuides": [
+      "cubatao",
+      "iguape",
+      "ilha-comprida"
+    ],
+    "regions": {
+      "Litoral Norte": 4,
+      "Baixada Santista": 9,
+      "Litoral Sul (Lagamar)": 3
+    },
+    "neighborhoodHubs": 12,
+    "withoutNeighborhoodHub": [
+      "cananeia",
+      "cubatao",
+      "iguape",
+      "ilha-comprida"
+    ]
+  },
+  "inventory": {
+    "uniqueFilenameCandidates": 1726,
+    "method": "Paths containing municipal slug (not footer/body mentions); exact bytes and canonical recorded for potential duplicates. Inventory is not factual endorsement.",
+    "note": "Counts are filename candidates, not verified articles: Praia Grande can also name a beach in Ubatuba; multi-city articles may appear in multiple city lists. Duplicate analysis deduplicates paths first.",
+    "potentialDuplicateCanonicals": [
+      {
+        "canonical": "https://praia.digital/cidades/bertioga.html",
+        "paths": [
+          "bertioga.html",
+          "cidades/bertioga.html"
+        ]
+      },
+      {
+        "canonical": "https://praia.digital/guias/baixada-santista-imoveis.html",
+        "paths": [
+          "blog/bertioga/index.html",
+          "blog/imoveis/prop-cobertura-bertioga-vista-mar.html",
+          "blog/mercado/mercado-bertioga-2026.html",
+          "blog/imoveis/prop-casa-lancamento-guaruja.html",
+          "blog/imoveis/prop-cobertura-guaruja-lazer.html",
+          "blog/mercado/mercado-guaruja-2026.html",
+          "blog/imoveis/prop-apartamento-frente-mar-santos-2026.html",
+          "blog/imoveis/prop-apto-frente-mar-santos.html",
+          "blog/imoveis/prop-apto-santos-centro.html",
+          "blog/imoveis/prop-apto-zona-norte-santos.html",
+          "blog/imoveis/prop-cobertura-itapoa-santos.html",
+          "blog/mercado/mercado-santos-2026.html",
+          "blog/imoveis/prop-casa-familia-sao-vicente.html",
+          "blog/imoveis/prop-casa-sao-vicente-garagem.html",
+          "blog/mercado/mercado-sao-vicente-2026.html",
+          "blog/mercado/mercado-praia-grande-2026.html",
+          "blog/imoveis/prop-casa-mongagua-chale.html",
+          "blog/imoveis/prop-casa-mongagua-quintal.html",
+          "blog/imoveis/prop-cobertura-mongagua-lazer.html",
+          "blog/mercado/mercado-mongagua-2026.html",
+          "blog/imoveis/prop-cobertura-itanhaem-pousada.html",
+          "blog/mercado/mercado-itanhaem-2026.html",
+          "blog/imoveis/prop-apto-peruibe-vista-mar.html",
+          "blog/imoveis/prop-casa-vista-mar-peruibe.html",
+          "blog/mercado/mercado-peruibe-2026.html"
+        ]
+      },
+      {
+        "canonical": "https://praia.digital/bairros/guaruja/enseada.html",
+        "paths": [
+          "bairros/guaruja-enseada.html",
+          "bairros/guaruja/enseada.html"
+        ]
+      },
+      {
+        "canonical": "https://praia.digital/cidades/guaruja.html",
+        "paths": [
+          "cidades/guaruja.html",
+          "guaruja.html"
+        ]
+      },
+      {
+        "canonical": "https://praia.digital/bairros/santos/index.html",
+        "paths": [
+          "bairros/santos-boqueirao.html",
+          "bairros/santos/index.html"
+        ]
+      },
+      {
+        "canonical": "https://praia.digital/cidades/santos.html",
+        "paths": [
+          "cidades/santos.html",
+          "santos.html"
+        ]
+      },
+      {
+        "canonical": "https://praia.digital/cidades/sao-vicente.html",
+        "paths": [
+          "cidades/sao-vicente.html",
+          "sao-vicente.html"
+        ]
+      },
+      {
+        "canonical": "https://praia.digital/bairros/praia-grande/index.html",
+        "paths": [
+          "bairros/praia-grande-ocian.html",
+          "bairros/praia-grande-solemar.html",
+          "bairros/praia-grande/index.html"
+        ]
+      },
+      {
+        "canonical": "https://praia.digital/cidades/praia-grande.html",
+        "paths": [
+          "cidades/praia-grande.html",
+          "praia-grande.html"
+        ]
+      },
+      {
+        "canonical": "https://praia.digital/cidades/mongagua.html",
+        "paths": [
+          "cidades/mongagua.html",
+          "mongagua.html"
+        ]
+      },
+      {
+        "canonical": "https://praia.digital/cidades/itanhaem.html",
+        "paths": [
+          "cidades/itanhaem.html",
+          "itanhaem.html"
+        ]
+      },
+      {
+        "canonical": "https://praia.digital/cidades/peruibe.html",
+        "paths": [
+          "cidades/peruibe.html",
+          "peruibe.html"
+        ]
+      }
+    ],
+    "exactDuplicateContents": []
+  },
+  "reuse": {
+    "preserved": "Existing guide URLs, legacy aliases, 12 neighborhood hubs and all blog files retained. Curated neighborhood index is primary.",
+    "promoted": [
+      "blog/riviera-sao-lourenco-seguranca-infraestrutura-valorizacao-2026.html",
+      "blog/estudo-rental-yield-apartamentos-1-2-dormitorios-praia-grande-2026.html"
+    ],
+    "notPromoted": [
+      {
+        "path": "blog/custo-de-vida-bertioga-2026.html",
+        "reason": "Unverified rents, fees, travel times and circular methodology"
+      },
+      {
+        "path": "blog/cubatao-centro-vila-nova-investir-2026.html",
+        "reason": "Unsupported stable demand/appreciation claims"
+      },
+      {
+        "path": "blog/investimento-em-imoveis-em-iguape-em-2026-iguape.html",
+        "reason": "Generic content, not a verified local guide"
+      },
+      {
+        "path": "blog/ilha-comprida-bairros-imoveis-2026.html",
+        "reason": "Generic investment framing; use municipal geography instead"
+      }
+    ]
+  },
+  "review": {
+    "independent": true,
+    "findingsResolved": [
+      "Curated neighborhood hub promoted",
+      "Skip link remains before built navigation",
+      "Navigation transformation is byte-idempotent"
+    ],
+    "additionalArticles": "Reviewer found no additional safe local articles to promote without a separate factual review"
+  },
+  "tests": {
+    "static": "16 guides, 471 internal targets/anchors, unique metadata, FAQ JSON-LD coherence, 16 filters, real Bertioga listing regression passed",
+    "browser": {
+      "results": [
+        {
+          "city": "Ubatuba",
+          "width": 375,
+          "cards": 0,
+          "passed": true
+        },
+        {
+          "city": "Caraguatatuba",
+          "width": 375,
+          "cards": 0,
+          "passed": true
+        },
+        {
+          "city": "São Sebastião",
+          "width": 375,
+          "cards": 0,
+          "passed": true
+        },
+        {
+          "city": "Ilhabela",
+          "width": 375,
+          "cards": 0,
+          "passed": true
+        },
+        {
+          "city": "Bertioga",
+          "width": 375,
+          "cards": 3,
+          "passed": true
+        },
+        {
+          "city": "Guarujá",
+          "width": 375,
+          "cards": 1,
+          "passed": true
+        },
+        {
+          "city": "Santos",
+          "width": 375,
+          "cards": 1,
+          "passed": true
+        },
+        {
+          "city": "São Vicente",
+          "width": 375,
+          "cards": 1,
+          "passed": true
+        },
+        {
+          "city": "Cubatão",
+          "width": 375,
+          "cards": 0,
+          "passed": true
+        },
+        {
+          "city": "Praia Grande",
+          "width": 375,
+          "cards": 1,
+          "passed": true
+        },
+        {
+          "city": "Mongaguá",
+          "width": 375,
+          "cards": 1,
+          "passed": true
+        },
+        {
+          "city": "Itanhaém",
+          "width": 375,
+          "cards": 1,
+          "passed": true
+        },
+        {
+          "city": "Peruíbe",
+          "width": 375,
+          "cards": 0,
+          "passed": true
+        },
+        {
+          "city": "Iguape",
+          "width": 375,
+          "cards": 0,
+          "passed": true
+        },
+        {
+          "city": "Ilha Comprida",
+          "width": 375,
+          "cards": 0,
+          "passed": true
+        },
+        {
+          "city": "Cananéia",
+          "width": 375,
+          "cards": 0,
+          "passed": true
+        },
+        {
+          "city": "Ubatuba",
+          "width": 1280,
+          "cards": 0,
+          "passed": true
+        },
+        {
+          "city": "Caraguatatuba",
+          "width": 1280,
+          "cards": 0,
+          "passed": true
+        },
+        {
+          "city": "São Sebastião",
+          "width": 1280,
+          "cards": 0,
+          "passed": true
+        },
+        {
+          "city": "Ilhabela",
+          "width": 1280,
+          "cards": 0,
+          "passed": true
+        },
+        {
+          "city": "Bertioga",
+          "width": 1280,
+          "cards": 3,
+          "passed": true
+        },
+        {
+          "city": "Guarujá",
+          "width": 1280,
+          "cards": 1,
+          "passed": true
+        },
+        {
+          "city": "Santos",
+          "width": 1280,
+          "cards": 1,
+          "passed": true
+        },
+        {
+          "city": "São Vicente",
+          "width": 1280,
+          "cards": 1,
+          "passed": true
+        },
+        {
+          "city": "Cubatão",
+          "width": 1280,
+          "cards": 0,
+          "passed": true
+        },
+        {
+          "city": "Praia Grande",
+          "width": 1280,
+          "cards": 1,
+          "passed": true
+        },
+        {
+          "city": "Mongaguá",
+          "width": 1280,
+          "cards": 1,
+          "passed": true
+        },
+        {
+          "city": "Itanhaém",
+          "width": 1280,
+          "cards": 1,
+          "passed": true
+        },
+        {
+          "city": "Peruíbe",
+          "width": 1280,
+          "cards": 0,
+          "passed": true
+        },
+        {
+          "city": "Iguape",
+          "width": 1280,
+          "cards": 0,
+          "passed": true
+        },
+        {
+          "city": "Ilha Comprida",
+          "width": 1280,
+          "cards": 0,
+          "passed": true
+        },
+        {
+          "city": "Cananéia",
+          "width": 1280,
+          "cards": 0,
+          "passed": true
+        }
+      ],
+      "noJavaScript": true
+    },
+    "navigation": "7 passed including skip-link idempotence",
+    "existingCityLinks": "3 passed",
+    "existingPropertySearch": "passed",
+    "sitemapUnit": "20 passed; 2 existing symlink tests fail locally with Windows privilege 1314",
+    "sitemapScope": "17 generated targets validated; XML diff confirms exactly 17 changed rows, 3 added URLs and no removals",
+    "visual": "Index desktop and Bertioga mobile inspected; screenshots available locally",
+    "productionHTTP": "Not tested; no deployment requested"
+  },
+  "commercial": "Only id9 description corrected from model to real, following owner confirmation. Prices, bedrooms, features, listing files, renders and illustrative scenarios preserved.",
+  "outOfScope": [
+    "Academy",
+    "Stripe",
+    "Composio",
+    "newsletter",
+    "credentials",
+    "merge",
+    "deploy"
+  ]
+}

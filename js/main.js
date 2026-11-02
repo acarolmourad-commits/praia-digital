@@ -59,7 +59,7 @@
         "score": 95,
         "image": "https://praia.digital/img/bertioga-casa-fachada-externa.webp",
         "tags": ["100m da praia", "Piscina", "Sauna", "Academia"],
-        "description": "Casa em condomínio fechado a 100m da praia, com piscina, sauna e academia. Anúncio modelo do serviço de cadastramento Praia Digital."
+        "description": "Casa em condomínio fechado a 100m da praia, com piscina, sauna e academia. Imóvel real cadastrado na Praia Digital."
       },
       {
         "id": 1,

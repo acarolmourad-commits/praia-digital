@@ -2,7 +2,7 @@
 (function (root) {
   'use strict';
   const normalize = value => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-  const cities = ['São Sebastião','Caraguatatuba','Praia Grande','São Vicente','Bertioga','Guarujá','Santos','Mongaguá','Itanhaém','Peruíbe','Ubatuba','Ilhabela'];
+  const cities = ['São Sebastião','Caraguatatuba','Praia Grande','São Vicente','Bertioga','Guarujá','Santos','Mongaguá','Itanhaém','Peruíbe','Ubatuba','Ilhabela','Cananéia','Cubatão','Iguape','Ilha Comprida'];
   function money(value) {
     let s = normalize(value).replace(/r\$\s*/g, '').trim();
     const match = s.match(/^([\d.,]+)\s*(milhoes|milhao|mil|mi)?$/);

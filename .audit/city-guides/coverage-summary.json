@@ -1,0 +1,130 @@
+[
+  {
+    "name": "Ubatuba",
+    "guide": true,
+    "neighborhoodHub": true,
+    "blogCount": 103,
+    "inSitemap": true,
+    "after": "/cidades/ubatuba.html"
+  },
+  {
+    "name": "Caraguatatuba",
+    "guide": true,
+    "neighborhoodHub": true,
+    "blogCount": 90,
+    "inSitemap": true,
+    "after": "/cidades/caraguatatuba.html"
+  },
+  {
+    "name": "São Sebastião",
+    "guide": true,
+    "neighborhoodHub": true,
+    "blogCount": 130,
+    "inSitemap": true,
+    "after": "/cidades/sao-sebastiao.html"
+  },
+  {
+    "name": "Ilhabela",
+    "guide": true,
+    "neighborhoodHub": true,
+    "blogCount": 102,
+    "inSitemap": true,
+    "after": "/cidades/ilhabela.html"
+  },
+  {
+    "name": "Bertioga",
+    "guide": true,
+    "neighborhoodHub": true,
+    "blogCount": 174,
+    "inSitemap": true,
+    "after": "/cidades/bertioga.html"
+  },
+  {
+    "name": "Guarujá",
+    "guide": true,
+    "neighborhoodHub": true,
+    "blogCount": 143,
+    "inSitemap": true,
+    "after": "/cidades/guaruja.html"
+  },
+  {
+    "name": "Santos",
+    "guide": true,
+    "neighborhoodHub": true,
+    "blogCount": 157,
+    "inSitemap": true,
+    "after": "/cidades/santos.html"
+  },
+  {
+    "name": "São Vicente",
+    "guide": true,
+    "neighborhoodHub": true,
+    "blogCount": 104,
+    "inSitemap": true,
+    "after": "/cidades/sao-vicente.html"
+  },
+  {
+    "name": "Cubatão",
+    "guide": false,
+    "neighborhoodHub": false,
+    "blogCount": 1,
+    "inSitemap": false,
+    "after": "/cidades/cubatao.html"
+  },
+  {
+    "name": "Praia Grande",
+    "guide": true,
+    "neighborhoodHub": true,
+    "blogCount": 121,
+    "inSitemap": true,
+    "after": "/cidades/praia-grande.html"
+  },
+  {
+    "name": "Mongaguá",
+    "guide": true,
+    "neighborhoodHub": true,
+    "blogCount": 93,
+    "inSitemap": true,
+    "after": "/cidades/mongagua.html"
+  },
+  {
+    "name": "Itanhaém",
+    "guide": true,
+    "neighborhoodHub": true,
+    "blogCount": 94,
+    "inSitemap": true,
+    "after": "/cidades/itanhaem.html"
+  },
+  {
+    "name": "Peruíbe",
+    "guide": true,
+    "neighborhoodHub": true,
+    "blogCount": 100,
+    "inSitemap": true,
+    "after": "/cidades/peruibe.html"
+  },
+  {
+    "name": "Iguape",
+    "guide": false,
+    "neighborhoodHub": false,
+    "blogCount": 8,
+    "inSitemap": false,
+    "after": "/cidades/iguape.html"
+  },
+  {
+    "name": "Ilha Comprida",
+    "guide": false,
+    "neighborhoodHub": false,
+    "blogCount": 6,
+    "inSitemap": false,
+    "after": "/cidades/ilha-comprida.html"
+  },
+  {
+    "name": "Cananéia",
+    "guide": true,
+    "neighborhoodHub": false,
+    "blogCount": 21,
+    "inSitemap": true,
+    "after": "/cidades/cananeia.html"
+  }
+]

@@ -1,0 +1,45 @@
+name: Coastal city guides
+on:
+  pull_request:
+    paths:
+      - 'cidades/**'
+      - 'data/city-guides.json'
+      - 'assets/css/city-guides.css'
+      - 'js/property-search.js'
+      - 'js/main.js'
+      - 'scripts/*city*'
+      - 'scripts/build-navigation.py'
+      - 'tests/*city*'
+      - '.github/workflows/city-guide-checks.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  guides:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Content, route and filter checks
+        run: |
+          node scripts/build-city-guides.cjs
+          git diff --exit-code -- cidades/
+          node tests/test_city_guides.cjs
+          node tests/test_property_search.cjs
+          python3 -m unittest discover -s tests -p 'test_city_search_links.py'
+          python3 -m unittest discover -s tests -p 'test_navigation.py'
+          python3 -m unittest discover -s tests -p 'test_sitemap*.py'
+          python3 scripts/prepare-city-guides.py
+          python3 scripts/validate_sitemap_targets.py
+      - name: Offline desktop and mobile flows
+        run: |
+          npm install --prefix "$RUNNER_TEMP/city-browser" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/city-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          NODE_PATH="$RUNNER_TEMP/city-browser/node_modules" CITY_PREVIEW_ROOT="$GITHUB_WORKSPACE/.audit/city-guides/preview" node tests/city-guides-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: city-guide-browser-evidence
+          path: .audit/city-guides/browser/
