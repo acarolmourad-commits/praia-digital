@@ -225,7 +225,8 @@ async function purposeTransitions(page) {
   await page.goto(origin+'/imoveis.html?q='+encodeURIComponent('alugar apartamento de 2 quartos em Bertioga até R$ 9 mil por mês'));
   assert.equal(await page.locator('#tipo-filtro').inputValue(),'Aluguel');
   assert.equal(await page.locator('#preco-filtro').inputValue(),'9000');
-  assert.equal(await page.locator('.property-card').count(),1);
+  assert.equal(await page.locator('.property-card').count(),0);
+  assert(await page.locator('.imoveis-empty').isVisible());
   await page.locator('#busca').fill('comprar apartamento em Bertioga até R$ 9 mil');
   assert.equal(await page.locator('#tipo-filtro').inputValue(),'Venda');
   assert.equal(await page.locator('#preco-filtro').inputValue(),'');
