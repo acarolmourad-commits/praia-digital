@@ -89,5 +89,11 @@ class HomepageSocialPreview(unittest.TestCase):
         svg=(ROOT/'assets/social/praia-digital-institucional-v1.svg').read_text()
         self.assertIn('Inteligência imobiliária para o litoral',svg)
         self.assertNotIn('<image',svg) # Original vector artwork; no unlicensed external photography.
+        import xml.etree.ElementTree as ET
+        root=ET.fromstring(svg)
+        texts=root.findall('.//{http://www.w3.org/2000/svg}text')
+        self.assertEqual(len(texts),5)
+        self.assertTrue(all(t.get('x')=='600' for t in texts))
+        self.assertIn('text-anchor="middle"',svg)
 
 if __name__=='__main__': unittest.main()
