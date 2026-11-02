@@ -63,4 +63,31 @@ class HomepageContent(unittest.TestCase):
             self.assertEqual(sum(t=='h1' for t,a in tags),1,file)
             self.assertEqual(sum(t=='link' and a.get('rel')=='canonical' for t,a in tags),1,file)
             self.assertTrue(any(t=='meta' and a.get('name')=='viewport' for t,a in tags),file)
+
+class HomepageSocialPreview(unittest.TestCase):
+    def test_institutional_image_and_accessible_metadata(self):
+        from urllib.parse import urlsplit
+        import struct
+        tags=Tags((ROOT/'index.html').read_text()).tags
+        def meta(key):
+            values=[a.get('content') for t,a in tags if t=='meta' and (a.get('property')==key or a.get('name')==key)]
+            self.assertEqual(len(values),1,key)
+            return values[0]
+        url=meta('og:image')
+        self.assertEqual(url,'https://praia.digital/assets/social/praia-digital-institucional-v1.png')
+        self.assertEqual(meta('twitter:image'),url)
+        self.assertEqual(meta('twitter:card'),'summary_large_image')
+        self.assertEqual(meta('og:image:type'),'image/png')
+        self.assertEqual(meta('og:image:alt'),meta('twitter:image:alt'))
+        self.assertIn('Praia Digital',meta('og:image:alt'))
+        self.assertEqual(meta('og:locale'),'pt_BR')
+        data=(ROOT/urlsplit(url).path.lstrip('/')).read_bytes()
+        self.assertEqual(data[:8],b'\x89PNG\r\n\x1a\n')
+        self.assertEqual(struct.unpack('>II',data[16:24]),(1200,630))
+        self.assertEqual((meta('og:image:width'),meta('og:image:height')),('1200','630'))
+        self.assertLess(len(data),300000)
+        svg=(ROOT/'assets/social/praia-digital-institucional-v1.svg').read_text()
+        self.assertIn('Inteligência imobiliária para o litoral',svg)
+        self.assertNotIn('<image',svg) # Original vector artwork; no unlicensed external photography.
+
 if __name__=='__main__': unittest.main()

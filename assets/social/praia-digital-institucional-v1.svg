@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">Praia Digital — Inteligência imobiliária para o litoral</title>
+<desc id="desc">Capa institucional em azul-marinho e verde-mar, com a marca Praia Digital e uma ilustração original de litoral, montanhas e ondas. Não representa um imóvel ou local específico.</desc>
+<defs>
+  <linearGradient id="sea" x2="0.4" y2="1"><stop stop-color="#0e7c7b"/><stop offset="1" stop-color="#0a3a52"/></linearGradient>
+  <clipPath id="coast"><rect x="775" y="0" width="425" height="630"/></clipPath>
+</defs>
+<rect width="1200" height="630" fill="#0a2540"/>
+<g clip-path="url(#coast)">
+  <rect x="775" width="425" height="630" fill="#c6e5df"/>
+  <circle cx="1066" cy="130" r="53" fill="#f5dba3"/>
+  <path d="M735 290 875 153 952 228 1020 191 1205 315V630H735Z" fill="#789c90"/>
+  <path d="m771 316 138-92 107 96 96-66 110 65v311H771Z" fill="#355f61"/>
+  <path d="M776 365Q895 303 1004 346T1200 344V630H776Z" fill="url(#sea)"/>
+  <path d="M1200 381C1062 378 1107 461 981 483S911 568 776 608V630H1200Z" fill="#f4e8cd"/>
+  <path d="M1200 363C1057 361 1087 446 975 466S898 548 776 587" fill="none" stroke="#e6f6ef" stroke-width="9"/>
+  <path d="M818 401q54-23 99-9m-115 78q38-22 74-18m-57 86 25-14" fill="none" stroke="#7fd1cf" stroke-width="4" stroke-linecap="round"/>
+</g>
+<rect x="0" y="0" width="775" height="630" fill="#0a2540"/>
+<path d="M775 0v630" stroke="#7fd1cf" stroke-opacity=".25" stroke-width="2"/>
+<g font-family="DejaVu Sans, sans-serif">
+  <text x="64" y="115" font-size="44" font-weight="700" letter-spacing="-1.4" fill="#fff">Praia <tspan fill="#7fd1cf">Digital</tspan></text>
+  <path d="M64 149h68" stroke="#7fd1cf" stroke-width="5"/>
+  <g fill="#fff" font-size="57" font-weight="700" letter-spacing="-1.8">
+    <text x="64" y="263">Inteligência</text>
+    <text x="64" y="334">imobiliária</text>
+    <text x="64" y="405">para o litoral</text>
+  </g>
+  <text x="67" y="534" fill="#bed6df" font-size="24" letter-spacing="1">praia.digital</text>
+</g>
+</svg>
