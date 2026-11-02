@@ -25,5 +25,9 @@ jobs:
         run: python3 -m unittest discover -s tests -p 'test_sitemap_generator.py' -v
       - name: Removed listing regression tests
         run: python3 -m unittest discover -s tests -p 'test_removed_listings.py' -v
+      - name: Search Console article and city guide regressions
+        run: |
+          python3 -m unittest discover -s tests -p 'test_gsc_article_cleanup.py' -v
+          python3 -m unittest discover -s tests -p 'test_city_search_links.py' -v
       - name: Validate published sitemap targets
         run: python3 scripts/validate_sitemap_targets.py

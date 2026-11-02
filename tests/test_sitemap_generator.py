@@ -46,9 +46,24 @@ class SitemapGeneratorTests(unittest.TestCase):
         self.assertEqual(['apps/public/index.html'], sorted(apps))
         self.assertFalse((self.root / 'sitemap.xml').exists())
 
+    def test_robots_and_canonical_home_without_broad_alias_rewrite(self):
+        (self.root / 'robots.txt').write_text(
+            'User-agent: *\nAllow: /\nDisallow: /leads/\n'
+            'Disallow: /education/marketing/campaigns/\n')
+        self.page('index.html', '<link rel="canonical" href="https://praia.digital/">')
+        self.page('leads/private.html')
+        self.page('education/marketing/campaigns/body.html')
+        self.page('blog/public.html')
+        self.page('academy/public.html')
+        self.page('apps/visible/index.html',
+                  '<link rel="canonical" href="https://praia.digital/apps/visible/">')
+        pages, apps = generator.discover_pages(self.root)
+        self.assertEqual(['', 'academy/public.html', 'blog/public.html'], sorted(pages))
+        self.assertEqual(['apps/visible/index.html'], apps)
+
     def test_existing_directory_filename_and_hidden_exclusions_preserved(self):
         excluded = [
-            'docs/public.html', 'assets/public.html', 'backup/page.html',
+            'docs/seo/tmp_adversarial/test.html', 'assets/public.html', 'backup/page.html',
             'backups/page.html', 'outreach/page.html', 'partials/page.html',
             'dashboards/page.html', 'api/page.html', 'backend/page.html',
             'automation/page.html', 'academy/uploads/page.html',
@@ -58,10 +73,11 @@ class SitemapGeneratorTests(unittest.TestCase):
         for name in excluded:
             self.page(name)
         self.page('academy/public.html')
+        self.page('docs/public-guide.html')
         self.page('apps/visible/index.html')
         self.page('blog/not-html.txt')
         pages, apps = generator.discover_pages(self.root)
-        self.assertEqual(['academy/public.html'], pages)
+        self.assertEqual(['academy/public.html', 'docs/public-guide.html'], sorted(pages))
         self.assertEqual(['apps/visible/index.html'], apps)
 
     def test_main_writes_only_fixture_sitemaps_with_encoded_sorted_urls(self):
