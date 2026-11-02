@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>Boletim Praia Digital</title>
+    <link>https://praia.digital/docs/inteligencia/boletim-diario.html</link>
+    <description>Edições revisadas, fontes e contexto. Sem promessa de publicação em tempo real.</description>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 02 Nov 2026 14:15:00 +0000</lastBuildDate>
+    <item>
+      <title>Boletim Praia Digital — 2026-11-02</title>
+      <link>https://praia.digital/docs/inteligencia/boletim-2026-11-02.html</link>
+      <guid>https://praia.digital/docs/inteligencia/boletim-2026-11-02.html</guid>
+      <pubDate>Mon, 02 Nov 2026 14:15:00 +0000</pubDate>
+      <description>Edição de transição: quatro publicações oficiais de outubro, conferidas em 02/11. Não são notícias publicadas hoje. Destaques: prevenção a falsas inscrições em Bertioga, consulta da orla, financiamento autorizado em Santos e turismo de natureza em São Sebastião. O antigo ranking de atenção e as estimativas de yield foram retirados por não representarem dados de mercado.</description>
+    </item>
+  </channel>
+</rss>

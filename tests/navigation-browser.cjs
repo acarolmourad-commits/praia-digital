@@ -17,7 +17,7 @@ const root = path.resolve(__dirname, '..');
         const header = page.locator('.pd-site-header');
         assert.equal(await header.count(), 1);
         assert.equal(await header.locator('.pd-site-group').count(), 5);
-        assert.equal(await header.locator('a').count(), 26);
+        assert.equal(await header.locator('a').count(), 27);
         const toggle = header.locator('.pd-site-toggle');
         const menu = header.locator('.pd-site-menu');
         if (width <= 1080) {

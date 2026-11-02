@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-02",
+  "reviewed_at": "2026-11-02T14:15:00Z",
+  "reviewer": "Curadoria assistida por IA; fontes oficiais conferidas",
+  "status": "reviewed",
+  "summary": "Edição de transição: quatro publicações oficiais de outubro, conferidas em 02/11. Não são notícias publicadas hoje. Destaques: prevenção a falsas inscrições em Bertioga, consulta da orla, financiamento autorizado em Santos e turismo de natureza em São Sebastião. O antigo ranking de atenção e as estimativas de yield foram retirados por não representarem dados de mercado.",
+  "items": [
+    {
+      "id": "bertioga-habitacao",
+      "title": "Bertioga alerta sobre falsas inscrições habitacionais",
+      "summary": "A Prefeitura informa que mensagens de entidades oferecendo inscrições no Minha Casa, Minha Vida não têm vínculo nem autorização municipal e reforça que não cobra pelo cadastro em programas habitacionais municipais.",
+      "source_name": "Prefeitura de Bertioga",
+      "source_url": "https://bertioga.sp.gov.br/habitacao-alerta-sobre-falsas-inscricoes-no-minha-casa-minha-vida",
+      "published_at": "2026-10-31",
+      "category": "Habitação e serviço",
+      "city": "Bertioga",
+      "impact": "Confira o canal oficial antes de compartilhar documentos ou pagar intermediários. O alerta se refere às iniciativas dessas entidades, não a todos os canais do programa.",
+      "checked_at": "2026-11-02T14:12:00Z",
+      "reviewer": "Curadoria assistida por IA",
+      "status": "reviewed"
+    },
+    {
+      "id": "bertioga-orla",
+      "title": "Consulta pública sobre a orla de Bertioga recebe contribuições",
+      "summary": "A segunda consulta do Projeto Orla recebe sugestões online para subsidiar o Plano de Gestão Integrada. Segundo a publicação municipal, a participação abriu em 27/10 e vai até 10/11/2026.",
+      "source_name": "Prefeitura de Bertioga",
+      "source_url": "https://bertioga.sp.gov.br/consulta-publica-vai-ouvir-a-populacao-sobre-a-orla-da-cidade",
+      "published_at": "2026-10-29",
+      "category": "Planejamento urbano",
+      "city": "Bertioga",
+      "impact": "Proprietários e profissionais de turismo podem acompanhar as propostas e participar pelo canal municipal. A consulta não equivale a norma aprovada nem indica valorização de imóveis.",
+      "checked_at": "2026-11-02T14:12:00Z",
+      "reviewer": "Curadoria assistida por IA",
+      "status": "reviewed"
+    },
+    {
+      "id": "santos-pantanal",
+      "title": "Santos autoriza financiamento para a Vila Pantanal",
+      "summary": "Lei autoriza a Prefeitura a contratar até R$ 360,8 milhões para reurbanização da Vila Pantanal. Documentação, contratação e licitações ainda eram etapas seguintes na publicação, atualizada pela fonte em 16/10/2026.",
+      "source_name": "Prefeitura de Santos",
+      "source_url": "https://www.santos.sp.gov.br/?q=node/174681",
+      "published_at": "2026-10-13",
+      "category": "Habitação e infraestrutura",
+      "city": "Santos",
+      "impact": "Acompanhe contratação e execução nos canais oficiais. A autorização financeira não demonstra que as obras começaram, nem garante retorno imobiliário.",
+      "checked_at": "2026-11-02T14:12:00Z",
+      "reviewer": "Curadoria assistida por IA",
+      "status": "reviewed"
+    },
+    {
+      "id": "sao-sebastiao-aves",
+      "title": "São Sebastião destaca turismo de observação de aves",
+      "summary": "A Secretaria de Turismo informa que a atividade na APA Baleia-Sahy registrou 76 espécies no October Big Day e colocou o município entre os 15 melhores resultados brasileiros por grupo.",
+      "source_name": "Secretaria de Turismo de São Sebastião",
+      "source_url": "https://www.turismosaosebastiao.com.br/noticias/sao-sebastiao-fica-entre-os-15-destaques-do-brasil-no-october-big-day-por-grupo",
+      "published_at": "2026-10-23",
+      "category": "Turismo de natureza",
+      "city": "São Sebastião",
+      "impact": "Experiências de natureza podem enriquecer orientações aos hóspedes. O resultado do evento não mede ocupação de hospedagens ou rentabilidade.",
+      "checked_at": "2026-11-02T14:12:00Z",
+      "reviewer": "Curadoria assistida por IA",
+      "status": "reviewed"
+    }
+  ]
+}

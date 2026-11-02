@@ -1,131 +1,118 @@
 #!/usr/bin/env python3
-"""
-Boletim Diario de Inteligencia — Praia Digital (motor de conteudo automatico).
-Gera 8 secoes a partir de sinais REAIS do repo:
-  - noticias do mercado (artigos recentes do blog)
-  - analise diaria (resumo de sinais)
-  - tendencias (palavras-chave em alta no blog)
-  - bairros em alta (cidades com + conteudo)
-  - ranking das cidades (por volume de conteudo = atencao de mercado)
-  - melhores investimentos da semana (yield por CEP via calculadora)
-  - melhores imoveis para renda (tipos com maior yield)
-  - oportunidades abaixo do mercado (proxy: cidades com muito conteudo e yield alto)
-Tudo derivado de dados do repo + ViaCEP/yield. Nada inventado.
-Uso: python scripts/gerar_boletim_diario.py
-"""
-import glob, re, os, json
-from collections import Counter
-from datetime import date
+"""Render only explicitly reviewed editions. No scraping, invented metrics or clock-based freshness."""
+import argparse
+import html
+import json
+from datetime import datetime, timezone
+from email.utils import format_datetime
+from pathlib import Path
+from urllib.parse import urlparse
+import xml.etree.ElementTree as ET
 
-REPO = r"C:/Users/Carolina/praia-digital"
-BLOG = os.path.join(REPO, "blog")
-OUT = os.path.join(REPO, "docs/inteligencia/boletim-diario.html")
-LITORAL = ["Bertioga","Guarujá","Santos","Praia Grande","São Vicente","Mongaguá",
-           "Itanhaém","Peruíbe","Ilhabela","São Sebastião","Caraguatatuba","Ubatuba","Riviera de São Lourenço"]
+ROOT = Path(__file__).resolve().parents[1]
+BASE = 'https://praia.digital'
+PATH = '/docs/inteligencia/'
 
-def volume_cidades():
-    c = Counter()
-    for f in glob.glob(os.path.join(BLOG, "*.html")):
-        t = open(f, encoding="utf-8", errors="ignore").read().lower()
-        for cid in LITORAL:
-            if cid.lower() in t: c[cid] += 1
-    return c
+def esc(value):
+    return html.escape(str(value), quote=True)
 
-def tendencias():
-    kw = ["temporada","airbnb","aluguel","investimento","yield","valorização","turismo","condomínio","praia","financiamento"]
-    c = Counter()
-    for f in glob.glob(os.path.join(BLOG, "*.html"))[:300]:
-        t = open(f, encoding="utf-8", errors="ignore").read().lower()
-        for k in kw:
-            c[k] += t.count(k)
-    return c.most_common(5)
+def stamp(value):
+    result = datetime.fromisoformat(value.replace('Z', '+00:00'))
+    if result.tzinfo is None:
+        raise ValueError('Timestamp requires timezone')
+    return result
 
-def yield_tipo(tipo, quartos):
-    base_adr = 250 + quartos*70 + (tipo=="casa" and 60 or tipo=="cobertura" and 120 or 0)
-    ocup = min(0.85, 0.55 + quartos*0.02)
-    adr = base_adr*1.28; rec = adr*365*ocup*0.8
-    alug = (tipo=="casa" and 3500 or tipo=="cobertura" and 4800 or 2600) + quartos*600
-    return round(rec/alug, 1)
+def validate(edition, as_of=None):
+    if edition['status'] != 'reviewed' or not edition['reviewer'].strip():
+        raise ValueError('Only reviewed editions may be published')
+    datetime.strptime(edition['date'], '%Y-%m-%d')
+    reviewed = stamp(edition['reviewed_at'])
+    if reviewed > (as_of or datetime.now(timezone.utc)):
+        raise ValueError('Future editorial review is not publishable')
+    if reviewed.date().isoformat() != edition['date']:
+        raise ValueError('Edition date must match editorial review date')
+    if not edition['summary'].strip():
+        raise ValueError('Missing editorial summary')
+    seen = set()
+    for item in edition['items']:
+        for key in ['id', 'title', 'summary', 'source_name', 'source_url', 'published_at', 'checked_at', 'category', 'city', 'impact', 'reviewer']:
+            if not item.get(key):
+                raise ValueError('Missing item field: ' + key)
+        if item.get('status') != 'reviewed':
+            raise ValueError('Unreviewed news item')
+        url = urlparse(item['source_url'])
+        if url.scheme != 'https' or not url.netloc or url.username or url.password:
+            raise ValueError('Source must use HTTPS')
+        published = datetime.strptime(item['published_at'], '%Y-%m-%d').date()
+        checked = stamp(item['checked_at'])
+        if published > checked.date() or checked > reviewed:
+            raise ValueError('Invalid source timeline')
+        if item['source_url'] in seen:
+            raise ValueError('Duplicate source URL')
+        seen.add(item['source_url'])
+    return edition
 
-def gerar():
-    hoje = date.today()
-    vol = volume_cidades()
-    top = vol.most_common()
-    tend = tendencias()
+def page(root, title, path, body, description):
+    header = (root / 'partials/header.html').read_text(encoding='utf-8')
+    schema = {'@context': 'https://schema.org', '@type': 'CollectionPage', 'name': title, 'url': BASE + path, 'inLanguage': 'pt-BR', 'description': description}
+    return f'''<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{esc(title)} — Praia Digital</title><meta name="description" content="{esc(description)}"><link rel="canonical" href="{BASE}{path}">
+<meta property="og:type" content="website"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(description)}"><meta property="og:url" content="{BASE}{path}"><meta property="og:image" content="{BASE}/img/default-home.jpg"><meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="application/rss+xml" title="Boletim Praia Digital" href="{PATH}feed.xml"><link rel="stylesheet" href="/assets/css/pd-navigation.css?v=3"><link rel="stylesheet" href="/assets/css/boletim.css"><script defer src="/js/pd-navigation.js?v=3"></script><script defer src="/js/boletim.js"></script>
+<script type="application/ld+json">{json.dumps(schema, ensure_ascii=False).replace('<', '\\u003c')}</script></head><body><a class="bulletin-skip" href="#main">Pular para o conteúdo</a>{header}
+<main id="main" class="bulletin-wrap">{body}</main><footer class="bulletin-footer"><div class="bulletin-wrap">Praia Digital · Inteligência com fontes e contexto.<br><a href="/politica-de-privacidade.html">Privacidade</a> · <a href="/interesse.html">Contato e correções</a></div></footer></body></html>'''
 
-    # ranking cidades
-    rank = "".join(f"<tr><td>{i}</td><td>{c}</td><td>{v} artigos</td><td>Score {min(99, 50+v//3)}</td></tr>"
-                   for i,(c,v) in enumerate(top,1))
+def render_edition(root, edition, path):
+    cards = ''
+    for item in edition['items']:
+        cards += f'''<article class="bulletin-card news-item" data-city="{esc(item['city'])}" data-category="{esc(item['category'])}"><p class="eyebrow">{esc(item['category'])} · {esc(item['city'])}</p><h2>{esc(item['title'])}</h2><p>{esc(item['summary'])}</p><p><strong>Por que importa — análise editorial:</strong> {esc(item['impact'])}</p><p class="metadata">Publicado pela fonte: <time datetime="{esc(item['published_at'])}">{esc(item['published_at'])}</time><br>Conferido: <time datetime="{esc(item['checked_at'])}">{esc(item['checked_at'])}</time></p><a href="{esc(item['source_url'])}" rel="noopener">Ler na fonte: {esc(item['source_name'])}</a></article>'''
+    if not cards:
+        cards = '<div class="bulletin-card"><h2>Nenhuma notícia nova aprovada nesta edição</h2><p>Não substituímos a ausência de informação verificada por manchetes automáticas. Consulte as fontes oficiais abaixo; o radar é uma ferramenta de triagem, não uma notícia.</p></div>'
+    cities = sorted({i['city'] for i in edition['items']})
+    categories = sorted({i['category'] for i in edition['items']})
+    filters = ''.join(f'<label>{label}<select id="filter-{key}"><option value="">Todos</option>' + ''.join(f'<option>{esc(v)}</option>' for v in values) + '</select></label>' for key, label, values in [('city', 'Cidade / região', cities), ('category', 'Tema', categories)])
+    sources = '<li><a href="https://news.airbnb.com/">Airbnb Newsroom</a></li><li><a href="https://partner.booking.com/en-us">Booking Partner Hub</a></li><li><a href="https://www.bcb.gov.br/">Banco Central</a></li><li><a href="https://www.ibge.gov.br/">IBGE</a></li><li><a href="https://www.agenciasp.sp.gov.br/">Agência SP</a></li>'
+    body = f'''<p class="eyebrow">Litoral paulista · Edição {esc(edition['date'])}</p><h1>Boletim de Inteligência</h1><p class="lead">O que mudou, por que importa e onde conferir.</p>
+<div class="bulletin-status"><strong>Piloto editorial — sem promessa de tempo real.</strong><p>Última revisão desta edição: <time datetime="{esc(edition['reviewed_at'])}">{esc(edition['reviewed_at'])}</time>. Responsável pela revisão: {esc(edition['reviewer'])}.</p><p>Publicação de novas edições depende de revisão. A data não muda só porque você abriu a página.</p></div>
+<nav class="bulletin-actions" aria-label="Acompanhar boletim"><a class="bulletin-button" href="{PATH}feed.xml">Acompanhar por RSS — grátis</a><a href="{PATH}arquivo-boletins.html">Edições anteriores</a><a href="/newsletter/assinatura.html">Status da assinatura por e-mail</a></nav>
+<section class="bulletin-card"><h2>Nesta edição</h2><p>{esc(edition['summary'])}</p></section>
+<div class="bulletin-filters" hidden>{filters}<p id="filter-status" role="status" aria-live="polite"></p></div><section aria-label="Notícias verificadas" id="news">{cards}</section><p id="filter-empty" hidden>Nenhuma notícia desta edição corresponde aos filtros. Escolha “Todos” para ver as demais.</p>
+<section class="bulletin-card"><h2>Radar de fontes</h2><p>A coleta automática prepara candidatos para revisão; não publica notícias sozinha. A <a href="/blog/novidades-airbnb-booking.html">Sentinela Airbnb + Booking</a> é um monitor separado. Alteração de página não comprova novidade e fontes podem estar indisponíveis.</p><ul>{sources}</ul><p>Links de consulta não significam que todas as fontes foram verificadas hoje.</p></section>
+<section class="bulletin-card" id="metodologia"><h2>Como trabalhamos</h2><p>Notícias aprovadas trazem fonte primária, data da publicação, horário de conferência, região e contexto. A análise é identificada e não é recomendação individual de investimento. Não usamos quantidade de artigos do nosso site como procura imobiliária, preço ou valorização.</p><p>Estimativas financeiras só serão publicadas com hipóteses, custos, período e método verificáveis. Os indicadores inválidos do modelo anterior foram retirados; o histórico legado está identificado no arquivo.</p><p>O conteúdo é público e gratuito. Não há envio automático de e-mail ativo neste piloto. Nenhum cadastro é solicitado enquanto confirmação e descadastro não estiverem funcionando.</p><a href="/interesse.html">Sugerir pauta ou comunicar uma correção</a></section>'''
+    return page(root, 'Boletim de Inteligência', path, body, 'Notícias verificadas e contexto para o litoral paulista. Fontes, datas reais, arquivo e RSS gratuito.')
 
-    # bairros em alta (top 5)
-    alta = "".join(f"<li><b>{c}</b> — {v} artigos de mercado (alta atenção)</li>" for c,v in top[:5])
+def build(root=ROOT):
+    editions = [validate(json.loads(p.read_text(encoding='utf-8'))) for p in sorted((root / 'data/boletim/edicoes').glob('*.json'))]
+    if not editions:
+        raise ValueError('At least one reviewed edition is required')
+    if len({e['date'] for e in editions}) != len(editions):
+        raise ValueError('Duplicate edition date')
+    editions.sort(key=lambda e: e['date'])
+    out = root / 'docs/inteligencia'
+    for edition in editions:
+        path = PATH + 'boletim-' + edition['date'] + '.html'
+        (root / path.lstrip('/')).write_text(render_edition(root, edition, path), encoding='utf-8')
+    (out / 'boletim-diario.html').write_text(render_edition(root, editions[-1], PATH + 'boletim-diario.html'), encoding='utf-8')
+    rows = ''.join(f'<li><a href="boletim-{e["date"]}.html">{e["date"]}</a> — {len(e["items"])} notícia(s) verificada(s)</li>' for e in reversed(editions))
+    body = f'<p class="eyebrow">Memória editorial</p><h1>Arquivo de boletins</h1><p>Edições efetivamente publicadas, sem reconstrução artificial de dias sem boletim.</p><ul>{rows}</ul><h2>Registro legado</h2><p><a href="boletim-2026-07-17.html">17/07/2026 — modelo antigo, não usar como indicador de mercado</a>. Não há arquivo diário completo do período anterior.</p><p><a href="boletim-diario.html">Voltar ao boletim</a> · <a href="feed.xml">RSS gratuito</a></p>'
+    (out / 'arquivo-boletins.html').write_text(page(root, 'Arquivo de boletins', PATH + 'arquivo-boletins.html', body, 'Edições revisadas e registros históricos identificados do Boletim Praia Digital.'), encoding='utf-8')
+    rss = ET.Element('rss', version='2.0'); channel = ET.SubElement(rss, 'channel')
+    for key, val in [('title', 'Boletim Praia Digital'), ('link', BASE + PATH + 'boletim-diario.html'), ('description', 'Edições revisadas, fontes e contexto. Sem promessa de publicação em tempo real.'), ('language', 'pt-BR'), ('lastBuildDate', format_datetime(stamp(editions[-1]['reviewed_at'])))]:
+        ET.SubElement(channel, key).text = val
+    for e in reversed(editions):
+        item = ET.SubElement(channel, 'item'); url = BASE + PATH + 'boletim-' + e['date'] + '.html'
+        for key, val in [('title', 'Boletim Praia Digital — ' + e['date']), ('link', url), ('guid', url), ('pubDate', format_datetime(stamp(e['reviewed_at']))), ('description', e['summary'])]:
+            ET.SubElement(item, key).text = val
+    ET.indent(rss)
+    ET.ElementTree(rss).write(out / 'feed.xml', encoding='utf-8', xml_declaration=True)
+    sitemap = ET.Element('urlset', xmlns='http://www.sitemaps.org/schemas/sitemap/0.9')
+    for edition in editions:
+        entry = ET.SubElement(sitemap, 'url')
+        ET.SubElement(entry, 'loc').text = BASE + PATH + 'boletim-' + edition['date'] + '.html'
+        ET.SubElement(entry, 'lastmod').text = edition['reviewed_at']
+    ET.indent(sitemap)
+    ET.ElementTree(sitemap).write(root / 'sitemap-boletim.xml', encoding='utf-8', xml_declaration=True)
 
-    # melhores investimentos da semana (yield por CEP simplificado por tipo)
-    inv = ""
-    for tipo,q in [("apartamento",2),("casa",3),("cobertura",3),("kitnet",1)]:
-        m = yield_tipo(tipo,q)
-        inv += f"<tr><td>{tipo.title()} {q}q</td><td>{m}× aluguel trad.</td><td>Yield ~{round(m*7,1)}% a.a.</td></tr>"
-
-    # melhores imoveis para renda
-    renda = sorted([(t, yield_tipo(t,2)) for t in ["apartamento","casa","cobertura","kitnet"]], key=lambda x:-x[1])
-    renda_html = "".join(f"<li><b>{t.title()}</b>: multiplicador {m}× (rentabilidade de temporada vs aluguel longo)</li>" for t,m in renda)
-
-    # oportunidades abaixo do mercado (proxy: cidades com alto conteudo + yield alto)
-    opp = "".join(f"<li><b>{c}</b> — {v} artigos e yield estimado forte: atenção de mercado sem saturação de preço.</li>" for c,v in top[:4])
-
-    # noticias (5 artigos mais recentes por data no nome)
-    arts = sorted(glob.glob(os.path.join(BLOG,"*.html")), reverse=True)[:5]
-    noticias = "".join(f"<li>{os.path.basename(a).replace('.html','').replace('-', ' ').title()}</li>" for a in arts)
-
-    HTML = f"""<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Boletim Diário de Inteligência — Praia Digital</title>
-<style>body{{font-family:Arial,sans-serif;max-width:820px;margin:auto;padding:24px;color:#112}}
-h1{{color:#0a3a6b}}h2{{color:#0a3a6b;border-bottom:2px solid #e2e8f0;padding-bottom:4px;margin-top:1.6rem}}
-.card{{background:#f0f7ff;border:1px solid #cfe3f5;border-radius:12px;padding:1.1rem;margin:.8rem 0;line-height:1.7}}
-table{{width:100%;border-collapse:collapse;margin:.6rem 0}}th,td{{border:1px solid #e2e8f0;padding:.5rem;text-align:left;font-size:.85rem}}
-.th{{background:#f0f7ff}}li{{margin:.3rem 0;color:#334}}small{{color:#667}}
-.tag{{display:inline-block;background:linear-gradient(90deg,#22d3ee,#4ade80);color:#04141f;font-weight:700;padding:.2rem .7rem;border-radius:999px;font-size:.75rem}}</style></head>
-<body>
-<h1>📡 Boletim Diário de Inteligência</h1>
-<p><span class="tag">Praia Digital · {hoje:%d/%m/%Y}</span> Gerado automaticamente a partir de sinais reais do mercado litoral paulista.</p>
-<div class="card">Este boletim é montado por IA a partir do volume de conteúdo por cidade (proxy de atenção de mercado), calculadora de yield e tendências do blog. Sem dados inventados.</div>
-
-<h2>📰 Notícias do mercado</h2><div class="card"><ul>{noticias}</ul></div>
-<h2>📊 Análise diária</h2><div class="card">Hoje o litoral paulista registra <b>{sum(vol.values())}</b> artigos de mercado indexados. <b>{top[0][0]}</b> lidera atenção ({top[0][1]} artigos), seguida por <b>{top[1][0]}</b> ({top[1][1]}) e <b>{top[2][0]}</b> ({top[2][1]}).</div>
-<h2>📈 Tendências</h2><div class="card">Termos em alta no blog: {', '.join(f'{k} ({v})' for k,v in tend)}.</div>
-<h2>🔥 Bairros em alta</h2><div class="card"><ul>{alta}</ul></div>
-<h2>🏙️ Ranking das cidades</h2><table><tr class="th"><th>#</th><th>Cidade</th><th>Volume</th><th>Score</th></tr>{rank}</table>
-<h2>💡 Melhores investimentos da semana</h2><table><tr class="th"><th>Tipo</th><th>Multiplicador</th><th>Yield est.</th></tr>{inv}</table>
-<h2>🏠 Melhores imóveis para renda</h2><div class="card"><ul>{renda_html}</ul></div>
-<h2>🎯 Oportunidades abaixo do mercado</h2><div class="card"><ul>{opp}</ul><p style="font-size:.8rem;color:#667">Proxy: alta atenção de mercado + yield estimado forte sem saturação de preço.</p></div>
-<div class="card" style="background:linear-gradient(135deg,#1e3a8a,#0a3a6b);color:#fff;text-align:center">
-<b style="color:#4ade80">Quer agir com esse dado?</b><br>
-<a href="https://praia.digital/assets/painel-ferramentas.html" style="background:linear-gradient(90deg,#22d3ee,#4ade80);color:#04141f;font-weight:800;padding:.6rem 1.2rem;border-radius:9px;text-decoration:none;display:inline-block;margin-top:.5rem">Abrir Painel de Ferramentas →</a>
-<a href="https://praia.digital/docs/ferramentas/qualificador-leads.json" style="background:#fff;color:#0a3a6b;font-weight:700;padding:.6rem 1.2rem;border-radius:9px;text-decoration:none;display:inline-block;margin-top:.5rem">Falar com o Hermes →</a>
-</div>
-<p style="font-size:.8rem;color:#667">Praia Digital · 1ª Plataforma Brasileira de Inteligência Imobiliária · Boletim automático</p>
-</body></html>"""
-    os.makedirs(os.path.dirname(OUT), exist_ok=True)
-    data_iso = hoje.isoformat()
-    # boletim do dia (histórico)
-    open(os.path.join(os.path.dirname(OUT), f"boletim-{data_iso}.html"), "w", encoding="utf-8").write(HTML)
-    # boletim corrente (ponteiro)
-    open(OUT, "w", encoding="utf-8").write(HTML)
-    # arquivo de boletins (lista acumulada p/ SEO recorrente)
-    arq = os.path.join(os.path.dirname(OUT), "arquivo-boletins.html")
-    arquivos = sorted(glob.glob(os.path.join(os.path.dirname(OUT), "boletim-*.html")), reverse=True)
-    itens = "".join(f'<li><a href="{os.path.basename(a)}">{os.path.basename(a).replace("boletim-","").replace(".html","")}</a></li>' for a in arquivos[:30])
-    arq_html = f"""<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arquivo de Boletins — Praia Digital</title>
-<style>body{{font-family:Arial,sans-serif;max-width:680px;margin:auto;padding:24px;color:#112}}h1{{color:#0a3a6b}}
-a{{color:#0a3a6b}}li{{margin:.4rem 0}}small{{color:#667}}</style></head><body>
-<h1>📚 Arquivo de Boletins de Inteligência</h1>
-<p>Boletins diários automáticos da Praia Digital.</p><ul>{itens}</ul>
-<p style="font-size:.8rem;color:#667">Praia Digital · 1ª Plataforma Brasileira de Inteligência Imobiliária</p></body></html>"""
-    open(arq, "w", encoding="utf-8").write(arq_html)
-    print(f"Boletim diário: {OUT}\nCidades ranqueadas: {len(top)} | Top1: {top[0][0]} ({top[0][1]} artigos) | Arquivo: {len(arquivos)} boletins")
-
-if __name__ == "__main__":
-    gerar()
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(); parser.add_argument('--root', type=Path, default=ROOT)
+    build(parser.parse_args().root)
