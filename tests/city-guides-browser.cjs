@@ -42,6 +42,15 @@ const origin='https://praia.digital',mime={'.html':'text/html; charset=utf-8','.
    const cards=await page.locator('.property-card').count();
    for(let i=0;i<cards;i++)assert((await page.locator('.property-card').nth(i).locator('.property-meta').first().textContent()).startsWith(c.name));
    if(['cananeia','cubatao','iguape','ilha-comprida'].includes(c.slug)){assert.equal(cards,0);assert((await page.locator('.imoveis-empty').textContent()).includes('Nenhum imóvel'));}
+   if(c.slug==='bertioga'){
+    assert.equal(cards,2);
+    assert.equal(await page.locator('a[href*="apartamento-alto-padrao-bertioga"]').count(),0);
+    await page.locator('#tipo-filtro').selectOption('Aluguel');
+    assert.equal(await page.locator('.property-card').count(),0);
+    assert(await page.locator('.imoveis-empty').isVisible());
+    await page.locator('#tipo-filtro').selectOption('Venda');
+    assert.equal(await page.locator('.property-card').count(),2);
+   }
    results.push({city:c.name,width,cards,passed:true});
   }
   await page.goto(origin+'/cidades/');assert.equal(await page.locator('.city-card').count(),16);assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
