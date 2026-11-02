@@ -25,7 +25,11 @@ const origin='https://praia.digital',mime={'.html':'text/html; charset=utf-8','.
    assert.equal(await page.locator('h1').count(),1);
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),c.slug+' overflow');
    await page.keyboard.press('Tab');assert.equal(await page.evaluate(()=>document.activeElement.textContent.trim()),'Ir para o conteúdo');
-   await page.keyboard.press('Enter');assert.equal(new URL(page.url()).hash,'#conteudo');
+   await Promise.all([
+    page.waitForURL(url=>url.hash==='#conteudo'),
+    page.keyboard.press('Enter')
+   ]);
+   assert.equal(new URL(page.url()).hash,'#conteudo');
    await page.locator('summary').first().click();assert(await page.locator('details').first().getAttribute('open')!==null);
    if(['bertioga','cubatao','iguape','ilha-comprida'].includes(c.slug)){
     await page.evaluate(()=>scrollTo(0,0));
