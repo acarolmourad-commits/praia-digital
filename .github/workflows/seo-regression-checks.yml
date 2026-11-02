@@ -29,5 +29,7 @@ jobs:
         run: |
           python3 -m unittest discover -s tests -p 'test_gsc_article_cleanup.py' -v
           python3 -m unittest discover -s tests -p 'test_city_search_links.py' -v
+      - name: Practical host article content and conversion regressions
+        run: python3 -m unittest discover -s tests -p 'test_host_lead_articles.py' -v
       - name: Validate published sitemap targets
         run: python3 scripts/validate_sitemap_targets.py
