@@ -184,7 +184,7 @@ new_items = [
     "area": "200m²",
     "image": "img/bertioga-terreno.png",
     "tags": '<article class="servico-card"><h3>✓</h3><p>Plano</p></article><article class="servico-card"><h3>✓</h3><p>Rua asfaltada</p></article><article class="servico-card"><h3>✓</h3><p>Infraestrutura pronta</p></article>',
-    "related": '<a class="servico-card" href="casa-terrea-bertioga.html"><h3>Casa térrea - Bertioga</h3><p>Bertioga • Venda</p><p>R$ 520.000</p></a><a class="servico-card" href="apartamento-alto-padrao-bertioga.html"><h3>Apartamento alto padrão - Bertioga</h3><p>Bertioga • Aluguel</p><p>R$ 8.900/mês</p></a><a class="servico-card" href="terreno-santos.html"><h3>Terreno - Santos</h3><p>Santos • Venda</p><p>R$ 320.000</p></a>',
+    "related": '<a class="servico-card" href="casa-terrea-bertioga.html"><h3>Casa térrea - Bertioga</h3><p>Bertioga • Venda</p><p>R$ 520.000</p></a><a class="servico-card" href="terreno-santos.html"><h3>Terreno - Santos</h3><p>Santos • Venda</p><p>R$ 320.000</p></a>',
     "whatsapp_link": "https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Terreno%20-%20Bertioga.%20Pode%20me%20enviar%20mais%20detalhes%3F",
   },
 ]

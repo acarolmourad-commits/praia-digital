@@ -144,20 +144,6 @@
         "image": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=900&q=60",
         "tags": ["Acesso fácil", "Aceita FGTS", "Novo"],
         "description": "Apartamento compacto com financiamento facilitado, próximo à orla e com opção de FGTS."
-      },
-      {
-        "id": 8,
-        "title": "Apartamento alto padrão - Bertioga",
-        "slug": "apartamento-alto-padrao-bertioga",
-        "city": "Bertioga",
-        "type": "Aluguel",
-        "price": "R$ 8.900/mês",
-        "bedrooms": "4",
-        "area": "240m²",
-        "score": 49,
-        "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=60",
-        "tags": ["Alto padrão", "Vista mar", "Lazer completo"],
-        "description": "Apartamento alto padrão com vista mar, lazer completo e acabamento premium em Bertioga."
       }
     ];
 
