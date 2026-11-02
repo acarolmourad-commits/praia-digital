@@ -36,7 +36,6 @@ imoveis_map = {
     'imoveis/cobertura-duplex-sao-vicente.html': 'imoveis/apartamento-3-quartos-sao-vicente.html',
     'imoveis/apartamento-compacto-mongagua.html': 'imoveis/apartamento-1-quartos-mongagua.html',
     'imoveis/sobrado-geminado-peruibe.html': 'imoveis/apartamento-2-quartos-peruibe.html',
-    'imoveis/apartamento-alto-padrao-bertioga.html': 'imoveis/apartamento-3-quartos-bertioga.html',
 }
 
 def patch_file(rel_path, mapping):

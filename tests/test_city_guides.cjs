@@ -58,6 +58,8 @@ assert.deepEqual(catalog.filter(p=>p.city==='Bertioga').map(p=>p.id).sort((a,b)=
 assert.equal(catalog.filter(p=>search.matches(p,search.fromParams(new URLSearchParams({cidade:'Bertioga',finalidade:'Aluguel'})))).length,0);
 assert.equal(catalog.filter(p=>search.matches(p,search.fromParams(new URLSearchParams({cidade:'Bertioga',finalidade:'Venda'})))).length,2);
 assert(!read('imoveis.html').includes('Apartamento alto padrão - Bertioga'));
+assert(!read('encontrar-imovel.html').includes('apartamento-alto-padrao-bertioga'));
+assert(!read('fix_broken_links.py').includes('apartamento-alto-padrao-bertioga'));
 assert(!read('scripts/automation/generate_landings_safe.py').includes('apartamento-alto-padrao-bertioga'));
 const withdrawn=read('leads/apartamento-alto-padrao-bertioga.html');
 assert(withdrawn.includes('noindex, follow')&&withdrawn.includes('Anúncio removido'));

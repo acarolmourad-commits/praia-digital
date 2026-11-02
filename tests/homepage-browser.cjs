@@ -145,7 +145,9 @@ async function searchJourney(page, width) {
   assert.match(await page.locator('#preco-label').innerText(), /R\$\/mês/);
   await page.locator('#preco-filtro').fill('9000');
   await page.locator('#preco-filtro').press('Tab');
-  assert.equal(await page.locator('.property-card').count(),1);
+  // The owner withdrew Bertioga's old rental; budget handling must still work.
+  assert.equal(await page.locator('.property-card').count(),0);
+  assert(await page.locator('.imoveis-empty').isVisible());
   await page.screenshot({path:path.join(output,`rental-search-${width}.png`)});
   await page.reload();
   assert.equal(await page.locator('#preco-filtro').inputValue(),'9000');
