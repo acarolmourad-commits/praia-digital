@@ -36,12 +36,11 @@ PD_LEADS.injectNewsletter = function ({ selector = 'article' } = {}) {
   box.setAttribute('data-pd-newsletter', '');
   box.innerHTML = `
     <div class="pd-newsletter__inner">
-      <p class="pd-newsletter__title">Receba inteligência imobiliária no seu e-mail</p>
-      <p class="pd-newsletter__text">Conteúdo semanal sobre mercado, investimentos e gestão no litoral.</p>
-      <form class="pd-newsletter__form" onsubmit="event.preventDefault(); alert('Cadastro simulado com sucesso.');">
-        <input class="pd-newsletter__input" type="email" placeholder="Seu e-mail" required />
-        <button class="pd-newsletter__submit" type="submit">Cadastrar</button>
-      </form>
+      <p class="pd-newsletter__title">Acompanhe o boletim de inteligência</p>
+      <p class="pd-newsletter__text">Fontes verificadas e contexto sobre o litoral, no site ou por RSS.</p>
+      <p>Assinatura por e-mail ainda não está ativa. Nenhum cadastro é coletado aqui.</p>
+      <a href="/docs/inteligencia/feed.xml">Acompanhar gratuitamente por RSS</a>
+      <a href="/newsletter/assinatura.html">Status da assinatura</a>
     </div>
   `;
 
@@ -53,7 +52,7 @@ PD_LEADS.injectFloatingWhatsApp = function () {
   const btn = document.createElement('a');
   btn.className = 'pd-whatsapp-float';
   btn.setAttribute('data-pd-whatsapp-float', '');
-  btn.href = 'https://wa.me/5511954346288?text=Ol%C3%A1,%20tenho%20interesse%20em%20${encodeURIComponent(document.title || 'Blog')}';
+  btn.href = 'https://wa.me/5511954346288?text=' + encodeURIComponent('Olá, tenho interesse em ' + (document.title || 'Blog'));
   btn.target = '_blank';
   btn.rel = 'noopener';
   btn.innerHTML = 'WhatsApp';

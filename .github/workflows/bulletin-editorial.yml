@@ -1,0 +1,66 @@
+name: Bulletin editorial review and checks
+on:
+  pull_request:
+    paths:
+      - 'data/boletim/**'
+      - 'sitemap-boletim.xml'
+      - 'robots.txt'
+      - 'docs/inteligencia/**'
+      - 'scripts/*boletim*'
+      - 'scripts/prepare_bulletin_candidates.py'
+      - 'assets/css/boletim.css'
+      - 'assets/js/cta-newsletter.js'
+      - 'js/boletim.js'
+      - 'newsletter/assinatura.html'
+      - 'tests/*bulletin*'
+      - '.github/workflows/bulletin-editorial.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '43 9 * * *'
+permissions:
+  contents: read
+jobs:
+  validate-and-prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Editorial regression tests
+        run: python3 -m unittest discover -s tests -p 'test_bulletin.py' -v
+      - name: Check generated editions are reproducible
+        run: |
+          python3 scripts/gerar_boletim_diario.py
+          git diff --exit-code -- docs/inteligencia sitemap-boletim.xml
+      - name: JavaScript syntax
+        run: |
+          node --check js/boletim.js
+          node --check assets/js/cta-newsletter.js
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install isolated browser test dependency
+        run: |
+          npm install --prefix "$RUNNER_TEMP/bulletin-browser" --no-save playwright@1.64.1
+          "$RUNNER_TEMP/bulletin-browser/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Browser checks (local files, no external requests)
+        env:
+          NODE_PATH: ${{ runner.temp }}/bulletin-browser/node_modules
+        run: node tests/bulletin-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: bulletin-browser-screenshots
+          path: /tmp/bulletin-*.png
+          retention-days: 7
+          if-no-files-found: ignore
+      - name: Prepare review queue (does not publish or send email)
+        if: github.event_name != 'pull_request'
+        run: python3 scripts/prepare_bulletin_candidates.py --output "$RUNNER_TEMP/bulletin-review.json"
+      - uses: actions/upload-artifact@v4
+        if: github.event_name != 'pull_request'
+        with:
+          name: bulletin-review-required
+          path: ${{ runner.temp }}/bulletin-review.json
+          retention-days: 7

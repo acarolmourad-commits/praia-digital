@@ -54,7 +54,7 @@ class NavigationTests(unittest.TestCase):
             self.assertIn('>' + label + '</button>', HEADER)
         self.assertIn('href="/interesse.html">Falar com especialista', HEADER)
         self.assertEqual(HEADER.count('class="pd-site-group"'), 5)
-        self.assertEqual(HEADER.count('<a '), 26)
+        self.assertEqual(HEADER.count('<a '), 27)
 
 if __name__ == '__main__':
     unittest.main()
