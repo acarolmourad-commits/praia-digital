@@ -8,6 +8,7 @@ are decoded before lookup. No files are modified.
 from __future__ import annotations
 
 import argparse
+import re
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
@@ -17,16 +18,74 @@ NAMESPACE = "http://www.sitemaps.org/schemas/sitemap/0.9"
 DEFAULT_ROOT = Path(__file__).resolve().parents[1]
 
 
+# Shared with the generator: these are publication/search exclusions, not access
+# controls. Removing an entry never deletes or changes the underlying page.
+# Do not blanket-exclude docs/: it also contains public guides and newsletters.
+EXCLUDE_DIRS = {'backup', 'backups', 'docs/seo/tmp_adversarial', 'assets', 'partials', 'api', '.git',
+                '.audit', '.github', '.hermes-tmp-idempotency', 'node_modules',
+                'outreach', 'dashboards', 'academy/uploads', 'backend', 'automation'}
+EXCLUDE_FILES = {'404.html'}
+EXCLUDE_PREFIX = ('obrigado-',)
+
+
+def excluded_path(rel: str) -> bool:
+    parts = rel.split('/')
+    for i in range(len(parts) - 1):
+        if '/'.join(parts[:i + 1]) in EXCLUDE_DIRS or parts[i] in EXCLUDE_DIRS:
+            return True
+    return parts[-1] in EXCLUDE_FILES or parts[-1].startswith(EXCLUDE_PREFIX)
+
+
+def robots_rules(root: Path) -> list[tuple[str, bool]]:
+    """Read the site's generic crawler group, without network requests."""
+    path = Path(root) / 'robots.txt'
+    if not path.exists():
+        return []
+    rules, agents = [], []
+    in_rules = False
+    for raw in path.read_text(encoding='utf-8').splitlines():
+        line = raw.split('#', 1)[0].strip()
+        if ':' not in line:
+            continue
+        key, value = [part.strip() for part in line.split(':', 1)]
+        key = key.lower()
+        if key == 'user-agent':
+            if in_rules:
+                agents, in_rules = [], False
+            agents.append(value.lower())
+        elif key in ('allow', 'disallow'):
+            in_rules = True
+            if '*' in agents and value:
+                rules.append((value, key == 'allow'))
+    return rules
+
+
+def blocked_by_robots(path: str, rules: list[tuple[str, bool]]) -> bool:
+    # Longest matching rule wins; Allow wins a same-length tie. In particular,
+    # the site's Allow: / must NOT override its more-specific Disallow rules.
+    matches = []
+    for pattern, allow in rules:
+        end = pattern.endswith('$')
+        body = pattern[:-1] if end else pattern
+        regex = '^' + re.escape(body).replace(r'\*', '.*') + ('$' if end else '')
+        if re.search(regex, path):
+            matches.append((len(body.replace('*', '')), allow))
+    return bool(matches) and not max(matches)[1]
+
+
 class IndexingDirectives(HTMLParser):
     """Read existing indexing directives without changing a page's intent."""
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.reasons = set()
+        self.canonicals = []
 
     def handle_starttag(self, tag, attrs):
+        attrs = {key: (value or "") for key, value in attrs}
+        if tag == "link" and "canonical" in attrs.get("rel", "").lower().split():
+            self.canonicals.append(attrs.get("href", ""))
         if tag != "meta":
             return
-        attrs = {key: (value or "") for key, value in attrs}
         name = attrs.get("name", "").lower().strip()
         directives = attrs.get("content", "").lower().replace(",", " ").split()
         if name in ("robots", "googlebot") and any(value in ("noindex", "none") for value in directives):
@@ -55,6 +114,7 @@ def validate_sitemap(sitemap: Path, root: Path) -> list[str]:
         return [f"{sitemap.name}: expected sitemap urlset"]
     errors: list[str] = []
     seen: set[str] = set()
+    rules = robots_rules(root)
     entries = document.findall(f"{{{NAMESPACE}}}url")
     if not entries:
         return [f"{sitemap.name}: sitemap contains no URLs"]
@@ -93,8 +153,18 @@ def validate_sitemap(sitemap: Path, root: Path) -> list[str]:
         elif not target.is_file():
             errors.append(f"{sitemap.name}: missing local target: {url}")
         else:
+            rel = target.relative_to(root).as_posix()
+            if excluded_path(rel):
+                errors.append(f"{sitemap.name}: excluded internal/test target: {url}")
+            if blocked_by_robots(parts.path, rules):
+                errors.append(f"{sitemap.name}: robots-disallowed target: {url}")
             try:
                 reasons = indexing_exclusions(target)
+                if parts.path == '/index.html':
+                    directives = IndexingDirectives()
+                    directives.feed(target.read_text(encoding='utf-8'))
+                    if directives.canonicals == ['https://praia.digital/']:
+                        errors.append(f"{sitemap.name}: use canonical homepage https://praia.digital/ instead of {url}")
             except (OSError, UnicodeError) as exc:
                 errors.append(f"{sitemap.name}: cannot read target {url}: {exc}")
             else:

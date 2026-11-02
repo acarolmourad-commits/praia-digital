@@ -70,6 +70,50 @@ class SitemapTargetsTests(unittest.TestCase):
         (self.root / "apps/index.html").write_text('<meta name="robots" content="noindex">')
         self.assertIn("non-indexable target", self.validate(["https://praia.digital/apps/"])[0])
 
+    def test_excludes_existing_internal_test_fixtures(self):
+        for rel in ['docs/seo/tmp_adversarial/BOUNDARY_H1_119w.html',
+                    'dashboards/1/index.html', 'partials/nav.html']:
+            page = self.root / rel
+            page.parent.mkdir(parents=True, exist_ok=True)
+            page.write_text('<title>Not a search landing page</title>')
+            self.assertIn('excluded internal/test target',
+                          self.validate(['https://praia.digital/' + rel])[0])
+
+    def test_public_docs_guide_is_not_excluded_by_namespace(self):
+        (self.root / 'docs').mkdir()
+        (self.root / 'docs/public-guide.html').write_text('<title>Useful public guide</title>')
+        self.assertEqual([], self.validate(['https://praia.digital/docs/public-guide.html']))
+
+    def test_robots_longest_match_and_allow_tie(self):
+        (self.root / 'robots.txt').write_text(
+            'User-agent: *\nAllow: /\nDisallow: /leads/\n'
+            'Allow: /leads/public.html\nDisallow: /same\nAllow: /same\n')
+        rules = validator.robots_rules(self.root)
+        self.assertTrue(validator.blocked_by_robots('/leads/private.html', rules))
+        self.assertFalse(validator.blocked_by_robots('/leads/public.html', rules))
+        self.assertFalse(validator.blocked_by_robots('/same', rules))
+        self.assertFalse(validator.blocked_by_robots('/blog/public.html', rules))
+        (self.root / 'leads').mkdir()
+        (self.root / 'leads/private.html').write_text('<title>Private</title>')
+        self.assertIn('robots-disallowed target', self.validate([
+            'https://praia.digital/leads/private.html'])[0])
+
+    def test_robots_wildcard_end_and_agent_groups(self):
+        (self.root / 'robots.txt').write_text(
+            'User-agent: specific-bot\nDisallow: /\n'
+            'User-agent: *\nDisallow: /*?private=1$\n')
+        rules = validator.robots_rules(self.root)
+        self.assertFalse(validator.blocked_by_robots('/public.html', rules))
+        self.assertTrue(validator.blocked_by_robots('/page?private=1', rules))
+        self.assertFalse(validator.blocked_by_robots('/page?private=12', rules))
+
+    def test_homepage_uses_its_declared_canonical(self):
+        (self.root / 'index.html').write_text(
+            '<link rel="canonical" href="https://praia.digital/">')
+        self.assertEqual([], self.validate(['https://praia.digital/']))
+        self.assertIn('use canonical homepage', self.validate([
+            'https://praia.digital/index.html'])[0])
+
     def test_missing_file_and_directory_without_index(self):
         (self.root / "empty").mkdir()
         errors = self.validate([
