@@ -34,7 +34,7 @@
   const properties = [
       {
         "id": 12,
-        "title": "Casa térrea a uma quadra da praia em Bertioga",
+        "title": "Casa térrea a aproximadamente 350 m da Praia da Enseada em Bertioga",
         "slug": "casa-terrea-bertioga-675m2",
         "city": "Bertioga",
         "type": "Venda",
@@ -47,9 +47,9 @@
                 "2 suítes",
                 "10 vagas",
                 "Quintal",
-                "Uma quadra da praia"
+                "Aproximadamente 350 m da Praia da Enseada"
         ],
-        "description": "Casa térrea em Bertioga a uma quadra da praia: terreno de 675 m², 234 m² construídos, 3 dormitórios, 2 suítes e 10 vagas. Venda por R$ 1.800.000. Fotos reais e cenários ilustrativos."
+        "description": "Casa térrea em Bertioga a aproximadamente 350 m da Praia da Enseada: terreno de 675 m², 234 m² construídos, 3 dormitórios, 2 suítes e 10 vagas. Venda por R$ 1.800.000. Fotos reais e cenários ilustrativos."
 },
       {
         "id": 11,
