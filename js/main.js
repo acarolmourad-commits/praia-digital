@@ -34,7 +34,7 @@
   const properties = [
       {
         "id": 11,
-        "title": "Apartamento em Bertioga: 2 quartos, 1 suíte e piscina",
+        "title": "Apartamento reformado a uma quadra da praia em Bertioga",
         "slug": "apartamento-bertioga-70m2",
         "city": "Bertioga",
         "type": "Venda",
@@ -47,9 +47,11 @@
                 "Elevador",
                 "Piscina",
                 "1 vaga",
-                "Aceita financiamento"
+                "Aceita financiamento",
+                "Uma quadra da praia",
+                "Armários fixos e ar-condicionado"
         ],
-        "description": "Apartamento à venda em Bertioga por R$ 600 mil: 70,53 m², 2 quartos sendo 1 suíte, elevador, piscina e 1 vaga. Aceita financiamento. Fotos reais e simuladores ilustrativos."
+        "description": "Apartamento reformado a uma quadra da praia em Bertioga por R$ 600 mil: 70,53 m², 2 quartos sendo 1 suíte, elevador, piscina e 1 vaga. Aceita financiamento. Fotos reais e simuladores ilustrativos."
 },
       {
         "id": 10,
