@@ -238,6 +238,30 @@ async function purposeTransitions(page) {
   assert.match(await page.locator('#search-status').innerText(),/texto e a finalidade do link eram diferentes/);
 }
 
+
+async function houseListing(page,width){
+  await page.goto(origin+'/imoveis/casa-terrea-bertioga-675m2.html',{waitUntil:'load'});
+  assert.equal(await page.locator('.gallery img').count(),20);
+  assert.match(await page.locator('.price').innerText(),/1\.800\.000/);
+  assert.match(await page.locator('#rental-results').innerText(),/44\.100,00/);
+  await page.locator('#occupancy').fill('0');
+  assert.match(await page.locator('#rental-results').innerText(),/-.*21\.600,00/);
+  assert.match(await page.locator('#rental-results').innerText(),/Não há retorno/);
+  await page.locator('#rate').fill('-3');
+  assert.match(await page.locator('#value-results').innerText(),/1\.545\.721,25/);
+  await page.locator('#occupancy').fill('30');
+  await page.locator('#rate').fill('3');
+  await noOverflow(page,`house listing ${width}px`);
+  await page.locator('.gallery img').evaluateAll(images=>images.forEach(img=>{img.loading='eager';}));
+  await page.waitForFunction(()=>Array.from(document.querySelectorAll('.gallery img')).every(img=>img.complete&&img.naturalWidth>0));
+  const wa=await page.locator('.hero a.cta').first().getAttribute('href');
+  assert(wa.startsWith('https://wa.me/5511954346288?text='));
+  await page.screenshot({path:path.join(output,`house-${width}.png`)});
+  await page.locator('a.back').click();
+  const card=page.locator('.property-card').filter({has:page.locator('a[href="imoveis/casa-terrea-bertioga-675m2.html"]')});
+  assert.equal(await card.count(),1);assert.match(await card.innerText(),/1\.800\.000/);
+}
+
 (async () => {
   fs.mkdirSync(output, { recursive: true });
   const launch = { headless: true };
@@ -255,9 +279,10 @@ async function purposeTransitions(page) {
         await searchJourney(page, width);
         await purposeTransitions(page);
         await contactAndCases(page, width);
+        await houseListing(page,width);
         assert.deepEqual(sideEffects, [], 'no external navigation or non-GET requests');
         assert.deepEqual(errors, [], 'no uncaught JavaScript errors');
-        results.push({ width, status: 'passed', checks: ['home layout', 'responsive footer', 'menu escape/repeat', 'single product comparison', 'search parse/zero/positive', 'reload/back/forward/reset', 'legacy query', 'contextual contact', 'optional payment', 'illustrative cases'] });
+        results.push({ width, status: 'passed', checks: ['home layout', 'responsive footer', 'menu escape/repeat', 'single product comparison', 'search parse/zero/positive', 'reload/back/forward/reset', 'legacy query', 'contextual contact', 'optional payment', 'illustrative cases','house catalog/photos/calculators'] });
         console.log(`${width}px: homepage, search, contact and cases passed`);
       } catch (error) {
         results.push({ width, status: 'failed', message: error.message, errors });
