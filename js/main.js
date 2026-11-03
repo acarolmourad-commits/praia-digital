@@ -15,7 +15,7 @@
       <meta itemprop="name" content="${escapeHtml(p.title)}">
       ${p.image ? `<div class="property-media"><img src="${p.image}" alt="${escapeHtml(p.title)}" loading="lazy" itemprop="image"></div>` : ''}
       <div class="property-info">
-        <h3 class="property-title" itemprop="name">${escapeHtml(p.title)} <span style="margin-left:8px;font-size:12px;color:#64748b">#${p.score||0}</span></h3>
+        <h3 class="property-title" itemprop="name">${escapeHtml(p.title)} ${p.score ? `<span style="margin-left:8px;font-size:12px;color:#64748b">#${p.score}</span>` : ''}</h3>
         <p class="property-meta">${escapeHtml(p.city)} · ${escapeHtml(p.type)}</p>
         <p class="property-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
           <meta itemprop="priceCurrency" content="BRL">
@@ -32,6 +32,25 @@
   `;
   
   const properties = [
+      {
+        "id": 11,
+        "title": "Apartamento em Bertioga: 2 quartos, 1 suíte e piscina",
+        "slug": "apartamento-bertioga-70m2",
+        "city": "Bertioga",
+        "type": "Venda",
+        "price": "R$ 600.000",
+        "bedrooms": "2",
+        "area": "70,53 m²",
+        "image": "https://praia.digital/assets/apartamento-bertioga-70m2/03_IMG_0047_ajustada.jpg",
+        "tags": [
+                "1 suíte",
+                "Elevador",
+                "Piscina",
+                "1 vaga",
+                "Aceita financiamento"
+        ],
+        "description": "Apartamento à venda em Bertioga por R$ 600 mil: 70,53 m², 2 quartos sendo 1 suíte, elevador, piscina e 1 vaga. Aceita financiamento. Fotos reais e simuladores ilustrativos."
+},
       {
         "id": 10,
         "title": "Lançamento: casas de alto padrão em São Lourenço",

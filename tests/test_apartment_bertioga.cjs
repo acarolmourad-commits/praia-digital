@@ -1,0 +1,12 @@
+const assert=require('node:assert/strict');
+const {rental,appreciation}=require('../js/apartamento-bertioga-simulador.js');
+let r=rental(600000,300,30,25,1000);
+assert.equal(r.nights,109.5);assert.equal(r.gross,32850);assert.equal(r.net,12637.5);assert.equal(r.yield,2.10625);
+assert.equal(rental(600000,300,0,25,1000).net,-12000);assert.equal(rental(600000,0,100,0,0).payback,null);
+assert.equal(rental(600000,300,100,100,1000).net,-12000);
+assert.equal(appreciation(600000,-100,5).value,0);assert.equal(appreciation(600000,0,5).value,600000);
+for(const [rate,expected] of [[-3,515240.42],[3,695564.44],[6,802935.35]]) assert.equal(Number(appreciation(600000,rate,5).value.toFixed(2)),expected);
+for(const n of [NaN,Infinity,-1,101]) assert.throws(()=>rental(600000,300,n,25,1000),RangeError);
+for(const n of [NaN,Infinity,0,31,1.5]) assert.throws(()=>appreciation(600000,3,n),RangeError);
+assert.throws(()=>rental(0,300,30,25,1000),RangeError);assert.throws(()=>appreciation(600000,-101,5),RangeError);
+console.log('Apartment calculations: defaults, losses, zero occupancy, limits and invalid inputs passed.');
