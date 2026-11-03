@@ -9,6 +9,9 @@ on:
       - 'interesse.html'
       - 'cases.html'
       - 'anfitrioes/central-priceplabs.html'
+      - 'imoveis/casa-terrea-bertioga-675m2.html'
+      - 'assets/casa-terrea-bertioga-675m2/**'
+      - 'tests/test_house_bertioga.*'
       - 'js/**'
       - 'css/**'
       - 'assets/css/**'
@@ -32,6 +35,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: House photo validation dependency
+        run: python3 -m pip install Pillow
       - name: JavaScript syntax
         run: |
           node --check js/shared.js
@@ -43,6 +51,8 @@ jobs:
         run: |
           python3 -m unittest discover -s tests -p 'test_homepage_content.py' -v
           node tests/test_property_search.cjs
+          node tests/test_house_bertioga.cjs
+          python3 -m unittest discover -s tests -p 'test_house_bertioga.py' -v
           node tests/test_contact_cases.cjs
       - name: Build the navigation used by deployment
         run: python3 scripts/build-navigation.py --report "$RUNNER_TEMP/homepage-navigation.json"

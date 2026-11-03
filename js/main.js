@@ -33,6 +33,25 @@
   
   const properties = [
       {
+        "id": 12,
+        "title": "Casa térrea a uma quadra da praia em Bertioga",
+        "slug": "casa-terrea-bertioga-675m2",
+        "city": "Bertioga",
+        "type": "Venda",
+        "price": "R$ 1.800.000",
+        "bedrooms": "3",
+        "area": "234 m² construídos",
+        "image": "https://praia.digital/assets/casa-terrea-bertioga-675m2/01_IMG_0098.jpeg",
+        "tags": [
+                "Terreno 675 m²",
+                "2 suítes",
+                "10 vagas",
+                "Quintal",
+                "Uma quadra da praia"
+        ],
+        "description": "Casa térrea em Bertioga a uma quadra da praia: terreno de 675 m², 234 m² construídos, 3 dormitórios, 2 suítes e 10 vagas. Venda por R$ 1.800.000. Fotos reais e cenários ilustrativos."
+},
+      {
         "id": 11,
         "title": "Apartamento reformado a uma quadra da praia em Bertioga",
         "slug": "apartamento-bertioga-70m2",

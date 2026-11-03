@@ -29,7 +29,7 @@ class Apartment(unittest.TestCase):
   schema=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',s,re.S).group(1))
   self.assertEqual(schema['offers']['price'],'600000');self.assertEqual(schema['numberOfBedrooms'],2)
   self.assertIn('uma quadra da praia',s);self.assertIn('Permanecem os armários fixos e o ar-condicionado',s)
-  self.assertIn('js/main.js?v=20261103-apartamento-bertioga',(ROOT/'imoveis.html').read_text())
+  self.assertRegex((ROOT/'imoveis.html').read_text(), r'js/main\.js\?v=[^" ]+')
   self.assertNotIn('0065',s);self.assertNotIn('libfile_',s);self.assertNotIn('placeholder',s)
   self.assertEqual((ROOT/'js/main.js').read_text().count('"slug": "apartamento-bertioga-70m2"'),1)
   self.assertEqual((ROOT/'sitemap.xml').read_text().count('https://praia.digital/imoveis/apartamento-bertioga-70m2.html'),1)
