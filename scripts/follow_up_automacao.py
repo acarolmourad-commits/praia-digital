@@ -5,6 +5,7 @@ Automacao de follow-up D2/D5/D10 para leads de São Sebastião/Bertioga.
 - Para Instagram com PSID conhecido: envia DM via Composio.
 - Para demais canais: gera lote manual.
 """
+import argparse
 import csv
 import json
 import subprocess
@@ -79,7 +80,28 @@ def send_instagram_dm(recipient_id, text):
     except Exception as e:
         return str(e), 1
 
-def main():
+def delivery_confirmed(stdout, returncode):
+    """Require a successful transport AND a provider message receipt, not merely exit 0."""
+    if returncode != 0:
+        return False
+    try:
+        payload = json.loads(stdout)
+    except (ValueError, TypeError):
+        return False
+    if not isinstance(payload, dict) or payload.get('successful') is not True or payload.get('error'):
+        return False
+    data = payload.get('data')
+    if not isinstance(data, dict) or data.get('error'):
+        return False
+    receipt = data.get('message_id')
+    return isinstance(receipt, str) and bool(receipt.strip())
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--dry-run', action='store_true', help='Preview only: no sends or file writes')
+    parser.add_argument('--send', action='store_true', help='Allow configured Instagram sends')
+    args = parser.parse_args(argv)
     with LEADS_PATH.open(encoding='utf-8') as f:
         reader = csv.DictReader(f)
         fieldnames = reader.fieldnames or []
@@ -90,7 +112,7 @@ def main():
         if col not in fieldnames:
             fieldnames.append(col)
 
-    metrics = {'d2': 0, 'd5': 0, 'd10': 0, 'instagram_sent': 0, 'manual': 0}
+    metrics = {'d2': 0, 'd5': 0, 'd10': 0, 'instagram_sent': 0, 'instagram_failed': 0, 'manual': 0}
     manual_batch = []
     instagram_sends = []
 
@@ -137,18 +159,9 @@ def main():
         if not next_msg:
             continue
 
-        # Update CSV
-        if next_stage == 'ENVIADO_D2':
-            row['d2_enviado_em'] = TODAY_STR
-        elif next_stage == 'ENVIADO_D5':
-            row['d5_enviado_em'] = TODAY_STR
-        elif next_stage == 'ENVIADO_D10':
-            row['d10_enviado_em'] = TODAY_STR
-        row['status'] = next_stage
-
         # Try Instagram send if PSID known
-        psid = KNOWN_PSIDS.get(int(lead_id))
-        if psid and canal == 'Instagram':
+        psid = KNOWN_PSIDS.get(int(lead_id)) if str(lead_id).isdigit() else None
+        if args.send and not args.dry_run and psid and canal == 'Instagram':
             text = next_msg
             stdout, rc = send_instagram_dm(psid, text)
             instagram_sends.append({
@@ -159,7 +172,16 @@ def main():
                 'stdout': stdout,
                 'returncode': rc,
             })
-            metrics['instagram_sent'] += 1
+            if delivery_confirmed(stdout, rc):
+                metrics['instagram_sent'] += 1
+                row['status'] = next_stage
+                stamp = {'ENVIADO_D0': 'd0_enviado_em', 'ENVIADO_D2': 'd2_enviado_em',
+                         'ENVIADO_D5': 'd5_enviado_em', 'ENVIADO_D10': 'd10_enviado_em'}[next_stage]
+                row[stamp] = TODAY_STR
+                if stamp not in fieldnames:
+                    fieldnames.append(stamp)
+            else:
+                metrics['instagram_failed'] += 1
         else:
             manual_batch.append({
                 'lead_id': lead_id,
@@ -168,12 +190,16 @@ def main():
                 'cidade': cidade,
                 'bairro': bairro,
                 'variant': variant,
-                'stage': next_stage,
+                'stage': next_stage.replace('ENVIADO_', 'PREPARADO_'),
                 'text': next_msg,
                 'servico': servico,
                 'score': score,
             })
             metrics['manual'] += 1
+
+    if args.dry_run:
+        print(json.dumps({'dry_run': True, 'metrics': metrics, 'manual_batch': manual_batch}, ensure_ascii=False))
+        return 0
 
     # Write CSV back
     with LEADS_PATH.open('w', encoding='utf-8', newline='') as f:
@@ -209,6 +235,7 @@ def main():
     print('Metrics:', metrics)
     print('Manual batch:', manual_path)
     print('Report:', report_path)
+    return 1 if metrics['instagram_failed'] else 0
 
 if __name__ == '__main__':
-    main()
+    raise SystemExit(main())

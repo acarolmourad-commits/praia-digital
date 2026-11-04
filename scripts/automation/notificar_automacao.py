@@ -16,7 +16,7 @@ except ImportError:
     print("Instale requests: pip install requests")
     sys.exit(1)
 
-BASE = Path(r'C:\Users\Carolina\praia-digital')
+BASE = Path(__file__).resolve().parents[2]
 FOLDER = BASE / 'docs' / 'sales' / 'csv-lotes-b2b'
 TODAY_STR = date.today().isoformat()
 FILE = FOLDER / f'lote-b2b-automacao-{TODAY_STR}.csv'

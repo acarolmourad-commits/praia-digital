@@ -7,7 +7,9 @@ Le os trackers WPP+e-mail; coluna Data_Msg1 como base de tempo.
 import csv, os, glob
 from datetime import date, datetime
 
-REPO = r"C:/Users/Carolina/praia-digital"
+from pathlib import Path
+
+REPO = str(Path(__file__).resolve().parents[1])
 DIR = os.path.join(REPO, "docs/sales/csv-lotes-email")
 TRACKERS = {"WhatsApp": os.path.join(DIR,"tracker-whatsapp-proprietarios.csv"),
             "E-mail": os.path.join(DIR,"tracker-email-proprietarios.csv")}
