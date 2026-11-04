@@ -12,6 +12,11 @@ on:
       - 'imoveis/casa-terrea-bertioga-675m2.html'
       - 'assets/casa-terrea-bertioga-675m2/**'
       - 'tests/test_house_bertioga.*'
+      - 'imoveis/apartamento-indaia-88m2.html'
+      - 'assets/apartamento-indaia-88m2/**'
+      - 'tests/test_apartment_indaia.*'
+      - 'tests/apartment-indaia-browser.cjs'
+      - 'tests/test_city_guides.cjs'
       - 'js/**'
       - 'css/**'
       - 'assets/css/**'
@@ -38,7 +43,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: House photo validation dependency
+      - name: Listing photo validation dependency
         run: python3 -m pip install Pillow
       - name: JavaScript syntax
         run: |
@@ -47,11 +52,16 @@ jobs:
           node --check js/property-search.js
           node --check js/home-search.js
           node --check tests/homepage-browser.cjs
+          node --check tests/apartment-indaia-browser.cjs
       - name: Focused homepage and conversion regressions
         run: |
           python3 -m unittest discover -s tests -p 'test_homepage_content.py' -v
           node tests/test_property_search.cjs
           node tests/test_house_bertioga.cjs
+          node tests/test_apartment_bertioga.cjs
+          node tests/test_apartment_indaia.cjs
+          node tests/test_city_guides.cjs
+          python3 -m unittest discover -s tests -p 'test_apartment_*.py' -v
           python3 -m unittest discover -s tests -p 'test_house_bertioga.py' -v
           node tests/test_contact_cases.cjs
       - name: Build the navigation used by deployment
@@ -59,15 +69,18 @@ jobs:
       - name: Browser journey tests (offline, no form submission)
         env:
           HOMEPAGE_QA_OUTPUT: ${{ runner.temp }}/homepage-qa
+          INDAIA_QA_OUTPUT: ${{ runner.temp }}/indaia-qa
         run: |
           npm install --prefix "$RUNNER_TEMP/homepage-browser" playwright@1.63.0 --no-audit --no-fund
           "$RUNNER_TEMP/homepage-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
           NODE_PATH="$RUNNER_TEMP/homepage-browser/node_modules" node tests/homepage-browser.cjs
+          NODE_PATH="$RUNNER_TEMP/homepage-browser/node_modules" node tests/apartment-indaia-browser.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: homepage-browser-evidence
           path: |
             ${{ runner.temp }}/homepage-qa
+            ${{ runner.temp }}/indaia-qa
             ${{ runner.temp }}/homepage-navigation.json
           if-no-files-found: warn

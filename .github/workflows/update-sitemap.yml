@@ -1,4 +1,4 @@
-name: Atualizar sitemap (18 novas paginas de bairros)
+name: Atualizar sitemap do apartamento Indaia
 on:
   workflow_dispatch:
   push:
@@ -8,16 +8,17 @@ permissions:
   contents: write
 jobs:
   patch-sitemap:
+    if: github.ref == 'refs/heads/feat/apartamento-indaia-88m2'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Inserir 18 URLs no sitemap.xml
+      - name: Inserir somente URL do apartamento Indaia
         run: |
           python3 - <<'PYEOF'
           p='sitemap.xml'
           s=open(p,encoding='utf-8').read()
-          pages=['bertioga/indaia','bertioga/maitinga','caraguatatuba/indaia','caraguatatuba/martim-de-sa','guaruja/guaiuba','guaruja/tombo','ilhabela/armacao','ilhabela/itaguacu','itanhaem/gaivota','itanhaem/suarao','mongagua/agenor-de-campos','mongagua/itaguai','peruibe/guarau','peruibe/jardim-ribamar','praia-grande/caicara','praia-grande/real','santos/encruzilhada','santos/sao-manuel']
-          add=''.join('<url><loc>https://praia.digital/bairros/%s.html</loc><lastmod>2026-09-25</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>\n' % pg for pg in pages if ('/bairros/%s.html' % pg) not in s)
+          url='https://praia.digital/imoveis/apartamento-indaia-88m2.html'
+          add='' if url in s else '<url><loc>'+url+'</loc><lastmod>2026-11-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>\n'
           if add:
               s=s.replace('</urlset>', add+'</urlset>')
               open(p,'w',encoding='utf-8').write(s)
@@ -28,4 +29,4 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add sitemap.xml
-          git diff --cached --quiet && echo "Nada a commitar" || (git commit -m "sitemap: incluir 18 novas paginas de bairros" && git push)
+          git diff --cached --quiet && echo "Nada a commitar" || (git commit -m "sitemap: incluir apartamento Indaia" && git push)
