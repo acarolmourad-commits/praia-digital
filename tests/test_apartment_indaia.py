@@ -24,6 +24,8 @@ class Indaia(unittest.TestCase):
    with Image.open(p) as im:self.assertEqual(len(im.getexif()),0);im.verify()
   imgs=[a for t,a in tags if t=='img'];self.assertEqual(len(imgs),29);self.assertEqual(len(set(a['src'] for a in imgs)),28)
   self.assertTrue(all(a.get('alt') for a in imgs))
+  gallery=[int(n) for n in re.findall(r'<figure>.*?src="/assets/apartamento-indaia-88m2/IMG_0(\d+)\.jpeg"',s,re.S)]
+  self.assertEqual(gallery,[142,143,145,144,149,153,154,151,146,147,150,155,152,159,148,156,158,157,170,160,161,162,164,165,167,168,163,166])
   schema=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',s,re.S).group(1))
   self.assertEqual(schema['@type'],'Apartment');self.assertEqual(schema['offers']['price'],'950000');self.assertEqual(schema['floorSize']['value'],88);self.assertEqual(schema['numberOfBedrooms'],2);self.assertEqual(schema['numberOfBathroomsTotal'],2)
   for phrase in ['Indaiá','88 m² úteis','2 vagas','100% mobiliado','5º andar','R$ 920/mês','R$ 2.400/ano','R$ 10.795,45/m²','R$ 65.700','R$ 35.835','regras do condomínio','demais custos fixos']:self.assertIn(phrase,s)
