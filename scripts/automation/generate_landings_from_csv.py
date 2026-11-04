@@ -1,4 +1,8 @@
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from enforce_listing_retirements import retired_page, retired_slugs, clean_html
+RETIRED = retired_slugs()
 import csv
 import argparse
 import urllib.parse
@@ -47,6 +51,8 @@ with open(CSV_PATH, encoding='utf-8') as f:
     reader = csv.DictReader(f)
     for row in reader:
         slug = row.get('slug') or row.get('file', '').replace('.html', '')
+        if slug in RETIRED:
+            continue
         if not slug:
             continue
         title = str(row.get('title', slug.replace('-', ' ').title()) or '')
@@ -108,12 +114,12 @@ with open(CSV_PATH, encoding='utf-8') as f:
         out = OUT_DIR / f'{slug}.html'
         if out.exists():
             if overwrite:
-                out.write_text(html, encoding='utf-8')
+                out.write_text(clean_html(html, RETIRED), encoding='utf-8')
                 updated.append(out.name)
             else:
                 skipped.append(out.name)
             continue
-        out.write_text(html, encoding='utf-8')
+        out.write_text(clean_html(html, RETIRED), encoding='utf-8')
         created.append(out.name)
 
 print('LANDINGS_CREATED', len(created))

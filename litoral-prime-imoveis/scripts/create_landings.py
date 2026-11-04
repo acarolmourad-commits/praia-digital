@@ -1,4 +1,8 @@
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'scripts'))
+from enforce_listing_retirements import retired_page, retired_slugs, clean_html
+RETIRED = retired_slugs()
 
 REPO = Path('.').resolve()
 OUT_DIR = REPO / 'imoveis'
@@ -235,6 +239,8 @@ new_items = [
 
 created = []
 for item in new_items:
+    if item['slug'] in RETIRED:
+        continue
     html = TEMPLATE
     for key, value in item.items():
         if key == 'slug':
@@ -244,7 +250,7 @@ for item in new_items:
     out = OUT_DIR / f"{item['slug']}.html"
     if out.exists():
         continue
-    out.write_text(html, encoding='utf-8')
+    out.write_text(clean_html(html, RETIRED), encoding='utf-8')
     created.append(str(out))
 
 print('LANDINGS_CREATED', len(created))

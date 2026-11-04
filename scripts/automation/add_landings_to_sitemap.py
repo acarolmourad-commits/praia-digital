@@ -1,4 +1,8 @@
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from enforce_listing_retirements import retired_page, retired_slugs, clean_html
+RETIRED = retired_slugs()
 import re
 
 REPO = Path('.').resolve()
@@ -175,6 +179,8 @@ text = SITEMAP.read_text(encoding='utf-8', errors='ignore')
 existing = set(re.findall(r'<loc>([^<]+)</loc>', text))
 added = 0
 for slug in landings:
+    if slug in RETIRED:
+        continue
     url = f'https://praia.digital/imoveis/{slug}.html'
     if url not in existing:
         block = f'  <url>\n    <loc>{url}</loc>\n    <lastmod>2026-08-03T22:15:04+00:00</lastmod>\n    <changefreq>weekly</changefreq>\n  </url>\n'

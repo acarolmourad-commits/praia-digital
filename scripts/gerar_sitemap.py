@@ -6,6 +6,8 @@ Gera sitemap.xml com todas as páginas HTML do projeto.
 import re
 from pathlib import Path
 from datetime import datetime
+from enforce_listing_retirements import retired_page, retired_slugs
+RETIRED = retired_slugs()
 
 BASE = Path(__file__).resolve().parent.parent
 SITEMAP = BASE / "sitemap.xml"
@@ -26,6 +28,8 @@ INDEXABLE_EXTENSIONS = {'.html', '.htm'}
 
 
 def should_exclude(path: str) -> bool:
+    if retired_page(Path(path), RETIRED):
+        return True
     # only consider indexable extensions
     if not any(path.lower().endswith(ext) for ext in INDEXABLE_EXTENSIONS):
         return True
