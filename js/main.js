@@ -32,6 +32,26 @@
   `;
   
   const properties = [
+{
+        "id": 13,
+        "title": "Apartamento mobiliado no Indaiá com vista para o mar",
+        "slug": "apartamento-indaia-88m2",
+        "city": "Bertioga",
+        "type": "Venda",
+        "price": "R$ 950.000",
+        "bedrooms": "2",
+        "area": "88 m² úteis",
+        "image": "https://praia.digital/assets/apartamento-indaia-88m2/IMG_0142.jpeg",
+        "tags": [
+                "Indaiá",
+                "1 suíte",
+                "2 vagas",
+                "100% mobiliado",
+                "Vista para o mar",
+                "Lazer no condomínio"
+        ],
+        "description": "Apartamento no Indaiá, Bertioga: 88 m² úteis, 2 dormitórios, 1 suíte, 2 vagas e vista para o mar no 5º andar. 100% mobiliado. R$ 950.000. Fotos reais e cenários ilustrativos."
+},
       {
         "id": 12,
         "title": "Casa térrea a aproximadamente 350 m da Praia da Enseada em Bertioga",

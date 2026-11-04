@@ -1,0 +1,11 @@
+const assert=require('node:assert/strict');
+const {rental,appreciation}=require('../js/imovel-cenarios.js');
+const r=rental(950000,600,30,25,1120);
+assert.equal(r.nights,109.5);assert.equal(r.gross,65700);assert.equal(r.net,35835);
+assert.equal(Number(r.yield.toFixed(4)),3.7721);
+assert.equal(rental(950000,600,0,25,1120).net,-13440);
+assert.equal(rental(950000,600,0,25,1120).payback,null);
+assert.equal(Number((950000/88).toFixed(2)),10795.45);
+for(const rate of [-3,0,3,6])assert.equal(appreciation(950000,rate,5).value,950000*(1+rate/100)**5);
+for(const invalid of [NaN,Infinity,-1,101])assert.throws(()=>rental(950000,600,invalid,25,1120),RangeError);
+console.log('Indaiá scenario, loss, validation and price calculations passed.');
