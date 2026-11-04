@@ -1,0 +1,38 @@
+name: City comparator regression
+on:
+  pull_request:
+    paths:
+      - 'apps/comparador-cidades/**'
+      - 'tests/test_city_comparator.cjs'
+      - 'tests/city-comparator-browser.cjs'
+      - '.github/workflows/city-comparator-checks.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'apps/comparador-cidades/**'
+      - 'tests/test_city_comparator.cjs'
+      - 'tests/city-comparator-browser.cjs'
+      - '.github/workflows/city-comparator-checks.yml'
+permissions:
+  contents: read
+jobs:
+  comparator:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check profiles, missing data and accessible markup
+        run: node tests/test_city_comparator.cjs
+      - name: Test desktop, tablet, mobile and keyboard
+        run: |
+          npm install --prefix "$RUNNER_TEMP/comparator" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/comparator/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          NODE_PATH="$RUNNER_TEMP/comparator/node_modules" COMPARATOR_SCREENSHOTS="$RUNNER_TEMP/comparator-screenshots" node tests/city-comparator-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: city-comparator-screenshots
+          path: ${{ runner.temp }}/comparator-screenshots
+          if-no-files-found: ignore
