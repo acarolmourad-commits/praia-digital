@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comparador de Cidades do Litoral SP — Onde Investir? | Praia Digital</title>
-  <meta name="description" content="Compare as cidades do litoral paulista lado a lado: preço por m², ocupação de temporada, ROI, valorização e liquidez. Ferramenta gratuita da Praia Digital.">
+  <title>Comparador de Cidades do Litoral SP — Perfis e Referências | Praia Digital</title>
+  <meta name="description" content="Compare referências de 12 cidades do litoral paulista. Veja os pesos por perfil, as limitações dos dados e os indicadores indisponíveis.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://praia.digital/apps/comparador-cidades/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Comparador de Cidades do Litoral SP | Praia Digital">
-  <meta property="og:description" content="Ranqueie as cidades do litoral pelo seu perfil: investimento, temporada ou moradia.">
+  <meta property="og:description" content="Explore cidades por perfil, com pesos explícitos e referências de mercado pendentes de validação.">
   <meta property="og:url" content="https://praia.digital/apps/comparador-cidades/">
   <script type="application/ld+json">
   {
@@ -56,9 +56,40 @@
     .links{display:grid;gap:10px;margin-top:8px}
     .links a{display:block;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px;text-decoration:none;color:#0F172A;font-weight:600}
     .links a span{color:#0EA5E9}
+
+    .wrap{max-width:1100px;min-width:0}
+    .card{min-width:0}
+    .card h2{font-size:1.08rem;margin-bottom:12px}
+    .card p+p{margin-top:10px}
+    .data-warning{background:#FFFBEB;border-color:#D97706;color:#78350F}
+    .data-warning a{color:#78350F;font-weight:700}
+    .table-scroll{max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;border:1px solid #E2E8F0;border-radius:10px}
+    .table-scroll:focus-visible{outline:3px solid #0E7C7B;outline-offset:3px}
+    .comparison-table{min-width:920px}
+    .reference-table{min-width:620px}
+    caption{text-align:left;font-weight:600;padding:12px;background:#F8FAFC;color:#334155}
+    th[scope="row"]{font-size:14px;text-transform:none;letter-spacing:normal;background:#fff;color:#0F172A}
+    .unscored td,.unscored th{background:#F8FAFC}
+    .unscored-note{display:block;font-size:12px;font-weight:400;white-space:normal;max-width:180px}
+    .table-help,.note{font-size:13px;color:#475569;margin:10px 0}
+    .profiles{border:0;padding:0}
+    .profiles legend{font-size:17px;font-weight:700;margin-bottom:10px}
+    .prof{min-height:44px}
+    .prof[aria-pressed="true"]{border-color:#0369A1;background:#EFF6FF;color:#075985}
+    .weights{padding:12px;background:#F0F9FF;border-radius:10px;margin:10px 0;color:#164E63}
+    .score{white-space:nowrap}
+    .methodology summary{cursor:pointer;font-weight:700;min-height:44px;padding:10px 0}
+    .methodology ul,.methodology ol{padding-left:22px}
+    .methodology li+li{margin-top:8px}
+    .methodology h3{margin:16px 0 8px;font-size:1rem}
+    .methodology a{color:#075B5C;text-decoration:underline}
+    .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+    .faq summary{list-style:revert}
+    .faq summary::-webkit-details-marker{display:revert}
+    @media(max-width:600px){.wrap{padding:14px 12px 32px}.card{padding:14px}.profiles{gap:8px}.prof{padding:10px 12px}.data-warning{font-size:14px}.table-help{font-size:12px}}
   </style>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qual cidade do litoral é melhor para investir?","acceptedAnswer":{"@type":"Answer","text":"Pelos yields de aluguel (8%+), Mongaguá, Peruíbe e Itanhaém lideram em retorno sobre o capital. Praia Grande combina yield 7,6% com o maior estoque de lançamentos da baixada. Santos oferece a maior liquidez para revenda."}},{"@type":"Question","name":"Qual cidade tem a temporada mais forte?","acceptedAnswer":{"@type":"Answer","text":"São Sebastião (Maresias/Juquehy) e Ilhabela têm as maiores diárias do litoral na alta temporada, mas também os preços de compra mais altos — o yield fica em ~5,8–5,9%. Guarujá equilibra diária alta com preço médio menor."}},{"@type":"Question","name":"Qual cidade é mais barata para morar?","acceptedAnswer":{"@type":"Answer","text":"Peruíbe (R$ 1.900/m²), Mongaguá (R$ 2.100/m²) e Itanhaém (R$ 2.400/m²) têm os menores custos de compra e aluguel do litoral paulista."}},{"@type":"Question","name":"Como escolher entre Baixada Santista e Litoral Norte?","acceptedAnswer":{"@type":"Answer","text":"Baixada (Santos a Peruíbe): infraestrutura urbana, emprego, liquidez e preços menores. Litoral Norte (Caraguá a Ubatuba): praias preservadas, temporada premium e valorização turística, com menos liquidez fora de temporada."}}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Qual cidade do litoral é melhor para investir?", "acceptedAnswer": {"@type": "Answer", "text": "Não há uma resposta validada nesta base. O score pondera referências legadas por perfil e não usa o rendimento de aluguel. Compare imóveis equivalentes, custos, riscos e fontes atualizadas antes de decidir."}}, {"@type": "Question", "name": "Qual cidade tem a temporada mais forte?", "acceptedAnswer": {"@type": "Answer", "text": "A resposta depende do período, bairro, tipo de imóvel e custos. Diária alta ou ocupação alta, isoladamente, não garantem maior retorno. A base atual não documenta recortes equivalentes entre cidades."}}, {"@type": "Question", "name": "Qual cidade é mais barata para morar?", "acceptedAnswer": {"@type": "Answer", "text": "A tabela mostra referências históricas de compra e aluguel, não cotações atuais. Inclua condomínio, transporte, serviços e as características do imóvel na comparação."}}, {"@type": "Question", "name": "Como escolher entre Baixada Santista e Litoral Norte?", "acceptedAnswer": {"@type": "Answer", "text": "Compare bairros e imóveis compatíveis com seu orçamento e rotina. Avalie acesso, mobilidade, serviços e sazonalidade com fontes atuais, sem decidir apenas por médias municipais."}}]}
   </script>
 <link rel="stylesheet" href="/css/app-network.css">
 </head>
@@ -66,53 +97,103 @@
 <a class="pd-skip" href="#pd-app-title">Ir para a ferramenta</a>
 <header>
   <h1 id="pd-app-title" tabindex="-1">📊 Comparador de Cidades do Litoral</h1>
-  <p>Qual cidade combina com seu objetivo? Compare e decida com dados • Praia Digital</p>
+  <p>Compare referências por objetivo e confira os limites de cada indicador.</p>
 </header>
 <nav class="pd-network-nav" aria-label="Navegação da rede de aplicativos"><ul><li><a href="/">Página inicial</a></li><li><a href="/apps/">Todos os aplicativos</a></li><li><a href="/#jornadas-apps">Roteiros de análise</a></li></ul></nav>
 
-<div class="wrap">
-  <div class="card">
-    <h2 style="font-size:17px;margin-bottom:10px">Escolha seu perfil</h2>
-    <div class="profiles">
-      <button class="prof on" data-p="investidor" onclick="setProfile(this)">💰 Investidor</button>
-      <button class="prof" data-p="temporada" onclick="setProfile(this)">🏖️ Renda de temporada</button>
-      <button class="prof" data-p="morar" onclick="setProfile(this)">🏠 Morar bem</button>
-    </div>
-    <div style="overflow-x:auto">
-      <table>
-        <thead><tr><th>Cidade</th><th>Preço/m²</th><th>Ocupação</th><th>ADR</th><th>Valorização (últimos 12m)</th><th>Liquidez</th><th>Score</th></tr></thead>
+<main class="wrap" id="comparador">
+  <section class="card data-warning" aria-labelledby="data-status-title">
+    <h2 id="data-status-title">Referências históricas, ainda não revalidadas</h2>
+    <p>A versão original indicava coleta em <strong>setembro de 2026</strong>. A amostra, os filtros e a origem de cada número não estão documentados. Estes valores não são cotações atuais nem uma base auditada para investir.</p>
+    <p>Revisão da ferramenta: <time datetime="2026-11-04">4 de novembro de 2026</time>. Esta revisão esclarece limites e cálculos, sem atualizar os dados de mercado. <a href="#metodologia">Confira fontes, pesos e pendências.</a></p>
+  </section>
+  <section class="card" aria-labelledby="ranking-title">
+    <h2 id="ranking-title">Comparação exploratória por perfil</h2>
+    <fieldset class="profiles">
+      <legend>Escolha seu perfil</legend>
+      <button class="prof on" type="button" data-p="investidor" aria-pressed="true" aria-controls="comparison-table" onclick="setProfile(this)">💰 Investidor</button>
+      <button class="prof" type="button" data-p="temporada" aria-pressed="false" aria-controls="comparison-table" onclick="setProfile(this)">🏖️ Renda de temporada</button>
+      <button class="prof" type="button" data-p="morar" aria-pressed="false" aria-controls="comparison-table" onclick="setProfile(this)">🏠 Morar bem</button>
+    </fieldset>
+    <p class="weights" id="profile-weights"></p>
+    <p class="note">O score de 0 a 100 compara apenas esta amostra. Não representa retorno, probabilidade de sucesso ou recomendação. Diária média e rendimento de aluguel não entram no score atual.</p>
+    <p class="table-help" id="ranking-help">Em telas pequenas, deslize a tabela na horizontal. Pelo teclado, foque a tabela e use as setas. “Indisponível” não significa zero.</p>
+    <div class="table-scroll" role="region" aria-labelledby="ranking-title" aria-describedby="ranking-help" tabindex="0">
+      <table class="comparison-table" id="comparison-table">
+        <caption id="comparison-caption">12 cidades. Referências originais não auditadas; valores ausentes ficam sem score.</caption>
+        <thead><tr><th scope="col">Cidade</th><th scope="col">Preço/m²</th><th scope="col">Ocupação</th><th scope="col">Diária média (ADR)</th><th scope="col">Valorização (12m informados)</th><th scope="col">Liquidez editorial</th><th scope="col">Infraestrutura editorial</th><th scope="col">Score /100</th></tr></thead>
         <tbody id="tbody"></tbody>
       </table>
     </div>
-    <p class="note">Dados de referência: AirDNA/Airbtics e análise Praia Digital (coletados em set/2026). Valorização refere-se aos últimos 12 meses. Liquidez: 1–10 (10 = vende rápido). Score ponderado pelo perfil escolhido. Não constitui recomendação de investimento.</p>
-  </div>
+    <p id="ranking-status" class="visually-hidden" role="status" aria-live="polite" aria-atomic="true"></p>
+    <noscript><p>A comparação por perfil precisa de JavaScript. A tabela de referências e a metodologia continuam disponíveis abaixo.</p></noscript>
+    <p class="note">Caraguatatuba está incluída, mas não há ocupação, diária, valorização, liquidez e infraestrutura na base original. Por isso, aparece sem score em todos os perfis.</p>
+  </section>
 
-  <div class="card">
-    <h2 style="font-size:17px;margin-bottom:10px">📊 Dados-chave por cidade <span class="tag">set/2026</span></h2>
-    <table>
-      <tr><th>Cidade</th><th>R$/m² médio</th><th>Aluguel 2q/mês</th><th>Yield a.a.</th><th>Perfil</th></tr>
-      <tr><td>Santos</td><td>R$ 8.000</td><td>R$ 2.800</td><td>6,0%</td><td>moradia + liquidez</td></tr>
-      <tr><td>Ilhabela</td><td>R$ 7.200</td><td>R$ 2.600</td><td>5,8%</td><td>temporada premium</td></tr>
-      <tr><td>São Sebastião</td><td>R$ 6.500</td><td>R$ 2.400</td><td>5,9%</td><td>temporada premium</td></tr>
-      <tr><td>Guarujá</td><td>R$ 4.900</td><td>R$ 2.100</td><td>6,8%</td><td>equilíbrio</td></tr>
-      <tr><td>São Vicente</td><td>R$ 4.200</td><td>R$ 1.900</td><td>7,2%</td><td>equilíbrio</td></tr>
-      <tr><td>Ubatuba</td><td>R$ 4.100</td><td>R$ 1.800</td><td>7,0%</td><td>equilíbrio</td></tr>
-      <tr><td>Praia Grande</td><td>R$ 3.600</td><td>R$ 1.700</td><td>7,6%</td><td>investimento</td></tr>
-      <tr><td>Caraguatatuba</td><td>R$ 3.400</td><td>R$ 1.600</td><td>7,5%</td><td>investimento</td></tr>
-      <tr><td>Bertioga</td><td>R$ 3.200</td><td>R$ 1.500</td><td>7,5%</td><td>investimento</td></tr>
-      <tr><td>Itanhaém</td><td>R$ 2.400</td><td>R$ 1.200</td><td>8,0%</td><td>entrada barata</td></tr>
-      <tr><td>Mongaguá</td><td>R$ 2.100</td><td>R$ 1.100</td><td>8,4%</td><td>entrada barata</td></tr>
-      <tr><td>Peruíbe</td><td>R$ 1.900</td><td>R$ 1.000</td><td>8,4%</td><td>entrada barata</td></tr>
+  <section class="card methodology" id="metodologia" aria-labelledby="methodology-title">
+    <h2 id="methodology-title">Fontes, pesos e limites da comparação</h2>
+    <details open>
+      <summary>Como ler estes dados</summary>
+      <ul>
+        <li><strong>Origem informada na versão original:</strong> AirDNA/Airbtics e análise Praia Digital, com referência a setembro de 2026. Não havia links para a extração, tamanho da amostra, tipos de imóvel ou filtros por cidade.</li>
+        <li><strong>Preço e aluguel:</strong> apresentados originalmente como médias de anúncios ativos. Sem amostra documentada, não equivalem a preços de venda fechada ou avaliação de um imóvel.</li>
+        <li><strong>Ocupação e diária média (ADR):</strong> dependem da janela de datas, noites disponíveis, tipo de imóvel e segmento. Esses recortes não foram preservados na base original.</li>
+        <li><strong>Valorização:</strong> variação de 12 meses informada originalmente. Faltam datas de início e fim e série de suporte; não é previsão.</li>
+        <li><strong>Liquidez e infraestrutura:</strong> notas editoriais originais de 1 a 10, sem rubrica documentada. A liquidez não corresponde a prazo de venda medido.</li>
+        <li><strong>Rendimento anual (yield):</strong> percentuais originais, sem área-padrão, preço total, despesas ou definição de bruto/líquido documentados. Não são recalculados nem usados no ranking.</li>
+      </ul>
+      <h3>Fontes para conferência</h3>
+      <p>Os links abaixo ajudam a pesquisar os indicadores; não certificam os valores legados desta tabela.</p>
+      <ul>
+        <li><a href="https://www.airdna.co/vacation-rental-data/app/br/sao-paulo/ilhabela/overview" target="_blank" rel="noopener">AirDNA: mercado de Ilhabela e definições dos indicadores</a></li>
+        <li><a href="https://airbtics.com/annual-airbnb-revenue-in-ilhabela-brazil" target="_blank" rel="noopener">Airbtics: ocupação e diária de Ilhabela</a></li>
+        <li><a href="https://fipe.org.br/pt-br/indices/fipezap/" target="_blank" rel="noopener">FipeZAP: metodologia e séries de preços de anúncios</a>, com cobertura própria, que não deve ser misturada à desta tabela.</li>
+      </ul>
+      <p><strong>Divergência a reconciliar:</strong> na consulta de 04/11/2026, a Airbtics informava para Ilhabela ocupação de 42% e diária média de R$ 439, no período setembro/2025 a agosto/2026, com atualização em 16/10/2026. A tabela legada traz 62% e R$ 1.100, sem recorte equivalente documentado. Os números não foram substituídos nem tratados como diretamente comparáveis.</p>
+    </details>
+    <details>
+      <summary>Como o score é calculado</summary>
+      <p>Os pesos abaixo são os já usados pela ferramenta. São escolhas editoriais, não uma metodologia de investimento validada.</p>
+      <ul id="all-profile-weights">
+        <li><strong>Investidor:</strong> preço 25%, ocupação 20%, valorização 35%, liquidez 20%, infraestrutura 0%.</li>
+        <li><strong>Renda de temporada:</strong> preço 15%, ocupação 40%, valorização 15%, liquidez 10%, infraestrutura 20%.</li>
+        <li><strong>Morar bem:</strong> preço 25%, ocupação 0%, valorização 15%, liquidez 10%, infraestrutura 50%.</li>
+      </ul>
+      <p>Cada indicador é normalizado entre o menor e o maior valor das cidades com dados completos para o perfil: (valor − mínimo) ÷ (máximo − mínimo). Para preço, invertemos o resultado para favorecer preços menores. Se todos os valores forem iguais, usamos 0,5. O score é a média ponderada desses resultados, multiplicada por 100 e exibida com uma casa decimal.</p>
+      <p>Dados ausentes em um critério com peso maior que zero impedem o score: a cidade é exibida ao final, sem preencher lacunas com zero ou estimativas. Alterar a amostra pode mudar o score mesmo quando os valores de uma cidade não mudam. Diária média e yield são apenas referências adicionais.</p>
+    </details>
+  </section>
+
+  <section class="card" aria-labelledby="references-title">
+    <h2 id="references-title">Referências de preço e aluguel <span class="tag">set/2026 · não revalidadas</span></h2>
+    <p class="table-help" id="references-help">Deslize na horizontal ou use as setas com a tabela em foco para ver todas as colunas.</p>
+    <div class="table-scroll" role="region" aria-labelledby="references-title" aria-describedby="references-help" tabindex="0">
+    <table class="reference-table">
+      <caption>Referências originais de preço e aluguel. Base indicada: setembro de 2026; valores não revalidados.</caption>
+      <tr><th scope="col">Cidade</th><th scope="col">Preço informado/m²</th><th scope="col">Aluguel de 2 quartos/mês</th><th scope="col">Rendimento informado a.a. (yield)</th><th scope="col">Perfil editorial</th></tr>
+      <tr><th scope="row">Santos</th><td>R$ 8.000</td><td>R$ 2.800</td><td>6,0%</td><td>moradia + liquidez</td></tr>
+      <tr><th scope="row">Ilhabela</th><td>R$ 7.200</td><td>R$ 2.600</td><td>5,8%</td><td>temporada premium</td></tr>
+      <tr><th scope="row">São Sebastião</th><td>R$ 6.500</td><td>R$ 2.400</td><td>5,9%</td><td>temporada premium</td></tr>
+      <tr><th scope="row">Guarujá</th><td>R$ 4.900</td><td>R$ 2.100</td><td>6,8%</td><td>equilíbrio</td></tr>
+      <tr><th scope="row">São Vicente</th><td>R$ 4.200</td><td>R$ 1.900</td><td>7,2%</td><td>equilíbrio</td></tr>
+      <tr><th scope="row">Ubatuba</th><td>R$ 4.100</td><td>R$ 1.800</td><td>7,0%</td><td>equilíbrio</td></tr>
+      <tr><th scope="row">Praia Grande</th><td>R$ 3.600</td><td>R$ 1.700</td><td>7,6%</td><td>investimento</td></tr>
+      <tr><th scope="row">Caraguatatuba</th><td>R$ 3.400</td><td>R$ 1.600</td><td>7,5%</td><td>investimento</td></tr>
+      <tr><th scope="row">Bertioga</th><td>R$ 3.200</td><td>R$ 1.500</td><td>7,5%</td><td>investimento</td></tr>
+      <tr><th scope="row">Itanhaém</th><td>R$ 2.400</td><td>R$ 1.200</td><td>8,0%</td><td>entrada barata</td></tr>
+      <tr><th scope="row">Mongaguá</th><td>R$ 2.100</td><td>R$ 1.100</td><td>8,4%</td><td>entrada barata</td></tr>
+      <tr><th scope="row">Peruíbe</th><td>R$ 1.900</td><td>R$ 1.000</td><td>8,4%</td><td>entrada barata</td></tr>
     </table>
-    <p style="font-size:12px;color:#64748B;margin-top:12px">Médias de anúncios ativos coletadas pela Praia Digital em set/2026. Valores por bairro variam — veja os guias.</p>
-  </div>
+    </div>
+    <p class="note">Valores legados para consulta, sem confirmação de amostra e sem cálculo de retorno líquido. Consulte as limitações acima antes de comparar.</p>
+  </section>
 
   <div class="card faq">
     <h2 style="font-size:17px;margin-bottom:10px">❓ Perguntas frequentes</h2>
-    <details><summary>Qual cidade do litoral é melhor para investir?</summary><p>Pelos yields de aluguel (8%+), Mongaguá, Peruíbe e Itanhaém lideram em retorno sobre o capital. Praia Grande combina yield 7,6% com o maior estoque de lançamentos da baixada. Santos oferece a maior liquidez para revenda.</p></details>
-    <details><summary>Qual cidade tem a temporada mais forte?</summary><p>São Sebastião (Maresias/Juquehy) e Ilhabela têm as maiores diárias do litoral na alta temporada, mas também os preços de compra mais altos — o yield fica em ~5,8–5,9%. Guarujá equilibra diária alta com preço médio menor.</p></details>
-    <details><summary>Qual cidade é mais barata para morar?</summary><p>Peruíbe (R$ 1.900/m²), Mongaguá (R$ 2.100/m²) e Itanhaém (R$ 2.400/m²) têm os menores custos de compra e aluguel do litoral paulista.</p></details>
-    <details><summary>Como escolher entre Baixada Santista e Litoral Norte?</summary><p>Baixada (Santos a Peruíbe): infraestrutura urbana, emprego, liquidez e preços menores. Litoral Norte (Caraguá a Ubatuba): praias preservadas, temporada premium e valorização turística, com menos liquidez fora de temporada.</p></details>
+    <details><summary>Qual cidade do litoral é melhor para investir?</summary><p>Não há uma resposta validada nesta base. O score pondera referências legadas por perfil e não usa o rendimento de aluguel. Compare imóveis equivalentes, custos, riscos e fontes atualizadas antes de decidir.</p></details>
+    <details><summary>Qual cidade tem a temporada mais forte?</summary><p>A resposta depende do período, bairro, tipo de imóvel e custos. Diária alta ou ocupação alta, isoladamente, não garantem maior retorno. A base atual não documenta recortes equivalentes entre cidades.</p></details>
+    <details><summary>Qual cidade é mais barata para morar?</summary><p>A tabela mostra referências históricas de compra e aluguel, não cotações atuais. Inclua condomínio, transporte, serviços e as características do imóvel na comparação.</p></details>
+    <details><summary>Como escolher entre Baixada Santista e Litoral Norte?</summary><p>Compare bairros e imóveis compatíveis com seu orçamento e rotina. Avalie acesso, mobilidade, serviços e sazonalidade com fontes atuais, sem decidir apenas por médias municipais.</p></details>
   </div>
 
   <div class="card">
@@ -136,7 +217,7 @@
       <a href="https://acarolmourad-commits.github.io/asf-app/apps/" target="_blank" rel="noopener">🌊 <span>ASF Apps</span> — previsão de ondas, marés e diário de surf</a>
     </div>
   </div>
-</div>
+</main>
 <footer>Praia Digital — Tecnologia imobiliária do litoral • <a href="/" style="color:#0EA5E9">praia.digital</a></footer>
 <script>
 const CIDADES = [
@@ -150,6 +231,7 @@ const CIDADES = [
   {nome:'Praia Grande', m2:3600, ocup:50, adr:450, valor:9.5, liq:7, infra:7},
   {nome:'Itanhaém', m2:2400, ocup:42, adr:400, valor:13.8, liq:4, infra:5},
   {nome:'Mongaguá', m2:2100, ocup:40, adr:350, valor:12.5, liq:4, infra:5},
+  {nome:'Caraguatatuba', m2:3400, ocup:null, adr:null, valor:null, liq:null, infra:null},
   {nome:'Peruíbe', m2:1900, ocup:38, adr:380, valor:14.1, liq:3, infra:4}
 ];
 const PERFIS = {
@@ -157,35 +239,64 @@ const PERFIS = {
   temporada:  {m2:-0.15, ocup:0.4, valor:0.15, liq:0.1, infra:0.2},
   morar:      {m2:-0.25, ocup:0, valor:0.15, liq:0.1, infra:0.5}
 };
+
+const PROFILE_NAMES = {investidor:'Investidor', temporada:'Renda de temporada', morar:'Morar bem'};
+const CRITERIA = {m2:'preço', ocup:'ocupação', valor:'valorização', liq:'liquidez', infra:'infraestrutura'};
 let perfil = 'investidor';
-function setProfile(btn){
-  document.querySelectorAll('.prof').forEach(b=>b.classList.remove('on'));
-  btn.classList.add('on');
-  perfil = btn.dataset.p;
-  render();
-}
+const numberFormat = new Intl.NumberFormat('pt-BR', {maximumFractionDigits:1});
+const scoreFormat = new Intl.NumberFormat('pt-BR', {minimumFractionDigits:1,maximumFractionDigits:1});
 function norm(v, arr, invert){
   const min = Math.min(...arr), max = Math.max(...arr);
-  let s = max===min ? 0.5 : (v-min)/(max-min);
-  return invert ? 1-s : s;
+  const value = max === min ? 0.5 : (v-min)/(max-min);
+  return invert ? 1-value : value;
 }
-function render(){
-  const w = PERFIS[perfil];
-  const m2s = CIDADES.map(c=>c.m2), ocups = CIDADES.map(c=>c.ocup), vals = CIDADES.map(c=>c.valor), liqs = CIDADES.map(c=>c.liq), infs = CIDADES.map(c=>c.infra);
-  const rows = CIDADES.map(c=>{
-    const score = 100*((Math.abs(w.m2)*norm(c.m2,m2s,true) + w.ocup*norm(c.ocup,ocups) + w.valor*norm(c.valor,vals) + w.liq*norm(c.liq,liqs) + w.infra*norm(c.infra,infs)) / (Math.abs(w.m2)+w.ocup+w.valor+w.liq+w.infra));
-    return {...c, score};
-  }).sort((a,b)=>b.score-a.score);
-  document.getElementById('tbody').innerHTML = rows.map((c,i)=>`
-    <tr class="${i===0?'hl':''}">
-      <td>${i===0?'🥇 ':i===1?'🥈 ':i===2?'🥉 ':''}<strong>${c.nome}</strong></td>
-      <td>R$ ${c.m2.toLocaleString('pt-BR')}</td>
-      <td>${c.ocup}%</td>
-      <td>R$ ${c.adr}</td>
-      <td>+${c.valor}%</td>
-      <td>${c.liq}/10</td>
-      <td><span class="score">${c.score.toFixed(0)}</span><div class="bar"><i style="width:${c.score}%"></i></div></td>
+function rankCities(cities, profile){
+  const weights = PERFIS[profile];
+  if (!weights) return [];
+  const keys = Object.keys(weights).filter(key => weights[key] !== 0);
+  const complete = cities.filter(city => keys.every(key => Number.isFinite(city[key])));
+  const totalWeight = keys.reduce((sum,key) => sum + Math.abs(weights[key]), 0);
+  return cities.map(city => {
+    const missing = keys.filter(key => !Number.isFinite(city[key]));
+    const score = missing.length ? null : 100 * keys.reduce((sum,key) => sum + Math.abs(weights[key]) * norm(city[key],complete.map(item=>item[key]),weights[key]<0),0) / totalWeight;
+    return {...city,score,missing};
+  }).sort((a,b) => {
+    if(a.score === null && b.score !== null) return 1;
+    if(b.score === null && a.score !== null) return -1;
+    return (b.score ?? 0)-(a.score ?? 0) || a.nome.localeCompare(b.nome,'pt-BR');
+  });
+}
+function setProfile(btn){
+  if(!Object.prototype.hasOwnProperty.call(PERFIS,btn.dataset.p)) return;
+  perfil=btn.dataset.p;
+  document.querySelectorAll('.prof').forEach(button=>{
+    const selected=button.dataset.p===perfil;
+    button.classList.toggle('on',selected);
+    button.setAttribute('aria-pressed',String(selected));
+  });
+  render(true);
+}
+function formatMetric(value, prefix='', suffix=''){
+  return Number.isFinite(value) ? prefix+numberFormat.format(value)+suffix : 'Indisponível';
+}
+function render(announce=false){
+  const rows=rankCities(CIDADES,perfil);
+  const complete=rows.filter(city=>city.score!==null).length;
+  const weights=Object.keys(CRITERIA).map(key=>CRITERIA[key]+' '+Math.round(Math.abs(PERFIS[perfil][key])*100)+'%').join(' · ');
+  document.getElementById('profile-weights').textContent='Pesos de '+PROFILE_NAMES[perfil]+': '+weights+'.';
+  document.getElementById('comparison-caption').textContent=PROFILE_NAMES[perfil]+': '+rows.length+' cidades, '+complete+' com score exploratório. Referências originais não auditadas.';
+  document.getElementById('tbody').innerHTML=rows.map(city=>`
+    <tr${city.score===null?' class="unscored"':''}>
+      <th scope="row">${city.nome}</th>
+      <td>${formatMetric(city.m2,'R$ ')}</td>
+      <td>${formatMetric(city.ocup,'','%')}</td>
+      <td>${formatMetric(city.adr,'R$ ')}</td>
+      <td>${formatMetric(city.valor,city.valor>0?'+':'','%')}</td>
+      <td>${formatMetric(city.liq,'','/10')}</td>
+      <td>${formatMetric(city.infra,'','/10')}</td>
+      <td>${city.score===null?'<span>Sem score</span><span class="unscored-note">Faltam indicadores para este perfil.</span>':'<span class="score">'+scoreFormat.format(city.score)+'</span><div class="bar" aria-hidden="true"><i style="width:'+city.score+'%"></i></div>'}</td>
     </tr>`).join('');
+  if(announce) document.getElementById('ranking-status').textContent='Comparação atualizada para '+PROFILE_NAMES[perfil]+'. '+rows.length+' cidades; '+(rows.length-complete)+' sem score por falta de indicadores.';
 }
 render();
 </script>
