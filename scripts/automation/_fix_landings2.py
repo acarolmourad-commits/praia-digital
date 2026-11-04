@@ -1,5 +1,9 @@
 import csv, re
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from enforce_listing_retirements import retired_page, retired_slugs, clean_html
+RETIRED = retired_slugs()
 
 repo = Path('.').resolve()
 csv_path = repo / 'imoveis' / 'landings.csv'
@@ -334,6 +338,9 @@ with open(csv_path, 'w', encoding='utf-8', newline='') as f:
     writer = csv.DictWriter(f, fieldnames=fieldnames)
     writer.writeheader()
     for r in merged.values():
+        if r.get('slug') in RETIRED:
+            continue
+        r = {key: clean_html(value, RETIRED) if isinstance(value, str) and '<a ' in value else value for key, value in r.items()}
         writer.writerow(r)
 
 print('new_count', new_count)

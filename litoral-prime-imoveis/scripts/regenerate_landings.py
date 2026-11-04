@@ -2,6 +2,10 @@
 Regenera as landing pages de imóveis a partir do template unificado.
 """
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'scripts'))
+from enforce_listing_retirements import retired_page, retired_slugs, clean_html
+RETIRED = retired_slugs()
 
 BASE = Path(r"C:\Users\Carolina\praia-digital\litoral-prime-imoveis")
 TEMPLATE = BASE / "imoveis" / "template.html"
@@ -389,6 +393,8 @@ template_txt = TEMPLATE.read_text(encoding="utf-8")
 canonical_base = "https://acarolmourad.github.io/praia-digital/litoral-prime-imoveis/imoveis"
 
 for item in items:
+    if item['slug'] in RETIRED:
+        continue
     html = template_txt
     for key, value in item.items():
         if key == "slug":
@@ -398,7 +404,7 @@ for item in items:
     canonical = f"{canonical_base}/{item['slug']}.html"
     html = html.replace("{{canonical}}", canonical)
     out = LANDINGS_DIR / f"{item['slug']}.html"
-    out.write_text(html, encoding="utf-8")
+    out.write_text(clean_html(html, RETIRED), encoding="utf-8")
     print(f"REGEN {out.name}")
 
 print('LANDING_REGENERATION_DONE')

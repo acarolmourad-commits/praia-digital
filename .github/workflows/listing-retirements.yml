@@ -1,0 +1,34 @@
+name: Listing retirement checks
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/listing-retirements.yml'
+      - '.github/workflows/deploy.yml'
+      - 'data/retired-listings.json'
+      - 'imoveis/**'
+      - 'imoveis.html'
+      - 'js/main.js'
+      - 'litoral-prime-imoveis/**'
+      - 'leads/**'
+      - 'scripts/**'
+      - 'tests/test*listing*'
+      - 'tests/fixtures/catalog-preservation.json'
+      - 'sitemap*.xml'
+      - 'feed.xml'
+
+permissions:
+  contents: read
+
+jobs:
+  retirement-scope:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test exact scope, preservation and regeneration
+        run: |
+          python3 -m unittest discover -s tests -p 'test_listing_retirements.py'
+          python3 -m unittest discover -s tests -p 'test_removed_listings.py'
+          node tests/test_confirmed_catalog_removal.cjs
+      - name: Reject active references to retired listings
+        run: python3 scripts/enforce_listing_retirements.py

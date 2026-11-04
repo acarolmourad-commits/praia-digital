@@ -28,5 +28,6 @@ class House(unittest.TestCase):
   for phrase in ['libfile_','70,53','600.000','· aceita financiamento','Permanecem os armários','placeholder']:self.assertNotIn(phrase,s)
   self.assertEqual((ROOT/'js/main.js').read_text().count('"slug": "'+slug+'"'),1)
   self.assertEqual((ROOT/'sitemap.xml').read_text().count('https://praia.digital/imoveis/'+slug+'.html'),1)
-  self.assertIn('js/main.js?v=20261103-indaia-88m2',(ROOT/'imoveis.html').read_text())
+  catalog_tags=Tags((ROOT/'imoveis.html').read_text()).tags
+  self.assertTrue(any(t=='script' and re.fullmatch(r'js/main\.js\?v=[\w-]+',a.get('src','')) for t,a in catalog_tags))
 if __name__=='__main__':unittest.main()

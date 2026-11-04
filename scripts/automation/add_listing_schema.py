@@ -4,6 +4,10 @@ add_listing_schema.py
 Adiciona RealEstateListing JSON-LD nas páginas de imoveis/. (breadcrumb removido em 2026-09-27)
 """
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from enforce_listing_retirements import retired_page, retired_slugs, clean_html
+RETIRED = retired_slugs()
 import re, json
 from html import unescape
 from html.parser import HTMLParser
@@ -119,7 +123,7 @@ def main():
             continue
 
         # skip if already has RealEstateListing
-        if 'RealEstateListing' in text:
+        if 'RealEstateListing' in text or 'name="pd-retired-listing"' in text or retired_page(path, RETIRED):
             skipped += 1
             continue
 

@@ -21,14 +21,14 @@ class RemovedListingTests(unittest.TestCase):
         for directory in ['imoveis', 'litoral-prime-imoveis/imoveis']:
             self.assertFalse((ROOT / directory / (SLUG + '.html')).exists())
 
-    def test_active_datasets_preserve_other_peruibe_listings(self):
+    def test_active_datasets_exclude_all_owner_retired_peruibe_listings(self):
         for name in DATASETS:
             with self.subTest(name=name):
                 records = json.loads((ROOT / name).read_text())
                 slugs = [item['slug'] for item in records]
                 self.assertNotIn(SLUG, slugs)
-                self.assertIn('peruibe-vila-sao-paulo-aluguel', slugs)
-                self.assertIn('peruibe-rio-preto-venda', slugs)
+                self.assertNotIn('peruibe-vila-sao-paulo-aluguel', slugs)
+                self.assertNotIn('peruibe-rio-preto-venda', slugs)
 
     def test_no_active_card_feed_or_sitemap_reference(self):
         for name in ['litoral-prime-imoveis/js/main.js',
@@ -50,15 +50,10 @@ class RemovedListingTests(unittest.TestCase):
             subprocess.run([sys.executable, str(ROOT / 'litoral-prime-imoveis/scripts/expand_portfolio.py')],
                            cwd=root, check=True, capture_output=True, text=True)
             records = json.loads((root / 'litoral-prime-imoveis/imoveis/properties.json').read_text())
-            self.assertEqual(len(records), 39)
+            self.assertEqual(len(records), 0)
             self.assertNotIn(SLUG, [item['slug'] for item in records])
             self.assertNotIn(SLUG, js.read_text())
-            by_id = {item['id']: item for item in records}
-            self.assertNotIn(36, by_id)
-            self.assertEqual(by_id[35]['slug'], 'sao vicente-sao-vicente-aluguel')
-            self.assertEqual(by_id[37]['slug'], 'peruibe-vila-sao-paulo-aluguel')
-            self.assertIn('photo-1503500000000', by_id[35]['image'])
-            self.assertIn('photo-1503700000000', by_id[37]['image'])
+
 
 
 if __name__ == '__main__':

@@ -31,6 +31,12 @@ jobs:
       - name: Exclude assisted-delivery workbooks from public Pages
         run: python3 scripts/prepare_academy_publication.py
 
+      - name: Enforce owner-approved listing retirements
+        run: |
+          python3 scripts/enforce_listing_retirements.py --apply
+          python3 -m unittest discover -s tests -p 'test_listing_retirements.py'
+          python3 scripts/enforce_listing_retirements.py
+
       - name: Validate sitemap before publication
         run: python3 scripts/validate_sitemap_targets.py
 

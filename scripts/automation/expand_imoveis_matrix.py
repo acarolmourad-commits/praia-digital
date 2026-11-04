@@ -6,10 +6,16 @@ Reusa template existente e faz patch cirúrgico de title/desc/canonical/og/twitt
 """
 import os, re, shutil
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from enforce_listing_retirements import retired_page, retired_slugs, clean_html
+RETIRED = retired_slugs()
 
 REPO = Path('.').resolve()
 IMOVEIS_DIR = REPO / 'imoveis'
 TEMPLATE_PATH = IMOVEIS_DIR / 'apartamento-vista-mar-santos.html'
+if retired_page(TEMPLATE_PATH, RETIRED):
+    raise SystemExit('O antigo template é um anúncio retirado. Selecione um template independente e validado antes de gerar novas páginas.')
 TEMPLATE = TEMPLATE_PATH.read_text(encoding='utf-8', errors='ignore')
 
 CITIES = [
@@ -49,6 +55,8 @@ def replace_once(txt, pattern, repl, flags=0):
 
 def build(city_slug, city_label, type_slug, type_title, desc_tpl):
     slug = f'{type_slug}-{city_slug}'
+    if slug in RETIRED:
+        return None
     path = IMOVEIS_DIR / f'{slug}.html'
     if path.exists():
         return None

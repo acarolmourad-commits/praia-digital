@@ -752,78 +752,12 @@
     <preco>Sob consulta</preco>
     <imagem>https://praia.digital/img/default-home.jpg</imagem>
   </entry>
-  <entry>
-    <title>Apartamento vista mar Santos</title>
-    <link href="https://praia.digital/imoveis/apartamento-vista-mar-santos.html"/>
-    <id>apartamento-vista-mar-santos</id>
-    <updated>2026-08-26T00:43:00.823578Z</updated>
-    <summary>Apartamento vista mar Santos: Santos tem orla valorizada, temporada forte e perfil de comprador que exige clareza na documentação e no plano de venda.</summary>
-    <tipo>apartamento</tipo>
-    <cidade>Santos</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://praia.digital/img/santos-apartamento-vista-mar.webp</imagem>
-  </entry>
-  <entry>
-    <title>Aluguel em Bertioga - Bertioga</title>
-    <link href="https://praia.digital/imoveis/bertioga-bertioga-aluguel.html"/>
-    <id>bertioga-bertioga-aluguel</id>
-    <updated>2026-08-26T00:43:00.825577Z</updated>
-    <summary>Imóvel aluguel em Bertioga, Bertioga. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista.</summary>
-    <tipo>bertioga</tipo>
-    <cidade>Aluguel</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1502000000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Lançamento em Centro - Bertioga</title>
-    <link href="https://praia.digital/imoveis/bertioga-centro-lançamento.html"/>
-    <id>bertioga-centro-lançamento</id>
-    <updated>2026-08-26T00:43:00.826577Z</updated>
-    <summary>Imóvel lançamento em Centro, Bertioga. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista.</summary>
-    <tipo>bertioga</tipo>
-    <cidade>Lançamento</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1501800000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Venda em Mata Atlântica - Bertioga</title>
-    <link href="https://praia.digital/imoveis/bertioga-mata-atlântica-venda.html"/>
-    <id>bertioga-mata-atlântica-venda</id>
-    <updated>2026-08-26T00:43:00.826577Z</updated>
-    <summary>Imóvel venda em Mata Atlântica, Bertioga. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista.</summary>
-    <tipo>bertioga</tipo>
-    <cidade>Venda</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1501900000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Venda em Riviera - Bertioga</title>
-    <link href="https://praia.digital/imoveis/bertioga-riviera-venda.html"/>
-    <id>bertioga-riviera-venda</id>
-    <updated>2026-08-26T00:43:00.827576Z</updated>
-    <summary>Imóvel venda em Riviera, Bertioga. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista.</summary>
-    <tipo>bertioga</tipo>
-    <cidade>Venda</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1501600000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Aluguel em São Lourenço - Bertioga</title>
-    <link href="https://praia.digital/imoveis/bertioga-sao-lourenço-aluguel.html"/>
-    <id>bertioga-sao-lourenço-aluguel</id>
-    <updated>2026-08-26T00:43:00.828576Z</updated>
-    <summary>Imóvel aluguel em São Lourenço, Bertioga. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista.</summary>
-    <tipo>bertioga</tipo>
-    <cidade>Aluguel</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1501700000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
+  
+  
+  
+  
+  
+  
   <entry>
     <title>Imóveis em Bertioga</title>
     <link href="https://praia.digital/imoveis/bertioga.html"/>
@@ -1184,18 +1118,7 @@
     <preco>Sob consulta</preco>
     <imagem>https://praia.digital/img/gua-casa-duplex.webp</imagem>
   </entry>
-  <entry>
-    <title>Casa térrea Itanhaém</title>
-    <link href="https://praia.digital/imoveis/casa-terrea-itanhaem.html"/>
-    <id>casa-terrea-itanhaem</id>
-    <updated>2026-08-26T00:43:00.860571Z</updated>
-    <summary>Casa térrea Itanhaém: Itanhaem: Itanhaém cresce em oferta acessível e ambiente familiar, com destaques em Cibratel e Jardim São Fernando.</summary>
-    <tipo>casa</tipo>
-    <cidade>Itanhaem</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://praia.digital/img/it-casa-terrea.webp</imagem>
-  </entry>
+  
   <entry>
     <title>Casa térrea Mongaguá</title>
     <link href="https://praia.digital/imoveis/casa-terrea-mongagua.html"/>
@@ -2072,66 +1995,11 @@
     <preco>Sob consulta</preco>
     <imagem>https://praia.digital/img/sv-cobertura-duplex.webp</imagem>
   </entry>
-  <entry>
-    <title>Lançamento em Enseada - Guaruja</title>
-    <link href="https://praia.digital/imoveis/guaruja-enseada-lançamento.html"/>
-    <id>guaruja-enseada-lançamento</id>
-    <updated>2026-08-26T00:43:00.922572Z</updated>
-    <summary>Imóvel lançamento em Enseada, Guaruja. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista.</summary>
-    <tipo>guaruja</tipo>
-    <cidade>Lançamento</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1500800000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Aluguel em Guaruja - Guaruja</title>
-    <link href="https://praia.digital/imoveis/guaruja-guaruja-aluguel.html"/>
-    <id>guaruja-guaruja-aluguel</id>
-    <updated>2026-08-26T00:43:00.922572Z</updated>
-    <summary>Imóvel aluguel em Guaruja, Guaruja. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista.</summary>
-    <tipo>guaruja</tipo>
-    <cidade>Aluguel</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1501000000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Venda em Jardim Acapulco - Guaruja</title>
-    <link href="https://praia.digital/imoveis/guaruja-jardim-acapulco-venda.html"/>
-    <id>guaruja-jardim-acapulco-venda</id>
-    <updated>2026-08-26T00:43:00.923571Z</updated>
-    <summary>Imóvel venda em Jardim Acapulco, Guaruja. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista.</summary>
-    <tipo>guaruja</tipo>
-    <cidade>Venda</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1500600000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Venda em Pernambuco - Guaruja</title>
-    <link href="https://praia.digital/imoveis/guaruja-pernambuco-venda.html"/>
-    <id>guaruja-pernambuco-venda</id>
-    <updated>2026-08-26T00:43:00.924572Z</updated>
-    <summary>Imóvel venda em Pernambuco, Guaruja. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista.</summary>
-    <tipo>guaruja</tipo>
-    <cidade>Venda</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1500900000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Aluguel em Vila Julia - Guaruja</title>
-    <link href="https://praia.digital/imoveis/guaruja-vila-julia-aluguel.html"/>
-    <id>guaruja-vila-julia-aluguel</id>
-    <updated>2026-08-26T00:43:00.925572Z</updated>
-    <summary>Imóvel aluguel em Vila Julia, Guaruja. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista.</summary>
-    <tipo>guaruja</tipo>
-    <cidade>Aluguel</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1500700000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
+  
+  
+  
+  
+  
   <entry>
     <title>Apartamento Gonzaga Santos - Praia Digital</title>
     <link href="https://praia.digital/imoveis/imovel-001-santos-gonzaga-2026.html"/>
@@ -6560,66 +6428,11 @@
     <preco>Sob consulta</preco>
     <imagem>https://praia.digital/img/santos-apartamento-vista-mar.webp</imagem>
   </entry>
-  <entry>
-    <title>Venda em Centro - Itanhaém</title>
-    <link href="https://praia.digital/imoveis/itanhaem-centro-venda.html"/>
-    <id>itanhaem-centro-venda</id>
-    <updated>2026-08-26T00:43:01.247575Z</updated>
-    <summary>Imóvel venda em Centro, Itanhaém. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista.</summary>
-    <tipo>itanhaem</tipo>
-    <cidade>Venda</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1502100000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Aluguel em Cibratel - Itanhaém</title>
-    <link href="https://praia.digital/imoveis/itanhaem-cibratel-aluguel.html"/>
-    <id>itanhaem-cibratel-aluguel</id>
-    <updated>2026-08-26T00:43:01.247575Z</updated>
-    <summary>Imóvel aluguel em Cibratel, Itanhaém. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista.</summary>
-    <tipo>itanhaem</tipo>
-    <cidade>Aluguel</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1502200000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Venda em Gaivota - Itanhaém</title>
-    <link href="https://praia.digital/imoveis/itanhaem-gaivota-venda.html"/>
-    <id>itanhaem-gaivota-venda</id>
-    <updated>2026-08-26T00:43:01.248575Z</updated>
-    <summary>Imóvel venda em Gaivota, Itanhaém. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista.</summary>
-    <tipo>itanhaem</tipo>
-    <cidade>Venda</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1502400000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Aluguel em Itanhaém - Itanhaém</title>
-    <link href="https://praia.digital/imoveis/itanhaem-itanhaem-aluguel.html"/>
-    <id>itanhaem-itanhaem-aluguel</id>
-    <updated>2026-08-26T00:43:01.249574Z</updated>
-    <summary>Imóvel aluguel em Itanhaém, Itanhaém. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista.</summary>
-    <tipo>itanhaem</tipo>
-    <cidade>Aluguel</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1502500000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Lançamento em Jardim Grandesp - Itanhaém</title>
-    <link href="https://praia.digital/imoveis/itanhaem-jardim-grandesp-lançamento.html"/>
-    <id>itanhaem-jardim-grandesp-lançamento</id>
-    <updated>2026-08-26T00:43:01.250574Z</updated>
-    <summary>Imóvel lançamento em Jardim Grandesp, Itanhaém. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista.</summary>
-    <tipo>itanhaem</tipo>
-    <cidade>Lançamento</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1502300000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
+  
+  
+  
+  
+  
   <entry>
     <title>Lote de imóveis — 0360 a 0369</title>
     <link href="https://praia.digital/imoveis/lote-0360-0369.html"/>
@@ -6632,66 +6445,11 @@
     <preco>Sob consulta</preco>
     <imagem>https://praia.digital/img/default-home.jpg</imagem>
   </entry>
-  <entry>
-    <title>Lançamento em Balneário - Mongagua</title>
-    <link href="https://praia.digital/imoveis/mongagua-balneario-lançamento.html"/>
-    <id>mongagua-balneario-lançamento</id>
-    <updated>2026-08-26T00:43:01.251575Z</updated>
-    <summary>Imóvel lançamento em Balneário, Mongagua. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista.</summary>
-    <tipo>mongagua</tipo>
-    <cidade>Lançamento</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1502800000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Aluguel em Centro - Mongagua</title>
-    <link href="https://praia.digital/imoveis/mongagua-centro-aluguel.html"/>
-    <id>mongagua-centro-aluguel</id>
-    <updated>2026-08-26T00:43:01.252573Z</updated>
-    <summary>Imóvel aluguel em Centro, Mongagua. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista.</summary>
-    <tipo>mongagua</tipo>
-    <cidade>Aluguel</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1502700000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Venda em Mongaguá - Mongagua</title>
-    <link href="https://praia.digital/imoveis/mongagua-mongagua-venda.html"/>
-    <id>mongagua-mongagua-venda</id>
-    <updated>2026-08-26T00:43:01.253579Z</updated>
-    <summary>Imóvel venda em Mongaguá, Mongagua. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista.</summary>
-    <tipo>mongagua</tipo>
-    <cidade>Venda</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1502900000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Aluguel em Parque Turístico - Mongagua</title>
-    <link href="https://praia.digital/imoveis/mongagua-parque-turistico-aluguel.html"/>
-    <id>mongagua-parque-turistico-aluguel</id>
-    <updated>2026-08-26T00:43:01.254580Z</updated>
-    <summary>Imóvel aluguel em Parque Turístico, Mongagua. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista.</summary>
-    <tipo>mongagua</tipo>
-    <cidade>Aluguel</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1503000000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Venda em Vila Virginia - Mongagua</title>
-    <link href="https://praia.digital/imoveis/mongagua-vila-virginia-venda.html"/>
-    <id>mongagua-vila-virginia-venda</id>
-    <updated>2026-08-26T00:43:01.255579Z</updated>
-    <summary>Imóvel venda em Vila Virginia, Mongagua. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista.</summary>
-    <tipo>mongagua</tipo>
-    <cidade>Venda</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1502600000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
+  
+  
+  
+  
+  
   <entry>
     <title>Parcerias com Corretores e Imobiliárias no Litoral Paulista</title>
     <link href="https://praia.digital/imoveis/parcerias-litoral-paulista.html"/>
@@ -6704,234 +6462,25 @@
     <preco>Sob consulta</preco>
     <imagem>https://praia.digital/img/default-home.jpg</imagem>
   </entry>
-  <entry>
-    <title>Aluguel em Costão - Peruibe</title>
-    <link href="https://praia.digital/imoveis/peruibe-costao-aluguel.html"/>
-    <id>peruibe-costao-aluguel</id>
-    <updated>2026-08-26T00:43:01.257578Z</updated>
-    <summary>Imóvel aluguel em Costão, Peruibe. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista.</summary>
-    <tipo>peruibe</tipo>
-    <cidade>Aluguel</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1504000000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Lançamento em Peruíbe - Peruibe</title>
-    <link href="https://praia.digital/imoveis/peruibe-peruibe-lançamento.html"/>
-    <id>peruibe-peruibe-lançamento</id>
-    <updated>2026-08-26T00:43:01.258578Z</updated>
-    <summary>Imóvel lançamento em Peruíbe, Peruibe. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista.</summary>
-    <tipo>peruibe</tipo>
-    <cidade>Lançamento</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1503800000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Venda em Rio Preto - Peruibe</title>
-    <link href="https://praia.digital/imoveis/peruibe-rio-preto-venda.html"/>
-    <id>peruibe-rio-preto-venda</id>
-    <updated>2026-08-26T00:43:01.259578Z</updated>
-    <summary>Imóvel venda em Rio Preto, Peruibe. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista.</summary>
-    <tipo>peruibe</tipo>
-    <cidade>Venda</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1503900000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Aluguel em Vila São Paulo - Peruibe</title>
-    <link href="https://praia.digital/imoveis/peruibe-vila-sao-paulo-aluguel.html"/>
-    <id>peruibe-vila-sao-paulo-aluguel</id>
-    <updated>2026-08-26T00:43:01.260575Z</updated>
-    <summary>Imóvel aluguel em Vila São Paulo, Peruibe. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista.</summary>
-    <tipo>peruibe</tipo>
-    <cidade>Aluguel</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1503700000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Venda em Boqueirão - Praia Grande</title>
-    <link href="https://praia.digital/imoveis/praia grande-boqueirao-venda.html"/>
-    <id>praia grande-boqueirao-venda</id>
-    <updated>2026-08-26T00:43:01.261578Z</updated>
-    <summary>Imóvel venda em Boqueirão, Praia Grande. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista.</summary>
-    <tipo>praia grande</tipo>
-    <cidade>Venda</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1501100000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Lançamento em Caiçara - Praia Grande</title>
-    <link href="https://praia.digital/imoveis/praia grande-caiçara-lançamento.html"/>
-    <id>praia grande-caiçara-lançamento</id>
-    <updated>2026-08-26T00:43:01.261578Z</updated>
-    <summary>Imóvel lançamento em Caiçara, Praia Grande. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista.</summary>
-    <tipo>praia grande</tipo>
-    <cidade>Lançamento</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1501300000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Venda em Ocian - Praia Grande</title>
-    <link href="https://praia.digital/imoveis/praia grande-ocian-venda.html"/>
-    <id>praia grande-ocian-venda</id>
-    <updated>2026-08-26T00:43:01.262579Z</updated>
-    <summary>Imóvel venda em Ocian, Praia Grande. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista.</summary>
-    <tipo>praia grande</tipo>
-    <cidade>Venda</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1501400000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Aluguel em Real - Praia Grande</title>
-    <link href="https://praia.digital/imoveis/praia grande-real-aluguel.html"/>
-    <id>praia grande-real-aluguel</id>
-    <updated>2026-08-26T00:43:01.263580Z</updated>
-    <summary>Imóvel aluguel em Real, Praia Grande. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista.</summary>
-    <tipo>praia grande</tipo>
-    <cidade>Aluguel</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1501500000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Aluguel em Vila Tupi - Praia Grande</title>
-    <link href="https://praia.digital/imoveis/praia grande-vila-tupi-aluguel.html"/>
-    <id>praia grande-vila-tupi-aluguel</id>
-    <updated>2026-08-26T00:43:01.264574Z</updated>
-    <summary>Imóvel aluguel em Vila Tupi, Praia Grande. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista.</summary>
-    <tipo>praia grande</tipo>
-    <cidade>Aluguel</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1501200000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Aluguel em Aparecida - Santos</title>
-    <link href="https://praia.digital/imoveis/santos-aparecida-aluguel.html"/>
-    <id>santos-aparecida-aluguel</id>
-    <updated>2026-08-26T00:43:01.265578Z</updated>
-    <summary>Imóvel aluguel em Aparecida, Santos. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista.</summary>
-    <tipo>santos</tipo>
-    <cidade>Aluguel</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1500500000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Venda em Embaré - Santos</title>
-    <link href="https://praia.digital/imoveis/santos-embare-venda.html"/>
-    <id>santos-embare-venda</id>
-    <updated>2026-08-26T00:43:01.265578Z</updated>
-    <summary>Imóvel venda em Embaré, Santos. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista.</summary>
-    <tipo>santos</tipo>
-    <cidade>Venda</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1500400000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Aluguel em Gonzaga - Santos</title>
-    <link href="https://praia.digital/imoveis/santos-gonzaga-aluguel.html"/>
-    <id>santos-gonzaga-aluguel</id>
-    <updated>2026-08-26T00:43:01.266580Z</updated>
-    <summary>Imóvel aluguel em Gonzaga, Santos. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista.</summary>
-    <tipo>santos</tipo>
-    <cidade>Aluguel</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1500200000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Lançamento em Ponta da Praia - Santos</title>
-    <link href="https://praia.digital/imoveis/santos-ponta-da-praia-lançamento.html"/>
-    <id>santos-ponta-da-praia-lançamento</id>
-    <updated>2026-08-26T00:43:01.267581Z</updated>
-    <summary>Imóvel lançamento em Ponta da Praia, Santos. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista.</summary>
-    <tipo>santos</tipo>
-    <cidade>Lançamento</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1500300000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Venda em Vila Nova - Santos</title>
-    <link href="https://praia.digital/imoveis/santos-vila-nova-venda.html"/>
-    <id>santos-vila-nova-venda</id>
-    <updated>2026-08-26T00:43:01.268578Z</updated>
-    <summary>Imóvel venda em Vila Nova, Santos. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista.</summary>
-    <tipo>santos</tipo>
-    <cidade>Venda</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1500100000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Lançamento em Centro - Sao Vicente</title>
-    <link href="https://praia.digital/imoveis/sao vicente-centro-lançamento.html"/>
-    <id>sao vicente-centro-lançamento</id>
-    <updated>2026-08-26T00:43:01.268578Z</updated>
-    <summary>Imóvel lançamento em Centro, Sao Vicente. 60m², 3 quartos. Condomínio fechado, Piscina. Oportunidade no litoral paulista.</summary>
-    <tipo>sao vicente</tipo>
-    <cidade>Lançamento</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1503300000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Venda em Gonzaguinha - Sao Vicente</title>
-    <link href="https://praia.digital/imoveis/sao vicente-gonzaguinha-venda.html"/>
-    <id>sao vicente-gonzaguinha-venda</id>
-    <updated>2026-08-26T00:43:01.269578Z</updated>
-    <summary>Imóvel venda em Gonzaguinha, Sao Vicente. 80m², 4 quartos. Piscina, Churrasqueira. Oportunidade no litoral paulista.</summary>
-    <tipo>sao vicente</tipo>
-    <cidade>Venda</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1503400000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Venda em Itararé - Sao Vicente</title>
-    <link href="https://praia.digital/imoveis/sao vicente-itarare-venda.html"/>
-    <id>sao vicente-itarare-venda</id>
-    <updated>2026-08-26T00:43:01.270578Z</updated>
-    <summary>Imóvel venda em Itararé, Sao Vicente. 35m², 1 quartos. Vista mar, Varanda gourmet. Oportunidade no litoral paulista.</summary>
-    <tipo>sao vicente</tipo>
-    <cidade>Venda</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1503100000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Aluguel em São Vicente - Sao Vicente</title>
-    <link href="https://praia.digital/imoveis/sao vicente-sao-vicente-aluguel.html"/>
-    <id>sao vicente-sao-vicente-aluguel</id>
-    <updated>2026-08-26T00:43:01.271580Z</updated>
-    <summary>Imóvel aluguel em São Vicente, Sao Vicente. 100m², 5 quartos. Churrasqueira, Quintal. Oportunidade no litoral paulista.</summary>
-    <tipo>sao vicente</tipo>
-    <cidade>Aluguel</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1503500000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
-  <entry>
-    <title>Aluguel em Vila Margarida - Sao Vicente</title>
-    <link href="https://praia.digital/imoveis/sao vicente-vila-margarida-aluguel.html"/>
-    <id>sao vicente-vila-margarida-aluguel</id>
-    <updated>2026-08-26T00:43:01.272577Z</updated>
-    <summary>Imóvel aluguel em Vila Margarida, Sao Vicente. 45m², 2 quartos. Varanda gourmet, Condomínio fechado. Oportunidade no litoral paulista.</summary>
-    <tipo>sao vicente</tipo>
-    <cidade>Aluguel</cidade>
-    <quartos>1</quartos>
-    <preco>Sob consulta</preco>
-    <imagem>https://images.unsplash.com/photo-1503200000000?auto=format&amp;fit=crop&amp;w=900&amp;q=60</imagem>
-  </entry>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <entry>
     <title>Sobrado 3 dormitórios Mongaguá</title>
     <link href="https://praia.digital/imoveis/sobrado-3-dormitorios-mongagua.html"/>
