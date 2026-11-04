@@ -11,6 +11,10 @@ import json
 import subprocess
 from pathlib import Path
 from datetime import date
+from contextlib import nullcontext
+from state_store import identity, validate
+from delivery_journal import (atomic_text, blocked, send_once, mark_csv_committed,
+                              run_guard, ReconciliationRequired)
 
 BASE = Path(__file__).resolve().parent.parent / 'docs' / 'comercial'
 LEADS_PATH = BASE / 'leads_sao_sebastiao_bertioga.csv'
@@ -69,16 +73,14 @@ def days_since(d):
         return None
     return (TODAY - d).days
 
-def send_instagram_dm(recipient_id, text):
-    cmd = [
-        'wsl', '-e', 'bash', '-lc',
-        f'composio execute INSTAGRAM_SEND_TEXT_MESSAGE -d \'{{"recipient_id":"{recipient_id}","text":"{text.replace(chr(34), chr(39))}","ig_user_id":"me"}}\''
-    ]
-    try:
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
-        return result.stdout.strip(), result.returncode
-    except Exception as e:
-        return str(e), 1
+def send_instagram_dm(recipient_id, text, account_id):
+    payload = json.dumps({'recipient_id': str(recipient_id), 'text': text,
+                          'ig_user_id': 'me'}, ensure_ascii=False)
+    # WSL exec receives argv directly; no bash, interpolation, or shell quoting.
+    result = subprocess.run(
+        ['wsl', '--exec', 'composio', 'execute', 'INSTAGRAM_SEND_TEXT_MESSAGE', '--account', account_id, '-d', payload],
+        shell=False, capture_output=True, text=True, encoding='utf-8', timeout=30)
+    return result.stdout.strip(), result.returncode
 
 def delivery_confirmed(stdout, returncode):
     """Require a successful transport AND a provider message receipt, not merely exit 0."""
@@ -94,14 +96,37 @@ def delivery_confirmed(stdout, returncode):
     if not isinstance(data, dict) or data.get('error'):
         return False
     receipt = data.get('message_id')
-    return isinstance(receipt, str) and bool(receipt.strip())
+    return receipt if isinstance(receipt, str) and receipt.strip() else None
 
 
 def main(argv=None):
     parser = argparse.ArgumentParser()
     parser.add_argument('--dry-run', action='store_true', help='Preview only: no sends or file writes')
     parser.add_argument('--send', action='store_true', help='Allow configured Instagram sends')
+    parser.add_argument('--state-dir', type=Path, help='Durable private journal outside the checkout')
+    parser.add_argument('--account-id', help='Explicit Composio connected account ID')
+    parser.add_argument('--dataset-id', help='Stable business dataset identity')
     args = parser.parse_args(argv)
+    if not args.dry_run and args.state_dir is None:
+        parser.error('Writes require --state-dir; do not store delivery state in Git')
+    if args.state_dir is not None:
+        if not args.state_dir.is_absolute():
+            parser.error('--state-dir must be absolute')
+        args.state_dir = args.state_dir.resolve()
+        if args.state_dir.is_relative_to(Path(__file__).resolve().parents[1]):
+            parser.error('--state-dir must be outside the checkout')
+    if args.state_dir:
+        if not args.account_id or not args.dataset_id:
+            parser.error('State requires --account-id and --dataset-id')
+        args.identity = identity('composio', args.account_id, args.dataset_id, LEADS_PATH)
+        validate(args.state_dir, args.identity)
+    guard = run_guard(args.state_dir, args.identity) if args.state_dir and not args.dry_run else nullcontext()
+    with guard:
+        return run(args)
+
+
+def run(args):
+    confirmed_attempts = []
     with LEADS_PATH.open(encoding='utf-8') as f:
         reader = csv.DictReader(f)
         fieldnames = reader.fieldnames or []
@@ -134,6 +159,9 @@ def main(argv=None):
         # Skip completed
         if status in ['ENCERRADO','BLOQUEADO','HANDOFF','VENDIDO']:
             continue
+        if row.get('proxima_acao') == 'RECONCILIAR_ENVIO':
+            metrics['instagram_failed'] += 1
+            continue
 
         variant = choose_variant(row)
         next_msg = None
@@ -159,29 +187,31 @@ def main(argv=None):
         if not next_msg:
             continue
 
+        if args.state_dir and blocked(args.state_dir, lead_id, next_stage):
+            metrics['instagram_failed'] += 1
+            row['proxima_acao'] = 'RECONCILIAR_ENVIO'
+            continue
+
         # Try Instagram send if PSID known
         psid = KNOWN_PSIDS.get(int(lead_id)) if str(lead_id).isdigit() else None
         if args.send and not args.dry_run and psid and canal == 'Instagram':
             text = next_msg
-            stdout, rc = send_instagram_dm(psid, text)
-            instagram_sends.append({
-                'lead_id': lead_id,
-                'nome': nome,
-                'recipient_id': psid,
-                'text': text,
-                'stdout': stdout,
-                'returncode': rc,
-            })
-            if delivery_confirmed(stdout, rc):
-                metrics['instagram_sent'] += 1
-                row['status'] = next_stage
-                stamp = {'ENVIADO_D0': 'd0_enviado_em', 'ENVIADO_D2': 'd2_enviado_em',
-                         'ENVIADO_D5': 'd5_enviado_em', 'ENVIADO_D10': 'd10_enviado_em'}[next_stage]
-                row[stamp] = TODAY_STR
-                if stamp not in fieldnames:
-                    fieldnames.append(stamp)
-            else:
+            try:
+                attempt = send_once(args.state_dir, lead_id, next_stage, psid, text,
+                                    lambda recipient, message: send_instagram_dm(recipient, message, args.account_id),
+                                    delivery_confirmed, args.identity)
+            except ReconciliationRequired:
                 metrics['instagram_failed'] += 1
+                row['proxima_acao'] = 'RECONCILIAR_ENVIO'
+                continue
+            confirmed_attempts.append(attempt)
+            metrics['instagram_sent'] += 1
+            row['status'] = next_stage
+            stamp = {'ENVIADO_D0': 'd0_enviado_em', 'ENVIADO_D2': 'd2_enviado_em',
+                     'ENVIADO_D5': 'd5_enviado_em', 'ENVIADO_D10': 'd10_enviado_em'}[next_stage]
+            row[stamp] = TODAY_STR
+            if stamp not in fieldnames:
+                fieldnames.append(stamp)
         else:
             manual_batch.append({
                 'lead_id': lead_id,
@@ -202,14 +232,17 @@ def main(argv=None):
         return 0
 
     # Write CSV back
-    with LEADS_PATH.open('w', encoding='utf-8', newline='') as f:
+    with atomic_text(LEADS_PATH, newline='') as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(rows)
 
+    for attempt in confirmed_attempts:
+        mark_csv_committed(attempt, args.identity)
+
     # Write manual batch
     manual_path = LOTE_PATH_TMPL.with_name(LOTE_PATH_TMPL.name.format(today=TODAY_STR))
-    with manual_path.open('w', encoding='utf-8') as f:
+    with atomic_text(manual_path) as f:
         f.write(f'# Lote de Envio do Dia — {TODAY_STR}\n\n')
         f.write(f'Total preparado: {len(manual_batch)} abordagens\n\n')
         for item in manual_batch:
@@ -230,7 +263,8 @@ def main(argv=None):
         'manual_batch_path': str(manual_path),
         'manual_count': len(manual_batch),
     }
-    report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
+    with atomic_text(report_path) as f:
+        json.dump(report, f, ensure_ascii=False, indent=2)
 
     print('Metrics:', metrics)
     print('Manual batch:', manual_path)

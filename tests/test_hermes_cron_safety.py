@@ -1,3 +1,9 @@
+# Local state locking is currently Windows-only; no POSIX guarantee is claimed.
+import sys
+import unittest
+if sys.platform != 'win32':
+    raise unittest.SkipTest('Hermes local-state protocol requires Windows')
+
 import contextlib
 import builtins
 import csv
@@ -18,6 +24,8 @@ from unittest.mock import patch
 
 LAB = Path(__file__).resolve().parent
 CANDIDATE = LAB.parent
+import sys
+sys.path[:0] = [str(CANDIDATE / 'scripts'), str(CANDIDATE / 'scripts/automation')]
 
 def load(rel):
     spec = importlib.util.spec_from_file_location('candidate_' + Path(rel).stem, CANDIDATE / rel)
@@ -27,7 +35,7 @@ def load(rel):
 
 class Tests(unittest.TestCase):
     def setUp(self):
-        self.temp = tempfile.TemporaryDirectory(dir=LAB)
+        self.temp = tempfile.TemporaryDirectory()
         self.root = Path(self.temp.name)
         self.blockers = [patch('socket.socket', side_effect=AssertionError('network forbidden')),
                          patch('subprocess.Popen', side_effect=AssertionError('process forbidden')),
@@ -112,6 +120,12 @@ class Tests(unittest.TestCase):
             writer = csv.DictWriter(f, fieldnames=list(row))
             writer.writeheader(); writer.writerow(row)
         m.KNOWN_PSIDS = {1: 'SYNTHETIC_ONLY'}
+        import uuid
+        state = self.root / ('state-' + uuid.uuid4().hex)
+        from state_store import initialize, identity
+        initialize(state, identity('composio', 'synthetic-account', 'synthetic-data', m.LEADS_PATH))
+        m.test_manual_args = ['--state-dir', str(state), '--account-id', 'synthetic-account', '--dataset-id', 'synthetic-data']
+        m.test_send_args = ['--send', *m.test_manual_args]
         return m
 
     def read_row(self, m):
@@ -120,15 +134,16 @@ class Tests(unittest.TestCase):
     def test_followup_dry_run_no_writes_or_send(self):
         m = self.followup()
         before = m.LEADS_PATH.read_bytes()
+        snapshot = {str(p): p.read_bytes() for p in self.root.rglob('*') if p.is_file()}
         with patch.object(m, 'send_instagram_dm', side_effect=AssertionError('send forbidden')):
             self.assertEqual(m.main(['--dry-run', '--send']), 0)
         self.assertEqual(m.LEADS_PATH.read_bytes(), before)
-        self.assertEqual(list(self.root.iterdir()), [m.LEADS_PATH])
+        self.assertEqual({str(p): p.read_bytes() for p in self.root.rglob('*') if p.is_file()}, snapshot)
 
     def test_followup_manual_not_marked_sent(self):
         m = self.followup()
         with patch.object(m, 'send_instagram_dm', side_effect=AssertionError('send forbidden')):
-            self.assertEqual(m.main([]), 0)
+            self.assertEqual(m.main(m.test_manual_args), 0)
         self.assertEqual(self.read_row(m)['status'], 'PROSPECTAR')
         self.assertIn('PREPARADO_D0', next(self.root.glob('lote_*.md')).read_text(encoding='utf-8'))
 
@@ -136,7 +151,7 @@ class Tests(unittest.TestCase):
         for response in [('provider failed', 1), ('no receipt', 0), ('{"successful":false,"data":{"message_id":"fake"}}', 0)]:
             m = self.followup()
             with patch.object(m, 'send_instagram_dm', return_value=response):
-                self.assertEqual(m.main(['--send']), 1)
+                self.assertEqual(m.main(m.test_send_args), 1)
             self.assertEqual(self.read_row(m)['status'], 'PROSPECTAR')
             report = json.loads(next(self.root.glob('relatorio_*.json')).read_text(encoding='utf-8'))
             self.assertEqual(report['metrics']['instagram_sent'], 0)
@@ -144,7 +159,7 @@ class Tests(unittest.TestCase):
     def test_followup_receipt_marks_d0_with_date(self):
         m = self.followup()
         with patch.object(m, 'send_instagram_dm', return_value=('{"successful":true,"data":{"message_id":"synthetic-receipt"}}', 0)):
-            self.assertEqual(m.main(['--send']), 0)
+            self.assertEqual(m.main(m.test_send_args), 0)
         row = self.read_row(m)
         self.assertEqual(row['status'], 'ENVIADO_D0')
         self.assertEqual(row['d0_enviado_em'], m.TODAY_STR)
@@ -152,7 +167,7 @@ class Tests(unittest.TestCase):
     def test_followup_failed_d2_preserves_prior_date_and_status(self):
         m = self.followup('ENVIADO_D0', {'d0_enviado_em': '2000-01-01'})
         with patch.object(m, 'send_instagram_dm', return_value=('failed', 1)):
-            self.assertEqual(m.main(['--send']), 1)
+            self.assertEqual(m.main(m.test_send_args), 1)
         row = self.read_row(m)
         self.assertEqual(row['status'], 'ENVIADO_D0')
         self.assertEqual(row['d0_enviado_em'], '2000-01-01')

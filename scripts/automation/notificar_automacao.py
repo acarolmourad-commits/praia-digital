@@ -9,6 +9,7 @@ import os
 import sys
 from pathlib import Path
 from datetime import date
+from notification_delivery import notify, complete_notification
 
 try:
     import requests
@@ -50,15 +51,13 @@ def read_csv(path):
 
 
 def append_batch_log(text):
-    try:
-        exists = BATCH_LOG.exists()
-        with BATCH_LOG.open('a', newline='', encoding='utf-8') as f:
-            if not exists:
-                f.write('data;hora;servico;evento;detalhe\n')
-            now = date.today().isoformat() + ' ' + date.today().strftime('%H:%M')
-            f.write(f'{now};automacao;notificacao;{text}\n')
-    except Exception:
-        pass
+    exists = BATCH_LOG.exists()
+    with BATCH_LOG.open('a', newline='', encoding='utf-8') as f:
+        if not exists:
+            f.write('data;servico;evento;detalhe\n')
+        f.write(f'{TODAY_STR};automacao;notificacao;{text}\n')
+        f.flush()
+        os.fsync(f.fileno())
 
 
 def main():
@@ -68,15 +67,15 @@ def main():
         text = f'Automação: sem leads novos em {TODAY_STR}.'
     else:
         text = f'Automação: {total} leads registrados hoje no lote de automação para imobiliárias.'
+    receipt = None
     if TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID:
-        try:
-            requests.post(URL.format(token=TELEGRAM_BOT_TOKEN), json={'chat_id': TELEGRAM_CHAT_ID, 'text': text})
-            print('Telegram: ok')
-        except Exception as e:
-            print(f'Telegram: falhou - {e}')
+        receipt = notify(requests, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, text, 'automacao', TODAY_STR)
     else:
-        print('Telegram não configurado; seguindo apenas com log local.')
+        print('Telegram nao configurado; seguindo apenas com log local.')
     append_batch_log(text)
+    if receipt:
+        complete_notification(receipt)
+        print('Telegram: confirmado e registrado')
     print(text)
 
 

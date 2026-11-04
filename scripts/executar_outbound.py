@@ -11,6 +11,7 @@ import argparse, csv, os, json, subprocess
 from pathlib import Path
 from collections import defaultdict
 from datetime import date
+import safe_publication
 
 REPO = str(Path(__file__).resolve().parents[1])
 DIR = os.path.join(REPO, "docs/sales/csv-lotes-email")
@@ -57,6 +58,7 @@ def main():
     ap.add_argument("--push", action="store_true", help="faz git commit/push dos artefatos")
     args = ap.parse_args()
     preflight(require_clean=args.push)
+    publication_base = safe_publication.begin(REPO) if args.push else None
     # 1) consolidar + dashboards por canal
     run("consolidar_tracker_whatsapp.py"); run("gerar_dashboard_whatsapp.py")
     run("consolidar_tracker_email.py");    run("gerar_dashboard_email.py")
@@ -123,19 +125,8 @@ def main():
                  "docs/sales/relatorio-executivo-outbound.html",
                  "docs/sales/csv-lotes-email/nurture-pendente.csv"]
 
-        # Never stash, fetch or rebase a shared checkout automatically.
-        # 3f) commit se houver mudanças reais nos artefatos
-        r = subprocess.run(["git", "-C", REPO, "status", "--porcelain"] + alvos,
-                           capture_output=True, text=True, check=True)
-        if r.stdout.strip():
-            subprocess.run(["git", "-C", REPO, "add"] + alvos, check=True)
-            subprocess.run(["git", "-C", REPO, "commit", "--only", "-m",
-                            f"chore: refresh dashboards outbound {date.today():%Y-%m-%d}", "--", *alvos],
-                           check=True)
-
-        # 3g) push (now that local is in sync with remote)
-        subprocess.run(["git", "-C", REPO, "push", "origin", "main"], check=True)
-        print("Commit+push dos artefatos atualizados.")
+        commit = safe_publication.publish(REPO, publication_base, alvos)
+        print('Artefatos publicados: ' + commit if commit else 'Sem alteracoes; nenhum push realizado.')
     else:
         print("Geracao local concluida, sem push; arquivos locais foram atualizados.")
 
