@@ -16,7 +16,7 @@
       const matches = text => inCity && terms.every(term => normalize(`${card.dataset.city} ${text}`).includes(term));
       let count = 0, related = 0;
       card.querySelectorAll('.neighborhood-links li').forEach(item => {
-        item.hidden = !matches(`${item.textContent} guia de bairro`);
+        item.hidden = !matches(`${item.textContent} ${item.dataset.kind || "local"} guia local`);
         if (!item.hidden) count++;
       });
       card.querySelectorAll('.related-entry').forEach(item => {
@@ -25,11 +25,11 @@
       });
       card.hidden = count + related === 0;
       card.querySelector('details').hidden = count === 0;
-      card.querySelector('.city-count').textContent = `${count} de ${card.querySelectorAll('.neighborhood-links li').length} guias`;
+      card.querySelector('.city-count').textContent = `${count} de ${card.querySelectorAll('.neighborhood-links li').length} páginas`;
       if (terms.length || city.value) card.querySelector('details').open = true;
       guides += count; articles += related; if (!card.hidden) cities++;
     }
-    result.textContent = `${guides} guias de bairro e ${articles} matérias relacionadas em ${cities} cidades.`;
+    result.textContent = `${guides} páginas da coleção e ${articles} matérias relacionadas em ${cities} cidades.`;
     empty.hidden = guides + articles > 0;
   }
   tools.hidden = false;

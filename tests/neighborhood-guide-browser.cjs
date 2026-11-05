@@ -7,6 +7,7 @@ const root = path.resolve(process.env.GUIDE_PREVIEW_ROOT || path.join(__dirname,
 const output = path.resolve(process.env.GUIDE_QA_OUTPUT || path.join(root, '.audit/guide-qa'));
 const origin = 'https://praia.digital';
 const hub = '/bairros/index.html';
+const reviewed = JSON.parse(fs.readFileSync(path.join(root,'data/neighborhood-editorial-review.json'),'utf8')).pages;
 const articles = ['/blog/riviera-sao-lourenco-seguranca-infraestrutura-valorizacao-2026.html', '/blog/estudo-rental-yield-apartamentos-1-2-dormitorios-praia-grande-2026.html'];
 const mime = {'.html':'text/html; charset=utf-8','.js':'application/javascript','.css':'text/css','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp'};
 async function context(browser,width,javaScriptEnabled=true) {
@@ -23,6 +24,16 @@ async function context(browser,width,javaScriptEnabled=true) {
     return route.fulfill({status:200,contentType:mime[path.extname(file)]||'application/octet-stream',body:fs.readFileSync(file)});
   });
   return ctx;
+}
+async function textContrast(page,selector) {
+  const values=await page.locator(selector).evaluateAll(nodes=>nodes.map(el=>{
+    const style=getComputedStyle(el);let parent=el,bg=style.backgroundColor;
+    while(bg==='rgba(0, 0, 0, 0)' && parent.parentElement){parent=parent.parentElement;bg=getComputedStyle(parent).backgroundColor;}
+    return {color:style.color,background:bg,opacity:style.opacity};
+  }));
+  assert(values.length,'Missing contrast target: '+selector);
+  function luminance(css){const rgb=css.match(/[\d.]+/g).slice(0,3).map(Number).map(v=>{v/=255;return v<=0.04045?v/12.92:((v+0.055)/1.055)**2.4;});return rgb[0]*.2126+rgb[1]*.7152+rgb[2]*.0722;}
+  for(const value of values){const a=luminance(value.color),b=luminance(value.background);assert((Math.max(a,b)+.05)/(Math.min(a,b)+.05)>=4.5,JSON.stringify({selector,...value}));assert.equal(value.opacity,'1');}
 }
 async function overflow(page) {
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`overflow at ${page.url()}`);
@@ -65,7 +76,42 @@ async function overflow(page) {
         await page.locator('.breadcrumbs a').nth(1).click();assert.equal(new URL(page.url()).pathname,hub);
         assert(await page.locator(i===0?'#bertioga':'#praia-grande').isVisible());
       }
-      assert.deepEqual(errors,[]);results.push({width,passed:true});await ctx.close();
+      for (const item of reviewed) {
+        await page.goto(origin+'/'+item.path);await page.locator('main[data-editorial-review]').waitFor();
+        assert.equal(await page.locator('main h1').count(),1);await overflow(page);
+        await textContrast(page,'main .lead');await textContrast(page,'main .cta');
+        assert.equal(await page.locator('link[rel="canonical"]').getAttribute('href'),item.canonical);
+        const ranks=await page.locator('main h1,main h2,main h3,main h4,main h5,main h6').evaluateAll(nodes=>nodes.map(n=>Number(n.tagName.slice(1))));
+        for(let i=1;i<ranks.length;i++) assert(ranks[i]<=ranks[i-1]+1,'Heading rank');
+        for(const id of ['name','email','phone']) {
+          assert.equal(await page.locator('label[for="'+id+'"]').count(),1);
+          await page.locator('#'+id).focus();assert(await page.locator('#'+id).evaluate(el=>el===document.activeElement));
+        }
+        assert(await page.locator('#formStatus[role="status"]').count());
+        assert.equal(await page.locator('main a[href^="https://semil.sp.gov.br/dh/travessias"]').count(),0);
+        const schemas=await page.locator('script[type="application/ld+json"]').allTextContents();
+        assert(!schemas.some(s=>s.includes('RealEstateListing')));
+        await page.screenshot({path:path.join(output,item.path.replaceAll('/','-')+'-'+width+'.png'),fullPage:true});
+      }
+      await page.goto(origin+'/bairros/praia-grande/index.html');
+      await page.locator('#booking-heading').waitFor();await overflow(page);
+      await textContrast(page,'#booking-affiliate-root h2, #booking-affiliate-root p, #booking-affiliate-root a');
+      await textContrast(page,'main .affiliate-disclosure');await textContrast(page,'main .cta');
+      assert.equal(await page.locator('main .grid.grid-3').count(),3);
+      assert.equal(await page.locator('main #booking-affiliate-root').count(),1);
+      for(const id of ['name','phone']){assert.equal(await page.locator('label[for="'+id+'"]').count(),1);await page.locator('#'+id).fill(id==='name'?'Teste':'11999999999');await textContrast(page,'#'+id);}
+      assert.equal(await page.locator('#formStatus[role="status"]').count(),1);
+      await page.screenshot({path:path.join(output,'praia-grande-hub-'+width+'.png'),fullPage:true});
+      assert.equal(await page.locator('[href*="aid=XXXXXX"]').count(),0);
+      assert.equal(await page.locator('.affiliate-disclosure').count(),1);
+      assert.equal(await page.locator('#booking-affiliate-root input').count(),0);
+      await page.goto(origin+hub);
+      await page.locator('#guide-search').fill('nome a confirmar');
+      assert.equal(await page.locator('.neighborhood-links li:visible').count(),2);
+      await page.locator('#guide-clear').click();
+      await page.locator('#guide-search').fill('balneario camburi');
+      assert.equal(await page.locator('.neighborhood-links li:visible').count(),1);
+      assert.deepEqual(errors,[]);results.push({width,reviewedGuides:reviewed.length,passed:true});await ctx.close();
     }
     const ctx=await context(browser,390,false),page=await ctx.newPage();await page.goto(origin+hub);
     assert.equal(await page.locator('.neighborhood-links a:visible').count(),123);assert.equal(await page.locator('.related-entry:visible').count(),2);await overflow(page);

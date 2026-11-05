@@ -1,0 +1,64 @@
+{
+  "reviewedOn": "2026-11-04",
+  "scope": "Revisão dos guias amostrados na auditoria, sem afirmar validação de todos os bairros da coleção.",
+  "pages": [
+    {
+      "path": "bairros/santos/gonzaga.html",
+      "canonical": "https://praia.digital/bairros/santos/gonzaga.html",
+      "sources": [
+        "https://www.santos.sp.gov.br/portal/gonzaga",
+        "https://servicos.sp.gov.br/fcarta/6CEE914A-4E8F-4293-8061-F0D035B42217"
+      ]
+    },
+    {
+      "path": "bairros/praia-grande/tupi.html",
+      "canonical": "https://praia.digital/bairros/praia-grande/tupi.html",
+      "sources": [
+        "https://www.praiagrande.sp.gov.br/ArquivosCide/XX_PG_02_LOGRADOUROS_23012024.pdf"
+      ]
+    },
+    {
+      "path": "bairros/praia-grande/vila-tupi.html",
+      "canonical": "https://praia.digital/bairros/praia-grande/tupi.html",
+      "sources": [
+        "https://www.praiagrande.sp.gov.br/ArquivosCide/XX_PG_02_LOGRADOUROS_23012024.pdf"
+      ]
+    },
+    {
+      "path": "bairros/ilhabela/pernambuco.html",
+      "canonical": "https://praia.digital/bairros/ilhabela/pernambuco.html",
+      "sources": [
+        "https://www.ilhabela.sp.gov.br/portal/noticias/0/3/8954/prefeito-de-ilhabela-vistoria-obras-de-reforma-e-pavimentacao",
+        "https://www.guaruja.sp.gov.br/sample-page-2/praias"
+      ]
+    },
+    {
+      "path": "bairros/bertioga/praia-do-ribeira.html",
+      "canonical": "https://praia.digital/bairros/bertioga/praia-do-ribeira.html",
+      "sources": [
+        "https://www.bertioga.sp.gov.br/turismo/pontos-turisticos/praias"
+      ]
+    },
+    {
+      "path": "bairros/caraguatatuba/camburi.html",
+      "canonical": "https://praia.digital/bairros/caraguatatuba/camburi.html",
+      "sources": [
+        "https://www.caraguatatuba.sp.gov.br/pmc/wp-content/uploads/2025/12/1-Relacao-de-Imoveis-do-Municipio-02-12-2025.pdf"
+      ]
+    },
+    {
+      "path": "bairros/itanhaem/condominios.html",
+      "canonical": "https://praia.digital/bairros/itanhaem/condominios.html",
+      "sources": [
+        "https://www2.itanhaem.sp.gov.br/turismo/praias/"
+      ]
+    },
+    {
+      "path": "bairros/sao-vicente/jardim.html",
+      "canonical": "https://praia.digital/bairros/sao-vicente/jardim.html",
+      "sources": [
+        "https://www.saovicente.sp.gov.br/"
+      ]
+    }
+  ]
+}

@@ -3,6 +3,9 @@ on:
   pull_request:
     paths:
       - 'bairros/**'
+      - 'data/neighborhood-editorial-review.json'
+      - 'scripts/gerar_bairros.py'
+      - 'scripts/enhance_neighborhood_pages.py'
       - 'blog/riviera-sao-lourenco-seguranca-infraestrutura-valorizacao-2026.html'
       - 'blog/estudo-rental-yield-apartamentos-1-2-dormitorios-praia-grande-2026.html'
       - 'assets/css/neighborhood-guide.css'
@@ -22,7 +25,7 @@ jobs:
         with:
           node-version: '22'
       - run: |
-          python3 -m unittest discover -s tests -p 'test_neighborhood_guide.py' -v
+          python3 -m unittest discover -s tests -p 'test_neighborhood*.py' -v
           node --check js/neighborhood-guide.js
           python3 scripts/preview-neighborhood-guide.py "$RUNNER_TEMP/guide-preview"
       - name: Offline browser checks

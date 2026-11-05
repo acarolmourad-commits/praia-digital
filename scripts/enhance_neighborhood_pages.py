@@ -318,6 +318,10 @@ for city_dir in sorted(base.iterdir()):
             continue
         
         txt = p.read_text(encoding='utf-8', errors='ignore')
+        # Preserve manually reviewed content rather than restoring legacy claims.
+        if 'data-editorial-review=' in txt:
+            print(f'preserved reviewed page {p}')
+            continue
         
         # Update title and meta
         txt = txt.replace(f'<title>Imóveis em {neighborhood.replace("-", " ").title()} — {city.replace("-", " ").title()} | Praia Digital</title>',
