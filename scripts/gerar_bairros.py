@@ -64,6 +64,10 @@ for city, bairros in cities.items():
     for bairro, desc in bairros:
         slug = slugify(bairro)
         file = city_dir / f"{slug}.html"
+        # Manual editorial corrections take precedence over this legacy template.
+        if file.exists() and "data-editorial-review=" in file.read_text(encoding="utf-8"):
+            print("preserved reviewed page:", file)
+            continue
         content = (
             text.replace("[Bairro]", bairro)
             .replace("[Cidade]", city.title().replace("-", " "))
