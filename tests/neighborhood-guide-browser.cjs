@@ -25,6 +25,16 @@ async function context(browser,width,javaScriptEnabled=true) {
   });
   return ctx;
 }
+async function textContrast(page,selector) {
+  const values=await page.locator(selector).evaluateAll(nodes=>nodes.map(el=>{
+    const style=getComputedStyle(el);let parent=el,bg=style.backgroundColor;
+    while(bg==='rgba(0, 0, 0, 0)' && parent.parentElement){parent=parent.parentElement;bg=getComputedStyle(parent).backgroundColor;}
+    return {color:style.color,background:bg,opacity:style.opacity};
+  }));
+  assert(values.length,'Missing contrast target: '+selector);
+  function luminance(css){const rgb=css.match(/[\d.]+/g).slice(0,3).map(Number).map(v=>{v/=255;return v<=0.04045?v/12.92:((v+0.055)/1.055)**2.4;});return rgb[0]*.2126+rgb[1]*.7152+rgb[2]*.0722;}
+  for(const value of values){const a=luminance(value.color),b=luminance(value.background);assert((Math.max(a,b)+.05)/(Math.min(a,b)+.05)>=4.5,JSON.stringify({selector,...value}));assert.equal(value.opacity,'1');}
+}
 async function overflow(page) {
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`overflow at ${page.url()}`);
 }
@@ -69,6 +79,7 @@ async function overflow(page) {
       for (const item of reviewed) {
         await page.goto(origin+'/'+item.path);await page.locator('main[data-editorial-review]').waitFor();
         assert.equal(await page.locator('main h1').count(),1);await overflow(page);
+        await textContrast(page,'main .lead');await textContrast(page,'main .cta');
         assert.equal(await page.locator('link[rel="canonical"]').getAttribute('href'),item.canonical);
         const ranks=await page.locator('main h1,main h2,main h3,main h4,main h5,main h6').evaluateAll(nodes=>nodes.map(n=>Number(n.tagName.slice(1))));
         for(let i=1;i<ranks.length;i++) assert(ranks[i]<=ranks[i-1]+1,'Heading rank');
@@ -84,6 +95,8 @@ async function overflow(page) {
       }
       await page.goto(origin+'/bairros/praia-grande/index.html');
       await page.locator('#booking-heading').waitFor();await overflow(page);
+      await textContrast(page,'#booking-affiliate-root h2, #booking-affiliate-root p, #booking-affiliate-root a');
+      await page.screenshot({path:path.join(output,'praia-grande-hub-'+width+'.png'),fullPage:true});
       assert.equal(await page.locator('[href*="aid=XXXXXX"]').count(),0);
       assert.equal(await page.locator('.affiliate-disclosure').count(),1);
       assert.equal(await page.locator('#booking-affiliate-root input').count(),0);
