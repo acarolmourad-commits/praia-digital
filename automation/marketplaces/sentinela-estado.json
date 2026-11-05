@@ -48,9 +48,10 @@
         "https://news.airbnb.com/what-makes-airbnb-airbnb": "What Makes Airbnb Airbnb",
         "https://news.airbnb.com/introducing-a-new-way-to-book-stays-through-american-express-travel": "Introducing a new way to book stays and unlock benefits through American Express Travel",
         "https://news.airbnb.com/cracking-down-on-parties-this-halloween-weekend": "Cracking Down On Parties This Halloween Weekend",
-        "https://news.airbnb.com/every-home-booked-on-airbnb-helps-house-people-in-crisis": "Starting today, every home booked on Airbnb will help house people in crisis"
+        "https://news.airbnb.com/every-home-booked-on-airbnb-helps-house-people-in-crisis": "Starting today, every home booked on Airbnb will help house people in crisis",
+        "https://news.airbnb.com/airbnb-q3-2026-financial-results": "Airbnb Q3 2026 Financial Results"
       },
-      "hash": "c969ada48c5334fefdc9a674efe8c98b238eeb16927b0fb62673507b0b495c32"
+      "hash": "a5c86e5ee8e1fcdaee1f8fbe4563737cebb39b5ab0b7266fd8b4502d9bbdb4df"
     },
     "airbnb-resources": {
       "name": "Airbnb Resource Center - Anfitrioes (oficial)",
@@ -138,6 +139,13 @@
       "title": "Novidades Airbnb: Every Stay Supports Free Emergency Housing 778",
       "file": "novidades-20261028-201644-airbnb-resources.html",
       "source": "https://www.airbnb.com/resources/hosting-homes"
+    },
+    {
+      "date": "2026-11-05 21:28 UTC",
+      "platform": "Airbnb",
+      "title": "Novidades Airbnb: Airbnb Q3 2026 Financial Results",
+      "file": "novidades-20261105-212816-airbnb-news.html",
+      "source": "https://news.airbnb.com/"
     }
   ]
 }
