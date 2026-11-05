@@ -96,6 +96,11 @@ async function overflow(page) {
       await page.goto(origin+'/bairros/praia-grande/index.html');
       await page.locator('#booking-heading').waitFor();await overflow(page);
       await textContrast(page,'#booking-affiliate-root h2, #booking-affiliate-root p, #booking-affiliate-root a');
+      await textContrast(page,'main .affiliate-disclosure');await textContrast(page,'main .cta');
+      assert.equal(await page.locator('main .grid.grid-3').count(),3);
+      assert.equal(await page.locator('main #booking-affiliate-root').count(),1);
+      for(const id of ['name','phone']){assert.equal(await page.locator('label[for="'+id+'"]').count(),1);await page.locator('#'+id).fill(id==='name'?'Teste':'11999999999');await textContrast(page,'#'+id);}
+      assert.equal(await page.locator('#formStatus[role="status"]').count(),1);
       await page.screenshot({path:path.join(output,'praia-grande-hub-'+width+'.png'),fullPage:true});
       assert.equal(await page.locator('[href*="aid=XXXXXX"]').count(),0);
       assert.equal(await page.locator('.affiliate-disclosure').count(),1);

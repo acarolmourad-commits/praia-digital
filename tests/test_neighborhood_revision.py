@@ -128,6 +128,12 @@ class NeighborhoodRevisionTests(unittest.TestCase):
         self.assertIn('id="booking-heading"', text)
         self.assertIn('rel="sponsored noopener"', text)
         self.assertTrue(text.rstrip().endswith('</html>'))
+        self.assertNotRegex(text, r'</p\s*\n')
+        self.assertNotRegex(text, r'(?m)^>$')
+        page = Page(text)
+        self.assertEqual(set(page.inputs), {'name', 'phone'})
+        self.assertTrue(set(page.inputs).issubset(page.labels))
+        self.assertIn('role="status" aria-live="polite"', text)
 
     def test_legacy_generators_preserve_reviewed_pages(self):
         for rel in ['scripts/gerar_bairros.py', 'scripts/enhance_neighborhood_pages.py']:
