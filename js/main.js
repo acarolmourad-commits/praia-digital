@@ -33,6 +33,26 @@
   
   const properties = [
 {
+        "id": 14,
+        "title": "Apartamento mobiliado no Indaiá, com varanda e vista parcial para o mar",
+        "slug": "apartamento-indaia-bertioga-84m2",
+        "city": "Bertioga",
+        "type": "Venda",
+        "price": "R$ 960.000",
+        "bedrooms": "2",
+        "area": "84 m² úteis",
+        "image": "https://praia.digital/assets/apartamento-indaia-bertioga-84m2/01-varanda-vista-parcial-mar.jpeg",
+        "tags": [
+                "Indaiá",
+                "1 suíte",
+                "2 vagas",
+                "Mobiliado",
+                "Quadra do mar",
+                "Vista parcial para o mar"
+        ],
+        "description": "Apartamento mobiliado na quadra do mar no Indaiá: 84 m², 2 quartos, 1 suíte, 2 vagas e varanda com vista parcial para o mar."
+},
+{
         "id": 13,
         "title": "Apartamento mobiliado no Indaiá com vista para o mar",
         "slug": "apartamento-indaia-88m2",
