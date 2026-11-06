@@ -6,10 +6,15 @@ const output = path.join(process.env.INDAIA_QA_OUTPUT || '/tmp/indaia-qa', '84m2
 const origin = 'https://praia.digital';
 const detail = '/imoveis/apartamento-indaia-bertioga-84m2.html';
 fs.mkdirSync(output, {recursive:true});
+let stage = 'starting browser';
+const progress = label => {stage = label; console.log(label);};
+const deadline = setTimeout(() => {console.error(`Browser test exceeded 120 seconds at: ${stage}`); process.exit(1);}, 120000);
+deadline.unref();
 (async () => {
- const browser = await chromium.launch({headless:true});
+ const browser = await chromium.launch({headless:true, ...(process.env.CHROMIUM_EXECUTABLE_PATH ? {executablePath:process.env.CHROMIUM_EXECUTABLE_PATH} : {})});
  for (const width of [390, 1440]) {
   const context = await browser.newContext({viewport:{width,height:900},serviceWorkers:'block'});
+  context.setDefaultTimeout(15000); context.setDefaultNavigationTimeout(30000);
   const sideEffects = [], errors = [];
   await context.route('**/*', async route => {
    const req = route.request(), url = new URL(req.url());
@@ -25,6 +30,7 @@ fs.mkdirSync(output, {recursive:true});
    return route.fulfill({path:file,contentType:mime[path.extname(file)]});
   });
   const page = await context.newPage(); page.on('pageerror', e => errors.push(e.message));
+  progress(`${width}px: catalog and listing`);
   await page.goto(origin + '/imoveis.html', {waitUntil:'load'});
   const card = page.locator('.property-card').filter({has:page.locator(`a[href="${detail.slice(1)}"]`)});
   await card.waitFor(); assert.equal(await card.count(),1);
@@ -33,13 +39,43 @@ fs.mkdirSync(output, {recursive:true});
   await card.locator('.btn-secondary').click(); await page.waitForURL(origin + detail);
   assert.equal(await page.locator('h1').count(),1); assert.match(await page.locator('h1').innerText(),/vista parcial/);
   assert.equal(await page.locator('.gallery figure').count(),10);
+  progress(`${width}px: gallery images`);
   await page.locator('a[href="#fotos"]').click(); assert.equal(new URL(page.url()).hash,'#fotos');
   for (const img of await page.locator('img').all()) {await img.scrollIntoViewIfNeeded(); await img.evaluate(el=>el.decode());}
   assert.equal(await page.locator('img').count(),11);
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`overflow at ${width}px`);
+  progress(`${width}px: keyboard study link and tables`);
+  const studyLink = page.getByRole('link', {name:'Ver estudo de Airbnb e valorização'});
+  await studyLink.focus(); await page.keyboard.press('Enter');
+  assert.equal(new URL(page.url()).hash,'#estudo-rentabilidade');
+  const study = page.locator('#estudo-rentabilidade');
+  assert(await study.isVisible());
+  assert.match(await study.innerText(),/Esse piso não entrega 6% de retorno líquido/);
+  assert.match(await study.innerText(),/142 noites/); assert.match(await study.innerText(),/101 noites/);
+  assert.match(await study.innerText(),/R\$ 824\.384,66/); assert.match(await study.innerText(),/R\$ 1\.112\.903,11/);
+  assert.equal(await study.locator('table caption').count(),3);
+  assert.equal(await study.locator('form,input,iframe').count(),0);
+  for (const region of await study.locator('[role="region"]').all()) {
+   assert(await region.getAttribute('aria-label')); assert.equal(await region.getAttribute('tabindex'),'0');
+   await region.focus(); assert(await region.evaluate(el=>el===document.activeElement));
+   await page.keyboard.press('ArrowRight');
+   assert.equal(await region.locator('th:not([scope])').count(),0);
+  }
+  for (const link of await study.locator('a[href^="https://"]').all()) {
+   assert((await link.innerText()).trim().length>4);
+   assert.equal(new URL(await link.getAttribute('href')).protocol,'https:');
+  }
+  progress(`${width}px: source anchor and history`);
+  await page.locator('a[href="#fonte-airbnb"]').click(); assert.equal(new URL(page.url()).hash,'#fonte-airbnb');
+  await page.goBack(); assert.equal(new URL(page.url()).hash,'#estudo-rentabilidade');
+  await studyLink.click(); assert.equal(new URL(page.url()).hash,'#estudo-rentabilidade');
+  progress(`${width}px: study screenshot`);
+  await study.screenshot({path:path.join(output,`${width}-study.png`)});
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`study overflow at ${width}px`);
   for (const link of await page.locator('a[href^="https://wa.me/"]').all()) {
    const href = await link.getAttribute('href'); assert.match(href,/5511954346288/); assert(decodeURIComponent(href).includes('84 m²'));
   }
+  progress(`${width}px: original popup, screenshots and return`);
   const popupPromise = context.waitForEvent('page'); await page.locator('.gallery a').first().click();
   const popup = await popupPromise; await popup.waitForLoadState(); assert(popup.url().endsWith('/01-varanda-vista-parcial-mar.jpeg')); await popup.close();
   await page.screenshot({path:path.join(output,`${width}-full.png`),fullPage:true});
@@ -48,8 +84,9 @@ fs.mkdirSync(output, {recursive:true});
   assert.equal(await page.locator(`.property-card a[href="${detail.slice(1)}"]`).count(),1);
   await page.goBack(); await page.waitForURL(u=>u.pathname===detail); await page.goForward(); await page.waitForURL(origin+'/imoveis.html');
   assert.deepEqual(errors,[]); assert.deepEqual(sideEffects,[]);
-  console.log(`${width}px: new and existing cards, page, 10 photos, popup, back/forward, CTA and overflow passed`);
+  console.log(`${width}px: preserved cards/photos, study math, sources, keyboard, tables, anchors, history and overflow passed`);
   await context.close();
  }
  await browser.close();
+ clearTimeout(deadline);
 })().catch(e=>{console.error(e);process.exit(1)});
