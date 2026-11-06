@@ -1,0 +1,10 @@
+{
+ "name":"praia-academy-fulfillment",
+ "main":"app/worker.mjs",
+ "compatibility_date":"2026-10-30",
+ "workers_dev":true,
+ "vars":{"WEBHOOK_INTAKE_ENABLED":"false","AUTOMATIC_DELIVERY_ENABLED":"false","STRIPE_MODE":"test","WATCHDOG_ENABLED":"false"},
+ "durable_objects":{"bindings":[{"name":"LEDGER","class_name":"AcademyLedger"}]},
+ "migrations":[{"tag":"v1","new_sqlite_classes":["AcademyLedger"]}],
+ "observability":{"enabled":false}
+}
