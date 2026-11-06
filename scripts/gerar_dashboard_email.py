@@ -3,7 +3,9 @@
 import csv, os, re, glob
 from collections import Counter, defaultdict
 from datetime import date
-REPO = r"C:/Users/Carolina/praia-digital"
+from pathlib import Path
+
+REPO = str(Path(__file__).resolve().parents[1])
 EMAIL_DIR = os.path.join(REPO, "docs/sales/csv-lotes-email")
 TRACKER = os.path.join(EMAIL_DIR, "tracker-email-proprietarios.csv")
 OUT = os.path.join(REPO, "docs/sales", "dashboard-email-proprietarios.html")

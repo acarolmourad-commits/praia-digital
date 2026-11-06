@@ -7,6 +7,7 @@ import csv
 import os
 from pathlib import Path
 from datetime import date
+from notification_delivery import notify, complete_notification
 
 try:
     import requests
@@ -74,15 +75,9 @@ for nome, total, respostas, fechados, valor_total in resumo:
     text += f'• {nome}: {total} leads, {respostas} respostas, {fechados} fechados, R$ {valor_total:,.2f}\n'
 
 if TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID:
-    try:
-        requests.post(
-            URL.format(token=TELEGRAM_BOT_TOKEN),
-            json={'chat_id': TELEGRAM_CHAT_ID, 'text': text},
-            timeout=20,
-        )
-        print('Telegram: ok')
-    except Exception as e:
-        print(f'Telegram: falhou - {e}')
+    receipt = notify(requests, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, text, 'vendas-b2b', TODAY)
+    complete_notification(receipt)
+    print('Telegram: confirmado e registrado')
 else:
     print('Telegram não configurado; seguindo apenas com log local.')
 
