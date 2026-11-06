@@ -45,7 +45,7 @@ fs.mkdirSync(output, {recursive:true});
   assert(!/bertioga/i.test(await study.innerText()),'Study must not add a city name');
   await page.locator('a[href="#estudo-rentabilidade"]').click(); assert.equal(await study.count(),1);
   await study.locator('.study-table-wrap').focus();
-  await study.screenshot({path:path.join(output,`${width}-study.png`)});
+  await study.screenshot({path:path.join(output,`${width}-study.png`),style:'header{visibility:hidden!important}'});
   for (const img of await page.locator('img').all()) {await img.scrollIntoViewIfNeeded(); await img.evaluate(el=>el.decode());}
   assert.equal(await page.locator('img').count(),12);
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`overflow at ${width}px`);
