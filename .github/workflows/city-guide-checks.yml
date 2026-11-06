@@ -34,6 +34,7 @@ jobs:
           python3 scripts/prepare-city-guides.py
           python3 scripts/validate_sitemap_targets.py
       - name: Offline desktop and mobile flows
+        timeout-minutes: 7
         run: |
           npm install --prefix "$RUNNER_TEMP/city-browser" playwright@1.63.0 --no-audit --no-fund
           "$RUNNER_TEMP/city-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell

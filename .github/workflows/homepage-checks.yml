@@ -12,6 +12,10 @@ on:
       - 'imoveis/casa-terrea-bertioga-675m2.html'
       - 'assets/casa-terrea-bertioga-675m2/**'
       - 'tests/test_house_bertioga.*'
+      - 'imoveis/apartamento-indaia-bertioga-84m2.html'
+      - 'assets/apartamento-indaia-bertioga-84m2/**'
+      - 'tests/test_apartment_indaia_84m2.py'
+      - 'tests/apartment-indaia-84m2-browser.cjs'
       - 'imoveis/apartamento-indaia-88m2.html'
       - 'assets/apartamento-indaia-88m2/**'
       - 'tests/test_apartment_indaia.*'
@@ -53,6 +57,7 @@ jobs:
           node --check js/home-search.js
           node --check tests/homepage-browser.cjs
           node --check tests/apartment-indaia-browser.cjs
+          node --check tests/apartment-indaia-84m2-browser.cjs
       - name: Focused homepage and conversion regressions
         run: |
           python3 -m unittest discover -s tests -p 'test_homepage_content.py' -v
@@ -75,6 +80,7 @@ jobs:
           "$RUNNER_TEMP/homepage-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
           NODE_PATH="$RUNNER_TEMP/homepage-browser/node_modules" node tests/homepage-browser.cjs
           NODE_PATH="$RUNNER_TEMP/homepage-browser/node_modules" node tests/apartment-indaia-browser.cjs
+          NODE_PATH="$RUNNER_TEMP/homepage-browser/node_modules" node tests/apartment-indaia-84m2-browser.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
