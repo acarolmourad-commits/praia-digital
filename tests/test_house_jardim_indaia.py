@@ -27,6 +27,20 @@ class HouseIndaia(unittest.TestCase):
   self.assertEqual(house['floorSize']['value'],109.91);self.assertEqual(house['containedInPlace']['name'],'Jardim Indaiá')
   self.assertEqual((listing['offers']['price'],listing['offers']['priceCurrency']),('400000','BRL'))
   self.assertEqual(len(house['image']),11)
+ def test_rental_study_math_sources_and_privacy(self):
+  for value in ['estudo-rentabilidade','R$ 2.200','R$ 412.000','R$ 26.400','6,41%','R$ 24.200','5,87%','R$ 22.000','5,34%','47.645','64.188','34,72%','ref. 542','p. 12','não comprovam valorização','responsável técnico','não equivale a área livre edificável','Não é retorno líquido','informações do proprietário e ficha fornecida']:
+   self.assertIn(value,self.text)
+  self.assertEqual(round(400000*1.03),412000)
+  for months,gross,pct in [(12,26400,'6,41'),(11,24200,'5,87'),(10,22000,'5,34')]:
+   row=re.search(rf'<tr data-paid-months="{months}" data-gross="{gross}">(.*?)</tr>',self.text,re.S)
+   self.assertIsNotNone(row)
+   self.assertIn(f'<td>{pct}%</td>',row[1])
+   self.assertEqual(2200*months,gross)
+   self.assertEqual(f'{gross/412000*100:.2f}'.replace('.',','),pct)
+  self.assertEqual(f'{(64188/47645-1)*100:.2f}'.replace('.',','),'34,72')
+  self.assertNotRegex(self.text,re.compile(r'bertioga|streetAddress|postalCode|latitude|longitude',re.I))
+  self.assertEqual(sum(a.get('id')=='estudo-rentabilidade' for _,a in self.tags),1)
+  self.assertIn('href="#estudo-rentabilidade"',self.text)
  def test_eleven_original_photos_no_location_metadata(self):
   photos=list((ROOT/'assets'/SLUG).glob('*'));self.assertEqual(len(photos),11)
   self.assertEqual(len({hashlib.sha256(p.read_bytes()).hexdigest() for p in photos}),11)

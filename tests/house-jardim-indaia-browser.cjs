@@ -38,6 +38,14 @@ fs.mkdirSync(output, {recursive:true});
   assert.equal(await page.locator('h1').count(),1); assert.match(await page.locator('h1').innerText(),/Jardim Indaiá/);
   assert.equal(await page.locator('.gallery figure').count(),11);
   await page.locator('a[href="#fotos"]').click(); assert.equal(new URL(page.url()).hash,'#fotos');
+  await page.locator('a[href="#estudo-rentabilidade"]').click(); assert.equal(new URL(page.url()).hash,'#estudo-rentabilidade');
+  const study = page.locator('#estudo-rentabilidade');
+  assert.equal(await study.count(),1); assert.match(await study.innerText(),/6,41% a\.a\./); assert.match(await study.innerText(),/34,72%/);
+  assert.equal(await study.locator('tbody tr').count(),3); assert.equal(await study.locator('.sources li').count(),3);
+  assert(!/bertioga/i.test(await study.innerText()),'Study must not add a city name');
+  await page.locator('a[href="#estudo-rentabilidade"]').click(); assert.equal(await study.count(),1);
+  await study.locator('.study-table-wrap').focus();
+  await study.screenshot({path:path.join(output,`${width}-study.png`),style:'header{visibility:hidden!important}'});
   for (const img of await page.locator('img').all()) {await img.scrollIntoViewIfNeeded(); await img.evaluate(el=>el.decode());}
   assert.equal(await page.locator('img').count(),12);
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`overflow at ${width}px`);
