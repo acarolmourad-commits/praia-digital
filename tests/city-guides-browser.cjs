@@ -6,6 +6,7 @@ const data=require('../data/city-guides.json'),output=path.join(root,'.audit/cit
 const origin='https://praia.digital',mime={'.html':'text/html; charset=utf-8','.js':'application/javascript','.css':'text/css','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp'};
 (async()=>{
  fs.mkdirSync(output,{recursive:true});
+ console.log('Launching offline city guide browser checks');
  const browser=await chromium.launch({headless:true,...(process.env.CITY_BROWSER_CHANNEL?{channel:process.env.CITY_BROWSER_CHANNEL}:{})});const results=[];
  try{
  for(const width of [375,1280]){
@@ -20,7 +21,9 @@ const origin='https://praia.digital',mime={'.html':'text/html; charset=utf-8','.
    return route.fulfill({status:200,contentType:mime[path.extname(f)]||'application/octet-stream',body:fs.readFileSync(f)});
   });
   const page=await ctx.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
+  page.setDefaultTimeout(15000);page.setDefaultNavigationTimeout(30000);
   for(const c of data.cities){
+   console.log(`Checking ${c.slug} at ${width}px`);
    await page.goto(origin+`/cidades/${c.slug}.html`);await page.locator('h1').waitFor();
    assert.equal(await page.locator('h1').count(),1);
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),c.slug+' overflow');
@@ -52,6 +55,7 @@ const origin='https://praia.digital',mime={'.html':'text/html; charset=utf-8','.
     assert.equal(await page.locator('.property-card').count(),6);
    }
    results.push({city:c.name,width,cards,passed:true});
+   console.log(`Passed ${c.slug} at ${width}px: ${cards} cards`);
   }
   await page.goto(origin+'/cidades/');assert.equal(await page.locator('.city-card').count(),16);assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
   await page.screenshot({path:path.join(output,`index-${width}.png`),fullPage:true});
@@ -63,7 +67,8 @@ const origin='https://praia.digital',mime={'.html':'text/html; charset=utf-8','.
   const f=built&&fs.existsSync(path.join(built,rel))?path.join(built,rel):path.join(root,rel);
   return route.fulfill({contentType:mime[path.extname(f)]||'text/plain',body:fs.readFileSync(f)});
  });
- const page=await ctx.newPage();await page.goto(origin+'/cidades/');assert.equal(await page.locator('.city-card').count(),16);
+ console.log('Checking city guides without JavaScript');
+ const page=await ctx.newPage();page.setDefaultTimeout(15000);page.setDefaultNavigationTimeout(30000);await page.goto(origin+'/cidades/');assert.equal(await page.locator('.city-card').count(),16);
  await page.goto(origin+'/cidades/bertioga.html');assert.equal(await page.locator('h1').count(),1);assert(await page.locator('#fontes').isVisible());await ctx.close();
  fs.writeFileSync(path.join(output,'results.json'),JSON.stringify({results,noJavaScript:true},null,2));console.log(`${results.length} city/viewport flows and no-JavaScript guides passed.`);
  }finally{await browser.close();}
