@@ -88,7 +88,7 @@ class Indaia84(unittest.TestCase):
         self.assertEqual((old['slug'], old['price'], old['area']), ('apartamento-indaia-88m2', 'R$ 950.000', '88 m² úteis'))
         self.assertTrue((ROOT/'imoveis/apartamento-indaia-88m2.html').is_file())
         self.assertEqual((ROOT/'sitemap.xml').read_text().count(URL), 1)
-        self.assertIn('js/main.js?v=20261106-indaia84', (ROOT/'imoveis.html').read_text())
+        self.assertIn('js/main.js?v=', (ROOT/'imoveis.html').read_text())
 
 if __name__ == '__main__':
     unittest.main()

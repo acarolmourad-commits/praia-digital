@@ -16,22 +16,42 @@
       ${p.image ? `<div class="property-media"><img src="${p.image}" alt="${escapeHtml(p.title)}" loading="lazy" itemprop="image"></div>` : ''}
       <div class="property-info">
         <h3 class="property-title" itemprop="name">${escapeHtml(p.title)} ${p.score ? `<span style="margin-left:8px;font-size:12px;color:#64748b">#${p.score}</span>` : ''}</h3>
-        <p class="property-meta">${escapeHtml(p.city)} · ${escapeHtml(p.type)}</p>
+        <p class="property-meta">${escapeHtml(p.locationLabel || p.city)} · ${escapeHtml(p.type)}</p>
         <p class="property-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
           <meta itemprop="priceCurrency" content="BRL">
           <meta itemprop="price" content="${priceNumber(p.price)}">
           <link itemprop="availability" href="https://schema.org/InStock">
           <span>${escapeHtml(p.price)}</span>
         </p>
-        <p class="property-meta">${escapeHtml(p.bedrooms)} quartos · ${escapeHtml(p.area)}</p>
+        <p class="property-meta">${p.bedrooms != null && p.bedrooms !== '' ? `${escapeHtml(p.bedrooms)} quartos · ` : ''}${escapeHtml(p.area)}</p>
         <p class="property-meta">${escapeHtml((p.tags||[]).join(', '))}</p>
-        <a class="btn-whatsapp" href="${waLink(`Olá! Tenho interesse no imóvel: ${escapeHtml(p.title)} — ${escapeHtml(p.city)}. Pode me enviar mais detalhes?`)}" target="_blank" rel="noopener">Conversar no WhatsApp</a>
+        <a class="btn-whatsapp" href="${waLink(`Olá! Tenho interesse no imóvel: ${escapeHtml(p.title)} — ${escapeHtml(p.locationLabel || p.city)}. Pode me enviar mais detalhes?`)}" target="_blank" rel="noopener">Conversar no WhatsApp</a>
         <a class="btn-secondary" href="${detailUrl(p)}">Ver detalhes</a>
       </div>
     </article>
   `;
   
   const properties = [
+{
+        "id": 15,
+        "title": "Casa térrea no Jardim Indaiá com quintal e churrasqueira",
+        "slug": "casa-jardim-indaia-180m2",
+        "city": "Bertioga",
+        "locationLabel": "Jardim Indaiá",
+        "type": "Venda",
+        "price": "R$ 400.000",
+        "bedrooms": null,
+        "area": "109,91 m² construídos",
+        "image": "https://praia.digital/assets/casa-jardim-indaia-180m2/01-vista-da-casa.jpeg",
+        "tags": [
+                "Jardim Indaiá",
+                "Terreno 180 m²",
+                "Casa térrea",
+                "Quintal",
+                "Churrasqueira"
+        ],
+        "description": "Casa à venda no Jardim Indaiá por R$ 400.000. Terreno de 180 m², área construída de 109,91 m², pátio, corredor lateral e área coberta com churrasqueira."
+},
 {
         "id": 14,
         "title": "Apartamento mobiliado no Indaiá, com varanda e vista parcial para o mar",

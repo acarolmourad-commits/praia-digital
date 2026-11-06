@@ -43,16 +43,21 @@ const origin='https://praia.digital',mime={'.html':'text/html; charset=utf-8','.
    assert.equal(await page.locator('#cidade-filtro').inputValue(),c.name);
    const meta=await page.locator('.property-card .property-meta').allTextContents();
    const cards=await page.locator('.property-card').count();
-   for(let i=0;i<cards;i++)assert((await page.locator('.property-card').nth(i).locator('.property-meta').first().textContent()).startsWith(c.name));
+   for(let i=0;i<cards;i++) {
+    const card=page.locator('.property-card').nth(i);
+    const neighborhoodOnly=await card.locator('a[href="imoveis/casa-jardim-indaia-180m2.html"]').count();
+    const expected=neighborhoodOnly && c.slug==='bertioga'?'Jardim Indaiá':c.name;
+    assert((await card.locator('.property-meta').first().textContent()).startsWith(expected));
+   }
    if(['cananeia','cubatao','iguape','ilha-comprida'].includes(c.slug)){assert.equal(cards,0);assert((await page.locator('.imoveis-empty').textContent()).includes('Nenhum imóvel'));}
    if(c.slug==='bertioga'){
-    assert.equal(cards,6);
+    assert.equal(cards,7);
     assert.equal(await page.locator('a[href*="apartamento-alto-padrao-bertioga"]').count(),0);
     await page.locator('#tipo-filtro').selectOption('Aluguel');
     assert.equal(await page.locator('.property-card').count(),0);
     assert(await page.locator('.imoveis-empty').isVisible());
     await page.locator('#tipo-filtro').selectOption('Venda');
-    assert.equal(await page.locator('.property-card').count(),6);
+    assert.equal(await page.locator('.property-card').count(),7);
    }
    results.push({city:c.name,width,cards,passed:true});
    console.log(`Passed ${c.slug} at ${width}px: ${cards} cards`);
