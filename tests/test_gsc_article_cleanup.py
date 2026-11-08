@@ -46,7 +46,10 @@ class ArticleCleanupTests(unittest.TestCase):
                 schemas = [json.loads(x) for x in re.findall(r'<script type="application/ld\+json">\s*(.*?)\s*</script>', text, re.S)]
                 articles = [x for x in schemas if x.get('@type') in ('Article', 'BlogPosting')]
                 self.assertEqual(1, len(articles))
-                self.assertEqual('2026-11-02', articles[0]['dateModified'])
+                expected_modified = '2026-11-08' if name == FILES[3] else '2026-11-02'
+                self.assertEqual(expected_modified, articles[0]['dateModified'])
+                if name == FILES[3]:
+                    self.assertIn('<time datetime="2026-11-08">08/11/2026</time>', text)
                 description = next(a['content'] for t, a in tags if t == 'meta' and a.get('name') == 'description')
                 self.assertEqual(description, articles[0]['description'])
                 self.assertNotRegex(text, r'</p\s*\n')
