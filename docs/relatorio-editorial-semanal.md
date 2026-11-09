@@ -1,13 +1,13 @@
 # Relatório Editorial Semanal — Praia Digital
 
-**Data:** 26 de outubro de 2026
+**Data:** 9 de novembro de 2026
 **Script:** `docs/scripts/build_banco_editorial.py` (regenerado esta semana)
 
 ## Visão geral
 
-- **Total de artigos no banco editorial:** 4.060
-- **Distribuição por tipo:** A=2.876 (SEO gratuito), C=413 (artigo-ponte), E=352 (comercial), D=210 (autoridade), B=209 (conversão)
-- **Sinais de duplicidade detectados:** 6.463 (capping de 100 no JSON de saída; total completo no log de execução)
+- **Total de artigos no banco editorial:** 4.108
+- **Distribuição por tipo:** A=2.910 (SEO gratuito), C=414 (artigo-ponte), E=365 (comercial), D=210 (autoridade), B=209 (conversão)
+- **Sinais de duplicidade detectados:** 6.892 (capping de 100 no JSON de saída; total completo no log de execução)
 - **Problemas de canonical:** 0
 - **Artigos que precisam de atualização:** 0
 
@@ -15,13 +15,13 @@
 
 | Cluster | Quantidade |
 |---|---|
-| automacao_ia | 1.058 |
+| automacao_ia | 1.087 |
 | bairros_cidades | 842 |
-| locacao_temporada | 592 |
-| editorial | 496 |
-| compra_venda | 482 |
+| locacao_temporada | 595 |
+| editorial | 497 |
+| compra_venda | 488 |
 | investimento | 331 |
-| marketing_digital | 142 |
+| marketing_digital | 151 |
 | seo_local | 50 |
 | juridico | 33 |
 | financiamento | 11 |
@@ -38,8 +38,8 @@
 
 ## Observações
 
-- A base cresceu de 3.883 para 4.060 artigos (+177).
-- 6.463 sinais de duplicidade foram detectados — títulos similares com mesma intenção, cluster e cidade — indicando necessidade de revisão e merge de conteúdo semelhante.
+- A base cresceu de 4.060 para 4.108 artigos (+48).
+- Os sinais de duplicidade subiram de 6.463 para 6.892 (+429) — títulos similares com mesma intenção, cluster e cidade — indicando necessidade de revisão e merge de conteúdo semelhante.
 - Nenhum artigo foi sinalizado como candidato a atualização na rodada atual (0 canonical issues, 0 update candidates).
 - Os próximos temas prioritários concentram-se em investimento, locação temporária e compra/venda, com foco em cidades estratégicas do litoral de SP.
 
