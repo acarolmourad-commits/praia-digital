@@ -50,9 +50,10 @@
         "https://news.airbnb.com/cracking-down-on-parties-this-halloween-weekend": "Cracking Down On Parties This Halloween Weekend",
         "https://news.airbnb.com/every-home-booked-on-airbnb-helps-house-people-in-crisis": "Starting today, every home booked on Airbnb will help house people in crisis",
         "https://news.airbnb.com/airbnb-q3-2026-financial-results": "Airbnb Q3 2026 Financial Results",
-        "https://news.airbnb.com/co-founder-and-ceo-brian-chesky-donates-historic-100m-gift-to-sf-parks": "Co-Founder and CEO Brian Chesky donates historic $100M gift to SF Parks"
+        "https://news.airbnb.com/co-founder-and-ceo-brian-chesky-donates-historic-100m-gift-to-sf-parks": "Co-Founder and CEO Brian Chesky donates historic $100M gift to SF Parks",
+        "https://news.airbnb.com/gen-z-travelers-drive-nearly-half-of-searches-for-miami-during-art-basel-miami-beach": "Gen Z Travelers Drive Nearly Half Of Searches For Miami During Art Basel Miami Beach"
       },
-      "hash": "df2c74850fd55f6d6a143216c6dec02aedf9fff51e58d55c159b561b25137166"
+      "hash": "942ed72ad48a2dde0dfe164e56034f56dc9e8e98c4fea2a174e4e4ee2677127a"
     },
     "airbnb-resources": {
       "name": "Airbnb Resource Center - Anfitrioes (oficial)",
@@ -87,7 +88,7 @@
         "https://www.airbnb.com/resources/hosting-homes/a/new-tools-to-host-smarter-not-harder-776": "New tools to host smarter",
         "https://www.airbnb.com/resources/hosting-homes/a/every-stay-supports-free-emergency-housing-778": "Every Stay Supports Free Emergency Housing 778"
       },
-      "hash": "a2897e4c3b3386efc726b9134d38a7f4554bf9bc2a51f75c2108af1b1249e3dc"
+      "hash": "ac8c93f58a79ccb48c7bdde6b10d945a6b05ca9202550e6e9039b938220d097e"
     },
     "booking-partner": {
       "name": "Booking Partner Hub (oficial)",
@@ -153,6 +154,13 @@
       "platform": "Airbnb",
       "title": "Novidades Airbnb: Co-Founder and CEO Brian Chesky donates historic $100M gift to SF Parks",
       "file": "novidades-20261110-111146-airbnb-news.html",
+      "source": "https://news.airbnb.com/"
+    },
+    {
+      "date": "2026-11-10 21:17 UTC",
+      "platform": "Airbnb",
+      "title": "Novidades Airbnb: Gen Z Travelers Drive Nearly Half Of Searches For Miami During Art Basel Miami Beach",
+      "file": "novidades-20261110-211738-airbnb-news.html",
       "source": "https://news.airbnb.com/"
     }
   ]
