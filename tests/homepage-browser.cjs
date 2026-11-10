@@ -138,9 +138,13 @@ async function searchJourney(page, width) {
   await page.goto(origin+'/imoveis.html?q='+encodeURIComponent('apartamento de 2 quartos até R$ 700 mil em Bertioga'));
   assert.equal(await page.locator('.property-card').count(),0);
   await page.locator('#tipo-filtro').selectOption('Venda');
-  // The newly authorized apartment matches 2 bedrooms in Bertioga below R$ 700k.
-  assert.equal(await page.locator('.property-card').count(),1);
-  assert.equal(await page.locator('.property-card .btn-secondary').getAttribute('href'),'imoveis/apartamento-bertioga-70m2.html');
+  // Both authorized apartments match 2 bedrooms in Bertioga below R$ 700k.
+  assert.equal(await page.locator('.property-card').count(),2);
+  const matchingApartments = await page.locator('.property-card .btn-secondary').evaluateAll(links => links.map(link => link.getAttribute('href')).sort());
+  assert.deepEqual(matchingApartments, [
+    'imoveis/apartamento-bertioga-70m2.html',
+    'imoveis/apartamento-vista-linda-65m2.html'
+  ]);
   await page.locator('#tipo-filtro').selectOption('Aluguel');
   assert.equal(await page.locator('#preco-filtro').inputValue(),'');
   assert(!/700/.test(await page.locator('#busca').inputValue()),'old purchase budget is removed from the query');
