@@ -49,9 +49,10 @@
         "https://news.airbnb.com/introducing-a-new-way-to-book-stays-through-american-express-travel": "Introducing a new way to book stays and unlock benefits through American Express Travel",
         "https://news.airbnb.com/cracking-down-on-parties-this-halloween-weekend": "Cracking Down On Parties This Halloween Weekend",
         "https://news.airbnb.com/every-home-booked-on-airbnb-helps-house-people-in-crisis": "Starting today, every home booked on Airbnb will help house people in crisis",
-        "https://news.airbnb.com/airbnb-q3-2026-financial-results": "Airbnb Q3 2026 Financial Results"
+        "https://news.airbnb.com/airbnb-q3-2026-financial-results": "Airbnb Q3 2026 Financial Results",
+        "https://news.airbnb.com/co-founder-and-ceo-brian-chesky-donates-historic-100m-gift-to-sf-parks": "Co-Founder and CEO Brian Chesky donates historic $100M gift to SF Parks"
       },
-      "hash": "a5c86e5ee8e1fcdaee1f8fbe4563737cebb39b5ab0b7266fd8b4502d9bbdb4df"
+      "hash": "df2c74850fd55f6d6a143216c6dec02aedf9fff51e58d55c159b561b25137166"
     },
     "airbnb-resources": {
       "name": "Airbnb Resource Center - Anfitrioes (oficial)",
@@ -145,6 +146,13 @@
       "platform": "Airbnb",
       "title": "Novidades Airbnb: Airbnb Q3 2026 Financial Results",
       "file": "novidades-20261105-212816-airbnb-news.html",
+      "source": "https://news.airbnb.com/"
+    },
+    {
+      "date": "2026-11-10 11:11 UTC",
+      "platform": "Airbnb",
+      "title": "Novidades Airbnb: Co-Founder and CEO Brian Chesky donates historic $100M gift to SF Parks",
+      "file": "novidades-20261110-111146-airbnb-news.html",
       "source": "https://news.airbnb.com/"
     }
   ]
