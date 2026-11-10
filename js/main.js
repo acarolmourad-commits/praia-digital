@@ -33,6 +33,26 @@
   
   const properties = [
 {
+        "id": 16,
+        "title": "Apartamento mobiliado na Vista Linda com sacada e vista para o mar",
+        "slug": "apartamento-vista-linda-65m2",
+        "city": "Bertioga",
+        "type": "Venda",
+        "price": "R$ 425.000",
+        "bedrooms": "2",
+        "area": "65 m² úteis",
+        "image": "https://praia.digital/assets/apartamento-vista-linda-65m2/IMG_0336.jpeg",
+        "tags": [
+                "Vista Linda",
+                "1 banheiro",
+                "1 vaga fixa",
+                "Mobiliado",
+                "Sacada com vista para o mar",
+                "Saída privativa à orla"
+        ],
+        "description": "Apartamento na Vista Linda, Bertioga: 65 m² úteis, 2 quartos, 1 banheiro, 1 vaga fixa e sacada com vista para o mar. Totalmente mobiliado. R$ 425.000."
+},
+{
         "id": 15,
         "title": "Casa térrea no Jardim Indaiá com quintal e churrasqueira",
         "slug": "casa-jardim-indaia-180m2",

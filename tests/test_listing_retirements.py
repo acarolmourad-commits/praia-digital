@@ -24,10 +24,10 @@ class ListingRetirements(unittest.TestCase):
         fixture = json.loads((ROOT / 'tests/fixtures/catalog-preservation.json').read_text(encoding='utf-8'))
         text = (ROOT / 'js/main.js').read_text(encoding='utf-8')
         records = json.loads(re.search(r'const properties\s*=\s*(\[.*?\]);', text, re.S)[1])
-        self.assertEqual([p['id'] for p in records], [15, 14, 13, 12, 11, 10, 9])
+        self.assertEqual([p['id'] for p in records], [16, 15, 14, 13, 12, 11, 10, 9])
         # Keep the original preservation proof intact when adding a new listing.
-        self.assertEqual(digest(records[2:]), fixture['real_catalog_sha256'])
-        self.assertEqual(records[1]['slug'], 'apartamento-indaia-bertioga-84m2')
+        self.assertEqual(digest(records[3:]), fixture['real_catalog_sha256'])
+        self.assertEqual(records[2]['slug'], 'apartamento-indaia-bertioga-84m2')
         for name in ['imoveis/properties.json', 'litoral-prime-imoveis/litoral-prime-imoveis/imoveis/properties.json']:
             self.assertEqual(json.loads((ROOT / name).read_text(encoding='utf-8')), [])
         remaining = json.loads((ROOT / 'litoral-prime-imoveis/imoveis/properties.json').read_text(encoding='utf-8'))
