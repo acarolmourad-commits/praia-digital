@@ -11,7 +11,8 @@ fs.mkdirSync(artifacts, { recursive: true });
   const browser = await chromium.launch({ headless: true });
   try {
     for (const width of [320, 390, 768, 1280]) {
-      const page = await browser.newPage({ viewport: { width, height: 900 }, locale: 'pt-BR', reducedMotion: 'reduce' });
+      const context = await browser.newContext({ viewport: { width, height: 900 }, locale: 'pt-BR', reducedMotion: 'reduce' });
+      const page = await context.newPage();
       const errors = [];
       page.on('pageerror', error => errors.push(error.message));
       await page.route('**/*', route => {
@@ -95,7 +96,7 @@ fs.mkdirSync(artifacts, { recursive: true });
       }
       assert.deepEqual(errors, [], `JavaScript errors at ${width}px`);
       console.log(`PASS ${width}px: layout, keyboard, validation, cash/financing, SAC, effective rate, indexation, tables, reset, menu, axe`);
-      await page.close();
+      await context.close();
     }
     const nojs = await browser.newPage({ javaScriptEnabled: false });
     await nojs.route('**/*', route => {
