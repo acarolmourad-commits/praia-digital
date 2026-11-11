@@ -9,7 +9,8 @@ const root = path.resolve(__dirname, '..');
  const browser = await chromium.launch({headless:true,...(process.env.CHROMIUM_PATH ? {executablePath:process.env.CHROMIUM_PATH} : {})});
  try {
   for (const width of [320,390,768,1280]) {
-   const page = await browser.newPage({viewport:{width,height:900},reducedMotion:'reduce'});
+   const context = await browser.newContext({viewport:{width,height:900},reducedMotion:'reduce',serviceWorkers:'block'});
+   const page = await context.newPage();
    const errors=[]; page.on('pageerror', e=>errors.push(e.message));
    let sendCount=0, responseSuccess=true, release=null;
    await page.route('**/*', async route=>{
@@ -97,7 +98,7 @@ const root = path.resolve(__dirname, '..');
    assert.equal(await visible('baixar-relatorio'),true);
    finishTimeout();release=null;
    assert.deepEqual(errors,[]);
-   await page.close(); console.log(`PASS diária ${width}px: calculation, validation, download, keyboard, edit invalidation, email and race`);
+   await context.close(); console.log(`PASS diária ${width}px: calculation, validation, download, keyboard, edit invalidation, email and race`);
   }
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exit(1);});
