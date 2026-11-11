@@ -108,11 +108,17 @@
   });
   form.addEventListener('reset', () => { setTimeout(() => { edited = false; render(true); }, 0); });
   function labelFooter() {
-    if ($('pdFlNome')) $('pdFlNome').setAttribute('aria-label', 'Seu nome para receber novidades');
-    if ($('pdFlEmail')) $('pdFlEmail').setAttribute('aria-label', 'Seu e-mail para receber novidades');
+    const name = $('pdFlNome');
+    const email = $('pdFlEmail');
+    if (name) name.setAttribute('aria-label', 'Seu nome para receber novidades');
+    if (email) email.setAttribute('aria-label', 'Seu e-mail para receber novidades');
+    return !!(name && email);
   }
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', labelFooter);
-  else labelFooter();
+  // The shared footer is inserted asynchronously after DOMContentLoaded.
+  if (!labelFooter()) {
+    const footerObserver = new MutationObserver(() => { if (labelFooter()) footerObserver.disconnect(); });
+    footerObserver.observe(document.body, { childList: true, subtree: true });
+  }
   render();
   form.querySelector('[type="submit"]').disabled = false;
 }());

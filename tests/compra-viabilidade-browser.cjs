@@ -15,7 +15,7 @@ fs.mkdirSync(artifacts, { recursive: true });
       page.on('pageerror', error => errors.push(error.message));
       await page.route('**/*', async route => {
         const url = new URL(route.request().url());
-        if (url.hostname !== 'pd.test') return route.abort();
+        if (url.hostname !== 'pd.test' && !(url.hostname === 'praia.digital' && url.pathname === '/partials/footer.html')) return route.abort();
         const file = path.resolve(root, '.' + decodeURIComponent(url.pathname));
         if (!file.startsWith(root + path.sep) || !fs.existsSync(file) || !fs.statSync(file).isFile()) return route.fulfill({ status: 404, body: '' });
         const type = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json' }[path.extname(file)] || 'application/octet-stream';
@@ -23,6 +23,7 @@ fs.mkdirSync(artifacts, { recursive: true });
       });
       await page.goto('https://pd.test/ferramentas/vale-a-pena-comprar-2026.html');
       await page.locator('[data-result="owner-month"]').waitFor();
+      await page.getByLabel('Seu e-mail para receber novidades', { exact: true }).waitFor();
       const overflow = () => page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1);
       assert.equal(await overflow(), false, `initial horizontal overflow ${width}`);
       assert.ok((await page.locator('[data-result="owner-month"]').innerText()).includes('4.689,65'));
