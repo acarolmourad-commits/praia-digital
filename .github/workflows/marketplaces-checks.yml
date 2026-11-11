@@ -1,0 +1,43 @@
+name: Marketplace editorial checks
+
+on:
+  pull_request:
+    paths:
+      - 'automation/marketplaces/informativos-revisados.json'
+      - 'automation/marketplaces/sentinela-estado.json'
+      - 'scripts/marketplaces_editorial.py'
+      - 'scripts/sentinela_airbnb_booking.py'
+      - 'blog/novidades-*.html'
+      - 'tests/test_marketplaces_editorial.py'
+      - 'tests/marketplaces-browser.cjs'
+      - '.github/workflows/marketplaces-checks.yml'
+      - '.github/workflows/sentinela-airbnb-booking.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  editorial:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate editorial data, rendering, and monitoring
+        run: python3 -m unittest discover -s tests -p 'test_marketplaces_editorial.py' -v
+      - name: Validate blog headings
+        run: python3 scripts/validate_html.py blog
+      - name: Check layouts with published navigation
+        run: |
+          npm install --prefix "$RUNNER_TEMP/marketplaces" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/marketplaces/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          NODE_PATH="$RUNNER_TEMP/marketplaces/node_modules" node tests/marketplaces-browser.cjs
+      - name: Save visual verification
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: marketplace-layouts
+          path: /tmp/marketplaces-*.png
+          if-no-files-found: ignore

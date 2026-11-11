@@ -26,7 +26,10 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Monitorar fontes oficiais e gerar posts
+      - name: Validar revisão e monitoramento
+        run: python3 -m unittest discover -s tests -p 'test_marketplaces_editorial.py' -v
+
+      - name: Detectar links e preservar informativos revisados
         id: sentinela
         run: python3 scripts/sentinela_airbnb_booking.py
 
@@ -57,4 +60,4 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh issue create --title "Novidade Airbnb/Booking publicada automaticamente" --body-file automation/marketplaces/sentinela-ultimo-relatorio.md || true
+          gh issue create --title "Links oficiais Airbnb/Booking detectados para revisão" --body-file automation/marketplaces/sentinela-ultimo-relatorio.md || true
