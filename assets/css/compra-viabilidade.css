@@ -1,4 +1,7 @@
 /* Compra e viabilidade: isolated editorial interface, no external assets. */
+html.pd-buy-root { scroll-behavior: auto; }
+/* Keep the shared floating chat control from covering calculator fields/actions. */
+.pd-buy-page .whatsapp-float { display: none; }
 .pd-buy-page {
   --v-ink: #0a2540;
   --v-muted: #53616b;
