@@ -40,3 +40,5 @@ body[data-pd-app="simulador-roi-temporada"] { margin:0; background:#f4f6f8; colo
 .roi-footer a { display:inline-block; padding:.5rem; }
 @media (max-width:640px) { .roi-grid { grid-template-columns:1fr; } .roi-card { padding:1rem; } .roi-hero { padding:1.5rem 1rem .5rem; } .roi-row dt { flex-basis:100%; } }
 @media (prefers-reduced-motion:reduce) { .roi-page { scroll-behavior:auto; } }
+body[data-pd-app="simulador-roi-temporada"] > .skip-link { z-index:10001; }
+.roi-page [tabindex="-1"], .roi-page input, .roi-page select { scroll-margin-top:100px; }

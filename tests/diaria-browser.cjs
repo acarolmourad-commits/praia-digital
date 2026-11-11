@@ -1,5 +1,6 @@
 // Run: node tests/diaria-browser.cjs. Requests are intercepted; no personal data is sent.
 const { chromium } = require('playwright');
+const AxeBuilder = require('@axe-core/playwright').default;
 const fs = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
@@ -29,12 +30,19 @@ const root = path.resolve(__dirname, '..');
    const overflow=()=>page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1);
    assert.equal(await visible('resultado'),false);
    assert.equal(await overflow(),false);
+   fs.mkdirSync('/tmp/diaria-previews',{recursive:true});
+   await page.screenshot({path:`/tmp/diaria-previews/top-${width}.png`});
    await page.locator('#estadia').focus();await page.keyboard.press('Enter');
    assert.match(await page.locator('#principal').innerText(),/378,77/);
    assert.match(await page.locator('#detalhes').innerText(),/159,59/);
    assert.equal(await page.locator('#resultado').evaluate(e=>e===document.activeElement),true);
    assert.equal(await visible('baixar-relatorio'),true);
    assert.equal(sendCount,0);
+   assert.ok(await page.locator('#titulo-resultado').evaluate(e=>e.getBoundingClientRect().top>=document.querySelector('.pd-site-header').getBoundingClientRect().bottom),'Result heading must not be obscured by navigation');
+   const a11y=await new AxeBuilder({page}).include('main').withTags(['wcag2a','wcag2aa','wcag21a','wcag21aa']).analyze();
+   fs.writeFileSync(`/tmp/diaria-previews/axe-${width}.json`,JSON.stringify(a11y.violations,null,2));
+   assert.deepEqual(a11y.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})),[]);
+   await page.screenshot({path:`/tmp/diaria-previews/full-${width}.png`,fullPage:true});
    const downloaded=page.waitForEvent('download');await page.locator('#baixar-relatorio').click();
    const download=await downloaded;
    const report=fs.readFileSync(await download.path(),'utf8');

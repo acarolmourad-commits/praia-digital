@@ -2,6 +2,7 @@ name: Ferramentas de temporada checks
 on:
   pull_request:
     paths:
+      - 'planos.html'
       - 'ferramentas/index.html'
       - 'ferramentas/calculadora-diaria-ideal-airbnb-2026.html'
       - 'apps/simulador-roi-temporada/**'
@@ -16,6 +17,7 @@ on:
   push:
     branches: [main]
     paths:
+      - 'planos.html'
       - 'ferramentas/index.html'
       - 'ferramentas/calculadora-diaria-ideal-airbnb-2026.html'
       - 'apps/simulador-roi-temporada/**'

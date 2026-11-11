@@ -29,6 +29,7 @@ const routes=['/ferramentas/index.html','/apps/simulador-roi-temporada/'];
    await overflow();
    await page.keyboard.press('Tab');
    assert.equal(await page.evaluate(()=>document.activeElement.classList.contains('skip-link')),true,'skip link must precede navigation');
+   assert.equal(await page.evaluate(()=>{const a=document.activeElement,r=a.getBoundingClientRect();return document.elementFromPoint(r.x+r.width/2,r.y+r.height/2)===a;}),true,'Skip link must not be covered by header');
    await page.keyboard.press('Enter');
    if(route.includes('/apps/')){
     assert.equal(await page.locator('#result').isVisible(),false);
