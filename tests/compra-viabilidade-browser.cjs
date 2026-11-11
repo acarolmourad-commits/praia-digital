@@ -26,6 +26,7 @@ fs.mkdirSync(artifacts, { recursive: true });
       const overflow = () => page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1);
       assert.equal(await overflow(), false, `initial horizontal overflow ${width}`);
       assert.ok((await page.locator('[data-result="owner-month"]').innerText()).includes('4.689,65'));
+      assert.doesNotMatch(await page.locator('.v-hero').innerText(), /comprar(?=este)|compra(?=cabe)/);
       await page.screenshot({ path: path.join(artifacts, `top-${width}.png`) });
       await page.keyboard.press('Tab');
       assert.equal(await page.locator('.v-skip').evaluate(e => e === document.activeElement), true);
@@ -66,6 +67,7 @@ fs.mkdirSync(artifacts, { recursive: true });
       await page.screenshot({ path: path.join(artifacts, `result-${width}.png`) });
       await page.getByText('Se a valorização mudar?', { exact: true }).click();
       assert.equal(await overflow(), false, `sensitivity overflow ${width}`);
+      await page.locator('.v-summary').screenshot({ path: path.join(artifacts, `summary-${width}.png`) });
       if (width <= 768) {
         await page.getByRole('button', { name: 'Abrir menu de navegação' }).click();
         assert.equal(await page.locator('.pd-site-menu').isVisible(), true);

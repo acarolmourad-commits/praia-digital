@@ -34,7 +34,7 @@
 .v-hero { display: grid; grid-template-columns: minmax(0,1.7fr) minmax(0,1fr); gap: 64px; align-items: center; padding: 46px 0 64px; }
 .v-eyebrow { color: #096766; font-size: .68rem; font-weight: 750; letter-spacing: .16em; line-height: 1.6; }
 .v-hero h1 { margin: 17px 0 21px; font-size: clamp(2.3rem,4.6vw,3.65rem); line-height: 1.08; font-weight: 750; letter-spacing: -.055em; }
-.v-hero h1 em { font-family: Georgia, "Times New Roman", serif; color: var(--v-teal); font-weight: 400; letter-spacing: -.04em; }
+.v-hero h1 em { display: block; font-family: Georgia, "Times New Roman", serif; color: var(--v-teal); font-weight: 400; letter-spacing: -.04em; }
 .v-lead { max-width: 560px; font-size: 1.04rem; color: var(--v-muted); }
 .v-tags { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 24px; }
 .v-tags span { border: 1px solid #d6ded8; border-radius: 99px; padding: 5px 11px; color: #45594f; font-size: .73rem; font-weight: 600; }
@@ -179,7 +179,6 @@
   .v-shell { padding-inline: 14px; }
   .v-panel, .v-summary, .v-hero-note, .v-sources, .v-next { padding: 18px; }
   .v-hero h1 { font-size: 2.15rem; }
-  .v-hero h1 br { display: none; }
   .v-panel-title { gap: 10px; }
   .v-actions { align-items: stretch; flex-direction: column; }
   .v-metrics { grid-template-columns: minmax(0,1fr); }

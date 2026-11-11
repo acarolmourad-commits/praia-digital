@@ -16,6 +16,7 @@ const result = () => d.getElementById('result').textContent;
 const check = (name, fn) => { fn(); console.log('PASS ' + name); };
 (async () => {
   check('No-JavaScript source cannot submit financial fields', () => { const raw = new JSDOM(html).window.document; assert.equal(raw.querySelector('#compra-form [name]'), null); assert.equal(raw.querySelector('#compra-form [type=submit]').disabled, true); });
+  check('Responsive headings preserve word spacing', () => { assert.match(d.getElementById('page-title').textContent, /comprar este imóvel/); assert.match(d.querySelector('.v-hero-note h2').textContent, /compra cabe/); });
   check('Initial example computes without errors', () => { assert.match(result(), /4\.689,65/); assert.equal(d.getElementById('form-errors').hidden, true); });
   check('Inputs have unique IDs and programmatic labels', () => {
     const ids = [...d.querySelectorAll('[id]')].map(e => e.id); assert.equal(new Set(ids).size, ids.length);
