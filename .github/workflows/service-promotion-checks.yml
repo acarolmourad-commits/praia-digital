@@ -15,6 +15,7 @@ jobs:
       - name: Validate prices, claims, schemas and navigation
         run: |
           python -m unittest discover -s tests -p 'test_service_promotion_safety.py'
+          python -m unittest discover -s tests -p 'test_services_hub.py'
           python -m unittest discover -s tests -p 'test_legacy_academy_purchase_gate.py'
       - name: Prepare production navigation
         run: python scripts/build-navigation.py
@@ -23,6 +24,7 @@ jobs:
           npm install --prefix "$RUNNER_TEMP/service-browser" playwright@1.63.0 --no-audit --no-fund
           "$RUNNER_TEMP/service-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
           NODE_PATH="$RUNNER_TEMP/service-browser/node_modules" node tests/service-promotion-browser.cjs
+          NODE_PATH="$RUNNER_TEMP/service-browser/node_modules" node tests/services-hub-browser.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:

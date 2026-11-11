@@ -16,7 +16,7 @@
     "provider": { "@type": "Organization", "name": "Praia Digital", "url": "https://praia.digital/" },
     "url": "https://praia.digital/servicos/propaganda-imobiliaria.html",
     "description": "Criação de anúncio imobiliário para venda ou locação no litoral paulista, com copy, estrutura e roteiro de distribuição em portais, redes sociais e WhatsApp.",
-    "offers": { "@type": "Offer", "priceCurrency": "BRL", "price": "499", "availability": "https://schema.org/InStock", "url": "https://buy.stripe.com/bJe28sd4c0XdfxZ19e4ZR1Y" }
+    "offers": { "@type": "Offer", "priceCurrency": "BRL", "price": "499", "url": "https://buy.stripe.com/bJe28sd4c0XdfxZ19e4ZR1Y" }
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
@@ -31,8 +31,16 @@
     .lead { opacity: .85; line-height: 1.6; }
     ul { opacity: .85; line-height: 1.6; }
     .btn-whatsapp { display: inline-block; margin-top: 18px; padding: 10px 14px; border-radius: 12px; background: #1f6feb; color: #fff; text-decoration: none; font-weight: 600; }
-    .btn-stripe { display: inline-block; margin-top: 18px; padding: 10px 14px; border-radius: 12px; background: #16a34a; color: #fff; text-decoration: none; font-weight: 700; }
+    .btn-stripe { display: inline-block; margin-top: 18px; padding: 10px 14px; border-radius: 12px; background: #166534; color: #fff; text-decoration: none; font-weight: 700; }
     main a { color: #7dd3fc; }
+    #leadForm{display:grid;gap:8px;max-width:520px}
+    #leadForm input:not([type="hidden"]),#leadForm button{font:inherit;padding:12px;min-width:0;width:100%;border-radius:8px;border:1px solid #64748b}
+    #leadForm input{color:#0f172a;background:#fff}
+    #leadForm label{color:#e8ecf1}
+    #leadForm button{background:#1f6feb;color:#fff;cursor:pointer}
+    a:focus-visible,input:focus-visible,button:focus-visible{outline:3px solid #facc15;outline-offset:3px}
+    .skip-link{position:absolute;top:-100px;left:12px;padding:12px;background:#fff;color:#0b1220;z-index:10000}
+    .skip-link:focus{top:12px}
     footer { margin-top: 22px; opacity: .6; font-size: 12px; }
   </style>
 <!-- Google tag (gtag.js) -->
@@ -50,6 +58,7 @@ gtag('config', '', { anonymize_ip: true });
 <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
 </head>
 <body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
   <div class="wrap">
     <header>
       <nav aria-label="Navegação principal">
@@ -71,6 +80,7 @@ gtag('config', '', { anonymize_ip: true });
         <li>Texto final do anúncio pronto para publicação</li>
       </ul>
 
+      <p>O produto entrega o anúncio e o roteiro. Confirme na proposta quem publicará e distribuirá o material; essas etapas não estão incluídas automaticamente.</p>
       <h2>O que este produto não é</h2>
 <p><strong>Propaganda Imobiliária não tem relação com Airbnb nem Booking.</strong> Este serviço é exclusivamente para <strong>venda ou locação</strong> do imóvel. Não cria nem publica anúncio de temporada, não gerencia hóspedes, reservas, calendário nem precificação de diárias.</p>
 
@@ -79,8 +89,9 @@ gtag('config', '', { anonymize_ip: true });
 
 <h2>Investimento</h2>
 <p><strong>R$ 499 por anúncio, por imóvel</strong> — para venda ou locação.</p>
+<p>Antes de pagar, confirme por escrito o imóvel, os materiais necessários, o prazo e as revisões. O checkout identifica o recebedor como <strong>Ziontechgroup</strong>. Confira o nome do produto e o total de <strong>R$ 499 por unidade em BRL</strong>; se houver divergência, fale com a equipe antes de concluir.</p>
 <p><a class="btn-stripe" href="https://buy.stripe.com/bJe28sd4c0XdfxZ19e4ZR1Y" target="_blank" rel="noopener">Pagar R$ 499 no Stripe</a></p>
-<p>Pagamento seguro via Stripe — cartão, Pix ou boleto. No checkout, ajuste a quantidade quando houver mais de um imóvel. Mídia paga (impulsionamento) e gestão contínua de campanha não estão incluídas nesse valor; quando necessárias, são combinadas por escrito antes de qualquer contratação.</p>
+<p>Pagamento via Stripe, conforme os meios disponíveis no checkout. Ajuste a quantidade quando houver mais de um imóvel e confira o total antes de confirmar. O pagamento não representa entrega imediata. Mídia paga (impulsionamento) e gestão contínua de campanha não estão incluídas nesse valor; quando necessárias, são combinadas por escrito antes de qualquer contratação.</p>
 
 <h2>Atendimento no litoral</h2>
 <p>Atuamos em todas as cidades do Litoral Norte e Sul de SP: Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe.</p>
@@ -90,15 +101,18 @@ gtag('config', '', { anonymize_ip: true });
     <div id="lm-form" style="margin-top:18px">
       <h2>Quero receber mais informações</h2>
       <form id="leadForm">
-        <input type="text" id="name" placeholder="Seu nome" required />
-        <input type="email" id="email" placeholder="Seu e-mail" />
-        <input type="tel" id="phone" placeholder="Seu WhatsApp" />
+        <label for="name">Seu nome (obrigatório)</label>
+        <input autocomplete="name" type="text" id="name" placeholder="Seu nome" required />
+        <label for="email">Seu e-mail (opcional)</label>
+        <input autocomplete="email" type="email" id="email" placeholder="Seu e-mail" />
+        <label for="phone">Seu WhatsApp (opcional)</label>
+        <input autocomplete="tel" type="tel" id="phone" placeholder="Seu WhatsApp" />
         <input type="hidden" id="city" value="" />
         <input type="hidden" id="source" value="servico" />
         <input type="hidden" id="magnet" value="" />
         <button type="submit">Enviar</button>
       </form>
-      <p id="formStatus"></p>
+      <p id="formStatus" role="status" aria-live="polite"></p>
     </div>
     <script>(function(){var form=document.getElementById("leadForm");if(!form)return;var WA="5511954346288";function collect(){var d={};var els=form.querySelectorAll("input,select,textarea");for(var i=0;i<els.length;i++){var el=els[i];if(!el.id)continue;var v=(el.value||"").trim();if(v)d[el.id]=v;}return d;}function send(data){var st=document.getElementById("formStatus");try{var leads=JSON.parse(localStorage.getItem("pd_leads")||"[]");leads.push(Object.assign({ts:new Date().toISOString(),page:location.pathname},data));localStorage.setItem("pd_leads",JSON.stringify(leads));}catch(e){}try{window.dispatchEvent(new CustomEvent("lead_pre_qualificado",{detail:data}));}catch(e){}var ctrl=new AbortController();var to=setTimeout(function(){ctrl.abort();},3500);fetch("https://academy.praia.digital/leads",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data),signal:ctrl.signal}).then(function(r){clearTimeout(to);if(r.status===200){if(st)st.textContent="Recebido! Entraremos em contato.";return;}throw new Error("st");}).catch(function(){clearTimeout(to);var rot={"name":"Nome","email":"E-mail","phone":"WhatsApp","city":"Cidade","magnet":"Interesse","faixa_preco":"Faixa de preco","prazo_interesse":"Prazo","source":"Origem"};var partes=[];for(var k in data){if(k==="source")continue;partes.push((rot[k]||k)+": "+data[k]);}var msg="Ola! Quero receber informacoes."+(partes.length?" "+partes.join(" | "):"");window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(msg),"_blank","noopener");if(st)st.textContent="Abrindo seu WhatsApp para concluir o envio. Se preferir, fale conosco: (11) 95434-6288.";});}form.addEventListener("submit",function(e){e.preventDefault();send(collect());});})();</script>
 

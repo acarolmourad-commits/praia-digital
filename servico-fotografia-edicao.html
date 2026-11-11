@@ -54,7 +54,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fotografia e Edição Profissional para Imobiliárias | Praia Digital</title>
   <link rel="preconnect" href="https://praia.digital">
-<meta name="description" content="Serviço de fotografia e edição profissional para imobiliárias e corretores. Aumente suas vendas com imagens profissionais. Entrega em 48h.">
+<meta name="description" content="Serviço de fotografia e edição profissional para imobiliárias e corretores. Apresente seu imóvel com imagens profissionais. Confirme o escopo e o prazo no orçamento.">
   <meta name="keywords" content="fotografia imóveis, edição fotos imóveis, fotografia profissional imobiliária, edição profissional imóveis, fotos para anúncios imobiliários, fotógrafo imobiliário">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -87,7 +87,7 @@
     .section-title { font-size: 2.5rem; font-weight: 800; text-align: center; margin-bottom: 1rem; background: linear-gradient(135deg,#00d4ff,#00ff88); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     .section-subtitle { text-align: center; color: #a0aec0; max-width: 700px; margin: 0 auto 4rem; font-size: 1.1rem; }
 
-    .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap: 2rem; }
+    .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%,300px),1fr)); gap: 2rem; }
     .card {
       background: rgba(255,255,255,0.03);
       border: 1px solid rgba(255,255,255,0.08);
@@ -113,7 +113,7 @@
     }
     .highlight-box h3 { font-size: 2rem; margin-bottom: 1.5rem; color: #ffffff; }
 
-    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap: 2rem; margin: 2rem 0; }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%,300px),1fr)); gap: 2rem; margin: 2rem 0; }
 
     .cta-section {
       background: linear-gradient(135deg, rgba(0,212,255,0.15), rgba(0,255,136,0.08));
@@ -149,11 +149,11 @@
       margin-left: 1rem;
     }
     .btn-secondary:hover { border-color: #ffffff; transform: translateY(-3px); }
-    .footer { text-align: center; padding: 3rem 2rem; color: #6a7185; font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.05); }
+    .footer { text-align: center; padding: 3rem 2rem; color: #a0aec0; font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.05); }
     .footer a { color: #a0aec0; text-decoration: none; margin: 0 0.8rem; }
     .footer a:hover { color: #00d4ff; }
 
-    .form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 1rem; }
+    .form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%,220px),1fr)); gap: 1rem; }
     .field { display: flex; flex-direction: column; }
     .field input, .field select { padding: 0.9rem 1rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.04); color: #e0e6f0; font-size: 1rem; }
     .field label { font-size: 0.85rem; color: #a0aec0; margin-bottom: 0.4rem; }
@@ -163,7 +163,30 @@
     .success { color: #00ff88; }
     .error { color: #ff6b6b; }
 
+    .affiliate-block{max-width:1200px;margin:0 auto 2rem;padding:1.25rem;color:#e0e6f0}
+    .affiliate-title{font-weight:700;margin-bottom:1rem}
+    .affiliate-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:1rem}
+    .affiliate-card{padding:1rem;border:1px solid #42546a;border-radius:12px;background:#111b2e}
+    .affiliate-product{font-weight:700}
+    .affiliate-desc,.affiliate-disclosure{color:#a0aec0;font-size:.9rem}
+    .affiliate-cta{display:inline-block;margin-top:.5rem;color:#7dd3fc}
+    .affiliate-disclosure{margin-top:1rem}
+    .field{min-width:0}
+    .field input,.field select{width:100%;min-width:0}
+    .container a{overflow-wrap:anywhere;color:#7dd3fc}
+    .container a.btn-primary{color:#0a0f1f}
+    .container a.btn-secondary{color:#fff}
+    a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #facc15;outline-offset:4px}
+    .skip-link{position:absolute;top:-100px;left:12px;padding:12px;background:#fff;color:#0a0f1f;z-index:10000}
+    .skip-link:focus{top:12px}
+    @media(prefers-reduced-motion:reduce){.card,.btn-primary,.btn-secondary{transition:none}.card:hover,.btn-primary:hover,.btn-secondary:hover{transform:none}}
     @media (max-width: 768px) {
+      .section{padding:3rem 1rem}
+      .card,.highlight-box,.cta-section{padding:1.25rem}
+      .hero{padding:3rem 1rem}
+      .cta-section h2{font-size:1.8rem}
+      .form-note{overflow-wrap:anywhere}
+      .btn-primary,.btn-secondary{max-width:100%;padding:1rem 1.5rem}
       .hero h1 { font-size: 2rem; }
       .section-title { font-size: 1.8rem; }
       .grid-2 { grid-template-columns: 1fr; }
@@ -173,7 +196,7 @@
   <link rel="canonical" href="https://praia.digital/servico-fotografia-edicao.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Fotografia e Edição Profissional para Imobiliárias | Praia Digital">
-  <meta property="og:description" content="Serviço de fotografia e edição profissional para imobiliárias e corretores. Aumente suas vendas em até 3x com imagens profissionais. Entrega em 48h.">
+  <meta property="og:description" content="Serviço de fotografia e edição profissional para imobiliárias e corretores. Apresente seu imóvel com imagens profissionais. Confirme o escopo e o prazo no orçamento.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -182,7 +205,7 @@
   <meta property="og:url" content="https://praia.digital/servico-fotografia-edicao.html">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Fotografia e Edição Profissional para Imobiliárias | Praia Digital">
-  <meta name="twitter:description" content="Serviço de fotografia e edição profissional para imobiliárias e corretores. Aumente suas vendas em até 3x com imagens profissionais. Entrega em 48h.">
+  <meta name="twitter:description" content="Serviço de fotografia e edição profissional para imobiliárias e corretores. Apresente seu imóvel com imagens profissionais. Confirme o escopo e o prazo no orçamento.">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
   <link rel="alternate" hreflang="x-default" href="https://praia.digital/servico-fotografia-edicao.html" />
   <link rel="alternate" hreflang="pt-BR" href="https://praia.digital/servico-fotografia-edicao.html">
@@ -235,28 +258,15 @@ gtag('js', new Date());
 gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 </script>
 </head>
-<a id="skip-link" class="skip-link" href="#main">Pular para o conteúdo</a>
-  <body>
-  <nav aria-label="Navegação principal" class="navbar">
-    <div class="nav-container">
-      <div class="logo">Praia Digital</div>
-      <div class="nav-links">
-        <a href="https://praia.digital/index.html">Início</a>
-        <a href="https://praia.digital/education/index.html">Academy</a>
-        <a href="https://praia.digital/education/formacoes/index.html">Formações</a>
-        <a href="https://praia.digital/blog/index.html">Blog</a>
-        <a href="https://praia.digital/noticias/index.html">Notícias</a>
-        <a href="https://praia.digital/servicos.html">Serviços</a>
-        <a href="consorcio.html">Consórcio</a>
-        <a href="https://praia.digital" rel="noopener">Ferramentas</a>
-      </div>
-    </div>
-  </nav>
+<body>
+  <a id="skip-link" class="skip-link" href="#main">Pular para o conteúdo</a>
+  <meta name="pd-shared-nav">
+  <main id="main">
 
   <header class="hero">
     <div class="badge">⭐ Serviço Premium para Imobiliárias</div>
     <h1>Fotografia e Edição Profissional<br>para Imóveis</h1>
-    <p>Imóveis com fotos profissionais recebem até 3x mais contatos e vendem até 2x mais rápido. Entregamos em 48h.</p>
+    <p>Fotografia e edição para mostrar os ambientes e os diferenciais reais do imóvel. Confirme no orçamento o serviço, os materiais e o prazo de entrega.</p>
     <a href="#contato" class="btn-primary">Solicitar Orçamento</a>
     <a class="btn-secondary" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Quero%20falar%20sobre%20fotografia%20e%20edi%C3%A7%C3%A3o%20de%20im%C3%B3veis&utm_source=site&utm_medium=whatsapp&utm_campaign=servico-fotografia-edicao" target="_blank" rel="noopener">WhatsApp</a>
   </header>
@@ -264,7 +274,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
   <section class="section">
     <div class="container">
       <h2 class="section-title">Serviços prioritários</h2>
-      <p class="section-subtitle">Dois serviços para transformar seus anúncios em conversão.</p>
+      <p class="section-subtitle">Duas formas de melhorar a apresentação do seu imóvel.</p>
 
       <div class="cards-grid">
         <div class="card">
@@ -293,27 +303,27 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
   <section class="section" style="background: rgba(255,255,255,0.02);">
     <div class="container">
-      <h2 class="section-title">Resultados comprovados</h2>
-      <p class="section-subtitle">Imóveis com fotos profissionais geram mais interesse e vendem mais rápido.</p>
+      <h2 class="section-title">O que avaliar nas imagens</h2>
+      <p class="section-subtitle">Boas imagens ajudam a entender o imóvel. Contatos e vendas dependem também do preço, da localização, da demanda e da divulgação.</p>
 
       <div class="highlight-box">
-        <h3>📊 Dados que comprovam</h3>
+        <h3>📸 Critérios de apresentação</h3>
         <div class="grid-2">
           <div>
-            <h4 style="color:#00d4ff; margin:1rem 0 0.5rem;">+3x mais contatos</h4>
-            <p style="color:#a0aec0; font-size:0.95rem;">Imóveis com fotos profissionais recebem até 3 vezes mais mensagens e ligações.</p>
+            <h4 style="color:#00d4ff; margin:1rem 0 0.5rem;">Ambientes bem apresentados</h4>
+            <p style="color:#a0aec0; font-size:0.95rem;">Uma sequência de imagens ajuda o interessado a compreender a distribuição e o uso dos espaços.</p>
           </div>
           <div>
-            <h4 style="color:#00d4ff; margin:1rem 0 0.5rem;">+2x vendas mais rápido</h4>
-            <p style="color:#a0aec0; font-size:0.95rem;">Anúncios com fotos editadas fecham até 2 vezes mais rápido que anúncios com fotos amadoras.</p>
+            <h4 style="color:#00d4ff; margin:1rem 0 0.5rem;">Características reais</h4>
+            <p style="color:#a0aec0; font-size:0.95rem;">Luz, cor e perspectiva devem preservar as características reais do imóvel.</p>
           </div>
           <div>
-            <h4 style="color:#00d4ff; margin:1rem 0 0.5rem;">40% mais tempo no site</h4>
-            <p style="color:#a0aec0; font-size:0.95rem;">Visitantes passam 40% mais tempo na página quando há fotos profissionais.</p>
+            <h4 style="color:#00d4ff; margin:1rem 0 0.5rem;">Formato adequado</h4>
+            <p style="color:#a0aec0; font-size:0.95rem;">O formato das imagens deve considerar os canais de publicação definidos no orçamento.</p>
           </div>
           <div>
-            <h4 style="color:#00d4ff; margin:1rem 0 0.5rem;">95% de aprovação</h4>
-            <p style="color:#a0aec0; font-size:0.95rem;">Clientes aprovam as fotos editadas na primeira entrega em 95% dos casos.</p>
+            <h4 style="color:#00d4ff; margin:1rem 0 0.5rem;">Escopo antes da contratação</h4>
+            <p style="color:#a0aec0; font-size:0.95rem;">Combine quantidade de imagens, tipo de edição, revisões e prazo antes de contratar.</p>
           </div>
         </div>
       </div>
@@ -323,7 +333,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
   <section class="section" id="modelo">
     <div class="container">
       <h2 class="section-title">Modelo de atendimento</h2>
-      <p class="section-subtitle">Escolha o modelo que melhor se adapta à sua imobiliária.</p>
+      <p class="section-subtitle">Escolha o modelo que melhor se adapta à sua imobiliária. Confirme no orçamento o agendamento, os materiais necessários, as revisões e o prazo aplicável ao seu pedido.</p>
 
       <div class="cards-grid">
         <div class="card">
@@ -414,7 +424,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
   <section class="section" id="contato">
     <div class="container">
       <div class="cta-section">
-        <h2>Pronto para aumentar suas vendas?</h2>
+        <h2>Quer melhorar a apresentação do seu imóvel?</h2>
         <p>Solicite um orçamento gratuito e sem compromisso.</p>
 
         <form id="leadForm" class="form-grid" style="max-width: 960px; margin: 0 auto; text-align: left;">
@@ -450,13 +460,14 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
             <button type="submit" class="btn-primary">Solicitar orçamento</button>
             <a class="btn-secondary" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Quero%20falar%20sobre%20fotografia%20e%20edi%C3%A7%C3%A3o%20de%20im%C3%B3veis&utm_source=site&utm_medium=whatsapp&utm_campaign=servico-fotografia-edicao" target="_blank" rel="noopener">WhatsApp</a>
           </div>
-          <div id="formStatus" class="form-status" style="grid-column: 1 / -1;"></div>
+          <div id="formStatus" role="status" aria-live="polite" class="form-status" style="grid-column: 1 / -1;"></div>
           <p class="form-note">📞 (11) 95434-6288 | <a href="mailto:comercial@praia.digital?subject=Or%C3%A7amento%20Fotografia%20Im%C3%B3veis" style="color:#a0aec0">comercial@praia.digital</a></p>
         </form>
       </div>
     </div>
   </section>
 
+  </main>
   <footer aria-label="Rodapé" class="footer">
     <p>© 2026 Praia Digital — Fotografia e Edição Profissional para Imobiliárias</p>
     <p style="margin-top:0.5rem;">

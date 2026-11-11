@@ -1,10 +1,10 @@
 <footer>
   <p> Praia Digital — Imóveis no Litoral com IA. Atendimento humanizado para corretores, imobiliárias e proprietários.</p>
-  <div id="pdFlForm" style="max-width:640px;margin:14px auto;padding:14px;border:1px solid #E5E7EB;border-radius:14px;background:#f8fafc;">
-    <p style="margin:0 0 8px;font-weight:700;">📩 Receba análises e novidades do mercado do litoral por e-mail</p>
+  <div id="pdFlForm" style="max-width:640px;margin:14px auto;padding:14px;border:1px solid #E5E7EB;border-radius:14px;background:#f8fafc;color:#0f172a;">
+    <p style="margin:0 0 8px;font-weight:700;color:#0f172a;">📩 Receba análises e novidades do mercado do litoral por e-mail</p>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px;">
-      <input id="pdFlNome" type="text" placeholder="Seu nome" style="padding:9px;border:1px solid #d0d7de;border-radius:10px;">
-      <input id="pdFlEmail" type="email" placeholder="Seu e-mail" style="padding:9px;border:1px solid #d0d7de;border-radius:10px;">
+      <div style="display:flex;flex-direction:column;gap:4px;min-width:0;"><label for="pdFlNome" style="color:#0f172a;font-size:.9rem;">Seu nome</label><input id="pdFlNome" type="text" autocomplete="name" placeholder="Seu nome" style="width:100%;min-width:0;padding:9px;border:1px solid #64748b;border-radius:10px;color:#0f172a;background:#fff;"></div>
+      <div style="display:flex;flex-direction:column;gap:4px;min-width:0;"><label for="pdFlEmail" style="color:#0f172a;font-size:.9rem;">Seu e-mail</label><input id="pdFlEmail" type="email" autocomplete="email" placeholder="Seu e-mail" style="width:100%;min-width:0;padding:9px;border:1px solid #64748b;border-radius:10px;color:#0f172a;background:#fff;"></div>
     </div>
     <button type="button" onclick="(async function(btn){var e=document.getElementById('pdFlEmail').value.trim();if(!e||e.indexOf('@')<1||e.indexOf('.')<e.indexOf('@')+2){alert('Informe um e-mail válido.');return;}var n=document.getElementById('pdFlNome').value.trim();btn.disabled=true;btn.textContent='Enviando…';try{var r=await fetch('https://formsubmit.co/ajax/comercial@praia.digital',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({_subject:'Novo lead (site) — '+n+' — '+document.title,nome:n,email:e,pagina:location.pathname})});var d=await r.json();if(!r.ok||d.success===false)throw new Error('Envio não confirmado');document.getElementById('pdFlForm').style.display='none';document.getElementById('pdFlOk').style.display='block';}catch(x){alert('Não foi possível confirmar o envio. Tente novamente ou fale conosco pelo WhatsApp.');btn.disabled=false;btn.textContent='Quero receber';}})(this)" style="margin-top:10px;padding:9px 16px;border:0;border-radius:10px;background:#0A3D2E;color:#fff;font-weight:700;cursor:pointer;">Quero receber</button>
   </div>
