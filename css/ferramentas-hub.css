@@ -1,0 +1,52 @@
+/* Scoped hub styles: shared navigation and footer keep the site design system. */
+.fh-hub {
+  width: min(100%, 1160px);
+  margin: 0 auto;
+  padding: 40px 24px 48px;
+  color: #123247;
+  line-height: 1.65;
+  scroll-margin-top: 100px;
+}
+.fh-hub h1, .fh-hub h2, .fh-hub h3 { color: #123247; line-height: 1.2; }
+.fh-hub h1 { max-width: 850px; margin: 10px 0 20px; font-size: clamp(2rem, 4.5vw, 3.25rem); }
+.fh-hub h2 { margin: 0 0 16px; font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
+.fh-hub h3 { margin: 0 0 16px; font-size: 1.35rem; }
+.fh-hub p { margin: 0 0 16px; }
+.fh-hub a { color: #075985; text-decoration: underline; text-underline-offset: 3px; }
+.fh-hub a:hover { text-decoration-thickness: 2px; }
+.fh-hub a:focus-visible, .fh-skip:focus-visible { outline: 3px solid #123247; outline-offset: 4px; }
+.fh-hub a { scroll-margin-block: 100px; }
+.fh-intro { max-width: 850px; margin-bottom: 36px; }
+.fh-hub .fh-eyebrow { color: #365568; font-size: .9rem; font-weight: 700; }
+.fh-hub .fh-lead { font-size: 1.15rem; }
+.fh-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.fh-card { display: flex; flex-direction: column; min-width: 0; padding: 24px; border: 1px solid #bccbd2; border-radius: 16px; background: #fff; }
+.fh-hub .fh-tag { color: #075985; font-size: .875rem; font-weight: 700; }
+.fh-hub .fh-inputs { color: #365568; font-size: .95rem; }
+.fh-hub .fh-button { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 18px; border: 2px solid transparent; border-radius: 10px; background: #075985; color: #fff; font-weight: 700; text-align: center; text-decoration: none; line-height: 1.4; }
+.fh-hub .fh-button:hover { background: #123247; text-decoration: underline; }
+.fh-card .fh-button { margin-top: auto; }
+.fh-guidance { margin: 24px 0 36px; padding: 24px; border-left: 4px solid #075985; background: #edf5f8; border-radius: 0 12px 12px 0; }
+.fh-guidance h2 { font-size: 1.2rem; }
+.fh-kit { display: grid; grid-template-columns: 1.6fr 1fr; gap: 32px; padding: 32px; border-radius: 16px; background: #fff; border: 2px solid #075985; }
+.fh-kit-action { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
+.fh-hub .fh-price { margin-bottom: 0; font-weight: 800; font-size: 2rem; line-height: 1.3; }
+.fh-price span { display: block; font-size: 1rem; font-weight: 600; }
+.fh-kit-action > a { margin-top: 12px; }
+.fh-more { margin-top: 36px; max-width: 850px; }
+.fh-guidance > a, .fh-more > a, .fh-kit-action > a:not(.fh-button) { display: inline-flex; align-items: center; min-height: 44px; padding: 6px 0; }
+.fh-skip { position: fixed; left: 16px; top: 8px; z-index: 10001; transform: translateY(-200%); padding: 12px 16px; border: 2px solid #123247; border-radius: 8px; background: #fff; color: #075985; font-weight: 700; }
+.fh-skip:focus { transform: translateY(0); }
+@media (max-width: 900px) {
+  .fh-grid { grid-template-columns: 1fr; }
+  .fh-card .fh-button { align-self: flex-start; }
+  .fh-kit { grid-template-columns: 1fr; gap: 16px; }
+}
+@media (max-width: 480px) {
+  .fh-hub { padding: 28px 16px 36px; }
+  .fh-card, .fh-guidance, .fh-kit { padding: 20px; }
+  .fh-card .fh-button, .fh-kit-action .fh-button { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html:has(.fh-hub) { scroll-behavior: auto; }
+}

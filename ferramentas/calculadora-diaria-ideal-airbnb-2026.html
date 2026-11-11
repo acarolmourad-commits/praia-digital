@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora de Diária Ideal Airbnb 2026 — Praia Digital</title>
-  <meta name="description" content="Descubra a diária ideal do seu imóvel no Airbnb com base em custos, ocupação e mercado do litoral.">
+  <meta name="description" content="Descubra a diária ideal do seu imóvel no Airbnb com base nos custos e na ocupação informados. Simulação educativa com referências ilustrativas.">
   <link rel="canonical" href="https://praia.digital/ferramentas/calculadora-diaria-ideal-airbnb-2026.html">
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Calculadora de Diária Ideal Airbnb 2026 — Praia Digital">
-  <meta property="og:description" content="Descubra a diária ideal do seu imóvel no Airbnb com base em custos, ocupação e mercado do litoral.">
+  <meta property="og:description" content="Descubra a diária ideal do seu imóvel no Airbnb com base nos custos e na ocupação informados. Simulação educativa com referências ilustrativas.">
   <meta property="og:url" content="https://praia.digital/ferramentas/calculadora-diaria-ideal-airbnb-2026.html">
   <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
   <style>
@@ -23,8 +23,20 @@
     input, select { width:100%; padding:10px; margin-top:6px; border-radius:10px; border:1px solid #334; background:#101a30; color:#e8ecf1; font-size:15px; }
     .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:0 16px; }
     .card { background:#101a30; border:1px solid #233; border-radius:14px; padding:18px; margin-top:18px; }
-    .resultado { display:none; }
-    .resultado.ativo { display:block; }
+    [hidden] { display:none!important; }
+    a { color:#7ee9ff; }
+    :focus-visible { outline:3px solid #7ee9ff; outline-offset:3px; }
+    .grid { grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr)); }
+    .grid > div { min-width:0; }
+    input, select { min-height:46px; font-size:16px; }
+    .btn { min-height:44px; }
+    .btn:disabled { opacity:.65; cursor:wait; }
+    .table-wrap { overflow-x:auto; }
+    .destaque { overflow-wrap:anywhere; }
+    #erro-calculo { color:#ffd166; }
+    #resultado, input, select { scroll-margin-top:100px; }
+    h1 { font-size:clamp(1.8rem,5vw,2.4rem); }
+    @media(max-width:520px){.wrap{padding:18px 13px}.card{padding:16px}.btn{width:100%;text-align:center}th,td{padding:8px}}
     .destaque { color:#7ee787; font-size:26px; font-weight:700; }
     table { width:100%; border-collapse:collapse; margin-top:12px; }
     th, td { border:1px solid #334; padding:8px 10px; text-align:left; font-size:14px; }
@@ -37,38 +49,39 @@
     <meta name="pd-shared-nav">
     <main id="main">
       <h1>Calculadora de Diária Ideal — Airbnb 2026</h1>
-      <p class="lead">Informe seus custos e a ocupação esperada para descobrir a diária mínima e a ideal, comparadas com o mercado da sua cidade.</p>
-      <div class="card"><div class="grid">
+      <p class="lead">Informe seus custos e a ocupação esperada para descobrir a diária mínima e a ideal, em uma simulação simplificada. As referências por cidade são exemplos, não medições do mercado.</p>
+      <form class="card" id="form-calculo" novalidate><div class="grid">
         <div><label for="cidade">Cidade</label><select id="cidade">
 <option>Santos</option><option>Guarujá</option><option>Praia Grande</option>
 <option>São Vicente</option><option>Mongaguá</option><option>Itanhaém</option>
 <option>Ubatuba</option><option>Caraguatatuba</option><option>São Sebastião</option>
 <option>Ilhabela</option><option>Bertioga</option><option>Outra</option></select></div>
- <div><label for="custos">Custos fixos mensais (R$)</label><input id="custos" type="number" min="0" step="0.01" value="1500"></div>
- <div><label for="limpeza">Taxa de limpeza por reserva (R$)</label><input id="limpeza" type="number" value="150"></div>
- <div><label for="ocupacao">Ocupação esperada (%)</label><input id="ocupacao" type="number" value="45"></div>
- <div><label for="lucro">Lucro mensal desejado (R$)</label><input id="lucro" type="number" min="0" step="0.01" value="3000"></div>
- <div><label for="estadia">Média de noites por reserva</label><input id="estadia" type="number" min="1" max="365" step="1" value="3"></div>
-      </div><button class="btn" id="calcular" type="button">Calcular</button></div>
+ <div><label for="custos">Custos fixos mensais (R$)</label><input id="custos" type="number" min="0" max="100000000" step="0.01" value="1500" required inputmode="decimal"></div>
+ <div><label for="limpeza">Custo de limpeza por reserva (R$)</label><input id="limpeza" type="number" min="0" max="100000000" step="0.01" value="150" required inputmode="decimal"></div>
+ <div><label for="ocupacao">Ocupação esperada (%)</label><input id="ocupacao" type="number" min="0.01" max="100" step="0.01" value="45" required inputmode="decimal"></div>
+ <div><label for="lucro">Lucro mensal desejado (R$)</label><input id="lucro" type="number" min="0" max="100000000" step="0.01" value="3000" required inputmode="decimal"></div>
+ <div><label for="estadia">Média de noites por reserva</label><input id="estadia" type="number" min="1" max="365" step="0.01" value="3" required inputmode="decimal"></div>
+      </div><button class="btn" id="calcular" type="submit">Calcular diária</button><p id="erro-calculo" role="alert" hidden></p>
+        <p class="lead">Considera 365 noites disponíveis por ano e médias constantes. A limpeza é um custo absorvido pela diária, sem cobrança separada. Inclua nos custos as despesas que deseja cobrir; taxas de plataforma, impostos e outros gastos não são adicionados automaticamente.</p></form>
       <p class="lead">Referências de cidade são parâmetros ilustrativos e não representam dados oficiais ou atualizados em tempo real. Use dados próprios para decisões financeiras.</p>
-      <div class="card resultado" id="resultado">
-        <h2>Resultado</h2>
+      <div class="card resultado" id="resultado" hidden aria-labelledby="titulo-resultado" tabindex="-1">
+        <h2 id="titulo-resultado">Resultado da simulação</h2>
         <p><span class="destaque" id="principal"></span></p>
-        <div id="detalhes"></div>
+        <div id="detalhes" class="table-wrap"></div>
         <p id="dica" style="margin-top:14px; opacity:.85;"></p>
+        <p><a class="btn" id="baixar-relatorio" download="resumo-diaria-praia-digital.html" hidden>Baixar resumo da simulação</a></p>
+        <p class="lead">Download gratuito, sem cadastro. O resumo contém somente as premissas e os resultados desta simulação, não pesquisa de mercado.</p>
       </div>
-      <div class="card resultado" id="captura">
-        <h2>Receba a análise completa por e-mail</h2>
-        <p class="lead">Você pode baixar um resumo da simulação neste dispositivo. As referências por cidade abaixo são ilustrativas, não dados oficiais em tempo real. Se optar por enviar seus dados, o formulário tentará encaminhá-los por e-mail; a confirmação só será exibida se o serviço responder com sucesso.</p>
+      <div class="card resultado" id="captura" hidden>
+        <h2>Solicite os resultados por e-mail</h2>
+        <p class="lead">Opcional: seu pedido, com nome, e-mail e dados da simulação, será encaminhado pelo FormSubmit a comercial@praia.digital para atendimento e eventual envio dos resultados. Não há entrega automática garantida. A aceitação pelo serviço não garante resposta nem entrega na sua caixa de entrada. Você pode baixar o resumo sem enviar dados. Consulte a <a href="/politica-de-privacidade.html">Política de Privacidade</a>.</p>
         <div class="grid">
-          <div><label for="lead-nome">Seu nome</label><input id="lead-nome" type="text"></div>
-          <div><label for="lead-email">Seu e-mail</label><input id="lead-email" type="email"></div>
+          <div><label for="lead-nome">Seu nome (opcional)</label><input id="lead-nome" type="text" autocomplete="name" maxlength="120"></div>
+          <div><label for="lead-email">Seu e-mail</label><input id="lead-email" type="email" autocomplete="email" maxlength="254" required></div>
         </div>
-        <button class="btn" id="enviar-simulacao" type="button">Enviar análise completa para meu e-mail</button>
+        <button class="btn" id="enviar-simulacao" type="button">Solicitar envio por e-mail</button>
         <div id="pos-envio" style="display:none; margin-top:18px;">
           <p id="status-envio" role="status" aria-live="polite" style="font-weight:600;"></p>
-          <p><a class="btn" id="baixar-relatorio" href="#" download="analise-praia-digital.html">⬇️ Baixar resumo da simulação</a></p>
-          <p class="lead" style="margin-top:14px;">O arquivo baixado contém os resultados calculados nesta página; não inclui pesquisa de mercado ou análise enviada automaticamente. <a href="/ferramentas/" style="color:#7ee9ff;">Explore outras ferramentas gratuitas</a>.</p>
         </div>
       </div>
     </main>
@@ -77,7 +90,7 @@
 <script>
 function brl(v){ return v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'}); }
 function pct(v){ return v.toLocaleString('pt-BR',{minimumFractionDigits:1,maximumFractionDigits:1})+'%'; }
-function num(id){ return parseFloat(document.getElementById(id).value)||0; }
+function num(id){ return Number(document.getElementById(id).value); }
 function txt(id){ return document.getElementById(id).value.trim(); }
 var BENCHMARKS = {
   'Santos':{diaria:480,ocup:52,m2:9200},'Guarujá':{diaria:520,ocup:48,m2:8900},
@@ -88,63 +101,116 @@ var BENCHMARKS = {
   'Bertioga':{diaria:390,ocup:42,m2:6000},'Outra':{diaria:450,ocup:45,m2:7000}
 };
 
-document.getElementById('calcular').addEventListener('click', function(){
-  var cidade = txt('cidade'), bm = BENCHMARKS[cidade] || BENCHMARKS['Outra'];
-  var custos = num('custos'), limpeza = num('limpeza'), ocup = num('ocupacao'), lucro = num('lucro'), estadia = num('estadia');
-  if (custos < 0 || limpeza < 0 || lucro < 0 || ocup <= 0 || ocup > 100 || estadia < 1 || estadia > 365) { alert('Revise os valores: custos, limpeza e lucro não podem ser negativos; ocupação deve ser de 1% a 100% e a estadia média de 1 a 365 noites.'); return; }
-  var diasOcup = 365 * ocup / 100;
-  var reservasMes = diasOcup / 12 / estadia;
-  var diariaMinima = (custos * 12 + limpeza * reservasMes * 12) / diasOcup;
-  var diariaIdeal = (custos * 12 + lucro * 12 + limpeza * reservasMes * 12) / diasOcup;
-  document.getElementById('principal').textContent = 'Diária ideal: ' + brl(diariaIdeal);
-  document.getElementById('detalhes').innerHTML = '<table><tr><th>Indicador</th><th>Valor</th></tr>'
-    + '<tr><td>Diária mínima (empate)</td><td>' + brl(diariaMinima) + '</td></tr>'
-    + '<tr><td>Referência ilustrativa de diária em ' + cidade + '</td><td>' + brl(bm.diaria) + '</td></tr>'
-    + '<tr><td>Referência ilustrativa de ocupação</td><td>' + pct(bm.ocup) + '</td></tr></table>';
-  document.getElementById('dica').textContent = diariaIdeal > bm.diaria
-    ? 'Sua diária ideal está acima da referência ilustrativa de ' + cidade + ' — considere elevar a ocupação ou reduzir custos.'
-    : 'Sua diária ideal está abaixo da referência ilustrativa de ' + cidade + ' — há margem para subir o preço.';
-  window.__sim = { cidade: cidade, diaria_ideal: brl(diariaIdeal), diaria_minima: brl(diariaMinima),
-    diaria_mercado: brl(bm.diaria), ocupacao_pct: ocup, noites_media_reserva: estadia, custos_mensais: brl(custos), lucro_mensal: brl(lucro) };
-  document.getElementById('resultado').classList.add('ativo');
-  document.getElementById('captura').classList.add('ativo');
-  document.getElementById('resultado').scrollIntoView({behavior:'smooth'});
+var reportUrl = null;
+var pendingSend = false;
+var $ = function(id){ return document.getElementById(id); };
+function escapeHtml(value){ return String(value).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];}); }
+function invalidate(){
+  window.__sim = null;
+  $('resultado').hidden = true;
+  $('captura').hidden = true;
+  $('baixar-relatorio').hidden = true;
+  $('baixar-relatorio').removeAttribute('href');
+  $('pos-envio').style.display = 'none';
+  $('status-envio').textContent = '';
+  $('erro-calculo').hidden = true;
+  ['custos','limpeza','ocupacao','lucro','estadia'].forEach(function(id){$(id).removeAttribute('aria-invalid');$(id).removeAttribute('aria-describedby');});
+  if(reportUrl){ URL.revokeObjectURL(reportUrl); reportUrl = null; }
+}
+function showError(message,id){
+  $('erro-calculo').textContent = message;
+  $('erro-calculo').hidden = false;
+  if(id){$(id).setAttribute('aria-invalid','true');$(id).setAttribute('aria-describedby','erro-calculo');$(id).focus();}
+}
+function createReport(s){
+  var rows = [['Cidade',s.cidade],['Diária ideal',s.diaria_ideal],['Diária mínima (empate)',s.diaria_minima],
+    ['Custos fixos mensais',s.custos_mensais],['Limpeza por reserva',s.limpeza_por_reserva],['Lucro mensal desejado',s.lucro_mensal],
+    ['Ocupação esperada',pct(s.ocupacao_pct)],['Média de noites por reserva',s.noites_media_reserva],
+    ['Referência ilustrativa de diária (não é mercado observado)',s.diaria_referencia_ilustrativa],['Referência ilustrativa de ocupação',s.ocupacao_referencia_ilustrativa]];
+  var html = '<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Resumo de diária — Praia Digital</title><style>body{font-family:Arial,sans-serif;max-width:800px;margin:30px auto;padding:0 16px;line-height:1.6}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ccc;padding:8px;text-align:left;overflow-wrap:anywhere}</style></head><body><h1>Resumo da simulação de diária</h1><table><tr><th scope="col">Indicador</th><th scope="col">Valor</th></tr>';
+  rows.forEach(function(row){html += '<tr><th scope="row">'+escapeHtml(row[0])+'</th><td>'+escapeHtml(row[1])+'</td></tr>';});
+  return html+'</table><h2>Premissas e limites</h2><p>Diária mínima = custos fixos mensais × 12 ÷ (365 × ocupação / 100) + limpeza por reserva ÷ média de noites por reserva. A diária ideal acrescenta o lucro mensal desejado × 12 ÷ (365 × ocupação / 100).</p><p>Considera 365 noites disponíveis e médias constantes. A limpeza é absorvida pela diária, sem cobrança separada. Taxas de plataforma, impostos e outros gastos não são adicionados automaticamente. O resultado não garante lucro ou reservas.</p><p>As referências por cidade são apenas ilustrativas, não representam mercado observado, não comprovam demanda e não recomendam subir ou baixar preços. Este resumo não inclui pesquisa por bairro, sazonalidade ou plano de precificação.</p><p><a href="https://praia.digital/ferramentas/">Ferramentas Praia Digital</a></p></body></html>';
+}
+['cidade','custos','limpeza','ocupacao','lucro','estadia'].forEach(function(id){
+  $(id).addEventListener('input',invalidate);
+  $(id).addEventListener('change',invalidate);
 });
-
-document.getElementById('enviar-simulacao').addEventListener('click', async function(){
-  if (!window.__sim) { alert('Calcule primeiro.'); return; }
-  var nome = txt('lead-nome'), email = txt('lead-email');
-  if (!email || email.indexOf('@') < 0) { alert('Informe um e-mail válido.'); return; }
-  var s = window.__sim;
-  var dados = { _subject: 'Novo lead — Calculadora de Diária Ideal — Airbnb 2026 — ' + nome };
-  for (var k in s) dados[k] = s[k];
-  dados.nome = nome; dados.email = email;
-  var envioOk = false;
-  try {
-    var resposta = await fetch('https://formsubmit.co/ajax/comercial@praia.digital', {
-      method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'},
-      body: JSON.stringify(dados)
+$('form-calculo').addEventListener('submit', function(event){
+  event.preventDefault();
+  invalidate();
+  var fields = [
+    ['custos','custos fixos mensais',0,100000000],['limpeza','custo de limpeza',0,100000000],
+    ['ocupacao','ocupação esperada',0.01,100],['lucro','lucro mensal desejado',0,100000000],['estadia','média de noites por reserva',1,365]
+  ];
+  for(var i=0;i<fields.length;i++){
+    var f=fields[i], n=num(f[0]);
+    if(txt(f[0])==='' || !Number.isFinite(n) || n<f[2] || n>f[3] || !$(f[0]).checkValidity()){
+      showError('Informe '+f[1]+' entre '+f[2].toLocaleString('pt-BR')+' e '+f[3].toLocaleString('pt-BR')+', com até duas casas decimais.',f[0]);return;
+    }
+  }
+  var cidade=txt('cidade'), bm=BENCHMARKS[cidade] || BENCHMARKS['Outra'];
+  var custos=num('custos'), limpeza=num('limpeza'), ocup=num('ocupacao'), lucro=num('lucro'), estadia=num('estadia');
+  var diasOcup=365*ocup/100;
+  var diariaMinima=custos*12/diasOcup+limpeza/estadia;
+  var diariaIdeal=(custos+lucro)*12/diasOcup+limpeza/estadia;
+  if(!Number.isFinite(diariaMinima)||!Number.isFinite(diariaIdeal)){showError('Os valores excedem a capacidade do cálculo. Revise as entradas.');return;}
+  $('principal').textContent='Diária ideal: '+brl(diariaIdeal);
+  $('detalhes').innerHTML='<table><tr><th scope="col">Indicador</th><th scope="col">Valor</th></tr>'
+    +'<tr><th scope="row">Diária mínima (empate)</th><td>'+brl(diariaMinima)+'</td></tr>'
+    +'<tr><th scope="row">Referência ilustrativa de diária em '+escapeHtml(cidade)+'</th><td>'+brl(bm.diaria)+'</td></tr>'
+    +'<tr><th scope="row">Referência ilustrativa de ocupação</th><td>'+pct(bm.ocup)+'</td></tr></table>';
+  $('dica').textContent='A diária calculada depende apenas dos custos, do lucro desejado e da ocupação informados. As referências são exemplos, não mercado observado: não comprovam demanda nem indicam se você deve subir ou baixar o preço.';
+  window.__sim={cidade:cidade,diaria_ideal:brl(diariaIdeal),diaria_minima:brl(diariaMinima),diaria_referencia_ilustrativa:brl(bm.diaria),ocupacao_referencia_ilustrativa:pct(bm.ocup),ocupacao_pct:ocup,noites_media_reserva:estadia,custos_mensais:brl(custos),limpeza_por_reserva:brl(limpeza),lucro_mensal:brl(lucro)};
+  reportUrl=URL.createObjectURL(new Blob([createReport(window.__sim)],{type:'text/html;charset=utf-8'}));
+  $('baixar-relatorio').href=reportUrl;
+  $('baixar-relatorio').hidden=false;
+  $('resultado').hidden=false;
+  $('captura').hidden=false;
+  $('resultado').focus({preventScroll:true});
+  $('resultado').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+});
+$('enviar-simulacao').addEventListener('click', async function(){
+  if(!window.__sim || pendingSend) return;
+  var nome=txt('lead-nome'),email=txt('lead-email');
+  var status=$('status-envio');
+  $('pos-envio').style.display='block';
+  if(!email || !$('lead-email').checkValidity()){
+    status.textContent='Informe um endereço de e-mail válido.';$('lead-email').focus();return;
+  }
+  var s=window.__sim;
+  var dados={_subject:'Resultados — Calculadora de Diária Ideal — Praia Digital',nome:nome,email:email};
+  for(var k in s) dados[k]=s[k];
+  pendingSend=true;
+  $('enviar-simulacao').disabled=true;
+  status.textContent='Enviando solicitação…';
+  var envioOk=false, expirou=false, timer;
+  var controller=new AbortController();
+  try{
+    var prazo=new Promise(function(resolve,reject){
+      timer=setTimeout(function(){
+        expirou=true;
+        controller.abort();
+        reject(new Error('Tempo limite do envio'));
+      },15000);
     });
-    envioOk = resposta.ok;
-  } catch(e) { envioOk = false; }
-  var rel = '<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><title>Calculadora de Diária Ideal — Airbnb 2026 — Praia Digital</title>'
-    + '<style>body{font-family:Arial;max-width:800px;margin:30px auto;padding:0 20px;color:#222}'
-    + 'h1{color:#003366}h2{color:#0066cc}table{width:100%;border-collapse:collapse;margin:10px 0}'
-    + 'th,td{border:1px solid #ccc;padding:8px;text-align:left}th{background:#003366;color:#fff}</style></head><body>'
-    + '<h1>Calculadora de Diária Ideal — Airbnb 2026</h1><p>Preparado para <strong>'+(nome||'você')+'</strong> em '+new Date().toLocaleDateString('pt-BR')+'</p>'
-    + '<table><tr><th>Item</th><th>Valor</th></tr>' + '<tr><td>Cidade</td><td>'+s.cidade+'</td></tr><tr><td>Diária ideal</td><td>'+s.diaria_ideal+'</td></tr><tr><td>Diária mínima</td><td>'+s.diaria_minima+'</td></tr><tr><td>Mercado</td><td>'+s.diaria_mercado+'</td></tr>' + '</table>'
-    + '<h2>O que este resumo contém</h2><ul>'
-    + '<li>Comparativo detalhado por bairro</li><li>Sazonalidade mês a mês 2026/2027</li>'
-    + '<li>Plano de precificação dinâmica por IA</li></ul>'
-    + '<p>Continue em <a href="https://praia.digital/ferramentas/">praia.digital/ferramentas</a> — novas ferramentas toda semana.</p>'
-    + '<p><small>Praia Digital — tecnologia para o mercado imobiliário do litoral</small></p></body></html>';
-  var blob = new Blob([rel], {type:'text/html'});
-  document.getElementById('baixar-relatorio').href = URL.createObjectURL(blob);
-  var status = document.getElementById('status-envio');
-  status.textContent = envioOk ? 'Solicitação enviada ao serviço de e-mail.' : 'Não foi possível confirmar o envio por e-mail. Você ainda pode baixar o resumo abaixo.';
-  status.style.color = envioOk ? '#7ee787' : '#ffd166';
-  document.getElementById('pos-envio').style.display = 'block';
-  document.getElementById('pos-envio').scrollIntoView({behavior:'smooth'});
+    envioOk=await Promise.race([ (async function(){
+      var resposta=await fetch('https://formsubmit.co/ajax/comercial@praia.digital',{
+        method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+        body:JSON.stringify(dados),signal:controller.signal
+      });
+      var body=await resposta.json();
+      return resposta.ok && (body.success===true || body.success==='true');
+    })(), prazo ]);
+  }catch(e){envioOk=false;}
+  finally{
+    clearTimeout(timer);
+    pendingSend=false;
+    $('enviar-simulacao').disabled=false;
+  }
+  // A response for an old simulation must not reappear after editing or recalculating.
+  if(window.__sim!==s) return;
+  status.textContent=expirou?'O tempo de espera terminou e o resultado do envio é incerto: o serviço pode ter recebido o pedido. Não reenviamos automaticamente. Verifique antes de tentar novamente para evitar duplicidade. Você ainda pode baixar o resumo.':envioOk?'O serviço confirmou a aceitação da solicitação. Isso não garante entrega na caixa de entrada.':'Não foi possível confirmar a aceitação pelo serviço de e-mail. Você ainda pode baixar o resumo da simulação.';
+  status.style.color=envioOk?'#7ee787':'#ffd166';
 });
 </script>
 <script src="https://praia.digital/js/shared.js?v=2.0"></script>

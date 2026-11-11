@@ -1,0 +1,70 @@
+name: Ferramentas de temporada checks
+on:
+  pull_request:
+    paths:
+      - 'planos.html'
+      - 'ferramentas/index.html'
+      - 'ferramentas/calculadora-diaria-ideal-airbnb-2026.html'
+      - 'apps/simulador-roi-temporada/**'
+      - 'css/ferramentas-hub.css'
+      - 'assets/css/roi-temporada.css'
+      - 'js/roi-temporada-*.js'
+      - 'tests/*roi_temporada*'
+      - 'tests/roi-temporada-*'
+      - 'tests/diaria-*'
+      - 'tests/ferramentas-*'
+      - '.github/workflows/ferramentas-checks.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'planos.html'
+      - 'ferramentas/index.html'
+      - 'ferramentas/calculadora-diaria-ideal-airbnb-2026.html'
+      - 'apps/simulador-roi-temporada/**'
+      - 'css/ferramentas-hub.css'
+      - 'assets/css/roi-temporada.css'
+      - 'js/roi-temporada-*.js'
+      - 'tests/*roi_temporada*'
+      - 'tests/roi-temporada-*'
+      - 'tests/diaria-*'
+      - 'tests/ferramentas-*'
+      - '.github/workflows/ferramentas-checks.yml'
+permissions:
+  contents: read
+jobs:
+  calculator:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax and independent calculations
+        run: |
+          node --check js/roi-temporada-core.js
+          node --check js/roi-temporada-ui.js
+          node --test tests/test_roi_temporada.cjs
+      - name: Install test dependencies
+        run: |
+          npm install --prefix "$RUNNER_TEMP/pd-ferramentas" jsdom@26.1.0 playwright@1.63.0 @axe-core/playwright@4.10.2 --no-audit --no-fund
+          "$RUNNER_TEMP/pd-ferramentas/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+      - name: DOM regression tests
+        run: |
+          NODE_PATH="$RUNNER_TEMP/pd-ferramentas/node_modules" node tests/roi-temporada-dom.cjs
+          NODE_PATH="$RUNNER_TEMP/pd-ferramentas/node_modules" node tests/diaria-dom.cjs
+      - name: Prepare published navigation
+        run: |
+          python3 -m unittest discover -s tests -p 'test_navigation.py'
+          python3 scripts/build-navigation.py
+      - name: Mobile, keyboard, accessibility and mocked email tests
+        run: |
+          NODE_PATH="$RUNNER_TEMP/pd-ferramentas/node_modules" node tests/ferramentas-browser.cjs
+          NODE_PATH="$RUNNER_TEMP/pd-ferramentas/node_modules" node tests/diaria-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ferramentas-previews
+          path: |
+            /tmp/ferramentas-previews
+            /tmp/diaria-previews
+          retention-days: 7
