@@ -85,85 +85,85 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://praia.digital/apps/alugar-ou-comprar/index.html</loc>
+    <loc>https://praia.digital/apps/alugar-ou-comprar/</loc>
     <lastmod>2026-10-25T12:08:08Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://praia.digital/apps/calculadora-consorcio/index.html</loc>
+    <loc>https://praia.digital/apps/calculadora-consorcio/</loc>
     <lastmod>2026-10-25T12:08:08Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://praia.digital/apps/calculadora-financiamento/index.html</loc>
+    <loc>https://praia.digital/apps/calculadora-financiamento/</loc>
     <lastmod>2026-10-25T12:08:08Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://praia.digital/apps/calculadora-precificacao-shopee/index.html</loc>
+    <loc>https://praia.digital/apps/calculadora-precificacao-shopee/</loc>
     <lastmod>2026-10-25T12:08:08Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://praia.digital/apps/calculadora-valorizacao/index.html</loc>
+    <loc>https://praia.digital/apps/calculadora-valorizacao/</loc>
     <lastmod>2026-10-25T12:08:08Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://praia.digital/apps/checklist-vistoria/index.html</loc>
+    <loc>https://praia.digital/apps/checklist-vistoria/</loc>
     <lastmod>2026-10-25T12:08:08Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://praia.digital/apps/comparador-cidades/index.html</loc>
+    <loc>https://praia.digital/apps/comparador-cidades/</loc>
     <lastmod>2026-10-25T12:08:08Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://praia.digital/apps/custo-de-compra/index.html</loc>
+    <loc>https://praia.digital/apps/custo-de-compra/</loc>
     <lastmod>2026-10-25T12:08:08Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://praia.digital/apps/index.html</loc>
+    <loc>https://praia.digital/apps/</loc>
     <lastmod>2026-10-25T12:08:08Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://praia.digital/apps/planejador-entrada/index.html</loc>
+    <loc>https://praia.digital/apps/planejador-entrada/</loc>
     <lastmod>2026-10-25T12:08:08Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://praia.digital/apps/renda-para-financiar/index.html</loc>
+    <loc>https://praia.digital/apps/renda-para-financiar/</loc>
     <lastmod>2026-10-25T12:08:08Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://praia.digital/apps/simulador-roi-temporada/index.html</loc>
+    <loc>https://praia.digital/apps/simulador-roi-temporada/</loc>
     <lastmod>2026-10-25T12:08:08Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://praia.digital/apps/temporada-ou-anual/index.html</loc>
+    <loc>https://praia.digital/apps/temporada-ou-anual/</loc>
     <lastmod>2026-10-25T12:08:08Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://praia.digital/apps/valor-imovel/index.html</loc>
+    <loc>https://praia.digital/apps/valor-imovel/</loc>
     <lastmod>2026-10-25T12:08:08Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -41157,4 +41157,8 @@
 <url><loc>https://praia.digital/imoveis/apartamento-indaia-88m2.html</loc><lastmod>2026-11-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://praia.digital/imoveis/apartamento-indaia-bertioga-84m2.html</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://praia.digital/imoveis/casa-jardim-indaia-180m2.html</loc><lastmod>2026-11-06</lastmod></url>
+  <url>
+    <loc>https://praia.digital/imoveis/casas-lancamento-sao-lourenco.html</loc>
+    <lastmod>2026-11-03</lastmod>
+  </url>
 </urlset>
