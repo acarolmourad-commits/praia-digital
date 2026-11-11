@@ -1,0 +1,47 @@
+name: Purchase feasibility checks
+on:
+  pull_request:
+    paths:
+      - 'ferramentas/vale-a-pena-comprar-2026.html'
+      - 'js/compra-viabilidade-*.js'
+      - 'assets/css/compra-viabilidade.css'
+      - 'tests/*compra*'
+      - '.github/workflows/compra-viabilidade-checks.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'ferramentas/vale-a-pena-comprar-2026.html'
+      - 'js/compra-viabilidade-*.js'
+      - 'assets/css/compra-viabilidade.css'
+      - 'tests/*compra*'
+      - '.github/workflows/compra-viabilidade-checks.yml'
+permissions:
+  contents: read
+jobs:
+  calculator:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax and independent financial regression tests
+        run: |
+          node --check js/compra-viabilidade-core.js
+          node --check js/compra-viabilidade-ui.js
+          node --test tests/test_compra_viabilidade.cjs
+      - name: DOM integration tests
+        run: |
+          npm install --prefix "$RUNNER_TEMP/pd-compra" jsdom@26.1.0 --no-audit --no-fund
+          NODE_PATH="$RUNNER_TEMP/pd-compra/node_modules" node tests/compra-viabilidade-dom.cjs
+      - name: Responsive browser regression tests
+        run: |
+          npm install --prefix "$RUNNER_TEMP/pd-compra" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/pd-compra/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          NODE_PATH="$RUNNER_TEMP/pd-compra/node_modules" node tests/compra-viabilidade-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: purchase-feasibility-previews
+          path: /tmp/pd-compra-previews
+          retention-days: 7

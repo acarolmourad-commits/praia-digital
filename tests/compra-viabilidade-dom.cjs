@@ -1,0 +1,49 @@
+// DOM integration checks; no browser, network requests, or submitted user data.
+const { JSDOM } = require('jsdom');
+const fs = require('node:fs');
+const path = require('node:path');
+const assert = require('node:assert/strict');
+const root = path.resolve(__dirname, '..');
+const html = fs.readFileSync(path.join(root, 'ferramentas/vale-a-pena-comprar-2026.html'), 'utf8');
+const dom = new JSDOM(html, { runScripts: 'outside-only', url: 'https://praia.digital/ferramentas/vale-a-pena-comprar-2026.html' });
+const { window } = dom;
+const d = window.document;
+window.HTMLElement.prototype.scrollIntoView = function () {};
+window.eval(fs.readFileSync(path.join(root, 'js/compra-viabilidade-core.js'), 'utf8'));
+window.eval(fs.readFileSync(path.join(root, 'js/compra-viabilidade-ui.js'), 'utf8'));
+function set(id, value) { d.getElementById(id).value = value; d.getElementById(id).dispatchEvent(new window.Event('input', { bubbles: true })); }
+const result = () => d.getElementById('result').textContent;
+const check = (name, fn) => { fn(); console.log('PASS ' + name); };
+(async () => {
+  check('No-JavaScript source cannot submit financial fields', () => { const raw = new JSDOM(html).window.document; assert.equal(raw.querySelector('#compra-form [name]'), null); assert.equal(raw.querySelector('#compra-form [type=submit]').disabled, true); });
+  check('Responsive headings preserve word spacing', () => { assert.match(d.getElementById('page-title').textContent, /comprar este imóvel/); assert.match(d.querySelector('.v-hero-note h2').textContent, /compra cabe/); });
+  check('Initial example computes without errors', () => { assert.match(result(), /4\.689,65/); assert.equal(d.getElementById('form-errors').hidden, true); });
+  check('Inputs have unique IDs and programmatic labels', () => {
+    const ids = [...d.querySelectorAll('[id]')].map(e => e.id); assert.equal(new Set(ids).size, ids.length);
+    for (const e of d.querySelectorAll('#compra-form input, #compra-form select')) assert.ok(d.querySelector(`label[for="${e.id}"]`));
+  });
+  check('Blank price clears prior results immediately', () => { set('price', ''); assert.match(result(), /Corrija/); assert.doesNotMatch(result(), /4\.689/); assert.equal(d.getElementById('price').getAttribute('aria-invalid'), 'true'); });
+  check('Negative price rejected', () => { set('price', '-1'); assert.match(result(), /Corrija/); });
+  set('price', '500000');
+  check('Entry above property price rejected', () => { set('entry', '600000'); assert.match(result(), /Corrija/); assert.match(d.getElementById('entry-error').textContent, /não pode superar/); });
+  check('Cash purchase disables irrelevant invalid financing inputs', () => { set('purchase', 'avista'); assert.equal(d.getElementById('entry').disabled, true); assert.equal(d.getElementById('financing-fields').hidden, true); assert.doesNotMatch(result(), /Corrija/); assert.match(result(), /sem saldo financiado/); });
+  check('Switching back keeps validation, not a stale valid result', () => { set('purchase', 'financiado'); assert.match(result(), /Corrija/); });
+  set('entry', '100000');
+  check('Seasonal mode shows true uncapped yield', () => { set('goal', 'temporada'); assert.equal(d.getElementById('housing-fields').hidden, true); assert.equal(d.getElementById('annualRent').disabled, true); assert.match(result(), /16,5%/); });
+  check('Occupied nights outside calendar rejected', () => { set('nights', '366'); assert.match(result(), /Corrija/); });
+  set('nights', '150');
+  check('Uncapped low yield retained', () => { set('price', '10000000'); assert.match(result(), /0,83%/); });
+  set('price', '500000');
+  check('Zero income remains zero, not an artificial floor', () => { set('nights', '0'); assert.match(result(), /0% a.a./); assert.match(result(), /exige aportes/); });
+  check('Annual mode ignores hidden invalid season fields', () => { set('nights', '-1'); set('goal', 'anual'); assert.equal(d.getElementById('nights').disabled, true); assert.doesNotMatch(result(), /Corrija/); assert.match(result(), /após vacância/); });
+  check('Unsupported city has no invented benchmark', () => { set('city', 'Bertioga'); assert.match(result(), /Sem benchmark verificado/); });
+  check('Consortium is a separate link, not a Price option', () => { assert.ok(d.querySelector('a[href="/apps/calculadora-consorcio/"]')); assert.doesNotMatch(d.getElementById('goal').innerHTML, /Consórcio/); });
+  check('Submission moves focus to result title', () => { d.getElementById('compra-form').dispatchEvent(new window.Event('submit', { bubbles: true, cancelable: true })); assert.equal(d.activeElement.id, 'result-title'); });
+  check('Invalid submission opens details and focuses error', () => { set('goal', 'moradia'); set('appreciation', '99'); d.getElementById('compra-form').dispatchEvent(new window.Event('submit', { cancelable: true })); assert.equal(d.activeElement.id, 'appreciation'); assert.equal(d.activeElement.closest('details').open, true); });
+  d.getElementById('compra-form').reset();
+  await new Promise(resolve => setTimeout(resolve, 20));
+  check('Reset restores a valid example and all relevant sections', () => { assert.equal(d.getElementById('goal').value, 'moradia'); assert.equal(d.getElementById('rental-fields').hidden, true); assert.equal(d.getElementById('entry').value, '100000'); assert.match(result(), /4\.689,65/); assert.equal(d.getElementById('result-label').textContent, 'Exemplo ilustrativo'); });
+  check('Live region and skip link are present', () => { assert.equal(d.getElementById('result-live').getAttribute('role'), 'status'); assert.ok(d.querySelector('.v-skip[href="#main"]')); });
+  check('Metadata is current and no broken analytics placeholder remains', () => { assert.ok(d.querySelector('link[rel="canonical"]').href.endsWith('/vale-a-pena-comprar-2026.html')); assert.equal(d.querySelectorAll('h1').length, 1); assert.doesNotMatch(html, /GA4_MEASUREMENT_ID|Selic 15%|Nota de investimento/); for (const e of d.querySelectorAll('script[type="application/ld+json"]')) JSON.parse(e.textContent); });
+  window.close();
+})().catch(err => { window.close(); console.error(err); process.exit(1); });

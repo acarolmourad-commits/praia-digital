@@ -1,280 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "Vale a pena comprar imóvel no litoral em 2026?", "acceptedAnswer": {"@type": "Answer", "text": "Com a Selic em 15% a.a., financiar ficou caro, mas o litoral paulista valorizou acima da inflação em 2024-2025 e o yield de aluguel de temporada chega a 8-12% a.a. brutos. A resposta depende do objetivo: moradia, temporada ou renda anual."}},
-    {"@type": "Question", "name": "Qual o preço médio do m² no litoral de SP?", "acceptedAnswer": {"@type": "Answer", "text": "Em 2025-2026: Santos R$ 9-11 mil/m², Guarujá R$ 6-8 mil/m², Praia Grande R$ 4,5-6 mil/m², São Vicente R$ 4-5 mil/m², Bertioga R$ 5-7 mil/m², Itanhaém e Mongaguá R$ 3-4 mil/m², Peruíbe R$ 2,5-3,5 mil/m²."}},
-    {"@type": "Question", "name": "Comprar ou alugar: como decidir?", "acceptedAnswer": {"@type": "Answer", "text": "Compare a parcela do financiamento com o aluguel equivalente (cerca de 0,4% a 0,5% do valor do imóvel ao mês). Se a parcela for até ~30% maior que o aluguel, comprar tende a valer a pena no médio prazo."}},
-    {"@type": "Question", "name": "Quanto rende um imóvel de temporada no litoral?", "acceptedAnswer": {"@type": "Answer", "text": "Diárias de referência variam de R$ 250 a R$ 1.200 conforme cidade e padrão; com ocupação média de 40-50% ao ano, o yield bruto fica entre 8% e 12% a.a."}}
-  ]
-}
-</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vale a pena comprar? | Praia Digital</title>
-<meta name="keywords" content="Vale a pena comprar, simulador imobiliário litoral paulista, comprar ou alugar, preço m2 Santos Guarujá Praia Grande, investimento temporada, yield aluguel, financiamento 2026">
-<meta name="description" content="Simulador de viabilidade imobiliária 2025-2026: compare comprar vs alugar, veja preço por m² por cidade, yield de temporada e nota de investimento ao vivo.">
+<title>Vale a pena comprar imóvel no litoral? Simulador | Praia Digital</title>
+<meta name="description" content="Compare comprar ou alugar, financiamento e renda de temporada no litoral. Simule custos, fluxo de caixa e patrimônio com premissas editáveis e fontes claras.">
 <link rel="canonical" href="https://praia.digital/ferramentas/vale-a-pena-comprar-2026.html">
-<style>
-body{font-family:Segoe UI,Arial,sans-serif;background:#fff;color:#1f2937;margin:0;padding:0}
-.container{max-width:960px;margin:0 auto;padding:2rem}
-.card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:1.4rem;margin-bottom:1rem;box-shadow:0 4px 14px rgba(0,0,0,.06)}
-h1{font-size:1.6rem;margin-bottom:.4rem}
-h2{font-size:1.15rem;color:#0e7c7b;margin-top:0}
-label{display:block;color:#334155;font-weight:600;margin:.6rem 0 .2rem}
-input,select{width:100%;padding:12px;border-radius:10px;border:1px solid #cbd5e1;background:#f8fafc;color:#1f2937;box-sizing:border-box}
-.btn{display:inline-block;margin-top:1rem;background:#0e7c7b;color:#fff;padding:12px 18px;border-radius:10px;border:0;cursor:pointer;font-weight:700;font-size:1rem}
-.btn:hover{background:#0b6867}
-.result{background:#f0fdfa;border:1px solid #99d9d8;border-radius:12px;padding:1rem;margin-top:1rem;color:#1f2937}
-a{color:#0e7c7b;text-decoration:none}
-a:hover{text-decoration:underline}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-.pill{display:inline-block;background:#e0f5f5;color:#0e7c7b;border-radius:999px;padding:4px 12px;font-size:.85rem;font-weight:700;margin:0 6px 6px 0}
-.metric{display:inline-flex;flex-direction:column;min-width:130px;flex:1;background:#f8fafc;border:1px solid #e2e8f0;padding:.8rem;border-radius:10px;margin:.4rem .4rem 0 0}
-.metric strong{color:#0e7c7b;font-size:1.05rem;margin-top:2px}
-.metric span{font-size:.8rem;color:#64748b}
-.bar{height:14px;background:#e2e8f0;border-radius:999px;overflow:hidden;margin:6px 0}
-.bar>div{height:100%;background:#0e7c7b;transition:width .2s}
-.key{font-size:.92rem;color:#475569}
-.verdict{font-size:1.1rem;font-weight:700;padding:10px 14px;border-radius:10px;margin-top:8px}
-.v-sim{background:#dcfce7;color:#166534}
-.v-talvez{background:#fef9c3;color:#854d0e}
-.v-nao{background:#fee2e2;color:#991b1b}
-details{border:1px solid #e2e8f0;border-radius:10px;margin-bottom:8px;padding:10px 14px;background:#fff}
-summary{cursor:pointer;font-weight:700;color:#0f172a}
-details[open] summary{color:#0e7c7b}
-table{width:100%;border-collapse:collapse;font-size:.95rem}
-th,td{border:1px solid #e2e8f0;padding:8px 10px;text-align:left}
-th{background:#f1f5f9;color:#334155}
-.note{font-size:.85rem;color:#64748b;margin-top:.8rem}
-.chips{margin:.3rem 0 .8rem}
-.chips button{background:#e0f5f5;color:#0e7c7b;border:0;border-radius:999px;padding:6px 14px;margin:0 6px 6px 0;cursor:pointer;font-weight:700;font-size:.85rem}
-.chips button:hover{background:#0e7c7b;color:#fff}
-.toc{font-size:.95rem;margin:.4rem 0 0}
-.toc a{margin-right:14px;display:inline-block;padding:3px 0}
-</style>
-<meta property="og:type" content="website">
-<meta property="og:title" content="Vale a pena comprar? | Praia Digital">
-<meta property="og:description" content="Simulador de viabilidade imobiliária: comprar vs alugar, preço por m² e yield de temporada no litoral paulista.">
-<meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Praia Digital — imóveis no litoral com IA">
-<meta property="og:site_name" content="Praia Digital">
-<meta property="og:url" content="https://praia.digital/ferramentas/vale-a-pena-comprar-2026.html">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Vale a pena comprar? | Praia Digital">
-<meta name="twitter:description" content="Simulador de viabilidade imobiliária: comprar vs alugar, preço por m² e yield de temporada no litoral paulista.">
-<meta name="twitter:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
-<link rel="alternate" hreflang="pt-BR" href="https://praia.digital/ferramentas/vale-a-pena-comprar-2026.html">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="referrer" content="no-referrer-when-downgrade">
-<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
-<link rel="preconnect" href="https://praia.digital/" crossorigin>
-<link rel="icon" type="image/x-icon" href="https://praia.digital/favicon.ico">
-<link rel="apple-touch-icon" href="https://praia.digital/favicon.ico">
-<link rel="manifest" href="https://praia.digital/manifest.json">
 <meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0e7c7b">
+<meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
-<link rel="stylesheet" href="https://praia.digital/css/style.css">
-<meta name="theme-color" content="#0ea5e9">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Praia Digital",
-  "url": "https://praia.digital/",
-  "logo": "https://praia.digital/img/logo.png",
-  "contactPoint": {"@type": "ContactPoint", "telephone": "+55-11-95434-6288", "contactType": "sales", "areaServed": "BR", "availableLanguage": ["pt-BR", "en"]},
-  "openingHoursSpecification": {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "09:00", "closes": "18:00"}
-}
-</script>
-<link rel="dns-prefetch" href="https://images.unsplash.com">
-<link rel="dns-prefetch" href="https://wa.me">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
-</script>
+<meta property="og:site_name" content="Praia Digital">
+<meta property="og:title" content="Vale a pena comprar este imóvel?">
+<meta property="og:description" content="Uma decisão importante merece contas claras. Compare custos, renda e patrimônio em um só simulador.">
+<meta property="og:url" content="https://praia.digital/ferramentas/vale-a-pena-comprar-2026.html">
+<meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=60">
+<meta property="og:image:alt" content="Paisagem de praia, Praia Digital">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/assets/css/pd-navigation.css?v=3">
+<link rel="stylesheet" href="/assets/css/compra-viabilidade.css?v=20261111">
+<script defer src="/js/pd-navigation.js?v=3"></script>
+<script defer src="/js/compra-viabilidade-core.js?v=20261111"></script>
+<script defer src="/js/compra-viabilidade-ui.js?v=20261111"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Vale a pena comprar imóvel no litoral?", "description": "Simule custos de compra, financiamento, moradia e renda de aluguel com premissas editáveis e cálculos transparentes.", "url": "https://praia.digital/ferramentas/vale-a-pena-comprar-2026.html", "dateModified": "2026-11-11", "inLanguage": "pt-BR", "publisher": {"@type": "Organization", "name": "Praia Digital", "url": "https://praia.digital/"}}</script>
 </head>
-<body>
-<meta name="pd-shared-nav">
-<a class="skip-link" href="#main" style="position:absolute;left:-9999px;">Pular para o conteúdo</a>
-<div class="container" id="main">
-
-  <div class="card">
-    <span class="pill">Atualizado 2025-2026</span><span class="pill">Selic 15% a.a.</span><span class="pill">Dados por cidade</span>
-    <h1>Vale a pena comprar?</h1>
-    <p>Descubra em segundos se comprar esse imóvel faz sentido para o seu objetivo — com números reais do litoral paulista e cálculo automático enquanto você digita.</p>
-    <p class="toc">Ir para: <a href="#simulador">Simulador</a> <a href="#precos">Preços por m²</a> <a href="#comprar-alugar">Comprar vs alugar</a> <a href="#temporada">Temporada</a> <a href="#faq">FAQ</a></p>
-  </div>
-
-  <div class="card" id="simulador">
-    <h2>Simulador de viabilidade</h2>
-    <div class="chips">
-      <button type="button" onclick="setCidade('Santos')">Santos</button>
-      <button type="button" onclick="setCidade('Guarujá')">Guarujá</button>
-      <button type="button" onclick="setCidade('Praia Grande')">Praia Grande</button>
-      <button type="button" onclick="setCidade('Bertioga')">Bertioga</button>
-      <button type="button" onclick="setCidade('São Vicente')">São Vicente</button>
-      <button type="button" onclick="setCidade('Itanhaém')">Itanhaém</button>
-      <button type="button" onclick="setCidade('Mongaguá')">Mongaguá</button>
-      <button type="button" onclick="setCidade('Peruíbe')">Peruíbe</button>
-    </div>
-    <div class="grid">
-      <div><label for="cidade">Cidade</label><input id="cidade" placeholder="Ex: Bertioga"></div>
-      <div><label for="area">Área útil (m²)</label><input id="area" type="number" min="0" placeholder="Ex: 65"></div>
-    </div>
-    <div class="grid">
-      <div><label for="preco">Preço do imóvel (R$)</label><input id="preco" type="number" min="0" placeholder="Ex: 500000"></div>
-      <div><label for="entrada">Entrada (R$)</label><input id="entrada" type="number" min="0" placeholder="Ex: 100000"></div>
-    </div>
-    <div class="grid">
-      <div><label for="financiamento">Financiamento (R$)</label><input id="financiamento" type="number" min="0" placeholder="Ex: 400000"></div>
-      <div><label for="objetivo">Objetivo</label>
-        <select id="objetivo">
-          <option>Moradia</option>
-          <option>Investimento temporada</option>
-          <option>Aluguel anual</option>
-          <option>Consórcio</option>
-        </select>
-      </div>
-    </div>
-    <button class="btn" onclick="analisar(true)">Analisar viabilidade</button>
-    <div class="result" id="result" style="display:none"></div>
-    <p class="note">Estimativas com médias de mercado do litoral paulista (2025-2026). Financiamento calculado pela tabela Price, 30 anos, taxa média SBPE de ~11,5% a.a.</p>
-  </div>
-
-  <div class="card" id="precos">
-    <h2>Preço médio por m² no litoral (2025-2026)</h2>
-    <table>
-      <tr><th>Cidade</th><th>Preço médio m²</th><th>Perfil do mercado</th></tr>
-      <tr><td>Santos</td><td>R$ 9.000 – 11.000</td><td>Mais valorizado; alta liquidez e demanda o ano todo</td></tr>
-      <tr><td>Guarujá</td><td>R$ 6.000 – 8.000</td><td>Forte em temporada; condomínios podem pesar no custo</td></tr>
-      <tr><td>Bertioga</td><td>R$ 5.000 – 7.000</td><td>Riviera puxa a média; bom para temporada de alto padrão</td></tr>
-      <tr><td>Praia Grande</td><td>R$ 4.500 – 6.000</td><td>Maior volume de lançamentos; bom custo-benefício</td></tr>
-      <tr><td>São Vicente</td><td>R$ 4.000 – 5.000</td><td>Mercado de moradia; preços mais estáveis</td></tr>
-      <tr><td>Itanhaém</td><td>R$ 3.000 – 4.000</td><td>Entrada acessível; valorização crescente</td></tr>
-      <tr><td>Mongaguá</td><td>R$ 3.000 – 4.000</td><td>Popular para segunda residência</td></tr>
-      <tr><td>Peruíbe</td><td>R$ 2.500 – 3.500</td><td>Menor preço da região; perfil tranquilo</td></tr>
-    </table>
-    <p class="note">Faixas de referência compiladas de portais e índices de mercado (FipeZAP e correlatos). O valor exato depende de bairro, andar, vista e estado do imóvel.</p>
-  </div>
-
-  <div class="card" id="comprar-alugar">
-    <h2>Comprar ou alugar? A conta de 2026</h2>
-    <p>Com a Selic em 15% a.a., o dinheiro rende ~1,15% ao mês no CDI — isso tornou a comparação mais importante do que nunca:</p>
-    <table>
-      <tr><th>Cenário (imóvel de R$ 500 mil)</th><th>Valor mensal</th></tr>
-      <tr><td>Aluguel equivalente (0,45% do valor)</td><td>~R$ 2.250</td></tr>
-      <tr><td>Parcela do financiamento (20% de entrada, 30 anos)</td><td>~R$ 4.300</td></tr>
-      <tr><td>Rendimento da entrada no CDI (R$ 100 mil)</td><td>~R$ 1.150/mês</td></tr>
-    </table>
-    <p class="key"><strong>Regra prática:</strong> se a parcela for até ~30% maior que o aluguel e você pretende ficar 5+ anos, comprar tende a valer a pena. Acima disso, alugar e investir a diferença pode render mais — a menos que o objetivo seja renda com temporada.</p>
-  </div>
-
-  <div class="card" id="temporada">
-    <h2>Temporada e aluguel anual: quanto rende</h2>
-    <table>
-      <tr><th>Modalidade</th><th>Yield bruto típico</th><th>Observações</th></tr>
-      <tr><td>Temporada (Airbnb)</td><td>8% – 12% a.a.</td><td>Ocupação média 40-50%; exige gestão, limpeza e mobília</td></tr>
-      <tr><td>Aluguel anual</td><td>5% – 6% a.a.</td><td>Renda estável e previsível; menos trabalho</td></tr>
-      <tr><td>CDI (referência)</td><td>~14,9% a.a. bruto</td><td>Comparação importante com Selic a 15% — imóvel precisa somar yield + valorização</td></tr>
-    </table>
-    <p class="key">Valorização média do litoral paulista ficou entre 8% e 15% a.a. em 2024-2025, acima da inflação — o que, somado ao yield, sustenta o caso de compra para investimento.</p>
-  </div>
-
-  <div class="card" id="faq">
-    <h2>Perguntas frequentes</h2>
-    <details><summary>Vale a pena comprar imóvel no litoral em 2026?</summary><p>Depende do objetivo. Para moradia de longo prazo, sim — preços seguem valorizando. Para investimento, a conta precisa somar yield de aluguel + valorização acima do CDI (~14,9% a.a. bruto). Temporada bem gerida costuma passar disso; aluguel anual sozinho, não.</p></details>
-    <details><summary>Qual cidade tem melhor custo-benefício?</summary><p>Praia Grande e Itanhaém combinam preço por m² acessível e alta demanda de temporada. Santos tem a maior liquidez para revenda. Peruíbe é a porta de entrada mais barata.</p></details>
-    <details><summary>Com a Selic a 15%, financiar ainda compensa?</summary><p>Com taxas de 11-12% a.a., o custo total do financiamento está alto. Quanto maior a entrada (ideal: 30-40%), melhor a conta. Consórcio volta a ser alternativa interessante para quem não tem pressa.</p></details>
-    <details><summary>Quais custas além do preço do imóvel?</summary><p>ITBI (2% em Santos, até 3% em outras cidades), escritura e registro (1% a 2%) e, em lançamentos, taxa de evolução de obra. Reserve ~5% do valor do imóvel.</p></details>
-    <details><summary>Temporada ou aluguel anual: qual rende mais?</summary><p>Temporada rende até o dobro (8-12% vs 5-6% a.a.), mas exige mobília completa, gestão ativa e aceita sazonalidade: forte no verão e feriados, fraca no inverno.</p></details>
-    <details><summary>Quais cidades atendemos?</summary><p>Todo o litoral paulista: Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente e Peruíbe.</p></details>
-  </div>
-
-  <p><a href="https://praia.digital/ferramentas/pre-qualificacao-credito-2026.html">Pré-qualificação de crédito →</a> · <a href="https://wa.me/5511954346288" rel="noopener">Falar com especialista no WhatsApp →</a></p>
-<meta name="pd-shared-footer">
-<script src="https://praia.digital/js/shared.js?v=2.0"></script>
+<body class="pd-buy-page">
+<a class="v-skip" href="#main">Pular para o conteúdo</a>
+<header class="pd-header pd-site-header" data-pd-navigation="3" role="banner">
+<div class="pd-site-wrap">
+<a aria-label="Praia Digital — Início" class="pd-site-logo" href="/">Praia<span>Digital</span></a>
+<button aria-controls="pd-site-menu" aria-expanded="false" aria-label="Abrir menu de navegação" class="pd-site-toggle" type="button">☰ Menu</button><nav aria-label="Navegação principal" class="pd-site-menu" id="pd-site-menu">
+<div class="pd-site-group">
+<button aria-controls="pd-site-submenu-0" aria-expanded="false" aria-haspopup="true" class="pd-site-label" type="button">Comprar</button>
+<div class="pd-site-submenu" id="pd-site-submenu-0">
+<a href="/imoveis.html">Imóveis</a>
+<a href="/mapa-inteligente.html">Mapa</a>
+<a href="/cidades/index.html">Cidades</a>
+<a href="/bairros/index.html">Bairros</a>
+<a href="/apps/comparador-cidades/">Comparar cidades</a>
 </div>
-<script>
-var M2={'Santos':10000,'Guarujá':7000,'Praia Grande':5200,'Bertioga':6000,'São Vicente':4500,'Itanhaém':3500,'Mongaguá':3500,'Peruíbe':3000};
-var DIARIA={'Santos':550,'Guarujá':500,'Praia Grande':380,'Bertioga':520,'São Vicente':320,'Itanhaém':280,'Mongaguá':280,'Peruíbe':250};
-function fmt(v){return typeof v==='number'?'R$ '+v.toLocaleString('pt-BR',{minimumFractionDigits:0,maximumFractionDigits:0}):String(v)}
-function setCidade(c){document.getElementById('cidade').value=c;analisar(false)}
-function norm(s){return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()}
-function achar(mapa,cidade){var n=norm(cidade);for(var k in mapa){if(norm(k)===n)return mapa[k]}return null}
-function parcelaPrice(c,meses,taxaM){return c*(Math.pow(1+taxaM,meses)*taxaM)/(Math.pow(1+taxaM,meses)-1)}
-function analisar(showEmpty){
-  var cidade=(document.getElementById('cidade').value||'').trim();
-  var area=parseFloat(document.getElementById('area').value)||0;
-  var preco=parseFloat(document.getElementById('preco').value)||0;
-  var entrada=parseFloat(document.getElementById('entrada').value)||0;
-  var financ=parseFloat(document.getElementById('financiamento').value)||0;
-  var objetivo=document.getElementById('objetivo').value;
-  var box=document.getElementById('result');
-  if(!preco){if(showEmpty){box.style.display='block';box.innerHTML='<p>Preencha ao menos a cidade e o preço do imóvel para analisar.</p>';}return;}
-  if(!financ)financ=Math.max(0,preco-entrada);
-  var taxaM=Math.pow(1.115,1/12)-1;
-  var parcela=financ>0?parcelaPrice(financ,360,taxaM):0;
-  var aluguelMes=preco*0.0045;
-  var m2ref=achar(M2,cidade);
-  var diaria=achar(DIARIA,cidade)||Math.min(1200,Math.max(180,Math.round(preco*0.0012)));
-  var yieldTemp=Math.min(14,Math.max(2.5,(diaria*150)/preco*100));
-  var yieldAnual=5.4;
-  var m2preco=area?preco/area:0;
-  var desvio=m2ref&&area?((m2preco-m2ref)/m2ref*100):null;
-  var ratio=aluguelMes>0?parcela/aluguelMes:9;
-  var pctEntrada=preco?entrada/preco:0;
-  var score=5;
-  score+=Math.min(2,pctEntrada*5);
-  score+=desvio!==null?(desvio<=0?1.5:(desvio>15?-1.5:(desvio>5?-0.5:0.5))):0;
-  if(objetivo==='Investimento temporada')score+=yieldTemp>=9?1.5:(yieldTemp>=6?0.5:-1);
-  if(objetivo==='Aluguel anual')score+=-0.5;
-  if(objetivo==='Moradia')score+=ratio<=1.3?1.5:(ratio<=1.8?0.5:-1);
-  if(objetivo==='Consórcio')score+=0.5;
-  score=Math.min(10,Math.max(1,Math.round(score*10)/10));
-  var veredicto,cls;
-  if(score>=7){veredicto='✅ Vale a pena comprar';cls='v-sim';}
-  else if(score>=5){veredicto='🟡 Vale a pena com ressalvas';cls='v-talvez';}
-  else{veredicto='🔴 Melhor revisar antes de comprar';cls='v-nao';}
-  var dicas=[];
-  if(desvio!==null&&desvio>5)dicas.push('o preço por m² está '+desvio.toFixed(0)+'% acima da média de '+cidade+' — há margem para negociar');
-  if(desvio!==null&&desvio<=-5)dicas.push('o preço por m² está '+Math.abs(desvio).toFixed(0)+'% abaixo da média de '+cidade+' — oportunidade, mas verifique documentação e estado do imóvel');
-  if(pctEntrada<0.2)dicas.push('a entrada está abaixo de 20%; bancos costumam exigir ao menos isso');
-  if(ratio>1.8&&objetivo==='Moradia')dicas.push('a parcela está muito acima do aluguel equivalente; considere aumentar a entrada ou negociar o preço');
-  if(objetivo==='Investimento temporada')dicas.push('reserve 10-15% do valor para mobília completa e gestão de temporada');
-  if(!dicas.length)dicas.push('os números estão equilibrados para o seu objetivo');
-  box.style.display='block';
-  box.innerHTML='<div class="verdict '+cls+'">'+veredicto+'</div>'
-    +'<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:10px">'
-    +'<div class="metric"><span>Nota de investimento</span><strong>'+score+'/10</strong></div>'
-    +(m2preco&&m2ref?'<div class="metric"><span>Seu m² vs média '+(cidade||'cidade')+'</span><strong>'+fmt(m2preco)+' vs '+fmt(m2ref)+'</strong></div>':'')
-    +'<div class="metric"><span>Yield temporada</span><strong>'+yieldTemp.toFixed(1)+'% a.a.</strong></div>'
-    +'<div class="metric"><span>Diária de referência</span><strong>'+fmt(diaria)+'/dia</strong></div>'
-    +'</div>'
-    +(financ>0?'<p style="margin-top:10px"><strong>Parcela estimada:</strong> '+fmt(parcela)+'/mês · <strong>Aluguel equivalente:</strong> '+fmt(aluguelMes)+'/mês (relação '+ratio.toFixed(1)+'x)</p>'
-      +'<div class="bar"><div style="width:'+Math.min(100,ratio/2*100)+'%"></div></div>'
-      +'<p class="key">Comprar tende a valer a pena quando a parcela é até ~1,3x o aluguel e o horizonte é de 5+ anos.</p>':'')
-    +'<p style="margin-top:10px"><strong>O que observar:</strong> '+dicas.join('; ')+'.</p>'
-    +'<p class="key" style="margin-top:6px">Perfil: '+(objetivo==='Investimento temporada'?'temporada / curta estadia':objetivo==='Aluguel anual'?'aluguel anual / renda recorrente':objetivo==='Consórcio'?'consórcio / médio prazo':'moradia + potencial de valorização')+'</p>'
-    +'<p><a href="https://wa.me/5511954346288" rel="noopener">Quer uma análise completa? Fale com um especialista →</a></p>'
-    +'<p class="note">*Estimativa baseada em médias do litoral paulista (2025-2026). Não constitui recomendação de investimento.</p>';
-}
-['cidade','area','preco','entrada','financiamento','objetivo'].forEach(function(id){
-  var el=document.getElementById(id);
-  el.addEventListener('input',function(){analisar(false)});
-  el.addEventListener('change',function(){analisar(false)});
-});
-</script>
+</div>
+<div class="pd-site-group">
+<button aria-controls="pd-site-submenu-1" aria-expanded="false" aria-haspopup="true" class="pd-site-label" type="button">Investir</button>
+<div class="pd-site-submenu" id="pd-site-submenu-1">
+<a href="/ferramentas/avaliacao-preco.html">Avaliação de imóvel</a>
+<a href="/apps/simulador-roi-temporada/">ROI e temporada</a>
+<a href="/apps/calculadora-financiamento/">Financiamento</a>
+<a href="/ferramentas/vale-a-pena-comprar-2026.html">Vale a pena comprar?</a>
+<a href="/apps/alugar-ou-comprar/">Comprar × alugar</a>
+</div>
+</div>
+<div class="pd-site-group">
+<button aria-controls="pd-site-submenu-2" aria-expanded="false" aria-haspopup="true" class="pd-site-label" type="button">Meu Imóvel</button>
+<div class="pd-site-submenu" id="pd-site-submenu-2">
+<a href="/meu-imovel.html">Central do proprietário</a>
+<a href="/ferramentas/avaliacao-preco.html">Avaliar meu imóvel</a>
+<a href="/anunciar-temporada.html">Anunciar temporada</a>
+<a href="/proprietarios/guia-do-proprietario.html">Guia do proprietário</a>
+</div>
+</div>
+<div class="pd-site-group">
+<button aria-controls="pd-site-submenu-3" aria-expanded="false" aria-haspopup="true" class="pd-site-label" type="button">Profissionais</button>
+<div class="pd-site-submenu" id="pd-site-submenu-3">
+<a href="/servicos.html">Soluções</a>
+<a href="/automacao-imobiliarias.html">Automação</a>
+<a href="/captacao-imoveis-litoral.html">Captação</a>
+<a href="/education/kits-2026.html">Academy</a>
+<a href="/planos.html">Planos</a>
+</div>
+</div>
+<div class="pd-site-group">
+<button aria-controls="pd-site-submenu-4" aria-expanded="false" aria-haspopup="true" class="pd-site-label" type="button">Inteligência</button>
+<div class="pd-site-submenu" id="pd-site-submenu-4">
+<a href="/blog/index.html">Blog</a>
+<a href="/docs/inteligencia/boletim-diario.html">Boletim de inteligência</a>
+<a href="/blog/indice-preco-m2-litoral-paulista-tabela-tendencias-2026.html">Índice de preço por m²</a>
+<a href="/ferramentas/index.html">Ferramentas</a>
+<a href="/apps/">Apps gratuitos</a>
+<a href="/ferramentas/assistente-virtual.html">Assistente IA</a>
+</div>
+</div>
+</nav>
+<a class="pd-site-cta" href="/interesse.html">Falar com especialista</a>
+</div>
+</header>
+
+<main id="main" class="v-shell" tabindex="-1" data-calculator-version="2026-11-11-v2">
+  <nav class="v-breadcrumb" aria-label="Localização"><a href="/">Início</a><span aria-hidden="true">/</span><a href="/ferramentas/">Ferramentas</a><span aria-hidden="true">/</span><span>Viabilidade da compra</span></nav>
+  <section class="v-hero" aria-labelledby="page-title">
+    <div><p class="v-eyebrow">INTELIGÊNCIA PARA DECIDIR</p><h1 id="page-title">Vale a pena comprar <em>este imóvel?</em></h1><p class="v-lead">Enxergue o custo de comprar, o potencial de renda e o que muda no seu patrimônio. Com as suas premissas, sem uma nota que decide por você.</p><div class="v-tags"><span>Contas abertas</span><span>Sem cadastro</span><span>3 objetivos de compra</span></div></div>
+    <aside class="v-hero-note"><span class="v-orbit-icon" aria-hidden="true">↗</span><p class="v-eyebrow">ANTES DO SIM OU NÃO</p><h2>Uma boa compra <br>cabe no seu plano.</h2><p>Comece pelo objetivo. Depois, ajuste os valores do exemplo para a sua realidade.</p><a href="#simulador">Fazer minha simulação <span aria-hidden="true">↓</span></a></aside>
+  </section>
+  <div class="v-section-heading" id="simulador"><div><p class="v-eyebrow">SEU CENÁRIO, EM DETALHES</p><h2>Monte a sua comparação</h2></div><a href="#metodologia">Como fazemos as contas ↗</a></div>
+  <noscript><p class="v-alert">Ative o JavaScript para calcular. As premissas, fontes e limitações continuam disponíveis abaixo.</p></noscript>
+  <div class="v-workspace">
+    <form id="compra-form" class="v-form" novalidate>
+      <div class="v-example"><span class="v-dot" aria-hidden="true"></span><p><strong>Você está vendo um exemplo.</strong> Todos os valores são editáveis. Diárias, taxas e custos não são cotações de mercado.</p></div>
+      <section class="v-panel" aria-labelledby="step-one"><div class="v-panel-title"><span class="v-step" aria-hidden="true">01</span><div><h3 id="step-one">O imóvel e o objetivo</h3><p>O resultado se adapta ao que você quer fazer.</p></div></div>
+      <div class="v-grid"><div class="v-field"><label for="goal">Qual é o seu objetivo?</label><select id="goal" aria-describedby="goal-hint goal-error"><option value="moradia">Morar: comprar ou alugar</option><option value="temporada">Investir: aluguel de temporada</option><option value="anual">Investir: aluguel anual</option></select><p class="v-hint" id="goal-hint"></p><p class="v-field-error" id="goal-error"></p></div><div class="v-field"><label for="city">Cidade</label><select id="city" aria-describedby="city-hint city-error"><option value="Santos">Santos</option><option value="Guarujá">Guarujá</option><option value="Praia Grande">Praia Grande</option><option value="Bertioga">Bertioga</option><option value="São Vicente">São Vicente</option><option value="Itanhaém">Itanhaém</option><option value="Mongaguá">Mongaguá</option><option value="Peruíbe">Peruíbe</option><option value="Outra cidade">Outra cidade</option></select><p class="v-hint" id="city-hint">Referência por m² disponível para Santos, Guarujá e Praia Grande.</p><p class="v-field-error" id="city-error"></p></div><div class="v-field"><label for="price">Preço do imóvel (R$)</label><div class="v-input-wrap"><input id="price" type="number" inputmode="decimal" value="500000" step="any" min="1" max="1000000000.0" aria-describedby="price-hint price-error"></div><p class="v-hint" id="price-hint">Digite sem separador de milhar: 500000 = R$ 500 mil.</p><p class="v-field-error" id="price-error"></p></div><div class="v-field"><label for="area">Área útil (m²)</label><div class="v-input-wrap"><input id="area" type="number" inputmode="decimal" value="65" step="any" min="0.01" max="1000000.0" aria-describedby="area-hint area-error"></div><p class="v-hint" id="area-hint">Área privativa, sem as áreas comuns.</p><p class="v-field-error" id="area-error"></p></div></div></section>
+      <section class="v-panel" aria-labelledby="step-two"><div class="v-panel-title"><span class="v-step" aria-hidden="true">02</span><div><h3 id="step-two">Como você vai comprar</h3><p>O saldo financiado é calculado automaticamente.</p></div></div><div class="v-grid"><div class="v-field"><label for="purchase">Forma de compra</label><select id="purchase" aria-describedby="purchase-hint purchase-error"><option value="financiado">Entrada + financiamento</option><option value="avista">À vista</option></select><p class="v-hint" id="purchase-hint"></p><p class="v-field-error" id="purchase-error"></p></div><div class="v-field"><label for="entry">Entrada (R$)</label><div class="v-input-wrap"><input id="entry" type="number" inputmode="decimal" value="100000" step="any" min="0" max="1000000000.0" aria-describedby="entry-hint entry-error"></div><p class="v-hint" id="entry-hint">Não pode ser maior que o preço do imóvel.</p><p class="v-field-error" id="entry-error"></p></div></div><div class="v-balance"><span>Valor financiado</span><output id="principal" for="price entry purchase">R$ 400.000,00</output></div>
+      <div id="financing-fields"><div class="v-grid"><div class="v-field"><label for="system">Sistema de amortização</label><select id="system" aria-describedby="system-hint system-error"><option value="price">Price: parcela-base constante</option><option value="sac">SAC: parcela-base decrescente</option></select><p class="v-hint" id="system-hint"></p><p class="v-field-error" id="system-error"></p></div><div class="v-field"><label for="months">Prazo (meses)</label><div class="v-input-wrap"><input id="months" type="number" inputmode="decimal" value="360" step="1" min="1" max="600" aria-describedby="months-hint months-error"></div><p class="v-hint" id="months-hint">Exemplo: 360 meses = 30 anos.</p><p class="v-field-error" id="months-error"></p></div><div class="v-field"><label for="annualRate">Juros efetivos (% ao ano)</label><div class="v-input-wrap"><input id="annualRate" type="number" inputmode="decimal" value="11.5" step="any" min="0" max="100" aria-describedby="annualRate-hint annualRate-error"></div><p class="v-hint" id="annualRate-hint">Hipótese ilustrativa. Use a taxa efetiva da proposta, não o CET.</p><p class="v-field-error" id="annualRate-error"></p></div><div class="v-field"><label for="financeFees">Seguros e tarifas (R$/mês)</label><div class="v-input-wrap"><input id="financeFees" type="number" inputmode="decimal" value="0" step="any" min="0" max="10000000.0" aria-describedby="financeFees-hint financeFees-error"></div><p class="v-hint" id="financeFees-hint">Informe MIP, DFI e tarifas. Zero não significa que não existam.</p><p class="v-field-error" id="financeFees-error"></p></div></div><p class="v-callout">A parcela-base não inclui correção por TR/IPCA. Seguros e tarifas são tratados como constantes. Compare também o CET e a evolução das parcelas na proposta do banco.</p></div>
+      <p class="v-text-link">Pensando em consórcio? <a href="/apps/calculadora-consorcio/">Use a ferramenta específica ↗</a></p></section>
+      <section class="v-panel" aria-labelledby="step-three"><div class="v-panel-title"><span class="v-step" aria-hidden="true">03</span><div><h3 id="step-three">Custos que entram na conta</h3><p>Inclua os valores mesmo quando a compra é à vista.</p></div></div><div class="v-grid"><div class="v-field"><label for="acquisitionRate">Aquisição (% do preço)</label><div class="v-input-wrap"><input id="acquisitionRate" type="number" inputmode="decimal" value="5" step="any" min="0" max="100" aria-describedby="acquisitionRate-hint acquisitionRate-error"></div><p class="v-hint" id="acquisitionRate-hint">Hipótese para ITBI, escritura, registro e demais despesas.</p><p class="v-field-error" id="acquisitionRate-error"></p></div><div class="v-field"><label for="upfront">Reforma e mobília iniciais (R$)</label><div class="v-input-wrap"><input id="upfront" type="number" inputmode="decimal" value="0" step="any" min="0" max="1000000000.0" aria-describedby="upfront-hint upfront-error"></div><p class="v-hint" id="upfront-hint">Gasto inicial adicional, sem valor de revenda neste modelo.</p><p class="v-field-error" id="upfront-error"></p></div><div class="v-field"><label for="condo">Condomínio (R$/mês)</label><div class="v-input-wrap"><input id="condo" type="number" inputmode="decimal" value="600" step="any" min="0" max="10000000.0" aria-describedby="condo-hint condo-error"></div><p class="v-hint" id="condo-hint"></p><p class="v-field-error" id="condo-error"></p></div><div class="v-field"><label for="tax">IPTU (R$/mês)</label><div class="v-input-wrap"><input id="tax" type="number" inputmode="decimal" value="150" step="any" min="0" max="10000000.0" aria-describedby="tax-hint tax-error"></div><p class="v-hint" id="tax-hint">Divida o valor anual por 12.</p><p class="v-field-error" id="tax-error"></p></div><div class="v-field"><label for="maintenance">Reserva de manutenção (R$/mês)</label><div class="v-input-wrap"><input id="maintenance" type="number" inputmode="decimal" value="150" step="any" min="0" max="10000000.0" aria-describedby="maintenance-hint maintenance-error"></div><p class="v-hint" id="maintenance-hint">Inclua conservação e reposição de equipamentos.</p><p class="v-field-error" id="maintenance-error"></p></div><div class="v-field"><label for="otherCosts">Outros custos (R$/mês)</label><div class="v-input-wrap"><input id="otherCosts" type="number" inputmode="decimal" value="0" step="any" min="0" max="10000000.0" aria-describedby="otherCosts-hint otherCosts-error"></div><p class="v-hint" id="otherCosts-hint">Contas, seguros, limpeza e tributos não incluídos em outros campos.</p><p class="v-field-error" id="otherCosts-error"></p></div></div></section>
+      <section id="housing-fields" class="v-panel" aria-labelledby="housing-title"><div class="v-panel-title"><span class="v-step" aria-hidden="true">04</span><div><h3 id="housing-title">Morar: compare planos equivalentes</h3><p>Considere alugar um imóvel semelhante, no mesmo padrão.</p></div></div><div class="v-grid"><div class="v-field"><label for="rent">Aluguel alternativo (R$/mês)</label><div class="v-input-wrap"><input id="rent" type="number" inputmode="decimal" value="2250" step="any" min="0" max="10000000.0" aria-describedby="rent-hint rent-error"></div><p class="v-hint" id="rent-hint">Aluguel puro. Informe os encargos no próximo campo.</p><p class="v-field-error" id="rent-error"></p></div><div class="v-field"><label for="tenantCosts">Encargos do inquilino (R$/mês)</label><div class="v-input-wrap"><input id="tenantCosts" type="number" inputmode="decimal" value="750" step="any" min="0" max="10000000.0" aria-describedby="tenantCosts-hint tenantCosts-error"></div><p class="v-hint" id="tenantCosts-hint">Condomínio, IPTU e outros custos pagos por quem aluga.</p><p class="v-field-error" id="tenantCosts-error"></p></div><div class="v-field"><label for="years">Horizonte (anos)</label><div class="v-input-wrap"><input id="years" type="number" inputmode="decimal" value="10" step="1" min="1" max="40" aria-describedby="years-hint years-error"></div><p class="v-hint" id="years-hint">Prazo em que você pretende manter o plano.</p><p class="v-field-error" id="years-error"></p></div><div class="v-field"><label for="investmentReturn">Investimento alternativo líquido (% a.a.)</label><div class="v-input-wrap"><input id="investmentReturn" type="number" inputmode="decimal" value="8" step="any" min="-30" max="30" aria-describedby="investmentReturn-hint investmentReturn-error"></div><p class="v-hint" id="investmentReturn-hint">Hipótese após tributos e taxas. Não é previsão do CDI.</p><p class="v-field-error" id="investmentReturn-error"></p></div></div><details class="v-details"><summary>Premissas da projeção patrimonial</summary><div class="v-grid"><div class="v-field"><label for="appreciation">Valorização do imóvel (% a.a.)</label><div class="v-input-wrap"><input id="appreciation" type="number" inputmode="decimal" value="3" step="any" min="-30" max="30" aria-describedby="appreciation-hint appreciation-error"></div><p class="v-hint" id="appreciation-hint">Pode ser negativa. Valorização passada não garante retorno.</p><p class="v-field-error" id="appreciation-error"></p></div><div class="v-field"><label for="annualAdjustment">Reajuste de aluguel e custos (% a.a.)</label><div class="v-input-wrap"><input id="annualAdjustment" type="number" inputmode="decimal" value="4" step="any" min="-20" max="30" aria-describedby="annualAdjustment-hint annualAdjustment-error"></div><p class="v-hint" id="annualAdjustment-hint">Aplicado mensalmente pela taxa equivalente, sem reajustar o financiamento.</p><p class="v-field-error" id="annualAdjustment-error"></p></div><div class="v-field"><label for="saleRate">Custos de venda (% do valor futuro)</label><div class="v-input-wrap"><input id="saleRate" type="number" inputmode="decimal" value="6" step="any" min="0" max="100" aria-describedby="saleRate-hint saleRate-error"></div><p class="v-hint" id="saleRate-hint">Hipótese para corretagem e despesas de saída; ajuste conforme seu caso.</p><p class="v-field-error" id="saleRate-error"></p></div></div><p class="v-hint">Todas as taxas são nominais. Não há correção adicional pela inflação. Imposto sobre ganho de capital não é calculado automaticamente; considere-o no custo de saída quando aplicável.</p></details></section>
+      <section id="rental-fields" class="v-panel" aria-labelledby="rental-title" hidden><div class="v-panel-title"><span class="v-step" aria-hidden="true">04</span><div><h3 id="rental-title">Investir: da receita ao caixa</h3><p>Receita não é lucro. Despesas e dívida aparecem separadas.</p></div></div><div id="season-fields" class="v-grid"><div class="v-field"><label for="dailyRate">Diária média (R$)</label><div class="v-input-wrap"><input id="dailyRate" type="number" inputmode="decimal" value="550" step="any" min="0" max="10000000.0" aria-describedby="dailyRate-hint dailyRate-error"></div><p class="v-hint" id="dailyRate-hint">Exemplo ilustrativo. Considere padrão, localização e sazonalidade.</p><p class="v-field-error" id="dailyRate-error"></p></div><div class="v-field"><label for="nights">Noites ocupadas por ano</label><div class="v-input-wrap"><input id="nights" type="number" inputmode="decimal" value="150" step="1" min="0" max="365" aria-describedby="nights-hint nights-error"></div><p class="v-hint" id="nights-hint">De 0 a 365. Desconte uso próprio e períodos indisponíveis.</p><p class="v-field-error" id="nights-error"></p></div></div><div id="annual-fields" class="v-grid"><div class="v-field"><label for="annualRent">Aluguel contratado (R$/mês)</label><div class="v-input-wrap"><input id="annualRent" type="number" inputmode="decimal" value="2250" step="any" min="0" max="10000000.0" aria-describedby="annualRent-hint annualRent-error"></div><p class="v-hint" id="annualRent-hint"></p><p class="v-field-error" id="annualRent-error"></p></div><div class="v-field"><label for="vacancy">Vacância (% do ano)</label><div class="v-input-wrap"><input id="vacancy" type="number" inputmode="decimal" value="5" step="any" min="0" max="100" aria-describedby="vacancy-hint vacancy-error"></div><p class="v-hint" id="vacancy-hint">Inclua meses sem inquilino e inadimplência esperada.</p><p class="v-field-error" id="vacancy-error"></p></div></div><div class="v-grid"><div class="v-field"><label for="variableRate">Despesas variáveis (% da receita)</label><div class="v-input-wrap"><input id="variableRate" type="number" inputmode="decimal" value="20" step="any" min="0" max="100" aria-describedby="variableRate-hint variableRate-error"></div><p class="v-hint" id="variableRate-hint">Soma de plataforma, gestão e tributos proporcionais, sem duplicar custos mensais.</p><p class="v-field-error" id="variableRate-error"></p></div></div><p class="v-callout">Os custos da etapa 03 são os valores pagos por você. Se o inquilino os reembolsar, informe apenas sua parte. O resultado é líquido somente das despesas informadas, não de tributos omitidos.</p></section>
+      <div id="form-errors" class="v-alert" role="alert" hidden></div><div class="v-actions"><button type="submit" class="v-button" disabled>Atualizar análise <span aria-hidden="true">↗</span></button><button type="reset" class="v-reset">Restaurar exemplo</button></div><p class="v-local-note">A simulação é processada neste navegador. Os campos não são enviados pelo simulador.</p>
+    </form>
+    <aside class="v-summary" aria-labelledby="result-title"><div class="v-summary-top"><span class="v-eyebrow">LEITURA DO SEU CENÁRIO</span><span id="result-label" class="v-status">Exemplo ilustrativo</span></div><h2 id="result-title" tabindex="-1">Sua análise</h2><p id="result-live" class="v-sr-only" role="status" aria-live="polite" aria-atomic="true"></p><div id="result"></div><p class="v-summary-disclaimer">Simulação educativa, não recomendação de investimento nem aprovação de crédito. Decisões exigem análise do imóvel, da documentação e do seu orçamento.</p></aside>
+  </div>
+  <section id="metodologia" class="v-method" aria-labelledby="method-title"><div class="v-section-heading"><div><p class="v-eyebrow">TRANSPARÊNCIA EM PRIMEIRO LUGAR</p><h2 id="method-title">O que está por trás dos números</h2></div><span class="v-updated">Revisado em 11/11/2026</span></div><div class="v-method-grid">
+  <article><span class="v-method-number">01 / FINANCIAMENTO</span><h3>A dívida tem um custo</h3><p>Juros anuais efetivos são convertidos pela taxa mensal equivalente: (1 + taxa anual)^(1/12) − 1. A tabela Price usa prestação-base constante; a SAC usa amortização constante. Com juros zero, a prestação é o saldo dividido pelo prazo.</p><p>Seguros e tarifas informados são somados enquanto há parcelas. Indexadores e variações futuras desses encargos não são simulados. <a href="https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?numero=4881&amp;tipo=Resolu%C3%A7%C3%A3o+CMN">Entenda o CET no Banco Central ↗</a></p></article>
+  <article><span class="v-method-number">02 / MORADIA</span><h3>O mesmo ponto de partida</h3><p>Quem aluga investe o valor que seria usado na entrada, aquisição e extras iniciais. A cada mês, ambos os cenários usam o mesmo orçamento, igual ao maior desembolso daquele mês, e investem a sobra ao fim do mês.</p><p>O patrimônio da compra soma imóvel e investimentos, descontando dívida restante e custo de venda hipotética. Também mostramos o valor sem venda. O financiamento termina no prazo contratado, mesmo quando a projeção vai além.</p></article>
+  <article><span class="v-method-number">03 / INVESTIMENTO</span><h3>Receita, operação e caixa</h3><p>Temporada: diária × noites ocupadas. Anual: aluguel × 12 × (1 − vacância). Não há piso nem teto artificial de rentabilidade. Resultado operacional = receita − despesas variáveis − custos mensais × 12.</p><p>O caixa do primeiro ano desconta também parcelas, seguros e tarifas. Yield bruto e operacional usam o preço do imóvel como base. O rendimento sobre custo total inclui aquisição, reforma e mobília. Valorização não entra como dinheiro recebido.</p></article>
+  </div>
+  <div class="v-sources"><div><h3>Referências de mercado, com contexto</h3><p>Preço anunciado não é preço de fechamento. O índice municipal não substitui comparáveis do bairro nem avaliação individual.</p><p><a href="https://downloads.fipe.org.br/indices/fipezap/fipezap-202610-residencial-venda.pdf">FipeZAP · venda residencial · outubro/2026 ↗</a><br>Santos: R$ 8.678/m² · Guarujá: R$ 6.944/m² · Praia Grande: R$ 6.800/m². Relatório, página 6. Outras cidades ficam sem benchmark até termos fonte verificável.</p></div><div><h3>Juros de referência não são previsão</h3><p>A <a href="https://www.bcb.gov.br/content/copom/atascopom/Copom282-not20261104282.pdf">ata do Copom de 3 e 4/11/2026 ↗</a> registra Selic de 13,75% a.a. Esse é um retrato daquela decisão, não o retorno garantido de um investimento nem a taxa de um financiamento.</p><p>Use taxas líquidas compatíveis com seu prazo e perfil. <a href="/metodologia.html">Conheça a metodologia do Praia Digital ↗</a></p></div></div>
+  </section>
+  <section id="faq" class="v-faq" aria-labelledby="faq-title"><div><p class="v-eyebrow">PARA DECIDIR MELHOR</p><h2 id="faq-title">Dúvidas que fazem diferença</h2></div><div>
+  <details><summary>Por que não existe mais uma nota de compra?</summary><p>Uma nota única esconde diferenças importantes entre orçamento, patrimônio, liquidez e risco. O simulador mostra esses componentes separadamente para ajudar você a fazer perguntas melhores, sem prometer que um imóvel é um bom negócio.</p></details>
+  <details><summary>Posso confiar na projeção como previsão?</summary><p>Não. É um cenário condicionado aos valores informados. Juros, aluguel, vacância, custos, preços e tributação podem mudar. Compare premissas conservadoras e verifique documentação, restrições de uso e estado do imóvel antes de decidir.</p></details>
+  <details><summary>O que significa rendimento líquido operacional?</summary><p>É a receita menos as despesas operacionais que você informou. Não desconta financiamento e não calcula tributos automaticamente. O fluxo de caixa, mostrado separadamente, desconta também o serviço da dívida do primeiro ano.</p></details>
+  <details><summary>E se eu quiser comprar por consórcio?</summary><p>Consórcio envolve taxa de administração, reajustes e incerteza de contemplação. Não usamos a fórmula de financiamento para representá-lo. <a href="/apps/calculadora-consorcio/">Abra a calculadora de consórcio.</a></p></details>
+  </div></section>
+  <section class="v-next"><div><p class="v-eyebrow">DO CENÁRIO À DECISÃO</p><h2>Quer analisar o imóvel com mais contexto?</h2><p>Converse sobre localização, documentação, custos e possibilidades reais de uso.</p></div><a class="v-button" href="https://wa.me/5511954346288" rel="noopener">Falar com um especialista ↗</a></section>
+  <div class="v-related"><a href="/apps/calculadora-financiamento/">Detalhar financiamento ↗</a><a href="/apps/simulador-roi-temporada/">Explorar renda de temporada ↗</a><a href="/ferramentas/pre-qualificacao-credito-2026.html">Pré-qualificação de crédito ↗</a></div>
+</main>
 <meta name="pd-shared-footer">
+<script src="/js/shared.js?v=2.0"></script>
 </body>
 </html>
