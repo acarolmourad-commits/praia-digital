@@ -54,13 +54,14 @@ html.pd-rent-buy-root { scroll-behavior: auto; }
 .rb-breakdown dt { color: #425b60; }
 .rb-breakdown dd { text-align: right; font-weight: 650; font-variant-numeric: tabular-nums; }
 .rb-table-scroll { max-width: 100%; overflow-x: auto; }
-.rb-table { width: 100%; border-collapse: collapse; font-size: .86rem; font-variant-numeric: tabular-nums; }
+.rb-table { width: 100%; border-collapse: collapse; font-size: .86rem; font-variant-numeric: tabular-nums; overflow-wrap: normal; }
 .rb-table caption { text-align: left; padding: 0 0 12px; color: #425b60; }
 .rb-table :where(th,td) { padding: 12px 10px; text-align: right; border-bottom: 1px solid #cfddda; vertical-align: top; }
 .rb-table th { background: #f0f5f2; }
 .rb-table :where(th,td):first-child { text-align: left; }
 .rb-yearly { min-width: 680px; }
-.rb-sensitivity { table-layout: fixed; }
+.rb-sensitivity { min-width: 520px; }
+.rb-sensitivity td:nth-child(2), .rb-yearly td { white-space: nowrap; }
 .rb-sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .rb-footer { padding: 24px; text-align: center; font-size: .85rem; color: #425b60; }
 @media (max-width: 760px) { .rb-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }

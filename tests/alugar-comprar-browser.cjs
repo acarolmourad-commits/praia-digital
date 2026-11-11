@@ -69,6 +69,19 @@ fs.mkdirSync(artifacts, { recursive: true });
       assert.ok(resultPosition.y >= 70 && resultPosition.y < 700, `result focus below header at ${width}px`);
       await page.getByText('Como o resultado muda com as taxas?', { exact: true }).click();
       assert.equal(await overflow(), false, `sensitivity overflow at ${width}px`);
+      assert.equal(await page.locator('#sensitivity-body tr:first-child td:nth-child(2)').evaluate(element => getComputedStyle(element).whiteSpace), 'nowrap');
+      const sensitivityRegion = page.getByRole('region', { name: 'Tabela de sensibilidade das taxas, com rolagem horizontal' });
+      await sensitivityRegion.scrollIntoViewIfNeeded();
+      await sensitivityRegion.screenshot({ path: path.join(artifacts, `sensitivity-${width}.png`) });
+      if (width < 520) {
+        await sensitivityRegion.focus();
+        await page.keyboard.press('End');
+        await page.keyboard.press('ArrowRight');
+        assert.ok(await sensitivityRegion.evaluate(element => element.scrollWidth > element.clientWidth), 'sensitivity stays in a local scroll region');
+        await sensitivityRegion.evaluate(element => { element.scrollLeft = element.scrollWidth; });
+        assert.ok(await sensitivityRegion.evaluate(element => element.scrollLeft > 0), 'remaining columns are reachable');
+        await sensitivityRegion.screenshot({ path: path.join(artifacts, `sensitivity-end-${width}.png`) });
+      }
       await page.locator('#res').screenshot({ path: path.join(artifacts, `result-${width}.png`) });
       await page.getByText('Acompanhar patrimônio ano a ano', { exact: true }).click();
       assert.equal(await overflow(), false, `yearly table leaks beyond its container at ${width}px`);
