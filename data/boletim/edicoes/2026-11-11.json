@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-11",
+  "reviewed_at": "2026-11-11T22:13:21Z",
+  "reviewer": "Curadoria assistida por IA; fontes municipais conferidas em 11/11/2026",
+  "status": "reviewed",
+  "description": "Edição de 11/11: saneamento de verão em Ubatuba, habitação em Santos, exposições em Praia Grande e nota sobre o prazo da orla de Bertioga.",
+  "summary": "Saneamento de verão em Ubatuba, novas moradias em Santos e cultura em Praia Grande. Três publicações de 5 e 6 de novembro, conferidas em 11/11, com contexto para o litoral.",
+  "items": [
+    {
+      "id": "ubatuba-plano-verao",
+      "title": "Ubatuba integra preparação da Sabesp para o verão 2026–2027",
+      "summary": "A Prefeitura informou que Ubatuba está no Plano Verão da Sabesp, apresentado em 4 de novembro. As medidas anunciadas para dezembro a março incluem reforço operacional, limpeza de redes, busca de vazamentos, higienização de reservatórios e monitoramento de pressão no Litoral Norte.",
+      "source_name": "Prefeitura de Ubatuba",
+      "source_url": "https://ubatuba.sp.gov.br/noticias/planoverao05112026",
+      "published_at": "2026-11-05",
+      "category": "Saneamento e temporada",
+      "city": "Ubatuba",
+      "impact": "Anfitriões podem aproveitar a preparação para revisar as instalações internas e orientar hóspedes sobre consumo. O plano anunciado não garante fornecimento ininterrupto em cada imóvel nem informa a conclusão individual de todas as obras.",
+      "checked_at": "2026-11-11T22:13:21Z",
+      "reviewer": "Curadoria assistida por IA; fonte municipal conferida",
+      "status": "reviewed"
+    },
+    {
+      "id": "santos-prainha-dois",
+      "title": "Primeiras famílias começam a mudança para o Prainha II, em Santos",
+      "summary": "Segundo a Prefeitura, quatro famílias do Caminho da União, no São Manoel, iniciaram em 6 de novembro a mudança para o Conjunto Santos AB – Prainha II, no Bom Retiro. O empreendimento tem 574 apartamentos; as transferências serão graduais, conforme as condições das famílias e a demolição das antigas moradias desocupadas. A fonte foi atualizada em 9 de novembro.",
+      "source_name": "Prefeitura de Santos",
+      "source_url": "https://www.santos.sp.gov.br/?q=noticia/familias-deixam-palafitas-e-se-emocionam-com-mudanca-para-apartamentos-na-zona-noroeste-de-santos",
+      "published_at": "2026-11-06",
+      "category": "Habitação",
+      "city": "Santos",
+      "impact": "O início das mudanças permite acompanhar a execução da política habitacional na Zona Noroeste. A matéria não anuncia inscrições abertas nem informa que todas as unidades já estejam ocupadas.",
+      "checked_at": "2026-11-11T22:13:21Z",
+      "reviewer": "Curadoria assistida por IA; fonte municipal conferida",
+      "status": "reviewed"
+    },
+    {
+      "id": "praia-grande-exposicoes",
+      "title": "Praia Grande mantém quatro exposições gratuitas até 27 de novembro",
+      "summary": "O Palácio das Artes prorrogou quatro mostras até 27 de novembro. A Prefeitura informa visitação gratuita de terça a sábado, das 14h às 17h, exceto feriados e pontos facultativos, na Avenida Presidente Costa e Silva, 1.600, no Boqueirão.",
+      "source_name": "Prefeitura de Praia Grande",
+      "source_url": "https://www2.praiagrande.sp.gov.br/noticia/palacio-das-artes-prorroga-exposicoes-ate-27-de-novembro-em-pg",
+      "published_at": "2026-11-06",
+      "category": "Cultura e turismo",
+      "city": "Praia Grande",
+      "deadline": "2026-11-27",
+      "impact": "Uma opção para o guia de hóspedes de novembro. Confira o funcionamento antes de recomendar a visita, especialmente em feriados; a prorrogação não significa abertura diária.",
+      "checked_at": "2026-11-11T22:13:21Z",
+      "reviewer": "Curadoria assistida por IA; fonte municipal conferida",
+      "status": "reviewed"
+    }
+  ],
+  "notes": [
+    {
+      "title": "Bertioga: o prazo informado para a consulta da orla já passou",
+      "text": "A Prefeitura divulgou 10/11/2026 como prazo de participação. Na conferência de 11/11, a página oficial ainda informava essa data e não foi localizada uma nova data oficial. O convite deixa de ser apresentado como vigente. A edição de 02/11 mantém o texto original com uma nota posterior visível.",
+      "source_url": "https://bertioga.sp.gov.br/consulta-publica-vai-ouvir-a-populacao-sobre-a-orla-da-cidade",
+      "related_edition": "2026-11-02"
+    }
+  ]
+}

@@ -65,6 +65,48 @@ class BulletinTests(unittest.TestCase):
         for url in urls:
             self.assertTrue(url.findtext('s:loc',namespaces=ns).startswith('https://praia.digital/docs/inteligencia/boletim-'))
             builder.stamp(url.findtext('s:lastmod',namespaces=ns))
+    def test_readable_dates_and_archive_note(self):
+        self.assertEqual(builder.human_date('2026-11-02'), '02/11/2026')
+        self.assertEqual(builder.human_date('2026-11-02T14:15:00Z'), '02/11/2026 às 11h15 (Brasília)')
+        historical=(ROOT/'docs/inteligencia/boletim-2026-11-02.html').read_text()
+        self.assertIn('Edição arquivada',historical)
+        self.assertIn('Nota editorial posterior',historical)
+        self.assertIn('Revisão original desta edição',historical)
+        self.assertIn('Nota posterior:',historical)
+        self.assertIn('2026-11-02T14:15:00Z',historical)
+        self.assertIn(self.edition['items'][1]['summary'],historical)
+        self.assertIn('não como participação vigente',historical)
+    def test_unique_edition_titles_and_rss_history(self):
+        import re
+        old=(ROOT/'docs/inteligencia/boletim-2026-11-02.html').read_text()
+        current=(ROOT/'docs/inteligencia/boletim-diario.html').read_text()
+        self.assertNotEqual(re.search(r'<title>(.*?)</title>',old)[1],re.search(r'<title>(.*?)</title>',current)[1])
+        items=ET.parse(ROOT/'docs/inteligencia/feed.xml').findall('./channel/item')
+        self.assertGreaterEqual(len(items),2)
+        self.assertEqual(items[-1].findtext('pubDate'),'Mon, 02 Nov 2026 14:15:00 +0000')
+        self.assertIn('id="rss-address"',current)
+        self.assertIn('id="filter-reset"',current)
+        self.assertIn('dateModified',old)
+    def test_reject_invalid_updates_and_notes(self):
+        for mutate in [lambda e:e['items'][1]['updates'][0].update(noted_at='2099-01-01T00:00:00Z'),lambda e:e['items'][1]['updates'][0].update(reviewer=''),lambda e:e['items'][1].update(deadline='2020-01-01'),lambda e:e['items'][0].update(id=e['items'][1]['id'])]:
+            e=copy.deepcopy(self.edition);mutate(e)
+            with self.assertRaises(ValueError):builder.validate(e)
+        e=copy.deepcopy(self.edition);e['notes']=[{'title':'Test','text':'Test','source_url':'javascript:alert(1)','related_edition':'2026-11-02'}]
+        with self.assertRaises(ValueError):builder.validate(e)
+    def test_deadline_review_queue(self):
+        from datetime import datetime, timezone
+        report=queue.prepare(ROOT,datetime(2026,11,28,tzinfo=timezone.utc))['editorial']
+        by_id={item['item_id']:item for item in report['deadlines']}
+        self.assertTrue(by_id['praia-grande-exposicoes']['needs_review'])
+        self.assertEqual(by_id['praia-grande-exposicoes']['status'],'deadline_passed')
+        self.assertFalse(by_id['bertioga-orla']['needs_review'])
+        self.assertTrue(by_id['bertioga-orla']['has_later_editorial_note'])
+        latest=json.loads(sorted((ROOT/'data/boletim/edicoes').glob('*.json'))[-1].read_text())
+        self.assertEqual(report['latest_edition'],latest['date'])
+        expected=(datetime(2026,11,28,tzinfo=timezone.utc).date()-builder.stamp(latest['reviewed_at']).date()).days
+        self.assertEqual(report['days_since_last_review'],expected)
+        report=queue.prepare(ROOT,datetime(2026,11,21,tzinfo=timezone.utc))['editorial']
+        self.assertTrue(next(i for i in report['deadlines'] if i['item_id']=='praia-grande-exposicoes')['needs_review'])
     def test_newsletter_cannot_claim_signup(self):
         html=(ROOT/'newsletter/assinatura.html').read_text()
         self.assertNotIn('subscribeForm',html);self.assertNotIn('Confira sua caixa de entrada',html)
