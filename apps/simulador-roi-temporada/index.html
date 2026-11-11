@@ -23,207 +23,97 @@
     "provider": {"@type": "Organization", "name": "Praia Digital", "url": "https://praia.digital/"}
   }
   </script>
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4F6F8;color:#0F172A;line-height:1.6}
-    header{background:linear-gradient(135deg,#0A3D2E,#0EA5E9);color:#fff;padding:28px 20px;text-align:center}
-    header h1{font-size:clamp(1.3rem,4vw,1.9rem)}
-    header p{opacity:.92;margin-top:6px;font-size:14px}
-    .wrap{max-width:860px;margin:0 auto;padding:20px 16px 48px}
-    .card{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:20px;margin-bottom:14px;box-shadow:0 4px 20px rgba(0,0,0,.04)}
-    label{font-size:13px;font-weight:600;display:block;margin-bottom:4px}
-    input,select{width:100%;padding:10px;border:1px solid #DDD;border-radius:8px;font-size:15px}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    @media(max-width:640px){.grid{grid-template-columns:1fr}}
-    button{background:#0A3D2E;color:#fff;border:none;padding:14px 28px;border-radius:10px;font-size:16px;font-weight:700;cursor:pointer;width:100%;margin-top:14px}
-    .result{margin-top:16px;display:none}
-    .rrow{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #EEE;font-size:15px}
-    .rrow strong{color:#0A3D2E}
-    .big{font-size:1.6rem;font-weight:800;color:#0A3D2E;text-align:center;margin-top:10px}
-    .links{display:grid;gap:10px;margin-top:8px}
-    .links a{display:block;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px;text-decoration:none;color:#0F172A;font-weight:600}
-    .links a span{color:#0EA5E9}
-    footer{text-align:center;color:#94A3B8;font-size:12px;padding:20px}
-    .note{font-size:12px;color:#64748B;margin-top:12px}
-      table{width:100%;border-collapse:collapse;font-size:14px}
-    th{background:#F8FAFC;text-align:left;padding:8px 10px;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#475569}
-    td{padding:8px 10px;border-bottom:1px solid #F1F5F9}
-    .tag{display:inline-block;background:#ECFDF5;color:#065F46;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;margin-left:6px}
-    .faq details{border:1px solid #E5E7EB;border-radius:10px;margin-bottom:8px;background:#fff}
-    .faq summary{cursor:pointer;padding:12px 14px;font-weight:600;font-size:14px;list-style:none}
-    .faq summary::-webkit-details-marker{display:none}
-    .faq details p{padding:0 14px 12px;font-size:14px;color:#475569}
-    .links{display:grid;gap:10px;margin-top:8px}
-    .links a{display:block;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px;text-decoration:none;color:#0F172A;font-weight:600}
-    .links a span{color:#0EA5E9}
-  </style>
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qual ROI esperar de aluguel de temporada no litoral?","acceptedAnswer":{"@type":"Answer","text":"Bem localizado e com boa gestão, um imóvel de temporada no litoral rende 8–14% ao ano bruto sobre o valor de compra. Cidades baratas (Mongaguá, Peruíbe) têm menor receita absoluta, mas maior retorno percentual."}},{"@type":"Question","name":"O que mais impacta o ROI de temporada?","acceptedAnswer":{"@type":"Answer","text":"Ocupação (localização, avaliações, fotos), diária dinâmica por temporada, taxa das plataformas (~15–20%) e custos fixos: condomínio, IPTU, limpeza e manutenção."}},{"@type":"Question","name":"Vale comprar pensando só em temporada?","acceptedAnswer":{"@type":"Answer","text":"Depende do yield: acima de ~8% ao ano líquido, a temporada tende a superar o aluguel tradicional e o CDB. Use o simulador com ocupação conservadora (30–35%) antes de decidir."}},{"@type":"Question","name":"Alta temporada paga o ano todo?","acceptedAnswer":{"@type":"Answer","text":"Em geral, dezembro–março + feriados representam 60–70% da receita anual no litoral de SP. A baixa temporada define se o ROI fica positivo — precifique com descontos semanais e mensais."}}]}
-  </script>
-<link rel="stylesheet" href="/css/app-network.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Como interpretar o ROI deste simulador?", "acceptedAnswer": {"@type": "Answer", "text": "O ROI divide o saldo anual simulado pelo valor informado do imóvel. Ele depende das suas premissas; não é uma previsão de reservas nem uma recomendação de investimento. A conta não inclui valorização, custos de compra, venda ou financiamento."}}, {"@type": "Question", "name": "De onde vêm os valores por cidade?", "acceptedAnswer": {"@type": "Answer", "text": "A cidade serve apenas para identificar o cenário. Não aplicamos médias locais nem preenchemos diária e ocupação por cidade. Os valores iniciais são exemplos editáveis, sem validação de mercado. Use seu histórico ou comparáveis com fonte, período e características semelhantes."}}, {"@type": "Question", "name": "Como são calculados taxas e tributos?", "acceptedAnswer": {"@type": "Answer", "text": "A taxa informada da plataforma incide sobre a receita bruta. A provisão tributária informada incide sobre o saldo positivo após as despesas, apenas para simulação. Não é cálculo de carnê-leão, não aplica faixas progressivas e não confirma quais despesas são dedutíveis. Confira seu contrato e a tributação aplicável com profissional habilitado."}}, {"@type": "Question", "name": "Como entram disponibilidade e sazonalidade?", "acceptedAnswer": {"@type": "Answer", "text": "A ocupação é a porcentagem das noites que você disponibiliza, e não de 365 dias automaticamente. Desconte uso próprio e manutenção. A conta usa uma diária média constante: teste cenários de baixa e alta temporada, períodos sem reservas e compare com aluguel anual."}}]}</script>
+  <link rel="stylesheet" href="/css/app-network.css">
+  <link rel="stylesheet" href="/assets/css/roi-temporada.css?v=20261111-1">
+  <script defer src="/js/roi-temporada-core.js?v=20261111-1"></script>
+  <script defer src="/js/roi-temporada-ui.js?v=20261111-1"></script>
 </head>
 <body data-pd-app="simulador-roi-temporada">
-<a class="pd-skip" href="#pd-app-title">Ir para a ferramenta</a>
-<header>
-  <h1 id="pd-app-title" tabindex="-1">🧮 Simulador de ROI — Aluguel de Temporada</h1>
-  <p>Descubra a rentabilidade do seu imóvel no litoral de São Paulo • Gratuito, por Praia Digital</p>
-</header>
-<nav class="pd-network-nav" aria-label="Navegação da rede de aplicativos"><ul><li><a href="/">Página inicial</a></li><li><a href="/apps/">Todos os aplicativos</a></li><li><a href="/#jornadas-apps">Roteiros de análise</a></li></ul></nav>
-
-<div class="wrap">
-  <div class="card">
-    <div class="grid">
-      <div><label>Valor do imóvel (R$)</label><input type="number" id="valor" value="595000"></div>
-      <div><label>Diária média — ADR (R$)</label><input type="number" id="adr" value="750"></div>
-      <div><label>Ocupação anual (%)</label><input type="number" id="ocup" value="55"></div>
-      <div><label>Noites disponíveis por ano</label><input type="number" id="noites" value="200"></div>
-      <div><label>Custos anuais (R$) — limpeza, gestão, manutenção</label><input type="number" id="custos" value="38000"></div>
-      <div><label>Plataforma de reservas</label>
-        <select id="plataforma">
-          <option value="0">Direto (0%)</option>
-          <option value="15.5" selected>Airbnb — host-only (~15,5%)</option>
-          <option value="20">Booking (~20%; faixa 15–25%)</option>
-          <option value="25">Booking alto (25%)</option>
-        </select>
-      </div>
-      <div><label>IPTU anual (R$)</label><input type="number" id="iptu" value="2400"></div>
-      <div><label>Condomínio anual (R$)</label><input type="number" id="cond" value="7200"></div>
-      <div><label>IR sobre a renda (%) — carnê-leão progressivo até 27,5%</label><input type="number" id="ir" value="15"></div>
-      <div><label>Cidade (referência)</label>
-        <select id="cidade">
-          <option value="">Personalizado</option>
-          <option value="750,55">Bertioga (ADR R$750, 55%)</option>
-          <option value="900,68">São Sebastião (ADR R$900, 68%)</option>
-          <option value="1100,62">Ilhabela (ADR R$1.100, 62%)</option>
-          <option value="700,58">Ubatuba (ADR R$700, 58%)</option>
-          <option value="700,56">Guarujá (ADR R$700, 56%)</option>
-          <option value="450,50">Praia Grande (ADR R$450, 50%)</option>
-          <option value="850,51">Santos (ADR R$850, 51%)</option>
-        </select>
-      </div>
-    </div>
-    <button onclick="calcular()">Calcular rentabilidade</button>
-    <div class="result" id="result">
-      <div class="rrow"><span>Receita bruta anual</span><strong id="rBruta"></strong></div>
-      <div class="rrow"><span>Taxa da plataforma</span><strong id="rPlat"></strong></div>
-      <div class="rrow"><span>Custos + IPTU + condomínio</span><strong id="rCustos"></strong></div>
-      <div class="rrow"><span>IR estimado</span><strong id="rIR"></strong></div>
-      <div class="rrow"><span>Receita líquida anual</span><strong id="rLiq"></strong></div>
-      <div class="rrow"><span>ROI bruto</span><strong id="rRoiB"></strong></div>
-      <div class="rrow"><span>ROI líquido</span><strong id="rRoiL"></strong></div>
-      <div class="rrow"><span>Payback estimado</span><strong id="rPayback"></strong></div>
-      <div class="big" id="rBig"></div>
-      <p class="note">Estimativa baseada em parâmetros informados (dados coletados em set/2026). Taxas de plataforma: Airbnb ~15,5% (host-only), Booking 15–25%. IR via carnê-leão, faixas progressivas até 27,5%. Referências de mercado: AirDNA/Airbtics (litoral SP, 2026). Não constitui garantia de rendimento.</p>
-    </div>
+<a class="pd-skip skip-link" href="#pd-app-title">Ir para a ferramenta</a>
+<main class="roi-page">
+  <section class="roi-hero" aria-labelledby="pd-app-title">
+    <p class="roi-eyebrow">PRAIA DIGITAL · FERRAMENTA GRATUITA</p>
+    <h1 id="pd-app-title" tabindex="-1">Simulador de ROI de aluguel por temporada</h1>
+    <p>Compare receita, despesas e retorno anual do seu imóvel. Você define as premissas e confere o que muda em cada cenário.</p>
+  </section>
+  <nav class="pd-network-nav" aria-label="Navegação da rede de aplicativos"><ul><li><a href="/">Página inicial</a></li><li><a href="/ferramentas/">Ferramentas de temporada</a></li><li><a href="/apps/">Todos os aplicativos</a></li></ul></nav>
+  <div class="roi-wrap">
+    <section class="roi-card" aria-labelledby="roi-form-title">
+      <h2 id="roi-form-title">Monte seu cenário</h2>
+      <p id="roi-example" class="roi-info">Os valores iniciais são <strong>exemplos editáveis</strong>, não médias de mercado. A cidade não altera os números. Confira diária, disponibilidade, despesas e taxas do seu imóvel.</p>
+      <noscript><p>Ative o JavaScript para calcular. As fórmulas e limitações continuam disponíveis abaixo.</p></noscript>
+      <form id="roi-form" novalidate aria-describedby="roi-example">
+        <div class="roi-grid">
+          <div class="roi-field"><label for="valor">Valor do imóvel (R$)</label><input type="number" inputmode="decimal" id="valor" value="595000" min="0.01" step="0.01" required aria-describedby="valor-help valor-error"><p class="roi-help" id="valor-help">Base do retorno. Custos de aquisição e financiamento não estão incluídos.</p><p class="roi-error" id="valor-error"></p></div>
+          <div class="roi-field"><label for="adr">Diária média — ADR (R$)</label><input type="number" inputmode="decimal" id="adr" value="750" min="0" step="0.01" required aria-describedby="adr-help adr-error"><p class="roi-help" id="adr-help">Média das diárias vendidas, sem somar uma taxa de limpeza cobrada à parte.</p><p class="roi-error" id="adr-error"></p></div>
+          <div class="roi-field"><label for="ocup">Ocupação das noites disponíveis (%)</label><input type="number" inputmode="decimal" id="ocup" value="55" min="0" max="100" step="any" required aria-describedby="ocup-help ocup-error"><p class="roi-help" id="ocup-help">De 0% a 100% das noites que você disponibiliza no ano.</p><p class="roi-error" id="ocup-error"></p></div>
+          <div class="roi-field"><label for="noites">Noites disponíveis por ano</label><input type="number" inputmode="decimal" id="noites" value="200" min="0" max="365" step="1" required aria-describedby="noites-help noites-error"><p class="roi-help" id="noites-help">De 0 a 365. Desconte uso próprio, manutenção e bloqueios.</p><p class="roi-error" id="noites-error"></p></div>
+          <div class="roi-field"><label for="custos">Custos operacionais anuais (R$)</label><input type="number" inputmode="decimal" id="custos" value="38000" min="0" step="0.01" required aria-describedby="custos-help custos-error"><p class="roi-help" id="custos-help">Limpeza, gestão, manutenção e outros gastos. Não repita aqui plataforma, IPTU ou condomínio.</p><p class="roi-error" id="custos-error"></p></div>
+          <div class="roi-field"><label for="plataforma">Taxa da plataforma (%)</label><input type="number" inputmode="decimal" id="plataforma" value="15.5" min="0" max="100" step="any" required aria-describedby="plataforma-help plataforma-error"><p class="roi-help" id="plataforma-help">Exemplo de taxa efetiva sobre a receita. Confira seu contrato; para reservas diretas sem comissão, use 0.</p><p class="roi-error" id="plataforma-error"></p></div>
+          <div class="roi-field"><label for="iptu">IPTU anual (R$)</label><input type="number" inputmode="decimal" id="iptu" value="2400" min="0" step="0.01" required aria-describedby="iptu-error"><p class="roi-error" id="iptu-error"></p></div>
+          <div class="roi-field"><label for="cond">Condomínio anual (R$)</label><input type="number" inputmode="decimal" id="cond" value="7200" min="0" step="0.01" required aria-describedby="cond-error"><p class="roi-error" id="cond-error"></p></div>
+          <div class="roi-field"><label for="ir">Provisão tributária simulada (%)</label><input type="number" inputmode="decimal" id="ir" value="15" min="0" max="100" step="any" required aria-describedby="ir-help ir-error"><p class="roi-help" id="ir-help">Percentual sobre o saldo positivo após despesas. Não reproduz o carnê-leão nem valida deduções.</p><p class="roi-error" id="ir-error"></p></div>
+          <div class="roi-field"><label for="cidade">Cidade (identificação opcional)</label><select id="cidade" aria-describedby="cidade-help"><option value="">Sem cidade informada</option><option>Bertioga</option><option>São Sebastião</option><option>Ilhabela</option><option>Ubatuba</option><option>Caraguatatuba</option><option>Guarujá</option><option>Praia Grande</option><option>Santos</option><option>São Vicente</option><option>Itanhaém</option><option>Mongaguá</option><option>Peruíbe</option><option>Outra</option></select><p class="roi-help" id="cidade-help">Identifica seu cenário. Não aplica referências locais.</p></div>
+        </div>
+        <button class="roi-button" type="submit">Calcular rentabilidade</button>
+        <p id="roi-status" role="status" aria-live="polite" aria-atomic="true"></p>
+      </form>
+      <section id="result" class="roi-result" aria-labelledby="roi-result-title" hidden>
+        <h2 id="roi-result-title" tabindex="-1">Resultado do cenário</h2>
+        <p>Cidade: <span id="rCidade"></span></p>
+        <dl>
+          <div class="roi-row"><dt>Noites ocupadas estimadas</dt><dd id="rNoites"></dd></div>
+          <div class="roi-row"><dt>Receita bruta anual</dt><dd id="rBruta"></dd></div>
+          <div class="roi-row"><dt>Taxa da plataforma</dt><dd id="rPlat"></dd></div>
+          <div class="roi-row"><dt>Custos + IPTU + condomínio</dt><dd id="rCustos"></dd></div>
+          <div class="roi-row"><dt>Provisão tributária simulada</dt><dd id="rIR"></dd></div>
+          <div class="roi-row"><dt>Saldo líquido anual simulado</dt><dd id="rLiq"></dd></div>
+          <div class="roi-row"><dt>ROI bruto sobre o valor do imóvel</dt><dd id="rRoiB"></dd></div>
+          <div class="roi-row"><dt>ROI líquido simulado</dt><dd id="rRoiL"></dd></div>
+          <div class="roi-row"><dt>Prazo simples para recuperar o valor do imóvel</dt><dd id="rPayback"></dd></div>
+        </dl>
+        <p id="rBig" class="roi-summary"></p>
+        <p class="roi-help">Resultado educativo, não garantia de rentabilidade. O prazo de recuperação supõe saldo anual constante, sem desconto financeiro, valorização ou custos de compra e venda. Quando o saldo é zero ou negativo, não há recuperação neste cenário.</p>
+      </section>
+    </section>
+    <section class="roi-card" aria-labelledby="roi-method-title">
+      <h2 id="roi-method-title">De onde vêm as premissas</h2>
+      <p>Esta calculadora usa os números que você informa. As referências anteriores por cidade estavam inconsistentes entre a tabela e o preenchimento automático; por isso, não são usadas nesta versão. Não substituímos esses números por novas médias sem fonte verificável.</p>
+      <p>Para comparar imóveis, registre o período, o tipo de imóvel, a fonte e a quantidade de anúncios ou reservas. Preços anunciados não comprovam diárias vendidas ou ocupação.</p>
+      <h3>Como a conta funciona</h3>
+      <ul class="roi-formulas">
+        <li>Noites ocupadas = noites disponíveis × ocupação ÷ 100.</li>
+        <li>Receita bruta = diária média × noites ocupadas.</li>
+        <li>Saldo antes da provisão = receita bruta − plataforma − custos operacionais − IPTU − condomínio.</li>
+        <li>Provisão tributária = saldo positivo antes da provisão × percentual informado ÷ 100.</li>
+        <li>ROI líquido simulado = saldo após a provisão ÷ valor do imóvel × 100.</li>
+      </ul>
+      <p>A provisão é uma simplificação para planejar cenários, não apuração de imposto. A diária média constante não representa variações mensais de preço e demanda.</p>
+      <a href="/metodologia.html">Metodologia e limitações dos dados</a>
+    </section>
+    <section class="roi-card roi-faq" aria-labelledby="roi-faq-title">
+      <h2 id="roi-faq-title">Perguntas frequentes</h2>
+      <details><summary>Como interpretar o ROI deste simulador?</summary><p>O ROI divide o saldo anual simulado pelo valor informado do imóvel. Ele depende das suas premissas; não é uma previsão de reservas nem uma recomendação de investimento. A conta não inclui valorização, custos de compra, venda ou financiamento.</p></details>
+      <details><summary>De onde vêm os valores por cidade?</summary><p>A cidade serve apenas para identificar o cenário. Não aplicamos médias locais nem preenchemos diária e ocupação por cidade. Os valores iniciais são exemplos editáveis, sem validação de mercado. Use seu histórico ou comparáveis com fonte, período e características semelhantes.</p></details>
+      <details><summary>Como são calculados taxas e tributos?</summary><p>A taxa informada da plataforma incide sobre a receita bruta. A provisão tributária informada incide sobre o saldo positivo após as despesas, apenas para simulação. Não é cálculo de carnê-leão, não aplica faixas progressivas e não confirma quais despesas são dedutíveis. Confira seu contrato e a tributação aplicável com profissional habilitado.</p></details>
+      <details><summary>Como entram disponibilidade e sazonalidade?</summary><p>A ocupação é a porcentagem das noites que você disponibiliza, e não de 365 dias automaticamente. Desconte uso próprio e manutenção. A conta usa uma diária média constante: teste cenários de baixa e alta temporada, períodos sem reservas e compare com aluguel anual.</p></details>
+    </section>
+    <section class="roi-card" aria-labelledby="roi-next-title">
+      <h2 id="roi-next-title">Continue com a próxima pergunta</h2>
+      <ul class="roi-links">
+        <li><a href="/ferramentas/calculadora-ocupacao-airbnb-2026.html">Quantas noites preciso reservar?</a></li>
+        <li><a href="/ferramentas/calculadora-diaria-ideal-airbnb-2026.html">Qual diária cobre meus custos?</a></li>
+        <li><a href="/apps/temporada-ou-anual/">Como comparar temporada e aluguel anual?</a></li>
+        <li><a href="/bairros/">Conhecer os bairros do litoral</a></li>
+      </ul>
+      <p class="roi-help">Os links não transferem os dados desta simulação. Anote suas premissas antes de continuar.</p>
+    </section>
   </div>
-
-  <div class="card">
-    <h2 style="font-size:17px;margin-bottom:10px">🏖️ Diária e ocupação por cidade <span class="tag">set/2026</span></h2>
-    <p style="font-size:14px;color:#475569;margin-bottom:8px">Referências para apto 2 quartos bem avaliado em plataformas de temporada. Ocupação = média anual estimada (alta temporada chega a 90–100%).</p>
-    <table>
-      <tr><th>Cidade</th><th>Diária média</th><th>Alta temporada</th><th>Ocupação anual</th></tr>
-      <tr><td>São Sebastião (Maresias/Juquehy)</td><td>R$ 900</td><td>R$ 1.500–2.500</td><td>~35%</td></tr>
-      <tr><td>Ilhabela</td><td>R$ 800</td><td>R$ 1.300–2.200</td><td>~35%</td></tr>
-      <tr><td>Santos</td><td>R$ 450</td><td>R$ 700–1.000</td><td>~55%</td></tr>
-      <tr><td>Guarujá</td><td>R$ 450</td><td>R$ 700–1.100</td><td>~50%</td></tr>
-      <tr><td>Ubatuba</td><td>R$ 400</td><td>R$ 650–1.000</td><td>~35%</td></tr>
-      <tr><td>Praia Grande</td><td>R$ 320</td><td>R$ 500–750</td><td>~50%</td></tr>
-      <tr><td>Caraguatatuba</td><td>R$ 320</td><td>R$ 500–800</td><td>~35%</td></tr>
-      <tr><td>São Vicente</td><td>R$ 280</td><td>R$ 450–650</td><td>~45%</td></tr>
-      <tr><td>Bertioga</td><td>R$ 350</td><td>R$ 600–900 (Riviera: R$ 1.500+)</td><td>~35%</td></tr>
-      <tr><td>Itanhaém</td><td>R$ 250</td><td>R$ 400–600</td><td>~35%</td></tr>
-      <tr><td>Mongaguá</td><td>R$ 220</td><td>R$ 350–550</td><td>~35%</td></tr>
-      <tr><td>Peruíbe</td><td>R$ 200</td><td>R$ 320–500</td><td>~30%</td></tr>
-    </table>
-    <p style="font-size:12px;color:#64748B;margin-top:12px">Estimativas Praia Digital (set/2026) a partir de anúncios ativos em plataformas de temporada. Gestão profissional e boas avaliações elevam a ocupação.</p>
-  </div>
-
-  <div class="card faq">
-    <h2 style="font-size:17px;margin-bottom:10px">❓ Perguntas frequentes</h2>
-    <details><summary>Qual ROI esperar de aluguel de temporada no litoral?</summary><p>Bem localizado e com boa gestão, um imóvel de temporada no litoral rende 8–14% ao ano bruto sobre o valor de compra. Cidades baratas (Mongaguá, Peruíbe) têm menor receita absoluta, mas maior retorno percentual.</p></details>
-    <details><summary>O que mais impacta o ROI de temporada?</summary><p>Ocupação (localização, avaliações, fotos), diária dinâmica por temporada, taxa das plataformas (~15–20%) e custos fixos: condomínio, IPTU, limpeza e manutenção.</p></details>
-    <details><summary>Vale comprar pensando só em temporada?</summary><p>Depende do yield: acima de ~8% ao ano líquido, a temporada tende a superar o aluguel tradicional e o CDB. Use o simulador com ocupação conservadora (30–35%) antes de decidir.</p></details>
-    <details><summary>Alta temporada paga o ano todo?</summary><p>Em geral, dezembro–março + feriados representam 60–70% da receita anual no litoral de SP. A baixa temporada define se o ROI fica positivo — precifique com descontos semanais e mensais.</p></details>
-  </div>
-
-  <div class="card">
-    <h2 style="font-size:17px;margin-bottom:10px">📍 Aprofunde por bairro</h2>
-    <div class="links">
-      <a href="/bairros/"><span>🏙️ Índice de bairros</span> — 123 bairros em 12 cidades do litoral</a>
-      <a href="/bairros/santos/index.html">Santos — Gonzaga, Boqueirão, Pompéia e mais</a>
-      <a href="/bairros/guaruja/index.html">Guarujá — Enseada, Pitangueiras, Astúrias e mais</a>
-      <a href="/bairros/sao-sebastiao/index.html">São Sebastião — Maresias, Juquehy, Barra do Sahy e mais</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2 style="font-size:17px;margin-bottom:10px">🔗 Explore mais</h2>
-    <div class="links">
-      <a href="/">🏠 <span>Praia Digital</span> — imóveis no litoral de São Paulo</a>
-      <a href="/encontrar-imovel.html">🔍 Encontrar imóvel ranqueado por score</a>
-      <a href="/dados-ocupacao-temporada-litoral-sp-2026.html">📊 Dados de ocupação de temporada no litoral SP</a>
-      <a href="/casa-condominio-fechado-bertioga.html">🏖️ Exemplo real: casa em Bertioga com ROI projetado</a>
-      <a href="https://acarolmourad-commits.github.io/asf-app/previsao-surf/" target="_blank" rel="noopener">🌊 <span>ASF</span> — previsão de ondas em tempo real no litoral</a>
-      <a href="https://acarolmourad-commits.github.io/asf-app/" target="_blank" rel="noopener">🏄‍♀️ ASF — Associação de Surf Feminino</a>
-    </div>
-  </div>
-</div>
-<footer>Praia Digital — Tecnologia imobiliária do litoral • <a href="/" style="color:#0EA5E9">praia.digital</a></footer>
-
-<script>
-const sel = document.getElementById('cidade');
-sel.addEventListener('change', function(){
-  if(!this.value) return;
-  const [adr, ocup] = this.value.split(',');
-  document.getElementById('adr').value = adr;
-  document.getElementById('ocup').value = ocup;
-});
-function fmt(v){ return 'R$ ' + Math.round(v).toLocaleString('pt-BR'); }
-function calcular(){
-  const v = parseFloat(document.getElementById('valor').value)||0;
-  const a = parseFloat(document.getElementById('adr').value)||0;
-  const o = parseFloat(document.getElementById('ocup').value)||0;
-  const n = parseFloat(document.getElementById('noites').value)||0;
-  const c = parseFloat(document.getElementById('custos').value)||0;
-  const plat = parseFloat(document.getElementById('plataforma').value)||0;
-  const iptu = parseFloat(document.getElementById('iptu').value)||0;
-  const cond = parseFloat(document.getElementById('cond').value)||0;
-  const ir = parseFloat(document.getElementById('ir').value)||0;
-  if(v<=0){ alert('Informe o valor do imóvel.'); return; }
-  const bruta = a*(o/100)*n;
-  const taxaPlat = bruta*plat/100;
-  const basePre = bruta - taxaPlat - c - iptu - cond;
-  const imposto = Math.max(0, basePre)*ir/100;
-  const liq = basePre - imposto;
-  document.getElementById('rBruta').textContent = fmt(bruta);
-  document.getElementById('rPlat').textContent = '− ' + fmt(taxaPlat);
-  document.getElementById('rCustos').textContent = '− ' + fmt(c+iptu+cond);
-  document.getElementById('rIR').textContent = '− ' + fmt(imposto);
-  document.getElementById('rLiq').textContent = fmt(liq);
-  document.getElementById('rRoiB').textContent = (bruta/v*100).toFixed(1)+'% ao ano';
-  document.getElementById('rRoiL').textContent = (liq/v*100).toFixed(1)+'% ao ano';
-  document.getElementById('rPayback').textContent = liq>0 ? (v/liq).toFixed(1)+' anos' : '—';
-  const roiL = liq/v*100;
-  document.getElementById('rBig').textContent = roiL>=10 ? '🏆 Excelente investimento para temporada!' : roiL>=6 ? '👍 Bom potencial — otimize ocupação e ADR.' : '🤔 Retorno modesto — revise custos ou precificação.';
-  document.getElementById('result').style.display = 'block';
-}
-</script>
-
-<!-- Praia Digital Apps: rede de interlinks -->
-<section style="max-width:760px;margin:32px auto 0;padding:0 16px 32px">
-  <h2 style="font-size:1.05rem;margin-bottom:12px">🧰 Explore todos os apps gratuitos da Praia Digital</h2>
-  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px">
-    <a href="/apps/alugar-ou-comprar/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">⚖️</span><span><b>Alugar ou Comprar?</b><br><small style="color:#64748B">Ponto de equilíbrio aluguel vs. financiamento</small></span></a><a href="/apps/valor-imovel/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">💰</span><span><b>Quanto Vale Meu Imóvel?</b><br><small style="color:#64748B">Estimativa instantânea por cidade, m² e diferenciais</small></span></a><a href="/apps/checklist-vistoria/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">📋</span><span><b>Checklist de Vistoria</b><br><small style="color:#64748B">Vistorie imóveis com score de qualidade</small></span></a><a href="/apps/comparador-cidades/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">📊</span><span><b>Comparador de Cidades</b><br><small style="color:#64748B">Ranqueie o litoral pelo seu perfil</small></span></a><a href="/apps/calculadora-consorcio/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🏦</span><span><b>Calculadora de Consórcio</b><br><small style="color:#64748B">Parcela, lance e economia vs. financiamento</small></span></a><a href="/apps/calculadora-financiamento/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🏠</span><span><b>Simulador de Financiamento</b><br><small style="color:#64748B">SAC vs. Price: parcelas, juros e custo total</small></span></a><a href="/apps/custo-de-compra/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🧾</span><span><b>Custos de Compra</b><br><small style="color:#64748B">ITBI, escritura, registro e custo de fechamento</small></span></a><a href="/apps/planejador-entrada/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🎯</span><span><b>Planejador de Entrada</b><br><small style="color:#64748B">Quanto guardar por mês para juntar a entrada</small></span></a><a href="/apps/calculadora-valorizacao/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">📈</span><span><b>Valorização Projetada</b><br><small style="color:#64748B">Projete o valor futuro do imóvel por cidade</small></span></a>
-  </div>
-  <p style="margin-top:14px;font-size:13px;color:#64748B;text-align:center">
-    <a href="/apps/" style="color:#0EA5E9">Ver índice completo de apps</a> ·
-    <a href="/" style="color:#0EA5E9">Praia Digital</a> ·
-    <a href="/encontrar-imovel.html" style="color:#0EA5E9">Encontrar imóvel</a>
-  </p>
-</section>
-
-<script defer src="/js/shared.js"></script><script defer src="/assets/js/related-ads.js"></script>
-<section class="pd-guide" aria-labelledby="pd-guide-title"><h2 id="pd-guide-title">Como usar esta análise com segurança</h2><ol><li>Simule diferentes ocupações e diárias, incluindo baixa temporada e períodos sem reservas.</li><li>Confira custos de operação, manutenção, administração e tributos aplicáveis ao imóvel.</li><li>Compare o cenário com aluguel anual; estimativas não garantem receita ou retorno.</li></ol><p class="pd-network-note">As premissas, taxas e tabelas preexistentes precisam de conferência de fonte e data. Este conteúdo não atualiza nem valida essas premissas. Simulações educativas não são propostas bancárias, garantia de retorno ou orientação jurídica e tributária individual.</p></section>
 <section class="pd-network" aria-labelledby="pd-network-title"><h2 id="pd-network-title">Continue sua análise</h2><p>Combine ferramentas para comparar cenários e organizar decisões.</p><ul class="pd-network-grid"><li><a href="/apps/alugar-ou-comprar/">Alugar ou comprar</a></li><li><a href="/apps/calculadora-consorcio/">Consórcio</a></li><li><a href="/apps/calculadora-financiamento/">Financiamento</a></li><li><a href="/apps/calculadora-precificacao-shopee/">Precificação Shopee</a></li><li><a href="/apps/calculadora-valorizacao/">Valorização</a></li><li><a href="/apps/checklist-vistoria/">Checklist de vistoria</a></li><li><a href="/apps/comparador-cidades/">Comparar cidades</a></li><li><a href="/apps/custo-de-compra/">Custo de compra</a></li><li><a href="/apps/planejador-entrada/">Planejar entrada</a></li><li><a href="/apps/renda-para-financiar/">Renda para financiar</a></li><li><a href="/apps/temporada-ou-anual/">Temporada ou anual</a></li><li><a href="/apps/valor-imovel/">Estimar valor do imóvel</a></li></ul></section>
+</main>
+<footer class="roi-footer"><p>Praia Digital · Ferramentas para analisar imóveis no litoral</p><a href="/ferramentas/">Ferramentas de temporada</a> · <a href="/apps/">Todos os aplicativos</a> · <a href="/politica-de-privacidade.html">Privacidade</a></footer>
+<script defer src="/js/shared.js"></script>
+<script defer src="/assets/js/related-ads.js"></script>
 </body>
 </html>
