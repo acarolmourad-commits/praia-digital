@@ -10,6 +10,8 @@ on:
       - 'blog/novidades-*.html'
       - 'tests/test_marketplaces_editorial.py'
       - 'tests/marketplaces-browser.cjs'
+      - 'sitemap-marketplaces.xml'
+      - 'robots.txt'
       - '.github/workflows/marketplaces-checks.yml'
       - '.github/workflows/sentinela-airbnb-booking.yml'
   workflow_dispatch:

@@ -5,6 +5,7 @@ import re
 import sys
 import tempfile
 import unittest
+import xml.etree.ElementTree as ET
 from contextlib import redirect_stdout
 from pathlib import Path
 from unittest.mock import patch
@@ -36,6 +37,18 @@ class EditorialTests(unittest.TestCase):
                 self.assertIn(old['file'], by_file)
         self.assertEqual(by_file['novidades-20261021-194712-airbnb-resources.html']['source_published'], '2026-09-30')
         self.assertEqual(by_file['novidades-20261110-111146-airbnb-news.html']['source_published'], '2026-11-09')
+
+    def test_reviewed_sitemap(self):
+        import validate_sitemap_targets as validator
+        self.assertEqual(validator.validate_sitemap(ROOT / 'sitemap-marketplaces.xml', ROOT), [])
+        self.assertIn('Sitemap: https://praia.digital/sitemap-marketplaces.xml', (ROOT / 'robots.txt').read_text())
+        ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
+        urls = ET.parse(ROOT / 'sitemap-marketplaces.xml').findall('s:url', ns)
+        expected = {'https://praia.digital/blog/' + a['file'] for a in self.data['articles']}
+        expected.add('https://praia.digital/blog/novidades-airbnb-booking.html')
+        self.assertEqual({u.findtext('s:loc', namespaces=ns) for u in urls}, expected)
+        for url in urls:
+            self.assertEqual(url.findtext('s:lastmod', namespaces=ns), self.data['reviewed_on'])
 
     def test_invalid_source_paths_dates_and_duplicates_rejected(self):
         mutations = [
