@@ -2,6 +2,7 @@
 """Render only explicitly reviewed editions. No scraping, invented metrics or clock-based freshness."""
 import argparse
 import html
+import hashlib
 import json
 import re
 from datetime import datetime, timezone
@@ -87,13 +88,15 @@ def validate(edition, as_of=None):
 
 def page(root, title, path, body, description, edition=None):
     header = (root / 'partials/header.html').read_text(encoding='utf-8')
+    css_version = hashlib.sha256((root / 'assets/css/boletim.css').read_bytes()).hexdigest()[:12]
+    js_version = hashlib.sha256((root / 'js/boletim.js').read_bytes()).hexdigest()[:12]
     schema = {'@context': 'https://schema.org', '@type': 'CollectionPage', 'name': title, 'url': BASE + path, 'inLanguage': 'pt-BR', 'description': description}
     if edition:
         schema.update(datePublished=edition['reviewed_at'], dateModified=modified_at(edition))
     return f'''<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)} — Praia Digital</title><meta name="description" content="{esc(description)}"><link rel="canonical" href="{BASE}{path}">
 <meta property="og:type" content="website"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(description)}"><meta property="og:url" content="{BASE}{path}"><meta property="og:image" content="{BASE}/img/default-home.jpg"><meta name="twitter:card" content="summary_large_image">
-<link rel="alternate" type="application/rss+xml" title="Boletim Praia Digital" href="{PATH}feed.xml"><link rel="stylesheet" href="/assets/css/pd-navigation.css?v=3"><link rel="stylesheet" href="/assets/css/boletim.css"><script defer src="/js/pd-navigation.js?v=3"></script><script defer src="/js/boletim.js"></script>
+<link rel="alternate" type="application/rss+xml" title="Boletim Praia Digital" href="{PATH}feed.xml"><link rel="stylesheet" href="/assets/css/pd-navigation.css?v=3"><link rel="stylesheet" href="/assets/css/boletim.css?v={css_version}"><script defer src="/js/pd-navigation.js?v=3"></script><script defer src="/js/boletim.js?v={js_version}"></script>
 <script type="application/ld+json">{json.dumps(schema, ensure_ascii=False).replace('<', '\\u003c')}</script></head><body><a class="bulletin-skip" href="#main">Pular para o conteúdo</a>{header}
 <main id="main" class="bulletin-wrap">{body}</main><footer class="bulletin-footer"><div class="bulletin-wrap">Praia Digital · Inteligência com fontes e contexto.<br><a href="/politica-de-privacidade.html">Privacidade</a> · <a href="/interesse.html">Contato e correções</a></div></footer></body></html>'''
 

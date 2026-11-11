@@ -42,6 +42,12 @@ class BulletinTests(unittest.TestCase):
         before={p:p.read_bytes() for p in files};builder.build(ROOT)
         for p,data in before.items():self.assertEqual(p.read_bytes(),data,str(p))
         self.assertNotIn('new Date', (ROOT/'js/boletim.js').read_text())
+    def test_changed_assets_have_content_versions(self):
+        import hashlib
+        html=(ROOT/'docs/inteligencia/boletim-diario.html').read_text()
+        for file in ['assets/css/boletim.css','js/boletim.js']:
+            version=hashlib.sha256((ROOT/file).read_bytes()).hexdigest()[:12]
+            self.assertIn('/'+file+'?v='+version,html)
     def test_current_page_integrity(self):
         html=(ROOT/'docs/inteligencia/boletim-diario.html').read_text()
         for phrase in ['Yield ~','Score 99','Sem dados inventados','158.2%']:
