@@ -1,246 +1,100 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="pd-rent-buy-root">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alugar ou Comprar no Litoral? — Comparador Financeiro | Praia Digital</title>
-  <meta name="description" content="Alugar ou comprar imóvel no litoral de SP? Compare custos de aluguel vs. financiamento, ponto de equilíbrio e patrimônio acumulado. Ferramenta gratuita Praia Digital.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://praia.digital/apps/alugar-ou-comprar/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Alugar ou Comprar no Litoral? | Praia Digital">
-  <meta property="og:description" content="Comparador financeiro: aluguel vs. compra de imóvel no litoral paulista.">
-  <meta property="og:url" content="https://praia.digital/apps/alugar-ou-comprar/">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Alugar ou Comprar no Litoral?",
-    "url": "https://praia.digital/apps/alugar-ou-comprar/",
-    "applicationCategory": "FinanceApplication",
-    "operatingSystem": "Web",
-    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BRL"},
-    "provider": {"@type": "Organization", "name": "Praia Digital", "url": "https://praia.digital/"}
-  }
-  </script>
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4F6F8;color:#0F172A;line-height:1.6}
-    header{background:linear-gradient(135deg,#0A3D2E,#0EA5E9);color:#fff;padding:28px 20px;text-align:center}
-    header h1{font-size:clamp(1.3rem,4vw,1.9rem)}
-    .wrap{max-width:860px;margin:0 auto;padding:20px 16px 48px}
-    .card{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:20px;margin-bottom:14px;box-shadow:0 4px 20px rgba(0,0,0,.04)}
-    label{font-size:13px;font-weight:600;display:block;margin:8px 0 3px}
-    input{width:100%;padding:10px;border:1px solid #DDD;border-radius:8px;font-size:15px}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    @media(max-width:640px){.grid{grid-template-columns:1fr}}
-    button{background:#0A3D2E;color:#fff;border:none;padding:14px 28px;border-radius:10px;font-size:16px;font-weight:700;cursor:pointer;width:100%;margin-top:14px}
-    .result{display:none;margin-top:16px}
-    .rrow{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #EEE;font-size:14px;gap:8px;flex-wrap:wrap}
-    .rrow strong{color:#0A3D2E}
-    .verdict{text-align:center;font-size:1.15rem;font-weight:800;padding:14px;border-radius:12px;margin-top:12px}
-    .links{display:grid;gap:10px;margin-top:8px}
-    .links a{display:block;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px;text-decoration:none;color:#0F172A;font-weight:600}
-    .links a span{color:#0EA5E9}
-    footer{text-align:center;color:#94A3B8;font-size:12px;padding:20px}
-    .note{font-size:12px;color:#64748B;margin-top:12px}
-    table{width:100%;border-collapse:collapse;font-size:14px}
-    th{background:#F8FAFC;text-align:left;padding:8px 10px;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#475569}
-    td{padding:8px 10px;border-bottom:1px solid #F1F5F9}
-    tr:last-child td{border-bottom:none}
-    td a{color:#0EA5E9;text-decoration:none;font-weight:600}
-    .tag{display:inline-block;background:#ECFDF5;color:#065F46;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;margin-left:6px}
-    .faq details{border:1px solid #E5E7EB;border-radius:10px;margin-bottom:8px;background:#fff}
-    .faq summary{cursor:pointer;padding:12px 14px;font-weight:600;font-size:14px;list-style:none}
-    .faq summary::-webkit-details-marker{display:none}
-    .faq details p{padding:0 14px 12px;font-size:14px;color:#475569}
-    .badge{padding:2px 8px;border-radius:999px;font-size:11px;font-weight:800}
-    .b-rent{background:#DBEAFE;color:#1E40AF}
-    .b-buy{background:#D1FAE5;color:#065F46}
-    .b-tie{background:#FEF3C7;color:#92400E}
-
-  </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {"@type": "Question", "name": "Vale mais a pena alugar ou comprar imóvel no litoral de SP em 2026?", "acceptedAnswer": {"@type": "Answer", "text": "Com a Selic em 13,75% a.a. e financiamento a partir de 11,19% a.a., alugar tende a ser mais barato para permanências curtas (até ~5 anos), pois a entrada rende ~13,6% a.a. em CDB. Comprar ganha em horizontes de 10–15 anos ou quando o yield anual do aluguel supera ~8% do valor do imóvel."}},
-      {"@type": "Question", "name": "O que é o yield do aluguel e como interpretar?", "acceptedAnswer": {"@type": "Answer", "text": "Yield é o aluguel anual dividido pelo preço do imóvel. Abaixo de ~6% a.a., alugar costuma sair mais barato; entre 6% e 8%, o resultado depende do prazo; acima de ~8%, comprar tende a ser vantajoso."}},
-      {"@type": "Question", "name": "Como o IGP-M baixo afeta meu aluguel em 2026?", "acceptedAnswer": {"@type": "Answer", "text": "Com o IGP-M em 12 meses em apenas 0,95% (jul/2026), contratos reajustados por esse índice ficam praticamente congelados. Na renovação, vale negociar a troca pelo IPCA (4,22% em 12 meses) ou usar o índice baixo como argumento."}},
-      {"@type": "Question", "name": "Quanto custa comprar um imóvel além do valor de venda?", "acceptedAnswer": {"@type": "Answer", "text": "No litoral de SP, some ITBI (2–3% conforme o município), escritura e registro em cartório (~1%) e eventuais custos de avaliação do banco. Um imóvel de R$ 500 mil pode ter R$ 15–20 mil de custos de fechamento."}},
-      {"@type": "Question", "name": "Tabela Price ou SAC: qual escolher?", "acceptedAnswer": {"@type": "Answer", "text": "Na Price a parcela é fixa; no SAC começa ~20–30% mais alta e cai todo mês, com menos juros totais. Se o orçamento comporta a parcela inicial do SAC (dentro do limite de 30% da renda), ele costuma ser mais barato no longo prazo."}}
-    ]
-  }
-  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alugar ou Comprar no Litoral? Comparador Patrimonial | Praia Digital</title>
+<meta name="description" content="Compare o patrimônio de comprar ou alugar e investir. Simule Price ou SAC, custos, saldo devedor, retorno líquido e cenários no mesmo horizonte.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://praia.digital/apps/alugar-ou-comprar/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Alugar ou Comprar no Litoral? | Praia Digital">
+<meta property="og:description" content="Compare patrimônios, custos e cenários com premissas transparentes.">
+<meta property="og:url" content="https://praia.digital/apps/alugar-ou-comprar/">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Alugar ou Comprar no Litoral?", "url": "https://praia.digital/apps/alugar-ou-comprar/", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BRL"}, "provider": {"@type": "Organization", "name": "Praia Digital", "url": "https://praia.digital/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "O simulador decide se devo comprar?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Ele compara patrimônios nominais em um cenário, considerando o mesmo capital inicial e o investimento das diferenças de custo. Capacidade de pagamento, risco, liquidez, mobilidade e preferências pessoais precisam de avaliação separada."}}, {"@type": "Question", "name": "O yield do aluguel determina o resultado?", "acceptedAnswer": {"@type": "Answer", "text": "Não. O yield inicial é o aluguel de 12 meses dividido pelo preço. Um aluguel relativamente baixo reduz o custo de alugar, mas não determina a melhor escolha sozinho. A conclusão vem dos patrimônios líquidos calculados."}}, {"@type": "Question", "name": "O que muda entre Price e SAC?", "acceptedAnswer": {"@type": "Answer", "text": "Com juros fixos e sem correção do saldo, a Price mantém a parcela de juros e amortização constante. No SAC, a amortização é constante e a parcela diminui. Correção do saldo, seguros e tarifas podem alterar o desembolso."}}, {"@type": "Question", "name": "O horizonte precisa ser igual ao prazo do financiamento?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Se você sair antes da quitação, o saldo devedor é descontado da venda. Depois da quitação, não há mais parcelas nem os encargos mensais do financiamento, mas manutenção e outros custos da compra continuam."}}, {"@type": "Question", "name": "As taxas preenchidas são dados de mercado atuais?", "acceptedAnswer": {"@type": "Answer", "text": "Não. São exemplos editáveis, sem atualização automática. Use uma proposta bancária, seu contrato de aluguel, custos documentados e hipóteses próprias de valorização e retorno líquido."}}, {"@type": "Question", "name": "A provisão de imposto calcula ganho de capital?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Informe uma estimativa nominal em reais, obtida para o seu caso. O simulador não aplica alíquotas, isenções, deduções ou regras de ganho de capital. Zero não significa isenção."}}]}</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9562601722232986" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="/css/app-network.css">
+<link rel="stylesheet" href="/assets/css/alugar-comprar.css">
+<script defer src="/js/alugar-comprar-core.js"></script>
+<script defer src="/js/alugar-comprar-ui.js"></script>
 </head>
-<body data-pd-app="alugar-ou-comprar">
-<a class="pd-skip" href="#pd-app-title">Ir para a ferramenta</a>
-<header>
-  <h1 id="pd-app-title" tabindex="-1">⚖️ Alugar ou Comprar no Litoral?</h1>
-  <p>A resposta em números, não em opinião • Praia Digital</p>
-</header>
-<nav class="pd-network-nav" aria-label="Navegação da rede de aplicativos"><ul><li><a href="/">Página inicial</a></li><li><a href="/apps/">Todos os aplicativos</a></li><li><a href="/#jornadas-apps">Roteiros de análise</a></li></ul></nav>
-
-<div class="wrap">
-  <div class="card">
-    <div class="grid">
-      <div><label>Valor do imóvel (R$)</label><input type="number" id="valor" value="595000"></div>
-      <div><label>Aluguel mensal equivalente (R$)</label><input type="number" id="aluguel" value="2800"></div>
-      <div><label>Entrada disponível (R$)</label><input type="number" id="entrada" value="120000"></div>
-      <div><label>Taxa de financiamento (% a.a.)</label><input type="number" id="taxa" step="0.01" value="11.19"></div>
-      <div><label>Prazo (anos)</label><input type="number" id="anos" value="20"></div>
-      <div><label>Valorização anual do imóvel (%)</label><input type="number" id="valoriz" value="7"></div>
-      <div><label>Reajuste anual do aluguel (%) — IPCA 12m</label><input type="number" id="reajAluguel" step="0.01" value="4.22"></div>
-    </div>
-    <button onclick="calc()">Comparar ⚖️</button>
-    <div class="result" id="res">
-      <div class="rrow"><span>Parcela do financiamento (Price)</span><strong id="rParc"></strong></div>
-      <div class="rrow"><span>Diferença mensal (parcela − aluguel)</span><strong id="rDif"></strong></div>
-      <div class="rrow"><span>Total pago em aluguel no prazo</span><strong id="rAlug"></strong></div>
-      <div class="rrow"><span>Valor do imóvel ao fim do prazo</span><strong id="rImovel"></strong></div>
-      <div class="verdict" id="rVerdict"></div>
-      <p class="note">⚠️ Simulação simplificada (Tabela Price, sem ITBI/cartório/manutenção; aluguel reajustado anualmente pelo índice informado). Ferramenta educativa — decisões reais merecem assessoria profissional.</p>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2 style="font-size:17px;margin-bottom:10px">📚 Alugar ou comprar: o cenário em setembro de 2026</h2>
-    <ul style="margin:0 0 0 18px;font-size:14px;display:grid;gap:10px">
-      <li><strong>Selic em 13,75% a.a.</strong> — o Copom cortou a taxa básica de 14% para 13,75% em 16/09/2026, o 5º corte seguido, e o mercado projeta algo entre 13,25% e 13,75% até o fim de 2026. Juros ainda altos encarecem o financiamento, mas o ciclo de queda melhora as condições de compra mês a mês. <a href="https://g1.globo.com/economia/noticia/2026/09/16/copom-reduz-a-taxa-basica-de-juros-da-economia-a-selic-de-14percent-para-1375percent-ao-ano.ghtml" target="_blank" rel="noopener" style="color:#0EA5E9">fonte: G1</a></li>
-      <li><strong>Financiamento Caixa (SBPE) a partir de 11,19% a.a.</strong> — menor taxa nominal em agosto/2026, variando conforme relacionamento bancário, entrada e prazo. Compare sempre o <strong>CET (Custo Efetivo Total)</strong>, que inclui seguros e taxas administrativas, não só os juros nominais.</li>
-      <li><strong>Regra dos 30%:</strong> os bancos limitam a parcela do financiamento a cerca de 30% da renda familiar comprovada — use isso para calibrar o valor do imóvel que cabe no seu bolso.</li>
-      <li><strong>Sinal do aluguel (yield anual):</strong> divida o aluguel anual pelo preço do imóvel. Abaixo de ~6% ao ano, alugar costuma sair barato; acima de ~8%, comprar tende a ser mais vantajoso.</li>
-      <li><strong>Horizonte de permanência manda:</strong> com CDI elevado, imobilizar a entrada tem alto custo de oportunidade — para ficar <strong>menos de ~5 anos</strong>, alugar tende a vencer; acima de <strong>10–15 anos</strong>, comprar ganha, principalmente usando FGTS na entrada/amortização ou linhas subsidiadas como o Minha Casa Minha Vida.</li>
-      <li><strong>Custos que o simulador não mostra:</strong> na compra, some ITBI (no litoral de SP, em geral 2–3% do valor, conforme o município), escritura e registro em cartório (~1%) e manutenção. No aluguel, o reajuste anual segue índice de inflação (IPCA ou IGP-M), conforme a Lei do Inquilinato (8.245/1991).</li>
-      <li><strong>Price ou SAC?</strong> Na Tabela Price a parcela é fixa; no SAC começa mais alta e cai ao longo do tempo, com menos juros totais. Se o orçamento permite a parcela inicial do SAC, ele costuma ser mais barato no longo prazo.</li>
-    </ul>
-    <p class="note">Dados de juros apurados em 17/09/2026 (Copom/Banco Central, Caixa). Condições de crédito variam por perfil — confirme com seu banco antes de decidir.</p>
-  </div>
-  <div class="card">
-    <h2 style="font-size:17px;margin-bottom:10px">📊 Números oficiais hoje (Banco Central, 29/09/2026)</h2>
-    <ul style="margin:0 0 0 18px;font-size:14px;display:grid;gap:10px">
-      <li><strong>Selic efetiva: 13,66% a.a.</strong> (meta 13,75% após o corte do Copom de 16/09/2026). Cada corte de 0,25 ponto na Selic tende a pressionar as taxas de financiamento nos meses seguintes.</li>
-      <li><strong>IPCA em 12 meses: 4,22%</strong> (ago/2026) — reajuste típico de aluguel por aniversário de contrato.</li>
-      <li><strong>IGP-M em 12 meses: apenas 0,95%</strong> (jul/2026) — contratos com IGP-M praticamente congelados; vale negociar troca para IPCA na renovação.</li>
-      <li><strong>Custo de oportunidade da entrada:</strong> poupança ~0,67%/mês (~8,3% a.a.), TR 0,166%/mês; CDB ~100% CDI (~13,6% a.a.) faria R$ 120 mil renderem ~R$ 1.360/mês — comparar com o aluguel antes de imobilizar.</li>
-      <li><strong>Valorização realista:</strong> faixa conservadora litoral paulista 6–8% a.a.; acima de 10% só em bairros em forte expansão. Ver <a href="https://praia.digital/apps/comparador-cidades/">Comparador de Cidades</a>.</li>
-    </ul>
-    <p class="note">Fontes: API de dados abertos do Banco Central do Brasil (séries SGS 11, 13522, 4175, 226), apurado em 29/09/2026.</p>
-  </div>
-
-  <div class="card">
-    <h2 style="font-size:17px;margin-bottom:10px">🏘️ Aluguel vs. compra por cidade <span class="tag">set/2026</span></h2>
-    <p style="font-size:14px;color:#475569;margin-bottom:8px">Exemplo de apartamento de 2 quartos (60–75 m²): preço médio de venda, aluguel mensal típico e yield anual. Quanto maior o yield, mais a compra se aproxima do empate.</p>
-    <table>
-      <tr><th>Cidade</th><th>Preço típico</th><th>Aluguel/mês</th><th>Yield a.a.</th><th>Tendência</th></tr>
-      <tr><td><a href="/bairros/santos/index.html">Santos</a></td><td>R$ 560 mil</td><td>R$ 2.800</td><td>6,0%</td><td><span class="badge b-tie">empate</span></td></tr>
-      <tr><td><a href="/bairros/ilhabela/index.html">Ilhabela</a></td><td>R$ 540 mil</td><td>R$ 2.600</td><td>5,8%</td><td><span class="badge b-rent">alugar</span></td></tr>
-      <tr><td><a href="/bairros/sao-sebastiao/index.html">São Sebastião</a></td><td>R$ 488 mil</td><td>R$ 2.400</td><td>5,9%</td><td><span class="badge b-rent">alugar</span></td></tr>
-      <tr><td><a href="/bairros/guaruja/index.html">Guarujá</a></td><td>R$ 368 mil</td><td>R$ 2.100</td><td>6,8%</td><td><span class="badge b-tie">empate</span></td></tr>
-      <tr><td><a href="/bairros/sao-vicente/index.html">São Vicente</a></td><td>R$ 315 mil</td><td>R$ 1.900</td><td>7,2%</td><td><span class="badge b-buy">comprar</span></td></tr>
-      <tr><td><a href="/bairros/ubatuba/index.html">Ubatuba</a></td><td>R$ 308 mil</td><td>R$ 1.800</td><td>7,0%</td><td><span class="badge b-tie">empate</span></td></tr>
-      <tr><td><a href="/bairros/praia-grande/index.html">Praia Grande</a></td><td>R$ 270 mil</td><td>R$ 1.700</td><td>7,6%</td><td><span class="badge b-buy">comprar</span></td></tr>
-      <tr><td><a href="/bairros/caraguatatuba/index.html">Caraguatatuba</a></td><td>R$ 255 mil</td><td>R$ 1.600</td><td>7,5%</td><td><span class="badge b-buy">comprar</span></td></tr>
-      <tr><td><a href="/bairros/bertioga/index.html">Bertioga</a></td><td>R$ 240 mil</td><td>R$ 1.500</td><td>7,5%</td><td><span class="badge b-buy">comprar</span></td></tr>
-      <tr><td><a href="/bairros/itanhaem/index.html">Itanhaém</a></td><td>R$ 180 mil</td><td>R$ 1.200</td><td>8,0%</td><td><span class="badge b-buy">comprar</span></td></tr>
-      <tr><td><a href="/bairros/mongagua/index.html">Mongaguá</a></td><td>R$ 158 mil</td><td>R$ 1.100</td><td>8,4%</td><td><span class="badge b-buy">comprar</span></td></tr>
-      <tr><td><a href="/bairros/peruibe/index.html">Peruíbe</a></td><td>R$ 143 mil</td><td>R$ 1.000</td><td>8,4%</td><td><span class="badge b-buy">comprar</span></td></tr>
-    </table>
-    <p class="note">Estimativas Praia Digital com base em anúncios ativos e médias de mercado (set/2026). Yield = aluguel anual ÷ preço de venda. Tendência considera juros atuais (11,19% a.a.) e horizonte de 10 anos.</p>
-  </div>
-
-  <div class="card faq">
-    <h2 style="font-size:17px;margin-bottom:10px">❓ Perguntas frequentes</h2>
-    <details><summary>Vale mais alugar ou comprar no litoral em 2026?</summary><p>Depende do horizonte: até ~5 anos, alugar tende a vencer (a entrada rende ~13,6% a.a. em CDB 100% CDI). Acima de 10–15 anos, comprar ganha — especialmente em cidades com yield acima de 7,5%, como Praia Grande, Mongaguá e Peruíbe.</p></details>
-    <details><summary>O que é o yield do aluguel?</summary><p>Aluguel anual ÷ preço do imóvel. Abaixo de ~6% a.a., alugar sai mais barato; acima de ~8%, comprar tende a ser vantajoso. No litoral, os yields vão de ~5,8% (Ilhabela) a ~8,4% (Mongaguá/Peruíbe).</p></details>
-    <details><summary>IGP-M em 0,95%: o que muda no meu aluguel?</summary><p>Contratos com IGP-M ficam quase congelados no reajuste anual. Na renovação, negocie: o IPCA (4,22%) é o índice mais comum, mas o IGP-M baixo é argumento para segurar o valor.</p></details>
-    <details><summary>Quais custos a compra tem além do preço?</summary><p>ITBI (2–3% conforme o município), escritura e registro (~1%), avaliação bancária e seguros embutidos no CET. Em um imóvel de R$ 500 mil, reserve R$ 15–20 mil de fechamento.</p></details>
-    <details><summary>Price ou SAC?</summary><p>Price: parcela fixa. SAC: parcela inicial ~20–30% maior, caindo ao longo do contrato, com menos juros totais. Se couber nos 30% da renda, o SAC costuma ser mais barato.</p></details>
-  </div>
-
-  <div class="card">
-    <h2 style="font-size:17px;margin-bottom:10px">📍 Aprofunde por bairro</h2>
-    <p style="font-size:14px;color:#475569;margin-bottom:8px">Preço de venda e aluguel variam muito entre bairros da mesma cidade. Consulte os guias com m², rentabilidade e lançamentos:</p>
-    <div class="links">
-      <a href="/bairros/"><span>🏙️ Índice de bairros</span> — 123 bairros em 12 cidades do litoral</a>
-      <a href="/apps/valor-imovel/">💰 Estime o valor do imóvel que você quer comparar</a>
-      <a href="/apps/simulador-roi-temporada/">🏖️ Vai alugar por temporada? Simule o ROI</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2 style="font-size:17px;margin-bottom:10px">🔗 Explore mais</h2>
-    <div class="links">
-      <a href="/apps/">🧰 <span>Praia Digital Apps</span> — todas as ferramentas</a>
-      <a href="/apps/valor-imovel/">💰 Quanto vale meu imóvel?</a>
-      <a href="/apps/calculadora-consorcio/">🏦 Calculadora de consórcio</a>
-      <a href="/apps/comparador-cidades/">📊 Comparador de cidades</a>
-      <a href="/encontrar-imovel.html">🔍 Encontrar imóvel</a>
-      <a href="https://acarolmourad-commits.github.io/asf-app/apps/" target="_blank" rel="noopener">🌊 <span>ASF Apps</span> — ferramentas de surf do litoral</a>
-    </div>
-  </div>
-</div>
-<footer>Praia Digital — Tecnologia imobiliária do litoral • <a href="/" style="color:#0EA5E9">praia.digital</a></footer>
-<script>
-function fmt(v){ return 'R$ ' + Math.round(v).toLocaleString('pt-BR'); }
-function calc(){
-  const V = parseFloat(document.getElementById('valor').value)||0;
-  const A = parseFloat(document.getElementById('aluguel').value)||0;
-  const E = parseFloat(document.getElementById('entrada').value)||0;
-  const i = (parseFloat(document.getElementById('taxa').value)||0)/100/12;
-  const anos = parseFloat(document.getElementById('anos').value)||20;
-  const val = (parseFloat(document.getElementById('valoriz').value)||0)/100;
-  const reaj = (parseFloat(document.getElementById('reajAluguel').value)||0)/100;
-  const n = anos*12;
-  const fin = Math.max(0, V - E);
-  const parc = i>0 ? fin*i/(1-Math.pow(1+i,-n)) : fin/n;
-  const imovelFuturo = V * Math.pow(1+val, anos);
-  document.getElementById('rParc').textContent = fmt(parc);
-  document.getElementById('rDif').textContent = (parc>A ? '+' : '') + fmt(parc-A) + '/mês';
-  const aluguelTotal = reaj>0 ? A*12*(Math.pow(1+reaj, anos)-1)/reaj : A*n;
-  document.getElementById('rAlug').textContent = fmt(aluguelTotal) + ' (com reajuste anual)';
-  document.getElementById('rImovel').textContent = fmt(imovelFuturo);
-  const el = document.getElementById('rVerdict');
-  const razao = (A*12)/V*100;
-  if (razao < 4.5){
-    el.style.background='#DCFCE7'; el.style.color='#14532D';
-    el.textContent = '🏠 Comprar tende a compensar: aluguel anual = ' + razao.toFixed(1) + '% do valor do imóvel (barato vs. compra).';
-  } else if (razao < 6.5){
-    el.style.background='#FEF9C3'; el.style.color='#713F12';
-    el.textContent = '🤔 Equilíbrio: aluguel anual = ' + razao.toFixed(1) + '% do valor. Decida por flexibilidade vs. patrimônio.';
-  } else {
-    el.style.background='#FEE2E2'; el.style.color='#7F1D1D';
-    el.textContent = '🔑 Alugar tende a compensar: aluguel anual = ' + razao.toFixed(1) + '% do valor do imóvel (caro comprar agora).';
-  }
-  document.getElementById('res').style.display = 'block';
-}
-</script>
-
-<!-- Praia Digital Apps: rede de interlinks -->
-<section style="max-width:760px;margin:32px auto 0;padding:0 16px 32px">
-  <h2 style="font-size:1.05rem;margin-bottom:12px">🧰 Explore todos os apps gratuitos da Praia Digital</h2>
-  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px">
-    <a href="/apps/valor-imovel/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">💰</span><span><b>Quanto Vale Meu Imóvel?</b><br><small style="color:#64748B">Estimativa instantânea por cidade, m² e diferenciais</small></span></a><a href="/apps/checklist-vistoria/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">📋</span><span><b>Checklist de Vistoria</b><br><small style="color:#64748B">Vistorie imóveis com score de qualidade</small></span></a><a href="/apps/comparador-cidades/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">📊</span><span><b>Comparador de Cidades</b><br><small style="color:#64748B">Ranqueie o litoral pelo seu perfil</small></span></a><a href="/apps/simulador-roi-temporada/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🏖️</span><span><b>Simulador de ROI — Temporada</b><br><small style="color:#64748B">Receita, ROI líquido e payback</small></span></a><a href="/apps/calculadora-consorcio/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🏦</span><span><b>Calculadora de Consórcio</b><br><small style="color:#64748B">Parcela, lance e economia vs. financiamento</small></span></a><a href="/apps/calculadora-financiamento/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🏠</span><span><b>Simulador de Financiamento</b><br><small style="color:#64748B">SAC vs. Price: parcelas, juros e custo total</small></span></a><a href="/apps/custo-de-compra/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🧾</span><span><b>Custos de Compra</b><br><small style="color:#64748B">ITBI, escritura, registro e custo de fechamento</small></span></a><a href="/apps/planejador-entrada/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">🎯</span><span><b>Planejador de Entrada</b><br><small style="color:#64748B">Quanto guardar por mês para juntar a entrada</small></span></a><a href="/apps/calculadora-valorizacao/" style="display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px 14px;text-decoration:none;color:#0F172A;font-size:14px"><span style="font-size:1.3rem">📈</span><span><b>Valorização Projetada</b><br><small style="color:#64748B">Projete o valor futuro do imóvel por cidade</small></span></a>
-  </div>
-  <p style="margin-top:14px;font-size:13px;color:#64748B;text-align:center">
-    <a href="/apps/" style="color:#0EA5E9">Ver índice completo de apps</a> ·
-    <a href="/" style="color:#0EA5E9">Praia Digital</a> ·
-    <a href="/encontrar-imovel.html" style="color:#0EA5E9">Encontrar imóvel</a>
-  </p>
+<body data-pd-app="alugar-ou-comprar" class="pd-rent-buy-page">
+<a class="skip-link rb-skip" href="#main">Ir para a ferramenta</a>
+<main class="rb-shell" id="main" tabindex="-1">
+<nav class="rb-breadcrumb" aria-label="Navegação da rede de aplicativos"><a href="/">Página inicial</a><a href="/apps/">Todos os aplicativos</a><a href="/#analise">Ferramentas de análise</a></nav>
+<section class="rb-hero" aria-labelledby="pd-app-title">
+<p class="rb-eyebrow">MORADIA · COMPARAÇÃO PATRIMONIAL</p>
+<h1 id="pd-app-title">Alugar ou comprar no litoral?</h1>
+<p class="rb-lead">Compare o patrimônio que cada caminho pode formar. Inclua a entrada investida, os custos da compra e o que sobra mês a mês.</p>
+<p class="rb-callout"><strong>Comece pelo seu cenário.</strong> Os valores abaixo são exemplos editáveis, não taxas atuais nem previsão de retorno. Os patrimônios finais estão em reais nominais do futuro, sem descontar inflação.</p>
 </section>
-
-<footer style="max-width:760px;margin:24px auto 0;padding:16px;text-align:center;font-size:12px;color:#64748B;border-top:1px solid #E5E7EB">
-  <a href="/politica-de-privacidade.html" style="color:#0EA5E9">Política de Privacidade</a> ·
-  <a href="/termos-uso.html" style="color:#0EA5E9">Termos de Uso</a> ·
-  <a href="/sobre.html" style="color:#0EA5E9">Sobre</a> ·
-  <a href="/contato.html" style="color:#0EA5E9">Contato</a>
-  <p style="margin-top:6px">Praia Digital — Inteligência imobiliária para o litoral.</p>
-</footer>
-<script defer src="/js/shared.js"></script><script defer src="/assets/js/related-ads.js"></script>
-<section class="pd-guide" aria-labelledby="pd-guide-title"><h2 id="pd-guide-title">Como usar esta análise com segurança</h2><ol><li>Compare aluguel e financiamento no mesmo prazo, usando valores e taxas documentados.</li><li>Avalie separadamente entrada, custo de oportunidade, ITBI, cartório e manutenção: a simulação simplificada não inclui todos esses itens.</li><li>Teste cenários alternativos; o resultado não substitui análise financeira individual.</li></ol><p class="pd-network-note">As premissas, taxas e tabelas preexistentes precisam de conferência de fonte e data. Este conteúdo não atualiza nem valida essas premissas. Simulações educativas não são propostas bancárias, garantia de retorno ou orientação jurídica e tributária individual.</p></section>
+<form class="rb-card" id="rent-buy-form" novalidate aria-labelledby="form-title">
+<h2 id="form-title">Suas premissas</h2>
+<p class="rb-hint">Preencha todos os campos. Zero é aceito onde fizer sentido. Entrada igual ao preço simula compra à vista.</p>
+<div class="rb-alert" id="error-summary" role="alert" hidden><strong>Revise os campos antes de comparar.</strong><ul id="error-list"></ul></div>
+<fieldset><legend>Imóvel, prazo e evolução</legend><div class="rb-grid"><div class="rb-field"><label for="valor">Valor do imóvel (R$)</label><input id="valor" type="number" inputmode="decimal" min="1" max="100000000" step="0.01" required value="595000" aria-describedby="valor-hint valor-error"><p class="rb-hint" id="valor-hint">Use o preço negociado, não uma avaliação automática.</p><p class="rb-error" id="valor-error"></p></div>
+<div class="rb-field"><label for="aluguel">Aluguel mensal equivalente (R$)</label><input id="aluguel" type="number" inputmode="decimal" min="0" max="1000000" step="0.01" required value="2800" aria-describedby="aluguel-hint aluguel-error"><p class="rb-hint" id="aluguel-hint">Compare imóveis equivalentes. Não inclua despesas já preenchidas abaixo.</p><p class="rb-error" id="aluguel-error"></p></div>
+<div class="rb-field"><label for="entrada">Entrada disponível (R$)</label><input id="entrada" type="number" inputmode="decimal" min="0" max="100000000" step="0.01" required value="120000" aria-describedby="entrada-hint entrada-error"><p class="rb-hint" id="entrada-hint">Custos de aquisição são pagos à parte. Para compra à vista, informe o preço integral.</p><p class="rb-error" id="entrada-error"></p></div>
+<div class="rb-field"><label for="taxa">Juros do financiamento (% a.a.)</label><input id="taxa" type="number" inputmode="decimal" min="0" max="100" step="0.01" required value="11.19" aria-describedby="taxa-hint taxa-error"><p class="rb-hint" id="taxa-hint">Use os juros contratuais. Não some seguros novamente se estiver usando uma taxa que já os inclui.</p><p class="rb-error" id="taxa-error"></p></div>
+<div class="rb-field"><label for="anos">Prazo do financiamento (anos)</label><input id="anos" type="number" inputmode="numeric" min="1" max="50" step="1" required value="20" aria-describedby="anos-hint anos-error"><p class="rb-hint" id="anos-hint">Inteiros de 1 a 50 anos. Pode ser maior ou menor que o horizonte.</p><p class="rb-error" id="anos-error"></p></div>
+<div class="rb-field"><label for="horizonte">Horizonte da comparação (anos)</label><input id="horizonte" type="number" inputmode="numeric" min="1" max="50" step="1" required value="10" aria-describedby="horizonte-hint horizonte-error"><p class="rb-hint" id="horizonte-hint">Por quantos anos você quer comparar? A venda é simulada ao fim desse período.</p><p class="rb-error" id="horizonte-error"></p></div>
+<div class="rb-field"><label for="valoriz">Valorização anual do imóvel (%)</label><input id="valoriz" type="number" inputmode="decimal" min="-50" max="100" step="0.01" required value="4" aria-describedby="valoriz-hint valoriz-error"><p class="rb-hint" id="valoriz-hint">Hipótese efetiva anual. Valores negativos simulam desvalorização.</p><p class="rb-error" id="valoriz-error"></p></div>
+<div class="rb-field"><label for="reajAluguel">Reajuste anual do aluguel (%)</label><input id="reajAluguel" type="number" inputmode="decimal" min="-50" max="100" step="0.01" required value="4" aria-describedby="reajAluguel-hint reajAluguel-error"><p class="rb-hint" id="reajAluguel-hint">Aplicado a cada aniversário, começando no mês 13. Pode ser negativo.</p><p class="rb-error" id="reajAluguel-error"></p></div>
+<div class="rb-field"><label for="rendimento">Retorno líquido dos investimentos (% a.a.)</label><input id="rendimento" type="number" inputmode="decimal" min="-50" max="100" step="0.01" required value="6" aria-describedby="rendimento-hint rendimento-error"><p class="rb-hint" id="rendimento-hint">Hipótese efetiva anual, já líquida de impostos e tarifas. Não é uma promessa de rentabilidade.</p><p class="rb-error" id="rendimento-error"></p></div></div></fieldset>
+<details id="advanced-finance"><summary>Financiamento: sistema, taxa, correção e seguros</summary><div class="rb-grid"><div class="rb-field"><label for="tipoTaxa">Tipo de taxa anual</label><select id="tipoTaxa" aria-describedby="tipoTaxa-hint tipoTaxa-error"><option value="nominal">Nominal, capitalização mensal</option><option value="effective">Efetiva anual</option></select><p class="rb-hint" id="tipoTaxa-hint">Nominal: taxa anual ÷ 12. Efetiva: taxa mensal equivalente composta.</p><p class="rb-error" id="tipoTaxa-error"></p></div><div class="rb-field"><label for="sistema">Sistema de amortização</label><select id="sistema" aria-describedby="sistema-hint sistema-error"><option value="PRICE">Tabela Price</option><option value="SAC">SAC</option></select><p class="rb-hint" id="sistema-hint">Use o sistema da sua proposta. A simulação não substitui o cronograma do banco.</p><p class="rb-error" id="sistema-error"></p></div><div class="rb-field"><label for="indexador">Correção anual do saldo devedor (%)</label><input id="indexador" type="number" inputmode="decimal" min="0" max="30" step="0.01" required value="0" aria-describedby="indexador-hint indexador-error"><p class="rb-hint" id="indexador-hint">Hipótese efetiva anual constante, como um cenário de TR. Zero ignora correção, não garante taxa zero no contrato.</p><p class="rb-error" id="indexador-error"></p></div><div class="rb-field"><label for="seguros">Seguros e tarifas mensais do financiamento (R$)</label><input id="seguros" type="number" inputmode="decimal" min="0" max="1000000" step="0.01" required value="0" aria-describedby="seguros-hint seguros-error"><p class="rb-hint" id="seguros-hint">MIP, DFI e tarifas não incluídos nos juros. Cessam após a quitação.</p><p class="rb-error" id="seguros-error"></p></div></div></details>
+<details id="advanced-costs"><summary>Custos de aquisição, manutenção e venda</summary><p class="rb-hint">Confira estas hipóteses antes de decidir. Despesas iguais nos dois caminhos podem ser omitidas de ambos; se diferirem, informe cada valor. A renda necessária para bancar os custos não é avaliada.</p><div class="rb-grid"><div class="rb-field"><label for="custoCompra">Custos de aquisição (% do preço)</label><input id="custoCompra" type="number" inputmode="decimal" min="0" max="30" step="0.01" required value="4" aria-describedby="custoCompra-hint custoCompra-error"><p class="rb-hint" id="custoCompra-hint">ITBI, registro, escritura e despesas iniciais, sem financiar esses custos. Confira valores locais.</p><p class="rb-error" id="custoCompra-error"></p></div>
+<div class="rb-field"><label for="custoVenda">Custos de venda (% do valor futuro)</label><input id="custoVenda" type="number" inputmode="decimal" min="0" max="30" step="0.01" required value="6" aria-describedby="custoVenda-hint custoVenda-error"><p class="rb-hint" id="custoVenda-hint">Corretagem e demais despesas de saída. O imposto é informado separadamente.</p><p class="rb-error" id="custoVenda-error"></p></div>
+<div class="rb-field"><label for="impostoVenda">Provisão de imposto na venda (R$)</label><input id="impostoVenda" type="number" inputmode="decimal" min="0" max="1000000000" step="0.01" required value="0" aria-describedby="impostoVenda-hint impostoVenda-error"><p class="rb-hint" id="impostoVenda-hint">Valor nominal estimado para o fim do horizonte, sem cálculo fiscal automático. Zero significa não provisionado.</p><p class="rb-error" id="impostoVenda-error"></p></div>
+<div class="rb-field"><label for="manutencao">Manutenção anual (% do valor do imóvel)</label><input id="manutencao" type="number" inputmode="decimal" min="0" max="20" step="0.01" required value="1" aria-describedby="manutencao-hint manutencao-error"><p class="rb-hint" id="manutencao-hint">Provisão mensal: valor do imóvel no início do mês × percentual anual ÷ 12.</p><p class="rb-error" id="manutencao-error"></p></div>
+<div class="rb-field"><label for="custoProprietario">Outros custos mensais da compra (R$)</label><input id="custoProprietario" type="number" inputmode="decimal" min="0" max="1000000" step="0.01" required value="0" aria-describedby="custoProprietario-hint custoProprietario-error"><p class="rb-hint" id="custoProprietario-hint">Somente despesas que você terá nesse caminho. Não duplique manutenção ou encargos do financiamento.</p><p class="rb-error" id="custoProprietario-error"></p></div>
+<div class="rb-field"><label for="custoInquilino">Outros custos mensais do aluguel (R$)</label><input id="custoInquilino" type="number" inputmode="decimal" min="0" max="1000000" step="0.01" required value="0" aria-describedby="custoInquilino-hint custoInquilino-error"><p class="rb-hint" id="custoInquilino-hint">Ex.: seguro-fiança. IPTU e condomínio dependem do contrato; evite duplicar despesas comuns.</p><p class="rb-error" id="custoInquilino-error"></p></div>
+<div class="rb-field"><label for="reajCustos">Reajuste anual dos demais custos (%)</label><input id="reajCustos" type="number" inputmode="decimal" min="-50" max="100" step="0.01" required value="4" aria-describedby="reajCustos-hint reajCustos-error"><p class="rb-hint" id="reajCustos-hint">Reajuste por aniversário dos outros custos e dos encargos do financiamento.</p><p class="rb-error" id="reajCustos-error"></p></div></div></details>
+<div class="rb-actions"><button class="rb-button" type="submit" disabled>Comparar patrimônios</button><button class="rb-button rb-secondary" type="button" id="restore-example">Restaurar exemplo</button></div>
+<p class="rb-hint">O cálculo acontece no seu navegador. Não preencha dados de identificação ou números de conta.</p>
+</form>
+<p id="result-live" class="rb-callout" role="status" aria-live="polite" aria-atomic="true"></p>
+<noscript><p class="rb-alert">Ative JavaScript para calcular. A metodologia e as fontes continuam disponíveis abaixo.</p></noscript>
+<section class="rb-card" id="res" aria-labelledby="result-title" hidden>
+<p class="rb-eyebrow" id="result-label">Exemplo ilustrativo</p><h2 id="result-title" tabindex="-1">Comparação patrimonial</h2>
+<div class="rb-verdict"><strong id="rVerdict"></strong><p>Resultado condicionado às premissas. Não é recomendação de compra, investimento ou crédito. Diferenças de até R$ 1 são tratadas como patrimônios próximos.</p></div>
+<div class="rb-metrics"><div class="rb-metric"><span>Comprar: patrimônio líquido final</span><strong id="owner-wealth"></strong><p class="rb-hint" id="owner-components"></p></div><div class="rb-metric"><span>Alugar e investir: patrimônio final</span><strong id="renter-wealth"></strong><p class="rb-hint" id="renter-components"></p></div></div>
+<p class="rb-callout" id="net-warning"></p>
+<h3>Capital inicial e primeiro mês</h3>
+<dl class="rb-breakdown"><div><dt>Capital inicial igual nos dois caminhos</dt><dd id="initial-cash"></dd></div><div><dt>Custos de aquisição, além da entrada</dt><dd id="purchase-costs"></dd></div><div><dt>Valor financiado</dt><dd id="financed"></dd></div><div><dt>Primeira parcela: juros + amortização</dt><dd id="rParc"></dd></div><div><dt>Custo da compra no primeiro mês</dt><dd id="first-owner-cost"></dd></div><div><dt>Custo do aluguel no primeiro mês</dt><dd id="first-renter-cost"></dd></div></dl>
+<p class="rb-hint" id="rate-description"></p><p class="rb-hint" id="yield-info"></p>
+<details><summary>Ver custos acumulados e composição final</summary>
+<p class="rb-hint">Desembolsos de moradia não são comparáveis diretamente a patrimônio: amortização vira participação no imóvel. Aportes nos investimentos são apresentados separadamente.</p>
+<dl class="rb-breakdown"><div><dt>Compra: entrada + aquisição + moradia no horizonte</dt><dd id="owner-outlay"></dd></div><div><dt>Aluguel: moradia no horizonte, sem aportes</dt><dd id="renter-outlay"></dd></div><div><dt>Aluguéis acumulados, sem outros custos</dt><dd id="rAlug"></dd></div><div><dt>Parcelas pagas no horizonte</dt><dd id="total-loan"></dd></div><div><dt>Juros pagos no horizonte</dt><dd id="total-interest"></dd></div><div><dt>Correção acumulada do saldo devedor</dt><dd id="total-indexation"></dd></div><div><dt>Aportes mensais do comprador</dt><dd id="owner-contributions"></dd></div><div><dt>Aportes mensais do locatário, além do capital inicial</dt><dd id="renter-contributions"></dd></div><div><dt>Valor bruto do imóvel ao fim</dt><dd id="rImovel"></dd></div><div><dt>Saldo devedor ao fim</dt><dd id="remaining-debt"></dd></div><div><dt>Custos estimados de venda ao fim</dt><dd id="sale-costs"></dd></div><div><dt>Provisão nominal de imposto na venda</dt><dd id="sale-tax"></dd></div></dl>
+</details>
+<details><summary>Como o resultado muda com as taxas?</summary><p class="rb-hint">Mude uma hipótese por vez. Os cenários abaixo variam 2 pontos percentuais e recalculam todos os fluxos. Diferença positiva favorece comprar; negativa favorece alugar e investir.</p><table class="rb-table rb-sensitivity"><caption>Sensibilidade no mesmo horizonte, em reais nominais</caption><thead><tr><th scope="col">Hipótese</th><th scope="col">Compra − aluguel</th><th scope="col">Maior patrimônio</th></tr></thead><tbody id="sensitivity-body"></tbody></table></details>
+<details><summary>Acompanhar patrimônio ano a ano</summary><p class="rb-hint">Cada linha simula uma saída naquele ano. A provisão fixa de imposto informada é repetida em cada saída hipotética; revise-a se mudar o horizonte. Role a tabela horizontalmente em telas estreitas.</p><div class="rb-table-scroll" role="region" tabindex="0" aria-label="Tabela de patrimônio por ano, com rolagem horizontal"><table class="rb-table rb-yearly"><caption>Patrimônios após venda hipotética, custos e saldo devedor</caption><thead><tr><th scope="col">Ano</th><th scope="col">Imóvel bruto</th><th scope="col">Dívida</th><th scope="col">Comprar</th><th scope="col">Alugar e investir</th><th scope="col">Diferença</th></tr></thead><tbody id="yearly-body"></tbody></table></div></details>
+</section>
+<section class="rb-card" aria-labelledby="pd-guide-title"><h2 id="pd-guide-title">Como a comparação funciona</h2>
+<ol>
+<li><strong>Mesmo capital inicial.</strong> O comprador usa entrada e custos de aquisição. O locatário investe exatamente essa soma.</li>
+<li><strong>Mesmo orçamento comparativo a cada mês.</strong> Usamos o maior custo de moradia dos dois caminhos. Quem gastar menos investe a diferença. Isso pressupõe dinheiro disponível para bancar o caminho mais caro, não comprova capacidade de pagamento.</li>
+<li><strong>Fluxos mensais.</strong> Investimentos existentes rendem antes dos aportes no fim do mês. Aluguel e demais despesas reajustam a cada aniversário. A manutenção é percentual anual dividido por 12 sobre o valor do imóvel no início do mês.</li>
+<li><strong>Financiamento.</strong> A taxa nominal anual é dividida por 12; a efetiva usa a taxa mensal equivalente. O indexador opcional corrige o saldo antes dos juros. Price é recalculada pelo saldo e prazo restantes; no SAC, a amortização é o saldo corrigido dividido pelos meses restantes. Seguros e tarifas cessam na quitação.</li>
+<li><strong>Patrimônio no mesmo horizonte.</strong> Comprar = imóvel − saldo devedor − custos de venda − provisão de imposto + investimentos. Alugar = capital inicial e aportes acumulados com retorno líquido. O capital amortizado não é contado como perda.</li>
+</ol>
+<p><strong>Limites:</strong> taxas constantes são cenários, não previsões. Não calculamos tributação real dos investimentos, ganho de capital, FGTS, amortizações extraordinárias, variações contratuais, renda necessária ou risco de mercado. O contrato bancário pode ter regras e arredondamentos diferentes. Confirme indexadores, CET e despesas com seu banco; não conte custos duas vezes.</p>
+<p>A compra tem menor liquidez e envolve custos de mudança e venda. Flexibilidade, estabilidade da moradia e preferências pessoais também importam.</p>
+</section>
+<section class="rb-card" aria-labelledby="sources-title"><h2 id="sources-title">Fontes e atualização</h2>
+<p>Metodologia revisada em <time datetime="2026-11-11">11/11/2026</time>. As taxas preenchidas são hipóteses ilustrativas. Não há atualização automática de indicadores, cotações bancárias ou preços por cidade nesta ferramenta.</p>
+<ul><li><a href="https://www.bcb.gov.br/estatisticas/reporttxjuros?codigoModalidade=903201&amp;codigoSegmento=1">Banco Central: taxas de financiamento imobiliário referenciado em TR</a>. Estatísticas não substituem uma proposta individual.</li>
+<li><a href="https://www.caixa.gov.br/voce/habitacao/perguntas-frequentes-novos-financiamentos/Paginas/default.aspx">CAIXA: perguntas frequentes sobre financiamento</a>, juros, indexadores, seguros e condições contratuais.</li>
+<li><a href="https://www.ibge.gov.br/indicadores.html">IBGE: indicadores de inflação</a> e <a href="https://portal.fgv.br/especiais/igp-m-resultados">FGV: resultados do IGP-M</a>. Use o índice e o aniversário previstos no seu contrato, sem projetar o último dado como certeza futura.</li>
+<li>Custos de compra e venda devem vir de documentos, propostas e órgãos locais. Use também o <a href="/apps/custo-de-compra/">calculador de custos de compra</a>.</li></ul>
+<p class="rb-hint">Referências históricas e classificações por cidade sem metodologia verificável foram retiradas da comparação. O yield é apenas um indicador descritivo, não uma regra automática de decisão.</p>
+</section>
+<section class="rb-card" aria-labelledby="faq-title"><h2 id="faq-title">Perguntas frequentes</h2>
+<details><summary>O simulador decide se devo comprar?</summary><p>Não. Ele compara patrimônios nominais em um cenário, considerando o mesmo capital inicial e o investimento das diferenças de custo. Capacidade de pagamento, risco, liquidez, mobilidade e preferências pessoais precisam de avaliação separada.</p></details><details><summary>O yield do aluguel determina o resultado?</summary><p>Não. O yield inicial é o aluguel de 12 meses dividido pelo preço. Um aluguel relativamente baixo reduz o custo de alugar, mas não determina a melhor escolha sozinho. A conclusão vem dos patrimônios líquidos calculados.</p></details><details><summary>O que muda entre Price e SAC?</summary><p>Com juros fixos e sem correção do saldo, a Price mantém a parcela de juros e amortização constante. No SAC, a amortização é constante e a parcela diminui. Correção do saldo, seguros e tarifas podem alterar o desembolso.</p></details><details><summary>O horizonte precisa ser igual ao prazo do financiamento?</summary><p>Não. Se você sair antes da quitação, o saldo devedor é descontado da venda. Depois da quitação, não há mais parcelas nem os encargos mensais do financiamento, mas manutenção e outros custos da compra continuam.</p></details><details><summary>As taxas preenchidas são dados de mercado atuais?</summary><p>Não. São exemplos editáveis, sem atualização automática. Use uma proposta bancária, seu contrato de aluguel, custos documentados e hipóteses próprias de valorização e retorno líquido.</p></details><details><summary>A provisão de imposto calcula ganho de capital?</summary><p>Não. Informe uma estimativa nominal em reais, obtida para o seu caso. O simulador não aplica alíquotas, isenções, deduções ou regras de ganho de capital. Zero não significa isenção.</p></details>
+</section>
+</main>
 <section class="pd-network" aria-labelledby="pd-network-title"><h2 id="pd-network-title">Continue sua análise</h2><p>Combine ferramentas para comparar cenários e organizar decisões.</p><ul class="pd-network-grid"><li><a href="/apps/calculadora-consorcio/">Consórcio</a></li><li><a href="/apps/calculadora-financiamento/">Financiamento</a></li><li><a href="/apps/calculadora-precificacao-shopee/">Precificação Shopee</a></li><li><a href="/apps/calculadora-valorizacao/">Valorização</a></li><li><a href="/apps/checklist-vistoria/">Checklist de vistoria</a></li><li><a href="/apps/comparador-cidades/">Comparar cidades</a></li><li><a href="/apps/custo-de-compra/">Custo de compra</a></li><li><a href="/apps/planejador-entrada/">Planejar entrada</a></li><li><a href="/apps/renda-para-financiar/">Renda para financiar</a></li><li><a href="/apps/simulador-roi-temporada/">ROI de temporada</a></li><li><a href="/apps/temporada-ou-anual/">Temporada ou anual</a></li><li><a href="/apps/valor-imovel/">Valor do imóvel</a></li></ul></section>
+<footer class="rb-footer"><p>Praia Digital · Ferramentas para decisões imobiliárias</p><p><a href="/politica-de-privacidade.html">Política de Privacidade</a> · <a href="/termos-uso.html">Termos de Uso</a> · <a href="/sobre.html">Sobre</a> · <a href="/contato.html">Contato</a></p></footer>
+<script defer src="/js/shared.js"></script><script defer src="/assets/js/related-ads.js"></script>
 </body>
 </html>
