@@ -31,7 +31,15 @@
       "impact": "Proprietários e profissionais de turismo podem acompanhar as propostas e participar pelo canal municipal. A consulta não equivale a norma aprovada nem indica valorização de imóveis.",
       "checked_at": "2026-11-02T14:12:00Z",
       "reviewer": "Curadoria assistida por IA",
-      "status": "reviewed"
+      "status": "reviewed",
+      "deadline": "2026-11-10",
+      "updates": [
+        {
+          "noted_at": "2026-11-11T22:13:21Z",
+          "reviewer": "Curadoria assistida por IA; fonte municipal conferida",
+          "text": "O prazo divulgado pela Prefeitura para esta consulta era 10/11/2026 e já passou. Na conferência de 11/11, a página oficial continuava com essa data e não foi localizada uma nova data oficial. O convite abaixo é mantido como registro histórico, não como participação vigente. Isso não confirma o encerramento técnico do formulário nem a aprovação do plano."
+        }
+      ]
     },
     {
       "id": "santos-pantanal",
