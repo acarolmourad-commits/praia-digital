@@ -21,3 +21,5 @@ Sitemap: https://praia.digital/sitemap-apps.xml
 Host: https://praia.digital
 
 Sitemap: https://praia.digital/sitemap-boletim.xml
+
+Sitemap: https://praia.digital/sitemap-marketplaces.xml
