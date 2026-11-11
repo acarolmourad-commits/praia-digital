@@ -1,0 +1,78 @@
+html.pd-rent-buy-root { scroll-behavior: auto; }
+.pd-rent-buy-page { margin: 0; background: #f6f8f7; color: #153239; font: 16px/1.6 system-ui, -apple-system, sans-serif; }
+.pd-rent-buy-page [hidden] { display: none !important; }
+.pd-rent-buy-page .whatsapp-float { display: none; }
+.rb-shell { max-width: 1080px; margin: auto; padding: 26px 24px 48px; overflow-wrap: anywhere; }
+.rb-shell *, .rb-shell *::before, .rb-shell *::after { box-sizing: border-box; }
+.rb-shell :where(h1,h2,h3,p,dl,dd) { margin: 0; }
+.rb-shell :where(h1,h2,h3) { line-height: 1.25; }
+.rb-shell h1 { margin: 14px 0; max-width: 780px; font-size: clamp(2rem, 5vw, 3.3rem); letter-spacing: -.04em; }
+.rb-shell h2 { margin-bottom: 16px; font-size: clamp(1.35rem, 3vw, 1.7rem); }
+.rb-shell h3 { margin-bottom: 10px; font-size: 1.1rem; }
+.rb-shell p + p { margin-top: 12px; }
+.rb-shell a, .rb-footer a { color: #075e5c; text-underline-offset: 3px; }
+.rb-shell :where(input,select,button) { font: inherit; }
+.rb-shell :where(input,select) { width: 100%; min-width: 0; min-height: 48px; padding: 11px 12px; border: 1px solid #869c9a; border-radius: 7px; background: white; color: #153239; font-size: 16px; }
+.rb-shell :where(a,button,input,select,summary,[tabindex]):focus-visible, .rb-skip:focus-visible { outline: 3px solid #087a75; outline-offset: 4px; }
+.rb-shell [id] { scroll-margin-top: 100px; }
+.rb-skip { position: fixed; left: 12px; top: 12px; transform: translateY(-180%); z-index: 10001; background: #103f3d; color: white; padding: 12px 18px; border-radius: 6px; }
+.rb-skip:focus { transform: none; }
+.rb-breadcrumb { display: flex; gap: 8px 18px; flex-wrap: wrap; margin-bottom: 24px; font-size: .85rem; }
+.rb-breadcrumb a { display: inline-flex; align-items: center; min-height: 44px; }
+.rb-hero { margin-bottom: 30px; }
+.rb-eyebrow { color: #075e5c; font-weight: 750; font-size: .8rem; letter-spacing: .06em; }
+.rb-lead { max-width: 760px; color: #425b60; font-size: 1.08rem; }
+.rb-callout { margin: 20px 0; padding: 16px 18px; background: #edf4ef; border-left: 4px solid #0c716b; color: #294a46; }
+.rb-card { margin: 24px 0; padding: 26px; border: 1px solid #cfddda; border-radius: 14px; background: white; }
+.rb-card fieldset { min-width: 0; padding: 0; margin: 0 0 24px; border: 0; }
+.rb-card legend { margin-bottom: 16px; font-size: 1.1rem; font-weight: 700; }
+.rb-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 22px 18px; }
+.rb-field { min-width: 0; }
+.rb-field label { display: block; margin: 0 0 8px; font-size: .88rem; line-height: 1.45; font-weight: 650; }
+.rb-hint { margin-top: 7px !important; color: #496268; font-size: .8rem; line-height: 1.5; }
+.rb-error { color: #9e2828; font-size: .84rem; font-weight: 650; margin-top: 6px !important; }
+.rb-error:empty { display: none; }
+.rb-field [aria-invalid="true"] { border: 2px solid #ae3131; }
+.rb-shell details { border-top: 1px solid #cfddda; margin: 18px 0 0; }
+.rb-shell summary { cursor: pointer; min-height: 48px; padding: 14px 0; color: #075e5c; font-weight: 650; }
+.rb-shell details > :not(summary) { margin-top: 14px; }
+.rb-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0 12px; }
+.rb-button { min-height: 48px; border: 1px solid #086b66; border-radius: 8px; padding: 12px 22px; background: #086b66; color: white; cursor: pointer; font-weight: 700 !important; }
+.rb-button:hover { background: #064e4b; }
+.rb-button:disabled { cursor: not-allowed; opacity: .65; }
+.rb-secondary { background: white; color: #075e5c; }
+.rb-secondary:hover { background: #eef5f3; }
+.rb-alert { border: 1px solid #d8a5a0; background: #fff2f0; color: #872626; padding: 18px; margin-bottom: 22px; border-radius: 8px; }
+.rb-alert a { color: #872626; }
+.rb-verdict { margin: 18px 0; padding: 20px; border: 1px solid #a8c6bc; border-radius: 10px; background: #edf5f0; }
+.rb-verdict strong { display: block; margin-bottom: 8px; font-size: 1.15rem; }
+.rb-metrics { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; margin: 22px 0; }
+.rb-metric { min-width: 0; padding: 18px; border: 1px solid #cfddda; border-radius: 10px; }
+.rb-metric span { display: block; color: #425b60; font-size: .85rem; }
+.rb-metric strong { display: block; margin: 8px 0; font-variant-numeric: tabular-nums; font-size: clamp(1.25rem,2.7vw,1.9rem); line-height: 1.3; }
+.rb-breakdown > div { display: grid; grid-template-columns: minmax(0,1.5fr) minmax(0,1fr); gap: 12px; padding: 11px 0; border-bottom: 1px solid #e0e8e5; }
+.rb-breakdown dt { color: #425b60; }
+.rb-breakdown dd { text-align: right; font-weight: 650; font-variant-numeric: tabular-nums; }
+.rb-table-scroll { max-width: 100%; overflow-x: auto; }
+.rb-table { width: 100%; border-collapse: collapse; font-size: .86rem; font-variant-numeric: tabular-nums; overflow-wrap: normal; }
+.rb-table caption { text-align: left; padding: 0 0 12px; color: #425b60; }
+.rb-table :where(th,td) { padding: 12px 10px; text-align: right; border-bottom: 1px solid #cfddda; vertical-align: top; }
+.rb-table th { background: #f0f5f2; }
+.rb-table :where(th,td):first-child { text-align: left; }
+.rb-yearly { min-width: 680px; }
+.rb-sensitivity { min-width: 520px; }
+.rb-sensitivity td:nth-child(2), .rb-yearly td { white-space: nowrap; }
+.rb-sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.rb-footer { padding: 24px; text-align: center; font-size: .85rem; color: #425b60; }
+@media (max-width: 760px) { .rb-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 520px) {
+  .rb-shell { padding: 18px 16px 32px; }
+  .rb-card { padding: 18px; }
+  .rb-grid, .rb-metrics { grid-template-columns: minmax(0,1fr); }
+  .rb-breakdown > div { grid-template-columns: minmax(0,1fr); gap: 3px; }
+  .rb-breakdown dd { text-align: left; }
+  .rb-actions { flex-direction: column; }
+  .rb-table :where(th,td) { padding: 10px 5px; }
+}
+@media (prefers-reduced-motion: reduce) { .pd-rent-buy-page * { scroll-behavior: auto !important; } }
+@media print { .rb-actions, .rb-skip { display: none; } .rb-card { break-inside: avoid; } }

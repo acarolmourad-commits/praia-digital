@@ -1,0 +1,51 @@
+name: Rent versus buy checks
+on:
+  pull_request:
+    paths:
+      - 'apps/alugar-ou-comprar/**'
+      - 'js/alugar-comprar-*.js'
+      - 'assets/css/alugar-comprar.css'
+      - 'tests/*alugar*'
+      - '.github/workflows/alugar-comprar-checks.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'apps/alugar-ou-comprar/**'
+      - 'js/alugar-comprar-*.js'
+      - 'assets/css/alugar-comprar.css'
+      - 'tests/*alugar*'
+      - '.github/workflows/alugar-comprar-checks.yml'
+permissions:
+  contents: read
+jobs:
+  calculator:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax and independent financial tests
+        run: |
+          node --check js/alugar-comprar-core.js
+          node --check js/alugar-comprar-ui.js
+          node --test tests/test_alugar_comprar.cjs
+      - name: DOM integration and metadata
+        run: |
+          npm install --prefix "$RUNNER_TEMP/pd-rent-buy" jsdom@26.1.0 --no-audit --no-fund
+          NODE_PATH="$RUNNER_TEMP/pd-rent-buy/node_modules" node tests/alugar-comprar-dom.cjs
+      - name: Prepare published navigation
+        run: |
+          python3 -m unittest discover -s tests -p 'test_navigation.py'
+          python3 scripts/build-navigation.py
+      - name: Responsive browser and accessibility checks
+        run: |
+          npm install --prefix "$RUNNER_TEMP/pd-rent-buy" playwright@1.63.0 @axe-core/playwright@4.10.2 --no-audit --no-fund
+          "$RUNNER_TEMP/pd-rent-buy/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          NODE_PATH="$RUNNER_TEMP/pd-rent-buy/node_modules" node tests/alugar-comprar-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: rent-buy-previews
+          path: /tmp/pd-rent-buy-previews
+          retention-days: 7
