@@ -1,0 +1,31 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const vm = require('node:vm');
+const html = fs.readFileSync(path.join(__dirname, '../casa-condominio-fechado-bertioga.html'), 'utf8');
+const source = [...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g)].map(m => m[1]).find(s => s.includes('function calcROI()'));
+assert.ok(source, 'simulator script exists');
+const inputs = { propValue: '595000', adr: '750', occupancy: '55', nights: '200', costs: '38000' };
+const elements = Object.fromEntries(Object.entries(inputs).map(([key, value]) => [key, { value }]));
+elements.roiResult = {};
+const context = vm.createContext({ document: { getElementById: id => elements[id] } });
+vm.runInContext(source, context);
+function run(overrides = {}) {
+  for (const [id, value] of Object.entries({ ...inputs, ...overrides })) elements[id].value = value;
+  elements.roiResult.innerHTML = ''; elements.roiResult.textContent = '';
+  context.calcROI();
+  return elements.roiResult.innerHTML || elements.roiResult.textContent;
+}
+const initial = run();
+for (const value of ['82.500', '44.500', '13.9%', '7.5%', '13.4 anos']) assert.ok(initial.includes(value), value);
+const section = html.split('<h2>📈 Cenário ilustrativo')[1].split('</section>')[0];
+for (const value of ['R$82.500', 'R$44.500', '13,9%', '7,5%', '13,4 anos']) assert.ok(section.includes(value), `table: ${value}`);
+assert.ok(run({ costs: '82500' }).includes('não aplicável'));
+assert.ok(run({ costs: '90000' }).includes('não aplicável'));
+assert.ok(run({ occupancy: '0' }).includes('Receita bruta: R$0'));
+for (const overrides of [{propValue: '0'}, {propValue: '-1'}, {occupancy: '101'}, {occupancy: '-1'}, {nights: '366'}, {adr: '-1'}, {costs: '-1'}, {adr: 'invalid'}]) assert.ok(run(overrides).startsWith('Informe'), JSON.stringify(overrides));
+assert.ok(run({ occupancy: '100', nights: '365', costs: '0' }).includes('273.750'));
+for (const id of Object.keys(inputs)) assert.ok(section.includes(`for="${id}"`));
+assert.ok(section.includes('aria-live="polite"'));
+assert.ok(!/19,4%|11,3%|153\.413|115\.413/.test(section));
+console.log('PASS: initial table and simulator agree; zero/negative result, valid boundaries, invalid inputs and accessible labels checked.');
