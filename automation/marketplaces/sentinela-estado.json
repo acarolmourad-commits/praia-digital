@@ -5,6 +5,7 @@
       "name": "Airbnb Product Releases (oficial)",
       "url": "https://news.airbnb.com/product-releases/",
       "status": 200,
+      "checked_at": "2026-11-11T10:56:37+00:00",
       "seen": {
         "https://news.airbnb.com/product-releases/airbnb-2026-summer-release": "Airbnb 2026 Summer Release",
         "https://news.airbnb.com/product-releases/airbnb-2025-winter-release": "Airbnb 2025 Winter Release",
@@ -24,6 +25,7 @@
       "name": "Airbnb Newsroom (oficial)",
       "url": "https://news.airbnb.com/",
       "status": 200,
+      "checked_at": "2026-11-11T10:56:37+00:00",
       "seen": {
         "https://news.airbnb.com/gen-z-is-driving-a-45-jump-in-halloween-weekend-searches": "Gen Z is driving a 45% jump in Halloween weekend searches",
         "https://news.airbnb.com/airbnb-org-hurricane-isaias": "Airbnb.org offers emergency housing to people displaced by Hurricane Isaias",
@@ -59,6 +61,7 @@
       "name": "Airbnb Resource Center - Anfitrioes (oficial)",
       "url": "https://www.airbnb.com/resources/hosting-homes",
       "status": 200,
+      "checked_at": "2026-11-11T10:56:37+00:00",
       "seen": {
         "https://www.airbnb.com/resources/hosting-homes/a/important-changes-to-house-rules-21": "Important changes to house rules",
         "https://www.airbnb.com/resources/hosting-homes/a/introducing-the-all-new-community-center-773": "The all-new Community Center",
@@ -94,6 +97,7 @@
       "name": "Booking Partner Hub (oficial)",
       "url": "https://partner.booking.com/en-us",
       "status": 202,
+      "checked_at": "2026-11-11T10:56:37+00:00",
       "seen": {},
       "hash": null,
       "unavailable": true
@@ -102,8 +106,32 @@
       "name": "Booking - pagina oficial para parceiros",
       "url": "https://join.booking.com/",
       "status": 200,
+      "checked_at": "2026-11-11T10:56:37+00:00",
       "hash": "c12b223b168c6998f58a449dd7dfbf1e8249a4e37f2c48b0bcbbc85f1477e988",
       "seen": {}
+    },
+    "booking-news": {
+      "name": "Booking Newsroom (oficial)",
+      "url": "https://news.booking.com/",
+      "status": 200,
+      "checked_at": "2026-11-11T10:56:37+00:00",
+      "seen": {
+        "https://news.booking.com/bookingcoms-how-india-travels-2026-explores-the-rise-of-alternative-accommodations": "Booking.com’s ‘How India Travels 2026’ Explores the Rise of Alternative Accommodations",
+        "https://news.booking.com/how-will-group-budgets-personalized-wellness--recovery-maxxing-shape-2027-guest-experiences": "How will Group Budgets, Personalized Wellness & ‘Recovery-Maxxing’ shape 2027 Guest Experiences?",
+        "https://news.booking.com/bookingcom-2027-travel-predictions-reveal-the-ultimate-travel-flex": "Booking.com’s 2027 Travel Predictions Reveal the Ultimate Travel Flex: Going Off-Script",
+        "https://news.booking.com/bookingcom-uncovers-trending-destinations-for-2027": "Booking.com Uncovers Trending Destinations for 2027",
+        "https://news.booking.com/worth-every-dollar-bookingcom-reveals-travelers-prioritize-trips-ahead-of-other-day-to-day-expenses": "Worth Every Dollar: Booking.com Reveals Travelers Prioritize Trips Ahead of Other Day-to-Day Expenses",
+        "https://news.booking.com/travel-together-stay-together-bookingcom-invites-travelers-to-test-compatibility-through-curated-trips---turbulence-tests---at-partner-hotels-across-the-us": "Travel Together, Stay Together? Booking.com Invites Travelers to Test Compatibility Through Curated Trips - \"Turbulence Tests” - at Partner Hotels Across the U.S. September 11 , 2026 | 14:00 PM Europe/Amsterdam Fall is almost here, but before you call it quits on your summer fling, Booking.com has one more trip in mind: a …",
+        "https://news.booking.com/bookingcom-travel-happiness-index-apac-travellers-remain-resilient-intentional-and-joy-led-amid-uncertainty": "Booking.com Travel Happiness Index: APAC travellers remain resilient, intentional and joy-led amid uncertainty July 29 , 2026 | 09:00 AM Europe/Amsterdam Inaugural research across 10 APAC markets shows travel remains a powerful source of joy, reset and connection - even as travellers adapt to …",
+        "https://news.booking.com/bookingcom-renews-partnership-with-uefa-national-team-competitions": "Booking.com renews partnership with UEFA national team competitions September 14 , 2026 | 14:00 PM Europe/Amsterdam The world's leading online travel booking platform will continue as the official accommodation and attractions partner, helping fans plan and …",
+        "https://news.booking.com/air-india-and-bookingcom-partner-to-offer-integrated-booking-experiences-and-exclusive-rewards-to-travellers": "Air India and Booking.com Partner to Offer Integrated Booking Experiences and Exclusive Rewards to Travellers June 22 , 2026 | 13:21 PM Europe/Amsterdam Air India, India’s leading global airline, and Booking.com, one of the world’s leading digital travel platforms, today …",
+        "https://news.booking.com/bookingcom-is-making-car-rentals-easier-with-app-in-chatgpt": "Booking.com Is Making Car Rentals Easier with App in ChatGPT May 20 , 2026 | 10:00 AM Europe/Amsterdam Today, Booking.com has unveiled a range of new AI-driven innovations bringing customers a faster, more seamless car rental …",
+        "https://news.booking.com/amsterdam-court-upholds-key-elements-of-bookingcoms-position-in-german-price-parity-case": "Amsterdam Court Upholds Key Elements of Booking.com’s Position in German Price Parity Case March 04 , 2026 | 14:07 PM Europe/Amsterdam Today the Amsterdam District Court upheld key elements of Booking.com’s position, concerning the company’s past use of price parity clauses …",
+        "https://news.booking.com/the-great-hot-tub-hunt-bookingcom-reveals-travelers-most-wanted-amenity": "The Great Hot Tub Hunt: Booking.com Reveals Travelers’ Most-Wanted Amenity November 04 , 2026 | 14:16 PM Europe/Amsterdam Hot tubs have become the most-searched amenity on Booking.com’s Smart Filter feature globally, with searches up 18%* year-on-year. To inspire travelers and make it even easier to find their perfect stay, Booking.com is spotlighting five … Read more",
+        "https://news.booking.com/remarkable-hidden-unesco-sites-just-waiting-to-be-explored": "Remarkable UNESCO Sites Just Waiting to be Explored October 30 , 2026 | 09:29 AM Europe/Amsterdam Booking.com has curated a list of lesser-known UNESCO World Heritage Sites for travellers looking to explore cultural and natural landmarks beyond the crowds. Discover destinations in Albania, Laos, the United States, Uruguay and South Korea, … Read more",
+        "https://news.booking.com/dark-sky-destinations-for-a-halloween-escape": "Dark Sky Destinations for a Halloween Escape October 02 , 2026 | 14:42 PM Europe/Amsterdam Booking.com highlights five dark sky destinations for travelers looking for a memorable Halloween escape under the stars. From New Zealand to Utah, uncover where to go, what to do and where to stay for an atmospheric night-sky trip. Read more"
+      },
+      "hash": "48f29aae4832ae23504b41cdb6de9549b17659f54027ed5349938eab894cf6e8"
     }
   },
   "articles": [
