@@ -10,6 +10,13 @@ on:
       - 'assets/css/editorial-guides.css'
       - 'tests/blog-search.test.cjs'
       - 'tests/test_blog_discovery.py'
+      - 'tests/editorial-guides-browser.cjs'
+      - 'css/style.css'
+      - 'js/shared.js'
+      - 'js/pd-navigation.js'
+      - 'assets/css/pd-navigation.css'
+      - 'partials/**'
+      - 'scripts/build-navigation.py'
       - '.github/workflows/blog-discovery-checks.yml'
   push:
     branches: [main]
@@ -21,6 +28,13 @@ on:
       - 'assets/css/editorial-guides.css'
       - 'tests/blog-search.test.cjs'
       - 'tests/test_blog_discovery.py'
+      - 'tests/editorial-guides-browser.cjs'
+      - 'css/style.css'
+      - 'js/shared.js'
+      - 'js/pd-navigation.js'
+      - 'assets/css/pd-navigation.css'
+      - 'partials/**'
+      - 'scripts/build-navigation.py'
       - '.github/workflows/blog-discovery-checks.yml'
 
 permissions:
@@ -29,6 +43,7 @@ permissions:
 jobs:
   blog-discovery:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -41,3 +56,16 @@ jobs:
         run: node --test tests/blog-search.test.cjs
       - name: Editorial metadata and discovery paths
         run: python3 -m unittest discover -s tests -p 'test_blog_discovery.py' -v
+      - name: Mobile editorial journeys (offline)
+        env:
+          EDITORIAL_QA_OUTPUT: ${{ runner.temp }}/editorial-qa
+        run: |
+          npm install --prefix "$RUNNER_TEMP/editorial-browser" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/editorial-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          NODE_PATH="$RUNNER_TEMP/editorial-browser/node_modules" node tests/editorial-guides-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: editorial-mobile-evidence
+          path: ${{ runner.temp }}/editorial-qa
+          if-no-files-found: warn
