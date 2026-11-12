@@ -8,6 +8,7 @@ are decoded before lookup. No files are modified.
 from __future__ import annotations
 
 import argparse
+import json
 import re
 from html.parser import HTMLParser
 from pathlib import Path
@@ -99,8 +100,101 @@ def indexing_exclusions(path: Path) -> list[str]:
     if path.suffix.lower() not in (".html", ".htm"):
         return []
     parser = IndexingDirectives()
-    parser.feed(path.read_text(encoding="utf-8"))
+    text = path.read_text(encoding="utf-8")
+    parser.feed(text)
+    if is_placeholder_article(text):
+        parser.reasons.add("placeholder article")
     return sorted(parser.reasons)
+
+
+def is_placeholder_article(text: str) -> bool:
+    """Recognize the exact empty three-topic template, not articles by word count."""
+    article = re.search(r'<article\b[^>]*>(.*?)</article>', text, re.I | re.S)
+    if not article:
+        return False
+    body = article[1]
+    markers = ('Estratégias práticas', 'Dicas profissionais', 'Ferramentas recomendadas')
+    plain = ' '.join(re.sub(r'<[^>]+>', ' ', body).split())
+    return all(marker in body for marker in markers) and len(plain) < 180
+
+
+def canonical_sitemap_path(path: Path, root: Path) -> str | None:
+    """Use declared same-file URLs; exclude aliases rather than resubmitting them."""
+    directives = IndexingDirectives()
+    directives.feed(path.read_text(encoding='utf-8'))
+    if not directives.canonicals:
+        return path.relative_to(root).as_posix()
+    if len(directives.canonicals) != 1:
+        return None
+    parts = urlsplit(directives.canonicals[0])
+    if parts.scheme != 'https' or parts.netloc != 'praia.digital' or parts.query or parts.fragment:
+        return None
+    target = root / unquote(parts.path).lstrip('/')
+    if target.is_dir():
+        target = target / 'index.html'
+    if not target.is_file() or target.resolve() != path.resolve():
+        return None
+    return unquote(parts.path).lstrip('/')
+
+
+def validate_indexing_intent(root: Path) -> list[str]:
+    """Protect reviewed indexing decisions without rewriting files during deploy."""
+    root = Path(root)
+    manifest = root / 'data/indexing-intent-20261111.json'
+    if not manifest.exists():
+        return []
+    try:
+        intent = json.loads(manifest.read_text(encoding='utf-8'))
+    except (OSError, ValueError) as exc:
+        return [f'indexing intent: cannot read decisions: {exc}']
+    errors = []
+    for rel, expected in intent['canonicals'].items():
+        path = root / rel
+        if not path.is_file():
+            errors.append(f'indexing intent: missing reviewed page: {rel}')
+            continue
+        parser = IndexingDirectives()
+        parser.feed(path.read_text(encoding='utf-8'))
+        if parser.canonicals != [expected]:
+            errors.append(f'indexing intent: canonical regression: {rel}')
+        if rel in intent['noindex'] and 'noindex' not in parser.reasons:
+            errors.append(f'indexing intent: noindex regression: {rel}')
+        parts = urlsplit(expected)
+        target = root / unquote(parts.path).lstrip('/')
+        if target.is_dir():
+            target = target / 'index.html'
+        if parts.scheme != 'https' or parts.netloc != 'praia.digital' or not target.is_file():
+            errors.append(f'indexing intent: nonexistent canonical target: {rel}')
+    for sitemap in root.glob('sitemap*.xml'):
+        try:
+            document = ET.parse(sitemap)
+        except ET.ParseError as exc:
+            errors.append(f'{sitemap.name}: invalid XML: {exc}')
+            continue
+        for loc in document.iter(f'{{{NAMESPACE}}}loc'):
+            url = loc.text or ''
+            parts = urlsplit(url)
+            path = root / unquote(parts.path).lstrip('/')
+            if path.is_dir():
+                path = path / 'index.html'
+            if not path.is_file():
+                errors.append(f'{sitemap.name}: missing canonical page: {url}')
+                continue
+            parser = IndexingDirectives()
+            parser.feed(path.read_text(encoding='utf-8'))
+            if len(parser.canonicals) != 1 or unquote(parser.canonicals[0]) != unquote(url):
+                errors.append(f'{sitemap.name}: submit the single declared canonical: {url}')
+            if parser.reasons or is_placeholder_article(path.read_text(encoding='utf-8')):
+                errors.append(f'{sitemap.name}: excluded page in sitemap: {url}')
+    # New copies of the exact empty template must not silently enter the public index.
+    for page in (root / 'blog').glob('*.html'):
+        text = page.read_text(encoding='utf-8')
+        if is_placeholder_article(text):
+            parser = IndexingDirectives()
+            parser.feed(text)
+            if 'noindex' not in parser.reasons:
+                errors.append(f'indexing intent: unreviewed empty article: {page.relative_to(root)}')
+    return errors
 
 
 def validate_sitemap(sitemap: Path, root: Path) -> list[str]:
@@ -184,6 +278,7 @@ def main() -> int:
         if not path.is_absolute():
             path = args.root / path
         errors.extend(validate_sitemap(path, args.root))
+    errors.extend(validate_indexing_intent(args.root))
     if errors:
         print("\n".join(errors))
         print(f"Sitemap validation failed: {len(errors)} error(s)")
