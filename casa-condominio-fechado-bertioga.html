@@ -175,11 +175,25 @@
   <!-- Meta Pixel -->
   <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init', '789780939856883');fbq('track','PageView');</script>
   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=789780939856883&ev=PageView&noscript=1"/></noscript>
+<style>
+.bertioga-listing img { max-width: 100%; }
+.bertioga-listing .listing-table-wrap { max-width: 100%; overflow-x: auto; }
+.bertioga-listing .listing-table-wrap:focus-visible { outline: 3px solid #0e7c7b; outline-offset: 3px; }
+.bertioga-listing .gallery-item img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.bertioga-listing .hero h1 { margin-bottom: .75rem; }
+.bertioga-listing .hero .subtitle { margin-bottom: 1.25rem; }
+@media(max-width: 600px) {
+  .bertioga-listing .video-tour-container { height: 280px !important; }
+  .bertioga-listing .gallery-grid { grid-template-columns: minmax(0, 1fr) !important; }
+}
+</style>
 </head>
 <body>
   <meta name="pd-shared-nav">
-  <main id="main">
+  <main id="main" class="bertioga-listing">
     <section class="hero">
+      <h1>Casa em Condomínio Fechado em Bertioga — R$595.000</h1>
+      <p class="subtitle">105m² a apenas 100 metros da praia. Condomínio completo com piscina, sauna, academia e sala de jogos. IPTU R$105/mês | Condomínio R$710 (água e internet inclusas).</p>
       <div class="video-tour-container" style="position:relative;width:100%;height:500px;margin-bottom:20px;">
         <img id="heroVideoPoster" src="https://praia.digital/img/bertioga-casa-hall-living-nautico.webp" alt="Casa em condomínio fechado em Bertioga a 100m da praia, foyer com detalhes náuticos e acesso à piscina" style="width:100%;height:100%;object-fit:cover;border-radius:12px;" fetchpriority="high">
         <div class="play-overlay" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,0.7);border-radius:50%;width:80px;height:80px;display:flex;align-items:center;justify-content:center;cursor:pointer;" onclick="openVideoModal()">
@@ -214,12 +228,7 @@
         }
       </script>
 
-      <picture>
-        <source srcset="https://praia.digital/img/bertioga-casa-hall-living-nautico.webp" type="image/webp">
-        <img fetchpriority="high" src="https://praia.digital/img/bertioga-casa-hall-living-nautico.webp" alt="Casa em condomínio fechado em Bertioga a 100m da praia, foyer com detalhes náuticos e acesso à piscina" width="1200" height="800" decoding="async">
-      </picture>
-      <h1>Casa em Condomínio Fechado em Bertioga — R$595.000</h1>
-      <p class="subtitle">105m² a apenas 100 metros da praia. Condomínio completo com piscina, sauna, academia e sala de jogos. IPTU R$105/mês | Condomínio R$710 (água e internet inclusas).</p>
+
       <a class="btn-whatsapp" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Tenho%20interesse%20na%20casa%20em%20condom%C3%ADnio%20fechado%20em%20Bertioga%20(R%24595.000)&utm_source=site&utm_medium=whatsapp&utm_campaign=imovel-bertioga" target="_blank" rel="noopener">📲 Tenho interesse neste imóvel</a>
     </section>
 
@@ -357,7 +366,8 @@
 
     <section class="servicos-section">
       <h2>📊 Dados de Condomínio e Taxas</h2>
-      <table style="width:100%;border-collapse:collapse;margin-top:16px;">
+      <div class="listing-table-wrap" role="region" aria-label="Tabela do imóvel: deslize para consultar todas as colunas" tabindex="0">
+<table style="width:100%;border-collapse:collapse;margin-top:16px;">
         <tr style="border-bottom:1px solid #ddd;">
           <th align="left" style="padding:10px;">Item</th>
           <th align="left" style="padding:10px;">Valor</th>
@@ -375,6 +385,7 @@
           <td style="padding:10px;border-bottom:1px solid #eee;">R$ 105,00/mês</td>
         </tr>
       </table>
+      </div>
     </section>
 
     <section class="servicos-section">
@@ -452,7 +463,8 @@
       <h2>📈 Cenário ilustrativo de aluguel de temporada</h2>
       <p>Exemplo de cálculo com diária de R$ 750, ocupação de 55% sobre 200 noites disponíveis e custos anuais de R$ 38.000. Essas premissas são ilustrativas, não dados de desempenho comprovados deste imóvel nem garantia de receita. Não incluem financiamento, tributos sobre a renda ou custos de compra e venda.</p>
 
-      <table style="width:100%;border-collapse:collapse;margin-top:16px;">
+      <div class="listing-table-wrap" role="region" aria-label="Tabela do imóvel: deslize para consultar todas as colunas" tabindex="0">
+<table style="width:100%;border-collapse:collapse;margin-top:16px;">
         <thead>
           <tr style="background:#0a3d2e;color:#fff;">
             <th style="padding:12px;text-align:left;">Métrica</th>
@@ -503,6 +515,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
 
       <p style="margin-top:20px;">💡 <strong>Como interpretar:</strong> o resultado depende das premissas e considera somente os custos informados. Compare cenários e confirme os custos antes de tomar uma decisão.</p>
 
@@ -548,7 +561,8 @@
       <h2>📍 Inteligência Regional: Por que Bertioga em 2026?</h2>
       <p>Bertioga é uma das cidades com maior potencial de valorização no litoral SP, segundo nossa análise de dados consolidados:</p>
 
-      <table style="width:100%;border-collapse:collapse;margin-top:16px;">
+      <div class="listing-table-wrap" role="region" aria-label="Tabela do imóvel: deslize para consultar todas as colunas" tabindex="0">
+<table style="width:100%;border-collapse:collapse;margin-top:16px;">
         <thead>
           <tr style="background:#0a3d2e;color:#fff;">
             <th style="padding:12px;text-align:left;">Indicador</th>
@@ -589,6 +603,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
 
       <h3 style="color:#0a3d2e;margin-top:25px;">Infraestrutura e Atrações Próximas</h3>
       <ul style="line-height:1.8;">
@@ -646,7 +661,8 @@
 
     <section class="servicos-section">
       <h2>Avaliação de Valor e Comparativo de Mercado</h2>
-      <table style="width:100%;border-collapse:collapse;margin-top:16px;">
+      <div class="listing-table-wrap" role="region" aria-label="Tabela do imóvel: deslize para consultar todas as colunas" tabindex="0">
+<table style="width:100%;border-collapse:collapse;margin-top:16px;">
         <tr style="border-bottom:1px solid #0a3d2e;">
           <th align="left" style="padding:10px;">Característica</th>
           <th align="left" style="padding:10px;">Este Imóvel</th>
@@ -688,6 +704,7 @@
           <td style="padding:10px;border-bottom:1px solid #eee;">65% dos imóveis</td>
         </tr>
       </table>
+      </div>
     </section>
 
     <!-- AdSense -->

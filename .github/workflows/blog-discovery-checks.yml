@@ -1,0 +1,43 @@
+name: Blog discovery and host guide checks
+
+on:
+  pull_request:
+    paths:
+      - 'blog/**'
+      - 'anfitrioes/index.html'
+      - 'js/blog-search.js'
+      - 'assets/css/blog-discovery.css'
+      - 'assets/css/editorial-guides.css'
+      - 'tests/blog-search.test.cjs'
+      - 'tests/test_blog_discovery.py'
+      - '.github/workflows/blog-discovery-checks.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'blog/**'
+      - 'anfitrioes/index.html'
+      - 'js/blog-search.js'
+      - 'assets/css/blog-discovery.css'
+      - 'assets/css/editorial-guides.css'
+      - 'tests/blog-search.test.cjs'
+      - 'tests/test_blog_discovery.py'
+      - '.github/workflows/blog-discovery-checks.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  blog-discovery:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Search behavior regressions
+        run: node --test tests/blog-search.test.cjs
+      - name: Editorial metadata and discovery paths
+        run: python3 -m unittest discover -s tests -p 'test_blog_discovery.py' -v

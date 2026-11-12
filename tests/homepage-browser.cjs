@@ -49,7 +49,8 @@ async function homepage(page, width) {
   assert.equal(await page.locator('h1').count(), 1);
   assert.equal(await page.locator('#produtos-comparacao').count(), 1);
   assert.equal(await page.locator('#planos-praia-digital').count(), 0, 'legacy plan injection must not duplicate comparison');
-  assert.equal(await page.locator('#apps').count(), 0, 'legacy apps injection must not duplicate curated home content');
+  assert.equal(await page.locator('section#apps').count(), 0, 'legacy apps injection must not duplicate curated home content');
+  assert.equal(await page.locator('#analise span#apps').count(), 1, 'legacy app links land on the curated analysis section');
   await page.locator('#produtos-comparacao summary').focus();
   await page.keyboard.press('Enter');
   assert.equal(await page.locator('#produtos-comparacao details').evaluate(el=>el.open),true);
@@ -85,6 +86,8 @@ async function homepage(page, width) {
   } else {
     assert.equal(await toggle.isVisible(), false);
     await firstGroup.focus();
+    assert.equal(await firstGroup.getAttribute('aria-expanded'), 'false');
+    await page.keyboard.press('Enter');
     assert.equal(await firstGroup.getAttribute('aria-expanded'), 'true');
     await page.keyboard.press('Escape');
     assert.equal(await firstGroup.getAttribute('aria-expanded'), 'false');
@@ -172,6 +175,13 @@ async function searchJourney(page, width) {
 }
 
 async function contactAndCases(page, width) {
+  await page.goto(origin + '/captura-leads.html', { waitUntil: 'load' });
+  assert(!/Lead registrado|Finalizar pagamento/.test(await page.locator('body').innerText()));
+  await page.getByRole('link', { name: 'Solicitar avaliação gratuita', exact: true }).click();
+  await page.waitForURL('**/interesse.html?produto=avaliacao');
+  assert.equal(await page.locator('#produto').inputValue(), 'avaliacao');
+  assert.equal(await page.locator('#pagamento-opcional').isVisible(), false);
+
   for (const product of ['pricelabs', 'airbnb-booking', 'avaliacao']) {
     await page.goto(origin + '/interesse.html?produto=' + product, { waitUntil: 'load' });
     assert.equal(await page.locator('#produto').inputValue(), product);

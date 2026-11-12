@@ -35,7 +35,7 @@ class NavigationTests(unittest.TestCase):
         text = '<html><head></head><body><header><nav>old</nav></header><main>original</main></body></html>'
         result, _ = nav.transform(text, HEADER)
         self.assertEqual(nav.transform(result, HEADER)[0], result)
-        self.assertEqual(result.count('/js/pd-navigation.js?v=3'), 1)
+        self.assertEqual(result.count('/js/pd-navigation.js?v=4'), 1)
         self.assertEqual(result.count('/assets/css/pd-navigation.css?v=3'), 1)
 
     def test_keeps_editorial_header(self):
