@@ -1,0 +1,37 @@
+name: Investir tools checks
+on:
+  pull_request:
+    paths:
+      - "ferramentas/avaliacao-preco.html"
+      - "apps/calculadora-financiamento/**"
+      - "js/investir-tools-core.js"
+      - "js/avaliacao-preco-ui.js"
+      - "js/financiamento-ui.js"
+      - "css/investir-tools.css"
+      - "tests/investir-tools*.cjs"
+      - ".github/workflows/investir-tools-checks.yml"
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node tests/investir-tools.cjs
+      - name: Check app network structure
+        run: python3 tests/test_app_network.py NetworkTests.test_structure_and_targets
+      - name: Prepare published navigation
+        run: python3 scripts/build-navigation.py
+      - name: Install browser test dependencies
+        run: |
+          npm install --prefix "$RUNNER_TEMP/investir-browser" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/investir-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+      - name: Offline mobile and desktop regression
+        run: NODE_PATH="$RUNNER_TEMP/investir-browser/node_modules" node tests/investir-tools-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: investir-tools-previews
+          path: /tmp/investir-*.png
