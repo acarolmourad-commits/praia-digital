@@ -1,0 +1,7 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {assess,briefing,followup} from '../apps/oficina-ia-imobiliaria/core.mjs';
+test('missing data remains missing rather than invented',()=>{const d={tipo:'Apartamento',cidade:'Bertioga',finalidade:'Venda'};const a=assess(d);assert.equal(a.filled,3);assert.equal(a.missing.length,9);const b=briefing(d);assert.match(b,/Preço e periodicidade: NÃO INFORMADO/);assert.match(b,/Disponibilidade e data da conferência: NÃO INFORMADO/);assert.doesNotMatch(b,/R\$|vista para o mar/i);});
+test('zero bedrooms is retained and empty whitespace excluded',()=>{assert.equal(assess({quartos:0,custos:'  '}).filled,1);assert.match(briefing({tipo:'Studio',cidade:'Santos',finalidade:'Locação',quartos:0}),/Dormitórios: 0/);});
+test('briefing keeps supplied values and rejects incomplete minimum',()=>{assert.throws(()=>briefing({cidade:'Santos'}),/Preencha/);assert.match(briefing({tipo:'Casa',cidade:'Guarujá',finalidade:'Venda',area:'80 m² privativos',preco:'R$ 700.000'}),/Área e tipo de área: 80 m² privativos/);});
+test('all outreach stages are drafts and refusal closes contact',()=>{for(const etapa of ['primeiro','retorno','interesse','encerrar']) assert.match(followup({contexto:'Contexto confirmado.',etapa}),/NÃO ENVIADO/);assert.match(followup({contexto:'Não desejam contato.',etapa:'encerrar'}),/não enviar novas mensagens/);assert.throws(()=>followup({contexto:'',etapa:'primeiro'}));assert.throws(()=>followup({contexto:'x',etapa:'unknown'}));});

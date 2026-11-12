@@ -23,3 +23,4 @@ Host: https://praia.digital
 Sitemap: https://praia.digital/sitemap-boletim.xml
 
 Sitemap: https://praia.digital/sitemap-marketplaces.xml
+Sitemap: https://praia.digital/sitemap-profissionais.xml
