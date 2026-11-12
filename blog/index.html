@@ -80,6 +80,10 @@
 
 
     <section aria-labelledby="guias-ia-profissionais"><h2 id="guias-ia-profissionais">IA, SEO e relacionamento para imobiliárias</h2><p>Guias práticos com exemplos, fontes e ferramentas gratuitas.</p><ul><li><a href="/blog/briefing-imobiliario-para-ia.html">Briefing imobiliário para IA: da ficha ao anúncio confiável</a></li><li><a href="/blog/seo-local-imobiliarias-conteudo-util.html">SEO local para imobiliárias: conteúdo útil por bairro</a></li><li><a href="/blog/follow-up-imobiliario-por-email.html">Follow-up imobiliário por e-mail: contexto, proposta e próximo passo</a></li></ul><p><a href="/apps/oficina-ia-imobiliaria/">Experimentar a oficina gratuita</a></p></section>
+<section aria-labelledby="novos-roteiros" style="margin:2rem 0"><h2 id="novos-roteiros">Novos roteiros para colocar em prática</h2><p>Guias publicados em 12 de novembro de 2026, com fichas de conferência e próximos passos.</p><div class="grid">
+<article class="card"><h3>Compare bairros com uma ficha de visita</h3><p>Registre trajetos, rotina e perguntas com a mesma régua para cada endereço.</p><a class="btn" href="/guias/ficha-comparacao-bairros-litoral.html">Abrir ficha de comparação</a></article>
+<article class="card"><h3>Confira fotos, texto e comodidades</h3><p>Uma matriz por cômodo para revisar o que o anúncio promete e o que entrega.</p><a class="btn" href="/guias/auditoria-fotos-descricao-temporada.html">Revisar a apresentação</a></article>
+<article class="card"><h3>Confronte os calendários da temporada</h3><p>Identifique unidade, reserva e bloqueio antes de confirmar disponibilidade.</p><a class="btn" href="/guias/conferencia-calendarios-temporada.html">Conferir disponibilidade</a></article></div></section>
     <section aria-labelledby="guias-anfitrioes">
       <h2 id="guias-anfitrioes">Guias práticos para anfitriões</h2>
       <p>Conteúdos revisados em 2 de novembro de 2026, com checklists, exemplos hipotéticos e fontes oficiais.</p>
@@ -101,46 +105,17 @@
       <article class="card"><h2>Marketing Imobiliário</h2><p>Para corretores e imobiliárias do litoral.</p><div class="actions"><a class="btn" href="/guias/marketing-imobiliario-corretores-litoral.html">Abrir guia</a></div></article>
     </div>
 
-    <h2 style="margin-top:2.5rem">🗂️ Todos os artigos</h2>
-    <input id="pdBlogSearch" type="search" placeholder="Buscar artigo... (ex.: airbnb, santos, financiamento)" style="width:100%;padding:.8rem 1rem;border:2px solid #e0e0e0;border-radius:12px;font-size:1rem;margin-bottom:1rem">
-    <p id="pdBlogCount" style="font-size:.85rem;color:#6b7280">Carregando artigos...</p>
-    <ul id="pdBlogList" style="list-style:none;padding:0;margin:0;display:grid;gap:.4rem"></ul>
-    <script>
-    (function(){
-      var list = document.getElementById('pdBlogList');
-      var count = document.getElementById('pdBlogCount');
-      var search = document.getElementById('pdBlogSearch');
-      if (!list) return;
-      var seen = {};
-      var items = [];
-      document.querySelectorAll('main a.btn[href]').forEach(function(a){
-        var href = a.getAttribute('href');
-        var label = a.textContent.trim();
-        if (!href || !label || seen[href]) return;
-        seen[href] = 1;
-        items.push({href: href, label: label});
-      });
-      function render(filter){
-        var f = (filter || '').toLowerCase();
-        list.innerHTML = '';
-        var shown = 0;
-        items.forEach(function(it){
-          if (f && it.label.toLowerCase().indexOf(f) === -1 && it.href.toLowerCase().indexOf(f) === -1) return;
-          var li = document.createElement('li');
-          var a = document.createElement('a');
-          a.href = it.href;
-          a.textContent = it.label;
-          a.style.cssText = 'color:#0077B6;text-decoration:none;font-weight:500';
-          li.appendChild(a);
-          list.appendChild(li);
-          shown++;
-        });
-        if (count) count.textContent = shown + (shown === 1 ? ' artigo' : ' artigos') + (f ? ' para "' + filter + '"' : '');
-      }
-      render('');
-      if (search) search.addEventListener('input', function(){ render(search.value); });
-    })();
-    </script>
+    <section aria-labelledby="buscar-artigos" style="margin:2rem 0;padding:1.2rem;background:#fff;border:1px solid #ccd8da;border-radius:12px">
+      <h2 id="buscar-artigos">Busque em todos os artigos</h2>
+      <p>Pesquise por tema ou cidade no catálogo completo de artigos públicos.</p>
+      <form action="/sitemap.html" method="get" role="search">
+        <label for="pdBlogSearch">Tema ou cidade</label>
+        <input id="pdBlogSearch" name="q" type="search" maxlength="200" placeholder="Ex.: Bertioga, Airbnb, simulado TTI" style="width:100%;padding:.8rem;border:1px solid #809aa2;border-radius:8px;margin:.5rem 0">
+        <input type="hidden" name="categoria" value="Artigos">
+        <button class="btn" type="submit">Buscar artigos</button>
+      </form>
+      <p><a href="/sitemap.html">Explorar também cidades, ferramentas, guias e serviços</a></p>
+    </section>
 
 <div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
   <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>

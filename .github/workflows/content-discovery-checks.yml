@@ -1,0 +1,34 @@
+name: Content discovery checks
+on:
+  pull_request:
+    paths:
+      - 'sitemap*.xml'
+      - 'sitemap.html'
+      - 'explorar/**'
+      - 'data/content-search.json'
+      - 'scripts/build-content-discovery.py'
+      - 'js/content-discovery.js'
+      - 'css/content-discovery.css'
+      - 'guias/**'
+      - 'tests/test_content_discovery*'
+      - 'tests/content-discovery-browser.cjs'
+      - '.github/workflows/content-discovery-checks.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  discovery:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Catalog coverage, exclusions and static navigation
+        run: python3 -m unittest discover -s tests -p 'test_content_discovery.py' -v
+      - name: Search behavior
+        run: node --test tests/test_content_discovery.cjs
+      - name: Prepare shared navigation
+        run: python3 scripts/build-navigation.py
+      - name: Browser search and mobile navigation
+        run: |
+          npm install --prefix "$RUNNER_TEMP/discovery" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/discovery/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          NODE_PATH="$RUNNER_TEMP/discovery/node_modules" node tests/content-discovery-browser.cjs
