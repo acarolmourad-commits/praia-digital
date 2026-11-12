@@ -15,7 +15,7 @@
     var seen = new Set();
     var items = [];
 
-    document.querySelectorAll('main a.btn[href]').forEach(function (anchor) {
+    document.querySelectorAll('main a.btn[href], main section[aria-labelledby] li a[href]').forEach(function (anchor) {
       var url = new URL(anchor.getAttribute('href'), document.baseURI);
       // Keep discovery focused on editorial destinations, not service CTAs.
       if (url.origin !== window.location.origin || !(/^\/(blog|guias|primeiro-imovel-litoral-sp-2026)\//.test(url.pathname) || /^\/[^/]+\.html$/.test(url.pathname)) || url.pathname === '/servicos.html') return;
