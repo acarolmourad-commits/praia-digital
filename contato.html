@@ -148,19 +148,26 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
     <section class="servicos-section">
       <h2>Envie sua mensagem</h2>
-      <form class="contact-form" aria-label="Formulário de contato" action="mailto:comercial@praia.digital" method="post" enctype="text/plain">
-        <input type="text" name="nome" placeholder="Seu nome" required>
-        <input type="email" name="email" placeholder="Seu e-mail" required>
-        <input type="tel" name="telefone" placeholder="Seu telefone">
-        <select name="interesse">
+      <form class="contact-form" data-pd-lead aria-label="Solicitar contato à Praia Digital">
+        <label for="nome">Seu nome *</label><input type="text" id="nome" name="nome" maxlength="100" placeholder="Seu nome" required>
+        <label for="email">Seu e-mail *</label><input type="email" id="email" name="email" maxlength="254" placeholder="Seu e-mail" required>
+        <label for="telefone">Telefone (opcional)</label><input type="tel" id="telefone" name="telefone" maxlength="30" placeholder="Seu telefone">
+        <label for="interesse">Como podemos ajudar? *</label><select id="interesse" name="interesse" required>
           <option value="">Interesse</option>
           <option value="comprar">Comprar</option>
           <option value="alugar">Alugar</option>
           <option value="vender">Vender</option>
           <option value="parceria">Parceria</option>
         </select>
-        <textarea name="mensagem" placeholder="Sua mensagem" rows="4"></textarea>
-        <button type="submit">Enviar Mensagem</button>
+        <label for="mensagem">Mensagem (opcional)</label><textarea id="mensagem" name="mensagem" maxlength="1500" placeholder="Sua mensagem" rows="4"></textarea>
+
+        <div class="pd-lead-trap" hidden aria-hidden="true"><label>Não preencha<input name="_honey" tabindex="-1" autocomplete="off"></label></div>
+        <p>Usaremos seus dados somente para responder a esta solicitação. O envio é processado pelo FormSubmit e encaminhado a comercial@praia.digital. Não envie documentos, dados bancários ou informações sensíveis.</p>
+        <label style="display:block"><input type="checkbox" name="consentimento" value="Autorizo o contato sobre esta solicitação" required style="width:auto"> Autorizo o contato sobre esta solicitação e li a <a href="/politica-de-privacidade.html">Política de Privacidade</a>.</label>
+        <p data-lead-status role="status" aria-live="polite" tabindex="-1"></p>
+        <p>Prefere outro canal? <a href="https://wa.me/5511954346288" rel="noopener">Falar no WhatsApp</a> ou <a href="mailto:comercial@praia.digital">enviar e-mail</a>. Você revisa a mensagem antes de enviá-la.</p>
+        <noscript><p>O envio direto precisa de JavaScript. Use os links de e-mail ou WhatsApp acima.</p></noscript>
+<button type="submit" disabled>Solicitar contato por e-mail</button>
       </form>
       <p class="small">Ou fale direto pelo WhatsApp: <a href="https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral" target="_blank" rel="noopener">abrir atendimento</a>.</p>
     </section>
@@ -185,5 +192,6 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
 </div>
 </section>
+<script src="/js/lead-capture.js?v=20261112" defer></script>
 </body>
 </html>

@@ -65,14 +65,13 @@ a{color:#0EA5E9}
     </select>
     </div>
     <button type="submit">➤ Continuar no WhatsApp</button>
-    <p class="hint">Seus dados serão enviados à equipe e preenchidos no WhatsApp para você revisar antes de enviar a mensagem. Esta consulta não gera cobrança nem contratação; escopo e condições serão confirmados antes de qualquer compra. Ao continuar você concorda com a <a href="/politica-de-privacidade.html">Política de Privacidade</a>.</p>
+    <p class="hint">Seus dados serão preenchidos no WhatsApp para você revisar. O contato só é enviado quando você confirmar no WhatsApp; não gravamos o formulário automaticamente. Esta consulta não gera cobrança nem contratação; escopo e condições serão confirmados antes de qualquer compra. Ao continuar você concorda com a <a href="/politica-de-privacidade.html">Política de Privacidade</a>.</p>
+  <p class="hint">Prefere receber uma resposta por e-mail? <a href="/contato.html">Solicite contato pelo formulário</a>.</p>
   </form>
 </div>
 <p class="hint"><a href="/">← Voltar para praia.digital</a> · <a href="/apps/">Apps gratuitos</a></p>
 </main>
 <script>
-// Endpoint FormSubmit -> comercial@praia.digital (fallback enquanto Apps Script não é implantado)
-const LEADS_ENDPOINT = 'https://formsubmit.co/comercial@praia.digital';
 const produtoSelect=document.getElementById('produto');
 const contextos={
   'airbnb-booking':'Criação ou edição por anúncio e plataforma. Consulte entregas e condições antes de contratar.',
@@ -106,13 +105,6 @@ function enviar(e){
   const produto=produtoSelect.selectedOptions[0].textContent;
   const mensagem=document.getElementById('mensagem').value.trim();
   const pagto=document.getElementById('pagto').value;
-  // Grava na planilha de leads (não bloqueia o WhatsApp se falhar)
-  if(LEADS_ENDPOINT){
-    try{
-      const body=new URLSearchParams({nome:nome,telefone:tel,cidade:cidade,produto:produto,pagamento:pagto,mensagem:mensagem,origem:'interesse.html'});
-      fetch(LEADS_ENDPOINT,{method:'POST',mode:'no-cors',body:body});
-    }catch(err){}
-  }
   let msg='Olá! Meu nome é '+nome+'\nCidade: '+cidade+'\nProduto de interesse: '+produto;
   if(pagto)msg+='\nPreferência de pagamento (consulta): '+pagto;
   if(mensagem)msg+='\nMinha dúvida: '+mensagem;

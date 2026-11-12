@@ -268,24 +268,31 @@
     <section id="contato" class="contato-section">
       <h2>Fale Conosco</h2>
       <p>Tem um imóvel para vender ou alugar? Fale com a Praia Digital e publique com alcance qualificado.</p>
-      
-      <form id="contato-form" class="contact-form" aria-label="Contato sobre imóveis">
+
+      <form class="contact-form" data-pd-lead aria-label="Solicitar contato à Praia Digital">
         <label class="sr-only" for="nome">Seu nome</label>
-        <input type="text" id="nome" placeholder="Seu nome" autocomplete="name" required>
+        <input type="text" id="nome" name="nome" maxlength="100" placeholder="Seu nome" autocomplete="name" required>
         <label class="sr-only" for="email">Seu e-mail</label>
-        <input type="email" id="email" placeholder="Seu e-mail" autocomplete="email" required>
+        <input type="email" id="email" name="email" maxlength="254" placeholder="Seu e-mail" autocomplete="email" required>
         <label class="sr-only" for="telefone">Seu telefone</label>
-        <input type="tel" id="telefone" placeholder="Seu telefone" autocomplete="tel">
+        <input type="tel" id="telefone" name="telefone" maxlength="30" placeholder="Seu telefone" autocomplete="tel">
         <label class="sr-only" for="interesse">Interesse</label>
-        <select id="interesse">
+        <select id="interesse" name="interesse" required>
           <option value="">Interesse</option>
           <option value="comprar">Comprar</option>
           <option value="alugar">Alugar</option>
           <option value="vender">Vender</option>
         </select>
         <label class="sr-only" for="mensagem">Sua mensagem</label>
-        <textarea id="mensagem" placeholder="Sua mensagem" rows="4"></textarea>
-        <button type="submit">Enviar Mensagem</button>
+        <textarea id="mensagem" name="mensagem" maxlength="1500" placeholder="Sua mensagem" rows="4"></textarea>
+
+        <div class="pd-lead-trap" hidden aria-hidden="true"><label>Não preencha<input name="_honey" tabindex="-1" autocomplete="off"></label></div>
+        <p>Usaremos seus dados somente para responder a esta solicitação. O envio é processado pelo FormSubmit e encaminhado a comercial@praia.digital. Não envie documentos, dados bancários ou informações sensíveis.</p>
+        <label style="display:block"><input type="checkbox" name="consentimento" value="Autorizo o contato sobre esta solicitação" required style="width:auto"> Autorizo o contato sobre esta solicitação e li a <a href="/politica-de-privacidade.html">Política de Privacidade</a>.</label>
+        <p data-lead-status role="status" aria-live="polite" tabindex="-1"></p>
+        <p>Prefere outro canal? <a href="https://wa.me/5511954346288" rel="noopener">Falar no WhatsApp</a> ou <a href="mailto:comercial@praia.digital">enviar e-mail</a>. Você revisa a mensagem antes de enviá-la.</p>
+        <noscript><p>O envio direto precisa de JavaScript. Use os links de e-mail ou WhatsApp acima.</p></noscript>
+<button type="submit" disabled>Solicitar contato por e-mail</button>
       </form>
     </section>
   </main>
@@ -302,5 +309,6 @@
   <script src="js/main.js?v=20261106-casa-indaia" defer ></script>
   <a class="whatsapp-fab" href="https://wa.me/5511954346288?utm_source=site&utm_medium=whatsapp&utm_campaign=geral" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="26" height="26" fill="#fff" style="vertical-align:middle"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.5 13.9c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.4 1.2 2.5 1.6 2.9 1.8.3.2.5.1.7-.1l1-1.2c.2-.3.5-.2.8-.1l2 1c.3.1.5.2.6.4 0 .1 0 .7-.2 1.3z"/></svg></a>
 <script src="https://praia.digital/js/shared.js?v=2.0"></script>
+<script src="/js/lead-capture.js?v=20261112" defer></script>
 </body>
 </html>
