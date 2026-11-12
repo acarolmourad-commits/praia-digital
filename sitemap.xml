@@ -68,7 +68,7 @@
   </url>
   <url>
     <loc>https://praia.digital/anfitrioes/index.html</loc>
-    <lastmod>2026-10-25T12:08:08Z</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -6884,7 +6884,7 @@
   </url>
   <url>
     <loc>https://praia.digital/blog/diagnostico-anuncio-temporada-litoral-2026.html</loc>
-    <lastmod>2026-10-25T12:08:08Z</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -13964,7 +13964,7 @@
   </url>
   <url>
     <loc>https://praia.digital/blog/index.html</loc>
-    <lastmod>2026-10-25T12:08:08Z</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -38884,5 +38884,13 @@
   <url>
     <loc>https://praia.digital/imoveis/casas-lancamento-sao-lourenco.html</loc>
     <lastmod>2026-11-03</lastmod>
+  </url>
+  <url>
+    <loc>https://praia.digital/blog/sincronizar-calendario-airbnb-booking-ical.html</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://praia.digital/blog/briefing-criacao-anuncio-airbnb-booking.html</loc>
+    <lastmod>2026-11-12</lastmod>
   </url>
 </urlset>
