@@ -37,7 +37,7 @@
   "title": "Casa sobrado no Maitinga com piscina e edícula",
   "slug": "sobrado-maitinga-217m2",
   "city": "Bertioga",
-  "locationLabel": "Maitinga, Bertioga",
+  "locationLabel": "Bertioga · Maitinga",
   "type": "Venda",
   "price": "R$ 900.000",
   "bedrooms": "5",
