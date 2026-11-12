@@ -8,6 +8,7 @@
 .pd-blog-index .actions{flex-wrap:wrap}
 .pd-blog-index a,.pd-blog-index input{overflow-wrap:anywhere}
 .pd-blog-index a:focus-visible,.pd-blog-index input:focus-visible,.pd-blog-index button:focus-visible{outline:3px solid #a44e00;outline-offset:4px}
+.pd-blog-index footer nav a:focus-visible,.pd-blog-index footer #pdFlOk a:focus-visible{outline-color:#fff}
 .pd-skip-link{position:absolute;left:-9999px}
 .pd-skip-link:focus{position:fixed;left:1rem;top:1rem;padding:1rem;background:#fff;z-index:9999}
 .pd-blog-search{padding:1.5rem;background:#fff;border:1px solid #b9ceda;border-radius:1rem}
