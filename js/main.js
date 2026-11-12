@@ -33,6 +33,27 @@
   
   const properties = [
 {
+  "id": 17,
+  "title": "Casa sobrado no Maitinga com piscina e edícula",
+  "slug": "sobrado-maitinga-217m2",
+  "city": "Bertioga",
+  "locationLabel": "Maitinga, Bertioga",
+  "type": "Venda",
+  "price": "R$ 900.000",
+  "bedrooms": "5",
+  "area": "217 m² construídos",
+  "image": "https://praia.digital/assets/sobrado-maitinga-217m2/IMG_0360.webp",
+  "tags": [
+    "Maitinga",
+    "3 suítes",
+    "3 vagas",
+    "Piscina",
+    "Terreno 240 m²",
+    "Aceita financiamento"
+  ],
+  "description": "Sobrado no Maitinga, Bertioga, a aproximadamente 200 m da praia: 217 m² construídos, terreno de 240 m², 5 quartos, 3 suítes e 3 vagas. R$ 900.000. Aceita financiamento."
+},
+{
         "id": 16,
         "title": "Apartamento mobiliado na Vista Linda com sacada e vista para o mar",
         "slug": "apartamento-vista-linda-65m2",
