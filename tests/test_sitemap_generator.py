@@ -46,7 +46,7 @@ class SitemapGeneratorTests(unittest.TestCase):
         self.assertEqual(['apps/public/index.html'], sorted(apps))
         self.assertFalse((self.root / 'sitemap.xml').exists())
 
-    def test_robots_and_canonical_home_without_broad_alias_rewrite(self):
+    def test_robots_and_declared_same_file_canonicals(self):
         (self.root / 'robots.txt').write_text(
             'User-agent: *\nAllow: /\nDisallow: /leads/\n'
             'Disallow: /education/marketing/campaigns/\n')
@@ -59,7 +59,7 @@ class SitemapGeneratorTests(unittest.TestCase):
                   '<link rel="canonical" href="https://praia.digital/apps/visible/">')
         pages, apps = generator.discover_pages(self.root)
         self.assertEqual(['', 'academy/public.html', 'blog/public.html'], sorted(pages))
-        self.assertEqual(['apps/visible/index.html'], apps)
+        self.assertEqual(['apps/visible/'], apps)
 
     def test_existing_directory_filename_and_hidden_exclusions_preserved(self):
         excluded = [

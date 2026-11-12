@@ -81,6 +81,6 @@ class HostArticles(unittest.TestCase):
         self.assertEqual(10/500*100,2);self.assertEqual(12/20*100,60);self.assertEqual(3600/12,300)
     def test_sitemap_existing_targets_updated(self):
         tree=ET.parse(ROOT/'sitemap.xml');ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
-        rows={u.find('s:loc',ns).text:u.find('s:lastmod',ns).text for u in tree.findall('s:url',ns)}
+        rows={u.find('s:loc',ns).text:u.findtext('s:lastmod',default='',namespaces=ns) for u in tree.findall('s:url',ns)}
         for s in SLUGS:self.assertEqual(rows[f'https://praia.digital/blog/{s}.html'],'2026-11-02')
 if __name__=='__main__':unittest.main()

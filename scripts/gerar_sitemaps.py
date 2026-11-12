@@ -2,12 +2,13 @@
 """Regenera sitemap.xml (paginas publicas) e sitemap-apps.xml (apps/).
 Conservador: exclui secoes internas (dashboards, fixtures de teste, outreach, partials, assets, api)."""
 import os, urllib.parse, datetime
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 if __package__:
-    from .validate_sitemap_targets import (indexing_exclusions, excluded_path, robots_rules, blocked_by_robots, IndexingDirectives)
+    from .validate_sitemap_targets import (indexing_exclusions, excluded_path, robots_rules, blocked_by_robots, IndexingDirectives, canonical_sitemap_path)
 else:
-    from validate_sitemap_targets import (indexing_exclusions, excluded_path, robots_rules, blocked_by_robots, IndexingDirectives)
+    from validate_sitemap_targets import (indexing_exclusions, excluded_path, robots_rules, blocked_by_robots, IndexingDirectives, canonical_sitemap_path)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = 'https://praia.digital/'
@@ -37,23 +38,33 @@ def discover_pages(root):
             rel = os.path.relpath(path, root).replace(os.sep, '/')
             if excluded(rel) or blocked_by_robots("/" + rel, rules) or indexing_exclusions(path):
                 continue
-            if rel == 'index.html':
-                directives = IndexingDirectives()
-                directives.feed(path.read_text(encoding='utf-8'))
-                if directives.canonicals == [BASE]:
-                    rel = ''
+            rel = canonical_sitemap_path(path, Path(root))
+            if rel is None:
+                continue
             (apps if rel.startswith('apps/') else pages).append(rel)
     return pages, apps
 
 
 def write(path, urls):
+    # Reuse known dates. A checkout timestamp or generator run is not a content update.
+    dates = {}
+    if os.path.exists(path):
+        try:
+            for entry in ET.parse(path).findall('.//{*}url'):
+                loc, lastmod = entry.find('{*}loc'), entry.find('{*}lastmod')
+                if loc is not None and lastmod is not None:
+                    dates[urllib.parse.unquote(loc.text or '')] = lastmod.text
+        except ET.ParseError:
+            pass
     with open(path,'w',encoding='utf-8') as fh:
         fh.write('<?xml version="1.0" encoding="UTF-8"?>\n')
         fh.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
-        for u in sorted(urls):
+        for u in sorted(set(urls)):
             loc = urllib.parse.quote(BASE+u, safe=':/')
-            fh.write('<url><loc>%s</loc><lastmod>%s</lastmod><changefreq>weekly</changefreq><priority>%s</priority></url>\n'
-                     % (loc, TODAY, priority(u)))
+            known_date = dates.get(urllib.parse.unquote(loc))
+            date_tag = '<lastmod>%s</lastmod>' % known_date if known_date else ''
+            fh.write('<url><loc>%s</loc>%s<changefreq>weekly</changefreq><priority>%s</priority></url>\n'
+                     % (loc, date_tag, priority(u)))
         fh.write('</urlset>\n')
 
 def main(root=None):
