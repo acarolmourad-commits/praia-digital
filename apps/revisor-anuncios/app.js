@@ -1,7 +1,9 @@
 (function () {
   'use strict';
-  const { MODES, FIELDS, review } = window.PraiaConsistency;
   const $ = id => document.getElementById(id);
+  // Keep the form local even if a later initialization step fails.
+  $('review-form').addEventListener('submit', event => event.preventDefault());
+  const { MODES, FIELDS, review } = window.PraiaConsistency;
   const records = [
     { id: 'ref', title: 'Ficha de referência', help: 'Dados conferidos com a fonte responsável. Essa é a base da comparação.' },
     { id: 'v1', title: 'Versão 1 do anúncio', help: 'Transcreva os mesmos campos da primeira versão que deseja revisar.' },
@@ -33,7 +35,7 @@
       const label = element('label', text);
       label.htmlFor = `${record.id}-${field.key}`;
       const input = element(field.key === 'mode' ? 'select' : 'input');
-      input.id = `${record.id}-${field.key}`; input.name = input.id;
+      input.id = `${record.id}-${field.key}`;
       if (field.key === 'mode') {
         const empty = element('option', 'Não informado'); empty.value = ''; input.append(empty);
         for (const [value, title] of Object.entries(MODES)) {
@@ -163,4 +165,10 @@
       $('copy-status').textContent = 'Texto selecionado. Use o comando Copiar do seu dispositivo (Ctrl+C ou ⌘C no computador).';
     }
   });
+
+  // All handlers are attached before any interactive control becomes usable.
+  $('example').disabled = false;
+  $('copy').disabled = false;
+  $('print').disabled = false;
+  $('review-controls').disabled = false;
 })();

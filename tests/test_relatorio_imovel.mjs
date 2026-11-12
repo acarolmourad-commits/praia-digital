@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
 import { fileURLToPath } from 'node:url';
+import { spawnSync } from 'node:child_process';
 
 // Behavior checks run the actual inline script with a minimal DOM substitute.
 // These do not replace visual/browser verification.
@@ -65,4 +66,67 @@ for(const id of ['main-content','report']) assert.match(html,new RegExp(`href="#
 assert.ok(outputs.every(node=>controls.some(control=>control.id===node.dataset.field)));
 assert.equal(controls.length,17);
 assert.equal(outputs.length,17);
-console.log('Behavior, metadata and accessibility wiring checks passed; actual inline script, simulated DOM. Browser/layout QA remains separate.');
+
+// Pages replaces the app header and injects a stylesheet after our inline CSS.
+// Exercise that real transformation without changing any repository file.
+const root = fileURLToPath(new URL('../', import.meta.url));
+const transformed = spawnSync('python3', ['-c', String.raw`
+import importlib.util, json, sys
+from pathlib import Path
+from html.parser import HTMLParser
+sys.dont_write_bytecode = True
+root = Path(sys.argv[1])
+spec = importlib.util.spec_from_file_location('pd_navigation', root / 'scripts/build-navigation.py')
+module = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(module)
+source = (root / 'apps/relatorio-imovel/index.html').read_text()
+result, included = module.transform(source, (root / 'partials/header.html').read_text())
+assert included
+class Structure(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.stack = []
+        self.direct_body_classes = []
+        self.report_ancestors = None
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        classes = attrs.get('class', '').split()
+        if self.stack and self.stack[-1][0] == 'body':
+            self.direct_body_classes.extend(classes)
+        if attrs.get('id') == 'report':
+            self.report_ancestors = [item[1] for item in self.stack]
+        if tag not in {'area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'}:
+            self.stack.append((tag, classes))
+    def handle_endtag(self, tag):
+        for index in range(len(self.stack) - 1, -1, -1):
+            if self.stack[index][0] == tag:
+                self.stack = self.stack[:index]
+                break
+parser = Structure()
+parser.feed(result)
+print(json.dumps({'html': result, 'directBodyClasses': parser.direct_body_classes,
+                 'reportAncestors': parser.report_ancestors}))
+`, root], { encoding: 'utf8' });
+assert.equal(transformed.status, 0, transformed.stderr);
+const deployed = JSON.parse(transformed.stdout);
+assert.ok(deployed.directBodyClasses.includes('pd-site-header'));
+assert.ok(deployed.directBodyClasses.includes('pd-preserved-intro'));
+assert.ok(Array.isArray(deployed.reportAncestors));
+assert.ok(deployed.reportAncestors.every(classes =>
+  !classes.includes('pd-site-header') && !classes.includes('pd-preserved-intro')));
+
+const printStart = deployed.html.indexOf('@media print{');
+assert.ok(printStart >= 0);
+const printCss = deployed.html.slice(printStart, deployed.html.indexOf('</style>', printStart));
+assert.match(printCss,
+  /body\s*>\s*\.pd-site-header\s*,\s*body\s*>\s*\.pd-preserved-intro\s*\{\s*display\s*:\s*none\s*!important\s*\}/);
+// The body type selector raises specificity above the shared .pd-site-header
+// rule, even though the shared stylesheet is loaded after the local styles.
+const navigationCss = fs.readFileSync(new URL('../assets/css/pd-navigation.css', import.meta.url), 'utf8');
+assert.match(navigationCss, /\.pd-site-header\s*\{[^}]*display\s*:\s*block\s*!important/);
+assert.match(printCss, /\.layout\s*\{[^}]*display\s*:\s*block/);
+const reportHtml = text => text.match(/<article class="report"[\s\S]*?<\/article>/)[0];
+assert.equal(reportHtml(deployed.html), reportHtml(html));
+assert.equal(deployed.html.match(/<script>([\s\S]*?)<\/script>/)[1], script);
+assert.ok(deployed.html.indexOf('/assets/css/pd-navigation.css') > deployed.html.indexOf('@media print{'));
+console.log('Behavior, metadata, accessibility wiring and transformed print regression passed; browser/layout QA remains separate.');
