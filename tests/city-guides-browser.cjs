@@ -51,7 +51,7 @@ const origin='https://praia.digital',mime={'.html':'text/html; charset=utf-8','.
    }
    if(['cananeia','cubatao','iguape','ilha-comprida'].includes(c.slug)){assert.equal(cards,0);assert((await page.locator('.imoveis-empty').textContent()).includes('Nenhum imóvel'));}
    if(c.slug==='bertioga'){
-    assert.equal(cards,8);
+    assert.equal(cards,9);
     assert.equal(await page.locator('a[href*="apartamento-alto-padrao-bertioga"]').count(),0);
     await page.locator('#tipo-filtro').selectOption('Aluguel');
     assert.equal(await page.locator('.property-card').count(),0);
