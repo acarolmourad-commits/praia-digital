@@ -33,6 +33,26 @@
   
   const properties = [
 {
+  "id": 18,
+  "title": "Casa térrea com 3 dormitórios no Rio da Praia",
+  "slug": "casa-rio-da-praia-100m2",
+  "city": "Bertioga",
+  "locationLabel": "Bertioga · Jardim Rio da Praia",
+  "type": "Venda",
+  "price": "R$ 690.000",
+  "bedrooms": "3",
+  "area": "100 m² construídos",
+  "image": "https://praia.digital/assets/casa-rio-da-praia-100m2/01.webp",
+  "tags": [
+    "Casa térrea",
+    "1 suíte",
+    "2 vagas",
+    "Terreno 196 m²",
+    "Aceita financiamento"
+  ],
+  "description": "Casa térrea no Jardim Rio da Praia, Bertioga: 100 m² construídos, terreno de 196 m², 3 dormitórios, sendo 1 suíte, e 2 vagas. R$ 690.000. Aceita financiamento."
+},
+{
   "id": 17,
   "title": "Casa sobrado no Maitinga com piscina e edícula",
   "slug": "sobrado-maitinga-217m2",
