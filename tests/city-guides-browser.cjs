@@ -57,7 +57,7 @@ const origin='https://praia.digital',mime={'.html':'text/html; charset=utf-8','.
     assert.equal(await page.locator('.property-card').count(),0);
     assert(await page.locator('.imoveis-empty').isVisible());
     await page.locator('#tipo-filtro').selectOption('Venda');
-    assert.equal(await page.locator('.property-card').count(),8);
+    assert.equal(await page.locator('.property-card').count(),9);
    }
    results.push({city:c.name,width,cards,passed:true});
    console.log(`Passed ${c.slug} at ${width}px: ${cards} cards`);
