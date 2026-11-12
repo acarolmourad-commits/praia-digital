@@ -90,7 +90,7 @@ async function assertNoNavigation(page, documents, unexpected) {
       await page.getByRole('button', { name: 'Conferir campos faltantes', exact: true }).click();
       assert.match(await page.locator('#output').inputValue(), /REVISÃO DE COMPLETUDE/);
       await page.getByLabel('Contexto confirmado', { exact: true }).fill('Teste fictício de encerramento.');
-      await page.getByLabel('Etapa', { exact: true }).selectOption('encerrar');
+      await page.locator('#followup select[name="etapa"]').selectOption('encerrar');
       await page.getByRole('button', { name: 'Preparar modelo de e-mail', exact: true }).click();
       assert.match(await page.locator('#output').inputValue(), /NÃO ENVIADO/);
       assert.match(await page.locator('#output').inputValue(), /não enviar novas mensagens/);
