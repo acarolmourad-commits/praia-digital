@@ -104,6 +104,6 @@ form.addEventListener('submit', async event => {
     pending = false;
     fields.forEach(field => field.disabled = false);
     form.removeAttribute('aria-busy');
-    submitButton.textContent = 'Quero conversar sobre meu piloto ↗';
+    submitButton.textContent = 'Quero conversar sobre meu piloto';
   }
 });
