@@ -107,3 +107,6 @@ form.addEventListener('submit', async event => {
     submitButton.textContent = 'Quero conversar sobre meu piloto';
   }
 });
+
+// Enable only after the submit handler is ready; no native GET with contact data.
+submitButton.disabled = false;

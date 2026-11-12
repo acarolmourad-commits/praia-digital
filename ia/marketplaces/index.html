@@ -35,7 +35,7 @@
 <section class="section wrap lead-capture" id="cadastro" aria-labelledby="lead-title">
 <div class="lead-intro"><div class="eyebrow">SEU PRIMEIRO PASSO</div><h2 id="lead-title">Conte sobre<br>a sua operação.</h2><p>Deixe seus dados para conversar com a Praia Digital sobre o piloto LiveBridge AI.</p><p>Vamos entender seus canais, avaliar a viabilidade e preparar uma proposta para o seu negócio.</p><span class="tag tag-dark">SEM COMPROMISSO</span><p class="lead-note">O projeto está em concepção. Este cadastro não gera cobrança, contratação ou acesso imediato à ferramenta.</p></div>
 <div class="lead-card">
-<form id="brief-form" aria-describedby="lead-required lead-privacy">
+<form id="brief-form" method="post" action="/ia/marketplaces/#cadastro" aria-describedby="lead-required lead-privacy">
 <p id="lead-required" class="lead-note">Campos com * são obrigatórios.</p>
 <div class="lead-fields">
 <div><label for="lead-name">Seu nome *</label><input id="lead-name" name="name" autocomplete="name" maxlength="100" required placeholder="Como podemos chamar você?"></div>
@@ -53,7 +53,7 @@
 <label class="lead-consent"><input type="checkbox" id="lead-consent" name="consent" required><span>Autorizo a Praia Digital a usar os dados informados para entrar em contato sobre esta solicitação. Li a <a href="/politica-de-privacidade.html" target="_blank" rel="noopener">Política de Privacidade (abre em nova aba)</a>. *</span></label>
 <p id="lead-privacy" class="lead-note">Ao enviar, seus dados serão registrados para atendimento pela Praia Digital, com armazenamento na Cloudflare. Não pedimos senhas nem chaves de transmissão. Para solicitar correção ou exclusão, escreva para <a href="mailto:comercial@praia.digital">comercial@praia.digital</a>.</p>
 <p id="lead-error" class="lead-error" role="alert" hidden></p>
-<button class="button button-dark" type="submit" id="lead-submit">Quero conversar sobre meu piloto</button>
+<button class="button button-dark" type="submit" id="lead-submit" disabled>Quero conversar sobre meu piloto</button>
 <p id="lead-status" class="lead-note" role="status" aria-live="polite"></p>
 <noscript><p>Ative o JavaScript para enviar pelo site ou entre em contato por <a href="mailto:comercial@praia.digital">comercial@praia.digital</a>.</p></noscript>
 </form>
