@@ -64,8 +64,9 @@ class NavigationTests(unittest.TestCase):
         for label in ['Comprar', 'Investir', 'Meu Imóvel', 'Profissionais', 'Inteligência']:
             self.assertIn('>' + label + '</button>', HEADER)
         self.assertIn('href="/interesse.html">Falar com especialista', HEADER)
+        self.assertIn('href="/servicos-ia.html">Serviços de IA para empresas', HEADER)
         self.assertEqual(HEADER.count('class="pd-site-group"'), 5)
-        self.assertEqual(HEADER.count('<a '), 28)
+        self.assertEqual(HEADER.count('<a '), 29)
 
 if __name__ == '__main__':
     unittest.main()
