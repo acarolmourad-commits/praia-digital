@@ -54,9 +54,9 @@ console.log(`16 guides, regions 4/9/3, metadata, schemas, ${checkedLinks} local 
 
 // Owner requested withdrawal of the old Bertioga rental, retaining existing offers and adding the authorized apartment.
 assert(!catalog.some(p=>p.id===8||p.slug==='apartamento-alto-padrao-bertioga'));
-assert.deepEqual(catalog.filter(p=>p.city==='Bertioga').map(p=>p.id).sort((a,b)=>a-b),[9,10,11,12,13,14,15,16,17]);
+assert.deepEqual(catalog.filter(p=>p.city==='Bertioga').map(p=>p.id).sort((a,b)=>a-b),[9,10,11,12,13,14,15,16,17,18]);
 assert.equal(catalog.filter(p=>search.matches(p,search.fromParams(new URLSearchParams({cidade:'Bertioga',finalidade:'Aluguel'})))).length,0);
-assert.equal(catalog.filter(p=>search.matches(p,search.fromParams(new URLSearchParams({cidade:'Bertioga',finalidade:'Venda'})))).length,9);
+assert.equal(catalog.filter(p=>search.matches(p,search.fromParams(new URLSearchParams({cidade:'Bertioga',finalidade:'Venda'})))).length,10);
 assert(!read('imoveis.html').includes('Apartamento alto padrão - Bertioga'));
 assert(!read('encontrar-imovel.html').includes('apartamento-alto-padrao-bertioga'));
 assert(!read('fix_broken_links.py').includes('apartamento-alto-padrao-bertioga'));
@@ -64,4 +64,4 @@ assert(!read('scripts/automation/generate_landings_safe.py').includes('apartamen
 const withdrawn=read('leads/apartamento-alto-padrao-bertioga.html');
 assert(withdrawn.includes('noindex, follow')&&withdrawn.includes('Anúncio removido'));
 assert(!/application\/ld\+json|<form|wa.me|Unsplash|8.900|http-equiv="refresh"/i.test(withdrawn));
-console.log('Withdrawn Bertioga rental absent; all nine real offers and empty rental filter preserved.');
+console.log('Withdrawn Bertioga rental absent; all ten real offers and empty rental filter preserved.');

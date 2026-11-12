@@ -51,17 +51,27 @@ const origin='https://praia.digital',mime={'.html':'text/html; charset=utf-8','.
    }
    if(['cananeia','cubatao','iguape','ilha-comprida'].includes(c.slug)){assert.equal(cards,0);assert((await page.locator('.imoveis-empty').textContent()).includes('Nenhum imóvel'));}
    if(c.slug==='bertioga'){
-    assert.equal(cards,9);
+    assert.equal(cards,10);
     assert.equal(await page.locator('a[href*="apartamento-alto-padrao-bertioga"]').count(),0);
     await page.locator('#tipo-filtro').selectOption('Aluguel');
     assert.equal(await page.locator('.property-card').count(),0);
     assert(await page.locator('.imoveis-empty').isVisible());
     await page.locator('#tipo-filtro').selectOption('Venda');
-    assert.equal(await page.locator('.property-card').count(),9);
+    assert.equal(await page.locator('.property-card').count(),10);
    }
    results.push({city:c.name,width,cards,passed:true});
    console.log(`Passed ${c.slug} at ${width}px: ${cards} cards`);
   }
+  await page.goto(origin+'/imoveis/casa-rio-da-praia-100m2.html');
+  assert.equal(await page.locator('.gallery figure').count(),14);
+  await page.locator('img').evaluateAll(images=>images.forEach(img=>img.loading='eager'));
+  await page.waitForFunction(()=>[...document.images].every(img=>img.complete&&img.naturalWidth>0));
+  assert.equal(await page.locator('img').count(),15);
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Rio da Praia overflow');
+  assert((await page.locator('h1').textContent()).includes('Rio da Praia'));
+  assert((await page.locator('.price').textContent()).includes('690.000'));
+  await page.screenshot({path:path.join(output,`rio-praia-${width}.png`),fullPage:true});
+  results.push({listing:'casa-rio-da-praia-100m2',width,photos:14,passed:true});
   await page.goto(origin+'/cidades/');assert.equal(await page.locator('.city-card').count(),16);assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
   await page.screenshot({path:path.join(output,`index-${width}.png`),fullPage:true});
   assert.deepEqual(errors,[]);assert.deepEqual(failed,[]);await ctx.close();
