@@ -10,7 +10,7 @@ EXCLUDED = {'.git', '.github', '.audit', '.hermes-tmp-idempotency', 'backup', 'b
             'admin', 'api', 'backend', 'dashboard', 'dashboards', 'partials', 'templates',
             'tests', 'node_modules', 'uploads', 'csv-lotes-email'}
 ASSETS = ('<link rel="stylesheet" href="/assets/css/pd-navigation.css?v=3">\n'
-          '<script defer src="/js/pd-navigation.js?v=3"></script>\n')
+          '<script defer src="/js/pd-navigation.js?v=4"></script>\n')
 
 IA_HEADINGS = {
     'ia/ia-mercado.html': 'IA para Análise de Mercado',

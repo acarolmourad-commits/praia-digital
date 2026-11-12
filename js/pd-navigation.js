@@ -26,15 +26,8 @@
         var open = !group.classList.contains('is-open');
         closeGroups(); setGroup(group, open);
       });
-      group.addEventListener('mouseenter', function () {
-        if (window.innerWidth > 1080) setGroup(group, true);
-      });
-      group.addEventListener('mouseleave', function () {
-        if (window.innerWidth > 1080 && !group.contains(document.activeElement)) setGroup(group, false);
-      });
-      group.addEventListener('focusin', function () {
-        if (window.innerWidth > 1080) setGroup(group, true);
-      });
+      // One activation, one toggle: hover/focus must not open the group before
+      // the same pointer or keyboard activation immediately closes it again.
       group.addEventListener('focusout', function (event) {
         if (!group.contains(event.relatedTarget)) setGroup(group, false);
       });
