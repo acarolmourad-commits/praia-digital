@@ -1,134 +1,269 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simulador de Financiamento Imobiliário — SAC vs Price | Praia Digital Apps</title>
-<meta name="description" content="Simule financiamento imobiliário nos sistemas SAC e Price: parcela inicial, amortização, juros totais e custo efetivo. Gratuito, do litoral de SP.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://praia.digital/apps/calculadora-financiamento/">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4F6F8;color:#0F172A}
-header{background:linear-gradient(135deg,#0A3D2E,#0EA5E9);color:#fff;padding:26px 20px;text-align:center}
-.wrap{max-width:760px;margin:0 auto;padding:20px 16px}
-.card{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:20px;margin-bottom:14px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
-label{display:block;font-size:13px;font-weight:600;margin:10px 0 4px}
-input,select{width:100%;padding:10px;border:1px solid #CBD5E1;border-radius:10px;font-size:15px}
-button{margin-top:14px;width:100%;padding:13px;background:#0A3D2E;color:#fff;border:0;border-radius:12px;font-size:16px;font-weight:700;cursor:pointer}
-button:hover{background:#0c5c43}
-.res{display:none;background:#ECFDF5;border:1px solid #10B981;border-radius:12px;padding:16px;margin-top:14px}
-.res p{margin:6px 0;font-size:15px}
-a{color:#0EA5E9}
-table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
-td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
-    table{width:100%;border-collapse:collapse;font-size:14px}
-    th{background:#F8FAFC;text-align:left;padding:8px 10px;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#475569}
-    td{padding:8px 10px;border-bottom:1px solid #F1F5F9}
-    .tag{display:inline-block;background:#ECFDF5;color:#065F46;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;margin-left:6px}
-    .faq details{border:1px solid #E5E7EB;border-radius:10px;margin-bottom:8px;background:#fff}
-    .faq summary{cursor:pointer;padding:12px 14px;font-weight:600;font-size:14px;list-style:none}
-    .faq summary::-webkit-details-marker{display:none}
-    .faq details p{padding:0 14px 12px;font-size:14px;color:#475569}
-    .links{display:grid;gap:10px;margin-top:8px}
-    .links a{display:block;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px;text-decoration:none;color:#0F172A;font-weight:600}
-    .links a span{color:#0EA5E9}
-</style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Simulador de Financiamento Imobiliário — SAC vs Price | Praia Digital Apps","url":"https://praia.digital/apps/calculadora-financiamento/","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0"}}</script>
-<meta property="og:type" content="website"><meta property="og:title" content="Simulador de Financiamento Imobiliário — SAC vs Price | Praia Digital Apps">
-<meta property="og:description" content="Simule financiamento imobiliário nos sistemas SAC e Price: parcela inicial, amortização, juros totais e custo efetivo. Gratuito, do litoral de SP."><meta property="og:url" content="https://praia.digital/apps/calculadora-financiamento/">
-<meta property="og:image" content="https://praia.digital/img/default-home.jpg">
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qual a taxa de financiamento em 2026?","acceptedAnswer":{"@type":"Answer","text":"A menor taxa nominal da Caixa (SBPE) está em 11,19% a.a. (ago/2026), variando por relacionamento, entrada e prazo. Com a Selic em queda (13,75%), novas reduções são esperadas. Compare sempre o CET, não só a taxa nominal."}},{"@type":"Question","name":"SAC ou Price: qual escolher?","acceptedAnswer":{"@type":"Answer","text":"SAC: parcela inicial ~20–30% maior, caindo todo mês, com menos juros totais. Price: parcela fixa, mais cara no total. Se a 1ª parcela do SAC couber em 30% da renda, ele costuma ser mais barato."}},{"@type":"Question","name":"Quanto de entrada preciso?","acceptedAnswer":{"@type":"Answer","text":"Bancos financiam até 80–90% do valor (menos para imóveis de temporada/usados). Com 20% de entrada e FGTS, as condições melhoram. Planeje com o Planejador de Entrada."}},{"@type":"Question","name":"Posso usar FGTS no financiamento?","acceptedAnswer":{"@type":"Answer","text":"Sim: na entrada, na amortização ou para quitar parcelas (a cada 2 anos), desde que o imóvel seja residencial, avaliado dentro do teto do programa e você não tenha outro financiamento SFH ativo."}}]}
-  </script>
-<link rel="stylesheet" href="/css/app-network.css">
-</head>
-<body data-pd-app>
-<a class="pd-skip" href="#pd-app-title">Pular para o aplicativo</a><nav class="pd-network-nav" aria-label="Navegação dos aplicativos"><ul><li><a href="/">Página inicial</a></li><li><a href="/apps/">Todos os aplicativos</a></li><li><a href="/#jornadas-apps">Roteiros de análise</a></li></ul></nav>
-
-<header><h1 id="pd-app-title" tabindex="-1">🏠 Simulador de Financiamento</h1><p>SAC vs. Price — veja qual sistema pesa menos no bolso</p></header>
-<div class="wrap">
-<div class="card">
-  <label for="valor">Valor do imóvel (R$)</label><input id="valor" type="number" value="595000">
-  <label for="entrada">Entrada (R$)</label><input id="entrada" type="number" value="119000">
-  <label for="taxa">Taxa de juros anual (%)</label><input id="taxa" type="number" step="0.01" value="10.5">
-  <label for="anos">Prazo (anos)</label><input id="anos" type="number" value="30">
-  <button onclick="simular()">Simular SAC vs Price</button>
-  <div class="res" id="res">
-    <table><tr><th></th><th>SAC</th><th>Price</th></tr>
-    <tr><td>1ª parcela</td><td id="sacP1"></td><td id="prcP1"></td></tr>
-    <tr><td>Última parcela</td><td id="sacPn"></td><td id="prcPn"></td></tr>
-    <tr><td>Total de juros</td><td id="sacJ"></td><td id="prcJ"></td></tr>
-    <tr><td>Custo total</td><td id="sacT"></td><td id="prcT"></td></tr></table>
-    <p id="dica" style="font-weight:700"></p>
-  </div>
-</div>
-<div class="card">
-<h2 style="font-size:17px;margin-bottom:10px">📊 Simulações prontas <span class="tag">set/2026</span></h2>
-<p style="font-size:14px;color:#475569;margin-bottom:8px">Financiamento a 11,19% a.a. (menor taxa Caixa SBPE, ago/2026), 20 anos, entrada de 20%:</p>
-<table>
-  <tr><th>Imóvel</th><th>Financiado</th><th>Price 1ª parcela</th><th>SAC 1ª parcela</th><th>Renda mín. (30%)</th></tr>
-  <tr><td>R$ 200 mil (Mongaguá/Peruíbe)</td><td>R$ 160 mil</td><td>R$ 1.680</td><td>R$ 2.160</td><td>~R$ 5.600</td></tr>
-  <tr><td>R$ 270 mil (Praia Grande)</td><td>R$ 216 mil</td><td>R$ 2.270</td><td>R$ 2.915</td><td>~R$ 7.600</td></tr>
-  <tr><td>R$ 370 mil (Guarujá)</td><td>R$ 296 mil</td><td>R$ 3.110</td><td>R$ 3.995</td><td>~R$ 10.400</td></tr>
-  <tr><td>R$ 560 mil (Santos)</td><td>R$ 448 mil</td><td>R$ 4.710</td><td>R$ 6.050</td><td>~R$ 15.700</td></tr>
-</table>
-<p style="font-size:12px;color:#64748B;margin-top:12px">Valores aproximados, sem seguros MIP/DFI nem correção TR. Renda mínima pela regra dos 30% usando a 1ª parcela do SAC. Compare com a tabela de <a href="/apps/alugar-ou-comprar/" style="color:#0EA5E9">aluguel vs. compra</a>.</p>
-</div>
-
-  <div class="card faq">
-    <h2 style="font-size:17px;margin-bottom:10px">❓ Perguntas frequentes</h2>
-    <details><summary>Qual a taxa de financiamento em 2026?</summary><p>A menor taxa nominal da Caixa (SBPE) está em 11,19% a.a. (ago/2026), variando por relacionamento, entrada e prazo. Com a Selic em queda (13,75%), novas reduções são esperadas. Compare sempre o CET, não só a taxa nominal.</p></details>
-    <details><summary>SAC ou Price: qual escolher?</summary><p>SAC: parcela inicial ~20–30% maior, caindo todo mês, com menos juros totais. Price: parcela fixa, mais cara no total. Se a 1ª parcela do SAC couber em 30% da renda, ele costuma ser mais barato.</p></details>
-    <details><summary>Quanto de entrada preciso?</summary><p>Bancos financiam até 80–90% do valor (menos para imóveis de temporada/usados). Com 20% de entrada e FGTS, as condições melhoram. Planeje com o Planejador de Entrada.</p></details>
-    <details><summary>Posso usar FGTS no financiamento?</summary><p>Sim: na entrada, na amortização ou para quitar parcelas (a cada 2 anos), desde que o imóvel seja residencial, avaliado dentro do teto do programa e você não tenha outro financiamento SFH ativo.</p></details>
-  </div>
-
-  <div class="card">
-    <h2 style="font-size:17px;margin-bottom:10px">📍 Aprofunde por bairro</h2>
-    <div class="links">
-      <a href="/bairros/"><span>🏙️ Índice de bairros</span> — 123 bairros em 12 cidades do litoral</a>
-      <a href="/bairros/santos/index.html">Santos — Gonzaga, Boqueirão, Pompéia e mais</a>
-      <a href="/bairros/guaruja/index.html">Guarujá — Enseada, Pitangueiras, Astúrias e mais</a>
-      <a href="/bairros/sao-sebastiao/index.html">São Sebastião — Maresias, Juquehy, Barra do Sahy e mais</a>
-    </div>
-  </div>
-
-<div class="card"><h2>📌 Como interpretar</h2>
-<p style="font-size:14px;margin-top:6px">No <b>SAC</b>, a amortização é constante: as parcelas começam mais altas e caem com o tempo — paga-se menos juros no total. Na <b>Price</b>, a parcela é fixa, mas o custo final é maior. Regra de ouro dos bancos: a parcela não deve passar de 30% da renda familiar.</p>
-<p style="font-size:14px;margin-top:8px">Alternativa sem juros bancários: simule um <a href="/apps/calculadora-consorcio/">consórcio imobiliário</a> e compare a economia.</p>
-<p style="font-size:14px;margin-top:8px">⚠️ A simulação SAC × Price é pura. No contrato real, o CET inclui os seguros obrigatórios <b>MIP</b> (morte e invalidez) e <b>DFI</b> (danos ao imóvel) — tipicamente somados à parcela mensal — e o saldo devedor sofre correção pela <b>TR</b> (Taxa Referencial). Peça sempre o CET completo ao banco antes de decidir.</p></div>
-</div>
-<script>
-const fmt=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
-function simular(){
-  const V=parseFloat(document.getElementById('valor').value)||0;
-  const E=parseFloat(document.getElementById('entrada').value)||0;
-  const C=V-E, ta=(parseFloat(document.getElementById('taxa').value)||0)/100, i=ta/12;
-  const n=(parseFloat(document.getElementById('anos').value)||0)*12;
-  if(C<=0||n<=0){alert('Verifique os valores.');return;}
-  // SAC
-  const am=C/n; const sacP1=am+C*i, sacPn=am+am*i;
-  const sacJuros=i*(C*n - am*n*(n-1)/2); const sacTotal=C+sacJuros;
-  // Price
-  const pmt = i>0 ? C*i/(1-Math.pow(1+i,-n)) : C/n; const prcTotal=pmt*n; const prcJuros=prcTotal-C;
-  document.getElementById('sacP1').textContent=fmt(sacP1);
-  document.getElementById('sacPn').textContent=fmt(sacPn);
-  document.getElementById('sacJ').textContent=fmt(sacJuros);
-  document.getElementById('sacT').textContent=fmt(sacTotal);
-  document.getElementById('prcP1').textContent=fmt(pmt);
-  document.getElementById('prcPn').textContent=fmt(pmt);
-  document.getElementById('prcJ').textContent=fmt(prcJuros);
-  document.getElementById('prcT').textContent=fmt(prcTotal);
-  document.getElementById('dica').textContent = sacTotal<prcTotal ? `✅ SAC economiza ${fmt(prcTotal-sacTotal)} em juros neste cenário.` : '✅ Compare as parcelas iniciais com sua renda.';
-  document.getElementById('res').style.display='block';
-}
-</script>
-
-<!-- Praia Digital Apps: rede de interlinks -->
-
-<section class="pd-network" aria-labelledby="pd-network-title"><h2 id="pd-network-title">Continue sua análise com os aplicativos</h2><p>Ferramentas conectadas por objetivo, com acesso direto ao catálogo e à página inicial.</p><details><summary>Explorar os outros 12 aplicativos</summary><ul class="pd-network-grid"><li><a href="/apps/alugar-ou-comprar/">Alugar ou Comprar no Litoral?</a></li><li><a href="/apps/calculadora-consorcio/">Calculadora de Consórcio Imobiliário</a></li><li><a href="/apps/calculadora-precificacao-shopee/">Calculadora de Precificação — Shopee &amp; TikTok Shop</a></li><li><a href="/apps/calculadora-valorizacao/">Calculadora de Valorização</a></li><li><a href="/apps/checklist-vistoria/">Checklist de Vistoria de Imóvel</a></li><li><a href="/apps/comparador-cidades/">Comparador de Cidades do Litoral</a></li><li><a href="/apps/custo-de-compra/">Calculadora de ITBI e Custos de Compra do Imóvel</a></li><li><a href="/apps/planejador-entrada/">Planejador de Entrada</a></li><li><a href="/apps/renda-para-financiar/">Renda para Financiar</a></li><li><a href="/apps/simulador-roi-temporada/">Simulador de ROI — Aluguel de Temporada</a></li><li><a href="/apps/temporada-ou-anual/">Temporada ou Aluguel Anual?</a></li><li><a href="/apps/valor-imovel/">Quanto Vale Meu Imóvel no Litoral?</a></li></ul></details><p><a href="/apps/">Catálogo de aplicativos</a> · <a href="/#jornadas-apps">Roteiros na página inicial</a></p><p class="pd-network-note">Os links não transferem dados automaticamente. Registre suas premissas e confira custos, tributos e limitações antes de decidir.</p></section>
-
-
-<script defer src="/js/shared.js"></script><script defer src="/assets/js/related-ads.js"></script><section class="pd-guide" aria-labelledby="pd-guide-title"><h2 id="pd-guide-title">Planeje parcelas sem confundir simulação com aprovação</h2><ol><li>Informe preço, entrada, juros e prazo de uma proposta comparável.</li><li>Compare SAC e Price usando as mesmas condições e registre o resultado.</li><li>Confirme CET, seguros, tarifas e análise de crédito com a instituição financeira.</li></ol><details><summary>Como interpretar e compartilhar esta análise</summary><h3>Os resultados são uma proposta ou garantia?</h3><p>Não. São estimativas ou registros de apoio, sujeitos às premissas e limitações de cada ferramenta. Confirme dados e condições com os profissionais responsáveis.</p><h3>Como usar os apps em sequência?</h3><p>Comece pelo seu objetivo, registre as premissas e compare os resultados das ferramentas relacionadas. Os links não transferem automaticamente os dados preenchidos.</p><h3>Devo inserir informações confidenciais?</h3><p>Evite senhas, documentos pessoais e dados de clientes. Use apenas as informações necessárias e consulte a política de privacidade antes de compartilhar qualquer dado.</p></details></section>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Simulador de financiamento: SAC × Price | Praia Digital</title>
+    <meta
+      name="description"
+      content="Entenda parcelas, juros e renda indicativa com premissas transparentes, sem confundir simulação com aprovação de crédito."
+    />
+    <link
+      rel="canonical"
+      href="https://praia.digital/apps/calculadora-financiamento/"
+    />
+    <meta
+      property="og:title"
+      content="Simulador de financiamento: SAC × Price"
+    />
+    <meta
+      property="og:description"
+      content="Entenda parcelas, juros e renda indicativa com premissas transparentes, sem confundir simulação com aprovação de crédito."
+    />
+    <meta
+      property="og:url"
+      content="https://praia.digital/apps/calculadora-financiamento/"
+    />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="/css/investir-tools.css?v=20261112" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Simulador de financiamento: SAC × Price",
+        "url": "https://praia.digital/apps/calculadora-financiamento/",
+        "applicationCategory": "FinanceApplication",
+        "dateModified": "2026-11-12",
+        "inLanguage": "pt-BR"
+      }
+    </script>
+    <script defer src="/js/investir-tools-core.js?v=20261112"></script>
+    <script defer src="/js/financiamento-ui.js?v=20261112"></script>
+  </head>
+  <body>
+    <a class="iv-skip" href="#main">Pular para o conteúdo</a
+    ><meta name="pd-shared-nav" />
+    <main id="main" class="iv-main" tabindex="-1">
+      <p class="iv-eyebrow">PRAIA DIGITAL · INVESTIR · GRATUITO</p>
+      <h1>Simulador de financiamento: SAC × Price</h1>
+      <p>
+        Entenda parcelas, juros e renda indicativa com premissas transparentes,
+        sem confundir simulação com aprovação de crédito.
+      </p>
+      <p>
+        Compare juros, amortização e renda indicativa com a mesma taxa e prazo.
+        Valores iniciais são exemplos editáveis, não ofertas bancárias.
+      </p>
+      <form id="calculator" class="iv-card" novalidate>
+        <h2>Monte seu financiamento</h2>
+        <div class="iv-grid">
+          <div>
+            <label for="valor">Valor do imóvel (R$)</label
+            ><input
+              id="valor"
+              name="valor"
+              type="number"
+              value="200000"
+              min="1"
+              max="100000000"
+              step="any"
+              required
+              aria-describedby="valor-help valor-error"
+            /><small id="valor-help"
+              >Preço negociado. Aquisição é paga à parte.</small
+            ><span class="iv-error" id="valor-error"></span>
+          </div>
+          <div>
+            <label for="entrada">Entrada (R$)</label
+            ><input
+              id="entrada"
+              name="entrada"
+              type="number"
+              value="40000"
+              min="0"
+              max="100000000"
+              step="any"
+              required
+              aria-describedby="entrada-help entrada-error"
+            /><small id="entrada-help"
+              >Pode ser igual ao preço para simular compra à vista.</small
+            ><span class="iv-error" id="entrada-error"></span>
+          </div>
+          <div>
+            <label for="taxa">Juros do financiamento (% a.a.)</label
+            ><input
+              id="taxa"
+              name="taxa"
+              type="number"
+              value="11.19"
+              min="0"
+              max="100"
+              step="any"
+              required
+              aria-describedby="taxa-help taxa-error"
+            /><small id="taxa-help">Use os juros contratuais, não o CET.</small
+            ><span class="iv-error" id="taxa-error"></span>
+          </div>
+          <div>
+            <label for="tipo">Tipo de taxa</label
+            ><select id="tipo" name="tipo" aria-describedby="tipo-help">
+              <option value="nominal">Nominal, capitalização mensal</option>
+              <option value="effective">Efetiva anual</option></select
+            ><small id="tipo-help"
+              >Nominal ÷ 12; efetiva pela taxa mensal equivalente.</small
+            >
+          </div>
+          <div>
+            <label for="meses">Prazo (meses)</label
+            ><input
+              id="meses"
+              name="meses"
+              type="number"
+              value="240"
+              min="1"
+              max="600"
+              step="1"
+              required
+              aria-describedby="meses-help meses-error"
+            /><small id="meses-help"
+              >240 meses = 20 anos. Inteiro entre 1 e 600.</small
+            ><span class="iv-error" id="meses-error"></span>
+          </div>
+          <div>
+            <label for="seguros">Seguros e tarifas mensais (R$)</label
+            ><input
+              id="seguros"
+              name="seguros"
+              type="number"
+              value="0"
+              min="0"
+              max="1000000"
+              step="any"
+              required
+              aria-describedby="seguros-help seguros-error"
+            /><small id="seguros-help"
+              >MIP, DFI e tarifas: hipótese constante. Zero não significa
+              inexistência.</small
+            ><span class="iv-error" id="seguros-error"></span>
+          </div>
+          <div>
+            <label for="comprometimento"
+              >Limite de comprometimento da renda (%)</label
+            ><input
+              id="comprometimento"
+              name="comprometimento"
+              type="number"
+              value="30"
+              min="1"
+              max="100"
+              step="any"
+              required
+              aria-describedby="comprometimento-help comprometimento-error"
+            /><small id="comprometimento-help"
+              >Hipótese ilustrativa, não regra universal nem aprovação de
+              crédito.</small
+            ><span class="iv-error" id="comprometimento-error"></span>
+          </div>
+        </div>
+        <p id="status" role="status" aria-live="polite"></p>
+        <button type="submit">Comparar SAC e Price</button>
+      </form>
+      <noscript
+        >Ative JavaScript para calcular. As fórmulas e limitações estão
+        abaixo.</noscript
+      >
+      <section id="resultado" class="iv-card" hidden>
+        <h2 id="result-title" tabindex="-1">Comparação do cenário</h2>
+        <p id="summary"></p>
+        <div
+          class="iv-table"
+          role="region"
+          aria-label="Comparação SAC e Price, com rolagem horizontal"
+          tabindex="0"
+        >
+          <table>
+            <caption>
+              Valores nominais, sem correção do saldo
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Indicador</th>
+                <th scope="col">SAC</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody id="rows"></tbody>
+          </table>
+        </div>
+        <p>
+          A renda indicativa usa a primeira parcela de cada sistema, incluindo
+          os encargos informados. Outras dívidas, análise cadastral e critérios
+          do banco podem mudar a aprovação.
+        </p>
+      </section>
+      <section class="iv-card">
+        <h2>Contas abertas, decisões mais claras</h2>
+        <p>
+          <strong>SAC:</strong> amortização constante = saldo financiado ÷
+          prazo. Juros incidem sobre o saldo devedor antes da parcela.
+          <strong>Price:</strong> prestação-base constante para taxa fixa; a
+          participação dos juros diminui com o tempo.
+        </p>
+        <p>
+          Juros nominais anuais são divididos por 12. Para juros efetivos,
+          usamos (1 + taxa anual)^(1/12) − 1. Com juros zero, a prestação-base é
+          o saldo ÷ prazo. Os seguros e tarifas informados são somados às
+          parcelas; na compra à vista, não são cobrados.
+        </p>
+        <h3>O que não entra automaticamente</h3>
+        <p>
+          TR/IPCA, mudança dos seguros, tarifas iniciais, ITBI, escritura,
+          registro, FGTS e amortizações extras. O total de parcelas não é o
+          custo total da aquisição. Compare também o CET e o cronograma
+          contratual do banco.
+        </p>
+        <p>
+          <a href="/apps/custo-de-compra/">Organizar os custos de aquisição</a>
+          ·
+          <a href="/apps/alugar-ou-comprar/"
+            >Comparar patrimônio com correção hipotética do saldo</a
+          >
+        </p>
+        <h3>Fontes e atualização</h3>
+        <p>
+          Metodologia revisada em 12/11/2026. Não usamos tabela de taxas atuais
+          nem previsão de Selic. Consulte a
+          <a
+            href="https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?numero=4881&amp;tipo=Resolu%C3%A7%C3%A3o+CMN"
+            >Resolução CMN 4.881 sobre CET</a
+          >
+          e as
+          <a href="https://www.caixa.gov.br/voce/habitacao/Paginas/default.aspx"
+            >condições de habitação da CAIXA</a
+          >. Condições, uso de FGTS e elegibilidade devem ser confirmados com a
+          instituição.
+        </p>
+        <h3>SAC é sempre a melhor escolha?</h3>
+        <p>
+          Nas mesmas condições, normalmente soma menos juros, mas exige maior
+          desembolso inicial. Capacidade de pagamento, liquidez e custo de
+          oportunidade também importam. Esta comparação não recomenda crédito.
+        </p>
+      </section>
+      <footer>
+        <a href="/ferramentas/vale-a-pena-comprar-2026.html"
+          >Analisar viabilidade</a
+        >
+        · <a href="/apps/alugar-ou-comprar/">Comprar × alugar</a> ·
+        <a href="/apps/simulador-roi-temporada/">ROI de temporada</a> ·
+        <a href="/privacidade.html">Privacidade</a>
+        <p>
+          Os links não transferem as premissas. Registre os valores antes de
+          continuar.
+        </p>
+      </footer>
+    </main>
+    <meta name="pd-shared-footer" />
+    <script defer src="/js/shared.js"></script>
+  </body>
 </html>

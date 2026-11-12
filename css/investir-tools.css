@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #f5f7f5;
+  color: #17352d;
+  font-family: system-ui, sans-serif;
+  line-height: 1.65;
+}
+.iv-main {
+  max-width: 1040px;
+  margin: auto;
+  padding: 36px 20px 70px;
+}
+.iv-main h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.12;
+  max-width: 800px;
+}
+.iv-main h2 {
+  line-height: 1.25;
+}
+.iv-eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+.iv-card {
+  background: #fff;
+  padding: clamp(18px, 3vw, 32px);
+  border: 1px solid #cad7cf;
+  border-radius: 18px;
+  margin: 24px 0;
+}
+.iv-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.iv-main label {
+  display: block;
+  font-weight: 650;
+}
+.iv-main input,
+.iv-main select {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  margin: 6px 0;
+  padding: 12px;
+  border: 1px solid #718b80;
+  border-radius: 8px;
+  background: white;
+  color: #17352d;
+  font: inherit;
+  font-size: 16px;
+}
+.iv-main small {
+  display: block;
+  color: #455e53;
+}
+.iv-main button,
+.iv-link {
+  display: inline-block;
+  padding: 12px 18px;
+  background: #164d3c;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+  margin: 15px 0;
+}
+.iv-main button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+.iv-main a:not(.iv-link) {
+  color: #125d46;
+  text-underline-offset: 3px;
+}
+.iv-main :focus-visible,
+.iv-skip:focus {
+  outline: 3px solid #aa5300;
+  outline-offset: 4px;
+}
+.iv-skip {
+  position: absolute;
+  left: 12px;
+  top: -100px;
+  background: white;
+  padding: 12px;
+  z-index: 1000;
+}
+.iv-skip:focus {
+  top: 12px;
+}
+.iv-main [hidden] {
+  display: none !important;
+}
+.iv-error {
+  color: #a02020;
+  font-weight: 600;
+}
+.iv-result {
+  font-size: 1.35rem;
+  font-weight: 650;
+}
+.iv-table {
+  overflow: auto;
+  max-width: 100%;
+}
+.iv-main table {
+  border-collapse: collapse;
+  width: 100%;
+  font-variant-numeric: tabular-nums;
+}
+.iv-main td,
+.iv-main th {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #cbd8d0;
+}
+.iv-main td:not(:first-child) {
+  white-space: nowrap;
+}
+.iv-main th {
+  background: #eaf1ec;
+}
+#result-title {
+  scroll-margin-top: 110px;
+}
+.iv-main footer {
+  margin-top: 36px;
+}
+@media (max-width: 620px) {
+  .iv-grid {
+    grid-template-columns: 1fr;
+  }
+  .iv-main {
+    padding: 24px 14px 48px;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
