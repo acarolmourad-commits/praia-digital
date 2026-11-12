@@ -31,3 +31,9 @@ O rascunho Apps Script existente em `docs/sales/apps-script-leads/Code.gs` não 
 - `node tests/lead-capture-browser.cjs`: teste preparado, 390/1280 px, contato/imóveis; todas as requisições externas interceptadas. **Não executado com sucesso neste ambiente**: Chromium aborta por `socket() failed: Operation not permitted`, inclusive na tentativa autorizada fora do sandbox.
 
 Antes de liberar: executar o teste de navegador em CI e validar um envio fictício autorizado por página, conferindo a chegada à caixa comercial (inclusive Spam) e eventual pedido de ativação. Nenhum envio real foi feito nesta implementação. Confirmar deploy e disponibilização no site após merge. Não coletar leads em arquivos públicos do GitHub.
+
+## Revisão de transparência (12/11/2026)
+
+Aviso específico adicionado à política, com dados, finalidade, FormSubmit, caixa Google, canal comercial para solicitações e distinção do WhatsApp. Fontes oficiais: https://formsubmit.co/ e https://formsubmit.co/privacy.pdf (effective date 17/01/2019, consultadas 12/11/2026). Não inferimos prazo de retenção, localização de processamento ou SLA de exclusão a partir dessas fontes. A ausência de expurgo automático corresponde à implementação; não é uma política de conservação aprovada.
+
+**Gate organizacional antes da publicação:** responsável pelo site deve definir identidade do controlador e política operacional de retenção/atendimento a direitos, incluindo tratamento de cópias e fornecedores. A página não inventa CNPJ, encarregado, prazo ou garantia LGPD. Esta revisão documental não equivale a auditoria jurídica e não resolve sozinha esse gate.
