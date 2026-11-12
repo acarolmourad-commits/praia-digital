@@ -1,0 +1,72 @@
+/* Loaded only by legacy articles whose original stylesheet was missing. */
+main,
+.wrap,
+body > article.blog-post {
+  max-width: 1040px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+body > article.blog-post {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.wrap main,
+main main {
+  padding: 0;
+}
+
+:is(main, .wrap, body > article.blog-post) h1 {
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+:is(main, .wrap, body > article.blog-post) :is(h2, h3) {
+  line-height: 1.3;
+  margin: 1.5rem 0 .75rem;
+  scroll-margin-top: 7rem;
+}
+
+:is(main, .wrap, body > article.blog-post) :is(p, ul, ol, blockquote) {
+  margin: .85rem 0;
+}
+
+:is(main, .wrap, body > article.blog-post) :is(ul, ol) {
+  padding-left: 1.4rem;
+}
+
+:is(main, .wrap, body > article.blog-post) a:not([class]) {
+  color: #075985;
+  text-decoration: underline;
+  text-underline-offset: .15em;
+}
+
+:is(main, .wrap, body > article.blog-post) a:focus-visible {
+  outline: 3px solid #0077b6;
+  outline-offset: 3px;
+}
+
+:is(main, .wrap, body > article.blog-post) :is(img, iframe, video) {
+  max-width: 100%;
+}
+
+:is(main, .wrap, body > article.blog-post) table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+:is(main, .wrap, body > article.blog-post) :is(th, td) {
+  padding: .65rem;
+  border: 1px solid #b9c9d2;
+  text-align: left;
+}
+
+:is(main, .wrap, body > article.blog-post) .pd-related__grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+}

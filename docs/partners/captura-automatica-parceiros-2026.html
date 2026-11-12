@@ -94,15 +94,15 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 <body>
 <meta name="pd-shared-nav">
 <div class="container">
-<h1>🤝 Captura Automática de Parceiros</h1>
-<p>Formulário único para imobiliárias interessadas em parceria.</p>
+<h1>🤝 Preparar contato de parceria</h1>
+<p>Preencha os campos para preparar uma mensagem de parceria. Revise o resumo e abra seu aplicativo de e-mail para enviar.</p>
 
 <div class="card">
-  <input type="text" id="nome" placeholder="Seu nome">
-  <input type="text" id="imobiliaria" placeholder="Nome da imobiliária">
-  <input type="email" id="email" placeholder="E-mail">
-  <input type="tel" id="telefone" placeholder="Telefone/WhatsApp">
-  <select id="cidade">
+  <input type="text" id="nome" aria-label="Seu nome" placeholder="Seu nome">
+  <input type="text" id="imobiliaria" aria-label="Nome da imobiliária" placeholder="Nome da imobiliária">
+  <input type="email" id="email" aria-label="E-mail" placeholder="E-mail">
+  <input type="tel" id="telefone" aria-label="Telefone ou WhatsApp" placeholder="Telefone/WhatsApp">
+  <select id="cidade" aria-label="Cidade">
     <option value="">Cidade</option>
     <option>Santos</option>
     <option>Guarujá</option>
@@ -113,23 +113,24 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     <option>Bertioga</option>
     <option>Itanhaém</option>
   </select>
-  <select id="modelo">
+  <select id="modelo" aria-label="Modelo de parceria">
     <option value="">Modelo de parceria</option>
     <option>Captação de leads qualificados</option>
     <option>Conteúdo e tráfego</option>
     <option>Ferramentas de IA para corretores</option>
     <option>Piloto 30 dias sem investimento</option>
   </select>
-  <textarea id="mensagem" rows="3" placeholder="Mensagem ou desafio atual"></textarea>
-  <button onclick="enviar()">Enviar interesse</button>
+  <textarea id="mensagem" aria-label="Mensagem ou desafio atual" rows="3" placeholder="Mensagem ou desafio atual"></textarea>
+  <button type="button" onclick="enviar()">Preparar mensagem</button>
 </div>
 
-<div id="resultado" class="result"></div>
+<div id="resultado" class="result" aria-live="polite"></div>
+<a id="enviarEmail" href="mailto:comercial@praia.digital" hidden>Abrir mensagem no aplicativo de e-mail</a>
 
 <div class="card">
   <h2>Acesso rápido</h2>
-  <a href="docs/sales/central-comando-praia-digital.html">🧭 Central de Comando</a><br>
-  <a href="docs/sales/gerador-proposta-parceria-2026.html">📄 Gerador de proposta</a><br>
+  <a href="/docs/sales/central-comando-praia-digital.html">🧭 Central de Comando</a><br>
+  <a href="/docs/sales/gerador-proposta-parceria-2026.html">📄 Gerador de proposta</a><br>
   <a href="https://praia.digital">🛠 Ferramentas gratuitas</a>
 </div>
 </div>
@@ -143,13 +144,16 @@ function enviar(){
   const cidade=document.getElementById('cidade').value;
   const modelo=document.getElementById('modelo').value;
   const mensagem=document.getElementById('mensagem').value.trim();
-  if(!nome!imobiliaria!email!telefone!cidade!modelo){
+  if(!nome || !imobiliaria || !email || !telefone || !cidade || !modelo){
     alert('Preencha todos os campos.');
     return;
   }
   const r=document.getElementById('resultado');
-  r.textContent='Interesse registrado.\n\nEm breve entraremos em contato.\n\nResumo:\n- Nome: '+nome+'\n- Imobiliária: '+imobiliaria+'\n- E-mail: '+email+'\n- Telefone: '+telefone+'\n- Cidade: '+cidade+'\n- Modelo: '+modelo+'\n- Mensagem: '+(mensagem'-')+'\n\nContato: comercial@praia.digital | (11) 95434-6288';
+  r.textContent='Mensagem preparada. Revise os dados e use o link abaixo para enviar pelo seu aplicativo de e-mail.\n\nResumo:\n- Nome: '+nome+'\n- Imobiliária: '+imobiliaria+'\n- E-mail: '+email+'\n- Telefone: '+telefone+'\n- Cidade: '+cidade+'\n- Modelo: '+modelo+'\n- Mensagem: '+(mensagem || '-')+'\n\nContato: comercial@praia.digital | (11) 95434-6288';
   r.style.display='block';
+  const enviarEmail=document.getElementById('enviarEmail');
+  enviarEmail.href='mailto:comercial@praia.digital?subject='+encodeURIComponent('Interesse em parceria — '+imobiliaria)+'&body='+encodeURIComponent(r.textContent);
+  enviarEmail.hidden=false;
 }
 </script>
 <meta name="pd-shared-footer">

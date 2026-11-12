@@ -173,7 +173,7 @@
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEST1234"></script>
   <script>
-    window.dataLayer = window.dataLayer  [];
+    window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-TEST1234', { anonymize_ip: true });
@@ -186,10 +186,10 @@
     <div class="card">
       <div class="logo">🏖️ Praia Digital</div>
       <h1>🚀 Quer transformar sua imobiliária?</h1>
-      <p class="subtitle">Deixe seus dados e receba um diagnóstico gratuito personalizado</p>
+      <p class="subtitle">Prepare seu registro neste navegador. Para solicitar atendimento, use o link de contato abaixo.</p>
       
       <div class="benefits">
-        <h3>🎁 O que você recebe gratuitamente:</h3>
+        <h3>🛠 Exemplos de ferramentas disponíveis no site:</h3>
         <ul>
           <li>Avaliação de preço de mercado automática</li>
           <li>Recomendação inteligente de imóveis</li>
@@ -230,12 +230,12 @@
           <textarea id="interesse" rows="3" placeholder="Ex: Quero automatizar atendimento e captar mais leads sem aumentar custos"></textarea>
         </div>
         
-        <button type="submit" class="submit-btn">🎯 Receber Diagnóstico Gratuito</button>
+        <button type="submit" class="submit-btn">💾 Salvar neste navegador</button>
       </form>
       
       <div id="successMessage" class="success-message">
-        <h2>✅ Lead capturado com sucesso!</h2>
-        <p>Obrigado pelo interesse! Em até <strong>24 horas</strong> você receberá um diagnóstico personalizado no e-mail informado.</p>
+        <h2>✅ Registro salvo neste navegador!</h2>
+        <p>Seus dados ficaram apenas neste navegador; nenhum pedido foi enviado. Para falar com a Praia Digital, <a href="/contato.html">acesse a página de contato</a>.</p>
         <p style="margin-top: 1rem;">Enquanto isso, explore nossas ferramentas gratuitas em <a href="https://praia.digital" target="_blank" style="color: #00d4ff;">https://praia.digital</a></p>
       </div>
     </div>
@@ -265,9 +265,15 @@
       };
       
       // Store in localStorage
-      let leads = JSON.parse(localStorage.getItem('praiaDigitalLeads')  '[]');
-      leads.push(lead);
-      localStorage.setItem('praiaDigitalLeads', JSON.stringify(leads));
+      try {
+        const leads = JSON.parse(localStorage.getItem('praiaDigitalLeads') || '[]');
+        if (!Array.isArray(leads)) throw new Error('Formato de registros inválido');
+        leads.push(lead);
+        localStorage.setItem('praiaDigitalLeads', JSON.stringify(leads));
+      } catch (error) {
+        alert('Não foi possível salvar neste navegador. Seus campos foram mantidos; verifique as permissões de armazenamento.');
+        return;
+      }
       
       // Show success message
       document.getElementById('leadForm').style.display = 'none';
@@ -277,7 +283,7 @@
       if (typeof gtag !== 'undefined') {
         }
       
-      console.log('Lead capturado:', lead);
+      // Dados pessoais permanecem apenas no armazenamento local.
     }
     
     // Track form views

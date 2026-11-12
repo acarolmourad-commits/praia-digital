@@ -237,7 +237,8 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
   <div class="container">
     <div class="header">
       <h1>📊 Tracker de Leads - Praia Digital</h1>
-      <a class="btn-sm" href="docs/sales/tracker_envios.csv" download>📥 Baixar CSV</a>
+      <button class="btn-sm" type="button" onclick="exportCSV()">📥 Exportar dados exibidos</button>
+      <p>Dados de demonstração. Os filtros e a exportação usam os exemplos exibidos nesta página.</p>
     </div>
 
     <div class="stats-row">
@@ -288,11 +289,11 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     </div>
 
     <div class="footer">
-      <p>🏖️ Praia Digital · Tracking gerado para prospecção real</p>
+      <p>🏖️ Praia Digital · Tracker de demonstração</p>
       <p style="margin-top: 0.5rem;">
-        <a href="docs/sales/tracker_envios.csv" download>Tracker CSV</a> • 
-        <a href="docs/sales/agendador-followups-2026.html">Agendador</a> • 
-        <a href="outreach/followups-leads-reais/">Follow-ups</a>
+        <button class="btn-sm" type="button" onclick="exportCSV()">Exportar dados exibidos</button> •
+        <a href="/docs/sales/agendador-followups-2026.html">Agendador</a> •
+        <span>Modelos individuais não vinculados</span>
       </p>
     </div>
   </div>
@@ -319,7 +320,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     function stats(data){
       const total = data.length;
       const counts = {Pendente:0, Contatado:0, Respondeu:0, Fechado:0};
-      data.forEach(l => counts[l.status] = (counts[l.status]0)+1);
+      data.forEach(l => counts[l.status] = (counts[l.status] || 0)+1);
       const rate = total ? Math.round((counts.Respondeu + counts.Fechado)/total*100) + '%' : '0%';
       return {total, ...counts, rate};
     }
@@ -339,15 +340,14 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         <tr>
           <td><strong>${escapeHtml(lead.name)}</strong></td>
           <td>${escapeHtml(lead.city)}</td>
-          <td><span class="badge ${badgeMap[lead.status]'badge-pending'}">${lead.status}</span></td>
+          <td><span class="badge ${badgeMap[lead.status] || 'badge-pending'}">${lead.status}</span></td>
           <td>${escapeHtml(lead.f3)}</td>
           <td>${escapeHtml(lead.f7)}</td>
-          <td>${escapeHtml(lead.reply  '—')}</td>
-          <td>${escapeHtml(lead.last  '—')}</td>
+          <td>${escapeHtml(lead.reply || '—')}</td>
+          <td>${escapeHtml(lead.last || '—')}</td>
           <td class="actions">
-            <a class="btn-sm" href="outreach/auto-respostas/modelo-resposta-automatica-lead.html?lead=${encodeURIComponent(lead.name)}&city=${encodeURIComponent(lead.city)}" target="_blank">Responder</a>
-            <a class="btn-sm" href="outreach/followups-leads-reais/followup-3d-${slugify(lead.name)}.html" target="_blank">3d</a>
-            <a class="btn-sm" href="outreach/followups-leads-reais/followup-7d-${slugify(lead.name)}.html" target="_blank">7d</a>
+            <a class="btn-sm" href="/outreach/auto-respostas/modelo-resposta-automatica-lead.html?lead=${encodeURIComponent(lead.name)}&city=${encodeURIComponent(lead.city)}" target="_blank">Ver modelo de resposta</a>
+            <span>Follow-ups individuais não vinculados</span>
           </td>
         </tr>
       `).join('');
@@ -372,8 +372,8 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       document.body.removeChild(a);
     }
 
-    function escapeHtml(str){ return String(str'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
-    function slugify(str){ return String(str'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'')  'lead'; }
+    function escapeHtml(str){ return String(str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+    function slugify(str){ return String(str || '').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'') || 'lead'; }
 
     document.getElementById('filterStatus').addEventListener('change', render);
     document.getElementById('filterCity').addEventListener('input', render);

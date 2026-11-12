@@ -36,7 +36,51 @@ class NavigationTests(unittest.TestCase):
         result, _ = nav.transform(text, HEADER)
         self.assertEqual(nav.transform(result, HEADER)[0], result)
         self.assertEqual(result.count('/js/pd-navigation.js?v=4'), 1)
-        self.assertEqual(result.count('/assets/css/pd-navigation.css?v=3'), 1)
+        self.assertEqual(result.count('/assets/css/pd-navigation.css?v=4'), 1)
+
+    def test_missing_legacy_skip_target_preserves_heading(self):
+        heading = '<h1 id="guia">Guia <em>do litoral</em></h1>'
+        skip = '<a class="skip-link" href="#main" style="position:absolute;left:-9999px">Pular conteúdo</a>'
+        text = '<html><head></head><body>' + skip + heading + '<p>Original</p></body></html>'
+        result, _ = nav.transform(text, HEADER)
+        target = '<span id="main" class="pd-skip-target" tabindex="-1"></span>'
+        self.assertIn(target + heading, result)
+        self.assertIn('class="skip-link pd-skip-link"', result)
+        self.assertIn('style="position:absolute;left:-9999px"', result)
+        self.assertLess(result.index('href="#main"'), result.index('<header'))
+        self.assertEqual(nav.transform(result, HEADER)[0], result)
+
+    def test_existing_skip_target_is_not_duplicated_or_rewritten(self):
+        for target in ['<main id="main"><h1>Guide</h1></main>',
+                       '<h1 id="main" tabindex="-1">Guide</h1>',
+                       '<a name="main"></a><h1>Guide</h1>']:
+            text = '<html><head></head><body><a href="#main" class="skip-link">Skip</a>' + target + '</body></html>'
+            result, _ = nav.transform(text, HEADER)
+            self.assertIn(target, result)
+            self.assertNotIn('pd-skip-target', result)
+            self.assertEqual(nav.transform(result, HEADER)[0], result)
+
+    def test_duplicate_and_pre_body_skip_links_become_one(self):
+        first = '<a href="#main" class="skip-link">Pular para o conteúdo</a>'
+        text = '<html><head></head>' + first + '<body>' + first + '<article><h1>Guide</h1></article></body></html>'
+        result, _ = nav.transform(text, HEADER)
+        self.assertEqual(result.count('href="#main"'), 1)
+        self.assertEqual(result.count('id="main"'), 1)
+        self.assertLess(result.index('<body>'), result.index('href="#main"'))
+        self.assertLess(result.index('href="#main"'), result.index('<header'))
+        self.assertEqual(nav.transform(result, HEADER)[0], result)
+
+    def test_article_without_heading_gets_target_and_regular_links_stay_intact(self):
+        text = '<html><head></head><body><a class="skip-link" href="#main">Skip</a><article>Original</article><a href="#main">Back to content</a></body></html>'
+        result, _ = nav.transform(text, HEADER)
+        self.assertIn('tabindex="-1"></span><article>Original</article>', result)
+        self.assertIn('<a href="#main">Back to content</a>', result)
+
+    def test_no_skip_link_does_not_add_target(self):
+        text = '<html><head></head><body><a href="#main">Related section</a><h1 id="guide">Guide</h1></body></html>'
+        result, _ = nav.transform(text, HEADER)
+        self.assertNotIn('pd-skip-target', result)
+        self.assertNotIn('pd-skip-link', result)
 
     def test_keeps_editorial_header(self):
         content = '<header><h1>Guia da cidade</h1></header><article><header><h2>Bairro</h2></header></article>'

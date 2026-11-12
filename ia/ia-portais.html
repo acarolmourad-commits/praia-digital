@@ -169,7 +169,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
   <div class="wrap" id="gerador">
     <div class="seo-panel">
-      <h2 class="section-title">Gerador SEO para portais</h3>
+      <h2 class="section-title">Gerador SEO para portais</h2>
       <div class="seo-form">
         <div class="field">
           <label for="seoTipo">Tipo</label>
@@ -216,14 +216,15 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
     <div style="margin-top: 1.5rem; display:flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
       <a class="btn btn-primary" href="/ia/">Voltar para central</a>
-      <a class="btn btn-primary" href="//">Home</a>
+      <a class="btn btn-primary" href="/">Home</a>
     </div>
   </div>
 
   <meta name="pd-shared-footer">
 
   <script>
-    const fmt = v => 'R$ ' + Number(v0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0});
+    const fmt = v => 'R$ ' + Number(v || 0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0});
+    const escapeHTML = text => String(text).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
     function slugify(text){
       return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
     }
@@ -231,10 +232,17 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       const tipo = document.getElementById('seoTipo').value;
       const cidade = document.getElementById('seoCidade').value;
       const bairro = document.getElementById('seoBairro').value.trim();
-      const dorms = document.getElementById('seoDorms').value;
-      const preco = Number(document.getElementById('seoPreco').value0);
+      const dorms = document.getElementById('seoDorms').value.trim();
+      const preco = Number(document.getElementById('seoPreco').value || 0);
       const diferencial = document.getElementById('seoDiferencial').value.trim();
-      const cidadeLabel = document.getElementById('seoCidade').options[document.getElementById('seoCidade').selectedIndex].text;
+      const cidadeSelect = document.getElementById('seoCidade');
+      const cidadeOption = cidadeSelect.options[cidadeSelect.selectedIndex];
+      if(!['apartamento','casa','terreno','comercial','pousada'].includes(tipo) || !cidadeOption || !cidade || cidadeOption.value !== cidade || !Number.isFinite(preco) || preco < 0 || preco > Number.MAX_SAFE_INTEGER || (dorms && (!Number.isSafeInteger(Number(dorms)) || Number(dorms) < 0))){
+        document.getElementById('seoResult').classList.remove('visible');
+        alert('Selecione tipo e cidade válidos. Use preço não negativo e dormitórios inteiros não negativos, dentro dos limites numéricos.');
+        return;
+      }
+      const cidadeLabel = cidadeOption.text;
       const segmento = tipo==='apartamento'?'apto':tipo==='casa'?'casa':tipo;
       const baseTitle = `${segmento} ${dorms?dorms+'q':'s/q'} ${bairro?'em '+bairro:''} — ${cidadeLabel}`;
       const metaTitle = `${baseTitle} | ${preco?fmt(preco)+' | ':''}Praia Digital`;
@@ -257,22 +265,22 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         (preco?`• Preço: ${fmt(preco)}\n`:'') +
         (diferencial?`• Diferencial: ${diferencial}\n`:'');
 
-      const copyPayload = `Meta Title: ${metaTitle}\nMeta Description: ${metaDesc}\nURL: ${slug}\nKeywords: ${keywords.join(', ')}\n\nDescrição:\n${description}`;
+      const copyPayload = `Meta Title: ${metaTitle}\nMeta Description: ${metaDesc}\nURL sugerida (não publicada): ${slug}\nKeywords: ${keywords.join(', ')}\n\nDescrição:\n${description}`;
       window.__seoCopyText = copyPayload;
       const html = `
         <div class="meta-block">
-          <div class="meta-title">${metaTitle}</div>
-          <div class="meta-desc">${metaDesc}</div>
-          <div class="meta-url">URL sugerida: ${slug}</div>
+          <div class="meta-title">${escapeHTML(metaTitle)}</div>
+          <div class="meta-desc">${escapeHTML(metaDesc)}</div>
+          <div class="meta-url">URL sugerida (não publicada): ${escapeHTML(slug)}</div>
           <button class="copy-btn" onclick="copyText(window.__seoCopyText)">Copiar pacote SEO</button>
         </div>
         <div class="meta-block">
           <strong>Palavras-chave</strong>
-          <div class="keywords">${keywords.map(k=>`<span class="keyword">${k}</span>`).join('')}</div>
+          <div class="keywords">${keywords.map(k=>`<span class="keyword">${escapeHTML(k)}</span>`).join('')}</div>
         </div>
         <div class="meta-block">
           <strong>Descrição do anúncio</strong>
-          <pre style="white-space:pre-wrap;font-size:.9rem;color:#333;margin-top:.5rem">${description.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</pre>
+          <pre style="white-space:pre-wrap;font-size:.9rem;color:#333;margin-top:.5rem">${escapeHTML(description)}</pre>
         </div>
       `;
 
@@ -281,8 +289,9 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       document.getElementById('seoResult').scrollIntoView({behavior:'smooth'});
     }
 
-    function copyText(text){
-      navigator.clipboard.writeText(text).then(()=>alert('Copiado!')).catch(()=>alert('Não foi possível copiar automaticamente.'));
+    async function copyText(text){
+      try { await navigator.clipboard.writeText(text); alert('Copiado!'); }
+      catch { alert('Não foi possível copiar automaticamente. Selecione o texto e copie manualmente.'); }
     }
   </script>
 <script src="https://praia.digital/js/shared.js?v=2.0"></script>

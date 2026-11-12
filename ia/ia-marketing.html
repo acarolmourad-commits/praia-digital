@@ -168,7 +168,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
   <div class="wrap" id="gerador">
     <div class="marketing-panel">
-      <h2 class="section-title"></h2>
+      <h2 class="section-title">Gerador de conteúdo de marketing</h2>
       <div class="mk-form">
         <div class="field">
           <label for="mkCanal">Canal</label>
@@ -243,7 +243,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
     <div style="margin-top: 1.5rem; display:flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
       <a class="btn btn-primary" href="/ia/">Voltar para central</a>
-      <a class="btn btn-primary" href="//">Home</a>
+      <a class="btn btn-primary" href="/">Home</a>
     </div>
   </div>
 
@@ -255,7 +255,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     const objetivoLabels = {'visitas':'Visitas','leads':'Leads','vendas':'Vendas','marca':'Marca'};
     const hooks = {
       'comprador': ['Não precisa ser rico para ter seu apartamento no litoral.', 'O melhor custo-benefício do litoral paulista agora está em :city.'],
-      'investidor': ['Oportunidade de investimento no litoral paulista.', 'ROI previsível com imóvel no litoral? Veja :city.'],
+      'investidor': ['Avalie cenários de investimento no litoral paulista.', 'Compare custos e receitas de um imóvel em :city.'],
       'proprietario': ['Capture mais valor do seu imóvel no litoral.', 'Anuncie com performance no litoral paulista.'],
       'corretor': ['Ferramenta para corretores captarem mais no litoral.', 'SEO local + IA = mais encarte e visitas.'],
       'turista': ['Sua temporada começa aqui.', 'Imóvel no litoral com preço bom e localização melhor ainda.']
@@ -275,7 +275,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       fmt.innerHTML = '';
       const options = canal==='email'
         ? [['sequencia','Sequência'],['one-mail','One-mail']]
-        : canal==='meta'canal==='google'
+        : canal==='meta' || canal==='google'
         ? [['ad','Anúncio'],['campaign','Campanha']]
         : [['post','Post'],['carrossel','Carrossel'],['reel','Reel/Short'],['campaign','Campanha'],['landing','Landing Page']];
       options.forEach(([val,label])=>{
@@ -290,6 +290,11 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       const publico = document.getElementById('mkPublico').value;
       const diferencial = document.getElementById('mkDiferencial').value.trim();
       const objetivo = document.getElementById('mkObjetivo').value;
+      if(!['instagram','facebook','linkedin','tiktok','youtube','email','meta','google'].includes(canal) || !Object.prototype.hasOwnProperty.call(cidadeLabels,cidade) || !Object.prototype.hasOwnProperty.call(publicoLabels,publico) || !Object.prototype.hasOwnProperty.call(objetivoLabels,objetivo)){
+        document.getElementById('marketingResult').classList.remove('visible');
+        alert('Selecione canal, cidade, público e objetivo válidos.');
+        return;
+      }
       const cityLabel = cidadeLabels[cidade];
       const hook = pick(hooks[publico]).replace(':city', cityLabel);
       const tags = hashtags(cityLabel, publico);
@@ -300,14 +305,14 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         const subject = `${publicoLabels[publico]}, veja esta oportunidade em ${cityLabel}`;
         const body = `Olá!\n\n${hook}\n\n${diferencial?`Diferencial: ${diferencial}. `:''}Quer saber mais?\n\nFale com a Praia Digital: comercial@praia.digital\n`;
         email = `Assunto: ${subject}\n\n${body}`;
-      } else if(canal==='meta'canal==='google'){
+      } else if(canal==='meta' || canal==='google'){
         const headline = `${pick(['Aproveite','Descubra','Garanta'])} ${cityLabel}`;
         const desc = `${hook} ${diferencial?`${diferencial}. `:''}Clique e saiba mais.`;
         ad = `Headline: ${headline}\nDescrição: ${desc}\nCTA: ${objetivo==='leads'?'Cadastrar':objetivo==='visitas'?'Agendar':'Falar com consultor'}`;
       } else {
         caption = `${hook}\n\n${diferencial?`Diferencial: ${diferencial}.`:''}\n\n${objetivoLabels[objetivo]}: clique no link.\n\n${tagBlock}`;
         script = `0-3s | Hook direto: "${hook}"\n3-10s | Problema/contexto: o que o público sente hoje.\n10-25s | Solução: como a Praia Digital acelera ${objetivoLabels[objetivo].toLowerCase()}.\n25-40s | Prova/CTA: ${objetivo==='vendas'?'agende visita':objetivo==='leads'?'cadastre-se':'fale com consultor'}.\n40-50s | Fechamento: link na bio.`;
-        carrossel = `1) Hook: ${hook}\n2) Dor: dificuldade de encontrar oportunidade no litoral.\n3) Solução: IA + dados + experiência local.\n4) Dado rápido: +587 parceiros, cidades atendidas.\n5) CTA: contato direto.`;
+        carrossel = `1) Hook: ${hook}\n2) Dor: dificuldade de encontrar oportunidade no litoral.\n3) Solução: IA + dados + experiência local.\n4) Dado rápido: insira uma informação verificada e sua fonte antes de publicar.\n5) CTA: contato direto.`;
         landing = `H1: ${cityLabel} com inteligência e dados.\nSub: ${hook}\nBenefícios: seleção por IA, atendimento 24h, análise de mercado.\nForm: nome + WhatsApp + cidade.\nCTA principal: Quero avaliação gratuita.`;
       }
 
@@ -323,12 +328,13 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
       const copyPayload = blocks.map(b=>`${b.title}:\n${b.value}\n`).join('\n');
       window.__mkCopyText = copyPayload;
+      window.__mkBlocks = blocks;
 
-      const html = blocks.map((b)=>`
+      const html = blocks.map((b,index)=>`
         <div class="block">
-          <h3></h3>
+          <h3>${b.title}</h3>
           <pre>${b.value.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</pre>
-          <button class="copy-btn" onclick="copyText('${b.title.replace(/'/g,"\\'")}', window.__mkCopyText.split(/${b.title}:\n/)[1]?.[0]'')">Copiar ${b.title}</button>
+          <button class="copy-btn" onclick="copyText(window.__mkBlocks[${index}].title, window.__mkBlocks[${index}].value)">Copiar ${b.title}</button>
         </div>
       `).join('');
 
@@ -337,9 +343,10 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       document.getElementById('marketingResult').scrollIntoView({behavior:'smooth'});
     }
 
-    function copyText(label, text){
+    async function copyText(label, text){
       const t = typeof text==='string'?text:window.__mkCopyText;
-      navigator.clipboard.writeText(t).then(()=>alert(`Copiado: ${label}`)).catch(()=>alert('Não foi possível copiar.'));
+      try { await navigator.clipboard.writeText(t); alert(`Copiado: ${label}`); }
+      catch { alert('Não foi possível copiar automaticamente. Selecione o texto e copie manualmente.'); }
     }
   </script>
 <script src="https://praia.digital/js/shared.js?v=2.0"></script>

@@ -145,18 +145,18 @@ gtag('config', (window.PD_GA4_ID || ''), { anonymize_ip: true });
 <a class="skip-link" href="#main" style="position:absolute;left:-9999px;">Pular para o conteúdo</a>
   <div class="wrap">
     <h1>Análise de retorno para temporada</h1>
-    <p>Preencha para estimar retorno rápido.</p>
-    <form onsubmit="event.preventDefault();const diaria=parseInt(document.getElementById('diaria').value)0;const dias=parseInt(document.getElementById('dias').value)0;const taxa=parseInt(document.getElementById('taxa').value)0;const retorno=diaria*dias*(1-taxa/100);const r=document.querySelector('.result');r.style.display='block';r.textContent='Retorno estimado: R$ '+retorno.toLocaleString('pt-BR')+'. Use esta base para decisão de preço e temporada.';" aria-label="Contact form">
-      <label>Diária pretendida</label>
-      <input id="diaria" type="number" placeholder="Ex: 800">
-      <label>Dias de temporada</label>
-      <input id="dias" type="number" placeholder="Ex: 45">
-      <label>Taxa de ocupação (%)</label>
-      <input id="taxa" type="number" placeholder="Ex: 70">
-      <button type="submit">Calcular retorno</button>
+    <p>Estime o faturamento bruto: diária × dias disponíveis × ocupação. O cálculo não desconta custos e não representa lucro ou ROI.</p>
+    <form onsubmit="event.preventDefault();const diariaRaw=document.getElementById('diaria').value.trim();const diasRaw=document.getElementById('dias').value.trim();const taxaRaw=document.getElementById('taxa').value.trim();const diaria=Number(diariaRaw);const dias=Number(diasRaw);const taxa=Number(taxaRaw);const r=document.querySelector('.result');r.style.display='block';if(!diariaRaw||!diasRaw||!taxaRaw||!Number.isFinite(diaria)||diaria&lt;=0||diaria&gt;Number.MAX_SAFE_INTEGER||!Number.isInteger(dias)||dias&lt;0||dias&gt;365||!Number.isFinite(taxa)||taxa&lt;0||taxa&gt;100){r.textContent='Informe diária positiva, dias inteiros entre 0 e 365 e ocupação entre 0% e 100%.';return;}const retorno=diaria*dias*(taxa/100);if(!Number.isFinite(retorno)||retorno&gt;Number.MAX_SAFE_INTEGER){r.textContent='O valor calculado excede o limite de precisão. Revise a diária e os dias informados.';return;}r.textContent='Faturamento bruto estimado: R$ '+retorno.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})+'. Custos não incluídos; este valor não é lucro nem ROI.';" aria-label="Simulador de faturamento bruto de temporada">
+      <label for="diaria">Diária pretendida (R$)</label>
+      <input id="diaria" type="number" min="0.01" step="any" required placeholder="Ex: 800">
+      <label for="dias">Dias disponíveis no período</label>
+      <input id="dias" type="number" min="0" max="365" step="1" required placeholder="Ex: 45">
+      <label for="taxa">Taxa de ocupação (%)</label>
+      <input id="taxa" type="number" min="0" max="100" step="any" required placeholder="Ex: 70">
+      <button type="submit">Calcular faturamento bruto</button>
     </form>
-    <div class="result"></div>
-    <p><a href="/ferramentas-gratuitas/imobiliarias/avaliacao-preco-mercado-litoral.html">Avaliação de preço</a></p>
+    <div class="result" role="status" aria-live="polite"></div>
+    <p><a href="/ferramentas-gratuitas-imobiliarias/avaliacao-preco-mercado-litoral.html">Avaliação de preço</a></p>
   </div>
 <meta name="pd-shared-footer">
 <script src="https://praia.digital/js/shared.js?v=2.0"></script>

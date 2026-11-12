@@ -301,7 +301,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
   <div class="container">
     <div class="header">
       <h1>📊 Gerenciador de Envios em Lote</h1>
-      <p>Organize, envie e acompanhe os 585 lotes de prospecção personalizada por cidade</p>
+      <p>Controle local de 585 posições de exemplo para lotes por cidade. As alterações ficam neste navegador; nenhum e-mail é enviado por esta página.</p>
     </div>
 
     <div class="stats-row">
@@ -372,8 +372,8 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     <div class="footer">
       <p>🏖️ Praia Digital · Gerenciador de Envios em Lote</p>
       <p style="margin-top: 0.5rem;">
-        <a href="outreach/prospeccao-por-estado-2026.html" target="_blank">Hub por Estado</a> • 
-        <a href="docs/sales/execucao-diaria-2026-07-14.html" target="_blank">Execução do Dia</a> • 
+        <span>Hub por Estado não disponível</span> •
+        <span>Planejamento e atualização de status manuais neste navegador</span> •
         <a href="central-comando-praia-digital.html" target="_blank">Central de Comando</a>
       </p>
     </div>
@@ -404,12 +404,12 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     
     function loadQueue() {
       try {
-        const saved = JSON.parse(localStorage.getItem(storageKey)  '[]');
+        const saved = JSON.parse(localStorage.getItem(storageKey) || '[]');
         saved.forEach(item => {
           const idx = queue.findIndex(q => q.batch === item.batch);
           if (idx !== -1) {
-            queue[idx].status = item.status  'pending';
-            queue[idx].date = item.date  '';
+            queue[idx].status = item.status || 'pending';
+            queue[idx].date = item.date || '';
           }
         });
       } catch (e) {}
@@ -480,9 +480,9 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
             </div>
             <div class="batch-status ${statusClass}">${statusText}</div>
             <div class="batch-actions">
-              <a href="outreach/${slug}.html" target="_blank" class="batch-btn">Abrir</a>
+              <span>Documento do lote não vinculado</span>
               ${item.status === 'pending' ? 
-                `<button class="batch-btn primary" onclick="markSent(${item.batch})">✓ Enviar</button>` : 
+                `<button class="batch-btn primary" onclick="markSent(${item.batch})">✓ Marcar como enviado</button>` :
                 `<button class="batch-btn" onclick="markReplied(${item.batch})">💬 Respondido</button>`
               }
             </div>
@@ -542,10 +542,10 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         item.batch,
         item.cityLabel,
         item.status,
-        item.date  ''
+        item.date || ''
       ]);
       
-      const csv = [headers, ...rows].map(r => r.join(',')).join('\\n');
+      const csv = [headers, ...rows].map(r => r.join(',')).join('\n');
       const blob = new Blob([csv], { type: 'text/csv' });
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');

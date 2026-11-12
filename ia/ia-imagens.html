@@ -150,7 +150,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
   <div class="wrap" id="gerador">
     <div class="image-panel">
-      <h2 class="section-title">Gerador de conceito visual</h3>
+      <h2 class="section-title">Gerador de conceito visual</h2>
       <div class="image-form">
         <div class="field"><label for="iTipo">Tipo</label><select id="iTipo"><option value="apartamento">Apartamento</option><option value="casa">Casa</option><option value="pousada">Pousada</option></select></div>
         <div class="field"><label for="iCidade">Cidade</label><select id="iCidade"><option value="praia-grande">Praia Grande</option><option value="santos">Santos</option><option value="guaruja">Guarujá</option><option value="sao-vicente">São Vicente</option><option value="itanhaem">Itanhaém</option><option value="mongagua">Mongaguá</option><option value="peruibe">Peruíbe</option><option value="ubatuba">Ubatuba</option><option value="caraguatatuba">Caraguatatuba</option><option value="sao-sebastiao">São Sebastião</option><option value="ilhabela">Ilhabela</option><option value="bertioga">Bertioga</option></select></div>
@@ -162,7 +162,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
     <div style="margin-top: 1.5rem; display:flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
       <a class="btn btn-primary" href="/ia/">Voltar para central</a>
-      <a class="btn btn-primary" href="//">Home</a>
+      <a class="btn btn-primary" href="/">Home</a>
     </div>
   </div>
 
@@ -174,13 +174,18 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       const tipo = document.getElementById('iTipo').value;
       const cidade = document.getElementById('iCidade').value;
       const canal = document.getElementById('iCanal').value;
-      const city = cityLabels[cidade]cidade;
+      if(!['apartamento','casa','pousada'].includes(tipo) || !Object.prototype.hasOwnProperty.call(cityLabels,cidade) || !['anuncio','banner','rede'].includes(canal)){
+        document.getElementById('imgResult').classList.remove('visible');
+        alert('Selecione tipo, cidade e canal válidos.');
+        return;
+      }
+      const city = cityLabels[cidade] || cidade;
       const conceitos = {
         anuncio: [`Foto ampla do ${tipo} com iluminação natural, destaque para sala/área social.`,`Fachada ou fachada + área externa, foco em diferencial.`,`Interior com layout limpo e luz quente para anúncio.`],
         banner: [`Banner 16:9 com headline e cidade + CTA.`,`Banner 1:1 para feed social com preço e telefone.`,`Banner 9:16 para stories com título e link.`],
         rede: [`Post 1:1 com legenda e WhatsApp.`,`Reels/Short com cena curta e texto em destaque.`,`Stories com enquete e botão de contato.`]
       };
-      const lista = conceitos[canal]  conceitos.anuncio;
+      const lista = conceitos[canal] || conceitos.anuncio;
       const html = lista.map(x=>`<div class="preview"><strong>${canal==='anuncio'?'Anúncio':canal==='banner'?'Banner':'Rede social'}</strong><p style="margin-top:.5rem;font-size:.92rem;color:#333">${x}</p><p style="margin-top:.4rem;font-size:.8rem;color:#777">${tipo} — ${city}</p></div>`).join('');
       document.getElementById('imgResult').innerHTML = html;
       document.getElementById('imgResult').classList.add('visible');

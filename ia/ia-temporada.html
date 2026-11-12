@@ -215,14 +215,14 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
     <div style="margin-top: 1.5rem; display:flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
       <a class="btn btn-primary" href="/ia/">Voltar para central</a>
-      <a class="btn btn-primary" href="//">Home</a>
+      <a class="btn btn-primary" href="/">Home</a>
     </div>
   </div>
 
   <meta name="pd-shared-footer">
 
   <script>
-    const fmt = v => 'R$ ' + Number(v0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0});
+    const fmt = v => 'R$ ' + Number(v || 0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0});
     const cityLabels = {'praia-grande':'Praia Grande','santos':'Santos','guaruja':'Guarujá','sao-vicente':'São Vicente','itanhaem':'Itanhaém','mongagua':'Mongaguá','peruibe':'Peruíbe','ubatuba':'Ubatuba','caraguatatuba':'Caraguatatuba','sao-sebastiao':'São Sebastião','ilhabela':'Ilhabela','bertioga':'Bertioga'};
 
     function setTab(btn, tab){
@@ -239,24 +239,35 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         const bairro=document.getElementById('sBairro').value.trim();
         const dorms=document.getElementById('sDorms').value;
         const diferencial=document.getElementById('sDiferencial').value.trim();
-        const diaria=Number(document.getElementById('sDiaria').value0);
-        const city=cityLabels[cidade]cidade;
+        const diaria=Number(document.getElementById('sDiaria').value || 0);
+        const city=cityLabels[cidade] || cidade;
+        if(!Number.isFinite(diaria) || diaria < 0){
+          document.getElementById('seasonResult').textContent = 'Informe uma diária válida, maior ou igual a zero.';
+          document.getElementById('seasonResult').classList.add('visible');
+          window.__seasonText = '';
+          return;
+        }
         const titulo=`${tipo} ${dorms?dorms+'q ':''}${bairro?'em '+bairro:''} — ${city}`;
         const descricao=`Acomodação em ${city} com ${diferencial?diferencial+', ':''}perfeita para temporada no litoral.`;
         text=`Título: ${titulo}\nDescrição: ${descricao}\nPreço sugerido: ${diaria?fmt(diaria)+'/noite':'defina diária'}\nPlataformas: Airbnb, Booking, Vrbo, Stays\nDica: use fotos com boa luz e destaque o diferencial.`;
       } else if(mode==='pricing'){
-        const baixa=Number(document.getElementById('pPreco').value0);
-        const alta=Number(document.getElementById('pAlta').value0);
-        const ocup=Number(document.getElementById('pOcupacao').value0);
-        const despesa=Number(document.getElementById('pDespesa').value0);
-        if(!baixa!alta!ocup) { text='Informe preços base e ocupação estimada.'; }
+        const baixa=Number(document.getElementById('pPreco').value || 0);
+        const alta=Number(document.getElementById('pAlta').value || 0);
+        const ocup=Number(document.getElementById('pOcupacao').value || 0);
+        const despesa=Number(document.getElementById('pDespesa').value || 0);
+        if(![baixa, alta, ocup, despesa].every(Number.isFinite) || baixa <= 0 || alta <= 0 || ocup < 0 || ocup > 100 || despesa < 0 || document.getElementById('pOcupacao').value.trim() === '') { text='Informe preços positivos, ocupação entre 0% e 100% e despesas maiores ou iguais a zero.'; }
+        else if([baixa, alta, despesa].some(value => value > Number.MAX_SAFE_INTEGER)) { text='Os valores excedem o limite de precisão do cálculo. Revise os preços e as despesas.'; }
         else {
           const media=(baixa+alta)/2;
           const receitaEstimada=media*ocup/100*30;
           const lucro=receitaEstimada-despesa;
-          const yield=lucro/media*100;
-          const descontoSugerido = yield<30 ? Math.round((media*0.9)) : Math.round((media*0.95));
-          text=`Preço baixa: ${fmt(baixa)}/noite\nAlta: ${fmt(alta)}/noite\nMédia estimada: ${fmt(media)}\nOcupação alvo: ${ocup}%\nReceita mensal estimada: ${fmt(receitaEstimada)}\nLucro estimado/mês: ${fmt(lucro)}\nYield estimado: ${yield.toFixed(1)}%\nDesconto sugerido (se necessário): ${fmt(descontoSugerido)}/noite\nDica: use PriceLabs/ALUG para automatizar por data.`;
+          const relacaoResultadoDiaria=lucro/media*100;
+          const descontoSugerido = relacaoResultadoDiaria<30 ? Math.round((media*0.9)) : Math.round((media*0.95));
+          if(![media, receitaEstimada, lucro, relacaoResultadoDiaria, descontoSugerido].every(Number.isFinite) || [media, receitaEstimada, lucro, descontoSugerido].some(value => Math.abs(value) > Number.MAX_SAFE_INTEGER)) {
+            text='Os valores excedem o limite de precisão do cálculo. Revise os preços e as despesas.';
+          } else {
+            text=`Preço baixa: ${fmt(baixa)}/noite\nAlta: ${fmt(alta)}/noite\nMédia estimada: ${fmt(media)}\nOcupação alvo: ${ocup}%\nReceita mensal estimada: ${fmt(receitaEstimada)}\nLucro estimado/mês: ${fmt(lucro)}\nDesconto sugerido (se necessário): ${fmt(descontoSugerido)}/noite\nEstimativa simplificada: não representa retorno sobre o valor do imóvel. Revise custos e sazonalidade antes de definir preços.`;
+          }
         }
       } else if(mode==='respostas'){
         const tipo=document.getElementById('rTipo').value;
@@ -276,7 +287,9 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         text=tipo==='positiva'?avaliacoes.positiva:tipo==='reclamacao'?avaliacoes.reclamacao:avaliacoes.sugestao;
       }
 
-      document.getElementById('seasonResult').innerHTML = `<div class="block">${text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div><button class="copy-btn" onclick="copyText(window.__seasonText=window.__seasonTexttext)">Copiar</button>`;
+      if(mode === 'respostas' || mode === 'avaliacoes') text += '\n\nRascunho: confirme os fatos e revise antes de enviar.';
+      window.__seasonText = text;
+      document.getElementById('seasonResult').innerHTML = `<div class="block">${text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div><button class="copy-btn" onclick="copyText(window.__seasonText)">Copiar</button>`;
       document.getElementById('seasonResult').classList.add('visible');
       document.getElementById('seasonResult').scrollIntoView({behavior:'smooth'});
     }

@@ -329,7 +329,10 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     </div>
   </div>
   <meta name="pd-shared-footer">
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>
+    const yearElement = document.getElementById('y');
+    if (yearElement) yearElement.textContent = new Date().getFullYear();
+  </script>
   <script>
     (function(){
       const form = document.getElementById('automacaoLeadForm');
@@ -341,14 +344,14 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         const imob = document.getElementById('automacaoImob').value.trim();
         const cidade = document.getElementById('automacaoCidade').value.trim();
         const fone = document.getElementById('automacaoFone').value.trim();
-        if (!nome  !imob  !cidade  !fone) {
+        if (!nome || !imob || !cidade || !fone) {
           if (feedback) { feedback.style.display='block'; feedback.style.color='#b91c1c'; feedback.textContent='Preencha todos os campos.'; }
           return;
         }
         const subject = encodeURIComponent('Automação para imobiliárias - Praia Digital');
         const body = encodeURIComponent(`Nome: ${nome}\nImobiliária: ${imob}\nCidade: ${cidade}\nTelefone: ${fone}\n`);
         window.location.href = `mailto:comercial@praia.digital?subject=${subject}&body=${body}`;
-        if (feedback) { feedback.style.display='block'; feedback.style.color='#047857'; feedback.textContent='Interesse registrado! Abra seu e-mail para enviar.'; }
+        if (feedback) { feedback.style.display='block'; feedback.style.color='#047857'; feedback.textContent='Rascunho preparado. Revise e envie no seu aplicativo de e-mail; nenhum interesse foi registrado automaticamente.'; }
       });
     })();
   </script>

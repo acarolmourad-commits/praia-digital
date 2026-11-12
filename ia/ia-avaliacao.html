@@ -153,7 +153,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
   <div class="hero">
     <div class="hero-inner">
       <h1>📊 IA para Avaliação</h1>
-      <p>Estruture PTAM, parecer, estudos comparativos e relatórios com base em dados.</p>
+    <p>Explore um cenário ilustrativo por tipo, cidade e área. Valide os dados com um avaliador credenciado.</p>
       <div class="hero-cta">
         <a class="btn btn-purple" href="#gerador">Gerar avaliação</a>
         <a class="btn btn-amber" href="/ia/">Voltar para central</a>
@@ -163,7 +163,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
   <div class="wrap" id="gerador">
     <div class="valuation-panel">
-      <h2 class="section-title">Gerador de avaliação</h3>
+      <h2 class="section-title">Gerador de avaliação</h2>
       <div class="valuation-form">
         <div class="field">
           <label for="valTipo">Tipo</label>
@@ -207,29 +207,34 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       </div>
       <button class="action-btn" onclick="runValuation()">Gerar avaliação</button>
       <div class="result" id="valuationResult"></div>
-      <div class="notice">Documento-base para suporte à decisão. Consulte um avaliador credenciado.</div>
+      <div class="notice">Simulação ilustrativa com parâmetros fixos, sem pesquisa de mercado atual. Não constitui PTAM. Consulte um avaliador credenciado.</div>
     </div>
 
     <div style="margin-top: 1.5rem; display:flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
       <a class="btn btn-primary" href="/ia/">Voltar para central</a>
-      <a class="btn btn-primary" href="//">Home</a>
+      <a class="btn btn-primary" href="/">Home</a>
     </div>
   </div>
 
   <meta name="pd-shared-footer">
 
   <script>
-    const fmt = v => 'R$ ' + Number(v0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0});
+    const fmt = v => 'R$ ' + Number(v || 0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0});
     const baseByCity = {'praia-grande':780000,'santos':1250000,'guaruja':950000,'sao-vicente':720000,'itanhaem':880000,'mongagua':750000,'peruibe':920000,'ubatuba':1100000,'caraguatatuba':980000,'sao-sebastiao':1350000,'ilhabela':1150000,'bertioga':860000};
     const cityLabels = {'praia-grande':'Praia Grande','santos':'Santos','guaruja':'Guarujá','sao-vicente':'São Vicente','itanhaem':'Itanhaém','mongagua':'Mongaguá','peruibe':'Peruíbe','ubatuba':'Ubatuba','caraguatatuba':'Caraguatatuba','sao-sebastiao':'São Sebastião','ilhabela':'Ilhabela','bertioga':'Bertioga'};
 
     function runValuation(){
       const tipo = document.getElementById('valTipo').value;
       const cidade = document.getElementById('valCidade').value;
-      const area = Number(document.getElementById('valArea').value0);
-      const precoInformado = Number(document.getElementById('valPreco').value0);
+      const area = Number(document.getElementById('valArea').value || 0);
+      const precoInformado = Number(document.getElementById('valPreco').value || 0);
       const diferencial = document.getElementById('valDiferencial').value.trim();
-      const base = baseByCity[cidade]780000;
+      if(!['apartamento','casa','terreno','comercial','pousada'].includes(tipo) || !Object.prototype.hasOwnProperty.call(baseByCity,cidade) || !Number.isFinite(area) || area <= 0 || !Number.isFinite(precoInformado) || precoInformado < 0){
+        document.getElementById('valuationResult').classList.remove('visible');
+        alert('Selecione tipo e cidade válidos, informe área maior que zero e preço não negativo.');
+        return;
+      }
+      const base = baseByCity[cidade] || 780000;
 
       let suggested = base;
       if(tipo==='apartamento') suggested += area * 1800;
@@ -238,38 +243,43 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       else if(tipo==='comercial') suggested += area * 2200;
       else if(tipo==='pousada') suggested += area * 1600;
 
-      if(diferencial.includes('mar')  diferencial.includes('frente')) suggested += 180000;
+      if(diferencial.includes('mar') || diferencial.includes('frente')) suggested += 180000;
       else if(diferencial.includes('piscina')) suggested += 120000;
-      else if(diferencial.includes('wi-fi')  diferencial.includes('wifi')) suggested += 15000;
+      else if(diferencial.includes('wi-fi') || diferencial.includes('wifi')) suggested += 15000;
 
       suggested = Math.round(suggested);
       const faixaMin = Math.round(suggested * 0.92);
       const faixaMax = Math.round(suggested * 1.08);
+      if(![area,precoInformado,suggested,faixaMin,faixaMax].every(value => Number.isFinite(value) && Math.abs(value) <= Number.MAX_SAFE_INTEGER)){
+        document.getElementById('valuationResult').classList.remove('visible');
+        alert('Os valores excedem os limites numéricos da simulação. Revise área e preço.');
+        return;
+      }
       const comparativos = [
-        {label:'Média cidade', value: fmt(base)},
-        {label:'Sugerido', value: fmt(suggested)},
+        {label:'Base ilustrativa', value: fmt(base)},
+        {label:'Simulado', value: fmt(suggested)},
         {label:'Informado', value: precoInformado?fmt(precoInformado):'—'},
-        {label:'Alerta', value: precoInformado > faixaMax ? 'Acima da faixa' : precoInformado && precoInformado < faixaMin ? 'Abaixo da faixa' : 'Dentro da faixa'}
+        {label:'Alerta', value: !precoInformado ? 'Preço não informado' : precoInformado > faixaMax ? 'Acima da faixa' : precoInformado < faixaMin ? 'Abaixo da faixa' : 'Dentro da faixa'}
       ];
 
-      const ptam = `PTAM — PARECER TÉCNICO DE AVALIAÇÃO MERCADOLÓGICA
-Objeto: ${tipo} em ${cityLabels[cidade]cidade}
-Área: ${area'—'} m²
-Diferencial: ${diferencial'—'}
+      const ptam = `SIMULAÇÃO ILUSTRATIVA — NÃO CONSTITUI PTAM
+Objeto: ${tipo} em ${cityLabels[cidade] || cidade}
+Área: ${area || '—'} m²
+Diferencial: ${diferencial || '—'}
 
 Valor base de referência: ${fmt(base)}
 Faixa sugerida: ${fmt(faixaMin)} a ${fmt(faixaMax)}
 Preço informado: ${precoInformado?fmt(precoInformado):'—'}
 
-Conclusão: ${precoInformado > faixaMax ? 'Preço informado está acima da faixa de mercado.' : precoInformado && precoInformado < faixaMin ? 'Preço informado está abaixo da faixa de mercado.' : 'Preço informado está dentro da faixa de mercado.'}
+Comparação: ${!precoInformado ? 'Preço não informado.' : precoInformado > faixaMax ? 'Preço informado está acima da faixa simulada.' : precoInformado < faixaMin ? 'Preço informado está abaixo da faixa simulada.' : 'Preço informado está dentro da faixa simulada.'}
 
-*Atenção: documento-base. Valide com profissional credenciado.*`;
+*Parâmetros fixos, sem pesquisa de mercado atual. Valide com profissional credenciado.*`;
 
       const html = `
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.75rem;margin-bottom:1rem">
           ${comparativos.map(x=>`<div style="background:#f8f9fa;border-radius:12px;padding:.9rem;text-align:center"><div style="font-size:.7rem;color:#888;text-transform:uppercase">${x.label}</div><div style="font-size:1.1rem;font-weight:900;color:var(--dark)">${x.value}</div></div>`).join('')}
         </div>
-        <div class="report"><strong>PTAM</strong>\n\n${ptam.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div>
+        <div class="report"><strong>Simulação preliminar</strong>\n\n${ptam.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div>
       `;
 
       document.getElementById('valuationResult').innerHTML = html;
