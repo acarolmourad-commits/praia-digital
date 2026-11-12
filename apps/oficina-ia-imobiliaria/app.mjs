@@ -9,3 +9,8 @@ byId('followup').addEventListener('submit',event=>{event.preventDefault();try{sh
 byId('copy').addEventListener('click',async()=>{if(!output.value){byId('status').textContent='Gere um resultado antes de copiar.';return;}try{await navigator.clipboard.writeText(output.value);byId('status').textContent='Texto copiado. Revise antes de usar.';}catch{output.focus();output.select();byId('status').textContent='Selecionei o texto. Use a opção Copiar do seu dispositivo.';}});
 byId('download').addEventListener('click',()=>{if(!output.value){byId('status').textContent='Gere um resultado antes de baixar.';return;}const url=URL.createObjectURL(new Blob([output.value],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='praia-digital-briefing.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);byId('status').textContent='Arquivo preparado para download.';});
 byId('clear').addEventListener('click',()=>{listing.reset();byId('followup').reset();output.value='';byId('status').textContent='Campos e resultado limpos.';});
+
+// Enable local-only controls only after every handler above has been installed.
+// method="dialog" also prevents native navigation if a handler fails to run.
+for (const control of document.querySelectorAll('[data-oficina-control]')) control.disabled=false;
+byId('startup-status').hidden=true;
