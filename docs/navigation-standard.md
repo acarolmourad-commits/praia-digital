@@ -1,7 +1,7 @@
 # Navegação compartilhada — padrão da página inicial
 
 A fonte única é `partials/header.html`: Comprar, Investir, Meu Imóvel,
-Profissionais e Inteligência, com os mesmos 24 links de submenu da home e
+Profissionais e Inteligência, com os mesmos 25 links de submenu da home e
 CTA “Falar com especialista” em `/interesse.html`. O logo aponta para `/`.
 
 ## Preparação do site
@@ -34,3 +34,5 @@ não relacionado ao cabeçalho (listings, leads e rodapé).
 O workflow `navigation-checks.yml` testa o PR e verifica home, Imóveis,
 Bertioga, Santos, Guarujá e Praia Grande. Não faz deploy.
 Somente um merge posterior em `main` aciona a publicação existente.
+
+O submenu Inteligência inclui Serviços de IA para empresas em `/servicos-ia.html`.
