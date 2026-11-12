@@ -1,0 +1,27 @@
+name: IA services page
+on:
+  pull_request:
+    paths: ['servicos-ia.html', 'css/servicos-ia-empresas.css', 'tests/test_ia_services.py', 'tests/ia-services-browser.cjs', '.github/workflows/ia-services-checks.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python3 tests/test_ia_services.py
+      - name: Browser checks
+        run: |
+          npm install --prefix "$RUNNER_TEMP/ia-qa" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/ia-qa/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          NODE_PATH="$RUNNER_TEMP/ia-qa/node_modules" node tests/ia-services-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ia-services-screenshots
+          path: /tmp/ia-services-*.png
