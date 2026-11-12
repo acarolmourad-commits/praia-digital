@@ -15,6 +15,7 @@ const root = path.resolve(__dirname, "..");
       const page = await browser.newPage({
         viewport: { width, height: 900 },
         locale: "pt-BR",
+        reducedMotion: "reduce",
       });
       const errors = [];
       page.on("pageerror", (e) => errors.push(e.message));
@@ -74,6 +75,7 @@ const root = path.resolve(__dirname, "..");
         ),
         false,
       );
+      await page.evaluate(() => scrollTo({ top: 0, behavior: "instant" }));
       await page.screenshot({
         path: `/tmp/investir-fin-${width}.png`,
         fullPage: true,
@@ -137,6 +139,7 @@ const root = path.resolve(__dirname, "..");
         ),
         false,
       );
+      await page.evaluate(() => scrollTo({ top: 0, behavior: "instant" }));
       await page.screenshot({
         path: `/tmp/investir-avaliacao-${width}.png`,
         fullPage: true,

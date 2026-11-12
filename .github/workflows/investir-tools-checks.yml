@@ -20,6 +20,8 @@ jobs:
         with:
           node-version: "22"
       - run: node tests/investir-tools.cjs
+      - name: Check app network structure
+        run: python3 tests/test_app_network.py NetworkTests.test_structure_and_targets
       - name: Prepare published navigation
         run: python3 scripts/build-navigation.py
       - name: Install browser test dependencies

@@ -52,3 +52,22 @@ for (const value of [NaN, Infinity, 0, -1])
 console.log(
   "Core: nominal/effective, SAC/Price, fees, cash, zero interest and invalid input checks passed.",
 );
+
+// Local links/assets must resolve in the checked-out publication sources.
+const fs = require("node:fs"),
+  path = require("node:path");
+for (const file of [
+  "ferramentas/avaliacao-preco.html",
+  "apps/calculadora-financiamento/index.html",
+]) {
+  const html = fs.readFileSync(path.resolve(__dirname, "..", file), "utf8");
+  for (const match of html.matchAll(
+    /(?:href|src)="(\/[^"#?]*)(?:[?#][^"]*)?"/g,
+  )) {
+    let target = path.resolve(__dirname, "..", "." + match[1]);
+    if (fs.existsSync(target) && fs.statSync(target).isDirectory())
+      target = path.join(target, "index.html");
+    assert.ok(fs.existsSync(target), `${file}: missing ${match[1]}`);
+  }
+}
+console.log("Local links and assets resolved.");
