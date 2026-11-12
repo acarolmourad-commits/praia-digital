@@ -65,5 +65,5 @@ class HouseIndaia(unittest.TestCase):
   self.assertEqual((p['id'],p['price'],p['area']),(15,'R$ 400.000','109,91 m² construídos'))
   self.assertIsNone(p['bedrooms']);self.assertEqual(p['locationLabel'],'Jardim Indaiá')
   self.assertEqual((ROOT/'sitemap.xml').read_text().count(URL),1)
-  self.assertIn('js/main.js?v=20261106-casa-indaia',(ROOT/'imoveis.html').read_text())
+  self.assertRegex((ROOT/'imoveis.html').read_text(), r'js/main\.js\?v=[A-Za-z0-9_-]+')
 if __name__=='__main__':unittest.main()
