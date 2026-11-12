@@ -12,3 +12,36 @@
 .product-navigation{display:flex;justify-content:space-between;align-items:center;gap:18px;padding-top:25px}.product-navigation nav{display:flex;align-items:center;gap:12px;font-size:11px;line-height:1.5}.product-navigation nav:first-child{color:#627064}.product-navigation nav:last-child{font-weight:600}.product-navigation a:hover{text-decoration:underline;text-underline-offset:4px}.product-navigation [aria-current]{color:var(--ink)}
 @media(max-width:900px){.product-navigation{flex-wrap:wrap}.product-navigation nav{font-size:10px}}
 @media(max-width:680px){.product-navigation{padding-top:20px;gap:14px}.product-navigation nav{gap:10px;font-size:10px}.hero{padding-top:35px}.product-navigation nav:last-child{border-top:1px solid var(--line);padding-top:12px;width:100%;justify-content:space-between}}
+
+
+/* In-page lead capture */
+[hidden]{display:none!important}
+.lead-capture{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:60px;scroll-margin-top:100px}
+.lead-intro>p{font-size:15px;line-height:1.8;color:var(--muted);max-width:380px}
+.lead-intro .tag{display:inline-block;margin-top:16px}
+.lead-card{background:#fff;border:1px solid #d8dfd1;border-radius:16px;padding:30px;min-width:0;box-shadow:0 15px 55px #10272208}
+.lead-fields{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.lead-card label,.lead-card legend{font-size:13px;font-weight:600;line-height:1.5}
+.lead-fields label{display:block;margin:0 0 7px}
+.lead-card input:not([type=checkbox]),.lead-card select,.lead-card textarea{font:inherit;font-size:16px;padding:12px;line-height:1.5;background:#fafbf8}
+.lead-card small{font-size:12px;color:#52614f;font-weight:400}
+.lead-card #phone-hint{display:block;margin-top:6px}
+.lead-card form>label{font-size:13px}
+.lead-card fieldset{margin:24px 0 0;min-width:0}
+.lead-choices{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.lead-choices label{display:flex;align-items:center;gap:8px;padding:9px 11px;border:1px solid #dce3d5;border-radius:7px;font-size:13px;cursor:pointer;font-weight:400}
+.lead-card input[type=checkbox]{width:18px;height:18px;flex-shrink:0;accent-color:#527329}
+.lead-card .lead-consent{display:flex;align-items:flex-start;gap:10px;font-size:12px;font-weight:400;margin-top:24px}
+.lead-consent input{margin-top:3px}
+.lead-card a{color:#395d20;text-decoration:underline;text-underline-offset:3px}
+.lead-card .lead-note,.lead-intro .lead-note{font-size:12px;line-height:1.8;color:#52614f}
+.lead-card .button{font-size:14px;min-height:50px;white-space:normal}
+.lead-card .button:disabled{opacity:.65;cursor:wait}
+.lead-error{padding:14px;border:1px solid #e3b7a7;background:#fff3ed;border-radius:7px;color:#873a22;font-size:13px;line-height:1.6}
+.lead-honeypot{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+#brief-result h3{font-size:36px;font-weight:500;letter-spacing:-1px;margin:24px 0 14px}
+#brief-result>p{line-height:1.8;font-size:14px}
+#lead-receipt{overflow-wrap:anywhere}
+#lead-success-title:focus{outline:2px solid #638539;outline-offset:5px}
+@media(max-width:800px){.lead-capture{grid-template-columns:1fr;gap:26px}.lead-intro>p{max-width:none}.lead-card{padding:24px}}
+@media(max-width:480px){.lead-fields{grid-template-columns:1fr;gap:18px}.lead-card{padding:20px 16px}.lead-capture{scroll-margin-top:80px}.lead-choices label{font-size:12px}.lead-card .button{font-size:13px}}

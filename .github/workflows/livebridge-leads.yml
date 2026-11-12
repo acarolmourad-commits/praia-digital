@@ -1,0 +1,25 @@
+name: LiveBridge lead capture
+on:
+  pull_request:
+    paths:
+      - 'workers/livebridge-leads/**'
+      - 'ia/marketplaces/**'
+      - '.github/workflows/livebridge-leads.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'workers/livebridge-leads/**'
+      - 'ia/marketplaces/**'
+      - '.github/workflows/livebridge-leads.yml'
+permissions:
+  contents: read
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node --check ia/marketplaces/app.js
+      - run: node --test workers/livebridge-leads/worker.test.mjs
