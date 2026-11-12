@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Crie gratuitamente um relatório do imóvel com a marca da imobiliária, dados confirmados, fontes e próximos passos. Preencha no navegador e imprima ou salve em PDF.">
+<link rel="canonical" href="https://praia.digital/apps/relatorio-imovel/">
+<title>Relatório do imóvel gratuito para imobiliárias | Praia Digital</title>
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Praia Digital">
+<meta property="og:title" content="Relatório do imóvel gratuito para imobiliárias">
+<meta property="og:description" content="Organize informações confirmadas e próximos passos em um relatório com a marca da sua imobiliária. Ferramenta gratuita, preenchida no navegador.">
+<meta property="og:url" content="https://praia.digital/apps/relatorio-imovel/">
+<style>
+:root{--ink:#163638;--teal:#17666b;--soft:#edf5f4;--paper:#fff;--line:#ccdcd9;--muted:#53696a;--sand:#f4f1e8;--accent:#c38539}
+.skip-link{position:absolute;left:16px;top:-70px;z-index:20;background:white;color:var(--ink);padding:10px 16px;border:2px solid var(--teal);border-radius:6px}.skip-link:focus{top:12px}.site-nav{display:flex;flex-wrap:wrap;gap:8px 20px;margin:0 0 20px;align-items:center}.site-nav a{color:#e3f4ee;min-height:44px;display:inline-flex;align-items:center;font-size:14px}.site-nav a:first-child{font-weight:750}.preview-jump{display:inline-block;margin:0 0 16px;font-weight:650}.report:focus{outline:3px solid var(--accent);outline-offset:5px}*{box-sizing:border-box}body{margin:0;background:#edf0ec;color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,textarea,select{font:inherit}a{color:var(--teal)}button,a,input,textarea,select{touch-action:manipulation}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #c38539;outline-offset:3px}.app-header{background:var(--ink);color:white;padding:24px max(24px,calc((100vw - 1440px)/2));}.app-header p{margin:8px 0 0;max-width:75ch;color:#d8e9e5}.eyebrow{font-size:12px;font-weight:750;letter-spacing:.14em;text-transform:uppercase}.app-header h1{font-size:clamp(24px,3vw,34px);line-height:1.2;margin:8px 0 0}.layout{display:grid;grid-template-columns:minmax(290px,420px) minmax(0,850px);gap:28px;max-width:1380px;margin:auto;padding:28px 24px 48px;align-items:start}.editor{background:white;border:1px solid var(--line);border-radius:12px;padding:24px}.editor h2{font-size:20px;margin:0 0 8px}.hint{font-size:13px;color:var(--muted);margin:0 0 20px}.field{display:block;margin-bottom:16px}.field span{display:block;font-size:14px;font-weight:650;margin-bottom:5px}input,textarea,select{width:100%;border:1px solid #91aaa7;border-radius:6px;padding:10px;background:white;color:var(--ink);min-height:44px}textarea{resize:vertical;min-height:90px}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.two .field{min-width:0}fieldset{padding:0;border:0;margin:0 0 20px}legend{font-size:15px;font-weight:750;padding:0 0 12px;border-bottom:1px solid var(--line);width:100%;margin-bottom:16px}.actions{display:flex;gap:9px;flex-wrap:wrap}.actions button{border:1px solid var(--teal);background:white;color:var(--teal);border-radius:6px;padding:10px 14px;min-height:44px;cursor:pointer;font-weight:650}.actions .primary{background:var(--teal);color:white}.actions button:hover{filter:brightness(.94)}.secondary-actions{margin-top:10px}.status{min-height:24px;margin:12px 0 0;font-size:13px;color:var(--teal)}.preview-title{display:flex;justify-content:space-between;gap:12px;align-items:center;margin:0 0 12px;font-size:13px;color:var(--muted)}.report{background:var(--paper);border:1px solid var(--line);box-shadow:0 10px 36px #173d3410;padding:44px;overflow-wrap:anywhere}.report-header{border-bottom:3px solid var(--teal);padding-bottom:24px}.report .brand{font-size:14px;font-weight:750;letter-spacing:.06em;text-transform:uppercase;min-height:22px}.report .report-name{font-family:Georgia,"Times New Roman",serif;font-size:36px;line-height:1.15;letter-spacing:-.02em;margin:10px 0 8px}.report .subtitle{color:var(--muted);font-size:14px;margin:0}.report-meta{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px;font-size:13px}.report-meta b,.fact dt{display:block;text-transform:uppercase;letter-spacing:.06em;font-size:10px;color:var(--muted);margin-bottom:4px}.report-meta p{margin:0}.notice{border:1px solid #d7b879;background:#fff8e7;padding:10px 12px;margin:20px 0 0;font-size:13px;font-weight:650}.report section{margin-top:24px}.report h3{margin:0 0 10px;font-size:16px}.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0}.fact{padding:12px;background:var(--soft);border-radius:5px;min-height:72px}.fact.wide{grid-column:span 3}.fact dd{margin:0;font-size:14px;white-space:pre-wrap}.body-text{font-size:14px;white-space:pre-wrap;margin:0}.placeholder{color:#637977;font-style:italic}.report-columns{display:grid;grid-template-columns:1fr 1fr;gap:24px}.report-columns section{min-width:0}.section-note{font-size:12px;color:var(--muted);margin:8px 0 0}.report-footer{margin-top:28px;padding-top:18px;border-top:1px solid var(--line);font-size:11px;color:var(--muted)}.report-footer p{margin:6px 0}.links{display:flex;gap:16px;flex-wrap:wrap;margin-top:10px}.contact{font-size:13px;background:var(--sand);padding:14px;margin-top:24px}.contact p{margin:0;white-space:pre-wrap}.screen-note{font-size:12px;color:var(--muted);margin:12px 0}.report [hidden]{display:none!important}
+@media(max-width:1000px){.layout{grid-template-columns:1fr;max-width:900px}.editor{padding:20px}.report{padding:32px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}.form-grid fieldset:last-child{grid-column:1/-1}}
+@media(max-width:600px){.app-header{padding:22px 18px}.layout{padding:20px 12px;gap:22px}.report{padding:24px 18px}.report .report-name{font-size:29px}.report-columns,.form-grid{grid-template-columns:1fr}.facts{grid-template-columns:repeat(2,minmax(0,1fr))}.fact.wide{grid-column:span 2}.report-meta{grid-template-columns:1fr}.preview-title{display:block}.actions button{flex:1}.two{gap:10px}.report-columns{gap:0}}
+@page{size:A4;margin:16mm}
+@media print{body{background:white;font-size:11pt}.app-header,.editor,.preview-title,.screen-note,.skip-link{display:none!important}.layout{display:block;padding:0;margin:0;max-width:none}.report{padding:0;border:0;box-shadow:none;color:#152d30;print-color-adjust:exact;-webkit-print-color-adjust:exact}.report .report-name{font-size:27pt}.report-header{padding-bottom:14px}.report section{margin-top:18px}.report-meta{margin-top:14px}.fact{padding:9px;min-height:58px}.fact dd,.body-text{font-size:10pt}.report h3{font-size:12pt}.contact{margin-top:18px}.report-footer{font-size:8pt;margin-top:20px}.report section,.report-header,.contact{break-inside:avoid}.report-columns{display:block}.report a{color:inherit;text-decoration:none}.notice{margin-top:14px}.report .links{gap:12px}h3{break-after:avoid}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Ir para o conteúdo</a>
+<header class="app-header">
+  <nav class="site-nav" aria-label="Navegação principal">
+    <a href="https://praia.digital/">Praia Digital</a>
+    <a href="https://praia.digital/apps/">Apps gratuitos</a>
+    <a href="https://praia.digital/apps/oficina-ia-imobiliaria/">Oficina de IA</a>
+    <a href="https://praia.digital/apps/revisor-anuncios/">Revisor de anúncios</a>
+  </nav>
+  <div class="eyebrow">Praia Digital · Recursos para parceiros</div>
+  <h1>Relatório do imóvel</h1>
+  <p>Organize informações confirmadas, dúvidas e próximos passos em um documento que sua equipe pode revisar com o proprietário.</p>
+</header>
+<main class="layout" id="main-content">
+  <aside class="editor" aria-labelledby="editor-title">
+    <h2 id="editor-title">Preencha o relatório</h2>
+    <p class="hint">Os dados ficam apenas nesta página e não são enviados. Campos vazios aparecem como “A confirmar”. Ao fechar ou recarregar, o preenchimento será perdido; imprima ou salve em PDF antes.</p>
+    <a class="preview-jump" href="#report">Ir para a prévia do relatório</a>
+    <form id="report-form" autocomplete="off">
+      <div class="form-grid">
+      <fieldset>
+        <legend>Identificação e responsabilidade</legend>
+        <label class="field"><span>Imobiliária ou parceiro</span><input id="partner" name="partner" maxlength="100" placeholder="Nome comercial"></label>
+        <label class="field"><span>Responsável pela revisão</span><input id="responsible" name="responsible" maxlength="100" placeholder="Nome e função"></label>
+        <div class="two">
+          <label class="field"><span>Data de referência</span><input id="referenceDate" name="referenceDate" type="date"></label>
+          <label class="field"><span>Código do imóvel</span><input id="reference" name="reference" maxlength="60" placeholder="Código interno"></label>
+        </div>
+        <label class="field"><span>Objetivo do relatório</span><textarea id="objective" name="objective" maxlength="650" placeholder="Ex.: reunir as informações necessárias para preparar um anúncio de locação."></textarea></label>
+      </fieldset>
+      <fieldset>
+        <legend>Dados confirmados do imóvel</legend>
+        <label class="field"><span>Tipo do imóvel</span><input id="propertyType" name="propertyType" maxlength="80" placeholder="Ex.: apartamento"></label>
+        <label class="field"><span>Localização</span><input id="location" name="location" maxlength="160" placeholder="Cidade e bairro; endereço completo só se necessário"></label>
+        <div class="two">
+          <label class="field"><span>Área e tipo da medida</span><input id="area" name="area" maxlength="80" placeholder="Ex.: 70 m² de área privativa"></label>
+          <label class="field"><span>Quartos e suítes</span><input id="rooms" name="rooms" maxlength="80" placeholder="Ex.: 2 quartos, 1 suíte"></label>
+        </div>
+        <div class="two">
+          <label class="field"><span>Vagas</span><input id="parking" name="parking" maxlength="80" placeholder="Ex.: 1 vaga coberta"></label>
+          <label class="field"><span>Modalidade</span><select id="purpose" name="purpose"><option value="">Selecione</option><option>Venda</option><option>Locação mensal</option><option>Temporada</option><option>A definir</option></select></label>
+        </div>
+        <label class="field"><span>Preço informado e periodicidade</span><input id="price" name="price" maxlength="120" placeholder="Informe moeda, valor e se é total, mensal ou por diária"></label>
+        <label class="field"><span>Despesas, condições e características confirmadas</span><textarea id="confirmed" name="confirmed" maxlength="1200" placeholder="Registre apenas o que foi confirmado, incluindo limites e condições relevantes."></textarea></label>
+      </fieldset>
+      <fieldset>
+        <legend>Evidências e encaminhamento</legend>
+        <label class="field"><span>Fontes e datas de confirmação</span><textarea id="sources" name="sources" maxlength="1200" placeholder="Ex.: ficha aprovada pelo proprietário em DD/MM/AAAA; URL do anúncio e data de consulta. Não inclua documentos pessoais."></textarea></label>
+        <label class="field"><span>Pontos a confirmar</span><textarea id="pending" name="pending" maxlength="1000" placeholder="Uma dúvida por linha. Não complete dados por suposição."></textarea></label>
+        <label class="field"><span>Próximos passos</span><textarea id="nextSteps" name="nextSteps" maxlength="1000" placeholder="Ação, responsável e prazo combinado, quando houver."></textarea></label>
+        <label class="field"><span>Contato para retorno</span><textarea id="contact" name="contact" maxlength="400" placeholder="Nome, e-mail profissional e canal de contato autorizado."></textarea></label>
+      </fieldset>
+      </div>
+      <div class="actions"><button class="primary" type="button" id="print-report">Imprimir / salvar PDF</button></div>
+      <div class="actions secondary-actions"><button type="button" id="load-example">Ver exemplo fictício</button><button type="button" id="clear-report">Limpar tudo</button></div>
+      <p class="status" id="status" role="status" aria-live="polite"></p>
+    </form>
+  </aside>
+  <div class="preview">
+    <p class="preview-title"><span>Prévia atualizada durante o preenchimento</span><span>A4 · conteúdo revisável</span></p>
+    <article class="report" id="report" aria-labelledby="report-title" tabindex="-1">
+      <header class="report-header">
+        <div class="brand" data-field="partner" data-empty="Nome do parceiro">Nome do parceiro</div>
+        <h2 class="report-name" id="report-title">Relatório do imóvel</h2>
+        <p class="subtitle">Informações confirmadas e plano de próximos passos</p>
+        <div class="report-meta">
+          <p><b>Responsável pela revisão</b><span data-field="responsible">A confirmar</span></p>
+          <p><b>Data de referência</b><span data-field="referenceDate">A confirmar</span></p>
+          <p><b>Referência do imóvel</b><span data-field="reference">A confirmar</span></p>
+          <p><b>Natureza do documento</b><span>Organização de informações</span></p>
+        </div>
+        <p class="notice" id="example-notice" hidden>EXEMPLO FICTÍCIO — dados demonstrativos, sem imóvel real ou oferta comercial.</p>
+      </header>
+      <section><h3>1. Objetivo</h3><p class="body-text" data-field="objective">A confirmar</p></section>
+      <section>
+        <h3>2. Ficha do imóvel</h3>
+        <dl class="facts">
+          <div class="fact"><dt>Tipo</dt><dd data-field="propertyType">A confirmar</dd></div>
+          <div class="fact"><dt>Modalidade</dt><dd data-field="purpose">A confirmar</dd></div>
+          <div class="fact"><dt>Área informada</dt><dd data-field="area">A confirmar</dd></div>
+          <div class="fact wide"><dt>Localização</dt><dd data-field="location">A confirmar</dd></div>
+          <div class="fact"><dt>Quartos e suítes</dt><dd data-field="rooms">A confirmar</dd></div>
+          <div class="fact"><dt>Vagas</dt><dd data-field="parking">A confirmar</dd></div>
+          <div class="fact"><dt>Preço e periodicidade informados</dt><dd data-field="price">A confirmar</dd></div>
+        </dl>
+        <h3 style="margin-top:16px;font-size:14px">Condições e características confirmadas</h3>
+        <p class="body-text" data-field="confirmed">A confirmar</p>
+        <p class="section-note">O preço é uma informação fornecida, não uma avaliação produzida por este modelo.</p>
+      </section>
+      <section><h3>3. Fontes e datas</h3><p class="body-text" data-field="sources">A confirmar</p></section>
+      <div class="report-columns">
+        <section><h3>4. Pontos a confirmar</h3><p class="body-text" data-field="pending">A confirmar</p></section>
+        <section><h3>5. Próximos passos</h3><p class="body-text" data-field="nextSteps">A confirmar</p></section>
+      </div>
+      <div class="contact"><strong>Contato para retorno</strong><p data-field="contact">A confirmar</p></div>
+      <footer class="report-footer">
+        <p>Documento preparado a partir dos dados preenchidos pelo responsável. Campo preenchido não significa verificação independente. Confirme atualidade, disponibilidade e autorização antes de divulgar.</p>
+        <p>Este modelo não produz avaliação de mercado, previsão de rentabilidade, parecer técnico ou validação jurídica. Simulações feitas em ferramentas externas exigem conferência das premissas e apresentação separada.</p>
+        <div class="links"><a href="https://praia.digital/ferramentas/" target="_blank" rel="noopener noreferrer">Ferramentas gratuitas</a><a href="https://praia.digital/apps/oficina-ia-imobiliaria/" target="_blank" rel="noopener noreferrer">Oficina de IA Imobiliária</a><a href="https://praia.digital/" target="_blank" rel="noopener noreferrer">Modelo de apoio · Praia Digital</a></div>
+      </footer>
+    </article>
+    <p class="screen-note"><a href="https://praia.digital/servicos/ia-para-imobiliarias.html">Conheça os serviços de apoio para imobiliárias</a>. A ferramenta de relatório é gratuita; serviços profissionais são contratados separadamente.</p>
+    <p class="screen-note">A quantidade de páginas depende do texto preenchido. Na impressão, confira a prévia e desative os cabeçalhos e rodapés do navegador se desejar um documento limpo.</p>
+  </div>
+</main>
+<script>
+'use strict';
+(() => {
+  const form = document.getElementById('report-form');
+  const outputs = [...document.querySelectorAll('[data-field]')];
+  const status = document.getElementById('status');
+  const notice = document.getElementById('example-notice');
+  let usingExample = false;
+  function displayDate(value) {
+    const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value);
+    return match ? `${match[3]}/${match[2]}/${match[1]}` : value;
+  }
+  function render() {
+    for (const output of outputs) {
+      const field = form.elements.namedItem(output.dataset.field);
+      const raw = field ? field.value.trim() : '';
+      const value = output.dataset.field === 'referenceDate' ? displayDate(raw) : raw;
+      output.textContent = value || output.dataset.empty || 'A confirmar';
+      output.classList.toggle('placeholder', !value);
+    }
+    notice.hidden = !usingExample;
+  }
+  form.addEventListener('submit', event => event.preventDefault());
+  form.addEventListener('input', () => { render(); status.textContent = 'Prévia atualizada. Revise as informações antes de compartilhar.'; });
+  form.addEventListener('change', render);
+  document.getElementById('print-report').addEventListener('click', () => { render(); window.print(); });
+  document.getElementById('clear-report').addEventListener('click', () => {
+    if ([...form.elements].some(field => 'value' in field && field.value) && !window.confirm('Apagar todo o preenchimento deste relatório?')) return;
+    form.reset(); usingExample = false; render(); status.textContent = 'Relatório limpo. Nenhum dado foi enviado ou armazenado.'; document.getElementById('partner').focus();
+  });
+  document.getElementById('load-example').addEventListener('click', () => {
+    if ([...form.elements].some(field => 'value' in field && field.value) && !window.confirm('Substituir o preenchimento pelo exemplo fictício?')) return;
+    const example = {
+      partner:'Imobiliária Exemplo — demonstração',responsible:'Equipe Exemplo — dados fictícios',referenceDate:'2026-11-12',reference:'DEMO-001',
+      objective:'Exemplo fictício: organizar a ficha antes de preparar um anúncio de locação mensal.',propertyType:'Apartamento (fictício)',location:'Bairro e cidade fictícios — sem endereço real',area:'70 m² de área privativa (exemplo)',rooms:'2 quartos, sendo 1 suíte (exemplo)',parking:'1 vaga coberta (exemplo)',purpose:'Locação mensal',price:'Não definido neste exemplo',
+      confirmed:'Exemplo de registro: características informadas na ficha de demonstração. Despesas e disponibilidade ainda precisam ser confirmadas.',sources:'Fonte demonstrativa: ficha fictícia criada apenas para mostrar o preenchimento. Data do exemplo: 12/11/2026. Nenhuma consulta a documentos ou imóvel real foi realizada.',
+      pending:'Confirmar valor mensal e despesas.\nConfirmar disponibilidade e autorização de divulgação.\nReceber fotos atuais e verificar quais podem ser publicadas.',nextSteps:'Responsável da imobiliária: solicitar as confirmações ao proprietário.\nEquipe editorial: preparar o anúncio somente após a conferência.\nPrazo: combinar após receber as informações.',contact:'Contato do parceiro a preencher — não há destinatário real neste exemplo.'
+    };
+    for (const [key,value] of Object.entries(example)) form.elements.namedItem(key).value = value;
+    usingExample = true; render(); status.textContent = 'Exemplo fictício carregado. Use “Limpar tudo” para iniciar um relatório real.';
+  });
+  window.addEventListener('beforeprint', render);
+  render();
+})();
+</script>
+</body>
+</html>

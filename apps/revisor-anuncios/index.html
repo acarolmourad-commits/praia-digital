@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Revise anúncios imobiliários gratuitamente: compare área, quartos, vagas, preço e modalidade com uma ficha conferida e gere um relatório de diferenças.">
+  <title>Revisor de anúncios imobiliários gratuito | Praia Digital</title>
+  <link rel="canonical" href="https://praia.digital/apps/revisor-anuncios/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Revisor de anúncios imobiliários gratuito | Praia Digital">
+  <meta property="og:description" content="Compare uma ficha conferida com duas versões de anúncio. Preserve dúvidas e confira diferenças antes de publicar.">
+  <meta property="og:url" content="https://praia.digital/apps/revisor-anuncios/">
+  <link rel="stylesheet" href="styles.css">
+  <script src="core.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Ir para o conteúdo</a>
+  <header class="site-header"><a class="brand" href="https://praia.digital/">PRAIA<span> DIGITAL</span></a><nav aria-label="Ferramentas e serviços"><a href="https://praia.digital/apps/">Apps gratuitos</a><a href="https://praia.digital/apps/oficina-ia-imobiliaria/">Oficina de IA</a><a href="https://praia.digital/servicos/ia-para-imobiliarias.html">Serviços</a></nav></header>
+  <main id="main-content" tabindex="-1">
+    <section class="intro" aria-labelledby="title">
+      <p class="eyebrow">Ferramenta gratuita · comparação no navegador</p>
+      <h1 id="title">Revisor de anúncios imobiliários</h1>
+      <p class="lede">Compare uma ficha conferida com duas versões de anúncio. Identifique diferenças e dados ausentes antes de publicar.</p>
+      <div class="notice"><strong>Você informa os dados; a ferramenta compara.</strong> As regras funcionam neste navegador, sem API, envio de dados ou leitura automática de portais. Nenhuma informação é salva entre sessões.</div>
+      <noscript><p class="notice">Ative o JavaScript do navegador para preencher e comparar os campos. Você também pode consultar o <a href="https://praia.digital/blog/briefing-imobiliario-para-ia.html">guia de briefing imobiliário</a> para organizar a ficha manualmente.</p></noscript>
+    </section>
+    <section class="workspace" aria-labelledby="input-heading">
+      <div class="section-head"><div><p class="eyebrow">1 · Prepare a comparação</p><h2 id="input-heading">Ficha e versões do anúncio</h2></div><button id="example" type="button" class="button secondary">Carregar exemplo fictício</button></div>
+      <p id="format-help" class="helper">Deixe em branco o que não sabe. Use o formato brasileiro: <strong>70,53</strong> para área e <strong>600.000,00</strong> para preço. Compare a mesma medida de área em todas as fichas: por exemplo, área útil.</p>
+      <p id="demo-status" class="demo" hidden>Exemplo fictício para demonstração. Não corresponde a um imóvel anunciado ou disponível.</p>
+      <form id="review-form" novalidate>
+        <label class="property-label" for="property">Identificação do imóvel <span>(opcional; evite dados pessoais)</span></label>
+        <input id="property" name="property" type="text" maxlength="120" placeholder="Ex.: código interno do imóvel" autocomplete="off">
+        <div id="record-fields" class="record-grid"></div>
+        <label class="confirmation"><input id="confirmed" type="checkbox"><span>Conferi a ficha de referência com a fonte responsável. No exemplo fictício, considero os dados de demonstração apenas para testar a ferramenta.</span></label>
+        <div id="errors" class="errors" role="alert" hidden></div>
+        <div class="actions"><button class="button primary" type="submit">Comparar as versões</button><button class="button secondary" id="clear" type="button">Limpar tudo</button></div>
+      </form>
+      <p id="live-status" role="status" aria-live="polite" class="helper"></p>
+    </section>
+    <section id="report" class="report" aria-labelledby="report-title" hidden>
+      <div class="section-head"><div><p class="eyebrow">2 · Confira cada diferença</p><h2 id="report-title" tabindex="-1">Relatório de consistência</h2><p id="report-meta" class="helper"></p></div><div class="actions no-print"><button id="copy" type="button" class="button secondary">Copiar relatório</button><button id="print" type="button" class="button primary">Imprimir / salvar PDF</button></div></div>
+      <p id="report-demo" class="demo" hidden>DEMONSTRAÇÃO COM DADOS FICTÍCIOS — sem vínculo com um imóvel real.</p>
+      <div class="metrics"><div><span id="different-count">0</span><p>diferenças encontradas</p></div><div><span id="pending-count">0</span><p>itens sem conclusão</p></div><div><span id="matching-count">0</span><p>campos coincidentes</p></div></div>
+      <p class="helper">As contagens representam campos por versão: cinco campos em cada uma das duas versões. Um campo coincidente não comprova que a informação esteja correta no mundo real.</p>
+      <div id="report-tables"></div>
+      <div class="report-note"><h3>Próximo passo</h3><p>Confira cada diferença com a pessoa responsável pela ficha, corrija a versão que estiver desatualizada e faça uma nova comparação. Não altere disponibilidade, características ou preço por suposição.</p></div>
+      <details class="no-print"><summary>Ver texto do relatório</summary><textarea id="report-text" readonly rows="12" aria-label="Texto do relatório para copiar"></textarea></details>
+      <p id="copy-status" role="status" aria-live="polite" class="helper no-print"></p>
+      <p class="print-footer">Praia Digital · https://praia.digital/ · Comparação dos dados inseridos pelo usuário. Não é avaliação, vistoria ou validação jurídica.</p>
+    </section>
+    <section class="limits" aria-labelledby="limits-title"><h2 id="limits-title">O que este revisor consegue verificar</h2><div class="limits-grid"><div><h3>Compara valores informados</h3><p>Modalidade, área, quartos, vagas e preço pedido. Para temporada, o preço é por diária; para locação mensal, por mês. Preços de modalidades diferentes ficam sem comparação direta.</p></div><div><h3>Depende de uma boa referência</h3><p>Não lê anúncios, imagens ou documentos. Não confirma área útil versus total, taxas, mobília, disponibilidade, regras do condomínio, propriedade ou validade jurídica. Confira essas informações separadamente.</p></div><div><h3>Preserva as dúvidas</h3><p>Campo vazio significa “não informado”. Zero é aceito para quartos e vagas, quando esse dado foi realmente confirmado. Coincidência não é certificação e diferença não determina qual versão está correta.</p></div></div></section>
+    <aside class="cta" aria-labelledby="next-title"><div><h2 id="next-title">Transforme a conferência em um próximo passo</h2><p>Prepare a ficha com a <a href="https://praia.digital/apps/oficina-ia-imobiliaria/">Oficina de IA gratuita</a> ou organize um <a href="https://praia.digital/apps/relatorio-imovel/">relatório do imóvel para compartilhar</a>.</p></div><a class="button primary" href="https://praia.digital/servicos/ia-para-imobiliarias.html">Conhecer os serviços</a></aside>
+  </main>
+  <footer><a href="https://praia.digital/">Praia Digital</a> · Dados digitados processados apenas neste navegador. <a href="https://praia.digital/apps/">Explorar apps gratuitos</a></footer>
+</body>
+</html>
