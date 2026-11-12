@@ -480,6 +480,19 @@ footer {
   outline: 3px solid rgba(0,119,182,.2);
   border-color: var(--ocean);
 }
+.imoveis-toolbar button {
+  min-height: 48px;
+  padding: .75rem 1rem;
+  border: 1px solid #0e7c7b;
+  border-radius: 10px;
+  background: #fff;
+  color: #0a5f5e;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.imoveis-toolbar button:hover { background: #e7f4f2; }
+.imoveis-toolbar button:focus-visible { outline: 3px solid #0e7c7b; outline-offset: 3px; }
 .imoveis-helper { margin: 0 0 1rem; color: #64748b; font-size: .92rem; }
 .imoveis-grid {
   display: grid;

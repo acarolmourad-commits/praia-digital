@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'index.html'
+      - 'captura-leads.html'
       - 'imoveis.html'
       - 'encontrar-imovel.html'
       - 'interesse.html'
