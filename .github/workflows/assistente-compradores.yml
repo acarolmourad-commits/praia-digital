@@ -1,0 +1,29 @@
+name: Buyer assistant checks
+on:
+  pull_request:
+    paths: ['ferramentas/assistente-virtual.html', 'js/assistente-compradores.js', 'tests/assistente-compradores*', '.github/workflows/assistente-compradores.yml']
+  push:
+    branches: [main]
+    paths: ['ferramentas/assistente-virtual.html', 'js/assistente-compradores.js', 'tests/assistente-compradores*', '.github/workflows/assistente-compradores.yml']
+permissions:
+  contents: read
+jobs:
+  assistant:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test tests/assistente-compradores.test.cjs
+      - name: Browser checks
+        run: |
+          npm install --prefix "$RUNNER_TEMP/assistant-browser" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/assistant-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          NODE_PATH="$RUNNER_TEMP/assistant-browser/node_modules" node tests/assistente-compradores-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: buyer-assistant-previews
+          path: ${{ runner.temp }}/assistente-*.png

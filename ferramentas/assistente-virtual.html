@@ -1,201 +1,64 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Assistente Virtual para Compradores | Praia Digital</title>
-<meta name="description" content="Assistente virtual com IA para compradores de imóveis no litoral paulista: encontre imóveis por orçamento, cidade e perfil, tire dúvidas de financiamento e fale com especialistas.">
-<meta name="keywords" content="assistente virtual imobiliário, comprar imóvel litoral, Santos, Guarujá, Praia Grande, Bertioga, financiamento 2026, FGTS, temporada, documentação imóvel">
-<link rel="canonical" href="https://praia.digital/ferramentas/assistente-virtual.html">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "Como solicitar mais informações?", "acceptedAnswer": {"@type": "Answer", "text": "Pelo WhatsApp ou formulário na página, com atendimento em até 24 horas."}},
-    {"@type": "Question", "name": "Quais cidades são atendidas?", "acceptedAnswer": {"@type": "Answer", "text": "Todo o litoral de SP: Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente e Peruíbe."}},
-    {"@type": "Question", "name": "O assistente substitui um corretor?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Ele organiza opções e tira dúvidas iniciais; quem fecha o atendimento é um especialista humano."}}
-  ]
-}
-</script>
-<style>
-body{font-family:Segoe UI,Arial,sans-serif;background:#fff;color:#1f2937;margin:0;padding:0}
-.container{max-width:960px;margin:0 auto;padding:2rem}
-.card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:1.4rem;margin-bottom:1rem;box-shadow:0 4px 14px rgba(0,0,0,.06)}
-h1{font-size:1.6rem;margin-bottom:.4rem}
-h2{font-size:1.15rem;color:#0e7c7b;margin-top:0}
-label{display:block;color:#334155;font-weight:600;margin:.6rem 0 .2rem}
-textarea{width:100%;padding:12px;border-radius:10px;border:1px solid #cbd5e1;background:#f8fafc;color:#1f2937;box-sizing:border-box;font-family:inherit;font-size:1rem}
-.btn{display:inline-block;background:#0e7c7b;color:#fff;padding:12px 18px;border-radius:10px;border:0;cursor:pointer;font-weight:700;font-size:1rem;text-decoration:none}
-.btn:hover{background:#0b6867}
-.pill{display:inline-block;background:#e0f5f5;color:#0e7c7b;border-radius:999px;padding:4px 12px;font-size:.85rem;font-weight:700;margin:0 6px 6px 0}
-.chips{margin:.6rem 0}
-.chip{background:#e0f5f5;color:#0e7c7b;border:0;border-radius:999px;padding:8px 14px;margin:0 6px 6px 0;cursor:pointer;font-weight:700;font-size:.85rem}
-.chip:hover{background:#0e7c7b;color:#fff}
-.chat{margin-top:1rem;display:grid;gap:10px}
-.msg{padding:12px 14px;border-radius:12px;font-size:.95rem;line-height:1.5}
-.msg.user{background:#e0f5f5;color:#0f172a;justify-self:end;max-width:85%}
-.msg.bot{background:#f0fdfa;border:1px solid #99d9d8;color:#1f2937;max-width:92%}
-.msg.bot a{color:#0e7c7b;font-weight:700}
-.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:1rem}
-.feature{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:1rem}
-.feature h3{margin:0 0 .3rem;font-size:1rem;color:#0e7c7b}
-.feature p{margin:0;font-size:.9rem;color:#475569}
-details{border:1px solid #e2e8f0;border-radius:10px;margin-bottom:8px;padding:10px 14px;background:#fff}
-summary{cursor:pointer;font-weight:700;color:#0f172a}
-details[open] summary{color:#0e7c7b}
-table{width:100%;border-collapse:collapse;font-size:.95rem}
-th,td{border:1px solid #e2e8f0;padding:8px 10px;text-align:left}
-th{background:#f1f5f9;color:#334155}
-a{color:#0e7c7b;text-decoration:none}
-a:hover{text-decoration:underline}
-.note{font-size:.85rem;color:#64748b;margin-top:.8rem}
-.toc{font-size:.95rem;margin:.4rem 0 0}
-.toc a{margin-right:14px;display:inline-block;padding:3px 0}
-</style>
-<meta property="og:type" content="website">
-<meta property="og:title" content="Assistente Virtual para Compradores | Praia Digital">
-<meta property="og:description" content="Descreva o imóvel dos seus sonhos no litoral paulista e receba sugestões curadas, sem cadastro.">
-<meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
-<meta property="og:site_name" content="Praia Digital">
-<meta property="og:url" content="https://praia.digital/ferramentas/assistente-virtual.html">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="robots" content="index, follow">
-<meta property="og:locale" content="pt_BR">
-<link rel="stylesheet" href="https://praia.digital/css/style.css">
-<meta name="theme-color" content="#0ea5e9">
-<link rel="icon" type="image/x-icon" href="https://praia.digital/favicon.ico">
-<link rel="dns-prefetch" href="https://wa.me">
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){ dataLayer.push(arguments); }
-gtag('js', new Date());
-gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
-</script>
-</head>
-<body>
-<meta name="pd-shared-nav">
-<a class="skip-link" href="#main" style="position:absolute;left:-9999px;">Pular para o conteúdo</a>
-<main id="main">
-<div class="container">
-
-  <div class="card">
-    <span class="pill">Sem cadastro</span><span class="pill">Resposta em segundos</span><span class="pill">Todo o litoral de SP</span>
-    <h1>Assistente Virtual para Compradores</h1>
-    <p>Descreva o que você procura — orçamento, cidade, tipo de imóvel ou dúvida — e receba uma orientação na hora, com links para as ferramentas certas.</p>
-    <p class="toc">Ir para: <a href="#assistente">Assistente</a> <a href="#como-funciona">Como funciona</a> <a href="#valores">Valores de referência</a> <a href="#faq">FAQ</a></p>
-  </div>
-
-  <div class="card" id="assistente">
-    <h2>Converse com o assistente</h2>
-    <label for="msg">Sua pergunta</label>
-    <textarea id="msg" rows="3">Quero um apartamento perto da praia, até R$ 800 mil.</textarea>
-    <div class="chips">
-      <button type="button" class="chip" data-q="Quero um apartamento perto da praia, até R$ 800 mil.">🏖️ Perto da praia até R$ 800 mil</button>
-      <button type="button" class="chip" data-q="Procuro casa em condomínio fechado em Bertioga para temporada.">🏡 Casa em condomínio em Bertioga</button>
-      <button type="button" class="chip" data-q="Quero investir em imóvel para renda de temporada no litoral.">📈 Investir em temporada</button>
-      <button type="button" class="chip" data-q="Como funciona o financiamento em 2026? Consigo usar FGTS?">💰 Financiamento e FGTS</button>
-      <button type="button" class="chip" data-q="Como funciona a documentação para comprar imóvel no litoral?">📄 Documentação</button>
-      <button type="button" class="chip" data-q="Qual cidade tem o melhor custo-benefício?">🌆 Melhor cidade</button>
-    </div>
-    <button class="btn" onclick="responder()">Enviar</button>
-    <div class="chat" id="chat" aria-live="polite"></div>
-    <p class="note">O assistente usa regras e dados de mercado da Praia Digital. Para análise completa, fale com um especialista humano.</p>
-  </div>
-
-  <div id="como-funciona" class="features">
-    <div class="feature"><h3>🎯 Busca por perfil</h3><p>Orçamento, cidade, tipo de imóvel e estilo de vida — o assistente filtra o que realmente combina com você.</p></div>
-    <div class="feature"><h3>📅 Agendamento de visitas</h3><p>Encontrou opções? Agende visita presencial ou virtual direto pelo WhatsApp com nossa equipe.</p></div>
-    <div class="feature"><h3>🤝 Atendimento humanizado</h3><p>A IA organiza as opções; quem fecha com você é gente de verdade, em até 24 horas.</p></div>
-  </div>
-
-  <div class="card" id="valores">
-    <h2>Valores de referência no litoral (2025-2026)</h2>
-    <table>
-      <tr><th>Cidade</th><th>Preço médio m²</th><th>O que você encontra até R$ 800 mil</th></tr>
-      <tr><td>Santos</td><td>R$ 9.000 – 11.000</td><td>Aptos de 2 dorm. em bairros como Gonzaga e Embaré</td></tr>
-      <tr><td>Guarujá</td><td>R$ 6.000 – 8.000</td><td>Aptos na Enseada e Pitangueiras próximos à praia</td></tr>
-      <tr><td>Bertioga</td><td>R$ 5.000 – 7.000</td><td>Casas na Boracéia; aptos na Riviera (planta/médio padrão)</td></tr>
-      <tr><td>Praia Grande</td><td>R$ 4.500 – 6.000</td><td>Aptos novos de 2-3 dorm. a poucos quarteirões do mar</td></tr>
-      <tr><td>São Vicente</td><td>R$ 4.000 – 5.000</td><td>Aptos espaçosos; ótimo para moradia</td></tr>
-      <tr><td>Itanhaém / Mongaguá</td><td>R$ 3.000 – 4.000</td><td>Casas e aptos grandes; entrada acessível</td></tr>
-      <tr><td>Peruíbe</td><td>R$ 2.500 – 3.500</td><td>Menor preço da região; casas próximas à praia</td></tr>
-    </table>
-    <p class="note">Faixas de referência de mercado. O valor exato depende de bairro, andar, vista e estado do imóvel.</p>
-  </div>
-
-  <div class="card" style="text-align:center">
-    <h2 style="margin:0 0 .4rem">Prefere falar com um especialista?</h2>
-    <p style="color:#475569;margin:0 0 .8rem">Conte seu objetivo e receba uma seleção personalizada de imóveis no litoral.</p>
-    <a class="btn" href="https://wa.me/5511954346288?text=Ol%C3%A1!%20Quero%20ajuda%20para%20encontrar%20um%20im%C3%B3vel%20no%20litoral." target="_blank" rel="noopener">💬 Falar no WhatsApp</a>
-  </div>
-
-  <div class="card" id="faq">
-    <h2>Perguntas frequentes</h2>
-    <details><summary>Como solicitar mais informações?</summary><p>Pelo WhatsApp ou formulário na página, com retorno em até 24 horas.</p></details>
-    <details><summary>Quais cidades são atendidas?</summary><p>Todo o litoral de SP: Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente e Peruíbe.</p></details>
-    <details><summary>O assistente substitui um corretor?</summary><p>Não. Ele organiza opções e tira dúvidas iniciais; o atendimento final é feito por especialistas humanos.</p></details>
-    <details><summary>Consigo financiar com a Selic a 15%?</summary><p>Sim, mas planeje bem: taxas SBPE partem de ~11-12% a.a. Use a <a href="https://praia.digital/ferramentas/pre-qualificacao-credito-2026.html">pré-qualificação de crédito</a> para ver sua parcela estimada e o limite de 30% da renda.</p></details>
-    <details><summary>Vale a pena comprar ou é melhor alugar?</summary><p>Depende da relação parcela x aluguel e do seu horizonte. Teste no <a href="https://praia.digital/ferramentas/vale-a-pena-comprar-2026.html">simulador vale a pena comprar</a>.</p></details>
-  </div>
-
-  <p><a href="https://praia.digital/ferramentas/">← Todas as ferramentas</a> · <a href="https://wa.me/5511954346288" rel="noopener">Falar com especialista →</a></p>
-<meta name="pd-shared-footer">
-<script src="https://praia.digital/js/shared.js?v=2.1"></script>
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Assistente Virtual para Compradores | Praia Digital</title><meta name="description" content="Organize sua compra no litoral: orientação gratuita por temas, simuladores, catálogo de imóveis e explicação dos serviços e do atendimento da Praia Digital."><link rel="canonical" href="https://praia.digital/ferramentas/assistente-virtual.html"><meta property="og:title" content="Seu próximo passo para comprar no litoral | Praia Digital"><meta property="og:description" content="Um guia gratuito para organizar a busca, comparar cenários e entender quando solicitar atendimento."><meta property="og:type" content="website"><meta property="og:url" content="https://praia.digital/ferramentas/assistente-virtual.html"><meta name="theme-color" content="#103f48"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/assets/css/pd-navigation.css?v=3"><script defer src="/js/pd-navigation.js?v=4"></script><style>*{box-sizing:border-box}body{margin:0;background:#f3f7f8;color:#142d38;font:17px/1.65 system-ui,sans-serif}a{color:#086b72}a:hover{text-decoration:underline}button,input,textarea{font:inherit}a:focus-visible,button:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #b45309;outline-offset:4px}.skip{position:absolute;left:-9999px}.skip:focus{left:12px;top:12px;background:white;padding:12px;z-index:1000}.av-wrap{max-width:1120px;margin:auto;padding:32px 20px 64px}.av-hero{background:#103f48;color:white;border-radius:24px;padding:clamp(24px,5vw,56px);margin-bottom:28px}.av-hero h1{font-size:clamp(2rem,4vw,3.2rem);line-height:1.14;max-width:790px;margin:16px 0}.av-hero p{max-width:780px;color:#e0f0f0}.av-hero a{color:white}.av-kicker{text-transform:uppercase;font-size:.78rem;font-weight:800;letter-spacing:.12em}.av-nav,.av-actions,.av-chips{display:flex;gap:12px;flex-wrap:wrap}.av-btn{display:inline-block;border:0;border-radius:10px;background:#086b72;color:white;padding:12px 18px;font-weight:700;cursor:pointer;text-decoration:none}.av-btn.secondary{background:#e6f3f2;color:#164a50}.av-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.av-card{padding:26px;background:white;border:1px solid #d5e3e6;border-radius:18px;min-width:0}.av-card h2,.av-card h3{line-height:1.3;margin-top:0}.av-section{margin-top:36px}.av-section>h2{font-size:1.65rem}.av-note{font-size:.9rem;color:#46626b}.av-tag{font-weight:700;color:#086b72;font-size:.85rem}.av-card ul{padding-left:22px}.av-chips button{background:#edf6f5;color:#164a50;border:1px solid #bdd8d8;padding:10px 14px;border-radius:24px;cursor:pointer}.av-form label{display:block;font-weight:700;margin:18px 0 8px}.av-form textarea{display:block;width:100%;padding:14px;border:1px solid #78959b;border-radius:10px;resize:vertical;margin-bottom:16px}.av-chat{display:grid;gap:16px;margin-top:24px;max-height:640px;overflow:auto;overflow-wrap:anywhere}.av-message{border-left:4px solid #0e7c7b;background:#eef7f6;padding:18px;border-radius:6px}.av-question{font-weight:700}.av-status{min-height:1.5em}.av-faq details{padding:18px 0;border-bottom:1px solid #d5e3e6}.av-faq summary{font-weight:700;cursor:pointer}.av-bottom{margin-top:36px;padding:28px;border-radius:18px;background:#dfefed}.av-footer{border-top:1px solid #c9dbdd;padding:24px 0;margin-top:32px}.av-steps{padding-left:22px}.av-steps li{padding:6px}.av-nav a{padding:6px 0}@media(max-width:800px){.av-grid{grid-template-columns:1fr}.av-wrap{padding:20px 16px 40px}.av-card{padding:20px}.av-actions .av-btn{width:100%;text-align:center}}</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "É inteligência artificial generativa?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Esta versão usa regras por temas para apresentar orientações e links. Não consulta um modelo de IA, não interpreta documentos e não pesquisa imóveis em tempo real."}}, {"@type": "Question", "name": "O uso tem custo?", "acceptedAnswer": {"@type": "Answer", "text": "O orientador e as ferramentas indicadas podem ser consultados gratuitamente. Serviços profissionais são separados: confirme escopo, responsável, prazo e preço com a equipe antes de contratar."}}, {"@type": "Question", "name": "O assistente encontra um imóvel para mim?", "acceptedAnswer": {"@type": "Answer", "text": "Ele indica caminhos para organizar sua busca, mas não filtra automaticamente o catálogo nem garante disponibilidade. Consulte os anúncios e confirme preço, condições e visitas com o responsável pelo imóvel."}}, {"@type": "Question", "name": "Posso financiar ou usar FGTS?", "acceptedAnswer": {"@type": "Answer", "text": "Depende das regras vigentes, da instituição financeira, do imóvel e do seu perfil. A simulação é educativa e não representa análise ou aprovação de crédito. Confirme o Custo Efetivo Total (CET) e a elegibilidade com o banco."}}, {"@type": "Question", "name": "Minha pergunta é enviada à equipe?", "acceptedAnswer": {"@type": "Answer", "text": "Não por este orientador. A pergunta é processada no navegador, sem envio pelo recurso de orientação. Para atendimento, abra o canal de contato e envie sua solicitação conscientemente. Não inclua CPF, documentos, senhas ou dados bancários aqui."}}]}</script><script defer src="/js/assistente-compradores.js"></script></head><body><a class="skip" href="#main">Pular para o conteúdo</a><header class="pd-header pd-site-header" data-pd-navigation="3" role="banner">
+<div class="pd-site-wrap">
+<a aria-label="Praia Digital — Início" class="pd-site-logo" href="/">Praia<span>Digital</span></a>
+<button aria-controls="pd-site-menu" aria-expanded="false" aria-label="Abrir menu de navegação" class="pd-site-toggle" type="button">☰ Menu</button><nav aria-label="Navegação principal" class="pd-site-menu" id="pd-site-menu">
+<div class="pd-site-group">
+<button aria-controls="pd-site-submenu-0" aria-expanded="false" aria-haspopup="true" class="pd-site-label" type="button">Comprar</button>
+<div class="pd-site-submenu" id="pd-site-submenu-0">
+<a href="/imoveis.html">Imóveis</a>
+<a href="/mapa-inteligente.html">Mapa</a>
+<a href="/cidades/index.html">Cidades</a>
+<a href="/bairros/index.html">Bairros</a>
+<a href="/apps/comparador-cidades/">Comparar cidades</a>
 </div>
-</main>
-<script>
-(function () {
-  var WA='https://wa.me/5511954346288';
-  function link(t,u){return '<a href="'+u+'" target="_blank" rel="noopener">'+t+'</a>';}
-  function respostaPara(msg) {
-    var m=(msg||'').toLowerCase();
-    if(/(financ|fgts|cr[eé]dito|parcela|entrada|selic|juros)/.test(m)){
-      return 'Em 2026, com a Selic a 15% a.a., as taxas de financiamento partem de ~11-12% a.a. (SBPE) e 9-10% a.a. (poupança). Os bancos limitam a parcela a 30% da renda e pedem entrada mínima de 20%. FGTS exige 3 anos de regime e nenhum imóvel na cidade. Faça agora a '+link('pré-qualificação de crédito','https://praia.digital/ferramentas/pre-qualificacao-credito-2026.html')+' — o cálculo é ao vivo.';
-    }
-    if(/(document|escritura|itbi|registro|cart[óo]rio|contrato)/.test(m)){
-      return 'A compra envolve: 1) certidões do imóvel e do vendedor, 2) ITBI (2% em Santos, até 3% em outras cidades do litoral), 3) escritura pública e 4) registro no cartório de imóveis. Reserve ~5% do valor do imóvel para essas custas. Nosso time acompanha todo o processo: '+link('fale no WhatsApp',WA)+'.';
-    }
-    if(/(temporada|airbnb|renda|investir|investimento|rentabilidade)/.test(m)){
-      return 'Temporada no litoral rende 8-12% a.a. brutos (ocupação média 40-50%), contra 5-6% do aluguel anual. Riviera de São Lourenço e Praia Grande lideram a demanda. Simule o retorno no '+link('simulador de ROI de temporada','https://praia.digital/apps/simulador-roi-temporada/')+' e veja se '+link('vale a pena comprar','https://praia.digital/ferramentas/vale-a-pena-comprar-2026.html')+'.';
-    }
-    if(/(bertioga|riviera|condom[íi]nio)/.test(m)){
-      return 'Bertioga combina casas na Boracéia (ótimo custo-benefício) e o alto padrão da Riviera de São Lourenço, com diárias fortes na temporada. Preço médio: R$ 5-7 mil/m². Veja o '+link('guia completo de Bertioga','https://praia.digital/cidades/bertioga.html')+' e o imóvel em destaque: '+link('casa em condomínio fechado — R$ 595 mil','https://praia.digital/casa-condominio-fechado-bertioga.html')+'.';
-    }
-    if(/(cidade|melhor|custo|barata|onde)/.test(m)){
-      return 'Custo-benefício: Praia Grande e Itanhaém (m² acessível + alta demanda de temporada). Liquidez: Santos. Porta de entrada mais barata: Peruíbe (R$ 2,5-3,5 mil/m²). Compare todas no '+link('comparador de cidades','https://praia.digital/apps/comparador-cidades/')+'.';
-    }
-    if(/(alugar|aluguel|morar|moradia)/.test(m)){
-      return 'Com a Selic a 15%, compare sempre: aluguel equivale a ~0,45% do valor do imóvel ao mês. Se a parcela for até ~1,3x o aluguel e você fica 5+ anos, comprar tende a valer a pena. Teste no '+link('simulador comprar vs alugar','https://praia.digital/ferramentas/vale-a-pena-comprar-2026.html')+'.';
-    }
-    return 'Entendi! Com esse perfil, sugiro: 1) definir a cidade pelo '+link('guia de cidades','https://praia.digital/cidades/index.html')+', 2) estimar o valor com a '+link('avaliação de preço','https://praia.digital/ferramentas/avaliacao-preco.html')+' e 3) ver o crédito na '+link('pré-qualificação','https://praia.digital/ferramentas/pre-qualificacao-credito-2026.html')+'. Se preferir, '+link('fale com um especialista agora',WA)+'.';
-  }
-  // Prefill only: the visitor reviews and submits the question.
-  var initialQuestion=new URLSearchParams(location.search).get('q');
-  if(initialQuestion) document.getElementById('msg').value=initialQuestion.slice(0,2000);
-  var chat=document.getElementById('chat');
-  window.responder = function () {
-    var el=document.getElementById('msg');
-    var texto=(el.value||'').trim();
-    if(!texto)return;
-    chat.innerHTML+='<div class="msg user">'+texto.replace(/</g,'&lt;')+'</div>';
-    chat.innerHTML+='<div class="msg bot">'+respostaPara(texto)+'</div>';
-    chat.scrollTop=chat.scrollHeight;
-    el.value='';
-  };
-  var chips=document.querySelectorAll('.chip');
-  for(var i=0;i<chips.length;i++){
-    chips[i].addEventListener('click', function () {
-      document.getElementById('msg').value=this.dataset.q;
-      responder();
-    });
-  }
-  document.getElementById('msg').addEventListener('keydown',function(e){
-    if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();responder();}
-  });
-})();
-</script>
-<meta name="pd-shared-footer">
-</body>
-</html>
+</div>
+<div class="pd-site-group">
+<button aria-controls="pd-site-submenu-1" aria-expanded="false" aria-haspopup="true" class="pd-site-label" type="button">Investir</button>
+<div class="pd-site-submenu" id="pd-site-submenu-1">
+<a href="/ferramentas/avaliacao-preco.html">Avaliação de imóvel</a>
+<a href="/apps/simulador-roi-temporada/">ROI e temporada</a>
+<a href="/apps/calculadora-financiamento/">Financiamento</a>
+<a href="/ferramentas/vale-a-pena-comprar-2026.html">Vale a pena comprar?</a>
+<a href="/apps/alugar-ou-comprar/">Comprar × alugar</a>
+</div>
+</div>
+<div class="pd-site-group">
+<button aria-controls="pd-site-submenu-2" aria-expanded="false" aria-haspopup="true" class="pd-site-label" type="button">Meu Imóvel</button>
+<div class="pd-site-submenu" id="pd-site-submenu-2">
+<a href="/meu-imovel.html">Central do proprietário</a>
+<a href="/ferramentas/avaliacao-preco.html">Avaliar meu imóvel</a>
+<a href="/anunciar-temporada.html">Anunciar temporada</a>
+<a href="/proprietarios/guia-do-proprietario.html">Guia do proprietário</a>
+</div>
+</div>
+<div class="pd-site-group">
+<button aria-controls="pd-site-submenu-3" aria-expanded="false" aria-haspopup="true" class="pd-site-label" type="button">Profissionais</button>
+<div class="pd-site-submenu" id="pd-site-submenu-3">
+<a href="/servicos.html">Soluções</a>
+<a href="/automacao-imobiliarias.html">Automação</a>
+<a href="/captacao-imoveis-litoral.html">Captação</a>
+<a href="/education/kits-2026.html">Academy</a>
+<a href="/planos.html">Planos</a>
+</div>
+</div>
+<div class="pd-site-group">
+<button aria-controls="pd-site-submenu-4" aria-expanded="false" aria-haspopup="true" class="pd-site-label" type="button">Inteligência</button>
+<div class="pd-site-submenu" id="pd-site-submenu-4">
+<a href="/blog/index.html">Blog</a>
+<a href="/docs/inteligencia/boletim-diario.html">Boletim de inteligência</a>
+<a href="/blog/indice-preco-m2-litoral-paulista-tabela-tendencias-2026.html">Índice de preço por m²</a>
+<a href="/ferramentas/index.html">Ferramentas</a>
+<a href="/apps/">Apps gratuitos</a>
+<a href="/ferramentas/assistente-virtual.html">Assistente IA</a>
+</div>
+</div>
+</nav>
+<a class="pd-site-search" href="/sitemap.html" aria-label="Buscar conteúdos no site">Buscar</a>
+<a class="pd-site-cta" href="/interesse.html">Falar com especialista</a>
+</div>
+</header><main id="main" class="av-wrap"><section class="av-hero"><span class="av-kicker">Praia Digital · Compra consciente</span><h1>Comprar no litoral começa com boas perguntas.</h1><p>Organize suas prioridades, explore cenários e descubra qual apoio faz sentido para você. O Assistente Virtual para Compradores é um orientador gratuito por temas, não uma busca automática de imóveis nem uma aprovação de crédito.</p><nav class="av-nav" aria-label="Nesta página"><a href="#assistente">Começar orientação</a><a href="#servicos">Entender os serviços</a><a href="#como-funciona">Próximos passos</a><a href="#faq">Dúvidas frequentes</a></nav></section>
+<section class="av-card" id="assistente"><span class="av-tag">Gratuito · Sem cadastro neste orientador</span><h2>Em que etapa você está?</h2><p>Escolha um tema ou escreva uma pergunta. Você receberá uma orientação inicial e atalhos para recursos do site.</p><div class="av-chips"><button type="button" data-q="Quero encontrar um imóvel para morar">Encontrar um imóvel</button><button type="button" data-q="Quero comparar cidades e bairros">Cidades e bairros</button><button type="button" data-q="Tenho dúvidas sobre financiamento e FGTS">Financiamento</button><button type="button" data-q="Quero investir em temporada">Temporada e ROI</button><button type="button" data-q="Quais documentos devo conferir?">Documentação</button><button type="button" data-q="Quais serviços vocês oferecem?">Serviços</button></div><form id="av-form" class="av-form"><label for="msg">Sua pergunta ou objetivo</label><textarea id="msg" maxlength="2000" rows="3" placeholder="Ex.: quero comparar comprar ou alugar em Bertioga" aria-describedby="av-privacy"></textarea><p id="av-privacy" class="av-note">Não envie CPF, comprovantes ou dados bancários. Este orientador não envia a pergunta à equipe. Leia a <a href="/politica-privacidade.html">política de privacidade</a> sobre o restante do site.</p><div class="av-actions"><button class="av-btn" type="submit">Ver orientação</button><button class="av-btn secondary" id="av-clear" type="button">Limpar conversa</button></div></form><p id="av-status" class="av-status av-note" role="status"></p><div class="av-chat" id="chat" role="log" aria-label="Orientações" aria-live="polite" aria-relevant="additions"></div><noscript><p>Ative JavaScript para usar o orientador. Os serviços, links e canais abaixo continuam disponíveis sem ele.</p></noscript></section>
+<section class="av-section" id="servicos"><h2>O que você encontra na Praia Digital</h2><p>Separe os recursos de consulta dos serviços que dependem de atendimento e proposta.</p><div class="av-grid"><article class="av-card"><span class="av-tag">Consulta gratuita</span><h3>Busca e planejamento da compra</h3><p>Explore anúncios, conheça cidades e bairros e organize orçamento, localização e características essenciais.</p><ul><li>Catálogo para consultar as ofertas publicadas.</li><li>Comparação de cidades conforme suas prioridades.</li><li>Estimativas educativas de preço e financiamento.</li></ul><p class="av-note">Não é laudo de avaliação, recomendação individual de investimento ou garantia de crédito.</p><a href="/imoveis.html">Explorar imóveis →</a></article><article class="av-card"><span class="av-tag">Atendimento sob consulta</span><h3>Dúvidas e interesse em um imóvel</h3><p>Envie o link do anúncio, a cidade, seu objetivo e as características que procura. Confirme com o responsável a disponibilidade, as condições e a possibilidade de visita.</p><ul><li>Solicitação de informações sobre o anúncio.</li><li>Esclarecimento do próximo passo de atendimento.</li><li>Confirmação de escopo, prazo e eventual custo.</li></ul><p class="av-note">Enviar interesse não reserva o imóvel e não confirma uma visita.</p><a href="/interesse.html">Registrar interesse →</a></article><article class="av-card"><span class="av-tag">Contratação separada</span><h3>Apoio para anunciar ou operar</h3><p>Se você já tem um imóvel, conheça os serviços de apresentação e operação divulgados no site.</p><ul><li>Propaganda imobiliária para venda ou locação.</li><li>Criação ou revisão de anúncios Airbnb e Booking.</li><li>Mídia profissional e gestão de imóvel sob consulta.</li></ul><p class="av-note">Entregáveis e preços variam por serviço. Fotografia, publicação e gestão contínua não estão automaticamente incluídas em qualquer pacote.</p><a href="/servicos.html">Conferir serviços e condições →</a></article></div></section>
+<section class="av-section" id="como-funciona"><h2>Da primeira dúvida ao próximo passo</h2><ol class="av-steps"><li><strong>Defina o objetivo.</strong> Moradia, segunda residência ou renda de temporada? Liste o que é essencial e o que pode negociar.</li><li><strong>Compare cenários.</strong> Inclua entrada, parcelas, tributos, registro, condomínio, manutenção e uma reserva para imprevistos.</li><li><strong>Confira o imóvel e a documentação.</strong> Visite, verifique conservação, matrícula, débitos e regras de uso com profissionais habilitados.</li><li><strong>Solicite atendimento.</strong> Envie o anúncio desejado pelo canal escolhido. Combine condições e responsabilidades antes de assumir compromissos.</li></ol></section>
+<section class="av-section"><h2>Ferramentas para decidir com mais clareza</h2><div class="av-grid"><article class="av-card"><h3>Financiamento</h3><p>Explore entrada, prazo e taxas. Use condições obtidas no banco e compare o CET, não apenas a parcela.</p><a href="/apps/calculadora-financiamento/">Simular financiamento →</a></article><article class="av-card"><h3>Comprar ou alugar</h3><p>Compare cenários no seu horizonte de tempo, sem uma regra única que sirva para todos.</p><a href="/apps/alugar-ou-comprar/">Comparar cenários →</a></article><article class="av-card"><h3>Renda de temporada</h3><p>Estime receitas e despesas com premissas próprias. Ocupação e rentabilidade não são garantidas.</p><a href="/apps/simulador-roi-temporada/">Simular ROI →</a></article></div></section>
+<section class="av-section av-card av-faq" id="faq"><h2>Antes de continuar</h2><details><summary>É inteligência artificial generativa?</summary><p>Não. Esta versão usa regras por temas para apresentar orientações e links. Não consulta um modelo de IA, não interpreta documentos e não pesquisa imóveis em tempo real.</p></details><details><summary>O uso tem custo?</summary><p>O orientador e as ferramentas indicadas podem ser consultados gratuitamente. Serviços profissionais são separados: confirme escopo, responsável, prazo e preço com a equipe antes de contratar.</p></details><details><summary>O assistente encontra um imóvel para mim?</summary><p>Ele indica caminhos para organizar sua busca, mas não filtra automaticamente o catálogo nem garante disponibilidade. Consulte os anúncios e confirme preço, condições e visitas com o responsável pelo imóvel.</p></details><details><summary>Posso financiar ou usar FGTS?</summary><p>Depende das regras vigentes, da instituição financeira, do imóvel e do seu perfil. A simulação é educativa e não representa análise ou aprovação de crédito. Confirme o Custo Efetivo Total (CET) e a elegibilidade com o banco.</p></details><details><summary>Minha pergunta é enviada à equipe?</summary><p>Não por este orientador. A pergunta é processada no navegador, sem envio pelo recurso de orientação. Para atendimento, abra o canal de contato e envie sua solicitação conscientemente. Não inclua CPF, documentos, senhas ou dados bancários aqui.</p></details></section><section class="av-bottom"><h2>Quer conversar sobre seu próximo passo?</h2><p>Tenha em mãos o link do imóvel e suas prioridades. A equipe poderá esclarecer o atendimento disponível, sem promessa automática de prazo ou resultado.</p><div class="av-actions"><a class="av-btn" href="/interesse.html">Enviar interesse em um imóvel</a><a class="av-btn secondary" href="https://wa.me/5511954346288?text=Ol%C3%A1%21%20Vim%20do%20Assistente%20para%20Compradores%20e%20quero%20informa%C3%A7%C3%B5es%20sobre%20o%20atendimento." target="_blank" rel="noopener noreferrer">Abrir WhatsApp</a></div><p class="av-note">Abrir o WhatsApp não envia a mensagem: revise e confirme o envio no aplicativo.</p></section><footer class="av-footer"><a href="/ferramentas/index.html">Todas as ferramentas</a> · <a href="/servicos.html">Serviços</a> · <a href="/politica-privacidade.html">Privacidade</a><p class="av-note">Conteúdo educativo. Confirme informações comerciais, jurídicas e financeiras com o responsável competente antes de decidir.</p></footer></main></body></html>
