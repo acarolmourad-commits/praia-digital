@@ -33,6 +33,25 @@
   
   const properties = [
 {
+  "id": 19,
+  "title": "Residencial com 4 kitnets e edícula a 50 m da praia",
+  "slug": "residencial-4-kitnets-864m2",
+  "city": "Bertioga",
+  "locationLabel": "Bertioga · Indaiá",
+  "type": "Venda",
+  "price": "R$ 2.000.000",
+  "bedrooms": "",
+  "area": "864 m² de terreno",
+  "image": "https://praia.digital/assets/residencial-4-kitnets-864m2/01.webp",
+  "tags": [
+    "4 kitnets",
+    "4 vagas cobertas",
+    "Edícula com varanda",
+    "50 m da praia"
+  ],
+  "description": "Residencial com 4 kitnets com banheiros independentes, 4 vagas cobertas e edícula ao fundo com varanda coberta. Dois terrenos somando 864 m², a cerca de 50 m da praia. R$ 2.000.000."
+},
+{
   "id": 18,
   "title": "Casa térrea com 3 dormitórios no Rio da Praia",
   "slug": "casa-rio-da-praia-100m2",
