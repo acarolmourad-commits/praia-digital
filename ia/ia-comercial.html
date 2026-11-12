@@ -164,7 +164,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
   <div class="hero">
     <div class="hero-inner">
       <h1>🤝 IA Comercial</h1>
-      <p>Atendimento 24h, qualificação, follow-up automático, recuperação de inativos e indicação de imóvel com integração WhatsApp.</p>
+      <p>Organize os critérios do interessado e prepare um rascunho de follow-up para revisão e envio manual.</p>
       <div class="hero-cta">
         <a class="btn btn-purple" href="#qualificador">Qualificar lead</a>
         <a class="btn btn-amber" href="/ia/">Voltar para central</a>
@@ -214,76 +214,67 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
           <select id="leadPrazo"><option value="imediato">Imediato</option><option value="7d">7 dias</option><option value="30d">30 dias</option><option value="90d">90 dias</option></select>
         </div>
       </div>
-      <button class="action-btn" onclick="runQualifier()">Executar qualificação e follow-up</button>
+      <button class="action-btn" onclick="runQualifier()">Preparar qualificação e follow-up</button>
       <div class="result" id="commercialResult"></div>
     </div>
 
     <div style="margin-top: 1.5rem; display:flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
       <a class="btn btn-primary" href="/ia/">Voltar para central</a>
-      <a class="btn btn-primary" href="//">Home</a>
+      <a class="btn btn-primary" href="/">Home</a>
     </div>
   </div>
 
   <meta name="pd-shared-footer">
 
   <script>
-    const listings = [
-      {id:1,tipo:'apartamento',cidade:'praia-grande',titulo:'Apto 2q/1s — Boqueirão',preco:770000,area:74,dormitorios:2,icon:'🏙️',badge:'Destaque',roi:7.8},
-      {id:2,tipo:'casa',cidade:'bertioga',titulo:'Sobrado 2q/1s + varanda',preco:850000,area:300,dormitorios:2,icon:'🏖️',badge:'Oportunidade',roi:8.4},
-      {id:3,tipo:'pousada',cidade:'peruibe',titulo:'Pousada 8 suítes',preco:2200000,area:520,dormitorios:8,icon:'🌅',badge:'Temporada',roi:9.2},
-      {id:4,tipo:'apartamento',cidade:'santos',titulo:'Apto 3q frente mar',preco:1250000,area:110,dormitorios:3,icon:'🌊',badge:'Premium',roi:6.9},
-      {id:5,tipo:'casa',cidade:'ubatuba',titulo:'Casa 3q piscina',preco:1800000,area:440,dormitorios:3,icon:'🌿',badge:'Natureza',roi:8.8}
-    ];
-
-    function matchListing(city,budget,type){
-      const matches = listings.filter(l => (city?l.cidade===city:true) && (type?l.tipo===type:true));
-      const sorted = matches.filter(l => l.preco <= budget).sort((a,b)=>b.roi - a.roi);
-      return sorted[0]  null;
+    function escapeHTML(value){
+      return String(value).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
     }
-
     function waLink(phone,text){ return `https://wa.me/55${phone.replace(/\D/g,'')}?text=${encodeURIComponent(text)}`; }
-    function fmt(v){ return 'R$ ' + Number(v0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0}); }
+    function fmt(value){ return 'R$ ' + Number(value || 0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0}); }
 
     function runQualifier(){
-      const nome = document.getElementById('leadNome').value.trim()  'Lead';
+      const nome = document.getElementById('leadNome').value.trim() || 'Lead';
       const canal = document.getElementById('leadCanal').value;
       const interesse = document.getElementById('leadInteresse').value;
       const cidade = document.getElementById('leadCidade').value;
-      const orcamento = Number(document.getElementById('leadOrcamento').value0);
+      const orcamento = Number(document.getElementById('leadOrcamento').value || 0);
       const prazo = document.getElementById('leadPrazo').value;
+      const result = document.getElementById('commercialResult');
+      if(!Number.isFinite(orcamento) || orcamento < 0){
+        result.textContent = 'Informe um orçamento válido, maior ou igual a zero.';
+        result.classList.add('visible');
+        return;
+      }
 
       const scoreHints = {imediato:'hot', '7d':'warm', '30d':'warm', '90d':'cold'};
-      const score = scoreHints[prazo]  'warm';
-      const match = matchListing(cidade, orcamento, interesse==='investimento'?'apartamento':interesse==='compra'?'apartamento':interesse==='temporada'?'pousada':'casa');
-      const suggested = match  listings[0];
+      const score = scoreHints[prazo] || 'warm';
+      const cityLabels = {'praia-grande':'Praia Grande','santos':'Santos','guaruja':'Guarujá','sao-vicente':'São Vicente','itanhaem':'Itanhaém','mongagua':'Mongaguá','peruibe':'Peruíbe','ubatuba':'Ubatuba','caraguatatuba':'Caraguatatuba','sao-sebastiao':'São Sebastião','ilhabela':'Ilhabela','bertioga':'Bertioga'};
+      const city = cityLabels[cidade] || cidade;
+      const prazoLabels = {imediato:'imediato', '7d':'7 dias', '30d':'30 dias', '90d':'90 dias'};
+      const prazoTexto = prazoLabels[prazo] || 'a confirmar';
+      const criterios = `${interesse} em ${city}${orcamento ? ', com orçamento de até '+fmt(orcamento) : ', com orçamento a confirmar'}`;
+      const followup = `Olá, ${nome}! Você informou interesse em ${criterios}, com prazo de ${prazoTexto}. Podemos confirmar os detalhes e consultar opções no catálogo? A equipe precisa verificar preço e disponibilidade antes de indicar um imóvel.`;
+      const waHref = waLink('11954346288', followup);
 
-      const followups = {
-        hot: `Olá, ${nome}! Identifiquei uma oportunidade alinhada ao seu perfil: ${suggested.titulo} em ${suggested.cidade} por ${fmt(suggested.preco)}. Quer agendar uma visita?`,
-        warm: `${nome}, esta ${suggested.titulo} pode bater com o seu orçamento. Posso enviar uma apresentação exclusiva?`,
-        cold: `Oi, ${nome}. Depois de analisar o mercado, acredito que ${suggested.titulo} pode ser uma boa opção para ${interesse}.`
-      };
-
-      const waText = followups[score];
-      const waHref = waLink('11954346288', waText);
-
-      const html = `
+      result.innerHTML = `
         <div class="lead">
           <div class="lead-header">
-            <div><strong>${nome}</strong> · ${interesse} · ${cidade} · orçamento ${orcamento?fmt(orcamento):'—'}</div>
-            <div class="score-badge score-${score}">Score: ${score.toUpperCase()}</div>
+            <div><strong>${escapeHTML(nome)}</strong> · ${escapeHTML(interesse)} · ${escapeHTML(city)} · orçamento ${orcamento ? fmt(orcamento) : 'a confirmar'}</div>
+            <div class="score-badge score-${score}">Prioridade sugerida: ${score.toUpperCase()}</div>
           </div>
-          <div class="followup"><strong>Sugestão:</strong> ${suggested.titulo} — ${fmt(suggested.preco)} · ROI estimado ${suggested.roi}% a.a.</div>
-          <div class="followup"><strong>Follow-up sugerido:</strong> ${followups[score]}</div>
+          <div class="followup"><strong>Critérios informados:</strong> ${escapeHTML(criterios)}. Canal: ${escapeHTML(canal)}. Prazo: ${escapeHTML(prazoTexto)}.</div>
+          <div class="followup"><strong>Rascunho de follow-up:</strong> ${escapeHTML(followup)}</div>
+          <p>Revise o rascunho. Nenhum contato foi salvo ou enviado. A prioridade considera apenas o prazo informado.</p>
           <div class="cta-row">
-            <a class="cta-whatsapp" href="${waHref}" target="_blank" rel="noopener">Enviar no WhatsApp</a>
-            <a class="cta-email" href="mailto:comercial@praia.digital?subject=Follow-up%20${encodeURIComponent(nome)}&body=${encodeURIComponent(followups[score])}">Enviar por e-mail</a>
+            <a class="cta-email" href="/imoveis.html">Consultar catálogo de imóveis</a>
+            <a class="cta-whatsapp" href="${waHref}" target="_blank" rel="noopener">Abrir rascunho no WhatsApp</a>
+            <a class="cta-email" href="mailto:comercial@praia.digital?subject=Follow-up%20${encodeURIComponent(nome)}&body=${encodeURIComponent(followup)}">Abrir rascunho por e-mail</a>
           </div>
         </div>
       `;
-
-      document.getElementById('commercialResult').innerHTML = html;
-      document.getElementById('commercialResult').classList.add('visible');
-      document.getElementById('commercialResult').scrollIntoView({behavior:'smooth'});
+      result.classList.add('visible');
+      result.scrollIntoView({behavior:'smooth'});
     }
   </script>
 <script src="https://praia.digital/js/shared.js?v=2.0"></script>

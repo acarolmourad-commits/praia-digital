@@ -119,7 +119,7 @@
 </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEST1234"></script>
   <script>
-    window.dataLayer = window.dataLayer  [];
+    window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-TEST1234', { anonymize_ip: true });
@@ -313,14 +313,19 @@
       document.getElementById('resposta' + num).classList.add('active');
       window.scrollTo({ top: document.getElementById('resposta' + num).offsetTop - 100, behavior: 'smooth' });
     }
-    function copiar(num) {
-      const texto = document.getElementById('resposta' + num).innerText;
-      navigator.clipboard.writeText(texto).then(() => { alert('Resposta copiada! Cole no seu e-mail.'); });
+    async function copiar(num) {
+      const texto = document.getElementById('resposta' + num).querySelector('.response-text').innerText;
+      try {
+        await navigator.clipboard.writeText(texto);
+        alert('Resposta copiada! Revise os dados e cole no seu e-mail.');
+      } catch (_) {
+        alert('Não foi possível copiar automaticamente. Selecione o texto da resposta e copie manualmente.');
+      }
     }
     (function(){
       const params = new URLSearchParams(window.location.search);
-      const lead = params.get('lead')  '—';
-      const city = params.get('city')  '—';
+      const lead = params.get('lead') || '—';
+      const city = params.get('city') || '—';
       document.getElementById('leadNameDisplay').textContent = lead;
       document.getElementById('leadCityDisplay').textContent = city;
     })();

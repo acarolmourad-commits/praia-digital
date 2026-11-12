@@ -149,7 +149,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
   <div class="wrap" id="gerador">
     <div class="video-panel">
-      <h2 class="section-title">Gerador de roteiro</h3>
+      <h2 class="section-title">Gerador de roteiro</h2>
       <div class="video-form">
         <div class="field"><label for="vFormato">Formato</label><select id="vFormato"><option value="reel">Reel/Short</option><option value="tour">Tour virtual</option><option value="apresentacao">Apresentação</option><option value="narrado">Vídeo narrado</option></select></div>
         <div class="field"><label for="vCidade">Cidade</label><select id="vCidade"><option value="praia-grande">Praia Grande</option><option value="santos">Santos</option><option value="guaruja">Guarujá</option><option value="sao-vicente">São Vicente</option><option value="itanhaem">Itanhaém</option><option value="mongagua">Mongaguá</option><option value="peruibe">Peruíbe</option><option value="ubatuba">Ubatuba</option><option value="caraguatatuba">Caraguatatuba</option><option value="sao-sebastiao">São Sebastião</option><option value="ilhabela">Ilhabela</option><option value="bertioga">Bertioga</option></select></div>
@@ -160,7 +160,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
     <div style="margin-top: 1.5rem; display:flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
       <a class="btn btn-primary" href="/ia/">Voltar para central</a>
-      <a class="btn btn-primary" href="//">Home</a>
+      <a class="btn btn-primary" href="/">Home</a>
     </div>
   </div>
 
@@ -171,18 +171,23 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     function runVideo(){
       const formato = document.getElementById('vFormato').value;
       const cidade = document.getElementById('vCidade').value;
-      const city = cityLabels[cidade]cidade;
+      if(!Object.prototype.hasOwnProperty.call(cityLabels,cidade)){
+        document.getElementById('videoResult').classList.remove('visible');
+        alert('Selecione uma cidade válida.');
+        return;
+      }
+      const city = cityLabels[cidade] || cidade;
       const scripts = {
         reel: `0-3s | Hook visual em ${city}\n3-10s | Problema/dor do público\n10-25s | Solução + diferenciais\n25-40s | Prova social/CTA\n40-50s | Fechamento: link na bio`,
         tour: `1) Entrada: recepção/sala\n2) Área social e cozinha\n3) Quartos e suíte\n4) Varanda/vista\n5) Final: CTA para visita`,
         apresentacao: `Abertura: título e cidade\nContexto: dados de mercado\nImóvel: fotos, área, diferenciais\nBenefícios: quem vai ganhar\nCTA: contato`,
         narrado: `Roteiro narrado para ${city}.\n1) Introdução calma\n2) Descrição do imóvel\n3) Vizinhança e serviços\n4) Dados rápidos\n5) Chamada para ação`
       };
-      const text = scripts[formato]  'Escolha um formato.';
+      const text = Object.prototype.hasOwnProperty.call(scripts,formato) ? scripts[formato] : 'Escolha um formato.';
       document.getElementById('videoResult').innerHTML = `<div class="script-box">${text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div><button class="copy-btn" style="margin-top:.5rem" onclick="copyText(this)">Copiar</button>`;
       document.getElementById('videoResult').classList.add('visible');
     }
-    function copyText(btn){ const t=btn.previousElementSibling?.innerText''; navigator.clipboard.writeText(t).then(()=>alert('Copiado!')).catch(()=>alert('Não foi possível copiar automaticamente.')); }
+    async function copyText(btn){ const t=btn.previousElementSibling?.innerText || ''; try { await navigator.clipboard.writeText(t); alert('Copiado!'); } catch { alert('Não foi possível copiar automaticamente. Selecione o texto e copie manualmente.'); } }
   </script>
 <script src="https://praia.digital/js/shared.js?v=2.0"></script>
 </body>

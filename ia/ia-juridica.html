@@ -214,14 +214,14 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
     <div style="margin-top: 1.5rem; display:flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
       <a class="btn btn-primary" href="/ia/">Voltar para central</a>
-      <a class="btn btn-primary" href="//">Home</a>
+      <a class="btn btn-primary" href="/">Home</a>
     </div>
   </div>
 
   <meta name="pd-shared-footer">
 
   <script>
-    const fmt = v => 'R$ ' + Number(v0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0});
+    const fmt = v => 'R$ ' + Number(v || 0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0});
     const cityLabels = {'praia-grande':'Praia Grande','santos':'Santos','guaruja':'Guarujá','sao-vicente':'São Vicente','itanhaem':'Itanhaém','mongagua':'Mongaguá','peruibe':'Peruíbe','ubatuba':'Ubatuba','caraguatatuba':'Caraguatatuba','sao-sebastiao':'São Sebastião','ilhabela':'Ilhabela','bertioga':'Bertioga'};
 
     function refreshCampos(){}
@@ -229,17 +229,17 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     function baseContrato(parte, objeto, valor, cidade){
       return `CONTRATO DE INTERMEDIAÇÃO/CORRETAGEM
 
-Parte contratante: ${parte'________________'};
-Objeto: ${objeto'________________'};
+Parte contratante: ${parte || '________________'};
+Objeto: ${objeto || '________________'};
 Valor: ${valor?fmt(valor):'________________'};
-Local: ${cityLabels[cidade]cidade'________________'}.
+Local: ${cityLabels[cidade] || cidade || '________________'}.
 
 Cláusulas gerais:
 1. Objeto: intermediação para identificação de interessado.
 2. Exclusividade: [definir].
 3. Comissão: percentual sobre valor efetivamente transacionado.
 4. Vigência: [início] a [fim].
-5. Foro: comarca de ${cityLabels[cidade]cidade'________________'}.
+5. Foro: comarca de ${cityLabels[cidade] || cidade || '________________'}.
 
 *Atenção: personalize cláusulas e revise com advogado.*`;
     }
@@ -248,10 +248,10 @@ Cláusulas gerais:
       return `PROPOSTA
 
 De: Praia Digital
-Para: ${parte'________________'}
-Imóvel: ${objeto'________________'}
+Para: ${parte || '________________'}
+Imóvel: ${objeto || '________________'}
 Valor: ${valor?fmt(valor):'________________'}
-Local: ${cityLabels[cidade]cidade'________________'}.
+Local: ${cityLabels[cidade] || cidade || '________________'}.
 
 Condições:
 - Entrada: [definir]
@@ -265,15 +265,15 @@ Condições:
     function baseDistrato(parte, objeto, valor, cidade){
       return `DISTRATO
 
-Partes: ${parte'________________'} e contraparte.
-Imóvel: ${objeto'________________'}
+Partes: ${parte || '________________'} e contraparte.
+Imóvel: ${objeto || '________________'}
 Valor envolvido: ${valor?fmt(valor):'________________'}
-Local: ${cityLabels[cidade]cidade'________________'}.
+Local: ${cityLabels[cidade] || cidade || '________________'}.
 
 Motivo: [descrever]
 Restituições: [valor e prazo]
 Multas: [definir se houver]
-Foro: ${cityLabels[cidade]cidade'________________'}.
+Foro: ${cityLabels[cidade] || cidade || '________________'}.
 
 *Atenção: revise com advogado.*`;
     }
@@ -281,8 +281,8 @@ Foro: ${cityLabels[cidade]cidade'________________'}.
     function baseRecibo(parte, objeto, valor, cidade){
       return `RECIBO
 
-Recebi de ${parte'________________'} o valor de ${valor?fmt(valor):'________________'} referente a ${objeto'________________'}.
-Local e data: ${cityLabels[cidade]cidade'________________'}, ____/____/____.
+Recebi de ${parte || '________________'} o valor de ${valor?fmt(valor):'________________'} referente a ${objeto || '________________'}.
+Local e data: ${cityLabels[cidade] || cidade || '________________'}, ____/____/____.
 
 Assinatura: ___________________________`;
     }
@@ -290,9 +290,9 @@ Assinatura: ___________________________`;
     function baseProcuracao(parte, objeto, valor, cidade){
       return `PROCURAÇÃO
 
-Outorgante: ${parte'________________'}
-Objeto: ${objeto'________________'}
-Local: ${cityLabels[cidade]cidade'________________'}.
+Outorgante: ${parte || '________________'}
+Objeto: ${objeto || '________________'}
+Local: ${cityLabels[cidade] || cidade || '________________'}.
 
 Poderes: venda, compra, permuta, recebimento, assinatura de documentos.
 Validade: [definir]
@@ -304,9 +304,9 @@ Cláusulas de revogação: [definir]
     function baseChecklist(parte, objeto, valor, cidade){
       return `CHECKLIST DOCUMENTAL
 
-Interessado: ${parte'________________'}
-Imóvel: ${objeto'________________'}
-Local: ${cityLabels[cidade]cidade'________________'}
+Interessado: ${parte || '________________'}
+Imóvel: ${objeto || '________________'}
+Local: ${cityLabels[cidade] || cidade || '________________'}
 
 Pessoa física:
 [ ] RG
@@ -329,8 +329,13 @@ Observações: ___________________________`;
       const tipo = document.getElementById('legalTipo').value;
       const parte = document.getElementById('legalParte').value.trim();
       const objeto = document.getElementById('legalObjeto').value.trim();
-      const valor = Number(document.getElementById('legalValor').value0);
+      const valor = Number(document.getElementById('legalValor').value || 0);
       const cidade = document.getElementById('legalCidade').value;
+      if(!Number.isFinite(valor) || valor < 0){
+        document.getElementById('legalResult').textContent = 'Informe um valor válido, maior ou igual a zero.';
+        document.getElementById('legalResult').classList.add('visible');
+        return;
+      }
       const docs = {contrato:baseContrato,proposta:baseProposta,distrato:baseDistrato,recibo:baseRecibo,procuracao:baseProcuracao,checklist:baseChecklist};
       const text = docs[tipo] ? docs[tipo](parte, objeto, valor, cidade) : 'Selecione um tipo de documento.';
       document.getElementById('legalResult').innerHTML = `<div class="doc-block"><strong>${tipo.toUpperCase()}</strong>\n\n${text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div>`;

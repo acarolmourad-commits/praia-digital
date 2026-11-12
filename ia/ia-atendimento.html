@@ -169,7 +169,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
     <div style="margin-top: 1.5rem; display:flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
       <a class="btn btn-primary" href="/ia/">Voltar para central</a>
-      <a class="btn btn-primary" href="//">Home</a>
+      <a class="btn btn-primary" href="/">Home</a>
     </div>
   </div>
 
@@ -180,7 +180,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       'quais cidades atendemos?': 'Atendemos o litoral paulista: Santos, Guarujá, Praia Grande, São Vicente, Itanhaém, Mongaguá, Peruíbe, Bertioga, Ubatuba, Caraguatatuba, São Sebastião e Ilhabela.',
       'horário de funcionamento': 'Nosso atendimento digital funciona 24h por WhatsApp. A equipe humana responde em horário comercial.',
       'como falo com um consultor?': 'Você pode falar diretamente pelo WhatsApp: (11) 95434-6288 ou pelo e-mail comercial@praia.digital.',
-      'ver oportunidades': 'Temos oportunidades em destaque no litoral. Quer que eu filtre por cidade, tipo ou orçamento?'
+      'ver oportunidades': 'Consulte o catálogo em https://praia.digital/imoveis.html e confirme preço e disponibilidade com a equipe.'
     };
     function addMsg(text, sender){
       const win = document.getElementById('chatWindow');
@@ -196,9 +196,8 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     function sendQuick(text){
       addMsg(text,'user');
       const key = text.toLowerCase();
-      const answer = knowledge[key]  'Posso ajudar com cidades atendidas, horários, consultor ou oportunidades. O que prefere?';
+      const answer = knowledge[key] || 'Posso ajudar com cidades atendidas, horários, consultor ou oportunidades. O que prefere?';
       reply(answer);
-      if(key.includes('oportunidades')){ setTimeout(()=>reply('Ex: apartamento no Boqueirão, casa em Bertioga, pousada em Peruíbe.'), 900); }
     }
     function sendChat(){
       const input = document.getElementById('chatInput');
@@ -207,7 +206,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       addMsg(text,'user');
       input.value = '';
       const key = text.toLowerCase();
-      const answer = knowledge[key]  'Entendi. Para atendimento personalizado, fale com um consultor pelo WhatsApp: (11) 95434-6288.';
+      const answer = knowledge[key] || 'Entendi. Para atendimento personalizado, fale com um consultor pelo WhatsApp: (11) 95434-6288.';
       reply(answer);
     }
   </script>

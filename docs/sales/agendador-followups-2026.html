@@ -343,7 +343,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
   <div class="container">
     <div class="header">
       <h1>📅 Agendador de Follow-ups</h1>
-      <p>Gerencie todos os follow-ups dos seus leads automaticamente</p>
+      <p>Demonstração de calendário e indicadores de julho de 2026. Os registros ficam neste navegador; esta página não agenda nem envia mensagens.</p>
     </div>
 
     <div class="stats-grid">
@@ -467,14 +467,14 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     </div>
 
     <div class="action-buttons">
-      <a href="docs/sales/tracker_envios.csv" class="action-btn" download>📥 Baixar Tracker CSV</a>
-      <a href="outreach/followups-leads-reais/" class="action-btn secondary">📂 Ver Todos os Follow-ups</a>
-      <button class="action-btn secondary" onclick="alert('Funcionalidade de envio automático em desenvolvimento. Use os templates prontos por enquanto.')">📤 Enviar Agendados</button>
+      <a href="/docs/sales/tracker-visual-2026.html" class="action-btn">📊 Ver tracker de demonstração</a>
+      <span>Modelos individuais de follow-up não vinculados nesta demonstração.</span>
+      <button class="action-btn secondary" onclick="alert('Funcionalidade de envio automático em desenvolvimento. Use os templates prontos por enquanto.')">ℹ️ Sobre envios agendados</button>
     </div>
 
     <div class="lead-capture-section">
       <h2>🎯 Captura de Novos Leads pelo Site</h2>
-      <p style="margin-top: 0.5rem; color: #aaa;">Adicione este formulário em qualquer página do site para capturar novos leads automaticamente</p>
+      <p style="margin-top: 0.5rem; color: #aaa;">Salve um registro neste navegador. Os dados não são enviados à Praia Digital nem sincronizados com o tracker de demonstração.</p>
       
       <form class="capture-form" onsubmit="capturarLead(event)">
         <div class="form-group">
@@ -501,12 +501,12 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
           <label for="leadInterest">Interesse</label>
           <textarea id="leadInterest" rows="3" placeholder="Ex: Quero automação de atendimento e recomendação de imóveis"></textarea>
         </div>
-        <button type="submit" class="action-btn" style="width: 100%;">🎯 Capturar Lead</button>
+        <button type="submit" class="action-btn" style="width: 100%;">💾 Salvar neste navegador</button>
       </form>
       
       <div id="captureResult" style="margin-top: 1rem; display: none; background: rgba(0,212,255,0.1); border: 1px solid #00d4ff; padding: 1rem; border-radius: 8px;">
-        <p style="color: #00d4ff; font-weight: 600;">✅ Lead capturado com sucesso!</p>
-        <p style="color: #aaa; margin-top: 0.5rem;">O lead foi adicionado ao sistema. Verifique o tracker para acompanhar.</p>
+        <p style="color: #00d4ff; font-weight: 600;">✅ Registro salvo neste navegador!</p>
+        <p style="color: #aaa; margin-top: 0.5rem;">Este registro permanece no armazenamento local deste navegador. Nenhum contato ou envio foi realizado.</p>
       </div>
     </div>
 
@@ -515,7 +515,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       <p style="margin-top: 0.5rem;">
         <a href="https://praia.digital/" target="_blank">Site Principal</a> • 
         <a href="https://praia.digital" target="_blank">Ferramentas Gratuitas</a> • 
-        <a href="docs/sales/tracker_envios.csv" download>Tracker CSV</a>
+        <a href="/docs/sales/tracker-visual-2026.html">Tracker de demonstração</a>
       </p>
     </div>
   </div>
@@ -534,9 +534,15 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       };
       
       // Store in localStorage for demo
-      let leads = JSON.parse(localStorage.getItem('praiaDigitalLeads')  '[]');
-      leads.push(lead);
-      localStorage.setItem('praiaDigitalLeads', JSON.stringify(leads));
+      try {
+        const leads = JSON.parse(localStorage.getItem('praiaDigitalLeads') || '[]');
+        if (!Array.isArray(leads)) throw new Error('Formato de registros inválido');
+        leads.push(lead);
+        localStorage.setItem('praiaDigitalLeads', JSON.stringify(leads));
+      } catch (error) {
+        alert('Não foi possível salvar neste navegador. Seus campos foram mantidos; verifique as permissões de armazenamento.');
+        return;
+      }
       
       // Show success
       document.getElementById('captureResult').style.display = 'block';

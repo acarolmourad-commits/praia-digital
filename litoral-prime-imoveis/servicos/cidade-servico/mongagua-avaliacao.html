@@ -182,16 +182,16 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
   <footer aria-label="Rodapé">
   <p>© Praia Digital • <a href="https://wa.me/5511954346288">WhatsApp</a> • <a href="mailto:comercial@praia.digital">comercial@praia.digital</a> • (11) 95434-6288</p>
-  <p><a href="sitemap.xml">Sitemap</a> · <a href="sitemap.html">Mapa do site</a></p>
+  <p><a href="/litoral-prime-imoveis/sitemap.xml">Sitemap</a> · <a href="/litoral-prime-imoveis/sitemap.html">Mapa do site</a></p>
 </footer>
 <script>
 function handlePageLead(e){
   try {
     e.preventDefault();
-    const nome = (e.target.querySelector('input[type="text"]')?.value  '').trim();
-    const telefone = (e.target.querySelector('input[type="tel"]')?.value  '').trim();
-    const tipo = (e.target.querySelector('select')?.value  '').trim();
-    if(!nome  !telefone  !tipo){
+    const nome = (e.target.querySelector('input[type="text"]')?.value || '').trim();
+    const telefone = (e.target.querySelector('input[type="tel"]')?.value || '').trim();
+    const tipo = (e.target.querySelector('select')?.value || '').trim();
+    if(!nome || !telefone || !tipo){
       alert('Preencha nome, telefone e tipo de interesse.');
       return false;
     }

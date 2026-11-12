@@ -219,12 +219,13 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
         </div>
       </div>
       <button class="action-btn" onclick="calcInvestor()">Calcular análise inteligente</button>
+      <p class="notice">Simulação simplificada antes de financiamento, impostos de aquisição, vacância e outros custos. As referências por cidade são ilustrativas, sem validação de mercado atual. Não representa recomendação de investimento.</p>
 
       <div class="result" id="investorResult">
         <div class="verdict" id="verdict"></div>
         <div class="kpis" id="kpis"></div>
         <div class="investor-card">
-          <h3 class="section-title"></h3>
+          <h3 class="section-title">Referências ilustrativas por cidade</h3>
           <div style="overflow-x:auto">
             <table class="ranking">
               <thead><tr><th>Cidade</th><th>Cap Rate</th><th>ROI 12m</th><th>Desvio</th><th>Veredito</th></tr></thead>
@@ -237,14 +238,14 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
     <div style="margin-top: 1.5rem; display:flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
       <a class="btn btn-primary" href="/ia/">Voltar para central</a>
-      <a class="btn btn-primary" href="//">Home</a>
+      <a class="btn btn-primary" href="/">Home</a>
     </div>
   </div>
 
   <meta name="pd-shared-footer">
 
   <script>
-    const fmt = v => 'R$ ' + Number(v0).toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0});
+    const fmt = v => 'R$ ' + Number(v || 0).toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 0});
     const cityBase = {
       'praia-grande':{cap:5.8,roi:9.1,tax:'Conservador'},
       'santos':{cap:5.0,roi:8.4,tax:'Conservador'},
@@ -261,29 +262,38 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
     };
 
     function calcInvestor(){
-      const price = Number(document.getElementById('invPrice').value0);
-      const down = Number(document.getElementById('invDown').value0);
-      const rent = Number(document.getElementById('invRent').value0);
-      const exp = Number(document.getElementById('invExp').value0);
+      const price = Number(document.getElementById('invPrice').value || 0);
+      const down = Number(document.getElementById('invDown').value || 0);
+      const rent = Number(document.getElementById('invRent').value || 0);
+      const exp = Number(document.getElementById('invExp').value || 0);
       const city = document.getElementById('invCity').value;
-      if(!price  !down  !rent){ alert('Informe preço, entrada e aluguel.'); return; }
+      if(![price,down,rent,exp].every(Number.isFinite) || price <= 0 || down <= 0 || down > price || rent < 0 || exp < 0 || !document.getElementById('invRent').value.trim() || !Object.prototype.hasOwnProperty.call(cityBase,city)){
+        document.getElementById('investorResult').classList.remove('visible');
+        alert('Informe preço e entrada positivos, entrada até o valor do imóvel, aluguel e despesas não negativos e cidade válida.');
+        return;
+      }
       const financed = price - down;
       const grossAnnual = rent * 12;
       const netAnnual = grossAnnual - (exp * 12);
       const capRate = (netAnnual / price) * 100;
       const roi = (netAnnual / down) * 100;
-      const paybackYears = down / netAnnual;
+      const paybackYears = netAnnual > 0 ? down / netAnnual : null;
       const gratuity = netAnnual > 0 ? (price / netAnnual) : null;
-      const base = cityBase[city]  {cap:5.5,roi:8.5,tax:'Conservador'};
-      const verdict = roi >= 10 ? 'Oportunidade forte' : roi >= 7 ? 'Oportunidade moderada' : 'Entrada conservadora';
-      const notice = roi >= 10 ? 'Excelente retorno relativo à entrada.' : roi >= 7 ? 'Retorno saudável com risco moderado.' : 'Avalie se o fluxo cobre custos e inadimplência.';
+      if(![price,down,rent,exp,financed,grossAnnual,netAnnual,capRate,roi,paybackYears,gratuity].filter(value => value !== null).every(value => Number.isFinite(value) && Math.abs(value) <= Number.MAX_SAFE_INTEGER)){
+        document.getElementById('investorResult').classList.remove('visible');
+        alert('Os valores ou proporções excedem os limites numéricos da simulação. Revise preço, entrada, aluguel e despesas.');
+        return;
+      }
+      const base = cityBase[city] || {cap:5.5,roi:8.5,tax:'Conservador'};
+      const verdict = netAnnual > 0 ? 'Saldo operacional positivo no cenário informado' : netAnnual < 0 ? 'Saldo operacional negativo no cenário informado' : 'Saldo operacional zero no cenário informado';
+      const notice = 'O saldo não desconta parcelas do financiamento nem todos os custos. Revise as premissas antes de decidir.';
 
       const kpis = `
         <div class="kpi"><div class="kpi-value">${fmt(netAnnual/12)}</div><div class="kpi-label">Fluxo líquido/mês</div></div>
         <div class="kpi"><div class="kpi-value">${fmt(netAnnual)}</div><div class="kpi-label">Fluxo anual</div></div>
-        <div class="kpi"><div class="kpi-value">${roi.toFixed(2)}%</div><div class="kpi-label">ROI estimado</div></div>
+        <div class="kpi"><div class="kpi-value">${roi.toFixed(2)}%</div><div class="kpi-label">Retorno sobre entrada antes do financiamento</div></div>
         <div class="kpi"><div class="kpi-value">${capRate.toFixed(2)}%</div><div class="kpi-label">Cap Rate</div></div>
-        <div class="kpi"><div class="kpi-value">${paybackYears.toFixed(1)} anos</div><div class="kpi-label">Payback</div></div>
+        <div class="kpi"><div class="kpi-value">${paybackYears === null ? '—' : paybackYears.toFixed(1) + ' anos'}</div><div class="kpi-label">Payback simples antes do financiamento</div></div>
         <div class="kpi"><div class="kpi-value">${gratuity ? gratuity.toFixed(1) : '—'}</div><div class="kpi-label">Anos para igualar imóvel</div></div>
       `;
       document.getElementById('kpis').innerHTML = kpis;

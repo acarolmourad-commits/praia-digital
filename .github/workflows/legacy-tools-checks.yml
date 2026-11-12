@@ -1,0 +1,51 @@
+name: Legacy tool and contact regressions
+
+on:
+  pull_request:
+    paths:
+      - '**/*.html'
+      - 'ia/**'
+      - 'marketing/gerador-posts-redes-sociais-2026.html'
+      - 'automacao-imobiliarias.html'
+      - 'litoral-prime-imoveis/servicos/cidade-servico/**'
+      - 'leads/sobrado-geminado-peruibe.html'
+      - 'docs/sales/**'
+      - 'docs/partners/captura-automatica-parceiros-2026.html'
+      - 'outreach/captura-leads/captura-leads-formulario.html'
+      - 'outreach/auto-respostas/modelo-resposta-automatica-lead.html'
+      - 'tests/lead-contact-regression.cjs'
+      - 'tests/test_replacement_tool_flows.cjs'
+      - 'tests/local-tools-regression.cjs'
+      - 'tests/response-send-tools-regression.cjs'
+      - 'tests/legacy-inline-syntax.cjs'
+      - 'tests/legacy-html-pages.json'
+      - 'tests/legacy-ia-regression.cjs'
+      - 'tests/legacy-assets-regression.cjs'
+      - 'tests/services-ia-regression.cjs'
+      - 'tests/chat-central-regression.cjs'
+      - '.github/workflows/legacy-tools-checks.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-flows:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Compile audited HTML scripts and validate JSON data
+        run: node tests/legacy-inline-syntax.cjs
+      - name: Validate local flows without sending messages
+        run: |
+          node tests/lead-contact-regression.cjs
+          node tests/test_replacement_tool_flows.cjs
+          node tests/local-tools-regression.cjs
+          node tests/response-send-tools-regression.cjs
+          node tests/legacy-ia-regression.cjs
+          node tests/legacy-assets-regression.cjs
+          node tests/services-ia-regression.cjs
+          node tests/chat-central-regression.cjs

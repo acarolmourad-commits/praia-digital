@@ -9,7 +9,7 @@ from pathlib import Path
 EXCLUDED = {'.git', '.github', '.audit', '.hermes-tmp-idempotency', 'backup', 'backups',
             'admin', 'api', 'backend', 'dashboard', 'dashboards', 'partials', 'templates',
             'tests', 'node_modules', 'uploads', 'csv-lotes-email'}
-ASSETS = ('<link rel="stylesheet" href="/assets/css/pd-navigation.css?v=3">\n'
+ASSETS = ('<link rel="stylesheet" href="/assets/css/pd-navigation.css?v=4">\n'
           '<script defer src="/js/pd-navigation.js?v=4"></script>\n')
 
 IA_HEADINGS = {
@@ -42,6 +42,11 @@ class Layout(HTMLParser):
         self.body_end = None
         self.head_close = None
         self.redirect = False
+        self.main_target = False
+        self.skip_links = []
+        self.skip_start = None
+        self.first_heading = None
+        self.first_content = None
 
     def pos(self):
         row, col = self.getpos()
@@ -52,6 +57,14 @@ class Layout(HTMLParser):
         start = self.pos()
         end = start + len(self.get_starttag_text())
         classes = set(attrs.get('class', '').split())
+        if attrs.get('id') == 'main' or (tag == 'a' and attrs.get('name') == 'main'):
+            self.main_target = True
+        if tag == 'a' and attrs.get('href') == '#main' and 'skip-link' in classes:
+            self.skip_start = start
+        if tag == 'h1' and self.first_heading is None:
+            self.first_heading = start
+        if tag in {'main', 'article'} and self.first_content is None:
+            self.first_content = start
         if tag == 'body':
             self.body_end = end
         if tag == 'meta':
@@ -77,6 +90,9 @@ class Layout(HTMLParser):
             self.stack.pop()
 
     def handle_endtag(self, tag):
+        if tag == 'a' and self.skip_start is not None:
+            self.skip_links.append((self.skip_start, self.text.find('>', self.pos()) + 1))
+            self.skip_start = None
         if tag == 'head':
             self.head_close = self.pos()
         if self.candidate and tag == self.candidate[1]:
@@ -97,6 +113,36 @@ def preserve_header_intro(fragment):
     return ('<div class="pd-preserved-intro" style="max-width:1120px;margin:0 auto;padding:20px">'
             + ''.join(elements) + '</div>')
 
+def repair_skip_links(text):
+    """Make existing legacy #main skip links usable without changing editorial markup."""
+    parsed = Layout(text)
+    parsed.feed(text)
+    if not parsed.skip_links:
+        return text
+    first_start, first_end = parsed.skip_links[0]
+    skip = text[first_start:first_end]
+    # Preserve the original label/attributes; an owned class overrides offscreen inline styles.
+    skip = re.sub(r'(\bclass\s*=\s*)(["\'])(.*?)(\2)',
+                  lambda m: m.group(1) + m.group(2)
+                  + (m.group(3) if 'pd-skip-link' in m.group(3).split()
+                     else m.group(3) + ' pd-skip-link') + m.group(4),
+                  skip, count=1, flags=re.I | re.S)
+    # Some legacy files contain a duplicate before <body>; retain one before navigation.
+    for start, end in reversed(parsed.skip_links):
+        while end < len(text) and text[end].isspace():
+            end += 1
+        text = text[:start] + text[end:]
+    parsed = Layout(text)
+    parsed.feed(text)
+    if not parsed.main_target:
+        start = parsed.first_heading if parsed.first_heading is not None else parsed.first_content
+        if start is not None:
+            target = '<span id="main" class="pd-skip-target" tabindex="-1"></span>'
+            text = text[:start] + target + text[start:]
+    return re.sub(r'(<body\b[^>]*>)\s*',
+                  lambda m: m.group(1) + '\n' + skip + '\n',
+                  text, count=1, flags=re.I)
+
 def transform(text, header):
     parsed = Layout(text)
     parsed.feed(text)
@@ -110,6 +156,7 @@ def transform(text, header):
     text = re.sub(r'<link\b[^>]*href[^>]*?/assets/css/pd-navigation\.css[^>]*>\s*', '', text, flags=re.I)
     text = re.sub(r'<script\b[^>]*src[^>]*?/js/pd-navigation\.js[^>]*>\s*</script>\s*', '', text, flags=re.I)
     text = re.sub(r'</head\s*>', lambda m: ASSETS + m.group(), text, count=1, flags=re.I)
+    text = repair_skip_links(text)
     # A leading skip link must remain before the navigation it lets keyboard users bypass.
     text = re.sub(
         r'(<body\b[^>]*>)\s*(?P<skip><a\b[^>]*class=["\'][^"\']*\bskip-link\b[^"\']*["\'][^>]*>.*?</a>\s*)?',

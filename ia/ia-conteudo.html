@@ -148,7 +148,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
   <div class="wrap" id="gerador">
     <div class="content-panel">
-      <h2 class="section-title">Gerador de conteúdo</h3>
+      <h2 class="section-title">Gerador de conteúdo</h2>
       <div class="content-grid">
         <div class="content-card" onclick="generate('noticia')">Notícia</div>
         <div class="content-card" onclick="generate('guia')">Guia</div>
@@ -161,7 +161,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
     <div style="margin-top: 1.5rem; display:flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
       <a class="btn btn-primary" href="/ia/">Voltar para central</a>
-      <a class="btn btn-primary" href="//">Home</a>
+      <a class="btn btn-primary" href="/">Home</a>
     </div>
   </div>
 
@@ -170,17 +170,17 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
   <script>
     function generate(type){
       const samples = {
-        noticia: 'Título: Mercado imobiliário do litoral paulista Mantém alta demanda.\nResumo: Dados do período mostram crescimento em vendas e temporada, com destaque para cidades com melhor custo-benefício.',
+        noticia: 'Modelo de notícia para revisão.\nTítulo: [fato confirmado sobre o mercado imobiliário do litoral paulista].\nResumo: informe período, números e fonte verificável antes de publicar.',
         guia: 'Guia: Como comprar imóvel no litoral em 5 passos.\n1) Defina perfil: compra, aluguel ou temporada.\n2) Escolha cidade e bairro.\n3) Verifique documentação eIPTU.\n4) Avalie ROI se for investimento.\n5) Fale com um consultor especializado.',
         bairro: 'Conteúdo local: Bairro Boqueirão, Praia Grande.\nDestaques: proximidade à orla, serviços, mobilidade e oferta de imóveis para compra e temporada.',
-        investidor: 'Conteúdo investidor: Por que investir no litoral de SP.\nPontos: alta temporada, valorização histórica, fluxo de turistas, regulamentação favorável e diversificação de carteira.',
+        investidor: 'Conteúdo investidor: Como avaliar um imóvel no litoral de SP.\nPontos para pesquisar: sazonalidade, histórico de preços com fonte, fluxo de turistas, regras locais e riscos do investimento.',
         seo: 'SEO: inclua cidade + tipo + diferenciais + CTA.\nEx: "Apartamento 2q vista mar em Santos — Praia Digital" com link direto, palavras-chave locais e contato visível.'
       };
-      const text = samples[type]  'Escolha um tipo de conteúdo.';
+      const text = Object.prototype.hasOwnProperty.call(samples,type) ? samples[type] : 'Escolha um tipo de conteúdo.';
       document.getElementById('contentResult').innerHTML = `<div class="block">${text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div><button class="copy-btn" onclick="copyText(this)">Copiar</button>`;
       document.getElementById('contentResult').classList.add('visible');
     }
-    function copyText(btn){ const t=btn.previousElementSibling?.innerText''; navigator.clipboard.writeText(t).then(()=>alert('Copiado!')).catch(()=>alert('Não foi possível copiar automaticamente.')); }
+    async function copyText(btn){ const t=btn.previousElementSibling?.innerText || ''; try { await navigator.clipboard.writeText(t); alert('Copiado!'); } catch { alert('Não foi possível copiar automaticamente. Selecione o texto e copie manualmente.'); } }
   </script>
 <script src="https://praia.digital/js/shared.js?v=2.0"></script>
 </body>

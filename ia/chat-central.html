@@ -149,7 +149,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
   <div class="wrap" id="chat">
     <div class="chat-panel">
-      <h2 class="section-title">Assistente unificado</h3>
+      <h2 class="section-title">Assistente unificado</h2>
       <div class="chat-window" id="chatWindow">
         <div class="chat-msg bot"><div class="bubble">Olá! Sou o assistente da Praia Digital. Escolha um agente ou digite sua pergunta.</div></div>
       </div>
@@ -162,7 +162,7 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
 
     <div style="margin-top: 1.5rem; display:flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
       <a class="btn btn-primary" href="/ia/">Voltar para central</a>
-      <a class="btn btn-primary" href="//">Home</a>
+      <a class="btn btn-primary" href="/">Home</a>
     </div>
   </div>
 
@@ -177,9 +177,9 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       'https://praia-digital.netlify.app',
       ''
     ];
-    const BACKEND_URL = (window.location.hostname === 'acarolmourad-commits.github.io' ? 'https://api.praia.digital' : '')  DEFAULT_BACKEND_URLS[0];
+    const BACKEND_URL = (window.location.hostname === 'acarolmourad-commits.github.io' ? 'https://api.praia.digital' : '') || DEFAULT_BACKEND_URLS[0];
 
-    function detectBackend() {
+    async function detectBackend() {
       try {
         const res = await fetch(BACKEND_URL + '/');
         if (!res.ok) throw new Error('no');
@@ -226,20 +226,19 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       if (!text) return;
 
       const localAgent = guessLocalAgent(text);
+      addMsg(text, 'user');
+      input.value = '';
 
       if (window.location.hostname.includes('github.io')) {
         if (localAgent) {
-          const target = '/' + localAgent;
-          window.open(target, '_blank');
+          const target = '/ia/' + localAgent;
+          window.open(target, '_blank', 'noopener');
           addMsg(`Abrindo agente direto para você: ${target}`, 'bot');
         } else {
           addMsg('Posso ajudar com assuntos de marketing, jurídico, avaliação, captação, temporada e mais. Escreva uma dessas palavras-chave para eu abrir o agente certo.', 'bot');
         }
         return;
       }
-
-      addMsg(text, 'user');
-      input.value = '';
 
       if (window.__pdBackend) {
         try {
@@ -248,8 +247,9 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
             headers: {'Content-Type':'application/json'},
             body: JSON.stringify({ agent: 'comercial', input: text, context: {} })
           });
+          if (!res.ok) throw new Error('Resposta indisponível');
           const data = await res.json();
-          reply(data.output  'Sem resposta.');
+          reply(data && typeof data.output === 'string' && data.output.trim() ? data.output : 'Sem resposta.');
         } catch {
           reply('Backend indisponível. Use os agentes diretos em /ia/.');
         }
@@ -257,11 +257,11 @@ gtag('config', 'GA4_MEASUREMENT_ID', { anonymize_ip: true });
       }
 
       const lower = text.toLowerCase();
-      if (lower.includes('roi')  lower.includes('cap rate')  lower.includes('investir')) {
+      if (lower.includes('roi') || lower.includes('cap rate') || lower.includes('investir')) {
         reply('Para análise de investimento, use o IA para Investidores: /ia/ia-investidores.html');
-      } else if (lower.includes('marketing')  lower.includes('anúncio')) {
+      } else if (lower.includes('marketing') || lower.includes('anúncio')) {
         reply('Para marketing, use o IA para Marketing: /ia/ia-marketing.html');
-      } else if (lower.includes('jurídico')  lower.includes('contrato')) {
+      } else if (lower.includes('jurídico') || lower.includes('contrato')) {
         reply('Para documentos, use o IA Jurídica: /ia/ia-juridica.html');
       } else {
         reply('Posso ajudar com ROI, marketing, jurídico e mais. Abra o agente direto para resultados completos.');

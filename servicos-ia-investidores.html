@@ -188,12 +188,12 @@
 <a id="skip-link" class="skip-link" href="#main">Pular para o conteúdo</a>
   <body>
   <header>
-    <a class="logo" href="//">
+    <a class="logo" href="/">
       <svg class="logo-icon" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="18" fill="#FFFFFF" fill-opacity="0.2"/><path d="M8 22 Q18 12 28 22" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none"/><path d="M6 26 Q18 16 30 26" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/><circle cx="26" cy="10" r="4" fill="#FFD700"/></svg>
       Praia Digital
     </a>
     <nav aria-label="Navegação principal">
-      <a href="//">Home</a>
+      <a href="/">Home</a>
       <a href="https://praia.digital/education/index.html">Academy</a>
       <a href="https://praia.digital/education/formacoes/index.html">Formações</a>
       <a href="https://praia.digital/blog/index.html">Blog</a>
@@ -230,14 +230,15 @@
   <section class="simulator" id="simulador">
     <div class="wrap">
       <h2 class="section-title">Simulação rápida</h2>
+      <p>Os preços e as taxas predefinidos são ilustrativos: precisam ser substituídos ou validados com dados reais. Este cenário não é uma estimativa de mercado e não inclui custos.</p>
       <div class="simulator-card">
         <div class="sim-grid">
           <div class="sim-field"><label>Cidade</label><select id="siCity"><option>São Vicente</option><option>Santos</option><option>Guarujá</option><option>Praia Grande</option><option>Itanhaém</option><option>Mongaguá</option><option>Peruíbe</option><option>Bertioga</option></select></div>
           <div class="sim-field"><label>Tipo</label><select id="siType"><option>Apartamento</option><option>Casa</option><option>Terreno</option></select></div>
-          <div class="sim-field"><label>Valor estimado (R$)</label><input id="siPrice" type="number" placeholder="Ex: 890000"></div>
+          <div class="sim-field"><label>Valor estimado (R$)</label><input id="siPrice" type="number" min="0.01" step="any" placeholder="Ex: 890000"></div>
         </div>
         <button class="sim-btn" onclick="calcInvest()">Simular</button>
-        <div class="sim-result" id="simResult">
+        <div class="sim-result" id="simResult" role="status" aria-live="polite">
           <div class="kpi-grid" id="simKpi"></div>
         </div>
       </div>
@@ -302,9 +303,9 @@
           <option>Starter</option><option>Professional</option><option>Enterprise</option>
         </select>
       </div>
-      <button type="submit" class="btn btn-primary" style="grid-column:1/-1;justify-self:center;min-width:260px;">Quero proposta</button>
+      <button type="submit" class="btn btn-primary" style="grid-column:1/-1;justify-self:center;min-width:260px;">Preparar pedido por e-mail</button>
     </form>
-    <p id="b2bFeedbackPlanInvest" style="text-align:center;margin-top:1rem;font-weight:700;color:var(--success);display:none;"></p>
+    <p id="b2bFeedbackPlanInvest" role="status" aria-live="polite" style="text-align:center;margin-top:1rem;font-weight:700;color:var(--success);display:none;"></p>
   </section>
 
   <footer aria-label="Rodapé">
@@ -314,16 +315,21 @@
 
   <script>
     const cityData = { 'São Vicente':{ price:720000, yield:6.1 }, 'Santos':{ price:1250000, yield:5.0 }, 'Guarujá':{ price:950000, yield:4.6 }, 'Praia Grande':{ price:780000, yield:5.8 }, 'Itanhaém':{ price:880000, yield:6.4 }, 'Mongaguá':{ price:750000, yield:6.9 }, 'Peruíbe':{ price:920000, yield:7.2 }, 'Bertioga':{ price:860000, yield:5.1 } };
-    function fmt(v){ return 'R$ ' + Number(v0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0}); }
+    function fmt(v){ return 'R$ ' + Number(v || 0).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0}); }
     function calcInvest(){
       const city = document.getElementById('siCity').value;
-      const price = parseFloat(document.getElementById('siPrice').value)  (cityData[city]?.price  850000);
-      const yieldEst = cityData[city]?.yield  6.0;
+      const rawPrice = document.getElementById('siPrice').value.trim();
+      const price = rawPrice === '' ? (cityData[city]?.price || 850000) : Number(rawPrice);
+      if (!Number.isFinite(price) || price <= 0 || price > Number.MAX_SAFE_INTEGER) {
+        document.getElementById('simKpi').textContent = 'Informe um valor estimado válido, maior que zero.';
+        document.getElementById('simResult').classList.add('visible');
+        return;
+      }
+      const yieldEst = cityData[city]?.yield || 6.0;
       const rentabilidade = ((price * yieldEst / 100) / price) * 100;
       const monthly = price * (yieldEst/100) / 12;
-      const squareMeter = price / (80  1);
       const html = `<div class="kpi-box"><div class="kpi-value">${fmt(price)}</div><div class="kpi-label">Preço base</div></div>
-      <div class="kpi-box"><div class="kpi-value">${yieldEst.toFixed(1)}% a.a.</div><div class="kpi-label">Yield médio</div></div>
+      <div class="kpi-box"><div class="kpi-value">${yieldEst.toFixed(1)}% a.a.</div><div class="kpi-label">Yield do cenário</div></div>
       <div class="kpi-box"><div class="kpi-value">${monthly.toLocaleString('pt-BR',{maximumFractionDigits:0})}</div><div class="kpi-label">Aluguel estimado/mês</div></div>
       <div class="kpi-box"><div class="kpi-value">${rentabilidade.toFixed(1)}%</div><div class="kpi-label">Rentabilidade estimada</div></div>`;
       const box = document.getElementById('simKpi');
@@ -335,25 +341,22 @@
 (function(){
   const form = document.getElementById('b2bLeadFormPlanInvest');
   if (!form) return;
-  form.addEventListener('submit', async function(e){
+  form.addEventListener('submit', function(e){
     e.preventDefault();
-    const nome = document.getElementById('b2bNomePlanInvest')?.value.trim()  '';
-    const fone = document.getElementById('b2bFonePlanInvest')?.value.trim()  '';
-    const cidade = document.getElementById('b2bCidadePlanInvest')?.value.trim()  '';
-    const perfil = document.getElementById('b2bPerfilPlanInvest')?.value  '';
-    const plano = document.getElementById('b2bPlanoPlanInvest')?.value  '';
+    const nome = document.getElementById('b2bNomePlanInvest')?.value.trim() || '';
+    const fone = document.getElementById('b2bFonePlanInvest')?.value.trim() || '';
+    const cidade = document.getElementById('b2bCidadePlanInvest')?.value.trim() || '';
+    const perfil = document.getElementById('b2bPerfilPlanInvest')?.value || '';
+    const plano = document.getElementById('b2bPlanoPlanInvest')?.value || '';
+    const feedback = document.getElementById('b2bFeedbackPlanInvest');
+    if (!nome || !fone || !cidade || !perfil || !plano) {
+      if (feedback) { feedback.style.display='block'; feedback.style.color='#b91c1c'; feedback.textContent='Preencha nome, telefone, cidade, perfil e plano para preparar sua mensagem.'; }
+      return;
+    }
     const subject = encodeURIComponent('Solicita proposta B2B');
     const body = encodeURIComponent('Nome: ' + nome + '\nTelefone: ' + fone + '\nCidade: ' + cidade + '\nPerfil: ' + perfil + '\nPlano: ' + plano + '\n');
     window.location.href = 'mailto:comercial@praia.digital?subject=' + subject + '&body=' + body;
-    try {
-      const endpoint = '/backend/api/leads/b2b.js';
-      const res = await fetch(endpoint, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({nome:nome,telefone:fone,cidade:cidade,perfil:perfil,plano:plano}) });
-      const feedback = document.getElementById('b2bFeedbackPlanInvest');
-      if (feedback) { feedback.style.display='block'; feedback.textContent='Interesse registrado! Abra seu e-mail para enviar.'; }
-    } catch {
-      const feedback = document.getElementById('b2bFeedbackPlanInvest');
-      if (feedback) { feedback.style.display='block'; feedback.textContent='Interesse registrado! Abra seu e-mail para enviar.'; }
-    }
+    if (feedback) { feedback.style.display='block'; feedback.style.color='var(--success)'; feedback.textContent='Rascunho preparado. Revise e envie no seu aplicativo de e-mail; nenhum pedido foi registrado automaticamente.'; }
   });
 })();
 </script>
