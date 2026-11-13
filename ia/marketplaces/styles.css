@@ -45,3 +45,6 @@
 #lead-success-title:focus{outline:2px solid #638539;outline-offset:5px}
 @media(max-width:800px){.lead-capture{grid-template-columns:1fr;gap:26px}.lead-intro>p{max-width:none}.lead-card{padding:24px}}
 @media(max-width:480px){.lead-fields{grid-template-columns:1fr;gap:18px}.lead-card{padding:20px 16px}.lead-capture{scroll-margin-top:80px}.lead-choices label{font-size:12px}.lead-card .button{font-size:13px}}
+
+/* Estoque Vivo: apresentação e acesso ao piloto */
+.stock-tool{scroll-margin-top:120px}.stock-tool .stock-actions{margin-top:auto;margin-bottom:18px;display:grid;gap:14px}.stock-tool .stock-actions a{color:#17615d;margin:0;font-size:13px;align-items:center;gap:12px}.stock-tool .stock-actions a:focus-visible{outline:3px solid #17615d;outline-offset:4px}.stock-tool .roadmap-note{margin-bottom:0}
