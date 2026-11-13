@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "@cloudflare/vitest-plugin": "^1.8.1",
+    "miniflare": "^5.20261110.2-beta",
+    "vitest": "^4.1.12"
+  },
+  "name": "praia-estoque-vivo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node build.mjs && vitest run",
+    "dev": "node dev.mjs"
+  }
+}
