@@ -8,10 +8,12 @@ Uso:
   python scripts/executar_outbound.py --push     # + git commit/push
 """
 import argparse, csv, os, json, subprocess
+from pathlib import Path
 from collections import defaultdict
 from datetime import date
+import safe_publication
 
-REPO = r"C:/Users/Carolina/praia-digital"
+REPO = str(Path(__file__).resolve().parents[1])
 DIR = os.path.join(REPO, "docs/sales/csv-lotes-email")
 OUT = os.path.join(REPO, "docs/sales", "dashboard-outbound-proprietarios.html")
 METAS = os.path.join(REPO, "docs/sales", "METAS_OUTBOUND.json")
@@ -32,10 +34,31 @@ def bar(pct, cor):
     return (f'<div style="flex:1;background:#0f2942;border-radius:6px;overflow:hidden;height:14px;">'
             f'<div style="width:{p:.1f}%;background:{cor};height:14px;"></div></div>')
 
+def preflight(require_clean=False):
+    """Read-only check before generators or Git writes. Publication needs a dedicated checkout."""
+    env = dict(os.environ, GIT_OPTIONAL_LOCKS="0")
+    def git(*args):
+        return subprocess.run(["git", "-C", REPO, *args], check=True,
+                              capture_output=True, text=True, env=env).stdout.strip()
+    conflicts = git("diff", "--name-only", "--diff-filter=U")
+    if conflicts:
+        raise RuntimeError("Unresolved Git conflicts; no generation started: " + conflicts)
+    for marker in ("MERGE_HEAD", "CHERRY_PICK_HEAD", "REVERT_HEAD", "rebase-merge", "rebase-apply", "index.lock"):
+        path = Path(git("rev-parse", "--git-path", marker))
+        if not path.is_absolute():
+            path = Path(REPO) / path
+        if path.exists():
+            raise RuntimeError("Git operation/lock present; no generation started: " + marker)
+    if require_clean and git("status", "--porcelain", "--untracked-files=normal"):
+        raise RuntimeError("Publication requires a clean dedicated checkout; existing changes preserved")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--push", action="store_true", help="faz git commit/push dos artefatos")
     args = ap.parse_args()
+    preflight(require_clean=args.push)
+    publication_base = safe_publication.begin(REPO) if args.push else None
     # 1) consolidar + dashboards por canal
     run("consolidar_tracker_whatsapp.py"); run("gerar_dashboard_whatsapp.py")
     run("consolidar_tracker_email.py");    run("gerar_dashboard_email.py")
@@ -102,60 +125,10 @@ def main():
                  "docs/sales/relatorio-executivo-outbound.html",
                  "docs/sales/csv-lotes-email/nurture-pendente.csv"]
 
-        # 3a) stage only the outbound artefacts
-        subprocess.run(["git", "-C", REPO, "add"] + alvos, check=True)
-
-        # 3b) fetch remote to check divergence
-        subprocess.run(["git", "-C", REPO, "fetch", "origin", "main"], check=True)
-
-        # 3c) stash ALL remaining changes so rebase won't be blocked
-        stash_before_rebase = False
-        if subprocess.run(["git", "-C", REPO, "status", "--porcelain"],
-                          capture_output=True, text=True).stdout.strip():
-            stash_before_rebase = True
-            subprocess.run(["git", "-C", REPO, "stash"], check=True)
-
-        # 3d) rebase onto remote to incorporate any new commits from others
-        rb = subprocess.run(["git", "-C", REPO, "rebase", "origin/main"],
-                            capture_output=True, text=True)
-        if rb.returncode != 0:
-            conflicted = subprocess.run(
-                ["git", "-C", REPO, "diff", "--name-only", "--diff-filter=U"],
-                capture_output=True, text=True).stdout.strip().splitlines()
-            if conflicted:
-                # Conflito real: preserva tudo e interrompe de forma segura
-                subprocess.run(["git", "-C", REPO, "rebase", "--abort"], capture_output=True)
-                if stash_before_rebase:
-                    subprocess.run(["git", "-C", REPO, "stash", "pop"], capture_output=True)
-                print("CONFLITO DETECTADO durante rebase. Arquivos preservados. Revisar manualmente.")
-                print("Conflitos:", conflicted)
-                return
-            # rebase failed for other reason: abort and stop
-            subprocess.run(["git", "-C", REPO, "rebase", "--abort"], capture_output=True)
-            if stash_before_rebase:
-                subprocess.run(["git", "-C", REPO, "stash", "pop"], capture_output=True)
-            print("ERRO durante rebase. Abortado com segurança.")
-            return
-
-        # 3e) restore stashed changes (dashboards + any other pending files)
-        if stash_before_rebase:
-            subprocess.run(["git", "-C", REPO, "stash", "pop"],
-                           capture_output=True, text=True)
-
-        # 3f) commit se houver mudanças reais nos artefatos
-        r = subprocess.run(["git", "-C", REPO, "status", "--porcelain"] + alvos,
-                           capture_output=True, text=True)
-        if r.stdout.strip():
-            subprocess.run(["git", "-C", REPO, "add"] + alvos, check=True)
-            subprocess.run(["git", "-C", REPO, "commit", "-m",
-                            f"chore: refresh dashboards outbound {date.today():%Y-%m-%d}"],
-                           check=True)
-
-        # 3g) push (now that local is in sync with remote)
-        subprocess.run(["git", "-C", REPO, "push", "origin", "main"], check=True)
-        print("Commit+push dos artefatos atualizados.")
+        commit = safe_publication.publish(REPO, publication_base, alvos)
+        print('Artefatos publicados: ' + commit if commit else 'Sem alteracoes; nenhum push realizado.')
     else:
-        print("Modo dry-run: sem push. Artefatos regenerados localmente.")
+        print("Geracao local concluida, sem push; arquivos locais foram atualizados.")
 
 if __name__ == "__main__":
     main()

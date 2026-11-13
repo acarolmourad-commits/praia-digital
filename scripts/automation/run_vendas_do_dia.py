@@ -81,17 +81,15 @@ NOTIFY_SCRIPT = BASE / 'scripts/automation/notificar_vendas_b2b.py'
 
 def run(path: Path):
     if not path.exists():
-        print(f'[SKIP] {path.name} não encontrado')
-        return
+        raise FileNotFoundError(f'Required script missing: {path}')
     print(f'>>> {path.name}')
     result = subprocess.run(
         [sys.executable, str(path)],
         cwd=str(BASE),
         text=True,
         capture_output=False,
+        check=True,
     )
-    if result.returncode != 0:
-        print(f'[WARN] {path.name} saiu com código {result.returncode}')
 
 
 def main():
