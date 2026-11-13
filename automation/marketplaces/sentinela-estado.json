@@ -5,7 +5,7 @@
       "name": "Airbnb Product Releases (oficial)",
       "url": "https://news.airbnb.com/product-releases/",
       "status": 200,
-      "checked_at": "2026-11-12T21:50:45+00:00",
+      "checked_at": "2026-11-13T10:58:11+00:00",
       "seen": {
         "https://news.airbnb.com/product-releases/airbnb-2026-summer-release": "Airbnb 2026 Summer Release",
         "https://news.airbnb.com/product-releases/airbnb-2025-winter-release": "Airbnb 2025 Winter Release",
@@ -25,7 +25,7 @@
       "name": "Airbnb Newsroom (oficial)",
       "url": "https://news.airbnb.com/",
       "status": 200,
-      "checked_at": "2026-11-12T21:50:45+00:00",
+      "checked_at": "2026-11-13T10:58:11+00:00",
       "seen": {
         "https://news.airbnb.com/gen-z-is-driving-a-45-jump-in-halloween-weekend-searches": "Gen Z is driving a 45% jump in Halloween weekend searches",
         "https://news.airbnb.com/airbnb-org-hurricane-isaias": "Airbnb.org offers emergency housing to people displaced by Hurricane Isaias",
@@ -62,7 +62,7 @@
       "name": "Airbnb Resource Center - Anfitrioes (oficial)",
       "url": "https://www.airbnb.com/resources/hosting-homes",
       "status": 200,
-      "checked_at": "2026-11-12T21:50:45+00:00",
+      "checked_at": "2026-11-13T10:58:11+00:00",
       "seen": {
         "https://www.airbnb.com/resources/hosting-homes/a/important-changes-to-house-rules-21": "Important changes to house rules",
         "https://www.airbnb.com/resources/hosting-homes/a/introducing-the-all-new-community-center-773": "The all-new Community Center",
@@ -98,7 +98,7 @@
       "name": "Booking Partner Hub (oficial)",
       "url": "https://partner.booking.com/en-us",
       "status": 202,
-      "checked_at": "2026-11-12T21:50:45+00:00",
+      "checked_at": "2026-11-13T10:58:11+00:00",
       "seen": {},
       "hash": null,
       "unavailable": true
@@ -107,7 +107,7 @@
       "name": "Booking - pagina oficial para parceiros",
       "url": "https://join.booking.com/",
       "status": 200,
-      "checked_at": "2026-11-12T21:50:45+00:00",
+      "checked_at": "2026-11-13T10:58:11+00:00",
       "hash": "e822bcad622223087f8e74b3b569b4ab86c4b1c785c51ef1eb4eec6dd9f2ecb4",
       "seen": {}
     },
@@ -115,7 +115,7 @@
       "name": "Booking Newsroom (oficial)",
       "url": "https://news.booking.com/",
       "status": 200,
-      "checked_at": "2026-11-12T21:50:45+00:00",
+      "checked_at": "2026-11-13T10:58:11+00:00",
       "seen": {
         "https://news.booking.com/bookingcoms-how-india-travels-2026-explores-the-rise-of-alternative-accommodations": "Booking.com’s ‘How India Travels 2026’ Explores the Rise of Alternative Accommodations",
         "https://news.booking.com/how-will-group-budgets-personalized-wellness--recovery-maxxing-shape-2027-guest-experiences": "How will Group Budgets, Personalized Wellness & ‘Recovery-Maxxing’ shape 2027 Guest Experiences?",
