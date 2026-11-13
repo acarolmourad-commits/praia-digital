@@ -1,0 +1,21 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict'),path=require('node:path');
+const root=path.resolve(__dirname,'..');
+const names=['chat-central','ia-atendimento','ia-portais','ia-marketing','ia-temporada','ia-mercado','ia-imagens','ia-investidores','ia-gestao','ia-videos','ia-avaliacao','ia-juridica','ia-conteudo'];
+function load(name){
+ const html=fs.readFileSync(path.join(root,'ia',name+'.html'),'utf8'),els={},alerts=[];
+ function el(id=''){return els[id]??=( {value:'',textContent:'',innerHTML:'',options:[{text:'Bertioga'}],selectedIndex:0,style:{},classList:{add(){},remove(){}},appendChild(){},append(){},replaceChildren(){},scrollIntoView(){},setAttribute(){}})}
+ for(const m of html.matchAll(/<select[^>]*id="([^"]+)"[^>]*>([\s\S]*?)<\/select>/g)){el(m[1]).value=m[2].match(/value="([^"]+)"/)?.[1]||'';}
+ const copied=[]; const c=vm.createContext({document:{getElementById:el,querySelectorAll:()=>[],createElement:()=>({...el('tmp'+Math.random())})},window:{},alert:t=>alerts.push(t),setTimeout:fn=>fn(),navigator:{clipboard:{writeText:t=>{copied.push(t);return Promise.resolve()}}},console});
+ for(const m of html.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/g))if(!/src=|ld\+json/.test(m[1]))new vm.Script(m[2],{filename:name}).runInContext(c);
+ return{html,els,el,c,alerts,copied,run:s=>vm.runInContext(s,c)};
+}
+for(const name of names){const t=load(name);assert.ok(!t.html.includes('GA4_MEASUREMENT_ID'),name);assert.ok(!t.html.includes('href="//"'),name);}
+let t=load('ia-marketing');for(const channel of ['email','meta','google','instagram']){t.el('mkCanal').value=channel;t.el('mkPublico').value='investidor';t.el('mkCidade').value='bertioga';t.el('mkObjetivo').value='leads';t.run('refreshFormats();runMarketing()');assert.ok(t.el('marketingResult').innerHTML.includes('Copiar'));assert.ok(!t.c.window.__mkCopyText.includes('587'));}
+t=load('ia-portais');t.el('seoPreco').value='900000';t.el('seoBairro').value='<img src=x onerror=alert(1)>';t.run('runSEO()');assert.ok(t.c.window.__seoCopyText.includes('900.000'));assert.ok(!t.el('seoResult').innerHTML.includes('<img'));
+t=load('ia-temporada');for(const mode of ['publicar','pricing','respostas','avaliacoes']){t.el('pPreco').value='100';t.el('pAlta').value='200';t.el('pOcupacao').value='50';t.el('pDespesa').value='250';t.run(`runSeason('${mode}')`);assert.ok(t.c.window.__seasonText);assert.ok(!t.el('seasonResult').innerHTML.includes('undefined'));}t.el('pOcupacao').value='101';t.run("runSeason('pricing')");assert.ok(t.c.window.__seasonText.includes('0 a 100'));
+for(const [name,fn,out] of [['ia-imagens','runImages()','imgResult'],['ia-videos','runVideo()','videoResult'],['ia-juridica','runLegal()','legalResult'],['ia-conteudo',"generate('noticia')",'contentResult'],['ia-gestao','updateDashboard()','dashResult']]){t=load(name);t.run(fn);assert.ok(t.el(out).innerHTML,name);}
+t=load('ia-investidores');t.el('invPrice').value='600000';t.el('invDown').value='200000';t.el('invRent').value='2500';t.el('invExp').value='500';t.run('calcInvestor()');assert.ok(t.el('verdict').textContent.includes('Sem')||t.el('verdict').textContent.includes('Simulação'));t.el('invDown').value='700000';t.run('calcInvestor()');assert.equal(t.alerts.length,1);
+t=load('ia-avaliacao');t.el('valArea').value='100';t.run('runValuation()');assert.ok(t.el('valuationResult').textContent.includes('não é avaliação'));t.el('valArea').value='-1';t.run('runValuation()');assert.equal(t.alerts.length,1);
+t=load('ia-atendimento');t.run("sendQuick('Quais cidades atendemos?')");t.el('chatInput').value='olá';t.run('sendChat()');assert.equal(t.el('chatInput').value,'');
+t=load('chat-central');t.el('chatInput').value='projeto';t.run('sendChat()');assert.equal(t.el('chatInput').value,'');
+const home=fs.readFileSync(path.join(root,'ia/index.html'),'utf8');assert.ok(home.includes('Sob proposta')||home.includes('sob proposta'));assert.ok(!home.includes('Abrir agente'));assert.ok(!home.includes('GA4_MEASUREMENT_ID'));for(const n of names)assert.ok(home.includes(n+'.html'));console.log('13 scripts compile; marketing channels, price/XSS, season tabs/limits, financial limits, local outputs, contact disclosures passed.');
