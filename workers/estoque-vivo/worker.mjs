@@ -13,7 +13,7 @@ async function body(req){if(req.headers.get('Content-Type')?.split(';')[0]!=='ap
 export default {async fetch(req,env){const url=new URL(req.url),path=url.pathname;
  try{
   if(path==='/api/push-config'&&req.method==='GET'){let k;try{k=JSON.parse(env.VAPID_KEYS||'null');}catch{}return json({enabled:!!k,publicKey:k?.publicKey||null});}
-  if(path==='/health')return json({ok:true,service:'estoque-vivo',version:'1.2.0'});
+  if(path==='/health')return json({ok:true,service:'estoque-vivo',version:'1.3.0'});
   if(!path.startsWith('/api/')){if(req.method!=='GET')return json({error:'Método inválido.'},405);const asset=assets[path];if(!asset)return json({error:'Página não encontrada.'},404);return new Response(asset.encoding==='base64'?Uint8Array.from(atob(asset.body),c=>c.charCodeAt(0)):asset.body,{headers:{...headers,'Content-Security-Policy':headers['Content-Security-Policy'].replace("connect-src 'self';",`connect-src 'self' ${url.origin.replace(/^http/,'ws')};`),'Content-Type':asset.type}});}
   if(path==='/api/integration/order'){
    if(req.method!=='POST')return json({error:'Método inválido.'},405);
@@ -44,12 +44,14 @@ export default {async fetch(req,env){const url=new URL(req.url),path=url.pathnam
   if(path==='/api/state'&&req.method==='GET')r=await room.snapshot(hash);
   else if(path==='/api/export'&&req.method==='GET')r=await room.historyPage(hash,Number(url.searchParams.get('before')||1000000000));
   else if(path==='/api/orders'&&req.method==='GET')r=await room.ordersPage(hash,{before:Number(url.searchParams.get('before')||1000000000),status:url.searchParams.get('status')||'',q:url.searchParams.get('q')||''});
+  else if(path==='/api/production'&&req.method==='GET')r=await room.productionPage(hash,{before:Number(url.searchParams.get('before')||1000000000),status:url.searchParams.get('status')||''});
   else if(path==='/api/connections'&&req.method==='GET')r=await room.connectionsList(hash);
   else if(req.method==='POST'){
    const b=await body(req);
    if(path==='/api/logout'){r=await room.logout(hash);extraCookie=cookie('',0);}
    else if(path==='/api/rotate'){if(b.confirm!=='ALTERAR CHAVE'||!/^[A-Za-z0-9_-]{43}$/.test(b.new_key||''))throw new AppError('Confirme a alteração da chave.');const s=token();r=await room.rotate(hash,await digest(b.new_key),await digest(s));if(r.ok){extraCookie=cookie(`${id}.${s}`);}}
    else if(['/api/push-subscribe','/api/push-unsubscribe','/api/push-test'].includes(path)){const action=path.slice('/api/push-'.length),endpoint=b.subscription?.endpoint||b.endpoint||'';r=await room.configurePush(hash,action,b,await digest(endpoint));}
+   else if(path==='/api/production')r=await room.productionWrite(hash,b,await digest(JSON.stringify({path,body:b})));
    else if(path==='/api/order')r=await room.orderWrite(hash,b,await digest(JSON.stringify({path,body:b})));
    else if(path==='/api/connection'){
     if(!b.revoke&&!/^[A-Za-z0-9_-]{43}$/.test(b.connection_key||''))throw new AppError('Chave de integração inválida.');

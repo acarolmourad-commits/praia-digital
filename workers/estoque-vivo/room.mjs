@@ -1,3 +1,4 @@
+import {migrateProduction,productionWrite,productionPage} from './production.mjs';
 import {alertLevel,validSubscription,sendPush} from './push.mjs';
 import {migrateOrders,connectionWrite,orderWrite,integrationWrite,ordersPage,connectionsList} from './orders.mjs';
 import {DurableObject} from 'cloudflare:workers';
@@ -16,6 +17,7 @@ CREATE TABLE IF NOT EXISTS operations(id TEXT PRIMARY KEY,payload_hash TEXT NOT 
   const add=(table,name,sql)=>{if(!this.sql.exec(`PRAGMA table_info(${table})`).toArray().some(c=>c.name===name))this.sql.exec(`ALTER TABLE ${table} ADD COLUMN ${sql}`);};
   this.ctx.storage.transactionSync(()=>{
    migrateOrders(this);
+   migrateProduction(this);
    add('sessions','member_id',"member_id TEXT NOT NULL DEFAULT 'owner'");
    add('operations','member_id',"member_id TEXT NOT NULL DEFAULT 'owner'");
    add('movements','member_id',"member_id TEXT NOT NULL DEFAULT 'owner'");
@@ -110,6 +112,8 @@ CREATE TABLE IF NOT EXISTS schema_version(version INTEGER PRIMARY KEY);`);
    push:{enabled:!!this.env.VAPID_KEYS,subscribed:!!this.row('SELECT endpoint_hash FROM subscriptions WHERE session_hash=?',hash)},server_time:new Date().toISOString()};
  });}
  historyPage(hash,before){return this.safe(()=>{const s=this.session(hash),filter=s.role==='admin'?'':' AND (m.member_id=? OR m.seller_id=?)',args=s.role==='admin'?[]:[s.member_id,s.member_id];const rows=this.sql.exec("SELECT m.rowid AS cursor,m.*,p.sku,p.name,p.variant,COALESCE(v.name,'Gestão da marca') AS seller_name FROM movements m JOIN products p ON p.id=m.product_id LEFT JOIN members v ON v.id=m.seller_id WHERE m.rowid<?"+filter+' ORDER BY m.rowid DESC LIMIT 500',integer(before,1,1000000000),...args).toArray();return {ok:true,movements:rows,next_cursor:rows.length===500?rows.at(-1).cursor:null};});}
+ productionWrite(hash,b,payloadHash){return productionWrite(this,hash,b,payloadHash);}
+ productionPage(hash,query){return productionPage(this,hash,query);}
  orderWrite(hash,b,payloadHash){return orderWrite(this,hash,b,payloadHash);}
  integrationWrite(id,tokenHash,b,payloadHash,contentHash){return integrationWrite(this,id,tokenHash,b,payloadHash,contentHash);}
  connectionWrite(hash,b,payloadHash){return connectionWrite(this,hash,b,payloadHash);}
@@ -123,6 +127,7 @@ CREATE TABLE IF NOT EXISTS schema_version(version INTEGER PRIMARY KEY);`);
    if(action==='product'){
     this.admin(session);
     const p=productInput(b);id=uuid(b.id||b.operation_id);const existing=this.row('SELECT * FROM products WHERE id=?',id);
+    if(existing&&existing.sku!==p.sku&&this.row('SELECT id FROM production WHERE product_id=? LIMIT 1',id))throw new AppError('SKU vinculado à produção. Preserve o código.',409);
     if(existing){if(existing.sku!==p.sku&&this.row('SELECT order_id FROM order_lines WHERE product_id=? LIMIT 1',id))throw new AppError('Este SKU está vinculado a pedidos. Mantenha o código e edite os demais dados.',409);if(existing.archived)throw new AppError('Produto arquivado.',409);if(existing.version!==integer(b.expected_version,1,1000000000))throw new AppError('O produto mudou em outra tela. Reabra a edição.',409);}
     else if(this.row('SELECT COUNT(*) AS n FROM products').n>=2000)throw new AppError('O piloto aceita até 2.000 SKUs por espaço.',409);
     if(this.row('SELECT id FROM products WHERE sku=? AND id<>?',p.sku,id))throw new AppError('Esse SKU já está cadastrado, inclusive entre arquivados.',409);
@@ -138,7 +143,7 @@ CREATE TABLE IF NOT EXISTS schema_version(version INTEGER PRIMARY KEY);`);
     this.admin(session);id=uuid(b.member_id);if(b.revoke){this.sql.exec('UPDATE members SET active=0 WHERE id=?',id);this.sql.exec('UPDATE connections SET active=0 WHERE seller_id=?',id);this.sql.exec('DELETE FROM sessions WHERE member_id=?',id);this.removeSubscriptions('member_id',id);}else{if(this.row('SELECT COUNT(*) AS n FROM members WHERE active=1').n>=100)throw new AppError('Limite de 100 influenciadores por marca.');if(this.row('SELECT id FROM members WHERE id=?',id))throw new AppError('Este acesso já existe.',409);this.sql.exec('INSERT INTO members(id,name,key_hash,active) VALUES(?,?,?,1)',id,text(b.member_name,60),b.member_hash);}
    }else if(action==='archive'){
     this.admin(session);
-    id=uuid(b.id);const p=this.row('SELECT * FROM products WHERE id=?',id);if(!p)throw new AppError('Produto não encontrado.',404);if(p.physical||p.reserved)throw new AppError('Zere o saldo por uma movimentação justificada antes de arquivar.',409);this.sql.exec('UPDATE products SET archived=1,version=version+1,updated_at=? WHERE id=?',now,id);
+    id=uuid(b.id);const p=this.row('SELECT * FROM products WHERE id=?',id);if(!p)throw new AppError('Produto não encontrado.',404);if(this.row("SELECT id FROM production WHERE product_id=? AND status IN ('awaiting_payment','in_production') LIMIT 1",id))throw new AppError('Há encomendas pendentes para este produto.',409);if(p.physical||p.reserved)throw new AppError('Zere o saldo por uma movimentação justificada antes de arquivar.',409);this.sql.exec('UPDATE products SET archived=1,version=version+1,updated_at=? WHERE id=?',now,id);
    }else throw new AppError('Ação inválida.',404);
    this.sql.exec('UPDATE workspace SET revision=revision+1');if(action==='product'||action==='movement')this.evaluateAlert(id,now);const r={ok:true,id,revision:this.row('SELECT revision FROM workspace').revision};this.sql.exec('INSERT INTO operations(id,payload_hash,response,member_id) VALUES(?,?,?,?)',b.operation_id,payloadHash,JSON.stringify(r),session.member_id);return r;
   });return result;

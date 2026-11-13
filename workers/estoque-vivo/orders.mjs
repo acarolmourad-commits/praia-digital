@@ -33,7 +33,7 @@ function linesInput(room,items){
  const seen=new Set();return items.map(item=>{const sku=text(item?.sku,50).toUpperCase(),quantity=integer(item.quantity,1);const p=room.row('SELECT * FROM products WHERE sku=? AND archived=0',sku);if(!p)throw new AppError('SKU não encontrado ou arquivado: '+sku,409);if(seen.has(p.id))throw new AppError('Agrupe as quantidades de um mesmo SKU.');seen.add(p.id);return {product_id:p.id,sku:p.sku,quantity};}).sort((a,b)=>a.product_id.localeCompare(b.product_id));
 }
 function sameLines(old,items){return JSON.stringify(old.map(l=>[l.product_id,l.quantity]).sort())===JSON.stringify(items.map(l=>[l.product_id,l.quantity]).sort());}
-function changeOrder(room,session,b,{source,api=false,keyHash=null}={}){
+export function changeOrder(room,session,b,{source,api=false,keyHash=null,productionId=null}={}){
  const now=new Date().toISOString();let order,items,reference,selectedChannel,selectedSeller;
  if(api){
   reference=text(b.reference,80);selectedChannel=source.channel;selectedSeller=source.seller_id;
@@ -51,6 +51,7 @@ function changeOrder(room,session,b,{source,api=false,keyHash=null}={}){
   if(room.row('SELECT id FROM orders WHERE channel=? AND reference=?',selectedChannel,reference))throw new AppError('Este pedido já está cadastrado neste canal. Confira a lista de pedidos.',409);
   items=linesInput(room,b.items);
  }
+ if(!order){const prod=room.row('SELECT id FROM production WHERE channel=? AND reference=?',selectedChannel,reference);if(prod&&prod.id!==productionId)throw new AppError('Referência já cadastrada em Sob demanda.',409);}
  const status=b.status;if(!['reserved','fulfilled','cancelled'].includes(status))throw new AppError('Escolha reservar, confirmar saída ou cancelar.');
  let oldItems;if(order){
   oldItems=room.sql.exec('SELECT * FROM order_lines WHERE order_id=?',order.id).toArray();
@@ -59,7 +60,7 @@ function changeOrder(room,session,b,{source,api=false,keyHash=null}={}){
   if(!api&&order.version!==integer(b.expected_version,1,1000000000))throw new AppError('O pedido mudou. Atualize a lista antes de confirmar.',409);
   if(order.status!==status&&order.status!=='reserved')throw new AppError('Pedido já encerrado. Devoluções exigem conferência física e movimentação própria.',409);
  }else{
-  seller(room,selectedSeller);if(room.row('SELECT COUNT(*) AS n FROM orders').n>=20000)throw new AppError('Limite de 20.000 pedidos por espaço.',409);
+  seller(room,selectedSeller,!productionId);if(room.row('SELECT COUNT(*) AS n FROM orders').n>=20000)throw new AppError('Limite de 20.000 pedidos por espaço.',409);
   order={id:crypto.randomUUID(),source_id:source?.id||'manual',channel:selectedChannel,reference,seller_id:selectedSeller,status:null};
   room.sql.exec('INSERT INTO orders(id,source_id,channel,reference,seller_id,status,created_at,updated_at) VALUES(?,?,?,?,?,?,?,?)',order.id,order.source_id,order.channel,order.reference,order.seller_id,status,now,now);
   for(const line of items)room.sql.exec('INSERT INTO order_lines VALUES(?,?,?,?)',order.id,line.product_id,line.sku,line.quantity);
