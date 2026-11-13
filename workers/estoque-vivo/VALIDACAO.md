@@ -1,4 +1,19 @@
-# Validação da versão piloto 1.1.0
+# Validação da versão piloto 1.2.0
+
+## Testes da versão 1.2
+
+44 testes aprovados em 3 arquivos no runtime workerd com Durable Objects SQLite. Execução de 13/11/2026, 23:08 UTC, por `npm test`; duração 2,83 segundos. Mantém os 27 casos anteriores e acrescenta 17 casos de pedidos/API.
+
+Cobertura nova: reserva de vários SKUs em uma transação, reversão integral quando falta saldo, separação de reservas avulsas e de pedidos, confirmação sem baixa duplicada, cancelamento, versão obsoleta, concorrência, referência repetida, autenticação da integração, escopo de influenciador, revisões repetidas/fora de ordem, cancelamento recebido antes da reserva, SKU ausente/duplicado, itens alterados, pausa/revogação, isolamento, persistência e preservação do SKU vinculado a pedidos.
+
+A API foi validada com eventos sintéticos. Nenhuma loja real foi autenticada; nenhum pedido real foi importado. O aceite de Web Push continua simulado nos testes e não comprova recebimento em dispositivo físico.
+
+A apresentação nativa tem oito slides; todos foram renderizados e inspecionados visualmente. A página pública equivalente é `/apresentacao.html`. A conferência final da versão publicada será registrada abaixo após a publicação.
+
+---
+
+## Histórico de validação da versão 1.1.0
+
 
 ## Testes automatizados
 

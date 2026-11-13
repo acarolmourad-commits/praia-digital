@@ -1,4 +1,5 @@
 import {alertLevel,validSubscription,sendPush} from './push.mjs';
+import {migrateOrders,connectionWrite,orderWrite,integrationWrite,ordersPage,connectionsList} from './orders.mjs';
 import {DurableObject} from 'cloudflare:workers';
 import {AppError,text,integer,uuid,productInput,movementInput,nextStock} from './domain.mjs';
 export class InventoryRoom extends DurableObject {
@@ -14,6 +15,7 @@ CREATE TABLE IF NOT EXISTS operations(id TEXT PRIMARY KEY,payload_hash TEXT NOT 
  migrate(){
   const add=(table,name,sql)=>{if(!this.sql.exec(`PRAGMA table_info(${table})`).toArray().some(c=>c.name===name))this.sql.exec(`ALTER TABLE ${table} ADD COLUMN ${sql}`);};
   this.ctx.storage.transactionSync(()=>{
+   migrateOrders(this);
    add('sessions','member_id',"member_id TEXT NOT NULL DEFAULT 'owner'");
    add('operations','member_id',"member_id TEXT NOT NULL DEFAULT 'owner'");
    add('movements','member_id',"member_id TEXT NOT NULL DEFAULT 'owner'");
@@ -100,7 +102,7 @@ CREATE TABLE IF NOT EXISTS schema_version(version INTEGER PRIMARY KEY);`);
   const s=this.session(hash),w=this.row('SELECT id,name,revision FROM workspace');
   const filter=s.role==='admin'?'':' WHERE (m.member_id=? OR m.seller_id=?)',args=s.role==='admin'?[]:[s.member_id,s.member_id];
   return {ok:true,workspace:w,actor:s.actor,role:s.role,member_id:s.member_id,expires:s.expires,
-   products:this.sql.exec('SELECT * FROM products ORDER BY archived,name COLLATE NOCASE,sku').toArray(),
+   products:this.sql.exec("SELECT p.*,(SELECT COALESCE(SUM(l.quantity),0) FROM order_lines l JOIN orders o ON o.id=l.order_id WHERE l.product_id=p.id AND o.status='reserved') AS order_reserved FROM products p ORDER BY archived,name COLLATE NOCASE,sku").toArray(),
    movements:this.sql.exec("SELECT m.*,p.sku,p.name,p.variant,COALESCE(v.name,'Gestão da marca') AS seller_name FROM movements m JOIN products p ON p.id=m.product_id LEFT JOIN members v ON v.id=m.seller_id"+filter+' ORDER BY m.rowid DESC LIMIT 100',...args).toArray(),
    members:s.role==='admin'?this.sql.exec('SELECT id,name,active FROM members ORDER BY name').toArray():[],
    allocations:this.sql.exec("SELECT a.*,COALESCE(m.name,'Gestão da marca') AS name FROM allocations a LEFT JOIN members m ON m.id=a.member_id"+(s.role==='admin'?'':' WHERE a.member_id=?'),...(s.role==='admin'?[]:[s.member_id])).toArray(),
@@ -108,6 +110,11 @@ CREATE TABLE IF NOT EXISTS schema_version(version INTEGER PRIMARY KEY);`);
    push:{enabled:!!this.env.VAPID_KEYS,subscribed:!!this.row('SELECT endpoint_hash FROM subscriptions WHERE session_hash=?',hash)},server_time:new Date().toISOString()};
  });}
  historyPage(hash,before){return this.safe(()=>{const s=this.session(hash),filter=s.role==='admin'?'':' AND (m.member_id=? OR m.seller_id=?)',args=s.role==='admin'?[]:[s.member_id,s.member_id];const rows=this.sql.exec("SELECT m.rowid AS cursor,m.*,p.sku,p.name,p.variant,COALESCE(v.name,'Gestão da marca') AS seller_name FROM movements m JOIN products p ON p.id=m.product_id LEFT JOIN members v ON v.id=m.seller_id WHERE m.rowid<?"+filter+' ORDER BY m.rowid DESC LIMIT 500',integer(before,1,1000000000),...args).toArray();return {ok:true,movements:rows,next_cursor:rows.length===500?rows.at(-1).cursor:null};});}
+ orderWrite(hash,b,payloadHash){return orderWrite(this,hash,b,payloadHash);}
+ integrationWrite(id,tokenHash,b,payloadHash,contentHash){return integrationWrite(this,id,tokenHash,b,payloadHash,contentHash);}
+ connectionWrite(hash,b,payloadHash){return connectionWrite(this,hash,b,payloadHash);}
+ ordersPage(hash,query){return ordersPage(this,hash,query);}
+ connectionsList(hash){return connectionsList(this,hash);}
  logout(hash){return this.safe(()=>{this.removeSubscriptions('session_hash',hash);this.sql.exec('DELETE FROM sessions WHERE hash=?',hash);for(const ws of this.ctx.getWebSockets()){if(ws.deserializeAttachment()?.hash===hash)ws.close(1008,'Sessão encerrada');}return {ok:true};});}
  mutate(hash,action,b,payloadHash){const result=this.safe(()=>{const session=this.session(hash);uuid(b.operation_id);const old=this.row('SELECT * FROM operations WHERE id=?',b.operation_id);if(old){if(old.member_id!==session.member_id)throw new AppError('Tentativa pertencente a outro acesso.',403);if(old.payload_hash!==payloadHash)throw new AppError('Essa tentativa mudou. Reabra o formulário e confira os dados.',409);return {...JSON.parse(old.response),replayed:true};}
   const result=this.ctx.storage.transactionSync(()=>{
@@ -116,7 +123,7 @@ CREATE TABLE IF NOT EXISTS schema_version(version INTEGER PRIMARY KEY);`);
    if(action==='product'){
     this.admin(session);
     const p=productInput(b);id=uuid(b.id||b.operation_id);const existing=this.row('SELECT * FROM products WHERE id=?',id);
-    if(existing){if(existing.archived)throw new AppError('Produto arquivado.',409);if(existing.version!==integer(b.expected_version,1,1000000000))throw new AppError('O produto mudou em outra tela. Reabra a edição.',409);}
+    if(existing){if(existing.sku!==p.sku&&this.row('SELECT order_id FROM order_lines WHERE product_id=? LIMIT 1',id))throw new AppError('Este SKU está vinculado a pedidos. Mantenha o código e edite os demais dados.',409);if(existing.archived)throw new AppError('Produto arquivado.',409);if(existing.version!==integer(b.expected_version,1,1000000000))throw new AppError('O produto mudou em outra tela. Reabra a edição.',409);}
     else if(this.row('SELECT COUNT(*) AS n FROM products').n>=2000)throw new AppError('O piloto aceita até 2.000 SKUs por espaço.',409);
     if(this.row('SELECT id FROM products WHERE sku=? AND id<>?',p.sku,id))throw new AppError('Esse SKU já está cadastrado, inclusive entre arquivados.',409);
     if(existing)this.sql.exec('UPDATE products SET sku=?,name=?,variant=?,category=?,minimum=?,alert_at=?,version=version+1,updated_at=? WHERE id=?',p.sku,p.name,p.variant,p.category,p.minimum,p.alert_at,now,id);
@@ -128,7 +135,7 @@ CREATE TABLE IF NOT EXISTS schema_version(version INTEGER PRIMARY KEY);`);
     this.sql.exec('UPDATE products SET physical=?,reserved=?,version=version+1,updated_at=? WHERE id=?',n.physical,n.reserved,now,id);
     this.sql.exec('INSERT INTO movements(id,product_id,type,quantity,delta_physical,delta_reserved,after_physical,after_reserved,channel,reference,note,actor,created_at,member_id,seller_id) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',b.operation_id,id,m.type,m.quantity,n.physical-p.physical,n.reserved-p.reserved,n.physical,n.reserved,m.channel,m.reference,m.note,session.actor,now,session.member_id,seller);
    }else if(action==='member'){
-    this.admin(session);id=uuid(b.member_id);if(b.revoke){this.sql.exec('UPDATE members SET active=0 WHERE id=?',id);this.sql.exec('DELETE FROM sessions WHERE member_id=?',id);this.removeSubscriptions('member_id',id);}else{if(this.row('SELECT COUNT(*) AS n FROM members WHERE active=1').n>=100)throw new AppError('Limite de 100 influenciadores por marca.');if(this.row('SELECT id FROM members WHERE id=?',id))throw new AppError('Este acesso já existe.',409);this.sql.exec('INSERT INTO members(id,name,key_hash,active) VALUES(?,?,?,1)',id,text(b.member_name,60),b.member_hash);}
+    this.admin(session);id=uuid(b.member_id);if(b.revoke){this.sql.exec('UPDATE members SET active=0 WHERE id=?',id);this.sql.exec('UPDATE connections SET active=0 WHERE seller_id=?',id);this.sql.exec('DELETE FROM sessions WHERE member_id=?',id);this.removeSubscriptions('member_id',id);}else{if(this.row('SELECT COUNT(*) AS n FROM members WHERE active=1').n>=100)throw new AppError('Limite de 100 influenciadores por marca.');if(this.row('SELECT id FROM members WHERE id=?',id))throw new AppError('Este acesso já existe.',409);this.sql.exec('INSERT INTO members(id,name,key_hash,active) VALUES(?,?,?,1)',id,text(b.member_name,60),b.member_hash);}
    }else if(action==='archive'){
     this.admin(session);
     id=uuid(b.id);const p=this.row('SELECT * FROM products WHERE id=?',id);if(!p)throw new AppError('Produto não encontrado.',404);if(p.physical||p.reserved)throw new AppError('Zere o saldo por uma movimentação justificada antes de arquivar.',409);this.sql.exec('UPDATE products SET archived=1,version=version+1,updated_at=? WHERE id=?',now,id);
@@ -136,7 +143,7 @@ CREATE TABLE IF NOT EXISTS schema_version(version INTEGER PRIMARY KEY);`);
    this.sql.exec('UPDATE workspace SET revision=revision+1');if(action==='product'||action==='movement')this.evaluateAlert(id,now);const r={ok:true,id,revision:this.row('SELECT revision FROM workspace').revision};this.sql.exec('INSERT INTO operations(id,payload_hash,response,member_id) VALUES(?,?,?,?)',b.operation_id,payloadHash,JSON.stringify(r),session.member_id);return r;
   });return result;
  });if(result.ok){if(!result.replayed)this.broadcast(result.revision);this.ctx.waitUntil(this.schedule());}return result;}
- rotate(hash,newHash,newSessionHash){const r=this.safe(()=>{const s=this.session(hash);this.admin(s);this.ctx.storage.transactionSync(()=>{this.sql.exec('UPDATE workspace SET key_hash=?',newHash);this.sql.exec('DELETE FROM sessions');this.sql.exec('DELETE FROM subscriptions');this.sql.exec('DELETE FROM push_jobs');this.sql.exec('INSERT INTO sessions(hash,actor,expires,member_id) VALUES(?,?,?,?)',newSessionHash,s.actor,Date.now()+43200000,'owner');});return {ok:true};});if(r.ok)for(const ws of this.ctx.getWebSockets())ws.close(1008,'Chave alterada');return r;}
+ rotate(hash,newHash,newSessionHash){const r=this.safe(()=>{const s=this.session(hash);this.admin(s);this.ctx.storage.transactionSync(()=>{this.sql.exec('UPDATE workspace SET key_hash=?',newHash);this.sql.exec('UPDATE connections SET active=0');this.sql.exec('DELETE FROM sessions');this.sql.exec('DELETE FROM subscriptions');this.sql.exec('DELETE FROM push_jobs');this.sql.exec('INSERT INTO sessions(hash,actor,expires,member_id) VALUES(?,?,?,?)',newSessionHash,s.actor,Date.now()+43200000,'owner');});return {ok:true};});if(r.ok)for(const ws of this.ctx.getWebSockets())ws.close(1008,'Chave alterada');return r;}
  broadcast(revision){for(const ws of this.ctx.getWebSockets()){try{this.session(ws.deserializeAttachment()?.hash);ws.send(JSON.stringify({type:'changed',revision}));}catch{ws.close(1008,'Sessão encerrada');}}}
  async fetch(request){const hash=request.headers.get('X-Session-Hash');try{this.session(hash);}catch{return new Response('Entre novamente.',{status:401});}if(request.headers.get('Upgrade')?.toLowerCase()!=='websocket')return new Response('WebSocket esperado.',{status:426});if(this.ctx.getWebSockets().length>=30)return new Response('Limite de telas conectadas.',{status:429});const pair=new WebSocketPair();this.ctx.acceptWebSocket(pair[1]);pair[1].serializeAttachment({hash,lastMessage:0});pair[1].send(JSON.stringify({type:'ready',revision:this.row('SELECT revision FROM workspace').revision}));return new Response(null,{status:101,webSocket:pair[0]});}
  webSocketMessage(ws,message){try{const a=ws.deserializeAttachment();this.session(a?.hash);if(message!=='ping'||Date.now()-a.lastMessage<15000){ws.close(1008,'Mensagem não permitida');return;}a.lastMessage=Date.now();ws.serializeAttachment(a);ws.send('pong');}catch{ws.close(1008,'Sessão encerrada');}}
