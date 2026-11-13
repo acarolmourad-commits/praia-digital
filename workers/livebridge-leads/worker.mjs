@@ -1,3 +1,4 @@
+import {sendPending} from './notifications.mjs';
 const ORIGINS = new Set(['https://praia.digital', 'https://www.praia.digital']);
 const SOURCES = ['Ainda não faço lives', 'Celular / câmera', 'OBS ou outro estúdio', 'TikTok Shop', 'Shopee', 'Outra plataforma'];
 const CHANNELS = ['Instagram', 'Facebook', 'TikTok'];
@@ -64,7 +65,7 @@ function response(status, body, origin, extra = {}) {
   return new Response(status === 204 ? null : JSON.stringify(body), { status, headers });
 }
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const origin = request.headers.get('Origin');
     const path = new URL(request.url).pathname;
     if (path === '/health' && request.method === 'GET') return response(200, { ok: true, service: 'livebridge-leads' }, origin);
@@ -92,12 +93,17 @@ export default {
       if (!receipt) throw new Error('receipt_missing');
       if (receipt.payload_hash !== hash) return response(409, { ok: false, error: 'O formulário mudou. Revise as informações e envie novamente.' }, origin);
       await env.LEADS_DB.prepare('INSERT INTO service_requests (lead_id, service) VALUES (?, ?) ON CONFLICT(lead_id) DO NOTHING').bind(id, service).run();
+      const notify = sendPending(env, id).catch(() => console.error(JSON.stringify({event:'team_notification_queue_failed'})));
+      if (ctx?.waitUntil) ctx.waitUntil(notify); else await notify;
       // No personal data in logs, URLs, responses or a public read endpoint.
-      return response(saved.meta?.changes ? 201 : 200, { ok: true, id, email_status: 'pending_setup' }, origin);
+      return response(saved.meta?.changes ? 201 : 200, { ok: true, id, email_status: 'pending_setup', team_notification: env.EMAIL_NOTIFICATIONS_ENABLED === 'true' ? 'queued' : 'pending_setup' }, origin);
     } catch (error) {
       if (error instanceof InputError) return response(error.status, { ok: false, error: error.message }, origin);
       console.error(JSON.stringify({ event: 'lead_capture_failed' }));
       return response(503, { ok: false, error: 'Não foi possível confirmar o cadastro. Tente novamente em instantes.' }, origin);
     }
+  },
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(sendPending(env).catch(() => console.error(JSON.stringify({event:'team_notification_queue_failed'}))));
   }
 };

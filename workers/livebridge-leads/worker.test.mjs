@@ -11,7 +11,8 @@ function setup() {
     LEAD_LIMITER: { limit: async () => ({ success: true }) },
     LEADS_DB: { prepare(sql) { return { bind(...params) { return {
       async run() { const result = db.prepare(sql).run(...params); return { success: true, meta: { changes: Number(result.changes) } }; },
-      async first() { return db.prepare(sql).get(...params); }
+      async first() { return db.prepare(sql).get(...params); },
+      async all() { return {results:db.prepare(sql).all(...params)}; }
     }; } }; } }
   };
   return { env, db };
@@ -26,7 +27,7 @@ test('saves private contact, consent, context; retries do not duplicate', async 
   const { env, db } = setup(); const body = payload();
   const response = await worker.fetch(request(body), env);
   assert.equal(response.status, 201);
-  assert.deepEqual(await response.json(), { ok: true, id: body.submission_id, email_status: 'pending_setup' });
+  assert.deepEqual(await response.json(), { ok: true, id: body.submission_id, email_status: 'pending_setup', team_notification: 'pending_setup' });
   const row = db.prepare('SELECT * FROM leads').get();
   assert.equal(row.email, 'teste@example.invalid');
   assert.equal(row.phone, '11999990000');
@@ -84,4 +85,32 @@ test('outbox persists two pending notices, retries do not duplicate, service is 
  assert.equal(db.prepare('SELECT COUNT(*) n FROM notification_outbox').get().n,2);
  assert.equal((await worker.fetch(request(payload({service:'fake'})),env)).status,422);
  assert.equal((await worker.fetch(request({...b,service:'LiveBridge AI'}),env)).status,409);
+});
+
+test('notification sends only to Praia Digital, with reply address and escaped content, once', async()=>{
+ const {env,db}=setup(); const messages=[]; env.EMAIL_NOTIFICATIONS_ENABLED='true';
+ env.EMAIL={send:async m=>{messages.push(m);return{messageId:'mock-1'}}};
+ const body=payload({service:'Estoque Vivo'});
+ assert.equal((await worker.fetch(request(body),env)).status,201);
+ await worker.fetch(request(body),env);
+ assert.equal(messages.length,1); assert.equal(messages[0].to,'comercial@praia.digital');
+ assert.equal(messages[0].replyTo,'teste@example.invalid');
+ assert.ok(messages[0].text.includes('Estoque Vivo'));
+ assert.ok(messages[0].html.includes('&lt;script&gt;')); assert.ok(!messages[0].html.includes('<script>'));
+ assert.equal(db.prepare("SELECT status FROM notification_outbox WHERE kind='team'").get().status,'accepted');
+ assert.equal(db.prepare("SELECT status FROM notification_outbox WHERE kind='receipt'").get().status,'pending_setup');
+});
+test('provider errors preserve lead and flag review without duplicate automatic sends',async()=>{
+ const {env,db}=setup();let calls=0;env.EMAIL_NOTIFICATIONS_ENABLED='true';
+ env.EMAIL={send:async()=>{calls++;throw new Error('provider timeout')}};
+ const b=payload();assert.equal((await worker.fetch(request(b),env)).status,201);
+ await worker.fetch(request(b),env);assert.equal(calls,1);
+ assert.equal(db.prepare("SELECT status FROM notification_outbox WHERE kind='team'").get().status,'review_required');
+ assert.equal(db.prepare('SELECT count(*) n FROM leads').get().n,1);
+});
+test('scheduled consumer processes queued requests without exposing a public read endpoint',async()=>{
+ const {env,db}=setup();await worker.fetch(request(payload()),env);
+ let calls=0;env.EMAIL_NOTIFICATIONS_ENABLED='true';env.EMAIL={send:async()=>{calls++;return {messageId:'mock-scheduled'}}};
+ const pending=[];await worker.scheduled({},env,{waitUntil:p=>pending.push(p)});await Promise.all(pending);
+ assert.equal(calls,1);assert.equal(db.prepare("SELECT status FROM notification_outbox WHERE kind='team'").get().status,'accepted');
 });
