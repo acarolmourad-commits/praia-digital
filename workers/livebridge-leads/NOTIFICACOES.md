@@ -1,11 +1,9 @@
-# Avisos à equipe — preparação de 13/11/2026
+# Avisos à equipe — ativos em 13/11/2026
 
-Destino único comercial@praia.digital; remetente solicitacoes@avisos.praia.digital. Subdomínio Email Routing configurado. MX principal praia.digital continua smtp.google.com. E-mail de verificação solicitado ao destinatário; falta confirmação.
+Destino único verificado: comercial@praia.digital. Remetente: solicitacoes@avisos.praia.digital. MX principal preservado no Google.
 
-Worker contém consumidor imediato após gravação e scheduled para fila pendente. Ativação protegida por EMAIL_NOTIFICATIONS_ENABLED=true e binding EMAIL. Não ativar antes da verificação do destinatário e teste real controlado. O recebimento no Gmail ainda não foi validado. Dez testes offline aprovados.
+Binding EMAIL restrito ao comercial, EMAIL_NOTIFICATIONS_ENABLED=true. Publicação inclui worker.mjs e notifications.mjs. Cron separado: */5 * * * *. O formulário processa seu aviso após gravação, e o Cron alcança pendências. Dez testes offline aprovados e teste real de formulário recebido na INBOX comercial. Identificadores de entrega ficam nos sistemas privados.
 
-Binding de ativação: type send_email, name EMAIL, destination_address comercial@praia.digital. Não adicionar destinos arbitrários, não alterar plano pago nem MX principal. Cron recomendado */5 * * * * apenas após validação de entrega. Preservar D1 e rate limiter atuais.
+Os avisos incluem serviço, contato, descrição e protocolo. Reply-To aponta ao solicitante. Não há envio de cotação automática nem confirmação por e-mail ao visitante: receipt permanece pending_setup.
 
-Outbox team: pending_setup/queued -> sending -> accepted (aceito pelo provedor, não prova caixa de entrada). Falha ambígua -> review_required para não duplicar automaticamente. Se processo interromper em sending, revisar antes de reencaminhar. Monitorar review_required e sending; não prometer entrega garantida. Confirmação para visitante (receipt) permanece pending_setup e fora desta ativação.
-
-Antes de ativar, completar service_requests ausentes com LiveBridge AI apenas para inscrições históricas do formulário original, e testar com dados fictícios e destinatário comercial real controlado. Não exportar dados reais. Após teste, conferir Gmail pelo protocolo exato e registrar confirmação da entrega. Mensagens incluem contatos/demanda apenas para a própria Praia Digital.
+Outbox team: pending_setup/queued → sending → accepted. Accepted não comprova caixa de entrada. Falha ambígua → review_required. Inspecionar review_required e sending antes de reenviar para evitar duplicação. Não prometer entrega garantida. Teste técnico identificado no banco, sem remoção do histórico. Registros anteriores sem serviço são do formulário original LiveBridge AI e foram preparados para processamento periódico.
