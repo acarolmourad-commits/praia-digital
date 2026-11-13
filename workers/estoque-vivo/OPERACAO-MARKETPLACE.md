@@ -1,0 +1,35 @@
+# Operação de estoque entre marca e influenciadores
+
+## Fluxo recomendado para o piloto
+
+1. A marca cria seu espaço, guarda a chave de gestão e cadastra um SKU para cada variação vendável. O saldo inicial deve vir de uma contagem ou fonte conferida.
+2. A gestão cria um acesso individual para cada influenciador e entrega a chave pelo canal privado habitual. O app não envia chaves por mensagem automaticamente.
+3. Antes de comprometer unidades, o influenciador consulta o disponível e registra a reserva. Todos passam a ver o disponível reduzido. A reserva fica atribuída ao acesso dele.
+4. Após confirmar a venda, usa Confirmar venda reservada. Se a negociação não acontecer, usa Liberar reserva. Venda direta serve para unidades ainda não reservadas.
+5. A gestão acompanha reservas pendentes, repõe produtos, confere devoluções e corrige contagens com justificativa. A reserva não expira sozinha nesta versão.
+6. Ao entrar em 150 unidades disponíveis ou menos, o produto aparece em alerta. Dispositivos que ativaram push entram na fila de notificação. O saldo zero gera novo aviso.
+
+## Exemplo
+
+| Situação | Físico | Reservado | Disponível |
+|---|---:|---:|---:|
+| Saldo inicial | 200 | 0 | 200 |
+| Influenciador A reserva 30 | 200 | 30 | 170 |
+| Influenciador B reserva 20 | 200 | 50 | 150 |
+| Alerta de últimas unidades | 200 | 50 | 150 |
+| A confirma a venda de 30 reservadas | 170 | 20 | 150 |
+| B libera a reserva de 20 | 170 | 0 | 170 |
+
+Cada quantidade pertence a um SKU/variação. Não somar tamanhos ou produtos diferentes para decidir o alerta.
+
+## Regras de responsabilidade
+
+A marca administra catálogo, estoque físico e acessos. O influenciador consulta o estoque central, registra vendas e controla as próprias reservas. A gestão pode intervir em qualquer reserva, mantendo executor e responsável no histórico. Revogar acesso não libera automaticamente as unidades: a gestão precisa conferir o que foi vendido antes de liberar.
+
+O alerta ajuda a coordenar a divulgação, mas não pausa anúncios externos nem cancela campanhas. O número mostrado só acompanha entradas, reservas e saídas efetivamente registradas no app. Nenhum conector de marketplace está ativo nesta versão.
+
+## Próxima etapa: integrar um canal piloto
+
+Escolher uma marca, seu sistema atual e o primeiro marketplace. Confirmar a fonte oficial do estoque, mapear SKUs/variações e obter as permissões da conta. Depois validar eventos de pedido, pagamento, cancelamento, devolução e expedição, com idempotência, reconciliação e tratamento de falhas. Só então ampliar a sincronização para outros canais. Disponibilidade e aprovação de APIs dependem de cada plataforma.
+
+O piloto atual é uma PWA para uso compartilhado com conexão, instalada pelo navegador quando suportado. Publicação em lojas de aplicativos, integração com ERP, importação de planilhas, comissões e faturamento são evoluções separadas, ainda não entregues.
