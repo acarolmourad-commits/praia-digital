@@ -68,7 +68,7 @@ test('nomes de versões são dados de texto, limitados sem interpretação de HT
 
 // Minimal DOM fixture built from the shipped markup, used to exercise the real
 // bootstrap without relying on a browser or duplicating the comparison logic.
-function loadPage({ failCreate = false, coreAvailable = true, failListenerAt = '' } = {}) {
+function loadPage({ failCreate = false, coreAvailable = true, failListenerAt = '', confirm = () => false } = {}) {
   const html = fs.readFileSync(path.join(__dirname, '../apps/revisor-anuncios/index.html'), 'utf8');
   const code = fs.readFileSync(path.join(__dirname, '../apps/revisor-anuncios/app.js'), 'utf8');
   const ids = new Map();
@@ -110,6 +110,7 @@ function loadPage({ failCreate = false, coreAvailable = true, failListenerAt = '
     setAttribute(name, value) { this.attrs[name] = value; }
     removeAttribute(name) { delete this.attrs[name]; }
     focus() {}
+    reset() { for (const n of nodes) { n.value = ''; n.checked = false; } }
   }
   const root = new Element('root');
   const stack = [root];
@@ -145,7 +146,7 @@ function loadPage({ failCreate = false, coreAvailable = true, failListenerAt = '
     return event;
   }
   return { ids, nodes, unlocks, disabled, submit,
-    init() { vm.runInNewContext(code, { document, window: { PraiaConsistency: coreAvailable ? require('../apps/revisor-anuncios/core.js') : undefined }, navigator: {} }); } };
+    init() { vm.runInNewContext(code, { document, window: { confirm, PraiaConsistency: coreAvailable ? require('../apps/revisor-anuncios/core.js') : undefined }, navigator: {} }); } };
 }
 
 test('sem JavaScript, campos e ações permanecem inertes e não há campo nomeado para GET', () => {
@@ -183,4 +184,23 @@ test('falha parcial ou ausência do núcleo mantém os controles bloqueados e gu
     assert.ok(page.disabled(page.nodes.find(n => n.tagName === 'button' && n.type === 'submit')));
     assert.ok(page.submit().defaultPrevented);
   }
+});
+
+
+test('limpeza e exemplo preservam dados quando a pessoa cancela', () => {
+  const page = loadPage(); page.init();
+  page.ids.get('ref-price').value = '900.000,00';
+  for (const id of ['clear', 'example']) {
+    page.ids.get(id).listeners.click[0]();
+    assert.equal(page.ids.get('ref-price').value, '900.000,00');
+  }
+});
+test('limpeza e exemplo funcionam após confirmação explícita', () => {
+  const page = loadPage({ confirm: () => true }); page.init();
+  page.ids.get('ref-price').value = '900.000,00';
+  page.ids.get('example').listeners.click[0]();
+  assert.equal(page.ids.get('ref-price').value, '600.000,00');
+  page.ids.get('clear').listeners.click[0]();
+  assert.equal(page.ids.get('ref-price').value, '');
+  assert.equal(page.ids.get('report').hidden, true);
 });
