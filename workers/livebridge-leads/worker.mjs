@@ -3,6 +3,7 @@ const SOURCES = ['Ainda não faço lives', 'Celular / câmera', 'OBS ou outro es
 const CHANNELS = ['Instagram', 'Facebook', 'TikTok'];
 const MARKETPLACES = ['TikTok Shop', 'Shopee', 'Mercado Livre', 'Outros', 'Ainda não vendo'];
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+const SERVICES = ["LiveBridge AI","Estoque Vivo","Atendimento e relacionamento","Automação de processos","Conteúdo e comunicação","Conhecimento e apoio à equipe","Diagnóstico e capacitação","Projeto personalizado"];
 const PAGE = 'https://praia.digital/ia/marketplaces/';
 const CONSENT_VERSION = 'livebridge-contact-2026-11-12';
 
@@ -77,6 +78,9 @@ export default {
       if (!limit.success) return response(429, { ok: false, error: 'Muitas tentativas. Aguarde um minuto e tente novamente.' }, origin, { 'Retry-After': '60' });
       const body = await readBody(request);
       const lead = validate(body);
+      const service = body.service || 'LiveBridge AI';
+      if (!SERVICES.includes(service)) throw new InputError('Selecione um serviço válido.');
+      if (body.service) lead.service = service;
       const hash = [...new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(JSON.stringify(lead))))].map(b => b.toString(16).padStart(2, '0')).join('');
       const id = body.submission_id.toLowerCase();
       const saved = await env.LEADS_DB.prepare(`INSERT INTO leads
@@ -87,8 +91,9 @@ export default {
       const receipt = await env.LEADS_DB.prepare('SELECT payload_hash FROM leads WHERE id = ?').bind(id).first();
       if (!receipt) throw new Error('receipt_missing');
       if (receipt.payload_hash !== hash) return response(409, { ok: false, error: 'O formulário mudou. Revise as informações e envie novamente.' }, origin);
+      await env.LEADS_DB.prepare('INSERT INTO service_requests (lead_id, service) VALUES (?, ?) ON CONFLICT(lead_id) DO NOTHING').bind(id, service).run();
       // No personal data in logs, URLs, responses or a public read endpoint.
-      return response(saved.meta?.changes ? 201 : 200, { ok: true, id }, origin);
+      return response(saved.meta?.changes ? 201 : 200, { ok: true, id, email_status: 'pending_setup' }, origin);
     } catch (error) {
       if (error instanceof InputError) return response(error.status, { ok: false, error: error.message }, origin);
       console.error(JSON.stringify({ event: 'lead_capture_failed' }));

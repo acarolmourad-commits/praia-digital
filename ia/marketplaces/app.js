@@ -58,6 +58,7 @@ form.addEventListener('submit', async event => {
   const utm = {};
   for (const key of ['source', 'medium', 'campaign', 'content', 'term']) utm[key] = (query.get('utm_' + key) || '').slice(0, 160);
   const payload = {
+    service: document.getElementById('lead-service')?.value || 'LiveBridge AI',
     name: document.getElementById('lead-name').value.trim(),
     email: document.getElementById('lead-email').value.trim(),
     phone, business: document.getElementById('business').value.trim(),
@@ -110,3 +111,7 @@ form.addEventListener('submit', async event => {
 
 // Enable only after the submit handler is ready; no native GET with contact data.
 submitButton.disabled = false;
+
+const requested = new URLSearchParams(location.search).get('servico');
+const serviceSelect = document.getElementById('lead-service');
+if (serviceSelect && [...serviceSelect.options].some(o=>o.value===requested)) serviceSelect.value=requested;

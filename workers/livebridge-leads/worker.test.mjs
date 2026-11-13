@@ -26,7 +26,7 @@ test('saves private contact, consent, context; retries do not duplicate', async 
   const { env, db } = setup(); const body = payload();
   const response = await worker.fetch(request(body), env);
   assert.equal(response.status, 201);
-  assert.deepEqual(await response.json(), { ok: true, id: body.submission_id });
+  assert.deepEqual(await response.json(), { ok: true, id: body.submission_id, email_status: 'pending_setup' });
   const row = db.prepare('SELECT * FROM leads').get();
   assert.equal(row.email, 'teste@example.invalid');
   assert.equal(row.phone, '11999990000');
@@ -72,4 +72,16 @@ test('database failures never return success; rate limit blocks writes', async (
   env.LEADS_DB.prepare = () => { throw new Error('private database details'); };
   const failed = await worker.fetch(request(payload()), env);
   assert.equal(failed.status, 503); assert.equal((await failed.json()).ok, false);
+});
+
+test('outbox persists two pending notices, retries do not duplicate, service is validated', async () => {
+ const {env,db}=setup(); const b=payload({service:'Estoque Vivo'});
+ assert.equal((await worker.fetch(request(b),env)).status,201);
+ assert.equal(db.prepare('SELECT service FROM service_requests').get().service,'Estoque Vivo');
+ assert.equal(db.prepare('SELECT COUNT(*) n FROM notification_outbox').get().n,2);
+ assert.equal(db.prepare('SELECT status FROM notification_outbox').get().status,'pending_setup');
+ await worker.fetch(request(b),env);
+ assert.equal(db.prepare('SELECT COUNT(*) n FROM notification_outbox').get().n,2);
+ assert.equal((await worker.fetch(request(payload({service:'fake'})),env)).status,422);
+ assert.equal((await worker.fetch(request({...b,service:'LiveBridge AI'}),env)).status,409);
 });
