@@ -1,3 +1,4 @@
+import {crm} from './crm.mjs';
 import {sendPending} from './notifications.mjs';
 const ORIGINS = new Set(['https://praia.digital', 'https://www.praia.digital']);
 const SOURCES = ['Ainda não faço lives', 'Celular / câmera', 'OBS ou outro estúdio', 'TikTok Shop', 'Shopee', 'Outra plataforma'];
@@ -68,6 +69,8 @@ export default {
   async fetch(request, env, ctx) {
     const origin = request.headers.get('Origin');
     const path = new URL(request.url).pathname;
+    if (path === '/' && new URL(request.url).hostname === 'crm.praia.digital') return Response.redirect(new URL('/crm/',request.url),302);
+    if (path === '/crm' || path.startsWith('/crm/')) return crm(request,env);
     if (path === '/health' && request.method === 'GET') return response(200, { ok: true, service: 'livebridge-leads' }, origin);
     if (path !== '/leads') return response(404, { ok: false }, origin);
     if (!ORIGINS.has(origin)) return response(403, { ok: false, error: 'Origem não autorizada.' }, origin);
