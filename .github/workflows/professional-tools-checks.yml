@@ -5,6 +5,7 @@ on:
       - 'apps/revisor-anuncios/**'
       - 'apps/relatorio-imovel/**'
       - 'tests/test_revisor_anuncios.cjs'
+      - 'tests/revisor-browser.cjs'
       - 'tests/test_relatorio_imovel.mjs'
       - '.github/workflows/professional-tools-checks.yml'
   workflow_dispatch:
@@ -19,3 +20,13 @@ jobs:
         run: node --test tests/test_revisor_anuncios.cjs
       - name: Property report behavior and metadata
         run: node tests/test_relatorio_imovel.mjs
+      - name: Browser regression for listing reviewer
+        run: |
+          npm install --prefix "$RUNNER_TEMP/revisor-browser" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/revisor-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          NODE_PATH="$RUNNER_TEMP/revisor-browser/node_modules" node tests/revisor-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: revisor-previews
+          path: /tmp/revisor-qa

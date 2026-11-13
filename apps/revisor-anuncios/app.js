@@ -138,11 +138,19 @@
     $('live-status').textContent = `Comparação concluída: ${result.counts.different} diferenças e ${result.counts.pending} itens sem conclusão.`;
   });
 
+  function hasData() {
+    return Boolean($('property').value.trim()) || records.some(record =>
+      FIELDS.some(field => $(`${record.id}-${field.key}`).value.trim()) ||
+      (record.id !== 'ref' && $(`${record.id}-name`).value.trim()));
+  }
+
   $('clear').addEventListener('click', () => {
+    if (hasData() && !window.confirm('Limpar todos os campos e o relatório? Esta ação não pode ser desfeita.')) return;
     $('review-form').reset(); isDemo = false; $('demo-status').hidden = true;
     invalidate(); $('live-status').textContent = 'Todos os campos foram limpos.'; $('property').focus();
   });
   $('example').addEventListener('click', () => {
+    if (hasData() && !window.confirm('Substituir os dados atuais pelo exemplo fictício? Copie o relatório antes se quiser guardá-lo.')) return;
     invalidate(); isDemo = true; $('demo-status').hidden = false;
     $('property').value = 'DEMO-001 · apartamento fictício';
     const examples = {
