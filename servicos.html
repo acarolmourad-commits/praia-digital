@@ -69,6 +69,15 @@
     @media(prefers-reduced-motion:reduce){.card,.pill{transition:none}.card:hover,.pill:hover{transform:none}}
     .prod-links{margin-top:20px;text-align:center;font-size:.92rem}
     .prod-links a{color:#0369A1;font-weight:600;text-decoration:none}
+    .service-selector{background:#fff;border:1px solid #dbeafe;border-radius:16px;padding:24px;margin-bottom:28px}
+    .service-selector h2{margin-bottom:8px}.service-selector form{display:grid;gap:10px;margin-top:18px}
+    .service-selector [hidden]{display:none}
+    .service-selector label{font-weight:600}.service-selector select,.service-selector button{min-height:44px;padding:10px 12px;border:1px solid #64748b;border-radius:8px;font:inherit;max-width:100%;width:100%}
+    .service-selector button{background:#075985;color:#fff;cursor:pointer;font-weight:700;margin-top:8px}
+    .service-selector :focus-visible{outline:3px solid #b45309;outline-offset:3px}
+    .selector-privacy{font-size:.85rem;color:#475569;margin-top:12px}
+    #service-selector-result{background:#f0f9ff;padding:18px;border-radius:10px;margin-top:18px}
+    #service-selector-result a{display:inline-block;color:#075985;font-weight:700;padding:12px 0}
   </style>
 
 <!-- Google tag (gtag.js) -->
@@ -154,6 +163,36 @@
   </section>
 
   <main id="main" class="wrap">
+    <section class="service-selector" aria-labelledby="service-selector-heading">
+      <h2 id="service-selector-heading">Qual apoio faz sentido para você?</h2>
+      <p>Responda três perguntas para encontrar um próximo passo. Você pode começar por um recurso gratuito.</p>
+      <form id="service-selector" hidden>
+        <label for="service-objective">1. Qual é seu objetivo?</label>
+        <select id="service-objective" name="objective" required>
+          <option value="">Selecione um objetivo</option>
+          <option value="temporada">Preparar ou melhorar a temporada</option>
+          <option value="venda">Apresentar imóvel para venda ou locação</option>
+          <option value="profissional">Organizar minha rotina como profissional</option>
+          <option value="decidir">Analisar antes de decidir</option>
+        </select>
+        <label for="service-need">2. Qual é sua prioridade agora?</label>
+        <select id="service-need" name="need" required disabled><option value="">Selecione primeiro um objetivo</option></select>
+        <label for="service-start">3. Como prefere começar?</label>
+        <select id="service-start" name="start" required>
+          <option value="">Selecione uma opção</option>
+          <option value="sozinho">Quero explorar os recursos gratuitos</option>
+          <option value="ajuda">Quero conhecer o apoio profissional</option>
+        </select>
+        <button type="submit">Ver meu próximo passo</button>
+      </form>
+      <p class="selector-privacy">Suas respostas ficam nesta página. Nenhuma mensagem é enviada e nenhum serviço é contratado aqui.</p>
+      <div id="service-selector-result" role="region" aria-labelledby="service-selector-title" tabindex="-1" hidden>
+        <h3 id="service-selector-title"></h3><p id="service-selector-note"></p>
+        <a id="service-selector-link" href="/contato.html">Conferir próximo passo</a>
+      </div>
+      <noscript><p>Explore os serviços abaixo ou <a href="/apps/">abra os recursos gratuitos</a>.</p></noscript>
+    </section>
+
     <div class="grid">
       <a class="card" href="https://praia.digital/servicos/gestao-imoveis.html">
         <span class="thumb" style="background:linear-gradient(135deg,#0EA5E9,#2563EB)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M9 21v-4h6v4"/><path d="M8 7h.01M12 7h.01M16 7h.01M8 11h.01M12 11h.01M16 11h.01"/></svg></span>
@@ -266,5 +305,6 @@
 
   <meta name="pd-shared-footer">
   <script src="https://praia.digital/js/shared.js?v=2.1"></script>
+<script src="/js/servicos-seletor.js" defer></script>
 </body>
 </html>
