@@ -1,6 +1,6 @@
 # Estoque Vivo — Praia Digital
 
-Versão piloto 1.2.0 em https://estoque.praia.digital/. Fonte do painel e API, com um Durable Object SQLite por espaço de marca. Não depende de dados em localStorage.
+Código candidato 1.3.0; a publicação deve ser conferida em https://estoque.praia.digital/health. Fonte do painel e API, com um Durable Object SQLite por espaço de marca. Não depende de dados em localStorage.
 
 ## Escopo entregue
 
@@ -29,7 +29,7 @@ Os testes usam o runtime real workerd pelo plugin oficial Cloudflare/Vitest. Cob
 
 ## Publicação
 
-Worker `praia-estoque-vivo`, domínio `estoque.praia.digital`. Configuração declarada em wrangler.jsonc. A publicação é feita pelo conector Cloudflare com o bundle dist/worker.mjs como módulo worker.mjs; a migração v1 cria InventoryRoom com SQLite. Para publicação pela CLI autenticada: `npm run build` e `npx wrangler deploy`. Não excluir/recriar o namespace ou trocar o nome da classe: isso pode separar o app dos dados existentes. Mudanças de esquema exigem migração compatível e preservação dos dados.
+Worker `praia-estoque-vivo`, domínio `estoque.praia.digital`. Configuração declarada em wrangler.jsonc. A publicação é feita pelo conector Cloudflare com o bundle dist/worker.mjs como módulo worker.mjs; a migração v1 cria InventoryRoom com SQLite. Para publicação manual pela CLI autenticada, a partir de `workers/estoque-vivo`: `npm ci`, `npm test` e `npx --no-install wrangler deploy`. Wrangler está fixado em 4.161.0. Antes da publicação real, executar `npx --no-install wrangler deploy --dry-run` e conferir os bindings, o namespace existente, o domínio e a preservação dos secrets. Não ativar deploy automático por esta revisão. Não excluir/recriar o namespace ou trocar o nome da classe: isso pode separar o app dos dados existentes. Mudanças de esquema exigem migração compatível e preservação dos dados.
 
 O repositório contém a fonte; alterações no GitHub não publicam automaticamente este Worker. Os hubs estáticos da Praia Digital são publicados pelo fluxo existente do site. Nenhuma mudança de plano ou contratação paga foi feita nesta entrega. Uso sujeito aos limites da conta Cloudflare.
 
@@ -68,3 +68,7 @@ A API `POST /api/integration/order` exige Bearer EI1 e não usa a chave da gest�
 Pausar uma conexão revoga sua chave e permite intervenção manual nos pedidos pendentes. Revogar um influenciador pausa suas conexões. Pedidos e reservas são preservados. Uma conexão nova é uma origem nova: pedidos antigos precisam de conferência e encerramento antes da retomada, pois não são transferidos automaticamente.
 
 A migração 1.2 cria apenas tabelas e índices adicionais no mesmo Durable Object, sem apagar catálogo, reservas, acessos ou histórico. O namespace e o secret VAPID devem ser preservados na publicação.
+
+## Produção sob demanda — candidata 1.3
+
+Encomendas permanecem separadas do estoque pronto. A gestão registra a confirmação do pagamento e o prazo máximo de 20 dias corridos; transporte é separado. Concluir a produção exige confirmação de disponibilidade e gera entrada reservada para o pedido de forma atômica. Cancelar exige justificativa e não executa estorno financeiro. Influenciadores não confirmam pagamentos nem administram produção. O guia de testes está em `/piloto.html`. Integrações nativas com marketplaces continuam não ativadas.
