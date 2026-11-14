@@ -3,3 +3,5 @@
 .homog-guide footer nav a,.homog-guide footer #pdFlOk a{color:#d1eef5}.homog-guide footer nav a:hover{color:#fff}.homog-guide footer nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 16px}.homog-guide footer nav a{padding:4px 0}
 
 .homog-table{margin:24px 0;max-width:100%}.homog-table table{width:100%;border-collapse:collapse;table-layout:fixed}.homog-table caption{text-align:left;font-weight:700;padding:0 0 12px}.homog-table th,.homog-table td{padding:12px;border:1px solid #d7e4e9;text-align:left;vertical-align:top;overflow-wrap:anywhere}.homog-table th{background:#eef6f7}.homog-table th:first-child{width:27%}.homog-guide ol{padding-left:24px}
+
+.homog-guide footer .whatsapp-float{position:static;margin:18px auto 0;transform:none}
