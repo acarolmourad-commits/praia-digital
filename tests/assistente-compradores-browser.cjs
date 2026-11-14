@@ -21,7 +21,7 @@ await page.locator('#msg').fill('Procuro casa em Bertioga para temporada');await
 await page.locator('#msg').fill('<img src=x onerror=alert(1)>');await page.locator('#buyer-ask').click();assert.equal(await page.locator('#chat img').count(),0);
 assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'horizontal overflow '+width);
 assert.deepEqual(errors,[]);assert.ok(!outbound.some(x=>/wa.me|formsubmit/.test(x)),'No contact or newsletter sent');
-const dest=process.env.ASSISTENTE_QA_OUTPUT||'/tmp/assistente-qa';fs.mkdirSync(dest,{recursive:true});await page.screenshot({path:path.join(dest,'assistente-'+width+'.png'),fullPage:true});
+const dest=process.env.ASSISTENTE_QA_OUTPUT||'/tmp/assistente-qa';fs.mkdirSync(dest,{recursive:true});await page.evaluate(()=>window.scrollTo(0,0));assert.equal(await page.locator('#buyer-ask').evaluate(e=>getComputedStyle(e).color),'rgb(255, 255, 255)');await page.screenshot({path:path.join(dest,'assistente-'+width+'.png'),fullPage:true});
 await page.locator('#buyer-clear').click();assert.equal(await page.locator('#chat').textContent(),'');assert.equal(await page.locator('#buyer-summary').inputValue(),'');
 await context.close();}
 console.log('Browser flows passed at 320, 390, 768 and 1280px. No external submissions.');
