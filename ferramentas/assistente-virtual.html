@@ -8,6 +8,7 @@
 <meta name="keywords" content="assistente virtual imobiliário, comprar imóvel litoral, Santos, Guarujá, Praia Grande, Bertioga, financiamento 2026, FGTS, temporada, documentação imóvel">
 <link rel="canonical" href="https://praia.digital/ferramentas/assistente-virtual.html">
 
+<link rel="stylesheet" href="https://praia.digital/css/style.css">
 <style>
 body{font-family:Segoe UI,Arial,sans-serif;background:#fff;color:#1f2937;margin:0;padding:0}
 .container{max-width:960px;margin:0 auto;padding:2rem}
@@ -54,7 +55,7 @@ a:hover{text-decoration:underline}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="robots" content="index, follow">
 <meta property="og:locale" content="pt_BR">
-<link rel="stylesheet" href="https://praia.digital/css/style.css">
+
 <meta name="theme-color" content="#0ea5e9">
 <link rel="icon" type="image/x-icon" href="https://praia.digital/favicon.ico">
 <link rel="dns-prefetch" href="https://wa.me">
@@ -99,8 +100,9 @@ a:hover{text-decoration:underline}
   </section>
   <section class="card" id="assistente">
     <h2>Orientações para os próximos passos</h2>
-    <label for="msg">Qual é sua dúvida? Não inclua dados pessoais.</label>
-    <textarea id="msg" rows="3" maxlength="2000" placeholder="Ex.: procuro casa em Bertioga para temporada"></textarea>
+    <label for="msg">Sua pergunta</label>
+    <p id="question-help" class="note">Qual é sua dúvida? Não inclua dados pessoais.</p>
+    <textarea aria-describedby="question-help" id="msg" rows="3" maxlength="2000" placeholder="Ex.: procuro casa em Bertioga para temporada"></textarea>
     <div class="chips">
       <button type="button" class="chip" data-q="Procuro casa em condomínio em Bertioga para temporada">Casa em Bertioga</button>
       <button type="button" class="chip" data-q="Como comparar financiamento e verificar FGTS?">Financiamento e FGTS</button>
