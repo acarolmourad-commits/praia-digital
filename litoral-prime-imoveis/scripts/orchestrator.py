@@ -11,11 +11,22 @@ REPO = Path(r"C:\Users\Carolina\praia-digital\litoral-prime-imoveis")
 DOMAIN = "https://praia.digital/litoral-prime-imoveis"
 
 
+SKIP_TOKENS = ("template", "backup", "draft", "internal", "temp-", "404.html")
+
+
 def refresh_sitemap():
+    def indexable(rel: str) -> bool:
+        low = rel.lower()
+        if any(tok in low for tok in SKIP_TOKENS):
+            return False
+        if rel == "sitemap.html":
+            return False
+        return True
+
     rels = sorted(
         str(Path(p).relative_to(REPO)).replace("\\", "/")
         for p in glob.glob(str(REPO / "**/*.html"), recursive=True)
-        if "template" not in p and str(Path(p).relative_to(REPO)).replace("\\", "/") != "sitemap.html"
+        if indexable(str(Path(p).relative_to(REPO)).replace("\\", "/"))
     )
     sm_path = REPO / "sitemap.xml"
     text = sm_path.read_text(encoding="utf-8") if sm_path.exists() else ""
