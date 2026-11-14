@@ -17,6 +17,12 @@ class HomogeneizacaoArticles(unittest.TestCase):
    schema=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',s,re.S)[1]);self.assertEqual(schema['url'],'https://praia.digital'+path)
    self.assertIn('Não substitui vistoria',s);self.assertNotIn('1555102190',s);self.assertNotIn('RELATED',s)
    self.assertIn(path,index);self.assertEqual(sum(i['url']==path for i in search),1);self.assertIn('https://praia.digital'+path,sitemap)
+ def test_editorial_structure(self):
+  for slug in SLUGS:
+   s=(ROOT/"blog"/f"{slug}.html").read_text()
+   self.assertIn("homog-editorial.css",s);self.assertIn("homog-toc",s);self.assertIn("homog-concepts",s);self.assertIn("homog-callout",s)
+   ids=re.findall(r'id="([^"]+)"',s);self.assertEqual(len(ids),len(set(ids)))
+   for anchor in re.findall(r'href="#([^"]+)"',s):self.assertIn(anchor,ids)
  def test_internal_links(self):
   for slug in SLUGS:
    s=(ROOT/'blog'/f'{slug}.html').read_text()
