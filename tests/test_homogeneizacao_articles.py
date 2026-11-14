@@ -20,7 +20,7 @@ class HomogeneizacaoArticles(unittest.TestCase):
  def test_editorial_structure(self):
   for slug in SLUGS:
    s=(ROOT/"blog"/f"{slug}.html").read_text()
-   self.assertIn("homog-editorial.css",s);self.assertIn("homog-toc",s);self.assertIn("homog-concepts",s);self.assertIn("homog-callout",s)
+   self.assertNotIn("pd-shared-footer",s);self.assertNotIn("wa.me",s);self.assertIn("mailto:comercial@praia.digital",s);self.assertIn("homog-editorial.css",s);self.assertIn("homog-toc",s);self.assertIn("homog-concepts",s);self.assertIn("homog-callout",s)
    ids=re.findall(r'id="([^"]+)"',s);self.assertEqual(len(ids),len(set(ids)))
    for anchor in re.findall(r'href="#([^"]+)"',s):self.assertIn(anchor,ids)
  def test_internal_links(self):
