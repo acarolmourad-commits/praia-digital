@@ -30,13 +30,14 @@ def refresh_sitemap():
     )
     sm_path = REPO / "sitemap.xml"
     text = sm_path.read_text(encoding="utf-8") if sm_path.exists() else ""
+    # Preservar apenas o prólogo (declaração XML + <urlset ...>). O epílogo é
+    # sempre reescrito: reconstruir o sufixo a partir do arquivo anterior
+    # descartava o </urlset> e gerava XML inválido (sitemap truncado no ar).
     if "<url>" in text:
         prefix = text.split("<url>")[0]
-        suffix = text.split("</url>")[-1].split("</urlset>")
-        suffix = suffix[-1].split("</urlset>")[0] if len(suffix) > 1 else ""
     else:
         prefix = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        suffix = "</urlset>"
+    suffix = "</urlset>"
     today = date.today().isoformat()
     url_blocks = []
     # Always include sitemap.html
