@@ -55,7 +55,9 @@ jobs:
       - name: Search behavior regressions
         run: node --test tests/blog-search.test.cjs
       - name: Editorial metadata and discovery paths
-        run: python3 -m unittest discover -s tests -p 'test_blog_discovery.py' -v
+        run: |
+          python3 -m unittest discover -s tests -p 'test_blog_discovery.py' -v
+          python3 -m unittest discover -s tests -p 'test_ross_heidecke_articles.py' -v
       - name: Mobile editorial journeys (offline)
         env:
           EDITORIAL_QA_OUTPUT: ${{ runner.temp }}/editorial-qa
@@ -63,6 +65,7 @@ jobs:
           npm install --prefix "$RUNNER_TEMP/editorial-browser" playwright@1.63.0 --no-audit --no-fund
           "$RUNNER_TEMP/editorial-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
           NODE_PATH="$RUNNER_TEMP/editorial-browser/node_modules" node tests/editorial-guides-browser.cjs
+          NODE_PATH="$RUNNER_TEMP/editorial-browser/node_modules" node tests/ross-articles-browser.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
