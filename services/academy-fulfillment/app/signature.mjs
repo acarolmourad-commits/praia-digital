@@ -1,3 +1,7 @@
+// Proof is process-local metadata derived only from verified exact bytes. A JSON
+// field supplied in the event cannot overwrite it or stand in for verification.
+const verifiedDigests=new WeakMap();
+export function verifiedPayloadDigest(event){return verifiedDigests.get(event);}
 export async function verifiedEvent(request,secret,now=Math.floor(Date.now()/1000),cryptoApi=crypto){
  if(!secret?.startsWith('whsec_'))throw Error('NOT_CONFIGURED');
  const header=request.headers.get('stripe-signature')||'';if(header.length>2048)throw Error('BAD_SIGNATURE');
@@ -8,5 +12,9 @@ export async function verifiedEvent(request,secret,now=Math.floor(Date.now()/100
  const prefix=new TextEncoder().encode(times[0][1]+'.');const bytes=new Uint8Array(prefix.length+size);bytes.set(prefix);bytes.set(raw,prefix.length);
  const key=await cryptoApi.subtle.importKey('raw',new TextEncoder().encode(secret),{name:'HMAC',hash:'SHA-256'},false,['verify']);let valid=false;
  for(const sig of sigs){if(!/^[a-f0-9]{64}$/.test(sig||''))continue;if(await cryptoApi.subtle.verify('HMAC',key,Uint8Array.from(sig.match(/../g),x=>parseInt(x,16)),bytes)){valid=true;break;}}
- if(!valid)throw Error('BAD_SIGNATURE');return JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(raw));
+ if(!valid)throw Error('BAD_SIGNATURE');
+ const event=JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(raw));
+ if(!event||typeof event!=='object'||Array.isArray(event))throw Error('INVALID_EVENT');
+ const hash=[...new Uint8Array(await cryptoApi.subtle.digest('SHA-256',raw))].map(x=>x.toString(16).padStart(2,'0')).join('');
+ verifiedDigests.set(event,hash);return event;
 }

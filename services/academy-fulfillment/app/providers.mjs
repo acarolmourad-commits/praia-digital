@@ -7,8 +7,8 @@ export class AcademyProviders extends ConsumerComposio {
   super(env,fetcher,['gmail','googledrive']);
   this.stripeReadonly=new StripeReadonly(env,fetcher);
  }
- call(kind,method,path,body){
+ call(kind,method,path,body,guard){
   if(kind==='stripe'){if(body!==undefined)throw Error('STRIPE_BODY_NOT_ALLOWED');return this.stripeReadonly.call(method,path);}
-  return super.call(kind,method,path,body);
+  return super.call(kind,method,path,body,guard);
  }
 }

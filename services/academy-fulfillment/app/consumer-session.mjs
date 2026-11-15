@@ -1,5 +1,6 @@
 /* Consumer session transport. Runtime activation requires verified concrete
  * provider identities, configuration and end-to-end TEST. Account provenance is verified within consumer scope; no legacy proxy fallback. */
+import {checkWriteGuard} from './write-guard.mjs';
 const ORIGIN='https://backend.composio.dev';
 const KINDS=new Set(['stripe','gmail','googledrive']);
 const same=(a,b)=>JSON.stringify([...a].sort())===JSON.stringify([...b].sort());
@@ -18,8 +19,12 @@ export class ConsumerSession {
   }
  }
  headers(){return{'content-type':'application/json','x-user-api-key':this.env.COMPOSIO_USER_API_KEY,'x-org-id':this.env.COMPOSIO_ORG_ID,'x-project-id':this.env.COMPOSIO_CONSUMER_PROJECT_ID};}
- async request(path,method,body){
-  const response=await this.fetcher(ORIGIN+'/api/v3.1/tool_router/session'+path,{method,headers:this.headers(),redirect:'error',signal:AbortSignal.timeout(25000),...(body?{body:JSON.stringify(body)}:{})});
+ async request(path,method,body,guard){
+  const url=ORIGIN+'/api/v3.1/tool_router/session'+path;
+  const options={method,headers:this.headers(),redirect:'error',signal:AbortSignal.timeout(25000),...(body?{body:JSON.stringify(body)}:{})};
+  // No await between this durable check and issuing the provider-write request.
+  if(guard!==undefined)checkWriteGuard(guard);
+  const response=await this.fetcher(url,options);
   if(!response.ok)throw Error('CONSUMER_HTTP_'+response.status);
   return response.json();
  }

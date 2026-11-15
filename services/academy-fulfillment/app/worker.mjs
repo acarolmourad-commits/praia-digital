@@ -1,6 +1,6 @@
 import {DurableObject} from 'cloudflare:workers';
 import {Ledger} from '../durable/store.mjs';
-import {verifiedEvent} from './signature.mjs';
+import {verifiedEvent,verifiedPayloadDigest} from './signature.mjs';
 import {Coordinator} from './coordinator.mjs';
 const TYPES=new Set(['checkout.session.completed','checkout.session.async_payment_succeeded','checkout.session.async_payment_failed','charge.refunded','charge.dispute.created']);
 export class AcademyLedger extends DurableObject {
@@ -36,7 +36,7 @@ export default {async scheduled(event,env,ctx){
   if(!TYPES.has(e.type))return new Response('Ignored',{status:200});
   const objectId=e.data?.object?.id;if(typeof objectId!=='string'||!Number.isInteger(e.created))return new Response('Invalid object',{status:400});
   const id=env.LEDGER.idFromName(env.STRIPE_ACCOUNT_ID+':'+env.STRIPE_MODE);
-  const ack=await env.LEDGER.get(id).intake({id:e.id,type:e.type,object_id:objectId,created:e.created});
+  const ack=await env.LEDGER.get(id).intake({id:e.id,type:e.type,object_id:objectId,created:e.created,payload_sha256:verifiedPayloadDigest(e)});
   return ack.persisted===true&&ack.event_id===e.id?new Response('Recorded',{status:200}):new Response('Not persisted',{status:503});
  }catch(_){return new Response('Webhook not accepted',{status:503});}
 }};

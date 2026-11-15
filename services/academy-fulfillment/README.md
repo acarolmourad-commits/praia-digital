@@ -36,7 +36,7 @@ Store the owner-only private catalog as `application/octet-stream` with exact or
 - Already-delivered attachments cannot be recalled after a later refund. Gmail acceptance is not proof the buyer read the email.
 
 ## Verification
-Run Node24 `npm ci`, `npm test` (110 offline tests), `npm run build` (Wrangler dry-run only). Tests include SQLite persistence, paid/async/refund cases, private-byte validation, raw MIME tampering, ambiguous send, consumer scope/config drift and synthetic end-to-end coordinator flow.
+Run Node24 `npm ci`, `npm test` (110 existing regression cases plus 74 local consolidation cases), `npm run build` (Wrangler dry-run only). Tests include SQLite persistence, paid/async/refund cases, private-byte validation, raw MIME tampering, ambiguous send, consumer scope/config drift and synthetic end-to-end coordinator flow.
 
 PR CI also runs real local workerd signed-intake/duplicate/tampered-body checks with delivery disabled and synthetic credentials. The original runtime check passed after pinning the compatibility date to the installed binary; exact revised-head CI must also pass. This is not a real payment/email/provider test.
 
@@ -54,3 +54,22 @@ Official references:
 - https://developers.google.com/workspace/gmail/api/guides/sending
 
 Stripe restricted-key reference: https://docs.stripe.com/keys
+
+## Local consolidation candidate (not published or activated)
+
+This candidate starts from PR #86 head `5247def7ed7a3546c5314ce029bda53c11473488` and keeps its Durable Object architecture. The separate Node/D1 simulation is a source of contract tests, not another active backend.
+
+- Signed exact-byte SHA-256 and event creation time are now part of immutable receipt identity. A signed receipt conflict is committed as a durable account-shard intake hold before the error reply. All new effects stop until explicit reconciliation. No automatic unhold is provided.
+- Order fingerprint conflicts hold the affected order and invalidate in-flight pre-effect CAS. Known or uncertain external effects are preserved; a message already accepted cannot be recalled. A conflict during draft creation keeps the order UNCERTAIN, and a separate hold_reason preserves the incident across recovery. The account-shard receipt hold also pauses automatic reconciliation of effects already in flight; those require manual review.
+- Charge status, currency, amount and captured amount must be fully consistent with the successful PaymentIntent. Missing or contradictory fields fail closed.
+- Existing databases without receipt payload hashes are refused with `LEDGER_SCHEMA_REVIEW_REQUIRED`. There is no implicit backfill or authorized production migration. Use a fresh local test database.
+- The added flow suite uses the real Worker/coordinator/ledger/MIME code under a Node class shim and SQLite/provider fixtures. It is not a workerd or real-provider E2E. All signing values are public fixtures and all recipients are `.invalid`.
+
+Still unresolved before real delivery: complete refund/dispute/charge-history verification, trusted buyer/recipient identity beyond a Checkout email field, authenticated current private catalog/package checks, actual provider TEST, protected credentials, storage migration/reconciliation and verified cost limits. Strict Charge equality only accepts consistent integration-currency data; it is not a new claim of tested cross-currency provider support. All deployed/configured state remains unchanged.
+
+
+### Final write boundary
+
+A reservation is not final permission to write. Every draft/send now receives a one-use, synchronous ledger guard. After MIME construction and consumer-session preflight, immediately before the outbound provider-write request, the real adapter checks the current hold, state, version, lease owner and unexpired lease. Missing, asynchronous or non-true authorization is rejected. There is no await between this check and issuing the fetch request. This closes the reproduced window where a signed conflict arrived during the preflight GET but the later POST still proceeded.
+
+Tests cover the real ConsumerComposio and AcademyProviders transport paths using fake network responses, including conflicts, revocation, lease expiry, clock reversal, version drift, asynchronous MIME construction and guard reuse. The guard cannot recall a write already issued and does not make Stripe, Drive and Gmail atomic. Real workerd behavior and provider E2E remain release gates.
