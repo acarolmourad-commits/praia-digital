@@ -25,13 +25,33 @@
         </p>
         <p class="property-meta">${p.bedrooms != null && p.bedrooms !== '' ? `${escapeHtml(p.bedrooms)} quartos · ` : ''}${escapeHtml(p.area)}</p>
         <p class="property-meta">${escapeHtml((p.tags||[]).join(', '))}</p>
-        <a class="btn-whatsapp" href="${waLink(`Olá! Tenho interesse no imóvel: ${escapeHtml(p.title)} — ${escapeHtml(p.locationLabel || p.city)}. Pode me enviar mais detalhes?`)}" target="_blank" rel="noopener">Conversar no WhatsApp</a>
+        ${p.contactEmail ? `<a class="btn-secondary" href="mailto:${escapeHtml(p.contactEmail)}?subject=${encodeURIComponent('Interesse: ' + p.title)}">Consultar por e-mail</a>` : `<a class="btn-whatsapp" href="${waLink(`Olá! Tenho interesse no imóvel: ${escapeHtml(p.title)} — ${escapeHtml(p.locationLabel || p.city)}. Pode me enviar mais detalhes?`)}" target="_blank" rel="noopener">Conversar no WhatsApp</a>`}
         <a class="btn-secondary" href="${detailUrl(p)}">Ver detalhes</a>
       </div>
     </article>
   `;
   
   const properties = [
+{
+  "id": 20,
+  "title": "Duas casas no Indaiá: 7 quartos e 6 suítes",
+  "slug": "duas-casas-indaia-432m2",
+  "city": "Bertioga",
+  "locationLabel": "Bertioga · Jardim Indaiá",
+  "type": "Venda",
+  "price": "R$ 1.150.000",
+  "bedrooms": "7",
+  "area": "432 m² de terreno · 307,91 m² cadastrados de construção",
+  "image": "https://praia.digital/assets/duas-casas-indaia-432m2/01.webp",
+  "tags": [
+    "6 suítes",
+    "Terreno 12 × 36 m",
+    "Cerca de 450 m da praia",
+    "Aceita financiamento"
+  ],
+  "description": "Casa térrea da frente com 3 quartos, sendo 2 suítes. Edícula com 4 suítes: 1 no térreo e 3 no pavimento superior. Jardim Indaiá, lado praia da Av. Anchieta. R$ 1.150.000.",
+  "contactEmail": "comercial@praia.digital"
+},
 {
   "id": 19,
   "title": "Residencial com 4 kitnets e edícula a 50 m da praia",
