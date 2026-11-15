@@ -14,6 +14,16 @@ DOMAIN = "https://praia.digital/litoral-prime-imoveis"
 SKIP_TOKENS = ("template", "backup", "draft", "internal", "temp-", "404.html")
 
 
+def _retired_slugs():
+    """Slugs de listagens aposentadas pelo proprietário (manifest na raiz do repo)."""
+    manifest = REPO.parent / "data" / "retired-listings.json"
+    try:
+        data = json.loads(manifest.read_text(encoding="utf-8"))
+        return set(data.get("slugs", []))
+    except Exception:
+        return set()
+
+
 def refresh_sitemap():
     def indexable(rel: str) -> bool:
         low = rel.lower()
@@ -39,6 +49,8 @@ def refresh_sitemap():
         prefix = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     suffix = "</urlset>"
     today = date.today().isoformat()
+    retired = _retired_slugs()
+    skipped = 0
     url_blocks = []
     # Always include sitemap.html
     url_blocks.append(
@@ -46,6 +58,10 @@ def refresh_sitemap():
         f"    <priority>0.5</priority>\n  <changefreq>weekly</changefreq>\n  </url>"
     )
     for rel in rels:
+        if rel.startswith("imoveis/") and rel.endswith(".html"):
+            if rel[len("imoveis/"):-len(".html")] in retired:
+                skipped += 1
+                continue
         loc = f"{DOMAIN}/{rel}"
         url_blocks.append(
             f"  <url>\n    <loc>{loc}</loc>\n    <lastmod>{today}</lastmod>\n"
@@ -53,7 +69,7 @@ def refresh_sitemap():
         )
     new_sm = prefix + "\n".join(url_blocks) + "\n" + suffix
     sm_path.write_text(new_sm, encoding="utf-8")
-    print(f"[OK] Sitemap sincronizado: {len(rels)} URLs")
+    print(f"[OK] Sitemap sincronizado: {len(url_blocks)} URLs ({skipped} listagens aposentadas omitidas)")
 
 
 def patch_whatsapp_links():
