@@ -25,11 +25,20 @@ DEFAULT_ROOT = Path(__file__).resolve().parents[1]
 EXCLUDE_DIRS = {'backup', 'backups', 'docs/seo/tmp_adversarial', 'assets', 'partials', 'api', '.git',
                 '.audit', '.github', '.hermes-tmp-idempotency', 'node_modules',
                 'outreach', 'dashboards', 'academy/uploads', 'backend', 'automation'}
-EXCLUDE_FILES = {'404.html'}
+EXCLUDE_FILES = {'404.html', 'template.html', 'template.htm',
+    'template-email-confirmacao-parceria-pos-formulario.html',
+    'template-followup-rapido-leads-2026-07-12.html',
+    'template-notificacao-equipe-comercial-parceria.html',
+    'template-resposta-checklist-corretores-litoral-2026-07-12.html'}
+# Unreviewed automated snapshot: article counts presented as market evidence;
+# no canonical or sourced bulletin basis. Preserve the file, omit discovery.
+EXCLUDE_PATHS = {'docs/inteligencia/boletim-automatico-2026-11-12.html'}
 EXCLUDE_PREFIX = ('obrigado-',)
 
 
 def excluded_path(rel: str) -> bool:
+    if rel in EXCLUDE_PATHS:
+        return True
     parts = rel.split('/')
     for i in range(len(parts) - 1):
         if '/'.join(parts[:i + 1]) in EXCLUDE_DIRS or parts[i] in EXCLUDE_DIRS:

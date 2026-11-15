@@ -34,22 +34,23 @@
   const properties = [
 {
   "id": 20,
-  "title": "Duas casas no Indaiá: 7 quartos e 6 suítes",
+  "title": "Casa com edícula no Indaiá: 7 quartos e 6 suítes",
   "slug": "duas-casas-indaia-432m2",
   "city": "Bertioga",
   "locationLabel": "Bertioga · Jardim Indaiá",
   "type": "Venda",
-  "price": "R$ 1.150.000",
+  "price": "R$ 1.250.000",
   "bedrooms": "7",
   "area": "432 m² de terreno · 307,91 m² cadastrados de construção",
   "image": "https://praia.digital/assets/duas-casas-indaia-432m2/01.webp",
   "tags": [
+    "Uma única residência",
     "6 suítes",
     "Terreno 12 × 36 m",
     "Cerca de 450 m da praia",
     "Aceita financiamento"
   ],
-  "description": "Casa térrea da frente com 3 quartos, sendo 2 suítes. Edícula com 4 suítes: 1 no térreo e 3 no pavimento superior. Jardim Indaiá, lado praia da Av. Anchieta. R$ 1.150.000.",
+  "description": "Uma única residência, com casa térrea na frente e edícula ao fundo, sem entradas independentes nem separação de água e energia. 7 quartos e 6 suítes no total. Jardim Indaiá, lado praia da Av. Anchieta. R$ 1.250.000.",
   "contactEmail": "comercial@praia.digital"
 },
 {

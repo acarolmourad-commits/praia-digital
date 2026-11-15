@@ -67,7 +67,7 @@ def main():
   .kpi strong{{display:block;font-size:18px;color:#0a58ca}}
   .muted{{color:#64748b;font-size:12px}}
 </style>
-</head>
+<link rel="canonical" href="https://praia.digital/docs/sales/relatorio-diario-automacao-2026-07-22.html"><meta name="robots" content="noindex, follow"></head>
 <body>
   <div class="card">
     <h1>Relatório Diário — Automação para Imobiliárias</h1>
