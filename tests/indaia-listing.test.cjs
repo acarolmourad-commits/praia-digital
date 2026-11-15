@@ -4,10 +4,10 @@ const path = require('node:path');
 const html = fs.readFileSync(path.join(__dirname,'../imoveis/duas-casas-indaia-432m2.html'),'utf8');
 const data = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
 let checks=0;
-for(const text of ['R$ 1.250.000','432 m²','307,91 m²','7 quartos','6 suítes','12 × 36 m','uma no térreo e três no pavimento superior','três quartos, sendo duas suítes','450 m','Avenida Anchieta','instituição financeira','index, follow','13 fotografias reais']) {assert.ok(html.includes(text),text); checks++;}
+for(const text of ['R$ 1.250.000','432 m²','307,91 m²','7 quartos','5 suítes','12 × 36 m','450 m','Avenida Anchieta','instituição financeira','index, follow','13 fotografias reais']) {assert.ok(html.includes(text),text); checks++;}
 assert.equal(data.offers.price,'1250000'); checks++;
 assert.equal(data.offers.priceCurrency,'BRL'); checks++;
-for(const privateOrWrong of ['Jorge Mansour','542','713.065','2.000.000','864 m²','a 50 m da praia','wa.me','teste-nao-aprovado','libfile_']) {assert.ok(!html.includes(privateOrWrong),privateOrWrong); checks++;}
+for(const privateOrWrong of ['Jorge Mansour','542','713.065','2.000.000','864 m²','a 50 m da praia','wa.me','teste-nao-aprovado','libfile_','6 suítes','seis suítes','2 suítes','duas suítes','4 suítes','quatro suítes']) {assert.ok(!html.includes(privateOrWrong),privateOrWrong); checks++;}
 assert.equal((html.match(/<h1>/g)||[]).length,1); checks++;
 assert.ok(html.includes('mailto:comercial@praia.digital')); checks++;
 console.log(`${checks} verificações de conteúdo aprovadas; página final com galeria real.`);
