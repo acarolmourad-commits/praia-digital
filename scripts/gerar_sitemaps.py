@@ -27,6 +27,13 @@ def priority(rel):
 
 def discover_pages(root):
     """Collect public pages without indexing explicit noindex/redirect pages."""
+    import json
+    if __package__:
+        from .enforce_listing_retirements import retired_page
+    else:
+        from enforce_listing_retirements import retired_page
+    manifest = Path(root) / 'data/retired-listings.json'
+    retired = set(json.loads(manifest.read_text(encoding='utf-8'))['slugs']) if manifest.exists() else set()
     pages, apps = [], []
     rules = robots_rules(Path(root))
     for dp, dn, fn in os.walk(root):
@@ -36,7 +43,7 @@ def discover_pages(root):
                 continue
             path = Path(dp) / f
             rel = os.path.relpath(path, root).replace(os.sep, '/')
-            if excluded(rel) or blocked_by_robots("/" + rel, rules) or indexing_exclusions(path):
+            if retired_page(Path(rel), retired) or Path(rel).name in {'template.html', 'template.htm'} or excluded(rel) or blocked_by_robots("/" + rel, rules) or indexing_exclusions(path):
                 continue
             rel = canonical_sitemap_path(path, Path(root))
             if rel is None:
