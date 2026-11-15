@@ -126,20 +126,23 @@ def sync_item_lists():
         return
     block = ",\n    ".join(items)
     new_items = '{\n  "@context": "https://schema.org",\n  "@type": "ItemList",\n  "name": "Imóveis no litoral de SP",\n  "itemListElement": [\n  ' + block + '\n  ]\n}'
+    import re
+    pattern = re.compile(
+        r'(<script[^>]*>\s*)\{.*?"@type":\s*"ItemList".*?(\s*</script>)', re.S
+    )
+    updated = []
     for rel in ["imoveis.html", "index.html"]:
         p = REPO / rel
         if not p.exists():
             continue
         html = p.read_text(encoding="utf-8")
-        start = html.find('{"@context": "https://schema.org", "@type": "ItemList"')
-        if start == -1:
+        if not pattern.search(html):
             continue
-        end = html.find("</script>", start) + len("</script>")
-        if end < len("</script>"):
-            continue
-        new_html = html[:start] + new_items + "\n  " + html[end:]
-        p.write_text(new_html, encoding="utf-8")
-    print(f"[OK] ItemLists sincronizados: {len(items)} imóveis")
+        new_html, n = pattern.subn(lambda m: m.group(1) + new_items + m.group(2), html, count=1)
+        if n and new_html != html:
+            p.write_text(new_html, encoding="utf-8")
+            updated.append(rel)
+    print(f"[OK] ItemLists sincronizados: {len(items)} imóveis em {len(updated)} páginas")
 
 
 def run_script(name: str, args=None):
