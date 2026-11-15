@@ -1,0 +1,35 @@
+name: Indaiá duas casas listing
+on:
+  pull_request:
+    paths:
+      - 'imoveis/duas-casas-indaia-432m2.html'
+      - 'assets/duas-casas-indaia-432m2/**'
+      - 'tests/indaia-listing-browser.cjs'
+      - 'tests/indaia-listing.test.cjs'
+      - 'js/main.js'
+      - '.github/workflows/indaia-listing-checks.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  listing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Offline listing browser checks
+        env:
+          INDAIA_QA_OUTPUT: ${{ runner.temp }}/indaia-listing-qa
+        run: |
+          npm install --prefix "$RUNNER_TEMP/indaia-browser" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/indaia-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          node tests/indaia-listing.test.cjs
+          NODE_PATH="$RUNNER_TEMP/indaia-browser/node_modules" node tests/indaia-listing-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: indaia-listing-evidence
+          path: ${{ runner.temp }}/indaia-listing-qa
