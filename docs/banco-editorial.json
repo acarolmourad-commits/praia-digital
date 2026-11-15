@@ -131386,5 +131386,273 @@
     "noticias_count": 1,
     "formacoes_count": 10,
     "total_pages": 4167
-  }
+  },
+  "academy_weekly": [
+    {
+      "date": "2026-11-15T12:12:28.688224+00:00",
+      "formation_analysis": [
+        {
+          "slug": "formacao-corretor-imoveis-litoral",
+          "status": "ok",
+          "needs": [
+            "faq",
+            "entidades",
+            "artigos_relacionados",
+            "cta"
+          ],
+          "priority": 6,
+          "size": 4038,
+          "has_faq": false,
+          "has_entities": false,
+          "has_articles": false,
+          "has_cta": false
+        },
+        {
+          "slug": "avaliacao-imoveis-ptam",
+          "status": "ok",
+          "needs": [
+            "faq",
+            "entidades",
+            "artigos_relacionados",
+            "cta"
+          ],
+          "priority": 6,
+          "size": 3947,
+          "has_faq": false,
+          "has_entities": false,
+          "has_articles": false,
+          "has_cta": false
+        },
+        {
+          "slug": "financiamento-imobiliario",
+          "status": "ok",
+          "needs": [
+            "faq",
+            "entidades",
+            "artigos_relacionados",
+            "cta"
+          ],
+          "priority": 6,
+          "size": 3949,
+          "has_faq": false,
+          "has_entities": false,
+          "has_articles": false,
+          "has_cta": false
+        },
+        {
+          "slug": "locacao-temporada-administracao",
+          "status": "ok",
+          "needs": [
+            "faq",
+            "entidades",
+            "artigos_relacionados",
+            "cta"
+          ],
+          "priority": 6,
+          "size": 4003,
+          "has_faq": false,
+          "has_entities": false,
+          "has_articles": false,
+          "has_cta": false
+        },
+        {
+          "slug": "captacao-imoveis",
+          "status": "ok",
+          "needs": [
+            "faq",
+            "entidades",
+            "artigos_relacionados",
+            "cta"
+          ],
+          "priority": 6,
+          "size": 3742,
+          "has_faq": false,
+          "has_entities": false,
+          "has_articles": false,
+          "has_cta": false
+        },
+        {
+          "slug": "marketing-imobiliario",
+          "status": "ok",
+          "needs": [
+            "faq",
+            "entidades",
+            "artigos_relacionados",
+            "cta"
+          ],
+          "priority": 6,
+          "size": 3831,
+          "has_faq": false,
+          "has_entities": false,
+          "has_articles": false,
+          "has_cta": false
+        },
+        {
+          "slug": "documentacao-imoveis",
+          "status": "ok",
+          "needs": [
+            "faq",
+            "entidades",
+            "artigos_relacionados",
+            "cta"
+          ],
+          "priority": 6,
+          "size": 3915,
+          "has_faq": false,
+          "has_entities": false,
+          "has_articles": false,
+          "has_cta": false
+        },
+        {
+          "slug": "mercado-imobiliario-litoral",
+          "status": "ok",
+          "needs": [
+            "faq",
+            "entidades",
+            "artigos_relacionados",
+            "cta"
+          ],
+          "priority": 6,
+          "size": 3929,
+          "has_faq": false,
+          "has_entities": false,
+          "has_articles": false,
+          "has_cta": false
+        }
+      ],
+      "formation_traffic": {
+        "formacao-corretor-imoveis-litoral": 3,
+        "avaliacao-imoveis-ptam": 3,
+        "mercado-imobiliario-litoral": 3,
+        "financiamento-imobiliario": 3,
+        "locacao-temporada-administracao": 3,
+        "captacao-imoveis": 3,
+        "marketing-imobiliario": 3,
+        "documentacao-imoveis": 3
+      },
+      "top_needs": [
+        {
+          "formation": "formacao-corretor-imoveis-litoral",
+          "need": "faq",
+          "priority": 6,
+          "justificativa": "Formação formacao-corretor-imoveis-litoral precisa de faq"
+        },
+        {
+          "formation": "formacao-corretor-imoveis-litoral",
+          "need": "entidades",
+          "priority": 6,
+          "justificativa": "Formação formacao-corretor-imoveis-litoral precisa de entidades"
+        },
+        {
+          "formation": "formacao-corretor-imoveis-litoral",
+          "need": "artigos_relacionados",
+          "priority": 6,
+          "justificativa": "Formação formacao-corretor-imoveis-litoral precisa de artigos_relacionados"
+        },
+        {
+          "formation": "formacao-corretor-imoveis-litoral",
+          "need": "cta",
+          "priority": 6,
+          "justificativa": "Formação formacao-corretor-imoveis-litoral precisa de cta"
+        },
+        {
+          "formation": "avaliacao-imoveis-ptam",
+          "need": "faq",
+          "priority": 6,
+          "justificativa": "Formação avaliacao-imoveis-ptam precisa de faq"
+        },
+        {
+          "formation": "avaliacao-imoveis-ptam",
+          "need": "entidades",
+          "priority": 6,
+          "justificativa": "Formação avaliacao-imoveis-ptam precisa de entidades"
+        },
+        {
+          "formation": "avaliacao-imoveis-ptam",
+          "need": "artigos_relacionados",
+          "priority": 6,
+          "justificativa": "Formação avaliacao-imoveis-ptam precisa de artigos_relacionados"
+        },
+        {
+          "formation": "avaliacao-imoveis-ptam",
+          "need": "cta",
+          "priority": 6,
+          "justificativa": "Formação avaliacao-imoveis-ptam precisa de cta"
+        },
+        {
+          "formation": "financiamento-imobiliario",
+          "need": "faq",
+          "priority": 6,
+          "justificativa": "Formação financiamento-imobiliario precisa de faq"
+        },
+        {
+          "formation": "financiamento-imobiliario",
+          "need": "entidades",
+          "priority": 6,
+          "justificativa": "Formação financiamento-imobiliario precisa de entidades"
+        }
+      ],
+      "opportunities": [
+        {
+          "formation": "formacao-corretor-imoveis-litoral",
+          "opportunity": "exercicios_praticos",
+          "justificativa": "Criar exercícios práticos para aplicar conteúdo"
+        },
+        {
+          "formation": "formacao-corretor-imoveis-litoral",
+          "opportunity": "checklists",
+          "justificativa": "Criar checklists operacionais para corretores"
+        },
+        {
+          "formation": "formacao-corretor-imoveis-litoral",
+          "opportunity": "modelos",
+          "justificativa": "Criar modelos/documentos editáveis"
+        },
+        {
+          "formation": "avaliacao-imoveis-ptam",
+          "opportunity": "exercicios_praticos",
+          "justificativa": "Criar exercícios práticos para aplicar conteúdo"
+        },
+        {
+          "formation": "avaliacao-imoveis-ptam",
+          "opportunity": "checklists",
+          "justificativa": "Criar checklists operacionais para corretores"
+        },
+        {
+          "formation": "avaliacao-imoveis-ptam",
+          "opportunity": "modelos",
+          "justificativa": "Criar modelos/documentos editáveis"
+        },
+        {
+          "formation": "financiamento-imobiliario",
+          "opportunity": "exercicios_praticos",
+          "justificativa": "Criar exercícios práticos para aplicar conteúdo"
+        },
+        {
+          "formation": "financiamento-imobiliario",
+          "opportunity": "checklists",
+          "justificativa": "Criar checklists operacionais para corretores"
+        },
+        {
+          "formation": "financiamento-imobiliario",
+          "opportunity": "modelos",
+          "justificativa": "Criar modelos/documentos editáveis"
+        },
+        {
+          "formation": "locacao-temporada-administracao",
+          "opportunity": "exercicios_praticos",
+          "justificativa": "Criar exercícios práticos para aplicar conteúdo"
+        }
+      ],
+      "created_materials": [],
+      "status": "audited"
+    }
+  ],
+  "news_audit": [
+    {
+      "date": "2026-11-15T12:12:27.097572+00:00",
+      "status": "sem_pauta_suficiente",
+      "reason": "Nenhuma pauta encontrada na semana"
+    }
+  ]
 }
