@@ -17,9 +17,9 @@ async function fixture(useConsumer=false){
  const env={AUTOMATIC_DELIVERY_ENABLED:'true',STRIPE_MODE:'test',STRIPE_ACCOUNT_ID:'acct_test',TEST_BUYER_EMAIL:'owner@example.invalid',SENDER_EMAIL:'owner@example.invalid',CATALOG_SHA256:'b'.repeat(64),EXPECTED_OFFER_COUNT:'1'};
  kv.set('approved-catalog',{sha:env.CATALOG_SHA256,data:catalog});
  const sessions=new Map();const session=id=>({id,object:'checkout.session',livemode:false,mode:'payment',status:'complete',payment_status:'paid',payment_link:'plink_test',currency:'brl',amount_total:2900,amount_subtotal:2900,total_details:{amount_discount:0,amount_shipping:0,amount_tax:0},payment_intent:'pi_test',customer_details:{email:env.TEST_BUYER_EMAIL}});
- const charge={id:'ch_test',payment_intent:'pi_test',livemode:false,paid:true,captured:true,refunded:false,amount_refunded:0,disputed:false};
+ const charge={status:'succeeded',currency:'brl',amount:2900,amount_captured:2900,id:'ch_test',payment_intent:'pi_test',livemode:false,paid:true,captured:true,refunded:false,amount_refunded:0,disputed:false};
  const client={identity:async()=>true,session:async id=>{if(id==='cs_poison')throw Error('fixture API unavailable');return sessions.get(id)||session(id);},lineItems:async()=>({has_more:false,data:[{quantity:1,currency:'brl',amount_total:2900,amount_subtotal:2900,price:{id:'price_test',product:'prod_test',livemode:false,type:'one_time',currency:'brl',unit_amount:2900}}]}),downloadVerifiedZip:async()=>zip,
- draft:async raw=>{const id='draft_'+(drafts.size+1);drafts.set(id,raw);calls.push('draft');return{id};},sendDraft:async id=>{calls.push('send');const mid='message_'+(sent.size+1);sent.set(mid,drafts.get(id));return{id:mid};},
+ draft:async(raw,guard)=>{if(guard&&guard()!==true)throw Error('FIXTURE_WRITE_DENIED');const id='draft_'+(drafts.size+1);drafts.set(id,raw);calls.push('draft');return{id};},sendDraft:async(id,guard)=>{if(guard&&guard()!==true)throw Error('FIXTURE_WRITE_DENIED');calls.push('send');const mid='message_'+(sent.size+1);sent.set(mid,drafts.get(id));return{id:mid};},
  call:async(kind,method,path)=>{
   if(kind==='stripe'){
    if(path==='/v1/account')return{data:{id:'acct_test'}};
@@ -56,7 +56,7 @@ async function fixture(useConsumer=false){
   runtimeClient.downloadVerifiedZip=client.downloadVerifiedZip;
  }
  const c=new Coordinator(ledger,storage,env,runtimeClient);
- const event=(id,type='checkout.session.completed',object='cs_valid',created=1)=>ledger.recordEvent({id,type,object_id:object,created});
+ const event=(id,type='checkout.session.completed',object='cs_valid',created=1)=>ledger.recordEvent({id,type,object_id:object,created,payload_sha256:'a'.repeat(64)});
  return{db,kv,ledger,client,c,calls,charge,sessions,session,event,drafts,sent,get alarm(){return alarm;},run:()=>c.run(clock)};
 }
 let count=0;async function test(name,fn,useConsumer=false){const f=await fixture(useConsumer);try{await fn(f);console.log('PASS',name);count++;}finally{f.db.close();}}

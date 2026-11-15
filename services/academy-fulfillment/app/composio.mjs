@@ -1,14 +1,18 @@
 /* Fixed internal provider routes. Never expose this class as a public proxy. */
+import {requireWriteGuard,checkWriteGuard} from './write-guard.mjs';
 export class Composio {
  constructor(env,fetcher=fetch){this.env=env;this.fetcher=fetcher;}
- async call(kind,method,path,body){
+ async call(kind,method,path,body,guard){
   const {url}=providerRoute(kind,method,path);
+  if(method!=='GET')requireWriteGuard(guard);
   const id=this.env[kind.toUpperCase()+'_CONNECTION_ID'];
   if(!/^ca_[A-Za-z0-9_-]+$/.test(id||'')||!this.env.COMPOSIO_API_KEY||!this.env.COMPOSIO_USER_ID)throw Error('PROVIDER_NOT_CONFIGURED');
   const host={stripe:'https://api.stripe.com',drive:'https://www.googleapis.com',gmail:'https://gmail.googleapis.com'}[kind];
   const parameters=[...url.searchParams].map(([name,value])=>({in:'query',name,value}));
   if(kind==='stripe')parameters.push({in:'header',name:'Stripe-Version',value:'2026-10-28.endive'});
-  const response=await this.fetcher('https://backend.composio.dev/api/v3.1/tools/execute/proxy',{method:'POST',headers:{'content-type':'application/json','x-api-key':this.env.COMPOSIO_API_KEY},body:JSON.stringify({connected_account_id:id,user_id:this.env.COMPOSIO_USER_ID,endpoint:host+url.pathname,method,parameters,...(body?{body}:{} )}),redirect:'error',signal:AbortSignal.timeout(25000)});
+  const options={method:'POST',headers:{'content-type':'application/json','x-api-key':this.env.COMPOSIO_API_KEY},body:JSON.stringify({connected_account_id:id,user_id:this.env.COMPOSIO_USER_ID,endpoint:host+url.pathname,method,parameters,...(body?{body}:{} )}),redirect:'error',signal:AbortSignal.timeout(25000)};
+  if(method!=='GET')checkWriteGuard(guard);
+  const response=await this.fetcher('https://backend.composio.dev/api/v3.1/tools/execute/proxy',options);
   if(!response.ok)throw Error('COMPOSIO_HTTP_'+response.status);
   const result=await response.json();
   if(!Number.isInteger(result.status)||result.status<200||result.status>=300)throw Error('PROVIDER_HTTP_FAILURE');
@@ -18,8 +22,8 @@ export class Composio {
  async session(id){if(!/^cs_[A-Za-z0-9_]+$/.test(id))throw Error('BAD_SESSION_ID');return(await this.call('stripe','GET','/v1/checkout/sessions/'+id)).data;}
  async lineItems(id){if(!/^cs_[A-Za-z0-9_]+$/.test(id))throw Error('BAD_SESSION_ID');return(await this.call('stripe','GET','/v1/checkout/sessions/'+id+'/line_items?limit=100')).data;}
  async privateMetadata(id){if(!/^[A-Za-z0-9_-]+$/.test(id))throw Error('BAD_FILE_ID');const fields='id,name,size,mimeType,trashed,driveId,owners(emailAddress),permissions(type,role,emailAddress)';const m=(await this.call('drive','GET','/drive/v3/files/'+id+'?fields='+encodeURIComponent(fields))).data;if(m?.trashed||m?.driveId||m?.owners?.length!==1||m.owners[0].emailAddress!==this.env.SENDER_EMAIL||m?.permissions?.length!==1||m.permissions[0].type!=='user'||m.permissions[0].role!=='owner'||m.permissions[0].emailAddress!==this.env.SENDER_EMAIL)throw Error('FILE_NOT_OWNER_ONLY');return m;}
- async draft(raw){if(typeof raw!=='string'||!/^[-_A-Za-z0-9]+$/.test(raw))throw Error('INVALID_MIME');return(await this.call('gmail','POST','/gmail/v1/users/me/drafts',{message:{raw}})).data;}
- async sendDraft(id){if(!/^[A-Za-z0-9_-]+$/.test(id))throw Error('INVALID_DRAFT_ID');return(await this.call('gmail','POST','/gmail/v1/users/me/drafts/send',{id})).data;}
+ async draft(raw,guard){if(typeof raw!=='string'||!/^[-_A-Za-z0-9]+$/.test(raw))throw Error('INVALID_MIME');return(await this.call('gmail','POST','/gmail/v1/users/me/drafts',{message:{raw}},guard)).data;}
+ async sendDraft(id,guard){if(!/^[A-Za-z0-9_-]+$/.test(id))throw Error('INVALID_DRAFT_ID');return(await this.call('gmail','POST','/gmail/v1/users/me/drafts/send',{id},guard)).data;}
  async downloadVerifiedZip(offer){
   if(!offer||!Number.isInteger(offer.bytes)||offer.bytes<1||offer.bytes>18*1024*1024||!/^[a-f0-9]{64}$/.test(offer.sha256||''))throw Error('INVALID_PACKAGE_MANIFEST');
   const meta=await this.privateMetadata(offer.file_id);

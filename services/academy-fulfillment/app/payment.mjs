@@ -1,4 +1,4 @@
-/* Authoritative Stripe reads via pinned Composio connection. This module does
+/* Authoritative Stripe reads via the injected, account-pinned reader. This module does
  * not accept webhook payload payment assertions; signature verification is an
  * independent prerequisite for intake. No provider writes or logs.
  * Docs: docs.stripe.com/api/checkout/sessions/object;
@@ -48,7 +48,8 @@ export async function validateSession(client,sessionId,catalog,env){
   if(pi?.id!==piId||pi.livemode!==live||pi.status!=='succeeded'||pi.currency!=='brl'||pi.amount!==amount||pi.amount_received!==amount)fail('PAYMENT_INTENT_MISMATCH');
   const chargeId=idOf(pi.latest_charge);if(!safeId(chargeId,'ch'))fail('INVALID_LATEST_CHARGE');
   const charge=(await client.call('stripe','GET','/v1/charges/'+chargeId)).data;
-  if(charge?.id!==chargeId||idOf(charge.payment_intent)!==piId||charge.livemode!==live||charge.paid!==true||charge.captured!==true)fail('CHARGE_NOT_CONFIRMED');
+  if(charge?.id!==chargeId||idOf(charge.payment_intent)!==piId||charge.livemode!==live||charge.paid!==true||charge.captured!==true||charge.status!=='succeeded')fail('CHARGE_NOT_CONFIRMED');
+  if(charge.currency!==pi.currency||charge.amount!==pi.amount||charge.amount_captured!==pi.amount)fail('CHARGE_AMOUNT_MISMATCH');
   if(charge.refunded===true||(Number.isSafeInteger(charge.amount_refunded)&&charge.amount_refunded>0)||charge.disputed===true)fail('REFUNDED_OR_DISPUTED',{revoked:true});
   if(charge.refunded!==false||charge.amount_refunded!==0||charge.disputed!==false)fail('CHARGE_RISK_STATE_UNKNOWN');
   const email=s.customer_details?.email;if(!safeBuyerEmail(email))fail('INVALID_BUYER_EMAIL');

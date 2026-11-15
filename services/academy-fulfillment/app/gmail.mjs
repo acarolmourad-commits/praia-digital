@@ -4,6 +4,7 @@
  * messages.list q=rfc822msgid + labelIds=SENT then messages.get?format=raw.
  * Calls never retry create/send automatically. No external actions on import.
  */
+import {requireWriteGuard} from './write-guard.mjs';
 const encoder=new TextEncoder();
 const decoder=new TextDecoder('utf-8',{fatal:true});
 const SUBJECT='Seu kit Praia Digital Academy';
@@ -46,7 +47,7 @@ export async function verifyRaw(row,raw,options){
 }
 export class GmailDelivery {
  constructor(composio,options){this.api=composio;this.options={senderEmail:email(options.senderEmail),messageDomain:options.messageDomain||'praia.digital'};}
- async createExactDraft(row,checked){const built=await buildMessage(row,checked.zipBytes,this.options);const result=await this.api.draft(built.raw);if(!/^[A-Za-z0-9_-]+$/.test(result?.id||''))throw Error('INVALID_DRAFT_RESPONSE');return{id:result.id};}
+ async createExactDraft(row,checked,guard){requireWriteGuard(guard);const built=await buildMessage(row,checked.zipBytes,this.options);const result=await this.api.draft(built.raw,guard);if(!/^[A-Za-z0-9_-]+$/.test(result?.id||''))throw Error('INVALID_DRAFT_RESPONSE');return{id:result.id};}
  async verifyExactDraft(row){if(!/^[A-Za-z0-9_-]+$/.test(row.draft_id||''))throw Error('INVALID_DRAFT_ID');const d=(await this.api.call('gmail','GET','/gmail/v1/users/me/drafts/'+row.draft_id+'?format=raw')).data;if(d?.id!==row.draft_id||typeof d?.message?.raw!=='string')throw Error('DRAFT_RESPONSE_MISMATCH');return verifyRaw(row,d.message.raw,this.options);}
  async findVerifiedSent(row){
   const o=orderFrom(row);const i=await intent(o,this.options.senderEmail,this.options.messageDomain);const query=new URLSearchParams({q:'rfc822msgid:'+i.messageId,labelIds:'SENT',maxResults:'2',includeSpamTrash:'true'});
@@ -57,5 +58,5 @@ export class GmailDelivery {
   for(const found of page.messages||[]){if(!/^[A-Za-z0-9_-]+$/.test(found?.id||'')||seen.has(found.id))throw Error('INVALID_SENT_SEARCH');seen.add(found.id);const message=(await this.api.call('gmail','GET','/gmail/v1/users/me/messages/'+found.id+'?format=raw')).data;if(message?.id!==found.id||!message?.labelIds?.includes('SENT'))throw Error('SENT_MESSAGE_MISMATCH');await verifyRaw(row,message.raw,this.options);results.push({id:message.id});}
   return results;
  }
- async sendExistingDraft(id){return this.api.sendDraft(id);}
+ async sendExistingDraft(id,guard){requireWriteGuard(guard);return this.api.sendDraft(id,guard);}
 }
