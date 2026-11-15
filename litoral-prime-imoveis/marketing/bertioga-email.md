@@ -12,9 +12,8 @@ Olá,
 Temos oportunidades exclusivas em Bertioga.
 
 Destaques:
-- Aluguel em Bertioga - Bertioga: R$ 2.918.000 — 100m²
-- Venda em Mata Atlântica - Bertioga: R$ 2.354.000 — 80m²
-- Lançamento em Centro - Bertioga: R$ 1.790.000 — 60m²
+- Loft em São Lourenço - Bertioga: R$ 1.747.072 — 138m²
+- Apartamento em Indaiá - Bertioga: R$ 1.211.225 — 69m²
 
 Responda este e-mail ou chame no WhatsApp: (11) 95434-6288
 ### E-mail 2
@@ -22,9 +21,8 @@ Olá,
 
 Selecionamos imóveis em Bertioga para o seu perfil.
 
-- Aluguel em Bertioga - Bertioga: R$ 2.918.000
-- Venda em Mata Atlântica - Bertioga: R$ 2.354.000
-- Lançamento em Centro - Bertioga: R$ 1.790.000
+- Loft em São Lourenço - Bertioga: R$ 1.747.072
+- Apartamento em Indaiá - Bertioga: R$ 1.211.225
 
 Quer ver mais? Clique no botão do WhatsApp.
 ### E-mail 3
@@ -32,8 +30,7 @@ Olá,
 
 Acesso antecipado para imóveis em Bertioga.
 
-- Aluguel em Bertioga - Bertioga: R$ 2.918.000
-- Venda em Mata Atlântica - Bertioga: R$ 2.354.000
-- Lançamento em Centro - Bertioga: R$ 1.790.000
+- Loft em São Lourenço - Bertioga: R$ 1.747.072
+- Apartamento em Indaiá - Bertioga: R$ 1.211.225
 
 Garanta sua preferência no atendimento.

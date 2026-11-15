@@ -12,9 +12,8 @@ Olá,
 Temos oportunidades exclusivas em Itanhaém.
 
 Destaques:
-- Aluguel em Itanhaém - Itanhaém: R$ 1.010.000 — 100m²
-- Venda em Gaivota - Itanhaém: R$ 830.000 — 80m²
-- Lançamento em Jardim Grandesp - Itanhaém: R$ 650.000 — 60m²
+- Garden em Centro - Itanhaém: R$ 7.343 — 59m²
+- Apartamento em Itanhaém - Itanhaém: R$ 1.270.870 — 138m²
 
 Responda este e-mail ou chame no WhatsApp: (11) 95434-6288
 ### E-mail 2
@@ -22,9 +21,8 @@ Olá,
 
 Selecionamos imóveis em Itanhaém para o seu perfil.
 
-- Aluguel em Itanhaém - Itanhaém: R$ 1.010.000
-- Venda em Gaivota - Itanhaém: R$ 830.000
-- Lançamento em Jardim Grandesp - Itanhaém: R$ 650.000
+- Garden em Centro - Itanhaém: R$ 7.343
+- Apartamento em Itanhaém - Itanhaém: R$ 1.270.870
 
 Quer ver mais? Clique no botão do WhatsApp.
 ### E-mail 3
@@ -32,8 +30,7 @@ Olá,
 
 Acesso antecipado para imóveis em Itanhaém.
 
-- Aluguel em Itanhaém - Itanhaém: R$ 1.010.000
-- Venda em Gaivota - Itanhaém: R$ 830.000
-- Lançamento em Jardim Grandesp - Itanhaém: R$ 650.000
+- Garden em Centro - Itanhaém: R$ 7.343
+- Apartamento em Itanhaém - Itanhaém: R$ 1.270.870
 
 Garanta sua preferência no atendimento.
