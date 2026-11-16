@@ -23,6 +23,30 @@ class ReviewedIndexing(unittest.TestCase):
     def test_reviewed_pages_and_all_sitemaps_agree(self):
         self.assertEqual([], validate_indexing_intent(ROOT))
 
+    def test_legacy_raw_sitemap_rejects_noindex_and_aliases(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root / 'data').mkdir()
+            (root / 'data/indexing-intent-20261111.json').write_text(
+                json.dumps({'canonicals': {}, 'noindex': {}}), encoding='utf-8')
+            canonical = 'https://praia.digital/page.html'
+            page = root / 'page.html'
+            (root / 'raw.xml').write_text(
+                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+                '<url><loc>' + canonical + '</loc></url></urlset>', encoding='utf-8')
+            page.write_text('<link rel="canonical" href="' + canonical + '">',
+                            encoding='utf-8')
+            self.assertEqual([], validate_indexing_intent(root))
+            page.write_text('<link rel="canonical" href="' + canonical + '">'
+                            '<meta name="robots" content="noindex,follow">',
+                            encoding='utf-8')
+            self.assertTrue(any('raw.xml: excluded page in sitemap' in error
+                                for error in validate_indexing_intent(root)))
+            page.write_text('<link rel="canonical" href="https://praia.digital/other.html">',
+                            encoding='utf-8')
+            self.assertTrue(any('raw.xml: submit the single declared canonical' in error
+                                for error in validate_indexing_intent(root)))
+
     def test_regenerated_draft_or_conflicting_canonical_cannot_pass(self):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)
