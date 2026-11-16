@@ -61,17 +61,17 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
   <label>CDI médio para comparação (% a.a.)</label><input id="cdi" type="number" step="0.1" value="13.5">
   <button onclick="calcular()">Projetar valorização</button>
   <div class="res" id="res">
-    <table>
+    <div class="pd-table-scroll" role="region" aria-label="Projeções de valorização" tabindex="0"><table>
       <tr><th></th><th>Imóvel</th><th>CDI</th></tr>
       <tr><td>Valor em <span id="prazo"></span> anos</td><td id="vfImo"></td><td id="vfCdi"></td></tr>
       <tr><td>Ganho total</td><td id="gImo"></td><td id="gCdi"></td></tr>
-    </table>
+    </table></div>
     <p id="dica" style="font-weight:700"></p>
   </div>
 </div>
 <div class="card">
 <h2 style="font-size:17px;margin-bottom:10px">📈 Valorização anual por cidade <span class="tag">12 meses até set/2026</span></h2>
-<table>
+<div class="pd-table-scroll" role="region" aria-label="Projeções de valorização" tabindex="0"><table>
   <tr><th>Cidade</th><th>Valorização 12m</th><th>Driver principal</th></tr>
   <tr><td>Bertioga</td><td>+15,2%</td><td>Riviera + expansão da orla sul</td></tr>
   <tr><td>Peruíbe</td><td>+14,1%</td><td>preço-base baixo, nova demanda</td></tr>
@@ -84,18 +84,18 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
   <tr><td>Santos</td><td>+9,8%</td><td>liquidez e requalificação do centro</td></tr>
   <tr><td>Praia Grande</td><td>+9,5%</td><td>maior estoque de lançamentos da baixada</td></tr>
   <tr><td>Guarujá</td><td>+8,9%</td><td>Enseada/Astúrias, demanda de SP</td></tr>
-</table>
+</table></div>
 <p style="font-size:12px;color:#64748B;margin-top:12px">Fonte: análise Praia Digital sobre anúncios e transações (12 meses até set/2026). Valorização passada não garante retorno futuro — use como referência, não como promessa.</p>
 </div>
 
 <div class="card">
 <h2 style="font-size:17px;margin-bottom:10px">💰 Valorização é só metade da conta: o retorno total</h2>
 <p style="font-size:14px;color:#334155">Imóvel de investimento rende de dois jeitos: <b>valorização</b> (patrimônio) e <b>aluguel</b> (renda). Somando os dois, a comparação com renda fixa muda de figura:</p>
-<table>
+<div class="pd-table-scroll" role="region" aria-label="Projeções de valorização" tabindex="0"><table>
   <tr><th>Exemplo: imóvel de R$ 500 mil em Praia Grande</th><th>Apenas valorização</th><th>Valorização + temporada</th></tr>
   <tr><td>Retorno em 10 anos (9,5% a.a. + renda líquida ~5% a.a.)</td><td>~R$ 1,24 mi</td><td>~R$ 1,24 mi + ~R$ 25 mil/ano de renda</td></tr>
   <tr><td>Equivalente em CDI (13,5% a.a. bruto)</td><td colspan="2">~R$ 1,77 mi — mas sem uso, sem hedge de inflação e com IR de 15–22,5% sobre o ganho</td></tr>
-</table>
+</table></div>
 <p style="font-size:13px;color:#64748B;margin-top:8px">Regra prática: se a <b>valorização anual + yield líquido de aluguel</b> superar o CDI após impostos, o imóvel ganha no longo prazo — e ainda entrega uso próprio nas férias.</p>
 </div>
 
@@ -112,13 +112,13 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
 
 <div class="card">
 <h2 style="font-size:17px;margin-bottom:10px">⚠️ Custos de transação que corroem o ganho (não esqueça!)</h2>
-<table>
+<div class="pd-table-scroll" role="region" aria-label="Projeções de valorização" tabindex="0"><table>
   <tr><th>Custo</th><th>Faixa típica</th><th>Quando incide</th></tr>
   <tr><td>ITBI</td><td>2–3% do valor</td><td>na compra</td></tr>
   <tr><td>Escritura + registro</td><td>~1%</td><td>na compra</td></tr>
   <tr><td>Corretagem</td><td>5–6%</td><td>na venda</td></tr>
   <tr><td>IR sobre ganho de capital</td><td>15–22,5%</td><td>na venda (há isenções, ex.: único imóvel até R$ 440 mil)</td></tr>
-</table>
+</table></div>
 <p style="font-size:13px;color:#64748B;margin-top:8px">Na prática, comprar e vender "come" 8–10% do valor do imóvel. Por isso valorização só compensa com horizonte de <b>5+ anos</b> — em prazos curtos, os custos vencem o ganho.</p>
 </div>
 

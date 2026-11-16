@@ -52,13 +52,13 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
   <label for="anual">Aluguel anual mensal possível (R$)</label><input id="anual" type="number" value="2800">
   <button onclick="calc()">Comparar modelos</button>
   <div class="res" id="res">
-    <table>
+    <div class="pd-table-scroll" role="region" aria-label="Comparação de locações" tabindex="0"><table>
       <tr><th></th><th>Temporada</th><th>Aluguel anual</th></tr>
       <tr><td>Receita bruta/mês</td><td id="bt"></td><td id="ba"></td></tr>
       <tr><td>Receita líquida/mês</td><td id="lt"></td><td id="la"></td></tr>
       <tr><td>Líquido no ano</td><td id="at"></td><td id="aa"></td></tr>
       <tr><td>Yield anual s/ valor do imóvel</td><td id="yt"></td><td id="ya"></td></tr>
-    </table>
+    </table></div>
     <p id="dica" style="font-weight:700"></p>
   </div>
 </div>
@@ -68,7 +68,7 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
 <div class="card">
 <h2 style="font-size:17px;margin-bottom:10px">📊 Temporada vs. anual por cidade <span class="tag">out/2026</span></h2>
 <p style="font-size:14px;color:#475569;margin-bottom:8px">Diária média e ocupação real de plataformas (Airbnb/Booking) no litoral de SP; líquido estimado já desconta ~28% de taxas e ~R$ 1.100/mês de custos fixos:</p>
-<table>
+<div class="pd-table-scroll" role="region" aria-label="Comparação de locações" tabindex="0"><table>
   <tr><th>Cidade</th><th>Diária média</th><th>Noites/mês</th><th>Receita mensal temporada</th><th>Aluguel anual/mês</th></tr>
   <tr><td>Guarujá</td><td>R$ 550</td><td>10</td><td>R$ 5.500 <small>(~R$ 2.860 líq.)</small></td><td>R$ 3.200</td></tr>
   <tr><td>Santos</td><td>R$ 500</td><td>9</td><td>R$ 4.500 <small>(~R$ 2.140 líq.)</small></td><td>R$ 2.900</td></tr>
@@ -76,7 +76,7 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
   <tr><td>Praia Grande</td><td>R$ 380</td><td>9</td><td>R$ 3.420 <small>(~R$ 1.362 líq.)</small></td><td>R$ 2.300</td></tr>
   <tr><td>Itanhaém</td><td>R$ 320</td><td>8</td><td>R$ 2.560 <small>(~R$ 743 líq.)</small></td><td>R$ 1.800</td></tr>
   <tr><td>Mongaguá</td><td>R$ 300</td><td>7</td><td>R$ 2.100 <small>(~R$ 412 líq.)</small></td><td>R$ 1.600</td></tr>
-</table>
+</table></div>
 <p style="font-size:13px;color:#64748B;margin-top:8px">Regra prática: temporada compensa quando a receita líquida supera o anual em 40%+ — abaixo disso, a estabilidade do contrato anual costuma vencer.</p>
 </div>
 <div class="card"><h2 style="font-size:17px;margin-bottom:6px">❓ Perguntas frequentes</h2>

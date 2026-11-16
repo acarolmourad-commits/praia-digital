@@ -6,6 +6,7 @@ on:
       - 'index.html'
       - 'apps/**'
       - 'tests/app-catalog-browser.cjs'
+      - 'tests/consorcio-regression.cjs'
       - 'captura-leads.html'
       - 'imoveis.html'
       - 'encontrar-imovel.html'
@@ -73,6 +74,7 @@ jobs:
         run: |
           python3 -m unittest discover -s tests -p 'test_homepage_content.py' -v
           node tests/test_property_search.cjs
+          node tests/consorcio-regression.cjs
           node --test tests/issue177-dom.cjs
           node tests/test_house_bertioga.cjs
           node tests/test_apartment_bertioga.cjs
