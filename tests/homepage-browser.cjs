@@ -62,8 +62,11 @@ async function homepage(page, width) {
   await page.screenshot({path:path.join(output,`app-journeys-${width}.png`)});
   await page.keyboard.press('Enter');
   await page.waitForURL(origin + '/apps/comparador-cidades/');
-  await page.goto(origin + '/#apps');
-  await journeys.waitFor();
+  for (const anchor of ['apps', 'jornadas-apps']) {
+    await page.goto(origin + '/#' + anchor);
+    await journeys.waitFor();
+    await page.waitForFunction(() => document.querySelector('#apps-titulo').getBoundingClientRect().top >= document.querySelector('.pd-site-header').getBoundingClientRect().bottom);
+  }
   await page.locator('#produtos-comparacao summary').focus();
   await page.keyboard.press('Enter');
   assert.equal(await page.locator('#produtos-comparacao details').evaluate(el=>el.open),true);

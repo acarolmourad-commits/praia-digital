@@ -24,7 +24,8 @@
 @media(max-width:640px) { #jornadas-apps .grid.g2 { grid-template-columns:minmax(0,1fr); } }
 
 /* Restored home app journeys: scoped links, touch targets and keyboard focus. */
-#apps { scroll-margin-top:6rem; background:#f8fbfb; }
+#apps { background:#f8fbfb; }
+#apps, #jornadas-apps { scroll-margin-top:6rem; }
 #jornadas-apps .app-steps { margin:16px 0 0; padding-left:1.5rem; }
 #jornadas-apps .app-steps li { padding-left:.2rem; }
 #jornadas-apps .app-steps a { display:flex; align-items:center; min-height:44px; padding:4px 0; color:#075b5c; text-decoration:underline; text-underline-offset:.2em; }
