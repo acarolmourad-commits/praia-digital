@@ -22,3 +22,38 @@
 /* Home journeys: explicit responsive two-column grid. */
 #jornadas-apps .grid.g2 { grid-template-columns:repeat(2,minmax(0,1fr)); }
 @media(max-width:640px) { #jornadas-apps .grid.g2 { grid-template-columns:minmax(0,1fr); } }
+
+/* Shared directory and next-step cards; selectors never target calculator controls. */
+.pd-network-eyebrow{font-size:.75rem;font-weight:750;letter-spacing:.12em;text-transform:uppercase}
+.pd-next-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;list-style:none;padding:0;margin:18px 0}
+.pd-next-steps li{padding:16px;border:1px solid #cbd5d6;border-radius:12px;background:#f4f8f6;min-width:0}
+.pd-next-steps a{display:inline-flex;align-items:center;min-height:44px;font-weight:700}
+.pd-next-steps p{margin:6px 0 0;font-size:.92rem;line-height:1.6}
+.pd-catalog{margin:0;color:#173b3b;background:#f4f6f2;font:16px/1.65 system-ui,sans-serif}
+.pd-catalog *{box-sizing:border-box}
+.pd-catalog-width{width:calc(100% - 40px);max-width:1120px;margin:auto}
+.pd-catalog .pd-catalog-hero{background:#123f40;color:white;padding:30px 0 56px;text-align:left}
+.pd-catalog-hero nav{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:44px}
+.pd-catalog-hero nav a{min-height:44px;display:inline-flex;align-items:center}
+.pd-catalog-hero h1{font-family:Georgia,serif;font-weight:500;font-size:clamp(2.3rem,5.5vw,4.3rem);line-height:1.08;letter-spacing:-.04em;max-width:760px;margin:14px 0 20px}
+.pd-catalog-hero p{max-width:680px;color:#e0eeea}
+.pd-catalog-hero a.pd-catalog-cta{display:inline-flex;align-items:center;min-height:48px;padding:10px 18px;background:#e0efb5;color:#173b3b;border-radius:8px;font-weight:700;text-decoration:none;margin-top:14px}
+.pd-catalog-topics{margin:28px 0 42px}
+.pd-catalog-topics ul{list-style:none;display:flex;flex-wrap:wrap;gap:10px;padding:0}
+.pd-catalog-topics a{display:flex;align-items:center;min-height:44px;padding:8px 15px;border:1px solid #9cafab;border-radius:999px;background:white;color:#173b3b;text-decoration:none}
+.pd-catalog main>section{margin:0 0 48px;scroll-margin-top:110px}
+.pd-catalog h2{font:500 clamp(1.65rem,3vw,2.2rem)/1.2 Georgia,serif;margin:0 0 12px}
+.pd-catalog h3{font-size:1.1rem;line-height:1.35;margin:0 0 12px}
+.pd-catalog a{color:#075b5c;text-underline-offset:.2em}
+.pd-catalog-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:24px}
+.pd-catalog-card{background:#fff;border:1px solid #cbd5d6;border-radius:16px;padding:24px;min-width:0;overflow-wrap:anywhere}
+.pd-catalog-card h3 a{display:inline-flex;align-items:center;min-height:44px}
+.pd-catalog-card p{margin:10px 0}
+.pd-catalog-hint{border-top:1px solid #dbe4df;padding-top:12px;color:#526866;font-size:.9rem}
+.pd-catalog-method{padding:28px;border-left:4px solid #8a9e52;background:#e8eee1;border-radius:8px}
+.pd-catalog-method ol{padding-left:22px}
+.pd-catalog-method li{margin:12px 0}
+.pd-catalog-footer{padding:30px 20px;text-align:center;border-top:1px solid #cbd5d6}
+.pd-catalog :focus-visible{outline:3px solid #b78432;outline-offset:4px}
+@media(max-width:800px){.pd-catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pd-next-steps{grid-template-columns:1fr}}
+@media(max-width:520px){.pd-catalog-grid{grid-template-columns:1fr}.pd-catalog-card{padding:20px}.pd-catalog-hero nav{gap:16px}.pd-catalog-method{padding:22px}.pd-catalog-hero h1{font-size:2.5rem}}
