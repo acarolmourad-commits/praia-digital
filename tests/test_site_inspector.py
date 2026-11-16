@@ -57,7 +57,8 @@ class InspectorTests(unittest.TestCase):
         self.write('apps/demo/index.html', 'ok')
         for url in ('../blog/a%C3%A7%C3%A3o.html?x=1#intro',
                     'https://praia.digital/blog/a%C3%A7%C3%A3o.html#intro',
-                    '//praia.digital/blog/a%C3%A7%C3%A3o.html'):
+                    '//praia.digital/blog/a%C3%A7%C3%A3o.html',
+                    'https://www.praia.digital/blog/a%C3%A7%C3%A3o.html'):
             kind, target = inspector.reference(url, 'cidades/itanhaem.html')
             self.assertEqual(kind, 'internal')
             self.assertTrue(inspector.local_exists(target, self.root))
@@ -226,7 +227,11 @@ class InspectorTests(unittest.TestCase):
         self.assertIn("github.event_name != 'pull_request'", workflow)
         self.assertIn("github.event.schedule == '0 11 * * 1'", workflow)
         self.assertEqual(workflow.count('issues: write'), 1)
-        self.assertIn('retention-days: 7', workflow)
+        self.assertIn('retention-days: 30', workflow)
+        self.assertIn('needs: test', workflow)
+        self.assertIn('test_link_inventory.py', workflow)
+        self.assertIn('inputs.check_external', workflow)
+        self.assertIn('args+=(--no-publish)', workflow)
 
 
 if __name__ == '__main__':

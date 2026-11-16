@@ -59,7 +59,7 @@ def reference(value, page, base=None):
             return 'ignored', 'invalid_or_credential_url'
         if url.port not in (None, 80, 443):
             return 'ignored', 'nonstandard_port'
-        if url.hostname == 'praia.digital':
+        if url.hostname in ('praia.digital', 'www.praia.digital'):
             return 'internal', unquote(url.path)
         host = url.hostname.encode('idna').decode('ascii').lower()
         if ':' in host:
@@ -235,10 +235,11 @@ def issue_body(day, pages, broken, outdated):
     return (f'## Relatorio de Inspecao — {day}\n\nPaginas inspecionadas: **{pages}**\n\n'
             + md_section('Links internos quebrados', broken,
                          lambda b: f"- `{b['page']}` → link `{b['link']}`")
-            + '\n' + md_section('Conteudo desatualizado (anos antigos)', outdated,
+            + '\n' + md_section('Mencoes a anos anteriores — revisar contexto, sem presumir erro', outdated,
                                 lambda o: f"- `{o['page']}` menciona **{o['year']}**: \"...{o['context']}...\"")
             + '\n---\nGerado pelo agente **site-inspector**. Verificacao local; '
-              'ocorrencias requerem revisao. Resultados HTTP externos ficam somente no artefato.\n')
+              'ocorrencias requerem revisao, nao reescrita automatica. '
+              'Resultados HTTP externos ficam somente no artefato.\n')
 
 
 def publish_issue(day, pages, broken, outdated):

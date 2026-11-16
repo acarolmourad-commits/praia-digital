@@ -30,6 +30,13 @@ try{for(const width of [360,768,1280]){
   await page.screenshot({path:`/tmp/praia-catalog-${width}.png`,fullPage:true});
   for(const link of links){
     await page.goto(origin+link);
+    assert.equal(await page.locator('.pd-workflow h3').count(),1,link);
+    assert.equal(await page.locator('.pd-workflow dd').count(),2,link);
+    assert.ok(await page.locator('.pd-workflow').isVisible(),link);
+    if(link==='/apps/revisor-anuncios/' && process.env.HOMEPAGE_QA_OUTPUT){
+      fs.mkdirSync(process.env.HOMEPAGE_QA_OUTPUT,{recursive:true});
+      await page.locator('.pd-workflow').screenshot({path:path.join(process.env.HOMEPAGE_QA_OUTPUT,`app-guidance-${width}.png`)});
+    }
     const menu=page.locator('.pd-network details');
     await menu.locator('summary').click();
     assert.equal(await menu.locator('li').count(),15,link);
