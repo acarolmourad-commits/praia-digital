@@ -2,8 +2,9 @@
 """Agente Site Inspector (praia.digital).
 Inspeciona todas as paginas HTML do repo: links internos quebrados e conteudo
 desatualizado (referencias a anos antigos). Gera relatorio e abre/atualiza uma
-issue no GitHub com label 'site-inspection' para o subagente site-fixer agir."""
+issue no GitHub com label 'site-inspection' para revisao contextual."""
 import os, re, json, glob, datetime, urllib.request
+from link_inventory import inspect_links
 
 TOKEN = os.environ.get('GITHUB_TOKEN','')
 REPO = os.environ.get('GITHUB_REPOSITORY','acarolmourad-commits/praia-digital')
@@ -13,30 +14,15 @@ CURRENT_YEAR = datetime.date.today().year
 HTML = [f for f in glob.glob('**/*.html', recursive=True)
         if not f.startswith(('node_modules/', '.git/', 'social/'))]
 
-LINK_RE = re.compile(r'(?:href|src)=["\']([^"\']+)["\']')
 YEAR_RE = re.compile(r'\b(20(?:19|20|21|22|23|24|25))\b')
-SKIP_PREFIX = ('http://','https://','mailto:','tel:','#','javascript:','data:')
 
-def resolve(src, base):
-    p = src.split('#')[0].split('?')[0]
-    if not p: return True  # ancora pura
-    if p.startswith('/'):
-        cand = p.lstrip('/')
-    else:
-        cand = os.path.normpath(os.path.join(os.path.dirname(base), p))
-    for c in (cand, cand + '.html', os.path.join(cand, 'index.html')):
-        if os.path.exists(c): return True
-    return False
-
-broken, outdated = [], []
+broken, outdated, external = [], [], set()
 for f in HTML:
     try: txt = open(f, encoding='utf-8', errors='ignore').read()
     except Exception: continue
-    for m in LINK_RE.finditer(txt):
-        u = m.group(1).strip()
-        if u.startswith(SKIP_PREFIX): continue
-        if not resolve(u, f):
-            broken.append({'page': f, 'link': u})
+    page_broken, page_external = inspect_links(txt, f)
+    broken.extend(page_broken)
+    external.update(page_external)
     # texto visivel (fora de tags) com anos antigos
     for seg in re.findall(r'>([^<>]+)<', txt):
         for ym in YEAR_RE.finditer(seg):
@@ -49,6 +35,11 @@ report = {
     'broken_links': broken[:200],
     'outdated_mentions': outdated[:200],
     'totals': {'broken': len(broken), 'outdated': len(outdated)},
+    'external_links': sorted(external),
+    'coverage': {'internal': 'static href/src including same-host absolute URLs',
+                 'external_http_checked': False, 'external_unique': len(external),
+                 'fragments_checked': False, 'rendered_javascript_checked': False},
+    'status': 'needs_review' if broken or outdated else 'static_checks_passed',
 }
 json.dump(report, open('site_inspection_report.json','w'), ensure_ascii=False, indent=2)
 
@@ -63,12 +54,14 @@ body = f"""## Relatorio de Inspecao — {TODAY}
 
 Paginas inspecionadas: **{len(HTML)}**
 
+Escopo: atributos HTML href/src, incluindo URLs absolutas do proprio dominio. Links externos inventariados: **{len(external)}**, sem verificacao HTTP. Fragmentos e links gerados por JavaScript nao foram validados. Execucao bem-sucedida significa relatorio gerado, nao ausencia de pendencias.
+
 {md_section('Links internos quebrados', broken, lambda b: f"- `{b['page']}` → link `{b['link']}`")}
 
-{md_section('Conteudo desatualizado (anos antigos)', outdated, lambda o: f"- `{o['page']}` menciona **{o['year']}**: \"...{o['context']}...\"")}
+{md_section('Mencoes a anos anteriores — revisar contexto, sem presumir erro', outdated, lambda o: f"- `{o['page']}` menciona **{o['year']}**: \"...{o['context']}...\"")}
 
 ---
-Gerado pelo agente **site-inspector**. O subagente **site-fixer** pode aplicar correcoes automaticas via workflow `site-fixer.yml` (dispatch com o numero desta issue) ou rotulo `site-fix`.
+Gerado pelo **site-inspector**. Confirme cada destino e o contexto editorial antes de corrigir. O relatorio nao autoriza reescrever artigos nem trocar destinos por suposicao.
 """
 
 def gh(method, path, payload=None):

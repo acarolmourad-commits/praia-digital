@@ -6,6 +6,7 @@ on:
       - 'index.html'
       - 'css/app-network.css'
       - 'data/app-network.json'
+      - 'data/app-guidance.json'
       - 'scripts/build_app_network.py'
       - 'tests/test_complete_app_network.py'
       - '.github/workflows/app-network-checks.yml'
