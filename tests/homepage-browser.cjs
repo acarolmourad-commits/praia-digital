@@ -81,7 +81,7 @@ async function appCatalog(browser, page, width) {
   await catalog.screenshot({path:path.join(output,`app-catalog-${width}.png`)});
   await page.locator('#catalogo-apps a[href="/apps/comparador-cidades/"]').click();
   await page.waitForURL(origin + '/apps/comparador-cidades/');
-  await page.locator('a[href="/apps/"]').first().click();
+  await page.locator('.pd-network-nav a[href="/apps/"]').click();
   await page.waitForURL(origin + '/apps/');
   assert.equal(await cards.count(),16,'return from app keeps complete catalog');
   const offline = await offlineContext(browser, width, {javaScriptEnabled:false});
