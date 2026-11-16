@@ -22,6 +22,15 @@ class Links(HTMLParser):
         if self.current is not None: self.current[1] += data
 
 class CitySearchLinksTests(unittest.TestCase):
+    def test_itanhaem_elevator_recommends_existing_seasonal_guide(self):
+        target = '/blog/itanhaem-guia-locacao-temporada-imoveis-2026.html'
+        links = Links((ROOT / 'cidades/itanhaem-elevador.html').read_text()).links
+        seasonal = [url for url, text in links if 'Aluguel de temporada' in text]
+        self.assertEqual([target], seasonal)
+        article = ROOT / target.lstrip('/')
+        self.assertTrue(article.is_file())
+        self.assertIn('https://praia.digital' + target, article.read_text())
+
     def test_no_invalid_protocol_relative_home(self):
         for slug in ['santos', 'praia-grande', 'guaruja', 'bertioga']:
             links = Links((ROOT / 'cidades' / (slug + '.html')).read_text()).links
