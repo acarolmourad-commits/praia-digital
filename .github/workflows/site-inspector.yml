@@ -1,6 +1,12 @@
 name: Site Inspector (3x/dia)
 
 on:
+  pull_request:
+    paths:
+      - 'scripts/site_inspector.py'
+      - 'scripts/link_inventory.py'
+      - 'tests/test_link_inventory.py'
+      - '.github/workflows/site-inspector.yml'
   schedule:
     # 8h, 14h e 20h horario de Brasilia (UTC-3)
     - cron: '0 11,17,23 * * *'
@@ -8,11 +14,22 @@ on:
 
 permissions:
   contents: read
-  issues: write
 
 jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -p 'test_link_inventory.py' -v
   inspect:
-    if: ${{ !github.event.repository.fork }}
+    needs: regression
+    if: ${{ github.event_name != 'pull_request' && !github.event.repository.fork }}
+    permissions:
+      contents: read
+      issues: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -29,3 +46,4 @@ jobs:
           name: site-inspection-report
           path: site_inspection_report.json
           if-no-files-found: ignore
+          retention-days: 30

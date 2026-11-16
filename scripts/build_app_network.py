@@ -7,8 +7,18 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-def render(groups, current=None):
+def render(groups, current=None, guidance=None):
     esc = html.escape
+    titles = {a['slug']: a['title'] for g in groups for a in g['apps']}
+    guide = (guidance or {}).get(current)
+    practical = ''
+    if guide:
+        next_links = ''.join(f'<li><a href="/apps/{esc(slug)}/">{esc(titles[slug])}</a></li>' for slug in guide['next'])
+        practical = ('<div class="pd-workflow" aria-labelledby="pd-workflow-title">'
+            '<h3 id="pd-workflow-title">Use este resultado na sua rotina</h3>'
+            '<dl><div><dt>Antes de começar</dt><dd>' + esc(guide['prepare']) + '</dd></div>'
+            '<div><dt>O que registrar</dt><dd>' + esc(guide['record']) + '</dd></div></dl>'
+            + ('<p><strong>Continue sua análise</strong></p><ul class="pd-next-links">' + next_links + '</ul>' if next_links else '<p>Explore outras ferramentas no catálogo ao final desta seção.</p>') + '</div>')
     sections = []
     for group in groups:
         links = []
@@ -21,21 +31,27 @@ def render(groups, current=None):
     return ('<section class="pd-network" aria-labelledby="pd-network-title">'
             '<h2 id="pd-network-title">Continue com o próximo aplicativo</h2>'
             '<p class="pd-network-intro">Use uma ficha conferida, anote suas premissas e escolha o recurso da próxima etapa. Você pode voltar ao catálogo a qualquer momento.</p>'
-            '<details><summary>Explorar a rede completa de aplicativos</summary>' + ''.join(sections) + '</details>'
+            + practical + '<details><summary>Explorar a rede completa de aplicativos</summary>' + ''.join(sections) + '</details>'
             '<p><a href="/apps/">Catálogo de aplicativos</a> · <a href="/#rede-apps">Roteiros na página inicial</a> · <a href="/servicos.html">Apoio profissional</a></p>'
             '<p class="pd-network-note">Os links não transferem dados automaticamente. Confira fontes, datas, custos e limitações antes de decidir. Simulações não são laudos, aprovação de crédito nem garantia de retorno.</p></section>')
 
 def build(root=ROOT, check=False):
     groups = json.loads((root / 'data/app-network.json').read_text(encoding='utf-8'))
+    guidance = json.loads((root / 'data/app-guidance.json').read_text(encoding='utf-8'))
     slugs = [a['slug'] for g in groups for a in g['apps']]
     actual = {p.parent.name for p in (root / 'apps').glob('*/index.html')}
     if len(slugs) != len(set(slugs)) or set(slugs) != actual:
         raise ValueError('App registry must match every published app exactly once')
+    if set(guidance) != set(slugs):
+        raise ValueError('Every app needs practical guidance')
+    for slug, guide in guidance.items():
+        if not guide['prepare'].strip() or not guide['record'].strip() or any(s not in slugs or s == slug for s in guide['next']):
+            raise ValueError('Invalid practical guidance: ' + slug)
     changed = []
     for slug in [None] + slugs:
         path = root / 'apps' / (slug or '') / 'index.html'
         text = path.read_text(encoding='utf-8')
-        network = render(groups, slug)
+        network = render(groups, slug, guidance)
         pattern = r'<section\b[^>]*class="pd-network"[^>]*>[\s\S]*?</section>'
         if re.search(pattern, text):
             updated = re.sub(pattern, lambda _: network, text, count=1)
