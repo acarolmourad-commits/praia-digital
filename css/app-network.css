@@ -49,3 +49,7 @@
 #catalogo-apps{display:block}.pd-catalog-group{margin-bottom:2rem;scroll-margin-top:1rem}.pd-catalog-group h2{font-size:1.3rem;line-height:1.35;margin-bottom:.5rem}.pd-catalog-group>p{color:#475569;line-height:1.5;margin-bottom:1rem}.pd-catalog-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.pd-catalog-cards .card:focus-visible{outline:3px solid #075985;outline-offset:3px}@media(max-width:639px){.pd-catalog-cards{grid-template-columns:1fr}}
 
 #rede-apps{scroll-margin-top:6rem}
+
+/* Keep wide comparison tables readable without widening the whole app. */
+.pd-table-scroll{max-width:100%;overflow-x:auto;overscroll-behavior-x:contain}
+.pd-table-scroll:focus-visible{outline:3px solid #0e7c7b;outline-offset:3px}

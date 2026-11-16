@@ -3,6 +3,7 @@ const {chromium}=require('playwright');
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const root=process.env.HOMEPAGE_PREVIEW_ROOT||path.resolve(__dirname,'..');
 const origin='https://praia.digital';
+const problems=[];
 (async()=>{const browser=await chromium.launch({headless:true,executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE||undefined,args:['--no-sandbox']});
 try{for(const width of [360,768,1280]){
   const context=await browser.newContext({viewport:{width,height:900},serviceWorkers:'block'});
@@ -21,7 +22,10 @@ try{for(const width of [360,768,1280]){
   assert.equal(await page.locator('.pd-catalog-group .card').count(),16);
   assert.equal(await page.locator('#guia-premissas').count(),1);
   const links=await page.locator('.pd-catalog-group .card').evaluateAll(nodes=>nodes.map(a=>a.getAttribute('href')));
-  const overflow=async()=>assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`Overflow ${page.url()} ${width}`);
+  const overflow=async()=>{
+    const spill=await page.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth,elements:[...document.querySelectorAll('body *')].filter(el=>{const b=el.getBoundingClientRect();return b.width>0&&(b.left< -1||b.right>innerWidth+1)&&getComputedStyle(el).position!=='absolute';}).slice(0,8).map(el=>({tag:el.tagName,id:el.id,cls:el.className,width:el.getBoundingClientRect().width}))}));
+    if(spill.scroll>width+1){problems.push({url:page.url(),...spill});console.log(JSON.stringify(problems.at(-1)));}
+  };
   await overflow();
   await page.screenshot({path:`/tmp/praia-catalog-${width}.png`,fullPage:true});
   for(const link of links){
@@ -34,5 +38,5 @@ try{for(const width of [360,768,1280]){
     assert.equal(new URL(page.url()).pathname,'/apps/');
   }
   await context.close();console.log(`Catalog and 16 return journeys passed at ${width}px`);
-}}
+}assert.deepEqual(problems,[],'All app pages must fit the viewport');}
 finally{await browser.close();}})().catch(error=>{console.error(error);process.exit(1);});
