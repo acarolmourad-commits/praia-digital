@@ -368,11 +368,11 @@ async function houseListing(page,width){
       page.on('pageerror', error => errors.push(error.message));
       try {
         await homepage(page, width);
-        await appCatalog(browser, page, width);
         await searchJourney(page, width);
         await purposeTransitions(page);
         await contactAndCases(page, width);
         await houseListing(page,width);
+        await appCatalog(browser, page, width);
         assert.deepEqual(sideEffects, [], 'no external navigation or non-GET requests');
         assert.deepEqual(errors, [], 'no uncaught JavaScript errors');
         results.push({ width, status: 'passed', checks: ['app catalog objectives, keyboard, return and no-JS', 'home layout', 'responsive footer', 'menu escape/repeat', 'single product comparison', 'search parse/zero/positive', 'reload/back/forward/reset', 'legacy query', 'contextual contact', 'optional payment', 'illustrative cases','house catalog/photos/calculators'] });
