@@ -50,27 +50,28 @@ async function appCatalog(browser, page, width) {
   assert.equal(await page.locator('.pd-skip').evaluate(el => el === document.activeElement), true);
   await page.keyboard.press('Enter');
   assert.equal(await catalog.evaluate(el => el === document.activeElement), true);
-  for (const group of ['comparar', 'comprar', 'uso', 'profissionais', 'comercio']) {
-    const jump = page.locator('.catalog-jumps a[href="#' + group + '"]');
+  for (const group of ['grupo-planejar', 'grupo-comparar', 'grupo-preparar', 'grupo-marketplaces']) {
+    const jump = page.locator('#objetivos-apps a[href="#' + group + '"]');
     await jump.focus();
     assert.equal(await jump.evaluate(el => getComputedStyle(el).outlineStyle), 'solid');
     assert((await jump.boundingBox()).height >= 44);
     await page.keyboard.press('Enter');
     await page.waitForURL(origin + '/apps/#' + group);
-    const title = page.locator('#titulo-' + group);
+    const title = page.locator('#' + group);
     const bounds = await title.boundingBox();
     const headerBottom = await page.locator('.pd-site-header').evaluate(el => el.getBoundingClientRect().bottom);
     assert(bounds.y >= headerBottom && bounds.y + bounds.height < 900, 'objective heading is visible below sticky header');
-    const section = page.locator('#' + group);
+    assert.equal(await title.evaluate(el => el === document.activeElement), true, 'fragment transfers keyboard focus to heading');
+    const section = page.locator('.pd-catalog-group').filter({has:title});
     await section.locator('.catalog-return a').focus();
     await page.keyboard.press('Enter');
-    await page.waitForURL(origin + '/apps/#catalogo-apps');
+    await page.waitForURL(origin + '/apps/#objetivos-apps');
   }
-  const columns = await page.locator('#comprar .card').evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().x));
+  const columns = await page.locator('.pd-catalog-group:first-child .card').evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().x));
   assert.equal(columns[0] === columns[1], width < 640, 'catalog stacks on mobile');
   await noOverflow(page, 'app catalog ' + width);
   await catalog.screenshot({path:path.join(output,`app-catalog-${width}.png`)});
-  await page.locator('#comparar a[href="/apps/comparador-cidades/"]').click();
+  await page.locator('#catalogo-apps a[href="/apps/comparador-cidades/"]').click();
   await page.waitForURL(origin + '/apps/comparador-cidades/');
   await page.locator('a[href="/apps/"]').first().click();
   await page.waitForURL(origin + '/apps/');
@@ -80,10 +81,10 @@ async function appCatalog(browser, page, width) {
     const plain = await offline.context.newPage();
     await plain.goto(origin + '/apps/');
     assert.equal(await plain.locator('#catalogo-apps a.card[href^="/apps/"]').count(),16);
-    await plain.locator('.catalog-jumps a[href="#comercio"]').focus();
+    await plain.locator('#objetivos-apps a[href="#grupo-marketplaces"]').focus();
     await plain.keyboard.press('Enter');
-    await plain.waitForURL(origin + '/apps/#comercio');
-    await plain.locator('#comercio .card').click();
+    await plain.waitForURL(origin + '/apps/#grupo-marketplaces');
+    await plain.locator('.pd-catalog-group').filter({has:plain.locator('#grupo-marketplaces')}).locator('.card').click();
     await plain.waitForURL(origin + '/apps/calculadora-precificacao-shopee/');
     assert.deepEqual(offline.sideEffects,[]);
   } finally { await offline.context.close(); }

@@ -31,3 +31,21 @@
 #jornadas-apps .app-steps li { padding-left:.2rem; }
 #jornadas-apps .app-steps a { display:flex; align-items:center; min-height:44px; padding:4px 0; color:#075b5c; text-decoration:underline; text-underline-offset:.2em; }
 #jornadas-apps a:focus-visible { outline:3px solid #0e7c7b; outline-offset:4px; border-radius:2px; }
+/* Shared app journeys, including the professional tools. */
+.pd-network .pd-network-intro {max-width:70ch;margin:0 0 16px;}
+.pd-network .pd-network-group {margin:20px 0;}
+.pd-network .pd-network-group h3 {font-size:1rem;margin:0 0 8px;}
+.pd-network .pd-network-grid a {display:block;height:100%;box-sizing:border-box;text-decoration:none;}
+.pd-network .pd-network-grid a strong {display:block;text-decoration:underline;}
+.pd-network .pd-network-grid a span {display:block;color:#3e5658;font-size:.88rem;line-height:1.5;margin-top:4px;}
+.pd-network .pd-network-grid a:hover {background:#edf5f4;border-color:#0e7c7b;}
+.pd-network-nav a {display:inline-flex;align-items:center;min-height:44px;}
+.pd-home-routes ul {padding-left:20px;margin-top:16px;}
+.pd-home-routes li {margin:8px 0;}
+.pd-home-routes a {display:inline-block;min-height:44px;padding:8px 0;text-decoration:underline;text-underline-offset:.2em;}
+#catalogo-apps [id] {scroll-margin-top:110px;}
+@media(max-width:700px) {.pd-home-routes {grid-template-columns:minmax(0,1fr)!important;}}
+
+#catalogo-apps{display:block}.pd-catalog-group{margin-bottom:2rem;scroll-margin-top:1rem}.pd-catalog-group h2{font-size:1.3rem;line-height:1.35;margin-bottom:.5rem}.pd-catalog-group>p{color:#475569;line-height:1.5;margin-bottom:1rem}.pd-catalog-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.pd-catalog-cards .card:focus-visible{outline:3px solid #075985;outline-offset:3px}@media(max-width:639px){.pd-catalog-cards{grid-template-columns:1fr}}
+
+#rede-apps{scroll-margin-top:6rem}

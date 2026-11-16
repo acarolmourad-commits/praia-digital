@@ -154,28 +154,26 @@ class HomepageAppJourneys(unittest.TestCase):
         self.assertIn('outline:3px solid #0e7c7b',css)
 
 
-class AppCatalogObjectives(unittest.TestCase):
-    def test_complete_catalog_and_objective_targets(self):
+class AppCatalogKeyboard(unittest.TestCase):
+    def test_catalog_keyboard_targets_and_complete_cards(self):
         text=(ROOT/'apps/index.html').read_text()
         tags=Tags(text).tags
         ids=[a['id'] for t,a in tags if 'id' in a]
         self.assertEqual(len(ids),len(set(ids)))
-        self.assertEqual(sum(t=='main' for t,a in tags),1)
-        self.assertEqual(sum(t=='h1' for t,a in tags),1)
         cards=[a['href'] for t,a in tags if t=='a' and a.get('class')=='card']
         apps={'/apps/'+p.parent.name+'/' for p in (ROOT/'apps').glob('*/index.html')}
         self.assertEqual({p for p in cards if p.startswith('/apps/')},apps)
         self.assertEqual(len(cards),len(set(cards)))
-        for group in ['comparar','comprar','uso','profissionais','comercio']:
-            section=next(a for t,a in tags if t=='section' and a.get('id')==group)
-            self.assertEqual(section['aria-labelledby'],'titulo-'+group)
-            self.assertIn('titulo-'+group,ids)
-            self.assertTrue(any(t=='a' and a.get('href')=='#'+group for t,a in tags))
-        self.assertIn('não transferem dados entre aplicativos',text)
+        for group in ['grupo-planejar','grupo-comparar','grupo-preparar','grupo-marketplaces']:
+            heading=next(a for t,a in tags if t=='h2' and a.get('id')==group)
+            self.assertEqual(heading['tabindex'],'-1')
+        self.assertEqual(sum(t=='a' and a.get('href')=='#objetivos-apps' for t,a in tags),4)
+        main=next(a for t,a in tags if t=='main')
+        self.assertEqual(main['id'],'catalogo-apps');self.assertEqual(main['tabindex'],'-1')
+        skip=next(a for t,a in tags if t=='a' and 'pd-skip' in a.get('class','').split())
+        self.assertIn('skip-link',skip['class'].split());self.assertEqual(skip['href'],'#catalogo-apps')
         for t,a in tags:
             href=a.get('href','')
             if t=='a' and href.startswith('#'):self.assertIn(href[1:],ids)
-        self.assertFalse(any(t in ('form','input','button') for t,a in tags))
-        self.assertTrue(any(t=='a' and 'pd-skip' in a.get('class','').split() and a.get('href')=='#catalogo-apps' for t,a in tags))
 
 if __name__=='__main__': unittest.main()
