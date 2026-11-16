@@ -96,4 +96,61 @@ class HomepageSocialPreview(unittest.TestCase):
         self.assertTrue(all(t.get('x')=='600' for t in texts))
         self.assertIn('text-anchor="middle"',svg)
 
+
+class HomepageAppJourneys(unittest.TestCase):
+    def setUp(self):
+        self.html=(ROOT/'index.html').read_text()
+        self.tags=Tags(self.html).tags
+
+    def test_restored_home_anchors_resolve_network_backlinks(self):
+        from urllib.parse import urlsplit
+        ids=[a['id'] for t,a in self.tags if 'id' in a]
+        for anchor in ['apps','jornadas-apps']:
+            self.assertEqual(ids.count(anchor),1,anchor)
+        checked=0
+        pages=[ROOT/'apps/index.html',*sorted((ROOT/'apps').glob('*/index.html'))]
+        for page in pages:
+            for tag,attrs in Tags(page.read_text()).tags:
+                if tag!='a': continue
+                url=urlsplit(attrs.get('href',''))
+                if url.netloc not in ('','praia.digital'): continue
+                if url.path in ('','/') and url.fragment in ('apps','jornadas-apps'):
+                    self.assertIn(url.fragment,ids,str(page))
+                    checked+=1
+        self.assertGreater(checked,0)
+
+    def test_journeys_link_every_public_app_with_canonical_paths(self):
+        links={a.get('href') for t,a in self.tags if t=='a'}
+        apps=sorted((ROOT/'apps').glob('*/index.html'))
+        self.assertGreater(len(apps),0)
+        for app in apps:
+            self.assertIn('/apps/'+app.parent.name+'/',links)
+        self.assertNotRegex(self.html,r'href=["\']/apps/[^"\']+/index\.html')
+
+    def test_four_accessible_routes_and_clear_simulation_limits(self):
+        import html
+        match=re.search(r'<section id="apps"[^>]*>(.*?)</section>',self.html,re.S)
+        self.assertIsNotNone(match)
+        section=match.group(0)
+        tags=Tags(section).tags
+        attrs=next(a for t,a in tags if t=='section')
+        self.assertEqual(attrs['aria-labelledby'],'apps-titulo')
+        self.assertTrue(any(t=='h2' and a.get('id')=='apps-titulo' for t,a in tags))
+        self.assertEqual(sum(t=='article' for t,a in tags),4)
+        self.assertEqual(sum(t=='ol' for t,a in tags),4)
+        text=html.unescape(re.sub('<[^>]+>',' ',section))
+        self.assertIn('não transferem dados automaticamente',text)
+        self.assertIn('não garantem retorno ou aprovação de crédito',text)
+        self.assertNotRegex(text,r'R\$\s*\d|renda garantida|garantimos reservas')
+        self.assertFalse(any(t in ('script','form','input') for t,a in tags))
+
+    def test_journey_styles_are_responsive_and_keyboard_accessible(self):
+        css=(ROOT/'css/app-network.css').read_text()
+        self.assertIn('#jornadas-apps .grid.g2',css)
+        self.assertIn('@media(max-width:640px)',css)
+        self.assertIn('#jornadas-apps .app-steps a',css)
+        self.assertIn('min-height:44px',css)
+        self.assertIn('#jornadas-apps a:focus-visible',css)
+        self.assertIn('outline:3px solid #0e7c7b',css)
+
 if __name__=='__main__': unittest.main()
