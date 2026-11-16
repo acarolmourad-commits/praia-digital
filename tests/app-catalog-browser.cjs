@@ -18,10 +18,9 @@ try{for(const width of [360,768,1280]){
   const page=await context.newPage();
   await page.goto(origin+'/apps/');
   assert.equal(await page.locator('.pd-site-header').count(),1);
-  assert.equal(await page.locator('.pd-catalog-card').count(),16);
-  await page.locator('.pd-catalog-cta').click();
-  assert.equal(new URL(page.url()).hash,'#comprar');
-  const links=await page.locator('.pd-catalog-card h3 a').evaluateAll(nodes=>nodes.map(a=>a.getAttribute('href')));
+  assert.equal(await page.locator('.pd-catalog-group .card').count(),16);
+  assert.equal(await page.locator('#guia-premissas').count(),1);
+  const links=await page.locator('.pd-catalog-group .card').evaluateAll(nodes=>nodes.map(a=>a.getAttribute('href')));
   const overflow=async()=>assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`Overflow ${page.url()} ${width}`);
   await overflow();
   await page.screenshot({path:`/tmp/praia-catalog-${width}.png`,fullPage:true});

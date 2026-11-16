@@ -1,0 +1,24 @@
+name: Complete app network
+on:
+  pull_request:
+    paths:
+      - 'apps/**'
+      - 'index.html'
+      - 'css/app-network.css'
+      - 'data/app-network.json'
+      - 'scripts/build_app_network.py'
+      - 'tests/test_complete_app_network.py'
+      - '.github/workflows/app-network-checks.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  network:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify links, coverage, anchors and generated navigation
+        run: python3 -m unittest discover -s tests -p 'test_complete_app_network.py' -v

@@ -5,8 +5,6 @@ on:
     paths:
       - 'index.html'
       - 'apps/**'
-      - 'scripts/build_app_catalog.py'
-      - 'tests/test_app_catalog.py'
       - 'tests/app-catalog-browser.cjs'
       - 'captura-leads.html'
       - 'imoveis.html'
@@ -74,7 +72,6 @@ jobs:
       - name: Focused homepage and conversion regressions
         run: |
           python3 -m unittest discover -s tests -p 'test_homepage_content.py' -v
-          python3 -m unittest discover -s tests -p 'test_app_catalog.py' -v
           node tests/test_property_search.cjs
           node --test tests/issue177-dom.cjs
           node tests/test_house_bertioga.cjs
