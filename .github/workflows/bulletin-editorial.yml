@@ -8,6 +8,7 @@ on:
       - 'docs/inteligencia/**'
       - 'scripts/*boletim*'
       - 'scripts/prepare_bulletin_candidates.py'
+      - 'partials/header.html'
       - 'assets/css/boletim.css'
       - 'assets/js/cta-newsletter.js'
       - 'js/boletim.js'
