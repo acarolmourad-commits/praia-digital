@@ -59,7 +59,8 @@ async function appCatalog(browser, page, width) {
     await page.waitForURL(origin + '/apps/#' + group);
     const title = page.locator('#titulo-' + group);
     const bounds = await title.boundingBox();
-    assert(bounds.y >= 0 && bounds.y + bounds.height < 900, 'objective heading is visible');
+    const headerBottom = await page.locator('.pd-site-header').evaluate(el => el.getBoundingClientRect().bottom);
+    assert(bounds.y >= headerBottom && bounds.y + bounds.height < 900, 'objective heading is visible below sticky header');
     const section = page.locator('#' + group);
     await section.locator('.catalog-return a').focus();
     await page.keyboard.press('Enter');

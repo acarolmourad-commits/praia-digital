@@ -176,6 +176,6 @@ class AppCatalogObjectives(unittest.TestCase):
             href=a.get('href','')
             if t=='a' and href.startswith('#'):self.assertIn(href[1:],ids)
         self.assertFalse(any(t in ('form','input','button') for t,a in tags))
-        self.assertTrue(any(t=='a' and a.get('class')=='pd-skip' and a.get('href')=='#catalogo-apps' for t,a in tags))
+        self.assertTrue(any(t=='a' and 'pd-skip' in a.get('class','').split() and a.get('href')=='#catalogo-apps' for t,a in tags))
 
 if __name__=='__main__': unittest.main()
