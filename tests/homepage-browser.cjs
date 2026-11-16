@@ -49,8 +49,28 @@ async function homepage(page, width) {
   assert.equal(await page.locator('h1').count(), 1);
   assert.equal(await page.locator('#produtos-comparacao').count(), 1);
   assert.equal(await page.locator('#planos-praia-digital').count(), 0, 'legacy plan injection must not duplicate comparison');
-  assert.equal(await page.locator('section#apps').count(), 0, 'legacy apps injection must not duplicate curated home content');
-  assert.equal(await page.locator('#analise span#apps').count(), 1, 'legacy app links land on the curated analysis section');
+  assert.equal(await page.locator('section#apps').count(), 1, 'one curated app journey section');
+  assert.equal(await page.locator('[id=apps]').count(), 1, 'no duplicated app anchor');
+  const journeys = page.locator('#jornadas-apps');
+  assert.equal(await journeys.locator('article').count(), 4);
+  const cards = await journeys.locator('article').evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().x));
+  assert.equal(cards[0] === cards[1], width <= 640, 'journeys stack on mobile');
+  const firstApp = journeys.locator('.app-steps a').first();
+  await firstApp.focus();
+  assert.equal(await firstApp.evaluate(el => getComputedStyle(el).outlineStyle), 'solid');
+  assert((await firstApp.boundingBox()).height >= 44, 'touch target');
+  await page.locator('section#apps').screenshot({path:path.join(output,`app-journeys-${width}.png`)});
+  await page.keyboard.press('Enter');
+  await page.waitForURL(origin + '/apps/comparador-cidades/');
+  for (const anchor of ['apps', 'jornadas-apps']) {
+    await page.goto(origin + '/#' + anchor);
+    await journeys.waitFor();
+    await page.waitForFunction(() => {
+      const title = document.querySelector('#apps-titulo').getBoundingClientRect();
+      return title.top >= document.querySelector('.pd-site-header').getBoundingClientRect().bottom && title.bottom < innerHeight;
+    });
+    await page.screenshot({path:path.join(output,`app-anchor-${anchor}-${width}.png`)});
+  }
   await page.locator('#produtos-comparacao summary').focus();
   await page.keyboard.press('Enter');
   assert.equal(await page.locator('#produtos-comparacao details').evaluate(el=>el.open),true);
