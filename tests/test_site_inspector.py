@@ -7,6 +7,7 @@ import json
 import os
 from pathlib import Path
 import re
+import sys
 import tempfile
 import unittest
 from unittest.mock import MagicMock, patch
@@ -14,6 +15,7 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'scripts'))
 SPEC = importlib.util.spec_from_file_location('inspector', ROOT / 'scripts/site_inspector.py')
 inspector = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(inspector)
@@ -48,9 +50,9 @@ class InspectorTests(unittest.TestCase):
         <script>const example = '<a href="/not-a-real-link">';</script>
         <!-- <a href='/comment'> -->'''
         links = inspector.References(html).links
-        self.assertEqual(len(links), 6)
-        self.assertIn(('href', '/a?x=1&y=2'), links)
-        self.assertIn(('src', 'photo.jpg'), links)
+        self.assertEqual(len(links), 2)
+        self.assertIn('/a?x=1&y=2', links)
+        self.assertIn('photo.jpg', links)
 
     def test_local_paths_queries_encoding_and_same_domain_urls(self):
         self.write('blog/ação.html', 'ok')
@@ -58,7 +60,7 @@ class InspectorTests(unittest.TestCase):
         for url in ('../blog/a%C3%A7%C3%A3o.html?x=1#intro',
                     'https://praia.digital/blog/a%C3%A7%C3%A3o.html#intro',
                     '//praia.digital/blog/a%C3%A7%C3%A3o.html',
-                    'https://www.praia.digital/blog/a%C3%A7%C3%A3o.html'):
+                    '//www.praia.digital/blog/a%C3%A7%C3%A3o.html'):
             kind, target = inspector.reference(url, 'cidades/itanhaem.html')
             self.assertEqual(kind, 'internal')
             self.assertTrue(inspector.local_exists(target, self.root))
@@ -91,18 +93,18 @@ class InspectorTests(unittest.TestCase):
         self.assertEqual(inspector.reference('https://[broken', 'index.html')[0], 'ignored')
 
     def test_scan_accounts_for_duplicates_skips_and_real_missing_files(self):
-        self.write('index.html', '''<a HREF = '/missing.html'>Missing</a>
+        self.write('index.html', '''<a HREF = '/missing.html'>Missing</a><a href='/missing.html'>Again</a>
         <a href="https://example.org/a#one">one</a><a href="https://example.org/a#two">two</a>
         <form action="https://example.org/submit"></form><a href="#top">top</a>
         <a href="mailto:a@example.org">mail</a><a href="${dynamic}">template</a>''')
         self.write('social/unused.html', '<a href="/skip">x</a>')
         counts, ignored, broken, _, errors, urls = inspector.scan(self.root)
         self.assertEqual(counts['pages_scanned'], 1)
-        self.assertEqual(counts['references_extracted'], 7)
-        self.assertEqual(counts['internal_checked'], 1)
+        self.assertEqual(counts['references_extracted'], 6)
+        self.assertEqual(counts['internal_checked'], 2)
         self.assertEqual(counts['external_references'], 2)
-        self.assertEqual(sum(ignored.values()), 4)
-        self.assertEqual(broken, [{'page': 'index.html', 'link': '/missing.html', 'attribute': 'href'}])
+        self.assertEqual(sum(ignored.values()), 2)
+        self.assertEqual(broken, [{'page': 'index.html', 'link': '/missing.html'}])
         self.assertEqual(list(urls), ['https://example.org/a'])
         self.assertEqual(errors, [])
 
@@ -199,6 +201,9 @@ class InspectorTests(unittest.TestCase):
         self.assertTrue(report['coverage_ok'])
         self.assertEqual(report['totals']['broken'], 1)
         self.assertEqual(report['external']['status'], 'not_run')
+        self.assertEqual(report['external_links'], ['https://example.org/a'])
+        self.assertFalse(report['coverage']['external_http_checked'])
+        self.assertEqual(report['status'], 'needs_review')
         self.write('index.html', '<p>No links were extracted</p>')
         with patch.object(inspector, 'publish_issue') as publish, patch.dict(os.environ, {}, clear=True), redirect_stdout(io.StringIO()):
             self.assertEqual(inspector.main(['--root', str(self.root)]), 1)
@@ -213,6 +218,8 @@ class InspectorTests(unittest.TestCase):
         self.assertEqual(report['external']['categories'], {'broken': 1})
         body = inspector.issue_body(MONDAY, 1, [], [])
         self.assertNotIn('https://example.org/a', body)
+        self.assertIn('sem presumir erro', body)
+        self.assertIn('nao autoriza reescrever artigos', body)
 
     def test_workflow_preserves_21_slots_and_isolates_prs_from_inspection(self):
         workflow = (ROOT / '.github/workflows/site-inspector.yml').read_text()

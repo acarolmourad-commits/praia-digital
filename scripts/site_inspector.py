@@ -8,7 +8,6 @@ import argparse
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 import datetime
-from html.parser import HTMLParser
 import ipaddress
 import json
 import os
@@ -19,28 +18,16 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import quote, unquote, urljoin, urlsplit, urlunsplit
 import urllib.request
 
+try:
+    from .link_inventory import HOSTS, Links as References
+except ImportError:  # Direct execution: python scripts/site_inspector.py
+    from link_inventory import HOSTS, Links as References
+
 ROOT = Path(__file__).resolve().parents[1]
 ORIGIN = 'https://praia.digital/'
-ATTRIBUTES = {'href', 'src', 'poster', 'cite', 'action', 'formaction'}
 YEAR_RE = re.compile(r'\b(20(?:19|20|21|22|23|24|25))\b')
 MAX_EXTERNAL, WORKERS, TIMEOUT = 80, 4, 12
 DETAIL_LIMIT = 200
-
-
-class References(HTMLParser):
-    def __init__(self, text):
-        super().__init__(convert_charrefs=True)
-        self.links, self.base = [], None
-        self.feed(text)
-
-    def handle_starttag(self, tag, attrs):
-        values = dict(attrs)
-        if tag == 'base':
-            if self.base is None and 'href' in values:
-                self.base = values['href']
-            return
-        self.links.extend((name, value) for name, value in attrs
-                          if name in ATTRIBUTES and value is not None)
 
 
 def reference(value, page, base=None):
@@ -59,7 +46,7 @@ def reference(value, page, base=None):
             return 'ignored', 'invalid_or_credential_url'
         if url.port not in (None, 80, 443):
             return 'ignored', 'nonstandard_port'
-        if url.hostname in ('praia.digital', 'www.praia.digital'):
+        if url.hostname in HOSTS:
             return 'internal', unquote(url.path)
         host = url.hostname.encode('idna').decode('ascii').lower()
         if ':' in host:
@@ -105,20 +92,21 @@ def scan(root=ROOT):
             continue
         counts['pages_scanned'] += 1
         parser = References(text)
-        for attr, value in parser.links:
+        page_broken = set()
+        for value in parser.links:
             counts['references_extracted'] += 1
             kind, target = reference(value, rel, parser.base)
             if kind == 'ignored':
                 ignored[target] += 1
-            elif kind == 'external' and attr in ('action', 'formaction'):
-                ignored['external_form_endpoint'] += 1
             elif kind == 'external':
                 counts['external_references'] += 1
-                external.setdefault(target, {'page': rel, 'attribute': attr})
+                external.setdefault(target, {'page': rel})
             else:
                 counts['internal_checked'] += 1
                 if not local_exists(target, root):
-                    broken.append({'page': rel, 'link': value, 'attribute': attr})
+                    if value not in page_broken:
+                        broken.append({'page': rel, 'link': value})
+                        page_broken.add(value)
         # Preserve the legacy year findings, separate from HTTP findings.
         for segment in re.findall(r'>([^<>]+)<', text):
             for match in YEAR_RE.finditer(segment):
@@ -237,9 +225,9 @@ def issue_body(day, pages, broken, outdated):
                          lambda b: f"- `{b['page']}` → link `{b['link']}`")
             + '\n' + md_section('Mencoes a anos anteriores — revisar contexto, sem presumir erro', outdated,
                                 lambda o: f"- `{o['page']}` menciona **{o['year']}**: \"...{o['context']}...\"")
-            + '\n---\nGerado pelo agente **site-inspector**. Verificacao local; '
-              'ocorrencias requerem revisao, nao reescrita automatica. '
-              'Resultados HTTP externos ficam somente no artefato.\n')
+            + '\n---\nGerado pelo **site-inspector**. Confirme cada destino e o contexto editorial '
+              'antes de corrigir. O relatorio nao autoriza reescrever artigos nem trocar destinos '
+              'por suposicao. Resultados HTTP externos ficam somente no artefato e no resumo do job.\n')
 
 
 def publish_issue(day, pages, broken, outdated):
@@ -285,6 +273,13 @@ def main(argv=None):
               'totals': {'broken': len(broken), 'outdated': len(outdated)},
               'read_errors': errors[:DETAIL_LIMIT], 'read_error_count': len(errors),
               'coverage_ok': coverage_ok, 'external': external,
+              'external_links': sorted(urls),
+              'coverage': {'internal': 'static href/src including same-host absolute URLs',
+                           'external_http_checked': bool(urls) and external['http_responses'] == len(urls),
+                           'external_http_mode': 'rotating_sample' if args.external else 'not_run',
+                           'external_unique': len(urls), 'fragments_checked': False,
+                           'rendered_javascript_checked': False},
+              'status': 'needs_review' if broken or outdated else 'static_checks_passed',
               'advisory': True, 'detail_limit': DETAIL_LIMIT}
     (args.root / 'site_inspection_report.json').write_text(
         json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
