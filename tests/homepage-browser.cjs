@@ -69,6 +69,7 @@ async function homepage(page, width) {
       const title = document.querySelector('#apps-titulo').getBoundingClientRect();
       return title.top >= document.querySelector('.pd-site-header').getBoundingClientRect().bottom && title.bottom < innerHeight;
     });
+    await page.screenshot({path:path.join(output,`app-anchor-${anchor}-${width}.png`)});
   }
   await page.locator('#produtos-comparacao summary').focus();
   await page.keyboard.press('Enter');

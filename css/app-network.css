@@ -25,6 +25,7 @@
 
 /* Restored home app journeys: scoped links, touch targets and keyboard focus. */
 #apps { background:#f8fbfb; }
+#apps .src { color:#475569; }
 #apps, #jornadas-apps { scroll-margin-top:6rem; }
 #jornadas-apps .app-steps { margin:16px 0 0; padding-left:1.5rem; }
 #jornadas-apps .app-steps li { padding-left:.2rem; }
