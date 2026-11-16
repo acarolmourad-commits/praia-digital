@@ -174,7 +174,7 @@ def validate_indexing_intent(root: Path) -> list[str]:
             target = target / 'index.html'
         if parts.scheme != 'https' or parts.netloc != 'praia.digital' or not target.is_file():
             errors.append(f'indexing intent: nonexistent canonical target: {rel}')
-    for sitemap in root.glob('sitemap*.xml'):
+    for sitemap in [*root.glob('sitemap*.xml'), *root.glob('raw.xml')]:
         try:
             document = ET.parse(sitemap)
         except ET.ParseError as exc:
@@ -278,7 +278,7 @@ def validate_sitemap(sitemap: Path, root: Path) -> list[str]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("sitemaps", nargs="*", default=["sitemap.xml", "sitemap-apps.xml"])
+    parser.add_argument("sitemaps", nargs="*", default=["sitemap.xml", "sitemap-apps.xml", "raw.xml"])
     parser.add_argument("--root", type=Path, default=DEFAULT_ROOT)
     args = parser.parse_args()
     errors = []
