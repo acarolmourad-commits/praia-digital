@@ -15,7 +15,7 @@
       <meta itemprop="name" content="${escapeHtml(p.title)}">
       ${p.image ? `<div class="property-media"><img src="${p.image}" alt="${escapeHtml(p.title)}" loading="lazy" itemprop="image"></div>` : ''}
       <div class="property-info">
-        <h3 class="property-title" itemprop="name">${escapeHtml(p.title)} ${p.score ? `<span style="margin-left:8px;font-size:12px;color:#64748b">#${p.score}</span>` : ''}</h3>
+        <h3 class="property-title" itemprop="name">${escapeHtml(p.title)}</h3>
         <p class="property-meta">${escapeHtml(p.locationLabel || p.city)} · ${escapeHtml(p.type)}</p>
         <p class="property-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
           <meta itemprop="priceCurrency" content="BRL">
@@ -25,7 +25,7 @@
         </p>
         <p class="property-meta">${p.bedrooms != null && p.bedrooms !== '' ? `${escapeHtml(p.bedrooms)} quartos · ` : ''}${escapeHtml(p.area)}</p>
         <p class="property-meta">${escapeHtml((p.tags||[]).join(', '))}</p>
-        ${p.contactEmail ? `<a class="btn-secondary" href="mailto:${escapeHtml(p.contactEmail)}?subject=${encodeURIComponent('Interesse: ' + p.title)}">Consultar por e-mail</a>` : `<a class="btn-whatsapp" href="${waLink(`Olá! Tenho interesse no imóvel: ${escapeHtml(p.title)} — ${escapeHtml(p.locationLabel || p.city)}. Pode me enviar mais detalhes?`)}" target="_blank" rel="noopener">Conversar no WhatsApp</a>`}
+        ${p.contactEmail ? `<a class="btn-secondary" href="mailto:${escapeHtml(p.contactEmail)}?subject=${encodeURIComponent('Interesse: ' + p.title)}">Consultar por e-mail</a>` : `<a class="btn-whatsapp" href="${waLink(`Olá! Tenho interesse no imóvel: ${p.title} — ${p.price} — ${p.locationLabel || p.city}. ${new URL(detailUrl(p), 'https://praia.digital/').href} Pode me enviar mais detalhes?`)}" target="_blank" rel="noopener">Conversar no WhatsApp</a>`}
         <a class="btn-secondary" href="${detailUrl(p)}">Ver detalhes</a>
       </div>
     </article>
@@ -250,7 +250,7 @@
 
       {
         "id": 9,
-        "title": "Casa em condomínio fechado - Bertioga",
+        "title": "Casa com 2 quartos em condomínio fechado em Bertioga",
         "slug": "../casa-condominio-fechado-bertioga",
         "city": "Bertioga",
         "type": "Venda",
@@ -259,8 +259,8 @@
         "area": "105m²",
         "score": 95,
         "image": "https://praia.digital/img/bertioga-casa-fachada-externa.webp",
-        "tags": ["100m da praia", "Piscina", "Sauna", "Academia"],
-        "description": "Casa em condomínio fechado a 100m da praia, com piscina, sauna e academia. Imóvel real cadastrado na Praia Digital."
+        "tags": ["Cerca de 100 m da praia", "Piscina compartilhada", "Sauna", "Academia", "Sala de jogos", "2 banheiros", "1 vaga"],
+        "description": "Casa em condomínio fechado em Bertioga: área informada de 105 m², 2 quartos, 2 banheiros e 1 vaga. Piscina, sauna, academia e sala de jogos para uso compartilhado. Condomínio informado: R$ 710/mês, com água e internet inclusas. IPTU informado: R$ 105/mês. Consulte disponibilidade, medidas, valores e condições."
       }
     ];
 
@@ -312,6 +312,11 @@
     document.getElementById('preco-label').textContent=state.finalidade==='Aluguel' ? 'Aluguel máximo (R$/mês)' : state.finalidade ? 'Preço de compra máximo (R$)' : 'Orçamento máximo (escolha a finalidade)';
   }
   function showResults() {
+    if(state.unsupportedSuites) {
+      document.getElementById('lista-imoveis').innerHTML='<p class="imoveis-empty">A busca por suítes ainda não está disponível. Retire esse requisito da busca para consultar os anúncios por quartos e confirme as suítes com a equipe.</p>';
+      document.getElementById('search-status').textContent='Quantidade de suítes não verificada. Nenhum anúncio foi selecionado como correspondente a esse requisito.';
+      return;
+    }
     if(state.preco_max && !state.finalidade) {
       document.getElementById('lista-imoveis').innerHTML='<p class="imoveis-empty">Escolha comprar ou alugar para aplicar o orçamento informado.</p>';
       document.getElementById('search-status').textContent='Finalidade pendente: preço de compra e aluguel mensal não são comparáveis.';
