@@ -474,7 +474,7 @@
     .qr-card { background: var(--sand); border-radius: 16px; padding: 2rem; text-align: center; }
     .qr-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--dark); }
     .qr-card p { font-size: 0.85rem; color: #666; margin-bottom: 1.25rem; }
-    .qr-preview { width: 120px; height: 120px; background: #eee; border-radius: 12px; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; color: #888; border: 2px solid #ddd; }
+    .qr-preview { width: 224px; height: 224px; max-width: 100%; background: #eee; border-radius: 12px; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; color: #888; border: 2px solid #ddd; }
     .qr-preview img { width: 100%; height: 100%; border-radius: 8px; }
     .qr-input { width: 100%; padding: 0.65rem 1rem; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 0.9rem; margin-bottom: 0.75rem; }
     .qr-btn { padding: 0.65rem 1.5rem; background: var(--purple); color: var(--white); border: none; border-radius: 50px; font-weight: 700; cursor: pointer; font-size: 0.85rem; transition: transform 0.2s; }
@@ -3195,11 +3195,14 @@
   <div class="qr-embed-grid">
     <div class="qr-card">
       <h3></h3>
-      <p>Gere um QR code que abre direto no listing — para imprimir ou enviar via WhatsApp.</p>
+      <p>Gere um QR code para a página individual de um imóvel deste catálogo clássico. Abrir o anúncio não registra interesse nem reserva o imóvel.</p>
       <div class="qr-preview" id="qrPreview">QR</div>
-      <input type="number" class="qr-input" id="qrListingId" placeholder="ID do imóvel (ex: 1)" min="1" max="25">
+      <label for="qrListingId">ID no catálogo clássico</label>
+      <input type="number" class="qr-input" id="qrListingId" placeholder="Ex.: 25" min="1" step="1" aria-describedby="qrHelp">
+      <p id="qrHelp">Use um registro com página individual, como o 25. Os IDs do <a href="/imoveis.html">catálogo atual</a> são diferentes.</p>
       <button class="qr-btn" onclick="generateQR()">🎯 Gerar QR Code</button>
-      <div class="qr-result-url" id="qrResultUrl"></div>
+      <a class="qr-result-url" id="qrResultUrl"></a>
+      <p id="qrStatus" role="status" aria-live="polite"></p>
     </div>
     <div class="qr-card">
       <h3></h3>
@@ -4104,7 +4107,7 @@ const listings = [
   {id:21,tipo:'apartamento',cidade:'ilhabela',cidadeLabel:'Ilhabela — Perequê',titulo:'Apto 2 dorms — centro histórico',preco:1100000,dormitorios:2,area:80,tags:['2 dorms','80m²','Centro'],icon:'⚓',badge:'',descricao:'Apartamento no Perequê, centro histórico e ponto de chegada da balsa. Comércio, restaurantes, marina, vida noturna a pé. Condomínio com vista para o canal.',aiScore:93,aiReason:'Centro da ilha com infraestrutura completa. Alta procura para locação anual e executivos da balsa.',roi:6.5},
   {id:22,tipo:'casa',cidade:'bertioga',cidadeLabel:'Bertioga — Riviera de São Lourenço',titulo:'Casa 5 suítes — Riviera premium',preco:7200000,dormitorios:5,area:400,tags:['5 suítes','400m²','Riviera'],icon:'🏖️',badge:'Ultra-premium',descricao:'Casa na Riviera de São Lourenço, condomínio mais exclusivo do litoral paulista. Marina privativa, campo de golfe, segurança máxima, praia exclusiva. 5 suítes, home office, adega.',aiScore:100,aiReason:'Referência de altíssimo padrão no Brasil. Riviera mantém valorização recorde histórica.',roi:5.5},
   {id:23,tipo:'terreno',cidade:'bertioga',cidadeLabel:'Bertioga — Guaraú',titulo:'Terreno 800m² — Guaraú preservado',preco:1200000,dormitorios:0,area:800,tags:['800m²','Preservado','Natureza'],icon:'🏗️',badge:'Oportunidade',descricao:'Terreno no Guaraú, região de restinga preservada e praias selvagens. Acesso controlado, natureza intocada. Ideal para casa de veraneio ecológica ou pousada boutique.',aiScore:95,aiReason:'Últimas áreas grandes disponíveis no Guaraú. Restinga preservada = valorização garantida.',roi:6.0},
-  {id:25,tipo:'casa',cidade:'bertioga',cidadeLabel:'Bertioga — Condomínio fechado (100m da praia)',titulo:'Casa em condomínio fechado — 2 dorms',preco:595000,dormitorios:2,area:105,tags:['2 dorms','105m²','100m da praia','Piscina','1 vaga'],icon:'🏡',badge:'Novo',descricao:'Casa em condomínio fechado em Bertioga a apenas 100 metros da praia. 105m² bem distribuídos, 2 dormitórios, 2 banheiros e 1 vaga de garagem. Condomínio completo com piscina, sauna, academia e sala de jogos. IPTU R$105/mês. Condomínio R$710 (água e internet inclusas). Detalhes em casa-condominio-fechado-bertioga.html',aiScore:93,aiReason:'Entry-point forte em Bertioga: 100m da praia com condomínio completo. ROI de temporada projetado em 19,4% bruto / 11,3% líquido (AirDNA).',roi:11.3,url:'casa-condominio-fechado-bertioga.html'},
+  {id:25,tipo:'casa',cidade:'bertioga',cidadeLabel:'Bertioga — Condomínio fechado (100m da praia)',titulo:'Casa com 2 quartos em condomínio fechado em Bertioga',preco:595000,dormitorios:2,area:105,tags:['2 dorms','105m²','100m da praia','Piscina','1 vaga'],icon:'🏡',badge:'Destaque em Bertioga',descricao:'Casa em condomínio fechado em Bertioga a apenas 100 metros da praia. 105m² bem distribuídos, 2 dormitórios, 2 banheiros e 1 vaga de garagem. Condomínio completo com piscina, sauna, academia e sala de jogos. IPTU R$105/mês. Condomínio R$710 (água e internet inclusas). Detalhes em casa-condominio-fechado-bertioga.html',aiScore:93,aiReason:'Consulte fotos, características e custos na página individual. Os cenários financeiros são ilustrativos.',roi:null,url:'casa-condominio-fechado-bertioga.html'},
 ];
 
 // ====================
@@ -4343,7 +4346,7 @@ function showCompare() {
     ['🛏️ Dormitórios', p => p.dormitorios || '—'],
     ['🏷️ Tipo', p => p.tipo.charAt(0).toUpperCase() + p.tipo.slice(1)],
     ['🧠 Score IA', p => p.aiScore + '/100'],
-    ['💰 ROI est.', p => p.roi + '% a.a.'],
+    ['💰 ROI est.', p => p.roi == null ? 'Consulte os cenários ilustrativos na ficha' : p.roi + '% a.a.'],
     ['📝 Descrição', p => p.descricao.substring(0, 80) + '...']
   ];
   document.getElementById('compareBody').innerHTML = rows.map(([label, fn]) =>
@@ -4476,6 +4479,8 @@ function filterListings() {
 let currentModalId = null;
 
 function openModal(id) {
+  const detail = listingPageUrl(listings.find(x => x.id === id));
+  if (detail) { window.location.assign(detail); return; }
   currentModalId = id;
   addToRecent(id);
   history.replaceState(null, '', location.pathname + '#imovel-' + id);
@@ -4655,18 +4660,50 @@ function applyScenario(type) {
 // ====================
 // QR CODE
 // ====================
+function listingPageUrl(listing) {
+  if (!listing || !listing.url) return null;
+  try {
+    const url = new URL(listing.url, 'https://praia.digital/');
+    if (url.origin !== 'https://praia.digital' || url.username || url.password ||
+        !url.pathname.endsWith('.html') || url.search || url.hash) return null;
+    return url.href;
+  } catch (_) { return null; }
+}
+
 function generateQR() {
-  const id = parseInt(document.getElementById('qrListingId').value);
-  if (!id || id < 1 || id > 12) { alert('Informe um ID de imóvel entre 1 e 12.'); return; }
-  const l = listings.find(x => x.id === id);
-  if (!l) { alert('Imóvel não encontrado.'); return; }
-  const url = 'https://praia.digital/#imovel-' + id;
-  const qrApi = 'https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=' + encodeURIComponent(url);
+  const input = document.getElementById('qrListingId');
+  const id = Number(input.value);
   const preview = document.getElementById('qrPreview');
-  preview.innerHTML = '<img src="' + qrApi + '" alt="QR Code" style="width:120px;height:120px;border-radius:8px;" loading="lazy" width="800" height="600" decoding="async" referrerpolicy="no-referrer-when-downgrade">';
   const resultUrl = document.getElementById('qrResultUrl');
-  resultUrl.textContent = url;
+  const status = document.getElementById('qrStatus');
+  preview.replaceChildren();
+  resultUrl.removeAttribute('href');
+  resultUrl.textContent = '';
+  resultUrl.classList.remove('visible');
+  if (!input.checkValidity() || !Number.isInteger(id) || id < 1) {
+    status.textContent = 'Informe um ID inteiro do catálogo clássico.';
+    return;
+  }
+  const listing = listings.find(x => x.id === id);
+  if (!listing) { status.textContent = 'Imóvel não encontrado neste catálogo.'; return; }
+  const url = listingPageUrl(listing);
+  if (!url) {
+    status.textContent = 'Este registro não tem uma página individual cadastrada. Consulte o catálogo atual pelo link acima.';
+    return;
+  }
+  resultUrl.href = url;
+  resultUrl.textContent = 'Abrir anúncio: ' + listing.titulo;
   resultUrl.classList.add('visible');
+  const img = document.createElement('img');
+  img.alt = 'QR Code para ' + listing.titulo;
+  img.width = img.height = 224;
+  img.referrerPolicy = 'no-referrer';
+  img.onerror = function () {
+    if (resultUrl.getAttribute('href') === url) status.textContent = 'Não foi possível carregar o QR Code. Use o link Abrir anúncio.';
+  };
+  img.src = 'https://api.qrserver.com/v1/create-qr-code/?size=224x224&margin=12&data=' + encodeURIComponent(url);
+  preview.appendChild(img);
+  status.textContent = 'O QR Code e o link abrem a mesma página do imóvel.';
 }
 
 // ====================
