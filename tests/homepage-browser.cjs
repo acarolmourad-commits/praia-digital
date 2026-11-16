@@ -47,7 +47,12 @@ async function appCatalog(browser, page, width) {
   const cards = catalog.locator('a.card[href^="/apps/"]');
   assert.equal(await cards.count(), 16);
   await page.keyboard.press('Tab');
-  assert.equal(await page.locator('.pd-skip').evaluate(el => el === document.activeElement), true);
+  assert.equal(await page.locator('.pd-skip').evaluate(el => {
+    const box = el.getBoundingClientRect();
+    return el === document.activeElement && box.top >= 0 && box.bottom < innerHeight &&
+      document.elementFromPoint(box.x + box.width / 2, box.y + box.height / 2) === el;
+  }), true, 'first keyboard target is visible above the header');
+  await page.screenshot({path:path.join(output,`app-catalog-skip-${width}.png`)});
   await page.keyboard.press('Enter');
   assert.equal(await catalog.evaluate(el => el === document.activeElement), true);
   for (const group of ['grupo-planejar', 'grupo-comparar', 'grupo-preparar', 'grupo-marketplaces']) {
@@ -63,9 +68,12 @@ async function appCatalog(browser, page, width) {
     assert(bounds.y >= headerBottom && bounds.y + bounds.height < 900, 'objective heading is visible below sticky header');
     assert.equal(await title.evaluate(el => el === document.activeElement), true, 'fragment transfers keyboard focus to heading');
     const section = page.locator('.pd-catalog-group').filter({has:title});
+    await page.keyboard.press('Tab');
+    assert.equal(await section.locator('.card').first().evaluate(el => el === document.activeElement), true, 'next Tab enters the selected group');
     await section.locator('.catalog-return a').focus();
     await page.keyboard.press('Enter');
     await page.waitForURL(origin + '/apps/#objetivos-apps');
+    assert.equal(await page.locator('#objetivos-apps').evaluate(el => el === document.activeElement), true);
   }
   const columns = await page.locator('.pd-catalog-group:first-child .card').evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().x));
   assert.equal(columns[0] === columns[1], width < 640, 'catalog stacks on mobile');
