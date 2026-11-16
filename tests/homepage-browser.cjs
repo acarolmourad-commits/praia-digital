@@ -59,13 +59,16 @@ async function homepage(page, width) {
   await firstApp.focus();
   assert.equal(await firstApp.evaluate(el => getComputedStyle(el).outlineStyle), 'solid');
   assert((await firstApp.boundingBox()).height >= 44, 'touch target');
-  await page.screenshot({path:path.join(output,`app-journeys-${width}.png`)});
+  await page.locator('section#apps').screenshot({path:path.join(output,`app-journeys-${width}.png`)});
   await page.keyboard.press('Enter');
   await page.waitForURL(origin + '/apps/comparador-cidades/');
   for (const anchor of ['apps', 'jornadas-apps']) {
     await page.goto(origin + '/#' + anchor);
     await journeys.waitFor();
-    await page.waitForFunction(() => document.querySelector('#apps-titulo').getBoundingClientRect().top >= document.querySelector('.pd-site-header').getBoundingClientRect().bottom);
+    await page.waitForFunction(() => {
+      const title = document.querySelector('#apps-titulo').getBoundingClientRect();
+      return title.top >= document.querySelector('.pd-site-header').getBoundingClientRect().bottom && title.bottom < innerHeight;
+    });
   }
   await page.locator('#produtos-comparacao summary').focus();
   await page.keyboard.press('Enter');
