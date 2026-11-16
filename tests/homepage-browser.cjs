@@ -11,8 +11,8 @@ const origin = 'https://praia.digital';
 const results = [];
 const mime = { '.html': 'text/html; charset=utf-8', '.js': 'application/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.ico': 'image/x-icon', '.woff2': 'font/woff2' };
 
-async function offlineContext(browser, width) {
-  const context = await browser.newContext({ viewport: { width, height: 900 }, serviceWorkers: 'block' });
+async function offlineContext(browser, width, options = {}) {
+  const context = await browser.newContext({ viewport: { width, height: 900 }, serviceWorkers: 'block', ...options });
   const sideEffects = [];
   await context.route('**/*', async route => {
     const request = route.request();
@@ -38,6 +38,64 @@ async function noOverflow(page, label) {
   const dimensions = await page.evaluate(() => ({ viewport: innerWidth, document: document.documentElement.scrollWidth, body: document.body.scrollWidth }));
   assert(dimensions.document <= dimensions.viewport + 1 && dimensions.body <= dimensions.viewport + 1,
     `${label} horizontal overflow: ${JSON.stringify(dimensions)}`);
+}
+
+async function appCatalog(browser, page, width) {
+  await page.goto(origin + '/apps/');
+  assert.equal(await page.locator('main').count(), 1);
+  const catalog = page.locator('#catalogo-apps');
+  const cards = catalog.locator('a.card[href^="/apps/"]');
+  assert.equal(await cards.count(), 16);
+  await page.keyboard.press('Tab');
+  assert.equal(await page.locator('.pd-skip').evaluate(el => {
+    const box = el.getBoundingClientRect();
+    return el === document.activeElement && box.top >= 0 && box.bottom < innerHeight &&
+      document.elementFromPoint(box.x + box.width / 2, box.y + box.height / 2) === el;
+  }), true, 'first keyboard target is visible above the header');
+  await page.screenshot({path:path.join(output,`app-catalog-skip-${width}.png`)});
+  await page.keyboard.press('Enter');
+  assert.equal(await catalog.evaluate(el => el === document.activeElement), true);
+  for (const group of ['grupo-planejar', 'grupo-comparar', 'grupo-preparar', 'grupo-marketplaces']) {
+    const jump = page.locator('#objetivos-apps a[href="#' + group + '"]');
+    await jump.focus();
+    assert.equal(await jump.evaluate(el => getComputedStyle(el).outlineStyle), 'solid');
+    assert((await jump.boundingBox()).height >= 44);
+    await page.keyboard.press('Enter');
+    await page.waitForURL(origin + '/apps/#' + group);
+    const title = page.locator('#' + group);
+    const bounds = await title.boundingBox();
+    const headerBottom = await page.locator('.pd-site-header').evaluate(el => el.getBoundingClientRect().bottom);
+    assert(bounds.y >= headerBottom && bounds.y + bounds.height < 900, 'objective heading is visible below sticky header');
+    assert.equal(await title.evaluate(el => el === document.activeElement), true, 'fragment transfers keyboard focus to heading');
+    const section = page.locator('.pd-catalog-group').filter({has:title});
+    await page.keyboard.press('Tab');
+    assert.equal(await section.locator('.card').first().evaluate(el => el === document.activeElement), true, 'next Tab enters the selected group');
+    await section.locator('.catalog-return a').focus();
+    await page.keyboard.press('Enter');
+    await page.waitForURL(origin + '/apps/#objetivos-apps');
+    assert.equal(await page.locator('#objetivos-apps').evaluate(el => el === document.activeElement), true);
+  }
+  const columns = await page.locator('.pd-catalog-group:first-child .card').evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().x));
+  assert.equal(columns[0] === columns[1], width < 640, 'catalog stacks on mobile');
+  await noOverflow(page, 'app catalog ' + width);
+  await catalog.screenshot({path:path.join(output,`app-catalog-${width}.png`)});
+  await page.locator('#catalogo-apps a[href="/apps/comparador-cidades/"]').click();
+  await page.waitForURL(origin + '/apps/comparador-cidades/');
+  await page.locator('.pd-network-nav a[href="/apps/"]').click();
+  await page.waitForURL(origin + '/apps/');
+  assert.equal(await cards.count(),16,'return from app keeps complete catalog');
+  const offline = await offlineContext(browser, width, {javaScriptEnabled:false});
+  try {
+    const plain = await offline.context.newPage();
+    await plain.goto(origin + '/apps/');
+    assert.equal(await plain.locator('#catalogo-apps a.card[href^="/apps/"]').count(),16);
+    await plain.locator('#objetivos-apps a[href="#grupo-marketplaces"]').focus();
+    await plain.keyboard.press('Enter');
+    await plain.waitForURL(origin + '/apps/#grupo-marketplaces');
+    await plain.locator('.pd-catalog-group').filter({has:plain.locator('#grupo-marketplaces')}).locator('.card').click();
+    await plain.waitForURL(origin + '/apps/calculadora-precificacao-shopee/');
+    assert.deepEqual(offline.sideEffects,[]);
+  } finally { await offline.context.close(); }
 }
 
 async function homepage(page, width) {
@@ -314,9 +372,10 @@ async function houseListing(page,width){
         await purposeTransitions(page);
         await contactAndCases(page, width);
         await houseListing(page,width);
+        await appCatalog(browser, page, width);
         assert.deepEqual(sideEffects, [], 'no external navigation or non-GET requests');
         assert.deepEqual(errors, [], 'no uncaught JavaScript errors');
-        results.push({ width, status: 'passed', checks: ['home layout', 'responsive footer', 'menu escape/repeat', 'single product comparison', 'search parse/zero/positive', 'reload/back/forward/reset', 'legacy query', 'contextual contact', 'optional payment', 'illustrative cases','house catalog/photos/calculators'] });
+        results.push({ width, status: 'passed', checks: ['app catalog objectives, keyboard, return and no-JS', 'home layout', 'responsive footer', 'menu escape/repeat', 'single product comparison', 'search parse/zero/positive', 'reload/back/forward/reset', 'legacy query', 'contextual contact', 'optional payment', 'illustrative cases','house catalog/photos/calculators'] });
         console.log(`${width}px: homepage, search, contact and cases passed`);
       } catch (error) {
         results.push({ width, status: 'failed', message: error.message, errors });
