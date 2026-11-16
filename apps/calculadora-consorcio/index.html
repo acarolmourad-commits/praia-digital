@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora de Consórcio Imobiliário — Litoral SP | Praia Digital</title>
-  <meta name="description" content="Simule um consórcio imobiliário: parcela, taxa administrativa, lance e economia versus financiamento. Gratuito, por Praia Digital.">
+  <meta name="description" content="Simule parcelas e diferença nominal entre consórcio e financiamento. Confira encargos, reajustes e limitações antes de comparar propostas.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://praia.digital/apps/calculadora-consorcio/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Calculadora de Consórcio Imobiliário | Praia Digital">
-  <meta property="og:description" content="Simule parcela, lance e economia do consórcio versus financiamento.">
+  <meta property="og:description" content="Compare parcelas e totais nominais com hipóteses editáveis e limitações explícitas.">
   <meta property="og:url" content="https://praia.digital/apps/calculadora-consorcio/">
   <script type="application/ld+json">
   {
@@ -45,16 +45,14 @@
     footer{text-align:center;color:#94A3B8;font-size:12px;padding:20px}
     .note{font-size:12px;color:#64748B;margin-top:12px}
   </style>
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Consórcio ou financiamento: qual sai mais barato em 2026?","acceptedAnswer":{"@type":"Answer","text":"Com financiamento a ~11,19% a.a., o consórcio (taxa de administração ~14–20% total, sem juros) costuma custar 30–50% menos no valor total. Mas o financiamento entrega o imóvel na hora — o consórcio exige paciência ou lance."}},{"@type":"Question","name":"Como sou contemplado no consórcio imobiliário?","acceptedAnswer":{"@type":"Answer","text":"Por sorteio mensal ou lance (maior percentual do crédito vence). FGTS pode compor o lance ou complementar a carta de crédito."}},{"@type":"Question","name":"A parcela do consórcio fica congelada?","acceptedAnswer":{"@type":"Answer","text":"Não. Crédito e parcela são reajustados anualmente por índice do contrato (INCC ou IPCA), preservando o poder de compra até a contemplação."}},{"@type":"Question","name":"Posso comprar imóvel no litoral com a carta de crédito?","acceptedAnswer":{"@type":"Answer","text":"Sim. A carta de crédito imobiliária vale para imóveis residenciais, casas de veraneio e terrenos em qualquer cidade do Brasil, incluindo todo o litoral de SP."}}]}
-  </script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Como acontece a contemplação?", "acceptedAnswer": {"@type": "Answer", "text": "A contemplação ocorre por sorteio ou lance, conforme as regras do grupo e a disponibilidade de recursos. Não há garantia de contemplação em uma data escolhida."}}, {"@type": "Question", "name": "Quais custos devo conferir?", "acceptedAnswer": {"@type": "Answer", "text": "Confira taxa de administração, fundo de reserva, seguro e regras de atualização do crédito e das parcelas. A simulação acima não inclui todos esses componentes."}}, {"@type": "Question", "name": "Posso usar FGTS?", "acceptedAnswer": {"@type": "Answer", "text": "O uso pode ser admitido para lance, complementação da carta, amortização ou liquidação, sujeito às regras aplicáveis. Confirme sua elegibilidade com a administradora e o agente responsável."}}, {"@type": "Question", "name": "Consórcio sempre custa menos?", "acceptedAnswer": {"@type": "Answer", "text": "Não é possível concluir apenas comparando totais nominais. Considere encargos, reajustes, prazo de acesso ao imóvel e custo de esperar. Financiamento também depende de análise e aprovação."}}, {"@type": "Question", "name": "A parcela ficará fixa?", "acceptedAnswer": {"@type": "Answer", "text": "Confira os critérios de atualização no contrato. O resultado inicial desta calculadora não é uma projeção de reajustes futuros."}}, {"@type": "Question", "name": "Como comparar propostas?", "acceptedAnswer": {"@type": "Answer", "text": "Use crédito e prazo comparáveis, reúna o custo completo das propostas e registre as limitações. Nenhuma taxa preenchida nesta página representa oferta de uma instituição."}}]}</script>
 <link rel="stylesheet" href="/css/app-network.css">
 </head>
 <body data-pd-app="calculadora-consorcio">
 <a class="pd-skip" href="#pd-app-title">Ir para a ferramenta</a>
 <header>
   <h1 id="pd-app-title" tabindex="-1">🏦 Calculadora de Consórcio Imobiliário</h1>
-  <p>Parcela, lance e economia vs. financiamento • Gratuito, por Praia Digital</p>
+  <p>Parcelas e totais nominais com hipóteses editáveis • Gratuito, por Praia Digital</p>
 </header>
 <nav class="pd-network-nav" aria-label="Navegação da rede de aplicativos"><ul><li><a href="/">Página inicial</a></li><li><a href="/apps/">Todos os aplicativos</a></li><li><a href="/#jornadas-apps">Roteiros de análise</a></li></ul></nav>
 
@@ -65,7 +63,7 @@
       <div><label for="prazo">Prazo (meses)</label><input type="number" id="prazo" value="180"></div>
       <div><label for="taxa">Taxa administrativa total (%)</label><input type="number" id="taxa" value="18"></div>
       <div><label for="lance">Lance (% do crédito, opcional)</label><input type="number" id="lance" value="0"></div>
-      <div><label for="taxaFin">Taxa do financiamento p/ comparar (% a.a.)</label><input type="number" id="taxaFin" step="0.01" value="11.19"></div>
+      <div><label for="taxaFin">Taxa nominal do financiamento (% a.a., dividida por 12)</label><input type="number" id="taxaFin" step="0.01" value="11.19"></div>
     </div>
     <button onclick="calcular()">Simular consórcio</button>
     <div class="result" id="result">
@@ -73,44 +71,21 @@
       <div class="rrow"><span>Total pago (consórcio)</span><strong id="rTotC"></strong></div>
       <div class="rrow"><span>Parcela do financiamento (Price)</span><strong id="rParcF"></strong></div>
       <div class="rrow"><span>Total pago (financiamento)</span><strong id="rTotF"></strong></div>
+      <div class="rrow"><span>Lance informado (não descontado das parcelas)</span><strong id="rLance"></strong></div>
       <div class="save" id="rSave"></div>
       <p class="note">Simulação simplificada (fundo de reserva e seguros não incluídos; financiamento pela Tabela Price). Valores estimados — consulte administradoras autorizadas pelo Banco Central.</p>
     </div>
   </div>
 
   <div class="card">
-    <h2 style="font-size:17px;margin-bottom:10px">🚡 Por que o consórcio atrai tanta gente em 2026?</h2>
-    <p style="font-size:14px;margin-bottom:10px">Com a Selic em <strong>13,75% a.a.</strong> (Copom, set/2026), o financiamento bancário continua caro: na Tabela Price, um imóvel de R$ 500 mil em 15 anos pode custar mais de R$ 1 milhão no total. No consórcio não existe juros — você paga só a <strong>taxa de administração</strong> (em geral 12% a 20% <em>do crédito, diluída em todo o prazo</em>), fundo de reserva e, opcionalmente, seguro. É por isso que a economia estimada acima costuma ser de centenas de milhares de reais.</p>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;font-size:14px">
-      <div style="border:1px solid #E5E7EB;border-radius:12px;padding:14px"><strong>🚫 Sem juros bancários</strong><br>Custo total previsível: crédito + taxa administrativa diluída.</div>
-      <div style="border:1px solid #E5E7EB;border-radius:12px;padding:14px"><strong>💪 Poder de compra à vista</strong><br>Contemplado, você recebe a carta de crédito e negocia o imóvel como quem paga em dinheiro — ótimo para conseguir desconto.</div>
-      <div style="border:1px solid #E5E7EB;border-radius:12px;padding:14px"><strong>🏦 FGTS no consórcio</strong><br>Desde 2026 é permitido usar FGTS para dar lance, complementar a carta ou quitar/reduzir parcelas de consórcio habitacional.</div>
-      <div style="border:1px solid #E5E7EB;border-radius:12px;padding:14px"><strong>📋 Fiscalizado pelo BC</strong><br>Consórcios são regulados pela Lei 11.795/2008 e supervisionados pelo Banco Central do Brasil.</div>
-    </div>
+    <h2 style="font-size:17px;margin-bottom:10px">Compare contratos, custos e prazo de acesso ao imóvel</h2>
+    <p>Os valores iniciais são exemplos editáveis. Esta simulação soma crédito e taxa administrativa e compara esse total com um financiamento Price simplificado. Não projeta reajustes, fundo de reserva, seguros, custo de oportunidade ou data de contemplação.</p>
+    <p class="note">A diferença nominal calculada não representa economia garantida. O lance informado é exibido separadamente e não altera o cálculo das parcelas.</p>
   </div>
-
   <div class="card">
-    <h2 style="font-size:17px;margin-bottom:10px">⚖️ Consórcio vs. financiamento em números <span class="tag">set/2026</span></h2>
-    <p style="font-size:14px;color:#475569;margin-bottom:8px">Exemplo: crédito de R$ 300 mil, 180 meses. Financiamento a 11,19% a.a. (Caixa SBPE) vs. consórcio com taxa de administração de 16% total:</p>
-    <table>
-      <tr><th></th><th>Financiamento</th><th>Consórcio</th></tr>
-      <tr><td>Parcela média</td><td>~R$ 3.280 (fixa, Price)</td><td>~R$ 1.940 + reajustes anuais</td></tr>
-      <tr><td>Custo total estimado</td><td>~R$ 590 mil</td><td>~R$ 348 mil + reajustes</td></tr>
-      <tr><td>Imóvel imediato</td><td>✅ sim</td><td>❌ sorteio ou lance</td></tr>
-      <tr><td>Uso do FGTS</td><td>entrada/amortização</td><td>lance/complemento</td></tr>
-      <tr><td>Ideal para</td><td>quem precisa morar já</td><td>quem pode planejar 2–8 anos</td></tr>
-    </table>
-    <p style="font-size:12px;color:#64748B;margin-top:12px">Valores aproximados (set/2026) sem seguros MIP/DFI (financiamento) nem fundo de reserva (consórcio). Estratégia comum: consórcio rodando + lance com FGTS/poupança para antecipar a contemplação.</p>
-  </div>
-
-  <div class="card">
-    <h2 style="font-size:17px;margin-bottom:10px">❓ Dúvidas frequentes sobre consórcio imobiliário</h2>
-    <details style="border:1px solid #E5E7EB;border-radius:12px;padding:14px;margin-bottom:10px"><summary style="font-weight:600;cursor:pointer;font-size:14px">Como sou contemplado?</summary><p style="margin:8px 0 0;font-size:14px;color:#475569">De duas formas: <strong>sorteio</strong> (mensal, todos concorrem em igualdade) ou <strong>lance</strong> — você oferece um percentual do crédito e o maior lance do grupo vence. Quanto maior o lance, maior a chance de antecipar a contemplação.</p></details>
-    <details style="border:1px solid #E5E7EB;border-radius:12px;padding:14px;margin-bottom:10px"><summary style="font-weight:600;cursor:pointer;font-size:14px">Posso usar FGTS?</summary><p style="margin:8px 0 0;font-size:14px;color:#475569">Sim. O FGTS pode ser usado para <strong>ofertar lance</strong>, <strong>complementar o valor da carta de crédito</strong> ou <strong>amortizar/quitar parcelas</strong> em consórcio habitacional, respeitadas as regras do fundo (ex.: imóvel residencial, valor dentro do teto de avaliação).</p></details>
-    <details style="border:1px solid #E5E7EB;border-radius:12px;padding:14px;margin-bottom:10px"><summary style="font-weight:600;cursor:pointer;font-size:14px">A parcela fica congelada até o fim?</summary><p style="margin:8px 0 0;font-size:14px;color:#475569">Não. Crédito e parcela são <strong>reajustados periodicamente</strong> (normalmente todo ano) por índice do contrato — em consórcios imobiliários é comum o <strong>INCC</strong> (custo da construção) ou IPCA. Isso preserva seu poder de compra até a contemplação.</p></details>
-    <details style="border:1px solid #E5E7EB;border-radius:12px;padding:14px;margin-bottom:10px"><summary style="font-weight:600;cursor:pointer;font-size:14px">E se eu desistir antes de ser contemplado?</summary><p style="margin:8px 0 0;font-size:14px;color:#475569">Você pode cancelar e recebe de volta o valor acumulado no fundo comum (descontadas taxa de administração e multas previstas em contrato), mas o resgate geralmente ocorre <strong>somente por sorteio de cotas canceladas ou no encerramento do grupo</strong> — ou seja, não é dinheiro de liquidez imediata.</p></details>
-    <details style="border:1px solid #E5E7EB;border-radius:12px;padding:14px;margin-bottom:10px"><summary style="font-weight:600;cursor:pointer;font-size:14px">Consórcio ou financiamento: qual escolher?</summary><p style="margin:8px 0 0;font-size:14px;color:#475569">Se você <strong>precisa do imóvel agora</strong>, o financiamento entrega o crédito imediato (mas com juros altos). Se <strong>pode esperar e planejar</strong>, o consórcio costuma custar muito menos no total. Muita gente combina os dois: consórcio rodando enquanto junta um lance maior para acelerar a contemplação.</p></details>
-    <details style="border:1px solid #E5E7EB;border-radius:12px;padding:14px"><summary style="font-weight:600;cursor:pointer;font-size:14px">Posso comprar imóvel no litoral com a carta de crédito?</summary><p style="margin:8px 0 0;font-size:14px;color:#475569">Sim — a carta de crédito imobiliária vale para imóveis residenciais, casas de veraneio e até terrenos, em qualquer cidade do Brasil, inclusive Santos, Guarujá, Praia Grande, Bertioga e todo o litoral de SP. <a href="/encontrar-imovel.html" style="color:#0EA5E9">Veja imóveis disponíveis</a>.</p></details>
+    <h2 style="font-size:17px;margin-bottom:10px">Perguntas para revisar sua proposta</h2>
+<details style="border:1px solid #E5E7EB;border-radius:12px;padding:14px;margin-bottom:10px"><summary style="font-weight:600;cursor:pointer;font-size:14px">Como acontece a contemplação?</summary><p style="margin:8px 0 0;font-size:14px;color:#475569">A contemplação ocorre por sorteio ou lance, conforme as regras do grupo e a disponibilidade de recursos. Não há garantia de contemplação em uma data escolhida.</p></details><details style="border:1px solid #E5E7EB;border-radius:12px;padding:14px;margin-bottom:10px"><summary style="font-weight:600;cursor:pointer;font-size:14px">Quais custos devo conferir?</summary><p style="margin:8px 0 0;font-size:14px;color:#475569">Confira taxa de administração, fundo de reserva, seguro e regras de atualização do crédito e das parcelas. A simulação acima não inclui todos esses componentes.</p></details><details style="border:1px solid #E5E7EB;border-radius:12px;padding:14px;margin-bottom:10px"><summary style="font-weight:600;cursor:pointer;font-size:14px">Posso usar FGTS?</summary><p style="margin:8px 0 0;font-size:14px;color:#475569">O uso pode ser admitido para lance, complementação da carta, amortização ou liquidação, sujeito às regras aplicáveis. Confirme sua elegibilidade com a administradora e o agente responsável.</p></details><details style="border:1px solid #E5E7EB;border-radius:12px;padding:14px;margin-bottom:10px"><summary style="font-weight:600;cursor:pointer;font-size:14px">Consórcio sempre custa menos?</summary><p style="margin:8px 0 0;font-size:14px;color:#475569">Não é possível concluir apenas comparando totais nominais. Considere encargos, reajustes, prazo de acesso ao imóvel e custo de esperar. Financiamento também depende de análise e aprovação.</p></details><details style="border:1px solid #E5E7EB;border-radius:12px;padding:14px;margin-bottom:10px"><summary style="font-weight:600;cursor:pointer;font-size:14px">A parcela ficará fixa?</summary><p style="margin:8px 0 0;font-size:14px;color:#475569">Confira os critérios de atualização no contrato. O resultado inicial desta calculadora não é uma projeção de reajustes futuros.</p></details><details style="border:1px solid #E5E7EB;border-radius:12px;padding:14px;margin-bottom:10px"><summary style="font-weight:600;cursor:pointer;font-size:14px">Como comparar propostas?</summary><p style="margin:8px 0 0;font-size:14px;color:#475569">Use crédito e prazo comparáveis, reúna o custo completo das propostas e registre as limitações. Nenhuma taxa preenchida nesta página representa oferta de uma instituição.</p></details>
+    <p class="note">Fontes consultadas em 16/11/2026: <a href="https://www.bcb.gov.br/estabilidadefinanceira/administradoraconsorcio">Banco Central — administradoras e contemplação</a>; <a href="https://www.bcb.gov.br/meubc/faqs/p/como-e-feito-o-calculo-do-valor-das-prestacoes">Banco Central — prestações</a>; <a href="https://www.caixaconsorcio.com.br/cliente">CAIXA Consórcio — uso do FGTS</a>. Confira as condições vigentes da sua proposta.</p>
   </div>
 
   <div class="card">
@@ -144,7 +119,7 @@ function calcular(){
   const tx = parseFloat(document.getElementById('taxa').value)||0;
   const lance = parseFloat(document.getElementById('lance').value)||0;
   const i = (parseFloat(document.getElementById('taxaFin').value)||0)/100/12;
-  if(C<=0||n<=0){ alert('Informe crédito e prazo.'); return; }
+  if(![C,n,tx,lance,i].every(Number.isFinite)||C<=0||n<=0||!Number.isInteger(n)||tx<0||i<0||lance<0||lance>100){ alert('Informe crédito positivo, prazo inteiro e taxas válidas. O lance deve ficar entre 0% e 100%.'); return; }
   const totalC = C*(1+tx/100);
   const parcC = totalC/n;
   const parcF = i>0 ? C*i/(1-Math.pow(1+i,-n)) : C/n;
@@ -153,7 +128,8 @@ function calcular(){
   document.getElementById('rTotC').textContent = fmt(totalC);
   document.getElementById('rParcF').textContent = fmt(parcF);
   document.getElementById('rTotF').textContent = fmt(totF);
-  document.getElementById('rSave').textContent = '💰 Economia estimada com consórcio: ' + fmt(Math.max(0, totF - totalC));
+  document.getElementById('rLance').textContent = fmt(C*lance/100);
+  document.getElementById('rSave').textContent = 'Diferença nominal (financiamento menos consórcio): ' + fmt(totF - totalC) + '. Não inclui todos os custos e reajustes.';
   document.getElementById('result').style.display = 'block';
 }
 </script>
@@ -172,7 +148,7 @@ function calcular(){
 </section>
 
 <script defer src="/js/shared.js"></script><script defer src="/assets/js/related-ads.js"></script>
-<section class="pd-guide" aria-labelledby="pd-guide-title"><h2 id="pd-guide-title">Como usar esta análise com segurança</h2><ol><li>Use a proposta real da administradora para informar prazo, taxa de administração e demais encargos.</li><li>Considere correção da carta e parcelas, fundo de reserva e seguros previstos no contrato.</li><li>Contemplação não é garantida em uma data; compare com financiamento e compra à vista.</li></ol><p class="pd-network-note">As premissas, taxas e tabelas preexistentes precisam de conferência de fonte e data. Este conteúdo não atualiza nem valida essas premissas. Simulações educativas não são propostas bancárias, garantia de retorno ou orientação jurídica e tributária individual.</p></section>
+<section class="pd-guide" aria-labelledby="pd-guide-title"><h2 id="pd-guide-title">Como usar esta análise com segurança</h2><ol><li>Use a proposta real da administradora para informar prazo, taxa de administração e demais encargos.</li><li>Considere correção da carta e parcelas, fundo de reserva e seguros previstos no contrato.</li><li>Contemplação não é garantida em uma data; compare com financiamento e compra à vista.</li></ol><p class="pd-network-note">Os valores preenchidos são ilustrativos e precisam ser substituídos pelas condições da proposta. Esta calculadora não projeta reajustes nem o custo completo da operação. Simulações educativas não são propostas bancárias, garantia de retorno ou orientação jurídica e tributária individual.</p></section>
 <section class="pd-network" aria-labelledby="pd-network-title"><h2 id="pd-network-title">Continue com o próximo aplicativo</h2><p class="pd-network-intro">Use uma ficha conferida, anote suas premissas e escolha o recurso da próxima etapa. Você pode voltar ao catálogo a qualquer momento.</p><details><summary>Explorar a rede completa de aplicativos</summary><div class="pd-network-group"><h3>Planejar a compra</h3><ul class="pd-network-grid"><li><a href="/apps/alugar-ou-comprar/"><strong>Alugar ou comprar</strong><span>Compare cenários com os custos e o prazo que você informar.</span></a></li><li><a href="/apps/calculadora-financiamento/"><strong>Financiamento SAC e Price</strong><span>Compare sistemas de amortização usando as mesmas premissas.</span></a></li><li><a href="/apps/custo-de-compra/"><strong>Custos de compra</strong><span>Inclua tributos e despesas a confirmar para a sua operação.</span></a></li><li><a href="/apps/planejador-entrada/"><strong>Planejador de entrada</strong><span>Defina a meta e simule quanto reservar por mês.</span></a></li><li><a href="/apps/renda-para-financiar/"><strong>Renda para financiar</strong><span>Estime o comprometimento de renda; a aprovação depende do banco.</span></a></li></ul></div><div class="pd-network-group"><h3>Comparar cenários</h3><ul class="pd-network-grid"><li><a href="/apps/comparador-cidades/"><strong>Comparador de cidades</strong><span>Compare destinos pelo perfil escolhido e confira as fontes.</span></a></li><li><a href="/apps/valor-imovel/"><strong>Valor do imóvel</strong><span>Explore uma estimativa e confira referências antes de decidir.</span></a></li><li><a href="/apps/calculadora-valorizacao/"><strong>Valorização projetada</strong><span>Veja o efeito das hipóteses de valorização ao longo do tempo.</span></a></li><li><a href="/apps/simulador-roi-temporada/"><strong>ROI de temporada</strong><span>Simule receita, despesas e retorno com suas premissas.</span></a></li><li><a href="/apps/temporada-ou-anual/"><strong>Temporada ou aluguel anual</strong><span>Compare os dois modelos com custos e ocupação informados.</span></a></li></ul></div><div class="pd-network-group"><h3>Preparar e revisar anúncios</h3><ul class="pd-network-grid"><li><a href="/apps/checklist-vistoria/"><strong>Checklist de vistoria</strong><span>Organize observações e pendências para a revisão do imóvel.</span></a></li><li><a href="/apps/oficina-ia-imobiliaria/"><strong>Oficina de IA</strong><span>Monte um briefing, confira lacunas e prepare modelos de e-mail.</span></a></li><li><a href="/apps/revisor-anuncios/"><strong>Revisor de anúncios</strong><span>Compare duas versões com uma ficha conferida e encontre divergências.</span></a></li><li><a href="/apps/relatorio-imovel/"><strong>Relatório do imóvel</strong><span>Reúna fontes, informações e próximos passos; imprima ou salve em PDF.</span></a></li></ul></div><div class="pd-network-group"><h3>Organizar vendas em marketplaces</h3><ul class="pd-network-grid"><li><a href="/apps/calculadora-precificacao-shopee/"><strong>Precificação Shopee e TikTok Shop</strong><span>Confira taxas aplicáveis e estime sua margem com os custos informados.</span></a></li></ul></div></details><p><a href="/apps/">Catálogo de aplicativos</a> · <a href="/#rede-apps">Roteiros na página inicial</a> · <a href="/servicos.html">Apoio profissional</a></p><p class="pd-network-note">Os links não transferem dados automaticamente. Confira fontes, datas, custos e limitações antes de decidir. Simulações não são laudos, aprovação de crédito nem garantia de retorno.</p></section>
 </body>
 </html>

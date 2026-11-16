@@ -53,21 +53,21 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
   <label for="rend">Rendimento mensal da aplicação (% a.m.)</label><input id="rend" type="number" step="0.01" value="1.07">
   <button onclick="planejar()">Planejar minha entrada</button>
   <div class="res" id="res">
-    <table>
+    <div class="pd-table-scroll" role="region" aria-label="Planejamento da entrada" tabindex="0"><table>
       <tr><th></th><th>Valor</th></tr>
       <tr><td>Meta da entrada</td><td id="meta"></td></tr>
       <tr><td>Falta juntar</td><td id="falta"></td></tr>
       <tr><td>Tempo estimado</td><td id="tempo"></td></tr>
       <tr><td>Total guardado (sem juros)</td><td id="guard"></td></tr>
       <tr><td>Juros acumulados</td><td id="juros"></td></tr>
-    </table>
+    </table></div>
     <p id="dica" style="font-weight:700"></p>
   </div>
 </div>
 <div class="card">
 <h2 style="font-size:17px;margin-bottom:10px">🎯 Quanto de entrada por cidade <span class="tag">set/2026</span></h2>
 <p style="font-size:14px;color:#475569;margin-bottom:8px">Entrada típica de 20% sobre o preço de um apto de 2 quartos + custos de fechamento estimados (ITBI + cartório):</p>
-<table>
+<div class="pd-table-scroll" role="region" aria-label="Planejamento da entrada" tabindex="0"><table>
   <tr><th>Cidade</th><th>Preço típico</th><th>Entrada (20%)</th><th>Custos fechamento</th><th>Total inicial</th></tr>
   <tr><td>Peruíbe</td><td>R$ 143 mil</td><td>R$ 29 mil</td><td>~R$ 6 mil</td><td>~R$ 35 mil</td></tr>
   <tr><td>Mongaguá</td><td>R$ 158 mil</td><td>R$ 32 mil</td><td>~R$ 6 mil</td><td>~R$ 38 mil</td></tr>
@@ -79,7 +79,7 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
   <tr><td>São Sebastião</td><td>R$ 488 mil</td><td>R$ 98 mil</td><td>~R$ 19 mil</td><td>~R$ 117 mil</td></tr>
   <tr><td>Ilhabela</td><td>R$ 540 mil</td><td>R$ 108 mil</td><td>~R$ 16 mil</td><td>~R$ 124 mil</td></tr>
   <tr><td>Santos</td><td>R$ 560 mil</td><td>R$ 112 mil</td><td>~R$ 17 mil</td><td>~R$ 129 mil</td></tr>
-</table>
+</table></div>
 <p style="font-size:12px;color:#64748B;margin-top:12px">Estimativas Praia Digital (set/2026). ITBI 2–3% conforme município — veja a <a href="/apps/custo-de-compra/" style="color:#0EA5E9">calculadora de custos de compra</a>. FGTS pode abater a entrada.</p>
 </div>
 
