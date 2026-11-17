@@ -25,7 +25,7 @@ MONDAY = datetime.date(2026, 11, 16)
 class InspectorTests(unittest.TestCase):
     def setUp(self):
         # An incomplete mock must fail the test instead of making a real request.
-        for target in ('socket.getaddrinfo', 'urllib.request.urlopen'):
+        for target in ('socket.getaddrinfo', 'socket.socket.connect', 'urllib.request.urlopen'):
             guard = patch(target, side_effect=AssertionError('Unexpected network access'))
             guard.start()
             self.addCleanup(guard.stop)
@@ -121,8 +121,8 @@ class InspectorTests(unittest.TestCase):
 
     def test_status_categories_do_not_mislabel_access_blocks_as_broken(self):
         for status, expected in {200: 'ok', 204: 'ok', 301: 'redirect', 404: 'broken',
-                                 410: 'broken', 401: 'restricted', 403: 'restricted',
-                                 429: 'restricted', 408: 'transient', 503: 'transient',
+                                 410: 'broken', 401: 'access_blocked', 403: 'access_blocked',
+                                 429: 'rate_limited', 408: 'transient_http', 503: 'transient_http',
                                  400: 'review'}.items():
             self.assertEqual(inspector.classify_status(status), expected)
         self.assertEqual(inspector.classify_status(200, True), 'redirect')
@@ -153,8 +153,8 @@ class InspectorTests(unittest.TestCase):
 
     def test_http_errors_redirects_and_network_failures_are_recorded(self):
         for failure, expected in [(HTTPError('https://example.org/a', 404, 'Missing', {}, None), 'broken'),
-                                  (HTTPError('https://example.org/a', 429, 'Limited', {}, None), 'restricted'),
-                                  (URLError('timeout'), 'transient')]:
+                                  (HTTPError('https://example.org/a', 429, 'Limited', {}, None), 'rate_limited'),
+                                  (URLError('timeout'), 'network_error')]:
             opener = MagicMock()
             opener.open.side_effect = failure
             with patch.object(inspector, 'public_url'), patch.object(inspector.urllib.request, 'build_opener', return_value=opener):

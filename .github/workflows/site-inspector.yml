@@ -4,8 +4,10 @@ on:
   pull_request:
     paths:
       - 'scripts/site_inspector.py'
+      - 'scripts/external_link_plan.py'
       - 'scripts/link_inventory.py'
       - 'tests/test_site_inspector.py'
+      - 'tests/test_external_link_plan.py'
       - 'tests/test_link_inventory.py'
       - '.github/workflows/site-inspector.yml'
   schedule:
@@ -41,6 +43,7 @@ jobs:
       - name: Offline inspector regressions (no HTTP or issue publication)
         run: |
           python3 -m unittest discover -s tests -p 'test_site_inspector.py' -v
+          python3 -m unittest discover -s tests -p 'test_external_link_plan.py' -v
           python3 -m unittest discover -s tests -p 'test_link_inventory.py' -v
   inspect:
     needs: test
