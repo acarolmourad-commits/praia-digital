@@ -49,27 +49,31 @@
     .links a span{color:#0EA5E9}
     footer{text-align:center;color:#94A3B8;font-size:12px;padding:20px}
     @media print{header,.actions,.links,.card:last-child,footer{display:none}.card{box-shadow:none;border:none}}
-  </style>
+  #storage-status{padding:12px;border:1px solid #CBD5E1;border-radius:8px;margin:12px 0;line-height:1.5} .item>span{min-width:0;overflow-wrap:anywhere}
+</style>
 <link rel="stylesheet" href="/css/app-network.css">
 </head>
 <body data-pd-app="checklist-vistoria">
 <a class="pd-skip" href="#pd-app-title">Ir para a ferramenta</a>
 <header>
   <h1 id="pd-app-title" tabindex="-1">📋 Checklist de Vistoria de Imóvel</h1>
-  <p>Vistoria profissional para imóveis no litoral — com score e relatório • Praia Digital</p>
+  <p>Registro de observações do imóvel — com progresso e impressão • Praia Digital</p>
 </header>
 <nav class="pd-network-nav" aria-label="Navegação da rede de aplicativos"><ul><li><a href="/">Página inicial</a></li><li><a href="/apps/">Todos os aplicativos</a></li><li><a href="/#jornadas-apps">Roteiros de análise</a></li></ul></nav>
 
 <div class="wrap">
   <div class="card">
-    <h2>Score da vistoria</h2>
-    <div class="scorebox"><div class="s" id="score">—</div><div id="verdict" style="font-size:13px;color:#64748B">Avalie os itens abaixo</div></div>
+    <h2>Progresso do registro</h2>
+    <div class="scorebox"><div class="s" id="score">—</div><div id="verdict" style="font-size:13px;color:#64748B">Registre suas observações nos itens abaixo</div></div>
     <div class="prog"><i id="bar" style="width:0%;background:#0EA5E9"></i></div>
     <div class="actions">
       <button onclick="window.print()">🖨️ Imprimir / salvar PDF</button>
-      <button class="ghost" onclick="resetAll()">↺ Recomeçar</button>
+      <button type="button" id="reset" class="ghost" onclick="resetAll()">↺ Recomeçar</button>
     </div>
   </div>
+  <p id="storage-status" role="status" aria-live="polite"></p>
+  <p>O percentual mostra apenas itens marcados, não qualidade, segurança ou aprovação do imóvel. As marcações não substituem inspeção ou laudo profissional. Imprima ou salve uma cópia antes de sair, especialmente no modo sessão.</p>
+  <noscript><p>Ative JavaScript para marcar itens. Nenhuma marcação é registrada sem ele.</p></noscript>
   <div id="groups"></div>
 
   <div class="card">
@@ -96,53 +100,7 @@
   </div>
 </div>
 <footer>Praia Digital — Tecnologia imobiliária do litoral • <a href="/" style="color:#0EA5E9">praia.digital</a></footer>
-<script>
-const GROUPS = [
-  {nome:'🌊 Maresia & Umidade (crítico no litoral)', items:[
-    'Esquadrias sem corrosão (alumínio/anodizado)','Ferragens e dobradiças sem ferrugem','Ar-condicionado com serpentina protegida','Pintura/revestimento sem bolhas de umidade','Sem cheiro de mofo em armários e cantos','Balcão/guarda-corpo com altura ≥1,10 m e fixação firme (NBR 14.718)']},
-  {nome:'🏗️ Estrutura & Construção', items:[
-    'Sem trincas estruturais em paredes/teto','Piso nivelado, sem partes ocas','Telhado/laje sem infiltração','Impermeabilização de banheiros OK','Elétrica: disjuntores e tomadas funcionando','Fachada sem sinais de corrosão de armaduras (manchas alaranjadas)']},
-  {nome:'🚿 Hidráulica', items:[
-    'Pressão de água boa em todos os pontos','Sem vazamentos visíveis (torneiras, sifões)','Esgoto sem retorno de odor','Aquecimento (boiler/solar) funcionando']},
-  {nome:'📄 Documentação', items:[
-    'Matrícula atualizada sem ônus','IPTU quitado','Habite-se / averbação da construção','Condomínio: atas e inadimplência OK','Nada consta na prefeitura (regularização)','Laudo de inspeção predial do condomínio disponível e em dia (NBR 16.747 / Lei SP 16.642/2017)']},
-  {nome:'📍 Entorno', items:[
-    'Distância real da praia conferida','Rua/entorno sem alagamento em chuva','Comércio e serviços próximos','Vagas de garagem conforme anúncio']}
-];
-const KEY = 'pd-vistoria-v1';
-let st = JSON.parse(localStorage.getItem(KEY)||'{}');
-function render(){
-  document.getElementById('groups').innerHTML = GROUPS.map((g,gi)=>`
-    <div class="card"><h2>${g.nome}</h2>
-    ${g.items.map((t,ii)=>{const k=gi+'_'+ii; const v=st[k]; return `
-      <div class="item ${v==='ok'?'ok':v==='bad'?'bad':''}">
-        <span style="flex:1" onclick="mark('${k}','ok')">${t}</span>
-        <div class="opts">
-          <button onclick="mark('${k}','ok')" style="${v==='ok'?'background:#DCFCE7;border-color:#16A34A':''}">✓ OK</button>
-          <button onclick="mark('${k}','bad')" style="${v==='bad'?'background:#FEE2E2;border-color:#DC2626':''}">✗ Problema</button>
-        </div>
-      </div>`;}).join('')}
-    </div>`).join('');
-  const keys = Object.keys(st);
-  const total = GROUPS.reduce((s,g)=>s+g.items.length,0);
-  const ok = keys.filter(k=>st[k]==='ok').length;
-  const done = keys.length;
-  const pct = Math.round(done/total*100);
-  document.getElementById('bar').style.width = pct+'%';
-  if(done===0){ document.getElementById('score').textContent='—'; document.getElementById('verdict').textContent='Avalie os itens abaixo'; return; }
-  const score = Math.round(ok/done*100);
-  const el = document.getElementById('score');
-  el.textContent = score + '%';
-  el.style.color = score>=85 ? '#16A34A' : score>=60 ? '#CA8A04' : '#DC2626';
-  document.getElementById('verdict').textContent =
-    done<total ? `${done}/${total} itens avaliados — continue` :
-    score>=85 ? '✅ Imóvel em ótimo estado — pode avançar!' :
-    score>=60 ? '⚠️ Bom, mas negocie reparos no preço' : '🚨 Muitos problemas — avalie com cautela';
-}
-function mark(k,v){ st[k] = st[k]===v ? undefined : v; if(!st[k]) delete st[k]; localStorage.setItem(KEY, JSON.stringify(st)); render(); }
-function resetAll(){ if(confirm('Limpar toda a vistoria?')){ st={}; localStorage.removeItem(KEY); render(); } }
-render();
-</script>
+<script src="/apps/checklist-vistoria/checklist.js"></script>
 
 <!-- Praia Digital Apps: rede de interlinks -->
 <section style="max-width:760px;margin:32px auto 0;padding:0 16px 32px">
