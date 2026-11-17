@@ -33,7 +33,7 @@ class CitySearchLinksTests(unittest.TestCase):
 
     def test_peruibe_family_recommends_existing_seasonal_guide(self):
         target = '/blog/peruibe-guia-locacao-temporada-imoveis-2026.html'
-        # Sauna remains outside this change: its link is already covered by PR #143.
+        # Preserve the thirteen destinations published by PR #187.
         pages = [
             'academia', 'comercial', 'compra-programada', 'elevador',
             'gestao-de-imovel', 'midia-profissional', 'pet-friendly',
@@ -46,6 +46,23 @@ class CitySearchLinksTests(unittest.TestCase):
                 links = Links((ROOT / ('cidades/peruibe-' + suffix + '.html')).read_text()).links
                 seasonal = [url for url, text in links if 'Aluguel de temporada' in text]
                 self.assertEqual([target], seasonal)
+
+    def test_seasonal_cards_across_six_cities_have_existing_destinations(self):
+        missing = []
+        checked = 0
+        for city in ('bertioga', 'guaruja', 'mongagua', 'itanhaem', 'santos', 'peruibe'):
+            city_cards = 0
+            for page in (ROOT / 'cidades').glob(city + '-*.html'):
+                for url, text in Links(page.read_text()).links:
+                    if text.strip().startswith('Aluguel de temporada'):
+                        path = urlsplit(url).path
+                        checked += 1
+                        city_cards += 1
+                        if not path.startswith('/blog/') or not (ROOT / path.lstrip('/')).is_file():
+                            missing.append((page.name, url))
+            self.assertGreaterEqual(city_cards, 13, city)
+        self.assertEqual(len(missing), 0, f'Missing destinations: {missing[:5]}')
+        self.assertGreaterEqual(checked, 78)
 
     def test_no_invalid_protocol_relative_home(self):
         for slug in ['santos', 'praia-grande', 'guaruja', 'bertioga']:
