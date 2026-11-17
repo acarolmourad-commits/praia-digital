@@ -5,7 +5,7 @@
       "name": "Airbnb Product Releases (oficial)",
       "url": "https://news.airbnb.com/product-releases/",
       "status": 200,
-      "checked_at": "2026-11-16T23:44:39+00:00",
+      "checked_at": "2026-11-17T11:51:01+00:00",
       "seen": {
         "https://news.airbnb.com/product-releases/airbnb-2026-summer-release": "Airbnb 2026 Summer Release",
         "https://news.airbnb.com/product-releases/airbnb-2025-winter-release": "Airbnb 2025 Winter Release",
@@ -25,7 +25,7 @@
       "name": "Airbnb Newsroom (oficial)",
       "url": "https://news.airbnb.com/",
       "status": 200,
-      "checked_at": "2026-11-16T23:44:39+00:00",
+      "checked_at": "2026-11-17T11:51:01+00:00",
       "seen": {
         "https://news.airbnb.com/gen-z-is-driving-a-45-jump-in-halloween-weekend-searches": "Gen Z is driving a 45% jump in Halloween weekend searches",
         "https://news.airbnb.com/airbnb-org-hurricane-isaias": "Airbnb.org offers emergency housing to people displaced by Hurricane Isaias",
@@ -54,15 +54,16 @@
         "https://news.airbnb.com/airbnb-q3-2026-financial-results": "Airbnb Q3 2026 Financial Results",
         "https://news.airbnb.com/co-founder-and-ceo-brian-chesky-donates-historic-100m-gift-to-sf-parks": "Co-Founder and CEO Brian Chesky donates historic $100M gift to SF Parks",
         "https://news.airbnb.com/gen-z-travelers-drive-nearly-half-of-searches-for-miami-during-art-basel-miami-beach": "Gen Z Travelers Drive Nearly Half Of Searches For Miami During Art Basel Miami Beach",
-        "https://news.airbnb.com/2026-winter-travel-trends-revealed": "2026 Winter Travel Trends Revealed"
+        "https://news.airbnb.com/2026-winter-travel-trends-revealed": "2026 Winter Travel Trends Revealed",
+        "https://news.airbnb.com/airbnb-housing-innovation-prize": "Applications open for $1M Airbnb Housing Innovation Prize to help scale breakthroughs in homebuilding and housing development"
       },
-      "hash": "98a29c20a5176abd73c6edf16900d94f94942afdc4eb1d04fee2da3276ad4486"
+      "hash": "9eb6ed096b9616f7a98847e7b19a9a8917daa6235b288a79125674e155d8cf4a"
     },
     "airbnb-resources": {
       "name": "Airbnb Resource Center - Anfitrioes (oficial)",
       "url": "https://www.airbnb.com/resources/hosting-homes",
       "status": 200,
-      "checked_at": "2026-11-16T23:44:39+00:00",
+      "checked_at": "2026-11-17T11:51:01+00:00",
       "seen": {
         "https://www.airbnb.com/resources/hosting-homes/a/important-changes-to-house-rules-21": "Important changes to house rules",
         "https://www.airbnb.com/resources/hosting-homes/a/introducing-the-all-new-community-center-773": "The all-new Community Center",
@@ -98,7 +99,7 @@
       "name": "Booking Partner Hub (oficial)",
       "url": "https://partner.booking.com/en-us",
       "status": 202,
-      "checked_at": "2026-11-16T23:44:39+00:00",
+      "checked_at": "2026-11-17T11:51:01+00:00",
       "seen": {},
       "hash": "2d4bbe3a9d1ffc25e22573a84149a7e72e9ff6c7b9287782090978cdee2f961a",
       "unavailable": true
@@ -107,7 +108,7 @@
       "name": "Booking - pagina oficial para parceiros",
       "url": "https://join.booking.com/",
       "status": 200,
-      "checked_at": "2026-11-16T23:44:39+00:00",
+      "checked_at": "2026-11-17T11:51:01+00:00",
       "hash": "e822bcad622223087f8e74b3b569b4ab86c4b1c785c51ef1eb4eec6dd9f2ecb4",
       "seen": {}
     },
@@ -115,7 +116,7 @@
       "name": "Booking Newsroom (oficial)",
       "url": "https://news.booking.com/",
       "status": 200,
-      "checked_at": "2026-11-16T23:44:39+00:00",
+      "checked_at": "2026-11-17T11:51:01+00:00",
       "seen": {
         "https://news.booking.com/bookingcoms-how-india-travels-2026-explores-the-rise-of-alternative-accommodations": "Booking.com’s ‘How India Travels 2026’ Explores the Rise of Alternative Accommodations",
         "https://news.booking.com/how-will-group-budgets-personalized-wellness--recovery-maxxing-shape-2027-guest-experiences": "How will Group Budgets, Personalized Wellness & ‘Recovery-Maxxing’ shape 2027 Guest Experiences?",
@@ -205,6 +206,13 @@
       "platform": "Airbnb",
       "title": "Link detectado Airbnb: 2026 Winter Travel Trends Revealed",
       "file": "novidades-20261112-215045-airbnb-news.html",
+      "source": "https://news.airbnb.com/"
+    },
+    {
+      "date": "2026-11-17 11:51 UTC",
+      "platform": "Airbnb",
+      "title": "Link detectado Airbnb: Applications open for $1M Airbnb Housing Innovation Prize to help scale breakthroughs in homebuilding and housing development",
+      "file": "novidades-20261117-115101-airbnb-news.html",
       "source": "https://news.airbnb.com/"
     }
   ]
