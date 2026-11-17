@@ -41,6 +41,11 @@ class ReviewedGeneration(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder); (root / 'data').mkdir(); (root / 'imoveis').mkdir()
             (root / 'data/retired-listings.json').write_text(json.dumps({'slugs': ['retired']}))
+            (root / 'js').mkdir()
+            (root / 'js/main.js').write_text('const properties = ' + json.dumps([
+                {'slug': 'real'}, {'slug': 'retired'}
+            ]) + ';')
+
             for rel in ['imoveis/retired.html', 'imoveis/real.html', 'template-email-confirmacao-parceria-pos-formulario.html']:
                 (root / rel).write_text('<title>Page</title>')
             pages, _ = discover_pages(root)
