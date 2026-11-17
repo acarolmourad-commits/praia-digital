@@ -90,6 +90,18 @@ form.addEventListener('submit', async event => {
       throw new Error(receipt.error || 'Não foi possível confirmar seu cadastro. Tente novamente.');
     }
     document.getElementById('lead-receipt').textContent = receipt.id;
+    const emailMessages = {
+      pending_setup: 'A confirmação automática por e-mail ao solicitante ainda não está ativa; guarde seu protocolo.',
+      queued: 'A confirmação por e-mail está na fila de envio. Seu cadastro já foi registrado; guarde o protocolo.',
+      sending: 'A confirmação por e-mail está sendo processada. Guarde seu protocolo.',
+      accepted: 'O serviço de envio aceitou a confirmação por e-mail. Isso não comprova a entrega na caixa de entrada; guarde seu protocolo.',
+      review_required: 'O envio da confirmação precisa de verificação pela equipe. Seu cadastro está registrado; não é necessário reenviar o formulário.',
+      quota_hold: 'A confirmação por e-mail está aguardando disponibilidade de envio. Seu cadastro está registrado; não é necessário reenviar o formulário.'
+    };
+    document.getElementById('lead-email-status').textContent = Object.hasOwn(emailMessages, receipt.email_status)
+      ? emailMessages[receipt.email_status] : 'Seu cadastro está registrado. Não foi possível confirmar a situação do e-mail; guarde o protocolo.';
+
+
     form.hidden = true;
     result.hidden = false;
     form.reset();

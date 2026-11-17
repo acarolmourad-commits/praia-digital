@@ -15,6 +15,12 @@ function setup() {
       async all() { return {results:db.prepare(sql).all(...params)}; }
     }; } }; } }
   };
+
+  env.LEADS_DB.batch = async statements => {
+    db.exec('BEGIN');
+    try { const results=[]; for (const stmt of statements) results.push(await stmt.run()); db.exec('COMMIT'); return results; }
+    catch (error) { db.exec('ROLLBACK'); throw error; }
+  };
   return { env, db };
 }
 function payload(overrides = {}) {

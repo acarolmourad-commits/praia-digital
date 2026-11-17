@@ -22,4 +22,4 @@ jobs:
         with:
           node-version: '24'
       - run: node --check ia/marketplaces/app.js
-      - run: node --test workers/livebridge-leads/worker.test.mjs
+      - run: node --test workers/livebridge-leads/*.test.mjs
