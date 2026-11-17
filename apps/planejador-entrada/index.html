@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Planejador de Entrada — Quanto guardar por mês para comprar | Praia Digital Apps</title>
-<meta name="description" content="Planeje a entrada do seu imóvel no litoral: veja quanto guardar por mês, quanto tempo leva e o efeito dos juros (CDI) na sua meta. Gratuito.">
+<meta name="description" content="Simule o prazo para juntar a entrada com aportes mensais e rendimento hipotético. Sem promessa de retorno ou aprovação de crédito.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://praia.digital/apps/planejador-entrada/">
 <style>
@@ -16,7 +16,7 @@ label{display:block;font-size:13px;font-weight:600;margin:10px 0 4px}
 input,select{width:100%;padding:10px;border:1px solid #CBD5E1;border-radius:10px;font-size:15px}
 button{margin-top:14px;width:100%;padding:13px;background:#0A3D2E;color:#fff;border:0;border-radius:12px;font-size:16px;font-weight:700;cursor:pointer}
 button:hover{background:#0c5c43}
-.res{display:none;background:#ECFDF5;border:1px solid #10B981;border-radius:12px;padding:16px;margin-top:14px}
+.res[hidden]{display:none}.res{background:#ECFDF5;border:1px solid #10B981;border-radius:12px;padding:16px;margin-top:14px}
 .res p{margin:6px 0;font-size:15px}
 a{color:#0EA5E9}
 table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
@@ -32,102 +32,50 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
     .links{display:grid;gap:10px;margin-top:8px}
     .links a{display:block;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px;text-decoration:none;color:#0F172A;font-weight:600}
     .links a span{color:#0EA5E9}
+p{line-height:1.6;margin-top:8px} #erro{color:#991b1b;margin-top:12px} [aria-invalid="true"]{border:2px solid #b91c1c} td,th{overflow-wrap:anywhere} table{table-layout:fixed}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Planejador de Entrada | Praia Digital Apps","url":"https://praia.digital/apps/planejador-entrada/","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0"}}</script>
-<meta property="og:type" content="website"><meta property="og:title" content="Planejador de Entrada — Quanto guardar por mês para comprar | Praia Digital Apps"><meta property="og:description" content="Planeje a entrada do seu imóvel no litoral: quanto guardar por mês, prazo e efeito dos juros. Gratuito."><meta property="og:url" content="https://praia.digital/apps/planejador-entrada/">
+<meta property="og:type" content="website"><meta property="og:title" content="Planejador de Entrada — Quanto guardar por mês para comprar | Praia Digital Apps"><meta property="og:description" content="Simule o prazo para juntar a entrada com aportes mensais e rendimento hipotético."><meta property="og:url" content="https://praia.digital/apps/planejador-entrada/">
 <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quanto preciso de entrada para um imóvel no litoral?","acceptedAnswer":{"@type":"Answer","text":"Bancos financiam até 80–90% do valor. Para um apto de R$ 270 mil em Praia Grande, a entrada típica é R$ 40–55 mil; em Santos (R$ 560 mil), R$ 85–115 mil. Some ainda R$ 10–20 mil de custos de fechamento (ITBI + cartório)."}},{"@type":"Question","name":"Onde deixar o dinheiro da entrada rendendo?","acceptedAnswer":{"@type":"Answer","text":"Com o CDI em ~13,6% a.a. (set/2026), CDB 100% CDI com liquidez diária ou Tesouro Selic são as opções padrão: R$ 100 mil rendem ~R$ 1.100/mês. Evite deixar na poupança (~8,3% a.a.)."}},{"@type":"Question","name":"Vale usar FGTS na entrada?","acceptedAnswer":{"@type":"Answer","text":"Sim — é o uso mais eficiente do fundo: reduz o valor financiado e os juros totais, sem custo de oportunidade relevante (FGTS rende TR + 3% a.a., bem abaixo do CDI)."}},{"@type":"Question","name":"Quanto tempo para juntar a entrada?","acceptedAnswer":{"@type":"Answer","text":"Guardando R$ 2.000/mês a 13,6% a.a., você acumula ~R$ 55 mil em 24 meses ou ~R$ 90 mil em 36 meses. Acelere com FGTS, 13º, restituição do IR e venda de bens."}}]}
-  </script>
+
 <link rel="stylesheet" href="/css/app-network.css">
 </head>
 <body data-pd-app>
 <a class="pd-skip" href="#pd-app-title">Pular para o aplicativo</a><nav class="pd-network-nav" aria-label="Navegação dos aplicativos"><ul><li><a href="/">Página inicial</a></li><li><a href="/apps/">Todos os aplicativos</a></li><li><a href="/#jornadas-apps">Roteiros de análise</a></li></ul></nav>
 <header><h1 id="pd-app-title" tabindex="-1">🎯 Planejador de Entrada</h1><p>Transforme o sonho do imóvel no litoral em uma meta mensal concreta</p></header>
-<div class="wrap">
+<main class="wrap">
 <div class="card">
-  <label for="valor">Valor do imóvel desejado (R$)</label><input id="valor" type="number" value="450000">
-  <label for="pct">Percentual de entrada (%)</label><input id="pct" type="number" value="20">
-  <label for="guardado">Quanto você já tem guardado (R$)</label><input id="guardado" type="number" value="15000">
-  <label for="mensal">Quanto consegue guardar por mês (R$)</label><input id="mensal" type="number" value="2500">
-  <label for="rend">Rendimento mensal da aplicação (% a.m.)</label><input id="rend" type="number" step="0.01" value="1.07">
-  <button onclick="planejar()">Planejar minha entrada</button>
-  <div class="res" id="res">
-    <div class="pd-table-scroll" role="region" aria-label="Planejamento da entrada" tabindex="0"><table>
-      <tr><th></th><th>Valor</th></tr>
-      <tr><td>Meta da entrada</td><td id="meta"></td></tr>
-      <tr><td>Falta juntar</td><td id="falta"></td></tr>
-      <tr><td>Tempo estimado</td><td id="tempo"></td></tr>
-      <tr><td>Total guardado (sem juros)</td><td id="guard"></td></tr>
-      <tr><td>Juros acumulados</td><td id="juros"></td></tr>
-    </table></div>
-    <p id="dica" style="font-weight:700"></p>
-  </div>
+<p>Exemplo editável, não proposta bancária ou recomendação de investimento. O rendimento mensal é uma hipótese constante, não uma taxa de mercado. O padrão é 0%.</p>
+<label for="valor">Valor do imóvel desejado (R$)</label><input id="valor" type="number" min="0.01" max="1000000000" step="0.01" value="450000">
+<label for="pct">Percentual de entrada (%)</label><input id="pct" type="number" min="0" max="100" step="0.01" value="20">
+<label for="guardado">Saldo já reservado para a entrada (R$)</label><input id="guardado" type="number" min="0" max="1000000000" step="0.01" value="15000">
+<label for="mensal">Aporte ao final de cada mês (R$)</label><input id="mensal" type="number" min="0" max="1000000000" step="0.01" value="2500">
+<label for="rend">Rendimento efetivo mensal hipotético (% a.m.)</label><input id="rend" type="number" min="0" max="100" step="0.01" value="0">
+<p>Limites técnicos: valores monetários até R$ 1 bilhão, entrada de 0% a 100%, rendimento de 0% a 100% ao mês e horizonte de 1.200 meses. Esses limites não representam condições de mercado. Este modelo não simula perdas ou taxas negativas.</p>
+<button type="button" id="calcular">Planejar minha entrada</button><p id="erro" role="alert" hidden></p>
+<noscript><p>Ative JavaScript para calcular. Nenhum resultado é produzido sem ele.</p></noscript>
+<div class="res" id="res" aria-live="polite" hidden>
+<table><caption>Projeção nas premissas informadas</caption><tr><th scope="col">Indicador</th><th scope="col">Valor</th></tr>
+<tr><th scope="row">Meta da entrada</th><td id="meta"></td></tr>
+<tr><th scope="row">Falta juntar hoje</th><td id="falta"></td></tr>
+<tr><th scope="row">Prazo para atingir a meta</th><td id="tempo"></td></tr>
+<tr><th scope="row">Período calculado</th><td id="periodo"></td></tr>
+<tr><th scope="row">Saldo inicial + aportes no período</th><td id="guard"></td></tr>
+<tr><th scope="row">Rendimento simulado no período</th><td id="juros"></td></tr>
+<tr><th scope="row">Saldo projetado ao fim do período</th><td id="saldo"></td></tr></table>
+<p id="dica" style="font-weight:700"></p></div></div>
+<div class="card"><h2>Como o cálculo funciona</h2>
+<p>Meta = valor do imóvel × percentual de entrada/100. Partindo do saldo já reservado, a cada mês: novo saldo = saldo anterior × (1 + rendimento mensal/100) + aporte. O aporte entra no final do mês, sem rendimento nesse primeiro mês. O prazo é o primeiro mês completo em que o saldo alcança a meta.</p>
+<p>Com rendimento zero, o saldo aumenta apenas pelos aportes. Aporte zero é permitido: o saldo inicial pode crescer com o rendimento hipotético. Se a reserva já cobre a meta, o prazo é zero. Uma meta de entrada zero não significa que um banco financiará todo o imóvel.</p>
+<p>Se a meta não for atingida em 1.200 meses, mostramos isso expressamente, e não um prazo fictício. Nessa situação, os valores apresentados correspondem ao fim do horizonte calculado. Os cálculos não arredondam a cada mês; apenas a exibição monetária é arredondada.</p>
 </div>
-<div class="card">
-<h2 style="font-size:17px;margin-bottom:10px">🎯 Quanto de entrada por cidade <span class="tag">set/2026</span></h2>
-<p style="font-size:14px;color:#475569;margin-bottom:8px">Entrada típica de 20% sobre o preço de um apto de 2 quartos + custos de fechamento estimados (ITBI + cartório):</p>
-<div class="pd-table-scroll" role="region" aria-label="Planejamento da entrada" tabindex="0"><table>
-  <tr><th>Cidade</th><th>Preço típico</th><th>Entrada (20%)</th><th>Custos fechamento</th><th>Total inicial</th></tr>
-  <tr><td>Peruíbe</td><td>R$ 143 mil</td><td>R$ 29 mil</td><td>~R$ 6 mil</td><td>~R$ 35 mil</td></tr>
-  <tr><td>Mongaguá</td><td>R$ 158 mil</td><td>R$ 32 mil</td><td>~R$ 6 mil</td><td>~R$ 38 mil</td></tr>
-  <tr><td>Itanhaém</td><td>R$ 180 mil</td><td>R$ 36 mil</td><td>~R$ 7 mil</td><td>~R$ 43 mil</td></tr>
-  <tr><td>Bertioga</td><td>R$ 240 mil</td><td>R$ 48 mil</td><td>~R$ 9 mil</td><td>~R$ 57 mil</td></tr>
-  <tr><td>Praia Grande</td><td>R$ 270 mil</td><td>R$ 54 mil</td><td>~R$ 10 mil</td><td>~R$ 64 mil</td></tr>
-  <tr><td>São Vicente</td><td>R$ 315 mil</td><td>R$ 63 mil</td><td>~R$ 11 mil</td><td>~R$ 74 mil</td></tr>
-  <tr><td>Guarujá</td><td>R$ 368 mil</td><td>R$ 74 mil</td><td>~R$ 14 mil</td><td>~R$ 88 mil</td></tr>
-  <tr><td>São Sebastião</td><td>R$ 488 mil</td><td>R$ 98 mil</td><td>~R$ 19 mil</td><td>~R$ 117 mil</td></tr>
-  <tr><td>Ilhabela</td><td>R$ 540 mil</td><td>R$ 108 mil</td><td>~R$ 16 mil</td><td>~R$ 124 mil</td></tr>
-  <tr><td>Santos</td><td>R$ 560 mil</td><td>R$ 112 mil</td><td>~R$ 17 mil</td><td>~R$ 129 mil</td></tr>
-</table></div>
-<p style="font-size:12px;color:#64748B;margin-top:12px">Estimativas Praia Digital (set/2026). ITBI 2–3% conforme município — veja a <a href="/apps/custo-de-compra/" style="color:#0EA5E9">calculadora de custos de compra</a>. FGTS pode abater a entrada.</p>
-</div>
-
-  <div class="card faq">
-    <h2 style="font-size:17px;margin-bottom:10px">❓ Perguntas frequentes</h2>
-    <details><summary>Quanto preciso de entrada para um imóvel no litoral?</summary><p>Bancos financiam até 80–90% do valor. Para um apto de R$ 270 mil em Praia Grande, a entrada típica é R$ 40–55 mil; em Santos (R$ 560 mil), R$ 85–115 mil. Some ainda R$ 10–20 mil de custos de fechamento (ITBI + cartório).</p></details>
-    <details><summary>Onde deixar o dinheiro da entrada rendendo?</summary><p>Com o CDI em ~13,6% a.a. (set/2026), CDB 100% CDI com liquidez diária ou Tesouro Selic são as opções padrão: R$ 100 mil rendem ~R$ 1.100/mês. Evite deixar na poupança (~8,3% a.a.).</p></details>
-    <details><summary>Vale usar FGTS na entrada?</summary><p>Sim — é o uso mais eficiente do fundo: reduz o valor financiado e os juros totais, sem custo de oportunidade relevante (FGTS rende TR + 3% a.a., bem abaixo do CDI).</p></details>
-    <details><summary>Quanto tempo para juntar a entrada?</summary><p>Guardando R$ 2.000/mês a 13,6% a.a., você acumula ~R$ 55 mil em 24 meses ou ~R$ 90 mil em 36 meses. Acelere com FGTS, 13º, restituição do IR e venda de bens.</p></details>
-  </div>
-
-  <div class="card">
-    <h2 style="font-size:17px;margin-bottom:10px">📍 Aprofunde por bairro</h2>
-    <div class="links">
-      <a href="/bairros/"><span>🏙️ Índice de bairros</span> — 123 bairros em 12 cidades do litoral</a>
-      <a href="/bairros/santos/index.html">Santos — Gonzaga, Boqueirão, Pompéia e mais</a>
-      <a href="/bairros/guaruja/index.html">Guarujá — Enseada, Pitangueiras, Astúrias e mais</a>
-      <a href="/bairros/sao-sebastiao/index.html">São Sebastião — Maresias, Juquehy, Barra do Sahy e mais</a>
-    </div>
-  </div>
-
-<div class="card"><h2>📌 Como acelerar sua entrada</h2>
-<p style="font-size:14px;margin-top:6px">Quanto maior a entrada, menor o financiamento e os juros. Combine este planejador com o <a href="/apps/calculadora-financiamento/">simulador SAC vs. Price</a> para ver o impacto no valor da parcela, e com o <a href="/apps/custo-de-compra/">custo de compra</a> para lembrar do ITBI, escritura e registro (em geral 4–5% do valor do imóvel). Uma alternativa sem juros bancários é o <a href="/apps/calculadora-consorcio/">consórcio</a>, que também pode usar o valor guardado como lance.</p>
-<p style="font-size:14px;margin-top:8px">Dica: aplique o dinheiro da entrada em CDBs de liquidez diária ou Tesouro Selic — rendimento próximo do CDI (~1,07% a.m. com Selic a 13,75% a.a., set/2026) e baixo risco.</p></div>
-</div>
-<script>
-const fmt=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
-function planejar(){
-  const V=parseFloat(document.getElementById('valor').value)||0;
-  const P=(parseFloat(document.getElementById('pct').value)||0)/100;
-  const G=parseFloat(document.getElementById('guardado').value)||0;
-  const M=parseFloat(document.getElementById('mensal').value)||0;
-  const r=(parseFloat(document.getElementById('rend').value)||0)/100;
-  const meta=V*P;
-  if(meta<=0||M<=0){alert('Verifique os valores.');return;}
-  let saldo=G,m=0;
-  while(saldo<meta&&m<1200){saldo=saldo*(1+r)+M;m++;}
-  const anos=Math.floor(m/12),meses=m%12;
-  const guardadoTotal=G+m*M;
-  document.getElementById('meta').textContent=fmt(meta);
-  document.getElementById('falta').textContent=fmt(Math.max(0,meta-G));
-  document.getElementById('tempo').textContent=(anos?anos+' ano(s) e ':'')+meses+' mês(es)';
-  document.getElementById('guard').textContent=fmt(guardadoTotal);
-  document.getElementById('juros').textContent=fmt(Math.max(0,saldo-guardadoTotal));
-  document.getElementById('dica').textContent = m>=1200 ? '⚠️ Com esse ritmo, a meta fica muito longe. Considere aumentar o aporte ou reduzir o valor do imóvel.' : '✅ Meta alcançável! Os juros trabalham a seu favor.';
-  document.getElementById('res').style.display='block';
-}
-</script>
+<div class="card"><h2>Limitações e próximos passos</h2>
+<p>O preço do imóvel e a meta ficam fixos nesta simulação. Não há ajuste por inflação, mudança de rendimento, saques, impostos ou tarifas calculados separadamente. Informe uma hipótese de rendimento compatível com os custos que pretende considerar; ela não é garantida.</p>
+<p>A reserva informada deve ser a destinada à entrada, não todo o seu patrimônio. Custos de aquisição e reserva de emergência devem ser planejados separadamente. O percentual de entrada depende da sua operação, não de uma regra desta ferramenta.</p>
+<p>Continue com o <a href="/apps/calculadora-financiamento/">simulador SAC e Price</a> e os <a href="/apps/custo-de-compra/">custos de compra</a>. Para outro tipo de planejamento, consulte a <a href="/apps/calculadora-consorcio/">calculadora de consórcio</a>, sem presumir data de contemplação.</p>
+<p>Explore também o <a href="/bairros/">índice de bairros</a>, <a href="/bairros/santos/index.html">Santos</a>, <a href="/bairros/guaruja/index.html">Guarujá</a> e <a href="/bairros/sao-sebastiao/index.html">São Sebastião</a>.</p>
+</div></main>
+<script src="/apps/planejador-entrada/calculadora.js"></script>
 
 <!-- Praia Digital Apps: rede de interlinks -->
 
