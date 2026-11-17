@@ -5,6 +5,10 @@ on:
       - 'apps/**'
       - 'index.html'
       - 'css/app-network.css'
+      - 'css/app-guide.css'
+      - 'js/app-guide.js'
+      - 'tests/app-guide-browser.cjs'
+      - 'tests/screenshot.cjs'
       - 'data/app-network.json'
       - 'data/app-guidance.json'
       - 'scripts/build_app_network.py'
@@ -23,3 +27,13 @@ jobs:
           python-version: '3.12'
       - name: Verify links, coverage, anchors and generated navigation
         run: python3 -m unittest discover -s tests -p 'test_complete_app_network.py' -v
+      - name: Verify guide in desktop and mobile browsers
+        run: |
+          npm install --prefix "$RUNNER_TEMP/app-guide" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/app-guide/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          NODE_PATH="$RUNNER_TEMP/app-guide/node_modules" node tests/app-guide-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: app-guide-visual-evidence
+          path: ${{ runner.temp }}/app-guide-qa
