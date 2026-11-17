@@ -1,0 +1,26 @@
+name: Consortium calculator checks
+on:
+  pull_request:
+    paths:
+      - 'apps/calculadora-consorcio/**'
+      - 'tests/consorcio-browser.cjs'
+      - 'tests/consorcio-regression.cjs'
+      - '.github/workflows/consorcio-checks.yml'
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Arithmetic and input regressions
+        run: node --test tests/consorcio-regression.cjs
+      - name: Install browser test dependencies
+        run: |
+          npm install --prefix "$RUNNER_TEMP/consorcio-browser" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/consorcio-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+      - name: Check planner responsive and interrupted flows
+        run: NODE_PATH="$RUNNER_TEMP/consorcio-browser/node_modules" node tests/consorcio-browser.cjs

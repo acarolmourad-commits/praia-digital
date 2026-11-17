@@ -35,7 +35,7 @@
     .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
     @media(max-width:640px){.grid{grid-template-columns:1fr}}
     button{background:#0A3D2E;color:#fff;border:none;padding:14px 28px;border-radius:10px;font-size:16px;font-weight:700;cursor:pointer;width:100%;margin-top:14px}
-    .result{margin-top:16px;display:none}
+    .result[hidden]{display:none}.result{margin-top:16px} #erro{color:#991b1b;margin-top:12px} [aria-invalid="true"]{border:2px solid #b91c1c}
     .rrow{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #EEE;font-size:15px;flex-wrap:wrap;gap:6px}
     .rrow strong{color:#0A3D2E}
     .save{background:#DCFCE7;color:#14532D;font-weight:800;text-align:center;padding:12px;border-radius:10px;margin-top:12px}
@@ -59,14 +59,17 @@
 <div class="wrap">
   <div class="card">
     <div class="grid">
-      <div><label for="credito">Crédito desejado (R$)</label><input type="number" id="credito" value="500000"></div>
-      <div><label for="prazo">Prazo (meses)</label><input type="number" id="prazo" value="180"></div>
-      <div><label for="taxa">Taxa administrativa total (%)</label><input type="number" id="taxa" value="18"></div>
-      <div><label for="lance">Lance (% do crédito, opcional)</label><input type="number" id="lance" value="0"></div>
-      <div><label for="taxaFin">Taxa nominal do financiamento (% a.a., dividida por 12)</label><input type="number" id="taxaFin" step="0.01" value="11.19"></div>
+      <div><label for="credito">Crédito desejado (R$)</label><input type="number" id="credito" min="0.01" max="1000000000" step="0.01" value="500000"></div>
+      <div><label for="prazo">Prazo (meses)</label><input type="number" id="prazo" min="1" max="600" step="1" value="180"></div>
+      <div><label for="taxa">Taxa administrativa total (%)</label><input type="number" id="taxa" min="0" max="100" step="0.01" value="18"></div>
+      <div><label for="lance">Lance (% do crédito, opcional)</label><input type="number" id="lance" min="0" max="100" step="0.01" value="0"></div>
+      <div><label for="taxaFin">Taxa nominal do financiamento (% a.a., dividida por 12)</label><input type="number" id="taxaFin" min="0" max="100" step="0.01" value="11.19"></div>
     </div>
-    <button onclick="calcular()">Simular consórcio</button>
-    <div class="result" id="result">
+    <p class="note">Campos obrigatórios, exceto lance: lance vazio significa zero. Limites técnicos: crédito até R$ 1 bilhão, prazo inteiro de 1 a 600 meses e taxas/lance de 0% a 100%. Não representam condições oferecidas por instituições.</p>
+    <button type="button" id="calcular" onclick="calcular()">Simular consórcio</button>
+    <p id="erro" role="alert" hidden></p>
+    <noscript><p>Ative JavaScript para simular. Nenhum resultado é produzido sem ele.</p></noscript>
+    <div class="result" id="result" aria-live="polite" hidden>
       <div class="rrow"><span>Parcela do consórcio</span><strong id="rParc"></strong></div>
       <div class="rrow"><span>Total pago (consórcio)</span><strong id="rTotC"></strong></div>
       <div class="rrow"><span>Parcela do financiamento (Price)</span><strong id="rParcF"></strong></div>
@@ -112,17 +115,28 @@
 </div>
 <footer>Praia Digital — Tecnologia imobiliária do litoral • <a href="/" style="color:#0EA5E9">praia.digital</a></footer>
 <script>
+const fields={credito:[0.01,1e9,'Informe crédito entre R$ 0,01 e R$ 1 bilhão.'],prazo:[1,600,'Informe prazo inteiro entre 1 e 600 meses.'],taxa:[0,100,'Informe taxa administrativa total entre 0% e 100%.'],lance:[0,100,'Informe lance entre 0% e 100%, ou deixe vazio para zero.'],taxaFin:[0,100,'Informe taxa nominal anual do financiamento entre 0% e 100%.']};
+function limpar(){
+  document.getElementById('result').hidden=true;
+  const erro=document.getElementById('erro');erro.hidden=true;erro.textContent='';
+  Object.keys(fields).forEach(id=>document.getElementById(id).removeAttribute('aria-invalid'));
+}
+Object.keys(fields).forEach(id=>{const e=document.getElementById(id);e.addEventListener('input',limpar);e.addEventListener('change',limpar);});
 function fmt(v){ return 'R$ ' + Math.round(v).toLocaleString('pt-BR'); }
 function calcular(){
-  const C = parseFloat(document.getElementById('credito').value)||0;
-  const n = parseFloat(document.getElementById('prazo').value)||0;
-  const tx = parseFloat(document.getElementById('taxa').value)||0;
-  const lance = parseFloat(document.getElementById('lance').value)||0;
-  const i = (parseFloat(document.getElementById('taxaFin').value)||0)/100/12;
-  if(![C,n,tx,lance,i].every(Number.isFinite)||C<=0||n<=0||!Number.isInteger(n)||tx<0||i<0||lance<0||lance>100){ alert('Informe crédito positivo, prazo inteiro e taxas válidas. O lance deve ficar entre 0% e 100%.'); return; }
+  limpar();const values={};
+  for(const [id,[min,max,message]] of Object.entries(fields)){
+    const element=document.getElementById(id),raw=element.value.trim();
+    const value=raw===''?(id==='lance'?0:NaN):Number(raw);
+    if(!Number.isFinite(value)||value<min||value>max||(id==='prazo'&&!Number.isInteger(value))){
+      const erro=document.getElementById('erro');erro.textContent=message;erro.hidden=false;element.setAttribute('aria-invalid','true');element.focus();return;
+    }
+    values[id]=value;
+  }
+  const {credito:C,prazo:n,taxa:tx,lance}=values,i=values.taxaFin/1200;
   const totalC = C*(1+tx/100);
   const parcC = totalC/n;
-  const parcF = i>0 ? C*i/(1-Math.pow(1+i,-n)) : C/n;
+  const parcF = i>0 ? C*i/(-Math.expm1(-n*Math.log1p(i))) : C/n;
   const totF = parcF*n;
   document.getElementById('rParc').textContent = fmt(parcC);
   document.getElementById('rTotC').textContent = fmt(totalC);
@@ -130,7 +144,7 @@ function calcular(){
   document.getElementById('rTotF').textContent = fmt(totF);
   document.getElementById('rLance').textContent = fmt(C*lance/100);
   document.getElementById('rSave').textContent = 'Diferença nominal (financiamento menos consórcio): ' + fmt(totF - totalC) + '. Não inclui todos os custos e reajustes.';
-  document.getElementById('result').style.display = 'block';
+  document.getElementById('result').hidden = false;
 }
 </script>
 
