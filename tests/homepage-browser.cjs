@@ -44,8 +44,9 @@ async function appCatalog(browser, page, width) {
   await page.goto(origin + '/apps/');
   assert.equal(await page.locator('main').count(), 1);
   const catalog = page.locator('#catalogo-apps');
-  const cards = catalog.locator('a.card[href^="/apps/"]');
+  const cards = catalog.locator('.pd-catalog-group a.card[href^="/apps/"]');
   assert.equal(await cards.count(), 16);
+  assert.equal(await catalog.locator('a.card[href="/apps/guia-de-uso.html"]').count(), 1);
   await page.keyboard.press('Tab');
   assert.equal(await page.locator('.pd-skip').evaluate(el => {
     const box = el.getBoundingClientRect();
@@ -88,7 +89,8 @@ async function appCatalog(browser, page, width) {
   try {
     const plain = await offline.context.newPage();
     await plain.goto(origin + '/apps/');
-    assert.equal(await plain.locator('#catalogo-apps a.card[href^="/apps/"]').count(),16);
+    assert.equal(await plain.locator('#catalogo-apps .pd-catalog-group a.card[href^="/apps/"]').count(),16);
+    assert.equal(await plain.locator('a.card[href="/apps/guia-de-uso.html"]').count(),1);
     await plain.locator('#objetivos-apps a[href="#grupo-marketplaces"]').focus();
     await plain.keyboard.press('Enter');
     await plain.waitForURL(origin + '/apps/#grupo-marketplaces');

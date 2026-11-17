@@ -26,6 +26,7 @@ class CompleteAppNetworkTests(unittest.TestCase):
             for other in self.slugs - {slug}:
                 self.assertIn('/apps/'+other+'/', page.links, slug+' -> '+other)
             self.assertIn('/#rede-apps', page.links)
+            self.assertIn('/apps/guia-de-uso.html', page.links)
             self.assertEqual(page.ids.count('pd-network-title'),1,slug)
             self.assertEqual(len(page.ids),len(set(page.ids)),slug)
     def test_home_and_catalog_promote_every_app_and_shortcuts_resolve(self):
@@ -35,6 +36,20 @@ class CompleteAppNetworkTests(unittest.TestCase):
             for href in page.links:
                 if href.startswith('#'):self.assertIn(href[1:],page.ids,path+' '+href)
             self.assertEqual(len(page.ids),len(set(page.ids)),path)
+    def test_guide_links_and_anchors_resolve(self):
+        page = Links((ROOT/'apps/guia-de-uso.html').read_text(encoding='utf-8'))
+        self.assertEqual(len(page.ids), len(set(page.ids)))
+        for slug in self.slugs:
+            self.assertIn('/apps/'+slug+'/', page.links)
+        for href in page.links:
+            if href.startswith('#'):
+                self.assertIn(href[1:], page.ids)
+            elif href.startswith('/'):
+                dest = ROOT / href.split('#')[0].lstrip('/')
+                self.assertTrue(dest.exists(), href)
+        for source in ['index.html', 'apps/index.html']:
+            self.assertIn('/apps/guia-de-uso.html', Links((ROOT/source).read_text(encoding='utf-8')).links)
+
     def test_registry_and_generated_navigation_are_current(self):
         self.assertEqual(builder.build(check=True),[])
 
