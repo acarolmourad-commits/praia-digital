@@ -2,6 +2,22 @@ from academy.tests._shared_test_db import Base, get_db, override_get_db, Testing
 import pytest
 
 
+@pytest.fixture()
+def owner_publication_sandbox(tmp_path, monkeypatch):
+    """Keep example listings, uploads and sitemaps outside the public checkout."""
+    from academy.core import publication_service, owner_email_service
+    monkeypatch.chdir(tmp_path)
+    public_dir = tmp_path / "proprietarios"
+    public_dir.mkdir()
+    monkeypatch.setattr(publication_service, "PUBLIC_DIR", str(public_dir))
+    monkeypatch.setattr(owner_email_service, "send_email", lambda *args, **kwargs: True)
+    (tmp_path / "sitemap.xml").write_text(
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>',
+        encoding="utf-8",
+    )
+    return tmp_path
+
+
 @pytest.fixture(autouse=True)
 def _reset_db():
     Base.metadata.drop_all(bind=engine)
