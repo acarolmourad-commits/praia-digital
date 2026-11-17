@@ -1,0 +1,23 @@
+name: Events planning guide checks
+on:
+  pull_request:
+    paths:
+      - 'eventos-litoral-paulista-2026-2027.html'
+      - 'tests/eventos-browser.cjs'
+      - '.github/workflows/eventos-checks.yml'
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser test dependencies
+        run: |
+          npm install --prefix "$RUNNER_TEMP/bertioga-browser" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/bertioga-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+      - name: Check guide structure and responsive navigation
+        run: NODE_PATH="$RUNNER_TEMP/bertioga-browser/node_modules" node tests/eventos-browser.cjs
