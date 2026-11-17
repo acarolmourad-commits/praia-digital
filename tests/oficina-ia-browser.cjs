@@ -2,12 +2,14 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
+const { createHash } = require('node:crypto');
 const { chromium } = require('playwright');
 const root = path.resolve(__dirname, '..');
 const origin = 'https://oficina.test';
 const appUrl = `${origin}/apps/oficina-ia-imobiliaria/`;
+const moduleVersion = '?v=' + createHash('sha256').update(fs.readFileSync(path.join(root, 'apps/oficina-ia-imobiliaria/app.mjs'))).digest('hex').slice(0, 12);
 
-async function fixture(browser, { javaScriptEnabled = true, failModule = false, width = 390 } = {}) {
+async function fixture(browser, { javaScriptEnabled = true, failModule = false, width = 390, legacyMarkup = false } = {}) {
   const context = await browser.newContext({ javaScriptEnabled, viewport: { width, height: 844 } });
   const page = await context.newPage();
   const documents = [];
@@ -17,18 +19,26 @@ async function fixture(browser, { javaScriptEnabled = true, failModule = false, 
   });
   await page.route('**/*', route => {
     const url = new URL(route.request().url());
-    if (url.origin !== origin || url.search || route.request().method() !== 'GET') {
+    const versionedModule = url.pathname === '/apps/oficina-ia-imobiliaria/app.mjs' && url.search === moduleVersion;
+    if (url.origin !== origin || (url.search && !versionedModule) || route.request().method() !== 'GET') {
       unexpected.push({ url: url.href, method: route.request().method() });
       return route.abort();
     }
     if (failModule && url.pathname.endsWith('/core.mjs')) return route.abort();
+    // A cached legacy URL must never satisfy a fresh page's module request.
+    if (url.pathname.endsWith('/app.mjs') && !versionedModule) {
+      return route.fulfill({ contentType: 'text/javascript', body: '// Simulated stale cached module: no new handlers.' });
+    }
     const rel = url.pathname.endsWith('/') ? `${url.pathname}index.html` : url.pathname;
     const file = path.resolve(root, `.${rel}`);
     if (!file.startsWith(root + path.sep) || !fs.existsSync(file) || !fs.statSync(file).isFile()) {
       return route.fulfill({ status: 404, body: '' });
     }
     const contentType = { '.html': 'text/html', '.js': 'text/javascript', '.mjs': 'text/javascript', '.css': 'text/css' }[path.extname(file)] || 'application/octet-stream';
-    return route.fulfill({ contentType, body: fs.readFileSync(file) });
+    const body = legacyMarkup && file.endsWith('oficina-ia-imobiliaria/index.html')
+      ? fs.readFileSync(file, 'utf8').replace(/<span id="result-kind">.*?<\/span>/, '')
+      : fs.readFileSync(file);
+    return route.fulfill({ contentType, body });
   });
   await page.goto(appUrl, { waitUntil: 'networkidle' });
   return { context, page, documents, unexpected };
@@ -227,5 +237,17 @@ async function assertCurrentExports(browser, width) {
       console.log('PASS: initialized app — briefing, literal rendering, missing fields, follow-up draft, focus and reset stay local');
     } finally { await context.close(); }
     for (const width of [320, 390, 1280]) await assertCurrentExports(browser, width);
+    const legacy = await fixture(browser, { legacyMarkup: true });
+    try {
+      await legacy.page.getByLabel('Tipo do imóvel', { exact: true }).fill('Apartamento fictício');
+      await legacy.page.getByLabel('Cidade', { exact: true }).fill('Bertioga');
+      await legacy.page.getByLabel('Finalidade', { exact: true }).fill('Venda fictícia');
+      await legacy.page.getByRole('button', { name: 'Montar briefing e prompt', exact: true }).click();
+      assert.match(await legacy.page.locator('#status').textContent(), /Resultado pronto/);
+      await legacy.page.getByRole('button', { name: 'Limpar tudo', exact: true }).click();
+      assert.equal(await legacy.page.locator('#output').inputValue(), '');
+      await assertNoNavigation(legacy.page, legacy.documents, legacy.unexpected);
+      console.log('PASS: versioned module bypasses stale URL; legacy markup can generate and reset');
+    } finally { await legacy.context.close(); }
   } finally { await browser.close(); }
 })().catch(error => { console.error(error); process.exitCode = 1; });
