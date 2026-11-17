@@ -3,6 +3,9 @@ on:
   pull_request:
     paths:
       - 'apps/**'
+      - 'guias/usar-apps-com-evidencias.html'
+      - 'cases/rede-aplicativos-praia-digital.html'
+      - 'tests/app-evidence-browser.cjs'
       - 'index.html'
       - 'css/app-network.css'
       - 'css/app-guide.css'
@@ -27,11 +30,14 @@ jobs:
           python-version: '3.12'
       - name: Verify links, coverage, anchors and generated navigation
         run: python3 -m unittest discover -s tests -p 'test_complete_app_network.py' -v
+      - name: Prepare shared navigation
+        run: python3 scripts/build-navigation.py
       - name: Verify guide in desktop and mobile browsers
         run: |
           npm install --prefix "$RUNNER_TEMP/app-guide" playwright@1.63.0 --no-audit --no-fund
           "$RUNNER_TEMP/app-guide/node_modules/.bin/playwright" install --with-deps chromium --only-shell
           NODE_PATH="$RUNNER_TEMP/app-guide/node_modules" node tests/app-guide-browser.cjs
+          NODE_PATH="$RUNNER_TEMP/app-guide/node_modules" node tests/app-evidence-browser.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:

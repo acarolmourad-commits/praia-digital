@@ -49,7 +49,7 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
       await page.emulateMedia({media:'screen'});
       await page.goto('https://praia.digital/apps/guia-de-uso.html');
       await page.keyboard.press('Tab');
-      assert.equal(await page.evaluate(() => document.activeElement.className), 'pd-skip');
+      assert.equal(await page.evaluate(() => document.activeElement.matches('a.pd-skip[href="#conteudo"]')), true);
       await page.keyboard.press('Enter');
       assert.equal(new URL(page.url()).hash, '#conteudo');
       await screenshot(page, {path:path.join(output, `guide-${width}.png`),fullPage:true});
