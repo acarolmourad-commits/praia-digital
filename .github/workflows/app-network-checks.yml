@@ -9,6 +9,10 @@ on:
       - 'data/app-guidance.json'
       - 'scripts/build_app_network.py'
       - 'tests/test_complete_app_network.py'
+      - 'guias/usar-apps-com-evidencias.html'
+      - 'cases/rede-aplicativos-praia-digital.html'
+      - 'tests/app-guide-browser.cjs'
+      - 'tests/capture-evidence.cjs'
       - '.github/workflows/app-network-checks.yml'
   workflow_dispatch:
 permissions:
@@ -23,3 +27,15 @@ jobs:
           python-version: '3.12'
       - name: Verify links, coverage, anchors and generated navigation
         run: python3 -m unittest discover -s tests -p 'test_complete_app_network.py' -v
+      - name: Prepare shared navigation
+        run: python3 scripts/build-navigation.py
+      - name: Verify guide and study in desktop and mobile layouts
+        run: |
+          npm install --prefix "$RUNNER_TEMP/app-guide" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/app-guide/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          NODE_PATH="$RUNNER_TEMP/app-guide/node_modules" node tests/app-guide-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: app-guide-visual-evidence
+          path: ${{ runner.temp }}/app-guide-qa
