@@ -45,10 +45,18 @@
   form.addEventListener('submit', event => event.preventDefault());
   clear.addEventListener('click', () => { reset(); query.focus(); });
   const objectives = document.getElementById('objetivos-apps');
+  let handledHash = window.location.hash;
   if (objectives) objectives.addEventListener('click', event => {
-    if (event.target.closest('a[href^="#grupo-"]')) reset();
+    const link = event.target.closest('a[href^="#grupo-"]');
+    if (link) {
+      reset();
+      handledHash = link.getAttribute('href');
+    }
   });
   window.addEventListener('hashchange', () => {
+    // The click already restored the target; do not erase a subsequent query.
+    if (window.location.hash === handledHash) return;
+    handledHash = window.location.hash;
     if (groups.some(group => '#' + group.id === window.location.hash)) reset();
   });
   // Browsers may restore form values when returning from an app.
