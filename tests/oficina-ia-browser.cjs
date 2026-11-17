@@ -7,8 +7,8 @@ const root = path.resolve(__dirname, '..');
 const origin = 'https://oficina.test';
 const appUrl = `${origin}/apps/oficina-ia-imobiliaria/`;
 
-async function fixture(browser, { javaScriptEnabled = true, failModule = false } = {}) {
-  const context = await browser.newContext({ javaScriptEnabled, viewport: { width: 390, height: 844 } });
+async function fixture(browser, { javaScriptEnabled = true, failModule = false, width = 390 } = {}) {
+  const context = await browser.newContext({ javaScriptEnabled, viewport: { width, height: 844 } });
   const page = await context.newPage();
   const documents = [];
   const unexpected = [];
@@ -40,6 +40,116 @@ async function assertNoNavigation(page, documents, unexpected) {
   assert.equal(page.url(), appUrl);
   assert.deepEqual(documents, [appUrl]);
   assert.deepEqual(unexpected, []);
+}
+
+async function assertCurrentExports(browser, width) {
+  const { context, page, documents, unexpected } = await fixture(browser, { width });
+  const downloads = [];
+  page.on('download', download => downloads.push(download));
+  try {
+    // Intercept only the local clipboard; no permission prompts or real contacts.
+    await page.evaluate(() => {
+      window.testCopies = [];
+      window.rejectCopy = false;
+      window.deferCopy = false;
+      Object.defineProperty(navigator, 'clipboard', { configurable: true, value: {
+        writeText: async text => {
+          if (window.rejectCopy) throw new Error('Synthetic clipboard denial');
+          if (window.deferCopy) await new Promise(resolve => { window.resolveCopy = resolve; });
+          window.testCopies.push(text);
+        }
+      } });
+    });
+    const copy = page.getByRole('button', { name: 'Copiar texto', exact: true });
+    const download = page.getByRole('button', { name: 'Baixar TXT', exact: true });
+    const generate = page.getByRole('button', { name: 'Montar briefing e prompt', exact: true });
+    const output = page.locator('#output');
+    const status = page.locator('#status');
+    await copy.click();
+    assert.match(await status.textContent(), /Gere um resultado antes de copiar/);
+    await page.getByLabel('Tipo do imóvel', { exact: true }).fill('Apartamento fictício');
+    await page.getByLabel('Cidade', { exact: true }).fill('Bertioga');
+    await page.getByLabel('Finalidade', { exact: true }).fill('Venda fictícia');
+    const price = page.getByLabel('Preço e periodicidade', { exact: true });
+    await price.fill('R$ 600.000 — teste');
+    await generate.click();
+    const oldText = await output.inputValue();
+    await price.fill('R$ 700.000 — teste');
+    assert.match(await status.textContent(), /foram alterados/);
+    assert.equal(await output.inputValue(), oldText, 'preserve the draft for review');
+    await copy.click();
+    await download.click();
+    await page.waitForTimeout(100);
+    assert.deepEqual(await page.evaluate(() => window.testCopies), []);
+    assert.equal(downloads.length, 0, 'outdated result must not create a download');
+
+    // Editing the old output alone must not bypass the changed source fields.
+    await output.fill('Revisão manual fictícia');
+    await copy.click();
+    assert.deepEqual(await page.evaluate(() => window.testCopies), []);
+    await generate.click();
+    assert.match(await output.inputValue(), /R\$ 700\.000/);
+    assert.doesNotMatch(await output.inputValue(), /R\$ 600\.000/);
+    await copy.click();
+    assert.equal(await page.evaluate(() => window.testCopies.at(-1)), await output.inputValue());
+
+    // Editing the other form does not invalidate a briefing.
+    await page.getByLabel('Contexto confirmado', { exact: true }).fill('Contexto fictício.');
+    await copy.click();
+    assert.match(await status.textContent(), /Texto copiado/);
+    const edited = (await output.inputValue()) + '\nRevisão manual fictícia.';
+    await output.fill(edited);
+    const downloadEvent = page.waitForEvent('download');
+    await download.click();
+    const file = await downloadEvent;
+    assert.equal(fs.readFileSync(await file.path(), 'utf8'), edited);
+
+    // A rejected clipboard request keeps the manual-copy fallback functional.
+    await page.evaluate(() => { window.rejectCopy = true; });
+    await copy.click();
+    assert.match(await status.textContent(), /Selecionei o texto/);
+    assert.deepEqual(await output.evaluate(el => [el.selectionStart, el.selectionEnd]), [0, edited.length]);
+    await page.evaluate(() => { window.rejectCopy = false; window.deferCopy = true; });
+    await copy.click();
+    await price.fill('R$ 800.000 — teste');
+    await page.evaluate(() => window.resolveCopy());
+    assert.match(await status.textContent(), /foram alterados/, 'pending copy cannot erase a newer warning');
+    await page.evaluate(() => { window.deferCopy = false; });
+
+    // Reverting the source values restores the existing manually reviewed text.
+    await price.fill('R$ 700.000 — teste');
+    await copy.click();
+    assert.equal(await page.evaluate(() => window.testCopies.at(-1)), edited);
+    await page.getByRole('button', { name: 'Conferir campos faltantes', exact: true }).click();
+    await price.fill('');
+    await copy.click();
+    assert.match(await status.textContent(), /foram alterados/);
+
+    // Each valid email stage still generates a draft; switching stages invalidates it.
+    const stages = ['primeiro', 'retorno', 'interesse', 'encerrar'];
+    for (const stage of stages) {
+      await page.locator('#followup select').selectOption(stage);
+      await page.getByRole('button', { name: 'Preparar modelo de e-mail', exact: true }).click();
+      assert.match(await output.inputValue(), /MODELO PARA REVISAR — NÃO ENVIADO/);
+      await page.getByLabel('Cidade', { exact: true }).fill('Santos');
+      await copy.click();
+      assert.match(await status.textContent(), /Texto copiado/);
+      const count = await page.evaluate(() => window.testCopies.length);
+      await page.locator('#followup select').selectOption(stage === 'primeiro' ? 'retorno' : 'primeiro');
+      await copy.click();
+      assert.equal(await page.evaluate(() => window.testCopies.length), count);
+      assert.match(await status.textContent(), /foram alterados/);
+    }
+    await page.getByRole('button', { name: 'Limpar tudo', exact: true }).click();
+    assert.equal(await output.inputValue(), '');
+    await output.fill('   ');
+    await download.click();
+    assert.match(await status.textContent(), /Gere um resultado antes de baixar/);
+    assert.equal(downloads.length, 1);
+    assert(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1), `no horizontal overflow at ${width}px`);
+    await assertNoNavigation(page, documents, unexpected);
+    console.log(`PASS: ${width}px — stale drafts blocked, fresh/edited TXT and copy work, source isolation, clipboard fallback, four stages and reset`);
+  } finally { await context.close(); }
 }
 
 (async () => {
@@ -102,5 +212,6 @@ async function assertNoNavigation(page, documents, unexpected) {
       await assertNoNavigation(page, documents, unexpected);
       console.log('PASS: initialized app — briefing, literal rendering, missing fields, follow-up draft, focus and reset stay local');
     } finally { await context.close(); }
+    for (const width of [320, 390, 1280]) await assertCurrentExports(browser, width);
   } finally { await browser.close(); }
 })().catch(error => { console.error(error); process.exitCode = 1; });
