@@ -1,83 +1,33 @@
-# Amazon Associates Setup — Praia Digital
+# Amazon Associados — Praia Digital
 
-**Program:** Amazon Associates  
-**Target Storefront:** Brazil / International  
-**Status:** READY FOR ACCOUNT CREATION
-**StoreID:** `praiadigital-20`
+Consulta técnica: 17/11/2026.
 
----
+## Situação comprovada e pendências
 
-## Why Amazon Associates for Praia Digital
+- O código existente nos links é `praiadigital-20`. Sua presença no HTML não comprova titularidade, aprovação da conta ou geração de comissão.
+- O registro anterior, de 05/09/2026, indicava conta pronta para criação e deixava aprovação e obtenção do ID pendentes. Esse registro histórico não determina o estado atual da conta.
+- O acesso ao painel nesta consulta foi impedido por mensagem da Amazon de sessão/cliente não suportado. A validação financeira permanece pendente.
+- A migração para `www.amazon.com.br` prioriza o catálogo brasileiro. O código existente foi preservado, sem presumir um novo ID ou alterar seu sufixo.
+- Amazon Brasil também pode apresentar ofertas internacionais. O comprador deve verificar vendedor, origem do envio, encargos, prazo para o CEP e devolução.
 
-Praia Digital visitors are actively researching:
-- Home office equipment for remote work
-- Smart home devices for seasonal rentals
-- Furniture/decor for investment properties
-- Real estate investment books
-- Photography/video equipment for listings
+## Validação necessária no painel
 
-These convert to Amazon product purchases with 1-3% commissions.
+- [ ] Confirmar a conta correta do programa brasileiro e seu estado de aprovação.
+- [ ] Confirmar se `praiadigital-20` está entre os IDs dessa conta.
+- [ ] Confirmar cadastro do domínio `https://praia.digital/`.
+- [ ] Conferir dados fiscais e de recebimento, sem copiá-los para o repositório.
+- [ ] Gerar e validar um link na ferramenta oficial da conta.
+- [ ] Conferir relatórios de cliques, pedidos qualificados e comissões.
 
----
+Se o ID real diferir, substituir a identificação nos links e nos geradores somente com evidência da conta. Não inventar IDs nem presumir que mudar o sufixo cadastra um ID brasileiro.
 
-## After Approval: Product Linking
+## Conteúdo e manutenção
 
-### High-Intent Product Categories
+A central `/compras/index.html` oferece 24 categorias de produtos com critérios de comparação. Links de busca não representam modelos testados, preço, disponibilidade, origem nacional ou prazo garantidos. Não adicionar estrelas, ranking de vendas ou promessas de entrega sem evidência específica atual.
 
-| Category | Example ASIN Search | Commission |
-|----------|---------------------|------------|
-| Home office | standing desk, monitor arm | 1-3% |
-| Smart home | smart lock, video doorbell | 1-3% |
-| Books | real estate investing | 4-5% |
-| Camera gear | mirrorless camera, tripod | 1-3% |
-| Furniture | outdoor furniture, storage | 1-3% |
+Usar `rel="sponsored noopener"` nos links comerciais e aviso de possível comissão. As taxas e condições devem ser consultadas na documentação vigente da Amazon; não utilizar percentuais genéricos como promessa de remuneração.
 
-### How to Create Links
-
-1. In Associates Central → Product Linking → Create a link
-2. Search products on amazon.com.br or amazon.com
-3. Choose format:
-   - **Text + Image** for in-content
-   - **Banner** for sidebar/footer
-   - **Native Shopping Ads** for ad units
-
-### Disclosure Requirement
-
-Add to all pages with affiliate links:
-```
-Esta página pode conter links de afiliados. Isso significa que posso receber uma comissão se você fizer uma compra através dos links, sem nenhum custo adicional para você.
-```
-
-### Link Format
-
-Always append `?tag=praiadigital-20` to Amazon product links, or use the standard Associates link builder with StoreID `praiadigital-20`.
-
-Example:
-- Product URL: `https://www.amazon.com.br/dp/B0XXXXXX`
-- Affiliate URL: `https://www.amazon.com.br/dp/B0XXXXXX?tag=praiadigital-20`
-
-CTA format: **Conferir na Amazon ➔**
-Avoid: "Preço Atualizado"
-
----
-
-## Integration Checklist
-
-- [ ] Associates account approved
-- [ ] Store ID/tracking ID obtained
-- [ ] First 5 product links created
-- [ ] Disclosure added to pages
-- [ ] Links tested: click → product page with ?tag=YOUR_TAG
-- [ ] Earnings dashboard bookmarked
-
----
-
-## Notes
-
-- Do NOT share tracking ID publicly in code repos; inject from environment at build time
-- Avoid "Preço Atualizado" CTAs per existing policy
-- CTA format per memory: "Conferir na Amazon ➔"
-
----
-
-*Guide generated: 2026-09-05*
+Fontes oficiais:
+- https://associados.amazon.com.br/help/node/topic/G6253GFSARDQENZR
+- https://associados.amazon.com.br/help/node/topic/GK5TZZ4AWML2QSLA
+- https://associados.amazon.com.br/help/operating/policies
