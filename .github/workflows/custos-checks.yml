@@ -1,0 +1,26 @@
+name: Purchase budget checks
+on:
+  pull_request:
+    paths:
+      - 'apps/custo-de-compra/**'
+      - 'tests/custos-browser.cjs'
+      - 'tests/custos-calculator.cjs'
+      - '.github/workflows/custos-checks.yml'
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Arithmetic and input regressions
+        run: node --test tests/custos-calculator.cjs
+      - name: Install browser test dependencies
+        run: |
+          npm install --prefix "$RUNNER_TEMP/custos-browser" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/custos-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+      - name: Check planner responsive and interrupted flows
+        run: NODE_PATH="$RUNNER_TEMP/custos-browser/node_modules" node tests/custos-browser.cjs
