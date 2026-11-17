@@ -103,6 +103,8 @@ async function assertCurrentExports(browser, width) {
     await download.click();
     const file = await downloadEvent;
     assert.equal(fs.readFileSync(await file.path(), 'utf8'), edited);
+    assert.equal(file.suggestedFilename(), 'praia-digital-briefing.txt');
+    assert.equal(await page.locator('#result-kind').textContent(), 'Briefing e prompt');
 
     // A rejected clipboard request keeps the manual-copy fallback functional.
     await page.evaluate(() => { window.rejectCopy = true; });
@@ -121,6 +123,11 @@ async function assertCurrentExports(browser, width) {
     await copy.click();
     assert.equal(await page.evaluate(() => window.testCopies.at(-1)), edited);
     await page.getByRole('button', { name: 'Conferir campos faltantes', exact: true }).click();
+    const checklistEvent = page.waitForEvent('download');
+    await download.click();
+    const checklistFile = await checklistEvent;
+    assert.equal(checklistFile.suggestedFilename(), 'praia-digital-checklist.txt');
+    assert.equal(fs.readFileSync(await checklistFile.path(), 'utf8'), await output.inputValue());
     await price.fill('');
     await copy.click();
     assert.match(await status.textContent(), /foram alterados/);
@@ -131,6 +138,12 @@ async function assertCurrentExports(browser, width) {
       await page.locator('#followup select').selectOption(stage);
       await page.getByRole('button', { name: 'Preparar modelo de e-mail', exact: true }).click();
       assert.match(await output.inputValue(), /MODELO PARA REVISAR — NÃO ENVIADO/);
+      assert.match(await page.locator('#result-kind').textContent(), /^Modelo de e-mail:/);
+      const emailEvent = page.waitForEvent('download');
+      await download.click();
+      const emailFile = await emailEvent;
+      assert.equal(emailFile.suggestedFilename(), `praia-digital-email-${stage}.txt`);
+      assert.equal(fs.readFileSync(await emailFile.path(), 'utf8'), await output.inputValue());
       await page.getByLabel('Cidade', { exact: true }).fill('Santos');
       await copy.click();
       assert.match(await status.textContent(), /Texto copiado/);
@@ -142,10 +155,11 @@ async function assertCurrentExports(browser, width) {
     }
     await page.getByRole('button', { name: 'Limpar tudo', exact: true }).click();
     assert.equal(await output.inputValue(), '');
+    assert.equal(await page.locator('#result-kind').textContent(), 'Nenhum resultado gerado');
     await output.fill('   ');
     await download.click();
     assert.match(await status.textContent(), /Gere um resultado antes de baixar/);
-    assert.equal(downloads.length, 1);
+    assert.equal(downloads.length, 6);
     assert(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1), `no horizontal overflow at ${width}px`);
     await assertNoNavigation(page, documents, unexpected);
     console.log(`PASS: ${width}px — stale drafts blocked, fresh/edited TXT and copy work, source isolation, clipboard fallback, four stages and reset`);
