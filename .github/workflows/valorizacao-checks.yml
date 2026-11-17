@@ -1,0 +1,26 @@
+name: Value projection checks
+on:
+  pull_request:
+    paths:
+      - 'apps/calculadora-valorizacao/**'
+      - 'tests/valorizacao-browser.cjs'
+      - 'tests/valorizacao-calculator.cjs'
+      - '.github/workflows/valorizacao-checks.yml'
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Arithmetic and input regressions
+        run: node --test tests/valorizacao-calculator.cjs
+      - name: Install browser test dependencies
+        run: |
+          npm install --prefix "$RUNNER_TEMP/valorizacao-browser" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/valorizacao-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+      - name: Check planner responsive and interrupted flows
+        run: NODE_PATH="$RUNNER_TEMP/valorizacao-browser/node_modules" node tests/valorizacao-browser.cjs
