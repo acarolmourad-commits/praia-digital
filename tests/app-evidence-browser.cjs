@@ -36,6 +36,7 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
           await page.keyboard.press('Tab');
           assert.equal(await page.evaluate(() => document.activeElement.matches('a.skip-link[href="#conteudo"]')), true);
           await page.keyboard.press('Enter');
+          await page.waitForURL(url => url.hash === '#conteudo');
           assert.equal(new URL(page.url()).hash, '#conteudo');
           assert.equal(await page.locator('h1').count(), 1);
           assert.equal(await page.locator('header.pd-site-header').count(), 1);
