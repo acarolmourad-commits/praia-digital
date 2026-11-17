@@ -21,6 +21,29 @@ try{for(const width of [360,768,1280]){
   assert.equal(await page.locator('.pd-site-header').count(),1);
   assert.equal(await page.locator('.pd-catalog-group .card').count(),16);
   assert.equal(await page.locator('#guia-premissas').count(),1);
+  const visibleCards = page.locator('.pd-catalog-group .card:visible');
+  assert.equal(await visibleCards.count(),16);
+  await page.locator('#app-query').fill('ANÚNCIO');
+  assert.equal(await visibleCards.count(),4,'Search matches the accented objective');
+  await page.locator('#app-query').fill('shópee');
+  assert.equal(await visibleCards.count(),1,'Search ignores case and accents');
+  assert.match(await page.locator('#app-results').innerText(),/^1 de 16/);
+  await page.locator('#app-goal').selectOption('grupo-planejar');
+  assert.equal(await visibleCards.count(),0,'Search and objective combine');
+  assert.ok(await page.locator('#app-empty').isVisible());
+  await page.locator('#app-query').press('Enter');
+  assert.equal(new URL(page.url()).pathname,'/apps/','Enter does not submit or navigate');
+  await page.locator('#app-clear').click();
+  assert.equal(await visibleCards.count(),16);
+  assert.equal(await page.locator('#app-query').evaluate(el=>el===document.activeElement),true);
+  await page.locator('#app-goal').selectOption('grupo-planejar');
+  assert.equal(await visibleCards.count(),6);
+  await page.locator('#objetivos-apps a[href="#grupo-marketplaces"]').click();
+  assert.equal(await visibleCards.count(),16,'Objective links restore hidden targets');
+  await page.locator('#app-query').fill('<img src=x onerror=alert(1)>');
+  assert.equal(await visibleCards.count(),0);
+  assert.equal(await page.locator('#app-results img').count(),0,'Search stays text only');
+  await page.locator('#app-clear').click();
   const links=await page.locator('.pd-catalog-group .card').evaluateAll(nodes=>nodes.map(a=>a.getAttribute('href')));
   const overflow=async()=>{
     const spill=await page.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth,elements:[...document.querySelectorAll('body *')].filter(el=>{const b=el.getBoundingClientRect();return b.width>0&&(b.left< -1||b.right>innerWidth+1)&&getComputedStyle(el).position!=='absolute';}).slice(0,8).map(el=>({tag:el.tagName,id:el.id,cls:el.className,width:el.getBoundingClientRect().width}))}));
@@ -47,3 +70,4 @@ try{for(const width of [360,768,1280]){
   await context.close();console.log(`Catalog and 16 return journeys passed at ${width}px`);
 }assert.deepEqual(problems,[],'All app pages must fit the viewport');}
 finally{await browser.close();}})().catch(error=>{console.error(error);process.exit(1);});
+
