@@ -1,73 +1,68 @@
-// Offline publication verification. No forms, email, payments or provider calls.
 const fs = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
-const { chromium } = require('playwright');
-const { captureEvidence } = require('./capture-evidence.cjs');
+const {chromium} = require('playwright');
+const {screenshot} = require('./screenshot.cjs');
 const root = path.resolve(__dirname, '..');
-const guide = '/guias/usar-apps-com-evidencias.html';
-const study = '/cases/rede-aplicativos-praia-digital.html';
 const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
-const slugs = JSON.parse(fs.readFileSync(path.join(root, 'data/app-network.json'), 'utf8')).flatMap(g => g.apps.map(a => a.slug));
-
 (async () => {
-  fs.mkdirSync(output, { recursive: true });
-  const browser = await chromium.launch({ headless: true });
+  fs.mkdirSync(output, {recursive: true});
+  const browser = await chromium.launch({headless: true});
   try {
-    for (const width of [360, 390, 768, 1280]) {
-      for (const javaScriptEnabled of [true, false]) {
-        const context = await browser.newContext({ viewport: { width, height: 900 }, javaScriptEnabled });
-        await context.route('**/*', async route => {
-          assert.equal(route.request().method(), 'GET');
-          const url = new URL(route.request().url());
-          if (url.hostname !== 'praia.digital') return route.abort();
-          let file = path.resolve(root, '.' + decodeURIComponent(url.pathname));
-          if (fs.existsSync(file) && fs.statSync(file).isDirectory()) file = path.join(file, 'index.html');
-          if (!file.startsWith(root + path.sep) || !fs.existsSync(file)) return route.fulfill({ status: 404, body: 'Not found' });
-          const types = { '.html': 'text/html', '.css': 'text/css', '.js': 'application/javascript', '.json': 'application/json', '.svg': 'image/svg+xml', '.jpg': 'image/jpeg', '.png': 'image/png' };
-          return route.fulfill({ body: fs.readFileSync(file), contentType: types[path.extname(file)] || 'application/octet-stream' });
-        });
-        const page = await context.newPage();
-        for (const target of [guide, study]) {
-          const errors = [];
-          const onError = error => errors.push(error.message);
-          page.on('pageerror', onError);
-          await page.goto('https://praia.digital' + target);
-          assert.equal(await page.locator('h1').count(), 1);
-          assert.equal(await page.locator('header.pd-site-header').count(), 1);
-          assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `${target} overflow at ${width}`);
-          const ids = await page.locator('[id]').evaluateAll(els => els.map(el => el.id));
-          assert.equal(ids.length, new Set(ids).size);
-          for (const href of await page.locator('main a[href^="#"]').evaluateAll(els => els.map(el => el.getAttribute('href')))) assert.ok(ids.includes(href.slice(1)));
-          if (target === guide) {
-            for (const slug of slugs) assert.ok(await page.locator(`main a[href="/apps/${slug}/"]`).count(), slug);
-            await page.locator('a[href="#conferencia"]').click();
-            assert.ok(page.url().endsWith('#conferencia'));
-          }
-          if (javaScriptEnabled && width === 390) {
-            const toggle = page.locator('.pd-site-toggle');
-            await toggle.click(); assert.equal(await toggle.getAttribute('aria-expanded'), 'true');
-            await page.keyboard.press('Escape'); assert.equal(await toggle.getAttribute('aria-expanded'), 'false');
-          }
-          if (javaScriptEnabled && [390, 1280].includes(width)) {
-            await page.evaluate(() => scrollTo(0, 0));
-            await captureEvidence(page, { path: path.join(output, `${path.basename(target, '.html')}-${width}.png`), fullPage: true });
-          }
-          assert.deepEqual(errors, []);
-          page.off('pageerror', onError);
-        }
-        await page.goto('https://praia.digital/');
-        await page.locator('#apps a[href="' + guide + '"]').click();
-        await page.waitForURL('**' + guide);
-        await page.locator('main a[href="/apps/revisor-anuncios/"]').click();
-        await page.waitForURL('**/apps/revisor-anuncios/');
-        await page.locator('.pd-network a[href="' + guide + '"]').click();
-        await page.waitForURL('**' + guide);
-        await page.locator('main a[href="' + study + '"]').click();
-        await page.waitForURL('**' + study);
-        await context.close();
+    for (const width of [320, 390, 1280]) {
+      const context = await browser.newContext({viewport: {width, height: 900}});
+      await context.route('**/*', route => {
+        const url = new URL(route.request().url());
+        if (url.hostname !== 'praia.digital' || route.request().method() !== 'GET') return route.abort();
+        let file = path.resolve(root, '.' + url.pathname);
+        if (!file.startsWith(root + path.sep)) return route.abort();
+        if (fs.existsSync(file) && fs.statSync(file).isDirectory()) file = path.join(file, 'index.html');
+        if (!fs.existsSync(file)) return route.abort();
+        const ext = path.extname(file);
+        return route.fulfill({body: fs.readFileSync(file), contentType: {'.css':'text/css','.js':'application/javascript','.png':'image/png','.jpg':'image/jpeg'}[ext] || 'text/html'});
+      });
+      const page = await context.newPage();
+      const errors = [];
+      page.on('pageerror', error => errors.push(error.message));
+      await page.goto('https://praia.digital/apps/guia-de-uso.html');
+      assert.equal(await page.locator('.guide-route').count(), 4);
+      assert.equal(await page.locator('input[type=checkbox]').count(), 12);
+      await page.locator('input[type=checkbox]').first().check();
+      assert.match(await page.locator('#guide-progress').innerText(), /^1 de 12/);
+      await page.locator('#guide-reset').click();
+      assert.equal(await page.locator('input:checked').count(), 0);
+      assert.match(await page.locator('#guide-progress').innerText(), /^0 de 12/);
+      await page.evaluate(() => {window.print = () => {window.printCalled = true;};});
+      await page.locator('#guide-print').click();
+      assert.equal(await page.evaluate(() => window.printCalled), true);
+      const groups = JSON.parse(fs.readFileSync(path.join(root, 'data/app-network.json'), 'utf8'));
+      for (const app of groups.flatMap(g => g.apps)) assert.ok(await page.locator(`a[href="/apps/${app.slug}/"]`).count());
+      for (const anchor of ['comprar','locar','anunciar','vender']) {
+        await page.locator(`.guide-toc a[href="#${anchor}"]`).click();
+        assert.equal(new URL(page.url()).hash, '#' + anchor);
       }
+      assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+      assert.deepEqual(errors, []);
+      await page.emulateMedia({media:'print'});
+      assert.equal(await page.locator('.guide-route:visible').count(), 4);
+      assert.equal(await page.locator('#guide-actions').isVisible(), false);
+      await page.emulateMedia({media:'screen'});
+      await page.goto('https://praia.digital/apps/guia-de-uso.html');
+      await page.keyboard.press('Tab');
+      assert.equal(await page.evaluate(() => document.activeElement.className), 'pd-skip');
+      await page.keyboard.press('Enter');
+      assert.equal(new URL(page.url()).hash, '#conteudo');
+      await screenshot(page, {path:path.join(output, `guide-${width}.png`),fullPage:true});
+      await context.close();
     }
-    console.log('Guide/study passed at 360/390/768/1280, with/without JS: 16 apps, anchors, menu, navigation loop, no overflow; screenshots saved.');
+    const nojs = await browser.newContext({javaScriptEnabled:false});
+    const page = await nojs.newPage();
+    await page.goto('file://' + path.join(root,'apps/guia-de-uso.html'));
+    assert.equal(await page.locator('.guide-route').count(),4);
+    assert.equal(await page.locator('#guide-actions').isVisible(),false);
+    await page.locator('input[type=checkbox]').first().check();
+    assert.equal(await page.locator('input:checked').count(),1);
+    await nojs.close();
+    console.log('Guide passed at 320,390,1280px: links to 16 apps, anchors, checklist/reset, keyboard, print, no-JS.');
   } finally { await browser.close(); }
-})().catch(error => { console.error(error); process.exitCode = 1; });
+})().catch(error => {console.error(error); process.exitCode = 1;});

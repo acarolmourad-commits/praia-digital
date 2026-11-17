@@ -162,7 +162,8 @@ class AppCatalogKeyboard(unittest.TestCase):
         self.assertEqual(len(ids),len(set(ids)))
         cards=[a['href'] for t,a in tags if t=='a' and a.get('class')=='card']
         apps={'/apps/'+p.parent.name+'/' for p in (ROOT/'apps').glob('*/index.html')}
-        self.assertEqual({p for p in cards if p.startswith('/apps/')},apps)
+        self.assertEqual({p for p in cards if p.startswith('/apps/') and p.endswith('/')},apps)
+        self.assertIn('/apps/guia-de-uso.html', cards)
         self.assertEqual(len(cards),len(set(cards)))
         for group in ['grupo-planejar','grupo-comparar','grupo-preparar','grupo-marketplaces']:
             heading=next(a for t,a in tags if t=='h2' and a.get('id')==group)
