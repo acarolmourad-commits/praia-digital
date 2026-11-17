@@ -45,6 +45,7 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
           for (const href of await page.locator('main a[href^="#"]').evaluateAll(els => els.map(el => el.getAttribute('href')))) assert.ok(ids.includes(href.slice(1)));
           if (target === guide) {
             assert.equal(await page.locator("table").count(), 2);
+            assert.equal(await page.locator(".table-wrap").evaluateAll(els => els.every(el => el.scrollWidth <= el.clientWidth + 1)), true);
             assert.ok(await page.locator('main a[href="/apps/guia-de-uso.html"]').count());
             await page.locator('a[href="#conferencia"]').click();
             assert.ok(page.url().endsWith('#conferencia'));
