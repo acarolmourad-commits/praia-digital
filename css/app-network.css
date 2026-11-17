@@ -62,3 +62,20 @@
 .pd-next-links a,.pd-practice a{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:3px}
 .pd-practice li{margin:.7rem 0;line-height:1.6}
 @media(max-width:639px){.pd-workflow dl{grid-template-columns:1fr}.pd-workflow,.pd-practice{padding:1rem}}
+
+
+/* Search is scoped to the directory; hidden results must override card display. */
+.pd-catalog-search{max-width:848px;margin:24px auto 0;padding:24px;background:#f0f8f6;border:1px solid #bbd8d1;border-radius:16px;color:#123d36;line-height:1.6;scroll-margin-top:7rem}
+.pd-catalog-search h2{font-size:1.3rem;line-height:1.35;margin-bottom:8px}
+#catalog-search-form{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;gap:16px;align-items:end;margin-top:20px}
+#catalog-search-form label{display:block;font-weight:700;margin-bottom:6px}
+#catalog-search-form input,#catalog-search-form select,#catalog-search-form button{width:100%;min-height:48px;padding:10px 12px;font:inherit;border:1px solid #638681;border-radius:8px;background:#fff;color:#123d36}
+#catalog-search-form input,#catalog-search-form select{min-width:0}
+#catalog-search-form button{cursor:pointer;font-weight:700;background:#075b5c;color:#fff}
+#catalog-search-form button:hover{background:#063f40}
+#app-results,#app-empty{grid-column:1/-1;margin:0}
+#app-results{font-weight:700}
+#catalog-search-form[hidden],#app-empty[hidden],.pd-catalog-group[hidden],.pd-catalog-cards .card[hidden]{display:none!important}
+@media(max-width:880px){.pd-catalog-search{margin:24px 16px 0}}
+@media(max-width:639px){.pd-catalog-search{padding:16px}#catalog-search-form{grid-template-columns:minmax(0,1fr)}}
+@media print{.pd-catalog-search{display:none}.pd-catalog-group[hidden]{display:block!important}.pd-catalog-cards .card[hidden]{display:flex!important}}
