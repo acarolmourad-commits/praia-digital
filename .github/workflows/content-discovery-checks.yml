@@ -7,10 +7,13 @@ on:
       - 'explorar/**'
       - 'data/content-search.json'
       - 'scripts/build-content-discovery.py'
+      - 'scripts/public_inventory_scope.py'
+      - 'js/main.js'
       - 'js/content-discovery.js'
       - 'css/content-discovery.css'
       - 'guias/**'
       - 'tests/test_content_discovery*'
+      - 'tests/test_public_inventory_scope.py'
       - 'tests/content-discovery-browser.cjs'
       - '.github/workflows/content-discovery-checks.yml'
   workflow_dispatch:
@@ -22,7 +25,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Catalog coverage, exclusions and static navigation
-        run: python3 -m unittest discover -s tests -p 'test_content_discovery.py' -v
+        run: |
+          python3 -m unittest discover -s tests -p 'test_content_discovery.py' -v
+          python3 -m unittest discover -s tests -p 'test_public_inventory_scope.py' -v
       - name: Search behavior
         run: node --test tests/test_content_discovery.cjs
       - name: Prepare shared navigation

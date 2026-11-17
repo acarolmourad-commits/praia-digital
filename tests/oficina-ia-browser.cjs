@@ -2,12 +2,14 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
+const { createHash } = require('node:crypto');
 const { chromium } = require('playwright');
 const root = path.resolve(__dirname, '..');
 const origin = 'https://oficina.test';
 const appUrl = `${origin}/apps/oficina-ia-imobiliaria/`;
+const moduleVersion = '?v=' + createHash('sha256').update(fs.readFileSync(path.join(root, 'apps/oficina-ia-imobiliaria/app.mjs'))).digest('hex').slice(0, 12);
 
-async function fixture(browser, { javaScriptEnabled = true, failModule = false, width = 390 } = {}) {
+async function fixture(browser, { javaScriptEnabled = true, failModule = false, width = 390, legacyMarkup = false } = {}) {
   const context = await browser.newContext({ javaScriptEnabled, viewport: { width, height: 844 } });
   const page = await context.newPage();
   const documents = [];
@@ -17,18 +19,26 @@ async function fixture(browser, { javaScriptEnabled = true, failModule = false, 
   });
   await page.route('**/*', route => {
     const url = new URL(route.request().url());
-    if (url.origin !== origin || url.search || route.request().method() !== 'GET') {
+    const versionedModule = url.pathname === '/apps/oficina-ia-imobiliaria/app.mjs' && url.search === moduleVersion;
+    if (url.origin !== origin || (url.search && !versionedModule) || route.request().method() !== 'GET') {
       unexpected.push({ url: url.href, method: route.request().method() });
       return route.abort();
     }
     if (failModule && url.pathname.endsWith('/core.mjs')) return route.abort();
+    // A cached legacy URL must never satisfy a fresh page's module request.
+    if (url.pathname.endsWith('/app.mjs') && !versionedModule) {
+      return route.fulfill({ contentType: 'text/javascript', body: '// Simulated stale cached module: no new handlers.' });
+    }
     const rel = url.pathname.endsWith('/') ? `${url.pathname}index.html` : url.pathname;
     const file = path.resolve(root, `.${rel}`);
     if (!file.startsWith(root + path.sep) || !fs.existsSync(file) || !fs.statSync(file).isFile()) {
       return route.fulfill({ status: 404, body: '' });
     }
     const contentType = { '.html': 'text/html', '.js': 'text/javascript', '.mjs': 'text/javascript', '.css': 'text/css' }[path.extname(file)] || 'application/octet-stream';
-    return route.fulfill({ contentType, body: fs.readFileSync(file) });
+    const body = legacyMarkup && file.endsWith('oficina-ia-imobiliaria/index.html')
+      ? fs.readFileSync(file, 'utf8').replace(/<span id="result-kind">.*?<\/span>/, '')
+      : fs.readFileSync(file);
+    return route.fulfill({ contentType, body });
   });
   await page.goto(appUrl, { waitUntil: 'networkidle' });
   return { context, page, documents, unexpected };
@@ -103,6 +113,8 @@ async function assertCurrentExports(browser, width) {
     await download.click();
     const file = await downloadEvent;
     assert.equal(fs.readFileSync(await file.path(), 'utf8'), edited);
+    assert.equal(file.suggestedFilename(), 'praia-digital-briefing.txt');
+    assert.equal(await page.locator('#result-kind').textContent(), 'Briefing e prompt');
 
     // A rejected clipboard request keeps the manual-copy fallback functional.
     await page.evaluate(() => { window.rejectCopy = true; });
@@ -121,6 +133,11 @@ async function assertCurrentExports(browser, width) {
     await copy.click();
     assert.equal(await page.evaluate(() => window.testCopies.at(-1)), edited);
     await page.getByRole('button', { name: 'Conferir campos faltantes', exact: true }).click();
+    const checklistEvent = page.waitForEvent('download');
+    await download.click();
+    const checklistFile = await checklistEvent;
+    assert.equal(checklistFile.suggestedFilename(), 'praia-digital-checklist.txt');
+    assert.equal(fs.readFileSync(await checklistFile.path(), 'utf8'), await output.inputValue());
     await price.fill('');
     await copy.click();
     assert.match(await status.textContent(), /foram alterados/);
@@ -131,6 +148,12 @@ async function assertCurrentExports(browser, width) {
       await page.locator('#followup select').selectOption(stage);
       await page.getByRole('button', { name: 'Preparar modelo de e-mail', exact: true }).click();
       assert.match(await output.inputValue(), /MODELO PARA REVISAR — NÃO ENVIADO/);
+      assert.match(await page.locator('#result-kind').textContent(), /^Modelo de e-mail:/);
+      const emailEvent = page.waitForEvent('download');
+      await download.click();
+      const emailFile = await emailEvent;
+      assert.equal(emailFile.suggestedFilename(), `praia-digital-email-${stage}.txt`);
+      assert.equal(fs.readFileSync(await emailFile.path(), 'utf8'), await output.inputValue());
       await page.getByLabel('Cidade', { exact: true }).fill('Santos');
       await copy.click();
       assert.match(await status.textContent(), /Texto copiado/);
@@ -142,10 +165,11 @@ async function assertCurrentExports(browser, width) {
     }
     await page.getByRole('button', { name: 'Limpar tudo', exact: true }).click();
     assert.equal(await output.inputValue(), '');
+    assert.equal(await page.locator('#result-kind').textContent(), 'Nenhum resultado gerado');
     await output.fill('   ');
     await download.click();
     assert.match(await status.textContent(), /Gere um resultado antes de baixar/);
-    assert.equal(downloads.length, 1);
+    assert.equal(downloads.length, 6);
     assert(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1), `no horizontal overflow at ${width}px`);
     await assertNoNavigation(page, documents, unexpected);
     console.log(`PASS: ${width}px — stale drafts blocked, fresh/edited TXT and copy work, source isolation, clipboard fallback, four stages and reset`);
@@ -213,5 +237,17 @@ async function assertCurrentExports(browser, width) {
       console.log('PASS: initialized app — briefing, literal rendering, missing fields, follow-up draft, focus and reset stay local');
     } finally { await context.close(); }
     for (const width of [320, 390, 1280]) await assertCurrentExports(browser, width);
+    const legacy = await fixture(browser, { legacyMarkup: true });
+    try {
+      await legacy.page.getByLabel('Tipo do imóvel', { exact: true }).fill('Apartamento fictício');
+      await legacy.page.getByLabel('Cidade', { exact: true }).fill('Bertioga');
+      await legacy.page.getByLabel('Finalidade', { exact: true }).fill('Venda fictícia');
+      await legacy.page.getByRole('button', { name: 'Montar briefing e prompt', exact: true }).click();
+      assert.match(await legacy.page.locator('#status').textContent(), /Resultado pronto/);
+      await legacy.page.getByRole('button', { name: 'Limpar tudo', exact: true }).click();
+      assert.equal(await legacy.page.locator('#output').inputValue(), '');
+      await assertNoNavigation(legacy.page, legacy.documents, legacy.unexpected);
+      console.log('PASS: versioned module bypasses stale URL; legacy markup can generate and reset');
+    } finally { await legacy.context.close(); }
   } finally { await browser.close(); }
 })().catch(error => { console.error(error); process.exitCode = 1; });

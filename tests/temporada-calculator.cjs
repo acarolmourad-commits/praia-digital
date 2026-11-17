@@ -1,0 +1,15 @@
+const {test}=require('node:test'),assert=require('node:assert/strict'),vm=require('node:vm'),fs=require('node:fs');
+const {calculate:c}=require('../apps/temporada-ou-anual/calculadora.js');
+const base={valor:450000,diaria:450,noites:12,taxa:25,custos:1200,anual:2800,custosAnual:400};
+test('both sides deduct expenses, signed balances and ratios',()=>{const r=c(base);assert.equal(r.gross,5400);assert.equal(r.season,2850);assert.equal(r.annual,2400);assert.equal(r.season12,34200);assert.equal(r.annual12,28800);assert.equal(r.seasonRatio,7.6);assert.equal(r.outcome,'season');});
+test('zero nights and zero revenues valid, negative balances preserved',()=>{const r=c({...base,noites:0,anual:0});assert.equal(r.gross,0);assert.equal(r.season,-1200);assert.equal(r.annual,-400);assert.equal(r.season12,-14400);assert(r.seasonRatio<0);assert.equal(r.outcome,'annual');});
+test('ties at zero, positive and negative amounts',()=>{for(const changes of [{diaria:0,noites:0,taxa:0,custos:0,anual:0,custosAnual:0},{diaria:100,noites:10,taxa:0,custos:100,anual:1000,custosAnual:100},{noites:0,custos:500,anual:0,custosAnual:500}])assert.equal(c({...base,...changes}).outcome,'tie');});
+test('empty, negative, nonfinite and over-limit input rejected',()=>{for(const id of Object.keys(base))for(const val of ['', ' ',null,undefined,NaN,Infinity,-1,'abc'])assert(c({...base,[id]:val}).error,id);for(const [id,val] of [['valor',0],['noites',32],['noites',1.5],['taxa',100.01],['valor',1e9+1],['diaria',1e9+1],['custos',1e9+1],['anual',1e9+1],['custosAnual',1e9+1]])assert(c({...base,[id]:val}).error);});
+test('boundary 31 nights and 100% fees, all results finite',()=>{assert.equal(c({...base,noites:31,taxa:100}).season,-1200);const r=c({valor:.01,diaria:1e9,noites:31,taxa:0,custos:0,anual:1e9,custosAnual:1e9});for(const v of Object.values(r).filter(v=>typeof v==='number'))assert(Number.isFinite(v));assert.equal(r.annual,0);});
+test('every edit invalidates, errors focused, repeat/recover works',()=>{
+ const es={};for(const id of [...Object.keys(base),'res','erro','calcular','bt','ba','lt','la','at','aa','yt','ya','dica'])es[id]={value:String(base[id]??''),hidden:true,textContent:'',events:{},attrs:{},addEventListener(n,f){this.events[n]=f;},setAttribute(k,v){this.attrs[k]=v;},removeAttribute(k){delete this.attrs[k];},focus(){this.focused=true;}};
+ vm.runInNewContext(fs.readFileSync(require.resolve('../apps/temporada-ou-anual/calculadora.js'),'utf8'),{document:{getElementById:id=>es[id]}});
+ const click=es.calcular.events.click;click();assert.equal(es.res.hidden,false);
+ for(const id of Object.keys(base))for(const e of ['input','change']){es[id].events[e]();assert.equal(es.res.hidden,true);click();assert.equal(es.res.hidden,false);}
+ es.valor.value='0';click();assert.equal(es.res.hidden,true);assert.equal(es.erro.hidden,false);assert.equal(es.valor.attrs['aria-invalid'],'true');assert(es.valor.focused);es.valor.value='450000';es.valor.events.input();click();click();assert.equal(es.res.hidden,false);assert.equal(es.erro.hidden,true);
+});
