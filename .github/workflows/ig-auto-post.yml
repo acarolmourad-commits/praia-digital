@@ -1,36 +1,37 @@
-name: Instagram Auto-Post (4x/dia)
-
+name: Instagram Content Validation (no publication)
 on:
   schedule:
-    # 7h, 9h, 15h e 20h horario de Brasilia (UTC-3)
     - cron: '0 10,12,18,23 * * *'
   workflow_dispatch:
-
+  pull_request:
+    paths:
+      - '.github/workflows/ig-auto-post.yml'
+      - 'scripts/ig_*.py'
+      - 'scripts/ig_content_queue.json'
+      - 'tests/test_ig*.py'
 permissions:
-  contents: write
-
+  contents: read
 concurrency:
   group: ig-auto-post
   cancel-in-progress: false
-
 jobs:
-  post:
+  validate:
     if: ${{ !github.event.repository.fork }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: pip install pillow requests
-      - name: Gerar artes e publicar no Instagram
-        env:
-          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      - name: Test validation and publication safeguards
+        run: python -m unittest discover -s tests -p 'test_ig*.py' -v
+      - name: Validate content only (no publication)
+        run: python scripts/ig_auto_post.py --dry-run
+      - name: Explain validation result
         run: |
-          if [ -z "$IG_ACCESS_TOKEN" ] || [ -z "$IG_USER_ID" ]; then
-            echo "::warning::IG_ACCESS_TOKEN/IG_USER_ID ausentes - validacao dry-run (sem publicar)."
-            python scripts/ig_auto_post.py --dry-run
-          else
-            python scripts/ig_auto_post.py
-          fi
+          echo '### Instagram: validation only' >> "$GITHUB_STEP_SUMMARY"
+          echo 'No images generated or published. Composio production integration is not enabled.' >> "$GITHUB_STEP_SUMMARY"
+
