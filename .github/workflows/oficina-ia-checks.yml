@@ -1,0 +1,37 @@
+name: Oficina IA local-only checks
+on:
+  pull_request:
+    paths:
+      - 'apps/oficina-ia-imobiliaria/**'
+      - 'tests/*oficina*'
+      - '.github/workflows/oficina-ia-checks.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'apps/oficina-ia-imobiliaria/**'
+      - 'tests/*oficina*'
+      - '.github/workflows/oficina-ia-checks.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  local-only:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Content generation and startup safety
+        run: |
+          node --check apps/oficina-ia-imobiliaria/app.mjs
+          node --test tests/test_oficina_ia.mjs
+          python -m unittest discover -s tests -p 'test_oficina_ia_safety.py'
+      - name: Offline browser regression
+        run: |
+          npm install --prefix "$RUNNER_TEMP/oficina-browser" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/oficina-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          NODE_PATH="$RUNNER_TEMP/oficina-browser/node_modules" node tests/oficina-ia-browser.cjs

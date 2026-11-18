@@ -18,6 +18,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from validate_sitemap_targets import (blocked_by_robots, canonical_sitemap_path,
     excluded_path, indexing_exclusions, robots_rules)
 from enforce_listing_retirements import retired_page, retired_slugs
+from public_inventory_scope import excluded_from_public_index
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGE_SIZE = 100
@@ -31,12 +32,14 @@ FEATURED = [
 def normalize(value):
     return ''.join(c for c in unicodedata.normalize('NFD', value.casefold()) if unicodedata.category(c) != 'Mn')
 
-def visitor_excluded(rel):
+def visitor_excluded(rel, root=ROOT):
     """The legacy XML sitemap also lists operations; don't promote those to visitors.
 
     This controls discovery only. It does not change access or indexing intent.
     Public intelligence/newsletters and top-level editorial guides stay eligible.
     """
+    if excluded_from_public_index(rel, root):
+        return True
     if rel.startswith('docs/'):
         return not (rel.startswith(('docs/inteligencia/', 'docs/newsletter/')) or
                     (rel.startswith('docs/guia-') and rel.count('/') == 1))
@@ -75,7 +78,7 @@ def collect(root):
             skipped.append(url); continue
         if rel == 'sitemap.html' or rel.startswith('explorar/'):
             continue
-        if visitor_excluded(rel):
+        if visitor_excluded(rel, root):
             skipped.append(url); continue
         path = root / rel
         if path.is_dir(): path /= 'index.html'

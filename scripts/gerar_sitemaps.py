@@ -6,8 +6,10 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 if __package__:
+    from .public_inventory_scope import excluded_from_public_index
     from .validate_sitemap_targets import (indexing_exclusions, excluded_path, robots_rules, blocked_by_robots, IndexingDirectives, canonical_sitemap_path)
 else:
+    from public_inventory_scope import excluded_from_public_index
     from validate_sitemap_targets import (indexing_exclusions, excluded_path, robots_rules, blocked_by_robots, IndexingDirectives, canonical_sitemap_path)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -19,14 +21,15 @@ def excluded(rel):
     return excluded_path(rel)
 
 
-def priority(rel):
-    if '/' not in rel: return '1.0' if rel in ('', 'index.html') else '0.9'
-    top = rel.split('/')[0]
-    return {'blog':'0.8','bairros':'0.8','cidades':'0.8','imoveis':'0.9','apps':'0.7',
-            'education':'0.7','academy':'0.7','ferramentas':'0.7','servicos':'0.8'}.get(top,'0.6')
-
 def discover_pages(root):
     """Collect public pages without indexing explicit noindex/redirect pages."""
+    import json
+    if __package__:
+        from .enforce_listing_retirements import retired_page
+    else:
+        from enforce_listing_retirements import retired_page
+    manifest = Path(root) / 'data/retired-listings.json'
+    retired = set(json.loads(manifest.read_text(encoding='utf-8'))['slugs']) if manifest.exists() else set()
     pages, apps = [], []
     rules = robots_rules(Path(root))
     for dp, dn, fn in os.walk(root):
@@ -36,7 +39,9 @@ def discover_pages(root):
                 continue
             path = Path(dp) / f
             rel = os.path.relpath(path, root).replace(os.sep, '/')
-            if excluded(rel) or blocked_by_robots("/" + rel, rules) or indexing_exclusions(path):
+            if excluded_from_public_index(rel, Path(root)):
+                continue
+            if retired_page(Path(rel), retired) or Path(rel).name in {'template.html', 'template.htm'} or excluded(rel) or blocked_by_robots("/" + rel, rules) or indexing_exclusions(path):
                 continue
             rel = canonical_sitemap_path(path, Path(root))
             if rel is None:
@@ -63,8 +68,7 @@ def write(path, urls):
             loc = urllib.parse.quote(BASE+u, safe=':/')
             known_date = dates.get(urllib.parse.unquote(loc))
             date_tag = '<lastmod>%s</lastmod>' % known_date if known_date else ''
-            fh.write('<url><loc>%s</loc>%s<changefreq>weekly</changefreq><priority>%s</priority></url>\n'
-                     % (loc, date_tag, priority(u)))
+            fh.write('<url><loc>%s</loc>%s</url>\n' % (loc, date_tag))
         fh.write('</urlset>\n')
 
 def main(root=None):

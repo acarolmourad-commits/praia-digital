@@ -1,349 +1,23 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-        {
-      "@type": "Question",
-      "name": "Os artigos são atualizados?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sim. Semanalmente com conteúdo sobre mercado, SEO e vendas no litoral."
-      }
-    },    {
-      "@type": "Question",
-      "name": "Como usar o blog?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Compartilhe artigos com proprietários e investidores para nutrição de leads."
-      }
-    },    {
-      "@type": "Question",
-      "name": "Tem guia de temporada?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sim. Há conteúdo específico para alta temporada e aluguel por temporada."
-      }
-    }
-  ]
-}
-</script>
-
-  <meta charset="UTF-8">
-    
-<link rel="preload" as="image" href="https://praia.digital/img/default-home.jpg" type="image/jpeg" fetchpriority="high">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Google Sheets para Gestão de Imóveis no Litoral: Guia Prático | Praia Digital</title>
-  <meta name="keywords" content="Google Sheets para Gestão de Imóveis no Litoral: Guia Prático | Praia Digital, Aprenda a usar Google Sheets para gestão de imóveis no litoral paulista: controle de leads, follow-up, anúncios, documentos e finanças. Guia prático para corretores e imobiliárias de Santos, Guarujá, Bertioga, Praia Grande e Itanhaém., imóveis litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, comprar imóvel litoral, aluguel temporada, apartamento vista mar, casa condomínio, cobertura, investimento imobiliário">
-  <meta name="description" content="Aprenda a usar Google Sheets para gestão de imóveis no litoral paulista: controle de leads, follow-up, anúncios, documentos e finanças. Guia prático para corretores e imobiliárias de Santos, Guarujá, Bertioga, Praia Grande e Itanhaém.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
-  <style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:'Segoe UI',system-ui,sans-serif;background:#F4EBD0;color:#023047;line-height:1.7;padding:2rem}
-    .container{max-width:960px;margin:0 auto;background:#fff;padding:2.5rem;border-radius:16px;box-shadow:0 8px 28px rgba(0,0,0,.06)}
-    h1{font-size:2rem;margin-bottom:.8rem;color:#023047}
-    h2{font-size:1.4rem;margin-top:2rem;margin-bottom:.6rem;color:#0077B6}
-    h3{font-size:1.15rem;margin-top:1.4rem;margin-bottom:.4rem;color:#023047}
-    p{margin-bottom:1rem}
-    ul{margin:1rem 0 1rem 1.5rem}
-    li{margin-bottom:.5rem}
-    .cta{display:inline-block;background:#00B4D8;color:#fff;padding:.75rem 1.5rem;border-radius:999px;text-decoration:none;font-weight:700;margin-top:1rem}
-    .badge{display:inline-block;background:#0077B6;color:#fff;padding:.25rem .6rem;border-radius:50px;font-size:.75rem;font-weight:700;margin-bottom:1rem}
-    footer{background:#023047;color:#fff;text-align:center;padding:1rem;font-size:.85rem;opacity:.7;margin-top:2rem;border-radius:12px}
-    a{color:#0077B6}
-    .related{margin-top:2rem;padding:1.25rem;background:#f7f7f2;border-radius:12px}
-    .related h3{color:#0077B6}
-    .callout{padding:1.1rem;border-radius:12px;background:#eef6fb;border:1px solid #c9e6f7}
-  </style>
-  <link rel="canonical" href="https://praia.digital/blog/google-sheets-gestao-imoveis-litoral.html">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Google Sheets para Gestão de Imóveis no Litoral: Guia Prático | Praia Digital">
-  <meta property="og:description" content="Aprenda a usar Google Sheets para gestão de imóveis no litoral paulista: controle de leads, follow-up, anúncios, documentos e finanças. Guia prático para corretores e imobiliárias de Santos, Guarujá, Bertioga, Praia Grande e Itanhaém.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Praia Digital — imóveis no litoral com IA">
-  <meta property="og:site_name" content="Praia Digital">
-  <meta property="og:url" content="https://praia.digital/blog/google-sheets-gestao-imoveis-litoral.html">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Google Sheets para Gestão de Imóveis no Litoral: Guia Prático | Praia Digital">
-  <meta name="twitter:description" content="Aprenda a usar Google Sheets para gestão de imóveis no litoral paulista: controle de leads, follow-up, anúncios, documentos e finanças. Guia prático para corretores e imobiliárias de Santos, Guarujá, Bertioga, Praia Grande e Itanhaém.">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">
-  <link rel="alternate" hreflang="x-default" href="https://praia.digital/blog/google-sheets-gestao-imoveis-litoral.html" />
-  <link rel="alternate" hreflang="pt-BR" href="https://praia.digital/blog/google-sheets-gestao-imoveis-litoral.html">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="referrer" content="no-referrer-when-downgrade">
-<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
-<link rel="preconnect" href="https://praia.digital/" crossorigin>
-<link rel="manifest" href="https://praia.digital/manifest.json">
-<meta name="robots" content="index, follow">
-<meta property="og:locale" content="pt_BR">
-<meta name="theme-color" content="#0ea5e9">
-<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <link rel="preconnect" href="https://wa.me">
-  <link rel="preconnect" href="https://api.qrserver.com">
-
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-  <link rel="dns-prefetch" href="https://images.unsplash.com">
-  <link rel="dns-prefetch" href="https://wa.me">
-  <link rel="dns-prefetch" href="https://api.qrserver.com">
-
-<meta name="keywords" content="Google Sheets para Gestão de Imóveis no Litoral: Guia Prático | Praia Digital, tema imobiliária, litoral paulista, Santos, Guarujá, Praia Grande, Bertioga, Itanhaém, Mongaguá, São Vicente, Peruíbe, imóveis litoral, temporada, aluguel temporada">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Google Sheets para Gestão de Imóveis no Litoral: Guia Prático | Praia Digital">
-<meta property="og:description" content="Aprenda a usar Google Sheets para gestão de imóveis no litoral paulista: controle de leads, follow-up, anúncios, documentos e finanças. Guia prático para corretores e imobiliárias de Santos, Guarujá, Bertioga, Praia Grande e Itanhaém.">
-<meta property="og:image" content="https://praia.digital/img/default-home.jpg">
-<meta property="og:url" content="https://praia.digital/blog/google-sheets-gestao-imoveis-litoral.html">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Google Sheets para Gestão de Imóveis no Litoral: Guia Prático | Praia Digital">
-<meta name="twitter:description" content="Aprenda a usar Google Sheets para gestão de imóveis no litoral paulista: controle de leads, follow-up, anúncios, documentos e finanças. Guia prático para corretores e imobiliárias de Santos, Guarujá, Bertioga, Praia Grande e Itanhaém.">
-<meta name="twitter:image" content="https://praia.digital/img/default-home.jpg">
-<meta name="robots" content="index, follow">
-<script type="application/ld+json">
-{
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planilha para imobiliária no Google Sheets | Praia Digital</title>
+<meta name="description" content="Organize imóveis, contatos e próximos passos no Google Sheets com exemplo hipotético, menus suspensos, rotina de revisão e limites de automação."><meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://praia.digital/blog/google-sheets-gestao-imoveis-litoral.html">
+<meta property="og:type" content="article"><meta property="og:locale" content="pt_BR"><meta property="og:site_name" content="Praia Digital">
+<meta property="og:title" content="Planilha de atendimento imobiliário no Google Sheets"><meta property="og:description" content="Organize imóveis, contatos e próximos passos no Google Sheets com exemplo hipotético, menus suspensos, rotina de revisão e limites de automação."><meta property="og:url" content="https://praia.digital/blog/google-sheets-gestao-imoveis-litoral.html">
+<meta property="og:image" content="https://praia.digital/assets/social/praia-digital-institucional-v1.png"><meta property="og:image:alt" content="Praia Digital — Inteligência imobiliária para o litoral"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Planilha de atendimento imobiliário no Google Sheets"><meta name="twitter:description" content="Organize imóveis, contatos e próximos passos no Google Sheets com exemplo hipotético, menus suspensos, rotina de revisão e limites de automação."><meta name="twitter:image" content="https://praia.digital/assets/social/praia-digital-institucional-v1.png">
+<link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/assets/css/editorial-guides.css">
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Google Sheets para Gestão de Imóveis no Litoral: Guia Prático | Praia Digital",
-  "description": "Aprenda a usar Google Sheets para gestão de imóveis no litoral paulista: controle de leads, follow-up, anúncios, documentos e finanças. Guia prático para corretores e imobiliárias de Santos, Guarujá, Bertioga, Praia Grande e Itanhaém.",
+  "headline": "Planilha de atendimento imobiliário no Google Sheets",
+  "description": "Organize imóveis, contatos e próximos passos no Google Sheets com exemplo hipotético, menus suspensos, rotina de revisão e limites de automação.",
   "url": "https://praia.digital/blog/google-sheets-gestao-imoveis-litoral.html",
-  "author": {"@type": "Organization", "name": "Praia Digital"},
-  "publisher": {"@type": "Organization", "name": "Praia Digital", "url": "https://praia.digital/"}
-}
-</script>
-<link rel="stylesheet" href="https://praia.digital/css/style.css">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=window.PD_GA4_ID || ''"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', '', { anonymize_ip: true });
-</script>
-<link rel="stylesheet" href="/assets/css/related-ads.css">
-<script src="/assets/js/related-ads.js"></script>
-
-  <!-- Meta Pixel (env fallback) -->
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init", window.PD_META_PIXEL_ID || "");fbq("track","PageView");
-</script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=" + (window.PD_META_PIXEL_ID || "") + "&ev=PageView&noscript=1" /></noscript>
-</head>
-<a id="skip-link" class="skip-link" href="#main">Pular para o conteúdo</a>
-  <body>
-<meta name="pd-shared-nav">
-<a class="skip-link" href="#main" style="position:absolute;left:-9999px;">Pular para o conteúdo</a>
-<div class="container">
-  <span class="badge">Gestão Imobiliária</span>
-  <h1>Google Sheets para Gestão de Imóveis no Litoral: Guia Prático</h1>
-  <p><strong>Por Carolina Mourad</strong> — CEO, Praia Digital — Publicado em 2026</p>
-<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
-  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
-  <div id="pd-ads-top" data-ad-id="ads-top" style="min-height:100px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
-    Espaço reservado para anúncio AdSense (topo)
-  </div>
-  <noscript>
-    <!-- Fallback para quando JavaScript está desativado -->
-    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
-  </noscript>
-</div>
-
-
-  <p>Muitas imobiliárias e corretores no litoral paulista ainda usam cadernos, WhatsApp fragmentado e planilhas soltas. O <strong>Google Sheets</strong> pode se tornar um CRM simples e gratuito para organizar leads, imóveis, visitas, ofertas, documentos e relatórios — tudo em um único lugar e acessível pelo celular.</p>
-
-  <p>Neste guia, você vai aprender a montar uma planilha prática para a realidade do litoral, sem precisar de ferramentas caras.</p
-<div class="adsense-block" style="margin:1.5rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
-  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
-  <div id="pd-ads-inarticle" data-ad-id="ads-inarticle" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
-    Espaço reservado para anúncio AdSense nativo (meio do texto)
-  </div>
-</div>
->
-
-  <h2>Por Que Usar Google Sheets no Litoral?</h2>
-
-  <ul>
-    <li><strong>Grátis e intuitivo:</strong> não precisa instalar software nem contratar licença;</li>
-    <li><strong>Acesso em qualquer lugar:</strong> imobiliária, campo, visita ou praia — com internet ou offline;</li>
-    <li><strong>Compartilhamento fácil:</strong> equipe inteira vê e atualiza em tempo real;</li>
-    <li><strong>Integrações:</strong> Forms, Apps Script, Zapier/Make e scripts gratuitos automatizam entrada de dados;</li>
-    <li><strong>Relatórios automáticos:</strong> dashboards com gráficos mostram conversão, tempo de fechamento, ticket médio.</li>
-  </ul>
-
-  <h2>Estrutura Básica da Planilha</h2>
-
-  <p>Minha sugestão: usar <strong>abas separadas</strong> para cada função. Não amontoe tudo em uma única aba.</p>
-
-  <h3>Aba 1: Imóveis</h3>
-
-  <p>Um registro por imóvel. Campos recomendados:</p>
-  <ul>
-    <li>ID do imóvel, cidade, bairro, tipo, área, dormitórios, vagas;</li>
-    <li>Preço de venda, aluguel temporada, condomínio, IPTU;</li>
-    <li>Status (disponível, reservado, vendido, alugado);</li>
-    <li>Diferenciais (vista mar, lazer, pet friendly);</li>
-    <li>Link do anúncio, fotos/data da última atualização.</li>
-  </ul>
-
-  <h3>Aba 2: Leads</h3>
-
-  <p>Um registro por lead. Campos recomendados:</p>
-  <ul>
-    <li>Nome, telefone/WhatsApp, e-mail, origem (site, Instagram, indicação);</li>
-    <li>Interesse (comprar/alugar, cidade, bairro, faixa de preço);</li>
-    <li>Estágio no funil (novo, qualificado, visita agendada, proposta, fechado);</li>
-    <li>Data de contato, última interação, próximo follow-up.</li>
-  </ul>
-
-  <h3>Aba 3: Visitas</h3>
-
-  <p>Registre cada visita com:</p>
-  <ul>
-    <li>Data, horário, corretor responsável;</li>
-    <li>Lead, imóvel visitado, cidade/bairro;</li>
-    <li>Feedback do lead, pontos positivos e objeções;</li>
-    <li>Próximo passo e data.</li>
-  </ul>
-
-  <h3>Aba 4: Ofertas</h3>
-
-  <p>Controle propostas feitas e recebidas:</p>
-  <ul>
-    <li>Data, lead, imóvel, valor ofertado;</li>
-    <li>Tipo (venda ou aluguel temporada), condições de pagamento;</li>
-    <li>Status (em análise, aceita, recusada, contraproposta);</li>
-    <li>Data de fechamento efetivo, comissão.</li>
-  </ul>
-
-  <h3>Aba 5: Documentos</h3>
-
-  <p>Links para contratos, procurações, comprovantes, laudos, memorial:</p>
-  <ul>
-    <li>Nome do documento, tipo, link no Drive, data de atualização;</li>
-    <li>Responsável pelo envio, status (pendente, assinado, arquivado).</li>
-  </ul>
-
-  <h3>Aba 6: Financeiro</h3>
-
-  <p>Visão rápida:</p>
-  <ul>
-    <li>Aluguéis recebidos por imóvel/mês;</li>
-    <li>Comissões por corretor;</li>
-    <li>Descontas e taxas (condomínio, IPTU, manutenção);</li>
-    <li>Fluxo de caixa consolidado.</li>
-  </ul>
-
-  <h2>Automações Básicas com Google Sheets</h2>
-
-  <p>Você não precisa ser programador. Com Apps Script e integrações, a planilha pode trabalhar por você.</p>
-
-  <h3>1. Formulário de captura de leads</h3>
-
-  <p>Crie um Google Form com campos: nome, telefone, interesse, origem. Respostas caem automaticamente na aba Leads. Use o formulário em landing pages, QR Codes em imóveis e link na bio das redes sociais.</p>
-
-  <h3>2. Alertas automáticos</h3>
-
-  <p>Configure regras: se um lead ficar 3 dias sem follow-up, o Google Sheets envia alerta no celular por e-mail ou WhatsApp.</p>
-
-  <h3>3. Integração com WhatsApp</h3>
-
-  <p>Use ferramentas gratuitas ou APIs acessíveis para enviar mensagem automática quando um novo lead chegar: "Olá, recebemos seu contato. Em até 30 minutos um corretor responde."</p>
-
-  <h3>4. Painel de métricas (dashboard)</h3>
-
-  <p>Use gráficos para acompanhar: leads por dia, taxa de visita por lead, ticket médio, conversão por cidade. Esse painel ajuda a tomar decisões rápidas, especialmente na alta temporada.</p>
-
-  <h2>Exemplos Práticos no Litoral Paulista</h2>
-
-  <ul>
-    <li><strong>Santos:</strong> imobiliária com 3 corretores organizou 230 imóveis na planilha e reduziu retrabalho em 40%;</li>
-    <li><strong>Guarujá:</strong> corretor autônomo criou formulário de captura por QR Code nos moldes e aumentou leads em 2 semanas;</li>
-    <li><strong>Bertioga:</strong> gestor de temporada usa Google Sheets para controlar disponibilidade diária de casas e reduziu overbooking;</li>
-    <li><strong>Praia Grande:</strong> construtora controla lançamentos e documentos de clientes com checklist na planilha.</li>
-  </ul>
-
-  <h2>Dicas para o Contexto de Temporada</h2>
-
-  <p>O litoral paulista tem picos altos: verão, feriados prolongados e férias escolares. Prepare sua planilha para:</p>
-
-  <ul>
-    <li><strong>Alta temporada:</strong> destaque imóveis com disponibilidade curta e aumente follow-up automático;</li>
-    <li><strong>Baixa temporada:</strong> foque em captação de clientes de longo prazo (invez de aluguel por dia, trabalhe vendas e locação anual);</li>
-    <li><strong>Documentação rápida:</strong> organize lista de documentos por tipo de imóvel (venda, aluguel curto, aluguel longo) para agilizar fechamento.</li>
-  </ul>
-
-  <h2>Integração com Outras Ferramentas</h2>
-
-  <ul>
-    <li><strong>Zapier/Make:</strong> conecte Google Sheets a WhatsApp, Gmail, CRM e ferramentas de automação;</li>
-    <li><strong>Apps Script:</strong> crie funções customizadas como cálculo automático de comissão, envio de lembretes e atualização de status;</li>
-    <li><strong>API aberta:</strong> apps de gestão imobiliária podem importar/exportar CSV do Sheets sem custo.</li>
-  </ul>
-
-  <h2>Limitações e Quando Migrar</h2>
-
-  <p>Google Sheets funciona muito bem para pequenas e médias operações. Quando começar a ter milhares de registros, leads simultâneos ou múltiplos usuários editando ao mesmo tempo, considerar evoluir para CRM mais robusto. Mas mesmo assim, o Sheets continua útil como painel pessoal e relatórios rápidos.</p>
-
-  <h2>Ferramentas Gratuitas Complementares</h2>
-
-  <p>A Praia Digital disponibiliza modelos e ferramentas gratuitas ligadas à gestão:</p>
-
-  <ul>
-    <li>Checklists de captação e visita;</li>
-    <li>Modelos de proposta e contratos;</li>
-    <li>Assistente virtual para qualificar leads vindos do site ou redes sociais;</li>
-    <li>Gerador de descrições automáticas para planilha de anúncios.</li>
-  </ul>
-
-  <p>Acesse: <a href="https://praia.digital" target="_blank" rel="noopener">https://praia.digital</a></p>
-
-  <h2>Conclusão</h2>
-
-  <p>Google Sheets para gestão de imóveis no litoral paulista é uma solução econômica, flexível e poderosa. Organize dados, automatize follow-up e tome decisões por métricas — sem gastar com software caro.</p>
-
-  <p><strong>Quer templates prontos e suporte para montar sua planilha?</strong><br>
-  Acesse <a href="https://praia.digital/">https://praia.digital/</a> ou fale conosco pelo WhatsApp (11) 95434-6288.</p>
-
-  <div class="related">
-    <h3>Artigos relacionados</h3>
-    <ul>
-      <li><a href="//">Automação de agendamento de visitas</a></li>
-      <li><a href="//">CRM gratuito para imobiliárias do litoral</a></li>
-      <li><a href="https://praia.digital/blog/roteiro-video-diario-imoveis-litoral.html">Roteiro de vídeo diário para imóveis</a></li>
-    </ul>
-  </div>
-
-  <meta name="pd-shared-footer">
-</div>
-
-<!-- CTA-QUIZ-PERFIL-DONO-PRAIA-DIGITAL -->
-<div style="background:linear-gradient(135deg,#1e3a8a,#0a3a6b);border:1px solid #1e3a5f;border-radius:12px;padding:1.3rem;margin:1.5rem 0;text-align:center">
-  <h3 style="color:#4ade80;margin:0 0 .4rem">🧭 Qual seu perfil de dono de temporada?</h3>
-  <p style="color:#cbd5e1;font-size:.9rem;margin:0 0 .8rem">3 perguntas, 30 segundos: descubra como ganhar mais sem trabalhar. No fim, falamos com você no WhatsApp.</p>
-  <a href="https://praia.digital/assets/quiz-perfil-dono.html" style="display:inline-block;background:linear-gradient(90deg,#22d3ee,#4ade80);color:#04141f;font-weight:800;padding:.7rem 1.3rem;border-radius:9px;text-decoration:none">Fazer o quiz grátis →</a>
-</div>
-
-
-<!-- CTA-BOLETIM-PRAIA-DIGITAL -->
-<div style="background:linear-gradient(135deg,#0a3a6b,#063a5a);border:1px solid #1e3a5f;border-radius:12px;padding:1.2rem;margin:1.5rem 0;text-align:center">
-  <h3 style="color:#4ade80;margin:0 0 .4rem">📡 Boletim Diário de Inteligência</h3>
-  <p style="color:#cbd5e1;font-size:.9rem;margin:0 0 .8rem">Receba toda manhã o ranking das cidades, tendências e oportunidades do litoral paulista.</p>
-  <a href="https://praia.digital/docs/inteligencia/boletim-diario.html" style="display:inline-block;background:linear-gradient(90deg,#22d3ee,#4ade80);color:#04141f;font-weight:800;padding:.7rem 1.3rem;border-radius:9px;text-decoration:none">Ler boletim de hoje →</a>
-</div>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Google Sheets para Gestão de Imóveis no Litoral: Guia Prático | Praia Digital",
-  "description": "Aprenda a usar Google Sheets para gestão de imóveis no litoral paulista: controle de leads, follow-up, anúncios, documentos e finanças. Guia prático para corretores e imobiliárias de Santos, Guarujá, Bertioga, Praia Grande e Itanhaém.",
-  "url": "https://praia.digital/blog/google-sheets-gestao-imoveis-litoral.html",
-  "image": "https://praia.digital/img/default-home.jpg",
+  "mainEntityOfPage": "https://praia.digital/blog/google-sheets-gestao-imoveis-litoral.html",
+  "inLanguage": "pt-BR",
+  "dateModified": "2026-11-12",
   "author": {
     "@type": "Organization",
     "name": "Praia Digital"
@@ -351,69 +25,56 @@ gtag('config', '', { anonymize_ip: true });
   "publisher": {
     "@type": "Organization",
     "name": "Praia Digital",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://praia.digital/img/logo.png"
-    }
-  }
-}
-</script>
-  
-    <!-- INTERNAL-NAV -->
-    <div style="display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0">
-      <a href="/servicos.html" style="padding:.4rem .8rem;border-radius:999px;border:1px solid rgba(255,255,255,.15);color:#cfe3ff;text-decoration:none;font-size:.9rem">Serviços</a>
-      <a href="../education/cursos/index.html" style="padding:.4rem .8rem;border-radius:999px;border:1px solid rgba(255,255,255,.15);color:#cfe3ff;text-decoration:none;font-size:.9rem">Cursos</a>
-      <a href="../cidades/santos.html" style="padding:.4rem .8rem;border-radius:999px;border:1px solid rgba(255,255,255,.15);color:#cfe3ff;text-decoration:none;font-size:.9rem">Imóveis em Santos</a>
-      <a href="../bairros/index.html" style="padding:.4rem .8rem;border-radius:999px;border:1px solid rgba(255,255,255,.15);color:#cfe3ff;text-decoration:none;font-size:.9rem">Bairros do litoral</a>
-    </div>
-  <div class="adsense-block" style="margin:2rem 0;padding:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;text-align:center">
-  <p style="font-size:.85rem;color:#6b7280;margin-bottom:.5rem">Publicidade</p>
-  <div id="pd-ads-footer" data-ad-id="ads-footer" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">
-    Espaço reservado para anúncio AdSense (rodapé)
-  </div>
-  <noscript>
-    <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Anúncios são exibidos com JavaScript ativado.</div>
-  </noscript>
-</div>
+    "url": "https://praia.digital/"
+  },
+  "image": "https://praia.digital/assets/social/praia-digital-institucional-v1.png"
+}</script>
+</head><body><a class="skip-link" href="#main">Pular para o conteúdo</a><meta name="pd-shared-nav">
+<nav class="fallback-nav" aria-label="Caminho da página"><a href="/">Início</a><a href="/blog/">Blog</a><a href="/servicos/ia-para-imobiliarias.html">IA para imobiliárias</a></nav>
+<main id="main"><article><header><h1>Planilha de atendimento imobiliário no Google Sheets</h1><p class="meta">Por Praia Digital · Publicado em 2026 · Atualizado em <time datetime="2026-11-12">12 de novembro de 2026</time></p></header>
+<p class="lead">Uma planilha de atendimento imobiliário ajuda a responder três perguntas: quem precisa de retorno, sobre qual imóvel e qual é o próximo passo. Comece com um processo que a equipe consiga manter antes de acrescentar integrações.</p>
+<p>Este roteiro serve para corretores e pequenas imobiliárias do litoral paulista que querem organizar a rotina no Google Sheets. O exemplo é hipotético: não representa clientes atendidos nem resultados da Praia Digital. Você pode copiar os cabeçalhos e adaptar a estrutura; este artigo não instala automações.</p>
+<nav class="toc" aria-label="Neste artigo"><strong>Neste guia</strong><a href="#estrutura">As quatro abas iniciais</a><a href="#exemplo">Exemplo de acompanhamento</a><a href="#rotina">Rotina e validação</a><a href="#limites">Acesso e automações</a></nav>
 
-</main>
-<meta name="pd-shared-footer">
+<h2 id="estrutura">1. Separe cadastro de histórico</h2>
+<p>Use um código estável para cada imóvel e contato. Alterar o nome de uma pessoa ou o título do anúncio não deve criar outro registro. Um contato pode ter interesse em vários imóveis; registre cada conversa na aba de atividades, ligada aos códigos correspondentes.</p>
+<div class="table-wrap"><table><caption>Estrutura inicial sugerida</caption><thead><tr><th scope="col">Aba</th><th scope="col">Campos essenciais</th><th scope="col">Uma linha representa</th></tr></thead><tbody>
+<tr><th scope="row">Imóveis</th><td>ID, cidade, bairro, finalidade, link público, disponibilidade e data de conferência.</td><td>Um imóvel identificado.</td></tr>
+<tr><th scope="row">Contatos</th><td>ID, identificação necessária, canal de retorno, interesse, origem, responsável e etapa.</td><td>Uma pessoa ou empresa em atendimento.</td></tr>
+<tr><th scope="row">Atividades</th><td>ID do contato, ID do imóvel, data, resumo, próximo passo, prazo e situação.</td><td>Uma interação ou tarefa.</td></tr>
+<tr><th scope="row">Listas</th><td>Etapas, responsáveis e origens utilizados pela equipe.</td><td>Uma opção padronizada.</td></tr>
+</tbody></table></div>
+<p>Não reúna documentos pessoais, senhas e comprovantes na mesma tabela usada para distribuir tarefas. Se um documento for necessário ao negócio, use o processo de acesso definido pela empresa. Registre no atendimento apenas a pendência relevante, sem copiar todo o seu conteúdo.</p>
 
-<p><strong>Conteúdos complementares:</strong></p>
-<ul>
-<li><a href="/education/formacoes/marketing-imobiliario.html">Marketing Imobiliario</a></li>
-<li><a href="/education/formacoes/mercado-imobiliario-litoral.html">Mercado Imobiliario Litoral</a></li>
-</ul>
+<h2>2. Defina o significado de cada etapa</h2>
+<p>Uma lista inicial pode conter: novo, em atendimento, visita combinada, proposta em análise e encerrado. Combine o que permite mudar de etapa. “Visita combinada”, por exemplo, exige concordância das pessoas envolvidas; enviar uma sugestão de horário não basta.</p>
+<p>Na aba Listas, mantenha as opções aprovadas. Para configurar o campo, selecione as células e use <strong>Dados → Validação de dados → Adicionar regra</strong>. O <a href="https://support.google.com/docs/answer/186103?hl=pt-BR">guia de menus suspensos do Google</a> explica como usar valores definidos ou um intervalo. Prefira uma opção por célula para que o estágio seja claro também no celular.</p>
+<p>Separe números, datas e observações. Preço informado não é preço confirmado; disponibilidade antiga não comprova estoque atual. Antes de divulgar uma ficha, revise os fatos com o responsável e use o <a href="/blog/briefing-imobiliario-para-ia.html">briefing imobiliário para IA</a> para registrar o que ainda falta confirmar.</p>
 
-<script src="https://praia.digital/js/shared.js?v=2.0"></script>
+<h2 id="exemplo">3. Veja um acompanhamento hipotético</h2>
+<p>Os códigos e situações abaixo são fictícios. As datas servem apenas para demonstrar o preenchimento, sem telefone, e-mail ou identificação de clientes reais.</p>
+<div class="table-wrap"><table><caption>Exemplo para a aba Atividades</caption><thead><tr><th scope="col">Contato e imóvel</th><th scope="col">Situação observada</th><th scope="col">Próximo passo e prazo</th></tr></thead><tbody>
+<tr><th scope="row">C001 · I012</th><td>Perguntou sobre vaga no apartamento em Bertioga.</td><td>Responsável A confirma a condição da vaga até 13/11/2026.</td></tr>
+<tr><th scope="row">C002 · I025</th><td>Propôs visitar uma casa em Santos; horário pendente.</td><td>Responsável B consulta as partes até 14/11/2026.</td></tr>
+<tr><th scope="row">C003 · sem imóvel definido</th><td>Busca locação anual, mas não informou bairros de interesse.</td><td>Responsável A pede essa informação no retorno combinado em 16/11/2026.</td></tr>
+</tbody></table></div>
+<p>Evite anotações como “cliente difícil” ou previsões sobre capacidade financeira. Registre a pergunta concreta e a ação necessária. Quando uma tarefa terminar, marque sua conclusão e crie a próxima atividade, se houver; não apague o histórico para substituí-lo pela novidade.</p>
 
-  <!--#include virtual="/partials/lead-modal.html" -->
-  <script defer src="https://praia.digital/js/lead-modal.js"></script>
-<script>
-(function(){
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if (entry.isIntersecting) {
-          const el = entry.target;
-          const adId = el.getAttribute('data-ad-id');
-          if (adId && !el.hasAttribute('data-ad-loaded')) {
-            el.setAttribute('data-ad-loaded', 'true');
-            // Placeholder para substituição futura pelo snippet AdSense real
-            el.innerHTML = '<div style="min-height:' + el.style.minHeight + ';display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:.9rem">Anúncio</div>';
-          }
-          observer.unobserve(el);
-        }
-      });
-    }, { rootMargin: '200px' });
-    
-    document.querySelectorAll('.adsense-block[data-ad-id]').forEach(function(el){
-      observer.observe(el);
-    });
-  }
-})();
-</script>
+<h2 id="rotina">4. Faça uma revisão curta todos os dias</h2>
+<ol><li>Filtre atividades abertas com prazo vencido ou previsto para hoje.</li><li>Confira quem responde por cada item e elimine tarefas sem responsável.</li><li>Verifique disponibilidade e informações do imóvel antes do retorno.</li><li>Depois da conversa, registre o resultado e o próximo passo acordado.</li><li>Encerre o acompanhamento quando não houver continuidade ou quando a pessoa pedir que não seja contatada.</li></ol>
+<p>A planilha organiza a decisão, mas não substitui o contexto da conversa. Use o <a href="/blog/follow-up-imobiliario-por-email.html">guia de follow-up por e-mail</a> para preparar mensagens pertinentes. Uma data vencida não autoriza repetir mensagens automaticamente.</p>
+<p>Para comparar canais, padronize a origem e preserve “não informado” quando necessário. O roteiro de <a href="/blog/mensuracao-attribution-marketing-imobiliario-local-litoral-2026.html">mensuração de contatos e campanhas</a> ajuda a separar visita ao site, contato recebido e avanço comercial.</p>
 
-</body>
+<h2 id="limites">5. Combine acesso e limites de automação</h2>
+<p>Defina quem pode consultar, editar e administrar o arquivo. Proteja fórmulas e listas para reduzir alterações acidentais. Isso não protege a confidencialidade: a <a href="https://support.google.com/docs/answer/1218656?hl=pt-BR">documentação do Google</a> explica que pessoas com acesso podem copiar ou exportar conteúdo mesmo quando há intervalos protegidos. Ocultar uma aba também não substitui controlar o compartilhamento.</p>
+<p>Comece pelo acompanhamento manual. Um lembrete automático exige configuração, autorização, responsável por falhas e teste com destinatário controlado. O <a href="https://developers.google.com/apps-script/guides/services/quotas?hl=pt-BR">Apps Script tem cotas e limites</a> que podem interromper a execução; não trate um script como envio garantido.</p>
+<p>Google Sheets não envia WhatsApp apenas porque uma linha foi preenchida. Uma integração depende do serviço utilizado, permissões, regras e eventuais custos. Antes de contratar ou ativar, combine quais dados serão enviados, como impedir duplicatas e como interromper o processo. Se a operação exigir histórico auditável e permissões mais detalhadas, avalie um CRM adequado.</p>
 
-</html>
+<h2>6. Teste a estrutura antes de usar dados reais</h2>
+<p>Crie três registros fictícios, acrescente duas atividades para o mesmo contato e filtre as pendências por responsável. Confira se datas ordenam corretamente, se a lista de etapas aceita apenas as opções combinadas e se ninguém perde uma tarefa ao mudar de estágio. No celular, abra cada aba e verifique se consegue ler e atualizar os campos essenciais.</p>
+<p>A <a href="/apps/oficina-ia-imobiliaria/">oficina gratuita da Praia Digital</a> pode ajudar a organizar o briefing de um anúncio. Ela não acessa esta planilha nem funciona como CRM; use os materiais revisados pela equipe como apoio ao processo.</p>
+
+<section class="cta-box" aria-labelledby="ajuda"><h2 id="ajuda">Organize o próximo passo da sua imobiliária</h2><p>A Praia Digital oferece planejamento de atendimento e revisão de conteúdo com IA. Descreva onde a equipe perde informações e qual fluxo deseja organizar; escopo, entregas, prazo e valor são definidos em proposta. A análise inicial gratuita anunciada no serviço é de um anúncio público, não de toda a operação.</p><a class="button" href="/servicos/ia-para-imobiliarias.html">Conhecer o planejamento de atendimento</a></section>
+<section class="sources" aria-labelledby="fontes"><h2 id="fontes">Fontes e atualização</h2><p>Fontes oficiais consultadas em 12 de novembro de 2026. A estrutura de abas, o exemplo e a rotina são propostas editoriais da Praia Digital.</p><ul><li><a href="https://support.google.com/docs/answer/186103?hl=pt-BR">Google — Menus suspensos e validação de dados</a></li><li><a href="https://support.google.com/docs/answer/1218656?hl=pt-BR">Google — Proteção de páginas e intervalos</a></li><li><a href="https://developers.google.com/apps-script/guides/services/quotas?hl=pt-BR">Google — Cotas dos serviços do Apps Script</a></li></ul><p><a href="/politica-editorial.html">Política editorial</a> · <a href="/blog/">Mais guias</a> · <a href="/contato.html">Informar uma correção</a></p></section>
+</article></main><meta name="pd-shared-footer"><script src="/js/shared.js?v=2.0" defer></script>
+</body></html>

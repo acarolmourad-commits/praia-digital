@@ -1,7 +1,10 @@
 import json
 from pathlib import Path
 
-base = Path('C:/Users/Carolina/praia-digital/litoral-prime-imoveis')
+base = Path(__file__).resolve().parents[1]
+import sys
+sys.path.insert(0, str(base.parent / 'scripts'))
+from preserve_reviewed_indexing import preserve
 properties = json.loads((base / 'imoveis' / 'properties.json').read_text(encoding='utf-8'))
 today = '2026-08-06'
 
@@ -96,6 +99,6 @@ for city, city_props in cities.items():
 </html>
 '''
     path = base / 'cidades' / f'{city.lower()}.html'
-    path.write_text(html, encoding='utf-8')
+    path.write_text(preserve(html, path), encoding='utf-8')
 
 print('Páginas de cidade atualizadas:', len(cities))

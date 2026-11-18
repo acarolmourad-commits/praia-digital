@@ -113,6 +113,9 @@ footer .cols{grid-template-columns:1fr 1fr}
 .cmp{display:block;overflow-x:auto}
 }
 @media(max-width:540px){.aud,.g3,.g4{grid-template-columns:1fr}.hero{padding:56px 0 76px}.search{flex-direction:column}.search .btn{width:100%}}
+
+.ai-marketplace{display:flex;align-items:center;justify-content:space-between;gap:28px;margin-top:36px;padding:28px;border:1px solid rgba(201,246,107,.32);border-radius:16px;background:rgba(255,255,255,.04)}.ai-marketplace>div{max-width:740px;min-width:0}.ai-marketplace h3{color:#fff;font-size:1.45rem;line-height:1.25;margin:7px 0 12px}.ai-marketplace p:not(.kicker){color:#dce8f0;line-height:1.7;font-size:.95rem;margin:0}.ai-marketplace .btn{background:#c9f66b;color:#102722!important;flex-shrink:0;text-align:center;white-space:normal}.ai-marketplace .kicker{margin-bottom:4px}
+@media(max-width:800px){.ai-marketplace{align-items:flex-start;flex-direction:column;padding:22px}.ai-marketplace .btn{max-width:100%}}
 </style>
 <style>
 :focus-visible{outline:3px solid #e09000;outline-offset:4px}
@@ -500,8 +503,6 @@ footer .cols{grid-template-columns:repeat(3,minmax(0,1fr))}footer .cols>div{min-
 </section>
 
 <section id="analise">
-<span id="apps" aria-hidden="true" style="display:block;scroll-margin-top:5rem"></span>
-<span id="jornadas-apps" aria-hidden="true" style="display:block;scroll-margin-top:5rem"></span>
 <div class="wrap">
   <p class="kicker">Análise</p>
   <h2>Descubra se vale a pena</h2>
@@ -518,6 +519,76 @@ footer .cols{grid-template-columns:repeat(3,minmax(0,1fr))}footer .cols>div{min-
 </div>
 </section>
 
+
+<section id="apps" aria-labelledby="apps-titulo">
+<div id="rede-apps"></div>
+<div class="wrap" id="jornadas-apps">
+  <p class="kicker">16 aplicativos gratuitos · Roteiros de análise</p>
+  <h2 id="apps-titulo">Combine os apps e avance na sua decisão</h2>
+  <p class="lead">Escolha seu objetivo e use as ferramentas em sequência. Você pode começar por qualquer etapa e comparar cenários antes de decidir.</p>
+  <div class="grid g2">
+    <article class="card" aria-labelledby="roteiro-destino">
+      <h3 id="roteiro-destino">1. Comparar destino e preço</h3>
+      <p>Organize suas prioridades de localização, estime o valor do imóvel e explore diferentes hipóteses de valorização.</p>
+      <ol class="app-steps">
+        <li><a href="/apps/comparador-cidades/">Comparar cidades pelo seu perfil</a></li>
+        <li><a href="/apps/valor-imovel/">Estimar o valor do imóvel</a></li>
+        <li><a href="/apps/calculadora-valorizacao/">Projetar cenários de valorização</a></li>
+      </ol>
+    </article>
+    <article class="card" aria-labelledby="roteiro-orcamento">
+      <h3 id="roteiro-orcamento">2. Planejar o orçamento da compra</h3>
+      <p>Relacione a entrada ao prazo e à renda disponível. Compare alternativas sem confundir simulação com oferta de crédito.</p>
+      <ol class="app-steps">
+        <li><a href="/apps/planejador-entrada/">Planejar quanto guardar para a entrada</a></li>
+        <li><a href="/apps/renda-para-financiar/">Estimar a renda para financiar</a></li>
+        <li><a href="/apps/calculadora-financiamento/">Comparar financiamento SAC e Price</a></li>
+        <li><a href="/apps/calculadora-consorcio/">Explorar uma simulação de consórcio</a></li>
+      </ol>
+    </article>
+    <article class="card" aria-labelledby="roteiro-uso">
+      <h3 id="roteiro-uso">3. Avaliar o uso do imóvel</h3>
+      <p>Teste premissas de compra, aluguel e temporada, considerando despesas e ocupação compatíveis com seu cenário.</p>
+      <ol class="app-steps">
+        <li><a href="/apps/alugar-ou-comprar/">Comparar alugar e comprar</a></li>
+        <li><a href="/apps/simulador-roi-temporada/">Simular o retorno da temporada</a></li>
+        <li><a href="/apps/temporada-ou-anual/">Comparar temporada e aluguel anual</a></li>
+      </ol>
+    </article>
+    <article class="card" aria-labelledby="roteiro-fechamento">
+      <h3 id="roteiro-fechamento">4. Conferir custos e vistoria</h3>
+      <p>Prepare o orçamento de fechamento e organize a inspeção. O checklist não substitui avaliação técnica ou análise jurídica.</p>
+      <ol class="app-steps">
+        <li><a href="/apps/custo-de-compra/">Estimar ITBI e custos da compra</a></li>
+        <li><a href="/apps/checklist-vistoria/">Organizar a vistoria do imóvel</a></li>
+      </ol>
+    </article>
+  </div>
+  <div class="pd-practice" id="descobrir-apps">
+    <h3>Uma ferramenta para cada etapa do imóvel</h3>
+    <p>Encontre o aplicativo pelo nome ou pelo que você precisa resolver: planejar a entrada, comparar cenários, preparar a vistoria ou revisar um anúncio. O catálogo reúne os 16 aplicativos gratuitos e permite combinar busca e objetivo.</p>
+    <p><a href="/apps/#buscar-apps">Buscar uma ferramenta no catálogo →</a></p>
+  </div>
+  <p class="hub-links"><a href="/apps/">Explorar todos os aplicativos gratuitos</a> · <a href="/metodologia.html">Consultar fontes e metodologia</a></p>
+  <aside class="pd-practice" aria-labelledby="guia-apps-home"><h3 id="guia-apps-home">Um roteiro para sair da simulação e organizar a próxima etapa</h3><p>Escolha entre compra, locação, anúncios e marketplaces. O guia reúne os 16 aplicativos, explica o que conferir em cada etapa e oferece checklists para imprimir ou salvar em PDF.</p><p><a href="/apps/guia-de-uso.html">Abrir o guia prático dos aplicativos →</a></p><p><a href="/guias/usar-apps-com-evidencias.html">Registre fontes, hipóteses e pendências</a> · <a href="/cases/rede-aplicativos-praia-digital.html">Veja como a rede foi organizada e testada</a></p></aside>
+  <h3>Do briefing à apresentação do imóvel</h3><p>Comece reunindo fatos e fontes na Oficina de IA. Confira duas versões do anúncio com o Revisor e organize as informações verificadas no Relatório do imóvel. Essa sequência ajuda a identificar lacunas antes de compartilhar o material.</p>
+  <p class="src">Para profissionais: <a href="/apps/oficina-ia-imobiliaria/">oficina de briefing</a>, <a href="/apps/revisor-anuncios/">revisor de anúncios</a> e <a href="/apps/relatorio-imovel/">relatório do imóvel</a>. Preencha com fatos confirmados e revise antes de usar. Na <a href="/apps/oficina-ia-imobiliaria/#revisao-do-resultado">Oficina, leve a versão certa para o próximo passo</a>: briefing, checklist e modelos de acompanhamento em arquivos identificados.</p>
+  <p class="src"><a href="/cases.html#evolucao-aplicativos">Conheça uma melhoria real da Oficina</a> e siga o roteiro: organizar o briefing, revisar o anúncio e preparar a apresentação. Veja o que foi verificado e como usar os três aplicativos.</p>
+  <p class="src"><strong>Para pousadas e anfitriões:</strong> <a href="/blog/uma-ficha-tres-anuncios-imobiliarios.html#ficha-por-acomodacao">prepare uma ficha por categoria de acomodação</a> e confira camas, comodidades, serviços e fotos antes de adaptar o anúncio. O guia mostra como usar a Oficina, o Revisor e o Relatório em sequência.</p>
+  <p class="src"><strong>Para construir parcerias:</strong> <a href="/blog/networking-corretores-litoral-parcerias-indicacoes-2026.html">do briefing à primeira conversa</a>. Um roteiro para usar a Oficina, o Revisor e o Relatório, preparar uma contribuição útil e acompanhar contatos sem duplicações.</p>
+  <p class="src">Para operações de comércio digital: <a href="/apps/calculadora-precificacao-shopee/">calculadora de precificação para Shopee e TikTok Shop</a>, com premissas próprias de taxas e margem.</p>
+  <div class="pd-practice">
+    <h3>Transforme uma dúvida em uma próxima ação</h3>
+    <ul>
+      <li><strong>Quer comprar?</strong> Separe entrada, renda e condições do financiamento. <a href="/apps/custo-de-compra/">Calcule também os custos de fechamento</a> antes de comparar imóveis.</li>
+      <li><strong>Vai anunciar?</strong> Reúna área, localização, características e fotos autorizadas. <a href="/apps/revisor-anuncios/">Revise o anúncio</a> e resolva as informações pendentes antes de publicar.</li>
+      <li><strong>Avalia uma locação?</strong> Anote período, ocupação e despesas. <a href="/apps/temporada-ou-anual/">Compare temporada e aluguel anual</a> usando premissas compatíveis.</li>
+    </ul>
+    <p>Dentro de cada aplicativo, consulte o que preparar, o que registrar e qual ferramenta usar na etapa seguinte.</p>
+  </div>
+  <p class="src">Os links não transferem dados automaticamente entre os aplicativos. Anote suas premissas e repita-as manualmente quando necessário. As simulações são estimativas: não garantem retorno ou aprovação de crédito. Confirme custos, tributos e condições antes de contratar.</p>
+</div>
+</section>
 
 <section id="central-airbnb-booking">
 <div class="wrap">
@@ -545,6 +616,10 @@ footer .cols{grid-template-columns:repeat(3,minmax(0,1fr))}footer .cols>div{min-
     <a class="ai-q" href="/ferramentas/assistente-virtual.html?q=Quais%20bairros%20est%C3%A3o%20valorizando%3F">"Quais bairros estão valorizando?" →</a>
   </div>
   <p style="margin-top:26px"><a class="btn" href="/ferramentas/assistente-virtual.html">Conversar com a IA</a></p>
+  <article class="ai-marketplace" aria-labelledby="ia-marketplaces-title">
+    <div><p class="kicker" style="color:#c9f66b">Nova frente · IA para marketplaces</p><h3 id="ia-marketplaces-title">LiveBridge AI: uma live, mais vitrines.</h3><p>Para quem vende no TikTok Shop, Shopee, Mercado Livre e outros canais. Conheça o projeto de captação e distribuição de lives para redes sociais, com integrações a validar no piloto.</p></div>
+    <a class="btn" href="/ia/marketplaces/">Conhecer IA para marketplaces <span aria-hidden="true">→</span></a>
+  </article>
 </div>
 </section>
 
@@ -626,3 +701,5 @@ footer .cols{grid-template-columns:repeat(3,minmax(0,1fr))}footer .cols>div{min-
 <script src="https://praia.digital/js/shared.js?v=2.0" defer></script>
 </body>
 </html>
+
+

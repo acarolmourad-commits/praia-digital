@@ -1,0 +1,27 @@
+name: Central IA commercial and demos
+on:
+  pull_request:
+    paths: ['ia/*.html', 'tests/test_central_ia.cjs', 'tests/central-ia-browser.cjs', '.github/workflows/central-ia-checks.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node tests/test_central_ia.cjs
+      - name: Browser desktop and mobile
+        run: |
+          npm install --prefix "$RUNNER_TEMP/central-ia" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/central-ia/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          NODE_PATH="$RUNNER_TEMP/central-ia/node_modules" node tests/central-ia-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: central-ia-evidence
+          path: /tmp/central-ia-qa

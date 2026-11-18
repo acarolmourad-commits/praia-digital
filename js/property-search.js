@@ -23,7 +23,10 @@
     if (/\briviera(?: de sao lourenco)?\b/.test(rest)) {
       result.cidade = 'Bertioga'; rest = rest.replace(/\briviera(?: de sao lourenco)?\b/g, ' riviera ');
     }
-    rest = rest.replace(/\b(\d{1,2})\s*(?:quartos?|dormitorios?|dorms?|suites?)\b/g, (_, n) => { result.quartos=String(Number(n)); return ' '; });
+    // Suite counts are not structured consistently in the catalogue.
+    // Never silently translate a suite requirement into total bedrooms.
+    result.unsupportedSuites = /\bsuites?\b/.test(rest);
+    rest = rest.replace(/\b(\d{1,2})\s*(?:quartos?|dormitorios?|dorms?)\b/g, (_, n) => { result.quartos=String(Number(n)); return ' '; });
     rest = rest.replace(/(?:ate\s*(?:r\$\s*)?|r\$\s*)([\d.,]+\s*(?:milhoes|milhao|mil|mi)?)/g, (_, n) => { result.preco_max=money(n) || ''; return ' '; });
     for (const [re, type] of [[/\b(?:apartamentos?|aptos?|apes?)\b/g,'apartamento'],[/\bcasas?\b/g,'casa'],[/\bcoberturas?\b/g,'cobertura'],[/\bterrenos?\b/g,'terreno'],[/\bstudios?\b/g,'studio']]) {
       if(re.test(rest)) { result.tipo=type; rest=rest.replace(re,' '); break; }
@@ -54,6 +57,7 @@
     return state;
   }
   function matches(p, state) {
+    if(state.unsupportedSuites) return false;
     // A budget cannot compare an acquisition price with a monthly rent.
     if(state.preco_max && !state.finalidade) return false;
     const text=normalize([p.title,p.city,p.type,p.description,...(p.tags||[])].join(' '));

@@ -13,7 +13,12 @@ GUIDES = [
     'blog/sincronizar-calendario-airbnb-booking-ical.html',
     'blog/briefing-criacao-anuncio-airbnb-booking.html',
 ]
-PAGES = ['blog/index.html', 'anfitrioes/index.html', *GUIDES]
+PROFESSIONAL_GUIDES = [
+    'blog/google-sheets-gestao-imoveis-litoral.html',
+    'blog/mensuracao-attribution-marketing-imobiliario-local-litoral-2026.html',
+    'blog/como-gerar-avaliacoes-google-imobiliarias-litoral-2026.html',
+]
+PAGES = ['blog/index.html', 'anfitrioes/index.html', *GUIDES, *PROFESSIONAL_GUIDES]
 
 
 class Page(HTMLParser):
@@ -47,7 +52,7 @@ class BlogDiscoveryTests(unittest.TestCase):
                     self.assertIn(unquote(url.fragment), ids, f'{file}: {value}')
 
     def test_schema_is_valid_and_page_type_matches(self):
-        for file in ['blog/index.html', *GUIDES]:
+        for file in ['blog/index.html', *GUIDES, *PROFESSIONAL_GUIDES]:
             text = (ROOT / file).read_text()
             schemas = [json.loads(block) for block in re.findall(r'<script type="application/ld\+json">(.*?)</script>', text, re.S)]
             self.assertEqual(len(schemas), 1, file)
@@ -68,6 +73,18 @@ class BlogDiscoveryTests(unittest.TestCase):
                 self.assertIn(f'href="/{file}"', (ROOT / hub).read_text())
         schema = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', (ROOT / GUIDES[0]).read_text(), re.S)[1])
         self.assertEqual(schema['datePublished'], '2026-08-16')
+
+    def test_professional_guides_keep_existing_urls_and_discovery(self):
+        ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
+        urls = [node.text for node in ET.parse(ROOT / 'sitemap.xml').findall('s:url/s:loc', ns)]
+        blog = (ROOT / 'blog/index.html').read_text()
+        for file in PROFESSIONAL_GUIDES:
+            self.assertEqual(urls.count('https://praia.digital/' + file), 1)
+            self.assertIn(f'href="/{file}"', blog)
+            tags = Page((ROOT / file).read_text()).tags
+            self.assertIn(('link', {'rel': 'canonical', 'href': 'https://praia.digital/' + file}), tags)
+            self.assertTrue(any(t == 'a' and a.get('href') == '/servicos/ia-para-imobiliarias.html'
+                                for t, a in tags), file)
 
     def test_search_loads_after_parsing_and_has_accessible_fallback(self):
         text = (ROOT / 'blog/index.html').read_text()

@@ -1,0 +1,26 @@
+name: Rental comparison checks
+on:
+  pull_request:
+    paths:
+      - 'apps/temporada-ou-anual/**'
+      - 'tests/temporada-browser.cjs'
+      - 'tests/temporada-calculator.cjs'
+      - '.github/workflows/temporada-checks.yml'
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Arithmetic and input regressions
+        run: node --test tests/temporada-calculator.cjs
+      - name: Install browser test dependencies
+        run: |
+          npm install --prefix "$RUNNER_TEMP/temporada-browser" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/temporada-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+      - name: Check planner responsive and interrupted flows
+        run: NODE_PATH="$RUNNER_TEMP/temporada-browser/node_modules" node tests/temporada-browser.cjs

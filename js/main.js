@@ -15,7 +15,7 @@
       <meta itemprop="name" content="${escapeHtml(p.title)}">
       ${p.image ? `<div class="property-media"><img src="${p.image}" alt="${escapeHtml(p.title)}" loading="lazy" itemprop="image"></div>` : ''}
       <div class="property-info">
-        <h3 class="property-title" itemprop="name">${escapeHtml(p.title)} ${p.score ? `<span style="margin-left:8px;font-size:12px;color:#64748b">#${p.score}</span>` : ''}</h3>
+        <h3 class="property-title" itemprop="name">${escapeHtml(p.title)}</h3>
         <p class="property-meta">${escapeHtml(p.locationLabel || p.city)} · ${escapeHtml(p.type)}</p>
         <p class="property-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
           <meta itemprop="priceCurrency" content="BRL">
@@ -25,13 +25,94 @@
         </p>
         <p class="property-meta">${p.bedrooms != null && p.bedrooms !== '' ? `${escapeHtml(p.bedrooms)} quartos · ` : ''}${escapeHtml(p.area)}</p>
         <p class="property-meta">${escapeHtml((p.tags||[]).join(', '))}</p>
-        <a class="btn-whatsapp" href="${waLink(`Olá! Tenho interesse no imóvel: ${escapeHtml(p.title)} — ${escapeHtml(p.locationLabel || p.city)}. Pode me enviar mais detalhes?`)}" target="_blank" rel="noopener">Conversar no WhatsApp</a>
+        ${p.contactEmail ? `<a class="btn-secondary" href="mailto:${escapeHtml(p.contactEmail)}?subject=${encodeURIComponent('Interesse: ' + p.title)}">Consultar por e-mail</a>` : `<a class="btn-whatsapp" href="${waLink(`Olá! Tenho interesse no imóvel: ${p.title} — ${p.price} — ${p.locationLabel || p.city}. ${new URL(detailUrl(p), 'https://praia.digital/').href} Pode me enviar mais detalhes?`)}" target="_blank" rel="noopener">Conversar no WhatsApp</a>`}
         <a class="btn-secondary" href="${detailUrl(p)}">Ver detalhes</a>
       </div>
     </article>
   `;
   
   const properties = [
+{
+  "id": 20,
+  "title": "Casa com edícula no Indaiá: 7 quartos e 5 suítes",
+  "slug": "duas-casas-indaia-432m2",
+  "city": "Bertioga",
+  "locationLabel": "Bertioga · Jardim Indaiá",
+  "type": "Venda",
+  "price": "R$ 1.250.000",
+  "bedrooms": "7",
+  "area": "432 m² de terreno · 307,91 m² cadastrados de construção",
+  "image": "https://praia.digital/assets/duas-casas-indaia-432m2/01.webp",
+  "tags": [
+    "Uma única residência",
+    "5 suítes",
+    "Terreno 12 × 36 m",
+    "Cerca de 450 m da praia",
+    "Aceita financiamento"
+  ],
+  "description": "Uma única residência, com casa térrea na frente e edícula ao fundo, sem entradas independentes nem separação de água e energia. 7 quartos e 5 suítes no total. Jardim Indaiá, lado praia da Av. Anchieta. R$ 1.250.000.",
+  "contactEmail": "comercial@praia.digital"
+},
+{
+  "id": 19,
+  "title": "Residencial com 4 kitnets e edícula a 50 m da praia",
+  "slug": "residencial-4-kitnets-864m2",
+  "city": "Bertioga",
+  "locationLabel": "Bertioga · Indaiá",
+  "type": "Venda",
+  "price": "R$ 2.000.000",
+  "bedrooms": "",
+  "area": "864 m² de terreno",
+  "image": "https://praia.digital/assets/residencial-4-kitnets-864m2/01.webp",
+  "tags": [
+    "4 kitnets",
+    "4 vagas cobertas",
+    "Edícula com varanda",
+    "50 m da praia"
+  ],
+  "description": "Residencial com 4 kitnets com banheiros independentes, 4 vagas cobertas e edícula ao fundo com varanda coberta. Dois terrenos somando 864 m², a cerca de 50 m da praia. R$ 2.000.000."
+},
+{
+  "id": 18,
+  "title": "Casa térrea com 3 dormitórios no Rio da Praia",
+  "slug": "casa-rio-da-praia-100m2",
+  "city": "Bertioga",
+  "locationLabel": "Bertioga · Jardim Rio da Praia",
+  "type": "Venda",
+  "price": "R$ 690.000",
+  "bedrooms": "3",
+  "area": "100 m² construídos",
+  "image": "https://praia.digital/assets/casa-rio-da-praia-100m2/01.webp",
+  "tags": [
+    "Casa térrea",
+    "1 suíte",
+    "2 vagas",
+    "Terreno 196 m²",
+    "Aceita financiamento"
+  ],
+  "description": "Casa térrea no Jardim Rio da Praia, Bertioga: 100 m² construídos, terreno de 196 m², 3 dormitórios, sendo 1 suíte, e 2 vagas. R$ 690.000. Aceita financiamento."
+},
+{
+  "id": 17,
+  "title": "Casa sobrado no Maitinga com piscina e edícula",
+  "slug": "sobrado-maitinga-217m2",
+  "city": "Bertioga",
+  "locationLabel": "Bertioga · Maitinga",
+  "type": "Venda",
+  "price": "R$ 900.000",
+  "bedrooms": "5",
+  "area": "217 m² construídos",
+  "image": "https://praia.digital/assets/sobrado-maitinga-217m2/IMG_0360.webp",
+  "tags": [
+    "Maitinga",
+    "3 suítes",
+    "3 vagas",
+    "Piscina",
+    "Terreno 240 m²",
+    "Aceita financiamento"
+  ],
+  "description": "Sobrado no Maitinga, Bertioga, a aproximadamente 200 m da praia: 217 m² construídos, terreno de 240 m², 5 quartos, 3 suítes e 3 vagas. R$ 900.000. Aceita financiamento."
+},
 {
         "id": 16,
         "title": "Apartamento mobiliado na Vista Linda com sacada e vista para o mar",
@@ -169,7 +250,7 @@
 
       {
         "id": 9,
-        "title": "Casa em condomínio fechado - Bertioga",
+        "title": "Casa com 2 quartos em condomínio fechado em Bertioga",
         "slug": "../casa-condominio-fechado-bertioga",
         "city": "Bertioga",
         "type": "Venda",
@@ -178,8 +259,8 @@
         "area": "105m²",
         "score": 95,
         "image": "https://praia.digital/img/bertioga-casa-fachada-externa.webp",
-        "tags": ["100m da praia", "Piscina", "Sauna", "Academia"],
-        "description": "Casa em condomínio fechado a 100m da praia, com piscina, sauna e academia. Imóvel real cadastrado na Praia Digital."
+        "tags": ["Cerca de 100 m da praia", "Piscina compartilhada", "Sauna", "Academia", "Sala de jogos", "2 banheiros", "1 vaga"],
+        "description": "Casa em condomínio fechado em Bertioga: área informada de 105 m², 2 quartos, 2 banheiros e 1 vaga. Piscina, sauna, academia e sala de jogos para uso compartilhado. Condomínio informado: R$ 710/mês, com água e internet inclusas. IPTU informado: R$ 105/mês. Consulte disponibilidade, medidas, valores e condições."
       }
     ];
 
@@ -231,6 +312,11 @@
     document.getElementById('preco-label').textContent=state.finalidade==='Aluguel' ? 'Aluguel máximo (R$/mês)' : state.finalidade ? 'Preço de compra máximo (R$)' : 'Orçamento máximo (escolha a finalidade)';
   }
   function showResults() {
+    if(state.unsupportedSuites) {
+      document.getElementById('lista-imoveis').innerHTML='<p class="imoveis-empty">A busca por suítes ainda não está disponível. Retire esse requisito da busca para consultar os anúncios por quartos e confirme as suítes com a equipe.</p>';
+      document.getElementById('search-status').textContent='Quantidade de suítes não verificada. Nenhum anúncio foi selecionado como correspondente a esse requisito.';
+      return;
+    }
     if(state.preco_max && !state.finalidade) {
       document.getElementById('lista-imoveis').innerHTML='<p class="imoveis-empty">Escolha comprar ou alugar para aplicar o orçamento informado.</p>';
       document.getElementById('search-status').textContent='Finalidade pendente: preço de compra e aluguel mensal não são comparáveis.';

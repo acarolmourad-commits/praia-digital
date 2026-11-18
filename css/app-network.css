@@ -22,3 +22,60 @@
 /* Home journeys: explicit responsive two-column grid. */
 #jornadas-apps .grid.g2 { grid-template-columns:repeat(2,minmax(0,1fr)); }
 @media(max-width:640px) { #jornadas-apps .grid.g2 { grid-template-columns:minmax(0,1fr); } }
+
+/* Restored home app journeys: scoped links, touch targets and keyboard focus. */
+#apps { background:#f8fbfb; }
+#apps .src { color:#475569; }
+#apps, #jornadas-apps { scroll-margin-top:6rem; }
+#jornadas-apps .app-steps { margin:16px 0 0; padding-left:1.5rem; }
+#jornadas-apps .app-steps li { padding-left:.2rem; }
+#jornadas-apps .app-steps a { display:flex; align-items:center; min-height:44px; padding:4px 0; color:#075b5c; text-decoration:underline; text-underline-offset:.2em; }
+#jornadas-apps a:focus-visible { outline:3px solid #0e7c7b; outline-offset:4px; border-radius:2px; }
+/* Shared app journeys, including the professional tools. */
+.pd-network .pd-network-intro {max-width:70ch;margin:0 0 16px;}
+.pd-network .pd-network-group {margin:20px 0;}
+.pd-network .pd-network-group h3 {font-size:1rem;margin:0 0 8px;}
+.pd-network .pd-network-grid a {display:block;height:100%;box-sizing:border-box;text-decoration:none;}
+.pd-network .pd-network-grid a strong {display:block;text-decoration:underline;}
+.pd-network .pd-network-grid a span {display:block;color:#3e5658;font-size:.88rem;line-height:1.5;margin-top:4px;}
+.pd-network .pd-network-grid a:hover {background:#edf5f4;border-color:#0e7c7b;}
+.pd-network-nav a {display:inline-flex;align-items:center;min-height:44px;}
+.pd-home-routes ul {padding-left:20px;margin-top:16px;}
+.pd-home-routes li {margin:8px 0;}
+.pd-home-routes a {display:inline-block;min-height:44px;padding:8px 0;text-decoration:underline;text-underline-offset:.2em;}
+#catalogo-apps [id] {scroll-margin-top:110px;}
+@media(max-width:700px) {.pd-home-routes {grid-template-columns:minmax(0,1fr)!important;}}
+
+#catalogo-apps{display:block}.pd-catalog-group{margin-bottom:2rem;scroll-margin-top:1rem}.pd-catalog-group h2{font-size:1.3rem;line-height:1.35;margin-bottom:.5rem}.pd-catalog-group>p{color:#475569;line-height:1.5;margin-bottom:1rem}.pd-catalog-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.pd-catalog-cards .card:focus-visible{outline:3px solid #075985;outline-offset:3px}@media(max-width:639px){.pd-catalog-cards{grid-template-columns:1fr}}
+
+#rede-apps{scroll-margin-top:6rem}
+
+/* Keep wide comparison tables readable without widening the whole app. */
+.pd-table-scroll{max-width:100%;overflow-x:auto;overscroll-behavior-x:contain}
+.pd-table-scroll:focus-visible{outline:3px solid #0e7c7b;outline-offset:3px}
+
+/* Orientação prática compartilhada pelos aplicativos. */
+.pd-workflow,.pd-practice{margin:1.5rem 0;padding:1.25rem;border:1px solid #bbd8d1;border-left:4px solid #14665b;border-radius:12px;background:#f3faf8;color:#123d36}
+.pd-workflow dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem;margin:1rem 0}
+.pd-workflow dt{font-weight:700;margin-bottom:.4rem}.pd-workflow dd{margin:0;line-height:1.6}
+.pd-next-links{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;padding-left:1.25rem}
+.pd-next-links a,.pd-practice a{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:3px}
+.pd-practice li{margin:.7rem 0;line-height:1.6}
+@media(max-width:639px){.pd-workflow dl{grid-template-columns:1fr}.pd-workflow,.pd-practice{padding:1rem}}
+
+
+/* Search is scoped to the directory; hidden results must override card display. */
+.pd-catalog-search{max-width:848px;margin:24px auto 0;padding:24px;background:#f0f8f6;border:1px solid #bbd8d1;border-radius:16px;color:#123d36;line-height:1.6;scroll-margin-top:7rem}
+.pd-catalog-search h2{font-size:1.3rem;line-height:1.35;margin-bottom:8px}
+#catalog-search-form{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;gap:16px;align-items:end;margin-top:20px}
+#catalog-search-form label{display:block;font-weight:700;margin-bottom:6px}
+#catalog-search-form input,#catalog-search-form select,#catalog-search-form button{width:100%;min-height:48px;padding:10px 12px;font:inherit;border:1px solid #638681;border-radius:8px;background:#fff;color:#123d36}
+#catalog-search-form input,#catalog-search-form select{min-width:0}
+#catalog-search-form button{cursor:pointer;font-weight:700;background:#075b5c;color:#fff}
+#catalog-search-form button:hover{background:#063f40}
+#app-results,#app-empty{grid-column:1/-1;margin:0}
+#app-results{font-weight:700}
+#catalog-search-form[hidden],#app-empty[hidden],.pd-catalog-group[hidden],.pd-catalog-cards .card[hidden]{display:none!important}
+@media(max-width:880px){.pd-catalog-search{margin:24px 16px 0}}
+@media(max-width:639px){.pd-catalog-search{padding:16px}#catalog-search-form{grid-template-columns:minmax(0,1fr)}}
+@media print{.pd-catalog-search{display:none}.pd-catalog-group[hidden]{display:block!important}.pd-catalog-cards .card[hidden]{display:flex!important}}

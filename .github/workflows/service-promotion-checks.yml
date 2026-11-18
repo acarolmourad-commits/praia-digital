@@ -21,6 +21,7 @@ jobs:
         run: python scripts/build-navigation.py
       - name: Offline responsive browser verification
         run: |
+          node --test tests/test_screenshot.cjs
           npm install --prefix "$RUNNER_TEMP/service-browser" playwright@1.63.0 --no-audit --no-fund
           "$RUNNER_TEMP/service-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
           NODE_PATH="$RUNNER_TEMP/service-browser/node_modules" node tests/service-promotion-browser.cjs

@@ -28,6 +28,7 @@ for prefixo, palavras, contexto in temas_hoje:
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{titulo}</title>
 <meta name="description" content="{titulo}. Conteúdo atualizado para {now}.">
+<meta name="robots" content="noindex, follow">
 <meta name="keywords" content="{tags_html}">
 <style>
 body {{ font-family: Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.7; }}

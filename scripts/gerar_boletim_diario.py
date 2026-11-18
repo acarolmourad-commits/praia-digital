@@ -143,11 +143,11 @@ def build(root=ROOT):
     out = root / 'docs/inteligencia'
     for edition in editions:
         path = PATH + 'boletim-' + edition['date'] + '.html'
-        (root / path.lstrip('/')).write_text(render_edition(root, edition, path, editions[-1]['date']), encoding='utf-8')
-    (out / 'boletim-diario.html').write_text(render_edition(root, editions[-1], PATH + 'boletim-diario.html'), encoding='utf-8')
+        (root / path.lstrip('/')).write_text(render_edition(root, edition, path, editions[-1]['date']), encoding='utf-8', newline='\n')
+    (out / 'boletim-diario.html').write_text(render_edition(root, editions[-1], PATH + 'boletim-diario.html'), encoding='utf-8', newline='\n')
     rows = ''.join(f'<li><a href="boletim-{e["date"]}.html">{human_date(e["date"])}</a> — {len(e["items"])} notícia(s) verificada(s)</li>' for e in reversed(editions))
     body = f'<p class="eyebrow">Memória editorial</p><h1>Arquivo de boletins</h1><p>Edições efetivamente publicadas, sem reconstrução artificial de dias sem boletim.</p><ul>{rows}</ul><h2>Registro legado</h2><p><a href="boletim-2026-07-17.html">17/07/2026 — modelo antigo, não usar como indicador de mercado</a>. Não há arquivo diário completo do período anterior.</p><p><a href="boletim-diario.html">Voltar ao boletim</a> · <a href="feed.xml">RSS gratuito</a></p>'
-    (out / 'arquivo-boletins.html').write_text(page(root, 'Arquivo de boletins', PATH + 'arquivo-boletins.html', body, 'Edições revisadas e registros históricos identificados do Boletim Praia Digital.'), encoding='utf-8')
+    (out / 'arquivo-boletins.html').write_text(page(root, 'Arquivo de boletins', PATH + 'arquivo-boletins.html', body, 'Edições revisadas e registros históricos identificados do Boletim Praia Digital.'), encoding='utf-8', newline='\n')
     rss = ET.Element('rss', version='2.0'); channel = ET.SubElement(rss, 'channel')
     for key, val in [('title', 'Boletim Praia Digital'), ('link', BASE + PATH + 'boletim-diario.html'), ('description', 'Edições revisadas, fontes e contexto. Sem promessa de publicação em tempo real.'), ('language', 'pt-BR'), ('lastBuildDate', format_datetime(max(stamp(modified_at(e)) for e in editions)))]:
         ET.SubElement(channel, key).text = val

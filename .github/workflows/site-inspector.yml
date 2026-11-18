@@ -1,19 +1,58 @@
 name: Site Inspector (3x/dia)
 
 on:
+  pull_request:
+    paths:
+      - 'scripts/site_inspector.py'
+      - 'scripts/link_inventory.py'
+      - 'tests/test_site_inspector.py'
+      - 'tests/test_link_inventory.py'
+      - '.github/workflows/site-inspector.yml'
   schedule:
-    # 8h, 14h e 20h horario de Brasilia (UTC-3)
-    - cron: '0 11,17,23 * * *'
+    # Mesmos 21 horarios/semana (8h, 14h e 20h de Brasilia).
+    - cron: '0 11 * * 1'       # Segunda 8h: internos + amostra HTTP externa
+    - cron: '0 11 * * 0,2-6'   # Demais dias 8h: internos
+    - cron: '0 17,23 * * *'    # Todos os dias 14h e 20h: internos
   workflow_dispatch:
+    inputs:
+      check_external:
+        description: 'Consultar amostra de ate 80 URLs externas'
+        type: boolean
+        default: false
+      publish_issue:
+        description: 'Atualizar issue de achados locais'
+        type: boolean
+        default: true
 
 permissions:
   contents: read
-  issues: write
 
 jobs:
-  inspect:
-    if: ${{ !github.event.repository.fork }}
+  test:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Offline inspector regressions (no HTTP or issue publication)
+        run: |
+          python3 -m unittest discover -s tests -p 'test_site_inspector.py' -v
+          python3 -m unittest discover -s tests -p 'test_link_inventory.py' -v
+  inspect:
+    needs: test
+    if: ${{ github.event_name != 'pull_request' && !github.event.repository.fork }}
+    permissions:
+      contents: read
+      issues: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    concurrency:
+      group: site-inspector
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -22,10 +61,22 @@ jobs:
       - name: Inspecionar paginas e publicar relatorio
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/site_inspector.py
+          # Use o cron de origem; atrasos do Actions nao devem trocar a modalidade.
+          CHECK_EXTERNAL: ${{ (github.event_name == 'schedule' && github.event.schedule == '0 11 * * 1') || (github.event_name == 'workflow_dispatch' && inputs.check_external) }}
+          PUBLISH_ISSUE: ${{ github.event_name != 'workflow_dispatch' || inputs.publish_issue }}
+        run: |
+          args=()
+          if [ "$CHECK_EXTERNAL" = 'true' ]; then
+            args+=(--external)
+          fi
+          if [ "$PUBLISH_ISSUE" != 'true' ]; then
+            args+=(--no-publish)
+          fi
+          python scripts/site_inspector.py "${args[@]}"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: site-inspection-report
           path: site_inspection_report.json
-          if-no-files-found: ignore
+          if-no-files-found: error
+          retention-days: 30

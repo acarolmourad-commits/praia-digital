@@ -5,6 +5,10 @@ from urllib.parse import urlparse
 from difflib import SequenceMatcher
 
 BASE = "."
+if not os.path.isdir(os.path.join(BASE, "blog")):
+    _fallback = os.path.expanduser("~/praia-digital")
+    if os.path.isdir(os.path.join(_fallback, "blog")):
+        BASE = _fallback
 BLOG_DIR = os.path.join(BASE, "blog")
 OUT_PATH = os.path.join(BASE, "docs", "banco-editorial.json")
 

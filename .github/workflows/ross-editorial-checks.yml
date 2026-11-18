@@ -1,0 +1,31 @@
+name: Ross editorial UX checks
+on:
+  pull_request:
+    paths:
+      - 'blog/*ross-heidecke*.html'
+      - 'blog/valorizacao-imovel-depreciacao-construcao.html'
+      - 'assets/css/ross-editorial.css'
+      - 'tests/ross-editorial-browser.cjs'
+      - '.github/workflows/ross-editorial-checks.yml'
+permissions:
+  contents: read
+jobs:
+  editorial:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python3 -m unittest discover -s tests -p 'test_ross_heidecke_articles.py'
+      - name: Responsive and keyboard checks
+        run: |
+          npm install --prefix "$RUNNER_TEMP/ross-browser" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/ross-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          NODE_PATH="$RUNNER_TEMP/ross-browser/node_modules" ROSS_QA_OUTPUT="$RUNNER_TEMP/ross-qa" node tests/ross-editorial-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ross-editorial-visual-evidence
+          path: ${{ runner.temp }}/ross-qa

@@ -12,3 +12,7 @@ python3 -m unittest discover -s tests -p 'test_homepage_content.py' -v
 Keep the PNG committed: social crawlers need a raster URL, not the source SVG. Keep image URLs absolute HTTPS, dimensions/alt synchronized, and change the versioned filename when changing the artwork. Do not replace individual property images or shared fallback assets.
 
 After deployment, check the homepage raw HTML and that the PNG URL responds with HTTP 200 and `image/png`. Existing WhatsApp previews may remain cached; cache refresh timing is outside the site's control.
+
+## IA services social preview
+
+`servicos-ia-v1.png` (1200×630) is the dedicated card for `/servicos-ia.html`. Its editable `servicos-ia-v1.svg` uses the existing Praia Digital identity, typography and service labels; it contains no client claims or third-party photos. Regenerate with `inkscape assets/social/servicos-ia-v1.svg --export-type=png --export-filename=assets/social/servicos-ia-v1.png`.

@@ -2,8 +2,8 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calculadora de Custos de Compra — ITBI, Escritura e Registro | Praia Digital Apps</title>
-<meta name="description" content="Calculadora de ITBI gratuita: calcule o ITBI (2% a 3%), escritura, registro e todas as custas de fechamento na compra de imóvel no litoral de SP. Atualizado 2026.">
+<title>Orçamento de Custos de Compra — Valores Informados | Praia Digital Apps</title>
+<meta name="description" content="Some valores informados de ITBI, escritura, registro, tarifas e outros custos. Orçamento sem alíquotas presumidas ou cobrança automática.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://praia.digital/apps/custo-de-compra/">
 <style>
@@ -16,7 +16,7 @@ label{display:block;font-size:13px;font-weight:600;margin:10px 0 4px}
 input,select{width:100%;padding:10px;border:1px solid #CBD5E1;border-radius:10px;font-size:15px}
 button{margin-top:14px;width:100%;padding:13px;background:#0A3D2E;color:#fff;border:0;border-radius:12px;font-size:16px;font-weight:700;cursor:pointer}
 button:hover{background:#0c5c43}
-.res{display:none;background:#ECFDF5;border:1px solid #10B981;border-radius:12px;padding:16px;margin-top:14px}
+.res[hidden]{display:none}.res{background:#ECFDF5;border:1px solid #10B981;border-radius:12px;padding:16px;margin-top:14px}
 .res p{margin:6px 0;font-size:15px}
 a{color:#0EA5E9}
 table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
@@ -32,115 +32,45 @@ td,th{padding:8px;border-bottom:1px solid #E5E7EB;text-align:left}
     .links{display:grid;gap:10px;margin-top:8px}
     .links a{display:block;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 16px;text-decoration:none;color:#0F172A;font-weight:600}
     .links a span{color:#0EA5E9}
+p{line-height:1.6;margin-top:8px} #erro{color:#991b1b;margin-top:12px} [aria-invalid="true"]{border:2px solid #b91c1c} .res{overflow-wrap:anywhere}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Custos de Compra — ITBI, Escritura e Registro | Praia Digital Apps","url":"https://praia.digital/apps/custo-de-compra/","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0"}}</script>
-<meta property="og:type" content="website"><meta property="og:title" content="Calculadora de Custos de Compra — ITBI, Escritura e Registro | Praia Digital Apps">
-<meta property="og:description" content="Calculadora de ITBI gratuita: calcule o ITBI (2% a 3%), escritura, registro e todas as custas de fechamento na compra de imóvel no litoral de SP. Atualizado 2026."><meta property="og:url" content="https://praia.digital/apps/custo-de-compra/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Orçamento de Custos de Compra — Valores Informados | Praia Digital Apps","url":"https://praia.digital/apps/custo-de-compra/","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0"}}</script>
+<meta property="og:type" content="website"><meta property="og:title" content="Orçamento de Custos de Compra — Valores Informados | Praia Digital Apps">
+<meta property="og:description" content="Some valores informados de ITBI, escritura, registro, tarifas e outros custos. Orçamento sem alíquotas presumidas ou cobrança automática."><meta property="og:url" content="https://praia.digital/apps/custo-de-compra/">
 <meta property="og:image" content="https://praia.digital/img/default-home.jpg">
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quanto custa o 'fechamento' de um imóvel no litoral?","acceptedAnswer":{"@type":"Answer","text":"Some ITBI (2–3%), escritura e registro (~1% cada tabela de emolumentos SP) e tarifa bancária de avaliação (~R$ 3 mil se financiado). Um imóvel de R$ 400 mil costuma ter R$ 14–18 mil de custos totais."}},{"@type":"Question","name":"ITBI é sobre o valor da venda?","acceptedAnswer":{"@type":"Answer","text":"Sobre o maior valor entre o preço de compra e o valor venal de referência do município. Em cidades com venal atualizado (Santos, São Sebastião), a diferença pode ser relevante."}},{"@type":"Question","name":"Tem desconto no ITBI?","acceptedAnswer":{"@type":"Answer","text":"Várias cidades oferecem redução para primeiro imóvel, pagamento à vista ou imóveis na planta. Santos e São Vicente têm programas — pergunte na prefeitura antes de emitir a guia."}},{"@type":"Question","name":"Quem paga a escritura e o registro?","acceptedAnswer":{"@type":"Answer","text":"Por costume de mercado, o comprador paga ITBI, escritura e registro; o vendedor paga o laudo/ITBI de quitação e comissão (salvo negociação). Tudo é negociável no contrato."}}]}
-  </script>
+
 <link rel="stylesheet" href="/css/app-network.css">
 </head>
 <body data-pd-app="custo-de-compra">
 <a class="pd-skip" href="#pd-app-title">Ir para a ferramenta</a>
 
-<header><h1 id="pd-app-title" tabindex="-1">🧾 Calculadora de ITBI e Custos de Compra do Imóvel</h1><p>ITBI, escritura e registro — sem surpresas no fechamento</p></header>
+<header><h1 id="pd-app-title" tabindex="-1">🧾 Orçamento de Custos de Compra</h1><p>Organize custos informados, sem presumir tributos ou tarifas</p></header>
 <nav class="pd-network-nav" aria-label="Navegação da rede de aplicativos"><ul><li><a href="/">Página inicial</a></li><li><a href="/apps/">Todos os aplicativos</a></li><li><a href="/#jornadas-apps">Roteiros de análise</a></li></ul></nav>
 
-<div class="wrap">
-<div class="card">
-  <label for="valor">Valor do imóvel (R$)</label><input id="valor" type="number" value="595000">
-  <label for="cidade">Cidade</label>
-  <select id="cidade">
-    <option value="0.02">Bertioga (ITBI 2%)</option>
-    <option value="0.03">São Sebastião (ITBI 3%)</option>
-    <option value="0.02">Caraguatatuba (ITBI 2%)</option>
-    <option value="0.03">Ubatuba (ITBI 3%)</option>
-    <option value="0.02">Santos (ITBI 2%)</option>
-    <option value="0.02" selected>Guarujá (ITBI 2%)</option>
-    <option value="0.03">Praia Grande (ITBI 3%)</option>
-    <option value="0.02">Mongaguá / Itanhaém / Peruíbe (ITBI 2%)</option>
-    <option value="0.02">São Vicente (ITBI 2%)</option>
-    <option value="0.02">Ilhabela (ITBI 2%)</option>
-  </select>
-  <label><input type="checkbox" id="financ" style="width:auto;display:inline"> Vou financiar (registro do contrato em cartório + tarifa bancária de avaliação)</label>
-  <button onclick="calc()">Calcular custos de fechamento</button>
-  <div class="res" id="res">
-    <p>🏛️ <b>ITBI:</b> <span id="itbi"></span></p>
-    <p>✍️ <b>Escritura pública (tabela SP):</b> <span id="escr"></span></p>
-    <p>📜 <b>Registro do imóvel:</b> <span id="reg"></span></p>
-    <p id="regFinRow" style="display:none">🏦 <b>Registro do financiamento (estimativa):</b> <span id="regFin"></span></p>
-    <p id="tarifaRow" style="display:none">🏦 <b>Tarifa bancária de avaliação do imóvel:</b> <span id="tarifa"></span> <small>(~R$3.000 em 2026, cobrada na contratação)</small></p>
-    <hr>
-    <p style="font-size:17px"><b>💰 Total estimado:</b> <span id="total"></span></p>
-    <p style="font-size:13px;color:#64748B">≈ <span id="pct"></span> do valor do imóvel. Valores estimados — confirme as custas no cartório da cidade.</p>
-  </div>
-</div>
-<div class="card">
-<h2 style="font-size:17px;margin-bottom:10px">🏛️ ITBI por cidade do litoral <span class="tag">set/2026</span></h2>
-<table>
-  <tr><th>Município</th><th>Alíquota típica</th><th>Observações</th></tr>
-  <tr><td>Santos</td><td>2%</td><td>desconto p/ 1º imóvel e pagamento à vista</td></tr>
-  <tr><td>São Vicente</td><td>2%</td><td>isenção parcial em programas municipais</td></tr>
-  <tr><td>Praia Grande</td><td>2%</td><td>base = maior entre venda e venal</td></tr>
-  <tr><td>Guarujá</td><td>3%</td><td>consulte desconto à vista</td></tr>
-  <tr><td>Bertioga</td><td>2%</td><td>Riviera: confira valor venal alto</td></tr>
-  <tr><td>Itanhaém / Mongaguá / Peruíbe</td><td>2%</td><td>prazos curtos após escritura</td></tr>
-  <tr><td>Caraguatatuba</td><td>2%</td><td>guia emitida pela prefeitura</td></tr>
-  <tr><td>São Sebastião</td><td>3%</td><td>atenção ao venal em Maresias/Juquehy</td></tr>
-  <tr><td>Ilhabela</td><td>2%</td><td>pagamento antes do registro</td></tr>
-  <tr><td>Ubatuba</td><td>2%</td><td>confira atualização do venal 2026</td></tr>
-</table>
-<p style="font-size:12px;color:#64748B;margin-top:12px">Alíquotas de referência (set/2026) — cada prefeitura tem regras e descontos próprios; confirma a guia oficial antes do pagamento.</p>
-</div>
-
-  <div class="card faq">
-    <h2 style="font-size:17px;margin-bottom:10px">❓ Perguntas frequentes</h2>
-    <details><summary>Quanto custa o 'fechamento' de um imóvel no litoral?</summary><p>Some ITBI (2–3%), escritura e registro (~1% cada tabela de emolumentos SP) e tarifa bancária de avaliação (~R$ 3 mil se financiado). Um imóvel de R$ 400 mil costuma ter R$ 14–18 mil de custos totais.</p></details>
-    <details><summary>ITBI é sobre o valor da venda?</summary><p>Sobre o maior valor entre o preço de compra e o valor venal de referência do município. Em cidades com venal atualizado (Santos, São Sebastião), a diferença pode ser relevante.</p></details>
-    <details><summary>Tem desconto no ITBI?</summary><p>Várias cidades oferecem redução para primeiro imóvel, pagamento à vista ou imóveis na planta. Santos e São Vicente têm programas — pergunte na prefeitura antes de emitir a guia.</p></details>
-    <details><summary>Quem paga a escritura e o registro?</summary><p>Por costume de mercado, o comprador paga ITBI, escritura e registro; o vendedor paga o laudo/ITBI de quitação e comissão (salvo negociação). Tudo é negociável no contrato.</p></details>
-  </div>
-
-  <div class="card">
-    <h2 style="font-size:17px;margin-bottom:10px">📍 Aprofunde por bairro</h2>
-    <div class="links">
-      <a href="/bairros/"><span>🏙️ Índice de bairros</span> — 123 bairros em 12 cidades do litoral</a>
-      <a href="/bairros/santos/index.html">Santos — Gonzaga, Boqueirão, Pompéia e mais</a>
-      <a href="/bairros/guaruja/index.html">Guarujá — Enseada, Pitangueiras, Astúrias e mais</a>
-      <a href="/bairros/sao-sebastiao/index.html">São Sebastião — Maresias, Juquehy, Barra do Sahy e mais</a>
-    </div>
-  </div>
-
-<div class="card"><h2>📌 Bom saber</h2>
-<p style="font-size:14px;margin-top:6px">O ITBI é cobrado sobre o maior valor entre o de compra e o venal de referência. Algumas cidades oferecem desconto para primeiro imóvel ou pagamento à vista. Já sabe quanto vale o imóvel? Use o <a href="/apps/valor-imovel/">estimador de valor</a>.</p></div>
-</div>
-<script>
-const fmt=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
-function tabela(v){ // aproximação das tabelas de emolumentos SP
-  if(v<=0) return 0;
-  return Math.min(Math.max(v*0.008, 500), 9000);
-}
-function calc(){
-  const V=parseFloat(document.getElementById('valor').value)||0;
-  const aliq=parseFloat(document.getElementById('cidade').value);
-  if(V<=0){alert('Informe o valor do imóvel.');return;}
-  const itbi=V*aliq, escr=tabela(V), reg=tabela(V);
-  const fin=document.getElementById('financ').checked;
-  const regFin= fin ? tabela(V*0.8) : 0;
-  const tarifa= fin ? 3000 : 0;
-  const tot=itbi+escr+reg+regFin+tarifa;
-  document.getElementById('itbi').textContent=fmt(itbi);
-  document.getElementById('escr').textContent=fmt(escr);
-  document.getElementById('reg').textContent=fmt(reg);
-  if(fin){document.getElementById('regFinRow').style.display='block';document.getElementById('regFin').textContent=fmt(regFin);}else{document.getElementById('regFinRow').style.display='none';}
-  if(fin){document.getElementById('tarifaRow').style.display='block';document.getElementById('tarifa').textContent=fmt(tarifa);}else{document.getElementById('tarifaRow').style.display='none';}
-  document.getElementById('total').textContent=fmt(tot);
-  document.getElementById('pct').textContent=(tot/V*100).toFixed(1)+'%';
-  document.getElementById('res').style.display='block';
-}
-</script>
+<main class="wrap"><div class="card">
+<p>Este orçamento apenas soma os valores que você informar. Não calcula tributos, aplica tabelas de cartório ou presume despesas por haver financiamento. Consulte os documentos e orçamentos da sua operação.</p>
+<label for="valor">Preço de referência do imóvel (R$), apenas para calcular a proporção</label><input id="valor" type="number" min="0.01" max="1000000000" step="0.01">
+<label for="itbi">ITBI informado na guia ou no seu orçamento (R$)</label><input id="itbi" type="number" min="0" max="1000000000" step="0.01">
+<label for="escritura">Escritura ou instrumento: custo informado (R$)</label><input id="escritura" type="number" min="0" max="1000000000" step="0.01">
+<label for="registro">Registro: total informado, sem duplicar atos ou contrato (R$)</label><input id="registro" type="number" min="0" max="1000000000" step="0.01">
+<label for="banco">Tarifas e avaliação bancárias informadas (R$)</label><input id="banco" type="number" min="0" max="1000000000" step="0.01">
+<label for="outros">Outros custos informados, ainda não incluídos acima (R$)</label><input id="outros" type="number" min="0" max="1000000000" step="0.01">
+<p>Preencha todos os campos. Informe zero explicitamente para um item sem custo no seu orçamento; isso não declara isenção ou dispensa legal. Se ainda não conhece um valor, deixe-o pendente e obtenha a informação antes de concluir. Não trate valor desconhecido como zero.</p>
+<p>Limites técnicos: preço de referência de R$ 0,01 a R$ 1 bilhão; cada custo de zero a R$ 1 bilhão. Não são limites de cobrança. Nenhum item é considerado obrigatório ou calculado automaticamente pela ferramenta.</p>
+<button type="button" id="calcular">Somar custos informados</button><p id="erro" role="alert" hidden></p><noscript><p>Ative JavaScript para calcular. Nenhum resultado é produzido sem ele.</p></noscript>
+<div class="res" id="res" aria-live="polite" hidden>
+<p><strong>Soma dos custos informados:</strong> <span id="total"></span></p>
+<p><strong>Proporção sobre o preço de referência:</strong> <span id="pct"></span></p>
+<p>O total não inclui o preço do imóvel nem a entrada do financiamento. Não representa o total de aquisição, uma guia tributária ou garantia de que todos os custos estejam incluídos.</p>
+</div></div><div class="card"><h2>Como conferir o orçamento</h2>
+<p>Soma = ITBI informado + escritura/instrumento informado + registro informado + tarifas bancárias informadas + outros custos informados. Proporção = soma ÷ preço de referência × 100. O preço não é tratado como base tributária. Valores são somados sem arredondamento intermediário e exibidos em reais com centavos.</p>
+<p>Registre a fonte e a data de cada valor e se ele é estimado ou confirmado. Confira o detalhamento dos orçamentos para não contar duas vezes serviços já incluídos em outro item. Certidões e outras despesas podem entrar em “Outros custos” se fizerem parte do seu orçamento e não estiverem contabilizadas acima.</p>
+<p>Esta página não determina alíquotas, bases de cálculo, descontos, isenções, responsabilidade pelo pagamento, momento de recolhimento ou necessidade de atos. Confira essas questões com os responsáveis pela sua operação e as fontes oficiais aplicáveis. Não há cobrança automática de escritura, registro adicional ou tarifa em operações financiadas.</p>
+</div><div class="card"><h2>Continue seu planejamento</h2>
+<p>Depois de conferir os custos, use o <a href="/apps/planejador-entrada/">planejador de entrada</a> e o <a href="/apps/calculadora-financiamento/">simulador de financiamento</a>. O <a href="/apps/valor-imovel/">estimador de valor</a> não substitui a documentação da operação.</p>
+<p>Explore também o <a href="/bairros/">índice de bairros</a>, <a href="/bairros/santos/index.html">Santos</a>, <a href="/bairros/guaruja/index.html">Guarujá</a> e <a href="/bairros/sao-sebastiao/index.html">São Sebastião</a>.</p>
+</div></main>
+<script src="/apps/custo-de-compra/calculadora.js"></script>
 
 <!-- Praia Digital Apps: rede de interlinks -->
 <section style="max-width:760px;margin:32px auto 0;padding:0 16px 32px">
@@ -156,33 +86,10 @@ function calc(){
 </section>
 
 <script defer src="/js/shared.js"></script><script defer src="/assets/js/related-ads.js"></script>
-<section id="faq" style="max-width:720px;margin:32px auto 0;padding:0 16px;">
-<h2>Perguntas frequentes sobre ITBI e custos de compra</h2>
-<h3>Quanto é o ITBI no litoral de São Paulo em 2026?</h3>
-<p>A alíquota varia por município: Santos, Guarujá, Praia Grande, São Vicente e Bertioga praticam em geral <strong>2% a 3%</strong> sobre o valor de avaliação do imóvel (ou o valor da transação, prevalecendo o maior). Caraguatatuba, por exemplo, adota 2% e oferece desconto para pagamento à vista.</p>
-<h3>O ITBI incide sobre o valor de venda ou o valor venal?</h3>
-<p>Prevalece o <strong>maior</strong> entre o valor da transação e o valor de referência do município. Por isso a calculadora usa o valor informado como base e alerta para conferir o valor de avaliação na prefeitura.</p>
-<h3>Quais são os outros custos de fechamento além do ITBI?</h3>
-<ul>
-<li><strong>Escritura pública:</strong> tabela do cartório de notas do estado de SP (em geral 0,4% a 1% do valor).</li>
-<li><strong>Registro no Cartório de Registro de Imóveis:</strong> em geral 0,3% a 0,5%, com laudêmio adicional em terrenos de marinha (5% sobre o valor atualizado em cidades com áreas da União).</li>
-<li><strong>Certidões e emolumentos:</strong> R$ 200 a R$ 600, conforme quantidade de certidões.</li>
-</ul>
-<h3>Terreno de marinha muda o custo?</h3>
-<p>Sim. Boa parte do litoral paulista tem áreas de marinha: além do registro, há <strong>laudêmio (5%)</strong> e taxa de ocupação ou foro anual à União. Veja nosso guia: <a href="/terrenos-marinha-taxa-aforamento-litoral-sp-2026.html">Terrenos de marinha e taxa de aforamento no litoral de SP — 2026</a>.</p>
-<h3>Quando devo pagar o ITBI?</h3>
-<p>Antes da escritura ou do registro — sem a guia quitada, o cartório não registra a transferência. Em financiamento, o banco normalmente exige a guia para liberação final.</p>
-</section>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"Quanto é o ITBI no litoral de São Paulo em 2026?","acceptedAnswer":{"@type":"Answer","text":"A alíquota varia por município, em geral 2% a 3% sobre o valor de avaliação do imóvel ou o valor da transação, prevalecendo o maior."}},
-{"@type":"Question","name":"O ITBI incide sobre o valor de venda ou o valor venal?","acceptedAnswer":{"@type":"Answer","text":"Prevalece o maior entre o valor da transação e o valor de referência do município."}},
-{"@type":"Question","name":"Quais são os outros custos de fechamento além do ITBI?","acceptedAnswer":{"@type":"Answer","text":"Escritura pública (0,4% a 1%), registro no cartório de imóveis (0,3% a 0,5%), laudêmio de 5% em terrenos de marinha e certidões de R$ 200 a R$ 600."}},
-{"@type":"Question","name":"Quando devo pagar o ITBI?","acceptedAnswer":{"@type":"Answer","text":"Antes da escritura ou do registro — sem a guia quitada o cartório não registra a transferência."}}
-]}
-</script>
+
+
 
 <section class="pd-guide" aria-labelledby="pd-guide-title"><h2 id="pd-guide-title">Como usar esta análise com segurança</h2><ol><li>Consulte a legislação municipal vigente de ITBI e verifique base de cálculo e possíveis isenções.</li><li>Solicite orçamento de escritura, registro, avaliação bancária e demais despesas aplicáveis.</li><li>Reserve recursos para custos não incluídos no simulador; o resultado não é uma guia tributária.</li></ol><p class="pd-network-note">As premissas, taxas e tabelas preexistentes precisam de conferência de fonte e data. Este conteúdo não atualiza nem valida essas premissas. Simulações educativas não são propostas bancárias, garantia de retorno ou orientação jurídica e tributária individual.</p></section>
-<section class="pd-network" aria-labelledby="pd-network-title"><h2 id="pd-network-title">Continue sua análise</h2><p>Combine ferramentas para comparar cenários e organizar decisões.</p><ul class="pd-network-grid"><li><a href="/apps/alugar-ou-comprar/">Alugar ou comprar</a></li><li><a href="/apps/calculadora-consorcio/">Consórcio</a></li><li><a href="/apps/calculadora-financiamento/">Financiamento</a></li><li><a href="/apps/calculadora-precificacao-shopee/">Precificação Shopee</a></li><li><a href="/apps/calculadora-valorizacao/">Valorização</a></li><li><a href="/apps/checklist-vistoria/">Checklist de vistoria</a></li><li><a href="/apps/comparador-cidades/">Comparar cidades</a></li><li><a href="/apps/planejador-entrada/">Planejar entrada</a></li><li><a href="/apps/renda-para-financiar/">Renda para financiar</a></li><li><a href="/apps/simulador-roi-temporada/">ROI de temporada</a></li><li><a href="/apps/temporada-ou-anual/">Temporada ou anual</a></li><li><a href="/apps/valor-imovel/">Estimar valor do imóvel</a></li></ul></section>
+<section class="pd-network" aria-labelledby="pd-network-title"><h2 id="pd-network-title">Continue com o próximo aplicativo</h2><p class="pd-network-intro">Use uma ficha conferida, anote suas premissas e escolha o recurso da próxima etapa. Você pode voltar ao catálogo a qualquer momento.</p><div class="pd-workflow" aria-labelledby="pd-workflow-title"><h3 id="pd-workflow-title">Use este resultado na sua rotina</h3><dl><div><dt>Antes de começar</dt><dd>Separe o valor da compra e consulte tributos e emolumentos aplicáveis ao município.</dd></div><div><dt>O que registrar</dt><dd>Registre a fonte e a data de cada custo, distinguindo estimativa de valor confirmado.</dd></div></dl><p><strong>Continue sua análise</strong></p><ul class="pd-next-links"><li><a href="/apps/planejador-entrada/">Planejador de entrada</a></li><li><a href="/apps/checklist-vistoria/">Checklist de vistoria</a></li></ul></div><details><summary>Explorar a rede completa de aplicativos</summary><div class="pd-network-group"><h3>Planejar a compra</h3><ul class="pd-network-grid"><li><a href="/apps/alugar-ou-comprar/"><strong>Alugar ou comprar</strong><span>Compare cenários com os custos e o prazo que você informar.</span></a></li><li><a href="/apps/calculadora-financiamento/"><strong>Financiamento SAC e Price</strong><span>Compare sistemas de amortização usando as mesmas premissas.</span></a></li><li><a href="/apps/calculadora-consorcio/"><strong>Consórcio</strong><span>Organize parcelas e lance; a contemplação não tem data garantida.</span></a></li><li><a href="/apps/planejador-entrada/"><strong>Planejador de entrada</strong><span>Defina a meta e simule quanto reservar por mês.</span></a></li><li><a href="/apps/renda-para-financiar/"><strong>Renda para financiar</strong><span>Estime o comprometimento de renda; a aprovação depende do banco.</span></a></li></ul></div><div class="pd-network-group"><h3>Comparar cenários</h3><ul class="pd-network-grid"><li><a href="/apps/comparador-cidades/"><strong>Comparador de cidades</strong><span>Compare destinos pelo perfil escolhido e confira as fontes.</span></a></li><li><a href="/apps/valor-imovel/"><strong>Valor do imóvel</strong><span>Explore uma estimativa e confira referências antes de decidir.</span></a></li><li><a href="/apps/calculadora-valorizacao/"><strong>Valorização projetada</strong><span>Veja o efeito das hipóteses de valorização ao longo do tempo.</span></a></li><li><a href="/apps/simulador-roi-temporada/"><strong>ROI de temporada</strong><span>Simule receita, despesas e retorno com suas premissas.</span></a></li><li><a href="/apps/temporada-ou-anual/"><strong>Temporada ou aluguel anual</strong><span>Compare os dois modelos com custos e ocupação informados.</span></a></li></ul></div><div class="pd-network-group"><h3>Preparar e revisar anúncios</h3><ul class="pd-network-grid"><li><a href="/apps/checklist-vistoria/"><strong>Checklist de vistoria</strong><span>Organize observações e pendências para a revisão do imóvel.</span></a></li><li><a href="/apps/oficina-ia-imobiliaria/"><strong>Oficina de IA</strong><span>Monte um briefing, confira lacunas e prepare modelos de e-mail.</span></a></li><li><a href="/apps/revisor-anuncios/"><strong>Revisor de anúncios</strong><span>Compare duas versões com uma ficha conferida e encontre divergências.</span></a></li><li><a href="/apps/relatorio-imovel/"><strong>Relatório do imóvel</strong><span>Reúna fontes, informações e próximos passos; imprima ou salve em PDF.</span></a></li></ul></div><div class="pd-network-group"><h3>Organizar vendas em marketplaces</h3><ul class="pd-network-grid"><li><a href="/apps/calculadora-precificacao-shopee/"><strong>Precificação Shopee e TikTok Shop</strong><span>Confira taxas aplicáveis e estime sua margem com os custos informados.</span></a></li></ul></div></details><p><a href="/apps/guia-de-uso.html">Guia prático e checklists</a> · <a href="/apps/">Catálogo de aplicativos</a> · <a href="/#rede-apps">Roteiros na página inicial</a> · <a href="/servicos.html">Apoio profissional</a></p><p class="pd-network-note">Os links não transferem dados automaticamente. Confira fontes, datas, custos e limitações antes de decidir. Simulações não são laudos, aprovação de crédito nem garantia de retorno.</p></section>
 </body>
 </html>

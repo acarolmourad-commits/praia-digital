@@ -5,7 +5,7 @@
       "name": "Airbnb Product Releases (oficial)",
       "url": "https://news.airbnb.com/product-releases/",
       "status": 200,
-      "checked_at": "2026-11-12T11:08:18+00:00",
+      "checked_at": "2026-11-18T11:41:09+00:00",
       "seen": {
         "https://news.airbnb.com/product-releases/airbnb-2026-summer-release": "Airbnb 2026 Summer Release",
         "https://news.airbnb.com/product-releases/airbnb-2025-winter-release": "Airbnb 2025 Winter Release",
@@ -25,7 +25,7 @@
       "name": "Airbnb Newsroom (oficial)",
       "url": "https://news.airbnb.com/",
       "status": 200,
-      "checked_at": "2026-11-12T11:08:18+00:00",
+      "checked_at": "2026-11-18T11:41:09+00:00",
       "seen": {
         "https://news.airbnb.com/gen-z-is-driving-a-45-jump-in-halloween-weekend-searches": "Gen Z is driving a 45% jump in Halloween weekend searches",
         "https://news.airbnb.com/airbnb-org-hurricane-isaias": "Airbnb.org offers emergency housing to people displaced by Hurricane Isaias",
@@ -53,15 +53,18 @@
         "https://news.airbnb.com/every-home-booked-on-airbnb-helps-house-people-in-crisis": "Starting today, every home booked on Airbnb will help house people in crisis",
         "https://news.airbnb.com/airbnb-q3-2026-financial-results": "Airbnb Q3 2026 Financial Results",
         "https://news.airbnb.com/co-founder-and-ceo-brian-chesky-donates-historic-100m-gift-to-sf-parks": "Co-Founder and CEO Brian Chesky donates historic $100M gift to SF Parks",
-        "https://news.airbnb.com/gen-z-travelers-drive-nearly-half-of-searches-for-miami-during-art-basel-miami-beach": "Gen Z Travelers Drive Nearly Half Of Searches For Miami During Art Basel Miami Beach"
+        "https://news.airbnb.com/gen-z-travelers-drive-nearly-half-of-searches-for-miami-during-art-basel-miami-beach": "Gen Z Travelers Drive Nearly Half Of Searches For Miami During Art Basel Miami Beach",
+        "https://news.airbnb.com/2026-winter-travel-trends-revealed": "2026 Winter Travel Trends Revealed",
+        "https://news.airbnb.com/airbnb-housing-innovation-prize": "Applications open for $1M Airbnb Housing Innovation Prize to help scale breakthroughs in homebuilding and housing development",
+        "https://news.airbnb.com/from-nochebuena-to-dia-de-reyes-airbnb-celebrates-us-latino-traditions": "From Nochebuena to Día de Reyes: Airbnb celebrates US Latino traditions"
       },
-      "hash": "942ed72ad48a2dde0dfe164e56034f56dc9e8e98c4fea2a174e4e4ee2677127a"
+      "hash": "34d3397c54469fddd967fad56ddd6e0360128caf023af8d68f72cbed70253791"
     },
     "airbnb-resources": {
       "name": "Airbnb Resource Center - Anfitrioes (oficial)",
       "url": "https://www.airbnb.com/resources/hosting-homes",
       "status": 200,
-      "checked_at": "2026-11-12T11:08:18+00:00",
+      "checked_at": "2026-11-18T11:41:09+00:00",
       "seen": {
         "https://www.airbnb.com/resources/hosting-homes/a/important-changes-to-house-rules-21": "Important changes to house rules",
         "https://www.airbnb.com/resources/hosting-homes/a/introducing-the-all-new-community-center-773": "The all-new Community Center",
@@ -97,16 +100,16 @@
       "name": "Booking Partner Hub (oficial)",
       "url": "https://partner.booking.com/en-us",
       "status": 202,
-      "checked_at": "2026-11-12T11:08:18+00:00",
+      "checked_at": "2026-11-18T11:41:09+00:00",
       "seen": {},
-      "hash": null,
+      "hash": "2d4bbe3a9d1ffc25e22573a84149a7e72e9ff6c7b9287782090978cdee2f961a",
       "unavailable": true
     },
     "booking-join": {
       "name": "Booking - pagina oficial para parceiros",
       "url": "https://join.booking.com/",
       "status": 200,
-      "checked_at": "2026-11-12T11:08:18+00:00",
+      "checked_at": "2026-11-18T11:41:09+00:00",
       "hash": "e822bcad622223087f8e74b3b569b4ab86c4b1c785c51ef1eb4eec6dd9f2ecb4",
       "seen": {}
     },
@@ -114,12 +117,12 @@
       "name": "Booking Newsroom (oficial)",
       "url": "https://news.booking.com/",
       "status": 200,
-      "checked_at": "2026-11-12T11:08:18+00:00",
+      "checked_at": "2026-11-18T11:41:09+00:00",
       "seen": {
         "https://news.booking.com/bookingcoms-how-india-travels-2026-explores-the-rise-of-alternative-accommodations": "Booking.com’s ‘How India Travels 2026’ Explores the Rise of Alternative Accommodations",
         "https://news.booking.com/how-will-group-budgets-personalized-wellness--recovery-maxxing-shape-2027-guest-experiences": "How will Group Budgets, Personalized Wellness & ‘Recovery-Maxxing’ shape 2027 Guest Experiences?",
         "https://news.booking.com/bookingcom-2027-travel-predictions-reveal-the-ultimate-travel-flex": "Booking.com’s 2027 Travel Predictions Reveal the Ultimate Travel Flex: Going Off-Script",
-        "https://news.booking.com/bookingcom-uncovers-trending-destinations-for-2027": "Booking.com Uncovers Trending Destinations for 2027",
+        "https://news.booking.com/bookingcom-uncovers-trending-destinations-for-2027": "Booking.com Uncovers Trending Destinations for 2027 October 14 , 2026 | 10:01 AM Europe/Amsterdam Booking.com’s Travel Predictions 2027 highlights the destinations travelers are most likely to head to next year. The insights spotlight …",
         "https://news.booking.com/worth-every-dollar-bookingcom-reveals-travelers-prioritize-trips-ahead-of-other-day-to-day-expenses": "Worth Every Dollar: Booking.com Reveals Travelers Prioritize Trips Ahead of Other Day-to-Day Expenses August 27 , 2026 | 18:50 PM Europe/Amsterdam Today Booking.com released new research showing that Americans who regularly travel see it as an investment in their quality of …",
         "https://news.booking.com/travel-together-stay-together-bookingcom-invites-travelers-to-test-compatibility-through-curated-trips---turbulence-tests---at-partner-hotels-across-the-us": "Travel Together, Stay Together? Booking.com Invites Travelers to Test Compatibility Through Curated Trips - \"Turbulence Tests” - at Partner Hotels Across the U.S. September 11 , 2026 | 14:00 PM Europe/Amsterdam Fall is almost here, but before you call it quits on your summer fling, Booking.com has one more trip in mind: a …",
         "https://news.booking.com/bookingcom-travel-happiness-index-apac-travellers-remain-resilient-intentional-and-joy-led-amid-uncertainty": "Booking.com Travel Happiness Index: APAC travellers remain resilient, intentional and joy-led amid uncertainty July 29 , 2026 | 09:00 AM Europe/Amsterdam Inaugural research across 10 APAC markets shows travel remains a powerful source of joy, reset and connection - even as travellers adapt to …",
@@ -130,9 +133,10 @@
         "https://news.booking.com/the-great-hot-tub-hunt-bookingcom-reveals-travelers-most-wanted-amenity": "The Great Hot Tub Hunt: Booking.com Reveals Travelers’ Most-Wanted Amenity November 04 , 2026 | 14:16 PM Europe/Amsterdam Hot tubs have become the most-searched amenity on Booking.com’s Smart Filter feature globally, with searches up 18%* year-on-year. To inspire travelers and make it even easier to find their perfect stay, Booking.com is spotlighting five … Read more",
         "https://news.booking.com/remarkable-hidden-unesco-sites-just-waiting-to-be-explored": "Remarkable UNESCO Sites Just Waiting to be Explored October 30 , 2026 | 09:29 AM Europe/Amsterdam Booking.com has curated a list of lesser-known UNESCO World Heritage Sites for travellers looking to explore cultural and natural landmarks beyond the crowds. Discover destinations in Albania, Laos, the United States, Uruguay and South Korea, … Read more",
         "https://news.booking.com/dark-sky-destinations-for-a-halloween-escape": "Dark Sky Destinations for a Halloween Escape October 02 , 2026 | 14:42 PM Europe/Amsterdam Booking.com highlights five dark sky destinations for travelers looking for a memorable Halloween escape under the stars. From New Zealand to Utah, uncover where to go, what to do and where to stay for an atmospheric night-sky trip. Read more",
-        "https://news.booking.com/travel-enabled-by-bookingcom-supported-au47-billion-in-economic-activity-across-australia-in-2025": "Travel Enabled by Booking.com Supported AU$47 Billion in Economic Activity Across Australia in 2025"
+        "https://news.booking.com/travel-enabled-by-bookingcom-supported-au47-billion-in-economic-activity-across-australia-in-2025": "Travel Enabled by Booking.com Supported AU$47 Billion in Economic Activity Across Australia in 2025",
+        "https://news.booking.com/no-place-like-someone-elses-home-for-christmas": "Booking.com Research Reveals There's No Place Like (Someone Else's) Home for Christmas"
       },
-      "hash": "d868e07f5fd8eefb9b2c8f3e6ed7befe702433994e299b2c8bfe7e2b95eaf253"
+      "hash": "621cfed5533ec2f715dde4bc3166d6046c51f30b3a767b8bfbd914085dfae0ad"
     }
   },
   "articles": [
@@ -197,6 +201,34 @@
       "platform": "Booking.com",
       "title": "Link detectado Booking.com: Travel Enabled by Booking.com Supported AU$47 Billion in Economic Activity Across Australia in 2025",
       "file": "novidades-20261112-110818-booking-news.html",
+      "source": "https://news.booking.com/"
+    },
+    {
+      "date": "2026-11-12 21:50 UTC",
+      "platform": "Airbnb",
+      "title": "Link detectado Airbnb: 2026 Winter Travel Trends Revealed",
+      "file": "novidades-20261112-215045-airbnb-news.html",
+      "source": "https://news.airbnb.com/"
+    },
+    {
+      "date": "2026-11-17 11:51 UTC",
+      "platform": "Airbnb",
+      "title": "Link detectado Airbnb: Applications open for $1M Airbnb Housing Innovation Prize to help scale breakthroughs in homebuilding and housing development",
+      "file": "novidades-20261117-115101-airbnb-news.html",
+      "source": "https://news.airbnb.com/"
+    },
+    {
+      "date": "2026-11-17 22:52 UTC",
+      "platform": "Airbnb",
+      "title": "Link detectado Airbnb: From Nochebuena to Día de Reyes: Airbnb celebrates US Latino traditions",
+      "file": "novidades-20261117-225229-airbnb-news.html",
+      "source": "https://news.airbnb.com/"
+    },
+    {
+      "date": "2026-11-18 11:41 UTC",
+      "platform": "Booking.com",
+      "title": "Link detectado Booking.com: Booking.com Research Reveals There's No Place Like (Someone Else's) Home for Christmas",
+      "file": "novidades-20261118-114109-booking-news.html",
       "source": "https://news.booking.com/"
     }
   ]

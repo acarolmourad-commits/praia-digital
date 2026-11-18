@@ -1,0 +1,32 @@
+name: Kitnets listing
+on:
+  pull_request:
+    paths:
+      - 'imoveis/residencial-4-kitnets-864m2.html'
+      - 'assets/residencial-4-kitnets-864m2/**'
+      - 'tests/kitnets-listing-browser.cjs'
+      - '.github/workflows/kitnets-listing-checks.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  listing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Offline listing browser checks
+        env:
+          KITNETS_QA_OUTPUT: ${{ runner.temp }}/kitnets-listing-qa
+        run: |
+          npm install --prefix "$RUNNER_TEMP/kitnets-browser" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/kitnets-browser/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          NODE_PATH="$RUNNER_TEMP/kitnets-browser/node_modules" node tests/kitnets-listing-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: kitnets-listing-evidence
+          path: ${{ runner.temp }}/kitnets-listing-qa

@@ -1,7 +1,10 @@
 import json
 from pathlib import Path
 
-base = Path('C:/Users/Carolina/praia-digital/litoral-prime-imoveis')
+base = Path(__file__).resolve().parents[1]
+import sys
+sys.path.insert(0, str(base.parent / 'scripts'))
+from preserve_reviewed_indexing import preserve
 imoveis_dir = base / 'imoveis'
 imoveis_dir.mkdir(parents=True, exist_ok=True)
 
@@ -119,7 +122,7 @@ for p in properties:
         type=p['type'],
         tags=', '.join(p.get('tags', []))
     )
-    path.write_text(html, encoding='utf-8')
+    path.write_text(preserve(html, path), encoding='utf-8')
     created += 1
 
 print('Landing pages criadas:', created)
