@@ -1,5 +1,14 @@
 # Estoque Vivo — Praia Digital
 
+## Laboratório de avaliação
+
+O diretório `ia/marketplaces/piloto/` contém uma demonstração independente,
+com dados fictícios, critérios de sucesso e relatório local. Consulte
+`ia/marketplaces/piloto/especificacao.md` para o roteiro e a passagem para
+homologação. Os testes desse modelo didático não substituem os testes do
+Worker, de concorrência, de acesso ou de notificações em aparelhos reais.
+O laboratório não acessa o estoque de produção.
+
 Versão piloto 1.2.0 em https://estoque.praia.digital/. Fonte do painel e API, com um Durable Object SQLite por espaço de marca. Não depende de dados em localStorage.
 
 ## Escopo entregue
