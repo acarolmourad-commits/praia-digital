@@ -177,4 +177,18 @@ class AppCatalogKeyboard(unittest.TestCase):
             href=a.get('href','')
             if t=='a' and href.startswith('#'):self.assertIn(href[1:],ids)
 
+class HomepageSeasonalSpotlight(unittest.TestCase):
+    def test_black_friday_is_editorial_and_points_to_existing_page(self):
+        html=(ROOT/'index.html').read_text()
+        block=re.search(r'<section id="especial-black-friday".*?</section>',html,re.S).group(0)
+        self.assertEqual(html.count('id="especial-black-friday"'),1)
+        self.assertIn('aria-labelledby="black-friday-title"',block)
+        self.assertIn('id="black-friday-title"',block)
+        self.assertIn('href="/compras/black-friday.html"',block)
+        self.assertTrue((ROOT/'compras/black-friday.html').is_file())
+        self.assertIn('não descontos confirmados',block)
+        self.assertIn('links de afiliados',block)
+        self.assertIn('podemos receber comissão por compras qualificadas',block)
+        self.assertNotRegex(block,r'R\$|\d+%|cupom|menor preço')
+
 if __name__=='__main__': unittest.main()
