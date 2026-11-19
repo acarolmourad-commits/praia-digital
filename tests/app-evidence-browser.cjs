@@ -78,6 +78,20 @@ const deadline = setTimeout(() => {
         await page.goto('https://praia.digital/apps/guia-de-uso.html#vender');
         const pilotLink = page.locator('#vender a[href="/ia/marketplaces/piloto/"]');
         assert.equal(await pilotLink.count(), 1);
+        // Fragment navigation scrolls smoothly. Wait on Node-side geometry before
+        // Playwright's click stability check, including with page JavaScript disabled.
+        await pilotLink.scrollIntoViewIfNeeded();
+        let lastPilotBox = null;
+        let stablePilotSamples = 0;
+        const pilotDeadline = Date.now() + 5000;
+        while (stablePilotSamples < 3 && Date.now() < pilotDeadline) {
+          const current = await pilotLink.boundingBox();
+          assert.ok(current, 'Pilot link must be visible in layout');
+          stablePilotSamples = lastPilotBox && ['x', 'y', 'width', 'height'].every(key => Math.abs(current[key] - lastPilotBox[key]) < 0.5) ? stablePilotSamples + 1 : 0;
+          lastPilotBox = current;
+          await new Promise(resolve => setTimeout(resolve, 100));
+        }
+        assert.equal(stablePilotSamples, 3, 'Pilot link must stabilize before click');
         await pilotLink.click();
         await page.waitForURL('**/ia/marketplaces/piloto/');
         await page.locator('a[href="/apps/guia-de-uso.html#vender"]').click();
