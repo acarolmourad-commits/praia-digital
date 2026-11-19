@@ -191,4 +191,20 @@ class HomepageSeasonalSpotlight(unittest.TestCase):
         self.assertIn('podemos receber comissão por compras qualificadas',block)
         self.assertNotRegex(block,r'R\$|\d+%|cupom|menor preço')
 
+class PilotDiscovery(unittest.TestCase):
+    def test_pilot_links_are_explicit_simulation_not_an_extra_app(self):
+        home=(ROOT/'index.html').read_text()
+        catalog=(ROOT/'apps/index.html').read_text()
+        home_block=re.search(r'<aside class="pd-practice".*?</aside>',home,re.S).group()
+        catalog_block=re.search(r'<nav class="pd-catalog-cards" aria-label="Outros recursos">.*?</nav>',catalog,re.S).group()
+        for block in (home_block,catalog_block):
+            self.assertIn('href="/ia/marketplaces/piloto/"',block)
+            self.assertIn('Laboratório Estoque Vivo',block)
+            self.assertIn('produtos fictícios',block)
+            self.assertIn('sem conexão com lojas ou estoque real',block.lower())
+        groups=re.findall(r'<section class="pd-catalog-group".*?</section>',catalog,re.S)
+        self.assertEqual(sum(len(re.findall(r'class="card"',g)) for g in groups),16)
+        self.assertNotIn('/ia/marketplaces/piloto/', ''.join(groups))
+        self.assertTrue((ROOT/'ia/marketplaces/piloto/index.html').is_file())
+
 if __name__=='__main__': unittest.main()

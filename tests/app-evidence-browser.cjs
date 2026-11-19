@@ -9,6 +9,12 @@ const guide = '/guias/usar-apps-com-evidencias.html';
 const study = '/cases/rede-aplicativos-praia-digital.html';
 const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
 
+// Node-side deadline also covers page.evaluate and disabled page timers.
+let phase = 'launch';
+const deadline = setTimeout(() => {
+  console.error('Browser evidence exceeded 5 minutes at: ' + phase);
+  process.exit(1);
+}, 300000);
 
 (async () => {
   fs.mkdirSync(output, { recursive: true });
@@ -28,7 +34,11 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
           return route.fulfill({ body: fs.readFileSync(file), contentType: types[path.extname(file)] || 'application/octet-stream' });
         });
         const page = await context.newPage();
+        context.setDefaultTimeout(15000);
+        context.setDefaultNavigationTimeout(15000);
         for (const target of [guide, study]) {
+          phase = `${width}px js=${javaScriptEnabled} document ${target}`;
+          console.log(phase);
           const errors = [];
           const onError = error => errors.push(error.message);
           page.on('pageerror', onError);
@@ -63,6 +73,43 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
           assert.deepEqual(errors, []);
           page.off('pageerror', onError);
         }
+        // Discovery links are complementary, not a seventeenth filtered app.
+        for (const source of ['/', '/apps/']) {
+          phase = `${width}px js=${javaScriptEnabled} discovery ${source}`;
+          console.log(phase);
+          await page.goto('https://praia.digital' + source);
+          const link = page.locator('a[href="/ia/marketplaces/piloto/"]');
+          assert.equal(await link.count(), 1);
+          assert.match(await link.innerText(), /Laboratório Estoque Vivo/);
+          const block = source === '/' ? page.locator('aside[aria-labelledby="guia-apps-home"]') : link;
+          assert.match(await block.innerText(), /produtos fictícios/);
+          assert.match((await block.innerText()).toLowerCase(), /sem conexão com lojas ou estoque real/);
+          if (source === '/apps/') assert.equal(await page.locator('.pd-catalog-group .card').count(), 16);
+          await link.scrollIntoViewIfNeeded();
+          // Poll layout from Node: page animation callbacks do not run with JS disabled.
+          phase += ' stable layout';
+          let previousBox = null;
+          let stableSamples = 0;
+          const stableDeadline = Date.now() + 5000;
+          while (stableSamples < 2 && Date.now() < stableDeadline) {
+            const currentBox = await link.boundingBox();
+            assert.ok(currentBox, 'Discovery link must have a layout box');
+            stableSamples = previousBox && ['x', 'y', 'width', 'height'].every(key => Math.abs(currentBox[key] - previousBox[key]) < 0.5) ? stableSamples + 1 : 0;
+            previousBox = currentBox;
+            await new Promise(resolve => setTimeout(resolve, 100));
+          }
+          assert.equal(stableSamples, 2, 'Layout failed to stabilize: ' + phase);
+          phase += ' screenshot/navigation';
+          assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `Pilot discovery overflow ${source} ${width}`);
+          const box = await link.boundingBox();
+          assert.ok(box.width > 0 && box.x >= 0 && box.x + box.width <= width + 1);
+          await screenshot(page, { path: path.join(output, `pilot-link-${source === '/' ? 'home' : 'catalog'}-${width}-${javaScriptEnabled ? 'js' : 'nojs'}.png`) });
+          await link.click();
+          await page.waitForURL('**/ia/marketplaces/piloto/');
+          assert.match(await page.locator('h1').innerText(), /Um saldo confiável/);
+          await page.goBack();
+          assert.equal(new URL(page.url()).pathname, source);
+        }
         await page.goto('https://praia.digital/');
         await page.locator('#apps a[href="' + guide + '"]').click();
         await page.waitForURL('**' + guide);
@@ -77,4 +124,4 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
     }
     console.log('Guide/study passed at 360/390/768/1280, with/without JS: evidence tables, anchors, menu, navigation loop, no overflow; screenshots saved.');
   } finally { await browser.close(); }
-})().catch(error => { console.error(error); process.exitCode = 1; });
+})().catch(error => { console.error(error); process.exitCode = 1; }).finally(() => clearTimeout(deadline));
