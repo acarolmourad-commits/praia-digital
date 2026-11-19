@@ -51,6 +51,8 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
       for (const anchor of ['comprar','locar','anunciar','vender']) {
         await page.locator(`.guide-toc a[href="#${anchor}"]`).click();
         assert.equal(new URL(page.url()).hash, '#' + anchor);
+        await page.waitForFunction(id => Math.abs(document.getElementById(id).getBoundingClientRect().top - 96) < 2, anchor);
+        assert.ok(await page.evaluate(id => document.getElementById(id).getBoundingClientRect().top >= document.querySelector('.pd-site-header').getBoundingClientRect().bottom, anchor));
       }
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
       assert.deepEqual(errors, []);
@@ -66,8 +68,8 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
       await screenshot(page, {path:path.join(output, `guide-${width}.png`),fullPage:true});
       await context.close();
     }
-    // Compare the current candidate with the PR base. The only production delta
-    // from base a8ef91f7 is the pageshow listener; all HTML/CSS are unchanged.
+    // Compare the current candidate with the PR base. Baseline removes the pageshow listener and anchor-margin fix only;
+    // all other production code matches base a8ef91f7.
     const layoutResults = {};
     for (const variant of ['base-a8ef91f7', 'candidate']) {
       const context = await browser.newContext({viewport:{width:320,height:900}});
@@ -82,6 +84,9 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
         if (variant === 'base-a8ef91f7' && url.pathname === '/js/app-guide.js') {
           body = Buffer.from(body.toString().replace("  // Back/forward navigation can restore checkbox state without firing change.\n  window.addEventListener('pageshow', update);\n", ''));
         }
+        if (variant === 'base-a8ef91f7' && url.pathname === '/css/app-guide.css') {
+          body = Buffer.from(body.toString().replace('\n/* Keep skip-link and route targets below the shared fixed header. */\n#conteudo.guide-width,.guide-route{scroll-margin-top:6rem}\n', ''));
+        }
         return route.fulfill({body,contentType:{'.css':'text/css','.js':'application/javascript','.png':'image/png','.jpg':'image/jpeg'}[path.extname(file)]||'text/html'});
       });
       const page = await context.newPage();
@@ -89,6 +94,7 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
       await page.evaluate(() => document.fonts.ready);
       const metrics = () => page.evaluate(() => ({
         scrollY, viewport:innerWidth, width:document.documentElement.scrollWidth,
+        headerBottom:document.querySelector('.pd-site-header').getBoundingClientRect().bottom,
         elements:[...document.querySelectorAll('.pd-network-nav, .guide-hero, #conteudo')].map(el => {
           const r=el.getBoundingClientRect(); return {class:el.className,top:r.top,bottom:r.bottom,left:r.left,right:r.right};
         })
@@ -111,9 +117,11 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
       await screenshot(page,{path:path.join(output, `compare-${variant}-320-stable-full.png`),fullPage:true});
       await context.close();
     }
-    assert.deepEqual(layoutResults['candidate'],layoutResults['base-a8ef91f7']);
+    assert.deepEqual(layoutResults.candidate.initial,layoutResults['base-a8ef91f7'].initial);
+    assert.ok(layoutResults['base-a8ef91f7'].anchor.elements[2].top < layoutResults['base-a8ef91f7'].anchor.headerBottom, 'Baseline reproduces hidden anchor target');
+    assert.ok(layoutResults.candidate.anchor.elements[2].top >= layoutResults.candidate.anchor.headerBottom, 'Candidate target clears the fixed header');
     fs.writeFileSync(path.join(output,'compare-320-metrics.json'),JSON.stringify(layoutResults,null,2));
-    console.log('320px base/candidate layout identical before and after stabilized anchor navigation.');
+    console.log('320px initial layout unchanged; baseline anchor hidden and candidate anchor clear after scrolling settles.');
     const nojs = await browser.newContext({javaScriptEnabled:false});
     const page = await nojs.newPage();
     await page.goto('file://' + path.join(root,'apps/guia-de-uso.html'));

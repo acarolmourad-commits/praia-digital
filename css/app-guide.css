@@ -3,3 +3,6 @@
 @media(max-width:400px){.guide-width{width:calc(100% - 28px)}.guide-route{padding:20px 16px}.route-heading{gap:14px}.guide-toc a{padding:14px;font-size:.9rem}.guide-route fieldset{padding:12px}.guide-example{padding:18px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{body[data-pd-app]{background:#fff;font-size:11pt}.guide-width{width:100%;max-width:none}.guide-toc,.guide-actions,.guide-note,.route-back,.guide-closing,.pd-network-nav{display:none!important}.guide-hero{padding:16px 0!important;background:#fff!important;color:#000!important}.guide-hero h1{font-size:28pt}.hero-copy,.guide-meta{color:#333}.guide-route{padding:18px 0;border:0;border-top:1px solid #888;border-radius:0}.guide-route fieldset,.guide-example,.guide-steps>li{break-inside:avoid}h2,h3,.route-heading{break-after:avoid}a{color:#000}.guide-intro{margin:20px 0}}
+
+/* Keep skip-link and route targets below the shared fixed header. */
+#conteudo.guide-width,.guide-route{scroll-margin-top:6rem}
