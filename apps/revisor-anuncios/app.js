@@ -11,6 +11,7 @@
   ];
   let isDemo = false;
   let currentText = '';
+  let copyRequest = 0;
 
   function element(tag, text, className) {
     const node = document.createElement(tag);
@@ -63,6 +64,7 @@
   }
 
   function invalidate() {
+    copyRequest++; $('copy').disabled = false;
     if (!$('report').hidden) $('live-status').textContent = 'Os campos mudaram. Compare novamente para gerar um relatório atualizado.';
     $('report').hidden = true; currentText = ''; $('report-text').value = '';
     $('copy-status').textContent = ''; removeErrors();
@@ -76,7 +78,7 @@
   };
 
   $('review-form').addEventListener('submit', event => {
-    event.preventDefault(); removeErrors();
+    event.preventDefault(); invalidate();
     const result = review(readRecord('ref'), [readRecord('v1'), readRecord('v2')], $('confirmed').checked);
     if (!result.ok) {
       $('report').hidden = true;
@@ -164,13 +166,20 @@
   });
   $('print').addEventListener('click', () => { if (currentText) window.print(); });
   $('copy').addEventListener('click', async () => {
-    if (!currentText) return;
+    if (!currentText || $('copy').disabled) return;
+    const text = currentText, request = ++copyRequest;
+    $('copy').disabled = true; $('copy-status').textContent = 'Copiando relatório…';
     try {
       if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
-      await navigator.clipboard.writeText(currentText); $('copy-status').textContent = 'Relatório copiado.';
+      await navigator.clipboard.writeText(text);
+      if (request !== copyRequest) return;
+      $('copy-status').textContent = 'Relatório copiado.';
     } catch {
+      if (request !== copyRequest) return;
       const box = $('report-text'); box.closest('details').open = true; box.focus(); box.select();
       $('copy-status').textContent = 'Texto selecionado. Use o comando Copiar do seu dispositivo (Ctrl+C ou ⌘C no computador).';
+    } finally {
+      if (request === copyRequest) $('copy').disabled = false;
     }
   });
 
