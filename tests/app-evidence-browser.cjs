@@ -80,7 +80,6 @@ const deadline = setTimeout(() => {
         assert.equal(await pilotLink.count(), 1);
         // Fragment navigation scrolls smoothly. Wait on Node-side geometry before
         // Playwright's click stability check, including with page JavaScript disabled.
-        await pilotLink.scrollIntoViewIfNeeded();
         let lastPilotBox = null;
         let stablePilotSamples = 0;
         const pilotDeadline = Date.now() + 5000;
