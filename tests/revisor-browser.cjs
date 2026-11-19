@@ -27,6 +27,29 @@ for(const width of [390,1280]){
  page.once('dialog',d=>d.accept());await page.locator('#example').click();assert.equal(await page.locator('#ref-price').inputValue(),'600.000,00');
  await page.getByRole('button',{name:'Comparar as versões'}).click();
  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+ // Delayed clipboard callbacks must not revive an invalidated report or steal focus.
+ await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText(text){return new Promise((resolve,reject)=>{window.pendingCopy={resolve,reject,text};});}}}));
+ await page.locator('#copy').click();assert.equal(await page.locator('#copy').isDisabled(),true);
+ await page.locator('#ref-price').fill('700.000,00');
+ await page.evaluate(()=>window.pendingCopy.resolve());
+ assert.equal(await page.locator('#copy-status').textContent(),'');
+ assert.equal(await page.locator('#ref-price').evaluate(el=>el===document.activeElement),true);
+ await page.getByRole('button',{name:'Comparar as versões'}).click();
+ await page.locator('#copy').click();
+ page.once('dialog',d=>d.accept());await page.locator('#clear').click();
+ await page.evaluate(()=>window.pendingCopy.reject(new Error('denied')));
+ assert.equal(await page.locator('#copy-status').textContent(),'');
+ assert.equal(await page.locator('#property').evaluate(el=>el===document.activeElement),true);
+ assert.equal(await page.locator('#report-text').inputValue(),'');
+ await page.locator('#example').click();await page.getByRole('button',{name:'Comparar as versões'}).click();
+ await page.locator('#copy').click();await page.evaluate(()=>window.pendingCopy.resolve());
+ assert.equal(await page.locator('#copy-status').textContent(),'Relatório copiado.');assert.equal(await page.locator('#copy').isDisabled(),false);
+ await page.locator('#copy').click();await page.evaluate(()=>window.pendingCopy.reject(new Error('denied')));
+ assert.match(await page.locator('#copy-status').textContent(),/Texto selecionado/);
+ assert.equal(await page.locator('#report-text').evaluate(el=>el===document.activeElement),true);
+ // A new report invalidates even a callback whose old text happens to be identical.
+ await page.locator('#copy').click();await page.getByRole('button',{name:'Comparar as versões'}).click();
+ await page.evaluate(()=>window.pendingCopy.resolve());assert.equal(await page.locator('#copy-status').textContent(),'');
  fs.mkdirSync('/tmp/revisor-qa',{recursive:true});await page.screenshot({path:`/tmp/revisor-qa/revisor-${width}.png`,fullPage:true});
  page.once('dialog',d=>d.accept());await page.locator('#clear').click();assert.equal(await page.locator('#ref-price').inputValue(),'');assert.equal(await page.locator('#report').isVisible(),false);
  assert.deepEqual(errors,[]);await context.close();
