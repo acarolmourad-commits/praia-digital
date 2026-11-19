@@ -68,7 +68,7 @@ test('nomes de versões são dados de texto, limitados sem interpretação de HT
 
 // Minimal DOM fixture built from the shipped markup, used to exercise the real
 // bootstrap without relying on a browser or duplicating the comparison logic.
-function loadPage({ failCreate = false, coreAvailable = true, failListenerAt = '', confirm = () => false } = {}) {
+function loadPage({ failCreate = false, coreAvailable = true, failListenerAt = '', confirm = () => false, navigator = {} } = {}) {
   const html = fs.readFileSync(path.join(__dirname, '../apps/revisor-anuncios/index.html'), 'utf8');
   const code = fs.readFileSync(path.join(__dirname, '../apps/revisor-anuncios/app.js'), 'utf8');
   const ids = new Map();
@@ -146,7 +146,7 @@ function loadPage({ failCreate = false, coreAvailable = true, failListenerAt = '
     return event;
   }
   return { ids, nodes, unlocks, disabled, submit,
-    init() { vm.runInNewContext(code, { document, window: { confirm, PraiaConsistency: coreAvailable ? require('../apps/revisor-anuncios/core.js') : undefined }, navigator: {} }); } };
+    init() { vm.runInNewContext(code, { document, window: { confirm, PraiaConsistency: coreAvailable ? require('../apps/revisor-anuncios/core.js') : undefined }, navigator }); } };
 }
 
 test('sem JavaScript, campos e ações permanecem inertes e não há campo nomeado para GET', () => {
@@ -203,4 +203,19 @@ test('limpeza e exemplo funcionam após confirmação explícita', () => {
   page.ids.get('clear').listeners.click[0]();
   assert.equal(page.ids.get('ref-price').value, '');
   assert.equal(page.ids.get('report').hidden, true);
+});
+
+test('resposta atrasada de cópia não confirma relatório alterado nem reabre texto limpo', async () => {
+  let resolve, reject, calls = 0;
+  const page = loadPage({confirm:()=>true,navigator:{clipboard:{writeText:()=>{calls++;return new Promise((yes,no)=>{resolve=yes;reject=no;});}}}});
+  page.init(); page.ids.get('example').listeners.click[0](); page.submit();
+  const copy=page.ids.get('copy'), status=page.ids.get('copy-status');
+  const pending=copy.listeners.click[0]();assert.equal(copy.disabled,true);
+  await copy.listeners.click[0]();assert.equal(calls,1,'cliques repetidos não iniciam outra cópia');
+  page.ids.get('review-form').listeners.input[0]();resolve();await pending;
+  assert.equal(status.textContent,'');assert.equal(copy.disabled,false);
+  page.submit();const failed=copy.listeners.click[0]();page.ids.get('clear').listeners.click[0]();reject(new Error('denied'));await failed;
+  assert.equal(status.textContent,'');assert.equal(page.ids.get('report-text').value,'');
+  page.ids.get('example').listeners.click[0]();page.submit();const success=copy.listeners.click[0]();resolve();await success;
+  assert.equal(status.textContent,'Relatório copiado.');assert.equal(copy.disabled,false);
 });
