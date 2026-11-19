@@ -1,0 +1,27 @@
+name: Marketplace pilot evidence
+on:
+  pull_request:
+    paths: ['ia/marketplaces/piloto/**', 'tests/test_marketplaces_pilot.mjs', 'tests/marketplaces-pilot-browser.cjs', '.github/workflows/marketplaces-pilot.yml']
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node --test tests/test_marketplaces_pilot.mjs
+      - run: node --check ia/marketplaces/piloto/app.mjs
+      - name: Browser checks with shared navigation
+        run: |
+          npm install --prefix "$RUNNER_TEMP/pilot-qa" playwright@1.63.0 --no-audit --no-fund
+          "$RUNNER_TEMP/pilot-qa/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          NODE_PATH="$RUNNER_TEMP/pilot-qa/node_modules" node tests/marketplaces-pilot-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: marketplaces-pilot-layouts
+          path: /tmp/marketplaces-pilot-*.png
