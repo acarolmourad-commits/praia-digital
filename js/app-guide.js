@@ -6,6 +6,8 @@
     progress.textContent = `${boxes.filter(box => box.checked).length} de ${boxes.length} conferências marcadas`;
   };
   boxes.forEach(box => box.addEventListener('change', update));
+  // Back/forward navigation can restore checkbox state without firing change.
+  window.addEventListener('pageshow', update);
   document.getElementById('guide-reset').addEventListener('click', () => {
     boxes.forEach(box => { box.checked = false; });
     update();
