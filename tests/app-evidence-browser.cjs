@@ -86,15 +86,19 @@ const deadline = setTimeout(() => {
           assert.match((await block.innerText()).toLowerCase(), /sem conexão com lojas ou estoque real/);
           if (source === '/apps/') assert.equal(await page.locator('.pd-catalog-group .card').count(), 16);
           await link.scrollIntoViewIfNeeded();
-          // Keep the render check, but never depend on an unbounded page callback.
-          phase += ' render frames';
-          let frameTimer;
-          try {
-            await Promise.race([
-              page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))),
-              new Promise((_, reject) => { frameTimer = setTimeout(() => reject(new Error('Render frames timeout: ' + phase)), 5000); })
-            ]);
-          } finally { clearTimeout(frameTimer); }
+          // Poll layout from Node: page animation callbacks do not run with JS disabled.
+          phase += ' stable layout';
+          let previousBox = null;
+          let stableSamples = 0;
+          const stableDeadline = Date.now() + 5000;
+          while (stableSamples < 2 && Date.now() < stableDeadline) {
+            const currentBox = await link.boundingBox();
+            assert.ok(currentBox, 'Discovery link must have a layout box');
+            stableSamples = previousBox && ['x', 'y', 'width', 'height'].every(key => Math.abs(currentBox[key] - previousBox[key]) < 0.5) ? stableSamples + 1 : 0;
+            previousBox = currentBox;
+            await new Promise(resolve => setTimeout(resolve, 100));
+          }
+          assert.equal(stableSamples, 2, 'Layout failed to stabilize: ' + phase);
           phase += ' screenshot/navigation';
           assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `Pilot discovery overflow ${source} ${width}`);
           const box = await link.boundingBox();
