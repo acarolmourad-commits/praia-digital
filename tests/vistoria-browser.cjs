@@ -8,6 +8,31 @@ const page=await browser.newPage({viewport:{width,height:900}});const errors=[];
 await page.route('**/*',async route=>{const u=new URL(route.request().url());if(u.hostname!=='local.test')return route.abort();let p=path.join(root,u.pathname);if(u.pathname.endsWith('/'))p=path.join(p,'index.html');if(!fs.existsSync(p)||!fs.statSync(p).isFile())return route.abort();if(p.endsWith('shared.js')||p.endsWith('related-ads.js'))return route.fulfill({body:''});await route.fulfill({path:p});});
 await page.goto('http://local.test/apps/checklist-vistoria/');
 const key='pd-vistoria-v1',first=()=>page.locator('#groups button').first();
+// Keep keyboard focus on the same control after updates, including repeated toggles.
+const focused=()=>page.evaluate(()=>document.activeElement?.outerHTML);
+await first().focus();
+await page.keyboard.press('Enter');
+assert.equal(await first().evaluate(el=>el===document.activeElement),true,await focused());
+assert.equal(await first().getAttribute('aria-pressed'),'true');
+await page.keyboard.press('Space');
+assert.equal(await first().evaluate(el=>el===document.activeElement),true);
+assert.equal(await first().getAttribute('aria-pressed'),'false');
+await page.keyboard.press('Tab');
+const problem=page.locator('#groups button').nth(1);
+assert.equal(await problem.evaluate(el=>el===document.activeElement),true);
+await page.keyboard.press('Enter');
+assert.equal(await problem.evaluate(el=>el===document.activeElement),true);
+assert.equal(await problem.getAttribute('aria-pressed'),'true');
+await page.keyboard.press('Enter');
+assert.equal(await problem.getAttribute('aria-pressed'),'false');
+await page.keyboard.press('Tab');
+assert.equal(await page.locator('#groups button').nth(2).evaluate(el=>el===document.activeElement),true);
+await page.locator('#reset').focus();
+page.once('dialog',d=>d.dismiss());await page.keyboard.press('Enter');
+assert.equal(await page.locator('#reset').evaluate(el=>el===document.activeElement),true);
+page.once('dialog',d=>d.accept());await page.keyboard.press('Enter');
+assert.equal(await page.locator('#reset').evaluate(el=>el===document.activeElement),true);
+
 assert.equal(await page.locator('#score').textContent(),'0%');await first().click();assert((await page.locator('#storage-status').textContent()).includes('salvas'));await page.reload();assert.equal(await first().getAttribute('aria-pressed'),'true');await first().click();assert.equal(await first().getAttribute('aria-pressed'),'false');
 for(const raw of ['{','null','{"0_0":"ok","bogus":"ok","0_1":"unknown"}']){
  await page.evaluate(({key,raw})=>localStorage.setItem(key,raw),{key,raw});await page.reload();assert((await page.locator('#storage-status').textContent()).includes('Modo sessão'));await first().click();assert.equal(await page.evaluate(key=>localStorage.getItem(key),key),raw);

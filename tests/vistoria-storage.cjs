@@ -13,3 +13,21 @@ test('UI neutral progress, reset cancel/confirm and no exception on blocked acce
  assert.match(es.verdict.textContent,/1\/26/);ctx.resetAll();assert.equal(mem.removes,0);assert.match(es.verdict.textContent,/1\/26/);yes=true;ctx.resetAll();assert.equal(mem.removes,1);assert.match(es.verdict.textContent,/0\/26/);
  for(let g=0;g<GROUPS.length;g++)for(let i=0;i<GROUPS[g].items.length;i++)ctx.mark(g+'_'+i,'bad');assert.equal(es.score.textContent,'100%');assert.match(es.verdict.textContent,/26 com problema/);assert(!/pode avançar|ótimo estado|negocie/.test(es.verdict.textContent));
 });
+
+test('render restores only the focused checklist button without scrolling or stealing outside focus',()=>{
+ const mem=storage(),es={};for(const id of ['groups','bar','score','verdict','storage-status'])es[id]={innerHTML:'',textContent:'',style:{}};
+ const doc={activeElement:null,getElementById:id=>es[id]};
+ let focusCalls=0;
+ Object.defineProperty(es.groups,'innerHTML',{set(html){
+   if(doc.activeElement?.id?.startsWith('vistoria-'))doc.activeElement=null;
+   for(const match of html.matchAll(/id="(vistoria-[^"]+)"/g)){
+     const id=match[1];es[id]={id,focus(options){assert.equal(options.preventScroll,true);doc.activeElement=this;focusCalls++;}};
+   }
+ }});
+ const ctx={document:doc,localStorage:mem,confirm:()=>true};
+ vm.runInNewContext(fs.readFileSync(require.resolve('../apps/checklist-vistoria/checklist.js'),'utf8'),ctx);
+ assert(es['vistoria-0_0-ok']);doc.activeElement=es['vistoria-0_0-ok'];
+ ctx.mark('0_0','ok');assert.equal(doc.activeElement.id,'vistoria-0_0-ok');assert.equal(focusCalls,1);
+ ctx.mark('0_0','ok');assert.equal(doc.activeElement.id,'vistoria-0_0-ok');assert.equal(focusCalls,2);
+ doc.activeElement={id:'reset'};ctx.resetAll();assert.equal(doc.activeElement.id,'reset');assert.equal(focusCalls,2);
+});
