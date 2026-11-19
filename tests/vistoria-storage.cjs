@@ -31,3 +31,11 @@ test('render restores only the focused checklist button without scrolling or ste
  ctx.mark('0_0','ok');assert.equal(doc.activeElement.id,'vistoria-0_0-ok');assert.equal(focusCalls,2);
  doc.activeElement={id:'reset'};ctx.resetAll();assert.equal(doc.activeElement.id,'reset');assert.equal(focusCalls,2);
 });
+
+test('orientação editorial usa fontes primárias e não promete conformidade ou preço de laudo',()=>{
+ const html=fs.readFileSync(require.resolve('../apps/checklist-vistoria/index.html'),'utf8');
+ assert.match(html,/quando solicitado/);assert.match(html,/desgaste do uso normal/);
+ assert.match(html,/www2\.camara\.leg\.br/);assert.match(html,/legislacao\.prefeitura\.sp\.gov\.br/);assert.match(html,/www\.stj\.jus\.br/);
+ for(const claim of ['vistoria é obrigatória e não pode ser cobrada','veda cobrar tarifa','obrigam inspeção predial periódica','R$ 800–2.500','instalações hidráulicas/elétricas (3 anos)','score de qualidade'])assert(!html.includes(claim),claim);
+ assert(!JSON.stringify(GROUPS).includes('Lei SP 16.642/2017'));
+});
