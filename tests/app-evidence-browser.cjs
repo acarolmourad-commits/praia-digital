@@ -73,6 +73,17 @@ const deadline = setTimeout(() => {
           assert.deepEqual(errors, []);
           page.off('pageerror', onError);
         }
+        phase = `${width}px js=${javaScriptEnabled} pricing/laboratory round trip`;
+        console.log(phase);
+        await page.goto('https://praia.digital/apps/guia-de-uso.html#vender');
+        const pilotLink = page.locator('#vender a[href="/ia/marketplaces/piloto/"]');
+        assert.equal(await pilotLink.count(), 1);
+        await pilotLink.click();
+        await page.waitForURL('**/ia/marketplaces/piloto/');
+        await page.locator('a[href="/apps/guia-de-uso.html#vender"]').click();
+        await page.waitForURL('**/apps/guia-de-uso.html#vender');
+        assert.equal(await page.locator('input[type=checkbox]').count(), 12);
+        assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
         // Discovery links are complementary, not a seventeenth filtered app.
         for (const source of ['/', '/apps/']) {
           phase = `${width}px js=${javaScriptEnabled} discovery ${source}`;
