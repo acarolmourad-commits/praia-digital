@@ -29,6 +29,17 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
       assert.equal(await page.locator('input[type=checkbox]').count(), 12);
       await page.locator('input[type=checkbox]').first().check();
       assert.match(await page.locator('#guide-progress').innerText(), /^1 de 12/);
+      // A restored document may have checked fields without a change event.
+      await page.evaluate(() => {
+        const boxes = document.querySelectorAll('.guide-route input[type=checkbox]');
+        boxes[0].checked = false;
+        boxes[1].checked = true;
+        boxes[2].checked = true;
+        window.dispatchEvent(new PageTransitionEvent('pageshow', {persisted:true}));
+      });
+      assert.match(await page.locator('#guide-progress').innerText(), /^2 de 12/);
+      await page.evaluate(() => window.dispatchEvent(new PageTransitionEvent('pageshow', {persisted:true})));
+      assert.match(await page.locator('#guide-progress').innerText(), /^2 de 12/);
       await page.locator('#guide-reset').click();
       assert.equal(await page.locator('input:checked').count(), 0);
       assert.match(await page.locator('#guide-progress').innerText(), /^0 de 12/);
