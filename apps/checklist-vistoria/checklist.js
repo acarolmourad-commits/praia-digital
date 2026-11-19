@@ -8,7 +8,7 @@ const GROUPS = [
   {nome:'🚿 Hidráulica', items:[
     'Pressão de água boa em todos os pontos','Sem vazamentos visíveis (torneiras, sifões)','Esgoto sem retorno de odor','Aquecimento (boiler/solar) funcionando']},
   {nome:'📄 Documentação', items:[
-    'Matrícula atualizada sem ônus','IPTU quitado','Habite-se / averbação da construção','Condomínio: atas e inadimplência OK','Nada consta na prefeitura (regularização)','Laudo de inspeção predial do condomínio disponível e em dia (NBR 16.747 / Lei SP 16.642/2017)']},
+    'Matrícula atualizada sem ônus','IPTU quitado','Habite-se / averbação da construção','Condomínio: atas e inadimplência OK','Nada consta na prefeitura (regularização)','Laudo de inspeção predial do condomínio disponível e em dia']},
   {nome:'📍 Entorno', items:[
     'Distância real da praia conferida','Rua/entorno sem alagamento em chuva','Comércio e serviços próximos','Vagas de garagem conforme anúncio']}
 ];
