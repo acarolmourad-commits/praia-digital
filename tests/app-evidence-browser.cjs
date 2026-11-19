@@ -69,7 +69,7 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
           const link = page.locator('a[href="/ia/marketplaces/piloto/"]');
           assert.equal(await link.count(), 1);
           assert.match(await link.innerText(), /Laboratório Estoque Vivo/);
-          const block = source === '/' ? page.locator('.pd-practice') : link;
+          const block = source === '/' ? page.locator('aside[aria-labelledby="guia-apps-home"]') : link;
           assert.match(await block.innerText(), /produtos fictícios/);
           assert.match((await block.innerText()).toLowerCase(), /sem conexão com lojas ou estoque real/);
           if (source === '/apps/') assert.equal(await page.locator('.pd-catalog-group .card').count(), 16);
