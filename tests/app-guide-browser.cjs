@@ -66,6 +66,54 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
       await screenshot(page, {path:path.join(output, `guide-${width}.png`),fullPage:true});
       await context.close();
     }
+    // Compare the current candidate with the PR base. The only production delta
+    // from base a8ef91f7 is the pageshow listener; all HTML/CSS are unchanged.
+    const layoutResults = {};
+    for (const variant of ['base-a8ef91f7', 'candidate']) {
+      const context = await browser.newContext({viewport:{width:320,height:900}});
+      await context.route('**/*', route => {
+        const url = new URL(route.request().url());
+        if (url.hostname !== 'praia.digital' || route.request().method() !== 'GET') return route.abort();
+        let file = path.resolve(root, '.' + url.pathname);
+        if (!file.startsWith(root + path.sep)) return route.abort();
+        if (fs.existsSync(file) && fs.statSync(file).isDirectory()) file = path.join(file, 'index.html');
+        if (!fs.existsSync(file)) return route.abort();
+        let body = fs.readFileSync(file);
+        if (variant === 'base-a8ef91f7' && url.pathname === '/js/app-guide.js') {
+          body = Buffer.from(body.toString().replace("  // Back/forward navigation can restore checkbox state without firing change.\n  window.addEventListener('pageshow', update);\n", ''));
+        }
+        return route.fulfill({body,contentType:{'.css':'text/css','.js':'application/javascript','.png':'image/png','.jpg':'image/jpeg'}[path.extname(file)]||'text/html'});
+      });
+      const page = await context.newPage();
+      await page.goto('https://praia.digital/apps/guia-de-uso.html');
+      await page.evaluate(() => document.fonts.ready);
+      const metrics = () => page.evaluate(() => ({
+        scrollY, viewport:innerWidth, width:document.documentElement.scrollWidth,
+        elements:[...document.querySelectorAll('.pd-network-nav, .guide-hero, #conteudo')].map(el => {
+          const r=el.getBoundingClientRect(); return {class:el.className,top:r.top,bottom:r.bottom,left:r.left,right:r.right};
+        })
+      }));
+      layoutResults[variant] = {initial:await metrics()};
+      await screenshot(page,{path:path.join(output, `compare-${variant}-320-initial.png`)});
+      await page.keyboard.press('Tab');
+      assert.equal(await page.evaluate(() => document.activeElement.matches('a.pd-skip[href="#conteudo"]')),true);
+      await page.keyboard.press('Enter');
+      assert.equal(new URL(page.url()).hash,'#conteudo');
+      // Let native smooth scrolling finish before observing fixed/sticky layout.
+      await page.waitForFunction(() => window.scrollY > 0);
+      await page.evaluate(() => new Promise(resolve => {
+        let previous=scrollY, stable=0;
+        const check=()=>{stable=Math.abs(scrollY-previous)<0.1?stable+1:0;previous=scrollY;
+          if(stable>=30)resolve();else requestAnimationFrame(check);};requestAnimationFrame(check);
+      }));
+      layoutResults[variant].anchor=await metrics();
+      await screenshot(page,{path:path.join(output, `compare-${variant}-320-anchor.png`)});
+      await screenshot(page,{path:path.join(output, `compare-${variant}-320-stable-full.png`),fullPage:true});
+      await context.close();
+    }
+    assert.deepEqual(layoutResults['candidate'],layoutResults['base-a8ef91f7']);
+    fs.writeFileSync(path.join(output,'compare-320-metrics.json'),JSON.stringify(layoutResults,null,2));
+    console.log('320px base/candidate layout identical before and after stabilized anchor navigation.');
     const nojs = await browser.newContext({javaScriptEnabled:false});
     const page = await nojs.newPage();
     await page.goto('file://' + path.join(root,'apps/guia-de-uso.html'));
