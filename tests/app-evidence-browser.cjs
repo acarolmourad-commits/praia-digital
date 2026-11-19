@@ -9,6 +9,12 @@ const guide = '/guias/usar-apps-com-evidencias.html';
 const study = '/cases/rede-aplicativos-praia-digital.html';
 const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
 
+// Node-side deadline also covers page.evaluate and disabled page timers.
+let phase = 'launch';
+const deadline = setTimeout(() => {
+  console.error('Browser evidence exceeded 5 minutes at: ' + phase);
+  process.exit(1);
+}, 300000);
 
 (async () => {
   fs.mkdirSync(output, { recursive: true });
@@ -28,7 +34,11 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
           return route.fulfill({ body: fs.readFileSync(file), contentType: types[path.extname(file)] || 'application/octet-stream' });
         });
         const page = await context.newPage();
+        context.setDefaultTimeout(15000);
+        context.setDefaultNavigationTimeout(15000);
         for (const target of [guide, study]) {
+          phase = `${width}px js=${javaScriptEnabled} document ${target}`;
+          console.log(phase);
           const errors = [];
           const onError = error => errors.push(error.message);
           page.on('pageerror', onError);
@@ -65,6 +75,8 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
         }
         // Discovery links are complementary, not a seventeenth filtered app.
         for (const source of ['/', '/apps/']) {
+          phase = `${width}px js=${javaScriptEnabled} discovery ${source}`;
+          console.log(phase);
           await page.goto('https://praia.digital' + source);
           const link = page.locator('a[href="/ia/marketplaces/piloto/"]');
           assert.equal(await link.count(), 1);
@@ -74,7 +86,16 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
           assert.match((await block.innerText()).toLowerCase(), /sem conexão com lojas ou estoque real/);
           if (source === '/apps/') assert.equal(await page.locator('.pd-catalog-group .card').count(), 16);
           await link.scrollIntoViewIfNeeded();
-          await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+          // Keep the render check, but never depend on an unbounded page callback.
+          phase += ' render frames';
+          let frameTimer;
+          try {
+            await Promise.race([
+              page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))),
+              new Promise((_, reject) => { frameTimer = setTimeout(() => reject(new Error('Render frames timeout: ' + phase)), 5000); })
+            ]);
+          } finally { clearTimeout(frameTimer); }
+          phase += ' screenshot/navigation';
           assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `Pilot discovery overflow ${source} ${width}`);
           const box = await link.boundingBox();
           assert.ok(box.width > 0 && box.x >= 0 && box.x + box.width <= width + 1);
@@ -99,4 +120,4 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
     }
     console.log('Guide/study passed at 360/390/768/1280, with/without JS: evidence tables, anchors, menu, navigation loop, no overflow; screenshots saved.');
   } finally { await browser.close(); }
-})().catch(error => { console.error(error); process.exitCode = 1; });
+})().catch(error => { console.error(error); process.exitCode = 1; }).finally(() => clearTimeout(deadline));
