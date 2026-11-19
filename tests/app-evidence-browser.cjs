@@ -63,6 +63,28 @@ const output = path.join(process.env.RUNNER_TEMP || '/tmp', 'app-guide-qa');
           assert.deepEqual(errors, []);
           page.off('pageerror', onError);
         }
+        // Discovery links are complementary, not a seventeenth filtered app.
+        for (const source of ['/', '/apps/']) {
+          await page.goto('https://praia.digital' + source);
+          const link = page.locator('a[href="/ia/marketplaces/piloto/"]');
+          assert.equal(await link.count(), 1);
+          assert.match(await link.innerText(), /Laboratório Estoque Vivo/);
+          const block = source === '/' ? page.locator('.pd-practice') : link;
+          assert.match(await block.innerText(), /produtos fictícios/);
+          assert.match((await block.innerText()).toLowerCase(), /sem conexão com lojas ou estoque real/);
+          if (source === '/apps/') assert.equal(await page.locator('.pd-catalog-group .card').count(), 16);
+          await link.scrollIntoViewIfNeeded();
+          await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+          assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `Pilot discovery overflow ${source} ${width}`);
+          const box = await link.boundingBox();
+          assert.ok(box.width > 0 && box.x >= 0 && box.x + box.width <= width + 1);
+          await screenshot(page, { path: path.join(output, `pilot-link-${source === '/' ? 'home' : 'catalog'}-${width}-${javaScriptEnabled ? 'js' : 'nojs'}.png`) });
+          await link.click();
+          await page.waitForURL('**/ia/marketplaces/piloto/');
+          assert.match(await page.locator('h1').innerText(), /Um saldo confiável/);
+          await page.goBack();
+          assert.equal(new URL(page.url()).pathname, source);
+        }
         await page.goto('https://praia.digital/');
         await page.locator('#apps a[href="' + guide + '"]').click();
         await page.waitForURL('**' + guide);
