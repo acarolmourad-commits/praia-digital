@@ -3,6 +3,8 @@ on:
   pull_request:
     paths:
       - 'apps/revisor-anuncios/**'
+      - 'apps/calculadora-precificacao-shopee/**'
+      - 'tests/test_marketplace_margin.cjs'
       - 'apps/relatorio-imovel/**'
       - 'tests/test_revisor_anuncios.cjs'
       - 'tests/revisor-browser.cjs'
@@ -16,6 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Marketplace pricing and input regressions
+        run: node tests/test_marketplace_margin.cjs
       - name: Listing consistency rules
         run: node --test tests/test_revisor_anuncios.cjs
       - name: Property report behavior and metadata

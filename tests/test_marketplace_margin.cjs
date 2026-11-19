@@ -26,3 +26,19 @@ console.log('PASS: 6 assertions + '+cases+' minimum-price cases verified in cent
 assert.equal(precoParaMargem(10,'invalid',0,0,15),null);
 for (const value of [NaN,Infinity,-Infinity]) assert.equal(precoParaMargem(value,'shopee',0,0,15),null);
 console.log('PASS: invalid platform and non-finite costs rejected');
+
+// Exercise the actual UI script, not a duplicate of its calculations.
+const ids=['plat','afWrap','custo','preco','afiliado','frete','margemAlvo','res','alerta','kLucro','kMargem','kTaxa','sugestao','detalheBody','calc-status'];
+const nodes=Object.fromEntries(ids.map(id=>[id,{value:'',style:{},textContent:'',innerHTML:'',className:'',listeners:{},classList:{values:new Set(),add(x){this.values.add(x)},remove(x){this.values.delete(x)},contains(x){return this.values.has(x)}},addEventListener(type,fn){(this.listeners[type]??=[]).push(fn)},scrollIntoView(){}}]));
+const alerts=[];const context={document:{getElementById:id=>nodes[id]},alert:m=>alerts.push(m)};
+vm.createContext(context);const script=[...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].find(m=>m[1].includes('function calc()'))[1];vm.runInContext(script,context);
+function valid(){for(const [k,v]of Object.entries({plat:'shopee',custo:'40',preco:'70',afiliado:'10',frete:'0',margemAlvo:'15'}))nodes[k].value=v;context.calc();assert(nodes.res.classList.contains('show'));}
+valid();
+for(const id of ['plat','custo','preco','afiliado','frete','margemAlvo'])for(const event of ['input','change']){
+ for(const fn of nodes[id].listeners[event]||[])fn();assert(!nodes.res.classList.contains('show'),id+' '+event+' must invalidate old result');valid();
+}
+nodes.preco.value='';context.calc();assert(!nodes.res.classList.contains('show'));assert(alerts.length);
+valid();nodes.plat.value='invalid';context.calc();assert(!nodes.res.classList.contains('show'));
+valid();nodes.custo.value='1e308';nodes.frete.value='1e308';context.calc();assert(!nodes.res.classList.contains('show'));
+assert(html.includes('6% + R$ 2,00 por pedido + comissão de afiliado informada'));
+console.log('PASS: all pricing inputs invalidate, invalid platform/overflow do not leave stale results.');

@@ -54,5 +54,20 @@ for(const width of [390,1280]){
  page.once('dialog',d=>d.accept());await page.locator('#clear').click();assert.equal(await page.locator('#ref-price').inputValue(),'');assert.equal(await page.locator('#report').isVisible(),false);
  assert.deepEqual(errors,[]);await context.close();
 }
+// Marketplace results must never survive changed or invalid pricing inputs.
+for(const width of [390,1280]){
+ const page=await browser.newPage({viewport:{width,height:900}});
+ await page.route('**/*',route=>{const u=new URL(route.request().url());if(u.origin!=='https://praia.digital')return route.abort();const f=path.resolve(root,'.'+u.pathname+(u.pathname.endsWith('/')?'index.html':''));if(!f.startsWith(root+path.sep)||!fs.existsSync(f))return route.fulfill({status:404,body:''});return route.fulfill({path:f});});
+ await page.goto('https://praia.digital/apps/calculadora-precificacao-shopee/');
+ const calc=()=>page.getByRole('button',{name:'Calcular',exact:true}).click();
+ await page.locator('#custo').fill('40');await page.locator('#preco').fill('70');await calc();assert(await page.locator('#res').isVisible());
+ await page.locator('#preco').fill('50');assert(!(await page.locator('#res').isVisible()));await calc();assert.match(await page.locator('#kLucro').textContent(),/-4,50/);
+ await page.locator('#plat').selectOption('tiktok');assert(!(await page.locator('#res').isVisible()));assert(await page.locator('#afWrap').isVisible());await calc();assert.match(await page.locator('#kTaxa').textContent(),/10,00/);
+ await page.locator('#afiliado').fill('20');assert(!(await page.locator('#res').isVisible()));await calc();assert.match(await page.locator('#kTaxa').textContent(),/15,00/);
+ await page.locator('#preco').fill('');page.once('dialog',d=>d.accept());await calc();assert(!(await page.locator('#res').isVisible()));assert.equal(await page.locator('#detalheBody').textContent(),'');
+ await page.locator('#preco').fill('70');await calc();assert(await page.locator('#res').isVisible());
+ assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await page.close();
+}
+console.log('Marketplace changed inputs, platform, affiliate and invalid/recovery flows passed mobile/desktop.');
 console.log('Desktop/mobile, example, comparison, cancel/confirm clear and overwrite, invalidation and overflow passed.');
 }finally{await browser.close()}})().catch(e=>{console.error(e);process.exit(1)});

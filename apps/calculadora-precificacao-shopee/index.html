@@ -77,6 +77,7 @@ footer{padding:28px 0;font-size:.82rem;color:var(--ink2);text-align:center}
   <button class="btn" onclick="calc()">Calcular</button>
 </div>
 
+<p id="calc-status" role="status" aria-live="polite"></p>
 <div class="panel result" id="res">
   <div class="kpis">
     <div class="kpi"><b id="kLucro">—</b><small>Lucro por pedido</small></div>
@@ -100,10 +101,10 @@ footer{padding:28px 0;font-size:.82rem;color:var(--ink2);text-align:center}
       <tr><td>Shopee</td><td>R$ 80,00 – R$ 99,99</td><td>14% + R$ 16,00</td></tr>
       <tr><td>Shopee</td><td>R$ 100,00 – R$ 199,99</td><td>14% + R$ 20,00</td></tr>
       <tr><td>Shopee</td><td>R$ 200,00 ou mais</td><td>14% + R$ 26,00</td></tr>
-      <tr><td>TikTok Shop</td><td>qualquer valor</td><td>comissão da plataforma + comissão de afiliado (9,5%–12%, configurável acima)</td></tr>
+      <tr><td>TikTok Shop</td><td>qualquer valor</td><td>6% + R$ 2,00 por pedido + comissão de afiliado informada</td></tr>
     </tbody>
   </table>
-  <p class="note">Margem de referência saudável em marketplace: <strong>10% a 20%</strong>. Abaixo de 10% qualquer imprevisto (extravio, reembolso, spike de ads) vira prejuízo.</p>
+  <p class="note">As faixas são premissas fixas desta simulação, não uma consulta às tarifas vigentes da sua conta. Margem positiva não garante lucro final: confira tributos, devoluções e demais custos não informados.</p>
 </div>
 
 <div class="panel" style="text-align:center">
@@ -116,6 +117,13 @@ footer{padding:28px 0;font-size:.82rem;color:var(--ink2);text-align:center}
 <script>
 const plat=document.getElementById('plat'),afWrap=document.getElementById('afWrap');
 plat.addEventListener('change',()=>{afWrap.style.display=plat.value==='tiktok'?'block':'none';});
+function invalidar(){
+  document.getElementById('res').classList.remove('show');
+  for(const id of ['kLucro','kMargem','kTaxa','sugestao','alerta'])document.getElementById(id).textContent='';
+  document.getElementById('detalheBody').innerHTML='';
+  document.getElementById('calc-status').textContent='Compare novamente após alterar os dados. Nenhum resultado atualizado está disponível.';
+}
+for(const id of ['plat','custo','preco','afiliado','frete','margemAlvo'])for(const event of ['input','change'])document.getElementById(id).addEventListener(event,invalidar);
 function taxaShopee(p){if(p<80)return p*0.20+4.50;if(p<100)return p*0.14+16;if(p<200)return p*0.14+20;return p*0.14+26;}
 function taxaTikTok(p,af){return p*0.06+2+p*(af/100);} // comissão base estimada 6% + R$2 fixo + afiliado
 function taxa(p,pl,af){return pl==='shopee'?taxaShopee(p):taxaTikTok(p,af);}
@@ -136,19 +144,21 @@ function precoParaMargem(c,pl,af,ex,alvo){
   return candidatos.length?Math.min(...candidatos):null;
 }
 function calc(){
+  invalidar();
   const c=parseFloat(document.getElementById('custo').value),p=parseFloat(document.getElementById('preco').value);
   const pl=plat.value,af=Number(document.getElementById('afiliado').value),ex=Number(document.getElementById('frete').value);
   const alvo=document.getElementById('margemAlvo').value.trim()===''?15:Number(document.getElementById('margemAlvo').value);
   const res=document.getElementById('res'),al=document.getElementById('alerta');
-  if (![c,p,af,ex,alvo].every(Number.isFinite) || c<0 || p<=0 || af<0 || af>100 || ex<0 || alvo<0 || alvo>=100){alert('Informe valores válidos: custo e despesas não negativos, preço positivo, afiliado de 0 a 100% e margem de 0 a menos de 100%.');return;}
+  if (!['shopee','tiktok'].includes(pl) || ![c,p,af,ex,alvo].every(Number.isFinite) || c<0 || p<=0 || af<0 || af>100 || ex<0 || alvo<0 || alvo>=100){alert('Informe valores válidos: custo e despesas não negativos, preço positivo, afiliado de 0 a 100% e margem de 0 a menos de 100%.');return;}
   const r=lucro(p,c,pl,af,ex),m=r.lucro/p*100;
+  if(![r.lucro,r.taxa,m,c+ex].every(Number.isFinite)){alert('Os valores excedem o limite de cálculo. Revise os dados.');return;}
   document.getElementById('kLucro').textContent=fmt(r.lucro);
   document.getElementById('kLucro').className=r.lucro>=0?'good':'bad';
   document.getElementById('kMargem').textContent=m.toFixed(1).replace('.',',')+'%';
   document.getElementById('kMargem').className=m>=10?'good':(m>=0?'warn':'bad');
   document.getElementById('kTaxa').textContent=fmt(r.taxa);
   al.className='alert show '+(m>=10?'ok':(m>=0?'warn':'bad'));
-  al.textContent=m>=20?'Excelente: margem acima de 20% — avalie se o preço não está alto demais para converter.':(m>=10?'Dentro da faixa saudável (10–20%). Bom produto para escalar.':(m>=0?'Atenção: margem abaixo de 10%. Qualquer imprevisto vira prejuízo. Considere subir o preço ou reduzir custo.':'Prejuízo: este preço não cobre custo + taxas. Não anuncie nesse valor.'));
+  al.textContent=m>=0?'Saldo não negativo nas premissas informadas. Isso não garante lucro final nem recomenda escalar as vendas.':'Saldo negativo nas premissas informadas. Revise preço, taxas e despesas antes de decidir.';
   const ps=precoParaMargem(c,pl,af,ex,alvo);
   document.getElementById('sugestao').textContent=ps===null?'Meta inviável com as taxas e custos informados.':'Para margem de '+alvo+'%, o menor preço estimado em centavos é '+fmt(ps)+'. Valide taxas e tributos antes de usar.';
   const tb=document.getElementById('detalheBody');
@@ -157,6 +167,7 @@ function calc(){
     '<tr><td>(–) Taxa da plataforma'+(pl==='tiktok'?' (incl. afiliado '+af+'%)':'')+'</td><td>'+fmt(r.taxa)+'</td></tr>'+
     (ex?'<tr><td>(–) Custo extra por pedido</td><td>'+fmt(ex)+'</td></tr>':'')+
     '<tr><td><strong>= Resultado estimado por pedido</strong></td><td><strong>'+fmt(r.lucro)+'</strong></td></tr>';
+  document.getElementById('calc-status').textContent='Simulação atualizada com os dados informados.';
   res.classList.add('show');res.scrollIntoView({behavior:'smooth',block:'nearest'});
 }
 </script>
