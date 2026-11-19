@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Gerador + publicador automatico de carrosseis no Instagram (Praia Digital).
-Design v2: capa centralizada, cards coloridos com acento rotativo, CTA final.
-Roda 4x/dia via GitHub Actions (7h, 9h, 15h, 20h BRT). Escolhe tema rotativo da fila,
-gera artes 1080x1350, commita as imagens no repo e publica via Instagram Graph API."""
+"""Instagram content validation; publication is disabled pending Composio review.
+Use --dry-run for side-effect-free queue validation. Legacy rendering/publishing
+code remains below an unconditional gate and cannot be activated by credentials.
+"""
 import argparse, os, sys, json, time, datetime, subprocess, requests
 try:
     from .ig_content_validation import validate_queue
@@ -93,7 +93,7 @@ def api(method, url, **kw):
     r.raise_for_status(); return r.json()
 
 def main(argv=None):
-    parser = argparse.ArgumentParser(description="Validate and publish Instagram content")
+    parser = argparse.ArgumentParser(description="Validate Instagram content (publication disabled)")
     parser.add_argument('--queue', default='scripts/ig_content_queue.json')
     parser.add_argument('--dry-run', action='store_true',
                         help='Validate all content only: no images, writes, git or API')
@@ -103,6 +103,7 @@ def main(argv=None):
     if args.dry_run:
         print(f"DRY-RUN OK: {len(queue)} topics, {sum(len(t['slides']) for t in queue)} slides; no side effects")
         return 0
+    raise ValueError('Publication disabled: use --dry-run. Reviewed Composio integration, durable reconciliation and explicit activation are required before production; credentials alone never enable publication.')
     if not TOKEN or not IG or not REPO:
         raise ValueError('IG_ACCESS_TOKEN, IG_USER_ID and GITHUB_REPOSITORY are required before any side effects')
     topic,ti = pick_topic(queue)
@@ -149,3 +150,4 @@ def main(argv=None):
 
 if __name__=='__main__':
     sys.exit(main())
+
