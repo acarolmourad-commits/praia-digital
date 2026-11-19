@@ -73,6 +73,30 @@ const deadline = setTimeout(() => {
           assert.deepEqual(errors, []);
           page.off('pageerror', onError);
         }
+        phase = `${width}px js=${javaScriptEnabled} pricing/laboratory round trip`;
+        console.log(phase);
+        await page.goto('https://praia.digital/apps/guia-de-uso.html#vender');
+        const pilotLink = page.locator('#vender a[href="/ia/marketplaces/piloto/"]');
+        assert.equal(await pilotLink.count(), 1);
+        // Fragment navigation scrolls smoothly. Wait on Node-side geometry before
+        // Playwright's click stability check, including with page JavaScript disabled.
+        let lastPilotBox = null;
+        let stablePilotSamples = 0;
+        const pilotDeadline = Date.now() + 5000;
+        while (stablePilotSamples < 3 && Date.now() < pilotDeadline) {
+          const current = await pilotLink.boundingBox();
+          assert.ok(current, 'Pilot link must be visible in layout');
+          stablePilotSamples = lastPilotBox && ['x', 'y', 'width', 'height'].every(key => Math.abs(current[key] - lastPilotBox[key]) < 0.5) ? stablePilotSamples + 1 : 0;
+          lastPilotBox = current;
+          await new Promise(resolve => setTimeout(resolve, 100));
+        }
+        assert.equal(stablePilotSamples, 3, 'Pilot link must stabilize before click');
+        await pilotLink.click();
+        await page.waitForURL('**/ia/marketplaces/piloto/');
+        await page.locator('a[href="/apps/guia-de-uso.html#vender"]').click();
+        await page.waitForURL('**/apps/guia-de-uso.html#vender');
+        assert.equal(await page.locator('input[type=checkbox]').count(), 12);
+        assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
         // Discovery links are complementary, not a seventeenth filtered app.
         for (const source of ['/', '/apps/']) {
           phase = `${width}px js=${javaScriptEnabled} discovery ${source}`;

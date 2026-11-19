@@ -20,6 +20,18 @@ class Links(HTMLParser):
 class CompleteAppNetworkTests(unittest.TestCase):
     def setUp(self):
         self.slugs = {p.parent.name for p in (ROOT/'apps').glob('*/index.html')}
+    def test_pilot_and_pricing_guide_have_contextual_round_trip(self):
+        guide = (ROOT/'apps/guia-de-uso.html').read_text(encoding='utf-8')
+        pilot = (ROOT/'ia/marketplaces/piloto/index.html').read_text(encoding='utf-8')
+        route = guide.split('id="vender"', 1)[1].split('</section>', 1)[0]
+        self.assertIn('/ia/marketplaces/piloto/', Links(route).links)
+        self.assertIn('Simulação com produtos fictícios', route)
+        self.assertIn('sem conexão com lojas ou estoque real', route)
+        self.assertIn('/apps/guia-de-uso.html#vender', Links(pilot).links)
+        self.assertIn('não são transferidos', pilot)
+        self.assertEqual(guide.count('type="checkbox"'), 12)
+        self.assertEqual(len(self.slugs), 16)
+
     def test_each_app_reaches_every_other_app_without_javascript(self):
         for slug in self.slugs:
             page = Links((ROOT/'apps'/slug/'index.html').read_text(encoding='utf-8'))
