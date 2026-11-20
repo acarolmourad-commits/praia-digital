@@ -30,7 +30,10 @@ def load_editorial(path=EDITORIAL):
         for field in ["platform", "title", "category", "summary", "brazil"]:
             if not article.get(field):
                 raise ValueError(f"Missing {field}: {name}")
-        if date.fromisoformat(article["source_published"]) > reviewed:
+        article_reviewed = date.fromisoformat(review_date(article, data["reviewed_on"]))
+        if article_reviewed > date.today():
+            raise ValueError(f"Review date is in the future: {name}")
+        if date.fromisoformat(article["source_published"]) > article_reviewed:
             raise ValueError(f"Source publication is later than review: {name}")
         if not article.get("sources") or not article.get("details") or not article.get("actions"):
             raise ValueError(f"Incomplete reviewed article: {name}")
@@ -38,12 +41,16 @@ def load_editorial(path=EDITORIAL):
             url = urlparse(source["url"])
             if url.scheme != "https" or url.hostname not in OFFICIAL_HOSTS or url.username:
                 raise ValueError(f"Source must be official HTTPS: {source['url']}")
-            if date.fromisoformat(source["date"]) > reviewed:
+            if date.fromisoformat(source["date"]) > article_reviewed:
                 raise ValueError(f"Source date is later than review: {name}")
     for article in data["articles"]:
         if article.get("related_file") and article["related_file"] not in files:
             raise ValueError("Related article is missing")
     return data
+
+
+def review_date(article, default):
+    return article.get("reviewed_on", default)
 
 
 def human_date(value):
@@ -79,6 +86,7 @@ def page(title, description, body, filename):
 
 def article_html(article, reviewed_on, detected_on=None):
     a = article
+    reviewed_on = review_date(a, reviewed_on)
     details = ''.join(f'<li>{esc(text)}</li>' for text in a["details"])
     actions = ''.join(f'<li>{esc(text)}</li>' for text in a["actions"])
     sources = ''.join(f'<li><a href="{esc(s["url"])}">{esc(s["label"])}</a> · {human_date(s["date"])}</li>' for s in a["sources"])
@@ -117,9 +125,10 @@ def index_html(articles, editorial=None, sources=None):
     editorial = editorial or load_editorial()
     reviewed = editorial["articles"]
     reviewed_files = {a["file"] for a in reviewed}
+    latest_review = max([editorial["reviewed_on"]] + [review_date(a, editorial["reviewed_on"]) for a in reviewed], key=date.fromisoformat)
     cards, archive = [], []
     for a in reviewed:
-        item = f'<span class="tag">{esc(a["platform"])}</span><span class="tag">{esc(a["category"])}</span><h3><a href="/blog/{esc(a["file"])}">{esc(a["title"])}</a></h3><p>{esc(a["summary"])}</p><p class="meta">Fonte: {human_date(a["source_published"])} · Revisado: {human_date(editorial["reviewed_on"])}</p>'
+        item = f'<span class="tag">{esc(a["platform"])}</span><span class="tag">{esc(a["category"])}</span><h3><a href="/blog/{esc(a["file"])}">{esc(a["title"])}</a></h3><p>{esc(a["summary"])}</p><p class="meta">Fonte: {human_date(a["source_published"])} · Revisado: {human_date(review_date(a, editorial["reviewed_on"]))}</p>'
         if a.get("featured"):
             cards.append(f'<article class="card">{item}</article>')
         else:
@@ -134,7 +143,7 @@ def index_html(articles, editorial=None, sources=None):
         coverage.append(f'<li><a href="{esc(source["url"])}">{esc(source["name"])}</a>: {status}{checked}</li>')
     body = f'''<p class="tag">Para anfitriões e gestores de temporada</p><h1>Novidades Airbnb e Booking</h1>
 <p>O que foi anunciado, onde está disponível e o que vale conferir no seu anúncio. Informativos com fontes oficiais, datas e sugestões práticas para o litoral paulista.</p>
-<p class="meta">Revisão editorial desta edição: <time datetime="{editorial["reviewed_on"]}">{human_date(editorial["reviewed_on"])}</time>. Publicação no site; <a href="/newsletter/assinatura.html">assinatura por e-mail ainda não ativa</a>.</p>
+<p class="meta">Revisão editorial mais recente: <time datetime="{latest_review}">{human_date(latest_review)}</time>. Publicação no site; <a href="/newsletter/assinatura.html">assinatura por e-mail ainda não ativa</a>.</p>
 <nav class="links" aria-label="Seções dos informativos"><a href="#revisados">Informativos revisados</a><a href="#arquivo">Outros assuntos</a><a href="#monitoramento">Monitoramento e limites</a></nav>
 <section id="revisados"><h2>Informativos revisados</h2><div class="grid">{''.join(cards)}</div></section>
 <section id="arquivo"><h2>Outros assuntos revisados</h2><p>Notícias institucionais, parcerias e medidas sazonais são identificadas separadamente dos recursos da plataforma.</p><ul>{''.join(archive)}</ul></section>
