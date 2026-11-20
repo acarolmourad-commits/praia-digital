@@ -133,7 +133,7 @@ async function contactPrivacy(browser, page, width) {
       plain.on('request', record);
       assert.deepEqual(await form.evaluate(el => Array.from(new FormData(el))), [],
         'native submission has zero fields to serialize');
-      await form.getByRole('button', { name: target.button }).click();
+      await form.getByRole('button', { name: target.button }).press('Enter');
       await plain.waitForLoadState('domcontentloaded');
       plain.off('request', record);
       for (const request of requests) {
