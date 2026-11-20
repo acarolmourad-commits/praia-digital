@@ -40,6 +40,60 @@ async function noOverflow(page, label) {
     `${label} horizontal overflow: ${JSON.stringify(dimensions)}`);
 }
 
+async function blackFriday(page, width) {
+  const special = origin + '/compras/black-friday.html';
+  await page.goto(origin + '/#especial-black-friday');
+  const feature = page.locator('#especial-black-friday').getByRole('link', { name: 'Explorar o especial Black Friday' });
+  assert.equal(await feature.getAttribute('href'), '/compras/black-friday.html');
+  await page.keyboard.press('Tab');
+  await feature.focus();
+  assert.deepEqual(await feature.evaluate(el => {
+    const style = getComputedStyle(el);
+    return [document.activeElement === el, style.outlineStyle, style.outlineColor];
+  }), [true, 'solid', 'rgb(148, 91, 0)'], 'homepage spotlight has the scoped high-contrast focus color');
+  await page.screenshot({ path: path.join(output, `black-friday-focus-${width}.png`) });
+  await page.keyboard.press('Enter');
+  await page.waitForURL(special);
+
+  const disclosure = page.locator('.hero .affiliate-disclosure');
+  const campaign = page.getByRole('link', { name: 'Consultar campanha na Amazon Brasil ↗' });
+  assert(await disclosure.isVisible() && await campaign.isVisible());
+  assert.match(await disclosure.innerText(), /pode receber comissão por compras qualificadas/);
+  const order = await disclosure.evaluate(el => {
+    const first = el.ownerDocument.querySelector('a[rel~="sponsored"]');
+    return !!first && !!(el.compareDocumentPosition(first) & Node.DOCUMENT_POSITION_FOLLOWING) &&
+      el.getBoundingClientRect().bottom <= first.getBoundingClientRect().top;
+  });
+  assert(order, 'disclosure appears visually and in reading order before the first affiliate link');
+  assert.equal(await page.locator('a[rel~="sponsored"]').count(), 49, 'one campaign and 48 products');
+  assert.equal(await page.locator('.summer .item').count(), 48);
+  assert.equal(await page.getByRole('link', { name: /^Comparar na Amazon Brasil — .+ \(abre nova aba\)$/ }).count(), 48);
+  await noOverflow(page, `Black Friday ${width}px`);
+  await page.locator('.summer .hero').screenshot({ path: path.join(output, `black-friday-disclosure-${width}.png`) });
+
+  // Focus the campaign link, but never follow a retailer link.
+  await campaign.focus();
+  assert.equal(await campaign.evaluate(el => el === document.activeElement && getComputedStyle(el).outlineStyle === 'solid'), true);
+  const themes = page.getByRole('navigation', { name: 'Temas da Black Friday' });
+  const ids = ['viagens', 'praia', 'temporada', 'presentes', 'decoracao', 'festas', 'comparar'];
+  assert.deepEqual(await themes.locator('a').evaluateAll(nodes => nodes.map(a => a.hash)), ids.map(id => '#' + id));
+  for (const id of ids) {
+    const jump = themes.locator(`a[href="#${id}"]`);
+    await jump.focus();
+    await page.keyboard.press('Enter');
+    await page.waitForURL(special + '#' + id);
+    await page.waitForFunction(target => {
+      const title = document.getElementById(target);
+      const header = document.querySelector('.pd-site-header');
+      if (!title || !header) return false;
+      const bounds = title.getBoundingClientRect();
+      return getComputedStyle(title).scrollMarginTop === '110px' &&
+        bounds.top >= header.getBoundingClientRect().bottom && bounds.bottom <= innerHeight;
+    }, id, { timeout: 5000 });
+  }
+  await page.screenshot({ path: path.join(output, `black-friday-anchor-${width}.png`) });
+}
+
 async function appCatalog(browser, page, width) {
   await page.goto(origin + '/apps/');
   assert.equal(await page.locator('main').count(), 1);
@@ -377,9 +431,10 @@ async function houseListing(page,width){
         await contactAndCases(page, width);
         await houseListing(page,width);
         await appCatalog(browser, page, width);
+        await blackFriday(page, width);
         assert.deepEqual(sideEffects, [], 'no external navigation or non-GET requests');
         assert.deepEqual(errors, [], 'no uncaught JavaScript errors');
-        results.push({ width, status: 'passed', checks: ['app catalog objectives, keyboard, return and no-JS', 'home layout', 'responsive footer', 'menu escape/repeat', 'single product comparison', 'search parse/zero/positive', 'reload/back/forward/reset', 'legacy query', 'contextual contact', 'optional payment', 'illustrative cases','house catalog/photos/calculators'] });
+        results.push({ width, status: 'passed', checks: ['app catalog objectives, keyboard, return and no-JS', 'home layout', 'Black Friday focus, disclosure, names and seven anchors', 'responsive footer', 'menu escape/repeat', 'single product comparison', 'search parse/zero/positive', 'reload/back/forward/reset', 'legacy query', 'contextual contact', 'optional payment', 'illustrative cases','house catalog/photos/calculators'] });
         console.log(`${width}px: homepage, search, contact and cases passed`);
       } catch (error) {
         results.push({ width, status: 'failed', message: error.message, errors });
