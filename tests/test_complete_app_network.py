@@ -88,6 +88,22 @@ class CompleteAppNetworkTests(unittest.TestCase):
                     target = Links((ROOT/path.lstrip('/')).read_text(encoding='utf-8'))
                     self.assertEqual(target.ids.count(anchor), 1, href)
 
+    def test_daily_rate_resource_connects_catalog_and_seasonal_tools(self):
+        resource = '/ferramentas/calculadora-diaria-ideal-airbnb-2026.html'
+        catalog = (ROOT/'apps/index.html').read_text(encoding='utf-8')
+        primary, extras = catalog.split('aria-label="Outros recursos"', 1)
+        self.assertNotIn(resource + '#form-calculo', Links(primary).links)
+        self.assertIn(resource + '#form-calculo', Links(extras.split('</nav>', 1)[0]).links)
+        self.assertEqual(len(self.slugs), 16)
+        daily = (ROOT/resource.lstrip('/')).read_text(encoding='utf-8')
+        self.assertEqual(Links(daily).ids.count('form-calculo'), 1)
+        next_steps = daily.split('aria-labelledby="proximos-passos-temporada"', 1)[1].split('</nav>', 1)[0]
+        self.assertEqual(Links(next_steps).links, [
+            '/apps/simulador-roi-temporada/', '/apps/temporada-ou-anual/', '/apps/',
+        ])
+        self.assertIn('Os dados não passam automaticamente', next_steps)
+        self.assertIn('scroll-margin-top:100px', daily.split('#form-calculo,', 1)[1].split('}', 1)[0])
+
     def test_registry_and_generated_navigation_are_current(self):
         self.assertEqual(builder.build(check=True),[])
 
