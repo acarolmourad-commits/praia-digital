@@ -127,10 +127,19 @@ async function contactPrivacy(browser, page, width) {
       }
       await form.locator('#mensagem').fill('Somente teste');
       assert(await form.evaluate(el => el.checkValidity()));
-      await Promise.all([
-        plain.waitForNavigation({ waitUntil: 'domcontentloaded' }),
-        form.getByRole('button', { name: target.button }).click()
-      ]);
+      // The browser may reload for an empty GET or remain at the same address.
+      const requests = [];
+      const record = request => { if (request.isNavigationRequest()) requests.push(new URL(request.url())); };
+      plain.on('request', record);
+      assert.deepEqual(await form.evaluate(el => Array.from(new FormData(el))), [],
+        'native submission has zero fields to serialize');
+      await form.getByRole('button', { name: target.button }).click();
+      await plain.waitForLoadState('domcontentloaded');
+      plain.off('request', record);
+      for (const request of requests) {
+        assert.equal(request.origin + request.pathname, origin + target.path);
+        assert.equal(request.searchParams.size, 0, 'no fields in any native navigation request');
+      }
       const result = new URL(plain.url());
       assert.equal(result.origin + result.pathname, origin + target.path);
       assert.equal(result.searchParams.size, 0, 'without JavaScript no field is serialized into the URL');
