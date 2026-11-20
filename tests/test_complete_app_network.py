@@ -62,6 +62,32 @@ class CompleteAppNetworkTests(unittest.TestCase):
         for source in ['index.html', 'apps/index.html']:
             self.assertIn('/apps/guia-de-uso.html', Links((ROOT/source).read_text(encoding='utf-8')).links)
 
+    def test_legacy_explore_cards_link_to_contextual_praia_digital_resources(self):
+        destinations = {
+            'comparador-cidades': ('/guias/ficha-comparacao-bairros-litoral.html#ficha',),
+            'valor-imovel': ('/apps/guia-de-uso.html#comprar',),
+            'calculadora-consorcio': (
+                '/apps/guia-de-uso.html#comprar',
+                '/guias/usar-apps-com-evidencias.html#registro',
+            ),
+            'checklist-vistoria': ('/apps/guia-de-uso.html#revisao-anuncios',),
+        }
+        for slug, hrefs in destinations.items():
+            with self.subTest(app=slug):
+                html = (ROOT/'apps'/slug/'index.html').read_text(encoding='utf-8')
+                heading = '🔗 Explore mais</h2>'
+                self.assertEqual(html.count(heading), 1)
+                card = html.split(heading, 1)[1].split('</div>', 1)[0]
+                explore = Links(card)
+                page = Links(html)
+                self.assertFalse(any('github.io/asf-app' in href for href in page.links))
+                for href in hrefs:
+                    self.assertIn(href, explore.links)
+                    self.assertEqual(page.links.count(href), 1, href)
+                    path, anchor = href.split('#')
+                    target = Links((ROOT/path.lstrip('/')).read_text(encoding='utf-8'))
+                    self.assertEqual(target.ids.count(anchor), 1, href)
+
     def test_registry_and_generated_navigation_are_current(self):
         self.assertEqual(builder.build(check=True),[])
 

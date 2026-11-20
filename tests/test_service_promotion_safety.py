@@ -72,6 +72,14 @@ class ServicePromotionSafety(unittest.TestCase):
     def test_contrast_overrides_survive_shared_styles(self):
         self.assertIn('section.cta{background:linear-gradient', (ROOT/PAGES[0]).read_text())
         self.assertIn('.hero .btn-secondary{background:#15385b', (ROOT/PAGES[2]).read_text())
+    def test_listing_roi_points_to_annual_seasonal_simulator(self):
+        source=(ROOT/PAGES[0]).read_text()
+        self.assertIn('href="/apps/simulador-roi-temporada/"', source)
+        self.assertIn('Abrir o simulador de ROI de temporada', source)
+        self.assertIn('retorno anual do aluguel por temporada', source)
+        self.assertNotIn('/assets/simulador-roi-proprietario.html', source)
+        self.assertNotIn('30 segundos', source)
+
     def test_local_links_resolve(self):
         for page in PAGES:
             p=Parser();p.feed((ROOT/page).read_text())

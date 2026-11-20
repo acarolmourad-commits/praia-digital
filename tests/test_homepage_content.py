@@ -64,6 +64,48 @@ class HomepageContent(unittest.TestCase):
             self.assertEqual(sum(t=='link' and a.get('rel')=='canonical' for t,a in tags),1,file)
             self.assertTrue(any(t=='meta' and a.get('name')=='viewport' for t,a in tags),file)
 
+class IllustrativeCases(unittest.TestCase):
+    def test_examples_are_methods_not_outcomes(self):
+        index=(ROOT/'cases.html').read_text(encoding='utf-8')
+        cards=index.split('<h2>Cenários hipotéticos de aplicação</h2>',1)[1].split('<h2>Conteúdos recomendados</h2>',1)[0]
+        routes=re.findall(r'href="(cases/case-[^"]+\.html)"',cards)
+        self.assertEqual(len(routes),5)
+        self.assertEqual(len(set(routes)),5)
+        self.assertIn('cases/case-imobiliaria-porto-da-lua-35-leads-2026.html',routes)
+        invented=r'(?:35\s+leads|(?:25|28|30|35|40|60|70)\s*%|(?:15|30|90)\s+dias|(?:4|6)\s+semanas|12\s+visitas|\bROI\s+positivo\b|\bprocesso acelerado\b)'
+        self.assertNotRegex(cards,invented)
+        self.assertEqual(cards.count('Métrica a observar:'),5)
+        self.assertIn('id="evolucao-aplicativos"',index)
+        self.assertIn('id="guia-checklist-acessivel"',index)
+        for route in routes:
+            with self.subTest(route=route):
+                doc=(ROOT/route).read_text(encoding='utf-8')
+                tags=Tags(doc).tags
+                titles=[re.search(r'<'+tag+r'[^>]*>([^<]*)</'+tag+r'>',doc).group(1) for tag in ('title','h1')]
+                self.assertTrue(all(x.startswith('Exemplo ilustrativo:') for x in titles))
+                canonical=[x['href'] for tag,x in tags if tag=='link' and x.get('rel')=='canonical']
+                self.assertEqual(canonical,['https://praia.digital/'+route])
+                for key in ('description','og:title','og:description','twitter:title','twitter:description'):
+                    matching=[x['content'] for tag,x in tags if tag=='meta' and (x.get('name')==key or x.get('property')==key)]
+                    self.assertEqual(len(matching),1,key)
+                    self.assertTrue(matching[0].startswith('Exemplo ilustrativo'),key)
+                schemas=[json.loads(s) for s in re.findall(r'<script type="application/ld\+json">([\s\S]*?)</script>',doc)]
+                articles=[s for s in schemas if s.get('@type')=='Article']
+                self.assertEqual(len(articles),1)
+                self.assertEqual(articles[0]['headline'],titles[0])
+                self.assertEqual(articles[0]['url'],canonical[0])
+                self.assertTrue(articles[0]['description'].startswith('Exemplo ilustrativo'))
+                self.assertTrue(any(q.get('name')=='Qual o conteúdo desta página?'
+                    and q.get('acceptedAnswer',{}).get('text')==articles[0]['description']
+                    for s in schemas if s.get('@type')=='FAQPage' for q in s.get('mainEntity',[])))
+                # Ignore legacy slugs in hrefs/canonical and JSON URL fields, not human-readable claims.
+                text=re.sub(r'https://praia\.digital/cases/[^"<\s]+','',doc)
+                self.assertNotRegex(text,invented)
+                self.assertNotIn('Em até 24 horas',text)
+                self.assertIn('<h2>O que medir</h2>',text)
+                self.assertNotIn('<h2>Resultado</h2>',text)
+
+
 class HomepageSocialPreview(unittest.TestCase):
     def test_institutional_image_and_accessible_metadata(self):
         from urllib.parse import urlsplit
