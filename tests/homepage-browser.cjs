@@ -284,7 +284,9 @@ async function contactAndCases(page, width) {
   await page.goto(origin + '/cases.html', { waitUntil: 'load' });
   assert.match(await page.locator('h1').innerText(), /Exemplos ilustrativos/i);
   const text = await page.locator('body').innerText();
-  assert.match(text, /Hipótese:/i);
+  const indicators = page.locator('.metric').filter({ hasText: /^Métrica a observar:/i });
+  assert.equal(await indicators.count(), 5, 'five illustrative scenarios describe indicators to observe');
+  for (const indicator of await indicators.all()) assert(await indicator.isVisible());
   assert(!/métricas verificáveis/i.test(text), 'illustrative cases must not imply verified metrics');
   await noOverflow(page, `illustrative cases ${width}px`);
 }
