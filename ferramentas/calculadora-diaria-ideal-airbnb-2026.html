@@ -58,11 +58,12 @@
 <option>Ilhabela</option><option>Bertioga</option><option>Outra</option></select></div>
  <div><label for="custos">Custos fixos mensais (R$)</label><input id="custos" type="number" min="0" max="100000000" step="0.01" value="1500" required inputmode="decimal"></div>
  <div><label for="limpeza">Custo de limpeza por reserva (R$)</label><input id="limpeza" type="number" min="0" max="100000000" step="0.01" value="150" required inputmode="decimal"></div>
+ <div><label for="noites-disponiveis">Noites disponíveis por ano</label><input id="noites-disponiveis" type="number" min="1" max="365" step="1" value="365" required inputmode="numeric"></div>
  <div><label for="ocupacao">Ocupação esperada (%)</label><input id="ocupacao" type="number" min="0.01" max="100" step="0.01" value="45" required inputmode="decimal"></div>
  <div><label for="lucro">Lucro mensal desejado (R$)</label><input id="lucro" type="number" min="0" max="100000000" step="0.01" value="3000" required inputmode="decimal"></div>
  <div><label for="estadia">Média de noites por reserva</label><input id="estadia" type="number" min="1" max="365" step="0.01" value="3" required inputmode="decimal"></div>
       </div><button class="btn" id="calcular" type="submit">Calcular diária</button><p id="erro-calculo" role="alert" hidden></p>
-        <p class="lead">Considera 365 noites disponíveis por ano e médias constantes. A limpeza é um custo absorvido pela diária, sem cobrança separada. Inclua nos custos as despesas que deseja cobrir; taxas de plataforma, impostos e outros gastos não são adicionados automaticamente.</p></form>
+        <p class="lead">A ocupação é aplicada às noites disponíveis, não ao ano inteiro quando há bloqueios. O cálculo usa médias constantes. A limpeza é um custo absorvido pela diária, sem cobrança separada. Inclua nos custos as despesas que deseja cobrir; taxas de plataforma, impostos e outros gastos não são adicionados automaticamente.</p></form>
       <p class="lead">Referências de cidade são parâmetros ilustrativos e não representam dados oficiais ou atualizados em tempo real. Use dados próprios para decisões financeiras.</p>
       <div class="card resultado" id="resultado" hidden aria-labelledby="titulo-resultado" tabindex="-1">
         <h2 id="titulo-resultado">Resultado da simulação</h2>
@@ -90,6 +91,7 @@
 <script>
 function brl(v){ return v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'}); }
 function pct(v){ return v.toLocaleString('pt-BR',{minimumFractionDigits:1,maximumFractionDigits:1})+'%'; }
+function noites(v){ return v.toLocaleString('pt-BR',{maximumFractionDigits:4}); }
 function num(id){ return Number(document.getElementById(id).value); }
 function txt(id){ return document.getElementById(id).value.trim(); }
 var BENCHMARKS = {
@@ -114,7 +116,7 @@ function invalidate(){
   $('pos-envio').style.display = 'none';
   $('status-envio').textContent = '';
   $('erro-calculo').hidden = true;
-  ['custos','limpeza','ocupacao','lucro','estadia'].forEach(function(id){$(id).removeAttribute('aria-invalid');$(id).removeAttribute('aria-describedby');});
+  ['custos','limpeza','noites-disponiveis','ocupacao','lucro','estadia'].forEach(function(id){$(id).removeAttribute('aria-invalid');$(id).removeAttribute('aria-describedby');});
   if(reportUrl){ URL.revokeObjectURL(reportUrl); reportUrl = null; }
 }
 function showError(message,id){
@@ -122,22 +124,26 @@ function showError(message,id){
   $('erro-calculo').hidden = false;
   if(id){$(id).setAttribute('aria-invalid','true');$(id).setAttribute('aria-describedby','erro-calculo');$(id).focus();}
 }
-function createReport(s){
+function createReport(s,noitesDisponiveis,noitesOcupadas){
   var rows = [['Cidade',s.cidade],['Diária ideal',s.diaria_ideal],['Diária mínima (empate)',s.diaria_minima],
     ['Custos fixos mensais',s.custos_mensais],['Limpeza por reserva',s.limpeza_por_reserva],['Lucro mensal desejado',s.lucro_mensal],
-    ['Ocupação esperada',pct(s.ocupacao_pct)],['Média de noites por reserva',s.noites_media_reserva],
+    ['Ocupação esperada',pct(s.ocupacao_pct)],['Noites disponíveis por ano',noites(noitesDisponiveis)],['Noites ocupadas estimadas por ano',noites(noitesOcupadas)],['Média de noites por reserva',s.noites_media_reserva],
     ['Referência ilustrativa de diária (não é mercado observado)',s.diaria_referencia_ilustrativa],['Referência ilustrativa de ocupação',s.ocupacao_referencia_ilustrativa]];
   var html = '<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Resumo de diária — Praia Digital</title><style>body{font-family:Arial,sans-serif;max-width:800px;margin:30px auto;padding:0 16px;line-height:1.6}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ccc;padding:8px;text-align:left;overflow-wrap:anywhere}</style></head><body><h1>Resumo da simulação de diária</h1><table><tr><th scope="col">Indicador</th><th scope="col">Valor</th></tr>';
   rows.forEach(function(row){html += '<tr><th scope="row">'+escapeHtml(row[0])+'</th><td>'+escapeHtml(row[1])+'</td></tr>';});
-  return html+'</table><h2>Premissas e limites</h2><p>Diária mínima = custos fixos mensais × 12 ÷ (365 × ocupação / 100) + limpeza por reserva ÷ média de noites por reserva. A diária ideal acrescenta o lucro mensal desejado × 12 ÷ (365 × ocupação / 100).</p><p>Considera 365 noites disponíveis e médias constantes. A limpeza é absorvida pela diária, sem cobrança separada. Taxas de plataforma, impostos e outros gastos não são adicionados automaticamente. O resultado não garante lucro ou reservas.</p><p>As referências por cidade são apenas ilustrativas, não representam mercado observado, não comprovam demanda e não recomendam subir ou baixar preços. Este resumo não inclui pesquisa por bairro, sazonalidade ou plano de precificação.</p><p><a href="https://praia.digital/ferramentas/">Ferramentas Praia Digital</a></p></body></html>';
+  return html+'</table><h2>Premissas e limites</h2><p>Noites ocupadas estimadas = noites disponíveis × ocupação / 100. Diária mínima = custos fixos mensais × 12 ÷ noites ocupadas estimadas + limpeza por reserva ÷ média de noites por reserva. A diária ideal acrescenta o lucro mensal desejado × 12 ÷ noites ocupadas estimadas.</p><p>O cálculo usa médias constantes. A limpeza é absorvida pela diária, sem cobrança separada. Taxas de plataforma, impostos e outros gastos não são adicionados automaticamente. O resultado não garante lucro ou reservas.</p><p>As referências por cidade são apenas ilustrativas, não representam mercado observado, não comprovam demanda e não recomendam subir ou baixar preços. Este resumo não inclui pesquisa por bairro, sazonalidade ou plano de precificação.</p><p><a href="https://praia.digital/ferramentas/">Ferramentas Praia Digital</a></p></body></html>';
 }
-['cidade','custos','limpeza','ocupacao','lucro','estadia'].forEach(function(id){
+['cidade','custos','limpeza','noites-disponiveis','ocupacao','lucro','estadia'].forEach(function(id){
   $(id).addEventListener('input',invalidate);
   $(id).addEventListener('change',invalidate);
 });
 $('form-calculo').addEventListener('submit', function(event){
   event.preventDefault();
   invalidate();
+  var noitesDisponiveis=num('noites-disponiveis');
+  if(!Number.isInteger(noitesDisponiveis) || noitesDisponiveis<1 || noitesDisponiveis>365 || !$('noites-disponiveis').checkValidity()){
+    showError('Informe um número inteiro entre 1 e 365 para as noites disponíveis por ano.','noites-disponiveis');return;
+  }
   var fields = [
     ['custos','custos fixos mensais',0,100000000],['limpeza','custo de limpeza',0,100000000],
     ['ocupacao','ocupação esperada',0.01,100],['lucro','lucro mensal desejado',0,100000000],['estadia','média de noites por reserva',1,365]
@@ -150,18 +156,20 @@ $('form-calculo').addEventListener('submit', function(event){
   }
   var cidade=txt('cidade'), bm=BENCHMARKS[cidade] || BENCHMARKS['Outra'];
   var custos=num('custos'), limpeza=num('limpeza'), ocup=num('ocupacao'), lucro=num('lucro'), estadia=num('estadia');
-  var diasOcup=365*ocup/100;
-  var diariaMinima=custos*12/diasOcup+limpeza/estadia;
-  var diariaIdeal=(custos+lucro)*12/diasOcup+limpeza/estadia;
+  var noitesOcupadas=noitesDisponiveis*ocup/100;
+  var diariaMinima=custos*12/noitesOcupadas+limpeza/estadia;
+  var diariaIdeal=(custos+lucro)*12/noitesOcupadas+limpeza/estadia;
   if(!Number.isFinite(diariaMinima)||!Number.isFinite(diariaIdeal)){showError('Os valores excedem a capacidade do cálculo. Revise as entradas.');return;}
   $('principal').textContent='Diária ideal: '+brl(diariaIdeal);
   $('detalhes').innerHTML='<table><tr><th scope="col">Indicador</th><th scope="col">Valor</th></tr>'
     +'<tr><th scope="row">Diária mínima (empate)</th><td>'+brl(diariaMinima)+'</td></tr>'
+    +'<tr><th scope="row">Noites disponíveis por ano</th><td>'+noites(noitesDisponiveis)+'</td></tr>'
+    +'<tr><th scope="row">Noites ocupadas estimadas por ano</th><td>'+noites(noitesOcupadas)+'</td></tr>'
     +'<tr><th scope="row">Referência ilustrativa de diária em '+escapeHtml(cidade)+'</th><td>'+brl(bm.diaria)+'</td></tr>'
     +'<tr><th scope="row">Referência ilustrativa de ocupação</th><td>'+pct(bm.ocup)+'</td></tr></table>';
-  $('dica').textContent='A diária calculada depende apenas dos custos, do lucro desejado e da ocupação informados. As referências são exemplos, não mercado observado: não comprovam demanda nem indicam se você deve subir ou baixar o preço.';
+  $('dica').textContent='A diária calculada depende dos custos, do lucro desejado, das noites disponíveis e da ocupação informados. As referências são exemplos, não mercado observado: não comprovam demanda nem indicam se você deve subir ou baixar o preço.';
   window.__sim={cidade:cidade,diaria_ideal:brl(diariaIdeal),diaria_minima:brl(diariaMinima),diaria_referencia_ilustrativa:brl(bm.diaria),ocupacao_referencia_ilustrativa:pct(bm.ocup),ocupacao_pct:ocup,noites_media_reserva:estadia,custos_mensais:brl(custos),limpeza_por_reserva:brl(limpeza),lucro_mensal:brl(lucro)};
-  reportUrl=URL.createObjectURL(new Blob([createReport(window.__sim)],{type:'text/html;charset=utf-8'}));
+  reportUrl=URL.createObjectURL(new Blob([createReport(window.__sim,noitesDisponiveis,noitesOcupadas)],{type:'text/html;charset=utf-8'}));
   $('baixar-relatorio').href=reportUrl;
   $('baixar-relatorio').hidden=false;
   $('resultado').hidden=false;

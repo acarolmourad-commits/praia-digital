@@ -33,6 +33,7 @@ const root = path.resolve(__dirname, '..');
    assert.equal(await overflow(),false);
    fs.mkdirSync('/tmp/diaria-previews',{recursive:true});
    await page.screenshot({path:`/tmp/diaria-previews/top-${width}.png`});
+   assert.equal(await page.locator('#noites-disponiveis').inputValue(),'365');
    await page.locator('#estadia').focus();await page.keyboard.press('Enter');
    assert.match(await page.locator('#principal').innerText(),/378,77/);
    assert.match(await page.locator('#detalhes').innerText(),/159,59/);
@@ -53,13 +54,36 @@ const root = path.resolve(__dirname, '..');
    assert.equal(await overflow(),false);
    fs.mkdirSync('/tmp/diaria-previews',{recursive:true});
    await page.locator('#resultado').screenshot({path:`/tmp/diaria-previews/result-${width}.png`});
+   for (const [id,value] of [['custos','1200'],['limpeza','90'],['lucro','0'],['ocupacao','50'],['estadia','3']]) await page.locator('#'+id).fill(value);
+   await calculate();
+   const nightValue=label=>page.getByRole('row').filter({has:page.getByRole('rowheader',{name:label,exact:true})}).locator('td').innerText();
+   assert.match(await page.locator('#principal').innerText(),/108,90/);
+   assert.equal(await nightValue('Noites disponíveis por ano'),'365');
+   assert.equal(await nightValue('Noites ocupadas estimadas por ano'),'182,5');
+   const previousReport=await page.locator('#baixar-relatorio').getAttribute('href');
+   await page.locator('#noites-disponiveis').fill('200');
+   assert.equal(await visible('resultado'),false);
+   assert.equal(await visible('baixar-relatorio'),false);
+   assert.equal(await page.locator('#baixar-relatorio').getAttribute('href'),null);
+   assert.equal(await page.evaluate(()=>window.__sim),null);
+   await calculate();
+   assert.match(await page.locator('#principal').innerText(),/174,00/);
+   assert.equal(await nightValue('Noites disponíveis por ano'),'200');
+   assert.equal(await nightValue('Noites ocupadas estimadas por ano'),'100');
+   assert.notEqual(await page.locator('#baixar-relatorio').getAttribute('href'),previousReport);
+   const capacityDownload=page.waitForEvent('download');await page.locator('#baixar-relatorio').click();
+   const capacityReport=fs.readFileSync(await (await capacityDownload).path(),'utf8');
+   assert.match(capacityReport,/174,00/);
+   assert.ok(capacityReport.includes('Noites disponíveis por ano</th><td>200</td>'));
+   assert.ok(capacityReport.includes('Noites ocupadas estimadas por ano</th><td>100</td>'));
+   assert.equal(sendCount,0);
    for (const [id,value] of [['custos','1600'],['limpeza','160'],['lucro','3100'],['ocupacao','46'],['estadia','3.5']]) {
     await page.locator('#'+id).fill(value);
     assert.equal(await visible('resultado'),false);assert.equal(await visible('baixar-relatorio'),false);
     assert.equal(await page.evaluate(()=>window.__sim),null);await calculate();
    }
    await page.locator('#cidade').selectOption('Guarujá');assert.equal(await visible('resultado'),false);await calculate();
-   for(const [id,value] of [['ocupacao','0'],['ocupacao','150'],['ocupacao','-1'],['custos','-1'],['limpeza','-1'],['lucro','-1'],['estadia','0'],['estadia','366'],['custos','100000001'],['custos',''],['custos','NaN'],['custos','Infinity']]) {
+   for(const [id,value] of [['noites-disponiveis','0'],['noites-disponiveis','366'],['noites-disponiveis','200.5'],['ocupacao','0'],['ocupacao','150'],['ocupacao','-1'],['custos','-1'],['limpeza','-1'],['lucro','-1'],['estadia','0'],['estadia','366'],['custos','100000001'],['custos',''],['custos','NaN'],['custos','Infinity']]) {
     const old=await page.locator('#'+id).inputValue();
     await page.locator('#'+id).evaluate((e,v)=>{e.value=v;e.dispatchEvent(new Event('input',{bubbles:true}));},value);
     await calculate();assert.equal(await visible('resultado'),false);assert.equal(await visible('erro-calculo'),true);
