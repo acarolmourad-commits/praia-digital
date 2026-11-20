@@ -65,6 +65,32 @@ class HomepageContent(unittest.TestCase):
             self.assertTrue(any(t=='meta' and a.get('name')=='viewport' for t,a in tags),file)
 
 class IllustrativeCases(unittest.TestCase):
+    def test_availability_technical_case_uses_canonical_tools_and_an_illustrative_scenario(self):
+        index = (ROOT/'cases.html').read_text(encoding='utf-8')
+        start = '<section id="disponibilidade-temporada"'
+        self.assertEqual(index.count(start), 1)
+        self.assertLess(index.index(start), index.index('<h2>Cenários hipotéticos de aplicação</h2>'))
+        card = index.split(start, 1)[1].split('</section>', 1)[0]
+        self.assertIn('aria-labelledby="disponibilidade-temporada-titulo"', card)
+        self.assertIn('<h2 id="disponibilidade-temporada-titulo">', card)
+        self.assertIn('Caso técnico da própria Praia Digital', card)
+        self.assertIn('50% de ocupação hipotética', card)
+        self.assertIn('365 noites disponíveis resultam em 182,5 noites ocupadas estimadas; com 200 noites disponíveis, são 100', card)
+        self.assertIn('não mede demanda, ocupação real ou rentabilidade de clientes', card)
+        self.assertNotIn('R$', card)
+        links = re.findall(r'href="(/[^"]+)"', card)
+        self.assertEqual(links, [
+            '/ferramentas/calculadora-diaria-ideal-airbnb-2026.html',
+            '/apps/simulador-roi-temporada/',
+        ])
+        for href in links:
+            file = ROOT / href.lstrip('/')
+            html = (file/'index.html' if file.is_dir() else file).read_text(encoding='utf-8')
+            canonical = [attrs['href'] for tag, attrs in Tags(html).tags
+                         if tag == 'link' and attrs.get('rel') == 'canonical']
+            self.assertEqual(canonical, ['https://praia.digital' + href])
+        self.assertEqual(re.findall(r'href="https://github.com/acarolmourad-commits/praia-digital/pull/([0-9]+)"', card), ['254', '255'])
+
     def test_examples_are_methods_not_outcomes(self):
         index=(ROOT/'cases.html').read_text(encoding='utf-8')
         cards=index.split('<h2>Cenários hipotéticos de aplicação</h2>',1)[1].split('<h2>Conteúdos recomendados</h2>',1)[0]
