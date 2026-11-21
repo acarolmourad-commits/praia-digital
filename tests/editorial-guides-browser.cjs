@@ -161,6 +161,26 @@ async function search(page) {
             await summary.focus();
             await page.keyboard.press('Enter');
             assert.equal(await summary.evaluate(element => element.parentElement.open), true);
+            const hostUrl = origin + '/anfitrioes/index.html';
+            const briefing = '/blog/briefing-criacao-anuncio-airbnb-booking.html';
+            const worksheet = '/blog/uma-ficha-tres-anuncios-imobiliarios.html#ficha-por-acomodacao';
+            const card = page.locator('section[aria-labelledby="guias-operacao"] article').filter({ hasText: 'Briefing para criação de anúncio' });
+            for (const [url, label] of [
+              [briefing, 'Preparar meu briefing'],
+              [worksheet, 'Ficha por categoria de acomodação'],
+            ]) {
+              const link = card.getByRole('link', { name: label, exact: true });
+              assert.equal(await link.getAttribute('href'), url);
+              record.focus.push(await keyboardFocus(page, link, label));
+              await link.press('Enter');
+              await page.waitForURL(origin + url);
+              if (url === worksheet) {
+                assert.match(await page.locator('h2#ficha-por-acomodacao').innerText(), /categoria de acomodação/);
+              }
+              await page.goBack();
+              assert.equal(page.url(), hostUrl);
+              await noOverflow(page, 'host briefing card after back navigation');
+            }
           } else if (file !== 'blog/index.html') {
             record.focus.push(await keyboardFocus(page, page.locator('.toc a').first(), 'table of contents'));
             record.focus.push(await keyboardFocus(page, page.locator('.cta-box .button'), 'article CTA'));

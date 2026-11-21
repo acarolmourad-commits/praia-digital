@@ -86,6 +86,15 @@ class BlogDiscoveryTests(unittest.TestCase):
             self.assertTrue(any(t == 'a' and a.get('href') == '/servicos/ia-para-imobiliarias.html'
                                 for t, a in tags), file)
 
+    def test_host_briefing_keeps_its_cta_and_links_the_category_worksheet(self):
+        host = (ROOT / 'anfitrioes/index.html').read_text()
+        guides = host.split('<section aria-labelledby="guias-operacao">', 1)[1].split('</section>', 1)[0]
+        card = guides.split('<h3>Briefing para criação de anúncio</h3>', 1)[1].split('</article>', 1)[0]
+        self.assertEqual(re.findall(r'<a[^>]+href="([^"]+)"[^>]*>([^<]+)</a>', card), [
+            ('/blog/briefing-criacao-anuncio-airbnb-booking.html', 'Preparar meu briefing'),
+            ('/blog/uma-ficha-tres-anuncios-imobiliarios.html#ficha-por-acomodacao', 'Ficha por categoria de acomodação'),
+        ])
+
     def test_search_loads_after_parsing_and_has_accessible_fallback(self):
         text = (ROOT / 'blog/index.html').read_text()
         tags = Page(text).tags
