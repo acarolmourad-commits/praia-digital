@@ -2,7 +2,9 @@
 """Gera relatorio executivo HTML da operacao outbound (dados reais dos trackers)."""
 import csv, json, os
 from collections import Counter
-REPO = r"C:/Users/Carolina/praia-digital"
+from pathlib import Path
+
+REPO = str(Path(__file__).resolve().parents[1])
 DIR = os.path.join(REPO, "docs/sales/csv-lotes-email")
 OUT = os.path.join(REPO, "docs/sales/relatorio-executivo-outbound.html")
 METAS = os.path.join(REPO, "docs/sales/METAS_OUTBOUND.json")

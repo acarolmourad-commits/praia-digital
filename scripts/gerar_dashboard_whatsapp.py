@@ -7,7 +7,9 @@ import csv, os
 from collections import Counter, defaultdict
 from datetime import date
 
-REPO = r"C:/Users/Carolina/praia-digital"
+from pathlib import Path
+
+REPO = str(Path(__file__).resolve().parents[1])
 WHATS_DIR = os.path.join(REPO, "docs/sales/csv-lotes-email")
 TRACKER = os.path.join(WHATS_DIR, "tracker-whatsapp-proprietarios.csv")
 OUT = os.path.join(REPO, "docs/sales", "dashboard-whatsapp-proprietarios.html")
