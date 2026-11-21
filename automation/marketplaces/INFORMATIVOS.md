@@ -1,6 +1,6 @@
 # Informativos Airbnb e Booking
 
-`informativos-revisados.json` contém o conteúdo editorial, fontes primárias, datas de publicação, limites para o Brasil e sugestões identificadas como análise da Praia Digital. A data de revisão só deve mudar após nova conferência editorial. Não é o horário da coleta automática.
+`informativos-revisados.json` contém o conteúdo editorial, fontes primárias, datas de publicação, limites para o Brasil e sugestões identificadas como análise da Praia Digital. A data de revisão só deve mudar após nova conferência editorial. Não é o horário da coleta automática. Use `reviewed_on` no artigo quando só ele foi revisado; a data geral continua como padrão dos demais.
 
 Para renderizar localmente, sem consultar serviços ou alterar o estado do monitor:
 

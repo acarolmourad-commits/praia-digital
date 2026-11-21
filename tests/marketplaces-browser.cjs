@@ -28,7 +28,7 @@ const files = ['novidades-airbnb-booking.html', ...data.articles.map(a => a.file
         assert.equal(await page.locator('form').count(), 0, 'No misleading signup or data collection');
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, 'No overflow ' + width + ': ' + file);
         if (file === files[0]) {
-          assert.equal(await page.locator('#revisados .card').count(), 4);
+          assert.equal(await page.locator('#revisados .card').count(), data.articles.filter(a => a.featured).length);
           for (const id of ['revisados', 'arquivo', 'monitoramento']) assert.equal(await page.locator('#' + id).count(), 1);
           if (width <= 1080) {
             await page.locator('.pd-site-toggle').click();
@@ -45,7 +45,7 @@ const files = ['novidades-airbnb-booking.html', ...data.articles.map(a => a.file
       }
       await page.close();
     }
-    console.log('Marketplace browser checks passed: 11 pages at 4 widths, published navigation, menu dismissal, sources, and no overflow.');
+    console.log(`Marketplace browser checks passed: ${files.length} pages at 4 widths, published navigation, menu dismissal, sources, and no overflow.`);
   } finally {
     await browser.close();
     fs.rmSync(temp, {recursive: true, force: true});
