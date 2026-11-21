@@ -1,6 +1,12 @@
 {
   "reviewed": "2026-11-02",
   "regionalSource": "https://semil.sp.gov.br/sma/gerco/",
+  "accessNotice": {
+    "citySlugs": ["praia-grande", "santos", "guaruja"],
+    "text": "Se o trajeto passar pelo Sistema Anchieta–Imigrantes, a Ecovias anunciou para 1º de dezembro de 2026 o início do pedágio eletrônico Siga Fácil, com cobrança nos dois sentidos. Para veículos sujeitos à tarifa, uma tag ativa permite a cobrança automática. Sem tag, confira o débito pela placa e pague em até 30 dias após cada passagem. Antes de viajar, confirme a operação e consulte os canais oficiais de pagamento.",
+    "source": "https://www.ecoviasimigrantes.com.br/noticias/releases-institucionais/pedagio-eletronico-siga-facil-comeca-a-operar-no-sistema-anchieta-imigrantes-em-1o-de-dezembro-266431",
+    "sourceLabel": "Comunicado da Ecovias Imigrantes de 17/11/2026"
+  },
   "cities": [
     {
       "slug": "ubatuba",
