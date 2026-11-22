@@ -20,7 +20,7 @@
         <p class="property-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
           <meta itemprop="priceCurrency" content="BRL">
           <meta itemprop="price" content="${priceNumber(p.price)}">
-          <link itemprop="availability" href="https://schema.org/InStock">
+          ${p.availabilityUnconfirmed ? '' : '<link itemprop="availability" href="https://schema.org/InStock">'}
           <span>${escapeHtml(p.price)}</span>
         </p>
         <p class="property-meta">${p.bedrooms != null && p.bedrooms !== '' ? `${escapeHtml(p.bedrooms)} quartos · ` : ''}${escapeHtml(p.area)}</p>
@@ -32,6 +32,26 @@
   `;
   
   const properties = [
+{
+  "id": 21,
+  "title": "Casa tipo sobrado com 2 dormitórios no Indaiá",
+  "slug": "sobrado-indaia-94m2",
+  "city": "Bertioga",
+  "locationLabel": "Bertioga · Indaiá",
+  "type": "Venda",
+  "price": "R$ 1.500.000",
+  "bedrooms": "2",
+  "area": "94,36 m² construídos",
+  "image": "https://praia.digital/assets/sobrado-indaia-94m2/01-varanda-terrea-jardim.webp",
+  "tags": [
+    "Sobrado",
+    "1 banheiro e 1 lavabo",
+    "Varanda com churrasqueira",
+    "Quintal"
+  ],
+  "description": "Sobrado à venda em Indaiá, Bertioga, por R$ 1.500.000. São 2 dormitórios, 94,36 m² construídos, 92,96 m² de terreno e varanda com churrasqueira.",
+  "availabilityUnconfirmed": true
+},
 {
   "id": 20,
   "title": "Casa com edícula no Indaiá: 7 quartos e 5 suítes",
