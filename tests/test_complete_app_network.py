@@ -104,6 +104,21 @@ class CompleteAppNetworkTests(unittest.TestCase):
         self.assertIn('Os dados não passam automaticamente', next_steps)
         self.assertIn('scroll-margin-top:100px', daily.split('#form-calculo,', 1)[1].split('}', 1)[0])
 
+    def test_marketplace_calculator_promotes_pricing_guide_not_hosting_services(self):
+        calculator = (ROOT/'apps/calculadora-precificacao-shopee/index.html').read_text(encoding='utf-8')
+        page = Links(calculator)
+        self.assertNotIn('/gestao-marketplaces.html', page.links)
+        self.assertEqual(page.ids.count('roteiro-precificacao-titulo'), 1)
+        cta = calculator.split('aria-labelledby="roteiro-precificacao-titulo"', 1)[1].split('</section>', 1)[0]
+        self.assertEqual(Links(cta).links, ['/apps/guia-de-uso.html#vender'])
+        self.assertIn('Abrir roteiro de precificação', cta)
+        self.assertIn('conferir os custos e as regras da sua conta', cta)
+        self.assertNotIn('Gestão completa', cta)
+        guide = (ROOT/'apps/guia-de-uso.html').read_text(encoding='utf-8')
+        self.assertEqual(Links(guide).ids.count('vender'), 1)
+        route = guide.split('id="vender"', 1)[1].split('</section>', 1)[0]
+        self.assertIn('/apps/calculadora-precificacao-shopee/', Links(route).links)
+
     def test_registry_and_generated_navigation_are_current(self):
         self.assertEqual(builder.build(check=True),[])
 
