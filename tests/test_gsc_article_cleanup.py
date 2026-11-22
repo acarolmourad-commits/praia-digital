@@ -46,7 +46,7 @@ class ArticleCleanupTests(unittest.TestCase):
                 schemas = [json.loads(x) for x in re.findall(r'<script type="application/ld\+json">\s*(.*?)\s*</script>', text, re.S)]
                 articles = [x for x in schemas if x.get('@type') in ('Article', 'BlogPosting')]
                 self.assertEqual(1, len(articles))
-                expected_modified = '2026-11-08' if name == FILES[3] else '2026-11-02'
+                expected_modified = {FILES[2]: '2026-11-22', FILES[3]: '2026-11-08'}.get(name, '2026-11-02')
                 self.assertEqual(expected_modified, articles[0]['dateModified'])
                 if name == FILES[3]:
                     self.assertIn('<time datetime="2026-11-08">08/11/2026</time>', text)
@@ -81,9 +81,10 @@ class ArticleCleanupTests(unittest.TestCase):
     def test_tax_page_does_not_fabricate_freshness_or_rate_rules(self):
         text = self.read(FILES[2])
         self.assertIn('Revisão editorial em <time datetime="2026-11-02">02/11/2026</time>', text)
-        self.assertNotIn('prevalecendo o maior', text)
+        self.assertIn('Complemento sobre ITBI em <time datetime="2026-11-22">22/11/2026</time>', text)
+        self.assertNotRegex(text, r'o que for maior|prevalecendo o maior|\d\s*%')
         self.assertNotIn('~R$ 3.000', text)
-        self.assertIn('não apresenta alíquotas verificadas', text)
+        self.assertIn('não publica alíquotas', text)
         self.assertIn('href="/apps/custo-de-compra/"', text)
 
     def test_market_page_has_main_target_and_valid_contact_link(self):
