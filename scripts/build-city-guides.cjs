@@ -37,6 +37,8 @@ function neighborhoods(c) {
 function city(c) {
   const url = `/cidades/${c.slug}.html`, search = '/imoveis.html?cidade='+encodeURIComponent(c.name);
   const cta = link(search, `Ver imóveis em ${c.name}`, 'btn');
+  const comparisonNote = c.comparisonReference ? `<p>${esc(c.comparisonReference.note)} ${link('#fonte-comparacao','Ver a fonte técnica')}.</p>` : '';
+  const comparisonSource = c.comparisonReference ? `<li id="fonte-comparacao">${link(c.comparisonReference.url,c.comparisonReference.label)}</li>` : '';
   const faq = [
     [`Em qual região fica ${c.name}?`, `${c.name} integra ${c.region} no recorte regional deste guia. A classificação segue os setores litorâneos apresentados pela Semil.`],
     [`Como consultar imóveis em ${c.name}?`, `Use a busca com o filtro de ${c.name}. Se não houver correspondências no catálogo, a busca informa que nenhum imóvel foi encontrado; isso não significa ausência de imóveis na cidade.`],
@@ -54,7 +56,7 @@ function city(c) {
   const related={bertioga:['/blog/riviera-sao-lourenco-seguranca-infraestrutura-valorizacao-2026.html','Riviera de São Lourenço: infraestrutura e critérios de análise'],'praia-grande':['/blog/estudo-rental-yield-apartamentos-1-2-dormitorios-praia-grande-2026.html','Praia Grande: cenários de locação para apartamentos de 1 e 2 dormitórios']}[c.slug];
   if(related) body += section('leitura','Aprofunde a pesquisa',`<article class="card"><h3>${link(...related)}</h3><p>Conteúdo já publicado e revisado na Praia Digital. Consulte suas fontes e limitações antes de aplicar qualquer cenário ao seu imóvel.</p></article>`);
   body += section('visita',c.slug==='cubatao'?'Paisagem e patrimônio de Cubatão':`Praias e referências locais de ${c.name}`,p(c.visit));
-  body += section('analise','Acesso, rotina e pontos de atenção',`<div class="proscons"><div class="pc pos"><h3>Na visita</h3><p>${esc(c.check)}</p></div><div class="pc att"><h3>Na comparação</h3><p>Peça documentos, despesas e informações de conservação do imóvel. Confirme serviços e deslocamentos no endereço, em vez de presumir condições iguais em toda a cidade.</p></div></div>`,true);
+  body += section('analise','Acesso, rotina e pontos de atenção',`<div class="proscons"><div class="pc pos"><h3>Na visita</h3><p>${esc(c.check)}</p></div><div class="pc att"><h3>Na comparação</h3><p>Peça documentos, despesas e informações de conservação do imóvel. Confirme serviços e deslocamentos no endereço, em vez de presumir condições iguais em toda a cidade.</p>${comparisonNote}</div></div>`,true);
   body += section('ferramentas',`Ferramentas para pesquisar em ${c.name}`,`<div class="grid g3">${[
     ['/apps/custo-de-compra/','Custos da compra','Organize despesas e confira as alíquotas aplicáveis ao seu caso.'],
     ['/apps/calculadora-financiamento/','Financiamento','Simule parcelas com seus dados e compare propostas.'],
@@ -64,7 +66,7 @@ function city(c) {
   if(c.slug==='bertioga') listings += `<div class="card city-listings"><h3>Imóveis cadastrados em Bertioga</h3><p>Ofertas publicadas na Praia Digital. Consulte as fichas para os dados de cada imóvel; imagens identificadas como renders e cenários financeiros continuam ilustrativos.</p><ul><li>${link('/casa-condominio-fechado-bertioga.html','Casa em condomínio fechado')}</li><li>${link('/imoveis/casas-lancamento-sao-lourenco.html','Lançamento de casas em São Lourenço')}</li></ul></div>`;
   body += section('imoveis',`Consultar imóveis em ${c.name}`,listings,true);
   body += section('perguntas',`Perguntas frequentes sobre ${c.name}`,faq.map(([q,a])=>`<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join(''));
-  body += section('fontes','Fontes e atualização',`<p>Revisão editorial: <time datetime="${data.reviewed}">02/11/2026</time>. Fontes para localização, paisagem e referências de visita:</p><ul><li>${link(data.regionalSource,'Semil — setores do gerenciamento costeiro paulista')}</li><li>${link(c.source,c.sourceLabel)}</li></ul><p class="src">As orientações de comparação são editoriais. Fontes turísticas não comprovam preços, segurança, disponibilidade ou rendimento de imóveis. Operação de atrativos e condições de acesso devem ser consultadas antes da visita.</p>`,true);
+  body += section('fontes','Fontes e atualização',`<p>Revisão editorial: <time datetime="${data.reviewed}">02/11/2026</time>. Fontes para localização, paisagem e referências de visita${comparisonSource ? ', além da fonte técnica para comparação inicial' : ''}:</p><ul><li>${link(data.regionalSource,'Semil — setores do gerenciamento costeiro paulista')}</li><li>${link(c.source,c.sourceLabel)}</li>${comparisonSource}</ul><p class="src">As orientações de comparação são editoriais. Fontes turísticas não comprovam preços, segurança, disponibilidade ou rendimento de imóveis. Operação de atrativos e condições de acesso devem ser consultadas antes da visita.</p>`,true);
   fs.writeFileSync(path.join(root,url),shell(`Imóveis em ${c.name}: bairros e guia local`,c.intro,url,body,schema));
 }
 function index() {

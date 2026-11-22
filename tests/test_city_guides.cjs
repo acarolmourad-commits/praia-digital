@@ -42,6 +42,22 @@ for(const rel of ['cidades/index.html',...data.cities.map(c=>`cidades/${c.slug}.
   checkedLinks++;
  }
 }
+// Susceptibility guidance belongs in São Sebastião only and is not a lot-level assessment.
+const comparisonSources=data.cities.filter(c=>c.comparisonReference);
+assert.deepEqual(comparisonSources.map(c=>c.slug),['sao-sebastiao']);
+const mapUrl='https://rigeo.sgb.gov.br/handle/doc/23448';
+assert.equal(comparisonSources[0].comparisonReference.url,mapUrl);
+const ss=read('cidades/sao-sebastiao.html');
+const contentOf=id=>ss.match(new RegExp(`<section id="${id}"[^>]*>([\\s\\S]*?)</section>`))[1];
+const comparison=contentOf('analise').split('<h3>Na comparação</h3>')[1];
+assert.match(comparison,/referência inicial em escala municipal/);
+assert.match(comparison,/não permite avaliar o risco de um lote nem atestar a estabilidade do terreno ou a segurança de um imóvel/);
+assert.match(comparison,/consulte a prefeitura ou um profissional habilitado/);
+assert.match(comparison,/href="#fonte-comparacao"/);
+assert.ok(contentOf('fontes').includes(`id="fonte-comparacao"><a href="${mapUrl}"`));
+for(const c of data.cities)if(c.slug!=='sao-sebastiao')assert(!read(`cidades/${c.slug}.html`).includes(mapUrl));
+assert(!read('cidades/index.html').includes(mapUrl));
+
 const home=read('cidades/index.html');assert.equal((home.match(/class="card city-card"/g)||[]).length,16);
 assert(home.includes('Cubatão')&&home.includes('não tenha praia oceânica'));
 const casa=catalog.find(p=>p.id===9),lancamento=catalog.find(p=>p.id===10);

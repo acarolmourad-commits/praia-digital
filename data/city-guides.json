@@ -33,7 +33,12 @@
       "visit": "Na visita a Maresias, compare a posição do imóvel em relação à rodovia, à praia e aos serviços. Para banho e atividades no mar, observe a sinalização e as condições do dia.",
       "check": "Planeje o percurso até o endereço exato e visite em horários diferentes. A distância até o centro de São Sebastião merece atenção quando ele faz parte da sua rotina.",
       "source": "https://www.turismosaosebastiao.com.br/item/maresias",
-      "sourceLabel": "Turismo São Sebastião — Maresias"
+      "sourceLabel": "Turismo São Sebastião — Maresias",
+      "comparisonReference": {
+        "note": "A carta de suscetibilidade a movimentos de massa e inundações é uma referência inicial em escala municipal. Ela não permite avaliar o risco de um lote nem atestar a estabilidade do terreno ou a segurança de um imóvel. Para uma avaliação do endereço, consulte a prefeitura ou um profissional habilitado.",
+        "url": "https://rigeo.sgb.gov.br/handle/doc/23448",
+        "label": "Serviço Geológico do Brasil e IPT — Carta de suscetibilidade de São Sebastião"
+      }
     },
     {
       "slug": "ilhabela",
