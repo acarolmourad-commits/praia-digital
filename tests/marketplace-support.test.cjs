@@ -19,8 +19,13 @@ test('all 13 FAQ answers have identical visible and structured text', () => {
     assert.equal(faq.mainEntity[i].acceptedAnswer.text, plain(rows[i].answer), rows[i].title);
   }
   assert.doesNotMatch(html, /28\.061\.00|9404\.9000|\b5102\b|Taxas 2026:|margem real|nunca cancele|não cancele/i);
-  assert.match(rows[9].answer, /mesmo quando a operação não está sujeita à substituição tributária/);
-  assert.match(rows[11].answer, /cabe ao comprador escolher/);
+  const fiscal = faq.mainEntity[9].acceptedAnswer.text;
+  assert.match(fiscal, /anexos II a XXVI do Convênio ICMS 142\/18/);
+  assert.match(fiscal, /mesmo quando a operação não está sujeita à substituição tributária/);
+  const stock = faq.mainEntity[11].acceptedAnswer.text;
+  assert.match(stock, /art\. 35.*cabe ao comprador escolher entre exigir a entrega nas condições anunciadas, aceitar um produto equivalente ou rescindir o contrato/);
+  assert.match(stock, /restituição do valor pago, corrigido monetariamente, e eventuais perdas e danos/);
+  assert.match(stock, /direito de arrependimento nas compras a distância.*art\. 49/);
   assert.match(rows[8].answer, /estimar sua margem/);
   assert.match(rows[0].answer, /Não compartilhe senhas nem códigos/);
   assert.match(rows[6].answer, /Ele não mede o lucro/);
@@ -91,6 +96,12 @@ test('FAQ search normalizes terms, announces counts and restores accordion state
   assert.equal(status.textContent, '13 perguntas disponíveis.');
   assert(items.every(item => !item.hidden));
   assert.deepEqual(items.flatMap((item, i) => item.open ? [i] : []), [0]);
+  items[0].open = false;
+  items[4].open = true;
+  query('  RESTITUICAO  ', [11], '1 pergunta encontrada.');
+  query('restituição', [11], '1 pergunta encontrada.');
+  query('', rows.map((_, i) => i), '13 perguntas disponíveis.');
+  assert.deepEqual(items.flatMap((item, i) => item.open ? [i] : []), [4]);
   query('    ', rows.map((_, i) => i), '13 perguntas disponíveis.');
 });
 
@@ -117,6 +128,6 @@ test('canonical, official sources and seller journey point to the intended desti
   ]);
   assert.deepEqual(hrefs(rows[11].answer), [
     'https://help.shopee.com.br/portal/4/article/76351',
-    'https://planalto.gov.br/ccivil_03/leis/l8078compilado.htm',
+    'https://www2.camara.leg.br/legin/fed/lei/1990/lei-8078-11-setembro-1990-365086-normaatualizada-pl.html',
   ]);
 });
