@@ -148,7 +148,21 @@ const deadline = setTimeout(() => {
           assert.match(await portfolioCase.innerText(), /não comprova integração nem resultado comercial/);
           assert.equal(await portfolioCase.getByRole('link', { name: 'roteiro de precificação' }).getAttribute('href'), '/apps/guia-de-uso.html#vender');
           assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'Portfolio overflow at 390 px');
-          await portfolioCase.getByRole('link', { name: 'Experimentar o laboratório com estoque fictício' }).click();
+          const laboratoryLink = portfolioCase.getByRole('link', { name: 'Experimentar o laboratório com estoque fictício' });
+          // The incoming fragment can still be scrolling when the assertions above pass.
+          // Use Node-side geometry checks, which also run when page JS is disabled.
+          let lastLaboratoryBox = null;
+          let stableLaboratorySamples = 0;
+          const laboratoryDeadline = Date.now() + 5000;
+          while (stableLaboratorySamples < 3 && Date.now() < laboratoryDeadline) {
+            const current = await laboratoryLink.boundingBox();
+            assert.ok(current, 'Portfolio laboratory link must have a layout box');
+            stableLaboratorySamples = lastLaboratoryBox && ['x', 'y', 'width', 'height'].every(key => Math.abs(current[key] - lastLaboratoryBox[key]) < 0.5) ? stableLaboratorySamples + 1 : 0;
+            lastLaboratoryBox = current;
+            await new Promise(resolve => setTimeout(resolve, 100));
+          }
+          assert.equal(stableLaboratorySamples, 3, 'Portfolio laboratory link must stabilize before click');
+          await laboratoryLink.click();
           await page.waitForURL('**/ia/marketplaces/piloto/#laboratorio');
           assert.equal(await page.locator('#laboratorio').count(), 1);
         }
