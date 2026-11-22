@@ -6,7 +6,11 @@ const data = JSON.parse(fs.readFileSync(path.join(root, 'data/city-guides.json')
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const link = (url, text, cls='') => `<a${cls ? ` class="${cls}"` : ''} href="${esc(url)}">${esc(text)}</a>`;
 const section = (id, title, body, alt=false) => `<section id="${id}"${alt?' class="alt"':''}><div class="wrap"><h2>${esc(title)}</h2>${body}</div></section>`;
-const p = text => `<p class="lead">${esc(text)}</p>`;
+function p(content) {
+  if (typeof content === 'string') return `<p class="lead">${esc(content)}</p>`;
+  const {text, reference} = content;
+  return `<p class="lead">${esc(text)}</p><p class="src">${esc(reference.context)} ${link(reference.url,reference.label)}.</p>`;
+}
 function shell(title, description, url, body, schema) {
   return `<!DOCTYPE html>
 <html lang="pt-BR"><head>
