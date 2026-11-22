@@ -82,25 +82,25 @@
 <div class="input-grid">
 <div><label for="investimento">Preço do imóvel (R$)</label><input id="investimento" type="number" min="1" max="100000000" step="1000" value="2500000"></div>
 <div><label for="diaria">Diária média hipotética (R$)</label><input id="diaria" type="number" min="1" max="1000000" step="50" value="1800"></div>
-<div><label for="ocupacao">Ocupação anual hipotética (%)</label><input id="ocupacao" type="number" min="0" max="100" step="1" value="30"></div>
+<div><label for="ocupacao">Ocupação hipotética sobre 365 noites (%)</label><input id="ocupacao" type="number" min="0" max="100" step="1" value="30"></div>
 <div><label for="custos">Custos operacionais estimados (% do faturamento)</label><input id="custos" type="number" min="0" max="95" step="1" value="30"></div>
 </div>
 <button type="button" class="calc-button" id="calcular">Calcular cenário</button>
 <div class="results" aria-live="polite">
-<div class="result"><small>Noites ocupadas estimadas/ano</small><strong id="noites">110 noites</strong></div>
+<div class="result"><small>Noites equivalentes ocupadas/ano</small><strong id="noites">109,5 noites</strong></div>
 <div class="result"><small>Faturamento bruto anual</small><strong id="bruto">R$ 197.100</strong></div>
 <div class="result"><small>Resultado operacional estimado*</small><strong id="liquido">R$ 137.970</strong></div>
 <div class="result"><small>Retorno operacional sobre o preço</small><strong id="yield">5,5% a.a.</strong></div>
 <div class="result"><small>Prazo simples de retorno*</small><strong id="payback">18,1 anos</strong></div>
 </div>
-<p class="note">*Estimativa simplificada: desconta apenas a porcentagem de custos informada. Não inclui ITBI, escritura/registro, mobiliário, enxoval, implantação, financiamento, imposto de renda, tributos, grandes reparos, períodos de bloqueio, nem variações de tarifa e sazonalidade. O resultado não é lucro líquido garantido. Ajuste as premissas e valide-as com dados de imóveis comparáveis.</p>
+<p class="note">*Estimativa simplificada: usa 365 noites como base e pode mostrar frações de noite para representar uma média. Não é um calendário de reservas. Desconta apenas a porcentagem de custos informada. Não inclui ITBI, escritura/registro, mobiliário, enxoval, implantação, financiamento, imposto de renda, tributos, grandes reparos, períodos de bloqueio, nem variações de tarifa e sazonalidade. O resultado não representa lucro líquido. Ajuste as premissas e valide-as com dados de imóveis comparáveis.</p>
 </div>
 <h3>Como o retorno muda com a ocupação?</h3>
 <p class="note">Tabela de sensibilidade com diária hipotética de R$ 1.800, custos operacionais estimados em 30% do faturamento e preço de compra de R$ 2,5 milhões. Altere os campos acima e clique em “Calcular cenário” para recalcular o resultado principal; a tabela abaixo mostra apenas os cenários de referência.</p>
 <div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de cenários de ocupação">
-<table><thead><tr><th>Ocupação anual</th><th>Noites/ano aprox.</th><th>Faturamento bruto/ano</th><th>Resultado após 30% custos</th><th>Retorno operacional estimado</th></tr></thead><tbody>
+<table><thead><tr><th>Ocupação anual</th><th>Noites equivalentes/ano</th><th>Faturamento bruto/ano</th><th>Resultado após 30% custos</th><th>Retorno operacional estimado</th></tr></thead><tbody>
 <tr><td>20%</td><td>73</td><td>R$ 131.400</td><td>R$ 91.980</td><td>3,7% a.a.</td></tr>
-<tr><td>30%</td><td>110</td><td>R$ 197.100</td><td>R$ 137.970</td><td>5,5% a.a.</td></tr>
+<tr><td>30%</td><td>109,5</td><td>R$ 197.100</td><td>R$ 137.970</td><td>5,5% a.a.</td></tr>
 <tr><td>40%</td><td>146</td><td>R$ 262.800</td><td>R$ 183.960</td><td>7,4% a.a.</td></tr>
 </tbody></table>
 </div>
@@ -165,7 +165,7 @@
   const valid=[v,d,o,c].every(Number.isFinite)&&v>0&&d>0&&o>=0&&o<=100&&c>=0&&c<=95;
   if(!valid){document.getElementById('noites').textContent='Confira os campos';document.getElementById('bruto').textContent='—';document.getElementById('liquido').textContent='—';document.getElementById('yield').textContent='—';document.getElementById('payback').textContent='—';return;}
   const nights=365*o/100,gross=nights*d,net=gross*(1-c/100),y=net/v;
-  document.getElementById('noites').textContent=new Intl.NumberFormat('pt-BR',{maximumFractionDigits:0}).format(nights)+' noites';
+  document.getElementById('noites').textContent=new Intl.NumberFormat('pt-BR',{maximumFractionDigits:2}).format(nights)+' noites';
   document.getElementById('bruto').textContent=fmt(gross);
   document.getElementById('liquido').textContent=fmt(net);
   document.getElementById('yield').textContent=pct(y);
