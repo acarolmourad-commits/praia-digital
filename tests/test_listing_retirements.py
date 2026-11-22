@@ -7,6 +7,8 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from html import unescape
+from urllib.parse import parse_qs, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
@@ -59,7 +61,15 @@ class ListingRetirements(unittest.TestCase):
                        'registrado em cartório', 'condição a confirmar por verificação técnica',
                        'não garantem ausência de alagamento'):
             self.assertIn(detail, html.lower() if detail == 'porão' else html)
-        self.assertNotRegex(html, r'promessa de valoriza[cç][aã]o|salubre|Google Maps|\bCEP\b')
+        self.assertNotRegex(html, r'promessa de valoriza[cç][aã]o|salubre|\bCEP\b|geo:|maps/embed|google\.com/maps/(?:place|dir)')
+        maps = [urlsplit(unescape(href)) for href in re.findall(r'\bhref="([^"]+)"', html)
+                if re.search(r'google\.|goo\.gl|://maps\.', href, re.I)]
+        self.assertEqual(len(maps), 2)
+        for link, reference in zip(maps, ('Jardim Indaiá, Bertioga SP', 'Praia do Indaiá, Bertioga SP')):
+            self.assertEqual((link.scheme, link.netloc, link.path, link.fragment),
+                             ('https', 'www.google.com', '/maps/search/', ''))
+            self.assertEqual(parse_qs(link.query, keep_blank_values=True),
+                             {'api': ['1'], 'query': [reference]})
         self.assertEqual(len(house['image']), 9)
         gallery = re.findall(r'<figure><a href="([^"]+)" target="_blank" rel="noopener".*?</figure>', html)
         self.assertEqual(house['image'], [base + p for p in gallery])
