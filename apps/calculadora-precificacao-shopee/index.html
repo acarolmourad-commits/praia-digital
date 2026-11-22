@@ -69,8 +69,8 @@ footer{padding:28px 0;font-size:.82rem;color:var(--ink2);text-align:center}
     <div><label for="plat">Plataforma</label>
       <select id="plat"><option value="shopee">Shopee</option><option value="tiktok">TikTok Shop</option></select></div>
     <div><label for="custo">Custo do produto (R$)</label><input id="custo" type="number" min="0" step="0.01" placeholder="41.00"></div>
-    <div><label for="preco">Preço de venda (R$)</label><input id="preco" type="number" min="0" step="0.01" placeholder="69.90"></div>
-    <div id="afWrap" style="display:none"><label for="afiliado">Comissão de afiliado TikTok (%)</label><input id="afiliado" type="number" min="0" max="100" step="0.1" value="10"></div>
+    <div><label for="preco" id="preco-label">Preço de venda (R$)</label><input id="preco" type="number" min="0" step="0.01" placeholder="69.90"></div>
+    <div id="afWrap" style="display:none"><label for="afiliado">Comissão de afiliado TikTok (%), se aplicável</label><input id="afiliado" type="number" min="0" max="100" step="0.01" value="0" aria-describedby="tt-input-note"><p class="note" id="tt-input-note">Simule um item vendido. Use o preço após descontos do vendedor, sem descontar cupons custeados pelo TikTok. Se não houver comissão de afiliado, deixe zero.</p></div>
     <div><label for="margemAlvo">Margem-alvo (%) — opcional, p/ preço sugerido</label><input id="margemAlvo" type="number" min="0" max="99.99" step="0.01" value="15"></div>
     <div><label for="frete">Custo extra por pedido (embalagem, frete não repassado) R$</label><input id="frete" type="number" min="0" step="0.01" value="0"></div>
   </div>
@@ -101,10 +101,13 @@ footer{padding:28px 0;font-size:.82rem;color:var(--ink2);text-align:center}
       <tr><td>Shopee</td><td>R$ 80,00 – R$ 99,99</td><td>14% + R$ 16,00</td></tr>
       <tr><td>Shopee</td><td>R$ 100,00 – R$ 199,99</td><td>14% + R$ 20,00</td></tr>
       <tr><td>Shopee</td><td>R$ 200,00 ou mais</td><td>14% + R$ 26,00</td></tr>
-      <tr><td>TikTok Shop</td><td>qualquer valor</td><td>6% + R$ 2,00 por pedido + comissão de afiliado informada</td></tr>
+      <tr><td>TikTok Shop</td><td id="tt-lower-range">Faixa inferior</td><td id="tt-lower-fee">Consulte a fonte oficial</td></tr>
+      <tr><td>TikTok Shop</td><td id="tt-upper-range">Faixa superior</td><td id="tt-upper-fee">Consulte a fonte oficial</td></tr>
     </tbody>
   </table>
   <p class="note">As faixas são premissas fixas desta simulação, não uma consulta às tarifas vigentes da sua conta. Margem positiva não garante lucro final: confira tributos, devoluções e demais custos não informados.</p>
+  <p class="note"><strong>TikTok Shop Brasil:</strong> <a href="https://seller-br.tiktok.com/university/essay?anchor_link=EC0800CC&amp;from=feature_guide&amp;identity=1&amp;knowledge_id=24428156307201&amp;role=1">tarifa-padrão informada pela Seller University</a>, vigente desde <time datetime="2026-07-15">15/07/2026</time>. Consulte Finanças → Demonstrações no Seller Center para conferir sua conta e eventuais incentivos. O percentual de afiliado informado é opcional e simulado separadamente sobre a mesma base.</p>
+  <p class="note">A simulação do TikTok calcula os percentuais sem arredondar as taxas intermediárias; exibe valores monetários com dois decimais e busca o menor preço em centavos que atinge a meta. Taxas de programas de frete não entram automaticamente: em custo extra, informe o valor daquele cenário, se aplicável. Para a meta, o valor extra é fixo e não representa uma taxa variável do programa.</p>
 </div>
 
 <div class="panel" style="text-align:center">
@@ -116,7 +119,11 @@ footer{padding:28px 0;font-size:.82rem;color:var(--ink2);text-align:center}
 <footer><div class="wrap">© 2026 Praia Digital · <a href="/termos-de-uso.html">Termos</a> · <a href="/politica-de-privacidade.html">Privacidade</a> · <a href="/contato.html">Contato</a></div></footer>
 <script>
 const plat=document.getElementById('plat'),afWrap=document.getElementById('afWrap');
-plat.addEventListener('change',()=>{afWrap.style.display=plat.value==='tiktok'?'block':'none';});
+plat.addEventListener('change',()=>{
+  const tik=plat.value==='tiktok';
+  afWrap.style.display=tik?'block':'none';
+  document.getElementById('preco-label').textContent=tik?'Preço do item após desconto do vendedor (R$)':'Preço de venda (R$)';
+});
 function invalidar(){
   document.getElementById('res').classList.remove('show');
   for(const id of ['kLucro','kMargem','kTaxa','sugestao','alerta'])document.getElementById(id).textContent='';
@@ -125,15 +132,57 @@ function invalidar(){
 }
 for(const id of ['plat','custo','preco','afiliado','frete','margemAlvo'])for(const event of ['input','change'])document.getElementById(id).addEventListener(event,invalidar);
 function taxaShopee(p){if(p<80)return p*0.20+4.50;if(p<100)return p*0.14+16;if(p<200)return p*0.14+20;return p*0.14+26;}
-function taxaTikTok(p,af){return p*0.06+2+p*(af/100);} // comissão base estimada 6% + R$2 fixo + afiliado
-function taxa(p,pl,af){return pl==='shopee'?taxaShopee(p):taxaTikTok(p,af);}
-function lucro(p,c,pl,af,ex){const t=taxa(p,pl,af);return{lucro:p-c-t-ex,taxa:t};}
+// Ranges are in BRL cents, percentages in basis points, and upper bounds are exclusive.
+const TIKTOK_FEES=[
+  {min:1n,max:5000n,rate:1000n,fixed:400n},
+  {min:5000n,max:null,rate:600n,fixed:600n},
+];
+const BPS=10000n;
+const TIKTOK_MAX_CENTS=BigInt(Number.MAX_SAFE_INTEGER)/BPS;
+function toHundredths(value){
+  const match=/^(\d+)(?:\.(\d{1,2}))?$/.exec(String(value));
+  if (!match) return null;
+  const units=BigInt(match[1])*100n+BigInt((match[2]||'').padEnd(2,'0'));
+  return units<=TIKTOK_MAX_CENTS?units:null;
+}
+function tiktokTier(cents){
+  return TIKTOK_FEES.find(t=>cents>=t.min&&(t.max===null||cents<t.max));
+}
+function tiktokAmount(units){return Number(units)/Number(BPS*100n);}
+function tiktokParts(p,af){
+  const price=toHundredths(p),affiliate=toHundredths(af);
+  if(price===null||affiliate===null||affiliate>BPS)return null;
+  const tier=tiktokTier(price);
+  return tier?{price,platform:price*tier.rate+tier.fixed*BPS,affiliate:price*affiliate}:null;
+}
+function taxaTikTok(p,af){const f=tiktokParts(p,af);return f?tiktokAmount(f.platform+f.affiliate):NaN;}
+function lucro(p,c,pl,af,ex){
+  if(pl==='shopee'){const t=taxaShopee(p);return{lucro:p-c-t-ex,taxa:t};}
+  const f=tiktokParts(p,af),cost=toHundredths(c),extra=toHundredths(ex);
+  if(!f||cost===null||extra===null)return{lucro:NaN,taxa:NaN};
+  const total=f.platform+f.affiliate;
+  return {lucro:tiktokAmount((f.price-cost-extra)*BPS-total),taxa:tiktokAmount(total),
+          platformFee:tiktokAmount(f.platform),affiliateFee:tiktokAmount(f.affiliate)};
+}
+function tiktokMinimo(c,af,ex,alvo){
+  const cost=toHundredths(c),affiliate=toHundredths(af),extra=toHundredths(ex),goal=toHundredths(alvo);
+  if([cost,affiliate,extra,goal].includes(null))return null;
+  let best=null;
+  for(const {min,max,rate,fixed} of TIKTOK_FEES){
+    const denominator=BPS-rate-affiliate-goal;
+    if(denominator<=0n)continue;
+    const numerator=(cost+extra+fixed)*BPS;
+    const solution=(numerator+denominator-1n)/denominator;
+    const candidate=solution<min?min:solution;
+    if((max===null||candidate<max)&&candidate<=TIKTOK_MAX_CENTS&&(best===null||candidate<best))best=candidate;
+  }
+  return best===null?null:Number(best)/100;
+}
 function fmt(v){return 'R$ '+v.toFixed(2).replace('.',',');}
 function precoParaMargem(c,pl,af,ex,alvo){
   if (!['shopee','tiktok'].includes(pl) || ![c,af,ex,alvo].every(Number.isFinite) || c<0 || ex<0 || af<0 || af>100 || alvo<0 || alvo>=100) return null;
-  const faixas=pl==='shopee'
-    ? [[0,80,0.20,4.50],[80,100,0.14,16],[100,200,0.14,20],[200,Infinity,0.14,26]]
-    : [[0,Infinity,0.06+af/100,2]];
+  if(pl==='tiktok')return tiktokMinimo(c,af,ex,alvo);
+  const faixas=[[0,80,0.20,4.50],[80,100,0.14,16],[100,200,0.14,20],[200,Infinity,0.14,26]];
   const candidatos=[];
   for (const [min,max,percentual,fixa] of faixas){
     const denominador=1-percentual-alvo/100;
@@ -150,13 +199,14 @@ function calc(){
   const alvo=document.getElementById('margemAlvo').value.trim()===''?15:Number(document.getElementById('margemAlvo').value);
   const res=document.getElementById('res'),al=document.getElementById('alerta');
   if (!['shopee','tiktok'].includes(pl) || ![c,p,af,ex,alvo].every(Number.isFinite) || c<0 || p<=0 || af<0 || af>100 || ex<0 || alvo<0 || alvo>=100){alert('Informe valores válidos: custo e despesas não negativos, preço positivo, afiliado de 0 a 100% e margem de 0 a menos de 100%.');return;}
+  if(pl==='tiktok' && [c,p,af,ex,alvo].some(value=>toHundredths(value)===null)){alert('Para TikTok, use valores dentro do limite da simulação e no máximo duas casas decimais.');return;}
   const r=lucro(p,c,pl,af,ex),m=r.lucro/p*100;
   if(![r.lucro,r.taxa,m,c+ex].every(Number.isFinite)){alert('Os valores excedem o limite de cálculo. Revise os dados.');return;}
   document.getElementById('kLucro').textContent=fmt(r.lucro);
   document.getElementById('kLucro').className=r.lucro>=0?'good':'bad';
   document.getElementById('kMargem').textContent=m.toFixed(1).replace('.',',')+'%';
   document.getElementById('kMargem').className=m>=10?'good':(m>=0?'warn':'bad');
-  document.getElementById('kTaxa').textContent=fmt(r.taxa);
+  document.getElementById('kTaxa').textContent=fmt(pl==='tiktok'?r.platformFee:r.taxa);
   al.className='alert show '+(m>=10?'ok':(m>=0?'warn':'bad'));
   al.textContent=m>=0?'Saldo não negativo nas premissas informadas. Isso não garante lucro final nem recomenda escalar as vendas.':'Saldo negativo nas premissas informadas. Revise preço, taxas e despesas antes de decidir.';
   const ps=precoParaMargem(c,pl,af,ex,alvo);
@@ -164,11 +214,18 @@ function calc(){
   const tb=document.getElementById('detalheBody');
   tb.innerHTML='<tr><td>Preço de venda</td><td>'+fmt(p)+'</td></tr>'+
     '<tr><td>(–) Custo do produto</td><td>'+fmt(c)+'</td></tr>'+
-    '<tr><td>(–) Taxa da plataforma'+(pl==='tiktok'?' (incl. afiliado '+af+'%)':'')+'</td><td>'+fmt(r.taxa)+'</td></tr>'+
+    '<tr><td>(–) Taxa da plataforma</td><td>'+fmt(pl==='tiktok'?r.platformFee:r.taxa)+'</td></tr>'+
+    (pl==='tiktok'&&af?'<tr><td>(–) Comissão de afiliado ('+af+'%)</td><td>'+fmt(r.affiliateFee)+'</td></tr>':'')+
     (ex?'<tr><td>(–) Custo extra por pedido</td><td>'+fmt(ex)+'</td></tr>':'')+
     '<tr><td><strong>= Resultado estimado por pedido</strong></td><td><strong>'+fmt(r.lucro)+'</strong></td></tr>';
   document.getElementById('calc-status').textContent='Simulação atualizada com os dados informados.';
   res.classList.add('show');res.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+const corteTikTok=fmt(Number(TIKTOK_FEES[1].min)/100);
+for(const [i,tag] of ['lower','upper'].entries()){
+  const {rate,fixed}=TIKTOK_FEES[i];
+  document.getElementById('tt-'+tag+'-range').textContent=(i?'A partir de ':'Abaixo de ')+corteTikTok;
+  document.getElementById('tt-'+tag+'-fee').textContent=Number(rate)/100+'% + '+fmt(Number(fixed)/100)+' por item vendido';
 }
 </script>
 
