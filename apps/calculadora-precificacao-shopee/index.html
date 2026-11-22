@@ -67,7 +67,7 @@ footer{padding:28px 0;font-size:.82rem;color:var(--ink2);text-align:center}
 <div class="panel">
   <div class="grid">
     <div><label for="plat">Plataforma</label>
-      <select id="plat"><option value="shopee">Shopee</option><option value="tiktok">TikTok Shop</option></select></div>
+      <select id="plat"><option value="shopee">Shopee (CNPJ)</option><option value="tiktok">TikTok Shop</option></select></div>
     <div><label for="custo">Custo do produto (R$)</label><input id="custo" type="number" min="0" step="0.01" placeholder="41.00"></div>
     <div><label for="preco">Preço de venda (R$)</label><input id="preco" type="number" min="0" step="0.01" placeholder="69.90"></div>
     <div id="afWrap" style="display:none"><label for="afiliado">Comissão de afiliado TikTok (%)</label><input id="afiliado" type="number" min="0" max="100" step="0.1" value="10"></div>
@@ -94,13 +94,15 @@ footer{padding:28px 0;font-size:.82rem;color:var(--ink2);text-align:center}
 
 <div class="panel">
   <h2 style="font-size:1.05rem;margin-bottom:8px">Premissas de taxas usadas — confirme a vigência</h2>
+  <p class="note">A simulação da Shopee usa as premissas para vendedor CNPJ, sem simular CPF. Confira a <a href="https://seller.shopee.com.br/edu/article/26839">tabela oficial da Shopee</a> e as condições vigentes da sua conta.</p>
   <table>
     <thead><tr><th>Plataforma</th><th>Faixa de preço</th><th>Taxa</th></tr></thead>
     <tbody>
-      <tr><td>Shopee</td><td>até R$ 79,99</td><td>20% + R$ 4,50</td></tr>
-      <tr><td>Shopee</td><td>R$ 80,00 – R$ 99,99</td><td>14% + R$ 16,00</td></tr>
-      <tr><td>Shopee</td><td>R$ 100,00 – R$ 199,99</td><td>14% + R$ 20,00</td></tr>
-      <tr><td>Shopee</td><td>R$ 200,00 ou mais</td><td>14% + R$ 26,00</td></tr>
+      <tr><td>Shopee (CNPJ)</td><td>Abaixo de R$ 9,00</td><td>20% + 50% do preço do item no lugar da parcela fixa</td></tr>
+      <tr><td>Shopee (CNPJ)</td><td>R$ 9,00 – R$ 79,99</td><td>20% + R$ 4,50</td></tr>
+      <tr><td>Shopee (CNPJ)</td><td>R$ 80,00 – R$ 99,99</td><td>14% + R$ 16,00</td></tr>
+      <tr><td>Shopee (CNPJ)</td><td>R$ 100,00 – R$ 199,99</td><td>14% + R$ 20,00</td></tr>
+      <tr><td>Shopee (CNPJ)</td><td>R$ 200,00 ou mais</td><td>14% + R$ 26,00</td></tr>
       <tr><td>TikTok Shop</td><td>qualquer valor</td><td>6% + R$ 2,00 por pedido + comissão de afiliado informada</td></tr>
     </tbody>
   </table>
@@ -124,7 +126,7 @@ function invalidar(){
   document.getElementById('calc-status').textContent='Compare novamente após alterar os dados. Nenhum resultado atualizado está disponível.';
 }
 for(const id of ['plat','custo','preco','afiliado','frete','margemAlvo'])for(const event of ['input','change'])document.getElementById(id).addEventListener(event,invalidar);
-function taxaShopee(p){if(p<80)return p*0.20+4.50;if(p<100)return p*0.14+16;if(p<200)return p*0.14+20;return p*0.14+26;}
+function taxaShopee(p){if(p<9)return p*0.20+p/2;if(p<80)return p*0.20+4.50;if(p<100)return p*0.14+16;if(p<200)return p*0.14+20;return p*0.14+26;}
 function taxaTikTok(p,af){return p*0.06+2+p*(af/100);} // comissão base estimada 6% + R$2 fixo + afiliado
 function taxa(p,pl,af){return pl==='shopee'?taxaShopee(p):taxaTikTok(p,af);}
 function lucro(p,c,pl,af,ex){const t=taxa(p,pl,af);return{lucro:p-c-t-ex,taxa:t};}
@@ -132,7 +134,7 @@ function fmt(v){return 'R$ '+v.toFixed(2).replace('.',',');}
 function precoParaMargem(c,pl,af,ex,alvo){
   if (!['shopee','tiktok'].includes(pl) || ![c,af,ex,alvo].every(Number.isFinite) || c<0 || ex<0 || af<0 || af>100 || alvo<0 || alvo>=100) return null;
   const faixas=pl==='shopee'
-    ? [[0,80,0.20,4.50],[80,100,0.14,16],[100,200,0.14,20],[200,Infinity,0.14,26]]
+    ? [[0,9,0.70,0],[9,80,0.20,4.50],[80,100,0.14,16],[100,200,0.14,20],[200,Infinity,0.14,26]]
     : [[0,Infinity,0.06+af/100,2]];
   const candidatos=[];
   for (const [min,max,percentual,fixa] of faixas){
