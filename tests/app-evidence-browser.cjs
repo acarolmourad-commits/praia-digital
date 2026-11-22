@@ -134,6 +134,24 @@ const deadline = setTimeout(() => {
           await page.goBack();
           assert.equal(new URL(page.url()).pathname, source);
         }
+        if (width === 390) {
+          phase = `${width}px js=${javaScriptEnabled} homepage/portfolio discovery`;
+          console.log(phase);
+          const casePath = '/cases.html#caso-estoque-vivo';
+          await page.goto('https://praia.digital/');
+          const portfolioLink = page.locator('#apps a[href="' + casePath + '"]');
+          assert.equal(await portfolioLink.count(), 1);
+          await portfolioLink.click();
+          await page.waitForURL('**' + casePath);
+          const portfolioCase = page.locator('#caso-estoque-vivo');
+          assert.match(await portfolioCase.locator('h2').innerText(), /estoque fictício/);
+          assert.match(await portfolioCase.innerText(), /não comprova integração nem resultado comercial/);
+          assert.equal(await portfolioCase.getByRole('link', { name: 'roteiro de precificação' }).getAttribute('href'), '/apps/guia-de-uso.html#vender');
+          assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'Portfolio overflow at 390 px');
+          await portfolioCase.getByRole('link', { name: 'Experimentar o laboratório com estoque fictício' }).click();
+          await page.waitForURL('**/ia/marketplaces/piloto/#laboratorio');
+          assert.equal(await page.locator('#laboratorio').count(), 1);
+        }
         await page.goto('https://praia.digital/');
         await page.locator('#apps a[href="' + guide + '"]').click();
         await page.waitForURL('**' + guide);

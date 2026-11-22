@@ -32,6 +32,29 @@ class CompleteAppNetworkTests(unittest.TestCase):
         self.assertEqual(guide.count('type="checkbox"'), 12)
         self.assertEqual(len(self.slugs), 16)
 
+    def test_portfolio_case_keeps_lab_and_pricing_journey_discoverable(self):
+        home = (ROOT/'index.html').read_text(encoding='utf-8')
+        portfolio = (ROOT/'cases.html').read_text(encoding='utf-8')
+        guide = (ROOT/'apps/guia-de-uso.html').read_text(encoding='utf-8')
+        pilot = (ROOT/'ia/marketplaces/piloto/index.html').read_text(encoding='utf-8')
+        case_id = 'caso-estoque-vivo'
+        self.assertEqual(Links(portfolio).ids.count(case_id), 1)
+        self.assertLess(portfolio.index('id="evolucao-aplicativos"'), portfolio.index(f'id="{case_id}"'))
+        self.assertLess(portfolio.index(f'id="{case_id}"'), portfolio.index('id="guia-checklist-acessivel"'))
+        case = portfolio.split(f'id="{case_id}"', 1)[1].split('</section>', 1)[0]
+        self.assertIn('aria-labelledby="caso-estoque-vivo-titulo"', case)
+        for claim in ('dados fictícios em memória', 'não transferem dados', 'não comprova integração nem resultado comercial'):
+            self.assertIn(claim, case)
+        self.assertEqual(Links(case).links, [
+            '/apps/guia-de-uso.html#vender', '/ia/marketplaces/piloto/#laboratorio',
+            'https://github.com/acarolmourad-commits/praia-digital/pull/241',
+        ])
+        self.assertEqual(Links(guide).ids.count('vender'), 1)
+        self.assertEqual(Links(pilot).ids.count('laboratorio'), 1)
+        home_discovery = home.split('aria-labelledby="guia-apps-home"', 1)[1].split('</aside>', 1)[0]
+        self.assertEqual(Links(home_discovery).links.count('/ia/marketplaces/piloto/'), 1)
+        self.assertEqual(Links(home_discovery).links.count('/cases.html#' + case_id), 1)
+
     def test_each_app_reaches_every_other_app_without_javascript(self):
         for slug in self.slugs:
             page = Links((ROOT/'apps'/slug/'index.html').read_text(encoding='utf-8'))
