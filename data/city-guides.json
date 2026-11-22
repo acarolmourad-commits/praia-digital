@@ -118,7 +118,14 @@
       "region": "Baixada Santista",
       "intro": "Centro e Agenor de Campos ajudam a organizar uma primeira visita à cidade, combinando referências urbanas e pontos de lazer.",
       "local": "A Plataforma de Pesca Amadora está em Agenor de Campos. O portal municipal também lista o Poço das Antas e o Morro da Padroeira entre os atrativos locais.",
-      "visit": "Escolha o trecho de interesse antes de percorrer os atrativos. Compare a distância do imóvel até os serviços de uso frequente e consulte as condições de visita nos canais municipais.",
+      "visit": {
+        "text": "Escolha o trecho de interesse antes de percorrer os atrativos. Compare a distância do imóvel até os serviços de uso frequente e consulte as condições de visita nos canais municipais.",
+        "reference": {
+          "context": "Antes de sair, confira avisos e mudanças de acesso para o seu trajeto:",
+          "url": "https://novolitoral.com.br/obras/",
+          "label": "Obras e desvios na SP-055 (Concessionária Novo Litoral)"
+        }
+      },
       "check": "Observe a rua, a drenagem visível e as condições de acesso durante a visita. Verifique com os órgãos locais as informações do endereço antes de decidir por uma compra.",
       "source": "https://mongagua.sp.gov.br/turismo",
       "sourceLabel": "Prefeitura de Mongaguá — turismo"
@@ -129,7 +136,14 @@
       "region": "Baixada Santista",
       "intro": "O Centro Histórico e os trechos de praia permitem reconhecer diferentes partes da cidade antes de escolher um endereço.",
       "local": "O Centro Histórico reúne a Matriz de Sant’Anna, o Convento Nossa Senhora da Conceição e o Museu Conceição de Itanhaém. A Gruta Nossa Senhora de Lourdes fica entre Cibratel e Praia dos Sonhos.",
-      "visit": "Separe uma visita ao núcleo histórico de outra ao entorno do imóvel. Assim é possível avaliar a distância entre patrimônio, praia e serviços sem confundir essas referências.",
+      "visit": {
+        "text": "Separe uma visita ao núcleo histórico de outra ao entorno do imóvel. Assim é possível avaliar a distância entre patrimônio, praia e serviços sem confundir essas referências.",
+        "reference": {
+          "context": "Antes de sair, confira avisos e mudanças de acesso para o seu trajeto:",
+          "url": "https://novolitoral.com.br/obras/",
+          "label": "Obras e desvios na SP-055 (Concessionária Novo Litoral)"
+        }
+      },
       "check": "Para casas e terrenos, confirme a localização do lote, os serviços disponíveis na rua e a situação documental com os responsáveis competentes.",
       "source": "https://www2.itanhaem.sp.gov.br/2022/11/11/conheca-alguns-dos-pontos-turisticos-para-visitar-em-itanhaem/",
       "sourceLabel": "Prefeitura de Itanhaém — pontos turísticos"

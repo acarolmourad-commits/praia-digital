@@ -65,3 +65,18 @@ const withdrawn=read('leads/apartamento-alto-padrao-bertioga.html');
 assert(withdrawn.includes('noindex, follow')&&withdrawn.includes('Anúncio removido'));
 assert(!/application\/ld\+json|<form|wa.me|Unsplash|8.900|http-equiv="refresh"/i.test(withdrawn));
 console.log('Withdrawn Bertioga rental absent; all twelve real offers and empty rental filter preserved.');
+
+const worksUrl='https://novolitoral.com.br/obras/';
+for(const c of data.cities){
+ const raw=read(`cidades/${c.slug}.html`);
+ const expectedLink=['itanhaem','mongagua'].includes(c.slug);
+ const visit=raw.match(/<section id="visita">[\s\S]*?<\/section>/)[0];
+ assert.equal(raw.split(worksUrl).length-1,expectedLink?1:0,c.slug);
+ if(expectedLink){
+  assert(visit.includes('Antes de sair, confira avisos e mudanças de acesso para o seu trajeto:'));
+  assert(visit.includes(`<a href="${worksUrl}">Obras e desvios na SP-055 (Concessionária Novo Litoral)</a>`));
+  assert.doesNotMatch(visit,/\d{1,2}[/.-]\d{1,2}|\bkm\s*\d|interditad[oa] agora/i);
+ }
+}
+assert(!home.includes(worksUrl));
+console.log('Permanent SP-055 works reference is restricted to the Itanhaém and Mongaguá visitor sections.');
