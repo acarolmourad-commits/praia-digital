@@ -11,6 +11,7 @@ FINANCE = "/apps/calculadora-financiamento/"
 INCOME = "/apps/renda-para-financiar/"
 COST = "/apps/custo-de-compra/"
 MINISTRY = "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/habitacao/programa-minha-casa-minha-vida/mcmv-fgts"
+BCB = "https://www.bcb.gov.br/content/cidadaniafinanceira/documentos_cidadania/Informacoes_gerais/glossario_cidadania_financeira.pdf#page=27"
 FGTS = "https://www.fgts.gov.br/Paginas/trabalhador/fgts-na-moradia.aspx"
 
 
@@ -28,10 +29,10 @@ class FinancingJourney(unittest.TestCase):
 
     def test_official_limits_subsidy_and_nominal_rates(self):
         html = read(ARTICLE)
-        for marker in (MINISTRY, FGTS, "28/10/2026", "4,25% a 5,25%", "5,00% a 7,00%",
+        for marker in (MINISTRY, FGTS, BCB, "28/10/2026", "4,25% a 5,25%", "5,00% a 7,00%",
                        "R$ 9.600", "7,66%", "8,16%", "R$ 400 mil", "R$ 13 mil",
                        "R$ 600 mil", "10,00%", "R$ 210 mil a R$ 275 mil", "até R$ 55 mil",
-                       "não é um valor garantido", "não o CET"):
+                       "não é um valor garantido", "não o CET", "outro imóvel nem financiamento habitacional ativo"):
             self.assertIn(marker, html)
         for obsolete in ("R$ 47,5 mil", "7,16%", "R$ 3,4 mil", "R$ 720 mil", "10% a 12%"):
             self.assertNotIn(obsolete, html)
