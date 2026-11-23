@@ -38,7 +38,9 @@
 .pd-network .pd-network-grid a {display:block;height:100%;box-sizing:border-box;text-decoration:none;}
 .pd-network .pd-network-grid a strong {display:block;text-decoration:underline;}
 .pd-network .pd-network-grid a span {display:block;color:#3e5658;font-size:.88rem;line-height:1.5;margin-top:4px;}
-.pd-network .pd-network-grid a:hover {background:#edf5f4;border-color:#0e7c7b;}
+.pd-network .pd-network-grid a:hover,
+.pd-network .pd-network-grid a:focus-visible {background:#edf5f4;border-color:#0e7c7b;}
+.pd-network a, .pd-network summary, .pd-network-nav a {scroll-margin-block:6rem 1rem;}
 .pd-network-nav a {display:inline-flex;align-items:center;min-height:44px;}
 .pd-home-routes ul {padding-left:20px;margin-top:16px;}
 .pd-home-routes li {margin:8px 0;}
