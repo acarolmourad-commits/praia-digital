@@ -80,7 +80,8 @@ const origin='https://praia.digital',mime={'.html':'text/html; charset=utf-8','.
   assert.equal(new URL(page.url()).pathname,'/imoveis/sobrado-indaia-94m2.html');
   assert.match(await page.locator('h1').textContent(),/2 dormitórios.*Indaiá/);
   assert.match(await page.locator('.price').textContent(),/1\.500\.000/);
-  assert.equal(await page.locator('.gallery figure').count(),9);
+  assert.equal(await page.locator('.gallery:not([aria-labelledby="mapas-galeria"]) figure').count(),9);
+  assert.equal(await page.locator('.gallery[aria-labelledby="mapas-galeria"] figure').count(),2);
   assert.match(await page.locator('.cover img').getAttribute('src'),/01-varanda-terrea-jardim\.webp$/);
   await page.locator('img').evaluateAll(images=>images.forEach(img=>img.loading='eager'));
   await page.waitForFunction(()=>[...document.images].every(img=>img.complete&&img.naturalWidth>0));
@@ -121,4 +122,5 @@ const origin='https://praia.digital',mime={'.html':'text/html; charset=utf-8','.
  fs.writeFileSync(path.join(output,'results.json'),JSON.stringify({results,noJavaScript:true},null,2));console.log(`${results.length} city/viewport flows and no-JavaScript guides passed.`);
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exit(1)});
+
 

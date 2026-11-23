@@ -275,11 +275,12 @@ async function searchJourney(page, width) {
   await page.goto(origin+'/imoveis.html?q='+encodeURIComponent('apartamento de 2 quartos até R$ 700 mil em Bertioga'));
   assert.equal(await page.locator('.property-card').count(),0);
   await page.locator('#tipo-filtro').selectOption('Venda');
-  // Both authorized apartments match 2 bedrooms in Bertioga below R$ 700k.
-  assert.equal(await page.locator('.property-card').count(),2);
-  const matchingApartments = await page.locator('.property-card .btn-secondary').evaluateAll(links => links.map(link => link.getAttribute('href')).sort());
+  // The three authorized apartments match 2 bedrooms in Bertioga below R$ 700k.
+  assert.equal(await page.locator('.property-card').count(),3);
+  const matchingApartments = await page.locator('.property-card a[href^="imoveis/"]').evaluateAll(links => links.map(link => link.getAttribute('href')).sort());
   assert.deepEqual(matchingApartments, [
     'imoveis/apartamento-bertioga-70m2.html',
+    'imoveis/apartamento-vicente-carvalho-ii-saoc-45m2.html',
     'imoveis/apartamento-vista-linda-65m2.html'
   ]);
   await page.locator('#tipo-filtro').selectOption('Aluguel');
@@ -447,3 +448,4 @@ async function houseListing(page,width){
     }
   } finally { await browser.close(); }
 })().catch(error => { console.error(error); process.exit(1); });
+
