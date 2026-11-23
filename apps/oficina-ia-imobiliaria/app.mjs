@@ -70,7 +70,19 @@ byId('copy').addEventListener('click',async()=>{
   }
 });
 byId('download').addEventListener('click',()=>{if(!canExport('baixar'))return;const url=URL.createObjectURL(new Blob([output.value],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=resultFile;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);status.textContent='Arquivo preparado para download.';});
-byId('clear').addEventListener('click',()=>{listing.reset();byId('followup').reset();output.value='';if(resultKind) resultKind.textContent='Nenhum resultado gerado';resultFile='praia-digital-texto-revisado.txt';resultSource=null;resultSnapshot='';status.textContent='Campos e resultado limpos.';});
+byId('clear').addEventListener('click',()=>{
+  const hasWork=Boolean(output.value.trim()) || [...document.querySelectorAll('#listing input, #listing textarea, #followup input, #followup textarea')].some(control=>control.value.trim());
+  if(hasWork && !window.confirm('Limpar todos os campos e o resultado? Esta ação não pode ser desfeita.')) return;
+  listing.reset();
+  byId('followup').reset();
+  output.value='';
+  if(resultKind) resultKind.textContent='Nenhum resultado gerado';
+  resultFile='praia-digital-texto-revisado.txt';
+  resultSource=null;
+  resultSnapshot='';
+  status.textContent='Campos e resultado limpos.';
+  listing.querySelector('[name="tipo"]').focus();
+});
 
 // Enable local-only controls only after every handler above has been installed.
 // method="dialog" also prevents native navigation if a handler fails to run.
