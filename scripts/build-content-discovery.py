@@ -29,6 +29,16 @@ FEATURED = [
     ('/blog/simulado-tti-questoes-gabarito-comentado.html', 'Estudar para o TTI', 'Questões autorais com respostas comentadas para praticar.'),
 ]
 
+# Use descriptive link text for pages whose SEO titles quote a price or a budget.
+DIRECTORY_TITLES = {
+    '/casa-condominio-fechado-bertioga.html': 'Casa com 2 quartos em condomínio fechado em Bertioga',
+    '/servicos/anuncios-airbnb-booking.html': 'Criação e edição de anúncio Airbnb e Booking',
+    '/blog/consorcio-automoveis-2026-economia-carro-2026.html': 'Consórcio de automóveis e planejamento da compra',
+    '/blog/investir-imoveis-litoral-50-mil-reais-2026.html': 'Investir em imóveis no litoral com um orçamento inicial',
+    '/blog/reforma-pequena-retorno-temporada.html': 'Reforma de imóvel e retorno na locação por temporada',
+    '/blog/comparativo-santos-guaruja-investimento.html': 'Santos e Guarujá para investimento imobiliário',
+}
+
 def normalize(value):
     return ''.join(c for c in unicodedata.normalize('NFD', value.casefold()) if unicodedata.category(c) != 'Mn')
 
@@ -98,7 +108,7 @@ def collect(root):
         title = clean(title[1]) if title else file_rel
         title = re.sub(r'\s*[|—–-]\s*Praia Digital\s*$', '', title, flags=re.I)
         if not title: title = file_rel
-        entries.append({'url': parts.path, 'title': title, 'category': category(parts.path)})
+        entries.append({'url': parts.path, 'title': DIRECTORY_TITLES.get(parts.path, title), 'category': category(parts.path)})
     entries.sort(key=lambda entry: (normalize(entry['title']), entry['url']))
     return entries, skipped
 

@@ -61,8 +61,8 @@ class EditorialTests(unittest.TestCase):
             return editorial.load_editorial(path)
 
     def test_source_dates_and_coverage(self):
-        self.assertEqual(len(self.data['articles']), 10)
-        self.assertEqual(sum(a['platform'] == 'Booking.com' for a in self.data['articles']), 2)
+        self.assertEqual(len(self.data['articles']), 11)
+        self.assertEqual(sum(a['platform'] == 'Booking.com' for a in self.data['articles']), 3)
         by_file = {a['file']: a for a in self.data['articles']}
         for old in self.state['articles']:
             # New detections after this edition can remain explicitly unreviewed.
@@ -80,12 +80,17 @@ class EditorialTests(unittest.TestCase):
         expected = {'https://praia.digital/blog/' + a['file'] for a in self.data['articles']}
         expected.add('https://praia.digital/blog/novidades-airbnb-booking.html')
         self.assertEqual({u.findtext('s:loc', namespaces=ns) for u in urls}, expected)
+        dates = {'https://praia.digital/blog/' + a['file']: a.get('reviewed_on', self.data['reviewed_on'])
+                 for a in self.data['articles']}
+        dates['https://praia.digital/blog/novidades-airbnb-booking.html'] = max(dates.values())
         for url in urls:
-            self.assertEqual(url.findtext('s:lastmod', namespaces=ns), self.data['reviewed_on'])
+            self.assertEqual(url.findtext('s:lastmod', namespaces=ns), dates[url.findtext('s:loc', namespaces=ns)])
 
     def test_invalid_source_paths_dates_and_duplicates_rejected(self):
         mutations = [
             lambda d: d.update(reviewed_on='2099-01-01'),
+            lambda d: d['articles'][0].update(reviewed_on='2099-01-01'),
+            lambda d: d['articles'][0].update(reviewed_on='2026-01-01'),
             lambda d: d['articles'][0].update(file='../index.html'),
             lambda d: d['articles'][0].update(source_published='2099-01-01'),
             lambda d: d['articles'][0]['sources'][0].update(url='javascript:alert(1)'),
@@ -128,6 +133,22 @@ class EditorialTests(unittest.TestCase):
         self.assertIn('Pesquisa de tendências', index)
         if any(s.get('status') != 200 or s.get('unavailable') for s in self.state['sources'].values()):
             self.assertIn('Conteúdo não pôde ser validado', index)
+
+    def test_booking_installments_conditions_and_review_dates(self):
+        name = 'novidades-booking-parcelamento-brasil-2026.html'
+        route = '/blog/' + name
+        article = (ROOT / 'blog' / name).read_text()
+        for marker in ('28/10/2026', '20/11/2026', 'seis vezes sem juros', 'pagamento é em reais',
+                       'cartão de crédito elegível emitido no país', 'Pagamentos via Booking.com',
+                       'não vale para todas as reservas', 'news.booking.com/pt-br/bookingcom-lanca-opco-de-pagamento-parcelado-no-brasil/'):
+            self.assertIn(marker, article)
+        self.assertIn('href="/anfitrioes/central-booking.html"', article)
+        for page in ('blog/novidades-airbnb-booking.html', 'anfitrioes/central-booking.html',
+                     'apps/revisor-anuncios/index.html'):
+            self.assertIn(f'href="{route}"', (ROOT / page).read_text(), page)
+        older = (ROOT / 'blog/novidades-20261021-194712-airbnb-resources.html').read_text()
+        self.assertIn('Revisão editorial: <time datetime="2026-11-11">', older)
+        self.assertNotIn('20/11/2026', older)
 
     def test_source_coverage_handles_recovery_and_failure(self):
         sources = {'test': {'name': 'Booking', 'url': 'https://news.booking.com/', 'status': 200}}
@@ -174,7 +195,7 @@ class EditorialTests(unittest.TestCase):
         after, report, pages = self.run_monitor(state, source, (200, '<h1>Changed page</h1>'))
         self.assertEqual(after['articles'], [])
         self.assertIn('Nenhum post publicado', report)
-        self.assertEqual(len(pages), 11)  # reviewed pages + index, no hash article
+        self.assertEqual(len(pages), len(self.data['articles']) + 1)  # reviewed pages + index, no hash article
 
     def test_unavailable_source_retains_history(self):
         source = monitor.SOURCES[1]
