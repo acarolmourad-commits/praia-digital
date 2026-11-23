@@ -32,6 +32,13 @@ class DiscoveryTests(unittest.TestCase):
         self.assertTrue(self.entries)
         self.assertEqual(len({e['url'] for e in self.entries}),len(self.entries))
 
+    def test_directory_uses_descriptive_labels_for_price_headlines(self):
+        by_url = {entry['url']: entry['title'] for entry in self.entries}
+        for url, title in discovery.DIRECTORY_TITLES.items():
+            with self.subTest(url=url):
+                self.assertEqual(by_url[url], title)
+                self.assertNotIn('R$', title)
+
     def test_internal_operations_not_promoted_as_visitor_content(self):
         for path in ['docs/sales/index.html','docs/materiais/pagina-execucao.html','central-comando-praia-digital.html','dashboard-prospeccao.html','newsletter/drafts/edicao.html','exclusivos/conteudo-rec-2026.html','imoveis/apartamento-1-quartos-santos.html']:
             self.assertTrue(discovery.visitor_excluded(path))

@@ -10,7 +10,7 @@ const html = fs.readFileSync(fileURLToPath(new URL('../apps/relatorio-imovel/ind
 const script = html.match(/<script>([\s\S]*?)<\/script>/)[1];
 const handlers = new Map();
 function element(id) {
-  return {id,value:'',textContent:'',hidden:false,focused:false,
+  return {id,value:'',textContent:'',hidden:false,focused:false,disabled:true,
     addEventListener(type,handler){handlers.set(`${id}:${type}`,handler);},
     focus(){this.focused=true;},classList:{toggle(){}}};
 }
@@ -27,7 +27,20 @@ nodes['report-form'].elements=controls;
 nodes['report-form'].reset=()=>controls.forEach(control=>control.value='');
 let allowConfirm=true,printed=0;
 const context={document:{getElementById:id=>nodes[id],querySelectorAll:()=>outputs},window:{confirm:()=>allowConfirm,print:()=>printed++,addEventListener:(type,handler)=>handlers.set(`window:${type}`,handler)}};
+// Disabled markup is the fallback when scripts are off or initialization fails.
+const formMarkup = html.match(/<form id="report-form"[\s\S]*?<\/form>/)[0];
+assert.match(formMarkup, /method="dialog"/);
+const initialControls = [...formMarkup.matchAll(/<(?:input|textarea|select|button)\b[^>]*>/g)];
+assert.equal(initialControls.length, 20);
+assert.ok(initialControls.every(([tag]) => /\bdisabled\b/.test(tag)));
+assert.match(html, /<noscript>[\s\S]*?Ative o JavaScript/);
+assert.throws(() => vm.runInNewContext(script, {
+  ...context, document: {...context.document, querySelectorAll(){throw new Error('Falha fictícia');}}
+}), /Falha fictícia/);
+assert.ok(controls.every(control => control.disabled));
 vm.runInNewContext(script,context);
+assert.ok(controls.every(control => !control.disabled));
+assert.equal(nodes['startup-status'].hidden, true);
 const output=id=>outputs.find(o=>o.dataset.field===id).textContent;
 const click=id=>handlers.get(`${id}:click`)();
 const input=(id,value)=>{nodes[id].value=value;handlers.get('report-form:input')();};

@@ -5,7 +5,7 @@
       "name": "Airbnb Product Releases (oficial)",
       "url": "https://news.airbnb.com/product-releases/",
       "status": 200,
-      "checked_at": "2026-11-19T22:40:05+00:00",
+      "checked_at": "2026-11-23T01:42:19+00:00",
       "seen": {
         "https://news.airbnb.com/product-releases/airbnb-2026-summer-release": "Airbnb 2026 Summer Release",
         "https://news.airbnb.com/product-releases/airbnb-2025-winter-release": "Airbnb 2025 Winter Release",
@@ -25,7 +25,7 @@
       "name": "Airbnb Newsroom (oficial)",
       "url": "https://news.airbnb.com/",
       "status": 200,
-      "checked_at": "2026-11-19T22:40:05+00:00",
+      "checked_at": "2026-11-23T01:42:19+00:00",
       "seen": {
         "https://news.airbnb.com/gen-z-is-driving-a-45-jump-in-halloween-weekend-searches": "Gen Z is driving a 45% jump in Halloween weekend searches",
         "https://news.airbnb.com/airbnb-org-hurricane-isaias": "Airbnb.org offers emergency housing to people displaced by Hurricane Isaias",
@@ -64,7 +64,7 @@
       "name": "Airbnb Resource Center - Anfitrioes (oficial)",
       "url": "https://www.airbnb.com/resources/hosting-homes",
       "status": 200,
-      "checked_at": "2026-11-19T22:40:05+00:00",
+      "checked_at": "2026-11-23T01:42:19+00:00",
       "seen": {
         "https://www.airbnb.com/resources/hosting-homes/a/important-changes-to-house-rules-21": "Important changes to house rules",
         "https://www.airbnb.com/resources/hosting-homes/a/introducing-the-all-new-community-center-773": "The all-new Community Center",
@@ -100,7 +100,7 @@
       "name": "Booking Partner Hub (oficial)",
       "url": "https://partner.booking.com/en-us",
       "status": 202,
-      "checked_at": "2026-11-19T22:40:05+00:00",
+      "checked_at": "2026-11-23T01:42:19+00:00",
       "seen": {},
       "hash": "2d4bbe3a9d1ffc25e22573a84149a7e72e9ff6c7b9287782090978cdee2f961a",
       "unavailable": true
@@ -109,7 +109,7 @@
       "name": "Booking - pagina oficial para parceiros",
       "url": "https://join.booking.com/",
       "status": 200,
-      "checked_at": "2026-11-19T22:40:05+00:00",
+      "checked_at": "2026-11-23T01:42:19+00:00",
       "hash": "e822bcad622223087f8e74b3b569b4ab86c4b1c785c51ef1eb4eec6dd9f2ecb4",
       "seen": {}
     },
@@ -117,12 +117,12 @@
       "name": "Booking Newsroom (oficial)",
       "url": "https://news.booking.com/",
       "status": 200,
-      "checked_at": "2026-11-19T22:40:05+00:00",
+      "checked_at": "2026-11-23T01:42:19+00:00",
       "seen": {
         "https://news.booking.com/bookingcoms-how-india-travels-2026-explores-the-rise-of-alternative-accommodations": "Booking.com’s ‘How India Travels 2026’ Explores the Rise of Alternative Accommodations",
         "https://news.booking.com/how-will-group-budgets-personalized-wellness--recovery-maxxing-shape-2027-guest-experiences": "How will Group Budgets, Personalized Wellness & ‘Recovery-Maxxing’ shape 2027 Guest Experiences?",
         "https://news.booking.com/bookingcom-2027-travel-predictions-reveal-the-ultimate-travel-flex": "Booking.com’s 2027 Travel Predictions Reveal the Ultimate Travel Flex: Going Off-Script",
-        "https://news.booking.com/bookingcom-uncovers-trending-destinations-for-2027": "Booking.com Uncovers Trending Destinations for 2027 October 14 , 2026 | 10:01 AM Europe/Amsterdam Booking.com’s Travel Predictions 2027 highlights the destinations travelers are most likely to head to next year. The insights spotlight …",
+        "https://news.booking.com/bookingcom-uncovers-trending-destinations-for-2027": "Booking.com Uncovers Trending Destinations for 2027 October 14 , 2026 | 10:01 AM Europe/Amsterdam Booking.com’s Travel Predictions 2027 highlights the destinations travelers are most likely to head to next year. The insights spotlight surprising places, local experiences and standout stays across the globe. Read more",
         "https://news.booking.com/worth-every-dollar-bookingcom-reveals-travelers-prioritize-trips-ahead-of-other-day-to-day-expenses": "Worth Every Dollar: Booking.com Reveals Travelers Prioritize Trips Ahead of Other Day-to-Day Expenses August 27 , 2026 | 18:50 PM Europe/Amsterdam Today Booking.com released new research showing that Americans who regularly travel see it as an investment in their quality of …",
         "https://news.booking.com/travel-together-stay-together-bookingcom-invites-travelers-to-test-compatibility-through-curated-trips---turbulence-tests---at-partner-hotels-across-the-us": "Travel Together, Stay Together? Booking.com Invites Travelers to Test Compatibility Through Curated Trips - \"Turbulence Tests” - at Partner Hotels Across the U.S. September 11 , 2026 | 14:00 PM Europe/Amsterdam Fall is almost here, but before you call it quits on your summer fling, Booking.com has one more trip in mind: a …",
         "https://news.booking.com/bookingcom-travel-happiness-index-apac-travellers-remain-resilient-intentional-and-joy-led-amid-uncertainty": "Booking.com Travel Happiness Index: APAC travellers remain resilient, intentional and joy-led amid uncertainty July 29 , 2026 | 09:00 AM Europe/Amsterdam Inaugural research across 10 APAC markets shows travel remains a powerful source of joy, reset and connection - even as travellers adapt to …",
@@ -137,7 +137,7 @@
         "https://news.booking.com/no-place-like-someone-elses-home-for-christmas": "Booking.com Research Reveals There's No Place Like (Someone Else's) Home for Christmas",
         "https://news.booking.com/booking-holdings-to-appeal-etraveli-ruling-calling-for-greater-clarity-in-european-merger-policy": "Booking Holdings to appeal Etraveli ruling, calling for greater clarity in European merger policy November 18 , 2026 | 15:00 PM Europe/Amsterdam Booking Holdings intends to appeal the General Court’s judgment upholding the Commission’s decision to prohibit the proposed Etraveli acquisition, …"
       },
-      "hash": "2007a05c055708d81f9a8daa41c0ada4de367c96f0748119ebc2f3e16a2534a6"
+      "hash": "1427372296a55ffd5226ad0aa120ba3fe195ddbeffd6a67d2a1b1aa83dc88323"
     }
   },
   "articles": [

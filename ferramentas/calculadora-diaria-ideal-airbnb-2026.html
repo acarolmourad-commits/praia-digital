@@ -34,7 +34,7 @@
     .table-wrap { overflow-x:auto; }
     .destaque { overflow-wrap:anywhere; }
     #erro-calculo { color:#ffd166; }
-    #resultado, input, select { scroll-margin-top:100px; }
+    #form-calculo, #resultado, input, select { scroll-margin-top:100px; }
     h1 { font-size:clamp(1.8rem,5vw,2.4rem); }
     @media(max-width:520px){.wrap{padding:18px 13px}.card{padding:16px}.btn{width:100%;text-align:center}th,td{padding:8px}}
     .destaque { color:#7ee787; font-size:26px; font-weight:700; }
@@ -73,6 +73,15 @@
         <p><a class="btn" id="baixar-relatorio" download="resumo-diaria-praia-digital.html" hidden>Baixar resumo da simulação</a></p>
         <p class="lead">Download gratuito, sem cadastro. O resumo contém somente as premissas e os resultados desta simulação, não pesquisa de mercado.</p>
       </div>
+      <nav class="card" aria-labelledby="proximos-passos-temporada">
+        <h2 id="proximos-passos-temporada">Compare o próximo cenário da temporada</h2>
+        <p class="lead">Anote a diária simulada, as noites disponíveis e a ocupação. Os dados não passam automaticamente entre as ferramentas.</p>
+        <ul>
+          <li><a href="/apps/simulador-roi-temporada/">Projetar receita, despesas e retorno anual</a> com as premissas do imóvel.</li>
+          <li><a href="/apps/temporada-ou-anual/">Comparar temporada com aluguel anual</a> usando o mesmo mês e os mesmos critérios de despesas.</li>
+          <li><a href="/apps/">Voltar ao catálogo de aplicativos</a>.</li>
+        </ul>
+      </nav>
       <div class="card resultado" id="captura" hidden>
         <h2>Solicite os resultados por e-mail</h2>
         <p class="lead">Opcional: seu pedido, com nome, e-mail e dados da simulação, será encaminhado pelo FormSubmit a comercial@praia.digital para atendimento e eventual envio dos resultados. Não há entrega automática garantida. A aceitação pelo serviço não garante resposta nem entrega na sua caixa de entrada. Você pode baixar o resumo sem enviar dados. Consulte a <a href="/politica-de-privacidade.html">Política de Privacidade</a>.</p>
