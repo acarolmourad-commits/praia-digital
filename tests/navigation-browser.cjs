@@ -17,7 +17,10 @@ const root = path.resolve(__dirname, '..');
         const header = page.locator('.pd-site-header');
         assert.equal(await header.count(), 1);
         assert.equal(await header.locator('.pd-site-group').count(), 5);
-        assert.equal(await header.locator('a').count(), 27);
+        const expectedLinks = [...fs.readFileSync(path.join(root, 'partials/header.html'), 'utf8')
+          .matchAll(/<a\b[^>]*\bhref="([^"]+)"/g)].map(match => match[1]);
+        assert.deepEqual(await header.locator('a').evaluateAll(links => links.map(link => link.getAttribute('href'))), expectedLinks);
+        assert.equal(await header.locator('a[href="/parcerias-imobiliarias-litoral.html"]').count(), 1);
         const toggle = header.locator('.pd-site-toggle');
         const menu = header.locator('.pd-site-menu');
         if (width <= 1080) {

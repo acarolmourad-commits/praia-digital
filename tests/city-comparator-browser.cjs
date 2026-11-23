@@ -20,18 +20,26 @@ const server=http.createServer((req,res)=>{
    const page=await browser.newPage({viewport:{width,height:900}});const errors=[];page.on('pageerror',error=>errors.push(error.message));
    await page.goto(origin+'/apps/comparador-cidades/');
    assert.equal(await page.locator('#tbody tr').count(),12);
-   assert(await page.getByText('Referências históricas, ainda não revalidadas',{exact:true}).isVisible());
+   const ranking = page.locator('#legacy-ranking');
+   const weights = page.locator('#legacy-reference-table');
+   for (const panel of [ranking, weights]) {
+    assert.equal(await panel.evaluate(el => el.open), false);
+    await panel.locator('summary').focus();
+    await page.keyboard.press('Enter');
+    assert.equal(await panel.evaluate(el => el.open), true);
+   }
+   assert(await page.locator('#comparison-caption').isVisible());
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1),`Document overflow at ${width}`);
-   for(const [name,first] of [['🏖️ Renda de temporada','São Sebastião'],['🏠 Morar bem','São Vicente'],['💰 Investidor','Bertioga']]){
+   for(const [name,first] of [['Renda de temporada','São Sebastião'],['Morar bem','São Vicente'],['Investidor','Bertioga']]){
     await page.getByRole('button',{name,exact:true}).click();
     assert.equal(await page.locator('#tbody tr').first().locator('th').textContent(),first);
     assert.equal(await page.locator('.prof[aria-pressed="true"]').count(),1);
     assert((await page.getByRole('status').textContent()).includes('1 sem score'));
     assert((await page.locator('#tbody tr').last().textContent()).includes('Sem score'));
    }
-   await page.getByRole('button',{name:'🏠 Morar bem',exact:true}).focus();await page.keyboard.press('Enter');
-   assert.equal(await page.locator('.prof[aria-pressed="true"]').textContent(),'🏠 Morar bem');
-   assert(await page.getByRole('button',{name:'🏠 Morar bem',exact:true}).evaluate(el=>el===document.activeElement));
+   await page.getByRole('button',{name:'Morar bem',exact:true}).focus();await page.keyboard.press('Enter');
+   assert.equal(await page.locator('.prof[aria-pressed="true"]').textContent(),'Morar bem');
+   assert(await page.getByRole('button',{name:'Morar bem',exact:true}).evaluate(el=>el===document.activeElement));
    if(width<=375){
     for(const [index,region] of (await page.locator('.table-scroll').all()).entries()){
      assert(await region.evaluate(el=>el.scrollWidth>el.clientWidth));
@@ -44,7 +52,11 @@ const server=http.createServer((req,res)=>{
    assert.deepEqual(errors,[]);await page.close();
   }
   const nojs=await browser.newPage({javaScriptEnabled:false});await nojs.goto(origin+'/apps/comparador-cidades/');
-  assert.equal(await nojs.locator('.reference-table tr').count(),13);assert(await nojs.locator('noscript').isVisible());await nojs.close();
+  await nojs.locator('#legacy-ranking > summary').click();
+  assert(await nojs.locator('noscript').isVisible());
+  await nojs.locator('#legacy-reference-table > summary').click();
+  assert.equal(await nojs.locator('#legacy-reference-table table tr').count(), 6);
+  assert(await nojs.getByRole('rowheader', { name: 'Infraestrutura', exact: true }).isVisible());await nojs.close();
   console.log('PASS: desktop/tablet/mobile 1280/768/375/320px, all profiles, keyboard/focus, overflow containment, 12 cities, missing-data state, no-JS fallback, no page errors.');
  }finally{await browser.close();server.close();}
 })().catch(error=>{console.error(error);server.close();process.exitCode=1;});

@@ -49,21 +49,22 @@ async function homepage(page, width) {
   assert.equal(await page.locator('h1').count(), 1);
   assert.equal(await page.locator('#produtos-comparacao').count(), 1);
   assert.equal(await page.locator('#planos-praia-digital').count(), 0, 'legacy plan injection must not duplicate comparison');
-  assert.equal(await page.locator('#apps').count(), 0, 'legacy apps injection must not duplicate curated home content');
-  await page.locator('#produtos-comparacao summary').focus();
-  await page.keyboard.press('Enter');
-  assert.equal(await page.locator('#produtos-comparacao details').evaluate(el=>el.open),true);
+  assert.equal(await page.locator('#apps').count(), 1, 'one curated app directory');
+  assert.equal(await page.locator('#produtos-comparacao article').count(), 3);
+  const planLink = page.locator('#produtos-comparacao a[href="/planos.html"]');
+  await planLink.focus();
+  assert(await planLink.evaluate(link => document.activeElement === link));
   assert.match(await page.locator('#academy').innerText(), /62 kits e 8 trilhas/);
   assert.match(await page.locator('#academy').innerText(), /compra assistida/);
   await page.locator('#academy').scrollIntoViewIfNeeded();
   await page.screenshot({path:path.join(output,`academy-${width}.png`)});
-  assert.equal(await page.locator('#analise a[href="/apps/"]').count(), 1);
+  assert.equal(await page.locator('#apps a[href="/apps/"]').count(), 1);
   assert.match(await page.locator('#produtos-comparacao').innerText(), /39\s*\/\s*imóvel\s*\/\s*mês/);
-  assert.match(await page.locator('#produtos-comparacao').innerText(), /499\s*\/\s*anúncio\s*\/\s*plataforma/);
+  assert.match(await page.locator('#central-airbnb-booking').innerText(), /499\s*\/\s*anúncio\s*\/\s*plataforma/);
   await noOverflow(page, `home ${width}px`);
   await page.locator('footer').scrollIntoViewIfNeeded();
   await noOverflow(page, `footer ${width}px`);
-  const footerBounds = await page.locator('footer .cols').boundingBox();
+  const footerBounds = await page.locator('footer').boundingBox();
   assert(footerBounds.x >= -1 && footerBounds.x + footerBounds.width <= width + 1, 'footer columns fit viewport');
   await page.screenshot({ path: path.join(output, `home-footer-${width}.png`) });
   await page.evaluate(() => scrollTo(0, 0));
@@ -156,7 +157,7 @@ async function searchJourney(page, width) {
   await page.locator('#busca').fill('apartamento em Bertioga');
   assert.equal(await page.locator('#tipo-filtro').inputValue(),'Aluguel');
   await page.goto(origin+'/');
-  const questions=await page.locator('.ai-q').evaluateAll(links=>links.map(a=>({url:a.href,question:a.textContent.split('"')[1]})));
+  const questions=await page.locator('.ai-q').evaluateAll(links=>links.map(a=>({url:a.href,question:a.textContent.trim()})));
   assert.equal(new Set(questions.map(q=>q.url)).size,4);
   for(const q of questions){
     await page.goto(q.url);
@@ -188,9 +189,9 @@ async function contactAndCases(page, width) {
   await page.goto(origin + '/interesse.html?produto=%3Cscript%3Ealert(1)%3C%2Fscript%3E', { waitUntil: 'load' });
   assert.equal(await page.locator('#produto').inputValue(), '', 'unknown context ignored');
   await page.goto(origin + '/cases.html', { waitUntil: 'load' });
-  assert.match(await page.locator('h1').innerText(), /Exemplos ilustrativos/i);
+  assert.match(await page.locator('h1').innerText(), /Demonstrações de uso, não resultados de clientes/i);
   const text = await page.locator('body').innerText();
-  assert.match(text, /Hipótese:/i);
+  assert.match(text, /não apresenta depoimentos, nomes de clientes ou métricas comerciais auditadas/i);
   assert(!/métricas verificáveis/i.test(text), 'illustrative cases must not imply verified metrics');
   await noOverflow(page, `illustrative cases ${width}px`);
 }

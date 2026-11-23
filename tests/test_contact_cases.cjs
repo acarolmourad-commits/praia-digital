@@ -50,10 +50,13 @@ for (const id of ['nome', 'tel', 'cidade', 'produto', 'pagto', 'mensagem']) asse
 assert(!html.includes('href="//"'));
 assert(html.includes('Esta consulta não gera cobrança nem contratação'));
 const cases = fs.readFileSync(path.join(root, 'cases.html'), 'utf8');
-assert(cases.includes('<title>Exemplos ilustrativos de aplicação'));
-assert(cases.includes('<h1>Exemplos ilustrativos de aplicação'));
-assert(!/métricas verificáveis|Ver como|Quero um resultado assim|Piloto sem custo inicial|Cases e resultados/.test(cases));
-assert.equal((cases.match(/<div class="metric">Hipótese:/g) || []).length, 4);
-assert(cases.includes('<main class="container" id="main">'));
+assert(cases.includes('<title>Demonstrações de uso'));
+assert(cases.includes('<h1>Demonstrações de uso, não resultados de clientes</h1>'));
+assert(cases.includes('não apresenta depoimentos, nomes de clientes ou métricas comerciais auditadas'));
+assert(!/Quero um resultado assim|Piloto sem custo inicial|Cases e resultados/.test(cases));
+assert.equal((cases.match(/<strong>Entrada:<\/strong>/g) || []).length, 3);
+assert.equal((cases.match(/<strong>Processo:<\/strong>/g) || []).length, 3);
+assert.equal((cases.match(/<strong>Saída(?: para aprovação)?:<\/strong>/g) || []).length, 3);
+assert(cases.includes('href="#main"') && /<main\b[^>]*id="main"/.test(cases));
 assert(!cases.includes('SearchAction'));
 console.log('Contact/cases: contextual choices, optional payment, reset/history, labels and illustrative copy passed. No submissions.');
