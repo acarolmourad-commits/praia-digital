@@ -4,6 +4,43 @@ const fs=require('node:fs'),path=require('node:path'),assert=require('node:asser
 const root=path.resolve(__dirname,'..'),built=process.env.CITY_PREVIEW_ROOT;
 const data=require('../data/city-guides.json'),output=path.join(root,'.audit/city-guides/browser');
 const origin='https://praia.digital',mime={'.html':'text/html; charset=utf-8','.js':'application/javascript','.css':'text/css','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp'};
+async function checkWorksLinkByKeyboard(page, cityName) {
+ const sectionLink = page.getByRole('link', {name: 'Referências locais', exact: true});
+ const worksLink = page.locator('#visita').getByRole('link', {
+  name: 'Obras e desvios na SP-055 (Concessionária Novo Litoral)', exact: true
+ });
+ const officialUrl = 'https://novolitoral.com.br/obras/';
+ const hasFocus = link => link.evaluate(el => el === document.activeElement);
+ const tabLimit = await page.locator('main a[href], main button, main summary').count();
+ for (let i = 0; i < tabLimit && !(await hasFocus(sectionLink)); i++) {
+  await page.keyboard.press('Tab');
+ }
+ assert(await hasFocus(sectionLink), cityName + ': section shortcut unreachable by Tab');
+ await Promise.all([page.waitForURL(url => url.hash === '#visita'), page.keyboard.press('Enter')]);
+ await page.keyboard.press('Tab');
+ assert(await hasFocus(worksLink), cityName + ': next Tab must reach the CNL link');
+ assert(await worksLink.evaluate(el => {
+  const style = getComputedStyle(el);
+  const visible = [...el.getClientRects()].every(rect =>
+   rect.width > 0 && rect.height > 0 &&
+   document.elementFromPoint(rect.left + rect.width / 2, rect.top + rect.height / 2) === el
+  );
+  return visible && el.matches(':focus-visible') && parseFloat(style.outlineWidth) > 0 &&
+   style.outlineStyle !== 'none' && style.outlineColor !== 'rgba(0, 0, 0, 0)';
+ }), cityName + ': keyboard focus must be visible and unobscured');
+ await page.keyboard.press('Tab');
+ assert(await hasFocus(page.getByRole('link', {name: 'Custos da compra', exact: true})));
+ await page.keyboard.press('Shift+Tab');
+ assert(await hasFocus(worksLink), cityName + ': Shift+Tab must return to the CNL link');
+ // A 204 response keeps the guide open for the existing tests and avoids external traffic.
+ await page.route(officialUrl, route => route.fulfill({status: 204}), {times: 1});
+ const [request] = await Promise.all([
+  page.waitForRequest(req => req.url() === officialUrl && req.isNavigationRequest() && req.frame() === page.mainFrame()),
+  page.keyboard.press('Enter')
+ ]);
+ assert.equal(request.method(), 'GET');
+ console.log(`Passed SP-055 keyboard route for ${cityName} at ${page.viewportSize().width}px`);
+}
 (async()=>{
  fs.mkdirSync(output,{recursive:true});
  console.log('Launching offline city guide browser checks');
@@ -33,6 +70,7 @@ const origin='https://praia.digital',mime={'.html':'text/html; charset=utf-8','.
     page.keyboard.press('Enter')
    ]);
    assert.equal(new URL(page.url()).hash,'#conteudo');
+   if (['itanhaem','mongagua'].includes(c.slug)) await checkWorksLinkByKeyboard(page, c.name);
    await page.locator('summary').first().click();assert(await page.locator('details').first().getAttribute('open')!==null);
    if(['bertioga','cubatao','iguape','ilha-comprida'].includes(c.slug)){
     await page.evaluate(()=>scrollTo(0,0));
