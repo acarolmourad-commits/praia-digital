@@ -76,7 +76,20 @@ class ListingRetirements(unittest.TestCase):
         self.assertEqual(len(set(gallery)), 9)
         self.assertIn('01-varanda-terrea-jardim.webp', gallery[0])
         self.assertIn(f'<meta property="og:image" content="{house["image"][0]}">', html)
-        self.assertEqual(html.count('loading="lazy"'), 9)
+        photo_html, other_html = html.split('<h3 id="mapas-galeria">', 1)
+        self.assertEqual(photo_html.count('loading="lazy"'), 9)
+        map_html = other_html.split('</section>', 1)[0]
+        self.assertIn('não marcam a localização do imóvel', map_html)
+        self.assertIn('não têm escala, não mostram um trajeto', map_html)
+        expected = [f'/assets/{slug}/{name}.svg' for name in ('perto-bairro', 'perto-praia')]
+        self.assertEqual(re.findall(r'<img src="([^"]+)"', map_html), expected)
+        self.assertEqual(re.findall(r'<a href="([^"]+)" target="_blank" rel="noopener noreferrer"', map_html), expected)
+        self.assertEqual(map_html.count('loading="lazy"'), 2)
+        self.assertFalse(any(base + path in house['image'] for path in expected))
+        for rel in expected:
+            svg = (ROOT / rel.lstrip('/')).read_text(encoding='utf-8')
+            self.assertRegex(svg, r'<svg\b')
+            self.assertNotRegex(svg, r'(?i)<(?:script|foreignObject|image)\b|\bon\w+=|\b(?:xlink:)?href=')
         for n, rel in enumerate(gallery, 1):
             self.assertRegex(rel, rf'^/assets/{slug}/{n:02}-[a-z-]+\.webp$')
             raw = (ROOT / rel.lstrip('/')).read_bytes()
